@@ -46,9 +46,28 @@ const args = Object.fromEntries(
   }),
 );
 
-/** Onde a capa deste vídeo fica. Um só sítio, sabido pelos dois carteiros. */
+/**
+ * ⚠️ SÃO DUAS CAPAS, E CADA UMA TEM A SUA CASA.
+ *
+ * A primeira versão fez uma só, em pé, para servir as duas. Foi o dono que viu o
+ * resultado na lista do Studio: *"me parece que agora ficou sem capa nenhuma"*.
+ * E tinha razão — o YouTube encaixou a imagem em pé numa moldura deitada, com barras
+ * escuras dos lados; como o nosso fundo já é quase preto, o que sobrou foi um
+ * retângulo preto. **Ficou pior do que antes de haver capa.**
+ *
+ *   • `capa-<slug>.jpg`     em pé   → capa do Reel no Instagram (aceita 9:16 a sério)
+ *   • `capa-<slug>-yt.jpg`  deitada → miniatura do YouTube (é aqui que a API escreve)
+ *
+ * E a grelha de Shorts do YouTube não é servida por nenhuma das duas: essa ele escolhe
+ * sozinho de um fotograma do vídeo. É por isso que o carimbo passou a viver DENTRO do
+ * vídeo (IMPL20 §53).
+ */
 export function caminhoDaCapa(slug, raiz = ROOT) {
   return join(raiz, 'youtube-render', 'out', `capa-${slug}.jpg`);
+}
+
+export function caminhoDaCapaLarga(slug, raiz = ROOT) {
+  return join(raiz, 'youtube-render', 'out', `capa-${slug}-yt.jpg`);
 }
 
 export function lerRoteiro(slug) {
@@ -57,9 +76,14 @@ export function lerRoteiro(slug) {
   return JSON.parse(readFileSync(p, 'utf-8'));
 }
 
-export function tirarFotografia(slug, texto) {
+/**
+ * Tira UMA fotografia. `formato` decide a composição e o ficheiro de destino.
+ * As duas correm com o mesmo texto e o mesmo instante — mudam só as proporções.
+ */
+export function tirarFotografia(slug, texto, formato = 'vertical') {
   mkdirSync(OUT_DIR, { recursive: true });
-  const destino = caminhoDaCapa(slug);
+  const larga = formato === 'largo';
+  const destino = larga ? caminhoDaCapaLarga(slug) : caminhoDaCapa(slug);
 
   // ⚠️ AS PALAVRAS VÃO NUM FICHEIRO, NUNCA NA LINHA DE COMANDO.
   // Escritas à mão no comando, o Windows come as aspas e o Remotion recebe
@@ -71,12 +95,13 @@ export function tirarFotografia(slug, texto) {
   // inteiro, o caminho parte-se ao meio no espaço e o Remotion recebe duas coisas em
   // vez de uma. Já há neste repositório outra cicatriz do mesmo acento (o `fs.rmSync`
   // que não apaga a pasta `dist`). Caminhos curtos não têm espaços para partir.
-  writeFileSync(join(OUT_DIR, `capa-${slug}.props.json`), JSON.stringify(texto, null, 2), 'utf-8');
-  const propsCurto = `out/capa-${slug}.props.json`;
-  const destinoCurto = `out/capa-${slug}.jpg`;
+  const sufixo = larga ? '-yt' : '';
+  writeFileSync(join(OUT_DIR, `capa-${slug}${sufixo}.props.json`), JSON.stringify({ ...texto, formato }, null, 2), 'utf-8');
+  const propsCurto = `out/capa-${slug}${sufixo}.props.json`;
+  const destinoCurto = `out/capa-${slug}${sufixo}.jpg`;
 
   const r = spawnSync('npx', [
-    'remotion', 'still', 'src/index.ts', 'CapaFotoVertical', destinoCurto,
+    'remotion', 'still', 'src/index.ts', larga ? 'CapaFotoLarga' : 'CapaFotoVertical', destinoCurto,
     `--frame=${FOTOGRAMA}`,
     '--image-format=jpeg',
     '--jpeg-quality=92',
@@ -114,8 +139,12 @@ if (process.argv[1] && process.argv[1].replace(/\\/g, '/').endsWith('youtube/cap
       process.exit(0);
     }
 
-    const { destino, bytes } = tirarFotografia(slug, texto);
-    console.log(`\n✅ capa pronta: ${destino} (${Math.round(bytes / 1024)} KB)\n`);
+    // As DUAS, sempre. Fazer só uma seria deixar uma das casas sem capa — e foi
+    // exatamente esse o erro que o dono apanhou na lista do Studio.
+    const larga = tirarFotografia(slug, texto, 'largo');
+    console.log(`\n✅ deitada (YouTube):   ${larga.destino} (${Math.round(larga.bytes / 1024)} KB)`);
+    const vertical = tirarFotografia(slug, texto, 'vertical');
+    console.log(`✅ em pé (Instagram):  ${vertical.destino} (${Math.round(vertical.bytes / 1024)} KB)\n`);
     process.exit(0);
   } catch (e) {
     console.error(`\n❌ ${e.message}\n`);

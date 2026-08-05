@@ -29,7 +29,7 @@ import { getTitlePatterns } from '../lib/youtube-marketing.js';
 // Ver `lib/musica.js`: se a faixa exigir crédito, ele entra sozinho; se não exigir,
 // desaparece sozinho. Foi por não haver isto que 9 vídeos foram ao ar sem creditar.
 import { creditoDaMusica, TRILHA } from './lib/musica.js';
-import { caminhoDaCapa } from './capa-short.js';
+import { caminhoDaCapaLarga } from './capa-short.js';
 
 // ─── caminhos ────────────────────────────────────────────────────────────────
 const ROOT = process.cwd();
@@ -585,7 +585,7 @@ async function main() {
     // ⚠️ A capa entra NESTA lista de propósito: um ensaio que não mostra a capa é um
     // ensaio onde a sua ausência passa despercebida — e foi assim que 11 vídeos foram
     // ao ar sem nenhuma.
-    const capaEnsaio = caminhoDaCapa(SLUG);
+    const capaEnsaio = caminhoDaCapaLarga(SLUG);
     log(`CAPA: ${capaEnsaio} ${existsSync(capaEnsaio) ? `(ok, ${Math.round(statSync(capaEnsaio).size / 1024)} KB)` : '(FALTANDO)'}`);
     for (const s of srtPaths) {
       log(`SRT ${s.code}: ${s.path} ${existsSync(s.path) ? '(ok)' : '(FALTANDO)'}`);
@@ -621,7 +621,7 @@ async function main() {
   // ⚠️ Falhar aqui NÃO pode derrubar nada — o vídeo já está no ar. Um Short sem capa
   // é um clique no Studio; um robô que rebenta depois de publicar é um vídeo no ar que
   // o caderno diz que não existe. (É a mesma regra do vídeo longo.)
-  const capa = caminhoDaCapa(SLUG);
+  const capa = caminhoDaCapaLarga(SLUG);
   if (existsSync(capa)) {
     try {
       await meterCapa(accessToken, videoId, capa);

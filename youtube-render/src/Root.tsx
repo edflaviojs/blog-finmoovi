@@ -729,11 +729,14 @@ export const RemotionRoot: React.FC = () => {
         height={1920}
       />
 
-      {/* ♦ 05/08/2026 — A CAPA FOTOGRAFIA (IMPL20 §52).
-          UMA só, em pé, para as duas casas: miniatura do Short no YouTube e capa do
-          Reel no Instagram. A versão deitada foi deitada fora — ver o cabeçalho do
-          capa-foto.tsx: cortar uma imagem larga para um sítio vertical perde as pontas,
-          que é onde vivia o texto.
+      {/* ♦ 05/08/2026 — AS CAPAS FOTOGRAFIA (IMPL20 §52).
+          DUAS, porque são duas casas diferentes e a mesma imagem não serve as duas:
+            • LARGA (1280×720) → a miniatura do YouTube, que é onde a API escreve e
+              onde a lista do Studio, a pesquisa e as partilhas vão buscar;
+            • VERTICAL (1080×1920) → a capa do Reel no Instagram, que aceita 9:16.
+          ⚠️ Ter posto a vertical na miniatura do YouTube fez o YouTube encaixá-la com
+          barras escuras — e, como o nosso fundo é quase preto, ela ficou a parecer um
+          retângulo vazio na lista do Studio. Ver o cabeçalho do capa-foto.tsx.
           Tira-se a fotografia com `remotion still` no fotograma do instante-chave —
           por isso a duração é a da abertura inteira, e não 1. */}
       <Composition
@@ -743,7 +746,16 @@ export const RemotionRoot: React.FC = () => {
         fps={FPS}
         width={1080}
         height={1920}
-        defaultProps={{ metaphor: 'fumaca', tema: 'INFLAÇÃO', numero: 'R$ 2 MIL', remate: 'somem do seu ano sem ninguém cortar um real' }}
+        defaultProps={{ formato: 'vertical' as const, metaphor: 'fumaca', tema: 'INFLAÇÃO', numero: 'R$ 2 MIL', remate: 'somem do seu ano sem ninguém cortar um real' }}
+      />
+      <Composition
+        id="CapaFotoLarga"
+        component={CapaFoto}
+        durationInFrames={VIDA_DA_CAPA}
+        fps={FPS}
+        width={1280}
+        height={720}
+        defaultProps={{ formato: 'largo' as const, metaphor: 'fumaca', tema: 'INFLAÇÃO', numero: 'R$ 2 MIL', remate: 'somem do seu ano sem ninguém cortar um real' }}
       />
     </>
   );

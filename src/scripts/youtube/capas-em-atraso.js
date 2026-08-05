@@ -25,7 +25,7 @@
 import { readFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { textoDaCapa } from './lib/capa-texto.js';
-import { caminhoDaCapa, lerRoteiro, tirarFotografia } from './capa-short.js';
+import { lerRoteiro, tirarFotografia } from './capa-short.js';
 
 const ROOT = process.cwd();
 const TRACKING = join(ROOT, '.github', 'data', 'youtube-published.json');
@@ -115,7 +115,7 @@ async function main() {
       log(`    ${texto.tema} · ${texto.numero || '(sem número)'} · ${texto.remate.slice(0, 52)}`);
       if (DRY_RUN) { feitos += 1; continue; }
 
-      const { destino, bytes } = tirarFotografia(v.slug, texto);
+      const { destino, bytes } = tirarFotografia(v.slug, texto, 'largo');
       await meterCapa(chave, v.videoId, destino);
       log(`    ✅ capa no ar (${Math.round(bytes / 1024)} KB) → youtu.be/${v.videoId}`);
       feitos += 1;

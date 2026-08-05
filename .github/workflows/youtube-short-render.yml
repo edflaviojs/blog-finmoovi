@@ -271,7 +271,7 @@ jobs:
           name: short-${{ env.FILE_SLUG }}
           path: |
             youtube-render/out/*.mp4
-            youtube-render/out/capa-${{ env.FILE_SLUG }}.jpg
+            youtube-render/out/capa-${{ env.FILE_SLUG }}*.jpg
             youtube-render/public/audio/${{ env.FILE_SLUG }}/*.srt
           if-no-files-found: error
 

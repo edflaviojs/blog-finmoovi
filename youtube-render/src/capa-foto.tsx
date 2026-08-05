@@ -59,6 +59,8 @@ export type CapaFotoProps = {
   remate?: string;
   /** A etiqueta do canto superior direito — a promessa. Vazia = não aparece. */
   etiqueta?: string;
+  /** 'largo' = miniatura do YouTube (1280×720); 'vertical' = capa do Reel (1080×1920). */
+  formato?: 'vertical' | 'largo';
 };
 
 /**
@@ -241,9 +243,18 @@ const Etiqueta: React.FC<{ texto: string }> = ({ texto }) => (
   </div>
 );
 
-const FaixaDeCima: React.FC<{ etiqueta?: string }> = ({ etiqueta }) => (
+/**
+ * A faixa desenha-se sempre no mesmo tamanho e depois ENCOLHE por inteiro.
+ * Assim a marca, o carimbo e a mãozinha mantêm as proporções entre si nos dois
+ * formatos — em vez de cada peça ter o seu próprio tamanho em cada capa, que é
+ * como se perde a coerência sem ninguém dar por isso.
+ */
+const FaixaDeCima: React.FC<{ etiqueta?: string; largura?: number; escala?: number; topo?: number }> = ({
+  etiqueta, largura = 1080, escala = 1, topo = FAIXA_DE_CIMA,
+}) => (
   <div style={{
-    position: 'absolute', top: FAIXA_DE_CIMA, left: 0, width: '100%',
+    position: 'absolute', top: topo, left: 0, width: largura / escala,
+    transform: `scale(${escala})`, transformOrigin: 'top left',
     display: 'flex', alignItems: 'center', justifyContent: 'space-between',
     paddingLeft: 56, paddingRight: 104,
   }}>
@@ -253,8 +264,50 @@ const FaixaDeCima: React.FC<{ etiqueta?: string }> = ({ etiqueta }) => (
 );
 
 export const CapaFoto: React.FC<CapaFotoProps> = ({
-  metaphor, tema = '', numero = '', remate = '', etiqueta = 'App Grátis',
+  metaphor, tema = '', numero = '', remate = '', etiqueta = 'App Grátis', formato = 'vertical',
 }) => {
+  /**
+   * ⚠️ 1280×720 — E ELA VOLTOU, porque eu a tinha deitado fora por engano.
+   *
+   * O raciocínio errado foi: *"um Short vê-se em sítios verticais, logo a capa é
+   * vertical"*. Verdade a meio. A porta que os robôs conseguem usar (`thumbnails.set`)
+   * escreve na miniatura **deitada** — e é ELA que aparece na lista do Studio, na
+   * pesquisa, nas sugestões e na pré-visualização de quem partilha o link.
+   *
+   * Ao lá pôr um desenho vertical, o YouTube encaixou-o com barras escuras dos dois
+   * lados. Como o nosso fundo já é quase preto, o resultado, visto pequeno, é **um
+   * retângulo preto** — foi o dono que viu: *"me parece que agora ficou sem capa
+   * nenhuma"*. Tinha razão: ficou pior do que antes.
+   *
+   * Agora são duas, cada uma para a sua casa:
+   *   • **larga** → miniatura do YouTube (a que a API escreve);
+   *   • **vertical** → capa do Reel no Instagram (que aceita 9:16 de verdade).
+   * E a grelha de Shorts do YouTube não é servida por nenhuma delas — essa ele
+   * escolhe sozinho de um fotograma, e é por isso que o carimbo passou a viver
+   * dentro do vídeo (IMPL20 §53).
+   */
+  if (formato === 'largo') {
+    return (
+      <AbsoluteFill>
+        <Fundo />
+        <AbsoluteFill style={{ flexDirection: 'row', alignItems: 'center' }}>
+          <div style={{
+            flex: '0 0 62%', paddingLeft: 64, paddingTop: 60,
+            display: 'flex', flexDirection: 'column', gap: 12,
+          }}>
+            {tema ? <Tema texto={tema} corpo={26} /> : null}
+            {numero ? <Numero texto={numero} corpo={148} largura={700} /> : null}
+            {remate ? <Remate texto={remate} corpo={42} largura={700} /> : null}
+          </div>
+          <div style={{ flex: '1 1 auto', height: '100%', display: 'flex', alignItems: 'flex-end' }}>
+            <Ação metaphor={metaphor} largura={460} altura={640} />
+          </div>
+        </AbsoluteFill>
+        <FaixaDeCima etiqueta={etiqueta} largura={1280} escala={0.56} topo={30} />
+      </AbsoluteFill>
+    );
+  }
+
   // 1080×1920 — texto em cima, ação em baixo.
   // ⚠️ O texto vive no TERÇO CENTRAL de propósito: a grelha do perfil do Instagram
   // corta um quadrado ao meio, e o que estiver colado ao topo desaparece lá.
