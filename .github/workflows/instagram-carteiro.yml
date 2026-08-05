@@ -32,6 +32,9 @@ on:
         description: 'Ensaio (mostra a legenda e a hora, não envia nada)'
         type: boolean
         default: false
+      hora:
+        description: 'Hora de publicar, no relógio do Brasil (vazio = 19)'
+        required: false
   # 🔴 RELÓGIO DESLIGADO À NASCENÇA. Liga-se depois da primeira entrega conferida.
   # schedule:
   #   - cron: '20 15 * * *'
@@ -115,6 +118,7 @@ jobs:
         run: |
           ARGS="--slug=$FILE_SLUG"
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
+          if [ -n "${{ github.event.inputs.hora }}" ]; then ARGS="$ARGS --hora=${{ github.event.inputs.hora }}"; fi
           node src/scripts/multipost/entregar.js $ARGS
 
       - name: Tirar da fila e commitar o caderno

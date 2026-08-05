@@ -41,6 +41,7 @@ const TRACKING = join(ROOT, '.github', 'data', 'youtube-published.json');
 // Links fixos (a calculadora do blog e o app).
 const BLOG_TOOLS_URL = 'https://blog.finmoovi.com/ferramentas/';
 const APP_URL = 'https://finmoovi.com';
+const BLOG_URL = 'https://blog.finmoovi.com/';
 
 // A palavra é a MESMA que a narração diz e que a pastilha do ecrã mostra —
 // "FINMOOVI", em maiúsculas. É por ela que o robô de respostas procura os
@@ -89,6 +90,21 @@ const DRY_RUN = Boolean(args['dry-run']);
 
 // ─── util ────────────────────────────────────────────────────────────────────
 function log(msg) { console.log(msg); }
+
+/**
+ * Os tópicos, um por linha, limpos.
+ * A IA gosta de os entregar já com traços, pontos ou números a abrir — e nós pomos
+ * o nosso marcador por cima. Dois marcadores na mesma linha são a assinatura de um
+ * texto montado por máquina que ninguém releu.
+ * Descarta linhas curtas demais (restos) e compridas demais (parágrafos disfarçados).
+ */
+function limparTopicos(bruto) {
+  return String(bruto || '')
+    .split(/\r?\n/)
+    .map((l) => l.replace(/^\s*[-•*·–—\d.)\]]+\s*/, '').trim())
+    .filter((l) => l.length >= 8 && l.length <= 90)
+    .slice(0, 3);
+}
 
 // Remove <,> (o YouTube rejeita), colapsa espaços e corta no limite.
 function sanitizeText(s, max) {
@@ -282,6 +298,8 @@ async function tryLlm(script) {
 [3 a 5 hashtags separadas por espaço; a PRIMEIRA a mais específica do tema; NÃO inclua #Shorts (ele é adicionado depois)]
 ---TAGS---
 [8 a 12 variações de palavra-chave para SEO, separadas por vírgula]
+---TOPICOS---
+[3 tópicos curtos do que a pessoa aprende neste vídeo, UM POR LINHA, no máximo 60 caracteres cada, começando por verbo ou por número, SEM traço nem ponto no início, SEM emojis]
 
 FÓRMULAS DE TÍTULO (escolha a mais adequada ao tema e ADAPTE):
 ${patternHint}
@@ -305,7 +323,11 @@ Dados do roteiro:
         title: grab('TITULO', 'DESCRICAO'),
         description: grab('DESCRICAO', 'HASHTAGS'),
         hashtagsRaw: grab('HASHTAGS', 'TAGS'),
-        tagsRaw: grab('TAGS', ''),
+        // ⚠️ TAGS passa a parar em TOPICOS — mas se TOPICOS não vier, o regex cai no
+        // `$` e apanha até ao fim, exatamente como antes. Acrescentar uma secção no
+        // FIM é a única forma de a acrescentar sem poder partir o que já funcionava.
+        tagsRaw: grab('TAGS', 'TOPICOS'),
+        topicosRaw: grab('TOPICOS', ''),
       };
 
       const defeito = respostaCortada(partes);
@@ -319,6 +341,7 @@ Dados do roteiro:
         descriptionHook: partes.description,
         hashtags: splitHashtagPhrases(partes.hashtagsRaw),
         tags: partes.tagsRaw.split(',').map((t) => t.trim()).filter(Boolean),
+        topicos: limparTopicos(partes.topicosRaw),
       };
     } catch (err) {
       log(`⚠️ LLM falhou (${err.message}) — tentativa ${tentativa}/${TENTATIVAS_LLM}.`);
@@ -352,7 +375,19 @@ function deterministicMeta(script) {
     'finanças pessoais', 'educação financeira', 'investimentos', 'dinheiro',
     'finanças', 'FinMoovi', script.category,
   ].filter(Boolean);
-  return { title, descriptionHook, hashtags, tags };
+  /**
+   * ⚠️ O PLANO B TAMBÉM TEM DE TER TÓPICOS.
+   * Se a IA falhar e o bloco "O QUE VOCÊ VAI VER" desaparecer, a descrição de reserva
+   * fica pior do que a normal — e é justamente nos dias maus que ela é usada. Estes
+   * três saem do roteiro, não da imaginação: o tema, a promessa e a ferramenta.
+   */
+  const topicos = [
+    `O que é ${kw} e por que isso mexe no seu bolso`,
+    script.term && script.term !== kw ? script.term : `Como ${kw} aparece no dia a dia`,
+    `Como calcular o seu caso com as ferramentas grátis do FinMoovi`,
+  ].filter(Boolean).map((t) => String(t).slice(0, 90));
+
+  return { title, descriptionHook, hashtags, tags, topicos };
 }
 
 // Monta o payload final (snippet/status) já sanitizado.
@@ -366,30 +401,63 @@ function buildMetadata(raw, script) {
   // Hashtags: token único (CamelCase), sem stopword solta, dedup, no máx 5 (#Shorts sempre por último).
   const hashtags = buildHashtagList(raw.hashtags);
 
+  const palavraChave = sanitizeText(script.keyword || script.term || 'finanças', 60).toLowerCase();
   const hook = sanitizeText(raw.descriptionHook, 1500);
+  const topicos = (raw.topicos || []).slice(0, 3);
   // ⚠️ O crédito sai da faixa DESTE vídeo (gravada no roteiro), não de uma faixa
   // fixa: com três músicas a rodar, um crédito fixo estaria errado em dois vídeos
   // em cada três. Roteiros antigos não têm o campo e caem na faixa por omissão.
   const credito = creditoDaMusica(script.music || TRILHA);
-  const description = sanitizeText([
+  /**
+   * ♦ 05/08/2026 — A DESCRIÇÃO PASSOU A SER ESCRITA, E NÃO SÓ DESPEJADA.
+   *
+   * Como estava: gancho, dois links colados e as hashtags. Três linhas e um monte.
+   * O dono, ao ver no Studio: *"gostaria de uma descrição maior e mais voltada para
+   * SEO, e mais organizada"*.
+   *
+   * As regras que ele deu, e que este bloco cumpre à letra:
+   *   • **linhas curtas com respiro** entre blocos, em vez de um parágrafo só;
+   *   • **cada linha começa por um marcador** — emoji, ponto ou asterisco;
+   *   • **palavras-chave a negrito** (o YouTube aceita *asteriscos* como negrito
+   *     desde 2021 — e é de graça, ao contrário do que quase toda a gente pensa);
+   *   • **as linhas de link começam por emoji**;
+   *   • emojis com conta: um por bloco, não um por linha.
+   *
+   * E ganha o bloco *O QUE VOCÊ VAI VER* — três tópicos escritos pela IA a partir do
+   * roteiro. É aí que o SEO mora de verdade: são três frases com as palavras que
+   * alguém escreveria na busca, e que antes não existiam em lado nenhum.
+   * ⚠️ Se a IA não os devolver, o bloco simplesmente não aparece. Nunca fica um
+   * título de secção com nada por baixo.
+   */
+  const linhas = [
     hook,
     '',
-    // ♦ 05/08/2026 — O CONVITE QUE FALTAVA NA DESCRIÇÃO.
     // A narração pede "comenta FINMOOVI que eu te mando o app" e o ecrã mostra a
-    // pastilha com a mãozinha a carregar nela — mas a descrição não dizia uma
-    // palavra sobre isso. Quem vê o Short sem som (que é muita gente) recebia a
-    // chamada só pela imagem, e quem lê a descrição não encontrava nada que a
-    // confirmasse. A descrição do vídeo LONGO já trazia esta linha desde o início;
-    // era o Short que estava a menos.
+    // pastilha com a mãozinha a carregar nela — mas até 05/08 a descrição não dizia
+    // uma palavra sobre isso. Quem vê o Short sem som (que é muita gente) recebia a
+    // chamada só pela imagem. A descrição do vídeo LONGO já trazia esta linha desde
+    // o início; era o Short que estava a menos.
     CTA_COMENTARIO,
+  ];
+
+  if (topicos.length) {
+    linhas.push('', '📌 *O QUE VOCÊ VAI VER:*', ...topicos.map((t) => `• ${t}`));
+  }
+
+  linhas.push(
     '',
-    `🔗 Calculadora grátis: ${toolUrl}`,
-    `📲 Organize suas finanças: ${APP_URL}`,
+    `🔗 *Calculadora grátis:* ${toolUrl}`,
+    `📲 *Organize suas finanças:* ${APP_URL}`,
+    `📚 *Mais sobre ${palavraChave}:* ${BLOG_URL}`,
+    '',
+    `💬 *Ficou dúvida?* Escreve nos comentários que eu respondo.`,
     '',
     hashtags.join(' '),
-    // só aparece quando a faixa em uso obriga — hoje não obriga, porque a trilha é nossa
-    ...(credito ? ['', credito] : []),
-  ].join('\n'), 5000);
+  );
+  // só aparece quando a faixa em uso obriga — hoje não obriga, porque a trilha é nossa
+  if (credito) linhas.push('', `🎵 ${credito}`);
+
+  const description = sanitizeText(linhas.join('\n'), 5000);
 
   // Tags: sanitiza, dedup (case-insensitive), 8–12, respeita limite ~460 chars.
   const seen = new Set();

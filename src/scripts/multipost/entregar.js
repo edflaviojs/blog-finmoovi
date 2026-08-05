@@ -42,6 +42,7 @@ import { join, dirname } from 'node:path';
 
 // ─── caminhos ────────────────────────────────────────────────────────────────
 import { caminhoDaCapa } from '../youtube/capa-short.js';
+import { BORDAO } from '../youtube/lib/schema-short.js';
 
 const ROOT = process.cwd();
 const MP4_DIR = join(ROOT, 'youtube-render', 'out');
@@ -162,9 +163,67 @@ const ETIQUETA_DA_CATEGORIA = {
  * do YouTube. O convite é o MESMO ("comenta FINMOOVI"), porque é ele que a
  * automação do Multipost está à espera de ouvir.
  */
+/**
+ * ⚠️ NO INSTAGRAM NÃO HÁ NEGRITO — e os asteriscos aparecem à letra.
+ * O YouTube aceita *palavra* como negrito; o Instagram mostra os asteriscos como
+ * caracteres. Por isso a legenda daqui usa **emojis e espaço em branco** para dar
+ * hierarquia, e nunca marcação. É a mesma informação, noutra língua tipográfica.
+ */
+/**
+ * ⚠️ OS TÓPICOS SAEM DO GUIÃO, NÃO DE UM MOLDE.
+ *
+ * A primeira versão montava-os a partir da palavra-chave — e num vídeo cuja
+ * palavra-chave era "bolso" saiu isto: *"O que é bolso e por que mexe no seu bolso"*.
+ * Um molde aplicado a uma palavra vaga produz uma frase vazia, e uma frase vazia numa
+ * legenda diz à pessoa que ninguém leu aquilo antes de publicar.
+ *
+ * Agora saem das cenas de conteúdo (as `beat`), que é onde o vídeo explica alguma
+ * coisa. Só entram frases com corpo: as curtas demais são restos ("E cada um pesa.")
+ * e as compridas demais são parágrafos disfarçados.
+ */
+const MIN_TOPICO = 38;
+const MAX_TOPICO = 95;
+
+/** Compara duas frases ignorando pontuação, acentos e maiúsculas. */
+const mesmaFrase = (a, b) => {
+  const n = (t) => String(t).normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .toLowerCase().replace(/[^a-z0-9]/g, '');
+  return n(a) === n(b);
+};
+
+export function topicosDoRoteiro(roteiro) {
+  const frases = [];
+  for (const cena of roteiro.scenes || []) {
+    if (cena.role && cena.role !== 'beat') continue;
+    for (const frase of limpar(cena.narration).split(/(?<=[.!?])\s+/)) {
+      const f = frase.trim();
+      if (f.length < MIN_TOPICO || f.length > MAX_TOPICO) continue;
+      // ⚠️ O BORDÃO DO CANAL NÃO É UM TÓPICO. Ele é dito uma vez em todos os vídeos,
+      // por regra do roteirista — e apareceu como "tópico" em dois vídeos diferentes.
+      // Uma legenda que promete ensinar e entrega o slogan da casa é publicidade
+      // disfarçada de índice.
+      if (mesmaFrase(f, BORDAO)) continue;
+      frases.push(f);
+    }
+  }
+  const unicas = [...new Set(frases)];
+  if (unicas.length >= 2) return unicas.slice(0, 3);
+
+  // Rede de segurança: um guião sem frases aproveitáveis não deixa o bloco vazio.
+  // ⚠️ E nunca a palavra-chave sozinha: "Alavancagem" não é um tópico, é uma etiqueta.
+  const kw = limpar(roteiro.keyword || roteiro.term || 'finanças');
+  const titulo = limpar(roteiro.term);
+  return [
+    titulo && !mesmaFrase(titulo, kw) ? titulo : `Como ${kw} funciona na prática`,
+    'A conta que quase ninguém faz — e devia fazer',
+    'Como fazer essa conta no seu caso, de graça',
+  ].map((t) => t.slice(0, MAX_TOPICO));
+}
+
 export function montarLegenda(roteiro) {
   const titulo = limpar(roteiro.term || roteiro.keyword || '');
   const gancho = limpar(roteiro.intro?.frase || '');
+  const topicos = topicosDoRoteiro(roteiro);
   const tags = [
     etiquetaDaPalavraChave(roteiro.keyword),
     ETIQUETA_DA_CATEGORIA[roteiro.category] || '',
@@ -180,13 +239,38 @@ export function montarLegenda(roteiro) {
     '',
     gancho,
     '',
-    '👉 Comenta FINMOOVI aqui embaixo que eu te mando o app de graça.',
+    '📌 O que você vai ver aqui:',
+    ...topicos.map((t) => `• ${t}`),
+    '',
+    '💡 A verdade é que a maior parte das pessoas perde dinheiro sem perceber — não por falta de esforço, mas por falta de conta feita.',
+    '',
+    '👉 Comenta FINMOOVI aqui embaixo que eu te mando o app de graça. É de verdade, eu respondo.',
+    '',
+    '🔗 Ou entra direto: finmoovi.com',
+    '',
+    '💬 Ficou dúvida? Escreve aqui nos comentários.',
     '',
     tagsUnicas.join(' '),
   ].filter((l, i, arr) => !(l === '' && arr[i - 1] === ''));
 
   const texto = linhas.join('\n');
   return texto.length > MAX_LEGENDA ? `${texto.slice(0, MAX_LEGENDA - 1)}…` : texto;
+}
+
+/**
+ * A legenda em HTML, para o Multipost.
+ *
+ * ⚠️ **UM `<p>` POR LINHA, E NUNCA `<br>`.** A primeira entrega usou `<br>` — que é o
+ * que a documentação deles lista como aceite — e o resultado, visto no editor, foi
+ * **um parágrafo só, com tudo colado**: título, gancho, chamada e hashtags numa
+ * papa. Foi o dono que viu: *"veja que no Instagram está muito mal formatado"*.
+ * Um `<p>` é um bloco; um `<br>` é uma sugestão que o editor deitou fora.
+ */
+export function legendaEmHtml(legenda) {
+  return String(legenda)
+    .split('\n')
+    .map((l) => (l.trim() === '' ? '<p></p>' : `<p>${l}</p>`))
+    .join('');
 }
 
 // ═══════════════════════════════════════════════════════════════════════════════
@@ -255,7 +339,7 @@ async function agendar(k, { canalId, media, capa, legenda, quandoUTC }) {
     tags: [],
     posts: [{
       integration: { id: canalId },
-      value: [{ content: `<p>${legenda.replace(/\n/g, '<br>')}</p>`, image: [{ id: media.id, path: media.path }] }],
+      value: [{ content: legendaEmHtml(legenda), image: [{ id: media.id, path: media.path }] }],
       // A capa é o que aparece na grelha do perfil. Sem ela, o Instagram escolhe um
       // fotograma ao calhas — que é o que acontece hoje nos 11 Shorts do YouTube.
       settings: capa
