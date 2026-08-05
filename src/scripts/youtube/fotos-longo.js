@@ -314,6 +314,25 @@ async function principal() {
 
   log(`\n📸 AS FOTOGRAFIAS DE "${plano.tema}"`);
 
+  /**
+   * 🔴 SE ESTE VÍDEO JÁ TEM FOTOGRAFIAS, NÃO SE PAGA POR OUTRAS.
+   *
+   * Apanhado antes de custar dinheiro: o vídeo piloto tem as três fotografias escritas à
+   * mão, e o diretor de imagem prefere-as sempre. Mandar o robô refazê-lo geraria três
+   * imagens novas — **156 créditos, metade do que a conta dá por dia** — que nunca
+   * apareceriam no ecrã, porque as escritas à mão ganham.
+   *
+   * ⚠️ E não é só dinheiro: seria o robô a trabalhar e a entregar nada, com a corrida a
+   * acabar a verde. O modo de falha desta casa.
+   */
+  const { escolherLugaresDaFoto } = await import('./lib/imagens-longo.js');
+  const jaTem = escolherLugaresDaFoto(plano.scenes, new Set(), slug);
+  if (jaTem.size) {
+    log(`   ♻️  este vídeo já tem ${jaTem.size} fotografia(s) suas — não se paga por outras.`);
+    for (const f of jaTem.values()) log(`      · ${f.ficheiro}`);
+    return;
+  }
+
   // ── escolher as cenas pelo papel ──
   const escolhas = [];
   for (const papel of PAPEIS) {

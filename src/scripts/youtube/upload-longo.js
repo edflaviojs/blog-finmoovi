@@ -144,10 +144,18 @@ export function proximoDomingo(agora = new Date()) {
  * ⚠️ Compara-se o DIA, não o instante. Dois vídeos do mesmo canal no mesmo domingo
  * competem um com o outro na lista de quem se inscreveu, mesmo com horas diferentes.
  */
-export function estreiaOcupada(estreia, caderno = lerCaderno()) {
+export function estreiaOcupada(estreia, caderno = lerCaderno(), slugAtual = null) {
   const dia = (d) => new Date(d).toISOString().slice(0, 10);
   const alvo = dia(estreia);
   for (const [slug, registo] of Object.entries(caderno || {})) {
+    /**
+     * ⚠️ **UM VÍDEO NÃO OCUPA O DIA CONTRA SI PRÓPRIO.**
+     * O caderno também guarda RESERVAS — dias já apontados para um vídeo que ainda não
+     * subiu. Sem esta linha, o dia reservado para o vídeo X impedia o próprio X de subir,
+     * e a mensagem seria absurda: *"domingo já é do vídeo sair-do-vermelho"* a recusar o
+     * sair-do-vermelho. Foi o que aconteceu no primeiro ensaio a sério.
+     */
+    if (slugAtual && slug === slugAtual) continue;
     const quando = registo?.publishAt || registo?.uploadedAt;
     if (quando && dia(quando) === alvo) return { slug, publishAt: quando };
   }
@@ -402,7 +410,7 @@ function conferirEstreiaSozinha() {
   const marcada = valor('publicar-em');
   const estreia = marcada ? new Date(marcada) : proximoDomingo();
   if (Number.isNaN(estreia.getTime())) throw new Error(`"${marcada}" não é uma data que eu saiba ler.`);
-  const ocupado = estreiaOcupada(estreia);
+  const ocupado = estreiaOcupada(estreia, lerCaderno(), SLUG);
   log(`📅 a próxima estreia seria ${emPortugues(estreia)}.`);
   if (ocupado) {
     log(`⏭️  esse dia já é do vídeo "${ocupado.slug}" — um dia, um vídeo.`);
@@ -465,7 +473,7 @@ async function principal() {
    * Não é desconfiança do passo anterior: é que este ficheiro também se corre à mão, e a
    * regra tem de valer por onde quer que se entre. Ver `estreiaOcupada`.
    */
-  const ocupado = estreiaOcupada(estreia, caderno);
+  const ocupado = estreiaOcupada(estreia, caderno, SLUG);
   if (ocupado) {
     throw new Error(
       `${emPortugues(estreia)} já é do vídeo "${ocupado.slug}" — um dia, um vídeo.\n`
