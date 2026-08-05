@@ -158,14 +158,34 @@ const Marca: React.FC = () => (
   </div>
 );
 
+/**
+ * ⚠️ A ETIQUETA É A ÚNICA COISA DO QUADRO QUE **NÃO** USA AS CORES DA MARCA.
+ * Ordem do dono (05/08): *"tem que ser mais destacada pra chamar a atenção mesmo…
+ * tipo usar um vermelho com amarelo, algo assim bem disruptivo"*.
+ *
+ * E o raciocínio dele está certo por uma razão técnica: a paleta da casa é
+ * ciano→violeta→magenta, e o número gigante já a usa toda. Uma etiqueta feita das
+ * MESMAS cores derrete no resto do quadro — foi exatamente o que aconteceu na
+ * primeira versão. Vermelho e amarelo não existem em mais lado nenhum da capa, e é
+ * por isso que o olho vai lá: não é por serem berrantes, é por serem **as únicas**.
+ *
+ * O ligeiro torto é de propósito: um autocolante colado à mão lê-se como um carimbo,
+ * e um carimbo lê-se antes do texto.
+ */
+const VERMELHO = '#ff1f3d';
+const LARANJA = '#ff7a00';
+
 const Etiqueta: React.FC<{ texto: string }> = ({ texto }) => (
   <div style={{
-    // sólida e clara sobre o fundo escuro: uma etiqueta translúcida lia-se como erro
-    background: BRAND.gradient,
-    color: BRAND.bg,
-    fontFamily: BODY, fontWeight: 900, fontSize: 38, letterSpacing: 0.5,
-    padding: '16px 34px', borderRadius: 999,
-    boxShadow: `0 0 34px ${BRAND.violet}66`,
+    background: `linear-gradient(135deg, ${VERMELHO} 0%, ${LARANJA} 100%)`,
+    color: BRAND.yellow,
+    fontFamily: BODY, fontWeight: 900, fontSize: 44, letterSpacing: 1,
+    textTransform: 'uppercase',
+    padding: '18px 38px', borderRadius: 22,
+    border: `5px solid ${BRAND.yellow}`,
+    transform: 'rotate(-5deg)',
+    textShadow: '0 3px 0 rgba(0,0,0,0.35)',
+    boxShadow: `0 0 46px ${VERMELHO}99, 0 10px 26px rgba(0,0,0,0.55)`,
     whiteSpace: 'nowrap',
   }}>{texto}</div>
 );
