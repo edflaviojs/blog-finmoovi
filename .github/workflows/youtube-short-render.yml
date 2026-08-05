@@ -268,17 +268,24 @@ jobs:
       # ser publicado aqui: o artefato short-<slug> guarda o MP4+SRTs e este bilhete
       # diz ao carteiro (youtube-short-publish.yml) qual run baixar. O commit da fila
       # serializa com o resto pelo concurrency group "daily".
-      - name: Pôr na fila de saída (cron)
+      # ♦ 05/08/2026 — DUAS FILAS, PORQUE HÁ DOIS CARTEIROS.
+      # O mesmo artefato é entregue no YouTube ao meio-dia e no Instagram às 19h.
+      # Cada carteiro rasga o SEU bilhete: com uma fila só, o primeiro a entregar
+      # apagaria o trabalho do segundo. Os dois bilhetes são escritos no MESMO
+      # commit de propósito — é uma viagem só ao repositório, e nunca fica um
+      # escrito sem o outro.
+      - name: Pôr nas filas de saída (cron)
         if: steps.resolve.outputs.skip != 'true' && env.ENQUEUE == 'true'
         run: |
           node src/scripts/youtube/outbox.js enqueue --file-slug="$FILE_SLUG" --run-id="${{ github.run_id }}"
+          node src/scripts/youtube/outbox.js enqueue --file-slug="$FILE_SLUG" --run-id="${{ github.run_id }}" --fila=instagram-outbox.json
           git config user.name "FinMoovi Bot"
           git config user.email "bot@finmoovi.com"
-          git add .github/data/youtube-outbox.json
+          git add .github/data/youtube-outbox.json .github/data/instagram-outbox.json
           if git diff --staged --quiet; then
-            echo "Fila de saída sem mudanças."
+            echo "Filas de saída sem mudanças."
           else
-            git commit -m "chore: video $FILE_SLUG pronto na fila de saida [skip ci]"
+            git commit -m "chore: video $FILE_SLUG pronto nas filas de saida [skip ci]"
             git pull --rebase origin main || true
             git push
           fi

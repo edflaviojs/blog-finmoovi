@@ -1,0 +1,133 @@
+name: Instagram — Entregar o Short ao Multipost (19h BR)
+
+# ♦ O SEGUNDO CARTEIRO (05/08/2026 — IMPL20 §51, decisão do dono).
+#
+# O mesmo vídeo que o carteiro do YouTube entrega ao meio-dia é entregue aqui ao
+# Multipost, que o publica no Instagram às 19h do Brasil.
+#
+# INDEPENDENTE DE PROPÓSITO: se isto falhar, o YouTube não sente. Fila própria,
+# relógio próprio, caderno próprio. Foi essa a escolha do dono entre os três
+# desenhos possíveis.
+#
+# Corre às 15:20 UTC (12:20 no Brasil), vinte minutos depois do carteiro do
+# YouTube — para o vídeo já ter ido ao ar lá antes de sair aqui, e para os dois
+# não disputarem o mesmo minuto.
+#
+# ⚠️ A hora da PUBLICAÇÃO não é a hora desta corrida. Este robô só ENTREGA; quem
+# publica às 19h é o Multipost, porque o agendamento vai no pedido.
+#
+# Sem pendentes na fila = sucesso neutro (exit 78), o mesmo "nada a fazer" do
+# carteiro do YouTube.
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: 'Entregar este slug (vazio = o próximo da fila)'
+        required: false
+      run_id:
+        description: 'De que corrida vem o vídeo (só com slug à mão; sem isto o MP4 não é baixado)'
+        required: false
+      dry_run:
+        description: 'Ensaio (mostra a legenda e a hora, não envia nada)'
+        type: boolean
+        default: false
+  # 🔴 RELÓGIO DESLIGADO À NASCENÇA. Liga-se depois da primeira entrega conferida.
+  # schedule:
+  #   - cron: '20 15 * * *'
+
+permissions:
+  contents: write
+  actions: read
+
+# MESMO grupo dos outros: todos commitam em .github/data.
+concurrency:
+  group: youtube-short-daily
+  cancel-in-progress: false
+
+jobs:
+  entregar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      # ⚠️ NUMA CORRIDA AUTOMÁTICA OS CAMPOS DO BOTÃO VÊM VAZIOS. Já houve neste
+      # projeto um robô que nunca publicava por causa disto. Por isso: se o campo
+      # do slug estiver vazio (que é sempre, no relógio), vai-se à fila.
+      - name: Próximo da fila do Instagram
+        id: fila
+        run: |
+          PEDIDO="${{ github.event.inputs.slug }}"
+          if [ -n "$PEDIDO" ]; then
+            echo "FILE_SLUG=$PEDIDO" >> "$GITHUB_ENV"
+            echo "RUN_ID=${{ github.event.inputs.run_id }}" >> "$GITHUB_ENV"
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+            echo "🎯 pedido à mão: $PEDIDO"
+            exit 0
+          fi
+          set +e
+          BILHETE="$(node src/scripts/youtube/outbox.js next --fila=instagram-outbox.json)"
+          CODE=$?
+          set -e
+          if [ "$CODE" = "78" ]; then
+            echo "📭 nada a entregar ao Instagram hoje — sucesso neutro."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          if [ "$CODE" != "0" ]; then
+            echo "❌ leitura da fila falhou (code $CODE)"
+            exit "$CODE"
+          fi
+          echo "bilhete: $BILHETE"
+          {
+            echo "FILE_SLUG=$(echo "$BILHETE" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>console.log(JSON.parse(s).fileSlug))')"
+            echo "RUN_ID=$(echo "$BILHETE" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>console.log(JSON.parse(s).runId))')"
+          } >> "$GITHUB_ENV"
+          echo "skip=false" >> "$GITHUB_OUTPUT"
+
+      - name: Instalar dependências
+        if: steps.fila.outputs.skip != 'true'
+        run: npm ci
+
+      # O artefato foi gravado a partir de youtube-render/, então baixá-lo PARA lá
+      # reconstrói o layout que o entregador espera: out/<slug>.mp4.
+      - name: Baixar o vídeo do run de produção
+        if: steps.fila.outputs.skip != 'true' && env.RUN_ID != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh run download "$RUN_ID" --name "short-$FILE_SLUG" --dir youtube-render
+          test -f "youtube-render/out/$FILE_SLUG.mp4" || { echo "❌ MP4 não veio no artefato"; ls -R youtube-render | head -30; exit 1; }
+          echo "🎞️ $(du -h "youtube-render/out/$FILE_SLUG.mp4" | cut -f1) prontos para entrega."
+
+      - name: Entregar ao Multipost e agendar
+        if: steps.fila.outputs.skip != 'true'
+        env:
+          MULTIPOST_API_KEY: ${{ secrets.MULTIPOST_API_KEY }}
+        run: |
+          ARGS="--slug=$FILE_SLUG"
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
+          node src/scripts/multipost/entregar.js $ARGS
+
+      - name: Tirar da fila e commitar o caderno
+        if: steps.fila.outputs.skip != 'true' && github.event.inputs.dry_run != 'true'
+        run: |
+          node src/scripts/youtube/outbox.js done --file-slug="$FILE_SLUG" --fila=instagram-outbox.json
+          git config user.name "FinMoovi Bot"
+          git config user.email "bot@finmoovi.com"
+          git add .github/data/instagram-outbox.json .github/data/instagram-agendados.json
+          if git diff --staged --quiet; then
+            echo "Sem mudanças a commitar."
+          else
+            git commit -m "chore: short $FILE_SLUG agendado no Instagram [skip ci]"
+            git pull --rebase origin main || true
+            git push
+          fi

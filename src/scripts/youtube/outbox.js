@@ -26,27 +26,50 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 
-const OUTBOX = join(process.cwd(), '.github', 'data', 'youtube-outbox.json');
+const DATA_DIR = join(process.cwd(), '.github', 'data');
+const FILA_PADRAO = 'youtube-outbox.json';
 const NOTHING_TO_DO = 78;
 
-function lerFila() {
-  if (!existsSync(OUTBOX)) return [];
+/**
+ * ♦ 05/08/2026 — HÁ MAIS DE UMA FILA, PORQUE HÁ MAIS DE UM CARTEIRO.
+ *
+ * O mesmo vídeo é entregue em dois sítios a horas diferentes: no YouTube ao meio-dia
+ * e no Instagram às 19h. Cada carteiro tem de rasgar o SEU bilhete sem rasgar o do
+ * outro — se partilhassem a fila, o primeiro a entregar apagava o trabalho do segundo.
+ *
+ * O que NÃO se fez: copiar este ficheiro para uma segunda fila. As regras de uma fila
+ * (idempotência no enqueue, o mais antigo primeiro, o 78 quando está vazia) já foram
+ * aprendidas à custa de erros — duplicá-las seria garantir que só uma das cópias
+ * recebia a próxima correção.
+ */
+function caminhoDaFila(nome = FILA_PADRAO) {
+  return join(DATA_DIR, nome);
+}
+
+function lerFila(nome) {
+  const ficheiro = caminhoDaFila(nome);
+  if (!existsSync(ficheiro)) return [];
   try {
-    const data = JSON.parse(readFileSync(OUTBOX, 'utf-8'));
+    const data = JSON.parse(readFileSync(ficheiro, 'utf-8'));
     return Array.isArray(data) ? data : [];
   } catch {
     return [];
   }
 }
 
-function gravarFila(fila) {
-  mkdirSync(dirname(OUTBOX), { recursive: true });
-  writeFileSync(OUTBOX, `${JSON.stringify(fila, null, 2)}\n`);
+function gravarFila(fila, nome) {
+  const ficheiro = caminhoDaFila(nome);
+  mkdirSync(dirname(ficheiro), { recursive: true });
+  writeFileSync(ficheiro, `${JSON.stringify(fila, null, 2)}\n`);
 }
 
-/** Os fileSlugs pendentes — usado pelo pick-next-short para não produzir 2× o mesmo tema. */
+/**
+ * Os fileSlugs pendentes — usado pelo pick-next-short para não produzir 2× o mesmo tema.
+ * ⚠️ Continua a olhar SÓ para a fila do YouTube, de propósito: é a entrega no YouTube
+ * que define se um tema já foi tratado. Um tema à espera do Instagram não impede nada.
+ */
 export function listOutboxPending() {
-  return lerFila().map((e) => e.fileSlug).filter(Boolean);
+  return lerFila(FILA_PADRAO).map((e) => e.fileSlug).filter(Boolean);
 }
 
 // ─── execução direta (CLI dos workflows) ─────────────────────────────────────
@@ -59,7 +82,9 @@ if (executadoDireto) {
       return [k, v.join('=')];
     }),
   );
-  const fila = lerFila();
+  // --fila=instagram-outbox.json escolhe a fila do outro carteiro; sem ela, a do YouTube.
+  const nomeDaFila = flags.fila || FILA_PADRAO;
+  const fila = lerFila(nomeDaFila);
 
   if (comando === 'enqueue') {
     const { 'file-slug': fileSlug, 'run-id': runId } = flags;
@@ -68,16 +93,16 @@ if (executadoDireto) {
     // artefato mais novo é o que vale), nunca duplica.
     const semEste = fila.filter((e) => e.fileSlug !== fileSlug);
     semEste.push({ fileSlug, runId: String(runId), producedAt: new Date().toISOString(), artifact: `short-${fileSlug}` });
-    gravarFila(semEste);
-    console.log(`📬 na fila de saída: ${fileSlug} (run ${runId}) — ${semEste.length} pendente(s)`);
+    gravarFila(semEste, nomeDaFila);
+    console.log(`📬 na fila ${nomeDaFila}: ${fileSlug} (run ${runId}) — ${semEste.length} pendente(s)`);
   } else if (comando === 'next') {
-    if (!fila.length) { console.error('📭 fila de saída vazia — nada a publicar.'); process.exit(NOTHING_TO_DO); }
+    if (!fila.length) { console.error(`📭 fila ${nomeDaFila} vazia — nada a publicar.`); process.exit(NOTHING_TO_DO); }
     console.log(JSON.stringify(fila[0]));
   } else if (comando === 'done') {
     const { 'file-slug': fileSlug } = flags;
     if (!fileSlug) { console.error('done exige --file-slug'); process.exit(1); }
-    gravarFila(fila.filter((e) => e.fileSlug !== fileSlug));
-    console.log(`✅ entregue e fora da fila: ${fileSlug}`);
+    gravarFila(fila.filter((e) => e.fileSlug !== fileSlug), nomeDaFila);
+    console.log(`✅ entregue e fora da fila ${nomeDaFila}: ${fileSlug}`);
   } else if (comando === 'pending') {
     for (const s of listOutboxPending()) console.log(s);
   } else {

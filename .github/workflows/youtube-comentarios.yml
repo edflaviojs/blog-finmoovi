@@ -26,11 +26,12 @@ on:
       max:
         description: 'Teto de respostas nesta corrida (vazio = 25)'
         required: false
-  # 🔴 RELÓGIO DESLIGADO À NASCENÇA (ordem do dono, 05/08/2026).
-  # Primeiro faz-se o ENSAIO (workflow_dispatch com dry_run) e o dono olha a lista
-  # de quem receberia resposta. Só depois disso se descomenta a linha de baixo.
-  # schedule:
-  #   - cron: '25 * * * *'
+  # ✅ RELÓGIO LIGADO em 05/08/2026, depois do ensaio.
+  # O ensaio viu 14 vídeos e 4 comentários — nenhum a pedir o app. O robô não está
+  # cego (conta o que vê); é que ninguém pediu ainda. Nas horas em que não há nada,
+  # ele não faz nada e não gasta nada.
+  schedule:
+    - cron: '25 * * * *'
 
 # Escreve o caderno de quem já foi respondido.
 permissions:
