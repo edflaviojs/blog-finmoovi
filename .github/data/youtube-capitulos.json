@@ -333,8 +333,43 @@
           "titulo": "O convite para sua nova vida financeira"
         }
       ]
+    },
+    {
+      "videoId": "5QDd1qgi2tA",
+      "title": "MEU PLANEJAMENTO FINANCEIRO REAL | Organização financeira  com R$2.580,00 e metas atualizadas",
+      "channel": "Ruth Szilagy",
+      "duracaoSeg": 1555,
+      "idioma": "pt",
+      "viewsPerDay": 3014,
+      "vistoEm": "2026-08-05",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "introdução"
+        },
+        {
+          "seg": 30,
+          "titulo": "meus ganhos"
+        },
+        {
+          "seg": 362,
+          "titulo": "minha planilha"
+        },
+        {
+          "seg": 559,
+          "titulo": "gastos de julhos"
+        },
+        {
+          "seg": 1077,
+          "titulo": "plano para agosto"
+        },
+        {
+          "seg": 1478,
+          "titulo": "meta da viagem"
+        }
+      ]
     }
   ],
-  "atualizadoEm": "2026-08-04T06:20:24.704Z",
-  "total": 7
+  "atualizadoEm": "2026-08-05T06:20:26.626Z",
+  "total": 8
 }
