@@ -4,7 +4,7 @@ import type { TransitionPresentation } from '@remotion/transitions';
 import { fade } from '@remotion/transitions/fade';
 import { slide } from '@remotion/transitions/slide';
 import { wipe } from '@remotion/transitions/wipe';
-import { Background, Watermark, EtiquetaTema, TrilhoProgresso, CartaoResultado, SceneRenderer, SceneAudioLayer, ShockIntro, DynamicIntro, SignatureOutro, TelaBordao, BORDAO_FRAMES, BORDAO_OVERLAP_FRAMES, computeGlobalShotSfxFires, computeMetaphorStages } from './scenes';
+import { Background, Watermark, EtiquetaTema, TrilhoProgresso, CartaoResultado, CarimboAppGratis, SceneRenderer, SceneAudioLayer, ShockIntro, DynamicIntro, SignatureOutro, TelaBordao, BORDAO_FRAMES, BORDAO_OVERLAP_FRAMES, computeGlobalShotSfxFires, computeMetaphorStages } from './scenes';
 import { BackgroundMusic } from './audio/music';
 import roteiroFixture from '../../src/scripts/youtube/output/juros-compostos.script.json';
 
@@ -349,6 +349,9 @@ export const Short: React.FC<{ script?: ShortScript; timing?: ShortTiming; slug?
             entrar e sair a cada cena, é o elemento fixo que costura o vídeo todo.
             Começa depois da intro para não competir com a frase de abertura. */}
         <EtiquetaTema tema={script.term} />
+        {/* O carimbo da promessa, no canto oposto ao da etiqueta. Fica aqui dentro
+            (e nao no topo do ficheiro) para NAO aparecer na abertura. Ver IMPL20 §53. */}
+        <CarimboAppGratis />
         {/* Trilho de progresso: também fora do TransitionSeries — atravessa o vídeo
             inteiro. `masterStarts` já são os frames globais das viradas de cena. */}
         <TrilhoProgresso totalFrames={contentFrames} marcas={masterStarts} />

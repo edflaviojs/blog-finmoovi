@@ -274,6 +274,44 @@ export const Watermark: React.FC = () => {
   );
 };
 
+/**
+ * O CARIMBO "APP GRÁTIS" — 05/08/2026, IMPL20 §53.
+ *
+ * ═══ POR QUE ESTÁ NO VÍDEO E NÃO SÓ NA CAPA ═══
+ * Descobriu-se que **o YouTube não usa a nossa capa na grelha de Shorts**: ele guarda
+ * duas imagens por vídeo — a deitada (que a API define, e que serve a pesquisa e as
+ * partilhas) e uma **em pé, que ele escolhe sozinho de um fotograma do vídeo**. Não há
+ * comando nenhum que lhe diga qual.
+ *
+ * O estudo dos 12 Shorts publicados mostrou o que ele escolhe: **um elemento grande,
+ * muito contrastado, centrado, sobre fundo limpo** — quase sempre o bloco ciano do
+ * número (R$196.407, R$ 2,68k, R$47) e, quando o vídeo tem poucos, o ícone de aviso.
+ *
+ * Daí a decisão: em vez de lutar pela escolha dele, **vestir os fotogramas que ele já
+ * escolhe**. Sendo uma camada fixa, seja qual for o fotograma que ele apanhe, ele vem
+ * com a marca em cima e com a promessa — que é o que uma capa tem de ter.
+ *
+ * ⚠️ **NÃO entra na abertura.** Vive dentro da mesma sequência da etiqueta do tema,
+ * que começa depois da intro: os primeiros 3,5s são da capa disruptiva e nada pode
+ * competir com ela — foi essa a queixa nº1 do dono em 31/07.
+ * ⚠️ E fica no canto DIREITO: o esquerdo é da etiqueta do tema, o centro da marca.
+ */
+export const CarimboAppGratis: React.FC = () => (
+  <div style={{
+    position: 'absolute', top: 152, right: 40,
+    background: 'linear-gradient(135deg, #ff1f3d 0%, #ff7a00 100%)',
+    color: BRAND.yellow,
+    fontFamily: BODY, fontWeight: 900, fontSize: 34, letterSpacing: 0.5,
+    textTransform: 'uppercase',
+    padding: '12px 24px', borderRadius: 16,
+    border: `4px solid ${BRAND.yellow}`,
+    transform: 'rotate(-4deg)',
+    textShadow: '0 2px 0 rgba(0,0,0,0.35)',
+    boxShadow: '0 0 34px rgba(255,31,61,0.6), 0 8px 20px rgba(0,0,0,0.5)',
+    whiteSpace: 'nowrap',
+  }}>App Grátis</div>
+);
+
 // ─────────────────────────────────────────────────────────────────────────────
 // ABERTURA DISRUPTIVA (#1): o número-choque SLAM na tela com boom + flash + shake,
 // e a pergunta de curiosidade surge embaixo. Para o dedo do usuário nos 1,5s iniciais.
