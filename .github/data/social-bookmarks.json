@@ -758,5 +758,85 @@
         "status": 200
       }
     }
+  },
+  {
+    "slug": "como-organizar-seu-dinheiro-com-um-app-facil-de-usar",
+    "title": "Como organizar seu dinheiro com um app fácil de usar",
+    "url": "https://blog.finmoovi.com/posts/como-organizar-seu-dinheiro-com-um-app-facil-de-usar",
+    "submittedAt": "2026-08-05T16:26:34.103Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1811409295
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "volta-as-aulas-economize-e-planeje-os-gastos-escolares-2026",
+    "title": "Volta às aulas: economize e planeje os gastos escolares 2026",
+    "url": "https://blog.finmoovi.com/posts/volta-as-aulas-economize-e-planeje-os-gastos-escolares-2026",
+    "submittedAt": "2026-08-05T16:26:34.894Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1811409303
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "como-escolher-fundos-de-investimento-em-2026-e-dar-o-primeir",
+    "title": "Como escolher fundos de investimento em 2026 e dar o primeiro passo",
+    "url": "https://blog.finmoovi.com/posts/como-escolher-fundos-de-investimento-em-2026-e-dar-o-primeir",
+    "submittedAt": "2026-08-05T16:26:35.497Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1811409311
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "como-transformar-o-caos-financeiro-em-controle-com-a-tecnica",
+    "title": "Como transformar o caos financeiro em controle com a técnica Kyco (2026)",
+    "url": "https://blog.finmoovi.com/posts/como-transformar-o-caos-financeiro-em-controle-com-a-tecnica",
+    "submittedAt": "2026-08-05T16:26:36.122Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1811409317
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
   }
 ]
