@@ -46,6 +46,8 @@
  * gasta um cêntimo, e não toca em nada do Short.
  */
 
+import { existsSync, readFileSync } from 'node:fs';
+import { join } from 'node:path';
 import { valoresEmDinheiro } from './schema-longo.js';
 
 /** Sem acentos e em minúsculas — para as pistas abaixo casarem com fala real. */
@@ -233,11 +235,57 @@ const INTERVALO_DA_FOTO = 2;
  * justamente a cena que a fotografia descreve, e a fotografia ficava sem casa. As
  * ilustrações são catorze pistas para seis lugares — têm por onde escolher; estas não.
  */
-export function escolherLugaresDaFoto(cenas, ocupados = new Set(), slug = null) {
+/**
+ * AS FOTOGRAFIAS QUE O ROBÔ FEZ SOZINHO, para os vídeos que não são o piloto.
+ *
+ * ⚠️ **A tabela escrita à mão em cima fica intocada.** Ela é do vídeo que já foi
+ * aprovado, renderizado e entregue — mexer nela agora seria arriscar o que está feito por
+ * causa do que ainda não está. O catálogo automático é **lido a seguir** e só acrescenta.
+ *
+ * ⚠️ E a regra que trava tudo continua igual: **sem entrada para este vídeo, nenhuma
+ * fotografia entra.** Um vídeo sem fotografias suas não leva as de outro.
+ */
+export function fotosDoCatalogo(slug, catalogoDeMesa = null) {
+  if (!slug) return [];
+  try {
+    // ⚠️ O segundo parâmetro existe só para as PROVAS poderem medir isto sem escrever no
+    // disco. Uma prova que precisa de criar e apagar ficheiros para correr é uma prova
+    // que um dia deixa lixo — e a lição do `rmSync` desta casa é que apagar falha calado.
+    let catalogo = catalogoDeMesa;
+    if (!catalogo) {
+      const p = join(process.cwd(), '.github', 'data', 'fotos-do-longo.json');
+      if (!existsSync(p)) return [];
+      catalogo = JSON.parse(readFileSync(p, 'utf-8'));
+    }
+    const doVideo = catalogo?.videos?.[slug];
+    if (!Array.isArray(doVideo)) return [];
+    // A pista chega como texto (escrita por quem gerou a imagem) e vira a mesma coisa que
+    // as escritas à mão: uma expressão a procurar na narração da cena.
+    return doVideo
+      .filter((f) => f && f.ficheiro && f.pista)
+      .map((f) => ({ ...f, pista: f.pista instanceof RegExp ? f.pista : new RegExp(String(f.pista)) }));
+  } catch (err) {
+    /**
+     * 🔴 O RESGUARDO TEM DE FALAR, E ISTO QUASE ME MORDEU AO ESCREVÊ-LO.
+     *
+     * A 1ª versão desta função usava peças que este ficheiro **não importava**, e o
+     * resguardo engolia o erro: devolvia lista vazia, o vídeo saía sem fotografias, e
+     * **nada se queixava**. Era o modo de falha desta casa na sua forma mais pura — a
+     * coisa que desaparece em silêncio.
+     *
+     * Um catálogo mal formado não pode derrubar o render (um vídeo sem fotografias é
+     * melhor do que vídeo nenhum), mas **tem de deixar rasto**.
+     */
+    console.log(`⚠️ não deu para ler o catálogo de fotografias (${err.message}) — este vídeo sai sem elas.`);
+    return [];
+  }
+}
+
+export function escolherLugaresDaFoto(cenas, ocupados = new Set(), slug = null, catalogoDeMesa = null) {
   const lugares = new Map();
   // ⚠️ Sem slug, ou com um slug que ainda não tem fotografias suas, isto devolve VAZIO.
   // É de propósito: melhor um vídeo sem fotografias do que um vídeo com as de outro.
-  const doVideo = FOTOS_POR_VIDEO[String(slug || '')] || [];
+  const doVideo = FOTOS_POR_VIDEO[String(slug || '')] || fotosDoCatalogo(slug, catalogoDeMesa);
   if (!doVideo.length) return lugares;
   const escolhidos = [];
   cenas.forEach((c, i) => {

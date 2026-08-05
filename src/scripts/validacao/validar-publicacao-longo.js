@@ -28,7 +28,8 @@ import { iniciosDasCenas, VOZ_ENTRA_FRAMES, RESPIRO_SEC, CARTAO_CAPITULO_FRAMES 
 import { proximoDomingo, emPortugues, palavrasChave, montarMetadados, tituloAprovado, acharCapa, estreiaOcupada } from '../youtube/upload-longo.js';
 import { proximoLongo, comoArgumentos } from '../youtube/pick-next-longo.js';
 import { conferirTema, caudaDoTitulo, fazerSlug } from '../youtube/temas-longo.js';
-import { conferirImagens } from '../youtube/lib/imagens-longo.js';
+import { conferirImagens, escolherLugaresDaFoto } from '../youtube/lib/imagens-longo.js';
+import { PAPEIS, pistaDaCena, pedidoDaFoto, pedidoDoCartaz, doBanco, guardarNoBanco, NAO_REPETIR_EM } from '../youtube/fotos-longo.js';
 import { tempoDosCapitulos } from '../youtube/descricao-longo.js';
 
 const RAIZ = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
@@ -509,6 +510,16 @@ console.log('\n5. O ROBÔ DIÁRIO NÃO É TOCADO');
     'e as provas de mesa correm antes da voz, que é o 1º passo que custa alguma coisa',
     posicao('provas de mesa') >= 0 && posicao('provas de mesa') < posicao('A voz'),
   );
+  /**
+   * ⚠️ AS FOTOGRAFIAS TÊM DE ENTRAR ANTES DA VOZ, e não é indiferente: elas entram no
+   * guião montado, e é sobre esse guião que a voz, as legendas e o vídeo são feitos.
+   * Depois da voz, o vídeo sairia sem elas — **e sem se queixar**.
+   */
+  ok(
+    'as fotografias entram no guião ANTES de a voz ser gravada',
+    posicao('As fotografias') >= 0 && posicao('As fotografias') < posicao('A voz'),
+    `fotografias no passo ${posicao('As fotografias') + 1}, voz no ${posicao('A voz') + 1}`,
+  );
   ok(
     'o robô dá 5 horas ao vídeo (são dez mil fotogramas)',
     /timeout-minutes:\s*300/.test(fluxo),
@@ -696,6 +707,146 @@ console.log('\n8. AS IMAGENS, NUM GUIÃO QUE NÃO É O DO PILOTO');
       conferirImagens(plano.scenes, { valores: [] }).filter((e) => /mostram a mesma coisa/.test(e)).length === 0,
     );
   }
+}
+
+// ═══ 9. AS FOTOGRAFIAS AUTOMÁTICAS E O BANCO ═════════════════════════════════
+console.log('\n9. AS FOTOGRAFIAS AUTOMÁTICAS E O BANCO DE IMAGENS');
+
+{
+  const cenas = [
+    { id: 1, capitulo: null, parte: 'abertura', narration: 'Você já recebeu o salário e viu tudo sumir antes do fim do mês?' },
+    { id: 2, capitulo: null, parte: 'abertura', narration: 'Eu sentei com o celular na mão e resolvi olhar cada gasto com muita calma.' },
+    { id: 3, capitulo: 1, parte: 'pergunta', narration: 'Você também já abriu a fatura do cartão e sentiu o estômago gelar naquele instante?' },
+    { id: 4, capitulo: 2, parte: 'desenvolvimento', narration: 'O valor não parava de crescer todo santo mês sem eu perceber o motivo.' },
+    { id: 5, capitulo: 3, parte: 'desenvolvimento', narration: 'No mês seguinte o dinheiro finalmente ficou onde sempre deveria ter ficado.' },
+  ];
+
+  // ── as cenas são escolhidas pelo PAPEL, e o papel existe em qualquer guião ──
+  const escolhidas = PAPEIS.map((p) => ({ chave: p.chave, cena: p.procurar(cenas) }));
+  ok(
+    'os três papéis encontram cena num guião que nunca foi visto',
+    escolhidas.every((e) => e.cena),
+    escolhidas.map((e) => `${e.chave}:${e.cena?.id ?? '—'}`).join(' '),
+  );
+  ok(
+    'o susto cai no pico emocional (a pergunta do primeiro ato)',
+    escolhidas.find((e) => e.chave === 'susto').cena.id === 3,
+  );
+  /**
+   * ⚠️ O CARTAZ VAI PARA O ATO DO MEIO, e não é arrumação: o ato 1 só pode assustar
+   * (proibido explicar a causa) e o 3 é a virada. **O número com fonte pertence ao
+   * ensinamento**, que é o ato do meio — §35.2.
+   */
+  ok('o cartaz do número cai no ato do ensinamento (o do meio)', escolhidas.find((e) => e.chave === 'numero').cena.capitulo === 2);
+  ok('a virada cai no terceiro ato', escolhidas.find((e) => e.chave === 'virada').cena.capitulo === 3);
+
+  // ── a pista tem de ser ÚNICA, senão a fotografia aterra na cena errada ──
+  const pistas = cenas.map((c) => pistaDaCena(c, cenas));
+  ok('cada pista tem pelo menos quatro palavras', pistas.every((p) => p.split(' ').length >= 4), pistas.join(' | '));
+  ok(
+    'e nenhuma pista casa com outra cena que não a sua',
+    pistas.every((p, i) => cenas.filter((c) => c.narration.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().includes(p)).every((c) => c.id === cenas[i].id)),
+  );
+
+  // ── e a fotografia aterra mesmo onde foi pensada ──
+  const catalogoDeMesa = {
+    videos: {
+      'video-de-mesa': [{
+        ficheiro: 'manus/video-de-mesa/susto.jpg', nome: 'o susto', tipo: 'foto',
+        movimento: 'aproxima', pista: pistaDaCena(cenas[2], cenas),
+      }],
+    },
+  };
+  const lugares = escolherLugaresDaFoto(cenas, new Set(), 'video-de-mesa', catalogoDeMesa);
+  ok('a fotografia do catálogo aterra na cena de onde saiu o pedido', lugares.size === 1 && cenas[[...lugares.keys()][0]].id === 3, `caiu na cena ${cenas[[...lugares.keys()][0]]?.id}`);
+  /**
+   * 🔴 A TRAVA QUE NÃO SE NEGOCEIA, agora também pelo caminho automático: **um vídeo sem
+   * fotografias suas não leva as de outro.**
+   */
+  ok('um vídeo sem entrada no catálogo continua a não levar fotografia nenhuma', escolherLugaresDaFoto(cenas, new Set(), 'outro-video', catalogoDeMesa).size === 0);
+  ok('e sem catálogo nenhum também não', escolherLugaresDaFoto(cenas, new Set(), 'video-de-mesa', { videos: {} }).size === 0);
+
+  // ── o banco: duas prateleiras, e os cartazes não têm prateleira ──
+  const bancoDeMesa = {
+    imagens: [
+      { ficheiro: 'a.jpg', significado: 'o susto de olhar a conta', tipo: 'foto', usadoEm: ['v1'] },
+      { ficheiro: 'b.jpg', significado: 'o susto de olhar a conta', tipo: 'foto', usadoEm: ['v1', 'v2', 'v3'] },
+      { ficheiro: 'velho.jpg', significado: 'o cartaz', tipo: 'cartaz', usadoEm: ['v1'] },
+    ],
+  };
+  ok(
+    'o banco devolve uma fotografia do significado pedido',
+    doBanco('o susto de olhar a conta', { banco: bancoDeMesa, historico: ['x', 'y'] })?.ficheiro === 'a.jpg',
+  );
+  ok(
+    'e prefere a MENOS usada, para o banco rodar',
+    doBanco('o susto de olhar a conta', { banco: bancoDeMesa, historico: [] })?.ficheiro === 'a.jpg',
+  );
+  ok(
+    'não devolve nada que tenha sido usado nos últimos 8 vídeos',
+    doBanco('o susto de olhar a conta', { banco: bancoDeMesa, historico: ['v1', 'v2', 'v3'] }) === null,
+  );
+  /**
+   * 🔴 **OS CARTAZES COM NÚMEROS NÃO ENTRAM NO BANCO, E ISTO É A PROVA QUE ACENDE.**
+   * O cartaz diz *"16% ao mês — fonte Banco Central"* e essa taxa MUDA. Reaproveitá-lo
+   * daqui a seis meses é pôr no ecrã um número falso com a chancela do Banco Central por
+   * baixo — o defeito mais caro que este canal pode ter, e seria autoinfligido.
+   */
+  ok('🔴 um cartaz NUNCA sai do banco, mesmo que lá esteja', doBanco('o cartaz', { banco: bancoDeMesa, historico: [] }) === null);
+  const guardado = guardarNoBanco({ imagens: [] }, { ficheiro: 'c.jpg', significado: null, tipo: 'cartaz', pista: 'x' }, 'v9');
+  ok('🔴 e um cartaz nunca ENTRA no banco', (guardado.imagens || []).length === 0);
+  const guardadaFoto = guardarNoBanco({ imagens: [] }, { ficheiro: 'd.jpg', significado: 'a saída que se abre', tipo: 'foto', pista: 'y' }, 'v9');
+  ok('mas uma fotografia entra, catalogada por SIGNIFICADO', guardadaFoto.imagens[0]?.significado === 'a saída que se abre');
+  ok('e a regra do dono são 8 vídeos sem repetir', NAO_REPETIR_EM === 8);
+
+  /**
+   * ✅ **A PROVA QUE MAIS VALE, E É CONTRA O VÍDEO APROVADO.**
+   *
+   * As três fotografias do piloto foram colocadas **à mão**, uma a uma, a ler o guião
+   * (§43.2). A escolha automática é por PAPEL e nunca viu esse vídeo. Se as duas
+   * chegarem ao mesmo sítio, a regra por papel não é uma aproximação — é a mesma decisão
+   * que uma pessoa tomou, escrita de maneira a servir qualquer vídeo.
+   *
+   * **Medido em 05/08:** à mão foram as cenas **5 · 12 · 22**; a regra escolhe **4 · 12 ·
+   * 20**. O cartaz do número cai na MESMA cena; as outras duas caem no mesmo ato, a uma e
+   * a duas cenas de distância. (A cena 4 é *"Você já abriu a fatura e deu de cara com um
+   * número que fez o estômago gelar?"* e a 5 é *"Era um domingo, eu sentei com o
+   * celular…"* — é o mesmo momento da história.)
+   */
+  const caminhoPiloto = join(RAIZ, 'youtube-render', 'public', 'roteiro', 'sair-do-vermelho.json');
+  if (existsSync(caminhoPiloto)) {
+    const piloto = JSON.parse(readFileSync(caminhoPiloto, 'utf-8'));
+    const aMao = piloto.scenes.filter((c) => c.visual?.tipo === 'foto').map((c) => c.id);
+    const porRegra = PAPEIS.map((p) => p.procurar(piloto.scenes)?.id).filter(Boolean);
+    ok(
+      'a escolha por papel encontra as três cenas no vídeo aprovado',
+      porRegra.length === 3,
+      `encontrou ${porRegra.join(', ')}`,
+    );
+    ok(
+      'e cai no mesmo sítio que a escolha feita à mão (a duas cenas de distância, no máximo)',
+      aMao.length === 3 && porRegra.every((id, i) => Math.abs(id - aMao[i]) <= 2),
+      `à mão ${aMao.join(' · ')} · por regra ${porRegra.join(' · ')}`,
+    );
+    ok(
+      'e o cartaz do número cai exatamente na mesma cena que a pessoa escolheu',
+      porRegra[1] === aMao[1],
+      `${porRegra[1]} contra ${aMao[1]}`,
+    );
+  } else {
+    console.log('  ⏭️  o guião do piloto não está montado — as 3 provas contra a escolha à mão ficam de fora');
+  }
+
+  // ── o pedido do cartaz nunca inventa o número ──
+  const cartaz = pedidoDoCartaz({ taxa: 16, rotulo: 'juro do rotativo do cartão', fonte: 'Banco Central do Brasil' });
+  ok('o pedido do cartaz leva o número do caderno e a fonte', cartaz.includes('16% AO MÊS') && cartaz.includes('Fonte: Banco Central do Brasil'));
+  ok('e proíbe expressamente imitar um jornal', /NOT a reproduction of any real newspaper/.test(cartaz));
+
+  // ── e o pedido das fotografias proíbe letras, com o que fazer em vez disso ──
+  const foto = pedidoDaFoto(PAPEIS[0], cenas[2]);
+  ok('o pedido da fotografia proíbe QUALQUER texto legível', /NO READABLE TEXT AND NO NUMBERS AT ALL/.test(foto));
+  ok('e diz o que fazer em vez disso (o ritmo das linhas, desfocado)', /RHYTHM of rows and columns/.test(foto));
+  ok('e leva a frase que a voz diz naquele segundo', foto.includes(cenas[2].narration));
 }
 
 // ═══ RESULTADO ═══════════════════════════════════════════════════════════════

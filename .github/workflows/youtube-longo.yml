@@ -331,6 +331,65 @@ jobs:
           node src/scripts/validacao/validar-roteiro-longo.js
           node src/scripts/validacao/validar-publicacao-longo.js
 
+      # ── 1-c. AS FOTOGRAFIAS ───────────────────────────────────────────────────
+      #
+      # ⚠️ **CORRE ANTES DA VOZ, e a ordem não é indiferente.** As fotografias entram no
+      # guião montado, e é sobre esse guião que a voz, as legendas e o vídeo são feitos.
+      # Depois da voz era tarde.
+      #
+      # 🔴 **A REGRA QUE NÃO SE NEGOCEIA:** uma fotografia não pode ter uma única letra
+      # legível. A primeira que se gerou saiu com uma fatura EM INGLÊS E EM DÓLARES e o
+      # script disse ✅ — só se viu olhando (§42.5). Por ordem do dono (05/08), isso deixou
+      # de ser uma regra escrita e passou a ser MEDIDA: instala-se um leitor de texto e a
+      # máquina lê a imagem. Se ler letras numa fotografia, ela é recusada; e no cartaz faz
+      # o contrário — confirma que o número é o do caderno.
+      #
+      # ⚠️ **SEM A CHAVE DA MANUS, ISTO NÃO FALHA — SALTA.** O vídeo sai sem fotografias,
+      # que é exatamente o que acontece hoje. Um robô que fica vermelho por causa de uma
+      # coisa que ainda não foi ligada ensina toda a gente a ignorar os avisos.
+      - name: As fotografias (só se houver chave da Manus)
+        if: steps.escolher.outputs.skip != 'true'
+        env:
+          MANUS_API_KEY: ${{ secrets.MANUS_API_KEY }}
+        run: |
+          set -uo pipefail
+          if [ -z "${MANUS_API_KEY:-}" ]; then
+            echo "::warning::não há chave da Manus nos segredos — este vídeo sai SEM fotografias."
+            echo "  Para as ligar: criar o segredo MANUS_API_KEY no GitHub."
+            exit 0
+          fi
+          echo "🔤 a instalar o leitor de texto (é ele que recusa uma fotografia com letras)…"
+          sudo timeout 300 apt-get install -y -qq tesseract-ocr tesseract-ocr-por || {
+            sudo timeout 300 apt-get update -qq || true
+            sudo timeout 600 apt-get install -y -qq tesseract-ocr tesseract-ocr-por || true
+          }
+          # ⚠️ CONFERIR O RESULTADO. Sem leitor, o programa recusa-se a aceitar fotografias
+          # — e é melhor assim: a regra das letras não se pode garantir sem as ler.
+          if ! command -v tesseract >/dev/null; then
+            echo "::warning::o leitor de texto não ficou instalado — o vídeo sai sem fotografias."
+            exit 0
+          fi
+          tesseract --version | head -1
+          set -e
+          node src/scripts/youtube/fotos-longo.js --slug="$SLUG"
+          # As fotografias entram no guião — portanto o montador corre outra vez, agora
+          # com elas. É determinista: o resto do vídeo sai exatamente igual.
+          node src/scripts/youtube/montar-longo.js --slug="$SLUG"
+
+      - name: Guardar as fotografias novas e o banco
+        if: steps.escolher.outputs.skip != 'true'
+        run: |
+          git config user.name "FinMoovi Bot"
+          git config user.email "bot@finmoovi.com"
+          git add .github/data/fotos-do-longo.json .github/data/banco-de-imagens.json youtube-render/public/manus || true
+          if git diff --staged --quiet; then
+            echo "Sem fotografias novas."
+          else
+            git commit -m "chore: fotografias do video longo $SLUG [skip ci]"
+            git pull --rebase origin "${GITHUB_REF_NAME}" || true
+            git push
+          fi
+
       # ── 2. A VOZ ─────────────────────────────────────────────────────────────
       # ⚠️ O tratamento de som da voz liga-se sozinho pelo FORMATO do guião (longo), e o
       # Short nunca o apanha por acidente. Ver §43.1.

@@ -34,6 +34,20 @@ import { readFileSync, existsSync, mkdirSync } from 'fs';
 import * as fs from 'fs';
 import { join, resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
+/**
+ * 🔴 ESTA LINHA FALTAVA, E POR ISSO O ENCOLHIMENTO NUNCA FUNCIONOU (achado a 05/08).
+ *
+ * O código lá em baixo chama o `ffmpeg` para fazer a cópia a 1920×1080 que o vídeo usa —
+ * **e a peça que lança comandos nunca foi importada**. O resultado não era um erro: era um
+ * aviso discreto dentro de um resguardo, e o programa seguia em frente a dizer que tinha
+ * corrido bem. **As três imagens do primeiro vídeo foram encolhidas à mão**, e as horas
+ * dos ficheiros provam-no: os PNG às 15h44-15h52, os JPEG só às 16h34.
+ *
+ * ⚠️ Enquanto isto esteve partido, **automatizar as imagens era impossível**: cada vídeo
+ * novo deixava um PNG de 5 MB fora do repositório e nada dentro dele.
+ * É a §42.5 noutro sítio: *o script correu, disse quase-✅, e não fez o trabalho.*
+ */
+import { execFileSync } from 'child_process';
 import { creditos, pedirAgente, descarregar } from './lib/manus-client.js';
 
 const AQUI = dirname(fileURLToPath(import.meta.url));
