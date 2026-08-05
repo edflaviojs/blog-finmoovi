@@ -36,23 +36,23 @@ Patrimonio Neto = Activos - Pasivos. En otras palabras: todo lo que tienes menos
 
 | Activos | Valor |
 |--------|-------|
-| Inversiones | R$ 50.000 |
-| Inmueble | R$ 300.000 |
-| Auto | R$ 40.000 |
-| **Total Activos** | **R$ 390.000** |
+| Inversiones | €9.000 |
+| Inmueble | €54.000 |
+| Auto | €7.200 |
+| **Total Activos** | **€70.200** |
 
 | Pasivos | Valor |
 |----------|-------|
-| Financiación inmueble | R$ 200.000 |
-| Financiación auto | R$ 25.000 |
-| **Total Pasivos** | **R$ 225.000** |
+| Financiación inmueble | €36.000 |
+| Financiación auto | €4.500 |
+| **Total Pasivos** | **€40.500** |
 
-**Patrimonio Neto = R$ 390.000 - R$ 225.000 = R$ 165.000**
+**Patrimonio Neto = €70.200 - €40.500 = €29.700**
 
 ## Por qué seguir
 
 - Muestra si estás enriqueciendo o empobreciendo
-- Permite definir metas concretas (ej: "quiero R$ 1 millón en patrimonio")
+- Permite definir metas concretas (ej: "quiero €180.000 en patrimonio")
 - Revela si tus deudas están bajo control
 - Es más importante que el salario (ingresos altos con deudas altas = patrimonio bajo)
 

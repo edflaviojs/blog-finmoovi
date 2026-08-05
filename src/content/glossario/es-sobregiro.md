@@ -23,24 +23,24 @@ Sobregiro es un límite de [crédito](/es/posts/es-tarjeta-de-credito-vs-tarjeta
 
 ## Ejemplo práctico
 
-Si usted queda R$ 1.000 negativos por 30 días con intereses del 12% al mes:
-- Intereses: R$ 120
-- En 6 meses sin pagar: R$ 1.000 se convierte en R$ 1.973
-- En 12 meses: R$ 1.000 se convierte en R$ 3.896
+Si usted queda **€180** negativos por 30 días con intereses del 12% al mes:
+- Intereses: **€22**
+- En 6 meses sin pagar: **€180** se convierte en **€355**
+- En 12 meses: **€180** se convierte en **€701**
 
 ## ¿Cómo evitar?
 
-1. **Desactive el sobregiro** — llame al banco y solicite que lo eliminen
-2. **Mantenga una reserva en la cuenta** — al menos R$ 500 de colchón
-3. **Configure alertas** — aviso cuando el saldo esté bajo
-4. **Si necesita [crédito](/es/glossario/es-credito)** — el [préstamo](/es/glossario/es-prestamo) personal tiene intereses 5 veces menores
+1. **Desactive el sobregiro** — llame al banco y solicite que lo eliminen  
+2. **Mantenga una reserva en la cuenta** — al menos **€90** de colchón  
+3. **Configure alertas** — aviso cuando el saldo esté bajo  
+4. **Si necesita [crédito](/es/glossario/es-credito)** — el [préstamo](/es/glossario/es-prestamo) personal tiene intereses 5 veces menores  
 
 ## [Alternativas](/es/posts/es-5-alternativas-a-organizze-en-2026-opciones-para-administrar) más baratas
 
 | Tipo de crédito | Intereses mensuales |
-|----------------|---------------|
+|----------------|---------------------|
 | Sobregiro | 8-15% |
 | Tarjeta de crédito (rotativo) | 12-16% |
 | Préstamo personal | 2-5% |
 | Préstamo consignado | 1-2% |
-| Anticipación FGTS | 1-2% |
+| Anticipación fondo de garantía | 1-2% |

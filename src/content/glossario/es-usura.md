@@ -24,15 +24,13 @@ La usura es un problema grave porque puede llevar a las personas a una situació
 
 ![Qué es](/images/glossario/usura-inline-1.webp)
 
-
-
 ## Cómo funciona
-La usura funciona de manera que el prestamista cobra una tasa de interés muy alta sobre el préstamo, lo que puede ser varias veces mayor que la tasa de interés promedio del mercado. Por ejemplo, si alguien te presta R$1.000 a una tasa de interés del 20% anual, debes pagar R$1.200 al final del año, lo que es un aumento de R$200 en solo un año. Si no pagas el préstamo a tiempo, el prestamista puede cobrar intereses sobre los intereses, lo que puede llevar a una deuda que crece rápidamente.
+La usura funciona de manera que el prestamista cobra una tasa de interés muy alta sobre el préstamo, lo que puede ser varias veces mayor que la tasa de interés promedio del mercado. Por ejemplo, si alguien te presta €180 a una tasa de interés del 20% anual, debes pagar €216 al final del año, lo que es un aumento de €36 en solo un año. Si no pagas el préstamo a tiempo, el prestamista puede cobrar intereses sobre los intereses, lo que puede llevar a una deuda que crece rápidamente.
 
 Algunos ejemplos de cómo la usura puede funcionar en la práctica son:
-* Un préstamo personal de R$5.000 a una tasa de interés del 30% anual, lo que significa que debes pagar R$6.500 al final del año.
-* Un crédito de [tarjeta de crédito](/es/posts/es-tarjeta-de-credito-vs-tarjeta-de-debito-cual-vale-mas-la-pen) con una tasa de interés del 40% anual, lo que significa que debes pagar R$1.400 por un gasto de R$1.000.
-* Un préstamo hipotecario con una tasa de interés del 15% anual, lo que significa que debes pagar R$15.000 por un préstamo de R$10.000 en solo un año.
+* Un préstamo personal de €900 a una tasa de interés del 30% anual, lo que significa que debes pagar €1,170 al final del año.
+* Un crédito de [tarjeta de crédito](/es/posts/es-tarjeta-de-credito-vs-tarjeta-de-debito-cual-vale-mas-la-pen) con una tasa de interés del 40% anual, lo que significa que debes pagar €252 por un gasto de €180.
+* Un préstamo hipotecario con una tasa de interés del 15% anual, lo que significa que debes pagar €2,700 por un préstamo de €1,800 en solo un año.
 
 ## Ventajas
 Aunque la usura puede parecer un problema sin solución, hay algunas ventajas que las personas pueden considerar al tomar préstamos. Por ejemplo:
@@ -44,8 +42,6 @@ Sin embargo, es importante tener en cuenta que estas ventajas pueden ser superad
 
 ![Ventajas](/images/glossario/usura-inline-3.webp)
 
-
-
 ## Riesgos
 Los riesgos asociados con la usura son numerosos y pueden tener consecuencias graves para las personas que toman préstamos. Algunos de los riesgos más comunes son:
 * **Deuda insostenible**: La usura puede llevar a una deuda insostenible, lo que puede ser difícil de pagar y puede llevar a una situación de estrés financiero.
@@ -56,8 +52,8 @@ Los riesgos asociados con la usura son numerosos y pueden tener consecuencias gr
 
 ## Ejemplos prácticos
 La usura puede ocurrir en cualquier tipo de préstamo, desde un crédito personal hasta una hipoteca. Por ejemplo:
-* Un trabajador que gana R$4.000 al mes puede tomar un préstamo personal de R$10.000 a una tasa de interés del 25% anual. Si no paga el préstamo a tiempo, puede deber R$12.500 al final del año.
-* Un empresario que gana R$6.000 al mes puede tomar un préstamo hipotecario de R$50.000 a una tasa de interés del 18% anual. Si no paga el préstamo a tiempo, puede deber R$59.000 al final del año.
+* Un trabajador que gana €720 al mes puede tomar un préstamo personal de €1,800 a una tasa de interés del 25% anual. Si no paga el préstamo a tiempo, puede deber €2,250 al final del año.
+* Un empresario que gana €1,080 al mes puede tomar un préstamo hipotecario de €9,000 a una tasa de interés del 18% anual. Si no paga el préstamo a tiempo, puede deber €10,620 al final del año.
 
 **Consejo práctico:** Es importante considerar las opciones de préstamo cuidadosamente y asegurarse de entender los términos y las tasas de interés antes de tomar un préstamo.
 
@@ -71,4 +67,3 @@ Para evitar la usura y tomar préstamos de manera responsable, es importante seg
 
 ## Empieza hoy
 No dejes que la usura te atrape. Empieza hoy a tomar control de tus finanzas y a considerar las opciones de préstamo de manera responsable. Recuerda que la usura puede ser un problema grave, pero con la información y la planificación adecuadas, puedes evitarla y tomar préstamos de manera segura. ¡Empieza hoy a construir un futuro financiero más estable!
-

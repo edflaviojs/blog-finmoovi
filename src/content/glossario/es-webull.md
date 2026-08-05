@@ -25,8 +25,6 @@ Webull funciona de manera similar a otras plataformas de inversión en línea. L
 
 ![Qué es Webull](/images/glossario/webull-inline-1.webp)
 
-
-
 * Características clave de Webull:
  + Comisiones bajas o cero para la mayoría de las operaciones
  + Acceso a una amplia variedad de instrumentos financieros
@@ -50,10 +48,8 @@ Aunque Webull ofrece muchas ventajas, también hay riesgos asociados con la inve
 
 ![Ventajas](/images/glossario/webull-inline-3.webp)
 
-
-
 ## Ejemplos prácticos
-Supongamos que usted es un inversor individual con un salario de R$5.000 al mes y quiere comenzar a invertir en el mercado de valores. Usted decide depositar R$1.000 en su cuenta de Webull y comenzar a comprar acciones de empresas que considere prometedoras. **Consejo práctico:** siempre es importante diversificar su cartera para minimizar el riesgo, por lo que considere invertir en una variedad de instrumentos financieros. Por ejemplo, usted podría invertir R$500 en acciones de una empresa de tecnología, R$300 en un [ETF](/es/glossario/es-etf) que sigue el índice de valores de São Paulo, y R$200 en una opción de compra de una empresa de consumo.
+Supongamos que usted es un inversor individual con un salario de €900 al mes y quiere comenzar a invertir en el mercado de valores. Usted decide depositar €180 en su cuenta de Webull y comenzar a comprar acciones de empresas que considere prometedoras. **Consejo práctico:** siempre es importante diversificar su cartera para minimizar el riesgo, por lo que considere invertir en una variedad de instrumentos financieros. Por ejemplo, usted podría invertir €90 en acciones de una empresa de tecnología, €54 en un [ETF](/es/glossario/es-etf) que sigue un índice de valores global, y €36 en una opción de compra de una empresa de consumo.
 
 * Ejemplo de cómo Webull puede ayudar:
  + Usted puede utilizar las herramientas de análisis de Webull para investigar y comparar las acciones de diferentes empresas antes de tomar una decisión.
@@ -61,4 +57,4 @@ Supongamos que usted es un inversor individual con un salario de R$5.000 al mes 
  + Usted puede utilizar la cuenta de práctica de Webull para practicar y mejorar sus habilidades de inversión antes de invertir dinero real.
 
 ## Empieza hoy
-No espere más para comenzar a invertir en su futuro. **Consejo práctico:** siempre es importante comenzar con pequeñas cantidades y aumentar gradualmente su inversión a medida que se sienta más cómodo con el proceso. Con Webull, usted puede comenzar a invertir con tan solo R$100 y acceder a una amplia variedad de instrumentos financieros y herramientas de análisis. Así que no espere más, regístrese en Webull hoy mismo y comience a construir el futuro financiero que siempre ha querido.
+No espere más para comenzar a invertir en su futuro. **Consejo práctico:** siempre es importante comenzar con pequeñas cantidades y aumentar gradualmente su inversión a medida que se sienta más cómodo con el proceso. Con Webull, usted puede comenzar a invertir con tan solo €18 y acceder a una amplia variedad de instrumentos financieros y herramientas de análisis. Así que no espere más, regístrese en Webull hoy mismo y comience a construir el futuro financiero que siempre ha querido.

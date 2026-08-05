@@ -18,12 +18,12 @@ seo:
 ---
 
 ## Finanzas Conjuntas
-Cuando estás en una relación, es importante que tú y tu pareja estén alineados en cuanto a las finanzas. Esto significa que deben tener una visión clara de cómo están gastando su [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) y cómo pueden ahorrar juntos. Supongamos que tú y tu pareja ganan R$ 5,000 y R$ 6,000 por mes, respectivamente. Si no tienen un plan, es fácil gastar todo el [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado) sin saber a dónde va.
+Cuando estás en una relación, es importante que tú y tu pareja estén alineados en cuanto a las finanzas. Esto significa que deben tener una visión clara de cómo están gastando su [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) y cómo pueden ahorrar juntos. Supongamos que tú y tu pareja ganan €900 y €1,080 por mes, respectivamente. Si no tienen un plan, es fácil gastar todo el [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado) sin saber a dónde va.
 
-Una buena idea es crear un [presupuesto](/es/posts/es-como-crear-un-presupuesto-personal-en-5-pasos-simples) juntos, considerando todos los [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo-s) mensuales como alquiler, comida, transporte, etc. Por ejemplo, si pagan R$ 2,500 de alquiler y R$ 1,000 de comida al mes, ya son R$ 3,500 en gastos fijos. También es importante considerar gastos variables como entretenimiento y ocio.
+Una buena idea es crear un [presupuesto](/es/posts/es-como-crear-un-presupuesto-personal-en-5-pasos-simples) juntos, considerando todos los [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo-s) mensuales como alquiler, comida, transporte, etc. Por ejemplo, si pagan €450 de alquiler y €180 de comida al mes, ya son €630 en gastos fijos. También es importante considerar gastos variables como entretenimiento y ocio.
 
 ## Gastos y Ahorros
-Es fundamental que tú y tu pareja tengan una conversación abierta sobre gastos y ahorros. **Consejo práctico:** crea una categoría de "[dinero](/es/posts/es-organizar-finanzas-autonomo) para divertirse" en tu presupuesto para que puedan gastar un poco de [dinero](/es/posts/es-planeamiento-financiero-para-parejas) en cosas que disfrutan, sin sentirse culpables. Por ejemplo, pueden decidir gastar R$ 500 al mes en restaurantes y cines.
+Es fundamental que tú y tu pareja tengan una conversación abierta sobre gastos y ahorros. **Consejo práctico:** crea una categoría de "[dinero](/es/posts/es-organizar-finanzas-autonomo) para divertirse" en tu presupuesto para que puedan gastar un poco de [dinero](/es/posts/es-planeamiento-financiero-para-parejas) en cosas que disfrutan, sin sentirse culpables. Por ejemplo, pueden decidir gastar €90 al mes en restaurantes y cines.
 
 Aquí tienes algunos [consejos](/es/posts/es-7-errores-financieros-principiante) para ahorrar dinero:
 * Recorta gastos innecesarios, como suscripciones a servicios que no usas
@@ -32,7 +32,7 @@ Aquí tienes algunos [consejos](/es/posts/es-7-errores-financieros-principiante)
 * Evita las compras impulsivas
 
 ## Metas Financieras
-Tener metas financieras en común es esencial para que tú y tu pareja trabajen juntos hacia el mismo objetivo. Esto puede incluir ahorrar para una casa, pagar deudas o crear un [fondo de emergencia](/es/glossario/es-fondo-de-emergencia). Supongamos que quieren ahorrar R$ 20,000 para la entrada de una casa. Esto significa que necesitan ahorrar R$ 1,667 al mes durante un año.
+Tener metas financieras en común es esencial para que tú y tu pareja trabajen juntos hacia el mismo objetivo. Esto puede incluir ahorrar para una casa, pagar deudas o crear un [fondo de emergencia](/es/glossario/es-fondo-de-emergencia). Supongamos que quieren ahorrar €3,600 para la entrada de una casa. Esto significa que necesitan ahorrar €300 al mes durante un año.
 
 ## Desafíos y Soluciones
 Los desafíos surgen comúnmente al gestionar las finanzas de pareja. Por ejemplo, uno de los socios puede tener gustos caros, mientras que el otro es más ahorrativo. **Consejo práctico:** crea un sistema de "control de gastos" para que puedan monitorear sus gastos y discutirlos regularmente.

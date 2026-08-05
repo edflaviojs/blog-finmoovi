@@ -20,7 +20,7 @@ seo:
 
 ## Qué es
 
-Nubank es una fintech brasileña que ofrece una cuenta digital y una [tarjeta de crédito](/es/posts/es-tarjeta-de-credito-vs-tarjeta-de-debito-cual-vale-mas-la-pen) sin tarifas de mantenimiento. En lugar de una sucursal física, todo se maneja desde una app que puedes descargar en tu celular. La empresa nació en 2013 con la idea de simplificar la vida financiera, y hoy cuenta con millones de usuarios en Brasil y otros países de América Latina. En términos simples, Nubank es como un banco “de bolsillo” que te permite pagar, ahorrar y controlar tus [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo-s) sin la burocracia de los bancos tradicionales.
+Nubank es una fintech latinoamericana que ofrece una cuenta digital y una [tarjeta de crédito](/es/posts/es-tarjeta-de-credito-vs-tarjeta-de-debito-cual-vale-mas-la-pen) sin tarifas de mantenimiento. En lugar de una sucursal física, todo se maneja desde una app que puedes descargar en tu celular. La empresa nació en 2013 con la idea de simplificar la vida financiera, y hoy cuenta con millones de usuarios en varios países de América Latina. En términos simples, Nubank es como un banco “de bolsillo” que te permite pagar, ahorrar y controlar tus [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo-s) sin la burocracia de los bancos tradicionales.
 
 ![Qué es](/images/glossario/nubank-inline-1.webp)
 
@@ -49,25 +49,25 @@ Nubank se destaca por eliminar muchas de las comisiones que cobran los bancos tr
 
 ## Riesgos
 
-Aunque Nubank es una opción muy cómoda, no está exenta de riesgos. Al ser una fintech, depende de la conectividad a internet; si la app falla o tu móvil se queda sin señal, podrías quedar sin acceso a tu [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) momentáneamente. Además, la tarjeta de crédito tiene un límite que se ajusta según tu historial y tus ingresos; si lo usas al máximo, el score de crédito (puntuación crediticia) puede verse afectado negativamente. Por último, aunque la empresa está regulada por el Banco Central de Brasil, la garantía de fondos está cubierta por el Fondo Garantidor de Créditos (FGC) solo hasta R$ 250.000 por cliente; si mantienes saldos muy altos, deberías diversificar.
+Aunque Nubank es una opción muy cómoda, no está exenta de riesgos. Al ser una fintech, depende de la conectividad a internet; si la app falla o tu móvil se queda sin señal, podrías quedar sin acceso a tu [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) momentáneamente. Además, la tarjeta de crédito tiene un límite que se ajusta según tu historial y tus ingresos; si lo usas al máximo, el score de crédito (puntuación crediticia) puede verse afectado negativamente. Por último, aunque la empresa está regulada por el banco central, la garantía de fondos está cubierta por el fondo de garantía solo hasta €45,000 por cliente; si mantienes saldos muy altos, deberías diversificar.
 
 - **Dependencia tecnológica:** sin internet, la app no funciona.  
 - **Límite de crédito:** usar todo el límite puede bajar tu score.  
-- **Cobertura del FGC:** solo protege hasta cierto monto; diversifica tus cuentas.  
+- **Cobertura del fondo de garantía:** solo protege hasta cierto monto; diversifica tus cuentas.  
 
 ## Ejemplos prácticos
 
-Imagina que tienes un salario mensual de R$ 4.500. Con Nubank puedes organizar tus finanzas de la siguiente manera:
+Imagina que tienes un salario mensual de €810. Con Nubank puedes organizar tus finanzas de la siguiente manera:
 
-- **Alquiler y servicios:** R$ 1.200 (subcuenta “Gastos fijos”).  
-- **Alimentación:** R$ 800 (subcuenta “Comida”).  
-- **Transporte:** R$ 300 (subcuenta “Movilidad”).  
-- **Ocio y suscripciones:** R$ 500 (subcuenta “Entretenimiento”).  
-- **[Ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado) automático:** R$ 600 se transfieren a la cuenta de ahorro Nubank cada día de pago.  
+- **Alquiler y servicios:** €216 (subcuenta “Gastos fijos”).  
+- **Alimentación:** €144 (subcuenta “Comida”).  
+- **Transporte:** €54 (subcuenta “Movilidad”).  
+- **Ocio y suscripciones:** €90 (subcuenta “Entretenimiento”).  
+- **[Ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado) automático:** €108 se transfieren a la cuenta de ahorro Nubank cada día de pago.  
 
-Si además utilizas la tarjeta de crédito para pagar el supermercado (R$ 800) y la factura de internet (R$ 120), puedes pagar el total en la fecha de vencimiento sin generar intereses, siempre y cuando pagues el saldo completo. **Consejo práctico:** paga el total de la tarjeta antes de la fecha de corte para evitar cargos de intereses y mantener tu score alto.
+Si además utilizas la tarjeta de crédito para pagar el supermercado (€144) y la factura de internet (€22), puedes pagar el total en la fecha de vencimiento sin generar intereses, siempre y cuando pagues el saldo completo. **Consejo práctico:** paga el total de la tarjeta antes de la fecha de corte para evitar cargos de intereses y mantener tu score alto.
 
-Otro caso: un profesional con salario de R$ 7.200 quiere invertir en su educación. Con la función “Nubank Rewards”, cada R$ 1 gastado en cursos online genera 1 punto. Si destina R$ 1.200 al año en cursos, acumulará 1.200 puntos, que pueden canjearse por umbilical de viajes o descuentos en la tienda de la app. **Consejo práctico:** revisa mensualmente el resumen de puntos y elige canjearlos antes de que expiren.
+Otro caso: un profesional con salario de €1,296 quiere invertir en su educación. Con la función “Nubank Rewards”, cada €1 gastado en cursos online genera 1 punto. Si destina €216 al año en cursos, acumulará 216 puntos, que pueden canjearse por viajes o descuentos en la tienda de la app. **Consejo práctico:** revisa mensualmente el resumen de puntos y elige canjearlos antes de que expiren.
 
 ## Cómo empezar
 
@@ -84,4 +84,3 @@ Una vez activada, configura tus notificaciones, crea subcuentas y establece un l
 ## Empieza hoy
 
 No esperes a que el próximo mes sea diferente; con Nubank puedes tomar el control de tu [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado) desde hoy. Descarga la app, abre tu cuenta y empieza a organizar tus gastos con la claridad que mereces. ¡Tu futuro financiero te lo agradecerá!
-

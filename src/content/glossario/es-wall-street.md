@@ -23,8 +23,6 @@ Wall Street es el nombre que se le da al conjunto de instituciones financieras
 
 ![Qué es](/images/glossario/wall-street-inline-1.webp)
 
-
-
 ## Cómo funciona
 
 En la práctica, Wall Street opera a través de bolsas de valores donde se negocian acciones y bonos. Cada día, miles de órdenes de compra y venta se cruzan y el precio de cada activo se determina por la oferta y la demanda. Los inversores institucionales (fondos de pensiones, aseguradoras) y los traders (personas que compran y venden a corto plazo) usan información financiera, análisis de mercado y algoritmos para decidir cuándo entrar o salir de una posición.  
@@ -38,8 +36,6 @@ En la práctica, Wall Street opera a través de bolsas de valores donde se neg
 Invertir en los instrumentos que cotizan en Wall Street puede ofrecer varios beneficios para tu bolsillo, siempre que lo hagas con cabeza.  
 
 ![Ventajas](/images/glossario/wall-street-inline-3.webp)
-
-
 
 - **Diversificación:** Puedes repartir tu [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) en distintas empresas y sectores, reduciendo el riesgo de que una sola mala decisión te deje sin nada.  
 - **Potencial de crecimiento:** Algunas acciones pueden multiplicar su valor en pocos años, generando ganancias superiores a la [inflación](/es/glossario/es-inflacion).  
@@ -57,11 +53,11 @@ Como todo en la vida, lo que sube también puede bajar. Es importante que conozc
 
 ## Ejemplos prácticos
 
-Imagina que ganas entre R$ 3 000 y R$ 8 000 al mes y decides destinar una parte a invertir en la bolsa. Aquí tienes tres escenarios realistas:  
+Imagina que ganas entre €1,500 y €4,000 al mes y decides destinar una parte a invertir en la bolsa. Aquí tienes tres escenarios realistas:  
 
-- **Caso 1:** Con un salario de R$ 3 500, decides ahorrar el 10 % (R$ 350) y comprar acciones de una empresa de tecnología que cotiza a R$ 50 por acción. Con R$ 350 compras 7 acciones. Si en un año el precio sube a R$ 70, tus 7 acciones valen R$ 490, generando una ganancia de R$ 140.  
-- **Caso 2:** Con un salario de R$ 5 800, apartas el 15 % (R$ 870) y lo inviertes en un fondo de índice que replica el S&P 500. Si el índice crece un 8 % en el año, tu inversión pasa a valer R$ 939, lo que representa R$ 69 de ganancia.  
-- **Caso 3:** Con un salario de R$ 7 200, decides destinar el 20 % (R$ 1 440) a comprar bonos del gobierno que pagan un 5 % anual. Al cabo de un año, recibes R$ 1 512, obteniendo R$ 72 de intereses.  
+- **Caso 1:** Con un salario de €1,500, decides ahorrar el 10 % (€150) y comprar acciones de una empresa de tecnología que cotiza a €9 por acción. Con €150 compras 16 acciones. Si en un año el precio sube a €12.6, tus 16 acciones valen €201.6, generando una ganancia de €51.6.  
+- **Caso 2:** Con un salario de €4,000, apartas el 15 % (€600) y lo inviertes en un fondo de índice que replica el S&P 500. Si el índice crece un 8 % en el año, tu inversión pasa a valer €648, lo que representa €48 de ganancia.  
+- **Caso 3:** Con un salario de €3,000, decides destinar el 20 % (€600) a comprar bonos del gobierno que pagan un 5 % anual. Al cabo de un año, recibes €630, obteniendo €30 de intereses.  
 
 **Consejo práctico:** **Empieza con una cantidad que no comprometa tu [fondo de emergencia](/es/glossario/es-fondo-de-emergencia); así podrás aguantar la volatilidad sin estrés.**  
 
@@ -83,4 +79,3 @@ Dar el primer paso no tiene que ser complicado. Sigue estos pasos y estarás lis
 ## Empieza hoy
 
 No esperes a que el mercado sea “el momento perfecto”; ese instante nunca llega. Con una pequeña decisión hoy, puedes estar más cerca de tus sueños financieros mañana. ¡Anímate, abre tu cuenta y da el primer paso hacia la independencia económica!
-

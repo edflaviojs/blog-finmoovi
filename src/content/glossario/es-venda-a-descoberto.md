@@ -24,8 +24,6 @@ La venta a descubierto, también conocida como “short selling”, es una estra
 
 ![Qué es](/images/glossario/venda-a-descoberto-inline-1.webp)
 
-
-
 - Se pide prestado el activo a un corredor (broker).  
 - Se vende en el mercado al precio actual.  
 - Cuando el precio cae, se compra de nuevo para devolverlo al prestamista.  
@@ -34,12 +32,12 @@ En la práctica, funciona como apostar a la caída del precio, pero siempre con 
 
 ## Cómo funciona
 
-Imagina que tu amigo Juan gana R$5.000 al mes y decide invertir R$1.000 en la bolsa. Juan cree que la acción de la empresa X, que hoy cotiza R$50, va a bajar porque la compañía está pasando por problemas.  
+Imagina que tu amigo Juan gana €900 al mes y decide invertir €180 en la bolsa. Juan cree que la acción de la empresa X, que hoy cotiza €9, va a bajar porque la compañía está pasando por problemas.  
 
-1. Juan solicita a su corredor que le preste 20 acciones de X (20 × R$50 = R$1.000).  
-2. El corredor le entrega esas 20 acciones y Juan las vende inmediatamente, obteniendo R$1.000 en efectivo.  
-3. Un mes después, la acción de X cae a R$30. Juan compra 20 acciones por R$600 y devuelve las 20 al corredor.  
-4. La diferencia entre lo que recibió al vender (R$1.000) y lo que pagó para recomprar (R$600) es su ganancia: R$400.  
+1. Juan solicita a su corredor que le preste 20 acciones de X (20 × €9 = €180).  
+2. El corredor le entrega esas 20 acciones y Juan las vende inmediatamente, obteniendo €180 en efectivo.  
+3. Un mes después, la acción de X cae a €4.5. Juan compra 20 acciones por €108 y devuelve las 20 al corredor.  
+4. La diferencia entre lo que recibió al vender (€180) y lo que pagó para recomprar (€108) es su ganancia: €72.  
 
 Si el precio sube en lugar de bajar, Juan tendría que comprar a un precio mayor y perdería la diferencia. Por eso, la venta a descubierto siempre lleva un riesgo potencialmente ilimitado.
 
@@ -50,8 +48,6 @@ Si el precio sube en lugar de bajar, Juan tendría que comprar a un precio mayor
 - **Aprovechar oportunidades rápidas:** Si una noticia negativa impacta el precio, puedes actuar en cuestión de horas.  
 
 ![Ventajas](/images/glossario/venda-a-descoberto-inline-3.webp)
-
-
 
 Estas ventajas la hacen atractiva para inversores que buscan complementar su cartera y no quieren quedarse solo con la “jugada al alza”.
 
@@ -65,12 +61,12 @@ En palabras simples, la venta a descubierto es como caminar sobre una cuerda sin
 
 ## Ejemplos prácticos
 
-Supongamos que Ana gana R$7.000 mensuales y decide destinar R$2.000 a una operación de venta a descubierto sobre la acción de la empresa Y, que cotiza R$40.  
+Supongamos que Ana gana €1,260 mensuales y decide destinar €360 a una operación de venta a descubierto sobre la acción de la empresa Y, que cotiza €7.2.  
 
-- **Escenario de caída:** La acción baja a R$25. Ana compra 80 acciones (R$2.000 ÷ R$25) y devuelve las 80 que había vendido. Ganancia: (R$40 − R$25) × 80 = R$1.200.  
-- **Escenario de subida:** La acción sube a R$55. Ana debe recomprar 80 acciones a R$55, gastando R$4.400. Pérdida: R$4.400 − R$2.000 = R$2.400.  
+- **Escenario de caída:** La acción baja a €4.5. Ana compra 80 acciones ( €360 ÷ €4.5 ) y devuelve las 80 que había vendido. Ganancia: ( €7.2 − €4.5 ) × 80 = €216.  
+- **Escenario de subida:** La acción sube a €9.9. Ana debe recomprar 80 acciones a €9.9, gastando €792. Pérdida: €792 − €360 = €432.  
 
-Otro caso: Carlos, con salario de R$3.500, usa R$500 para vender a descubierto la acción Z a R$20. Si la acción cae a R$12, su ganancia será (R$20 − R$12) × 25 = R$200, lo que representa el 40 % de su inversión inicial. Pero si la acción sube a R$30, su pérdida será de R$250, superando su capital invertido.
+Otro caso: Carlos, con salario de €630, usa €90 para vender a descubierto la acción Z a €3.6. Si la acción cae a €2.16, su ganancia será ( €3.6 − €2.16 ) × 25 = €36, lo que representa el 40 % de su inversión inicial. Pero si la acción sube a €5.4, su pérdida será de €45, superando su capital invertido.
 
 ## Cómo empezar
 
@@ -87,4 +83,3 @@ Una vez que tengas la cuenta y hayas fijado tus reglas, practica con pequeñas c
 ## Empieza hoy
 
 No esperes a que el mercado te dé la razón; toma el control y aprende a ganar cuando los precios bajan. Con disciplina, una buena herramienta y los [consejos](/es/posts/es-7-errores-financieros-principiante) adecuados, la venta a descubierto puede ser una pieza valiosa en tu arsenal financiero. ¡Anímate a probarla y descubre una nueva forma de hacer que tu [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado) trabaje para ti!
-

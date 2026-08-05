@@ -1,6 +1,6 @@
 ---
 title: "Técnica de los Sobres Digitales: Guía Práctica para 2026"
-description: "Aprende a usar la técnica de los sobres digitales para controlar gastos, montar presupuesto y ahorrar, incluso con un salario de R$2.000 a R$8.000. Paso a paso sencillo."
+description: "Aprende a usar la técnica de los sobres digitales para controlar gastos, montar presupuesto y ahorrar, incluso con un salario de €360 a €1,440. Paso a paso sencillo."
 tickerHeadline: "Domina tus gastos en 3 pasos"
 image: "/images/posts/tecnica-dos-envelopes-digitais-guia-pratico-para-2024.webp"
 imageAlt: "Gráfico financiero azul brillante con líneas onduladas y números desenfocados en fondo oscuro."
@@ -23,11 +23,11 @@ seo:
 La idea de los sobres digitales es la misma que la de los sobres de papel donde colocas [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) físico para cada categoría (alimentación, transporte, ocio, etc.). La diferencia es que todo queda en el móvil o en el ordenador, lo que elimina el riesgo de perder billetes y permite [informes](/es/posts/es-tambien-te-quedas-sin-saber-a-donde-fue-tu-dinero-al-final-d) instantáneos.  
 
 - **¿Por qué funciona?** Cuando “destinas” un monto a un sobre, deja de ser [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) libre; pasa a ser “específico”. Esta visualización reduce las compras impulsivas.  
-- **¿Quién puede usarlo?** Cualquier persona que reciba ingresos mensuales – de R$2.000 a R$8.000 – y quiera tener claridad sobre a dónde va cada centavo.  
+- **¿Quién puede usarlo?** Cualquier persona que reciba ingresos mensuales – de €360 a €1,440 – y quiera tener claridad sobre a dónde va cada centavo.  
 
 ## Configurar tus sobres en la app  
 
-1. **Elige una aplicación** – Usa una app de [finanzas personales](/es/posts/es-5-consejos-para-reorganizar-tus-finanzas-en-vacaciones) que permita crear “categorías” o “sobres”. Ejemplos populares son [Mobills](/es/posts/es-5-alternativas-al-mobills-en-2026) y [FinMoovi](https://finmoovi.com).  
+1. **Elige una aplicación** – Usa una app de [finanzas personales](/es/posts/es-5-consejos-para-reorganizar-tus-finanzas-en-vacaciones) que permita crear “categorías” o “sobres”. Ejemplos populares son apps como YNAB y [FinMoovi](https://finmoovi.com).  
 2. **Crea las categorías** – Empieza con las cinco más básicas:  
    - Alimentación  
    - Transporte  
@@ -40,9 +40,9 @@ La idea de los sobres digitales es la misma que la de los sobres de papel donde 
 
 | Salario Mensual | Alimentación (30%) | Transporte (10%) | Vivienda (30%) | Ocio (10%) | Reserva Emergencia (20%) |
 |-----------------|--------------------|-------------------|----------------|------------|--------------------------|
-| R$2.000         | R$600              | R$200             | R$600          | R$200      | R$400                    |
-| R$5.000         | R$1.500            | [R$500](/es/posts/es-montando-cartera-diversificada-con-r-500)             | R$1.500        | R$500      | R$1.000                  |
-| R$8.000         | R$2.400            | R$800             | R$2.400        | R$800      | R$1.600                  |
+| €360            | €108               | €36               | €108           | €36        | €72                      |
+| €900            | €270               | €90               | €270           | €90        | €180                     |
+| €1,440          | €432               | €144              | €432           | €144       | €288                     |
 
 **Consejo práctico:** Si tu salario varía (autónomo o freelancer), usa el promedio de los últimos tres meses como base y ajusta los límites en cada pago.  
 
@@ -50,7 +50,7 @@ La idea de los sobres digitales es la misma que la de los sobres de papel donde 
 
 Después de recibir el sueldo, sigue estos pasos:  
 
-1. **Abre la app y registra el ingreso total** – Por ejemplo, R$5.000.  
+1. **Abre la app y registra el ingreso total** – Por ejemplo, €900.  
 2. **Distribuye el monto** – Haz clic en cada sobre e ingresa el límite que definiste en la tabla. La app mostrará el saldo restante (debe ser cero).  
 3. **Reserva el [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado) de inmediato** – Si la app permite “bloquear” o “marcar como guardado”, hazlo. Así no gastarás lo que debería quedar en la reserva de emergencia.  
 
@@ -64,9 +64,9 @@ Este proceso lleva menos de 5 minutos y deja tu [presupuesto](/es/posts/es-como-
 
 ![Monitorar y ajustar gastos](/images/posts/tecnica-dos-envelopes-digitais-guia-pratico-para-2024-4.webp)  
 
-Para quien gana R$2.000, el margen de error es pequeño; mientras que quien gana R$8.000 puede hacer ajustes mensuales más flexibles.  
+Para quien gana €360, el margen de error es pequeño; mientras que quien gana €1,440 puede hacer ajustes mensuales más flexibles.  
 
-> **Importante:** Consulta fuentes oficiales como el [Banco Central del Brasil](https://www.bcb.gov.br) para entender límites de intereses y tarifas que pueden impactar tu presupuesto.  
+> **Importante:** Consulta fuentes oficiales como la página del **banco central** para entender límites de intereses y tarifas que pueden impactar tu presupuesto.  
 
 ## Revisar resultados mensualmente  
 
