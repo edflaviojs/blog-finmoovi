@@ -159,6 +159,86 @@
         "videoId": "NvOAZbXe04Q",
         "title": "Los 5 filtros para hacerte millonario #emprendimiento #millonario #negocios #educacionfinanciera"
       }
+    },
+    {
+      "id": "kw-caixa-no-vermelho",
+      "theme": "Caixa no vermelho?",
+      "angle": "Mostro como gerenciar o fluxo de caixa com R$ 5.000,00 de salário",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "fluxo-de-caixa",
+      "status": "pending",
+      "sourceKeyword": "fluxo de caixa"
+    },
+    {
+      "id": "kw-5-erros-que-aumentam-seu-saldo-devedor",
+      "theme": "5 erros que aumentam seu saldo devedor",
+      "angle": "Mostrar como pequenos descuidos podem levar a um saldo devedor de R$ 1.000,00 em apenas 3 meses",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "saldo-devedor",
+      "status": "pending",
+      "sourceKeyword": "saldo devedor"
+    },
+    {
+      "id": "kw-5-erros-que-voce-pode-cometer-na-fatura-do-cartao",
+      "theme": "5 erros que você pode cometer na fatura do cartão",
+      "angle": "Mostre como evitar esses erros comuns e economizar até R$ 500 por mês",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "fatura-do-cartao",
+      "status": "pending",
+      "sourceKeyword": "fatura do cartão"
+    },
+    {
+      "id": "viral-m97XJBm4IdI",
+      "theme": "Alfabetização Financeira",
+      "angle": "Perda em curso: economize R$ 500 por mês com pequenas mudanças no seu dia a dia",
+      "pillar": "mindset",
+      "source": "viral",
+      "glossaryRef": null,
+      "status": "pending",
+      "viralRef": {
+        "videoId": "m97XJBm4IdI",
+        "title": "Financial Literacy Exercise",
+        "estrutura": [
+          "título afirmativo simples, sem número nem pergunta"
+        ]
+      }
+    },
+    {
+      "id": "viral-viz--Cm53l0",
+      "theme": "Eduque seu bolso",
+      "angle": "Título afirmativo simples: mostre como ensinar seus filhos a não gastar todo o seu dinheiro de mesada em bobagens",
+      "pillar": "mindset",
+      "source": "viral",
+      "glossaryRef": null,
+      "status": "pending",
+      "viralRef": {
+        "videoId": "viz--Cm53l0",
+        "title": "Educação financeira para crianças.",
+        "estrutura": [
+          "título afirmativo simples, sem número nem pergunta"
+        ]
+      }
+    },
+    {
+      "id": "viral-v4wRXpQuv-k",
+      "theme": "Dinheiro escoando",
+      "angle": "Perda em curso: mostrar o dinheiro a sair todo mês com pequenas despesas diárias, como compras impulsivas ou assinaturas não utilizadas, e como elas podem ser evitadas com um mindset financeiro saudável",
+      "pillar": "mindset",
+      "source": "viral",
+      "glossaryRef": null,
+      "status": "pending",
+      "viralRef": {
+        "videoId": "v4wRXpQuv-k",
+        "title": "ESSE MONSTRO TE ROUBA SEM VOCÊ PERCEBER! 🚨💸 #shorts #economia #educaçãofinanceira",
+        "estrutura": [
+          "fala directamente com \"você\"",
+          "perda em curso — mostra dinheiro a sair agora",
+          "uma palavra em maiúsculas a marcar o tom"
+        ]
+      }
     }
   ]
 }
