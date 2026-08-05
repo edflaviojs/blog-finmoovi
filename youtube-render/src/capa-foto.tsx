@@ -56,7 +56,8 @@ export type CapaFotoProps = {
   numero?: string;
   /** A consequência, em linguagem de gente. */
   remate?: string;
-
+  /** A etiqueta do canto superior direito — a promessa. Vazia = não aparece. */
+  etiqueta?: string;
 };
 
 /**
@@ -129,26 +130,59 @@ const Remate: React.FC<{ texto: string; corpo: number; largura: number }> = ({ t
 );
 
 /**
- * A MARCA — o mesmo ícone e a mesma assinatura da marca d'água do vídeo.
- * Vive no RODAPÉ, por baixo do chão do palco: em cima competiria com o número, que
- * é o elemento que trava o dedo. É o único sítio do quadro que está sempre vazio,
- * seja qual for a coreografia das 32.
+ * ⚠️ A FAIXA DE CIMA — E NUNCA O RODAPÉ. Correção do dono (05/08): a primeira
+ * versão punha a marca em baixo, e ele apanhou o erro:
+ *   *"o correto seria ficar no topo e não no rodapé… rodapé tem muita informação
+ *   e pode ficar coberto"*.
+ * Tem razão, e é literal: o Instagram escreve o nome do perfil e a legenda POR CIMA
+ * do rodapé do Reel, e o YouTube carimba lá a duração e as visualizações. Uma marca
+ * no rodapé é uma marca que às vezes não existe.
+ *
+ * O preço, dito por inteiro: a grelha do perfil do Instagram recorta um quadrado ao
+ * meio (y 420–1500) e **a faixa de cima fica fora dele**. Trocou-se "às vezes tapada
+ * em todo o lado" por "inteira no sítio que importa, ausente na grelha" — e a grelha
+ * é o único sítio onde a marca já é óbvia, porque o perfil é dele.
+ *
+ * A ETIQUETA vive no canto oposto: é uma promessa ("App Grátis"), não é decoração,
+ * e um canto superior é onde o olho vai a seguir ao número.
  */
-const Marca: React.FC<{ escala?: number }> = ({ escala = 1 }) => (
-  <div style={{
-    position: 'absolute', bottom: 70 * escala, width: '100%',
-    display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 16 * escala,
-  }}>
-    <FinMooviIcon size={58 * escala} idSuffix="capa" />
-    <div style={{ fontFamily: DISPLAY, fontWeight: 800, fontSize: 52 * escala, letterSpacing: -0.5 }}>
+const FAIXA_DE_CIMA = 96;
+
+const Marca: React.FC = () => (
+  <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+    <FinMooviIcon size={58} idSuffix="capa" />
+    <div style={{ fontFamily: DISPLAY, fontWeight: 800, fontSize: 52, letterSpacing: -0.5 }}>
       <span style={{ color: BRAND.text }}>Fin</span>
       <span style={gradientText}>Moovi</span>
     </div>
   </div>
 );
 
+const Etiqueta: React.FC<{ texto: string }> = ({ texto }) => (
+  <div style={{
+    // sólida e clara sobre o fundo escuro: uma etiqueta translúcida lia-se como erro
+    background: BRAND.gradient,
+    color: BRAND.bg,
+    fontFamily: BODY, fontWeight: 900, fontSize: 38, letterSpacing: 0.5,
+    padding: '16px 34px', borderRadius: 999,
+    boxShadow: `0 0 34px ${BRAND.violet}66`,
+    whiteSpace: 'nowrap',
+  }}>{texto}</div>
+);
+
+const FaixaDeCima: React.FC<{ etiqueta?: string }> = ({ etiqueta }) => (
+  <div style={{
+    position: 'absolute', top: FAIXA_DE_CIMA, left: 0, width: '100%',
+    display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+    paddingLeft: 56, paddingRight: 56,
+  }}>
+    <Marca />
+    {etiqueta ? <Etiqueta texto={etiqueta} /> : <div />}
+  </div>
+);
+
 export const CapaFoto: React.FC<CapaFotoProps> = ({
-  metaphor, tema = '', numero = '', remate = '',
+  metaphor, tema = '', numero = '', remate = '', etiqueta = 'App Grátis',
 }) => {
   // 1080×1920 — texto em cima, ação em baixo.
   // ⚠️ O texto vive no TERÇO CENTRAL de propósito: a grelha do perfil do Instagram
@@ -168,11 +202,11 @@ export const CapaFoto: React.FC<CapaFotoProps> = ({
           {numero ? <Numero texto={numero} corpo={250} largura={960} /> : null}
           {remate ? <Remate texto={remate} corpo={62} largura={900} /> : null}
         </div>
-        {/* a ação assenta acima do rodapé, para não pisar a marca */}
-        <div style={{ position: 'absolute', bottom: 150, width: '100%', display: 'flex', justifyContent: 'center' }}>
-          <Ação metaphor={metaphor} largura={1080} altura={940} />
+        {/* o rodapé volta a ser todo da ação: a marca subiu para a faixa de cima */}
+        <div style={{ position: 'absolute', bottom: 0, width: '100%', display: 'flex', justifyContent: 'center' }}>
+          <Ação metaphor={metaphor} largura={1080} altura={980} />
         </div>
-        <Marca />
+        <FaixaDeCima etiqueta={etiqueta} />
       </AbsoluteFill>
     </AbsoluteFill>
   );
