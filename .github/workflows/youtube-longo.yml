@@ -312,6 +312,22 @@ jobs:
       - name: As provas de mesa (não gastam nada)
         if: steps.escolher.outputs.skip != 'true'
         run: |
+          set -euo pipefail
+          # ⚠️ 🔴 SETE DAS PROVAS LEEM O GUIÃO DO PILOTO JÁ MONTADO, e ele não vai para o
+          # repositório (é derivado). Isto parou o robô DUAS vezes na nuvem: à primeira
+          # porque as provas corriam antes de haver guião nenhum; à segunda porque eu tinha
+          # tratado o sintoma — mudei-as para depois do montador e passou, **mas só porque
+          # essa corrida calhou de estar a fazer o vídeo do piloto**. Com um tema novo, o
+          # montador escreve o guião DESSE vídeo e o do piloto continua a não existir.
+          #
+          # Montá-lo custa dois segundos e é determinista (há prova disso). Sem esta linha
+          # as sete provas das fotografias nunca correriam na nuvem — e são elas que
+          # garantem que uma fotografia cai numa cena cujo TEXTO a chamou.
+          #
+          # ⚠️ E isto NÃO estraga o vídeo que está a ser feito: o montador escreve com o
+          # nome do vídeo (`<nome>.json`), portanto o guião do piloto e o do vídeo da
+          # semana são ficheiros diferentes e não se pisam.
+          node src/scripts/youtube/montar-longo.js --slug=sair-do-vermelho > /dev/null
           node src/scripts/validacao/validar-roteiro-longo.js
           node src/scripts/validacao/validar-publicacao-longo.js
 

@@ -755,11 +755,33 @@ console.log('   (a 1ª prova apanha a montagem a PERDER parágrafos do guião, e
    * uma coisa enquanto a voz diz outra. Sem isto, bastava alguém afinar uma pista para
    * as mãos a abrir uma fatura aterrarem no fecho do vídeo.
    */
-  {
+  // ⚠️ O bloco leva NOME para se poder sair só DELE quando o guião do piloto não está
+  // montado. Um `return` aqui sairia da função inteira e levaria com ele a prova (j) — o
+  // determinismo — sem ninguém dar por nada. É o modo de falha desta casa: a coisa que
+  // desaparece em silêncio.
+  fotografias: {
     const { escolherLugaresDaFoto } = await import('../youtube/lib/imagens-longo.js');
-    const cenasReais = JSON.parse(
-      readFileSync(join(RAIZ, 'youtube-render', 'public', 'roteiro', 'sair-do-vermelho.json'), 'utf-8'),
-    ).scenes;
+    /**
+     * 🔴 ESTE BLOCO LÊ O GUIÃO DO PILOTO JÁ MONTADO — E ISSO PAROU O ROBÔ DUAS VEZES.
+     *
+     * O ficheiro não vai para o repositório (é derivado), portanto **num clone limpo não
+     * existe**. Na nuvem, a 1ª corrida morreu aqui em 46 segundos; movi as provas para
+     * depois do montador e a 2ª passou — **mas só porque essa corrida calhou de estar a
+     * fazer o vídeo do piloto.** À terceira, com um tema novo, o montador escreveu o guião
+     * DESSE vídeo e este ficheiro voltou a não existir.
+     *
+     * > **Eu tinha tratado o sintoma, não a causa.** A causa é esta: uma prova não pode
+     * > exigir que o vídeo que está a ser feito seja um vídeo em particular.
+     *
+     * Agora ela diz que não correu, em vez de derrubar a corrida. E o robô monta o guião
+     * do piloto antes das provas — dois segundos — para a cobertura não se perder na nuvem.
+     */
+    const caminhoDoPiloto = join(RAIZ, 'youtube-render', 'public', 'roteiro', 'sair-do-vermelho.json');
+    if (!existsSync(caminhoDoPiloto)) {
+      console.log('  ⏭️  o guião do piloto não está montado nesta máquina — as 7 provas das fotografias ficam de fora');
+      break fotografias;
+    }
+    const cenasReais = JSON.parse(readFileSync(caminhoDoPiloto, 'utf-8')).scenes;
     const fotos = cenasReais.filter((c) => c.visual?.tipo === 'foto');
 
     ok('as três fotografias entram no vídeo', fotos.length === 3, `entraram ${fotos.length}`);
