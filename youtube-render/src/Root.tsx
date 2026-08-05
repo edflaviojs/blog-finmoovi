@@ -38,6 +38,7 @@ import { AppTourShort, AppMosaicoShort, AppCarrosselShort, AppNumerosShort, AppQ
 import { AppScreen3DLong, AppScreen3DShort } from './AppScreen3D';
 import { Galeria, GALERIA_TOTAL_FRAMES, GALERIA_FPS } from './Galeria';
 import { GaleriaCapas, CAPAS_TOTAL_FRAMES, CAPAS_FPS } from './GaleriaCapas';
+import { CapaFoto, VIDA_DA_CAPA } from './capa-foto';
 import { cartoes } from './broll/cartoes';
 import { fluxo } from './broll/fluxo';
 import { extrato } from './broll/extrato';
@@ -726,6 +727,23 @@ export const RemotionRoot: React.FC = () => {
         fps={FPS}
         width={1080}
         height={1920}
+      />
+
+      {/* ♦ 05/08/2026 — A CAPA FOTOGRAFIA (IMPL20 §52).
+          UMA só, em pé, para as duas casas: miniatura do Short no YouTube e capa do
+          Reel no Instagram. A versão deitada foi deitada fora — ver o cabeçalho do
+          capa-foto.tsx: cortar uma imagem larga para um sítio vertical perde as pontas,
+          que é onde vivia o texto.
+          Tira-se a fotografia com `remotion still` no fotograma do instante-chave —
+          por isso a duração é a da abertura inteira, e não 1. */}
+      <Composition
+        id="CapaFotoVertical"
+        component={CapaFoto}
+        durationInFrames={VIDA_DA_CAPA}
+        fps={FPS}
+        width={1080}
+        height={1920}
+        defaultProps={{ metaphor: 'fumaca', tema: 'INFLAÇÃO', numero: 'R$ 2 MIL', remate: 'somem do seu ano sem ninguém cortar um real' }}
       />
     </>
   );
