@@ -28,6 +28,7 @@ import { iniciosDasCenas, VOZ_ENTRA_FRAMES, RESPIRO_SEC, CARTAO_CAPITULO_FRAMES 
 import { proximoDomingo, emPortugues, palavrasChave, montarMetadados, tituloAprovado, acharCapa, estreiaOcupada } from '../youtube/upload-longo.js';
 import { proximoLongo, comoArgumentos } from '../youtube/pick-next-longo.js';
 import { conferirTema, caudaDoTitulo, fazerSlug } from '../youtube/temas-longo.js';
+import { conferirImagens } from '../youtube/lib/imagens-longo.js';
 import { tempoDosCapitulos } from '../youtube/descricao-longo.js';
 
 const RAIZ = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
@@ -635,6 +636,66 @@ console.log('\n7. OS TEMAS TIRADOS DOS VIRAIS');
     `topLongos: ${tendencias?.topLongos?.length ?? 'não existe'}`);
   ok('e cada um traz o que é preciso para se decidir sobre ele',
     (tendencias?.topLongos || []).every((v) => v.videoId && v.title && Number.isFinite(v.duracaoSeg)));
+}
+
+// ═══ 8. O DIRETOR DE IMAGEM CONTRA UM GUIÃO QUE NÃO É O DO PILOTO ════════════
+console.log('\n8. AS IMAGENS, NUM GUIÃO QUE NÃO É O DO PILOTO');
+
+{
+  /**
+   * 🔴 **A TRAVA DAS "TRÊS IGUAIS SEGUIDAS" PARTIU O PRIMEIRO VÍDEO QUE O ROBÔ TENTOU
+   * FAZER SOZINHO** (05/08/2026, na nuvem). Ela media o NOME DA FAMÍLIA em vez do ecrã, e
+   * reprovou duas coisas que eram o desenho a funcionar:
+   *   · três cartões de número com **R$ 3.500 · R$ 220 · R$ 180** e etiquetas diferentes;
+   *   · o app nos **passos 1, 2 e 3** da conta — que existem justamente para o ecrã
+   *     crescer com a narração.
+   *
+   * ⚠️ **E não apareceu no primeiro vídeo por sorte:** lá a demonstração deu duas cenas e
+   * os números novos nunca calharam três seguidos. **Uma trava provada contra um vídeo é
+   * uma trava provada contra um vídeo.**
+   */
+  const cena = (id, visual) => ({ id, capitulo: 1, narration: 'texto qualquer', visual });
+  const so = (cenas) => conferirImagens(cenas, { valores: [] })
+    .filter((e) => /mostram a mesma coisa/.test(e));
+
+  ok(
+    'três números DIFERENTES seguidos são três ecrãs diferentes — e passam',
+    so([cena(1, { tipo: 'numero', valor: 3500 }), cena(2, { tipo: 'numero', valor: 220 }), cena(3, { tipo: 'numero', valor: 180 })]).length === 0,
+  );
+  ok(
+    'mas o MESMO número três vezes seguidas é reprovado',
+    so([cena(1, { tipo: 'numero', valor: 820 }), cena(2, { tipo: 'numero', valor: 820 }), cena(3, { tipo: 'numero', valor: 820 })]).length === 1,
+  );
+  ok(
+    'o app nos passos 1, 2 e 3 é o ecrã a crescer com a narração — e passa',
+    so([cena(1, { tipo: 'app', passo: 1 }), cena(2, { tipo: 'app', passo: 2 }), cena(3, { tipo: 'app', passo: 3 })]).length === 0,
+  );
+  ok(
+    'mas o app PARADO no mesmo passo três vezes é reprovado',
+    so([cena(1, { tipo: 'app', passo: 2 }), cena(2, { tipo: 'app', passo: 2 }), cena(3, { tipo: 'app', passo: 2 })]).length === 1,
+  );
+  ok(
+    'e a regra original continua de pé: três ecrãs de palavras iguais são reprovados',
+    so([cena(1, { tipo: 'palavras', variante: 0 }), cena(2, { tipo: 'palavras', variante: 0 }), cena(3, { tipo: 'palavras', variante: 0 })]).length === 1,
+  );
+  ok(
+    'três ilustrações com figuras diferentes passam',
+    so([cena(1, { tipo: 'ilustracao', figura: 'ralo' }), cena(2, { tipo: 'ilustracao', figura: 'balde' }), cena(3, { tipo: 'ilustracao', figura: 'areia' })]).length === 0,
+  );
+  ok(
+    'e a mesma ilustração três vezes seguidas é reprovada',
+    so([cena(1, { tipo: 'ilustracao', figura: 'ralo' }), cena(2, { tipo: 'ilustracao', figura: 'ralo' }), cena(3, { tipo: 'ilustracao', figura: 'ralo' })]).length === 1,
+  );
+
+  // ⚠️ E o vídeo que VAI AO AR não pode ter mudado por causa disto.
+  const caminhoPlano = join(RAIZ, 'youtube-render', 'public', 'roteiro', 'sair-do-vermelho.json');
+  if (existsSync(caminhoPlano)) {
+    const plano = JSON.parse(readFileSync(caminhoPlano, 'utf-8'));
+    ok(
+      'o vídeo que vai ao ar continua sem três ecrãs iguais seguidos',
+      conferirImagens(plano.scenes, { valores: [] }).filter((e) => /mostram a mesma coisa/.test(e)).length === 0,
+    );
+  }
 }
 
 // ═══ RESULTADO ═══════════════════════════════════════════════════════════════

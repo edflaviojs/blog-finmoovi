@@ -672,7 +672,45 @@ export function conferirImagens(cenas, mapa = {}, slugDoVideo = null) {
   // ⚠️ "iguais" mede-se pelo que aparece no ecrã, não pelo nome da família: três cenas
   // de `palavras` com desenhos diferentes são três ecrãs diferentes, e reprová-las seria
   // a trava a punir o que o desenho já resolveu (a armadilha nº 1 desta casa).
-  const assinatura = (v = {}) => `${v.tipo}${v.tipo === 'palavras' ? `/${v.variante}` : ''}`;
+  /**
+   * 🔴 A ASSINATURA MEDIA O NOME DA FAMÍLIA, NÃO O ECRÃ — e isso partiu o primeiro vídeo
+   * que o robô tentou fazer sozinho (05/08/2026, na nuvem).
+   *
+   * A regra em baixo tinha a intenção certa e o comentário certo: *"iguais mede-se pelo
+   * que aparece no ecrã, não pelo nome da família"*. Só que isso **só estava implementado
+   * para a família `palavras`**. Todas as outras eram comparadas pelo nome.
+   *
+   * O que ela reprovou no guião novo, e nenhuma das duas era repetição nenhuma:
+   *
+   * | cenas | o que a trava disse | o que estava mesmo no ecrã |
+   * |---|---|---|
+   * | 6, 7, 8 | *"mostram a mesma coisa (numero)"* | **R$ 3.500** (o salário), **R$ 220** (o cafezinho), **R$ 180** (as compras por impulso) — três números e três etiquetas diferentes |
+   * | 17, 18, 19 | *"mostram a mesma coisa (app)"* | o app nos **passos 1, 2 e 3** da conta: a fatura a aparecer, a linha do que falta, as cobranças a juntarem-se |
+   *
+   * > **É a 22ª vez que a trava castiga aquilo que o desenho manda fazer.** O `passo` do
+   * > app existe precisamente para o ecrã crescer com a narração — está escrito duas
+   * > linhas acima, no código que o cria — e o cartão de número entra de propósito na
+   * > PRIMEIRA vez que cada valor aparece na história. Três valores novos em três cenas
+   * > seguidas são três cartões, e isso é o desenho a funcionar.
+   *
+   * ⚠️ **E porque é que isto não apareceu no primeiro vídeo:** lá o parágrafo da
+   * demonstração deu DUAS cenas e os números novos nunca calharam três seguidos. *Uma
+   * trava que só foi provada contra um vídeo é uma trava provada contra um vídeo.*
+   *
+   * Agora a assinatura leva **o que muda no ecrã** de cada família.
+   */
+  const assinatura = (v = {}) => {
+    switch (v.tipo) {
+      case 'palavras': return `palavras/${v.variante}`;
+      case 'numero': return `numero/${v.valor}`;
+      case 'app': return `app/${v.passo}`;
+      case 'frase': return `frase/${v.variante}`;
+      case 'ilustracao': return `ilustracao/${v.figura}`;
+      case 'metafora': return `metafora/${v.fio}/${v.estagio}`;
+      case 'foto': return `foto/${v.ficheiro}`;
+      default: return String(v.tipo);
+    }
+  };
   for (let i = 2; i < cenas.length; i++) {
     const a = assinatura(cenas[i].visual);
     if (!cenas[i].visual) continue;
