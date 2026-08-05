@@ -127,6 +127,33 @@ export function proximoDomingo(agora = new Date()) {
   return alvo;
 }
 
+/**
+ * 🔴 QUEM JÁ ESTÁ MARCADO PARA ESTE DIA — ou nada, se o dia estiver livre.
+ *
+ * ═══ POR QUE ISTO EXISTE, E NÃO É UMA PRECAUÇÃO TEÓRICA ═══
+ * O primeiro vídeo do canal é subido À MÃO pelo dono e estreia **domingo 09/08 às 19h00**.
+ * O relógio do robô dispara ao **sábado**. Ligá-lo numa quarta-feira faria a primeira
+ * corrida cair em **sábado 08/08** — e ela marcaria o vídeo seguinte para **o mesmo
+ * domingo, à mesma hora**. Dois vídeos do canal a estrear no mesmo minuto.
+ *
+ * A cura preguiçosa era esperar por segunda-feira para ligar o relógio. **Não serve:**
+ * resolve uma vez e deixa a armadilha armada para sempre — basta alguém repetir uma
+ * corrida à mão, ou o dono agendar um vídeo especial numa semana em que o robô também
+ * trabalha. **A regra que fica é outra, e vale para sempre: um dia, um vídeo.**
+ *
+ * ⚠️ Compara-se o DIA, não o instante. Dois vídeos do mesmo canal no mesmo domingo
+ * competem um com o outro na lista de quem se inscreveu, mesmo com horas diferentes.
+ */
+export function estreiaOcupada(estreia, caderno = lerCaderno()) {
+  const dia = (d) => new Date(d).toISOString().slice(0, 10);
+  const alvo = dia(estreia);
+  for (const [slug, registo] of Object.entries(caderno || {})) {
+    const quando = registo?.publishAt || registo?.uploadedAt;
+    if (quando && dia(quando) === alvo) return { slug, publishAt: quando };
+  }
+  return null;
+}
+
 /** "domingo, 9 de agosto, às 19h00 do Brasil" — para quem lê o registo entender. */
 export function emPortugues(data) {
   const brasilia = new Date(data.getTime() - 3 * 3600 * 1000);
@@ -365,7 +392,28 @@ export function acharCapa(slug, existe = existsSync) {
 }
 
 // ═══════════════════════════════════════════════════════════════════════════════
+/**
+ * A CONFERÊNCIA DA DATA, SOZINHA — para o robô poder desistir ANTES de trabalhar.
+ * Fazer o vídeo custa 36 minutos; descobrir no fim que o dia já está ocupado é deitar
+ * fora 36 minutos e uma corrida de IA. Isto responde em milissegundos.
+ * Devolve 78 ("nada a fazer") quando o dia está tomado — nunca um erro, porque não é um.
+ */
+function conferirEstreiaSozinha() {
+  const marcada = valor('publicar-em');
+  const estreia = marcada ? new Date(marcada) : proximoDomingo();
+  if (Number.isNaN(estreia.getTime())) throw new Error(`"${marcada}" não é uma data que eu saiba ler.`);
+  const ocupado = estreiaOcupada(estreia);
+  log(`📅 a próxima estreia seria ${emPortugues(estreia)}.`);
+  if (ocupado) {
+    log(`⏭️  esse dia já é do vídeo "${ocupado.slug}" — um dia, um vídeo.`);
+    log('   Nada a fazer hoje (não é avaria).');
+    process.exit(78);
+  }
+  log('✅ o dia está livre.');
+}
+
 async function principal() {
+  if (args['conferir-estreia']) { conferirEstreiaSozinha(); return; }
   log(`\n=== YouTube · vídeo longo "${SLUG}"${ENSAIO ? ' (ENSAIO — nada é enviado)' : ''} ===`);
 
   // ── o que tem de existir ──
@@ -412,6 +460,19 @@ async function principal() {
   const estreia = marcada ? new Date(marcada) : proximoDomingo();
   if (Number.isNaN(estreia.getTime())) throw new Error(`"${marcada}" não é uma data que eu saiba ler.`);
   if (estreia.getTime() <= Date.now()) throw new Error(`a estreia (${estreia.toISOString()}) já passou — o YouTube recusa.`);
+  /**
+   * ⚠️ **UM DIA, UM VÍDEO** — a mesma regra da conferência rápida, outra vez aqui.
+   * Não é desconfiança do passo anterior: é que este ficheiro também se corre à mão, e a
+   * regra tem de valer por onde quer que se entre. Ver `estreiaOcupada`.
+   */
+  const ocupado = estreiaOcupada(estreia, caderno);
+  if (ocupado) {
+    throw new Error(
+      `${emPortugues(estreia)} já é do vídeo "${ocupado.slug}" — um dia, um vídeo.\n`
+      + '   Dois vídeos do canal a estrear no mesmo dia competem um com o outro na lista de quem se inscreveu.\n'
+      + '   Para forçar outra data: --publicar-em=AAAA-MM-DDTHH:MM:SSZ',
+    );
+  }
 
   const metadados = montarMetadados({
     titulo, descricao: d.texto, plano, estreia, etiquetasDoVideo: naFila?.palavrasChave || [],

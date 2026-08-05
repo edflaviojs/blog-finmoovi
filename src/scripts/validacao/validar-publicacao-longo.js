@@ -25,7 +25,7 @@ import { dirname, join, resolve } from 'path';
 import { fileURLToPath } from 'url';
 
 import { iniciosDasCenas, VOZ_ENTRA_FRAMES, RESPIRO_SEC, CARTAO_CAPITULO_FRAMES } from '../youtube/srt-longo.js';
-import { proximoDomingo, emPortugues, palavrasChave, montarMetadados, tituloAprovado, acharCapa } from '../youtube/upload-longo.js';
+import { proximoDomingo, emPortugues, palavrasChave, montarMetadados, tituloAprovado, acharCapa, estreiaOcupada } from '../youtube/upload-longo.js';
 import { proximoLongo, comoArgumentos } from '../youtube/pick-next-longo.js';
 import { conferirTema, caudaDoTitulo, fazerSlug } from '../youtube/temas-longo.js';
 import { tempoDosCapitulos } from '../youtube/descricao-longo.js';
@@ -232,6 +232,41 @@ console.log('\n2. A HORA DE ESTREIA');
     proximoDomingo(sabado).toISOString() === '2026-08-16T22:00:00.000Z',
     proximoDomingo(sabado).toISOString(),
   );
+  /**
+   * 🔴 **UM DIA, UM VÍDEO** — a trava que permitiu ligar o relógio a meio da semana.
+   *
+   * O primeiro vídeo é subido à mão e estreia domingo 09/08. O relógio dispara ao sábado,
+   * portanto ligá-lo numa quarta fazia a 1ª corrida cair em sábado 08 e marcar OUTRO
+   * vídeo para o MESMO domingo. **Esperar por segunda-feira resolvia uma vez e deixava a
+   * armadilha armada**; esta regra vale para sempre.
+   */
+  const cadernoDeMesa = {
+    'ja-marcado': { publishAt: '2026-08-09T22:00:00.000Z', titulo: 'X' },
+  };
+  ok(
+    'um domingo que já tem vídeo é recusado',
+    estreiaOcupada(new Date('2026-08-09T22:00:00.000Z'), cadernoDeMesa)?.slug === 'ja-marcado',
+  );
+  ok(
+    'e o domingo seguinte está livre',
+    estreiaOcupada(new Date('2026-08-16T22:00:00.000Z'), cadernoDeMesa) === null,
+  );
+  ok(
+    'a régua é o DIA, não a hora — dois vídeos no mesmo domingo competem um com o outro',
+    estreiaOcupada(new Date('2026-08-09T12:00:00.000Z'), cadernoDeMesa)?.slug === 'ja-marcado',
+  );
+  /**
+   * A prova contra o caderno REAL: hoje o piloto ocupa 09/08. Se alguém o apagar de lá, o
+   * robô publica por cima do vídeo que o dono subiu à mão — e isto fica vermelho antes.
+   */
+  {
+    const real = JSON.parse(readFileSync(join(RAIZ, '.github', 'data', 'youtube-longos-published.json'), 'utf-8'));
+    ok(
+      'no caderno a sério, o domingo do vídeo que o dono subiu à mão está tomado',
+      estreiaOcupada(new Date('2026-08-09T22:00:00.000Z'), real)?.slug === 'sair-do-vermelho',
+    );
+  }
+
   ok(
     'e o registo escreve-o em português, com a hora do Brasil',
     emPortugues(new Date('2026-08-16T22:00:00.000Z')) === 'domingo, 16 de agosto, às 19h00 do Brasil',
@@ -387,6 +422,36 @@ console.log('\n5. O ROBÔ DIÁRIO NÃO É TOCADO');
 
   const fluxo = readFileSync(join(RAIZ, '.github', 'workflows', 'youtube-longo.yml'), 'utf-8');
   /**
+   * 🔴 **LER A ESTRUTURA DO ROBÔ, NÃO O TEXTO DO FICHEIRO — e isto custou três enganos
+   * no mesmo dia.**
+   *
+   * As primeiras versões destas provas procuravam palavras no ficheiro inteiro, e ficaram
+   * vermelhas três vezes por causa dos MEUS PRÓPRIOS COMENTÁRIOS: uma por eu mencionar o
+   * nome do grupo do Short para o explicar, outra por escrever *"Fazer o vídeo leva 36
+   * minutos"* num aviso ANTES do passo que faz o vídeo.
+   *
+   * > **Uma prova que lê o ficheiro todo mede a documentação junto com o código.** E é
+   * > pior do que parece: ela também ficaria VERDE se a regra vivesse só num comentário.
+   *
+   * Agora lêem-se só as linhas que MANDAM — o nome de cada passo e a condição dele —, e
+   * os comentários deixam de existir para efeitos de prova.
+   *
+   * ⚠️ **E é um leitor de dez linhas, de propósito, em vez de uma biblioteca.** A
+   * biblioteca óbvia (`js-yaml`) **não é dependência declarada deste projeto** — está no
+   * disco só porque outra coisa a arrastou. Pendurar a prova semanal do canal num pacote
+   * que ninguém pediu é convidar o dia em que ele desaparece e o robô falha ao sábado por
+   * uma razão que não tem nada a ver com vídeos.
+   */
+  const passos = fluxo.split(/\r?\n/).reduce((lista, linha) => {
+    const nome = linha.match(/^\s*-\s*name:\s*(.+?)\s*$/);
+    if (nome) lista.push({ nome: nome[1].replace(/^["']|["']$/g, ''), se: '' });
+    const se = linha.match(/^\s*if:\s*(.+?)\s*$/);
+    if (se && lista.length) lista[lista.length - 1].se = se[1];
+    return lista;
+  }, []);
+  const posicao = (parte) => passos.findIndex((p) => p.nome.includes(parte));
+  const condicao = (parte) => passos.find((p) => p.nome.includes(parte))?.se || '';
+  /**
    * ⚠️ A 1ª versão desta prova procurava "youtube-short-daily" no FICHEIRO INTEIRO — e
    * ficou vermelha por causa de um COMENTÁRIO meu que menciona esse nome para o explicar.
    * Uma prova que lê o ficheiro todo mede a documentação junto com o código. Agora lê só
@@ -399,9 +464,49 @@ console.log('\n5. O ROBÔ DIÁRIO NÃO É TOCADO');
     `o grupo é "${linhaDoGrupo.trim()}"`,
   );
   ok(
-    'o relógio de sábado está DESLIGADO até o tempo do render estar medido',
-    !/^\s{2}schedule:/m.test(fluxo),
-    'há um "schedule:" activo no ficheiro do robô',
+    'o relógio dispara ao SÁBADO de madrugada (fora da hora de ponta do GitHub)',
+    /cron:\s*'0 2 \* \* 6'/.test(fluxo),
+  );
+
+  /**
+   * 🔴 AS DUAS CONDIÇÕES QUE ESTAVAM ERRADAS, E QUE O RELÓGIO IA EXPOR TODAS AS SEMANAS.
+   *
+   * Um relógio não carrega em interruptores: numa corrida automática, os campos que o
+   * botão preenche chegam VAZIOS. Estavam escritas assim:
+   *   · o guião só se escrevia *"quando se pede"* → nunca se escrevia, e o passo seguinte
+   *     parava a dizer que faltava o guião — a apontar para o sítio errado;
+   *   · a subida só acontecia *"quando se pede"* → **o robô fazia o vídeo todos os
+   *     sábados e nunca o publicava, e a corrida acabava a verde.**
+   *
+   * As duas eram invisíveis com o relógio desligado, porque à mão os interruptores vêm
+   * sempre preenchidos. É a lição de 02/08 outra vez: *um teste que não lança o programa
+   * como o robô o lança não prova nada sobre o robô*.
+   */
+  ok(
+    'numa corrida automática o robô PUBLICA (não fica com o vídeo na gaveta)',
+    condicao('Subir ao YouTube').includes("github.event_name == 'schedule'"),
+    `a condição é: ${condicao('Subir ao YouTube') || '(nenhuma)'}`,
+  );
+  ok(
+    'e o caderno é guardado sempre que se publica',
+    condicao('Guardar no caderno').includes("github.event_name == 'schedule'"),
+    `a condição é: ${condicao('Guardar no caderno') || '(nenhuma)'}`,
+  );
+  ok(
+    'o guião escreve-se quando FALTA, não quando alguém se lembra de pedir',
+    posicao('Escrever o guião') >= 0 && !condicao('Escrever o guião').includes('inputs.gerar'),
+    `a condição é: ${condicao('Escrever o guião') || '(nenhuma)'}`,
+  );
+  ok(
+    'a data da estreia é conferida ANTES de qualquer coisa cara',
+    posicao('estreia está livre') >= 0
+      && posicao('estreia está livre') < posicao('Fazer o vídeo')
+      && posicao('estreia está livre') < posicao('A voz'),
+    `conferência no passo ${posicao('estreia está livre') + 1}, voz no ${posicao('A voz') + 1}, vídeo no ${posicao('Fazer o vídeo') + 1}`,
+  );
+  ok(
+    'e as provas de mesa correm antes da voz, que é o 1º passo que custa alguma coisa',
+    posicao('provas de mesa') >= 0 && posicao('provas de mesa') < posicao('A voz'),
   );
   ok(
     'o robô dá 5 horas ao vídeo (são dez mil fotogramas)',
