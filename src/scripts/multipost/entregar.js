@@ -397,6 +397,11 @@ async function main() {
   const caderno = lerCaderno();
   if (caderno[slug]) {
     log(`⏭️  "${slug}" já tinha sido agendado em ${caderno[slug].agendadoEm} (post ${caderno[slug].postId}). Nada a fazer.`);
+    // ⚠️ SE O POST FOI APAGADO À MÃO, O CADERNO PASSA A MENTIR — e este robô recusa
+    // para sempre um vídeo que já não está agendado em lado nenhum. Aconteceu em
+    // 05/08, quando o primeiro agendamento foi apagado para corrigir a legenda.
+    // A cura é uma linha: apagar a entrada em .github/data/instagram-agendados.json.
+    log('   (se o post foi apagado no painel, tire este slug de .github/data/instagram-agendados.json)');
     return 0;
   }
 
