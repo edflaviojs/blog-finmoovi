@@ -93,7 +93,14 @@ function principal() {
 
   if (args.lista) {
     const linhas = (fila.videos || []).map((v) => {
-      const feito = caderno[v.slug] ? 'no ar' : (v.estado || 'por fazer');
+      /**
+       * ⚠️ **"NO AR" SÓ SE ESTIVER MESMO NO AR.** A 1ª versão escrevia "no ar" para tudo
+       * o que estivesse no caderno — e o caderno também guarda **reservas**: dias já
+       * tomados por um vídeo que ainda não subiu. Quem lesse a lista dava por publicado
+       * um vídeo que não existe. É a mesma família do erro que a nota do caderno conta.
+       */
+      const j = caderno[v.slug];
+      const feito = j?.videoId ? 'no ar' : (j ? `${j.estado || 'reservado'} para ${String(j.publishAt || '').slice(0, 10)}` : (v.estado || 'por fazer'));
       return `  ${caderno[v.slug] || JA_TRATADOS.has(String(v.estado || '').toLowerCase()) ? '✓' : '·'} ${v.slug} — ${feito}\n      "${v.titulo || '(SEM TÍTULO APROVADO — este não pode subir)'}"`;
     });
     console.log(`\nA fila do vídeo longo (${(fila.videos || []).length} temas):\n${linhas.join('\n') || '  (vazia)'}\n`);

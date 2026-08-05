@@ -1,9 +1,10 @@
 {
   "sair-do-vermelho": {
     "videoId": null,
-    "uploadedAt": "2026-08-05T00:00:00.000Z",
+    "uploadedAt": null,
     "publishAt": "2026-08-09T22:00:00.000Z",
     "titulo": "Dívida do cartão: como sair do vermelho sem apertar mais o mês",
-    "nota": "SUBIDO A MAO PELO DONO. Fica aqui para o robo NUNCA o publicar outra vez. Nao apagar esta linha."
+    "estado": "reservado",
+    "nota": "🔴 ESTE VIDEO AINDA NAO ESTA NO AR. Em 05/08 escrevi aqui que tinha sido SUBIDO A MAO PELO DONO — e nao tinha. Foi uma SUPOSICAO minha, tirada do plano que dizia que ele o subiria. O caderno passou a afirmar uma coisa que nao aconteceu, que e o pior que um caderno pode fazer: quem o lesse dava o assunto por fechado. Corrigido: `uploadedAt` volta a ser nulo e o estado passa a `reservado`. A LINHA FICA, e e de proposito: e ela que reserva o domingo 09/08 e impede a corrida de sabado 08 de marcar OUTRO video para a mesma hora (a regra `um dia, um video`). Quando o video for mesmo publicado, o `videoId` e o `uploadedAt` sao preenchidos — pelo robo, se for ele a subi-lo."
   }
 }
