@@ -39,9 +39,13 @@ on:
   workflow_dispatch:
     inputs:
       slug:
-        description: 'Qual vídeo (o nome curto). Vazio = o primeiro por fazer na fila de temas.'
+        # ⚠️ VAZIO POR OMISSÃO, e mudou de propósito. Enquanto a fila só tinha o piloto,
+        # o valor por omissão era `sair-do-vermelho`. Agora que a fila tem trabalho a
+        # sério, esse valor mandaria um disparo à mão refazer um vídeo que JÁ FOI AO AR.
+        # Vazio, quem escolhe é a fila — o mesmo que o relógio faz.
+        description: 'Qual vídeo (o nome curto). Deixe VAZIO para o robô escolher o próximo da fila.'
         required: false
-        default: 'sair-do-vermelho'
+        default: ''
       gerar:
         description: 'Escrever um guião NOVO (gasta IA). Desligado = usa o guião que já está no repositório.'
         type: boolean
