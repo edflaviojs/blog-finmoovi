@@ -175,26 +175,67 @@ const Marca: React.FC = () => (
 const VERMELHO = '#ff1f3d';
 const LARANJA = '#ff7a00';
 
+/**
+ * A MÃOZINHA A CARREGAR NA ETIQUETA — pedido do dono (05/08).
+ *
+ * ⚠️ **É O MESMO DESENHO** da mão que já carrega no "Comenta FINMOOVI" dentro do
+ * vídeo (`MetaClickLink`, no scenes.tsx): o mesmo caminho SVG, o mesmo contorno em
+ * degradê, o mesmo miolo escuro. Desenhar outra mão daria duas mãos diferentes na
+ * mesma marca — e ninguém saberia dizer porquê, mas ficaria errado.
+ *
+ * O que muda: aqui ela está PARADA, no instante do toque. No vídeo a mão viaja numa
+ * curva e mergulha; numa fotografia não há viagem, há só o momento — por isso o anel
+ * do clique já está aberto e a mão já está pousada.
+ */
+const MaoQueCarrega: React.FC = () => (
+  /**
+   * ⚠️ A MÃO TOCA NO CANTO, NUNCA NO MEIO. Na primeira tentativa ela ficou por cima
+   * da etiqueta e tapou metade da palavra: lia-se "APP GRÁT". Uma mão que esconde
+   * aquilo em que está a carregar é pior do que mão nenhuma.
+   * A ponta do dedo assenta na aresta direita, perto do fundo; o corpo da mão cresce
+   * para fora do carimbo, onde não há nada para tapar.
+   */
+  <svg width={190} height={210} style={{ position: 'absolute', right: -120, bottom: -150, overflow: 'visible' }}>
+    <defs>
+      <linearGradient id="capa-mao-g" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stopColor={BRAND.yellow} />
+        <stop offset="100%" stopColor={LARANJA} />
+      </linearGradient>
+    </defs>
+    {/* o anel do clique, aberto: é o que diz "isto acabou de ser tocado" */}
+    <circle cx={76} cy={25} r={34} fill="none" stroke={BRAND.yellow} strokeWidth={6} opacity={0.5} />
+    <circle cx={76} cy={25} r={56} fill="none" stroke={BRAND.yellow} strokeWidth={4} opacity={0.2} />
+    <g transform="translate(28 12) scale(1.6)">
+      <path
+        d="M24 6 a8 8 0 0 1 16 0 v34 l12 3 a12 12 0 0 1 9 11 v14 a16 16 0 0 1 -16 16 h-18 a16 16 0 0 1 -13 -7 l-14 -20 a7 7 0 0 1 10 -9 l6 6 v-58 a8 8 0 0 1 8 -8 Z"
+        fill={BRAND.panel} stroke="url(#capa-mao-g)" strokeWidth={5} strokeLinejoin="round" strokeLinecap="round"
+      />
+    </g>
+  </svg>
+);
+
 const Etiqueta: React.FC<{ texto: string }> = ({ texto }) => (
-  <div style={{
-    background: `linear-gradient(135deg, ${VERMELHO} 0%, ${LARANJA} 100%)`,
-    color: BRAND.yellow,
-    fontFamily: BODY, fontWeight: 900, fontSize: 44, letterSpacing: 1,
-    textTransform: 'uppercase',
-    padding: '18px 38px', borderRadius: 22,
-    border: `5px solid ${BRAND.yellow}`,
-    transform: 'rotate(-5deg)',
-    textShadow: '0 3px 0 rgba(0,0,0,0.35)',
-    boxShadow: `0 0 46px ${VERMELHO}99, 0 10px 26px rgba(0,0,0,0.55)`,
-    whiteSpace: 'nowrap',
-  }}>{texto}</div>
+  <div style={{ position: 'relative', transform: 'rotate(-5deg)' }}>
+    <div style={{
+      background: `linear-gradient(135deg, ${VERMELHO} 0%, ${LARANJA} 100%)`,
+      color: BRAND.yellow,
+      fontFamily: BODY, fontWeight: 900, fontSize: 46, letterSpacing: 1,
+      textTransform: 'uppercase',
+      padding: '20px 40px', borderRadius: 24,
+      border: `6px solid ${BRAND.yellow}`,
+      textShadow: '0 3px 0 rgba(0,0,0,0.35)',
+      boxShadow: `0 0 60px ${VERMELHO}aa, 0 12px 30px rgba(0,0,0,0.6)`,
+      whiteSpace: 'nowrap',
+    }}>{texto}</div>
+    <MaoQueCarrega />
+  </div>
 );
 
 const FaixaDeCima: React.FC<{ etiqueta?: string }> = ({ etiqueta }) => (
   <div style={{
     position: 'absolute', top: FAIXA_DE_CIMA, left: 0, width: '100%',
     display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-    paddingLeft: 56, paddingRight: 56,
+    paddingLeft: 56, paddingRight: 104,
   }}>
     <Marca />
     {etiqueta ? <Etiqueta texto={etiqueta} /> : <div />}
