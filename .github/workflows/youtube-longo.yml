@@ -2,17 +2,22 @@ name: YouTube — Vídeo longo (semanal)
 
 # ♦ O ROBÔ DO VÍDEO LONGO — IMPLEMENTACAO20 §44.
 #
-# ═══ 🔴 O RELÓGIO ESTÁ DESLIGADO, E ISSO É DE PROPÓSITO ═══
-# O `schedule` está comentado em baixo. Enquanto assim estiver, este robô SÓ corre
-# quando alguém carrega no botão. Há duas razões, e as duas são de verdade:
+# ═══ ✅ O RELÓGIO ESTÁ LIGADO DESDE 05/08/2026 — e as duas razões que o travavam ═══
 #
-#   1. **Ninguém sabe quanto tempo dez mil fotogramas demoram nesta máquina da nuvem.**
-#      No portátil do dono o render foi morto TRÊS vezes por ser demasiado longo (§43.6).
-#      Ligar um relógio a um trabalho de duração desconhecida é assinar um cheque em
-#      branco. Primeiro mede-se — e é para isso que serve o botão.
+#   1. **Não se sabia quanto tempo dez mil fotogramas demoram na nuvem.** No portátil do
+#      dono o render foi morto TRÊS vezes (§43.6), e ligar um relógio a um trabalho de
+#      duração desconhecida é assinar um cheque em branco.
+#      ✅ **MEDIDO em 04/08: 36 minutos do princípio ao fim**, dos quais 14 a fazer o
+#      vídeo — oito vezes menos do que as 5 horas de tecto. Razão resolvida.
 #   2. 🔴 **COLISÃO DE DATAS.** O primeiro vídeo (`sair-do-vermelho`) é subido À MÃO pelo
-#      dono e estreia **domingo 09/08 às 19h00 do Brasil**. Se o relógio estivesse ligado,
-#      o robô produzia no sábado 08 e marcava OUTRO vídeo para a MESMA hora.
+#      dono e estreia **domingo 09/08 às 19h00 do Brasil**. Com o relógio ligado numa
+#      quarta-feira, a primeira corrida cairia em **sábado 08/08** e marcaria OUTRO vídeo
+#      para o MESMO domingo, à mesma hora.
+#      ✅ **RESOLVIDA, e não por esperar por segunda-feira.** Esperar resolve uma vez e
+#      deixa a armadilha armada; a regra que ficou vale para sempre: **UM DIA, UM VÍDEO**.
+#      O robô confere, ANTES de trabalhar, se o domingo em causa já tem dono — e se tiver,
+#      desiste em silêncio. É por isso que a corrida de sábado 08 não vai fazer nada, e a
+#      de sábado 15 vai. Ver `estreiaOcupada` em `upload-longo.js`.
 #
 # ═══ QUANDO SE LIGAR: SÁBADO, PRIVADO, COM A ESTREIA MARCADA ═══
 # O relógio a usar é `0 2 * * 6` — sábado às 02:00 universais (23h00 de sexta no Brasil).
@@ -47,9 +52,11 @@ on:
         type: boolean
         required: false
         default: false
-  # ⚠️ NÃO DESCOMENTAR sem ter lido o cabeçalho. Ver as duas razões lá em cima.
-  # schedule:
-  #   - cron: '0 2 * * 6'   # sábado 02:00 UTC = sexta 23h00 no Brasil
+  schedule:
+    # ✅ LIGADO EM 05/08/2026, por ordem do dono, depois de a corrida na nuvem ter sido
+    # medida: 36 minutos do princípio ao fim, dos quais 14 a fazer o vídeo.
+    # Sábado às 02:00 universais = sexta às 23h00 no Brasil.
+    - cron: '0 2 * * 6'
 
 permissions:
   contents: write
@@ -140,6 +147,31 @@ jobs:
       - name: Instalar dependências (blog)
         run: npm ci
 
+      # ⚠️ **UM DIA, UM VÍDEO** — e esta pergunta vem ANTES de tudo o que custa.
+      #
+      # Fazer o vídeo leva 36 minutos e uma corrida de IA. Descobrir no fim que o domingo
+      # já era de outro vídeo seria deitar fora os 36 minutos — e a corrida seguinte só
+      # cabe na semana a seguir. Isto responde em milissegundos, lendo o caderno.
+      #
+      # Dois vídeos do mesmo canal a estrear no mesmo domingo competem um com o outro na
+      # lista de quem se inscreveu, por isso o dia é a régua — não a hora.
+      # ⚠️ Num disparo à mão isto NÃO trava: quem carrega no botão sabe o que quer, e há
+      # sempre `--publicar-em` para escolher outra data.
+      - name: Conferir que o domingo da estreia está livre
+        id: data
+        if: github.event_name == 'schedule'
+        run: |
+          set +e
+          node src/scripts/youtube/upload-longo.js --conferir-estreia
+          CODE=$?
+          set -e
+          if [ "$CODE" = "78" ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          if [ "$CODE" != "0" ]; then echo "❌ a conferência da data falhou (código $CODE)"; exit "$CODE"; fi
+          echo "skip=false" >> "$GITHUB_OUTPUT"
+
       # ⚠️ O ROBÔ ALIMENTA-SE SOZINHO, MAS SÓ QUANDO TEM FOME.
       #
       # Ordem do dono (05/08): *"quero continuar usando a fonte que criamos da pesquisa da
@@ -161,6 +193,14 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
         run: |
+          # ⚠️ Se o domingo já tinha dono, tudo o que vem a seguir é desnecessário. Este
+          # passo é o único portão que os passos seguintes olham, por isso a decisão da
+          # data passa por aqui — dois interruptores diferentes seriam duas coisas para
+          # alguém se esquecer de ligar.
+          if [ "${{ steps.data.outputs.skip }}" = "true" ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
           SLUG="${{ github.event.inputs.slug }}"
           if [ -z "$SLUG" ]; then
             # ⚠️ Fila vazia devolve 78 e isso é SUCESSO, não avaria. Mesmo rito do Short.
@@ -204,10 +244,18 @@ jobs:
           fi
 
       # ── 1. O GUIÃO ────────────────────────────────────────────────────────────
-      # Só quando se pede. Por omissão usa-se o guião que já está no repositório, para a
-      # medição ser sobre um vídeo CONHECIDO e não gastar IA à toa.
-      - name: Escrever o guião (só quando se pede)
-        if: steps.escolher.outputs.skip != 'true' && github.event.inputs.gerar == 'true'
+      #
+      # 🔴 **ESTE PASSO ESTAVA A OLHAR PARA O INTERRUPTOR ERRADO, e com o relógio ligado
+      # isso partia o robô todas as semanas.** A condição era *"só quando se pede"* — e um
+      # relógio não pede nada. Numa corrida automática, o interruptor vem vazio, o guião
+      # nunca era escrito, e o passo seguinte parava a dizer que não havia guião. **O robô
+      # teria falhado todos os sábados, e a mensagem apontaria para o sítio errado.**
+      #
+      # A regra certa não é "quando se pede": é **quando falta**. Um tema novo nunca tem
+      # guião — escreve-se. Um tema que já foi escrito não se paga duas vezes. É a mesma
+      # ideia das partes do render que ficam no disco.
+      - name: Escrever o guião (se ainda não existir)
+        if: steps.escolher.outputs.skip != 'true'
         env:
           KIE_AI_KEY: ${{ secrets.KIE_AI_KEY }}
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
@@ -216,6 +264,10 @@ jobs:
           CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
         run: |
           set -euo pipefail
+          if [ -f "src/scripts/youtube/output/$SLUG.longo.json" ] && [ "${{ github.event.inputs.gerar }}" != "true" ]; then
+            echo "♻️  o guião de \"$SLUG\" já existe — não se paga duas vezes pelo mesmo texto."
+            exit 0
+          fi
           node src/scripts/youtube/pick-next-longo.js --como-argumentos --slug="$SLUG" > /tmp/tema.args
           echo "tema escolhido:"; cat /tmp/tema.args
           # ⚠️ UM ARGUMENTO POR LINHA (`-d '\n'`). Os temas trazem dois pontos, vírgulas e
@@ -350,19 +402,31 @@ jobs:
           retention-days: 30
 
       # ── 6. A SUBIDA ──────────────────────────────────────────────────────────
-      # ⚠️ Só quando se pede. Sobe PRIVADO, com a estreia marcada para o próximo domingo
-      # às 19h00 do Brasil — e o próprio programa confirma com o YouTube que a marcação
-      # ficou lá, porque um vídeo que fica privado para sempre não se queixa a ninguém.
+      #
+      # 🔴 **A SEGUNDA FALHA DO MESMO TIPO, E ESTA ERA A PIOR.** A condição era só
+      # *"quando o interruptor de publicar está ligado"* — e num relógio ele vem vazio.
+      # **O robô teria feito o vídeo todos os sábados e NUNCA o teria publicado**, com a
+      # corrida a acabar a verde. Trinta e seis minutos de trabalho por semana a cair num
+      # ficheiro que ninguém ia buscar, sem um único aviso.
+      #
+      # A regra certa: **um relógio publica sempre** (é para isso que ele existe); um
+      # disparo à mão só publica se quem carregou o pedir.
+      #
+      # ⚠️ Sobe PRIVADO, com a estreia marcada para o próximo domingo às 19h00 do Brasil —
+      # e o próprio programa confirma com o YouTube que a marcação ficou lá, porque um
+      # vídeo que fica privado para sempre não se queixa a ninguém.
       - name: Subir ao YouTube (privado, com estreia marcada)
-        if: steps.escolher.outputs.skip != 'true' && github.event.inputs.publicar == 'true'
+        if: steps.escolher.outputs.skip != 'true' && (github.event_name == 'schedule' || github.event.inputs.publicar == 'true')
         env:
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
           YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
         run: node src/scripts/youtube/upload-longo.js --slug="$SLUG"
 
+      # ⚠️ Se isto não correr, o caderno não sabe que o vídeo foi ao ar — e na semana
+      # seguinte o robô voltava a escolher o mesmo tema. Anda sempre com a subida.
       - name: Guardar no caderno do vídeo longo
-        if: steps.escolher.outputs.skip != 'true' && github.event.inputs.publicar == 'true'
+        if: steps.escolher.outputs.skip != 'true' && (github.event_name == 'schedule' || github.event.inputs.publicar == 'true')
         run: |
           git config user.name "FinMoovi Bot"
           git config user.email "bot@finmoovi.com"
