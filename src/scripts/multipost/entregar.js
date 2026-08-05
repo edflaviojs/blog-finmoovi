@@ -118,6 +118,42 @@ function hashtagDe(palavra) {
 }
 
 /**
+ * ⚠️ A PALAVRA-CHAVE NEM SEMPRE É UMA PALAVRA. Olhando os 15 roteiros já feitos,
+ * ela tanto é "inflação" como é a FRASE INTEIRA do título — *"Se eu devesse R$ 30
+ * mil, faria ISSO"*. Transformar isso numa etiqueta daria
+ * `#SeEuDevesseR30MilFariaIsso`: um monstro que ninguém procura e que grita
+ * "isto foi feito por uma máquina". (É o mesmo defeito que já mordeu as hashtags
+ * do YouTube, quando as três chegavam coladas e viravam uma só.)
+ *
+ * Regra: **no máximo duas palavras**, e nunca uma palavra vaga. Uma etiqueta a
+ * menos não custa nada; uma etiqueta ridícula custa a credibilidade do perfil.
+ */
+const MAX_PALAVRAS_NA_ETIQUETA = 2;
+const PALAVRAS_VAGAS = new Set(['bolso', 'dinheiro', 'grana', 'vida', 'futuro', 'conta', 'app', 'coisas']);
+
+export function etiquetaDaPalavraChave(keyword) {
+  const cru = limpar(keyword);
+  const palavras = cru.split(/\s+/).filter(Boolean);
+  if (!palavras.length || palavras.length > MAX_PALAVRAS_NA_ETIQUETA) return '';
+  if (PALAVRAS_VAGAS.has(cru.toLowerCase())) return '';
+  return hashtagDe(cru);
+}
+
+/**
+ * A etiqueta do ASSUNTO, tirada da categoria do roteiro.
+ * Existe para o post nunca ficar só com as etiquetas genéricas quando a
+ * palavra-chave é recusada pela regra acima — foi o caso do "Eduque seu bolso".
+ */
+const ETIQUETA_DA_CATEGORIA = {
+  basico: '#FinançasDoZero',
+  controle: '#ControleFinanceiro',
+  credito: '#Crédito',
+  investimento: '#Investimentos',
+  mercado: '#MercadoFinanceiro',
+  mindset: '#MentalidadeFinanceira',
+};
+
+/**
  * A legenda do Instagram.
  * ⚠️ NÃO leva "link na descrição" — no Instagram essa frase não quer dizer nada, e
  * era essa a diferença que obrigava a uma legenda própria em vez de reaproveitar a
@@ -128,7 +164,8 @@ export function montarLegenda(roteiro) {
   const titulo = limpar(roteiro.term || roteiro.keyword || '');
   const gancho = limpar(roteiro.intro?.frase || '');
   const tags = [
-    hashtagDe(roteiro.keyword),
+    etiquetaDaPalavraChave(roteiro.keyword),
+    ETIQUETA_DA_CATEGORIA[roteiro.category] || '',
     '#FinançasPessoais',
     '#EducaçãoFinanceira',
     '#DinheiroNaPrática',
