@@ -4,6 +4,7 @@ definition: "Dinero que pides prestado ahora y devuelves en cuotas, con un costo
 title: "Préstamo - Glosario Financiero"
 description: "Qué es un préstamo y cómo cada cuota aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/emprestimo.webp"
+imageAlt: "Monedas doradas apiladas y un frasco de vidrio con planta verde."
 category: "basico"
 tags: ["prestamo", "glosario", "finanzas"]
 author: "FinMoovi"

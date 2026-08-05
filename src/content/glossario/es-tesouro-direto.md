@@ -4,6 +4,7 @@ definition: "Entienda qué es tesouro direto, cómo funciona, ventajas, riesgos 
 title: "Bonos del gobierno - Glosario financiero"
 description: "Entiende qué son los bonos del gobierno, cómo funcionan, sus ventajas, riesgos y ejemplos prácticos en el mercado financiero."
 image: "/images/glossario/tesouro-direto.webp"
+imageAlt: "Monedas doradas, barras y planta verde en frasco sobre fondo oscuro."
 category: "basico"
 tags: ["tesouro direto", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 author: "FinMoovi"

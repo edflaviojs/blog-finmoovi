@@ -4,6 +4,7 @@ definition: "Qué es flujo de caja descontado y cómo aparece en tu día a día 
 title: "flujo de caja descontado - Glosario Financiero"
 description: "Qué es flujo de caja descontado y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/fluxo-de-caixa-descontado.webp"
+imageAlt: "Monedas doradas apiladas, barras crecientes y frascos con planta sobre fondo oscuro."
 category: "basico"
 tags: ["flujo de caja descontado", "glosario", "finanzas"]
 author: "FinMoovi"

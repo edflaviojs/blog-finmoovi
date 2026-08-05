@@ -3,6 +3,7 @@ title: "How to Turn Financial Chaos into Control with the Kyco Method (2026)"
 description: "Learn the Kyco technique to organize expenses, stop impulse buys, and gain peace of mind with FinMoovi. Quick 5‑minute steps."
 tickerHeadline: "The method that calms your wallet"
 image: "/images/posts/como-transformar-o-caos-financeiro-em-controle-com-a-tecnica.webp"
+imageAlt: "Smiling couple holding tablet at wooden table with coffee cup and plant."
 category: "dicas"
 locale: "en"
 tags: ["kyco","personal finance","budgeting","money management"]

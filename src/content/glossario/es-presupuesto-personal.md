@@ -1,6 +1,7 @@
 ---
 term: "Presupuesto Personal"
 image: "/images/glossario/es-orcamento-pessoal.webp"
+imageAlt: "Monedas apiladas, gráfico de barras transparente, hucha dorada y planta verde sobre fondo oscuro."
 definition: "Un plan financiero que organiza ingresos y gastos, ayudándote a entender a dónde va tu dinero y cómo ahorrar más."
 category: "basico"
 locale: "es"

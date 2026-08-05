@@ -3,6 +3,7 @@ title: "Volta às aulas: economize e planeje os gastos escolares 2026"
 description: "Descubra estratégias práticas para reduzir custos e organizar o orçamento da volta às aulas, usando o FinMoovi para controlar despesas sem complicação."
 tickerHeadline: "O truque que salva o bolso"
 image: "/images/posts/volta-as-aulas-economize-e-planeje-os-gastos-escolares-2026.webp"
+imageAlt: "Formas onduladas abstratas em azul escuro e amarelo sobre fundo gradiente."
 category: "dicas"
 locale: "pt"
 tags: ["volta às aulas","material escolar barato","back to school budget"]

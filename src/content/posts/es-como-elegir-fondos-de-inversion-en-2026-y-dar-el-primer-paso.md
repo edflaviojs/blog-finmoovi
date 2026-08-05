@@ -3,6 +3,7 @@ title: "Cómo elegir fondos de inversión en 2026 y dar el primer paso"
 description: "Aprende a seleccionar fondos, definir tu objetivo y usar FinMoovi para seguirlos. Guía práctica y sin complicaciones."
 tickerHeadline: "El camino rápido para invertir en fondos"
 image: "/images/posts/como-escolher-fundos-de-investimento-em-2026-e-dar-o-primeir.webp"
+imageAlt: "Fondo azul oscuro con líneas onduladas doradas y un triángulo amarillo ascendente."
 category: "dicas"
 tags:
   - "fondos de inversión"

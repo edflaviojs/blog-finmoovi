@@ -5,6 +5,7 @@ category: "mercado"
 locale: "es"
 translationKey: "glossario-p-l-preco-lucro"
 image: "/images/glossario/p-l-preco-lucro.webp"
+imageAlt: "Monedas doradas apiladas y en frascos con plantas verdes sobre fondo azul oscuro."
 relatedTerms: ["Lucro por Ação","Preço de Ação","Retorno sobre o Patrimônio Líquido"]
 publishedAt: 2026-06-09
 ---

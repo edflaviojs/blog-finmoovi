@@ -3,6 +3,7 @@ title: "How to Choose Investment Funds in 2026 and Take the First Step"
 description: "Learn the easiest way to start investing in funds, pick the right type for your goals, and use FinMoovi to track performance in minutes."
 tickerHeadline: "Quick Path to Investing in Funds"
 image: "/images/posts/como-escolher-fundos-de-investimento-em-2026-e-dar-o-primeir.webp"
+imageAlt: "Yellow line graph rising on dark blue background with yellow triangle marker."
 category: "dicas"
 tags:
   - "investment funds"

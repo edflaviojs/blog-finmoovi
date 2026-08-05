@@ -4,6 +4,7 @@ definition: "Entienda qué es usura, cómo funciona, ventajas, riesgos y ejemplo
 title: "usura - Glosario Financiero"
 description: "Entienda qué es usura, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 image: "/images/glossario/usura.webp"
+imageAlt: "Monedas apiladas con flecha ascendente, báscula y planta en frasco sobre fondo oscuro."
 category: "basico"
 tags: ["usura", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 author: "FinMoovi"

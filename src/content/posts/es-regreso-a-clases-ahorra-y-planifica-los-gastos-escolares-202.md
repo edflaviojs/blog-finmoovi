@@ -3,6 +3,7 @@ title: "Regreso a clases: ahorra y planifica los gastos escolares 2026"
 description: "Descubre trucos prácticos para reducir costos y organizar el presupuesto del regreso a clases con FinMoovi. ¡Controla tus gastos sin complicaciones!"
 tickerHeadline: "El truco que salva el bolsillo"
 image: "/images/posts/volta-as-aulas-economize-e-planeje-os-gastos-escolares-2026.webp"
+imageAlt: "Ondas abstractas azul y amarillo sobre fondo degradado y espacio blanco."
 category: "dicas"
 locale: "es"
 tags: ["regreso a clases","material escolar barato","presupuesto back to school"]

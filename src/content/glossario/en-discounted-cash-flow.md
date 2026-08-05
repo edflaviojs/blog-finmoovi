@@ -4,6 +4,7 @@ definition: "What Discounted Cash Flow is and how it shows up in your everyday m
 title: "Discounted Cash Flow - Financial Glossary"
 description: "What Discounted Cash Flow is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/fluxo-de-caixa-descontado.webp"
+imageAlt: "Gold coins, bars, and jars with a plant on dark background."
 category: "basico"
 tags: ["Discounted Cash Flow", "glossary", "finance"]
 author: "FinMoovi"

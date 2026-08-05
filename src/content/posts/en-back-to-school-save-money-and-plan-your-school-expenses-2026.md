@@ -3,6 +3,7 @@ title: "Back to School: Save Money and Plan Your School Expenses 2026"
 description: "Practical tips to cut costs and organize your back‑to‑school budget using FinMoovi to track expenses effortlessly."
 tickerHeadline: "The trick that saves your wallet"
 image: "/images/posts/volta-as-aulas-economize-e-planeje-os-gastos-escolares-2026.webp"
+imageAlt: "Abstract blue and yellow waves on a gradient background."
 category: "dicas"
 locale: "en"
 tags: ["back to school","cheap school supplies","back to school budget"]

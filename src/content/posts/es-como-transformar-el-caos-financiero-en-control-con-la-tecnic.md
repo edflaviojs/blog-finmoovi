@@ -3,6 +3,7 @@ title: "Cómo transformar el caos financiero en control con la técnica Kyco (20
 description: "Descubre la técnica Kyco para organizar gastos, evitar compras impulsivas y ganar tranquilidad con FinMoovi. Tips prácticos en 5 min."
 tickerHeadline: "El método que calma tu bolsillo"
 image: "/images/posts/como-transformar-o-caos-financeiro-em-controle-com-a-tecnica.webp"
+imageAlt: "Pareja sonriente revisando tablet en mesa de madera con taza y planta."
 category: "dicas"
 locale: "es"
 tags: ["kyco","finanzas personales","economía","dinero"]

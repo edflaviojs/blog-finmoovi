@@ -1,6 +1,7 @@
 ---
 term: "Sobregiro"
 image: "/images/glossario/es-cheque-especial.webp"
+imageAlt: "Monedas doradas apiladas, barras de gráfico y planta en frasco sobre fondo azul."
 definition: "Una línea de crédito preaprobada vinculada a tu cuenta corriente. Una de las formas de crédito más caras en Brasil."
 category: "credito"
 locale: "es"
