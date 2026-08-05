@@ -1,13 +1,8 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-08-04T07:36:53.306Z
-**Posts:** 243 · limpos: 1 · bloqueados p/ revisao: 0 · com flags: 35
+**Gerado em:** 2026-08-05T07:36:28.748Z
+**Posts:** 249 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 36
 
-## ✂️ Cortes aplicados (citacao/estatistica sem fonte confiavel)
-
-**es-como-regalar-en-el-dia-del-padre-gastando-poco-7-ideas-que-c.md**
-- link removido: https://www.oficina-de-estadisticas.org
-- link removido: https://www.burodecredito.org
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
 
@@ -20,6 +15,9 @@
 - _Segundo a **Serasa Experian**, a dívida média das famílias brasileiras em 2023 ultrapassou R$ 12 mil, mostrando que muitas pessoas carregam despesas desnecessárias._
 - _Essa técnica reduz drasticamente compras impulsivas, que, segundo o **IBGE**, representaram cerca de **12 %** das despesas de consumo em 2022._
 - _Segundo o **Bacen**, 45 % das famílias brasileiras não têm [reserva de emergência](/ferramentas/calculadora-reserva), o que pode levar a endividamento._
+
+**como-escolher-fundos-de-investimento-em-2026-e-dar-o-primeir.md**
+- _**Rebalanceamento semestral** – Ajuste a proporção entre fundos de acordo com a performance e seu objetivo._
 
 **como-montar-um-orcamento-que-realmente-funciona-em-2026.md**
 - _Ajuste conforme a realidade._
