@@ -1,0 +1,85 @@
+name: YouTube — Responder aos comentários (FINMOOVI)
+
+# ♦ O QUE CUMPRE A PROMESSA (05/08/2026 — IMPL20 §50, decisão do dono).
+#
+# Todos os vídeos pedem "comenta FINMOOVI que eu te mando o app" — e durante
+# quinze dias ninguém respondeu a ninguém. Este robô fecha esse buraco.
+#
+# Corre ao minuto 25 de cada hora, e NÃO à hora certa de propósito: às :00 já
+# correm outros robôs deste repositório, e um atraso do GitHub numa fila cheia
+# custaria mais do que os 25 minutos de espera.
+#
+# Vale para SHORTS E PARA VÍDEOS LONGOS: o robô pergunta ao YouTube a lista de
+# uploads do canal em vez de ler a nossa lista, por isso apanha tudo — incluindo
+# vídeos que o dono suba à mão.
+#
+# Sem ninguém novo a pedir = sucesso silencioso. Não é falha, e não deve acender
+# luz nenhuma.
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Ensaio (não escreve nada no YouTube)'
+        type: boolean
+        default: false
+      max:
+        description: 'Teto de respostas nesta corrida (vazio = 25)'
+        required: false
+  # 🔴 RELÓGIO DESLIGADO À NASCENÇA (ordem do dono, 05/08/2026).
+  # Primeiro faz-se o ENSAIO (workflow_dispatch com dry_run) e o dono olha a lista
+  # de quem receberia resposta. Só depois disso se descomenta a linha de baixo.
+  # schedule:
+  #   - cron: '25 * * * *'
+
+# Escreve o caderno de quem já foi respondido.
+permissions:
+  contents: write
+
+# ⚠️ MESMO GRUPO dos outros robôs do YouTube: todos commitam em .github/data e
+# duas corridas ao mesmo tempo dariam conflito no push.
+concurrency:
+  group: youtube-short-daily
+  cancel-in-progress: false
+
+jobs:
+  responder:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Instalar dependências
+        run: npm ci
+
+      - name: Procurar e responder
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: |
+          ARGS=""
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
+          if [ -n "${{ github.event.inputs.max }}" ]; then ARGS="$ARGS --max=${{ github.event.inputs.max }}"; fi
+          node src/scripts/youtube/comentarios.js $ARGS
+
+      - name: Commitar o caderno
+        if: github.event.inputs.dry_run != 'true'
+        run: |
+          git config user.name "FinMoovi Bot"
+          git config user.email "bot@finmoovi.com"
+          git add .github/data/youtube-comentarios.json
+          if git diff --staged --quiet; then
+            echo "Ninguém novo respondido — nada a commitar."
+          else
+            git commit -m "chore: respostas a comentarios FINMOOVI [skip ci]"
+            git pull --rebase origin main || true
+            git push
+          fi
