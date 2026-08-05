@@ -29,6 +29,7 @@ import { getTitlePatterns } from '../lib/youtube-marketing.js';
 // Ver `lib/musica.js`: se a faixa exigir crédito, ele entra sozinho; se não exigir,
 // desaparece sozinho. Foi por não haver isto que 9 vídeos foram ao ar sem creditar.
 import { creditoDaMusica, TRILHA } from './lib/musica.js';
+import { caminhoDaCapa } from './capa-short.js';
 
 // ─── caminhos ────────────────────────────────────────────────────────────────
 const ROOT = process.cwd();
@@ -49,6 +50,26 @@ const CTA_COMENTARIO = '👉 Comenta FINMOOVI aqui embaixo que eu te mando o app
 const TOKEN_URL = 'https://oauth2.googleapis.com/token';
 const UPLOAD_URL = 'https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status';
 const CAPTIONS_URL = 'https://www.googleapis.com/upload/youtube/v3/captions?part=snippet&uploadType=multipart';
+const THUMBNAIL_URL = 'https://www.googleapis.com/upload/youtube/v3/thumbnails/set?uploadType=media&videoId=';
+
+/**
+ * A MINIATURA — mesma conversa que o vídeo longo já tem com o YouTube.
+ * O ficheiro chega pronto no artefato da produção (ver `capa-short.js`).
+ */
+async function meterCapa(chave, videoId, caminhoJpg) {
+  const bytes = readFileSync(caminhoJpg);
+  const r = await fetch(`${THUMBNAIL_URL}${encodeURIComponent(videoId)}`, {
+    method: 'POST',
+    headers: {
+      Authorization: `Bearer ${chave}`,
+      'Content-Type': 'image/jpeg',
+      'Content-Length': String(bytes.length),
+    },
+    body: bytes,
+  });
+  if (!r.ok) throw new Error(`${r.status}: ${(await r.text().catch(() => '')).slice(0, 200)}`);
+  return true;
+}
 
 const CAPTION_LANGS = [
   { code: 'pt', language: 'pt-BR', name: 'Português (Brasil)' },
@@ -561,6 +582,11 @@ async function main() {
     log(JSON.stringify(metadata, null, 2));
     log('\n── Arquivos que seriam enviados ──');
     log(`MP4: ${mp4Path} ${existsSync(mp4Path) ? '(ok)' : '(FALTANDO)'}`);
+    // ⚠️ A capa entra NESTA lista de propósito: um ensaio que não mostra a capa é um
+    // ensaio onde a sua ausência passa despercebida — e foi assim que 11 vídeos foram
+    // ao ar sem nenhuma.
+    const capaEnsaio = caminhoDaCapa(SLUG);
+    log(`CAPA: ${capaEnsaio} ${existsSync(capaEnsaio) ? `(ok, ${Math.round(statSync(capaEnsaio).size / 1024)} KB)` : '(FALTANDO)'}`);
     for (const s of srtPaths) {
       log(`SRT ${s.code}: ${s.path} ${existsSync(s.path) ? '(ok)' : '(FALTANDO)'}`);
     }
@@ -587,6 +613,24 @@ async function main() {
     } catch (err) {
       log(`⚠️ legenda ${s.code} falhou (vídeo já está no ar): ${err.message}`);
     }
+  }
+
+  // ♦ 05/08/2026 — A CAPA (IMPL20 §52).
+  // Os 11 Shorts publicados antes disto foram ao ar sem capa nenhuma: este ficheiro
+  // nunca teve uma linha sobre miniaturas. A capa vem pronta no artefato da produção.
+  // ⚠️ Falhar aqui NÃO pode derrubar nada — o vídeo já está no ar. Um Short sem capa
+  // é um clique no Studio; um robô que rebenta depois de publicar é um vídeo no ar que
+  // o caderno diz que não existe. (É a mesma regra do vídeo longo.)
+  const capa = caminhoDaCapa(SLUG);
+  if (existsSync(capa)) {
+    try {
+      await meterCapa(accessToken, videoId, capa);
+      log(`🖼️  capa enviada (${Math.round(statSync(capa).size / 1024)} KB).`);
+    } catch (err) {
+      log(`⚠️ a capa falhou (o vídeo já está no ar): ${err.message}`);
+    }
+  } else {
+    log(`⚠️ não veio capa no artefato (${capa}) — o vídeo fica com um fotograma ao calhas.`);
   }
 
   // Tracking.

@@ -1,0 +1,70 @@
+name: YouTube — Capas em atraso (corrida única)
+
+# ♦ 05/08/2026 — IMPL20 §52.
+# Onze Shorts foram ao ar sem capa nenhuma, porque a peça que a envia só passou a
+# existir hoje. Isto arruma esse atraso.
+#
+# SÓ À MÃO, e de propósito: é uma corrida única. Daqui para a frente cada vídeo já
+# nasce com capa (ver o passo "Tirar a capa" no youtube-short-render.yml), por isso
+# um relógio aqui seria trabalho repetido todos os dias para não mudar nada.
+#
+# Não commita nada: as capas vivem no YouTube, não no repositório.
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Ensaio (mostra o plano, não mexe em nenhum vídeo)'
+        type: boolean
+        default: true
+      slug:
+        description: 'Tratar só este vídeo (vazio = todos os publicados)'
+        required: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: youtube-short-daily
+  cancel-in-progress: false
+
+jobs:
+  capas:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Instalar dependências (raiz)
+        run: npm ci
+
+      # O Remotion vive no seu próprio projeto — sem isto não há como tirar fotografias.
+      - name: Instalar dependências (render)
+        working-directory: youtube-render
+        run: npm ci
+
+      - name: Tirar e pôr as capas
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: |
+          ARGS=""
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
+          if [ -n "${{ github.event.inputs.slug }}" ]; then ARGS="$ARGS --slug=${{ github.event.inputs.slug }}"; fi
+          node src/scripts/youtube/capas-em-atraso.js $ARGS
+
+      # Ficam à mão para o dono conferir sem ter de correr nada.
+      - name: Guardar as capas para inspeção
+        if: always() && github.event.inputs.dry_run != 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: capas-em-atraso
+          path: youtube-render/out/capa-*.jpg
+          if-no-files-found: warn
+          retention-days: 30

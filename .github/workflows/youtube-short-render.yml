@@ -254,13 +254,24 @@ jobs:
         working-directory: youtube-render
         run: npx remotion render src/index.ts Short "out/$FILE_SLUG.mp4" --props="{\"slug\":\"$FILE_SLUG\"}" --crf=16 --jpeg-quality=95
 
-      - name: Subir artefato (MP4 + legendas)
+      # ♦ 05/08/2026 — A CAPA (IMPL20 §52).
+      # Tira-se AQUI e não em cada entrega: a produção já tem o Remotion instalado e
+      # tudo em mãos, e a mesma fotografia serve as duas casas (miniatura no YouTube,
+      # capa do Reel no Instagram). Renderiza-se uma vez, usa-se duas.
+      # ⚠️ Corre da RAIZ (não de youtube-render): o programa lê o roteiro em
+      # src/scripts/ e é ele que chama o Remotion na pasta certa.
+      - name: Tirar a capa
+        if: steps.resolve.outputs.skip != 'true'
+        run: node src/scripts/youtube/capa-short.js --slug="$FILE_SLUG"
+
+      - name: Subir artefato (MP4 + legendas + capa)
         if: steps.resolve.outputs.skip != 'true'
         uses: actions/upload-artifact@v4
         with:
           name: short-${{ env.FILE_SLUG }}
           path: |
             youtube-render/out/*.mp4
+            youtube-render/out/capa-${{ env.FILE_SLUG }}.jpg
             youtube-render/public/audio/${{ env.FILE_SLUG }}/*.srt
           if-no-files-found: error
 

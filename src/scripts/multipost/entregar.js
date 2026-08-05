@@ -41,6 +41,8 @@ import { readFileSync, writeFileSync, existsSync, statSync, mkdirSync } from 'no
 import { join, dirname } from 'node:path';
 
 // ─── caminhos ────────────────────────────────────────────────────────────────
+import { caminhoDaCapa } from '../youtube/capa-short.js';
+
 const ROOT = process.cwd();
 const MP4_DIR = join(ROOT, 'youtube-render', 'out');
 const SCRIPT_DIR = join(ROOT, 'src', 'scripts', 'youtube', 'output');
@@ -233,10 +235,10 @@ async function canalDoInstagram(k) {
   return insta[0];
 }
 
-async function enviarFicheiro(k, caminho, nome) {
+async function enviarFicheiro(k, caminho, nome, tipo = 'video/mp4') {
   const bytes = readFileSync(caminho);
   const fd = new FormData();
-  fd.append('file', new Blob([bytes], { type: 'video/mp4' }), nome);
+  fd.append('file', new Blob([bytes], { type: tipo }), nome);
   const res = await fetch(`${API}/upload`, { method: 'POST', headers: { Authorization: k }, body: fd });
   const texto = await res.text();
   if (!res.ok) throw new Error(`O envio do vídeo falhou (${res.status}): ${texto.slice(0, 300)}`);
@@ -245,7 +247,7 @@ async function enviarFicheiro(k, caminho, nome) {
   return media;
 }
 
-async function agendar(k, { canalId, media, legenda, quandoUTC }) {
+async function agendar(k, { canalId, media, capa, legenda, quandoUTC }) {
   const corpo = {
     type: 'schedule',
     date: quandoUTC.toISOString(),
@@ -254,7 +256,11 @@ async function agendar(k, { canalId, media, legenda, quandoUTC }) {
     posts: [{
       integration: { id: canalId },
       value: [{ content: `<p>${legenda.replace(/\n/g, '<br>')}</p>`, image: [{ id: media.id, path: media.path }] }],
-      settings: { __type: 'instagram', post_type: 'post' },
+      // A capa é o que aparece na grelha do perfil. Sem ela, o Instagram escolhe um
+      // fotograma ao calhas — que é o que acontece hoje nos 11 Shorts do YouTube.
+      settings: capa
+        ? { __type: 'instagram', post_type: 'post', cover: { id: capa.id, path: capa.path } }
+        : { __type: 'instagram', post_type: 'post' },
     }],
   };
   const res = await fetch(`${API}/posts`, {
@@ -316,7 +322,11 @@ async function main() {
   log(`\n── legenda ──\n${legenda}\n──────────────\n`);
 
   if (DRY_RUN) {
-    log('✅ Ensaio concluído. Nada foi enviado nem agendado.\n');
+    // A capa aparece no ensaio de propósito: a sua ausência tem de ser visível ANTES
+    // da entrega, e não descoberta depois no perfil.
+    const c = caminhoDaCapa(slug);
+    log(`🖼️  capa: ${existsSync(c) ? `${Math.round(statSync(c).size / 1024)} KB` : 'FALTA — o Instagram escolheria um fotograma ao calhas'}`);
+    log('\n✅ Ensaio concluído. Nada foi enviado nem agendado.\n');
     return 0;
   }
 
@@ -327,7 +337,23 @@ async function main() {
   const media = await enviarFicheiro(k, mp4, `${slug}.mp4`);
   log(`⬆️  vídeo entregue: ${media.path}`);
 
-  const postId = await agendar(k, { canalId: canal.id, media, legenda, quandoUTC: quando });
+  // A capa vem pronta no artefato da produção, a mesma que vai ao YouTube.
+  // ⚠️ Falhar a capa NÃO pode impedir a publicação: um Reel sem capa própria ainda é
+  // um Reel; um vídeo que não sai por causa de uma imagem é um dia perdido.
+  let capa = null;
+  const capaLocal = caminhoDaCapa(slug);
+  if (existsSync(capaLocal)) {
+    try {
+      capa = await enviarFicheiro(k, capaLocal, `capa-${slug}.jpg`, 'image/jpeg');
+      log(`🖼️  capa entregue: ${capa.path}`);
+    } catch (e) {
+      log(`⚠️ a capa falhou (${e.message}) — segue sem ela.`);
+    }
+  } else {
+    log('⚠️ não veio capa no artefato — o Instagram escolherá um fotograma ao calhas.');
+  }
+
+  const postId = await agendar(k, { canalId: canal.id, media, capa, legenda, quandoUTC: quando });
   const confirmado = await confirmarNaAgenda(k, postId, quando);
   if (!confirmado) {
     throw new Error(`O servidor devolveu o post ${postId}, mas ele NÃO aparece na agenda. Conferir no painel antes de correr outra vez.`);
