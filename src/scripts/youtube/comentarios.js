@@ -265,8 +265,16 @@ async function main() {
   log(`🎬 vídeos a vasculhar: ${videos.length} (Shorts e longos)\n`);
 
   const pendentes = [];
+  // ⚠️ CONTA-SE TUDO O QUE SE VÊ, e não só o que se responde.
+  // "Zero pedidos" tem duas causas com o mesmo aspeto: ninguém pediu, ou o robô
+  // está cego (comentários desligados, permissão errada, lista vazia). Sem este
+  // número, um robô que nunca vê nada parece um robô a correr bem.
+  let comentariosVistos = 0;
+  let videosComComentarios = 0;
   for (const v of videos) {
     const comentarios = await comentariosDoVideo(token, v.videoId);
+    comentariosVistos += comentarios.length;
+    if (comentarios.length) videosComComentarios += 1;
     for (const c of comentarios) {
       if (jaRespondidos.has(c.id)) continue;
       if (c.autorCanal && c.autorCanal === canalId) continue; // nunca a si próprio
@@ -275,8 +283,17 @@ async function main() {
     }
   }
 
+  log(`👀 comentários vistos: ${comentariosVistos} (em ${videosComComentarios} de ${videos.length} vídeos)`);
+
   if (pendentes.length === 0) {
-    log('📭 ninguém novo pediu o app. Nada a fazer — e isto é sucesso, não falha.\n');
+    if (comentariosVistos === 0) {
+      // Não é o mesmo que "ninguém pediu": aqui o robô não viu comentário NENHUM
+      // em vídeo nenhum. Ou o canal não tem mesmo comentários, ou há algo a tapar-lhe
+      // os olhos — e as duas coisas merecem palavras diferentes.
+      log('🔇 o canal não tem um único comentário à vista. Se isso o surpreender, o problema não é este robô.\n');
+    } else {
+      log('📭 há comentários, mas nenhum novo a pedir o app. Nada a fazer — e isto é sucesso, não falha.\n');
+    }
     return 0;
   }
 
