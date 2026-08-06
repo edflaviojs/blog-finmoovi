@@ -75,6 +75,10 @@ export const config: SiteConfig = {
       { slug: 'orcamento', label: 'Orçamento' },
       { slug: 'investimentos', label: 'Investimentos' },
       { slug: 'cotacoes', label: 'Cotações' },
+      // 'ferramentas' = posts de comparação de apps ("5 alternativas ao Mobills").
+      // Rotulada 'Comparações' para não colidir com a pill fixa "Ferramentas"
+      // (que aponta para /ferramentas, as calculadoras).
+      { slug: 'ferramentas', label: 'Comparações' },
     ],
     // Ferramentas exibidas no rail da home portal (páginas em /ferramentas/*).
     // Adicionar/remover ferramenta aqui reflete na home automaticamente.

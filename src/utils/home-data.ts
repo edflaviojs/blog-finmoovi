@@ -22,9 +22,9 @@ export interface HomeCard {
 }
 
 const CATEGORY_LABELS: Record<Locale, Record<string, string>> = {
-  pt: { dicas: 'Dicas', orcamento: 'Orçamento', investimentos: 'Investimentos', cotacoes: 'Cotações', ferramentas: 'Ferramentas', glossario: 'Glossário' },
-  en: { dicas: 'Tips', orcamento: 'Budget', investimentos: 'Investments', cotacoes: 'Quotes', ferramentas: 'Tools', glossario: 'Glossary' },
-  es: { dicas: 'Consejos', orcamento: 'Presupuesto', investimentos: 'Inversiones', cotacoes: 'Cotizaciones', ferramentas: 'Herramientas', glossario: 'Glosario' },
+  pt: { dicas: 'Dicas', orcamento: 'Orçamento', investimentos: 'Investimentos', cotacoes: 'Cotações', ferramentas: 'Comparações', glossario: 'Glossário' },
+  en: { dicas: 'Tips', orcamento: 'Budget', investimentos: 'Investments', cotacoes: 'Quotes', ferramentas: 'Comparisons', glossario: 'Glossary' },
+  es: { dicas: 'Consejos', orcamento: 'Presupuesto', investimentos: 'Inversiones', cotacoes: 'Cotizaciones', ferramentas: 'Comparaciones', glossario: 'Glosario' },
 };
 
 export function categoryLabel(locale: Locale, slug: string): string {

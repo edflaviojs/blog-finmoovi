@@ -1,6 +1,7 @@
 ---
 import { config } from '../../../site.config';
 import { getNavCategories } from '@/utils/nav-categories';
+import { categoryLabel, type Locale } from '@/utils/home-data';
 import { canonicalPath } from '@/utils/url';
 import CookieNotice from '../shared/CookieNotice.astro';
 import BackToTop from '../shared/BackToTop.astro';
@@ -11,13 +12,40 @@ const { brand } = config;
 // Categorias dinâmicas (mesma fonte do menu) + seções fixas do blog.
 const navCategories = await getNavCategories();
 
+// O rodapé segue o idioma da página, como o Navigation já faz. Antes os hrefs
+// eram fixos em pt: em /en e /es o rodapé mandava o leitor (e o Google) para as
+// páginas portuguesas, e a versão en/es de "Sobre" — que só existe aqui no
+// rodapé — ficava sem nenhum link a apontar para ela.
+const currentPath = Astro.url.pathname;
+let locale: Locale = 'pt';
+if (currentPath === '/en' || currentPath.startsWith('/en/')) locale = 'en';
+else if (currentPath === '/es' || currentPath.startsWith('/es/')) locale = 'es';
+const prefix = locale === 'pt' ? '' : `/${locale}`;
+
+// Páginas-guia: só existem em pt. Entram no rodapé porque de outro modo ficam
+// numa ilha fechada — só se ligavam umas às outras (checklist e guia-30-dias
+// não tinham link nenhum).
+const guias = locale !== 'pt' ? [] : [
+  { label: 'Como organizar finanças', href: canonicalPath('/como-organizar-financas'), i18n: undefined as string | undefined },
+  { label: 'Orçamento pessoal', href: canonicalPath('/orcamento-pessoal'), i18n: undefined as string | undefined },
+  { label: 'Como sair das dívidas', href: canonicalPath('/como-sair-das-dividas'), i18n: undefined as string | undefined },
+  { label: 'Guia de 30 dias', href: canonicalPath('/guia-30-dias'), i18n: undefined as string | undefined },
+  { label: 'Checklist financeiro', href: canonicalPath('/checklist-financeiro'), i18n: undefined as string | undefined },
+];
+
 const footerLinks = {
   blog: [
-    ...navCategories.map(c => ({ label: c.label, href: c.href, i18n: undefined as string | undefined })),
-    { label: 'Glossário', href: canonicalPath('/glossario'), i18n: 'footer.link.glossario' },
-    { label: 'Ferramentas', href: canonicalPath('/ferramentas'), i18n: 'footer.link.ferramentas' },
+    ...navCategories.map(c => ({
+      label: locale === 'pt' ? c.label : categoryLabel(locale, c.slug),
+      href: canonicalPath(`${prefix}/categorias/${c.slug}`),
+      i18n: undefined as string | undefined,
+    })),
+    { label: 'Glossário', href: canonicalPath(`${prefix}/glossario`), i18n: 'footer.link.glossario' },
+    { label: 'Ferramentas', href: canonicalPath(`${prefix}/ferramentas`), i18n: 'footer.link.ferramentas' },
+    // Estudos só existe em pt (mesmo contrato do Navigation).
     { label: 'Estudos', href: canonicalPath('/estudos'), i18n: 'footer.link.estudos' },
-    { label: 'Sobre', href: canonicalPath('/sobre'), i18n: 'nav.sobre' },
+    { label: 'Sobre', href: canonicalPath(`${prefix}/sobre`), i18n: 'nav.sobre' },
+    ...guias,
   ],
   app: [
     // canonicalPath preserva a âncora: '/app#precos' vira '/app/#precos'.
