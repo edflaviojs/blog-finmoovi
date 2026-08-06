@@ -28,21 +28,51 @@ CRITICAL ADAPTATION RULES:
 
 2. FINANCIAL PRODUCTS: Replace Brazil-specific products with international equivalents:
    - "Tesouro Direto" → ${targetLang === 'English' ? '"government bonds"' : '"bonos del gobierno"'}
+   - "LTN" / "NTN" → ${targetLang === 'English' ? '"short-term / inflation-linked government bonds"' : '"bonos del gobierno a corto plazo / indexados"'}
    - "CDB" → ${targetLang === 'English' ? '"certificates of deposit (CDs)"' : '"certificados de depósito"'}
+   - "LCI" / "LCA" → ${targetLang === 'English' ? '"tax-exempt bank notes"' : '"bonos bancarios exentos de impuestos"'}
    - "CDI" → ${targetLang === 'English' ? '"interbank rate"' : '"tasa interbancaria"'}
    - "FGTS" → ${targetLang === 'English' ? '"severance guarantee fund"' : '"fondo de garantía"'}
+   - "INSS" → ${targetLang === 'English' ? '"the public pension system"' : '"el sistema público de pensiones"'}
+   - "PGBL" / "VGBL" → ${targetLang === 'English' ? '"tax-deferred retirement plans"' : '"planes de pensiones con ventajas fiscales"'}
    - "Selic" → ${targetLang === 'English' ? '"central bank base rate"' : '"tasa base del banco central"'}
    - "IPCA" → ${targetLang === 'English' ? '"consumer price index"' : '"índice de precios al consumidor"'}
+   - "Pix" → ${targetLang === 'English' ? '"instant bank transfers"' : '"transferencias bancarias instantáneas"'}
+   - "IPVA" → ${targetLang === 'English' ? '"annual vehicle tax"' : '"impuesto anual de circulación"'}
+   - "IPTU" → ${targetLang === 'English' ? '"property tax"' : '"impuesto sobre bienes inmuebles"'}
+   - "CPF" / "CNPJ" → ${targetLang === 'English' ? '"tax ID number"' : '"número de identificación fiscal"'}
 
 3. INSTITUTIONS: Replace with generic equivalents:
    - "Receita Federal" → ${targetLang === 'English' ? '"tax authority"' : '"autoridad fiscal"'}
    - "Serasa/SPC" → ${targetLang === 'English' ? '"credit bureaus"' : '"burós de crédito"'}
    - "IBGE" → ${targetLang === 'English' ? '"national statistics office"' : '"oficina de estadísticas"'}
+   - "Banco Central do Brasil" / "BCB" → ${targetLang === 'English' ? '"the central bank"' : '"el banco central"'}
+   - "CVM" / "ANBIMA" / "SUSEP" → ${targetLang === 'English' ? '"the financial regulator"' : '"el regulador financiero"'}
+   - "B3" / "Bovespa" → ${targetLang === 'English' ? '"the stock exchange"' : '"la bolsa de valores"'}
+
+3b. COMPANY NAMES: NEVER name a Brazilian company as an example. Use a generic
+   description instead, so the reader is not sent looking for a bank they cannot open.
+   - "Nubank" / "PicPay" / "Mercado Pago" → ${targetLang === 'English' ? '"a digital bank"' : '"un banco digital"'}
+   - "Itaú" / "Bradesco" / "Banco do Brasil" / "Caixa Econômica" → ${targetLang === 'English' ? '"a major bank"' : '"un banco grande"'}
+   - "XP Investimentos" → ${targetLang === 'English' ? '"a brokerage"' : '"una correduría"'}
+   - "Magazine Luiza" → ${targetLang === 'English' ? '"a large retailer"' : '"una gran cadena minorista"'}
 
 4. GEOGRAPHIC: Remove or generalize Brazil-specific references:
-   - "brasileiros" → ${targetLang === 'English' ? '"people"' : '"personas"'}
+   - "brasileiros" / "brasileiro" / "brasileiras" → ${targetLang === 'English' ? '"people"' : '"personas"'}
    - "no Brasil" → remove or ${targetLang === 'English' ? '"in many countries"' : '"en muchos países"'}
+   - "no mercado brasileiro" → ${targetLang === 'English' ? '"in the market"' : '"en el mercado"'}
+   - "economia brasileira" → ${targetLang === 'English' ? '"the economy"' : '"la economía"'}
    - Do NOT mention specific Brazilian regions (Nordeste, Sudeste, etc.)
+
+4b. NO PORTUGUESE LEFTOVERS: every word of the final text must be ${targetLang},
+   including the VISIBLE TEXT of links. These are the ones that keep slipping through:
+   - "ações" / "ação" → ${targetLang === 'English' ? '"stocks" / "share"' : '"acciones" / "acción"'}
+   - "valor" → ${targetLang === 'English' ? '"value"' : '"valor" (already Spanish, keep)'}
+   - "dívida" / "dívidas" → ${targetLang === 'English' ? '"debt" / "debts"' : '"deuda" / "deudas"'}
+   - "poupança" → ${targetLang === 'English' ? '"savings"' : '"ahorro"'}
+   - "investimentos" → ${targetLang === 'English' ? '"investments"' : '"inversiones"'}
+   - "reais" (the currency) → follow rule 1 and convert the amount
+   Translating the visible text of a link does NOT authorise touching its URL — see 6b.
 
 5. HOLIDAYS: Adapt to international calendar:
    - "Dia dos Namorados" (Jun 12) → ${targetLang === 'English' ? '"Valentine\'s Day" (Feb 14)' : '"Día de San Valentín" (14 feb)'}
