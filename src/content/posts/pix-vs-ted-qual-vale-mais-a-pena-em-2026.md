@@ -95,7 +95,7 @@ A decisão entre PIX e TED não é “um ou outro”, mas sim “qual atende mel
 
 Independentemente da escolha, manter o controle das movimentações é essencial. O **FinMoovi** é um app de [finanças pessoais](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) que permite registrar tanto PIX quanto TED, categorizar despesas e acompanhar o saldo em tempo real, ajudando você a tomar decisões mais conscientes.
 
-> *Dica prática:* Use o FinMoovi para criar alertas de limite diário no PIX e para registrar o número de protocolo das suas TEDs. Assim, você tem tudo documentado em um só lugar.
+> *Dica prática:* Use o FinMoovi para criar [alertas](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto-202) de limite diário no PIX e para registrar o número de protocolo das suas TEDs. Assim, você tem tudo documentado em um só lugar.
 
 ## Perguntas frequentes
 

@@ -69,7 +69,7 @@ Clear goals are the engine of financial discipline. For example, decide that “
 
 ## Start Today
 
-Just open FinMoovi, choose smart capture, and snap a photo of the first receipt you find. In under five minutes you’ll have your first automatic entry and can already see a colored block of expenses. That tiny step turns the feeling of chaos into a concrete starting point.
+Just open FinMoovi, choose [smart capture](/en/posts/en-how-to-never-miss-a-bill-payment-deadline-simple-5-minute-fi), and snap a photo of the first receipt you find. In under five minutes you’ll have your first automatic entry and can already see a colored block of expenses. That tiny step turns the feeling of chaos into a concrete starting point.
 
 ![Comece hoje](/images/posts/como-transformar-a-bagunca-das-contas-em-controle-visual-em--6.webp)
 

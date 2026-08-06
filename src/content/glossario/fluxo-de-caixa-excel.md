@@ -48,21 +48,21 @@ Esses passos dão a base, mas a prática revela alguns obstáculos que podem atr
 - **Esquecer lançamentos** – Quando a anotação depende de memória, é fácil deixar de registrar um gasto pequeno, como um lanche rápido.  
 - **Duplicar valores** – Copiar e colar sem atenção pode gerar duas linhas iguais, inflando despesas.  
 - **Misturar moedas** – Se você recebe em dólares e gasta em euros, usar apenas uma coluna de valores gera confusão.  
-- **Não atualizar a planilha** – Deixar a planilha parada por semanas faz com que os números percam a realidade.
+- **Não atualizar a [planilha](/posts/migrando-da-planilha-para-um-app-financeiro)** – Deixar a planilha parada por semanas faz com que os números percam a realidade.
 
 **Dica prática:** reserve cinco minutos ao final de cada dia para registrar tudo que entrou e saiu; assim a memória ainda está fresca e a planilha fica sempre atualizada.
 
 ## Como o FinMoovi simplifica tudo  
 
-Imagine um amigo que, ao receber uma foto da nota fiscal ou ao ouvir sua voz dizendo “paguei a conta de luz”, já preenche a linha correta na planilha, escolhe a categoria certa e converte o valor para a moeda que você usa. É exatamente isso que o FinMoovi faz:
+Imagine um amigo que, ao receber uma foto da nota fiscal ou ao ouvir sua voz dizendo “paguei a conta de luz”, já preenche a linha correta na planilha, escolhe a categoria certa e converte o valor para a [moeda](/glossario/moeda) que você usa. É exatamente isso que o FinMoovi faz:
 
-- **Captura inteligente** – Tire uma foto da nota ou fale “gastei 30 em supermercado”; o app reconhece o valor, a data e a categoria automaticamente.  
+- **[Captura inteligente](/posts/como-garantir-financiamento-para-seus-projetos-sem-dor-de-ca)** – Tire uma foto da nota ou fale “gastei 30 em supermercado”; o app reconhece o valor, a data e a categoria automaticamente.  
 - **Multimoeda** – Converte receitas e despesas em BRL, USD ou EUR sem precisar de cálculos manuais.  
 - **Fluxo de caixa e relatórios** – Atualiza em tempo real o saldo diário e gera gráficos de linha, barra ou pizza com um clique.  
-- **Planejamento mensal e metas** – Permite definir um limite para cada categoria (ex.: “não gastar mais que o preço de um aluguel em lazer”) e avisa quando estiver próximo.  
-- **Cartões de crédito e fatura** – Importa automaticamente as despesas feitas no cartão e mostra a fatura completa antes do vencimento.  
+- **[Planejamento mensal](/posts/como-organizar-seu-dinheiro-com-um-app-facil-de-usar) e metas** – Permite definir um limite para cada categoria (ex.: “não gastar mais que o preço de um aluguel em lazer”) e avisa quando estiver próximo.  
+- **Cartões de [crédito](/glossario/credito) e fatura** – Importa automaticamente as despesas feitas no cartão e mostra a fatura completa antes do vencimento.  
 - **Modo compras** – Cria listas de supermercado; ao marcar itens, o total vai aparecendo em tempo real, ajudando a não estourar o orçamento.  
-- **Lembretes e alertas de saldo** – Notifica quando o saldo cair abaixo de um valor pré‑definido, evitando surpresas.  
+- **Lembretes e [alertas](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto-202) de saldo** – Notifica quando o saldo cair abaixo de um valor pré‑definido, evitando surpresas.  
 - **Offline / PWA / sincronização** – Funciona mesmo sem internet e salva tudo na nuvem, garantindo acesso em qualquer dispositivo.
 
 Com essas funcionalidades, o fluxo de caixa deixa de ser uma planilha estática e passa a ser um painel dinâmico que acompanha sua vida financeira em tempo real.

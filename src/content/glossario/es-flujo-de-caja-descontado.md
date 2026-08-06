@@ -27,7 +27,7 @@ Te levantas, revisas la cuenta y sientes que el dinero desaparece antes de que t
 
 
 - No sabes cuánto dinero tendrás disponible dentro de tres, seis o doce meses.  
-- Te cuesta decidir si vale la pena comprar a crédito o esperar a ahorrar.  
+- Te cuesta decidir si vale la pena comprar a [crédito](/es/glossario/es-credito) o esperar a ahorrar.  
 - Cada gasto inesperado parece una sorpresa que tu presupuesto no puede absorber.  
 
 ## ¿Qué es el flujo de caja descontado
@@ -38,7 +38,7 @@ Los componentes básicos del FCD son:
 
 - **Ingresos o egresos futuros:** la cantidad que esperas recibir o pagar en cada periodo (mes, trimestre, año).  
 - **Tasa de descuento:** el porcentaje que representa el rendimiento que podrías obtener en una inversión segura; sirve para “rebajar” el valor futuro.  
-- **Valor presente:** el resultado de aplicar la tasa de descuento a cada flujo futuro y sumarlos; es la cifra que realmente importa para tu decisión.  
+- **[Valor presente](/es/glossario/es-valor-presente):** el resultado de aplicar la tasa de descuento a cada flujo futuro y sumarlos; es la cifra que realmente importa para tu decisión.  
 
 ## Cómo funciona en la práctica (ejemplo cotidiano)
 
@@ -53,10 +53,10 @@ Pasos para aplicar el FCD en este caso:
 - **Identifica los flujos:**  
   - Opción al contado: un gasto único de “dos alquileres”.  
   - Opción a plazos: 6 pagos mensuales de “un tercio de un alquiler”.  
-- **Define la tasa de descuento:** supongamos que el rendimiento de un fondo de ahorro es equivalente al 5 % anual, lo que equivale a aproximadamente 0,4 % mensual.  
+- **Define la tasa de descuento:** supongamos que el rendimiento de un fondo de [ahorro](/es/glossario/es-ahorro) es equivalente al 5 % anual, lo que equivale a aproximadamente 0,4 % mensual.  
 - **Descuenta cada pago:** multiplica cada pago mensual por (1 + 0,004)⁻ⁿ, donde n es el número de meses que pasan hasta ese pago.  
 - **Suma los valores presentes:** la suma de los pagos descontados te dirá cuánto “vale” realmente la opción a plazos en términos de dinero de hoy.  
-- **Compara:** si el valor presente de la financiación supera el gasto al contado, la compra al contado es la opción más económica; si es menor, la financiación sin intereses puede ser la mejor alternativa.  
+- **Compara:** si el valor presente de la [financiación](/es/posts/es-como-conseguir-financiacion-para-tus-proyectos-sin-complicac) supera el gasto al contado, la compra al contado es la opción más económica; si es menor, la financiación sin intereses puede ser la mejor alternativa.  
 
 Al hacer este cálculo rápido, descubres que, aunque no haya intereses, la financiación cuesta un poco más porque cada pago futuro vale menos que el dinero que tendrías hoy. Esa pequeña diferencia puede ser la que te haga decidir entre comprar ahora o esperar a ahorrar un poco más.
 
@@ -67,10 +67,10 @@ Aquí es donde entra FinMoovi, la app que actúa como ese amigo que siempre tien
 Funciones clave que hacen que el FCD sea pan comido dentro de la app:
 
 - **Captura inteligente:** foto de recibo o comando de voz → categorización automática.  
-- **Multimoneda:** registra en la moneda que prefieras y la app convierte al tipo de cambio del día.  
+- **Multimoneda:** registra en la moneda que prefieras y la app convierte al tipo de [cambio](/es/glossario/es-cambio) del día.  
 - **Flujo de caja e informes:** visualiza ingresos y egresos proyectados, con la opción de aplicar una tasa de descuento personalizada.  
 - **Planificación mensual y metas:** define cuánto quieres ahorrar para un objetivo (como esa bicicleta) y la app te muestra el camino.  
 - **Tarjetas de crédito y facturas:** sincroniza tus tarjetas y recibe el resumen de gastos en tiempo real.  
 - **Modo compras:** crea listas, ve el total en tiempo real y evita sorpresas al pagar.  
-- **Recordatorios y alertas de saldo:** notificaciones cuando el saldo se acerque al límite o cuando falte tiempo para un pago.  
+- **Recordatorios y [alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no-que) de saldo:** notificaciones cuando el saldo se acerque al límite o cuando falte tiempo para un pago.  
 - **Offline / PWA / sincronización:** funciona sin conexión y

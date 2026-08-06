@@ -20,7 +20,7 @@ seo:
 
 ## The everyday pain of variable expenses
 
-You’ve probably felt it: at the end of the month you stare at your bank statement and wonder where all that money vanished. One night you bought a take‑away dinner, the next day a coffee on the way to work, then a surprise car‑wash, a new pair of shoes, and maybe a last‑minute flight ticket. Those items are not fixed bills like rent or insurance; they’re the “variable” part of your budget that pops up whenever you need or want something. The problem is they’re hard to track, and before you know it you’re over‑spending, missing savings goals, or scrambling to pay a credit‑card bill.
+You’ve probably felt it: at the end of the month you stare at your bank statement and wonder where all that money vanished. One night you bought a take‑away dinner, the next day a coffee on the way to work, then a surprise car‑wash, a new pair of shoes, and maybe a last‑minute flight ticket. Those items are not fixed bills like rent or insurance; they’re the “variable” part of your budget that pops up whenever you need or want something. The problem is they’re hard to track, and before you know it you’re over‑spending, missing [savings](/en/glossario/en-savings) goals, or scrambling to pay a [credit](/en/glossario/en-credit)‑card bill.
 
 ![The everyday pain of variable expenses](/images/glossario/gasto-variavel-inline-1.webp)
 
@@ -41,13 +41,13 @@ Because they’re irregular, they’re easy to underestimate when you draft a mo
 
 ## How FinMoovi’s smart capture helps you tame them
 
-Imagine you could record every variable expense the moment it happens, without opening a spreadsheet or typing numbers. FinMoovi does exactly that. Its **smart capture** feature lets you snap a photo of a receipt or simply speak the amount, and the app instantly tags the purchase as a variable expense. No manual entry, no hunting for the right category—just a quick picture or a voice command and the data is stored.
+Imagine you could record every variable expense the moment it happens, without opening a spreadsheet or typing numbers. FinMoovi does exactly that. Its **[smart capture](/en/posts/en-how-to-never-miss-a-bill-payment-deadline-simple-5-minute-fi)** feature lets you snap a photo of a receipt or simply speak the amount, and the app instantly tags the purchase as a variable expense. No manual entry, no hunting for the right category—just a quick picture or a voice command and the data is stored.
 
 ![How FinMoovi’s smart capture helps you tame them](/images/glossario/gasto-variavel-inline-3.webp)
 
 
 
-Beyond that, FinMoovi works in any currency, so whether you’re paying for a coffee in euros, a souvenir in dollars, or a local market stall in yen, the app normalizes the values for you. All the captured data feeds into a cash‑flow dashboard that shows you how much of your income is tied up in variable spending, and it generates weekly or monthly reports that highlight trends (e.g., “you spent 20 % more on dining this month than last”). With those insights, you can set realistic monthly goals, adjust your shopping list, and keep your spending aligned with your priorities.
+Beyond that, FinMoovi works in any currency, so whether you’re paying for a coffee in euros, a souvenir in dollars, or a local market stall in yen, the app normalizes the values for you. All the captured data feeds into a cash‑flow dashboard that shows you how much of your income is tied up in variable spending, and it generates weekly or monthly [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end-o) that highlight trends (e.g., “you spent 20 % more on dining this month than last”). With those insights, you can set realistic monthly goals, adjust your shopping list, and keep your spending aligned with your priorities.
 
 ## Practical tips to keep variable spending in check
 
@@ -61,9 +61,9 @@ Beyond that, FinMoovi works in any currency, so whether you’re paying for a co
 
 FinMoovi isn’t just about capturing receipts; it gives you a complete financial overview:
 
-- **Multi‑currency support** lets you travel without worrying about conversion errors; the app keeps everything in your base currency for easy comparison.
+- **[Multi‑currency](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using-diff) support** lets you travel without worrying about conversion errors; the app keeps everything in your base currency for easy comparison.
 - **Cash‑flow and reports** visualize where your money goes, separating fixed from variable costs, so you can see the impact of each decision.
-- **Monthly planning & goals** let you allocate a portion of your income to variable expenses, turning “spending freely” into a controlled, intentional act.
+- **Monthly [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) & goals** let you allocate a portion of your income to variable expenses, turning “spending freely” into a controlled, intentional act.
 - **Credit‑card integration** automatically pulls statements, matches them with your captured receipts, and flags any mismatches for review.
 - **Reminders & balance alerts** notify you when you’re approaching a budget limit or when a bill is due, preventing late fees.
 - **Offline mode & PWA sync** ensure you can capture a receipt even without internet; the data syncs automatically once you’re back online.

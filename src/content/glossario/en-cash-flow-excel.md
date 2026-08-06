@@ -20,7 +20,7 @@ seo:
 
 ## The everyday cash‑flow headache
 
-Imagine you just paid the rent, bought groceries, and saw a surprise charge on your credit‑card statement. You sit down with a notebook, try to remember every transaction from the last month, and end up with a scribbled list that looks more like a doodle than a clear picture of where your money went. You know you need a “cash‑flow” view – what comes in, what goes out, and whether you’ll have enough for that upcoming vacation or the next emergency – but the spreadsheet you opened last week is still empty, and you’re not sure how to start.
+Imagine you just paid the rent, bought groceries, and saw a surprise charge on your [credit](/en/glossario/en-credit)‑card statement. You sit down with a notebook, try to remember every transaction from the last month, and end up with a scribbled list that looks more like a doodle than a clear picture of where your money went. You know you need a “cash‑flow” view – what comes in, what goes out, and whether you’ll have enough for that upcoming vacation or the next emergency – but the spreadsheet you opened last week is still empty, and you’re not sure how to start.
 
 ![The everyday cash‑flow headache](/images/glossario/fluxo-de-caixa-excel-inline-1.webp)
 
@@ -49,7 +49,7 @@ Even though Excel is powerful, most people hit the same roadblocks:
 - **Manual entry fatigue** – typing every receipt or voice‑note feels like a chore, so you skip entries and the data becomes unreliable.
 - **Category confusion** – you might write “food” for a coffee and “groceries” for a restaurant, making it hard to see true spending patterns.
 - **Currency juggling** – if you travel or shop online, you end up with dollars, euros, and local money mixed together, and converting them manually is a nightmare.
-- **No real‑time alerts** – you only notice you’re overspending after the month ends, because the spreadsheet doesn’t push notifications.
+- **No real‑time alerts** – you only notice you’re overspending after the month ends, because the spreadsheet doesn’t [push notifications](/en/posts/en-how-to-never-miss-a-bill-payment-deadline-simple-5-minute-fi).
 - **Limited mobility** – you need a laptop or a full‑size screen to edit the file, which isn’t handy when you’re at the supermarket or on a train.
 
 These gaps turn a potentially insightful tool into a dusty file that sits on your desktop.
@@ -59,10 +59,10 @@ These gaps turn a potentially insightful tool into a dusty file that sits on you
 FinMoovi is the friend you wish you had when you opened that Excel file. It keeps the familiar structure of a cash‑flow sheet but adds a layer of automation that makes tracking feel effortless. Here’s what the app does, broken down into bite‑size features:
 
 - **Smart capture** – Snap a photo of a receipt or speak the amount, and the app instantly extracts the value, date, and merchant name.
-- **Automatic categorization** – Using AI, the app assigns each entry to the right bucket (e.g., “coffee” goes to “Food & Drink”) so you don’t have to think about tags.
-- **Multi‑currency support** – Whether you pay in dollars, euros, or any other currency, FinMoovi converts everything to your base currency at the current rate, keeping the cash‑flow table consistent.
+- **[Automatic categorization](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end-o)** – Using AI, the app assigns each entry to the right bucket (e.g., “coffee” goes to “Food & Drink”) so you don’t have to think about tags.
+- **[Multi‑currency](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using-diff) support** – Whether you pay in dollars, euros, or any other currency, FinMoovi converts everything to your base currency at the current rate, keeping the cash‑flow table consistent.
 - **Cash‑flow reports** – Visual dashboards show monthly inflows, outflows, and net balance, just like the charts you’d build in Excel, but updated every minute.
-- **Monthly planning & goals** – Set a target like “save the price of a daily coffee for 6 months” and watch the app track progress automatically.
+- **Monthly [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) & goals** – Set a target like “save the price of a daily coffee for 6 months” and watch the app track progress automatically.
 - **Credit‑card & bill integration** – Link your cards and recurring bills; the app pulls the data and marks them as paid or pending.
 - **Shopping mode** – Create a list before you head out, and the app shows a real‑time total as you add items, preventing surprise overspend.
 - **Reminders & balance alerts** – Get push notifications when you’re close to a spending limit or when a bill is due.
@@ -76,7 +76,7 @@ All these features sit on top of the same columns you’d use in Excel, so you s
 
 **Practical tip:** *Review the “Monthly Overview” dashboard every Sunday.* The visual report highlights any category that’s creeping up, letting you adjust your spending before the week ends.
 
-**Practical tip:** *Set a “buffer” goal equal to about one month’s rent.* When you reach that amount in your “Savings” line, you’ll have a safety net that covers unexpected expenses without breaking the cash‑flow balance.
+**Practical tip:** *Set a “buffer” goal equal to about one month’s rent.* When you reach that amount in your “[Savings](/en/glossario/en-savings)” line, you’ll have a safety net that covers unexpected expenses without breaking the cash‑flow balance.
 
 Additional habits that reinforce the system:
 

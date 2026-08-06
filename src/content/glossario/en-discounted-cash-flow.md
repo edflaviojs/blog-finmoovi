@@ -20,7 +20,7 @@ seo:
 
 ## Real life pain that many feel
 
-Imagine you receive a credit‑card statement that looks like a novel, you’re trying to decide whether to buy a new laptop that costs about the price of a month’s rent, and you’re not sure if the investment will really pay off in the next few years. You stare at the numbers, wonder if you’ll have enough cash left for groceries, and end up postponing the purchase because the future feels fuzzy.
+Imagine you receive a [credit](/en/glossario/en-credit)‑card statement that looks like a novel, you’re trying to decide whether to buy a new laptop that [costs](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide) about the price of a month’s rent, and you’re not sure if the investment will really pay off in the next few years. You stare at the numbers, wonder if you’ll have enough cash left for groceries, and end up postponing the purchase because the future feels fuzzy.
 
 ![Real life pain that many feel](/images/glossario/fluxo-de-caixa-descontado-inline-1.webp)
 

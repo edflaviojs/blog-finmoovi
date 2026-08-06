@@ -20,11 +20,11 @@ seo:
 
 ## ¿Por qué el flujo de caja te quita el sueño?
   
-Muchos de nosotros sentimos que el dinero entra y sale sin control: el alquiler, la cuenta de luz, el café diario y, de repente, el saldo del banco parece un rompecabezas. Esa incertidumbre se vuelve más aguda cuando llega la factura de la tarjeta de crédito o cuando queremos ahorrar para un viaje pero no sabemos cuánto podemos destinar cada mes. Sin una visión clara de lo que realmente ingresa y sale, cualquier gasto inesperado se siente como una sorpresa desagradable.
+Muchos de nosotros sentimos que el dinero entra y sale sin control: el alquiler, la cuenta de luz, el café diario y, de repente, el saldo del banco parece un rompecabezas. Esa incertidumbre se vuelve más aguda cuando llega la factura de la tarjeta de [crédito](/es/glossario/es-credito) o cuando queremos ahorrar para un viaje pero no sabemos cuánto podemos destinar cada mes. Sin una visión clara de lo que realmente ingresa y sale, cualquier gasto inesperado se siente como una sorpresa desagradable.
 
 ## Qué es un flujo de caja en Excel
   
-El flujo de caja es simplemente un registro ordenado de todas tus entradas y salidas de dinero durante un periodo determinado. En Excel, lo conviertes en una tabla donde cada fila representa una transacción y cada columna muestra la fecha, la categoría (alimentación, transporte, ocio), el monto y el saldo acumulado. La magia de Excel está en sus fórmulas: con una suma acumulativa puedes ver en tiempo real cuánto dinero tienes disponible después de cada movimiento. No necesitas ser un experto; basta con entender que la hoja de cálculo es tu cuaderno digital de finanzas.
+El flujo de caja es simplemente un registro ordenado de todas tus entradas y salidas de dinero durante un periodo determinado. En Excel, lo conviertes en una tabla donde cada fila representa una transacción y cada columna muestra la fecha, la categoría (alimentación, transporte, ocio), el monto y el saldo acumulado. La magia de Excel está en sus fórmulas: con una suma acumulativa puedes ver en tiempo real cuánto dinero tienes disponible después de cada movimiento. No necesitas ser un experto; basta con entender que la [hoja de cálculo](/es/posts/es-migrando-de-la-hoja-de-calculo-a-una-app-financiera) es tu cuaderno digital de finanzas.
 
 ![¿Por qué el flujo de caja te quita el sueño?](/images/glossario/fluxo-de-caixa-excel-inline-1.webp)
 

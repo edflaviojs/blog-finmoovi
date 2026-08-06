@@ -37,8 +37,8 @@ En 2026 el escenario cambió en tres puntos críticos:
 
 ![Como funciona a previdência privada em 2026?](/images/posts/previdencia-privada-2026-vale-a-pena-guia-pratico-2.webp)
 
-1. **Comisiones de administración más competitivas** – La competencia entre bancos y aseguradoras redujo la media de las comisiones del 2,5 % anual a alrededor del 1,8 % en los planes de renta fija y 2,2 % en los de [renta variable](/es/glossario/es-renta-variable).  
-2. **Nuevas opciones de fondos indexados (ETFs) dentro de los planes** – Muchos gestores empezaron a ofrecer ETFs de acciones internacionales como opción de inversión, ampliando la diversificación.  
+1. **Comisiones de administración más competitivas** – La competencia entre bancos y aseguradoras redujo la media de las comisiones del 2,5 % anual a alrededor del 1,8 % en los planes de [renta fija](/es/glossario/es-renta-fija) y 2,2 % en los de [renta variable](/es/glossario/es-renta-variable).  
+2. **Nuevas opciones de fondos indexados (ETFs) dentro de los planes** – Muchos gestores empezaron a ofrecer ETFs de acciones internacionales como opción de inversión, ampliando la [diversificación](/es/glossario/es-diversificacion).  
 3. **Regulación más transparente** – La autoridad reguladora ahora exige que las instituciones publiquen el historial de rentabilidad trimestral y el “costo total al inversionista”, facilitando la comparación entre planes.  
 
 Estos cambios no convierten la previsión en un *milagro* de retorno, pero le dan al inversor más herramientas para evaluar si el plan vale la pena frente a otras alternativas de inversión.  
@@ -108,3 +108,4 @@ Al seguir estos pasos, tendrás claridad para decidir si la previsión privada s
 ---  
 
 **Para seguir tus inversiones en un solo lugar, [prueba FinMoovi gratis por 7 días](https://finmoovi.com) — multi‑moneda, informes inteligentes y 100 % offline.**
+<!-- SCHEMA_AUTO:{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué es la previsión privada?","acceptedAnswer":{"@type":"Answer","text":"La previsión privada, también llamada plan de previsión complementaria, funciona como un ahorro a largo plazo que vas alimentando a lo largo de tu vida profesional. El dinero se invierte en fondos administrados por instituciones financieras y, al jubilarte, recibes un beneficio mensual (renta) o…"}},{"@type":"Question","name":"¿Cómo funciona la previsión privada en 2026?","acceptedAnswer":{"@type":"Answer","text":"En 2026 el escenario cambió en tres puntos críticos:"}},{"@type":"Question","name":"Simulación práctica – ¿cuánto rinde en la práctica?","acceptedAnswer":{"@type":"Answer","text":"Supongamos que tienes tres perfiles de aporte mensual: € 90, € 180 y € 900. Usaremos un fondo de renta fija con comisión de administración del 1,8 % anual y rendimiento medio del 6,5 % anual (aproximado de la tasa interbancaria + 0,5 %)."}}]} -->

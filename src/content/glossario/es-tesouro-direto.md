@@ -21,7 +21,7 @@ seo:
 ## Qué es  
 Los **bonos del gobierno** son un programa del gobierno que permite a los ciudadanos invertir en títulos del tesoro nacional, es decir, préstamos que el gobierno solicita a los inversionistas para financiar sus proyectos y gastos. Esto significa que, al invertir en estos bonos, estás prestando dinero al gobierno, que te pagará con intereses. Los bonos del gobierno son una forma segura de invertir, ya que el gobierno es el emisor de los títulos y, por lo tanto, es responsable de pagar los intereses y el capital invertido.  
 
-Los bonos del gobierno ofrecen diferentes tipos de títulos, como el **bono indexado a la tasa base del banco central**, el **bono indexado al índice de precios al consumidor** y el **bono de tipo fijo**, cada uno con sus propias características y beneficios. Por ejemplo, el bono indexado a la tasa base del banco central está ligado a la tasa de interés básica del país, mientras que el bono indexado al índice de precios al consumidor está ligado a la inflación.  
+Los bonos del gobierno ofrecen diferentes tipos de títulos, como el **bono indexado a la tasa base del banco central**, el **bono indexado al índice de precios al consumidor** y el **bono de tipo fijo**, cada uno con sus propias características y [beneficios](/es/posts/es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026). Por ejemplo, el bono indexado a la tasa base del banco central está ligado a la tasa de [interés](/es/glossario/es-interes) básica del país, mientras que el bono indexado al índice de precios al consumidor está ligado a la [inflación](/es/glossario/es-inflacion).  
 
 ![Qué es](/images/glossario/tesouro-direto-inline-1.webp)
 
@@ -34,10 +34,10 @@ Por ejemplo, si inviertes **€180** en un bono indexado a la tasa base del banc
  + Rendimientos competitivos  
  + Seguridad, ya que el gobierno es el emisor de los títulos  
  + [Liquidez](/es/glossario/es-liquidez), ya que los títulos pueden ser vendidos antes del vencimiento  
- + Diversificación, ya que el programa ofrece diferentes tipos de títulos  
+ + [Diversificación](/es/glossario/es-diversificacion), ya que el programa ofrece diferentes tipos de títulos  
 
 ## Ventajas  
-Los bonos del gobierno ofrecen varias ventajas para los inversionistas. **Consejo práctico:** siempre es importante diversificar tus inversiones para reducir el riesgo. Son una forma segura de invertir, ya que el gobierno es el emisor de los títulos y, por lo tanto, es responsable de pagar los intereses y el capital invertido. Además, ofrecen rendimientos competitivos, especialmente en comparación con otros instrumentos de inversión de baja rentabilidad, como las cuentas de ahorro.  
+Los bonos del gobierno ofrecen varias ventajas para los inversionistas. **Consejo práctico:** siempre es importante diversificar tus inversiones para reducir el riesgo. Son una forma segura de invertir, ya que el gobierno es el emisor de los títulos y, por lo tanto, es responsable de pagar los intereses y el capital invertido. Además, ofrecen rendimientos competitivos, especialmente en comparación con otros instrumentos de inversión de baja rentabilidad, como las cuentas de [ahorro](/es/glossario/es-ahorro).  
 
 Otra ventaja es la liquidez, ya que los títulos pueden ser vendidos antes del vencimiento. Esto significa que, si necesitas acceso a tu dinero antes del vencimiento del título, puedes venderlo en el mercado secundario. **Consejo práctico:** siempre es importante tener una reserva de emergencia para cubrir gastos inesperados, y los bonos del gobierno pueden ser una forma de invertir parte de esa reserva.  
 

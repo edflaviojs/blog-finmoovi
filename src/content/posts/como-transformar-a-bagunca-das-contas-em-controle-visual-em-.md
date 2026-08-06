@@ -67,7 +67,7 @@ Em vez de analisar tudo no fim do mês, experimente fazer um **check‑in semana
 
 ## Defina metas mensais de gasto
 
-Objetivos claros são o motor da disciplina financeira. Defina, por exemplo, que a despesa com “lanches fora” não deve ultrapassar o equivalente a duas vezes o preço de um café por dia. No FinMoovi, você pode criar uma meta para cada categoria e receber alertas quando estiver próximo do limite. Assim, a mentalidade de “gastar até acabar” dá lugar a “gastar dentro do planejado”.
+Objetivos claros são o motor da disciplina financeira. Defina, por exemplo, que a despesa com “lanches fora” não deve ultrapassar o equivalente a duas vezes o preço de um café por dia. No FinMoovi, você pode criar uma meta para cada categoria e receber [alertas](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto-202) quando estiver próximo do limite. Assim, a mentalidade de “gastar até acabar” dá lugar a “gastar dentro do planejado”.
 
 ---
 

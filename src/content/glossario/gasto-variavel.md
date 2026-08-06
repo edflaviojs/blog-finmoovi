@@ -27,7 +27,7 @@ Os gastos variáveis são aquelas despesas que mudam de mês para mês, ao contr
 
 ## Por que eles atrapalham o orçamento  
 
-Quando você monta um plano financeiro, costuma reservar uma quantia para despesas fixas e outra para “cobertura”. Se os gastos variáveis escapam do radar, a cobertura pode acabar rapidamente, gerando apertos no fim do mês. Além disso, a falta de visibilidade faz com que você subestime o quanto realmente gasta em coisas como cafés diários, transporte extra ou pequenas compras online. Essa subestimação cria um efeito dominó: você recorre a crédito, paga juros e ainda sente que o dinheiro “some”.
+Quando você monta um plano financeiro, costuma reservar uma quantia para despesas fixas e outra para “cobertura”. Se os gastos variáveis escapam do radar, a cobertura pode acabar rapidamente, gerando apertos no fim do mês. Além disso, a falta de visibilidade faz com que você subestime o quanto realmente gasta em coisas como cafés diários, transporte extra ou pequenas compras online. Essa subestimação cria um efeito dominó: você recorre a [crédito](/glossario/credito), paga [juros](/glossario/juros) e ainda sente que o dinheiro “some”.
 
 ## Como identificar seus gastos variáveis  
 
@@ -47,7 +47,7 @@ Ao visualizar esses grupos, fica mais fácil perceber quais deles estão consumi
 
 ## Ferramentas que facilitam o controle  
 
-Hoje em dia, aplicativos de finanças pessoais já fazem muito do trabalho pesado. Um recurso que se destaca é a captura inteligente: basta tirar uma foto da nota ou falar o valor que acabou de pagar, e o app já classifica o gasto na categoria correta, sem precisar digitar nada. Essa automação elimina a barreira da burocracia e garante que nenhum gasto passe despercebido. Além disso, recursos como multimoeda permitem registrar despesas em diferentes moedas sem confusão, e relatórios de fluxo de caixa mostram, em tempo real, quanto ainda resta para o mês.
+Hoje em dia, [aplicativos](/posts/5-alternativas-ao-mobills-em-2026) de [finanças pessoais](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) já fazem muito do trabalho pesado. Um recurso que se destaca é a captura inteligente: basta tirar uma foto da nota ou falar o valor que acabou de pagar, e o app já classifica o gasto na categoria correta, sem precisar digitar nada. Essa automação elimina a barreira da burocracia e garante que nenhum gasto passe despercebido. Além disso, recursos como multimoeda permitem registrar despesas em diferentes moedas sem confusão, e relatórios de fluxo de caixa mostram, em tempo real, quanto ainda resta para o mês.
 
 ## Dicas práticas para reduzir gastos variáveis  
 
@@ -55,7 +55,7 @@ Hoje em dia, aplicativos de finanças pessoais já fazem muito do trabalho pesad
 
 **Dica prática:** Crie uma lista de compras antes de ir ao supermercado e ative o modo compras do app, que mostra o total acumulado à medida que você adiciona itens.  
 
-**Dica prática:** Programe alertas de saldo que avisam quando você está perto de ultrapassar o orçamento da categoria “lazer”.  
+**Dica prática:** Programe [alertas](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto-202) de saldo que avisam quando você está perto de ultrapassar o orçamento da categoria “lazer”.  
 
 Outras estratégias simples incluem:  
 
@@ -65,7 +65,7 @@ Outras estratégias simples incluem:
 
 ## FinMoovi na prática  
 
-Imagine que você acabou de pagar a conta de um jantar com amigos. Em vez de anotar à mão, abre o FinMoovi, tira uma foto da nota ou simplesmente fala “café e prato principal, 120”. A captura inteligente reconhece o valor, classifica automaticamente como “alimentação fora de casa” e atualiza seu fluxo de caixa. Se a despesa foi feita em outra moeda, o recurso multimoeda converte o valor usando a taxa do dia, mantendo tudo coerente.  
+Imagine que você acabou de pagar a conta de um jantar com amigos. Em vez de anotar à mão, abre o FinMoovi, tira uma foto da nota ou simplesmente fala “café e prato principal, 120”. A captura inteligente reconhece o valor, classifica automaticamente como “alimentação fora de casa” e atualiza seu fluxo de caixa. Se a despesa foi feita em outra [moeda](/glossario/moeda), o recurso multimoeda converte o valor usando a taxa do dia, mantendo tudo coerente.  
 
 Com os relatórios mensais, você vê que, nos últimos três meses, gastou o equivalente a “cerca de três aluguéis” em refeições fora. O app então sugere metas de redução e permite criar um alerta que dispara quando o gasto da categoria chega a 70 % do limite definido. Se você estiver offline, a versão PWA (Progressive Web App) salva a informação localmente e sincroniza tudo assim que houver conexão. Assim, cada gasto variável fica registrado, categorizado e pronto para análise, sem esforço adicional.
 

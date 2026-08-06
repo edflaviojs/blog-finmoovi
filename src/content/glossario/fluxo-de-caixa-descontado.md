@@ -28,8 +28,8 @@ Imagine que você vai receber um salário equivalente a “um aluguel” todo m�
 
 
 1. **Identifique os fluxos de caixa** – entradas (receitas) e saídas (despesas) ao longo do tempo.  
-2. **Escolha a taxa de desconto** – pode ser a taxa de juros do seu cartão de crédito ou a rentabilidade de um fundo de investimento de baixo risco.  
-3. **Desconte cada fluxo** – aplique a fórmula : Valor presente = Fluxo / (1 + taxa)ⁿ, onde n é o número de períodos até o fluxo acontecer.  
+2. **Escolha a taxa de desconto** – pode ser a taxa de juros do seu [cartão de crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) ou a rentabilidade de um [fundo de investimento](/glossario/fundo-de-investimento) de baixo risco.  
+3. **Desconte cada fluxo** – aplique a fórmula : [Valor presente](/glossario/valor-presente) = Fluxo / (1 + taxa)ⁿ, onde n é o número de períodos até o fluxo acontecer.  
 4. **Some tudo** – se o total dos valores presentes for positivo, o investimento gera mais valor do que o custo de oportunidade; se for negativo, talvez seja melhor adiar ou buscar outra alternativa.
 
 Ao fazer isso, você transforma “três cafés por dia” em um número comparável ao “aluguel” que receberá, facilitando a decisão.
@@ -39,7 +39,7 @@ Mesmo sem ser um analista financeiro, você pode usar o FCD para decisões cotid
 
 - Avaliar se vale a pena trocar o carro atual por um modelo mais econômico, considerando economia de combustível e manutenção.  
 - Decidir entre pagar à vista um eletrodoméstico ou parcelar, levando em conta os juros da parcela.  
-- Planejar a compra de um imóvel, comparando o custo total do financiamento com a valorização esperada da propriedade.
+- Planejar a compra de um imóvel, comparando o custo total do [financiamento](/glossario/financiamento) com a valorização esperada da propriedade.
 
 ![Como aplicar no seu dia a dia  ](/images/glossario/fluxo-de-caixa-descontado-inline-3.webp)
 
@@ -47,7 +47,7 @@ Mesmo sem ser um analista financeiro, você pode usar o FCD para decisões cotid
 
 **Dica prática:** antes de fechar qualquer compra parcelada, calcule o valor presente das parcelas usando a taxa de juros do seu cartão de crédito; isso revela o custo real da dívida.  
 
-**Dica prática:** ao analisar um investimento de longo prazo, use a taxa de retorno de um título de renda fixa como referência de desconto; assim você evita superestimar ganhos.  
+**Dica prática:** ao analisar um investimento de longo prazo, use a taxa de retorno de um título de [renda fixa](/glossario/renda-fixa) como referência de desconto; assim você evita superestimar ganhos.  
 
 **Dica prática:** crie uma planilha simples (ou use um app) para registrar cada fluxo e aplicar a fórmula; a visualização ajuda a entender onde está o ponto de equilíbrio.
 
@@ -61,7 +61,7 @@ A teoria fica mais fácil quando a tecnologia faz o trabalho pesado. O FinMoovi 
 - **Planejamento mensal / metas** – estabeleça metas de economia e veja como elas impactam o valor presente dos seus fluxos.  
 - **Cartões de crédito / fatura** – sincronize as faturas e veja o custo real das parcelas, já descontado pela taxa de juros do cartão.  
 - **Modo compras** – crie listas de supermercado; o total aparece em tempo real, ajudando a decidir se vale a pena esperar por promoções.  
-- **Lembretes / alertas de saldo** – receba notificações quando o saldo projetado ficar abaixo do necessário para cobrir os próximos fluxos.  
+- **Lembretes / [alertas](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto-202) de saldo** – receba notificações quando o saldo projetado ficar abaixo do necessário para cobrir os próximos fluxos.  
 - **Offline / PWA / sincronização** – mesmo sem internet, você registra tudo; ao reconectar, os dados são sincronizados em todos os dispositivos.
 
 Com esses recursos, o cálculo do FCD deixa de ser uma planilha complicada e passa a ser um painel visual que acompanha suas decisões em tempo real.

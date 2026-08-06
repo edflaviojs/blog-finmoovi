@@ -67,7 +67,7 @@ Definir metas claras – por exemplo, “economizar o equivalente a um aluguel p
 
 ## Comece hoje
 
-A jornada rumo a um futuro financeiro mais tranquilo começa com um passo simples: abra o FinMoovi, tire a foto da última conta que pagou e deixe o app organizar tudo para você. Em menos de cinco minutos, você terá uma visão clara de onde o dinheiro está indo e já poderá ajustar seus próximos gastos. Não espere a próxima fatura para agir – a mudança começa agora, dentro da palma da sua mão.
+A jornada rumo a um futuro [financeiro](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto-202) mais tranquilo começa com um passo simples: abra o FinMoovi, tire a foto da última conta que pagou e deixe o app organizar tudo para você. Em menos de cinco minutos, você terá uma visão clara de onde o dinheiro está indo e já poderá ajustar seus próximos gastos. Não espere a próxima fatura para agir – a mudança começa agora, dentro da palma da sua mão.
 
 ![Comece hoje](/images/posts/estrategias-simples-para-economizar-no-dia-a-dia-em-2026-6.webp)
 

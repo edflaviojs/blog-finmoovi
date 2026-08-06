@@ -58,7 +58,7 @@ A tentação de comprar por impulso costuma aparecer quando estamos no supermerc
 Com as informações consolidadas no app, você ganha argumentos sólidos para renegociar contratos. Por exemplo, ao perceber que a conta de energia tem um consumo equivalente a “cerca de duas vezes o gasto de um aluguel”, você pode procurar tarifas mais vantajosas ou adotar medidas de economia doméstica. O relatório de “Despesas mensais” do FinMoovi pode ser exportado em PDF e apresentado ao fornecedor como prova de que você está atento ao seu consumo.
 
 ## Comece hoje
-Agora que você já conhece as ferramentas e os hábitos que podem transformar sua relação com o dinheiro, basta dar o primeiro passo. Abra o FinMoovi, tire uma foto da última nota fiscal que recebeu e deixe o app fazer a classificação automática. Em menos de cinco minutos, você terá a primeira peça do quebra‑cabeça do seu orçamento nas mãos. A partir daí, ajuste limites, crie alertas e veja a diferença ao longo das próximas semanas. A mudança acontece quando a ação é simples e imediata.
+Agora que você já conhece as ferramentas e os hábitos que podem transformar sua relação com o dinheiro, basta dar o primeiro passo. Abra o FinMoovi, tire uma foto da última nota fiscal que recebeu e deixe o app fazer a classificação automática. Em menos de cinco minutos, você terá a primeira peça do quebra‑cabeça do seu orçamento nas mãos. A partir daí, ajuste limites, crie [alertas](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto-202) e veja a diferença ao longo das próximas semanas. A mudança acontece quando a ação é simples e imediata.
 
 ### Perguntas frequentes
 #### Como saber se estou gastando demais em uma categoria?

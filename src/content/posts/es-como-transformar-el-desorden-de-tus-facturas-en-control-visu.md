@@ -63,7 +63,7 @@ En lugar de analizar todo al final del mes, prueba hacer un **chequeo semanal**.
 
 ## Define metas mensuales de gasto
 
-Los objetivos claros son el motor de la disciplina financiera. Por ejemplo, decide que el gasto en “snacks fuera de casa” no supere el equivalente a dos cafés al día. En FinMoovi puedes crear una meta para cada categoría y recibir alertas cuando te acerques al límite. Así, la mentalidad de “gastar hasta acabar” da paso a “gastar dentro del plan”.
+Los objetivos claros son el motor de la disciplina financiera. Por ejemplo, decide que el gasto en “snacks fuera de casa” no supere el equivalente a dos cafés al día. En FinMoovi puedes crear una meta para cada categoría y recibir [alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no-que) cuando te acerques al límite. Así, la mentalidad de “gastar hasta acabar” da paso a “gastar dentro del plan”.
 
 ---
 

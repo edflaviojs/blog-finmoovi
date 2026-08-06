@@ -78,7 +78,7 @@ Veamos cómo el bono impacta a diferentes salarios reales:
 Si tu empresa ya ofrece bonos, pero aún no los aprovechas al máximo, sigue estos pasos:
 
 - Pregunta a Recursos Humanos o a tu jefe directo cuál es la política exacta (metas, porcentajes, fechas de pago).  
-- Anota las metas en tu agenda y desglosa qué acciones concretas necesitas para alcanzarlas.  
+- Anota las metas en tu agenda y desglosa qué [acciones](/es/glossario/es-acciones) concretas necesitas para alcanzarlas.  
 - Cuando recibas el bono, separa el dinero en tres sobres: gasto inmediato, ahorro y reinversión.  
 - Usa una herramienta de seguimiento (una [hoja de cálculo](/es/posts/es-migrando-de-la-hoja-de-calculo-a-una-app-financiera) o una app) para registrar cada bono y su destino.  
 - Evalúa al final del año si los bonos realmente mejoraron tu situación financiera y ajusta tu estrategia.

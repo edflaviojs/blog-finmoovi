@@ -31,7 +31,7 @@ O processo de KYC geralmente começa quando um cliente abre uma conta em uma ins
 * Documentos de identificação, como RG e CPF
 * Comprovante de residência, como conta de água ou luz
 * Informações sobre a fonte de renda, como contracheque ou declaração de [imposto de renda](/glossario/imposto-de-renda)
-* Outras informações relevantes, como histórico de crédito ou relatórios de agências de crédito
+* Outras informações relevantes, como histórico de [crédito](/glossario/credito) ou relatórios de agências de crédito
 
 As instituições financeiras utilizam essas informações para verificar a identidade do cliente e avaliar o risco de lavagem de dinheiro ou financiamento do terrorismo. Se o cliente for considerado de alto risco, a instituição financeira pode solicitar mais informações ou até mesmo recusar a abertura da conta.
 

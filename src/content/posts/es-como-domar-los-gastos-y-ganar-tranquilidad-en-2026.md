@@ -54,7 +54,7 @@ La tentación de comprar por impulso suele aparecer cuando estamos en el superme
 Con la información consolidada en la app, obtienes argumentos sólidos para renegociar contratos. Por ejemplo, al notar que la factura de energía equivale a “casi el doble del gasto de un alquiler”, puedes buscar tarifas más ventajosas o adoptar medidas de [ahorro](/es/glossario/es-ahorro) doméstico. El informe de “Gastos mensuales” de FinMoovi puede exportarse en PDF y presentarse al proveedor como prueba de que estás atento a tu consumo.
 
 ## Empieza hoy
-Ahora que conoces las herramientas y los hábitos que pueden transformar tu relación con el dinero, solo queda dar el primer paso. Abre FinMoovi, toma una foto de la última factura que recibiste y deja que la app haga la clasificación automática. En menos de cinco minutos tendrás la primera pieza del rompecabezas de tu presupuesto en tus manos. Desde ahí, ajusta límites, crea alertas y observa la diferencia en las próximas semanas. El [cambio](/es/glossario/es-cambio) ocurre cuando la acción es simple e inmediata.
+Ahora que conoces las herramientas y los hábitos que pueden transformar tu relación con el dinero, solo queda dar el primer paso. Abre FinMoovi, toma una foto de la última factura que recibiste y deja que la app haga la clasificación automática. En menos de cinco minutos tendrás la primera pieza del rompecabezas de tu presupuesto en tus manos. Desde ahí, ajusta límites, crea [alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no-que) y observa la diferencia en las próximas semanas. El [cambio](/es/glossario/es-cambio) ocurre cuando la acción es simple e inmediata.
 
 ### Preguntas frecuentes
 #### ¿Cómo saber si estoy gastando demasiado en una categoría?

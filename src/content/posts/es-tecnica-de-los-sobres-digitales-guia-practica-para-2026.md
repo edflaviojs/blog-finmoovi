@@ -78,7 +78,7 @@ Este hábito de revisión convierte el control en un aprendizaje continuo, evita
 
 ## Empezar con 5 minutos al día  
 
-1. **Mañana:** al abrir la app, echa un vistazo rápido a los saldos de los sobres. Si alguno está casi vacío, anota un recordatorio para evitar compras impulsivas.  
+1. **Mañana:** al abrir la app, echa un vistazo rápido a los saldos de los sobres. Si alguno está casi vacío, anota un [recordatorio](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no-que) para evitar compras impulsivas.  
 2. **Durante el día:** registra cada gasto en el momento. Usa la cámara del móvil para capturar el comprobante y la app hará la clasificación automática.  
 3. **Al final del día:** dedica 2 minutos a comprobar si algún sobre quedó negativo. Si es así, ajusta de inmediato – transfiere dinero de otra categoría o registra el gasto como “extra”.  
 

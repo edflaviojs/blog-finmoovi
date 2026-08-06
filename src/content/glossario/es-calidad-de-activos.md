@@ -60,7 +60,7 @@ Reconocer estos riesgos te permite equilibrar tu cartera y no caer en la falsa s
 
 Supongamos que tienes un salario mensual de €900 y decides destinar el 20 % a una inversión de calidad. Aquí tienes tres escenarios reales:  
 - **Bonos corporativos AA:** compras €180 en bonos de una empresa con calificación AA, que paga 7 % anual. En un año recibes €13 de intereses, sin riesgo de impago significativo.  
-- **Fondo de inversión de renta fija:** inviertes €180 en un fondo que combina bonos del gobierno y corporativos de alta calidad, obteniendo un retorno promedio de 6,5 % al año. Al final del período, tu capital crece a €192.  
+- **[Fondo de inversión](/es/glossario/es-fondo-de-inversion) de renta fija:** inviertes €180 en un fondo que combina bonos del gobierno y corporativos de alta calidad, obteniendo un retorno promedio de 6,5 % al año. Al final del período, tu capital crece a €192.  
 - **Acciones de empresa estable:** destinas €180 a acciones de una compañía que ha pagado dividendos constantes (4 % anual). Además del dividendo de €7, la acción mantiene su precio, manteniendo tu inversión segura.  
 
 **Consejo práctico:** **Diversifica entre bonos, fondos y acciones de calidad para equilibrar riesgo y rentabilidad.**  

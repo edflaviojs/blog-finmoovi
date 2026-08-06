@@ -45,23 +45,23 @@ Para tomar el control, primero debes reconocer qué partidas entran en la catego
 
 
 
-- **Consejo práctico:** Revisa tus tarjetas de crédito al final de cada semana y marca cada compra que no sea una factura recurrente.
+- **Consejo práctico:** Revisa tus tarjetas de [crédito](/es/glossario/es-credito) al final de cada semana y marca cada compra que no sea una factura recurrente.
 - **Consejo práctico:** Anota en tu móvil cualquier gasto que realices fuera de lo habitual, aunque sea de pocos centavos; la suma de muchos pequeños desembolsos puede ser sorprendente.
 - **Consejo práctico:** Al terminar el día, dedica dos minutos a registrar lo que compraste y cómo lo pagaste; la constancia evita sorpresas.
 
 ## Herramientas para manejarlos
 
-Hoy en día no necesitas una hoja de cálculo complicada. Existen apps que hacen el trabajo pesado por ti. La clave está en la captura inteligente: simplemente tomas una foto del recibo o le dices a la app lo que gastaste, y ella clasifica el gasto automáticamente. Además, la mayoría permite trabajar en varias monedas, generar informes de flujo de caja y establecer metas mensuales. Algunas funcionalidades útiles son:
+Hoy en día no necesitas una [hoja de cálculo](/es/posts/es-migrando-de-la-hoja-de-calculo-a-una-app-financiera) complicada. Existen apps que hacen el trabajo pesado por ti. La clave está en la [captura inteligente](/es/posts/es-como-conseguir-financiacion-para-tus-proyectos-sin-complicac): simplemente tomas una foto del recibo o le dices a la app lo que gastaste, y ella clasifica el gasto automáticamente. Además, la mayoría permite trabajar en varias monedas, generar informes de flujo de caja y establecer metas mensuales. Algunas funcionalidades útiles son:
 
 - Captura por foto o voz que reconoce el monto y la categoría sin que tengas que escribir nada.
-- Categorización automática que separa gastos fijos de variables.
+- [Categorización automática](/es/posts/es-tambien-olvidas-anotar-tus-gastos) que separa gastos fijos de variables.
 - Informes visuales que muestran cuánto gastas en ocio, alimentación, etc.
-- Recordatorios de saldo bajo y alertas de gasto excesivo.
+- Recordatorios de saldo bajo y [alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no-que) de gasto excesivo.
 - Modo compras con lista y total en tiempo real para evitar sorpresas al pasar por la caja.
 
 ## FinMoovi al rescate
 
-Imagina que cada vez que pagas la cena con tus amigos, simplemente apuntas la cuenta con la cámara del móvil. FinMoovi, con su captura inteligente, reconoce el total y lo clasifica como “gasto variable de ocio”. No importa si pagas en dólares, euros o la moneda local; la app ajusta automáticamente el tipo de cambio. En cuestión de segundos tienes un registro actualizado, un flujo de caja que muestra cuánto te queda para el resto del mes y una alerta que te avisa si estás a punto de superar el límite que te fijaste para entretenimiento. Además, puedes crear una lista de compras y ver el total estimado en tiempo real, evitando que el carrito se llene de cosas innecesarias.
+Imagina que cada vez que pagas la cena con tus amigos, simplemente apuntas la cuenta con la cámara del móvil. FinMoovi, con su captura inteligente, reconoce el total y lo clasifica como “gasto variable de ocio”. No importa si pagas en dólares, euros o la moneda local; la app ajusta automáticamente el tipo de [cambio](/es/glossario/es-cambio). En cuestión de segundos tienes un registro actualizado, un flujo de caja que muestra cuánto te queda para el resto del mes y una alerta que te avisa si estás a punto de superar el límite que te fijaste para entretenimiento. Además, puedes crear una lista de compras y ver el total estimado en tiempo real, evitando que el carrito se llene de cosas innecesarias.
 
 ## Consejos para mantener el control
 

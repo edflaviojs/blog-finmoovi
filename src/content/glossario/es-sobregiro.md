@@ -33,7 +33,7 @@ Si usted queda **€180** negativos por 30 días con intereses del 12% al mes:
 
 1. **Desactive el sobregiro** — llame al banco y solicite que lo eliminen  
 2. **Mantenga una reserva en la cuenta** — al menos **€90** de colchón  
-3. **Configure alertas** — aviso cuando el saldo esté bajo  
+3. **Configure [alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no-que)** — aviso cuando el saldo esté bajo  
 4. **Si necesita [crédito](/es/glossario/es-credito)** — el [préstamo](/es/glossario/es-prestamo) personal tiene intereses 5 veces menores  
 
 ## [Alternativas](/es/posts/es-5-alternativas-a-organizze-en-2026-opciones-para-administrar) más baratas

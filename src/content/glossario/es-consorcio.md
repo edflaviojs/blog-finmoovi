@@ -39,7 +39,7 @@ Consorcio es un sistema donde varias personas se unen para comprar algo (coche, 
 
 ## Consorcio vs. Financiación
 
-| | Consorcio | Financiación |
+| | Consorcio | [Financiación](/es/posts/es-como-conseguir-financiacion-para-tus-proyectos-sin-complicac) |
 |--|-----------|---------------|
 | Intereses | No tiene | 8-15% al año |
 | Recibe el bien | Cuando es beneficiado | Inmediatamente |
