@@ -384,6 +384,65 @@ inventar links de glossário. A regra 4b do prompt manda traduzir o **texto
 visível** dos links — a regra 6b continua a proibir tocar na URL, e o link-guard
 continua ligado no workflow.
 
+## 10-B. ⏳ POR ACOMPANHAR — a primeira semana do mecanismo novo (aberto 06/08/2026)
+
+O conserto do §10-A entrou a 06/08/2026 (quinta). **Ainda não foi visto a
+correr a sério** — nenhuma corrida com IA aconteceu depois dele.
+
+### Quando olhar
+
+| Data | Corridas acumuladas | O que já dá para ver |
+|---|---|---|
+| **sáb 08/08** | 1 (sexta 07/08) | se o mecanismo arranca e não parte nada |
+| **ter 11/08** | 3 (07, 10, 11/08) | se a fila encolhe ao ritmo previsto |
+| sex 14/08 | 6 | se sobra alguém em "precisa de humano" |
+
+O robô corre de segunda a sexta às 8h30 UTC. Sábado e domingo não corre.
+
+### Onde olhar
+
+GitHub → Actions → **"Fix i18n Content (Daily Batch)"** → a corrida do dia →
+passo *Run content fix batch*. O resumo está no fim do log.
+
+### Os números de partida (06/08/2026, antes da 1ª corrida)
+
+```
+fila ....................... 168
+severidade 3 ................ 22
+severidade 2 ............... 102
+severidade 1 ................ 44
+mortos na fila ............... 0
+precisam de humano ........... 0
+```
+
+### O que quer dizer cada resultado
+
+| No log | Quer dizer | Se aparecer muito |
+|---|---|---|
+| `FIXED ... severidade 2 → 0` | resolvido de vez | é o esperado — nada a fazer |
+| `FIXED ... 3 → 2; volta à fila` | melhorou, volta noutra corrida | normal em ficheiros muito estragados |
+| `PARCIAL ... severidade continua N` | a IA passou e não resolveu | **>1/3 do lote = o prompt não está a chegar lá.** Ver §10-A ponto 5 antes de mexer na trava |
+| `Links inventados desfeitos: N` | o link-guard reparou N links | **N > 1 por ficheiro = a regra 4b está a fazer o modelo mexer nas URLs.** Reforçar a 6b |
+| `PRECISAM DE HUMANO` | 3 passagens sem resolver | corrigir esses à mão; ver §11 |
+
+### Contas para conferir
+
+- A fila deve cair ~20 por corrida: 168 → ~148 (07/08) → ~128 (10/08) → ~108 (11/08).
+  **Se não cair, o problema é a re-medição** — o robô está a escrever sem baixar
+  a severidade.
+- `Remaining` no fim do log é a fila que sobra. Comparar com a linha de cima.
+- O deploy do blog tem de continuar verde. Se parar, olhar primeiro para os
+  links (é o defeito de 05/08 que já parou o site ~20h).
+
+### Alternativa mais segura para a 1ª corrida
+
+Em vez de esperar pela sexta, dá para disparar à mão em Actions → *Run workflow*,
+com **batch_size = 3**. Três ficheiros, ~3 minutos, e vê-se o comportamento real
+antes de deixar correr a 20 por dia. Gasta chamadas de IA e escreve em páginas
+publicadas — é decisão do dono.
+
+---
+
 ## 11. Troubleshooting
 
 | Sintoma | Causa | Solução |
