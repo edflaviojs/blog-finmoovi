@@ -39,7 +39,16 @@ jobs:
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
-        run: node src/scripts/automacoes/traduzir-glossario.js
+        # `--max-minutes 50` = paragem interna 10 min abaixo do teto do passo.
+        # ATENÇÃO ao detalhe que torna isto obrigatório: o `timeout-minutes`
+        # abaixo está no PASSO, não no job. Passo que estoura FALHA (não
+        # cancela), e passo falhado faz o GitHub saltar os seguintes — incluindo
+        # o commit. Como o script grava cada verbete à medida que traduz, bater
+        # no teto deitava fora TODAS as traduções já escritas em disco.
+        # Uma condição `if:` no commit não resolveria: `cancelled()` nunca
+        # dispara neste caso, e `always()` guardaria também em falha real, o que
+        # publicaria verbetes meio traduzidos. Por isso o conserto é aqui dentro.
+        run: node src/scripts/automacoes/traduzir-glossario.js --max-minutes 50
         timeout-minutes: 60
 
       - name: Commit and push

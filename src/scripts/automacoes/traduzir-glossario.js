@@ -2,6 +2,10 @@
  * Script: Traduzir body completo do glossário para EN e ES
  * Executa via GitHub Actions: workflow "Traduzir Glossário"
  * Lê cada arquivo en-*.md e es-*.md, traduz o body via Groq, e salva
+ *
+ * Uso:
+ *   node src/scripts/automacoes/traduzir-glossario.js
+ *   node src/scripts/automacoes/traduzir-glossario.js --max-minutes 50
  */
 
 import { generateText } from '../apis/kie-ai.js';
@@ -11,6 +15,27 @@ import { join } from 'path';
 import { pathToFileURL } from 'url';
 
 const GLOSSARIO_DIR = join(process.cwd(), 'src', 'content', 'glossario');
+
+// Teto de TEMPO do próprio script, sempre abaixo do teto do passo no workflow.
+//
+// Por que isto é necessário aqui: o `timeout-minutes: 60` do workflow está no
+// PASSO, não no job. Passo que estoura FALHA, e um passo falhado faz o GitHub
+// saltar os seguintes — incluindo o commit. Como este script grava cada ficheiro
+// à medida que traduz, estourar o teto significava perder TODAS as traduções já
+// escritas em disco. É o mesmo defeito que fez o `gerar-alt-imagens` queimar
+// ~50 min/dia durante semanas (ver IMPL24 §ATUALIZAÇÃO 06/08).
+//
+// E a folga é fina de verdade: 258 verbetes (129 EN + 129 ES) × ~12s de espera
+// por chamada ≈ 52 min, contra um teto de 60.
+//
+// `parseFloat` inválido vira NaN, e qualquer comparação com NaN é false — ou
+// seja, o pior caso é comportar-se como se não houvesse teto (o de hoje).
+const args = process.argv.slice(2);
+const MAX_MINUTES = args.includes('--max-minutes')
+  ? parseFloat(args[args.indexOf('--max-minutes') + 1])
+  : (process.env.GLOSSARIO_MAX_MINUTES ? parseFloat(process.env.GLOSSARIO_MAX_MINUTES) : Infinity);
+const START_MS = Date.now();
+const elapsedMin = () => (Date.now() - START_MS) / 60000;
 
 async function translateBody(body, termName, targetLang) {
   const langNames = { en: 'English', es: 'Spanish' };
@@ -41,8 +66,14 @@ async function main() {
 
   let translated = 0;
   let errors = 0;
+  let ranOutOfTime = false;
 
   for (const file of enFiles) {
+    // Teto de tempo: para de forma limpa para o passo de commit acontecer.
+    // O script é idempotente (pula o que já está traduzido), então a corrida
+    // seguinte retoma exatamente de onde esta parou.
+    if (elapsedMin() >= MAX_MINUTES) { ranOutOfTime = true; break; }
+
     const filePath = join(GLOSSARIO_DIR, file);
     const content = readFileSync(filePath, 'utf-8');
 
@@ -82,6 +113,8 @@ async function main() {
   console.log(`\n📚 ${esFiles.length} termos ES para traduzir\n`);
 
   for (const file of esFiles) {
+    if (elapsedMin() >= MAX_MINUTES) { ranOutOfTime = true; break; }
+
     const filePath = join(GLOSSARIO_DIR, file);
     const content = readFileSync(filePath, 'utf-8');
 
@@ -116,6 +149,10 @@ async function main() {
     }
   }
 
+  if (ranOutOfTime) {
+    console.log(`\n⏱️  Teto de ${MAX_MINUTES} min atingido — parando de forma limpa para o commit acontecer.`);
+    console.log('   O que já foi traduzido está gravado; a próxima corrida retoma de onde parou.');
+  }
   console.log(`\n📊 Resultado: ${translated} traduzidos, ${errors} erros`);
 }
 

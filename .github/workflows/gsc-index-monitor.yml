@@ -45,7 +45,16 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: node src/scripts/automacoes/gsc-index-monitor.js
 
+      # `if: always()` — rede contra o teto de 30 min acima. O passo anterior
+      # escreve os dois ficheiros à medida que percorre as URLs; sem esta linha,
+      # um job cancelado (teto atingido) saltava o commit e deitava fora tudo o
+      # que já tinha medido. Foi assim que o `gerar-alt-imagens` queimou ~50
+      # min/dia durante semanas, em silêncio — ver IMPL24 §ATUALIZAÇÃO 06/08.
+      # Aqui é seguro guardar até numa FALHA: os dois ficheiros são telemetria
+      # reescrita a cada corrida, não conteúdo publicado. E ambos já existem no
+      # repositório, portanto o `git add` nunca falha por ficheiro ausente.
       - name: Commit e push
+        if: always()
         run: |
           git add .github/data/gsc-index-status.json press/gsc-index-monitor.md
           if git diff --cached --quiet; then
