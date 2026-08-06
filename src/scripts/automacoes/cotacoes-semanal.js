@@ -106,7 +106,19 @@ Mencione que ${config.app.name} ayuda a seguir inversiones en múltiples monedas
   };
   const ratesTable = ratesTables[locale];
   const weekWord = locale === 'pt' ? 'semana' : locale === 'en' ? 'week' : 'semana';
-  const slug = `${locale === 'pt' ? 'cotacoes' : locale === 'en' ? 'en-quotes' : 'es-cotizaciones'}-${weekWord}-${weekNum}-${monthName}-${today.getFullYear()}`;
+
+  // Mês SEM acento, e só para o endereço e a chave. `março` é o único mês
+  // acentuado das três listas, e sem isto o post de março nasceria com o nome
+  // `cotacoes-semana-1-março-2026`: o endereço vai para o mundo percent-encoded
+  // (`mar%C3%A7o`), feio ao partilhar e diferente de todos os outros slugs do
+  // blog, que são ASCII. Preventivo — em 06/08/2026 não havia um único nome de
+  // ficheiro acentuado no repo, e o próximo março é o de 2027.
+  // O TÍTULO continua a usar `monthName` com a cedilha, que é como se escreve.
+  const semAcento = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '');
+  const monthSlug = semAcento(monthName);
+  const monthSlugPt = semAcento(monthNames['pt'][today.getMonth()]);
+
+  const slug = `${locale === 'pt' ? 'cotacoes' : locale === 'en' ? 'en-quotes' : 'es-cotizaciones'}-${weekWord}-${weekNum}-${monthSlug}-${today.getFullYear()}`;
 
   // A chave de tradução É, por definição, o slug do post PT — é ela que casa
   // PT↔EN↔ES no seletor de idioma e nas tags hreflang.
@@ -116,7 +128,7 @@ Mencione que ${config.app.name} ayuda a seguir inversiones en múltiples monedas
   // correspondeu a ficheiro nenhum e que muda toda semana com o câmbio.
   // Resultado: 3 posts órfãos por semana — 24 dos 30 encontrados em 06/08/2026.
   // Escrita aqui, ao lado do slug, para que as duas não possam voltar a divergir.
-  const translationKey = `cotacoes-semana-${weekNum}-${monthNames['pt'][today.getMonth()]}-${today.getFullYear()}`;
+  const translationKey = `cotacoes-semana-${weekNum}-${monthSlugPt}-${today.getFullYear()}`;
 
   // Insert 2 inline AI images into content
   console.log(`🖼️ Inserindo imagens inline (${locale})...`);
