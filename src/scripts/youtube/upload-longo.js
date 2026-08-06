@@ -53,6 +53,7 @@ import { pathToFileURL } from 'node:url';
 import { getAccessToken, escolherEtiquetas } from './upload-short.js';
 import { prepararDescricao } from './descricao-longo.js';
 import { textoDoPrimeiroComentario, escreverPrimeiroComentario } from './lib/primeiro-comentario.js';
+import { arrumarNasPlaylists } from './lib/playlists.js';
 
 // ─── caminhos ────────────────────────────────────────────────────────────────
 const ROOT = process.cwd();
@@ -682,6 +683,20 @@ async function principal() {
     log('💬 primeiro comentário escrito — falta fixar à mão no Studio.');
   } catch (err) {
     log(`⚠️ o primeiro comentário falhou (o vídeo já está em cima): ${err.message}`);
+  }
+
+  /**
+   * ♦ 06/08/2026 — AS PLAYLISTS (IMPL20 §59).
+   * ⚠️ O vídeo entra na playlist **ainda privado**, e é de propósito: quando estrear já
+   * está na prateleira, em vez de alguém ter de se lembrar no domingo à noite. O YouTube
+   * esconde-o da playlist até à hora marcada.
+   * ⚠️ E é a prateleira geral que a tela final vai apontar — por isso ela tem de estar
+   * cheia antes de o vídeo ir ao ar, não depois.
+   */
+  try {
+    await arrumarNasPlaylists(chave, video.id, `${plano.tema} ${plano.promessa}`, log);
+  } catch (err) {
+    log(`⚠️ as playlists falharam (o vídeo já está em cima): ${err.message}`);
   }
 
   // ── o caderno ──

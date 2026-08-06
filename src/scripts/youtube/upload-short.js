@@ -31,6 +31,7 @@ import { getTitlePatterns } from '../lib/youtube-marketing.js';
 import { creditoDaMusica, TRILHA } from './lib/musica.js';
 import { caminhoDaCapaLarga } from './capa-short.js';
 import { textoDoPrimeiroComentario, escreverPrimeiroComentario } from './lib/primeiro-comentario.js';
+import { arrumarNasPlaylists } from './lib/playlists.js';
 
 // ─── caminhos ────────────────────────────────────────────────────────────────
 const ROOT = process.cwd();
@@ -835,6 +836,17 @@ async function main() {
     log(`💬 primeiro comentário escrito${comentarioId ? ` (${comentarioId})` : ''} — falta fixar à mão no Studio.`);
   } catch (err) {
     log(`⚠️ o primeiro comentário falhou (o vídeo já está no ar): ${err.message}`);
+  }
+
+  /**
+   * ♦ 06/08/2026 — AS PLAYLISTS (IMPL20 §59). Uma playlist faz o YouTube encadear um
+   * vídeo no seguinte sem a pessoa escolher — e é das poucas coisas da lista do dono que
+   * a API deixa mesmo fazer. Falhar aqui não derruba nada: o vídeo já está no ar.
+   */
+  try {
+    await arrumarNasPlaylists(accessToken, videoId, `${script.term} ${script.keyword} ${script.category}`, log);
+  } catch (err) {
+    log(`⚠️ as playlists falharam (o vídeo já está no ar): ${err.message}`);
   }
 
   // Tracking.

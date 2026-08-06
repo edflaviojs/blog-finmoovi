@@ -7,10 +7,18 @@ name: YouTube — Medir retenção dos Shorts
 # ficheiro de histórico .github/data/youtube-retencao.json, para se poder
 # comparar a medição de hoje com a de daqui a um mês.
 #
-# Disparo MANUAL de propósito (sem cron): é medição de decisão, não rotina.
-# Quando houver audiência a sério, pode passar a semanal — é acrescentar 2 linhas.
+# ♦ 06/08/2026 — PASSOU A SEMANAL, e a razão mudou com o pedido do dono.
+# Era manual de propósito ("medição de decisão, não rotina"). Mas ele pediu um AVISO:
+# *"se estiver abaixo de 70% o ganho está ruim, precisaremos mudar algo"*. Um aviso que
+# só existe quando alguém se lembra de o pedir não é um aviso — e uma regra que depende
+# de alguém se lembrar não é uma regra. Segunda-feira de manhã, com a semana inteira
+# medida, e o resultado aparece no resumo da corrida.
 
 on:
+  schedule:
+    # 08:00 UTC de segunda = 05h00 no Brasil. Fora da hora de ponta do GitHub, e a
+    # medição já apanha o fim de semana inteiro (é quando o vídeo longo estreia).
+    - cron: '0 8 * * 1'
   workflow_dispatch:
     inputs:
       video:

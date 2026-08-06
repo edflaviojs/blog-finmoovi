@@ -49,6 +49,49 @@ const ONLY_VIDEO = args.video && args.video !== true ? String(args.video) : null
 function log(msg) { console.log(msg); }
 
 /**
+ * ♦ 06/08/2026 — O AVISO DOS 70%, por ordem do dono.
+ *
+ * *"Para vídeos Shorts o que temos que avaliar sempre é o engajamento dos espectadores.
+ * Se estiver abaixo de 70% o ganho está ruim, precisaremos mudar algo."*
+ *
+ * ⚠️ **E É PRECISO UM MÍNIMO DE AUDIÊNCIA PARA A CONTA VALER ALGUMA COISA.** Um vídeo com
+ * 3 visualizações e 40% não diz nada: bastou uma pessoa fechar cedo. Se o aviso disparasse
+ * nesses, disparava em quase todos — e **um alarme que dispara sempre é um alarme que
+ * ninguém lê**, que é uma lição que este canal já pagou. Por isso há três gavetas, e a do
+ * meio diz "ainda não sei" em vez de fingir que sabe.
+ *
+ * ⚠️ A régua é a **percentagem média assistida**, que é o número que o próprio YouTube
+ * mostra. Em Shorts ela **pode passar de 100%** — o vídeo repete em ciclo e quem revê
+ * conta outra vez. Passar dos 100% é o melhor sinal que existe, não um erro.
+ */
+export const RETENCAO_MINIMA = 0.70;
+/**
+ * ⚠️ **DEZ, E É UM NÚMERO PROVISÓRIO — escolhido contra os dados REAIS de hoje.**
+ * O primeiro palpite foram 25, e medido contra o canal deixava **1 vídeo em 10** julgado:
+ * um aviso que nunca diria nada durante meses vale o mesmo que aviso nenhum. Com 10, os
+ * números de hoje já falam — e falam a sério: **cinco vídeos abaixo dos 70%** (46%, 50%,
+ * 51%, 60%, 61%) e **dois muito acima** (92% e 94%).
+ * **Subir isto quando o canal crescer**: 10 visualizações é sinal fraco, e o aviso escreve
+ * sempre quantas visualizações estão por trás de cada número para se poder desconfiar.
+ */
+export const VISUALIZACOES_MINIMAS = 10;
+
+export function avaliarRetencao(videos, { minimo = RETENCAO_MINIMA, minViews = VISUALIZACOES_MINIMAS } = {}) {
+  const abaixo = [];
+  const acima = [];
+  const semAudiencia = [];
+  for (const v of videos || []) {
+    const p = v?.percentagemMedia;
+    if (typeof p !== 'number' || !Number.isFinite(p)) { semAudiencia.push(v); continue; }
+    if ((v.views || 0) < minViews) { semAudiencia.push(v); continue; }
+    (p < minimo ? abaixo : acima).push(v);
+  }
+  // Do pior para o melhor: quem lê um aviso lê a primeira linha.
+  abaixo.sort((a, b) => a.percentagemMedia - b.percentagemMedia);
+  return { abaixo, acima, semAudiencia };
+}
+
+/**
  * ⚠️ DÍVIDA CONHECIDA: isto é uma cópia do `getAccessToken` do upload-short.js.
  * A razão original desapareceu no mesmo dia — aquele ficheiro passou a só correr
  * quando é chamado pelo nome, e já se deixa importar em segurança (foi assim que
@@ -262,21 +305,54 @@ async function main() {
     log('   e a retenção mede-se outra vez quando os vídeos públicos acumularem audiência.');
   }
 
-  const payload = { medidoEm: new Date().toISOString(), resumo, videos: resultados };
+  // ── O AVISO DOS 70% (ordem do dono, 06/08) ──
+  const veredito = avaliarRetencao(resultados);
+  const avisoLinhas = [];
+  log('');
+  log(`══════════ O AVISO DOS ${Math.round(RETENCAO_MINIMA * 100)}% ══════════`);
+  if (veredito.abaixo.length) {
+    avisoLinhas.push(`🔴 **${veredito.abaixo.length} vídeo(s) abaixo de ${Math.round(RETENCAO_MINIMA * 100)}%** — o ganho está mau, é preciso mudar alguma coisa:`);
+    for (const v of veredito.abaixo) avisoLinhas.push(`- ${pc(v.percentagemMedia)} · ${v.slug} (${v.views} visualizações) · https://youtu.be/${v.videoId}`);
+  } else if (veredito.acima.length) {
+    avisoLinhas.push(`✅ Nenhum vídeo com audiência abaixo de ${Math.round(RETENCAO_MINIMA * 100)}%. Os ${veredito.acima.length} medidos estão bem.`);
+  } else {
+    avisoLinhas.push(`⏳ **Ainda não dá para julgar ninguém.** Nenhum vídeo chegou às ${VISUALIZACOES_MINIMAS} visualizações — abaixo disso a percentagem é um acaso, não um sinal.`);
+  }
+  if (veredito.semAudiencia.length) {
+    avisoLinhas.push(`⏳ ${veredito.semAudiencia.length} vídeo(s) ainda sem audiência suficiente (menos de ${VISUALIZACOES_MINIMAS} visualizações) — não são julgados.`);
+  }
+  log(avisoLinhas.join('\n').replace(/\*\*/g, ''));
+
+  const payload = { medidoEm: new Date().toISOString(), resumo, aviso: {
+    minimo: RETENCAO_MINIMA,
+    visualizacoesMinimas: VISUALIZACOES_MINIMAS,
+    abaixo: veredito.abaixo.map((v) => ({ slug: v.slug, videoId: v.videoId, percentagemMedia: v.percentagemMedia, views: v.views })),
+    julgados: veredito.abaixo.length + veredito.acima.length,
+  }, videos: resultados };
   mkdirSync(dirname(OUT), { recursive: true });
   writeFileSync(OUT, `${JSON.stringify(payload, null, 2)}\n`, 'utf-8');
   log(`\n📝 Gravado em ${OUT}`);
 
   if (process.env.GITHUB_STEP_SUMMARY) {
     appendFileSync(process.env.GITHUB_STEP_SUMMARY,
-      `## 📉 Retenção dos Shorts\n\n${linhas.join('\n')}\n\n` +
+      `## 📉 Retenção dos Shorts\n\n${avisoLinhas.join('\n')}\n\n${linhas.join('\n')}\n\n` +
       (resumo.comCurva
         ? `**Início (100% = visto 1×, acima disso = revisto):** ${pc(resumo.ficamAte3s)} · **a meio:** ${pc(resumo.ficamAte50pc)} · **no fim:** ${pc(resumo.ficamAteAoFim)} · **metade sai aos:** ${resumo.metadeSaiAosSegundos == null ? '—' : `${Math.round(resumo.metadeSaiAosSegundos)}s`}\n`
         : `⚠️ Sem curva: audiência pequena de mais.\n`));
   }
 }
 
-main().catch((err) => {
-  console.error(`\n❌ ${err.message}`);
-  process.exit(1);
-});
+/**
+ * ⚠️ **SÓ CORRE QUANDO É CHAMADO PELO NOME** — a mesma guarda que o `upload-short.js`
+ * ganhou em 03/08, pela mesma razão: sem ela, **importar este ficheiro dispara a
+ * medição**, com chaves e tudo. Foi o que aconteceu ao escrever a prova de mesa do
+ * aviso dos 70%: ela só queria a função da conta e o programa inteiro arrancou.
+ */
+const chamadoPeloNome = process.argv[1]
+  && process.argv[1].replace(/\\/g, '/').endsWith('youtube/retencao.js');
+if (chamadoPeloNome) {
+  main().catch((err) => {
+    console.error(`\n❌ ${err.message}`);
+    process.exit(1);
+  });
+}

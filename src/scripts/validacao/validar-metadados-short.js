@@ -17,6 +17,8 @@ import {
   titularOShort, escolherEtiquetas, variacoesDaEtiqueta,
   buildMetadata, deterministicMeta, respostaCortada, MAX_PALAVRAS_TITULO_SHORT,
 } from '../youtube/upload-short.js';
+import { avaliarRetencao, RETENCAO_MINIMA } from '../youtube/retencao.js';
+import { prateleirasDoVideo, PLAYLIST_GERAL } from '../youtube/lib/playlists.js';
 
 let passou = 0;
 let falhou = 0;
@@ -119,6 +121,73 @@ console.log('\n3. AS ETIQUETAS — encher os 500 caracteres, sem inventar palavr
   ok('as variações lêem-se bem com um NOME e com uma AÇÃO',
     variacoesDaEtiqueta('sair do vermelho').join('|') === 'sair do vermelho|o que é sair do vermelho|sair do vermelho na prática|sair do vermelho 2026');
   ok('uma lista vazia não rebenta', escolherEtiquetas([]).length === 0 && escolherEtiquetas(null).length === 0);
+}
+
+console.log('\n4. O AVISO DOS 70% (ordem do dono, 06/08)');
+
+{
+  const v = (slug, percentagemMedia, views) => ({ slug, videoId: slug, percentagemMedia, views });
+  const r = avaliarRetencao([
+    v('mau', 0.46, 50), v('bom', 0.92, 50), v('na-risca', 0.70, 50),
+    v('poucas-views', 0.30, 3), v('sem-dados', null, 100),
+  ]);
+  ok('um vídeo com 46% e audiência entra no aviso', r.abaixo.some((x) => x.slug === 'mau'));
+  ok('um com 92% não entra', r.acima.some((x) => x.slug === 'bom'));
+  ok('exatamente 70% conta como bom (a régua é "abaixo de")', r.acima.some((x) => x.slug === 'na-risca'));
+  /**
+   * 🔴 A TRAVA QUE IMPEDE UM ALARME QUE DISPARA SEMPRE. Um vídeo com 3 visualizações e
+   * 30% não diz nada — bastou uma pessoa fechar cedo. Sem isto, o aviso acendia em quase
+   * todos os vídeos do canal e ninguém o leria ao fim de duas semanas.
+   */
+  ok('🔴 um vídeo com 3 visualizações NÃO é julgado', r.semAudiencia.some((x) => x.slug === 'poucas-views'));
+  ok('e um sem número nenhum também não', r.semAudiencia.some((x) => x.slug === 'sem-dados'));
+  ok('o pior aparece em primeiro lugar', r.abaixo[0]?.slug === 'mau');
+  ok('a régua combinada com o dono são 70%', RETENCAO_MINIMA === 0.70);
+  ok('uma lista vazia não rebenta', avaliarRetencao([]).abaixo.length === 0 && avaliarRetencao(null).abaixo.length === 0);
+  /**
+   * ⚠️ Em Shorts a percentagem **pode passar de 100%** — o vídeo repete em ciclo e quem
+   * revê conta outra vez. É o melhor sinal que existe, e o aviso não o pode confundir
+   * com um erro.
+   */
+  ok('passar dos 100% é BOM, não é erro', avaliarRetencao([v('viral', 1.3, 500)]).acima.length === 1);
+}
+
+console.log('\n5. AS PLAYLISTS — a prateleira certa, escolhida por tabela');
+
+{
+  const nomes = (texto) => prateleirasDoVideo(texto).map((p) => p.titulo);
+  ok('um vídeo de dívida vai para "Sair das dívidas"',
+    nomes('Dívida do cartão: como sair do vermelho')[0] === 'Sair das dívidas');
+  ok('um de tesouro vai para "Investir do zero"',
+    nomes('Tesouro Direto com R$ 100 vale a pena')[0] === 'Investir do zero');
+  ok('um de orçamento vai para "Organizar o mês"',
+    nomes('Como fazer o salário chegar ao fim do mês')[0] === 'Organizar o mês');
+  ok('um de inflação vai para "Entender o dinheiro"',
+    nomes('Inflação: 3 erros que te custam caro')[0] === 'Entender o dinheiro');
+  /**
+   * ⚠️ **TUDO ENTRA NA PRATELEIRA GERAL**, sem exceção — é ela que a tela final do vídeo
+   * longo vai apontar, e uma prateleira com buracos manda o espectador para o vazio.
+   */
+  ok('e TODOS entram também na prateleira geral',
+    ['dívida', 'tesouro', 'salário', 'inflação', 'um assunto que não casa com nada']
+      .every((t) => nomes(t).includes(PLAYLIST_GERAL.titulo)));
+  ok('um assunto que não casa com nenhuma vai SÓ para a geral',
+    nomes('um assunto que não casa com nada').length === 1);
+  ok('os acentos não estragam a escolha (divida = dívida)',
+    nomes('divida do cartao')[0] === 'Sair das dívidas');
+  /**
+   * 🔴 A PROVA QUE APANHOU UM DEFEITO NO PRIMEIRO MINUTO: **"inflação" contém "ação"**, e
+   * o vídeo sobre inflação ia parar à prateleira dos investimentos — sem nada a queixar-se.
+   * Um termo só conta quando COMEÇA uma palavra.
+   */
+  ok('🔴 "inflação" não é confundido com "ações"',
+    !nomes('Inflação: 3 erros que te custam caro').includes('Investir do zero'));
+  ok('mas "ações" continua a ser apanhado',
+    nomes('Ações: como transformar R$50 em R$75')[0] === 'Investir do zero');
+  ok('e as raízes continuam a funcionar (investi → investimento)',
+    nomes('O melhor investimento para começar')[0] === 'Investir do zero');
+  ok('nunca há prateleiras repetidas',
+    new Set(nomes('dívida do cartão')).size === nomes('dívida do cartão').length);
 }
 
 console.log(`\n${'═'.repeat(72)}`);
