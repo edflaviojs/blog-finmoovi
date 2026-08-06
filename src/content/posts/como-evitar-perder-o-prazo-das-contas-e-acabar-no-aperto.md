@@ -33,7 +33,7 @@ O FinMoovi foi pensado para ser o seu assistente financeiro pessoal. Ao abrir o 
 - **Smart Capture**: se preferir, ative a voz que, ao chegar próximo do prazo, lê o nome da conta e o valor, como se fosse um lembrete de um amigo.
 - **Modo offline**: mesmo sem internet, o app mantém as informações armazenadas localmente, garantindo que o lembrete apareça quando você estiver conectado à rede móvel ou Wi‑Fi.
 
-Tudo isso acontece sem precisar abrir várias abas ou procurar o boleto na caixa de entrada. O FinMoovi ainda categoriza automaticamente a despesa (moradia, transporte, lazer) usando IA, facilitando a visualização do fluxo de caixa.
+Tudo isso acontece sem precisar abrir várias abas ou procurar o boleto na caixa de entrada. O FinMoovi ainda categoriza automaticamente a despesa (moradia, transporte, lazer) usando IA, facilitando a visualização do [fluxo de caixa](/glossario/fluxo-de-caixa).
 
 ### Passo a passo prático: 5 minutos para mudar sua rotina
 1. **Abra o FinMoovi** e toque em “+ Nova Conta”.

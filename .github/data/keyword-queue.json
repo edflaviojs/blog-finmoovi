@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-05T12:30:57.728Z",
-  "sourceCursor": 0,
+  "updatedAt": "2026-08-06T12:48:57.150Z",
+  "sourceCursor": 1,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -248,9 +248,11 @@
       "category": "glossario",
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "used",
       "addedAt": "2026-07-27T11:01:33.051Z",
-      "finmooviHook": "Veja entradas e saídas do mês num só painel e descubra para onde seu dinheiro está indo."
+      "finmooviHook": "Veja entradas e saídas do mês num só painel e descubra para onde seu dinheiro está indo.",
+      "usedAt": "2026-08-06T12:48:57.150Z",
+      "usedBy": "glossario-auto-diario"
     },
     {
       "keyword": "saldo devedor",

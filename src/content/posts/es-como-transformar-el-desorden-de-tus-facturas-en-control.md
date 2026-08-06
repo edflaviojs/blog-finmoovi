@@ -49,7 +49,7 @@ Aquí entra en juego FinMoovi. Abre la app, elige la opción de **captura inteli
 * Fecha de la compra  
 * Tipo de gasto (según palabras‑clave)
 
-Todo sin escribir nada. Puedes confirmar o ajustar la categoría con un toque, y el registro aparece en tu panel de flujo de caja. Esta automatización elimina errores de tipeo y asegura que ningún gasto quede “olvidado”.
+Todo sin escribir nada. Puedes confirmar o ajustar la categoría con un toque, y el registro aparece en tu panel de [flujo de caja](/es/glossario/es-flujo-de-caja). Esta automatización elimina errores de tipeo y asegura que ningún gasto quede “olvidado”.
 
 ---
 

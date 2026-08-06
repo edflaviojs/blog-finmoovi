@@ -27,7 +27,7 @@ A ideia de poupar não precisa ser um plano complexo nem um sacrifício extremo.
 
 ## Crie o hábito da captura inteligente
 
-A primeira barreira para economizar costuma ser a falta de visibilidade. Quando não sabemos quanto gastamos, não conseguimos cortar o que é supérfluo. O recurso de [captura inteligente](/posts/como-garantir-financiamento-para-seus-projetos-sem-dor-de) do FinMoovi elimina esse obstáculo. Ao fotografar o recibo da compra no supermercado, o app reconhece os itens, agrupa-os nas categorias corretas e atualiza seu fluxo de caixa instantaneamente. Essa visualização imediata já cria um efeito de “freio” nas próximas decisões de consumo.
+A primeira barreira para economizar costuma ser a falta de visibilidade. Quando não sabemos quanto gastamos, não conseguimos cortar o que é supérfluo. O recurso de [captura inteligente](/posts/como-garantir-financiamento-para-seus-projetos-sem-dor-de) do FinMoovi elimina esse obstáculo. Ao fotografar o recibo da compra no supermercado, o app reconhece os itens, agrupa-os nas categorias corretas e atualiza seu [fluxo de caixa](/glossario/fluxo-de-caixa) instantaneamente. Essa visualização imediata já cria um efeito de “freio” nas próximas decisões de consumo.
 
 **Dica prática:** antes de fechar a conta do cartão, reserve um momento para revisar as categorias no app; se algo parece fora do padrão, ajuste o limite da categoria para o próximo mês.
 

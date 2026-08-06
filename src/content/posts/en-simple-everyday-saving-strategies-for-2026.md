@@ -27,7 +27,7 @@ Imagine this: you get home after a long day, open the fridge and notice the last
 
 ## Build the habit of smart capture
 
-The biggest barrier to saving is usually a lack of visibility. If you don’t know how much you’re spending, you can’t trim the non‑essential stuff. FinMoovi’s smart‑capture feature removes that obstacle. When you photograph a supermarket receipt, the app reads the items, groups them into the right categories, and updates your cash flow instantly. That immediate snapshot creates a “brake” effect on future spending decisions.
+The biggest barrier to saving is usually a lack of visibility. If you don’t know how much you’re spending, you can’t trim the non‑essential stuff. FinMoovi’s smart‑capture feature removes that obstacle. When you photograph a supermarket receipt, the app reads the items, groups them into the right categories, and updates your [cash flow](/en/glossario/en-cash-flow) instantly. That immediate snapshot creates a “brake” effect on future spending decisions.
 
 **Practical tip:** before you settle your [credit](/en/glossario/en-credit)‑card bill, take a moment to review the categories in the app; if something looks out of line, adjust the budget limit for that category for the next month.
 

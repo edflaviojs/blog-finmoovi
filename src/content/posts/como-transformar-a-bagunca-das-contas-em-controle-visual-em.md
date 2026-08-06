@@ -51,7 +51,7 @@ Aqui o FinMoovi entra em ação. Abra o app, escolha a opção de **captura inte
 * Data da compra
 * Tipo de despesa (com base nas palavras‑chave)
 
-Tudo isso sem precisar digitar nada. Você ainda pode confirmar ou ajustar a categoria com um toque, e o registro já aparece no seu painel de fluxo de caixa. Essa automação elimina erros de digitação e garante que nenhum gasto fique “esquecido”.
+Tudo isso sem precisar digitar nada. Você ainda pode confirmar ou ajustar a categoria com um toque, e o registro já aparece no seu painel de [fluxo de caixa](/glossario/fluxo-de-caixa). Essa automação elimina erros de digitação e garante que nenhum gasto fique “esquecido”.
 
 ---
 

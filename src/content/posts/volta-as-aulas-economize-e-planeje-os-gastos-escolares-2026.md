@@ -49,7 +49,7 @@ Além disso, explore opções [multimoeda](/posts/voce-perde-o-controle-dos-gast
 
 ## Controle de despesas ao longo do semestre
 
-Depois que as aulas começam, as despesas não param. Há gastos recorrentes com material de arte, reposição de lápis, e até atividades extracurriculares. O fluxo de caixa do FinMoovi oferece um panorama visual das categorias de gasto, facilitando ajustes rápidos. Se perceber que a categoria “Material de Arte” está consumindo mais que o equivalente a um jantar fora por mês, basta reduzir a frequência de compras ou buscar alternativas mais baratas.
+Depois que as aulas começam, as despesas não param. Há gastos recorrentes com material de arte, reposição de lápis, e até atividades extracurriculares. O [fluxo de caixa](/glossario/fluxo-de-caixa) do FinMoovi oferece um panorama visual das categorias de gasto, facilitando ajustes rápidos. Se perceber que a categoria “Material de Arte” está consumindo mais que o equivalente a um jantar fora por mês, basta reduzir a frequência de compras ou buscar alternativas mais baratas.
 
 ![Controle de despesas ao longo do semestre](/images/posts/volta-as-aulas-economize-e-planeje-os-gastos-escolares-2026-4.webp)
 

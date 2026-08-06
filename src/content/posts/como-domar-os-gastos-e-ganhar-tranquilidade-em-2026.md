@@ -35,7 +35,7 @@ Ao registrar cada gasto no FinMoovi, o app já separa essas categorias, permitin
 
 ## Dica prática: o ritual dos 30 dias
 
-**Dica prática:** Reserve os primeiros 30 dias do mês para observar, sem mudar nada, onde seu dinheiro aparece. Use o recurso de “Fluxo de caixa” do FinMoovi para gerar um relatório diário. No final do período, analise quais categorias consumiram mais do que o esperado e escolha uma única despesa para reduzir no próximo mês. Esse pequeno ajuste já costuma gerar uma economia equivalente ao custo de um jantar fora por pessoa.
+**Dica prática:** Reserve os primeiros 30 dias do mês para observar, sem mudar nada, onde seu dinheiro aparece. Use o recurso de “[Fluxo de caixa](/glossario/fluxo-de-caixa)” do FinMoovi para gerar um relatório diário. No final do período, analise quais categorias consumiram mais do que o esperado e escolha uma única despesa para reduzir no próximo mês. Esse pequeno ajuste já costuma gerar uma economia equivalente ao custo de um jantar fora por pessoa.
 
 ![Dica prática: o ritual dos 30 dias](/images/posts/como-domar-os-gastos-e-ganhar-tranquilidade-em-2026-2.webp)
 
