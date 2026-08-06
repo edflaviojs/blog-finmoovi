@@ -6,7 +6,7 @@ imageAlt: "Gráfico de velas con colores naranja y azul sobre fondo negro."
 category: "orcamento"
 tags: ["presupuesto", "finanzas personales", "planificación financiera", "control de gastos"]
 author: "FinMoovi"
-publishedAt: 2025-05-15
+publishedAt: 2026-05-20
 readingTime: 7
 featured: true
 locale: "es"

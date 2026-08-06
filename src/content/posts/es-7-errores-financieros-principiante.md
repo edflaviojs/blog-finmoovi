@@ -6,7 +6,7 @@ imageAlt: "Gráfico de barras verdes y amarillas en un fondo negro."
 category: "dicas"
 tags: ["errores financieros", "finanzas personales", "educación financiera", "consejos"]
 author: "FinMoovi"
-publishedAt: 2025-05-10
+publishedAt: 2026-05-20
 readingTime: 5
 featured: false
 locale: "es"

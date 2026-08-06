@@ -6,7 +6,7 @@ imageAlt: "Green and yellow gradient bars on black background, varying heights."
 category: "dicas"
 tags: ["financial mistakes", "personal finance", "financial education", "tips"]
 author: "FinMoovi"
-publishedAt: 2025-05-10
+publishedAt: 2026-05-20
 readingTime: 5
 featured: false
 locale: "en"

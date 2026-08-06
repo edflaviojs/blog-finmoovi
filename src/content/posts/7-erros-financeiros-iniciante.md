@@ -6,7 +6,7 @@ imageAlt: "Gráfico de barras coloridas em degradê verde e laranja em fundo pre
 category: "dicas"
 tags: ["erros financeiros", "finanças pessoais", "educação financeira", "dicas"]
 author: "FinMoovi"
-publishedAt: 2025-05-10
+publishedAt: 2026-05-19
 updatedAt: 2026-07-01
 readingTime: 5
 featured: false

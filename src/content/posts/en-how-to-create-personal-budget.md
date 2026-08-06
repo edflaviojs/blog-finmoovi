@@ -6,7 +6,7 @@ imageAlt: "Colorful stock market chart on black background with orange and blue 
 category: "orcamento"
 tags: ["budget", "personal finance", "financial planning", "expense control"]
 author: "FinMoovi"
-publishedAt: 2025-05-15
+publishedAt: 2026-05-20
 readingTime: 7
 featured: true
 locale: "en"
