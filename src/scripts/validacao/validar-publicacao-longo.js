@@ -30,7 +30,7 @@ import { proximoLongo, comoArgumentos } from '../youtube/pick-next-longo.js';
 import { conferirTema, caudaDoTitulo, fazerSlug } from '../youtube/temas-longo.js';
 import { conferirImagens, escolherLugaresDaFoto } from '../youtube/lib/imagens-longo.js';
 import { PAPEIS, pistaDaCena, pedidoDaFoto, pedidoDoCartaz, doBanco, guardarNoBanco, NAO_REPETIR_EM } from '../youtube/fotos-longo.js';
-import { tempoDosCapitulos } from '../youtube/descricao-longo.js';
+import { tempoDosCapitulos, montarDescricao, conferirCapitulos, blocosDeReserva, palavrasDoVideo } from '../youtube/descricao-longo.js';
 
 const RAIZ = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
 const FPS = 30;
@@ -151,7 +151,14 @@ console.log('\n1. A LINHA DO TEMPO DAS LEGENDAS');
    * Um capítulo apontado um segundo cedo faz a pessoa ver o cartão; um segundo tarde
    * faz a pessoa perder o princípio, e é isso que não pode acontecer.
    */
-  const { marcas } = tempoDosCapitulos(planoDeMesa, timingDeMesa);
+  /**
+   * ♦ 06/08/2026 — A DESCRIÇÃO PASSOU A TER MAIS CAPÍTULOS DO QUE O VÍDEO TEM CARTÕES.
+   * Antes eram a mesma coisa e comparava-se lista contra lista. Agora há três famílias
+   * (o 00:00, os cartões, e os momentos sem placa), e o que se prova é **a relação que
+   * importa**: todo o cartão do ecrã tem a sua linha na descrição, no segundo certo.
+   * As marcas sem cartão são conferidas mais abaixo, contra as regras do YouTube.
+   */
+  const { marcas, cartoes } = tempoDosCapitulos(planoDeMesa, timingDeMesa);
   const cartoesDaLegenda = [];
   planoDeMesa.scenes.forEach((c, i) => {
     if (c.abreCapitulo && c.capitulo) cartoesDaLegenda.push(legenda.inicios[i] - CARTAO_CAPITULO_FRAMES / FPS);
@@ -159,15 +166,19 @@ console.log('\n1. A LINHA DO TEMPO DAS LEGENDAS');
   const minuto = (s) => Math.floor(Math.max(0, s));
   ok(
     'há um capítulo na descrição para cada cartão de capítulo do vídeo',
-    marcas.length === cartoesDaLegenda.length,
-    `${marcas.length} contra ${cartoesDaLegenda.length}`,
+    cartoes.length === cartoesDaLegenda.length,
+    `${cartoes.length} contra ${cartoesDaLegenda.length}`,
+  );
+  ok(
+    'e todos eles estão mesmo na lista que vai para o YouTube',
+    cartoes.every((c) => marcas.includes(c)),
   );
   ok(
     'e o segundo escrito na descrição nunca cai DEPOIS de o capítulo começar',
-    marcas.every((m, i) => minuto(m.seg) <= minuto(cartoesDaLegenda[i])),
-    marcas.map((m, i) => `${minuto(m.seg)}>${minuto(cartoesDaLegenda[i])}`).join(' '),
+    cartoes.every((m, i) => minuto(m.seg) <= minuto(cartoesDaLegenda[i])),
+    cartoes.map((m, i) => `${minuto(m.seg)}>${minuto(cartoesDaLegenda[i])}`).join(' '),
   );
-  const desvio = Math.max(...marcas.map((m, i) => Math.abs(m.seg - cartoesDaLegenda[i])));
+  const desvio = Math.max(...cartoes.map((m, i) => Math.abs(m.seg - cartoesDaLegenda[i])));
   ok(
     'as duas contas nunca se afastam mais do que meio segundo',
     desvio < 0.5,
@@ -196,6 +207,143 @@ console.log('\n1. A LINHA DO TEMPO DAS LEGENDAS');
     erroDoShort > 1,
     `daria um erro de ${erroDoShort.toFixed(2)}s`,
   );
+}
+
+// ═══ 1B. OS CAPÍTULOS E A DESCRIÇÃO ══════════════════════════════════════════
+console.log('\n1B. OS CAPÍTULOS E A DESCRIÇÃO (06/08/2026)');
+
+{
+  /**
+   * 🔴 **AS TRÊS REGRAS DO YOUTUBE PARA O ÍNDICE NÃO DÃO ERRO NENHUM QUANDO SE PARTEM.**
+   * O YouTube limita-se a **não mostrar índice** — e a descrição fica com uma lista de
+   * horas que não faz nada. A pior das três é a dos 10 segundos: **um só capítulo curto
+   * deita fora o índice INTEIRO**. É por isso que isto se prova aqui e não se descobre
+   * lá fora, a olhar para um vídeo que já está no ar.
+   */
+  ok('um capítulo com menos de 10 segundos é apanhado',
+    conferirCapitulos([{ seg: 0, titulo: 'a' }, { seg: 5, titulo: 'b' }, { seg: 60, titulo: 'c' }], 120).some((q) => q.includes('10s')));
+  ok('o último capítulo também conta — se for curto até ao fim da fala, é apanhado',
+    conferirCapitulos([{ seg: 0, titulo: 'a' }, { seg: 40, titulo: 'b' }, { seg: 115, titulo: 'c' }], 120).some((q) => q.includes('10s')));
+  ok('uma lista que não começa em 00:00 é apanhada',
+    conferirCapitulos([{ seg: 12, titulo: 'a' }, { seg: 40, titulo: 'b' }, { seg: 80, titulo: 'c' }], 120).some((q) => q.includes('00:00')));
+  ok('menos de três capítulos é apanhado',
+    conferirCapitulos([{ seg: 0, titulo: 'a' }, { seg: 40, titulo: 'b' }], 120).some((q) => q.includes('exige')));
+  ok('e uma lista bem feita não se queixa de nada',
+    conferirCapitulos([{ seg: 0, titulo: 'a' }, { seg: 40, titulo: 'b' }, { seg: 80, titulo: 'c' }], 120).length === 0);
+
+  /**
+   * ♦ OS MOMENTOS SEM PLACA — o que levou os capítulos de 4 para 6. A demonstração no app
+   * e o fecho existem no guião desde que o montador o escreve; o que é novo é a descrição
+   * marcá-los. ⚠️ **O vídeo não muda:** continuam a ser três cartões no ecrã.
+   */
+  /**
+   * ⚠️ **A DEMONSTRAÇÃO NÃO PODE VIR LOGO A SEGUIR A UM CARTÃO** neste vídeo de mesa, e
+   * a 1ª versão desta prova caiu nisso: entre um cartão e a cena seguinte passam 9,95
+   * segundos — cinco centésimos abaixo do mínimo do YouTube. A trava largou a marca e a
+   * prova ficou vermelha a acusar o código, quando o código estava certo. Aqui a
+   * demonstração e o fecho ficam onde ficam num vídeo a sério: bem longe dos cartões.
+   */
+  const comPartes = {
+    ...planoDeMesa,
+    scenes: [
+      ...planoDeMesa.scenes,
+      ...Array.from({ length: 4 }, (_, k) => ({
+        id: 13 + k, bloco: 'fecho', role: 'outro', capitulo: null, abreCapitulo: false,
+        parte: 'fecho', narration: `Frase de fecho número ${k + 1} deste vídeo de mesa.`,
+        palavras: 10, durationSec: 6,
+      })),
+    ].map((c, i) => ({
+      ...c,
+      // a demonstração no app cai a duas cenas do último cartão; o fecho, mais à frente
+      parte: i === 10 ? 'demonstracao' : (i >= 13 ? 'fecho' : (i < 12 ? c.parte : 'chamada')),
+    })),
+  };
+  const cheio = tempoDosCapitulos(comPartes, timingDeMesa);
+  ok('a demonstração no app e o fecho ganham capítulo, sem cartão no ecrã',
+    cheio.marcas.length === 6 && cheio.cartoes.length === 3,
+    `${cheio.marcas.length} capítulos · ${cheio.cartoes.length} cartões`);
+  ok('o primeiro capítulo é SEMPRE 00:00', cheio.marcas[0].seg === 0);
+  ok('os capítulos saem por ordem crescente de tempo',
+    cheio.marcas.every((m, i) => i === 0 || m.seg > cheio.marcas[i - 1].seg));
+  ok('e a lista inteira cumpre as regras do YouTube',
+    conferirCapitulos(cheio.marcas, cheio.totalSeg).length === 0,
+    conferirCapitulos(cheio.marcas, cheio.totalSeg).join(' · '));
+
+  /**
+   * 🔴 **UM MOMENTO SEM PLACA QUE FIQUE CURTO É DEITADO FORA, NÃO ENCOLHIDO** — senão
+   * ele sozinho apagava o índice todo. Aqui a demonstração cai logo a seguir ao cartão
+   * do capítulo 2, a menos de 10 segundos dele.
+   */
+  const colado = {
+    ...planoDeMesa,
+    scenes: planoDeMesa.scenes.map((c, i) => ({ ...c, parte: i === 5 ? 'demonstracao' : c.parte })),
+  };
+  const apertado = tempoDosCapitulos(colado, timingDeMesa);
+  ok('um momento sem placa colado ao capítulo anterior é largado',
+    apertado.largadas.length === 1 && apertado.cartoes.length === 3,
+    `largou ${apertado.largadas.length}, cartões ${apertado.cartoes.length}`);
+  ok('e nunca é o CARTÃO o largado — ele tem placa no ecrã e não pode ficar sem linha',
+    apertado.cartoes.every((c) => apertado.marcas.includes(c)));
+
+  /**
+   * 🔴 A HASHTAG DO VÍDEO ERRADO — o defeito que estava lá dentro até 06/08.
+   * As hashtags do vídeo longo estavam **escritas à mão para o piloto**: qualquer vídeo
+   * novo, sobre qualquer assunto, saía com `#SairDoVermelho`. Esta prova acende se
+   * alguém voltar a colar uma palavra deste ou daquele vídeo no código.
+   */
+  const descricao = montarDescricao(comPartes, timingDeMesa, {
+    naFila: { palavrasChave: ['reserva de emergência', 'quanto guardar'], glossario: 'reserva-de-emergencia' },
+    blocos: blocosDeReserva(comPartes, ['reserva de emergência', 'quanto guardar']),
+  });
+  ok('a descrição de um vídeo de reserva NÃO leva a hashtag do vídeo das dívidas',
+    !/vermelho|dívida|divida/i.test(descricao.texto.split('\n').pop()),
+    descricao.texto.split('\n').pop());
+  ok('as hashtags saem das palavras que o dono aprovou',
+    descricao.texto.includes('#ReservaDeEmergência'),
+    descricao.texto.split('\n').pop());
+  ok('e o link do glossário é o do assunto deste vídeo',
+    descricao.texto.includes('/glossario/reserva-de-emergencia/'));
+  /**
+   * ⚠️ **NUNCA UM TÍTULO DE SECÇÃO COM NADA POR BAIXO** — a mesma trava do Short (§55.1).
+   * O texto de reserva não traz perguntas, e nos dias maus é ele que é usado.
+   */
+  ok('sem perguntas escritas, a secção das perguntas não aparece',
+    !descricao.texto.includes('PERGUNTAS QUE'));
+  ok('mas com perguntas ela aparece',
+    montarDescricao(comPartes, timingDeMesa, {
+      naFila: {},
+      blocos: { sobre: 'Um texto.', aprender: ['Um tópico'], perguntas: ['Uma pergunta?'] },
+    }).texto.includes('PERGUNTAS QUE'));
+  ok('a descrição cabe no limite do YouTube (5000)', descricao.texto.length <= 5000, `${descricao.texto.length}`);
+  ok('e não sobrou nenhum sinal que o YouTube recusa', !/[<>]/.test(descricao.texto));
+
+  /**
+   * ⚠️ SEM FILA, O VÍDEO NÃO FICA SEM PALAVRAS. Cai no tema — que é sempre melhor do que
+   * uma descrição sem uma única palavra de busca.
+   */
+  ok('sem fila aprovada, as palavras saem do tema e a marca do canal continua lá',
+    palavrasDoVideo(planoDeMesa, {})[0] === 'Reserva de emergência'
+      && palavrasDoVideo(planoDeMesa, {}).includes('educação financeira'),
+    palavrasDoVideo(planoDeMesa, {}).join(' · '));
+
+  // ── contra o vídeo REAL, se ele estiver aqui ──
+  {
+    const caminhoPlano = join(RAIZ, 'youtube-render', 'public', 'roteiro', 'sair-do-vermelho.json');
+    const caminhoTiming = join(RAIZ, 'youtube-render', 'public', 'audio', 'sair-do-vermelho', 'timing.json');
+    if (existsSync(caminhoPlano) && existsSync(caminhoTiming)) {
+      const plano = JSON.parse(readFileSync(caminhoPlano, 'utf-8'));
+      const timing = JSON.parse(readFileSync(caminhoTiming, 'utf-8'));
+      const real = tempoDosCapitulos(plano, timing);
+      ok('o vídeo que vai ao ar tem 6 capítulos e continua com 3 cartões no ecrã',
+        real.marcas.length === 6 && real.cartoes.length === 3,
+        `${real.marcas.length} capítulos · ${real.cartoes.length} cartões`);
+      ok('e nenhum deles parte as regras do YouTube',
+        conferirCapitulos(real.marcas, real.totalSeg).length === 0,
+        conferirCapitulos(real.marcas, real.totalSeg).join(' · '));
+    } else {
+      console.log('  ⏭️  o guião do piloto não está nesta máquina — as 2 provas contra o vídeo real ficam de fora');
+    }
+  }
 }
 
 // ═══ 2. A HORA DE ESTREIA ════════════════════════════════════════════════════
@@ -553,6 +701,32 @@ console.log('\n5. O ROBÔ DIÁRIO NÃO É TOCADO');
     posicao('As fotografias') >= 0 && posicao('As fotografias') < posicao('A voz'),
     `fotografias no passo ${posicao('As fotografias') + 1}, voz no ${posicao('A voz') + 1}`,
   );
+  /**
+   * 🔴 **A CHAVE DA IA NO PASSO QUE PUBLICA** — apanhado em 06/08, minutos depois de a
+   * descrição passar a ter texto escrito.
+   *
+   * Os três blocos de texto da descrição são escritos a partir do guião, e a descrição
+   * que VAI AO AR é montada dentro do passo da subida (o passo da descrição só escreve
+   * uma pré-visualização em disco). Esse passo levava **só as chaves do YouTube**.
+   * Sem as da IA, isto **não falha nada**: sai o texto de reserva, em silêncio, todas as
+   * semanas, e a corrida acaba a verde. É o modo de falha mais caro desta casa — o que
+   * funciona à vista e mente por baixo.
+   */
+  const bloco = (nomeDoPasso) => {
+    const partes = fluxo.split(/^\s*-\s*name:\s*/m);
+    return partes.find((p) => p.startsWith(nomeDoPasso)) || '';
+  };
+  const temChaveDeIa = (texto) => /GROQ_API_KEY|CEREBRAS_API_KEY|KIE_AI_KEY|CLOUDFLARE_AI_TOKEN/.test(texto);
+  ok(
+    '🔴 o passo que PUBLICA leva as chaves da IA (é lá que a descrição a sério é escrita)',
+    temChaveDeIa(bloco('Subir ao YouTube')),
+    'sem elas a descrição sai com o texto de reserva todas as semanas, e ninguém dá por nada',
+  );
+  ok(
+    'e o passo da descrição também as leva',
+    temChaveDeIa(bloco('A descrição')),
+  );
+
   ok(
     'o robô dá 5 horas ao vídeo (são dez mil fotogramas)',
     /timeout-minutes:\s*300/.test(fluxo),

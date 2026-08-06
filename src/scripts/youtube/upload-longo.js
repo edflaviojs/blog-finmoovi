@@ -51,7 +51,7 @@ import { pathToFileURL } from 'node:url';
  * da chave do Google é exatamente esse caso.
  */
 import { getAccessToken } from './upload-short.js';
-import { montarDescricao } from './descricao-longo.js';
+import { prepararDescricao } from './descricao-longo.js';
 import { textoDoPrimeiroComentario, escreverPrimeiroComentario } from './lib/primeiro-comentario.js';
 
 // ─── caminhos ────────────────────────────────────────────────────────────────
@@ -563,11 +563,22 @@ async function principal() {
   }
 
   // ── a descrição, com os capítulos cronometrados sobre a voz REAL ──
-  const d = montarDescricao(plano, timing);
+  /**
+   * ⚠️ **ISTO ESPERA PELA IA** (06/08) — os três blocos de texto da descrição são
+   * escritos a partir do guião. Se ela falhar ou vier cortada, entra o texto de reserva
+   * e o vídeo sobe à mesma: **nada aqui pode parar uma publicação por causa de texto.**
+   */
+  const d = await prepararDescricao(plano, timing, { naFila });
   if (d.estimado) throw new Error('a descrição saiu com tempos estimados — não se publica assim.');
-  if (d.marcas.length < 2) {
-    log(`⚠️ só ${d.marcas.length + 1} capítulos — o YouTube exige 3 para os mostrar.`);
-  }
+  if (d.deReserva) log('⚠️ o texto da descrição é o DE RESERVA — a IA não devolveu resposta inteira.');
+  /**
+   * 🔴 AS REGRAS DO YOUTUBE PARA O ÍNDICE, CONFERIDAS ANTES DE SUBIR. Partir uma delas
+   * (primeiro fora do 00:00, menos de três, ou um capítulo com menos de 10 segundos) faz
+   * o YouTube **deitar fora o índice inteiro sem avisar** — e a descrição fica com uma
+   * lista de horas que não faz nada. Avisa, não pára: um índice que não aparece é muito
+   * menos grave do que uma semana sem vídeo.
+   */
+  for (const q of d.queixas) log(`⚠️ capítulos: ${q}`);
 
   // ── a hora de estreia ──
   const marcada = valor('publicar-em');
@@ -600,7 +611,8 @@ async function principal() {
   log(`\n🎬 ${titulo}`);
   log(`📅 estreia: ${emPortugues(estreia)}  (${estreia.toISOString()})`);
   // ⚠️ "de fala", não "de vídeo": esta conta não inclui a assinatura do fim (2,5 s).
-  log(`⏱️  ${d.marcas.length + 1} capítulos · ${Math.floor(d.totalSeg / 60)}min${String(Math.round(d.totalSeg % 60)).padStart(2, '0')} de fala`);
+  // ⚠️ `marcas` JÁ INCLUI o 00:00 desde 06/08 — o "+1" que estava aqui contava-o duas vezes.
+  log(`⏱️  ${d.marcas.length} capítulos (${d.cartoes.length} com placa no ecrã) · ${Math.floor(d.totalSeg / 60)}min${String(Math.round(d.totalSeg % 60)).padStart(2, '0')} de fala`);
   log(`🏷️  ${metadados.snippet.tags.length} palavras-chave`);
 
   if (ENSAIO) {
@@ -681,7 +693,7 @@ async function principal() {
     uploadedAt: new Date().toISOString(),
     publishAt: estreia.toISOString(),
     titulo: metadados.snippet.title,
-    capitulos: d.marcas.length + 1,
+    capitulos: d.marcas.length,
     legendas: legendas.filter((l) => existsSync(l.path)).map((l) => l.code),
   };
   gravarCaderno(caderno);
