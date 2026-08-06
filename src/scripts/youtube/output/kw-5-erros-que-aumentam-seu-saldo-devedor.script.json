@@ -1,0 +1,206 @@
+{
+  "slug": "kw-5-erros-que-aumentam-seu-saldo-devedor",
+  "term": "5 erros que aumentam seu saldo devedor",
+  "category": "mindset",
+  "keyword": "erros",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Sabe quais *erros no cartão fazem você dever mil reais*?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "domino",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Sabe quais erros no cartão fazem você dever mil reais? Em três meses, pequenos descuidos somam tudo isso.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "erros",
+          "visual": {
+            "type": "statement",
+            "text": "Pequenos hábitos, grande impacto"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "number",
+            "text": "R$ 1.000"
+          }
+        },
+        {
+          "anchor": "somam",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 1000,
+            "prefix": "R$"
+          },
+          "sfx": "coin"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Essa conta cresce com coisas comuns, tipo pagar só um pedaço da fatura, esquecer o dia de pagar e dividir muita compra.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "cresce",
+          "visual": {
+            "type": "statement",
+            "text": "Vai acumulando sem perceber"
+          }
+        },
+        {
+          "anchor": "fatura",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          },
+          "sfx": "alert"
+        },
+        {
+          "anchor": "dividir",
+          "visual": {
+            "type": "list",
+            "text": "Parcela • Atrasa • Parcela"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "E aí, esses errinhos juntos fazem a conta pular de quase nada para mil reais em só três meses.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "errinhos",
+          "visual": {
+            "type": "statement",
+            "text": "O efeito se acumula"
+          }
+        },
+        {
+          "anchor": "pular",
+          "visual": {
+            "type": "chart",
+            "text": "Crescimento da dívida"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "number",
+            "text": "R$ 1.000"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei tudo isso no FinMoovi, e ele me mostrou esses mil reais na tela.",
+      "durationSec": 5.8,
+      "shots": [
+        {
+          "anchor": "joguei",
+          "visual": {
+            "type": "app",
+            "app": "calculadora",
+            "note": "Simulação mostrando saldo chegando a R$ 1.000"
+          }
+        },
+        {
+          "anchor": "mostrou",
+          "visual": {
+            "type": "number",
+            "text": "R$ 1.000"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "tela",
+          "visual": {
+            "type": "statement",
+            "text": "Resultado na hora"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Comenta FINMOOVI aqui que eu te mando o app de graça para você ver o seu.",
+      "durationSec": 6.2,
+      "shots": [
+        {
+          "anchor": "FINMOOVI",
+          "visual": {
+            "type": "statement",
+            "text": "Peça o app grátis"
+          }
+        },
+        {
+          "anchor": "você",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Olha, são esses descuidos que aumentam o seu saldo devedor, que é a sua dívida. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "aumentam",
+          "visual": {
+            "type": "statement",
+            "text": "Evite esse ciclo"
+          }
+        },
+        {
+          "anchor": "devedor",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          }
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Controle muda tudo"
+          },
+          "sfx": "ding"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Comente FINMOOVI e receba o app",
+    "target": "app"
+  },
+  "totalDurationSec": 43.2
+}
