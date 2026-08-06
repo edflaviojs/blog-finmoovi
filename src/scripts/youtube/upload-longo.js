@@ -52,6 +52,7 @@ import { pathToFileURL } from 'node:url';
  */
 import { getAccessToken } from './upload-short.js';
 import { montarDescricao } from './descricao-longo.js';
+import { textoDoPrimeiroComentario, escreverPrimeiroComentario } from './lib/primeiro-comentario.js';
 
 // ─── caminhos ────────────────────────────────────────────────────────────────
 const ROOT = process.cwd();
@@ -659,6 +660,19 @@ async function principal() {
     } catch (err) {
       log(`⚠️ legenda ${l.code} falhou (o vídeo já está em cima): ${err.message}`);
     }
+  }
+
+  // ── o primeiro comentário (IMPL20 §54) ──
+  // ⚠️ O vídeo longo estreia AGENDADO e privado até à hora marcada. Um comentário
+  // escrito agora fica à espera com ele e aparece na estreia — não há nada a ganhar
+  // em adiar, e adiar exigiria um segundo robô só para isso.
+  // Fixar continua a ser à mão: a API do YouTube não tem esse comando.
+  try {
+    const texto = textoDoPrimeiroComentario({ ferramentaUrl: d.link, palavraChave: plano.tema });
+    await escreverPrimeiroComentario(chave, video.id, texto);
+    log('💬 primeiro comentário escrito — falta fixar à mão no Studio.');
+  } catch (err) {
+    log(`⚠️ o primeiro comentário falhou (o vídeo já está em cima): ${err.message}`);
   }
 
   // ── o caderno ──

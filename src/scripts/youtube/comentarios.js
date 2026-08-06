@@ -49,6 +49,7 @@
 
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
+import { textoDoPrimeiroComentario, escreverPrimeiroComentario } from './lib/primeiro-comentario.js';
 
 // ─── caminhos e constantes ───────────────────────────────────────────────────
 const ROOT = process.cwd();
@@ -69,6 +70,14 @@ const VIDEOS_A_OLHAR = 50;
  * vire vinte respostas no mesmo minuto, que é o que um humano nunca faria.
  */
 const MAX_POR_CORRIDA = 25;
+
+/**
+ * Quantos "primeiros comentários" em atraso se escrevem por corrida.
+ * Cinco, e não vinte e cinco: escrever de uma vez em doze vídeos antigos faria doze
+ * notificações no mesmo minuto a quem segue o canal — que é a definição de spam,
+ * mesmo quando o conteúdo é bom. Em duas ou três horas o atraso fica arrumado.
+ */
+const MAX_PRIMEIROS_POR_CORRIDA = 5;
 
 /**
  * As seis respostas. Todas dizem o mesmo; nenhuma diz igual.
@@ -265,6 +274,18 @@ async function main() {
   log(`🎬 vídeos a vasculhar: ${videos.length} (Shorts e longos)\n`);
 
   const pendentes = [];
+  /**
+   * ♦ 05/08/2026 — OS VÍDEOS QUE FICARAM SEM O PRIMEIRO COMENTÁRIO (IMPL20 §54).
+   *
+   * A partir de hoje o robô que publica escreve o primeiro comentário logo a seguir
+   * ao upload. Mas os 12 que já estavam no ar ficaram sem ele — e um robô que só
+   * serve o futuro deixa sempre um rasto de casos por tratar.
+   *
+   * ⚠️ **ISTO NÃO CUSTA UMA ÚNICA CONSULTA A MAIS.** A lista de comentários de cada
+   * vídeo já é pedida aqui em cima para procurar quem escreveu FINMOOVI. Saber se
+   * NÓS já comentámos é olhar para a mesma lista — a informação já está na mão.
+   */
+  const semNossoComentario = [];
   // ⚠️ CONTA-SE TUDO O QUE SE VÊ, e não só o que se responde.
   // "Zero pedidos" tem duas causas com o mesmo aspeto: ninguém pediu, ou o robô
   // está cego (comentários desligados, permissão errada, lista vazia). Sem este
@@ -275,6 +296,15 @@ async function main() {
     const comentarios = await comentariosDoVideo(token, v.videoId);
     comentariosVistos += comentarios.length;
     if (comentarios.length) videosComComentarios += 1;
+
+    // ⚠️ A PROVA DE QUE JÁ COMENTÁMOS É O AUTOR, não um caderno.
+    // Um caderno pode estar desatualizado ou ter sido apagado; o autor do comentário
+    // é o próprio YouTube a responder. Assim, este robô nunca escreve duas vezes no
+    // mesmo vídeo — nem que corra mil vezes.
+    if (!comentarios.some((c) => c.autorCanal && c.autorCanal === canalId)) {
+      semNossoComentario.push(v);
+    }
+
     for (const c of comentarios) {
       if (jaRespondidos.has(c.id)) continue;
       if (c.autorCanal && c.autorCanal === canalId) continue; // nunca a si próprio
@@ -284,6 +314,26 @@ async function main() {
   }
 
   log(`👀 comentários vistos: ${comentariosVistos} (em ${videosComComentarios} de ${videos.length} vídeos)`);
+
+  // ── o primeiro comentário nos vídeos que ficaram sem ele ──
+  if (semNossoComentario.length) {
+    const agora = semNossoComentario.slice(0, MAX_PRIMEIROS_POR_CORRIDA);
+    log(`\n💬 sem o nosso primeiro comentário: ${semNossoComentario.length} vídeo(s)`);
+    for (const v of agora) {
+      const texto = textoDoPrimeiroComentario({ palavraChave: null });
+      if (DRY_RUN) { log(`   [ensaio] ${v.titulo.slice(0, 50)}`); continue; }
+      try {
+        await escreverPrimeiroComentario(token, v.videoId, texto);
+        log(`   ✅ ${v.titulo.slice(0, 50)} → youtu.be/${v.videoId}`);
+      } catch (e) {
+        log(`   ⚠️ ${v.videoId}: ${e.message}`);
+      }
+    }
+    const sobram = semNossoComentario.length - agora.length;
+    // Um teto que ninguém vê é um teto que engana — a mesma regra das respostas.
+    if (sobram > 0) log(`   ⏳ ficaram ${sobram} para a próxima corrida (teto de ${MAX_PRIMEIROS_POR_CORRIDA}).`);
+    log('   ⚠️ FIXAR é à mão no Studio: a API do YouTube não tem esse comando.');
+  }
 
   if (pendentes.length === 0) {
     if (comentariosVistos === 0) {

@@ -30,6 +30,7 @@ import { getTitlePatterns } from '../lib/youtube-marketing.js';
 // desaparece sozinho. Foi por não haver isto que 9 vídeos foram ao ar sem creditar.
 import { creditoDaMusica, TRILHA } from './lib/musica.js';
 import { caminhoDaCapaLarga } from './capa-short.js';
+import { textoDoPrimeiroComentario, escreverPrimeiroComentario } from './lib/primeiro-comentario.js';
 
 // ─── caminhos ────────────────────────────────────────────────────────────────
 const ROOT = process.cwd();
@@ -699,6 +700,18 @@ async function main() {
     }
   } else {
     log(`⚠️ não veio capa no artefato (${capa}) — o vídeo fica com um fotograma ao calhas.`);
+  }
+
+  // ♦ 05/08/2026 — O PRIMEIRO COMENTÁRIO (IMPL20 §54).
+  // Num Short a descrição fica atrás de um toque; o comentário do criador aparece na
+  // conversa. ⚠️ Fixar não existe na API — são dois cliques no Studio, e é decisão de
+  // quem publica. Falhar aqui não derruba nada: o vídeo já está no ar.
+  try {
+    const texto = textoDoPrimeiroComentario({ ferramentaUrl: resolveToolUrl(script), palavraChave: script.keyword });
+    const comentarioId = await escreverPrimeiroComentario(accessToken, videoId, texto);
+    log(`💬 primeiro comentário escrito${comentarioId ? ` (${comentarioId})` : ''} — falta fixar à mão no Studio.`);
+  } catch (err) {
+    log(`⚠️ o primeiro comentário falhou (o vídeo já está no ar): ${err.message}`);
   }
 
   // Tracking.
