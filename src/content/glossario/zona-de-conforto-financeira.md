@@ -4,7 +4,7 @@ image: "/images/glossario/zona-de-conforto-financeira.webp"
 definition: "Situação onde a pessoa tem renda suficiente para cobrir gastos, reserva de emergência formada e investimentos crescendo. Estado de tranquilidade financeira."
 category: "basico"
 relatedTerms: ["Reserva de Emergência", "Orçamento Pessoal", "Patrimônio Líquido"]
-publishedAt: 2025-05-10
+publishedAt: 2026-05-19
 locale: "pt"
 translationKey: "glossario-zona-de-conforto-financeira"
 readingTime: 2

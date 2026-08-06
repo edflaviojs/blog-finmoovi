@@ -7,7 +7,7 @@ category: "basico"
 locale: "es"
 translationKey: "glossario-inflacao"
 relatedTerms: ["IPCA", "Selic", "Poder de Compra"]
-publishedAt: 2025-05-10
+publishedAt: 2026-05-19
 readingTime: 1
 ---
 

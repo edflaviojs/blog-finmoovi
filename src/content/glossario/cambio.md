@@ -5,7 +5,7 @@ imageAlt: "Moedas e barras de ouro empilhadas ao lado de um cofre dourado com pl
 definition: "Operação de troca entre moedas de diferentes países. A taxa de câmbio indica quanto vale uma moeda em relação a outra."
 category: "basico"
 relatedTerms: ["IOF", "Diversificação", "IPCA"]
-publishedAt: 2025-05-10
+publishedAt: 2026-05-19
 locale: "pt"
 translationKey: "glossario-cambio"
 readingTime: 2

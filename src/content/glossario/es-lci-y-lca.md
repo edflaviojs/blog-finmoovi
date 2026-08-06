@@ -5,7 +5,7 @@ imageAlt: "Monedas doradas apiladas y planta en frasco de vidrio sobre fondo osc
 definition: "Letras de Crédito Inmobiliario y del Agronegocio. Inversiones de renta fija exentas de Impuesto a la Renta para personas físicas."
 category: "investimentos"
 relatedTerms: ["CDI", "Renda Fixa", "CDB"]
-publishedAt: 2025-05-10
+publishedAt: 2026-05-19
 locale: "es"
 translationKey: "glossario-lci-e-lca"
 readingTime: 2

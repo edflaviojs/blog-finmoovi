@@ -4,7 +4,7 @@ image: "/images/glossario/independencia-financeira.webp"
 definition: "Estado onde sua renda passiva (investimentos) cobre todos os seus gastos mensais. Você não precisa mais trabalhar por dinheiro."
 category: "basico"
 relatedTerms: ["Patrimônio Líquido", "Dividendos", "Renda Fixa"]
-publishedAt: 2025-05-10
+publishedAt: 2026-05-19
 locale: "pt"
 translationKey: "glossario-independencia-financeira"
 readingTime: 2

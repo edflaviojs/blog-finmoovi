@@ -4,7 +4,7 @@ image: "/images/glossario/ipca.webp"
 definition: "Índice Nacional de Preços ao Consumidor Amplo. É o indicador oficial da inflação no Brasil, medido pelo IBGE mensalmente."
 category: "basico"
 relatedTerms: ["Inflação", "Selic", "Tesouro Direto"]
-publishedAt: 2025-05-10
+publishedAt: 2026-05-19
 locale: "pt"
 translationKey: "glossario-ipca"
 readingTime: 2

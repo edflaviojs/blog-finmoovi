@@ -5,7 +5,7 @@ imageAlt: "Moedas douradas, gráfico de barras, bola de cristal e plantas em fun
 definition: "Criptomoeda descentralizada criada em 2009. Funciona sem bancos ou governos, usando tecnologia blockchain para registrar transações."
 category: "investimentos"
 relatedTerms: ["Criptomoedas", "Blockchain", "Renda Variável"]
-publishedAt: 2025-05-10
+publishedAt: 2026-05-19
 locale: "pt"
 translationKey: "glossario-bitcoin"
 readingTime: 1

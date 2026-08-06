@@ -5,7 +5,7 @@ imageAlt: "Pilhas de moedas douradas com plantas crescendo, fundo roxo escuro."
 definition: "Conjunto de conhecimentos sobre como ganhar, gastar, poupar e investir dinheiro de forma consciente. Base para uma vida financeira saudável."
 category: "basico"
 relatedTerms: ["Orçamento Pessoal", "Reserva de Emergência", "Independência Financeira"]
-publishedAt: 2025-05-10
+publishedAt: 2026-05-19
 locale: "pt"
 translationKey: "glossario-educacao-financeira"
 readingTime: 2

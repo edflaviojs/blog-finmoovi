@@ -7,7 +7,7 @@ category: "investimentos"
 locale: "es"
 translationKey: "glossario-dividendos"
 relatedTerms: ["Ações", "Renda Variável", "Dividend Yield"]
-publishedAt: 2025-05-10
+publishedAt: 2026-05-19
 readingTime: 1
 ---
 

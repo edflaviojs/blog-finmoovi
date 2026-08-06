@@ -4,7 +4,7 @@ image: "/images/glossario/renda-variavel.webp"
 definition: "Categoria de investimentos onde o retorno não é previsível. Inclui ações, fundos imobiliários, criptomoedas e ETFs."
 category: "investimentos"
 relatedTerms: ["Ações", "Fundos Imobiliários", "Bolsa de Valores"]
-publishedAt: 2025-05-10
+publishedAt: 2026-05-19
 locale: "pt"
 translationKey: "glossario-renda-variavel"
 readingTime: 1

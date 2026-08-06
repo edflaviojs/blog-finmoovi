@@ -4,7 +4,7 @@ image: "/images/glossario/patrimonio-liquido.webp"
 definition: "Diferença entre tudo que você possui (ativos) e tudo que você deve (passivos). É a medida real da sua riqueza."
 category: "basico"
 relatedTerms: ["Orçamento Pessoal", "Reserva de Emergência", "Diversificação"]
-publishedAt: 2025-05-10
+publishedAt: 2026-05-19
 locale: "pt"
 translationKey: "glossario-patrimonio-liquido"
 readingTime: 2

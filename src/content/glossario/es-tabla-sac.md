@@ -5,7 +5,7 @@ imageAlt: "Monedas doradas apiladas y planta en frasco sobre fondo oscuro."
 definition: "Sistema de Amortización Constante. Método de pago de financiamientos donde el valor de la amortización (parte que reduce la deuda) es igual en todas las cuotas. Como los intereses disminuyen conforme el saldo deudor cae, las cuotas ficam menores a lo largo del tiempo."
 category: "credito"
 relatedTerms: ["Amortização", "Financiamento", "Juros Compostos"]
-publishedAt: 2025-05-10
+publishedAt: 2026-05-19
 locale: "es"
 translationKey: "glossario-tabela-sac"
 readingTime: 2

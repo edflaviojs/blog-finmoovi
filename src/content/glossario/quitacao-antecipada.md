@@ -4,7 +4,7 @@ image: "/images/glossario/quitacao-antecipada.webp"
 definition: "Pagamento total ou parcial de uma dívida antes do prazo previsto. Garante desconto nos juros futuros e é um direito do consumidor."
 category: "credito"
 relatedTerms: ["Amortização", "Financiamento", "Juros Compostos"]
-publishedAt: 2025-05-10
+publishedAt: 2026-05-19
 locale: "pt"
 translationKey: "glossario-quitacao-antecipada"
 readingTime: 2

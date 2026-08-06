@@ -7,7 +7,7 @@ category: "credito"
 locale: "en"
 translationKey: "glossario-cheque-especial"
 relatedTerms: ["Score de Crédito", "Juros Compostos", "Financiamento"]
-publishedAt: 2025-05-10
+publishedAt: 2026-05-19
 readingTime: 2
 ---
 

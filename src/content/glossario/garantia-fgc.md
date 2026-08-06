@@ -4,7 +4,7 @@ image: "/images/glossario/garantia-fgc.webp"
 definition: "Proteção oferecida pelo Fundo Garantidor de Créditos que cobre até R$ 250.000 por CPF por instituição em caso de falência do banco."
 category: "basico"
 relatedTerms: ["CDI", "Renda Fixa", "CDB"]
-publishedAt: 2025-05-10
+publishedAt: 2026-05-19
 locale: "pt"
 translationKey: "glossario-garantia-fgc"
 readingTime: 1

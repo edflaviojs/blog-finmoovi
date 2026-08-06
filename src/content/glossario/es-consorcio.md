@@ -7,7 +7,7 @@ category: "credito"
 locale: "es"
 translationKey: "glossario-consorcio"
 relatedTerms: ["Financiamento", "Amortização", "Poupança"]
-publishedAt: 2025-05-10
+publishedAt: 2026-05-19
 readingTime: 2
 ---
 

@@ -5,7 +5,7 @@ imageAlt: "Moedas douradas, gráfico azul e planta crescendo sobre fundo roxo co
 definition: "Certificado de Depósito Interbancário. Taxa de referência para investimentos de renda fixa no Brasil. Acompanha de perto a taxa Selic."
 category: "investimentos"
 relatedTerms: ["Selic", "CDB", "Renda Fixa"]
-publishedAt: 2025-05-10
+publishedAt: 2026-05-19
 locale: "pt"
 translationKey: "glossario-cdi"
 readingTime: 1

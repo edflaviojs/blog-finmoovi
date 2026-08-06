@@ -5,7 +5,7 @@ imageAlt: "Pilhas de moedas douradas, frascos de vidro e planta verde sobre fund
 definition: "Sistema de compra coletiva onde um grupo de pessoas contribui mensalmente para formar um fundo comum. Participantes são contemplados por sorteio ou lance."
 category: "credito"
 relatedTerms: ["Financiamento", "Amortização", "Poupança"]
-publishedAt: 2025-05-10
+publishedAt: 2026-05-19
 locale: "pt"
 translationKey: "glossario-consorcio"
 readingTime: 2

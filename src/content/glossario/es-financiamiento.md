@@ -7,7 +7,7 @@ category: "credito"
 locale: "es"
 translationKey: "glossario-financiamento"
 relatedTerms: ["Amortização", "Juros Compostos", "Score de Crédito"]
-publishedAt: 2025-05-10
+publishedAt: 2026-05-19
 readingTime: 2
 ---
 

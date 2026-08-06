@@ -4,7 +4,7 @@ image: "/images/glossario/wealth-management.webp"
 definition: "Gestão de patrimônio. Serviço financeiro completo que inclui investimentos, planejamento tributário, sucessório e proteção patrimonial."
 category: "investimentos"
 relatedTerms: ["Patrimônio Líquido", "Diversificação", "Previdência Privada"]
-publishedAt: 2025-05-10
+publishedAt: 2026-05-19
 locale: "pt"
 translationKey: "glossario-wealth-management"
 readingTime: 1

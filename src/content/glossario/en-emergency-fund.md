@@ -7,7 +7,7 @@ category: "basico"
 locale: "en"
 translationKey: "glossario-reserva-de-emergencia"
 relatedTerms: ["Liquidez", "CDB", "Tesouro Selic"]
-publishedAt: 2025-05-10
+publishedAt: 2026-05-19
 readingTime: 1
 ---
 

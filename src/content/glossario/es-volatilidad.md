@@ -7,7 +7,7 @@ category: "mercado"
 locale: "es"
 translationKey: "glossario-volatilidade"
 relatedTerms: ["Renda Variável", "Ações", "Diversificação"]
-publishedAt: 2025-05-10
+publishedAt: 2026-05-19
 readingTime: 2
 ---
 

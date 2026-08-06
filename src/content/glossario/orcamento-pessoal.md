@@ -4,7 +4,7 @@ image: "/images/glossario/orcamento-pessoal.webp"
 definition: "Planejamento financeiro que organiza receitas e despesas mensais. Permite visualizar para onde vai seu dinheiro e identificar oportunidades de economia."
 category: "basico"
 relatedTerms: ["Reserva de Emergência", "Regra 50-30-20", "Controle Financeiro"]
-publishedAt: 2025-05-10
+publishedAt: 2026-05-19
 locale: "pt"
 translationKey: "glossario-orcamento-pessoal"
 readingTime: 1

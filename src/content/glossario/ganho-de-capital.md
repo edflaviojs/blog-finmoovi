@@ -4,7 +4,7 @@ image: "/images/glossario/ganho-de-capital.webp"
 definition: "Lucro obtido na venda de um bem ou investimento por um preço maior do que o de compra. Pode estar sujeito a Imposto de Renda."
 category: "impostos"
 relatedTerms: ["Imposto de Renda", "Ações", "Renda Variável"]
-publishedAt: 2025-05-10
+publishedAt: 2026-05-19
 locale: "pt"
 translationKey: "glossario-ganho-de-capital"
 readingTime: 2

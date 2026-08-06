@@ -5,7 +5,7 @@ imageAlt: "Moedas douradas, gráfico de barras, relógio e plantas sobre fundo a
 definition: "Títulos de dívida emitidos por empresas para captar dinheiro. O investidor empresta para a empresa e recebe juros em troca."
 category: "investimentos"
 relatedTerms: ["Renda Fixa", "CDI", "Tesouro Direto"]
-publishedAt: 2025-05-10
+publishedAt: 2026-05-19
 locale: "pt"
 translationKey: "glossario-debentures"
 readingTime: 2

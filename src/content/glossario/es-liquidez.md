@@ -7,7 +7,7 @@ category: "investimentos"
 locale: "es"
 translationKey: "glossario-liquidez"
 relatedTerms: ["Reserva de Emergência", "CDB", "Tesouro Direto"]
-publishedAt: 2025-05-10
+publishedAt: 2026-05-19
 readingTime: 1
 ---
 

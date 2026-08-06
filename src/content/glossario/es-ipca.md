@@ -7,7 +7,7 @@ category: "basico"
 locale: "es"
 translationKey: "glossario-ipca"
 relatedTerms: ["Inflação", "Selic", "Tesouro Direto"]
-publishedAt: 2025-05-10
+publishedAt: 2026-05-19
 readingTime: 2
 ---
 

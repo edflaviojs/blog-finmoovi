@@ -7,7 +7,7 @@ category: "investimentos"
 locale: "en"
 translationKey: "glossario-debentures"
 relatedTerms: ["Renda Fixa", "CDI", "Tesouro Direto"]
-publishedAt: 2025-05-10
+publishedAt: 2026-05-19
 readingTime: 2
 ---
 

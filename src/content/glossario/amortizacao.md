@@ -5,7 +5,7 @@ imageAlt: "Moedas douradas empilhadas e frasco com planta verde sobre fundo azul
 definition: "Processo de pagamento gradual de uma dívida ao longo do tempo, reduzindo o saldo devedor a cada parcela paga."
 category: "credito"
 relatedTerms: ["Juros Compostos", "Financiamento", "Tabela SAC"]
-publishedAt: 2025-05-10
+publishedAt: 2026-05-19
 locale: "pt"
 translationKey: "glossario-amortizacao"
 readingTime: 1

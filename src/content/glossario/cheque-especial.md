@@ -5,7 +5,7 @@ imageAlt: "Pilhas de moedas douradas, frasco de vidro e planta verde sobre fundo
 definition: "Crédito pré-aprovado vinculado à conta corrente com juros altíssimos (8-15% ao mês). Uma das formas mais caras de crédito no Brasil."
 category: "credito"
 relatedTerms: ["Score de Crédito", "Juros Compostos", "Financiamento"]
-publishedAt: 2025-05-10
+publishedAt: 2026-05-19
 locale: "pt"
 translationKey: "glossario-cheque-especial"
 readingTime: 2

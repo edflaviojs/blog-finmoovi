@@ -7,7 +7,7 @@ category: "basico"
 locale: "es"
 translationKey: "glossario-meta-financeira"
 relatedTerms: ["Orçamento Pessoal", "Reserva de Emergência", "Independência Financeira"]
-publishedAt: 2025-05-10
+publishedAt: 2026-05-19
 readingTime: 2
 ---
 

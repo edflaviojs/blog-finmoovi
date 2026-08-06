@@ -5,7 +5,7 @@ imageAlt: "Um gráfico de crescimento de rendimentos, um vaso com moedas e uma p
 definition: "Parte do lucro de uma empresa distribuída aos acionistas. É uma forma de renda passiva para quem investe em ações."
 category: "investimentos"
 relatedTerms: ["Ações", "Renda Variável", "Dividend Yield"]
-publishedAt: 2025-05-10
+publishedAt: 2026-05-19
 locale: "pt"
 translationKey: "glossario-dividendos"
 readingTime: 1

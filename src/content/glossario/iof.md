@@ -4,7 +4,7 @@ image: "/images/glossario/iof.webp"
 definition: "Imposto sobre Operações Financeiras. Incide sobre empréstimos, câmbio, seguros e investimentos de curto prazo."
 category: "impostos"
 relatedTerms: ["Imposto de Renda", "CDI", "Câmbio"]
-publishedAt: 2025-05-10
+publishedAt: 2026-05-19
 locale: "pt"
 translationKey: "glossario-iof"
 readingTime: 2

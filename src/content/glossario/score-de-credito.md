@@ -4,7 +4,7 @@ image: "/images/glossario/score-de-credito.webp"
 definition: "Pontuação de 0 a 1000 que indica a probabilidade de você pagar suas contas em dia. Quanto maior, mais fácil conseguir crédito."
 category: "credito"
 relatedTerms: ["Financiamento", "Juros Compostos", "Cheque Especial"]
-publishedAt: 2025-05-10
+publishedAt: 2026-05-19
 locale: "pt"
 translationKey: "glossario-score-de-credito"
 readingTime: 2

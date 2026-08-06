@@ -4,7 +4,7 @@ image: "/images/glossario/lci-e-lca.webp"
 definition: "Letras de Crédito Imobiliário e do Agronegócio. Investimentos de renda fixa isentos de Imposto de Renda para pessoa física."
 category: "investimentos"
 relatedTerms: ["CDI", "Renda Fixa", "CDB"]
-publishedAt: 2025-05-10
+publishedAt: 2026-05-19
 locale: "pt"
 translationKey: "glossario-lci-e-lca"
 readingTime: 2

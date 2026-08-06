@@ -4,7 +4,7 @@ image: "/images/glossario/volatilidade.webp"
 definition: "Medida de quanto o preço de um ativo oscila em determinado período. Alta volatilidade significa grandes variações de preço (para cima e para baixo)."
 category: "mercado"
 relatedTerms: ["Renda Variável", "Ações", "Diversificação"]
-publishedAt: 2025-05-10
+publishedAt: 2026-05-19
 locale: "pt"
 translationKey: "glossario-volatilidade"
 readingTime: 2

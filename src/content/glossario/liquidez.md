@@ -4,7 +4,7 @@ image: "/images/glossario/liquidez.webp"
 definition: "Facilidade e velocidade com que um ativo pode ser convertido em dinheiro sem perda significativa de valor."
 category: "investimentos"
 relatedTerms: ["Reserva de Emergência", "CDB", "Tesouro Direto"]
-publishedAt: 2025-05-10
+publishedAt: 2026-05-19
 locale: "pt"
 translationKey: "glossario-liquidez"
 readingTime: 1

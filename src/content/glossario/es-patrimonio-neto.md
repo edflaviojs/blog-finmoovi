@@ -7,7 +7,7 @@ category: "basico"
 locale: "es"
 translationKey: "glossario-patrimonio-liquido"
 relatedTerms: ["Orçamento Pessoal", "Reserva de Emergência", "Diversificação"]
-publishedAt: 2025-05-10
+publishedAt: 2026-05-19
 readingTime: 2
 ---
 

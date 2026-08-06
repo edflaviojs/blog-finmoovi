@@ -5,7 +5,7 @@ imageAlt: "Moedas douradas empilhadas e um cofrinho de porco em frascos de vidro
 definition: "Empréstimo de longo prazo para compra de bens como imóveis ou veículos, onde o bem fica como garantia até a quitação total."
 category: "credito"
 relatedTerms: ["Amortização", "Juros Compostos", "Score de Crédito"]
-publishedAt: 2025-05-10
+publishedAt: 2026-05-19
 locale: "pt"
 translationKey: "glossario-financiamento"
 readingTime: 1
