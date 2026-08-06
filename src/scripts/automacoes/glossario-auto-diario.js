@@ -6,7 +6,8 @@ import { config } from '../../../site.config.ts';
  */
 
 import { generateGlossaryTerm } from './glossario-com-imagens.js';
-import { takeKeyword, markUsed, QUEUE_FILE } from '../lib/keyword-queue.js';
+import { takeKeyword, markUsed, QUEUE_FILE, motivoDeMarca } from '../lib/keyword-queue.js';
+import { glossaryTermFromKeyword, keywordLooksLikeConcept } from '../lib/termo-guard.js';
 import { writeFileSync, readFileSync, mkdirSync, existsSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
@@ -32,7 +33,7 @@ const POPULAR_TERMS = {
   K: ['kyc', 'know your customer', 'key performance indicator', 'kill switch', 'keynesianismo'],
   L: ['lc', 'lca', 'liquidez', 'long', 'leilão'],
   M: ['moeda', 'mercado financeiro', 'margem de garantia', 'mercado de capitais', 'montante'],
-  N: ['nubank', 'negociação', 'nfp', 'nyse', 'nasdaq'],
+  N: ['negociação', 'nota promissória', 'nfp', 'nyse', 'nasdaq'],
   O: ['opção financeira', 'obrigação', 'open interest', 'offshore', 'otc'],
   P: ['poupança', 'pix', 'patrimônio', 'plano de saúde', 'previdência'],
   Q: ['qualidade de ativos', 'quota de consórcio', 'quociente de liquidez', 'quick ratio', 'quantitative easing'],
@@ -41,9 +42,17 @@ const POPULAR_TERMS = {
   T: ['tesouro direto', 'taxa financeira', 'trading', 'trust', 'ticker'],
   U: ['usura', 'unit', 'underlying', 'uptick', 'utilidade marginal'],
   V: ['valor financeiro', 'volatilidade', 'venda a descoberto', 'varejo', 'valuation'],
-  W: ['webull', 'wall street', 'warrant', 'whale', 'withdrawal'],
-  X: ['xepa financeira', 'xing ling', 'xp investimentos', 'xrp', 'xetra'],
-  Y: ['yield', 'yahoo finance', 'yuan', 'yield curve', 'young investor'],
+  // LIMPEZA 06/08/2026 — as letras difíceis estavam preenchidas com o que
+  // apareceu, e a rotação A-Z não tinha filtro: daí saíram verbetes publicados
+  // sobre `xepa financeira` (sobras de feira), `xing ling` (bugiganga), `webull`
+  // e `yahoo finance` (apps de terceiros), e `nubank` (banco). Preferimos MENOS
+  // termos e verdadeiros a cinco por letra: W tem 4 e X tem 2, e está certo
+  // assim — não há cinco conceitos financeiros com X em português.
+  // Ao acrescentar aqui: o termo tem de passar por motivoDeMarca() e
+  // keywordLooksLikeConcept(), como a fila. tests/termo-guard.test.js prova.
+  W: ['wall street', 'warrant', 'whale', 'withdrawal'],
+  X: ['xrp', 'xetra'],
+  Y: ['yield', 'yuan', 'yield curve', 'young investor'],
   Z: ['zero coupon', 'z-score', 'zeragem de posição', 'zona do euro', 'zona franca']
 };
 
@@ -72,33 +81,10 @@ function saveCurrentLetter(letter) {
   }
 }
 
-// Keyword da fila → termo do glossário: remove prefixos/sufixos de pergunta
-// ("o que é X" → "X"), preservando acentos/grafia do restante. Mesma família
-// de prefixos do coveredByGlossario (keyword-queue.js).
-function glossaryTermFromKeyword(keyword) {
-  const kw = String(keyword || '').replace(/\s+/g, ' ').trim();
-  const core = kw
-    .replace(/^(o que (é|e|são|sao|significa)|que (é|e)|significado de|defini[çc][ãa]o de)\s+/i, '')
-    .replace(/\s+(o que (é|e)|significado|defini[çc][ãa]o)$/i, '')
-    .trim();
-  return core || kw;
-}
-
-// Heurística de custo zero (SEM chamada de IA — a cota é o gargalo do projeto)
-// que recusa termos que, mesmo após a limpeza acima, ainda não parecem um
-// CONCEITO de glossário — e sim uma keyword de SEO em ordem telegráfica
-// ("poupar dinheiro dicas") ou uma pergunta/lista de busca ("como poupar
-// dinheiro", "melhores investimentos"). Decisão do dono: recusar e voltar à
-// rotação A-Z em vez de publicar um verbete com nome quebrado (dívida
-// permanente no site).
-function keywordLooksLikeConcept(term) {
-  const t = String(term || '').trim().toLowerCase();
-  if (!t) return false;
-  const startsWithQuestion = /^(como|o que|quando|por que|porque|qual|quais|onde|vale a pena)\b/.test(t);
-  const hasListicleModifier = /\b(dicas|melhores|passo a passo|guia|truques|erros)\b/.test(t);
-  const tooManyWords = t.split(/\s+/).filter(Boolean).length > 5;
-  return !startsWithQuestion && !hasListicleModifier && !tooManyWords;
-}
+// glossaryTermFromKeyword e keywordLooksLikeConcept vivem agora em
+// ../lib/termo-guard.js (ver o import no topo). Mudaram-se para lá em 06/08/2026
+// para terem prova automática em tests/termo-guard.test.js: este ficheiro chama
+// `main()` na última linha, logo importá-lo num teste correria o gerador todo.
 
 async function main() {
   console.log('🚀 Iniciando geração automática de glossário...');
@@ -150,11 +136,50 @@ async function main() {
     }
 
     if (!selectedTerm) {
-      // Gerar termos para a letra atual
-      const terms = POPULAR_TERMS[currentLetter] || [`${currentLetter}termo financeiro`];
-      // Usa TODOS os termos da letra (~5), não só o [0]: escolhe o primeiro que ainda não
-      // foi criado. Evita travar quando o ciclo A-Z dá a volta (aí o terms[0] já existiria).
-      selectedTerm = terms.find(t => !existsSync(join(GLOSSARIO_DIR, `${slugify(t)}.md`))) || terms[0];
+      // ── A rotação A-Z passa pelos MESMOS filtros da fila (06/08/2026) ────────
+      // Até aqui esta porta não tinha filtro NENHUM, e a fila tinha. As duas
+      // contradiziam-se: `xp investimentos` está na lista de marcas barradas da
+      // fila E estava escrito na lista da letra X — o próximo X ia publicá-lo.
+      // Foi assim que nasceram xepa-financeira, xing-ling, webull e
+      // yahoo-finance (a lista foi limpa no mesmo dia; isto é a rede por baixo,
+      // para o caso de voltar a entrar lá um nome).
+      //
+      // Se a letra não tiver termo aceitável, AVANÇA para a seguinte em vez de
+      // cair no `|| terms[0]` — esse fallback antigo publicava justamente o
+      // termo barrado. Percorre no máximo o abecedário todo e, se nada servir,
+      // NÃO publica nada (dia sem verbete é melhor que verbete mau: a URL é
+      // dívida permanente).
+      const aceitavel = (t) => !existsSync(join(GLOSSARIO_DIR, `${slugify(t)}.md`))
+        && !motivoDeMarca(t)
+        && keywordLooksLikeConcept(t);
+
+      const inicio = LETTERS.indexOf(currentLetter);
+      for (let salto = 0; salto < LETTERS.length; salto++) {
+        const letra = LETTERS[(inicio + salto) % LETTERS.length];
+        const termos = POPULAR_TERMS[letra] || [];
+        const escolhido = termos.find(aceitavel);
+        if (escolhido) {
+          if (letra !== currentLetter) {
+            console.log(`↪️ Letra ${currentLetter} sem termo aceitável — a saltar para ${letra}.`);
+            currentLetter = letra;
+          }
+          selectedTerm = escolhido;
+          break;
+        }
+        // Diz em voz alta o que foi recusado e porquê: lista silenciosamente
+        // esgotada é indistinguível de lista com problema.
+        for (const t of termos) {
+          if (existsSync(join(GLOSSARIO_DIR, `${slugify(t)}.md`))) continue;
+          const marca = motivoDeMarca(t);
+          if (marca) console.warn(`   ⚠️ ${letra}: "${t}" recusado (${marca}) — tirar da lista POPULAR_TERMS.`);
+          else if (!keywordLooksLikeConcept(t)) console.warn(`   ⚠️ ${letra}: "${t}" recusado (não parece conceito) — tirar da lista POPULAR_TERMS.`);
+        }
+      }
+
+      if (!selectedTerm) {
+        console.log('✅ Abecedário todo já coberto (ou sem termo aceitável). Nada a publicar hoje.');
+        return;
+      }
     }
 
     console.log(`📚 Gerando glossário para: ${selectedTerm}`);
