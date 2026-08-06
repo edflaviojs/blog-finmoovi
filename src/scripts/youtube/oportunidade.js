@@ -17,13 +17,14 @@
  * já escolheu. O tema do dono é o PRÓXIMO a ser escolhido, que é exatamente o que ele
  * pediu.
  *
- * ⚠️ **O VÍDEO LONGO EXIGE TÍTULO, e isto não é capricho:** o `upload-longo.js` recusa-se
- * a publicar sem um título aprovado, porque *"um título mau é a coisa mais cara que este
- * canal pode pôr no ar"*. Um tema longo sem título entraria na fila e faria a corrida de
- * sábado falhar — por isso é recusado **aqui**, onde o dono ainda está a olhar, e não lá,
- * de madrugada.
+ * ⚠️ **A CONTA VIVE NOUTRO FICHEIRO** (`lib/oportunidade-fila.js`), sem nada do Node, para
+ * a Cloudflare poder usar A MESMA. Aqui só se lê e escreve em disco. Ver o aviso lá.
  *
- * Uso (é o robô que chama, não uma pessoa):
+ * Este caminho é a REDE POR BAIXO: no dia a dia quem escreve na fila é a página /status,
+ * direto. Isto serve para o dia em que a página estiver em baixo — e para o robô do
+ * GitHub, que também sabe correr isto à mão.
+ *
+ * Uso:
  *   node src/scripts/youtube/oportunidade.js --formato=short --tema="..." [--titulo="..."]
  *   node src/scripts/youtube/oportunidade.js --formato=longo --tema="..." --titulo="..."
  *   node src/scripts/youtube/oportunidade.js --formato=ambos --tema="..." --titulo="..."
@@ -31,98 +32,16 @@
 
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
+import { conferirOportunidade, inserirNoShort, inserirNoLongo } from '../../../functions/api/_oportunidade-fila.js';
 
 const ROOT = process.cwd();
 const TOPICS = join(ROOT, '.github', 'data', 'youtube-topics.json');
 const LONGOS = join(ROOT, '.github', 'data', 'youtube-longos.json');
 
-/** O que o vídeo longo exige antes de deixar um tema entrar. Ver o aviso do topo. */
-export const MIN_TITULO_LONGO = 20;
-export const MAX_TITULO_LONGO = 70;
-
-export function fazerSlugDoDono(tema, usados = new Set()) {
-  const base = String(tema || '')
-    .toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
-    .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')
-    .split('-').filter(Boolean).slice(0, 6).join('-') || 'tema';
-  let slug = `dono-${base}`;
-  let n = 2;
-  while (usados.has(slug)) { slug = `dono-${base}-${n}`; n += 1; }
-  return slug;
-}
-
-/**
- * As queixas sobre o que o dono escreveu — ou nada, se estiver bom.
- * ⚠️ **Recusar aqui é barato; recusar de madrugada custa uma semana.**
- */
-export function conferirOportunidade({ formato, tema, titulo }) {
-  const queixas = [];
-  const t = String(tema || '').trim();
-  const tit = String(titulo || '').trim();
-  if (!['short', 'longo', 'ambos'].includes(formato)) queixas.push('o formato tem de ser short, longo ou ambos');
-  if (t.length < 10) queixas.push('o tema está curto de mais — escreva a ideia numa frase');
-  if (t.length > 300) queixas.push('o tema está comprido de mais (máximo 300 letras)');
-  if (formato !== 'short') {
-    if (!tit) queixas.push('o vídeo longo precisa de um título — é ele que fica na lista do canal para sempre');
-    else if (tit.length < MIN_TITULO_LONGO) queixas.push(`o título do vídeo longo tem de ter pelo menos ${MIN_TITULO_LONGO} letras`);
-    else if (tit.length > MAX_TITULO_LONGO) queixas.push(`o título do vídeo longo não pode passar das ${MAX_TITULO_LONGO} letras`);
-  }
-  return queixas;
-}
-
 const lerJson = (caminho, vazio) => {
   if (!existsSync(caminho)) return vazio;
   try { return JSON.parse(readFileSync(caminho, 'utf-8')) || vazio; } catch { return vazio; }
 };
-
-/**
- * Põe o tema à CABEÇA da fila dos Shorts, com a marca de prioridade.
- * ⚠️ À cabeça E com a marca: a marca é o que manda (o selecionador do Short ordena por
- * pontuação, não por posição), e a posição é para quem abrir o ficheiro perceber.
- */
-export function inserirNoShort(dados, { tema, titulo, quando }) {
-  const topics = Array.isArray(dados?.topics) ? dados.topics : [];
-  const usados = new Set(topics.map((t) => t?.id).filter(Boolean));
-  const id = fazerSlugDoDono(tema, usados);
-  const novo = {
-    id,
-    theme: String(tema).trim(),
-    angle: `Ideia do dono: ${String(tema).trim()}`,
-    pillar: 'dono',
-    source: 'dono',
-    status: 'pending',
-    prioridade: true,
-    ...(String(titulo || '').trim() ? { tituloDoDono: String(titulo).trim() } : {}),
-    criadoEm: quando,
-  };
-  return { dados: { ...dados, topics: [novo, ...topics] }, entrada: novo };
-}
-
-/**
- * Põe o tema à CABEÇA da fila do vídeo longo.
- * ⚠️ Aqui a posição é que manda mesmo: `proximoLongo` devolve **o primeiro por fazer**.
- */
-export function inserirNoLongo(dados, { tema, titulo, quando }) {
-  const videos = Array.isArray(dados?.videos) ? dados.videos : [];
-  const usados = new Set(videos.map((v) => v?.slug).filter(Boolean));
-  const slug = fazerSlugDoDono(tema, usados);
-  const novo = {
-    slug,
-    titulo: String(titulo).trim(),
-    tema: String(tema).trim(),
-    angulo: `Ideia do dono: ${String(tema).trim()}`,
-    /**
-     * ⚠️ SEM `glossario`, de propósito. O `conferirTema` exige que o glossário exista, e
-     * o dono não tem de saber os nomes dos ficheiros do blog. O escritor do guião trata
-     * um tema sem glossário como trata os temas vindos dos virais.
-     */
-    estado: 'proposto',
-    prioridade: true,
-    origem: 'dono',
-    criadoEm: quando,
-  };
-  return { dados: { ...dados, videos: [novo, ...videos] }, entrada: novo };
-}
 
 // ─── execução direta ─────────────────────────────────────────────────────────
 

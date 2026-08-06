@@ -19,7 +19,7 @@ import {
 } from '../youtube/upload-short.js';
 import { avaliarRetencao, RETENCAO_MINIMA } from '../youtube/retencao.js';
 import { prateleirasDoVideo, PLAYLIST_GERAL } from '../youtube/lib/playlists.js';
-import { inserirNoShort, inserirNoLongo, conferirOportunidade, fazerSlugDoDono } from '../youtube/oportunidade.js';
+import { inserirNoShort, inserirNoLongo, conferirOportunidade, fazerSlugDoDono } from '../../../functions/api/_oportunidade-fila.js';
 import { proximoLongo } from '../youtube/pick-next-longo.js';
 
 let passou = 0;
