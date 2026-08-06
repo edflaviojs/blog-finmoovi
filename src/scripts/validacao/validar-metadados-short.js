@@ -19,6 +19,8 @@ import {
 } from '../youtube/upload-short.js';
 import { avaliarRetencao, RETENCAO_MINIMA } from '../youtube/retencao.js';
 import { prateleirasDoVideo, PLAYLIST_GERAL } from '../youtube/lib/playlists.js';
+import { inserirNoShort, inserirNoLongo, conferirOportunidade, fazerSlugDoDono } from '../youtube/oportunidade.js';
+import { proximoLongo } from '../youtube/pick-next-longo.js';
 
 let passou = 0;
 let falhou = 0;
@@ -188,6 +190,61 @@ console.log('\n5. AS PLAYLISTS — a prateleira certa, escolhida por tabela');
     nomes('O melhor investimento para começar')[0] === 'Investir do zero');
   ok('nunca há prateleiras repetidas',
     new Set(nomes('dívida do cartão')).size === nomes('dívida do cartão').length);
+}
+
+console.log('\n6. A OPORTUNIDADE DO DONO (ordem dele, 06/08)');
+
+{
+  const quando = '2026-08-06T12:00:00.000Z';
+  const fila = { topics: [{ id: 'a', status: 'pending' }, { id: 'b', status: 'pending' }] };
+  const r = inserirNoShort(fila, { tema: 'Pagar a fatura antes do fecho dá 30 dias sem juros', titulo: '', quando });
+  ok('o tema entra à cabeça da fila', r.dados.topics[0].id === r.entrada.id);
+  ok('e leva a marca de prioridade', r.entrada.prioridade === true);
+  ok('a fila que já lá estava não se perde', r.dados.topics.length === 3);
+  ok('o nome sai limpo, sem acentos nem espaços', /^dono-[a-z0-9-]+$/.test(r.entrada.id), r.entrada.id);
+  ok('dois temas iguais não geram o mesmo nome',
+    fazerSlugDoDono('mesmo tema', new Set(['dono-mesmo-tema'])) === 'dono-mesmo-tema-2');
+
+  const l = inserirNoLongo({ videos: [{ slug: 'x' }] }, { tema: 'Como sair do cheque especial sem empréstimo', titulo: 'Cheque especial: como sair sem pedir empréstimo', quando });
+  ok('no vídeo longo também entra à cabeça', l.dados.videos[0].slug === l.entrada.slug);
+  ok('e o título do dono vai à letra', l.entrada.titulo === 'Cheque especial: como sair sem pedir empréstimo');
+
+  /**
+   * 🔴 **O TÍTULO DO VÍDEO LONGO É EXIGIDO, e recusar aqui vale uma semana.** O robô que
+   * publica recusa-se a subir um vídeo longo sem título aprovado — *"um título mau é a
+   * coisa mais cara que este canal pode pôr no ar"*. Sem esta trava, o tema entrava na
+   * fila e a corrida de sábado de madrugada falhava, com o dono a dormir.
+   */
+  ok('🔴 um vídeo longo sem título é RECUSADO logo, e não de madrugada',
+    conferirOportunidade({ formato: 'longo', tema: 'uma ideia qualquer aqui', titulo: '' }).some((q) => q.includes('título')));
+  ok('mas um Short sem título passa (a IA escreve-o)',
+    conferirOportunidade({ formato: 'short', tema: 'uma ideia qualquer aqui', titulo: '' }).length === 0);
+  ok('um tema curto de mais é recusado',
+    conferirOportunidade({ formato: 'short', tema: 'curto' }).length > 0);
+  ok('um formato inventado é recusado',
+    conferirOportunidade({ formato: 'tiktok', tema: 'uma ideia qualquer aqui' }).some((q) => q.includes('formato')));
+  ok('um título de vídeo longo comprido de mais é recusado',
+    conferirOportunidade({ formato: 'longo', tema: 'uma ideia qualquer aqui', titulo: 'x'.repeat(80) }).length > 0);
+
+  /**
+   * 🔴 A MARCA GANHA À PONTUAÇÃO. A tentação era somar 100 pontos ao tema do dono — mas
+   * um bónus é uma aposta: basta a pontuação de outro subir e a escolha dele fica para
+   * trás **sem ninguém dar por nada**. Havendo dois, ganha o mais antigo.
+   */
+  const escolha = proximoLongo({
+    fila: { videos: [
+      { slug: 'normal', estado: 'proposto' },
+      { slug: 'dono-novo', estado: 'proposto', prioridade: true, criadoEm: '2026-08-06T12:00:00Z' },
+      { slug: 'dono-antigo', estado: 'proposto', prioridade: true, criadoEm: '2026-08-05T12:00:00Z' },
+    ] },
+    caderno: {},
+  });
+  ok('🔴 o tema do dono fura a fila mesmo estando no fim do ficheiro', String(escolha.slug).startsWith('dono-'), escolha.slug);
+  ok('e entre dois do dono ganha o mais antigo', escolha.slug === 'dono-antigo', escolha.slug);
+  ok('um do dono JÁ PUBLICADO não fura fila nenhuma',
+    proximoLongo({ fila: { videos: [{ slug: 'normal', estado: 'proposto' }, { slug: 'dono-feito', prioridade: true, estado: 'publicado' }] }, caderno: {} }).slug === 'normal');
+  ok('sem nenhum do dono, a fila segue como sempre',
+    proximoLongo({ fila: { videos: [{ slug: 'primeiro', estado: 'proposto' }, { slug: 'segundo', estado: 'proposto' }] }, caderno: {} }).slug === 'primeiro');
 }
 
 console.log(`\n${'═'.repeat(72)}`);

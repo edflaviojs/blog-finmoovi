@@ -61,13 +61,20 @@ function lerJson(caminho, porOmissao) {
  * Se só se olhasse ao caderno, um tema que o dono suspendeu voltaria a entrar.
  */
 export function proximoLongo({ fila = lerJson(FILA, { videos: [] }), caderno = lerJson(CADERNO, {}) } = {}) {
-  for (const v of fila.videos || []) {
-    if (!v || !v.slug) continue;
-    if (JA_TRATADOS.has(String(v.estado || '').toLowerCase())) continue;
-    if (caderno[v.slug]) continue;
-    return v;
-  }
-  return null;
+  const porFazer = (fila.videos || []).filter((v) => v && v.slug
+    && !JA_TRATADOS.has(String(v.estado || '').toLowerCase())
+    && !caderno[v.slug]);
+  /**
+   * ♦ 06/08/2026 — A OPORTUNIDADE DO DONO FURA A FILA (IMPL20 §60).
+   * ⚠️ **A marca, e não só a posição.** O tema do dono é escrito à cabeça do ficheiro, e
+   * só isso já bastaria hoje — mas basta alguém reordenar a fila à mão para a regra se
+   * perder em silêncio. A marca sobrevive a qualquer arrumação. Havendo mais do que um,
+   * ganha o mais antigo: a ordem por que ele os escreveu.
+   */
+  const doDono = porFazer
+    .filter((v) => v.prioridade)
+    .sort((a, b) => String(a.criadoEm || '').localeCompare(String(b.criadoEm || '')));
+  return doDono[0] || porFazer[0] || null;
 }
 
 /**

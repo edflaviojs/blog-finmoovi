@@ -141,7 +141,23 @@ function main() {
   if (pendingEditorials.length > 0) {
     const scored = pendingEditorials.map((t) => ({ topic: t, score: scoreEditorial(t, trendData) }));
     scored.sort((a, b) => b.score - a.score);
-    const chosen = scored[0].topic;
+    /**
+     * ♦ 06/08/2026 — A OPORTUNIDADE DO DONO FURA A FILA (IMPL20 §60).
+     *
+     * *"Quando eu ver algum tema que na minha visão é excelente… esse vídeo entra na fila
+     * prioritária para ser o próximo."*
+     *
+     * ⚠️ **A MARCA GANHA À PONTUAÇÃO, e não é um bónus grande.** A tentação era somar 100
+     * pontos ao tema dele — mas um bónus é uma aposta: basta a pontuação de outro subir e
+     * o tema do dono fica para trás **sem ninguém dar por nada**. Uma escolha do dono não
+     * se negoceia com uma conta. Se houver mais do que um, ganha o mais antigo — a ordem
+     * por que ele os escreveu.
+     */
+    const doDono = pendingEditorials
+      .filter((t) => t.prioridade)
+      .sort((a, b) => String(a.criadoEm || '').localeCompare(String(b.criadoEm || '')));
+    const chosen = doDono[0] || scored[0].topic;
+    if (doDono[0] && VERBOSE) console.error(`⭐ tema do DONO, fura a fila: ${doDono[0].id}`);
 
     if (VERBOSE) {
       console.error(`📋 temas editoriais pending: ${pendingEditorials.length}`);

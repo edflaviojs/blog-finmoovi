@@ -231,6 +231,51 @@ const daysAgo = (d: string) => {
         </form>
       </section>
 
+      <!--
+        ♦ 06/08/2026 — A OPORTUNIDADE DO DONO (IMPL20 §60).
+        O tema que ele viu e quer JÁ: entra à cabeça da fila e é o próximo a ser feito.
+        ⚠️ Não produz nada aqui — só arruma a fila. Quem faz o vídeo é o robô de sempre,
+        à hora de sempre; um botão que dispara uma produção é um botão que gasta 36
+        minutos de máquina por engano.
+      -->
+      <section class="status-panel panel-oportunidade">
+        <h2>⭐ Oportunidade do dono</h2>
+        <p class="panel-hint">
+          Viu um tema que vale a pena? Ele passa <strong>à frente da fila</strong> e é o
+          próximo a ser feito. Depois a fila segue como estava.
+        </p>
+        <form id="op-form">
+          <textarea
+            id="op-tema"
+            rows="2"
+            placeholder={'A ideia, numa frase. Ex.:\npagar a fatura ANTES do fecho dá mais 30 dias sem juros'}
+            required
+          ></textarea>
+          <input
+            type="text"
+            id="op-titulo"
+            placeholder="Título exato (obrigatório no vídeo longo, opcional no Short)"
+            autocomplete="off"
+          />
+          <div class="kw-row">
+            <select id="op-formato" aria-label="Onde entra">
+              <option value="short">Short (sai na madrugada seguinte)</option>
+              <option value="longo">Vídeo longo (sai no domingo seguinte)</option>
+              <option value="ambos">Os dois</option>
+            </select>
+            <input
+              type="password"
+              id="op-senha"
+              placeholder="Senha de acesso"
+              autocomplete="off"
+              required
+            />
+            <button type="submit" id="op-btn">Furar a fila</button>
+          </div>
+          <p id="op-feedback" class="kw-feedback" hidden></p>
+        </form>
+      </section>
+
       <section class="status-panel panel-comentarios">
         <h2>💬 Comentários pendentes</h2>
         <p class="panel-hint">
@@ -474,6 +519,75 @@ const daysAgo = (d: string) => {
 </BaseLayout>
 
 <script>
+  /**
+   * ♦ 06/08/2026 — A OPORTUNIDADE DO DONO → POST /api/oportunidade.
+   * ⚠️ O título é EXIGIDO no vídeo longo, e o aviso aparece aqui, ao mudar a escolha —
+   * não depois de carregar no botão. O robô que publica recusa-se a subir um vídeo longo
+   * sem título, e descobrir isso de madrugada custa uma semana sem vídeo.
+   */
+  {
+    const f = document.getElementById('op-form');
+    const tema = document.getElementById('op-tema');
+    const titulo = document.getElementById('op-titulo');
+    const formato = document.getElementById('op-formato');
+    const senha = document.getElementById('op-senha');
+    const botao = document.getElementById('op-btn');
+    const aviso = document.getElementById('op-feedback');
+
+    const dizer = (msg, ok) => {
+      if (!aviso) return;
+      aviso.textContent = msg;
+      aviso.classList.toggle('ok', ok);
+      aviso.classList.toggle('err', !ok);
+      aviso.hidden = false;
+    };
+
+    const exigeTitulo = () => formato && formato.value !== 'short';
+    const acertarTitulo = () => {
+      if (!titulo) return;
+      titulo.required = exigeTitulo();
+      titulo.placeholder = exigeTitulo()
+        ? 'Título exato — OBRIGATÓRIO, entre 20 e 70 letras'
+        : 'Título exato (opcional — a IA escreve se deixar vazio)';
+    };
+    if (formato) formato.addEventListener('change', acertarTitulo);
+    acertarTitulo();
+
+    if (f) {
+      f.addEventListener('submit', async (ev) => {
+        ev.preventDefault();
+        const t = tema.value.trim();
+        const tit = titulo.value.trim();
+        if (t.length < 10) return dizer('Escreva a ideia numa frase (pelo menos 10 letras).', false);
+        if (exigeTitulo() && (tit.length < 20 || tit.length > 70)) {
+          return dizer('O vídeo longo precisa de um título entre 20 e 70 letras — é ele que fica na lista do canal para sempre.', false);
+        }
+        botao.disabled = true;
+        botao.textContent = 'A registar...';
+        try {
+          const res = await fetch('/api/oportunidade', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ senha: senha.value, tema: t, titulo: tit, formato: formato.value }),
+          });
+          const d = await res.json().catch(() => ({}));
+          if (res.ok && d.ok) {
+            dizer(`⭐ ${d.mensagem || 'Registado.'}`, true);
+            tema.value = '';
+            titulo.value = '';
+          } else {
+            dizer(d.erro || `Não deu para registar (${res.status}).`, false);
+          }
+        } catch (e) {
+          dizer(`Não deu para registar: ${e.message}`, false);
+        } finally {
+          botao.disabled = false;
+          botao.textContent = 'Furar a fila';
+        }
+      });
+    }
+  }
+
   // Envio de keywords → POST /api/keywords (Cloudflare Pages Function).
   const form = document.getElementById('kw-form');
   const input = document.getElementById('kw-input');
