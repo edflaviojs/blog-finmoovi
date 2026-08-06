@@ -22,7 +22,7 @@ Managing [personal finances](/en/posts/en-5-tips-to-reorganize-your-finances-on-
 
 ## Alternative 1: GuiaBolso
 GuiaBolso is a [finance app](/en/posts/en-expense-spreadsheet-when-it-stops-working) that allows users to track their expenses, income, and bank accounts in one place. With it, it's possible to create budgets, set financial goals, and receive alerts for excessive spending.
-GuiaBolso also offers investment and credit tools, making it a complete option for managing finances.
+GuiaBolso also offers investment and [credit](/en/glossario/en-credit) tools, making it a complete option for managing finances.
 Pros:
 * Intuitive and easy-to-use interface
 * Offers investment and credit tools

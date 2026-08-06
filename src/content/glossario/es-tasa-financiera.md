@@ -20,7 +20,7 @@ seo:
 
 ## Qué es
 
-La **tasa** es simplemente el porcentaje que se aplica a una operación financiera, como un préstamo, una inversión o una tarjeta de crédito. En términos cotidianos, es el “costo” que pagas por usar el dinero de otra persona o la “ganancia” que obtienes por prestar el tuyo. No hay nada misterioso detrás; es como el precio de una entrada al cine, pero para el dinero. Por ejemplo, si un banco te ofrece una tasa del 12 % al año para un crédito, eso significa que, por cada €1 000 que tomes, pagarás €180 en intereses al cabo de un año.
+La **tasa** es simplemente el porcentaje que se aplica a una operación financiera, como un [préstamo](/es/glossario/es-prestamo), una inversión o una tarjeta de crédito. En términos cotidianos, es el “costo” que pagas por usar el dinero de otra persona o la “ganancia” que obtienes por prestar el tuyo. No hay nada misterioso detrás; es como el precio de una entrada al cine, pero para el dinero. Por ejemplo, si un banco te ofrece una tasa del 12 % al año para un crédito, eso significa que, por cada €1 000 que tomes, pagarás €180 en intereses al cabo de un año.
 
 ![Qué es](/images/glossario/taxa-inline-1.webp)
 

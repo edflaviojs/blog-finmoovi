@@ -37,7 +37,7 @@ Not necessarily. It depends on your profile:
 1. **Have a long horizon** — in the short term, everything oscillates
 2. **Diversify** — different assets oscillate at different times
 3. **Don't check every day** — checking prices daily generates anxiety
-4. **Invest regularly** — monthly contributions smooth out the average price
+4. **[Invest](/en/posts/en-invest-or-pay-off-debt-which-is-better-in-2026) regularly** — monthly contributions smooth out the average price
 5. **Have an emergency reserve** — to avoid having to sell at a low price
 
 ## Volatility index

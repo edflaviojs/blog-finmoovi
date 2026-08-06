@@ -41,7 +41,7 @@ Stocks offer several advantages, including:
 * **Dividends**: many companies pay dividends to shareholders, which can provide a source of passive income.
 * **[Liquidity](/en/glossario/en-liquidity)**: stocks can be easily bought and sold on stock exchanges, meaning you can access your money quickly if needed.
 
-**Practical tip:** It’s important to diversify your investment portfolio, i.e., not put all your eggs in one basket. This means investing in different types of stocks, such as shares of companies from various sectors and sizes.
+**Practical tip:** It’s important to diversify your [investment portfolio](/en/posts/en-etfs-what-they-are-and-how-to-invest-simply-and-profitably), i.e., not put all your eggs in one basket. This means investing in different types of stocks, such as shares of companies from various sectors and sizes.
 
 ![Advantages](/images/glossario/acoes-inline-3.webp)
 

@@ -51,7 +51,7 @@ Tener una poupança trae varios beneficios que la hacen atractiva para cualquier
 
 Aunque la poupança es considerada de bajo riesgo, no está exenta de inconvenientes que conviene conocer.  
 
-- **Baja rentabilidad:** el interés suele ser menor que el de otras inversiones, como los fondos de renta fija o las CDBs (Certificados de Depósito Bancario).  
+- **Baja rentabilidad:** el interés suele ser menor que el de otras inversiones, como los fondos de [renta fija](/es/glossario/es-renta-fija) o las CDBs (Certificados de Depósito Bancario).  
 - **[Inflación](/es/glossario/es-inflacion):** si la inflación supera el rendimiento de la poupança, tu poder adquisitivo disminuye con el tiempo.  
 - **Costos ocultos:** algunos bancos cobran tarifas de mantenimiento o cobros por transferencias externas; revisa siempre la tabla de tarifas.  
 

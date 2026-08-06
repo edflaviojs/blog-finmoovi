@@ -22,7 +22,7 @@ Administrar las [finanzas personales](/es/posts/es-5-consejos-para-reorganizar-t
 
 ## Alternativa 1: GuiaBolso
 El GuiaBolso es un aplicativo de finanzas que permite a los usuarios seguir sus [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo-s), ingresos y cuentas bancarias en un solo lugar. Con él, es posible crear presupuestos, definir metas financieras y recibir alertas de gastos excesivos. 
-El GuiaBolso también ofrece herramientas de inversión y crédito, lo que lo convierte en una opción completa para administrar las finanzas.
+El GuiaBolso también ofrece herramientas de inversión y [crédito](/es/glossario/es-credito), lo que lo convierte en una opción completa para administrar las finanzas.
 Pros:
 * Interfaz intuitiva y fácil de usar
 * Ofrece herramientas de inversión y crédito

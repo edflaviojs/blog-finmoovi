@@ -36,7 +36,7 @@ Não necessariamente. Depende do seu perfil:
 1. **Tenha horizonte longo** — no curto prazo, tudo oscila
 2. **Diversifique** — ativos diferentes oscilam em momentos diferentes
 3. **Não olhe todo dia** — verificar preços diariamente gera ansiedade
-4. **Invista regularmente** — aportes mensais suavizam o preço médio
+4. **Invista regularmente** — [aportes mensais](/ferramentas/simulador-investimento) suavizam o preço médio
 5. **Tenha [reserva de emergência](/glossario/reserva-de-emergencia)** — para não precisar vender na baixa
 
 ## Índice de volatilidade

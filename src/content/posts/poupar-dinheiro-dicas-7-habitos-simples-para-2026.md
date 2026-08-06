@@ -46,7 +46,7 @@ Cashback não é só “dinheiro de volta”. Quando recebe R$50 de volta em um 
 
 ## Automatize e esqueça
 
-A disciplina automática elimina a necessidade de lembranças diárias. Configure débito automático da sua conta salário para transferir 10 % para uma conta de rendimento (pode ser CDB de [liquidez](/glossario/liquidez) diária ou Tesouro Selic – veja detalhes no [Tesouro Direto](https://www.tesourodireto.com.br)). Quando o dinheiro já está fora da conta corrente, ele não será usado para compras impulsivas. Essa estratégia funciona tanto para quem tem R$3 000 quanto para quem recebe R$8 000.
+A disciplina automática elimina a necessidade de lembranças diárias. Configure débito automático da sua conta salário para transferir 10 % para uma conta de rendimento (pode ser CDB de [liquidez](/glossario/liquidez) diária ou Tesouro [Selic](/glossario/selic) – veja detalhes no [Tesouro Direto](https://www.tesourodireto.com.br)). Quando o dinheiro já está fora da conta corrente, ele não será usado para compras impulsivas. Essa estratégia funciona tanto para quem tem R$3 000 quanto para quem recebe R$8 000.
 
 ## Comece hoje
 A hora de mudar é agora: escolha uma das dicas acima, ajuste seu orçamento e veja o saldo da poupança crescer. Cada pequeno passo conta, e em poucos meses você terá mais segurança e menos preocupação com imprevistos.

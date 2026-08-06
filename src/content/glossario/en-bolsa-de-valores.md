@@ -23,7 +23,7 @@ The stock exchange, also known as the market for [ações](/en/glossario/en-stoc
 
 * Ações: small pieces of companies that can be bought and sold
 * Títulos: documents that represent ownership of stocks or other investments
-* Índices: measures of the performance of the stock market, such as the Ibovespa
+* Índices: measures of the performance of the [stock market](/en/posts/en-etfs-what-they-are-and-how-to-invest-simply-and-profitably), such as the Ibovespa
 
 ![What it is](/images/glossario/bolsa-de-valores-inline-1.webp)
 

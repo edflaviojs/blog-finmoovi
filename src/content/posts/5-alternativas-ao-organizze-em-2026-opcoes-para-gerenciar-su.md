@@ -22,7 +22,7 @@ Gerenciar as [finanças pessoais](/posts/5-dicas-para-reorganizar-suas-financas-
 
 ## Alternativa 1: GuiaBolso
 O GuiaBolso é um aplicativo de finanças que permite aos usuários acompanhar suas despesas, receitas e contas bancárias em um único lugar. Com ele, é possível criar orçamentos, definir metas financeiras e receber alertas de [gastos](/posts/metodo-50-30-20-para-orcamento) excessivos. 
-O GuiaBolso também oferece ferramentas de investimento e crédito, tornando-o uma opção completa para gerenciar as finanças.
+O GuiaBolso também oferece ferramentas de investimento e [crédito](/glossario/credito), tornando-o uma opção completa para gerenciar as finanças.
 Prós:
 * Interface intuitiva e fácil de usar
 * Oferece ferramentas de investimento e crédito
