@@ -122,11 +122,35 @@ const LOCAL_BRAND_RE = new RegExp('\\b(' + [
 // gerar-post-comparacao.js, que não leem a fila. Citar concorrente de propósito
 // continua a poder; o que deixa de poder é uma página NASCER de um nome alheio.
 // Mantida CURTA de propósito: só o que foi pedido e o que estava provado na
-// rotação A-Z. Acrescentar corretora/exchange (binance, coinbase, robinhood…)
-// é decisão editorial — bloquearia também conteúdo legítimo sobre cripto — e
-// fica para quem decidir isso, com o corpus medido primeiro.
+// rotação A-Z. Corretora/exchange NÃO entra aqui — vai em CRIPTO_RE abaixo, que
+// tem motivo próprio.
 const PRODUTO_TERCEIRO_RE = new RegExp('\\b(' + [
   'splitwise', 'webull', 'yahoo finance', 'yahoofinance',
+].join('|') + ')\\b', 'i');
+
+// CRIPTO — DECISÃO DO DONO, 06/08/2026, nas palavras dele: "eu nunca jamais vou
+// querer fazer nenhum conteúdo sobre cripto ou algo semelhante". Não é uma
+// afinação técnica: é política editorial. Mudar isto é mudar o que o site fala.
+//
+// ⚠️ CUIDADO MEDIDO — o que ficou DE FORA de propósito:
+//   `cripto*` como prefixo apanharia `criptografia`, que é tema legítimo de
+//     segurança. Por isso a lista nomeia as formas exatas (criptomoeda,
+//     criptoativo…) e o `cripto` isolado, e não um prefixo solto.
+//   `token`      genérico demais ("token de autenticação", "token de acesso")
+//   `mineracao`  também é o setor de minério, tema de mercado legítimo
+//   `carteira`   em português é a carteira de investimentos — palavra central
+//                do nicho; nunca pode entrar aqui
+//   `eter`       "éter" sem acento ≠ "ether"; normalizeKeyword tira o acento,
+//                logo `ether` com \b não apanha "éter". Medido.
+const CRIPTO_RE = new RegExp('\\b(' + [
+  // moedas e temas
+  'cripto', 'criptomoeda', 'criptomoedas', 'criptoativo', 'criptoativos',
+  'bitcoin', 'btc', 'ethereum', 'ether', 'altcoin', 'altcoins', 'memecoin',
+  'dogecoin', 'solana', 'cardano', 'xrp', 'ripple', 'stablecoin',
+  'nft', 'nfts', 'blockchain', 'web3', 'defi', 'staking', 'halving', 'satoshi',
+  // exchanges e corretoras de cripto/derivados
+  'binance', 'coinbase', 'robinhood', 'etoro', 'metatrader', 'trading view',
+  'tradingview', 'kraken', 'bybit', 'mercado bitcoin', 'foxbit', 'novadax',
 ].join('|') + ')\\b', 'i');
 
 // "caixa" sozinha NÃO pode entrar na lista acima: em português é palavra comum
@@ -141,18 +165,19 @@ const CAIXA_BANCO_RE = /\b(?:financiamento|emprestimo|consorcio|saldo devedor|am
  * Devolver o motivo (em vez de só true/false) é o que permite escrever no campo
  * `reason` da fila qual das duas políticas a barrou — dá para auditar depois.
  *
- * @returns {'nome-proprio-local'|'produto-de-terceiro'|null}
+ * @returns {'nome-proprio-local'|'produto-de-terceiro'|'fora-do-nicho-cripto'|null}
  */
 export function motivoDeMarca(keyword) {
   // Colapsa separadores para apanhar "casas-bahia", "c6-bank", "fies:", "(sebrae)".
   const n = normalizeKeyword(keyword).replace(/[^a-z0-9]+/g, ' ').trim();
   if (!n) return null;
+  if (CRIPTO_RE.test(n)) return 'fora-do-nicho-cripto';
   if (LOCAL_BRAND_RE.test(n) || CAIXA_BANCO_RE.test(n)) return 'nome-proprio-local';
   if (PRODUTO_TERCEIRO_RE.test(n)) return 'produto-de-terceiro';
   return null;
 }
 
-/** True se a keyword nomeia marca de terceiro (local ou estrangeira). */
+/** True se a keyword nomeia marca de terceiro, ou é tema fora do nicho (cripto). */
 export function namesLocalBrand(keyword) {
   return motivoDeMarca(keyword) !== null;
 }
@@ -327,7 +352,9 @@ export function takeKeyword({ categories = [], exactCategory = false } = {}, fil
         dirty = true;
         const porque = motivoMarca === 'nome-proprio-local'
           ? 'nomeia empresa/programa de um país só (não universaliza)'
-          : 'nomeia app/plataforma de terceiro (não vira verbete nosso)';
+          : motivoMarca === 'fora-do-nicho-cripto'
+            ? 'é tema de cripto (fora do nicho, por decisão do dono)'
+            : 'nomeia app/plataforma de terceiro (não vira verbete nosso)';
         console.log(`ℹ️ keyword-queue: "${entry.keyword}" ${porque} — marcada como skipped.`);
         continue;
       }

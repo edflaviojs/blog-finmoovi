@@ -21,7 +21,10 @@ const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 // Termos populares por categoria (para os primeiros termos)
 const POPULAR_TERMS = {
   A: ['ações', 'aplicação financeira', 'ativo financeiro', 'alavancagem', 'inflação'],
-  B: ['bolsa de valores', 'bitcoin', 'dividendos', 'bônus salarial', 'balança comercial'],
+  // 'bitcoin' saiu em 06/08/2026: cripto está fora do nicho por decisão do dono.
+  // O verbete glossario/bitcoin.md (x3 idiomas) continua publicado — retirá-lo é
+  // decisão a parte, e não há destino equivalente para redirecionar.
+  B: ['bolsa de valores', 'dividendos', 'bônus salarial', 'balança comercial'],
   C: ['cdb', 'crédito', 'capital de giro', 'custo de oportunidade', 'câmbio'],
   D: ['diversificação', 'dívida', 'derivativos', 'despesa', 'depreciação'],
   E: ['etf', 'empréstimo', 'economia', 'exportação', 'equity'],
@@ -51,7 +54,9 @@ const POPULAR_TERMS = {
   // Ao acrescentar aqui: o termo tem de passar por motivoDeMarca() e
   // keywordLooksLikeConcept(), como a fila. tests/termo-guard.test.js prova.
   W: ['wall street', 'warrant', 'whale', 'withdrawal'],
-  X: ['xrp', 'xetra'],
+  // 'xrp' saiu em 06/08/2026 — e era o PRÓXIMO a nascer, porque a limpeza da
+  // véspera deixou-o em primeiro. X fica com um termo só, e está certo assim.
+  X: ['xetra'],
   Y: ['yield', 'yuan', 'yield curve', 'young investor'],
   Z: ['zero coupon', 'z-score', 'zeragem de posição', 'zona do euro', 'zona franca']
 };
