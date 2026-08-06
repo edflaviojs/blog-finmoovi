@@ -10,7 +10,7 @@ publishedAt: 2026-07-20
 readingTime: 3
 featured: false
 locale: "es"
-translationKey: "resumo-semanal-dolar-r-5-11-semana-3-julho-2026"
+translationKey: "cotacoes-semana-3-julho-2026"
 seo:
   metaTitle: "Cotizaciones Semana 3 julio 2026: Dólar R$ 5.11"
   metaDescription: "Resumen semanal: dólar a R$ 5.11, euro a R$ 5.84. Análisis e consejos para inversores."

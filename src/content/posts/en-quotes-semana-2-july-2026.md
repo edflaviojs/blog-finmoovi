@@ -10,7 +10,7 @@ publishedAt: 2026-07-13
 readingTime: 3
 featured: false
 locale: "en"
-translationKey: "resumo-semanal-dolar-r-5-11-semana-2-julho-2026"
+translationKey: "cotacoes-semana-2-julho-2026"
 seo:
   metaTitle: "Quotes Semana 2 july 2026: Dólar R$ 5.11"
   metaDescription: "Weekly summary: dólar a R$ 5.11, euro a R$ 5.83. Analysis e tips para investors."

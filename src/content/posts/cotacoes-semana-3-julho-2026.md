@@ -10,7 +10,7 @@ publishedAt: 2026-07-20
 readingTime: 3
 featured: false
 locale: "pt"
-translationKey: "resumo-semanal-dolar-r-5-11-semana-3-julho-2026"
+translationKey: "cotacoes-semana-3-julho-2026"
 scope: "br-only"
 seo:
   metaTitle: "Cotações Semana 3 julho 2026: Dólar R$ 5.11"

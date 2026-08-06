@@ -108,6 +108,16 @@ Mencione que ${config.app.name} ayuda a seguir inversiones en múltiples monedas
   const weekWord = locale === 'pt' ? 'semana' : locale === 'en' ? 'week' : 'semana';
   const slug = `${locale === 'pt' ? 'cotacoes' : locale === 'en' ? 'en-quotes' : 'es-cotizaciones'}-${weekWord}-${weekNum}-${monthName}-${today.getFullYear()}`;
 
+  // A chave de tradução É, por definição, o slug do post PT — é ela que casa
+  // PT↔EN↔ES no seletor de idioma e nas tags hreflang.
+  //
+  // Estava errada desde sempre: era montada a partir da COTAÇÃO DO DÓLAR
+  // (`resumo-semanal-dolar-r-5-18-semana-1-julho-2026`), uma string que nunca
+  // correspondeu a ficheiro nenhum e que muda toda semana com o câmbio.
+  // Resultado: 3 posts órfãos por semana — 24 dos 30 encontrados em 06/08/2026.
+  // Escrita aqui, ao lado do slug, para que as duas não possam voltar a divergir.
+  const translationKey = `cotacoes-semana-${weekNum}-${monthNames['pt'][today.getMonth()]}-${today.getFullYear()}`;
+
   // Insert 2 inline AI images into content
   console.log(`🖼️ Inserindo imagens inline (${locale})...`);
   const contentWithImages = await insertInlineImages(content, slug);
@@ -123,7 +133,7 @@ publishedAt: ${dateStr}
 readingTime: 3
 featured: false
 locale: "${locale}"
-translationKey: "resumo-semanal-dolar-r-${rates.USDBRL.replace('.', '-')}-semana-${weekNum}-${monthNames['pt'][today.getMonth()]}-${today.getFullYear()}"
+translationKey: "${translationKey}"
 scope: "br-only"
 seo:
   metaTitle: "${locale === 'pt' ? `Cotações Semana ${weekNum} ${monthName} ${today.getFullYear()}: Dólar R$ ${rates.USDBRL}` : locale === 'en' ? `Quotes Week ${weekNum} ${monthName} ${today.getFullYear()}: Dollar R$ ${rates.USDBRL}` : `Cotizaciones Semana ${weekNum} ${monthName} ${today.getFullYear()}: Dólar R$ ${rates.USDBRL}`}"

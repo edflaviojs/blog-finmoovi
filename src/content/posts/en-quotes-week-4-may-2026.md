@@ -10,7 +10,7 @@ publishedAt: 2026-05-27
 readingTime: 3
 featured: false
 locale: "en"
-translationKey: "resumo-semanal-dolar-r-5-03-semana-4-maio"
+translationKey: "cotacoes-semana-4-maio-2026"
 seo:
   metaTitle: "Quotes Week 4 May 2026: Dollar R$ 5.03"
   metaDescription: "Weekly summary: dollar at R$ 5.03, euro at R$ 5.85. Analysis and tips for investors."

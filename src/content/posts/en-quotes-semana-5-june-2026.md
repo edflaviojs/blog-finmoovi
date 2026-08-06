@@ -10,7 +10,7 @@ publishedAt: 2026-06-29
 readingTime: 3
 featured: false
 locale: "en"
-translationKey: "resumo-semanal-dolar-r-5-17-semana-5-junho-2026"
+translationKey: "cotacoes-semana-5-junho-2026"
 seo:
   metaTitle: "Quotes Semana 5 june 2026: Dólar R$ 5.17"
   metaDescription: "Weekly summary: dólar a R$ 5.17, euro a R$ 5.89. Analysis e tips para investors."

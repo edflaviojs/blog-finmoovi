@@ -10,7 +10,7 @@ publishedAt: 2026-06-15
 readingTime: 3
 featured: false
 locale: "es"
-translationKey: "resumo-semanal-dolar-r-5-08-semana-3-junho-2026"
+translationKey: "cotacoes-semana-3-junho-2026"
 seo:
   metaTitle: "Cotizaciones Semana 3 junio 2026: Dólar R$ 5.08"
   metaDescription: "Resumen semanal: dólar a R$ 5.08, euro a R$ 5.88. Análisis e consejos para inversores."

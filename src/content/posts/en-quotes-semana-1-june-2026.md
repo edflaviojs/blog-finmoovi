@@ -10,7 +10,7 @@ publishedAt: 2026-06-04
 readingTime: 3
 featured: false
 locale: "en"
-translationKey: "resumo-semanal-dolar-r-5-03-semana-1-junho-2026"
+translationKey: "cotacoes-semana-1-junho-2026"
 seo:
   metaTitle: "Quotes Week 1 June 2026: Dollar R$ 5.03"
   metaDescription: "Weekly summary: dollar at R$ 5.03, euro at R$ 5.84. Analysis and tips for investors."

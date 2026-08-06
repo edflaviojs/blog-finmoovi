@@ -11,7 +11,7 @@ updatedAt: 2026-07-01
 readingTime: 7
 featured: true
 locale: "pt"
-translationKey: "personal-budget"
+translationKey: "como-criar-orcamento-pessoal"
 seo:
   metaTitle: "Como Criar Orçamento Pessoal em 5 Passos [Guia 2026]"
   metaDescription: "Aprenda a criar um orçamento pessoal eficiente em 5 passos simples. Método prático para controlar gastos e economizar dinheiro."

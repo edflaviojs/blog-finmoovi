@@ -10,7 +10,7 @@ publishedAt: 2026-06-22
 readingTime: 3
 featured: false
 locale: "es"
-translationKey: "resumo-semanal-dolar-r-5-16-semana-4-junho-2026"
+translationKey: "cotacoes-semana-4-junho-2026"
 seo:
   metaTitle: "Cotizaciones Semana 4 junio 2026: Dólar R$ 5.16"
   metaDescription: "Resumen semanal: dólar a R$ 5.16, euro a R$ 5.91. Análisis e consejos para inversores."
