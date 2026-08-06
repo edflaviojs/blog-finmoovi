@@ -1,6 +1,6 @@
 ---
 term: "qualidade de ativos"
-definition: "Entenda o que é qualidade de ativos, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
+definition: "Qualidade de ativos é o quanto se pode confiar que um investimento, um crédito ou uma empresa vai manter seu valor e honrar o que promete. Mede-se por indicadores como rating, margem de lucro e liquidez — não por opinião."
 title: "qualidade de ativos - Glossário Financeiro"
 description: "Entenda o que é qualidade de ativos, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
 image: "/images/glossario/qualidade.webp"
@@ -19,7 +19,7 @@ seo:
 
 ## O que é  
 
-Qualidade, no mundo das finanças, não é um conceito abstrato; é a capacidade de um investimento, de um crédito ou de um produto financeiro de manter seu valor ao longo do tempo. Quando falamos de “qualidade”, estamos avaliando o risco de perda, a solidez da empresa ou do ativo e a previsibilidade dos retornos. Em termos simples, um ativo de alta qualidade tem menor chance de desvalorizar inesperadamente e costuma gerar rendimentos mais estáveis.
+Qualidade de ativos não é um julgamento de gosto: é a capacidade de um investimento, de um crédito ou de um produto financeiro de manter seu valor ao longo do tempo e entregar o que prometeu. Não confunda com "comprar coisas boas" — aqui se avalia o ativo, não o consumo. Quando falamos de “qualidade”, estamos avaliando o risco de perda, a solidez da empresa ou do ativo e a previsibilidade dos retornos. Em termos simples, um ativo de alta qualidade tem menor chance de desvalorizar inesperadamente e costuma gerar rendimentos mais estáveis.
 
 ![O que é  ](/images/glossario/qualidade-inline-1.webp)
 

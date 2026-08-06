@@ -1,8 +1,8 @@
 ---
 term: "calidad de activos"
-definition: "Entienda qué es qualidade, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
+definition: "Calidad de activos es cuánto se puede confiar en que una inversión, un crédito o una empresa mantendrá su valor y cumplirá lo que promete. Se mide con indicadores como calificación de riesgo, rentabilidad constante y endeudamiento — no con opiniones."
 title: "calidad de activos - Glosario Financiero"
-description: "Entienda qué es qualidade, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
+description: "Calidad de activos es cuánto se puede confiar en que una inversión, un crédito o una empresa mantendrá su valor y cumplirá lo que promete. Se mide con indicadores como calificación de riesgo, rentabilidad constante y endeudamiento — no con opiniones."
 image: "/images/glossario/qualidade.webp"
 imageAlt: "Monedas doradas, barras gráficas y planta en frasco sobre fondo azul oscuro."
 category: "basico"
@@ -14,19 +14,19 @@ locale: "es"
 translationKey: "glossario-qualidade-de-ativos"
 seo:
   metaTitle: "calidad de activos - Glosario Financiero"
-  metaDescription: "Entienda qué es qualidade, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
+  metaDescription: "Calidad de activos es cuánto se puede confiar en que una inversión, un crédito o una empresa mantendrá su valor y cumplirá lo que promete. Se mide con indicadores como calificación de riesgo, rentabilidad constante y endeudamiento — no con opiniones."
   keywords: ["calidad de activos", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 ---
 
 ## Qué es
 
-La **qualidade** en finanzas no es un término técnico complicado; se refiere a la capacidad de un activo, una inversión o una empresa para mantener su [valor](/es/glossario/es-valor-financiero) y generar rendimientos de forma estable a lo largo del tiempo. En palabras simples, es la “solidez” o “fiabilidad” de lo que estás comprando. Cuando hablamos de qualidade de crédito, por ejemplo, evaluamos qué tan probable es que una empresa pague sus deudas sin problemas. Entender este concepto te ayuda a elegir opciones que no solo prometen ganancias, sino que también protegen tu dinero frente a imprevistos.
+La **calidad** en finanzas no es un término técnico complicado; se refiere a la capacidad de un activo, una inversión o una empresa para mantener su [valor](/es/glossario/es-valor-financiero) y generar rendimientos de forma estable a lo largo del tiempo. En palabras simples, es la “solidez” o “fiabilidad” de lo que estás comprando. Cuando hablamos de calidad de crédito, por ejemplo, evaluamos qué tan probable es que una empresa pague sus deudas sin problemas. Entender este concepto te ayuda a elegir opciones que no solo prometen ganancias, sino que también protegen tu dinero frente a imprevistos.
 
 ![Qué es](/images/glossario/qualidade-inline-1.webp)
 
 ## Cómo funciona
 
-Para medir la qualidade se usan varios indicadores que, aunque suenen técnicos, son fáciles de interpretar una vez que sabes qué buscar.  
+Para medir la calidad se usan varios indicadores que, aunque suenen técnicos, son fáciles de interpretar una vez que sabes qué buscar.  
 - **Historial de pagos:** cuántas veces la empresa o el emisor ha cumplido con sus obligaciones.  
 - **Rentabilidad constante:** si los retornos han sido similares año tras año, sin grandes altibajos.  
 - **Endeudamiento bajo:** una relación deuda‑capital razonable indica que la entidad no está sobrecargada.  
@@ -36,7 +36,7 @@ Al combinar estos datos, obtienes una “puntuación de calidad” que te dice s
 
 ## Ventajas
 
-Contar con activos de alta qualidade trae beneficios claros para tu bolsillo y tu tranquilidad.  
+Contar con activos de alta calidad trae beneficios claros para tu bolsillo y tu tranquilidad.  
 - **Menor riesgo de impago:** reduces la probabilidad de perder tu capital porque la entidad cumple con sus compromisos.  
 - **Flujo de caja predecible:** sabes con mayor certeza cuándo recibirás los intereses o [dividendos](/es/glossario/es-dividendos).  
 - **Acceso a mejores tasas:** instituciones con buena reputación suelen ofrecer condiciones más favorables, como tasas de interés más bajas en préstamos.  
@@ -48,10 +48,10 @@ En la práctica, esto significa que tu dinero trabaja de forma más estable y co
 
 ## Riesgos
 
-Aunque la qualidade suena como una garantía total, también existen riesgos que no debes pasar por alto.  
+Aunque la calidad suena como una garantía total, también existen riesgos que no debes pasar por alto.  
 - **Sobrevaloración:** a veces los activos “de calidad” están sobrepreciados y su rentabilidad futura puede ser menor.  
 - **[Cambio](/es/glossario/es-cambio) de calificación:** una empresa puede perder su buena reputación por un evento inesperado, como una crisis sectorial.  
-- **Concentración:** invertir solo en activos de alta qualidade puede limitar tus oportunidades de obtener mayores ganancias en sectores emergentes.  
+- **Concentración:** invertir solo en activos de alta calidad puede limitar tus oportunidades de obtener mayores ganancias en sectores emergentes.  
 - **Falta de diversificación:** depender exclusivamente de un tipo de activo aumenta la vulnerabilidad ante cambios macroeconómicos.  
 
 Reconocer estos riesgos te permite equilibrar tu cartera y no caer en la falsa seguridad de “solo lo bueno”.
@@ -67,11 +67,11 @@ Supongamos que tienes un salario mensual de €900 y decides destinar el 20 % 
 **Consejo práctico:** **Revisa la calificación de tus inversiones al menos una vez al año; una pequeña variación puede indicar la necesidad de ajustar tu cartera.**  
 **Consejo práctico:** **Mantén un [fondo de emergencia](/es/glossario/es-fondo-de-emergencia) de al menos tres salarios (€1,620‑€4,320) antes de comprometer dinero en activos de largo plazo.**  
 
-Estos ejemplos demuestran cómo la qualidade se traduce en ingresos reales y previsibles, sin sacrificar la seguridad.
+Estos ejemplos demuestran cómo la calidad se traduce en ingresos reales y previsibles, sin sacrificar la seguridad.
 
 ## Cómo empezar
 
-Dar los primeros pasos hacia una cartera basada en qualidade es más sencillo de lo que parece.  
+Dar los primeros pasos hacia una cartera basada en calidad es más sencillo de lo que parece.  
 - **Define tu objetivo:** decide si buscas ingresos mensuales, ahorro para la jubilación o crecimiento del capital.  
 - **Evalúa tu presupuesto:** con un salario de €540 a €1,440, determina cuánto puedes destinar mensualmente sin afectar tus gastos esenciales.  
 - **Elige instrumentos de calidad:** busca bonos con calificación AA o fondos de renta fija con historial de rendimientos estables.  

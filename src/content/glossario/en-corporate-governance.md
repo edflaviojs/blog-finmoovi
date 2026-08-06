@@ -1,12 +1,12 @@
 ---
 term: "corporate governance"
-definition: "Understand what governança is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
+definition: "Corporate governance is the set of rules and controls that define how a company is directed and supervised. For anyone buying shares, it decides whether you are a real partner or just a passenger: good governance protects the minority shareholder."
 title: "corporate governance - Financial Glossary"
-description: "Understand what governança is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
+description: "What corporate governance is, the four principles behind it, how it protects minority shareholders, and what to check before you buy a share."
 image: "/images/glossario/governanca.webp"
 imageAlt: "Gold coins and growing plants in glass containers on purple background"
 category: "basico"
-tags: ["corporate governance", "glossário", "finanças", "glossary", "finance", "brazil"]
+tags: ["corporate governance", "minority shareholder", "board of directors", "glossary"]
 author: "FinMoovi"
 publishedAt: 2026-07-05
 readingTime: 5
@@ -14,53 +14,54 @@ locale: "en"
 translationKey: "glossario-governanca-corporativa"
 seo:
   metaTitle: "corporate governance - Financial Glossary"
-  metaDescription: "Understand what governança is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
-  keywords: ["corporate governance", "glossário", "finanças", "glossary", "finance", "brazil"]
+  metaDescription: "What corporate governance is, the four principles behind it, how it protects minority shareholders, and what to check before you buy a share."
+  keywords: ["corporate governance", "minority shareholder", "tag along", "board of directors", "glossary"]
 ---
 
 ## What it is
-Governance is a term that may seem complicated, but it's simpler than you think. Basically, it refers to how organizations, including companies and even families, manage their financial resources responsibly and ethically. This involves creating rules, policies, and processes to ensure money is used efficiently and transparently. For example, imagine you earn $1,000 per month and need to decide how to allocate this [value](/en/glossario/en-financial-value) among accounts, investments, and expenses. Personal governance would help establish a clear plan for those decisions.
 
-- Definition of clear financial objectives
-- Creation of a realistic budget
-- Implementation of controls to avoid excessive spending
-- Constant monitoring of finances  
+Corporate governance is the set of **rules, practices and controls** that define how a company is directed and supervised — and who answers for what.
 
-Governance is not limited to large companies; it is an essential practice for anyone who wants to have control over their finances. By adopting good governance practices, you can avoid financial problems, such as unnecessary [debt](/en/glossario/en-debt) or the lack of [savings](/en/glossario/en-savings) for the future.
+It is not paperwork. It is what balances the interests of the people who run the company (controlling owners and executives) against the interests of those who simply put money into it: you, if you bought [stocks](/en/glossario/en-stocks).
 
-![What it is](/images/glossario/governanca-inline-1.webp)
+## Why it affects you
 
+When you buy a share you become a partner in a company where you do not sit at the decision table. Governance is what stops your stake from being treated as a rounding error.
 
+Weak governance is where the classic problems show up:
 
-## How it works
-Governance works by establishing a set of rules and procedures that help ensure financial decisions are made responsibly. This can include creating a budget, setting savings goals, and implementing controls to avoid excessive spending. For example, if you decide you want to save $200 per month, governance would help ensure that amount is set aside regularly, regardless of other expenses. **Practical tip:** A good way to start is to define your financial priorities and create an action plan to achieve them.
+- deals between the company and other businesses owned by the same controller, on odd terms
+- new share issues that dilute the partners who were already there
+- information reaching the market late, or not at all
+- a board made up only of people close to the controlling owner
 
-One of the most useful tools for personal governance is the budget. A budget is like a battle plan for your finances, helping ensure you use your money efficiently. Imagine you earn $1,200 per month and have fixed expenses of $400. With a budget, you can decide how to allocate the remaining $800 among savings, investments, and variable expenses.
+## The four principles
 
+| Principle | What it means in practice |
+| --- | --- |
+| **Transparency** | Disclose what matters, on time, including the bad news |
+| **Fairness** | Treat every partner by the same standard, with no privilege for the controller |
+| **Accountability** | Whoever decides answers for the consequences |
+| **Corporate responsibility** | Run the company for the long term, not just this quarter's number |
 
+## How it is measured in practice
 
-## Advantages
-The advantages of implementing good governance are numerous. First, it helps avoid financial problems, such as debt or lack of resources for emergencies. Additionally, governance promotes financial discipline, helping ensure you are working toward your financial goals. **Practical tip:** It is important to regularly review your budget and financial plan to ensure they remain aligned with your objectives.
+The mechanisms that move governance from talk to fact:
 
-Another important advantage is the peace of mind that comes from knowing your finances are under control. Imagine being able to plan a trip or buy a new car, knowing you have the necessary resources. Governance also helps protect against financial risks, such as job loss or unexpected medical expenses, ensuring you have a financial reserve for those situations.
+- **A board of directors** with **independent** members who owe the controller no favours
+- **An audit committee** and an external auditor, so the numbers have someone checking them
+- **A single class of voting shares**, so whoever has more money in the company has more say
+- **Tag-along rights**: the minority's right to sell at the same price as the controller if the company changes hands
 
-![Advantages](/images/glossario/governanca-inline-3.webp)
+## Where to check before investing
 
+Many [stock exchanges](/en/glossario/en-bolsa-de-valores) group listed companies into tiers with increasing governance requirements. The stricter tiers typically demand voting shares only, full tag-along rights and a minimum share of stock in public hands. Where a company lists matters: the same business can be held to very different standards depending on the tier.
 
+None of this guarantees a profit — a well-governed company can still fall in price. It guarantees **clear rules**, which is a different thing.
 
-## Risks
-Although governance is essential for financial health, there are risks associated with its implementation. One of the main risks is excessive rigidity, where the financial plan becomes so restrictive that it does not allow flexibility for changes or unexpected opportunities. **Practical tip:** It is crucial to find a balance between financial discipline and flexibility for necessary adaptations.
+## Before buying a share
 
-Another risk is the lack of knowledge or skills to manage finances effectively. This can lead to poor decisions, such as high‑risk investments or a lack of [diversification](/en/glossario/en-diversification) in investments. To mitigate these risks, it is important to seek [financial education](/en/glossario/en-financial-education) and, if necessary, consult a professional.
-
-
-
-## Practical examples
-A practical example of governance in action is creating an [emergency fund](/en/glossario/en-emergency-fund). Imagine you earn $800 per month and decide you want an emergency fund that covers three months of expenses, which would be $2,400. With a governance plan, you can set a goal to reach that amount within a specific period, for example, six months, and work consistently to achieve it.
-
-Another example is expense management. If you notice you are spending too much on restaurants, you can set a limit for those expenses and find ways to reduce them, such as cooking at home more often. Personal governance helps identify areas of waste and implement changes to improve financial efficiency.
-
-
-
-## Start today
-No matter what your current financial situation is, it is always the right time to start implementing good governance practices. **Practical tip:** Start by defining your financial goals and creating a basic budget. You can use tools such as spreadsheets or personal finance apps to help organize your finances. Remember, governance is an ongoing process that requires regular review and adjustment. With discipline and patience, you can achieve financial stability and build a safer future. So, don’t wait any longer — start building your financial governance today!
+- **Check the listing tier.** It is the fastest governance signal you can get
+- **Look for tag-along rights.** Without them, a sale of control can leave you out of the premium
+- **Confirm there are independent directors** on the board
+- **Read the disclosure history**: a company that reports late once tends to do it again
