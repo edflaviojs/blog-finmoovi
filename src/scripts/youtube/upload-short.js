@@ -519,10 +519,22 @@ function buildMetadata(raw, script) {
 
   // Maiúscula inicial: a palavra-chave entra crua no começo do título e saía em
   // minúscula em metade dos vídeos ("ações: como…", "inflação: 3 erros…").
-  const title = titularOShort(
+  /**
+   * ♦ 06/08/2026 — O TÍTULO DO DONO GANHA A TUDO (IMPL20 §60).
+   *
+   * Quando ele escreve um título na /status, esse título vai **à letra** para o YouTube:
+   * sem a IA, sem o teto das 8 palavras, sem maiúsculas na palavra-chave. **Ele escreveu-o
+   * para ir assim.** As nossas regras existem para quando é a máquina a escrever; aplicá-las
+   * ao que uma pessoa decidiu seria mudar-lhe a decisão sem lhe dizer.
+   *
+   * ⚠️ Só se tira o que o YouTube recusa (`<` e `>`) e corta-se no limite dele (100).
+   */
+  const doDono = sanitizeText(script.tituloDoDono, 100);
+  const title = doDono || titularOShort(
     maiusculaInicial(sanitizeText(raw.title, 100) || sanitizeText(`${script.keyword}`, 100)),
     script.keyword || script.term,
   );
+  if (doDono) log(`⭐ título escrito pelo dono: "${doDono}"`);
 
   // Hashtags: token único (CamelCase), sem stopword solta, dedup, no máx 5 (#Shorts sempre por último).
   const hashtags = buildHashtagList(raw.hashtags);

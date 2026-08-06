@@ -58,6 +58,27 @@ console.log('\n1. O TÍTULO — curto, e só a palavra-chave a gritar');
     titularOShort('Um título qualquer', '', calado) === 'Um título qualquer');
 
   /**
+   * 🔴 **O TÍTULO QUE O DONO ESCREVE NA /status VAI À LETRA.** Ele escreveu-o para ir
+   * assim: sem a IA, sem o teto das 8 palavras, sem maiúsculas postas por nós. As nossas
+   * regras existem para quando é a MÁQUINA a escrever — aplicá-las ao que uma pessoa
+   * decidiu seria mudar-lhe a decisão sem lhe dizer.
+   * ⚠️ Esta prova nasceu de uma pergunta dele: *"esse título que eu vou colocar lá na
+   * /status realmente vai ser gerado, ou é somente para um teste?"* — e a resposta, no
+   * código, era **metade**: o título era guardado na fila e nunca chegava ao YouTube.
+   */
+  const comDono = { keyword: 'inflação', term: 'inflação', category: 'x', cta: { text: 'y' }, tituloDoDono: 'Eu escrevi este título exatamente assim e com mais de oito palavras' };
+  const metaDono = buildMetadata(deterministicMeta(comDono), comDono);
+  ok('🔴 o título do dono vai à letra, sem a IA lhe tocar',
+    metaDono.snippet.title === comDono.tituloDoDono, metaDono.snippet.title);
+  ok('e nem o teto de 8 palavras nem as maiúsculas lhe são aplicados',
+    metaDono.snippet.title.split(/\s+/).length > MAX_PALAVRAS_TITULO_SHORT
+      && !metaDono.snippet.title.includes('INFLAÇÃO'));
+  const semDono = { keyword: 'inflação', term: 'inflação', category: 'x', cta: { text: 'y' } };
+  ok('sem título do dono, tudo continua como sempre foi',
+    buildMetadata({ ...deterministicMeta(semDono), title: 'Inflação: 3 erros que custam caro' }, semDono)
+      .snippet.title === 'INFLAÇÃO: 3 erros que custam caro');
+
+  /**
    * ⚠️ **O TÍTULO COMPRIDO É REJEITADO, NÃO CORTADO** — e o pedido à IA manda o mesmo
    * número que a trava exige. É a regra contra o defeito mais repetido deste projeto: o
    * prompt a mandar escrever o que o leitor a seguir recusa.

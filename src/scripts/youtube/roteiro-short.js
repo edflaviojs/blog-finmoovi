@@ -83,6 +83,12 @@ function readEditorialTopic(editorialId) {
     definition: '',
     category: topic.pillar || 'basico',
     body: '',
+    /**
+     * ♦ 06/08/2026 — O TÍTULO QUE O DONO ESCREVEU NA /status (IMPL20 §60).
+     * ⚠️ Vai **à letra** até ao YouTube: não é sugestão para a IA, é ordem. Se estiver
+     * vazio (o normal), a IA escreve como sempre. Ver `buildMetadata` no `upload-short.js`.
+     */
+    tituloDoDono: String(topic.tituloDoDono || '').trim(),
   };
 
   // Se tem glossaryRef, lê o .md do glossário para dados de apoio
@@ -710,6 +716,16 @@ async function main() {
   // generateScript (ver runHardAntiRepetitionChecks) — reprovam a tentativa e
   // disparam o retry corretivo, em vez de só um aviso no console.
   const { script, warnings } = await generateScript(t, { antiRep, recentContext: recent });
+
+  /**
+   * ♦ 06/08/2026 — O título que o dono escreveu viaja com o roteiro até à publicação.
+   * ⚠️ Fora do `generateScript` de propósito: **não é matéria-prima para a IA, é ordem.**
+   * Se entrasse no que ela lê, ela reescrevia-o — e o dono escreveu-o para ir à letra.
+   */
+  if (t.tituloDoDono) {
+    script.tituloDoDono = t.tituloDoDono;
+    console.log(`⭐ título escrito pelo dono, vai à letra: "${t.tituloDoDono}"`);
+  }
 
   if (!existsSync(OUTPUT_DIR)) mkdirSync(OUTPUT_DIR, { recursive: true });
   const fileSlug = isEditorial ? slug.slice('EDITORIAL:'.length) : slug;
