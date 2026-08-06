@@ -35,6 +35,14 @@ import { tempoDosCapitulos, montarDescricao, conferirCapitulos, blocosDeReserva,
 const RAIZ = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
 const FPS = 30;
 const SIGNATURE_FRAMES = 75;
+/**
+ * ⚠️ ESPELHADO de `TELA_FINAL_FRAMES` (§61) — os 10 segundos da tela final, onde o
+ * YouTube deixa pôr os cartões clicáveis. É a **terceira** cópia deste número (o render,
+ * o montador e esta prova), e é de propósito: esta é a testemunha independente. Se ela
+ * fosse buscar o valor ao render, uma mudança errada mudava os dois lados ao mesmo tempo
+ * e a prova ficava verde a mentir.
+ */
+const TELA_FINAL_FRAMES = 300;
 
 let passou = 0;
 let falhou = 0;
@@ -113,7 +121,7 @@ function contaDoRender(plano, timing) {
   const conteudo = inicios[inicios.length - 1] + frames[frames.length - 1];
   return {
     inicios: inicios.map((f) => (VOZ_ENTRA_FRAMES + f) / FPS),
-    total: VOZ_ENTRA_FRAMES + conteudo + SIGNATURE_FRAMES,
+    total: VOZ_ENTRA_FRAMES + conteudo + SIGNATURE_FRAMES + TELA_FINAL_FRAMES,
   };
 }
 
@@ -132,8 +140,8 @@ console.log('\n1. A LINHA DO TEMPO DAS LEGENDAS');
 
   ok(
     'a legenda e o render concordam na duração total do vídeo',
-    Math.abs((legenda.fimDoConteudo + SIGNATURE_FRAMES / FPS) - render.total / FPS) < 0.0005,
-    `${(legenda.fimDoConteudo + SIGNATURE_FRAMES / FPS).toFixed(3)}s contra ${(render.total / FPS).toFixed(3)}s`,
+    Math.abs((legenda.fimDoConteudo + (SIGNATURE_FRAMES + TELA_FINAL_FRAMES) / FPS) - render.total / FPS) < 0.0005,
+    `${(legenda.fimDoConteudo + (SIGNATURE_FRAMES + TELA_FINAL_FRAMES) / FPS).toFixed(3)}s contra ${(render.total / FPS).toFixed(3)}s`,
   );
 
   /**
@@ -764,14 +772,22 @@ console.log('\n6. CONTRA O VÍDEO QUE FOI ENTREGUE');
     const timing = JSON.parse(readFileSync(caminhoTiming, 'utf-8'));
     const legenda = iniciosDasCenas(plano, timing);
     const render = contaDoRender(plano, timing);
-    /** O que foi medido no ficheiro entregue: **10131 fotogramas, 337,700 s** (§44.4). */
+    /**
+     * O ficheiro entregue em 04/08 media **10131 fotogramas, 337,700 s** (§44.4).
+     * ♦ 06/08 (§61): a TELA FINAL acrescentou **300 fotogramas** (10 s) ao fim de cada
+     * vídeo longo — logo o mesmo guião passa a dar **10431**.
+     * ⚠️ **Este número continua fixo de propósito.** A tentação é escrevê-lo como
+     * `render.total`, e aí a prova compara-se consigo própria e fica verde para sempre.
+     * O que ela guarda é o vídeo MEDIDO, e é por isso que ela avisa quando a duração
+     * muda — como avisou agora.
+     */
     ok(
-      'a conta dá os 10131 fotogramas exatos do vídeo que vai ao ar',
-      render.total === 10131,
+      'a conta dá os 10431 fotogramas exatos do vídeo que vai ao ar (10131 + a tela final)',
+      render.total === 10131 + TELA_FINAL_FRAMES,
       `deu ${render.total}`,
     );
     ok(
-      'e a legenda acaba onde o vídeo acaba (a menos da assinatura)',
+      'e a legenda acaba onde a NARRAÇÃO acaba — nem a assinatura nem a tela final levam legenda',
       Math.abs((legenda.fimDoConteudo + SIGNATURE_FRAMES / FPS) - 337.7) < 0.01,
       `${(legenda.fimDoConteudo + SIGNATURE_FRAMES / FPS).toFixed(3)}s`,
     );

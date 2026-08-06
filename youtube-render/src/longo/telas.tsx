@@ -942,3 +942,185 @@ export const IconesDaCena: React.FC<{
     </div>
   );
 };
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// A TELA FINAL — IMPL20 §61 (06/08/2026)
+// ═══════════════════════════════════════════════════════════════════════════════
+
+/**
+ * ⚠️ **DEZ SEGUNDOS, E O NÚMERO NÃO É AO ACASO.** O YouTube só deixa pôr os cartões
+ * clicáveis (a "tela final") nos **últimos 5 a 20 segundos** do vídeo. Menos de 5 e ele
+ * recusa; muito mais e ninguém fica. Dez dá tempo de ler as duas coisas e ainda sobra
+ * para clicar.
+ */
+export const TELA_FINAL_FRAMES = 300; // 10s a 30fps
+
+/**
+ * A TELA FINAL DO VÍDEO LONGO — o que fica no ecrã quando a narração acaba.
+ *
+ * ═══ O PROBLEMA QUE ELA RESOLVE ═══
+ * O vídeo acabava em 2,5 segundos de assinatura e **o espectador ficava sem destino** —
+ * o YouTube enche o ecrã com sugestões de OUTROS canais. O dono: *"só para que o vídeo
+ * não fique sem nada no final e percamos espectadores para concorrentes"*.
+ *
+ * ═══ 🔴 A PARTE CLICÁVEL NÃO É NOSSA, E NÃO PODE SER ═══
+ * Os cartões em que se clica são a **tela final do YouTube**, e **não existem na API**
+ * (pedido aberto na Google desde janeiro de 2025). Põem-se à mão no Studio — mas só na
+ * PRIMEIRA vez: a partir daí o editor tem *"Importar de outro vídeo"*, e são dois
+ * cliques por semana.
+ *
+ * **Então o que este ecrã faz é preparar o sítio para eles.** As duas molduras vazias —
+ * o retângulo e o círculo — são onde o dono larga o cartão da playlist e o de inscrever.
+ * Sem elas, os cartões do YouTube caem por cima do desenho e fica tudo sujo; com elas,
+ * parece que o vídeo foi desenhado à volta deles. **É o mesmo truque do carimbo dentro
+ * do Short (§53): quando não se manda na ferramenta, veste-se o que ela faz.**
+ *
+ * ⚠️ **A PLAYLIST E NÃO "O PRÓXIMO VÍDEO"** — decisão do dono, e está certa: quando este
+ * vídeo é feito, o próximo ainda não existe, e um cartão a apontar para um vídeo que
+ * ainda não foi escrito é um cartão que aponta para o vazio. A playlist nunca fica
+ * desatualizada e ainda encadeia vários (§59).
+ *
+ * ⚠️ **É SEMPRE A MESMA, E NÃO SE GERA POR VÍDEO.** Nada aqui depende do assunto: o
+ * fundo é uma arte só, feita uma vez, e o texto é fixo. Custo por vídeo: **zero**.
+ *
+ * ⚠️ **AS MARGENS SÃO 6%** — o YouTube não deixa pôr cartões coladinhos à borda, e um
+ * desenho que encoste lá fica com metade tapada.
+ */
+/**
+ * A ARTE DE FUNDO DA TELA FINAL — feita UMA vez pela Manus, usada em todos os vídeos.
+ *
+ * ⚠️ **SE O FICHEIRO NÃO EXISTIR, ISTO DESAPARECE EM SILÊNCIO E O VÍDEO SAI À MESMA.**
+ * O fundo desenhado por nós já está por baixo. Uma imagem em falta **não pode** derrubar
+ * um render de 36 minutos — é a mesma regra da capa do Reel e do primeiro comentário.
+ *
+ * Onde pôr o ficheiro: `youtube-render/public/manus/tela-final.jpg` (1920×1080).
+ */
+const FundoDaManus: React.FC = () => {
+  const [falhou, setFalhou] = React.useState(false);
+  if (falhou) return null;
+  return (
+    <AbsoluteFill>
+      <img
+        src={staticFile('manus/tela-final.jpg')}
+        onError={() => setFalhou(true)}
+        alt=""
+        style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+      />
+      {/* Um véu por cima: seja qual for a arte, o texto tem de continuar a ler-se. */}
+      <AbsoluteFill style={{ background: `${BRAND.bg}66` }} />
+    </AbsoluteFill>
+  );
+};
+
+export const TelaFinal: React.FC<{ frames?: number }> = ({ frames = TELA_FINAL_FRAMES }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+
+  const entra = spring({ frame, fps, config: { damping: 18, mass: 0.9 } });
+  // Sai nos últimos 8 fotogramas, para não cortar a seco no fim do ficheiro.
+  const sai = interpolate(frame, [frames - 8, frames], [1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  // Nada fica parado — a regra do dono desde 04/08.
+  const aproxima = interpolate(frame, [0, frames], [1.03, 1]);
+  const pulsa = 0.5 + 0.5 * Math.sin((frame / fps) * 2.2);
+
+  /** A moldura vazia onde o cartão do YouTube vai aterrar. */
+  const Moldura: React.FC<{ estilo: React.CSSProperties; rotulo: string; redonda?: boolean; atraso: number }> = ({ estilo, rotulo, redonda, atraso }) => {
+    const ap = spring({ frame: frame - atraso, fps, config: { damping: 16, mass: 0.8 } });
+    return (
+      <div style={{
+        position: 'absolute',
+        ...estilo,
+        opacity: ap,
+        transform: `scale(${interpolate(ap, [0, 1], [0.94, 1])})`,
+        borderRadius: redonda ? '50%' : 22,
+        border: `3px dashed ${BRAND.cyan}${redonda ? '66' : '55'}`,
+        background: `${BRAND.panel}cc`,
+        boxShadow: `0 0 ${40 + pulsa * 30}px ${BRAND.violet}33`,
+        display: 'flex', alignItems: 'center', justifyContent: 'center',
+        textAlign: 'center', padding: 18,
+      }}>
+        <span style={{
+          fontFamily: BODY, fontWeight: 800, fontSize: redonda ? 26 : 30,
+          letterSpacing: 3, color: BRAND.sub, textTransform: 'uppercase', lineHeight: 1.25,
+        }}>{rotulo}</span>
+      </div>
+    );
+  };
+
+  return (
+    <AbsoluteFill style={{ opacity: sai, overflow: 'hidden' }}>
+      {/*
+        O fundo desenhado por nós — e é ele que fica se a arte da Manus não existir.
+        ⚠️ **A ORDEM IMPORTA:** o nosso vem PRIMEIRO e a arte por cima. Assim, no dia em
+        que o ficheiro faltar (ou vier estragado), a tela final continua a sair bonita em
+        vez de sair preta. **Nada de imagem pode derrubar um vídeo de 36 minutos.**
+      */}
+      <FundoAbstrato variante={2} frames={frames} />
+      <FundoDaManus />
+      <AbsoluteFill style={{
+        background: `radial-gradient(circle at 30% 45%, ${BRAND.violet}2e, ${BRAND.bg}00 62%)`,
+      }} />
+
+      <AbsoluteFill style={{ transform: `scale(${aproxima})` }}>
+        {/* ── o lado do texto (esquerda) ── */}
+        <div style={{
+          position: 'absolute', left: '6%', top: '22%', width: '42%',
+          opacity: entra, transform: `translateX(${interpolate(entra, [0, 1], [-40, 0])}px)`,
+        }}>
+          {/* ⚠️ A marca já está no alto do ecrã (a `Watermark`) — repeti-la aqui era
+              dizer o nome duas vezes no mesmo quadro. */}
+          <div style={{
+            fontFamily: DISPLAY, fontWeight: 900, fontSize: 100, lineHeight: 1.05,
+            ...gradientText,
+          }}>Continue<br />por aqui</div>
+          <div style={{
+            marginTop: 28, height: 8, borderRadius: 4, width: 420,
+            background: BRAND.gradient,
+          }} />
+          {/*
+            🔴 PORTUGUÊS DO BRASIL. A primeira versão dizia *"escolhe"* e
+            *"inscreve-te"* — português de Portugal, num canal brasileiro. Passaria num
+            vídeo por semana, para sempre, e ninguém o teria escrito de propósito: é a
+            língua de quem escreve o código a escapar para o ecrã.
+          */}
+          <div style={{
+            marginTop: 34, fontFamily: BODY, fontWeight: 600, fontSize: 40,
+            color: BRAND.text, lineHeight: 1.4,
+          }}>
+            Escolha o próximo aí do lado —<br />
+            e <span style={{ color: BRAND.cyan, fontWeight: 800 }}>se inscreva</span> pra não perder o de domingo.
+          </div>
+          <div style={{
+            marginTop: 30, fontFamily: BODY, fontWeight: 700, fontSize: 30, color: BRAND.sub,
+          }}>app.finmoovi.com · grátis, sem instalar</div>
+        </div>
+
+        {/*
+          ── os dois lugares dos cartões do YouTube ──
+          ⚠️ As medidas são em percentagem do quadro, e nunca colam à borda (margem de 6%).
+          O retângulo é 16:9, que é a forma do cartão de playlist; o círculo é a forma do
+          cartão de inscrever. Se um dia estas proporções mudarem no YouTube, é AQUI que
+          se acerta — e vê-se no vídeo, não no código.
+        */}
+        <Moldura
+          atraso={10}
+          rotulo={'▶  A PLAYLIST\ndo canal'}
+          estilo={{ left: '54%', top: '14%', width: '38%', height: '38%' }}
+        />
+        {/*
+          ⚠️ **NADA ENCOSTA AO FUNDO DO QUADRO.** Os controlos do leitor do YouTube
+          aparecem por cima dos últimos ~10% do ecrã, e um cartão ali fica meio tapado
+          quando o espectador mexe o rato. Este círculo acaba aos 88%, com folga.
+        */}
+        <Moldura
+          atraso={22}
+          redonda
+          rotulo={'INSCREVA-SE'}
+          estilo={{ left: '63.5%', top: '56%', width: '18.5%', height: '32.9%' }}
+        />
+      </AbsoluteFill>
+
+      <Watermark />
+    </AbsoluteFill>
+  );
+};

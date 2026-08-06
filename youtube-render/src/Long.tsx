@@ -39,7 +39,7 @@ import { BRAND, DISPLAY, BODY, gradientText } from './theme';
 import {
   Etiqueta, CartaoDeNumero, CartaoDaConta, TelaDoApp, CartaoDeFrase, Metafora, PalavrasNaTela,
   CartaoDeCapitulo, CARTAO_CAPITULO_FRAMES, Ilustracao, Foto, MaoQueClica, momentoDoClique,
-  atrasoDaUltimaLinha, IconesDaCena,
+  atrasoDaUltimaLinha, IconesDaCena, TelaFinal, TELA_FINAL_FRAMES,
 } from './longo/telas';
 import type { LinhaDaConta } from './longo/telas';
 import { SonsDaCena, SomDoMomento, SOM } from './longo/sons';
@@ -187,9 +187,16 @@ export const linhaDoTempo = (script: LongScript, timing: LongTiming, fps: number
   return { frames, inicios, cartoes, conteudo: acc };
 };
 
+/**
+ * ⚠️ A TELA FINAL ENTRA NA CONTA (06/08/2026, §61) — e é por isso que o vídeo passou a
+ * ser 10 segundos mais comprido. Este número está ESPELHADO em
+ * `youtube-render/scripts/render-longo.mjs`, que corta o render em partes e conta os
+ * fotogramas um a um. Mudar um sem o outro faz o som e a imagem andarem desencontrados;
+ * a prova de mesa compara os dois de propósito.
+ */
 export const longTotalFrames = (script: LongScript, timing: LongTiming, fps: number) =>
   CAPA_FRAMES > 0
-    ? VOZ_ENTRA_FRAMES + linhaDoTempo(script, timing, fps).conteudo + SIGNATURE_FRAMES
+    ? VOZ_ENTRA_FRAMES + linhaDoTempo(script, timing, fps).conteudo + SIGNATURE_FRAMES + TELA_FINAL_FRAMES
     : 0;
 
 // ── a legenda karaokê, refeita para 16:9 ────────────────────────────────────
@@ -621,6 +628,14 @@ export const Long: React.FC<{ script?: LongScript; timing?: LongTiming; slug?: s
 
       <Sequence from={VOZ_ENTRA_FRAMES + conteudo} durationInFrames={SIGNATURE_FRAMES}>
         <SignatureOutro />
+      </Sequence>
+
+      {/* ♦ A TELA FINAL (§61) — 10 segundos onde o YouTube deixa pôr os cartões
+          clicáveis, e onde o espectador escolhe o próximo em vez de ir para outro canal.
+          ⚠️ DEPOIS da assinatura, nunca antes: a assinatura é o fecho da história, e a
+          tela final é o convite. Trocar a ordem é acabar o vídeo com um pedido. */}
+      <Sequence from={VOZ_ENTRA_FRAMES + conteudo + SIGNATURE_FRAMES} durationInFrames={TELA_FINAL_FRAMES}>
+        <TelaFinal />
       </Sequence>
     </AbsoluteFill>
   );

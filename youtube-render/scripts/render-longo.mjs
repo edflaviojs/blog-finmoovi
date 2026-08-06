@@ -45,6 +45,13 @@ const FPS = 30;
 const VOZ_ENTRA_FRAMES = 27;
 const RESPIRO_SEC = 0.35;
 const SIGNATURE_FRAMES = 75;
+/**
+ * ⚠️ ESPELHADO de `TELA_FINAL_FRAMES` em `src/longo/telas.tsx` — os 10 segundos da TELA
+ * FINAL (§61), onde o YouTube deixa pôr os cartões clicáveis. Este ficheiro conta os
+ * fotogramas UM A UM para conferir o vídeo colado; se este número não bater com o do
+ * render, ele acusa a diferença — mas só depois de 36 minutos de máquina.
+ */
+const TELA_FINAL_FRAMES = 300;
 // ⚠️ 04/08/2026: o cartão de capítulo passou a ter CENA PRÓPRIA (o dono: *"ficou muito
 // congestionado, não dá tempo de ler nada"*). Ele ocupa estes fotogramas ANTES da cena
 // que abre o capítulo — e é por isso que este número tem de estar aqui também, senão os
@@ -84,7 +91,7 @@ const cartoes = [];
   });
 }
 const conteudo = inicios.length ? inicios[inicios.length - 1] + frames[frames.length - 1] : 0;
-const total = VOZ_ENTRA_FRAMES + conteudo + SIGNATURE_FRAMES;
+const total = VOZ_ENTRA_FRAMES + conteudo + SIGNATURE_FRAMES + TELA_FINAL_FRAMES;
 
 // ── os cortes: nos limites de capítulo, que agora começam no CARTÃO ──────────
 const cortes = [0];
