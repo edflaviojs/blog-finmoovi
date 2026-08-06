@@ -8,9 +8,10 @@
  *   OpenAI-compatíveis (chat/completions com image_url em base64).
  *
  * Uso:
- *   node --import tsx src/scripts/automacoes/gerar-alt-imagens.js            # tudo
- *   node --import tsx src/scripts/automacoes/gerar-alt-imagens.js --limit 5  # amostra
- *   node --import tsx src/scripts/automacoes/gerar-alt-imagens.js --force    # regenera
+ *   node --import tsx src/scripts/automacoes/gerar-alt-imagens.js                  # tudo
+ *   node --import tsx src/scripts/automacoes/gerar-alt-imagens.js --limit 5        # amostra
+ *   node --import tsx src/scripts/automacoes/gerar-alt-imagens.js --force          # regenera
+ *   node --import tsx src/scripts/automacoes/gerar-alt-imagens.js --max-minutes 18 # teto de tempo
  */
 
 import { readFileSync, writeFileSync, readdirSync, existsSync } from 'fs';
@@ -30,6 +31,17 @@ const COLLECTIONS = [
 const args = process.argv.slice(2);
 const LIMIT = args.includes('--limit') ? parseInt(args[args.indexOf('--limit') + 1], 10) : Infinity;
 const FORCE = args.includes('--force');
+// Teto de TEMPO do proprio script, sempre abaixo do `timeout-minutes` do job.
+// Sem isto, quando o Groq rate-limita (backoff 20s+40s+60s por imagem) o job
+// batia nas 25 min e era CANCELADO pelo GitHub — e o passo de commit nunca
+// corria, jogando fora tudo o que ja tinha sido escrito em disco. Foi o que
+// aconteceu com as corridas das 15h e 21h UTC, todos os dias, durante semanas.
+// Parando por dentro, a corrida termina normal e o commit acontece.
+const MAX_MINUTES = args.includes('--max-minutes')
+  ? parseFloat(args[args.indexOf('--max-minutes') + 1])
+  : (process.env.ALT_MAX_MINUTES ? parseFloat(process.env.ALT_MAX_MINUTES) : Infinity);
+const START_MS = Date.now();
+const elapsedMin = () => (Date.now() - START_MS) / 60000;
 
 const LANG = { pt: 'Portuguese (Brazil)', en: 'English', es: 'Spanish' };
 
@@ -155,6 +167,13 @@ async function run() {
     for (const file of readdirSync(col.dir)) {
       if (!file.endsWith('.md')) continue;
       if (processed >= LIMIT) break;
+      // Teto de tempo: para por dentro, ANTES de o job ser cancelado, para que o
+      // passo de commit corra e nada do que ja foi escrito se perca.
+      if (elapsedMin() >= MAX_MINUTES) {
+        console.warn(`\n⏱️  Teto de ${MAX_MINUTES} min atingido — parando de forma limpa para o commit acontecer. A proxima rodada retoma de onde parou (o script e idempotente).`);
+        aborted = true;
+        break;
+      }
       // Circuit breaker: muitas falhas seguidas = provável teto diário → para
       // (a agenda 3x/dia retoma depois, de forma idempotente).
       if (consecutiveErrors >= 8) {

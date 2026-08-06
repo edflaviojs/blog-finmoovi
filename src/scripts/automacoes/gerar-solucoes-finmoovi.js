@@ -24,13 +24,16 @@ const IMAGES_DIR = join(process.cwd(), 'public', 'images', 'posts');
  * Se config.ai.solutionTopics tem itens, gera scenarios dinamicamente via IA.
  * Se não, usa os exemplos hardcoded (finance-specific como fallback/exemplo).
  */
-async function getSolutionTopics(forbiddenThemes = []) {
+async function getSolutionTopics(forbiddenThemes = [], seedIndex = 0) {
   const dynamicTopics = config.ai?.solutionTopics || [];
 
   if (dynamicTopics.length > 0) {
     // Generate scenarios from AI using the solutionTopics as seeds.
     // Shape no site.config.ts: { topic: string, keywords: string[] }.
-    const seed = dynamicTopics[Math.floor(Math.random() * dynamicTopics.length)];
+    // A semente avança pela FILA a cada tentativa (seedIndex) em vez de sortear:
+    // com sorteio, uma tentativa rejeitada podia cair na MESMA semente e repetir
+    // o mesmo tema; percorrendo a fila, cada retentativa ataca um tema diferente.
+    const seed = dynamicTopics[seedIndex % dynamicTopics.length];
     const seedTopic = typeof seed === 'string' ? seed : seed.topic;
     const seedKeywords = (seed && Array.isArray(seed.keywords)) ? seed.keywords : [];
     const avoidBlock = coveredThemesBlock(POSTS_DIR);
@@ -267,55 +270,21 @@ ${data.content}
   return postPath;
 }
 
-async function main() {
-  console.log(`🚀 Gerando post "Soluções ${config.app.name}"...`);
-
-  const today = new Date().toISOString().split('T')[0];
-
-  // Guard: check if a solucoes post was already generated this week
-  const existingFiles = readdirSync(POSTS_DIR).filter(f => f.endsWith('.md') && !f.startsWith('en-') && !f.startsWith('es-'));
-  for (const file of existingFiles) {
-    const content = readFileSync(join(POSTS_DIR, file), 'utf-8');
-    if (content.includes(`publishedAt: ${today}`) && content.includes('category: "ferramentas"') && content.includes(`"${config.app.name.toLowerCase()}"`)) {
-      console.log(`⚠️ Já existe um post de soluções gerado hoje (${file}). Abortando.`);
-      return;
-    }
-  }
-
-  // Seleção do cenário com anti-canibalização + retry: se o guard rejeitar o
-  // cenário gerado, regenera até 2x adicionais passando o tema rejeitado como
-  // proibido, antes de desistir.
-  const weekOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / (86400000 * 7));
-  const forbiddenThemes = [];
-  let topic = null;
-  for (let attempt = 1; attempt <= 3 && !topic; attempt++) {
-    const topics = await getSolutionTopics(forbiddenThemes);
-    // Cenário dinâmico retorna 1 item (índice 0); no fallback estático, avança
-    // o índice a cada tentativa para não repetir o mesmo tema rejeitado.
-    const topicIndex = (weekOfYear + (attempt - 1)) % topics.length;
-    const cand = topics[topicIndex];
-    const canibal = isThemeCovered(cand.problem, POSTS_DIR);
-    if (!canibal.covered) {
-      topic = cand;
-      break;
-    }
-    console.log(`⚠️ Anti-canibalização (tentativa ${attempt}/3): "${cand.problem}" conflita com "${canibal.conflictSlug}" (${canibal.shared.join(', ')}).`);
-    forbiddenThemes.push(cand.problem);
-  }
-
-  if (!topic) {
-    console.log('⚠️ Anti-canibalização: 3 cenários seguidos conflitaram com posts existentes. Abortando sem publicar.');
-    warnSkip(`soluções: ${forbiddenThemes[forbiddenThemes.length - 1]}`, '3 cenários rejeitados pelo guard');
-    return;
-  }
-
-  console.log(`📝 Problema: ${topic.problem}`);
-  console.log(`🔧 Feature: ${topic.feature}`);
-
+/**
+ * Escreve o rascunho (título + meta + conteúdo) de um cenário, SEM gastar
+ * imagem nem tradução. Devolve null se a IA responder em formato inválido ou se
+ * o fact-guard bloquear. Separado de main() para que a checagem de
+ * canibalização POR TÍTULO possa rejeitar e pedir outro cenário barato — o
+ * caro (4 imagens + 2 traduções) só acontece depois do título aprovado.
+ */
+async function generateDraft(topic, rejectedTitles = []) {
   const avoidBlock = coveredThemesBlock(POSTS_DIR);
+  const rejectedBlock = rejectedTitles.length
+    ? `\nTÍTULOS JÁ REJEITADOS nesta corrida por canibalizarem um post existente — NÃO escreva estes nem variações próximas:\n${rejectedTitles.map(t => `- ${t}`).join('\n')}\n`
+    : '';
 
   const prompt = `
-${avoidBlock}
+${avoidBlock}${rejectedBlock}
 Escreva um post de blog em português brasileiro sobre o seguinte problema financeiro do dia a dia e como o app ${config.app.name} resolve:
 
 PROBLEMA: ${topic.problem}
@@ -325,7 +294,8 @@ CENÁRIO: ${topic.scenario}
 ${postCoreRules({ appName: config.app.name })}
 
 REGRAS DE FORMA (mantidas):
-1. Título: pergunta empática que o leitor se identifica (ex: "Você também esquece de anotar seus gastos?"); se mencionar ano, use ${CURRENT_YEAR}
+1. Título: pergunta empática em que o leitor se identifica, construída a partir do PROBLEMA acima; se mencionar ano, use ${CURRENT_YEAR}
+1b. O TÍTULO não pode repetir o núcleo de palavras de nenhum tema já publicado listado acima. Acrescentar o ano NÃO torna o título diferente — se o núcleo de palavras coincide, o post é rejeitado.
 2. Começa mostrando o PROBLEMA (empatia, "eu te entendo")
 3. Explica a dor de forma real e relatable (com exemplos do dia a dia)
 4. Apresenta a SOLUÇÃO (${config.app.name}) de forma natural, sem parecer propaganda
@@ -355,38 +325,121 @@ Responda EXATAMENTE neste formato:
 [conteúdo completo em markdown]
 `;
 
-  try {
-    const result = await generateText(prompt, { maxTokens: 4000, temperature: 0.7 });
+  const result = await generateText(prompt, { maxTokens: 4000, temperature: 0.7 });
 
-    const titleMatch = result.match(/---TITULO---\s*([\s\S]*?)(?=---META---|$)/);
-    const metaMatch = result.match(/---META---\s*([\s\S]*?)(?=---HEADLINE---|---KEYWORDS---|$)/);
-    const headlineMatch = result.match(/---HEADLINE---\s*([\s\S]*?)(?=---KEYWORDS---|$)/);
-    const keywordsMatch = result.match(/---KEYWORDS---\s*([\s\S]*?)(?=---CONTEUDO---|$)/);
-    const contentMatch = result.match(/---CONTEUDO---\s*([\s\S]*?)$/);
+  const titleMatch = result.match(/---TITULO---\s*([\s\S]*?)(?=---META---|$)/);
+  const metaMatch = result.match(/---META---\s*([\s\S]*?)(?=---HEADLINE---|---KEYWORDS---|$)/);
+  const headlineMatch = result.match(/---HEADLINE---\s*([\s\S]*?)(?=---KEYWORDS---|$)/);
+  const keywordsMatch = result.match(/---KEYWORDS---\s*([\s\S]*?)(?=---CONTEUDO---|$)/);
+  const contentMatch = result.match(/---CONTEUDO---\s*([\s\S]*?)$/);
 
-    if (!titleMatch || !contentMatch) {
-      throw new Error('API retornou formato inválido.');
-    }
+  if (!titleMatch || !contentMatch) {
+    throw new Error('API retornou formato inválido.');
+  }
 
-    let title = titleMatch[1].trim();
-    const meta = metaMatch ? metaMatch[1].trim() : '';
-    // Headline do ticker: opcional, com teto rígido de 40 chars
-    const headline = (headlineMatch ? headlineMatch[1].trim().replace(/^["']|["']$/g, '') : '').slice(0, 40);
-    const keywords = keywordsMatch ? keywordsMatch[1].trim().split(',').map(k => k.trim()) : topic.keywords;
-    const contentRaw = contentMatch[1].trim();
+  let title = titleMatch[1].trim();
+  const meta = metaMatch ? metaMatch[1].trim() : '';
+  // Headline do ticker: opcional, com teto rígido de 40 chars
+  const headline = (headlineMatch ? headlineMatch[1].trim().replace(/^["']|["']$/g, '') : '').slice(0, 40);
+  const keywords = keywordsMatch ? keywordsMatch[1].trim().split(',').map(k => k.trim()) : topic.keywords;
+  const contentRaw = contentMatch[1].trim();
 
-    // Fact-guard: limpa alucinação antes de salvar; bloqueia se mutilaria.
-    const fg = analyzeContent(contentRaw);
-    if (fg.blocked) {
-      console.log(`⛔ Fact-guard bloqueou (${fg.reason}). Não publica; regenera no próximo ciclo.`);
+  // Fact-guard: limpa alucinação antes de salvar; bloqueia se mutilaria.
+  const fg = analyzeContent(contentRaw);
+  if (fg.blocked) {
+    console.log(`⛔ Fact-guard bloqueou (${fg.reason}). Não publica; regenera no próximo ciclo.`);
+    return null;
+  }
+  if (fg.cuts.length || fg.linkStrips.length) console.log(`🛡️ Fact-guard: ${fg.cuts.length} corte(s), ${fg.linkStrips.length} link(s) removido(s).`);
+
+  // Year-guard: corrige ano defasado no título antes do slug.
+  const yg = fixStaleYear(title);
+  if (yg.changed) { console.log(`[year-guard] título corrigido: "${yg.original}" → "${yg.text}"`); title = yg.text; }
+
+  return { title, meta, headline, keywords, content: fg.cleaned };
+}
+
+async function main() {
+  console.log(`🚀 Gerando post "Soluções ${config.app.name}"...`);
+
+  const today = new Date().toISOString().split('T')[0];
+
+  // Guard: check if a solucoes post was already generated this week
+  const existingFiles = readdirSync(POSTS_DIR).filter(f => f.endsWith('.md') && !f.startsWith('en-') && !f.startsWith('es-'));
+  for (const file of existingFiles) {
+    const content = readFileSync(join(POSTS_DIR, file), 'utf-8');
+    if (content.includes(`publishedAt: ${today}`) && content.includes('category: "ferramentas"') && content.includes(`"${config.app.name.toLowerCase()}"`)) {
+      console.log(`⚠️ Já existe um post de soluções gerado hoje (${file}). Abortando.`);
       return;
     }
-    if (fg.cuts.length || fg.linkStrips.length) console.log(`🛡️ Fact-guard: ${fg.cuts.length} corte(s), ${fg.linkStrips.length} link(s) removido(s).`);
-    const content = fg.cleaned;
+  }
 
-    // Year-guard: corrige ano defasado no título antes do slug.
-    const yg = fixStaleYear(title);
-    if (yg.changed) { console.log(`[year-guard] título corrigido: "${yg.original}" → "${yg.text}"`); title = yg.text; }
+  // Seleção do cenário + escrita do rascunho, com anti-canibalização medida
+  // também pelo TÍTULO — a MESMA régua do validador (validar-i18n.js) que barra
+  // o push. Antes o guard media só `topic.problem`: o problema passava, a IA
+  // escrevia um título com o mesmo núcleo de palavras de um post já publicado, e
+  // o validador reprovava DEPOIS de já terem sido gastas 4 imagens e 2 traduções
+  // — o post da semana ia inteiro para o lixo (29/07 e 05/08 de 2026, o mesmo
+  // tema nas duas vezes). Agora, rejeitado o título, marca o tema E o título como
+  // proibidos, avança para o PRÓXIMO da fila de sementes e escreve outro. Só
+  // desiste depois de 4 voltas, para não ficar semana sem conteúdo.
+  const weekOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / (86400000 * 7));
+  const MAX_ATTEMPTS = 4;
+  const forbiddenThemes = [];
+  const rejectedTitles = [];
+  let topic = null;
+  let draft = null;
+
+  try {
+    for (let attempt = 1; attempt <= MAX_ATTEMPTS && !draft; attempt++) {
+      const topics = await getSolutionTopics(forbiddenThemes, weekOfYear + (attempt - 1));
+      // Cenário dinâmico retorna 1 item (índice 0); no fallback estático, avança
+      // o índice a cada tentativa para não repetir o mesmo tema rejeitado.
+      const cand = topics[(weekOfYear + (attempt - 1)) % topics.length];
+
+      // Trava 1 (barata): o PROBLEMA já está coberto? Nem escreve o post.
+      const canibalTema = isThemeCovered(cand.problem, POSTS_DIR);
+      if (canibalTema.covered) {
+        console.log(`⚠️ Anti-canibalização ${attempt}/${MAX_ATTEMPTS} (tema): "${cand.problem}" conflita com "${canibalTema.conflictSlug}" (${canibalTema.shared.join(', ')}). Próximo da fila.`);
+        forbiddenThemes.push(cand.problem);
+        continue;
+      }
+
+      console.log(`📝 Problema: ${cand.problem}`);
+      console.log(`🔧 Feature: ${cand.feature}`);
+
+      // Uma resposta malformada da IA não pode custar a semana inteira: cai
+      // para o próximo cenário da fila em vez de derrubar a corrida.
+      let candDraft = null;
+      try {
+        candDraft = await generateDraft(cand, rejectedTitles);
+      } catch (e) {
+        console.log(`⚠️ Tentativa ${attempt}/${MAX_ATTEMPTS} falhou ao escrever ("${e.message}"). Próximo da fila.`);
+      }
+      if (!candDraft) { forbiddenThemes.push(cand.problem); continue; }
+
+      // Trava 2 (a que faltava): o TÍTULO já está coberto? Mesma função que o
+      // validador usa para bloquear o push — medir aqui com régua diferente foi
+      // exatamente o que deixou passar o post repetido.
+      const canibalTitulo = isThemeCovered(candDraft.title, POSTS_DIR);
+      if (canibalTitulo.covered) {
+        console.log(`⚠️ Anti-canibalização ${attempt}/${MAX_ATTEMPTS} (título): "${candDraft.title}" conflita com "${canibalTitulo.conflictSlug}" (${canibalTitulo.shared.join(', ')}). Descartado ANTES das imagens; próximo da fila.`);
+        forbiddenThemes.push(cand.problem);
+        rejectedTitles.push(candDraft.title);
+        continue;
+      }
+
+      topic = cand;
+      draft = candDraft;
+    }
+
+    if (!draft) {
+      console.log(`⚠️ Anti-canibalização: ${MAX_ATTEMPTS} cenários seguidos conflitaram com posts existentes. Abortando sem publicar.`);
+      warnSkip(`soluções: ${forbiddenThemes[forbiddenThemes.length - 1] || 'nenhum cenário viável'}`, `${MAX_ATTEMPTS} cenários rejeitados pelo guard`);
+      return;
+    }
+
+    const { title, meta, headline, keywords, content } = draft;
 
     // Merge topic keywords with AI-generated ones
     const allKeywords = [...new Set([...keywords, ...topic.keywords, config.app.name.toLowerCase(), config.content.niche.pt])];

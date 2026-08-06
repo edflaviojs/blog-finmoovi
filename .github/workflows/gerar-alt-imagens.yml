@@ -11,9 +11,15 @@ on:
         description: 'Regenerar mesmo onde já existe imageAlt (true/false)'
         required: false
         default: 'false'
-  # Rede de segurança: 3x/dia processa um lote (30) até tudo ter imageAlt; depois vira no-op.
+  # Rede de segurança: 3x/dia processa um lote até tudo ter imageAlt; depois vira no-op.
+  # HORARIO (mudado em 06/08/2026): era '0 9,15,21'. Medido no historico de
+  # corridas: a das 09h UTC passava TODOS os dias; as das 15h e 21h UTC eram
+  # canceladas TODOS os dias, por 25 min de backoff do Groq (429). 15h e 21h UTC
+  # sao 11h e 17h na costa leste dos EUA — o pico do free tier do Groq. As tres
+  # corridas passam agora a 06/09/11 UTC (02h/05h/07h em NY), a faixa mais calma
+  # e a unica com passagem comprovada.
   schedule:
-    - cron: '0 9,15,21 * * *'
+    - cron: '0 6,9,11 * * *'
 
 permissions:
   contents: write
@@ -61,16 +67,30 @@ jobs:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: |
           LIMIT="${{ github.event.inputs.limit }}"
-          # Rodadas agendadas processam um lote de 30 (respeita limites de API).
-          # Era 60 (=180/dia); baixado para 30 (=90/dia) porque a cota do Groq e
+          # Rodadas agendadas processam um lote (respeita limites de API).
+          # Era 60 (=180/dia); baixado para 30 porque a cota do Groq e
           # COMPARTILHADA com os demais workflows, que usam o Groq como fallback.
-          if [ -z "$LIMIT" ] && [ "${{ github.event_name }}" = "schedule" ]; then LIMIT="30"; fi
+          # 06/08/2026: baixado de 30 para 15. A corrida boa das 09h UTC levava
+          # 19 dos 25 min permitidos para fazer 30 — ou seja, ate a que passava
+          # estava a raspar no teto. Com 15, sao ~10 min e sobra folga de 15 min.
+          # 45/dia (3x15) continua a ser mais do que suficiente: em 06/08/2026
+          # faltavam 74 imagens ao todo, isto e, 2 dias de trabalho.
+          if [ -z "$LIMIT" ] && [ "${{ github.event_name }}" = "schedule" ]; then LIMIT="15"; fi
           ARGS=""
           if [ -n "$LIMIT" ]; then ARGS="--limit $LIMIT"; fi
           if [ "${{ github.event.inputs.force }}" = "true" ]; then ARGS="$ARGS --force"; fi
-          node --import tsx src/scripts/automacoes/gerar-alt-imagens.js $ARGS
+          # Teto de tempo POR DENTRO do script, 7 min abaixo do timeout do job:
+          # o script para sozinho e o passo de commit corre, em vez de o GitHub
+          # cancelar o job e deitar fora o trabalho ja feito.
+          node --import tsx src/scripts/automacoes/gerar-alt-imagens.js $ARGS --max-minutes 18
 
+      # `if: always()` = segunda rede. O teto de tempo do script ja evita o
+      # cancelamento; mas se ainda assim o job for cancelado (ou o passo anterior
+      # falhar), este passo corre na mesma e guarda os imageAlt ja escritos em
+      # disco, em vez de os perder. O script e idempotente: guardar a meio nunca
+      # estraga nada.
       - name: Commit e push
+        if: always()
         run: |
           git add src/content/posts src/content/glossario
           if git diff --cached --quiet; then
