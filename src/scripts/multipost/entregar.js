@@ -344,35 +344,39 @@ async function enviarFicheiro(k, caminho, nome, tipo = 'video/mp4') {
 }
 
 /**
- * 🔴 06/08/2026 — A CAPA IA NO SÍTIO ERRADO, E NUNCA CHEGOU AO INSTAGRAM.
+ * 🔴 06/08/2026 — A CAPA DO REEL: DUAS CONCLUSÕES ERRADAS ANTES DA VERDADEIRA.
  *
- * Estava a ser mandada como `settings.cover`. **Esse campo não existe.** Três provas,
- * independentes umas das outras:
- *   1. a lista de opções do Instagram que o servidor aceita (`InstagramDto`) tem
- *      `post_type`, `is_trial_reel`, `graduation_strategy`, `collaborators` e `audio`
- *      — e mais nada. O que não está na lista é **deitado fora sem erro**;
- *   2. o código que fala com o Instagram nunca lê `settings.cover`;
- *   3. o dono viu o resultado: no painel, o "Editor" da capa do Reel aparece **vazio**.
+ * O dono viu que o "Editor" da capa, no painel, aparecia **vazio**, e perguntou se ela
+ * estava mesmo a ser enviada. As duas primeiras respostas foram erradas:
  *
- * **O sítio certo é junto do VÍDEO, não nas opções**: o objeto de média aceita um campo
- * `thumbnail` com o ENDEREÇO da imagem, e é esse que vira o `cover_url` do Instagram —
- * o parâmetro oficial da Meta para a capa de um Reel (a Meta dá-lhe precedência sobre o
- * fotograma escolhido por tempo).
+ *   ❌ *"o campo `cover` não existe"* — tirado do código-fonte público do Postiz, onde
+ *      de facto não existe. **Mas este servidor não é essa versão.** Perguntando-lhe
+ *      diretamente (`--inspecionar`), ele responde que aceita
+ *      `cover: { id, path, alt?, thumbnail? }`, com `id` e `path` **obrigatórios**.
+ *   ❌ *"então a capa vai junto do vídeo, no `thumbnail` da média"* — também não. Isso
+ *      é a miniatura da MÉDIA; a capa do Reel é a de cima.
  *
- * ⚠️ **O `thumbnail` TEM DE SER UM ENDEREÇO COMPLETO.** O servidor valida-o como URL: um
- * caminho relativo faz o agendamento inteiro falhar com 400 — ou seja, **um dia sem
- * publicação por causa de uma imagem**. Por isso é conferido aqui, e na dúvida vai-se
- * sem capa. É a mesma regra que já valia para o envio da capa: nada de imagem pode
- * derrubar a publicação.
+ * ✅ **A CAUSA VERDADEIRA NÃO ESTAVA NO CAMPO. A CAPA NUNCA CHEGOU A SER ENVIADA.**
+ * O registo da entrega de 06/08 di-lo à letra: *"não veio capa no artefato"*. O vídeo
+ * desse dia foi produzido a **05/08 às 09h15**, e a capa só passou a ser tirada na
+ * produção às **21h45 desse mesmo dia** — doze horas depois. **Não havia ficheiro.**
+ * A partir do primeiro vídeo produzido depois disso, a capa viaja no artefato.
+ *
+ * ⚠️ **A LIÇÃO, e é a mais cara do dia:** eu li o código-fonte PÚBLICO e concluí sobre
+ * o servidor DO DONO. São versões diferentes. **A um servidor pergunta-se; não se lê o
+ * código de outro parecido.** E o dono insistiu duas vezes contra a minha conclusão —
+ * tinha razão as duas.
+ *
+ * ⚠️ O `path` tem de ser um endereço completo (o servidor valida-o). Na dúvida vai-se
+ * **sem capa**: nada de imagem pode derrubar a publicação do dia.
  */
-export function objetoDaMedia(media, capa, registar = () => {}) {
-  const base = { id: media.id, path: media.path };
-  if (!capa) return base;
-  if (!/^https?:\/\//i.test(String(capa.path || ''))) {
-    registar(`⚠️ a capa veio com um endereço estranho ("${capa.path}") — segue sem capa, para não derrubar a publicação.`);
-    return base;
+export function capaParaOInstagram(capa, registar = () => {}) {
+  if (!capa) return null;
+  if (!capa.id || !/^https?:\/\//i.test(String(capa.path || ''))) {
+    registar(`⚠️ a capa veio incompleta (id="${capa.id}", endereço="${capa.path}") — segue sem capa, para não derrubar a publicação.`);
+    return null;
   }
-  return { ...base, thumbnail: capa.path };
+  return { id: capa.id, path: capa.path };
 }
 
 /**
@@ -381,6 +385,7 @@ export function objetoDaMedia(media, capa, registar = () => {}) {
  * isso a única forma de o ver era publicar.
  */
 export function corpoDoAgendamento({ canalId, media, capa, legenda, quandoUTC }, registar = () => {}) {
+  const cover = capaParaOInstagram(capa, registar);
   return {
     type: 'schedule',
     date: quandoUTC.toISOString(),
@@ -388,7 +393,7 @@ export function corpoDoAgendamento({ canalId, media, capa, legenda, quandoUTC },
     tags: [],
     posts: [{
       integration: { id: canalId },
-      value: [{ content: legendaEmHtml(legenda), image: [objetoDaMedia(media, capa, registar)] }],
+      value: [{ content: legendaEmHtml(legenda), image: [{ id: media.id, path: media.path }] }],
       /**
        * ♦ 06/08/2026 — O REEL DE TESTE, POR ORDEM DO DONO.
        *
@@ -409,13 +414,116 @@ export function corpoDoAgendamento({ canalId, media, capa, legenda, quandoUTC },
         post_type: 'post',
         is_trial_reel: true,
         graduation_strategy: 'SS_PERFORMANCE',
+        // ⚠️ A capa só entra quando existe E está inteira — ver `capaParaOInstagram`.
+        ...(cover ? { cover } : {}),
       },
     }],
   };
 }
 
+/**
+ * ♦ 06/08/2026 — O MESMO VÍDEO TAMBÉM NO STORY, MINUTOS DEPOIS DO REEL.
+ *
+ * Pedido do dono: *"todo Reel publicado, depois de alguns segundos, é enviado também
+ * no Story"*.
+ *
+ * 🔴 **NÃO É O "REPOSTAR" DA APLICAÇÃO, E ISSO NÃO SE PODE CONSERTAR.** A referência
+ * oficial da Meta não tem parâmetro nenhum para republicar um Reel existente como
+ * Story: o autocolante do Reel, aquele em que se toca para ir ver, **só existe dentro
+ * da aplicação do telemóvel**. O que vai é o **mesmo vídeo**, publicado como Story —
+ * o conteúdo chega, o atalho de volta não.
+ *
+ * ⚠️ **O STORY TEM TETO DE 60 SEGUNDOS** (regra da Meta: entre 3 e 60). Os nossos
+ * Shorts andam nos 41–65 segundos — **medido, um dos que estão no ar tem 1:05**. Um
+ * vídeo mais comprido faz o Instagram recusar o Story. Por isso, quando ele não cabe,
+ * **vai a CAPA em pé** em vez do vídeo: um Story que mostra o gancho é melhor do que
+ * um Story que não sai. Nada é saltado em silêncio, e o registo diz sempre qual foi.
+ *
+ * ⚠️ **O vídeo NÃO é enviado outra vez** — reaproveita-se a média já entregue para o
+ * Reel. Um segundo envio de 25 MB por dia, para nada.
+ */
+export function corpoDoStory({ canalId, media, legenda, quandoUTC }) {
+  return {
+    type: 'schedule',
+    date: quandoUTC.toISOString(),
+    shortLink: false,
+    tags: [],
+    posts: [{
+      integration: { id: canalId },
+      value: [{ content: legendaEmHtml(legenda), image: [{ id: media.id, path: media.path }] }],
+      // ⚠️ Um Story não leva Reel de teste nem capa — são coisas do Reel. E convidados
+      // o Instagram também não aceita em Stories.
+      settings: { __type: 'instagram', post_type: 'story' },
+    }],
+  };
+}
+
+/**
+ * A DURAÇÃO DE UM MP4, LIDA DO PRÓPRIO FICHEIRO — sem ffprobe e sem dependência nova.
+ *
+ * ⚠️ **Porquê à mão e não com o ffprobe:** este robô corre num computador emprestado do
+ * GitHub que **não traz o ffmpeg**, e instalá-lo custa um minuto por corrida para ler um
+ * número. O número vive num cabeçalho do próprio ficheiro (`mvhd`), que se lê em vinte
+ * linhas. A conta é conferida contra o ffprobe na prova de mesa.
+ *
+ * Devolve os segundos, ou `null` se não conseguir ler — e nesse caso quem chama decide
+ * pelo lado seguro.
+ */
+export function duracaoDoMp4(caminho, ler = readFileSync) {
+  try {
+    const b = ler(caminho);
+    const i = b.indexOf('mvhd', 0, 'latin1');
+    if (i < 0) return null;
+    const versao = b.readUInt8(i + 4);
+    if (versao === 1) {
+      const escala = b.readUInt32BE(i + 8 + 16);
+      const total = Number(b.readBigUInt64BE(i + 8 + 20));
+      return escala ? total / escala : null;
+    }
+    const escala = b.readUInt32BE(i + 8 + 8);
+    const total = b.readUInt32BE(i + 8 + 12);
+    return escala ? total / escala : null;
+  } catch {
+    return null;
+  }
+}
+
+/** O que a Meta aceita num Story: entre 3 e 60 segundos. */
+export const STORY_MAX_SEG = 60;
+/** Quantos minutos depois do Reel é que o Story sai. */
+export const MINUTOS_ATE_O_STORY = 5;
+
+/**
+ * A primeira linha com texto da legenda — é o gancho, e é o que serve de legenda ao
+ * Story. ⚠️ Cinco minutos, e não "alguns segundos" como o dono pediu: o Multipost
+ * trabalha ao minuto, e o Reel tem de estar mesmo publicado antes de o Story sair.
+ */
+export function primeiraLinha(legenda) {
+  return String(legenda).split('\n').map((l) => l.trim()).find(Boolean) || '';
+}
+
+/**
+ * O que vai no Story: o vídeo se couber, senão a capa. Devolve também o motivo, porque
+ * um robô que escolhe sozinho tem de dizer sempre o que escolheu.
+ */
+export function oQueVaiNoStory({ duracaoSeg, media, capa }) {
+  if (duracaoSeg !== null && duracaoSeg <= STORY_MAX_SEG) {
+    return { media, tipo: 'vídeo', motivo: `o vídeo tem ${duracaoSeg.toFixed(1)}s e cabe nos ${STORY_MAX_SEG}s do Story` };
+  }
+  if (capa) {
+    const porque = duracaoSeg === null
+      ? 'não deu para medir a duração do vídeo'
+      : `o vídeo tem ${duracaoSeg.toFixed(1)}s e o Story só aceita ${STORY_MAX_SEG}s`;
+    return { media: capa, tipo: 'capa', motivo: porque };
+  }
+  return { media: null, tipo: null, motivo: 'o vídeo não cabe no Story e não há capa para pôr no lugar dele' };
+}
+
 async function agendar(k, pedido) {
-  const corpo = corpoDoAgendamento(pedido, log);
+  return enviarAgendamento(k, corpoDoAgendamento(pedido, log));
+}
+
+async function enviarAgendamento(k, corpo) {
   const res = await fetch(`${API}/posts`, {
     method: 'POST',
     headers: { Authorization: k, 'Content-Type': 'application/json' },
@@ -494,6 +602,13 @@ async function inspecionar() {
   if (!p.ok) { log(`⚠️ não deu para listar (${p.status})`); return 0; }
   const lista = (await p.json())?.posts || [];
   log(`${lista.length} publicação(ões) na janela de 60 dias.`);
+  /**
+   * ⚠️ MEDIDO EM 06/08: esta lista devolve o TEXTO da publicação e mais nada — **não
+   * traz as opções nem a média**. Portanto ela **não serve para confirmar** se a capa
+   * ficou guardada; para isso, olhar o painel. Fica escrito para ninguém concluir
+   * "não tem capa" só porque ela não aparece aqui — foi esse tipo de salto que custou
+   * as duas conclusões erradas de hoje.
+   */
   for (const post of lista.slice(0, 5)) {
     log(`\n  • ${post.id}  ${post.publishDate || post.date || ''}  estado=${post.state || '?'}`);
     for (const campo of ['settings', 'image', 'media', 'content']) {
@@ -561,8 +676,18 @@ async function main() {
       legenda, quandoUTC: quando,
     }, log);
     log('\n── O QUE SERIA PEDIDO AO MULTIPOST ──');
-    log(`vídeo+capa: ${JSON.stringify(exemplo.posts[0].value[0].image[0])}`);
-    log(`opções:     ${JSON.stringify(exemplo.posts[0].settings)}`);
+    log(`vídeo:  ${JSON.stringify(exemplo.posts[0].value[0].image[0])}`);
+    log(`opções: ${JSON.stringify(exemplo.posts[0].settings)}`);
+
+    const duracao = duracaoDoMp4(mp4);
+    const escolha = oQueVaiNoStory({
+      duracaoSeg: duracao,
+      media: { id: '(id do vídeo)', path: 'https://exemplo/video.mp4' },
+      capa: existsSync(c) ? { id: '(id da capa)', path: 'https://exemplo/capa.jpg' } : null,
+    });
+    log(`\n📖 Story ${MINUTOS_ATE_O_STORY} min depois (${emHoraDoBrasil(new Date(quando.getTime() + MINUTOS_ATE_O_STORY * 60000))}):`);
+    log(`   ${escolha.media ? `vai a ${escolha.tipo}` : 'NÃO SAI'} — ${escolha.motivo}`);
+    if (escolha.media) log(`   legenda do Story: "${primeiraLinha(legenda)}"`);
     log('\n✅ Ensaio concluído. Nada foi enviado nem agendado.\n');
     return 0;
   }
@@ -596,10 +721,43 @@ async function main() {
     throw new Error(`O servidor devolveu o post ${postId}, mas ele NÃO aparece na agenda. Conferir no painel antes de correr outra vez.`);
   }
 
+  /**
+   * ♦ O STORY, MINUTOS DEPOIS DO REEL (06/08, pedido do dono).
+   *
+   * ⚠️ **NADA AQUI PODE DERRUBAR O REEL.** O Reel já está agendado e confirmado quando
+   * se chega a esta linha; se o Story falhar — por limite do plano, por rede, por o que
+   * for —, o dia continua a ter Reel. É a mesma regra da capa, e a razão é a mesma:
+   * **o principal nunca paga pelo acessório.**
+   */
+  let story = null;
+  try {
+    const duracao = duracaoDoMp4(mp4);
+    const escolha = oQueVaiNoStory({ duracaoSeg: duracao, media, capa });
+    if (!escolha.media) {
+      log(`⚠️ sem Story hoje: ${escolha.motivo}`);
+    } else {
+      const horaDoStory = new Date(quando.getTime() + MINUTOS_ATE_O_STORY * 60000);
+      const idStory = await enviarAgendamento(k, corpoDoStory({
+        canalId: canal.id,
+        media: escolha.media,
+        // ⚠️ A legenda do Story é CURTA de propósito: o Instagram não a mostra como
+        // mostra a do Reel, e o painel fica ilegível com 2200 caracteres repetidos.
+        legenda: primeiraLinha(legenda),
+        quandoUTC: horaDoStory,
+      }));
+      story = { postId: idStory, tipo: escolha.tipo, publicaEm: horaDoStory.toISOString() };
+      log(`📖 Story agendado (${escolha.tipo}) para ${emHoraDoBrasil(horaDoStory)} — ${escolha.motivo}`);
+    }
+  } catch (e) {
+    log(`⚠️ o Story não foi agendado (${e.message}) — o Reel está de pé, que é o que conta.`);
+  }
+
   caderno[slug] = {
     postId,
     canal: canal.name,
     media: media.path,
+    capa: capa ? capa.path : null,
+    story,
     publicaEm: quando.toISOString(),
     publicaEmBR: emHoraDoBrasil(quando),
     agendadoEm: new Date().toISOString(),
