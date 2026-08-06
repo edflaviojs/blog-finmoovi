@@ -16,6 +16,16 @@
   ],
   "videos": [
     {
+      "slug": "dono-dois-homens-mesma-idade-mesmo-trabalho",
+      "titulo": "O Jogo “OBSCURO” Do Dinheiro Explicado em Menos de 10 Minutos",
+      "tema": "Dois homens, mesma idade, mesmo trabalho, mesmo salário, durante 30 anos. Um deles acaba de se aposentar e conquistar a liberdade. O outro ainda pegará o ônibus amanhã, antes do sol nascer. Qual é a diferença entre eles? Não foi sorte, não foi herança e nem mesmo esforço — os dois se esforçaram igualmente.\n\nA resposta é desconfortável: o dinheiro não recompensa quem trabalha mais, mas sim quem entende suas regras ocultas.",
+      "angulo": "Ideia do dono: Dois homens, mesma idade, mesmo trabalho, mesmo salário, durante 30 anos. Um deles acaba de se aposentar e conquistar a liberdade. O outro ainda pegará o ônibus amanhã, antes do sol nascer. Qual é a diferença entre eles? Não foi sorte, não foi herança e nem mesmo esforço — os dois se esforçaram igualmente.\n\nA resposta é desconfortável: o dinheiro não recompensa quem trabalha mais, mas sim quem entende suas regras ocultas.",
+      "estado": "proposto",
+      "prioridade": true,
+      "origem": "dono",
+      "criadoEm": "2026-08-06T16:17:30.974Z"
+    },
+    {
       "slug": "sair-do-vermelho",
       "titulo": "Dívida do cartão: como sair do vermelho sem apertar mais o mês",
       "tema": "Sair do vermelho: o plano de três passos pra pagar a dívida sem apertar mais o mês",
