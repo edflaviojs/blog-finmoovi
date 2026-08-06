@@ -1,6 +1,7 @@
 ---
 term: "Zona de Confort Financiera"
 image: "/images/glossario/es-zona-de-conforto-financeira.webp"
+imageAlt: "Monedas doradas apiladas y plantas creciendo en frascos sobre fondo degradado azul y magenta."
 definition: "El estado donde una persona tiene suficientes recursos para cubrir gastos y mantener su estilo de vida sin estrés financiero."
 category: "basico"
 locale: "es"

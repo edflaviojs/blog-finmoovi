@@ -4,6 +4,7 @@ definition: "Entienda qué es xing ling, cómo funciona, ventajas, riesgos y eje
 title: "xing ling - Glosario Financiero"
 description: "Entienda qué es xing ling, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 image: "/images/glossario/xing-ling.webp"
+imageAlt: "Monedas apiladas y frascos de vidrio con planta verde sobre fondo oscuro."
 category: "basico"
 tags: ["xing ling", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 author: "FinMoovi"

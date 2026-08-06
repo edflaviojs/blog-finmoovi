@@ -3,6 +3,7 @@ title: "Cómo organizar tu dinero con una app fácil de usar"
 description: "Descubre cómo una app de control financiero simplifica el registro de gastos, crea presupuestos visuales y devuelve tranquilidad a tu bolsillo en pocos minutos."
 tickerHeadline: "El truco que transforma el caos en clari"
 image: "/images/posts/como-organizar-seu-dinheiro-com-um-app-facil-de-usar.webp"
+imageAlt: "Portátil con pantalla colorida, taza blanca, libreta y plantas en escritorio de madera."
 category: "investimentos"
 locale: "es"
 tags: ["app financiero","control de gastos","presupuesto visual","captura de facturas","alertas de saldo","planificación mensual","app de gestión financiera"]

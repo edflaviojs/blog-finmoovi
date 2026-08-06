@@ -3,6 +3,7 @@ title: "How to Organize Your Money with an Easy‑to‑Use App"
 description: "Discover how a finance‑tracking app simplifies expense logging, creates visual budgets, and brings peace of mind to your wallet in minutes."
 tickerHeadline: "The trick that turns chaos into clarity"
 image: "/images/posts/como-organizar-seu-dinheiro-com-um-app-facil-de-usar.webp"
+imageAlt: "Laptop with colorful screen, white coffee cup, notebook, and plants on wooden desk."
 category: "investimentos"
 locale: "en"
 tags: ["finance app","expense tracking","visual budgeting","receipt capture","balance alerts","monthly planning","financial control app"]

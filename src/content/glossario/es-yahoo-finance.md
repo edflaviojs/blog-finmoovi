@@ -4,6 +4,7 @@ definition: "Entienda qué es yahoo finance, cómo funciona, ventajas, riesgos y
 title: "yahoo finance - Glosario Financiero"
 description: "Entienda qué es yahoo finance, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 image: "/images/glossario/yahoo-finance.webp"
+imageAlt: "Monedas doradas apiladas y plantas creciendo en frascos sobre fondo degradado azul y rosa."
 category: "basico"
 tags: ["yahoo finance", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 author: "FinMoovi"

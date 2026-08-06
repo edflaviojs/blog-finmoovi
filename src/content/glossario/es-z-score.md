@@ -4,6 +4,7 @@ definition: "Entienda qué es z-score, cómo funciona, ventajas, riesgos y ejemp
 title: "z-score - Glosario Financiero"
 description: "Entienda qué es z-score, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 image: "/images/glossario/z-score.webp"
+imageAlt: "Monedas doradas, letra Z y plantas en frascos sobre fondo degradado azul y rosa."
 category: "basico"
 tags: ["z-score", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 author: "FinMoovi"

@@ -4,6 +4,7 @@ definition: "Qué es flujo de caja Excel y cómo aparece en tu día a día — e
 title: "flujo de caja Excel - Glosario Financiero"
 description: "Qué es flujo de caja Excel y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/fluxo-de-caixa-excel.webp"
+imageAlt: "Montones de monedas doradas y planta en frasco sobre fondo oscuro."
 category: "basico"
 tags: ["flujo de caja Excel", "glosario", "finanzas"]
 author: "FinMoovi"

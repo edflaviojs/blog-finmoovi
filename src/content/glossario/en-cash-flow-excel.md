@@ -4,6 +4,7 @@ definition: "What cash flow Excel is and how it shows up in your everyday money 
 title: "cash flow Excel - Financial Glossary"
 description: "What cash flow Excel is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/fluxo-de-caixa-excel.webp"
+imageAlt: "Gold coin stacks and jar with plant on dark surface."
 category: "basico"
 tags: ["cash flow Excel", "glossary", "finance"]
 author: "FinMoovi"

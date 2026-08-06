@@ -4,6 +4,7 @@ definition: "Entienda qué es yield, cómo funciona, ventajas, riesgos y ejemplo
 title: "yield - Glosario Financiero"
 description: "Entienda qué es yield, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 image: "/images/glossario/yield.webp"
+imageAlt: "Monedas doradas apiladas y planta creciendo en frasco sobre fondo azul."
 category: "basico"
 tags: ["yield", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 author: "FinMoovi"
