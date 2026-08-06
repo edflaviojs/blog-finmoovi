@@ -28,7 +28,7 @@ Meta financiera es un objetivo concreto para tu dinero. No es "quiero ahorrar m�
 ### Corto plazo (hasta 1 año)
 
 - Crear reserva de emergencia de **€2.700**
-- Cancelar tarjeta de [crédito](/es/posts/es-tarjeta-de-credito-vs-tarjeta-de-debito-cual-vale-mas-la-pen) de **€540**
+- Cancelar tarjeta de [crédito](/es/posts/es-tarjeta-de-credito-vs-tarjeta-de-debito-cual-vale-mas-la) de **€540**
 - Juntar **€900** para viaje
 
 ### Mediano plazo (1-5 años)

@@ -65,7 +65,7 @@ Vamos colocar a teoria no dia a dia usando salários entre R$3.000 e R$8.000.
 - **Caso 2:** Maria tem salário de R$5.500 e faz um empréstimo de R$15.000 com taxa de juros de 1,8% ao mês. Em 12 meses, o valor total pago será aproximadamente R$19.800, ou seja, R$4.800 a mais, o que corresponde a quase 9% do seu salário anual.  
 - **Caso 3:** Carlos recebe R$7.800 e investe R$20.000 em um fundo com taxa de administração de 0,5% ao ano. O custo anual será de R$100, mas ele ainda pode ganhar retornos superiores a 8% ao ano, tornando a taxa um preço pequeno pelo serviço de gestão.  
 
-**Dica prática:** antes de aceitar qualquer taxa, calcule quanto ela representa em relação ao seu salário mensal. Se for mais de 5% da sua renda, vale a pena renegociar ou buscar [alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) mais baratas.  
+**Dica prática:** antes de aceitar qualquer taxa, calcule quanto ela representa em relação ao seu salário mensal. Se for mais de 5% da sua renda, vale a pena renegociar ou buscar [alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar) mais baratas.  
 
 **Dica prática:** use planilhas ou apps de controle financeiro (como o **Guias de Finanças** que eu recomendo) para registrar todas as taxas mensais; assim você visualiza o impacto real no seu orçamento.  
 

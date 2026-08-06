@@ -17,7 +17,7 @@ Financial emergency is any unexpected situation that requires [money](/en/posts/
 
 ## Common Examples
 
-- Job loss (need 3-6 months of [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the-yea))
+- Job loss (need 3-6 months of [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the))
 - Medical emergency (surgery, treatment)
 - Car repair (R$ 2.000-5.000)
 - Broken appliance (refrigerator, washing machine)

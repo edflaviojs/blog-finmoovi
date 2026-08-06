@@ -36,7 +36,7 @@ Net Worth = Assets - Liabilities. In other words: everything you have minus ever
 
 | Assets | Value |
 |--------|-------|
-| [Investments](/en/posts/en-private-pension-vs-investing-on-your-own-which-is-worth-it-i) | $10,000 |
+| [Investments](/en/posts/en-private-pension-vs-investing-on-your-own-which-is-worth-it) | $10,000 |
 | Real estate | $60,000 |
 | Car | $8,000 |
 | **Total Assets** | **$78,000** |

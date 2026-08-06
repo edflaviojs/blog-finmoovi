@@ -21,13 +21,13 @@ seo:
 
 Imagine it’s a Monday morning: you unlock your phone, see a notification that the [credit](/en/glossario/en-credit)‑card bill has arrived, and before you even sip your coffee you feel that tight knot in your chest. The amount looks bigger than you expected, and the question “where did it all go?” echoes in your head as you try to recall the purchases from the last few days. That sudden surprise—or fear—is what it feels like when you don’t have a clear picture of your own spending.
 
-Controlling personal expenses isn’t about cutting out everything that brings you joy. It’s about understanding where every dollar is going, spotting patterns, and then deciding where it makes sense to save. When you start seeing each cent as a building block you can rearrange, frustration turns into a sense of control. And if you don’t yet have a quick way to do that, FinMoovi can be the side‑kick you’ve been missing. In just five minutes you open the app, use the **[smart capture](/en/posts/en-how-to-secure-financing-for-your-projects-without-headaches-)** (snap a receipt photo or record a voice note) and let it automatically categorize the purchase. That’s the first step toward the control you want.
+Controlling personal expenses isn’t about cutting out everything that brings you joy. It’s about understanding where every dollar is going, spotting patterns, and then deciding where it makes sense to save. When you start seeing each cent as a building block you can rearrange, frustration turns into a sense of control. And if you don’t yet have a quick way to do that, FinMoovi can be the side‑kick you’ve been missing. In just five minutes you open the app, use the **[smart capture](/en/posts/en-how-to-secure-financing-for-your-projects-without-headaches)** (snap a receipt photo or record a voice note) and let it automatically categorize the purchase. That’s the first step toward the control you want.
 
 ## Map Your Spending into Three Simple Categories
 
 Most people split their budget into three buckets: basic needs, fixed commitments, and wants. This straightforward division helps you spot an imbalance at a glance.
 
-- **Basic needs**: food, housing, transportation. Think of it as “the cost of rent” or “the price of a daily coffee.” If these items take up more than half of your monthly income, it might be time to renegotiate contracts or look for cheaper [alternatives](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your-f).  
+- **Basic needs**: food, housing, transportation. Think of it as “the cost of rent” or “the price of a daily coffee.” If these items take up more than half of your monthly income, it might be time to renegotiate contracts or look for cheaper [alternatives](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your).  
 - **Fixed commitments**: utilities, internet, insurance. These expenses repeat every month, so they deserve special attention. Renegotiating plans or switching to lower‑cost options can free up a noticeable chunk of your budget.  
 - **Wants**: entertainment, impulse buys, streaming subscriptions. They add color to life, but they’re also the biggest budget‑busters when there’s no plan.
 
@@ -55,7 +55,7 @@ All the data consolidated in the app gives you solid arguments for renegotiating
 
 ## Start Today
 
-Now that you know the tools and habits that can reshape your relationship with money, it’s time for the first step. Open FinMoovi, snap a photo of the latest receipt you have, and let the app do the automatic classification. In under five minutes you’ll have the first piece of your [budgeting](/en/posts/en-understand-price-amortization-and-optimize-your-finances-in-) puzzle in hand. From there, adjust limits, set alerts, and watch the difference over the next few weeks. Change happens when the action is simple and immediate.
+Now that you know the tools and habits that can reshape your relationship with money, it’s time for the first step. Open FinMoovi, snap a photo of the latest receipt you have, and let the app do the automatic classification. In under five minutes you’ll have the first piece of your [budgeting](/en/posts/en-understand-price-amortization-and-optimize-your-finances-in) puzzle in hand. From there, adjust limits, set alerts, and watch the difference over the next few weeks. Change happens when the action is simple and immediate.
 
 ### Frequently Asked Questions
 #### How do I know if I’m overspending in a category?
@@ -67,7 +67,7 @@ Use FinMoovi’s **Cash Flow** report to compare the current month’s spending 
 Yes. FinMoovi employs end‑to‑end encryption and stores data on certified servers, keeping your information private and protected.
 
 #### Can I use the app without an internet connection?
-The offline mode lets you record expenses and view basic [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end-o). Once you’re back online, everything syncs automatically.
+The offline mode lets you record expenses and view basic [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end). Once you’re back online, everything syncs automatically.
 
 #### Does the smart capture work with receipts from different countries?
 It’s built to read text in English, Spanish and Portuguese, and handles a variety of receipt formats, making it handy for anyone dealing with multiple currencies.

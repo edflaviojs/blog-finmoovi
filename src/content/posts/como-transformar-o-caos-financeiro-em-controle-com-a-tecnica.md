@@ -23,7 +23,7 @@ Imagine a cena: você chega ao caixa do supermercado, ainda com a lista de compr
 
 É nesse ponto que a técnica **Kyco** entra em ação. Kyco – Keep Your Cash Organized – é um hábito simples que transforma o momento caótico de gasto inesperado em um processo de captura, categorização e consolidação das despesas. Em vez de deixar os recibos se acumularem e os números se perderem na memória, você passa a registrar cada gasto logo após ele acontecer, criando um panorama visual que traz paz mental e permite decisões mais conscientes.
 
-**FinMoovi** entende esse desafio e oferece a ferramenta de **[captura inteligente](/posts/como-garantir-financiamento-para-seus-projetos-sem-dor-de-ca)**: basta fotografar a nota fiscal ou usar a gravação de voz para inserir o gasto, e o app categoriza automaticamente (alimentação, lazer, contas fixas etc.). Em menos de cinco minutos, você tem um registro claro do que acabou de gastar, pronto para ser analisado.
+**FinMoovi** entende esse desafio e oferece a ferramenta de **[captura inteligente](/posts/como-garantir-financiamento-para-seus-projetos-sem-dor-de)**: basta fotografar a nota fiscal ou usar a gravação de voz para inserir o gasto, e o app categoriza automaticamente (alimentação, lazer, contas fixas etc.). Em menos de cinco minutos, você tem um registro claro do que acabou de gastar, pronto para ser analisado.
 
 > **Micro‑ação de 5 minutos:** Abra o FinMoovi, tire a foto do último recibo que ainda está na sua bolsa e deixe o app fazer a [categorização automática](/posts/voce-tambem-esquece-de-anotar-seus-gastos). Pronto, você já deu o primeiro passo do Kyco.
 
@@ -56,7 +56,7 @@ Ter as despesas organizadas em um painel visual traz dois ganhos principais:
 - **Tranquilidade** – Ao olhar para o resumo, você entende exatamente onde seu dinheiro está, reduzindo a sensação de descontrole.
 - **Decisão consciente** – Quando os números são claros, escolher entre “gastar agora” ou “guardar para a [reserva de emergência](/ferramentas/calculadora-reserva)” deixa de ser um impulso e passa a ser uma escolha baseada em dados.
 
-Diversos estudos internacionais apontam que a visualização regular de [finanças pessoais](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) está correlacionada com maior taxa de [poupança](/glossario/poupanca) e menor estresse [financeiro](/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-). Para aprofundar, veja o artigo da World Bank sobre inclusão financeira.
+Diversos estudos internacionais apontam que a visualização regular de [finanças pessoais](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar) está correlacionada com maior taxa de [poupança](/glossario/poupanca) e menor estresse [financeiro](/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas). Para aprofundar, veja o artigo da World Bank sobre inclusão financeira.
 
 ## Dica prática
 

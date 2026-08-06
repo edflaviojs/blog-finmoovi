@@ -75,7 +75,7 @@ Before accepting any debt, it’s essential to analyze whether the payment fits 
 
 **Practical tip:** **Negotiate the interest rate before signing the contract**; banks often agree to reduce a few points if you show you’ve researched other options.  
 
-**Practical tip:** **Use a financial control app** (like Guiabolso or [Organizze](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your-f)) to track each payment and avoid missed deadlines that generate fines.  
+**Practical tip:** **Use a financial control app** (like Guiabolso or [Organizze](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your)) to track each payment and avoid missed deadlines that generate fines.  
 
 In addition, maintain an emergency reserve equivalent to three to six months of salary. This “cushion” prevents you from resorting to new loans when an unexpected expense arises, such as a car repair or a medical consultation.
 

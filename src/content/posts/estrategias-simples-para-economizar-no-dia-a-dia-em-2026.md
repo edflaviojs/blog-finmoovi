@@ -27,7 +27,7 @@ A ideia de poupar não precisa ser um plano complexo nem um sacrifício extremo.
 
 ## Crie o hábito da captura inteligente
 
-A primeira barreira para economizar costuma ser a falta de visibilidade. Quando não sabemos quanto gastamos, não conseguimos cortar o que é supérfluo. O recurso de [captura inteligente](/posts/como-garantir-financiamento-para-seus-projetos-sem-dor-de-ca) do FinMoovi elimina esse obstáculo. Ao fotografar o recibo da compra no supermercado, o app reconhece os itens, agrupa-os nas categorias corretas e atualiza seu fluxo de caixa instantaneamente. Essa visualização imediata já cria um efeito de “freio” nas próximas decisões de consumo.
+A primeira barreira para economizar costuma ser a falta de visibilidade. Quando não sabemos quanto gastamos, não conseguimos cortar o que é supérfluo. O recurso de [captura inteligente](/posts/como-garantir-financiamento-para-seus-projetos-sem-dor-de) do FinMoovi elimina esse obstáculo. Ao fotografar o recibo da compra no supermercado, o app reconhece os itens, agrupa-os nas categorias corretas e atualiza seu fluxo de caixa instantaneamente. Essa visualização imediata já cria um efeito de “freio” nas próximas decisões de consumo.
 
 **Dica prática:** antes de fechar a conta do cartão, reserve um momento para revisar as categorias no app; se algo parece fora do padrão, ajuste o limite da categoria para o próximo mês.
 
@@ -67,7 +67,7 @@ Definir metas claras – por exemplo, “economizar o equivalente a um aluguel p
 
 ## Comece hoje
 
-A jornada rumo a um futuro [financeiro](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto-202) mais tranquilo começa com um passo simples: abra o FinMoovi, tire a foto da última conta que pagou e deixe o app organizar tudo para você. Em menos de cinco minutos, você terá uma visão clara de onde o dinheiro está indo e já poderá ajustar seus próximos gastos. Não espere a próxima fatura para agir – a mudança começa agora, dentro da palma da sua mão.
+A jornada rumo a um futuro [financeiro](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto) mais tranquilo começa com um passo simples: abra o FinMoovi, tire a foto da última conta que pagou e deixe o app organizar tudo para você. Em menos de cinco minutos, você terá uma visão clara de onde o dinheiro está indo e já poderá ajustar seus próximos gastos. Não espere a próxima fatura para agir – a mudança começa agora, dentro da palma da sua mão.
 
 ![Comece hoje](/images/posts/estrategias-simples-para-economizar-no-dia-a-dia-em-2026-6.webp)
 
@@ -84,7 +84,7 @@ O aplicativo usa tecnologia de reconhecimento de texto (OCR) para ler notas fisc
 Sim. O FinMoovi utiliza criptografia de ponta a ponta e armazena informações em servidores com certificação de segurança, garantindo que seus dados permaneçam privados.
 
 #### Posso usar o FinMoovi para controlar despesas em diferentes moedas?
-Claro. A funcionalidade [multimoeda](/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-) permite registrar gastos em diversas moedas, convertendo-os automaticamente para a sua [moeda](/glossario/moeda) base, facilitando o controle mesmo em viagens internacionais.
+Claro. A funcionalidade [multimoeda](/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas) permite registrar gastos em diversas moedas, convertendo-os automaticamente para a sua [moeda](/glossario/moeda) base, facilitando o controle mesmo em viagens internacionais.
 
 #### Quanto tempo leva para ver resultados reais nas minhas finanças?
 Os resultados variam, mas ao revisar suas despesas diariamente e ajustar as categorias, a maioria dos usuários percebe uma melhora perceptível já nas primeiras semanas.

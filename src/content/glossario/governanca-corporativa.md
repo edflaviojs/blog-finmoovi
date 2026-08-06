@@ -19,7 +19,7 @@ seo:
 
 ## O que é governança corporativa
  
-A governança é um termo que pode parecer complexo, mas é fundamental para entender como as organizações, incluindo as financeiras, são gerenciadas. Em resumo, governança se refere ao conjunto de regras, práticas e processos que definem como uma empresa ou instituição é dirigida e controlada. Isso inclui a estrutura de gestão, a tomada de decisões, a responsabilidade e a transparência. No contexto das [finanças pessoais](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su), a governança pode ser aplicada para se referir à forma como você gerencia seus próprios recursos financeiros.
+A governança é um termo que pode parecer complexo, mas é fundamental para entender como as organizações, incluindo as financeiras, são gerenciadas. Em resumo, governança se refere ao conjunto de regras, práticas e processos que definem como uma empresa ou instituição é dirigida e controlada. Isso inclui a estrutura de gestão, a tomada de decisões, a responsabilidade e a transparência. No contexto das [finanças pessoais](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar), a governança pode ser aplicada para se referir à forma como você gerencia seus próprios recursos financeiros.
 
 * Definição de objetivos financeiros claros
 * Estabelecimento de um [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) realista

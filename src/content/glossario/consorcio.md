@@ -13,7 +13,7 @@ readingTime: 2
 
 ## O que é Consórcio?
 
-Consórcio é um sistema onde várias pessoas se juntam para comprar algo (carro, imóvel, moto). Todo mês, cada participante paga uma parcela. A cada mês, um ou mais participantes são contemplados (por sorteio ou lance) e recebem a carta de [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) para comprar o bem.
+Consórcio é um sistema onde várias pessoas se juntam para comprar algo (carro, imóvel, moto). Todo mês, cada participante paga uma parcela. A cada mês, um ou mais participantes são contemplados (por sorteio ou lance) e recebem a carta de [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena) para comprar o bem.
 
 ## Como funciona
 

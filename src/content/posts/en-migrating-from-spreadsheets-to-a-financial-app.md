@@ -47,7 +47,7 @@ A financial app can be a good option for you if:
 There are many financial apps available in the market, each with its own features and [benefits](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026). Some examples include:
 * [FinMoovi](/en/posts/en-you-also-forget-to-record-your-expenses): a modern financial app that allows you to manage your finances effectively and easily.
 * [Mobills](/en/posts/en-5-alternatives-to-mobills-in-2026): a financial app that allows you to manage your accounts and [credit](/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026) cards in a centralized way.
-* [Organizze](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your-f): a financial app that allows you to manage your finances and accounts in a personalized way.
+* [Organizze](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your): a financial app that allows you to manage your finances and accounts in a personalized way.
 
 ## Checklist: Spreadsheet or App?
 Here's a checklist to help you decide if a spreadsheet or a financial app is better for you:

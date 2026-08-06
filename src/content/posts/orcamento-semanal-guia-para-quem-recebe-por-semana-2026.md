@@ -26,7 +26,7 @@ Imagine a manhã de segunda‑feira: o alarme toca, você corre para o trabalho,
 E o melhor: o [app FinMoovi](/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) faz esse ajuste de forma natural. Ao tirar uma foto da nota fiscal ou simplesmente falar “Aluguel da semana”, ele reconhece o gasto, classifica automaticamente na categoria correta e já desconta do saldo disponível para aquela semana. Em menos de cinco minutos, você tem uma visão clara de quanto ainda pode gastar até a próxima entrada de salário.
 
 **Micro‑ação de 5 minutos no FinMoovi**
-1. Abra o app e toque em “[Captura Inteligente](/posts/como-garantir-financiamento-para-seus-projetos-sem-dor-de-ca)”.
+1. Abra o app e toque em “[Captura Inteligente](/posts/como-garantir-financiamento-para-seus-projetos-sem-dor-de)”.
 2. Fotografe a última conta de água ou dicte “Conta de água”.
 3. Confirme a categoria sugerida (por exemplo, “Despesas fixas – Casa”).
 4. Veja o saldo restante para a semana e ajuste o limite de compras, se necessário.

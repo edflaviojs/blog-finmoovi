@@ -47,7 +47,7 @@ Um app financeiro pode ser uma boa opção para você se:
 Existem muitos apps financeiros disponíveis no mercado, cada um com suas próprias características e [benefícios](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026). Alguns exemplos incluem:
 * [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas): um app financeiro moderno que permite que você gerencie suas finanças de forma eficaz e fácil.
 * [Mobills](/posts/5-alternativas-ao-mobills-em-2026): um app financeiro que permite que você gerencie suas contas e cartões de crédito de forma centralizada.
-* [Organizze](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su): um app financeiro que permite que você gerencie suas finanças e contas de forma personalizada.
+* [Organizze](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar): um app financeiro que permite que você gerencie suas finanças e contas de forma personalizada.
 
 ## Checklist: Planilha ou App?
 Aqui está uma checklist para ajudá-lo a decidir se uma planilha ou um app financeiro é melhor para você:
@@ -69,7 +69,7 @@ Se você está usando uma planilha para gerenciar suas finanças, é importante 
 * Gerenciamento de contas e cartões de crédito
 * Automatização de tarefas financeiras
 * Alertas e notificações personalizados
-* Análise de [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) e orçamento
+* Análise de [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo) e orçamento
 
 ![Conclusão](/images/posts/migrando-da-planilha-para-um-app-financeiro-6.webp)
 

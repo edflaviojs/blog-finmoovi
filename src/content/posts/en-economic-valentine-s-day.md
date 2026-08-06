@@ -36,7 +36,7 @@ A gift doesn't have to be expensive to be meaningful. Here are some tips to find
 - **Outdoor Walk**: Plan a walk in a park or at the beach. Bring a picnic and enjoy nature together. Cost: $4 to $10.
 
 ## Managing Finances with [FinMoovi](/en/posts/en-you-re-not-alone-in-struggling-to-organize-your-finances)
-To help manage your finances and stay within your [budget](/en/posts/en-reduce-fixed-expenses), the [FinMoovi](/en/posts/en-migrating-from-spreadsheets-to-a-financial-app) app can be a useful tool. With it, you can track your [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the-yea), set financial goals, and receive alerts not to exceed the established limit.
+To help manage your finances and stay within your [budget](/en/posts/en-reduce-fixed-expenses), the [FinMoovi](/en/posts/en-migrating-from-spreadsheets-to-a-financial-app) app can be a useful tool. With it, you can track your [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the), set financial goals, and receive alerts not to exceed the established limit.
 
 ## Celebrating with Creativity
 Creativity is the key to an economic and memorable Valentine's Day. Here are some ideas to celebrate with style without spending too much:

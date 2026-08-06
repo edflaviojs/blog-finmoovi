@@ -36,7 +36,7 @@ Here are some examples of products you can choose to save [money](/en/posts/en-f
 * Instead of buying white bread, choose whole wheat bread or rye bread.
 * Instead of buying beef, choose chicken or fish.
 
-## Avoiding Unnecessary [Expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the-yea)
+## Avoiding Unnecessary [Expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the)
 Another way to save [money](/en/posts/en-organizing-finances-as-a-freelancer) on supermarket shopping is to avoid unnecessary expenses. This includes not buying products that are not necessary, such as processed foods or alcoholic beverages. Additionally, it's essential to avoid buying products that are on sale but not needed.
 
 For example, if you see a product on sale, but you don't need it, don't buy it. Instead, buy only the products you need and that are within your [budget](/en/posts/en-5-tips-to-reorganize-your-finances-on-vacation).

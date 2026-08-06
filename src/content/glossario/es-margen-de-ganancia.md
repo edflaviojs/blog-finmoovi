@@ -51,4 +51,4 @@ Al analizar [acciones](/es/glossario/es-acciones), el margen de ganancia muestra
 
 ## Para [finanzas personales](/es/posts/es-5-alternativas-a-organizze-en-2026-opciones-para-administrar)
 
-También tienes una “margen”: cuánto sobra de tu salario después de todos los [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo-s). Si ganas €900 y sobran €180, tu margen personal es 20 %. Lo ideal es al menos 20 % (regla 50‑30‑20).
+También tienes una “margen”: cuánto sobra de tu salario después de todos los [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo). Si ganas €900 y sobran €180, tu margen personal es 20 %. Lo ideal es al menos 20 % (regla 50‑30‑20).

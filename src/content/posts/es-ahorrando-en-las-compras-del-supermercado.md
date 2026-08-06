@@ -36,7 +36,7 @@ Aquí hay algunos ejemplos de productos que puedes elegir para ahorrar:
 * En lugar de comprar pan blanco, elige pan integral o pan de centeno.
 * En lugar de comprar carne de vaca, elige carne de pollo o pescado.
 
-## Evitando [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo-s) innecesarios
+## Evitando [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo) innecesarios
 Otra forma de ahorrar en las compras del supermercado es evitar gastos innecesarios. Esto incluye no comprar productos que no son necesarios, como alimentos procesados o bebidas alcohólicas. Además, es importante evitar comprar productos que están en promoción, pero que no son necesarios.
 
 Por ejemplo, si ves un producto en promoción, pero no lo necesitas, no lo compres. En lugar de eso, compra solo los productos que necesitas y que están dentro de tu [presupuesto](/es/posts/es-como-crear-un-presupuesto-personal-en-5-pasos-simples).

@@ -57,7 +57,7 @@ Estas funciones convierten la tarea de controlar tus finanzas en algo tan sencil
 - **Revisa semanalmente**: dedica 10 minutos cada viernes a repasar el informe de FinMoovi. Ajusta las cuotas si notas que alguna categoría está consumiendo más de lo planeado.  
 - **Regla de los 30 días para compras**: antes de comprar algo no esencial, añádelo a la lista de la app y espera 30 días. Si todavía lo necesitas, haz la compra; si no, el impulso habrá pasado.  
 - **Automatiza pagos**: programa domiciliación automática para facturas fijas (agua, luz, internet). Así garantizas que esos gastos no desajusten tu presupuesto.  
-- **Usa [multimoneda](/es/posts/es-pierdes-el-control-de-los-gastos-cuando-viajas-usando-difere) cuando sea necesario**: si recibes o gastas en otra moneda, registra el valor en dólares o euros; FinMoovi lo convierte con la tasa oficial, evitando sorpresas al transformar el dinero.
+- **Usa [multimoneda](/es/posts/es-pierdes-el-control-de-los-gastos-cuando-viajas-usando) cuando sea necesario**: si recibes o gastas en otra moneda, registra el valor en dólares o euros; FinMoovi lo convierte con la tasa oficial, evitando sorpresas al transformar el dinero.
 
 Pequeñas [acciones](/es/glossario/es-acciones) como estas crean un ciclo de disciplina que, con el tiempo, genera tranquilidad financiera.
 

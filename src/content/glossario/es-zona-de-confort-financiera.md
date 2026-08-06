@@ -11,9 +11,9 @@ publishedAt: 2026-05-19
 readingTime: 2
 ---
 
-## ¿Qué es la zona de confort [financiero](/es/posts/es-pierdes-el-control-de-los-gastos-cuando-viajas-usando-difere)?
+## ¿Qué es la zona de confort [financiero](/es/posts/es-pierdes-el-control-de-los-gastos-cuando-viajas-usando)?
 
-Es el estado en el que tus finanzas están organizadas y no vives con miedo al fin de mes. Significa tener: [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo-s) bajo control, reserva de emergencia constituida, deudas pagadas e inversiones creciendo.
+Es el estado en el que tus finanzas están organizadas y no vives con miedo al fin de mes. Significa tener: [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo) bajo control, reserva de emergencia constituida, deudas pagadas e inversiones creciendo.
 
 ## Los 5 pilares de la zona de confort financiero
 

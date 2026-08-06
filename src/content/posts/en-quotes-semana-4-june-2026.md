@@ -45,7 +45,7 @@ If you're an individual investor, it's important to diversify your investments t
 
 For the next week, it's hard to predict with certainty what will happen in the financial market. However, it's important to stay tuned to economic and political news, as they can affect exchange rates and interest rates. Also, it's important to regularly review your investments and adjust your strategy according to market changes. With [FinMoovi](/en/posts/en-5-alternatives-to-mobills-in-2026), you can easily track your finances and make informed decisions to achieve your financial goals.
 
-In summary, this week was marked by a slight rise in the dollar and stability in the Selic rate. It's important to watch exchange rates and interest rates to make informed decisions about your investments. With the help of [FinMoovi](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your-f), you can easily track your investments and achieve your financial goals. See you next week!
+In summary, this week was marked by a slight rise in the dollar and stability in the Selic rate. It's important to watch exchange rates and interest rates to make informed decisions about your investments. With the help of [FinMoovi](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your), you can easily track your investments and achieve your financial goals. See you next week!
 
 ---
 **Ready to track your investments? [Try FinMoovi for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**

@@ -53,7 +53,7 @@ Although LCs are a secure form of payment, they also involve some risks. One of 
 **Practical tip:** It is important to work with a reliable and experienced bank in LCs to minimize the risks.
 
 ## Practical examples
-LCs are common in various industries, including international trade, construction, and [finance](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using-diff). For example, imagine you are a business owner who imports products from China and pays **$10,000** per month. You can request an LC to ensure the supplier receives the payment. Another example is a business owner who provides consulting services and pays **$1,600** per month to employees. He can request an LC to ensure the employees receive the payment.
+LCs are common in various industries, including international trade, construction, and [finance](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using). For example, imagine you are a business owner who imports products from China and pays **$10,000** per month. You can request an LC to ensure the supplier receives the payment. Another example is a business owner who provides consulting services and pays **$1,600** per month to employees. He can request an LC to ensure the employees receive the payment.
 
 * Importing products from China: **$10,000** per month  
 * Sale of consulting services: **$1,600** per month  

@@ -18,7 +18,7 @@ seo:
 ---
 
 ## [Planificación](/es/posts/es-presupuesto-con-salario-minimo-consejos-practicos) es fundamental
-Cuando vamos al supermercado, es común comprar más de lo que necesitamos, especialmente si no tenemos un plan claro de lo que queremos comprar. Esto puede llevar a [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo-s) excesivos y desperdicio de alimentos. Para evitar esto, es importante hacer una lista de compras antes de ir al supermercado. Por ejemplo, si usted gasta alrededor de **€90** por semana en compras de supermercado para una familia de cuatro personas, usted puede comenzar a reducir ese [valor](/es/glossario/es-valor-financiero) identificando los artículos que son esenciales y los que pueden ser cortados.
+Cuando vamos al supermercado, es común comprar más de lo que necesitamos, especialmente si no tenemos un plan claro de lo que queremos comprar. Esto puede llevar a [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo) excesivos y desperdicio de alimentos. Para evitar esto, es importante hacer una lista de compras antes de ir al supermercado. Por ejemplo, si usted gasta alrededor de **€90** por semana en compras de supermercado para una familia de cuatro personas, usted puede comenzar a reducir ese [valor](/es/glossario/es-valor-financiero) identificando los artículos que son esenciales y los que pueden ser cortados.
 
 Un ejemplo práctico es el caso de una persona que gana **€900** por mes y gasta cerca de **€270** en alimentación fuera de casa. Si esa persona comienza a cocinar en casa y planifica sus compras, puede fácilmente reducir ese valor a **€180**, ahorrando **€90** por mes.
 

@@ -56,7 +56,7 @@ Pasos para aplicar el FCD en este caso:
 - **Define la tasa de descuento:** supongamos que el rendimiento de un fondo de [ahorro](/es/glossario/es-ahorro) es equivalente al 5 % anual, lo que equivale a aproximadamente 0,4 % mensual.  
 - **Descuenta cada pago:** multiplica cada pago mensual por (1 + 0,004)⁻ⁿ, donde n es el número de meses que pasan hasta ese pago.  
 - **Suma los valores presentes:** la suma de los pagos descontados te dirá cuánto “vale” realmente la opción a plazos en términos de dinero de hoy.  
-- **Compara:** si el valor presente de la [financiación](/es/posts/es-como-conseguir-financiacion-para-tus-proyectos-sin-complicac) supera el gasto al contado, la compra al contado es la opción más económica; si es menor, la financiación sin intereses puede ser la mejor alternativa.  
+- **Compara:** si el valor presente de la [financiación](/es/posts/es-como-conseguir-financiacion-para-tus-proyectos-sin) supera el gasto al contado, la compra al contado es la opción más económica; si es menor, la financiación sin intereses puede ser la mejor alternativa.  
 
 Al hacer este cálculo rápido, descubres que, aunque no haya intereses, la financiación cuesta un poco más porque cada pago futuro vale menos que el dinero que tendrías hoy. Esa pequeña diferencia puede ser la que te haga decidir entre comprar ahora o esperar a ahorrar un poco más.
 
@@ -72,5 +72,5 @@ Funciones clave que hacen que el FCD sea pan comido dentro de la app:
 - **Planificación mensual y metas:** define cuánto quieres ahorrar para un objetivo (como esa bicicleta) y la app te muestra el camino.  
 - **Tarjetas de crédito y facturas:** sincroniza tus tarjetas y recibe el resumen de gastos en tiempo real.  
 - **Modo compras:** crea listas, ve el total en tiempo real y evita sorpresas al pagar.  
-- **Recordatorios y [alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no-que) de saldo:** notificaciones cuando el saldo se acerque al límite o cuando falte tiempo para un pago.  
+- **Recordatorios y [alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no) de saldo:** notificaciones cuando el saldo se acerque al límite o cuando falte tiempo para un pago.  
 - **Offline / PWA / sincronización:** funciona sin conexión y

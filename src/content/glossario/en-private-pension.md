@@ -51,7 +51,7 @@ Private Pension is a long-term [investment](/en/posts/en-building-a-diversified-
 
 - High administration fees (many funds charge 1-2%)
 - Loading fee (some charge on entry)
-- Returns may be lower than [investing on your own](/en/posts/en-private-pension-vs-investing-on-your-own-which-is-worth-it-i)
+- Returns may be lower than [investing on your own](/en/posts/en-private-pension-vs-investing-on-your-own-which-is-worth-it)
 - Little flexibility
 
 ## Tip

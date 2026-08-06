@@ -39,7 +39,7 @@ The [rate](/en/glossario/en-financial-fee) Selic, which is the basic [interest](
 
 ## Practical Tip for Individual Investors
 
-For individual investors, a valuable tip is to keep diversification as the key to risk management. This means not putting all your eggs in one basket, spreading your investments across different assets such as [stocks](/en/glossario/en-stocks), bonds, [funds](/en/glossario/en-investment-fund) and even foreign‑currency investments. Additionally, it’s important to have a long‑term plan and not get swayed by daily market fluctuations. With [FinMoovi](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your-f), you can have a clear view of all your investments, making informed decision‑making easier.
+For individual investors, a valuable tip is to keep diversification as the key to risk management. This means not putting all your eggs in one basket, spreading your investments across different assets such as [stocks](/en/glossario/en-stocks), bonds, [funds](/en/glossario/en-investment-fund) and even foreign‑currency investments. Additionally, it’s important to have a long‑term plan and not get swayed by daily market fluctuations. With [FinMoovi](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your), you can have a clear view of all your investments, making informed decision‑making easier.
 
 ## What to Expect for the Next Week
 

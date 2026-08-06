@@ -18,7 +18,7 @@ seo:
 ---
 
 ## Creating a Realistic [Budget](/en/posts/en-5-tips-to-reorganize-your-finances-on-vacation)
-To create an effective [budget](/en/posts/en-organize-couple-finances) with a minimum wage, it's crucial to understand that it's not about cutting all [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the-yea), but rather managing your resources intelligently. Let's consider an example with a salary of $480.00, which is slightly above the minimum wage.
+To create an effective [budget](/en/posts/en-organize-couple-finances) with a minimum wage, it's crucial to understand that it's not about cutting all [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the), but rather managing your resources intelligently. Let's consider an example with a salary of $480.00, which is slightly above the minimum wage.
 
 A general rule for dividing your [budget](/en/posts/en-how-to-create-personal-budget) is as follows:
 | Category | Percentage of Salary |

@@ -18,7 +18,7 @@ seo:
 ---
 
 ## O que é
-O termo "LC" é uma abreviação para "Letra de [Crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-)", um tipo de instrumento financeiro utilizado para garantir pagamentos entre empresas ou indivíduos. Basicamente, é um contrato entre um emitente (quem paga), um beneficiário (quem recebe) e um banco (que garante o pagamento). Imagine que você comprou um produto de uma empresa e precisa pagar R$ 10.000,00 em 30 dias. Você pode emitir uma LC para garantir que o pagamento será feito, e o banco se responsabiliza por honrar o [valor](/glossario/valor-financeiro) caso você não pague.
+O termo "LC" é uma abreviação para "Letra de [Crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena)", um tipo de instrumento financeiro utilizado para garantir pagamentos entre empresas ou indivíduos. Basicamente, é um contrato entre um emitente (quem paga), um beneficiário (quem recebe) e um banco (que garante o pagamento). Imagine que você comprou um produto de uma empresa e precisa pagar R$ 10.000,00 em 30 dias. Você pode emitir uma LC para garantir que o pagamento será feito, e o banco se responsabiliza por honrar o [valor](/glossario/valor-financeiro) caso você não pague.
 
 ## 
 A LC funciona como uma espécie de seguro para o beneficiário, garantindo que o pagamento será feito mesmo se o emitente não cumprir com sua obrigação. Aqui estão os principais passos envolvidos no processo:

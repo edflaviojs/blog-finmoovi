@@ -49,6 +49,6 @@ Score de crédito é uma nota de 0 a 1000 que os birôs de crédito (Serasa, SPC
 
 Com score alto você consegue:
 - Taxas de [juros](/glossario/juros) menores em financiamentos
-- Limites maiores no [cartão de crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-)
+- Limites maiores no [cartão de crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena)
 - Aprovação mais fácil em aluguéis
 - Melhores condições em empréstimos

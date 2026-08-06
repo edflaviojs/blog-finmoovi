@@ -20,8 +20,8 @@ seo:
 ## Understanding the [50-30-20 Method](/en/posts/en-the-50-30-20-method-for-budgeting)
 The 50-30-20 method is a simple and effective strategy for managing your finances. The idea is to divide your salary into three main categories: needs, desires, and [savings](/en/posts/en-financial-education-for-children). With this, you can have better control over where your [money](/en/posts/en-30-day-rule-for-purchases) is being spent and how it can be optimized.
 
-- **Needs (50%):** Includes essential [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the-yea) such as rent, food, water, electricity, internet, transportation, and other basic expenses.
-- **Desires (30%):** Here you include expenses that are not essential, but that improve your quality of life, such as entertainment, [travel](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using-diff), hobbies, and personal purchases.
+- **Needs (50%):** Includes essential [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the) such as rent, food, water, electricity, internet, transportation, and other basic expenses.
+- **Desires (30%):** Here you include expenses that are not essential, but that improve your quality of life, such as entertainment, [travel](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using), hobbies, and personal purchases.
 - **[Savings](/en/posts/en-smart-cashback) (20%):** This part of your salary should be destined for [savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet), investments, debt repayment, and emergency funds.
 
 ### Practical Example

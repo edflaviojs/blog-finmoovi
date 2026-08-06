@@ -18,7 +18,7 @@ seo:
 ---
 
 ## Introduction to [Certificates of Deposit (CDs)](/en/glossario/en-cdb) and Government Bonds ([interbank rate](/en/glossario/en-selic))
-When it comes to investing, it's essential to understand the available options and how they can fit your [investor profile](/en/posts/en-fixed-income-vs-variable-income-which-is-worth-it-in-2026). Two of the most popular [investments](/en/posts/en-private-pension-vs-investing-on-your-own-which-is-worth-it-i) are CDs (Certificates of Deposit) and government bonds indexed to the interbank rate. But, after all, which one yields more in 2026? To understand this, let's dive into the details of each.
+When it comes to investing, it's essential to understand the available options and how they can fit your [investor profile](/en/posts/en-fixed-income-vs-variable-income-which-is-worth-it-in-2026). Two of the most popular [investments](/en/posts/en-private-pension-vs-investing-on-your-own-which-is-worth-it) are CDs (Certificates of Deposit) and government bonds indexed to the interbank rate. But, after all, which one yields more in 2026? To understand this, let's dive into the details of each.
 
 ### What is a CD?
 A CD is a type of fixed‑income investment offered by banks and financial institutions. It works like a loan you make to the bank, and in return, the bank pays an [interest](/en/glossario/en-interest) rate. CDs can be pre‑fixed, post‑fixed, or hybrid, each with its own way of calculating interest.

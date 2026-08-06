@@ -17,7 +17,7 @@ La emergencia financiera es cualquier situación inesperada que requiere dinero 
 
 ## Ejemplos comunes
 
-- Pérdida de empleo (requiere de 3-6 meses de [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo-s))
+- Pérdida de empleo (requiere de 3-6 meses de [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo))
 - Emergencia médica (cirugía, tratamiento)
 - Reparación del coche (R$ 2.000-5.000)
 - Electrodoméstico roto (nevera, lavadora)

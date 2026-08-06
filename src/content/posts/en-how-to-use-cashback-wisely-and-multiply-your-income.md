@@ -11,7 +11,7 @@ author: "FinMoovi"
 publishedAt: 2026-07-17
 readingTime: 4
 featured: false
-translationKey: "como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re"
+translationKey: "como-usar-cashback-de-forma-inteligente-e-multiplicar-sua"
 seo:
   metaTitle: "How to Use Cashback Wisely and Multiply Your Income"
   metaDescription: "Discover, in plain language, practical strategies to turn cashback into real savings and even generate extra earnings in your daily life."

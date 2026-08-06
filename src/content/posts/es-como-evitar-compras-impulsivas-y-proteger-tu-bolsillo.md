@@ -23,7 +23,7 @@ Cuando el carrito de compras online se llena y la cuenta de la tarjeta llega ant
 
 La mayoría de las compras impulsivas ocurre cuando estamos cansados, estresados o simplemente aburridos. En esos momentos, la pantalla del celular o el escaparate de la tienda parece ofrecer una solución rápida: “Un regalo para mí”. Reconocer el estado emocional que precede la compra ya es la mitad de la batalla. Anota rápidamente lo que sientes antes de hacer clic en “finalizar compra”. Esa pausa de 30 segundos suele ser suficiente para percibir que la necesidad es momentánea.
 
-## Elabora un plan de [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo-s) realista
+## Elabora un plan de [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo) realista
 
 Un [presupuesto](/es/posts/es-5-consejos-para-reorganizar-tus-finanzas-en-vacaciones) bien definido reduce la sensación de escasez que alimenta el impulso. Supongamos que recibes un salario de R$ 4.500. Después de pagar alquiler, cuentas de agua y luz, transporte y alimentación, quizás te queden R$ 800 para gastos variables. Destina, por ejemplo, R$ 300 para ocio y regalos. Cuando ese monto se agote, la regla es detenerse. Al visualizar el límite, la compra impulsiva pierde el brillo de “descuento irresistible”.
 

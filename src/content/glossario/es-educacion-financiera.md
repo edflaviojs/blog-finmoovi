@@ -51,7 +51,7 @@ Desafortunadamente, la educación financiera no es prioridad en el currículo es
 
 ## Cómo empezar
 
-1. Anote todos sus [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo-s) por 30 días
+1. Anote todos sus [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo) por 30 días
 2. Monte un [presupuesto](/es/posts/es-5-consejos-para-reorganizar-tus-finanzas-en-vacaciones) simple
 3. Pague deudas caras (cheque especial, rotativo)
 4. Monte una reserva de emergencia

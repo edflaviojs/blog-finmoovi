@@ -29,7 +29,7 @@ La gobernanza financiera implica establecer objetivos claros y medibles, como ah
 
 ## Cómo funciona
 La gobernanza financiera funciona mediante la implementación de un conjunto de prácticas y hábitos que nos ayudan a gestionar mejor nuestro [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia). Esto puede incluir:
-* Crear un presupuesto que refleje nuestros ingresos y [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo-s) reales
+* Crear un presupuesto que refleje nuestros ingresos y [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo) reales
 * Establecer metas financieras a corto y largo plazo
 * Implementar un plan de [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado) y inversión
 * Monitorear y controlar los gastos

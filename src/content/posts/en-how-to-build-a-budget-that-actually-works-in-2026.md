@@ -50,14 +50,14 @@ Doing this gives you an instant snapshot of your consumption and lets you tweak 
 - **Shopping mode**: create grocery lists and see the projected total as you add items, helping you avoid surprise checkout totals.  
 - **Balance alerts**: push notifications let you know when your account balance is getting low, steering you away from costly credit‑card [interest](/en/glossario/en-interest).
 
-These features turn [budgeting](/en/posts/en-understand-price-amortization-and-optimize-your-finances-in-) into something as easy as checking your messages.
+These features turn [budgeting](/en/posts/en-understand-price-amortization-and-optimize-your-finances-in) into something as easy as checking your messages.
 
 ### Everyday habits to stay on track  
 
 - **Weekly check‑in**: spend 10 minutes every Friday reviewing FinMoovi’s report. Tweak quotas if a category is eating more than you planned.  
 - **30‑day rule for non‑essentials**: before buying something you don’t truly need, add it to the app’s list and wait 30 days. If you still want it after the wait, go ahead; otherwise, the impulse fades.  
 - **Automate bills**: set up automatic debit for fixed expenses (water, electricity, internet). This guarantees those bills never throw your budget off balance.  
-- **[Multi‑currency](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using-diff) when needed**: if you earn or spend in another currency, log the amount in dollars or euros; FinMoovi converts it at the official rate, so you won’t be surprised by exchange‑rate swings.
+- **[Multi‑currency](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using) when needed**: if you earn or spend in another currency, log the amount in dollars or euros; FinMoovi converts it at the official rate, so you won’t be surprised by exchange‑rate swings.
 
 These small actions create a discipline loop that, over time, brings genuine financial peace.
 

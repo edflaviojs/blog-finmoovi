@@ -46,7 +46,7 @@ En junio de 2026, el costo de vida subió 0,16 % según el IPCA general divulg
 ## Destacados del mes
 
 ### Vivienda lidera el alza  
-Con un aumento de 0,63 % en el mes y 5,85 % en 12 meses, el sector de vivienda fue el que más subió, impactando directamente el alquiler y las facturas de energía, que pesan en el [presupuesto familiar](/es/posts/es-como-regalar-en-el-dia-del-padre-gastando-poco-7-ideas-que-c).
+Con un aumento de 0,63 % en el mes y 5,85 % en 12 meses, el sector de vivienda fue el que más subió, impactando directamente el alquiler y las facturas de energía, que pesan en el [presupuesto familiar](/es/posts/es-como-regalar-en-el-dia-del-padre-gastando-poco-7-ideas-que).
 
 ### Alimentación y bebidas registra caída  
 La categoría de alimentación y bebidas retrocedió 0,24 % en el mes, aliviando un poco el bolsillo de los brasileños, aunque aún registra 3,82 % de aumento en los últimos 12 meses.

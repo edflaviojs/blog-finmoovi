@@ -15,7 +15,7 @@ author: "FinMoovi"
 publishedAt: 2026-07-28
 readingTime: 5
 locale: "es"
-translationKey: "como-reduzir-o-peso-do-seu-financiamento-em-2026-com-amortiz"
+translationKey: "como-reduzir-o-peso-do-seu-financiamento-em-2026-com"
 scope: "universal"
 featured: false
 draft: false
@@ -75,7 +75,7 @@ Aunque la cuota parezca pequeña, la mayor parte de los primeros pagos se destin
 ## Herramientas de FinMoovi que facilitan la estrategia  
 
 - **Captura inteligente**: toma foto de la factura y la app reconoce valores, fechas y tipo de contrato, evitando la digitación manual.  
-- **[Multimoneda](/es/posts/es-pierdes-el-control-de-los-gastos-cuando-viajas-usando-difere)**: si tu préstamo está en otra divisa, la app lo convierte automáticamente usando la tasa de [cambio](/es/glossario/es-cambio) en tiempo real.  
+- **[Multimoneda](/es/posts/es-pierdes-el-control-de-los-gastos-cuando-viajas-usando)**: si tu préstamo está en otra divisa, la app lo convierte automáticamente usando la tasa de [cambio](/es/glossario/es-cambio) en tiempo real.  
 - **Alertas de saldo**: notifica cuando el saldo cae bajo el umbral que definiste, indicando que la amortización está dando frutos.  
 - **Reportes de flujo de caja**: muestran, en segundos, cuánto has ahorrado en intereses durante los últimos meses.  
 

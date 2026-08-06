@@ -20,7 +20,7 @@ seo:
 
 ## Entender la técnica de los sobres digitales  
 
-La idea de los sobres digitales es la misma que la de los sobres de papel donde colocas [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) físico para cada categoría (alimentación, transporte, ocio, etc.). La diferencia es que todo queda en el móvil o en el ordenador, lo que elimina el riesgo de perder billetes y permite [informes](/es/posts/es-tambien-te-quedas-sin-saber-a-donde-fue-tu-dinero-al-final-d) instantáneos.  
+La idea de los sobres digitales es la misma que la de los sobres de papel donde colocas [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) físico para cada categoría (alimentación, transporte, ocio, etc.). La diferencia es que todo queda en el móvil o en el ordenador, lo que elimina el riesgo de perder billetes y permite [informes](/es/posts/es-tambien-te-quedas-sin-saber-a-donde-fue-tu-dinero-al-final) instantáneos.  
 
 - **¿Por qué funciona?** Cuando “destinas” un monto a un sobre, deja de ser [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) libre; pasa a ser “específico”. Esta visualización reduce las compras impulsivas.  
 - **¿Quién puede usarlo?** Cualquier persona que reciba ingresos mensuales – de €360 a €1,440 – y quiera tener claridad sobre a dónde va cada centavo.  
@@ -78,7 +78,7 @@ Este hábito de revisión convierte el control en un aprendizaje continuo, evita
 
 ## Empezar con 5 minutos al día  
 
-1. **Mañana:** al abrir la app, echa un vistazo rápido a los saldos de los sobres. Si alguno está casi vacío, anota un [recordatorio](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no-que) para evitar compras impulsivas.  
+1. **Mañana:** al abrir la app, echa un vistazo rápido a los saldos de los sobres. Si alguno está casi vacío, anota un [recordatorio](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no) para evitar compras impulsivas.  
 2. **Durante el día:** registra cada gasto en el momento. Usa la cámara del móvil para capturar el comprobante y la app hará la clasificación automática.  
 3. **Al final del día:** dedica 2 minutos a comprobar si algún sobre quedó negativo. Si es así, ajusta de inmediato – transfiere dinero de otra categoría o registra el gasto como “extra”.  
 

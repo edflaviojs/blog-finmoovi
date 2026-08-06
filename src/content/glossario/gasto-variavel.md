@@ -47,7 +47,7 @@ Ao visualizar esses grupos, fica mais fácil perceber quais deles estão consumi
 
 ## Ferramentas que facilitam o controle  
 
-Hoje em dia, [aplicativos](/posts/5-alternativas-ao-mobills-em-2026) de [finanças pessoais](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) já fazem muito do trabalho pesado. Um recurso que se destaca é a captura inteligente: basta tirar uma foto da nota ou falar o valor que acabou de pagar, e o app já classifica o gasto na categoria correta, sem precisar digitar nada. Essa automação elimina a barreira da burocracia e garante que nenhum gasto passe despercebido. Além disso, recursos como multimoeda permitem registrar despesas em diferentes moedas sem confusão, e relatórios de fluxo de caixa mostram, em tempo real, quanto ainda resta para o mês.
+Hoje em dia, [aplicativos](/posts/5-alternativas-ao-mobills-em-2026) de [finanças pessoais](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar) já fazem muito do trabalho pesado. Um recurso que se destaca é a captura inteligente: basta tirar uma foto da nota ou falar o valor que acabou de pagar, e o app já classifica o gasto na categoria correta, sem precisar digitar nada. Essa automação elimina a barreira da burocracia e garante que nenhum gasto passe despercebido. Além disso, recursos como multimoeda permitem registrar despesas em diferentes moedas sem confusão, e relatórios de fluxo de caixa mostram, em tempo real, quanto ainda resta para o mês.
 
 ## Dicas práticas para reduzir gastos variáveis  
 
@@ -55,7 +55,7 @@ Hoje em dia, [aplicativos](/posts/5-alternativas-ao-mobills-em-2026) de [finanç
 
 **Dica prática:** Crie uma lista de compras antes de ir ao supermercado e ative o modo compras do app, que mostra o total acumulado à medida que você adiciona itens.  
 
-**Dica prática:** Programe [alertas](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto-202) de saldo que avisam quando você está perto de ultrapassar o orçamento da categoria “lazer”.  
+**Dica prática:** Programe [alertas](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto) de saldo que avisam quando você está perto de ultrapassar o orçamento da categoria “lazer”.  
 
 Outras estratégias simples incluem:  
 

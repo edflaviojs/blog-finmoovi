@@ -17,7 +17,7 @@ An emergency fund is a financial cushion that protects you from unexpected event
 
 ## How much to save?
 
-The recommendation is to have between **3 to 6 months** of your monthly [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the-yea). If you spend R$ 3,000/month, your ideal reserve is between R$ 9,000 and R$ 18,000.
+The recommendation is to have between **3 to 6 months** of your monthly [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the). If you spend R$ 3,000/month, your ideal reserve is between R$ 9,000 and R$ 18,000.
 
 ## Where to keep it?
 

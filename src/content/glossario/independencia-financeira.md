@@ -16,7 +16,7 @@ Independência financeira é quando seus [investimentos](/posts/cdb-vs-tesouro-s
 
 ## A fórmula
 
-**Patrimônio necessário = [Gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) anuais × 25**
+**Patrimônio necessário = [Gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo) anuais × 25**
 
 Isso é baseado na "regra dos 4%": você pode retirar 4% do patrimônio por ano sem que ele acabe.
 

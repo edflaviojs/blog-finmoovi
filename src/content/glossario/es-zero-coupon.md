@@ -44,7 +44,7 @@ Las ventajas de invertir en zero coupons son varias. Algunas de las más destaca
 
 ## Riesgos
 Aunque los zero coupons pueden ser una forma atractiva de inversión, también conllevan algunos riesgos. Algunos de los riesgos más importantes son:
-* **Riesgo de [crédito](/es/posts/es-tarjeta-de-credito-vs-tarjeta-de-debito-cual-vale-mas-la-pen)**: El riesgo de que el emisor del bono no cumpla con sus obligaciones y no pague el valor nominal al vencimiento.
+* **Riesgo de [crédito](/es/posts/es-tarjeta-de-credito-vs-tarjeta-de-debito-cual-vale-mas-la)**: El riesgo de que el emisor del bono no cumpla con sus obligaciones y no pague el valor nominal al vencimiento.
 * **Riesgo de mercado**: El valor de los zero coupons puede fluctuar en el mercado secundario, lo que puede afectar el precio de venta si se decide vender antes del vencimiento.
 * **Riesgo de [inflación](/es/glossario/es-inflacion)**: La inflación puede erosionar el valor real de la inversión, lo que significa que el poder adquisitivo del [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) recibido al vencimiento puede ser menor que el inicial.
 

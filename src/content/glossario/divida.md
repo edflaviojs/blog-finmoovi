@@ -20,7 +20,7 @@ seo:
 
 ## O que é
 
-Dívida é quando você pega dinheiro emprestado de alguém – seja um banco, uma fintech ou até um amigo – e se compromete a devolver esse valor, geralmente com juros. Em termos simples, é como se você estivesse usando o salário de amanhã para pagar uma conta de hoje. Quando a gente fala de dívida, costuma‑se pensar em empréstimos, [cartão de crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-), [financiamento](/glossario/financiamento) de carro ou até parcelamento de compras. O importante é entender que toda dívida tem duas partes: o **principal** (o valor que você recebeu) e o **juros** (o custo extra por usar esse dinheiro).
+Dívida é quando você pega dinheiro emprestado de alguém – seja um banco, uma fintech ou até um amigo – e se compromete a devolver esse valor, geralmente com juros. Em termos simples, é como se você estivesse usando o salário de amanhã para pagar uma conta de hoje. Quando a gente fala de dívida, costuma‑se pensar em empréstimos, [cartão de crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena), [financiamento](/glossario/financiamento) de carro ou até parcelamento de compras. O importante é entender que toda dívida tem duas partes: o **principal** (o valor que você recebeu) e o **juros** (o custo extra por usar esse dinheiro).
 
 ![O que é](/images/glossario/divida-inline-1.webp)
 

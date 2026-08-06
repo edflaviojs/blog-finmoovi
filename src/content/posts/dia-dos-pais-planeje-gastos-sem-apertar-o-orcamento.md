@@ -24,7 +24,7 @@ seo:
 
 Comece olhando seu salário líquido. Se você recebe entre **R$3.000 e R$8.000**, reserve de 2 % a 5 % da renda para o presente, dependendo das suas outras prioridades. Por exemplo, quem ganha R$4.500 pode destinar até R$225 (5 %) sem sentir aperto. Essa margem cobre um presente de qualidade ou um jantar especial e ainda deixa espaço para o pagamento de contas mensais.
 
-> *Dica prática:* **Abra uma conta digital ou use um app de [controle de gastos](/posts/7-alternativas-a-planilha-google-para-financas-guia-atualiza) (como o FinMoovi) e crie uma categoria “Dia dos Pais”. Defina a meta de valor e acompanhe a evolução semanal.**
+> *Dica prática:* **Abra uma conta digital ou use um app de [controle de gastos](/posts/7-alternativas-a-planilha-google-para-financas-guia) (como o FinMoovi) e crie uma categoria “Dia dos Pais”. Defina a meta de valor e acompanhe a evolução semanal.**
 
 Essa prática evita surpresas e ainda permite transferir dinheiro de forma automática, como um “[poupança](/glossario/poupanca) de presente”.
 
@@ -67,7 +67,7 @@ Depois da celebração, faça um balanço rápido:
 2. Avalie se a experiência trouxe satisfação ao seu pai.
 3. Ajuste a categoria de gastos para o próximo ano, aumentando ou diminuindo o teto conforme a realidade.
 
-Esse ciclo de revisão transforma a data em um hábito [financeiro](/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-) saudável, evitando o acúmulo de dívidas em anos seguintes.
+Esse ciclo de revisão transforma a data em um hábito [financeiro](/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas) saudável, evitando o acúmulo de dívidas em anos seguintes.
 
 ## Comece hoje
 

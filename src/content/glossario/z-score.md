@@ -37,7 +37,7 @@ O resultado positivo indica que o valor está acima da média; o negativo, abaix
 
 ## Vantagens
 
-Usar o z‑score traz alguns [benefícios](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) claros para quem quer organizar as [finanças pessoais](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su):
+Usar o z‑score traz alguns [benefícios](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) claros para quem quer organizar as [finanças pessoais](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar):
 
 ![Vantagens](/images/glossario/z-score-inline-3.webp)
 
@@ -85,7 +85,7 @@ Se você quer colocar o z‑score em prática hoje mesmo, siga estes passos simp
 - **Calcule a média e o desvio‑padrão**: use a função MÉDIA e DESVPAD de planilhas como o Excel ou o Google Sheets.  
 - **Aplique a fórmula**: crie uma coluna “z‑score” e use a fórmula = (Valor – Média) / Desvio‑padrão.  
 - **Analise os resultados**: valores positivos altos apontam áreas de força; negativos altos indicam pontos a melhorar.  
-- **Ajuste seu plano**: reduza [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) com alto z‑score negativo ou aumente investimentos onde o z‑score mostra potencial acima da média.  
+- **Ajuste seu plano**: reduza [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo) com alto z‑score negativo ou aumente investimentos onde o z‑score mostra potencial acima da média.  
 
 **Dica prática:** faça esse cálculo a cada três meses; assim você acompanha a evolução e ajusta metas de forma dinâmica.
 

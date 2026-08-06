@@ -35,7 +35,7 @@ Allocate **5 % of your paycheck** straight into a high‑[yield](/en/glossario
 
 ## Try the digital envelope method  
 
-The envelope system (or “[digital envelopes](/en/posts/en-digital-envelope-technique-practical-guide-for-2026)”) means creating categories in your [finance](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using-diff) app—housing, transport, entertainment, savings. Assign a monthly limit to each category. If your entertainment budget is **$60** and you spend **$30**, you still have **$30** left for the next month. This mental separation prevents “out‑of‑budget” spending. Many apps, like **FinMoovi**, let you move money between envelopes with a few clicks, keeping everything traceable.
+The envelope system (or “[digital envelopes](/en/posts/en-digital-envelope-technique-practical-guide-for-2026)”) means creating categories in your [finance](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using) app—housing, transport, entertainment, savings. Assign a monthly limit to each category. If your entertainment budget is **$60** and you spend **$30**, you still have **$30** left for the next month. This mental separation prevents “out‑of‑budget” spending. Many apps, like **FinMoovi**, let you move money between envelopes with a few clicks, keeping everything traceable.
 
 ## Use cashback wisely  
 
@@ -63,7 +63,7 @@ Absolutely. Even a **$2** cashback, when reinvested, creates a compounding effec
 Look for an account tied to the **interbank rate** or short‑term government bonds, as they provide liquidity and safety.  
 
 **Can I use free apps to track my spending?**  
-Yes—apps like **FinMoovi** or similar free tools offer [automatic categorization](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end-o) and detailed reports at no cost.  
+Yes—apps like **FinMoovi** or similar free tools offer [automatic categorization](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end) and detailed reports at no cost.  
 
 ![Start today](/images/posts/poupar-dinheiro-dicas-7-habitos-simples-para-2026-6.webp)
 

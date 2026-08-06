@@ -36,7 +36,7 @@ Un regalo no necesita ser caro para ser significativo. Aquí están algunas suge
 - **Paseo al Aire Libre**: Planea un paseo en un parque o en la playa. Lleva un picnic y disfruta de la naturaleza juntos. Costo: €4 a €9.
 
 ## Administrando las Finanzas con el [FinMoovi](/es/posts/es-tambien-tienes-dificultad-para-organizar-tus-finanzas)
-Para ayudar a administrar tus finanzas y mantenerse dentro del presupuesto, la aplicación [FinMoovi](/es/posts/es-migrando-de-la-hoja-de-calculo-a-una-app-financiera) puede ser una herramienta útil. Con ella, puedes seguir tus [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo-s), definir metas financieras y recibir alertas para no superar el límite establecido.
+Para ayudar a administrar tus finanzas y mantenerse dentro del presupuesto, la aplicación [FinMoovi](/es/posts/es-migrando-de-la-hoja-de-calculo-a-una-app-financiera) puede ser una herramienta útil. Con ella, puedes seguir tus [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo), definir metas financieras y recibir alertas para no superar el límite establecido.
 
 ## Celebrando con Creatividad
 La creatividad es la clave para un Día de los Enamorados económico y memorable. Aquí están algunas ideas para celebrar con estilo sin gastar mucho:

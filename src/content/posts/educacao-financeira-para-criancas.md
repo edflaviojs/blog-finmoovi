@@ -31,7 +31,7 @@ A [economia](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) é um con
 
 
 
-## Ensino de [finanças pessoais](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)
+## Ensino de [finanças pessoais](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo)
 O ensino de finanças pessoais para crianças pode começar com conceitos simples, como a diferença entre necessidades e desejos. Por exemplo, uma necessidade é algo que é essencial para a vida, como comida e abrigo, enquanto um desejo é algo que é querido, mas não necessário, como um brinquedo.
 
 Uma forma de ensinar isso é criar um [orçamento](/posts/como-criar-orcamento-pessoal) familiar que inclua as despesas básicas e os objetivos financeiros. Por exemplo, se a família tem um orçamento de R$ 5.000 por mês, pode ser necessário priorizar as despesas básicas, como aluguel e comida, e depois decidir como usar o restante para alcançar os objetivos financeiros.

@@ -29,7 +29,7 @@ Spreadsheets are great for number‑lovers, but they demand constant discipline:
 
 ## Smart Capture: Photo Receipt + Automatic Categorization  
 
-FinMoovi’s [smart capture](/en/posts/en-how-to-secure-financing-for-your-projects-without-headaches-) solves this pain point. Just point your phone’s camera at a receipt or payment proof; the algorithm reads the amount, date, and merchant, then suggests a category (food, transport, entertainment, etc.). In a few seconds the expense is logged, eliminating manual typing. This automation cuts entry errors and frees up time to focus on strategic decisions—like trimming unnecessary spending or redirecting cash toward an emergency‑fund goal.
+FinMoovi’s [smart capture](/en/posts/en-how-to-secure-financing-for-your-projects-without-headaches) solves this pain point. Just point your phone’s camera at a receipt or payment proof; the algorithm reads the amount, date, and merchant, then suggests a category (food, transport, entertainment, etc.). In a few seconds the expense is logged, eliminating manual typing. This automation cuts entry errors and frees up time to focus on strategic decisions—like trimming unnecessary spending or redirecting cash toward an emergency‑fund goal.
 
 ![Smart capture: photo receipt + automatic categorization](/images/posts/como-organizar-seu-dinheiro-com-um-app-facil-de-usar-2.webp)
 
@@ -71,13 +71,13 @@ By completing these steps, you’ll have a clear picture of your finances and st
 The feature uses optical character recognition (OCR) to pull the amount, date, and merchant from the receipt image, then automatically assigns a category based on learned patterns.  
 
 ### Does the app work offline?  
-Yes. FinMoovi lets you log expenses and generate [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end-o) without an internet connection; the data syncs once your device reconnects.  
+Yes. FinMoovi lets you log expenses and generate [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end) without an internet connection; the data syncs once your device reconnects.  
 
 ### Is it safe to store my financial data on my phone?  
 The app employs strong encryption (AES‑256) and optionally keeps all data on the device only, ensuring nothing is sent to external servers without your consent.  
 
 ### Can I use the app for multiple currencies?  
-The [multi‑currency](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using-diff) feature lets you record spending in different currencies (like USD or EUR) and automatically convert them to the base currency you choose, handy for travel or international purchases.  
+The [multi‑currency](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using) feature lets you record spending in different currencies (like USD or EUR) and automatically convert them to the base currency you choose, handy for travel or international purchases.  
 
 ---
 

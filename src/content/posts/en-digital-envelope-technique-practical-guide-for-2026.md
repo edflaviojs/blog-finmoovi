@@ -20,7 +20,7 @@ seo:
 
 ## Understanding the Digital Envelope Technique
 
-The idea of digital envelopes is the same as the paper envelopes where you put physical cash for each category (food, transport, leisure, etc.). The difference is that everything lives on your phone or computer, which eliminates the risk of losing bills and gives you instant [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end-o).
+The idea of digital envelopes is the same as the paper envelopes where you put physical cash for each category (food, transport, leisure, etc.). The difference is that everything lives on your phone or computer, which eliminates the risk of losing bills and gives you instant [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end).
 
 - **Why it works?** When you “assign” an amount to an envelope, it stops being free cash; it becomes “specific”. This visualization reduces impulse purchases.  
 - **Who can use it?** Anyone who receives a monthly income – from $200 to $1,600 – and wants clear insight into where every cent goes.
@@ -72,7 +72,7 @@ For someone earning $200, the margin for error is small; someone earning $1,600 
 
 1. **Open the monthly report** – Most apps generate pie or bar charts that show the actual spending distribution.  
 2. **Compare with the plan** – Identify categories that exceeded expectations.  
-3. **Plan the next round** – If the food envelope was 15 % over, consider reducing the allocation or looking for [alternatives](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your-f) (farmers’ markets, bulk purchases).
+3. **Plan the next round** – If the food envelope was 15 % over, consider reducing the allocation or looking for [alternatives](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your) (farmers’ markets, bulk purchases).
 
 This habit of review turns control into continuous learning, preventing small slip‑ups from becoming big debts.
 

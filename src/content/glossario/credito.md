@@ -20,7 +20,7 @@ seo:
 
 ## O que é
 
-Crédito é a possibilidade de usar dinheiro que ainda não está na sua conta, mas que você pode pagar depois, geralmente com [juros](/glossario/juros). Pense nele como um empréstimo curto: o banco ou a fintech “empresta” o valor e você devolve em parcelas. Quando você faz um [cartão de crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-), por exemplo, está usando crédito: a administradora paga a loja e cobra de você depois, com a taxa de juros se você não pagar a fatura integral.
+Crédito é a possibilidade de usar dinheiro que ainda não está na sua conta, mas que você pode pagar depois, geralmente com [juros](/glossario/juros). Pense nele como um empréstimo curto: o banco ou a fintech “empresta” o valor e você devolve em parcelas. Quando você faz um [cartão de crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena), por exemplo, está usando crédito: a administradora paga a loja e cobra de você depois, com a taxa de juros se você não pagar a fatura integral.
 
 ![O que é](/images/glossario/credito-inline-1.webp)
 

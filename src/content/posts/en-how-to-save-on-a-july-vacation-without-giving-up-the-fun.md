@@ -14,7 +14,7 @@ author: "FinMoovi"
 publishedAt: 2026-07-14
 readingTime: 5
 locale: "en"
-translationKey: "como-economizar-nas-ferias-de-julho-sem-abrir-mao-da-diversa"
+translationKey: "como-economizar-nas-ferias-de-julho-sem-abrir-mao-da"
 featured: false
 draft: false
 translate: true
@@ -32,7 +32,7 @@ July is the most anticipated month for anyone looking to escape the routine, but
 ## 1. Set a spending ceiling before you book  
 
 ### Why does it matter?  
-The anxiety of snagging the “best deal” often leads to impulse purchases. Start by writing down how much you can allocate to leisure without touching your emergency reserve (usually 3 to 6 months of [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the-yea)).  
+The anxiety of snagging the “best deal” often leads to impulse purchases. Start by writing down how much you can allocate to leisure without touching your emergency reserve (usually 3 to 6 months of [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the)).  
 
 ![1. Set a spending ceiling before you book](/images/posts/como-economizar-nas-ferias-de-julho-sem-abrir-mao-da-diversa-2.webp)  
 
@@ -125,7 +125,7 @@ If you’d spend $16 on restaurants, the difference is **$7.00** per day. Over 5
 ## 7. Real‑time expense monitoring  
 
 ### How to stay on track  
-Even the best plan can hit unexpected bumps. Use **FinMoovi** to log every expense (even a few cents) and get alerts when you’re near your daily limit. The app also generates monthly [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end-o) that show where you could cut costs for your next trip.  
+Even the best plan can hit unexpected bumps. Use **FinMoovi** to log every expense (even a few cents) and get alerts when you’re near your daily limit. The app also generates monthly [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end) that show where you could cut costs for your next trip.  
 
 ---  
 
@@ -152,5 +152,5 @@ Even the best plan can hit unexpected bumps. Use **FinMoovi** to log every expen
 
 ## Conclusion  
 
-Saving on a July vacation doesn’t mean giving up the fun; it’s about making conscious choices and using tools that simplify [expense tracking](/en/posts/en-7-alternatives-to-google-sheets-for-finance-updated-guide-20). By setting a limit, picking cheaper destinations, optimizing transport and lodging, preparing your own meals, and focusing on low‑cost activities, you can enjoy the trip with financial peace of mind. Remember: every dollar you save now can be reinvested in a new experience or bolster your emergency reserve. Get ready, plan, and enjoy the best of summer – stress‑free and without red‑ink accounts. Safe travels and happy savings!
+Saving on a July vacation doesn’t mean giving up the fun; it’s about making conscious choices and using tools that simplify [expense tracking](/en/posts/en-7-alternatives-to-google-sheets-for-finance-updated-guide). By setting a limit, picking cheaper destinations, optimizing transport and lodging, preparing your own meals, and focusing on low‑cost activities, you can enjoy the trip with financial peace of mind. Remember: every dollar you save now can be reinvested in a new experience or bolster your emergency reserve. Get ready, plan, and enjoy the best of summer – stress‑free and without red‑ink accounts. Safe travels and happy savings!
 <!-- SCHEMA_AUTO:{"@context":"https://schema.org","@type":"HowTo","name":"How to Save on a July Vacation Without Giving Up the Fun","step":[{"@type":"HowToStep","position":1,"name":"Set a spending ceiling before you book","text":"Set a spending ceiling before you book"},{"@type":"HowToStep","position":2,"name":"Choose “off‑season” destinations","text":"Choose “off‑season” destinations"},{"@type":"HowToStep","position":3,"name":"Ground transport: bus or shared car","text":"Ground transport: bus or shared car"},{"@type":"HowToStep","position":4,"name":"Smart lodging: Airbnb, hostels, or house swapping","text":"Smart lodging: Airbnb, hostels, or house swapping"},{"@type":"HowToStep","position":5,"name":"Food: cooking vs. eating out","text":"Food: cooking vs. eating out"},{"@type":"HowToStep","position":6,"name":"Free or low‑cost activities","text":"Free or low‑cost activities"},{"@type":"HowToStep","position":7,"name":"Real‑time expense monitoring","text":"Real‑time expense monitoring"}]} -->

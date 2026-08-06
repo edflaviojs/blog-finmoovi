@@ -57,7 +57,7 @@ Aqui estão os passos para organizar o [orçamento](/posts/dicas-para-controlar-
 
 
 ## Gerenciando as Finanças
-Para manter as finanças em ordem, é crucial ter um sistema de controle. Isso pode incluir o uso de planilhas eletrônicas ou [aplicativos financeiros](/posts/voce-tambem-esquece-de-anotar-seus-gastos). O [Banco Central do Brasil](https://www.bcb.gov.br) oferece informações valiosas sobre [gestão financeira](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) e planejamento.
+Para manter as finanças em ordem, é crucial ter um sistema de controle. Isso pode incluir o uso de planilhas eletrônicas ou [aplicativos financeiros](/posts/voce-tambem-esquece-de-anotar-seus-gastos). O [Banco Central do Brasil](https://www.bcb.gov.br) oferece informações valiosas sobre [gestão financeira](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena) e planejamento.
 
 ## Comece com 5 minutos por dia
 Para manter o orçamento sob controle, dedique alguns minutos todos os dias para revisar as despesas e atualizar o orçamento. Isso pode ser feito durante o café da manhã ou antes de dormir. Lembre-se de que a chave para o sucesso é a consistência e a comunicação entre os parceiros. Visite o site da [Receita Federal](https://www.gov.br/receitafederal) para obter mais informações sobre planejamento financeiro e tributação.

@@ -18,7 +18,7 @@ LCI (Letra de Crédito Imobiliário) and LCA (Letra de Crédito do Agronegócio)
 ## Difference between LCI and LCA
 
 The only difference is the destination of the [money](/en/posts/en-30-day-rule-for-purchases):
-- **LCI:** the bank uses it to [finance](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using-diff) the real estate sector
+- **LCI:** the bank uses it to [finance](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using) the real estate sector
 - **LCA:** the bank uses it to finance the agribusiness
 
 For the investor, they work in the same way.

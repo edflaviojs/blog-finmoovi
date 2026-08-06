@@ -21,7 +21,7 @@ Crear un [presupuesto personal](/es/glossario/es-presupuesto-personal) no tiene 
 
 ## ¿Por qué tener un [presupuesto](/es/posts/es-organizar-finanzas-pareja) personal?
 
-Sin un [presupuesto](/es/posts/es-como-reducir-gastos-fijos-mensuales-de-forma-eficaz), tu [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) simplemente desaparece. Estudios muestran que las personas que controlan sus [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo-s) ahorran en promedio un 20% más que quienes no lo hacen.
+Sin un [presupuesto](/es/posts/es-como-reducir-gastos-fijos-mensuales-de-forma-eficaz), tu [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) simplemente desaparece. Estudios muestran que las personas que controlan sus [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo) ahorran en promedio un 20% más que quienes no lo hacen.
 
 Un buen [presupuesto](/es/posts/es-metodo-50-30-20-para-presupuesto) te ayuda a:
 - Saber exactamente a dónde va tu [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado)

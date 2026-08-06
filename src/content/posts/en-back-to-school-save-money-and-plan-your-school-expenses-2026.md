@@ -19,7 +19,7 @@ seo:
   keywords: ["back to school","cheap school supplies","back to school budget"]
 ---
 
-The morning starts with the beep of the supermarket checkout, and your eight‑year‑old is already pointing at every notebook, pencil and snack on the shelf. You’ve got the shopping list in hand, but your heart races as the cart fills up like a cardboard vault and the [family budget](/en/posts/en-how-to-gift-on-father-s-day-without-spending-much-7-budget-f) seems to disappear faster than the last slice of bread. This scene plays out in many households: the pressure to get everything the school asks for without blowing the bank account.
+The morning starts with the beep of the supermarket checkout, and your eight‑year‑old is already pointing at every notebook, pencil and snack on the shelf. You’ve got the shopping list in hand, but your heart races as the cart fills up like a cardboard vault and the [family budget](/en/posts/en-how-to-gift-on-father-s-day-without-spending-much-7-budget) seems to disappear faster than the last slice of bread. This scene plays out in many households: the pressure to get everything the school asks for without blowing the bank account.
 
 **The fix begins with one simple step in FinMoovi:** snap a photo of the receipt for the school‑supply haul, let the app automatically categorize each item, and in a few seconds see how much you’ve already spent on “Study Materials.” In five minutes you have a clear picture and can decide on the spot what to keep and what to postpone.
 
@@ -43,11 +43,11 @@ This monthly‑goal approach also makes it easier to spread larger expenses—li
 
 Hunting for sales and buying in bulk are classic strategies, but they require discipline to avoid over‑buying. Use FinMoovi’s smart [receipt capture](/en/posts/en-how-to-organize-your-money-with-an-easy-to-use-app): once you log a purchase, the app automatically categorizes it and flags items you’ve already bought. This helps you avoid buying the same notebook twice and quickly spot when you’re spending more than planned.
 
-If you’re shopping abroad or on international websites, the app’s [multi‑currency](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using-diff) feature converts prices on the fly, so you can compare the cost of the same item in different currencies without reaching for a calculator.
+If you’re shopping abroad or on international websites, the app’s [multi‑currency](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using) feature converts prices on the fly, so you can compare the cost of the same item in different currencies without reaching for a calculator.
 
 ## Keep an Eye on Expenses All Semester
 
-Once classes start, spending doesn’t stop. There are recurring [costs](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide) for art supplies, pencil replacements, and even extracurricular activities. FinMoovi’s cash‑flow view gives you a visual snapshot of each spending category, making quick adjustments a breeze. If you notice the “Art Supplies” category is eating up more than the equivalent of a dinner out each month, simply cut back on purchases or look for cheaper [alternatives](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your-f).
+Once classes start, spending doesn’t stop. There are recurring [costs](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide) for art supplies, pencil replacements, and even extracurricular activities. FinMoovi’s cash‑flow view gives you a visual snapshot of each spending category, making quick adjustments a breeze. If you notice the “Art Supplies” category is eating up more than the equivalent of a dinner out each month, simply cut back on purchases or look for cheaper [alternatives](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your).
 
 ![Controle de despesas ao longo do semestre](/images/posts/volta-as-aulas-economize-e-planeje-os-gastos-escolares-2026-4.webp)
 

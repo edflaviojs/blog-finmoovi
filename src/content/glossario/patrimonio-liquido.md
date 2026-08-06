@@ -12,7 +12,7 @@ readingTime: 2
 
 ## O que é Patrimônio Líquido?
 
-Patrimônio Líquido = Ativos - Passivos. Em outras palavras: tudo que você tem menos tudo que você deve. É o número mais importante das suas [finanças pessoais](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) — mostra sua riqueza real.
+Patrimônio Líquido = Ativos - Passivos. Em outras palavras: tudo que você tem menos tudo que você deve. É o número mais importante das suas [finanças pessoais](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar) — mostra sua riqueza real.
 
 ## Como calcular
 
@@ -28,7 +28,7 @@ Patrimônio Líquido = Ativos - Passivos. Em outras palavras: tudo que você tem
 - [Financiamento](/glossario/financiamento) imobiliário (saldo devedor)
 - Financiamento de veículo
 - Empréstimos pessoais
-- [Cartão de crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) (fatura em aberto)
+- [Cartão de crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena) (fatura em aberto)
 - Outras dívidas
 
 ### Exemplo

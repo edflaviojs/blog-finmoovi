@@ -18,7 +18,7 @@ seo:
   keywords: ["ahorrar dinero consejos","finanzas personales","ahorro","dinero"]
 ---
 
-[Ahorrar dinero](/es/posts/es-5-pasos-practicos-para-empezar-a-ahorrar-para-la-black-frida) no tiene que ser un sacrificio extremo; basta con ajustar algunos hábitos cotidianos y usar herramientas que ya tenemos a mano. Con ingresos entre **€1,500 y €4,000** al mes, es posible reservar el **10 %** del salario en menos de tres meses, solo hay que seguir pasos simples y consistentes.
+[Ahorrar dinero](/es/posts/es-5-pasos-practicos-para-empezar-a-ahorrar-para-la-black) no tiene que ser un sacrificio extremo; basta con ajustar algunos hábitos cotidianos y usar herramientas que ya tenemos a mano. Con ingresos entre **€1,500 y €4,000** al mes, es posible reservar el **10 %** del salario en menos de tres meses, solo hay que seguir pasos simples y consistentes.
 
 ## Transforma pequeños gastos
 

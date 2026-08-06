@@ -66,7 +66,7 @@ With the data already sorted, you can create a simple monthly plan:
 2. Subtract that total from your net income to see the amount left for variable spending and savings.
 3. Allocate a portion of the remainder to an [emergency fund](/en/glossario/en-emergency-fund) or a short‑term goal (like a vacation). The rest becomes your variable budget.
 
-FinMoovi’s cash‑flow [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end-o) visualize this split, showing a clear bar for fixed costs and a flexible area for variable spending. The visual cue makes it easy to spot overspending before it hurts your bank balance.
+FinMoovi’s cash‑flow [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end) visualize this split, showing a clear bar for fixed costs and a flexible area for variable spending. The visual cue makes it easy to spot overspending before it hurts your bank balance.
 
 ## Staying ahead with reminders and offline access
 Even the best plan fails without timely alerts. FinMoovi sends balance warnings when you’re close to exceeding your variable budget, and reminder notifications for upcoming fixed bills. If you’re traveling or in a spot with spotty internet, the app works offline and syncs later, ensuring you never miss a capture.

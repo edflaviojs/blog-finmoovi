@@ -17,7 +17,7 @@ IOF (Imposto sobre Operações Financeiras) is a federal tax that applies to var
 
 ## Where IOF appears
 
-### [Investments](/en/posts/en-private-pension-vs-investing-on-your-own-which-is-worth-it-i) (fixed [income](/en/posts/en-building-a-diversified-portfolio-with-r-500))
+### [Investments](/en/posts/en-private-pension-vs-investing-on-your-own-which-is-worth-it) (fixed [income](/en/posts/en-building-a-diversified-portfolio-with-r-500))
 
 - Applies to income redeemed in less than 30 days
 - Starts at 96% on day 1 and goes to 0% on day 30

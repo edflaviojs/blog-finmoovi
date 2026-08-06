@@ -50,7 +50,7 @@ It is generally aimed at people with assets above R$ 1 million. But the concepts
 
 Even without a wealth manager, you can:
 
-1. Diversify [investments](/en/posts/en-private-pension-vs-investing-on-your-own-which-is-worth-it-i) (fixed income + variable + international)
+1. Diversify [investments](/en/posts/en-private-pension-vs-investing-on-your-own-which-is-worth-it) (fixed income + variable + international)
 2. Use PGBL to reduce IR
 3. Have adequate insurance
 4. Keep organized records

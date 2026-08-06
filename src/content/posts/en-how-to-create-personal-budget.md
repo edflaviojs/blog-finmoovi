@@ -25,7 +25,7 @@ Without a [budget](/en/posts/en-reduce-fixed-expenses), your [money](/en/posts/e
 
 A good [budget](/en/posts/en-the-50-30-20-method-for-budgeting) helps you:
 - Know exactly where your [money](/en/posts/en-financial-planning-for-couples) goes
-- Identify unnecessary [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the-yea)
+- Identify unnecessary [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the)
 - Set and achieve financial goals
 - Reduce financial stress
 

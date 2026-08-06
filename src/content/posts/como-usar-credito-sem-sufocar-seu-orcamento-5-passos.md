@@ -82,7 +82,7 @@ Compare a taxa nominal com a taxa efetiva anual (CEA). A CEA inclui encargos e m
 Negocie com a instituição por um prazo maior ou busque opções com taxa menor. Enquanto isso, ajuste seu orçamento no app, reduzindo gastos não essenciais para criar espaço.
 
 ### Posso usar o FinMoovi para acompanhar financiamentos em outras moedas?
-Sim. O recurso de **[multimoeda](/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-)** permite registrar parcelas em dólares, euros ou outras moedas, convertendo automaticamente para o seu padrão de acompanhamento.
+Sim. O recurso de **[multimoeda](/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas)** permite registrar parcelas em dólares, euros ou outras moedas, convertendo automaticamente para o seu padrão de acompanhamento.
 
 ### Como garantir que a reserva de emergência não seja consumida pelos pagamentos?
 Defina no planejamento mensal um limite máximo de uso da reserva. O FinMoovi sinaliza quando o saldo da reserva cai abaixo de um percentual pré‑definido, evitando que você use tudo para pagar parcelas.

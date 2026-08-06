@@ -35,7 +35,7 @@ Investing means putting money into assets that can generate returns over time—
 
 ![How Investing Works](/images/posts/investir-vs-quitar-dividas-qual-vale-mais-a-pena-em-2026-2.webp)
 
-In FinMoovi, the **Cash‑flow and [Reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end-o)** feature lets you track investment performance, compare the real return with the interest rate on your debt, and tweak your strategy in real time.
+In FinMoovi, the **Cash‑flow and [Reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end)** feature lets you track investment performance, compare the real return with the interest rate on your debt, and tweak your strategy in real time.
 
 ## How Paying Off Debt Works
 Paying off debt means clearing the outstanding balance, eliminating future interest charges. Debts fall into two broad categories:

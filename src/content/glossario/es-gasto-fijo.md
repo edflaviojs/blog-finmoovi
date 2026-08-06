@@ -18,7 +18,7 @@ seo:
   keywords: ["gasto fijo", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 ---
 
-## ¿Te suena familiar el final del mes y la sensación de que el [dinero desaparece](/es/posts/es-tambien-te-quedas-sin-saber-a-donde-fue-tu-dinero-al-final-d)?
+## ¿Te suena familiar el final del mes y la sensación de que el [dinero desaparece](/es/posts/es-tambien-te-quedas-sin-saber-a-donde-fue-tu-dinero-al-final)?
 
 Imagina que al cerrar el día, revisas tu cuenta y ves que ya no queda nada para la cena, el cine o ese pequeño [ahorro](/es/glossario/es-ahorro) que querías. La culpa no es del café de la mañana, sino de esos pagos que aparecen mes a mes sin que los notes: la suscripción al gimnasio, el plan de internet o la cuota del seguro. Son gastos que se repiten, que no puedes evitar y que, si no los controlas, hacen que tu presupuesto se desbalancee y te quedes sin margen para imprevistos.
 

@@ -26,10 +26,10 @@ Patrimonio Neto = Activos - Pasivos. En otras palabras: todo lo que tienes menos
 
 ### Tus Pasivos (lo que debes)
 
-- [Financiación](/es/posts/es-como-conseguir-financiacion-para-tus-proyectos-sin-complicac) inmobiliaria (saldo deudor)
-- [Financiación](/es/posts/es-como-usar-credito-sin-ahogar-tu-presupuesto-5-pasos-practico) de vehículo
+- [Financiación](/es/posts/es-como-conseguir-financiacion-para-tus-proyectos-sin) inmobiliaria (saldo deudor)
+- [Financiación](/es/posts/es-como-usar-credito-sin-ahogar-tu-presupuesto-5-pasos) de vehículo
 - Préstamos personales
-- Tarjeta de [crédito](/es/posts/es-tarjeta-de-credito-vs-tarjeta-de-debito-cual-vale-mas-la-pen) (factura abierta)
+- Tarjeta de [crédito](/es/posts/es-tarjeta-de-credito-vs-tarjeta-de-debito-cual-vale-mas-la) (factura abierta)
 - Otras deudas
 
 ### Ejemplo

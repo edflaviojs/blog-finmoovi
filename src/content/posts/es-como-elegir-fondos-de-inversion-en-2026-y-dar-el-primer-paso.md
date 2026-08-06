@@ -15,7 +15,7 @@ author: "FinMoovi"
 publishedAt: 2026-08-04
 readingTime: 6
 locale: "es"
-translationKey: "como-escolher-fundos-de-investimento-em-2026-e-dar-o-primeir"
+translationKey: "como-escolher-fundos-de-investimento-em-2026-e-dar-o"
 scope: "universal"
 featured: false
 draft: false
@@ -80,7 +80,7 @@ FinMoovi incluye un recurso de **flujo de caja y reportes** que transforma la ta
 
 * Evolución del valor de la cuota a lo largo del tiempo  
 * Participación porcentual de cada fondo en tu cartera  
-* Comparativa de [rentabilidad](/es/posts/es-entiende-la-tasa-interbancaria-y-su-impacto-en-tus-inversion) frente a benchmarks (como índices globales)
+* Comparativa de [rentabilidad](/es/posts/es-entiende-la-tasa-interbancaria-y-su-impacto-en-tus) frente a benchmarks (como índices globales)
 
 **Micro‑acción de 5 minutos:**  
 1. Abre FinMoovi y ve a la sección “Flujo de Caja”.  

@@ -12,7 +12,7 @@ readingTime: 2
 
 ## O que é Zona de Conforto Financeira?
 
-É o estado onde suas finanças estão organizadas e você não vive com medo do fim do mês. Significa ter: [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) sob controle, [reserva de emergência](/glossario/reserva-de-emergencia) formada, dívidas quitadas e [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) crescendo.
+É o estado onde suas finanças estão organizadas e você não vive com medo do fim do mês. Significa ter: [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo) sob controle, [reserva de emergência](/glossario/reserva-de-emergencia) formada, dívidas quitadas e [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) crescendo.
 
 ## Os 5 pilares da zona de conforto financeira
 

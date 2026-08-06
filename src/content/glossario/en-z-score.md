@@ -85,7 +85,7 @@ These numbers help you decide whether to cut back, keep the pace, or push harder
 
 Getting comfortable with the z‑score doesn’t require a finance degree—just a spreadsheet and a few minutes each month. Follow these steps, and you’ll have a clear picture of where you stand.
 
-- **Practical tip:** **Collect data** from at least 20 people in the same salary band ($600‑$1,600). Use a simple Google Sheet to log their monthly [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the-yea).  
+- **Practical tip:** **Collect data** from at least 20 people in the same salary band ($600‑$1,600). Use a simple Google Sheet to log their monthly [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the).  
 - **Practical tip:** **Calculate the mean** by summing the column and dividing by the number of entries. The sheet’s `=AVERAGE()` function does the job instantly.  
 - **Practical tip:** **Use the built‑in STDEV.P function** (`=STDEV.P()`) to get the standard deviation, then apply the formula `=(YourValue‑Mean)/StdDev` in another column.  
 - Review the resulting z‑scores: values between –1 and 1 are “normal,” while anything outside that range deserves a closer look.  

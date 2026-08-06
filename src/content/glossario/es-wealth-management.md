@@ -13,7 +13,7 @@ readingTime: 1
 
 ## ¿Qué es Wealth Management?
 
-Wealth Management (gestão de patrimônio) es un servicio [financiero](/es/posts/es-pierdes-el-control-de-los-gastos-cuando-viajas-usando-difere) premium que cuida de todos los aspectos de la vida financiera de una persona: inversiones, impuestos, herencia, seguros y [planificación](/es/posts/es-presupuesto-con-salario-minimo-consejos-practicos) a largo plazo.
+Wealth Management (gestão de patrimônio) es un servicio [financiero](/es/posts/es-pierdes-el-control-de-los-gastos-cuando-viajas-usando) premium que cuida de todos los aspectos de la vida financiera de una persona: inversiones, impuestos, herencia, seguros y [planificación](/es/posts/es-presupuesto-con-salario-minimo-consejos-practicos) a largo plazo.
 
 ## Para quién es
 

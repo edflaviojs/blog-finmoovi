@@ -51,7 +51,7 @@ Unfortunately, financial education is not a priority in the Brazilian school cur
 
 ## How to Start
 
-1. Write down all your [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the-yea) for 30 days
+1. Write down all your [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the) for 30 days
 2. Create a simple [budget](/en/posts/en-5-tips-to-reorganize-your-finances-on-vacation)
 3. Pay off expensive debts (checking account, [overdraft](/en/glossario/en-overdraft))
 4. Build an emergency reserve

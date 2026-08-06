@@ -18,7 +18,7 @@ seo:
 ---
 
 ## Introducción al [certificado de depósito](/es/glossario/es-cdb) y [bonos del gobierno](/es/posts/es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026)
-Cuando se trata de invertir, es importante entender las opciones disponibles y cómo pueden adaptarse a su perfil de inversionista. Dos de las [inversiones](/es/posts/es-prevision-privada-vs-invertir-por-cuenta-propia-cual-vale-ma) más populares en muchos países son el certificado de depósito (CD) y los bonos del gobierno. Pero, después de todo, ¿cuál de ellos rinde más en 2026? Para entender esto, vamos a sumergirnos en los detalles de cada uno.
+Cuando se trata de invertir, es importante entender las opciones disponibles y cómo pueden adaptarse a su perfil de inversionista. Dos de las [inversiones](/es/posts/es-prevision-privada-vs-invertir-por-cuenta-propia-cual-vale) más populares en muchos países son el certificado de depósito (CD) y los bonos del gobierno. Pero, después de todo, ¿cuál de ellos rinde más en 2026? Para entender esto, vamos a sumergirnos en los detalles de cada uno.
 
 ### ¿Qué es el certificado de depósito?
 El certificado de depósito es un tipo de [inversión](/es/posts/es-montando-cartera-diversificada-con-r-500) de [renta fija](/es/glossario/es-renta-fija) ofrecida por bancos e instituciones financieras. Funciona como un préstamo que usted hace al banco, y a [cambio](/es/glossario/es-cambio), el banco paga una tasa de interés. El certificado de depósito puede ser pre‑fijado, post‑fijado o híbrido, cada uno con su propia forma de calcular los intereses.

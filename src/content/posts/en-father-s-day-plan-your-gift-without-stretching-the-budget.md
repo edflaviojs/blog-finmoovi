@@ -24,7 +24,7 @@ seo:
 
 Start by looking at your net salary. If you earn between **$2,000 and $5,000** a month, set aside **2 %–5 %** of your [income](/en/posts/en-building-a-diversified-portfolio-with-r-500) for the gift, depending on your other priorities. For example, someone earning **$4,500** could allocate up to **$225** (5 %) without feeling a pinch. That amount covers a quality present or a special dinner and still leaves room for monthly bills.
 
-> *Practical tip:* **Open a digital account or use a [budgeting](/en/posts/en-understand-price-amortization-and-optimize-your-finances-in-) app (like FinMoovi) and create a “Father’s Day” category. Set the target amount and track progress weekly.**  
+> *Practical tip:* **Open a digital account or use a [budgeting](/en/posts/en-understand-price-amortization-and-optimize-your-finances-in) app (like FinMoovi) and create a “Father’s Day” category. Set the target amount and track progress weekly.**  
 This habit prevents surprises and even lets you automate transfers, turning the category into a mini “gift [savings](/en/glossario/en-savings)” account.
 
 ## Build a list of ideas that fit your budget  
@@ -68,7 +68,7 @@ Repeating this cycle turns the holiday into a healthy financial habit, preventin
 
 ## Get started today  
 
-Spend five minutes now to open your [budgeting](/en/posts/en-how-to-turn-a-mess-of-bills-into-a-visual-control-system-in-) app, create a “Father’s Day” category, and set the target amount. Every small step today avoids a headache tomorrow and guarantees a gift that fits both your wallet and your heart.
+Spend five minutes now to open your [budgeting](/en/posts/en-how-to-turn-a-mess-of-bills-into-a-visual-control-system-in) app, create a “Father’s Day” category, and set the target amount. Every small step today avoids a headache tomorrow and guarantees a gift that fits both your wallet and your heart.
 
 ## Frequently Asked Questions  
 

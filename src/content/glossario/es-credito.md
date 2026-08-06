@@ -28,7 +28,7 @@ El crédito es básicamente la posibilidad que te da una entidad (banco, fintech
 
 ## Cómo funciona
 
-Cuando solicitas crédito, la entidad evalúa tu capacidad de pago mediante tu historial [financiero](/es/posts/es-pierdes-el-control-de-los-gastos-cuando-viajas-usando-difere) y tus ingresos. Si te aprueba, te asigna un límite, que es la cantidad máxima que puedes usar. Cada vez que utilizas parte de ese límite, generas una deuda que se acumula con intereses diarios o mensuales. Al final de cada período, recibes un estado de cuenta con el saldo pendiente y el pago mínimo que debes cubrir para evitar cargos extra. Si pagas más que el mínimo, reduces la deuda y los intereses futuros. El proceso se resume en tres pasos:
+Cuando solicitas crédito, la entidad evalúa tu capacidad de pago mediante tu historial [financiero](/es/posts/es-pierdes-el-control-de-los-gastos-cuando-viajas-usando) y tus ingresos. Si te aprueba, te asigna un límite, que es la cantidad máxima que puedes usar. Cada vez que utilizas parte de ese límite, generas una deuda que se acumula con intereses diarios o mensuales. Al final de cada período, recibes un estado de cuenta con el saldo pendiente y el pago mínimo que debes cubrir para evitar cargos extra. Si pagas más que el mínimo, reduces la deuda y los intereses futuros. El proceso se resume en tres pasos:
 
 - **Solicitud:** entregas tus datos y documentos (como comprobante de salario) y la entidad verifica tu perfil.
 - **Aprobación y asignación:** te otorgan un límite de crédito basado en tu capacidad de pago.

@@ -51,12 +51,12 @@ Para tomar el control, primero debes reconocer qué partidas entran en la catego
 
 ## Herramientas para manejarlos
 
-Hoy en día no necesitas una [hoja de cálculo](/es/posts/es-migrando-de-la-hoja-de-calculo-a-una-app-financiera) complicada. Existen apps que hacen el trabajo pesado por ti. La clave está en la [captura inteligente](/es/posts/es-como-conseguir-financiacion-para-tus-proyectos-sin-complicac): simplemente tomas una foto del recibo o le dices a la app lo que gastaste, y ella clasifica el gasto automáticamente. Además, la mayoría permite trabajar en varias monedas, generar informes de flujo de caja y establecer metas mensuales. Algunas funcionalidades útiles son:
+Hoy en día no necesitas una [hoja de cálculo](/es/posts/es-migrando-de-la-hoja-de-calculo-a-una-app-financiera) complicada. Existen apps que hacen el trabajo pesado por ti. La clave está en la [captura inteligente](/es/posts/es-como-conseguir-financiacion-para-tus-proyectos-sin): simplemente tomas una foto del recibo o le dices a la app lo que gastaste, y ella clasifica el gasto automáticamente. Además, la mayoría permite trabajar en varias monedas, generar informes de flujo de caja y establecer metas mensuales. Algunas funcionalidades útiles son:
 
 - Captura por foto o voz que reconoce el monto y la categoría sin que tengas que escribir nada.
 - [Categorización automática](/es/posts/es-tambien-olvidas-anotar-tus-gastos) que separa gastos fijos de variables.
 - Informes visuales que muestran cuánto gastas en ocio, alimentación, etc.
-- Recordatorios de saldo bajo y [alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no-que) de gasto excesivo.
+- Recordatorios de saldo bajo y [alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no) de gasto excesivo.
 - Modo compras con lista y total en tiempo real para evitar sorpresas al pasar por la caja.
 
 ## FinMoovi al rescate

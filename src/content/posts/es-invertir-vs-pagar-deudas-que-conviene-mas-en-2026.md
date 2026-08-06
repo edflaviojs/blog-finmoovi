@@ -58,7 +58,7 @@ FinMoovi ofrece **Captura inteligente**: basta con fotografiar la factura o el c
 | **Impacto en el score crediticio** | Indirecto – inversiones exitosas pueden mejorar la percepción de estabilidad | Directo – reducción de deuda mejora el score rápidamente |
 | **Beneficio fiscal**         | Posibilidad de exención o reducción en algunos países (ej.: cuentas de pensión) | No hay beneficio fiscal directo |
 | **Tiempo para ver resultados** | Medio a largo plazo (meses a años)                 | Inmediato – al liquidar, el ahorro de intereses aparece en el siguiente extracto |
-| **Herramientas FinMoovi útiles** | Flujo de caja, reportes de [rentabilidad](/es/posts/es-entiende-la-tasa-interbancaria-y-su-impacto-en-tus-inversion), metas de inversión | Captura inteligente, recordatorios de pago, planificación mensual |
+| **Herramientas FinMoovi útiles** | Flujo de caja, reportes de [rentabilidad](/es/posts/es-entiende-la-tasa-interbancaria-y-su-impacto-en-tus), metas de inversión | Captura inteligente, recordatorios de pago, planificación mensual |
 
 ![Tabla comparativa](/images/posts/investir-vs-quitar-dividas-qual-vale-mais-a-pena-em-2026-4.webp)
 

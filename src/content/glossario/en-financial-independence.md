@@ -17,7 +17,7 @@ Financial independence is when your [investments](/en/posts/en-cdb-vs-treasury-s
 
 ## The Formula
 
-**Necessary Assets = Annual [Expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the-yea) × 25**
+**Necessary Assets = Annual [Expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the) × 25**
 
 This is based on the "4% rule": you can withdraw 4% of your assets per year without depleting them.
 

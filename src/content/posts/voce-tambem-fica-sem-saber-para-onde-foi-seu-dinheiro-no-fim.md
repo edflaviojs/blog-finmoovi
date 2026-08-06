@@ -41,7 +41,7 @@ Esses gastos “invisíveis” são difíceis de rastrear quando você depende a
 
 ## Como o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) resolve esse caos
 
-Imagine ter um assistente pessoal que, a cada compra, já sabe em que categoria ela se encaixa e a registra em segundos. O **[FinMoovi](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)** faz exatamente isso, combinando três funcionalidades poderosas:
+Imagine ter um assistente pessoal que, a cada compra, já sabe em que categoria ela se encaixa e a registra em segundos. O **[FinMoovi](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar)** faz exatamente isso, combinando três funcionalidades poderosas:
 
 1. **Captura por voz** – Basta dizer “Almoço no restaurante X, R$ 45,00” que o app já cria a despesa.
 2. **OCR de recibos** – Tire uma foto do seu cupom ou nota fiscal e o aplicativo extrai os valores automaticamente.

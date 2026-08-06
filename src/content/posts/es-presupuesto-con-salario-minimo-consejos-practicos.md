@@ -41,7 +41,7 @@ Con base en esta división, para un salario de R$ 2.400,00:
 - [Ahorro](/es/posts/es-negociar-descuentos-en-cuentas-fijas) y Emergencia: R$ 240,00
 
 ## Priorizando Necesidades
-Es importante priorizar necesidades sobre deseos. **Consejo práctico:** Haz una lista de todo lo que gastas en un mes e identifica dónde puedes cortar [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo-s) superfluos. Por ejemplo, si gastas R$ 100,00 por semana en aperitivos y comidas fuera, intenta reducir a R$ 50,00, ahorrando R$ 200,00 por mes.
+Es importante priorizar necesidades sobre deseos. **Consejo práctico:** Haz una lista de todo lo que gastas en un mes e identifica dónde puedes cortar [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo) superfluos. Por ejemplo, si gastas R$ 100,00 por semana en aperitivos y comidas fuera, intenta reducir a R$ 50,00, ahorrando R$ 200,00 por mes.
 
 ## Gestionando Gastos Variables
 Los gastos variables, como transporte y alimentación fuera, pueden ser difíciles de controlar. Aquí tienes algunos [consejos](/es/posts/es-7-errores-financieros-principiante) para gestionar estos gastos:

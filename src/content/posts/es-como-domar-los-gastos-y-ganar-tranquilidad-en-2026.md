@@ -21,7 +21,7 @@ seo:
 
 Imagina una mañana de lunes: abres la app en tu móvil, ves la notificación de que ya llegó la factura de la tarjeta y, antes de tomar el café, sientes ese nudo en el pecho. El importe parece mayor de lo esperado y la pregunta “¿dónde se fue todo?” retumba en tu cabeza mientras intentas recordar las compras de los últimos días. Esa sensación de sorpresa – o de miedo – es típica de quien aún no tiene claridad sobre sus propios gastos.
 
-Controlar los gastos personales no se trata de eliminar todo lo que te da placer, sino de entender a dónde va el dinero, identificar patrones y, a partir de ahí, decidir dónde vale la pena ahorrar. Cuando visualizas cada centavo como un bloque que puedes reorganizar, la frustración da paso a una sensación de dominio. Y si todavía no tienes una forma práctica de hacerlo, FinMoovi puede ser el aliado que te faltaba. En cinco minutos basta con abrir la app, usar la **[captura inteligente](/es/posts/es-como-conseguir-financiacion-para-tus-proyectos-sin-complicac)** (foto de la factura o grabación de voz) y dejar que categorice automáticamente la compra. Así, el primer paso para tener el control que deseas ya está hecho.
+Controlar los gastos personales no se trata de eliminar todo lo que te da placer, sino de entender a dónde va el dinero, identificar patrones y, a partir de ahí, decidir dónde vale la pena ahorrar. Cuando visualizas cada centavo como un bloque que puedes reorganizar, la frustración da paso a una sensación de dominio. Y si todavía no tienes una forma práctica de hacerlo, FinMoovi puede ser el aliado que te faltaba. En cinco minutos basta con abrir la app, usar la **[captura inteligente](/es/posts/es-como-conseguir-financiacion-para-tus-proyectos-sin)** (foto de la factura o grabación de voz) y dejar que categorice automáticamente la compra. Así, el primer paso para tener el control que deseas ya está hecho.
 
 ## Mapea tus gastos en tres categorías
 
@@ -54,7 +54,7 @@ La tentación de comprar por impulso suele aparecer cuando estamos en el superme
 Con la información consolidada en la app, obtienes argumentos sólidos para renegociar contratos. Por ejemplo, al notar que la factura de energía equivale a “casi el doble del gasto de un alquiler”, puedes buscar tarifas más ventajosas o adoptar medidas de [ahorro](/es/glossario/es-ahorro) doméstico. El informe de “Gastos mensuales” de FinMoovi puede exportarse en PDF y presentarse al proveedor como prueba de que estás atento a tu consumo.
 
 ## Empieza hoy
-Ahora que conoces las herramientas y los hábitos que pueden transformar tu relación con el dinero, solo queda dar el primer paso. Abre FinMoovi, toma una foto de la última factura que recibiste y deja que la app haga la clasificación automática. En menos de cinco minutos tendrás la primera pieza del rompecabezas de tu presupuesto en tus manos. Desde ahí, ajusta límites, crea [alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no-que) y observa la diferencia en las próximas semanas. El [cambio](/es/glossario/es-cambio) ocurre cuando la acción es simple e inmediata.
+Ahora que conoces las herramientas y los hábitos que pueden transformar tu relación con el dinero, solo queda dar el primer paso. Abre FinMoovi, toma una foto de la última factura que recibiste y deja que la app haga la clasificación automática. En menos de cinco minutos tendrás la primera pieza del rompecabezas de tu presupuesto en tus manos. Desde ahí, ajusta límites, crea [alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no) y observa la diferencia en las próximas semanas. El [cambio](/es/glossario/es-cambio) ocurre cuando la acción es simple e inmediata.
 
 ### Preguntas frecuentes
 #### ¿Cómo saber si estoy gastando demasiado en una categoría?
@@ -66,7 +66,7 @@ Utiliza el informe de “Flujo de caja” de FinMoovi para comparar el gasto men
 Sí. FinMoovi usa encriptación de extremo a extremo y almacenamiento en servidores certificados, garantizando que tu información permanezca privada y protegida.
 
 #### ¿Puedo usar la app sin conexión a internet?
-La versión offline permite registrar gastos y ver [informes](/es/posts/es-tambien-te-quedas-sin-saber-a-donde-fue-tu-dinero-al-final-d) básicos. Cuando la conexión se restablezca, todo se sincroniza automáticamente.
+La versión offline permite registrar gastos y ver [informes](/es/posts/es-tambien-te-quedas-sin-saber-a-donde-fue-tu-dinero-al-final) básicos. Cuando la conexión se restablezca, todo se sincroniza automáticamente.
 
 #### ¿El recurso de captura inteligente reconoce facturas de diferentes países?
 Fue desarrollado para leer textos en portugués, inglés y español, y funciona bien con facturas de varios formatos, facilitando el control para quien maneja distintas monedas.

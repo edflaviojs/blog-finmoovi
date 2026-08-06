@@ -49,7 +49,7 @@ Even though Excel is powerful, most people hit the same roadblocks:
 - **Manual entry fatigue** – typing every receipt or voice‑note feels like a chore, so you skip entries and the data becomes unreliable.
 - **Category confusion** – you might write “food” for a coffee and “groceries” for a restaurant, making it hard to see true spending patterns.
 - **Currency juggling** – if you travel or shop online, you end up with dollars, euros, and local money mixed together, and converting them manually is a nightmare.
-- **No real‑time alerts** – you only notice you’re overspending after the month ends, because the spreadsheet doesn’t [push notifications](/en/posts/en-how-to-never-miss-a-bill-payment-deadline-simple-5-minute-fi).
+- **No real‑time alerts** – you only notice you’re overspending after the month ends, because the spreadsheet doesn’t [push notifications](/en/posts/en-how-to-never-miss-a-bill-payment-deadline-simple-5-minute).
 - **Limited mobility** – you need a laptop or a full‑size screen to edit the file, which isn’t handy when you’re at the supermarket or on a train.
 
 These gaps turn a potentially insightful tool into a dusty file that sits on your desktop.
@@ -59,8 +59,8 @@ These gaps turn a potentially insightful tool into a dusty file that sits on you
 FinMoovi is the friend you wish you had when you opened that Excel file. It keeps the familiar structure of a cash‑flow sheet but adds a layer of automation that makes tracking feel effortless. Here’s what the app does, broken down into bite‑size features:
 
 - **Smart capture** – Snap a photo of a receipt or speak the amount, and the app instantly extracts the value, date, and merchant name.
-- **[Automatic categorization](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end-o)** – Using AI, the app assigns each entry to the right bucket (e.g., “coffee” goes to “Food & Drink”) so you don’t have to think about tags.
-- **[Multi‑currency](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using-diff) support** – Whether you pay in dollars, euros, or any other currency, FinMoovi converts everything to your base currency at the current rate, keeping the cash‑flow table consistent.
+- **[Automatic categorization](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end)** – Using AI, the app assigns each entry to the right bucket (e.g., “coffee” goes to “Food & Drink”) so you don’t have to think about tags.
+- **[Multi‑currency](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using) support** – Whether you pay in dollars, euros, or any other currency, FinMoovi converts everything to your base currency at the current rate, keeping the cash‑flow table consistent.
 - **Cash‑flow reports** – Visual dashboards show monthly inflows, outflows, and net balance, just like the charts you’d build in Excel, but updated every minute.
 - **Monthly [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) & goals** – Set a target like “save the price of a daily coffee for 6 months” and watch the app track progress automatically.
 - **Credit‑card & bill integration** – Link your cards and recurring bills; the app pulls the data and marks them as paid or pending.

@@ -35,7 +35,7 @@ The biggest barrier to saving is usually a lack of visibility. If you don’t kn
 
 ## Prioritize essential expenses first
 
-One of the simplest yet most effective rules is to make sure fixed [costs](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide)—housing, transport, utilities—are covered before you think about variable spending. Using the monthly [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end-o) feature, you can see at a glance how much you’ve already allocated to these categories. If there’s still room left, redirect part of the money you’d normally spend on impulse buys into your emergency reserve.
+One of the simplest yet most effective rules is to make sure fixed [costs](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide)—housing, transport, utilities—are covered before you think about variable spending. Using the monthly [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end) feature, you can see at a glance how much you’ve already allocated to these categories. If there’s still room left, redirect part of the money you’d normally spend on impulse buys into your emergency reserve.
 
 ![Priorize despesas essenciais antes de tudo](/images/posts/estrategias-simples-para-economizar-no-dia-a-dia-em-2026-2.webp)
 
@@ -78,7 +78,7 @@ The app uses optical character recognition (OCR) to read receipts and, based on 
 Yes. FinMoovi employs end‑to‑end encryption and stores information on servers with security certifications, keeping your data private.
 
 **Can I use FinMoovi to track expenses in different currencies?**  
-Absolutely. The [multi‑currency](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using-diff) feature lets you log spending in various currencies, automatically converting them to your base currency—handy for international travel.
+Absolutely. The [multi‑currency](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using) feature lets you log spending in various currencies, automatically converting them to your base currency—handy for international travel.
 
 **How long does it take to see real results in my finances?**  
 It varies, but most users notice a perceptible improvement within the first few weeks of daily expense reviews and category adjustments.

@@ -47,9 +47,9 @@ An example is the case of a person who spends $200 per week at a supermarket and
 
 
 ## Track Your [Expenses](/en/posts/en-the-50-30-20-method-for-budgeting)
-Tracking your [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the-yea) is crucial to understanding where your [money](/en/posts/en-30-day-rule-for-purchases) is going and how you can save. It's essential to record all your expenses, including supermarket shopping, and check if you're within your [budget](/en/posts/en-how-to-create-personal-budget).
+Tracking your [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the) is crucial to understanding where your [money](/en/posts/en-30-day-rule-for-purchases) is going and how you can save. It's essential to record all your expenses, including supermarket shopping, and check if you're within your [budget](/en/posts/en-how-to-create-personal-budget).
 
-**Practical tip:** Use a [expense tracking](/en/posts/en-7-alternatives-to-google-sheets-for-finance-updated-guide-20) app to record your expenses and track your [budget](/en/posts/en-5-tips-to-reorganize-your-finances-on-vacation). This can help identify areas where you can cut back on spending and save.
+**Practical tip:** Use a [expense tracking](/en/posts/en-7-alternatives-to-google-sheets-for-finance-updated-guide) app to record your expenses and track your [budget](/en/posts/en-5-tips-to-reorganize-your-finances-on-vacation). This can help identify areas where you can cut back on spending and save.
 
 ## Start Today
 You don't need to wait until next month to start saving on supermarket shopping. You can start today by making a shopping list and planning your meals for the week. Remember that small changes can lead to significant [savings](/en/posts/en-financial-education-for-children) over time.

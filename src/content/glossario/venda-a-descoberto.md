@@ -31,7 +31,7 @@ Venda a descoberto, também chamada de “short selling”, é quando você vend
 Quando você decide vender a descoberto, o processo se resume a três passos simples:
 
 - **Emprestar a ação**: a corretora localiza quem tem a ação e a disponibiliza para você vender.  
-- **Vender no mercado**: a ação é vendida ao preço atual, gerando [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) na sua conta.  
+- **Vender no mercado**: a ação é vendida ao preço atual, gerando [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena) na sua conta.  
 - **Recomprar (cover)**: se o preço cair, você compra a mesma quantidade de ação por menos, devolve ao credor e embolsa a diferença. Caso o preço suba, você terá que comprar a ação por um valor maior, gerando prejuízo.
 
 **Dica prática:** antes de abrir uma posição a descoberto, verifique se a corretora oferece margem suficiente – isso evita surpresas desagradáveis quando o mercado se mover contra você.

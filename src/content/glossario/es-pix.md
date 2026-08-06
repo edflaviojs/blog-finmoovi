@@ -45,6 +45,6 @@ PIX es el sistema de pagos instantáneos creado por el Banco Central en 2020. Pe
 4. Usa una clave aleatoria para desconocidos (no CPF)  
 5. Activa notificaciones de transacción  
 
-## PIX y control [financiero](/es/posts/es-pierdes-el-control-de-los-gastos-cuando-viajas-usando-difere)
+## PIX y control [financiero](/es/posts/es-pierdes-el-control-de-los-gastos-cuando-viajas-usando)
 
-PIX facilita el seguimiento de [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo-s) porque todas las transacciones quedan registradas en el extracto. Apps como [FinMoovi](/es/posts/es-5-alternativas-al-mobills-en-2026) categorizan automáticamente tus PIX para que sepas exactamente a dónde va tu dinero.
+PIX facilita el seguimiento de [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo) porque todas las transacciones quedan registradas en el extracto. Apps como [FinMoovi](/es/posts/es-5-alternativas-al-mobills-en-2026) categorizan automáticamente tus PIX para que sepas exactamente a dónde va tu dinero.

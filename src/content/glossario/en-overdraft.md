@@ -36,7 +36,7 @@ If you are $200 overdrawn for 30 days with interest rates of 12% per month:
 3. **Set up alerts** — warning when the balance is low  
 4. **If you need credit** — a personal [loan](/en/glossario/en-loan) has interest rates 5 times lower  
 
-## Cheaper [alternatives](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your-f)
+## Cheaper [alternatives](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your)
 
 | Type of credit | Monthly interest |
 |----------------|-------------------|

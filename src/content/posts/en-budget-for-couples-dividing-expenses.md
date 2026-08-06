@@ -57,10 +57,10 @@ Here are the steps to organize the [budget](/en/posts/en-how-to-create-personal-
 
 
 ## Managing Finances
-To keep finances in order, it's crucial to have a control system. This can include using electronic spreadsheets or [financial apps](/en/posts/en-you-also-forget-to-record-your-expenses). The [Banco Central do Brasil](https://www.bcb.gov.br) offers valuable information on [financial management](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your-f) and planning.
+To keep finances in order, it's crucial to have a control system. This can include using electronic spreadsheets or [financial apps](/en/posts/en-you-also-forget-to-record-your-expenses). The [Banco Central do Brasil](https://www.bcb.gov.br) offers valuable information on [financial management](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your) and planning.
 
 ## Start with 5 minutes a day
-To keep the budget under control, dedicate a few minutes each day to review expenses and update the budget. This can be done during breakfast or before bed. Remember that the key to success is consistency and communication between partners. Visit the [Receita Federal](https://www.gov.br/receitafederal) website for more information on [financial planning](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the-yea) and taxation.
+To keep the budget under control, dedicate a few minutes each day to review expenses and update the budget. This can be done during breakfast or before bed. Remember that the key to success is consistency and communication between partners. Visit the [Receita Federal](https://www.gov.br/receitafederal) website for more information on [financial planning](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the) and taxation.
 
 ![Gerenciando as Finanças](/images/posts/orcamento-para-casal-dividindo-despesas-4.webp)
 

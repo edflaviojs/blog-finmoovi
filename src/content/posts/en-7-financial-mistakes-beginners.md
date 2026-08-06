@@ -25,7 +25,7 @@ The #1 mistake: not knowing where your [money](/en/posts/en-30-day-rule-for-purc
 
 ## 2. No [Emergency Fund](/en/glossario/en-emergency-fund)
 
-Life happens. Without 3-6 months of [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the-yea) saved, any unexpected event becomes a financial crisis. Start with $1,000 as your first milestone.
+Life happens. Without 3-6 months of [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the) saved, any unexpected event becomes a financial crisis. Start with $1,000 as your first milestone.
 
 ## 3. Ignoring Small Expenses
 

@@ -30,7 +30,7 @@ La usura funciona de manera que el prestamista cobra una tasa de interés muy al
 
 Algunos ejemplos de cómo la usura puede funcionar en la práctica son:
 * Un préstamo personal de €900 a una tasa de interés del 30% anual, lo que significa que debes pagar €1,170 al final del año.
-* Un crédito de [tarjeta de crédito](/es/posts/es-tarjeta-de-credito-vs-tarjeta-de-debito-cual-vale-mas-la-pen) con una tasa de interés del 40% anual, lo que significa que debes pagar €252 por un gasto de €180.
+* Un crédito de [tarjeta de crédito](/es/posts/es-tarjeta-de-credito-vs-tarjeta-de-debito-cual-vale-mas-la) con una tasa de interés del 40% anual, lo que significa que debes pagar €252 por un gasto de €180.
 * Un préstamo hipotecario con una tasa de interés del 15% anual, lo que significa que debes pagar €2,700 por un préstamo de €1,800 en solo un año.
 
 ## Ventajas

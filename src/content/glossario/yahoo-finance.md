@@ -38,7 +38,7 @@ Tudo isso é atualizado a cada poucos segundos, permitindo que você tome decis�
 
 ## Vantagens
 
-Usar Yahoo Finance traz benefícios claros para quem quer organizar suas [finanças pessoais](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su):
+Usar Yahoo Finance traz benefícios claros para quem quer organizar suas [finanças pessoais](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar):
 
 ![Vantagens](/images/glossario/yahoo-finance-inline-3.webp)
 

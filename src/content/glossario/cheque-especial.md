@@ -33,15 +33,15 @@ Se você ficar R$ 1.000 negativos por 30 dias com juros de 12% ao mês:
 
 1. **Desative o cheque especial** — ligue para o banco e peça para remover
 2. **Mantenha uma reserva na conta** — pelo menos R$ 500 de colchão
-3. **Configure [alertas](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto-202)** — aviso quando saldo ficar baixo
+3. **Configure [alertas](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto)** — aviso quando saldo ficar baixo
 4. **Se precisar de crédito** — [empréstimo](/glossario/emprestimo) pessoal tem juros 5x menores
 
-## [Alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) mais baratas
+## [Alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar) mais baratas
 
 | Tipo de crédito | Juros mensais |
 |----------------|---------------|
 | Cheque especial | 8-15% |
-| [Cartão de crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) (rotativo) | 12-16% |
+| [Cartão de crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena) (rotativo) | 12-16% |
 | Empréstimo pessoal | 2-5% |
 | Empréstimo consignado | 1-2% |
 | Antecipação FGTS | 1-2% |

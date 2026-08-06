@@ -18,7 +18,7 @@ seo:
 ---
 
 ## Planeamiento Básico
-Cuando eres autónomo, no tienes un salario fijo todos los meses. Esto significa que tu [planeamiento financiero](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo-s) necesita ser más flexible y adaptable. Vamos a empezar con lo básico: registrar todos tus gastos y recibos. Esto puede hacerse con una aplicación de [finanzas personales](/es/posts/es-5-consejos-para-reorganizar-tus-finanzas-en-vacaciones), como el [FinMoovi](/es/posts/es-5-alternativas-al-mobills-en-2026), o incluso con un cuaderno. Lo importante es tener una visión clara de dónde está yendo tu [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado).
+Cuando eres autónomo, no tienes un salario fijo todos los meses. Esto significa que tu [planeamiento financiero](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo) necesita ser más flexible y adaptable. Vamos a empezar con lo básico: registrar todos tus gastos y recibos. Esto puede hacerse con una aplicación de [finanzas personales](/es/posts/es-5-consejos-para-reorganizar-tus-finanzas-en-vacaciones), como el [FinMoovi](/es/posts/es-5-alternativas-al-mobills-en-2026), o incluso con un cuaderno. Lo importante es tener una visión clara de dónde está yendo tu [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado).
 
 Por ejemplo, si eres un profesional autónomo que gana alrededor de **€900** por mes, pero tienes meses en que ganas **€1.440** y otros en que ganas solo **€540**, necesitas planificar tus gastos con base en el promedio de los últimos 6 meses. Además, es fundamental tener una reserva de emergencia para cubrir gastos inesperados.
 

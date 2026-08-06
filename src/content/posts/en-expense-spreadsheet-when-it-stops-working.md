@@ -26,7 +26,7 @@ Expense spreadsheets have several advantages, such as:
 - **Free**: Most expense spreadsheets are free, making them accessible to everyone.
 - **Customizable**: You can adapt the spreadsheet to fit your lifestyle and spending habits.
 
- This happens because keeping an expense spreadsheet up-to-date requires discipline and time. Additionally, it's easy to forget to record some [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the-yea) or not have access to the spreadsheet when needed.
+ This happens because keeping an expense spreadsheet up-to-date requires discipline and time. Additionally, it's easy to forget to record some [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the) or not have access to the spreadsheet when needed.
 
 ![Vantagens e Desvantagens das Planilhas de Gastos](/images/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar-2.webp)
 

@@ -23,7 +23,7 @@ Let's consider a practical example. Suppose you want to invest in an investment 
 Here are some advantages and disadvantages of Fractional Shares:
 | Advantage | Disadvantage |
 | --- | --- |
-| Allows investors with fewer financial resources to participate in [investments](/en/posts/en-private-pension-vs-investing-on-your-own-which-is-worth-it-i) | May have higher transaction costs |
+| Allows investors with fewer financial resources to participate in [investments](/en/posts/en-private-pension-vs-investing-on-your-own-which-is-worth-it) | May have higher transaction costs |
 | Offers flexibility to invest in different assets | May be more difficult to understand and manage |
 | Can be a more accessible way to invest in high-value assets | May involve risks of loss of value |
 

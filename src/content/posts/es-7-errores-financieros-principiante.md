@@ -17,7 +17,7 @@ seo:
   keywords: ["errores financieros", "finanzas para principiantes", "cómo ahorrar", "control financiero"]
 ---
 
-Empezar tu camino [financiero](/es/posts/es-pierdes-el-control-de-los-gastos-cuando-viajas-usando-difere) es emocionante, pero es fácil caer en trampas comunes. Aquí están los 7 errores que casi todo principiante comete — y cómo evitarlos.
+Empezar tu camino [financiero](/es/posts/es-pierdes-el-control-de-los-gastos-cuando-viajas-usando) es emocionante, pero es fácil caer en trampas comunes. Aquí están los 7 errores que casi todo principiante comete — y cómo evitarlos.
 
 ## 1. No Rastrear [Gastos](/es/posts/es-metodo-50-30-20-para-presupuesto)
 
@@ -25,7 +25,7 @@ El error #1: no saber a dónde va tu [dinero](/es/posts/es-ahorrando-en-la-cuent
 
 ## 2. Sin [Fondo de Emergencia](/es/glossario/es-fondo-de-emergencia)
 
-La vida pasa. Sin 3-6 meses de [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo-s) ahorrados, cualquier imprevisto se convierte en crisis financiera. Empieza con $1.000 como primera meta.
+La vida pasa. Sin 3-6 meses de [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo) ahorrados, cualquier imprevisto se convierte en crisis financiera. Empieza con $1.000 como primera meta.
 
 ## 3. Ignorar Gastos Pequeños
 

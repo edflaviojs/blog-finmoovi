@@ -28,7 +28,7 @@ Imagine que você vai receber um salário equivalente a “um aluguel” todo m�
 
 
 1. **Identifique os fluxos de caixa** – entradas (receitas) e saídas (despesas) ao longo do tempo.  
-2. **Escolha a taxa de desconto** – pode ser a taxa de juros do seu [cartão de crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) ou a rentabilidade de um [fundo de investimento](/glossario/fundo-de-investimento) de baixo risco.  
+2. **Escolha a taxa de desconto** – pode ser a taxa de juros do seu [cartão de crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena) ou a rentabilidade de um [fundo de investimento](/glossario/fundo-de-investimento) de baixo risco.  
 3. **Desconte cada fluxo** – aplique a fórmula : [Valor presente](/glossario/valor-presente) = Fluxo / (1 + taxa)ⁿ, onde n é o número de períodos até o fluxo acontecer.  
 4. **Some tudo** – se o total dos valores presentes for positivo, o investimento gera mais valor do que o custo de oportunidade; se for negativo, talvez seja melhor adiar ou buscar outra alternativa.
 
@@ -61,7 +61,7 @@ A teoria fica mais fácil quando a tecnologia faz o trabalho pesado. O FinMoovi 
 - **Planejamento mensal / metas** – estabeleça metas de economia e veja como elas impactam o valor presente dos seus fluxos.  
 - **Cartões de crédito / fatura** – sincronize as faturas e veja o custo real das parcelas, já descontado pela taxa de juros do cartão.  
 - **Modo compras** – crie listas de supermercado; o total aparece em tempo real, ajudando a decidir se vale a pena esperar por promoções.  
-- **Lembretes / [alertas](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto-202) de saldo** – receba notificações quando o saldo projetado ficar abaixo do necessário para cobrir os próximos fluxos.  
+- **Lembretes / [alertas](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto) de saldo** – receba notificações quando o saldo projetado ficar abaixo do necessário para cobrir os próximos fluxos.  
 - **Offline / PWA / sincronização** – mesmo sem internet, você registra tudo; ao reconectar, os dados são sincronizados em todos os dispositivos.
 
 Com esses recursos, o cálculo do FCD deixa de ser uma planilha complicada e passa a ser um painel visual que acompanha suas decisões em tempo real.

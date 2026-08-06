@@ -24,7 +24,7 @@ Profit margin is what's left over from each dollar that comes in. If a company b
 
 ### Operating Margin
 
-- (Revenue - Costs - Operating [Expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the-yea)) ÷ Revenue × 100
+- (Revenue - Costs - Operating [Expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the)) ÷ Revenue × 100
 - Shows efficiency of operation
 
 ### Net Margin

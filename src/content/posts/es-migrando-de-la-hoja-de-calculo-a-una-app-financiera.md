@@ -46,7 +46,7 @@ De acuerdo con investigaciones, el 70% de las personas que usan hojas de cálcul
 ## Ejemplos de Apps Financieras
 Existen muchas apps financieras disponibles en el mercado, cada una con sus propias características y [beneficios](/es/posts/es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026). Algunos ejemplos incluyen:
 * [FinMoovi](/es/posts/es-tambien-tienes-dificultad-para-organizar-tus-finanzas): una app financiera moderna que permite que usted gestione sus finanzas de forma eficaz y fácil.
-* [Mobills](/es/posts/es-5-alternativas-al-mobills-en-2026): una app financiera que permite que usted gestione sus cuentas y tarjetas de [crédito](/es/posts/es-tarjeta-de-credito-vs-tarjeta-de-debito-cual-vale-mas-la-pen) de forma centralizada.
+* [Mobills](/es/posts/es-5-alternativas-al-mobills-en-2026): una app financiera que permite que usted gestione sus cuentas y tarjetas de [crédito](/es/posts/es-tarjeta-de-credito-vs-tarjeta-de-debito-cual-vale-mas-la) de forma centralizada.
 * [Organizze](/es/posts/es-5-alternativas-a-organizze-en-2026-opciones-para-administrar): una app financiera que permite que usted gestione sus finanzas y cuentas de forma personalizada.
 
 ## Checklist: Hoja de Cálculo o App?

@@ -24,7 +24,7 @@ Personal [budget](/en/posts/en-how-to-create-personal-budget) is a plan that sho
 - Investment returns
 - Others (rent, pension)
 
-### Step 2: List all [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the-yea)
+### Step 2: List all [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the)
 
 **Fixed (don't change):**
 - Rent/mortgage

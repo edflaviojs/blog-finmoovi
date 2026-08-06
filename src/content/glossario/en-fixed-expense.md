@@ -84,7 +84,7 @@ Beyond the smart capture, you can also:
 
 FinMoovi isn’t just about capturing fixed expenses; it offers a suite of complementary tools that reinforce good habits:
 
-- **Cash‑flow [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end-o)** give you a visual timeline of income versus outgoings, highlighting months where fixed costs dominate.  
+- **Cash‑flow [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end)** give you a visual timeline of income versus outgoings, highlighting months where fixed costs dominate.  
 - **Goal tracking** lets you set targets like “save for a vacation” and automatically adjusts the amount you can set aside after fixed expenses are deducted.  
 - **[Credit](/en/glossario/en-credit)‑card integration** pulls in statements, matches them with your captured receipts, and flags any unexpected recurring charges.  
 - **Shopping mode** lets you build a list, see a real‑time total, and compare it against the cash you have left after fixed costs.  
