@@ -1,8 +1,13 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-08-05T07:36:28.748Z
-**Posts:** 249 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 36
+**Gerado em:** 2026-08-06T07:36:57.138Z
+**Posts:** 255 · limpos: 1 · bloqueados p/ revisao: 0 · com flags: 36
 
+## ✂️ Cortes aplicados (citacao/estatistica sem fonte confiavel)
+
+**es-tambien-te-quedas-sin-saber-a-donde-fue-tu-dinero-al-final-d.md**
+- link removido: https://www.example.com
+- link removido: https://www.example.com
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
 
