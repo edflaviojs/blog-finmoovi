@@ -2,30 +2,59 @@
 term: "Come-Cotas"
 image: "/images/glossario/en-come-cotas.webp"
 imageAlt: "Coins, piggy bank, and plant on a platform with an upward arrow."
-definition: "Fractional Shares are a form of investment where the investor buys a portion of an asset, usually an investment fund, and pays only a fraction of the total value of the asset. This allows investors with fewer financial resources to participate in investments that would normally be out of their reach."
+definition: "Come-cotas is the advance collection of income tax on certain Brazilian investment funds, charged twice a year — on the last business day of May and November. Instead of taking cash, the fund cancels part of your quotas, which is where the nickname comes from."
 category: "impostos"
 locale: "en"
 translationKey: "glossario-come-cotas"
-relatedTerms: ["Fundo de Investimento","Investimento Fracionário","Custo de Transação"]
+relatedTerms: ["Income Tax","Investment Fund","Fixed Income"]
 publishedAt: 2026-06-02
 ---
 
-## What are Fractional Shares?
-Fractional Shares are an [investment](/en/posts/en-building-a-diversified-portfolio-with-r-500) option that allows investors to buy a fraction of an asset, rather than buying the entire asset. This is especially useful for investors who don't have a lot of [money](/en/posts/en-30-day-rule-for-purchases) to invest, as it allows them to participate in [investments](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026) that would normally be beyond their means.
+## What come-cotas is
 
-## How do Fractional Shares work?
-Imagine you want to invest in an [investment](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide) fund that costs $4,700 USD (approximately R$ 10,000,00 at the current exchange rate, but using USD for English). However, you only have $470 USD (approximately R$ 1,000,00) to invest. With Fractional Shares, you can buy 1/10 of the investment fund, which is $470 USD. This means you'll be entitled to 1/10 of the fund's gains or losses.
+Come-cotas — literally "quota eater" — is the nickname for the **advance** collection of [income tax](/en/glossario/en-income-tax) on certain Brazilian [investment funds](/en/glossario/en-investment-fund). Twice a year, on the last business day of **May** and **November**, the tax authority charges tax on the gains accumulated so far, even if you have not withdrawn anything.
 
-## Practical Examples
-Let's consider a practical example. Suppose you want to invest in an investment fund that costs $2,350 USD (approximately R$ 5,000,00). You can buy 1/5 of the investment fund, which is $470 USD. If the investment fund yields 10% per year, you'll receive $94 USD in [dividends](/en/glossario/en-dividends) (10% of $940 USD, which is the value of your share in the investment fund).
+The name comes from how it is charged: instead of debiting cash from your account, the fund **cancels some of your quotas** to pay the tax. The value per quota stays the same; you simply end up holding fewer quotas.
 
-## Advantages and Disadvantages
-Here are some advantages and disadvantages of Fractional Shares:
-| Advantage | Disadvantage |
+## Which funds it applies to
+
+Not all of them. This is the part that confuses people most:
+
+| Has come-cotas | Has no come-cotas |
 | --- | --- |
-| Allows investors with fewer financial resources to participate in [investments](/en/posts/en-private-pension-vs-investing-on-your-own-which-is-worth-it) | May have higher transaction costs |
-| Offers flexibility to invest in different assets | May be more difficult to understand and manage |
-| Can be a more accessible way to invest in high-value assets | May involve risks of loss of value |
+| Open-ended [fixed income](/en/glossario/en-fixed-income) funds | Equity funds |
+| Open-ended multi-asset funds | ETFs |
+| | Real estate funds |
+| | [Private pension](/en/glossario/en-private-pension) plans (PGBL and VGBL) |
 
-## Conclusion
-Fractional Shares are an investment option that can be useful for investors who don't have a lot of money to invest. However, it's essential to understand how they work and what the advantages and disadvantages are before investing. Additionally, it's crucial to do thorough research and consider your financial goals and risk tolerance before making any investment decision.
+In the funds with no come-cotas, tax only appears when you redeem.
+
+## How much is charged
+
+The come-cotas rate is always the **lowest** rate on that fund's tax table:
+
+- **15%** for long-term funds (portfolio with an average maturity above 365 days)
+- **20%** for short-term funds (average maturity up to 365 days)
+
+That does not mean the bill is settled. When you redeem, the tax authority works out the correct rate for how long the money stayed invested and charges only the **difference**. Whatever was already paid through come-cotas is credited back.
+
+## A practical example
+
+You hold $2,000 in a long-term fixed income fund. Over six months it earns $80.
+
+In November, come-cotas charges 15% on that $80 = **$12**. The fund cancels quotas of yours worth $12. Your balance goes from $2,080 to $2,068 — and you still have not touched the money.
+
+## Why it matters
+
+The real cost is not the $12. It is what those $12 **would have earned** over the following years, because they left early. [Compound interest](/en/glossario/en-compound-interest) starts working on a smaller base, and the gap widens with time.
+
+That is why, for a goal many years away, it is worth comparing a fund with come-cotas against options that only charge tax at the end.
+
+## What to do with this
+
+- **Do not panic** if the balance drops in May or November without any withdrawal — it was probably come-cotas.
+- **Check the statement** in those months: the number of quotas falls and the value per quota does not change.
+- **For long horizons**, factor in whether tax is charged early or only at redemption.
+- **Do not confuse it** with the management fee: that one is charged by the fund manager, not by the tax authority.
+
+> This entry explains a **Brazilian** tax rule, kept here because the term appears in Portuguese-language fund statements. Tax rules change and there are exceptions by fund type — for a real decision, check your fund's tax statement or an accountant.
