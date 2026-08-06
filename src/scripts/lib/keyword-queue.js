@@ -64,27 +64,69 @@ function coveredByGlossario(keyword) {
 //   `mercado livre`   mataria "o que é mercado livre" e "mercado livre de energia"
 //   `b3` `spc` `serasa`  matariam "o que é a b3", "consultar o spc",
 //                    "tirar nome do spc e serasa" — temas financeiros legítimos
-//   `nubank`         já é verbete PUBLICADO (glossario/nubank.md, scope br-only)
 //   `caixa` sozinha  é palavra comum ("fluxo de caixa"); ver CAIXA_BANCO_RE
 //   `inss` `fgts` `receita federal`  a tabela de tradução já os adapta
 //                    ("severance guarantee fund", "tax authority")
+//   `sardinha`       ⚠️ NÃO ACRESCENTAR. Tem DOIS homónimos: o peixe e, na gíria
+//                    de bolsa, o pequeno investidor — que é conceito legítimo.
+//                    As keywords que incomodavam ("calculadora/simulador de
+//                    investimento sardinha", de um influenciador) foram
+//                    dispensadas à mão na fila. Bloquear a palavra mataria o
+//                    conceito. Medido 06/08: 0 ocorrências no corpus.
 // REGRA PARA ACRESCENTAR: só nome de ≥2 palavras, ou palavra única sem homónimo
 // em português. Testar contra o corpus antes — foi assim que os 6 acima caíram.
+//
+// ── MUDANÇA DE POLÍTICA, 06/08/2026 (decisão do dono) ────────────────────────
+// `nubank` estava DE FORA de propósito, com a justificação "já é verbete
+// publicado (glossario/nubank.md, scope br-only)". Passa a entrar. O motivo:
+// esta lista só é lida na ENTRADA da fila, logo bloquear não mexe em conteúdo já
+// publicado — o verbete existente fica. O que estava a acontecer era outra
+// coisa: keywords como "como funciona cartao virtual nubank" e "como funciona
+// construir limite no nubank" iam gerar páginas NOVAS sobre funcionalidades de
+// um banco, o que é diferente de ter um verbete a definir o que é o Nubank.
+// Medido antes de mudar: os posts de comparação que citam concorrentes de
+// propósito ("Nubank vs Inter", "5 Alternativas ao Mobills") vêm de listas
+// curadas DENTRO de gerar-post-comparacao.js e gerar-post-bofu.js e NÃO passam
+// por aqui — logo a estratégia de comparação não é afetada.
 const LOCAL_BRAND_RE = new RegExp('\\b(' + [
   // bancos, fintechs e financeiras
   'itau', 'bradesco', 'santander', 'banco do brasil', 'bancodobrasil', 'unibanco',
   'caixa economica', 'caixa tem', 'sicoob', 'sicredi', 'banrisul', 'btg pactual',
-  'xp investimentos', 'nu invest', 'banco pan', 'banco bmg', 'daycoval', 'agibank',
-  'crefisa', 'facta', 'will bank', 'c6 bank', 'c6bank',
+  'xp investimentos', 'nu invest', 'nubank', 'banco pan', 'banco bmg', 'daycoval',
+  'agibank', 'crefisa', 'facta', 'will bank', 'c6 bank', 'c6bank',
   // meios de pagamento
   'picpay', 'pagbank', 'pagseguro', 'mercado pago', 'cielo',
   // retalho e marketplaces
   'casas bahia', 'casasbahia', 'magazine luiza', 'magalu', 'lojas americanas',
   'ponto frio', 'riachuelo', 'renner', 'pernambucanas', 'mercadolivre', 'shopee',
+  // 'atacadao': tambem e substantivo comum no Brasil ("ir ao atacadao"), mas nos
+  // dois sentidos e vocabulario de um pais so — entra pelo mesmo motivo da lista.
+  'atacadao',
   // programas e órgãos sem equivalente universal
   'fies', 'prouni', 'sisu', 'bolsa familia', 'auxilio brasil',
   'minha casa minha vida', 'desenrola brasil', 'pronampe', 'cadastro unico',
   'meu inss', 'cohab', 'sebrae',
+  // software de gestão brasileiro
+  'conta azul', 'contaazul',
+].join('|') + ')\\b', 'i');
+
+// Produto de TERCEIRO que não é brasileiro — logo não cai na lista acima, cuja
+// razão de ser é "não universaliza". Aqui a razão é outra: é a app/plataforma de
+// outra empresa, e um glossário de finanças não deve ganhar verbetes com o nome
+// do produto alheio. Nasceu em 06/08/2026, quando se viu que `webull` e
+// `yahoo finance` estavam ESCRITOS À MÃO na rotação A-Z do glossário (letras W e
+// Y) e por isso já tinham gerado 3 páginas cada.
+//
+// NÃO afeta os posts de comparação: "5 Alternativas ao Mobills", "FinMoovi vs
+// Mobills" e "Nubank vs Inter" são temas CURADOS dentro de gerar-post-bofu.js e
+// gerar-post-comparacao.js, que não leem a fila. Citar concorrente de propósito
+// continua a poder; o que deixa de poder é uma página NASCER de um nome alheio.
+// Mantida CURTA de propósito: só o que foi pedido e o que estava provado na
+// rotação A-Z. Acrescentar corretora/exchange (binance, coinbase, robinhood…)
+// é decisão editorial — bloquearia também conteúdo legítimo sobre cripto — e
+// fica para quem decidir isso, com o corpus medido primeiro.
+const PRODUTO_TERCEIRO_RE = new RegExp('\\b(' + [
+  'splitwise', 'webull', 'yahoo finance', 'yahoofinance',
 ].join('|') + ')\\b', 'i');
 
 // "caixa" sozinha NÃO pode entrar na lista acima: em português é palavra comum
@@ -94,12 +136,25 @@ const LOCAL_BRAND_RE = new RegExp('\\b(' + [
 // conceito). NÃO inclui "conta caixa" — em contabilidade é a conta de caixa.
 const CAIXA_BANCO_RE = /\b(?:financiamento|emprestimo|consorcio|saldo devedor|amortizacao|fatura|cartao|habitacao|minha casa)\s+(?:da\s+)?caixa\b/i;
 
-/** True se a keyword nomeia empresa/programa de um país só (não universaliza). */
-export function namesLocalBrand(keyword) {
+/**
+ * Diz POR QUE a keyword não deve virar página, ou null se pode.
+ * Devolver o motivo (em vez de só true/false) é o que permite escrever no campo
+ * `reason` da fila qual das duas políticas a barrou — dá para auditar depois.
+ *
+ * @returns {'nome-proprio-local'|'produto-de-terceiro'|null}
+ */
+export function motivoDeMarca(keyword) {
   // Colapsa separadores para apanhar "casas-bahia", "c6-bank", "fies:", "(sebrae)".
   const n = normalizeKeyword(keyword).replace(/[^a-z0-9]+/g, ' ').trim();
-  if (!n) return false;
-  return LOCAL_BRAND_RE.test(n) || CAIXA_BANCO_RE.test(n);
+  if (!n) return null;
+  if (LOCAL_BRAND_RE.test(n) || CAIXA_BANCO_RE.test(n)) return 'nome-proprio-local';
+  if (PRODUTO_TERCEIRO_RE.test(n)) return 'produto-de-terceiro';
+  return null;
+}
+
+/** True se a keyword nomeia marca de terceiro (local ou estrangeira). */
+export function namesLocalBrand(keyword) {
+  return motivoDeMarca(keyword) !== null;
 }
 
 /** Categorias aceitas nas entries (qualquer outra vira null = "qualquer gerador").
@@ -265,11 +320,15 @@ export function takeKeyword({ categories = [], exactCategory = false } = {}, fil
     for (const entry of candidates) {
       // Antes do isThemeCovered de propósito: não lê o disco e o descarte vale
       // independentemente de o tema estar coberto ou não.
-      if (namesLocalBrand(entry.keyword)) {
+      const motivoMarca = motivoDeMarca(entry.keyword);
+      if (motivoMarca) {
         entry.status = 'skipped';
-        entry.reason = 'nome-proprio-local';
+        entry.reason = motivoMarca;
         dirty = true;
-        console.log(`ℹ️ keyword-queue: "${entry.keyword}" nomeia empresa/programa de um país só — marcada como skipped (não universaliza).`);
+        const porque = motivoMarca === 'nome-proprio-local'
+          ? 'nomeia empresa/programa de um país só (não universaliza)'
+          : 'nomeia app/plataforma de terceiro (não vira verbete nosso)';
+        console.log(`ℹ️ keyword-queue: "${entry.keyword}" ${porque} — marcada como skipped.`);
         continue;
       }
       const canibal = isThemeCovered(entry.keyword);

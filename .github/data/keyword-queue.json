@@ -1012,9 +1012,11 @@
       "category": "glossario",
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "skipped",
       "addedAt": "2026-08-04T15:06:04.007Z",
-      "finmooviHook": "enviado via /status 04/08"
+      "finmooviHook": "enviado via /status 04/08",
+      "reason": "produto-de-terceiro",
+      "skippedRef": "calculadora de influenciador; \"sardinha\" NAO entra na lista de marcas porque e tambem o pequeno investidor (conceito legitimo)"
     },
     {
       "keyword": "conceito de juros",
@@ -1269,9 +1271,11 @@
       "category": "glossario",
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "skipped",
       "addedAt": "2026-08-04T15:06:04.009Z",
-      "finmooviHook": "enviado via /status 04/08"
+      "finmooviHook": "enviado via /status 04/08",
+      "reason": "produto-de-terceiro",
+      "skippedRef": "calculadora de influenciador; \"sardinha\" NAO entra na lista de marcas porque e tambem o pequeno investidor (conceito legitimo)"
     },
     {
       "keyword": "taxa de investimento",
