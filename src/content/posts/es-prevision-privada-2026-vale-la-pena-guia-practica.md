@@ -69,7 +69,7 @@ Supongamos que tienes tres perfiles de aporte mensual: € 90, € 180 y
 
 Estos números asumen que **no haces ningún rescate** antes de la jubilación y que la comisión de administración se mantiene constante. Si la comisión sube al 2,5 % anual, el saldo final cae alrededor de un 8 % – sigue siendo una cifra significativa, pero muestra cómo las comisiones impactan a largo plazo.
 
-> **Consejo:** Usa la calculadora de previsión del [Banco Central](/es/glossario/es-banco-central) para probar diferentes escenarios de comisión de administración y aportes.  
+> **Consejo:** Usa la calculadora de previsión del Banco Central para probar diferentes escenarios de comisión de administración y aportes.  
 
 ## Comparación con alternativas de inversión
 
@@ -98,7 +98,7 @@ La principal ventaja de la previsión es el **beneficio fiscal** (en el caso del
 ## Próximos pasos
 
 1. **Enumera tus objetivos** – Define cuánto deseas acumular para la jubilación y si necesitas renta mensual o un pago único.  
-2. **Haz simulaciones** – Usa la calculadora de [bonos del gobierno](/es/glossario/es-bonos-gobierno) o la de tu banco para comparar PGBL/VGBL con certificados de depósito y bonos del gobierno.  
+2. **Haz simulaciones** – Usa la calculadora de bonos del gobierno o la de tu banco para comparar PGBL/VGBL con certificados de depósito y bonos del gobierno.  
 3. **Chequea las comisiones** – Pide a tu corredor o gerente el desglose de comisión de administración y performance.  
 4. **Diseña un plan de aportes** – Decide un monto mensual que quepa en tu presupuesto (p.ej., € 90, € 180 o € 900) y ajústalo si es necesario.  
 5. **Haz seguimiento periódico** – Revisa tu plan cada 12 meses, verificando si la rentabilidad está alineada con la meta y si las comisiones siguen siendo competitivas.  
