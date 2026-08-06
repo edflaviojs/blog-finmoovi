@@ -1,13 +1,24 @@
 /**
  * fix-i18n-content-batch.js — Daily batch content correction for i18n posts.
  *
- * Reads audit-content-results.json, picks the next BATCH_SIZE files by severity,
- * calls the LLM to re-adapt their body (fix R$, BR institutions, geo refs),
- * and writes the corrected content back. Tracks progress in fix-i18n-progress.json.
+ * Reads audit-content-results.json, picks the next BATCH_SIZE files, calls the
+ * LLM to re-adapt their body (fix R$, BR institutions, brands, geo refs), and
+ * writes the corrected content back.
+ *
+ * A fila vem de src/scripts/lib/i18n-queue.js e a regra é: entra quem ainda tem
+ * defeito E ainda tem tentativas por gastar. Depois de escrever, o ficheiro é
+ * RE-MEDIDO com o mesmo detector da auditoria — é isso que distingue este robô
+ * do que existia até 06/08/2026, que marcava "feito" sem nunca conferir.
+ *
+ * O workflow regenera audit-content-results.json ANTES desta corrida. Sem isso a
+ * fila é montada contra uma foto velha: em 06/08/2026 a auditoria tinha um único
+ * commit em toda a história, 52 entradas mortas, e 96 ficheiros do disco que nem
+ * sequer lá estavam.
  *
  * Env vars:
- *   BATCH_SIZE  — files per run (default 20)
- *   DRY_RUN     — 'true' to skip writing (default 'false')
+ *   BATCH_SIZE      — files per run (default 20)
+ *   MAX_TENTATIVAS  — passagens pelo mesmo ficheiro antes de pedir humano (default 3)
+ *   DRY_RUN         — 'true' to skip writing (default 'false')
  *   GROQ_API_KEY / CEREBRAS_API_KEY — LLM credentials (at least one required)
  */
 
@@ -17,12 +28,22 @@ import { fileURLToPath } from 'url';
 import { generateText } from '../src/scripts/apis/kie-ai.js';
 import { getTranslationInstructions } from '../src/scripts/lib/translation-prompt.js';
 import { fixInternalLinks, carregarDestinos } from '../src/scripts/lib/link-guard.js';
+import {
+  montarFila,
+  lerProgresso,
+  serializarProgresso,
+  registarTentativa,
+} from '../src/scripts/lib/i18n-queue.js';
+import { analisarConteudo } from './audit-content-i18n.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
 
 const BATCH_SIZE = parseInt(process.env.BATCH_SIZE || '20', 10);
 const DRY_RUN = process.env.DRY_RUN === 'true';
+// Passagens pelo mesmo ficheiro antes de desistir e pedir humano. Ver
+// src/scripts/lib/i18n-queue.js para o porquê de haver um tecto.
+const MAX_TENTATIVAS = parseInt(process.env.MAX_TENTATIVAS || '3', 10);
 
 const AUDIT_FILE = join(__dirname, 'audit-content-results.json');
 const PROGRESS_FILE = join(__dirname, 'fix-i18n-progress.json');
@@ -133,27 +154,48 @@ async function main() {
   }
   const auditResults = JSON.parse(readFileSync(AUDIT_FILE, 'utf-8'));
 
-  // Load progress tracker
-  const progress = existsSync(PROGRESS_FILE)
-    ? JSON.parse(readFileSync(PROGRESS_FILE, 'utf-8'))
-    : [];
-  const progressSet = new Set(progress);
+  // Load progress tracker (aceita o formato antigo — lista de nomes — e o novo)
+  const progresso = lerProgresso(
+    existsSync(PROGRESS_FILE) ? JSON.parse(readFileSync(PROGRESS_FILE, 'utf-8')) : []
+  );
 
-  // Filter to files that need fixing and haven't been fixed yet
-  const pending = auditResults
-    .filter((r) => r.severity > 0 && !progressSet.has(r.file))
-    .sort((a, b) => b.severity - a.severity);
+  const caminhoDe = (entry) =>
+    join(ROOT, entry.dir === 'posts' ? 'src/content/posts' : 'src/content/glossario', entry.file);
 
-  const batch = pending.slice(0, BATCH_SIZE);
+  // A fila deixou de ser "quem ainda não foi processado" e passou a ser "quem
+  // ainda tem defeito e ainda tem tentativas". Ver src/scripts/lib/i18n-queue.js.
+  const { fila, desistidos, mortos } = montarFila({
+    auditoria: auditResults,
+    progresso,
+    maxTentativas: MAX_TENTATIVAS,
+    existe: (entry) => existsSync(caminhoDe(entry)),
+  });
+
+  const batch = fila.slice(0, BATCH_SIZE);
 
   console.log(`=== Fix i18n Content Batch ===`);
-  console.log(`Pending: ${pending.length} files`);
-  console.log(`Batch:   ${batch.length} files (severity order)`);
+  console.log(`Pending: ${fila.length} files`);
+  console.log(`Batch:   ${batch.length} files (menos tentativas primeiro, depois severidade)`);
   console.log(`DRY RUN: ${DRY_RUN}`);
+  console.log(`Max tentativas por ficheiro: ${MAX_TENTATIVAS}`);
+  if (mortos.length > 0) {
+    console.log(`Entradas mortas ignoradas (ficheiro não existe): ${mortos.length}`);
+  }
   console.log('');
 
+  // Em voz alta, nunca em silêncio: estes esgotaram as tentativas e a IA não os
+  // resolveu. Ficam fora da fila para não queimarem um lugar do lote todos os
+  // dias, mas aparecem aqui em TODAS as corridas até alguém lhes tocar.
+  if (desistidos.length > 0) {
+    console.log(`⚠️  PRECISAM DE HUMANO — ${desistidos.length} ficheiro(s) com ${MAX_TENTATIVAS} tentativas gastas e defeito por resolver:`);
+    for (const d of desistidos) {
+      console.log(`     severidade ${d.severity}  ${d.dir}/${d.file}`);
+    }
+    console.log('');
+  }
+
   if (batch.length === 0) {
-    console.log('Nothing to fix — all files have been processed.');
+    console.log('Nothing to fix — nenhum ficheiro com defeito e tentativas por gastar.');
     return;
   }
 
@@ -161,6 +203,16 @@ async function main() {
   let errors = 0;
   let skipped = 0;
   let linksDesfeitos = 0;
+  let naoBaixou = 0;
+
+  /**
+   * Grava o progresso em disco. Chamado a cada ficheiro para uma corrida
+   * interrompida não perder a contagem de tentativas.
+   */
+  const gravarProgresso = () => {
+    if (DRY_RUN) return;
+    writeFileSync(PROGRESS_FILE, JSON.stringify(serializarProgresso(progresso), null, 2), 'utf-8');
+  };
 
   // Destinos reais de posts/glossario, lidos UMA vez: este script só altera
   // ficheiros existentes, nunca cria, logo a lista não muda durante a corrida.
@@ -174,17 +226,12 @@ async function main() {
     const filePath = join(ROOT, dir, entry.file);
 
     if (!existsSync(filePath)) {
-      // ENTRADA MORTA. O audit está congelado (audit-content-results.json tem 1 só
-      // commit e nenhum workflow o regenera), logo ficheiros renomeados/removidos
-      // desde então continuam na fila — e, por serem severidade 3, no TOPO dela.
-      // Medido em 30/07/2026: 22 entradas mortas, e 10 dos 20 lugares do lote diário
-      // eram queimados nelas TODOS OS DIAS. Marcar como processada liberta o lugar.
-      console.log(`  [SKIP] ${entry.file} — não existe em disco; marcada como processada para sair da fila`);
-      if (!DRY_RUN && !progressSet.has(entry.file)) {
-        progress.push(entry.file);
-        progressSet.add(entry.file);
-        writeFileSync(PROGRESS_FILE, JSON.stringify(progress, null, 2), 'utf-8');
-      }
+      // Guarda defensiva. montarFila() já retira as entradas mortas, e desde
+      // 06/08/2026 o workflow regenera a auditoria antes de cada corrida, por
+      // isso isto praticamente não dispara. Fica porque em 30/07/2026, com a
+      // auditoria congelada, 10 dos 20 lugares do lote eram queimados em
+      // ficheiros que já não existiam — TODOS OS DIAS.
+      console.log(`  [SKIP] ${entry.file} — não existe em disco`);
       skipped++;
       continue;
     }
@@ -195,7 +242,11 @@ async function main() {
 
     const parts = splitContent(content);
     if (!parts) {
+      // Conta tentativa: o frontmatter está partido, repetir amanhã dá o mesmo.
+      // Ao fim de MAX_TENTATIVAS entra na lista "precisa de humano".
       console.log(`  [SKIP] ${entry.file} — could not parse frontmatter`);
+      registarTentativa(progresso, entry.file, entry.severity);
+      gravarProgresso();
       errors++;
       continue;
     }
@@ -252,8 +303,15 @@ ${body}`;
       const fixedTitle = extractSection(response, 'TITULO');
       const fixedMeta = extractSection(response, 'META');
 
+      // As três recusas abaixo (resposta sem CONTEUDO, corpo curto demais, campo
+      // contaminado) contam tentativa. O ficheiro NÃO é escrito e volta à fila,
+      // como antes — a diferença é que agora a repetição é limitada. Sem tecto,
+      // um ficheiro que o modelo devolve sempre mal queima um lugar do lote
+      // todos os dias, para sempre, e ninguém fica a saber.
       if (!fixedBody) {
         console.log(`  [ERROR] ${entry.file} — could not parse LLM response (no CONTEUDO section)`);
+        registarTentativa(progresso, entry.file, entry.severity);
+        gravarProgresso();
         errors++;
         continue;
       }
@@ -261,6 +319,8 @@ ${body}`;
       // Safety: reject suspiciously short bodies (likely LLM failure)
       if (fixedBody.length < 100) {
         console.log(`  [ERROR] ${entry.file} — LLM returned body too short (${fixedBody.length} chars), skipping`);
+        registarTentativa(progresso, entry.file, entry.severity);
+        gravarProgresso();
         errors++;
         continue;
       }
@@ -288,18 +348,22 @@ ${body}`;
       const willWriteTitle = Boolean(fixedTitle && needsAdaptation(getFmField(frontmatter, 'title')));
       const willWriteMeta = Boolean(fixedMeta && needsAdaptation(getFmField(frontmatter, 'description')));
 
-      // Guarda de contaminação. Rejeita o FICHEIRO INTEIRO, não só o campo: escrever
-      // o corpo e marcar progresso (mais abaixo) é a MESMA operação, portanto rejeitar
-      // apenas o campo gravaria o ficheiro como "processado" com o título velho — e o
-      // filtro da fila exclui para sempre o que está em progresso, tornando-o
-      // inalcançável. Não escrevendo nada, o ficheiro volta à fila e é retentado.
+      // Guarda de contaminação. Rejeita o FICHEIRO INTEIRO, não só o campo: uma
+      // resposta que contamina o título não merece confiança no corpo tão-pouco,
+      // e escrever metade deixaria a página num estado que ninguém pediu.
+      // Não escrevendo nada, o ficheiro volta à fila e é retentado — até
+      // MAX_TENTATIVAS, e depois aparece na lista "precisa de humano".
       if (willWriteTitle && !fieldLooksClean(fixedTitle, 120)) {
         console.log(`  [ERROR] ${entry.file} — título devolvido contaminado/inválido; ficheiro NÃO alterado, volta à fila`);
+        registarTentativa(progresso, entry.file, entry.severity);
+        gravarProgresso();
         errors++;
         continue;
       }
       if (willWriteMeta && !fieldLooksClean(fixedMeta, 200)) {
         console.log(`  [ERROR] ${entry.file} — descrição devolvida contaminada/inválida; ficheiro NÃO alterado, volta à fila`);
+        registarTentativa(progresso, entry.file, entry.severity);
+        gravarProgresso();
         errors++;
         continue;
       }
@@ -329,15 +393,35 @@ ${body}`;
 
       const newContent = newFrontmatter + '\n\n' + bodySeguro.trim() + '\n';
 
+      // ── O CONSERTO DE 06/08/2026 ──
+      // Conferir o RESULTADO em vez de marcar "feito" e nunca mais olhar. Antes,
+      // o robô escrevia e dava o ficheiro por arrumado; medido nesse dia, 110
+      // ficheiros marcados como feitos continuavam defeituosos e nenhum deles
+      // podia voltar à fila. A medição corre com o MESMO detector da auditoria,
+      // é local e não gasta chamada à IA — o único custo é ler o texto que já
+      // temos em memória.
+      const depois = analisarConteudo(entry.file, newContent, entry.dir);
+
       if (!DRY_RUN) {
         writeFileSync(filePath, newContent, 'utf-8');
-        progress.push(entry.file);
-        // Flush progress after each file to avoid re-processing on crash
-        writeFileSync(PROGRESS_FILE, JSON.stringify(progress, null, 2), 'utf-8');
       }
+      // A tentativa é registada mesmo em DRY_RUN só na memória desta corrida:
+      // gravarProgresso() não escreve nada quando DRY_RUN está ligado.
+      const registo = registarTentativa(progresso, entry.file, depois.severity);
+      gravarProgresso();
 
-      fixed++;
-      console.log(`  [${DRY_RUN ? 'DRY' : 'FIXED'}] ${entry.file}`);
+      const restam = Math.max(0, MAX_TENTATIVAS - registo.tentativas);
+
+      if (depois.severity === 0) {
+        fixed++;
+        console.log(`  [${DRY_RUN ? 'DRY' : 'FIXED'}] ${entry.file} — severidade ${entry.severity} → 0`);
+      } else if (depois.severity < entry.severity) {
+        fixed++;
+        console.log(`  [${DRY_RUN ? 'DRY' : 'FIXED'}] ${entry.file} — severidade ${entry.severity} → ${depois.severity}; volta à fila (restam ${restam})`);
+      } else {
+        naoBaixou++;
+        console.log(`  [PARCIAL] ${entry.file} — severidade continua ${depois.severity}; tentativa gasta (restam ${restam})`);
+      }
 
       // Rate limit: 60 seconds between API calls (safe margin for Groq)
       if (i < batch.length - 1) {
@@ -345,7 +429,10 @@ ${body}`;
         await sleep(60000);
       }
     } catch (err) {
-      console.error(`  [ERROR] ${entry.file}: ${err.message}`);
+      // Falha de rede/quota NÃO conta tentativa: o defeito não é do ficheiro, e
+      // gastar tentativas num dia em que a IA está em baixo mandaria ficheiros
+      // bons para a lista "precisa de humano" sem nunca terem sido tentados.
+      console.error(`  [ERROR] ${entry.file}: ${err.message} (falha da API — não conta tentativa)`);
       errors++;
       // Wait longer on error (possible rate limit)
       if (i < batch.length - 1) {
@@ -354,18 +441,17 @@ ${body}`;
     }
   }
 
-  // Save progress
-  if (!DRY_RUN) {
-    writeFileSync(PROGRESS_FILE, JSON.stringify(progress, null, 2), 'utf-8');
-  }
+  gravarProgresso();
 
   console.log('');
   console.log(`=== Done ===`);
-  console.log(`Fixed:     ${fixed}`);
-  console.log(`Skipped:   ${skipped} (entradas mortas, retiradas da fila)`);
+  console.log(`Resolvidos/melhorados: ${fixed}`);
+  console.log(`Sem melhoria (tentativa gasta): ${naoBaixou}`);
+  console.log(`Skipped:   ${skipped} (ficheiro não existe)`);
   console.log(`Errors:    ${errors}`);
   console.log(`Links inventados desfeitos: ${linksDesfeitos}`);
-  console.log(`Remaining: ${pending.length - fixed - skipped}`);
+  console.log(`Precisam de humano (${MAX_TENTATIVAS} tentativas gastas): ${desistidos.length}`);
+  console.log(`Remaining: ${Math.max(0, fila.length - batch.length)} na fila para as próximas corridas`);
 }
 
 // ─────────────────────────────────────────────────────────────────────────────

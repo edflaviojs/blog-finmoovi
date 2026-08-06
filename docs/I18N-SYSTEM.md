@@ -277,7 +277,7 @@ O Cloudflare Pages processa automaticamente o ficheiro `_redirects` no deploy. N
 
 ---
 
-## 10-A. 🔴 A adaptação internacional em lote — DEFEITO ABERTO (06/08/2026)
+## 10-A. A adaptação internacional em lote — CONSERTADO (06/08/2026)
 
 O `fix-i18n-content-daily.yml` corre de segunda a sexta, às 8h30 UTC, e manda
 `scripts/fix-i18n-content-batch.js` re-adaptar até 20 ficheiros por corrida
@@ -287,52 +287,102 @@ referências geográficas). A fila sai de dois ficheiros:
 | Ficheiro | Papel |
 |---|---|
 | `scripts/audit-content-results.json` | auditoria: `severity` por ficheiro (0 = limpo) |
-| `scripts/fix-i18n-progress.json` | lista dos ficheiros JÁ processados |
+| `scripts/fix-i18n-progress.json` | tentativas gastas por ficheiro |
 
-E o filtro da fila é este (`fix-i18n-content-batch.js`):
+### A causa de raiz: a auditoria estava CONGELADA
+
+`audit-content-results.json` tinha **um único commit em toda a história** e
+nenhum workflow o regenerava. Era a foto de um dia antigo, e dela saía tudo o
+resto. Medido em 06/08/2026, antes do conserto:
+
+| Medida | Número |
+|---|---|
+| Ficheiros na auditoria congelada | 292 |
+| Ficheiros que existiam em disco | 336 |
+| **Existiam e não estavam na auditoria → invisíveis para a fila** | **96** (25 com defeito real) |
+| Entradas mortas (ficheiro já não existia) | 52 |
+| Ficheiros na lista de progresso | 149, dos quais 39 já não existiam |
+
+### Defeito 1 — "processado" vencia "ainda defeituoso"
+
+O filtro da fila era:
 
 ```js
 .filter((r) => r.severity > 0 && !progressSet.has(r.file))
 ```
 
-### Defeito 1 — "processado" vence "ainda defeituoso"
+Estar na lista de progresso excluía o ficheiro **para sempre**, mesmo com
+severidade 3. O robô processava, escrevia, marcava como feito — e nunca conferia
+se a adaptação tinha funcionado. Presos assim: **110** medidos pela auditoria
+congelada, **7** quando medidos contra o disco real.
 
-**Estar na lista de progresso exclui o ficheiro PARA SEMPRE, mesmo que a
-`severity` continue alta.** O robô processa, escreve, marca como feito — e nunca
-confere se a adaptação funcionou. Medido em 06/08/2026:
-
-| Ficheiro | severity na auditoria | na lista de progresso |
-|---|---|---|
-| `en-bolsa-de-valores.md` | **3** | ✅ → nunca volta |
-| `en-hedge.md` | **3** | ✅ → nunca volta |
-| `en-tesouro-direto.md` | **3** | ✅ → nunca volta |
-
-O que se vê nessas páginas, em inglês: a palavra **"ações"** em português, o
-**Nubank** dado como exemplo, e **LTN/NTN** mantidos numa página que se apresenta
-como "government bonds" genérico.
+> ⚠️ Correcção a uma versão anterior deste texto: `en-bolsa-de-valores.md`,
+> `en-hedge.md` e `en-tesouro-direto.md` **não** estavam com severidade 3 na
+> realidade — estavam a 3 *na foto velha*. Medidos a fresco davam 0. O R$ e os
+> produtos tinham sido arrumados; o que sobrava era o defeito 2. Lição: medir
+> contra o disco, nunca contra o ficheiro de resultados.
 
 ### Defeito 2 — severity 0 numa página visivelmente defeituosa
 
-`en-private-pension.md` tem **severity 0** e mantém "INSS" no texto inglês. Nunca
-entra na fila porque a auditoria não o vê. O detector conta instituições de uma
-lista, e `INSS`/`FGTS`/`Receita Federal` estão deliberadamente de fora — a
-justificação é que "a tabela de tradução do prompt já os adapta". Nesta página não
-adaptou. **A auditoria e o prompt discordam, e ninguém arbitra.**
+`en-private-pension.md` tinha severidade 0 e mantinha "INSS" no texto inglês.
+Ao todo, **20 de 197 ficheiros "limpos"** tinham termo brasileiro que o detector
+nunca procurava: `Nubank`, `Magazine Luiza`, `INSS`, `PGBL/VGBL`, `LCI/LCA`,
+`LTN/NTN`, `CVM`, e palavras portuguesas soltas (`ações`, `valor`).
 
-### Ainda na fila, com defeito (entram algum dia, mas com o mesmo prompt)
+> ⚠️ Correcção: `FGTS` e `Receita Federal` **estavam** no detector e no prompt.
+> O `INSS` não estava em **nenhum dos dois** — nem o detector o procurava, nem o
+> prompt mandava adaptá-lo. E o `IPCA` estava no prompt mas faltava no detector.
+> Não era o detector a confiar no prompt: era um buraco em ambos.
 
-`en-etf.md` (sev 2, usa "ações"), `en-debentures.md` (sev 2, "It's like a CDB"),
-`en-spread-bancario.md` (sev 2, "The spread bancário is..."), `en-credit-score.md`
-(sev 2, "Serasa, SPC, Boa Vista"), `en-inflation.md` (sev 1, "R$ 100").
+### O que foi feito
 
-### Por que NÃO se corrige à mão
+1. **`.github/workflows/fix-i18n-content-daily.yml`** corre
+   `node scripts/audit-content-i18n.js` **antes** do lote. A fila passa a ser
+   montada contra o disco de hoje. Isto mata as entradas mortas e destranca os
+   ficheiros invisíveis, sem gastar uma única chamada de IA.
 
-Corrigir as 9 páginas à mão deixa o mecanismo intacto: as 3 excluídas continuam
-excluídas e as próximas saem iguais. O conserto é no mecanismo — reprocessar
-enquanto a severity for > 0, e alinhar auditoria com prompt.
+2. **`src/scripts/lib/i18n-queue.js`** (novo, puro) decide quem entra:
+   *ainda tem defeito* **e** *ainda tem tentativas*. Estar na lista de progresso
+   deixou de ser expulsão eterna. Ordem: menos tentativas primeiro, só depois
+   severidade — o lugar do lote vale mais em quem nunca foi tentado.
+
+3. **`scripts/fix-i18n-content-batch.js`** RE-MEDE o ficheiro depois de o
+   escrever, com o mesmo detector da auditoria, e guarda a severidade resultante.
+   Ao fim de `MAX_TENTATIVAS` (3 por omissão) o ficheiro sai da fila e é impresso
+   em todas as corridas como **"PRECISA DE HUMANO"** — nunca desaparece em
+   silêncio. Falha de API não gasta tentativa; resposta má do modelo gasta.
+
+4. **`scripts/audit-content-i18n.js`** ganhou `BR_BRANDS`, `BR_ACRONYMS` e
+   `PT_LEFTOVERS`, e uma **isenção por título**: um termo no `title:`/`term:`
+   quer dizer que a página é *sobre* ele e não deve ser adaptado — sem isso,
+   "PIX vs TED" virava "instant transfers vs instant transfers". A isenção não se
+   estende ao corpo.
+
+5. **`src/scripts/lib/translation-prompt.js`** recebeu **primeiro** todos esses
+   termos. Regra da casa: nada é castigado pelo detector sem o prompt mandar
+   adaptá-lo.
+
+6. **`tests/i18n-queue.test.js`** e **`tests/audit-content-i18n.test.js`**. O
+   último tem o **cruzamento trava × prompt**: se alguém acrescentar um termo ao
+   detector sem o pôr no prompt (ou vice-versa), o teste reprova.
+
+### Estado depois do conserto
+
+| Medida | Antes | Depois |
+|---|---|---|
+| Ficheiros auditados | 292 (foto velha) | 336 (disco) |
+| Com defeito | 139 | 168 |
+| Na fila | 116 (7 mortos) | 168 (0 mortos) |
+| Presos para sempre | 110 | 0 |
+| Invisíveis à fila | 96 | 0 |
+
+A 20 por dia útil, a fila esvazia em ~9 corridas. Os 9 ficheiros do diagnóstico
+original estão todos na fila, incluindo `en-private-pension.md`.
 
 ⚠️ Ver também o `link-guard` (§8): o mesmo robô já foi causa de deploy parado por
-inventar links de glossário.
+inventar links de glossário. A regra 4b do prompt manda traduzir o **texto
+visível** dos links — a regra 6b continua a proibir tocar na URL, e o link-guard
+continua ligado no workflow.
 
 ## 11. Troubleshooting
 
@@ -342,6 +392,8 @@ inventar links de glossário.
 | Build falha com "FALTANDO idiomas" | translationKey não tem os 3 ficheiros | Criar ficheiro(s) que falta(m) para completar o trio |
 | CI gate rejeita PR | Slug EN/ES contém palavras PT | Renomear o ficheiro com slug derivado do título traduzido |
 | Workflow fix-i18n-content falha | Secret ausente | Verificar `GROQ_API_KEY` nos secrets do repositório |
+| Robô diz "PRECISA DE HUMANO" num ficheiro | 3 passagens da IA não baixaram a severidade | Corrigir esse ficheiro à mão; ver §10-A. Repor a contagem = apagar a entrada dele em `scripts/fix-i18n-progress.json` |
+| Fila vazia mas há ficheiros com defeito | Todos esgotaram as tentativas | Ver a lista "PRECISAM DE HUMANO" no log da corrida |
 | `lang-guard` emite warning mas não bloqueia | Tradução falhou 2x mas publicação PT não é bloqueada | Revisar manualmente o ficheiro EN/ES gerado |
 | Posts aparecem duplicados em SEO | translationKey diferente entre locales | Unificar translationKey (usar o slug PT em todos) |
 | Redirect não funciona | Formato errado em `_redirects` | Verificar formato: `[path-antigo]  [path-novo]  301` (2 espaços) |

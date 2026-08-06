@@ -1,39 +1,6 @@
 [
   {
-    "file": "en-5-practical-steps-to-start-saving-for-black-friday-2026.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 33,
-      "brInstitutions": [
-        "Serasa",
-        "IBGE"
-      ],
-      "brProducts": [
-        "CDB",
-        "CDI",
-        "Selic"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-7-alternatives-to-google-sheets-for-finance-updated-guide-20.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 10,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [
-        "brasileiro"
-      ],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-acoes.md",
+    "file": "en-diversification.md",
     "dir": "glossario",
     "severity": 3,
     "issues": {
@@ -41,478 +8,14 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
-    "file": "en-alavancagem.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 10,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-amortization.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 6,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-asset-quality.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 10,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-bolsa-de-valores.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 12,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-budgeting-with-minimum-wage-practical-tips.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 12,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-building-a-diversified-portfolio-with-r-500.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 7,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-capital-gain.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 8,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-cdb-vs-treasury-selic-which-yields-more-in-2026.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 8,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-cdb.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 12,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-compound-interest.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 14,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-corporate-governance.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 7,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-credito.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 11,
-      "brInstitutions": [
-        "Serasa"
-      ],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-difference-between-investing-and-saving.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 6,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-digital-envelope-technique-practical-guide-for-2026.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 23,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-diversificacao.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 8,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-do-you-also-lose-track-of-where-your-money-went-at-the-end-o.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 8,
-      "brInstitutions": [
-        "IBGE"
-      ],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-do-you-lose-track-of-your-spending-when-traveling-using-diff.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 6,
-      "brInstitutions": [
-        "Banco Central do Brasil"
-      ],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-economic-valentine-s-day.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 10,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-etfs-what-they-are-and-how-to-invest-simply-and-profitably.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 19,
-      "brInstitutions": [],
-      "brProducts": [
-        "CDB",
-        "CDI",
-        "Selic"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-fgc-guarantee.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 6,
-      "brInstitutions": [],
-      "brProducts": [
-        "CDB",
-        "CDI"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-financial-education-for-children.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 6,
-      "brInstitutions": [
-        "Banco Central do Brasil"
-      ],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-financial-fee.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 14,
-      "brInstitutions": [],
-      "brProducts": [
-        "CDI",
-        "Selic"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-financial-goal.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 9,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-financial-independence.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 7,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-financial-option.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 21,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-financial-value.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 7,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-fundos-imobiliarios-for-beginners-complete-guide.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 10,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-hedge.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 12,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-how-to-gift-on-father-s-day-without-spending-much-7-budget-f.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 19,
-      "brInstitutions": [
-        "Serasa",
-        "IBGE"
-      ],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-how-to-save-at-the-grocery-store-in-2026-real-tips.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 12,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-how-to-save-on-a-july-vacation-without-giving-up-the-fun.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 42,
-      "brInstitutions": [
-        "IBGE"
-      ],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-how-to-use-cashback-wisely-and-multiply-your-income.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 21,
-      "brInstitutions": [],
-      "brProducts": [
-        "CDI"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-imposto-de-renda.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 18,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-investing-in-dollar-in-brazil.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 8,
-      "brInstitutions": [
-        "Banco Central do Brasil"
-      ],
-      "brProducts": [
-        "Tesouro Direto"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-investment-fund.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 12,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-investments-for-the-second-half-practical-strategies-for-202.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 9,
-      "brInstitutions": [
-        "Banco Central do Brasil"
-      ],
-      "brProducts": [
-        "Tesouro Direto",
-        "CDB",
-        "Selic"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-juros.md",
+    "file": "en-interest.md",
     "dir": "glossario",
     "severity": 3,
     "issues": {
@@ -522,23 +25,20 @@
         "CDB"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "LCI",
+        "LCA"
+      ],
+      "ptLeftovers": [
+        "ações",
+        "valor"
+      ]
     }
   },
   {
-    "file": "en-lc.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 6,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-moeda.md",
+    "file": "en-leverage.md",
     "dir": "glossario",
     "severity": 3,
     "issues": {
@@ -546,92 +46,14 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
-    "file": "en-negotiating-discounts-on-fixed-bills.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 7,
-      "brInstitutions": [
-        "Serasa",
-        "Banco Central do Brasil"
-      ],
-      "brProducts": [
-        "Tesouro Direto"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-net-worth.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 11,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-nubank.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 10,
-      "brInstitutions": [],
-      "brProducts": [
-        "CDB"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-organize-couple-finances.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 8,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-organizing-finances-as-a-freelancer.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 9,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-overdraft.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 7,
-      "brInstitutions": [],
-      "brProducts": [
-        "FGTS"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-p-l-preco-lucro.md",
+    "file": "en-price-to-earnings-ratio.md",
     "dir": "glossario",
     "severity": 3,
     "issues": {
@@ -639,78 +61,10 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-pix-vs-ted-which-one-is-worth-it-in-2026.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 20,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-poupanca.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 11,
-      "brInstitutions": [],
-      "brProducts": [
-        "Tesouro Direto",
-        "CDB"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-present-value.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 13,
-      "brInstitutions": [],
-      "brProducts": [
-        "Selic"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-private-pension-2026-is-it-worth-it-practical-guide.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 18,
-      "brInstitutions": [
-        "Banco Central do Brasil"
-      ],
-      "brProducts": [
-        "Tesouro Direto",
-        "CDB",
-        "Selic"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-profit-margin.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 9,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -725,7 +79,12 @@
         "Selic"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "reais"
+      ]
     }
   },
   {
@@ -741,140 +100,56 @@
         "Selic"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-reduce-fixed-expenses.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 17,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-renda-fixa.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 16,
-      "brInstitutions": [],
-      "brProducts": [
-        "Selic"
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "LCI",
+        "LCA"
       ],
-      "geoRefs": [],
-      "ptWordsCount": 0
+      "ptLeftovers": [
+        "reais"
+      ]
     }
   },
   {
-    "file": "en-sac-amortization-table.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 12,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-salary-bonus.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 20,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-saving-on-your-energy-bill.md",
+    "file": "en-real-estate-funds-for-beginners-complete-guide.md",
     "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 7,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-simple-interest.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 8,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-tesouro-direto-for-beginners.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 13,
-      "brInstitutions": [],
-      "brProducts": [
-        "Tesouro Direto"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-tesouro-direto.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 15,
-      "brInstitutions": [],
-      "brProducts": [
-        "Tesouro Direto"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-tips-for-controlling-credit-card-expenses.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 8,
-      "brInstitutions": [
-        "Serasa",
-        "Banco Central do Brasil"
-      ],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-usura.md",
-    "dir": "glossario",
     "severity": 3,
     "issues": {
       "currency": 10,
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "CVM"
+      ],
+      "ptLeftovers": []
     }
   },
   {
-    "file": "en-venda-a-descoberto.md",
+    "file": "en-stocks.md",
+    "dir": "glossario",
+    "severity": 3,
+    "issues": {
+      "currency": 8,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [
+        "Nubank",
+        "Itaú"
+      ],
+      "brAcronyms": [
+        "B3"
+      ],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-acciones.md",
     "dir": "glossario",
     "severity": 3,
     "issues": {
@@ -882,178 +157,36 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "B3"
+      ],
+      "ptLeftovers": []
     }
   },
   {
-    "file": "en-wall-street.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 23,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-webull.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 6,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-xepa-financeira.md",
+    "file": "es-ahorro.md",
     "dir": "glossario",
     "severity": 3,
     "issues": {
       "currency": 12,
       "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-xing-ling.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 27,
-      "brInstitutions": [],
-      "brProducts": [
-        "CDB"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-yahoo-finance.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 9,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-yield.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 18,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-z-score.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 23,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-zero-coupon.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 12,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-5-pasos-practicos-para-empezar-a-ahorrar-para-la-black-frida.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 25,
-      "brInstitutions": [
-        "Serasa",
-        "IBGE"
-      ],
       "brProducts": [
         "CDB",
-        "CDI",
         "Selic"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-7-alternativas-a-la-hoja-de-calculo-de-google-para-finanzas-.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 10,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [
-        "brasileiro"
+      "ptWordsCount": 0,
+      "brBrands": [
+        "Nubank"
       ],
-      "ptWordsCount": 0
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
-    "file": "es-acoes.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 16,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-ahorra-en-las-compras-del-supermercado.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 14,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-ahorrando-en-la-cuenta-de-energia.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 8,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-alavancagem.md",
+    "file": "es-apalancamiento.md",
     "dir": "glossario",
     "severity": 3,
     "issues": {
@@ -1061,208 +194,14 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
-    "file": "es-amortizacion.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 6,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-aplicacion-financiera.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 14,
-      "brInstitutions": [],
-      "brProducts": [
-        "Tesouro Direto"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-bolsa-de-valores.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 12,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-bono-salarial.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 9,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-bull-market-e-bear-market.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 8,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-calidad-de-activos.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 12,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 8,
-      "brInstitutions": [],
-      "brProducts": [
-        "Tesouro Direto",
-        "Selic"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-cdb.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 8,
-      "brInstitutions": [],
-      "brProducts": [
-        "CDB"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-come-cotas.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 7,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-como-ahorrar-en-el-supermercado-en-2026-consejos-reales.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 12,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-como-ahorrar-en-las-vacaciones-de-julio-sin-renunciar-a-la-d.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 42,
-      "brInstitutions": [
-        "IBGE"
-      ],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-como-reducir-gastos-fijos-mensuales-de-forma-eficaz.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 17,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-como-regalar-en-el-dia-del-padre-gastando-poco-7-ideas-que-c.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 15,
-      "brInstitutions": [
-        "Serasa",
-        "IBGE"
-      ],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-como-usar-el-cashback-de-forma-inteligente-y-multiplicar-tus.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 21,
-      "brInstitutions": [],
-      "brProducts": [
-        "CDI"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-cotizaciones-semana-2-julio-2026.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 6,
-      "brInstitutions": [],
-      "brProducts": [
-        "CDB",
-        "Selic"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-credito.md",
+    "file": "es-deuda.md",
     "dir": "glossario",
     "severity": 3,
     "issues": {
@@ -1270,23 +209,14 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
-    "file": "es-dia-de-los-enamorados-economico.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 10,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-diversificacao.md",
+    "file": "es-diversificacion.md",
     "dir": "glossario",
     "severity": 3,
     "issues": {
@@ -1294,205 +224,14 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
-    "file": "es-dividend-yield.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 12,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-educacion-financiera-para-ninos.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 6,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-etfs-que-son-y-como-invertir-de-forma-simple-y-rentable.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 19,
-      "brInstitutions": [],
-      "brProducts": [
-        "CDB",
-        "CDI",
-        "Selic"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-fondo-de-inversion.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 9,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-ganancia-de-capital.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 8,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-garantia-fgc.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 6,
-      "brInstitutions": [],
-      "brProducts": [
-        "CDB",
-        "CDI"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-guia-completa-de-fondos-inmobiliarios-para-principiantes.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 10,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-guia-completa-para-principiantes-sobre-tesouro-direto.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 13,
-      "brInstitutions": [],
-      "brProducts": [
-        "Tesouro Direto"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-hedge.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 7,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-imposto-de-renda.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 12,
-      "brInstitutions": [
-        "Receita Federal"
-      ],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-independencia-financiera.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 7,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-interes-compuesto.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 14,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-interes-simple.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 8,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-inversiones-para-el-segundo-semestre-estrategias-practicas-p.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 9,
-      "brInstitutions": [],
-      "brProducts": [
-        "CDB",
-        "Selic"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-invertir-en-dolar-en-brasil.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 8,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-juros.md",
+    "file": "es-interes.md",
     "dir": "glossario",
     "severity": 3,
     "issues": {
@@ -1500,111 +239,14 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
-    "file": "es-lc.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 7,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-margen-de-ganancia.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 9,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-meta-financiera.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 9,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-moeda.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 9,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-montando-cartera-diversificada-con-r-500.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 7,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-negociar-descuentos-en-cuentas-fijas.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 7,
-      "brInstitutions": [
-        "Serasa"
-      ],
-      "brProducts": [
-        "Tesouro Direto"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-nubank.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 12,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-opcion-financiera.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 19,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-orcamento-com-salario-minimo-dicas-praticas.md",
+    "file": "es-presupuesto-con-salario-minimo-consejos-practicos.md",
     "dir": "posts",
     "severity": 3,
     "issues": {
@@ -1612,35 +254,14 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
-    "file": "es-organizar-finanzas-autonomo.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 12,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-organizar-finanzas-pareja.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 8,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-p-l-preco-lucro.md",
+    "file": "es-ratio-precio-beneficio.md",
     "dir": "glossario",
     "severity": 3,
     "issues": {
@@ -1648,78 +269,14 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
-    "file": "es-patrimonio-neto.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 11,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-pix-vs-ted-cual-vale-mas-la-pena-en-2026.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 20,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-planeamiento-financiero-para-autonomos.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 9,
-      "brInstitutions": [
-        "Serasa"
-      ],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-poupanca.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 12,
-      "brInstitutions": [],
-      "brProducts": [
-        "CDB",
-        "Selic"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-prevision-privada-2026-vale-la-pena-guia-practica.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 18,
-      "brInstitutions": [],
-      "brProducts": [
-        "CDB"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-renda-fixa.md",
+    "file": "es-renta-fija.md",
     "dir": "glossario",
     "severity": 3,
     "issues": {
@@ -1730,37 +287,17 @@
         "Selic"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-sobregiro.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 7,
-      "brInstitutions": [],
-      "brProducts": [
-        "FGTS"
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "LCI",
+        "LCA"
       ],
-      "geoRefs": [],
-      "ptWordsCount": 0
+      "ptLeftovers": []
     }
   },
   {
-    "file": "es-spread-bancario.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 10,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-tabela-sac-vs-price.md",
+    "file": "es-tabla-sac-vs-price.md",
     "dir": "glossario",
     "severity": 3,
     "issues": {
@@ -1768,172 +305,10 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-tabla-sac.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 12,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-tambien-te-quedas-sin-saber-a-donde-fue-tu-dinero-al-final-d.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 8,
-      "brInstitutions": [
-        "IBGE"
-      ],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-tasa-financiera.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 19,
-      "brInstitutions": [],
-      "brProducts": [
-        "CDB"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-tecnica-de-los-sobres-digitales-guia-practica-para-2026.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 23,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-tesouro-direto.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 15,
-      "brInstitutions": [],
-      "brProducts": [
-        "Tesouro Direto",
-        "Selic"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-usura.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 15,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-valor-financiero.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 11,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-valor-presente.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 13,
-      "brInstitutions": [],
-      "brProducts": [
-        "Selic"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-venda-a-descoberto.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 35,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-wall-street.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 17,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-webull.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 6,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-xepa-financeira.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 9,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-xing-ling.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 14,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -1945,7 +320,10 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -1957,7 +335,10 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -1969,7 +350,10 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -1981,7 +365,10 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -1993,11 +380,33 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
-    "file": "en-5-tips-to-prepare-financially-for-the-second-half-of-the-yea.md",
+    "file": "en-5-practical-steps-to-start-saving-for-black-friday-2026.md",
+    "dir": "posts",
+    "severity": 2,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [
+        "XP Investimentos"
+      ],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "investimentos"
+      ]
+    }
+  },
+  {
+    "file": "en-5-tips-to-prepare-financially-for-the-second-half-of-the.md",
     "dir": "posts",
     "severity": 2,
     "issues": {
@@ -2010,7 +419,10 @@
       ],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2025,7 +437,10 @@
       ],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2040,7 +455,31 @@
       ],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-bolsa-de-valores.md",
+    "dir": "glossario",
+    "severity": 2,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [
+        "Nubank",
+        "Magazine Luiza"
+      ],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "ações",
+        "valor"
+      ]
     }
   },
   {
@@ -2055,7 +494,10 @@
       ],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2071,7 +513,10 @@
         "Tesouro Direto"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2083,7 +528,10 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2095,7 +543,10 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2103,11 +554,17 @@
     "dir": "glossario",
     "severity": 2,
     "issues": {
-      "currency": 3,
+      "currency": 0,
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "PGBL",
+        "VGBL"
+      ],
+      "ptLeftovers": []
     }
   },
   {
@@ -2123,7 +580,10 @@
         "Tesouro Direto"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2139,7 +599,10 @@
         "Tesouro Direto"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2154,7 +617,10 @@
       ],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2169,7 +635,12 @@
         "CDI"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "IPCA"
+      ],
+      "ptLeftovers": []
     }
   },
   {
@@ -2181,7 +652,10 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2193,7 +667,10 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2209,7 +686,10 @@
         "Selic"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2221,7 +701,32 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "ações"
+      ]
+    }
+  },
+  {
+    "file": "en-fgc-guarantee.md",
+    "dir": "glossario",
+    "severity": 2,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [
+        "CDB"
+      ],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "LCI",
+        "LCA"
+      ],
+      "ptLeftovers": []
     }
   },
   {
@@ -2237,7 +742,10 @@
         "Selic"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2253,7 +761,13 @@
         "Selic"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "LCI",
+        "LCA"
+      ],
+      "ptLeftovers": []
     }
   },
   {
@@ -2271,7 +785,31 @@
         "Tesouro Direto"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "poupança",
+        "investimentos"
+      ]
+    }
+  },
+  {
+    "file": "en-financial-value.md",
+    "dir": "glossario",
+    "severity": 2,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "ações",
+        "valor"
+      ]
     }
   },
   {
@@ -2283,7 +821,10 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2297,7 +838,12 @@
       ],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "IPCA"
+      ],
+      "ptLeftovers": []
     }
   },
   {
@@ -2314,7 +860,54 @@
         "CDB"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "LCI",
+        "LCA",
+        "B3"
+      ],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-fixed-income.md",
+    "dir": "glossario",
+    "severity": 2,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [
+        "Selic"
+      ],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "IPCA",
+        "LCI"
+      ],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-hedge.md",
+    "dir": "glossario",
+    "severity": 2,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [
+        "Nubank"
+      ],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "ações",
+        "valor"
+      ]
     }
   },
   {
@@ -2328,7 +921,10 @@
       ],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2340,7 +936,29 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-inflation.md",
+    "dir": "glossario",
+    "severity": 2,
+    "issues": {
+      "currency": 2,
+      "brInstitutions": [
+        "IBGE"
+      ],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "IPCA"
+      ],
+      "ptLeftovers": []
     }
   },
   {
@@ -2355,7 +973,10 @@
         "Selic"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2371,11 +992,54 @@
         "Selic"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
-    "file": "en-lci-e-lca.md",
+    "file": "en-kyc.md",
+    "dir": "glossario",
+    "severity": 2,
+    "issues": {
+      "currency": 1,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "CPF"
+      ],
+      "ptLeftovers": [
+        "ações"
+      ]
+    }
+  },
+  {
+    "file": "en-lc.md",
+    "dir": "glossario",
+    "severity": 2,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [
+        "CDB",
+        "CDI"
+      ],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "LCI",
+        "LCA"
+      ],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-lci-and-lca.md",
     "dir": "glossario",
     "severity": 2,
     "issues": {
@@ -2386,7 +1050,10 @@
         "CDI"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2401,7 +1068,13 @@
         "Selic"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "LCI",
+        "LCA"
+      ],
+      "ptLeftovers": []
     }
   },
   {
@@ -2416,11 +1089,32 @@
         "IPTU"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
-    "file": "en-private-pension-vs-investing-on-your-own-which-is-worth-it-i.md",
+    "file": "en-private-pension-2026-is-it-worth-it-practical-guide.md",
+    "dir": "posts",
+    "severity": 2,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "PGBL",
+        "VGBL"
+      ],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-private-pension-vs-investing-on-your-own-which-is-worth-it.md",
     "dir": "posts",
     "severity": 2,
     "issues": {
@@ -2428,7 +1122,32 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "PGBL",
+        "VGBL"
+      ],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-private-pension.md",
+    "dir": "glossario",
+    "severity": 2,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "INSS",
+        "PGBL",
+        "VGBL"
+      ],
+      "ptLeftovers": []
     }
   },
   {
@@ -2442,7 +1161,10 @@
         "Selic"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2457,7 +1179,10 @@
         "Selic"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2472,7 +1197,12 @@
         "Selic"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "LCI"
+      ],
+      "ptLeftovers": []
     }
   },
   {
@@ -2484,7 +1214,10 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2500,7 +1233,10 @@
         "Tesouro Direto"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2512,7 +1248,10 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2524,7 +1263,33 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-savings.md",
+    "dir": "glossario",
+    "severity": 2,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [
+        "Tesouro Direto",
+        "CDB"
+      ],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "IPCA",
+        "CPF"
+      ],
+      "ptLeftovers": [
+        "poupança"
+      ]
     }
   },
   {
@@ -2538,7 +1303,10 @@
         "Selic"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2550,7 +1318,49 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-tesouro-direto-for-beginners.md",
+    "dir": "posts",
+    "severity": 2,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [
+        "Tesouro Direto"
+      ],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "LCI",
+        "LTN",
+        "NTN"
+      ],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-tesouro-direto.md",
+    "dir": "glossario",
+    "severity": 2,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "LTN",
+        "NTN"
+      ],
+      "ptLeftovers": []
     }
   },
   {
@@ -2566,11 +1376,14 @@
       ],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
-    "file": "es-5-consejos-para-prepararse-financieramente-para-el-segundo-s.md",
+    "file": "es-5-consejos-para-prepararse-financieramente-para-el-segundo.md",
     "dir": "posts",
     "severity": 2,
     "issues": {
@@ -2582,7 +1395,10 @@
       ],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2597,7 +1413,31 @@
       ],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "poupança"
+      ]
+    }
+  },
+  {
+    "file": "es-5-pasos-practicos-para-empezar-a-ahorrar-para-la-black.md",
+    "dir": "posts",
+    "severity": 2,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [
+        "XP Investimentos"
+      ],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "investimentos"
+      ]
     }
   },
   {
@@ -2609,7 +1449,10 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2621,7 +1464,10 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2637,7 +1483,10 @@
         "Tesouro Direto"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2651,7 +1500,10 @@
       ],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2663,7 +1515,28 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-come-cotas.md",
+    "dir": "glossario",
+    "severity": 2,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "PGBL",
+        "VGBL"
+      ],
+      "ptLeftovers": []
     }
   },
   {
@@ -2675,7 +1548,10 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2687,7 +1563,10 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2701,7 +1580,10 @@
       ],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2717,7 +1599,10 @@
         "Selic"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2731,7 +1616,10 @@
         "Selic"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2746,7 +1634,10 @@
         "Selic"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2761,7 +1652,12 @@
         "CDI"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "IPCA"
+      ],
+      "ptLeftovers": []
     }
   },
   {
@@ -2773,7 +1669,10 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2789,7 +1688,48 @@
         "Selic"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-entiende-la-tasa-interbancaria-y-su-impacto-en-tus.md",
+    "dir": "posts",
+    "severity": 2,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "LCI",
+        "LCA"
+      ],
+      "ptLeftovers": [
+        "investimentos"
+      ]
+    }
+  },
+  {
+    "file": "es-etf.md",
+    "dir": "glossario",
+    "severity": 2,
+    "issues": {
+      "currency": 2,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [
+        "Nubank",
+        "Magazine Luiza"
+      ],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2803,7 +1743,10 @@
       ],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2815,7 +1758,10 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2831,7 +1777,12 @@
         "Selic"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "ações"
+      ]
     }
   },
   {
@@ -2843,7 +1794,51 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-garantia-fgc.md",
+    "dir": "glossario",
+    "severity": 2,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "LCI",
+        "LCA"
+      ],
+      "ptLeftovers": [
+        "poupança"
+      ]
+    }
+  },
+  {
+    "file": "es-guia-completa-para-principiantes-sobre-tesouro-direto.md",
+    "dir": "posts",
+    "severity": 2,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [
+        "Tesouro Direto"
+      ],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "LCI",
+        "LTN",
+        "NTN"
+      ],
+      "ptLeftovers": []
     }
   },
   {
@@ -2857,7 +1852,33 @@
       ],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "IPCA"
+      ],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-inflacion.md",
+    "dir": "glossario",
+    "severity": 2,
+    "issues": {
+      "currency": 2,
+      "brInstitutions": [
+        "IBGE"
+      ],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "IPCA"
+      ],
+      "ptLeftovers": [
+        "poupança"
+      ]
     }
   },
   {
@@ -2872,7 +1893,10 @@
         "Selic"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2888,7 +1912,10 @@
         "Selic"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2900,7 +1927,31 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-lc.md",
+    "dir": "glossario",
+    "severity": 2,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [
+        "CDB",
+        "CDI"
+      ],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "LCI",
+        "LCA"
+      ],
+      "ptLeftovers": []
     }
   },
   {
@@ -2915,7 +1966,10 @@
         "CDI"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2930,7 +1984,13 @@
         "Selic"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "LCI",
+        "LCA"
+      ],
+      "ptLeftovers": []
     }
   },
   {
@@ -2942,7 +2002,29 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-pension-privada.md",
+    "dir": "glossario",
+    "severity": 2,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "INSS",
+        "PGBL",
+        "VGBL"
+      ],
+      "ptLeftovers": []
     }
   },
   {
@@ -2959,7 +2041,10 @@
         "Tesouro Direto"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2973,7 +2058,10 @@
       ],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -2988,7 +2076,46 @@
         "IPTU"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-prevision-privada-2026-vale-la-pena-guia-practica.md",
+    "dir": "posts",
+    "severity": 2,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "PGBL",
+        "VGBL"
+      ],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-prevision-privada-vs-invertir-por-cuenta-propia-cual-vale.md",
+    "dir": "posts",
+    "severity": 2,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "PGBL",
+        "VGBL"
+      ],
+      "ptLeftovers": []
     }
   },
   {
@@ -3003,7 +2130,10 @@
       ],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -3015,7 +2145,10 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -3030,7 +2163,14 @@
         "Selic"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "LCI",
+        "LCA",
+        "B3"
+      ],
+      "ptLeftovers": []
     }
   },
   {
@@ -3046,7 +2186,10 @@
         "Tesouro Direto"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -3061,7 +2204,81 @@
       ],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-volatilidad.md",
+    "dir": "glossario",
+    "severity": 2,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [
+        "Selic"
+      ],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "ações",
+        "poupança"
+      ]
+    }
+  },
+  {
+    "file": "en-5-alternatives-to-organizze-in-2026-options-to-manage-your.md",
+    "dir": "posts",
+    "severity": 1,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [
+        "Nubank"
+      ],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-budgeting-with-minimum-wage-practical-tips.md",
+    "dir": "posts",
+    "severity": 1,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "poupança"
+      ]
+    }
+  },
+  {
+    "file": "en-building-a-diversified-portfolio-with-r-500.md",
+    "dir": "posts",
+    "severity": 1,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "investimentos"
+      ]
     }
   },
   {
@@ -3073,7 +2290,10 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -3087,7 +2307,10 @@
         "FGTS"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -3099,7 +2322,27 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-financial-comfort-zone.md",
+    "dir": "glossario",
+    "severity": 1,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "IPCA"
+      ],
+      "ptLeftovers": []
     }
   },
   {
@@ -3111,7 +2354,10 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -3125,47 +2371,61 @@
       ],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
-    "file": "en-inflation.md",
-    "dir": "glossario",
+    "file": "en-how-to-save-at-the-grocery-store-in-2026-real-tips.md",
+    "dir": "posts",
     "severity": 1,
     "issues": {
-      "currency": 2,
-      "brInstitutions": [
-        "IBGE"
-      ],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-know-your-customer.md",
-    "dir": "glossario",
-    "severity": 1,
-    "issues": {
-      "currency": 2,
-      "brInstitutions": [],
-      "brProducts": [
-        "CDB"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-kyc.md",
-    "dir": "glossario",
-    "severity": 1,
-    "issues": {
-      "currency": 1,
+      "currency": 0,
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "reais"
+      ]
+    }
+  },
+  {
+    "file": "en-how-to-use-cashback-wisely-and-multiply-your-income.md",
+    "dir": "posts",
+    "severity": 1,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "dívidas"
+      ]
+    }
+  },
+  {
+    "file": "en-investments-for-the-second-half-practical-strategies-for.md",
+    "dir": "posts",
+    "severity": 1,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "investimentos"
+      ]
     }
   },
   {
@@ -3177,7 +2437,12 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "CPF"
+      ],
+      "ptLeftovers": []
     }
   },
   {
@@ -3191,7 +2456,10 @@
         "Selic"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -3205,7 +2473,10 @@
         "Selic"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -3219,7 +2490,25 @@
         "Selic"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-sac-vs-price-amortization-table.md",
+    "dir": "glossario",
+    "severity": 1,
+    "issues": {
+      "currency": 1,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -3233,19 +2522,10 @@
       ],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "en-tabela-sac-vs-price.md",
-    "dir": "glossario",
-    "severity": 1,
-    "issues": {
-      "currency": 1,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -3257,7 +2537,27 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-understanding-the-interbank-rate-and-its-impact-on-your.md",
+    "dir": "posts",
+    "severity": 1,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "investimentos"
+      ]
     }
   },
   {
@@ -3271,7 +2571,10 @@
         "CDB"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -3285,7 +2588,10 @@
         "Selic"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -3297,7 +2603,44 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "PGBL"
+      ],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-5-alternativas-a-organizze-en-2026-opciones-para-administrar.md",
+    "dir": "posts",
+    "severity": 1,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [
+        "Nubank"
+      ],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-7-alternativas-a-la-hoja-de-calculo-de-google-para-finanzas.md",
+    "dir": "posts",
+    "severity": 1,
+    "issues": {
+      "currency": 1,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -3309,7 +2652,63 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "investimentos"
+      ]
+    }
+  },
+  {
+    "file": "es-como-ahorrar-en-el-supermercado-en-2026-consejos-reales.md",
+    "dir": "posts",
+    "severity": 1,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "reais"
+      ]
+    }
+  },
+  {
+    "file": "es-como-ahorrar-en-las-vacaciones-de-julio-sin-renunciar-a-la.md",
+    "dir": "posts",
+    "severity": 1,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "INSS"
+      ],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-como-usar-el-cashback-de-forma-inteligente-y-multiplicar-tus.md",
+    "dir": "posts",
+    "severity": 1,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "dívidas"
+      ]
     }
   },
   {
@@ -3323,7 +2722,10 @@
       ],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -3337,7 +2739,10 @@
         "Selic"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -3351,7 +2756,10 @@
         "Selic"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -3365,7 +2773,10 @@
         "Selic"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -3379,7 +2790,10 @@
         "Selic"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -3391,45 +2805,44 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
-    "file": "es-etf.md",
-    "dir": "glossario",
+    "file": "es-etfs-que-son-y-como-invertir-de-forma-simple-y-rentable.md",
+    "dir": "posts",
     "severity": 1,
     "issues": {
-      "currency": 2,
+      "currency": 0,
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-gobernanza-corporativa.md",
-    "dir": "glossario",
-    "severity": 1,
-    "issues": {
-      "currency": 2,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-inflacion.md",
-    "dir": "glossario",
-    "severity": 1,
-    "issues": {
-      "currency": 2,
-      "brInstitutions": [
-        "IBGE"
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "CVM"
       ],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-inversiones-para-el-segundo-semestre-estrategias-practicas.md",
+    "dir": "posts",
+    "severity": 1,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "investimentos"
+      ]
     }
   },
   {
@@ -3441,11 +2854,16 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "poupança"
+      ]
     }
   },
   {
-    "file": "es-pierdes-el-control-de-los-gastos-cuando-viajas-usando-difere.md",
+    "file": "es-pierdes-el-control-de-los-gastos-cuando-viajas-usando.md",
     "dir": "posts",
     "severity": 1,
     "issues": {
@@ -3453,7 +2871,10 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -3465,7 +2886,12 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "CPF"
+      ],
+      "ptLeftovers": []
     }
   },
   {
@@ -3479,7 +2905,10 @@
         "CDB"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -3493,7 +2922,10 @@
         "Tesouro Direto"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -3507,21 +2939,10 @@
         "Selic"
       ],
       "geoRefs": [],
-      "ptWordsCount": 0
-    }
-  },
-  {
-    "file": "es-volatilidad.md",
-    "dir": "glossario",
-    "severity": 1,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [],
-      "brProducts": [
-        "Selic"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -3533,7 +2954,12 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "PGBL"
+      ],
+      "ptLeftovers": []
     }
   },
   {
@@ -3545,11 +2971,14 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
-    "file": "en-5-alternatives-to-organizze-in-2026-options-to-manage-your-f.md",
+    "file": "en-7-alternatives-to-google-sheets-for-finance-updated-guide.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -3557,7 +2986,25 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-7-best-personal-finance-apps-2026-complete-guide-to-organize.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -3569,11 +3016,14 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
-    "file": "en-bitcoin.md",
+    "file": "en-amortization.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -3581,7 +3031,280 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-asset-quality.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-back-to-school-save-money-and-plan-your-school-expenses-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-capital-gain.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-cash-flow-excel.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-cash-flow.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-cdb-vs-treasury-selic-which-yields-more-in-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-cdb.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-compound-interest.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-corporate-governance.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-credit.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-debt.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-difference-between-investing-and-saving.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-digital-envelope-technique-practical-guide-for-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-discounted-cash-flow.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-do-you-also-lose-track-of-where-your-money-went-at-the-end.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-do-you-lose-track-of-your-spending-when-traveling-using.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-economic-valentine-s-day.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-etfs-what-they-are-and-how-to-invest-simply-and-profitably.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -3593,11 +3316,44 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
-    "file": "en-financial-comfort-zone.md",
+    "file": "en-father-s-day-plan-your-gift-without-stretching-the-budget.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-financial-education-for-children.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-financial-fee.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -3605,7 +3361,115 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-financial-goal.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-financial-independence.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-financial-option.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-fixed-and-variable-expense.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-fixed-expense.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-how-to-build-a-budget-that-actually-works-in-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-how-to-choose-investment-funds-in-2026-and-take-the-first.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -3617,7 +3481,250 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-how-to-gift-on-father-s-day-without-spending-much-7-budget.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-how-to-lighten-your-loan-burden-in-2026-with-smart.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-how-to-never-miss-a-bill-payment-deadline-simple-5-minute.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-how-to-organize-your-money-with-an-easy-to-use-app.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-how-to-save-on-a-july-vacation-without-giving-up-the-fun.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-how-to-secure-financing-for-your-projects-without-headaches.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-how-to-tame-your-spending-and-find-peace-in-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-how-to-turn-a-mess-of-bills-into-a-visual-control-system-in.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-how-to-turn-financial-chaos-into-control-with-the-kyco.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-how-to-use-a-compound-interest-calculator-in-2026-to-boost.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-how-to-use-credit-without-squeezing-your-budget-5-steps.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-income-tax.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-invest-or-pay-off-debt-which-is-better-in-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-investing-in-dollar-in-brazil.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-investment-fund.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-loan.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -3629,11 +3736,14 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
-    "file": "en-private-pension.md",
+    "file": "en-moeda.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -3641,7 +3751,160 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-money-saving-tips-7-simple-habits-for-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-negotiating-discounts-on-fixed-bills.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-net-worth.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-organize-couple-finances.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-organizing-finances-as-a-freelancer.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-overdraft.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-pix-vs-ted-which-one-is-worth-it-in-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-present-value.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-profit-margin.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-reduce-fixed-expenses.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -3653,7 +3916,40 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-sac-amortization-table.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-salary-bonus.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -3665,7 +3961,190 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-saving-on-your-energy-bill.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-simple-everyday-saving-strategies-for-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-simple-interest.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-tips-for-controlling-credit-card-expenses.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-understand-price-amortization-and-optimize-your-finances-in.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-usura.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-variable-expense.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-venda-a-descoberto.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-wall-street.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-weekly-budget-a-practical-guide-for-those-paid-every-week.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-yahoo-finance.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-yield.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -3677,19 +4156,40 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
-    "file": "es-5-alternativas-a-organizze-en-2026-opciones-para-administrar.md",
-    "dir": "posts",
+    "file": "en-z-score.md",
+    "dir": "glossario",
     "severity": 0,
     "issues": {
       "currency": 0,
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-zero-coupon.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -3701,7 +4201,10 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -3713,11 +4216,74 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
-    "file": "es-bitcoin.md",
+    "file": "es-7-mejores-apps-de-control-financiero-2026-guia-completa-para.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-ahorra-en-las-compras-del-supermercado.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-ahorrando-en-la-cuenta-de-energia.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-ahorrar-dinero-7-habitos-simples-para-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-amortizacion.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -3725,7 +4291,130 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-aplicacion-financiera.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-bolsa-de-valores.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-bono-salarial.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-bull-market-e-bear-market.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-calidad-de-activos.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-cdb.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-como-conseguir-financiacion-para-tus-proyectos-sin.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -3737,7 +4426,190 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-como-crear-un-presupuesto-que-realmente-funcione-en-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-como-domar-los-gastos-y-ganar-tranquilidad-en-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-como-elegir-fondos-de-inversion-en-2026-y-dar-el-primer-paso.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-como-organizar-tu-dinero-con-una-app-facil-de-usar.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-como-reducir-el-peso-de-tu-prestamo-en-2026-con-amortizacion.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-como-reducir-gastos-fijos-mensuales-de-forma-eficaz.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-como-regalar-en-el-dia-del-padre-gastando-poco-7-ideas-que.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-como-transformar-el-caos-financiero-en-control-con-la.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-como-transformar-el-desorden-de-tus-facturas-en-control.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-como-usar-credito-sin-ahogar-tu-presupuesto-5-pasos.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-como-usar-la-calculadora-de-interes-compuesto-en-2026-y.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -3749,7 +4621,70 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-cotizaciones-semana-2-julio-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-credito.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-dia-de-los-enamorados-economico.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-dia-del-padre-planifica-tus-gastos-sin-apretar-el.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -3761,11 +4696,14 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
-    "file": "es-know-your-customer.md",
+    "file": "es-dividend-yield.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -3773,7 +4711,340 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-educacion-financiera-para-ninos.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-entiende-la-amortizacion-price-y-optimiza-tus-finanzas-en.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-estrategias-simples-para-ahorrar-dia-a-dia-en-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-flujo-de-caja-descontado.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-flujo-de-caja-excel.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-flujo-de-caja.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-fondo-de-inversion.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-ganancia-de-capital.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-gasto-fijo-y-variable.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-gasto-fijo.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-gasto-variable.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-gobernanza-corporativa.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-guia-completa-de-fondos-inmobiliarios-para-principiantes.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-hedge.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-impuesto-sobre-la-renta.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-independencia-financiera.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-interes-compuesto.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-interes-simple.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-invertir-en-dolar-en-brasil.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-invertir-vs-pagar-deudas-que-conviene-mas-en-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-margen-de-ganancia.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-meta-financiera.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -3785,11 +5056,14 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
-    "file": "es-pension-privada.md",
+    "file": "es-moeda.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -3797,7 +5071,130 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-montando-cartera-diversificada-con-r-500.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-negociar-descuentos-en-cuentas-fijas.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-opcion-financiera.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-organizar-finanzas-autonomo.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-organizar-finanzas-pareja.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-patrimonio-neto.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-pix-vs-ted-cual-vale-mas-la-pena-en-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-planeamiento-financiero-para-autonomos.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -3809,11 +5206,29 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
-    "file": "es-prevision-privada-vs-invertir-por-cuenta-propia-cual-vale-ma.md",
+    "file": "es-prestamo.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-presupuesto-semanal-guia-para-quien-recibe-su-salario-cada.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -3821,7 +5236,85 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-regreso-a-clases-ahorra-y-planifica-los-gastos-escolares.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-sobregiro.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-spread-bancario.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-tabla-sac.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-tambien-te-quedas-sin-saber-a-donde-fue-tu-dinero-al-final.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -3833,11 +5326,14 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
-    "file": "es-tarjeta-de-credito-vs-tarjeta-de-debito-cual-vale-mas-la-pen.md",
+    "file": "es-tarjeta-de-credito-vs-tarjeta-de-debito-cual-vale-mas-la.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -3845,7 +5341,130 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-tasa-financiera.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-tecnica-de-los-sobres-digitales-guia-practica-para-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-tesouro-direto.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-usura.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-valor-financiero.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-valor-presente.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-venda-a-descoberto.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-wall-street.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -3857,7 +5476,10 @@
       "brInstitutions": [],
       "brProducts": [],
       "geoRefs": [],
-      "ptWordsCount": 0
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   }
 ]
