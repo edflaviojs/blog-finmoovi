@@ -74,6 +74,14 @@ jobs:
       - name: Commitar o caderno
         if: github.event.inputs.dry_run != 'true'
         run: |
+          # ⚠️ NAS HORAS EM QUE NÃO HÁ NADA A RESPONDER, O CADERNO NEM CHEGA A EXISTIR
+          # — e `git add` de um ficheiro que não existe devolve 128. Foi assim que as
+          # três primeiras corridas automáticas falharam, todas depois de terem feito
+          # o trabalho certo: o robô corria bem e morria a arrumar a secretária.
+          if [ ! -f .github/data/youtube-comentarios.json ]; then
+            echo "📭 nada foi respondido — não há caderno para guardar."
+            exit 0
+          fi
           git config user.name "FinMoovi Bot"
           git config user.email "bot@finmoovi.com"
           git add .github/data/youtube-comentarios.json
