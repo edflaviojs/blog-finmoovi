@@ -277,6 +277,63 @@ O Cloudflare Pages processa automaticamente o ficheiro `_redirects` no deploy. N
 
 ---
 
+## 10-A. 🔴 A adaptação internacional em lote — DEFEITO ABERTO (06/08/2026)
+
+O `fix-i18n-content-daily.yml` corre de segunda a sexta, às 8h30 UTC, e manda
+`scripts/fix-i18n-content-batch.js` re-adaptar até 20 ficheiros por corrida
+(trocar R$ por USD/EUR, produtos brasileiros por equivalentes internacionais,
+referências geográficas). A fila sai de dois ficheiros:
+
+| Ficheiro | Papel |
+|---|---|
+| `scripts/audit-content-results.json` | auditoria: `severity` por ficheiro (0 = limpo) |
+| `scripts/fix-i18n-progress.json` | lista dos ficheiros JÁ processados |
+
+E o filtro da fila é este (`fix-i18n-content-batch.js`):
+
+```js
+.filter((r) => r.severity > 0 && !progressSet.has(r.file))
+```
+
+### Defeito 1 — "processado" vence "ainda defeituoso"
+
+**Estar na lista de progresso exclui o ficheiro PARA SEMPRE, mesmo que a
+`severity` continue alta.** O robô processa, escreve, marca como feito — e nunca
+confere se a adaptação funcionou. Medido em 06/08/2026:
+
+| Ficheiro | severity na auditoria | na lista de progresso |
+|---|---|---|
+| `en-bolsa-de-valores.md` | **3** | ✅ → nunca volta |
+| `en-hedge.md` | **3** | ✅ → nunca volta |
+| `en-tesouro-direto.md` | **3** | ✅ → nunca volta |
+
+O que se vê nessas páginas, em inglês: a palavra **"ações"** em português, o
+**Nubank** dado como exemplo, e **LTN/NTN** mantidos numa página que se apresenta
+como "government bonds" genérico.
+
+### Defeito 2 — severity 0 numa página visivelmente defeituosa
+
+`en-private-pension.md` tem **severity 0** e mantém "INSS" no texto inglês. Nunca
+entra na fila porque a auditoria não o vê. O detector conta instituições de uma
+lista, e `INSS`/`FGTS`/`Receita Federal` estão deliberadamente de fora — a
+justificação é que "a tabela de tradução do prompt já os adapta". Nesta página não
+adaptou. **A auditoria e o prompt discordam, e ninguém arbitra.**
+
+### Ainda na fila, com defeito (entram algum dia, mas com o mesmo prompt)
+
+`en-etf.md` (sev 2, usa "ações"), `en-debentures.md` (sev 2, "It's like a CDB"),
+`en-spread-bancario.md` (sev 2, "The spread bancário is..."), `en-credit-score.md`
+(sev 2, "Serasa, SPC, Boa Vista"), `en-inflation.md` (sev 1, "R$ 100").
+
+### Por que NÃO se corrige à mão
+
+Corrigir as 9 páginas à mão deixa o mecanismo intacto: as 3 excluídas continuam
+excluídas e as próximas saem iguais. O conserto é no mecanismo — reprocessar
+enquanto a severity for > 0, e alinhar auditoria com prompt.
+
+⚠️ Ver também o `link-guard` (§8): o mesmo robô já foi causa de deploy parado por
+inventar links de glossário.
+
 ## 11. Troubleshooting
 
 | Sintoma | Causa | Solução |
