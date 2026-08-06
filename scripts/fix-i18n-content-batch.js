@@ -16,6 +16,7 @@ import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { generateText } from '../src/scripts/apis/kie-ai.js';
 import { getTranslationInstructions } from '../src/scripts/lib/translation-prompt.js';
+import { fixInternalLinks, carregarDestinos } from '../src/scripts/lib/link-guard.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
@@ -159,6 +160,13 @@ async function main() {
   let fixed = 0;
   let errors = 0;
   let skipped = 0;
+  let linksDesfeitos = 0;
+
+  // Destinos reais de posts/glossario, lidos UMA vez: este script só altera
+  // ficheiros existentes, nunca cria, logo a lista não muda durante a corrida.
+  const destinosValidos = carregarDestinos(ROOT);
+  console.log(`Destinos internos reais (posts + glossário): ${destinosValidos.size}`);
+  console.log('');
 
   for (let i = 0; i < batch.length; i++) {
     const entry = batch[i];
@@ -257,6 +265,22 @@ ${body}`;
         continue;
       }
 
+      // Guarda anti-link-inventado (src/scripts/lib/link-guard.js).
+      // A regra 2 do prompt manda trocar o nome VISÍVEL dos produtos brasileiros
+      // pelo equivalente internacional ("Selic" → "tasa base del banco central").
+      // O modelo troca o texto do link e, a seguir, reescreve a URL para combinar
+      // — inventando um slug que não existe. Em 05/08/2026 isso reprovou o build e
+      // o blog PAROU de publicar durante ~20h sem ninguém notar. O link fica sem
+      // URL (o texto é preservado); nunca se inventa destino de substituição.
+      const guardado = fixInternalLinks(fixedBody, destinosValidos);
+      if (guardado.changed) {
+        for (const d of guardado.desembrulhados) {
+          console.log(`  [LINK-GUARD] ${entry.file} — destino não existe, link desfeito: [${d.label}](${d.href})`);
+        }
+        linksDesfeitos += guardado.desembrulhados.length;
+      }
+      const bodySeguro = guardado.text;
+
       // Rebuild the file
       let newFrontmatter = frontmatter;
 
@@ -303,7 +327,7 @@ ${body}`;
         newFrontmatter = setFmField(newFrontmatter, 'metaDescription', fixedMeta.trim());
       }
 
-      const newContent = newFrontmatter + '\n\n' + fixedBody.trim() + '\n';
+      const newContent = newFrontmatter + '\n\n' + bodySeguro.trim() + '\n';
 
       if (!DRY_RUN) {
         writeFileSync(filePath, newContent, 'utf-8');
@@ -340,6 +364,7 @@ ${body}`;
   console.log(`Fixed:     ${fixed}`);
   console.log(`Skipped:   ${skipped} (entradas mortas, retiradas da fila)`);
   console.log(`Errors:    ${errors}`);
+  console.log(`Links inventados desfeitos: ${linksDesfeitos}`);
   console.log(`Remaining: ${pending.length - fixed - skipped}`);
 }
 

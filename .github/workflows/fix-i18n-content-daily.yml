@@ -53,6 +53,15 @@ jobs:
           DRY_RUN: ${{ inputs.dry_run || 'false' }}
         run: node scripts/fix-i18n-content-batch.js
 
+      # Rede de seguranca. O proprio fix-i18n-content-batch.js ja aplica o
+      # link-guard ao corpo devolvido pelo modelo; esta passagem apanha o que
+      # escapar (regressao no script, link escrito no frontmatter, etc.).
+      # REPARA em vez de reprovar: reprovar aqui perderia o trabalho de IA dos 20
+      # ficheiros da tanda, e o objetivo e que NADA quebrado seja empurrado — nao
+      # castigar a corrida. O `git add -A` do passo seguinte leva a reparacao.
+      - name: Desfazer links internos inventados (link-guard)
+        run: node src/scripts/validacao/link-guard.js --no-commit
+
       - name: Commit fixes
         if: ${{ inputs.dry_run != 'true' }}
         run: |

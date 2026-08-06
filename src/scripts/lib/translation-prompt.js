@@ -54,7 +54,17 @@ CRITICAL ADAPTATION RULES:
    - App URL: ${appUrl}
    - Markdown formatting
    - Image paths (![alt](url))
-   - Internal link URLs (they will be updated separately)
+
+6b. INTERNAL LINK URLs — COPY THEM CHARACTER FOR CHARACTER. NEVER INVENT ONE.
+   Rule 2 above changes the VISIBLE TEXT of a link. It must NEVER change the URL.
+   The URL is a real file that exists; a URL you compose from the new wording does
+   not exist, and it breaks the site build.
+   - CORRECT:   [Selic](/es/glossario/es-selic)
+                → [tasa base del banco central](/es/glossario/es-selic)
+   - FORBIDDEN: [Selic](/es/glossario/es-selic)
+                → [tasa base del banco central](/es/glossario/es-banco-central)
+   If a term has no link in the original, write it as PLAIN TEXT with no link.
+   Never add a link that was not already there.
 
 7. TONE: Keep the same helpful, practical tone. The reader should feel this was WRITTEN for them, not translated from another language.
 
