@@ -1,63 +1,66 @@
 ---
-term: "lc"
-definition: "Understand what lc is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
-title: "lc - Financial Glossary"
-description: "Understand what lc is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
+term: "LC (Letra de Câmbio)"
+definition: "LC stands for Letra de Câmbio: a Brazilian fixed-income security issued by finance companies, similar to a CDB and covered by the deposit guarantee fund. It usually pays more than a bank CDB because the issuer is a smaller institution — and it has nothing to do with LCI/LCA or with a trade-finance letter of credit."
+title: "LC (Letra de Câmbio) - Financial Glossary"
+description: "What an LC is: how it works, what it pays, the deposit guarantee, the risks, and why it gets confused with LCI/LCA and with a letter of credit."
 image: "/images/glossario/lc.webp"
 imageAlt: "Gold coins, bar chart, and plant in glass on dark gradient background"
-category: "basico"
-tags: ["lc", "glossário", "finanças", "glossary", "finance", "brazil"]
+category: "investimentos"
+tags: ["lc", "letra de câmbio", "fixed income", "glossary", "finance", "brazil"]
 author: "FinMoovi"
 publishedAt: 2026-07-10
 readingTime: 5
 locale: "en"
 translationKey: "glossario-lc"
 seo:
-  metaTitle: "lc - Financial Glossary"
-  metaDescription: "Understand what lc is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
-  keywords: ["lc", "glossário", "finanças", "glossary", "finance", "brazil"]
+  metaTitle: "LC (Letra de Câmbio) - Financial Glossary"
+  metaDescription: "What an LC is: how it works, what it pays, the deposit guarantee, the risks, and why it gets confused with LCI/LCA and with a letter of credit."
+  keywords: ["lc", "letra de cambio", "fixed income", "deposit guarantee", "glossary"]
 ---
 
 ## What it is
-A Letter of [Credit](/en/glossario/en-credit) (LC) is a type of financial instrument used to guarantee payments between companies or individuals. It is basically a contract among a buyer, a seller, and a bank, where the bank commits to pay the seller if the buyer fails to meet its obligations. This helps reduce the risk of non‑payment and provides security for both the buyer and the seller. Imagine you are a business owner who sells products to another company, and you want to ensure you will receive the payment. In that case, an LC can be a great option.
 
-* The LC is issued by the buyer's bank  
-* The seller receives payment from the bank if the buyer does not pay  
-* The LC can be used for domestic or international payments  
-* It is common in large [value](/en/glossario/en-financial-value) transactions, such as purchases of goods or services  
+LC stands for **Letra de Câmbio** — a Brazilian [fixed income](/en/glossario/en-fixed-income) security issued by **finance companies**, not by banks.
 
-![What it is](/images/glossario/lc-inline-1.webp)
+It works exactly like a [CDB](/en/glossario/en-cdb): you lend money to the institution for a set term and it pays you back with [interest](/en/glossario/en-interest). The difference is who is doing the borrowing.
 
+## Careful with the name: these are three different things
 
+This is where almost everyone gets lost, and the naming does not help:
+
+| Acronym | What it is |
+| --- | --- |
+| **LC** | Letra de **Câmbio**. Issued by a finance company. Income tax applies |
+| **LCI / LCA** | Letras de **Crédito** for real estate and agribusiness. Issued by banks and **exempt** from income tax for individuals — see [LCI and LCA](/en/glossario/en-lci-and-lca) |
+| **Letter of credit** | A trade-finance instrument where a bank guarantees payment between a buyer and a seller. Nothing to do with investing |
+
+Despite "câmbio" (exchange) in the name, an LC has **no connection to foreign currency**. The term is historical.
 
 ## How it works
-An LC works as follows: the buyer asks their bank to issue an LC in favor of the seller. The bank then commits to pay the seller if the buyer fails to meet its obligations. The seller, in turn, receives the LC and can use it as a payment guarantee. If the buyer does not pay, the seller can present the LC to the bank and receive the payment. For example, imagine you are a business owner who sells products to a company that pays **$2,000** per month. You can request an LC to ensure you will receive the payment.
 
-**Practical tip:** It is important to read the LC terms carefully before accepting it, as they may vary depending on the bank and the type of transaction.
+- You pick an LC with a defined term and rate (for example, 115% of the [CDI](/en/glossario/en-cdi) benchmark)
+- The money stays invested until maturity — many LCs **do not allow early withdrawal**
+- At maturity you receive the principal plus interest, with tax already deducted
 
-## Advantages
-LCs offer several advantages for both the buyer and the seller. For the buyer, the LC provides a secure way to pay the seller, as the bank commits to pay if the buyer fails to meet its obligations. For the seller, the LC provides a payment guarantee, which can help reduce the risk of non‑payment. In addition, LCs can be used for domestic or international payments, making them a versatile option for companies operating in different markets.
+## It pays more than a CDB, and there is a reason
 
-* Reduces the risk of non‑payment  
-* Provides security for both the buyer and the seller  
-* Can be used for domestic or international payments  
-* Is a versatile option for companies operating in different markets  
+LCs usually offer better rates than CDBs from large banks. That is not generosity: it is the price of risk. Finance companies are **smaller** institutions with less access to cheap funding, so they pay more to raise money.
 
-![Advantages](/images/glossario/lc-inline-3.webp)
+What levels the field is the **[deposit guarantee fund](/en/glossario/en-fgc-guarantee)**: if the issuer fails, the fund returns your money up to the guaranteed limit, per taxpayer and per institution — the same cover a CDB gets.
 
+## Tax
 
+An LC follows the same regressive [income tax](/en/glossario/en-income-tax) table as a CDB: the longer the money stays invested, the lower the rate. It is **not exempt** — LCI/LCA are the exempt ones, which is exactly why mixing the two up costs money when you compare them.
 
 ## Risks
-Although LCs are a secure form of payment, they also involve some risks. One of the main risks is fraud risk, as LCs can be forged or altered. In addition, LCs can be used for illegal purposes, such as money laundering or tax evasion. **Practical tip:** It is important to verify the authenticity of the LC before accepting it, and it is also important to keep accurate records of the transactions.
 
-**Practical tip:** It is important to work with a reliable and experienced bank in LCs to minimize the risks.
+- **Credit risk**: the issuer can fail. The guarantee fund covers up to its limit; above that, you depend on the institution
+- **Liquidity risk**: if the LC has no early withdrawal, the money is locked until maturity. It is not suitable for an emergency fund — see [liquidity](/en/glossario/en-liquidity)
+- **Concentration**: the guarantee is per institution, so putting everything in one leaves the excess uncovered
 
-## Practical examples
-LCs are common in various industries, including international trade, construction, and [finance](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using). For example, imagine you are a business owner who imports products from China and pays **$10,000** per month. You can request an LC to ensure the supplier receives the payment. Another example is a business owner who provides consulting services and pays **$1,600** per month to employees. He can request an LC to ensure the employees receive the payment.
+## Before investing
 
-* Importing products from China: **$10,000** per month  
-* Sale of consulting services: **$1,600** per month  
-* Construction of a building: **$20,000** per month  
-
-## Start today
-Now that you know more about LCs, it’s time to start using this financial instrument in your business. **Practical tip:** It is important to research and compare the fees and terms of different banks before choosing one to issue your LC. In addition, it is important to read the LC terms carefully before accepting them. With LCs, you can reduce the risk of non‑payment and increase the security of your transactions. So, don’t waste any more time and start using LCs today! You can start by researching banks that offer LCs and comparing their fees and terms. Then, you can request an LC and begin using this financial instrument in your business. Remember that LCs are a secure form of payment, but it is important to work with a reliable and experienced bank to minimize the risks.
+- **Confirm whether it is an LC or an LCI/LCA.** The tax exemption changes the final result
+- **Check for a lock-up period.** With no early withdrawal, the term is a commitment, not a suggestion
+- **Add up what you already hold** at the same institution so you stay under the guarantee limit
+- **Compare net, not gross**: 115% of the benchmark with tax can end up below an exempt option paying less

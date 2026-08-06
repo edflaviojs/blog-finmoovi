@@ -1,53 +1,66 @@
 ---
-term: "lc"
-definition: "Entienda qué es lc, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
-title: "lc - Glosario Financiero"
-description: "Entienda qué es lc, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
+term: "LC (Letra de Câmbio)"
+definition: "LC es la sigla de Letra de Câmbio: un título de renta fija brasileño emitido por financieras, parecido al CDB y protegido por el fondo garantizador. Suele pagar más que un CDB de banco grande porque quien emite es una institución menor — y no tiene nada que ver con la LCI/LCA ni con la carta de crédito del comercio exterior."
+title: "LC (Letra de Câmbio) - Glosario Financiero"
+description: "Qué es la LC: cómo funciona, cuánto rinde, la protección del fondo garantizador, los riesgos y por qué se confunde con la LCI/LCA."
 image: "/images/glossario/lc.webp"
 imageAlt: "Monedas doradas y gráfico ascendente junto a planta en frasco con monedas."
-category: "basico"
-tags: ["lc", "glossário", "finanças", "glosario", "finanzas", "brasil"]
+category: "investimentos"
+tags: ["lc", "letra de cambio", "renta fija", "glosario", "finanzas", "brasil"]
 author: "FinMoovi"
 publishedAt: 2026-07-10
 readingTime: 5
 locale: "es"
 translationKey: "glossario-lc"
 seo:
-  metaTitle: "lc - Glosario Financiero"
-  metaDescription: "Entienda qué es lc, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
-  keywords: ["lc", "glossário", "finanças", "glosario", "finanzas", "brasil"]
+  metaTitle: "LC (Letra de Câmbio) - Glosario Financiero"
+  metaDescription: "Qué es la LC: cómo funciona, cuánto rinde, la protección del fondo garantizador, los riesgos y por qué se confunde con la LCI/LCA."
+  keywords: ["lc", "letra de cambio", "renta fija", "fondo garantizador", "glosario"]
 ---
 
 ## Qué es
-La LC, o Letra de [Crédito](/es/posts/es-tarjeta-de-credito-vs-tarjeta-de-debito-cual-vale-mas-la), es un término [financiero](/es/posts/es-pierdes-el-control-de-los-gastos-cuando-viajas-usando) que se refiere a un documento que garantiza el pago de una cantidad determinada de [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) a un proveedor o vendedor. En otras palabras, es como un cheque garantizado que asegura que el comprador pagará la cantidad acordada por los bienes o servicios recibidos. La LC es comúnmente utilizada en transacciones internacionales, pero también se utiliza en operaciones nacionales, especialmente en casos donde el comprador y el vendedor no tienen una relación de confianza establecida.
+
+LC es la sigla de **Letra de Câmbio** — un título de [renta fija](/es/glossario/es-renta-fija) brasileño emitido por **financieras**, no por bancos.
+
+Funciona igual que un [CDB](/es/glossario/es-cdb): prestas dinero a la institución por un plazo determinado y ella te devuelve con [intereses](/es/glossario/es-interes). La diferencia está en quién pide prestado.
+
+## Cuidado con el nombre: son tres cosas distintas
+
+Aquí es donde casi todos se pierden, y el nombre no ayuda:
+
+| Sigla | Qué es |
+| --- | --- |
+| **LC** | Letra de **Câmbio**. Emitida por una financiera. Paga Impuesto sobre la Renta |
+| **LCI / LCA** | Letras de **Crédito** inmobiliario y del agronegocio. Emitidas por bancos y **exentas** de impuesto para personas físicas — ver [LCI y LCA](/es/glossario/es-lci-y-lca) |
+| **Carta de crédito** | Instrumento de comercio exterior en el que un banco garantiza el pago entre comprador y vendedor. Nada que ver con invertir |
+
+A pesar del "câmbio" en el nombre, la LC **no tiene relación con moneda extranjera**. El término es histórico.
 
 ## Cómo funciona
-La LC funciona de la siguiente manera: el comprador solicita a su banco que emita una LC a favor del vendedor, especificando la cantidad de [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) que se pagará y las condiciones de la transacción. El banco del comprador entonces envía la LC al banco del vendedor, que la verifica y la acepta. Una vez que la LC ha sido aceptada, el vendedor puede presentar la documentación requerida para recibir el pago. La LC puede ser revocable o irrevocable, lo que significa que puede ser cancelada o modificada con o sin el consentimiento del vendedor.
 
-![Qué es](/images/glossario/lc-inline-1.webp)
+- Eliges una LC con plazo y tasa definidos (por ejemplo, 115% del [CDI](/es/glossario/es-cdi))
+- El dinero queda invertido hasta el vencimiento — muchas LC **no permiten rescate anticipado**
+- Al vencimiento recibes el capital más los intereses, con el impuesto ya descontado
 
-* Ventajas de la LC para el comprador:
- + Garantiza el pago solo si las condiciones de la transacción son cumplidas
- + Permite al comprador negociar mejores precios con el vendedor
- + Reduce el riesgo de fraude o incumplimiento del vendedor
-* Ventajas de la LC para el vendedor:
- + Garantiza el pago una vez que las condiciones de la transacción son cumplidas
- + Reduce el riesgo de impago o incumplimiento del comprador
- + Permite al vendedor ofrecer [crédito](/es/glossario/es-credito) al comprador sin asumir el riesgo de impago
+## Rinde más que un CDB, y hay un motivo
 
-## Ventajas
-Las ventajas de la LC son numerosas. Para el comprador, la LC ofrece una forma segura de pagar por bienes o servicios sin tener que pagar de inmediato. Por ejemplo, si un empresario quiere importar mercancías de China, puede solicitar una LC para garantizar el pago de €9.000 a los proveedores chinos. De esta manera, el empresario puede recibir las mercancías y venderlas antes de pagar el [valor](/es/glossario/es-valor-financiero) total. Para el vendedor, la LC ofrece una forma segura de recibir el pago por los bienes o servicios vendidos. Por ejemplo, si un productor de soja de una región quiere vender su producción a un comprador de una ciudad, puede solicitar una LC para garantizar el pago de €18.000.
+Las LC suelen ofrecer mejores tasas que los CDB de bancos grandes. No es generosidad: es el precio del riesgo. Las financieras son instituciones **menores**, con menos acceso a dinero barato, y por eso pagan más para captar.
+
+Lo que nivela el juego es el **[fondo garantizador (FGC)](/es/glossario/es-garantia-fgc)**: si la financiera quiebra, el fondo devuelve tu dinero hasta el límite garantizado, por contribuyente y por institución — la misma cobertura que tiene un CDB.
+
+## Impuesto
+
+La LC sigue la tabla regresiva del [Impuesto sobre la Renta](/es/glossario/es-impuesto-sobre-la-renta), igual que el CDB: cuanto más tiempo queda invertido el dinero, menor la tasa. **No es exenta** — las exentas son la LCI/LCA, y por eso mismo confundirlas cuesta dinero al comparar.
 
 ## Riesgos
-Aunque la LC es un instrumento financiero seguro, también conlleva algunos riesgos. Por ejemplo, si el comprador no cumple con las condiciones de la transacción, la LC puede ser rechazada y el vendedor puede no recibir el pago. **Consejo práctico:** siempre es importante leer cuidadosamente las condiciones de la LC y asegurarse de que se cumplan todas las obligaciones antes de solicitar el pago. Otro riesgo es que la LC puede ser costosa, ya que los bancos cobran comisiones por emitir y gestionar la LC. **Consejo práctico:** es importante comparar las comisiones de diferentes bancos antes de elegir uno para emitir la LC. **Consejo práctico:** también es importante asegurarse de que la LC sea irrevocable, para evitar que el comprador la cancele o modifique sin el consentimiento del vendedor.
 
-![Ventajas](/images/glossario/lc-inline-3.webp)
+- **Riesgo de crédito**: la financiera puede quebrar. El fondo cubre hasta su límite; por encima, dependes de la institución
+- **Riesgo de [liquidez](/es/glossario/es-liquidez)**: si la LC no tiene rescate anticipado, el dinero queda inmovilizado hasta el vencimiento. No sirve para fondo de emergencia
+- **Concentración**: la garantía es por institución, así que poner todo en una sola deja el excedente descubierto
 
-## Ejemplos prácticos
-Un ejemplo práctico de cómo funciona la LC es el siguiente: supongamos que un empresario de una ciudad quiere comprar €3.600 en mercancías de un proveedor. El empresario puede solicitar una LC para garantizar el pago de las mercancías, y el proveedor puede aceptar la LC como garantía de pago. Una vez que el proveedor entrega las mercancías, el empresario puede venderlas y pagar el valor total de €3.600. Otro ejemplo es el de un trabajador que gana €900 al mes y quiere comprar un automóvil por €5.400. El trabajador puede solicitar una LC para garantizar el pago del automóvil, y el vendedor puede aceptar la LC como garantía de pago. Una vez que el trabajador recibe el automóvil, puede pagar el valor total de €5.400 en cuotas mensuales.
+## Antes de invertir
 
-## Cómo empezar
-Para empezar a utilizar la LC, es importante elegir un banco que ofrezca este servicio y comparar las comisiones y condiciones de diferentes bancos. **Consejo práctico:** es importante leer cuidadosamente las condiciones de la LC y asegurarse de que se cumplan todas las obligaciones antes de solicitar el pago. También es importante asegurarse de que la LC sea irrevocable, para evitar que el comprador la cancele o modifique sin el consentimiento del vendedor. **Consejo práctico:** es importante mantener un registro detallado de todas las transacciones y comunicaciones relacionadas con la LC, para evitar malentendidos o disputas.
-
-## Empieza hoy
-No espere más para empezar a utilizar la LC y aprovechar sus beneficios. Con la LC, puede garantizar el pago de sus compras y reducir el riesgo de fraude o incumplimiento. **Consejo práctico:** comience por investigar y comparar las comisiones y condiciones de diferentes bancos, y elija el que mejor se adapte a sus necesidades. ¡Empieza hoy y descubre cómo la LC puede ayudarte a crecer tu negocio o a realizar tus compras de manera segura!
+- **Confirma si es LC o LCI/LCA.** La exención de impuesto cambia el resultado final
+- **Revisa si hay carencia.** Sin rescate anticipado, el plazo es un compromiso, no una sugerencia
+- **Suma lo que ya tienes** en la misma institución para no pasar del límite garantizado
+- **Compara el neto, no el bruto**: 115% del CDI con impuesto puede rendir menos que una exenta con tasa menor
