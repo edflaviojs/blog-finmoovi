@@ -41,7 +41,7 @@ Supongamos que ganas €810 al mes y decides invertir €360 en un fondo que pag
 
 ![Ventajas](/images/glossario/taxa-inline-3.webp)
 
-Al entender la tasa, puedes negociar mejores condiciones con tu banco o buscar [alternativas](/es/posts/es-5-alternativas-a-organizze-en-2026-opciones-para-administrar) en fintechs (empresas de tecnología financiera) que ofrezcan tasas más competitivas. Por ejemplo, una app de gestión de finanzas como **[FinMoovi](/es/glossario/es-nubank)** te muestra en tiempo real la tasa de tus tarjetas y préstamos, facilitando la comparación.
+Al entender la tasa, puedes negociar mejores condiciones con tu banco o buscar [alternativas](/es/posts/es-5-alternativas-a-organizze-en-2026-opciones-para-administrar) en fintechs (empresas de tecnología financiera) que ofrezcan tasas más competitivas. Por ejemplo, una app de gestión de finanzas como **FinMoovi** te muestra en tiempo real la tasa de tus tarjetas y préstamos, facilitando la comparación.
 
 ## Riesgos
 

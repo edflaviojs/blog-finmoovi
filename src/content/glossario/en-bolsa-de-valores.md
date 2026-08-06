@@ -19,7 +19,7 @@ seo:
 ---
 
 ## What it is
-The stock exchange, also known as the market for [ações](/en/glossario/en-stocks), is a place where people buy and sell small pieces of companies, known as stocks. Imagine you own a small piece of a company, like [Nubank](/en/glossario/en-nubank) or Magazine Luiza. When the company does well, the [valor](/en/glossario/en-financial-value) of your stock rises, and you can sell it for a higher price than you paid. It’s like having a small share of a business that can grow and generate profits.
+The stock exchange, also known as the market for [ações](/en/glossario/en-stocks), is a place where people buy and sell small pieces of companies, known as stocks. Imagine you own a small piece of a company, like Nubank or Magazine Luiza. When the company does well, the [valor](/en/glossario/en-financial-value) of your stock rises, and you can sell it for a higher price than you paid. It’s like having a small share of a business that can grow and generate profits.
 
 * Ações: small pieces of companies that can be bought and sold
 * Títulos: documents that represent ownership of stocks or other investments

@@ -22,7 +22,7 @@ Volatility is the intensity with which the price of an [investment](/en/posts/en
 | [Savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet) | Almost zero | 0% |
 | Treasury [Selic](/en/glossario/en-selic) | Very low | 0.03% |
 | [Stocks](/en/glossario/en-stocks) (Ibovespa) | Medium | 1-2% |
-| [Bitcoin](/en/glossario/en-bitcoin) | Very high | 3-10% |
+| Bitcoin | Very high | 3-10% |
 | Meme coins | Extreme | 10-50% |
 
 ## Is volatility bad?

@@ -64,4 +64,4 @@ Here are some practical tips for investing in stocks:
 * **Monitor your investment**: regularly checking your investment is essential to ensure it aligns with your financial goals.
 
 ## Start today
-Now that you understand better how stocks work, it’s time to start investing. **Practical tip:** You can use an investment app, such as [Nubank](/en/glossario/en-nubank), to begin buying stocks. Nubank offers an easy‑to‑use platform and low transaction fees, making it more accessible for you to start investing. Remember that investing in stocks involves risks, but it also offers growth potential and dividends. So, don’t hesitate to start investing today and achieve your financial goals.
+Now that you understand better how stocks work, it’s time to start investing. **Practical tip:** You can use an investment app, such as Nubank, to begin buying stocks. Nubank offers an easy‑to‑use platform and low transaction fees, making it more accessible for you to start investing. Remember that investing in stocks involves risks, but it also offers growth potential and dividends. So, don’t hesitate to start investing today and achieve your financial goals.

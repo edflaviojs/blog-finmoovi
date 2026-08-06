@@ -67,7 +67,7 @@ Veamos cómo la poupança puede ayudar a personas con diferentes salarios.
 
 Abrir una poupança es tan fácil como abrir una cuenta corriente. Sigue estos pasos y estarás listo para comenzar a ahorrar sin complicaciones.  
 
-- **Elige el banco:** compara la tasa de interés y las tarifas; bancos digitales como [Nubank](/es/glossario/es-nubank) o Banco Inter suelen ofrecer procesos 100 % online.  
+- **Elige el banco:** compara la tasa de interés y las tarifas; bancos digitales como Nubank o Banco Inter suelen ofrecer procesos 100 % online.  
 - **Regístrate en la app:** descarga la aplicación, completa tu cadastro (registro) y verifica tu identidad con foto de documento; el proceso dura menos de 10 minutos.  
 - **Define tu aporte:** decide qué porcentaje de tu salario vas a transferir. **Consejo práctico:** programa una transferencia automática el día que recibes tu pago para que el ahorro sea automático.  
 - **Monitorea tu saldo:** revisa la app cada mes y celebra cada nuevo cero en la cuenta corriente; **Consejo práctico:** usa notificaciones push para recibir alertas cuando el saldo crezca un 5 % más.  
