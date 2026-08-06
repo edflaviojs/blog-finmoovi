@@ -581,8 +581,10 @@
       "category": "glossario",
       "priority": 3,
       "source": "autocomplete",
-      "status": "pending",
-      "addedAt": "2026-08-03T10:31:32.126Z"
+      "status": "skipped",
+      "addedAt": "2026-08-03T10:31:32.126Z",
+      "reason": "variacao-duplicada",
+      "skippedRef": "categoria de despesa"
     },
     {
       "keyword": "categoria de despesas pessoais",
@@ -605,32 +607,40 @@
       "category": "glossario",
       "priority": 3,
       "source": "autocomplete",
-      "status": "pending",
-      "addedAt": "2026-08-03T10:31:32.127Z"
+      "status": "skipped",
+      "addedAt": "2026-08-03T10:31:32.127Z",
+      "reason": "fora-do-nicho",
+      "skippedRef": "politica, nao financas pessoais"
     },
     {
       "keyword": "teto de gastos campanha eleitoral 2026",
       "category": "glossario",
       "priority": 3,
       "source": "autocomplete",
-      "status": "pending",
-      "addedAt": "2026-08-03T10:31:32.127Z"
+      "status": "skipped",
+      "addedAt": "2026-08-03T10:31:32.127Z",
+      "reason": "fora-do-nicho",
+      "skippedRef": "politica, nao financas pessoais"
     },
     {
       "keyword": "teto de gastos temer",
       "category": "glossario",
       "priority": 3,
       "source": "autocomplete",
-      "status": "pending",
-      "addedAt": "2026-08-03T10:31:32.127Z"
+      "status": "skipped",
+      "addedAt": "2026-08-03T10:31:32.127Z",
+      "reason": "fora-do-nicho",
+      "skippedRef": "politica, nao financas pessoais"
     },
     {
       "keyword": "despesa recorrente significado",
       "category": "glossario",
       "priority": 3,
       "source": "autocomplete",
-      "status": "pending",
-      "addedAt": "2026-08-03T10:31:32.127Z"
+      "status": "skipped",
+      "addedAt": "2026-08-03T10:31:32.127Z",
+      "reason": "variacao-duplicada",
+      "skippedRef": "despesa recorrente"
     },
     {
       "keyword": "despesa recorrente splitwise",
@@ -653,16 +663,20 @@
       "category": "glossario",
       "priority": 3,
       "source": "autocomplete",
-      "status": "pending",
-      "addedAt": "2026-08-03T10:31:32.129Z"
+      "status": "skipped",
+      "addedAt": "2026-08-03T10:31:32.129Z",
+      "reason": "variacao-duplicada",
+      "skippedRef": "controle de gastos"
     },
     {
       "keyword": "controle de gastos planilha",
       "category": "glossario",
       "priority": 3,
       "source": "autocomplete",
-      "status": "pending",
-      "addedAt": "2026-08-03T10:31:32.129Z"
+      "status": "skipped",
+      "addedAt": "2026-08-03T10:31:32.129Z",
+      "reason": "variacao-duplicada",
+      "skippedRef": "controle de gastos"
     },
     {
       "keyword": "app de controle financeiro",
@@ -770,9 +784,11 @@
       "category": "glossario",
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "skipped",
       "addedAt": "2026-08-04T14:48:06.708Z",
-      "finmooviHook": "enviado via /status 04/08"
+      "finmooviHook": "enviado via /status 04/08",
+      "reason": "verbete-ja-existe",
+      "skippedRef": "glossario/credito"
     },
     {
       "keyword": "cartao de credito pagbank como funciona",
@@ -833,18 +849,22 @@
       "category": "glossario",
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "skipped",
       "addedAt": "2026-08-04T14:48:06.711Z",
-      "finmooviHook": "enviado via /status 04/08"
+      "finmooviHook": "enviado via /status 04/08",
+      "reason": "verbete-ja-existe",
+      "skippedRef": "glossario/financiamento"
     },
     {
       "keyword": "como funciona financiamento bancário",
       "category": "glossario",
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "skipped",
       "addedAt": "2026-08-04T14:48:06.711Z",
-      "finmooviHook": "enviado via /status 04/08"
+      "finmooviHook": "enviado via /status 04/08",
+      "reason": "verbete-ja-existe",
+      "skippedRef": "glossario/financiamento"
     },
     {
       "keyword": "como funciona financiamento de carro",
@@ -860,9 +880,11 @@
       "category": "glossario",
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "skipped",
       "addedAt": "2026-08-04T14:48:06.711Z",
-      "finmooviHook": "enviado via /status 04/08"
+      "finmooviHook": "enviado via /status 04/08",
+      "reason": "variacao-duplicada",
+      "skippedRef": "como funciona financiamento de carro"
     },
     {
       "keyword": "como funciona financiamento de casas",
@@ -887,9 +909,11 @@
       "category": "glossario",
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "skipped",
       "addedAt": "2026-08-04T14:48:06.711Z",
-      "finmooviHook": "enviado via /status 04/08"
+      "finmooviHook": "enviado via /status 04/08",
+      "reason": "variacao-duplicada",
+      "skippedRef": "como funciona financiamento de moto"
     },
     {
       "keyword": "como funciona financiamento de veiculo",
@@ -905,9 +929,11 @@
       "category": "glossario",
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "skipped",
       "addedAt": "2026-08-04T14:48:06.712Z",
-      "finmooviHook": "enviado via /status 04/08"
+      "finmooviHook": "enviado via /status 04/08",
+      "reason": "variacao-duplicada",
+      "skippedRef": "como funciona financiamento de veiculo"
     },
     {
       "keyword": "como funciona minha casa minha vida financiamento",
@@ -995,45 +1021,55 @@
       "category": "glossario",
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "skipped",
       "addedAt": "2026-08-04T15:06:04.008Z",
-      "finmooviHook": "enviado via /status 04/08"
+      "finmooviHook": "enviado via /status 04/08",
+      "reason": "verbete-ja-existe",
+      "skippedRef": "glossario/juros"
     },
     {
       "keyword": "conceito de juros simples",
       "category": "glossario",
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "skipped",
       "addedAt": "2026-08-04T15:06:04.008Z",
-      "finmooviHook": "enviado via /status 04/08"
+      "finmooviHook": "enviado via /status 04/08",
+      "reason": "verbete-ja-existe",
+      "skippedRef": "glossario/juros-simples"
     },
     {
       "keyword": "conceitos de juros",
       "category": "glossario",
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "skipped",
       "addedAt": "2026-08-04T15:06:04.008Z",
-      "finmooviHook": "enviado via /status 04/08"
+      "finmooviHook": "enviado via /status 04/08",
+      "reason": "variacao-duplicada",
+      "skippedRef": "conceito de juros"
     },
     {
       "keyword": "conceitos de juros simples",
       "category": "glossario",
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "skipped",
       "addedAt": "2026-08-04T15:06:04.008Z",
-      "finmooviHook": "enviado via /status 04/08"
+      "finmooviHook": "enviado via /status 04/08",
+      "reason": "variacao-duplicada",
+      "skippedRef": "conceito de juros simples"
     },
     {
       "keyword": "financiamento o que e",
       "category": "glossario",
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "skipped",
       "addedAt": "2026-08-04T15:06:04.008Z",
-      "finmooviHook": "enviado via /status 04/08"
+      "finmooviHook": "enviado via /status 04/08",
+      "reason": "verbete-ja-existe",
+      "skippedRef": "glossario/financiamento"
     },
     {
       "keyword": "juros de mora o que e",
@@ -1049,9 +1085,11 @@
       "category": "glossario",
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "skipped",
       "addedAt": "2026-08-04T15:06:04.008Z",
-      "finmooviHook": "enviado via /status 04/08"
+      "finmooviHook": "enviado via /status 04/08",
+      "reason": "verbete-ja-existe",
+      "skippedRef": "glossario/juros"
     },
     {
       "keyword": "no contexto da economia a relacao entre consumo investimento",
@@ -1085,18 +1123,22 @@
       "category": "glossario",
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "skipped",
       "addedAt": "2026-08-04T15:06:04.008Z",
-      "finmooviHook": "enviado via /status 04/08"
+      "finmooviHook": "enviado via /status 04/08",
+      "reason": "verbete-ja-existe",
+      "skippedRef": "glossario/juros"
     },
     {
       "keyword": "o que e juros de mora",
       "category": "glossario",
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "skipped",
       "addedAt": "2026-08-04T15:06:04.008Z",
-      "finmooviHook": "enviado via /status 04/08"
+      "finmooviHook": "enviado via /status 04/08",
+      "reason": "variacao-duplicada",
+      "skippedRef": "juros de mora o que e"
     },
     {
       "keyword": "o que e juros sobre capital proprio",
@@ -1130,27 +1172,33 @@
       "category": "glossario",
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "skipped",
       "addedAt": "2026-08-04T15:06:04.008Z",
-      "finmooviHook": "enviado via /status 04/08"
+      "finmooviHook": "enviado via /status 04/08",
+      "reason": "verbete-ja-existe",
+      "skippedRef": "glossario/juros"
     },
     {
       "keyword": "o que significa a palavra juro",
       "category": "glossario",
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "skipped",
       "addedAt": "2026-08-04T15:06:04.008Z",
-      "finmooviHook": "enviado via /status 04/08"
+      "finmooviHook": "enviado via /status 04/08",
+      "reason": "verbete-ja-existe",
+      "skippedRef": "glossario/juros"
     },
     {
       "keyword": "o que significa a palavra juros",
       "category": "glossario",
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "skipped",
       "addedAt": "2026-08-04T15:06:04.008Z",
-      "finmooviHook": "enviado via /status 04/08"
+      "finmooviHook": "enviado via /status 04/08",
+      "reason": "variacao-duplicada",
+      "skippedRef": "o que significa a palavra juro"
     },
     {
       "keyword": "o que significa cred juros no extrato da caixa",
@@ -1166,45 +1214,55 @@
       "category": "glossario",
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "skipped",
       "addedAt": "2026-08-04T15:06:04.009Z",
-      "finmooviHook": "enviado via /status 04/08"
+      "finmooviHook": "enviado via /status 04/08",
+      "reason": "verbete-ja-existe",
+      "skippedRef": "glossario/juros-compostos"
     },
     {
       "keyword": "o que significa juros de mora",
       "category": "glossario",
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "skipped",
       "addedAt": "2026-08-04T15:06:04.009Z",
-      "finmooviHook": "enviado via /status 04/08"
+      "finmooviHook": "enviado via /status 04/08",
+      "reason": "variacao-duplicada",
+      "skippedRef": "juros de mora o que e"
     },
     {
       "keyword": "o que significa taxa",
       "category": "glossario",
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "skipped",
       "addedAt": "2026-08-04T15:06:04.009Z",
-      "finmooviHook": "enviado via /status 04/08"
+      "finmooviHook": "enviado via /status 04/08",
+      "reason": "variacao-duplicada",
+      "skippedRef": "o que e taxa"
     },
     {
       "keyword": "oq significa juro",
       "category": "glossario",
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "skipped",
       "addedAt": "2026-08-04T15:06:04.009Z",
-      "finmooviHook": "enviado via /status 04/08"
+      "finmooviHook": "enviado via /status 04/08",
+      "reason": "variacao-duplicada",
+      "skippedRef": "o que significa a palavra juro"
     },
     {
       "keyword": "quais investimentos tem juros compostos",
       "category": "glossario",
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "skipped",
       "addedAt": "2026-08-04T15:06:04.009Z",
-      "finmooviHook": "enviado via /status 04/08"
+      "finmooviHook": "enviado via /status 04/08",
+      "reason": "verbete-ja-existe",
+      "skippedRef": "glossario/juros-compostos"
     },
     {
       "keyword": "simulador de investimento sardinha",
@@ -1265,9 +1323,11 @@
       "category": "glossario",
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "skipped",
       "addedAt": "2026-08-04T15:06:04.009Z",
-      "finmooviHook": "enviado via /status 04/08"
+      "finmooviHook": "enviado via /status 04/08",
+      "reason": "variacao-duplicada",
+      "skippedRef": "guardar dinheiro"
     },
     {
       "keyword": "juntar dinheiro em um ano",
@@ -1310,9 +1370,11 @@
       "category": "glossario",
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "skipped",
       "addedAt": "2026-08-04T15:06:04.010Z",
-      "finmooviHook": "enviado via /status 04/08"
+      "finmooviHook": "enviado via /status 04/08",
+      "reason": "verbete-ja-existe",
+      "skippedRef": "glossario/poupanca"
     },
     {
       "keyword": "o que fazer para economizar energia",
@@ -1337,9 +1399,11 @@
       "category": "glossario",
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "skipped",
       "addedAt": "2026-08-04T15:06:04.010Z",
-      "finmooviHook": "enviado via /status 04/08"
+      "finmooviHook": "enviado via /status 04/08",
+      "reason": "variacao-duplicada",
+      "skippedRef": "o que significa economizar"
     },
     {
       "keyword": "planejamento para guardar dinheiro",

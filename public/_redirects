@@ -761,3 +761,44 @@
 /es/glossario/es-emprestimo-glosario-financiero/  /es/glossario/es-prestamo/  301
 /en/glossario/en-credito  /en/glossario/en-credit/  301
 /en/glossario/en-credito/  /en/glossario/en-credit/  301
+
+# Consolidacao do glossario (canibalizacao) - 2026-08-06
+# 5 verbetes x 3 idiomas retirados: repetiam o conteudo do vencedor do mesmo
+# tema e competiam com ele no Google. Cada origem aparece DUAS vezes, com e sem
+# barra final (ver o aviso no topo deste ficheiro).
+
+# --- Gasto fixo: mensal / de uma empresa -> gasto-fixo ---
+/glossario/gasto-fixo-mensal  /glossario/gasto-fixo/  301
+/glossario/gasto-fixo-mensal/  /glossario/gasto-fixo/  301
+/en/glossario/en-monthly-fixed-expense  /en/glossario/en-fixed-expense/  301
+/en/glossario/en-monthly-fixed-expense/  /en/glossario/en-fixed-expense/  301
+/es/glossario/es-gasto-fijo-mensual  /es/glossario/es-gasto-fijo/  301
+/es/glossario/es-gasto-fijo-mensual/  /es/glossario/es-gasto-fijo/  301
+/glossario/gasto-fixo-de-uma-empresa  /glossario/gasto-fixo/  301
+/glossario/gasto-fixo-de-uma-empresa/  /glossario/gasto-fixo/  301
+/en/glossario/en-fixed-expense-of-a-company  /en/glossario/en-fixed-expense/  301
+/en/glossario/en-fixed-expense-of-a-company/  /en/glossario/en-fixed-expense/  301
+/es/glossario/es-gasto-fijo-de-una-empresa  /es/glossario/es-gasto-fijo/  301
+/es/glossario/es-gasto-fijo-de-una-empresa/  /es/glossario/es-gasto-fijo/  301
+
+# --- Gasto variavel: unitario / exemplo -> gasto-variavel ---
+/glossario/gasto-variavel-unitario  /glossario/gasto-variavel/  301
+/glossario/gasto-variavel-unitario/  /glossario/gasto-variavel/  301
+/en/glossario/en-unit-variable-expense  /en/glossario/en-variable-expense/  301
+/en/glossario/en-unit-variable-expense/  /en/glossario/en-variable-expense/  301
+/es/glossario/es-gasto-variable-unitario  /es/glossario/es-gasto-variable/  301
+/es/glossario/es-gasto-variable-unitario/  /es/glossario/es-gasto-variable/  301
+/glossario/exemplo-de-gasto-variavel  /glossario/gasto-variavel/  301
+/glossario/exemplo-de-gasto-variavel/  /glossario/gasto-variavel/  301
+/en/glossario/en-variable-expense-example  /en/glossario/en-variable-expense/  301
+/en/glossario/en-variable-expense-example/  /en/glossario/en-variable-expense/  301
+/es/glossario/es-ejemplo-de-gasto-variable  /es/glossario/es-gasto-variable/  301
+/es/glossario/es-ejemplo-de-gasto-variable/  /es/glossario/es-gasto-variable/  301
+
+# --- Know Your Customer (234 palavras, ja apontava para o kyc) -> kyc ---
+/glossario/know-your-customer  /glossario/kyc/  301
+/glossario/know-your-customer/  /glossario/kyc/  301
+/en/glossario/en-know-your-customer  /en/glossario/en-kyc/  301
+/en/glossario/en-know-your-customer/  /en/glossario/en-kyc/  301
+/es/glossario/es-know-your-customer  /es/glossario/es-kyc/  301
+/es/glossario/es-know-your-customer/  /es/glossario/es-kyc/  301

@@ -18,7 +18,7 @@ seo:
 ---
 
 ## O que é KYC
-O termo KYC, ou "[Know Your Customer](/glossario/know-your-customer)" (Conheça Seu Cliente), é um conceito fundamental no mundo das finanças, especialmente quando se trata de serviços bancários e [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026). Basicamente, o KYC é um conjunto de procedimentos que as instituições financeiras devem seguir para verificar a identidade e a legitimidade de seus clientes. Isso inclui coletar e verificar informações como nome, endereço, data de nascimento, número de CPF e outros dados pessoais.
+O termo KYC, ou "Know Your Customer" (Conheça Seu Cliente), é um conceito fundamental no mundo das finanças, especialmente quando se trata de serviços bancários e [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026). Basicamente, o KYC é um conjunto de procedimentos que as instituições financeiras devem seguir para verificar a identidade e a legitimidade de seus clientes. Isso inclui coletar e verificar informações como nome, endereço, data de nascimento, número de CPF e outros dados pessoais.
 
 Essas informações são cruciais para que as instituições financeiras possam cumprir com as regulamentações anti-lavagem de [dinheiro](/posts/cashback-inteligente) e combate ao [financiamento](/glossario/financiamento) do terrorismo, conhecidas como AML (Anti-Money Laundering) e CFT (Combate ao Financiamento do Terrorismo). Além disso, o KYC ajuda a prevenir fraudes e a proteger os clientes contra atividades ilegais.
 
