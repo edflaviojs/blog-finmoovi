@@ -35,6 +35,10 @@ on:
       hora:
         description: 'Hora de publicar, no relógio do Brasil (vazio = 19)'
         required: false
+      inspecionar:
+        description: 'SÓ LER: perguntar ao Multipost que opções ele aceita e o que guardou (não entrega nada)'
+        type: boolean
+        default: false
   # 🔴 RELÓGIO DESLIGADO À NASCENÇA. Liga-se depois da primeira entrega conferida.
   # schedule:
   #   - cron: '20 15 * * *'
@@ -49,7 +53,29 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # 🔎 O INSPETOR — só lê. Existe porque a capa do Reel foi mandada durante duas semanas
+  # num campo que não existe e **nada se queixou**: este servidor deita fora em silêncio
+  # o que não conhece. Em vez de adivinhar, pergunta-se-lhe. Ver `inspecionar()`.
+  inspecionar:
+    if: github.event.inputs.inspecionar == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - run: npm ci
+      - name: Perguntar ao Multipost o que ele aceita
+        env:
+          MULTIPOST_API_KEY: ${{ secrets.MULTIPOST_API_KEY }}
+        run: node src/scripts/multipost/entregar.js --inspecionar
+
   entregar:
+    # ⚠️ Num relógio este campo vem VAZIO, e vazio ≠ 'true' — portanto a entrega corre
+    # normalmente. É a mesma armadilha dos interruptores que já custou um robô mudo.
+    if: github.event.inputs.inspecionar != 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:

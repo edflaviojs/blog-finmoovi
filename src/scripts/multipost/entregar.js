@@ -35,6 +35,7 @@
  *   node src/scripts/multipost/entregar.js --slug=juros-compostos
  *   node src/scripts/multipost/entregar.js --slug=juros-compostos --dry-run
  *   node src/scripts/multipost/entregar.js --slug=X --hora=20
+ *   node src/scripts/multipost/entregar.js --inspecionar   ← só lê: o que o servidor aceita e guardou
  */
 
 import { readFileSync, writeFileSync, existsSync, statSync, mkdirSync } from 'node:fs';
@@ -342,22 +343,79 @@ async function enviarFicheiro(k, caminho, nome, tipo = 'video/mp4') {
   return media;
 }
 
-async function agendar(k, { canalId, media, capa, legenda, quandoUTC }) {
-  const corpo = {
+/**
+ * 🔴 06/08/2026 — A CAPA IA NO SÍTIO ERRADO, E NUNCA CHEGOU AO INSTAGRAM.
+ *
+ * Estava a ser mandada como `settings.cover`. **Esse campo não existe.** Três provas,
+ * independentes umas das outras:
+ *   1. a lista de opções do Instagram que o servidor aceita (`InstagramDto`) tem
+ *      `post_type`, `is_trial_reel`, `graduation_strategy`, `collaborators` e `audio`
+ *      — e mais nada. O que não está na lista é **deitado fora sem erro**;
+ *   2. o código que fala com o Instagram nunca lê `settings.cover`;
+ *   3. o dono viu o resultado: no painel, o "Editor" da capa do Reel aparece **vazio**.
+ *
+ * **O sítio certo é junto do VÍDEO, não nas opções**: o objeto de média aceita um campo
+ * `thumbnail` com o ENDEREÇO da imagem, e é esse que vira o `cover_url` do Instagram —
+ * o parâmetro oficial da Meta para a capa de um Reel (a Meta dá-lhe precedência sobre o
+ * fotograma escolhido por tempo).
+ *
+ * ⚠️ **O `thumbnail` TEM DE SER UM ENDEREÇO COMPLETO.** O servidor valida-o como URL: um
+ * caminho relativo faz o agendamento inteiro falhar com 400 — ou seja, **um dia sem
+ * publicação por causa de uma imagem**. Por isso é conferido aqui, e na dúvida vai-se
+ * sem capa. É a mesma regra que já valia para o envio da capa: nada de imagem pode
+ * derrubar a publicação.
+ */
+export function objetoDaMedia(media, capa, registar = () => {}) {
+  const base = { id: media.id, path: media.path };
+  if (!capa) return base;
+  if (!/^https?:\/\//i.test(String(capa.path || ''))) {
+    registar(`⚠️ a capa veio com um endereço estranho ("${capa.path}") — segue sem capa, para não derrubar a publicação.`);
+    return base;
+  }
+  return { ...base, thumbnail: capa.path };
+}
+
+/**
+ * O pedido inteiro, montado à parte para poder ser CONFERIDO sem rede nenhuma
+ * (`src/scripts/validacao/validar-multipost.js`). Antes vivia dentro do envio, e por
+ * isso a única forma de o ver era publicar.
+ */
+export function corpoDoAgendamento({ canalId, media, capa, legenda, quandoUTC }, registar = () => {}) {
+  return {
     type: 'schedule',
     date: quandoUTC.toISOString(),
     shortLink: false,
     tags: [],
     posts: [{
       integration: { id: canalId },
-      value: [{ content: legendaEmHtml(legenda), image: [{ id: media.id, path: media.path }] }],
-      // A capa é o que aparece na grelha do perfil. Sem ela, o Instagram escolhe um
-      // fotograma ao calhas — que é o que acontece hoje nos 11 Shorts do YouTube.
-      settings: capa
-        ? { __type: 'instagram', post_type: 'post', cover: { id: capa.id, path: capa.path } }
-        : { __type: 'instagram', post_type: 'post' },
+      value: [{ content: legendaEmHtml(legenda), image: [objetoDaMedia(media, capa, registar)] }],
+      /**
+       * ♦ 06/08/2026 — O REEL DE TESTE, POR ORDEM DO DONO.
+       *
+       * O Instagram mostra o Reel **primeiro só a quem NÃO segue o perfil**; se os
+       * números forem bons, ele "gradua" e passa também aos seguidores. Para um canal a
+       * começar, quem interessa alcançar é exatamente quem ainda não segue.
+       *
+       * ⚠️ **A graduação é AUTOMÁTICA (`SS_PERFORMANCE`) e não é detalhe.** Na outra
+       * opção (`MANUAL`) é preciso alguém carregar num botão para o vídeo chegar aos
+       * seguidores — e uma regra que depende de alguém se lembrar não é uma regra. Ficaria
+       * um Reel por semana preso, sem ninguém dar por nada.
+       *
+       * ⚠️ E o Instagram **não deixa ter convidados (`collaborators`) num Reel de teste**.
+       * Hoje não usamos convidados; no dia em que houver uma parceria, é preciso escolher.
+       */
+      settings: {
+        __type: 'instagram',
+        post_type: 'post',
+        is_trial_reel: true,
+        graduation_strategy: 'SS_PERFORMANCE',
+      },
     }],
   };
+}
+
+async function agendar(k, pedido) {
+  const corpo = corpoDoAgendamento(pedido, log);
   const res = await fetch(`${API}/posts`, {
     method: 'POST',
     headers: { Authorization: k, 'Content-Type': 'application/json' },
@@ -388,9 +446,73 @@ async function confirmarNaAgenda(k, postId, quandoUTC) {
   return (d?.posts || []).some((p) => p.id === postId);
 }
 
+/**
+ * 🔎 O INSPETOR — pergunta ao Multipost o que ele aceita, em vez de adivinharmos.
+ *
+ * ═══ POR QUE ISTO EXISTE ═══
+ * A capa do Reel foi mandada durante duas semanas num campo que não existe, e **nada se
+ * queixou**: o servidor deita fora em silêncio o que não conhece. Descobriu-se a olhar
+ * para o painel, não para o código — e só porque o dono reparou que o "Editor" da capa
+ * estava vazio.
+ *
+ * Este servidor sabe responder exatamente **que opções aceita para cada canal**. Uma
+ * pergunta, sem escrever nada, e acaba a adivinhação. Correr sempre que se quiser usar
+ * uma opção nova do Instagram — e depois de qualquer atualização do Multipost, porque a
+ * lista muda com a versão dele.
+ *
+ * Uso: node src/scripts/multipost/entregar.js --inspecionar
+ */
+async function inspecionar() {
+  const k = chave();
+  const canal = await canalDoInstagram(k);
+  log(`\n📱 canal: ${canal.name}  (${canal.identifier})  id=${canal.id}\n`);
+
+  log('── AS OPÇÕES QUE ESTE SERVIDOR ACEITA PARA O INSTAGRAM ──');
+  const r = await fetch(`${API}/integration-settings/${encodeURIComponent(canal.id)}`, { headers: { Authorization: k } });
+  const t = await r.text();
+  if (!r.ok) log(`⚠️ não deu para perguntar (${r.status}): ${t.slice(0, 300)}`);
+  else {
+    try {
+      const j = JSON.parse(t);
+      log(JSON.stringify(j?.output?.settings ?? j, null, 2).slice(0, 4000));
+      const cru = JSON.stringify(j);
+      log(`\n🖼️  fala de capa? ${/cover|thumbnail/i.test(cru) ? '✅ SIM — e o nome do campo está aí em cima' : '❌ não aparece nenhum campo de capa nas OPÇÕES (então ela vai junto do vídeo)'}`);
+      log(`🧪 fala de reel de teste? ${/trial/i.test(cru) ? '✅ sim' : '❌ não'}`);
+    } catch { log(t.slice(0, 1500)); }
+  }
+
+  /**
+   * ⚠️ E o que ele GUARDOU do que já lhe mandámos — que é a única prova de que um campo
+   * sobreviveu. Um campo que ele aceita mas não guarda é igual a um campo que não existe.
+   */
+  log('\n── O QUE ELE GUARDOU DAS ÚLTIMAS PUBLICAÇÕES ──');
+  const agora = Date.now();
+  const p = await fetch(
+    `${API}/posts?startDate=${new Date(agora - 30 * 864e5).toISOString()}&endDate=${new Date(agora + 30 * 864e5).toISOString()}`,
+    { headers: { Authorization: k } },
+  );
+  if (!p.ok) { log(`⚠️ não deu para listar (${p.status})`); return 0; }
+  const lista = (await p.json())?.posts || [];
+  log(`${lista.length} publicação(ões) na janela de 60 dias.`);
+  for (const post of lista.slice(0, 5)) {
+    log(`\n  • ${post.id}  ${post.publishDate || post.date || ''}  estado=${post.state || '?'}`);
+    for (const campo of ['settings', 'image', 'media', 'content']) {
+      if (post[campo] === undefined) continue;
+      const v = typeof post[campo] === 'string' ? post[campo] : JSON.stringify(post[campo]);
+      log(`    ${campo}: ${String(v).slice(0, 600)}`);
+    }
+    const cru = JSON.stringify(post);
+    if (/thumbnail|cover/i.test(cru)) log('    🖼️  ESTA guardou capa — procurar "thumbnail"/"cover" acima.');
+  }
+  log('');
+  return 0;
+}
+
 // ═══════════════════════════════════════════════════════════════════════════════
 
 async function main() {
+  if (args.inspecionar) return inspecionar();
+
   const slug = String(args.slug || '');
   if (!slug) throw new Error('Falta --slug.');
   const horaBR = Number(args.hora) > 0 ? Number(args.hora) : HORA_BR_PADRAO;
@@ -426,6 +548,21 @@ async function main() {
     // da entrega, e não descoberta depois no perfil.
     const c = caminhoDaCapa(slug);
     log(`🖼️  capa: ${existsSync(c) ? `${Math.round(statSync(c).size / 1024)} KB` : 'FALTA — o Instagram escolheria um fotograma ao calhas'}`);
+    /**
+     * ⚠️ O ENSAIO PASSA A MOSTRAR O PEDIDO. A capa foi entregue duas semanas num campo
+     * que não existe e o ensaio dizia sempre "capa: 139 KB" — verdade, e inútil: ele
+     * media o ficheiro no disco, não o que ia dentro do pedido. Agora vê-se o pedido.
+     * (Os endereços são de exemplo: os verdadeiros só existem depois do envio.)
+     */
+    const exemplo = corpoDoAgendamento({
+      canalId: '(o canal do Instagram)',
+      media: { id: '(id do vídeo)', path: 'https://exemplo/video.mp4' },
+      capa: existsSync(c) ? { id: '(id da capa)', path: 'https://exemplo/capa.jpg' } : null,
+      legenda, quandoUTC: quando,
+    }, log);
+    log('\n── O QUE SERIA PEDIDO AO MULTIPOST ──');
+    log(`vídeo+capa: ${JSON.stringify(exemplo.posts[0].value[0].image[0])}`);
+    log(`opções:     ${JSON.stringify(exemplo.posts[0].settings)}`);
     log('\n✅ Ensaio concluído. Nada foi enviado nem agendado.\n');
     return 0;
   }
