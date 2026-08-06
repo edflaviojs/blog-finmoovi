@@ -1,0 +1,538 @@
+{
+  "date": "2026-08-05",
+  "counts": {
+    "content": 9,
+    "videos": 1,
+    "pins": 2,
+    "failures": 4,
+    "runs": 42
+  },
+  "failures": [
+    {
+      "name": "YouTube — Vídeo longo (semanal)",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/30980322694",
+      "timeLisbon": "07:07"
+    },
+    {
+      "name": "YouTube — Vídeo longo (semanal)",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/30981095074",
+      "timeLisbon": "07:21"
+    },
+    {
+      "name": "Gerar Post Soluções FinMoovi",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/31007871992",
+      "timeLisbon": "13:56"
+    },
+    {
+      "name": "YouTube — Responder aos comentários (FINMOOVI)",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/31049677886",
+      "timeLisbon": "22:41"
+    }
+  ],
+  "content": [
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "en",
+      "slug": "en-cash-flow-excel",
+      "url": "https://blog.finmoovi.com/en/glossario/en-cash-flow-excel",
+      "title": "cash flow Excel - Financial Glossary",
+      "description": "What cash flow Excel is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi.",
+      "category": "basico",
+      "publishedAt": "2026-08-05"
+    },
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "es",
+      "slug": "es-flujo-de-caja-excel",
+      "url": "https://blog.finmoovi.com/es/glossario/es-flujo-de-caja-excel",
+      "title": "flujo de caja Excel - Glosario Financiero",
+      "description": "Qué es flujo de caja Excel y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi.",
+      "category": "basico",
+      "publishedAt": "2026-08-05"
+    },
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "pt",
+      "slug": "fluxo-de-caixa-excel",
+      "url": "https://blog.finmoovi.com/glossario/fluxo-de-caixa-excel",
+      "title": "fluxo de caixa excel - Glossário Financeiro",
+      "description": "O que é fluxo de caixa excel e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi.",
+      "category": "basico",
+      "publishedAt": "2026-08-05"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "en",
+      "slug": "en-back-to-school-save-money-and-plan-your-school-expenses-2026",
+      "url": "https://blog.finmoovi.com/en/posts/en-back-to-school-save-money-and-plan-your-school-expenses-2026",
+      "title": "Back to School: Save Money and Plan Your School Expenses 2026",
+      "description": "Practical tips to cut costs and organize your back‑to‑school budget using FinMoovi to track expenses effortlessly.",
+      "category": "dicas",
+      "publishedAt": "2026-08-05"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "pt",
+      "slug": "como-organizar-seu-dinheiro-com-um-app-facil-de-usar",
+      "url": "https://blog.finmoovi.com/posts/como-organizar-seu-dinheiro-com-um-app-facil-de-usar",
+      "title": "Como organizar seu dinheiro com um app fácil de usar",
+      "description": "Descubra como um aplicativo de controle financeiro simplifica o registro de despesas, cria orçamentos visuais e devolve tranquilidade ao seu bolso em poucos minutos.",
+      "category": "investimentos",
+      "publishedAt": "2026-08-05"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "es",
+      "slug": "es-como-organizar-tu-dinero-con-una-app-facil-de-usar",
+      "url": "https://blog.finmoovi.com/es/posts/es-como-organizar-tu-dinero-con-una-app-facil-de-usar",
+      "title": "Cómo organizar tu dinero con una app fácil de usar",
+      "description": "Descubre cómo una app de control financiero simplifica el registro de gastos, crea presupuestos visuales y devuelve tranquilidad a tu bolsillo en pocos minutos.",
+      "category": "investimentos",
+      "publishedAt": "2026-08-05"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "en",
+      "slug": "en-how-to-organize-your-money-with-an-easy-to-use-app",
+      "url": "https://blog.finmoovi.com/en/posts/en-how-to-organize-your-money-with-an-easy-to-use-app",
+      "title": "How to Organize Your Money with an Easy‑to‑Use App",
+      "description": "Discover how a finance‑tracking app simplifies expense logging, creates visual budgets, and brings peace of mind to your wallet in minutes.",
+      "category": "investimentos",
+      "publishedAt": "2026-08-05"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "es",
+      "slug": "es-regreso-a-clases-ahorra-y-planifica-los-gastos-escolares-202",
+      "url": "https://blog.finmoovi.com/es/posts/es-regreso-a-clases-ahorra-y-planifica-los-gastos-escolares-202",
+      "title": "Regreso a clases: ahorra y planifica los gastos escolares 2026",
+      "description": "Descubre trucos prácticos para reducir costos y organizar el presupuesto del regreso a clases con FinMoovi. ¡Controla tus gastos sin complicaciones!",
+      "category": "dicas",
+      "publishedAt": "2026-08-05"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "pt",
+      "slug": "volta-as-aulas-economize-e-planeje-os-gastos-escolares-2026",
+      "url": "https://blog.finmoovi.com/posts/volta-as-aulas-economize-e-planeje-os-gastos-escolares-2026",
+      "title": "Volta às aulas: economize e planeje os gastos escolares 2026",
+      "description": "Descubra estratégias práticas para reduzir custos e organizar o orçamento da volta às aulas, usando o FinMoovi para controlar despesas sem complicação.",
+      "category": "dicas",
+      "publishedAt": "2026-08-05"
+    }
+  ],
+  "videos": [
+    {
+      "slug": "viral-viz--Cm53l0",
+      "videoId": "N9-kotGrm50",
+      "uploadedAt": "2026-08-05T16:25:56.346Z",
+      "title": "Bolso: 3 erros de educação que custam R$ 200 na mesada",
+      "timeLisbon": "17:25"
+    }
+  ],
+  "pins": [
+    {
+      "slug": "volta-as-aulas-economize-e-planeje-os-gastos-escolares-2026",
+      "title": "Volta às aulas: economize e planeje os gastos escolares 2026",
+      "pinId": "1105281933577699449",
+      "publishedAt": "2026-08-05T16:26:08.865Z",
+      "postUrl": "https://blog.finmoovi.com/posts/volta-as-aulas-economize-e-planeje-os-gastos-escolares-2026",
+      "timeLisbon": "17:26"
+    },
+    {
+      "slug": "como-escolher-fundos-de-investimento-em-2026-e-dar-o-primeir",
+      "title": "Como escolher fundos de investimento em 2026 e dar o primeiro passo",
+      "pinId": "1105281933577699453",
+      "publishedAt": "2026-08-05T16:26:11.796Z",
+      "postUrl": "https://blog.finmoovi.com/posts/como-escolher-fundos-de-investimento-em-2026-e-dar-o-primeir",
+      "timeLisbon": "17:26"
+    }
+  ],
+  "runsSummary": [
+    {
+      "name": "IndexNow (indexação instantânea Bing/Copilot)",
+      "count": 4,
+      "ok": 4,
+      "fail": 0,
+      "firstTimeLisbon": "02:48"
+    },
+    {
+      "name": "YouTube — Vídeo longo (semanal)",
+      "count": 4,
+      "ok": 2,
+      "fail": 2,
+      "firstTimeLisbon": "07:07"
+    },
+    {
+      "name": "YouTube — Detetive de tendências (diário)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "07:20"
+    },
+    {
+      "name": "Sincronizar i18n (auto-corretor PT/EN/ES)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "08:34"
+    },
+    {
+      "name": "YouTube — Converter Keywords em Temas (semanal)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "08:35"
+    },
+    {
+      "name": "Fact Firewall (anti-alucinacao)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "08:36"
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "count": 2,
+      "ok": 2,
+      "fail": 0,
+      "firstTimeLisbon": "09:07"
+    },
+    {
+      "name": "Brand Mention Monitor",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "09:47"
+    },
+    {
+      "name": "YouTube — Renderizar Short (completo)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "10:15"
+    },
+    {
+      "name": "Community Monitor",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "10:34"
+    },
+    {
+      "name": "GSC - Impulso Striking Distance",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "10:40"
+    },
+    {
+      "name": "Sazonal Multimercado (timezone)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "11:20"
+    },
+    {
+      "name": "GSC - Monitor de Indexacao",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "11:21"
+    },
+    {
+      "name": "Fix i18n Content (Daily Batch)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "12:00"
+    },
+    {
+      "name": "Gerar Dicas Financeiras",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "12:10"
+    },
+    {
+      "name": "Gerar ALT descritivo das imagens (IA de visão)",
+      "count": 3,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "12:12"
+    },
+    {
+      "name": "Post Investimentos Semanal",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "12:21"
+    },
+    {
+      "name": "Glossário Diário Automático",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "13:29"
+    },
+    {
+      "name": "Gerar Post Soluções FinMoovi",
+      "count": 1,
+      "ok": 0,
+      "fail": 1,
+      "firstTimeLisbon": "13:56"
+    },
+    {
+      "name": "Atualizar Índice de Endividamento",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "15:09"
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "15:23"
+    },
+    {
+      "name": "Regenerar capas antigas do glossário (estilo 3D)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "15:56"
+    },
+    {
+      "name": "YouTube — Publicar Short (horário nobre)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "17:25"
+    },
+    {
+      "name": "Social Distribution (Pinterest + Bookmarks)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "17:25"
+    },
+    {
+      "name": "YouTube — Responder aos comentários (FINMOOVI)",
+      "count": 3,
+      "ok": 2,
+      "fail": 1,
+      "firstTimeLisbon": "19:39"
+    },
+    {
+      "name": "Instagram — Entregar o Short ao Multipost (19h BR)",
+      "count": 3,
+      "ok": 3,
+      "fail": 0,
+      "firstTimeLisbon": "20:33"
+    },
+    {
+      "name": "YouTube — Capas em atraso (corrida única)",
+      "count": 2,
+      "ok": 2,
+      "fail": 0,
+      "firstTimeLisbon": "21:45"
+    },
+    {
+      "name": "YouTube — Corrigir a descrição dos vídeos já publicados",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "23:21"
+    }
+  ],
+  "emails": [
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "timeLisbon": "09:07"
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "timeLisbon": "10:21"
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "timeLisbon": "15:23"
+    }
+  ],
+  "pendencias": [
+    "18/08/2026 — ESTUDO APIFY das transcrições (vídeo longo). Só a partir dessa data: o arquivo .github/data/youtube-capitulos.json precisa de ~2 semanas a acumular para haver 40-50 longos e se escolherem os MELHORES para transcrever. Passos: criar chave em console.apify.com/settings/integrations (permissões limitadas + validade 1 mês) → guardar como APIFY_TOKEN no cofre do GitHub (nunca no chat) → criar/configurar o actor de transcrições → 30-50 transcrições (~$0,25 do crédito grátis de $5/mês) → ler os primeiros 30s de cada. ⚠️ Estudo à mão, NUNCA dentro do robô diário. Detalhe completo: IMPLEMENTACAO20 §33.6",
+    "~18/08/2026 — RE-MEDIR A RETENÇÃO (youtube-retencao.yml, disparo manual). A de 03/08 deu 97 visualizações em 10 vídeos: audiência pequena de mais para haver curva. Agora que os vídeos vão a público na hora, 10-14 dias dão sinal a sério. IMPLEMENTACAO20 §33.2",
+    "Google Cloud billing: criar perfil de pagamentos PORTUGAL (NIF + cartão PT) → destrava vozes TTS premium + trial $300",
+    "Escolher voz definitiva do canal (Antonio edge ↔ Piper faber alternando; premium depende do billing)",
+    "Pinterest: avaliar o 1º pin com descrição rica SEO (sexta 24/07 ~16h)",
+    "Pinterest: renovar refresh token até 16/09 (lembrete automático via issue quando faltar ≤7d)",
+    "Upgrade Pinterest p/ cadência diária? Avaliar analytics ~07/08"
+  ],
+  "agenda": [
+    {
+      "name": "YouTube — Responder aos comentários (FINMOOVI)",
+      "times": [
+        "00:25",
+        "01:25",
+        "02:25",
+        "03:25",
+        "04:25",
+        "05:25",
+        "06:25",
+        "07:25",
+        "08:25",
+        "09:25",
+        "10:25",
+        "11:25",
+        "12:25",
+        "13:25",
+        "14:25",
+        "15:25",
+        "16:25",
+        "17:25",
+        "18:25",
+        "19:25",
+        "20:25",
+        "21:25",
+        "22:25",
+        "23:25"
+      ]
+    },
+    {
+      "name": "IndexNow (indexação instantânea Bing/Copilot)",
+      "times": [
+        "01:00",
+        "07:00",
+        "13:00",
+        "19:00"
+      ]
+    },
+    {
+      "name": "YouTube — Detetive de tendências (diário)",
+      "times": [
+        "05:00"
+      ]
+    },
+    {
+      "name": "Fact Firewall (anti-alucinacao)",
+      "times": [
+        "06:00"
+      ]
+    },
+    {
+      "name": "Sincronizar i18n (auto-corretor PT/EN/ES)",
+      "times": [
+        "06:00"
+      ]
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "times": [
+        "06:40",
+        "07:40"
+      ]
+    },
+    {
+      "name": "Gerar ALT descritivo das imagens (IA de visão)",
+      "times": [
+        "07:00",
+        "10:00",
+        "12:00"
+      ]
+    },
+    {
+      "name": "YouTube — Renderizar Short (completo)",
+      "times": [
+        "07:30"
+      ]
+    },
+    {
+      "name": "Community Monitor",
+      "times": [
+        "08:00"
+      ]
+    },
+    {
+      "name": "Glossário Financeiro",
+      "times": [
+        "08:00"
+      ]
+    },
+    {
+      "name": "GSC - Refresh de Conteudo (decay)",
+      "times": [
+        "08:00"
+      ]
+    },
+    {
+      "name": "GSC - Monitor de Indexacao",
+      "times": [
+        "09:00"
+      ]
+    },
+    {
+      "name": "Sazonal Multimercado (timezone)",
+      "times": [
+        "09:00"
+      ]
+    },
+    {
+      "name": "Fix i18n Content (Daily Batch)",
+      "times": [
+        "09:30"
+      ]
+    },
+    {
+      "name": "Gerar Dicas Financeiras",
+      "times": [
+        "10:00"
+      ]
+    },
+    {
+      "name": "Post BOFU (Ferramentas)",
+      "times": [
+        "11:00"
+      ]
+    },
+    {
+      "name": "Glossário Diário Automático",
+      "times": [
+        "12:00"
+      ]
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "times": [
+        "13:00"
+      ]
+    },
+    {
+      "name": "Regenerar capas antigas do glossário (estilo 3D)",
+      "times": [
+        "13:30"
+      ]
+    },
+    {
+      "name": "Syndicate Content & Send Pingbacks",
+      "times": [
+        "15:00"
+      ]
+    },
+    {
+      "name": "YouTube — Publicar Short (horário nobre)",
+      "times": [
+        "16:00"
+      ]
+    }
+  ]
+}
