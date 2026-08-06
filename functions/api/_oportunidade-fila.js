@@ -16,7 +16,7 @@
 export const MIN_TITULO_LONGO = 20;
 export const MAX_TITULO_LONGO = 70;
 export const MIN_TEMA = 10;
-export const MAX_TEMA = 300;
+export const MAX_TEMA = 1000;
 
 export function fazerSlugDoDono(tema, usados = new Set()) {
   const base = String(tema || '')

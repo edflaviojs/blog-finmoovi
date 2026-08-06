@@ -245,16 +245,22 @@ const daysAgo = (d: string) => {
           próximo a ser feito. Depois a fila segue como estava.
         </p>
         <form id="op-form">
+          <label class="op-rotulo" for="op-tema">A ideia</label>
           <textarea
             id="op-tema"
-            rows="2"
-            placeholder={'A ideia, numa frase. Ex.:\npagar a fatura ANTES do fecho dá mais 30 dias sem juros'}
+            rows="3"
+            placeholder="Ex.: pagar a fatura ANTES do fecho dá mais 30 dias sem juros"
             required
           ></textarea>
+          <!-- ⚠️ O contador aparece ANTES de o dono carregar no botão. Ele escreveu um
+               tema comprido e só descobriu o limite depois de tentar enviar — o aviso
+               tem de estar onde ele está a olhar, não depois. -->
+          <span id="op-contador" class="op-contador">0 / 1000 letras</span>
+          <label class="op-rotulo" for="op-titulo">O título <span id="op-titulo-nota">(opcional — a IA escreve)</span></label>
           <input
             type="text"
             id="op-titulo"
-            placeholder="Título exato (obrigatório no vídeo longo, opcional no Short)"
+            placeholder="Deixe vazio e a IA escreve o título"
             autocomplete="off"
           />
           <div class="kw-row">
@@ -542,13 +548,37 @@ const daysAgo = (d: string) => {
       aviso.hidden = false;
     };
 
+    /**
+     * ⚠️ **O TETO TEM DE SER O MESMO DOS DOIS LADOS.** Este número está também em
+     * `functions/api/_oportunidade-fila.js`. Se um dia se afastarem, o dono escreve um
+     * tema que a página aceita e o servidor recusa — e a culpa parece ser dele.
+     */
+    const MAX_TEMA = 1000;
+    const contador = document.getElementById('op-contador');
+    const contar = () => {
+      if (!contador || !tema) return;
+      const n = tema.value.trim().length;
+      contador.textContent = `${n} / ${MAX_TEMA} letras`;
+      contador.classList.toggle('perto', n > MAX_TEMA * 0.9 && n <= MAX_TEMA);
+      contador.classList.toggle('passou', n > MAX_TEMA);
+    };
+    if (tema) tema.addEventListener('input', contar);
+    contar();
+
     const exigeTitulo = () => formato && formato.value !== 'short';
+    const nota = document.getElementById('op-titulo-nota');
     const acertarTitulo = () => {
       if (!titulo) return;
       titulo.required = exigeTitulo();
       titulo.placeholder = exigeTitulo()
-        ? 'Título exato — OBRIGATÓRIO, entre 20 e 70 letras'
-        : 'Título exato (opcional — a IA escreve se deixar vazio)';
+        ? 'Escreva o título exato, entre 20 e 70 letras'
+        : 'Deixe vazio e a IA escreve o título';
+      if (nota) {
+        nota.textContent = exigeTitulo()
+          ? '(obrigatório — 20 a 70 letras)'
+          : '(opcional — a IA escreve)';
+        nota.classList.toggle('exigido', exigeTitulo());
+      }
     };
     if (formato) formato.addEventListener('change', acertarTitulo);
     acertarTitulo();
@@ -559,6 +589,7 @@ const daysAgo = (d: string) => {
         const t = tema.value.trim();
         const tit = titulo.value.trim();
         if (t.length < 10) return dizer('Escreva a ideia numa frase (pelo menos 10 letras).', false);
+        if (t.length > MAX_TEMA) return dizer(`A ideia tem ${t.length} letras — o máximo são ${MAX_TEMA}. Corte um bocado.`, false);
         if (exigeTitulo() && (tit.length < 20 || tit.length > 70)) {
           return dizer('O vídeo longo precisa de um título entre 20 e 70 letras — é ele que fica na lista do canal para sempre.', false);
         }
@@ -988,6 +1019,17 @@ const daysAgo = (d: string) => {
   }
 
   /* Formulário de envio */
+  /**
+   * ♦ 06/08/2026 — O PAINEL DA OPORTUNIDADE ESTAVA SEM ESTILO NENHUM.
+   * Toda a folha de estilo deste formulário estava presa ao `#kw-form`. O painel novo
+   * nasceu sem largura, sem fundo e sem espaço: os campos encavalitaram-se uns nos outros
+   * e o dono viu — *"está muito apertado e confuso"*. Tinha razão: eu escrevi o HTML e
+   * **nunca olhei a página renderizada**, que é a regra desta casa.
+   * A cura não é copiar a folha: é os dois formulários passarem a partilhá-la.
+   */
+  #op-form textarea,
+  #op-form select,
+  #op-form input,
   #kw-form textarea,
   #kw-form select,
   #kw-form input {
@@ -1001,17 +1043,67 @@ const daysAgo = (d: string) => {
     font-family: inherit;
   }
 
+  #op-form textarea,
   #kw-form textarea {
     resize: vertical;
     margin-bottom: var(--space-3);
   }
 
+  #op-form textarea:focus,
+  #op-form select:focus,
+  #op-form input:focus,
   #kw-form textarea:focus,
   #kw-form select:focus,
   #kw-form input:focus {
     outline: none;
     border-color: var(--accent-blue, #58a6ff);
   }
+
+  /**
+   * 🔴 A LISTA QUE ABRIA BRANCA. O navegador desenha as opções de um `select` com as cores
+   * DELE, não com as da página — num tema escuro sai texto claro sobre fundo branco, e o
+   * dono não conseguia ler o que estava a escolher. Pintar a `option` é a única cura.
+   */
+  #op-form select option,
+  #kw-form select option {
+    background: var(--bg-primary, #0d1117);
+    color: var(--text-primary, #f0f6fc);
+  }
+
+  /* Cada campo da oportunidade ocupa a SUA linha — nada de campos lado a lado a
+     espremerem-se: a ideia precisa de espaço para se ler enquanto se escreve. */
+  #op-form > textarea,
+  #op-form > input[type='text'] {
+    display: block;
+    width: 100%;
+  }
+  #op-form textarea { min-height: 5rem; }
+  #op-form > input[type='text'] { margin-bottom: var(--space-3); }
+  /* A última linha: escolha + senha + botão. Em ecrã estreito quebra sozinha. */
+  #op-form .kw-row select { flex: 2 1 16rem; }
+  #op-form .kw-row input { flex: 1 1 9rem; }
+  .op-contador {
+    display: block;
+    text-align: right;
+    font-size: var(--text-xs, 0.75rem);
+    color: var(--text-secondary, #8b949e);
+    margin: calc(-1 * var(--space-2)) 0 var(--space-3);
+  }
+  .op-contador.perto { color: var(--accent-yellow, #d29922); }
+  .op-contador.passou { color: var(--accent-red, #f85149); }
+  /* Cada campo com o seu nome por cima: sem rótulo, os dois campos parecem o mesmo. */
+  .op-rotulo {
+    display: block;
+    font-size: var(--text-sm, 0.875rem);
+    font-weight: 600;
+    color: var(--text-primary, #f0f6fc);
+    margin-bottom: var(--space-1, 0.25rem);
+  }
+  .op-rotulo span {
+    font-weight: 400;
+    color: var(--text-secondary, #8b949e);
+  }
+  .op-rotulo span.exigido { color: var(--accent-yellow, #d29922); }
 
   .kw-row {
     display: flex;
