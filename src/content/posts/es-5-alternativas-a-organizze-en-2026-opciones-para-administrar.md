@@ -76,7 +76,7 @@ Precio: Pago
 
 
 
-## Alternativa 5: [Nubank](/es/glossario/es-nubank)
+## Alternativa 5: Nubank
 El Nubank es un aplicativo de finanzas que se destaca por su capacidad para manejar cuentas bancarias y tarjetas de crédito, lo que permite a los usuarios administrar sus finanzas de manera detallada. Con él, es posible crear presupuestos, definir metas financieras y recibir alertas de gastos excesivos.
 El Nubank también ofrece herramientas de inversión y crédito, lo que lo convierte en una opción completa para administrar las finanzas.
 Pros:

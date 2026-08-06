@@ -38,7 +38,7 @@ A técnica dos envelopes (ou “envelopes digitais”) consiste em criar categor
 
 ## Aproveite o cashback de forma inteligente
 
-Cashback não é só “dinheiro de volta”. Quando recebe R$50 de volta em um supermercado, não use para comprar outro item; direcione imediatamente para sua reserva. Assim, o benefício se transforma em poupança extra. Bancos como o [Nubank](/glossario/nubank) oferecem cashback automático; basta ativar a opção nas configurações e acompanhar o saldo na área de “Ganhos”.
+Cashback não é só “dinheiro de volta”. Quando recebe R$50 de volta em um supermercado, não use para comprar outro item; direcione imediatamente para sua reserva. Assim, o benefício se transforma em poupança extra. Bancos como o Nubank oferecem cashback automático; basta ativar a opção nas configurações e acompanhar o saldo na área de “Ganhos”.
 
 ![Aproveite o cashback de forma inteligente](/images/posts/poupar-dinheiro-dicas-7-habitos-simples-para-2026-4.webp)
 
