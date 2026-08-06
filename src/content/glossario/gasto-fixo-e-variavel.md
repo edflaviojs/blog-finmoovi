@@ -4,6 +4,7 @@ definition: "O que é gasto fixo e variavel e como isso aparece no seu dia a dia
 title: "gasto fixo e variavel - Glossário Financeiro"
 description: "O que é gasto fixo e variavel e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/gasto-fixo-e-variavel.webp"
+imageAlt: "Moedas douradas empilhadas e vaso com planta sobre fundo escuro."
 category: "basico"
 tags: ["gasto fixo e variavel", "glossário", "finanças"]
 author: "FinMoovi"

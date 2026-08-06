@@ -3,6 +3,7 @@ title: "Cómo evitar perder la fecha de pago de tus facturas y no quedar sin din
 description: "Descubre cómo los alertas inteligentes y los recordatorios por voz de FinMoovi evitan que se te olvide una factura. Solución en 5 min."
 tickerHeadline: "¡Adiós a las facturas olvidadas!"
 image: "/images/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto-202.webp"
+imageAlt: "Calculadora, monedas, agenda marrón y plantas sobre fondo blanco."
 category: "ferramentas"
 locale: "es"
 tags: ["alertas de pago","recordatorio de facturas","FinMoovi","notificaciones push","Smart Capture","gestión de gastos","control financiero","alertas","cuentas por pagar","recordatorio","financiero","finmoovi","finanzas personales"]

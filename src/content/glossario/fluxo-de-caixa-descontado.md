@@ -4,6 +4,7 @@ definition: "O que é fluxo de caixa descontado e como isso aparece no seu dia a
 title: "fluxo de caixa descontado - Glossário Financeiro"
 description: "O que é fluxo de caixa descontado e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/fluxo-de-caixa-descontado.webp"
+imageAlt: "Moedas douradas, barras e plantas em frascos sobre fundo azul escuro."
 category: "basico"
 tags: ["fluxo de caixa descontado", "glossário", "finanças"]
 author: "FinMoovi"

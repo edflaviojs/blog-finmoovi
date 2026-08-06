@@ -3,6 +3,7 @@ title: "How to Never Miss a Bill Payment Deadline – Simple 5‑Minute Fix (202
 description: "Discover how FinMoovi’s smart alerts and voice reminders keep every bill paid on time—no more late fees, in just 5 minutes."
 tickerHeadline: "No more missed bills!"
 image: "/images/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto-202.webp"
+imageAlt: "Brown leather notebook, calculator, coins, and green plants on white marble."
 category: "ferramentas"
 locale: "en"
 tags: ["payment alerts","bill reminders","FinMoovi","push notifications","Smart Capture","expense management","financial control","bills due","reminder","personal finance"]

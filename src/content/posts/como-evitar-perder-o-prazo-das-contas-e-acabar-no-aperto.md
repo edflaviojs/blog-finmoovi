@@ -3,6 +3,7 @@ title: "Como evitar perder o prazo das contas e acabar no aperto? 2026"
 description: "Descubra como alertas inteligentes e lembretes por voz do FinMoovi garantem que nenhuma conta fique esquecida. Solução prática em 5 minutos."
 tickerHeadline: "Chega de boletos esquecidos!"
 image: "/images/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto-202.webp"
+imageAlt: "Calculadora, caderno marrom, caneta e moedas sobre mesa branca com plantas verdes."
 category: "ferramentas"
 locale: "pt"
 tags: ["alertas de pagamento","lembrete de contas","FinMoovi","notificações push","Smart Capture","gestão de despesas","controle financeiro","alertas","contas a pagar","lembrança","financeiro","finmoovi","finanças pessoais"]

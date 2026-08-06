@@ -4,6 +4,7 @@ definition: "Entenda o que é fundo de investimento, como funciona, vantagens, r
 title: "fundo de investimento - Glossário Financeiro"
 description: "Entenda o que é fundo de investimento, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
 image: "/images/glossario/fundos.webp"
+imageAlt: "moedas douradas em pilhas rosa e vidro com planta verde"
 category: "basico"
 tags: ["fundo de investimento", "glossário", "finanças"]
 author: "FinMoovi"

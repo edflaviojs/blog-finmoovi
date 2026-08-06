@@ -4,6 +4,7 @@ definition: "O que é gasto fixo e como isso aparece no seu dia a dia — explic
 title: "gasto fixo - Glossário Financeiro"
 description: "O que é gasto fixo e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/gasto-fixo.webp"
+imageAlt: "Imagem de um artigo de finanças pessoais sobre gastos fixos, com moedas e uma planta em um vaso."
 category: "basico"
 tags: ["gasto fixo", "glossário", "finanças"]
 author: "FinMoovi"

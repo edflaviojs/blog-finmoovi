@@ -4,6 +4,7 @@ definition: "Entenda o que é governança corporativa, como funciona, vantagens,
 title: "governança corporativa - Glossário Financeiro"
 description: "Entenda o que é governança corporativa, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
 image: "/images/glossario/governanca.webp"
+imageAlt: "Imagem de três recipientes com moedas e plantas, em fundo escuro."
 category: "basico"
 tags: ["governança corporativa", "glossário", "finanças"]
 author: "FinMoovi"

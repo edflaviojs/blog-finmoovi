@@ -1,6 +1,7 @@
 ---
 term: "Ganho de Capital"
 image: "/images/glossario/ganho-de-capital.webp"
+imageAlt: "Moedas douradas empilhadas, balança e planta em vaso sobre fundo azul escuro."
 definition: "Lucro obtido na venda de um bem ou investimento por um preço maior do que o de compra. Pode estar sujeito a Imposto de Renda."
 category: "impostos"
 relatedTerms: ["Imposto de Renda", "Ações", "Renda Variável"]
