@@ -1,0 +1,131 @@
+/**
+ * A PROVA DE MESA DOS METADADOS DO SHORT — sem rede, sem chave, sem custo.
+ *
+ * ═══ POR QUE NASCEU (06/08/2026) ═══
+ * O Short publica **todos os dias** e era o único formato **sem uma única prova de mesa**:
+ * a única forma de ver o que ele ia escrever era gastar uma corrida de IA na nuvem. As
+ * três regras novas do dono — título curto, palavra-chave em maiúsculas, três hashtags —
+ * são exatamente o tipo de coisa que se parte em silêncio e só se descobre no Studio.
+ *
+ * ⚠️ **NÃO CHAMA A IA.** Prova o que é NOSSO: o corte, a contagem, a escolha. O que a IA
+ * escreve é medido pelo `youtube-metadados-prova.yml`, que gasta.
+ *
+ * Uso: node src/scripts/validacao/validar-metadados-short.js
+ */
+
+import {
+  titularOShort, escolherEtiquetas, variacoesDaEtiqueta,
+  buildMetadata, deterministicMeta, respostaCortada, MAX_PALAVRAS_TITULO_SHORT,
+} from '../youtube/upload-short.js';
+
+let passou = 0;
+let falhou = 0;
+const falhas = [];
+const ok = (nome, cond, det = '') => {
+  if (cond) { passou++; console.log(`  ✅ ${nome}`); }
+  else { falhou++; falhas.push(`${nome}${det ? ` — ${det}` : ''}`); console.log(`  ❌ ${nome}${det ? ` — ${det}` : ''}`); }
+};
+const calado = () => {};
+
+console.log('\n1. O TÍTULO — curto, e só a palavra-chave a gritar');
+
+{
+  ok('a palavra-chave sai em maiúsculas',
+    titularOShort('Inflação: 3 erros que te custam caro', 'inflação', calado)
+      === 'INFLAÇÃO: 3 erros que te custam caro');
+  ok('e apanha-a mesmo no meio da frase',
+    titularOShort('3 erros de inflação que te custam caro', 'inflação', calado)
+      === '3 erros de INFLAÇÃO que te custam caro');
+  ok('funciona com palavra-chave de duas palavras',
+    titularOShort('Tesouro Direto com R$ 100 vale a pena?', 'Tesouro Direto', calado)
+      .startsWith('TESOURO DIRETO'));
+  /**
+   * 🔴 **SÓ A PALAVRA-CHAVE, NUNCA A FRASE.** O canal tem uma trava escrita contra títulos
+   * aos berros (*"um título aos berros é recusado"*) — metade dos virais que servem de
+   * modelo GRITAM, e este canal decidiu não gritar. Esta prova acende se alguém, um dia,
+   * resolver pôr o título todo em maiúsculas "para destacar mais".
+   */
+  const t = titularOShort('Inflação: 3 erros que te custam caro', 'inflação', calado);
+  ok('🔴 e o RESTO do título continua em minúsculas', t !== t.toUpperCase());
+  ok('uma palavra-chave que não está no título não estraga nada',
+    titularOShort('Como sobrar dinheiro no fim do mês', 'bitcoin', calado)
+      === 'Como sobrar dinheiro no fim do mês');
+  ok('sem palavra-chave, devolve o título tal e qual',
+    titularOShort('Um título qualquer', '', calado) === 'Um título qualquer');
+
+  /**
+   * ⚠️ **O TÍTULO COMPRIDO É REJEITADO, NÃO CORTADO** — e o pedido à IA manda o mesmo
+   * número que a trava exige. É a regra contra o defeito mais repetido deste projeto: o
+   * prompt a mandar escrever o que o leitor a seguir recusa.
+   */
+  const bases = { description: 'Uma frase.', hashtagsRaw: '#a #b', tagsRaw: 'a,b' };
+  ok(`um título com ${MAX_PALAVRAS_TITULO_SHORT + 1} palavras é recusado`,
+    /o teto são/.test(respostaCortada({ ...bases, title: 'Um titulo bem comprido com nove palavras aqui dentro' }) || ''));
+  ok(`um título com ${MAX_PALAVRAS_TITULO_SHORT} palavras passa`,
+    respostaCortada({ ...bases, title: 'Um titulo com exatamente oito palavras aqui' }) === null);
+  ok('o teto combinado com o dono são 8 palavras', MAX_PALAVRAS_TITULO_SHORT === 8);
+  /**
+   * ⚠️ E o texto de reserva TAMBÉM tem de caber: é nos dias maus que ele é usado, e não
+   * pode ser ele a partir a regra que a IA é obrigada a cumprir.
+   */
+  for (const kw of ['inflação', 'aplicação financeira', 'erro ao usar amortização price']) {
+    const d = deterministicMeta({ keyword: kw, term: kw, category: 'x', cta: { text: 'y' } });
+    ok(`o texto de reserva cabe nas 8 palavras ("${kw}")`,
+      d.title.split(/\s+/).length <= MAX_PALAVRAS_TITULO_SHORT, `${d.title.split(/\s+/).length}: ${d.title}`);
+  }
+}
+
+console.log('\n2. AS HASHTAGS — três, e #Shorts é uma delas');
+
+{
+  const script = { keyword: 'inflação', term: 'inflação', category: 'economia', cta: { text: 'x' } };
+  const meta = buildMetadata(deterministicMeta(script), script);
+  const linha = meta.snippet.description.split('\n').find((l) => l.trim().startsWith('#')) || '';
+  const tags = linha.trim().split(/\s+/).filter(Boolean);
+  ok('saem exatamente 3 hashtags', tags.length === 3, linha);
+  ok('e #Shorts é sempre a última', tags[tags.length - 1] === '#Shorts');
+  ok('a primeira é a do tema', tags[0].toLowerCase().includes('inflação'.toLowerCase()));
+}
+
+console.log('\n3. AS ETIQUETAS — encher os 500 caracteres, sem inventar palavras');
+
+{
+  /**
+   * ⚠️ A LISTA DE PARTIDA É A DE VERDADE — a do texto de reserva, que é o pior caso: nos
+   * dias bons a IA manda mais palavras do que estas. Uma prova com uma lista inventada,
+   * mais curta do que a real, mediria um vídeo que não existe.
+   */
+  const script = { keyword: 'dívida do cartão', term: 'dívida do cartão', category: 'economia', cta: { text: 'x' } };
+  const e = escolherEtiquetas(deterministicMeta(script).tags);
+  const chars = e.join(',').length;
+  ok('enche pelo menos 350 caracteres (era 199 antes de 06/08)', chars >= 350, `${chars}`);
+  // 🔴 A ORDEM: se o orçamento acabar, quem fica de fora é uma VARIAÇÃO, nunca uma
+  // palavra que o dono aprovou. Por isso as originais entram todas primeiro.
+  const chaves = ['sair do vermelho', 'dívida do cartão', 'juros do rotativo'];
+  const ordenadas = escolherEtiquetas(chaves);
+  /** ⚠️ 480 e não 500: nunca se encosta ao limite de outra pessoa. */
+  ok('e nunca passa dos 480, que deixa folga para os 500 do YouTube', chars <= 480, `${chars}`);
+  ok('as palavras do dono vêm TODAS à frente das variações',
+    chaves.every((c, i) => ordenadas[i] === c), ordenadas.slice(0, chaves.length).join(' | '));
+  ok('nenhuma etiqueta se repete', new Set(e.map((x) => x.toLowerCase())).size === e.length);
+  ok('nenhuma etiqueta é uma frase — ninguém procura frases',
+    e.every((t) => t.split(' ').length <= 5), e.filter((t) => t.split(' ').length > 5).join(' | '));
+  ok('nenhuma etiqueta acaba a meio de uma palavra', e.every((t) => t.length < 60));
+  /**
+   * ⚠️ **AS VARIAÇÕES SÃO TRÊS, E ESCOLHIDAS PELA GRAMÁTICA.** A palavra-chave tanto pode
+   * ser um nome ("dívida do cartão") como uma ação ("sair do vermelho"): *"como fazer sair
+   * do vermelho"* não é português. Estas lêem-se bem com as duas formas.
+   */
+  ok('as variações lêem-se bem com um NOME e com uma AÇÃO',
+    variacoesDaEtiqueta('sair do vermelho').join('|') === 'sair do vermelho|o que é sair do vermelho|sair do vermelho na prática|sair do vermelho 2026');
+  ok('uma lista vazia não rebenta', escolherEtiquetas([]).length === 0 && escolherEtiquetas(null).length === 0);
+}
+
+console.log(`\n${'═'.repeat(72)}`);
+console.log(`  ${passou} provas verdes · ${falhou} vermelhas`);
+if (falhou) {
+  console.log('\n  ❌ AS QUE FALHARAM:');
+  falhas.forEach((f) => console.log(`     · ${f}`));
+}
+console.log(`${'═'.repeat(72)}\n`);
+process.exit(falhou ? 1 : 0);

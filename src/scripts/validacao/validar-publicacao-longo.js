@@ -505,7 +505,23 @@ console.log('\n3. O QUE SE MANDA AO YOUTUBE');
     etiquetas.join(' | '),
   );
   ok('as etiquetas não se repetem', new Set(etiquetas.map((t) => t.toLowerCase())).size === etiquetas.length);
-  ok('as etiquetas cabem no limite do YouTube (~460 caracteres)', etiquetas.join(',').length <= 460);
+  /**
+   * ♦ 06/08/2026 — O LIMITE VERDADEIRO SÃO **500 CARACTERES**, não 460 e muito menos 500
+   * etiquetas. O dono viu a contagem no Studio (*"estamos com média de 230 e podemos
+   * colocar 500"*) e tinha razão: estávamos em **199**. O teto real era uma trava nossa
+   * de 12 etiquetas, não os caracteres. ⚠️ **Fica em 480 de propósito** — 20 de folga,
+   * porque nunca se encosta ao limite de outra pessoa: basta o YouTube contar as vírgulas
+   * de maneira ligeiramente diferente e a subida é recusada.
+   */
+  ok('as etiquetas cabem no limite do YouTube (500 caracteres), com folga',
+    etiquetas.join(',').length <= 480, `${etiquetas.join(',').length}`);
+  /**
+   * 🔴 E A PROVA QUE ACENDE SE ALGUÉM VOLTAR A DEIXAR METADE DO ESPAÇO VAZIO. Não basta
+   * caber: **tem de encher**. Foi por não haver esta régua que 300 caracteres ficaram por
+   * usar durante o mês inteiro, sem nada a queixar-se.
+   */
+  ok('e ENCHEM o espaço — pelo menos 350 caracteres, que era o pedido do dono',
+    etiquetas.join(',').length >= 350, `só ${etiquetas.join(',').length}`);
   ok('o que o dono escreveu na fila entra à frente do resto', etiquetas[0] === 'reserva de emergência', etiquetas[0]);
   ok('e a marca do canal está lá', etiquetas.some((t) => t === 'FinMoovi'));
 }

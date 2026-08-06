@@ -178,7 +178,113 @@ function buildHashtagList(rawList) {
     if (out.some((x) => x.toLowerCase() === tag.toLowerCase())) continue;
     out.push(tag);
   }
-  return [...out.slice(0, 4), '#Shorts'];
+  /**
+   * ♦ 06/08/2026 — TRÊS HASHTAGS, NÃO CINCO. Ordem do dono: *"no máximo 3 hashtags
+   * voltadas para o nosso público"*. Eram 4 + `#Shorts`. ⚠️ **`#Shorts` conta como uma
+   * das três** — ele é obrigatório (é por ele que o YouTube reconhece o formato), logo
+   * sobram duas para o tema. Menos e mais certeiras vale mais do que cinco a espalhar.
+   */
+  return [...out.slice(0, 2), '#Shorts'];
+}
+
+// ─── o título do Short ───────────────────────────────────────────────────────
+
+/** Ordem do dono (06/08): um título de Short não passa das 8 palavras. */
+export const MAX_PALAVRAS_TITULO_SHORT = 8;
+
+/**
+ * ♦ 06/08/2026 — O TÍTULO DO SHORT: CURTO, E COM A PALAVRA-CHAVE A GRITAR.
+ *
+ * Ordem do dono: *"no máximo 7 a 8 palavras, e sempre procurar colocar a palavra-chave
+ * principal em Letras Maiúsculas"*.
+ *
+ * ⚠️ **SÓ A PALAVRA-CHAVE VAI EM MAIÚSCULAS, NUNCA A FRASE.** O canal já tem uma trava
+ * escrita contra títulos aos berros (`conferirTema`: *"um título aos berros é recusado"*)
+ * — metade dos virais que servem de modelo GRITAM, e este canal decidiu não gritar. Uma
+ * palavra em maiúsculas destaca; a frase inteira em maiúsculas é o que se recusou.
+ *
+ * ⚠️ **E NÃO SE CORTA UM TÍTULO COMPRIDO.** Cortar às oito palavras deixaria o título a
+ * meio de uma ideia — é o mesmo defeito das etiquetas cortadas de 05/08 (*"uma etiqueta
+ * cortada não é uma etiqueta mais curta: é lixo"*). Quem manda no comprimento é o pedido
+ * à IA, e quem confere é o `respostaCortada`. Aqui só se avisa.
+ */
+export function titularOShort(titulo, palavraChave, registar = log) {
+  const t = String(titulo || '').trim();
+  if (!t) return t;
+
+  const n = t.split(/\s+/).filter(Boolean).length;
+  if (n > MAX_PALAVRAS_TITULO_SHORT) {
+    registar(`⚠️ o título tem ${n} palavras (o teto são ${MAX_PALAVRAS_TITULO_SHORT}): "${t}"`);
+  }
+
+  const chave = String(palavraChave || '').trim();
+  if (!chave) return t;
+  // Casa a palavra-chave onde ela estiver, respeitando acentos, e põe-na em maiúsculas.
+  const escapada = chave.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const re = new RegExp(`(^|[^\\p{L}\\p{N}])(${escapada})(?=[^\\p{L}\\p{N}]|$)`, 'iu');
+  if (!re.test(t)) return t;
+  return t.replace(re, (_, antes, achada) => `${antes}${achada.toUpperCase()}`);
+}
+
+// ─── as etiquetas (partilhadas com o vídeo longo) ────────────────────────────
+
+/** Quantas etiquetas, no máximo. Era 12, e era ELE o teto real — não os caracteres. */
+const MAX_ETIQUETAS = 30;
+/** O YouTube dá 500 CARACTERES somando tudo. 480 deixa folga: nunca encostar no limite de outrem. */
+const ORCAMENTO_ETIQUETAS = 480;
+/**
+ * ⚠️ Quantas palavras uma etiqueta pode ter antes de deixar de ser procurada por alguém.
+ * Nasceu no vídeo longo, onde saíam títulos de capítulo inteiros — *"O dia em que eu vi o
+ * tamanho da fatura"* é uma frase bonita e **ninguém a escreve numa busca**.
+ */
+const MAX_PALAVRAS_ETIQUETA = 5;
+
+/**
+ * As variações de uma palavra-chave — as formas em que a mesma coisa é procurada.
+ *
+ * ⚠️ **SÓ TRÊS, E ESCOLHIDAS PELA GRAMÁTICA.** A palavra-chave tanto pode ser um nome
+ * ("dívida do cartão") como uma ação ("sair do vermelho"), e a maioria dos moldes só
+ * funciona com uma das duas: *"como fazer sair do vermelho"* não é português. Estes três
+ * lêem-se bem com as duas formas — foi por isso que sobraram.
+ */
+export function variacoesDaEtiqueta(base) {
+  const t = String(base || '').trim();
+  if (!t) return [];
+  return [t, `o que é ${t}`, `${t} na prática`, `${t} 2026`];
+}
+
+/**
+ * ♦ 06/08/2026 — A LISTA DE ETIQUETAS, PARTILHADA PELOS DOIS FORMATOS.
+ *
+ * O que entra, por ordem: primeiro o que veio de fora (as palavras que o dono aprovou ou
+ * que a IA escreveu), depois as **variações** dessas mesmas palavras, para encher o
+ * espaço que sobrava. Nunca palavras novas inventadas — só outras formas de procurar as
+ * que já lá estavam.
+ *
+ * ⚠️ **As variações entram DEPOIS de todas as originais**, e não a seguir a cada uma:
+ * se o orçamento acabar, quem fica de fora é uma variação, nunca uma palavra do dono.
+ */
+export function escolherEtiquetas(cruas) {
+  const vistas = new Set();
+  const saida = [];
+  let comprimento = 0;
+
+  const tentar = (crua) => {
+    const t = sanitizeText(crua, 60).replace(/\s+/g, ' ');
+    const chave = t.toLowerCase();
+    if (!t || t.length < 4 || vistas.has(chave)) return;
+    if (t.split(' ').length > MAX_PALAVRAS_ETIQUETA) return;
+    if (saida.length >= MAX_ETIQUETAS) return;
+    if (comprimento + t.length + 1 > ORCAMENTO_ETIQUETAS) return;
+    vistas.add(chave);
+    saida.push(t);
+    comprimento += t.length + 1;
+  };
+
+  const originais = (cruas || []).filter(Boolean);
+  for (const c of originais) tentar(c);
+  for (const c of originais) for (const v of variacoesDaEtiqueta(c).slice(1)) tentar(v);
+  return saida;
 }
 
 // ─── roteiro ─────────────────────────────────────────────────────────────────
@@ -263,6 +369,15 @@ const TENTATIVAS_LLM = 2;
  */
 function respostaCortada({ title, description, hashtagsRaw, tagsRaw }) {
   if (!title) return 'sem título';
+  /**
+   * ⚠️ **O TETO DE PALAVRAS DO TÍTULO REJEITA E MANDA TENTAR OUTRA VEZ** — não corta.
+   * Cortar às oito palavras deixaria o título a meio de uma ideia, e este projeto já
+   * aprendeu que *uma coisa cortada não é uma coisa mais curta: é lixo* (§45, as
+   * etiquetas). O pedido à IA manda o mesmo número que está aqui — é a regra da casa
+   * contra o defeito mais repetido do projeto: o prompt pedir o que a trava recusa.
+   */
+  const palavras = title.trim().split(/\s+/).filter(Boolean).length;
+  if (palavras > MAX_PALAVRAS_TITULO_SHORT) return `título com ${palavras} palavras (o teto são ${MAX_PALAVRAS_TITULO_SHORT})`;
   if (!description) return 'sem descrição';
   if (!hashtagsRaw) return 'sem hashtags (a resposta parou antes delas)';
   if (!tagsRaw) return 'sem palavras-chave (a resposta parou antes delas)';
@@ -292,11 +407,11 @@ async function tryLlm(script) {
   const prompt = `Você é editor de um canal de finanças no YouTube (pt-BR). A partir do roteiro de um Short, gere metadados de publicação. Responda EXATAMENTE neste formato, sem comentários:
 
 ---TITULO---
-[título em pt-BR, MÁXIMO ${constraints.maxChars} caracteres, com a palavra-chave "${script.keyword}" logo no começo, natural e chamativo, SEM spam de clickbait, SEM emojis]
+[título em pt-BR, MÁXIMO ${MAX_PALAVRAS_TITULO_SHORT} PALAVRAS e no máximo ${constraints.maxChars} caracteres, com a palavra-chave "${script.keyword}" logo no começo, natural e chamativo, SEM spam de clickbait, SEM emojis, SEM escrever em maiúsculas (as maiúsculas são postas depois, só na palavra-chave)]
 ---DESCRICAO---
 [gancho de 2 a 3 linhas resumindo o vídeo, tom coloquial, pt-BR, SEM hashtags e SEM links aqui]
 ---HASHTAGS---
-[3 a 5 hashtags separadas por espaço; a PRIMEIRA a mais específica do tema; NÃO inclua #Shorts (ele é adicionado depois)]
+[EXATAMENTE 2 hashtags separadas por espaço; a PRIMEIRA a mais específica do tema, a segunda mais ampla; NÃO inclua #Shorts (ele é adicionado depois e conta como a terceira)]
 ---TAGS---
 [8 a 12 variações de palavra-chave para SEO, separadas por vírgula]
 ---TOPICOS---
@@ -355,7 +470,13 @@ Dados do roteiro:
 // Template 100% determinístico a partir dos campos do roteiro.
 function deterministicMeta(script) {
   const kw = script.keyword || script.term || 'Finanças';
-  const title = `${kw}: como funciona em 1 minuto`;
+  /**
+   * ⚠️ **O PLANO B TAMBÉM TEM DE CABER NAS 8 PALAVRAS** — é nos dias maus que ele é usado,
+   * e não pode ser ele a partir a regra que a IA é obrigada a cumprir. Com uma
+   * palavra-chave comprida, o molde encolhe em vez de estourar.
+   */
+  const molde = `${kw}: como funciona em 1 minuto`;
+  const title = molde.split(/\s+/).length <= MAX_PALAVRAS_TITULO_SHORT ? molde : `${kw}: em 1 minuto`;
   // ⚠️ `kw` e não `script.term`: nos temas editoriais o `term` é a FRASE do
   // tema inteira ("A inflação te rouba R$ 2 mil por ano — sem você perceber"),
   // e encaixada aqui dava "Entenda A inflação te rouba… de um jeito simples".
@@ -397,7 +518,10 @@ function buildMetadata(raw, script) {
 
   // Maiúscula inicial: a palavra-chave entra crua no começo do título e saía em
   // minúscula em metade dos vídeos ("ações: como…", "inflação: 3 erros…").
-  const title = maiusculaInicial(sanitizeText(raw.title, 100) || sanitizeText(`${script.keyword}`, 100));
+  const title = titularOShort(
+    maiusculaInicial(sanitizeText(raw.title, 100) || sanitizeText(`${script.keyword}`, 100)),
+    script.keyword || script.term,
+  );
 
   // Hashtags: token único (CamelCase), sem stopword solta, dedup, no máx 5 (#Shorts sempre por último).
   const hashtags = buildHashtagList(raw.hashtags);
@@ -460,20 +584,19 @@ function buildMetadata(raw, script) {
 
   const description = sanitizeText(linhas.join('\n'), 5000);
 
-  // Tags: sanitiza, dedup (case-insensitive), 8–12, respeita limite ~460 chars.
-  const seen = new Set();
-  const tags = [];
-  let tagsLen = 0;
-  for (const t of raw.tags) {
-    const clean = sanitizeText(t, 60);
-    const key = clean.toLowerCase();
-    if (!clean || seen.has(key)) continue;
-    if (tags.length >= 12) break;
-    if (tagsLen + clean.length + 1 > 460) break;
-    seen.add(key);
-    tags.push(clean);
-    tagsLen += clean.length + 1;
-  }
+  /**
+   * ♦ 06/08/2026 — DEIXÁMOS METADE DO ESPAÇO POR USAR, E A CULPA ERA DE UMA TRAVA NOSSA.
+   *
+   * O dono, a ver a contagem no Studio: *"estamos com média de 230 e podemos colocar
+   * 500"*. ⚠️ **Os 500 do YouTube são CARACTERES somando todas as etiquetas, não 500
+   * etiquetas** — é fácil confundir, porque a contagem aparece sem unidade.
+   *
+   * Medido no vídeo longo: **199 de 500**. O teto real não era o dos caracteres: era um
+   * **limite de 12 etiquetas** escrito aqui. Passa a 30, e o que manda é o orçamento de
+   * caracteres — que sobe de 460 para 480, deixando 20 de folga para o YouTube contar de
+   * maneira ligeiramente diferente da nossa (nunca encostar num limite de outra pessoa).
+   */
+  const tags = escolherEtiquetas(raw.tags);
 
   return {
     snippet: {

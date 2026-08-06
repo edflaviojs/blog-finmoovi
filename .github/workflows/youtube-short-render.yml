@@ -126,6 +126,16 @@ jobs:
         if: steps.resolve.outputs.skip != 'true'
         run: npm ci
 
+      # ♦ 06/08/2026 — AS PROVAS DE MESA DO SHORT, e correm ANTES de tudo o que custa.
+      # O Short publica todos os dias e era o único formato sem uma única prova: a forma
+      # de ver o que ele ia escrever era gastar uma corrida de IA. Estas não gastam nada
+      # e demoram segundos. ⚠️ Falham o job de propósito — as regras do dono (título de 8
+      # palavras, palavra-chave em maiúsculas, 3 hashtags, etiquetas a encher os 500
+      # caracteres) partem-se em silêncio e só se veem no Studio, tarde.
+      - name: As provas de mesa dos metadados (não gastam nada)
+        if: steps.resolve.outputs.skip != 'true'
+        run: node src/scripts/validacao/validar-metadados-short.js
+
       # Só no cron: gera o roteiro fresco do termo escolhido (usa o LLM grátis).
       # Se a validação falhar mesmo após os retries internos, o step falha e o
       # job inteiro falha — o e-mail de falha do GitHub é o alerta (sem sistemas

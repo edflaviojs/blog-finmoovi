@@ -50,7 +50,7 @@ import { pathToFileURL } from 'node:url';
  * as MESMAS funções que o robô usa, em vez de uma cópia que amanhã diverge"*. A renovação
  * da chave do Google é exatamente esse caso.
  */
-import { getAccessToken } from './upload-short.js';
+import { getAccessToken, escolherEtiquetas } from './upload-short.js';
 import { prepararDescricao } from './descricao-longo.js';
 import { textoDoPrimeiroComentario, escreverPrimeiroComentario } from './lib/primeiro-comentario.js';
 
@@ -309,21 +309,18 @@ export function palavrasChave(plano, doVideo = []) {
      */
     ...PALAVRAS_DO_CANAL,
   ];
-  const vistas = new Set();
-  const saida = [];
-  let comprimento = 0;
-  for (const crua of cruas) {
-    const t = limpar(crua, 0).replace(/\s+/g, ' ');
-    const chave = t.toLowerCase();
-    if (!t || t.length < 4 || t.length > 60 || vistas.has(chave)) continue;
-    if (t.split(' ').length > MAX_PALAVRAS_ETIQUETA) continue;
-    if (saida.length >= 12) break;
-    if (comprimento + t.length + 1 > 460) break;
-    vistas.add(chave);
-    saida.push(t);
-    comprimento += t.length + 1;
-  }
-  return saida;
+  /**
+   * ♦ 06/08/2026 — A ESCOLHA PASSOU A SER A MESMA DO SHORT, e isso paga uma dívida.
+   *
+   * Estava aqui uma cópia da mesma conta que vive no `upload-short.js` — e o §44 já
+   * escrevia que *"quando o longo for aprovado, as duas pontas vão para um sítio só"*.
+   * Foi hoje: o teto de 12 etiquetas era o mesmo nos dois, e nos dois deixava **metade
+   * dos 500 caracteres do YouTube por usar** (medido: 199).
+   *
+   * ⚠️ As regras que ESTE ficheiro tinha a mais — nada de frases, nada cortado a meio —
+   * foram para lá com ela. Não se perdeu nenhuma: são as duas lições de 05/08.
+   */
+  return escolherEtiquetas(cruas.map((c) => limpar(c, 0)));
 }
 
 /**
