@@ -13,7 +13,7 @@ readingTime: 1
 
 ## What is Wealth Management?
 
-Wealth Management (wealth management) is a premium financial service that takes care of all aspects of a person's financial life: [investments](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026), taxes, inheritance, insurance, and long‑term [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips).
+Wealth Management is a premium financial service that takes care of all aspects of a person's financial life: [investments](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026), taxes, inheritance, insurance, and long‑term [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips).
 
 ## For whom is it
 

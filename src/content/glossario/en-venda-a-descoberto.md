@@ -20,7 +20,7 @@ seo:
 
 ## What it is
 
-Short selling, or “short selling”, is when you sell a stock that **you do not own** in your portfolio, expecting the price to fall so you can buy it back later at a lower value. In simple terms, you bet on the stock’s decline. If everything goes as expected, the difference between the sale price and the repurchase price becomes profit. If the price rises, you will have to buy the stock at a higher price and incur a loss. This strategy is usually used by investors who already have some market experience and understand the risks involved.
+Short selling, also called shorting, is when you sell a stock that **you do not own** in your portfolio, expecting the price to fall so you can buy it back later at a lower value. In simple terms, you bet on the stock’s decline. If everything goes as expected, the difference between the sale price and the repurchase price becomes profit. If the price rises, you will have to buy the stock at a higher price and incur a loss. This strategy is usually used by investors who already have some market experience and understand the risks involved.
 
 ![What it is](/images/glossario/venda-a-descoberto-inline-1.webp)
 

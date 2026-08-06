@@ -20,7 +20,7 @@ seo:
 
 ## What it is
 
-Yahoo [Finance](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using) is a free website (email‑app‑like a “digital notebook”) that gathers quotes of [stocks](/en/glossario/en-stocks), indices, currencies and economic news in one place. It works as a control panel for those who want to track money, whether to invest or just to understand how the market affects a salary of $600 to $1,600.  
+Yahoo [Finance](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using) is a free website that gathers quotes of [stocks](/en/glossario/en-stocks), indices, currencies and economic news in one place. It works as a control panel for those who want to track money, whether to invest or just to understand how the market affects a salary of $600 to $1,600.  
 
 ![What it is](/images/glossario/yahoo-finance-inline-1.webp)
 
