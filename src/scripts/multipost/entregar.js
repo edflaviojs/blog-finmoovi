@@ -304,8 +304,19 @@ function chave() {
 
 /**
  * O canal do Instagram, perguntado ao servidor em vez de escrito à mão.
- * Um identificador copiado para dentro do código é uma bomba-relógio: no dia em que
- * o dono reconectar a conta, ele muda e o robô passa a entregar ao nada.
+ *
+ * ⚠️ **A BOMBA-RELÓGIO EXPLODIU NO MESMO DIA.** Escrevi aqui, em 05/08, que um
+ * identificador copiado para dentro do código rebentaria no dia em que o dono
+ * reconectasse a conta. Nessa mesma noite ele reconectou — e o identificador mudou
+ * mesmo (`cmrvycxcg…` passou a `cmsh1wws…`). Este robô não sentiu nada, porque
+ * pergunta. **A automação das mensagens privadas, essa, ficou órfã** e teve de ser
+ * recriada à mão: uma automação pertence a um canal e não se pode mudar de canal
+ * (a API responde 412).
+ *
+ * 📌 **REGRA, PARA A PRÓXIMA VEZ:** sempre que o Instagram for reconectado no
+ * Multipost, é preciso **recriar a automação** — apagar e criar de novo, porque
+ * editar não a move. E criar exige `replyMessage` no SINGULAR: com o plural, o
+ * servidor cria só o gatilho e a automação fica muda, sem se queixar.
  */
 async function canalDoInstagram(k) {
   const res = await fetch(`${API}/integrations`, { headers: { Authorization: k } });
