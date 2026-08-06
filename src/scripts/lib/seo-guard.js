@@ -47,6 +47,33 @@ export function slugifyTheme(text) {
     .slice(0, 80);
 }
 
+/**
+ * Corta um slug no limite de comprimento SEM partir a última palavra.
+ *
+ * O corte cego (`.substring(0, 60)`) estava em 9 geradores e produziu 85 posts
+ * com o endereço decepado a meio — o pior visto em 06/08/2026 foi
+ * `…-e-acabar-no-aperto-202`, com "2026" cortado ao meio. O endereço é o que vai
+ * para o Google e para quem partilha, por isso a palavra partida fica à vista.
+ *
+ * Recua até ao hífen anterior. Se nem uma palavra inteira couber (caso teórico:
+ * primeira palavra maior que o limite), devolve o corte cru — vale mais um slug
+ * feio do que um slug vazio.
+ *
+ * @param {string} slug  Slug já normalizado (minúsculas, hifens).
+ * @param {number} [max] Comprimento máximo (default 60, o histórico do repo).
+ * @returns {string}
+ */
+export function trimSlug(slug, max = 60) {
+  const s = String(slug ?? '');
+  if (s.length <= max) return s;
+  const cut = s.slice(0, max);
+  // O corte caiu EXATAMENTE no fim de uma palavra (o caractere seguinte é o
+  // hífen): já está limpo — recuar aqui deitaria fora uma palavra inteira e boa.
+  if (s[max] === '-') return cut.replace(/-+$/, '');
+  const whole = cut.replace(/-[^-]*$/, '');
+  return (whole || cut).replace(/-+$/, '');
+}
+
 /** Slugs dos posts PT existentes (base, sem prefixo en-/es-). */
 export function getExistingPtSlugs(postsDir = POSTS_DIR) {
   if (!existsSync(postsDir)) return [];

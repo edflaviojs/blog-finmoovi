@@ -13,7 +13,7 @@ import { config } from '../../../site.config.ts';
 
 import { generateBlogPost, generateCoverImage, generateInlineImage, generateText } from '../apis/kie-ai.js';
 import { getDueHoliday } from '../lib/calendario-sazonal.js';
-import { isThemeCovered, warnSkip } from '../lib/seo-guard.js';
+import { isThemeCovered, warnSkip, trimSlug } from '../lib/seo-guard.js';
 import { guardedTranslate } from '../lib/lang-guard.js';
 import { analyzeContent } from '../lib/fact-guard.js';
 import { fixStaleYear } from '../lib/year-guard.js';
@@ -27,8 +27,8 @@ const DATA_DIR = join(process.cwd(), '.github', 'data');
 const TRACK = join(DATA_DIR, 'sazonal-cobertos.json');
 
 function createSlug(title) {
-  return title.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
-    .replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').substring(0, 60);
+  return trimSlug(title.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''));
 }
 
 function loadTrack() { try { return JSON.parse(readFileSync(TRACK, 'utf-8')); } catch { return {}; } }

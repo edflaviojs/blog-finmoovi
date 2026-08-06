@@ -6,7 +6,7 @@ import { config } from '../../../site.config.ts';
  */
 
 import { generateBlogPost, generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
-import { isThemeCovered, coveredThemesBlock, warnSkip } from '../lib/seo-guard.js';
+import { isThemeCovered, coveredThemesBlock, warnSkip, trimSlug } from '../lib/seo-guard.js';
 import { takeKeyword, markUsed, QUEUE_FILE } from '../lib/keyword-queue.js';
 import { guardedTranslate } from '../lib/lang-guard.js';
 import { getTranslationInstructions } from '../lib/translation-prompt.js';
@@ -115,13 +115,12 @@ ${post.processedContent}
  * Create slug from title
  */
 function createSlug(title) {
-  return title
+  return trimSlug(title
     .toLowerCase()
     .normalize('NFD')
     .replace(/[̀-ͯ]/g, '')
     .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-|-$/g, '')
-    .substring(0, 60);
+    .replace(/^-|-$/g, ''));
 }
 
 /**
