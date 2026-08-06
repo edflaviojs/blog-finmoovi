@@ -13,6 +13,7 @@ import { analyzeContent } from '../lib/fact-guard.js';
 import { fixStaleYear, CURRENT_YEAR } from '../lib/year-guard.js';
 import { getTranslationInstructions } from '../lib/translation-prompt.js';
 import { postCoreRules } from '../lib/prompt-post.js';
+import { motivoDeMarca } from '../lib/keyword-queue.js';
 import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
@@ -396,6 +397,19 @@ async function main() {
       // o índice a cada tentativa para não repetir o mesmo tema rejeitado.
       const cand = topics[(weekOfYear + (attempt - 1)) % topics.length];
 
+      // Trava 0 (a mais barata de todas): marca de terceiro ou tema fora do
+      // nicho no CENÁRIO. Este gerador não lê a fila de keywords — pede os temas
+      // a uma IA a partir de config.ai.solutionTopics — e por isso era a ÚNICA
+      // das três portas de conteúdo que não passava pelo filtro de marca
+      // (06/08/2026). Mesma régua da fila: uma régua diferente aqui foi
+      // exactamente o que deixou passar o post repetido, ver Trava 2.
+      const motivoTema = motivoDeMarca(cand.problem);
+      if (motivoTema) {
+        console.log(`⚠️ Filtro de marca ${attempt}/${MAX_ATTEMPTS} (tema): "${cand.problem}" recusado (${motivoTema}). Próximo da fila.`);
+        forbiddenThemes.push(cand.problem);
+        continue;
+      }
+
       // Trava 1 (barata): o PROBLEMA já está coberto? Nem escreve o post.
       const canibalTema = isThemeCovered(cand.problem, POSTS_DIR);
       if (canibalTema.covered) {
@@ -423,6 +437,17 @@ async function main() {
       const canibalTitulo = isThemeCovered(candDraft.title, POSTS_DIR);
       if (canibalTitulo.covered) {
         console.log(`⚠️ Anti-canibalização ${attempt}/${MAX_ATTEMPTS} (título): "${candDraft.title}" conflita com "${canibalTitulo.conflictSlug}" (${canibalTitulo.shared.join(', ')}). Descartado ANTES das imagens; próximo da fila.`);
+        forbiddenThemes.push(cand.problem);
+        rejectedTitles.push(candDraft.title);
+        continue;
+      }
+
+      // Filtro de marca, segunda passagem: o TÍTULO é escrito pela IA, logo pode
+      // trazer uma marca que o cenário não tinha. Mesmo motivo da Trava 2 existir
+      // ao lado da Trava 1 — medir só na entrada deixa passar o que nasce depois.
+      const motivoTitulo = motivoDeMarca(candDraft.title);
+      if (motivoTitulo) {
+        console.log(`⚠️ Filtro de marca ${attempt}/${MAX_ATTEMPTS} (título): "${candDraft.title}" recusado (${motivoTitulo}). Descartado ANTES das imagens; próximo da fila.`);
         forbiddenThemes.push(cand.problem);
         rejectedTitles.push(candDraft.title);
         continue;
