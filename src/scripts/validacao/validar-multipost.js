@@ -23,7 +23,7 @@ import {
   corpoDoAgendamento, corpoDoStory, capaParaOInstagram, oQueVaiNoStory,
   duracaoDoMp4, primeiraLinha, STORY_MAX_SEG, MINUTOS_ATE_O_STORY,
   REDES, REDE_DE_FORA, midiasDaRede, opcoesDaRede, montarPedido, oQueFalta,
-  encaixarNoLimite, cortarNaPalavra, MAX_TITULO_TIKTOK,
+  encaixarNoLimite, cortarNaPalavra, MAX_TITULO_TIKTOK, falaPedeComentario,
 } from '../multipost/entregar.js';
 
 let passou = 0;
@@ -379,7 +379,40 @@ console.log('\n10. O CADERNO COM OITO REDES — a retoma que antes não existia'
   ok('com as oito feitas, não falta nenhuma', todas.faltam.length === 0 && todas.feitas.length === 8);
 }
 
-console.log('\n11. O ENVELOPE — a data fica FORA da lista de redes');
+/**
+ * ═══ A TRAVA DO VÍDEO ANTIGO ═══
+ *
+ * 🔴 **O CASO REAL.** No dia em que isto passou de uma rede para oito, havia DOIS vídeos
+ * já produzidos à espera na fila — e os dois FALAM *"comenta FINMOOVI aqui embaixo que eu
+ * te mando o aplicativo"*. Mandá-los para as sete redes novas seria recriar, logo no
+ * primeiro dia, a promessa quebrada que este trabalho veio consertar.
+ *
+ * ⚠️ Ela **desliga-se sozinha** a partir do primeiro vídeo com a fala nova — por isso pode
+ * ficar para sempre, sem custo e sem ninguém ter de se lembrar de a tirar.
+ */
+console.log('\n11. A TRAVA DO VÍDEO ANTIGO — o que fala "comenta" só sai no Instagram');
+
+{
+  // As falas dos dois vídeos que estavam mesmo na fila em 07/08.
+  ok('🔴 apanha o vídeo que ainda pede comentário na FALA',
+    falaPedeComentario({ scenes: [{ role: 'cta', narration: 'Pra ver o seu caso, comenta FINMOOVI aqui embaixo que eu te mando o aplicativo de graça.' }] }));
+  // ⚠️ E também o que só o pede na TELA — o texto da pastilha conta tanto como a voz.
+  ok('🔴 e o que só pede na TELA (a pastilha conta como a voz)',
+    falaPedeComentario({ scenes: [{ role: 'cta', narration: 'Procura FinMoovi.' }], cta: { text: 'Comente FINMOOVI agora' } }));
+
+  ok('✅ o vídeo com a fala NOVA passa — e as oito redes recebem',
+    !falaPedeComentario({ scenes: [{ role: 'cta', narration: 'Quer ver o seu? Procura FinMoovi. É de graça.' }], cta: { text: 'Procura FinMoovi' } }));
+
+  /**
+   * ⚠️ SÓ A CENA DA CHAMADA CONTA. A palavra "comentário" noutro sítio da história não é
+   * uma promessa a quem assiste — puni-la era barrar vídeos bons por uma palavra solta.
+   */
+  ok('a palavra "comentários" no meio da história NÃO trava o vídeo',
+    !falaPedeComentario({ scenes: [{ role: 'beat', narration: 'Vi nos comentários que muita gente paga isso.' }, { role: 'cta', narration: 'Procura FinMoovi.' }] }));
+  ok('e um roteiro sem cena de chamada não rebenta', falaPedeComentario({}) === false);
+}
+
+console.log('\n12. O ENVELOPE — a data fica FORA da lista de redes');
 
 {
   const corpo = montarPedido({

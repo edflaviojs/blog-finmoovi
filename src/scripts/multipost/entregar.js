@@ -510,6 +510,29 @@ export const REDES = [
  */
 export const REDE_DE_FORA = { x: 'cobra US$ 0,20 por post com link (decisão do dono, 07/08)' };
 
+/**
+ * 🔴 UM VÍDEO ANTIGO NÃO PODE ESTREAR NAS SETE REDES NOVAS.
+ *
+ * ═══ O CASO REAL QUE OBRIGOU A ESCREVER ISTO (07/08) ═══
+ * No dia em que a distribuição passou de uma rede para oito, havia **dois vídeos já
+ * produzidos e à espera na fila** — e os dois FALAM *"comenta FINMOOVI aqui embaixo que
+ * eu te mando o aplicativo"*. Mandá-los para TikTok, Facebook, LinkedIn, Threads,
+ * Telegram, Pinterest e Bluesky seria recriar, no primeiro dia, exatamente a promessa
+ * quebrada que este trabalho todo veio consertar: lá ninguém responde.
+ *
+ * ✅ **O que esta trava faz:** um vídeo cuja fala ainda pede comentário sai **só no
+ * Instagram** (onde a automação existe e cumpre). As outras sete ficam de fora, e o
+ * registo diz porquê — nunca em silêncio.
+ *
+ * ⚠️ **Ela desliga-se sozinha.** A partir do primeiro vídeo escrito com a fala nova
+ * ("procura FinMoovi"), isto deixa de disparar e as oito recebem. Não é preciso lembrar-se
+ * de a tirar — e é por isso que ela pode ficar para sempre, sem custo.
+ */
+export function falaPedeComentario(roteiro) {
+  const cena = (roteiro?.scenes || []).find((s) => s && s.role === 'cta');
+  return /\bcoment\p{L}*/iu.test(`${cena?.narration || ''} ${roteiro?.cta?.text || ''}`);
+}
+
 // ═══════════════════════════════════════════════════════════════════════════════
 // O caderno — o que já foi agendado, para nunca agendar duas vezes
 // ═══════════════════════════════════════════════════════════════════════════════
@@ -1095,9 +1118,24 @@ async function main() {
   const quando = proximaHoraBrasilEmUTC(horaBR);
   const tamanhoMB = (statSync(mp4).size / 1048576).toFixed(1);
 
+  /**
+   * 🔴 A TRAVA DO VÍDEO ANTIGO — ver `falaPedeComentario`. Um vídeo cuja fala ainda pede
+   * comentário só pode sair onde há robô a responder. Fica ANTES do caderno de propósito:
+   * é ela que decide quantas redes este vídeo tem, e portanto o que conta como "já saiu
+   * em todas".
+   */
+  const soInstagram = falaPedeComentario(roteiro);
+  const aEntregar = soInstagram ? REDES.filter((r) => r.id === 'instagram') : REDES;
+  if (soInstagram) {
+    log('\n🔴 A FALA DESTE VÍDEO AINDA PEDE COMENTÁRIO — foi escrito antes de 07/08.');
+    log('   Sai SÓ no Instagram, que é onde a automação responde. As outras sete ficam de fora:');
+    log('   mandá-lo para lá seria prometer uma resposta que ninguém dá.');
+    log('   (a partir do primeiro vídeo com a fala nova, isto deixa de acontecer sozinho)');
+  }
+
   const caderno = lerCaderno();
   const registo = caderno[slug];
-  const estado = oQueFalta(registo);
+  const estado = oQueFalta(registo, aEntregar);
 
   // ⚠️ SE O POST FOI APAGADO À MÃO, O CADERNO PASSA A MENTIR — e este robô recusa
   // para sempre um vídeo que já não está agendado em lado nenhum. Aconteceu em
@@ -1119,7 +1157,7 @@ async function main() {
     log(`🔁 RETOMA: ${estado.feitas.length} rede(s) já saíram (${estado.feitas.join(', ')}). Faltam: ${estado.faltam.join(', ')}`);
   }
 
-  log(`\n📤 Multipost — a entregar "${slug}" em ${REDES.length} redes${DRY_RUN ? ' (ENSAIO: não envia nada)' : ''}`);
+  log(`\n📤 Multipost — a entregar "${slug}" em ${aEntregar.length} rede(s)${DRY_RUN ? ' (ENSAIO: não envia nada)' : ''}`);
   log(`🎞️  ficheiro: ${tamanhoMB} MB`);
   log(`🕖 âncora: ${emHoraDoBrasil(quando)} no Brasil  =  ${quando.toISOString()} em UTC`);
 
@@ -1140,7 +1178,7 @@ async function main() {
     const media = { id: '(id do vídeo)', path: 'https://exemplo/video.mp4' };
     const capa = temCapa ? { id: '(id da capa)', path: 'https://exemplo/capa.jpg' } : null;
 
-    for (const rede of REDES) {
+    for (const rede of aEntregar) {
       const hora = new Date(quando.getTime() + rede.minutos * 60000);
       const texto = rede.legenda(roteiro, rede.limite);
       const { midias, motivo } = midiasDaRede(rede, { media, capa });
@@ -1215,7 +1253,7 @@ async function main() {
 
   let quantas = 0;
   const falharam = [];
-  for (const rede of REDES) {
+  for (const rede of aEntregar) {
     if (registo?.redes?.[rede.id]) { log(`\n⏭️  ${rede.nome}: já estava agendado (post ${registo.redes[rede.id].postId})`); continue; }
     const principal = rede.id === 'instagram';
     try {
@@ -1297,7 +1335,8 @@ async function main() {
   }
 
   log(`\n${'═'.repeat(72)}`);
-  log(`✅ ${quantas} de ${REDES.length} redes agendadas para hoje.`);
+  log(`✅ ${quantas} de ${aEntregar.length} rede(s) agendadas para hoje.`);
+  if (soInstagram) log(`   (as outras ${REDES.length - 1} ficaram de fora porque a fala deste vídeo ainda pede comentário)`);
   if (falharam.length) {
     // ⚠️ NUNCA EM SILÊNCIO. Um `catch` que só escreve no log dá corrida verde mentirosa —
     // foi assim que o monitor do blog ficou morto 28 dias sem ninguém notar.
