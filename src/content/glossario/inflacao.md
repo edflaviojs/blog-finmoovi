@@ -1,6 +1,7 @@
 ---
 term: "Inflação"
 image: "/images/glossario/inflacao.webp"
+imageAlt: "Moedas douradas empilhadas e vaso com planta verde sobre fundo escuro."
 definition: "Aumento generalizado dos preços ao longo do tempo. No Brasil, é medida pelo IPCA (Índice de Preços ao Consumidor Amplo)."
 category: "basico"
 relatedTerms: ["IPCA", "Selic", "Poder de Compra"]

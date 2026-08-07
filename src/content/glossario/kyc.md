@@ -4,6 +4,7 @@ definition: "Entenda o que é kyc, como funciona, vantagens, riscos e exemplos p
 title: "kyc - Glossário Financeiro"
 description: "Entenda o que é kyc, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
 image: "/images/glossario/kyc.webp"
+imageAlt: "Letras douradas KYC, pilhas de moedas e planta crescendo em vidro."
 category: "basico"
 tags: ["kyc", "glossário", "finanças"]
 author: "FinMoovi"

@@ -4,6 +4,7 @@ definition: "What Cash flow is and how it shows up in your everyday money — ex
 title: "Cash flow - Financial Glossary"
 description: "What Cash flow is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/fluxo-de-caixa.webp"
+imageAlt: "Stacks of gold coins rising with an arrow, next to glass jars holding coins and sprouting plants."
 category: "basico"
 tags: ["Cash flow", "glossary", "finance"]
 author: "FinMoovi"

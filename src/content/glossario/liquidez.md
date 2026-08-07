@@ -1,6 +1,7 @@
 ---
 term: "Liquidez"
 image: "/images/glossario/liquidez.webp"
+imageAlt: "Moedas douradas, gráfico de barras laranja e planta em vaso sobre fundo escuro."
 definition: "Facilidade e velocidade com que um ativo pode ser convertido em dinheiro sem perda significativa de valor."
 category: "investimentos"
 relatedTerms: ["Reserva de Emergência", "CDB", "Tesouro Direto"]

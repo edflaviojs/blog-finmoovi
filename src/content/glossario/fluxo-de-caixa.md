@@ -4,6 +4,7 @@ definition: "O que é fluxo de caixa e como isso aparece no seu dia a dia — ex
 title: "fluxo de caixa - Glossário Financeiro"
 description: "O que é fluxo de caixa e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/fluxo-de-caixa.webp"
+imageAlt: "Moedas douradas empilhadas com gráfico ascendente e plantas brotando em potes de vidro."
 category: "basico"
 tags: ["fluxo de caixa", "glossário", "finanças"]
 author: "FinMoovi"

@@ -4,6 +4,7 @@ definition: "Qué es flujo de caja y cómo aparece en tu día a día — explica
 title: "flujo de caja - Glosario Financiero"
 description: "Qué es flujo de caja y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/fluxo-de-caixa.webp"
+imageAlt: "Monedas apiladas, gráfico ascendente y frascos con plantas sobre fondo degradado."
 category: "basico"
 tags: ["flujo de caja", "glosario", "finanzas"]
 author: "FinMoovi"

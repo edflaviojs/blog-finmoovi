@@ -4,6 +4,7 @@ definition: "LC é a sigla de Letra de Câmbio: um investimento de renda fixa em
 title: "LC (Letra de Câmbio) - Glossário Financeiro"
 description: "O que é a LC, a Letra de Câmbio: como funciona, quanto rende, a proteção do FGC, os riscos e por que ela é confundida com a LCI/LCA."
 image: "/images/glossario/lc.webp"
+imageAlt: "Moedas douradas empilhadas, gráfico de barras com seta ascendente e vaso de vidro com planta verde."
 category: "investimentos"
 tags: ["lc", "letra de câmbio", "renda fixa", "glossário", "finanças"]
 author: "FinMoovi"

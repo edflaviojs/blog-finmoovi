@@ -1,6 +1,7 @@
 ---
 term: "IPCA"
 image: "/images/glossario/ipca.webp"
+imageAlt: "Moedas douradas, gráfico de barras branco e cofrinhos em potes de vidro sobre fundo azul escuro."
 definition: "Índice Nacional de Preços ao Consumidor Amplo. É o indicador oficial da inflação no Brasil, medido pelo IBGE mensalmente."
 category: "basico"
 relatedTerms: ["Inflação", "Selic", "Tesouro Direto"]

@@ -1,6 +1,7 @@
 ---
 term: "Juros Compostos"
 image: "/images/glossario/juros-compostos.webp"
+imageAlt: "Moedas douradas empilhadas, gráfico ascendente e planta crescendo em pote de vidro."
 definition: "Juros que incidem sobre o valor principal mais os juros acumulados anteriormente. É o 'juros sobre juros' que faz investimentos crescerem exponencialmente."
 category: "basico"
 relatedTerms: ["Rendimento", "CDI", "Investimento"]

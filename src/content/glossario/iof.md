@@ -1,6 +1,7 @@
 ---
 term: "IOF"
 image: "/images/glossario/iof.webp"
+imageAlt: "Moedas douradas empilhadas, barras e plantas em frascos sobre fundo escuro."
 definition: "Imposto sobre Operações Financeiras. Incide sobre empréstimos, câmbio, seguros e investimentos de curto prazo."
 category: "impostos"
 relatedTerms: ["Imposto de Renda", "CDI", "Câmbio"]
