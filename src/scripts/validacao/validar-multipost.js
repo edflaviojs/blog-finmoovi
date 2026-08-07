@@ -22,7 +22,7 @@ import { join } from 'path';
 import {
   corpoDoAgendamento, corpoDoStory, capaParaOInstagram, oQueVaiNoStory,
   duracaoDoMp4, primeiraLinha, STORY_MAX_SEG, MINUTOS_ATE_O_STORY,
-  REDES, REDE_DE_FORA, midiasDaRede, opcoesDaRede, montarPedido, oQueFalta,
+  REDES, REDE_DE_FORA, REDE_TIKTOK, midiasDaRede, opcoesDaRede, montarPedido, oQueFalta,
   encaixarNoLimite, cortarNaPalavra, MAX_TITULO_TIKTOK, falaPedeComentario,
 } from '../multipost/entregar.js';
 
@@ -182,14 +182,16 @@ const ROTEIRO = {
     { role: 'beat', narration: 'Eu joguei isso no FinMoovi e ele me mostrou que o saque ficou no topo da lista.' },
   ],
 };
-const rede = (id) => REDES.find((r) => r.id === id);
+// ⚠️ O TikTok está FORA de `REDES` (ordem do dono) mas continua a ser medido — por isso
+// esta busca também olha para ele. Ver `REDE_TIKTOK`.
+const rede = (id) => (id === 'tiktok' ? REDE_TIKTOK : REDES.find((r) => r.id === id));
 
 console.log('\n6. A TABELA DAS OITO REDES — quem entra, quem não, e a que horas');
 
 {
-  ok('são oito redes', REDES.length === 8, `são ${REDES.length}`);
+  ok('são sete redes a receber', REDES.length === 7, `são ${REDES.length}`);
   ok('e são exatamente as combinadas',
-    REDES.map((r) => r.id).join(',') === 'instagram,tiktok,facebook,linkedin-page,threads,telegram,pinterest,bluesky',
+    REDES.map((r) => r.id).join(',') === 'instagram,facebook,linkedin-page,threads,telegram,pinterest,bluesky',
     REDES.map((r) => r.id).join(','));
   /**
    * 🔴 O X FICA DE FORA POR ORDEM DO DONO (07/08): desde 02/2026 cobra US$ 0,20 por post
@@ -199,6 +201,24 @@ console.log('\n6. A TABELA DAS OITO REDES — quem entra, quem não, e a que hor
   ok('🔴 o X NÃO recebe nada — ele cobra por publicação',
     !REDES.some((r) => r.id === 'x') && Boolean(REDE_DE_FORA.x));
   ok('e está escrito PORQUÊ, não só que não entra', /0,20|link/i.test(REDE_DE_FORA.x));
+  /**
+   * 🔴 E O TIKTOK TAMBÉM NÃO, POR ORDEM DIRETA DO DONO (07/08): *"não quero enviar nada
+   * até eles nos dar autorização para postar"* — **nem em privado**. Isto revoga o §12-C,
+   * que permitia 1 por dia em `SELF_ONLY`.
+   *
+   * ⚠️ Esta prova é a fechadura. Se alguém repuser o TikTok na tabela a olhar para o
+   * §12-C (que continua escrito no documento), ela acende antes de sair um vídeo.
+   */
+  ok('🔴 o TikTok NÃO recebe nada enquanto a auditoria não sair — nem em privado',
+    !REDES.some((r) => r.id === 'tiktok') && Boolean(REDE_DE_FORA.tiktok));
+  ok('e está escrito que é ordem do dono, e que vale para o privado também',
+    /dono/i.test(REDE_DE_FORA.tiktok) && /privado/i.test(REDE_DE_FORA.tiktok));
+  /**
+   * ⚠️ MAS ELE FICA PRONTO. As opções dele continuam medidas aqui em baixo — senão, no dia
+   * em que a auditoria passasse, religava-se um TikTok que ninguém provava há meses.
+   */
+  ok('⏸️ o TikTok continua guardado e pronto para voltar ao minuto 12',
+    REDE_TIKTOK.id === 'tiktok' && REDE_TIKTOK.minutos === 12 && typeof REDE_TIKTOK.legenda === 'function');
 
   ok('o Instagram é a âncora das 19h (minuto zero)', rede('instagram').minutos === 0);
   const minutos = REDES.map((r) => r.minutos);
@@ -305,7 +325,9 @@ console.log('\n9. O TEXTO DE CADA REDE — cabe no limite, e o LINK nunca cai');
    * post do Bluesky que passasse dos 300 sairia sem o endereço e ninguém saberia: é a
    * única coisa que aquele post tem para dar.
    */
-  for (const r of REDES) {
+  // ⚠️ O TikTok entra aqui mesmo estando fora da entrega: ele volta um dia, e o texto dele
+  // tem de continuar a caber sem ninguém ter de se lembrar de o medir nesse dia.
+  for (const r of [...REDES, REDE_TIKTOK]) {
     const texto = r.legenda(ROTEIRO, r.limite);
     ok(`${r.id}: o texto cabe nos ${r.limite}`, texto.length <= r.limite, `deu ${texto.length}`);
   }
@@ -360,7 +382,9 @@ console.log('\n9. O TEXTO DE CADA REDE — cabe no limite, e o LINK nunca cai');
 console.log('\n10. O CADERNO COM OITO REDES — a retoma que antes não existia');
 
 {
-  ok('sem registo nenhum, faltam as oito', oQueFalta(undefined).faltam.length === 8);
+  // ⚠️ Contado a partir de `REDES`, não escrito à mão: assim isto não precisa de ser
+  // mexido no dia em que o TikTok voltar à tabela.
+  ok('sem registo nenhum, faltam todas', oQueFalta(undefined).faltam.length === REDES.length);
   /**
    * ⚠️ UM REGISTO ANTIGO (sem `redes`) É DIA FECHADO. Ele é de quando só havia Instagram;
    * tratá-lo como "faltam sete" mandaria um vídeo de há uma semana para sete redes de uma
@@ -370,13 +394,13 @@ console.log('\n10. O CADERNO COM OITO REDES — a retoma que antes não existia'
   ok('🔴 um registo ANTIGO conta como dia fechado, não como sete em falta',
     antigo.antigo === true && antigo.faltam.length === 0);
 
-  const meio = oQueFalta({ redes: { instagram: { postId: 'a' }, tiktok: { postId: 'b' } } });
-  ok('com duas feitas, faltam seis', meio.feitas.length === 2 && meio.faltam.length === 6);
+  const meio = oQueFalta({ redes: { instagram: { postId: 'a' }, facebook: { postId: 'b' } } });
+  ok('com duas feitas, faltam as outras', meio.feitas.length === 2 && meio.faltam.length === REDES.length - 2);
   ok('🔑 e a retoma tenta SÓ as que faltaram — não republica as feitas',
-    !meio.faltam.includes('instagram') && !meio.faltam.includes('tiktok'));
+    !meio.faltam.includes('instagram') && !meio.faltam.includes('facebook'));
 
   const todas = oQueFalta({ redes: Object.fromEntries(REDES.map((r) => [r.id, { postId: 'x' }])) });
-  ok('com as oito feitas, não falta nenhuma', todas.faltam.length === 0 && todas.feitas.length === 8);
+  ok('com todas feitas, não falta nenhuma', todas.faltam.length === 0 && todas.feitas.length === REDES.length);
 }
 
 /**

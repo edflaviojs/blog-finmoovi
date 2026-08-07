@@ -485,9 +485,19 @@ export const MAX_TITULO_PINTEREST = 95;
  * servidor a cada corrida (`maxLength` em `/integration-settings/{id}`). Se ele mudar de
  * versão e apertar um limite, o robô segue o dele — não o que está escrito aqui.
  */
+/**
+ * 🔴 O TIKTOK, PRONTO E À ESPERA — mas FORA da tabela por ordem do dono (ver `REDE_DE_FORA`).
+ *
+ * Ele vive aqui, e não apagado, de propósito: assim as provas de mesa continuam a medir as
+ * opções dele (os oito campos obrigatórios, o privado, a marca desligada) e nada se
+ * estraga em silêncio enquanto a auditoria não sai. **Religar é acrescentá-lo a `REDES`**,
+ * no lugar dele — o minuto 12, entre o Instagram e o Facebook.
+ */
+export const REDE_TIKTOK = { id: 'tiktok', nome: 'TikTok', minutos: 12, limite: 2000, midia: 'video', legenda: legendaTikTok };
+
 export const REDES = [
   { id: 'instagram', nome: 'Instagram', minutos: 0, limite: 2200, midia: 'video', legenda: montarLegenda },
-  { id: 'tiktok', nome: 'TikTok', minutos: 12, limite: 2000, midia: 'video', legenda: legendaTikTok },
+  // ⬅️ o lugar do TikTok (minuto 12) fica VAGO. Ver `REDE_TIKTOK` e `REDE_DE_FORA`.
   { id: 'facebook', nome: 'Facebook', minutos: 26, limite: 63206, midia: 'video', legenda: legendaFormal },
   { id: 'linkedin-page', nome: 'LinkedIn', minutos: 43, limite: 3000, midia: 'video', legenda: legendaFormal },
   { id: 'threads', nome: 'Threads', minutos: 58, limite: 500, midia: 'video', legenda: legendaThreads },
@@ -497,18 +507,35 @@ export const REDES = [
 ];
 
 /**
- * 🔴 O X NÃO ESTÁ NA TABELA, E É PRECISO QUE SE VEJA PORQUÊ.
+ * 🔴 QUEM NÃO RECEBE NADA DAQUI, E PORQUÊ.
  *
- * Ele continua LIGADO no Multipost — não foi desconectado. Só não recebe nada daqui.
- * Desde 02/2026 o X cobra **US$ 0,015 por publicação e US$ 0,20 se ela tiver LINK**, e as
- * daqui têm link: ~US$ 6/mês só para o dono. Decisão dele em 07/08: fica de fora.
+ * Os dois continuam LIGADOS no Multipost — não foram desconectados. Só não recebem nada
+ * deste robô.
+ *
+ * ═══ X ═══
+ * Desde 02/2026 cobra **US$ 0,015 por publicação e US$ 0,20 se ela tiver LINK**, e as
+ * daqui têm link: ~US$ 6/mês só para o dono. Decisão dele em 07/08.
  * 🔑 Publicar à mão pelo site continua GRÁTIS — o que se paga é a API. Ver IMPL26 §12-F.
  *
- * ⚠️ Isto é uma LISTA DE CONVIDADOS, não uma lista de excluídos: só entra quem está em
- * `REDES`. Se um dia aparecer um canal novo no painel, ele não começa a receber vídeos
- * sozinho — alguém tem de o escrever aqui. É o lado seguro.
+ * ═══ TIKTOK — 🔴 ORDEM DIRETA DO DONO EM 07/08 ═══
+ * *"não quero enviar nada até eles nos dar autorização para postar"* — **nem em privado.**
+ *
+ * ⚠️ Isto REVOGA a decisão anterior (§12-C), que era publicar no máximo 1 por dia em
+ * `SELF_ONLY` para manter o canal vivo. Ele é o dono da conta e do risco; a ordem nova
+ * manda. Está escrito aqui para ninguém "consertar" isto mais tarde a olhar para o §12-C.
+ *
+ * ⚠️ **O que fica pronto e à espera:** as opções do TikTok (`opcoesDaRede`), o texto
+ * (`legendaTikTok`) e as provas de mesa continuam todos aqui, com os oito campos
+ * obrigatórios já certos e conferidos contra o servidor. **Voltar a ligar é UMA linha**:
+ * repor a rede em `REDES`, no minuto 12, e tirar esta entrada.
+ * ⚠️ E antes de repor: reler o §12-C, porque o argumento dele continua de pé — o TikTok dá
+ * o empurrão do algoritmo **no momento da publicação**, e vídeo que nasce privado perde
+ * esse momento e não o recupera.
  */
-export const REDE_DE_FORA = { x: 'cobra US$ 0,20 por post com link (decisão do dono, 07/08)' };
+export const REDE_DE_FORA = {
+  x: 'cobra US$ 0,20 por post com link (decisão do dono, 07/08)',
+  tiktok: 'ordem do dono, 07/08: nada é enviado — nem em privado — enquanto a auditoria não sair',
+};
 
 /**
  * 🔴 UM VÍDEO ANTIGO NÃO PODE ESTREAR NAS SETE REDES NOVAS.
@@ -1030,11 +1057,17 @@ async function inspecionar() {
    * passou duas semanas a mandar a capa num campo que não existia — este servidor deita
    * fora em SILÊNCIO o que não conhece.
    */
-  for (const rede of REDES) {
+  /**
+   * ⚠️ O TIKTOK É INSPECIONADO NA MESMA, mesmo estando fora da entrega. Ele vai voltar
+   * quando a auditoria sair, e um campo que o servidor deixe de aceitar entretanto tem de
+   * aparecer AQUI — não no dia em que se religa.
+   */
+  for (const rede of [...REDES, REDE_TIKTOK]) {
     const canal = canalDaRede(canais, rede);
+    const espera = !REDES.includes(rede) ? '   ⏸️ (à espera: não recebe nada hoje)' : '';
     log(`\n${'─'.repeat(72)}`);
     if (!canal) { log(`📡 ${rede.nome}: ⚠️ NÃO ESTÁ LIGADO — este vídeo não sairia lá.`); continue; }
-    log(`📡 ${rede.nome}  (${canal.identifier})  id=${canal.id}`);
+    log(`📡 ${rede.nome}  (${canal.identifier})  id=${canal.id}${espera}`);
     const r = await fetch(`${API}/integration-settings/${encodeURIComponent(canal.id)}`, { headers: { Authorization: k } });
     const t = await r.text();
     if (!r.ok) { log(`   ⚠️ não deu para perguntar (${r.status}): ${t.slice(0, 200)}`); continue; }
