@@ -87,11 +87,26 @@ export function listOutboxPending() {
  * nada: sem esta pergunta, um dia com fila atrasada despejaria dois vídeos seguidos.
  *
  * O dia mede-se em UTC — é o relógio do cron, e é o mesmo que carimba o `uploadedAt`.
+ *
+ * ♦ 07/08/2026 — E PERGUNTA-SE PELO FORMATO, senão a rede não segura nada.
+ *
+ * ⚠️ Com o Short de 16s a publicar às 8h40 todos os dias, a pergunta *"já saiu vídeo
+ * hoje?"* passava a ter SEMPRE a resposta "sim" — e a repescagem do de 50s, que
+ * existe por o canal ter ficado dois dias sem vídeo, deixava de disparar **em
+ * silêncio**. Um formato novo desligava a rede de segurança do outro sem ninguém dar
+ * por nada. Agora cada formato pergunta pelo seu.
+ *
+ * `formato` vazio = a pergunta antiga (qualquer vídeo serve), para nada partir se
+ * alguém chamar isto sem argumento.
+ * ⚠️ Registos anteriores a 07/08 não têm o campo `formato` — e eram TODOS de 50s,
+ * por isso a ausência conta como `short50`.
  */
-export function jaSaiuVideoNoDia(diaUTC, tracking) {
-  return Object.values(tracking || {}).some(
-    (v) => String((v && v.uploadedAt) || '').slice(0, 10) === diaUTC,
-  );
+export function jaSaiuVideoNoDia(diaUTC, tracking, formato = '') {
+  return Object.values(tracking || {}).some((v) => {
+    if (String((v && v.uploadedAt) || '').slice(0, 10) !== diaUTC) return false;
+    if (!formato) return true;
+    return ((v && v.formato) || 'short50') === formato;
+  });
 }
 
 // ─── execução direta (CLI dos workflows) ─────────────────────────────────────
@@ -135,7 +150,10 @@ if (executadoDireto) {
     let tracking = {};
     try { tracking = JSON.parse(readFileSync(TRACKING, 'utf-8')); } catch { /* sem tracking = nada saiu */ }
     const hoje = flags.dia || new Date().toISOString().slice(0, 10);
-    console.log(jaSaiuVideoNoDia(hoje, tracking) ? 'sim' : 'nao');
+    // ⚠️ `--formato=short50` limita a pergunta ao formato que a ronda serve. Sem
+    // isto, o Short de 16s das 8h40 respondia "sim" todos os dias e desligava a
+    // repescagem do de 50s em silêncio.
+    console.log(jaSaiuVideoNoDia(hoje, tracking, flags.formato || '') ? 'sim' : 'nao');
   } else {
     console.error('comando desconhecido — use: enqueue | next | done | pending | saiu-hoje');
     process.exit(1);

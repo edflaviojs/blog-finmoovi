@@ -63,8 +63,13 @@ jobs:
           # dois crons disparou — não é preciso adivinhar pela hora do relógio.
           # ⚠️ Corre ANTES do `npm ci` de propósito: `outbox.js` só usa node:fs, e
           # num dia normal esta ronda acaba aqui, sem instalar nada.
+          # ⚠️ `--formato=short50` acrescentado em 07/08/2026, e é o que mantém esta
+          # rede de segurança viva. Sem ele, o Short de 16s que passa a sair às 8h40
+          # respondia "sim, já saiu vídeo hoje" TODOS OS DIAS — e esta repescagem, que
+          # nasceu ontem por o canal ter ficado dois dias sem vídeo, nunca mais
+          # disparava, em silêncio. Cada formato pergunta pelo SEU.
           if [ "${{ github.event.schedule }}" = "0 20 * * *" ]; then
-            if [ "$(node src/scripts/youtube/outbox.js saiu-hoje)" = "sim" ]; then
+            if [ "$(node src/scripts/youtube/outbox.js saiu-hoje --formato=short50)" = "sim" ]; then
               echo "✅ o vídeo de hoje já foi entregue na ronda das 12h — a repescagem não faz nada."
               echo "skip=true" >> "$GITHUB_OUTPUT"
               exit 0

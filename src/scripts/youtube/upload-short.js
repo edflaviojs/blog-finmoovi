@@ -878,8 +878,24 @@ async function main() {
     log(`⚠️ as playlists falharam (o vídeo já está no ar): ${err.message}`);
   }
 
-  // Tracking.
-  tracking[SLUG] = { videoId, uploadedAt: new Date().toISOString(), title: metadata.snippet.title };
+  /**
+   * Tracking.
+   *
+   * ♦ 07/08/2026 — PASSOU A GUARDAR O FORMATO, e não é enfeite.
+   * A repescagem do Short de 50s pergunta *"já saiu vídeo hoje?"* antes de agir. Com
+   * o formato de 16s a publicar às 8h40 todos os dias, a resposta passava a ser
+   * SEMPRE "sim" — e a rede de segurança do de 50s, construída em 07/08 por o canal
+   * ter ficado dois dias sem vídeo, deixava de disparar EM SILÊNCIO.
+   * Com o formato gravado, cada um pergunta pelo seu.
+   * ⚠️ Registos antigos não têm este campo: quem os lê trata a ausência como
+   * `short50`, que é o que todos eram.
+   */
+  tracking[SLUG] = {
+    videoId,
+    uploadedAt: new Date().toISOString(),
+    title: metadata.snippet.title,
+    formato: script.formato || 'short50',
+  };
   saveTracking(tracking);
   log(`📝 tracking atualizado em ${TRACKING}`);
 
