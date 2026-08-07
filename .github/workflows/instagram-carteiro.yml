@@ -54,9 +54,23 @@ on:
         description: 'SÓ LER: perguntar às 8 redes que opções cada uma aceita, e conferir contra o que mandamos (não entrega nada)'
         type: boolean
         default: false
-  # 🔴 RELÓGIO DESLIGADO À NASCENÇA. Liga-se depois da primeira entrega conferida.
-  # schedule:
-  #   - cron: '20 15 * * *'
+  # ✅ RELÓGIO LIGADO em 07/08/2026, por ordem do dono.
+  #
+  # Nasceu desligado ("liga-se depois da primeira entrega conferida") e assim ficou
+  # enquanto só havia Instagram. Liga agora, no mesmo dia em que passou a servir sete
+  # redes — e a primeira corrida automática é 08/08 às 12h20 do Brasil.
+  #
+  # ⚠️ O QUE SAI NA PRIMEIRA: os dois vídeos que estão na fila foram escritos ANTES da
+  # fala nova (ainda dizem "comenta FINMOOVI"), por isso a trava do vídeo antigo manda-os
+  # só ao Instagram. As sete redes só recebem a partir do primeiro vídeo escrito depois
+  # de hoje. Ver `falaPedeComentario` em `entregar.js`.
+  #
+  # 🔴 UM RELÓGIO SÓ CORRE A PARTIR DO RAMO PRINCIPAL. Num ramo lateral este bloco não
+  # faz nada — já custou tempo neste projeto a descobrir isso.
+  #
+  # 15:20 UTC = 12:20 no Brasil (o país não muda a hora desde 2019).
+  schedule:
+    - cron: '20 15 * * *'
 
 permissions:
   contents: write
