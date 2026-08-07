@@ -1187,6 +1187,23 @@ export function minutosDoStory(story, redes = REDES) {
   return dona ? dona.minutos + MINUTOS_ATE_O_STORY : null;
 }
 
+/**
+ * 🔴 OS STORIES QUE AINDA NÃO SAÍRAM — e por que isto existe à parte.
+ *
+ * A conta do que falta (`oQueFalta`) olha só para as REDES. Bastava as sete saírem e um
+ * Story falhar para o robô dizer *"já foi agendado nas 7 redes, nada a fazer"* e **nunca
+ * mais o tentar** — a única cura seria editar o caderno à mão. Apanhado a reler o código,
+ * como os outros três defeitos do dia.
+ *
+ * ⚠️ Só conta o Story de uma rede que ENTREGA hoje: se o Facebook está fora, o Story dele
+ * não está "em falta" — não tem de existir.
+ */
+export function storiesEmFalta(registoDoSlug, redes = REDES, stories = STORIES) {
+  return stories
+    .filter((s) => redes.some((r) => r.id === s.canal) && !registoDoSlug?.redes?.[s.id])
+    .map((s) => s.id);
+}
+
 // ═══════════════════════════════════════════════════════════════════════════════
 // AS OPÇÕES DE CADA UMA DAS OUTRAS SETE (07/08/2026)
 // ═══════════════════════════════════════════════════════════════════════════════
@@ -1571,13 +1588,23 @@ async function main() {
     log(PISTA);
     return 0;
   }
-  if (!DRY_RUN && registo && !estado.faltam.length) {
-    log(`⏭️  "${slug}" já foi agendado nas ${estado.feitas.length} redes em ${registo.agendadoEm}. Nada a fazer.`);
+  /**
+   * 🔴 OS STORIES TAMBÉM CONTAM PARA A RETOMA — e não contavam.
+   *
+   * A conta do que falta olhava só para as REDES. Bastava as sete saírem e um Story
+   * falhar para o robô dizer *"já foi agendado nas 7 redes, nada a fazer"* e **nunca mais
+   * o tentar**: a única cura seria editar o caderno à mão. Apanhado a reler o código.
+   */
+  const storiesQueFaltam = storiesEmFalta(registo, aEntregar);
+
+  if (!DRY_RUN && registo && !estado.faltam.length && !storiesQueFaltam.length) {
+    log(`⏭️  "${slug}" já foi agendado nas ${estado.feitas.length} redes (e nos Stories) em ${registo.agendadoEm}. Nada a fazer.`);
     log(PISTA);
     return 0;
   }
   if (!DRY_RUN && registo) {
-    log(`🔁 RETOMA: ${estado.feitas.length} rede(s) já saíram (${estado.feitas.join(', ')}). Faltam: ${estado.faltam.join(', ')}`);
+    const emFalta = [...estado.faltam, ...storiesQueFaltam];
+    log(`🔁 RETOMA: ${estado.feitas.length} rede(s) já saíram (${estado.feitas.join(', ') || '—'}). Faltam: ${emFalta.join(', ')}`);
   }
 
   log(`\n📤 Multipost — a entregar "${slug}" em ${aEntregar.length} rede(s)${DRY_RUN ? ' (ENSAIO: não envia nada)' : ''}`);
@@ -1768,11 +1795,16 @@ async function main() {
     if (!dona) { log(`\n⏭️  ${story.nome}: o ${story.canal} não entrega hoje, então o Story também não`); continue; }
     if (!caderno[slug]?.redes?.[story.canal]) {
       log(`\n⏭️  ${story.nome}: o post do ${story.canal} não foi agendado — um Story sozinho ficaria órfão`);
+      falharam.push(`${story.nome} (o post do ${story.canal} não saiu)`);
       continue;
     }
     try {
       const canal = canalDaRede(canais, dona, log);
-      if (!escolhaDoStory.media) { log(`\n⚠️ ${story.nome} não sai: ${escolhaDoStory.motivo}`); continue; }
+      if (!escolhaDoStory.media) {
+        log(`\n⚠️ ${story.nome} não sai: ${escolhaDoStory.motivo}`);
+        falharam.push(`${story.nome} (${escolhaDoStory.motivo})`);
+        continue;
+      }
       const { quandoUTC: horaDoStory } = horaDaRede(quando, { minutos: minutosDoStory(story) });
       const idStory = await enviarAgendamento(k, corpoDoStory({
         canalId: canal.id,
@@ -1789,6 +1821,7 @@ async function main() {
       // ⚠️ NADA AQUI DERRUBA O POST. O post daquela rede já está agendado e confirmado
       // quando se chega a esta linha: o principal nunca paga pelo acessório.
       log(`\n⚠️ ${story.nome} não foi agendado (${e.message}) — o post está de pé, que é o que conta.`);
+      falharam.push(`${story.nome} (${e.message})`);
     }
   }
 

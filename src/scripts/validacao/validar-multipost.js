@@ -26,7 +26,7 @@ import {
   encaixarNoLimite, cortarNaPalavra, MAX_TITULO_TIKTOK, falaPedeComentario,
   numerosEmAlgarismo, lerNumeral, topicosDoRoteiro, montarLegenda,
   linkDoVideo, topicosSemOProduto, comoLista, MAX_ETIQUETAS_LINKEDIN,
-  horaDaRede, MINUTOS_DE_MARGEM, STORIES, minutosDoStory,
+  horaDaRede, MINUTOS_DE_MARGEM, STORIES, minutosDoStory, storiesEmFalta,
 } from '../multipost/entregar.js';
 
 let passou = 0;
@@ -761,6 +761,23 @@ console.log('\n17. OS STORIES — só onde eles existem, e sempre depois do post
    */
   ok('e os dois usam a MESMA regra dos 60 segundos',
     oQueVaiNoStory({ duracaoSeg: 65, media: MEDIA, capa: CAPA }).tipo === 'capa');
+
+  /**
+   * 🔴 O BURACO DA RETOMA. A conta do que falta olhava só para as REDES: bastava as sete
+   * saírem e um Story falhar para o robô dizer *"já foi agendado, nada a fazer"* e **nunca
+   * mais o tentar** — a cura seria editar o caderno à mão. Apanhado a reler o código.
+   */
+  const tudoMenosOStory = { redes: Object.fromEntries(REDES.map((r) => [r.id, { postId: 'x' }])) };
+  ok('🔴 com todas as redes feitas e um Story em falta, ele CONTINUA em falta',
+    storiesEmFalta(tudoMenosOStory).length === 2, storiesEmFalta(tudoMenosOStory).join(','));
+  ok('e quando os dois já saíram, não falta nada',
+    storiesEmFalta({ redes: { ...tudoMenosOStory.redes, 'instagram-story': { postId: 'a' }, 'facebook-story': { postId: 'b' } } }).length === 0);
+  /**
+   * ⚠️ Só conta o Story de uma rede que ENTREGA hoje. Com o vídeo antigo (que sai só no
+   * Instagram), o Story do Facebook não está "em falta" — ele não tem de existir.
+   */
+  ok('🔑 se o Facebook não entrega hoje, o Story dele não conta como em falta',
+    storiesEmFalta(null, [REDES[0]]).join(',') === 'instagram-story');
 }
 
 console.log('\n18. O ENVELOPE — a data fica FORA da lista de redes');
