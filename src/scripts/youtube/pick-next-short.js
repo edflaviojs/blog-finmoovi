@@ -16,6 +16,13 @@
  * Uso:
  *   node src/scripts/youtube/pick-next-short.js            → imprime o slug/id
  *   node src/scripts/youtube/pick-next-short.js --verbose  → + contagens
+ *   node src/scripts/youtube/pick-next-short.js --excluir=a,b  → salta estes temas
+ *
+ * ♦ 07/08/2026 — `--excluir` É O PLANO B DO CANAL (ordem do dono).
+ * Em 07/08 o tema do dia era impossível de escrever ("Ganho R$ 3 mil por mês" com
+ * uma trava a proibir números) e o robô morreu ali: quatro tentativas ao MESMO
+ * tema, e o canal ficou sem vídeo. Um tema envenenado não pode custar o dia.
+ * Quem repete é o workflow: falhou, exclui este e pede o seguinte.
  *
  * Saída pro workflow:
  *   - Se editorial: imprime `EDITORIAL:<id>` na ÚLTIMA linha do stdout
@@ -43,6 +50,19 @@ const NOTHING_TO_DO = 78;
 
 const args = new Set(process.argv.slice(2));
 const VERBOSE = args.has('--verbose');
+
+/**
+ * Temas a saltar nesta chamada — os que já falharam nesta mesma corrida.
+ * Aceita com ou sem o prefixo `EDITORIAL:`, porque é isso que o workflow tem em
+ * mão: ele guarda o SLUG que recebeu, não o id nu.
+ */
+const EXCLUIDOS = new Set(
+  [...args]
+    .filter((a) => a.startsWith('--excluir='))
+    .flatMap((a) => a.slice('--excluir='.length).split(','))
+    .map((s) => s.trim().replace(/^EDITORIAL:/, ''))
+    .filter(Boolean),
+);
 
 // ─── Editoriais ───────────────────────────────────────────────────────────────
 
@@ -136,7 +156,9 @@ function main() {
   const trendData = loadTrends();
 
   // 1. Tentar editoriais pendentes primeiro
-  const pendingEditorials = listPendingEditorials().filter((t) => !published.has(t.id));
+  const pendingEditorials = listPendingEditorials()
+    .filter((t) => !published.has(t.id))
+    .filter((t) => !EXCLUIDOS.has(t.id));
 
   if (pendingEditorials.length > 0) {
     const scored = pendingEditorials.map((t) => ({ topic: t, score: scoreEditorial(t, trendData) }));
@@ -181,7 +203,7 @@ function main() {
 
   // 2. Fallback para glossário
   const all = listPtSlugs();
-  const remaining = all.filter((s) => !published.has(s));
+  const remaining = all.filter((s) => !published.has(s)).filter((s) => !EXCLUIDOS.has(s));
 
   if (VERBOSE) {
     console.error(`📋 temas editoriais pending: 0 (fallback glossário)`);

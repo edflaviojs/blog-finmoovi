@@ -1120,34 +1120,55 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
    * manda dizer. Apanhado na revisão pós-execução, provado por teste.
    * "por cento" corta a leitura de propósito: "quatorze por cento" é percentagem
    * (tem trava própria), não o número 14 solto.
+   *
+   * ♦ 07/08/2026 — TRÊS CONSERTOS, todos medidos na corrida que matou o Short do dia
+   * (run 31159159005). Nenhum deles afrouxa a trava: os três TIRAM números que a
+   * leitura inventava, e um número inventado pelo validador reprova texto bom.
+   *
+   *  1. A ORDEM DECRESCENTE fecha o numeral. Um número composto desce sempre
+   *     ("dois MIL, SEIScentos e NOVENTA e NOVE"); uma ENUMERAÇÃO sobe ("um,
+   *     cinco e dez anos"). A versão anterior partia a frase por tudo o que não
+   *     fosse letra — a vírgula da enumeração desaparecia — e somava 1+5+10 = 16.
+   *     Reprovou 2 das 4 tentativas de 07/08 por causa de um 16 que ninguém disse.
+   *  2. Os DÍGITOS entram no mesmo leitor: "3 mil" vale 3000. Antes o "3" era lido
+   *     à parte (e descartado por ser < 10) e o "mil" ficava órfão a valer 1000.
+   *  3. O PRAZO não é valor. "em dez anos" não promete rendimento nenhum — e a
+   *     prova de que isto sempre foi um remendo está na própria ficha, que
+   *     autorizava `meses/12` só para deixar passar o "dez anos".
    */
+  const PALAVRA_DE_PRAZO = new Set(['ano', 'anos', 'mes', 'meses', 'dia', 'dias', 'semana', 'semanas']);
   const valoresDaFrase = (frase) => {
     const achados = new Set();
-    for (const m of String(frase).matchAll(/\d[\d.]*\d|\d+/g)) {
-      const v = Number(String(m[0]).replace(/\./g, ''));
-      if (Number.isFinite(v)) achados.add(v);
-    }
-    const tokens = semAcento(frase).split(/[^\p{L}]+/u).filter(Boolean);
-    let acc = 0;      // o que ainda não passou pelo "mil"
-    let total = 0;    // milhares já fechados
+    const tokens = semAcento(frase).match(/\p{L}+|\d[\d.]*\d|\d/gu) || [];
+    let acc = 0;            // o que ainda não passou pelo "mil"
+    let total = 0;          // milhares já fechados
+    let ultima = Infinity;  // a última parcela lida — num numeral composto ela DESCE
     let lendo = false;
-    const fechar = () => {
-      if (lendo && total + acc > 0) achados.add(total + acc);
-      acc = 0; total = 0; lendo = false;
+    // `seguinte` decide se o que acabou de ser lido é um PRAZO ("dez anos") em vez
+    // de um valor. Sem ele, o prazo entrava na conta de rendimento como dinheiro.
+    const fechar = (seguinte) => {
+      if (lendo && total + acc > 0 && !PALAVRA_DE_PRAZO.has(seguinte)) achados.add(total + acc);
+      acc = 0; total = 0; ultima = Infinity; lendo = false;
     };
     for (let i = 0; i < tokens.length; i++) {
       const t = tokens[i];
-      if (t === 'mil') { total += (acc || 1) * 1000; acc = 0; lendo = true; continue; }
-      if (Object.prototype.hasOwnProperty.call(EXTENSO_VALOR, t)) {
-        if (tokens[i + 1] === 'por' && tokens[i + 2] === 'cento') { acc = 0; total = 0; lendo = false; i += 2; continue; }
-        acc += EXTENSO_VALOR[t];
+      if (t === 'mil') { total += (acc || 1) * 1000; acc = 0; ultima = Infinity; lendo = true; continue; }
+      const valor = /^\d/.test(t)
+        ? Number(t.replace(/\./g, ''))
+        : (Object.prototype.hasOwnProperty.call(EXTENSO_VALOR, t) ? EXTENSO_VALOR[t] : null);
+      if (valor !== null && Number.isFinite(valor)) {
+        if (tokens[i + 1] === 'por' && tokens[i + 2] === 'cento') { acc = 0; total = 0; ultima = Infinity; lendo = false; i += 2; continue; }
+        // Não desceu → começou outro número. É enumeração, não soma.
+        if (valor >= ultima) fechar(t);
+        acc += valor;
+        ultima = valor;
         lendo = true;
         continue;
       }
       if (t === 'e' && lendo) continue;
-      fechar();
+      fechar(t);
     }
-    fechar();
+    fechar(undefined);
     return [...achados].filter((v) => v >= 10);
   };
   // 1. percentagem sem fonte — sempre erro, com ficha ou sem ela
@@ -1168,13 +1189,27 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
    * dezoito mil" sem outro radical escapa — é o buraco JÁ assumido no §31.3.
    */
   const RADICAL_RENDIMENTO = /\b(rend\p{L}*|juros|selic|cdi|tesouro|poupanc\p{L}*|invest\p{L}*)\b/u;
+  /**
+   * ♦ 07/08/2026 — O NÚMERO DO PRÓPRIO TÍTULO NÃO É INVENÇÃO.
+   * A regra 1 aqui em cima já aceitava o título como fonte de PERCENTAGEM; os
+   * valores não tinham o mesmo direito, e foi essa assimetria que matou o Short de
+   * 07/08. O tema era "Ganho R$ 3 mil por mês — como investir?"; a trava do
+   * arranque OBRIGA o gancho a dizer o assunto; e esta reprovava o "três mil" que
+   * o título manda dizer. Quatro tentativas, quatro chumbos, saída nenhuma — a 16ª
+   * ocorrência de prompt-contra-validador.
+   * Só liberta o que ESTÁ na fonte, e só quando não há ficha: com ficha calculada
+   * a autoridade é a ficha, e continua a ser ela a mandar.
+   */
+  const valoresDaFonte = new Set(valoresDaFrase(`${temaTermo} ${apoio}`));
   for (const frase of falaToda.split(/(?<=[.!?…])\s+/)) {
     if (!RADICAL_RENDIMENTO.test(semAcento(frase))) continue;
     const valores = valoresDaFrase(frase);
     if (!valores.length) continue;
     if (!(ficha && Array.isArray(ficha.permitidos) && ficha.permitidos.length)) {
+      const inventados = valores.filter((v) => !valoresDaFonte.has(v));
+      if (!inventados.length) continue;
       erros.push(
-        `a frase "${frase.trim()}" faz uma conta de rendimento com valores (${valores.join(', ')}) e este tema NÃO tem conta calculada — `
+        `a frase "${frase.trim()}" faz uma conta de rendimento com valores (${inventados.join(', ')}) e este tema NÃO tem conta calculada — `
         + 'sem ficha, conte a virada sem prometer rendimento, ou tire o número dessa frase.',
       );
     } else {

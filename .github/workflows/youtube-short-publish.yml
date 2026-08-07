@@ -22,6 +22,13 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '0 15 * * *'   # 12:00 BRT — almoço (noite BR: '0 22 * * *')
+    # ♦ 07/08/2026 — A SEGUNDA RONDA (ordem do dono: *"não podemos correr o risco
+    # de não ter vídeo postado no dia"*). Em 06/08 a entrega das 12h nunca chegou a
+    # receber máquina do GitHub e o canal ficou DOIS DIAS sem Short, com o vídeo
+    # pronto e guardado na fila o tempo todo.
+    # Não é uma segunda publicação: se o vídeo de hoje já saiu, esta ronda não faz
+    # nada (a pergunta é `outbox.js saiu-hoje`) e custa segundos.
+    - cron: '0 20 * * *'   # 17:00 BRT — repescagem, só se hoje ainda não saiu nada
 
 # Escreve tracking + fila; lê artefatos de outro run.
 permissions:
@@ -51,6 +58,19 @@ jobs:
       - name: Próximo da fila de saída
         id: fila
         run: |
+          # ♦ A REPESCAGEM DAS 17h BR (07/08/2026). Só a ronda tardia faz esta
+          # pergunta; a das 12h entrega sempre. `github.event.schedule` diz qual dos
+          # dois crons disparou — não é preciso adivinhar pela hora do relógio.
+          # ⚠️ Corre ANTES do `npm ci` de propósito: `outbox.js` só usa node:fs, e
+          # num dia normal esta ronda acaba aqui, sem instalar nada.
+          if [ "${{ github.event.schedule }}" = "0 20 * * *" ]; then
+            if [ "$(node src/scripts/youtube/outbox.js saiu-hoje)" = "sim" ]; then
+              echo "✅ o vídeo de hoje já foi entregue na ronda das 12h — a repescagem não faz nada."
+              echo "skip=true" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            echo "::warning::🔁 REPESCAGEM — hoje ainda não saiu vídeo nenhum; a entrega das 12h falhou ou não correu."
+          fi
           set +e
           BILHETE="$(node src/scripts/youtube/outbox.js next)"
           CODE=$?

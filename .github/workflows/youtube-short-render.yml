@@ -56,7 +56,9 @@ concurrency:
 jobs:
   render:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    # ♦ 30 → 45 em 07/08/2026: com o plano B, um dia mau pode escrever até TRÊS temas
+    # antes de renderizar. Cada volta gasta ~2min quando falha as quatro tentativas.
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v7
         with:
@@ -153,7 +155,18 @@ jobs:
       # isso nenhum passo a jusante muda.
       # 🔁 PARA VOLTAR ATRÁS bastam esta linha e a antiga:
       #   run: node src/scripts/youtube/roteiro-short.js --slug="$SLUG"
-      - name: Gerar roteiro do termo (cron) — duas passagens
+      # ♦ 07/08/2026 — O PLANO B DO CANAL (ordem do dono: *"não podemos correr o risco
+      # de não ter vídeo postado no dia"*).
+      #
+      # ⚠️ **UM TEMA ENVENENADO NÃO PODE CUSTAR O DIA.** Em 07/08 o tema sorteado era
+      # impossível de escrever — "Ganho R$ 3 mil por mês" com uma trava a proibir
+      # números na mesma frase — e o robô morreu ali: quatro tentativas ao MESMO tema,
+      # todas ao mesmo muro, e o canal sem vídeo. As quatro tentativas de dentro do
+      # gerador consertam a REDAÇÃO; nenhuma delas consegue consertar a ESCOLHA.
+      # Por isso a repetição vive aqui fora: falhou o tema, salta-se para o seguinte
+      # da fila. Três voltas — a partir daí o defeito já não é do tema, é do motor, e
+      # aí falhar é o comportamento certo (o e-mail do GitHub é o alarme).
+      - name: Gerar roteiro do termo (cron) — duas passagens, com plano B
         if: steps.resolve.outputs.skip != 'true' && env.GENERATE == 'true'
         env:
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
@@ -164,7 +177,56 @@ jobs:
           # sem ela o escritor/leitor caem nos gratuitos e o texto sai pior que o
           # padrão aprovado. É opt-in só aqui — os 27 robôs do blog continuam grátis.
           KIE_AI_KEY: ${{ secrets.KIE_AI_KEY }}
-        run: node src/scripts/youtube/coreografia.js --slug="$SLUG" --gravar
+        run: |
+          TENTADOS=""
+          VENCEDOR=""
+          for VOLTA in 1 2 3; do
+            if [ -z "${SLUG:-}" ]; then
+              echo "::warning::a fila não tem mais nenhum tema para tentar."
+              break
+            fi
+            echo "🎬 volta $VOLTA/3 — tema: $SLUG"
+            if node src/scripts/youtube/coreografia.js --slug="$SLUG" --gravar; then
+              VENCEDOR="$SLUG"
+              [ "$VOLTA" != "1" ] && echo "::warning::o vídeo de hoje saiu do PLANO B (volta $VOLTA) — temas saltados: $TENTADOS"
+              break
+            fi
+            echo "::warning::o tema '$SLUG' não deu roteiro — a saltar para o próximo da fila."
+            TENTADOS="${TENTADOS:+$TENTADOS,}$SLUG"
+            # `pick-next-short` devolve 78 quando a fila esgota e 1 em erro real; nos
+            # dois casos não há próximo, e o laço termina no teste do topo.
+            # ⚠️ SEM `| tail` aqui dentro: com o cano, `$?` traria o código do `tail`
+            # (sempre 0) e o esgotamento da fila passaria por sucesso. O corte da
+            # última linha faz-se DEPOIS, já com o código na mão.
+            set +e
+            SEGUINTE="$(node src/scripts/youtube/pick-next-short.js --excluir="$TENTADOS")"
+            CODE=$?
+            set -e
+            if [ "$CODE" != "0" ]; then
+              SLUG=""
+            else
+              SLUG="$(printf '%s\n' "$SEGUINTE" | tail -1)"
+            fi
+          done
+
+          if [ -z "$VENCEDOR" ]; then
+            echo "❌ nenhum tema deu roteiro hoje (tentados: ${TENTADOS:-nenhum}) — o defeito já não é do tema."
+            exit 1
+          fi
+
+          # O tema pode ter mudado a meio: os passos seguintes (TTS, legendas, render,
+          # capa, fila) têm de trabalhar sobre o que REALMENTE saiu, não sobre o que foi
+          # sorteado no início. Sem isto o render iria buscar um roteiro que não existe.
+          if [ "${VENCEDOR#EDITORIAL:}" != "$VENCEDOR" ]; then
+            VENCEDOR_FILE="${VENCEDOR#EDITORIAL:}"
+          else
+            VENCEDOR_FILE="$VENCEDOR"
+          fi
+          {
+            echo "SLUG=$VENCEDOR"
+            echo "FILE_SLUG=$VENCEDOR_FILE"
+          } >> "$GITHUB_ENV"
+          echo "✅ roteiro do dia: $VENCEDOR_FILE"
 
       # Comita o roteiro gerado (mesmo padrão do tracking) para o render ser
       # reproduzível e o histórico ficar registrado.

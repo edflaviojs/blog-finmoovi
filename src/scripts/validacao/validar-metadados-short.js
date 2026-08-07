@@ -21,6 +21,8 @@ import { avaliarRetencao, RETENCAO_MINIMA } from '../youtube/retencao.js';
 import { prateleirasDoVideo, PLAYLIST_GERAL } from '../youtube/lib/playlists.js';
 import { inserirNoShort, inserirNoLongo, conferirOportunidade, fazerSlugDoDono } from '../../../functions/api/_oportunidade-fila.js';
 import { proximoLongo } from '../youtube/pick-next-longo.js';
+import { validarNarrativa } from '../youtube/roteiro-narrativa.js';
+import { jaSaiuVideoNoDia } from '../youtube/outbox.js';
 
 let passou = 0;
 let falhou = 0;
@@ -266,6 +268,82 @@ console.log('\n6. A OPORTUNIDADE DO DONO (ordem dele, 06/08)');
     proximoLongo({ fila: { videos: [{ slug: 'normal', estado: 'proposto' }, { slug: 'dono-feito', prioridade: true, estado: 'publicado' }] }, caderno: {} }).slug === 'normal');
   ok('sem nenhum do dono, a fila segue como sempre',
     proximoLongo({ fila: { videos: [{ slug: 'primeiro', estado: 'proposto' }, { slug: 'segundo', estado: 'proposto' }] }, caderno: {} }).slug === 'primeiro');
+}
+
+/**
+ * ═══ A TRAVA DOS NÚMEROS DA NARRAÇÃO (07/08/2026) ═══
+ *
+ * 🔴 **POR QUE ESTA SECÇÃO EXISTE.** A trava de "conta de rendimento" corria todos os
+ * dias sem uma única prova, e no dia 07/08 INVENTOU um número: leu *"em um, cinco e dez
+ * anos"* como o valor **16** (somava a enumeração porque partia a frase por tudo o que
+ * não fosse letra, e a vírgula desaparecia). Reprovou 2 das 4 tentativas por causa dele,
+ * o Short do dia morreu e o canal ficou sem vídeo.
+ *
+ * ⚠️ Estas provas LANÇAM `validarNarrativa` — o MESMO caminho que o robô lança. É a
+ * lição que este repositório já pagou duas vezes: prova que não corre o comando de
+ * verdade não apanha o defeito de verdade.
+ *
+ * Filtra-se só o erro da conta: as narrativas de mesa aqui em baixo não tentam ser
+ * roteiros válidos (não têm capa-pergunta, nem bordão, nem tamanho), e é de propósito —
+ * o que se mede é a leitura dos números, não o resto.
+ */
+console.log('\n8. OS NÚMEROS DA NARRAÇÃO — o que a trava lê antes de reprovar');
+
+{
+  const errosDeConta = (frases, { tema = '', apoio = '', ficha = null } = {}) => {
+    const blocos = Array.from({ length: 6 }, (_, i) => ({ papel: '', fala: frases[i] || 'enchimento.' }));
+    const v = validarNarrativa({ blocos }, [], ficha, tema, null, apoio);
+    return (v.erros || []).filter((e) => /conta de rendimento/.test(e));
+  };
+
+  // 🔴 O DEFEITO QUE MATOU O SHORT DE 07/08 — a enumeração somada.
+  ok('🔴 "um, cinco e dez anos" NÃO vira o número 16',
+    errosDeConta(['Poupança, Tesouro Direto e CDB seguem caminhos diferentes quando você olha um, cinco e dez anos.']).length === 0,
+    errosDeConta(['Poupança, Tesouro Direto e CDB seguem caminhos diferentes quando você olha um, cinco e dez anos.'])[0]);
+
+  // Um PRAZO não é dinheiro. A ficha andava a autorizar `meses/12` só para isto passar.
+  ok('"em dez anos" é prazo, não é uma promessa de rendimento',
+    errosDeConta(['O Tesouro rende mais em dez anos.']).length === 0);
+
+  // 🔴 O NÚMERO DO PRÓPRIO TÍTULO. Outra trava OBRIGA o arranque a dizer o assunto —
+  // se o assunto tem um valor, esta não pode castigar quem o diz.
+  ok('🔴 o valor que está no TÍTULO pode ser dito na fala',
+    errosDeConta(['Com três mil reais, você pode começar a investir.'], { tema: 'Ganho R$ 3 mil por mês — como investir?' }).length === 0,
+    errosDeConta(['Com três mil reais, você pode começar a investir.'], { tema: 'Ganho R$ 3 mil por mês — como investir?' })[0]);
+
+  // ⚠️ E A TRAVA CONTINUA A TRAVAR. Sem esta, os três consertos acima seriam um buraco.
+  ok('mas um valor que NÃO está em fonte nenhuma continua a reprovar',
+    errosDeConta(['Você investe e isso vira oitenta mil reais.'], { tema: 'Ganho R$ 3 mil por mês — como investir?' }).length === 1);
+
+  // O numeral composto tem de continuar a ser lido INTEIRO (o defeito de 03/08).
+  ok('"dois mil seiscentos e noventa e nove" continua a ser UM número, e bate com a ficha',
+    errosDeConta(['Investir isso dá dois mil seiscentos e noventa e nove reais.'], { ficha: { permitidos: [2699] } }).length === 0);
+
+  ok('e com ficha calculada, um valor fora dela continua a reprovar',
+    errosDeConta(['Investir isso dá cinco mil reais.'], { ficha: { permitidos: [2699] } }).length === 1);
+}
+
+/**
+ * ═══ A REPESCAGEM DO FIM DA TARDE (07/08/2026) ═══
+ * Em 06/08 o vídeo estava pronto e guardado na fila, e mesmo assim o canal ficou dois
+ * dias sem Short: o carteiro das 12h nunca recebeu máquina do GitHub. A segunda ronda
+ * existe para isso — e a pergunta que ela faz tem de estar certa nos dois sentidos: se
+ * hoje já saiu, ela NÃO pode publicar de novo.
+ */
+console.log('\n9. A REPESCAGEM — a segunda ronda do carteiro');
+
+{
+  const tracking = {
+    'a': { uploadedAt: '2026-08-05T16:25:56.346Z' },
+    'b': { uploadedAt: '2026-08-07T15:02:11.000Z' },
+  };
+  ok('vê que hoje JÁ saiu vídeo — e a repescagem fica quieta',
+    jaSaiuVideoNoDia('2026-08-07', tracking) === true);
+  ok('🔴 vê o dia em que NÃO saiu nada — e a repescagem entrega',
+    jaSaiuVideoNoDia('2026-08-06', tracking) === false);
+  ok('tracking vazio conta como "não saiu"', jaSaiuVideoNoDia('2026-08-07', {}) === false);
+  ok('e um registo sem data não engana a conta',
+    jaSaiuVideoNoDia('2026-08-07', { c: { videoId: 'x' } }) === false);
 }
 
 console.log(`\n${'═'.repeat(72)}`);

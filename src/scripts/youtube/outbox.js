@@ -18,6 +18,7 @@
  *   node src/scripts/youtube/outbox.js next            → imprime JSON do mais antigo (ou nada, exit 78)
  *   node src/scripts/youtube/outbox.js done --file-slug=X
  *   node src/scripts/youtube/outbox.js pending         → imprime os fileSlugs pendentes (1 por linha)
+ *   node src/scripts/youtube/outbox.js saiu-hoje       → `sim`/`nao` (a repescagem do fim da tarde)
  *
  * ⚠️ exit 78 em `next` sem pendentes = o MESMO código "nada a fazer" que o
  * pick-next-short já usa — o workflow trata como sucesso neutro, não falha.
@@ -72,6 +73,27 @@ export function listOutboxPending() {
   return lerFila(FILA_PADRAO).map((e) => e.fileSlug).filter(Boolean);
 }
 
+/**
+ * ♦ 07/08/2026 — A REPESCAGEM (ordem do dono: *"não podemos correr o risco de não ter
+ * vídeo postado no dia"*).
+ *
+ * ⚠️ **A FILA SOBREVIVE, A CADÊNCIA NÃO.** Em 06/08 o vídeo foi produzido, entrou na
+ * fila — e o carteiro das 12h nunca chegou a receber máquina do GitHub (pane; o job
+ * morreu com zero passos ao fim de 15 minutos). O bilhete ficou intacto, que é o que a
+ * fila promete, mas o canal ficou DOIS DIAS sem Short. Guardar o trabalho não é o
+ * mesmo que entregá-lo no dia.
+ *
+ * Por isso há uma segunda ronda ao fim da tarde. Ela só age se HOJE ainda não saiu
+ * nada: sem esta pergunta, um dia com fila atrasada despejaria dois vídeos seguidos.
+ *
+ * O dia mede-se em UTC — é o relógio do cron, e é o mesmo que carimba o `uploadedAt`.
+ */
+export function jaSaiuVideoNoDia(diaUTC, tracking) {
+  return Object.values(tracking || {}).some(
+    (v) => String((v && v.uploadedAt) || '').slice(0, 10) === diaUTC,
+  );
+}
+
 // ─── execução direta (CLI dos workflows) ─────────────────────────────────────
 const executadoDireto = process.argv[1] && process.argv[1].replace(/\\/g, '/').endsWith('outbox.js');
 if (executadoDireto) {
@@ -105,8 +127,17 @@ if (executadoDireto) {
     console.log(`✅ entregue e fora da fila ${nomeDaFila}: ${fileSlug}`);
   } else if (comando === 'pending') {
     for (const s of listOutboxPending()) console.log(s);
+  } else if (comando === 'saiu-hoje') {
+    // Imprime `sim` ou `nao` e sai sempre a 0 — o workflow LÊ a resposta em vez de a
+    // adivinhar num código de saída. Aqui um exit diferente de 0 seria confundido com
+    // avaria, e a repescagem é justamente o passo que não pode falhar por engano.
+    const TRACKING = join(DATA_DIR, 'youtube-published.json');
+    let tracking = {};
+    try { tracking = JSON.parse(readFileSync(TRACKING, 'utf-8')); } catch { /* sem tracking = nada saiu */ }
+    const hoje = flags.dia || new Date().toISOString().slice(0, 10);
+    console.log(jaSaiuVideoNoDia(hoje, tracking) ? 'sim' : 'nao');
   } else {
-    console.error('comando desconhecido — use: enqueue | next | done | pending');
+    console.error('comando desconhecido — use: enqueue | next | done | pending | saiu-hoje');
     process.exit(1);
   }
 }
