@@ -1,0 +1,496 @@
+{
+  "date": "2026-08-06",
+  "counts": {
+    "content": 6,
+    "videos": 0,
+    "pins": 0,
+    "failures": 9,
+    "runs": 48
+  },
+  "failures": [
+    {
+      "name": "YouTube — Responder aos comentários (FINMOOVI)",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/31056422135",
+      "timeLisbon": "00:27"
+    },
+    {
+      "name": "YouTube — Responder aos comentários (FINMOOVI)",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/31069418606",
+      "timeLisbon": "04:47"
+    },
+    {
+      "name": "Fix i18n Content (Daily Batch)",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/31095566739",
+      "timeLisbon": "12:01"
+    },
+    {
+      "name": "Gerar Dicas Financeiras",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/31096236811",
+      "timeLisbon": "12:11"
+    },
+    {
+      "name": "i18n Gate (PR Check)",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/31102221477",
+      "timeLisbon": "13:37"
+    },
+    {
+      "name": "Syndicate Content & Send Pingbacks",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/31118630493",
+      "timeLisbon": "17:06"
+    },
+    {
+      "name": "YouTube — Publicar Short (horário nobre)",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/31120077869",
+      "timeLisbon": "17:30"
+    },
+    {
+      "name": "YouTube — Responder aos comentários (FINMOOVI)",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/31122160809",
+      "timeLisbon": "18:07"
+    },
+    {
+      "name": "YouTube — Responder aos comentários (FINMOOVI)",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/31126357133",
+      "timeLisbon": "19:46"
+    }
+  ],
+  "content": [
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "en",
+      "slug": "en-cash-flow",
+      "url": "https://blog.finmoovi.com/en/glossario/en-cash-flow",
+      "title": "Cash flow - Financial Glossary",
+      "description": "What Cash flow is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi.",
+      "category": "basico",
+      "publishedAt": "2026-08-06"
+    },
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "es",
+      "slug": "es-flujo-de-caja",
+      "url": "https://blog.finmoovi.com/es/glossario/es-flujo-de-caja",
+      "title": "flujo de caja - Glosario Financiero",
+      "description": "Qué es flujo de caja y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi.",
+      "category": "basico",
+      "publishedAt": "2026-08-06"
+    },
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "pt",
+      "slug": "fluxo-de-caixa",
+      "url": "https://blog.finmoovi.com/glossario/fluxo-de-caixa",
+      "title": "fluxo de caixa - Glossário Financeiro",
+      "description": "O que é fluxo de caixa e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi.",
+      "category": "basico",
+      "publishedAt": "2026-08-06"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "pt",
+      "slug": "como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto-202",
+      "url": "https://blog.finmoovi.com/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto-202",
+      "title": "como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto-202",
+      "description": "",
+      "category": "",
+      "publishedAt": ""
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "en",
+      "slug": "en-how-to-never-miss-a-bill-payment-deadline-simple-5-minute-fi",
+      "url": "https://blog.finmoovi.com/en/posts/en-how-to-never-miss-a-bill-payment-deadline-simple-5-minute-fi",
+      "title": "en-how-to-never-miss-a-bill-payment-deadline-simple-5-minute-fi",
+      "description": "",
+      "category": "",
+      "publishedAt": ""
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "es",
+      "slug": "es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no-que",
+      "url": "https://blog.finmoovi.com/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no-que",
+      "title": "es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no-que",
+      "description": "",
+      "category": "",
+      "publishedAt": ""
+    }
+  ],
+  "videos": [],
+  "pins": [],
+  "runsSummary": [
+    {
+      "name": "YouTube — Responder aos comentários (FINMOOVI)",
+      "count": 10,
+      "ok": 6,
+      "fail": 4,
+      "firstTimeLisbon": "00:27"
+    },
+    {
+      "name": "IndexNow (indexação instantânea Bing/Copilot)",
+      "count": 3,
+      "ok": 3,
+      "fail": 0,
+      "firstTimeLisbon": "02:49"
+    },
+    {
+      "name": "Instagram — Entregar o Short ao Multipost (19h BR)",
+      "count": 2,
+      "ok": 2,
+      "fail": 0,
+      "firstTimeLisbon": "07:08"
+    },
+    {
+      "name": "YouTube — Detetive de tendências (diário)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "07:23"
+    },
+    {
+      "name": "Sincronizar i18n (auto-corretor PT/EN/ES)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "08:34"
+    },
+    {
+      "name": "Fact Firewall (anti-alucinacao)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "08:36"
+    },
+    {
+      "name": "Gerar ALT descritivo das imagens (IA de visão)",
+      "count": 2,
+      "ok": 2,
+      "fail": 0,
+      "firstTimeLisbon": "08:38"
+    },
+    {
+      "name": "Gerar Post Soluções FinMoovi",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "08:54"
+    },
+    {
+      "name": "Gerar Conteúdo Social",
+      "count": 4,
+      "ok": 4,
+      "fail": 0,
+      "firstTimeLisbon": "08:58"
+    },
+    {
+      "name": "i18n Gate (PR Check)",
+      "count": 6,
+      "ok": 5,
+      "fail": 1,
+      "firstTimeLisbon": "08:58"
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "count": 2,
+      "ok": 2,
+      "fail": 0,
+      "firstTimeLisbon": "09:05"
+    },
+    {
+      "name": "GSC - Monitor de Indexacao",
+      "count": 2,
+      "ok": 2,
+      "fail": 0,
+      "firstTimeLisbon": "09:37"
+    },
+    {
+      "name": "YouTube — Renderizar Short (completo)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "10:17"
+    },
+    {
+      "name": "Glossário Financeiro",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "10:36"
+    },
+    {
+      "name": "Community Monitor",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "10:37"
+    },
+    {
+      "name": "GSC - Refresh de Conteudo (decay)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "10:40"
+    },
+    {
+      "name": "Sazonal Multimercado (timezone)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "11:22"
+    },
+    {
+      "name": "Fix i18n Content (Daily Batch)",
+      "count": 1,
+      "ok": 0,
+      "fail": 1,
+      "firstTimeLisbon": "12:01"
+    },
+    {
+      "name": "Gerar Dicas Financeiras",
+      "count": 1,
+      "ok": 0,
+      "fail": 1,
+      "firstTimeLisbon": "12:11"
+    },
+    {
+      "name": "Post BOFU (Ferramentas)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "12:56"
+    },
+    {
+      "name": "Glossário Diário Automático",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "13:47"
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "15:26"
+    },
+    {
+      "name": "Regenerar capas antigas do glossário (estilo 3D)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "15:55"
+    },
+    {
+      "name": "Syndicate Content & Send Pingbacks",
+      "count": 1,
+      "ok": 0,
+      "fail": 1,
+      "firstTimeLisbon": "17:06"
+    },
+    {
+      "name": "YouTube — Publicar Short (horário nobre)",
+      "count": 1,
+      "ok": 0,
+      "fail": 1,
+      "firstTimeLisbon": "17:30"
+    }
+  ],
+  "emails": [
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "timeLisbon": "09:05"
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "timeLisbon": "10:27"
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "timeLisbon": "15:26"
+    }
+  ],
+  "pendencias": [
+    "18/08/2026 — ESTUDO APIFY das transcrições (vídeo longo). Só a partir dessa data: o arquivo .github/data/youtube-capitulos.json precisa de ~2 semanas a acumular para haver 40-50 longos e se escolherem os MELHORES para transcrever. Passos: criar chave em console.apify.com/settings/integrations (permissões limitadas + validade 1 mês) → guardar como APIFY_TOKEN no cofre do GitHub (nunca no chat) → criar/configurar o actor de transcrições → 30-50 transcrições (~$0,25 do crédito grátis de $5/mês) → ler os primeiros 30s de cada. ⚠️ Estudo à mão, NUNCA dentro do robô diário. Detalhe completo: IMPLEMENTACAO20 §33.6",
+    "~18/08/2026 — RE-MEDIR A RETENÇÃO (youtube-retencao.yml, disparo manual). A de 03/08 deu 97 visualizações em 10 vídeos: audiência pequena de mais para haver curva. Agora que os vídeos vão a público na hora, 10-14 dias dão sinal a sério. IMPLEMENTACAO20 §33.2",
+    "Google Cloud billing: criar perfil de pagamentos PORTUGAL (NIF + cartão PT) → destrava vozes TTS premium + trial $300",
+    "Escolher voz definitiva do canal (Antonio edge ↔ Piper faber alternando; premium depende do billing)",
+    "Pinterest: avaliar o 1º pin com descrição rica SEO (sexta 24/07 ~16h)",
+    "Pinterest: renovar refresh token até 16/09 (lembrete automático via issue quando faltar ≤7d)",
+    "Upgrade Pinterest p/ cadência diária? Avaliar analytics ~07/08"
+  ],
+  "agenda": [
+    {
+      "name": "YouTube — Responder aos comentários (FINMOOVI)",
+      "times": [
+        "00:25",
+        "01:25",
+        "02:25",
+        "03:25",
+        "04:25",
+        "05:25",
+        "06:25",
+        "07:25",
+        "08:25",
+        "09:25",
+        "10:25",
+        "11:25",
+        "12:25",
+        "13:25",
+        "14:25",
+        "15:25",
+        "16:25",
+        "17:25",
+        "18:25",
+        "19:25",
+        "20:25",
+        "21:25",
+        "22:25",
+        "23:25"
+      ]
+    },
+    {
+      "name": "IndexNow (indexação instantânea Bing/Copilot)",
+      "times": [
+        "01:00",
+        "07:00",
+        "13:00",
+        "19:00"
+      ]
+    },
+    {
+      "name": "YouTube — Detetive de tendências (diário)",
+      "times": [
+        "05:00"
+      ]
+    },
+    {
+      "name": "Fact Firewall (anti-alucinacao)",
+      "times": [
+        "06:00"
+      ]
+    },
+    {
+      "name": "Sincronizar i18n (auto-corretor PT/EN/ES)",
+      "times": [
+        "06:00"
+      ]
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "times": [
+        "06:40",
+        "07:40"
+      ]
+    },
+    {
+      "name": "Gerar ALT descritivo das imagens (IA de visão)",
+      "times": [
+        "07:00",
+        "10:00",
+        "12:00"
+      ]
+    },
+    {
+      "name": "YouTube — Renderizar Short (completo)",
+      "times": [
+        "07:30"
+      ]
+    },
+    {
+      "name": "Community Monitor",
+      "times": [
+        "08:00"
+      ]
+    },
+    {
+      "name": "GSC - Canibalizacao por query",
+      "times": [
+        "08:00"
+      ]
+    },
+    {
+      "name": "GSC - Monitor de Indexacao",
+      "times": [
+        "09:00"
+      ]
+    },
+    {
+      "name": "Sazonal Multimercado (timezone)",
+      "times": [
+        "09:00"
+      ]
+    },
+    {
+      "name": "Fix i18n Content (Daily Batch)",
+      "times": [
+        "09:30"
+      ]
+    },
+    {
+      "name": "Gerar Dicas Financeiras",
+      "times": [
+        "10:00"
+      ]
+    },
+    {
+      "name": "Post Sazonal Semanal",
+      "times": [
+        "11:00"
+      ]
+    },
+    {
+      "name": "Webmentions & Outreach",
+      "times": [
+        "11:00"
+      ]
+    },
+    {
+      "name": "Glossário Diário Automático",
+      "times": [
+        "12:00"
+      ]
+    },
+    {
+      "name": "Post Comparação Semanal",
+      "times": [
+        "13:00"
+      ]
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "times": [
+        "13:00"
+      ]
+    },
+    {
+      "name": "Regenerar capas antigas do glossário (estilo 3D)",
+      "times": [
+        "13:30"
+      ]
+    },
+    {
+      "name": "Sindicação Extra (Hashnode + Tumblr + Blogger)",
+      "times": [
+        "14:00"
+      ]
+    },
+    {
+      "name": "Social Distribution (Pinterest + Bookmarks)",
+      "times": [
+        "16:00"
+      ]
+    },
+    {
+      "name": "YouTube — Publicar Short (horário nobre)",
+      "times": [
+        "16:00"
+      ]
+    }
+  ]
+}
