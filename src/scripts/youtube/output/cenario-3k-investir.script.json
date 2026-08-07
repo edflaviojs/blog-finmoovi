@@ -1,0 +1,213 @@
+{
+  "slug": "cenario-3k-investir",
+  "term": "Ganho R$ 3 mil por mês — como investir?",
+  "category": "investimento",
+  "keyword": "investir",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você ganha três mil por mês e não sabe onde *investir*?"
+  },
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "escada",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você ganha três mil por mês e não sabe onde investir? Calma, vou te mostrar um jeito simples de começar.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "ganha",
+          "visual": {
+            "type": "number",
+            "text": "R$ 3 mil"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "investir",
+          "visual": {
+            "type": "statement",
+            "text": "Comece a investir"
+          }
+        },
+        {
+          "anchor": "simples",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escada"
+          },
+          "sfx": "sparkle"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "O salário cai, você paga conta, mercado, transporte, e no fim quase não sobra nada. Normal, ninguém te ensinou por onde começar.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "salário",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "statement",
+            "text": "Contas todo mês"
+          }
+        },
+        {
+          "anchor": "Normal",
+          "visual": {
+            "type": "statement",
+            "text": "Ninguém ensinou"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Só que, separando cem reais por mês, você já tem três lugares seguros pra guardar o dinheiro que muita gente ignora.",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "separando",
+          "visual": {
+            "type": "number",
+            "text": "R$ 100"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "três",
+          "visual": {
+            "type": "counter",
+            "from": 100,
+            "to": 300,
+            "prefix": "R$"
+          }
+        },
+        {
+          "anchor": "seguros",
+          "visual": {
+            "type": "icon",
+            "icon": "shield"
+          }
+        },
+        {
+          "anchor": "ignora",
+          "visual": {
+            "type": "statement",
+            "text": "Opções ignoradas"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei esses cem reais no FinMoovi e ele me mostrou na tela o nome de cada um pra comparar.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "joguei",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Tela inicial do FinMoovi com comparação de opções"
+          },
+          "sfx": "click"
+        },
+        {
+          "anchor": "mostrou",
+          "visual": {
+            "type": "list",
+            "text": "Comparar investimentos"
+          }
+        },
+        {
+          "anchor": "comparar",
+          "visual": {
+            "type": "chart",
+            "text": "Veja as diferenças"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Pra ver o seu caso, comenta FINMOOVI aqui embaixo que eu te mando o aplicativo de graça.",
+      "durationSec": 6.5,
+      "shots": [
+        {
+          "anchor": "comenta",
+          "visual": {
+            "type": "statement",
+            "text": "Digite FINMOOVI"
+          }
+        },
+        {
+          "anchor": "FINMOOVI",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Dá sim pra investir ganhando três mil, é só começar aos pouquinhos. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "investir",
+          "visual": {
+            "type": "number",
+            "text": "R$ 3 mil"
+          }
+        },
+        {
+          "anchor": "começar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escada"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Comente FINMOOVI agora",
+    "target": "app"
+  },
+  "totalDurationSec": 45.8
+}
