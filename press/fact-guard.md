@@ -1,13 +1,12 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-08-06T07:36:57.138Z
-**Posts:** 255 · limpos: 1 · bloqueados p/ revisao: 0 · com flags: 36
+**Gerado em:** 2026-08-07T06:07:40.957Z
+**Posts:** 258 · limpos: 1 · bloqueados p/ revisao: 0 · com flags: 36
 
 ## ✂️ Cortes aplicados (citacao/estatistica sem fonte confiavel)
 
-**es-tambien-te-quedas-sin-saber-a-donde-fue-tu-dinero-al-final-d.md**
-- link removido: https://www.example.com
-- link removido: https://www.example.com
+**en-how-to-never-miss-a-bill-payment-deadline-simple-5-minute.md**
+- cortado: _Studies show that pairing visual and auditory notifications boosts action rates by more than 50 %._
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
 
@@ -15,13 +14,13 @@
 - _De acordo com o Instituto Brasileiro de Geografia e Estatística (IBGE), em 2022, a maior parte dos brasileiros (64,1%) tinha dificuldade em pagar contas e despesas, mostrando a importância de uma gest_
 - _De acordo com a Serasa, em 2022, quase 60% dos brasileiros utilizavam aplicativos para controlar suas finanças, mostrando a crescente conscientização sobre a importância da gestão financeira pessoal._
 
-**5-passos-praticos-para-comecar-a-poupar-para-a-black-friday-.md**
+**5-passos-praticos-para-comecar-a-poupar-para-a-black-friday.md**
 - _Segundo o **Banco Central do Brasil**, o consumo em novembro de 2023 cresceu **13,2 %** em relação ao mesmo período do ano anterior, impulsionado pelas compras de fim de ano._
 - _Segundo a **Serasa Experian**, a dívida média das famílias brasileiras em 2023 ultrapassou R$ 12 mil, mostrando que muitas pessoas carregam despesas desnecessárias._
 - _Essa técnica reduz drasticamente compras impulsivas, que, segundo o **IBGE**, representaram cerca de **12 %** das despesas de consumo em 2022._
 - _Segundo o **Bacen**, 45 % das famílias brasileiras não têm [reserva de emergência](/ferramentas/calculadora-reserva), o que pode levar a endividamento._
 
-**como-escolher-fundos-de-investimento-em-2026-e-dar-o-primeir.md**
+**como-escolher-fundos-de-investimento-em-2026-e-dar-o.md**
 - _**Rebalanceamento semestral** – Ajuste a proporção entre fundos de acordo com a performance e seu objetivo._
 
 **como-montar-um-orcamento-que-realmente-funciona-em-2026.md**
@@ -62,7 +61,7 @@
 **en-finmoovi-cost-of-living-index-june-2026.md**
 - _In June 2026, the cost of living rose 0,16 % according to the overall IPCA released by IBGE, indicating a modest increase in consumer prices that month._
 
-**en-private-pension-vs-investing-on-your-own-which-is-worth-it-i.md**
+**en-private-pension-vs-investing-on-your-own-which-is-worth-it.md**
 - _These plans are offered by financial institutions and insurance companies, and can be customized according to the investor's needs and objectives._
 
 **en-quotes-semana-1-june-2026.md**
@@ -93,7 +92,7 @@
 **es-presupuesto-para-parejas-dividiendo-gastos.md**
 - _En el caso de João y Maria, ellos pueden decidir dividir los gastos de acuerdo con el porcentaje de sus salarios en relación con el total._
 
-**es-prevision-privada-vs-invertir-por-cuenta-propia-cual-vale-ma.md**
+**es-prevision-privada-vs-invertir-por-cuenta-propia-cual-vale.md**
 - _Estos planes son ofrecidos por instituciones financieras y aseguradoras, y pueden ser personalizados de acuerdo con las necesidades y objetivos del inversor._
 
 **es-revision-de-presupuesto.md**
@@ -112,7 +111,7 @@
 **planilha-de-gastos-quando-ela-deixa-de-funcionar.md**
 - _Elas oferecem flexibilidade, são gratuitas e podem ser customizadas de acordo com as suas necessidades._
 
-**previdencia-privada-vs-investir-por-conta-propria-qual-vale-.md**
+**previdencia-privada-vs-investir-por-conta-propria-qual-vale.md**
 - _Esses planos são oferecidos por instituições financeiras e seguradoras, e podem ser personalizados de acordo com as necessidades e objetivos do investidor._
 
 **renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026.md**
