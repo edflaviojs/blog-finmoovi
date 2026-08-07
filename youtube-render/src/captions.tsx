@@ -1,5 +1,6 @@
 import { interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
 import { BRAND, BODY } from './theme';
+import { LEGENDA, LEGENDA_BOTTOM } from './zonas';
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Legenda KARAOKÊ estilo TikTok — palavra por vez, sincronizada com a fala.
@@ -73,8 +74,15 @@ export const KaraokeCaption: React.FC<{ narration: string; totalFrames: number; 
   const lineY = interpolate(lineIn, [0, 1], [26, 0]);
 
   return (
+    /* ♦ 07/08/2026 — A LEGENDA SAIU DE BAIXO DA INTERFACE DO CELULAR.
+       Era `bottom: 300, left: 50, right: 50` — ou seja, o texto ficava em y≈1580 de
+       1920, DENTRO da faixa que o Instagram e o YouTube tapam com o título, o nome do
+       canal e os botões. Provado num fotograma real (ver `zonas.ts`), e o dono
+       aprovou o conserto. Agora a legenda vive na faixa própria dela, e a largura
+       máxima de 760 centralizada é o que a afasta do trilho de botões da direita. */
     <div style={{
-      position: 'absolute', bottom: 300, left: 50, right: 50,
+      position: 'absolute', bottom: LEGENDA_BOTTOM, left: 0, right: 0,
+      maxWidth: LEGENDA.maxW, marginLeft: 'auto', marginRight: 'auto',
       display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center',
       gap: '14px 16px', transform: `translateY(${lineY}px)`,
       fontFamily: BODY, fontWeight: 800, lineHeight: 1.05,
