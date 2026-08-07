@@ -1147,7 +1147,7 @@ export function corpoDoAgendamento({ canalId, media, capa, legenda, quandoUTC },
  * ⚠️ **O vídeo NÃO é enviado outra vez** — reaproveita-se a média já entregue para o
  * Reel. Um segundo envio de 25 MB por dia, para nada.
  */
-export function corpoDoStory({ canalId, media, legenda, quandoUTC }) {
+export function corpoDoStory({ canalId, media, legenda, quandoUTC, rede = 'instagram' }) {
   return montarPedido({
     canalId,
     midias: [media],
@@ -1155,8 +1155,36 @@ export function corpoDoStory({ canalId, media, legenda, quandoUTC }) {
     quandoUTC,
     // ⚠️ Um Story não leva Reel de teste nem capa — são coisas do Reel. E convidados
     // o Instagram também não aceita em Stories.
-    settings: { __type: 'instagram', post_type: 'story' },
+    settings: { __type: rede, post_type: 'story' },
   });
+}
+
+/**
+ * ♦ 07/08/2026 — O STORY DO FACEBOOK, a pedido do dono.
+ *
+ * ═══ PERGUNTOU-SE AO SERVIDOR, E ELE RESPONDEU ═══
+ * Só **dois** canais aceitam `post_type` com o valor `"story"`: o **Instagram** e o
+ * **Facebook**. Threads, LinkedIn e Telegram nem têm esse campo — neles não existe Story
+ * nenhum para publicar, e não é falta de tentativa nossa.
+ *
+ * ⚠️ **Cada Story sai 5 minutos depois do post daquela rede**, e não a uma hora fixa: o
+ * Story é o eco do post, e um eco antes do original não faz sentido. Se um dia a rede
+ * mudar de lugar na fila, o Story dela vai atrás sozinho — é por isso que os minutos são
+ * CALCULADOS a partir de `REDES`, e não escritos aqui.
+ *
+ * 🔴 **E um Story só sai se o post daquela rede tiver saído.** Sem essa regra, um dia em
+ * que o Facebook falhasse deixaria um Story órfão no ar: o vídeo apareceria por 24 horas
+ * e desapareceria, sem nada no perfil para onde voltar.
+ */
+export const STORIES = [
+  { id: 'instagram-story', canal: 'instagram', nome: 'Story do Instagram' },
+  { id: 'facebook-story', canal: 'facebook', nome: 'Story do Facebook' },
+];
+
+/** A que minuto da fila sai o Story daquela rede — 5 minutos depois do post dela. */
+export function minutosDoStory(story, redes = REDES) {
+  const dona = redes.find((r) => r.id === story.canal);
+  return dona ? dona.minutos + MINUTOS_ATE_O_STORY : null;
 }
 
 // ═══════════════════════════════════════════════════════════════════════════════
@@ -1596,9 +1624,15 @@ async function main() {
 
     const escolha = oQueVaiNoStory({ duracaoSeg: duracaoDoMp4(mp4), media, capa });
     log(`\n${'─'.repeat(72)}`);
-    log(`📖 Story do Instagram, ${MINUTOS_ATE_O_STORY} min depois do Reel (${emHoraDoBrasil(new Date(quando.getTime() + MINUTOS_ATE_O_STORY * 60000))}):`);
-    log(`   ${escolha.media ? `vai a ${escolha.tipo}` : 'NÃO SAI'} — ${escolha.motivo}`);
-    if (escolha.media) log(`   legenda do Story: "${primeiraLinha(montarLegenda(roteiro))}"`);
+    // ⚠️ Só o Instagram e o Facebook fazem Story — perguntado ao servidor. Ver `STORIES`.
+    for (const story of STORIES) {
+      const dona = aEntregar.find((r) => r.id === story.canal);
+      const hora = dona ? emHoraDoBrasil(horaDaRede(quando, { minutos: minutosDoStory(story) }).quandoUTC) : null;
+      log(`📖 ${story.nome}${hora ? `, ${MINUTOS_ATE_O_STORY} min depois do post (${hora})` : ''}:`);
+      if (!dona) { log(`   NÃO SAI — o ${story.canal} não entrega hoje`); continue; }
+      log(`   ${escolha.media ? `vai a ${escolha.tipo}` : 'NÃO SAI'} — ${escolha.motivo}`);
+      if (escolha.media) log(`   legenda: "${primeiraLinha(montarLegenda(roteiro))}"`);
+    }
     log(`\n🚫 fora de propósito: ${Object.entries(REDE_DE_FORA).map(([r, p]) => `${r} (${p})`).join(' · ')}`);
     log('\n✅ Ensaio concluído. Nada foi enviado nem agendado.\n');
     return 0;
@@ -1725,27 +1759,36 @@ async function main() {
    * se chega a esta linha; se o Story falhar — por limite do plano, por rede, por o que
    * for —, o dia continua a ter Reel.
    */
-  if (!registo?.redes?.['instagram-story']) {
+  const escolhaDoStory = oQueVaiNoStory({ duracaoSeg: duracaoDoMp4(mp4), media, capa });
+  for (const story of STORIES) {
+    if (registo?.redes?.[story.id]) { log(`\n⏭️  ${story.nome}: já estava agendado`); continue; }
+    const dona = aEntregar.find((r) => r.id === story.canal);
+    // 🔴 Story órfão não sai: se o post daquela rede não foi agendado (falhou, ou a rede
+    // está de fora hoje), o vídeo apareceria 24 horas e sumiria sem nada para onde voltar.
+    if (!dona) { log(`\n⏭️  ${story.nome}: o ${story.canal} não entrega hoje, então o Story também não`); continue; }
+    if (!caderno[slug]?.redes?.[story.canal]) {
+      log(`\n⏭️  ${story.nome}: o post do ${story.canal} não foi agendado — um Story sozinho ficaria órfão`);
+      continue;
+    }
     try {
-      const canal = canalDaRede(canais, REDES[0], log);
-      const escolha = oQueVaiNoStory({ duracaoSeg: duracaoDoMp4(mp4), media, capa });
-      if (!escolha.media) {
-        log(`\n⚠️ sem Story hoje: ${escolha.motivo}`);
-      } else {
-        const horaDoStory = new Date(quando.getTime() + MINUTOS_ATE_O_STORY * 60000);
-        const idStory = await enviarAgendamento(k, corpoDoStory({
-          canalId: canal.id,
-          media: escolha.media,
-          // ⚠️ A legenda do Story é CURTA de propósito: o Instagram não a mostra como
-          // mostra a do Reel, e o painel fica ilegível com 2200 caracteres repetidos.
-          legenda: primeiraLinha(legenda),
-          quandoUTC: horaDoStory,
-        }));
-        anotar('instagram-story', { postId: idStory, tipo: escolha.tipo, publicaEm: horaDoStory.toISOString(), publicaEmBR: emHoraDoBrasil(horaDoStory) });
-        log(`\n📖 Story agendado (${escolha.tipo}) para ${emHoraDoBrasil(horaDoStory)} — ${escolha.motivo}`);
-      }
+      const canal = canalDaRede(canais, dona, log);
+      if (!escolhaDoStory.media) { log(`\n⚠️ ${story.nome} não sai: ${escolhaDoStory.motivo}`); continue; }
+      const { quandoUTC: horaDoStory } = horaDaRede(quando, { minutos: minutosDoStory(story) });
+      const idStory = await enviarAgendamento(k, corpoDoStory({
+        canalId: canal.id,
+        media: escolhaDoStory.media,
+        // ⚠️ A legenda do Story é CURTA de propósito: nem o Instagram nem o Facebook a
+        // mostram como mostram a do post, e o painel fica ilegível com 2200 caracteres.
+        legenda: primeiraLinha(legenda),
+        quandoUTC: horaDoStory,
+        rede: story.canal,
+      }));
+      anotar(story.id, { postId: idStory, tipo: escolhaDoStory.tipo, publicaEm: horaDoStory.toISOString(), publicaEmBR: emHoraDoBrasil(horaDoStory) });
+      log(`\n📖 ${story.nome} agendado (${escolhaDoStory.tipo}) para ${emHoraDoBrasil(horaDoStory)} — ${escolhaDoStory.motivo}`);
     } catch (e) {
-      log(`\n⚠️ o Story não foi agendado (${e.message}) — o Reel está de pé, que é o que conta.`);
+      // ⚠️ NADA AQUI DERRUBA O POST. O post daquela rede já está agendado e confirmado
+      // quando se chega a esta linha: o principal nunca paga pelo acessório.
+      log(`\n⚠️ ${story.nome} não foi agendado (${e.message}) — o post está de pé, que é o que conta.`);
     }
   }
 

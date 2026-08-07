@@ -26,7 +26,7 @@ import {
   encaixarNoLimite, cortarNaPalavra, MAX_TITULO_TIKTOK, falaPedeComentario,
   numerosEmAlgarismo, lerNumeral, topicosDoRoteiro, montarLegenda,
   linkDoVideo, topicosSemOProduto, comoLista, MAX_ETIQUETAS_LINKEDIN,
-  horaDaRede, MINUTOS_DE_MARGEM,
+  horaDaRede, MINUTOS_DE_MARGEM, STORIES, minutosDoStory,
 } from '../multipost/entregar.js';
 
 let passou = 0;
@@ -715,7 +715,55 @@ console.log('\n16. A HORA DE CADA REDE — e a retoma que ia atirar uma rede par
   ok('🔴 e nunca fica no passado', atrasado.quandoUTC > tarde);
 }
 
-console.log('\n17. O ENVELOPE — a data fica FORA da lista de redes');
+/**
+ * ═══ OS STORIES (07/08/2026) ═══
+ *
+ * 🔑 **PERGUNTOU-SE AO SERVIDOR:** só o **Instagram** e o **Facebook** aceitam
+ * `post_type: "story"`. Threads, LinkedIn e Telegram **nem têm esse campo** — neles não
+ * existe Story para publicar, e não é falta de tentativa. Esta prova é o que impede
+ * alguém de acrescentar um "Story do Telegram" que o servidor deitaria fora em silêncio.
+ */
+console.log('\n17. OS STORIES — só onde eles existem, e sempre depois do post');
+
+{
+  ok('são dois, e só dois', STORIES.length === 2);
+  ok('🔑 e são o Instagram e o Facebook — os únicos que o servidor aceita',
+    STORIES.map((s) => s.canal).sort().join(',') === 'facebook,instagram',
+    STORIES.map((s) => s.canal).join(','));
+
+  /**
+   * ⚠️ O STORY É O ECO DO POST, por isso os minutos dele são CALCULADOS a partir da rede
+   * dona — não escritos à mão. Se um dia o Facebook mudar de lugar na fila, o Story dele
+   * vai atrás sozinho.
+   */
+  for (const s of STORIES) {
+    const dona = REDES.find((r) => r.id === s.canal);
+    ok(`${s.id}: sai ${MINUTOS_ATE_O_STORY} min depois do post do ${s.canal}`,
+      minutosDoStory(s) === dona.minutos + MINUTOS_ATE_O_STORY, String(minutosDoStory(s)));
+    ok(`e nunca ANTES dele`, minutosDoStory(s) > dona.minutos);
+  }
+  // ⚠️ Se a rede dona sair da tabela, o Story dela não pode ficar a apontar para o nada.
+  ok('uma rede que não está na tabela não gera hora de Story',
+    minutosDoStory({ id: 'x-story', canal: 'x' }) === null);
+
+  const corpoIg = corpoDoStory({ canalId: 'c', media: MEDIA, legenda: 'g', quandoUTC: new Date('2026-08-07T22:05:00.000Z') });
+  const corpoFb = corpoDoStory({ canalId: 'c', media: MEDIA, legenda: 'g', quandoUTC: new Date('2026-08-07T22:31:00.000Z'), rede: 'facebook' });
+  ok('🔑 o Story do Facebook vai marcado como FACEBOOK, não como Instagram',
+    corpoFb.posts[0].settings.__type === 'facebook' && corpoFb.posts[0].settings.post_type === 'story',
+    JSON.stringify(corpoFb.posts[0].settings));
+  ok('e o do Instagram continua como estava (quem não passa a rede, é Instagram)',
+    corpoIg.posts[0].settings.__type === 'instagram' && corpoIg.posts[0].settings.post_type === 'story');
+  ok('nenhum dos dois leva Reel de teste nem capa',
+    [corpoIg, corpoFb].every((c) => c.posts[0].settings.is_trial_reel === undefined && c.posts[0].settings.cover === undefined));
+  /**
+   * ⚠️ O teto de 60s vale para os dois: cabe → vai o vídeo; não cabe → vai a capa em pé.
+   * É a mesma escolha e a mesma função, de propósito — dois caminhos separados divergiriam.
+   */
+  ok('e os dois usam a MESMA regra dos 60 segundos',
+    oQueVaiNoStory({ duracaoSeg: 65, media: MEDIA, capa: CAPA }).tipo === 'capa');
+}
+
+console.log('\n18. O ENVELOPE — a data fica FORA da lista de redes');
 
 {
   const corpo = montarPedido({
