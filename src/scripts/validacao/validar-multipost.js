@@ -25,6 +25,7 @@ import {
   REDES, REDE_DE_FORA, REDE_TIKTOK, midiasDaRede, opcoesDaRede, montarPedido, oQueFalta,
   encaixarNoLimite, cortarNaPalavra, MAX_TITULO_TIKTOK, falaPedeComentario,
   numerosEmAlgarismo, lerNumeral, topicosDoRoteiro, montarLegenda,
+  linkDoVideo, topicosSemOProduto, comoLista, MAX_ETIQUETAS_LINKEDIN,
 } from '../multipost/entregar.js';
 
 let passou = 0;
@@ -264,10 +265,26 @@ console.log('\n7. A MÍDIA DE CADA REDE — e a ORDEM, que no Pinterest é a reg
    * provas mostram que o download, a rede, o GET e o POST funcionam — o defeito está no
    * código do Multipost, em `bluesky.provider.ts:97`. Não repetir a investigação.
    */
-  const bs = midiasDaRede(rede('bluesky'), { media: MEDIA, capa: CAPA });
-  ok('🔴 Bluesky: vai a CAPA, nunca o vídeo', bs.midias.length === 1 && bs.midias[0] === CAPA);
-  ok('e sem capa ele ainda sai — só texto e link (o Bluesky aceita)',
+  const CAPA_LARGA = { id: 'cw', path: 'https://pub-abc.r2.dev/capa-yt.jpg' };
+  const bs = midiasDaRede(rede('bluesky'), { media: MEDIA, capa: CAPA, capaLarga: CAPA_LARGA });
+  ok('🔴 Bluesky: vai uma CAPA, nunca o vídeo', bs.midias.length === 1 && bs.midias[0] !== MEDIA);
+  /**
+   * 🔑 E É A DEITADA. A produção tira duas fotografias do mesmo instante: uma em pé
+   * (1080×1920) e uma deitada (1280×720) — a deitada não é a em pé cortada, tem desenho
+   * próprio. A em pé tem uma faixa vazia a ocupar quase um terço da imagem: em tela cheia
+   * é respiro, num feed de texto é o que fica à vista.
+   */
+  ok('🔑 Bluesky: vai a capa DEITADA, não a do Instagram', bs.midias[0] === CAPA_LARGA, JSON.stringify(bs.midias[0]));
+  // ⚠️ Vídeos ANTIGOS não têm a deitada (ela nasceu depois). Nesses vai a em pé.
+  ok('num vídeo antigo, sem a deitada, vai a em pé — melhor que imagem nenhuma',
+    midiasDaRede(rede('bluesky'), { media: MEDIA, capa: CAPA }).midias[0] === CAPA);
+  ok('e o registo diz SEMPRE qual das duas foi',
+    /deitada/i.test(bs.motivo) && /em pé/i.test(midiasDaRede(rede('bluesky'), { media: MEDIA, capa: CAPA }).motivo));
+  ok('e sem capa nenhuma ele ainda sai — só texto e link (o Bluesky aceita)',
     midiasDaRede(rede('bluesky'), { media: MEDIA, capa: null }).midias.length === 0);
+  // ⚠️ O Pinterest continua com a EM PÉ: ali o formato alto é o que ocupa mais tela.
+  ok('🔑 mas o Pinterest continua com a capa EM PÉ',
+    midiasDaRede(rede('pinterest'), { media: MEDIA, capa: CAPA, capaLarga: CAPA_LARGA }).midias[1] === CAPA);
 
   for (const id of ['instagram', 'tiktok', 'facebook', 'linkedin-page', 'threads', 'telegram']) {
     const m = midiasDaRede(rede(id), { media: MEDIA, capa: CAPA });
@@ -361,8 +378,14 @@ console.log('\n9. O TEXTO DE CADA REDE — cabe no limite, e o LINK nunca cai');
   ok('🔴 no TikTok a chamada manda PROCURAR, não clicar',
     /procura FinMoovi/i.test(rede('tiktok').legenda(ROTEIRO, 2000))
     && !/https:\/\//.test(rede('tiktok').legenda(ROTEIRO, 2000)));
+  /**
+   * ⚠️ O endereço deixou de ser sempre `finmoovi.com`: o LinkedIn e o Pinterest passaram a
+   * apontar para a CALCULADORA daquele tema, no blog (§13). O que esta prova cobra é que
+   * **haja um endereço nosso e clicável** — qual deles é decisão de cada rede.
+   */
   for (const id of ['facebook', 'linkedin-page', 'telegram', 'threads', 'pinterest', 'bluesky']) {
-    ok(`${id}: leva o endereço, que ali é clicável`, /https:\/\/finmoovi\.com/.test(rede(id).legenda(ROTEIRO, rede(id).limite)));
+    ok(`${id}: leva um endereço nosso, que ali é clicável`,
+      /https:\/\/(blog\.)?finmoovi\.com/.test(rede(id).legenda(ROTEIRO, rede(id).limite)));
   }
 
   /**
@@ -540,7 +563,117 @@ console.log('\n12. OS NÚMEROS DA LEGENDA — de "cento e cinquenta reais" para 
     /R\$ 500/.test(montarLegenda(ROTEIRO)) && !/quinhentos reais/.test(montarLegenda(ROTEIRO)));
 }
 
-console.log('\n13. O ENVELOPE — a data fica FORA da lista de redes');
+/**
+ * ═══ O LINK QUE CADA POST LEVA (07/08/2026) ═══
+ *
+ * 🔑 O repositório **já sabia** achar a calculadora daquele tema (`resolveToolUrl`, usada
+ * no primeiro comentário do YouTube) — e as redes estavam todas a mandar para a porta da
+ * frente do site. No Pinterest isso é caro: quem procura "juros do cartão" quer a CONTA,
+ * não a página de entrada.
+ */
+console.log('\n13. O LINK CERTO — a calculadora do tema, não a porta da frente');
+
+{
+  const alvo = linkDoVideo(ROTEIRO);
+  ok('🔑 um vídeo sobre cartão aponta para a calculadora de financiamento',
+    alvo.url === 'https://blog.finmoovi.com/ferramentas/calculadora-financiamento/', alvo.url);
+  ok('e sabe que o link é ESPECÍFICO', alvo.especifica === true);
+  /**
+   * ⚠️ Quando o tema não tem calculadora própria, cai no índice — e aí a frase NÃO pode
+   * dizer "a calculadora deste tema", porque não há uma. Prometer o que não existe é o
+   * defeito que este projeto mais já pagou.
+   */
+  const semTema = linkDoVideo({ cta: { target: 'app' } });
+  ok('🔴 sem tema, cai no índice — e ASSUME que não é específico',
+    semTema.url.endsWith('/ferramentas/') && semTema.especifica === false, JSON.stringify(semTema));
+  ok('e o texto acompanha: sem calculadora própria, não se promete uma',
+    !/calculadora deste tema/i.test(rede('pinterest').legenda({ ...ROTEIRO, keyword: '', term: '', category: '' }, 500)));
+  ok('nenhuma rede continua a mandar para a porta da frente sozinha',
+    !/finmoovi\.com\/?$/m.test(rede('pinterest').legenda(ROTEIRO, 500)));
+}
+
+/**
+ * ═══ O PINTEREST É UM BUSCADOR (07/08/2026) ═══
+ *
+ * 🔴 A primeira versão usava **187 dos 500** caracteres e mandava para `finmoovi.com`.
+ * Eram 313 caracteres de texto pesquisável deitados fora todos os dias — e é o ÚNICO sítio
+ * da lista onde a descrição comprida rende de verdade, porque o pin é encontrado meses
+ * depois pela busca.
+ */
+console.log('\n14. O PINTEREST — descrição cheia, porque ali o texto é que traz gente');
+
+{
+  const texto = rede('pinterest').legenda(ROTEIRO, 500);
+  ok('🔴 usa pelo menos 400 dos 500 (antes usava 187)', texto.length >= 400, `usa ${texto.length}`);
+  ok('e continua a caber', texto.length <= 500);
+  ok('leva os tópicos do vídeo — é neles que estão as palavras do tema', /•/.test(texto));
+  ok('leva o endereço da calculadora, não o do site',
+    texto.includes('ferramentas/calculadora-financiamento/'));
+  ok('e as etiquetas todas (aqui elas cabem)',
+    (texto.match(/#/g) || []).length >= 5, `tem ${(texto.match(/#/g) || []).length}`);
+
+  /**
+   * ⚠️ O `link` das OPÇÕES é o destino do clique — coisa diferente do endereço escrito na
+   * descrição. Os dois têm de apontar para o mesmo sítio, senão o pin promete uma coisa e
+   * entrega outra.
+   */
+  const opcoes = opcoesDaRede(rede('pinterest'), { titulo: ROTEIRO.term, link: linkDoVideo(ROTEIRO).url, quadroDoPinterest: 'q' });
+  ok('🔑 o destino do clique é o MESMO que está escrito na descrição',
+    opcoes.link === linkDoVideo(ROTEIRO).url && texto.includes(opcoes.link));
+}
+
+/**
+ * ═══ O LINKEDIN GANHOU TEXTO PRÓPRIO (07/08/2026) ═══
+ *
+ * É o único público que repara em texto malcuidado — e era ele que estava a receber, como
+ * tópico, uma frase de vídeo na primeira pessoa: *"Eu joguei isso no FinMoovi e ele me
+ * mostrou…"*. Funciona dito em voz alta, não funciona num post.
+ */
+console.log('\n15. O LINKEDIN — sem fala de vídeo disfarçada de tópico');
+
+{
+  const texto = rede('linkedin-page').legenda(ROTEIRO, 3000);
+  /**
+   * 🔴 A REGRA É DE ESTRUTURA, NÃO DE GOSTO: por desenho do roteiro, o bloco da
+   * demonstração é o único que nomeia o produto, e é escrito na primeira pessoa. Aqui o
+   * produto entra UMA vez, no fecho — não disfarçado de índice.
+   */
+  ok('🔴 nenhum tópico do LinkedIn nomeia o produto',
+    !/• .*FinMoovi/i.test(texto), texto);
+  ok('mas o produto continua lá, uma vez, no fecho',
+    /FinMoovi|calculadora/i.test(texto));
+  ok('🔴 e a frase falada na 1ª pessoa não aparece',
+    !/Eu joguei isso/i.test(texto), texto);
+  ok(`no máximo ${MAX_ETIQUETAS_LINKEDIN} etiquetas (seis lê-se como enchimento)`,
+    (texto.match(/#/g) || []).length <= MAX_ETIQUETAS_LINKEDIN, `tem ${(texto.match(/#/g) || []).length}`);
+  /**
+   * ⚠️ AS DUAS PRIMEIRAS LINHAS SÃO TUDO O QUE SE VÊ antes do "…ver mais". Se um dia
+   * alguém puser o link ou as etiquetas à frente, isto acende.
+   */
+  const antesDoVerMais = texto.slice(0, 200);
+  ok('🔑 o título e o gancho cabem antes do "ver mais"',
+    antesDoVerMais.includes(ROTEIRO.term.slice(0, 20)) && !antesDoVerMais.includes('http'), antesDoVerMais);
+  ok('e o link é o da calculadora, não o do site', texto.includes('ferramentas/calculadora-financiamento/'));
+
+  // ⚠️ O Facebook NÃO foi tocado: ele é mais informal e a frase na 1ª pessoa cabe lá.
+  ok('o Facebook continua como estava, com a frase do produto',
+    /FinMoovi/i.test(rede('facebook').legenda(ROTEIRO, 63206)));
+
+  /**
+   * 🔴 O ESCAPE QUE ANULAVA A REGRA. A 1ª versão dizia "se sobrar só um tópico, fica com
+   * os dois" — e os roteiros têm normalmente DOIS, um deles a demonstração. Ou seja: o
+   * escape disparava sempre e a frase falada continuava lá. Só se viu ao olhar o texto.
+   */
+  ok('🔴 o filtro tira mesmo o tópico do produto, sem escape',
+    topicosSemOProduto(ROTEIRO).every((t) => !/finmoovi/i.test(t))
+    && topicosSemOProduto(ROTEIRO).length < topicosDoRoteiro(ROTEIRO).length);
+  // ⚠️ UM item não é uma lista: vai como frase corrida, sem marcador.
+  ok('um item só não leva marcador de lista', comoLista(['só este']) === 'só este');
+  ok('dois ou mais levam', comoLista(['a', 'b']) === '• a\n• b');
+  ok('e nenhum não deixa bloco nenhum', comoLista([]) === '');
+}
+
+console.log('\n16. O ENVELOPE — a data fica FORA da lista de redes');
 
 {
   const corpo = montarPedido({

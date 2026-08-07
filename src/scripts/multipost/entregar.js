@@ -73,8 +73,14 @@ import { readFileSync, writeFileSync, existsSync, statSync, mkdirSync } from 'no
 import { join, dirname } from 'node:path';
 
 // ─── caminhos ────────────────────────────────────────────────────────────────
-import { caminhoDaCapa } from '../youtube/capa-short.js';
+import { caminhoDaCapa, caminhoDaCapaLarga } from '../youtube/capa-short.js';
 import { BORDAO } from '../youtube/lib/schema-short.js';
+/**
+ * 🔑 A CALCULADORA DAQUELE TEMA — importada, não recriada.
+ * `resolveToolUrl` já existia e já era usada no primeiro comentário do YouTube. Uma cópia
+ * aqui separava-se dela no primeiro tema novo que aparecesse: uma regra, um sítio.
+ */
+import { resolveToolUrl } from '../youtube/upload-short.js';
 
 const ROOT = process.cwd();
 const MP4_DIR = join(ROOT, 'youtube-render', 'out');
@@ -508,6 +514,63 @@ const CHAMADA_COM_LINK = `👉 O FinMoovi é grátis e abre direto no navegador:
 const CHAMADA_SEM_LINK = '👉 Quer fazer essa conta com os SEUS números? Procura FinMoovi — é de graça e abre no navegador.';
 
 /**
+ * 🔑 O LINK CERTO DESTE VÍDEO, e não a porta da frente do site.
+ *
+ * O repositório **já sabia** resolver isto: `resolveToolUrl` (em `upload-short.js`) olha a
+ * palavra-chave, o tema e a categoria e devolve a calculadora daquele assunto — um vídeo
+ * sobre cartão vai parar a `/ferramentas/calculadora-financiamento/`. Ela já era usada no
+ * primeiro comentário do YouTube; **não estava a ser usada aqui**, e mandar toda a gente
+ * para `finmoovi.com` desperdiça exatamente o que o Pinterest premeia: quem clica num pin
+ * quer a FERRAMENTA, não a página inicial.
+ *
+ * ⚠️ Devolve também se o link é ESPECÍFICO: quando o tema não tem calculadora própria,
+ * `resolveToolUrl` cai no índice das ferramentas — e aí a frase não pode dizer "a
+ * calculadora deste vídeo", porque não há uma. Um texto que promete o que não existe é o
+ * defeito que este projeto mais já pagou.
+ */
+export function linkDoVideo(roteiro) {
+  try {
+    const url = resolveToolUrl(roteiro);
+    return { url, especifica: /\/ferramentas\/[^/]+\/$/.test(url) };
+  } catch {
+    return { url: APP_URL, especifica: false };
+  }
+}
+
+/**
+ * Os tópicos SEM a frase do produto.
+ *
+ * ⚠️ **É uma regra de ESTRUTURA, não de gosto.** Por desenho do roteiro, o bloco 4 (a
+ * demonstração) é o único que nomeia o FinMoovi, e é escrito na PRIMEIRA PESSOA — *"eu
+ * joguei isso no FinMoovi e ele me mostrou…"*. Isso funciona dito em voz alta e funciona
+ * numa legenda de Instagram; num post de LinkedIn lê-se como fala de vídeo colada num
+ * texto. Aqui o produto entra UMA vez, na frase de fecho, e não disfarçado de índice.
+ *
+ * 🔴 E não se tenta reescrever o tom: **tom é gosto, e gosto não se mede com regex** — é a
+ * regra desta casa, paga com oito tentativas falhadas em 01/08. O que se faz é escolher
+ * QUE frases entram, que é uma decisão de estrutura e mede-se com código.
+ */
+export function topicosSemOProduto(roteiro) {
+  return topicosDoRoteiro(roteiro).filter((t) => !/finmoovi/i.test(t));
+}
+
+/**
+ * Como se apresenta uma lista que pode ter zero, um ou dois itens.
+ *
+ * ⚠️ **UM item não é uma lista.** A primeira versão disto tinha um escape — *"se sobrar
+ * só um, fica com os dois"* — e o escape anulava a regra no caso mais comum de todos: os
+ * roteiros têm normalmente DOIS tópicos e um deles é a demonstração. Resultado: a frase
+ * falada continuava lá, e eu só vi ao olhar para o texto verdadeiro.
+ * A saída não é desistir da regra, é apresentar melhor: **um item vai como frase
+ * corrida, sem marcador**; dois ou mais vão como lista; nenhum não deixa bloco nenhum.
+ */
+export function comoLista(itens) {
+  if (!itens.length) return '';
+  if (itens.length === 1) return itens[0];
+  return itens.map((t) => `• ${t}`).join('\n');
+}
+
+/**
  * Corta sem partir palavra ao meio. Devolve o texto tal e qual se já couber.
  *
  * ⚠️ A primeira versão comia SEMPRE a última palavra, mesmo quando o corte calhava
@@ -571,7 +634,7 @@ export function legendaTikTok(roteiro, limite) {
 }
 
 /**
- * Facebook e LinkedIn — os dois de texto mais formal, e os dois com link clicável.
+ * Facebook — texto mais formal que o do Instagram, e com o link, que ali é clicável.
  * ⚠️ Sem "comenta FINMOOVI": o Facebook até PERMITE responder a comentário pela Meta,
  * mas o Multipost não oferece essa automação (só a do Instagram). Ver IMPL26 §12-A.
  */
@@ -584,6 +647,39 @@ export function legendaFormal(roteiro, limite) {
     { texto: ['O que você vai ver neste vídeo:', ...topicos.map((t) => `• ${t}`)].join('\n') },
     { texto: CHAMADA_COM_LINK, essencial: true },
     { texto: etiquetasDo(roteiro).join(' ') },
+  ], limite);
+}
+
+/**
+ * LinkedIn — o único público que repara em texto malcuidado, e por isso o único que ganhou
+ * texto próprio.
+ *
+ * Três diferenças, e cada uma tem uma razão:
+ *  1. **Sem a frase do produto entre os tópicos** (ver `topicosSemOProduto`): ali ela lê-se
+ *     como fala de vídeo colada num post. O produto entra UMA vez, no fecho.
+ *  2. **Quatro etiquetas, não seis.** O LinkedIn não é rede de descoberta por etiqueta —
+ *     um bloco de seis lê-se como enchimento. Saem as duas mais genéricas.
+ *  3. **O link é o da CALCULADORA daquele tema**, não a porta da frente do site: este
+ *     público clica para ver a ferramenta, não para se inscrever em nada.
+ *
+ * ⚠️ **As duas primeiras linhas são tudo o que se vê** antes do "…ver mais". Por isso o
+ * título e o gancho vêm primeiro e são os dois essenciais.
+ */
+export const MAX_ETIQUETAS_LINKEDIN = 4;
+
+export function legendaLinkedIn(roteiro, limite) {
+  const { titulo, gancho } = tituloEGancho(roteiro);
+  const topicos = topicosSemOProduto(roteiro);
+  const { url, especifica } = linkDoVideo(roteiro);
+  const fecho = especifica
+    ? `A calculadora deste tema é gratuita e abre direto no navegador, sem instalar nada:\n${url}`
+    : `As calculadoras do FinMoovi são gratuitas e abrem direto no navegador, sem instalar nada:\n${url}`;
+  return encaixarNoLimite([
+    { texto: titulo, essencial: true },
+    { texto: gancho, essencial: true },
+    { texto: comoLista(topicos) },
+    { texto: fecho, essencial: true },
+    { texto: etiquetasDo(roteiro).slice(0, MAX_ETIQUETAS_LINKEDIN).join(' ') },
   ], limite);
 }
 
@@ -611,13 +707,35 @@ export function legendaThreads(roteiro, limite) {
   ], limite);
 }
 
-/** Pinterest — 500 na descrição; o título e o link vão nas OPÇÕES, não aqui. */
+/**
+ * Pinterest — 🔑 **o único da lista que é um BUSCADOR, não uma rede social.**
+ *
+ * ═══ POR QUE ESTE É DIFERENTE DE TODOS OS OUTROS ═══
+ * Nas outras redes o texto acompanha o vídeo; aqui **o texto é que faz o pin ser
+ * encontrado**, meses depois de publicado. É o único sítio onde uma descrição comprida e
+ * cheia das palavras do tema rende de verdade.
+ *
+ * 🔴 A primeira versão usava **187 dos 500** caracteres e mandava toda a gente para
+ * `finmoovi.com`. Eram 313 caracteres de texto pesquisável deitados fora **todos os dias**,
+ * e o clique caía na porta da frente em vez de cair na ferramenta que a pessoa procurava.
+ *
+ * O que entra, por ordem de valor:
+ *   1. o gancho (é a frase com as palavras do tema)
+ *   2. os tópicos do vídeo — mais palavras do tema, e são elas que o Pinterest lê
+ *   3. a frase da calculadora **com o endereço dela**
+ *   4. as etiquetas, que aqui valem menos do que o texto — por isso são as primeiras a cair
+ */
 export function legendaPinterest(roteiro, limite) {
   const { titulo, gancho } = tituloEGancho(roteiro);
+  const { url, especifica } = linkDoVideo(roteiro);
+  const fecho = especifica
+    ? `Faça essa conta com os seus números na calculadora gratuita do FinMoovi:\n${url}`
+    : `Todas as calculadoras do FinMoovi são gratuitas e abrem no navegador:\n${url}`;
   return encaixarNoLimite([
     { texto: gancho || titulo, essencial: true },
-    { texto: `O FinMoovi é grátis e abre no navegador: ${APP_URL}`, essencial: true },
-    { texto: etiquetasDo(roteiro).slice(0, 3).join(' ') },
+    { texto: topicosDoRoteiro(roteiro).map((t) => `• ${t}`).join('\n') },
+    { texto: fecho, essencial: true },
+    { texto: etiquetasDo(roteiro).join(' ') },
   ], limite);
 }
 
@@ -672,7 +790,7 @@ export const REDES = [
   { id: 'instagram', nome: 'Instagram', minutos: 0, limite: 2200, midia: 'video', legenda: montarLegenda },
   // ⬅️ o lugar do TikTok (minuto 12) fica VAGO. Ver `REDE_TIKTOK` e `REDE_DE_FORA`.
   { id: 'facebook', nome: 'Facebook', minutos: 26, limite: 63206, midia: 'video', legenda: legendaFormal },
-  { id: 'linkedin-page', nome: 'LinkedIn', minutos: 43, limite: 3000, midia: 'video', legenda: legendaFormal },
+  { id: 'linkedin-page', nome: 'LinkedIn', minutos: 43, limite: 3000, midia: 'video', legenda: legendaLinkedIn },
   { id: 'threads', nome: 'Threads', minutos: 58, limite: 500, midia: 'video', legenda: legendaThreads },
   { id: 'telegram', nome: 'Telegram', minutos: 74, limite: 4096, midia: 'video', legenda: legendaTelegram },
   { id: 'pinterest', nome: 'Pinterest', minutos: 91, limite: 500, midia: 'video+capa', legenda: legendaPinterest },
@@ -1028,7 +1146,7 @@ export function corpoDoStory({ canalId, media, legenda, quandoUTC }) {
  *   · Instagram — post_type
  *   · os outros — nada obrigatório
  */
-export function opcoesDaRede(rede, { titulo, quadroDoPinterest } = {}) {
+export function opcoesDaRede(rede, { titulo, quadroDoPinterest, link } = {}) {
   switch (rede.id) {
     case 'tiktok':
       /**
@@ -1064,11 +1182,16 @@ export function opcoesDaRede(rede, { titulo, quadroDoPinterest } = {}) {
        * ele é PERGUNTADO ao servidor a cada corrida (ver `quadroDoPinterest`), nunca escrito
        * aqui.
        */
+      /**
+       * ⚠️ O `link` é o **destino do pin** — é para lá que vai quem clica. Era `APP_URL`,
+       * a porta da frente; passou a ser a calculadora daquele tema (ver `linkDoVideo`).
+       * Quem procura "juros do cartão" no Pinterest quer a conta, não a página de entrada.
+       */
       return {
         __type: 'pinterest',
         board: quadroDoPinterest,
         title: cortarNaPalavra(titulo || '', MAX_TITULO_PINTEREST),
-        link: APP_URL,
+        link: link || APP_URL,
       };
     case 'facebook':
       return { __type: 'facebook', post_type: 'post' };
@@ -1091,14 +1214,39 @@ export function opcoesDaRede(rede, { titulo, quadroDoPinterest } = {}) {
  * que o download funciona, a rede funciona e a conta funciona — o defeito está no código
  * do Multipost (`bluesky.provider.ts:97`). Diagnóstico FECHADO, não repetir. Vai a capa.
  */
-export function midiasDaRede(rede, { media, capa }) {
+export function midiasDaRede(rede, { media, capa, capaLarga }) {
   if (rede.midia === 'video+capa') {
     if (!capa) return { midias: null, motivo: 'o Pinterest exige uma capa junto do vídeo, e hoje não veio capa no artefato' };
+    // A capa EM PÉ, e é a certa: no Pinterest o formato alto é o que ocupa mais tela.
     return { midias: [media, capa], motivo: 'vídeo primeiro, capa depois — a ordem que o Pinterest exige' };
   }
   if (rede.midia === 'capa') {
-    if (!capa) return { midias: [], motivo: 'sem capa; vai só o texto com o link, que é o que o Bluesky aceita' };
-    return { midias: [capa], motivo: 'vai a capa, porque o Bluesky não publica vídeo (defeito do programa, IMPL26 §10-B)' };
+    /**
+     * ⚠️ AQUI VAI A CAPA **DEITADA**, e não a mesma do Instagram.
+     *
+     * A produção tira DUAS fotografias do mesmo instante e do mesmo texto: uma em pé
+     * (1080×1920) e uma deitada (1280×720). Não é uma cortada da outra — a deitada tem
+     * desenho próprio, com o texto à esquerda e o boneco à direita.
+     *
+     * 🔴 A em pé tem, entre o título e o boneco, **uma faixa vazia que ocupa quase um
+     * terço da imagem**. Em tela cheia (Reel, Pinterest) isso é respiro e fica bem; num
+     * feed de texto como o Bluesky, onde a imagem entra numa caixa larga, é essa faixa
+     * que fica à vista — e some o número E o boneco.
+     *
+     * ⚠️ **Isto é raciocínio, não medição.** Não se conferiu como o Bluesky corta na conta
+     * do dono. Fica escolhida a deitada por ser a que não tem espaço morto seja qual for o
+     * corte; no primeiro envio verdadeiro, olha-se e decide-se com o olho.
+     * ⚠️ E há vídeos ANTIGOS sem a deitada (ela nasceu depois): nesses vai a em pé, que é
+     * melhor do que não ir imagem nenhuma.
+     */
+    const escolhida = capaLarga || capa;
+    if (!escolhida) return { midias: [], motivo: 'sem capa; vai só o texto com o link, que é o que o Bluesky aceita' };
+    return {
+      midias: [escolhida],
+      motivo: capaLarga
+        ? 'vai a capa DEITADA (o Bluesky não publica vídeo, e a em pé ficaria cortada no feed)'
+        : 'vai a capa em pé — não veio a deitada no artefato (vídeo antigo)',
+    };
   }
   return { midias: [media], motivo: 'o vídeo' };
 }
@@ -1368,7 +1516,10 @@ async function main() {
   log(`🕖 âncora: ${emHoraDoBrasil(quando)} no Brasil  =  ${quando.toISOString()} em UTC`);
 
   const capaLocal = caminhoDaCapa(slug);
+  const capaLargaLocal = caminhoDaCapaLarga(slug);
   const temCapa = existsSync(capaLocal);
+  // ⚠️ A deitada só existe nos vídeos produzidos depois de ela nascer — ver `midiasDaRede`.
+  const temCapaLarga = existsSync(capaLargaLocal);
   const titulo = limpar(roteiro.term || roteiro.keyword || '');
 
   if (DRY_RUN) {
@@ -1383,18 +1534,20 @@ async function main() {
      */
     const media = { id: '(id do vídeo)', path: 'https://exemplo/video.mp4' };
     const capa = temCapa ? { id: '(id da capa)', path: 'https://exemplo/capa.jpg' } : null;
+    const capaLarga = temCapaLarga ? { id: '(id da capa deitada)', path: 'https://exemplo/capa-yt.jpg' } : null;
+    log(`🖼️  capa deitada (Bluesky): ${temCapaLarga ? `${Math.round(statSync(capaLargaLocal).size / 1024)} KB` : 'FALTA — vai a em pé'}`);
 
     for (const rede of aEntregar) {
       const hora = new Date(quando.getTime() + rede.minutos * 60000);
       const texto = rede.legenda(roteiro, rede.limite);
-      const { midias, motivo } = midiasDaRede(rede, { media, capa });
+      const { midias, motivo } = midiasDaRede(rede, { media, capa, capaLarga });
       log(`\n${'─'.repeat(72)}`);
       log(`📡 ${rede.nome}  ·  ${emHoraDoBrasil(hora)} BR  ·  limite ${rede.limite} (a rede de segurança; o real pergunta-se ao servidor)`);
       if (!midias) { log(`   ⏭️  NÃO SAI — ${motivo}`); continue; }
       log(`   mídia: ${motivo}${midias.length ? ` → ${midias.length} anexo(s)` : ' → nenhum anexo'}`);
       const opcoes = rede.id === 'instagram'
         ? corpoDoAgendamento({ canalId: '(canal)', media, capa, legenda: texto, quandoUTC: hora }, log).posts[0].settings
-        : opcoesDaRede(rede, { titulo, quadroDoPinterest: '(o quadro, perguntado ao servidor)' });
+        : opcoesDaRede(rede, { titulo, link: linkDoVideo(roteiro).url, quadroDoPinterest: '(o quadro, perguntado ao servidor)' });
       log(`   opções: ${JSON.stringify(opcoes)}`);
       log(`   texto (${texto.length} de ${rede.limite}):`);
       for (const l of texto.split('\n')) log(`     ${l}`);
@@ -1422,6 +1575,7 @@ async function main() {
    */
   let media = registo?.midias?.video || null;
   let capa = registo?.midias?.capa || null;
+  let capaLarga = registo?.midias?.capaLarga || null;
   if (media) log(`♻️  a reaproveitar o vídeo já enviado nesta corrida: ${media.path}`);
   else {
     media = await enviarFicheiro(k, mp4, `${slug}.mp4`);
@@ -1440,11 +1594,23 @@ async function main() {
   } else if (!temCapa) {
     log('⚠️ não veio capa no artefato — o Instagram escolherá um fotograma ao calhas, e o Pinterest não sai.');
   }
+  /**
+   * A capa DEITADA, que é a que vai ao Bluesky (ver `midiasDaRede`). Falhar aqui é ainda
+   * menos grave do que falhar a em pé: sem ela, o Bluesky usa a em pé.
+   */
+  if (!capaLarga && temCapaLarga) {
+    try {
+      capaLarga = await enviarFicheiro(k, capaLargaLocal, `capa-${slug}-yt.jpg`, 'image/jpeg');
+      log(`🖼️  capa deitada entregue: ${capaLarga.path}`);
+    } catch (e) {
+      log(`⚠️ a capa deitada falhou (${e.message}) — o Bluesky leva a em pé.`);
+    }
+  }
 
   const anotar = (chaveDaRede, valor) => {
     caderno[slug] = {
       ...(caderno[slug] || {}),
-      midias: { video: media, capa },
+      midias: { video: media, capa, capaLarga },
       publicaEm: quando.toISOString(),
       publicaEmBR: emHoraDoBrasil(quando),
       agendadoEm: caderno[slug]?.agendadoEm || new Date().toISOString(),
@@ -1468,7 +1634,7 @@ async function main() {
 
       const limite = await limiteDaRede(k, canal.id, rede);
       const texto = rede.legenda(roteiro, limite);
-      const { midias, motivo } = midiasDaRede(rede, { media, capa });
+      const { midias, motivo } = midiasDaRede(rede, { media, capa, capaLarga });
       if (!midias) { log(`\n⏭️  ${rede.nome}: NÃO SAI — ${motivo}`); falharam.push(`${rede.nome} (${motivo})`); continue; }
 
       const hora = new Date(quando.getTime() + rede.minutos * 60000);
@@ -1481,6 +1647,7 @@ async function main() {
           quandoUTC: hora,
           settings: opcoesDaRede(rede, {
             titulo,
+            link: linkDoVideo(roteiro).url,
             quadroDoPinterest: rede.id === 'pinterest' ? (await quadroDoPinterest(k, canal.id)).id : undefined,
           }),
         });
