@@ -129,6 +129,35 @@ export function proximaHoraBrasilEmUTC(horaBR = HORA_BR_PADRAO, agora = new Date
   return alvo;
 }
 
+/**
+ * 🔴 A HORA DE CADA REDE — e a armadilha da RETOMA, que quase passou.
+ *
+ * ═══ O CENÁRIO ═══
+ * A entrega corre ao meio-dia e marca as sete redes a partir das 19h. Seis saem, o Bluesky
+ * falha. Alguém volta a correr **às 20h** para apanhar a que faltou. E aí:
+ * `proximaHoraBrasilEmUTC(19)` já não devolve as 19h de HOJE — devolve as **de amanhã**,
+ * porque a hora de hoje já passou. O Bluesky sairia **um dia depois** dos outros seis, e
+ * ninguém daria por nada: o registo diria "agendado e confirmado", que é verdade.
+ *
+ * ═══ AS DUAS METADES DO CONSERTO ═══
+ * 1. **A âncora é guardada.** Numa retoma reaproveita-se a hora do primeiro envio, e não
+ *    se calcula outra. É o mesmo dia, é a mesma fila.
+ * 2. **Uma hora que já passou não vai para trás.** Se a vez daquela rede já foi (o
+ *    Bluesky sai às 20h47 e são 21h), marca-se para daqui a poucos minutos. A API aceita
+ *    uma data no passado **em silêncio** e publica de imediato — o que não é errado, mas
+ *    é preciso ser uma DECISÃO e aparecer no registo, não um acidente.
+ */
+export const MINUTOS_DE_MARGEM = 5;
+
+export function horaDaRede(ancoraUTC, rede, agora = new Date()) {
+  const naFila = new Date(ancoraUTC.getTime() + rede.minutos * 60000);
+  if (naFila.getTime() > agora.getTime()) return { quandoUTC: naFila, atrasada: false };
+  return {
+    quandoUTC: new Date(agora.getTime() + MINUTOS_DE_MARGEM * 60000),
+    atrasada: true,
+  };
+}
+
 /** Como se lê a mesma hora no relógio do Brasil — só para o humano conferir no log. */
 export function emHoraDoBrasil(dataUTC) {
   const d = new Date(dataUTC.getTime() - BRASIL_UTC_OFFSET * 3600 * 1000);
@@ -1469,7 +1498,6 @@ async function main() {
 
   const roteiro = JSON.parse(readFileSync(roteiroPath, 'utf-8'));
   const legenda = montarLegenda(roteiro);
-  const quando = proximaHoraBrasilEmUTC(horaBR);
   const tamanhoMB = (statSync(mp4).size / 1048576).toFixed(1);
 
   /**
@@ -1490,6 +1518,19 @@ async function main() {
   const caderno = lerCaderno();
   const registo = caderno[slug];
   const estado = oQueFalta(registo, aEntregar);
+
+  /**
+   * 🔴 A ÂNCORA DA RETOMA — ver `horaDaRede`. Numa segunda passagem reaproveita-se a hora
+   * do primeiro envio; senão, uma retoma feita depois das 19h atirava a rede que faltava
+   * para o DIA SEGUINTE, sozinha, sem ninguém dar por nada.
+   * ⚠️ Uma `--hora` escrita à mão ganha sempre: quem a escreveu quis aquela hora.
+   */
+  const ancoraGuardada = registo?.publicaEm ? new Date(registo.publicaEm) : null;
+  const horaAMao = Number(args.hora) > 0;
+  const quando = (!horaAMao && ancoraGuardada && !Number.isNaN(ancoraGuardada.getTime()))
+    ? ancoraGuardada
+    : proximaHoraBrasilEmUTC(horaBR);
+  if (quando === ancoraGuardada) log(`🕖 a reaproveitar a âncora do primeiro envio: ${emHoraDoBrasil(quando)} BR`);
 
   // ⚠️ SE O POST FOI APAGADO À MÃO, O CADERNO PASSA A MENTIR — e este robô recusa
   // para sempre um vídeo que já não está agendado em lado nenhum. Aconteceu em
@@ -1538,7 +1579,7 @@ async function main() {
     log(`🖼️  capa deitada (Bluesky): ${temCapaLarga ? `${Math.round(statSync(capaLargaLocal).size / 1024)} KB` : 'FALTA — vai a em pé'}`);
 
     for (const rede of aEntregar) {
-      const hora = new Date(quando.getTime() + rede.minutos * 60000);
+      const { quandoUTC: hora } = horaDaRede(quando, rede);
       const texto = rede.legenda(roteiro, rede.limite);
       const { midias, motivo } = midiasDaRede(rede, { media, capa, capaLarga });
       log(`\n${'─'.repeat(72)}`);
@@ -1637,7 +1678,8 @@ async function main() {
       const { midias, motivo } = midiasDaRede(rede, { media, capa, capaLarga });
       if (!midias) { log(`\n⏭️  ${rede.nome}: NÃO SAI — ${motivo}`); falharam.push(`${rede.nome} (${motivo})`); continue; }
 
-      const hora = new Date(quando.getTime() + rede.minutos * 60000);
+      const { quandoUTC: hora, atrasada } = horaDaRede(quando, rede);
+      if (atrasada) log(`\n⏰ ${rede.nome}: a vez dele nesta fila já passou — vai daqui a ${MINUTOS_DE_MARGEM} min, em vez de amanhã.`);
       const corpo = principal
         ? corpoDoAgendamento({ canalId: canal.id, media, capa, legenda: texto, quandoUTC: hora }, log)
         : montarPedido({

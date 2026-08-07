@@ -26,6 +26,7 @@ import {
   encaixarNoLimite, cortarNaPalavra, MAX_TITULO_TIKTOK, falaPedeComentario,
   numerosEmAlgarismo, lerNumeral, topicosDoRoteiro, montarLegenda,
   linkDoVideo, topicosSemOProduto, comoLista, MAX_ETIQUETAS_LINKEDIN,
+  horaDaRede, MINUTOS_DE_MARGEM,
 } from '../multipost/entregar.js';
 
 let passou = 0;
@@ -673,7 +674,48 @@ console.log('\n15. O LINKEDIN — sem fala de vídeo disfarçada de tópico');
   ok('e nenhum não deixa bloco nenhum', comoLista([]) === '');
 }
 
-console.log('\n16. O ENVELOPE — a data fica FORA da lista de redes');
+/**
+ * ═══ A HORA DE CADA REDE, E A ARMADILHA DA RETOMA ═══
+ *
+ * 🔴 **O CENÁRIO QUE ISTO EVITA.** A entrega corre ao meio-dia e marca as sete a partir
+ * das 19h. Seis saem, o Bluesky falha. Alguém volta a correr **às 20h** — e
+ * `proximaHoraBrasilEmUTC(19)` já devolve as 19h de **AMANHÃ**, porque a de hoje passou.
+ * O Bluesky sairia **um dia depois** dos outros seis, e o registo diria "agendado e
+ * confirmado", que é verdade. Ninguém daria por nada.
+ *
+ * Apanhado a reler o código, não por uma prova a acender — como os outros dois de hoje.
+ */
+console.log('\n16. A HORA DE CADA REDE — e a retoma que ia atirar uma rede para amanhã');
+
+{
+  const ancora = new Date('2026-08-07T22:00:00.000Z');           // 19h BR
+  const bluesky = rede('bluesky');                                // sai 107 min depois
+  const meioDia = new Date('2026-08-07T15:00:00.000Z');
+
+  const noHorario = horaDaRede(ancora, bluesky, meioDia);
+  ok('na corrida normal, cada rede sai no seu lugar da fila',
+    noHorario.quandoUTC.toISOString() === '2026-08-07T23:47:00.000Z' && noHorario.atrasada === false,
+    noHorario.quandoUTC.toISOString());
+  ok('e o Instagram continua a ser a âncora, sem deslocamento',
+    horaDaRede(ancora, rede('instagram'), meioDia).quandoUTC.getTime() === ancora.getTime());
+
+  /**
+   * 🔴 A RETOMA DEPOIS DA HORA. Sem isto, este caso mandava o post para o dia seguinte.
+   * Com isto, ele sai daqui a poucos minutos — que é uma DECISÃO, e aparece no registo.
+   */
+  const tarde = new Date('2026-08-08T00:30:00.000Z');             // 21h30 BR, a fila já passou
+  const atrasado = horaDaRede(ancora, bluesky, tarde);
+  ok('🔴 se a vez dele já passou, NÃO vai para amanhã', atrasado.quandoUTC < new Date('2026-08-08T22:00:00.000Z'));
+  ok('🔑 sai daqui a poucos minutos, e diz que foi por isso',
+    atrasado.quandoUTC.getTime() === tarde.getTime() + MINUTOS_DE_MARGEM * 60000 && atrasado.atrasada === true);
+  /**
+   * ⚠️ E NUNCA no passado: a API aceita uma data passada **em silêncio** e publica de
+   * imediato. Aqui isso passa a ser escolha nossa, com margem, e não um acidente.
+   */
+  ok('🔴 e nunca fica no passado', atrasado.quandoUTC > tarde);
+}
+
+console.log('\n17. O ENVELOPE — a data fica FORA da lista de redes');
 
 {
   const corpo = montarPedido({
