@@ -17,20 +17,38 @@ const ROOT = join(__dirname, '..');
 
 // ⚙️ AJUSTE POR NICHO: subreddits não são deriváveis do config — ao replicar o
 // template para outro nicho, edite esta lista com os subreddits do novo tema.
+//
+// 📌 07/08/2026 — lista revista junto com a troca para RSS. Saíram `brasileiros`
+// (não confirmado que exista) e `budget` (substituído por `budgeting`); entrou
+// `literaciafinanceira`, o maior de língua portuguesa sobre o tema (114 mil).
+// ⚠️ Subreddit inexistente aparece como **404 no registro da corrida** — é lá
+// que se confere a lista, não aqui.
 const SUBREDDITS = [
   'financaspessoais',
   'investimentos',
-  'brasileiros',
+  'literaciafinanceira',
   'personalfinance',
   'FinancialPlanning',
-  'budget'
+  'budgeting',
+  'povertyfinance'
 ];
 
 const MAX_OPPORTUNITIES = 50;
 const MAX_AGE_DAYS = 30;
 const HOURS_48 = 48 * 60 * 60; // 48h in seconds
-const DELAY_MIN = 2000;
-const DELAY_MAX = 3000;
+
+/**
+ * 🔴 07/08/2026 — AS ESPERAS SUBIRAM DE 2-3s PARA 8-15s, E NÃO É EXAGERO.
+ *
+ * O RSS do Reddit corta o ritmo com **429** muito mais cedo do que a antiga API
+ * de JSON. Medido: com 1s entre pedidos, 10 de 11 subreddits vieram 429; com 12s,
+ * ainda houve 429. Por isso, além da espera maior, há **repetição com recuo**
+ * (`fetchSubreddit`) — só desiste depois de 3 tentativas.
+ */
+const DELAY_MIN = 8000;
+const DELAY_MAX = 15000;
+const MAX_TENTATIVAS = 3;
+const ESPERA_APOS_429 = 20000;
 
 const USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36';
 
@@ -93,22 +111,97 @@ function matchKeywords(text, topics) {
   return matches;
 }
 
-async function fetchSubreddit(subreddit) {
-  const url = `https://www.reddit.com/r/${subreddit}/new.json?limit=25`;
+/**
+ * 🔴 07/08/2026 — POR QUE ISTO DEIXOU DE SER `new.json` E PASSOU A SER RSS.
+ *
+ * Este robô rodou **28 dias seguidos sem achar nada** e a corrida ficava **verde**,
+ * porque o `catch` do laço principal engolia o erro. O registro da corrida de
+ * 07/08 mostrou a verdade: **os 6 subreddits devolveram `HTTP 403`**, todos os dias.
+ *
+ * ⚠️ E não era o IP do GitHub: o mesmo endereço devolve **403 na máquina do dono
+ * também**. O Reddit fechou o `.json` sem autenticação para todo mundo — a mesma
+ * política que, em 07/08, impediu criar um app novo (o cadastro automático da API
+ * do Reddit está fechado desde 2026, ver IMPLEMENTACAO26 §10).
+ *
+ * ✅ **O RSS continua aberto e sem chave** (`/new/.rss`, medido: `200`). É Atom, e
+ * traz o que este robô precisa: título, link, data e o corpo do post.
+ *
+ * ⚠️ Em troca, ele **corta o ritmo com 429** com muito mais facilidade. Daí as
+ * esperas maiores e a repetição abaixo.
+ */
+function decodificarEntidades(texto) {
+  return String(texto)
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#0?39;|&apos;/g, "'")
+    .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(Number(n)))
+    .replace(/&amp;/g, '&');
+}
 
-  const response = await fetch(url, {
-    headers: {
-      'User-Agent': USER_AGENT,
-      'Accept': 'application/json'
-    }
-  });
+function semEtiquetas(html) {
+  return decodificarEntidades(html).replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
+}
 
-  if (!response.ok) {
-    throw new Error(`HTTP ${response.status} for r/${subreddit}`);
+/**
+ * Converte uma entrada do Atom no mesmo formato que o laço principal já esperava
+ * (`{ data: { title, selftext, created_utc, permalink } }`), para que a troca do
+ * RSS não obrigue a mexer no resto do robô.
+ */
+function entradaParaPost(bloco) {
+  const titulo = bloco.match(/<title>([\s\S]*?)<\/title>/);
+  const link = bloco.match(/<link[^>]*href="([^"]+)"/);
+  const data = bloco.match(/<published>([\s\S]*?)<\/published>/) || bloco.match(/<updated>([\s\S]*?)<\/updated>/);
+  const corpo = bloco.match(/<content[^>]*>([\s\S]*?)<\/content>/);
+
+  if (!titulo || !link || !data) return null;
+
+  const quando = Date.parse(data[1].trim());
+  if (Number.isNaN(quando)) return null;
+
+  // O laço principal monta `https://reddit.com${permalink}` — guardamos só o caminho.
+  let caminho;
+  try {
+    caminho = new URL(link[1]).pathname;
+  } catch {
+    return null;
   }
 
-  const data = await response.json();
-  return data?.data?.children || [];
+  return {
+    data: {
+      title: decodificarEntidades(titulo[1].trim()),
+      selftext: corpo ? semEtiquetas(corpo[1]) : '',
+      created_utc: Math.floor(quando / 1000),
+      permalink: caminho
+    }
+  };
+}
+
+async function fetchSubreddit(subreddit) {
+  const url = `https://www.reddit.com/r/${subreddit}/new/.rss`;
+  let ultimoErro = '';
+
+  for (let tentativa = 1; tentativa <= MAX_TENTATIVAS; tentativa++) {
+    const response = await fetch(url, {
+      headers: { 'User-Agent': USER_AGENT, 'Accept': 'application/atom+xml, application/xml' }
+    });
+
+    if (response.ok) {
+      const xml = await response.text();
+      const blocos = xml.split('<entry>').slice(1);
+      return blocos.map(entradaParaPost).filter(Boolean);
+    }
+
+    ultimoErro = `HTTP ${response.status} for r/${subreddit}`;
+
+    // 429 = "devagar". Só isso vale repetir; 404 (subreddit inexistente) não.
+    if (response.status !== 429 || tentativa === MAX_TENTATIVAS) break;
+
+    console.log(`[Reddit Monitor] 429 em r/${subreddit} — tentativa ${tentativa}/${MAX_TENTATIVAS}, esperando ${ESPERA_APOS_429 / 1000}s...`);
+    await sleep(ESPERA_APOS_429 * tentativa);
+  }
+
+  throw new Error(ultimoErro);
 }
 
 async function main() {
@@ -127,6 +220,7 @@ async function main() {
 
   const nowSec = Math.floor(Date.now() / 1000);
   let newOpportunities = [];
+  const falhas = [];
 
   for (const subreddit of SUBREDDITS) {
     console.log(`\n[Reddit Monitor] Fetching r/${subreddit}...`);
@@ -170,6 +264,7 @@ async function main() {
 
       console.log(`[Reddit Monitor] Found ${matchCount} new opportunities in r/${subreddit}`);
     } catch (error) {
+      falhas.push(`r/${subreddit}: ${error.message}`);
       console.error(`[Reddit Monitor] Error fetching r/${subreddit}: ${error.message}`);
     }
 
@@ -189,6 +284,20 @@ async function main() {
   console.log(`\n[Reddit Monitor] Done!`);
   console.log(`[Reddit Monitor] New opportunities found: ${newOpportunities.length}`);
   console.log(`[Reddit Monitor] Total saved: ${allOpportunities.length}`);
+
+  /**
+   * 🔴 O RESUMO DE FALHAS EXISTE PORQUE ELE FALTOU DURANTE 28 DIAS.
+   *
+   * Sem esta linha, uma corrida em que **todos** os subreddits recusam termina
+   * exatamente igual a uma corrida em que simplesmente não houve post novo:
+   * verde, "0 oportunidades", e a página `/status` dizendo "o monitor segue
+   * vigiando". Foi assim que o 403 passou quatro semanas despercebido.
+   */
+  console.log(`[Reddit Monitor] Subreddits com falha: ${falhas.length} de ${SUBREDDITS.length}`);
+  for (const f of falhas) console.log(`[Reddit Monitor]   ✗ ${f}`);
+  if (falhas.length === SUBREDDITS.length) {
+    console.log('[Reddit Monitor] 🔴 ATENÇÃO: NENHUM subreddit respondeu. O "0 oportunidades" acima NÃO quer dizer que não havia posts — quer dizer que o robô não conseguiu ler nada.');
+  }
 }
 
 main().catch(error => {
