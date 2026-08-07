@@ -1,20 +1,35 @@
-name: Instagram — Entregar o Short ao Multipost (19h BR)
+name: Multipost — Entregar o Short às 8 redes (a partir das 19h BR)
 
 # ♦ O SEGUNDO CARTEIRO (05/08/2026 — IMPL20 §51, decisão do dono).
 #
 # O mesmo vídeo que o carteiro do YouTube entrega ao meio-dia é entregue aqui ao
-# Multipost, que o publica no Instagram às 19h do Brasil.
+# Multipost, que o publica em OITO redes a partir das 19h do Brasil.
+#
+# ♦ 07/08/2026 — DE UMA REDE PARA OITO (IMPL26 §12). Entraram TikTok, Facebook,
+# LinkedIn, Threads, Telegram, Pinterest e Bluesky. O X ficou de fora por ordem
+# do dono: desde 02/2026 cobra US$ 0,20 por publicação com link.
+#
+# ⚠️ O NOME DO FICHEIRO CONTINUA "instagram-carteiro" DE PROPÓSITO. O histórico de
+# corridas do GitHub está agarrado ao caminho do ficheiro: renomeá-lo apagava a
+# lista de tudo o que já correu, para arrumar uma palavra. O mesmo vale para o
+# caderno `.github/data/instagram-agendados.json`.
 #
 # INDEPENDENTE DE PROPÓSITO: se isto falhar, o YouTube não sente. Fila própria,
 # relógio próprio, caderno próprio. Foi essa a escolha do dono entre os três
 # desenhos possíveis.
+#
+# 🔑 E DENTRO DELE, O INSTAGRAM É O PRINCIPAL: se ele falhar, a corrida falha. As
+# outras sete são lucro — falham em aviso e o dia continua de pé. Correr esta
+# mesma entrega outra vez tenta SÓ as redes que ficaram por sair.
 #
 # Corre às 15:20 UTC (12:20 no Brasil), vinte minutos depois do carteiro do
 # YouTube — para o vídeo já ter ido ao ar lá antes de sair aqui, e para os dois
 # não disputarem o mesmo minuto.
 #
 # ⚠️ A hora da PUBLICAÇÃO não é a hora desta corrida. Este robô só ENTREGA; quem
-# publica às 19h é o Multipost, porque o agendamento vai no pedido.
+# publica é o Multipost, porque o agendamento vai no pedido. As oito saem entre
+# as 19h00 e as 20h47 do Brasil, com intervalos desiguais — oito posts de quinze
+# em quinze minutos certinhos é a assinatura de um robô.
 #
 # Sem pendentes na fila = sucesso neutro (exit 78), o mesmo "nada a fazer" do
 # carteiro do YouTube.
@@ -29,14 +44,14 @@ on:
         description: 'De que corrida vem o vídeo (só com slug à mão; sem isto o MP4 não é baixado)'
         required: false
       dry_run:
-        description: 'Ensaio (mostra a legenda e a hora, não envia nada)'
+        description: 'Ensaio (mostra o texto e a hora de CADA uma das 8 redes, não envia nada)'
         type: boolean
         default: false
       hora:
-        description: 'Hora de publicar, no relógio do Brasil (vazio = 19)'
+        description: 'Hora da PRIMEIRA rede (o Instagram), no relógio do Brasil — as outras vêm a seguir (vazio = 19)'
         required: false
       inspecionar:
-        description: 'SÓ LER: perguntar ao Multipost que opções ele aceita e o que guardou (não entrega nada)'
+        description: 'SÓ LER: perguntar às 8 redes que opções cada uma aceita, e conferir contra o que mandamos (não entrega nada)'
         type: boolean
         default: false
   # 🔴 RELÓGIO DESLIGADO À NASCENÇA. Liga-se depois da primeira entrega conferida.
@@ -56,6 +71,11 @@ jobs:
   # 🔎 O INSPETOR — só lê. Existe porque a capa do Reel foi mandada durante duas semanas
   # num campo que não existe e **nada se queixou**: este servidor deita fora em silêncio
   # o que não conhece. Em vez de adivinhar, pergunta-se-lhe. Ver `inspecionar()`.
+  #
+  # ♦ Desde 07/08 ele olha as OITO redes e cruza o que mandamos com o que cada uma
+  # aceita: acende a vermelho se mandarmos um campo que ela não conhece (seria deitado
+  # fora em silêncio) ou se faltar um obrigatório. Correr depois de cada atualização do
+  # Multipost — a lista muda com a versão dele.
   inspecionar:
     if: github.event.inputs.inspecionar == 'true'
     runs-on: ubuntu-latest
@@ -157,6 +177,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "Sem mudanças a commitar."
           else
-            git commit -m "chore: short $FILE_SLUG agendado no Instagram [skip ci]"
+            git commit -m "chore: short $FILE_SLUG agendado nas redes [skip ci]"
             bash .github/scripts/empurrar.sh
           fi
