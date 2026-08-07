@@ -23,20 +23,18 @@ Las acciones son una forma de invertir en empresas, permitiéndote ser dueño de
 
 * Las acciones pueden ser de diferentes tipos, como acciones comunes o preferentes
 * Cada acción tiene un [valor](/es/glossario/es-valor-financiero), que puede fluctuar según el desempeño de la empresa
-* Las acciones se pueden comprar y vender en bolsas de valores, como la B3 en Brasil
+* Las acciones se pueden comprar y vender en bolsas de valores, como la bolsa de valores
 
 ![Qué es](/images/glossario/acoes-inline-1.webp)
-
-
 
 Las acciones son una forma popular de invertir, ya que ofrecen la posibilidad de obtener ganancias a largo plazo. Sin embargo, también conllevan riesgos, ya que el valor de las acciones puede disminuir si la empresa no tiene un buen desempeño.
 
 ## Cómo funciona
-Cuando compras una acción, estás comprando una pequeña parte de la empresa. Si la empresa tiene un buen desempeño y sus ganancias aumentan, el valor de tus acciones también puede aumentar. Por ejemplo, si compras 10 acciones de una empresa a R$50 cada una y el valor de la acción aumenta a R$60, puedes vender tus acciones y obtener una ganancia de R$100.
+Cuando compras una acción, estás comprando una pequeña parte de la empresa. Si la empresa tiene un buen desempeño y sus ganancias aumentan, el valor de tus acciones también puede aumentar. Por ejemplo, si compras 10 acciones de una empresa a €9 cada una y el valor de la acción aumenta a €11, puedes vender tus acciones y obtener una ganancia de €18.
 
 **Consejo práctico:** Es importante investigar sobre la empresa antes de comprar acciones, para entender su historial de desempeño y sus perspectivas futuras. Puedes hacer esto leyendo informes financieros y noticias sobre la empresa.
 
-Las acciones también pueden generar [dividendos](/es/glossario/es-dividendos), que son pagos que la empresa hace a sus accionistas como forma de distribuir sus ganancias. Por ejemplo, si tienes 10 acciones de una empresa que paga un dividendo anual de R$5 por acción, recibirás R$50 al año.
+Las acciones también pueden generar [dividendos](/es/glossario/es-dividendos), que son pagos que la empresa hace a sus accionistas como forma de distribuir sus ganancias. Por ejemplo, si tienes 10 acciones de una empresa que paga un dividendo anual de €0,9 por acción, recibirás €9 al año.
 
 ## Ventajas
 Las acciones ofrecen varias ventajas, como:
@@ -49,9 +47,7 @@ Las acciones ofrecen varias ventajas, como:
 
 ![Ventajas](/images/glossario/acoes-inline-3.webp)
 
-
-
-Las acciones también pueden ser una forma de ahorrar para el largo plazo, como para la jubilación o la educación de tus hijos. Por ejemplo, si ahorras R$500 al mes en acciones durante 10 años, podrías tener una buena cantidad de [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) para cuando lo necesites.
+Las acciones también pueden ser una forma de ahorrar para el largo plazo, como para la jubilación o la educación de tus hijos. Por ejemplo, si ahorras €90 al mes en acciones durante 10 años, podrías tener una buena cantidad de [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) para cuando lo necesites.
 
 ## Riesgos
 Las acciones también conllevan riesgos, como:
@@ -64,9 +60,9 @@ Las acciones también conllevan riesgos, como:
 Las acciones también pueden ser afectadas por factores externos, como la economía y la política. Por ejemplo, si hay una recesión económica, el valor de tus acciones puede disminuir.
 
 ## Ejemplos prácticos
-Imagina que tienes un salario de R$5.000 al mes y decides invertir R$1.000 en acciones. Puedes comprar 20 acciones de una empresa a R$50 cada una. Si el valor de la acción aumenta a R$60, puedes vender tus acciones y obtener una ganancia de R$200.
+Imagina que tienes un salario de €900 al mes y decides invertir €180 en acciones. Puedes comprar 20 acciones de una empresa a €9 cada una. Si el valor de la acción aumenta a €11, puedes vender tus acciones y obtener una ganancia de €36.
 
-Otro ejemplo es que tienes un salario de R$8.000 al mes y decides invertir R$2.000 en acciones. Puedes comprar 40 acciones de una empresa a R$50 cada una. Si el valor de la acción aumenta a R$60, puedes vender tus acciones y obtener una ganancia de R$400.
+Otro ejemplo es que tienes un salario de €1 440 al mes y decides invertir €360 en acciones. Puedes comprar 40 acciones de una empresa a €9 cada una. Si el valor de la acción aumenta a €11, puedes vender tus acciones y obtener una ganancia de €72.
 
 ## Cómo empezar
 **Consejo práctico:** Es importante empezar a invertir lo antes posible, para que tu dinero tenga tiempo de crecer. Puedes hacer esto invirtiendo una pequeña cantidad de dinero cada mes, y aumentando la cantidad a medida que te sientas más cómodo.
@@ -75,4 +71,3 @@ Puedes empezar a invertir en acciones a través de una plataforma de inversiones
 
 ## Empieza hoy
 No esperes más para empezar a invertir en acciones. Con una pequeña cantidad de dinero y un poco de paciencia, puedes empezar a construir una fortuna para el futuro. Recuerda que la clave es empezar lo antes posible y ser consistente en tus inversiones. ¡Empieza hoy y comienza a construir el futuro que deseas!
-

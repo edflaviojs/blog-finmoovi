@@ -1,151 +1,678 @@
-[
-  "en-5-practical-steps-to-start-saving-for-black-friday-2026.md",
-  "en-7-alternatives-to-google-sheets-for-finance-updated-guide-20.md",
-  "en-amortization.md",
-  "en-asset-quality.md",
-  "en-bolsa-de-valores.md",
-  "en-budgeting-with-minimum-wage-practical-tips.md",
-  "en-building-a-diversified-portfolio-with-r-500.md",
-  "en-capital-gain.md",
-  "en-cdb-vs-treasury-selic-which-yields-more-in-2026.md",
-  "en-cdb.md",
-  "en-compound-interest.md",
-  "en-corporate-governance.md",
-  "en-difference-between-investing-and-saving.md",
-  "en-digital-envelope-technique-practical-guide-for-2026.md",
-  "en-do-you-also-lose-track-of-where-your-money-went-at-the-end-o.md",
-  "en-do-you-lose-track-of-your-spending-when-traveling-using-diff.md",
-  "en-economic-valentine-s-day.md",
-  "en-etfs-what-they-are-and-how-to-invest-simply-and-profitably.md",
-  "en-fgc-guarantee.md",
-  "en-financial-education-for-children.md",
-  "en-financial-fee.md",
-  "en-financial-goal.md",
-  "en-financial-independence.md",
-  "en-financial-option.md",
-  "en-financial-value.md",
-  "en-hedge.md",
-  "en-how-to-save-at-the-grocery-store-in-2026-real-tips.md",
-  "en-how-to-save-on-a-july-vacation-without-giving-up-the-fun.md",
-  "en-how-to-use-cashback-wisely-and-multiply-your-income.md",
-  "en-how-to-gift-on-father-s-day-without-spending-much-7-budget-f.md",
-  "en-investing-in-dollar-in-brazil.md",
-  "en-investment-fund.md",
-  "en-investments-for-the-second-half-practical-strategies-for-202.md",
-  "en-lc.md",
-  "en-moeda.md",
-  "en-negotiating-discounts-on-fixed-bills.md",
-  "en-net-worth.md",
-  "en-nubank.md",
-  "en-organize-couple-finances.md",
-  "en-organizing-finances-as-a-freelancer.md",
-  "en-overdraft.md",
-  "en-pix-vs-ted-which-one-is-worth-it-in-2026.md",
-  "en-present-value.md",
-  "en-private-pension-2026-is-it-worth-it-practical-guide.md",
-  "en-profit-margin.md",
-  "en-quotes-semana-2-july-2026.md",
-  "en-quotes-semana-3-july-2026.md",
-  "en-reduce-fixed-expenses.md",
-  "en-sac-amortization-table.md",
-  "en-salary-bonus.md",
-  "en-saving-on-your-energy-bill.md",
-  "en-acoes.md",
-  "en-alavancagem.md",
-  "en-credito.md",
-  "en-diversificacao.md",
-  "en-fundos-imobiliarios-for-beginners-complete-guide.md",
-  "en-imposto-de-renda.md",
-  "en-juros.md",
-  "en-p-l-preco-lucro.md",
-  "en-poupanca.md",
-  "en-renda-fixa.md",
-  "es-acoes.md",
-  "es-alavancagem.md",
-  "es-diversificacao.md",
-  "es-imposto-de-renda.md",
-  "es-juros.md",
-  "es-orcamento-com-salario-minimo-dicas-praticas.md",
-  "es-p-l-preco-lucro.md",
-  "es-poupanca.md",
-  "es-renda-fixa.md",
-  "es-tabela-sac-vs-price.md",
-  "en-lci-e-lca.md",
-  "en-tabela-sac-vs-price.md",
-  "en-simple-interest.md",
-  "en-tesouro-direto-for-beginners.md",
-  "en-tesouro-direto.md",
-  "en-tips-for-controlling-credit-card-expenses.md",
-  "en-usura.md",
-  "en-venda-a-descoberto.md",
-  "en-webull.md",
-  "en-xepa-financeira.md",
-  "en-xing-ling.md",
-  "en-yahoo-finance.md",
-  "en-yield.md",
-  "en-z-score.md",
-  "en-zero-coupon.md",
-  "es-5-pasos-practicos-para-empezar-a-ahorrar-para-la-black-frida.md",
-  "es-ahorra-en-las-compras-del-supermercado.md",
-  "es-ahorrando-en-la-cuenta-de-energia.md",
-  "es-amortizacion.md",
-  "es-aplicacion-financiera.md",
-  "en-wall-street.md",
-  "es-7-alternativas-a-la-hoja-de-calculo-de-google-para-finanzas-.md",
-  "es-bolsa-de-valores.md",
-  "es-bono-salarial.md",
-  "es-bull-market-e-bear-market.md",
-  "es-calidad-de-activos.md",
-  "es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026.md",
-  "es-cdb.md",
-  "es-come-cotas.md",
-  "es-como-ahorrar-en-el-supermercado-en-2026-consejos-reales.md",
-  "es-como-ahorrar-en-las-vacaciones-de-julio-sin-renunciar-a-la-d.md",
-  "es-como-reducir-gastos-fijos-mensuales-de-forma-eficaz.md",
-  "es-como-regalar-en-el-dia-del-padre-gastando-poco-7-ideas-que-c.md",
-  "es-como-usar-el-cashback-de-forma-inteligente-y-multiplicar-tus.md",
-  "es-cotizaciones-semana-2-julio-2026.md",
-  "es-credito.md",
-  "es-dia-de-los-enamorados-economico.md",
-  "es-dividend-yield.md",
-  "es-educacion-financiera-para-ninos.md",
-  "es-etfs-que-son-y-como-invertir-de-forma-simple-y-rentable.md",
-  "es-fondo-de-inversion.md",
-  "es-ganancia-de-capital.md",
-  "es-garantia-fgc.md",
-  "es-guia-completa-de-fondos-inmobiliarios-para-principiantes.md",
-  "es-guia-completa-para-principiantes-sobre-tesouro-direto.md",
-  "es-hedge.md",
-  "es-independencia-financiera.md",
-  "es-interes-compuesto.md",
-  "es-interes-simple.md",
-  "es-inversiones-para-el-segundo-semestre-estrategias-practicas-p.md",
-  "es-invertir-en-dolar-en-brasil.md",
-  "es-lc.md",
-  "es-margen-de-ganancia.md",
-  "es-meta-financiera.md",
-  "es-moeda.md",
-  "es-montando-cartera-diversificada-con-r-500.md",
-  "es-negociar-descuentos-en-cuentas-fijas.md",
-  "es-opcion-financiera.md",
-  "es-nubank.md",
-  "es-organizar-finanzas-autonomo.md",
-  "es-organizar-finanzas-pareja.md",
-  "es-patrimonio-neto.md",
-  "es-pix-vs-ted-cual-vale-mas-la-pena-en-2026.md",
-  "es-planeamiento-financiero-para-autonomos.md",
-  "es-prevision-privada-2026-vale-la-pena-guia-practica.md",
-  "es-sobregiro.md",
-  "es-spread-bancario.md",
-  "es-tabla-sac.md",
-  "es-tambien-te-quedas-sin-saber-a-donde-fue-tu-dinero-al-final-d.md",
-  "es-tasa-financiera.md",
-  "es-tecnica-de-los-sobres-digitales-guia-practica-para-2026.md",
-  "es-tesouro-direto.md",
-  "es-usura.md",
-  "es-valor-financiero.md",
-  "es-valor-presente.md",
-  "es-venda-a-descoberto.md",
-  "es-wall-street.md",
-  "es-webull.md"
-]
+{
+  "en-5-practical-steps-to-start-saving-for-black-friday-2026.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-7-alternatives-to-google-sheets-for-finance-updated-guide-20.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-acoes.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-alavancagem.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-amortization.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-asset-quality.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-bolsa-de-valores.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-budgeting-with-minimum-wage-practical-tips.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-building-a-diversified-portfolio-with-r-500.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-capital-gain.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-cdb-vs-treasury-selic-which-yields-more-in-2026.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-cdb.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-compound-interest.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-corporate-governance.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-credito.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-difference-between-investing-and-saving.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-digital-envelope-technique-practical-guide-for-2026.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-diversificacao.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-diversification.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "en-do-you-also-lose-track-of-where-your-money-went-at-the-end-o.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-do-you-lose-track-of-your-spending-when-traveling-using-diff.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-economic-valentine-s-day.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-etfs-what-they-are-and-how-to-invest-simply-and-profitably.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-fgc-guarantee.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-financial-education-for-children.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-financial-fee.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-financial-goal.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-financial-independence.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-financial-option.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-financial-value.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-fundos-imobiliarios-for-beginners-complete-guide.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-hedge.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-how-to-gift-on-father-s-day-without-spending-much-7-budget-f.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-how-to-save-at-the-grocery-store-in-2026-real-tips.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-how-to-save-on-a-july-vacation-without-giving-up-the-fun.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-how-to-use-cashback-wisely-and-multiply-your-income.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-imposto-de-renda.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-interest.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "en-investing-in-dollar-in-brazil.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-investment-fund.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-investments-for-the-second-half-practical-strategies-for-202.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-juros.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-lc.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-lci-e-lca.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-leverage.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "en-moeda.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-negotiating-discounts-on-fixed-bills.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-net-worth.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-nubank.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-organize-couple-finances.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-organizing-finances-as-a-freelancer.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-overdraft.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-p-l-preco-lucro.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-pix-vs-ted-which-one-is-worth-it-in-2026.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-poupanca.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-present-value.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-price-to-earnings-ratio.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "en-private-pension-2026-is-it-worth-it-practical-guide.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-profit-margin.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-quotes-semana-2-july-2026.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-quotes-semana-3-july-2026.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-real-estate-funds-for-beginners-complete-guide.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 1
+  },
+  "en-reduce-fixed-expenses.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-renda-fixa.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-sac-amortization-table.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-salary-bonus.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-saving-on-your-energy-bill.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-simple-interest.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-stocks.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "en-tabela-sac-vs-price.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-tesouro-direto-for-beginners.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-tesouro-direto.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-tips-for-controlling-credit-card-expenses.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-usura.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-venda-a-descoberto.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-wall-street.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-webull.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-xepa-financeira.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-xing-ling.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-yahoo-finance.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-yield.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-z-score.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "en-zero-coupon.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-5-pasos-practicos-para-empezar-a-ahorrar-para-la-black-frida.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-7-alternativas-a-la-hoja-de-calculo-de-google-para-finanzas-.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-acciones.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "es-acoes.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-ahorra-en-las-compras-del-supermercado.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-ahorrando-en-la-cuenta-de-energia.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-ahorro.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "es-alavancagem.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-amortizacion.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-apalancamiento.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "es-aplicacion-financiera.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-bolsa-de-valores.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-bono-salarial.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-bull-market-e-bear-market.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-calidad-de-activos.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-cdb.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-come-cotas.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-como-ahorrar-en-el-supermercado-en-2026-consejos-reales.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-como-ahorrar-en-las-vacaciones-de-julio-sin-renunciar-a-la-d.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-como-reducir-gastos-fijos-mensuales-de-forma-eficaz.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-como-regalar-en-el-dia-del-padre-gastando-poco-7-ideas-que-c.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-como-usar-el-cashback-de-forma-inteligente-y-multiplicar-tus.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-cotizaciones-semana-2-julio-2026.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-credito.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-deuda.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "es-dia-de-los-enamorados-economico.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-diversificacao.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-diversificacion.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "es-dividend-yield.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-educacion-financiera-para-ninos.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-etfs-que-son-y-como-invertir-de-forma-simple-y-rentable.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-fondo-de-inversion.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-ganancia-de-capital.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-garantia-fgc.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-guia-completa-de-fondos-inmobiliarios-para-principiantes.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-guia-completa-para-principiantes-sobre-tesouro-direto.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-hedge.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-imposto-de-renda.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-independencia-financiera.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-interes-compuesto.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-interes-simple.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-interes.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "es-inversiones-para-el-segundo-semestre-estrategias-practicas-p.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-invertir-en-dolar-en-brasil.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-juros.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-lc.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-margen-de-ganancia.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-meta-financiera.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-moeda.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-montando-cartera-diversificada-con-r-500.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-negociar-descuentos-en-cuentas-fijas.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-nubank.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-opcion-financiera.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-orcamento-com-salario-minimo-dicas-praticas.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-organizar-finanzas-autonomo.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-organizar-finanzas-pareja.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-p-l-preco-lucro.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-patrimonio-neto.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-pix-vs-ted-cual-vale-mas-la-pena-en-2026.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-planeamiento-financiero-para-autonomos.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-poupanca.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-presupuesto-con-salario-minimo-consejos-practicos.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "es-prevision-privada-2026-vale-la-pena-guia-practica.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-ratio-precio-beneficio.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "es-renda-fixa.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-renta-fija.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "es-sobregiro.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-spread-bancario.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-tabela-sac-vs-price.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-tabla-sac-vs-price.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "es-tabla-sac.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-tambien-te-quedas-sin-saber-a-donde-fue-tu-dinero-al-final-d.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-tasa-financiera.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-tecnica-de-los-sobres-digitales-guia-practica-para-2026.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-tesouro-direto.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-usura.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-valor-financiero.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-valor-presente.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-venda-a-descoberto.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-wall-street.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-webull.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": null
+  },
+  "es-yahoo-finance.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "es-yield.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "es-z-score.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "es-zero-coupon.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  }
+}

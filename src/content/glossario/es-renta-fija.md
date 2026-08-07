@@ -38,7 +38,7 @@ Esta estructura te permite planificar tus finanzas porque sabes cuánto vas a re
 
 ## Ventajas
 
-Invertir en renta fija tiene varios puntos a favor que la hacen atractiva para la mayoría de los brasileños que buscan seguridad:
+Invertir en renta fija tiene varios puntos a favor que la hacen atractiva para la mayoría de las personas que buscan seguridad:
 
 ![Ventajas](/images/glossario/renda-fixa-inline-3.webp)
 
@@ -62,11 +62,11 @@ Aunque la renta fija es considerada segura, no está exenta de peligros. Es impo
 
 ## Ejemplos prácticos
 
-Supongamos que tu salario está entre R$ 3.000 y R$ 8.000 y decides destinar una parte a renta fija. Aquí tienes tres escenarios típicos:
+Supongamos que tu salario está entre €540 y €1,440 y decides destinar una parte a renta fija. Aquí tienes tres escenarios típicos:
 
-- **Tesouro [Selic](/es/glossario/es-selic) (título del gobierno):** Inviertes R$ 5.000 y recibes un rendimiento anual de 6 % (aprox. R$ 300 al año). Ideal para quien busca liquidez y bajo riesgo.  
-- **CDB de banco grande:** Depositas R$ 10.000 a 100 % del CDI (índice de referencia) y obtienes alrededor de 5 % anual, generando R$ 500 en intereses.  
-- **LCI/LCA (títulos inmobiliarios o del agronegocio):** Con R$ 8.000 obtienes 6,5 % anual y, además, los intereses están exentos de impuesto de renta, lo que eleva la rentabilidad neta a casi R$ 520.  
+- **[bonos del gobierno](/es/glossario/es-selic) (título del gobierno):** Inviertes €900 y recibes un rendimiento anual de 6 % (aprox. €54 al año). Ideal para quien busca liquidez y bajo riesgo.  
+- **Certificado de depósito de banco grande:** Depositas €1,800 a 100 % de la tasa interbancaria y obtienes alrededor de 5 % anual, generando €90 en intereses.  
+- **Bonos bancarios exentos de impuestos (títulos inmobiliarios o del agronegocio):** Con €1,440 obtienes 6,5 % anual y, además, los intereses están exentos de impuesto de renta, lo que eleva la rentabilidad neta a casi €94.  
 
 En cada caso, el flujo de caja es predecible y puedes usar los intereses para cubrir gastos mensuales o reinvertirlos.
 
@@ -76,12 +76,11 @@ Dar el primer paso hacia la renta fija es más fácil de lo que parece. Solo sig
 
 - **Abre una cuenta en una corredora o banco que ofrezca productos de renta fija**; la mayoría permite hacerlo en línea en pocos minutos.  
 - **Define tu objetivo:** ¿Quieres ahorrar para la entrada de una casa, crear un [fondo de emergencia](/es/glossario/es-fondo-de-emergencia) o generar ingresos mensuales?  
-- **Elige el título adecuado:** Según tu horizonte de tiempo y tolerancia al riesgo, selecciona entre Tesouro Selic, CDBs, LCI/LCA o bonos corporativos.  
-- **Programa aportes automáticos:** Configura que un porcentaje de tu sueldo (por ejemplo, R$ 300) se transfiera automáticamente a tu inversión cada mes.  
+- **Elige el título adecuado:** Según tu horizonte de tiempo y tolerancia al riesgo, selecciona entre bonos del gobierno, certificados de depósito, bonos bancarios o bonos corporativos.  
+- **Programa aportes automáticos:** Configura que un porcentaje de tu sueldo (por ejemplo, €54) se transfiera automáticamente a tu inversión cada mes.  
 
 **Consejo práctico:** **Diversifica entre al menos dos tipos de títulos**; así equilibras seguridad y rentabilidad sin complicarte demasiado.
 
 ## Empieza hoy
 
-No esperes a que el próximo mes sea “el momento perfecto”. Con tan solo R$ 200 puedes iniciar tu camino en la renta fija y comenzar a ver crecer tu dinero de forma segura. Abre tu cuenta, elige tu primer título y siente la tranquilidad de saber que cada real está trabajando para ti. ¡Vamos, que el futuro financiero que deseas está a un clic de distancia!
-
+No esperes a que el próximo mes sea “el momento perfecto”. Con tan solo €36 puedes iniciar tu camino en la renta fija y comenzar a ver crecer tu dinero de forma segura. Abre tu cuenta, elige tu primer título y siente la tranquilidad de saber que cada euro está trabajando para ti. ¡Vamos, que el futuro financiero que deseas está a un clic de distancia!

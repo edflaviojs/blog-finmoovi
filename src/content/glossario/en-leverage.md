@@ -14,7 +14,7 @@ publishedAt: 2026-06-13
 Leverage is a fundamental concept in the world of finance that can be both beneficial and dangerous, depending on how it is used. In essence, leverage allows investors to use resources that are not their own to increase the potential return on an [investment](/en/posts/en-building-a-diversified-portfolio-with-r-500). This can be done through loans, lines of [credit](/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026), or other financial instruments.  
 
 ## How Leverage Works  
-Imagine you want to buy a property worth $25,000 (approximately R$ 200,000). You have $6,250 (approximately R$ 50,000) to use as a down payment and can get a loan of $18,750 (approximately R$ 150,000) to cover the rest of the cost. If the property value increases to $31,250 (approximately R$ 250,000), you will have a profit of $6,250 (approximately R$ 50,000), which represents a 100% return on your initial [investment](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide) of $6,250. However, if the property value falls to $18,750 (approximately R$ 150,000), you will have a loss of $6,250 (approximately R$ 50,000), which represents a 100% loss of your initial [investment](/en/posts/en-tesouro-direto-for-beginners).  
+Imagine you want to buy a property worth $25,000 (approximately $40,000). You have $6,250 (approximately $10,000) to use as a down payment and can get a loan of $18,750 (approximately $30,000) to cover the rest of the cost. If the property value increases to $31,250 (approximately $50,000), you will have a profit of $6,250 (approximately $10,000), which represents a 100% return on your initial [investment](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide) of $6,250. However, if the property value falls to $18,750 (approximately $30,000), you will have a loss of $6,250 (approximately $10,000), which represents a 100% loss of your initial [investment](/en/posts/en-tesouro-direto-for-beginners).  
 
 ![Introduction to Leverage](/images/glossario/en-alavancagem-inline-1.webp)  
 
@@ -22,7 +22,7 @@ Imagine you want to buy a property worth $25,000 (approximately R$ 200,000). You
 Let's consider two examples to illustrate how leverage can work in practice:  
 
 - **Example 1: [Stock](/en/glossario/en-stocks) Investment**  
-  You invest $1,250 (approximately R$ 10,000) in stocks and use $2,500 (approximately R$ 20,000) borrowed to buy more stocks. If the stock value increases by 20%, you will have a profit of $750 (approximately R$ 6,000) (20% of $3,750), which represents a 60% return on your initial investment of $1,250.  
+  You invest $1,250 (approximately $2,000) in stocks and use $2,500 (approximately $4,000) borrowed to buy more stocks. If the stock value increases by 20%, you will have a profit of $750 (approximately $1,200) (20% of $3,750), which represents a 60% return on your initial investment of $1,250.  
 
 ![Practical Examples](/images/glossario/en-alavancagem-inline-3.webp)  
 

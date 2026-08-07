@@ -21,11 +21,9 @@ seo:
 ## Qué es
 El término financiero "zero coupon" se refiere a un tipo de bono o título de deuda que no paga intereses periódicos, a diferencia de los bonos tradicionales que pagan cupones (intereses) en intervalos regulares. En su lugar, el zero coupon se vende a un precio descontado respecto de su [valor](/es/glossario/es-valor-financiero) nominal y se redime al valor nominal al vencimiento. Esto significa que el inversionista recibe el interés acumulado en una sola vez, al final del plazo.
 
-El zero coupon es una forma de [inversión](/es/posts/es-montando-cartera-diversificada-con-r-500) a largo plazo que puede ser atractiva para aquellos que buscan una rentabilidad fija y no necesitan ingresos periódicos. Por ejemplo, si compras un zero coupon por R$8.000 con un valor nominal de R$10.000 y un plazo de 5 años, al final de los 5 años recibirás R$10.000, lo que equivale a una rentabilidad del 25% sobre tu inversión inicial.
+El zero coupon es una forma de [inversión](/es/posts/es-montando-cartera-diversificada-con-r-500) a largo plazo que puede ser atractiva para aquellos que buscan una rentabilidad fija y no necesitan ingresos periódicos. Por ejemplo, si compras un zero coupon por €1.440 con un valor nominal de €1.800 y un plazo de 5 años, al final de los 5 años recibirás €1.800, lo que equivale a una rentabilidad del 25% sobre tu inversión inicial.
 
 ![Qué es](/images/glossario/zero-coupon-inline-1.webp)
-
-
 
 ## Cómo funciona
 El funcionamiento de un zero coupon es relativamente simple. El emisor del bono, generalmente un gobierno o una empresa, vende el título a un precio descontado respecto de su valor nominal. El comprador del bono, el inversionista, paga el precio descontado y recibe el valor nominal al vencimiento. El interés se acumula durante el plazo del bono, pero no se paga periódicamente.
@@ -50,12 +48,10 @@ Aunque los zero coupons pueden ser una forma atractiva de inversión, también c
 
 ![Ventajas](/images/glossario/zero-coupon-inline-3.webp)
 
-
-
 ## Ejemplos prácticos
-Para entender mejor cómo funcionan los zero coupons, veamos algunos ejemplos prácticos. Supongamos que tienes un salario de R$5.000 al mes y decides invertir R$10.000 en un zero coupon con un plazo de 3 años y un valor nominal de R$12.000. Al final de los 3 años, recibirás R$12.000, lo que equivale a una rentabilidad del 20% sobre tu inversión inicial.
+Para entender mejor cómo funcionan los zero coupons, veamos algunos ejemplos prácticos. Supongamos que tienes un salario de €900 al mes y decides invertir €1.800 en un zero coupon con un plazo de 3 años y un valor nominal de €2.160. Al final de los 3 años, recibirás €2.160, lo que equivale a una rentabilidad del 20% sobre tu inversión inicial.
 
-Otro ejemplo sería si tienes un salario de R$8.000 al mes y decides invertir R$15.000 en un zero coupon con un plazo de 5 años y un valor nominal de R$20.000. Al final de los 5 años, recibirás R$20.000, lo que equivale a una rentabilidad del 33% sobre tu inversión inicial.
+Otro ejemplo sería si tienes un salario de €1.440 al mes y decides invertir €2.700 en un zero coupon con un plazo de 5 años y un valor nominal de €3.600. Al final de los 5 años, recibirás €3.600, lo que equivale a una rentabilidad del 33% sobre tu inversión inicial.
 
 **Consejo práctico:** Antes de invertir en un zero coupon, es importante considerar tus objetivos financieros y tu tolerancia al riesgo. También es importante investigar sobre el emisor del bono y su historial de pago.
 
@@ -73,4 +69,3 @@ Algunas opciones para empezar a invertir en zero coupons son:
 
 ## Empieza hoy
 No esperes más para empezar a invertir en tu futuro. Con un poco de investigación y planificación, puedes comenzar a construir una cartera de inversiones diversificada y rentable. Recuerda que la clave para el éxito financiero es la disciplina y la paciencia. **Comienza hoy mismo a trabajar hacia tus objetivos financieros**.
-

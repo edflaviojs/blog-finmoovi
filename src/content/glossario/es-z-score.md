@@ -32,7 +32,7 @@ El cálculo del Z‑Score es sencillo: se resta la media (promedio) del valor qu
 
 - Z = (X – μ) / σ  
 
-Donde **X** es el valor que evaluamos (por ejemplo, tu ingreso mensual), **μ** es la media del ingreso de un grupo similar y **σ** es la desviación estándar de esos ingresos. Si tu salario es R$5.000 y la media del sector es R$4.500 con una desviación estándar de R$800, tu Z‑Score será (5.000‑4.500)/800 = 0,625, lo que indica que estás 0,625 desviaciones por encima del promedio.
+Donde **X** es el valor que evaluamos (por ejemplo, tu ingreso mensual), **μ** es la media del ingreso de un grupo similar y **σ** es la desviación estándar de esos ingresos. Si tu salario es €900 y la media del sector es €810 con una desviación estándar de €144, tu Z‑Score será (900‑810)/144 = 0,625, lo que indica que estás 0,625 desviaciones por encima del promedio.
 
 ## Ventajas
 
@@ -60,9 +60,9 @@ Aunque el Z‑Score es útil, también tiene limitaciones que debes considerar:
 
 Veamos cómo el Z‑Score se traduce en decisiones cotidianas usando salarios reales:
 
-- **Caso 1:** María gana R$3.200. La media del sector es R$4.000 y σ = R$600. Su Z‑Score = (3.200‑4.000)/600 = -1,33. Un valor negativo sugiere que está por debajo del promedio, por lo que debería buscar reducir gastos o buscar ingresos extra.  
-- **Caso 2:** João percibe R$7.500. Media = R$5.500, σ = R$900. Z‑Score = (7.500‑5.500)/900 = 2,22. Con un puntaje tan alto, João puede permitirse invertir en un [fondo de emergencia](/es/glossario/es-fondo-de-emergencia) o en una cartera de acciones diversificada.  
-- **Caso 3:** Ana tiene un ingreso de R$5.800 y una deuda mensual de R$2.300. Si la media de deuda en su rango salarial es R$1.800 con σ = R$400, su Z‑Score de deuda = (2.300‑1.800)/400 = 1,25. Un valor positivo indica que su nivel de deuda está por encima del promedio, lo que la invita a renegociar tasas o a priorizar el pago de la deuda.
+- **Caso 1:** María gana €576. La media del sector es €720 y σ = €108. Su Z‑Score = (576‑720)/108 = -1,33. Un valor negativo sugiere que está por debajo del promedio, por lo que debería buscar reducir gastos o buscar ingresos extra.  
+- **Caso 2:** João percibe €1 350. Media = €990, σ = €162. Z‑Score = (1 350‑990)/162 = 2,22. Con un puntaje tan alto, João puede permitirse invertir en un [fondo de emergencia](/es/glossario/es-fondo-de-emergencia) o en una cartera de acciones diversificada.  
+- **Caso 3:** Ana tiene un ingreso de €1 044 y una deuda mensual de €414. Si la media de deuda en su rango salarial es €324 con σ = €72, su Z‑Score de deuda = (414‑324)/72 = 1,25. Un valor positivo indica que su nivel de deuda está por encima del promedio, lo que la invita a renegociar tasas o a priorizar el pago de la deuda.
 
 ## Cómo empezar
 

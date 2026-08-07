@@ -19,7 +19,7 @@ seo:
 ---
 
 ## Qué es
-La diversificación es una estrategia financiera que consiste en distribuir tus inversiones en diferentes activos para reducir el riesgo y aumentar las posibilidades de obtener ganancias a largo plazo. En otras palabras, en lugar de poner todos tus huevos en una sola canasta, los distribuyes en varias canastas para que si una de ellas se cae, las demás puedan amortiguar el impacto. Por ejemplo, si tienes un salario de R$5.000 al mes y decides invertir R$1.000 en acciones, R$500 en bonos y R$500 en una cuenta de [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado), estás diversificando tus inversiones.
+La diversificación es una estrategia financiera que consiste en distribuir tus inversiones en diferentes activos para reducir el riesgo y aumentar las posibilidades de obtener ganancias a largo plazo. En otras palabras, en lugar de poner todos tus huevos en una sola canasta, los distribuyes en varias canastas para que si una de ellas se cae, las demás puedan amortiguar el impacto. Por ejemplo, si tienes un salario de €900 al mes y decides invertir €180 en acciones, €90 en bonos y €90 en una cuenta de [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado), estás diversificando tus inversiones.
 
 * Acciones: son partes de propiedad de empresas que se compran y venden en bolsas de valores
 * Bonos: son deudas emitidas por empresas o gobiernos que se compran y se devuelven con intereses
@@ -27,14 +27,12 @@ La diversificación es una estrategia financiera que consiste en distribuir tus 
 
 ![Qué es](/images/glossario/diversificacao-inline-1.webp)
 
-
-
 La diversificación es importante porque el mercado financiero es impredecible y puede ser afectado por muchos factores, como la [economía](/es/posts/es-5-alternativas-al-mobills-en-2026), la política y los eventos globales. Al distribuir tus inversiones, puedes reducir el riesgo de perder [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado) si uno de los activos se desempeña mal.
 
 ## Cómo funciona
 La diversificación funciona porque diferentes activos tienen diferentes niveles de riesgo y rendimiento. Por ejemplo, las acciones pueden ser más riesgosas que los bonos, pero también pueden ofrecer rendimientos más altos. Al combinar diferentes activos, puedes crear un portafolio que sea más estable y tenga un mejor rendimiento a largo plazo. **Consejo práctico:** es importante investigar y entender los diferentes activos antes de invertir, para asegurarte de que estás tomando decisiones informadas.
 
-Por ejemplo, si tienes un salario de R$6.000 al mes y decides invertir R$1.500 en acciones, R$1.000 en bonos y R$500 en una cuenta de ahorro, estás diversificando tus inversiones. Si las acciones suben de [valor](/es/glossario/es-valor-financiero), puedes obtener ganancias, pero si bajan, los bonos y la cuenta de ahorro pueden ayudar a amortiguar la pérdida.
+Por ejemplo, si tienes un salario de €1080 al mes y decides invertir €270 en acciones, €180 en bonos y €90 en una cuenta de ahorro, estás diversificando tus inversiones. Si las acciones suben de [valor](/es/glossario/es-valor-financiero), puedes obtener ganancias, pero si bajan, los bonos y la cuenta de ahorro pueden ayudar a amortiguar la pérdida.
 
 ## Ventajas
 La diversificación tiene varias ventajas, como:
@@ -42,11 +40,9 @@ La diversificación tiene varias ventajas, como:
 * Aumento del rendimiento: al combinar diferentes activos, puedes crear un portafolio que tenga un mejor rendimiento a largo plazo
 * Flexibilidad: la diversificación te permite adaptarte a cambios en el mercado y ajustar tus inversiones según sea necesario
 
-**Consejo práctico:** es importante revisar y ajustar tus inversiones regularmente, para asegurarte de que siguen alineadas con tus objetivos financieros. Por ejemplo, si tienes un objetivo de ahorrar R$10.000 en un año, puedes ajustar tus inversiones para alcanzar ese objetivo.
+**Consejo práctico:** es importante revisar y ajustar tus inversiones regularmente, para asegurarte de que siguen alineadas con tus objetivos financieros. Por ejemplo, si tienes un objetivo de ahorrar €1800 en un año, puedes ajustar tus inversiones para alcanzar ese objetivo.
 
 ![Ventajas](/images/glossario/diversificacao-inline-3.webp)
-
-
 
 ## Riesgos
 Aunque la diversificación puede reducir el riesgo, no elimina completamente el riesgo de perder dinero. Algunos de los riesgos asociados con la diversificación incluyen:
@@ -58,12 +54,11 @@ Aunque la diversificación puede reducir el riesgo, no elimina completamente el 
 
 ## Ejemplos prácticos
 Aquí hay algunos ejemplos prácticos de cómo la diversificación puede funcionar en la vida real:
-* Un empleado que gana R$4.000 al mes y decide invertir R$1.000 en acciones, R$500 en bonos y R$500 en una cuenta de ahorro
-* Un empresario que gana R$8.000 al mes y decide invertir R$2.000 en acciones, R$1.500 en bonos y R$1.000 en una cuenta de ahorro
-* Un estudiante que gana R$3.000 al mes y decide invertir R$500 en acciones, R$250 en bonos y R$250 en una cuenta de ahorro
+* Un empleado que gana €720 al mes y decide invertir €180 en acciones, €90 en bonos y €90 en una cuenta de ahorro
+* Un empresario que gana €1440 al mes y decide invertir €360 en acciones, €270 en bonos y €180 en una cuenta de ahorro
+* Un estudiante que gana €540 al mes y decide invertir €90 en acciones, €45 en bonos y €45 en una cuenta de ahorro
 
 En cada uno de estos ejemplos, la diversificación puede ayudar a reducir el riesgo y aumentar el rendimiento a largo plazo.
 
 ## Empieza hoy
 No importa cuánto dinero tengas, la diversificación es una estrategia financiera que puede ayudarte a alcanzar tus objetivos. **Consejo práctico:** comienza con pequeñas cantidades y ajusta tus inversiones según sea necesario. Recuerda que la diversificación es un proceso a largo plazo, así que sé paciente y disciplinado. ¡Empieza hoy a diversificar tus inversiones y alcanza tus objetivos financieros!
-

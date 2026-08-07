@@ -59,11 +59,11 @@ Como todo en la vida, la deuda tiene su lado oscuro. Ignorar los riesgos puede l
 
 ## Ejemplos prácticos
 
-Supongamos que tienes un salario mensual neto de R$ 4.500 y decides financiar la compra de un coche de R$ 30.000 con un préstamo a 36 meses al 12 % anual ([interés compuesto](/es/glossario/es-interes-compuesto)). La cuota mensual sería aproximadamente R$ 1.000. Con este gasto, la deuda representa el 22 % de tu ingreso, lo cual sigue siendo manejable.
+Supongamos que tienes un salario mensual neto de € 810 y decides financiar la compra de un coche de € 5 400 con un préstamo a 36 meses al 12 % anual ([interés compuesto](/es/glossario/es-interes-compuesto)). La cuota mensual sería aproximadamente € 180. Con este gasto, la deuda representa el 22 % de tu ingreso, lo cual sigue siendo manejable.
 
-- **Ejemplo 1:** Salario R$ 3.200 – préstamo personal de R$ 5.000 a 24 meses, 15 % anual. Cuota mensual ≈ R$ 250 (≈ 8 % del ingreso).  
-- **Ejemplo 2:** Salario R$ 6.800 – financiación de una laptop de R$ 4.500 a 12 meses, 10 % anual. Cuota mensual ≈ R$ 400 (≈ 6 % del ingreso).  
-- **Ejemplo 3:** Salario R$ 8.000 – tarjeta de crédito con gasto de R$ 2.000 y pago mínimo del 5 % (R$ 100). Si solo pagas el mínimo, la deuda puede tardar años en cerrarse y el costo total supera R$ 3.000 en intereses.
+- **Ejemplo 1:** Salario € 576 – préstamo personal de € 900 a 24 meses, 15 % anual. Cuota mensual ≈ € 45 (≈ 8 % del ingreso).  
+- **Ejemplo 2:** Salario € 1 224 – financiación de una laptop de € 810 a 12 meses, 10 % anual. Cuota mensual ≈ € 72 (≈ 6 % del ingreso).  
+- **Ejemplo 3:** Salario € 1 440 – tarjeta de crédito con gasto de € 360 y pago mínimo del 5 % (€ 18). Si solo pagas el mínimo, la deuda puede tardar años en cerrarse y el costo total supera € 540 en intereses.
 
 ## Cómo empezar
 

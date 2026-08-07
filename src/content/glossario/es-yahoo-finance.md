@@ -20,7 +20,7 @@ seo:
 
 ## Qué es
 
-Yahoo Finance es una plataforma en línea que reúne información bursátil, noticias económicas y herramientas de análisis para cualquier persona que quiera seguir sus inversiones o simplemente entender mejor el mundo del [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia). No necesitas ser un trader profesional para usarla; la página está diseñada para que cualquiera, desde un estudiante hasta un trabajador con salario de R$4.500, pueda consultar cotizaciones de acciones, bonos y divisas, y leer artículos que explican qué está pasando en la [economía](/es/posts/es-5-alternativas-al-mobills-en-2026). En esencia, es como un periódico financiero digital, pero con datos actualizados al minuto y la posibilidad de crear listas personalizadas de tus activos favoritos.
+Yahoo Finance es una plataforma en línea que reúne información bursátil, noticias económicas y herramientas de análisis para cualquier persona que quiera seguir sus inversiones o simplemente entender mejor el mundo del [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia). No necesitas ser un trader profesional para usarla; la página está diseñada para que cualquiera, desde un estudiante hasta un trabajador con salario de €810, pueda consultar cotizaciones de acciones, bonos y divisas, y leer artículos que explican qué está pasando en la [economía](/es/posts/es-5-alternativas-al-mobills-en-2026). En esencia, es como un periódico financiero digital, pero con datos actualizados al minuto y la posibilidad de crear listas personalizadas de tus activos favoritos.
 
 ![Qué es](/images/glossario/yahoo-finance-inline-1.webp)
 
@@ -28,7 +28,7 @@ Yahoo Finance es una plataforma en línea que reúne información bursátil, not
 
 ## Cómo funciona
 
-La herramienta funciona como un agregador de datos: extrae información de bolsas de valores de todo el mundo y la muestra en una interfaz amigable. Cuando ingresas, ves una pantalla principal con los índices más importantes (como el S&P 500 o el Ibovespa) y una barra de búsqueda donde puedes escribir el ticker (código) de la acción que te interese, por ejemplo **PETR4** para Petrobras. Al seleccionar un activo, aparecen datos como el precio actual, la variación diaria, el gráfico de precios y una sección de “Noticias relacionadas”. Además, puedes crear una “watchlist” (lista de seguimiento) para monitorear varios activos a la vez y recibir alertas cuando el precio supera o baja de ciertos niveles.
+La herramienta funciona como un agregador de datos: extrae información de bolsas de valores de todo el mundo y la muestra en una interfaz amigable. Cuando ingresas, ves una pantalla principal con los índices más importantes (como el S&P 500 o el principal índice local) y una barra de búsqueda donde puedes escribir el ticker (código) de la acción que te interese, por ejemplo **XYZ4** para una empresa local. Al seleccionar un activo, aparecen datos como el precio actual, la variación diaria, el gráfico de precios y una sección de “Noticias relacionadas”. Además, puedes crear una “watchlist” (lista de seguimiento) para monitorear varios activos a la vez y recibir alertas cuando el precio supera o baja de ciertos niveles.
 
 - **Búsqueda de ticker:** escribe el código del activo y obtén su cotización al instante.  
 - **Gráficos interactivos:** visualiza la evolución del precio en diferentes periodos (día, mes, año).  
@@ -37,7 +37,7 @@ La herramienta funciona como un agregador de datos: extrae información de bolsa
 
 ## Ventajas
 
-Usar Yahoo Finance tiene varios beneficios que lo hacen atractivo para quien gana entre R$3.000 y R$8.000 y quiere organizar mejor su dinero:
+Usar Yahoo Finance tiene varios beneficios que lo hacen atractivo para quien gana entre €540 y €1 440 y quiere organizar mejor su dinero:
 
 ![Ventajas](/images/glossario/yahoo-finance-inline-3.webp)
 
@@ -60,11 +60,11 @@ Aunque la plataforma es muy útil, también conlleva ciertos riesgos que debes t
 
 ## Ejemplos prácticos
 
-A continuación, algunos escenarios cotidianos que ilustran cómo usar Yahoo Finance para mejorar la gestión de un salario típico en Brasil:
+A continuación, algunos escenarios cotidianos que ilustran cómo usar Yahoo Finance para mejorar la gestión de un salario típico:
 
-- **Ahorro para la jubilación:** Juan gana R$5.000 al mes y decide destinar R$500 a un fondo de pensiones. En Yahoo Finance busca el ticker **BOVA11** (ETF que replica el índice Ibovespa) y observa que ha tenido un rendimiento del 8 % anual. Con esa información, decide invertir sus R$500 mensuales en ese fondo, sabiendo que su dinero crecerá a largo plazo.  
-- **Compra de acciones de una empresa conocida:** María, con un salario de R$7.200, quiere comprar acciones de una compañía de tecnología que le gusta. Busca **AAPL** (Apple) y revisa el gráfico de los últimos 6 meses. Ve que el precio ha subido un 12 % y que la empresa paga [dividendos](/es/glossario/es-dividendos) trimestrales. **Consejo práctico:** **Antes de comprar, verifica la tendencia del precio y la política de dividendos para asegurarte de que la inversión se alinea con tus objetivos.**  
-- **Control de gastos en divisas:** Carlos gana R$3.800 y planea viajar a Estados Unidos. Usa la sección de divisas de Yahoo Finance para seguir el tipo de [cambio](/es/glossario/es-cambio) USD/BRL. Cuando el dólar está a R$5,20, compra la cantidad necesaria y evita sorpresas al pagar en el extranjero. **Consejo práctico:** **Configura una alerta de tipo de cambio para recibir notificaciones cuando la cotización alcance el nivel que consideres favorable.**  
+- **Ahorro para la jubilación:** Juan gana €900 al mes y decide destinar €90 a un fondo de pensiones. En Yahoo Finance busca el ticker **ETFREF** (ETF que replica un índice de referencia) y observa que ha tenido un rendimiento del 8 % anual. Con esa información, decide invertir sus €90 mensuales en ese fondo, sabiendo que su dinero crecerá a largo plazo.  
+- **Compra de acciones de una empresa conocida:** María, con un salario de €1 296, quiere comprar acciones de una compañía de tecnología que le gusta. Busca **AAPL** (Apple) y revisa el gráfico de los últimos 6 meses. Ve que el precio ha subido un 12 % y que la empresa paga [dividendos](/es/glossario/es-dividendos) trimestrales. **Consejo práctico:** **Antes de comprar, verifica la tendencia del precio y la política de dividendos para asegurarte de que la inversión se alinea con tus objetivos.**  
+- **Control de gastos en divisas:** Carlos gana €684 y planea viajar a Estados Unidos. Usa la sección de divisas de Yahoo Finance para seguir el tipo de [cambio](/es/glossario/es-cambio) USD/EUR. Cuando el dólar está a 5,20, compra la cantidad necesaria y evita sorpresas al pagar en el extranjero. **Consejo práctico:** **Configura una alerta de tipo de cambio para recibir notificaciones cuando la cotización alcance el nivel que consideres favorable.**  
 
 ## Cómo empezar
 
@@ -72,11 +72,10 @@ Si aún no has probado Yahoo Finance, sigue estos pasos sencillos para incorpora
 
 - **Crear una cuenta:** ingresa a yahoo.com/finance y regístrate con tu correo electrónico; el proceso lleva menos de dos minutos.  
 - **Definir tus objetivos:** decide si usarás la plataforma para seguimiento de inversiones, ahorro o simplemente para estar informado.  
-- **Construir tu watchlist:** agrega los tickers de los activos que te interesan (por ejemplo, **PETR4**, **VALE3**, **BOVA11**) y organízalos por prioridad.  
+- **Construir tu watchlist:** agrega los tickers de los activos que te interesan (por ejemplo, **AAPL**, **MSFT**, **ETFREF**) y organízalos por prioridad.  
 - **Configurar alertas:** establece notificaciones para precios críticos o cambios en el tipo de cambio que te afecten.  
 - **Explorar la sección de educación:** dedica al menos 15 minutos a leer artículos sobre conceptos básicos como “dividendo” o “rentabilidad”. **Consejo práctico:** **Reserva una hora a la semana para revisar tu watchlist y ajustar tus metas según la información que encuentres.**  
 
 ## Empieza hoy
 
 No esperes a que el próximo mes pase sin tomar el control de tu dinero. Abre Yahoo Finance, crea tu primera lista de seguimiento y empieza a observar cómo pequeñas decisiones informadas pueden marcar una gran diferencia en tu bolsillo. ¡Vamos, que el futuro financiero que deseas está a un clic de distancia!
-

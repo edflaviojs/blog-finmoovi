@@ -14,21 +14,17 @@ publishedAt: 2026-06-09
 The P/L, or Price/Earnings, is an essential tool for investors who want to evaluate the value of a [stock](/en/glossario/en-stocks) in relation to the company's financial performance. It is calculated by dividing the current stock price by the earnings per share of the company. In this article, we will explore how P/L works, how it is calculated, and why it is important for investors.
 
 ## How P/L is Calculated
-The calculation of P/L is relatively simple. You divide the current stock price by the earnings per share of the company. For example, if the price of a stock is $6.50 (approximately R$ 50,00) and the earnings per share is $0.65 (approximately R$ 5,00), the P/L would be 10 (6.50 / 0.65 = 10). This means that investors are paying $10 for every $1 of earnings per share.
+The calculation of P/L is relatively simple. You divide the current stock price by the earnings per share of the company. For example, if the price of a stock is $6.50 (approximately $10) and the earnings per share is $0.65 (approximately $1), the P/L would be 10 (6.50 / 0.65 = 10). This means that investors are paying $10 for every $1 of earnings per share.
 
 ![Introduction to P/L](/images/glossario/en-p-l-preco-lucro-inline-1.webp)
-
-
 
 ## Practical Examples
 Let's consider two examples to better understand how P/L works:
 
-- **Example 1:** A technology company has a stock price of $26 (approximately R$ 200,00) and an earnings per share of $2.60 (approximately R$ 20,00). The P/L would be 10 (26 / 2.60 = 10).
-- **Example 2:** A retail company has a stock price of $10.40 (approximately R$ 80,00) and an earnings per share of $1.04 (approximately R$ 8,00). The P/L would also be 10 (10.40 / 1.04 = 10).
+- **Example 1:** A technology company has a stock price of $26 (approximately $40) and an earnings per share of $2.60 (approximately $4). The P/L would be 10 (26 / 2.60 = 10).
+- **Example 2:** A retail company has a stock price of $10.40 (approximately $16) and an earnings per share of $1.04 (approximately $1.60). The P/L would also be 10 (10.40 / 1.04 = 10).
 
 ![Practical Examples](/images/glossario/en-p-l-preco-lucro-inline-3.webp)
-
-
 
 Although both examples have a P/L of 10, the [investment](/en/posts/en-building-a-diversified-portfolio-with-r-500) choice depends on other factors, such as the sector, company growth, and overall financial health.
 

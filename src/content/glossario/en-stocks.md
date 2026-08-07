@@ -19,9 +19,9 @@ seo:
 ---
 
 ## What it is
-Stocks are a form of investment that allows you to buy a piece of a company. Imagine you own a small clothing store and want to expand your business. You can sell shares of your store to other investors, who then become owners of a part of your company. In return, you receive the money needed to grow your business. Stocks are traded on stock exchanges, such as B3 in Brazil, and their [value](/en/glossario/en-financial-value) can vary according to the company’s performance.
+Stocks are a form of investment that allows you to buy a piece of a company. Imagine you own a small clothing store and want to expand your business. You can sell shares of your store to other investors, who then become owners of a part of your company. In return, you receive the money needed to grow your business. Stocks are traded on stock exchanges, such as the main exchange in many countries, and their [value](/en/glossario/en-financial-value) can vary according to the company’s performance.
 
-Stocks are a long‑term investment, because their price can fluctuate over time. However, if you invest in solid, well‑managed companies, you can achieve significant returns over the years. For example, if you invest R$ 5,000 in shares of a company that pays an annual dividend of 5%, you will receive R$ 250 per year, which is a 5% return on your investment.
+Stocks are a long‑term investment, because their price can fluctuate over time. However, if you invest in solid, well‑managed companies, you can achieve significant returns over the years. For example, if you invest $1,000 in shares of a company that pays an annual dividend of 5%, you will receive $50 per year, which is a 5% return on your investment.
 
 ![What it is](/images/glossario/acoes-inline-1.webp)
 
@@ -56,12 +56,12 @@ However, stocks also involve risks, including:
 **Practical tip:** It’s important to do careful research before investing in stocks. This includes reading annual [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end), analyzing the company’s finances, and understanding the risks and challenges the company faces.
 
 ## Practical examples
-Let’s consider an example. Imagine you earn R$ 5,000 per month and want to invest R$ 1,000 per month in stocks. You could invest in shares of companies like Petrobras, Vale, or Itaú Unibanco. If you invest R$ 1,000 per month in Petrobras shares, for instance, you could achieve an annual return of 10%, meaning you would receive R$ 100 per year in dividends.
+Let’s consider an example. Imagine you earn $1,000 per month and want to invest $200 per month in stocks. You could invest in shares of companies like a large energy firm, a major mining company, or a big bank. If you invest $200 per month in a large energy firm’s shares, for instance, you could achieve an annual return of 10%, meaning you would receive $20 per year in dividends.
 
 Here are some practical tips for investing in stocks:
-* **Start small**: you don’t need a large amount of money to begin investing in stocks. You can start with R$ 100 or R$ 500 and increase your investment over time.
+* **Start small**: you don’t need a large amount of money to begin investing in stocks. You can start with $20 or $100 and increase your investment over time.
 * **Be patient**: stocks are a long‑term investment, so it’s important to be patient and not get swayed by short‑term market fluctuations.
 * **Monitor your investment**: regularly checking your investment is essential to ensure it aligns with your financial goals.
 
 ## Start today
-Now that you understand better how stocks work, it’s time to start investing. **Practical tip:** You can use an investment app, such as Nubank, to begin buying stocks. Nubank offers an easy‑to‑use platform and low transaction fees, making it more accessible for you to start investing. Remember that investing in stocks involves risks, but it also offers growth potential and dividends. So, don’t hesitate to start investing today and achieve your financial goals.
+Now that you understand better how stocks work, it’s time to start investing. **Practical tip:** You can use an investment app, such as a digital bank, to begin buying stocks. A digital bank offers an easy‑to‑use platform and low transaction fees, making it more accessible for you to start investing. Remember that investing in stocks involves risks, but it also offers growth potential and dividends. So, don’t hesitate to start investing today and achieve your financial goals.
