@@ -61,6 +61,5 @@ jobs:
             echo "Sem alteração no monitor de indexação"
           else
             git commit -m "chore: atualizar monitor de indexacao do GSC [bot]"
-            git pull --rebase origin main || true
-            git push
+            bash .github/scripts/empurrar.sh
           fi

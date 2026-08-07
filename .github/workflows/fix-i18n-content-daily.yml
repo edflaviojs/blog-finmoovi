@@ -85,6 +85,5 @@ jobs:
           else
             COUNT=$(git diff --staged --name-only | wc -l)
             git commit -m "fix(i18n): daily batch — adapt ${COUNT} files for international audience"
-            git pull --rebase origin main || true
-            git push
+            bash .github/scripts/empurrar.sh
           fi

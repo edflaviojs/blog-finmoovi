@@ -47,6 +47,5 @@ jobs:
             echo "No changes to commit."
           else
             git commit -m "chore: update syndication and pingback tracking data"
-            git pull --rebase origin main || true
-            git push
+            bash .github/scripts/empurrar.sh
           fi

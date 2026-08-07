@@ -59,8 +59,7 @@ jobs:
           else
             # skip do CI: as imagens não são usadas até a aprovação humana no config
             git commit -m "arte sazonal: candidatos para aprovacao [skip ci]"
-            git pull --rebase origin main || true
-            git push
+            bash .github/scripts/empurrar.sh
             echo "committed=true" >> "$GITHUB_OUTPUT"
           fi
 

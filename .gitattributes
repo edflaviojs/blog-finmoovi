@@ -1,0 +1,10 @@
+# ⚠️ OS SCRIPTS DE SHELL GUARDAM-SE SEMPRE COM FINAL DE LINHA UNIX (07/08/2026).
+#
+# Correm em Linux (runners do GitHub) mas escrevem-se em Windows. Se um `.sh`
+# for guardado com os finais de linha do Windows, o bash lê o `\r` como parte do
+# comando e rebenta com «$'\r': command not found» — sem que o ficheiro pareça
+# ter nada de errado a olho nu.
+#
+# É barato e evita um defeito que, hoje, derrubaria os 55 robôs de uma vez: todos
+# chamam `.github/scripts/empurrar.sh`.
+*.sh text eol=lf

@@ -47,6 +47,5 @@ jobs:
             echo "Sem alteração na fila de keywords"
           else
             git commit -m "chore: sincronizar fila de keywords [bot]"
-            git pull --rebase origin main || true
-            git push
+            bash .github/scripts/empurrar.sh
           fi

@@ -70,6 +70,5 @@ jobs:
             echo "Sem mudanças a guardar."
           else
             git commit -m "chore: medicao de retencao dos shorts [skip ci]"
-            git pull --rebase origin main || true
-            git push
+            bash .github/scripts/empurrar.sh
           fi

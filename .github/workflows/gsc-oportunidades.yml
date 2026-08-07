@@ -52,6 +52,5 @@ jobs:
             echo "Sem alteração nas oportunidades do GSC"
           else
             git commit -m "chore: atualizar digest de oportunidades do GSC [bot]"
-            git pull --rebase origin main || true
-            git push
+            bash .github/scripts/empurrar.sh
           fi

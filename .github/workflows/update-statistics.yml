@@ -51,6 +51,5 @@ jobs:
             echo "Nenhuma alteração nos dados"
           else
             git commit -m "chore: atualizar indicadores financeiros [bot]"
-            git pull --rebase origin main || true
-            git push
+            bash .github/scripts/empurrar.sh
           fi

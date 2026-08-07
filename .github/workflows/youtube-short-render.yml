@@ -240,8 +240,7 @@ jobs:
             echo "Sem mudanças no roteiro (nada a commitar)."
           else
             git commit -m "chore: roteiro do Short $FILE_SLUG [skip ci]"
-            git pull --rebase origin main || true
-            git push
+            bash .github/scripts/empurrar.sh
           fi
 
       # Fallback OFFLINE de voz: instala o Piper + a voz pt-BR (faber-medium) para
@@ -369,8 +368,7 @@ jobs:
             echo "Filas de saída sem mudanças."
           else
             git commit -m "chore: video $FILE_SLUG pronto nas filas de saida [skip ci]"
-            git pull --rebase origin main || true
-            git push
+            bash .github/scripts/empurrar.sh
           fi
 
       - name: Publicar no YouTube (público)
@@ -396,6 +394,5 @@ jobs:
             echo "Sem mudanças no tracking (nada novo publicado)."
           else
             git commit -m "chore: update youtube upload tracking [skip ci]"
-            git pull --rebase origin main || true
-            git push
+            bash .github/scripts/empurrar.sh
           fi

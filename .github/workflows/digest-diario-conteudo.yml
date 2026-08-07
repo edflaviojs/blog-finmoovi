@@ -65,6 +65,5 @@ jobs:
             echo "Sem snapshot novo para commitar"
           else
             git commit -m "chore: snapshot relatorio diario"
-            git pull --rebase origin main || true
-            git push
+            bash .github/scripts/empurrar.sh
           fi

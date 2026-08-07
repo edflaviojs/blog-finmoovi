@@ -44,6 +44,5 @@ jobs:
             echo "Sem mudanças nos dados de tendências."
           else
             git commit -m "chore: atualizar benchmark YouTube tendências [skip ci]"
-            git pull --rebase origin main || true
-            git push
+            bash .github/scripts/empurrar.sh
           fi

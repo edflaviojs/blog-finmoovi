@@ -52,6 +52,5 @@ jobs:
             echo "No changes to commit"
           else
             git commit -m "i18n: sweep de traduções — re-tradução de corpos em idioma errado [auto]"
-            git pull --rebase origin main || true
-            git push
+            bash .github/scripts/empurrar.sh
           fi

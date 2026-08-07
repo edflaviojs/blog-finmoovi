@@ -52,9 +52,4 @@ jobs:
 
       - name: Push changes
         run: |
-          git pull --rebase origin main || true
-          if [ "$(git rev-list --count origin/main..HEAD)" -gt 0 ]; then
-            git push
-          else
-            echo "No changes to push"
-          fi
+          bash .github/scripts/empurrar.sh

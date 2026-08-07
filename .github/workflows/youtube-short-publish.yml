@@ -131,6 +131,5 @@ jobs:
             echo "Sem mudanças a commitar."
           else
             git commit -m "chore: short $FILE_SLUG publicado (horario nobre) [skip ci]"
-            git pull --rebase origin main || true
-            git push
+            bash .github/scripts/empurrar.sh
           fi

@@ -67,6 +67,5 @@ jobs:
             echo "Nenhuma capa regenerada para commitar"
           else
             git commit -m "content(design): regenerar capas do glossario no estilo 3D novo (lote diario)"
-            git pull --rebase origin main || true
-            git push
+            bash .github/scripts/empurrar.sh
           fi

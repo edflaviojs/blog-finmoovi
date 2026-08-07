@@ -52,6 +52,5 @@ jobs:
             echo "Sem mudanças para commitar"
           else
             git commit -m "ai-visibility: relatório mensal $(date -u +%Y-%m)"
-            git pull --rebase origin main || true
-            git push
+            bash .github/scripts/empurrar.sh
           fi

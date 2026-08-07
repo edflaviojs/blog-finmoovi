@@ -89,6 +89,5 @@ jobs:
             echo "Ninguém novo respondido — nada a commitar."
           else
             git commit -m "chore: respostas a comentarios FINMOOVI [skip ci]"
-            git pull --rebase origin main || true
-            git push
+            bash .github/scripts/empurrar.sh
           fi

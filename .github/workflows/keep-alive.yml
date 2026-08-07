@@ -26,5 +26,7 @@ jobs:
           git config user.email "${{ vars.BOT_EMAIL || 'bot@finmoovi.com' }}"
           git add .github/keep-alive.log
           git commit -m "chore: keep-alive ping" || echo "No changes"
-          git pull --rebase origin main || true
-          git push || echo "Nothing to push"
+          # ⚠️ ESTE é o único que engole a falha de propósito: a única função do
+          # keep-alive é tocar no repositório para o GitHub não adormecer os crons.
+          # Um ping perdido não custa nada; derrubar o job por causa dele, sim.
+          bash .github/scripts/empurrar.sh || echo "Nothing to push"

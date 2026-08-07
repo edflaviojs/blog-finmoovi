@@ -252,8 +252,7 @@ jobs:
             echo "Sem temas novos (a fila já tinha o que fazer)."
           else
             git commit -m "chore: temas novos do video longo, vindos dos virais [skip ci]"
-            git pull --rebase origin "${GITHUB_REF_NAME}" || true
-            git push
+            bash .github/scripts/empurrar.sh
           fi
 
       # ── 1. O GUIÃO ────────────────────────────────────────────────────────────
@@ -395,8 +394,7 @@ jobs:
             echo "Sem fotografias novas."
           else
             git commit -m "chore: fotografias do video longo $SLUG [skip ci]"
-            git pull --rebase origin "${GITHUB_REF_NAME}" || true
-            git push
+            bash .github/scripts/empurrar.sh
           fi
 
       # ── 2. A VOZ ─────────────────────────────────────────────────────────────
@@ -541,6 +539,5 @@ jobs:
             echo "Nada de novo no caderno."
           else
             git commit -m "chore: video longo $SLUG agendado [skip ci]"
-            git pull --rebase origin "${GITHUB_REF_NAME}" || true
-            git push
+            bash .github/scripts/empurrar.sh
           fi

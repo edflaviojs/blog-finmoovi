@@ -97,6 +97,5 @@ jobs:
             echo "Nenhum imageAlt novo para commitar"
           else
             git commit -m "content(a11y): gerar imageAlt descritivo das capas via IA de visão"
-            git pull --rebase origin main || true
-            git push
+            bash .github/scripts/empurrar.sh
           fi

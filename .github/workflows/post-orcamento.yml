@@ -71,9 +71,4 @@ jobs:
       - name: Push changes
         if: ${{ !inputs.dry_run }}
         run: |
-          git pull --rebase origin main || true
-          if [ "$(git rev-list --count origin/main..HEAD)" -gt 0 ]; then
-            git push
-          else
-            echo "No changes to push"
-          fi
+          bash .github/scripts/empurrar.sh
