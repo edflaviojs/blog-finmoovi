@@ -1,11 +1,30 @@
 /**
- * MULTIPOST — O SEGUNDO CARTEIRO: o mesmo Short, agora no Instagram (IMPL20 §51).
+ * MULTIPOST — O SEGUNDO CARTEIRO: o mesmo Short, agora nas OITO redes (IMPL20 §51 · IMPL26 §12).
  *
  * ═══ O DESENHO, EM UMA FRASE ═══
  * O vídeo já foi feito de madrugada e já foi entregue ao YouTube ao meio-dia. Este
- * programa vai buscar o MESMO ficheiro, entrega-o ao Multipost e marca a publicação
- * no Instagram para as 19h do Brasil. Não produz nada, não decide nada, não repete
- * trabalho nenhum.
+ * programa vai buscar o MESMO ficheiro, entrega-o ao Multipost UMA vez e marca a
+ * publicação em oito redes, cada uma com o seu texto e a sua hora. Não produz nada,
+ * não decide nada, não repete trabalho nenhum.
+ *
+ * ═══ 07/08/2026 — DE UMA REDE PARA OITO ═══
+ * Até aqui só saía no Instagram. Agora saem também TikTok, Facebook, LinkedIn,
+ * Threads, Telegram, Pinterest e Bluesky. O ficheiro é o mesmo e é enviado UMA vez;
+ * o que muda de rede para rede é o TEXTO, as OPÇÕES e a HORA.
+ *
+ * 🔴 **NÃO É UMA CHAMADA SÓ, E ISSO NÃO É ESCOLHA NOSSA.** A API põe a `date` FORA da
+ * lista de posts — uma data para o pedido inteiro. Numa chamada só, as oito sairiam no
+ * MESMO minuto, que é precisamente o que o dono não quer ("parece robô"). Por isso é
+ * uma chamada por rede, escalonadas 12 a 17 minutos (ver `REDES`).
+ *
+ * 🔴 **O INSTAGRAM É O PRINCIPAL E AS OUTRAS SETE SÃO LUCRO.** Se o Instagram falhar, a
+ * corrida falha. Se qualquer outra falhar, fica um aviso e o dia continua de pé. É a
+ * mesma regra que já valia para a capa e para o Story: o principal nunca paga pelo
+ * acessório.
+ *
+ * 🔴 **O X FICA DE FORA POR ORDEM DO DONO (07/08).** Desde 02/2026 ele cobra US$ 0,20 por
+ * publicação COM LINK, e as daqui têm link. Continua ligado no painel — só não recebe
+ * nada daqui. Publicar à mão pelo site é grátis. Ver IMPL26 §12-F.
  *
  * ═══ POR QUE UM SEGUNDO CARTEIRO E NÃO UM PASSO A MAIS NO PRIMEIRO ═══
  * Decisão do dono (05/08): se este falhar, o YouTube não pode sentir. Um passo
@@ -20,6 +39,18 @@
  * ⚠️ Não existe `external_ref`: evitar duplicados é responsabilidade nossa. Por isso
  *    há um caderno (.github/data/instagram-agendados.json) e a fila só é rasgada
  *    DEPOIS de o agendamento existir.
+ *
+ * ═══ O CADERNO, COM OITO REDES (07/08/2026) ═══
+ * O ficheiro continua a chamar-se `instagram-agendados.json` **de propósito**: o nome
+ * está escrito no workflow, no `git add` e no histórico, e renomeá-lo era arriscar o
+ * robô inteiro para arrumar uma palavra. O que mudou é o que ele guarda por dentro:
+ * agora cada slug tem um campo `redes`, com uma entrada POR REDE.
+ *
+ * 🔑 **E é isso que dá RETOMA.** Se seis redes saírem e uma falhar, correr outra vez
+ * tenta **só a que faltou** — não republica as seis. Antes, o caderno era tudo-ou-nada.
+ * ⚠️ Um registo ANTIGO (sem o campo `redes`) conta como dia fechado e não se toca: era
+ * de quando só havia Instagram, e ir agora publicar as outras sete num vídeo de há uma
+ * semana seria despejar conteúdo velho em sete redes de uma vez.
  * ⚠️ Ao apagar, o servidor responde "erro" mesmo quando apagou. Nunca confiar na
  *    resposta de um apagamento — conferir a agenda.
  *
@@ -59,6 +90,11 @@ const BRASIL_UTC_OFFSET = 3;
 const HORA_BR_PADRAO = 19;
 /** O Instagram corta a legenda aos 2200 caracteres. */
 const MAX_LEGENDA = 2200;
+/**
+ * O endereço do app. É o MESMO que vai na descrição do YouTube e no primeiro
+ * comentário (`lib/primeiro-comentario.js`) — se mudar aqui, tem de mudar lá.
+ */
+const APP_URL = 'https://finmoovi.com';
 
 const args = Object.fromEntries(
   process.argv.slice(2).filter((a) => a.startsWith('--')).map((a) => {
@@ -221,19 +257,26 @@ export function topicosDoRoteiro(roteiro) {
   ].map((t) => t.slice(0, MAX_TOPICO));
 }
 
-export function montarLegenda(roteiro) {
-  const titulo = limpar(roteiro.term || roteiro.keyword || '');
-  const gancho = limpar(roteiro.intro?.frase || '');
-  const topicos = topicosDoRoteiro(roteiro);
-  const tags = [
+/**
+ * As etiquetas do vídeo. Vive à parte desde 07/08 porque as OITO redes as usam — e
+ * escritas à mão em oito sítios, um dia divergiam.
+ */
+export function etiquetasDo(roteiro) {
+  return [...new Set([
     etiquetaDaPalavraChave(roteiro.keyword),
     ETIQUETA_DA_CATEGORIA[roteiro.category] || '',
     '#FinançasPessoais',
     '#EducaçãoFinanceira',
     '#DinheiroNaPrática',
     '#FinMoovi',
-  ].filter(Boolean);
-  const tagsUnicas = [...new Set(tags)];
+  ].filter(Boolean))];
+}
+
+export function montarLegenda(roteiro) {
+  const titulo = limpar(roteiro.term || roteiro.keyword || '');
+  const gancho = limpar(roteiro.intro?.frase || '');
+  const topicos = topicosDoRoteiro(roteiro);
+  const tagsUnicas = etiquetasDo(roteiro);
 
   const linhas = [
     titulo,
@@ -275,6 +318,199 @@ export function legendaEmHtml(legenda) {
 }
 
 // ═══════════════════════════════════════════════════════════════════════════════
+// AS OUTRAS SETE REDES — cada uma com o seu texto (07/08/2026)
+// ═══════════════════════════════════════════════════════════════════════════════
+
+/**
+ * 🔴 A CHAMADA MUDA DE REDE PARA REDE, E ISSO NÃO É ENFEITE.
+ *
+ * O "comenta FINMOOVI" só existe onde há um robô a responder: **Instagram** (a automação
+ * do Multipost manda mensagem privada) e **YouTube** (`src/scripts/youtube/comentarios.js`
+ * responde no próprio comentário, de hora a hora). Nas outras SETE ninguém responde —
+ * pedir lá seria uma promessa que ninguém cumpre. Ver IMPL26 §12-A.
+ *
+ * ⚠️ E o LINK só é clicável em cinco delas. No **Instagram** e no **TikTok** o endereço
+ * escrito na legenda é texto morto: aparece, mas não se toca nele. Por isso nessas duas a
+ * frase manda PROCURAR o nome, que é verdade em qualquer sítio.
+ */
+const CHAMADA_COM_LINK = `👉 O FinMoovi é grátis e abre direto no navegador: ${APP_URL}`;
+const CHAMADA_SEM_LINK = '👉 Quer fazer essa conta com os SEUS números? Procura FinMoovi — é de graça e abre no navegador.';
+
+/**
+ * Corta sem partir palavra ao meio. Devolve o texto tal e qual se já couber.
+ *
+ * ⚠️ A primeira versão comia SEMPRE a última palavra, mesmo quando o corte calhava
+ * exatamente no fim de uma. Apanhado pela prova de mesa: "uma frase de teste aqui" com
+ * 12 devolvia "uma frase" em vez de "uma frase de" — três caracteres deitados fora de
+ * graça, e num Bluesky de 300 isso conta.
+ */
+export function cortarNaPalavra(texto, max) {
+  const t = String(texto || '').trim();
+  if (t.length <= max) return t;
+  const corte = t.slice(0, max);
+  if (/\s/.test(t[max])) return corte.trimEnd();   // o corte calhou no fim de uma palavra
+  const espaco = corte.lastIndexOf(' ');
+  return (espaco > max * 0.5 ? corte.slice(0, espaco) : corte).trim();
+}
+
+/**
+ * ENCAIXA O TEXTO NO LIMITE DAQUELA REDE — e a ordem por que se sacrifica é a que
+ * importa.
+ *
+ * 🔴 **O LINK NUNCA CAI.** No Bluesky cabem 300 caracteres e no Pinterest 500: um corte
+ * cego pelo fim comeria exatamente o endereço, que é a única coisa que aquele post tem
+ * para dar. Por isso os blocos dizem se são dispensáveis, e caem primeiro os que são.
+ * Só depois, e em último caso, se encurta o texto livre (o gancho).
+ *
+ * ⚠️ Porque isto existe: o servidor **corta em silêncio** o que passa do limite dele —
+ * não devolve erro. Um post do Bluesky sem link ficaria publicado e ninguém saberia.
+ */
+export function encaixarNoLimite(blocos, limite) {
+  const lista = (blocos || []).filter((b) => b && String(b.texto || '').trim());
+  const junta = (l) => l.map((b) => String(b.texto).trim()).join('\n\n');
+
+  for (let i = lista.length - 1; i >= 0 && junta(lista).length > limite; i--) {
+    if (!lista[i].essencial) lista.splice(i, 1);
+  }
+  if (junta(lista).length <= limite) return junta(lista);
+
+  // Só sobraram os essenciais e ainda não cabe: encurta o PRIMEIRO, que é o texto livre.
+  const [primeiro, ...resto] = lista;
+  const espacoDoResto = resto.length ? junta(resto).length + 2 : 0;
+  const espaco = limite - espacoDoResto - 1;
+  if (espaco < 20) return `${cortarNaPalavra(junta(lista), limite - 1)}…`;
+  return junta([{ texto: `${cortarNaPalavra(primeiro.texto, espaco)}…` }, ...resto]);
+}
+
+const tituloEGancho = (roteiro) => ({
+  titulo: limpar(roteiro.term || roteiro.keyword || ''),
+  gancho: limpar(roteiro.intro?.frase || ''),
+});
+
+/** TikTok — sem link clicável, e as etiquetas contam muito. */
+export function legendaTikTok(roteiro, limite) {
+  const { titulo, gancho } = tituloEGancho(roteiro);
+  return encaixarNoLimite([
+    { texto: gancho || titulo, essencial: true },
+    { texto: CHAMADA_SEM_LINK, essencial: true },
+    { texto: etiquetasDo(roteiro).join(' ') },
+  ], limite);
+}
+
+/**
+ * Facebook e LinkedIn — os dois de texto mais formal, e os dois com link clicável.
+ * ⚠️ Sem "comenta FINMOOVI": o Facebook até PERMITE responder a comentário pela Meta,
+ * mas o Multipost não oferece essa automação (só a do Instagram). Ver IMPL26 §12-A.
+ */
+export function legendaFormal(roteiro, limite) {
+  const { titulo, gancho } = tituloEGancho(roteiro);
+  const topicos = topicosDoRoteiro(roteiro);
+  return encaixarNoLimite([
+    { texto: titulo, essencial: true },
+    { texto: gancho },
+    { texto: ['O que você vai ver neste vídeo:', ...topicos.map((t) => `• ${t}`)].join('\n') },
+    { texto: CHAMADA_COM_LINK, essencial: true },
+    { texto: etiquetasDo(roteiro).join(' ') },
+  ], limite);
+}
+
+/**
+ * Telegram — é o único canal que vira audiência PRÓPRIA (o público é uma lista, não um
+ * algoritmo), e o link é clicável. Por isso leva o vídeo, os tópicos e o endereço.
+ */
+export function legendaTelegram(roteiro, limite) {
+  const { titulo, gancho } = tituloEGancho(roteiro);
+  const topicos = topicosDoRoteiro(roteiro);
+  return encaixarNoLimite([
+    { texto: titulo, essencial: true },
+    { texto: gancho },
+    { texto: topicos.map((t) => `• ${t}`).join('\n') },
+    { texto: CHAMADA_COM_LINK, essencial: true },
+  ], limite);
+}
+
+/** Threads — 500 caracteres. Curto por obrigação, não por escolha. */
+export function legendaThreads(roteiro, limite) {
+  const { titulo, gancho } = tituloEGancho(roteiro);
+  return encaixarNoLimite([
+    { texto: gancho || titulo, essencial: true },
+    { texto: `O FinMoovi faz essa conta de graça: ${APP_URL}`, essencial: true },
+  ], limite);
+}
+
+/** Pinterest — 500 na descrição; o título e o link vão nas OPÇÕES, não aqui. */
+export function legendaPinterest(roteiro, limite) {
+  const { titulo, gancho } = tituloEGancho(roteiro);
+  return encaixarNoLimite([
+    { texto: gancho || titulo, essencial: true },
+    { texto: `O FinMoovi é grátis e abre no navegador: ${APP_URL}`, essencial: true },
+    { texto: etiquetasDo(roteiro).slice(0, 3).join(' ') },
+  ], limite);
+}
+
+/**
+ * Bluesky — 300 caracteres e SEM VÍDEO (defeito do programa, diagnóstico FECHADO em
+ * 07/08: IMPL26 §10-B). Vai a capa, o gancho e o link, que aqui é clicável.
+ */
+export function legendaBluesky(roteiro, limite) {
+  const { titulo, gancho } = tituloEGancho(roteiro);
+  return encaixarNoLimite([
+    { texto: gancho || titulo, essencial: true },
+    { texto: APP_URL, essencial: true },
+  ], limite);
+}
+
+/**
+ * ⚠️ O TÍTULO DO TIKTOK E DO PINTEREST É UM CAMPO À PARTE, com limite próprio, e o
+ * servidor **corta em silêncio** o que passa.
+ */
+export const MAX_TITULO_TIKTOK = 90;
+export const MAX_TITULO_PINTEREST = 95;
+
+/**
+ * ═══ A TABELA DAS OITO REDES ═══
+ *
+ * A ORDEM É O RELÓGIO. O Instagram é o zero (as 19h do Brasil) e as outras saem a
+ * seguir, com intervalos DESIGUAIS — 12, 14, 17, 15, 16, 17, 16 minutos. Desiguais de
+ * propósito: oito posts de quinze em quinze minutos certinhos é a assinatura de um robô.
+ * A última sai às 20h47, ainda dentro do horário nobre do Brasil.
+ *
+ * `midia` diz o que vai anexado, e cada valor tem uma razão medida em 07/08:
+ *   · 'video'      — o normal
+ *   · 'video+capa' — só o Pinterest, e **o VÍDEO TEM DE IR PRIMEIRO**. Com a capa em 1º
+ *                    ficou preso na fila; com o vídeo em 1º publicou. A ordem é a regra.
+ *   · 'capa'       — só o Bluesky, que não publica vídeo (defeito do programa, fechado).
+ *
+ * 🔴 O `limite` aqui é só a REDE DE SEGURANÇA: o número verdadeiro é perguntado ao
+ * servidor a cada corrida (`maxLength` em `/integration-settings/{id}`). Se ele mudar de
+ * versão e apertar um limite, o robô segue o dele — não o que está escrito aqui.
+ */
+export const REDES = [
+  { id: 'instagram', nome: 'Instagram', minutos: 0, limite: 2200, midia: 'video', legenda: montarLegenda },
+  { id: 'tiktok', nome: 'TikTok', minutos: 12, limite: 2000, midia: 'video', legenda: legendaTikTok },
+  { id: 'facebook', nome: 'Facebook', minutos: 26, limite: 63206, midia: 'video', legenda: legendaFormal },
+  { id: 'linkedin-page', nome: 'LinkedIn', minutos: 43, limite: 3000, midia: 'video', legenda: legendaFormal },
+  { id: 'threads', nome: 'Threads', minutos: 58, limite: 500, midia: 'video', legenda: legendaThreads },
+  { id: 'telegram', nome: 'Telegram', minutos: 74, limite: 4096, midia: 'video', legenda: legendaTelegram },
+  { id: 'pinterest', nome: 'Pinterest', minutos: 91, limite: 500, midia: 'video+capa', legenda: legendaPinterest },
+  { id: 'bluesky', nome: 'Bluesky', minutos: 107, limite: 300, midia: 'capa', legenda: legendaBluesky },
+];
+
+/**
+ * 🔴 O X NÃO ESTÁ NA TABELA, E É PRECISO QUE SE VEJA PORQUÊ.
+ *
+ * Ele continua LIGADO no Multipost — não foi desconectado. Só não recebe nada daqui.
+ * Desde 02/2026 o X cobra **US$ 0,015 por publicação e US$ 0,20 se ela tiver LINK**, e as
+ * daqui têm link: ~US$ 6/mês só para o dono. Decisão dele em 07/08: fica de fora.
+ * 🔑 Publicar à mão pelo site continua GRÁTIS — o que se paga é a API. Ver IMPL26 §12-F.
+ *
+ * ⚠️ Isto é uma LISTA DE CONVIDADOS, não uma lista de excluídos: só entra quem está em
+ * `REDES`. Se um dia aparecer um canal novo no painel, ele não começa a receber vídeos
+ * sozinho — alguém tem de o escrever aqui. É o lado seguro.
+ */
+export const REDE_DE_FORA = { x: 'cobra US$ 0,20 por post com link (decisão do dono, 07/08)' };
+
+// ═══════════════════════════════════════════════════════════════════════════════
 // O caderno — o que já foi agendado, para nunca agendar duas vezes
 // ═══════════════════════════════════════════════════════════════════════════════
 
@@ -291,6 +527,29 @@ function lerCaderno() {
 function gravarCaderno(d) {
   mkdirSync(dirname(CADERNO), { recursive: true });
   writeFileSync(CADERNO, `${JSON.stringify(d, null, 2)}\n`, 'utf-8');
+}
+
+/**
+ * O QUE JÁ SAIU DESTE VÍDEO, E O QUE AINDA FALTA.
+ *
+ * 🔑 É isto que dá RETOMA. Antes o caderno era tudo-ou-nada: bastava existir uma entrada
+ * para o robô recusar o slug para sempre. Com oito redes isso seria mau — bastava o
+ * Bluesky falhar para as outras sete ficarem impossíveis de repetir, ou (pior) para
+ * tudo ser republicado numa tentativa de arranjar uma.
+ *
+ * ⚠️ **UM REGISTO ANTIGO (sem `redes`) É DIA FECHADO.** Ele é de quando só havia
+ * Instagram. Tratá-lo como "faltam sete" mandaria um vídeo de há uma semana para sete
+ * redes de uma vez, no mesmo minuto — exatamente o que a tabela de horários evita.
+ */
+export function oQueFalta(registoDoSlug, redes = REDES) {
+  const ids = redes.map((r) => r.id);
+  if (!registoDoSlug) return { antigo: false, feitas: [], faltam: ids };
+  if (!registoDoSlug.redes) return { antigo: true, feitas: [], faltam: [] };
+  return {
+    antigo: false,
+    feitas: ids.filter((id) => registoDoSlug.redes[id]),
+    faltam: ids.filter((id) => !registoDoSlug.redes[id]),
+  };
 }
 
 // ═══════════════════════════════════════════════════════════════════════════════
@@ -319,16 +578,70 @@ function chave() {
  * editar não a move. E criar exige `replyMessage` no SINGULAR: com o plural, o
  * servidor cria só o gatilho e a automação fica muda, sem se queixar.
  */
-async function canalDoInstagram(k) {
+async function listarCanais(k) {
   const res = await fetch(`${API}/integrations`, { headers: { Authorization: k } });
   if (!res.ok) throw new Error(`Não consegui listar os canais (${res.status}): ${(await res.text()).slice(0, 200)}`);
   const canais = await res.json();
-  const insta = (Array.isArray(canais) ? canais : []).filter((c) => c.identifier === 'instagram' && !c.disabled);
-  if (!insta.length) {
+  return Array.isArray(canais) ? canais.filter((c) => c && !c.disabled) : [];
+}
+
+/** O canal de uma rede, ou `null` se ela não estiver ligada (isso é aviso, não falha). */
+export function canalDaRede(canais, rede, registar = () => {}) {
+  const meus = (canais || []).filter((c) => c.identifier === rede.id);
+  if (!meus.length) return null;
+  if (meus.length > 1) registar(`⚠️ há ${meus.length} contas de ${rede.nome} ligadas — a usar a primeira: ${meus[0].name}`);
+  return meus[0];
+}
+
+async function canalDoInstagram(k) {
+  const canais = await listarCanais(k);
+  const insta = canalDaRede(canais, { id: 'instagram', nome: 'Instagram' }, log);
+  if (!insta) {
     throw new Error('Não há nenhum canal de Instagram ligado e ativo no Multipost. Ligue-o no painel antes de correr isto.');
   }
-  if (insta.length > 1) log(`⚠️ há ${insta.length} contas de Instagram ligadas — a usar a primeira: ${insta[0].name}`);
-  return insta[0];
+  return insta;
+}
+
+/**
+ * O LIMITE DE TEXTO DAQUELA REDE, PERGUNTADO AO SERVIDOR.
+ *
+ * ⚠️ **Porque não basta o número escrito na tabela:** o servidor **corta em silêncio** o
+ * que passa do limite dele — não devolve erro nenhum. Um Bluesky sem o link ficaria
+ * publicado e ninguém saberia. E o limite muda com a versão do Multipost.
+ * Se a pergunta falhar, vale a rede de segurança da tabela: uma indisponibilidade a ler
+ * um número não pode impedir a publicação do dia.
+ */
+async function limiteDaRede(k, canalId, rede) {
+  try {
+    const res = await fetch(`${API}/integration-settings/${encodeURIComponent(canalId)}`, { headers: { Authorization: k } });
+    if (!res.ok) return rede.limite;
+    const j = await res.json();
+    const n = Number(j?.output?.maxLength);
+    return Number.isFinite(n) && n > 0 ? n : rede.limite;
+  } catch {
+    return rede.limite;
+  }
+}
+
+/**
+ * O QUADRO DO PINTEREST — perguntado, nunca escrito no código.
+ *
+ * O `board` é obrigatório e o número dele muda se a conta for reconectada. É a mesma
+ * bomba-relógio do identificador do canal, que já rebentou uma vez neste projeto (05/08,
+ * na mesma noite em que ficou escrito que rebentaria). Em 07/08 havia um quadro só:
+ * "Finanças Pessoais". Se um dia houver mais, usa-se o primeiro e diz-se no registo.
+ */
+async function quadroDoPinterest(k, canalId) {
+  const res = await fetch(`${API}/integration-trigger/${encodeURIComponent(canalId)}`, {
+    method: 'POST',
+    headers: { Authorization: k, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ methodName: 'boards', data: {} }),
+  });
+  if (!res.ok) throw new Error(`não deu para perguntar os quadros do Pinterest (${res.status})`);
+  const quadros = (await res.json())?.output || [];
+  if (!quadros.length) throw new Error('a conta do Pinterest não tem nenhum quadro — crie um no painel deles');
+  if (quadros.length > 1) log(`   ⚠️ há ${quadros.length} quadros no Pinterest — a usar o primeiro: "${quadros[0].name}"`);
+  return quadros[0];
 }
 
 async function enviarFicheiro(k, caminho, nome, tipo = 'video/mp4') {
@@ -384,8 +697,16 @@ export function capaParaOInstagram(capa, registar = () => {}) {
  * (`src/scripts/validacao/validar-multipost.js`). Antes vivia dentro do envio, e por
  * isso a única forma de o ver era publicar.
  */
-export function corpoDoAgendamento({ canalId, media, capa, legenda, quandoUTC }, registar = () => {}) {
-  const cover = capaParaOInstagram(capa, registar);
+/**
+ * O ENVELOPE — a parte do pedido que é igual em todas as redes.
+ *
+ * ⚠️ **A `date` fica AQUI FORA, e é isso que obriga a uma chamada por rede.** Ela vale
+ * para o pedido inteiro, não por post: pôr as oito na mesma chamada fá-las-ia sair todas
+ * no mesmo minuto. Está medido no contrato do servidor (`/api/docs-json`).
+ *
+ * `midias` é uma LISTA porque o Pinterest precisa de duas — e **na ordem certa**.
+ */
+export function montarPedido({ canalId, midias, legenda, quandoUTC, settings }) {
   return {
     type: 'schedule',
     date: quandoUTC.toISOString(),
@@ -393,32 +714,46 @@ export function corpoDoAgendamento({ canalId, media, capa, legenda, quandoUTC },
     tags: [],
     posts: [{
       integration: { id: canalId },
-      value: [{ content: legendaEmHtml(legenda), image: [{ id: media.id, path: media.path }] }],
-      /**
-       * ♦ 06/08/2026 — O REEL DE TESTE, POR ORDEM DO DONO.
-       *
-       * O Instagram mostra o Reel **primeiro só a quem NÃO segue o perfil**; se os
-       * números forem bons, ele "gradua" e passa também aos seguidores. Para um canal a
-       * começar, quem interessa alcançar é exatamente quem ainda não segue.
-       *
-       * ⚠️ **A graduação é AUTOMÁTICA (`SS_PERFORMANCE`) e não é detalhe.** Na outra
-       * opção (`MANUAL`) é preciso alguém carregar num botão para o vídeo chegar aos
-       * seguidores — e uma regra que depende de alguém se lembrar não é uma regra. Ficaria
-       * um Reel por semana preso, sem ninguém dar por nada.
-       *
-       * ⚠️ E o Instagram **não deixa ter convidados (`collaborators`) num Reel de teste**.
-       * Hoje não usamos convidados; no dia em que houver uma parceria, é preciso escolher.
-       */
-      settings: {
-        __type: 'instagram',
-        post_type: 'post',
-        is_trial_reel: true,
-        graduation_strategy: 'SS_PERFORMANCE',
-        // ⚠️ A capa só entra quando existe E está inteira — ver `capaParaOInstagram`.
-        ...(cover ? { cover } : {}),
-      },
+      value: [{
+        content: legendaEmHtml(legenda),
+        image: (midias || []).filter(Boolean).map((m) => ({ id: m.id, path: m.path })),
+      }],
+      settings,
     }],
   };
+}
+
+/**
+ * ♦ 06/08/2026 — O REEL DE TESTE, POR ORDEM DO DONO.
+ *
+ * O Instagram mostra o Reel **primeiro só a quem NÃO segue o perfil**; se os números
+ * forem bons, ele "gradua" e passa também aos seguidores. Para um canal a começar, quem
+ * interessa alcançar é exatamente quem ainda não segue.
+ *
+ * ⚠️ **A graduação é AUTOMÁTICA (`SS_PERFORMANCE`) e não é detalhe.** Na outra opção
+ * (`MANUAL`) é preciso alguém carregar num botão para o vídeo chegar aos seguidores — e
+ * uma regra que depende de alguém se lembrar não é uma regra. Ficaria um Reel por semana
+ * preso, sem ninguém dar por nada.
+ *
+ * ⚠️ E o Instagram **não deixa ter convidados (`collaborators`) num Reel de teste**. Hoje
+ * não usamos convidados; no dia em que houver uma parceria, é preciso escolher.
+ */
+export function corpoDoAgendamento({ canalId, media, capa, legenda, quandoUTC }, registar = () => {}) {
+  const cover = capaParaOInstagram(capa, registar);
+  return montarPedido({
+    canalId,
+    midias: [media],
+    legenda,
+    quandoUTC,
+    settings: {
+      __type: 'instagram',
+      post_type: 'post',
+      is_trial_reel: true,
+      graduation_strategy: 'SS_PERFORMANCE',
+      // ⚠️ A capa só entra quando existe E está inteira — ver `capaParaOInstagram`.
+      ...(cover ? { cover } : {}),
+    },
+  });
 }
 
 /**
@@ -443,19 +778,106 @@ export function corpoDoAgendamento({ canalId, media, capa, legenda, quandoUTC },
  * Reel. Um segundo envio de 25 MB por dia, para nada.
  */
 export function corpoDoStory({ canalId, media, legenda, quandoUTC }) {
-  return {
-    type: 'schedule',
-    date: quandoUTC.toISOString(),
-    shortLink: false,
-    tags: [],
-    posts: [{
-      integration: { id: canalId },
-      value: [{ content: legendaEmHtml(legenda), image: [{ id: media.id, path: media.path }] }],
-      // ⚠️ Um Story não leva Reel de teste nem capa — são coisas do Reel. E convidados
-      // o Instagram também não aceita em Stories.
-      settings: { __type: 'instagram', post_type: 'story' },
-    }],
-  };
+  return montarPedido({
+    canalId,
+    midias: [media],
+    legenda,
+    quandoUTC,
+    // ⚠️ Um Story não leva Reel de teste nem capa — são coisas do Reel. E convidados
+    // o Instagram também não aceita em Stories.
+    settings: { __type: 'instagram', post_type: 'story' },
+  });
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// AS OPÇÕES DE CADA UMA DAS OUTRAS SETE (07/08/2026)
+// ═══════════════════════════════════════════════════════════════════════════════
+
+/**
+ * As opções que cada rede recebe. **Todas foram perguntadas ao servidor** com
+ * `--inspecionar` em 07/08 — nenhuma foi deduzida do código-fonte público do Postiz,
+ * que é outra versão. Essa lição custou duas respostas erradas em 06/08.
+ *
+ * O que o servidor respondeu que EXIGE:
+ *   · TikTok    — privacy_level, duet, stitch, comment, autoAddMusic, brand_content_toggle,
+ *                 brand_organic_toggle, content_posting_method (oito campos obrigatórios)
+ *   · Pinterest — board (e aceita title, link, dominant_color)
+ *   · Instagram — post_type
+ *   · os outros — nada obrigatório
+ */
+export function opcoesDaRede(rede, { titulo, quadroDoPinterest } = {}) {
+  switch (rede.id) {
+    case 'tiktok':
+      /**
+       * 🔴 `SELF_ONLY` ENQUANTO A AUDITORIA NÃO SAIR, e não é excesso de zelo: enquanto o
+       * app não for aprovado, o TikTok RECUSA a publicação que não seja privada — e ainda
+       * exige que **a própria conta** esteja privada no momento em que ela sai. Foi essa a
+       * segunda parede de 07/08 (IMPL26 §3).
+       *
+       * ⚠️ `brand_content_toggle` TEM de ficar desligado: ligado + privado = recusa. Medido.
+       * ⚠️ `video_made_with_ai: true` porque a VOZ é sintetizada e o roteiro é escrito por
+       *    IA. Declarar é o lado seguro — ainda mais com o app em auditoria — e enquanto os
+       *    vídeos nascem privados não custa alcance nenhum.
+       * ⚠️ `content_posting_method: DIRECT_POST` — em "UPLOAD" fica um rascunho à espera de
+       *    alguém pegar no telemóvel, que para um robô é o mesmo que não publicar.
+       */
+      return {
+        __type: 'tiktok',
+        title: cortarNaPalavra(titulo || '', MAX_TITULO_TIKTOK),
+        privacy_level: 'SELF_ONLY',
+        duet: false,
+        stitch: false,
+        comment: true,
+        autoAddMusic: 'no',
+        brand_content_toggle: false,
+        brand_organic_toggle: false,
+        video_made_with_ai: true,
+        content_posting_method: 'DIRECT_POST',
+      };
+    case 'pinterest':
+      /**
+       * ⚠️ O `board` é OBRIGATÓRIO e o número dele **muda se a conta for reconectada** —
+       * a mesma bomba-relógio do identificador do canal, que já rebentou uma vez. Por isso
+       * ele é PERGUNTADO ao servidor a cada corrida (ver `quadroDoPinterest`), nunca escrito
+       * aqui.
+       */
+      return {
+        __type: 'pinterest',
+        board: quadroDoPinterest,
+        title: cortarNaPalavra(titulo || '', MAX_TITULO_PINTEREST),
+        link: APP_URL,
+      };
+    case 'facebook':
+      return { __type: 'facebook', post_type: 'post' };
+    default:
+      // LinkedIn, Threads, Telegram e Bluesky não exigem nada. O `__type` continua a ir,
+      // porque é por ele que o servidor sabe a que provedor aquelas opções pertencem.
+      return { __type: rede.id };
+  }
+}
+
+/**
+ * O que vai anexado, na ORDEM que cada rede exige. Devolve também o motivo quando não dá
+ * para publicar — um robô que salta uma rede tem de dizer sempre porquê.
+ *
+ * 🔴 **PINTEREST: O VÍDEO PRIMEIRO, A CAPA DEPOIS.** O aviso deles diz que um vídeo exige
+ * uma segunda mídia de capa; o que eles NÃO dizem é que a ordem conta. Medido em 07/08:
+ * com a capa em 1º ficou preso na fila para sempre; com o vídeo em 1º, publicou.
+ *
+ * 🔴 **BLUESKY NÃO LEVA VÍDEO.** Não é falta de tentativa: quatro provas em 07/08 mostram
+ * que o download funciona, a rede funciona e a conta funciona — o defeito está no código
+ * do Multipost (`bluesky.provider.ts:97`). Diagnóstico FECHADO, não repetir. Vai a capa.
+ */
+export function midiasDaRede(rede, { media, capa }) {
+  if (rede.midia === 'video+capa') {
+    if (!capa) return { midias: null, motivo: 'o Pinterest exige uma capa junto do vídeo, e hoje não veio capa no artefato' };
+    return { midias: [media, capa], motivo: 'vídeo primeiro, capa depois — a ordem que o Pinterest exige' };
+  }
+  if (rede.midia === 'capa') {
+    if (!capa) return { midias: [], motivo: 'sem capa; vai só o texto com o link, que é o que o Bluesky aceita' };
+    return { midias: [capa], motivo: 'vai a capa, porque o Bluesky não publica vídeo (defeito do programa, IMPL26 §10-B)' };
+  }
+  return { midias: [media], motivo: 'o vídeo' };
 }
 
 /**
@@ -572,22 +994,53 @@ async function confirmarNaAgenda(k, postId, quandoUTC) {
  */
 async function inspecionar() {
   const k = chave();
-  const canal = await canalDoInstagram(k);
-  log(`\n📱 canal: ${canal.name}  (${canal.identifier})  id=${canal.id}\n`);
+  const canais = await listarCanais(k);
+  log(`\n🔌 ${canais.length} canais ligados e ativos:\n`);
+  for (const c of canais) {
+    const naTabela = REDES.find((r) => r.id === c.identifier);
+    const nota = naTabela ? `recebe o vídeo às ${naTabela.minutos} min do Reel` : (REDE_DE_FORA[c.identifier] ? `NÃO recebe: ${REDE_DE_FORA[c.identifier]}` : 'NÃO está na tabela — não recebe nada');
+    log(`  · ${String(c.identifier).padEnd(14)} "${c.name}"  ${nota}`);
+  }
 
-  log('── AS OPÇÕES QUE ESTE SERVIDOR ACEITA PARA O INSTAGRAM ──');
-  const r = await fetch(`${API}/integration-settings/${encodeURIComponent(canal.id)}`, { headers: { Authorization: k } });
-  const t = await r.text();
-  if (!r.ok) log(`⚠️ não deu para perguntar (${r.status}): ${t.slice(0, 300)}`);
-  else {
+  /**
+   * ⚠️ PERGUNTA-SE A TODAS, e não só ao Instagram. Foi a olhar para uma rede só que se
+   * passou duas semanas a mandar a capa num campo que não existia — este servidor deita
+   * fora em SILÊNCIO o que não conhece.
+   */
+  for (const rede of REDES) {
+    const canal = canalDaRede(canais, rede);
+    log(`\n${'─'.repeat(72)}`);
+    if (!canal) { log(`📡 ${rede.nome}: ⚠️ NÃO ESTÁ LIGADO — este vídeo não sairia lá.`); continue; }
+    log(`📡 ${rede.nome}  (${canal.identifier})  id=${canal.id}`);
+    const r = await fetch(`${API}/integration-settings/${encodeURIComponent(canal.id)}`, { headers: { Authorization: k } });
+    const t = await r.text();
+    if (!r.ok) { log(`   ⚠️ não deu para perguntar (${r.status}): ${t.slice(0, 200)}`); continue; }
     try {
       const j = JSON.parse(t);
-      log(JSON.stringify(j?.output?.settings ?? j, null, 2).slice(0, 4000));
-      const cru = JSON.stringify(j);
-      log(`\n🖼️  fala de capa? ${/cover|thumbnail/i.test(cru) ? '✅ SIM — e o nome do campo está aí em cima' : '❌ não aparece nenhum campo de capa nas OPÇÕES (então ela vai junto do vídeo)'}`);
-      log(`🧪 fala de reel de teste? ${/trial/i.test(cru) ? '✅ sim' : '❌ não'}`);
-    } catch { log(t.slice(0, 1500)); }
+      const o = j?.output || {};
+      const servidor = Number(o.maxLength);
+      log(`   limite de texto: ${servidor || '?'} (a nossa rede de segurança diz ${rede.limite})`);
+      if (Number.isFinite(servidor) && servidor !== rede.limite) {
+        log(`   🔴 O SERVIDOR MUDOU DE IDEIAS. Ele manda; a tabela em REDES está desatualizada.`);
+      }
+      if (o.rules) log(`   regras dele: ${String(o.rules).slice(0, 300)}`);
+      const props = o.settings?.properties || {};
+      const obrig = o.settings?.required || [];
+      const campos = Object.keys(props).map((n) => (obrig.includes(n) ? `${n}*` : n));
+      log(`   opções que aceita: ${campos.join(', ') || '(nenhuma)'}${obrig.length ? `   (* = obrigatória)` : ''}`);
+      // O que NÓS mandamos, ao lado — para se ver de relance um campo inventado.
+      const nossas = rede.id === 'instagram'
+        ? ['__type', 'post_type', 'is_trial_reel', 'graduation_strategy', 'cover']
+        : Object.keys(opcoesDaRede(rede, { titulo: 'x', quadroDoPinterest: 'x' }));
+      const inventadas = nossas.filter((n) => n !== '__type' && !Object.prototype.hasOwnProperty.call(props, n));
+      log(`   o que nós mandamos: ${nossas.join(', ')}`);
+      if (inventadas.length) log(`   🔴 ELE NÃO CONHECE: ${inventadas.join(', ')} — vai ser deitado fora EM SILÊNCIO.`);
+      const emFalta = obrig.filter((n) => !nossas.includes(n));
+      if (emFalta.length) log(`   🔴 FALTA MANDAR (obrigatórias): ${emFalta.join(', ')}`);
+      if (o.tools?.length) log(`   ferramentas: ${o.tools.map((x) => x.methodName).join(', ')}`);
+    } catch { log(`   ${t.slice(0, 600)}`); }
   }
+  log(`\n${'─'.repeat(72)}`);
 
   /**
    * ⚠️ E o que ele GUARDOU do que já lhe mandámos — que é a única prova de que um campo
@@ -643,82 +1096,173 @@ async function main() {
   const tamanhoMB = (statSync(mp4).size / 1048576).toFixed(1);
 
   const caderno = lerCaderno();
-  if (caderno[slug]) {
-    log(`⏭️  "${slug}" já tinha sido agendado em ${caderno[slug].agendadoEm} (post ${caderno[slug].postId}). Nada a fazer.`);
-    // ⚠️ SE O POST FOI APAGADO À MÃO, O CADERNO PASSA A MENTIR — e este robô recusa
-    // para sempre um vídeo que já não está agendado em lado nenhum. Aconteceu em
-    // 05/08, quando o primeiro agendamento foi apagado para corrigir a legenda.
-    // A cura é uma linha: apagar a entrada em .github/data/instagram-agendados.json.
-    log('   (se o post foi apagado no painel, tire este slug de .github/data/instagram-agendados.json)');
+  const registo = caderno[slug];
+  const estado = oQueFalta(registo);
+
+  // ⚠️ SE O POST FOI APAGADO À MÃO, O CADERNO PASSA A MENTIR — e este robô recusa
+  // para sempre um vídeo que já não está agendado em lado nenhum. Aconteceu em
+  // 05/08, quando o primeiro agendamento foi apagado para corrigir a legenda.
+  // A cura é uma linha: apagar a entrada em .github/data/instagram-agendados.json.
+  const PISTA = '   (se algum post foi apagado no painel, tire essa rede — ou o slug inteiro — de .github/data/instagram-agendados.json)';
+  if (!DRY_RUN && estado.antigo) {
+    log(`⏭️  "${slug}" tem um registo ANTIGO, de ${registo.agendadoEm} — de quando só havia Instagram. Nada a fazer.`);
+    log('   (ir publicar agora as outras sete seria despejar um vídeo velho em sete redes de uma vez)');
+    log(PISTA);
     return 0;
   }
+  if (!DRY_RUN && registo && !estado.faltam.length) {
+    log(`⏭️  "${slug}" já foi agendado nas ${estado.feitas.length} redes em ${registo.agendadoEm}. Nada a fazer.`);
+    log(PISTA);
+    return 0;
+  }
+  if (!DRY_RUN && registo) {
+    log(`🔁 RETOMA: ${estado.feitas.length} rede(s) já saíram (${estado.feitas.join(', ')}). Faltam: ${estado.faltam.join(', ')}`);
+  }
 
-  log(`\n📤 Multipost — a entregar "${slug}"${DRY_RUN ? ' (ENSAIO: não envia nada)' : ''}`);
+  log(`\n📤 Multipost — a entregar "${slug}" em ${REDES.length} redes${DRY_RUN ? ' (ENSAIO: não envia nada)' : ''}`);
   log(`🎞️  ficheiro: ${tamanhoMB} MB`);
-  log(`🕖 publicar: ${emHoraDoBrasil(quando)} no Brasil  =  ${quando.toISOString()} em UTC`);
-  log(`\n── legenda ──\n${legenda}\n──────────────\n`);
+  log(`🕖 âncora: ${emHoraDoBrasil(quando)} no Brasil  =  ${quando.toISOString()} em UTC`);
+
+  const capaLocal = caminhoDaCapa(slug);
+  const temCapa = existsSync(capaLocal);
+  const titulo = limpar(roteiro.term || roteiro.keyword || '');
 
   if (DRY_RUN) {
     // A capa aparece no ensaio de propósito: a sua ausência tem de ser visível ANTES
     // da entrega, e não descoberta depois no perfil.
-    const c = caminhoDaCapa(slug);
-    log(`🖼️  capa: ${existsSync(c) ? `${Math.round(statSync(c).size / 1024)} KB` : 'FALTA — o Instagram escolheria um fotograma ao calhas'}`);
+    log(`🖼️  capa: ${temCapa ? `${Math.round(statSync(capaLocal).size / 1024)} KB` : 'FALTA — o Instagram escolheria um fotograma ao calhas, e o Pinterest nem sairia'}`);
     /**
-     * ⚠️ O ENSAIO PASSA A MOSTRAR O PEDIDO. A capa foi entregue duas semanas num campo
-     * que não existe e o ensaio dizia sempre "capa: 139 KB" — verdade, e inútil: ele
-     * media o ficheiro no disco, não o que ia dentro do pedido. Agora vê-se o pedido.
+     * ⚠️ O ENSAIO MOSTRA O PEDIDO, NÃO O DISCO. A capa foi entregue duas semanas num
+     * campo que não existe e o ensaio dizia sempre "capa: 139 KB" — verdade, e inútil:
+     * ele media o ficheiro no disco, não o que ia dentro do pedido.
      * (Os endereços são de exemplo: os verdadeiros só existem depois do envio.)
      */
-    const exemplo = corpoDoAgendamento({
-      canalId: '(o canal do Instagram)',
-      media: { id: '(id do vídeo)', path: 'https://exemplo/video.mp4' },
-      capa: existsSync(c) ? { id: '(id da capa)', path: 'https://exemplo/capa.jpg' } : null,
-      legenda, quandoUTC: quando,
-    }, log);
-    log('\n── O QUE SERIA PEDIDO AO MULTIPOST ──');
-    log(`vídeo:  ${JSON.stringify(exemplo.posts[0].value[0].image[0])}`);
-    log(`opções: ${JSON.stringify(exemplo.posts[0].settings)}`);
+    const media = { id: '(id do vídeo)', path: 'https://exemplo/video.mp4' };
+    const capa = temCapa ? { id: '(id da capa)', path: 'https://exemplo/capa.jpg' } : null;
 
-    const duracao = duracaoDoMp4(mp4);
-    const escolha = oQueVaiNoStory({
-      duracaoSeg: duracao,
-      media: { id: '(id do vídeo)', path: 'https://exemplo/video.mp4' },
-      capa: existsSync(c) ? { id: '(id da capa)', path: 'https://exemplo/capa.jpg' } : null,
-    });
-    log(`\n📖 Story ${MINUTOS_ATE_O_STORY} min depois (${emHoraDoBrasil(new Date(quando.getTime() + MINUTOS_ATE_O_STORY * 60000))}):`);
+    for (const rede of REDES) {
+      const hora = new Date(quando.getTime() + rede.minutos * 60000);
+      const texto = rede.legenda(roteiro, rede.limite);
+      const { midias, motivo } = midiasDaRede(rede, { media, capa });
+      log(`\n${'─'.repeat(72)}`);
+      log(`📡 ${rede.nome}  ·  ${emHoraDoBrasil(hora)} BR  ·  limite ${rede.limite} (a rede de segurança; o real pergunta-se ao servidor)`);
+      if (!midias) { log(`   ⏭️  NÃO SAI — ${motivo}`); continue; }
+      log(`   mídia: ${motivo}${midias.length ? ` → ${midias.length} anexo(s)` : ' → nenhum anexo'}`);
+      const opcoes = rede.id === 'instagram'
+        ? corpoDoAgendamento({ canalId: '(canal)', media, capa, legenda: texto, quandoUTC: hora }, log).posts[0].settings
+        : opcoesDaRede(rede, { titulo, quadroDoPinterest: '(o quadro, perguntado ao servidor)' });
+      log(`   opções: ${JSON.stringify(opcoes)}`);
+      log(`   texto (${texto.length} de ${rede.limite}):`);
+      for (const l of texto.split('\n')) log(`     ${l}`);
+    }
+
+    const escolha = oQueVaiNoStory({ duracaoSeg: duracaoDoMp4(mp4), media, capa });
+    log(`\n${'─'.repeat(72)}`);
+    log(`📖 Story do Instagram, ${MINUTOS_ATE_O_STORY} min depois do Reel (${emHoraDoBrasil(new Date(quando.getTime() + MINUTOS_ATE_O_STORY * 60000))}):`);
     log(`   ${escolha.media ? `vai a ${escolha.tipo}` : 'NÃO SAI'} — ${escolha.motivo}`);
-    if (escolha.media) log(`   legenda do Story: "${primeiraLinha(legenda)}"`);
+    if (escolha.media) log(`   legenda do Story: "${primeiraLinha(montarLegenda(roteiro))}"`);
+    log(`\n🚫 fora de propósito: ${Object.entries(REDE_DE_FORA).map(([r, p]) => `${r} (${p})`).join(' · ')}`);
     log('\n✅ Ensaio concluído. Nada foi enviado nem agendado.\n');
     return 0;
   }
 
   const k = chave();
-  const canal = await canalDoInstagram(k);
-  log(`📱 canal: ${canal.name} (${canal.identifier})`);
+  const canais = await listarCanais(k);
+  log(`🔌 ${canais.length} canais ligados no Multipost`);
 
-  const media = await enviarFicheiro(k, mp4, `${slug}.mp4`);
-  log(`⬆️  vídeo entregue: ${media.path}`);
-
+  /**
+   * ⚠️ O FICHEIRO SOBE UMA VEZ SÓ, e as oito redes usam o mesmo. Um envio de 23 MB por
+   * rede seriam 184 MB por dia para nada.
+   * 🔑 E NUMA RETOMA REAPROVEITA-SE o que já subiu hoje — é para isso que o caderno
+   * guarda o `id` além do endereço.
+   */
+  let media = registo?.midias?.video || null;
+  let capa = registo?.midias?.capa || null;
+  if (media) log(`♻️  a reaproveitar o vídeo já enviado nesta corrida: ${media.path}`);
+  else {
+    media = await enviarFicheiro(k, mp4, `${slug}.mp4`);
+    log(`⬆️  vídeo entregue: ${media.path}`);
+  }
   // A capa vem pronta no artefato da produção, a mesma que vai ao YouTube.
   // ⚠️ Falhar a capa NÃO pode impedir a publicação: um Reel sem capa própria ainda é
   // um Reel; um vídeo que não sai por causa de uma imagem é um dia perdido.
-  let capa = null;
-  const capaLocal = caminhoDaCapa(slug);
-  if (existsSync(capaLocal)) {
+  if (!capa && temCapa) {
     try {
       capa = await enviarFicheiro(k, capaLocal, `capa-${slug}.jpg`, 'image/jpeg');
       log(`🖼️  capa entregue: ${capa.path}`);
     } catch (e) {
       log(`⚠️ a capa falhou (${e.message}) — segue sem ela.`);
     }
-  } else {
-    log('⚠️ não veio capa no artefato — o Instagram escolherá um fotograma ao calhas.');
+  } else if (!temCapa) {
+    log('⚠️ não veio capa no artefato — o Instagram escolherá um fotograma ao calhas, e o Pinterest não sai.');
   }
 
-  const postId = await agendar(k, { canalId: canal.id, media, capa, legenda, quandoUTC: quando });
-  const confirmado = await confirmarNaAgenda(k, postId, quando);
-  if (!confirmado) {
-    throw new Error(`O servidor devolveu o post ${postId}, mas ele NÃO aparece na agenda. Conferir no painel antes de correr outra vez.`);
+  const anotar = (chaveDaRede, valor) => {
+    caderno[slug] = {
+      ...(caderno[slug] || {}),
+      midias: { video: media, capa },
+      publicaEm: quando.toISOString(),
+      publicaEmBR: emHoraDoBrasil(quando),
+      agendadoEm: caderno[slug]?.agendadoEm || new Date().toISOString(),
+      atualizadoEm: new Date().toISOString(),
+      redes: { ...(caderno[slug]?.redes || {}), [chaveDaRede]: valor },
+    };
+    // ⚠️ GRAVA A CADA REDE, não no fim. Se a corrida morrer a meio (a máquina do GitHub
+    // desaparece de vez em quando), o que já foi agendado fica escrito — senão a retoma
+    // republicaria tudo o que já estava no ar.
+    gravarCaderno(caderno);
+  };
+
+  let quantas = 0;
+  const falharam = [];
+  for (const rede of REDES) {
+    if (registo?.redes?.[rede.id]) { log(`\n⏭️  ${rede.nome}: já estava agendado (post ${registo.redes[rede.id].postId})`); continue; }
+    const principal = rede.id === 'instagram';
+    try {
+      const canal = canalDaRede(canais, rede, log);
+      if (!canal) throw new Error(`o canal não está ligado (ou está desativado) no Multipost`);
+
+      const limite = await limiteDaRede(k, canal.id, rede);
+      const texto = rede.legenda(roteiro, limite);
+      const { midias, motivo } = midiasDaRede(rede, { media, capa });
+      if (!midias) { log(`\n⏭️  ${rede.nome}: NÃO SAI — ${motivo}`); falharam.push(`${rede.nome} (${motivo})`); continue; }
+
+      const hora = new Date(quando.getTime() + rede.minutos * 60000);
+      const corpo = principal
+        ? corpoDoAgendamento({ canalId: canal.id, media, capa, legenda: texto, quandoUTC: hora }, log)
+        : montarPedido({
+          canalId: canal.id,
+          midias,
+          legenda: texto,
+          quandoUTC: hora,
+          settings: opcoesDaRede(rede, {
+            titulo,
+            quadroDoPinterest: rede.id === 'pinterest' ? (await quadroDoPinterest(k, canal.id)).id : undefined,
+          }),
+        });
+
+      const id = await enviarAgendamento(k, corpo);
+      /**
+       * ⚠️ A CONFERÊNCIA NÃO É OPCIONAL — já se viu este servidor responder uma coisa e
+       * ter feito outra. A prova é a agenda, não a resposta.
+       */
+      if (!await confirmarNaAgenda(k, id, hora)) {
+        throw new Error(`o servidor devolveu o post ${id} mas ele NÃO aparece na agenda`);
+      }
+      anotar(rede.id, { postId: id, canal: canal.name, publicaEm: hora.toISOString(), publicaEmBR: emHoraDoBrasil(hora), midia: motivo, caracteres: texto.length, limite });
+      quantas++;
+      log(`\n✅ ${rede.nome}: agendado e confirmado — ${emHoraDoBrasil(hora)} BR (post ${id})`);
+      log(`   ${texto.length}/${limite} caracteres · ${motivo}`);
+    } catch (e) {
+      /**
+       * 🔴 O INSTAGRAM É O PRINCIPAL. Se ele falhar, a corrida falha e o dono vê. As
+       * outras sete são lucro: uma delas em baixo não pode custar o dia inteiro — é a
+       * mesma regra que já valia para a capa e para o Story.
+       */
+      if (principal) throw new Error(`o Instagram falhou (${e.message}) — e ele é o principal, por isso a corrida para aqui.`);
+      log(`\n⚠️  ${rede.nome}: NÃO foi agendado (${e.message}) — segue-se para a próxima.`);
+      falharam.push(`${rede.nome} (${e.message})`);
+    }
   }
 
   /**
@@ -726,46 +1270,41 @@ async function main() {
    *
    * ⚠️ **NADA AQUI PODE DERRUBAR O REEL.** O Reel já está agendado e confirmado quando
    * se chega a esta linha; se o Story falhar — por limite do plano, por rede, por o que
-   * for —, o dia continua a ter Reel. É a mesma regra da capa, e a razão é a mesma:
-   * **o principal nunca paga pelo acessório.**
+   * for —, o dia continua a ter Reel.
    */
-  let story = null;
-  try {
-    const duracao = duracaoDoMp4(mp4);
-    const escolha = oQueVaiNoStory({ duracaoSeg: duracao, media, capa });
-    if (!escolha.media) {
-      log(`⚠️ sem Story hoje: ${escolha.motivo}`);
-    } else {
-      const horaDoStory = new Date(quando.getTime() + MINUTOS_ATE_O_STORY * 60000);
-      const idStory = await enviarAgendamento(k, corpoDoStory({
-        canalId: canal.id,
-        media: escolha.media,
-        // ⚠️ A legenda do Story é CURTA de propósito: o Instagram não a mostra como
-        // mostra a do Reel, e o painel fica ilegível com 2200 caracteres repetidos.
-        legenda: primeiraLinha(legenda),
-        quandoUTC: horaDoStory,
-      }));
-      story = { postId: idStory, tipo: escolha.tipo, publicaEm: horaDoStory.toISOString() };
-      log(`📖 Story agendado (${escolha.tipo}) para ${emHoraDoBrasil(horaDoStory)} — ${escolha.motivo}`);
+  if (!registo?.redes?.['instagram-story']) {
+    try {
+      const canal = canalDaRede(canais, REDES[0], log);
+      const escolha = oQueVaiNoStory({ duracaoSeg: duracaoDoMp4(mp4), media, capa });
+      if (!escolha.media) {
+        log(`\n⚠️ sem Story hoje: ${escolha.motivo}`);
+      } else {
+        const horaDoStory = new Date(quando.getTime() + MINUTOS_ATE_O_STORY * 60000);
+        const idStory = await enviarAgendamento(k, corpoDoStory({
+          canalId: canal.id,
+          media: escolha.media,
+          // ⚠️ A legenda do Story é CURTA de propósito: o Instagram não a mostra como
+          // mostra a do Reel, e o painel fica ilegível com 2200 caracteres repetidos.
+          legenda: primeiraLinha(legenda),
+          quandoUTC: horaDoStory,
+        }));
+        anotar('instagram-story', { postId: idStory, tipo: escolha.tipo, publicaEm: horaDoStory.toISOString(), publicaEmBR: emHoraDoBrasil(horaDoStory) });
+        log(`\n📖 Story agendado (${escolha.tipo}) para ${emHoraDoBrasil(horaDoStory)} — ${escolha.motivo}`);
+      }
+    } catch (e) {
+      log(`\n⚠️ o Story não foi agendado (${e.message}) — o Reel está de pé, que é o que conta.`);
     }
-  } catch (e) {
-    log(`⚠️ o Story não foi agendado (${e.message}) — o Reel está de pé, que é o que conta.`);
   }
 
-  caderno[slug] = {
-    postId,
-    canal: canal.name,
-    media: media.path,
-    capa: capa ? capa.path : null,
-    story,
-    publicaEm: quando.toISOString(),
-    publicaEmBR: emHoraDoBrasil(quando),
-    agendadoEm: new Date().toISOString(),
-  };
-  gravarCaderno(caderno);
-
-  log(`\n✅ agendado e confirmado na agenda — post ${postId}`);
-  log(`   vai ao ar ${emHoraDoBrasil(quando)} (hora do Brasil)\n`);
+  log(`\n${'═'.repeat(72)}`);
+  log(`✅ ${quantas} de ${REDES.length} redes agendadas para hoje.`);
+  if (falharam.length) {
+    // ⚠️ NUNCA EM SILÊNCIO. Um `catch` que só escreve no log dá corrida verde mentirosa —
+    // foi assim que o monitor do blog ficou morto 28 dias sem ninguém notar.
+    log(`⚠️  ficaram por sair ${falharam.length}: ${falharam.join(' · ')}`);
+    log('   Correr esta mesma entrega outra vez tenta SÓ as que faltaram.');
+  }
+  log(`   a primeira vai ao ar ${emHoraDoBrasil(quando)} (hora do Brasil)\n`);
   return 0;
 }
 

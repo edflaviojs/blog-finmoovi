@@ -22,6 +22,8 @@ import { join } from 'path';
 import {
   corpoDoAgendamento, corpoDoStory, capaParaOInstagram, oQueVaiNoStory,
   duracaoDoMp4, primeiraLinha, STORY_MAX_SEG, MINUTOS_ATE_O_STORY,
+  REDES, REDE_DE_FORA, midiasDaRede, opcoesDaRede, montarPedido, oQueFalta,
+  encaixarNoLimite, cortarNaPalavra, MAX_TITULO_TIKTOK,
 } from '../multipost/entregar.js';
 
 let passou = 0;
@@ -161,6 +163,240 @@ console.log('\n5. O RESTO DO PEDIDO CONTINUA COMO ESTAVA');
   ok('cada linha da legenda vai como um parágrafo próprio',
     corpo.posts[0].value[0].content === '<p>O gancho do vídeo</p><p></p><p>E o resto da legenda.</p>',
     corpo.posts[0].value[0].content);
+}
+
+/**
+ * ═══ AS OITO REDES (07/08/2026) ═══
+ *
+ * O mesmo vídeo passou a sair em oito sítios. Tudo o que se prova daqui para baixo foi
+ * MEDIDO no servidor em 07/08 — nada foi deduzido do código-fonte público do Postiz, que
+ * é outra versão. (Essa lição custou duas respostas erradas em 06/08.)
+ */
+const ROTEIRO = {
+  term: '3 erros de cartão que te custam R$ 500 por mês',
+  keyword: 'cartão',
+  category: 'credito',
+  intro: { frase: 'Sabe quais três erros no cartão tiram quinhentos reais do seu bolso todo mês?' },
+  scenes: [
+    { role: 'beat', narration: 'O primeiro leva cento e cinquenta reais, o outro duzentos, e o saque mais cento e cinquenta.' },
+    { role: 'beat', narration: 'Eu joguei isso no FinMoovi e ele me mostrou que o saque ficou no topo da lista.' },
+  ],
+};
+const rede = (id) => REDES.find((r) => r.id === id);
+
+console.log('\n6. A TABELA DAS OITO REDES — quem entra, quem não, e a que horas');
+
+{
+  ok('são oito redes', REDES.length === 8, `são ${REDES.length}`);
+  ok('e são exatamente as combinadas',
+    REDES.map((r) => r.id).join(',') === 'instagram,tiktok,facebook,linkedin-page,threads,telegram,pinterest,bluesky',
+    REDES.map((r) => r.id).join(','));
+  /**
+   * 🔴 O X FICA DE FORA POR ORDEM DO DONO (07/08): desde 02/2026 cobra US$ 0,20 por post
+   * COM LINK, e os daqui têm link. Ele continua LIGADO no painel — só não recebe daqui.
+   * Esta prova acende no dia em que alguém o puser na tabela sem falar com ele.
+   */
+  ok('🔴 o X NÃO recebe nada — ele cobra por publicação',
+    !REDES.some((r) => r.id === 'x') && Boolean(REDE_DE_FORA.x));
+  ok('e está escrito PORQUÊ, não só que não entra', /0,20|link/i.test(REDE_DE_FORA.x));
+
+  ok('o Instagram é a âncora das 19h (minuto zero)', rede('instagram').minutos === 0);
+  const minutos = REDES.map((r) => r.minutos);
+  ok('as horas sobem sempre, nunca voltam atrás',
+    minutos.every((m, i) => i === 0 || m > minutos[i - 1]), minutos.join(', '));
+  /**
+   * ⚠️ INTERVALOS DESIGUAIS DE PROPÓSITO. Oito posts de quinze em quinze minutos
+   * certinhos é a assinatura de um robô — foi o próprio dono que o disse.
+   */
+  const gaps = minutos.slice(1).map((m, i) => m - minutos[i]);
+  ok('nunca dois intervalos IGUAIS seguidos (é isso que soa a robô)',
+    gaps.every((g, i) => i === 0 || g !== gaps[i - 1]), gaps.join(', '));
+  ok('e nenhum é menor que 10 minutos', gaps.every((g) => g >= 10), gaps.join(', '));
+  /**
+   * A última tem de caber no horário nobre do Brasil. Com a âncora às 19h, 107 minutos
+   * dão 20h47 — se alguém alargar os intervalos sem pensar, isto acende.
+   */
+  ok('🔴 a última ainda sai dentro do horário nobre (antes das 22h)',
+    19 * 60 + minutos[minutos.length - 1] < 22 * 60,
+    `a última sai às ${Math.floor((19 * 60 + minutos[minutos.length - 1]) / 60)}h`);
+}
+
+console.log('\n7. A MÍDIA DE CADA REDE — e a ORDEM, que no Pinterest é a regra');
+
+{
+  /**
+   * 🔴 O PINTEREST EXIGE DUAS MÍDIAS E A ORDEM CONTA. Medido em 07/08: com a capa em 1º
+   * o post ficou preso na fila; com o vídeo em 1º, publicou. O aviso deles fala das duas
+   * mídias mas não diz uma palavra sobre a ordem.
+   */
+  const pin = midiasDaRede(rede('pinterest'), { media: MEDIA, capa: CAPA });
+  ok('🔴 Pinterest: o VÍDEO vai primeiro e a capa depois',
+    pin.midias[0] === MEDIA && pin.midias[1] === CAPA && pin.midias.length === 2,
+    JSON.stringify(pin.midias));
+  ok('e sem capa o Pinterest NÃO sai — em vez de sair errado',
+    midiasDaRede(rede('pinterest'), { media: MEDIA, capa: null }).midias === null);
+  ok('e diz-se porquê, para não ser um silêncio',
+    /capa/i.test(midiasDaRede(rede('pinterest'), { media: MEDIA, capa: null }).motivo));
+
+  /**
+   * 🔴 O BLUESKY NÃO PUBLICA VÍDEO, e o diagnóstico está FECHADO (IMPL26 §10-B): quatro
+   * provas mostram que o download, a rede, o GET e o POST funcionam — o defeito está no
+   * código do Multipost, em `bluesky.provider.ts:97`. Não repetir a investigação.
+   */
+  const bs = midiasDaRede(rede('bluesky'), { media: MEDIA, capa: CAPA });
+  ok('🔴 Bluesky: vai a CAPA, nunca o vídeo', bs.midias.length === 1 && bs.midias[0] === CAPA);
+  ok('e sem capa ele ainda sai — só texto e link (o Bluesky aceita)',
+    midiasDaRede(rede('bluesky'), { media: MEDIA, capa: null }).midias.length === 0);
+
+  for (const id of ['instagram', 'tiktok', 'facebook', 'linkedin-page', 'threads', 'telegram']) {
+    const m = midiasDaRede(rede(id), { media: MEDIA, capa: CAPA });
+    ok(`${id}: leva só o vídeo`, m.midias.length === 1 && m.midias[0] === MEDIA);
+  }
+}
+
+console.log('\n8. AS OPÇÕES DE CADA REDE — perguntadas ao servidor, não deduzidas');
+
+{
+  const tk = opcoesDaRede(rede('tiktok'), { titulo: 'Um título qualquer' });
+  /**
+   * 🔴 ENQUANTO A AUDITORIA NÃO SAIR, O TIKTOK SÓ ACEITA PRIVADO. Não é excesso de zelo:
+   * foi a segunda parede de 07/08 — "App not approved for public posting". Se alguém
+   * puser PUBLIC_TO_EVERYONE antes da aprovação, volta a falhar todos os dias em silêncio.
+   */
+  ok('🔴 TikTok: privado enquanto a auditoria não sair', tk.privacy_level === 'SELF_ONLY');
+  // ⚠️ Ligado + privado = recusa. Medido.
+  ok('🔴 TikTok: "conteúdo de marca" DESLIGADO (ligado + privado = recusa)',
+    tk.brand_content_toggle === false && tk.brand_organic_toggle === false);
+  // "UPLOAD" deixaria um rascunho à espera de alguém pegar no telemóvel.
+  ok('TikTok: publica direto, não deixa rascunho', tk.content_posting_method === 'DIRECT_POST');
+  ok('TikTok: declara que tem IA (a voz é sintetizada)', tk.video_made_with_ai === true);
+  /**
+   * As OITO opções que o servidor respondeu que EXIGE. Faltar uma dá 400 — e este servidor
+   * costuma preferir o silêncio ao erro, por isso a prova é aqui.
+   */
+  const exigidasPeloTikTok = ['privacy_level', 'duet', 'stitch', 'comment', 'autoAddMusic', 'brand_content_toggle', 'brand_organic_toggle', 'content_posting_method'];
+  ok('TikTok: manda TODAS as oito opções obrigatórias',
+    exigidasPeloTikTok.every((c) => tk[c] !== undefined),
+    exigidasPeloTikTok.filter((c) => tk[c] === undefined).join(', '));
+  ok('TikTok: o título é cortado no limite dele, sem partir palavra',
+    opcoesDaRede(rede('tiktok'), { titulo: 'palavra '.repeat(40) }).title.length <= MAX_TITULO_TIKTOK);
+
+  const pin = opcoesDaRede(rede('pinterest'), { titulo: 'T', quadroDoPinterest: '110528' });
+  ok('Pinterest: leva o quadro, que é obrigatório', pin.board === '110528');
+  ok('Pinterest: leva o link, que é o que faz o pin valer', /finmoovi\.com/.test(pin.link));
+
+  /**
+   * ⚠️ O `__type` TEM DE SER O IDENTIFICADOR DO PROVEDOR. É por ele que o servidor sabe a
+   * que canal aquelas opções pertencem — e ele deita fora EM SILÊNCIO o que não reconhece.
+   */
+  for (const r of REDES) {
+    const o = r.id === 'instagram'
+      ? corpoDoAgendamento({ ...PEDIDO, canalId: 'c' }).posts[0].settings
+      : opcoesDaRede(r, { titulo: 'T', quadroDoPinterest: 'q' });
+    ok(`${r.id}: o __type é o nome do provedor`, o.__type === r.id, o.__type);
+  }
+}
+
+console.log('\n9. O TEXTO DE CADA REDE — cabe no limite, e o LINK nunca cai');
+
+{
+  /**
+   * 🔴 O SERVIDOR CORTA EM SILÊNCIO o que passa do limite dele — não devolve erro. Um
+   * post do Bluesky que passasse dos 300 sairia sem o endereço e ninguém saberia: é a
+   * única coisa que aquele post tem para dar.
+   */
+  for (const r of REDES) {
+    const texto = r.legenda(ROTEIRO, r.limite);
+    ok(`${r.id}: o texto cabe nos ${r.limite}`, texto.length <= r.limite, `deu ${texto.length}`);
+  }
+
+  // O caso a sério: um gancho comprido de mais obriga a cortar. O link tem de sobreviver.
+  const comprido = { ...ROTEIRO, intro: { frase: `${'uma frase muito comprida que não acaba nunca '.repeat(20)}?` } };
+  for (const id of ['bluesky', 'pinterest', 'threads']) {
+    const texto = rede(id).legenda(comprido, rede(id).limite);
+    ok(`🔴 ${id}: mesmo com o texto a estourar, o LINK sobrevive`,
+      texto.includes('finmoovi.com') && texto.length <= rede(id).limite,
+      `${texto.length} caracteres`);
+  }
+
+  /**
+   * 🔴 A CHAMADA "comenta FINMOOVI" SÓ PODE EXISTIR ONDE HÁ ROBÔ A RESPONDER — Instagram
+   * (mensagem privada) e YouTube (`comentarios.js`). Nas outras SETE ninguém responde, e
+   * uma promessa quebrada é pior do que chamada nenhuma. Ver IMPL26 §12-A.
+   */
+  ok('🔴 o Instagram MANTÉM o "comenta FINMOOVI" (a automação dele existe)',
+    /comenta FINMOOVI/i.test(rede('instagram').legenda(ROTEIRO, 2200)));
+  for (const r of REDES.filter((x) => x.id !== 'instagram')) {
+    ok(`🔴 ${r.id} NÃO pede comentário — lá ninguém responderia`,
+      !/coment/i.test(r.legenda(ROTEIRO, r.limite)),
+      r.legenda(ROTEIRO, r.limite));
+  }
+  /**
+   * ⚠️ E o link só se ANUNCIA onde ele é clicável. No Instagram e no TikTok o endereço na
+   * legenda é texto morto — por isso lá a frase manda PROCURAR o nome.
+   */
+  ok('🔴 no TikTok a chamada manda PROCURAR, não clicar',
+    /procura FinMoovi/i.test(rede('tiktok').legenda(ROTEIRO, 2000))
+    && !/https:\/\//.test(rede('tiktok').legenda(ROTEIRO, 2000)));
+  for (const id of ['facebook', 'linkedin-page', 'telegram', 'threads', 'pinterest', 'bluesky']) {
+    ok(`${id}: leva o endereço, que ali é clicável`, /https:\/\/finmoovi\.com/.test(rede(id).legenda(ROTEIRO, rede(id).limite)));
+  }
+
+  /**
+   * ⚠️ ESTA PROVA APANHOU UM DEFEITO A SÉRIO: a 1ª versão comia sempre a última palavra,
+   * mesmo quando o corte calhava exatamente no fim de uma. Num Bluesky de 300, três
+   * caracteres deitados fora de graça contam.
+   */
+  ok('cortar aproveita a palavra que cabe INTEIRA', cortarNaPalavra('uma frase de teste aqui', 12) === 'uma frase de',
+    cortarNaPalavra('uma frase de teste aqui', 12));
+  ok('e quando cai no meio de uma palavra, recua até ao espaço',
+    cortarNaPalavra('uma frase de teste aqui', 15) === 'uma frase de');
+  ok('e o que já cabe volta intacto', cortarNaPalavra('curto', 50) === 'curto');
+  ok('encaixar deita fora os dispensáveis antes de cortar o texto',
+    encaixarNoLimite([{ texto: 'gancho', essencial: true }, { texto: 'x'.repeat(500) }, { texto: 'LINK', essencial: true }], 50)
+      === 'gancho\n\nLINK');
+}
+
+console.log('\n10. O CADERNO COM OITO REDES — a retoma que antes não existia');
+
+{
+  ok('sem registo nenhum, faltam as oito', oQueFalta(undefined).faltam.length === 8);
+  /**
+   * ⚠️ UM REGISTO ANTIGO (sem `redes`) É DIA FECHADO. Ele é de quando só havia Instagram;
+   * tratá-lo como "faltam sete" mandaria um vídeo de há uma semana para sete redes de uma
+   * vez, todas no mesmo minuto.
+   */
+  const antigo = oQueFalta({ postId: 'p1', agendadoEm: '2026-08-06T10:00:00Z' });
+  ok('🔴 um registo ANTIGO conta como dia fechado, não como sete em falta',
+    antigo.antigo === true && antigo.faltam.length === 0);
+
+  const meio = oQueFalta({ redes: { instagram: { postId: 'a' }, tiktok: { postId: 'b' } } });
+  ok('com duas feitas, faltam seis', meio.feitas.length === 2 && meio.faltam.length === 6);
+  ok('🔑 e a retoma tenta SÓ as que faltaram — não republica as feitas',
+    !meio.faltam.includes('instagram') && !meio.faltam.includes('tiktok'));
+
+  const todas = oQueFalta({ redes: Object.fromEntries(REDES.map((r) => [r.id, { postId: 'x' }])) });
+  ok('com as oito feitas, não falta nenhuma', todas.faltam.length === 0 && todas.feitas.length === 8);
+}
+
+console.log('\n11. O ENVELOPE — a data fica FORA da lista de redes');
+
+{
+  const corpo = montarPedido({
+    canalId: 'c1', midias: [MEDIA, CAPA], legenda: 'linha', quandoUTC: new Date('2026-08-07T22:00:00.000Z'),
+    settings: { __type: 'pinterest' },
+  });
+  /**
+   * 🔴 É ISTO QUE OBRIGA A UMA CHAMADA POR REDE. A `date` vale para o pedido inteiro, não
+   * por post: as oito na mesma chamada sairiam todas no mesmo minuto — precisamente o que
+   * o dono não quer. Está medido no contrato do servidor (`/api/docs-json`).
+   */
+  ok('🔴 a hora é do PEDIDO, não de cada post',
+    corpo.date === '2026-08-07T22:00:00.000Z' && corpo.posts[0].date === undefined);
+  ok('as duas mídias mantêm a ordem em que foram postas',
+    corpo.posts[0].value[0].image.map((m) => m.id).join(',') === 'm1,c1');
+  ok('e a legenda continua a ir com um parágrafo por linha',
+    corpo.posts[0].value[0].content === '<p>linha</p>');
 }
 
 console.log(`\n${'═'.repeat(72)}`);
