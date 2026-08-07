@@ -17,6 +17,7 @@ const TelaBordaoAtorPreview = () => (
   </AbsoluteFill>
 );
 import { Short, ShortScript, ShortTiming, totalFrames, totalFramesFrom, sceneDurationsSec, introFramesFor, SIGNATURE_FRAMES } from './Short';
+import { Short16, loopDurationsSec, loopTotalFrames } from './Short16';
 import { Long, LongScript, LongTiming, longTotalFrames, GUIAO_DE_RESERVA } from './Long';
 import { AppBrollLong, AppBrollShort } from './AppBroll';
 import { AppScrollLong, AppScrollShort } from './AppScroll';
@@ -79,6 +80,25 @@ const shortMetadata = async ({ props }: { props: ShortProps }) => {
     return { durationInFrames, props: { script, timing } };
   } catch {
     return { durationInFrames: totalFrames(script, FPS) + introFrames + SIGNATURE_FRAMES, props: { script, timing: null as ShortTiming } };
+  }
+};
+
+/**
+ * ♦ O SHORT DE 16s EM LOOP (07/08/2026).
+ * Mesma leitura do roteiro e do timing do Short de 50s — muda só a CONTA da duração:
+ * sem abertura e sem assinatura final, o vídeo é exactamente o conteúdo. É essa
+ * ausência de sobras que faz o fim encostar no princípio.
+ * ⚠️ Não toca em nada da composição `Short`: é uma entrada nova, ao lado.
+ */
+const short16Metadata = async ({ props }: { props: ShortProps }) => {
+  const script = await loadScript(props.slug);
+  try {
+    const res = await fetch(staticFile(`audio/${script.slug}/timing.json`));
+    if (!res.ok) throw new Error('sem timing');
+    const timing = (await res.json()) as ShortTiming;
+    return { durationInFrames: Math.max(1, loopTotalFrames(loopDurationsSec(script, timing), FPS)), props: { script, timing } };
+  } catch {
+    return { durationInFrames: Math.max(1, loopTotalFrames(loopDurationsSec(script, null), FPS)), props: { script, timing: null as ShortTiming } };
   }
 };
 
@@ -159,6 +179,18 @@ export const RemotionRoot: React.FC = () => {
         height={1920}
         defaultProps={{ script: fixtureScript, timing: null as ShortTiming }}
         calculateMetadata={shortMetadata}
+      />
+      {/* ♦ O SHORT DE 16s EM LOOP — 1080×1920, como o outro. O que muda é o que NÃO
+          tem: abertura, assinatura, bordão e trilho de progresso. Ver Short16.tsx. */}
+      <Composition
+        id="Short16"
+        component={Short16}
+        durationInFrames={480}
+        fps={FPS}
+        width={1080}
+        height={1920}
+        defaultProps={{ script: fixtureScript, timing: null as ShortTiming }}
+        calculateMetadata={short16Metadata}
       />
       {/* ♦ O VÍDEO LONGO — 1920×1080. A duração real sai do `timing.json` da voz. */}
       <Composition
