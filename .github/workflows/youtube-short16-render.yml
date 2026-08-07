@@ -1,0 +1,271 @@
+name: YouTube — Produzir Shorts de 16s em loop (2 por dia)
+
+# ♦ 07/08/2026 — A FÁBRICA DO FORMATO NOVO (IMPL20 §62).
+#
+# Ordem do dono: dois Shorts de 16 segundos por dia, um às 9h e outro às 19h do
+# Brasil, a SOMAR aos de 50s — não a substituí-los. O de 16s traz alcance; o de 50s
+# traz gente a comentar, que é o motor do canal.
+#
+# ⚠️ ESTE WORKFLOW SÓ PRODUZ. Quem entrega é o `youtube-short16-publish.yml`, no
+# horário nobre. É a mesma separação que já vale para o de 50s desde 03/08: produzir
+# de madrugada (máquinas folgadas, e horas de sobra para repetir se falhar) e
+# publicar quando há gente acordada.
+#
+# ⚠️ **DOIS VÍDEOS, DUAS CORRIDAS.** A matriz dá um job por turno. `fail-fast: false`
+# porque um turno falhar não pode levar o outro atrás — e `max-parallel: 1` porque os
+# dois escrevem nos MESMOS ficheiros de estado (`vida-usados.json` e as filas). Em
+# paralelo, um apagava o commit do outro.
+#
+# 04:30 UTC = 01:30 no Brasil. Fica longe do cron do de 50s (06:30 UTC) para os dois
+# não disputarem a cota de IA, e com folga enorme até à primeira entrega (11:40 UTC) —
+# o atraso do relógio do GitHub já foi medido em 112 minutos.
+
+on:
+  workflow_dispatch:
+    inputs:
+      turno:
+        description: 'manha (9h) ou noite (19h) — vazio faz os dois'
+        required: false
+        default: ''
+  schedule:
+    - cron: '30 4 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: youtube-short16-producao
+  cancel-in-progress: false
+
+jobs:
+  produzir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        turno: [manha, noite]
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # No disparo manual com um turno escolhido, o outro é saltado.
+      - name: Este turno é para correr?
+        id: turno
+        run: |
+          PEDIDO="${{ github.event.inputs.turno }}"
+          if [ -n "$PEDIDO" ] && [ "$PEDIDO" != "${{ matrix.turno }}" ]; then
+            echo "turno ${{ matrix.turno }} não foi pedido — a saltar."
+            echo "saltar=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "saltar=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/setup-node@v7
+        if: steps.turno.outputs.saltar != 'true'
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Instalar dependências (raiz)
+        if: steps.turno.outputs.saltar != 'true'
+        run: npm ci
+
+      # ♦ O PLANO B, copiado do de 50s e pelo mesmo motivo: em 07/08 o canal ficou sem
+      # vídeo porque UM tema era impossível de escrever e o robô morreu nele. As
+      # tentativas de dentro do gerador consertam a REDACÇÃO; nenhuma consegue
+      # consertar a ESCOLHA. Por isso a repetição vive aqui fora: falhou a situação,
+      # salta-se para a seguinte da rotação.
+      #
+      # ⚠️ A combinação só é MARCADA COMO USADA quando dá certo. Uma situação que
+      # falha não queima o gancho — e é isso que mantém honesta a medição de retenção
+      # por gancho (cada um tem de apanhar o mesmo número de vídeos). O preço: uma
+      # situação irremediavelmente má gasta uma tentativa por dia, e vê-se no log.
+      - name: Escolher a situação e escrever o roteiro (com plano B)
+        id: roteiro
+        if: steps.turno.outputs.saltar != 'true'
+        env:
+          KIE_AI_KEY: ${{ secrets.KIE_AI_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
+        run: |
+          TENTADAS=""
+          VENCEDOR=""
+          for VOLTA in 1 2 3; do
+            # ⚠️ `--excluir=` VAZIO seria lido como o valor booleano `true` pelo leitor
+            # de opções (`v.join('=') || true`), e passaria a excluir uma situação
+            # chamada "true". Inofensivo, mas é lixo — só se passa a opção se houver
+            # mesmo alguma coisa a excluir.
+            EXC=""
+            [ -n "$TENTADAS" ] && EXC="--excluir=$TENTADAS"
+            set +e
+            ID="$(node src/scripts/youtube/temas-vida.js --turno=${{ matrix.turno }} $EXC --verbose)"
+            CODE=$?
+            set -e
+            if [ "$CODE" = "78" ]; then
+              echo "as combinações do turno ${{ matrix.turno }} acabaram 🎉 — acrescente situações em temas-vida.js."
+              echo "saltar=true" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            if [ "$CODE" != "0" ] || [ -z "$ID" ]; then
+              echo "❌ a escolha da situação falhou (code $CODE)"
+              exit 1
+            fi
+            ID="$(printf '%s\n' "$ID" | tail -1)"
+            echo "🔁 volta $VOLTA/3 — $ID"
+            if node src/scripts/youtube/roteiro-loop.js --id="$ID" --gravar; then
+              VENCEDOR="$ID"
+              [ "$VOLTA" != "1" ] && echo "::warning::o vídeo de ${{ matrix.turno }} saiu do PLANO B (volta $VOLTA) — saltadas: $TENTADAS"
+              break
+            fi
+            SIT_MA="$(printf '%s' "$ID" | cut -d: -f2)"
+            echo "::warning::a situação '$SIT_MA' não deu roteiro — a saltar para a seguinte."
+            TENTADAS="${TENTADAS:+$TENTADAS,}$SIT_MA"
+          done
+
+          if [ -z "$VENCEDOR" ]; then
+            echo "❌ nenhuma situação deu roteiro (tentadas: ${TENTADAS:-nenhuma}) — o defeito já não é da situação."
+            exit 1
+          fi
+
+          SIT="$(printf '%s' "$VENCEDOR" | cut -d: -f2)"
+          GAN="$(printf '%s' "$VENCEDOR" | cut -d: -f3)"
+          {
+            echo "SITUACAO=$SIT"
+            echo "GANCHO=$GAN"
+            echo "FILE_SLUG=loop-$SIT-$GAN"
+          } >> "$GITHUB_ENV"
+          echo "saltar=false" >> "$GITHUB_OUTPUT"
+          echo "✅ roteiro de ${{ matrix.turno }}: loop-$SIT-$GAN"
+
+      - name: Marcar a combinação como usada e commitar o roteiro
+        if: steps.turno.outputs.saltar != 'true' && steps.roteiro.outputs.saltar != 'true'
+        run: |
+          node src/scripts/youtube/temas-vida.js marcar --situacao="$SITUACAO" --gancho="$GANCHO"
+          git config user.name "FinMoovi Bot"
+          git config user.email "bot@finmoovi.com"
+          git add "src/scripts/youtube/output/$FILE_SLUG.script.json" .github/data/vida-usados.json
+          if git diff --staged --quiet; then
+            echo "Nada a commitar."
+          else
+            git commit -m "chore: roteiro do Short 16s $FILE_SLUG [skip ci]"
+            bash .github/scripts/empurrar.sh
+          fi
+
+      # Fallback OFFLINE de voz — igual ao do de 50s. Sem ele, a cadeia do TTS tem
+      # tamanho 1 e um edge com soluços mata a corrida.
+      - name: Cache do Piper (binário + voz)
+        if: steps.turno.outputs.saltar != 'true' && steps.roteiro.outputs.saltar != 'true'
+        uses: actions/cache@v4
+        with:
+          path: ${{ runner.temp }}/piper
+          key: piper-2023.11.14-2-pt_BR-faber-medium-v1.0.0
+      - name: Instalar Piper (fallback offline de voz)
+        if: steps.turno.outputs.saltar != 'true' && steps.roteiro.outputs.saltar != 'true'
+        run: |
+          set -euo pipefail
+          PIPER_DIR="$RUNNER_TEMP/piper"
+          BIN="$PIPER_DIR/piper/piper"
+          MODEL="$PIPER_DIR/pt_BR-faber-medium.onnx"
+          if ! ( [ -x "$BIN" ] && [ -f "$MODEL" ] && [ -f "$MODEL.json" ] ); then
+            mkdir -p "$PIPER_DIR"
+            if curl -fsSL "https://github.com/rhasspy/piper/releases/download/2023.11.14-2/piper_linux_x86_64.tar.gz" -o "$PIPER_DIR/piper.tar.gz" \
+              && tar -xzf "$PIPER_DIR/piper.tar.gz" -C "$PIPER_DIR" \
+              && curl -fsSL "https://huggingface.co/rhasspy/piper-voices/resolve/v1.0.0/pt/pt_BR/faber/medium/pt_BR-faber-medium.onnx" -o "$MODEL" \
+              && curl -fsSL "https://huggingface.co/rhasspy/piper-voices/resolve/v1.0.0/pt/pt_BR/faber/medium/pt_BR-faber-medium.onnx.json" -o "$MODEL.json"; then
+              rm -f "$PIPER_DIR/piper.tar.gz"
+            else
+              echo "::warning::Piper não baixou — seguindo SEM fallback offline (edge-only)."
+              exit 0
+            fi
+          fi
+          if [ -x "$BIN" ] && [ -f "$MODEL" ] && [ -f "$MODEL.json" ]; then
+            { echo "PIPER_BIN=$BIN"; echo "PIPER_MODEL=$MODEL"; } >> "$GITHUB_ENV"
+          fi
+
+      # ⚠️ A MESMA VOZ do de 50s — ordem do dono. E os silêncios deste formato saem
+      # sozinhos: `lib/tempos-do-formato.js` vê `formato: "loop16"` no roteiro e dá
+      # 0,10s de cauda em vez de 0,35s. Sem isso, a emenda do loop tinha um terço de
+      # segundo de silêncio.
+      - name: Gerar voz + tempos reais (TTS + Whisper)
+        if: steps.turno.outputs.saltar != 'true' && steps.roteiro.outputs.saltar != 'true'
+        env:
+          TOGETHER_TTS_API_KEY: ${{ secrets.TOGETHER_TTS_API_KEY }}
+        run: node src/scripts/youtube/tts-short.js --slug="$FILE_SLUG"
+
+      - name: Gerar legendas SRT ×3 (pt/en/es)
+        if: steps.turno.outputs.saltar != 'true' && steps.roteiro.outputs.saltar != 'true'
+        env:
+          TOGETHER_TTS_API_KEY: ${{ secrets.TOGETHER_TTS_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
+        run: node src/scripts/youtube/srt-short.js --slug="$FILE_SLUG"
+
+      - name: Preparar roteiro para o Remotion
+        if: steps.turno.outputs.saltar != 'true' && steps.roteiro.outputs.saltar != 'true'
+        run: |
+          mkdir -p youtube-render/public/roteiro
+          cp "src/scripts/youtube/output/$FILE_SLUG.script.json" "youtube-render/public/roteiro/$FILE_SLUG.json"
+
+      - name: Instalar dependências (render)
+        if: steps.turno.outputs.saltar != 'true' && steps.roteiro.outputs.saltar != 'true'
+        working-directory: youtube-render
+        run: npm ci
+
+      # ⚠️ Short16, NÃO Short. São duas composições separadas de propósito: a de 50s
+      # publica todos os dias e não pode partilhar destino com um formato novo.
+      - name: Renderizar o Short de 16s
+        if: steps.turno.outputs.saltar != 'true' && steps.roteiro.outputs.saltar != 'true'
+        working-directory: youtube-render
+        run: npx remotion render src/index.ts Short16 "out/$FILE_SLUG.mp4" --props="{\"slug\":\"$FILE_SLUG\"}" --crf=16 --jpeg-quality=95
+
+      # ♦ O ROBÔ QUE OLHA O VÍDEO. Tira 8 fotogramas e manda-os à IA que já pagamos.
+      # ⚠️ **NUNCA TRAVA** — ordem do dono: *"não podemos correr o risco de não ter
+      # vídeo postado no dia"*. Nota baixa vira ::warning::, e o vídeo segue.
+      - name: Olhar o vídeo antes de ele ir ao ar
+        if: steps.turno.outputs.saltar != 'true' && steps.roteiro.outputs.saltar != 'true'
+        env:
+          KIE_AI_KEY: ${{ secrets.KIE_AI_KEY }}
+        run: |
+          node src/scripts/youtube/qa-visual.js \
+            --slug="$FILE_SLUG" \
+            --video="youtube-render/out/$FILE_SLUG.mp4" \
+            --contexto="Short de 16 segundos em loop, formato novo do canal: comeca no conteudo, acaba do nada, e tem de reiniciar sem a pessoa perceber."
+
+      # O artefato chama-se `short-<slug>` como o do outro formato — é assim que o
+      # carteiro o encontra, sem uma linha de código nova do lado dele.
+      - name: Subir artefato (MP4 + legendas + fotogramas do QA)
+        if: steps.turno.outputs.saltar != 'true' && steps.roteiro.outputs.saltar != 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: short-${{ env.FILE_SLUG }}
+          path: |
+            youtube-render/out/${{ env.FILE_SLUG }}.mp4
+            youtube-render/out/qa-${{ env.FILE_SLUG }}.jpg
+            youtube-render/public/audio/${{ env.FILE_SLUG }}/*.srt
+          if-no-files-found: error
+
+      # ♦ UMA FILA POR TURNO — e é o que impede o carteiro das 9h de entregar o vídeo
+      # da noite (ou, pior, o de 50 segundos). O `outbox.js` já aceita `--fila=` desde
+      # que o Instagram entrou; aqui não precisou de UMA LINHA nova.
+      - name: Pôr na fila do turno
+        if: steps.turno.outputs.saltar != 'true' && steps.roteiro.outputs.saltar != 'true'
+        run: |
+          node src/scripts/youtube/outbox.js enqueue \
+            --file-slug="$FILE_SLUG" --run-id="${{ github.run_id }}" \
+            --fila=short16-${{ matrix.turno }}.json
+          git config user.name "FinMoovi Bot"
+          git config user.email "bot@finmoovi.com"
+          git add .github/data/short16-${{ matrix.turno }}.json .github/data/youtube-qa.json
+          if git diff --staged --quiet; then
+            echo "Filas sem mudanças."
+          else
+            git commit -m "chore: 16s $FILE_SLUG pronto na fila de ${{ matrix.turno }} [skip ci]"
+            bash .github/scripts/empurrar.sh
+          fi

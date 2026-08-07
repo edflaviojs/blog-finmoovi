@@ -1,0 +1,141 @@
+name: YouTube — Publicar Shorts de 16s (9h e 19h BR)
+
+# ♦ 07/08/2026 — O CARTEIRO DO FORMATO NOVO (IMPL20 §62).
+#
+# Horários escolhidos pelo dono: *"os novos shorts entrariam um às 19 horas e outro
+# para 9 horas, horário do Brasil"*.
+#
+#   11:40 UTC = 08:40 BR  ·  21:40 UTC = 18:40 BR
+#
+# ⚠️ **VINTE MINUTOS ANTES, DE PROPÓSITO.** O relógio do GitHub atrasa — já se mediram
+# 112 minutos. Marcar às 9h em ponto era garantir que quase nunca sai às 9h. Marcado
+# 20 minutos antes, um dia bom entrega às 8h40 e um dia mau entrega perto da hora.
+#
+# ⚠️ **A RONDA DISTINGUE-SE POR `github.event.schedule`, NUNCA PELO RELÓGIO.** Foi a
+# lição da repescagem do de 50s: com o atraso do GitHub, ler a hora da máquina fazia a
+# ronda da manhã pensar que era a da noite.
+#
+# ⚠️ **CADA TURNO TEM A SUA FILA** (`short16-manha.json` / `short16-noite.json`). Com
+# uma fila só e ordem de chegada, o carteiro das 9h entregaria o vídeo da noite — ou,
+# pior, o de 50 segundos. Foi o primeiro risco que a revisão apanhou neste plano.
+
+on:
+  workflow_dispatch:
+    inputs:
+      turno:
+        description: 'manha ou noite'
+        required: true
+        default: 'manha'
+  schedule:
+    - cron: '40 11 * * *'   # 08:40 BR — a entrega da manhã
+    - cron: '40 21 * * *'   # 18:40 BR — a entrega da noite
+
+permissions:
+  contents: write
+  actions: read
+
+# ⚠️ **O MESMO GRUPO DO CARTEIRO DE 50s, E NÃO É DESCUIDO.** Os dois escrevem no
+# MESMO `youtube-published.json`. Os horários não se cruzam no papel, mas com 112
+# minutos de atraso possível cruzam-se na vida — e dois processos a reescrever o mesmo
+# ficheiro é como se perde um upload em silêncio. Serializar custa uns minutos de
+# espera; não serializar custa um vídeo.
+concurrency:
+  group: youtube-short-daily
+  cancel-in-progress: false
+
+jobs:
+  entregar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Que turno é este?
+        id: turno
+        run: |
+          case "${{ github.event.schedule }}" in
+            "40 11 * * *") TURNO=manha ;;
+            "40 21 * * *") TURNO=noite ;;
+            *)             TURNO="${{ github.event.inputs.turno }}" ;;
+          esac
+          if [ "$TURNO" != "manha" ] && [ "$TURNO" != "noite" ]; then
+            echo "❌ turno inválido: '$TURNO'"
+            exit 1
+          fi
+          echo "TURNO=$TURNO" >> "$GITHUB_ENV"
+          echo "🕘 ronda de $TURNO"
+
+      - name: Próximo da fila deste turno
+        id: fila
+        run: |
+          set +e
+          BILHETE="$(node src/scripts/youtube/outbox.js next --fila=short16-$TURNO.json)"
+          CODE=$?
+          set -e
+          if [ "$CODE" = "78" ]; then
+            echo "📭 nada na fila de $TURNO — sucesso neutro."
+            echo "saltar=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          if [ "$CODE" != "0" ]; then
+            echo "❌ leitura da fila falhou (code $CODE)"
+            exit "$CODE"
+          fi
+          {
+            echo "FILE_SLUG=$(echo "$BILHETE" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>console.log(JSON.parse(s).fileSlug))')"
+            echo "RUN_ID=$(echo "$BILHETE" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>console.log(JSON.parse(s).runId))')"
+          } >> "$GITHUB_ENV"
+          echo "saltar=false" >> "$GITHUB_OUTPUT"
+
+      - name: Instalar dependências
+        if: steps.fila.outputs.saltar != 'true'
+        run: npm ci
+
+      # O artefato foi gravado a partir de youtube-render/, então baixá-lo PARA
+      # youtube-render/ reconstrói o layout que o upload-short espera.
+      - name: Baixar o vídeo do run de produção
+        if: steps.fila.outputs.saltar != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh run download "$RUN_ID" --name "short-$FILE_SLUG" --dir youtube-render
+          test -f "youtube-render/out/$FILE_SLUG.mp4" || { echo "❌ MP4 não veio no artefato"; ls -R youtube-render | head -30; exit 1; }
+          echo "🎞️ $(du -h "youtube-render/out/$FILE_SLUG.mp4" | cut -f1) prontos para entrega."
+
+      # ⚠️ O MESMO `upload-short.js` do formato de 50s, e é isso que faz as regras do
+      # dono valerem aqui de graça: título de 8 palavras com a palavra-chave em
+      # MAIÚSCULAS, três hashtags, etiquetas a encher os 500 caracteres. Nada disso
+      # precisou de ser reescrito — o formato novo herda tudo.
+      - name: Publicar no YouTube (público)
+        if: steps.fila.outputs.saltar != 'true'
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          KIE_AI_KEY: ${{ secrets.KIE_AI_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
+        run: node src/scripts/youtube/upload-short.js --slug="$FILE_SLUG"
+
+      - name: Tirar da fila e commitar
+        if: steps.fila.outputs.saltar != 'true'
+        run: |
+          node src/scripts/youtube/outbox.js done --file-slug="$FILE_SLUG" --fila=short16-$TURNO.json
+          git config user.name "FinMoovi Bot"
+          git config user.email "bot@finmoovi.com"
+          git add .github/data/youtube-published.json .github/data/short16-$TURNO.json
+          if git diff --staged --quiet; then
+            echo "Sem mudanças a commitar."
+          else
+            git commit -m "chore: 16s $FILE_SLUG publicado ($TURNO) [skip ci]"
+            bash .github/scripts/empurrar.sh
+          fi
