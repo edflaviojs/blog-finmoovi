@@ -3,6 +3,7 @@ title: "How Small Actions Can Transform Your Finances in 2026"
 description: "Practical tips to simplify money management, with real‑world examples and the FinMoovi app to take control of your budget."
 tickerHeadline: "Simple actions, real results"
 image: "/images/posts/como-pequenas-acoes-podem-mudar-suas-financas-em-2026.webp"
+imageAlt: "Laptop and monitors on desk with colorful abstract screensavers and coffee mugs."
 category: "dicas"
 locale: "en"
 tags: ["personal finance","budgeting","money management","financial habits","expense tracking"]

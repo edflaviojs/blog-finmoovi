@@ -3,6 +3,7 @@ title: "Cómo pequeñas acciones pueden cambiar tus finanzas en 2026"
 description: "Descubre ejemplos prácticos de acciones que simplifican tu control financiero, con consejos reales y la app FinMoovi para transformar tu presupuesto."
 tickerHeadline: "Acciones simples, resultados reales"
 image: "/images/posts/como-pequenas-acoes-podem-mudar-suas-financas-em-2026.webp"
+imageAlt: "Escritorio con portátil, monitores, taza blanca y móvil sobre superficie clara."
 category: "dicas"
 locale: "es"
 tags: ["acciones ejemplos","finanzas personales","economía","dinero"]

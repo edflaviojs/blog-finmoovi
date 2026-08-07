@@ -4,6 +4,7 @@ definition: "Entenda o que é poupança, como funciona, vantagens, riscos e exem
 title: "poupança - Glossário Financeiro"
 description: "Entenda o que é poupança, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
 image: "/images/glossario/poupanca.webp"
+imageAlt: "Moedas douradas empilhadas, gráfico de barras ascendente e planta crescendo em pote de vidro."
 category: "basico"
 tags: ["poupança", "glossário", "finanças"]
 author: "FinMoovi"

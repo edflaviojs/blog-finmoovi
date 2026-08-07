@@ -1,6 +1,7 @@
 ---
 term: "Previdência Privada"
 image: "/images/glossario/previdencia-privada.webp"
+imageAlt: "Moedas douradas empilhadas e vaso de vidro com planta verde sobre fundo azul escuro."
 definition: "Investimento de longo prazo para complementar a aposentadoria do INSS. Existem dois tipos: PGBL (deduz IR) e VGBL (não deduz)."
 category: "investimentos"
 relatedTerms: ["Imposto de Renda", "Tesouro Direto", "Renda Fixa"]

@@ -5,6 +5,7 @@ category: "mercado"
 locale: "pt"
 translationKey: "glossario-p-l-preco-lucro"
 image: "/images/glossario/p-l-preco-lucro.webp"
+imageAlt: "Moedas douradas empilhadas em degraus ascendentes, frascos de vidro com plantas verdes crescendo, fundo azul escuro."
 relatedTerms: ["Lucro por Ação","Preço de Ação","Retorno sobre o Patrimônio Líquido"]
 publishedAt: 2026-06-09
 ---

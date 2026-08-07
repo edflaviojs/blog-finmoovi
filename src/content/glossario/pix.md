@@ -1,6 +1,7 @@
 ---
 term: "PIX"
 image: "/images/glossario/pix.webp"
+imageAlt: "Moedas douradas empilhadas e vaso de vidro com planta, fundo gradiente roxo."
 definition: "Sistema de pagamentos instantâneos do Banco Central do Brasil. Transferências gratuitas 24h por dia, 7 dias por semana, em até 10 segundos."
 category: "basico"
 relatedTerms: ["Câmbio", "IOF", "Score de Crédito"]

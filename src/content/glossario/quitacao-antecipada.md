@@ -1,6 +1,7 @@
 ---
 term: "Quitação Antecipada"
 image: "/images/glossario/quitacao-antecipada.webp"
+imageAlt: "Moedas douradas, cofre, porquinho e planta em pote sobre fundo roxo."
 definition: "Pagamento total ou parcial de uma dívida antes do prazo previsto. Garante desconto nos juros futuros e é um direito do consumidor."
 category: "credito"
 relatedTerms: ["Amortização", "Financiamento", "Juros Compostos"]

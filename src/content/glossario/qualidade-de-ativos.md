@@ -4,6 +4,7 @@ definition: "Qualidade de ativos é o quanto se pode confiar que um investimento
 title: "qualidade de ativos - Glossário Financeiro"
 description: "Entenda o que é qualidade de ativos, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
 image: "/images/glossario/qualidade.webp"
+imageAlt: "Moedas douradas empilhadas, gráfico de barras e planta em vaso sobre fundo azul escuro."
 category: "basico"
 tags: ["qualidade de ativos", "glossário", "finanças"]
 author: "FinMoovi"

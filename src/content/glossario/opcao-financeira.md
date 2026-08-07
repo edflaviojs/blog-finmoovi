@@ -4,6 +4,7 @@ definition: "Entenda o que é opção financeira, como funciona, vantagens, risc
 title: "opção financeira - Glossário Financeiro"
 description: "Entenda o que é opção financeira, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
 image: "/images/glossario/opcao.webp"
+imageAlt: "Moedas douradas empilhadas em potes de vidro com plantas crescendo, fundo azul escuro."
 category: "basico"
 tags: ["opção financeira", "glossário", "finanças"]
 author: "FinMoovi"
