@@ -132,7 +132,7 @@ CATÁLOGOS (fora deles o roteiro é rejeitado):
 1. **A imagem do vídeo é "${narrativa.fioCondutor}" e só ela.** Cada vez que ela for MENCIONADA na fala, ponha UM shot {"type":"metaphor","metaphor":"${narrativa.fioCondutor}"}. Nunca use outra imagem do catálogo neste vídeo.
    ⛔ **UM shot por MENÇÃO, não um por palavra.** O nome da imagem pode ocupar várias palavras seguidas ("mochila de pedras" são três). Isso é UMA menção: escolha **só uma** dessas palavras — a mais forte — e ignore as outras.
    ⛔ **Nunca dois shots seguidos com o mesmo visual.** A animação recomeçaria do zero à frente de quem assiste e você desperdiçaria um lugar de imagem. Entre duas aparições da imagem tem de haver outra coisa na tela.
-2. **O bloco CONVITE termina com** {"type":"metaphor","metaphor":"clique-link"} — é a mãozinha que toca no botão de comentar. Som "click".
+2. **O bloco CONVITE termina com** {"type":"metaphor","metaphor":"clique-link"} — é a mãozinha que toca no botão do FinMoovi. Som "click".
 3. **O bloco DEMONSTRACAO precisa de UM shot do app**, e ele entra numa das PRIMEIRAS palavras do bloco: a tela do app tem de ficar visível uns 4 segundos, e se entrar no fim do bloco não dá tempo.
 4. **O som é TEMPERO: no MÁXIMO METADE dos shots leva som.** Se todos tocarem alguma coisa, cansa — o dono já reclamou disto. E o mesmo som não pode aparecer mais de 3× no vídeo inteiro. Para deixar em silêncio, basta omitir o campo "sfx".
 
@@ -149,7 +149,7 @@ Curto. A pessoa lê de relance, no celular, enquanto ouve. Até 6 palavras.
 Responda APENAS com JSON válido, sem markdown:
 {
   "introFrase": "<a PRIMEIRA FRASE do bloco 1, COPIADA À LETRA, sem tirar nem pôr uma palavra — só com a parte forte entre *asteriscos*. NÃO invente uma frase nova: o que está escrito na capa é o que a voz diz nesse instante>",
-  "ctaTexto": "<até 7 palavras, o título que aparece por cima do botão de comentar>",
+  "ctaTexto": "<até 7 palavras, o título que aparece por cima do botão do FinMoovi>",
   "blocos": [
     { "papel": "gancho", "shots": [ { "ancoraIndice": 2, "visual": { "type": "statement", "text": "…" }, "sfx": "boom" } ] },
     { "papel": "empatia", "shots": [] },
@@ -238,7 +238,7 @@ export function validarPlano(plano, narrativa) {
   const convite = blocos[ORDEM_DOS_BLOCOS.indexOf('convite')];
   const ultimoDoConvite = convite && (convite.shots || [])[(convite.shots || []).length - 1];
   if (!ultimoDoConvite || ultimoDoConvite.visual?.metaphor !== 'clique-link') {
-    erros.push('o bloco "convite" não termina com a mãozinha ("clique-link") a tocar no botão de comentar');
+    erros.push('o bloco "convite" não termina com a mãozinha ("clique-link") a tocar no botão do FinMoovi');
   }
 
   // A REGRA 1 com dentes, parte 2 — O MESMO VISUAL DUAS VEZES SEGUIDAS (§21.6).

@@ -790,7 +790,29 @@ const SceneTitle: React.FC<{ scene: Scene }> = ({ scene }) => {
   );
 };
 
-// CTA chamativa: título + linha "Comenta FINMOOVI" + seta descendo animada.
+/**
+ * ♦ 07/08/2026 — A PÍLULA DEIXOU DE DIZER "Comenta FINMOOVI".
+ *
+ * ═══ PORQUÊ ═══
+ * O mesmo ficheiro passou a sair em OITO redes (Instagram, TikTok, Facebook, LinkedIn,
+ * Threads, Telegram, Pinterest, Bluesky) além do YouTube. **A automação que responde a
+ * quem escreve FINMOOVI só existe em dois sítios** — Instagram (mensagem privada) e
+ * YouTube (`src/scripts/youtube/comentarios.js`, que responde no próprio comentário).
+ * Nas outras sete a pessoa comentava e não recebia nada: promessa quebrada, que é pior
+ * do que chamada nenhuma. Decisão do dono: IMPL26 §12-A.
+ *
+ * ⚠️ **E o "comenta FINMOOVI" NÃO desapareceu** — mudou de sítio. Continua escrito na
+ * LEGENDA do Instagram e do YouTube, onde há robô a cumpri-lo, e as duas automações
+ * disparam pelo COMENTÁRIO, não pelo áudio nem pela tela: elas nem sabem o que o vídeo
+ * mostrou. Um ficheiro só serve as nove.
+ *
+ * ⚠️ **UMA CONSTANTE, DOIS SÍTIOS.** O mesmo texto aparece na cena da CTA e na pílula que
+ * a mãozinha carrega (`MetaClickLink`). Escritos à mão nos dois, um dia mudava-se um só —
+ * e o vídeo mostrava duas chamadas diferentes na mesma cena.
+ */
+const CTA_PILULA = 'Procura FinMoovi';
+
+// CTA chamativa: título + pílula "Procura FinMoovi" + lupa pulsando.
 const SceneCta: React.FC<{ scene: Scene }> = ({ scene }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -807,11 +829,18 @@ const SceneCta: React.FC<{ scene: Scene }> = ({ scene }) => {
         padding: '18px 34px', borderRadius: 999, border: `3px solid ${BRAND.cyan}`,
         background: 'rgba(34,211,238,0.10)', fontFamily: BODY, fontWeight: 800, fontSize: 46, color: BRAND.text,
       }}>
-        Comenta FINMOOVI
+        {CTA_PILULA}
       </div>
-      <div style={{ marginTop: 20 + bounce, display: 'flex', justifyContent: 'center' }}>
+      {/**
+        * ⚠️ A SETA PARA BAIXO SAIU, e não foi enfeite: ela apontava para os comentários
+        * ("é aqui embaixo"). Com a chamada nova ela apontaria para nada — e é exatamente
+        * a mentira que se quis tirar da fala. No lugar vai uma LUPA, que é o gesto que
+        * a chamada pede: procurar o nome.
+        */}
+      <div style={{ marginTop: 20 + bounce * 0.5, display: 'flex', justifyContent: 'center' }}>
         <svg width="90" height="90" viewBox="0 0 100 100" fill="none">
-          <path d="M50 12 L50 74 M28 54 L50 78 L72 54" stroke="url(#cta-grad)" strokeWidth="11" strokeLinecap="round" strokeLinejoin="round" />
+          <circle cx="44" cy="42" r="26" stroke="url(#cta-grad)" strokeWidth="11" />
+          <path d="M63 61 L84 82" stroke="url(#cta-grad)" strokeWidth="11" strokeLinecap="round" />
           <defs>
             <linearGradient id="cta-grad" x1="0" y1="0" x2="1" y2="1">
               <stop offset="0%" stopColor={BRAND.cyan} />
@@ -1239,7 +1268,7 @@ function shotStartFrames(scene: Scene, timing: SceneTiming | null | undefined, f
  *
  * Correção aqui, no RENDER, e não no prompt: vale para todo roteiro já existente e
  * não depende de a IA acertar. O shot curto é ANTECIPADO (entra antes) em vez de
- * descartado — sumir com a chamada para comentar seria pior que mostrá-la
+ * descartado — sumir com a chamada do vídeo seria pior que mostrá-la
  * cedo demais. Ele nunca é antecipado às custas do piso do shot anterior, e o
  * `app` mantém o seu piso de 2,5s, que é regra do dono.
  * Efeito colateral aceito: o shot anterior encurta um pouco (na CTA do fixture, o
@@ -1247,7 +1276,7 @@ function shotStartFrames(scene: Scene, timing: SceneTiming | null | undefined, f
  */
 const SHOT_MIN_LIFE_SEC = 1.2;
 const APP_MIN_LIFE_SEC = 2.5; // espelha APP_FLOOR_SEC de schema-short.js
-// A pílula "Comenta FINMOOVI" é a CHAMADA PARA AÇÃO do vídeo — o único momento que
+// A pílula da chamada (ver CTA_PILULA) é a CHAMADA PARA AÇÃO do vídeo — o único momento que
 // pede um gesto do espectador. Com o piso comum (1,2s) ela ainda ficava menos tempo
 // no ar que ícones decorativos da cena seguinte, o que o dono apontou em 31/07 como
 // inversão de prioridade. Ganha piso próprio, o maior depois do `app`.
@@ -1439,7 +1468,7 @@ const BUBBLE_POP_FRAC = 0.72;
 export const bubblePopOffset = (life: number) => Math.round(life * BUBBLE_POP_FRAC);
 
 // metáfora 'clique-link': uma mãozinha (cursor 👆 em SVG nativo, cores da marca)
-// viaja numa curva até a pílula "Comenta FINMOOVI", PRESSIONA (pílula afunda +
+// viaja numa curva até a pílula da chamada (`CTA_PILULA`), PRESSIONA (pílula afunda +
 // flash) no frame do 'click'. O som é agendado no MESMO frame (ver ShotSfxTrack).
 const MetaClickLink: React.FC<{ life: number }> = ({ life }) => {
   const frame = useCurrentFrame();
@@ -1466,7 +1495,7 @@ const MetaClickLink: React.FC<{ life: number }> = ({ life }) => {
   const flash = frame >= press ? interpolate(frame, [press, press + 2, press + 10], [0, 0.5, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }) : 0;
   return (
     <div style={{ position: 'relative', width: W, height: H }}>
-      {/* pílula "Comenta FINMOOVI" (mesmo estilo da CTA) */}
+      {/* a pílula da chamada (mesmo texto e mesmo estilo da cena CTA — ver CTA_PILULA) */}
       <div style={{
         position: 'absolute', left: 0, right: 0, top: 168, display: 'flex', justifyContent: 'center',
       }}>
@@ -1479,7 +1508,7 @@ const MetaClickLink: React.FC<{ life: number }> = ({ life }) => {
           boxShadow: pillGlow > 0 ? `0 0 ${Math.round(pillGlow * 46)}px rgba(34,211,238,${pillGlow * 0.7})` : '0 8px 30px rgba(0,0,0,0.35)',
         }}>
           <FinMooviIcon size={44} idSuffix="clk" />
-          Comenta FINMOOVI
+          {CTA_PILULA}
         </div>
       </div>
       {/* anel de clique + mãozinha */}

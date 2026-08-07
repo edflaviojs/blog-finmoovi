@@ -322,7 +322,7 @@ O vídeo é UMA fala contínua, não uma lista de frases bonitas. **As PRIMEIRAS
    ✓ "…faz a dívida crescer." → "E é aí que ela cresce sem você ver: no FinMoovi…"
    Toda abertura de bloco é uma FRASE INTEIRA, com sujeito e verbo. Nunca uma palavra com ponto de interrogação.
 
-⛔ **A ÚNICA EXCEÇÃO A ESTA REGRA: o bloco 6 NÃO pega no bloco 5.** O convite é um pedido a quem assiste — sai da história. Se o fecho pegar nele, o vídeo acaba a falar do blog e do comentário em vez de responder à pergunta que abriu tudo. **O bloco 6 agarra o BLOCO 1.**
+⛔ **A ÚNICA EXCEÇÃO A ESTA REGRA: o bloco 6 NÃO pega no bloco 5.** O convite é um pedido a quem assiste — sai da história. Se o fecho pegar nele, o vídeo acaba a falar do blog e do app em vez de responder à pergunta que abriu tudo. **O bloco 6 agarra o BLOCO 1.**
    ✗ "O blog mostra que o mínimo é o que mais pesa…" (foi ao ar; o dono reprovou — o vídeo não fecha a falar do blog)
 
 ⛔ NENHUMA PALAVRA NOVA SEM PREPARAÇÃO. Não introduza um assunto que ninguém apresentou.
@@ -380,7 +380,11 @@ ${EXEMPLOS_DE_CAPA.map((f) => `   ✓ "${f}"`).join('\n')}
    ⛔ **DIGA O QUE APARECEU NA TELA.** Frases como "mostrou onde o dinheiro aperta" ou "mostrou o estrago" não mostram nada — quem ouve fica na mesma.
    Diga a coisa CONCRETA: o nome da linha, a soma marcada, qual ficou em primeiro lugar, ou um valor **que já exista** neste roteiro.
    ⚠️ **NÃO invente número nenhum para cumprir isto.** Se não houver um valor à mão, nomeie a COISA — é igualmente concreto e é verdade.
-5. O CONVITE (~6s): a pessoa acabou de ver um número que assustou ou animou — e ela quer o DELA. Peça o COMENTÁRIO com a palavra FINMOOVI, prometendo o que vai mandar. Molde a adaptar: "quer ver o SEU? comenta FINMOOVI aqui que eu te mando."
+5. O CONVITE (~6s): a pessoa acabou de ver um número que assustou ou animou — e ela quer o DELA. Mande-a PROCURAR o app pelo nome, e diga que é de graça. Molde a adaptar: "quer ver o SEU? procura FinMoovi. É de graça."
+   ⛔ **NÃO PEÇA COMENTÁRIO E NÃO MANDE CLICAR EM NADA.** Este mesmo vídeo sai em OITO redes ao mesmo tempo, mais o YouTube — e a automação que responde ao comentário só existe em duas delas. Nas outras a pessoa comentaria e não receberia nada: promessa quebrada é pior do que chamada nenhuma. O "comenta FINMOOVI" continua a existir, mas ESCRITO na legenda do Instagram e do YouTube, onde há robô a cumpri-lo — e a automação dispara pelo comentário, não pelo áudio. O computador confere.
+   ✗ "Comenta FINMOOVI aqui embaixo que eu te mando o app." (só funciona em duas das nove)
+   ✗ "O link tá aqui embaixo." (no Instagram e no TikTok o endereço na legenda é texto morto, não dá para clicar)
+   ✓ "Quer ver o seu? Procura FinMoovi. É de graça."
 6. O FECHO (~7s): **RESPONDA, com todas as letras, a PERGUNTA DA CAPA** — é a lição do vídeo numa frase, curta e dura, do tipo que se repete para um amigo. Sem "tchau", sem "até a próxima".
    ⛔ **NÃO termine com outra pergunta.** O fecho é quem responde, não quem pergunta.
    ✗ "…e quando você corta, os quinhentos reais voltam pra você. E agora?" (foi ao ar; o dono: *"o que é 'e agora'???"*)
@@ -444,7 +448,7 @@ Não troque a grandeza do dinheiro. Cem reais NÃO é "um centavo", nem "uma moe
 - Diga "vídeo", nunca "Short".
 - OBRIGATÓRIO: diga o bordão do canal UMA vez, **e SÓ no bloco 6 (o fecho)**, como assinatura: "${BORDAO}"
   ⛔ No meio da história ele parte a corrente — o dono reprovou exatamente isso: *"fica muito sem sentido aí no meio, está mais atrapalhando do que ajudando"*.
-- ⛔ NUNCA mande clicar em link ("link na descrição/bio/aqui embaixo"). Em vídeo vertical o link não é clicável — por isso o convite é o comentário.
+- ⛔ NUNCA mande clicar em link ("link na descrição/bio/aqui embaixo"). Em vídeo vertical o link não é clicável, e no Instagram e no TikTok o endereço escrito na legenda é texto morto — por isso o convite manda PROCURAR o nome.
 - ⛔ NUNCA use asteriscos, travessões ou qualquer marcação. Só texto limpo.
 
 Responda APENAS com JSON válido, sem markdown:
@@ -499,16 +503,16 @@ const EXEMPLO_DE_FORMA = [
   // calculadora do FinMoovi" que o bloco 4 ENSINA — medido ao vivo em 03/08: o
   // modelo obedeceu ao molde e a anti-cópia (que inclui este exemplo) barrou-o.
   'Fui conferir no FinMoovi e ele tinha marcado a cobrança em vermelho, repetindo mês após mês na minha cara.',
-  'Quer ver se a sua conta tem uma dessas? Comenta FINMOOVI aqui que eu te mando o app grátis.',
+  'Quer ver se a sua conta tem uma dessas? Procura FinMoovi. É de graça.',
   `Tarifa que você não pediu é dinheiro que sai calado. ${BORDAO}`,
 ];
 
 /**
  * O TEXTO CONTRA O QUAL SE MEDE A CÓPIA — e repare no que fica DE FORA.
  *
- * · O bloco 5 (o convite) sai: "comenta FINMOOVI aqui que eu te mando" é o molde
- *   que o próprio prompt manda usar. Puni-lo seria reprovar quem obedece — o modo
- *   de falha crónico deste repositório.
+ * · O bloco 5 (o convite) sai: "procura FinMoovi, é de graça" é o molde que o
+ *   próprio prompt manda usar. Puni-lo seria reprovar quem obedece — o modo de
+ *   falha crónico deste repositório.
  * · O bordão sai pela mesma razão: é obrigatório dizê-lo, à letra.
  * Sobra a ESCRITA — que é o que tem de ser original em cada vídeo.
  */
@@ -888,9 +892,42 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
   // sobre o pêndulo do 5º teste). Aqui ficam só as exigências SEMÂNTICAS.
   if (/\bshorts?\b/i.test(falaToda)) erros.push('a fala diz "Short" — o canal fala sempre "vídeo"');
   if (/link (na|no|aqui)|clica no link|na bio|na descri/i.test(falaToda)) {
-    erros.push('a fala manda clicar em link — em vídeo vertical o link não é clicável; o convite é o comentário');
+    erros.push(
+      'a fala manda clicar em link — em vídeo vertical o link não é clicável, e no Instagram e no TikTok o endereço '
+      + 'escrito na legenda é texto morto. O convite manda PROCURAR o nome: "procura FinMoovi, é de graça".',
+    );
   }
-  if (!/finmoovi/i.test(blocos[4]?.fala || '')) erros.push('o bloco "convite" não pede o comentário com a palavra FINMOOVI');
+  if (!/finmoovi/i.test(blocos[4]?.fala || '')) {
+    erros.push('o bloco "convite" não diz o nome FinMoovi — é ele que a pessoa vai procurar, então tem de ser dito');
+  }
+  /**
+   * ♦ O CONVITE DEIXOU DE PEDIR COMENTÁRIO (07/08/2026) — e esta é a outra ponta da regra.
+   *
+   * ═══ POR QUE MUDOU ═══
+   * Até aqui o vídeo ia só ao YouTube e ao Instagram, os dois sítios onde EXISTE um robô
+   * a responder a quem escreve FINMOOVI (o do Instagram manda mensagem privada, o daqui —
+   * `src/scripts/youtube/comentarios.js` — responde no próprio comentário, porque no
+   * YouTube não há mensagem privada nenhuma). A partir de 07/08 o MESMO ficheiro passa a
+   * sair também em TikTok, Facebook, LinkedIn, Threads, Telegram, Pinterest e Bluesky —
+   * **sete sítios onde ninguém responde.** A pessoa comentava e não recebia nada.
+   *
+   * ⚠️ **E a chamada NÃO se perdeu:** o "comenta FINMOOVI" continua ESCRITO na legenda do
+   * Instagram e do YouTube. As duas automações disparam pelo COMENTÁRIO, não pelo áudio —
+   * elas nem sabem o que o vídeo disse. Um vídeo só serve as nove, e ninguém fica sem
+   * resposta. (Decisão do dono, IMPL26 §12-A.)
+   *
+   * ⚠️ **E porquê uma trava, e não só a ordem no prompt:** neste repositório o que o
+   * prompt pede e nada pune, o modelo ignora — está medido vezes de mais. O prompt manda
+   * procurar o nome; isto é o que cobra.
+   */
+  const pedeComentario = falaToda.match(/\bcoment\p{L}*/iu);
+  if (pedeComentario) {
+    erros.push(
+      `a fala pede "${pedeComentario[0]}" — este vídeo sai em oito redes mais o YouTube, e só em duas existe robô `
+      + 'a responder a quem comenta. Nas outras a promessa fica por cumprir. O convite manda PROCURAR o nome: '
+      + '"quer ver o seu? procura FinMoovi, é de graça". O pedido de comentário vive na LEGENDA, não na fala.',
+    );
+  }
   // BORDÃO — passa de aviso a ERRO (31/07/2026). O prompt manda dizê-lo uma vez e
   // nada cobrava: no 4º teste ele simplesmente sumiu. É o mesmo padrão que este
   // repositório já pagou caro — o prompt pede, nada pune, o modelo ignora.
@@ -951,12 +988,18 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
    * fonte em vez de responder. O app tem o bloco 4 e o convite tem o 5; o 6 é a
    * resposta, a imagem e a assinatura. Mais nada.
    */
+  /**
+   * ⚠️ "coment*" SAIU DESTA LISTA em 07/08/2026 — não por ter deixado de ser proibido,
+   * mas porque passou a ser proibido em TODO o vídeo (ver a trava do convite acima).
+   * Mantê-lo aqui fazia a mesma palavra acender DOIS erros com explicações diferentes,
+   * e é assim que nasce o pêndulo: o modelo conserta uma queixa e parte a outra.
+   */
   const intrusoNoFecho = String(blocos[5]?.fala || '')
-    .match(/\b(blogs?|coment\p{L}*|links?|canal|canais|inscri\p{L}*|inscrev\p{L}*|finmoovi|apps?|aplicativos?)\b/iu);
+    .match(/\b(blogs?|links?|canal|canais|inscri\p{L}*|inscrev\p{L}*|finmoovi|apps?|aplicativos?)\b/iu);
   if (intrusoNoFecho) {
     erros.push(
       `o bloco "fecho" fala de "${intrusoNoFecho[0]}" — o fecho é a RESPOSTA à pergunta da capa, mais o bordão. `
-      + 'O app é do bloco 4 e o pedido de comentário é do bloco 5; repetir aqui rouba o lugar da resposta.',
+      + 'O app é do bloco 4 e o convite é do bloco 5; repetir aqui rouba o lugar da resposta.',
     );
   }
 

@@ -21,7 +21,7 @@ import { avaliarRetencao, RETENCAO_MINIMA } from '../youtube/retencao.js';
 import { prateleirasDoVideo, PLAYLIST_GERAL } from '../youtube/lib/playlists.js';
 import { inserirNoShort, inserirNoLongo, conferirOportunidade, fazerSlugDoDono } from '../../../functions/api/_oportunidade-fila.js';
 import { proximoLongo } from '../youtube/pick-next-longo.js';
-import { validarNarrativa } from '../youtube/roteiro-narrativa.js';
+import { validarNarrativa, buildPromptNarrativa } from '../youtube/roteiro-narrativa.js';
 import { jaSaiuVideoNoDia } from '../youtube/outbox.js';
 
 let passou = 0;
@@ -370,6 +370,93 @@ console.log('\n9. A REPESCAGEM — a segunda ronda do carteiro');
   ok('tracking vazio conta como "não saiu"', jaSaiuVideoNoDia('2026-08-07', {}) === false);
   ok('e um registo sem data não engana a conta',
     jaSaiuVideoNoDia('2026-08-07', { c: { videoId: 'x' } }) === false);
+}
+
+/**
+ * ═══ A CHAMADA DA FALA — a que passou a servir OITO redes (07/08/2026) ═══
+ *
+ * 🔴 **O QUE MUDOU E PORQUÊ.** Até aqui a fala pedia *"comenta FINMOOVI"*, e isso era
+ * verdade em dois sítios: no Instagram (a automação manda mensagem privada) e no YouTube
+ * (`src/scripts/youtube/comentarios.js` responde no próprio comentário, de hora a hora,
+ * porque no YouTube não existe mensagem privada). A partir de hoje o MESMO ficheiro sai
+ * também em TikTok, Facebook, LinkedIn, Threads, Telegram, Pinterest e Bluesky — **sete
+ * sítios onde ninguém responde.** Quem comentasse não recebia nada.
+ *
+ * ✅ A decisão do dono (IMPL26 §12-A): a FALA fica neutra — *"quer ver o seu? procura
+ * FinMoovi, é de graça"* — e o "comenta FINMOOVI" passa a viver só na LEGENDA do
+ * Instagram e do YouTube. Funciona porque as duas automações disparam pelo COMENTÁRIO,
+ * não pelo áudio: elas nem sabem o que o vídeo disse.
+ *
+ * ⚠️ **E porquê "procura o nome" e não "o link tá aqui embaixo":** no Instagram e no
+ * TikTok o endereço escrito na legenda **não é clicável**. Mandar procurar é a única
+ * frase que continua verdadeira nas nove.
+ */
+console.log('\n10. A CHAMADA DA FALA — uma só, verdadeira nas oito redes');
+
+{
+  // Só os erros DESTA regra: as narrativas de mesa aqui em baixo não tentam ser roteiros
+  // válidos (não têm capa-pergunta, nem bordão, nem tamanho) — é de propósito.
+  const AGULHA = /manda clicar em link|não diz o nome FinMoovi|sai em oito redes/;
+  const errosDaChamada = (convite, resto = {}) => {
+    const blocos = Array.from({ length: 6 }, (_, i) => ({ papel: '', fala: resto[i] || 'enchimento.' }));
+    blocos[4].fala = convite;
+    return (validarNarrativa({ blocos }).erros || []).filter((e) => AGULHA.test(e));
+  };
+
+  /**
+   * 🔑 A PROVA QUE CRUZA O PROMPT COM A TRAVA — a mesma que o vídeo longo já tinha.
+   * O molde sai do PRÓPRIO prompt, não de uma cópia escrita aqui: é a única forma de os
+   * dois nunca divergirem. Se alguém mudar o molde lá e esquecer a trava (ou o contrário),
+   * esta prova fica vermelha. É o defeito nº 1 deste repositório, medido 16 vezes.
+   */
+  const prompt = buildPromptNarrativa({ term: 'tema de prova', angle: '', definition: '', body: '' }, [], []);
+  const molde = (prompt.match(/✓ "(Quer ver o seu\?[^"]*)"/) || [])[1] || '';
+  ok('🔑 o molde da chamada existe no prompt', Boolean(molde), `veio: "${molde}"`);
+  ok('🔑 e o molde que o prompt manda usar PASSA na trava',
+    Boolean(molde) && errosDaChamada(molde).length === 0,
+    errosDaChamada(molde)[0]);
+
+  // 🔴 O QUE DEIXOU DE PODER — a promessa que sete redes não cumpririam.
+  ok('🔴 "Comenta FINMOOVI aqui embaixo" reprova',
+    errosDaChamada('Comenta FINMOOVI aqui embaixo que eu te mando o app.').length === 1);
+  // 🔴 E a frase que parece a solução óbvia, mas é falsa no Instagram e no TikTok.
+  ok('🔴 "o link tá aqui embaixo" reprova',
+    errosDaChamada('Quer ver o seu? O link tá aqui embaixo, é de graça.').length === 1);
+
+  // O nome continua obrigatório: é ele que a pessoa vai digitar.
+  ok('um convite que não diz o nome do app reprova',
+    errosDaChamada('Quer ver o seu? Procura ali e vê, é de graça.').length === 1);
+
+  /**
+   * ⚠️ A REGRA VALE PARA O VÍDEO INTEIRO, não só para o bloco do convite. Um "comenta aí"
+   * solto no meio da história quebra a mesma promessa nas mesmas sete redes.
+   */
+  ok('pedir comentário em QUALQUER bloco reprova, não só no convite',
+    errosDaChamada('Quer ver o seu? Procura FinMoovi. É de graça.', { 2: 'Comenta aqui o seu número.' }).length === 1);
+
+  /**
+   * 🔴 UMA PALAVRA, UM ERRO. O fecho já tinha uma trava que barrava "comentário"; com a
+   * nova, a mesma palavra acendia DOIS erros com explicações diferentes — e é assim que
+   * nasce o pêndulo (o modelo conserta uma queixa e parte a outra). Por isso "coment*"
+   * saiu da lista do fecho.
+   */
+  const noFecho = validarNarrativa({
+    blocos: Array.from({ length: 6 }, (_, i) => ({
+      papel: '', fala: i === 5 ? 'E é isso que muda o seu comentário.' : 'enchimento.',
+    })),
+  }).erros.filter((e) => /coment|sai em oito redes|fala de "/.test(e));
+  ok('🔴 "comentário" no fecho acende UM erro, não dois', noFecho.length === 1, noFecho.join(' | '));
+
+  /**
+   * E o alinhamento: uma trava que o prompt não ensina é uma armadilha. Se alguém
+   * acrescentar a regra sem a escrever no prompt, isto fica vermelho.
+   */
+  ok('a regra está ENSINADA no prompt: não pedir comentário',
+    /NÃO PEÇA COMENTÁRIO/.test(prompt));
+  ok('a regra está ENSINADA no prompt: mandar procurar o nome',
+    /PROCURAR o app pelo nome/.test(prompt));
+  ok('e o prompt explica PORQUÊ (as oito redes)',
+    /OITO redes/.test(prompt));
 }
 
 console.log(`\n${'═'.repeat(72)}`);
