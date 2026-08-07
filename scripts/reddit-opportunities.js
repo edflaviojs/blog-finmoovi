@@ -29,9 +29,12 @@ const SUBREDDITS = [
   'literaciafinanceira',
   'personalfinance',
   'FinancialPlanning',
-  'budgeting',
   'povertyfinance'
 ];
+// ⚠️ `budgeting` foi tentado e REMOVIDO em 07/08: devolve **403 sempre** — na
+// máquina do dono e no GitHub, mesmo depois das 3 tentativas. Não é limite de
+// ritmo (isso seria 429); aquele subreddit não serve o RSS. Cada tentativa dele
+// custava ~60s à corrida. Não voltar a pôr sem medir de novo.
 
 const MAX_OPPORTUNITIES = 50;
 const MAX_AGE_DAYS = 30;
