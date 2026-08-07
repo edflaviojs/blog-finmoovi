@@ -29,10 +29,18 @@ import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { tmpdir } from 'os';
 import { execFileSync } from 'child_process';
+import { tailPadSec } from './lib/tempos-do-formato.js';
 
 const OUTPUT_DIR = join(dirname(fileURLToPath(import.meta.url)), 'output');
 const AUDIO_ROOT = join(process.cwd(), 'youtube-render', 'public', 'audio');
-const TAIL_PAD = 0.35; // seg. de silêncio somados ao fim da fala p/ a cena respirar
+/**
+ * ♦ 07/08/2026 — O SILÊNCIO DA CAUDA PASSOU A DEPENDER DO FORMATO.
+ * Era uma constante de 0,35s. Continua a ser 0,35s no Short de 50s (nada muda para
+ * ele), mas o Short de 16s em loop precisa de 0,10s: com 0,35s no fim, a emenda do
+ * loop tinha um terço de segundo de silêncio — logo onde o vídeo tem de reiniciar sem
+ * se notar. O número vive em `lib/tempos-do-formato.js` porque o `srt-short.js` e o
+ * render precisam do MESMO valor. Uma regra, um sítio.
+ */
 
 // ── Sanidade do áudio por cena (F1.5) ──
 // O edge-tts às vezes fecha o stream cedo SEM lançar erro — o buffer sai com bytes
@@ -612,6 +620,9 @@ async function main() {
   const script = readScript(slug);
   const scenes = script.scenes || [];
   if (!scenes.length) throw new Error('roteiro sem cenas');
+
+  // O silêncio da cauda, conforme o formato (0,35s no de 50s · 0,10s no loop de 16s).
+  const TAIL_PAD = tailPadSec(script);
 
   /**
    * ═══ 🔴 A INTENÇÃO DA VOZ ESTÁ DESLIGADA, POR ORDEM DO DONO (04/08/2026) ═══

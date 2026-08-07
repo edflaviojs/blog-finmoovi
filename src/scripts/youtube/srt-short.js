@@ -19,6 +19,7 @@ import { generateText } from '../apis/kie-ai.js';
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { respiroSec } from './lib/tempos-do-formato.js';
 
 const FPS = 30;
 const TRANSITION_FRAMES = 8;
@@ -62,10 +63,18 @@ export function fmtTime(sec) {
 // intro, os dois já registados neste ficheiro.
 const RESPIRO_SEC = 0.7;
 
-// Início de cada cena (seg) no timeline global, descontando as transições.
-export function masterStarts(scenes) {
+/**
+ * Início de cada cena (seg) no timeline global, descontando as transições.
+ *
+ * ♦ 07/08/2026 — `respiro` passou a ser PARÂMETRO, com o 0,7s de sempre por omissão
+ * (o Short de 50s não sente nada). O Short de 16s em loop usa 0,30s: com 0,7s entre
+ * quatro cenas, um quinto do vídeo seria silêncio. Quem manda no número é
+ * `lib/tempos-do-formato.js` — e é de lá que este ficheiro o recebe, para não haver
+ * duas cópias a divergir (que foi como a legenda já se adiantou 0,7s por cena).
+ */
+export function masterStarts(scenes, respiro = RESPIRO_SEC) {
   const frames = scenes.map((s, i) => Math.max(1, Math.round(
-    (s.durationSec + (i < scenes.length - 1 ? RESPIRO_SEC : 0)) * FPS,
+    (s.durationSec + (i < scenes.length - 1 ? respiro : 0)) * FPS,
   )));
   const starts = [];
   let prefix = 0;
@@ -141,15 +150,18 @@ async function main() {
   if (!existsSync(timingPath)) throw new Error(`timing.json não encontrado (${timingPath}) — rode tts-short.js antes`);
   const timing = JSON.parse(readFileSync(timingPath, 'utf-8'));
   const scenes = timing.scenes || [];
-  const starts = masterStarts(scenes);
   const dir = join(AUDIO_ROOT, slug);
 
-  // Roteiro (script.json) só p/ saber o tipo de intro — timing.json não carrega
-  // essa informação (ver tts-short.js).
+  // Roteiro (script.json) p/ saber o tipo de intro E o FORMATO — o timing.json não
+  // carrega nenhuma das duas coisas (ver tts-short.js).
+  // ⚠️ Passou a ser lido ANTES do masterStarts: é o formato que decide o respiro entre
+  // cenas, e com a leitura depois a legenda do Short de 16s sairia com o respiro do de
+  // 50s — 0,4s de erro por cena, a acumular.
   const scriptPath = join(OUTPUT_DIR, `${slug}.script.json`);
   if (!existsSync(scriptPath)) throw new Error(`roteiro não encontrado (${scriptPath}) — rode antes do srt-short.js`);
   const script = JSON.parse(readFileSync(scriptPath, 'utf-8'));
   const introSec = introSecondsFor(script);
+  const starts = masterStarts(scenes, respiroSec(script));
 
   // PT — timestamps reais offsetados p/ o global (intro + cena/transição).
   const ptWords = [];
