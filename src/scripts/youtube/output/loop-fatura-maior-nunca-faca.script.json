@@ -1,0 +1,117 @@
+{
+  "slug": "loop-fatura-maior-nunca-faca",
+  "formato": "loop16",
+  "term": "A fatura veio maior",
+  "category": "vida",
+  "keyword": "FATURA",
+  "situacao": "fatura-maior",
+  "gancho": "nunca-faca",
+  "ganchoFamilia": "nunca faça",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "bola-neve",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Nunca faça isso com a fatura do cartão. Comigo aconteceu mês passado.",
+      "durationSec": 3.97,
+      "shots": [
+        {
+          "anchor": "fatura",
+          "visual": {
+            "type": "statement",
+            "text": "Cuidado com a fatura"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "cartão",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-neve"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Abri meu aplicativo e a fatura estava maior do que eu lembrava.",
+      "durationSec": 3.97,
+      "shots": [
+        {
+          "anchor": "aplicativo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-neve"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "fatura",
+          "visual": {
+            "type": "statement",
+            "text": "A fatura veio maior"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então conferi compra por compra, e achei um errinho que passou.",
+      "durationSec": 3.63,
+      "shots": [
+        {
+          "anchor": "conferi",
+          "visual": {
+            "type": "statement",
+            "text": "Achei um errinho"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "compra",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-neve"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Desde então, eu nunca faço isso com a fatura do cartão.",
+      "durationSec": 3.63,
+      "shots": [
+        {
+          "anchor": "fatura",
+          "visual": {
+            "type": "statement",
+            "text": "Nunca faça isso"
+          }
+        },
+        {
+          "anchor": "cartão",
+          "visual": {
+            "type": "statement",
+            "text": "Cuidado com a fatura"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
