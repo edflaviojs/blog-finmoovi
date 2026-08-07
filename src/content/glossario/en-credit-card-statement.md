@@ -4,6 +4,7 @@ definition: "What Credit Card Statement is and how it shows up in your everyday 
 title: "Credit Card Statement - Financial Glossary"
 description: "What Credit Card Statement is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/fatura-do-cartao-mais.webp"
+imageAlt: "Gold coins, lifebuoy, and plants in jars on dark background."
 category: "basico"
 tags: ["Credit Card Statement", "glossary", "finance"]
 author: "FinMoovi"

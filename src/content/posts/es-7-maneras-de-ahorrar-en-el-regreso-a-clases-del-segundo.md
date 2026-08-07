@@ -3,6 +3,7 @@ title: "7 maneras de ahorrar en el regreso a clases del segundo semestre (2026)"
 description: "Descubre estrategias prácticas para reducir costos al volver a clases y mantén tu presupuesto bajo control con FinMoovi."
 tickerHeadline: "Corte gastos en el regreso a clases"
 image: "/images/posts/7-maneiras-de-economizar-na-volta-as-aulas-do-2-semestre.webp"
+imageAlt: "Cuatro personas sonrientes reunidas en mesa de madera con taza, monedas y teléfono."
 category: "orcamento"
 locale: "es"
 tags: ["regreso a clases","ahorro","finanzas personales","planificación escolar","FinMoovi","presupuesto","segundo semestre","material escolar barato"]

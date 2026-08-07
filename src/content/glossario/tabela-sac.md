@@ -1,6 +1,7 @@
 ---
 term: "Tabela SAC"
 image: "/images/glossario/tabela-sac.webp"
+imageAlt: "Moedas douradas empilhadas e planta crescendo em frasco sobre fundo escuro."
 definition: "Sistema de Amortização Constante. Método de pagamento de financiamentos onde a amortização é fixa e as parcelas diminuem ao longo do tempo."
 category: "credito"
 relatedTerms: ["Amortização", "Financiamento", "Juros Compostos"]

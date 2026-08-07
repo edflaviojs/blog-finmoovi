@@ -3,6 +3,7 @@ title: "7 Ways to Save on Back‑to‑School for the 2nd Semester (2026)"
 description: "Practical tips to cut back‑to‑school costs and keep your budget on track with FinMoovi."
 tickerHeadline: "Trim back‑to‑school expenses"
 image: "/images/posts/7-maneiras-de-economizar-na-volta-as-aulas-do-2-semestre.webp"
+imageAlt: "Four smiling people sit at a wooden table with notebooks, coins, and a smartphone."
 category: "orcamento"
 locale: "en"
 tags: ["back-to-school","savings","personal finance","school budgeting","FinMoovi","budget","second semester","cheap school supplies"]

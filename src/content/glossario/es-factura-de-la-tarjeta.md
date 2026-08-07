@@ -4,6 +4,7 @@ definition: "Qué es factura de la tarjeta y cómo aparece en tu día a día —
 title: "factura de la tarjeta - Glosario Financiero"
 description: "Qué es factura de la tarjeta y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/fatura-do-cartao-mais.webp"
+imageAlt: "Monedas doradas, planta verde en frasco y esfera con flotador sobre fondo oscuro."
 category: "basico"
 tags: ["factura de la tarjeta", "glosario", "finanzas"]
 author: "FinMoovi"

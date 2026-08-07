@@ -4,6 +4,7 @@ definition: "Entenda o que é taxa financeira, como funciona, vantagens, riscos 
 title: "taxa financeira - Glossário Financeiro"
 description: "Entenda o que é taxa financeira, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
 image: "/images/glossario/taxa.webp"
+imageAlt: "Moedas douradas empilhadas, gráfico de crescimento e plantas em frascos sobre fundo escuro."
 category: "basico"
 tags: ["taxa financeira", "glossário", "finanças"]
 author: "FinMoovi"

@@ -1,6 +1,7 @@
 ---
 term: "Score de Crédito"
 image: "/images/glossario/score-de-credito.webp"
+imageAlt: "Moedas douradas empilhadas e planta crescendo em vaso com moedas, fundo escuro."
 definition: "Pontuação de 0 a 1000 que indica a probabilidade de você pagar suas contas em dia. Quanto maior, mais fácil conseguir crédito."
 category: "credito"
 relatedTerms: ["Financiamento", "Juros Compostos", "Cheque Especial"]

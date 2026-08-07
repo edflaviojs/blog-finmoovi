@@ -4,6 +4,7 @@ definition: "O que é fatura do cartão mais e como isso aparece no seu dia a di
 title: "fatura do cartão mais - Glossário Financeiro"
 description: "O que é fatura do cartão mais e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/fatura-do-cartao-mais.webp"
+imageAlt: "Moedas douradas, bóia e plantas em frascos sobre fundo azul escuro."
 category: "basico"
 tags: ["fatura do cartão mais", "glossário", "finanças"]
 author: "FinMoovi"

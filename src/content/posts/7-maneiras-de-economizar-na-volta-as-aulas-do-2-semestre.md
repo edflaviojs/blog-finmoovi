@@ -3,6 +3,7 @@ title: "7 maneiras de economizar na volta às aulas do 2º semestre (2026)"
 description: "Descubra estratégias práticas para reduzir custos na volta às aulas e mantenha o orçamento sob controle usando o FinMoovi."
 tickerHeadline: "Corte gastos na volta às aulas"
 image: "/images/posts/7-maneiras-de-economizar-na-volta-as-aulas-do-2-semestre.webp"
+imageAlt: "Quatro pessoas sorrindo em mesa de madeira com cadernos, moedas e canetas."
 category: "orcamento"
 locale: "pt"
 tags: ["volta às aulas","economia","finanças pessoais","planejamento escolar","FinMoovi","orçamento","volta aulas segundo semestre","material escolar barato"]
