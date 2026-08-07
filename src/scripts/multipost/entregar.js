@@ -143,6 +143,169 @@ function limpar(texto) {
   return String(texto || '').replace(/\*/g, '').replace(/\s+/g, ' ').trim();
 }
 
+// ═══════════════════════════════════════════════════════════════════════════════
+// OS NÚMEROS VOLTAM A SER ALGARISMOS (07/08/2026)
+// ═══════════════════════════════════════════════════════════════════════════════
+
+/**
+ * 🔴 O DEFEITO, E ELE JÁ ESTAVA NO AR.
+ *
+ * As legendas destas redes copiam frases da NARRAÇÃO — e a narração é escrita para ser
+ * **falada em voz alta**, onde os números TÊM de ir por extenso (há um conversor inteiro
+ * na produção só para isso: `numerosPorExtenso`, em `roteiro-narrativa.js`, porque a voz
+ * lia "R$ 500" como "erre cifrão quinhentos").
+ *
+ * Só que numa legenda ESCRITA isso sai assim:
+ *   ✗ *"O primeiro leva cento e cinquenta reais, o outro duzentos"*
+ *   ✓ *"O primeiro leva R$ 150, o outro 200"*
+ *
+ * ⚠️ **Isto saiu no Instagram durante dias** e ninguém tinha reparado — apareceu ao pôr o
+ * mesmo texto no LinkedIn, que é onde texto malcuidado dói mais. É o mesmo texto a servir
+ * dois ouvidos diferentes: a voz e o olho.
+ *
+ * ═══ A REGRA, E É CONSERVADORA DE PROPÓSITO ═══
+ * Só se converte quando **não há dúvida**:
+ *   1. o número é seguido de "reais"/"real" → `R$ 150`
+ *   2. o número é seguido de "por cento"    → `15%`
+ *   3. o número vale **100 ou mais**         → `200`
+ *
+ * 🔴 **Tudo abaixo de 100 e sem unidade fica como está**, e há três razões medidas:
+ *   · *"um erro"* nunca pode virar *"1 erro"* — "um" é artigo muito mais vezes do que é número;
+ *   · *"as duas coisas"* pela mesma razão;
+ *   · numa ENUMERAÇÃO (*"em um, cinco e dez anos"*) converter só parte dela deixaria
+ *     *"um, cinco e 10 anos"*, que é pior do que não mexer. Com o piso em 100, nenhuma
+ *     delas é tocada.
+ * Um número que fica por extenso não estraga nada — *"dez anos"* lê-se bem. Um número
+ * convertido errado, sim.
+ */
+const VALOR_DA_PALAVRA = {
+  um: 1, uma: 1, dois: 2, duas: 2, tres: 3, quatro: 4, cinco: 5, seis: 6, sete: 7, oito: 8, nove: 9,
+  dez: 10, onze: 11, doze: 12, treze: 13, catorze: 14, quatorze: 14, quinze: 15,
+  dezesseis: 16, dezessete: 17, dezoito: 18, dezenove: 19,
+  vinte: 20, trinta: 30, quarenta: 40, cinquenta: 50, sessenta: 60, setenta: 70, oitenta: 80, noventa: 90,
+  cem: 100, cento: 100,
+  duzentos: 200, duzentas: 200, trezentos: 300, trezentas: 300, quatrocentos: 400, quatrocentas: 400,
+  quinhentos: 500, quinhentas: 500, seiscentos: 600, seiscentas: 600, setecentos: 700, setecentas: 700,
+  oitocentos: 800, oitocentas: 800, novecentos: 900, novecentas: 900,
+};
+const MULTIPLICADOR = { mil: 1000, milhao: 1e6, milhoes: 1e6, bilhao: 1e9, bilhoes: 1e9 };
+
+const semAcentoMin = (s) => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+
+/**
+ * ⚠️ O acento vive no PADRÃO, não numa limpeza antes: "três" e "milhões" aparecem
+ * acentuados no texto verdadeiro, e tirar os acentos para procurar obrigaria a repô-los
+ * depois — ou seja, a reescrever o texto todo para mexer num número.
+ */
+const COM_ACENTO = ['tr[eê]s', 'milh[ãa]o', 'milh[õo]es', 'bilh[ãa]o', 'bilh[õo]es'];
+const SEM_ACENTO = [...Object.keys(VALOR_DA_PALAVRA), ...Object.keys(MULTIPLICADOR)]
+  .filter((p) => !/^(tres|milhao|milhoes|bilhao|bilhoes)$/.test(p));
+
+/**
+ * 🔴 **AS PALAVRAS MAIS COMPRIDAS TÊM DE VIR PRIMEIRO, E O `\b` NO FIM É OBRIGATÓRIO.**
+ *
+ * Apanhado pela prova de mesa, e teria ido para a legenda: *"dois mil seiscentos e noventa
+ * e nove reais"* saía **"2.006centos e noventa e R$ 9"**. Duas causas somadas:
+ *   1. numa alternativa, o regex fica com a PRIMEIRA que serve — e "seis" está antes de
+ *      "seiscentos". Ele lia "seis" e deixava "centos" pendurado;
+ *   2. sem `\b` no fim, "seis" casa mesmo dentro de "seiscentos".
+ * A família é grande: **nove**centos, **sete**centos, **oito**centos, **quatro**centos,
+ * **seis**centos, **dez**essete… Cada uma destas voltaria a morder sozinha.
+ */
+const UM_NUMERO = `(?:${[...COM_ACENTO, ...SEM_ACENTO].sort((a, b) => b.length - a.length).join('|')})\\b`;
+// ⚠️ UM espaço só entre as palavras (nunca `\s`): o texto já passou por `limpar()`, que
+// junta os espaços — e é isso que garante que o tamanho do trecho casa com o original.
+const CORRIDA_DE_NUMEROS = new RegExp(`\\b${UM_NUMERO}(?: (?:e )?${UM_NUMERO})*`, 'gi');
+
+/**
+ * Lê o numeral do princípio da lista e diz **quantas palavras usou**.
+ *
+ * 🔑 A REGRA QUE SEPARA UM NÚMERO DE UMA LISTA: um numeral composto **desce sempre**
+ * ("dois MIL, SEIScentos e NOVENTA e NOVE"); uma enumeração sobe ("um, cinco e dez").
+ * Sem isto, "um, cinco e dez anos" virava o número 16 — foi exatamente esse o defeito que
+ * matou o Short de 07/08, do outro lado do pipeline.
+ */
+export function lerNumeral(palavras) {
+  let total = 0;
+  let acc = 0;
+  let ultima = Infinity;
+  let usadas = 0;
+  let leu = false;
+
+  for (let i = 0; i < palavras.length; i++) {
+    const p = semAcentoMin(palavras[i]);
+
+    if (p === 'e') {
+      // O "e" só pertence ao número se o que vem a seguir também pertencer.
+      const prox = semAcentoMin(palavras[i + 1] || '');
+      if (!leu || !(prox in VALOR_DA_PALAVRA || prox in MULTIPLICADOR)) break;
+      continue;
+    }
+    if (p in MULTIPLICADOR) {
+      total += (acc || 1) * MULTIPLICADOR[p];
+      acc = 0;
+      ultima = Infinity;
+      leu = true;
+      usadas = i + 1;
+      continue;
+    }
+    if (p in VALOR_DA_PALAVRA) {
+      const v = VALOR_DA_PALAVRA[p];
+      if (v >= ultima) break;   // não desceu → começou outro número, é lista
+      acc += v;
+      ultima = v;
+      leu = true;
+      usadas = i + 1;
+      continue;
+    }
+    break;
+  }
+  return leu ? { valor: total + acc, usadas } : null;
+}
+
+/** 1500 → "1.500". O ponto de milhar é o do Brasil. */
+const comPontos = (n) => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+
+/** O piso: abaixo disto, só converte se houver "reais" ou "por cento" a seguir. */
+export const PISO_SEM_UNIDADE = 100;
+
+export function numerosEmAlgarismo(texto) {
+  const s = String(texto || '');
+  let saida = '';
+  let cursor = 0;
+
+  for (const achado of s.matchAll(CORRIDA_DE_NUMEROS)) {
+    if (achado.index < cursor) continue;             // já consumido por uma corrida anterior
+    const palavras = achado[0].split(' ');
+    const lido = lerNumeral(palavras);
+    if (!lido) continue;
+
+    const trecho = palavras.slice(0, lido.usadas).join(' ');
+    const fim = achado.index + trecho.length;
+    const depois = s.slice(fim);
+
+    const dinheiro = depois.match(/^ (reais|real)\b/i);
+    const percentagem = depois.match(/^ por cento\b/i);
+    if (!dinheiro && !percentagem && lido.valor < PISO_SEM_UNIDADE) continue;
+
+    let novo;
+    let comidos = trecho.length;
+    if (dinheiro) { novo = `R$ ${comPontos(lido.valor)}`; comidos += dinheiro[0].length; }
+    else if (percentagem) { novo = `${comPontos(lido.valor)}%`; comidos += percentagem[0].length; }
+    else novo = comPontos(lido.valor);
+
+    saida += s.slice(cursor, achado.index) + novo;
+    cursor = achado.index + comidos;
+  }
+  return saida + s.slice(cursor);
+}
+
+/**
+ * O texto como ele vai ser LIDO com os olhos: sem asteriscos, sem espaços a mais, e com
+ * os números em algarismo. É por aqui que passa tudo o que vem da narração.
+ */
+export const paraLer = (texto) => numerosEmAlgarismo(limpar(texto));
+
 /**
  * ⚠️ OS ACENTOS FICAM. O Instagram aceita-os e é com eles que se procura em
  * português — "#inflação" tem público, "#inflacao" tem quase ninguém. Tirá-los
@@ -243,7 +406,14 @@ export function topicosDoRoteiro(roteiro) {
       frases.push(f);
     }
   }
-  const unicas = [...new Set(frases)];
+  /**
+   * ⚠️ OS NÚMEROS SÓ VIRAM ALGARISMO **DEPOIS** DO FILTRO DE TAMANHO, e é de propósito.
+   * A janela 38-95 foi calibrada sobre o texto FALADO; converter antes encurtaria as
+   * frases (*"cento e cinquenta reais"* tem 22 letras, *"R$ 150"* tem 6) e passaria a
+   * deixar entrar frases que hoje são recusadas — uma mudança que ninguém pediu, escondida
+   * dentro de um conserto de números.
+   */
+  const unicas = [...new Set(frases)].map(numerosEmAlgarismo);
   if (unicas.length >= 2) return unicas.slice(0, 3);
 
   // Rede de segurança: um guião sem frases aproveitáveis não deixa o bloco vazio.
@@ -274,7 +444,8 @@ export function etiquetasDo(roteiro) {
 
 export function montarLegenda(roteiro) {
   const titulo = limpar(roteiro.term || roteiro.keyword || '');
-  const gancho = limpar(roteiro.intro?.frase || '');
+  // ⚠️ O gancho vem da NARRAÇÃO, logo traz os números por extenso. Ver `numerosEmAlgarismo`.
+  const gancho = paraLer(roteiro.intro?.frase || '');
   const topicos = topicosDoRoteiro(roteiro);
   const tagsUnicas = etiquetasDo(roteiro);
 
@@ -383,8 +554,10 @@ export function encaixarNoLimite(blocos, limite) {
 }
 
 const tituloEGancho = (roteiro) => ({
+  // O título já é escrito para o OLHO (é ele que vai no YouTube) e por isso já traz os
+  // algarismos; o gancho vem da narração, que é escrita para o OUVIDO.
   titulo: limpar(roteiro.term || roteiro.keyword || ''),
-  gancho: limpar(roteiro.intro?.frase || ''),
+  gancho: paraLer(roteiro.intro?.frase || ''),
 });
 
 /** TikTok — sem link clicável, e as etiquetas contam muito. */

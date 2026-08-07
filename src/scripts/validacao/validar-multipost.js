@@ -24,6 +24,7 @@ import {
   duracaoDoMp4, primeiraLinha, STORY_MAX_SEG, MINUTOS_ATE_O_STORY,
   REDES, REDE_DE_FORA, REDE_TIKTOK, midiasDaRede, opcoesDaRede, montarPedido, oQueFalta,
   encaixarNoLimite, cortarNaPalavra, MAX_TITULO_TIKTOK, falaPedeComentario,
+  numerosEmAlgarismo, lerNumeral, topicosDoRoteiro, montarLegenda,
 } from '../multipost/entregar.js';
 
 let passou = 0;
@@ -436,7 +437,110 @@ console.log('\n11. A TRAVA DO VÍDEO ANTIGO — o que fala "comenta" só sai no 
   ok('e um roteiro sem cena de chamada não rebenta', falaPedeComentario({}) === false);
 }
 
-console.log('\n12. O ENVELOPE — a data fica FORA da lista de redes');
+/**
+ * ═══ OS NÚMEROS DA LEGENDA (07/08/2026) ═══
+ *
+ * 🔴 **O DEFEITO ESTAVA NO AR.** As legendas copiam frases da NARRAÇÃO, e a narração é
+ * escrita para ser FALADA — os números vão por extenso de propósito (a voz lia "R$ 500"
+ * como *"erre cifrão quinhentos"*). Numa legenda escrita isso sai
+ * *"cento e cinquenta reais"* em vez de *"R$ 150"*. Saiu assim no Instagram durante dias.
+ *
+ * ⚠️ **Esta secção é a mais perigosa do ficheiro:** um número convertido errado numa
+ * legenda é pior do que o defeito original. Por isso mede-se os dois lados — o que TEM de
+ * ser convertido, e sobretudo **o que NÃO PODE ser tocado**.
+ */
+console.log('\n12. OS NÚMEROS DA LEGENDA — de "cento e cinquenta reais" para "R$ 150"');
+
+{
+  const N = numerosEmAlgarismo;
+
+  // ── o que tem de converter ──────────────────────────────────────────────────
+  ok('🔴 o caso real: "cento e cinquenta reais" → "R$ 150"',
+    N('O primeiro leva cento e cinquenta reais.') === 'O primeiro leva R$ 150.', N('O primeiro leva cento e cinquenta reais.'));
+  ok('"quinhentos reais" → "R$ 500"',
+    N('tiram quinhentos reais do seu bolso') === 'tiram R$ 500 do seu bolso', N('tiram quinhentos reais do seu bolso'));
+  ok('"cem reais" → "R$ 100"', N('cem reais por mês') === 'R$ 100 por mês');
+  ok('o milhar leva ponto: "quatro mil reais" → "R$ 4.000"',
+    N('ganha quatro mil reais') === 'ganha R$ 4.000', N('ganha quatro mil reais'));
+  /**
+   * 🔑 O NUMERAL COMPOSTO TEM DE SER LIDO INTEIRO. "dois mil seiscentos e noventa e nove"
+   * é UM número (2699), não quatro pedaços — a mesma regra que o validador da narração
+   * aprendeu à força do outro lado do pipeline.
+   */
+  ok('🔑 "dois mil seiscentos e noventa e nove reais" → "R$ 2.699"',
+    N('dá dois mil seiscentos e noventa e nove reais') === 'dá R$ 2.699', N('dá dois mil seiscentos e noventa e nove reais'));
+  /**
+   * 🔴 A FAMÍLIA QUE MORDEU. Esta prova nasceu de um defeito REAL apanhado aqui: o
+   * "seiscentos" era lido como "seis" + "centos" e a legenda saía **"2.006centos e noventa
+   * e R$ 9"**. A causa é que "seis" vem antes de "seiscentos" na lista, e o regex fica com
+   * a primeira alternativa que serve. São seis palavras com o mesmo problema — se alguém
+   * mexer na construção do padrão, é aqui que acende.
+   */
+  for (const [frase, esperado] of [
+    ['seiscentos reais', 'R$ 600'], ['setecentos reais', 'R$ 700'], ['oitocentos reais', 'R$ 800'],
+    ['novecentos reais', 'R$ 900'], ['quatrocentos reais', 'R$ 400'], ['dezessete reais', 'R$ 17'],
+  ]) {
+    ok(`🔴 "${frase}" → "${esperado}" (e não partido ao meio)`, N(frase) === esperado, N(frase));
+  }
+  ok('a percentagem também: "quinze por cento" → "15%"',
+    N('rende quinze por cento ao ano') === 'rende 15% ao ano', N('rende quinze por cento ao ano'));
+  ok('sem unidade, mas de 100 para cima, converte: "duzentos" → "200"',
+    N('o outro duzentos, e o resto some') === 'o outro 200, e o resto some', N('o outro duzentos, e o resto some'));
+
+  // ── 🔴 o que NÃO pode ser tocado ────────────────────────────────────────────
+  /**
+   * 🔴 "UM" É ARTIGO MUITO MAIS VEZES DO QUE É NÚMERO. Se isto falhar, sai "1 erro" e
+   * "as 2 coisas" nas legendas de todas as redes.
+   */
+  ok('🔴 "um erro" NÃO vira "1 erro"', N('cometeu um erro grave') === 'cometeu um erro grave');
+  ok('🔴 "as duas coisas" NÃO vira "as 2 coisas"', N('as duas coisas juntas') === 'as duas coisas juntas');
+  ok('🔴 "três erros" fica por extenso (abaixo do piso e sem unidade)',
+    N('são três erros no cartão') === 'são três erros no cartão');
+  ok('"dez anos" fica como está — lê-se bem assim', N('em dez anos') === 'em dez anos');
+  /**
+   * 🔴 A ENUMERAÇÃO. "em um, cinco e dez anos" é uma LISTA, não o número 16 — foi
+   * exatamente essa soma que matou o Short de 07/08, do outro lado do pipeline. Aqui o
+   * piso de 100 protege sozinho: nenhum deles chega lá, nenhum é tocado.
+   */
+  ok('🔴 "um, cinco e dez anos" fica INTEIRO — é lista, não é o número 16',
+    N('olha em um, cinco e dez anos') === 'olha em um, cinco e dez anos', N('olha em um, cinco e dez anos'));
+  ok('e a lista continua intacta mesmo com "e" no meio',
+    N('cinco e dez') === 'cinco e dez');
+
+  // ── a leitura por baixo, medida à parte ─────────────────────────────────────
+  ok('o leitor desce no numeral composto e soma certo',
+    lerNumeral(['dois', 'mil', 'seiscentos', 'e', 'noventa', 'e', 'nove']).valor === 2699);
+  ok('🔑 e PARA quando o número sobe (é lista, não é soma)',
+    lerNumeral(['cinco', 'e', 'dez']).valor === 5, JSON.stringify(lerNumeral(['cinco', 'e', 'dez'])));
+  ok('"mil" sozinho vale mil', lerNumeral(['mil']).valor === 1000);
+  ok('e uma palavra que não é número devolve nada', lerNumeral(['cartão']) === null);
+
+  // ── o texto à volta não pode mexer-se ───────────────────────────────────────
+  /**
+   * ⚠️ O conversor reescreve o texto: se ele comer uma vírgula, um acento ou um espaço,
+   * a legenda sai estragada de uma forma que nenhuma outra prova apanha.
+   */
+  const original = 'Sabe quais três erros no cartão tiram quinhentos reais do seu bolso todo mês?';
+  ok('🔴 só o número muda — pontuação, acentos e espaços ficam iguais',
+    N(original) === 'Sabe quais três erros no cartão tiram R$ 500 do seu bolso todo mês?', N(original));
+  ok('texto sem número nenhum volta idêntico',
+    N('Uma frase inteira sem número nenhum, com vírgula.') === 'Uma frase inteira sem número nenhum, com vírgula.');
+  ok('e texto vazio não rebenta', N('') === '' && N(null) === '' && N(undefined) === '');
+  // ⚠️ "cem" dentro de outra palavra não pode ser apanhado.
+  ok('"centavos" e "cenário" não são números', N('uns centavos no cenário') === 'uns centavos no cenário');
+
+  // ── e o efeito onde interessa: as legendas ──────────────────────────────────
+  const topicos = topicosDoRoteiro(ROTEIRO);
+  ok('🔑 os TÓPICOS da legenda saem com algarismos',
+    topicos.some((t) => /R\$ \d/.test(t)) && !topicos.some((t) => /cento e cinquenta/i.test(t)),
+    topicos.join(' | '));
+  ok('🔑 e o GANCHO também, em todas as redes',
+    REDES.every((r) => !/quinhentos reais/i.test(r.legenda(ROTEIRO, r.limite))));
+  ok('🔴 incluindo o Instagram, que é onde o defeito estava no ar',
+    /R\$ 500/.test(montarLegenda(ROTEIRO)) && !/quinhentos reais/.test(montarLegenda(ROTEIRO)));
+}
+
+console.log('\n13. O ENVELOPE — a data fica FORA da lista de redes');
 
 {
   const corpo = montarPedido({
