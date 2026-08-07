@@ -33,6 +33,9 @@ import { join, dirname } from 'node:path';
 const ROOT = process.cwd();
 const TRACKING = join(ROOT, '.github', 'data', 'youtube-published.json');
 const OUT = join(ROOT, '.github', 'data', 'youtube-retencao.json');
+// ♦ 07/08/2026 — os roteiros, para o relatório saber o FORMATO e o GANCHO de cada
+// vídeo. É de lá que sai a comparação por gancho; o nome do ficheiro não serve.
+const OUTPUT_DIR = join(ROOT, 'src', 'scripts', 'youtube', 'output');
 
 const TOKEN_URL = 'https://oauth2.googleapis.com/token';
 const ANALYTICS_URL = 'https://youtubeanalytics.googleapis.com/v2/reports';
@@ -303,6 +306,81 @@ async function main() {
     log('⚠️ NENHUMA curva disponível — audiência pequena de mais para o YouTube dar o detalhe.');
     log('   Isto é resposta na mesma: o tamanho do capítulo terá de sair de convenção,');
     log('   e a retenção mede-se outra vez quando os vídeos públicos acumularem audiência.');
+  }
+
+  /**
+   * ── QUAL GANCHO SEGURA GENTE (07/08/2026) ────────────────────────────────────
+   *
+   * O dono deu 10 ganchos para o Short de 16s (*"Nunca faça X"*, *"É sério que
+   * ninguém está falando de X?"*…) e o sorteio distribui-os por igual de propósito —
+   * cada um apanha o mesmo número de vídeos, senão a comparação seria injusta.
+   *
+   * ⚠️ **É AQUI QUE ISSO DEIXA DE SER GOSTO E PASSA A SER NÚMERO.** Ao fim de duas
+   * semanas são ~28 vídeos, uns 3 por gancho. Aí dá para deitar fora os ganchos
+   * fracos com prova na mão, em vez de discutir qual soa melhor.
+   *
+   * A família do gancho sai do PRÓPRIO ROTEIRO (`ganchoFamilia`), não do nome do
+   * ficheiro: um slug é uma conveniência e muda; o roteiro é o registo.
+   */
+  const porGancho = new Map();
+  const porFormato = new Map();
+  for (const r of resultados) {
+    let ficha = null;
+    try {
+      ficha = JSON.parse(readFileSync(join(OUTPUT_DIR, `${r.slug}.script.json`), 'utf-8'));
+    } catch { /* roteiro apagado ou de antes do registo: entra como formato antigo */ }
+
+    const formato = (ficha && ficha.formato) || 'short50';
+    if (!porFormato.has(formato)) porFormato.set(formato, []);
+    porFormato.get(formato).push(r);
+
+    const familia = ficha && ficha.ganchoFamilia;
+    if (familia) {
+      if (!porGancho.has(familia)) porGancho.set(familia, []);
+      porGancho.get(familia).push(r);
+    }
+  }
+
+  if (porFormato.size > 1) {
+    log('');
+    log('══════════ POR FORMATO ══════════');
+    // ⚠️ Separados de propósito: um vídeo de 16s e um de 50s não se comparam, e a
+    // média dos dois juntos esconde os dois.
+    for (const [formato, lista] of porFormato) {
+      const nome = formato === 'loop16' ? 'Short de 16s (loop)' : 'Short de 50s';
+      const comV = lista.filter((r) => (r.views || 0) > 0);
+      log(`${nome.padEnd(22)} ${lista.length} vídeo(s) · ${pc(media(comV, (r) => r.percentagemMedia))} assistido em média`);
+    }
+  }
+
+  if (porGancho.size) {
+    log('');
+    log('══════════ QUAL GANCHO SEGURA GENTE ══════════');
+    const ranking = [...porGancho.entries()]
+      .map(([familia, lista]) => {
+        const comV = lista.filter((r) => (r.views || 0) > 0);
+        return { familia, n: lista.length, comAudiencia: comV.length, pc: media(comV, (r) => r.percentagemMedia) };
+      })
+      .sort((a, b) => (b.pc ?? -1) - (a.pc ?? -1));
+
+    for (const g of ranking) {
+      const nota = g.comAudiencia === 0
+        ? '(ainda sem audiência)'
+        : (g.comAudiencia < 3 ? `(só ${g.comAudiencia} com audiência — ainda é cedo)` : '');
+      log(`${String(g.familia).padEnd(22)} ${pc(g.pc).padStart(5)}  ·  ${g.n} vídeo(s) ${nota}`);
+    }
+
+    const maduros = ranking.filter((g) => g.comAudiencia >= 3 && g.pc != null);
+    if (maduros.length >= 3) {
+      const melhor = maduros[0];
+      const pior = maduros[maduros.length - 1];
+      log('');
+      log(`🏆 melhor: "${melhor.familia}" (${pc(melhor.pc)})   ·   🥀 pior: "${pior.familia}" (${pc(pior.pc)})`);
+    } else {
+      log('');
+      log('⏳ Ainda cedo para eleger o melhor gancho: é preciso pelo menos 3 vídeos COM audiência por gancho.');
+      log('   A 2 vídeos por dia e 10 ganchos em rodízio, isso são cerca de duas semanas.');
+    }
   }
 
   // ── O AVISO DOS 70% (ordem do dono, 06/08) ──
