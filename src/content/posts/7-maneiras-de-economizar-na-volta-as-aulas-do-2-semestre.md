@@ -18,9 +18,9 @@ seo:
   keywords: ["volta às aulas","economia","finanças pessoais","planejamento escolar","FinMoovi","orçamento","volta aulas segundo semestre","material escolar barato"]
 ---
 
-Imagine a cena: você chega em casa após o primeiro dia de aula, a mochila está transbordando de cadernos, a bolsa de lanche cheia de lanches comprados na hora e, na mesa da cozinha, uma pilha de notas fiscais que parece nunca ter fim. Enquanto tenta organizar tudo, sente aquele aperto no peito ao perceber que o dinheiro que deveria ficar guardado para a reserva de emergência já foi consumido por lápis, uniformes e lanches. Esse é o ponto de partida de muitas famílias que encaram a volta às aulas como um “custo inesperado”.
+Imagine a cena: você chega em casa após o primeiro dia de aula, a mochila está transbordando de cadernos, a bolsa de lanche cheia de lanches comprados na hora e, na mesa da cozinha, uma pilha de notas fiscais que parece nunca ter fim. Enquanto tenta organizar tudo, sente aquele aperto no peito ao perceber que o dinheiro que deveria ficar guardado para a [reserva de emergência](/ferramentas/calculadora-reserva) já foi consumido por lápis, uniformes e lanches. Esse é o ponto de partida de muitas famílias que encaram a volta às aulas como um “custo inesperado”.
 
-A realidade é que a volta às aulas não precisa ser sinônimo de aperto financeiro. O conceito de planejamento, porém, vai além de simplesmente anotar gastos; ele começa ao entender o que realmente precisa ser comprado, como evitar despesas redundantes e como transformar cada compra em uma oportunidade de economizar. E, como se fosse um amigo que já conhece todas as armadilhas, o FinMoovi entra em cena: com a captura inteligente de notas fiscais e a categorização automática, ele transforma aquele monte de papel em informações claras, prontas para serem analisadas. Em menos de cinco minutos – basta abrir o app, tirar a foto da primeira nota e confirmar a categoria sugerida – você já tem o primeiro passo rumo a um semestre mais leve no bolso.
+A realidade é que a volta às aulas não precisa ser sinônimo de aperto [financeiro](/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas). O conceito de [planejamento](/posts/orcamento-com-salario-minimo-dicas-praticas), porém, vai além de simplesmente anotar gastos; ele começa ao entender o que realmente precisa ser comprado, como evitar despesas redundantes e como transformar cada compra em uma oportunidade de economizar. E, como se fosse um amigo que já conhece todas as armadilhas, o FinMoovi entra em cena: com a [captura inteligente](/posts/como-garantir-financiamento-para-seus-projetos-sem-dor-de) de notas fiscais e a categorização automática, ele transforma aquele monte de papel em informações claras, prontas para serem analisadas. Em menos de cinco minutos – basta abrir o app, tirar a foto da primeira nota e confirmar a categoria sugerida – você já tem o primeiro passo rumo a um semestre mais leve no bolso.
 
 ## 1. Defina um orçamento visual para o semestre
 
@@ -48,7 +48,7 @@ Comprar tudo de uma vez pode parecer mais fácil, mas costuma gerar surpresas de
 
 Descontos são ótimos, mas só quando realmente ajudam a reduzir o custo final.
 
-1. **Pesquise preços** em duas ou três lojas antes de decidir. Sites de comparação de preços internacionais podem dar uma boa ideia do valor médio.
+1. **Pesquise preços** em duas ou três lojas antes de decidir. Sites de [comparação](/posts/previdencia-privada-2026-vale-a-pena-guia-pratico) de preços internacionais podem dar uma boa ideia do valor médio.
 2. **Use cupons apenas em itens que já estavam na sua lista**. Se um cupom oferece 20 % de desconto em um item que você nem pretendia comprar, ignore.
 3. **Considere compras em volume** para itens consumíveis (lápis, papel). Comprar a quantidade suficiente para o semestre inteiro costuma sair mais barato que compras mensais.
 
@@ -61,7 +61,7 @@ A tentação de comprar aquele brinquedo ou lanche extra é quase inevitável, e
 
 
 - **Aplique a regra dos 24 horas**: antes de colocar um item no carrinho, espere um dia inteiro. Muitas vezes o desejo desaparece.
-- **Use o recurso de alertas de saldo** do FinMoovi. Se a compra comprometer o limite de uma categoria, o app envia uma notificação, lembrando que aquele gasto pode desbalancear o orçamento.
+- **Use o recurso de [alertas](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto) de saldo** do FinMoovi. Se a compra comprometer o limite de uma categoria, o app envia uma notificação, lembrando que aquele gasto pode desbalancear o orçamento.
 - **Transforme o “sim” em “não”**: ao receber a notificação, abra o app, clique em “Adiar” e registre o item como “Desejo”. No final do mês, avalie se realmente precisava dele.
 
 ## 5. Monitore despesas fixas e reduza custos recorrentes
@@ -69,7 +69,7 @@ A tentação de comprar aquele brinquedo ou lanche extra é quase inevitável, e
 Além das compras de material, há despesas mensais que também impactam o bolso durante o semestre: transporte, internet, telefonia e até assinaturas de streaming usadas para estudos.
 
 - **Faça um diagnóstico** usando a captura inteligente de notas: tire fotos das contas mensais e deixe o FinMoovi categorizar automaticamente.
-- **Negocie descontos**. Muitos serviços oferecem tarifas reduzidas para estudantes ou famílias. Use o relatório de fluxo de caixa para identificar onde há espaço para renegociação.
+- **Negocie descontos**. Muitos serviços oferecem tarifas reduzidas para estudantes ou famílias. Use o relatório de [fluxo de caixa](/glossario/fluxo-de-caixa) para identificar onde há espaço para renegociação.
 - **Considere alternativas**: por exemplo, o transporte coletivo pode ser substituído por caronas organizadas entre pais, reduzindo o gasto com combustível.
 
 ## 6. Crie uma reserva de emergência específica para imprevistos escolares
@@ -100,7 +100,7 @@ Esse exercício cria um ciclo de feedback que, ao final, deixa você mais confia
 1. Abra o app e vá para “Captura inteligente”.
 2. Tire a foto da primeira nota fiscal que encontrou (pode ser a do material escolar).
 3. Confirme a categoria sugerida (ex.: “Material Escolar”).
-4. Observe como o gasto aparece no seu painel de orçamento visual.
+4. Observe como o gasto aparece no seu painel de [orçamento visual](/posts/como-organizar-seu-dinheiro-com-um-app-facil-de-usar).
 
 Em menos de cinco minutos você já tem uma peça do quebra‑cabeça financeiro no lugar.
 

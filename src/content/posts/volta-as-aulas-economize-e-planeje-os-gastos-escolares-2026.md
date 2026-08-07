@@ -23,7 +23,7 @@ A manhã começa com o som da caixa registradora do supermercado, enquanto o fil
 
 A solução começa com um passo simples dentro do FinMoovi: tire uma foto da nota fiscal da compra de material escolar, deixe o app categorizar automaticamente cada item e veja, em poucos segundos, quanto já foi gasto em “Material de Estudos”. Em cinco minutos você tem um panorama claro e pode decidir, na hora, o que manter e o que adiar.
 
-Os calendários de volta às aulas variam: 25/01 (Brasil), 20/08 (Estados Unidos), 01/09 (Reino Unido), 10/09 (Portugal), 10/09 (Espanha). Independentemente da data, a preparação financeira segue os mesmos princípios.
+Os calendários de [volta às aulas](/posts/7-maneiras-de-economizar-na-volta-as-aulas-do-2-semestre) variam: 25/01 (Brasil), 20/08 (Estados Unidos), 01/09 (Reino Unido), 10/09 (Portugal), 10/09 (Espanha). Independentemente da data, a preparação financeira segue os mesmos princípios.
 
 ## Mapeie os itens essenciais
 

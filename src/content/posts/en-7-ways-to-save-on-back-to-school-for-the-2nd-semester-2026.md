@@ -18,9 +18,9 @@ seo:
   keywords: ["back-to-school","savings","personal finance","school budgeting","FinMoovi","budget","second semester","cheap school supplies"]
 ---
 
-Imagine this: you get home after the first day of class, the backpack is overflowing with notebooks, the lunch bag is packed with snacks bought on the spot, and on the kitchen table sits a stack of receipts that seems never‑ending. While you’re trying to sort everything out, you feel that tight knot in your chest as you realize the money you wanted to keep for an emergency fund has already been spent on pencils, uniforms, and snacks. That’s the starting point for many families who see the back‑to‑school period as an “unexpected cost”.
+Imagine this: you get home after the first day of class, the backpack is overflowing with notebooks, the lunch bag is packed with snacks bought on the spot, and on the kitchen table sits a stack of receipts that seems never‑ending. While you’re trying to sort everything out, you feel that tight knot in your chest as you realize the money you wanted to keep for an [emergency fund](/en/glossario/en-emergency-fund) has already been spent on pencils, uniforms, and snacks. That’s the starting point for many families who see the back‑to‑school period as an “unexpected cost”.
 
-The truth is, heading back to school doesn’t have to mean a financial squeeze. Planning goes beyond simply jotting down expenses; it starts with understanding what really needs to be bought, how to avoid redundant spending, and how to turn every purchase into a saving opportunity. And, like a friend who already knows all the traps, FinMoovi steps in: with smart receipt capture and automatic categorization, it turns that mountain of paper into clear data ready for analysis. In less than five minutes – just open the app, snap a photo of the first receipt, and confirm the suggested category – you’ve taken the first step toward a lighter semester for your wallet.
+The truth is, heading [back to school](/en/posts/en-back-to-school-save-money-and-plan-your-school-expenses-2026) doesn’t have to mean a financial squeeze. [Planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) goes beyond simply jotting down expenses; it starts with understanding what really needs to be bought, how to avoid redundant spending, and how to turn every purchase into a [saving](/en/posts/en-how-to-build-a-budget-that-actually-works-in-2026) opportunity. And, like a friend who already knows all the traps, FinMoovi steps in: with smart [receipt capture](/en/posts/en-how-to-organize-your-money-with-an-easy-to-use-app) and [automatic categorization](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end), it turns that mountain of paper into clear data ready for analysis. In less than five minutes – just open the app, snap a photo of the first receipt, and confirm the suggested category – you’ve taken the first step toward a lighter semester for your wallet.
 
 ## 1. Set a visual budget for the semester
 
@@ -66,7 +66,7 @@ Beyond school supplies, there are monthly bills that affect the wallet during th
 
 - **Run a diagnosis** with smart receipt capture: snap photos of monthly bills and let FinMoovi auto‑categorize them.  
 - **Negotiate discounts**. Many services offer reduced rates for students or families. Use the cash‑flow report to spot where renegotiation is possible.  
-- **Explore alternatives**: for example, public transit can be swapped for organized car‑pools among parents, cutting fuel costs.
+- **Explore [alternatives](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your)**: for example, public transit can be swapped for organized car‑pools among parents, cutting fuel costs.
 
 ## 6. Build a school‑specific emergency fund
 
@@ -81,7 +81,7 @@ Even with thorough planning, surprises happen: a ripped uniform, an extra class,
 
 Turn theory into practice with a one‑month challenge:
 
-1. **Day 1** – Record all expenses from the first week using smart capture.  
+1. **Day 1** – Record all expenses from the first week using [smart capture](/en/posts/en-how-to-never-miss-a-bill-payment-deadline-simple-5-minute).  
 2. **Day 7** – Review categories and tweak limits that don’t match reality.  
 3. **Day 15** – Use shopping mode to plan the second half of the semester, keeping the total within budget.  
 4. **Day 30** – Analyze the cash‑flow report. If spending is 10 % below forecast, celebrate! If not, pinpoint which categories need revision.

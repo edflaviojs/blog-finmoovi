@@ -23,7 +23,7 @@ La mañana empieza con el sonido de la caja registradora del supermercado, mient
 
 La solución comienza con un paso sencillo dentro de FinMoovi: toma una foto de la factura del material escolar, deja que la app la categorice automáticamente y, en pocos segundos, ve cuánto ya se ha gastado en **“Material de Estudios”**. En cinco minutos tienes una visión clara y puedes decidir al instante qué mantener y qué posponer.
 
-Los calendarios de regreso a clases varían: **25/01 (en algunos países), 20/08 (EE. UU.), 01/09 (Reino Unido), 10/09 (Portugal), 10/09 (España)**. Independientemente de la fecha, la preparación financiera sigue los mismos principios.
+Los calendarios de [regreso a clases](/es/posts/es-7-maneras-de-ahorrar-en-el-regreso-a-clases-del-segundo) varían: **25/01 (en algunos países), 20/08 (EE. UU.), 01/09 (Reino Unido), 10/09 (Portugal), 10/09 (España)**. Independientemente de la fecha, la preparación financiera sigue los mismos principios.
 
 ## Mapea los ítems esenciales
 
