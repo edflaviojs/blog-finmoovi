@@ -234,6 +234,23 @@ const MAX_ETIQUETAS = 30;
 /** O YouTube dá 500 CARACTERES somando tudo. 480 deixa folga: nunca encostar no limite de outrem. */
 const ORCAMENTO_ETIQUETAS = 480;
 /**
+ * ♦ 07/08/2026 — O CUSTO REAL DE UMA ETIQUETA, E NÃO É O NÚMERO DE LETRAS.
+ *
+ * ⚠️ **O YouTube envolve em ASPAS qualquer etiqueta que tenha espaço, e essas aspas
+ * contam para o limite de 500.** Neste canal é quase toda: as palavras-chave são
+ * expressões ("saldo devedor", "juros do rotativo") e as variações têm todas espaço
+ * por construção ("o que é X", "X na prática", "X 2026"). A conta ingénua erra por
+ * **dois caracteres em cada uma** — e com 23 etiquetas isso são 46 a mais.
+ *
+ * MEDIDO no dia em que mordeu: as mesmas 23 etiquetas davam **478** pela conta antiga
+ * (dentro do orçamento, tudo verde) e **524** pela conta do YouTube. A API recusou com
+ * `400 invalidTags` e o Short não foi publicado. O 478 do commit de 06/08 — *"etiquetas
+ * de 199 para 478 caracteres"* — era exactamente o número que estoura.
+ *
+ * O `+1` é a vírgula que separa uma etiqueta da seguinte.
+ */
+const custoDaEtiqueta = (t) => t.length + (t.includes(' ') ? 2 : 0) + 1;
+/**
  * ⚠️ Quantas palavras uma etiqueta pode ter antes de deixar de ser procurada por alguém.
  * Nasceu no vídeo longo, onde saíam títulos de capítulo inteiros — *"O dia em que eu vi o
  * tamanho da fatura"* é uma frase bonita e **ninguém a escreve numa busca**.
@@ -276,10 +293,10 @@ export function escolherEtiquetas(cruas) {
     if (!t || t.length < 4 || vistas.has(chave)) return;
     if (t.split(' ').length > MAX_PALAVRAS_ETIQUETA) return;
     if (saida.length >= MAX_ETIQUETAS) return;
-    if (comprimento + t.length + 1 > ORCAMENTO_ETIQUETAS) return;
+    if (comprimento + custoDaEtiqueta(t) > ORCAMENTO_ETIQUETAS) return;
     vistas.add(chave);
     saida.push(t);
-    comprimento += t.length + 1;
+    comprimento += custoDaEtiqueta(t);
   };
 
   const originais = (cruas || []).filter(Boolean);

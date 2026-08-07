@@ -132,6 +132,32 @@ console.log('\n3. AS ETIQUETAS — encher os 500 caracteres, sem inventar palavr
   const ordenadas = escolherEtiquetas(chaves);
   /** ⚠️ 480 e não 500: nunca se encosta ao limite de outra pessoa. */
   ok('e nunca passa dos 480, que deixa folga para os 500 do YouTube', chars <= 480, `${chars}`);
+
+  /**
+   * 🔴 **A CONTA QUE VALE É A DO YOUTUBE, NÃO A NOSSA** (07/08/2026).
+   *
+   * ⚠️ O `chars` aqui em cima é `join(',').length` — e foi ele que deixou passar o
+   * defeito que impediu a publicação de 06 e 07/08. O YouTube envolve em **aspas**
+   * qualquer etiqueta com espaço, e essas aspas contam para os 500. Neste canal é
+   * quase toda: as chaves são expressões e as variações têm espaço por construção.
+   *
+   * MEDIDO: as mesmas 23 etiquetas davam **478** pela conta antiga (verde em todas as
+   * provas) e **524** pela conta do YouTube — `400 invalidTags`, Short não publicado.
+   *
+   * Esta prova mede como a API mede. Não confiar na nossa aritmética é o ponto dela.
+   */
+  const custoNoYouTube = (lista) => lista.reduce((a, t) => a + t.length + (t.includes(' ') ? 2 : 0) + 1, 0);
+  ok('🔴 pela conta do YOUTUBE (aspas nas etiquetas com espaço) cabe nos 500',
+    custoNoYouTube(e) <= 500, `${custoNoYouTube(e)} — o limite da API é 500`);
+
+  // O pior caso real: doze expressões, TODAS com espaço. Foi este o vídeo recusado.
+  const piorCaso = escolherEtiquetas([
+    'saldo devedor', 'cartao de credito', 'divida do cartao', 'juros do rotativo',
+    'fatura do cartao', 'pagar o minimo', 'parcelar a fatura', 'saque no cartao',
+    'financas pessoais', 'educacao financeira', 'sair das dividas', 'organizar as contas',
+  ]);
+  ok('🔴 e cabe TAMBÉM quando todas as etiquetas têm espaço (o caso que foi recusado)',
+    custoNoYouTube(piorCaso) <= 500, `${custoNoYouTube(piorCaso)}`);
   ok('as palavras do dono vêm TODAS à frente das variações',
     chaves.every((c, i) => ordenadas[i] === c), ordenadas.slice(0, chaves.length).join(' | '));
   ok('nenhuma etiqueta se repete', new Set(e.map((x) => x.toLowerCase())).size === e.length);
