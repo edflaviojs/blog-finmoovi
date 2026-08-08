@@ -41,7 +41,10 @@ import { BRAND, DISPLAY, BODY, gradientText } from './theme';
 import { LEGENDA_BOTTOM_16x9, TRILHO_TOPO_16x9 } from './zonas';
 // ♦ OS SOCOS DE COR E A TEXTURA — construídos para o Short de 16s em 07/08 e trazidos
 //   para cá em 08/08 por ordem do dono. **Importados, não copiados.**
-import { SequenciaDeImpacto, socosDoVideoLongo, tremorNoFrame, IMPACTO_FRAMES, TexturaDoLoop } from './impacto';
+import {
+  SequenciaDeImpacto, socosDoVideoLongo, tremorNoFrame, IMPACTO_FRAMES,
+  MolduraDeCanto, PoeiraDaMarca, PalavraFantasma,
+} from './impacto';
 // ── as telas que nascem do texto (04/08/2026) ────────────────────────────────
 import {
   Etiqueta, CartaoDeNumero, CartaoDaConta, TelaDoApp, CartaoDeFrase, Metafora, PalavrasNaTela,
@@ -386,14 +389,41 @@ const CapaLonga: React.FC<{ pergunta: string; metaphor?: string | null; frames: 
  * cinco letras ou mais que não seja de ligação. Em *"Sair do vermelho: o plano de três
  * passos pra pagar a dívida…"* dá **VERMELHO**.
  */
-const VAZIAS = new Set(['sobre', 'para', 'pelo', 'pela', 'como', 'quando', 'porque', 'seus', 'suas', 'mais', 'menos', 'todos', 'todas', 'ainda', 'entre', 'sem']);
-export function palavraDeFundo(script: LongScript): string {
-  const fonte = String(script.tema || script.capa || '').split(':')[0];
-  const escolha = fonte
+const VAZIAS = new Set([
+  'sobre', 'para', 'pelo', 'pela', 'como', 'quando', 'porque', 'seus', 'suas', 'mais', 'menos',
+  'todos', 'todas', 'ainda', 'entre', 'sem', 'depois', 'antes', 'muito', 'pouco', 'nunca',
+  'sempre', 'agora', 'assim', 'aquilo', 'aquele', 'aquela', 'essas', 'esses', 'estava', 'estar',
+  'fazer', 'fazia', 'tinha', 'ficou', 'ficar', 'passa', 'passou', 'gente', 'coisa', 'coisas',
+  'mesmo', 'mesma', 'outro', 'outra', 'cada', 'onde', 'quase', 'sobra', 'porém', 'porem',
+]);
+
+/**
+ * 🔴 A PALAVRA DE FUNDO MUDA A CADA CENA — 08/08/2026, queixa do dono.
+ *
+ * A primeira versão punha UMA palavra, tirada do tema, atrás do vídeo inteiro. Ele viu
+ * **HOMENS** parado durante seis minutos e disse: *"o que isso tem a ver? Se tiver
+ * alguma palavra no fundo, essa palavra tem que ser dinâmica e tem que ter a ver com o
+ * que se diz no momento."*
+ *
+ * Tem razão, e por duas razões: uma palavra fixa **mente** (diz "homens" enquanto a voz
+ * fala de juros) e **não se mexe** — é mais um pedaço parado num vídeo que já tinha
+ * pouco movimento.
+ *
+ * Agora sai da NARRAÇÃO DA CENA: a palavra mais longa que aquela cena diz, com cinco
+ * letras ou mais e que não seja de ligação. Muda ~30 vezes no vídeo, sempre a dizer o
+ * que a voz está a dizer.
+ *
+ * ⚠️ Se a cena não tiver nenhuma palavra que sirva, devolve vazio e a palavra
+ * simplesmente não aparece — melhor um fundo sem palavra do que um fundo a mentir.
+ */
+export function palavraDaCena(narracao: string): string {
+  const candidatas = String(narracao || '')
     .split(/[^\p{L}\p{N}]+/u)
     .map((w) => w.trim())
-    .find((w) => w.length >= 5 && w.length <= 12 && !VAZIAS.has(w.toLocaleLowerCase('pt-BR')));
-  return escolha || '';
+    .filter((w) => w.length >= 5 && w.length <= 11 && !VAZIAS.has(w.toLocaleLowerCase('pt-BR')));
+  if (!candidatas.length) return '';
+  // A mais longa: é a que carrega mais significado e a que enche melhor a tela.
+  return candidatas.reduce((a, b) => (b.length > a.length ? b : a));
 }
 
 const TremorDosSocos: React.FC<{ socos: number[]; children: React.ReactNode }> = ({ socos, children }) => {
@@ -621,6 +651,14 @@ const CenaLonga: React.FC<{
 
   return (
     <AbsoluteFill>
+      {/* ⚠️ A PALAVRA DE FUNDO DESTA CENA — vem ANTES do conteúdo no JSX porque tem de
+          ficar POR TRÁS dele. Muda a cada cena, e é isso que o dono pediu: *"tem que
+          ser dinâmica e ter a ver com o que se diz no momento"*.
+          ⚠️ **MENOS nas cenas de `palavras`**, e é o mesmo motivo pelo qual essas cenas
+          também não levam legenda: ali as palavras ditas SÃO a imagem, e pôr outra
+          palavra gigante por trás é texto por cima de texto — o defeito que o robô de
+          QA procura de propósito. Visto no fotograma antes de ficar assim. */}
+      {comLegenda ? <PalavraFantasma palavra={palavraDaCena(cena.narration)} formato="deitado" /> : null}
       <AbsoluteFill style={{
         opacity: entra,
         transform: `translateX(${balanca}px) scale(${reaccao * respira})`,
@@ -729,7 +767,11 @@ export const Long: React.FC<{ script?: LongScript; timing?: LongTiming; slug?: s
           deitado. Medido nos fotogramas do vídeo que foi ao ar: **58% a 65% do quadro
           estava VAZIO**, e a faixa de baixo tinha 1,5% a 3,1% de tinta. Vem ANTES de
           tudo no JSX porque é fundo: não diz nada, só tira o vídeo do "preto liso". */}
-      <TexturaDoLoop palavra={palavraDeFundo(script)} formato="deitado" />
+      {/* ⚠️ A MOLDURA E A POEIRA são do vídeo inteiro; a PALAVRA vive dentro de cada
+          cena e muda com ela (ver `palavraDaCena`). Por isso não se usa aqui o
+          `TexturaDoLoop` inteiro — usam-se as duas peças que não mudam. */}
+      <MolduraDeCanto formato="deitado" />
+      <PoeiraDaMarca formato="deitado" />
 
       <Sequence from={VOZ_ENTRA_FRAMES}>
         <TrilhoLongo total={conteudo} marcas={marcasDeCapitulo} />

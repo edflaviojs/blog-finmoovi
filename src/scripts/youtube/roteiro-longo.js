@@ -174,15 +174,38 @@ export const EXEMPLO_DE_MAPA = {
 };
 
 /** A abertura-exemplo. Assunto: conta de luz. */
+/**
+ * 🔴 ESTE EXEMPLO FOI REESCRITO EM 08/08/2026, e a razão está nos dois vídeos que o
+ * dono mandou como referência.
+ *
+ * A versão antiga começava por uma pergunta: *"Você sabe qual aparelho da sua casa
+ * gasta mais luz do que a geladeira?"*. Ele viu o vídeo que saiu daqui e disse: *"ele
+ * faz uma pergunta muito longa logo de início, isso não é nada chamativo"*.
+ *
+ * Os dois vídeos que ele deu como bons abrem os dois com uma CENA, e a diferença é
+ * gritante quando se lê em voz alta:
+ *   · *"Dois homens saem do mesmo galpão, mesmo horário, depois de 30 anos carregando
+ *     o mesmo tipo de caixa. Os dois têm as costas curvadas do mesmo jeito."*
+ *
+ * O que se destilou dali, e está tudo dentro deste exemplo:
+ *   1. **Abre pelo que se VÊ**, não pelo que se pergunta.
+ *   2. **Coisas do dia a dia com nome**: o dia dez, a caixa do correio, o chuveiro, a
+ *      máquina de lavar meio vazia. Nunca "os gastos" nem "as despesas".
+ *   3. **A pergunta vem a seguir e é CURTA.**
+ *   4. **Ninguém é "um deles" antes de ser apresentado.**
+ *   5. **Volta-se à cena no fim** (isso faz-se no bloco do fecho, não aqui).
+ */
 export const EXEMPLO_DE_ABERTURA = {
   promessa: 'Vou te mostrar onde a sua conta de luz sobe sozinha e o que dá pra desligar hoje',
-  fala: 'Você sabe qual aparelho da sua casa gasta mais luz do que a geladeira? '
-    + 'É o chuveiro, e ele nem passa vinte minutos ligado por dia. '
-    + 'Eu fui olhar a minha conta de luz de perto porque ela subiu três meses seguidos e eu não tinha comprado nada novo pra casa. '
-    + 'O que eu encontrei foi o banho demorado de manhã, a máquina de lavar rodando meio vazia, e uma lâmpada de área acesa a noite inteira. '
-    + 'Coisas que ninguém repara, porque cada uma parece pequena sozinha. '
-    + 'Nos próximos minutos eu te mostro onde a sua conta de luz sobe sozinha, quanto isso deu na minha casa, '
-    + 'e o que dá pra desligar hoje sem ninguém em casa reclamar.',
+  fala: 'Todo dia dez a conta de luz chega na caixa do correio da minha mãe. '
+    + 'Três meses seguidos ela veio mais cara, e ninguém em casa comprou nada novo. '
+    + 'Então o que mudou? '
+    + 'Mudou o chuveiro, que nem passa vinte minutos ligado por dia e gasta mais que a geladeira. '
+    + 'Fui olhar de perto e achei o banho demorado de manhã, a máquina de lavar rodando meio vazia, '
+    + 'e uma lâmpada de área acesa a noite inteira. '
+    + 'Cada uma parece pequena sozinha, e é por isso que ninguém repara. '
+    + 'Nos próximos minutos eu te mostro onde a sua conta de luz sobe sozinha, quanto isso deu na casa dela, '
+    + 'e o que dá pra desligar hoje sem ninguém reclamar.',
 };
 
 /**
@@ -457,12 +480,13 @@ A PROMESSA DESTE VÍDEO: "${mapa.promessa}"
 Os capítulos que vêm a seguir: ${mapa.capitulos.map((c, i) => `${i + 1}) ${c.titulo}`).join(' · ')}
 
 ════════ O QUE A ABERTURA TEM DE FAZER, POR ESTA ORDEM ════════
-1. **A 1ª FRASE É A CAPA DO VÍDEO, e é uma PERGUNTA que dói.**
-   · Aparece ESCRITA na tela enquanto você a diz. No máximo ${MAX_PALAVRAS_CAPA} palavras, terminada em "?". O computador confere.
-   · A dor tem de estar DENTRO da pergunta. ✗ "Você sabia?" (serve para qualquer vídeo do mundo)
-   · Tem de funcionar sozinha: é a primeira coisa que a pessoa ouve na vida.
-2. **A RESPOSTA VEM COLADA, na frase seguinte.** Pergunta pendurada é proibida neste canal. E a resposta não repete a pergunta — responde direto, seco.
-3. **A PROMESSA DITA COM TODAS AS LETRAS**, ainda dentro da abertura.
+1. 🔴 **A 1ª FRASE É UMA CENA, NUNCA UMA PERGUNTA.** É ela a capa do vídeo e aparece ESCRITA na tela enquanto você a diz. No máximo ${MAX_PALAVRAS_CAPA} palavras, **sem "?"**. O computador confere.
+   · Comece pelo que se VÊ: quem, onde, fazendo o quê. Como se a câmara abrisse.
+   · **Coisas do dia a dia, com nome.** ✓ *"o ônibus das cinco da manhã"*, *"a caixa do correio no dia dez"*, *"a máquina de lavar rodando meio vazia"*. ✗ "os gastos", "as despesas", "a situação financeira".
+   · ⛔ **Ninguém pode ser "um deles", "ele", "os dois" nesta frase.** Diga QUEM são antes de dizer o que fazem. Um vídeo que começa a apontar para quem ainda não existe começou no meio, e quem está vendo sai. O computador confere.
+2. **A PERGUNTA VEM A SEGUIR, e é CURTA.** Uma linha. É ela que faz a pessoa querer a resposta. ✗ "Você sabia?" (serve para qualquer vídeo do mundo) — a dor tem de estar DENTRO da pergunta.
+3. **A RESPOSTA VEM COLADA, na frase seguinte.** Pergunta pendurada é proibida neste canal. E a resposta não repete a pergunta — responde direto, seco.
+4. **A PROMESSA DITA COM TODAS AS LETRAS**, ainda dentro da abertura.
 ⛔ **A ABERTURA NÃO GASTA OS NÚMEROS DA HISTÓRIA.** As parcelas e a soma são a DESCOBERTA do ato 1 — dizê-las aqui deixa o ato 1 sem susto nenhum. Na abertura cabem o problema, a dor e a promessa; os valores ficam para lá. É o que os vídeos longos que prendem fazem, e os que não prendem não fazem. Diga o que a pessoa vai levar daqui.
 ⛔ Não peça NADA (comentário, inscrição, curtir, link). Isso acontece uma vez só, muito mais à frente.
 ⛔ Não diga o bordão do canal. Ele é a assinatura e vive na última frase do vídeo.
@@ -479,7 +503,9 @@ ${REGRAS_DE_FALA}
 
   "${EXEMPLO_DE_ABERTURA.fala}"
 
-Repare: a pergunta dói e a resposta vem colada · o caso é concreto e nomeado coisa a coisa · a promessa está lá, dita · e ninguém pede nada a ninguém.
+Repare, por esta ordem: **abre por uma CENA** (o dia dez, a caixa do correio) · só depois vem a pergunta, e ela é CURTA · a resposta vem colada · cada coisa tem nome (o chuveiro, a máquina de lavar meio vazia, a lâmpada da área) · a promessa está lá, dita · e ninguém pede nada a ninguém.
+
+⚠️ **E repare no que ele NÃO faz:** não abre com "você sabia", não abre a apontar para "um deles", e não diz uma única palavra abstracta como "gastos" ou "despesas". Tudo o que ele diz, dá para ver.
 
 Responda APENAS com JSON válido, sem markdown:
 { "fala": "..." }`;

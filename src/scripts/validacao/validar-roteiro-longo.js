@@ -278,14 +278,41 @@ reprova(
 );
 
 // — a abertura —
-const aberturaAfirmando = EXEMPLO_DE_ABERTURA.fala.replace(
+/**
+ * 🔴 ESTA PROVA VIROU-SE AO CONTRÁRIO EM 08/08/2026, e é isso que ela agora garante.
+ *
+ * Até aqui ela exigia que a 1ª frase FOSSE uma pergunta. O dono viu o vídeo pronto e
+ * disse: *"ele faz uma pergunta muito longa logo de início, isso não é nada
+ * chamativo"*, e mandou dois vídeos de referência — os dois abrem com uma CENA.
+ * A ordem passou a ser CENA → PERGUNTA → PROMESSA, e a prova acompanha.
+ */
+const aberturaComPerguntaNaCapa = EXEMPLO_DE_ABERTURA.fala.replace(
+  'Todo dia dez a conta de luz chega na caixa do correio da minha mãe.',
   'Você sabe qual aparelho da sua casa gasta mais luz do que a geladeira?',
-  'O aparelho da sua casa que gasta mais luz não é a geladeira.',
 );
 reprova(
-  'abertura: a capa não é pergunta',
-  validarAbertura(aberturaAfirmando, { promessa: EXEMPLO_DE_ABERTURA.promessa }),
-  'tem de ser uma PERGUNTA',
+  'abertura: a 1ª frase é pergunta em vez de cena',
+  validarAbertura(aberturaComPerguntaNaCapa, { promessa: EXEMPLO_DE_ABERTURA.promessa }),
+  'tem de ser uma CENA',
+);
+/**
+ * A queixa exacta do dono sobre o vídeo que ele viu: *"ele começa dizendo 'um deles
+ * para de trabalhar'... mas quem é um deles? Não se falou nada de ninguém antes."*
+ */
+const aberturaComPronomeSolto = EXEMPLO_DE_ABERTURA.fala.replace(
+  'Todo dia dez a conta de luz chega na caixa do correio da minha mãe.',
+  'Um deles para de trabalhar e respira.',
+);
+reprova(
+  'abertura: começa a apontar para quem ainda não foi apresentado',
+  validarAbertura(aberturaComPronomeSolto, { promessa: EXEMPLO_DE_ABERTURA.promessa }),
+  'ainda não foi apresentado',
+);
+const aberturaSemPergunta = EXEMPLO_DE_ABERTURA.fala.replace('Então o que mudou?', 'Então alguma coisa mudou.');
+reprova(
+  'abertura: a cena está lá mas nunca chega a haver pergunta',
+  validarAbertura(aberturaSemPergunta, { promessa: EXEMPLO_DE_ABERTURA.promessa }),
+  'nenhuma pergunta depois da cena',
 );
 reprova(
   'abertura: a capa é comprida demais para caber na tela',
@@ -541,7 +568,9 @@ console.log('   (a prova nasceu de uma falha REAL: a trava punia "moedinha" e o 
     ['o bordão é a última frase', ['fecho'], /última frase do vídeo é o bordão|assinar/i],
     ['o fecho não cita fonte', ['fecho'], /NÃO CITA FONTE/],
     ['não prometer o próximo vídeo', ['fecho', 'mapa'], /pr[óo]ximo v[íi]deo/i],
-    ['a capa é pergunta e cabe na tela', ['abertura'], /PERGUNTA que dói/],
+    // 🔴 Virou-se ao contrário em 08/08/2026 — ver a prova da abertura, mais acima.
+    ['a 1ª frase é uma CENA, não uma pergunta', ['abertura'], /É UMA CENA, NUNCA UMA PERGUNTA/],
+    ['ninguém é "um deles" antes de ser apresentado', ['abertura'], /antes de dizer o que fazem/],
     ['o título de capítulo não é genérico', ['mapa'], /Introdução/],
     ['a chamada diz FINMOOVI', ['chamada'], /FINMOOVI/],
     ['o capítulo abre com pergunta', ['capitulo'], /PERGUNTA que dói/],

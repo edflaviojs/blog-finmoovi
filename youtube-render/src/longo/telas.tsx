@@ -1037,15 +1037,38 @@ export const TelaFinal: React.FC<{ frames?: number }> = ({ frames = TELA_FINAL_F
    * olhar para um, depois para o outro. E cumpre a regra dos 2,5 segundos sem
    * acrescentar um único som novo a uma tela que já tem a voz da assinatura.
    */
-  const CICLO_DO_FAROL = 60; // 2 segundos
+  /**
+   * ⚠️ **O CICLO ENCURTOU DE 2s PARA 1,2s, E O INSCREVA-SE LEVA O DOBRO DAS VEZES.**
+   *
+   * Terceira volta nesta tela, e as duas primeiras não chegaram. O dono, a olhar o
+   * vídeo renderizado: *"a tela final ainda está muito parada... tem que dar um pouco
+   * mais de movimento e destaque no inscreva-se"*.
+   *
+   * O que mudou: o ciclo passa a ser de 36 fotogramas, e a ordem é
+   * **playlist → inscreva-se → inscreva-se** — ou seja, o botão que traz inscritos
+   * fica aceso **dois terços do tempo**, e não metade. Não é simetria, é prioridade.
+   */
+  const CICLO_DO_FAROL = 36; // 1,2 segundos
+  const ORDEM = [0, 1, 1] as const; // playlist, inscreva-se, inscreva-se
   const farolDe = (indice: number) => {
-    const desdeQueEntrou = frame - 34;
+    const desdeQueEntrou = frame - 30;
     if (desdeQueEntrou < 0) return 0;
-    const vez = Math.floor(desdeQueEntrou / CICLO_DO_FAROL) % 2;
+    const vez = ORDEM[Math.floor(desdeQueEntrou / CICLO_DO_FAROL) % ORDEM.length];
     if (vez !== indice) return 0;
     const dentro = desdeQueEntrou % CICLO_DO_FAROL;
-    return interpolate(dentro, [0, 8, 40, CICLO_DO_FAROL], [0, 1, 0.75, 0], { extrapolateRight: 'clamp' });
+    return interpolate(dentro, [0, 6, 24, CICLO_DO_FAROL], [0, 1, 0.8, 0], { extrapolateRight: 'clamp' });
   };
+
+  /**
+   * 🔴 A SETA QUE APONTA PARA O INSCREVA-SE. É o "destaque" que o dono pediu, e é o
+   * único elemento desta tela que não estava lá antes.
+   *
+   * Ela pulsa em direcção ao círculo, sem parar. Uma seta que anda é a coisa mais
+   * antiga do mundo em vídeo — e funciona porque o olho segue movimento antes de ler
+   * texto.
+   */
+  const setaX = interpolate(frame % 30, [0, 15, 30], [0, 22, 0]);
+  const setaVisivel = interpolate(frame, [40, 55], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
 
   /**
    * ⚠️ **A PRIMEIRA VERSÃO DO FAROL ERA SUBTIL DEMAIS E NÃO CONTOU COMO MOVIMENTO.**
@@ -1157,6 +1180,23 @@ export const TelaFinal: React.FC<{ frames?: number }> = ({ frames = TELA_FINAL_F
           farol={farolDe(1)}
           estilo={{ left: '63.5%', top: '56%', width: '18.5%', height: '32.9%' }}
         />
+
+        {/* ♦ A SETA — aponta para o círculo do inscreva-se e não pára quieta.
+            ⚠️ **SEM PALAVRA NENHUMA, e o fotograma é que decidiu.** A primeira versão
+            dizia "INSCREVA ▶" e fazia duas asneiras ao mesmo tempo: repetia a palavra
+            que o próprio círculo já diz, e a caixa de texto **entrava por cima do
+            círculo** (ela acabava em x≈1237 e o círculo começa em x=1219, e ainda
+            andava mais 22px na pulsação).
+            Agora é só a seta, e vive na faixa vazia entre o texto e o círculo:
+            começa em x≈1094 e, no ponto mais adiantado da pulsação, chega a ~1166 —
+            cinquenta pixels antes de tocar o círculo. */}
+        <div style={{
+          position: 'absolute', left: '57%', top: '70%',
+          opacity: setaVisivel,
+          transform: `translateX(${setaX}px)`,
+          fontSize: 64, lineHeight: 1, color: BRAND.cyan,
+          textShadow: `0 0 34px ${BRAND.cyan}, 0 0 12px ${BRAND.cyan}`,
+        }}>▶</div>
       </AbsoluteFill>
 
       <Watermark />

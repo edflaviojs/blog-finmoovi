@@ -759,15 +759,59 @@ export function validarAbertura(fala, { promessa = '', exemploParaComparar = '' 
 
   const frases = frasesDe(txt);
   const capa = frases[0] || '';
-  if (!/\?[!…]*$/.test(capa)) {
-    erros.push(`abertura: a 1ª frase é a CAPA do vídeo e tem de ser uma PERGUNTA que dói, terminada em "?". (veio: "${capa}")`);
+
+  /**
+   * 🔴 A ABERTURA DEIXOU DE COMEÇAR COM UMA PERGUNTA — 08/08/2026, ordem do dono.
+   *
+   * Até hoje esta trava exigia o CONTRÁRIO: *"a 1ª frase é a CAPA e tem de ser uma
+   * PERGUNTA que dói"*. Ele viu o vídeo pronto e disse: *"ele faz uma pergunta muito
+   * longa logo de início... isso não é nada chamativo"*.
+   *
+   * E mandou dois vídeos como referência. **Os dois abrem com uma CENA:**
+   *   *"Dois homens saem do mesmo galpão, mesmo horário, depois de 30 anos carregando
+   *   o mesmo tipo de caixa."*
+   * A pergunta existe — mas vem **depois** da cena, e é curta: *"Então, por que um
+   * está livre e o outro está preso?"*
+   *
+   * A ordem que sai dali, e que passa a valer aqui: **CENA → PERGUNTA → PROMESSA.**
+   */
+  if (/\?[!…]*$/.test(capa)) {
+    erros.push(
+      `abertura: a 1ª frase é uma PERGUNTA, e tem de ser uma CENA. Comece pelo que se vê `
+      + `(quem, onde, o quê), com coisas do dia a dia. A pergunta vem a seguir. (veio: "${capa}")`,
+    );
   }
   const nCapa = contarPalavras(capa);
   if (nCapa > MAX_PALAVRAS_CAPA) {
-    erros.push(`abertura: a pergunta da capa tem ${nCapa} palavras (máximo ${MAX_PALAVRAS_CAPA}) — ela aparece ESCRITA na tela enquanto é dita, e mais do que isto não cabe`);
+    erros.push(`abertura: a 1ª frase tem ${nCapa} palavras (máximo ${MAX_PALAVRAS_CAPA}) — ela aparece ESCRITA na tela enquanto é dita, e mais do que isto não cabe`);
   }
-  if (frases.length < 3) {
-    erros.push('abertura: precisa de pelo menos três frases — a pergunta, a resposta colada nela, e a promessa do vídeo');
+
+  /**
+   * 🔴 NINGUÉM É "UM DELES" ANTES DE SER APRESENTADO.
+   *
+   * A queixa exacta do dono, sobre o vídeo que ele viu: *"logo em seguida ele começa
+   * dizendo 'um deles para de trabalhar e respira'... mas quem é um deles? Não se
+   * falou nada de ninguém antes."*
+   *
+   * É um pronome sem antecedente, e é o defeito mais barato de apanhar que existe:
+   * basta olhar para a PRIMEIRA frase. Se ela abre a apontar para alguém que ainda
+   * não existe, o vídeo começou no meio.
+   */
+  const abreComPronomeSolto = /^\s*(um\s+deles|uma\s+delas|ele\b|ela\b|eles\b|elas\b|os\s+dois|as\s+duas|o\s+outro|a\s+outra|esse\b|essa\b|isso\b)/i;
+  if (abreComPronomeSolto.test(capa)) {
+    erros.push(
+      `abertura: a 1ª frase aponta para alguém que ainda não foi apresentado ("${capa.slice(0, 46)}…"). `
+      + `Diga QUEM são antes de dizer o que eles fazem — o vídeo não pode começar no meio.`,
+    );
+  }
+
+  // A pergunta continua obrigatória; só mudou de sítio. Sem ela a abertura vira aviso.
+  if (!frases.slice(1).some((f) => /\?[!…]*$/.test(f))) {
+    erros.push('abertura: não há nenhuma pergunta depois da cena. A ordem é CENA → PERGUNTA → PROMESSA, e é a pergunta que abre o vídeo de verdade.');
+  }
+
+  if (frases.length < 4) {
+    erros.push('abertura: precisa de pelo menos quatro frases — a cena, a pergunta, a resposta colada nela, e a promessa do vídeo');
   }
 
   // A PROMESSA TEM DE SER DITA. Mede-se com a mesma função que o Short usa para
