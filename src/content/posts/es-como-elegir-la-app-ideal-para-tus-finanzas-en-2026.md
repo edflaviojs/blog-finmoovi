@@ -3,6 +3,7 @@ title: "Cómo elegir la app ideal para tus finanzas en 2026"
 description: "Descubre, en lenguaje sencillo, cómo identificar la mejor aplicación de control financiero para tu día a día y empieza a organizar tu dinero en pocos minutos."
 tickerHeadline: "La elección que transforma tus gastos"
 image: "/images/posts/como-escolher-o-app-ideal-para-suas-financas-em-2026.webp"
+imageAlt: "Ondas abstractas doradas y azules con gráfico de barras ascendente y flecha amarilla."
 category: "dicas"
 locale: "es"
 tags: ["mejor aplicación para control financiero","finanzas personales","economía","dinero"]
