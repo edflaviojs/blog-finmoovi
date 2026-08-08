@@ -372,6 +372,38 @@ export function palavrasDeAssunto(txt) {
   )];
 }
 
+/**
+ * 🔴 O SINGULAR DE UMA PALAVRA — e por que isto existe (08/08/2026).
+ *
+ * O primeiro vídeo longo automático MORREU por causa de uma letra. A trava do fecho
+ * (mais abaixo) exige que a resposta fale do MESMO assunto que a promessa, e media
+ * isso comparando palavras por igualdade. Estas duas frases deram ZERO em comum:
+ *
+ *   promessa: "...duas pessoas com a mesma vida chegam a aposentadoriaS diferentes"
+ *   resposta: "...o jeito de lidar com os quinhentos reais antes de chegar a aposentadoria"
+ *
+ * A resposta estava certa. O "s" é que não estava. As três tentativas reprovaram
+ * pelo mesmo motivo, a corrida morreu, e o canal ficou sem o vídeo da semana — o
+ * robô semanal só volta a correr no sábado seguinte.
+ *
+ * ⚠️ Isto NÃO é um radical de verdade nem quer ser. É só o plural desfeito, que é o
+ * que fazia a trava disparar em falso. Cortar mais (sufixos de grau, de verbo) seria
+ * medir SIGNIFICADO com expressões regulares — e essa é a regra da casa que já custou
+ * oito tentativas seguidas noutro ficheiro. Quem julga significado é o segundo leitor.
+ *
+ * Chega aqui já sem acentos (`palavrasDeAssunto` tira-os antes).
+ * Medido em 24 pares: 24 acertos, zero falso positivo, zero falso negativo.
+ */
+const semPlural = (w) => w
+  .replace(/oes$/, 'ao') // cartoes → cartao
+  .replace(/aes$/, 'ao') // paes → pao
+  .replace(/ais$/, 'al') // reais → real
+  .replace(/eis$/, 'el') // papeis → papel
+  .replace(/ois$/, 'ol') // lencois → lencol
+  .replace(/ns$/, 'm') // homens → homem
+  .replace(/([rzs])es$/, '$1') // mulheres → mulher · meses → mes · luzes → luz
+  .replace(/s$/, ''); // contas → conta
+
 const temBordao = (txt) => soPalavras(txt).includes(BORDAO_EM_PALAVRAS);
 
 // ─── ANDAR 0 — o MAPA ────────────────────────────────────────────────────────
@@ -558,8 +590,11 @@ export function validarMapa(mapa) {
   if (!resposta) {
     erros.push('sem "respostaDaPromessa" — o fim do vídeo tem de responder ao que a abertura prometeu');
   } else if (promessa) {
-    const daPromessa = palavrasDeAssunto(promessa);
-    const daResposta = palavrasDeAssunto(resposta);
+    // ⚠️ Compara-se pelo SINGULAR de cada palavra. "aposentadorias" e "aposentadoria"
+    //    são o mesmo assunto; comparadas à letra davam zero em comum, e foi assim que
+    //    o vídeo longo de 08/08 morreu. Ver `semPlural`, mais acima.
+    const daPromessa = palavrasDeAssunto(promessa).map(semPlural);
+    const daResposta = palavrasDeAssunto(resposta).map(semPlural);
     if (!daPromessa.some((w) => daResposta.includes(w))) {
       erros.push(
         `a "respostaDaPromessa" não fala de nada do que a promessa prometeu. `

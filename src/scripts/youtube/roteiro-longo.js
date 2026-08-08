@@ -370,6 +370,8 @@ ${A_HISTORIA}
 2. 🔴 **O NÚMERO-ESPINHA** (\`numeroEspinha\`) — **UM número de dinheiro para o vídeo INTEIRO**. É o número da história, e os três atos são obrigados a dizê-lo. O computador confere nos três.
 3. 🔴 **A LISTA DE VALORES** (\`valores\`) — **TODO o dinheiro que este vídeo pode dizer**, cada um com um nome do dia a dia. Nada fora desta lista pode ser falado em nenhum capítulo, e o computador confere. O número-espinha é um destes valores.
    · **somas** (quando houver) — que valores somam para dar qual. **A conta tem de bater exatamente.** É o narrador a somar à frente de quem ouve.
+     🔴 **A FORMA É OBRIGATÓRIA, e o computador reprova quem a der pela metade:** cada soma precisa de **DOIS OU MAIS** nomes em \`de\` e **UM** nome em \`da\`, e os três têm de estar escritos **exatamente como estão na lista de valores**.
+     ✅ **Se a história não tiver nenhuma conta que bata, escreva \`"somas": []\`.** Uma lista vazia é resposta certa; uma soma com um nome só é reprovada.
 4. 🧮 **contaDoCartao** — o NOME (da lista de valores) da conta que é uma **fatura de cartão de crédito**. Se a história não tiver nenhuma, escreva null.
    ⚠️ **Isto não é um detalhe.** É sobre essa conta, e só sobre ela, que o computador calcula os juros REAIS do cartão com as taxas do Banco Central. Apontar o dinheiro devido a um amigo como se fosse cartão seria dizer que o amigo cobra juros de banco.
    💡 **A história fica muito mais forte se uma das contas for do cartão** — é aí que estão os juros que ninguém entende, e é isso que o ato 2 vai poder ensinar.
