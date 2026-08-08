@@ -1,12 +1,8 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-08-07T06:07:40.957Z
-**Posts:** 258 · limpos: 1 · bloqueados p/ revisao: 0 · com flags: 36
+**Gerado em:** 2026-08-08T05:40:50.006Z
+**Posts:** 267 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 39
 
-## ✂️ Cortes aplicados (citacao/estatistica sem fonte confiavel)
-
-**en-how-to-never-miss-a-bill-payment-deadline-simple-5-minute.md**
-- cortado: _Studies show that pairing visual and auditory notifications boosts action rates by more than 50 %._
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
 
@@ -20,11 +16,17 @@
 - _Essa técnica reduz drasticamente compras impulsivas, que, segundo o **IBGE**, representaram cerca de **12 %** das despesas de consumo em 2022._
 - _Segundo o **Bacen**, 45 % das famílias brasileiras não têm [reserva de emergência](/ferramentas/calculadora-reserva), o que pode levar a endividamento._
 
+**7-maneiras-de-economizar-na-volta-as-aulas-do-2-semestre.md**
+- _**Ajuste o limite** de acordo com a realidade da sua família, reservando sempre uma margem para imprevistos._
+
 **como-escolher-fundos-de-investimento-em-2026-e-dar-o.md**
 - _**Rebalanceamento semestral** – Ajuste a proporção entre fundos de acordo com a performance e seu objetivo._
 
 **como-montar-um-orcamento-que-realmente-funciona-em-2026.md**
 - _Ajuste conforme a realidade._
+
+**consorcio-vs-financiamento-qual-vale-mais-a-pena-em-2026.md**
+- _As taxas de juros variam bastante, mas em 2026 a média global de juros para crédito ao consumo gira em torno de 12 % a 18 % ao ano, segundo dados da World Bank._
 
 **cotacoes-semana-3-junho-2026.md**
 - _Além disso, é fundamental revisar e ajustar suas estratégias de investimento de acordo com as mudanças no mercado._
@@ -54,6 +56,9 @@
 **en-budget-review.md**
 - _After checking your expenses, adjust them according to your needs and goals._
 - _Check your income over the past 6 months and adjust it according to your needs and goals._
+
+**en-consortium-vs-loan-which-is-better-in-2026.md**
+- _Interest rates vary widely, but in 2026 the global average for consumer credit hovers around 12 %–18 % per year, according to the World Bank._
 
 **en-etfs-what-they-are-and-how-to-invest-simply-and-profitably.md**
 - _, IMAB11) in 70/30 or 60/40 ratios, according to your profile._
