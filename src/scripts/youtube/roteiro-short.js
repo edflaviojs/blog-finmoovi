@@ -163,7 +163,33 @@ function findSentenceForAnchor(narration, anchor) {
 // 12 = duas semanas de publicação diária antes de uma imagem poder voltar. É o
 // número que o dono pediu quando disse "para nunca mais termos problema e ainda
 // termos sobra".
-export function loadRecentPublishedContext({ publishedPath = PUBLISHED_PATH, outputDir = OUTPUT_DIR, limit = 12 } = {}) {
+/**
+ * 🔴 A JANELA É POR FORMATO — e sem isto ela morria sozinha em 14/08/2026.
+ *
+ * O caderno `youtube-published.json` é UM SÓ para o canal inteiro: o Short de 50s, os
+ * dois Shorts de 16s por dia e tudo o que venha a seguir escrevem no mesmo sítio,
+ * porque partilham o `upload-short.js`. Esta janela lia os 12 últimos SEM olhar ao
+ * formato — e a conta era esta:
+ *
+ *   saem 2 vídeos de 16s por dia e 1 de 50s · 09/08: 2 dos 12 são de 16s ·
+ *   11/08: 6 dos 12 · **~14/08: os 12**.
+ *
+ * A partir daí a trava do "fio inédito" do Short de 50 segundos passaria a proibir as
+ * imagens dos vídeos de 16 segundos e a **deixar de conhecer as suas próprias** — o
+ * de 50s podia repetir a imagem de três dias antes e nada avisava. É a mesma lição de
+ * 07/08, escrita no commit que consertou a repescagem: *um formato novo não se julga
+ * só pelo que faz — julga-se pelo que faz às garantias que já existiam*.
+ *
+ * ⚠️ `short50` é o valor por omissão de propósito, e não é uma escolha arbitrária:
+ * antes do formato de 16s existir **o caderno era 100% de 50 segundos**, e os
+ * registos antigos não têm o campo `formato` nenhum. Com esta omissão, os quatro
+ * geradores que chamam esta função sem argumentos (o Short de 50s, as duas passagens
+ * e o vídeo longo) recebem **exactamente o que recebiam antes** — nem um vídeo a mais,
+ * nem um a menos. Quem quiser a janela do formato novo pede `{ formato: 'loop16' }`.
+ */
+export function loadRecentPublishedContext({
+  publishedPath = PUBLISHED_PATH, outputDir = OUTPUT_DIR, limit = 12, formato = 'short50',
+} = {}) {
   let published;
   try {
     published = JSON.parse(readFileSync(publishedPath, 'utf-8'));
@@ -172,6 +198,8 @@ export function loadRecentPublishedContext({ publishedPath = PUBLISHED_PATH, out
   }
   const recent = Object.entries(published || {})
     .filter(([, v]) => v && v.uploadedAt)
+    // Registo sem `formato` é de antes de 07/08/2026, e nessa altura só havia o de 50s.
+    .filter(([, v]) => !formato || (v.formato || 'short50') === formato)
     .sort((a, b) => new Date(b[1].uploadedAt) - new Date(a[1].uploadedAt))
     .slice(0, limit);
 
