@@ -1,0 +1,22 @@
+{
+  "videos": [
+    {
+      "slug": "sair-do-vermelho",
+      "cenarios": [
+        "a fatura do cartão",
+        "o domingo"
+      ],
+      "em": "2026-08-08"
+    },
+    {
+      "slug": "dono-dois-homens-mesma-idade-mesmo-trabalho",
+      "cenarios": [
+        "a fatura do cartão",
+        "o domingo",
+        "o boleto",
+        "a aposentadoria"
+      ],
+      "em": "2026-08-08"
+    }
+  ]
+}

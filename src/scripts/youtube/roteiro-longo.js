@@ -59,6 +59,8 @@ import {
  */
 import { limparFala, montarCorretivo } from './roteiro-narrativa.js';
 import { loadRecentPublishedContext } from './roteiro-short.js';
+// ♦ O caderno que impede dois vídeos seguidos de contarem a mesma cena (08/08/2026).
+import { cenariosGastos, guardarCenarios, RAIO_DE_CENARIOS } from './lib/cenarios-do-longo.js';
 
 const AQUI = dirname(fileURLToPath(import.meta.url));
 const OUTPUT_DIR = join(AQUI, 'output');
@@ -372,7 +374,27 @@ ${t.angle ? `ÂNGULO: ${t.angle}\n` : ''}${t.definition ? `DEFINIÇÃO: ${t.defi
 
 // ═══ ANDAR 0 — O MAPA ═══════════════════════════════════════════════════════
 
-export function buildPromptMapa(t, proibidas = []) {
+export function buildPromptMapa(t, proibidas = [], cenariosGastos = []) {
+  /**
+   * 🔴 AS CENAS QUE OS ÚLTIMOS VÍDEOS JÁ GASTARAM — 08/08/2026, ordem do dono.
+   *
+   * *"No vídeo passado foi falado de fatura do cartão, falado sobre num domingo, e
+   * agora está se repetindo. Isso não pode acontecer num raio de uns 5 vídeos."*
+   *
+   * ⚠️ Isto entra como PEDIDO, nunca como trava. Uma trava que proíbe o que o prompt
+   * pede produz oito tentativas falhadas seguidas — está registado neste repositório.
+   * Aqui diz-se "já saíram, escolha outros" e mede-se o resultado no caderno.
+   */
+  const blocoDeCenarios = cenariosGastos.length
+    ? `\n════════ ⛔ CENAS JÁ GASTAS NOS ÚLTIMOS VÍDEOS ════════
+Estas cenas saíram nos vídeos recentes deste canal e **não podem voltar**: ${cenariosGastos.join(' · ')}.
+Quem acompanha o canal vê um vídeo por semana; repetir o mesmo cenário faz parecer que é sempre o mesmo vídeo.
+**Escolha outro momento da vida das pessoas.** O dinheiro aparece em todo o lado: a farmácia no fim do mês, o presente de aniversário, o conserto do chuveiro, a corrida de aplicativo que virou hábito, o almoço fora todo dia, a caixa de ferramentas comprada e nunca usada, o cachorro que adoeceu, a formatura do filho.\n`
+    : '';
+  return buildPromptMapaBase(t, proibidas, blocoDeCenarios);
+}
+
+function buildPromptMapaBase(t, proibidas = [], blocoDeCenarios = '') {
   const ex = EXEMPLO_DE_MAPA;
   return `${CABECALHO}
 
@@ -387,7 +409,7 @@ Nós medimos 64 capítulos de sete vídeos longos de finanças brasileiros. O qu
 Para seis minutos são **${NUM_CAPITULOS} capítulos**, e não mais.
 
 ${A_HISTORIA}
-
+${blocoDeCenarios}
 ════════ O QUE VOCÊ TEM DE DECIDIR ════════
 1. **A PROMESSA** — uma frase só, entre 5 e 25 palavras, dizendo o que a pessoa leva daqui. NÃO é pergunta. É o que o vídeo ENTREGA.
 2. 🔴 **O NÚMERO-ESPINHA** (\`numeroEspinha\`) — **UM número de dinheiro para o vídeo INTEIRO**. É o número da história, e os três atos são obrigados a dizê-lo. O computador confere nos três.
@@ -480,13 +502,24 @@ A PROMESSA DESTE VÍDEO: "${mapa.promessa}"
 Os capítulos que vêm a seguir: ${mapa.capitulos.map((c, i) => `${i + 1}) ${c.titulo}`).join(' · ')}
 
 ════════ O QUE A ABERTURA TEM DE FAZER, POR ESTA ORDEM ════════
-1. 🔴 **A 1ª FRASE É UMA CENA, NUNCA UMA PERGUNTA.** É ela a capa do vídeo e aparece ESCRITA na tela enquanto você a diz. No máximo ${MAX_PALAVRAS_CAPA} palavras, **sem "?"**. O computador confere.
-   · Comece pelo que se VÊ: quem, onde, fazendo o quê. Como se a câmara abrisse.
-   · **Coisas do dia a dia, com nome.** ✓ *"o ônibus das cinco da manhã"*, *"a caixa do correio no dia dez"*, *"a máquina de lavar rodando meio vazia"*. ✗ "os gastos", "as despesas", "a situação financeira".
+1. 🔴 **A 1ª FRASE É A CAPA e aparece ESCRITA na tela enquanto você a diz.** No máximo ${MAX_PALAVRAS_CAPA} palavras. O computador confere o tamanho.
+   · **Pode ser uma cena ou pode ser uma pergunta — o que ela NÃO pode ser é comprida e vaga.** Uma pergunta de dezoito palavras cheia de "de que forma" e "considerando que" não prende ninguém.
+   · **Comece pelo que se VÊ.** ✓ *"O ônibus das cinco da manhã, outra vez."* ✓ *"A conta de luz chegou de novo no dia dez."* ✓ *"Por que o dinheiro some antes do dia vinte?"*
    · ⛔ **Ninguém pode ser "um deles", "ele", "os dois" nesta frase.** Diga QUEM são antes de dizer o que fazem. Um vídeo que começa a apontar para quem ainda não existe começou no meio, e quem está vendo sai. O computador confere.
-2. **A PERGUNTA VEM A SEGUIR, e é CURTA.** Uma linha. É ela que faz a pessoa querer a resposta. ✗ "Você sabia?" (serve para qualquer vídeo do mundo) — a dor tem de estar DENTRO da pergunta.
+2. **A PERGUNTA EXISTE, e é CURTA.** Pode ser a 1ª frase ou vir logo a seguir. ✗ "Você sabia?" (serve para qualquer vídeo do mundo) — a dor tem de estar DENTRO dela.
 3. **A RESPOSTA VEM COLADA, na frase seguinte.** Pergunta pendurada é proibida neste canal. E a resposta não repete a pergunta — responde direto, seco.
 4. **A PROMESSA DITA COM TODAS AS LETRAS**, ainda dentro da abertura.
+
+════════ 🔴 COMO SE FALA NESTE CANAL — leia isto duas vezes ════════
+Ordem do dono, 08/08/2026: *"eu quero que o texto seja mais leve, mais simples, mais do dia a dia, coisas assim"*.
+
+· **TUDO O QUE VOCÊ DISSER TEM DE DAR PARA VER.** Se não dá para filmar, está abstrato demais.
+  ✓ *o boleto em cima da mesa* · *o carrinho no mercado* · *a mensagem do banco às sete da manhã* · *o cafezinho de todo dia* · *a parcela do celular novo*
+  ✗ *os gastos* · *as despesas* · *a situação financeira* · *o planejamento* · *os recursos* · *a gestão do orçamento*
+· **FRASES CURTAS.** Uma ideia por frase. Se precisou de vírgula três vezes, são três frases.
+· **FALE COMO SE FALA NA COZINHA**, não como se escreve num banco. Diga *"o dinheiro some"*, não *"há uma evasão de recursos"*.
+· **NÚMEROS REDONDOS E DO TAMANHO DA VIDA DAS PESSOAS.** Trezentos reais é dinheiro; "um percentual relevante do orçamento" não é nada.
+· ⛔ **Nada de palavra de reunião**: otimizar, mitigar, alavancar, estratégico, mindset, jornada, conscientização.
 ⛔ **A ABERTURA NÃO GASTA OS NÚMEROS DA HISTÓRIA.** As parcelas e a soma são a DESCOBERTA do ato 1 — dizê-las aqui deixa o ato 1 sem susto nenhum. Na abertura cabem o problema, a dor e a promessa; os valores ficam para lá. É o que os vídeos longos que prendem fazem, e os que não prendem não fazem. Diga o que a pessoa vai levar daqui.
 ⛔ Não peça NADA (comentário, inscrição, curtir, link). Isso acontece uma vez só, muito mais à frente.
 ⛔ Não diga o bordão do canal. Ele é a assinatura e vive na última frase do vídeo.
@@ -820,8 +853,11 @@ async function gerarBloco({ nome, prompt, validar, tema, tentativas = 5, campos 
 
 // ═══ A ORQUESTRAÇÃO ═════════════════════════════════════════════════════════
 
-export async function gerarMapa(t, { proibidas = [], tentativas = 3 } = {}) {
-  const prompt = buildPromptMapa(t, proibidas);
+export async function gerarMapa(t, { proibidas = [], tentativas = 3, cenarios = null } = {}) {
+  // Sem lista dada, lê o caderno — assim quem chama não tem de se lembrar disto.
+  const gastos = cenarios || cenariosGastos();
+  if (gastos.length) console.log(`🚫 cenas já gastas nos últimos ${RAIO_DE_CENARIOS} vídeos: ${gastos.join(' · ')}`);
+  const prompt = buildPromptMapa(t, proibidas, gastos);
   const exigencias = [];
   let corretivo = '';
 
@@ -1417,4 +1453,12 @@ if (executadoDireto) {
     geradoEm: new Date().toISOString(),
   }, null, 2), 'utf-8');
   console.log(`\n💾 guardado em ${destino}\n`);
+
+  /**
+   * ♦ O CADERNO DE CENÁRIOS — é isto que faz o vídeo SEGUINTE não repetir este.
+   * Guarda-se DEPOIS de o guião estar em disco: se alguma coisa rebentar acima, o
+   * caderno não fica a dizer que saiu um vídeo que não saiu.
+   */
+  const usados = guardarCenarios(slug, falaCorrida(roteiro).join(' '));
+  console.log(`📓 cenas deste vídeo, guardadas para os próximos ${RAIO_DE_CENARIOS}: ${usados.length ? usados.join(' · ') : '(nenhuma das conhecidas)'}\n`);
 }

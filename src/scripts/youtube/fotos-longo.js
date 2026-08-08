@@ -196,11 +196,47 @@ Generate the image and ATTACH the final PNG file to your reply. Do not ask me an
  * ⚠️ A narração entra como **o que está a acontecer**, nunca como texto a ilustrar: o
  * modelo não vê português, vê a cena descrita em inglês pelo contrato de estilo.
  */
-export function pedidoDaFoto(papel, cena) {
-  const cenario = {
-    susto: 'A pair of hands holding an open paper document in a dark room, lit only by the cold blue-white glow of a phone screen from below, throwing hard shadows upward. Shallow depth of field, fine film grain, heavy atmosphere of dread. Hands only — no face, no person visible above the wrists.',
-    virada: 'Seen from inside a narrow dark corridor lit in deep crimson red, opening onto a wide bright space lit in cool cyan and violet. Silhouetted stacks of paper, boxes and folders crowd the red corridor walls; the bright side beyond the opening is empty, clean and airy. Strong volumetric light beams cutting through dust. Architectural, symbolic, no people.',
-  }[papel.chave];
+/**
+ * 🔴 AS FOTOGRAFIAS DEIXARAM DE SER SEMPRE A MESMA — 08/08/2026, queixa do dono.
+ *
+ * *"As 3 imagens que são geradas pela Manus também estão sendo repetidas do vídeo
+ * anterior. Essa regra também tem que mudar, não pode usar as mesmas imagens do vídeo
+ * anterior."*
+ *
+ * ⚠️ **E a trava que ele lembrava EXISTE e estava a funcionar** (`doBanco` +
+ * `NAO_REPETIR_EM = 8`): nenhum FICHEIRO se repetia. O que se repetia era o PEDIDO.
+ * Havia **uma descrição de cena cravada por papel**, igual em todos os vídeos — mãos a
+ * segurar um papel à luz do telemóvel, sempre; um corredor vermelho a abrir para uma
+ * sala clara, sempre. Gerava-se uma imagem nova de cada vez, e ela saía igual à
+ * anterior porque o pedido era o mesmo.
+ *
+ * Agora cada papel tem SEIS cenas possíveis e elas rodam por vídeo. Seis é mais do que
+ * o raio de não-repetição do banco, portanto duas iguais nunca ficam perto uma da
+ * outra. E rodam por CONTA, não por sorteio: o mesmo vídeo pedido duas vezes dá a
+ * mesma imagem, que é o que permite refazer um vídeo sem ele mudar de cara.
+ */
+const CENAS_POR_PAPEL = {
+  susto: [
+    'A pair of hands holding an open paper document in a dark room, lit only by the cold blue-white glow of a phone screen from below, throwing hard shadows upward. Shallow depth of field, fine film grain. Hands only — no face, no person visible above the wrists.',
+    'A kitchen table at night seen from above: a mug gone cold, a pen, and a single sheet of paper face down. One hand rests flat beside it, still. Warm lamp light from one side, deep shadow on the other. No face.',
+    'A supermarket checkout belt seen low and close, a few everyday items on it, and a hand hovering over a wallet without opening it. Fluorescent light overhead, cool and unflattering. Motion blur of people passing behind. No faces.',
+    'The inside of a car at dawn, seen from the passenger seat: hands resting on the steering wheel, engine off, windscreen fogged. Cold blue light before sunrise. No face above the shoulders.',
+    'A bedside table at 3am: a phone face up glowing, an alarm clock, a glass of water. The bed edge is out of focus in the foreground. Everything else is dark. No people.',
+    'A narrow hallway with a small pile of unopened envelopes on the floor under the door slot, seen at eye level from a distance. Late afternoon light through frosted glass. Empty, quiet, no people.',
+  ],
+  virada: [
+    'Seen from inside a narrow dark corridor lit in deep crimson red, opening onto a wide bright space lit in cool cyan and violet. Silhouetted stacks of paper and boxes crowd the red walls; the bright side beyond is empty and airy. Volumetric light beams through dust. No people.',
+    'A window being opened from inside a dim room: the shutter half up, a hard blade of cool morning light cutting across a bare floor. Dust in the air. Architectural, symbolic, no people.',
+    'A single clean desk under a warm pool of light, with everything else in darkness: one notebook open, one pen, nothing else. Order after chaos. No people.',
+    'A path of stepping stones across still dark water, lit from ahead in cyan, leading toward a soft violet glow on the far bank. Wide, calm, cinematic. No people.',
+    'A wall of tangled dark cables on the left resolving into a single straight illuminated line on the right. Macro, shallow depth of field, cool key light. Abstract, no people.',
+    'An open front door seen from inside a dark hallway, warm daylight flooding in across the threshold, keys still in the lock. Nobody in frame.',
+  ],
+};
+
+export function pedidoDaFoto(papel, cena, indiceDoVideo = 0) {
+  const lista = CENAS_POR_PAPEL[papel.chave] || [];
+  const cenario = lista.length ? lista[Math.abs(indiceDoVideo) % lista.length] : undefined;
 
   return `A cinematic photorealistic still, 16:9 aspect ratio, 1920x1080 pixels, for a Brazilian personal-finance explainer video.
 
@@ -386,7 +422,12 @@ async function principal() {
         rotulo: 'juro do rotativo do cartão',
         fonte: 'Banco Central do Brasil',
       })
-      : pedidoDaFoto(e.papel, e.cena);
+      /**
+       * ⚠️ O ÍNDICE É QUANTOS VÍDEOS JÁ TÊM FOTOGRAFIAS — é ele que faz a cena rodar
+       * de vídeo para vídeo. Sai do catálogo, não de um sorteio: o mesmo vídeo pedido
+       * duas vezes tem de dar a mesma imagem, senão refazer um vídeo muda-lhe a cara.
+       */
+      : pedidoDaFoto(e.papel, e.cena, historico.length);
 
     if (ENSAIO) { log('   (ensaio — não se pediu nada)'); continue; }
 

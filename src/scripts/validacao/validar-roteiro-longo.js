@@ -286,15 +286,23 @@ reprova(
  * chamativo"*, e mandou dois vídeos de referência — os dois abrem com uma CENA.
  * A ordem passou a ser CENA → PERGUNTA → PROMESSA, e a prova acompanha.
  */
-const aberturaComPerguntaNaCapa = EXEMPLO_DE_ABERTURA.fala.replace(
+/**
+ * ⚠️ **E NO MESMO DIA A REGRA AFROUXOU**, também por ordem dele: *"não precisa
+ * necessariamente trocar o início e retirar a pergunta, eu quero que o texto seja mais
+ * leve, mais simples, mais do dia a dia"*. O que o incomodava não era a pergunta — era
+ * a pergunta LONGA e VAGA. Por isso uma pergunta curta na 1ª frase **passa**, e é isto
+ * que esta prova garante: que ninguém volte a proibi-la sem ler esta linha.
+ */
+const aberturaComPerguntaCurtaNaCapa = EXEMPLO_DE_ABERTURA.fala.replace(
   'Todo dia dez a conta de luz chega na caixa do correio da minha mãe.',
-  'Você sabe qual aparelho da sua casa gasta mais luz do que a geladeira?',
+  'Por que a conta de luz sobe sozinha todo mês?',
 );
-reprova(
-  'abertura: a 1ª frase é pergunta em vez de cena',
-  validarAbertura(aberturaComPerguntaNaCapa, { promessa: EXEMPLO_DE_ABERTURA.promessa }),
-  'tem de ser uma CENA',
-);
+{
+  // ⚠️ `passa()` e não `.length`: `validarAbertura` devolve `{ ok, erros }`, e a
+  //    anti-cópia reprova sempre um exemplo comparado consigo próprio.
+  const v = validarAbertura(aberturaComPerguntaCurtaNaCapa, { promessa: EXEMPLO_DE_ABERTURA.promessa });
+  ok('abertura: uma PERGUNTA CURTA na 1ª frase é permitida (o que se proíbe é ser comprida)', passa(v), porque(v));
+}
 /**
  * A queixa exacta do dono sobre o vídeo que ele viu: *"ele começa dizendo 'um deles
  * para de trabalhar'... mas quem é um deles? Não se falou nada de ninguém antes."*
@@ -312,7 +320,7 @@ const aberturaSemPergunta = EXEMPLO_DE_ABERTURA.fala.replace('Então o que mudou
 reprova(
   'abertura: a cena está lá mas nunca chega a haver pergunta',
   validarAbertura(aberturaSemPergunta, { promessa: EXEMPLO_DE_ABERTURA.promessa }),
-  'nenhuma pergunta depois da cena',
+  'não há nenhuma pergunta',
 );
 reprova(
   'abertura: a capa é comprida demais para caber na tela',
@@ -569,7 +577,8 @@ console.log('   (a prova nasceu de uma falha REAL: a trava punia "moedinha" e o 
     ['o fecho não cita fonte', ['fecho'], /NÃO CITA FONTE/],
     ['não prometer o próximo vídeo', ['fecho', 'mapa'], /pr[óo]ximo v[íi]deo/i],
     // 🔴 Virou-se ao contrário em 08/08/2026 — ver a prova da abertura, mais acima.
-    ['a 1ª frase é uma CENA, não uma pergunta', ['abertura'], /É UMA CENA, NUNCA UMA PERGUNTA/],
+    ['a 1ª frase não pode ser comprida e vaga', ['abertura'], /comprida e vaga/],
+    ['fale como se fala na cozinha', ['abertura'], /COMO SE FALA NESTE CANAL/],
     ['ninguém é "um deles" antes de ser apresentado', ['abertura'], /antes de dizer o que fazem/],
     ['o título de capítulo não é genérico', ['mapa'], /Introdução/],
     ['a chamada diz FINMOOVI', ['chamada'], /FINMOOVI/],

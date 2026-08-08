@@ -775,12 +775,18 @@ export function validarAbertura(fala, { promessa = '', exemploParaComparar = '' 
    *
    * A ordem que sai dali, e que passa a valer aqui: **CENA → PERGUNTA → PROMESSA.**
    */
-  if (/\?[!…]*$/.test(capa)) {
-    erros.push(
-      `abertura: a 1ª frase é uma PERGUNTA, e tem de ser uma CENA. Comece pelo que se vê `
-      + `(quem, onde, o quê), com coisas do dia a dia. A pergunta vem a seguir. (veio: "${capa}")`,
-    );
-  }
+  /**
+   * ⚠️ **E A REGRA AFROUXOU NO MESMO DIA, também por ordem dele.** A primeira versão
+   * PROIBIA a 1ª frase de ser pergunta. Ele leu e corrigiu-me: *"não precisa
+   * necessariamente trocar o início e retirar a pergunta, eu quero que o texto seja
+   * mais leve, mais simples, mais do dia a dia"*.
+   *
+   * Ou seja: o que o incomodava **não era a pergunta** — era a pergunta **longa e
+   * abstracta**. Uma pergunta curta e concreta abre bem. Por isso o que fica medido
+   * aqui é só o que se PODE medir: o tamanho (ela vai para a tela) e o pronome sem
+   * dono. O resto — ser leve, ser do dia a dia — é gosto, e gosto vive no prompt e no
+   * segundo leitor, nunca numa expressão regular. É a regra da casa.
+   */
   const nCapa = contarPalavras(capa);
   if (nCapa > MAX_PALAVRAS_CAPA) {
     erros.push(`abertura: a 1ª frase tem ${nCapa} palavras (máximo ${MAX_PALAVRAS_CAPA}) — ela aparece ESCRITA na tela enquanto é dita, e mais do que isto não cabe`);
@@ -805,9 +811,9 @@ export function validarAbertura(fala, { promessa = '', exemploParaComparar = '' 
     );
   }
 
-  // A pergunta continua obrigatória; só mudou de sítio. Sem ela a abertura vira aviso.
-  if (!frases.slice(1).some((f) => /\?[!…]*$/.test(f))) {
-    erros.push('abertura: não há nenhuma pergunta depois da cena. A ordem é CENA → PERGUNTA → PROMESSA, e é a pergunta que abre o vídeo de verdade.');
+  // A pergunta continua obrigatória em algum sítio da abertura — pode ser a 1ª frase.
+  if (!frases.some((f) => /\?[!…]*$/.test(f))) {
+    erros.push('abertura: não há nenhuma pergunta. É ela que faz quem está a ver querer a resposta — pode ser a 1ª frase ou vir logo a seguir à cena.');
   }
 
   if (frases.length < 4) {
