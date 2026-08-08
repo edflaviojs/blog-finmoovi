@@ -211,6 +211,38 @@ const TITULOS_GENERICOS = [
 const PALAVRAS_DE_CHAMADA = /\b(comenta\p{L}*|coment[áa]ri\p{L}*|inscrev\p{L}*|inscri[çc]\p{L}*|inscrit\p{L}*|curte|curtir|likes?|links?|sininho)\b|\b(na|d[ao]) (descri[çc][ãa]o|bio)\b/iu;
 
 /**
+ * 🔴 NINGUÉM TEM NOME NESTE CANAL — 08/08/2026, correcção do dono.
+ *
+ * Ele mandou dois vídeos como referência de FORMA e um deles dava nomes aos dois
+ * personagens (Norberto e Célia). O gerador copiou a ideia e o vídeo saiu a dizer
+ * *"por que o João se aposentou e o Carlos ainda pega ônibus"*. Ele corrigiu-me:
+ * *"se você buscar na memória não temos nada que fale sobre colocar nomes de pessoas,
+ * o nosso ecossistema é anónimo, aquilo era um exemplo"*.
+ *
+ * E tinha razão duas vezes: a decisão é dele, e um nome inventado faz o vídeo parecer
+ * um caso real que ninguém pode conferir — num canal de finanças isso custa caro.
+ *
+ * ⚠️ **A EXPRESSÃO É ESTREITA DE PROPÓSITO: artigo + Maiúscula.** Apanha "o João",
+ * "a Maria", "do Carlos", "com a Célia" — que é como um nome de pessoa aparece numa
+ * narração falada. **Não** apanha "Banco Central" nem "FinMoovi" nem "Brasil", porque
+ * esses não vêm atrás de artigo simples nesta forma. Uma lista de nomes próprios seria
+ * infinita e apanharia o que não deve; esta forma apanha o padrão, que é o que se quer.
+ */
+const NOME_DE_PESSOA = /\b(?:d?[oa]s?|com\s+[oa]|para\s+[oa]|pel[oa])\s+([A-ZÁÀÂÃÉÊÍÓÔÕÚÇ][a-záàâãéêíóôõúç]{2,})\b/u;
+/** Maiúsculas que PODEM vir atrás de artigo sem serem pessoa. */
+const MAIUSCULAS_PERMITIDAS = new Set([
+  'Banco', 'Brasil', 'Central', 'FinMoovi', 'Selic', 'Receita', 'Caixa', 'Nubank',
+  'Serasa', 'Pix', 'Bolsa', 'Tesouro', 'Ibge', 'IBGE', 'Cdb', 'CDB',
+]);
+
+/** O nome de pessoa que este texto diz, se disser algum. */
+export function nomeDePessoa(txt) {
+  const m = NOME_DE_PESSOA.exec(String(txt || ''));
+  if (!m) return null;
+  return MAIUSCULAS_PERMITIDAS.has(m[1]) ? null : m[1];
+}
+
+/**
  * O QUE O FECHO NÃO PODE CITAR — copiado em ESPÍRITO da trava do Short (a razão está
  * escrita lá): o fecho é a RESPOSTA à promessa mais a assinatura. O app teve os três
  * capítulos, o pedido teve o bloco da chamada.
@@ -827,6 +859,14 @@ export function validarAbertura(fala, { promessa = '', exemploParaComparar = '' 
     erros.push(
       `abertura: nenhuma palavra da promessa é dita. Os vídeos longos que prendem NOMEIAM a promessa logo no início. `
       + `Prometido: "${promessa}"`,
+    );
+  }
+
+  const nome = nomeDePessoa(txt);
+  if (nome) {
+    erros.push(
+      `abertura: dá nome a uma pessoa ("${nome}") — este canal é ANÓNIMO. Conte na primeira pessoa `
+      + `("eu abri a fatura") ou diga o que a pessoa É ("o meu vizinho", "a moça do caixa"), nunca como se chama.`,
     );
   }
 

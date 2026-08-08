@@ -35,7 +35,7 @@ const RAIZ = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
 
 import {
   validarMapa, validarAbertura, validarCapitulo, validarChamada, validarFecho, validarLongo,
-  contarPalavras, ORCAMENTO, MAX_PALAVRAS_TITULO, PARTES_DO_CAPITULO, valoresEmDinheiro,
+  contarPalavras, ORCAMENTO, MAX_PALAVRAS_TITULO, PARTES_DO_CAPITULO, valoresEmDinheiro, nomeDePessoa,
 } from '../youtube/lib/schema-longo.js';
 import {
   EXEMPLO_DE_MAPA, EXEMPLO_DE_ABERTURA, EXEMPLO_DE_CAPITULO, EXEMPLO_DE_FECHO,
@@ -316,6 +316,28 @@ reprova(
   validarAbertura(aberturaComPronomeSolto, { promessa: EXEMPLO_DE_ABERTURA.promessa }),
   'ainda não foi apresentado',
 );
+/**
+ * 🔴 O CANAL É ANÓNIMO — 08/08/2026, correcção do dono.
+ * Os dois vídeos que ele deu como referência dão nomes aos personagens (Norberto e
+ * Célia). O gerador copiou a ideia e saiu *"por que o João se aposentou e o Carlos
+ * ainda pega ônibus"*. Ele corrigiu: *"não temos nada que fale sobre colocar nomes de
+ * pessoas, o nosso ecossistema é anónimo, aquilo era um exemplo"*.
+ */
+const aberturaComNome = EXEMPLO_DE_ABERTURA.fala.replace(
+  'Todo dia dez a conta de luz chega na caixa do correio da minha mãe.',
+  'Todo dia dez a conta de luz chega na casa do João.',
+);
+reprova(
+  'abertura: dá nome a uma pessoa (o canal é anónimo)',
+  validarAbertura(aberturaComNome, { promessa: EXEMPLO_DE_ABERTURA.promessa }),
+  'este canal é ANÓNIMO',
+);
+{
+  // E o que NÃO pode ser confundido com nome de pessoa.
+  const seguros = ['A taxa do Banco Central subiu', 'Joguei tudo no FinMoovi', 'O meu vizinho parou', 'A moça do caixa disse'];
+  ok('nenhuma marca ou pessoa-sem-nome é confundida com nome próprio', seguros.every((s) => !nomeDePessoa(s)));
+}
+
 const aberturaSemPergunta = EXEMPLO_DE_ABERTURA.fala.replace('Então o que mudou?', 'Então alguma coisa mudou.');
 reprova(
   'abertura: a cena está lá mas nunca chega a haver pergunta',
@@ -579,6 +601,7 @@ console.log('   (a prova nasceu de uma falha REAL: a trava punia "moedinha" e o 
     // 🔴 Virou-se ao contrário em 08/08/2026 — ver a prova da abertura, mais acima.
     ['a 1ª frase não pode ser comprida e vaga', ['abertura'], /comprida e vaga/],
     ['fale como se fala na cozinha', ['abertura'], /COMO SE FALA NESTE CANAL/],
+    ['ninguém tem nome neste canal', ['abertura', 'capitulo', 'fecho'], /NINGUÉM TEM NOME NESTE CANAL/],
     ['ninguém é "um deles" antes de ser apresentado', ['abertura'], /antes de dizer o que fazem/],
     ['o título de capítulo não é genérico', ['mapa'], /Introdução/],
     ['a chamada diz FINMOOVI', ['chamada'], /FINMOOVI/],

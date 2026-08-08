@@ -336,7 +336,12 @@ const REGRAS_DE_FALA = `════════ COMO A FALA FLUI ════�
   ✗ "Três erros de cartão tiram quinhentos reais por mês."   ✓ "Três erros de cartão QUE tiram quinhentos reais por mês."
 - **LINGUAGEM CONCRETA.** O dinheiro sai de um LUGAR e de um BOLSO. Diga qual.
   ✗ "…que desaparecem todo mês."   ✓ "…que desaparecem DA SUA CONTA todo mês."
-- Diga "vídeo", nunca "Short". Nunca diga "tchau", "até a próxima" nem "obrigado".`;
+- Diga "vídeo", nunca "Short". Nunca diga "tchau", "até a próxima" nem "obrigado".
+- 🔴 **NINGUÉM TEM NOME NESTE CANAL.** Nada de João, Maria, Carlos, Norberto, Célia.
+  · Quem conta a história é **você, na primeira pessoa** — *"eu abri a fatura"*, *"eu fiquei olhando"*.
+  · Quando precisar de outra pessoa, use o que ela É, nunca como se chama: *"o meu vizinho"*, *"a moça do caixa"*, *"o cara que trabalha comigo há trinta anos"*, *"o outro"*.
+  · Quando comparar dois caminhos, compare **situações**, não pessoas com nome: *"quem paga só o mínimo"* contra *"quem separa antes"*.
+  · ⚠️ Isto não é gosto: o canal é ANÓNIMO por decisão do dono. Um nome inventado faz o vídeo parecer um caso real que ninguém pode conferir. O computador confere.`;
 
 /**
  * ═══ A ESPINHA NARRATIVA — a mudança que o dono pediu em 04/08/2026 ═══
