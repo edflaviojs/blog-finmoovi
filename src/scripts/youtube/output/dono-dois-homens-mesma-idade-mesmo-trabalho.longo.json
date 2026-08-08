@@ -1,0 +1,128 @@
+{
+  "tema": "Sair do vermelho: o plano de três passos pra pagar a dívida sem apertar mais o mês",
+  "angulo": "A pessoa já tentou pagar e não conseguiu. Mostrar por que o dinheiro não sobra, como ver o tamanho real da dívida num sítio só, e por onde começar a atacar sem cortar o essencial.",
+  "promessa": "Vou te mostrar onde a dívida continua crescendo e como começar a pagar sem apertar o essencial do mês",
+  "fioCondutor": "mochila-pedras",
+  "lacoAberto": "E quando você sabe qual dívida está pesando mais, o próximo pagamento deixa de ser uma escolha no escuro",
+  "abertura": "Você paga a dívida todo mês e mesmo assim ela continua crescendo? Isso acontece porque uma parte do seu dinheiro vai embora antes de você conseguir organizar as contas. Você corta um gasto aqui, segura uma comprinha ali, só que o que você deve fica espalhado em vários lugares e parece que esse sufoco não acaba nunca. Mas olha, quando você junta tudo num lugar só, fica muito mais fácil enxergar o tamanho do problema e saber por onde começar. Eu vou te mostrar onde a dívida continua crescendo e como começar a pagar sem apertar o essencial do mês.",
+  "capitulos": [
+    {
+      "pergunta": "Você já somou tudo que deve e olhou o número de frente? Eu fiz isso e levei um susto.",
+      "desenvolvimento": "Olha, eu achava que estava acompanhando as minhas contas. Todo mês eu pagava o que dava, olhava o saldo do banco e seguia a vida. Só que eu nunca tinha juntado tudo num lugar só. Num domingo, eu sentei com a fatura do cartão na mão e comecei a anotar. A fatura estava em setecentos e oitenta reais. Depois, coloquei o empréstimo do banco, que era trezentos reais. Por último, a compra parcelada de duzentos reais. Fui somando ali mesmo no papel, e cheguei aos mil duzentos e oitenta reais. Na hora eu parei. Porque eu só olhava pra cada conta sozinha. A fatura era um pedaço. O empréstimo era outro. A compra parcelada parecia pequena. Quando eu coloquei as três juntas, eu enxerguei o tamanho da dívida que estava saindo do meu bolso. E eu ainda achava que estava fazendo a minha parte, porque todo mês eu pagava alguma coisa. Só que aquela conta inteira continuava ali, esperando o mês seguinte. E foi aí que eu percebi que faltava entender um detalhe antes de escolher por onde começar a pagar.",
+      "regancho": "Eu pagava um pouco de cada, mas continuava arrastando aquela dívida pesada para o mês seguinte. E foi aí que eu precisei entender o que estava acontecendo por trás desses pagamentos.",
+      "titulo": "O dia em que eu descobri os mil duzentos e oitenta reais"
+    },
+    {
+      "pergunta": "Você sabe por que pagar um pouco todo mês pode deixar você preso na mesma dívida? Eu só entendi isso quando vi para onde o meu dinheiro ia depois que eu pagava a conta.",
+      "desenvolvimento": "Olha, eu tinha uma ideia bem simples na cabeça. Eu pagava o que conseguia e esperava que, no mês seguinte, a dívida fosse diminuir. Só que uma boa parte desse dinheiro servia só para pagar os juros. E isso fica mais pesado no cartão de crédito. Se eu não pagasse a fatura inteira, o banco cobrava juros em cima do que faltou. Ou seja, eu pagava, mas o dinheiro não diminuía a dívida de verdade. Foi aí que eu entendi por que aqueles mil duzentos e oitenta reais continuavam pesando no meu mês. E eu sei o que você pode estar pensando. Você vai dizer que não sobra dinheiro para pagar a fatura toda. Eu também dizia isso. O problema é que, tentando resolver tudo pagando só o que dava, eu não via o quanto cada dívida comia do meu salário.",
+      "demonstracao": "Foi aí que eu joguei minhas contas no aplicativo FinMoovi. Na tela, apareceu a dívida total de mil duzentos e oitenta reais, e logo abaixo ele separou a fatura do cartão das outras contas. Só que o app me mostrou uma coisa que eu não estava procurando. Ele dividiu o valor em duas linhas. Uma mostrava o dinheiro que pagava só os juros, e a outra mostrava o que realmente diminuía a minha dívida. Quando eu vi essa divisão ali na tela, entendi por que pagar um pouquinho todo mês não tirava a corda do meu pescoço.",
+      "regancho": "E aí ficou uma coisa na minha cabeça. Se eu não podia tirar o dinheiro que a minha casa precisava para viver, eu precisava escolher com muito cuidado qual daquelas contas eu ia pagar primeiro.",
+      "titulo": "Por que eu pagava todo mês e a dívida continuava"
+    },
+    {
+      "pergunta": "Como eu ia começar a pagar a dívida sem mexer no que minha casa precisava naquele mês? Eu precisava escolher uma conta e colocar nela o dinheiro que realmente sobrava.",
+      "desenvolvimento": "Olha, eu sentei de novo com as contas na minha frente e fiz uma escolha que eu vinha evitando. Primeiro, deixei separado o dinheiro das despesas essenciais da casa. Depois, olhei para as três dívidas que eu já tinha colocado na mesa. A fatura do cartão era de setecentos e oitenta reais. O empréstimo do banco era de trezentos reais. E tinha mais duzentos reais daquela compra parcelada. Somando tudo, eu tinha mil duzentos e oitenta reais de dívida. Eu já sabia esse número. O que mudou foi o jeito de agir com ele. Em vez de espalhar o pouco dinheiro que sobrava entre todas as contas, eu passei a concentrar esse dinheiro primeiro na dívida que estava pesando mais. Quando conseguia pagar alguma coisa, eu mantinha o essencial do mês protegido e colocava o restante naquela primeira conta. No começo deu um aperto, porque eu queria resolver tudo de uma vez. Só que eu não tinha dinheiro para fazer isso. Então fui por partes, sem tirar da comida, da casa e das contas que precisavam continuar em dia.",
+      "regancho": "E aí veio a parte que eu ainda não sabia responder. Mantendo esse jeito de pagar, quanto tempo eu levaria para tirar aqueles mil duzentos e oitenta reais das costas?",
+      "titulo": "O primeiro pagamento que eu escolhi fazer"
+    }
+  ],
+  "chamada": "Quer saber quanto tempo falta pra você terminar de pagar essa dívida? Comenta FINMOOVI aqui embaixo. Eu te mando o app grátis pra você fazer essa conta rapidinho, sem dor de cabeça.",
+  "fecho": "Com essa conta pronta, você percebe que o dinheiro começa a sobrar quando consegue enxergar a dívida inteira. Aí você escolhe uma só pra atacar primeiro, sem mexer no que mantém a casa funcionando. O básico continua pago, e cada nota tem um lugar certo pra ir. É assim que a gente para de apagar incêndio e começa a ver uma saída de verdade. Só que ainda falta um detalhe. Escolher a dívida certa também depende de entender qual delas vai pesar mais no seu bolso se ficar pra depois. Dinheiro sem controle é dinheiro dos outros.",
+  "mapa": {
+    "promessa": "Vou te mostrar onde a dívida continua crescendo e como começar a pagar sem apertar o essencial do mês",
+    "fioCondutor": "mochila-pedras",
+    "numeroEspinha": 1280,
+    "valores": [
+      {
+        "nome": "a fatura do cartão",
+        "valor": 780
+      },
+      {
+        "nome": "o empréstimo do banco",
+        "valor": 300
+      },
+      {
+        "nome": "a compra parcelada",
+        "valor": 200
+      },
+      {
+        "nome": "a dívida toda que eu somei",
+        "valor": 1280
+      }
+    ],
+    "somas": [
+      {
+        "de": [
+          "a fatura do cartão",
+          "o empréstimo do banco",
+          "a compra parcelada"
+        ],
+        "da": "a dívida toda que eu somei"
+      }
+    ],
+    "contaDoCartao": "a fatura do cartão",
+    "capituloDaDemonstracao": 2,
+    "capitulos": [
+      {
+        "titulo": "O dia em que eu descobri os mil duzentos e oitenta reais",
+        "oQueAcrescenta": "o susto: eu juntei a fatura do cartão, o empréstimo do banco e a compra parcelada e cheguei aos mil duzentos e oitenta reais",
+        "oQueFicaEmAberto": "por que eu continuava pagando e aquela dívida ainda parecia não sair do lugar"
+      },
+      {
+        "titulo": "Por que eu pagava todo mês e a dívida continuava",
+        "oQueAcrescenta": "a armadilha: parte do dinheiro pago vai para o custo da dívida, e no cartão isso pode ficar pesado quando a fatura não é paga inteira",
+        "oQueFicaEmAberto": "como eu podia escolher por onde começar sem tirar do dinheiro que a casa precisava"
+      },
+      {
+        "titulo": "O primeiro pagamento que eu escolhi fazer",
+        "oQueAcrescenta": "a virada: eu mantive o essencial do mês e passei a concentrar o dinheiro que sobrava na dívida mais cara primeiro",
+        "oQueFicaEmAberto": "quanto tempo ainda levaria para tirar os mil duzentos e oitenta reais das costas"
+      }
+    ],
+    "respostaDaPromessa": "Eu consegui começar a pagar os mil duzentos e oitenta reais sem cortar o essencial quando enxerguei tudo junto e escolhi uma dívida para atacar primeiro",
+    "lacoAberto": "E quando você sabe qual dívida está pesando mais, o próximo pagamento deixa de ser uma escolha no escuro",
+    "fichaDeDivida": {
+      "fatura": 780,
+      "minimoPago": 117,
+      "sobra": 663,
+      "jurosDoRotativo": 106,
+      "saldoParaParcelar": 769,
+      "meses": 12,
+      "parcela": 106,
+      "totalPago": 1394,
+      "aMais": 614,
+      "taxas": {
+        "rotativoAoMes": 16,
+        "parceladoAoMes": 8.815,
+        "periodo": "2026-07-14",
+        "fonte": "Banco Central do Brasil — Taxas de juros por instituição financeira",
+        "medida": "mediana das instituições listadas no período (NÃO é a média ponderada do mercado)"
+      },
+      "permitidos": [
+        780,
+        800,
+        117,
+        120,
+        100,
+        663,
+        660,
+        700,
+        106,
+        110,
+        769,
+        770,
+        1394,
+        1390,
+        1400,
+        1000,
+        614,
+        610,
+        600
+      ],
+      "texto": "Fatura do cartão: R$ 780\nPagando só o mínimo (15% da fatura, que é o piso da lei): paga R$ 117 e ficam R$ 663 por pagar\nEsses R$ 663 ficam um mês no rotativo e viram R$ 769 — são R$ 106 de juros num mês só\nDepois o banco é obrigado a parcelar: 12 vezes de R$ 106\nTotal pago no fim: R$ 1.394 — ou seja, R$ 614 a mais do que a fatura\n(taxas do Banco Central, 2026-07-14: rotativo 16% ao mês, parcelado 8,815% ao mês — mediana das instituições listadas no período (NÃO é a média ponderada do mercado))"
+    }
+  },
+  "palavras": 1006,
+  "segundosDeFala": 387,
+  "geradoEm": "2026-08-08T09:38:30.119Z"
+}

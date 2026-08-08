@@ -41,6 +41,11 @@ src/scripts/youtube/output/*.descricao.txt
 # Sao 9 KB de texto. Quando o robo escrever os seus proprios guioes todas as semanas,
 # esta linha deixa de ser precisa.
 !src/scripts/youtube/output/sair-do-vermelho.longo.json
+# ⚠️ E o segundo, pelo MESMO motivo e num caso ainda mais claro (08/08/2026): o dono
+# mandou refazer este video com os socos, a textura e o clarao consertado, e quer
+# comparar o antes com o depois. Se o guiao nao estiver aqui, a nuvem escreve um texto
+# NOVO -- e a comparacao deixa de medir o visual, passa a medir dois textos diferentes.
+!src/scripts/youtube/output/dono-dois-homens-mesma-idade-mesmo-trabalho.longo.json
 youtube-render/out/
 
 # As imagens da Manus vem em PNG de 4-6 MB. O que o video usa e a versao a 1920x1080
