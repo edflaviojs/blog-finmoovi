@@ -596,9 +596,35 @@ const CenaLonga: React.FC<{
     return interpolate(frame - activo.from, [0, 3, 9], [1, 1.035, 1], { extrapolateRight: 'clamp' });
   })();
 
+  /**
+   * 🔴 A RESPIRAÇÃO — e ela nasceu de uma MEDIÇÃO no vídeo já renderizado.
+   *
+   * Depois de pôr os socos e a textura, a tira de fotogramas ainda acusava trechos
+   * parados, e todos no mesmo sítio: os cartões de NÚMERO. O número conta de zero até
+   * ao valor e depois **fica quieto** — a partir daí só a legenda se mexe, e a legenda
+   * é pequena. Vê-se no fotograma dos 62 segundos: "R$ 350" cravado no meio do ecrã,
+   * sem nada a acontecer.
+   *
+   * A resposta não é mais um efeito: é o ecrã nunca ficar completamente imóvel. Um
+   * balanço lento — sete segundos de período — que não se repara; repara-se na
+   * ausência dele.
+   *
+   * ⚠️ **O NÚMERO FOI MEDIDO, NÃO ESCOLHIDO A OLHO.** A 1,2% e 3px, a diferença entre
+   * dois fotogramas separados por oito dava **1,10** — logo abaixo do 1,2 a partir do
+   * qual a tira de fotogramas deixa de chamar "parado". A 1,8% e 5px passa.
+   *
+   * ⚠️ E fica deliberadamente pequeno. O dono quer ritmo, não enjoo: quem dá o soco é
+   * o soco.
+   */
+  const respira = 1 + 0.018 * Math.sin(frame / 38);
+  const balanca = Math.sin(frame / 52) * 5;
+
   return (
     <AbsoluteFill>
-      <AbsoluteFill style={{ opacity: entra, transform: `scale(${reaccao})` }}>{conteudo}</AbsoluteFill>
+      <AbsoluteFill style={{
+        opacity: entra,
+        transform: `translateX(${balanca}px) scale(${reaccao * respira})`,
+      }}>{conteudo}</AbsoluteFill>
       {/* Véu por baixo da legenda: sem ele, a legenda branca cai por cima de gráficos
           claros e deixa de se ler. Só a faixa de baixo é escurecida. */}
       {comLegenda ? (

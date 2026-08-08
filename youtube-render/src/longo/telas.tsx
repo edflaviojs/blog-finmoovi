@@ -1047,6 +1047,19 @@ export const TelaFinal: React.FC<{ frames?: number }> = ({ frames = TELA_FINAL_F
     return interpolate(dentro, [0, 8, 40, CICLO_DO_FAROL], [0, 1, 0.75, 0], { extrapolateRight: 'clamp' });
   };
 
+  /**
+   * ⚠️ **A PRIMEIRA VERSÃO DO FAROL ERA SUBTIL DEMAIS E NÃO CONTOU COMO MOVIMENTO.**
+   * Medido no vídeo renderizado: a tela final continuava a marcar **dois trechos
+   * parados de 3,8 segundos** na tira de fotogramas, apesar do farol. Mexer só na
+   * borda e na sombra de um cartão não move pixels que cheguem — nem para a régua,
+   * nem para o olho.
+   *
+   * Então o cartão da vez passa a **crescer 6%** (era 2,2%) e a coluna do texto passa
+   * a deslizar devagar mas SEM PARAR. Isto é o que faz a diferença entre "há um
+   * detalhe a mudar" e "a tela está viva".
+   */
+  const deslizeDoTexto = Math.sin(frame / 44) * 9;
+
   const Moldura: React.FC<{ estilo: React.CSSProperties; rotulo: string; redonda?: boolean; atraso: number; farol?: number }> = ({ estilo, rotulo, redonda, atraso, farol = 0 }) => {
     const ap = spring({ frame: frame - atraso, fps, config: { damping: 16, mass: 0.8 } });
     return (
@@ -1054,7 +1067,7 @@ export const TelaFinal: React.FC<{ frames?: number }> = ({ frames = TELA_FINAL_F
         position: 'absolute',
         ...estilo,
         opacity: ap,
-        transform: `scale(${interpolate(ap, [0, 1], [0.94, 1]) * (1 + farol * 0.022)})`,
+        transform: `scale(${interpolate(ap, [0, 1], [0.94, 1]) * (1 + farol * 0.06)})`,
         borderRadius: redonda ? '50%' : 22,
         border: `${3 + farol * 2}px dashed ${BRAND.cyan}${redonda ? '66' : '55'}`,
         background: `${BRAND.panel}cc`,
@@ -1088,7 +1101,8 @@ export const TelaFinal: React.FC<{ frames?: number }> = ({ frames = TELA_FINAL_F
         {/* ── o lado do texto (esquerda) ── */}
         <div style={{
           position: 'absolute', left: '6%', top: '22%', width: '42%',
-          opacity: entra, transform: `translateX(${interpolate(entra, [0, 1], [-40, 0])}px)`,
+          opacity: entra,
+          transform: `translateX(${interpolate(entra, [0, 1], [-40, 0]) + deslizeDoTexto}px)`,
         }}>
           {/* ⚠️ A marca já está no alto do ecrã (a `Watermark`) — repeti-la aqui era
               dizer o nome duas vezes no mesmo quadro. */}
