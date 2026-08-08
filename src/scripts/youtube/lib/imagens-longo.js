@@ -680,7 +680,10 @@ export function numerarVariantes(cenas) {
  * Ela NÃO julga se a imagem é bonita (isso é gosto, e mede-se olhando o fotograma).
  * Ela julga o que é VERDADE e se pode provar com o guião na mão.
  */
-export function conferirImagens(cenas, mapa = {}, slugDoVideo = null) {
+// ⚠️ `catalogoDeMesa` é o MESMO recurso que `escolherLugaresDaFoto` já tinha, e pelo
+//    mesmo motivo: deixar as provas medirem isto sem escrever no disco. Quem chama a
+//    sério (o `montar-longo.js`) continua a passar três argumentos e a ler o catálogo.
+export function conferirImagens(cenas, mapa = {}, slugDoVideo = null, catalogoDeMesa = null) {
   const erros = [];
   const dic = dicionarioDeValores(mapa);
 
@@ -793,7 +796,24 @@ export function conferirImagens(cenas, mapa = {}, slugDoVideo = null) {
    * abrir uma fatura aterrar no fecho do vídeo — e seria outra vez a queixa nº 1 do dono,
    * o ecrã a mostrar uma coisa e a voz a dizer outra.
    */
-  const doVideo = FOTOS_POR_VIDEO[String(slugDoVideo || '')] || [];
+  /**
+   * 🔴 QUEM CONFERE TEM DE OLHAR PARA A MESMA LISTA DE QUEM ESCOLHE — 08/08/2026.
+   *
+   * Isto dizia `FOTOS_POR_VIDEO[slug] || []`, e o `escolherLugaresDaFoto` (linha 288)
+   * diz `FOTOS_POR_VIDEO[slug] || fotosDoCatalogo(slug)`. Duas listas diferentes para
+   * a mesma pergunta.
+   *
+   * `FOTOS_POR_VIDEO` é escrita à mão e só conhece **um** vídeo: o piloto
+   * `sair-do-vermelho`. Portanto, em qualquer outro vídeo, quem escolhe via as
+   * fotografias (pelo catálogo) e punha-as nas cenas, e quem confere via ZERO e
+   * reprovava-as todas.
+   *
+   * ⚠️ **Isto reprovava TODO vídeo longo que não fosse o piloto.** Não se tinha visto
+   * porque o piloto foi o único longo que chegou a esta fase — o de 08/08 foi o
+   * primeiro a seguir, e morreu aqui com as duas fotografias já feitas e aprovadas em
+   * disco: *"2 fotografias — só existem 0 feitas para este vídeo"*.
+   */
+  const doVideo = FOTOS_POR_VIDEO[String(slugDoVideo || '')] || fotosDoCatalogo(slugDoVideo, catalogoDeMesa);
   const fotos = cenas.filter((c) => c.visual?.tipo === 'foto');
   if (fotos.length > doVideo.length) {
     erros.push(`${fotos.length} fotografias — só existem ${doVideo.length} feitas para este vídeo`);
