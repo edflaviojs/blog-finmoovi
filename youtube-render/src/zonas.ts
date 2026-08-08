@@ -77,3 +77,57 @@ export const CORTE_SUPERIOR = 220;
  * começa em y≈1100, um pouco acima da faixa teórica, mas bem dentro do que se vê.
  */
 export const LEGENDA_BOTTOM = 630; // fim da legenda em y=1290, acima do cartão (1310)
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// AS ZONAS DO 16:9 — o vídeo longo, 1920×1080 (08/08/2026)
+// ═══════════════════════════════════════════════════════════════════════════════
+/**
+ * ⚠️ **OS NÚMEROS DO 9:16 NÃO SERVEM AQUI, E ESTA SECÇÃO EXISTE PARA QUE NINGUÉM OS
+ * COPIE.** Outra tela, outra interface, outros cortes.
+ *
+ * ═══ COMO FORAM MEDIDOS ═══
+ * Não foram estimados: extraíram-se três fotogramas do vídeo que FOI AO AR
+ * (`sair-do-vermelho.mp4`, aos 25s, 1min02 e 3min25) e contaram-se os pixels claros
+ * linha a linha. O resultado, igual nos três:
+ *
+ *   · a tinta mais baixa do quadro está em **y=979, y=990 e y=990**;
+ *   · a legenda queimada estava a **19px dentro** da barra de controles;
+ *   · o trilho de progresso vivia em `bottom: 0` — ou seja, **sempre por baixo** da
+ *     barra do YouTube, e mais: encostado à barra vermelha do próprio YouTube, duas
+ *     barras de progresso empilhadas a competir uma com a outra;
+ *   · e 58% a 65% do quadro estava VAZIO, com a faixa de baixo a 1,5-3,1% de tinta.
+ *
+ * ═══ O QUE SE PROTEGE, E SÓ ISSO ═══
+ * Ordem do dono: proteger o que o YouTube tapa, e não mais. Fica de fora, de
+ * propósito, o corte das TVs (5% de overscan) e as margens do telemóvel deitado —
+ * apertá-las obrigaria a encolher o texto, e não há prova de que custe alguma coisa.
+ */
+export const ARTE_16x9 = { x: 0, y: 0, w: 1920, h: 1080 } as const;
+
+/**
+ * O limite de baixo. Abaixo disto está a barra de controles do YouTube — 10% da
+ * altura, que é a margem que o próprio YouTube recomenda deixar livre.
+ */
+export const CORTE_INFERIOR_16x9 = 972;
+
+/**
+ * A distância do fundo até ao fim da legenda, para escrever num `bottom:` de CSS.
+ *
+ * 92 (o valor antigo) punha o fim da tinta em y=990, dezanove pixels dentro da barra.
+ * **150** põe-no em y≈930 — **42px de folga** acima do corte. A folga não é luxo: a
+ * legenda tem duas linhas em alguns momentos e a linha activa cresce ao ser dita
+ * (`scale` até 1,1), portanto a tinta desce um pouco mais do que a caixa sugere.
+ */
+export const LEGENDA_BOTTOM_16x9 = 150;
+
+/**
+ * Onde vive o trilho de progresso. **Em cima, não em baixo.**
+ *
+ * ⚠️ Dito às claras, porque não é perfeito: quando a pessoa toca no vídeo, o YouTube
+ * também escurece o TOPO para mostrar o título e o nome do canal. A diferença que faz
+ * a escolha é outra — **em baixo há uma barra de progresso do YouTube**, e duas barras
+ * de progresso encostadas leem-se como um defeito, não como duas informações. Em cima
+ * a nossa está sozinha. E os controles do YouTube escondem-se sozinhos ao fim de
+ * poucos segundos; a barra vermelha dele, não.
+ */
+export const TRILHO_TOPO_16x9 = 0;

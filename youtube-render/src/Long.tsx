@@ -35,6 +35,10 @@ import { activeIndex, wordTimingsFromReal, layoutWords } from './captions';
 import { CoreografiaDaCapa } from './capas';
 import { PALCO_W, PALCO_H } from './capa';
 import { BRAND, DISPLAY, BODY, gradientText } from './theme';
+// ⚠️ Até 08/08/2026 este ficheiro NÃO importava `zonas` — nem uma linha. As margens
+//    viviam cravadas à mão, número a número, e foi assim que a legenda foi parar
+//    debaixo da barra do YouTube sem ninguém dar por isso.
+import { LEGENDA_BOTTOM_16x9, TRILHO_TOPO_16x9 } from './zonas';
 // ── as telas que nascem do texto (04/08/2026) ────────────────────────────────
 import {
   Etiqueta, CartaoDeNumero, CartaoDaConta, TelaDoApp, CartaoDeFrase, Metafora, PalavrasNaTela,
@@ -230,7 +234,10 @@ const LegendaLonga: React.FC<{ narration: string; totalFrames: number; words?: {
 
   return (
     <div style={{
-      position: 'absolute', bottom: 92, left: 180, right: 180,
+      // ⚠️ 92 punha o fim da legenda em y=990 — dezanove pixels DENTRO da barra de
+      //    controles do YouTube, medido em três fotogramas do vídeo que foi ao ar.
+      //    É o mesmo defeito que o Short tinha; aqui ninguém tinha olhado. Ver `zonas.ts`.
+      position: 'absolute', bottom: LEGENDA_BOTTOM_16x9, left: 180, right: 180,
       display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center',
       gap: '10px 14px', transform: `translateY(${lineY}px)`,
       fontFamily: BODY, fontWeight: 800, lineHeight: 1.05,
@@ -371,11 +378,18 @@ const TrilhoLongo: React.FC<{ total: number; marcas: number[] }> = ({ total, mar
   const frame = useCurrentFrame();
   const pct = Math.min(1, Math.max(0, frame / Math.max(1, total)));
   return (
-    <div style={{ position: 'absolute', left: 0, right: 0, bottom: 0, height: 8, background: 'rgba(148,163,184,0.16)' }}>
+    // ⚠️ EM CIMA, NÃO EM BAIXO. Em `bottom: 0` este trilho vivia por baixo da barra
+    //    de controles do YouTube — e encostado à barra de progresso VERMELHA do
+    //    próprio YouTube. Duas barras de progresso empilhadas leem-se como defeito.
+    //    Ver `zonas.ts`, secção do 16:9.
+    <div style={{ position: 'absolute', left: 0, right: 0, top: TRILHO_TOPO_16x9, height: 8, background: 'rgba(148,163,184,0.16)' }}>
       <div style={{ height: '100%', width: `${pct * 100}%`, background: BRAND.gradient, boxShadow: '0 0 18px rgba(139,92,246,0.6)' }} />
       {marcas.map((m, i) => (
         <div key={i} style={{
-          position: 'absolute', left: `${(m / Math.max(1, total)) * 100}%`, top: -4, width: 4, height: 16,
+          // ⚠️ As marcas apontam para BAIXO agora. Com o trilho em baixo elas eram
+          //    `top: -4` para sobressair por cima; no topo, esse -4 punha-as FORA da
+          //    tela. `top: 0` faz os 16px de altura descerem sobre a imagem.
+          position: 'absolute', left: `${(m / Math.max(1, total)) * 100}%`, top: 0, width: 4, height: 16,
           background: frame >= m ? BRAND.yellow : 'rgba(148,163,184,0.5)', borderRadius: 2,
         }} />
       ))}
