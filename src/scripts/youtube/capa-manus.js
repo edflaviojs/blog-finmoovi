@@ -209,7 +209,27 @@ async function main() {
 
   const trabalhos = [];
   if (so !== 'imagens') {
-    const titulo = 'SAIR DO VERMELHO';
+    /**
+     * 🔴 O TÍTULO ESTAVA CRAVADO EM 'SAIR DO VERMELHO' — 08/08/2026.
+     *
+     * Era o título do vídeo PILOTO, escrito à mão quando só existia um vídeo. Correr
+     * isto para qualquer outro slug dava uma miniatura com o título de outro vídeo —
+     * e ninguém daria por isso, porque o programa não falha: devolve uma imagem bonita
+     * e errada. É o mesmo defeito de família que o `FOTOS_POR_VIDEO` tinha em
+     * `imagens-longo.js`, e que reprovava todos os vídeos menos o piloto.
+     *
+     * Agora sai do TEMA do guião, que é a frase que o dono aprovou na fila. Corta-se
+     * no primeiro dois-pontos (o tema tem a forma "Título: a explicação") e limita-se a
+     * seis palavras — uma miniatura com uma frase inteira não se lê no telemóvel.
+     */
+    const titulo = String(roteiro.tema || '')
+      .split(':')[0]
+      .trim()
+      .split(/\s+/)
+      .slice(0, 6)
+      .join(' ')
+      .toLocaleUpperCase('pt-BR');
+    if (!titulo) throw new Error('o guião não tem "tema" — sem título não se faz a capa');
     const aMais = ficha?.aMais;
     if (!aMais) throw new Error('não encontrei o valor "a mais" no caderno — não invento números na capa');
     const variante = args.variante && args.variante !== true ? String(args.variante) : 'marca';
@@ -263,13 +283,28 @@ async function main() {
          * Em JPEG, à medida certa, são ~250 KB e **essa** vai para o repositório: sem
          * ela, um clone limpo não conseguia renderizar o vídeo.
          */
-        if (t.ficheiro.startsWith('imagem-')) {
+        /**
+         * 🔴 A CAPA TAMBÉM PRECISA DA VERSÃO JPG — e não a tinha, até 08/08/2026.
+         *
+         * Esta conversão só corria para os ficheiros `imagem-*`. A capa saía em PNG…
+         * e o `upload-longo.js:85` só procura `.jpg` (`capa-canal-youtube.jpg`,
+         * `capa-youtube.jpg`, `capa-canal.jpg`, `capa.jpg`). Ou seja: mesmo correndo
+         * este programa à mão, a miniatura recém-feita **nunca seria encontrada** e o
+         * YouTube continuava a escolher um fotograma sozinho.
+         *
+         * ⚠️ A capa vai a 1280×720, que é a medida do YouTube, e não a 1920×1080 como
+         * as imagens do meio do vídeo — essas são para o RENDER, esta é para a lista
+         * de vídeos.
+         */
+        const paraOVideo = join(destino, `${base}.jpg`);
+        const ehCapa = t.ficheiro === 'capa' || t.ficheiro.startsWith('capa-');
+        if (t.ficheiro.startsWith('imagem-') || ehCapa) {
           try {
-            const paraOVideo = join(destino, `${base}.jpg`);
+            const medida = ehCapa ? 'scale=1280:720:flags=lanczos' : 'scale=1920:1080:flags=lanczos';
             execFileSync('ffmpeg', ['-v', 'error', '-y', '-i', join(destino, nome),
-              '-vf', 'scale=1920:1080:flags=lanczos', '-q:v', '3', paraOVideo], { stdio: 'ignore' });
+              '-vf', medida, '-q:v', '3', paraOVideo], { stdio: 'ignore' });
             const kb = Math.round(fs.statSync(paraOVideo).size / 1024);
-            console.log(`         → ${base}.jpg (${kb} KB) — é esta que o vídeo usa`);
+            console.log(`         → ${base}.jpg (${kb} KB) — ${ehCapa ? 'é esta que vai ao YouTube' : 'é esta que o vídeo usa'}`);
           } catch (err) {
             console.log(`         ⚠️ não deu para fazer a versão do vídeo (${err.message.split('\n')[0]})`);
           }
