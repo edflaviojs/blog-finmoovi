@@ -7,7 +7,15 @@
         "significado": "o susto de olhar a conta",
         "tipo": "foto",
         "movimento": "aproxima",
-        "pista": "voce sabe quanto do seu salario"
+        "pista": "voce sabe quanto dinheiro some da"
+      },
+      {
+        "ficheiro": "manus/dono-dois-homens-mesma-idade-mesmo-trabalho/virada.jpg",
+        "nome": "a saída que se abre",
+        "significado": "a saída que se abre",
+        "tipo": "foto",
+        "movimento": "aproxima-lento",
+        "pista": "eram trezentos e cinquenta reais da"
       }
     ]
   }
