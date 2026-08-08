@@ -676,14 +676,42 @@ Responda APENAS com JSON válido, sem markdown, com uma entrada por emenda, na m
 
 // ─── a máquina de gerar um bloco, com corretivo ──────────────────────────────
 
+/**
+ * 🔴 O PRIMEIRO `{` DO TEXTO NEM SEMPRE É O DO JSON — medido em 08/08/2026.
+ *
+ * O capítulo 2 reprovava por "JSON inválido" e a resposta do modelo estava PERFEITA.
+ * O que ele devolvia era isto:
+ *
+ *     :::writing{variant="document" id="58321"}
+ *     { "pergunta": "Você paga todo mês e sente que o dinheiro some?", ... }
+ *
+ * O modelo embrulha a resposta numa directiva de markdown, e o primeiro `{` do texto
+ * é o `{variant="document" id="58321"}` — que não é JSON. `JSON.parse` rebentava na
+ * posição 1, a tentativa era queimada, e nada no log dizia porquê.
+ *
+ * Custou DUAS das cinco tentativas do bloco, numa corrida em que a diferença para
+ * passar foram doze palavras.
+ *
+ * Agora tenta-se a partir de CADA `{` até o texto abrir. É barato (um punhado de
+ * tentativas de leitura) e apanha de uma vez toda a família do defeito: a directiva,
+ * a frase de cortesia antes do JSON, o rótulo, o que o modelo invente a seguir.
+ */
 function extrairJson(texto) {
   let s = String(texto).trim();
   const cerca = s.match(/```(?:json)?\s*([\s\S]*?)```/i);
   if (cerca) s = cerca[1].trim();
-  const a = s.indexOf('{');
   const b = s.lastIndexOf('}');
-  if (a === -1 || b === -1) throw new Error('nenhum JSON na resposta do modelo');
-  return JSON.parse(s.slice(a, b + 1));
+  if (b === -1 || s.indexOf('{') === -1) throw new Error('nenhum JSON na resposta do modelo');
+
+  let ultimoErro = null;
+  for (let a = s.indexOf('{'); a !== -1 && a < b; a = s.indexOf('{', a + 1)) {
+    try {
+      return JSON.parse(s.slice(a, b + 1));
+    } catch (err) {
+      ultimoErro = err;
+    }
+  }
+  throw new Error(`nenhum dos blocos {...} da resposta é JSON válido (${ultimoErro ? ultimoErro.message : 'sem detalhe'})`);
 }
 
 const dormir = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -739,7 +767,12 @@ async function gerarBloco({ nome, prompt, validar, tema, tentativas = 5, campos 
       obj = extrairJson(bruto);
     } catch (err) {
       corretivo = montarCorretivo(acumular(exigencias, [`devolva JSON válido (${err.message})`]));
-      console.log(`  ⚠ ${nome} — tentativa ${i}/${tentativas}: JSON inválido`);
+      // ⚠️ O MOTIVO VAI PARA O LOG, e isto custou uma corrida a descobrir. Em 08/08 o
+      // capítulo 2 reprovou 4 vezes em 5 com a linha "JSON inválido" e mais nada — sem
+      // o motivo, não há como saber se a resposta veio cortada, veio com aspas por
+      // escapar ou veio em prosa. Um aviso que esconde a causa não é um aviso.
+      console.log(`  ⚠ ${nome} — tentativa ${i}/${tentativas}: JSON inválido — ${err.message}`);
+      console.log(`     começo da resposta: ${JSON.stringify(String(bruto).trim().slice(0, 140))}`);
       continue;
     }
 

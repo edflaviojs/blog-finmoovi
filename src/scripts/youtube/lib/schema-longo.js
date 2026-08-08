@@ -97,7 +97,25 @@ export const ORCAMENTO = {
    * a pedir mais do que a trava deixa, outra vez.
    * A conta: 240 + os ~25s da demonstração a 2,6 palavras/s ≈ 65 palavras.
    */
-  capituloComDemo: { min: 215, max: 285 },
+  /**
+   * 🔴 E A 20ª OCORRÊNCIA, MEDIDA EM 08/08/2026 — o mesmo defeito, no mesmo sítio.
+   *
+   * O tecto subiu de 240 para 285 (acima) e continuou a não chegar. Sete tentativas
+   * medidas em duas corridas deste capítulo deram: **297, 306, 310, 320, 339, 348**.
+   * **Nenhuma abaixo de 297.** O gerador morria sempre aqui, e o vídeo da semana
+   * não saía.
+   *
+   * ⚠️ E desta vez o prompt NÃO está a mentir: ele diz "tudo somado, entre 215 e 285
+   * palavras, conte antes de responder", e as partes que pede somam 89s ≈ 231
+   * palavras. As contas fecham. O que não fecha é o modelo — ele não conta palavras,
+   * e o corretivo "CORTE 35 palavras" foi respondido com um texto MAIOR.
+   *
+   * Portanto o conserto não é insistir com o modelo (já se insistiu cinco vezes por
+   * corrida), é aceitar o tamanho que ele escreve de facto: 320 palavras a 2,6/s são
+   * **~13 segundos a mais** neste capítulo, num vídeo que saiu com 5min40. Continua
+   * dentro dos ~6 minutos que o dono fechou.
+   */
+  capituloComDemo: { min: 230, max: 320 },
   chamada: { min: 22, max: 40 },
   fecho: { min: 85, max: 115 },
 };
