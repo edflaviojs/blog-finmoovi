@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-07T11:36:32.079Z",
-  "sourceCursor": 0,
+  "updatedAt": "2026-08-08T09:28:15.918Z",
+  "sourceCursor": 1,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -700,9 +700,11 @@
       "category": null,
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "used",
       "addedAt": "2026-08-04T14:22:33.694Z",
-      "finmooviHook": "enviado via /status 04/08"
+      "finmooviHook": "enviado via /status 04/08",
+      "usedAt": "2026-08-08T09:28:15.918Z",
+      "usedBy": "gerar-dicas-financeiras"
     },
     {
       "keyword": "planilha de gastos mensal",
