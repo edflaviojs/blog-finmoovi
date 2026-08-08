@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-08T09:28:15.918Z",
-  "sourceCursor": 1,
+  "updatedAt": "2026-08-08T11:18:36.069Z",
+  "sourceCursor": 0,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -579,8 +579,9 @@
       "category": "glossario",
       "priority": 3,
       "source": "autocomplete",
-      "status": "pending",
-      "addedAt": "2026-08-03T10:31:32.126Z"
+      "status": "skipped",
+      "addedAt": "2026-08-03T10:31:32.126Z",
+      "reason": "nome-proprio-local"
     },
     {
       "keyword": "categoria de despesas",
@@ -597,8 +598,10 @@
       "category": "glossario",
       "priority": 3,
       "source": "autocomplete",
-      "status": "pending",
-      "addedAt": "2026-08-03T10:31:32.127Z"
+      "status": "used",
+      "addedAt": "2026-08-03T10:31:32.127Z",
+      "usedAt": "2026-08-08T11:18:36.069Z",
+      "usedBy": "glossario-auto-diario"
     },
     {
       "keyword": "categoria de despesas empresa",
