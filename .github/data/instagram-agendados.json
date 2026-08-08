@@ -6,5 +6,54 @@
     "publicaEm": "2026-08-06T22:00:00.000Z",
     "publicaEmBR": "06/08 às 19h00",
     "agendadoEm": "2026-08-06T06:08:58.215Z"
+  },
+  "kw-5-erros-que-aumentam-seu-saldo-devedor": {
+    "midias": {
+      "video": {
+        "id": "a22fe645-0ea2-4ba7-a4e5-d2ac9879ed3b",
+        "name": "2NvXc1mlWa.mp4",
+        "originalName": null,
+        "path": "https://media.help4desk.com/2NvXc1mlWa.mp4",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capa": {
+        "id": "e59a12ab-7846-4ec7-98b3-53e8faf9f7e1",
+        "name": "bAJ2FIQotH.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/bAJ2FIQotH.jpeg",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capaLarga": {
+        "id": "f42eb6c2-3c31-442f-896d-284551708bf5",
+        "name": "dcrAj7zUfY.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/dcrAj7zUfY.jpeg",
+        "thumbnail": null,
+        "alt": null
+      }
+    },
+    "publicaEm": "2026-08-08T22:00:00.000Z",
+    "publicaEmBR": "08/08 às 19h00",
+    "agendadoEm": "2026-08-08T15:48:06.694Z",
+    "atualizadoEm": "2026-08-08T15:48:06.886Z",
+    "redes": {
+      "instagram": {
+        "postId": "cmskjslst0001s390hk34s93n",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-08-08T22:00:00.000Z",
+        "publicaEmBR": "08/08 às 19h00",
+        "midia": "o vídeo",
+        "caracteres": 699,
+        "limite": 2200
+      },
+      "instagram-story": {
+        "postId": "cmskjsm560002s390ap44scma",
+        "tipo": "vídeo",
+        "publicaEm": "2026-08-08T22:05:00.000Z",
+        "publicaEmBR": "08/08 às 19h05"
+      }
+    }
   }
 }
