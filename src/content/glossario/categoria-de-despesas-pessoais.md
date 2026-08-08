@@ -4,6 +4,7 @@ definition: "O que é categoria de despesas pessoais e como isso aparece no seu 
 title: "categoria de despesas pessoais - Glossário Financeiro"
 description: "O que é categoria de despesas pessoais e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/categoria-de-despesas-pessoais.webp"
+imageAlt: "Pilhas de moedas douradas e um vaso com planta sobre fundo escuro."
 category: "basico"
 tags: ["categoria de despesas pessoais", "glossário", "finanças"]
 author: "FinMoovi"

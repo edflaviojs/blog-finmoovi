@@ -4,6 +4,7 @@ definition: "Qué es categoría de gastos personales y cómo aparece en tu día 
 title: "categoría de gastos personales - Glosario Financiero"
 description: "Qué es categoría de gastos personales y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/categoria-de-despesas-pessoais.webp"
+imageAlt: "Monedas doradas apiladas, frasco con planta y esfera sobre fondo oscuro iluminado con luz rosa."
 category: "basico"
 tags: ["categoría de gastos personales", "glosario", "finanzas"]
 author: "FinMoovi"

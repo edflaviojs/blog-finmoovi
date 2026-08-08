@@ -4,6 +4,7 @@ definition: "What personal expense category is and how it shows up in your every
 title: "personal expense category - Financial Glossary"
 description: "What personal expense category is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/categoria-de-despesas-pessoais.webp"
+imageAlt: "Gold coin stacks and jars with sprouting plants on dark background"
 category: "basico"
 tags: ["personal expense category", "glossary", "finance"]
 author: "FinMoovi"
