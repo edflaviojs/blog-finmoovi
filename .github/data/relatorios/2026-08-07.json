@@ -1,0 +1,554 @@
+{
+  "date": "2026-08-07",
+  "counts": {
+    "content": 12,
+    "videos": 1,
+    "pins": 3,
+    "failures": 3,
+    "runs": 49
+  },
+  "failures": [
+    {
+      "name": "YouTube — Renderizar Short (completo)",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/31159159005",
+      "timeLisbon": "08:49"
+    },
+    {
+      "name": "YouTube — Publicar Short (horário nobre)",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/31193943554",
+      "timeLisbon": "16:42"
+    },
+    {
+      "name": "YouTube — Responder aos comentários (FINMOOVI)",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/31222413944",
+      "timeLisbon": "23:03"
+    }
+  ],
+  "content": [
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "en",
+      "slug": "en-credit-card-statement",
+      "url": "https://blog.finmoovi.com/en/glossario/en-credit-card-statement",
+      "title": "Credit Card Statement - Financial Glossary",
+      "description": "What Credit Card Statement is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi.",
+      "category": "basico",
+      "publishedAt": "2026-08-07"
+    },
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "es",
+      "slug": "es-factura-de-la-tarjeta",
+      "url": "https://blog.finmoovi.com/es/glossario/es-factura-de-la-tarjeta",
+      "title": "factura de la tarjeta - Glosario Financiero",
+      "description": "Qué es factura de la tarjeta y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi.",
+      "category": "basico",
+      "publishedAt": "2026-08-07"
+    },
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "pt",
+      "slug": "fatura-do-cartao-mais",
+      "url": "https://blog.finmoovi.com/glossario/fatura-do-cartao-mais",
+      "title": "fatura do cartão mais - Glossário Financeiro",
+      "description": "O que é fatura do cartão mais e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi.",
+      "category": "basico",
+      "publishedAt": "2026-08-07"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "pt",
+      "slug": "7-maneiras-de-economizar-na-volta-as-aulas-do-2-semestre",
+      "url": "https://blog.finmoovi.com/posts/7-maneiras-de-economizar-na-volta-as-aulas-do-2-semestre",
+      "title": "7 maneiras de economizar na volta às aulas do 2º semestre (2026)",
+      "description": "Descubra estratégias práticas para reduzir custos na volta às aulas e mantenha o orçamento sob controle usando o FinMoovi.",
+      "category": "orcamento",
+      "publishedAt": "2026-08-07"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "es",
+      "slug": "es-7-maneras-de-ahorrar-en-el-regreso-a-clases-del-segundo",
+      "url": "https://blog.finmoovi.com/es/posts/es-7-maneras-de-ahorrar-en-el-regreso-a-clases-del-segundo",
+      "title": "7 maneras de ahorrar en el regreso a clases del segundo semestre (2026)",
+      "description": "Descubre estrategias prácticas para reducir costos al volver a clases y mantén tu presupuesto bajo control con FinMoovi.",
+      "category": "orcamento",
+      "publishedAt": "2026-08-07"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "en",
+      "slug": "en-7-ways-to-save-on-back-to-school-for-the-2nd-semester-2026",
+      "url": "https://blog.finmoovi.com/en/posts/en-7-ways-to-save-on-back-to-school-for-the-2nd-semester-2026",
+      "title": "7 Ways to Save on Back‑to‑School for the 2nd Semester (2026)",
+      "description": "Practical tips to cut back‑to‑school costs and keep your budget on track with FinMoovi.",
+      "category": "orcamento",
+      "publishedAt": "2026-08-07"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "es",
+      "slug": "es-como-pequenas-acciones-pueden-cambiar-tus-finanzas-en-2026",
+      "url": "https://blog.finmoovi.com/es/posts/es-como-pequenas-acciones-pueden-cambiar-tus-finanzas-en-2026",
+      "title": "Cómo pequeñas acciones pueden cambiar tus finanzas en 2026",
+      "description": "Descubre ejemplos prácticos de acciones que simplifican tu control financiero, con consejos reales y la app FinMoovi para transformar tu presupuesto.",
+      "category": "dicas",
+      "publishedAt": "2026-08-07"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "pt",
+      "slug": "como-pequenas-acoes-podem-mudar-suas-financas-em-2026",
+      "url": "https://blog.finmoovi.com/posts/como-pequenas-acoes-podem-mudar-suas-financas-em-2026",
+      "title": "Como pequenas ações podem mudar suas finanças em 2026",
+      "description": "Descubra exemplos práticos de ações que simplificam seu controle financeiro, com dicas reais e o app FinMoovi para transformar seu orçamento.",
+      "category": "dicas",
+      "publishedAt": "2026-08-07"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "es",
+      "slug": "es-consorcio-vs-financiacion-cual-vale-mas-la-pena-en-2026",
+      "url": "https://blog.finmoovi.com/es/posts/es-consorcio-vs-financiacion-cual-vale-mas-la-pena-en-2026",
+      "title": "Consorcio vs financiación: ¿cuál vale más la pena en 2026?",
+      "description": "Descubre las diferencias entre consorcio y financiación y encuentra la opción que mejor se adapta a tu bolsillo y a tus planes para 2026.",
+      "category": "investimentos",
+      "publishedAt": "2026-08-07"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "pt",
+      "slug": "consorcio-vs-financiamento-qual-vale-mais-a-pena-em-2026",
+      "url": "https://blog.finmoovi.com/posts/consorcio-vs-financiamento-qual-vale-mais-a-pena-em-2026",
+      "title": "Consórcio vs Financiamento: qual vale mais a pena em 2026?",
+      "description": "Descubra as diferenças entre consórcio e financiamento e saiba qual opção se encaixa melhor no seu bolso e nos seus planos para 2026.",
+      "category": "investimentos",
+      "publishedAt": "2026-08-07"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "en",
+      "slug": "en-consortium-vs-loan-which-is-better-in-2026",
+      "url": "https://blog.finmoovi.com/en/posts/en-consortium-vs-loan-which-is-better-in-2026",
+      "title": "Consortium vs Loan: Which Is Better in 2026?",
+      "description": "Learn the differences between a consortium and a loan and find out which option fits your budget and plans for 2026.",
+      "category": "investimentos",
+      "publishedAt": "2026-08-07"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "en",
+      "slug": "en-how-small-actions-can-transform-your-finances-in-2026",
+      "url": "https://blog.finmoovi.com/en/posts/en-how-small-actions-can-transform-your-finances-in-2026",
+      "title": "How Small Actions Can Transform Your Finances in 2026",
+      "description": "Practical tips to simplify money management, with real‑world examples and the FinMoovi app to take control of your budget.",
+      "category": "dicas",
+      "publishedAt": "2026-08-07"
+    }
+  ],
+  "videos": [
+    {
+      "slug": "kw-5-erros-que-aumentam-seu-saldo-devedor",
+      "videoId": "EX-IlDW7ZjA",
+      "uploadedAt": "2026-08-07T15:57:08.036Z",
+      "title": "ERROS que aumentam seu saldo devedor",
+      "timeLisbon": "16:57"
+    }
+  ],
+  "pins": [
+    {
+      "slug": "7-maneiras-de-economizar-na-volta-as-aulas-do-2-semestre",
+      "title": "7 maneiras de economizar na volta às aulas do 2º semestre (2026)",
+      "pinId": "1105281933577859222",
+      "publishedAt": "2026-08-07T15:44:20.319Z",
+      "postUrl": "https://blog.finmoovi.com/posts/7-maneiras-de-economizar-na-volta-as-aulas-do-2-semestre",
+      "timeLisbon": "16:44"
+    },
+    {
+      "slug": "como-pequenas-acoes-podem-mudar-suas-financas-em-2026",
+      "title": "Como pequenas ações podem mudar suas finanças em 2026",
+      "pinId": "1105281933577859228",
+      "publishedAt": "2026-08-07T15:44:24.741Z",
+      "postUrl": "https://blog.finmoovi.com/posts/como-pequenas-acoes-podem-mudar-suas-financas-em-2026",
+      "timeLisbon": "16:44"
+    },
+    {
+      "slug": "consorcio-vs-financiamento-qual-vale-mais-a-pena-em-2026",
+      "title": "Consórcio vs Financiamento: qual vale mais a pena em 2026?",
+      "pinId": "1105281933577859232",
+      "publishedAt": "2026-08-07T15:44:28.321Z",
+      "postUrl": "https://blog.finmoovi.com/posts/consorcio-vs-financiamento-qual-vale-mais-a-pena-em-2026",
+      "timeLisbon": "16:44"
+    }
+  ],
+  "runsSummary": [
+    {
+      "name": "IndexNow (indexação instantânea Bing/Copilot)",
+      "count": 5,
+      "ok": 5,
+      "fail": 0,
+      "firstTimeLisbon": "00:51"
+    },
+    {
+      "name": "YouTube — Responder aos comentários (FINMOOVI)",
+      "count": 15,
+      "ok": 14,
+      "fail": 1,
+      "firstTimeLisbon": "01:45"
+    },
+    {
+      "name": "YouTube — Detetive de tendências (diário)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "06:27"
+    },
+    {
+      "name": "Sincronizar i18n (auto-corretor PT/EN/ES)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "07:06"
+    },
+    {
+      "name": "Fact Firewall (anti-alucinacao)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "07:07"
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "count": 2,
+      "ok": 2,
+      "fail": 0,
+      "firstTimeLisbon": "07:52"
+    },
+    {
+      "name": "Gerar ALT descritivo das imagens (IA de visão)",
+      "count": 3,
+      "ok": 3,
+      "fail": 0,
+      "firstTimeLisbon": "08:17"
+    },
+    {
+      "name": "YouTube — Renderizar Short (completo)",
+      "count": 2,
+      "ok": 1,
+      "fail": 1,
+      "firstTimeLisbon": "08:49"
+    },
+    {
+      "name": "Community Monitor",
+      "count": 2,
+      "ok": 2,
+      "fail": 0,
+      "firstTimeLisbon": "09:10"
+    },
+    {
+      "name": "GSC - Canibalizacao por query",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "09:16"
+    },
+    {
+      "name": "Sazonal Multimercado (timezone)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "09:42"
+    },
+    {
+      "name": "GSC - Monitor de Indexacao",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "09:44"
+    },
+    {
+      "name": "Fix i18n Content (Daily Batch)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "10:32"
+    },
+    {
+      "name": "Gerar Dicas Financeiras",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "10:49"
+    },
+    {
+      "name": "Webmentions & Outreach",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "11:38"
+    },
+    {
+      "name": "Post Sazonal Semanal",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "11:49"
+    },
+    {
+      "name": "Glossário Diário Automático",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "12:34"
+    },
+    {
+      "name": "Post Comparação Semanal",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "14:00"
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "14:17"
+    },
+    {
+      "name": "Regenerar capas antigas do glossário (estilo 3D)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "14:50"
+    },
+    {
+      "name": "Sindicação Extra (Hashnode + Tumblr + Blogger)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "15:06"
+    },
+    {
+      "name": "YouTube — Publicar Short (horário nobre)",
+      "count": 3,
+      "ok": 2,
+      "fail": 1,
+      "firstTimeLisbon": "16:42"
+    },
+    {
+      "name": "Social Distribution (Pinterest + Bookmarks)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "16:43"
+    },
+    {
+      "name": "YouTube — Publicar Shorts de 16s (9h e 19h BR)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "23:16"
+    }
+  ],
+  "emails": [
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "timeLisbon": "07:52"
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "timeLisbon": "08:55"
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "timeLisbon": "14:17"
+    }
+  ],
+  "pendencias": [
+    "18/08/2026 — ESTUDO APIFY das transcrições (vídeo longo). Só a partir dessa data: o arquivo .github/data/youtube-capitulos.json precisa de ~2 semanas a acumular para haver 40-50 longos e se escolherem os MELHORES para transcrever. Passos: criar chave em console.apify.com/settings/integrations (permissões limitadas + validade 1 mês) → guardar como APIFY_TOKEN no cofre do GitHub (nunca no chat) → criar/configurar o actor de transcrições → 30-50 transcrições (~$0,25 do crédito grátis de $5/mês) → ler os primeiros 30s de cada. ⚠️ Estudo à mão, NUNCA dentro do robô diário. Detalhe completo: IMPLEMENTACAO20 §33.6",
+    "~18/08/2026 — RE-MEDIR A RETENÇÃO (youtube-retencao.yml, disparo manual). A de 03/08 deu 97 visualizações em 10 vídeos: audiência pequena de mais para haver curva. Agora que os vídeos vão a público na hora, 10-14 dias dão sinal a sério. IMPLEMENTACAO20 §33.2",
+    "Google Cloud billing: criar perfil de pagamentos PORTUGAL (NIF + cartão PT) → destrava vozes TTS premium + trial $300",
+    "Escolher voz definitiva do canal (Antonio edge ↔ Piper faber alternando; premium depende do billing)",
+    "Pinterest: avaliar o 1º pin com descrição rica SEO (sexta 24/07 ~16h)",
+    "Pinterest: renovar refresh token até 16/09 (lembrete automático via issue quando faltar ≤7d)",
+    "Upgrade Pinterest p/ cadência diária? Avaliar analytics ~07/08"
+  ],
+  "agenda": [
+    {
+      "name": "YouTube — Responder aos comentários (FINMOOVI)",
+      "times": [
+        "00:25",
+        "01:25",
+        "02:25",
+        "03:25",
+        "04:25",
+        "05:25",
+        "06:25",
+        "07:25",
+        "08:25",
+        "09:25",
+        "10:25",
+        "11:25",
+        "12:25",
+        "13:25",
+        "14:25",
+        "15:25",
+        "16:25",
+        "17:25",
+        "18:25",
+        "19:25",
+        "20:25",
+        "21:25",
+        "22:25",
+        "23:25"
+      ]
+    },
+    {
+      "name": "IndexNow (indexação instantânea Bing/Copilot)",
+      "times": [
+        "01:00",
+        "07:00",
+        "13:00",
+        "19:00"
+      ]
+    },
+    {
+      "name": "YouTube — Vídeo longo (semanal)",
+      "times": [
+        "03:00"
+      ]
+    },
+    {
+      "name": "YouTube — Detetive de tendências (diário)",
+      "times": [
+        "05:00"
+      ]
+    },
+    {
+      "name": "YouTube — Produzir Shorts de 16s em loop (2 por dia)",
+      "times": [
+        "05:30"
+      ]
+    },
+    {
+      "name": "Fact Firewall (anti-alucinacao)",
+      "times": [
+        "06:00"
+      ]
+    },
+    {
+      "name": "Sincronizar i18n (auto-corretor PT/EN/ES)",
+      "times": [
+        "06:00"
+      ]
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "times": [
+        "06:40",
+        "07:40"
+      ]
+    },
+    {
+      "name": "Brand Mention Monitor",
+      "times": [
+        "07:00"
+      ]
+    },
+    {
+      "name": "Gerar ALT descritivo das imagens (IA de visão)",
+      "times": [
+        "07:00",
+        "10:00",
+        "12:00"
+      ]
+    },
+    {
+      "name": "YouTube — Renderizar Short (completo)",
+      "times": [
+        "07:30"
+      ]
+    },
+    {
+      "name": "Community Monitor",
+      "times": [
+        "08:00"
+      ]
+    },
+    {
+      "name": "Glossário Financeiro",
+      "times": [
+        "08:00"
+      ]
+    },
+    {
+      "name": "GSC - Monitor de Indexacao",
+      "times": [
+        "09:00"
+      ]
+    },
+    {
+      "name": "Sazonal Multimercado (timezone)",
+      "times": [
+        "09:00"
+      ]
+    },
+    {
+      "name": "Gerar Dicas Financeiras",
+      "times": [
+        "10:00"
+      ]
+    },
+    {
+      "name": "Glossário Diário Automático",
+      "times": [
+        "12:00"
+      ]
+    },
+    {
+      "name": "YouTube — Publicar Shorts de 16s (9h e 19h BR)",
+      "times": [
+        "12:40",
+        "22:40"
+      ]
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "times": [
+        "13:00"
+      ]
+    },
+    {
+      "name": "Regenerar capas antigas do glossário (estilo 3D)",
+      "times": [
+        "13:30"
+      ]
+    },
+    {
+      "name": "YouTube — Publicar Short (horário nobre)",
+      "times": [
+        "16:00",
+        "21:00"
+      ]
+    },
+    {
+      "name": "Multipost — Entregar o Short às 8 redes (a partir das 19h BR)",
+      "times": [
+        "16:20"
+      ]
+    }
+  ]
+}
