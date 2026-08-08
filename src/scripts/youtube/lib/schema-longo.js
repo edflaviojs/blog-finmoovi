@@ -87,7 +87,24 @@ export const PALAVRAS_POR_SEGUNDO = 2.6;
  */
 export const ORCAMENTO = {
   abertura: { min: 90, max: 120 },
-  capitulo: { min: 190, max: 240 },
+  /**
+   * 🔴 O TECTO SUBIU DE 240 PARA 265 EM 08/08/2026 — pelo mesmo motivo que o do ato
+   * da demonstração, e antes de custar uma semana em vez de depois.
+   *
+   * Medido na corrida que finalmente passou: o capítulo 3 devolveu **245, 242 e 242**
+   * palavras em três tentativas seguidas, todas reprovadas por 2 a 5 palavras. Passou
+   * à QUINTA, com 233 — e a quarta nem sequer contou, porque veio com a forma partida.
+   * Ou seja: escapou por sorte. Com um teto de 240, este bloco reprova sempre que o
+   * modelo escrever aquilo que ele naturalmente escreve.
+   *
+   * ⚠️ O MIN NÃO MEXE. Não há uma única medição de bloco curto demais — mexer nele
+   * seria consertar um defeito que não existe.
+   *
+   * O preço: 265 palavras a 2,6/s são ~10s a mais por capítulo, e são dois capítulos
+   * com este orçamento (o 1 e o 3). No pior caso o vídeo cresce ~19s — de 6min27 para
+   * ~6min46, dentro dos ~6 minutos com folga que o dono fechou.
+   */
+  capitulo: { min: 190, max: 265 },
   /**
    * ⚠️ O ATO QUE LEVA A DEMONSTRAÇÃO TEM ORÇAMENTO PRÓPRIO — e a 19ª ocorrência do
    * defeito nº1 desta casa mora aqui, medida na 1ª corrida do modelo novo.
