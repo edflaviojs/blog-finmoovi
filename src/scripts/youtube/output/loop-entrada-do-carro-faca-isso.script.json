@@ -1,0 +1,117 @@
+{
+  "slug": "loop-entrada-do-carro-faca-isso",
+  "formato": "loop16",
+  "term": "Juntar a entrada do carro",
+  "category": "vida",
+  "keyword": "CARRO",
+  "situacao": "entrada-do-carro",
+  "gancho": "faca-isso",
+  "ganchoFamilia": "faça isso",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "escada",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se você quer juntar a entrada do carro, FAÇA ISSO.",
+      "durationSec": 3.45,
+      "shots": [
+        {
+          "anchor": "juntar",
+          "visual": {
+            "type": "statement",
+            "text": "Quero juntar a entrada"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "entrada",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escada"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu vi o anúncio com minha mulher e quase desisti ali.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "anúncio",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escada"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "mulher",
+          "visual": {
+            "type": "statement",
+            "text": "Quase desisti do carro"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então, a gente separou um pouquinho toda vez que sobrava mesmo.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "separou",
+          "visual": {
+            "type": "statement",
+            "text": "A gente foi guardando"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "pouquinho",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escada"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Foi assim que eu consegui juntar a entrada do carro sem aperto.",
+      "durationSec": 4.15,
+      "shots": [
+        {
+          "anchor": "consegui",
+          "visual": {
+            "type": "statement",
+            "text": "Juntei a entrada do carro"
+          }
+        },
+        {
+          "anchor": "juntar",
+          "visual": {
+            "type": "statement",
+            "text": "Quero juntar a entrada"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
