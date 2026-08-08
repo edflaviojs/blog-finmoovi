@@ -108,7 +108,29 @@ const cortar = (txt, max = 1800) => {
 export function lerTemaLongo() {
   const term = args.tema && args.tema !== true ? String(args.tema) : TEMA_PILOTO.term;
   const angle = args.angulo && args.angulo !== true ? String(args.angulo) : TEMA_PILOTO.angle;
-  const slug = args.glossario && args.glossario !== true ? String(args.glossario) : TEMA_PILOTO.glossario;
+  /**
+   * 🔴 SEM `--glossario`, NÃO SE LÊ GLOSSÁRIO NENHUM — 08/08/2026.
+   *
+   * Isto caía em `TEMA_PILOTO.glossario`, que é **'divida'**. Consequência, medida:
+   * **todo vídeo longo, seja qual for o assunto, recebia como material de apoio o
+   * verbete da dívida do cartão** — o do vídeo piloto.
+   *
+   * Foi essa a causa da queixa do dono: *"no vídeo passado foi falado de fatura do
+   * cartão, falado sobre num domingo, e agora está se repetindo"*. O vídeo era sobre
+   * dois homens e aposentadoria, e falava da fatura porque **foi isso que lhe deram
+   * para ler**. O `pick-next-longo.js` passa `--glossario` só quando a linha da fila
+   * tem um; a do vídeo 2 não tinha.
+   *
+   * ⚠️ E é seguro cair em vazio, não é um remendo: `lerGlossario` já devolve
+   * `{definition:'', body:''}` em três caminhos (sem slug, ficheiro ausente, formato
+   * errado), e o `contexto()` só escreve a DEFINIÇÃO e o MATERIAL DE APOIO **se não
+   * estiverem vazios**. Sem glossário, esses dois blocos simplesmente não existem no
+   * pedido — o vídeo passa a apoiar-se no tema e no ângulo, que são dele.
+   *
+   * ⚠️ O caminho certo a prazo é a fila trazer o glossário CERTO em cada linha. Até lá,
+   * **nenhum apoio é melhor do que o apoio de outro vídeo.**
+   */
+  const slug = args.glossario && args.glossario !== true ? String(args.glossario) : '';
   const { definition, body } = lerGlossario(slug);
   return { term, angle, definition, body, glossario: slug };
 }
