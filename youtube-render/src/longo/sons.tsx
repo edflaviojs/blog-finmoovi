@@ -42,8 +42,26 @@ const SOM_DA_PALAVRA: Record<string, string> = {
 };
 
 const VOLUME_DA_PALAVRA = 0.3;
-const INTERVALO_MINIMO_SEC = 3.5;
-const MAXIMO_POR_CENA = 2;
+/**
+ * 🔴 O RITMO — ordem do dono, 08/08/2026: *"em nenhum instante a tela pode ficar 2,5
+ * segundos sem que algo entre, saia, cresça ou reaja"*.
+ *
+ * Medido no vídeo que foi ao ar: as cenas têm ~11 segundos e **2 entradas cada** —
+ * uma a cada 5,5s. Seis das trinta cenas não disparavam ícone nenhum.
+ *
+ * ⚠️ **MAS NÃO SE ABRE A TORNEIRA TODA**, e a razão está escrita no repositório desde
+ * 04/08: o disparador do Short posto tal e qual no longo dava *"uma metralhadora"* —
+ * 933 palavras a pedir som. Por isso o teto sobe de 2 para 3 e o intervalo desce de
+ * 3,5 para 3,0 segundos: dá uma entrada COM SOM a cada ~3,5s numa cena de 11s, que é
+ * quase o dobro do que havia e ainda longe da metralhadora.
+ *
+ * O resto dos 2,5 segundos é preenchido por movimento SEM som: a cena passou a REAGIR
+ * a cada ícone que chega (ver `PULSO_DA_REACCAO` em `Long.tsx`) — que é a outra regra
+ * do dono, *"quando algo chega, algo tem que reagir; movimento sem consequência é
+ * enfeite"*.
+ */
+const INTERVALO_MINIMO_SEC = 3.0;
+const MAXIMO_POR_CENA = 3;
 
 export type Disparo = { from: number; chave: string; som: string; palavra: string };
 
@@ -76,14 +94,30 @@ export function disparosDaCena(timings: { word: string; start: number }[], fps: 
   return disparos;
 }
 
+/**
+ * ⚠️ **FONTE ÚNICA DOS MOMENTOS DA CENA.** Três sítios precisam dos mesmos fotogramas:
+ * o som (`SonsDaCena`), o ícone (`IconesDaCena`) e, desde 08/08, a REACÇÃO da imagem
+ * (`CenaLonga`, em `Long.tsx`). Se cada um fizer a sua conta, mais tarde ou mais cedo
+ * a imagem reage num fotograma e o som toca noutro — é a regra que este ficheiro já
+ * tinha para o par som+ícone, agora com um terceiro cliente.
+ */
+export function momentosDaCena(
+  narration: string,
+  frames: number,
+  words: { word: string; start: number; end: number }[] | undefined,
+  fps: number,
+): Disparo[] {
+  const timings = words && words.length ? wordTimingsFromReal(words, fps) : layoutWords(narration, frames);
+  return disparosDaCena(timings, fps);
+}
+
 export const SonsDaCena: React.FC<{
   narration: string;
   frames: number;
   words?: { word: string; start: number; end: number }[];
 }> = ({ narration, frames, words }) => {
   const { fps } = useVideoConfig();
-  const timings = words && words.length ? wordTimingsFromReal(words, fps) : layoutWords(narration, frames);
-  const disparos = disparosDaCena(timings, fps);
+  const disparos = momentosDaCena(narration, frames, words, fps);
 
   return (
     <>

@@ -1024,18 +1024,41 @@ export const TelaFinal: React.FC<{ frames?: number }> = ({ frames = TELA_FINAL_F
   const pulsa = 0.5 + 0.5 * Math.sin((frame / fps) * 2.2);
 
   /** A moldura vazia onde o cartão do YouTube vai aterrar. */
-  const Moldura: React.FC<{ estilo: React.CSSProperties; rotulo: string; redonda?: boolean; atraso: number }> = ({ estilo, rotulo, redonda, atraso }) => {
+  /**
+   * 🔴 O FAROL — 08/08/2026, ordem do dono: a tela final tinha **8,8 segundos
+   * praticamente congelados** (medido na tira de fotogramas do vídeo que foi ao ar).
+   * Os dois cartões entravam nos primeiros 1,5s e depois nada mais acontecia.
+   *
+   * Ele decidiu manter os 10 segundos — é onde vivem os cartões clicáveis do YouTube —
+   * e mandou animar. Então a atenção passa de um cartão para o outro **a cada 2
+   * segundos**: o que está "da vez" ganha borda viva e um halo que cresce e assenta.
+   *
+   * ⚠️ Não é enfeite: é exactamente o gesto que se quer que o espectador faça —
+   * olhar para um, depois para o outro. E cumpre a regra dos 2,5 segundos sem
+   * acrescentar um único som novo a uma tela que já tem a voz da assinatura.
+   */
+  const CICLO_DO_FAROL = 60; // 2 segundos
+  const farolDe = (indice: number) => {
+    const desdeQueEntrou = frame - 34;
+    if (desdeQueEntrou < 0) return 0;
+    const vez = Math.floor(desdeQueEntrou / CICLO_DO_FAROL) % 2;
+    if (vez !== indice) return 0;
+    const dentro = desdeQueEntrou % CICLO_DO_FAROL;
+    return interpolate(dentro, [0, 8, 40, CICLO_DO_FAROL], [0, 1, 0.75, 0], { extrapolateRight: 'clamp' });
+  };
+
+  const Moldura: React.FC<{ estilo: React.CSSProperties; rotulo: string; redonda?: boolean; atraso: number; farol?: number }> = ({ estilo, rotulo, redonda, atraso, farol = 0 }) => {
     const ap = spring({ frame: frame - atraso, fps, config: { damping: 16, mass: 0.8 } });
     return (
       <div style={{
         position: 'absolute',
         ...estilo,
         opacity: ap,
-        transform: `scale(${interpolate(ap, [0, 1], [0.94, 1])})`,
+        transform: `scale(${interpolate(ap, [0, 1], [0.94, 1]) * (1 + farol * 0.022)})`,
         borderRadius: redonda ? '50%' : 22,
-        border: `3px dashed ${BRAND.cyan}${redonda ? '66' : '55'}`,
+        border: `${3 + farol * 2}px dashed ${BRAND.cyan}${redonda ? '66' : '55'}`,
         background: `${BRAND.panel}cc`,
-        boxShadow: `0 0 ${40 + pulsa * 30}px ${BRAND.violet}33`,
+        boxShadow: `0 0 ${40 + pulsa * 30 + farol * 70}px ${BRAND.violet}${farol > 0.35 ? '88' : '33'}`,
         display: 'flex', alignItems: 'center', justifyContent: 'center',
         textAlign: 'center', padding: 18,
       }}>
@@ -1105,6 +1128,7 @@ export const TelaFinal: React.FC<{ frames?: number }> = ({ frames = TELA_FINAL_F
         <Moldura
           atraso={10}
           rotulo={'▶  A PLAYLIST\ndo canal'}
+          farol={farolDe(0)}
           estilo={{ left: '54%', top: '14%', width: '38%', height: '38%' }}
         />
         {/*
@@ -1116,6 +1140,7 @@ export const TelaFinal: React.FC<{ frames?: number }> = ({ frames = TELA_FINAL_F
           atraso={22}
           redonda
           rotulo={'INSCREVA-SE'}
+          farol={farolDe(1)}
           estilo={{ left: '63.5%', top: '56%', width: '18.5%', height: '32.9%' }}
         />
       </AbsoluteFill>

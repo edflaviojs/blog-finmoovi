@@ -39,6 +39,9 @@ import { BRAND, DISPLAY, BODY, gradientText } from './theme';
 //    viviam cravadas à mão, número a número, e foi assim que a legenda foi parar
 //    debaixo da barra do YouTube sem ninguém dar por isso.
 import { LEGENDA_BOTTOM_16x9, TRILHO_TOPO_16x9 } from './zonas';
+// ♦ OS SOCOS DE COR E A TEXTURA — construídos para o Short de 16s em 07/08 e trazidos
+//   para cá em 08/08 por ordem do dono. **Importados, não copiados.**
+import { SequenciaDeImpacto, socosDoVideoLongo, tremorNoFrame, IMPACTO_FRAMES, TexturaDoLoop } from './impacto';
 // ── as telas que nascem do texto (04/08/2026) ────────────────────────────────
 import {
   Etiqueta, CartaoDeNumero, CartaoDaConta, TelaDoApp, CartaoDeFrase, Metafora, PalavrasNaTela,
@@ -46,7 +49,7 @@ import {
   atrasoDaUltimaLinha, IconesDaCena, TelaFinal, TELA_FINAL_FRAMES,
 } from './longo/telas';
 import type { LinhaDaConta } from './longo/telas';
-import { SonsDaCena, SomDoMomento, SOM } from './longo/sons';
+import { SonsDaCena, SomDoMomento, SOM, momentosDaCena } from './longo/sons';
 
 // ── o b-roll 16:9 já pronto (nenhuma destas composições foi tocada) ──────────
 import { CreditCards3DLong } from './CreditCards3D';
@@ -362,6 +365,46 @@ const CapaLonga: React.FC<{ pergunta: string; metaphor?: string | null; frames: 
   );
 };
 
+/**
+ * O TREMOR DOS SOCOS. Abana o CONTEÚDO, nunca o fundo nem o clarão.
+ *
+ * ⚠️ Se o fundo abanasse via-se a borda preta; se o clarão abanasse deixava de tapar
+ * a tela toda. É a mesma separação que o Short de 16s já fazia — aqui só se repete a
+ * ideia, com os fotogramas que este formato tem.
+ *
+ * ⚠️ Os fotogramas que recebe são RELATIVOS ao bloco do conteúdo, porque é lá dentro
+ * que este componente vive e é isso que o `useCurrentFrame` devolve ali.
+ */
+/**
+ * A PALAVRA QUE VIVE POR TRÁS DE TUDO, quase apagada.
+ *
+ * ⚠️ **Não pode ser o `fioCondutor`.** A primeira versão usou-o e o fotograma mostrou
+ * `MOCHILA-PEDR` a atravessar o ecrã: é o nome interno da ilustração, com hífen e
+ * cortado aos 12 caracteres. Não quer dizer nada a quem vê, e denuncia a máquina.
+ *
+ * Sai do TEMA do vídeo, que é uma frase de gente: escolhe-se a primeira palavra com
+ * cinco letras ou mais que não seja de ligação. Em *"Sair do vermelho: o plano de três
+ * passos pra pagar a dívida…"* dá **VERMELHO**.
+ */
+const VAZIAS = new Set(['sobre', 'para', 'pelo', 'pela', 'como', 'quando', 'porque', 'seus', 'suas', 'mais', 'menos', 'todos', 'todas', 'ainda', 'entre', 'sem']);
+export function palavraDeFundo(script: LongScript): string {
+  const fonte = String(script.tema || script.capa || '').split(':')[0];
+  const escolha = fonte
+    .split(/[^\p{L}\p{N}]+/u)
+    .map((w) => w.trim())
+    .find((w) => w.length >= 5 && w.length <= 12 && !VAZIAS.has(w.toLocaleLowerCase('pt-BR')));
+  return escolha || '';
+}
+
+const TremorDosSocos: React.FC<{ socos: number[]; children: React.ReactNode }> = ({ socos, children }) => {
+  const frame = useCurrentFrame();
+  const aBater = socos.find((f) => frame >= f && frame < f + IMPACTO_FRAMES);
+  const t = aBater === undefined ? { x: 0, y: 0 } : tremorNoFrame(frame - aBater);
+  return (
+    <AbsoluteFill style={{ transform: `translate(${t.x}px, ${t.y}px)` }}>{children}</AbsoluteFill>
+  );
+};
+
 // ── a placa de capítulo ─────────────────────────────────────────────────────
 const PlacaCapitulo: React.FC<{ numero: number; titulo: string }> = ({ numero, titulo }) => {
   const frame = useCurrentFrame();
@@ -498,6 +541,7 @@ const CenaLonga: React.FC<{
   pular?: number;
 }> = ({ cena, frames, palavras, pular = 0 }) => {
   const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
   const v = cena.visual;
   // Entrada suave: sem isto, a troca de imagem a cada ~12s é um corte seco e o vídeo
   // parece uma apresentação de slides.
@@ -532,9 +576,29 @@ const CenaLonga: React.FC<{
    */
   const comLegenda = !v || v.tipo !== 'palavras';
 
+  /**
+   * ♦ A CENA REAGE AO QUE CHEGA — 08/08/2026, regra do dono: *"quando algo chega, algo
+   * tem que reagir; o objeto bate e a cena responde. Movimento sem consequência é
+   * enfeite"*.
+   *
+   * Cada ícone que entra (os mesmos momentos do som, ver `disparosDaCena`) dá um
+   * empurrão na imagem: ela cresce 3,5% e assenta em 9 fotogramas. É pequeno de
+   * propósito — o que se quer é que a tela **responda**, não que salte.
+   *
+   * ⚠️ É isto que enche o intervalo entre os ícones sem acrescentar mais um som. A
+   * conta do dono são 2,5 segundos; com três ícones numa cena de 11s e a reacção de
+   * cada um, nenhum troço fica parado mais do que isso.
+   */
+  const disparos = momentosDaCena(cena.narration, frames, palavras, fps);
+  const reaccao = (() => {
+    const activo = disparos.find((d) => frame >= d.from && frame < d.from + 9);
+    if (!activo) return 1;
+    return interpolate(frame - activo.from, [0, 3, 9], [1, 1.035, 1], { extrapolateRight: 'clamp' });
+  })();
+
   return (
     <AbsoluteFill>
-      <AbsoluteFill style={{ opacity: entra }}>{conteudo}</AbsoluteFill>
+      <AbsoluteFill style={{ opacity: entra, transform: `scale(${reaccao})` }}>{conteudo}</AbsoluteFill>
       {/* Véu por baixo da legenda: sem ele, a legenda branca cai por cima de gráficos
           claros e deixa de se ler. Só a faixa de baixo é escurecida. */}
       {comLegenda ? (
@@ -603,6 +667,15 @@ export const Long: React.FC<{ script?: LongScript; timing?: LongTiming; slug?: s
    */
   const palavrasDaPergunta = String(script.capa || '').trim().split(/\s+/).filter(Boolean).length;
 
+  /**
+   * ♦ OS SOCOS DE COR — ordem do dono, 08/08/2026: um a cada 15 segundos, alternando
+   * vermelho no problema e verde no ganho. Num vídeo de ~6 minutos dão ~24.
+   * A conta vive em `impacto.tsx` (`socosDoVideoLongo`), com o cuidado de cair sempre
+   * no arranque de uma cena e nunca a menos de 6 segundos do soco anterior.
+   */
+  const socos = socosDoVideoLongo(inicios, conteudo, fps);
+  const socosRelativos = socos.map((s) => s.frame);
+
   const framesDaCapa = (() => {
     const teto = Math.max(1, Math.min(CAPA_FRAMES, VOZ_ENTRA_FRAMES + (frames[0] || CAPA_FRAMES)));
     const ditas = timingDe(script.scenes[0]?.id)?.words;
@@ -626,6 +699,12 @@ export const Long: React.FC<{ script?: LongScript; timing?: LongTiming; slug?: s
           onde ela está agora. Este lembrete fica porque o sítio óbvio é este, e o
           óbvio é que estava errado. */}
 
+      {/* ♦ A TEXTURA CONTRA A TELA VAZIA — a mesma peça do Short de 16s, no formato
+          deitado. Medido nos fotogramas do vídeo que foi ao ar: **58% a 65% do quadro
+          estava VAZIO**, e a faixa de baixo tinha 1,5% a 3,1% de tinta. Vem ANTES de
+          tudo no JSX porque é fundo: não diz nada, só tira o vídeo do "preto liso". */}
+      <TexturaDoLoop palavra={palavraDeFundo(script)} formato="deitado" />
+
       <Sequence from={VOZ_ENTRA_FRAMES}>
         <TrilhoLongo total={conteudo} marcas={marcasDeCapitulo} />
         {/* ⚠️ O CARTÃO DE CAPÍTULO É CENA, NÃO AUTOCOLANTE. Ver `linhaDoTempo`: ele
@@ -639,21 +718,31 @@ export const Long: React.FC<{ script?: LongScript; timing?: LongTiming; slug?: s
           </Sequence>
         ) : null))}
 
-        {script.scenes.map((cena, i) => {
-          const t = timingDe(cena.id);
-          return (
-            <Sequence key={`c${i}`} from={inicios[i]} durationInFrames={frames[i]}>
-              <CenaLonga cena={cena} frames={frames[i]} palavras={t?.words} pular={i === 0 ? palavrasDaPergunta : 0} />
-              {t?.audioFile ? <Audio src={staticFile(t.audioFile)} /> : null}
-              {/* ⚠️ OS SONS — o dono: *"não é só mostrar letras, ícones conforme as
-                  palavras são ditas, mas sim usarmos também os sons sincronizados com
-                  relação ao que é dito, assim como já fazemos nos shorts"*. Tínhamos 18
-                  efeitos guardados e este vídeo usava zero. */}
-              <SonsDaCena narration={cena.narration} frames={frames[i]} words={t?.words} />
-              <SomDaFamilia visual={cena.visual} frames={frames[i]} />
-            </Sequence>
-          );
-        })}
+        {/* ⚠️ O TREMOR ABANA AS CENAS, e só elas. O fundo a abanar mostraria a borda; o
+            clarão a abanar deixaria de tapar a tela. Mesma separação do Short de 16s. */}
+        <TremorDosSocos socos={socosRelativos}>
+          {script.scenes.map((cena, i) => {
+            const t = timingDe(cena.id);
+            return (
+              <Sequence key={`c${i}`} from={inicios[i]} durationInFrames={frames[i]}>
+                <CenaLonga cena={cena} frames={frames[i]} palavras={t?.words} pular={i === 0 ? palavrasDaPergunta : 0} />
+                {t?.audioFile ? <Audio src={staticFile(t.audioFile)} /> : null}
+                {/* ⚠️ OS SONS — o dono: *"não é só mostrar letras, ícones conforme as
+                    palavras são ditas, mas sim usarmos também os sons sincronizados com
+                    relação ao que é dito, assim como já fazemos nos shorts"*. Tínhamos 18
+                    efeitos guardados e este vídeo usava zero. */}
+                <SonsDaCena narration={cena.narration} frames={frames[i]} words={t?.words} />
+                <SomDaFamilia visual={cena.visual} frames={frames[i]} />
+              </Sequence>
+            );
+          })}
+        </TremorDosSocos>
+
+        {/* ♦ OS SOCOS DE COR. Aqui dentro porque os seus fotogramas são os do conteúdo,
+            e DEPOIS das cenas porque o clarão tem de as tapar. Ver `socosDoVideoLongo`. */}
+        {socos.map((s, i) => (
+          <SequenciaDeImpacto key={`soco${i}`} from={s.frame} tipo={s.tipo} som={s.som} formato="deitado" />
+        ))}
       </Sequence>
 
       {/* A CAPA POR CIMA DE TUDO — irmãos posteriores pintam por cima. A voz já toca
