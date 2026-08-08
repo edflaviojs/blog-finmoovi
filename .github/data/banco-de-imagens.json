@@ -1,0 +1,15 @@
+{
+  "imagens": [
+    {
+      "ficheiro": "manus/dono-dois-homens-mesma-idade-mesmo-trabalho/susto.jpg",
+      "significado": "o susto de olhar a conta",
+      "tipo": "foto",
+      "pistas": [
+        "voce sabe quanto do seu salario"
+      ],
+      "usadoEm": [
+        "dono-dois-homens-mesma-idade-mesmo-trabalho"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "videos": {
+    "dono-dois-homens-mesma-idade-mesmo-trabalho": [
+      {
+        "ficheiro": "manus/dono-dois-homens-mesma-idade-mesmo-trabalho/susto.jpg",
+        "nome": "o susto de olhar a conta",
+        "significado": "o susto de olhar a conta",
+        "tipo": "foto",
+        "movimento": "aproxima",
+        "pista": "voce sabe quanto do seu salario"
+      }
+    ]
+  }
+}
