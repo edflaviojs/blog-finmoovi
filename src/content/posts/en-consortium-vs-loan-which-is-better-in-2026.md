@@ -3,6 +3,7 @@ title: "Consortium vs Loan: Which Is Better in 2026?"
 description: "Learn the differences between a consortium and a loan and find out which option fits your budget and plans for 2026."
 tickerHeadline: "The Choice That Changes Your Future"
 image: "/images/posts/consorcio-vs-financiamento-qual-vale-mais-a-pena-em-2026.webp"
+imageAlt: "Couple reviewing financial documents and calculator at white table near window"
 category: "investimentos"
 locale: "en"
 tags: ["consortium","loan","financial planning","FinMoovi","credit comparison","planned purchase","consortium vs loan"]

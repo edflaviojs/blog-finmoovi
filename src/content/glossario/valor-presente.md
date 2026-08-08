@@ -1,6 +1,7 @@
 ---
 term: "Valor Presente"
 image: "/images/glossario/valor-presente.webp"
+imageAlt: "Moedas douradas em pilhas, barras e potes de vidro com mudas verdes."
 definition: "Quanto vale hoje um dinheiro que você receberá no futuro. Conceito fundamental para avaliar investimentos e comparar opções financeiras."
 category: "mercado"
 relatedTerms: ["Juros Compostos", "Selic", "Tesouro Direto"]

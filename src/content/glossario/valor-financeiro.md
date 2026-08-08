@@ -4,6 +4,7 @@ definition: "Entenda o que é valor financeiro, como funciona, vantagens, riscos
 title: "valor financeiro - Glossário Financeiro"
 description: "Entenda o que é valor financeiro, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
 image: "/images/glossario/valor.webp"
+imageAlt: "Moedas douradas, gráfico de barras laranja e planta crescendo em vaso de vidro."
 category: "basico"
 tags: ["valor financeiro", "glossário", "finanças"]
 author: "FinMoovi"

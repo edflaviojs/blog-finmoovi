@@ -4,6 +4,7 @@ definition: "Entenda o que é wall street, como funciona, vantagens, riscos e ex
 title: "wall street - Glossário Financeiro"
 description: "Entenda o que é wall street, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
 image: "/images/glossario/wall-street.webp"
+imageAlt: "Moedas douradas empilhadas, vasos de vidro e planta verde sobre fundo azul escuro."
 category: "basico"
 tags: ["wall street", "glossário", "finanças"]
 author: "FinMoovi"

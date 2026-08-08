@@ -3,6 +3,7 @@ title: "Consórcio vs Financiamento: qual vale mais a pena em 2026?"
 description: "Descubra as diferenças entre consórcio e financiamento e saiba qual opção se encaixa melhor no seu bolso e nos seus planos para 2026."
 tickerHeadline: "A escolha que muda seu futuro"
 image: "/images/posts/consorcio-vs-financiamento-qual-vale-mais-a-pena-em-2026.webp"
+imageAlt: "Casal analisa documentos e celular em mesa branca, perto de janela iluminada."
 category: "investimentos"
 locale: "pt"
 tags: ["consórcio","financiamento","planejamento financeiro","FinMoovi","comparação de crédito","compra planejada","consórcio vs financiamento"]
