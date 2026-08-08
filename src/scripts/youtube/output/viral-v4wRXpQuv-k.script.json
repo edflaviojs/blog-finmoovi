@@ -1,0 +1,257 @@
+{
+  "slug": "viral-v4wRXpQuv-k",
+  "term": "Dinheiro escoando",
+  "category": "mindset",
+  "keyword": "Dinheiro",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você sabe *quanto do seu salário some* todo mês em compras que você nem lembra?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "balde-furado",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você sabe quanto do seu salário some todo mês em compras que você nem lembra? Eu fiz a conta e levei um susto.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "sabe",
+          "visual": {
+            "type": "statement",
+            "text": "Seu salário está sumindo"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "some",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        },
+        {
+          "anchor": "compras",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "susto",
+          "visual": {
+            "type": "number",
+            "text": "R$ ?"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Esse dinheiro vai naquelas comprinhas de última hora, numa assinatura esquecida e naquele gasto que a gente faz quando tá cansado.",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "comprinhas",
+          "visual": {
+            "type": "statement",
+            "text": "Pequenos gastos se acumulam"
+          }
+        },
+        {
+          "anchor": "assinatura",
+          "visual": {
+            "type": "icon",
+            "icon": "clock"
+          },
+          "sfx": "click"
+        },
+        {
+          "anchor": "esquecida",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        },
+        {
+          "anchor": "cansado",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Só que isso vai somando. Vinte e nove reais aqui, trinta e nove ali. Pronto, já são sessenta e oito num mês.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "somando",
+          "visual": {
+            "type": "statement",
+            "text": "Vai somando sem perceber"
+          },
+          "sfx": "typewriter"
+        },
+        {
+          "anchor": "aqui",
+          "visual": {
+            "type": "number",
+            "text": "R$ 29"
+          }
+        },
+        {
+          "anchor": "nove",
+          "visual": {
+            "type": "number",
+            "text": "R$ 39"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "oito",
+          "visual": {
+            "type": "number",
+            "text": "R$ 68"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei isso no FinMoovi e ele me mostrou na tela. Sessenta e oito reais indo embora só com assinatura.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "joguei",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Visão geral dos gastos e saldo"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "tela",
+          "visual": {
+            "type": "chart",
+            "text": "Assinaturas: R$ 68/mês"
+          }
+        },
+        {
+          "anchor": "oito",
+          "visual": {
+            "type": "number",
+            "text": "R$ 68"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "assinatura",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Ele me fez enxergar o que tava escondido. Quer ver como tá o seu? Procura o FinMoovi, é de graça.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "escondido",
+          "visual": {
+            "type": "statement",
+            "text": "O que estava escondido?"
+          }
+        },
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "statement",
+            "text": "Veja seu dinheiro de perto"
+          }
+        },
+        {
+          "anchor": "graça",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Pensa bem, são sessenta e oito reais saindo do seu salário todo mês sem você ver. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "oito",
+          "visual": {
+            "type": "number",
+            "text": "R$ 68"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "salário",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro sem controle"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "outros",
+          "visual": {
+            "type": "statement",
+            "text": "Acaba sendo dos outros"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Descubra para onde seu dinheiro vai",
+    "target": "app"
+  },
+  "totalDurationSec": 49.6
+}
