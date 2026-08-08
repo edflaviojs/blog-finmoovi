@@ -313,6 +313,40 @@ export const CarimboAppGratis: React.FC = () => (
 );
 
 // ─────────────────────────────────────────────────────────────────────────────
+/**
+ * 🔴 EM QUE FOTOGRAMA BATE O SOCO DE ABERTURA — e nunca, nunca no 0 (08/08/2026).
+ *
+ * Queixa do dono, com fotograma na mão: *"existe um defeito urgente em todos os nossos
+ * vídeos... que é ele iniciar com um clarão... quando é mostrado em alguns lugares ele
+ * não mostra a primeira tela visível, mostra simplesmente esse clarão... retire esse
+ * clarão pelo amor de Deus"*.
+ *
+ * Medido com ffmpeg no brilho médio do fotograma 0 (escala 0-255):
+ *   · vídeo de 50s: **234** · vídeo longo: **189** · Short de 16s: **50** (limpo)
+ *
+ * O de 16s é o modelo, e foi ele que o dono aprovou: fotogramas 0, 1 e 2 mostram a
+ * CENA, e o soco entra ao 3 (brilho 150). Ordem dele: *"tente iniciar os vídeos igual
+ * inicia o de 16s... já inicia com soco"*.
+ *
+ * ⚠️ **O CLARÃO E A PANCADA ANDAM JUNTOS.** Adiar só o clarão punha a imagem 0,1s
+ * atrás do `boom.ogg`, que toca no fotograma 0 — trocava um defeito por outro. Por
+ * isso o som destas aberturas passou a viver dentro de uma `Sequence from` com este
+ * mesmo número.
+ *
+ * ⚠️ Vive AQUI e não no `Long.tsx` porque o `Long.tsx` importa deste ficheiro; ao
+ * contrário seria um ciclo.
+ */
+export const SOCO_DA_ABERTURA = 3;
+
+/** A forma do clarão de abertura: nada, nada, PANCADA, e a desaparecer. */
+export const curvaDoSoco = (frame: number, pico: number) => interpolate(
+  frame,
+  [0, SOCO_DA_ABERTURA - 1, SOCO_DA_ABERTURA, SOCO_DA_ABERTURA + 10],
+  [0, 0, pico, 0],
+  { extrapolateRight: 'clamp' },
+);
+
+// ─────────────────────────────────────────────────────────────────────────────
 // ABERTURA DISRUPTIVA (#1): o número-choque SLAM na tela com boom + flash + shake,
 // e a pergunta de curiosidade surge embaixo. Para o dedo do usuário nos 1,5s iniciais.
 // ─────────────────────────────────────────────────────────────────────────────
@@ -321,12 +355,19 @@ export const ShockIntro: React.FC<{ big: string; sub: string }> = ({ big, sub })
   const { fps } = useVideoConfig();
   const slam = spring({ frame, fps, config: { damping: 9, mass: 0.7 } });
   const scale = interpolate(slam, [0, 1], [2.6, 1]);
-  const flash = interpolate(frame, [0, 2, 12], [1, 0.7, 0], { extrapolateRight: 'clamp' });
-  const shake = frame < 10 ? Math.sin(frame * 3) * (1 - frame / 10) * 10 : 0;
+  // 🔴 Era `[0, 2, 12] → [1, 0.7, 0]`: BRANCO SÓLIDO no fotograma 0. Ver `curvaDoSoco`.
+  const flash = curvaDoSoco(frame, 0.62);
+  // O tremor anda com o soco: tremer antes da pancada é tremer sem motivo.
+  const shake = frame >= SOCO_DA_ABERTURA && frame < SOCO_DA_ABERTURA + 10
+    ? Math.sin((frame - SOCO_DA_ABERTURA) * 3) * (1 - (frame - SOCO_DA_ABERTURA) / 10) * 10
+    : 0;
   const subIn = spring({ frame: frame - 14, fps, config: { damping: 14 } });
   return (
     <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
-      <Audio src={staticFile('sfx/boom.ogg')} volume={0.9} />
+      {/* A pancada anda com o clarão — ver `SOCO_DA_ABERTURA`. */}
+      <Sequence from={SOCO_DA_ABERTURA}>
+        <Audio src={staticFile('sfx/boom.ogg')} volume={0.9} />
+      </Sequence>
       <div style={{
         ...gradientText, fontFamily: DISPLAY, fontWeight: 900, fontSize: 132, lineHeight: 1,
         transform: `scale(${scale}) translateX(${shake}px)`, textAlign: 'center', padding: '0 40px',
@@ -389,7 +430,10 @@ export const DynamicIntro: React.FC<{
   const hasCounter = !!counter && frame >= counterStart - 8;
 
   // slam inicial (boom) + flash de entrada e flash final (soco do contador).
-  const slamFlash = interpolate(frame, [0, 2, 12], [0.9, 0.5, 0], { extrapolateRight: 'clamp' });
+  // 🔴 Era `[0, 2, 12] → [0.9, 0.5, 0]`: 90% de branco no fotograma 0. É ESTA a abertura
+  //    que os vídeos de 50s usam de verdade (a `ShockIntro` só corre com `intro.big`, e
+  //    nenhum roteiro em disco tem esse campo). Ver `curvaDoSoco`.
+  const slamFlash = curvaDoSoco(frame, 0.6);
   const endFlash = counter ? interpolate(frame, [frames - 8, frames - 4, frames], [0, 0.6, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }) : 0;
 
   // A frase sobe e diminui um pouco quando o contador entra (dá lugar ao número).
@@ -437,7 +481,10 @@ export const DynamicIntro: React.FC<{
 
   return (
     <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center', flexDirection: 'column', gap: 40, opacity: saida }}>
-      <Audio src={staticFile('sfx/boom.ogg')} volume={0.9} />
+      {/* A pancada anda com o clarão — ver `SOCO_DA_ABERTURA`. */}
+      <Sequence from={SOCO_DA_ABERTURA}>
+        <Audio src={staticFile('sfx/boom.ogg')} volume={0.9} />
+      </Sequence>
       {counter && (
         <Sequence from={counterStart - 6} durationInFrames={Math.round(fps * 1.5)}>
           <Audio src={staticFile(resolveShotSfx('whoosh'))} volume={0.55} />
@@ -473,7 +520,25 @@ export const DynamicIntro: React.FC<{
           // SOCO: sem stagger (i*2) — a frase inteira crava junta, ~frames 0–10, com
           // spring curto/rígido (não é rush-cut, é murro). Overshoot leve nas ênfases.
           const s = spring({ frame, fps, config: { damping: 11, mass: 0.4, stiffness: 200 } });
-          const sc = tk.emph ? interpolate(s, [0, 1], [1.35, 1]) : interpolate(s, [0, 1], [0.75, 1]);
+          /**
+           * ⚠️ O EXAGERO DA ÊNFASE DESCEU DE 1,35 PARA 1,12 — 08/08/2026, e só se viu
+           * depois de tirar o clarão.
+           *
+           * A caixa flex reserva o tamanho FINAL da palavra; uma palavra a 90px
+           * desenhada a 1,35 ocupa 121px e **transborda por cima das vizinhas**. No
+           * fotograma 0 lia-se "inflação encolhseu salário" — as palavras umas em cima
+           * das outras. Ninguém tinha visto porque **o clarão branco tapava exactamente
+           * esses fotogramas**: o defeito estava escondido por outro defeito.
+           * Medido, fotograma a fotograma: a 1,12 ainda se lia "encolheseu"; a 1,06
+           * também, porque o espaço entre palavras é 22px e **cada vizinha come 10px**
+           * (6% de uma palavra de 350px). Só a 1,00 o fotograma 0 fica limpo.
+           *
+           * ⚠️ E o murro não se perde: quem o dá é o clarão do fotograma 3, o tremor e o
+           * `boom.ogg`. Nunca foi o tamanho da letra — a letra grande só estava a
+           * atropelar a vizinha. As palavras continuam a ENTRAR (sobem 26px e as
+           * normais crescem de 0,75), portanto nada aparece pronto.
+           */
+          const sc = tk.emph ? 1 : interpolate(s, [0, 1], [0.75, 1]);
           const y = interpolate(s, [0, 1], [26, 0]);
           return (
             <span key={i} style={{

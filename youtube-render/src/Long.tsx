@@ -29,7 +29,7 @@
 
 import React from 'react';
 import { AbsoluteFill, Audio, Loop, Sequence, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
-import { Background, Watermark, SignatureOutro, TelaBordao, BORDAO_FRAMES, BORDAO_OVERLAP_FRAMES } from './scenes';
+import { Background, Watermark, SignatureOutro, TelaBordao, BORDAO_FRAMES, BORDAO_OVERLAP_FRAMES, SOCO_DA_ABERTURA } from './scenes';
 import { BackgroundMusic } from './audio/music';
 import { activeIndex, wordTimingsFromReal, layoutWords } from './captions';
 import { CoreografiaDaCapa } from './capas';
@@ -287,7 +287,33 @@ const CapaLonga: React.FC<{ pergunta: string; metaphor?: string | null; frames: 
   const entra = spring({ frame, fps, config: { damping: 16, mass: 0.7 } });
   const escala = interpolate(entra, [0, 1], [1.1, 1]);
   const sai = interpolate(frame, [frames - 12, frames], [1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const brilho = interpolate(frame, [0, 3, 14], [0.7, 0.35, 0], { extrapolateRight: 'clamp' });
+  /**
+   * 🔴 O VÍDEO DEIXOU DE ABRIR LAVADO DE BRANCO — 08/08/2026, queixa do dono.
+   *
+   * Isto era `interpolate(frame, [0, 3, 14], [0.7, 0.35, 0])`: **70% de branco por cima
+   * de tudo no fotograma 0**. Medido com ffmpeg no vídeo que foi ao ar, o brilho médio
+   * do primeiro fotograma era **189 de 255** (o de 50s, pior ainda: 234).
+   *
+   * ⚠️ E não é só feio: **o vídeo longo não tem miniatura própria** para nenhum slug
+   * novo (`upload-longo.js` procura `capa-canal-youtube.jpg` e só o piloto a tem), por
+   * isso o YouTube escolhe um fotograma sozinho — e o fotograma 0 era um retângulo
+   * lavado. Palavras do dono: *"quando é mostrado em alguns lugares ele não mostra a
+   * primeira tela visível, mostra simplesmente esse clarão"*.
+   *
+   * O modelo é o Short de 16s, que ele aprovou: lá o fotograma 0 mostra a cena (brilho
+   * medido: 50) e o soco vem no fotograma 3. Aqui é igual — os fotogramas 0 e 1 ficam
+   * limpos, e ao 3 entra o soco.
+   *
+   * ⚠️ E o soco passou a ter PANCADA. Até hoje a capa do longo não tinha `<Audio>`
+   * nenhum: era um clarão em silêncio absoluto. Um flash sem som não é um soco, é um
+   * defeito de codificação à espera de ser confundido com um.
+   */
+  const brilho = interpolate(
+    frame,
+    [0, SOCO_DA_ABERTURA - 1, SOCO_DA_ABERTURA, SOCO_DA_ABERTURA + 13],
+    [0, 0, 0.55, 0],
+    { extrapolateRight: 'clamp' },
+  );
   // A pergunta longa tem de encolher, senão sai da caixa. A conta é grosseira de
   // propósito: o que interessa é nunca haver texto cortado, e a regra do canal já
   // limita a pergunta a 18 palavras.
@@ -329,6 +355,9 @@ const CapaLonga: React.FC<{ pergunta: string; metaphor?: string | null; frames: 
         </div>
       </AbsoluteFill>
       <AbsoluteFill style={{ background: '#fff', opacity: brilho, pointerEvents: 'none' }} />
+      {/* A pancada do soco, no MESMO fotograma do clarão. Ver o comentário longo acima:
+          até 08/08 este vídeo abria com um clarão e silêncio absoluto. */}
+      <SomDoMomento ficheiro={SOM.baque_forte} atraso={SOCO_DA_ABERTURA} volume={0.75} />
     </AbsoluteFill>
   );
 };
@@ -593,7 +622,9 @@ export const Long: React.FC<{ script?: LongScript; timing?: LongTiming; slug?: s
           morria e voltava de repente. Aqui as passagens sobrepõem-se; no Short fica
           como estava. Ver o comentário longo em `audio/music.tsx`. */}
       <BackgroundMusic ficheiro={script.music?.ficheiro} costura="cruzada" />
-      <Watermark />
+      {/* ⚠️ A `<Watermark />` NÃO vive aqui — vive depois da capa. Ver o comentário
+          onde ela está agora. Este lembrete fica porque o sítio óbvio é este, e o
+          óbvio é que estava errado. */}
 
       <Sequence from={VOZ_ENTRA_FRAMES}>
         <TrilhoLongo total={conteudo} marcas={marcasDeCapitulo} />
@@ -630,6 +661,27 @@ export const Long: React.FC<{ script?: LongScript; timing?: LongTiming; slug?: s
       <Sequence durationInFrames={framesDaCapa}>
         <CapaLonga pergunta={script.capa} metaphor={script.fioCondutor} frames={framesDaCapa} />
       </Sequence>
+
+      {/**
+        * 🔴 A MARCA FICA À FRENTE DE TUDO — 08/08/2026, ordem do dono, com fotograma.
+        *
+        * Ela vivia lá em cima, logo a seguir ao fundo. Em Remotion **os irmãos
+        * posteriores pintam por cima**, portanto tudo o que vinha depois — as cenas e,
+        * pior, a ilustração da capa — passava-lhe por cima. O dono mandou um fotograma
+        * com a ampulheta desenhada em cima do "FinMoovi" e disse: *"tem que corrigir
+        * para que a nossa logo FinMoovi nunca fique por trás dos elementos que
+        * aparecerem, sempre devem ficar na frente"*.
+        *
+        * ⚠️ **Aqui e não mais abaixo**, e a diferença importa: as três telas que vêm a
+        * seguir (bordão, assinatura, tela final) são telas de MARCA, com fundo próprio
+        * e a sua identidade — pôr a marca de água por cima delas seria carimbá-la duas
+        * vezes. Este sítio dá-lhe a frente durante o vídeo inteiro e deixa-a de fora
+        * exactamente das três telas que não precisam dela.
+        *
+        * ⚠️ NÃO fica dentro de nenhuma `Sequence`: ela não tem tempo próprio, está no
+        * ar do princípio ao fim.
+        */}
+      <Watermark />
 
       {/* A TELA DO BORDÃO, por cima dos últimos ~2,5s — a mesma assinatura de todos os
           vídeos do canal, escolhida pelo dono em 03/08. Custo ZERO em segundos. */}

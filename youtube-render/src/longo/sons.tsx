@@ -148,4 +148,16 @@ export const SOM = {
   baque: 'sfx/thud.ogg',
   brilho: 'sfx/sparkle.ogg',
   registadora: 'sfx/kaching.ogg',
+  /**
+   * ⚠️ QUATRO SONS PAGOS ESTAVAM INALCANÇÁVEIS NO VÍDEO LONGO — `public/sfx/` tem 17
+   * ficheiros e esta lista expunha 13. Ficavam de fora `boom`, `avalanche`, `keyboard`
+   * e `typewriter`. O `boom` faz falta desde já: é a pancada do soco de abertura, que
+   * até 08/08 não existia (o longo abria com um clarão branco e SILÊNCIO — um flash
+   * sem pancada). Os outros três entram porque custa zero e a próxima pessoa que
+   * procurar um som de desmoronamento vai encontrá-lo em vez de o mandar gerar.
+   */
+  baque_forte: 'sfx/boom.ogg',
+  desmoronar: 'sfx/avalanche.ogg',
+  teclado: 'sfx/keyboard.ogg',
+  maquina_de_escrever: 'sfx/typewriter.ogg',
 } as const;

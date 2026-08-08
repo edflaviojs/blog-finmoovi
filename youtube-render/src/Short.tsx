@@ -343,7 +343,7 @@ export const Short: React.FC<{ script?: ShortScript; timing?: ShortTiming; slug?
     <AbsoluteFill>
       <Background />
       <BackgroundMusic ficheiro={(script as { music?: { ficheiro?: string } }).music?.ficheiro} />
-      <Watermark />
+      {/* ⚠️ A `<Watermark />` mudou-se para depois da capa — ver o comentário lá. */}
       <Sequence from={introFrames}>
         {/* Etiqueta do tema: fora do TransitionSeries de propósito — ela NÃO deve
             entrar e sair a cada cena, é o elemento fixo que costura o vídeo todo.
@@ -407,6 +407,22 @@ export const Short: React.FC<{ script?: ShortScript; timing?: ShortTiming; slug?
           </Sequence>
         );
       })()}
+
+      {/**
+        * 🔴 A MARCA FICA À FRENTE DE TUDO — 08/08/2026, ordem do dono.
+        *
+        * Ela vivia logo a seguir ao fundo, e em Remotion os irmãos posteriores pintam
+        * por cima: as cenas e a capa tapavam-na. No de 50s isto era ainda mais fácil de
+        * não ver, porque a capa só é opaca quando o roteiro tem coreografia
+        * (`temAcao`) — ou seja, o defeito aparecia e desaparecia conforme os DADOS, não
+        * conforme o código. Nos quatro roteiros em disco, todos têm: a marca estava
+        * escondida os ~7 segundos da capa em todos os vídeos reais.
+        *
+        * ⚠️ Aqui, e não mais abaixo: o bordão e a assinatura são telas de marca com
+        * identidade própria e não levam marca de água por cima.
+        */}
+      <Watermark />
+
       {/* ♦ A TELA DO BORDÃO (03/08/2026): por cima dos últimos ~2,5s da última cena,
           o tempo exato de a voz dizer o bordão — custo ZERO em segundos. Vem ANTES
           da assinatura no JSX de propósito: a assinatura pinta por cima durante o
