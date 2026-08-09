@@ -393,9 +393,27 @@ export const Short: React.FC<{ script?: ShortScript; timing?: ShortTiming; slug?
    *
    * ⚠️ **`alerta` e não `virada`:** a capa está a enunciar o PROBLEMA (é a pergunta que
    * abre o vídeo). Um verde aqui contradiria o que a voz está a dizer.
+   *
+   * ═══ E DEPOIS UM SEGUNDO, POR ORDEM DO DONO ═══
+   * Com um só, o trecho parado caiu de 4,0s para **2,5s** — que é EXACTAMENTE o limite
+   * da casa, em cima da linha e não abaixo dela. Mostrei-lhe o número e ele mandou:
+   * *"pode incluir esse segundo soco"*.
+   *
+   * ⚠️ **O sítio sai da conta, não do gosto.** O que sobrava era 00:04 → 00:07; o
+   * primeiro soco morre aos 4,5s e a capa levanta aos 7,4s. O meio disso são **5,9s**,
+   * que em 223 fotogramas dá **79%**.
+   *
+   * ⚠️ **SONS DIFERENTES nos dois**, e não é enfeite: dois clarões iguais a 1,8s de
+   * distância lêem-se como uma repetição, e a repetição é o que faz o vermelho virar
+   * papel de parede — o receio que me tinha feito ser conservador de mais. Com o baque
+   * seco primeiro e o alarme depois, são duas batidas de uma frase, não a mesma batida
+   * duas vezes.
    */
   const socoDaCapa = capaFrames > 0
-    ? [{ tipo: 'alerta' as const, som: 'thud.ogg', inicio: Math.round(capaFrames * 0.55) }]
+    ? [
+      { tipo: 'alerta' as const, som: 'thud.ogg', inicio: Math.round(capaFrames * 0.55) },
+      { tipo: 'alerta' as const, som: 'warning.ogg', inicio: Math.round(capaFrames * 0.79) },
+    ]
     : [];
 
   /**
