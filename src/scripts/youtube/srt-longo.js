@@ -68,7 +68,20 @@ const ROTEIRO_DIR = join(process.cwd(), 'youtube-render', 'public', 'roteiro');
 const FPS = 30;
 /** ⚠️ ESPELHADOS de `youtube-render/src/Long.tsx`. Ver o aviso no cabeçalho. */
 export const VOZ_ENTRA_FRAMES = 27;
-export const RESPIRO_SEC = 0.35;
+/**
+ * 🔴 0,35 → 0,21 em 09/08/2026 — e ESTE ficheiro foi o TERCEIRO sítio, descoberto por
+ * uma prova a falhar, não por eu me lembrar dele.
+ *
+ * O mesmo número vive em `Long.tsx` (o vídeo), em `descricao-longo.js` (os capítulos do
+ * YouTube) e aqui (as legendas). Mudei os dois primeiros e **esqueci este** — e a prova
+ * de mesa apanhou-o na hora: *"as duas contas nunca se afastam mais do que meio segundo
+ * — afastaram-se 1,253s"*.
+ *
+ * ⚠️ **É o modo de falha que o cabeçalho deste ficheiro já avisava**, e mesmo assim
+ * aconteceu. Se um dia isto voltar a divergir, a legenda do YouTube fica dessincronizada
+ * da voz e **ninguém se queixa** — o vídeo sai, o YouTube aceita, e só se vê a ver.
+ */
+export const RESPIRO_SEC = 0.21;
 /** ⚠️ ESPELHADO de `CARTAO_CAPITULO_FRAMES` em `youtube-render/src/longo/telas.tsx`. */
 export const CARTAO_CAPITULO_FRAMES = 78;
 

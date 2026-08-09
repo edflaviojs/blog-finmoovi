@@ -46,15 +46,65 @@ const args = Object.fromEntries(
 );
 
 /**
- * O TETO DE PALAVRAS POR CENA — 40, e o número tem duas razões medidas.
- * (a) A 2,6 palavras/s são ~15 segundos de fala, que é o tamanho de pedido em que o
- *     edge-tts se tem portado bem no Short (lá as cenas rondam as 25 palavras).
- * (b) 15 segundos é também o tempo máximo que uma imagem parada aguenta antes de a
- *     pessoa sentir que o vídeo estagnou.
- * O corte é SEMPRE em fim de frase: cortar uma frase ao meio partiria a respiração
- * da voz, que é a coisa que este canal mais penou para acertar.
+ * 🔴 O TETO DE PALAVRAS POR CENA — 40 → 26 em 09/08/2026, ordem do dono.
+ *
+ * ═══ POR QUE 40 ERA DEMAIS, MEDIDO NO VÍDEO PRONTO ═══
+ * A razão (b) da versão antiga dizia *"15 segundos é o tempo máximo que uma imagem
+ * parada aguenta"*. **Estava otimista, e o vídeo provou-o.** Medido no MP4:
+ *
+ *  · 30 cenas, **12,0 segundos de média**, e 29 delas acima de 8s;
+ *  · a diferença entre quadros distantes 3 segundos DENTRO da mesma cena deu **ZERO**,
+ *    duas vezes só no primeiro minuto;
+ *  · e **nenhuma família escapa**: renderizando cenas isoladas, todas ficam entre 1,2 e
+ *    2,3 de movimento — até a da metáfora, que é um boneco a mexer-se em tela cheia.
+ *
+ * ⚠️ **Foi por isto que enfeitar não resolveu.** Tentaram-se três coisas antes desta, e
+ * as três foram medidas e falharam: câmara lenta, halo a respirar com anéis, e o ator
+ * da metáfora ao lado do número (1,25 → 1,43, o melhor dos três). **O problema não era
+ * de nenhuma família: era do formato.** Doze segundos é muito tempo para qualquer
+ * imagem única, por mais bem animada que ela seja.
+ *
+ * ═══ POR QUE 26, E NÃO 18 — E A MEDIÇÃO QUE MUDOU A DECISÃO ═══
+ * Simulado sobre o guião do piloto, com o corte a respeitar sempre o fim de frase:
+ *
+ * | teto | cenas | média | acima de 8s |
+ * |---|---|---|---|
+ * | 40 (antes) | 30 | 12,0s | **28** |
+ * | **26** | **49** | **7,3s** | **22** |
+ * | 18 | 66 | 5,4s | 5 |
+ * | 14 | 69 | 5,2s | 5 |
+ *
+ * 🔴 **O 18 foi construído, renderizado e MEDIDO — e não ganhou.** Comparado o mesmo
+ * minuto de vídeo, 30 cenas contra 66:
+ *
+ * | | 30 cenas | 66 cenas |
+ * |---|---|---|
+ * | momentos fortes | 7 | **9** ✅ |
+ * | maior buraco sem nada | 19s | **12s** ✅ |
+ * | movimento médio | **3,18** | 3,01 ❌ |
+ * | tempo em movimento fraco | **43%** | 60% ❌ |
+ *
+ * **E a razão é boa de saber:** as cenas de `palavras` já trocavam o bloco de texto
+ * 3 ou 4 vezes dentro dos 12 segundos. Cortando para 6s, cada uma passa a mostrar UM
+ * bloco. Trocaram-se mudanças DENTRO da cena por mudanças ENTRE cenas, e no total deu
+ * quase na mesma — **com o dobro das chamadas de voz a pagar por isso.**
+ *
+ * Decisão do dono, com os números à frente: **26**. Mata as cenas de 15 segundos (o
+ * defeito real) sem dobrar a voz nem apagar as trocas de bloco que já funcionavam.
+ *
+ * ⚠️ **O corte continua SEMPRE em fim de frase**, e essa regra não se toca: cortar uma
+ * frase ao meio partiria a respiração da voz, que é a coisa que este canal mais penou
+ * para acertar. As cenas que ficam acima de 8s são frases longas indivisíveis.
+ *
+ * ⚠️ **E o `RESPIRO_SEC` teve de descer com isto.** São 49 cenas em vez de 30: a 0,35s
+ * cada, o vídeo ganhava **6,7 segundos de silêncio novo** — tempo morto, que é
+ * exactamente o que se estava a tentar tirar. Ver a nota em `Long.tsx`.
+ *
+ * ⚠️ **NADA DISTO FOI TESTADO COM A VOZ A SÉRIO.** A voz é gerada na nuvem e a que
+ * existe no disco do dono é da versão de 30 cenas; a medição acima foi feita com as
+ * durações ESTIMADAS. A primeira prova verdadeira é a corrida automática de sexta.
  */
-const MAX_PALAVRAS_CENA = 40;
+const MAX_PALAVRAS_CENA = 26;
 
 const contar = (t) => String(t || '').trim().split(/\s+/).filter(Boolean).length;
 const frasesDe = (t) => String(t || '').split(/(?<=[.!?…])\s+/).map((f) => f.trim()).filter(Boolean);
@@ -77,7 +127,52 @@ export function partirEmCenas(texto) {
     n += p;
   }
   if (atual.length) pedacos.push(atual.join(' '));
-  return pedacos;
+
+  /**
+   * 🔴 NENHUMA CENA COM MENOS DE `MIN_PALAVRAS_CENA` — 09/08/2026, e apareceu ao baixar
+   * o teto de 40 para 26.
+   *
+   * Com o teto alto isto nunca dava nas vistas; com ele baixo, uma frase curta no fim de
+   * um parágrafo ficava sozinha e nascia uma cena de **1,1 segundo — três palavras**.
+   * E isso é mau por duas razões medidas nesta casa:
+   *
+   *  · a transição entre cenas leva 8 fotogramas (0,27s), portanto numa cena de 1,1s
+   *    **um quarto dela é transição** — a pessoa vê um piscar, não uma imagem;
+   *  · o TTS gera um ficheiro por cena e cada pedaço traz **0,85s de silêncio na cauda**
+   *    que tem de ser aparado (é a lição da voz frase a frase, de 04/08). Num pedaço de
+   *    três palavras, a cauda é quase do tamanho da fala.
+   *
+   * A cura é juntar ao pedaço ANTERIOR — e ao anterior, não ao seguinte, porque o
+   * pedaço curto é quase sempre o fecho de um raciocínio, não a abertura do próximo.
+   *
+   * ⚠️ **E junta-se para a FRENTE quando o curto é o primeiro do bloco.** Foi o caso
+   * medido: *"Eu lembro direitinho."* abre o desenvolvimento do capítulo 1 e não tem
+   * nada atrás para onde ir — ficava uma cena de 1,1 segundo.
+   *
+   * ⚠️ **E nunca se junta se o resultado passar do teto com folga.** Sem esta guarda, um
+   * pedaço de 6 palavras colado a uma frase de 26 dava uma cena de **32 palavras (12,3s)**
+   * — pior do que o problema que se estava a resolver. Se não couber em lado nenhum, o
+   * pedaço curto fica como está: uma cena curta é melhor do que uma comprida.
+   */
+  const MIN_PALAVRAS_CENA = 7;
+  const TETO_DA_JUNCAO = MAX_PALAVRAS_CENA + MIN_PALAVRAS_CENA;
+  const juntos = [];
+  for (let i = 0; i < pedacos.length; i++) {
+    const pedaco = pedacos[i];
+    if (contar(pedaco) >= MIN_PALAVRAS_CENA) { juntos.push(pedaco); continue; }
+    const anterior = juntos[juntos.length - 1];
+    if (anterior && contar(anterior) + contar(pedaco) <= TETO_DA_JUNCAO) {
+      juntos[juntos.length - 1] = `${anterior} ${pedaco}`;
+      continue;
+    }
+    const seguinte = pedacos[i + 1];
+    if (seguinte && contar(seguinte) + contar(pedaco) <= TETO_DA_JUNCAO) {
+      pedacos[i + 1] = `${pedaco} ${seguinte}`;
+      continue;
+    }
+    juntos.push(pedaco);
+  }
+  return juntos;
 }
 
 /**

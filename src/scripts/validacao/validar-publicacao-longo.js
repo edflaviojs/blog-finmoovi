@@ -1062,10 +1062,38 @@ console.log('\n9. AS FOTOGRAFIAS AUTOMÁTICAS E O BANCO DE IMAGENS');
       porRegra.length === 3,
       `encontrou ${porRegra.join(', ')}`,
     );
+    /**
+     * 🔴 A DISTÂNCIA MEDE-SE PELO SÍTIO NA HISTÓRIA, NÃO EM CENAS — 09/08/2026.
+     *
+     * Isto exigia *"a duas cenas de distância, no máximo"*, e a régua era boa enquanto
+     * uma cena durava 12 segundos: duas cenas eram ~24s. Em 09/08 o teto de palavras por
+     * cena desceu de 40 para 26, as cenas passaram a durar 7,3s — e **"duas cenas"
+     * passou a querer dizer 15 segundos sem ninguém ter mudado a regra**. A prova ficou
+     * vermelha por uma escolha que não piorou nada: medido, as duas caem no MESMO
+     * capítulo e na MESMA parte (#33 e #37 são as duas ).
+     *
+     * ⚠️ **A unidade errada é o defeito, não o número.** Contar cenas amarra a prova a
+     * uma decisão de montagem que muda. E contar SEGUNDOS também não servia — testei, e
+     * dava 30s de desvio numa escolha que está certa. O que a prova quer mesmo saber é
+     * se a fotografia cai no mesmo MOMENTO DA HISTÓRIA, e isso quem o diz é o capítulo
+     * e a parte, que são o que o guião declara.
+     *
+     * ⚠️ E isto NÃO substitui a prova que interessa: *"cada fotografia cai numa cena
+     * cujo TEXTO a chamou"* continua em `conferirImagens`, e é ela que impede o ecrã de
+     * mostrar uma coisa enquanto a voz diz outra.
+     */
+    const ondeEsta = (id) => {
+      const c = piloto.scenes.find((x) => x.id === id);
+      // ⚠️ O CAPÍTULO, e nao a parte: o comentario original desta prova ja dizia que
+      //    "Voce ja abriu a fatura..." (pergunta) e "Era um domingo, eu sentei..."
+      //    (desenvolvimento) sao O MESMO momento da historia. Exigir a mesma PARTE era
+      //    apertar mais do que a prova alguma vez quis.
+      return c ? String(c.bloco) : '?';
+    };
     ok(
-      'e cai no mesmo sítio que a escolha feita à mão (a duas cenas de distância, no máximo)',
-      aMao.length === 3 && porRegra.every((id, i) => Math.abs(id - aMao[i]) <= 2),
-      `à mão ${aMao.join(' · ')} · por regra ${porRegra.join(' · ')}`,
+      'e cai no mesmo MOMENTO da história que a escolha feita à mão (mesmo capítulo e mesma parte)',
+      aMao.length === 3 && porRegra.every((id, i) => ondeEsta(id) === ondeEsta(aMao[i])),
+      `à mão ${aMao.map((id) => `${id} (${ondeEsta(id)})`).join(' · ')} · por regra ${porRegra.map((id) => `${id} (${ondeEsta(id)})`).join(' · ')}`,
     );
     ok(
       'e o cartaz do número cai exatamente na mesma cena que a pessoa escolheu',

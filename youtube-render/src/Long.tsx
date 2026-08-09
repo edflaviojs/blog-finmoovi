@@ -153,7 +153,23 @@ export const PLACA_FRAMES = 78; // ~2,6s de placa de capítulo, por cima da cena
  * minutos com ~23 cenas, 0,7s por cena seriam 16 segundos de silêncio — o dobro do
  * que a fala precisa para respirar, e tempo morto é onde a audiência sai.
  */
-export const RESPIRO_SEC = 0.35;
+/**
+ * 🔴 0,35 → 0,21 em 09/08/2026, e é ARITMÉTICA, não gosto.
+ *
+ * O teto de palavras por cena desceu de 40 para 18 (ver `montar-longo.js`), e o vídeo
+ * passou de **30 para 49 cenas**. A 0,35s de respiro cada, isso são **17,2 segundos de
+ * silêncio** em vez de 10,5 — **6,7 segundos de tempo morto NOVO**, que é exactamente
+ * o que se estava a tentar tirar do vídeo.
+ *
+ * 0,21 × 49 = 10,3s, praticamente o mesmo de antes. **O vídeo não fica mais longo nem
+ * mais curto; só troca cenas compridas por cenas curtas.**
+ *
+ * ⚠️ **ESPELHADO em `descricao-longo.js`** — é o mesmo número lá, e os capítulos da
+ * descrição do YouTube são calculados com ele. Mudar aqui sem mudar lá põe os capítulos
+ * a apontar para o sítio errado; é o modo de falha que o cabeçalho daquele ficheiro já
+ * avisa.
+ */
+export const RESPIRO_SEC = 0.21;
 
 const durationsSec = (script: LongScript, timing: LongTiming): number[] =>
   script.scenes.map((s, i) => {

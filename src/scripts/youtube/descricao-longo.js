@@ -52,7 +52,11 @@ const FILA = join(process.cwd(), '.github', 'data', 'youtube-longos.json');
 
 // ⚠️ ESPELHADOS de youtube-render/src/Long.tsx — ver o aviso no cabeçalho.
 const VOZ_ENTRA_SEG = 27 / 30;
-const RESPIRO_SEC = 0.35;
+// ⚠️ 0,35 → 0,21 em 09/08/2026, ao MESMO TEMPO que em Long.tsx. As cenas passaram de 30
+//    para 49 (teto de palavras de 40 → 26) e a 0,35 o vídeo ganhava 6,7s de silêncio.
+//    Se um dia estes dois números divergirem, os capítulos desta descrição passam a
+//    apontar para o sítio errado — e o YouTube não se queixa.
+const RESPIRO_SEC = 0.21;
 /** ⚠️ ESPELHADO de `CARTAO_CAPITULO_FRAMES` (78 fotogramas) em `longo/telas.tsx`. */
 const CARTAO_CAPITULO_SEG = 78 / 30;
 

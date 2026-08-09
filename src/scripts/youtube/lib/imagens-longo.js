@@ -477,6 +477,36 @@ export function escolherLugaresDaIlustracao(cenas, lugaresDaMetafora = new Map()
  * Recebe as cenas já partidas e o mapa do guião; devolve as mesmas cenas com um campo
  * `visual` cada. Determinístico: o mesmo guião dá sempre o mesmo vídeo.
  */
+/**
+ * 🔴 O QUE ESTÁ NO ECRÃ, EM UMA LINHA — e é **exportada de propósito**, 09/08/2026.
+ *
+ * ═══ POR QUE SAIU DE DENTRO DA `conferirImagens` ═══
+ * Ela vivia lá dentro, e a prova de mesa `validar-roteiro-longo.js` tinha uma **cópia
+ * mais grosseira** — `${tipo}` para tudo menos `palavras`. As duas divergiram, e a
+ * divergência custou uma prova vermelha falsa hoje:
+ *
+ * A produção diz que `app/1`, `app/2`, `app/3` são **três ecrãs diferentes** (o app a
+ * crescer passo a passo, que é o desenho). A prova, com a assinatura grosseira, via
+ * três `app` seguidos e gritava. **É a 22ª vez nesta casa que uma trava castiga o que o
+ * desenho manda fazer** — e desta vez porque a trava e o desenho tinham duas versões
+ * da mesma pergunta.
+ *
+ * O conserto de 08/08 (juntar o `passo` à assinatura) foi feito só de um lado. Agora há
+ * um sítio só, e quem prova importa-o em vez de o reescrever.
+ */
+export const assinaturaDoEcra = (v = {}) => {
+  switch (v.tipo) {
+    case 'palavras': return `palavras/${v.variante}`;
+    case 'numero': return `numero/${v.valor}`;
+    case 'app': return `app/${v.passo}`;
+    case 'frase': return `frase/${v.variante}`;
+    case 'ilustracao': return `ilustracao/${v.figura}`;
+    case 'metafora': return `metafora/${v.fio}/${v.estagio}`;
+    case 'foto': return `foto/${v.ficheiro}`;
+    default: return String(v.tipo);
+  }
+};
+
 export function dirigirImagens(cenas, mapa = {}, slug = null) {
   const dic = dicionarioDeValores(mapa);
   const ficha = mapa.fichaDeDivida;
@@ -484,6 +514,35 @@ export function dirigirImagens(cenas, mapa = {}, slug = null) {
   const fio = mapa.fioCondutor || null;
 
   const jaMostrado = new Set(); // valores que já tiveram cartão grande
+
+  /**
+   * 🔴 UM CARTÃO POR BLOCO, E NÃO UM POR CENA — 09/08/2026.
+   *
+   * ═══ O DEFEITO, QUE NASCEU HOJE E FOI APANHADO A MEDIR ═══
+   * As regras da CHAMADA e do RE-GANCHO diziam `if (c.parte === 'chamada')` — ou seja,
+   * **todas** as cenas daquele bloco levavam o mesmo cartão. Enquanto um bloco dava uma
+   * cena só, isso era a mesma coisa e ninguém notou.
+   *
+   * Ao baixar o teto de palavras por cena de 40 para 26, a chamada passou a dar DUAS
+   * cenas — e o vídeo ficou com **"Comenta FINMOOVI" duas vezes seguidas**, e o gancho
+   * do capítulo 3 com **a mesma frase duas vezes seguidas**. Medido no plano montado.
+   *
+   * ⚠️ **É a família de defeito nº 1 desta casa**: uma regra escrita quando a estrutura
+   * era outra continua a correr, sem se queixar, depois de a estrutura mudar.
+   *
+   * A cura: só a PRIMEIRA cena de cada (bloco + parte) leva o cartão. As seguintes caem
+   * no cavalo de carga — as palavras ditas, que é o que elas estão mesmo a dizer.
+   */
+  const primeiraDoBloco = new Set();
+  {
+    const vistos = new Set();
+    cenas.forEach((c, i) => {
+      const chave = `${c.bloco}|${c.parte}`;
+      if (vistos.has(chave)) return;
+      vistos.add(chave);
+      primeiraDoBloco.add(i);
+    });
+  }
   let contaFeita = false;
   let brollUsado = 0;
   let iBroll = 0;
@@ -537,7 +596,9 @@ export function dirigirImagens(cenas, mapa = {}, slug = null) {
 
     // 4. A CHAMADA — a palavra que a pessoa tem de escrever no comentário PRECISA de
     //    estar escrita no ecrã. No Short está; no longo não estava.
-    if (c.parte === 'chamada') {
+    // ⚠️ `primeiraDoBloco` — ver a nota acima: com a chamada partida em duas cenas,
+    //    o cartao saia DUAS VEZES SEGUIDAS.
+    if (c.parte === 'chamada' && primeiraDoBloco.has(indice)) {
       return { ...c, visual: { tipo: 'frase', texto: 'Comenta FINMOOVI', etiquetaTexto: 'aqui nos comentários', variante: 'chamada' } };
     }
 
@@ -566,7 +627,8 @@ export function dirigirImagens(cenas, mapa = {}, slug = null) {
     }
 
     // 8. O RE-GANCHO — o que fica em aberto está escrito no mapa, capítulo a capítulo.
-    if (c.parte === 'regancho' && c.capitulo) {
+    // ⚠️ `primeiraDoBloco` pela MESMA razao da chamada.
+    if (c.parte === 'regancho' && c.capitulo && primeiraDoBloco.has(indice)) {
       const aberto = mapa.capitulos?.[c.capitulo - 1]?.oQueFicaEmAberto;
       if (aberto) return { ...c, visual: { tipo: 'frase', texto: aberto, etiquetaTexto: 'o que vem a seguir', variante: 'gancho', etiqueta } };
     }
@@ -750,22 +812,10 @@ export function conferirImagens(cenas, mapa = {}, slugDoVideo = null, catalogoDe
    *
    * Agora a assinatura leva **o que muda no ecrã** de cada família.
    */
-  const assinatura = (v = {}) => {
-    switch (v.tipo) {
-      case 'palavras': return `palavras/${v.variante}`;
-      case 'numero': return `numero/${v.valor}`;
-      case 'app': return `app/${v.passo}`;
-      case 'frase': return `frase/${v.variante}`;
-      case 'ilustracao': return `ilustracao/${v.figura}`;
-      case 'metafora': return `metafora/${v.fio}/${v.estagio}`;
-      case 'foto': return `foto/${v.ficheiro}`;
-      default: return String(v.tipo);
-    }
-  };
   for (let i = 2; i < cenas.length; i++) {
-    const a = assinatura(cenas[i].visual);
+    const a = assinaturaDoEcra(cenas[i].visual);
     if (!cenas[i].visual) continue;
-    if (assinatura(cenas[i - 1].visual) === a && assinatura(cenas[i - 2].visual) === a) {
+    if (assinaturaDoEcra(cenas[i - 1].visual) === a && assinaturaDoEcra(cenas[i - 2].visual) === a) {
       erros.push(`cenas ${cenas[i - 2].id}, ${cenas[i - 1].id} e ${cenas[i].id} mostram a mesma coisa ("${a}") — três iguais seguidas cansam`);
     }
   }

@@ -43,6 +43,9 @@ import {
   buildPromptMapa, buildPromptAbertura, buildPromptCapitulo, buildPromptChamada, buildPromptFecho,
 } from '../youtube/roteiro-longo.js';
 import { BORDAO } from '../youtube/lib/schema-short.js';
+// ⚠️ A ASSINATURA DO ECRÃ VEM DA PRODUÇÃO. Ver a nota em `lib/imagens-longo.js`: havia
+//    aqui uma cópia mais grosseira, as duas divergiram, e a prova reprovava cenas boas.
+import { assinaturaDoEcra } from '../youtube/lib/imagens-longo.js';
 import { montarFichaDeDivida } from '../youtube/lib/simulador.js';
 import { buildPromptLeitorBloco, buildPromptLeitorCapitulo } from '../youtube/lib/leitor-longo.js';
 
@@ -760,7 +763,10 @@ console.log('   (a 1ª prova apanha a montagem a PERDER parágrafos do guião, e
   );
 
   // (e) nunca três ecrãs iguais seguidos
-  const assinatura = (c) => `${c.visual?.tipo}${c.visual?.tipo === 'palavras' ? `/${c.visual.variante}` : ''}`;
+  // ⚠️ IMPORTADA da producao, nunca copiada. A copia que estava aqui era mais
+  //    grosseira (so `tipo`) e reprovava as cenas do app nos passos 1, 2 e 3 -- que sao
+  //    TRES ecras diferentes. Ver `assinaturaDoEcra` em lib/imagens-longo.js.
+  const assinatura = (c) => assinaturaDoEcra(c.visual);
   const trioIgual = cenas.some((_, i) => i >= 2 && assinatura(cenas[i]) === assinatura(cenas[i - 1]) && assinatura(cenas[i]) === assinatura(cenas[i - 2]));
   ok('nunca há três ecrãs iguais seguidos', !trioIgual);
 
