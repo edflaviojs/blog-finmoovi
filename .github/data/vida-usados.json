@@ -10,5 +10,11 @@
     "gancho": "se-parar",
     "turno": "manha",
     "em": "2026-08-09T05:29:44.970Z"
+  },
+  {
+    "situacao": "fatura-maior",
+    "gancho": "se-parar",
+    "turno": "noite",
+    "em": "2026-08-09T05:33:32.004Z"
   }
 ]

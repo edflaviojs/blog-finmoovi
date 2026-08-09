@@ -1,0 +1,117 @@
+{
+  "slug": "loop-fatura-maior-se-parar",
+  "formato": "loop16",
+  "term": "A fatura veio maior",
+  "category": "vida",
+  "keyword": "FATURA",
+  "situacao": "fatura-maior",
+  "gancho": "se-parar",
+  "ganchoFamilia": "e se parar",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "bola-neve",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "O que acontece se você parar de conferir contas? Vi no app.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "acontece",
+          "visual": {
+            "type": "statement",
+            "text": "Confira suas contas"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "parar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-neve"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Minha fatura veio maior e eu descobri um errinho na compra esquecida.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "fatura",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-neve"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "maior",
+          "visual": {
+            "type": "statement",
+            "text": "Fatura veio maior"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então eu abro o aplicativo do banco e confiro tudo antes agora.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "aplicativo",
+          "visual": {
+            "type": "statement",
+            "text": "Eu olho no app"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "banco",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-neve"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Conferir contas evitou isso ruim comigo",
+      "durationSec": 2.17,
+      "shots": [
+        {
+          "anchor": "Conferir",
+          "visual": {
+            "type": "statement",
+            "text": "Conferir contas sempre"
+          }
+        },
+        {
+          "anchor": "contas",
+          "visual": {
+            "type": "statement",
+            "text": "Confira suas contas"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.19
+}
