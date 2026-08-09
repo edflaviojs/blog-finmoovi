@@ -16,5 +16,23 @@
     ],
     "veredito": "1. **LOOP — 5/10**  \nO primeiro quadro mostra “Nunca faça isso” e o último mostra “do cartão.” O visual é parecido, mas o conteúdo/texto não é o mesmo. Ao reiniciar, a troca pode ser percebida.\n\n2. **FAIXA DE BAIXO — 9/10**  \nNão há informação importante colada no rodapé. As legendas ficam acima da área mais provável de ser coberta pela interface.\n\n3. **TEXTO POR CIMA DE TEXTO — 9/10**  \nNão vejo frases sobrepostas nem palavras cortadas. Os textos estão bem separados.\n\n4. **LEGIBILIDADE — 9/10**  \nTexto grande, forte contraste e boa leitura em celular. As palavras destacadas em azul/rosa ajudam bastante.\n\n5. **TELA VIVA OU VAZIA — 7/10**  \nHá bastante espaço vazio, principalmente na metade inferior de alguns quadros. Os elementos gráficos evitam que fique totalmente parado, mas poderia haver mais informação visual.\n\n6. **COERÊNCIA — 9/10**  \nOs 8 quadros parecem claramente pertencer ao mesmo vídeo: mesma identidade visual, cores, tipografia e narrativa. A sequência “fatura maior → conferi compra → achei erro” faz sentido.\n\n7. **TESTE CENTRAL — 7/10**  \nParece mais um vídeo profissional com elementos animados do que slides, mas os grandes cards de título ainda dão uma sensação de apresentação em alguns momentos.\n\nNOTA GERAL: 8/10  \nPROBLEMA 1: O loop não fecha perfeitamente — o primeiro quadro/0,1s não é igual ao último/15,6s.  \nPROBLEMA 2: Há áreas grandes e pouco utilizadas na tela, especialmente na parte inferior.  \nPROBLEMA 3: Os cards grandes de título podem deixar o vídeo com aparência de slides.  \nPRIMEIRA COISA A MUDAR: Faça o último quadro voltar visualmente ao estado exato do primeiro para esconder completamente o reinício.",
     "quando": "2026-08-07T20:43:32.713Z"
+  },
+  {
+    "slug": "loop-reforma-banheiro-se-parar",
+    "formato": "loop16",
+    "nota": 7.3,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      1.8,
+      3.7,
+      5.5,
+      7.4,
+      9.2,
+      11,
+      12.8
+    ],
+    "veredito": "1. **LOOP — 8/10.** O primeiro e o último quadro têm o mesmo cenário e a mesma frase central (“Pare de adiar reparos”), então o corte tende a ser discreto. Porém, a legenda inferior é diferente: “O que acontece” no início vs. “o azulejo solto” no final. Pelos quadros, não dá para saber se o movimento fecha perfeitamente.\n\n2. **FAIXA DE BAIXO — 5/10.** Há texto importante bem baixo em praticamente todos os quadros. As legendas ficam na região que pode ser coberta pelos elementos da interface do Shorts/Reels.\n\n3. **TEXTO POR CIMA DE TEXTO — 7/10.** Não há sobreposição grave evidente, mas algumas legendas aparecem fragmentadas entre palavras, como “anos e fingia” e “dele cedo.” Isso parece depender de animação/transição.\n\n4. **LEGIBILIDADE — 8/10.** Os textos principais são grandes, fortes e com bom contraste. As legendas inferiores são menores e mais vulneráveis à interface do celular.\n\n5. **TELA VIVA OU VAZIA — 6/10.** Há bastante espaço vazio, principalmente na metade inferior. O fundo decorativo ajuda, mas ainda existe sensação de área subutilizada.\n\n6. **COERÊNCIA — 8/10.** A identidade visual é muito consistente: mesma paleta, logo, tipografia e ampulheta. A sequência parece avançar uma ideia, embora alguns quadros tenham pouca informação visual nova.\n\n7. **TESTE CENTRAL — 7/10.** Parece mais um **vídeo animado com cards** do que slides, mas os quadros parados revelam uma estrutura bastante estática e repetitiva.\n\nNOTA GERAL: 7,3\nPROBLEMA 1: Texto das legendas muito baixo, especialmente no quadro de 12,8s.\nPROBLEMA 2: Primeiro e último quadro não são idênticos por causa da legenda inferior, embora o elemento central seja igual.\nPROBLEMA 3: Muito espaço vazio na parte inferior de vários quadros.\nPRIMEIRA COISA A MUDAR: Subir todas as legendas para uma área segura acima da interface do Shorts/Reels.",
+    "quando": "2026-08-09T05:32:38.436Z"
   }
 ]
