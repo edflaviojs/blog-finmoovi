@@ -55,5 +55,54 @@
         "publicaEmBR": "08/08 às 19h05"
       }
     }
+  },
+  "cenario-3k-investir": {
+    "midias": {
+      "video": {
+        "id": "ad7eac3d-e41f-4741-81e9-22ced879050b",
+        "name": "tDoJ5D0bHm.mp4",
+        "originalName": null,
+        "path": "https://media.help4desk.com/tDoJ5D0bHm.mp4",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capa": {
+        "id": "b5fbab30-9012-48f4-b4c2-2a3f5e2120f7",
+        "name": "McyG8p9mse.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/McyG8p9mse.jpeg",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capaLarga": {
+        "id": "a0624255-0974-41a6-aad3-9a2882d5b21f",
+        "name": "fNN1m3hqLM.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/fNN1m3hqLM.jpeg",
+        "thumbnail": null,
+        "alt": null
+      }
+    },
+    "publicaEm": "2026-08-09T22:00:00.000Z",
+    "publicaEmBR": "09/08 às 19h00",
+    "agendadoEm": "2026-08-09T15:48:49.457Z",
+    "atualizadoEm": "2026-08-09T15:48:49.717Z",
+    "redes": {
+      "instagram": {
+        "postId": "cmslz9dda0003s390z0167mhj",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-08-09T22:00:00.000Z",
+        "publicaEmBR": "09/08 às 19h00",
+        "midia": "o vídeo",
+        "caracteres": 747,
+        "limite": 2200
+      },
+      "instagram-story": {
+        "postId": "cmslz9dty0004s3909o6z38f0",
+        "tipo": "vídeo",
+        "publicaEm": "2026-08-09T22:05:00.000Z",
+        "publicaEmBR": "09/08 às 19h05"
+      }
+    }
   }
 }
