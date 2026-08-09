@@ -1,0 +1,213 @@
+{
+  "slug": "kw-caixa-no-vermelho",
+  "term": "Caixa no vermelho?",
+  "category": "mindset",
+  "keyword": "vermelho",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Sua conta fica no *vermelho* todo mês?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "balde-furado",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Sua conta fica no vermelho todo mês? Ganhando cinco mil reais, eu vou te mostrar onde o dinheiro some.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "vermelho",
+          "visual": {
+            "type": "statement",
+            "text": "O vermelho não aparece do nada"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "number",
+            "text": "R$ 5.000"
+          }
+        },
+        {
+          "anchor": "some",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          },
+          "sfx": "whoosh"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Sabe, na correria, você paga a luz, o mercado, uma continha aqui e ali, e acaba esquecendo alguma coisa. Aí chega o fim do mês e aperta.",
+      "durationSec": 10.4,
+      "shots": [
+        {
+          "anchor": "paga",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          }
+        },
+        {
+          "anchor": "esquecendo",
+          "visual": {
+            "type": "statement",
+            "text": "Pequenos gastos se acumulam"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "aperta",
+          "visual": {
+            "type": "statement",
+            "text": "Fim do mês aperta"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Esse dinheiro que sai sem você ver faz muita falta. Quando eu juntei tudo, deu quinhentos reais perdidos num mês só. E isso assusta.",
+      "durationSec": 9.2,
+      "shots": [
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "icon",
+            "icon": "money"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "quinhentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "assusta",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 500 perdidos"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei essas continhas no FinMoovi e ele me mostrou a soma exata de tudo que tinha ficado pra trás.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "joguei",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Dashboard do FinMoovi mostrando o resumo financeiro e os gastos acumulados"
+          },
+          "sfx": "click"
+        },
+        {
+          "anchor": "soma",
+          "visual": {
+            "type": "number",
+            "text": "SOMA EXATA"
+          }
+        },
+        {
+          "anchor": "trás",
+          "visual": {
+            "type": "statement",
+            "text": "Nada fica pra trás"
+          },
+          "sfx": "ding"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer descobrir pra onde tá indo o seu? Procura o FinMoovi. É de graça.",
+      "durationSec": 5.4,
+      "shots": [
+        {
+          "anchor": "descobrir",
+          "visual": {
+            "type": "statement",
+            "text": "Descubra seu caminho"
+          }
+        },
+        {
+          "anchor": "Procura",
+          "visual": {
+            "type": "icon",
+            "icon": "target"
+          }
+        },
+        {
+          "anchor": "graça",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "A conta fica no vermelho porque você gasta sem anotar nada. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "vermelho",
+          "visual": {
+            "type": "statement",
+            "text": "O vermelho tem uma causa"
+          }
+        },
+        {
+          "anchor": "anotar",
+          "visual": {
+            "type": "icon",
+            "icon": "chart-down"
+          },
+          "sfx": "alert"
+        },
+        {
+          "anchor": "outros",
+          "visual": {
+            "type": "statement",
+            "text": "Controle seu dinheiro"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Descubra onde seu dinheiro some",
+    "target": "app"
+  },
+  "totalDurationSec": 46.9
+}
