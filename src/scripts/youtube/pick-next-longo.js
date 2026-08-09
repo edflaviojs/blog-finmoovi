@@ -25,6 +25,7 @@
  *   node src/scripts/youtube/pick-next-longo.js
  *   node src/scripts/youtube/pick-next-longo.js --como-argumentos
  *   node src/scripts/youtube/pick-next-longo.js --como-argumentos --slug=sair-do-vermelho
+ *   node src/scripts/youtube/pick-next-longo.js --saltar=tema-que-travou,outro
  *   node src/scripts/youtube/pick-next-longo.js --lista
  */
 
@@ -60,8 +61,22 @@ function lerJson(caminho, porOmissao) {
  * vídeo mas morreu antes de guardar o caderno faria o vídeo outra vez na semana seguinte.
  * Se só se olhasse ao caderno, um tema que o dono suspendeu voltaria a entrar.
  */
-export function proximoLongo({ fila = lerJson(FILA, { videos: [] }), caderno = lerJson(CADERNO, {}) } = {}) {
+export function proximoLongo({ fila = lerJson(FILA, { videos: [] }), caderno = lerJson(CADERNO, {}), saltar = [] } = {}) {
+  /**
+   * 🔴 OS QUE JÁ SE TENTOU HOJE — 09/08/2026, ordem do dono: *"se existe algum bloqueio
+   * ele pula para o próximo tema… mas nunca parar e não gerar o vídeo"*.
+   *
+   * Um tema pode travar por uma razão dele — o modelo não consegue escrever um mapa que
+   * se aguente, o assunto não dá conta que bata. O robô tenta o seguinte da fila em vez
+   * de o canal ficar uma semana sem vídeo por causa de uma linha.
+   *
+   * ⚠️ **A lista é da CORRIDA, não do ficheiro.** Nada aqui marca o tema como reprovado:
+   * ele volta a ser o primeiro na semana seguinte. Um tema que trava três semanas
+   * seguidas é um tema a rever à mão — não é o robô que decide deitá-lo fora.
+   */
+  const saltados = new Set((Array.isArray(saltar) ? saltar : String(saltar || '').split(',')).map((s) => String(s).trim()).filter(Boolean));
   const porFazer = (fila.videos || []).filter((v) => v && v.slug
+    && !saltados.has(v.slug)
     && !JA_TRATADOS.has(String(v.estado || '').toLowerCase())
     && !caderno[v.slug]);
   /**
@@ -118,7 +133,7 @@ function principal() {
   const pedido = args.slug && args.slug !== true ? String(args.slug) : null;
   const escolhido = pedido
     ? (fila.videos || []).find((v) => v.slug === pedido)
-    : proximoLongo({ fila, caderno });
+    : proximoLongo({ fila, caderno, saltar: args.saltar && args.saltar !== true ? String(args.saltar) : [] });
 
   if (!escolhido) {
     if (pedido) {

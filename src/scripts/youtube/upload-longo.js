@@ -588,12 +588,40 @@ async function principal() {
    * Não é desconfiança do passo anterior: é que este ficheiro também se corre à mão, e a
    * regra tem de valer por onde quer que se entre. Ver `estreiaOcupada`.
    */
-  const ocupado = estreiaOcupada(estreia, caderno, SLUG);
-  if (ocupado) {
+  /**
+   * 🔴 O DIA OCUPADO DEIXOU DE SER UM ERRO — 09/08/2026, ordem do dono: *"nunca parar
+   * e não gerar o vídeo"*.
+   *
+   * A 1ª versão lançava um erro aqui, e em 08/08 isso pintou uma corrida de vermelho
+   * com o vídeo **já feito e no disco** — 36 minutos e uma corrida de IA deitados fora
+   * por causa de uma data. A regra "um dia, um vídeo" continua de pé e é boa; o que
+   * estava errado era o castigo. Um vídeo pronto não se deita fora: **marca-se para o
+   * domingo seguinte que estiver livre.**
+   *
+   * ⚠️ **Uma data escolhida à mão (`--publicar-em`) não anda.** Quem a escreveu sabe o
+   * que quer, e mudá-la por baixo seria pior do que parar.
+   *
+   * ⚠️ **E oito semanas de tecto**, para isto nunca virar um ciclo infinito a marcar
+   * vídeos para o ano que vem. Se oito domingos seguidos estiverem tomados, há coisa
+   * mais errada do que uma data, e aí sim vale a pena parar e olhar.
+   */
+  let ocupado = estreiaOcupada(estreia, caderno, SLUG);
+  if (ocupado && marcada) {
     throw new Error(
       `${emPortugues(estreia)} já é do vídeo "${ocupado.slug}" — um dia, um vídeo.\n`
       + '   Dois vídeos do canal a estrear no mesmo dia competem um com o outro na lista de quem se inscreveu.\n'
-      + '   Para forçar outra data: --publicar-em=AAAA-MM-DDTHH:MM:SSZ',
+      + '   Como a data foi escrita à mão (--publicar-em), isto para em vez de a mudar por baixo de si.',
+    );
+  }
+  for (let semanas = 0; ocupado && semanas < 8; semanas += 1) {
+    log(`📅 ${emPortugues(estreia)} já é do vídeo "${ocupado.slug}" — a passar para o domingo seguinte.`);
+    estreia.setUTCDate(estreia.getUTCDate() + 7);
+    ocupado = estreiaOcupada(estreia, caderno, SLUG);
+  }
+  if (ocupado) {
+    throw new Error(
+      'oito domingos seguidos já têm dono — isto não é uma questão de data.\n'
+      + '   Ver o caderno `.github/data/youtube-longos-published.json`.',
     );
   }
 

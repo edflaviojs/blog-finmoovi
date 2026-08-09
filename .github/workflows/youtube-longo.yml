@@ -266,7 +266,22 @@ jobs:
       # A regra certa não é "quando se pede": é **quando falta**. Um tema novo nunca tem
       # guião — escreve-se. Um tema que já foi escrito não se paga duas vezes. É a mesma
       # ideia das partes do render que ficam no disco.
-      - name: Escrever o guião (se ainda não existir)
+      # 🔴 ORDEM DO DONO, 09/08/2026: *"se existe algum bloqueio ele pula para o próximo
+      # tema… mas nunca parar e não gerar o vídeo"*.
+      #
+      # A corrida automática de 08/08 morreu aqui: o modelo não conseguiu escrever um
+      # mapa que passasse, o passo ficou vermelho, e o canal ficou sem vídeo ao domingo.
+      # As travas de dentro já não desistem (ver `consertarMapa`); esta é a rede de fora,
+      # para o caso de FALTAR a matéria-prima — e aí o remédio não é insistir no mesmo
+      # tema, é pegar no seguinte da fila.
+      #
+      # ⚠️ **TRÊS TEMAS, E NÃO MAIS.** Cada volta custa uma corrida de IA inteira. Se
+      # três temas seguidos não dão um guião, o problema não é o tema: é o pedido ou a
+      # chave, e insistir só gasta a cota que amanhã faz falta.
+      #
+      # ⚠️ **Nada marca o tema como reprovado.** O `--saltar` vale só nesta corrida; na
+      # semana seguinte ele volta a ser o primeiro da fila.
+      - name: Escrever o guião e montar as cenas (e trocar de tema se um travar)
         if: steps.escolher.outputs.skip != 'true'
         env:
           KIE_AI_KEY: ${{ secrets.KIE_AI_KEY }}
@@ -275,35 +290,54 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
         run: |
-          set -euo pipefail
-          if [ -f "src/scripts/youtube/output/$SLUG.longo.json" ] && [ "${{ github.event.inputs.gerar }}" != "true" ]; then
-            echo "♻️  o guião de \"$SLUG\" já existe — não se paga duas vezes pelo mesmo texto."
-            exit 0
+          set -uo pipefail
+          SALTAR=""
+          FEITO=""
+          for VOLTA in 1 2 3; do
+            echo ""
+            echo "── volta $VOLTA · tema \"$SLUG\" ──"
+
+            if [ -f "src/scripts/youtube/output/$SLUG.longo.json" ] && [ "${{ github.event.inputs.gerar }}" != "true" ]; then
+              echo "♻️  o guião de \"$SLUG\" já existe — não se paga duas vezes pelo mesmo texto."
+            else
+              node src/scripts/youtube/pick-next-longo.js --como-argumentos --slug="$SLUG" > /tmp/tema.args
+              echo "tema escolhido:"; cat /tmp/tema.args
+              # ⚠️ UM ARGUMENTO POR LINHA (`-d '\n'`). Os temas trazem dois pontos, vírgulas e
+              # acentos; deixar o separador por conta do espaço partiria o tema a meio — que é
+              # exatamente o defeito nº 10 de §34.3, o caminho com um espaço a partir o comando.
+              xargs -d '\n' -a /tmp/tema.args node src/scripts/youtube/roteiro-longo.js --slug="$SLUG" || true
+            fi
+
+            # ⚠️ A PROVA É O FICHEIRO, NUNCA O CÓDIGO DE SAÍDA — regra da casa.
+            if [ -f "src/scripts/youtube/output/$SLUG.longo.json" ] \
+               && node src/scripts/youtube/montar-longo.js --slug="$SLUG" \
+               && [ -f "youtube-render/public/roteiro/$SLUG.json" ]; then
+              FEITO="$SLUG"
+              break
+            fi
+
+            echo "::warning::o tema \"$SLUG\" não deu guião — a tentar o seguinte da fila."
+            SALTAR="${SALTAR:+$SALTAR,}$SLUG"
+            # Um disparo à mão com tema escolhido não anda para outro: quem carregou sabe o que quer.
+            if [ -n "${{ github.event.inputs.slug }}" ]; then break; fi
+            PROXIMO="$(node src/scripts/youtube/pick-next-longo.js --saltar="$SALTAR")" || PROXIMO=""
+            if [ -z "$PROXIMO" ]; then echo "📭 não há mais temas por tentar."; break; fi
+            SLUG="$PROXIMO"
+          done
+
+          if [ -z "$FEITO" ]; then
+            echo "::error::nenhum dos temas tentados deu um guião — não há vídeo esta semana. Temas: ${SALTAR:-$SLUG}"
+            exit 1
           fi
-          node src/scripts/youtube/pick-next-longo.js --como-argumentos --slug="$SLUG" > /tmp/tema.args
-          echo "tema escolhido:"; cat /tmp/tema.args
-          # ⚠️ UM ARGUMENTO POR LINHA (`-d '\n'`). Os temas trazem dois pontos, vírgulas e
-          # acentos; deixar o separador por conta do espaço partiria o tema a meio — que é
-          # exatamente o defeito nº 10 de §34.3, o caminho com um espaço a partir o comando.
-          xargs -d '\n' -a /tmp/tema.args node src/scripts/youtube/roteiro-longo.js --slug="$SLUG"
+          echo "SLUG=$FEITO" >> "$GITHUB_ENV"
+          node -e "const p=require('./youtube-render/public/roteiro/'+process.argv[1]+'.json');console.log('✅ '+p.scenes.length+' cenas · '+p.palavras+' palavras · '+p.scenes.filter(s=>s.visual&&s.visual.tipo==='foto').length+' fotografias');" "$FEITO"
 
       # ── 1-b. AS CENAS E AS IMAGENS ────────────────────────────────────────────
-      # ⚠️ CORRE SEMPRE, mesmo quando o guião já vinha escrito. O montador é que parte o
-      # texto em cenas e escolhe o que aparece em cada uma — e é **determinista**: há uma
-      # prova a dizer que *"o mesmo guião dá sempre exatamente as mesmas imagens"*. Por
-      # isso a pasta das cenas não vai para o repositório: refaz-se aqui, igual, de graça.
-      - name: Partir o guião em cenas e escolher as imagens
-        if: steps.escolher.outputs.skip != 'true'
-        run: |
-          set -euo pipefail
-          test -f "src/scripts/youtube/output/$SLUG.longo.json" || {
-            echo "❌ não há guião escrito para \"$SLUG\"."
-            echo "   Ou se liga o \"gerar\" (escreve um novo), ou o guião tem de estar no repositório."
-            exit 1
-          }
-          node src/scripts/youtube/montar-longo.js --slug="$SLUG"
-          test -f "youtube-render/public/roteiro/$SLUG.json" || { echo "❌ o montador não deixou o guião no sítio."; exit 1; }
-          node -e "const p=require('./youtube-render/public/roteiro/'+process.env.SLUG+'.json');console.log('✅ '+p.scenes.length+' cenas · '+p.palavras+' palavras · '+p.scenes.filter(s=>s.visual&&s.visual.tipo==='foto').length+' fotografias');"
+      # ⚠️ O montador passou para DENTRO do passo de cima (09/08/2026). Ele é a primeira
+      # prova de que o guião serve para alguma coisa — e se não serve, quem decide é a
+      # volta seguinte do laço, trocando de tema. Separado, ele ficava vermelho sozinho e
+      # ninguém trocava nada. Continua determinista, e por isso a pasta das cenas
+      # continua fora do repositório: refaz-se aqui, igual, de graça.
 
       # ⚠️ AS PROVAS CORREM AQUI, E O SÍTIO FOI ESCOLHIDO A DOER.
       #
