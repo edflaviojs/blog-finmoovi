@@ -99,3 +99,46 @@ export function keywordFalada(termo, falaDoGancho) {
   }
   return null;
 }
+
+/**
+ * 🔴 O ASSUNTO CURTO DE UM VÍDEO — 09/08/2026.
+ *
+ * ═══ O DEFEITO QUE ISTO TAPA, MEDIDO NO VÍDEO 2 ═══
+ * O campo `tema` da fila tem DOIS papéis que ninguém separou: é a ENCOMENDA que a IA lê
+ * (e por isso pode ser um parágrafo) e é o ASSUNTO que aparece na descrição, nas
+ * etiquetas e na capa (e por isso tem de ser curto). Nos temas que o robô cria sozinho
+ * os dois papéis calham na mesma frase de 70 caracteres, e nunca se viu o problema.
+ *
+ * Nos temas que o dono manda pela página /status, não: ele escreve a ideia por extenso.
+ * O do vídeo 2 tem 425 caracteres, e o resultado foi este, à letra, na descrição:
+ *
+ *     03:11 Na prática: Dois homens, mesma idade, mesmo trabalho, mesmo salário,
+ *     durante 30 anos. Um deles acaba de se aposentar (…) igualmente. no app grátis
+ *
+ * E nas etiquetas: "Dois homens", "mesma idade", "o que é mesmo trabalho",
+ * "mesmo salário 2026" — 433 caracteres que ninguém procura.
+ *
+ * ═══ A REGRA ═══
+ * Procura-se um assunto **curto** por esta ordem: o tema até ao primeiro dois-pontos ou
+ * ponto final, depois o título até ao primeiro dois-pontos. Ganha o primeiro que caiba
+ * em `MAX_PALAVRAS_ASSUNTO`. Se nenhum couber, corta-se o melhor deles.
+ *
+ * ⚠️ **NUNCA DEVOLVE UM PARÁGRAFO**, e é esse o contrato. Um assunto comprido não é um
+ * assunto mau — é um assunto que quebra três sítios de uma vez sem ninguém dar por nada.
+ */
+export const MAX_PALAVRAS_ASSUNTO = 6;
+
+export function assuntoCurto({ tema = '', titulo = '' } = {}) {
+  const limpar = (s) => String(s || '')
+    .replace(/[“”"'*]/g, '')
+    .split(/[\n:.!?]/)[0]
+    .replace(/\s+/g, ' ')
+    .trim()
+    .replace(/[,;–—-]+$/, '');
+
+  const candidatos = [limpar(tema), limpar(titulo)].filter(Boolean);
+  const cabe = candidatos.find((c) => c.split(/\s+/).length <= MAX_PALAVRAS_ASSUNTO);
+  if (cabe) return cabe;
+  const melhor = candidatos[0] || '';
+  return melhor.split(/\s+/).slice(0, MAX_PALAVRAS_ASSUNTO).join(' ').replace(/[,;–—-]+$/, '');
+}

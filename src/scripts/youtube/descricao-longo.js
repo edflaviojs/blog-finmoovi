@@ -40,6 +40,7 @@
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { assuntoCurto } from './lib/palavras.js';
 import { escolherTrilha, creditoDaMusica } from './lib/musica.js';
 
 const AQUI = dirname(fileURLToPath(import.meta.url));
@@ -135,7 +136,15 @@ export function daFila(slug, fila = null) {
  */
 export function palavrasDoVideo(plano, naFila = {}) {
   const doDono = (naFila.palavrasChave || []).map((t) => limpar(t)).filter(Boolean);
-  const doTema = String(plano.tema || '').split(':')[0].trim();
+  /**
+   * 🔴 `assuntoCurto`, E NÃO O TEMA INTEIRO — 09/08/2026.
+   *
+   * Isto era `plano.tema.split(':')[0]`. Nos temas que o robô cria sozinho dá uma frase
+   * de 70 caracteres e ninguém nota; nos temas que o dono manda pela /status dá o
+   * PARÁGRAFO todo, e ele saía colado nos títulos dos capítulos, no "Guia completo
+   * sobre" e no "NESTE VÍDEO". Medido no vídeo 2: 425 caracteres.
+   */
+  const doTema = assuntoCurto({ tema: plano.tema, titulo: naFila.titulo });
   const cruas = doDono.length ? doDono : [doTema].filter(Boolean);
   const vistas = new Set();
   const saida = [];

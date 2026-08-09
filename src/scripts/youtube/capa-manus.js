@@ -49,6 +49,7 @@ import { fileURLToPath } from 'url';
  */
 import { execFileSync } from 'child_process';
 import { creditos, pedirAgente, descarregar } from './lib/manus-client.js';
+import { assuntoCurto } from './lib/palavras.js';
 
 const AQUI = dirname(fileURLToPath(import.meta.url));
 const RAIZ = resolve(AQUI, '..', '..', '..');
@@ -71,6 +72,14 @@ const PALETA = {
   vermelho: '#ef4444',
   verde: '#22c55e',
 };
+
+/** A fila de temas — é dela que sai o título que o dono aprovou. Nunca lança. */
+function lerFilaDeTemas() {
+  try {
+    const p = join(RAIZ, '.github', 'data', 'youtube-longos.json');
+    return existsSync(p) ? JSON.parse(readFileSync(p, 'utf-8')) : { videos: [] };
+  } catch { return { videos: [] }; }
+}
 
 const REGRAS_FIXAS = `
 STRICT RULES — no human figures, no faces, no hands unless explicitly asked for, no brand logos, no watermarks, no signature, no extra text beyond the words specified above, no placeholder or lorem-ipsum text. Every Portuguese word must be spelled EXACTLY as written, with the accents shown. Extreme contrast, punchy, and readable at 300 pixels wide on a phone.
@@ -247,12 +256,16 @@ async function main() {
      * no primeiro dois-pontos (o tema tem a forma "Título: a explicação") e limita-se a
      * seis palavras — uma miniatura com uma frase inteira não se lê no telemóvel.
      */
-    const titulo = String(roteiro.tema || '')
-      .split(':')[0]
-      .trim()
-      .split(/\s+/)
-      .slice(0, 6)
-      .join(' ')
+    /**
+     * ⚠️ **`assuntoCurto`, A MESMA CONTA DA DESCRIÇÃO E DAS ETIQUETAS** — 09/08/2026.
+     * Aqui estava escrito à mão "as 6 primeiras palavras do tema até ao dois-pontos", o
+     * que num tema de um parágrafo dava uma capa a dizer
+     * **"DOIS HOMENS, MESMA IDADE, MESMO TRABALHO,"**. Três sítios com a mesma regra
+     * escrita três vezes divergem sempre; agora é uma conta só, e o título da fila entra
+     * como segunda hipótese.
+     */
+    const naFila = (lerFilaDeTemas().videos || []).find((v) => v.slug === slug) || {};
+    const titulo = assuntoCurto({ tema: roteiro.tema, titulo: naFila.titulo })
       .toLocaleUpperCase('pt-BR');
     if (!titulo) throw new Error('o guião não tem "tema" — sem título não se faz a capa');
     /**

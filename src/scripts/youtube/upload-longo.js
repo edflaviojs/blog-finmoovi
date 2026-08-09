@@ -51,6 +51,7 @@ import { pathToFileURL } from 'node:url';
  * as MESMAS funções que o robô usa, em vez de uma cópia que amanhã diverge"*. A renovação
  * da chave do Google é exatamente esse caso.
  */
+import { assuntoCurto } from './lib/palavras.js';
 import { getAccessToken, escolherEtiquetas } from './upload-short.js';
 import { prepararDescricao } from './descricao-longo.js';
 import { textoDoPrimeiroComentario, escreverPrimeiroComentario } from './lib/primeiro-comentario.js';
@@ -298,10 +299,20 @@ const MAX_PALAVRAS_ETIQUETA = 5;
  * fatura"*. É uma frase bonita e **ninguém a escreve numa busca.** O teto de cinco
  * palavras deita fora as frases e guarda os termos.
  */
-export function palavrasChave(plano, doVideo = []) {
+export function palavrasChave(plano, doVideo = [], tituloAprovado = '') {
   const cruas = [
     ...doVideo,
-    ...String(plano.tema || '').split(/[:,—–-]/),
+    /**
+     * 🔴 O ASSUNTO CURTO, E NÃO O TEMA PARTIDO ÀS FATIAS — 09/08/2026.
+     *
+     * Isto era `plano.tema.split(/[:,—–-]/)`. Com um tema de uma linha funciona; com um
+     * tema que o dono escreveu por extenso na /status, **cada vírgula do parágrafo virava
+     * uma etiqueta**. Medido no vídeo 2: "Dois homens", "mesma idade", "o que é mesmo
+     * trabalho", "mesmo salário 2026" — 433 caracteres que ninguém procura, a ocupar o
+     * lugar dos que alguém procuraria. É a mesma família do "mochila-pedras" que este
+     * ficheiro já apanhou: um pedaço de dentro da casa a escapar para a montra.
+     */
+    assuntoCurto({ tema: plano.tema, titulo: tituloAprovado }),
     /**
      * 🔴 O `fioCondutor` NÃO ENTRA, e a 1ª versão punha-o cá. No ensaio de 05/08 saiu a
      * etiqueta **"mochila-pedras"** — que é o nome INTERNO da metáfora do vídeo. Ninguém
@@ -335,7 +346,7 @@ export function montarMetadados({ titulo, descricao, plano, estreia, etiquetasDo
     snippet: {
       title: limpar(titulo, 100),
       description: limpar(descricao, 5000),
-      tags: palavrasChave(plano, etiquetasDoVideo),
+      tags: palavrasChave(plano, etiquetasDoVideo, titulo),
       categoryId: '27', // Educação
       defaultLanguage: 'pt-BR',
       defaultAudioLanguage: 'pt-BR',
