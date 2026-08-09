@@ -1,0 +1,117 @@
+{
+  "slug": "loop-reforma-banheiro-se-parar",
+  "formato": "loop16",
+  "term": "A reforma que sempre adia",
+  "category": "vida",
+  "keyword": "REFORMA",
+  "situacao": "reforma-banheiro",
+  "gancho": "se-parar",
+  "ganchoFamilia": "e se parar",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "ampulheta",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "O que acontece se você parar de adiar o azulejo solto?",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "acontece",
+          "visual": {
+            "type": "statement",
+            "text": "Pare de adiar reparos"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "parar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ampulheta"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu deixei o banheiro assim por anos e fingia que nada.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "deixei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ampulheta"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "banheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Meu banheiro esquecido"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Só que percebi meu erro e comecei a cuidar dele cedo.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "percebi",
+          "visual": {
+            "type": "statement",
+            "text": "Comecei a cuidar"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "comecei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ampulheta"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Então você vai parar de adiar o azulejo solto",
+      "durationSec": 3.26,
+      "shots": [
+        {
+          "anchor": "parar",
+          "visual": {
+            "type": "statement",
+            "text": "Você vai parar de adiar"
+          }
+        },
+        {
+          "anchor": "adiar",
+          "visual": {
+            "type": "statement",
+            "text": "Pare de adiar reparos"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
