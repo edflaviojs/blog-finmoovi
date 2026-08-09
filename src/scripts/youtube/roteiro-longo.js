@@ -46,7 +46,7 @@ import { polirCapitulo, polirBloco } from './lib/leitor-longo.js';
 import {
   ORCAMENTO, MOVIMENTOS, PARTES_DO_CAPITULO, PARTES_POSSIVEIS, NUM_CAPITULOS, MAX_PALAVRAS_TITULO, PALAVRAS_POR_SEGUNDO,
   validarMapa, validarAbertura, validarCapitulo, validarChamada, validarFecho, validarLongo,
-  contarPalavras, frasesDe, falaCorrida,
+  contarPalavras, frasesDe, falaCorrida, consertarMapa,
 } from './lib/schema-longo.js';
 /**
  * ⚠️ IMPORTADO DO SHORT DE PROPÓSITO, E NÃO COPIADO.
@@ -839,6 +839,8 @@ async function gerarBloco({ nome, prompt, validar, tema, tentativas = 5, campos 
   const exigencias = [];
   let corretivo = '';
   let ultimo = null;
+  // 🔴 A MENOS MÁ guarda-se — 09/08/2026. Ver a nota do socorro, no fim desta função.
+  let melhor = null;
 
   for (let i = 1; i <= tentativas; i++) {
     if (i > 1) await dormir(8000);
@@ -870,12 +872,83 @@ async function gerarBloco({ nome, prompt, validar, tema, tentativas = 5, campos 
     ultimo = { obj, v };
     if (v.ok) return { ...obj, _avisos: v.avisos || [], _tentativa: i, _palavras: v.palavras };
 
+    if (!melhor || v.erros.length < melhor.v.erros.length) melhor = { obj, v, tentativa: i };
     corretivo = montarCorretivo(acumular(exigencias, v.erros));
     console.log(`  ⚠ ${nome} — tentativa ${i}/${tentativas} reprovada: ${v.erros.join(' | ')}`);
   }
 
-  throw new Error(`o bloco "${nome}" não passou nas travas após ${tentativas} tentativas`
-    + `${ultimo ? ` — última queixa: ${ultimo.v.erros.join(' | ')}` : ''}`);
+  /**
+   * ⛑️ O SOCORRO — 09/08/2026, ordem do dono: *"nunca parar e não gerar o vídeo"*.
+   *
+   * A 1ª versão lançava um erro aqui e a corrida morria. Em 08/08 isso aconteceu duas
+   * vezes no mesmo dia: uma por um capítulo com 336 palavras quando o teto eram 285
+   * (cinquenta e uma palavras a mais custaram o vídeo do domingo inteiro), outra pelo
+   * mapa. Nenhum dos dois motivos justifica um canal sem vídeo.
+   *
+   * ⚠️ **O QUE SE CONSERTA AQUI É SÓ O QUE TEM TROCA EXACTA.** Um bloco é texto falado;
+   * cortá-lo por palavras partiria frases a meio. As duas únicas emendas mecânicas
+   * seguras são trocas literais que a casa já decidiu há muito:
+   *   · "o senhor" → "você" (o canal trata sempre por você — a raiz está no prompt e
+   *     na trava desde 04/08, e o modelo continua a escorregar);
+   *   · "Short"/"Shorts" → "vídeo" (o canal nunca diz "Short" na fala).
+   *
+   * ⚠️ **O QUE SOBRAR PASSA COM AVISO, E ISSO É UMA ESCOLHA DECLARADA.** Um capítulo
+   * com palavras a mais dá um vídeo alguns segundos mais longo. É pior do que o ideal
+   * e muito melhor do que não haver vídeo. O que fica escrito no registo é matéria para
+   * emendar o PEDIDO — nunca para apertar mais a trava. Ver [[prompt-versus-validador]].
+   */
+  if (!melhor) {
+    throw new Error(`o bloco "${nome}": o modelo não devolveu um único JSON legível em ${tentativas} tentativas`
+      + `${ultimo ? ` — última queixa: ${ultimo.v.erros.join(' | ')}` : ''}`);
+  }
+
+  const obj = { ...melhor.obj };
+  const emendas = [];
+  for (const c of campos) {
+    if (typeof obj[c] !== 'string') continue;
+    const antes = obj[c];
+    /**
+     * ⚠️ **UM DE CADA VEZ, ESCRITO À MÃO — nada de adivinhar pela preposição.** A 1ª
+     * versão trocava tudo por "a você" e escrevia *"o dinheiro a você"*. Cada forma tem
+     * a sua, e são seis; uma regra esperta que acerta em cinco e estraga a sexta é pior
+     * do que seis linhas aborrecidas.
+     */
+    let depois = antes
+      .replace(/\bpara o senhor(?!a)\b/gi, 'para você')
+      .replace(/\bcom o senhor(?!a)\b/gi, 'com você')
+      .replace(/\bao senhor(?!a)\b/gi, 'a você')
+      .replace(/\bpro senhor(?!a)\b/gi, 'pra você')
+      .replace(/\bdo senhor(?!a)\b/gi, 'seu')
+      .replace(/\bo senhor(?!a)\b/gi, 'você')
+      // ⚠️ O PLURAL PRIMEIRO. Com `shorts?` numa regra só, "nos Shorts" saía "nos vídeo".
+      .replace(/\bshorts\b/gi, 'vídeos')
+      .replace(/\bshort\b/gi, 'vídeo')
+      // ⚠️ E a maiúscula de volta: *"O senhor viu?"* saía *"você viu?"*, em minúscula a
+      // abrir a frase — e isto vai para a LEGENDA, onde se lê.
+      .replace(/(^|[.!?…]\s+)([a-zà-ú])/gu, (_m, antes_, letra) => antes_ + letra.toLocaleUpperCase('pt-BR'));
+    if (depois !== antes) {
+      depois = limparFala(depois, tema);
+      obj[c] = depois;
+      emendas.push(`${c}: trocas literais do canal ("o senhor" → "você", "Short" → "vídeo")`);
+    }
+  }
+
+  const depoisDaEmenda = validar(obj);
+  console.log(`\n⛑️  "${nome}" ACEITE A CONTRAGOSTO em vez de a corrida morrer (tentativa ${melhor.tentativa} era a menos má):`);
+  emendas.forEach((e) => console.log(`     · emendado — ${e}`));
+  depoisDaEmenda.erros.forEach((e) => console.log(`     · fica assim — ${e}`));
+  console.log('');
+
+  return {
+    ...obj,
+    _avisos: [
+      ...(depoisDaEmenda.avisos || []),
+      ...depoisDaEmenda.erros.map((e) => `aceite a contragosto: ${e}`),
+    ],
+    _tentativa: melhor.tentativa,
+    _palavras: depoisDaEmenda.palavras,
+    _aceiteAContragosto: depoisDaEmenda.erros,
+  };
 }
 
 // ═══ A ORQUESTRAÇÃO ═════════════════════════════════════════════════════════
@@ -887,6 +960,14 @@ export async function gerarMapa(t, { proibidas = [], tentativas = 3, cenarios = 
   const prompt = buildPromptMapa(t, proibidas, gastos);
   const exigencias = [];
   let corretivo = '';
+
+  /**
+   * 🔴 A MELHOR TENTATIVA GUARDA-SE — 09/08/2026, ordem do dono.
+   * A 1ª versão deitava fora tudo o que reprovasse e no fim lançava um erro. Foi assim
+   * que a corrida automática de sábado 08/08 morreu e o canal ficou sem vídeo ao
+   * domingo. Agora a menos má fica de lado, e no fim tenta-se consertá-la.
+   */
+  let melhor = null;
 
   for (let i = 1; i <= tentativas; i++) {
     if (i > 1) await dormir(8000);
@@ -901,11 +982,43 @@ export async function gerarMapa(t, { proibidas = [], tentativas = 3, cenarios = 
       continue;
     }
     const v = validarMapa(mapa);
-    if (v.ok) return { mapa, avisos: v.avisos, tentativa: i };
+    if (v.ok) return { mapa, avisos: v.avisos, tentativa: i, consertos: [] };
+    if (!melhor || v.erros.length < melhor.v.erros.length) melhor = { mapa, v, tentativa: i };
     corretivo = montarCorretivo(acumular(exigencias, v.erros));
     console.log(`  ⚠ mapa — tentativa ${i}/${tentativas} reprovada: ${v.erros.join(' | ')}`);
   }
-  throw new Error(`o mapa não passou na validação após ${tentativas} tentativas`);
+
+  /**
+   * ⛑️ O SOCORRO: consertar em vez de desistir.
+   * Só se desiste quando falta a matéria-prima (sem promessa, sem os três capítulos,
+   * sem valores) — e mesmo aí quem desiste é deste TEMA, não do vídeo: o robô salta
+   * para o tema seguinte da fila. Ver `consertarMapa` em `lib/schema-longo.js`.
+   */
+  if (!melhor) throw new Error(`o modelo não devolveu um único mapa legível em ${tentativas} tentativas`);
+
+  const { mapa: consertado, consertos, fatal } = consertarMapa(melhor.mapa, { proibidas });
+  if (fatal) throw new Error(`o mapa não tem como ser consertado: ${fatal}`);
+
+  const depois = validarMapa(consertado);
+  console.log(`\n⛑️  O MAPA FOI CONSERTADO em vez de a corrida morrer (tentativa ${melhor.tentativa} era a menos má):`);
+  consertos.forEach((c) => console.log(`     · ${c}`));
+  if (!depois.ok) {
+    /**
+     * ⚠️ **O QUE SOBRA É GOSTO, e por isso passa.** O que se consertava por código já
+     * foi consertado; o que fica é do género "o fecho responde mal à promessa" — não
+     * há conserto honesto por regex, e um vídeo pior é melhor do que vídeo nenhum.
+     * Fica escrito no registo porque a emenda certa é no PEDIDO, nunca na trava.
+     */
+    console.log('  ⚠️ e ainda assim sobra isto, que é conteúdo e não estrutura:');
+    depois.erros.forEach((e) => console.log(`     · ${e}`));
+  }
+  console.log('');
+  return {
+    mapa: consertado,
+    avisos: [...(depois.avisos || []), ...depois.erros.map((e) => `aceite a contragosto: ${e}`)],
+    tentativa: melhor.tentativa,
+    consertos,
+  };
 }
 
 /** As duas últimas frases de um texto — a âncora que o bloco seguinte recebe. */

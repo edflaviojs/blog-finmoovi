@@ -680,6 +680,182 @@ export function validarMapa(mapa) {
   return { ok: erros.length === 0, erros, avisos };
 }
 
+/**
+ * 🔴 O MAPA REPROVADO PASSA A SER CONSERTADO, NÃO DEITADO FORA — 09/08/2026.
+ *
+ * ═══ POR QUE ISTO EXISTE ═══
+ * Ordem do dono, ao descobrir que o canal ficou sem vídeo no domingo: *"temos que
+ * criar travas que impeçam um vídeo de sair por motivo irrisório… se existe algum
+ * bloqueio ele pula para o próximo tema, próxima palavra-chave, próxima imagem, etc.
+ * Mas nunca parar e não gerar o vídeo."*
+ *
+ * A corrida automática de sábado 08/08 morreu assim: `Error: o mapa não passou na
+ * validação após 3 tentativas`. As duas queixas eram uma soma mal escrita e um fecho
+ * que não repetia palavra nenhuma da promessa. **Por isso não houve vídeo no domingo.**
+ *
+ * ═══ A REGRA QUE SEPARA O QUE SE CONSERTA DO QUE NÃO SE CONSERTA ═══
+ * É a regra da casa ([[verdade-versus-gosto]]), aplicada ao contrário do costume:
+ *  · **estrutura partida → conserta-se**, porque há uma forma LEGAL de a arrumar que o
+ *    próprio esquema já prevê (uma soma que não bate deita-se fora, e `"somas": []` é
+ *    resposta certa — está escrito no pedido). Nada é inventado.
+ *  · **gosto fraco → aceita-se com aviso**, porque não há conserto honesto por código.
+ *    Um fecho que responde mal é um vídeo pior; um vídeo pior é melhor do que nenhum.
+ *  · **falta a matéria-prima → FATAL**, e só aqui é que se desiste deste tema. Sem
+ *    promessa, sem os três capítulos ou sem lista de valores não há vídeo para fazer —
+ *    e quem trata disso é o robô, saltando para o tema seguinte da fila.
+ *
+ * ⚠️ **NADA AQUI INVENTA NÚMERO NEM FRASE PARA O ECRÃ.** Só apaga o que está errado,
+ * corta o que passou do tamanho e escolhe entre coisas que já existem. `oQueAcrescenta`
+ * e `oQueFicaEmAberto` são a única coisa preenchida — e são campos que nunca aparecem
+ * no vídeo: servem só para orientar quem escreve o capítulo seguinte.
+ *
+ * ⚠️ **CONSERTAR NÃO É APROVAR.** A lista de consertos vai para o registo e para o
+ * resumo da corrida. Um mapa que precisou de cinco consertos é um sinal de que o
+ * pedido precisa de emenda — e o sítio de emendar é o prompt, nunca a trava.
+ * Ver [[prompt-versus-validador]].
+ */
+export function consertarMapa(mapa, { proibidas = [] } = {}) {
+  const consertos = [];
+  if (!mapa || typeof mapa !== 'object') {
+    return { mapa, consertos, fatal: 'o mapa não é um objeto' };
+  }
+  const m = JSON.parse(JSON.stringify(mapa));
+
+  // ── 1. A promessa: uma frase, sem "?", até 25 palavras ──
+  let promessa = String(m.promessa || '').trim();
+  if (!promessa) return { mapa: m, consertos, fatal: 'sem "promessa" — não há vídeo sem uma coisa prometida' };
+  const frases = frasesDe(promessa);
+  if (frases.length > 1) {
+    promessa = frases[0];
+    consertos.push('a promessa tinha mais de uma frase — ficou a primeira');
+  }
+  if (/\?\s*$/.test(promessa)) {
+    promessa = `${promessa.replace(/\?+\s*$/, '')}.`;
+    consertos.push('a promessa terminava em "?" — a pergunta é a capa, a promessa é o que se entrega');
+  }
+  if (contarPalavras(promessa) > 25) {
+    promessa = `${promessa.split(/\s+/).slice(0, 25).join(' ').replace(/[,;:]$/, '')}.`;
+    consertos.push('a promessa passava das 25 palavras — foi cortada');
+  }
+  m.promessa = promessa;
+
+  // ── 2. A imagem da capa: uma do catálogo, de preferência não gasta ──
+  const catalogo = METAPHORS.filter((x) => x !== 'clique-link');
+  if (!catalogo.includes(String(m.fioCondutor || ''))) {
+    const livre = catalogo.find((x) => !proibidas.includes(x)) || catalogo[0];
+    consertos.push(`"fioCondutor" era ${JSON.stringify(m.fioCondutor)}, que não existe — passou a "${livre}"`);
+    m.fioCondutor = livre;
+  }
+
+  // ── 3. Os capítulos: são três, e cada um tem de trazer o seu ──
+  const caps = Array.isArray(m.capitulos) ? m.capitulos.filter((c) => c && String(c.titulo || '').trim()) : [];
+  if (caps.length !== NUM_CAPITULOS) {
+    return { mapa: m, consertos, fatal: `vieram ${caps.length} capítulos com título e são precisos ${NUM_CAPITULOS}` };
+  }
+  const vistos = [];
+  caps.forEach((c, i) => {
+    const n = i + 1;
+    let titulo = String(c.titulo).trim();
+    if (contarPalavras(titulo) > MAX_PALAVRAS_TITULO) {
+      titulo = titulo.split(/\s+/).slice(0, MAX_PALAVRAS_TITULO).join(' ').replace(/[,;:–—-]$/, '');
+      consertos.push(`capítulo ${n}: o título passava das ${MAX_PALAVRAS_TITULO} palavras — foi cortado`);
+    }
+    const chave = semAcento(titulo).toLowerCase();
+    if (vistos.includes(chave)) consertos.push(`⚠️ capítulo ${n}: o título repete o de outro capítulo — fica como está, é conteúdo`);
+    vistos.push(chave);
+    c.titulo = titulo;
+    // ⚠️ Estes dois nunca aparecem no ecrã: orientam quem escreve o capítulo seguinte.
+    if (!String(c.oQueAcrescenta || '').trim()) {
+      c.oQueAcrescenta = titulo;
+      consertos.push(`capítulo ${n}: sem "oQueAcrescenta" — ficou o título (não vai ao ecrã)`);
+    }
+    if (!String(c.oQueFicaEmAberto || '').trim()) {
+      c.oQueFicaEmAberto = titulo;
+      consertos.push(`capítulo ${n}: sem "oQueFicaEmAberto" — ficou o título (não vai ao ecrã)`);
+    }
+  });
+  m.capitulos = caps;
+
+  // ── 4. Os valores: fora os que não são dinheiro nomeado ──
+  const valores = (Array.isArray(m.valores) ? m.valores : []).filter((v) => {
+    const nome = String((v && v.nome) || '').trim();
+    const num = Number(String((v && v.valor) ?? '').toString().replace(',', '.'));
+    return nome && Number.isFinite(num) && num >= 10;
+  });
+  if (valores.length !== (Array.isArray(m.valores) ? m.valores.length : 0)) {
+    consertos.push(`${(m.valores || []).length - valores.length} valor(es) sem nome ou sem número foram deitados fora`);
+  }
+  if (!valores.length) return { mapa: m, consertos, fatal: 'sem lista de valores — não há dinheiro nenhum para o vídeo dizer' };
+  m.valores = valores;
+  const numeros = valores.map((v) => Number(String(v.valor).replace(',', '.')));
+
+  // ── 5. O número-espinha tem de ser UM DELES ──
+  const espinha = Number(m.numeroEspinha);
+  if (!Number.isFinite(espinha) || !numeros.some((v) => Math.abs(v - espinha) <= 0.001)) {
+    const maior = Math.max(...numeros);
+    consertos.push(`o "numeroEspinha" era ${JSON.stringify(m.numeroEspinha)} e não estava na lista — passou a ${maior}`);
+    m.numeroEspinha = maior;
+  }
+
+  /**
+   * ── 6. As somas: a que não bate vai fora ──
+   * ⚠️ **Deitar fora é o conserto certo, e não um remendo.** O próprio pedido diz, com
+   * estas palavras: *"Se a história não tiver nenhuma conta que bata, escreva
+   * `"somas": []`. Uma lista vazia é resposta certa."* Uma soma errada no ecrã seria o
+   * narrador a somar mal à frente de quem ouve — muito pior do que não somar.
+   */
+  const acharValor = (nome) => {
+    const achado = valores.find((v) => String(v.nome).trim().toLowerCase() === String(nome).trim().toLowerCase());
+    return achado ? Number(String(achado.valor).replace(',', '.')) : NaN;
+  };
+  const somas = (Array.isArray(m.somas) ? m.somas : []).filter((s, i) => {
+    const partes = Array.isArray(s && s.de) ? s.de : [];
+    const nomeTotal = String((s && s.da) || '').trim();
+    if (partes.length < 2 || !nomeTotal) {
+      consertos.push(`somas[${i}] estava pela metade — foi deitada fora`);
+      return false;
+    }
+    const parcelas = partes.map(acharValor);
+    const total = acharValor(nomeTotal);
+    if (parcelas.some((v) => !Number.isFinite(v)) || !Number.isFinite(total)) {
+      consertos.push(`somas[${i}] apontava para nomes que não estão na lista — foi deitada fora`);
+      return false;
+    }
+    if (Math.abs(parcelas.reduce((a, b) => a + b, 0) - total) > 0.001) {
+      consertos.push(`somas[${i}] não batia certo — foi deitada fora`);
+      return false;
+    }
+    return true;
+  });
+  m.somas = somas;
+
+  // ── 7. A conta do cartão só existe se estiver na lista ──
+  const nomeDoCartao = String(m.contaDoCartao || '').trim();
+  if (nomeDoCartao && !Number.isFinite(acharValor(nomeDoCartao))) {
+    consertos.push(`"contaDoCartao" apontava para "${nomeDoCartao}", que não está na lista — ficou sem ficha de juros`);
+    m.contaDoCartao = null;
+  }
+
+  // ── 8. Onde o app aparece ──
+  const ondeDemo = Number(m.capituloDaDemonstracao);
+  if (!Number.isInteger(ondeDemo) || ondeDemo < 1 || ondeDemo > NUM_CAPITULOS) {
+    consertos.push(`"capituloDaDemonstracao" era ${JSON.stringify(m.capituloDaDemonstracao)} — passou a 2 (mostrar o problema antes da ferramenta)`);
+    m.capituloDaDemonstracao = 2;
+  }
+
+  /**
+   * ── 9. O laço que promete um próximo vídeo é MENTIRA — apaga-se ──
+   * Sem laço o fecho inventa a provocação sozinho, e o próprio validador trata isso
+   * como aviso, não como erro. Prometer um vídeo que não existe é que não se faz.
+   */
+  if (String(m.lacoAberto || '').trim() && PROMESSA_DE_PROXIMO.test(String(m.lacoAberto))) {
+    consertos.push('o "lacoAberto" prometia um próximo vídeo (que não existe) — foi apagado');
+    m.lacoAberto = '';
+  }
+
+  return { mapa: m, consertos, fatal: null };
+}
+
 // ─── travas que valem em QUALQUER bloco falado ───────────────────────────────
 
 /**
