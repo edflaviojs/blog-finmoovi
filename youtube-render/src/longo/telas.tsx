@@ -157,7 +157,61 @@ export function forcaDaBatida(frameLocal: number, batidas: number[], fps: number
   return Math.max(0, Math.min(1, maior));
 }
 
-export const CartaoDeNumero: React.FC<{ valor: number; rotulo?: string; frames?: number }> = ({ valor, rotulo, frames = 360 }) => {
+/**
+ * 🔴 O ATOR ENTRA NAS CENAS PARADAS — 09/08/2026, ordem do dono: *"pode fazer, põe o
+ * ator da metáfora nessas cenas"*.
+ *
+ * ═══ POR QUE ELE, E NÃO MAIS DECORAÇÃO ═══
+ * Medidas as oito famílias do vídeo longo, a que pontua mais alto é `metafora`, com
+ * **5,26** — mais do dobro das três mais paradas (conta 1,81 · numero 2,35 · frase 2,40).
+ * E a razão é óbvia quando se olha o fotograma: ali há **um boneco que se mexe**, com
+ * braços, pernas e um objeto na mão. Nas outras há uma coisa quieta com enfeite à volta.
+ *
+ * ⚠️ **Isto veio depois de eu falhar DUAS vezes a tentar resolver por decoração** — halo
+ * a respirar, anéis, fundo animado: 1,25 → 1,32 → 1,39, quando o alvo é 3,25. A lição
+ * está escrita no `CartaoDeNumero`: **o que move a agulha é o CONTEÚDO mexer-se.**
+ *
+ * ═══ O QUE ELE NÃO FAZ ═══
+ * ⚠️ **Não é peça nova.** São as MESMAS 32 coreografias que já desenham a capa e as duas
+ * cenas de metáfora — e que o vídeo longo usava em 2 cenas de 30. Está tudo pago e
+ * parado desde 01/08. Isto liga-as, não as reescreve.
+ *
+ * ⚠️ **Não rouba o palco ao conteúdo.** Ele ocupa a faixa da ESQUERDA e o número, a
+ * conta ou a frase deslocam-se para a direita — o ecrã é 16:9 e tem largura de sobra.
+ * Numa cena de número o herói continua a ser o número.
+ *
+ * ⚠️ **E não entra onde não cabe.** Sem fio condutor no vídeo, não há ator: devolve
+ * nada e a cena fica como estava. Nunca se inventa uma metáfora que a história não tem.
+ */
+export const AtorLateral: React.FC<{ fio?: string | null; frames: number; largura?: number }> = ({ fio, frames, largura = 700 }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  if (!fio) return null;
+  const entra = spring({ frame, fps, config: { damping: 18, mass: 0.8 } });
+  /**
+   * ⚠️ A ESCALA SAI DA LARGURA PEDIDA, e o chão é ancorado como na `Metafora`: o palco
+   * é retrato (1240×1560) dentro de um ecrã deitado, e sem âncora os pés do boneco
+   * caem por baixo da legenda. Ver a nota longa em `Metafora` — é a mesma armadilha.
+   */
+  const escala = (largura / PALCO_W) * interpolate(entra, [0, 1], [0.94, 1]);
+  const alturaReal = PALCO_H * escala;
+  const CHAO_NO_PALCO = 0.94;
+  const CHAO_NO_ECRA = 838;
+  // deriva lenta: mesmo o ator ganha com não ficar ancorado ao pixel durante 12 segundos
+  const deriva = interpolate(frame, [0, Math.max(1, frames)], [0, -16]);
+  return (
+    <div style={{
+      position: 'absolute', left: 0, top: CHAO_NO_ECRA - CHAO_NO_PALCO * alturaReal + deriva,
+      width: PALCO_W * escala, height: alturaReal, opacity: entra * 0.95, overflow: 'hidden',
+    }}>
+      <div style={{ position: 'absolute', top: 0, left: 0, transformOrigin: 'top left', transform: `scale(${escala})` }}>
+        <CoreografiaDaCapa metaphor={fio} life={frames} />
+      </div>
+    </div>
+  );
+};
+
+export const CartaoDeNumero: React.FC<{ valor: number; rotulo?: string; frames?: number; fio?: string | null }> = ({ valor, rotulo, frames = 360, fio = null }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const conta = spring({ frame, fps, delay: 8, config: { damping: 200, mass: 1.1 } });
@@ -218,6 +272,10 @@ export const CartaoDeNumero: React.FC<{ valor: number; rotulo?: string; frames?:
        * coreografias que viviam oito segundos na capa e nunca mais apareciam.
        */}
       <FundoAbstrato variante={0} frames={frames} />
+      {/* ♦ O ATOR À ESQUERDA e o número deslocado para a direita — ver `AtorLateral`.
+          ⚠️ O deslocamento só existe QUANDO há ator: sem fio condutor a cena tem de
+          continuar exactamente como estava, centrada. */}
+      <AtorLateral fio={fio} frames={frames} largura={660} />
       {/* o halo por trás do número — dá-lhe peso sem lhe pôr uma caixa à volta */}
       <div style={{
         position: 'absolute', width: 1180, height: 1180, borderRadius: '50%',
@@ -243,7 +301,9 @@ export const CartaoDeNumero: React.FC<{ valor: number; rotulo?: string; frames?:
           }} />
         </>
       ) : null}
-      <div style={{ textAlign: 'center', transform: `scale(${interpolate(pop, [0, 1], [0.88, 1]) * (1 + batida * 0.055)})` }}>
+      {/* ⚠️ `marginLeft` e nao `translateX`: o halo e os aneis ficam onde estao (eles
+          pertencem ao ecra, nao ao numero), e so o bloco do numero anda. */}
+      <div style={{ textAlign: 'center', marginLeft: fio ? 430 : 0, transform: `scale(${interpolate(pop, [0, 1], [0.88, 1]) * (1 + batida * 0.055)})` }}>
         {rotulo ? (
           <div style={{
             fontFamily: BODY, fontWeight: 800, fontSize: 40, letterSpacing: 2,
@@ -251,7 +311,15 @@ export const CartaoDeNumero: React.FC<{ valor: number; rotulo?: string; frames?:
           }}>{rotulo}</div>
         ) : null}
         <div style={{
-          fontFamily: DISPLAY, fontWeight: 900, fontSize: 230, lineHeight: 1,
+          fontFamily: DISPLAY,
+          fontWeight: 900,
+          /**
+           * ⚠️ **196 QUANDO HÁ ATOR — e este número saiu do FOTOGRAMA, não da conta.**
+           * A 230 com o ator ao lado, "R$ 1.200" acabava a 50px da borda direita. O ecrã
+           * tem 1920 e o ator come os primeiros 660; o que sobra tem de caber lá dentro.
+           */
+          fontSize: fio ? 196 : 230,
+          lineHeight: 1,
           ...gradientText, filter: 'drop-shadow(0 0 60px rgba(139,92,246,0.45))',
         }}>{dinheiro(Math.round(valor * conta))}</div>
         <div style={{

@@ -569,7 +569,13 @@ const CenaLonga: React.FC<{
   cena: LongScene; frames: number; palavras?: { word: string; start: number; end: number }[];
   /** quantas palavras iniciais a CAPA já mostrou — só a cena 1 as tem. Ver `PalavrasNaTela`. */
   pular?: number;
-}> = ({ cena, frames, palavras, pular = 0 }) => {
+  /**
+   * ♦ 09/08/2026 — A METÁFORA DO VÍDEO, para o ator entrar nas cenas paradas.
+   * ⚠️ Vem do GUIÃO e não da cena: é o fio que atravessa o vídeo inteiro, o mesmo que a
+   * capa e as duas cenas de metáfora já usam. Ver `AtorLateral` em `longo/telas.tsx`.
+   */
+  fioDoVideo?: string | null;
+}> = ({ cena, frames, palavras, pular = 0, fioDoVideo = null }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const v = cena.visual;
@@ -582,7 +588,7 @@ const CenaLonga: React.FC<{
     switch (v.tipo) {
       // ⚠️ `frames` é NOVO aqui (09/08): sem a duração da cena, as batidas do cartão
       //    caíam num relógio que não é o dele. Ver `batidasDaCena` em `longo/telas.tsx`.
-      case 'numero': return <CartaoDeNumero valor={v.valor ?? 0} rotulo={v.rotulo} frames={frames} />;
+      case 'numero': return <CartaoDeNumero valor={v.valor ?? 0} rotulo={v.rotulo} frames={frames} fio={fioDoVideo} />;
       case 'conta': return <CartaoDaConta linhas={v.linhas ?? []} frames={frames} />;
       case 'app': return <TelaDoApp valor={v.valor ?? 0} rotulo={v.rotulo} passo={v.passo} />;
       case 'frase':
@@ -795,7 +801,7 @@ export const Long: React.FC<{ script?: LongScript; timing?: LongTiming; slug?: s
             const t = timingDe(cena.id);
             return (
               <Sequence key={`c${i}`} from={inicios[i]} durationInFrames={frames[i]}>
-                <CenaLonga cena={cena} frames={frames[i]} palavras={t?.words} pular={i === 0 ? palavrasDaPergunta : 0} />
+                <CenaLonga cena={cena} frames={frames[i]} palavras={t?.words} pular={i === 0 ? palavrasDaPergunta : 0} fioDoVideo={script.fioCondutor} />
                 {t?.audioFile ? <Audio src={staticFile(t.audioFile)} /> : null}
                 {/* ⚠️ OS SONS — o dono: *"não é só mostrar letras, ícones conforme as
                     palavras são ditas, mas sim usarmos também os sons sincronizados com
