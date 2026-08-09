@@ -1,4 +1,14 @@
-import { AbsoluteFill, Sequence, useVideoConfig } from 'remotion';
+import { AbsoluteFill, Sequence, useCurrentFrame, useVideoConfig } from 'remotion';
+/**
+ * 🔴 OS SOCOS CHEGAM AO DE 50 SEGUNDOS — 09/08/2026, ordem do dono.
+ *
+ * Eram o único formato sem eles: o de 16s tinha-os desde 07/08 e o longo desde 08/08.
+ * ⚠️ **IMPORTADO, nunca copiado.** Tudo em `impacto.tsx` já tem o formato vertical por
+ * omissão, que é o deste vídeo — não há um número para converter.
+ */
+import {
+  IMPACTO_POR_CENA_50S, IMPACTO_FRAMES, SequenciaDeImpacto, TexturaDoLoop, tremorNoFrame,
+} from './impacto';
 import { TransitionSeries, linearTiming } from '@remotion/transitions';
 import type { TransitionPresentation } from '@remotion/transitions';
 import { fade } from '@remotion/transitions/fade';
@@ -328,6 +338,48 @@ export const Short: React.FC<{ script?: ShortScript; timing?: ShortTiming; slug?
   const introFrames = introFramesFor(script);
   const capaFrames = capaFramesFor(script);
 
+  /**
+   * 🔴 OS SOCOS — 09/08/2026. Qual cena leva qual está em `IMPACTO_POR_CENA_50S`, com
+   * o porquê de cada um. Aqui decide-se só ONDE, no tempo, cada um bate.
+   *
+   * ⚠️ **`masterStarts` é relativo ao `<Sequence from={introFrames}>`, e os socos vivem
+   * FORA dele** — por isso somam-se os dois. Sem essa soma cada soco batia 0,9s cedo
+   * demais, que é quase um terço do tempo em que ele existe no ecrã.
+   *
+   * ⚠️ **O primeiro NÃO pode bater no fotograma 2 como no de 16s.** Aqui a capa fica
+   * 223 fotogramas (7,4s) por cima de tudo — um soco por baixo dela era um soco que
+   * ninguém via, e ainda por cima o único que a pessoa ia receber nos primeiros dez
+   * segundos, que são os que decidem se ela fica.
+   *
+   * ⚠️ Os outros esperam `TRANSITION_FRAMES + 4` pela mesma razão que no de 16s: a meio
+   * de uma transição vêem-se as DUAS cenas ao mesmo tempo, e o clarão sublinharia a
+   * mistura em vez da cena nova.
+   */
+  const socos = IMPACTO_POR_CENA_50S
+    .map((imp, i) => {
+      if (!imp || i >= masterStarts.length) return null;
+      const inicio = i === 0
+        ? Math.max(introFrames + masterStarts[0], capaFrames) + 4
+        : introFrames + masterStarts[i] + TRANSITION_FRAMES + 4;
+      return { ...imp, inicio };
+    })
+    .filter(Boolean) as Array<{ tipo: 'alerta' | 'virada'; som: string; inicio: number }>;
+
+  /**
+   * O TREMOR ACOMPANHA O SOCO — e abana o CONTEÚDO, não o efeito. Se abanasse o clarão,
+   * ele saía das bordas e via-se o fundo por baixo. É a mesma nota do de 16s.
+   */
+  const frameAtual = useCurrentFrame();
+  const abana = socos.reduce(
+    (acc, s) => {
+      const local = frameAtual - s.inicio;
+      if (local < 0 || local >= IMPACTO_FRAMES) return acc;
+      const t = tremorNoFrame(local);
+      return { x: acc.x + t.x, y: acc.y + t.y };
+    },
+    { x: 0, y: 0 },
+  );
+
   // Cooldown GLOBAL de SFX de shot (v3.4): calcula, pro vídeo INTEIRO, quais disparos
   // sobrevivem ao cooldown de 8s entre cenas (evita o mesmo som repetir cedo demais
   // mesmo atravessando cenas). `masterStarts` já é o frame GLOBAL do trilho mestre.
@@ -342,6 +394,12 @@ export const Short: React.FC<{ script?: ShortScript; timing?: ShortTiming; slug?
   return (
     <AbsoluteFill>
       <Background />
+      {/* ⚠️ A TEXTURA VEM LOGO A SEGUIR AO FUNDO, e a ordem no JSX é que decide: irmãos
+          posteriores pintam por cima, e ela tem de ficar POR TRÁS de tudo. É moldura de
+          canto, palavra fantasma e poeira — não diz nada, só tira o vídeo do "roxo liso"
+          que o dono viu na primeira prévia do de 16s. É a mesma peça, sem uma linha nova:
+          `impacto.tsx` tem o formato vertical por omissão, e este vídeo é vertical. */}
+      <TexturaDoLoop palavra={script.keyword || script.term || ''} />
       <BackgroundMusic ficheiro={(script as { music?: { ficheiro?: string } }).music?.ficheiro} />
       {/* ⚠️ A `<Watermark />` mudou-se para depois da capa — ver o comentário lá. */}
       <Sequence from={introFrames}>
@@ -355,7 +413,12 @@ export const Short: React.FC<{ script?: ShortScript; timing?: ShortTiming; slug?
         {/* Trilho de progresso: também fora do TransitionSeries — atravessa o vídeo
             inteiro. `masterStarts` já são os frames globais das viradas de cena. */}
         <TrilhoProgresso totalFrames={contentFrames} marcas={masterStarts} />
-        <TransitionSeries>{children}</TransitionSeries>
+        {/* O tremor abana as CENAS, e só elas. Num invólucro próprio para não abanar o
+            fundo (que a abanar mostraria a borda), nem a etiqueta, nem o trilho — que
+            são elementos fixos e a tremer pareceriam soltos. */}
+        <AbsoluteFill style={{ transform: `translate(${abana.x}px, ${abana.y}px)` }}>
+          <TransitionSeries>{children}</TransitionSeries>
+        </AbsoluteFill>
         {/* Cartao DEPOIS do TransitionSeries de proposito: nas cenas de shot `app` a
             moldura do celular desce ate ~y1310 e passava POR CIMA do cartao (visto
             no frame 400 de 31/07). A parte baixa da tela do celular e vazia, entao
@@ -438,6 +501,14 @@ export const Short: React.FC<{ script?: ShortScript; timing?: ShortTiming; slug?
       <Sequence from={introFrames + contentFrames} durationInFrames={SIGNATURE_FRAMES}>
         <SignatureOutro />
       </Sequence>
+      {/* 🔴 OS SOCOS, POR CIMA DE TUDO — inclusive da legenda e da capa. São 0,4s cada;
+          nesse tempo o alerta É o vídeo. Vêm por último no JSX porque é a ordem que
+          decide quem pinta em cima de quem — é a mesma arrumação do de 16s e do longo.
+          ⚠️ E ficam FORA do `<Sequence from={introFrames}>`: os `inicio` já são frames
+          globais (ver o cálculo lá em cima). */}
+      {socos.map((s, i) => (
+        <SequenciaDeImpacto key={`imp${i}`} from={s.inicio} tipo={s.tipo} som={s.som} />
+      ))}
     </AbsoluteFill>
   );
 };

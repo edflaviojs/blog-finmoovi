@@ -80,6 +80,55 @@ export const IMPACTO_POR_CENA: Array<{ tipo: TipoDeImpacto; som: string } | null
 ];
 
 /**
+ * 🔴 OS SOCOS DO SHORT DE 50 SEGUNDOS — 09/08/2026, ordem do dono.
+ *
+ * ═══ POR QUE POR PAPEL, E NÃO POR RELÓGIO ═══
+ * O vídeo longo usa `socosDoVideoLongo`, que conta segundos, e faz sentido lá: ele tem
+ * seis minutos e um número variável de cenas. **O de 50s não precisa disso** — ele tem
+ * sempre a MESMA forma dramática, imposta pelo gerador de roteiro:
+ *
+ *     1 hook · 2 beat · 3 beat · 4 beat · 5 cta · 6 outro
+ *
+ * Logo o sítio de cada soco sai da ESTRUTURA, exactamente como no de 16s. É a mesma
+ * razão escrita ali em cima: pedir ao modelo "marque o momento negativo" seria abrir
+ * outra vez a porta que já custou planos apagados.
+ *
+ * ═══ POR QUE TRÊS, E POR QUE ESTES TRÊS ═══
+ * A regra da casa é **um soco a cada 12-15 segundos**; em 52 segundos isso dá 3.
+ *
+ * · **hook** 🔴 — o susto que abre. ⚠️ Ele NÃO pode bater no fotograma 2 como no de
+ *   16s: aqui a CAPA fica no ecrã 223 fotogramas (7,4s) e um soco por baixo dela era
+ *   um soco que ninguém via. Quem o adia é o `Short.tsx`, para o instante em que ela
+ *   levanta.
+ *
+ *   ⚠️ **E isso quer dizer que ele quase nunca cai na cena 1 — cai na 2.** O hook tem
+ *   5 a 7 segundos e a capa tem 7,4: quando ela sai, o hook já acabou. **Não é um
+ *   defeito, é o objectivo:** o soco tem de bater onde a pessoa decide se fica, e nos
+ *   nossos Shorts **metade sai aos 14 segundos** (medido, §33.2). Medido no roteiro
+ *   `inflacao-rouba`: bate aos **7,6s**. A cena é secundária; o segundo é que não.
+ * · **beat 2** — sem soco PRÓPRIO, e é por isso que a lista o marca `null`: ele já
+ *   recebe, na prática, o soco adiado do hook. Dois na mesma cena e o vermelho deixa
+ *   de assustar e passa a papel de parede.
+ * · **beat 3** 🔴 — o custo. É aqui que o roteiro diz quanto se perde.
+ * · **beat 4** 🟢 — a virada, onde o app entra e resolve. O verde só tem força porque
+ *   vem depois de dois vermelhos: **é o contraste que faz o efeito, não a repetição.**
+ * · **cta** e **outro** — LIMPOS. A chamada é o único momento do vídeo em que se pede
+ *   alguma coisa, e o fecho é o bordão da marca. Um clarão por cima de qualquer um dos
+ *   dois rouba a atenção de exactamente aquilo que eles existem para conseguir.
+ *
+ * ⚠️ Um roteiro com mais ou menos cenas do que seis não parte nada: quem usa isto lê
+ * pelo índice e ignora o que passar do fim da lista.
+ */
+export const IMPACTO_POR_CENA_50S: Array<{ tipo: TipoDeImpacto; som: string } | null> = [
+  { tipo: 'alerta', som: 'warning.ogg' },  // 1 hook  — o susto que abre
+  null,                                     // 2 beat  — deixa respirar
+  { tipo: 'alerta', som: 'thud.ogg' },     // 3 beat  — o custo
+  { tipo: 'virada', som: 'kaching.ogg' },  // 4 beat  — o app resolve
+  null,                                     // 5 cta   — não se rouba a chamada
+  null,                                     // 6 outro — o bordão fecha sozinho
+];
+
+/**
  * O TREMOR. Uma sacudidela que decai — o mesmo princípio de um impacto de verdade:
  * bate forte, ressoa, pára. Devolve-se em pixels para quem chama aplicar num
  * `transform`, porque o tremor tem de abanar o CONTEÚDO, não o efeito.
