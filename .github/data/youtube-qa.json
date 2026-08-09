@@ -34,5 +34,23 @@
     ],
     "veredito": "1. **LOOP — 8/10.** O primeiro e o último quadro têm o mesmo cenário e a mesma frase central (“Pare de adiar reparos”), então o corte tende a ser discreto. Porém, a legenda inferior é diferente: “O que acontece” no início vs. “o azulejo solto” no final. Pelos quadros, não dá para saber se o movimento fecha perfeitamente.\n\n2. **FAIXA DE BAIXO — 5/10.** Há texto importante bem baixo em praticamente todos os quadros. As legendas ficam na região que pode ser coberta pelos elementos da interface do Shorts/Reels.\n\n3. **TEXTO POR CIMA DE TEXTO — 7/10.** Não há sobreposição grave evidente, mas algumas legendas aparecem fragmentadas entre palavras, como “anos e fingia” e “dele cedo.” Isso parece depender de animação/transição.\n\n4. **LEGIBILIDADE — 8/10.** Os textos principais são grandes, fortes e com bom contraste. As legendas inferiores são menores e mais vulneráveis à interface do celular.\n\n5. **TELA VIVA OU VAZIA — 6/10.** Há bastante espaço vazio, principalmente na metade inferior. O fundo decorativo ajuda, mas ainda existe sensação de área subutilizada.\n\n6. **COERÊNCIA — 8/10.** A identidade visual é muito consistente: mesma paleta, logo, tipografia e ampulheta. A sequência parece avançar uma ideia, embora alguns quadros tenham pouca informação visual nova.\n\n7. **TESTE CENTRAL — 7/10.** Parece mais um **vídeo animado com cards** do que slides, mas os quadros parados revelam uma estrutura bastante estática e repetitiva.\n\nNOTA GERAL: 7,3\nPROBLEMA 1: Texto das legendas muito baixo, especialmente no quadro de 12,8s.\nPROBLEMA 2: Primeiro e último quadro não são idênticos por causa da legenda inferior, embora o elemento central seja igual.\nPROBLEMA 3: Muito espaço vazio na parte inferior de vários quadros.\nPRIMEIRA COISA A MUDAR: Subir todas as legendas para uma área segura acima da interface do Shorts/Reels.",
     "quando": "2026-08-09T05:32:38.436Z"
+  },
+  {
+    "slug": "loop-fatura-maior-se-parar",
+    "formato": "loop16",
+    "nota": 8.5,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      2.3,
+      4.6,
+      6.9,
+      9.2,
+      11.5,
+      13.9,
+      16.1
+    ],
+    "veredito": "1. **O LOOP — 10/10**  \nPrimeiro e último quadro são praticamente iguais: **“Confira suas contas”**, no mesmo local e com a mesma composição. Excelente para loop invisível.\n\n2. **A FAIXA DE BAIXO — 9/10**  \nNão há informação importante colada no limite inferior. As legendas ficam acima da área mais crítica da interface.\n\n3. **TEXTO POR CIMA DE TEXTO — 9/10**  \nNão vejo frases sobrepostas nem palavras cortadas. Os destaques coloridos estão bem separados do restante do texto.\n\n4. **LEGIBILIDADE — 9/10**  \nTexto principal grande, branco e com alto contraste. As legendas são menores, mas ainda parecem adequadas para celular.\n\n5. **TELA VIVA OU VAZIA? — 7/10**  \nHá bastante espaço roxo vazio em vários quadros, principalmente abaixo das legendas. Funciona como estética, mas poderia ter mais elementos visuais.\n\n6. **COERÊNCIA — 8/10**  \nOs quadros claramente pertencem ao mesmo vídeo e a sequência conta uma pequena história. Porém, algumas legendas aparecem como fragmentos isolados.\n\n7. **TESTE CENTRAL — 7/10**  \nPelos quadros parados, **parece mais um vídeo baseado em slides animados do que um vídeo profissional dinâmico**; a identidade visual é boa, mas a composição se repete muito.\n\nNOTA GERAL: 8,5\nPROBLEMA 1: Excesso de espaço vazio, principalmente na metade inferior dos quadros, visível em vários segundos.\nPROBLEMA 2: A repetição do mesmo layout faz o conteúdo parecer mais “slide” do que vídeo, especialmente nos quadros 0,1s, 6,9s e 16,1s.\nPROBLEMA 3: As legendas em alguns momentos são fragmentos curtos (“maior e eu”, “banco e confiro”), o que reduz a força visual isoladamente.\nPRIMEIRA COISA A MUDAR: Aproveitar melhor o espaço vazio com elementos visuais ou variações de composição, sem mexer no excelente encaixe do primeiro e último quadro.",
+    "quando": "2026-08-09T05:36:34.463Z"
   }
 ]
