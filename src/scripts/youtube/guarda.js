@@ -1,0 +1,229 @@
+/**
+ * 👮 O GUARDA DO CANAL — pergunta ao YouTube se está tudo como foi combinado (09/08/2026).
+ *
+ * ═══ POR QUE EXISTE ═══
+ * Em 09/08 o canal não teve vídeo longo ao domingo, por duas razões que ninguém viu:
+ * o vídeo piloto **passou a público sozinho** (e a estreia marcada deixou de existir) e
+ * a primeira corrida automática do robô **falhou**. Os dois sinais existiam — bastava
+ * perguntar ao YouTube — mas viviam dentro do separador "Actions", que ninguém abre
+ * todos os dias.
+ *
+ * ⚠️ **O problema não foi o estado ter mudado. Foi ninguém ter dado por isso.**
+ *
+ * ═══ A PERGUNTA É DIFERENTE PARA CADA FORMATO, E ISSO É O PONTO ═══
+ * Uma regra só para todos os vídeos daria alarmes falsos todos os dias.
+ *
+ * | formato | como sobe | o que aqui se exige |
+ * |---|---|---|
+ * | **longo, antes da estreia** | privado, com `publishAt` | continuar **privado** e à MESMA hora |
+ * | **longo, depois da estreia** | o YouTube torna-o público | continuar **público** |
+ * | **50s e 16s** | já público (§ auditoria de 03/08) | continuar **público** |
+ *
+ * E há uma terceira pergunta, que nenhum programa fazia: **saiu o vídeo de ontem?**
+ * Foi assim que o canal ficou dois dias sem vídeo em 07/08 sem ninguém reparar.
+ *
+ * ═══ O QUE ELE SE RECUSA A FAZER ═══
+ * **Não republica, não remarca, não muda privacidade nenhuma.** Essas são decisões do
+ * dono. Um guarda que arruma sozinho o que não entende faz mais estrago do que conserto.
+ * Ele só pergunta, e grita.
+ *
+ * ⚠️ **Ele também não escreve no repositório e não gasta IA nem créditos de imagem.**
+ *
+ * Saída: **0** = está tudo bem · **9** = há alarme (o robô lê isto para mandar email).
+ *
+ * Uso:
+ *   node src/scripts/youtube/guarda.js
+ *   node src/scripts/youtube/guarda.js --so-longo
+ */
+
+import { readFileSync, existsSync, appendFileSync } from 'node:fs';
+import { join } from 'node:path';
+import { pathToFileURL } from 'node:url';
+/**
+ * ⚠️ IMPORTADO, NUNCA COPIADO — e os dois são seguros de importar: têm a guarda do
+ * `chamadoPeloNome`, portanto importá-los não publica nem sobe coisa nenhuma. Copiar a
+ * renovação da chave ou a leitura do estado seria garantir que um dia divergiam, que é
+ * o modo de falha crónico desta casa.
+ */
+import { getAccessToken } from './upload-short.js';
+import { estadoNoYouTube, emPortugues } from './upload-longo.js';
+
+const ROOT = process.cwd();
+const CADERNO_LONGOS = join(ROOT, '.github', 'data', 'youtube-longos-published.json');
+const CADERNO_SHORTS = join(ROOT, '.github', 'data', 'youtube-published.json');
+
+/**
+ * Quantas horas para trás se aceita como "saiu recentemente".
+ *
+ * ⚠️ **36 e não 24, e a diferença é entre um alarme útil e um alarme que se ignora.**
+ * O guarda corre às 08:10 universais (05h10 no Brasil) e as publicações do dia são
+ * TODAS depois disso: o de 16s às 11:40 e 21:40, o de 50s às 15:00 e 20:00. Portanto
+ * ele está sempre a olhar para o dia ANTERIOR. Com 24 horas, um atraso normal do
+ * relógio do GitHub (que aqui já chegou a 112 minutos) dava alarme sem nada estar mal.
+ * Com 36, só grita quando um dia inteiro passou em branco.
+ */
+const JANELA_HORAS = 36;
+
+const args = Object.fromEntries(
+  process.argv.slice(2).filter((a) => a.startsWith('--')).map((a) => {
+    const [k, ...v] = a.slice(2).split('=');
+    return [k, v.join('=') || true];
+  }),
+);
+
+const log = (m) => console.log(m);
+
+function lerJson(caminho) {
+  try { return existsSync(caminho) ? JSON.parse(readFileSync(caminho, 'utf-8')) : {}; }
+  catch { return {}; }
+}
+
+/** Os nomes por que o dono conhece cada formato. */
+const NOME_DO_FORMATO = {
+  longo: 'o vídeo longo',
+  short50: 'o Short de 50s',
+  loop16: 'o Short de 16s em loop',
+};
+
+/**
+ * Tudo o que o canal diz ter publicado, dos dois cadernos, numa lista só.
+ *
+ * ⚠️ **`formato` em falta é `short50`**, e não é um palpite: o campo só passou a ser
+ * escrito em 07/08/2026, e até aí só existia o de 50 segundos. É a mesma regra que o
+ * `loadRecentPublishedContext` já usa — escrita nos dois sítios porque é a mesma verdade.
+ */
+export function tudoOQuePublicamos({
+  shorts = lerJson(CADERNO_SHORTS), longos = lerJson(CADERNO_LONGOS),
+} = {}) {
+  const lista = [];
+  for (const [slug, v] of Object.entries(longos)) {
+    if (v && v.videoId) lista.push({ slug, formato: 'longo', ...v });
+  }
+  for (const [slug, v] of Object.entries(shorts)) {
+    if (v && v.videoId) lista.push({ slug, formato: v.formato || 'short50', ...v });
+  }
+  return lista;
+}
+
+/**
+ * O que o YouTube devia dizer de cada vídeo, e o que diz.
+ * Devolve a lista de alarmes — vazia quando está tudo bem.
+ */
+export function conferirEstados(lista, estados, agora = Date.now()) {
+  const alarmes = [];
+  for (const v of lista) {
+    const e = estados[v.videoId];
+    const nome = NOME_DO_FORMATO[v.formato] || v.formato;
+    if (!e) {
+      alarmes.push(`🔴 ${nome} "${v.slug}" DESAPARECEU do YouTube (${v.videoId}) — foi apagado ou bloqueado?`);
+      continue;
+    }
+    /**
+     * O longo antes da hora: privado E à hora combinada. É este o caso que fez o canal
+     * ficar sem vídeo — o vídeo estava marcado, deixou de estar, e a estreia combinada
+     * nunca ia acontecer.
+     */
+    const porEstrear = v.formato === 'longo' && v.publishAt && new Date(v.publishAt).getTime() > agora;
+    if (porEstrear) {
+      const quando = emPortugues(new Date(v.publishAt));
+      if (e.privacidade !== 'private' || !e.estreia) {
+        alarmes.push(
+          `🔴 ${nome} "${v.slug}" DEIXOU DE ESTAR AGENDADO. Está "${e.privacidade}"`
+          + `${e.estreia ? '' : ' e sem estreia marcada'}, mas o combinado era ${quando}. https://youtu.be/${v.videoId}`,
+        );
+      } else if (Math.abs(new Date(v.publishAt).getTime() - new Date(e.estreia).getTime()) > 60000) {
+        alarmes.push(`⚠️ ${nome} "${v.slug}": o caderno diz ${quando}, o YouTube diz ${emPortugues(new Date(e.estreia))}.`);
+      } else {
+        log(`   ✅ ${nome} "${v.slug}" — privado, a estrear ${quando}`);
+      }
+      continue;
+    }
+    // Todo o resto já devia estar no ar.
+    if (e.privacidade !== 'public') {
+      alarmes.push(`🔴 ${nome} "${v.slug}" saiu do ar — está "${e.privacidade}". https://youtu.be/${v.videoId}`);
+    }
+  }
+  return alarmes;
+}
+
+/**
+ * 🔴 SAIU O VÍDEO DE ONTEM? — a pergunta que nenhum programa fazia.
+ *
+ * Em 07/08 o canal esteve **dois dias sem vídeo** e ninguém deu por isso até alguém
+ * abrir o Studio. Um robô que falha em silêncio e um robô que nunca correu produzem
+ * exactamente o mesmo nada.
+ *
+ * ⚠️ **Só se cobra o que tem relógio diário.** O vídeo longo é semanal e por isso não
+ * entra aqui — quem trata dele é a conferência da estreia, mais acima.
+ */
+export function conferirORitmo(lista, agora = Date.now(), janelaHoras = JANELA_HORAS) {
+  const alarmes = [];
+  const limite = agora - janelaHoras * 3600 * 1000;
+  for (const formato of ['short50', 'loop16']) {
+    const doFormato = lista.filter((v) => v.formato === formato);
+    // Um formato que nunca publicou nada não está atrasado — ainda não começou.
+    if (!doFormato.length) continue;
+    const recente = doFormato.filter((v) => v.uploadedAt && new Date(v.uploadedAt).getTime() >= limite);
+    if (recente.length) {
+      log(`   ✅ ${NOME_DO_FORMATO[formato]} — ${recente.length} publicado(s) nas últimas ${janelaHoras}h`);
+      continue;
+    }
+    const ultimo = doFormato
+      .filter((v) => v.uploadedAt)
+      .sort((a, b) => new Date(b.uploadedAt) - new Date(a.uploadedAt))[0];
+    const horas = ultimo ? Math.round((agora - new Date(ultimo.uploadedAt).getTime()) / 3600000) : null;
+    alarmes.push(
+      `🔴 ${NOME_DO_FORMATO[formato]} NÃO SAIU nas últimas ${janelaHoras} horas.`
+      + (ultimo ? ` O último foi "${ultimo.slug}", há ${horas} horas.` : ' Não há nenhum no caderno.'),
+    );
+  }
+  return alarmes;
+}
+
+async function principal() {
+  const lista = tudoOQuePublicamos()
+    .filter((v) => !args['so-longo'] || v.formato === 'longo');
+  log(`\n=== 👮 O GUARDA DO CANAL — ${lista.length} vídeo(s) no caderno ===\n`);
+  if (!lista.length) { log('📭 não há nada publicado para vigiar.\n'); return; }
+
+  let chave;
+  try { chave = await getAccessToken(); } catch (err) {
+    log(`🔴 sem chaves do YouTube (${err.message}) — o guarda não consegue perguntar nada.`);
+    log('   Isto É um alarme: um guarda cego não vigia.');
+    process.exit(9);
+  }
+
+  /**
+   * ⚠️ ÀS FATIAS DE 50, que é o tecto da API do YouTube por chamada. Com um pedido por
+   * vídeo seriam dezenas de chamadas por dia por nada.
+   */
+  const estados = {};
+  const ids = lista.map((v) => v.videoId);
+  for (let i = 0; i < ids.length; i += 50) {
+    Object.assign(estados, await estadoNoYouTube(ids.slice(i, i + 50), chave));
+  }
+
+  const alarmes = [
+    ...conferirEstados(lista, estados),
+    ...(args['so-longo'] ? [] : conferirORitmo(lista)),
+  ];
+
+  if (!alarmes.length) {
+    log('\n✅ está tudo como foi combinado.\n');
+    return;
+  }
+  log(`\n🔴 ${alarmes.length} ALARME(S):\n`);
+  alarmes.forEach((a) => log(`   · ${a}`));
+  log('');
+  // ⚠️ O robô lê isto para montar o email. Uma linha por alarme, sem enfeites.
+  if (process.env.GITHUB_OUTPUT) {
+    appendFileSync(process.env.GITHUB_OUTPUT, `alarmes<<FIM\n${alarmes.join('\n')}\nFIM\n`);
+  }
+  process.exit(9);
+}
+
+/** ⚠️ Só corre quando é chamado pelo nome — importar não pergunta nada ao YouTube. */
+const chamadoPeloNome = process.argv[1] && pathToFileURL(process.argv[1]).href === import.meta.url;
+if (chamadoPeloNome) {
+  principal().catch((err) => { console.error(`\n❌ ${err.message}\n`); process.exit(1); });
+}

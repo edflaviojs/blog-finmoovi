@@ -1,6 +1,6 @@
-name: YouTube — Guarda do vídeo longo (diário)
+name: YouTube — Guarda do canal (diário)
 
-# ♦ O GUARDA DO AGENDAMENTO — 09/08/2026, IMPLEMENTACAO20 §64.
+# ♦ O GUARDA DO CANAL — 09/08/2026, IMPLEMENTACAO20 §64.
 #
 # ═══ POR QUE ESTE ROBÔ EXISTE ═══
 # O vídeo piloto subiu a 05/08 privado, com a estreia marcada para domingo 09/08 às 19h,
@@ -13,11 +13,17 @@ name: YouTube — Guarda do vídeo longo (diário)
 # em silêncio.
 #
 # ═══ O QUE ELE FAZ, E O QUE SE RECUSA A FAZER ═══
-# Pergunta ao YOUTUBE — nunca ao caderno — se cada vídeo longo à espera de estrear
-# continua privado e com a mesma hora. Se alguma coisa saiu do sítio, **manda email ao
-# dono e fica vermelho**. Não republica, não remarca, não muda privacidade nenhuma:
-# essas são decisões dele. Um guarda que arruma sozinho o que não entende é pior do que
-# guarda nenhum.
+# Pergunta ao YOUTUBE — nunca ao caderno — sobre **todos os vídeos do canal**. E a
+# pergunta é DIFERENTE para cada formato, senão dava alarmes falsos todos os dias:
+#   · o vídeo LONGO antes da estreia → continua privado e à mesma hora?
+#   · o LONGO já estreado, e os Shorts de 50s e de 16s → continuam PÚBLICOS e no ar?
+#     (eles sobem já públicos desde a auditoria da API de 03/08)
+#   · e a terceira, que nenhum programa fazia: **saiu o vídeo de ontem?** Foi assim que
+#     o canal esteve dois dias sem vídeo em 07/08 sem ninguém reparar.
+#
+# Se alguma coisa saiu do sítio, **manda email ao dono e fica vermelho**. Não republica,
+# não remarca, não muda privacidade nenhuma: essas são decisões dele. Um guarda que
+# arruma sozinho o que não entende é pior do que guarda nenhum.
 #
 # ⚠️ **VERMELHO É DE PROPÓSITO.** É a segunda campainha: o email do Resend chega à
 # caixa do dono, e o email do GitHub chega a quem segue o repositório. Uma delas há-de
@@ -58,7 +64,7 @@ jobs:
       - name: Instalar dependências
         run: npm ci
 
-      - name: Perguntar ao YouTube se está tudo como foi combinado
+      - name: Perguntar ao YouTube se está tudo como foi combinado (longos, 50s e 16s)
         id: vigiar
         env:
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
@@ -66,7 +72,7 @@ jobs:
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
         run: |
           set +e
-          node src/scripts/youtube/upload-longo.js --vigiar
+          node src/scripts/youtube/guarda.js
           CODE=$?
           set -e
           # ⚠️ CONFERIR O RESULTADO, NUNCA SÓ O CÓDIGO — mas aqui o código É o resultado,
@@ -90,10 +96,10 @@ jobs:
           DIGEST_TO: ${{ vars.DIGEST_TO || 'finmoovi@gmail.com' }}
           ALARMES: ${{ steps.vigiar.outputs.alarmes }}
           CORRIDA: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-        run: node .github/scripts/avisar-guarda-longo.mjs
+        run: node .github/scripts/avisar-guarda-canal.mjs
 
       - name: Ficar vermelho para o aviso não passar despercebido
         if: steps.vigiar.outputs.alarme == 'sim'
         run: |
-          echo "::error::o vídeo longo não está como foi combinado — ver o email e o registo acima."
+          echo "::error::há vídeo(s) fora do combinado — ver o email e o registo acima."
           exit 1

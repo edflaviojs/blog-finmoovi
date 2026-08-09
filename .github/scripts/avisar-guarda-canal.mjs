@@ -1,8 +1,9 @@
 /**
- * O EMAIL DO GUARDA DO VÍDEO LONGO — 09/08/2026, IMPLEMENTACAO20 §64.
+ * O EMAIL DO GUARDA DO CANAL — 09/08/2026, IMPLEMENTACAO20 §64.
  *
  * ═══ POR QUE ISTO EXISTE ═══
  * O vídeo piloto deixou de estar agendado sozinho e o canal ficou sem vídeo ao domingo.
+ * Hoje o guarda olha o canal INTEIRO — o longo, o Short de 50s e o de 16s.
  * O sinal existiu — o YouTube respondia "PÚBLICO" a quem lhe perguntasse — mas ficou
  * dentro do separador "Actions", que ninguém abre todos os dias.
  *
@@ -37,7 +38,7 @@ const esc = (s) => String(s).replace(/[&<>]/g, (c) => ({ '&': '&amp;', '<': '&lt
 const html = `<!doctype html><html lang="pt-BR"><body style="margin:0;background:#0d1117;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
   <div style="max-width:600px;margin:0 auto;padding:32px 24px;color:#e6edf3;">
     <p style="margin:0 0 4px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#8b949e;">FinMoovi · canal do YouTube</p>
-    <h1 style="margin:0 0 16px;font-size:22px;line-height:1.3;color:#f85149;">O vídeo longo não está como foi combinado</h1>
+    <h1 style="margin:0 0 16px;font-size:22px;line-height:1.3;color:#f85149;">Há vídeo fora do combinado no canal</h1>
     <p style="margin:0 0 20px;font-size:15px;line-height:1.6;color:#c9d1d9;">
       Todos os dias eu pergunto ao YouTube se o próximo vídeo longo continua privado e com a
       estreia marcada. Hoje a resposta não bateu certo:
@@ -61,14 +62,14 @@ const html = `<!doctype html><html lang="pt-BR"><body style="margin:0;background
   </div>
 </body></html>`;
 
-const texto = `O vídeo longo não está como foi combinado.\n\n${alarmes.map((a) => `· ${a}`).join('\n')}\n\n${CORRIDA}`;
+const texto = `Há vídeo fora do combinado no canal.\n\n${alarmes.map((a) => `· ${a}`).join('\n')}\n\n${CORRIDA}`;
 
 try {
   const res = await fetch('https://api.resend.com/emails', {
     method: 'POST',
     headers: { Authorization: `Bearer ${CHAVE}`, 'Content-Type': 'application/json' },
     body: JSON.stringify({
-      from: DE, to: [PARA], subject: '🔴 FinMoovi — o vídeo longo saiu do agendamento', html, text: texto,
+      from: DE, to: [PARA], subject: '🔴 FinMoovi — há vídeo fora do combinado no canal', html, text: texto,
     }),
   });
   if (!res.ok) {
