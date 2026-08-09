@@ -409,10 +409,29 @@ export const Short: React.FC<{ script?: ShortScript; timing?: ShortTiming; slug?
    * seco primeiro e o alarme depois, são duas batidas de uma frase, não a mesma batida
    * duas vezes.
    */
+  /**
+   * 🔴 E O PRIMEIRO PASSOU PARA O PRINCÍPIO — 09/08/2026, ordem do dono:
+   * *"achei também que o primeiro soco demora muito, tem que acontecer mais cedo, assim
+   * como o de 16s"*.
+   *
+   * ⚠️ **E eu estava errado no que escrevi antes.** Tinha justificado o atraso com *"um
+   * soco por baixo da capa era um soco que ninguém via"* — **falso, e provei-o eu mesmo
+   * sem dar por isso**: os socos são os últimos filhos do JSX, portanto pintam POR CIMA
+   * da capa. O fotograma 127 renderizado mostra o clarão e o glifo por cima dela.
+   * A minha razão nunca existiu; o que existia era o receio.
+   *
+   * Agora ele bate no fotograma 3, o MESMO do de 16s — e junta-se à pancada de abertura
+   * que já lá estava (o clarão branco e o `boom`). Deixam de ser dois acontecimentos
+   * próximos e passam a ser um só, maior.
+   *
+   * ⚠️ **Os três repartem a capa quase por igual** — 0,1s · 3,5s · 5,9s. Dá uma batida
+   * a cada ~2,9 segundos, que é exactamente a cadência do de 16s que o dono aprovou.
+   */
   const socoDaCapa = capaFrames > 0
     ? [
-      { tipo: 'alerta' as const, som: 'thud.ogg', inicio: Math.round(capaFrames * 0.55) },
-      { tipo: 'alerta' as const, som: 'warning.ogg', inicio: Math.round(capaFrames * 0.79) },
+      { tipo: 'alerta' as const, som: 'thud.ogg', inicio: 3 },
+      { tipo: 'alerta' as const, som: 'warning.ogg', inicio: Math.round(capaFrames * 0.47) },
+      { tipo: 'alerta' as const, som: 'thud.ogg', inicio: Math.round(capaFrames * 0.79) },
     ]
     : [];
 
@@ -559,7 +578,7 @@ export const Short: React.FC<{ script?: ShortScript; timing?: ShortTiming; slug?
           ⚠️ E ficam FORA do `<Sequence from={introFrames}>`: os `inicio` já são frames
           globais (ver o cálculo lá em cima). */}
       {todosOsSocos.map((s, i) => (
-        <SequenciaDeImpacto key={`imp${i}`} from={s.inicio} tipo={s.tipo} som={s.som} />
+        <SequenciaDeImpacto key={`imp${i}`} from={s.inicio} tipo={s.tipo} som={s.som} glifo={i} />
       ))}
     </AbsoluteFill>
   );

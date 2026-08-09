@@ -206,7 +206,7 @@ export const Short16: React.FC<{ script?: ShortScript; timing?: ShortTiming; slu
           o alerta É o vídeo. Vêm por último no JSX porque é a ordem que decide quem
           pinta em cima de quem. */}
       {socos.map((s, i) => (
-        <SequenciaDeImpacto key={`imp${i}`} from={s.inicio} tipo={s.tipo} som={s.som} />
+        <SequenciaDeImpacto key={`imp${i}`} from={s.inicio} tipo={s.tipo} som={s.som} glifo={i} />
       ))}
       {/* E acaba aqui. Sem assinatura, sem bordão, sem "se inscreve" — quem decide a
           duração é o `loopTotalFrames` no Root, e o YouTube reinicia-o sozinho. */}

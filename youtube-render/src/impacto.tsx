@@ -63,6 +63,69 @@ const EscudoDaVirada: React.FC<{ cor: string }> = ({ cor }) => (
 );
 
 /**
+ * 🔴 OS GLIFOS RODAM — 09/08/2026, ordem do dono.
+ *
+ * *"Achei que os ícones estão muito repetitivos, tem que mudar os ícones e deixar isso
+ * como padrão para os outros."*
+ *
+ * E ele tem razão: até aqui **havia UM glifo por tipo**. Todo soco de alerta era o mesmo
+ * triângulo, no mesmo sítio, com o mesmo vermelho. No Short de 50s eles chegam a bater a
+ * **1,8 segundos de distância** — dois desenhos idênticos tão perto lêem-se como um
+ * defeito, não como ritmo.
+ *
+ * ⚠️ **É o mesmo defeito que ele apanhou hoje na capa dos vídeos**, noutro sítio: uma
+ * coisa boa, repetida sem variar, deixa de ser boa. A cura é a mesma — um catálogo e
+ * uma rotação.
+ *
+ * ⚠️ **O QUE NÃO MUDA, E É O QUE FAZ O EFEITO:** a cor. `#ff1f3d` continua a ser o
+ * intruso que não está na paleta da marca, e o verde continua a ser só da virada. O que
+ * roda é o DESENHO; o significado (vermelho = problema, verde = ganho) é sagrado.
+ *
+ * ⚠️ **Todos com o mesmo peso visual:** traço branco de 4, preenchimento cheio, e a
+ * mesma caixa de 100×100. Um glifo mais leve que os outros faria o soco parecer mais
+ * fraco naquela vez — e o ritmo mede-se pela batida, não pelo desenho.
+ */
+const SetaQueDesce: React.FC<{ cor: string }> = ({ cor }) => (
+  <svg width="230" height="230" viewBox="0 0 100 100" fill="none">
+    <circle cx="50" cy="50" r="44" fill={cor} stroke="#ffffff" strokeWidth="4" />
+    <path d="M50 22 V64 M32 48 L50 68 L68 48" stroke="#ffffff" strokeWidth="11" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+  </svg>
+);
+
+const CruzDoErro: React.FC<{ cor: string }> = ({ cor }) => (
+  <svg width="230" height="230" viewBox="0 0 100 100" fill="none">
+    <rect x="8" y="8" width="84" height="84" rx="22" fill={cor} stroke="#ffffff" strokeWidth="4" />
+    <path d="M34 34 L66 66 M66 34 L34 66" stroke="#ffffff" strokeWidth="12" strokeLinecap="round" />
+  </svg>
+);
+
+const RaioDoSusto: React.FC<{ cor: string }> = ({ cor }) => (
+  <svg width="230" height="230" viewBox="0 0 100 100" fill="none">
+    <circle cx="50" cy="50" r="44" fill={cor} stroke="#ffffff" strokeWidth="4" />
+    <path d="M56 16 L30 54 H47 L44 84 L70 46 H53 Z" fill="#ffffff" />
+  </svg>
+);
+
+const SetaQueSobe: React.FC<{ cor: string }> = ({ cor }) => (
+  <svg width="230" height="230" viewBox="0 0 100 100" fill="none">
+    <circle cx="50" cy="50" r="44" fill={cor} stroke="#ffffff" strokeWidth="4" />
+    <path d="M50 78 V36 M32 52 L50 32 L68 52" stroke="#ffffff" strokeWidth="11" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+  </svg>
+);
+
+const CertoNoCirculo: React.FC<{ cor: string }> = ({ cor }) => (
+  <svg width="230" height="230" viewBox="0 0 100 100" fill="none">
+    <circle cx="50" cy="50" r="44" fill={cor} stroke="#ffffff" strokeWidth="4" />
+    <path d="M30 51 L44 66 L71 34" stroke="#ffffff" strokeWidth="12" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+  </svg>
+);
+
+/** ⚠️ A ORDEM É A DA RODA. O primeiro de cada lista é o que já existia — assim o
+ *  primeiro soco de qualquer vídeo continua a ser o desenho que o dono já aprovou. */
+export const GLIFOS_DE_ALERTA = [TrianguloDeAlerta, CruzDoErro, SetaQueDesce, RaioDoSusto];
+export const GLIFOS_DE_VIRADA = [EscudoDaVirada, CertoNoCirculo, SetaQueSobe];
+
+/**
  * O QUE ACONTECE EM CADA CENA — e repare que NÃO é a IA que decide.
  *
  * O Short de 16s tem sempre a mesma forma dramática (é o `roteiro-loop.js` que a
@@ -205,9 +268,12 @@ const ClaraoDeCor: React.FC<{ cor: string; halo: string; faixa: number }> = ({ c
 };
 
 /** O ícone que bate na tela: entra grande, esmaga, assenta, e sai. */
-const IconeQueBate: React.FC<{ tipo: TipoDeImpacto; cor: string; desvio: number; palco: number }> = ({ tipo, cor, desvio, palco }) => {
+const IconeQueBate: React.FC<{ tipo: TipoDeImpacto; cor: string; desvio: number; palco: number; glifo?: number }> = ({ tipo, cor, desvio, palco, glifo = 0 }) => {
   const frame = useCurrentFrame();
-  const Comp = tipo === 'alerta' ? TrianguloDeAlerta : EscudoDaVirada;
+  // A RODA DOS GLIFOS: o indice vem de quem chama (a posicao do soco no video), e o
+  // resto garante que nunca sai da lista por mais socos que haja.
+  const lista = tipo === 'alerta' ? GLIFOS_DE_ALERTA : GLIFOS_DE_VIRADA;
+  const Comp = lista[((glifo % lista.length) + lista.length) % lista.length];
 
   // chegada: de 2,6× para 1× em 4 fotogramas (rápido = peso)
   const escala = interpolate(frame, [0, 4, 6, IMPACTO_FRAMES], [2.6, 1, 1.1, 0.86], { extrapolateRight: 'clamp' });
@@ -252,14 +318,14 @@ const IconeQueBate: React.FC<{ tipo: TipoDeImpacto; cor: string; desvio: number;
  * UM SOCO COMPLETO: cor + ícone + som. O tremor NÃO vem daqui — quem abana é o
  * conteúdo, e por isso quem chama é que aplica o `tremorNoFrame`.
  */
-export const Impacto: React.FC<{ tipo: TipoDeImpacto; som: string; formato?: FormatoDoSoco }> = ({ tipo, som, formato = 'vertical' }) => {
+export const Impacto: React.FC<{ tipo: TipoDeImpacto; som: string; formato?: FormatoDoSoco; glifo?: number }> = ({ tipo, som, formato = 'vertical', glifo = 0 }) => {
   const cor = tipo === 'alerta' ? CORES_DE_IMPACTO.alerta : CORES_DE_IMPACTO.virada;
   const halo = tipo === 'alerta' ? CORES_DE_IMPACTO.quente : CORES_DE_IMPACTO.virada;
   const g = GEOMETRIA[formato];
   return (
     <>
       <ClaraoDeCor cor={cor} halo={halo} faixa={g.faixa} />
-      <IconeQueBate tipo={tipo} cor={cor} desvio={g.desvioDoIcone} palco={g.palco} />
+      <IconeQueBate tipo={tipo} cor={cor} desvio={g.desvioDoIcone} palco={g.palco} glifo={glifo} />
       {/* ⚠️ O som vive DENTRO da mesma sequência do visual: assim a batida e o estalo
           caem no MESMO fotograma. Separá-los foi o que já pôs som fora do sítio. */}
       <Audio src={staticFile(`sfx/${som}`)} volume={0.85} />
@@ -445,9 +511,13 @@ export const TexturaDoLoop: React.FC<{ palavra: string; formato?: FormatoDoSoco 
 );
 
 /** Reexportado para o Short16 e para o vídeo longo montarem as sequências sem repetir a conta. */
-export const SequenciaDeImpacto: React.FC<{ from: number; tipo: TipoDeImpacto; som: string; formato?: FormatoDoSoco }> = ({ from, tipo, som, formato = 'vertical' }) => (
+export const SequenciaDeImpacto: React.FC<{
+  from: number; tipo: TipoDeImpacto; som: string; formato?: FormatoDoSoco;
+  /** A posição deste soco no vídeo. É ela que roda o glifo — ver `GLIFOS_DE_ALERTA`. */
+  glifo?: number;
+}> = ({ from, tipo, som, formato = 'vertical', glifo = 0 }) => (
   <Sequence from={from} durationInFrames={IMPACTO_FRAMES}>
-    <Impacto tipo={tipo} som={som} formato={formato} />
+    <Impacto tipo={tipo} som={som} formato={formato} glifo={glifo} />
   </Sequence>
 );
 

@@ -807,9 +807,12 @@ export const Long: React.FC<{ script?: LongScript; timing?: LongTiming; slug?: s
         </TremorDosSocos>
 
         {/* ♦ OS SOCOS DE COR. Aqui dentro porque os seus fotogramas são os do conteúdo,
-            e DEPOIS das cenas porque o clarão tem de as tapar. Ver `socosDoVideoLongo`. */}
+            e DEPOIS das cenas porque o clarão tem de as tapar. Ver `socosDoVideoLongo`.
+            ⚠️ `glifo={i}` — a roda dos desenhos, ordem do dono em 09/08. Num vídeo de
+            seis minutos são ~24 socos: com um glifo só, era o mesmo triângulo vinte e
+            quatro vezes. Ver `GLIFOS_DE_ALERTA` em `impacto.tsx`. */}
         {socos.map((s, i) => (
-          <SequenciaDeImpacto key={`soco${i}`} from={s.frame} tipo={s.tipo} som={s.som} formato="deitado" />
+          <SequenciaDeImpacto key={`soco${i}`} from={s.frame} tipo={s.tipo} som={s.som} formato="deitado" glifo={i} />
         ))}
       </Sequence>
 
