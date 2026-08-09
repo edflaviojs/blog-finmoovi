@@ -44,7 +44,7 @@
  * outra. Este ficheiro sobe o vídeo longo, e é só isso que ele faz.
  */
 
-import { readFileSync, writeFileSync, existsSync, statSync, mkdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, statSync, mkdirSync, readdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { pathToFileURL } from 'node:url';
 /**
@@ -475,11 +475,32 @@ function gravarCaderno(dados) {
 }
 
 /** Onde está a capa deste vídeo, ou nada. */
-export function acharCapa(slug, existe = existsSync) {
+export function acharCapa(slug, existe = existsSync, listar = null) {
   for (const nome of NOMES_DA_CAPA) {
     const p = join(MANUS_DIR, slug, nome);
     if (existe(p)) return p;
   }
+  /**
+   * 🔴 A REDE POR BAIXO DOS NOMES FIXOS — 09/08/2026.
+   *
+   * Desde que a capa passou a levar o MOLDE no nome (`capa-heroi-central.jpg`, e são
+   * seis), a lista fixa lá em cima deixou de a encontrar. O resultado não seria um erro:
+   * seria o vídeo subir **sem miniatura** e o YouTube escolher um fotograma sozinho, em
+   * silêncio — que é exactamente o defeito de 08/08, outra vez, por outro caminho.
+   *
+   * ⚠️ **A lista fixa continua a mandar**, e é de propósito: é ela que o dono usa para
+   * dizer "é ESTA que vai ao ar" quando há várias. Isto só entra quando ela não achou
+   * nada, e nunca escolhe uma capa que esteja em quarentena — as recusadas chamam-se
+   * `recusada-*` precisamente para não caírem aqui.
+   */
+  try {
+    const ler = listar || readdirSync;
+    const pasta = join(MANUS_DIR, slug);
+    const candidatas = ler(pasta)
+      .filter((f) => /^capa-.+\.jpg$/i.test(f))
+      .sort();
+    if (candidatas.length) return join(pasta, candidatas[0]);
+  } catch { /* pasta não existe — não há capa, e isso já é dito por quem chama */ }
   return null;
 }
 

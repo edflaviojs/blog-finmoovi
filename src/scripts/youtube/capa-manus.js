@@ -50,6 +50,9 @@ import { fileURLToPath, pathToFileURL } from 'url';
 import { execFileSync } from 'child_process';
 import { creditos, pedirAgente, descarregar } from './lib/manus-client.js';
 import { assuntoCurto } from './lib/palavras.js';
+import {
+  MOLDES, escolherMolde, cenaDoFio, moldesGastos, guardarMolde,
+} from './lib/capas-do-longo.js';
 /**
  * ⚠️ IMPORTADO, NÃO COPIADO. O leitor de texto e o caminho do banco de imagens já vivem
  * no `fotos-longo.js`; uma segunda cópia divergia no dia em que alguém mexesse numa
@@ -124,74 +127,54 @@ BRAND SIGNATURE — this must read as a FinMoovi thumbnail at a glance:
 · faint concentric rings and a fine dot grid in the darkness, in the same violet;
 · in the TOP-LEFT corner, a small clean wordmark in a modern bold sans-serif reading exactly "FinMoovi", where "Fin" is white and "Moovi" is filled with the cyan-to-magenta gradient, preceded by a tiny rising-arrow spark icon in cyan and magenta.`;
 
-/** A CAPA. É o pedido do dono, adaptado: sem pessoa, antes/depois, vermelho contra verde. */
 /**
- * 🔴 O QUE ESTÁ NA CAPA TEM DE SER A HISTÓRIA DESTE VÍDEO — 09/08/2026.
+ * 🔴 A CAPA É A METÁFORA DO VÍDEO, DENTRO DE UM MOLDE QUE RODA — 09/08/2026.
  *
- * A 1ª versão trazia, escrito à mão, *"unpaid credit-card bills and bank statements"* e
- * um selo a dizer **"3 PASSOS"**. Eram os do vídeo PILOTO. Correr isto para um vídeo
- * sobre dois homens num ponto de ônibus dava uma miniatura de faturas de cartão — e,
- * como sempre nesta família de defeito, **o programa não falhava: devolvia uma imagem
- * bonita e errada**. É irmão do título cravado que se apanhou em 08/08.
+ * ═══ O QUE ESTAVA AQUI, E POR QUE ESTAVA ERRADO ═══
+ * Duas funções gémeas, `promptDaCapa` e `promptDaCapaDoCanal`, com a composição escrita
+ * à mão: **sempre** um antes/depois com divisória ao centro, **sempre** uma seta
+ * vermelha a descer à esquerda e uma verde a subir à direita, **sempre** notas de cem
+ * reais, **sempre** um selo a dizer "3 PASSOS". Postas lado a lado, as duas primeiras
+ * capas do canal eram a mesma imagem com outro texto.
  *
- * · o OBJETO só é uma fatura de cartão quando a história tem uma (`contaDoCartao`);
- * · o SELO do número vem do vídeo, e não existe se o vídeo não tiver número;
- * · o selo verde continua a dizer "3 PASSOS" porque isso é VERDADE em todos: o esqueleto
- *   da casa são três capítulos, e eles são os três passos. Se um dia deixarem de ser,
- *   é aqui que se muda.
+ * Palavras do dono: *"vejo que ele gerou uma thumb muito parecida com a thumb do vídeo
+ * passado… ele não está diversificando!"* E, quando lhe mostrei a primeira correcção:
+ * *"essa capa também está com o molde de comparação tipo antes e depois, e isso também
+ * tem que ser dinâmico — não é toda capa que vai dar certo nesse estilo."*
+ *
+ * ═══ O QUE ENTRA NO LUGAR ═══
+ * Duas coisas rodam, e são independentes uma da outra:
+ *   · **A CENA** é a metáfora que o vídeo já escolheu (`fioCondutor`). São 32, e a
+ *     janela anti-repetição do roteiro **já garante** que ela é diferente das dos
+ *     últimos 6 vídeos. Não foi preciso inventar sistema nenhum — herdou-se o que já
+ *     existia e nunca tinha sido usado na capa.
+ *   · **O MOLDE** é o enquadramento, e são seis — dos quais **só um compara**. Sai do
+ *     NOME do vídeo (determinista: o mesmo vídeo dá sempre a mesma capa) e evita os
+ *     moldes dos vídeos recentes.
+ *
+ * ⚠️ **O "3 PASSOS" saiu.** Era verdade, mas estava em todas as capas — e uma coisa
+ * verdadeira repetida em todas as capas é exactamente o que as faz parecerem-se. O selo
+ * do número fica, porque ele muda de vídeo para vídeo e é o que trava o dedo.
+ *
+ * ⚠️ **A ASSINATURA DO CANAL não roda**, e é de propósito: a paleta, a logo, o contraste
+ * e a legibilidade a 300 px são a MARCA. Se isso variar, o canal deixa de se reconhecer
+ * na lista. Varia a cena; fica a assinatura.
  */
-const seloVermelho = (selo) => (selo
-  ? `a small burning red badge on the left half reading exactly "R$ ${selo.valor} ${selo.rotulo}"`
-  : 'no badge on the left half');
+function promptDaCapa({ titulo, selo, molde, cena }) {
+  const badge = selo
+    ? `BADGE — ${molde.selos}, in dark glass outlined in red, reading exactly "R$ ${selo.valor} ${selo.rotulo}". Exactly ONE badge in the whole image.`
+    : 'BADGES — none. Do not add any badge, label, sticker or price tag anywhere.';
+  return `An ultra-high-definition 16K resolution cinematic YouTube thumbnail, 16:9 aspect ratio, 1280x720 pixels minimum, designed for maximum click-through rate on mobile. Dark premium tech aesthetic, glassmorphism, neon edge lighting, cinematic depth of field.
 
-const objetoDaHistoria = (temCartao) => (temCartao
-  ? 'unpaid credit-card bills and bank statements'
-  : 'household bills and banknotes');
+${molde.desenho(cena)}
 
-function promptDaCapa({ titulo, selo, variante = 'marca', temCartao = false }) {
-  if (variante === 'canal') return promptDaCapaDoCanal({ titulo, selo, temCartao });
-  const objeto = objetoDaHistoria(temCartao);
-  return `An ultra-high-definition 16K resolution cinematic YouTube thumbnail, 16:9 aspect ratio, 1280x720 pixels minimum, designed for maximum click-through rate on mobile.
+TYPOGRAPHY — bold heavy condensed sans-serif, ALL CAPS, across the upper third, in pure white with the last word filled by the cyan-to-magenta gradient (${PALETA.ciano} → ${PALETA.magenta}), reading exactly: "${titulo}"
 
-COMPOSITION — a dramatic BEFORE / AFTER split, divided by a thin diagonal beam of light running from top-right to bottom-left, glowing with a cyan-to-violet-to-magenta gradient (${PALETA.ciano} → ${PALETA.violeta} → ${PALETA.magenta}).
-
-LEFT HALF, THE BEFORE — a chaotic avalanche of ${objeto} tumbling out of a dark void, a heavy jagged red downward arrow smashing through them, cracked glass shards, angry crimson (${PALETA.vermelho}) neon rim-light, deep black shadows, a red alarm glow bleeding into the background.
-
-RIGHT HALF, THE AFTER — the same ${objeto}, now a single clean stack on a calm reflective surface, a bright emerald green (${PALETA.verde}) upward arrow rising out of it like a new shoot, soft green neon rim-light, orderly, a sense of relief and open air.
-
-BACKGROUND — near-black (${PALETA.fundo}) with subtle darker panels (${PALETA.painel}), a fine dot-grid texture, cinematic depth of field.
-
-TYPOGRAPHY — bold, heavy, minimalist condensed sans-serif, ALL CAPS, across the upper third, pure white with a thin red-to-green gradient underline, reading exactly: "${titulo}"
-
-BADGES — ${seloVermelho(selo)}; a small glowing green badge on the right half reading exactly "3 PASSOS".
+${badge}
 ${ASSINATURA_DO_CANAL}
 ${REGRAS_FIXAS}`;
 }
 
-/**
- * A VARIANTE EM QUE AS CORES DO CANAL MANDAM.
- * O vermelho e o verde ficam só onde carregam sentido — as duas setas e os dois selos —
- * e tudo o resto é a paleta do canal. É a capa mais "nossa" das duas, e a pergunta que
- * ela põe ao ouvido do dono é se continua a gritar o suficiente para ganhar o clique.
- */
-function promptDaCapaDoCanal({ titulo, selo, temCartao = false }) {
-  const objeto = temCartao ? 'credit-card bills and glass cards' : 'household bills and banknotes';
-  return `An ultra-high-definition 16K resolution cinematic YouTube thumbnail, 16:9 aspect ratio, 1280x720 pixels minimum, designed for maximum click-through rate on mobile. Dark premium tech aesthetic, glassmorphism, neon edge lighting.
-
-COMPOSITION — a BEFORE / AFTER split told almost entirely in the channel's own colours, divided by a bright vertical shard of light in the cyan-to-magenta gradient (${PALETA.ciano} → ${PALETA.violeta} → ${PALETA.magenta}) that flares where it meets the floor.
-
-LEFT HALF, THE BEFORE — a chaotic tumbling stack of ${objeto} rendered in cold dark violet and deep indigo, dissolving into shadow, lit from below by a single angry red (${PALETA.vermelho}) glow. One heavy jagged RED downward arrow cutting through them — the only strongly red object on this side.
-
-RIGHT HALF, THE AFTER — the same ${objeto}, now one clean orderly stack on a glossy reflective surface, rendered in the channel's cyan and violet neon, calm and precise. One bright GREEN (${PALETA.verde}) upward arrow rising out of the stack — the only strongly green object on this side.
-
-BACKGROUND — the channel's near-black blue (${PALETA.fundo}) with darker glass panels (${PALETA.painel}), concentric rings, a fine dot grid, and volumetric violet haze. Cinematic depth of field.
-
-TYPOGRAPHY — bold heavy condensed sans-serif, ALL CAPS, across the upper third, in pure white with the last word filled by the cyan-to-magenta gradient, reading exactly: "${titulo}"
-
-BADGES — ${selo ? `a compact glass badge outlined in red on the left reading exactly "R$ ${selo.valor} ${selo.rotulo}"` : 'no badge on the left'}; a compact glass badge outlined in green on the right reading exactly "3 PASSOS".
-${ASSINATURA_DO_CANAL}
-${REGRAS_FIXAS}`;
-}
 
 /** AS IMAGENS DO MEIO DO VÍDEO — as três que o dono aprovou, cada uma presa a uma cena. */
 function promptsDasImagens({ rotativoAoMes }) {
@@ -290,6 +273,13 @@ async function main() {
    * imagem já estar paga e descarregada. `node --check` não apanha isto — só correr.
    */
   let selo = null;
+  /**
+   * ⚠️ **AQUI FORA, pela MESMA razão do `selo` — e eu voltei a cair nela hoje.** Quem
+   * precisa do molde é o registo do caderno, que corre lá em baixo, depois de a imagem
+   * estar feita. Declarado dentro do `if`, dava `molde is not defined` no meio da
+   * corrida, com a capa já paga. `node --check` não apanha isto; só correr apanha.
+   */
+  let molde = MOLDES[0];
   if (so !== 'imagens') {
     /**
      * 🔴 O TÍTULO ESTAVA CRAVADO EM 'SAIR DO VERMELHO' — 08/08/2026.
@@ -337,12 +327,32 @@ async function main() {
       ? { valor: aMais, rotulo: 'A MAIS' }
       : (Number.isFinite(espinha) && espinha >= 10 ? { valor: espinha, rotulo: 'POR MÊS' } : null);
     if (!selo) console.log('   ⚠️ sem número no guião — a capa sai sem o selo vermelho (nada é inventado).');
-    const variante = args.variante && args.variante !== true ? String(args.variante) : 'marca';
+    /**
+     * 🔴 A CENA SAI DA METÁFORA DO VÍDEO, E O MOLDE RODA — 09/08/2026.
+     *
+     * ⚠️ **O `fioCondutor` está no plano montado desde sempre e nunca foi usado aqui.**
+     * É a peça que faltava: cada vídeo já escolhe uma das 32 metáforas, e a janela
+     * anti-repetição do roteiro já garante que ela não se repete em 6 vídeos. A capa
+     * herda isso de graça.
+     *
+     * ⚠️ **`--variante` mudou de significado, e é um upgrade honesto.** Antes escolhia
+     * entre duas capas escritas à mão ("marca" e "canal"); agora **força um molde** pelo
+     * nome (`--variante=o-detalhe`), para o dono poder pedir outro enquadramento sem
+     * mexer em código. Sem ela, quem escolhe é o nome do vídeo.
+     */
+    const fio = roteiro.fioCondutor || roteiro.mapa?.fioCondutor || null;
+    const forcado = args.variante && args.variante !== true ? String(args.variante) : null;
+    molde = (forcado && MOLDES.find((m) => m.nome === forcado)) || escolherMolde(slug, moldesGastos());
+    if (forcado && !MOLDES.find((m) => m.nome === forcado)) {
+      console.log(`   ⚠️ não há molde "${forcado}". Os que existem: ${MOLDES.map((m) => m.nome).join(', ')}. Vai o escolhido pelo nome do vídeo.`);
+    }
+    const cena = cenaDoFio(fio);
+    console.log(`   🎭 metáfora do vídeo: ${fio || '(nenhuma — vai a cena de reserva)'}`);
+    console.log(`   🖼️  molde: ${molde.nome}`);
     trabalhos.push({
-      ficheiro: variante === 'marca' ? 'capa' : `capa-${variante}`,
-      onde: `a miniatura do YouTube (variante "${variante}")`,
-      // ⚠️ As faturas de cartão só entram na capa se a HISTÓRIA tiver uma fatura de cartão.
-      prompt: promptDaCapa({ titulo, selo, variante, temCartao: Boolean(roteiro.mapa?.contaDoCartao) }),
+      ficheiro: `capa-${molde.nome}`,
+      onde: `a miniatura do YouTube (molde "${molde.nome}", metáfora "${fio || 'reserva'}")`,
+      prompt: promptDaCapa({ titulo, selo, molde, cena }),
     });
   }
   if (so !== 'capa') {
@@ -492,6 +502,12 @@ async function main() {
               const v = conferirSelo(paraOVideo);
               if (v.ok) {
                 console.log(`         ${v.porque.startsWith('⚠️') ? v.porque : `✅ ${v.porque}`}`);
+                /**
+                 * ⚠️ O molde só se dá por gasto quando a capa FICA — é o mesmo princípio
+                 * do caderno de cenas: guarda-se depois de a coisa existir, senão o
+                 * caderno passa a dizer que saiu um molde que ninguém chegou a ver.
+                 */
+                if (guardarMolde(slug, molde.nome)) console.log(`         📓 molde "${molde.nome}" guardado — os próximos vídeos vão evitá-lo`);
               } else {
                 console.log(`         ❌ RECUSADA — ${v.porque}`);
                 console.log('            Uma miniatura é a primeira coisa que se vê do canal; um número que o vídeo não diz fica lá para sempre.');
