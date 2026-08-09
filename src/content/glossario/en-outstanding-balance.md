@@ -4,6 +4,7 @@ definition: "What Outstanding balance is and how it shows up in your everyday mo
 title: "Outstanding balance - Financial Glossary"
 description: "What Outstanding balance is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/saldo-devedor.webp"
+imageAlt: "Golden coins and bar chart on dark platform with piggy bank and plant."
 category: "basico"
 tags: ["Outstanding balance", "glossary", "finance"]
 author: "FinMoovi"

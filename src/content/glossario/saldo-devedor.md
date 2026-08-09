@@ -4,6 +4,7 @@ definition: "O que é saldo devedor e como isso aparece no seu dia a dia — exp
 title: "saldo devedor - Glossário Financeiro"
 description: "O que é saldo devedor e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/saldo-devedor.webp"
+imageAlt: "Moedas douradas, gráfico de barras e cofrinho em frasco sobre fundo roxo."
 category: "basico"
 tags: ["saldo devedor", "glossário", "finanças"]
 author: "FinMoovi"
