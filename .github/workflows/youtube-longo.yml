@@ -378,11 +378,18 @@ jobs:
             exit 0
           fi
           tesseract --version | head -1
-          set -e
-          node src/scripts/youtube/fotos-longo.js --slug="$SLUG"
+          # 🔴 AS FOTOGRAFIAS NUNCA PODEM MATAR A CORRIDA — 09/08/2026, ordem do dono.
+          # Em 08/08 uma imagem recusada (o cartaz veio sem o número) derrubou este passo
+          # e o vídeo do domingo não existiu. Uma fotografia é um ENFEITE: o vídeo sai
+          # sem ela, com as ilustrações e as palavras. Sem `set -e` de propósito.
+          node src/scripts/youtube/fotos-longo.js --slug="$SLUG" || \
+            echo "::warning::as fotografias não correram bem — o vídeo sai sem elas, e isso é melhor do que não haver vídeo."
           # As fotografias entram no guião — portanto o montador corre outra vez, agora
           # com elas. É determinista: o resto do vídeo sai exatamente igual.
-          node src/scripts/youtube/montar-longo.js --slug="$SLUG"
+          # ⚠️ Se ele falhar aqui, o guião ANTERIOR (sem fotografias) fica de pé e o
+          # vídeo faz-se com ele. Por isso também não trava.
+          node src/scripts/youtube/montar-longo.js --slug="$SLUG" || \
+            echo "::warning::o montador não gostou das fotografias — fica o guião de antes delas."
 
       - name: Guardar as fotografias novas e o banco
         if: steps.escolher.outputs.skip != 'true'

@@ -32,7 +32,7 @@ import { readFileSync, writeFileSync, mkdirSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { PARTES_POSSIVEIS } from './lib/schema-longo.js';
-import { dirigirImagens, conferirImagens } from './lib/imagens-longo.js';
+import { dirigirImagens, conferirImagens, consertarImagens } from './lib/imagens-longo.js';
 
 const AQUI = dirname(fileURLToPath(import.meta.url));
 const OUTPUT_DIR = join(AQUI, 'output');
@@ -170,7 +170,13 @@ if (process.argv[1] && process.argv[1].replace(/\\/g, '/').endsWith('youtube/mon
   const slug = String(args.slug && args.slug !== true ? args.slug : 'sair-do-vermelho');
   const longo = JSON.parse(readFileSync(join(OUTPUT_DIR, `${slug}.longo.json`), 'utf-8'));
 
-  const cenas = montarCenas(longo, slug);
+  /**
+   * ⛑️ AS IMAGENS SÃO CONSERTADAS ANTES DE SE VEREM — 09/08/2026.
+   * O que mentia no ecrã é tirado aqui; a lista impressa em baixo já é a verdadeira.
+   * Ver `consertarImagens` em `lib/imagens-longo.js` para a linha que separa a mentira
+   * (conserta-se) do cansaço visual (passa com aviso).
+   */
+  const { cenas, consertos: consertosDeImagem } = consertarImagens(montarCenas(longo, slug), longo.mapa || {}, slug);
   const palavras = cenas.reduce((a, c) => a + c.palavras, 0);
   const segundos = palavras / 2.6;
 
@@ -206,14 +212,31 @@ if (process.argv[1] && process.argv[1].replace(/\\/g, '/').endsWith('youtube/mon
    * voz, pelo render de seis minutos e só se descobre a olhar o vídeo pronto. Aqui
    * custa zero e é imediato.
    */
+  /**
+   * 🔴 ISTO JÁ NÃO MATA A CORRIDA — 09/08/2026, ordem do dono: *"nunca parar e não
+   * gerar o vídeo"*. A corrida de 08/08 morreu aqui, com as fotografias já pagas e
+   * aprovadas no disco, por causa de três queixas.
+   *
+   * ⚠️ **E o aviso de cima continua verdadeiro: um número errado no ecrã é pior do que
+   * plano nenhum.** É por isso que ele não é TOLERADO — é CONSERTADO, lá em cima, antes
+   * de qualquer coisa ser escrita. O que chega aqui já não mente; o que sobra é o vídeo
+   * ficar mais pobre (três imagens iguais seguidas, um teto passado), e isso passa com
+   * aviso à vista de toda a gente.
+   */
+  if (consertosDeImagem.length) {
+    console.log(`\n⛑️  ${consertosDeImagem.length} conserto(s) nas imagens (o ecrã dizia o que não devia):\n`);
+    for (const c of consertosDeImagem) console.log(`   · ${c}`);
+  }
   const queixas = conferirImagens(cenas, longo.mapa || {}, slug);
   if (queixas.length) {
-    console.log(`\n❌ ${queixas.length} problema(s) nas imagens — nada foi escrito:\n`);
+    console.log(`\n⚠️  ${queixas.length} queixa(s) que ficam como estão — são de riqueza visual, não de verdade:\n`);
     for (const q of queixas) console.log(`   · ${q}`);
-    console.log('');
-    process.exit(1);
+    console.log('   (o vídeo sai à mesma; quem se emenda com isto é quem ESCOLHE as imagens, não esta corrida)');
   }
-  console.log('   ✅ conferência das imagens: todos os números do ecrã estão no mapa\n');
+  if (!consertosDeImagem.length && !queixas.length) {
+    console.log('   ✅ conferência das imagens: todos os números do ecrã estão no mapa\n');
+  }
+  console.log('');
 
   // 1) o ficheiro que o `tts-short.js` já sabe ler, sem uma linha nova lá dentro
   const paraVoz = {

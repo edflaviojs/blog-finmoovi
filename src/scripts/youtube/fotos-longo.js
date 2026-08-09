@@ -312,6 +312,35 @@ export function doBanco(significado, { banco = lerJson(BANCO, { imagens: [] }), 
   return candidatas.sort((a, b) => (a.usadoEm || []).length - (b.usadoEm || []).length)[0];
 }
 
+/**
+ * 🔴 A TERCEIRA PRATELEIRA: A QUARENTENA — 09/08/2026, ordem do dono.
+ *
+ * *"essa capa que gerou tem que ir pro nosso banco de imagens que poderá ser usada no
+ * futuro, e tem que gerar outra"*.
+ *
+ * Uma imagem recusada **custou 52 créditos na mesma** e continua no disco. Deitá-la fora
+ * sem registo é queimar dinheiro e perder a memória do que já se tentou.
+ *
+ * ⚠️ **E ELA NÃO PODE ENTRAR NA PRATELEIRA DE ONDE SE ESCOLHE.** `doBanco()` lê
+ * `banco.imagens`, e uma fotografia foi recusada precisamente por ter letras legíveis —
+ * reaproveitá-la seria repor no ecrã o defeito que a recusou. Por isso vive numa lista
+ * PRÓPRIA (`banco.recusadas`), com o motivo escrito ao lado. Fica catalogada para quem
+ * quiser ir lá buscar à mão; nenhum robô a escolhe sozinho.
+ */
+function guardarNaQuarentena(banco, { ficheiro, significado, tipo, motivo }, slug) {
+  const recusadas = [...(banco.recusadas || [])];
+  const existente = recusadas.find((i) => i.ficheiro === ficheiro);
+  if (existente) {
+    if (!existente.recusadaEm.includes(slug)) existente.recusadaEm.push(slug);
+    existente.motivo = motivo;
+  } else {
+    recusadas.push({
+      ficheiro, significado, tipo, motivo, recusadaEm: [slug], em: new Date().toISOString().slice(0, 10),
+    });
+  }
+  return { ...banco, recusadas };
+}
+
 /** Regista no banco que esta imagem foi usada neste vídeo. */
 function guardarNoBanco(banco, imagem, slug) {
   // 🔴 A PRATELEIRA QUE NÃO EXISTE. Ver o aviso no cabeçalho: o cartaz traz um número com
@@ -411,92 +440,149 @@ async function principal() {
   const destino = join(MANUS_DIR, slug);
   if (!ENSAIO) mkdirSync(destino, { recursive: true });
 
-  for (const e of paraGerar.slice(0, cabem)) {
+  /**
+   * 🔴 UMA IMAGEM RECUSADA JÁ NÃO É O FIM DA LINHA — 09/08/2026, ordem do dono:
+   * *"se existe algum bloqueio ele pula para a próxima imagem… mas nunca parar"*.
+   *
+   * A 1ª versão pedia UMA vez por papel e, se a máquina lesse letras, seguia em frente
+   * sem essa fotografia — o vídeo saía mais pobre e ninguém tentava outra vez. Agora
+   * pede-se outra, e a recusada vai para a quarentena do banco em vez de se perder.
+   *
+   * ⚠️ **DUAS, e não mais.** Cada tentativa custa 52 créditos de verdade. Duas é a
+   * diferença entre "o modelo escorregou" e "este pedido está mal feito" — e o segundo
+   * caso não se resolve pagando três vezes: resolve-se emendando o pedido.
+   */
+  const TENTATIVAS_POR_IMAGEM = 2;
+  /** ⚠️ O orçamento é de imagens PEDIDAS, não de papéis — senão as repetições estouram. */
+  let porGastar = cabem;
+  let bancoVivo = banco;
+  const recusadas = [];
+
+  for (const e of paraGerar) {
+    if (porGastar <= 0) { log(`\n   ⚠️ acabaram os créditos antes de "${e.papel.chave}" — este vídeo sai com menos fotografias.`); break; }
     const nome = `${e.papel.chave}`;
     log(`\n🖼️  ${e.papel.chave} — cena ${e.cena.id}`);
     log(`   a voz diz: "${String(e.cena.narration).slice(0, 90)}…"`);
     log(`   pista: "${e.pista}"`);
-    const pedido = e.papel.tipo === 'cartaz'
-      ? pedidoDoCartaz({
-        taxa: ficha.taxas.rotativoAoMes,
-        rotulo: 'juro do rotativo do cartão',
-        fonte: 'Banco Central do Brasil',
-      })
-      /**
-       * ⚠️ O ÍNDICE É QUANTOS VÍDEOS JÁ TÊM FOTOGRAFIAS — é ele que faz a cena rodar
-       * de vídeo para vídeo. Sai do catálogo, não de um sorteio: o mesmo vídeo pedido
-       * duas vezes tem de dar a mesma imagem, senão refazer um vídeo muda-lhe a cara.
-       */
-      : pedidoDaFoto(e.papel, e.cena, historico.length);
 
-    if (ENSAIO) { log('   (ensaio — não se pediu nada)'); continue; }
+    for (let tentativa = 1; tentativa <= TENTATIVAS_POR_IMAGEM && porGastar > 0; tentativa++) {
+      if (tentativa > 1) log(`   🔁 tentativa ${tentativa} de ${TENTATIVAS_POR_IMAGEM} — a recusada ficou guardada no banco`);
+      const pedido = e.papel.tipo === 'cartaz'
+        ? pedidoDoCartaz({
+          taxa: ficha.taxas.rotativoAoMes,
+          rotulo: 'juro do rotativo do cartão',
+          fonte: 'Banco Central do Brasil',
+        })
+        /**
+         * ⚠️ O ÍNDICE É QUANTOS VÍDEOS JÁ TÊM FOTOGRAFIAS — é ele que faz a cena rodar
+         * de vídeo para vídeo. Sai do catálogo, não de um sorteio: o mesmo vídeo pedido
+         * duas vezes tem de dar a mesma imagem, senão refazer um vídeo muda-lhe a cara.
+         */
+        : pedidoDaFoto(e.papel, e.cena, historico.length);
 
-    let r;
-    try {
-      r = await pedirAgente(pedido, { titulo: `FinMoovi · ${slug} · ${nome}`, aoAndar: (m) => log(`      ${m}`) });
-    } catch (err) { log(`   ❌ ${err.message.split('\n')[0]}`); continue; }
+      if (ENSAIO) { log('   (ensaio — não se pediu nada)'); break; }
 
-    const imagens = r.anexos.filter((a) => a.type === 'image' || /^image\//.test(a.content_type || ''));
-    if (!imagens.length) { log(`   ❌ voltou sem imagem. O agente disse: ${String(r.texto).slice(0, 140)}`); continue; }
+      /** A recusa: guarda o que se pagou, escreve porquê, e deixa tentar outra vez. */
+      const recusar = (motivo, ficheiro = null) => {
+        log(`   ❌ ${motivo}`);
+        recusadas.push({ papel: e.papel.chave, motivo, tentativa });
+        if (ficheiro) {
+          bancoVivo = guardarNaQuarentena(bancoVivo, {
+            ficheiro, significado: e.papel.significado, tipo: e.papel.tipo, motivo,
+          }, slug);
+        }
+      };
 
-    const ext = (imagens[0].filename || '').split('.').pop() || 'png';
-    const grande = join(destino, `${nome}.${ext}`);
-    await descarregar(imagens[0].url, grande, fs);
+      porGastar -= 1;
+      let r;
+      try {
+        r = await pedirAgente(pedido, { titulo: `FinMoovi · ${slug} · ${nome} · ${tentativa}`, aoAndar: (m) => log(`      ${m}`) });
+      } catch (err) { recusar(err.message.split('\n')[0]); continue; }
 
-    // ── encolher para o tamanho que o vídeo usa ──
-    const pequena = join(destino, `${nome}.jpg`);
-    try {
-      execFileSync('ffmpeg', ['-v', 'error', '-y', '-i', grande, '-vf', 'scale=1920:1080:flags=lanczos', '-q:v', '3', pequena], { stdio: 'ignore' });
-    } catch (err) { log(`   ❌ não deu para encolher (${err.message.split('\n')[0]}) — a imagem não entra`); continue; }
-    log(`   ✅ ${nome}.jpg (${Math.round(statSync(pequena).size / 1024)} KB)`);
+      const imagens = r.anexos.filter((a) => a.type === 'image' || /^image\//.test(a.content_type || ''));
+      if (!imagens.length) { recusar(`voltou sem imagem. O agente disse: ${String(r.texto).slice(0, 140)}`); continue; }
 
-    // ── 🔴 A MÁQUINA LÊ A IMAGEM ──
-    if (!haLeitor()) {
-      log('   🔴 NÃO HÁ LEITOR DE TEXTO NESTA MÁQUINA — a imagem NÃO entra no vídeo.');
-      log('      A regra "nem uma letra legível" não pode ser garantida sem a ler. Corra na nuvem.');
-      continue;
-    }
-    const { legiveis } = lerTextoDaImagem(pequena);
-    if (e.papel.tipo === 'cartaz') {
-      const esperado = String(ficha.taxas.rotativoAoMes).replace('.', ',');
-      const temNumero = legiveis.some((t) => t.includes(String(Math.trunc(ficha.taxas.rotativoAoMes))));
-      const temFonte = /banco|central/i.test(legiveis.join(' '));
-      if (!temNumero || !temFonte) {
-        log(`   ❌ o cartaz não mostra o que devia (esperava ${esperado}% e a fonte). Leu-se: ${legiveis.slice(0, 12).join(' ')}`);
-        continue;
+      const ext = (imagens[0].filename || '').split('.').pop() || 'png';
+      // ⚠️ O nome leva a tentativa a partir da 2ª: sem isso, a repetição escrevia por
+      // cima da recusada e a quarentena ficava a apontar para a imagem BOA.
+      const base = tentativa === 1 ? nome : `${nome}-t${tentativa}`;
+      const grande = join(destino, `${base}.${ext}`);
+      await descarregar(imagens[0].url, grande, fs);
+
+      // ── encolher para o tamanho que o vídeo usa ──
+      const pequena = join(destino, `${base}.jpg`);
+      try {
+        execFileSync('ffmpeg', ['-v', 'error', '-y', '-i', grande, '-vf', 'scale=1920:1080:flags=lanczos', '-q:v', '3', pequena], { stdio: 'ignore' });
+      } catch (err) { recusar(`não deu para encolher (${err.message.split('\n')[0]}) — a imagem não entra`); continue; }
+      log(`   ✅ ${base}.jpg (${Math.round(statSync(pequena).size / 1024)} KB)`);
+
+      // ── 🔴 A MÁQUINA LÊ A IMAGEM ──
+      if (!haLeitor()) {
+        log('   🔴 NÃO HÁ LEITOR DE TEXTO NESTA MÁQUINA — a imagem NÃO entra no vídeo.');
+        log('      A regra "nem uma letra legível" não pode ser garantida sem a ler. Corra na nuvem.');
+        break;
       }
-      log(`   ✅ conferido: o cartaz diz ${esperado}% e traz a fonte`);
-    } else if (legiveis.length) {
-      log(`   ❌ RECUSADA — a máquina leu texto nesta fotografia: ${legiveis.slice(0, 10).join(' ')}`);
-      log('      É a queixa nº 1 do dono: o ecrã a dizer uma coisa enquanto a voz diz outra.');
-      continue;
-    } else {
-      log('   ✅ conferido: não há uma letra legível');
-    }
+      const { legiveis } = lerTextoDaImagem(pequena);
+      if (e.papel.tipo === 'cartaz') {
+        const esperado = String(ficha.taxas.rotativoAoMes).replace('.', ',');
+        const temNumero = legiveis.some((t) => t.includes(String(Math.trunc(ficha.taxas.rotativoAoMes))));
+        const temFonte = /banco|central/i.test(legiveis.join(' '));
+        if (!temNumero || !temFonte) {
+          recusar(`o cartaz não mostra o que devia (esperava ${esperado}% e a fonte). Leu-se: ${legiveis.slice(0, 12).join(' ')}`, `manus/${slug}/${base}.jpg`);
+          continue;
+        }
+        log(`   ✅ conferido: o cartaz diz ${esperado}% e traz a fonte`);
+      } else if (legiveis.length) {
+        recusar(`RECUSADA — a máquina leu texto nesta fotografia: ${legiveis.slice(0, 10).join(' ')}`, `manus/${slug}/${base}.jpg`);
+        log('      É a queixa nº 1 do dono: o ecrã a dizer uma coisa enquanto a voz diz outra.');
+        continue;
+      } else {
+        log('   ✅ conferido: não há uma letra legível');
+      }
 
-    feitas.push({
-      ficheiro: `manus/${slug}/${nome}.jpg`,
-      nome: e.papel.significado || 'o cartaz do número',
-      significado: e.papel.significado,
-      tipo: e.papel.tipo,
-      movimento: e.papel.movimento,
-      pista: e.pista,
-    });
+      feitas.push({
+        ficheiro: `manus/${slug}/${base}.jpg`,
+        nome: e.papel.significado || 'o cartaz do número',
+        significado: e.papel.significado,
+        tipo: e.papel.tipo,
+        movimento: e.papel.movimento,
+        pista: e.pista,
+      });
+      break; // esta ficou boa — o papel está resolvido
+    }
   }
 
   if (ENSAIO) { log('\n(ensaio — nada foi escrito)\n'); return; }
-  if (!feitas.length) { log('\n📭 nenhuma fotografia entrou neste vídeo.\n'); return; }
 
-  // ── escrever o catálogo e o banco ──
-  catalogo.videos = { ...(catalogo.videos || {}), [slug]: feitas };
-  writeFileSync(CATALOGO, `${JSON.stringify(catalogo, null, 2)}\n`, 'utf-8');
-  let b = banco;
+  /**
+   * 🔴 A QUARENTENA GRAVA-SE MESMO QUE NENHUMA FOTOGRAFIA TENHA ENTRADO — e isto é o
+   * ponto todo. A 1ª versão saía aqui com um `return` quando `feitas` estava vazio, e
+   * era exactamente nesse caso — o das recusas todas — que havia mais para guardar.
+   * Sair sem escrever era pagar os créditos e deitar fora a única coisa que sobrava
+   * deles: o registo do que se tentou e porque não serviu.
+   */
+  let b = bancoVivo;
   for (const f of feitas) b = guardarNoBanco(b, f, slug);
   writeFileSync(BANCO, `${JSON.stringify(b, null, 2)}\n`, 'utf-8');
 
+  if (recusadas.length) {
+    log(`\n🚧 ${recusadas.length} imagem(ns) recusada(s) — guardadas na quarentena do banco, não se perderam:`);
+    for (const r of recusadas) log(`   · ${r.papel} (tentativa ${r.tentativa}): ${r.motivo}`);
+  }
+
+  if (!feitas.length) {
+    log('\n📭 nenhuma fotografia entrou neste vídeo — ele sai com as ilustrações e as palavras.');
+    log('   ⚠️ isto NÃO é uma falha: um vídeo sem fotografias é melhor do que não haver vídeo.\n');
+    return;
+  }
+
+  // ── escrever o catálogo ──
+  catalogo.videos = { ...(catalogo.videos || {}), [slug]: feitas };
+  writeFileSync(CATALOGO, `${JSON.stringify(catalogo, null, 2)}\n`, 'utf-8');
+
   log(`\n💾 ${feitas.length} fotografia(s) em ${destino}`);
   log(`📒 catálogo: ${CATALOGO}`);
-  log(`🏦 banco: ${(b.imagens || []).length} imagem(ns) catalogadas por significado\n`);
+  log(`🏦 banco: ${(b.imagens || []).length} por significado · ${(b.recusadas || []).length} em quarentena\n`);
 }
 
 const chamadoPeloNome = process.argv[1] && pathToFileURL(process.argv[1]).href === import.meta.url;

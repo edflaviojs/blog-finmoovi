@@ -106,21 +106,45 @@ BRAND SIGNATURE — this must read as a FinMoovi thumbnail at a glance:
 · in the TOP-LEFT corner, a small clean wordmark in a modern bold sans-serif reading exactly "FinMoovi", where "Fin" is white and "Moovi" is filled with the cyan-to-magenta gradient, preceded by a tiny rising-arrow spark icon in cyan and magenta.`;
 
 /** A CAPA. É o pedido do dono, adaptado: sem pessoa, antes/depois, vermelho contra verde. */
-function promptDaCapa({ titulo, aMais, variante = 'marca' }) {
-  if (variante === 'canal') return promptDaCapaDoCanal({ titulo, aMais });
+/**
+ * 🔴 O QUE ESTÁ NA CAPA TEM DE SER A HISTÓRIA DESTE VÍDEO — 09/08/2026.
+ *
+ * A 1ª versão trazia, escrito à mão, *"unpaid credit-card bills and bank statements"* e
+ * um selo a dizer **"3 PASSOS"**. Eram os do vídeo PILOTO. Correr isto para um vídeo
+ * sobre dois homens num ponto de ônibus dava uma miniatura de faturas de cartão — e,
+ * como sempre nesta família de defeito, **o programa não falhava: devolvia uma imagem
+ * bonita e errada**. É irmão do título cravado que se apanhou em 08/08.
+ *
+ * · o OBJETO só é uma fatura de cartão quando a história tem uma (`contaDoCartao`);
+ * · o SELO do número vem do vídeo, e não existe se o vídeo não tiver número;
+ * · o selo verde continua a dizer "3 PASSOS" porque isso é VERDADE em todos: o esqueleto
+ *   da casa são três capítulos, e eles são os três passos. Se um dia deixarem de ser,
+ *   é aqui que se muda.
+ */
+const seloVermelho = (selo) => (selo
+  ? `a small burning red badge on the left half reading exactly "R$ ${selo.valor} ${selo.rotulo}"`
+  : 'no badge on the left half');
+
+const objetoDaHistoria = (temCartao) => (temCartao
+  ? 'unpaid credit-card bills and bank statements'
+  : 'household bills and banknotes');
+
+function promptDaCapa({ titulo, selo, variante = 'marca', temCartao = false }) {
+  if (variante === 'canal') return promptDaCapaDoCanal({ titulo, selo, temCartao });
+  const objeto = objetoDaHistoria(temCartao);
   return `An ultra-high-definition 16K resolution cinematic YouTube thumbnail, 16:9 aspect ratio, 1280x720 pixels minimum, designed for maximum click-through rate on mobile.
 
 COMPOSITION — a dramatic BEFORE / AFTER split, divided by a thin diagonal beam of light running from top-right to bottom-left, glowing with a cyan-to-violet-to-magenta gradient (${PALETA.ciano} → ${PALETA.violeta} → ${PALETA.magenta}).
 
-LEFT HALF, THE BEFORE — a chaotic avalanche of unpaid credit-card bills and bank statements tumbling out of a dark void, a heavy jagged red downward arrow smashing through them, cracked glass shards, angry crimson (${PALETA.vermelho}) neon rim-light, deep black shadows, a red alarm glow bleeding into the background.
+LEFT HALF, THE BEFORE — a chaotic avalanche of ${objeto} tumbling out of a dark void, a heavy jagged red downward arrow smashing through them, cracked glass shards, angry crimson (${PALETA.vermelho}) neon rim-light, deep black shadows, a red alarm glow bleeding into the background.
 
-RIGHT HALF, THE AFTER — the same bills, now a single clean stack on a calm reflective surface, a bright emerald green (${PALETA.verde}) upward arrow rising out of it like a new shoot, soft green neon rim-light, orderly, a sense of relief and open air.
+RIGHT HALF, THE AFTER — the same ${objeto}, now a single clean stack on a calm reflective surface, a bright emerald green (${PALETA.verde}) upward arrow rising out of it like a new shoot, soft green neon rim-light, orderly, a sense of relief and open air.
 
 BACKGROUND — near-black (${PALETA.fundo}) with subtle darker panels (${PALETA.painel}), a fine dot-grid texture, cinematic depth of field.
 
 TYPOGRAPHY — bold, heavy, minimalist condensed sans-serif, ALL CAPS, across the upper third, pure white with a thin red-to-green gradient underline, reading exactly: "${titulo}"
 
-BADGES — a small burning red badge on the left half reading exactly "R$ ${aMais} A MAIS"; a small glowing green badge on the right half reading exactly "3 PASSOS".
+BADGES — ${seloVermelho(selo)}; a small glowing green badge on the right half reading exactly "3 PASSOS".
 ${ASSINATURA_DO_CANAL}
 ${REGRAS_FIXAS}`;
 }
@@ -131,20 +155,21 @@ ${REGRAS_FIXAS}`;
  * e tudo o resto é a paleta do canal. É a capa mais "nossa" das duas, e a pergunta que
  * ela põe ao ouvido do dono é se continua a gritar o suficiente para ganhar o clique.
  */
-function promptDaCapaDoCanal({ titulo, aMais }) {
+function promptDaCapaDoCanal({ titulo, selo, temCartao = false }) {
+  const objeto = temCartao ? 'credit-card bills and glass cards' : 'household bills and banknotes';
   return `An ultra-high-definition 16K resolution cinematic YouTube thumbnail, 16:9 aspect ratio, 1280x720 pixels minimum, designed for maximum click-through rate on mobile. Dark premium tech aesthetic, glassmorphism, neon edge lighting.
 
 COMPOSITION — a BEFORE / AFTER split told almost entirely in the channel's own colours, divided by a bright vertical shard of light in the cyan-to-magenta gradient (${PALETA.ciano} → ${PALETA.violeta} → ${PALETA.magenta}) that flares where it meets the floor.
 
-LEFT HALF, THE BEFORE — a chaotic tumbling stack of credit-card bills and glass cards rendered in cold dark violet and deep indigo, dissolving into shadow, lit from below by a single angry red (${PALETA.vermelho}) glow. One heavy jagged RED downward arrow cutting through them — the only strongly red object on this side.
+LEFT HALF, THE BEFORE — a chaotic tumbling stack of ${objeto} rendered in cold dark violet and deep indigo, dissolving into shadow, lit from below by a single angry red (${PALETA.vermelho}) glow. One heavy jagged RED downward arrow cutting through them — the only strongly red object on this side.
 
-RIGHT HALF, THE AFTER — the same bills, now one clean orderly stack on a glossy reflective surface, rendered in the channel's cyan and violet neon, calm and precise. One bright GREEN (${PALETA.verde}) upward arrow rising out of the stack — the only strongly green object on this side.
+RIGHT HALF, THE AFTER — the same ${objeto}, now one clean orderly stack on a glossy reflective surface, rendered in the channel's cyan and violet neon, calm and precise. One bright GREEN (${PALETA.verde}) upward arrow rising out of the stack — the only strongly green object on this side.
 
 BACKGROUND — the channel's near-black blue (${PALETA.fundo}) with darker glass panels (${PALETA.painel}), concentric rings, a fine dot grid, and volumetric violet haze. Cinematic depth of field.
 
 TYPOGRAPHY — bold heavy condensed sans-serif, ALL CAPS, across the upper third, in pure white with the last word filled by the cyan-to-magenta gradient, reading exactly: "${titulo}"
 
-BADGES — a compact glass badge outlined in red on the left reading exactly "R$ ${aMais} A MAIS"; a compact glass badge outlined in green on the right reading exactly "3 PASSOS".
+BADGES — ${selo ? `a compact glass badge outlined in red on the left reading exactly "R$ ${selo.valor} ${selo.rotulo}"` : 'no badge on the left'}; a compact glass badge outlined in green on the right reading exactly "3 PASSOS".
 ${ASSINATURA_DO_CANAL}
 ${REGRAS_FIXAS}`;
 }
@@ -230,13 +255,33 @@ async function main() {
       .join(' ')
       .toLocaleUpperCase('pt-BR');
     if (!titulo) throw new Error('o guião não tem "tema" — sem título não se faz a capa');
-    const aMais = ficha?.aMais;
-    if (!aMais) throw new Error('não encontrei o valor "a mais" no caderno — não invento números na capa');
+    /**
+     * 🔴 SEM A FICHA DE JUROS, A CAPA JÁ NÃO PARA — 09/08/2026, ordem do dono:
+     * *"nunca parar e não gerar"*.
+     *
+     * A ficha só existe quando a história TEM uma fatura de cartão (é ela que leva a
+     * taxa do Banco Central). Um vídeo sobre dois homens num ponto de ônibus não tem
+     * nenhuma — e a capa dele morria aqui, com um erro, quando o que faltava era só
+     * um dos dois selos.
+     *
+     * ⚠️ **E continua sem inventar número nenhum**, que era a razão certa do erro
+     * antigo: sem ficha usa-se o NÚMERO-ESPINHA do próprio vídeo (o que os três atos
+     * são obrigados a dizer, e que já está no guião), e o selo passa a dizer "POR MÊS"
+     * em vez de "A MAIS". Se nem espinha houver, a capa sai **sem o selo** — uma capa
+     * com um selo a menos é uma capa; uma capa com um número inventado é uma mentira.
+     */
+    const aMais = ficha?.aMais || null;
+    const espinha = Number(roteiro.mapa?.numeroEspinha ?? roteiro.numeroEspinha);
+    const selo = aMais
+      ? { valor: aMais, rotulo: 'A MAIS' }
+      : (Number.isFinite(espinha) && espinha >= 10 ? { valor: espinha, rotulo: 'POR MÊS' } : null);
+    if (!selo) console.log('   ⚠️ sem número no guião — a capa sai sem o selo vermelho (nada é inventado).');
     const variante = args.variante && args.variante !== true ? String(args.variante) : 'marca';
     trabalhos.push({
       ficheiro: variante === 'marca' ? 'capa' : `capa-${variante}`,
       onde: `a miniatura do YouTube (variante "${variante}")`,
-      prompt: promptDaCapa({ titulo, aMais, variante }),
+      // ⚠️ As faturas de cartão só entram na capa se a HISTÓRIA tiver uma fatura de cartão.
+      prompt: promptDaCapa({ titulo, selo, variante, temCartao: Boolean(roteiro.mapa?.contaDoCartao) }),
     });
   }
   if (so !== 'capa') {
@@ -271,7 +316,28 @@ async function main() {
       }
       for (const [i, im] of imagens.entries()) {
         const ext = (im.filename || '').split('.').pop() || 'png';
-        const base = imagens.length > 1 ? `${t.ficheiro}-${i + 1}` : t.ficheiro;
+        let base = imagens.length > 1 ? `${t.ficheiro}-${i + 1}` : t.ficheiro;
+        /**
+         * 🔴 A CAPA DE ANTES NÃO SE APAGA — 09/08/2026, ordem do dono:
+         * *"essa capa que gerou tem que ir pro nosso banco de imagens que poderá ser
+         * usada no futuro, e tem que gerar outra"*.
+         *
+         * Correr isto outra vez escrevia POR CIMA da anterior. Cada capa custa 52
+         * créditos; uma que não agradou hoje pode servir noutro vídeo, e a que era boa
+         * desaparecia sem ninguém dar por nada. Agora a nova ganha um número e as
+         * antigas ficam todas na pasta.
+         *
+         * ⚠️ **A que vai ao YouTube continua a ser `capa.jpg`** — o `upload-longo.js`
+         * procura nomes fixos. Quando o dono escolher outra, renomeia-se; enquanto
+         * ninguém escolher, a primeira é a que manda. Mudar isso sozinho seria trocar
+         * a miniatura do canal sem ninguém pedir.
+         */
+        let versao = 1;
+        while (existsSync(join(destino, `${base}.${ext}`)) || existsSync(join(destino, `${base}.jpg`))) {
+          versao += 1;
+          base = `${imagens.length > 1 ? `${t.ficheiro}-${i + 1}` : t.ficheiro}-v${versao}`;
+        }
+        if (versao > 1) console.log(`      📚 já havia uma "${t.ficheiro}" — esta fica como "${base}" e a de antes não se perde`);
         const nome = `${base}.${ext}`;
         const bytes = await descarregar(im.url, join(destino, nome), fs);
         console.log(`      ✅ ${nome} (${Math.round(bytes / 1024)} KB)`);

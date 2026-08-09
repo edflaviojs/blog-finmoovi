@@ -855,3 +855,138 @@ export function conferirImagens(cenas, mapa = {}, slugDoVideo = null, catalogoDe
 
   return erros;
 }
+
+/**
+ * 🔴 O ECRÃ QUE MENTE CONSERTA-SE; O ECRÃ QUE CANSA PASSA COM AVISO — 09/08/2026.
+ *
+ * ═══ POR QUE ISTO EXISTE ═══
+ * Ordem do dono, depois de o canal ficar sem vídeo ao domingo: *"nunca parar e não
+ * gerar o vídeo"*. O `montar-longo.js` chamava `conferirImagens` e, à primeira queixa,
+ * fazia `process.exit(1)` — e a corrida de 08/08 morreu exactamente assim, com as
+ * fotografias já pagas e aprovadas no disco.
+ *
+ * ═══ A LINHA QUE SEPARA AS DUAS FAMÍLIAS DE QUEIXA ═══
+ * Elas não são iguais e não podem ter o mesmo destino:
+ *
+ *  · **MENTIRA NO ECRÃ** — um número que não está na lista do mapa, uma fotografia numa
+ *    cena que não a chamou, o app fora do capítulo que o mapa lhe deu, uma frase que o
+ *    guião nunca escreveu, b-roll de outra história. Isto **conserta-se sempre**, e o
+ *    conserto é tirar a mentira: a cena passa a mostrar as palavras que estão a ser
+ *    ditas, que é o desenho neutro da casa e nunca contradiz a voz. **O ecrã fica mais
+ *    verdadeiro do que estava, nunca menos.**
+ *
+ *  · **CANSAÇO VISUAL** — três iguais seguidas, ilustrações acima do teto, metáforas a
+ *    mais. Isto é o vídeo ficar mais pobre, não mais falso. **Passa com aviso**, porque
+ *    um vídeo mais pobre é melhor do que não haver vídeo. Fica escrito no registo para
+ *    se emendar quem ESCOLHE as imagens — nunca para matar a corrida.
+ *
+ * ⚠️ **CONSERTAR É SEMPRE TIRAR, NUNCA INVENTAR.** Nenhuma linha aqui escolhe uma
+ * imagem nova, um número novo ou uma frase nova. Só rebaixa para `palavras` o que
+ * estava a dizer o que não devia.
+ */
+export function consertarImagens(cenas, mapa = {}, slugDoVideo = null, catalogoDeMesa = null) {
+  const consertos = [];
+  const dic = dicionarioDeValores(mapa);
+  const saida = cenas.map((c) => ({ ...c, visual: c.visual ? { ...c.visual } : c.visual }));
+
+  /** Rebaixar é isto: a cena passa a mostrar as palavras que estão a ser ditas. */
+  const rebaixar = (c, porque) => {
+    consertos.push(`cena ${c.id}: ${porque} — passou a mostrar as palavras ditas`);
+    c.visual = { tipo: 'palavras' };
+  };
+
+  // (a) TODO número no ecrã tem de estar na lista fechada do mapa
+  for (const c of saida) {
+    const v = c.visual;
+    if (!v) continue;
+    if (v.etiqueta && Number.isFinite(v.etiqueta.valor) && !dic.has(v.etiqueta.valor)) {
+      consertos.push(`cena ${c.id}: a etiqueta mostrava R$ ${v.etiqueta.valor}, que não está na lista do mapa — foi tirada`);
+      delete v.etiqueta;
+    }
+    if (Array.isArray(v.linhas)) {
+      const boas = v.linhas.filter((l) => !Number.isFinite(l.valor) || dic.has(l.valor));
+      if (boas.length !== v.linhas.length) {
+        consertos.push(`cena ${c.id}: ${v.linhas.length - boas.length} linha(s) mostravam números fora da lista do mapa — foram tiradas`);
+        v.linhas = boas;
+      }
+    }
+    if (Number.isFinite(v.valor) && !dic.has(v.valor)) {
+      rebaixar(c, `o ecrã mostrava R$ ${v.valor}, que não está na lista do mapa`);
+    }
+  }
+
+  /**
+   * (b) O APP NUM CAPÍTULO SÓ — o que o mapa escolheu.
+   * Sem escolha no mapa, manda o primeiro capítulo onde ele já aparece: é uma decisão
+   * que não inventa nada e mantém a demonstração inteira num sítio.
+   */
+  const apps = saida.filter((c) => c.visual?.tipo === 'app');
+  if (apps.length) {
+    const capDoApp = Number(mapa.capituloDaDemonstracao) || apps[0].capitulo;
+    for (const a of apps) {
+      if (a.capitulo !== capDoApp) rebaixar(a, `o app aparecia no capítulo ${a.capitulo} e o dele é o ${capDoApp}`);
+    }
+  }
+
+  // (c) a conta é o plano-revelação: uma, e só uma. Fica a primeira.
+  let jaHouveConta = false;
+  for (const c of saida) {
+    if (c.visual?.tipo !== 'conta') continue;
+    if (jaHouveConta) rebaixar(c, 'a conta já tinha aparecido, e ela é uma só');
+    jaHouveConta = true;
+  }
+
+  /**
+   * (d-bis) AS FOTOGRAFIAS — cada uma no seu sítio, nenhuma duas vezes, e só as deste
+   * vídeo. Uma fotografia numa cena que não a chamou é a queixa nº 1 do dono: o ecrã a
+   * mostrar uma coisa enquanto a voz diz outra.
+   */
+  const doVideo = FOTOS_POR_VIDEO[String(slugDoVideo || '')] || fotosDoCatalogo(slugDoVideo, catalogoDeMesa);
+  const jaUsadas = new Set();
+  for (const c of saida) {
+    if (c.visual?.tipo !== 'foto') continue;
+    const dona = doVideo.find((f) => f.ficheiro === c.visual.ficheiro);
+    if (!dona) { rebaixar(c, `a fotografia "${c.visual.ficheiro}" não é deste vídeo`); continue; }
+    if (jaUsadas.has(c.visual.ficheiro)) { rebaixar(c, `a fotografia "${dona.nome}" já tinha aparecido`); continue; }
+    if (!dona.pista.test(semAcento(c.narration))) {
+      rebaixar(c, `a fotografia "${dona.nome}" caiu numa cena que não a chamou`);
+      continue;
+    }
+    jaUsadas.add(c.visual.ficheiro);
+  }
+
+  // (d3) as ilustrações: nunca repetidas, e nunca a figura do fio condutor
+  const figurasVistas = new Set();
+  for (const c of saida) {
+    if (c.visual?.tipo !== 'ilustracao') continue;
+    if (mapa.fioCondutor && c.visual.figura === mapa.fioCondutor) {
+      rebaixar(c, `a ilustração "${c.visual.figura}" é o fio condutor e tem família própria`);
+      continue;
+    }
+    if (figurasVistas.has(c.visual.figura)) { rebaixar(c, `a ilustração "${c.visual.figura}" já tinha aparecido`); continue; }
+    figurasVistas.add(c.visual.figura);
+  }
+
+  // (e) o b-roll de fora da lista mostra dinheiro de OUTRA história
+  for (const c of saida) {
+    if (c.visual?.tipo !== 'broll') continue;
+    if (!BROLL_PERMITIDO.some((x) => x.comp === c.visual.comp)) {
+      rebaixar(c, `"${c.visual.comp}" não está no b-roll permitido (mostra dinheiro de outra história)`);
+    }
+  }
+
+  // (f) toda frase no ecrã foi ESCRITA pelo guião
+  const declaradas = new Set([
+    'Comenta FINMOOVI',
+    ...(mapa.capitulos || []).flatMap((c) => [c.titulo, c.oQueFicaEmAberto, c.oQueAcrescenta]).filter(Boolean),
+    mapa.promessa, mapa.lacoAberto, mapa.respostaDaPromessa,
+  ].filter(Boolean));
+  for (const c of saida) {
+    if (c.visual?.tipo !== 'frase') continue;
+    if (!declaradas.has(c.visual.texto)) {
+      rebaixar(c, `a frase "${String(c.visual.texto).slice(0, 40)}…" não está escrita no guião`);
+    }
+  }
+
+  return { cenas: saida, consertos, restantes: conferirImagens(saida, mapa, slugDoVideo, catalogoDeMesa) };
+}
