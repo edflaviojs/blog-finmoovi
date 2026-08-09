@@ -401,7 +401,7 @@ ${t.angle ? `ÂNGULO: ${t.angle}\n` : ''}${t.definition ? `DEFINIÇÃO: ${t.defi
 
 // ═══ ANDAR 0 — O MAPA ═══════════════════════════════════════════════════════
 
-export function buildPromptMapa(t, proibidas = [], cenariosGastos = [], promessasAnteriores = []) {
+export function buildPromptMapa(t, proibidas = [], cenariosJaGastos = [], promessasAnteriores = []) {
   /**
    * 🔴 A HISTÓRIA TEM DE SER OUTRA — 08/08 (as cenas) e 09/08/2026 (o resto).
    *
@@ -442,9 +442,9 @@ A sua promessa tem de entregar uma coisa **diferente destas**. Se ela pudesse se
 resumo de qualquer um dos vídeos acima, está errada — recomece.`);
   }
 
-  if (cenariosGastos.length) {
+  if (cenariosJaGastos.length) {
     linhas.push(`\n════════ ⛔ CENAS JÁ GASTAS NOS ÚLTIMOS VÍDEOS ════════
-Estas cenas saíram nos vídeos recentes deste canal e **não podem voltar**: ${cenariosGastos.join(' · ')}.
+Estas cenas saíram nos vídeos recentes deste canal e **não podem voltar**: ${cenariosJaGastos.join(' · ')}.
 **Escolha outro momento da vida das pessoas.** O dinheiro aparece em todo o lado: a farmácia no fim do mês, o presente de aniversário, o conserto do chuveiro, a corrida de aplicativo que virou hábito, o almoço fora todo dia, a caixa de ferramentas comprada e nunca usada, o cachorro que adoeceu, a formatura do filho, o material escolar de janeiro, o pneu que furou, o casamento de um amigo, a máquina de lavar que parou.`);
   }
 
@@ -948,7 +948,18 @@ async function gerarBloco({ nome, prompt, validar, tema, tentativas = 5, campos 
       .replace(/\bcom o senhor(?!a)\b/gi, 'com você')
       .replace(/\bao senhor(?!a)\b/gi, 'a você')
       .replace(/\bpro senhor(?!a)\b/gi, 'pra você')
-      .replace(/\bdo senhor(?!a)\b/gi, 'seu')
+      /**
+       * 🔴 **"DO SENHOR" NÃO SE TROCA AQUI, e é a lição desta emenda toda.**
+       *
+       * A 1ª versão trocava por "seu" — e a revisão apanhou-a: *"as contas do senhor"*
+       * saía *"as contas seu"*. "Você" é invariável e por isso as cinco trocas de cima
+       * são seguras; "seu" concorda em género e número com o que vem A SEGUIR, e uma
+       * regex não sabe se o que vem a seguir é "as contas" ou "o dinheiro".
+       *
+       * Fica por trocar, e isso está certo: aparece no registo como "aceite a
+       * contragosto", que é a verdade. **Emendar mal é pior do que não emendar** — e
+       * o sítio de resolver isto de vez é o prompt, não esta rede de último recurso.
+       */
       .replace(/\bo senhor(?!a)\b/gi, 'você')
       // ⚠️ O PLURAL PRIMEIRO. Com `shorts?` numa regra só, "nos Shorts" saía "nos vídeo".
       .replace(/\bshorts\b/gi, 'vídeos')
