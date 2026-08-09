@@ -366,11 +366,45 @@ export const Short: React.FC<{ script?: ShortScript; timing?: ShortTiming; slug?
     .filter(Boolean) as Array<{ tipo: 'alerta' | 'virada'; som: string; inicio: number }>;
 
   /**
+   * 🔴 O SOCO DENTRO DA CAPA — 09/08/2026, e é ele que conserta os 4 segundos parados.
+   *
+   * ═══ O DEFEITO, MEDIDO NO VÍDEO RENDERIZADO ═══
+   * A régua do ritmo encontrava **4,0 segundos parados entre os 00:03 e os 00:07** — e
+   * eles caem DENTRO da capa, que dura 223 fotogramas (7,4s). É o pior sítio do vídeo
+   * para um congelamento: nos nossos Shorts **metade da audiência sai aos 14 segundos**.
+   *
+   * A frase crava toda nos primeiros 10 fotogramas; a coreografia anima, mas a meio
+   * pixel por fotograma. Dos 3s aos 7s não entra nada novo no ecrã.
+   *
+   * ═══ O QUE SE TENTOU ANTES, E FALHOU ═══
+   * Uma aproximação lenta de câmara na coreografia (fica em `scenes.tsx`). **Medida:
+   * 6,09 → 6,11, e os 4 segundos intactos.** Câmara lenta não conserta plano parado.
+   *
+   * ═══ POR QUE UM SOCO AQUI NÃO É EXAGERO ═══
+   * Eu tinha deixado o de 50s com **um soco a cada 6,8 segundos**, por receio de que o
+   * vermelho virasse papel de parede. Depois medi a referência: **o Short de 16s que o
+   * dono aprovou tem um a cada 2,9 segundos.** Eu estava a ser conservador contra o
+   * gosto dele, e o número diz que há folga de sobra.
+   *
+   * ⚠️ **O sítio: a meio da capa, e não no princípio nem no fim.** No princípio já há a
+   * pancada da abertura (fotograma 3, o `boom` com o clarão); no fim há o soco que entra
+   * assim que ela levanta. O buraco é o MIOLO — por isso 55% da vida da capa, que dá
+   * ~4,1s e cai a meio dos 4 segundos mortos.
+   *
+   * ⚠️ **`alerta` e não `virada`:** a capa está a enunciar o PROBLEMA (é a pergunta que
+   * abre o vídeo). Um verde aqui contradiria o que a voz está a dizer.
+   */
+  const socoDaCapa = capaFrames > 0
+    ? [{ tipo: 'alerta' as const, som: 'thud.ogg', inicio: Math.round(capaFrames * 0.55) }]
+    : [];
+
+  /**
    * O TREMOR ACOMPANHA O SOCO — e abana o CONTEÚDO, não o efeito. Se abanasse o clarão,
    * ele saía das bordas e via-se o fundo por baixo. É a mesma nota do de 16s.
    */
   const frameAtual = useCurrentFrame();
-  const abana = socos.reduce(
+  const todosOsSocos = [...socoDaCapa, ...socos];
+  const abana = todosOsSocos.reduce(
     (acc, s) => {
       const local = frameAtual - s.inicio;
       if (local < 0 || local >= IMPACTO_FRAMES) return acc;
@@ -506,7 +540,7 @@ export const Short: React.FC<{ script?: ShortScript; timing?: ShortTiming; slug?
           decide quem pinta em cima de quem — é a mesma arrumação do de 16s e do longo.
           ⚠️ E ficam FORA do `<Sequence from={introFrames}>`: os `inicio` já são frames
           globais (ver o cálculo lá em cima). */}
-      {socos.map((s, i) => (
+      {todosOsSocos.map((s, i) => (
         <SequenciaDeImpacto key={`imp${i}`} from={s.inicio} tipo={s.tipo} som={s.som} />
       ))}
     </AbsoluteFill>

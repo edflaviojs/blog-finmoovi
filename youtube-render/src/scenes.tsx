@@ -497,9 +497,59 @@ export const DynamicIntro: React.FC<{
       {temAcao && <AbsoluteFill style={{ background: BRAND.bg }} />}
 
       {/* A COREOGRAFIA — o palco é mais largo que o vídeo (1240 > 1080) para o chão
-          sangrar pelos lados; por isso o desvio de -80 à esquerda. */}
+          sangrar pelos lados; por isso o desvio de -80 à esquerda.
+
+          🔴 A CÂMARA NÃO PÁRA — 09/08/2026, ordem do dono: *"vamos com a opção 1, dar
+          movimento na capa"*.
+
+          ═══ O QUE ESTAVA ERRADO, MEDIDO ═══
+          A capa fica **223 fotogramas (7,4s)** por cima de tudo, e a régua do ritmo
+          encontrava **4 segundos PARADOS entre os 00:03 e os 00:07** — dentro dela. E
+          isso é o pior sítio possível: nos nossos Shorts **metade da audiência sai aos
+          14 segundos**, portanto o pedaço mais caro do vídeo era justamente o que
+          estava congelado.
+
+          A frase crava toda nos primeiros 10 fotogramas e a coreografia continua a
+          animar — mas devagar de mais para se ver: no `balde-furado`, do t=0,3 ao fim,
+          o nível desce 88px em 156 fotogramas, **meio pixel por fotograma**. Existe no
+          código e não existe no olho.
+
+          ═══ O QUE ENTRA — E O QUE ISTO SOZINHO **NÃO** RESOLVEU ═══
+          Uma aproximação lenta e constante da câmara, com um desvio mínimo. Ela dá ao
+          plano a vida que um plano fixo não tem, e fica.
+
+          🔴 **MAS MEDIDA, ela não moveu a agulha: 6,09 → 6,11 de movimento médio, e os
+          4 segundos parados ficaram EXACTAMENTE onde estavam.** 8% de aproximação em 223
+          fotogramas são 0,036% por fotograma — três pixels entre duas amostras da régua.
+          Existe, e não se vê. **Fica escrito porque a tentação de a repetir é real:
+          câmara lenta sozinha não conserta um plano parado.**
+
+          Quem resolveu foi o **soco dentro da capa**, em `Short.tsx` — ver lá o porquê
+          do sítio. Esta câmara continua aqui por ser boa prática num plano fixo, não
+          por ser a cura.
+
+          ⚠️ **NÃO se mexeu na frase.** Ela crava junta de propósito desde 01/08 (*"não é
+          rush-cut, é murro"*) e o exagero das ênfases foi baixado para 1,00 em 08/08
+          depois de se medir palavras a atropelarem-se. Dar-lhe entrada escalonada agora
+          desfazia duas decisões já tomadas para resolver um problema que é do FUNDO.
+
+          ⚠️ **Nem no tempo nem no texto.** A capa continua a durar o que a voz demora a
+          dizer a frase escrita nela — que é a conta de 02/08.
+
+          ⚠️ 8% de aproximação e 18px de desvio: o palco já sangra 80px de cada lado, por
+          isso a ampliação **não descobre borda nenhuma**. Mais do que isto e a
+          coreografia começa a sair do enquadramento que foi desenhado para ela. */}
       {temAcao && (
-        <div style={{ position: 'absolute', bottom: 120, left: (1080 - PALCO_W) / 2, width: PALCO_W, height: PALCO_H }}>
+        <div style={{
+          position: 'absolute',
+          bottom: 120,
+          left: (1080 - PALCO_W) / 2,
+          width: PALCO_W,
+          height: PALCO_H,
+          transform: `scale(${interpolate(frame, [0, frames], [1, 1.08], { extrapolateRight: 'clamp' })}) `
+            + `translateX(${interpolate(frame, [0, frames], [0, -18], { extrapolateRight: 'clamp' })}px)`,
+          transformOrigin: '50% 78%',
+        }}>
           <CoreografiaDaCapa metaphor={metaphor} life={frames} />
         </div>
       )}
