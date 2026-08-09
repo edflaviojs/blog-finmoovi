@@ -33,7 +33,7 @@
 import { readFileSync, existsSync, mkdirSync } from 'fs';
 import * as fs from 'fs';
 import { join, resolve, dirname } from 'path';
-import { fileURLToPath } from 'url';
+import { fileURLToPath, pathToFileURL } from 'url';
 /**
  * 🔴 ESTA LINHA FALTAVA, E POR ISSO O ENCOLHIMENTO NUNCA FUNCIONOU (achado a 05/08).
  *
@@ -50,6 +50,14 @@ import { fileURLToPath } from 'url';
 import { execFileSync } from 'child_process';
 import { creditos, pedirAgente, descarregar } from './lib/manus-client.js';
 import { assuntoCurto } from './lib/palavras.js';
+/**
+ * ⚠️ IMPORTADO, NÃO COPIADO. O leitor de texto e o caminho do banco de imagens já vivem
+ * no `fotos-longo.js`; uma segunda cópia divergia no dia em que alguém mexesse numa
+ * delas — o modo de falha crónico desta casa. E `fotos-longo.js` só corre sozinho
+ * quando é chamado pelo nome, portanto importá-lo não gera imagem nenhuma nem gasta um
+ * único crédito.
+ */
+import { haLeitor, lerTextoDaImagem, BANCO as BANCO_DE_IMAGENS } from './fotos-longo.js';
 
 const AQUI = dirname(fileURLToPath(import.meta.url));
 const RAIZ = resolve(AQUI, '..', '..', '..');
@@ -242,6 +250,8 @@ async function main() {
   console.log(`   créditos antes: ${antes.livres} livres de ${antes.total}\n`);
 
   const trabalhos = [];
+  /** As capas que a máquina leu e recusou — vão para a quarentena do banco no fim. */
+  const recusadas = [];
   if (so !== 'imagens') {
     /**
      * 🔴 O TÍTULO ESTAVA CRAVADO EM 'SAIR DO VERMELHO' — 08/08/2026.
@@ -315,6 +325,41 @@ async function main() {
   const fila = apenas ? trabalhos.filter((t) => t.ficheiro.includes(apenas)) : trabalhos;
   if (apenas && !fila.length) throw new Error(`"--apenas=${apenas}" não bate com nenhum pedido`);
 
+  /**
+   * 🔴 A MÁQUINA LÊ A CAPA — 09/08/2026, e nasceu de uma capa errada em cima da mesa.
+   *
+   * ═══ O QUE ACONTECEU ═══
+   * Pediu-se uma capa com o selo **"R$ 600 POR MÊS"** — o número-espinha do vídeo, o
+   * único que a narração diz. A Manus devolveu uma capa bonita a dizer **"R$ 614 A
+   * MAIS"**. Nem o número nem o rótulo eram os pedidos. **O programa não deu erro
+   * nenhum**: descarregou, encolheu, escreveu ✅ e seguiu.
+   *
+   * ⚠️ É a mesma família do defeito §42.5: *o script correu, disse quase-✅, e pôs no
+   * ecrã um número que o vídeo nunca diz*. Numa miniatura isso é pior do que no meio do
+   * vídeo — é a primeira coisa que se vê do canal, e fica na lista para sempre.
+   *
+   * ═══ A REGRA ═══
+   * Se houver leitor de texto, lê-se a capa e confere-se que **o número do selo está lá**.
+   * Não está → a capa vai para a quarentena (foi paga) e pede-se outra.
+   *
+   * ⚠️ **SEM LEITOR NÃO SE RECUSA NADA**, e é deliberado: a regra não se pode garantir
+   * sem a ler, e recusar às cegas seria queimar créditos por suspeita. Fica um aviso a
+   * dizer que ninguém conferiu — que é a verdade.
+   *
+   * ⚠️ **E ISTO NÃO CONFERE SE A CAPA É BONITA.** Isso é gosto, e gosto mede-se com o
+   * dono a olhar. O que se mede aqui é VERDADE: o número que lá está é o do vídeo.
+   */
+  const conferirSelo = (caminhoJpg) => {
+    if (!selo) return { ok: true, porque: 'esta capa não leva selo de número' };
+    if (!haLeitor()) return { ok: true, porque: '⚠️ não há leitor de texto nesta máquina — ninguém conferiu o número' };
+    let lido;
+    try { lido = lerTextoDaImagem(caminhoJpg).legiveis.join(' '); } catch (err) { return { ok: true, porque: `⚠️ o leitor falhou (${err.message}) — ninguém conferiu` }; }
+    // O número inteiro, sem separadores — é assim que o OCR o costuma devolver.
+    const alvo = String(Math.trunc(Number(selo.valor)));
+    if (lido.replace(/[.\s]/g, '').includes(alvo)) return { ok: true, porque: `conferido: a capa diz ${alvo}` };
+    return { ok: false, porque: `o selo devia dizer R$ ${alvo} ${selo.rotulo} e leu-se: ${lido.slice(0, 120)}` };
+  };
+
   for (const t of fila) {
     console.log(`🖼️  ${t.ficheiro} — ${t.onde}`);
     try {
@@ -384,6 +429,22 @@ async function main() {
               '-vf', medida, '-q:v', '3', paraOVideo], { stdio: 'ignore' });
             const kb = Math.round(fs.statSync(paraOVideo).size / 1024);
             console.log(`         → ${base}.jpg (${kb} KB) — ${ehCapa ? 'é esta que vai ao YouTube' : 'é esta que o vídeo usa'}`);
+            /**
+             * 🔴 A CONFERÊNCIA DO NÚMERO — ver `conferirSelo`, mais acima.
+             * ⚠️ Ela corre sobre o **JPEG**, que é o ficheiro que vai mesmo ao YouTube,
+             * e não sobre o PNG de 2560 px. Conferir uma imagem e publicar outra seria
+             * conferir coisa nenhuma — e é um erro que esta casa já cometeu.
+             */
+            if (ehCapa) {
+              const v = conferirSelo(paraOVideo);
+              if (v.ok) {
+                console.log(`         ${v.porque.startsWith('⚠️') ? v.porque : `✅ ${v.porque}`}`);
+              } else {
+                console.log(`         ❌ RECUSADA — ${v.porque}`);
+                console.log('            Uma miniatura é a primeira coisa que se vê do canal; um número que o vídeo não diz fica lá para sempre.');
+                recusadas.push({ ficheiro: `manus/${slug}/${base}.jpg`, motivo: v.porque });
+              }
+            }
           } catch (err) {
             console.log(`         ⚠️ não deu para fazer a versão do vídeo (${err.message.split('\n')[0]})`);
           }
@@ -394,9 +455,52 @@ async function main() {
     }
   }
 
+  /**
+   * 🔴 O QUE FOI RECUSADO VAI PARA O BANCO — ordem do dono: *"essa capa que gerou tem
+   * que ir pro nosso banco de imagens que poderá ser usada no futuro, e tem que gerar
+   * outra"*. Custou 52 créditos; não se deita fora sem registo.
+   *
+   * ⚠️ **Vai para `recusadas`, a prateleira de onde nenhum robô escolhe sozinho** — a
+   * mesma que o `fotos-longo.js` usa. Uma capa com o número errado não pode voltar a
+   * entrar por acidente; o que ela guarda é a memória de que se tentou e porque não deu.
+   */
+  if (recusadas.length) {
+    const banco = existsSync(BANCO_DE_IMAGENS) ? JSON.parse(readFileSync(BANCO_DE_IMAGENS, 'utf-8')) : {};
+    const lista = [...(banco.recusadas || [])];
+    for (const r of recusadas) {
+      if (lista.some((x) => x.ficheiro === r.ficheiro)) continue;
+      lista.push({
+        ficheiro: r.ficheiro, significado: 'a miniatura do YouTube', tipo: 'capa', motivo: r.motivo, recusadaEm: [slug], em: new Date().toISOString().slice(0, 10),
+      });
+    }
+    fs.writeFileSync(BANCO_DE_IMAGENS, `${JSON.stringify({ ...banco, recusadas: lista }, null, 2)}\n`, 'utf-8');
+    console.log(`\n🚧 ${recusadas.length} capa(s) recusada(s) — guardadas na quarentena do banco, não se perderam.`);
+    console.log('   Para pedir outra: o mesmo comando outra vez (a anterior não é apagada).');
+  }
+
   const depois = await creditos();
   console.log(`\n💳 créditos depois: ${depois.livres} livres — gastou ${antes.livres - depois.livres}`);
   console.log(`📁 ${destino}\n`);
 }
 
-main().catch((err) => { console.error(`\n❌ ${err.message}\n`); process.exit(1); });
+/**
+ * 🔴 SÓ CORRE QUANDO É CHAMADO PELO NOME — 09/08/2026, e custou créditos a aprender.
+ *
+ * Esta linha era `main().catch(...)` à solta. Isso quer dizer que **bastava alguém
+ * IMPORTAR este ficheiro para ele começar a gerar imagens** — e foi o que aconteceu
+ * hoje: um `import()` escrito só para provar que os imports novos resolviam disparou
+ * uma corrida a sério, com o slug por omissão (o do piloto) e sem `--so`, ou seja **as
+ * quatro imagens**. Deu para travar a meio, e mesmo assim foram-se créditos.
+ *
+ * ⚠️ O `fotos-longo.js` e o `upload-longo.js` já tinham esta guarda, com o comentário
+ * a explicar porquê: *"importar não é publicar"*. Este ficheiro é o que gasta dinheiro
+ * de verdade e era o único sem ela.
+ *
+ * ⚠️ **E foi a trava das versões, escrita uma hora antes, que salvou a capa do piloto:**
+ * em vez de escrever por cima de `capa.png`, a corrida acidental deixou `capa-v2`. O
+ * conserto de hoje pagou-se a si próprio no mesmo dia.
+ */
+const chamadoPeloNome = process.argv[1] && pathToFileURL(process.argv[1]).href === import.meta.url;
+if (chamadoPeloNome) {
+  main().catch((err) => { console.error(`\n❌ ${err.message}\n`); process.exit(1); });
+}
