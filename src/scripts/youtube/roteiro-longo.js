@@ -60,7 +60,7 @@ import {
 import { limparFala, montarCorretivo } from './roteiro-narrativa.js';
 import { loadRecentPublishedContext } from './roteiro-short.js';
 // ♦ O caderno que impede dois vídeos seguidos de contarem a mesma cena (08/08/2026).
-import { cenariosGastos, guardarCenarios, RAIO_DE_CENARIOS } from './lib/cenarios-do-longo.js';
+import { cenariosGastos, guardarCenarios, fiosGastos, promessasGastas, RAIO_DE_CENARIOS } from './lib/cenarios-do-longo.js';
 
 const AQUI = dirname(fileURLToPath(import.meta.url));
 const OUTPUT_DIR = join(AQUI, 'output');
@@ -401,24 +401,54 @@ ${t.angle ? `ÂNGULO: ${t.angle}\n` : ''}${t.definition ? `DEFINIÇÃO: ${t.defi
 
 // ═══ ANDAR 0 — O MAPA ═══════════════════════════════════════════════════════
 
-export function buildPromptMapa(t, proibidas = [], cenariosGastos = []) {
+export function buildPromptMapa(t, proibidas = [], cenariosGastos = [], promessasAnteriores = []) {
   /**
-   * 🔴 AS CENAS QUE OS ÚLTIMOS VÍDEOS JÁ GASTARAM — 08/08/2026, ordem do dono.
+   * 🔴 A HISTÓRIA TEM DE SER OUTRA — 08/08 (as cenas) e 09/08/2026 (o resto).
    *
    * *"No vídeo passado foi falado de fatura do cartão, falado sobre num domingo, e
    * agora está se repetindo. Isso não pode acontecer num raio de uns 5 vídeos."*
+   * E depois, mais forte: *"Force e deixe claro pra IA deixar tudo muito dinâmico com
+   * imagens, metáforas, exemplos, histórias totalmente desconexas com as anteriores."*
    *
-   * ⚠️ Isto entra como PEDIDO, nunca como trava. Uma trava que proíbe o que o prompt
-   * pede produz oito tentativas falhadas seguidas — está registado neste repositório.
-   * Aqui diz-se "já saíram, escolha outros" e mede-se o resultado no caderno.
+   * ⚠️ **DUAS LISTAS, E A SEGUNDA É A QUE MUDA O RESULTADO.** A das cenas diz o que
+   * NÃO fazer — e sozinha ela só ensina o modelo a trocar a palavra "fatura" por
+   * "boleto" e a escrever a mesma história com outro objeto. A das promessas diz o que
+   * JÁ FOI CONTADO, e é contra ela que se pede uma história nova.
+   *
+   * ⚠️ **ISTO ENTRA COMO PEDIDO, NUNCA COMO TRAVA.** Uma trava que proíbe o que o
+   * prompt pede produz oito tentativas falhadas seguidas — está registado nesta casa
+   * vinte vezes. Ver [[prompt-versus-validador]]. Mede-se o resultado no caderno, e o
+   * sítio de apertar é aqui, não no validador.
    */
-  const blocoDeCenarios = cenariosGastos.length
-    ? `\n════════ ⛔ CENAS JÁ GASTAS NOS ÚLTIMOS VÍDEOS ════════
+  const linhas = [];
+  linhas.push(`\n════════ 🔴 ESTE VÍDEO TEM DE SER OUTRO VÍDEO ════════
+Este canal publica um vídeo longo por semana, e quem se inscreveu vê-os em fila.
+**Dois vídeos com a mesma história por baixo fazem o canal parecer um só vídeo repetido** —
+e é a queixa nº 1 do dono. Portanto, antes de escolher seja o que for:
+
+· a HISTÓRIA é outra — outra pessoa, outro momento da vida, outro aperto;
+· os EXEMPLOS são outros — outras compras, outras contas, outros valores;
+· a METÁFORA é outra — e o objeto que a carrega também;
+· o NÚMERO é outro — não repita o valor que já foi a espinha de outro vídeo.
+
+⚠️ Não basta trocar as palavras. Trocar "fatura" por "boleto" e contar a mesma coisa é
+repetir na mesma. **O que tem de mudar é a situação.**`);
+
+  if (promessasAnteriores.length) {
+    linhas.push(`\n════════ 📼 O QUE OS VÍDEOS ANTERIORES JÁ CONTARAM ════════
+${promessasAnteriores.map((p, i) => `${i + 1}. "${p}"`).join('\n')}
+
+A sua promessa tem de entregar uma coisa **diferente destas**. Se ela pudesse servir de
+resumo de qualquer um dos vídeos acima, está errada — recomece.`);
+  }
+
+  if (cenariosGastos.length) {
+    linhas.push(`\n════════ ⛔ CENAS JÁ GASTAS NOS ÚLTIMOS VÍDEOS ════════
 Estas cenas saíram nos vídeos recentes deste canal e **não podem voltar**: ${cenariosGastos.join(' · ')}.
-Quem acompanha o canal vê um vídeo por semana; repetir o mesmo cenário faz parecer que é sempre o mesmo vídeo.
-**Escolha outro momento da vida das pessoas.** O dinheiro aparece em todo o lado: a farmácia no fim do mês, o presente de aniversário, o conserto do chuveiro, a corrida de aplicativo que virou hábito, o almoço fora todo dia, a caixa de ferramentas comprada e nunca usada, o cachorro que adoeceu, a formatura do filho.\n`
-    : '';
-  return buildPromptMapaBase(t, proibidas, blocoDeCenarios);
+**Escolha outro momento da vida das pessoas.** O dinheiro aparece em todo o lado: a farmácia no fim do mês, o presente de aniversário, o conserto do chuveiro, a corrida de aplicativo que virou hábito, o almoço fora todo dia, a caixa de ferramentas comprada e nunca usada, o cachorro que adoeceu, a formatura do filho, o material escolar de janeiro, o pneu que furou, o casamento de um amigo, a máquina de lavar que parou.`);
+  }
+
+  return buildPromptMapaBase(t, proibidas, `${linhas.join('\n')}\n`);
 }
 
 function buildPromptMapaBase(t, proibidas = [], blocoDeCenarios = '') {
@@ -956,8 +986,10 @@ async function gerarBloco({ nome, prompt, validar, tema, tentativas = 5, campos 
 export async function gerarMapa(t, { proibidas = [], tentativas = 3, cenarios = null } = {}) {
   // Sem lista dada, lê o caderno — assim quem chama não tem de se lembrar disto.
   const gastos = cenarios || cenariosGastos();
+  const jaContadas = promessasGastas();
   if (gastos.length) console.log(`🚫 cenas já gastas nos últimos ${RAIO_DE_CENARIOS} vídeos: ${gastos.join(' · ')}`);
-  const prompt = buildPromptMapa(t, proibidas, gastos);
+  if (jaContadas.length) console.log(`📼 histórias já contadas: ${jaContadas.map((p) => `"${String(p).slice(0, 60)}…"`).join(' | ')}`);
+  const prompt = buildPromptMapa(t, proibidas, gastos, jaContadas);
   const exigencias = [];
   let corretivo = '';
 
@@ -1539,9 +1571,23 @@ if (executadoDireto) {
     ? '\n🧮 há ficha de números calculada para este tema'
     : '\n🧮 sem cenário numérico no tema — proibido citar percentagem ou prometer rendimento (é o esperado num vídeo de dívida)');
 
+  /**
+   * 🔴 AS DUAS JANELAS, E ANTES SÓ HAVIA UMA — 09/08/2026.
+   *
+   * `loadRecentPublishedContext()` lê o caderno dos **Shorts**. Sozinha, esta linha
+   * fazia com que **o vídeo longo nunca visse a imagem que o vídeo longo anterior
+   * usou** — dois longos seguidos podiam abrir com o mesmo fio condutor, e a única
+   * coisa que o impedia era a sorte.
+   *
+   * ⚠️ As duas SOMAM-SE, não se substituem: o canal é um só, e uma imagem vista num
+   * Short ontem também já foi vista por quem assiste.
+   */
   const recentes = loadRecentPublishedContext();
-  const proibidas = [...new Set(recentes.flatMap((r) => r.metaphors || []))].filter((m) => m !== 'clique-link');
-  if (proibidas.length) console.log(`🚫 imagens já usadas nos vídeos recentes: ${proibidas.join(', ')}`);
+  const dosShorts = recentes.flatMap((r) => r.metaphors || []);
+  const dosLongos = fiosGastos();
+  const proibidas = [...new Set([...dosShorts, ...dosLongos])].filter((m) => m !== 'clique-link');
+  if (dosLongos.length) console.log(`🚫 imagens dos últimos ${RAIO_DE_CENARIOS} vídeos LONGOS: ${dosLongos.join(', ')}`);
+  if (proibidas.length) console.log(`🚫 imagens já usadas no canal (Shorts + longos): ${proibidas.join(', ')}`);
 
   if (args['so-mapa']) {
     const { mapa } = await gerarMapa(t, { proibidas });
@@ -1599,6 +1645,7 @@ if (executadoDireto) {
    * Guarda-se DEPOIS de o guião estar em disco: se alguma coisa rebentar acima, o
    * caderno não fica a dizer que saiu um vídeo que não saiu.
    */
-  const usados = guardarCenarios(slug, falaCorrida(roteiro).join(' '));
-  console.log(`📓 cenas deste vídeo, guardadas para os próximos ${RAIO_DE_CENARIOS}: ${usados.length ? usados.join(' · ') : '(nenhuma das conhecidas)'}\n`);
+  const usados = guardarCenarios(slug, falaCorrida(roteiro).join(' '), { fio: mapa?.fioCondutor || null, promessa: mapa?.promessa || null });
+  console.log(`📓 cenas deste vídeo, guardadas para os próximos ${RAIO_DE_CENARIOS}: ${usados.length ? usados.join(' · ') : '(nenhuma das conhecidas)'}`);
+  console.log(`📓 imagem deste vídeo, guardada para os próximos ${RAIO_DE_CENARIOS}: ${mapa?.fioCondutor || '(nenhuma)'}\n`);
 }

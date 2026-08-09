@@ -6,17 +6,19 @@
         "a fatura do cartão",
         "o domingo"
       ],
-      "em": "2026-08-08"
+      "fio": "mochila-pedras",
+      "em": "2026-08-05",
+      "promessa": "Vou te mostrar um jeito de organizar a dívida e começar a pagar sem apertar mais o seu mês."
     },
     {
       "slug": "dono-dois-homens-mesma-idade-mesmo-trabalho",
       "cenarios": [
-        "a fatura do cartão",
-        "o domingo",
-        "o boleto",
-        "a aposentadoria"
+        "o mercado",
+        "o salário que cai na conta"
       ],
-      "em": "2026-08-08"
+      "fio": "ampulheta",
+      "em": "2026-08-08",
+      "promessa": "Vou te mostrar como uma escolha de seiscentos reais por mês pode separar duas vidas com o mesmo salário"
     }
   ]
 }

@@ -446,16 +446,32 @@ jobs:
           node src/scripts/youtube/montar-longo.js --slug="$SLUG" || \
             echo "::warning::o montador não gostou das fotografias — fica o guião de antes delas."
 
-      - name: Guardar as fotografias novas e o banco
+      # 🔴 O CADERNO DE CENAS TEM DE SAIR DAQUI GRAVADO — 09/08/2026.
+      #
+      # ═══ O DEFEITO, MEDIDO ═══
+      # O `roteiro-longo.js` escreve `.github/data/longo-cenarios.json` a cada vídeo — é
+      # ele que impede o vídeo seguinte de contar a mesma cena. **Nenhum passo deste
+      # robô lhe fazia `git add`.** A máquina da nuvem é deitada fora no fim da corrida,
+      # portanto o caderno morria lá dentro e, na semana seguinte, o robô lia a versão
+      # velha. A trava anti-repetição existia e **nunca aprendia nada**.
+      #
+      # ⚠️ **É O MESMO PASSO DAS FOTOGRAFIAS DE PROPÓSITO.** Dois passos que gravam no
+      # repositório com o mesmo `empurrar.sh` são duas corridas a disputar o mesmo ramo,
+      # e já se perderam 19 ficheiros nesta casa por causa disso (memória
+      # `blog-deploy-parado-por-link-do-robo`). Um commit só, uma disputa só.
+      #
+      # ⚠️ **E CORRE MESMO SEM CHAVE DA MANUS**, que é o caso em que não há fotografia
+      # nenhuma — mas há SEMPRE caderno de cenas para gravar.
+      - name: Guardar o caderno de cenas, as fotografias e o banco
         if: steps.escolher.outputs.skip != 'true'
         run: |
           git config user.name "FinMoovi Bot"
           git config user.email "bot@finmoovi.com"
-          git add .github/data/fotos-do-longo.json .github/data/banco-de-imagens.json youtube-render/public/manus || true
+          git add .github/data/longo-cenarios.json .github/data/fotos-do-longo.json .github/data/banco-de-imagens.json youtube-render/public/manus || true
           if git diff --staged --quiet; then
-            echo "Sem fotografias novas."
+            echo "Sem novidades para guardar."
           else
-            git commit -m "chore: fotografias do video longo $SLUG [skip ci]"
+            git commit -m "chore: cenas e fotografias do video longo $SLUG [skip ci]"
             bash .github/scripts/empurrar.sh
           fi
 

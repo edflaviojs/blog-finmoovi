@@ -102,15 +102,58 @@ export function cenariosGastos({ caderno = lerCaderno(), raio = RAIO_DE_CENARIOS
 }
 
 /**
- * Guarda o que este vídeo usou.
+ * 🔴 AS IMAGENS QUE OS ÚLTIMOS VÍDEOS LONGOS JÁ USARAM — 09/08/2026.
+ *
+ * ═══ O BURACO QUE ISTO TAPA ═══
+ * `roteiro-longo.js` perguntava "que imagens já usei?" ao `loadRecentPublishedContext()`
+ * — que lê o caderno dos **SHORTS** (`youtube-published.json`, formato `short50`). Ou
+ * seja: **o vídeo longo nunca via a imagem que o vídeo longo anterior usou.** Dois
+ * longos seguidos podiam abrir com o mesmo fio condutor, e a única coisa que os
+ * impedia era o acaso.
+ *
+ * ⚠️ **A lista dos Shorts continua a valer e a somar-se a esta.** Não é substituir: o
+ * canal é um só, e uma imagem vista num Short ontem também já foi vista. O que faltava
+ * era o outro lado.
+ *
+ * ⚠️ **E vive AQUI, no caderno próprio dos longos, e não a ler ficheiros de guião.**
+ * Os guiões dos longos são derivados e nem sequer vão para o repositório (`.gitignore`),
+ * portanto ler deles seria uma janela que na nuvem devolve sempre vazio — o mesmo modo
+ * de falha silenciosa que já mordeu esta casa.
+ */
+export function fiosGastos({ caderno = lerCaderno(), raio = RAIO_DE_CENARIOS } = {}) {
+  const recentes = (caderno.videos || []).slice(-raio);
+  return [...new Set(recentes.map((v) => v.fio).filter(Boolean))];
+}
+
+/**
+ * 🔴 O QUE OS VÍDEOS ANTERIORES PROMETERAM — 09/08/2026, ordem do dono: *"cada vídeo
+ * tem que ser exemplos e histórias totalmente diferentes"*.
+ *
+ * ⚠️ **Uma lista de cenas proibidas diz o que NÃO fazer; isto diz o que JÁ FOI FEITO.**
+ * São coisas diferentes, e a segunda é a que muda o resultado. Sem ela o modelo evita
+ * a palavra "fatura" e escreve outra vez a mesma história com outro objeto — que foi
+ * exactamente a queixa do dono ao ver o segundo vídeo.
+ */
+export function promessasGastas({ caderno = lerCaderno(), raio = RAIO_DE_CENARIOS } = {}) {
+  return (caderno.videos || []).slice(-raio).map((v) => v.promessa).filter(Boolean);
+}
+
+/**
+ * Guarda o que este vídeo usou: as cenas da história e a imagem que o conduz.
  * ⚠️ Se o slug já lá estiver, SUBSTITUI em vez de acrescentar — refazer um vídeo não
  * pode fazer o caderno pensar que saíram dois.
  */
-export function guardarCenarios(slug, texto, { caminho = CADERNO_DE_CENARIOS } = {}) {
+export function guardarCenarios(slug, texto, { caminho = CADERNO_DE_CENARIOS, fio = null, promessa = null } = {}) {
   const caderno = lerCaderno(caminho);
   const cenarios = cenariosDoTexto(texto);
   const videos = (caderno.videos || []).filter((v) => v.slug !== slug);
-  videos.push({ slug, cenarios, em: new Date().toISOString().slice(0, 10) });
+  videos.push({
+    slug,
+    cenarios,
+    ...(fio ? { fio } : {}),
+    ...(promessa ? { promessa: String(promessa).trim() } : {}),
+    em: new Date().toISOString().slice(0, 10),
+  });
   mkdirSync(dirname(caminho), { recursive: true });
   writeFileSync(caminho, `${JSON.stringify({ videos }, null, 2)}\n`, 'utf-8');
   return cenarios;
