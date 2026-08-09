@@ -39,6 +39,7 @@
  *   node src/scripts/youtube/upload-longo.js --slug=sair-do-vermelho --dry-run
  *   node src/scripts/youtube/upload-longo.js --slug=sair-do-vermelho
  *   node src/scripts/youtube/upload-longo.js --slug=... --publicar-em=2026-08-16T22:00:00Z
+ *   node src/scripts/youtube/upload-longo.js --vigiar     (o guarda: 0 = tudo bem, 9 = alarme)
  */
 
 import { readFileSync, writeFileSync, existsSync, statSync, mkdirSync } from 'node:fs';
@@ -509,7 +510,119 @@ async function conferirEstreiaSozinha() {
   log('✅ o dia está livre.');
 }
 
+/**
+ * 🔴 O GUARDA — 09/08/2026, e nasceu de um domingo sem vídeo.
+ *
+ * ═══ O QUE ACONTECEU, MEDIDO ═══
+ * O vídeo piloto subiu a 05/08 PRIVADO, com a estreia marcada para domingo 09/08 às
+ * 19h — e o registo da corrida mostra o YouTube a confirmá-lo: *"confirmado pelo
+ * YouTube: estreia em 2026-08-09T22:00:00Z ✅"*.
+ *
+ * Algures entre 05/08 e 08/08 ele **passou a público sozinho**. Quem o disse foi o
+ * próprio YouTube, quando o robô de sábado lhe perguntou: *"✅ sair-do-vermelho já está
+ * PÚBLICO — o dia ficou livre"*. Ninguém soube. O dono descobriu ao abrir o Studio no
+ * domingo de manhã e ver que não havia nada para sair.
+ *
+ * ═══ POR QUE UM GUARDA, E NÃO UMA TRAVA ═══
+ * Nenhum programa desta casa mexe na privacidade de um vídeo que já está no ar (está
+ * conferido: só o `upload-*` toca em `privacyStatus`, e só ao SUBIR). Portanto a causa
+ * está fora do nosso alcance — um clique no Studio, ou o próprio YouTube. **O que se
+ * pode fazer não é impedir: é dar por isso no dia em que acontece, em vez de no
+ * domingo.** Entre o desmarcar e a estreia há dias de folga para reagir.
+ *
+ * ⚠️ **ELE NÃO CONSERTA NADA.** Republicar um vídeo, mudar-lhe a privacidade ou
+ * remarcar a estreia são decisões do dono. Um guarda que arruma sozinho o que não
+ * entende é pior do que guarda nenhum.
+ *
+ * Devolve 0 quando está tudo bem e 9 quando há alarme — para o robô poder mandar email.
+ */
+async function vigiarAgendamentos() {
+  const caderno = lerCaderno();
+  const entradas = Object.entries(caderno);
+  log(`\n=== 👮 O GUARDA DO VÍDEO LONGO — ${entradas.length} no caderno ===\n`);
+
+  let chave = null;
+  try { chave = await getAccessToken(); } catch (err) {
+    log(`❌ sem chaves do YouTube (${err.message}) — o guarda não consegue perguntar nada.`);
+    log('   Isto É um alarme: um guarda cego não vigia.');
+    process.exit(9);
+  }
+
+  const agora = Date.now();
+  // Só interessam as reservas cuja estreia ainda não chegou: o passado já é história.
+  const porEstrear = entradas.filter(([, v]) => v && v.publishAt && new Date(v.publishAt).getTime() > agora);
+  const alarmes = [];
+
+  if (!porEstrear.length) {
+    log('📭 não há nenhum vídeo longo à espera de estrear.');
+    /**
+     * ⚠️ **ISTO SÓ É ALARME A PARTIR DE SÁBADO.** Durante a semana é o estado normal:
+     * o vídeo é feito na noite de sexta. A partir de sábado, não haver nada marcado
+     * significa que as três oportunidades da semana já passaram ou estão a passar —
+     * e é a última hora útil para alguém agir.
+     */
+    const diaDaSemana = new Date().getUTCDay(); // 0 domingo · 6 sábado
+    if (diaDaSemana === 6 || diaDaSemana === 0) {
+      alarmes.push('é fim de semana e NÃO HÁ vídeo longo marcado para o próximo domingo.');
+    } else {
+      log('   (durante a semana isto é normal — o vídeo faz-se na noite de sexta.)');
+    }
+  }
+
+  for (const [slug, reg] of porEstrear) {
+    const quando = emPortugues(new Date(reg.publishAt));
+    if (!reg.videoId) {
+      alarmes.push(`"${slug}" está reservado para ${quando} mas NUNCA chegou ao YouTube (não tem identificador).`);
+      continue;
+    }
+    let estado;
+    try {
+      estado = (await estadoNoYouTube([reg.videoId], chave))[reg.videoId];
+    } catch (err) {
+      alarmes.push(`não deu para perguntar ao YouTube por "${slug}" (${err.message}).`);
+      continue;
+    }
+    if (!estado) {
+      alarmes.push(`o YouTube não conhece o vídeo ${reg.videoId} de "${slug}" — foi apagado?`);
+      continue;
+    }
+    if (estado.privacidade === 'private' && estado.estreia) {
+      const combinado = new Date(reg.publishAt).getTime();
+      const noYouTube = new Date(estado.estreia).getTime();
+      if (Math.abs(combinado - noYouTube) > 60000) {
+        alarmes.push(`"${slug}": o caderno diz ${quando}, o YouTube diz ${emPortugues(new Date(estado.estreia))}.`);
+      } else {
+        log(`✅ "${slug}" — privado, a estrear ${quando}. https://youtu.be/${reg.videoId}`);
+      }
+      continue;
+    }
+    /**
+     * 🔴 ESTE É O CASO QUE FEZ O CANAL FICAR SEM VÍDEO. O vídeo estava marcado, deixou
+     * de estar, e a estreia combinada nunca vai acontecer.
+     */
+    alarmes.push(
+      `🔴 "${slug}" DEIXOU DE ESTAR AGENDADO. Está "${estado.privacidade}"${estado.estreia ? '' : ' e sem estreia marcada'}, `
+      + `mas o combinado era ${quando}. https://youtu.be/${reg.videoId}`,
+    );
+  }
+
+  if (!alarmes.length) {
+    log('\n✅ está tudo como foi combinado.\n');
+    return;
+  }
+  log(`\n🔴 ${alarmes.length} ALARME(S):\n`);
+  alarmes.forEach((a) => log(`   · ${a}`));
+  log('');
+  // ⚠️ O robô lê isto para montar o email. Uma linha por alarme, sem enfeites.
+  if (process.env.GITHUB_OUTPUT) {
+    const fsx = await import('node:fs');
+    fsx.appendFileSync(process.env.GITHUB_OUTPUT, `alarmes<<FIM\n${alarmes.join('\n')}\nFIM\n`);
+  }
+  process.exit(9);
+}
+
 async function principal() {
+  if (args.vigiar) { await vigiarAgendamentos(); return; }
   if (args['conferir-estreia']) { await conferirEstreiaSozinha(); return; }
   log(`\n=== YouTube · vídeo longo "${SLUG}"${ENSAIO ? ' (ENSAIO — nada é enviado)' : ''} ===`);
 

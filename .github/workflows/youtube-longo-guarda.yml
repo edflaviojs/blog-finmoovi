@@ -1,0 +1,99 @@
+name: YouTube — Guarda do vídeo longo (diário)
+
+# ♦ O GUARDA DO AGENDAMENTO — 09/08/2026, IMPLEMENTACAO20 §64.
+#
+# ═══ POR QUE ESTE ROBÔ EXISTE ═══
+# O vídeo piloto subiu a 05/08 privado, com a estreia marcada para domingo 09/08 às 19h,
+# e o YouTube confirmou a marcação por escrito. Algures até 08/08 ele **passou a público
+# sozinho** — e o domingo ficou sem vídeo. Ninguém soube: o dono descobriu ao abrir o
+# Studio no próprio dia.
+#
+# ⚠️ **O problema não foi o vídeo ter mudado de estado. Foi ninguém ter dado por isso.**
+# Entre o desmarcar e a estreia havia quatro dias de folga para reagir, e passaram-se
+# em silêncio.
+#
+# ═══ O QUE ELE FAZ, E O QUE SE RECUSA A FAZER ═══
+# Pergunta ao YOUTUBE — nunca ao caderno — se cada vídeo longo à espera de estrear
+# continua privado e com a mesma hora. Se alguma coisa saiu do sítio, **manda email ao
+# dono e fica vermelho**. Não republica, não remarca, não muda privacidade nenhuma:
+# essas são decisões dele. Um guarda que arruma sozinho o que não entende é pior do que
+# guarda nenhum.
+#
+# ⚠️ **VERMELHO É DE PROPÓSITO.** É a segunda campainha: o email do Resend chega à
+# caixa do dono, e o email do GitHub chega a quem segue o repositório. Uma delas há-de
+# ser vista.
+#
+# ⚠️ **NÃO TOCA EM NADA.** Não escreve no repositório, não gasta IA, não gasta créditos
+# de imagem. Só faz perguntas.
+
+on:
+  schedule:
+    # ⚠️ 08:10 universais = 05h10 no Brasil. A hora foi escolhida, não sorteada: as
+    # 05:00-12:00 universais são onde se concentram os agendamentos deste repositório
+    # (memória `blog-workflows-infra`), mas isto é uma corrida de segundos e o atraso
+    # do GitHub não lhe faz diferença — o que importa é ser TODOS os dias, e cedo o
+    # suficiente para o dono ler antes de começar o dia.
+    - cron: '10 8 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+jobs:
+  guarda:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Instalar dependências
+        run: npm ci
+
+      - name: Perguntar ao YouTube se está tudo como foi combinado
+        id: vigiar
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: |
+          set +e
+          node src/scripts/youtube/upload-longo.js --vigiar
+          CODE=$?
+          set -e
+          # ⚠️ CONFERIR O RESULTADO, NUNCA SÓ O CÓDIGO — mas aqui o código É o resultado,
+          # e é ele que separa "está tudo bem" (0) de "há alarme" (9) de "o programa
+          # rebentou" (qualquer outro). Os três merecem destinos diferentes.
+          if [ "$CODE" = "0" ]; then echo "alarme=nao" >> "$GITHUB_OUTPUT"; exit 0; fi
+          if [ "$CODE" = "9" ]; then echo "alarme=sim" >> "$GITHUB_OUTPUT"; exit 0; fi
+          echo "::error::o guarda rebentou (código $CODE) — e um guarda que rebenta não vigia."
+          echo "alarme=sim" >> "$GITHUB_OUTPUT"
+          echo "alarmes<<FIM" >> "$GITHUB_OUTPUT"
+          echo "o próprio guarda falhou a correr (código $CODE) — ninguém está a vigiar o agendamento." >> "$GITHUB_OUTPUT"
+          echo "FIM" >> "$GITHUB_OUTPUT"
+
+      # ⚠️ O EMAIL VAI PELO MESMO CAMINHO DO RELATÓRIO DIÁRIO (Resend), porque é o único
+      # que já se sabe que chega ao dono. Um alarme que só existe no separador "Actions"
+      # é um alarme que ninguém lê — foi exactamente assim que este defeito passou.
+      - name: Avisar o dono
+        if: steps.vigiar.outputs.alarme == 'sim'
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          DIGEST_TO: ${{ vars.DIGEST_TO || 'finmoovi@gmail.com' }}
+          ALARMES: ${{ steps.vigiar.outputs.alarmes }}
+          CORRIDA: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: node .github/scripts/avisar-guarda-longo.mjs
+
+      - name: Ficar vermelho para o aviso não passar despercebido
+        if: steps.vigiar.outputs.alarme == 'sim'
+        run: |
+          echo "::error::o vídeo longo não está como foi combinado — ver o email e o registo acima."
+          exit 1

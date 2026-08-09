@@ -61,6 +61,27 @@ on:
     # medida: 36 minutos do princípio ao fim, dos quais 14 a fazer o vídeo.
     # Sábado às 02:00 universais = sexta às 23h00 no Brasil.
     - cron: '0 2 * * 6'
+    #
+    # 🔴 AS DUAS REPESCAGENS — 09/08/2026, e existem por uma razão medida.
+    #
+    # A PRIMEIRA corrida automática deste robô, sábado 08/08, **falhou**. Não havia
+    # segunda oportunidade: o canal ficou sem vídeo longo ao domingo e o dono só
+    # descobriu ao abrir o Studio no dia seguinte. Uma corrida por semana significa que
+    # qualquer tropeção — a IA, a cota, uma pane do GitHub — custa a semana inteira.
+    #
+    # ⚠️ **NÃO É PRECISA LÓGICA NENHUMA NOVA, e é isso que as torna seguras.** O passo
+    # "Conferir que o domingo da estreia está livre" já pergunta ao YouTube antes de
+    # gastar um cêntimo: se a corrida da sexta correu bem, o domingo tem dono e a
+    # repescagem desiste em silêncio (código 78, sucesso). Só trabalha se não houver
+    # vídeo — que é exactamente a definição de repescagem.
+    #
+    # ⚠️ **AS HORAS FORAM ESCOLHIDAS PELA MARGEM ATÉ À ESTREIA**, que é às 22:00
+    # universais de domingo. O vídeo leva ~56 min a fazer, e o relógio do GitHub neste
+    # repositório já atrasou 112 min (memória `blog-workflows-infra`). Às 12:00 sobram
+    # 34 horas; às 18:00 sobram 28. A última ainda acaba com folga de horas, não de
+    # minutos — pôr a última às 20:00 seria apostar em que nada atrasa.
+    - cron: '0 12 * * 6'   # sábado 09h00 no Brasil — 1ª repescagem
+    - cron: '0 18 * * 6'   # sábado 15h00 no Brasil — última oportunidade
 
 permissions:
   contents: write
