@@ -92,6 +92,8 @@ function lerFilaDeTemas() {
 const REGRAS_FIXAS = `
 STRICT RULES — no human figures, no faces, no hands unless explicitly asked for, no brand logos, no watermarks, no signature, no extra text beyond the words specified above, no placeholder or lorem-ipsum text. Every Portuguese word must be spelled EXACTLY as written, with the accents shown. Extreme contrast, punchy, and readable at 300 pixels wide on a phone.
 
+🔴 NUMBERS ARE FACTS, NOT DESIGN. Every digit in this brief comes from the video's own script. Reproduce each number DIGIT BY DIGIT, exactly as written. Do NOT round it, do NOT make it "look better", do NOT invent a nearby figure, do NOT change the word that follows it. A thumbnail showing a number the video never says is a lie to the viewer, and the image will be rejected and thrown away.
+
 Generate the image and ATTACH the final PNG file to your reply. Do not ask me any questions — if something is ambiguous, choose the boldest option.`;
 
 /**
@@ -238,9 +240,38 @@ async function main() {
 
   // ⚠️ Os números vêm do caderno do vídeo, NUNCA escritos à mão aqui. Se o caderno não
   // existir, o cartaz do número não se faz — em vez de sair com um número inventado.
-  const caderno = existsSync(caminhoCaderno) ? JSON.parse(readFileSync(caminhoCaderno, 'utf-8')) : null;
-  const ficha = caderno?.mapa?.fichaDeDivida || caderno?.fichaDeDivida
-    || JSON.parse(JSON.stringify(caderno || {}))?.mapa?.fichaDeDivida || null;
+  /**
+   * 🔴 O CADERNO ÓRFÃO — 09/08/2026, e custou-me três capas pagas a perceber.
+   *
+   * ═══ O QUE ACONTECEU ═══
+   * Pedi a capa do vídeo 2 três vezes. As três vieram com o selo **"R$ 614 A MAIS"**,
+   * quando o vídeo diz seiscentos reais e não tem fatura de cartão nenhuma. Acusei a
+   * Manus de inventar números e de reaproveitar tarefas. **Estava errado nas duas.**
+   *
+   * O 614 estava num ficheiro NOSSO: `<slug>.caderno.json`, com data de 08/08 10:32 —
+   * sobra de uma das corridas que falharam naquela manhã. Lá dentro: fatura 780,
+   * numeroEspinha 1280, aMais 614. **Nada disso é o vídeo que foi feito.** O programa
+   * leu-o, montou o selo com 614 e a Manus escreveu 614, obedecendo.
+   *
+   * ═══ POR QUE O ROBÔ NÃO SOFRE DISTO, E ESTA MÁQUINA SIM ═══
+   * O caderno e o guião são escritos pela MESMA corrida do `roteiro-longo.js`, e os dois
+   * estão no `.gitignore`. Na nuvem, cada corrida parte de um clone limpo: ou existem os
+   * dois e batem certo, ou não existe nenhum. **Aqui não** — o disco guarda tudo o que
+   * as corridas falhadas deixaram para trás, e nada as limpa.
+   *
+   * ═══ A REGRA ═══
+   * **Um caderno sem o guião ao lado é uma sobra, e não se acredita nele.** É a única
+   * prova barata de que os dois vieram da mesma corrida. Sem ficha, a capa cai no
+   * número-espinha do guião — e sem esse, sai sem selo. Nunca inventa.
+   */
+  const caminhoGuiao = join(RAIZ, 'src', 'scripts', 'youtube', 'output', `${slug}.longo.json`);
+  const caderno = existsSync(caminhoCaderno) && existsSync(caminhoGuiao)
+    ? JSON.parse(readFileSync(caminhoCaderno, 'utf-8'))
+    : null;
+  if (existsSync(caminhoCaderno) && !existsSync(caminhoGuiao)) {
+    console.log(`   ⚠️ há um "${slug}.caderno.json" sem o guião ao lado — é sobra de uma corrida antiga, e não se usa.`);
+  }
+  const ficha = caderno?.mapa?.fichaDeDivida || caderno?.fichaDeDivida || null;
 
   const destino = join(RAIZ, 'youtube-render', 'public', 'manus', slug);
   mkdirSync(destino, { recursive: true });
@@ -252,6 +283,13 @@ async function main() {
   const trabalhos = [];
   /** As capas que a máquina leu e recusou — vão para a quarentena do banco no fim. */
   const recusadas = [];
+  /**
+   * ⚠️ **DECLARADO AQUI FORA, e não dentro do `if` — 09/08/2026.** Estava com `const`
+   * dentro do bloco que monta o pedido da capa, e quem precisa dele é a CONFERÊNCIA, que
+   * corre lá em baixo. Resultado: `selo is not defined` no meio da corrida, depois de a
+   * imagem já estar paga e descarregada. `node --check` não apanha isto — só correr.
+   */
+  let selo = null;
   if (so !== 'imagens') {
     /**
      * 🔴 O TÍTULO ESTAVA CRAVADO EM 'SAIR DO VERMELHO' — 08/08/2026.
@@ -295,7 +333,7 @@ async function main() {
      */
     const aMais = ficha?.aMais || null;
     const espinha = Number(roteiro.mapa?.numeroEspinha ?? roteiro.numeroEspinha);
-    const selo = aMais
+    selo = aMais
       ? { valor: aMais, rotulo: 'A MAIS' }
       : (Number.isFinite(espinha) && espinha >= 10 ? { valor: espinha, rotulo: 'POR MÊS' } : null);
     if (!selo) console.log('   ⚠️ sem número no guião — a capa sai sem o selo vermelho (nada é inventado).');
@@ -363,8 +401,23 @@ async function main() {
   for (const t of fila) {
     console.log(`🖼️  ${t.ficheiro} — ${t.onde}`);
     try {
+      /**
+       * A tentativa vai no título da tarefa, como já vai no `fotos-longo.js`. Serve para
+       * distinguir corridas no painel da Manus.
+       *
+       * ⚠️ Não se usa a hora: o mesmo pedido tem de dar sempre a mesma imagem, senão
+       * refazer um vídeo muda-lhe a cara. Usa-se **quantas já existem em disco**.
+       *
+       * ⚠️ **E NÃO FOI ISTO QUE RESOLVEU O 614** — fica escrito para ninguém repetir o
+       * meu erro. Eu vi a mesma capa errada sair três vezes, concluí que a Manus estava
+       * a reaproveitar a tarefa e escrevi esta linha. **A Manus estava a fazer
+       * exactamente o que se lhe pedia.** O número errado vinha de um ficheiro NOSSO —
+       * ver a nota do caderno órfão, mais abaixo. Acusar a ferramenta antes de imprimir
+       * o que se lhe manda custou-me duas imagens pagas.
+       */
+      const jaTentadas = fs.readdirSync(destino).filter((f) => f.startsWith(`${t.ficheiro}`) && f.endsWith('.png')).length;
       const r = await pedirAgente(t.prompt, {
-        titulo: `FinMoovi · ${slug} · ${t.ficheiro}`,
+        titulo: `FinMoovi · ${slug} · ${t.ficheiro}${jaTentadas ? ` · tentativa ${jaTentadas + 1}` : ''}`,
         aoAndar: (m) => console.log(`      ${m}`),
       });
       const imagens = r.anexos.filter((a) => a.type === 'image' || /^image\//.test(a.content_type || ''));
