@@ -580,7 +580,9 @@ const CenaLonga: React.FC<{
   const conteudo = (() => {
     if (!v) return <CenaDeBroll comp={cena.broll} brollFrames={cena.brollFrames} />;
     switch (v.tipo) {
-      case 'numero': return <CartaoDeNumero valor={v.valor ?? 0} rotulo={v.rotulo} />;
+      // ⚠️ `frames` é NOVO aqui (09/08): sem a duração da cena, as batidas do cartão
+      //    caíam num relógio que não é o dele. Ver `batidasDaCena` em `longo/telas.tsx`.
+      case 'numero': return <CartaoDeNumero valor={v.valor ?? 0} rotulo={v.rotulo} frames={frames} />;
       case 'conta': return <CartaoDaConta linhas={v.linhas ?? []} frames={frames} />;
       case 'app': return <TelaDoApp valor={v.valor ?? 0} rotulo={v.rotulo} passo={v.passo} />;
       case 'frase':

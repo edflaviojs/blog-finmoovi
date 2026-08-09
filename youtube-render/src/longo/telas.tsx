@@ -89,22 +89,161 @@ export const Etiqueta: React.FC<{ valor: number; rotulo?: string }> = ({ valor, 
  * número ACONTECER. E o rótulo por cima é o nome que o guião lhe deu — não um nome
  * inventado aqui, senão o ecrã volta a chamar às coisas o que a voz não chama.
  */
-export const CartaoDeNumero: React.FC<{ valor: number; rotulo?: string }> = ({ valor, rotulo }) => {
+/**
+ * 🔴 A BATIDA DA CENA — 09/08/2026, e é a peça que tira o vídeo longo do congelamento.
+ *
+ * ═══ O DEFEITO, MEDIDO FAMÍLIA A FAMÍLIA ═══
+ * O vídeo longo tem **30 cenas de 12 segundos em média** — e 29 das 30 passam dos 8.
+ * Medida a diferença entre quadros distantes 3 segundos DENTRO da mesma cena, deu
+ * **zero** duas vezes só no primeiro minuto: três segundos sem um pixel mudar.
+ *
+ * A causa não é falta de animação — é **animação toda espremida no princípio**:
+ *
+ * | família | acaba de animar aos | fica parada |
+ * |---|---|---|
+ * | `numero` | 1,3s | ~11s |
+ * | `frase`  | 1,6s | ~11s |
+ * | `conta`  | 58% da cena | os últimos 42% |
+ *
+ * E a régua por família confirmou quem são os culpados (o vídeo inteiro tem 3,25):
+ * **conta 1,81 · numero 2,35 · frase 2,40** — contra `metafora` 5,26 e `palavras` 3,58.
+ *
+ * ⚠️ **`palavras` NÃO se toca**, e isso foi decisão de medir e não de gosto: com 3,58
+ * ela está acima da média do próprio vídeo, porque já mostra as palavras em BLOCOS ao
+ * ritmo da voz real. Mexer no que funciona é como se perdem coisas boas.
+ *
+ * ═══ O RITMO, ESCOLHIDO PELO DONO ═══
+ * *"Sim vamos testar com 4-5 segundos."*
+ *
+ * ⚠️ **E é METADE do ritmo do Short, de propósito.** O de 50s troca de imagem a cada
+ * 2,6s e o de 16s a cada 1,9s — mas ali a pessoa está a rolar o dedo e não escolheu o
+ * vídeo. No longo ela **clicou**: já decidiu ficar. A 2 segundos isto seria agitação,
+ * não ritmo — dariam ~190 batidas em seis minutos.
+ *
+ * ⚠️ **BATIDA NÃO É TROCA DE IMAGEM.** A imagem fica; o que entra é uma parte nova
+ * dela. Por isso não é preciso material novo — é ligar o que já está desenhado.
+ */
+export const SEGUNDOS_ENTRE_BATIDAS = 4.5;
+
+/**
+ * Onde caem as batidas de uma cena, em fotogramas locais.
+ * ⚠️ Nunca no fotograma 0 (aí já entra a cena inteira) nem nos últimos 0,8s (aí já está
+ * a começar a transição para a cena seguinte, e uma batida em cima dela lê-se como
+ * defeito, não como ritmo).
+ */
+export function batidasDaCena(frames: number, fps: number, intervalo = SEGUNDOS_ENTRE_BATIDAS): number[] {
+  const passo = Math.round(intervalo * fps);
+  const limite = frames - Math.round(fps * 0.8);
+  const out: number[] = [];
+  for (let f = passo; f < limite; f += passo) out.push(f);
+  return out;
+}
+
+/**
+ * Quanto "vale" a batida no fotograma atual: 1 no instante da batida, 0 a 0,5s dela.
+ * É o número que se multiplica por uma escala, um brilho ou uma opacidade.
+ * ⚠️ Devolve o MAIOR de todas as batidas, para duas próximas nunca se cancelarem.
+ */
+export function forcaDaBatida(frameLocal: number, batidas: number[], fps: number): number {
+  const duracao = Math.round(fps * 0.5);
+  let maior = 0;
+  for (const b of batidas) {
+    const d = frameLocal - b;
+    if (d < 0 || d >= duracao) continue;
+    // sobe num instante e desce devagar — o perfil de uma batida de verdade
+    const v = d < 2 ? d / 2 : 1 - (d - 2) / (duracao - 2);
+    if (v > maior) maior = v;
+  }
+  return Math.max(0, Math.min(1, maior));
+}
+
+export const CartaoDeNumero: React.FC<{ valor: number; rotulo?: string; frames?: number }> = ({ valor, rotulo, frames = 360 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const conta = spring({ frame, fps, delay: 8, config: { damping: 200, mass: 1.1 } });
   const pop = spring({ frame, fps, config: { damping: 13, mass: 0.7 } });
   const anel = interpolate(frame, [8, 40], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
 
+  /**
+   * 🔴 AS BATIDAS — 09/08/2026. Tudo aqui em cima acaba ao fotograma 40 (1,3s) e o
+   * cartão ficava **onze segundos parado**. Medido: 2,35 de movimento, o segundo pior
+   * do vídeo.
+   *
+   * O que entra:
+   *  · **a respiração**, contínua — o halo cresce e encolhe num ciclo de 4s. Não se
+   *    nota, e é essa a intenção: garante que dois fotogramas seguidos nunca são iguais.
+   *  · **a batida**, de 4,5 em 4,5s — um anel sai do número e apaga-se, e o número dá
+   *    um baque de escala. É o número a dizer *"eu ainda estou aqui, e ainda dói"*.
+   *
+   * ⚠️ **A batida MULTIPLICA a escala de entrada, não a substitui.** Somá-la faria o
+   * número saltar do sítio; multiplicá-la faz o cartão inteiro pulsar como um todo.
+   */
+  const batidas = batidasDaCena(frames, fps);
+  const batida = forcaDaBatida(frame, batidas, fps);
+  /**
+   * 🔴 LEIA ISTO ANTES DE ACRESCENTAR MAIS EFEITO AQUI — 09/08/2026.
+   *
+   * Esta cena mostra UM número durante 12,3 segundos e mede **1,25** de movimento.
+   * Tentei subir isso por decoração, DUAS vezes, e medi as duas:
+   *
+   * | tentativa | resultado |
+   * |---|---|
+   * | halo a respirar 2% + anel de 4px | 1,25 → **1,32** (6%) |
+   * | halo a 7% + dois anéis de 14px + fundo abstrato animado | 1,25 → **1,39** (11%) |
+   *
+   * **Nenhuma das duas resolve, e a lição é essa.** Comparadas as famílias do vídeo,
+   * quem pontua alto é `metafora` (5,26 — um ator animado) e `palavras` (3,58 — o BLOCO
+   * de texto muda várias vezes na mesma cena). **O que move a agulha é o CONTEÚDO
+   * mudar, não a decoração animar.**
+   *
+   * ⚠️ É a terceira vez no mesmo dia que a mesma lição aparece: a câmara lenta na capa
+   * do Short (6,09 → 6,11) e estas duas. **Movimento que não conta nada não conta.**
+   *
+   * O que fica aqui é honesto e vale os 11%: o fundo animado que a `frase` já tinha e
+   * este cartão não, e uma batida visível. Mas o conserto de verdade desta família é
+   * dar-lhe um SUJEITO que se mexa — está por decidir com o dono.
+   */
+  const respira = 1 + Math.sin((frame / (fps * 3.5)) * Math.PI * 2) * 0.07;
+
   return (
     <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center', paddingBottom: FUNDO_LIVRE }}>
+      {/**
+       * 🔴 O FUNDO ANIMADO — e a descoberta que interessa é que ele JÁ EXISTIA.
+       *
+       * `CartaoDeFrase` usa `FundoAbstrato` desde sempre: manchas de 460 a 520px que
+       * incham 50% e derivam 60px ao longo da cena INTEIRA. O cartão do número não o
+       * tinha — só um halo parado. Medido, o número era a 2ª família mais congelada.
+       *
+       * ⚠️ **Não é peça nova: é ligar o que estava desligado.** É a mesma lição das 32
+       * coreografias que viviam oito segundos na capa e nunca mais apareciam.
+       */}
+      <FundoAbstrato variante={0} frames={frames} />
       {/* o halo por trás do número — dá-lhe peso sem lhe pôr uma caixa à volta */}
       <div style={{
         position: 'absolute', width: 1180, height: 1180, borderRadius: '50%',
         background: 'radial-gradient(circle, rgba(139,92,246,0.20), rgba(13,17,23,0) 62%)',
-        transform: `scale(${interpolate(anel, [0, 1], [0.6, 1])})`, opacity: anel,
+        transform: `scale(${interpolate(anel, [0, 1], [0.6, 1]) * respira})`, opacity: anel,
       }} />
-      <div style={{ textAlign: 'center', transform: `scale(${interpolate(pop, [0, 1], [0.88, 1])})` }}>
+      {/* O ANEL DA BATIDA: nasce no número e abre-se para fora, apagando-se. */}
+      {/* ⚠️ 14px e não 4: a 160×90, que é a escala a que a régua (e o olho de quem vê
+          num telemóvel) julga o movimento, um traço de 4px não existe. */}
+      {batida > 0 ? (
+        <>
+          <div style={{
+            position: 'absolute', width: 900, height: 900, borderRadius: '50%',
+            border: `14px solid ${BRAND.violet}`,
+            transform: `scale(${interpolate(batida, [0, 1], [1.7, 0.5])})`,
+            opacity: batida * 0.6,
+          }} />
+          <div style={{
+            position: 'absolute', width: 900, height: 900, borderRadius: '50%',
+            border: `8px solid ${BRAND.cyan}`,
+            transform: `scale(${interpolate(batida, [0, 1], [2.1, 0.75])})`,
+            opacity: batida * 0.35,
+          }} />
+        </>
+      ) : null}
+      <div style={{ textAlign: 'center', transform: `scale(${interpolate(pop, [0, 1], [0.88, 1]) * (1 + batida * 0.055)})` }}>
         {rotulo ? (
           <div style={{
             fontFamily: BODY, fontWeight: 800, fontSize: 40, letterSpacing: 2,
@@ -163,6 +302,29 @@ export const CartaoDaConta: React.FC<{ linhas: LinhaDaConta[]; frames: number }>
   const janela = janelaDaConta(frames, linhas.length);
   const cor = (tom: string) => (tom === 'alerta' ? '#f87171' : tom === 'mau' ? '#fb923c' : tom === 'bom' ? '#22c55e' : BRAND.text);
 
+  /**
+   * 🔴 O QUE ACONTECE DEPOIS DE A CONTA ESTAR FEITA — 09/08/2026.
+   *
+   * Esta é **a família mais congelada do vídeo longo: 1,81 de movimento**, contra 3,25
+   * do vídeo inteiro. As linhas entram até aos 58% da cena (é o que `janelaDaConta`
+   * garante, para a conta estar FEITA quando a voz diz o resultado) — e depois **os
+   * últimos 42% são uma fotografia**.
+   *
+   * ⚠️ **Não se antecipa a entrada das linhas para tapar o buraco.** O comentário da
+   * `janelaDaConta` explica porquê, e continua verdadeiro: a meio da cena ainda faltavam
+   * as duas linhas que interessam. O sítio a consertar é o DEPOIS, não o antes.
+   *
+   * O que entra, e só na linha que interessa: a **linha forte** (o total, o "a mais" —
+   * o número que dói) recebe uma batida de 4,5 em 4,5 segundos. Ela cresce um nada e o
+   * seu brilho vermelho acende.
+   *
+   * ⚠️ **Só a linha `forte`, e só depois de ela ter entrado.** Pulsar a lista toda daria
+   * um painel a tremer; pulsar antes da entrada seriam dois movimentos na mesma linha.
+   * A conta é um raciocínio — o que se sublinha é a conclusão dele.
+   */
+  const batidas = batidasDaCena(frames, fps);
+  const batida = forcaDaBatida(frame, batidas, fps);
+
   return (
     // ⚠️ `paddingTop` de 150: sem ele o painel subia até aos 78px e tapava a assinatura
     // FinMoovi do topo — visto no fotograma, com o logótipo a espreitar por trás da
@@ -175,7 +337,10 @@ export const CartaoDaConta: React.FC<{ linhas: LinhaDaConta[]; frames: number }>
         }}>A conta que ninguém faz</div>
         {linhas.map((l, i) => {
           const entra = spring({ frame, fps, delay: 6 + i * janela, config: { damping: 17, mass: 0.6 } });
-          const carimbo = l.forte ? interpolate(entra, [0, 1], [1.35, 1]) : 1;
+          // ⚠️ `* entra` — a batida só existe depois de a linha ter entrado. Ver a nota
+          //    das batidas, mais acima.
+          const pulso = l.forte ? batida * entra : 0;
+          const carimbo = l.forte ? interpolate(entra, [0, 1], [1.35, 1]) * (1 + pulso * 0.07) : 1;
           return (
             <div key={i} style={{
               display: 'flex', justifyContent: 'space-between', alignItems: 'baseline',
@@ -191,7 +356,7 @@ export const CartaoDaConta: React.FC<{ linhas: LinhaDaConta[]; frames: number }>
                 fontFamily: DISPLAY, fontWeight: 900,
                 fontSize: l.forte ? 76 : 48, color: cor(l.tom),
                 transform: `scale(${carimbo})`, transformOrigin: 'right center',
-                textShadow: l.forte ? '0 0 40px rgba(248,113,113,0.35)' : 'none',
+                textShadow: l.forte ? `0 0 ${40 + pulso * 34}px rgba(248,113,113,${0.35 + pulso * 0.4})` : 'none',
               }}>{dinheiro(l.valor)}</div>
             </div>
           );
@@ -307,6 +472,35 @@ export const CartaoDeFrase: React.FC<{ texto: string; etiquetaTexto?: string; va
   const passo = palavras.length > 14 ? 2 : 3;
   const aproxima = interpolate(frame, [0, Math.max(1, frames)], [1, 1.05]);
 
+  /**
+   * 🔴 A ONDA QUE LÊ A FRASE — 09/08/2026, e é aqui que está o maior ganho do vídeo.
+   *
+   * ═══ POR QUE ESTA FAMÍLIA E NÃO OUTRA ═══
+   * Medida família a família, `frase` dá **2,40 de movimento em 74 SEGUNDOS de vídeo**,
+   * com **30 segundos parados** — a maior fatia de tempo morto do vídeo inteiro. As
+   * palavras assentam ao fotograma 47 (1,6s) e depois ficam onze segundos quietas.
+   *
+   * ═══ O QUE ENTRA ═══
+   * Uma **onda de destaque que percorre as palavras**, uma volta a cada 4,5 segundos.
+   * A palavra por onde a onda passa clareia e sobe um nada.
+   *
+   * ⚠️ **Não é enfeite: é a frase a ser LIDA.** Esta cena existe para a pessoa reter uma
+   * frase — a promessa, a resposta, o gancho. A onda faz o olho percorrê-la outra vez em
+   * vez de a ver como um cartaz parado. Movimento que serve o conteúdo, não que o tapa.
+   *
+   * ⚠️ **Só começa depois de a frase estar toda montada.** Uma onda por cima de palavras
+   * que ainda estão a entrar seriam dois movimentos a disputar o mesmo olho.
+   *
+   * ⚠️ **E é suave de propósito** (25% de brilho, 6px de subida). Um destaque forte
+   * transformaria isto numa legenda karaokê — e a legenda de baixo já faz esse trabalho.
+   */
+  const montada = 8 + palavras.length * passo + 10;
+  const voltaEmFrames = Math.round(fps * SEGUNDOS_ENTRE_BATIDAS);
+  const ondaAtiva = frame > montada && palavras.length > 1;
+  const posicaoDaOnda = ondaAtiva
+    ? (((frame - montada) % voltaEmFrames) / voltaEmFrames) * (palavras.length + 2) - 1
+    : -99;
+
   return (
     <AbsoluteFill style={{ overflow: 'hidden' }}>
       <FundoAbstrato variante={aoLado ? 1 : 2} frames={frames} />
@@ -336,12 +530,22 @@ export const CartaoDeFrase: React.FC<{ texto: string; etiquetaTexto?: string; va
         }}>
           {palavras.map((p, i) => {
             const pop = spring({ frame: frame - (8 + i * passo), fps, config: { damping: 15, mass: 0.5 } });
+            /**
+             * O brilho da onda nesta palavra: 1 quando ela está em cima, 0 a duas
+             * palavras de distância. Ver `posicaoDaOnda`, mais acima.
+             * ⚠️ Numa palavra que ainda está a ENTRAR, a onda não conta (`pop` corta-a):
+             * dois movimentos na mesma palavra ao mesmo tempo lêem-se como tremor.
+             */
+            const onda = Math.max(0, 1 - Math.abs(i - posicaoDaOnda) / 2) * pop;
             return (
               <span key={i} style={{
-                display: 'inline-block', opacity: pop,
-                transform: `translateY(${interpolate(pop, [0, 1], [22, 0])}px)`,
+                display: 'inline-block',
+                opacity: pop,
+                transform: `translateY(${interpolate(pop, [0, 1], [22, 0]) - onda * 6}px)`,
                 ...(chamada ? gradientText : {}),
-                ...(chamada ? { filter: 'drop-shadow(0 0 44px rgba(139,92,246,0.55))' } : {}),
+                ...(chamada
+                  ? { filter: `drop-shadow(0 0 ${44 + onda * 26}px rgba(139,92,246,${0.55 + onda * 0.25}))` }
+                  : { filter: onda > 0.02 ? `brightness(${1 + onda * 0.25}) drop-shadow(0 0 ${onda * 30}px rgba(139,92,246,${onda * 0.5}))` : undefined }),
               }}>{p}</span>
             );
           })}
