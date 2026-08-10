@@ -1,0 +1,104 @@
+name: Multipost — Vigia das redes (diário)
+
+# ♦ O VIGIA DAS REDES — 10/08/2026, IMPLEMENTACAO26 §14.
+#
+# ═══ POR QUE ESTE ROBÔ EXISTE ═══
+# O Reel do Instagram falhou em 08, 09 e 10/08 — três dias seguidos — e ninguém deu por
+# nada. A causa (uma opção que a conta não aceita) foi consertada no mesmo dia. Este robô
+# não é o conserto: é a resposta à pergunta que ficou por responder, que é **porque é que
+# ninguém soube durante três dias**.
+#
+# A resposta está na forma como a entrega funciona:
+#   · o carteiro corre às 12h20 e só ENTREGA o pedido ao Multipost;
+#   · o servidor aceita com 200 e a corrida do GitHub acaba VERDE;
+#   · quem publica é o Multipost, sete horas depois, a partir das 19h;
+#   · quando ele falha, a falha fica só lá dentro.
+#
+# ⚠️ **NENHUMA PROVA DE MESA PODIA APANHAR ISTO** — elas medem o que nós mandamos, e a
+# pergunta aqui é o que a REDE fez com aquilo. Só se sabe perguntando depois da hora.
+#
+# ⚠️ **VERMELHO É DE PROPÓSITO.** É a segunda campainha: o email do Resend chega à caixa
+# do dono, e o email do GitHub chega a quem segue o repositório. Uma delas há-de ser vista.
+#
+# ⚠️ **NÃO TOCA EM NADA.** Não reagenda, não apaga, não republica, não escreve no
+# repositório, não gasta IA. Só faz perguntas — a mesma regra do guarda do canal.
+
+on:
+  schedule:
+    # ⚠️ 08:20 universais = 05h20 no Brasil, DEZ MINUTOS depois do guarda do canal. A hora
+    # não é sorteada, tem duas exigências a cumprir ao mesmo tempo:
+    #   · tarde o suficiente: a última rede do dia publica às 23h47 universais, e a janela
+    #     de 26 h do vigia precisa de a apanhar inteira, com folga para o atraso do cron do
+    #     GitHub (que já chegou a 112 minutos nesta casa);
+    #   · cedo o suficiente: o dono lê antes de começar o dia, e lê os dois alarmes — o do
+    #     canal e o das redes — na mesma manhã, um a seguir ao outro.
+    - cron: '20 8 * * *'
+  workflow_dispatch:
+    inputs:
+      horas:
+        description: 'Olhar quantas horas para trás (vazio = 26)'
+        required: false
+
+permissions:
+  contents: read
+
+# ⚠️ GRUPO PRÓPRIO. Ele não escreve em `.github/data`, portanto não tem de esperar pelos
+# carteiros — e um vigia que espera na fila é um vigia que chega tarde.
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+jobs:
+  vigiar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Instalar dependências
+        run: npm ci
+
+      # ⚠️ O `set +e` é obrigatório: o vigia sai com 9 quando ENCONTRA alarme, e sem isto
+      # o passo morria aqui sem chegar a mandar o email. Os três destinos são diferentes
+      # de propósito — 0 é "está tudo bem", 9 é "há alarme", e qualquer outro é "o próprio
+      # vigia rebentou", que não pode passar por "está tudo bem".
+      - name: Perguntar ao Multipost o que aconteceu a cada publicação
+        id: vigiar
+        env:
+          MULTIPOST_API_KEY: ${{ secrets.MULTIPOST_API_KEY }}
+        run: |
+          ARGS=""
+          if [ -n "${{ github.event.inputs.horas }}" ]; then ARGS="--horas=${{ github.event.inputs.horas }}"; fi
+          set +e
+          node src/scripts/multipost/vigiar.js $ARGS
+          CODE=$?
+          set -e
+          if [ "$CODE" = "0" ]; then exit 0; fi
+          if [ "$CODE" = "9" ]; then exit 0; fi
+          echo "::error::o vigia rebentou (código $CODE) — e um vigia que rebenta não vigia."
+          {
+            echo "alarme=sim"
+            echo "alarmes<<FIM"
+            echo "o próprio vigia falhou a correr (código $CODE) — ninguém está a conferir se as publicações saíram."
+            echo "FIM"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Avisar o dono
+        if: steps.vigiar.outputs.alarme == 'sim'
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          DIGEST_TO: ${{ vars.DIGEST_TO || 'finmoovi@gmail.com' }}
+          ALARMES: ${{ steps.vigiar.outputs.alarmes }}
+          CORRIDA: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: node .github/scripts/avisar-vigia-redes.mjs
+
+      - name: Ficar vermelho para o aviso não passar despercebido
+        if: steps.vigiar.outputs.alarme == 'sim'
+        run: |
+          echo "::error::há publicação(ões) que não saíram — ver o email e o registo acima."
+          exit 1

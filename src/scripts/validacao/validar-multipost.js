@@ -28,6 +28,9 @@ import {
   linkDoVideo, topicosSemOProduto, comoLista, MAX_ETIQUETAS_LINKEDIN,
   horaDaRede, MINUTOS_DE_MARGEM, STORIES, minutosDoStory, storiesEmFalta,
 } from '../multipost/entregar.js';
+// ⚠️ O vigia nasceu em 10/08 e prova-se aqui, no mesmo sítio da entrega: são as duas
+// metades da mesma pergunta — o que mandamos, e o que a rede fez com aquilo.
+import { classificarPost, entradasNaJanela, motivoLegivel } from '../multipost/vigiar.js';
 
 let passou = 0;
 let falhou = 0;
@@ -809,6 +812,89 @@ console.log('\n18. O ENVELOPE — a data fica FORA da lista de redes');
     corpo.posts[0].value[0].image.map((m) => m.id).join(',') === 'm1,c1');
   ok('e a legenda continua a ir com um parágrafo por linha',
     corpo.posts[0].value[0].content === '<p>linha</p>');
+}
+
+console.log('\n19. O VIGIA DAS REDES — a pergunta que só o servidor sabe responder');
+
+{
+  const AGORA = new Date('2026-08-11T08:20:00.000Z');
+  const HORA = (h) => new Date(`2026-08-1${h < 10 ? 0 : 1}T22:00:00.000Z`);
+
+  /**
+   * 🔴 A PROVA QUE ESTE ROBÔ EXISTE PARA FAZER. Um post que o servidor diz ter falhado é
+   * alarme — e foi exactamente isto que ficou três dias sem ninguém ver.
+   */
+  ok('🔴 um post que FALHOU é alarme',
+    classificarPost({ estado: 'ERROR', publicaEm: HORA(0), agora: AGORA }).alarme === true);
+  ok('e um publicado não é',
+    classificarPost({ estado: 'PUBLISHED', publicaEm: HORA(0), agora: AGORA }).alarme === false);
+
+  /**
+   * ⚠️ `QUEUE` DEPOIS DA HORA NÃO É TRAVADO — É A REPETIR. Medido: o vídeo do Bluesky
+   * levou 21 minutos de tentativas antes de o servidor desistir. Uma tolerância curta
+   * daria alarme falso num post que ainda ia publicar bem.
+   */
+  ok('um post ainda na fila há 20 min NÃO é alarme (está a repetir)',
+    classificarPost({
+      estado: 'QUEUE',
+      publicaEm: new Date(AGORA.getTime() - 20 * 60000),
+      agora: AGORA,
+    }).alarme === false);
+  ok('🔴 mas ao fim de mais de uma hora passa a ser',
+    classificarPost({
+      estado: 'QUEUE',
+      publicaEm: new Date(AGORA.getTime() - 90 * 60000),
+      agora: AGORA,
+    }).alarme === true);
+
+  /**
+   * 🔴 O CADERNO A MENTIR. Já aconteceu em 05/08: um post apagado à mão no painel deixa o
+   * caderno a jurar que aquele vídeo já saiu, e o carteiro recusa-o para sempre.
+   */
+  ok('🔴 um post que já não existe no servidor é alarme, não silêncio',
+    classificarPost({ estado: null, publicaEm: HORA(0), agora: AGORA }).alarme === true);
+
+  const CADERNO = {
+    antigo: { publicaEm: '2026-08-10T22:00:00.000Z', postId: 'p0' },
+    ontem: {
+      publicaEm: '2026-08-10T22:00:00.000Z',
+      redes: {
+        instagram: { postId: 'p1', publicaEm: '2026-08-10T22:00:00.000Z' },
+        'instagram-story': { postId: 'p2', publicaEm: '2026-08-10T22:05:00.000Z' },
+        bluesky: { postId: 'p3', publicaEm: '2026-08-10T23:47:00.000Z' },
+      },
+    },
+    'semana-passada': {
+      publicaEm: '2026-08-01T22:00:00.000Z',
+      redes: { instagram: { postId: 'p9', publicaEm: '2026-08-01T22:00:00.000Z' } },
+    },
+  };
+  const desde = new Date(AGORA.getTime() - 26 * 3600 * 1000);
+  const dentro = entradasNaJanela(CADERNO, desde, AGORA);
+
+  ok('a janela apanha as três publicações de ontem', dentro.length === 3, `apanhou ${dentro.length}`);
+  // 🔑 Os Stories são publicações a sério e contam — deixá-los de fora repetia o defeito
+  // de 07/08, em que um Story falhado nunca mais era tentado.
+  ok('🔑 e os Stories contam como publicação',
+    dentro.some((e) => e.rede === 'instagram-story'));
+  ok('a de há uma semana fica de fora', !dentro.some((e) => e.postId === 'p9'));
+  /**
+   * ⚠️ UM REGISTO ANTIGO (sem `redes`) É IGNORADO. Ele é de quando só havia Instagram e
+   * não guardava identificador de post nenhum — não há o que perguntar sobre ele.
+   */
+  ok('e um registo antigo, sem redes, não gera pergunta nenhuma',
+    !dentro.some((e) => e.slug === 'antigo'));
+  ok('vêm por ordem de hora, para o relatório se ler de cima para baixo',
+    dentro.map((e) => e.postId).join(',') === 'p1,p2,p3');
+
+  /**
+   * 🔑 A FRASE DO SERVIDOR, e não a do painel. O painel diz sempre "An error occurred
+   * while publishing this post", que não diz nada. O motivo real vem do campo `error`.
+   */
+  ok('🔑 o motivo real é lido do campo `error`, mesmo vindo como texto',
+    motivoLegivel({ error: JSON.stringify({ cause: { failure: { message: "This account doesn't support Trial Reels" } } }) })
+      === "This account doesn't support Trial Reels");
+  ok('e um post sem erro não inventa motivo nenhum', motivoLegivel({}) === '');
 }
 
 console.log(`\n${'═'.repeat(72)}`);
