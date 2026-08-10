@@ -133,11 +133,10 @@ const REGRAS_DO_BLOCO = {
 ⚠️ Entre ${ORCAMENTO.abertura.min} e ${ORCAMENTO.abertura.max} palavras.`,
 
   chamada: `Este bloco é a CHAMADA — o recado rápido, o ÚNICO sítio do vídeo inteiro onde se pede alguma coisa.
-✓ Tem de continuar a dizer FINMOOVI e a mandar PROCURAR o app pelo nome. Isso não é enfeite: é a única coisa que este bloco faz.
-✓ Continue a oferecer só o que existe: o app FinMoovi (grátis, abre no navegador) e as calculadoras do blog.
+✓ Tem de continuar a dizer FINMOOVI e a pedir o comentário. Isso não é enfeite: é a única coisa que este bloco faz.
+✓ Continue a oferecer só o que existe: o app FinMoovi (grátis) e as calculadoras do blog.
 ⛔ NÃO conte história nova. NÃO escreva o bordão do canal.
-⛔ NÃO peça comentário: este vídeo sai em nove redes e em sete delas ninguém responde. O pedido de comentário vive na descrição do YouTube e na legenda do Instagram, não na fala.
-⛔ NÃO mande clicar em link — no Instagram e no TikTok o endereço escrito não é clicável.
+⛔ NÃO mande clicar em link — este vídeo também sai no Instagram, onde o endereço escrito não é clicável.
 ⚠️ Entre ${ORCAMENTO.chamada.min} e ${ORCAMENTO.chamada.max} palavras. É um recado, não um capítulo.`,
 
   fecho: `Este bloco é o FIM do vídeo — a resposta e a assinatura.

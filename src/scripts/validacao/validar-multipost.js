@@ -1001,6 +1001,25 @@ console.log('\n21. OS TRÊS FORMATOS — cada vídeo vai onde faz sentido, e só
     FORMATOS.longo.stories === false && FORMATOS.curto.stories === true && FORMATOS.loop16.stories === true);
 
   /**
+   * 🔴 QUEM PODE PEDIR COMENTÁRIO — decisão do dono, 10/08/2026, e as duas metades têm
+   * de ser medidas juntas.
+   *
+   * O vídeo longo é UM por semana em QUATRO redes: o dono responde à mão, e no YouTube o
+   * robô já responde sozinho. Os Shorts são TRÊS POR DIA em sete redes — vinte e um por
+   * semana — e aí responder à mão é impossível: a fala deles manda PROCURAR o app.
+   *
+   * ⚠️ **É o VOLUME que sustenta a excepção, não o gosto.** Esta prova existe para que
+   * ninguém a alargue aos Shorts "por consistência" — que foi exactamente o erro que se
+   * cometeu ao contrário, ao apagar a chamada do longo por consistência com eles.
+   */
+  ok('🔴 só o vídeo longo pode pedir comentário (1 por semana, o dono responde à mão)',
+    FORMATOS.longo.chamadaRespondidaAMao === true);
+  ok('🔴 e os dois Shorts NÃO podem — são 21 por semana, ninguém dá conta',
+    !FORMATOS.curto.chamadaRespondidaAMao && !FORMATOS.loop16.chamadaRespondidaAMao);
+  ok('⚠️ e é só UM formato no total — a excepção não se espalha',
+    Object.values(FORMATOS).filter((f) => f.chamadaRespondidaAMao).length === 1);
+
+  /**
    * 🔴 TRÊS JANELAS QUE NÃO SE TOCAM. Cada formato ocupa 1h47 (do minuto 0 ao 107).
    * Três vídeos por dia a cair no mesmo par de horas é a assinatura de um robô.
    */

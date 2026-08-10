@@ -344,20 +344,25 @@ export const EXEMPLO_DE_FECHO = 'No fim das contas, a sua conta de luz não sobe
  * obedece — a inversão exata do defeito crónico desta casa.
  */
 /**
- * 🔴 A FALA MUDOU EM 10/08/2026 — e é a decisão do dono de 07/08 (§12-A), que nunca tinha
- * chegado ao vídeo longo.
+ * 🔴 O VÍDEO LONGO PEDE COMENTÁRIO, E É DE PROPÓSITO — decisão do dono, 10/08/2026.
  *
- * O molde dizia *"Comenta FINMOOVI aqui embaixo"*. **Em sete das nove redes por onde este
- * vídeo passa não há ninguém a responder comentários** — só o Instagram e o YouTube têm
- * robô a cumprir. Prometer resposta onde ela não existe é pior do que não prometer nada.
+ * ⚠️ **NÃO IGUALAR ISTO AOS SHORTS.** Em 07/08 a fala dos Shorts mudou para *"procura
+ * FinMoovi"* (§12-A) porque eles saem **três por dia em sete redes**, e responder à mão a
+ * vinte e um vídeos por semana é impossível. Chegou a mudar-se o longo junto, por
+ * consistência — e o dono reverteu, com razão. **A conta é outra:**
  *
- * ⚠️ **E o pedido não desapareceu, mudou de sítio:** o *"comenta FINMOOVI"* continua
- * ESCRITO na descrição do YouTube e na legenda do Instagram — os dois únicos lugares onde
- * há robô. O que muda é a FALA, que é a mesma em todo o lado e por isso tem de ser
- * verdade em todo o lado.
+ *   · o vídeo longo é **UM por semana**, não três por dia;
+ *   · ele **nasce no YouTube** — é lá que estreia, e é lá que o comentário vale mais
+ *     (empurra o algoritmo **e** captura contacto);
+ *   · no YouTube há robô a responder (`comentarios.js`, de hora a hora desde 05/08);
+ *   · nas outras quatro redes **o dono responde à mão** — uma vez por semana, é
+ *     perfeitamente possível. Foi esse o compromisso dele, e é o que sustenta esta fala.
+ *
+ * 🔴 **Se um dia o longo passar a ser mais do que um por semana, esta decisão cai.** É o
+ * volume que a sustenta, não o gosto. Ver `FORMATOS.longo.chamadaRespondidaAMao`.
  */
 export const EXEMPLO_DE_CHAMADA = 'Quer ver quanto a sua casa está levando por mês nessas coisas pequenas? '
-  + 'Procura FinMoovi no navegador: é de graça, e você faz essa conta em dois toques.';
+  + 'Comenta FINMOOVI aqui embaixo que eu te mando o app de graça, e você faz essa conta em dois toques.';
 
 /**
  * O TEXTO CONTRA O QUAL SE MEDE A CÓPIA. Repare no que fica DE FORA:
@@ -836,12 +841,10 @@ ${ancora ? `${ancora}\n` : ''}
 ════════ O QUE A CHAMADA TEM DE FAZER ════════
 A pessoa acabou de ver um número que a assustou — e ela quer o DELA. Isso é tudo.
 · Pergunte se ela quer ver o número dela.
-· Mande-a PROCURAR o app pelo nome — "FinMoovi", escrito assim — e diga que é de graça e que abre no navegador.
-· Molde a adaptar: "quer ver o SEU? procura FinMoovi. É de graça."
+· Peça o COMENTÁRIO com a palavra FINMOOVI, prometendo o que você manda em troca.
+· Molde a adaptar: "quer ver o SEU? comenta FINMOOVI aqui que eu te mando."
 ⛔ Não conte história nova. Não repita nada do que já foi dito. Não diga o bordão do canal.
-⛔ NÃO peça comentário. Este vídeo sai em NOVE redes e em sete delas ninguém responde — a resposta automática só existe no Instagram e no YouTube. Prometer resposta onde ela não existe é pior do que não prometer nada.
-⛔ Não mande clicar em link nem dizer "o link está aqui embaixo": no Instagram e no TikTok o endereço escrito não é clicável, e a pessoa ia procurar um link que não existe.
-✓ O pedido de comentário NÃO desapareceu — ele vive na descrição do YouTube e na legenda do Instagram, escrito, onde há mesmo um robô a responder. Aqui é a FALA, e a fala é a mesma em todo o lado.
+⛔ Não mande clicar em link nem dizer "o link está aqui embaixo": este vídeo também sai no Instagram, onde o endereço escrito não é clicável, e a pessoa ia procurar um link que não existe.
 ⚠️ **TAMANHO: entre ${ORCAMENTO.chamada.min} e ${ORCAMENTO.chamada.max} palavras.** É um recado, não um capítulo.
 
 ${O_QUE_PODE_PROMETER}

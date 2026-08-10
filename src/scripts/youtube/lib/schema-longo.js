@@ -211,27 +211,24 @@ const TITULOS_GENERICOS = [
 const PALAVRAS_DE_CHAMADA = /\b(comenta\p{L}*|coment[áa]ri\p{L}*|inscrev\p{L}*|inscri[çc]\p{L}*|inscrit\p{L}*|curte|curtir|likes?|links?|sininho)\b|\b(na|d[ao]) (descri[çc][ãa]o|bio)\b/iu;
 
 /**
- * 🔑 A CHAMADA DO VÍDEO LONGO — 10/08/2026, e é a mesma decisão do dono de 07/08 (§12-A),
- * que nunca tinha chegado a este formato.
+ * 🔑 O QUE CONTA COMO "PEDIR" NO BLOCO DA CHAMADA — 10/08/2026.
  *
- * ═══ O QUE ESTAVA ERRADO, E PORQUE NINGUÉM VIU ═══
- * Em 07/08 a fala dos Shorts mudou de *"comenta FINMOOVI"* para **"procura FinMoovi"**,
- * porque **em sete das nove redes ninguém responde a comentários** — só o Instagram e o
- * YouTube têm robô a cumprir. O vídeo LONGO ficou para trás e continuou a pedir o
- * comentário, na fala **e** escrito no ecrã.
+ * ⚠️ **A chamada do vídeo longo PEDE COMENTÁRIO, e é decisão do dono** (ver
+ * `EXEMPLO_DE_CHAMADA`): é um vídeo por semana, nasce no YouTube — onde há robô a
+ * responder — e nas outras quatro redes o dono responde à mão.
  *
- * 🔴 **E não era esquecimento: o próprio código ORDENAVA a fala velha em cinco sítios** —
- * o molde do prompt, a instrução do prompt, o segundo leitor, o cartão do ecrã e **esta
- * trava**, que rejeitava qualquer chamada que não pedisse comentário. É o par
- * *prompt × validador* que esta casa já pagou vinte vezes: **o prompt manda escrever
- * exactamente o que o validador exige, e a fala nova era impossível.**
+ * Esta expressão existe à mesma, e aceita **as duas** falas: o comentário (a de hoje) e
+ * *"procura FinMoovi"* (a dos Shorts). Duas razões para ela ficar assim:
+ *   · se um dia o longo passar a ser mais do que um por semana, a fala muda — e a trava
+ *     já não é o obstáculo;
+ *   · e ela é **mais apertada** do que a antiga no que interessa: exige que se peça
+ *     alguma coisa **de verdade**, não uma palavra solta.
  *
- * ⚠️ **POR QUE HÁ UMA EXPRESSÃO SÓ PARA A CHAMADA, EM VEZ DE JUNTAR "procura" À DE CIMA:**
- * `PALAVRAS_DE_CHAMADA` também serve para PROIBIR que se peça alguma coisa nos outros
- * blocos. *"Comenta"* e *"inscreve"* não têm outro sentido; **"procura" tem** — *"procura
- * saber para onde vai o dinheiro"* é conteúdo, não chamada. Juntá-la ali reprovaria
- * aberturas boas. Por isso a chamada exige o verbo **colado ao nome do produto**, que é
- * uma coisa que só a chamada faz.
+ * 🔴 **POR QUE NÃO SE JUNTOU "procura" A `PALAVRAS_DE_CHAMADA`:** essa lista também serve
+ * para **PROIBIR** que se peça alguma coisa nos outros blocos. *"Comenta"* e *"inscreve"*
+ * não têm outro sentido; **"procura" tem** — *"procura saber para onde vai o dinheiro"* é
+ * conteúdo, não chamada. Juntá-la ali reprovaria aberturas boas. Por isso, aqui, o verbo
+ * tem de vir **colado ao nome do produto**, que é uma coisa que só a chamada faz.
  */
 export const PEDIDO_DA_CHAMADA = new RegExp(
   '\\b(comenta\\p{L}*|coment[áa]ri\\p{L}*)\\b'
@@ -242,17 +239,18 @@ export const PEDIDO_DA_CHAMADA = new RegExp(
 /**
  * A frase que aparece ESCRITA no ecrã no bloco da chamada, e a etiqueta por baixo dela.
  *
- * 🔴 **VIVE AQUI, NUM SÍTIO SÓ, DE PROPÓSITO.** Ela era escrita à mão em três lugares de
- * `imagens-longo.js` — o cartão e as duas listas de "frases que o guião declarou". Mudar
- * o cartão sem mudar as listas fazia a própria trava recusar a frase nova (*"não está
- * declarada no guião"*) e rebaixar a cena, em silêncio. Constante espelhada é a família
- * de defeito nº 1 desta casa.
+ * 🔴 **VIVE AQUI, NUM SÍTIO SÓ, DE PROPÓSITO — e isto ficou mesmo depois de a fala voltar
+ * atrás.** Ela era escrita à mão em três lugares de `imagens-longo.js`: o cartão e as
+ * **duas listas de "frases que o guião declarou"**. Mudar o cartão sem mudar as listas
+ * fazia a própria trava recusar a frase (*"não está declarada no guião"*) e rebaixar a
+ * cena, **em silêncio**. Constante espelhada é a família de defeito nº 1 desta casa — e
+ * foi por isso que a mudança de ontem e a reversão de hoje custaram uma linha cada.
  *
- * ⚠️ E a seta: no Short a pastilha tinha uma seta para baixo, que passou a LUPA quando a
- * fala mudou — uma seta a apontar para nada é a mesma mentira, em desenho.
+ * ⚠️ Tem de bater com o que a FALA diz (`EXEMPLO_DE_CHAMADA`): a pastilha escrita e a voz
+ * a dizer coisas diferentes é a pior das duas mentiras.
  */
-export const CHAMADA_NO_ECRA = 'Procura FinMoovi';
-export const CHAMADA_ETIQUETA_ECRA = 'é de graça, no navegador';
+export const CHAMADA_NO_ECRA = 'Comenta FINMOOVI';
+export const CHAMADA_ETIQUETA_ECRA = 'aqui nos comentários';
 
 /**
  * 🔴 NINGUÉM TEM NOME NESTE CANAL — 08/08/2026, correcção do dono.

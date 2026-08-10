@@ -966,6 +966,24 @@ export const FORMATOS = {
     stories: false,
     // 20h no domingo: a estreia no YouTube é às 19h, e as redes vêm DEPOIS dela.
     horaBR: 20,
+    /**
+     * 🔴 O ÚNICO FORMATO QUE PODE PEDIR COMENTÁRIO — decisão do dono, 10/08/2026.
+     *
+     * A trava do vídeo antigo (`falaPedeComentario`) existe para impedir uma promessa
+     * quebrada: quem comenta numa rede sem robô não recebe nada. **Aqui a promessa é
+     * cumprida na mesma — só que por uma pessoa.**
+     *
+     * ⚠️ **É O VOLUME QUE SUSTENTA ISTO, e não o gosto.** Os Shorts são **três por dia em
+     * sete redes** (vinte e um por semana): responder à mão é impossível, e por isso a
+     * fala deles manda PROCURAR o app. O longo é **UM por semana em quatro redes** — o
+     * dono olha os comentários do Facebook, LinkedIn, Telegram e Bluesky uma vez por
+     * semana, e no YouTube o robô já responde sozinho (`comentarios.js`).
+     *
+     * 🔴 **SE O LONGO PASSAR A SER MAIS DO QUE UM POR SEMANA, ISTO TEM DE CAIR** — junto
+     * com a fala em `EXEMPLO_DE_CHAMADA`, que é onde ela é escrita. As duas andam
+     * agarradas: a pastilha do ecrã, a voz e esta linha dizem a mesma coisa ou nenhuma.
+     */
+    chamadaRespondidaAMao: true,
   },
 };
 
@@ -1732,11 +1750,24 @@ async function main() {
    * prometer resposta onde ninguém responde —, mas tem de ser DITO, senão parece avaria.
    */
   const redesDoDia = redesDoFormato(formato);
-  const soInstagram = falaPedeComentario(roteiro);
+  /**
+   * 🔴 E O FORMATO PODE DISPENSAR A TRAVA — mas só um, e só por um motivo.
+   *
+   * `chamadaRespondidaAMao` está no vídeo longo porque é **um por semana em quatro
+   * redes**, e o dono respondeu que responde ele. A promessa continua cumprida; muda
+   * quem a cumpre. Nos Shorts (vinte e um por semana) isso não existe, e a trava manda.
+   */
+  const pedeComentario = falaPedeComentario(roteiro);
+  const soInstagram = pedeComentario && !formato.chamadaRespondidaAMao;
   const aEntregar = soInstagram ? redesDoDia.filter((r) => r.id === 'instagram') : redesDoDia;
   const storiesDoDia = formato.stories ? STORIES : [];
+  if (pedeComentario && formato.chamadaRespondidaAMao) {
+    log(`\n💬 A fala deste ${formato.nome} pede COMENTÁRIO, e vai à mesma às ${redesDoDia.length} redes.`);
+    log('   No YouTube o robô responde sozinho; nestas quatro é o dono que responde,');
+    log('   uma vez por semana. Foi essa a decisão — e é o volume que a sustenta.');
+  }
   if (soInstagram && !aEntregar.length) {
-    log(`\n🔴 "${slug}" é um ${formato.nome} cuja fala ainda PEDE COMENTÁRIO — e o Instagram,`);
+    log(`\n🔴 "${slug}" é um ${formato.nome} cuja fala PEDE COMENTÁRIO — e o Instagram,`);
     log('   que é a única rede onde há robô a responder, não recebe este formato.');
     log('   Não sai em rede nenhuma. Refaça o vídeo com a fala nova ("procura FinMoovi").');
     return 0;
