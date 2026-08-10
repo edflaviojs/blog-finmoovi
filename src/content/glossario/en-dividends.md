@@ -17,24 +17,24 @@ Dividends are the portion of a company's profit that is distributed to its share
 
 ## How does it work?
 
-1. The company makes a profit in the quarter/year
-2. The board decides to distribute part of that profit
-3. Those who held shares on the "ex-date" receive the dividends
-4. The [money](/en/posts/en-avoid-impulse-purchases) is directly deposited into your brokerage account
+1. The company makes a profit in the quarter/year  
+2. The board decides to distribute part of that profit  
+3. Those who held shares on the "ex-date" receive the dividends  
+4. The [money](/en/posts/en-avoid-impulse-purchases) is directly deposited into your brokerage account  
 
-## Dividends in Brazil
+## Dividends in many countries
 
-- They are **exempt from [Income](/en/posts/en-building-a-diversified-portfolio-with-r-500) Tax** for individuals
-- Brazilian companies are required to distribute at least 25% of their profit
-- Sectors that pay the most: banks, electricity companies, telecommunications
+- They are **exempt from [Income](/en/posts/en-building-a-diversified-portfolio-with-r-500) Tax** for individuals  
+- Companies are often required to distribute at least a portion of their profit  
+- Sectors that pay the most: banks, electricity companies, telecommunications  
 
 ## Practical example
 
-If you own 100 shares of a company that pays R$ 2.00 per share in dividends:
-- You receive: 100 × R$ 2.00 = **R$ 200.00**
-- Without selling any shares
-- Without paying taxes
+If you own 100 shares of a company that pays $0.40 per share in dividends:  
+- You receive: 100 × $0.40 = **$40.00**  
+- Without selling any shares  
+- Without paying taxes  
 
 ## Dividend strategy
 
-Many investors build portfolios focused on dividends to generate passive monthly income. With R$ 500,000 invested in good payers, it's possible to receive R$ 3,000-5,000/month.
+Many investors build portfolios focused on dividends to generate passive monthly income. With $100,000 invested in good payers, it's possible to receive $600‑$1,000/month.

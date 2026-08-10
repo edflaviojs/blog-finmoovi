@@ -19,7 +19,7 @@ Financial emergency is any unexpected situation that requires [money](/en/posts/
 
 - Job loss (need 3-6 months of [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the))
 - Medical emergency (surgery, treatment)
-- Car repair (R$ 2.000-5.000)
+- Car repair ($400-$1,000)
 - Broken appliance (refrigerator, washing machine)
 - Property problem (leak, plumbing)
 - Unexpected fine or tax
@@ -27,9 +27,9 @@ Financial emergency is any unexpected situation that requires [money](/en/posts/
 ## How to Prepare
 
 The best protection against financial emergencies is the **emergency reserve**:
-- 6 months of expenses for CLT
+- 6 months of expenses for salaried employees
 - 12 months for self-employed/individual entrepreneurs
-- In investments with daily [liquidity](/en/glossario/en-liquidity) (Tesouro [Selic](/en/glossario/en-selic), [CDB](/en/glossario/en-cdb))
+- In investments with daily [liquidity](/en/glossario/en-liquidity) (government bonds, [certificates of deposit (CDs)](/en/glossario/en-cdb))
 
 ## What to Do if You Don't Have a Reserve
 
@@ -38,10 +38,10 @@ If the emergency arrives and you don't have a reserve:
 1. **Don't use [overdraft](/en/glossario/en-overdraft)** (interest rates of 15%/month)
 2. **Don't use credit card revolving** (interest rates of 16%/month)
 3. Request a payroll loan (interest rates of 1-2%/month)
-4. Anticipate FGTS or 13th salary
+4. Anticipate severance guarantee fund or year-end bonus
 5. Sell something you don't use (marketplace)
 6. Negotiate direct installment with the creditor
 
 ## Prevention
 
-After resolving the emergency, prioritize building your emergency reserve. Start with R$ 1.000 (already covers most small unexpected expenses) and increase it up to 6 months of expenses.
+After resolving the emergency, prioritize building your emergency reserve. Start with $200 (already covers most small unexpected expenses) and increase it up to 6 months of expenses.

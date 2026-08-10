@@ -13,7 +13,7 @@ readingTime: 2
 
 ## What is [Credit](/en/glossario/en-credit) Score?
 
-Credit score is a note from 0 to 1000 that credit bureaus (Serasa, SPC, Boa Vista) give to you. This note indicates to banks and stores what the chance is of you paying your bills on time.
+Credit score is a note from 0 to 1000 that credit bureaus give to you. This note indicates to banks and stores what the chance is of you paying your bills on time.
 
 ## Score ranges
 
@@ -30,18 +30,18 @@ Credit score is a note from 0 to 1000 that credit bureaus (Serasa, SPC, Boa Vist
 - Paying bills on time
 - Having a long history of good payments
 - Having accounts in your name (electricity, phone)
-- Active Positive Registration
+- Active positive registration
 
 **Decreases:**
 - Delaying payments
-- Having a negative name (SPC/Serasa)
+- Having a negative name (credit bureau record)
 - Many credit inquiries in a short time
 - Using too much of the [credit card](/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026) limit
 
 ## How to improve your score
 
 1. Pay all bills on time (even small ones)
-2. Activate the Positive Registration on Serasa
+2. Activate the positive registration on your credit bureau
 3. Negotiate and pay off open debts
 4. Avoid applying for credit in many places at the same time
 5. Keep registration data up to date

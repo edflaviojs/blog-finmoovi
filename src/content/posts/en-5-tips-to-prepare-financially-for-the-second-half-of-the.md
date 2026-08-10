@@ -18,7 +18,7 @@ seo:
 ---
 
 ## Introduction
-We're already halfway through the year, and it's time to reflect on how we're handling our finances. Based on data from the [Instituto Brasileiro de Geografia e Estatística (IBGE)](https://www.ibge.gov.br), we know that most Brazilians struggle to manage their finances effectively. It's common to realize that expenses are higher than [income](/en/posts/en-building-a-diversified-portfolio-with-r-500), leading to a complicated financial situation. In this post, we'll discuss how to prepare financially for the second half of the year, with practical and accessible tips to help you control your expenses and achieve your financial goals.
+We're already halfway through the year, and it's time to reflect on how we're handling our finances. Based on data from the [national statistics office](https://www.ibge.gov.br), we know that most people struggle to manage their finances effectively. It's common to realize that expenses are higher than [income](/en/posts/en-building-a-diversified-portfolio-with-r-500), leading to a complicated financial situation. In this post, we'll discuss how to prepare financially for the second half of the year, with practical and accessible tips to help you control your expenses and achieve your financial goals.
 
 ## Understanding Your Current Financial Situation
 Before starting to plan for the second half of the year, it's essential to understand your current financial situation. This includes knowing how much you earn, how much you spend, and what your debts are. You can use the [FinMoovi app](https://www.finmoovi.com.br) to help you control your expenses and better understand your financial situation. With [FinMoovi](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your), you can record all your expenses and income, create a personalized [budget](/en/posts/en-5-tips-to-reorganize-your-finances-on-vacation), and receive alerts when you're exceeding your limits.
@@ -31,8 +31,6 @@ Now that you understand your current financial situation, it's time to define fi
 4. **Monitor your progress**: Use [FinMoovi](/en/posts/en-migrating-from-spreadsheets-to-a-financial-app) to track your progress and make adjustments as needed.
 
 ![Understanding Your Current Financial Situation](/images/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme-2.webp)
-
-
 
 ## Creating a [Budget](/en/posts/en-5-alternatives-to-mobills-in-2026) for the Second Half of the Year
 Now that you have defined financial goals, it's time to create a [budget](/en/posts/en-budgeting-with-minimum-wage-practical-tips) for the second half of the year. This includes deciding how you'll allocate your income to achieve your goals. Here are some tips to help you create a budget:
@@ -50,8 +48,7 @@ Managing debt and expenses is crucial to achieving your financial goals. Here ar
 
 ![Creating a Budget for the Second Half of the Year](/images/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme-4.webp)
 
-
-
 ## Conclusion
-Preparing financially for the second half of the year is essential to achieving your financial goals and having a more peaceful life. With the practical and accessible tips presented in this post, you can create a personalized budget, manage debt and expenses, and achieve your financial goals. Remember that the [Banco Central do Brasil](https://www.bcb.gov.br) and the [Receita Federal](https://www.gov.br/receitafederal) offer valuable resources and information to help you manage your finances. Additionally, [Serasa](https://www.serasa.com.br) can help you better understand your financial situation and find solutions to your financial problems.
+Preparing financially for the second half of the year is essential to achieving your financial goals and having a more peaceful life. With the practical and accessible tips presented in this post, you can create a personalized budget, manage debt and expenses, and achieve your financial goals. Remember that the [the central bank](https://www.bcb.gov.br) and the [tax authority](https://www.gov.br/receitafederal) offer valuable resources and information to help you manage your finances. Additionally, [credit bureaus](https://www.serasa.com.br) can help you better understand your financial situation and find solutions to your financial problems.
+
 Use FinMoovi to control your expenses and avoid surprises at the end of the month.

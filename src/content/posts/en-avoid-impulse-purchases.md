@@ -17,36 +17,30 @@ seo:
   keywords: ["how to avoid impulse purchases","personal finance","economy","money"]
 ---
 
-When you're at the mall or browsing the internet, it's easy to get carried away by offers and make impulse purchases. But if you're not careful, these purchases can blow your [budget](/en/posts/en-5-tips-to-reorganize-your-finances-on-vacation) and affect your financial stability. Imagine you earn $5,000 per month and spend $1,000 on impulse purchases - that's 20% of your salary!
+When you're at the mall or browsing the internet, it's easy to get carried away by offers and make impulse purchases. But if you're not careful, these purchases can blow your [budget](/en/posts/en-5-tips-to-reorganize-your-finances-on-vacation) and affect your financial stability. Imagine you earn $5,000 per month and spend $1,000 on impulse purchases – that's 20% of your salary!
 
 ## Control Your Spending
 To avoid impulse purchases, it's essential to understand where your [money](/en/posts/en-creating-an-emergency-fund) is going. **Practical tip:** keep a record of all your [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the) for a month, including small purchases like a coffee or a snack. This will help you identify spending patterns and areas where you can cut back on [expenses](/en/posts/en-the-50-30-20-method-for-budgeting). For example, if you spend $500 per month on restaurants, maybe it's time to start cooking at home.
 
-Additionally, it's crucial to have a realistic [budget](/en/posts/en-how-to-create-personal-budget) and follow a spending plan. This can include allocating a percentage of your salary to fixed expenses, such as rent and bills, and another percentage to variable expenses, such as entertainment and purchases. The [Banco Central do Brasil](https://www.bcb.gov.br) offers useful resources to help you create a [budget](/en/posts/en-budgeting-with-minimum-wage-practical-tips) and manage your finances.
+Additionally, it's crucial to have a realistic [budget](/en/posts/en-how-to-create-personal-budget) and follow a spending plan. This can include allocating a percentage of your salary to fixed expenses, such as rent and bills, and another percentage to variable expenses, such as entertainment and purchases. The [the central bank](https://www.bcb.gov.br) offers useful resources to help you create a [budget](/en/posts/en-budgeting-with-minimum-wage-practical-tips) and manage your finances.
 
 ## Identify Your Triggers
 Another important step to avoid impulse purchases is to identify your triggers. What situations or emotions lead you to make impulse purchases? Is it when you're stressed or bored? Is it when you see a special offer or discount? Once you've identified your triggers, you can start developing strategies to deal with them in a healthier way. For example, if you tend to make impulse purchases when you're stressed, try finding other ways to relax, such as meditating or exercising.
 
 ## Create a Shopping Plan
-Before making a purchase, it's essential to have a plan. **Practical tip:** make a shopping list before going to the mall or making online purchases, and try to stick to it. Additionally, it's crucial to research and compare prices before making a purchase. This can help you avoid impulse purchases and ensure you're getting the best value for your [money](/en/posts/en-financial-education-for-children). The [Serasa](https://www.serasa.com.br) offers useful resources to help you manage your purchases and avoid debt.
+Before making a purchase, it's essential to have a plan. **Practical tip:** make a shopping list before going to the mall or making online purchases, and try to stick to it. Additionally, it's crucial to research and compare prices before making a purchase. This can help you avoid impulse purchases and ensure you're getting the best value for your [money](/en/posts/en-financial-education-for-children). The [credit bureaus](https://www.serasa.com.br) offers useful resources to help you manage your purchases and avoid debt.
 
-![Identifique seus gatilhos](/images/posts/evite-compras-por-impulso-2.webp)
-
-
+![Identify your triggers](/images/posts/evite-compras-por-impulso-2.webp)
 
 ## Learn to Say No
 Finally, it's essential to learn to say no to impulse purchases. This can be challenging, especially if you're used to making impulse purchases, but it's a crucial step in taking control of your finances. **Practical tip:** try waiting 24 hours before making a non-essential purchase. This can help ensure you've thought it through and aren't acting on impulse.
 
-![Crie um plano de compras](/images/posts/evite-compras-por-impulso-3.webp)
-
-
+![Create a shopping plan](/images/posts/evite-compras-por-impulso-3.webp)
 
 ## Start Today
 Now that you know [how to avoid impulse purchases](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet), it's time to take action. Remember that controlling spending is an ongoing process, and it's essential to be patient and consistent. With time and practice, you can develop healthier spending habits and achieve your financial goals. For more information on personal finance, you can visit the [Investopedia](https://www.investopedia.com).
 
-![Aprenda a dizer não](/images/posts/evite-compras-por-impulso-4.webp)
-
-
+![Learn to say no](/images/posts/evite-compras-por-impulso-4.webp)
 
 ---
 **The next step is yours. Test [FinMoovi for free for 7 days](https://finmoovi.com) and discover where your money is really going.**

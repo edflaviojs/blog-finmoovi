@@ -24,16 +24,16 @@ An investment is simply putting your money into a financial product expecting to
 
 ![What it is](/images/glossario/aplicacao-inline-1.webp)
 
-- **CDB** (Certificado de Depósito Bancário) – works like a loan to the bank.  
-- **[Tesouro Direto](/en/glossario/en-tesouro-direto)** – purchase of securities issued by the government.  
+- **Certificates of deposit (CDs)** – works like a loan to the bank.  
+- **[government bonds](/en/glossario/en-tesouro-direto)** – purchase of securities issued by the government.  
 - **Investment funds** – pools of resources managed by professional managers.  
-- **LCI/LCA** (Letras de Crédito Imobiliário/Agrícola) – tax‑exempt [income tax](/en/glossario/en-income-tax) securities for those who invest in real‑estate or agricultural credit.  
+- **Tax‑exempt bank notes** (LCI/LCA) – tax‑exempt [income tax](/en/glossario/en-income-tax) securities for those who invest in real‑estate or agricultural credit.  
 
 The core idea is that, instead of leaving money idle in a checking account, you put it in a place that generates income. This helps protect purchasing power against inflation and builds a cushion for future projects.
 
 ## How it works
 
-When you decide to make an investment, you follow a very simple process: choose the product, set the amount and the term, and let the money “work” until maturity or until you decide to withdraw. Each type of investment has its own way of remunerating – some pay fixed interest, others vary according to the [Selic](/en/glossario/en-selic) rate or the performance of an index.  
+When you decide to make an investment, you follow a very simple process: choose the product, set the amount and the term, and let the money “work” until maturity or until you decide to withdraw. Each type of investment has its own way of remunerating – some pay fixed interest, others vary according to the **[central bank base rate](/en/glossario/en-selic)** or the performance of an index.  
 
 - **Choose the product** according to your goal (liquidity, return, or safety).  
 - **Set the amount** you can commit without harming your monthly budget.  
@@ -61,4 +61,4 @@ No investment is completely risk‑free, and understanding the pitfalls helps av
 - **Liquidity risk** – some products can only be redeemed after a set period, which can hinder emergencies.  
 - **Market risk** – price variations of assets can reduce the investment’s value.  
 
-It’s important to match your investor profile (conservative, moderate, or
+It’s important to match your investor profile (conservative, moderate, or)

@@ -18,28 +18,26 @@ seo:
 ---
 
 ## Defining the [Budget](/en/posts/en-5-tips-to-reorganize-your-finances-on-vacation)
-To start, it's essential to understand that an effective [budget](/en/posts/en-budgeting-with-minimum-wage-practical-tips) for couples involves considering the needs, desires, and financial goals of both partners. Let's consider an example: João and Maria, a couple with salaries of R$ 4,000 and R$ 3,500, respectively. They need to decide how to divide their expenses fairly.
+To start, it's essential to understand that an effective [budget](/en/posts/en-budgeting-with-minimum-wage-practical-tips) for couples involves considering the needs, desires, and financial goals of both partners. Let's consider an example: John and Mary, a couple with salaries of $800 and $700, respectively. They need to decide how to divide their expenses fairly.
 
 ### Example of Expenses
 Here is a table with the couple's monthly expenses:
-| Category | Value (R$) |
+| Category | Value ($) |
 | --- | --- |
-| Rent | 2,500 |
-| Bills (electricity, water, etc.) | 500 |
-| Food | 1,500 |
-| Transportation | 800 |
-| Leisure | 1,000 |
-| Others | 500 |
+| Rent | 500 |
+| Bills (electricity, water, etc.) | 100 |
+| Food | 300 |
+| Transportation | 160 |
+| Leisure | 200 |
+| Others | 100 |
 
 ## Dividing Expenses
-A common way to divide expenses is to consider the proportion of salaries. In the case of João and Maria, they can decide to divide expenses according to the percentage of their salaries in relation to the total. For example:
+A common way to divide expenses is to consider the proportion of salaries. In the case of John and Mary, they can decide to divide expenses according to the percentage of their salaries in relation to the total. For example:
 
-- João: 4,000 / (4,000 + 3,500) = 53.3%
-- Maria: 3,500 / (4,000 + 3,500) = 46.7%
+- John: 800 / (800 + 700) = 53.3%
+- Mary: 700 / (800 + 700) = 46.7%
 
-![Dividindo as Despesas](/images/posts/orcamento-para-casal-dividindo-despesas-2.webp)
-
-
+![Dividing Expenses](/images/posts/orcamento-para-casal-dividindo-despesas-2.webp)
 
 Based on this, they can calculate each person's share of each expense category.
 
@@ -52,19 +50,15 @@ Here are the steps to organize the [budget](/en/posts/en-how-to-create-personal-
 
 **Practical tip:** It's essential to have a reserve for unexpected expenses. A good rule is to reserve between 10% and 20% of the total [budget](/en/posts/en-organize-couple-finances) for emergencies.
 
-![Organizando o Orçamento](/images/posts/orcamento-para-casal-dividindo-despesas-3.webp)
-
-
+![Organizing the Budget](/images/posts/orcamento-para-casal-dividindo-despesas-3.webp)
 
 ## Managing Finances
-To keep finances in order, it's crucial to have a control system. This can include using electronic spreadsheets or [financial apps](/en/posts/en-you-also-forget-to-record-your-expenses). The [Banco Central do Brasil](https://www.bcb.gov.br) offers valuable information on [financial management](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your) and planning.
+To keep finances in order, it's crucial to have a control system. This can include using electronic spreadsheets or [financial apps](/en/posts/en-you-also-forget-to-record-your-expenses). The **the central bank** (https://www.bcb.gov.br) offers valuable information on [financial management](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your) and planning.
 
 ## Start with 5 minutes a day
-To keep the budget under control, dedicate a few minutes each day to review expenses and update the budget. This can be done during breakfast or before bed. Remember that the key to success is consistency and communication between partners. Visit the [Receita Federal](https://www.gov.br/receitafederal) website for more information on [financial planning](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the) and taxation.
+To keep the budget under control, dedicate a few minutes each day to review expenses and update the budget. This can be done during breakfast or before bed. Remember that the key to success is consistency and communication between partners. Visit the **tax authority** (https://www.gov.br/receitafederal) website for more information on [financial planning](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the) and taxation.
 
-![Gerenciando as Finanças](/images/posts/orcamento-para-casal-dividindo-despesas-4.webp)
-
-
+![Managing Finances](/images/posts/orcamento-para-casal-dividindo-despesas-4.webp)
 
 ---
 

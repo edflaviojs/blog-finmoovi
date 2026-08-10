@@ -13,7 +13,7 @@ readingTime: 2
 
 ## What is Early Payoff?
 
-Early payoff is paying off a debt ([financing](/en/glossario/en-financing), loan, [consortium](/en/glossario/en-consortium)) before the final deadline. When you do this, you are entitled to a discount on the interest that would be charged in the future. It's a right guaranteed by the Consumer Defense Code.
+Early payoff is paying off a debt ([financing](/en/glossario/en-financing), loan, [consortium](/en/glossario/en-consortium)) before the final deadline. When you do this, you are entitled to a discount on the interest that would be charged in the future. It's a right guaranteed by consumer protection law.
 
 ## Your rights
 
@@ -24,28 +24,28 @@ Early payoff is paying off a debt ([financing](/en/glossario/en-financing), loan
 
 ## How much you save
 
-Example: financing of R$ 200,000 in 30 years at 10% per year.
-- Total you would pay: ~R$ 632,000
-- If you pay off in 15 years: ~R$ 387,000
-- **[Savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet): R$ 245,000** (almost the value of the property!)
+Example: financing of $40,000 in 30 years at 10% per year.  
+- Total you would pay: ~$126,400  
+- If you pay off in 15 years: ~$77,400  
+- **[Savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet): $49,000** (almost the value of the property!)
 
 ## When it's worth paying off
 
-✅ Worth it:
-- Interest on the debt is higher than the return on your [investments](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
-- Real estate financing with high rates (>9% per year)
-- Personal and consigned loans
-- When you have idle [money](/en/posts/en-30-day-rule-for-purchases) earning less
+✅ Worth it:  
+- Interest on the debt is higher than the return on your [investments](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)  
+- Real estate financing with high rates (>9% per year)  
+- Personal and consigned loans  
+- When you have idle [money](/en/posts/en-30-day-rule-for-purchases) earning less  
 
-❌ Not worth it:
-- Interest on the debt is lower than what your investments [yield](/en/glossario/en-yield)
-- Financing with very low rates (<7% per year)
-- If you'll be left without an emergency reserve
+❌ Not worth it:  
+- Interest on the debt is lower than what your investments [yield](/en/glossario/en-yield)  
+- Financing with very low rates (<7% per year)  
+- If you'll be left without an emergency reserve  
 
 ## How to do it
 
-1. Call the bank or access the app
-2. Request a simulation of early payoff
-3. Compare the discount offered
-4. If you agree, make the payment
+1. Call the bank or access the app  
+2. Request a simulation of early payoff  
+3. Compare the discount offered  
+4. If you agree, make the payment  
 5. Request a written proof of payoff

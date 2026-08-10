@@ -1,7 +1,19 @@
 {
+  "en-30-day-rule-for-purchases.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
   "en-5-practical-steps-to-start-saving-for-black-friday-2026.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
+  },
+  "en-5-tips-to-prepare-financially-for-the-second-half-of-the.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "en-5-tips-to-reorganize-your-finances-on-vacation.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
   },
   "en-7-alternatives-to-google-sheets-for-finance-updated-guide-20.md": {
     "tentativas": 1,
@@ -23,9 +35,21 @@
     "tentativas": 1,
     "ultimaSeveridade": null
   },
+  "en-avoid-impulse-purchases.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
   "en-bolsa-de-valores.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
+  },
+  "en-budget-for-couples-dividing-expenses.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "en-budget-review.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
   },
   "en-budgeting-with-minimum-wage-practical-tips.md": {
     "tentativas": 1,
@@ -34,6 +58,10 @@
   "en-building-a-diversified-portfolio-with-r-500.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
+  },
+  "en-bull-market-e-bear-market.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
   },
   "en-capital-gain.md": {
     "tentativas": 1,
@@ -47,6 +75,14 @@
     "tentativas": 1,
     "ultimaSeveridade": null
   },
+  "en-cdi.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "en-come-cotas.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
   "en-compound-interest.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
@@ -55,9 +91,25 @@
     "tentativas": 1,
     "ultimaSeveridade": null
   },
+  "en-creating-an-emergency-fund.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "en-credit-card-vs-debit-card-which-is-worth-it-in-2026.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "en-credit-score.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
   "en-credito.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
+  },
+  "en-debentures.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
   },
   "en-difference-between-investing-and-saving.md": {
     "tentativas": 1,
@@ -75,6 +127,10 @@
     "tentativas": 1,
     "ultimaSeveridade": 0
   },
+  "en-dividends.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
   "en-do-you-also-lose-track-of-where-your-money-went-at-the-end-o.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
@@ -83,9 +139,21 @@
     "tentativas": 1,
     "ultimaSeveridade": null
   },
+  "en-early-payoff.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
   "en-economic-valentine-s-day.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
+  },
+  "en-emergency-fund.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "en-etf.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
   },
   "en-etfs-what-they-are-and-how-to-invest-simply-and-profitably.md": {
     "tentativas": 1,
@@ -99,6 +167,10 @@
     "tentativas": 1,
     "ultimaSeveridade": null
   },
+  "en-financial-emergency.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
   "en-financial-fee.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
@@ -111,9 +183,17 @@
     "tentativas": 1,
     "ultimaSeveridade": null
   },
+  "en-financial-investment.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 2
+  },
   "en-financial-option.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
+  },
+  "en-financial-planning-for-couples.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 2
   },
   "en-financial-value.md": {
     "tentativas": 1,
