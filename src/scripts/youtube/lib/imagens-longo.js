@@ -81,10 +81,81 @@ const semAcento = (t) => String(t || '').normalize('NFD').replace(/[̀-ͯ]/g, ''
  * ⚠️ A família continua a existir e é o único sítio onde se acrescenta: no dia em que as
  * telas do catálogo souberem receber os valores do guião, elas voltam para aqui.
  */
-export const BROLL_PERMITIDO = [];
+/**
+ * ═══ ✅ 10/08/2026 — O B-ROLL VOLTOU, E O NÚMERO É O DA HISTÓRIA ═══
+ *
+ * Ordem do dono: *"não temos b-rolls separados em formatos de vídeos longos??? são esses
+ * que você tem que usar!"*. Tem razão — e a nota acima já dizia o que faltava: *"no dia
+ * em que as telas do catálogo souberem receber os valores do guião, elas voltam para
+ * aqui"*. Aprenderam (`youtube-render/src/broll/valores-da-historia.tsx`).
+ *
+ * ⚠️ **O SHORT DIÁRIO NÃO PODE MUDAR, e não muda por construção.** As telas leem os
+ * números de um envelope que só o vídeo longo abre; sem envelope devolve-se o objeto
+ * original, campo a campo. É a mesma forma que fez o Short de 16s não mudar um único
+ * pixel de 2.073.600 em 08/08.
+ *
+ * ⚠️ **SÓ ENTRAM AS QUE SABEM RECEBER OS VALORES, e são estas.** As que usam a GRAVAÇÃO
+ * do ecrã (Mosaico, Carrossel, Quadro) ficam de fora para sempre: lá o número está dentro
+ * do vídeo gravado e nenhum parâmetro o muda. Balanço, Fluxo e Compras ainda não foram
+ * ensinadas — entram quando forem, e não antes.
+ *
+ * ⚠️ **`SmartCapture3DLong` entra sem envelope nenhum** e é de propósito: é o menu dos
+ * quatro modos de captura e **não tem dinheiro nenhum no ecrã**. Foi a única que já podia
+ * ter entrado desde sempre.
+ */
+export const BROLL_PERMITIDO = [
+  { comp: 'CartoesCountUpLong', frames: 210, familia: 'cartoes', pista: /fatura|cartao|limite|parcel/i },
+  { comp: 'ExtratoListaLong', frames: 210, familia: 'extrato', pista: /extrato|entrou|saiu|lancament|conta do banco/i },
+  { comp: 'SmartCapture3DLong', frames: 210, familia: null, pista: /registrar|anotar|lancar|foto do recibo|nota fiscal/i },
+  { comp: 'SmartCaptureVozLong', frames: 210, familia: null, pista: /falar|por voz|ditar/i },
+];
 
-/** Quantas vezes o b-roll do catálogo pode aparecer num vídeo. */
-const TETO_DE_BROLL = 3;
+/**
+ * OS NÚMEROS DESTA HISTÓRIA, no formato que as telas do catálogo esperam.
+ *
+ * 🔴 **NÃO INVENTA NEM CALCULA NENHUM VALOR FALADO** — é a regra mais antiga deste
+ * ficheiro. Só usa números que já estão na lista fechada do mapa (`mapa.valores`) ou o
+ * número-espinha, que são os únicos que a voz diz. Sem número nenhum devolve `null`, e a
+ * tela sai com os números da gravação — que é o comportamento de sempre.
+ *
+ * ⚠️ **O limite e o disponível são DERIVADOS**, e isso é desenho, não conteúdo: um limite
+ * tem de ser maior do que a fatura, senão a barra aparece cheia e conta uma história que
+ * a voz não contou. A régua é o dobro arredondado à centena de cima. **Nunca é falado.**
+ */
+function valoresDoBroll(escolha, mapa) {
+  if (!escolha?.familia || !mapa) return null;
+  const daLista = (mapa.valores || []).map((v) => Number(v.valor)).filter((n) => Number.isFinite(n) && n > 0);
+  const espinha = Number(mapa.numeroEspinha);
+  const valor = daLista.length ? Math.max(...daLista) : (Number.isFinite(espinha) ? espinha : null);
+  if (!valor) return null;
+
+  const dinheiro = (n) => `R$ ${n.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+  if (escolha.familia === 'cartoes') {
+    const limite = Math.ceil((valor * 2) / 100) * 100;
+    return {
+      cartoes: {
+        fatura: dinheiro(valor),
+        faturaValue: valor,
+        limiteTotal: dinheiro(limite),
+        limiteTotalValue: limite,
+        limiteDisponivel: dinheiro(limite - valor),
+        limiteDisponivelValue: limite - valor,
+      },
+    };
+  }
+  if (escolha.familia === 'extrato') return { extrato: { saldoAtualValue: valor } };
+  return null;
+}
+
+/**
+ * ⚠️ TRÊS PASSOU A SEIS — 10/08/2026, e é a conta dos 35%.
+ * O alvo do dono é a letra na tela cair de 70% para 35%. Num guião de ~55 cenas isso quer
+ * dizer ~19 cenas de `palavras` — e as outras famílias têm de dar as restantes 36. Com o
+ * teto em três, faltavam três cenas para lá chegar.
+ * ⚠️ Seis aparições de **quatro composições diferentes** não é o mesmo que seis da mesma:
+ * a monotonia mede-se em repetição do MESMO ecrã, e o `equilibrar` roda-as.
+ */
+const TETO_DE_BROLL = 6;
 
 /**
  * ⚠️ O TETO DA METÁFORA — e ele nasceu de uma corrida a sério, não de bom senso.
@@ -757,7 +828,7 @@ export function dirigirImagens(cenas, mapa = {}, slug = null) {
     if (BROLL_PERMITIDO.length && PISTA_TUDO_JUNTO.test(texto) && brollUsado < TETO_DE_BROLL) {
       const escolha = BROLL_PERMITIDO[iBroll++ % BROLL_PERMITIDO.length];
       brollUsado++;
-      return { ...c, visual: { tipo: 'broll', comp: escolha.comp, brollFrames: escolha.frames, etiqueta } };
+      return { ...c, visual: { tipo: 'broll', comp: escolha.comp, brollFrames: escolha.frames, valores: valoresDoBroll(escolha, mapa), etiqueta } };
     }
 
     // 8. O RE-GANCHO — o que fica em aberto está escrito no mapa, capítulo a capítulo.
@@ -809,7 +880,7 @@ export function dirigirImagens(cenas, mapa = {}, slug = null) {
       : c;
   });
 
-  return numerarVariantes(equilibrar(dirigida, { fio }));
+  return numerarVariantes(equilibrar(dirigida, { fio, mapa }));
 }
 
 /**
@@ -821,7 +892,7 @@ export function dirigirImagens(cenas, mapa = {}, slug = null) {
  * troca para a alternativa mais barata que existir — a metáfora se houver fio condutor,
  * senão o b-roll, senão fica como está (nunca se estraga uma imagem certa por variedade).
  */
-export function equilibrar(cenas, { fio = null } = {}) {
+export function equilibrar(cenas, { fio = null, mapa = null } = {}) {
   const fioReal = fio || cenas.find((c) => c.visual?.fio)?.visual?.fio || null;
   const saida = cenas.map((c) => ({ ...c }));
   let estagio = Math.max(0, ...saida.map((c) => c.visual?.estagio || 0));
@@ -844,7 +915,7 @@ export function equilibrar(cenas, { fio = null } = {}) {
     } else if (BROLL_PERMITIDO.length && brollUsado < TETO_DE_BROLL) {
       const escolha = BROLL_PERMITIDO[iBroll++ % BROLL_PERMITIDO.length];
       brollUsado++;
-      meio.visual = { ...meio.visual, tipo: 'broll', comp: escolha.comp, brollFrames: escolha.frames };
+      meio.visual = { ...meio.visual, tipo: 'broll', comp: escolha.comp, brollFrames: escolha.frames, valores: valoresDoBroll(escolha, mapa) };
     }
     // Se os dois orçamentos acabaram, a cena FICA como está. Trocar uma imagem certa
     // por uma errada só para haver variedade é o defeito, não a cura — e a família

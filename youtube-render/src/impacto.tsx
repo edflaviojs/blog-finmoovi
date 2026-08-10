@@ -327,8 +327,13 @@ export const Impacto: React.FC<{ tipo: TipoDeImpacto; som: string; formato?: For
       <ClaraoDeCor cor={cor} halo={halo} faixa={g.faixa} />
       <IconeQueBate tipo={tipo} cor={cor} desvio={g.desvioDoIcone} palco={g.palco} glifo={glifo} />
       {/* ⚠️ O som vive DENTRO da mesma sequência do visual: assim a batida e o estalo
-          caem no MESMO fotograma. Separá-los foi o que já pôs som fora do sítio. */}
-      <Audio src={staticFile(`sfx/${som}`)} volume={0.85} />
+          caem no MESMO fotograma. Separá-los foi o que já pôs som fora do sítio.
+          ⚠️ **`som` VAZIO É UM CASO LEGÍTIMO — 10/08/2026.** O soco da abertura do vídeo
+          longo cai no mesmo fotograma do baque que a capa já toca; dois ficheiros de som
+          ao mesmo tempo não fazem um soco mais forte, fazem um soco sujo. Sem esta
+          guarda, `sfx/` seria pedido como ficheiro e o render morria — ou pior, ficava
+          com um erro de áudio que ninguém liga ao soco. */}
+      {som ? <Audio src={staticFile(`sfx/${som}`)} volume={0.85} /> : null}
     </>
   );
 };
@@ -539,7 +544,101 @@ export const SequenciaDeImpacto: React.FC<{
 export const INTERVALO_DO_SOCO_SEC = 15;
 const MINIMO_ENTRE_SOCOS_SEC = 6;
 
+/**
+ * ═══ 🔴 O SOCO PASSA A PROCURAR O TRECHO PARADO — 10/08/2026, ordem do dono ═══
+ *
+ * ═══ O QUE ELE VIU, E O QUE ERA VERDADE ═══
+ * *"Esses trechos só têm letras, não tem socos, não tem mudança de imagens."*
+ *
+ * A parte dos socos **estava errada, e o erro era meu de medição**: a régua tirava duas
+ * amostras por segundo e o soco dura 0,4s, portanto ela passava por cima dele. Remedido a
+ * dez amostras por segundo, o trecho que eu tinha dado como *"trinta segundos parados"*
+ * tinha três momentos fortes, um deles com pico 69. **O soco estava lá.**
+ *
+ * O que era verdade era a outra metade: **entre um soco e outro, a tela era letra o tempo
+ * todo**. O soco batia e não sublinhava nada, porque nada tinha mudado.
+ *
+ * ═══ POR QUE UM RELÓGIO FIXO NÃO CHEGA ═══
+ * De 15 em 15 segundos, o soco cai onde calhar. Se calhar num sítio onde a imagem já
+ * mudou, ele soma-se a uma coisa que já estava a acontecer; se o vídeo tiver um trecho de
+ * vinte segundos com a mesma família de imagem, ele pode passar ao lado dela.
+ *
+ * ⚠️ **O RELÓGIO FICA, e é de propósito.** Ele é o piso: garante que o vídeo nunca passa
+ * muito tempo sem um soco, mesmo que as imagens estejam a mudar bem. O que se acrescenta
+ * é uma PRIMEIRA PASSAGEM que reserva os lugares onde a tela mais tempo fica na mesma
+ * família — e essa manda, porque é a queixa que temos medida.
+ *
+ * ⚠️ **O mínimo de 6 segundos continua a valer para tudo.** Ele é o que impede o soco de
+ * deixar de assustar: a lição da metáfora, que a quatro aparições virou papel de parede.
+ */
+const PARADO_DEMAIS_SEC = 12;
+
 export function socosDoVideoLongo(
+  iniciosDeCena: number[],
+  totalDeFrames: number,
+  fps: number,
+  /** A família de imagem de cada cena, na mesma ordem dos arranques. Sem ela, só o relógio. */
+  familias: string[] = [],
+): Array<{ frame: number; tipo: TipoDeImpacto; som: string }> {
+  if (!iniciosDeCena.length) return [];
+  const passo = Math.round(INTERVALO_DO_SOCO_SEC * fps);
+  const minimo = Math.round(MINIMO_ENTRE_SOCOS_SEC * fps);
+  // Nunca nos últimos 4 segundos: aí já mandam as telas de marca.
+  const limite = totalDeFrames - fps * 4;
+  const escolhidos: Array<{ frame: number; tipo: TipoDeImpacto; som: string }> = [];
+
+  const cabe = (f: number) => f > 0 && f < limite && !escolhidos.some((s) => Math.abs(s.frame - f) < minimo);
+  const pôr = (f: number) => { escolhidos.push({ frame: f, tipo: 'alerta', som: '' }); };
+
+  /**
+   * PRIMEIRA PASSAGEM — os trechos em que a família de imagem não muda.
+   * O soco vai para o MEIO do trecho, e não para o princípio: o princípio já é uma
+   * mudança (a família acabou de trocar ali) e não precisa de ajuda. Quem precisa é o
+   * meio, que é onde quem vê começa a achar que o vídeo parou.
+   */
+  if (familias.length === iniciosDeCena.length) {
+    const trechos: Array<{ de: number; ate: number; meio: number }> = [];
+    let inicio = 0;
+    for (let i = 1; i <= familias.length; i++) {
+      if (i === familias.length || familias[i] !== familias[inicio]) {
+        const fimDoTrecho = i < iniciosDeCena.length ? iniciosDeCena[i] : totalDeFrames;
+        trechos.push({ de: iniciosDeCena[inicio], ate: fimDoTrecho, meio: iniciosDeCena[Math.floor((inicio + i - 1) / 2)] });
+        inicio = i;
+      }
+    }
+    trechos
+      .filter((t) => t.ate - t.de >= PARADO_DEMAIS_SEC * fps)
+      // ⚠️ Os mais parados primeiro: com o mínimo de 6s, quem chega primeiro fica com o
+      //    lugar, e quem tem de ficar com ele é o trecho mais longo.
+      .sort((a, b) => (b.ate - b.de) - (a.ate - a.de))
+      .forEach((t) => { if (cabe(t.meio)) pôr(t.meio); });
+  }
+
+  /** SEGUNDA PASSAGEM — o relógio de sempre, a encher o que sobrou. */
+  for (let alvo = passo; alvo < limite; alvo += passo) {
+    const perto = iniciosDeCena.reduce(
+      (a, b) => (Math.abs(b - alvo) < Math.abs(a - alvo) ? b : a),
+      iniciosDeCena[0],
+    );
+    if (!cabe(perto)) continue;
+    pôr(perto);
+  }
+
+  /**
+   * ⚠️ **A COR DECIDE-SE NO FIM, e tem de ser assim.** Ela alterna 🔴/🟢 pela ORDEM EM QUE
+   * OS SOCOS APARECEM no vídeo — se fosse decidida na hora de escolher, a primeira
+   * passagem (que escolhe fora de ordem, do trecho mais parado para o menos) daria dois
+   * vermelhos seguidos no ecrã. E o que faz o efeito é o contraste, não a repetição.
+   */
+  escolhidos.sort((a, b) => a.frame - b.frame);
+  return escolhidos.map((s, i) => {
+    const tipo: TipoDeImpacto = i % 2 === 0 ? 'alerta' : 'virada';
+    return { frame: s.frame, tipo, som: tipo === 'alerta' ? 'warning.ogg' : 'kaching.ogg' };
+  });
+}
+
+/** A versão antiga, guardada só para a prova poder comparar as duas. */
+export function socosSoPeloRelogio(
   iniciosDeCena: number[],
   totalDeFrames: number,
   fps: number,
@@ -547,7 +646,6 @@ export function socosDoVideoLongo(
   if (!iniciosDeCena.length) return [];
   const passo = Math.round(INTERVALO_DO_SOCO_SEC * fps);
   const minimo = Math.round(MINIMO_ENTRE_SOCOS_SEC * fps);
-  // Nunca nos últimos 4 segundos: aí já mandam as telas de marca.
   const limite = totalDeFrames - fps * 4;
   const escolhidos: Array<{ frame: number; tipo: TipoDeImpacto; som: string }> = [];
 

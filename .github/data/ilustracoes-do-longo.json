@@ -2,60 +2,102 @@
   "videos": {
     "dono-dois-homens-mesma-idade-mesmo-trabalho": [
       {
-        "cena": "1",
+        "cena": "2",
         "figura": "bifurcacao"
       },
       {
-        "cena": "5",
-        "figura": "semaforo"
-      },
-      {
-        "cena": "9",
-        "figura": "mochila-pedras"
-      },
-      {
-        "cena": "12",
-        "figura": "semente"
-      },
-      {
-        "cena": "13",
-        "figura": "escorregao"
-      },
-      {
-        "cena": "16",
+        "cena": "3",
         "figura": "duas-portas"
       },
       {
-        "cena": "20",
-        "figura": "balanca"
-      },
-      {
-        "cena": "26",
-        "figura": "fumaca"
-      },
-      {
-        "cena": "34",
-        "figura": "ralo"
-      },
-      {
-        "cena": "43",
+        "cena": "13",
         "figura": "balde-furado"
       },
       {
-        "cena": "44",
-        "figura": "ampulheta"
+        "cena": "19",
+        "figura": "fumaca"
       },
       {
-        "cena": "51",
-        "figura": "bola-neve"
+        "cena": "23",
+        "figura": "escorregao"
       },
       {
-        "cena": "53",
+        "cena": "32",
         "figura": "cofre"
       },
       {
-        "cena": "54",
+        "cena": "33",
+        "figura": "semente"
+      },
+      {
+        "cena": "35",
+        "figura": "boia"
+      },
+      {
+        "cena": "37",
+        "figura": "ralo"
+      },
+      {
+        "cena": "38",
+        "figura": "balanca"
+      },
+      {
+        "cena": "40",
+        "figura": "semaforo"
+      },
+      {
+        "cena": "42",
+        "figura": "ratoeira"
+      },
+      {
+        "cena": "49",
+        "figura": "escada"
+      },
+      {
+        "cena": "51",
         "figura": "escudo"
+      },
+      {
+        "cena": "53",
+        "figura": "bola-neve"
+      }
+    ],
+    "onde-o-salario-some": [
+      {
+        "cena": "2",
+        "figura": "mochila-pedras"
+      },
+      {
+        "cena": "4",
+        "figura": "balanca"
+      },
+      {
+        "cena": "14",
+        "figura": "corda-bamba"
+      },
+      {
+        "cena": "15",
+        "figura": "castelo-cartas"
+      },
+      {
+        "cena": "18",
+        "figura": "balde-furado"
+      },
+      {
+        "cena": "20",
+        "figura": "escorregao"
+      },
+      {
+        "cena": "21",
+        "figura": "gangorra"
+      },
+      {
+        "cena": "50",
+        "figura": "semaforo"
+      },
+      {
+        "cena": "52",
+        "figura": "fumaca"
       }
     ]
   }

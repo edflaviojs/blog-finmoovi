@@ -2,6 +2,7 @@ import { AbsoluteFill, spring, interpolate, useCurrentFrame, useVideoConfig } fr
 import { Background } from './scenes';
 import { BRAND, DISPLAY, BODY } from './theme';
 import { RoamingWatermark } from './broll/watermark';
+import { useDados } from './broll/valores-da-historia';
 import { extrato } from './broll/extrato';
 import { brl } from './broll/cartoes';
 
@@ -35,13 +36,16 @@ const Row: React.FC<{ nome: string; cat: string; valor: string; tipo: 'in' | 'ou
 const SaldoCorrendo: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
+  // ⚠️ Envelope vazio (= o Short) devolve o objeto `extrato` original. Ver
+  //    `broll/valores-da-historia.tsx`: sem provider, `useDados` devolve o padrão.
+  const d = useDados(extrato, 'extrato');
   const s = spring({ frame, fps, delay: 6, config: { damping: 200, mass: 1.2 } });
-  const val = extrato.saldoAtualValue * s;
+  const val = d.saldoAtualValue * s;
   return (
     <div style={{ textAlign: 'center', marginBottom: 30 }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 14, justifyContent: 'center' }}>
-        <div style={{ width: 52, height: 52, borderRadius: 14, background: extrato.contaCor, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: DISPLAY, fontWeight: 900, fontSize: 24, color: '#fff' }}>{extrato.contaIniciais}</div>
-        <div style={{ fontFamily: DISPLAY, fontWeight: 900, fontSize: 44, color: BRAND.text }}>{extrato.conta}</div>
+        <div style={{ width: 52, height: 52, borderRadius: 14, background: d.contaCor, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: DISPLAY, fontWeight: 900, fontSize: 24, color: '#fff' }}>{d.contaIniciais}</div>
+        <div style={{ fontFamily: DISPLAY, fontWeight: 900, fontSize: 44, color: BRAND.text }}>{d.conta}</div>
       </div>
       <div style={{ color: BRAND.sub, fontFamily: BODY, fontSize: 28, marginTop: 14 }}>Saldo Atual</div>
       <div style={{ fontFamily: DISPLAY, fontWeight: 900, fontSize: 84, letterSpacing: -1, color: BRAND.text }}>{brl(val)}</div>
@@ -49,16 +53,19 @@ const SaldoCorrendo: React.FC = () => {
   );
 };
 
-const Scene: React.FC = () => (
+const Scene: React.FC = () => {
+  const d = useDados(extrato, 'extrato');
+  return (
   <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center' }}>
     <SaldoCorrendo />
     <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-      {extrato.transacoes.map((t, i) => (
+      {d.transacoes.map((t, i) => (
         <Row key={i} nome={t.nome} cat={t.cat} valor={t.valor} tipo={t.tipo} delay={18 + i * 12} />
       ))}
     </div>
   </AbsoluteFill>
-);
+  );
+};
 
 export const ExtratoListaShort: React.FC = () => (
   <AbsoluteFill><Background /><Scene /><RoamingWatermark /></AbsoluteFill>

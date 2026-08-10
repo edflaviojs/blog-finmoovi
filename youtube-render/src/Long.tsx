@@ -68,6 +68,7 @@ import { ComprasCarrinhoLong } from './ComprasCarrinho';
 import { SmartCapture3DLong } from './SmartCapture3D';
 import { SmartCaptureVozLong } from './SmartCaptureVoz';
 import { AppMosaicoLong, AppCarrosselLong, AppQuadLong, AppNumerosLong } from './AppOverview';
+import { ComValoresDaHistoria } from './broll/valores-da-historia';
 
 const BROLL: Record<string, React.FC> = {
   CreditCards3DLong, CartoesCountUpLong, FluxoCaixa3DLong, FluxoBarrasLong,
@@ -99,6 +100,8 @@ export type LongVisual = {
   estagio?: number;
   comp?: string;
   brollFrames?: number;
+  /** Os números DESTA história, para as telas do catálogo não contradizerem a voz. */
+  valores?: Record<string, Record<string, unknown>> | null;
   etiqueta?: { valor: number; rotulo?: string } | null;
 };
 
@@ -114,6 +117,7 @@ export type LongScene = {
   visual?: LongVisual;
   broll?: string;
   brollFrames?: number;
+  valoresDoBroll?: Record<string, Record<string, unknown>> | null;
   capitulo?: number | null;
   tituloCapitulo?: string;
   abreCapitulo?: boolean;
@@ -380,6 +384,32 @@ const CapaLonga: React.FC<{ pergunta: string; metaphor?: string | null; frames: 
       {/* A pancada do soco, no MESMO fotograma do clarão. Ver o comentário longo acima:
           até 08/08 este vídeo abria com um clarão e silêncio absoluto. */}
       <SomDoMomento ficheiro={SOM.baque_forte} atraso={SOCO_DA_ABERTURA} volume={0.75} />
+      {/**
+        * ═══ 🔴 O SOCO DE COR NA ABERTURA — 10/08/2026, ordem do dono ═══
+        *
+        * *"Acho muito interessante iniciar o vídeo já com um soco nos primeiros
+        * segundos."*
+        *
+        * ⚠️ **Até aqui a abertura tinha PANCADA, mas não tinha SOCO.** O que existia era
+        * um clarão branco mais um baque — meio efeito. O soco a sério é a outra metade:
+        * o vermelho `#ff1f3d` que não está na paleta da marca, o glifo, o anel e o
+        * tremor. Sem ele, os primeiros três segundos do vídeo longo não tinham a única
+        * cor que faz alguém parar de rolar.
+        *
+        * ⚠️ **NO MESMO FOTOGRAMA DO CLARÃO (`SOCO_DA_ABERTURA`), e isso é obrigatório.**
+        * A lição de 08/08 está escrita neste ficheiro: adiar a imagem sozinha punha-a
+        * 0,1s atrás do som e o soco desfazia-se em duas coisas. Clarão, som e cor batem
+        * juntos ou não batem.
+        *
+        * ⚠️ **`glifo={0}` de propósito** — é o triângulo de alerta, o desenho que o dono
+        * já aprovou. A roda dos quatro glifos vale para os socos do meio do vídeo; a
+        * abertura é a assinatura e não roda.
+        *
+        * ⚠️ **Sem som próprio** (`som=""`): o baque já toca aqui em cima, no mesmo
+        * fotograma. Dois ficheiros de som ao mesmo tempo não fazem um soco mais forte —
+        * fazem um soco sujo.
+        */}
+      <SequenciaDeImpacto from={SOCO_DA_ABERTURA} tipo="alerta" som="" formato="deitado" glifo={0} />
     </AbsoluteFill>
   );
 };
@@ -517,14 +547,30 @@ const TrilhoLongo: React.FC<{ total: number; marcas: number[] }> = ({ total, mar
 
 // ── a cena ──────────────────────────────────────────────────────────────────
 /** O b-roll do catálogo, em ciclo — o caminho que era o ÚNICO e passou a ser um dos sete. */
-const CenaDeBroll: React.FC<{ comp?: string; brollFrames?: number }> = ({ comp, brollFrames }) => {
+const CenaDeBroll: React.FC<{ comp?: string; brollFrames?: number; valores?: Record<string, Record<string, unknown>> | null }> = ({ comp, brollFrames, valores }) => {
   const Broll = BROLL[comp || ''] || BROLL.AppMosaicoLong;
   return (
-    // A composição do catálogo tem duração própria; quando a cena é mais longa,
-    // ela repete em ciclo em vez de congelar no último fotograma.
-    <Loop durationInFrames={Math.max(30, brollFrames || 210)}>
-      <Broll />
-    </Loop>
+    /**
+     * 🔴 O ENVELOPE DOS VALORES DA HISTÓRIA — 10/08/2026.
+     *
+     * As telas do catálogo têm números gravados (fatura R$ 1.240, limite R$ 5.000) e foi
+     * por isso que o b-roll esteve DESLIGADO no vídeo longo desde que ele existe: num
+     * vídeo de trezentos reais elas contradizem a voz, que é a queixa nº 1 do dono.
+     *
+     * ⚠️ **Só o vídeo LONGO abre o envelope.** O Short renderiza as mesmas composições
+     * fora dele, e sem envelope `useDados` devolve o objeto original — logo o Short não
+     * pode mudar. Ver `broll/valores-da-historia.tsx`.
+     *
+     * ⚠️ **Sem `valores`, isto é exactamente o que era**: o provider com `null` não muda
+     * nada, e as telas continuam com os números da gravação.
+     */
+    <ComValoresDaHistoria valores={valores}>
+      {/* A composição do catálogo tem duração própria; quando a cena é mais longa,
+          ela repete em ciclo em vez de congelar no último fotograma. */}
+      <Loop durationInFrames={Math.max(30, brollFrames || 210)}>
+        <Broll />
+      </Loop>
+    </ComValoresDaHistoria>
   );
 };
 
@@ -600,7 +646,7 @@ const CenaLonga: React.FC<{
   const entra = interpolate(frame, [0, 10], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
 
   const conteudo = (() => {
-    if (!v) return <CenaDeBroll comp={cena.broll} brollFrames={cena.brollFrames} />;
+    if (!v) return <CenaDeBroll comp={cena.broll} brollFrames={cena.brollFrames} valores={cena.valoresDoBroll} />;
     switch (v.tipo) {
       // ⚠️ `frames` é NOVO aqui (09/08): sem a duração da cena, as batidas do cartão
       //    caíam num relógio que não é o dele. Ver `batidasDaCena` em `longo/telas.tsx`.
@@ -617,7 +663,7 @@ const CenaLonga: React.FC<{
       case 'metafora': return <Metafora fio={v.fio} estagio={v.estagio} frames={frames} />;
       case 'ilustracao': return <Ilustracao figura={v.figura || ''} frames={frames} />;
       case 'foto': return <Foto ficheiro={v.ficheiro || ''} movimento={v.movimento} frames={frames} />;
-      case 'broll': return <CenaDeBroll comp={v.comp} brollFrames={v.brollFrames} />;
+      case 'broll': return <CenaDeBroll comp={v.comp} brollFrames={v.brollFrames} valores={v.valores} />;
       default: return <PalavrasNaTela narration={cena.narration} frames={frames} words={palavras} variante={Number(v.variante ?? 0)} pular={pular} />;
     }
   })();
@@ -761,7 +807,12 @@ export const Long: React.FC<{ script?: LongScript; timing?: LongTiming; slug?: s
    * A conta vive em `impacto.tsx` (`socosDoVideoLongo`), com o cuidado de cair sempre
    * no arranque de uma cena e nunca a menos de 6 segundos do soco anterior.
    */
-  const socos = socosDoVideoLongo(inicios, conteudo, fps);
+  /**
+   * ⚠️ AS FAMÍLIAS VÃO JUNTO — 10/08/2026. É com elas que o soco encontra o trecho em que
+   * a tela mais tempo fica na mesma coisa. Ver `socosDoVideoLongo`.
+   */
+  const familiasDasCenas = script.scenes.map((c) => String(c.visual?.tipo || 'palavras'));
+  const socos = socosDoVideoLongo(inicios, conteudo, fps, familiasDasCenas);
   const socosRelativos = socos.map((s) => s.frame);
 
   const framesDaCapa = (() => {

@@ -13,11 +13,25 @@
     {
       "slug": "dono-dois-homens-mesma-idade-mesmo-trabalho",
       "cenarios": [
-        "o boleto",
+        "o mercado",
         "a aposentadoria"
       ],
       "fio": "ampulheta",
-      "promessa": "Vou te mostrar como uma escolha na previdência pode mudar o destino do mesmo dinheiro ao longo dos anos",
+      "elenco": "uma família com filhos pequenos, onde cada gasto é uma escolha",
+      "funcaoDoApp": "recibos",
+      "promessa": "Vou te mostrar como transformar um gasto que passa despercebido em dinheiro para a sua aposentadoria",
+      "em": "2026-08-10"
+    },
+    {
+      "slug": "onde-o-salario-some",
+      "cenarios": [
+        "o mercado",
+        "o aluguel"
+      ],
+      "fio": "bifurcacao",
+      "elenco": "uma avó e uma neta, duas gerações a olhar para o mesmo problema",
+      "funcaoDoApp": "contas",
+      "promessa": "Vou te mostrar como enxergar todo o dinheiro da casa junto e descobrir quanto você realmente tem para o mês",
       "em": "2026-08-10"
     }
   ]

@@ -668,7 +668,13 @@ console.log('   (a prova nasceu de uma falha REAL: a trava punia "moedinha" e o 
      * ⚠️ **É por prompt, e não uma lista só.** Uma lista global deixaria a conta de luz
      * passar no pedido do capítulo, onde ela seria uma fuga a sério.
      */
-    const ASSUNTO_DO_EXEMPLO = ['a fatura do cartão', 'as assinaturas esquecidas'];
+    /**
+     * ⚠️ **`a fatura do cartão` SAIU DAQUI EM 10/08/2026** e não pode voltar sem uma razão
+     * escrita: era ela o contentor do mapa-exemplo, e foi por isso que um vídeo sobre o
+     * salário a mencionou cinco vezes. Ficam só as assinaturas, que são o assunto
+     * declarado do exemplo e quase nunca são o assunto de um vídeo.
+     */
+    const ASSUNTO_DO_EXEMPLO = ['as assinaturas esquecidas'];
     const ASSUNTO_POR_PEDIDO = {
       capitulo: ASSUNTO_DO_EXEMPLO,
       mapa: ASSUNTO_DO_EXEMPLO,
@@ -695,8 +701,24 @@ console.log('   (a prova nasceu de uma falha REAL: a trava punia "moedinha" e o 
      * exemplo são instruções diretas, e foi de lá que o domingo saiu duas das cinco vezes.
      * ⚠️ Aqui NÃO há isenção nenhuma: uma instrução não tem "assunto de outro vídeo".
      */
+    /**
+     * ⚠️ **SÓ AS LINHAS QUE APRESENTAM ALGUMA COISA COMO BOA — 10/08/2026.**
+     *
+     * A 1ª versão varria o pedido inteiro e ficou vermelha por causa de linhas como
+     * *"⛔ nada de jargão de banco (rotativo, amortizar)"* e da definição do campo
+     * `contaDoCartao`. Essas linhas fazem o CONTRÁRIO de ensinar a cena — proíbem-na, ou
+     * explicam um campo que pode ser `null`. Uma prova que castiga a proibição empurra
+     * quem a lê a APAGAR a proibição para ficar verde, que é o pior resultado possível.
+     *
+     * O que fica de fora: linhas com ⛔, linhas que dizem "não" alguma coisa, e as
+     * entradas numeradas do formato do JSON.
+     */
+    const soOQueEnsina = (texto) => String(texto)
+      .split(/\r?\n/)
+      .filter((l) => !/⛔/.test(l) && !/n[ãa]o (use|sabe|fale|diga|invente|escreva)/i.test(l) && !/^\s*\d+\.\s/.test(l))
+      .join('\n');
     for (const [nome, texto] of [['capitulo', prompts.capitulo], ['mapa', prompts.mapa], ['abertura', prompts.abertura]]) {
-      const achadas = cenariosDoTexto(texto).filter((c) => !ASSUNTO_POR_PEDIDO[nome].includes(c));
+      const achadas = cenariosDoTexto(soOQueEnsina(texto)).filter((c) => !ASSUNTO_POR_PEDIDO[nome].includes(c));
       ok(
         `o pedido do ${nome} não dá como bom exemplo uma cena que o caderno proíbe`,
         achadas.length === 0,
@@ -866,9 +888,35 @@ console.log('   (a 1ª prova apanha a montagem a PERDER parágrafos do guião, e
     ).some((q) => /capítulos/.test(q)),
   );
 
-  // (g) ⚠️ O B-ROLL DO CATÁLOGO ESTÁ VAZIO DE PROPÓSITO — e a prova diz porquê, para
-  //     ninguém o voltar a encher sem medir. Ver o comentário em `imagens-longo.js`.
-  ok('a lista de b-roll do catálogo está vazia (todas as telas mostram dinheiro de outra história)', BROLL_PERMITIDO.length === 0);
+  /**
+   * (g) ═══ 🔴 A PROVA VIROU-SE DO AVESSO — 10/08/2026 ═══
+   *
+   * Ela dizia *"a lista de b-roll está VAZIA"*, e estava certa: as 16 telas do catálogo
+   * têm valores gravados na imagem (fatura R$ 1.240, limite R$ 5.000) e num vídeo de
+   * trezentos reais contradiziam a voz. Desligar tudo era o que se podia fazer nessa
+   * altura, e a prova guardava essa decisão.
+   *
+   * Ordem do dono, 10/08: *"não temos b-rolls separados em formatos de vídeos longos???
+   * são esses que você tem que usar!"* — e a nota que estava ao lado da lista já dizia o
+   * que faltava: *"no dia em que as telas souberem receber os valores do guião, elas
+   * voltam para aqui"*. Aprenderam.
+   *
+   * ⚠️ **O que a prova guarda agora é a CONDIÇÃO, não o número.** Uma tela só entra na
+   * lista se souber receber os valores da história — ou se não mostrar dinheiro nenhum.
+   * É isso que se mede aqui, e é por isso que ela continua a impedir que alguém volte a
+   * encher a lista sem medir.
+   */
+  ok('há b-roll do catálogo outra vez (as telas aprenderam a receber os valores da história)', BROLL_PERMITIDO.length > 0, `${BROLL_PERMITIDO.length} composições`);
+  ok(
+    'e as que MOSTRAM dinheiro trazem a família de valores que vão receber',
+    BROLL_PERMITIDO.every((b) => b.familia !== undefined),
+    'sem `familia` a tela entra com os números da gravação e contradiz a voz — o defeito de origem',
+  );
+  ok(
+    'nenhuma tela que usa a GRAVAÇÃO do ecrã entrou (lá o número está dentro do vídeo)',
+    BROLL_PERMITIDO.every((b) => !/Mosaico|Carrossel|Quad/.test(b.comp)),
+    BROLL_PERMITIDO.map((b) => b.comp).join(' · '),
+  );
 
   // (h) A RÉGUA DAS SEIS PALAVRAS — reconhece a frase mesmo reescrita, e recusa a
   //     parafraseada. Provado com o caso REAL que motivou a régua.

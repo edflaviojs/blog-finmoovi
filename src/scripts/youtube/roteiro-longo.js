@@ -172,16 +172,33 @@ export const EXEMPLO_DE_MAPA = {
     { nome: 'o streaming que ninguém abria', valor: 39 },
     { nome: 'a academia parada', valor: 90 },
     { nome: 'o jogo do celular', valor: 60 },
-    { nome: 'a fatura do cartão onde as três caem', valor: 189 },
+    { nome: 'o que sai da conta todo mês sem ninguém ver', valor: 189 },
   ],
   somas: [
-    { de: ['o streaming que ninguém abria', 'a academia parada', 'o jogo do celular'], da: 'a fatura do cartão onde as três caem' },
+    { de: ['o streaming que ninguém abria', 'a academia parada', 'o jogo do celular'], da: 'o que sai da conta todo mês sem ninguém ver' },
   ],
-  contaDoCartao: 'a fatura do cartão onde as três caem',
+  /**
+   * ⚠️ **NULL DE PROPÓSITO — 10/08/2026, e é a causa da queixa mais repetida do dono.**
+   *
+   * *"O FinMoovi tem centenas de funcionalidades e o roteiro só ataca sobre cartão??? já
+   * falei isso milhares de vezes."* Ele tem razão, e o culpado estava aqui: o mapa-exemplo
+   * que o modelo é mandado copiar era uma história de FATURA DE CARTÃO. Medido no vídeo
+   * "onde o salário some", que não tem cartão nenhum no tema e cuja demonstração era a
+   * tela das Contas: a palavra *fatura* saiu **cinco vezes** e *cartão* **três**.
+   *
+   * ⚠️ É o mesmo defeito do domingo, no mesmo sítio, pela terceira vez: **o exemplo pesa
+   * mais do que a proibição.** A trava dizia "a fatura do cartão já saiu"; o exemplo
+   * mostrava uma fatura do cartão como sendo o molde do que é bom.
+   *
+   * ⚠️ **O campo continua a existir e a ser explicado no pedido** (regra 4), com o `null`
+   * escrito ao lado: *"se a história não tiver nenhuma, escreva null"*. O que muda é que
+   * o EXEMPLO deixa de o ter preenchido — porque um exemplo preenchido é uma ordem.
+   */
+  contaDoCartao: null,
   capituloDaDemonstracao: 2,
   capitulos: [
     {
-      titulo: 'A noite em que eu li a fatura linha por linha',
+      titulo: 'A noite em que eu li o extrato linha por linha',
       oQueAcrescenta: 'o susto: de onde vêm os cento e oitenta e nove reais, item a item',
       oQueFicaEmAberto: 'há quanto tempo é que aquilo já saía sem ninguém ver',
     },
@@ -196,7 +213,7 @@ export const EXEMPLO_DE_MAPA = {
       oQueFicaEmAberto: 'a cobrança que volta sozinha se ninguém olhar',
     },
   ],
-  respostaDaPromessa: 'As assinaturas esquecidas saem da fatura no dia em que você as vê escritas num sítio só',
+  respostaDaPromessa: 'As assinaturas esquecidas saem da conta no dia em que você as vê escritas num sítio só',
   lacoAberto: 'e tem uma delas que volta a cobrar sozinha no ano seguinte sem avisar ninguém',
 };
 
@@ -273,17 +290,22 @@ export const EXEMPLO_DE_ABERTURA = {
  * → *"nunca atrasei uma conta"*). **Há uma prova que confere isto sozinha** — ver
  * `validar-roteiro-longo.js`, secção dos exemplos contra o caderno de cenas.
  *
- * ⚠️ **`a fatura do cartão` FICA, e é uma decisão, não um esquecimento.** Ela é o ASSUNTO
- * do exemplo (as três assinaturas caem numa fatura), não um enfeite: tirá-la obriga a
- * reescrever o mapa-exemplo inteiro — valores, somas, `contaDoCartao` — e as provas que
- * o medem. Fica anotado como a próxima a atacar se o dono voltar a ver faturas a mais.
+ * ═══ ✅ E A FATURA SAIU TAMBÉM, NO MESMO DIA ═══
+ * Ficou aqui escrito *"a próxima a atacar se o dono voltar a ver faturas a mais"*. Ele
+ * voltou, no mesmo dia: o vídeo "onde o salário some" — tema sem cartão nenhum,
+ * demonstração na tela das Contas — disse **fatura cinco vezes e cartão três**.
+ *
+ * O mapa-exemplo passou a somar as três assinaturas em *"o que sai da conta todo mês sem
+ * ninguém ver"*, e o `contaDoCartao` passou a `null`. As três assinaturas ficam: elas são
+ * o assunto declarado e quase nunca são o assunto de um vídeo. **A fatura era o
+ * CONTENTOR, e o contentor é o que o modelo copia sem pensar.**
  */
 export const EXEMPLO_DE_CAPITULO = {
-  titulo: 'A noite em que eu li a fatura linha por linha',
+  titulo: 'A noite em que eu li o extrato linha por linha',
   pergunta: 'Você sabe quantas coisas você paga todo mês sem usar? '
     + 'Eu achava que sabia. Levei um susto.',
-  desenvolvimento: 'Olha, eu pago tudo em dia. Nunca atrasei uma conta na vida, e por isso mesmo nunca tinha parado para ler a fatura com calma. '
-    + 'Naquela noite eu sentei com ela na mão e fui descendo linha por linha. '
+  desenvolvimento: 'Olha, eu pago tudo em dia. Nunca atrasei uma conta na vida, e por isso mesmo nunca tinha parado para ler o extrato com calma. '
+    + 'Naquela noite eu sentei com ele na mão e fui descendo linha por linha. '
     + 'Trinta e nove reais de um streaming que ninguém lá em casa abria desde o inverno. '
     + 'Noventa reais de uma academia onde eu não punha os pés. '
     + 'Sessenta reais de um jogo de celular que o meu filho instalou e esqueceu. '
@@ -376,7 +398,7 @@ const REGRAS_DE_FALA = `════════ COMO A FALA FLUI ════�
   ✗ "…que desaparecem todo mês."   ✓ "…que desaparecem DA SUA CONTA todo mês."
 - Diga "vídeo", nunca "Short". Nunca diga "tchau", "até a próxima" nem "obrigado".
 - 🔴 **NINGUÉM TEM NOME NESTE CANAL.** Nada de João, Maria, Carlos, Norberto, Célia.
-  · Quem conta a história é **você, na primeira pessoa** — *"eu abri a fatura"*, *"eu fiquei olhando"*.
+  · Quem conta a história é **você, na primeira pessoa** — *"eu abri o extrato"*, *"eu fiquei olhando"*.
   · Quando precisar de outra pessoa, use o que ela É, nunca como se chama: *"o meu vizinho"*, *"a moça do caixa"*, *"o cara que trabalha comigo há trinta anos"*, *"o outro"*.
   · Quando comparar dois caminhos, compare **situações**, não pessoas com nome: *"quem paga só o mínimo"* contra *"quem separa antes"*.
   · ⚠️ Isto não é gosto: o canal é ANÓNIMO por decisão do dono. Um nome inventado faz o vídeo parecer um caso real que ninguém pode conferir. O computador confere.`;
