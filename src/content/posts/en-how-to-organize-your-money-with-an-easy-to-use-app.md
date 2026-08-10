@@ -21,7 +21,7 @@ seo:
 
 Imagine this: you get home after a hectic day, open the kitchen drawer and find a stack of receipts, fuel tickets, a [credit](/en/glossario/en-credit)‑card statement, and you’re still trying to remember how much you spent on lunch yesterday. While you try to piece together a mental “head‑count,” you feel that tight knot in your chest that seems impossible to untangle.
 
-A [personal finance](/en/posts/en-30-day-rule-for-purchases) app does exactly that: it gathers all those bits of information in one place, turns the numbers into clear charts, and even warns you when you’re getting close to a limit you set. In under five minutes, FinMoovi lets you snap a photo of a receipt, automatically categorize the expense, and see the impact on your monthly budget.
+A [personal finance](/en/posts/en-30-day-rule-for-purchases) app does exactly that: it gathers all those bits of information in one place, turns the numbers into clear charts, and even warns you when you’re getting close to a limit you set. In under five minutes, FinMoovi lets you snap a photo of a receipt, automatically categorize the expense, and see the impact on your [monthly budget](/en/posts/en-how-to-organize-your-monthly-expenses-quickly-and-securely).
 
 ## Why Most Spreadsheets Fail  
 

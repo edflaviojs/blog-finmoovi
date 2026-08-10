@@ -21,7 +21,7 @@ seo:
 
 Imagine a cena: você chega em casa depois de um dia corrido, abre a gaveta da cozinha e encontra uma pilha de notas fiscais, recibos de combustível, o extrato do cartão e ainda tenta lembrar quanto gastou no almoço de ontem. Enquanto tenta montar um “cabe‑cabeça” mental, sente aquele peso no peito que parece não ter solução.
 
-Um aplicativo de [controle financeiro](/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) é exatamente isso: uma ferramenta que reúne todas essas informações em um só lugar, converte os números em gráficos claros e ainda avisa quando você está se aproximando do limite que definiu. Em menos de cinco minutos, o FinMoovi permite fotografar a nota fiscal, categorizar a despesa automaticamente e visualizar o impacto no seu orçamento mensal.
+Um aplicativo de [controle financeiro](/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) é exatamente isso: uma ferramenta que reúne todas essas informações em um só lugar, converte os números em gráficos claros e ainda avisa quando você está se aproximando do limite que definiu. Em menos de cinco minutos, o FinMoovi permite fotografar a nota fiscal, categorizar a despesa automaticamente e visualizar o impacto no seu [orçamento mensal](/posts/como-organizar-suas-despesas-mensais-com-facilidade-e).
 
 ## Por que a maioria das planilhas falha
 

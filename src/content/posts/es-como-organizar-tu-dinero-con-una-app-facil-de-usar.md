@@ -21,7 +21,7 @@ seo:
 
 Imagina la escena: llegas a casa después de un día ajetreado, abres el cajón de la cocina y encuentras una pila de facturas, recibos de combustible, el extracto de la tarjeta y tratas de recordar cuánto gastaste en el almuerzo de ayer. Mientras intentas armar un “cerebro” mental, sientes ese peso en el pecho que parece no tener solución.
 
-Una **app de [control financiero](/es/posts/es-tambien-te-quedas-sin-saber-a-donde-fue-tu-dinero-al-final)** es exactamente eso: una herramienta que reúne toda esa información en un solo lugar, convierte los números en gráficos claros y te avisa cuando te acercas al límite que definiste. En menos de cinco minutos, **FinMoovi** te permite fotografiar la factura, categorizar el gasto automáticamente y visualizar el impacto en tu presupuesto mensual.
+Una **app de [control financiero](/es/posts/es-tambien-te-quedas-sin-saber-a-donde-fue-tu-dinero-al-final)** es exactamente eso: una herramienta que reúne toda esa información en un solo lugar, convierte los números en gráficos claros y te avisa cuando te acercas al límite que definiste. En menos de cinco minutos, **FinMoovi** te permite fotografiar la factura, categorizar el gasto automáticamente y visualizar el impacto en tu [presupuesto mensual](/es/posts/es-como-organizar-tus-gastos-mensuales-con-facilidad-y).
 
 ## Por qué la mayoría de las hojas de cálculo fallan
 

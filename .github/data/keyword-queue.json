@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-10T11:39:48.355Z",
-  "sourceCursor": 0,
+  "updatedAt": "2026-08-10T13:22:38.098Z",
+  "sourceCursor": 1,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -720,9 +720,11 @@
       "category": null,
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "used",
       "addedAt": "2026-08-04T14:22:33.694Z",
-      "finmooviHook": "enviado via /status 04/08"
+      "finmooviHook": "enviado via /status 04/08",
+      "usedAt": "2026-08-10T13:22:38.098Z",
+      "usedBy": "gerar-post-orcamento"
     },
     {
       "keyword": "template excel finanças pessoais",
