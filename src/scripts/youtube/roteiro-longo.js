@@ -60,7 +60,10 @@ import {
 import { limparFala, montarCorretivo } from './roteiro-narrativa.js';
 import { loadRecentPublishedContext } from './roteiro-short.js';
 // ♦ O caderno que impede dois vídeos seguidos de contarem a mesma cena (08/08/2026).
-import { cenariosGastos, guardarCenarios, fiosGastos, promessasGastas, RAIO_DE_CENARIOS } from './lib/cenarios-do-longo.js';
+import {
+  cenariosGastos, guardarCenarios, fiosGastos, promessasGastas, RAIO_DE_CENARIOS,
+  escolherElenco, escolherFuncaoDoApp, elencosGastos, funcoesGastas,
+} from './lib/cenarios-do-longo.js';
 
 const AQUI = dirname(fileURLToPath(import.meta.url));
 const OUTPUT_DIR = join(AQUI, 'output');
@@ -178,7 +181,7 @@ export const EXEMPLO_DE_MAPA = {
   capituloDaDemonstracao: 2,
   capitulos: [
     {
-      titulo: 'O domingo em que eu li a fatura linha por linha',
+      titulo: 'A noite em que eu li a fatura linha por linha',
       oQueAcrescenta: 'o susto: de onde vêm os cento e oitenta e nove reais, item a item',
       oQueFicaEmAberto: 'há quanto tempo é que aquilo já saía sem ninguém ver',
     },
@@ -224,7 +227,7 @@ export const EXEMPLO_DE_ABERTURA = {
   fala: 'Todo dia dez a conta de luz chega na caixa do correio da minha mãe. '
     + 'Três meses seguidos ela veio mais cara, e ninguém em casa comprou nada novo. '
     + 'Então o que mudou? '
-    + 'Mudou o chuveiro, que nem passa vinte minutos ligado por dia e gasta mais que a geladeira. '
+    + 'Mudou o chuveiro, que nem passa vinte minutos ligado por dia e pesa mais do que parece. '
     + 'Fui olhar de perto e achei o banho demorado de manhã, a máquina de lavar rodando meio vazia, '
     + 'e uma lâmpada de área acesa a noite inteira. '
     + 'Cada uma parece pequena sozinha, e é por isso que ninguém repara. '
@@ -239,13 +242,48 @@ export const EXEMPLO_DE_ABERTURA = {
  * nasce dele é o que mostra ao modelo que os dois são a mesma coisa.
  * Repare: não diz FinMoovi (a demonstração é do ato 2), diz o número-espinha, e não
  * cita um único valor que não esteja na lista do mapa.
+ *
+ * ═══ 🔴 O DOMINGO SAIU DAQUI EM 10/08/2026, E É A 17ª OCORRÊNCIA DA MESMA COISA ═══
+ *
+ * **O pedido mandava escrever exactamente o que o caderno de cenas proíbe.**
+ *
+ * O dono queixou-se em 08/08 de o vídeo 2 repetir *"o domingo"* e *"a fatura"* do vídeo
+ * 1. Construiu-se o caderno de cenários, que entra no pedido do MAPA a dizer *"estas já
+ * saíram, não podem voltar"*. E em 10/08, com o caderno a funcionar e a proibir o
+ * domingo, o vídeo novo escreveu à mesma **"Até que eu parei num domingo"**.
+ *
+ * A razão não é o modelo ser desobediente. É que a palavra *domingo* aparecia **cinco
+ * vezes** no que ele lê, e duas delas como MODELO DO QUE É BOM:
+ *   · aqui, no título e no corpo do capítulo-exemplo que ele é mandado copiar;
+ *   · no mapa-exemplo, no título do ato 1;
+ *   · na lista *"o que faz isto prender"*: «o detalhe concreto e pequeno — **o domingo**»;
+ *   · no "repare" que fecha o exemplo: «o detalhe é pequeno e concreto (**o domingo**)»;
+ *   · e num aviso sobre um defeito antigo.
+ *
+ * O caderno dizia "não uses o domingo" uma vez. O pedido ensinava-o cinco. Ganhou o
+ * pedido — e o modelo fez o que lhe foi mostrado, não o que lhe foi dito.
+ *
+ * > ## 🔑 A REGRA QUE FICA
+ * > **Os detalhes de enfeite de um exemplo não podem ser cenas da lista `FAMILIAS`**
+ * > (`lib/cenarios-do-longo.js`). O ASSUNTO do exemplo pode — está declarado como sendo
+ * > de outro vídeo, e o modelo é avisado disso. O que escapa é o detalhe pequeno, porque
+ * > é justamente esse que se manda copiar quando se diz *"copie a FORMA"*.
+ *
+ * Saíram por isso: `o domingo` (título e corpo) e `o boleto` (*"nunca atrasei um boleto"*
+ * → *"nunca atrasei uma conta"*). **Há uma prova que confere isto sozinha** — ver
+ * `validar-roteiro-longo.js`, secção dos exemplos contra o caderno de cenas.
+ *
+ * ⚠️ **`a fatura do cartão` FICA, e é uma decisão, não um esquecimento.** Ela é o ASSUNTO
+ * do exemplo (as três assinaturas caem numa fatura), não um enfeite: tirá-la obriga a
+ * reescrever o mapa-exemplo inteiro — valores, somas, `contaDoCartao` — e as provas que
+ * o medem. Fica anotado como a próxima a atacar se o dono voltar a ver faturas a mais.
  */
 export const EXEMPLO_DE_CAPITULO = {
-  titulo: 'O domingo em que eu li a fatura linha por linha',
+  titulo: 'A noite em que eu li a fatura linha por linha',
   pergunta: 'Você sabe quantas coisas você paga todo mês sem usar? '
     + 'Eu achava que sabia. Levei um susto.',
-  desenvolvimento: 'Olha, eu pago tudo em dia. Nunca atrasei um boleto na vida, e por isso mesmo nunca tinha parado para ler a fatura com calma. '
-    + 'Naquele domingo eu sentei com ela na mão e fui descendo linha por linha. '
+  desenvolvimento: 'Olha, eu pago tudo em dia. Nunca atrasei uma conta na vida, e por isso mesmo nunca tinha parado para ler a fatura com calma. '
+    + 'Naquela noite eu sentei com ela na mão e fui descendo linha por linha. '
     + 'Trinta e nove reais de um streaming que ninguém lá em casa abria desde o inverno. '
     + 'Noventa reais de uma academia onde eu não punha os pés. '
     + 'Sessenta reais de um jogo de celular que o meu filho instalou e esqueceu. '
@@ -368,7 +406,7 @@ Este vídeo conta **UMA história, de UMA pessoa, com UM número**. Os três cap
 🎬 **E OS TRÊS ATOS SÃO ESTES, POR ESTA ORDEM. Não são três descrições da mesma cena:**
 ${OS_MOVIMENTOS}
 
-🔴 **O ATO 2 É O CORAÇÃO DO VÍDEO.** É lá que está o **único ensinamento** — a coisa que a pessoa não sabia e que explica por que o problema continua mesmo quando ela se esforça. Se o ato 2 só voltar a mostrar o número que o ato 1 já mostrou, o vídeo dá voltas e quem vê sai. **Já aconteceu neste canal: o ato 1 e o ato 2 saíram com o mesmo domingo, a mesma fatura na mão e a mesma soma.**
+🔴 **O ATO 2 É O CORAÇÃO DO VÍDEO.** É lá que está o **único ensinamento** — a coisa que a pessoa não sabia e que explica por que o problema continua mesmo quando ela se esforça. Se o ato 2 só voltar a mostrar o número que o ato 1 já mostrou, o vídeo dá voltas e quem vê sai. **Já aconteceu neste canal: o ato 1 e o ato 2 saíram com a mesma cena, o mesmo papel na mão e a mesma soma.**
 
 👤 **QUEM VIVEU A HISTÓRIA É VOCÊ, O NARRADOR.** Fale na PRIMEIRA PESSOA: "eu abri", "eu somei", "eu levei um susto".
 ⛔ **NÃO invente uma terceira pessoa** com nome ("a Cláudia", "o Seu Antônio"). Só existem duas pessoas neste vídeo: **EU**, que passei por isto, e **VOCÊ**, que está a passar. Uma personagem inventada é um caso de cliente que nunca existiu, e este canal não faz isso.
@@ -378,7 +416,7 @@ ${OS_MOVIMENTOS}
 · **A conta que ninguém fez.** O número que a pessoa tem e não sabe que tem.
 · **A confissão.** Comece por admitir o seu próprio erro. Quem confessa não está a dar lição, e por isso ninguém se defende.
 · **A objeção antecipada.** Diga em voz alta o que a pessoa está a pensar: "você vai dizer que não sobra nada. Eu sei. Eu também dizia."
-· **O detalhe concreto e pequeno** — o domingo, a margem do papel, a fatura na mão. É o detalhe que faz acreditar, não o adjetivo.
+· **O detalhe concreto e pequeno** — a margem do papel onde você somou, a caneta que falhou, a hora que estava no relógio. É o detalhe que faz acreditar, não o adjetivo.
 · **A promessa com data.** "Em que mês isto acaba" vale mais do que "você vai melhorar".
 
 ⛔ **E O QUE ESTE CANAL NÃO FAZ, mesmo que dê clique:**
@@ -401,7 +439,7 @@ ${t.angle ? `ÂNGULO: ${t.angle}\n` : ''}${t.definition ? `DEFINIÇÃO: ${t.defi
 
 // ═══ ANDAR 0 — O MAPA ═══════════════════════════════════════════════════════
 
-export function buildPromptMapa(t, proibidas = [], cenariosJaGastos = [], promessasAnteriores = []) {
+export function buildPromptMapa(t, proibidas = [], cenariosJaGastos = [], promessasAnteriores = [], elenco = null, funcaoDoApp = null) {
   /**
    * 🔴 A HISTÓRIA TEM DE SER OUTRA — 08/08 (as cenas) e 09/08/2026 (o resto).
    *
@@ -431,8 +469,8 @@ e é a queixa nº 1 do dono. Portanto, antes de escolher seja o que for:
 · a METÁFORA é outra — e o objeto que a carrega também;
 · o NÚMERO é outro — não repita o valor que já foi a espinha de outro vídeo.
 
-⚠️ Não basta trocar as palavras. Trocar "fatura" por "boleto" e contar a mesma coisa é
-repetir na mesma. **O que tem de mudar é a situação.**`);
+⚠️ Não basta trocar as palavras. Trocar o nome do papel que está na mão e contar a mesma
+coisa é repetir na mesma. **O que tem de mudar é a situação.**`);
 
   if (promessasAnteriores.length) {
     linhas.push(`\n════════ 📼 O QUE OS VÍDEOS ANTERIORES JÁ CONTARAM ════════
@@ -446,6 +484,53 @@ resumo de qualquer um dos vídeos acima, está errada — recomece.`);
     linhas.push(`\n════════ ⛔ CENAS JÁ GASTAS NOS ÚLTIMOS VÍDEOS ════════
 Estas cenas saíram nos vídeos recentes deste canal e **não podem voltar**: ${cenariosJaGastos.join(' · ')}.
 **Escolha outro momento da vida das pessoas.** O dinheiro aparece em todo o lado: a farmácia no fim do mês, o presente de aniversário, o conserto do chuveiro, a corrida de aplicativo que virou hábito, o almoço fora todo dia, a caixa de ferramentas comprada e nunca usada, o cachorro que adoeceu, a formatura do filho, o material escolar de janeiro, o pneu que furou, o casamento de um amigo, a máquina de lavar que parou.`);
+  }
+
+  /**
+   * ═══ 🔴 QUEM VIVE A HISTÓRIA — 10/08/2026, e é uma ORDEM, não uma sugestão ═══
+   *
+   * Palavras do dono, ao ver o segundo vídeo seguido sobre dois homens: *"Sempre fala dos
+   * dois homens, isso tem que ser dinâmico… poderia ser um homem, uma mulher, ou um homem
+   * e uma mulher, ou poderia ser dois irmãos, poderia ser um avô, poderia um pai, uma
+   * mãe, entendeu?"*
+   *
+   * ⚠️ **Vai ESCOLHIDO daqui, e não é pedido ao modelo que varie.** "Varie o elenco" é
+   * uma sugestão, e uma sugestão perde para o exemplo — foi assim que o domingo sobreviveu
+   * a uma proibição escrita (§ da 17ª ocorrência). Um nome concreto, escolhido por nós e
+   * gravado no caderno, é a única forma de o vídeo seguinte poder proibi-lo.
+   */
+  if (elenco) {
+    linhas.push(`\n════════ 👥 QUEM VIVE ESTA HISTÓRIA — JÁ ESTÁ DECIDIDO ════════
+A história deste vídeo é de: **${elenco}**.
+
+🔴 **Não é uma sugestão, é o elenco deste vídeo.** Escreva o mapa inteiro à volta desta
+pessoa (ou destas pessoas). Não invente outra gente ao lado, e não troque por dois homens
+nem por "duas pessoas" genéricas — o canal acabou de fazer isso e o dono reprovou.
+
+⚠️ Continua a valer a regra de sempre: **ninguém tem nome**. Diga *"a minha mãe"*, *"o meu
+irmão"*, *"eu"* — nunca "a Cláudia" nem "o Seu Antônio".`);
+  }
+
+  /**
+   * ═══ 🔴 QUAL FUNÇÃO DO APP APARECE — 10/08/2026 ═══
+   *
+   * Palavras do dono: *"fala que jogou na calculadora do FinMoovi, igualzinho os
+   * anteriores, o FinMoovi tem centenas de funcionalidades e o roteiro só ataca sobre
+   * cartão??? já falei isso milhares de vezes"*.
+   *
+   * ⚠️ **A demonstração é UM ecrã, escolhido aqui**, gravado no caderno, e proibido nos
+   * próximos seis vídeos. Sem isto o modelo caía sempre no cartão, porque o cartão é o
+   * assunto mais óbvio de finanças — e era esse o defeito.
+   */
+  if (funcaoDoApp) {
+    linhas.push(`\n════════ 📱 A FUNÇÃO DO APP QUE ESTE VÍDEO MOSTRA — JÁ ESTÁ DECIDIDA ════════
+Na demonstração, o FinMoovi aparece por **${funcaoDoApp.nome}** — ${funcaoDoApp.oQueFaz}.
+
+🔴 **É esta e não outra.** O capítulo da demonstração tem de ser desenhado para que ela
+faça sentido ali: a história tem de CHEGAR a um ponto em que esta tela é a resposta.
+⛔ **Não fale de fatura de cartão nem de "jogar na calculadora"** a não ser que seja
+exactamente esta a função escolhida. Os vídeos anteriores já fizeram isso e o dono
+reprovou: *"o FinMoovi tem centenas de funcionalidades e o roteiro só ataca sobre cartão"*.`);
   }
 
   return buildPromptMapaBase(t, proibidas, `${linhas.join('\n')}\n`);
@@ -571,7 +656,7 @@ Os capítulos que vêm a seguir: ${mapa.capitulos.map((c, i) => `${i + 1}) ${c.t
 Ordem do dono, 08/08/2026: *"eu quero que o texto seja mais leve, mais simples, mais do dia a dia, coisas assim"*.
 
 · **TUDO O QUE VOCÊ DISSER TEM DE DAR PARA VER.** Se não dá para filmar, está abstrato demais.
-  ✓ *o boleto em cima da mesa* · *o carrinho no mercado* · *a mensagem do banco às sete da manhã* · *o cafezinho de todo dia* · *a parcela do celular novo*
+  ✓ *o papel em cima da mesa* · *a mensagem do banco às sete da manhã* · *o cafezinho de todo dia* · *a fila da farmácia* · *o troco que some no bolso*
   ✗ *os gastos* · *as despesas* · *a situação financeira* · *o planejamento* · *os recursos* · *a gestão do orçamento*
 · **FRASES CURTAS.** Uma ideia por frase. Se precisou de vírgula três vezes, são três frases.
 · **FALE COMO SE FALA NA COZINHA**, não como se escreve num banco. Diga *"o dinheiro some"*, não *"há uma evasão de recursos"*.
@@ -681,7 +766,7 @@ E assim é a demonstração, quando chega a vez dela (é o ato 2 do mesmo exempl
 
 [DEMONSTRACAO] ${EXEMPLO_DE_DEMONSTRACAO}
 ` : ''}
-Repare: quem fala é o narrador, contando o que VIVEU · o detalhe é pequeno e concreto (o domingo, a margem do papel) · as parcelas são ditas uma a uma e o total bate · e o re-gancho deixa uma pergunta feia no ar, sem prometer nada de fora.
+Repare: quem fala é o narrador, contando o que VIVEU · o detalhe é pequeno e concreto (a margem do papel, a soma feita à mão) · as parcelas são ditas uma a uma e o total bate · e o re-gancho deixa uma pergunta feia no ar, sem prometer nada de fora.
 
 Responda APENAS com JSON válido, sem markdown:
 { "pergunta": "...", "desenvolvimento": "...", ${temDemo ? '"demonstracao": "...", ' : ''}"regancho": "..." }`;
@@ -994,13 +1079,22 @@ async function gerarBloco({ nome, prompt, validar, tema, tentativas = 5, campos 
 
 // ═══ A ORQUESTRAÇÃO ═════════════════════════════════════════════════════════
 
-export async function gerarMapa(t, { proibidas = [], tentativas = 3, cenarios = null } = {}) {
+export async function gerarMapa(t, { proibidas = [], tentativas = 3, cenarios = null, slug = null } = {}) {
   // Sem lista dada, lê o caderno — assim quem chama não tem de se lembrar disto.
   const gastos = cenarios || cenariosGastos();
   const jaContadas = promessasGastas();
+  /**
+   * 🔴 O ELENCO E A FUNÇÃO DO APP — 10/08/2026, ordem do dono.
+   * Escolhidos AQUI (deterministas pelo nome do vídeo, evitando os dos últimos seis) e
+   * mandados ao modelo como decisão fechada. Ver `lib/cenarios-do-longo.js`.
+   */
+  const elenco = escolherElenco(slug, elencosGastos({ slug }));
+  const funcaoDoApp = escolherFuncaoDoApp(slug, funcoesGastas({ slug }));
   if (gastos.length) console.log(`🚫 cenas já gastas nos últimos ${RAIO_DE_CENARIOS} vídeos: ${gastos.join(' · ')}`);
   if (jaContadas.length) console.log(`📼 histórias já contadas: ${jaContadas.map((p) => `"${String(p).slice(0, 60)}…"`).join(' | ')}`);
-  const prompt = buildPromptMapa(t, proibidas, gastos, jaContadas);
+  console.log(`👥 quem vive esta história: ${elenco}`);
+  console.log(`📱 função do app nesta demonstração: ${funcaoDoApp.nome} — ${funcaoDoApp.oQueFaz}`);
+  const prompt = buildPromptMapa(t, proibidas, gastos, jaContadas, elenco, funcaoDoApp);
   const exigencias = [];
   let corretivo = '';
 
@@ -1025,7 +1119,7 @@ export async function gerarMapa(t, { proibidas = [], tentativas = 3, cenarios = 
       continue;
     }
     const v = validarMapa(mapa);
-    if (v.ok) return { mapa, avisos: v.avisos, tentativa: i, consertos: [] };
+    if (v.ok) return { mapa, avisos: v.avisos, tentativa: i, consertos: [], elenco, funcaoDoApp };
     if (!melhor || v.erros.length < melhor.v.erros.length) melhor = { mapa, v, tentativa: i };
     corretivo = montarCorretivo(acumular(exigencias, v.erros));
     console.log(`  ⚠ mapa — tentativa ${i}/${tentativas} reprovada: ${v.erros.join(' | ')}`);
@@ -1061,6 +1155,11 @@ export async function gerarMapa(t, { proibidas = [], tentativas = 3, cenarios = 
     avisos: [...(depois.avisos || []), ...depois.erros.map((e) => `aceite a contragosto: ${e}`)],
     tentativa: melhor.tentativa,
     consertos,
+    // ⚠️ TAMBÉM AQUI, e não só no caminho feliz: é este o retorno da corrida que precisou
+    // de conserto, e é exactamente essa que não pode perder o elenco pelo caminho — senão
+    // o caderno fica sem ele e o vídeo seguinte volta a poder repeti-lo.
+    elenco,
+    funcaoDoApp,
   };
 }
 
@@ -1154,8 +1253,17 @@ export async function gerarLongo(t, { proibidas = [], polir = true, slug = 'long
   if (mapa) {
     console.log('   ♻️ mapa retomado do caderno (não se paga duas vezes pela mesma coisa)');
   } else {
-    const feito = await gerarMapa(t, { proibidas });
+    const feito = await gerarMapa(t, { proibidas, slug });
     mapa = feito.mapa;
+    /**
+     * ⚠️ **O ELENCO E A FUNÇÃO VIAJAM DENTRO DO MAPA, e a razão é o caderno retomado.**
+     * Um mapa que já existe é retomado de disco (*"não se paga duas vezes"*) e nessa
+     * corrida o `gerarMapa` NEM CHEGA A CORRER — logo as duas escolhas não existiriam, e
+     * o caderno de cenas ficaria sem elas. Guardadas aqui, vão no mesmo ficheiro que já é
+     * retomado, e uma repescagem grava exactamente o mesmo que a corrida original.
+     */
+    mapa.elenco = feito.elenco || null;
+    mapa.funcaoDoApp = feito.funcaoDoApp || null;
     caderno.mapa = mapa;
     guardar();
     console.log(`   ✅ mapa aprovado na tentativa ${feito.tentativa}`);
@@ -1656,7 +1764,14 @@ if (executadoDireto) {
    * Guarda-se DEPOIS de o guião estar em disco: se alguma coisa rebentar acima, o
    * caderno não fica a dizer que saiu um vídeo que não saiu.
    */
-  const usados = guardarCenarios(slug, falaCorrida(roteiro).join(' '), { fio: mapa?.fioCondutor || null, promessa: mapa?.promessa || null });
+  const usados = guardarCenarios(slug, falaCorrida(roteiro).join(' '), {
+    fio: mapa?.fioCondutor || null,
+    promessa: mapa?.promessa || null,
+    // 🔴 10/08/2026 — sem estas duas linhas a trava nova não aprende nada, exactamente
+    // como a trava das cenas não aprendia antes de 09/08 por falta de um `git add`.
+    elenco: mapa?.elenco || null,
+    funcaoDoApp: mapa?.funcaoDoApp?.chave || null,
+  });
   console.log(`📓 cenas deste vídeo, guardadas para os próximos ${RAIO_DE_CENARIOS}: ${usados.length ? usados.join(' · ') : '(nenhuma das conhecidas)'}`);
   console.log(`📓 imagem deste vídeo, guardada para os próximos ${RAIO_DE_CENARIOS}: ${mapa?.fioCondutor || '(nenhuma)'}\n`);
 }

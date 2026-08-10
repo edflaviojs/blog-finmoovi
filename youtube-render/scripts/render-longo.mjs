@@ -43,7 +43,31 @@ const FPS = 30;
 // ⚠️ ESPELHADOS de src/Long.tsx. Ver o aviso lá: mudar num sítio sem mudar no outro
 // faz os cortes caírem no sítio errado.
 const VOZ_ENTRA_FRAMES = 27;
-const RESPIRO_SEC = 0.35;
+/**
+ * ═══ 🔴 ESTE NÚMERO ESTEVE ERRADO E PARTIU O RENDER — 10/08/2026 ═══
+ *
+ * Era **0.35**. Em 09/08 o respiro entre cenas passou a 0,21s e foi mudado em três
+ * ficheiros — `Long.tsx`, `descricao-longo.js` e `srt-longo.js`. **Este era o quarto, e
+ * ninguém sabia que ele existia.** O aviso de 09/08 dizia *"a mesma constante em TRÊS
+ * ficheiros"*; eram quatro.
+ *
+ * ⚠️ **A CONSEQUÊNCIA, MEDIDA:** o render calculava **11444** fotogramas e o vídeo tinha
+ * **11220** — 55 cenas × 0,14s de diferença. A parte 4 pedia os fotogramas 6869–11443 de
+ * um vídeo que acaba no 11219, e o Remotion recusou. **Meia hora de máquina deitada
+ * fora, e só na última das quatro partes.**
+ *
+ * ⚠️ **E podia ter sido MUITO pior.** Se a diferença fosse para o outro lado, as quatro
+ * partes cabiam todas, os cortes caíam 7 segundos ao lado do sítio certo, e o vídeo saía
+ * — com as emendas no meio de uma frase, sem ninguém se queixar.
+ *
+ * ⚠️ **E a prova que devia apanhar isto estava a olhar para o lado errado:**
+ * `contaDoRender()` em `validar-publicacao-longo.js` dizia-se *"a testemunha
+ * independente do render"* e importava o respiro do `srt-longo.js` — ou seja, repetia o
+ * ALGORITMO do render com o NÚMERO de outro ficheiro. Ficava verde acontecesse o que
+ * acontecesse aqui. Agora há uma prova que lê este ficheiro em texto e compara os cinco
+ * números com os dos irmãos.
+ */
+const RESPIRO_SEC = 0.21;
 const SIGNATURE_FRAMES = 75;
 /**
  * ⚠️ ESPELHADO de `TELA_FINAL_FRAMES` em `src/longo/telas.tsx` — os 10 segundos da TELA
@@ -127,20 +151,109 @@ console.log('');
  * ficar, o script PÁRA, porque continuar seria entregar o vídeo de ontem com a cara do
  * de hoje. É a regra da casa: conferir o RESULTADO, nunca o código de saída.
  */
-if (args.recomecar && existsSync(OUT)) {
+/**
+ * A limpeza da pasta, com prova de que ficou vazia. Serve o `--recomecar` de quem pede,
+ * e serve a limpeza AUTOMÁTICA de quando as partes que lá estão são de outro vídeo.
+ */
+function esvaziarPasta(porque) {
+  if (!existsSync(OUT)) return;
   for (const f of readdirSync(OUT)) {
     try { rmSync(join(OUT, f), { recursive: true, force: true }); } catch { /* confere-se abaixo */ }
   }
-  const sobrou = existsSync(OUT) ? readdirSync(OUT) : [];
+
+  /**
+   * ═══ 🔴 A SEGUNDA MÃO, PARA O APAGAR DO NODE QUE NÃO APAGA — 10/08/2026 ═══
+   *
+   * O aviso lá em cima já dizia que o `rmSync` falha **em silêncio** nos caminhos com
+   * acento desta máquina (`C:\Users\Ed Flávio\…`). O que ele não dizia é a consequência
+   * prática: **o `--recomecar` nunca funcionou aqui.** Ele apagava zero ficheiros,
+   * a conferência apanhava-o, e o render parava a mandar apagar a pasta à mão — todas
+   * as vezes. Medido hoje: 20 ficheiros pedidos, 20 ficheiros de pé.
+   *
+   * Parar era o comportamento certo (melhor parar do que entregar o vídeo de ontem),
+   * mas parar SEMPRE não é uma limpeza — é um beco. E o beco tornou-se caro agora que
+   * o render deixa de reaproveitar partes de outro vídeo: sem isto, refazer um vídeo
+   * nesta máquina exige sempre uma limpeza à mão.
+   *
+   * Portanto: se depois do `rmSync` ainda sobrar alguma coisa, tenta-se pelo apagador
+   * do próprio sistema, que não tem este problema. **E confere-se OUTRA VEZ** — a regra
+   * da casa é o resultado, nunca o código de saída, e um apagador que devolve zero
+   * também pode não ter apagado nada.
+   */
+  let sobrou = existsSync(OUT) ? readdirSync(OUT) : [];
   if (sobrou.length) {
-    console.log(`\n❌ o --recomecar não conseguiu apagar ${sobrou.length} ficheiro(s) em ${OUT}:`);
+    try {
+      if (process.platform === 'win32') {
+        execFileSync('cmd', ['/c', 'rmdir', '/s', '/q', OUT], { stdio: 'ignore' });
+      } else {
+        execFileSync('rm', ['-rf', OUT], { stdio: 'ignore' });
+      }
+    } catch { /* confere-se já a seguir */ }
+    sobrou = existsSync(OUT) ? readdirSync(OUT) : [];
+    if (!sobrou.length) console.log('   (o apagar do Node não pegou nestes caminhos — foi pelo do sistema)');
+  }
+
+  if (sobrou.length) {
+    console.log(`\n❌ não foi possível apagar ${sobrou.length} ficheiro(s) em ${OUT}:`);
     for (const f of sobrou.slice(0, 6)) console.log(`   · ${f}`);
-    console.log('   Apague a pasta à mão e volte a correr. (Continuar aqui daria um vídeo com o som antigo.)\n');
+    console.log('   Apague a pasta à mão e volte a correr. (Continuar aqui daria um vídeo errado.)\n');
     process.exit(1);
   }
-  console.log('🧹 partes anteriores apagadas (--recomecar) — e conferido que a pasta ficou vazia\n');
+  console.log(`🧹 ${porque} — e conferido que a pasta ficou vazia\n`);
+}
+
+if (args.recomecar) esvaziarPasta('partes anteriores apagadas (--recomecar)');
+
+/**
+ * ═══ 🔴 AS PARTES GUARDADAS NÃO SABIAM DE QUE VÍDEO ERAM — 10/08/2026 ═══
+ *
+ * ⚠️ **É O MESMO DEFEITO DE CIMA POR OUTRO CAMINHO, e este chegou a acontecer.**
+ *
+ * As partes chamam-se `parte-01.mp4` … `parte-04.mp4` e vivem todas na MESMA pasta,
+ * seja qual for o vídeo. A única pergunta que se fazia antes de as reaproveitar era
+ * *"existe um ficheiro com este nome?"*. Enquanto só houve um vídeo longo — o piloto —
+ * a resposta certa e a resposta dada eram a mesma. Deixaram de ser.
+ *
+ * **Medido em 10/08:** pediu-se o vídeo `dono-dois-homens-mesma-idade-mesmo-trabalho` e
+ * o render escreveu, quatro vezes, *"parte já existe — não se paga duas vezes"*. As
+ * partes que lá estavam eram do PILOTO, de 04/08. Saiu um MP4 com **as imagens de um
+ * vídeo e a voz de outro** — e a corrida acabou a verde.
+ *
+ * A prova de duração no fim apanhou o SINTOMA (*"337,8s medidos contra 381,5s
+ * esperados"*), e é por isso que ela existe. Mas avisar depois de o ficheiro estar
+ * escrito não chega: quem só olhasse o ✅ levava o vídeo errado.
+ *
+ * ⚠️ **A PERGUNTA CERTA NÃO É "existe?", É "é DESTE vídeo e DESTE corte?"** — e são as
+ * duas coisas. O mesmo vídeo com o guião mudado dá cortes noutros sítios, e uma parte
+ * com o nome certo e os fotogramas errados é tão má como a de outro vídeo.
+ *
+ * ⚠️ **Na nuvem isto nunca mordeu**, porque cada corrida parte de uma máquina limpa —
+ * que é exactamente o que faz um defeito destes viver anos sem ser visto. Ele morde
+ * aqui, na máquina do dono, que é onde os vídeos se conferem antes de irem ao ar.
+ */
+const CADERNETA = join(OUT, 'partes-feitas.json');
+const assinaturaDasPartes = { slug, fps: FPS, total, partes: partes.map((p) => ({ n: p.n, de: p.de, ate: p.ate })) };
+if (!args.recomecar && existsSync(CADERNETA)) {
+  let anterior = null;
+  try { anterior = JSON.parse(readFileSync(CADERNETA, 'utf-8')); } catch { anterior = null; }
+  const igual = anterior && JSON.stringify(anterior) === JSON.stringify(assinaturaDasPartes);
+  if (!igual) {
+    const doQue = anterior?.slug && anterior.slug !== slug
+      ? `as partes que estavam aqui são do vídeo "${anterior.slug}"`
+      : 'as partes que estavam aqui são de um corte diferente deste mesmo vídeo';
+    console.log(`♻️  ${doQue} — não servem, e vão ser refeitas.`);
+    esvaziarPasta('partes de outro render apagadas');
+  }
+} else if (!args.recomecar && existsSync(OUT) && readdirSync(OUT).some((f) => /^parte-\d+\.mp4$/.test(f))) {
+  /**
+   * ⚠️ Partes SEM caderneta são de antes desta guarda existir — não há como saber de que
+   * vídeo são, e "não sei" trata-se como "não servem". Acontece uma vez só por máquina.
+   */
+  console.log('♻️  há partes antigas aqui sem dizer de que vídeo são — não se acredita nelas.');
+  esvaziarPasta('partes sem identificação apagadas');
 }
 mkdirSync(OUT, { recursive: true });
+writeFileSync(CADERNETA, `${JSON.stringify(assinaturaDasPartes, null, 2)}\n`, 'utf-8');
 
 /**
  * ⚠️ O CAMINHO DOS PARÂMETROS TEM DE SER RELATIVO, e isto custou um render inteiro.
@@ -159,9 +272,51 @@ for (const p of partes) {
   const relativo = `out/longo/parte-${String(p.n).padStart(2, '0')}.mp4`;
   const destino = join(OUT, `parte-${String(p.n).padStart(2, '0')}.mp4`);
   if (existsSync(destino)) {
-    console.log(`♻️  parte ${p.n} já existe — não se paga duas vezes pelo mesmo render`);
-    feitas.push(destino);
-    continue;
+    /**
+     * ═══ 🔴 "EXISTE" NÃO QUER DIZER "ESTÁ INTEIRA" — 10/08/2026, e é a terceira vez
+     * que este mesmo reaproveitamento entrega lixo em silêncio. ═══
+     *
+     * Um render do vídeo longo demora ~20 minutos e é morto com facilidade — pelo
+     * relógio de quem o lançou, por falta de memória, por um Ctrl-C. Quando isso
+     * acontece a meio de uma parte, fica em disco um `parte-0X.mp4` **truncado**: tem
+     * nome, tem tamanho, e não tem fim (o ffprobe diz *"moov atom not found"*).
+     *
+     * **Medido hoje:** a parte 1 foi morta a meio, ficou com 786 KB, e a corrida
+     * seguinte teria escrito *"parte 1 já existe — não se paga duas vezes"* e colado
+     * um ficheiro ilegível dentro do vídeo final.
+     *
+     * ⚠️ **A conta certa é o número de fotogramas, CONTADOS UM A UM** (`-count_frames`),
+     * e não a duração declarada nem o tamanho do ficheiro. É a mesma régua que a
+     * conferência do fim do render já usa — a diferença é que agora se usa ANTES, que é
+     * quando ainda dá para consertar de graça.
+     */
+    const esperados = p.ate - p.de + 1;
+    let contados = -1;
+    try {
+      contados = Number(String(execFileSync('ffprobe', [
+        '-v', 'error', '-select_streams', 'v:0', '-count_frames',
+        '-show_entries', 'stream=nb_read_frames', '-of', 'csv=p=0', destino,
+      ], { encoding: 'utf-8' })).trim().replace(/[^0-9]/g, ''));
+    } catch { contados = -1; }
+
+    if (contados === esperados) {
+      console.log(`♻️  parte ${p.n} já existe e está inteira (${contados} fotogramas) — não se paga duas vezes pelo mesmo render`);
+      feitas.push(destino);
+      continue;
+    }
+    const porque = contados < 0
+      ? 'não se consegue sequer ler (ficou a meio de um render interrompido)'
+      : `tem ${contados} fotogramas e devia ter ${esperados}`;
+    console.log(`🗑️  parte ${p.n} está em disco mas ${porque} — vai ser refeita.`);
+    try { rmSync(destino, { force: true }); } catch { /* confere-se a seguir */ }
+    if (existsSync(destino)) {
+      try { execFileSync('cmd', ['/c', 'del', '/f', '/q', destino], { stdio: 'ignore' }); } catch { /* idem */ }
+    }
+    if (existsSync(destino)) {
+      console.log(`\n❌ não foi possível apagar a parte ${p.n} estragada: ${destino}`);
+      console.log('   Apague-a à mão e volte a correr. (Continuar aqui daria um vídeo com um buraco.)\n');
+      process.exit(1);
+    }
   }
   console.log(`🎞️  parte ${p.n}/${partes.length} — fotogramas ${p.de}–${p.ate}…`);
   try {

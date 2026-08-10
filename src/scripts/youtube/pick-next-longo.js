@@ -100,12 +100,46 @@ export function proximoLongo({ fila = lerJson(FILA, { videos: [] }), caderno = l
  * só obrigaria quem a lê a adivinhar onde acaba cada argumento. Já houve neste projeto um
  * comando partido em dois por causa de um espaço num caminho (§34.3 defeito 10) — não se
  * repete o erro por causa de um dois-pontos.
+ *
+ * ═══ 🔴 E É POR ISSO QUE O TEXTO TEM DE VIR NUMA LINHA SÓ — 10/08/2026 ═══
+ *
+ * **"Um argumento por linha" e "o argumento tem quebras de linha lá dentro" não podem
+ * ser verdade ao mesmo tempo**, e durante semanas foram as duas ao mesmo tempo.
+ *
+ * A regra foi escrita quando os temas da fila eram frases curtas. Os temas de hoje são
+ * PARÁGRAFOS: o do vídeo 2 tem dois, separados por uma linha em branco. O robô lê este
+ * ficheiro com `xargs -d '\n'` (ver `youtube-longo.yml`), portanto cada quebra de linha
+ * de DENTRO do tema virava um argumento novo — e como os argumentos avulsos não começam
+ * por `--`, o gerador **deitava-os fora sem se queixar**.
+ *
+ * Medido no tema do vídeo 2, que tem 430 caracteres:
+ *   · o que chegava ao gerador: **307** — só o primeiro parágrafo;
+ *   · o que se perdia: *"A resposta é desconfortável: o dinheiro não recompensa quem
+ *     trabalha mais, mas sim quem entende suas regras ocultas."*
+ *   · e perdia-se **duas vezes**, porque o `--angulo` repete o mesmo texto.
+ *
+ * Ou seja: **a frase que diz do que o vídeo trata era exactamente a que se perdia**, e o
+ * guião era escrito sem ela. Isto corria igual na nuvem — não é um defeito de correr à
+ * mão. É a família de defeito nº 1 desta casa: uma regra escrita para uma estrutura
+ * antiga a correr, calada, depois de a estrutura mudar.
+ *
+ * ⚠️ **O conserto é achatar aqui, e não mudar o `xargs`.** Trocar o separador no robô
+ * resolveria este ficheiro e deixaria a armadilha armada para quem escrevesse o próximo.
+ * O contrato passa a ser garantido por quem o escreve: **uma linha, um argumento**.
+ *
+ * ⚠️ **E o texto não perde nada.** As quebras viram espaços; o modelo lê o parágrafo
+ * inteiro na mesma. O que era um parágrafo passa a ser uma frase longa — e nenhuma
+ * palavra fica pelo caminho, que era o que estava a acontecer.
  */
+function numaLinha(texto) {
+  return String(texto).replace(/\s*\r?\n\s*/g, ' ').trim();
+}
+
 export function comoArgumentos(v) {
   const linhas = [];
-  if (v.tema) linhas.push(`--tema=${v.tema}`);
-  if (v.angulo) linhas.push(`--angulo=${v.angulo}`);
-  if (v.glossario) linhas.push(`--glossario=${v.glossario}`);
+  if (v.tema) linhas.push(`--tema=${numaLinha(v.tema)}`);
+  if (v.angulo) linhas.push(`--angulo=${numaLinha(v.angulo)}`);
+  if (v.glossario) linhas.push(`--glossario=${numaLinha(v.glossario)}`);
   return linhas;
 }
 

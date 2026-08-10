@@ -1,0 +1,338 @@
+{
+  "slug": "dono-dois-homens-mesma-idade-mesmo-trabalho",
+  "term": "Dois homens, mesma idade, mesmo trabalho, mesmo salário, durante 30 anos. Um deles acaba de se aposentar e conquistar a liberdade. O outro ainda pegará o ônibus amanhã, antes do sol nascer. Qual é a diferença entre eles? Não foi sorte, não foi herança e nem mesmo esforço — os dois se esforçaram igualmente. A resposta é desconfortável: o dinheiro não recompensa quem trabalha mais, mas sim quem entende suas regras ocultas.",
+  "keyword": "",
+  "formato": "longo",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Como dois homens com o mesmo salário chegam a aposentadorias tão diferentes? A diferença está no que cada um fez com o dinheiro durante trinta anos.",
+      "durationSec": 10
+    },
+    {
+      "id": 2,
+      "role": "hook",
+      "narration": "Hoje, um deles pega o ônibus para trabalhar pela última vez. Já o outro ainda vai acordar antes do sol nascer amanhã.",
+      "durationSec": 8.46
+    },
+    {
+      "id": 3,
+      "role": "hook",
+      "narration": "Os dois trabalharam igualzinho, só que um aprendeu a usar a previdência privada do jeito certo para ajudar o INSS.",
+      "durationSec": 7.69
+    },
+    {
+      "id": 4,
+      "role": "hook",
+      "narration": "Neste vídeo, vou te mostrar como uma escolha na previdência pode mudar o destino do mesmo dinheiro ao longo dos anos.",
+      "durationSec": 8.08
+    },
+    {
+      "id": 5,
+      "role": "hook",
+      "narration": "E onde você precisa prestar atenção antes de continuar pagando.",
+      "durationSec": 3.85
+    },
+    {
+      "id": 6,
+      "role": "beat",
+      "narration": "Você sabe o que aqueles trezentos reais que você separava todo mês iam virar lá na frente?",
+      "durationSec": 6.54
+    },
+    {
+      "id": 7,
+      "role": "beat",
+      "narration": "Eu só entendi isso quando parei para olhar com calma.",
+      "durationSec": 3.85
+    },
+    {
+      "id": 8,
+      "role": "beat",
+      "narration": "Olha, eu sempre achei que estava fazendo a minha parte. Eu trabalhava, recebia meu salário e separava trezentos reais todo mês para a previdência.",
+      "durationSec": 9.23
+    },
+    {
+      "id": 9,
+      "role": "beat",
+      "narration": "Só que, por muito tempo, eu olhava para isso como se fosse só mais um boleto que eu tinha que pagar. O dinheiro saía, e pronto.",
+      "durationSec": 10
+    },
+    {
+      "id": 10,
+      "role": "beat",
+      "narration": "Até que um dia eu sentei na mesa, peguei um papel e uma caneta, e fiquei olhando para aquele número.",
+      "durationSec": 7.69
+    },
+    {
+      "id": 11,
+      "role": "beat",
+      "narration": "Trezentos reais saindo do bolso, todo santo mês. Eu fiquei um tempo em silêncio pensando nisso. Aquele dinheiro não era uma despesa.",
+      "durationSec": 8.46
+    },
+    {
+      "id": 12,
+      "role": "beat",
+      "narration": "Era o meu futuro, os meus anos de descanso lá na frente.",
+      "durationSec": 4.62
+    },
+    {
+      "id": 13,
+      "role": "beat",
+      "narration": "Sabe quando você faz uma coisa no automático e nem percebe o que está fazendo de verdade? Foi isso que aconteceu comigo.",
+      "durationSec": 8.46
+    },
+    {
+      "id": 14,
+      "role": "beat",
+      "narration": "Eu estava guardando o dinheiro, sim. Mas eu nunca tinha parado para ver que, dentro da previdência, eu precisava fazer uma escolha sobre ele.",
+      "durationSec": 9.23
+    },
+    {
+      "id": 15,
+      "role": "beat",
+      "narration": "E foi aí que me bateu uma pergunta que eu nunca tinha feito.",
+      "durationSec": 5
+    },
+    {
+      "id": 16,
+      "role": "beat",
+      "narration": "Se esses mesmos trezentos reais podem seguir caminhos tão diferentes lá dentro da previdência, para onde eu devia olhar antes de colocar o próximo mês?",
+      "durationSec": 9.62
+    },
+    {
+      "id": 17,
+      "role": "beat",
+      "narration": "Você já guardou seu dinheiro num lugar sem saber direito as regras dele?",
+      "durationSec": 5
+    },
+    {
+      "id": 18,
+      "role": "beat",
+      "narration": "Eu já fiz isso, e foi aí que eu entendi como uma simples escolha muda o imposto que a gente paga.",
+      "durationSec": 8.08
+    },
+    {
+      "id": 19,
+      "role": "beat",
+      "narration": "Olha, eu sempre pensei que previdência fosse só guardar os trezentos reais todo mês e deixar lá para a velhice.",
+      "durationSec": 7.69
+    },
+    {
+      "id": 20,
+      "role": "beat",
+      "narration": "Só que existem dois caminhos diferentes, e eu nunca tinha prestado atenção nisso. Um chama PGBL. O outro chama VGBL.",
+      "durationSec": 7.69
+    },
+    {
+      "id": 21,
+      "role": "beat",
+      "narration": "A diferença aparece na hora de declarar o imposto de renda. No PGBL, se você faz aquela declaração maior, o governo te dá um desconto.",
+      "durationSec": 9.62
+    },
+    {
+      "id": 22,
+      "role": "beat",
+      "narration": "Você paga menos imposto no ano. No VGBL, esse desconto não existe.",
+      "durationSec": 4.62
+    },
+    {
+      "id": 23,
+      "role": "beat",
+      "narration": "O dinheiro que sai do seu bolso todo mês é o mesmo, são os mesmos trezentos reais.",
+      "durationSec": 6.54
+    },
+    {
+      "id": 24,
+      "role": "beat",
+      "narration": "Mas o imposto muda muito de um caminho para o outro. E foi aí que eu percebi meu erro.",
+      "durationSec": 7.31
+    },
+    {
+      "id": 25,
+      "role": "beat",
+      "narration": "Eu só olhava para o valor que eu guardava. Eu não olhava para as letras do plano.",
+      "durationSec": 6.54
+    },
+    {
+      "id": 26,
+      "role": "beat",
+      "narration": "Se eu continuasse assim, ia deixar dinheiro na mesa sem saber.",
+      "durationSec": 4.23
+    },
+    {
+      "id": 27,
+      "role": "beat",
+      "narration": "Foi aí que eu joguei minha previdência no FinMoovi. Na tela do celular, o aplicativo separou os dois nomes.",
+      "durationSec": 7.31
+    },
+    {
+      "id": 28,
+      "role": "beat",
+      "narration": "Ele me mostrou uma linha escrita PGBL e outra escrita VGBL.",
+      "durationSec": 4.23
+    },
+    {
+      "id": 29,
+      "role": "beat",
+      "narration": "O que me chamou a atenção foi que, do lado do PGBL, o FinMoovi já me mostrava o valor exato do desconto no imposto.",
+      "durationSec": 9.23
+    },
+    {
+      "id": 30,
+      "role": "beat",
+      "narration": "Ele pegou meus trezentos reais e fez a conta para mim na hora.",
+      "durationSec": 5
+    },
+    {
+      "id": 31,
+      "role": "beat",
+      "narration": "Eu olhei para a tela e vi o dinheiro que eu podia deixar de pagar para o governo.",
+      "durationSec": 6.92
+    },
+    {
+      "id": 32,
+      "role": "beat",
+      "narration": "E aí eu precisei parar e olhar para a minha própria vida com calma. Porque saber que esses dois caminhos existem foi só o primeiro passo.",
+      "durationSec": 10
+    },
+    {
+      "id": 33,
+      "role": "beat",
+      "narration": "A próxima coisa era descobrir qual dos dois deixava mais dinheiro no meu bolso.",
+      "durationSec": 5.38
+    },
+    {
+      "id": 34,
+      "role": "beat",
+      "narration": "E se a escolha que você fez lá atrás estiver comendo um pedaço do dinheiro que você guarda todo mês?",
+      "durationSec": 7.69
+    },
+    {
+      "id": 35,
+      "role": "beat",
+      "narration": "Pois é, a gente precisa olhar isso antes de você pagar o próximo boleto.",
+      "durationSec": 5.38
+    },
+    {
+      "id": 36,
+      "role": "beat",
+      "narration": "Olha, pega o contrato da sua previdência e senta na mesa.",
+      "durationSec": 4.23
+    },
+    {
+      "id": 37,
+      "role": "beat",
+      "narration": "Primeiro, a gente tem que ver como você declara o seu imposto de renda todo ano.",
+      "durationSec": 6.15
+    },
+    {
+      "id": 38,
+      "role": "beat",
+      "narration": "Depois, a gente procura no papel qual é o tipo do seu plano.",
+      "durationSec": 5
+    },
+    {
+      "id": 39,
+      "role": "beat",
+      "narration": "A gente precisa ver se essa escolha antiga combina com o seu imposto de hoje.",
+      "durationSec": 5.77
+    },
+    {
+      "id": 40,
+      "role": "beat",
+      "narration": "Aí você vai para aquela parte das letras miúdas que quase ninguém lê. É lá que fica o preço que o banco te cobra.",
+      "durationSec": 9.23
+    },
+    {
+      "id": 41,
+      "role": "beat",
+      "narration": "Passa o dedo na linha e procura se tem alguma cobrança logo na entrada. Sabe por quê?",
+      "durationSec": 6.54
+    },
+    {
+      "id": 42,
+      "role": "beat",
+      "narration": "Porque aqueles trezentos reais que saem da sua conta todo mês podem tomar caminhos bem diferentes.",
+      "durationSec": 6.15
+    },
+    {
+      "id": 43,
+      "role": "beat",
+      "narration": "Se o plano tira um pedaço logo na entrada, não chegam trezentos reais lá na sua conta do futuro. Chega menos, todo santo mês.",
+      "durationSec": 9.23
+    },
+    {
+      "id": 44,
+      "role": "beat",
+      "narration": "E a gente também precisa pensar no tempo. Previdência é um dinheiro que você guarda hoje pra usar lá na frente.",
+      "durationSec": 8.08
+    },
+    {
+      "id": 45,
+      "role": "beat",
+      "narration": "Então, você não pode simplesmente ir pagando no automático.",
+      "durationSec": 3.46
+    },
+    {
+      "id": 46,
+      "role": "beat",
+      "narration": "Você precisa saber para onde o seu suor está indo e se essas regras são boas pra você.",
+      "durationSec": 6.92
+    },
+    {
+      "id": 47,
+      "role": "beat",
+      "narration": "Escolher a previdência certa é escolher como cuidar do que é seu por muitos anos.",
+      "durationSec": 5.77
+    },
+    {
+      "id": 48,
+      "role": "beat",
+      "narration": "Só que aí sobra uma dúvida muito importante. Quanto tempo esse dinheiro tem que ficar lá, bem quieto, pra essa escolha realmente valer a pena?",
+      "durationSec": 9.62
+    },
+    {
+      "id": 49,
+      "role": "cta",
+      "narration": "Quer ver no seu caso a diferença que essa escolha faz lá na frente? Comenta a palavra FINMOOVI aqui embaixo.",
+      "durationSec": 7.69
+    },
+    {
+      "id": 50,
+      "role": "cta",
+      "narration": "Eu te mando o app FinMoovi de graça pra você mesmo ver.",
+      "durationSec": 4.62
+    },
+    {
+      "id": 51,
+      "role": "outro",
+      "narration": "E é com o passar dos anos que você nota o resultado. O mesmo dinheiro toma rumos bem diferentes na previdência.",
+      "durationSec": 8.08
+    },
+    {
+      "id": 52,
+      "role": "outro",
+      "narration": "Isso acontece porque o tipo de plano, as taxas e o imposto mudam de verdade o que vai sobrar no seu bolso lá na frente.",
+      "durationSec": 9.62
+    },
+    {
+      "id": 53,
+      "role": "outro",
+      "narration": "Guardar um pouco todo mês é só a metade do trabalho. Escolher o lugar certo para deixar ele guardado também importa muito.",
+      "durationSec": 8.46
+    },
+    {
+      "id": 54,
+      "role": "outro",
+      "narration": "Se você arruma isso logo cedo, evita um susto grande quando a hora de descansar chegar.",
+      "durationSec": 6.15
+    },
+    {
+      "id": 55,
+      "role": "outro",
+      "narration": "E olha, quanto mais o tempo passa, mais difícil fica consertar a rota. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 7.69
+    }
+  ]
+}

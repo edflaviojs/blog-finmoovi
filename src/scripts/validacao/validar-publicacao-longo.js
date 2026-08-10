@@ -602,6 +602,34 @@ console.log('\n4. AS TRAVAS QUE PARAM TUDO');
 
   const argumentos = comoArgumentos({ slug: 'x', tema: 'Um tema: com dois pontos', angulo: 'Um ângulo, com vírgula', glossario: 'divida' });
   ok('o tema chega ao escritor inteiro, um argumento por linha', argumentos.length === 3 && argumentos[0] === '--tema=Um tema: com dois pontos', argumentos.join(' § '));
+
+  /**
+   * 🔴 A PROVA QUE FALTAVA, E É ELA QUE DEIXOU O DEFEITO PASSAR — 10/08/2026.
+   *
+   * A prova de cima usa um tema de uma linha, porque era assim que os temas eram quando
+   * ela foi escrita. Os temas da fila de hoje são PARÁGRAFOS, e com uma quebra de linha
+   * lá dentro o `xargs -d '\n'` do robô partia o tema em três argumentos, dos quais dois
+   * eram deitados fora em silêncio. **Um tema de 430 caracteres chegava com 307.**
+   *
+   * ⚠️ A régua é o NÚMERO DE LINHAS, não o texto: enquanto forem três, o contrato "uma
+   * linha, um argumento" está de pé, seja qual for o feitio do tema.
+   */
+  const comParagrafos = comoArgumentos({
+    slug: 'x',
+    tema: 'Primeiro parágrafo, com a história.\n\nSegundo parágrafo, com a frase que explica tudo.',
+    angulo: 'Uma ideia\ncom quebra no meio',
+    glossario: 'divida',
+  });
+  ok(
+    'um tema de vários parágrafos continua a ser UM argumento (o xargs do robô corta nas quebras)',
+    comParagrafos.length === 3 && comParagrafos.every((l) => !l.includes('\n')),
+    comParagrafos.map((l) => l.length).join(' + ') + ' caracteres',
+  );
+  ok(
+    'e nenhuma palavra do tema se perde pelo caminho',
+    comParagrafos[0] === '--tema=Primeiro parágrafo, com a história. Segundo parágrafo, com a frase que explica tudo.',
+    comParagrafos[0],
+  );
 }
 
 // ═══ 5. OS CADERNOS SÃO SEPARADOS ════════════════════════════════════════════
@@ -759,6 +787,129 @@ console.log('\n5. O ROBÔ DIÁRIO NÃO É TOCADO');
     'e confirma que o costureiro do som existe antes de começar',
     /ffmpeg/.test(fluxo) && /ffprobe/.test(fluxo),
   );
+
+  ok(
+    '🔴 o robô manda escolher os DESENHOS de cada cena (senão 70% do vídeo é letra na tela)',
+    /ilustrador-longo\.js/.test(fluxo),
+    'medido em 10/08: sem ele o vídeo tem 3 ilustrações em 55 cenas',
+  );
+  ok(
+    'e o montador corre OUTRA VEZ depois dele (é ele que põe os desenhos no guião)',
+    fluxo.indexOf('ilustrador-longo.js') < fluxo.lastIndexOf('montar-longo.js'),
+  );
+  ok(
+    'e o ilustrador vem DEPOIS das fotografias (senão escolhe desenho para cenas que vão levar foto)',
+    fluxo.indexOf('fotos-longo.js') < fluxo.indexOf('ilustrador-longo.js'),
+  );
+  ok(
+    '🔴 o robô manda fazer a CAPA do YouTube (sem ela o vídeo sobe sem miniatura e ninguém dá por nada)',
+    /capa-manus\.js/.test(fluxo),
+    'ver `acharCapa` em upload-longo.js: sem capa ele sobe à mesma e o YouTube escolhe um fotograma sozinho',
+  );
+  ok(
+    'e a capa é feita ANTES do commit que guarda a pasta das imagens (senão fica na máquina da nuvem)',
+    fluxo.indexOf('capa-manus.js') < fluxo.indexOf('Guardar o caderno de cenas'),
+  );
+}
+
+// ═══ 5-b. O RENDER NÃO PODE APROVEITAR PARTES DE OUTRO VÍDEO ═════════════════
+console.log('\n5-b. AS PARTES GUARDADAS SABEM DE QUE VÍDEO SÃO');
+
+{
+  /**
+   * 🔴 ACONTECEU EM 10/08/2026, e saiu um MP4 com as imagens de um vídeo e a voz de outro.
+   *
+   * As partes do render chamam-se `parte-01.mp4` … e vivem todas na mesma pasta, seja
+   * qual for o vídeo. A pergunta antes de as reaproveitar era *"existe um ficheiro com
+   * este nome?"* — que foi a pergunta certa enquanto só houve um vídeo longo.
+   *
+   * ⚠️ **Esta prova lê o CÓDIGO do render, e não o resultado**, de propósito: o resultado
+   * só apareceria depois de alguém gastar meia hora a fazer o vídeo errado. E na nuvem
+   * nunca apareceria de todo, porque lá a máquina é sempre limpa — que é a razão de este
+   * defeito ter vivido tanto tempo.
+   */
+  const render = join(RAIZ, 'youtube-render', 'scripts', 'render-longo.mjs');
+  if (existsSync(render)) {
+    const codigo = readFileSync(render, 'utf-8');
+    ok(
+      'o render guarda de que vídeo e de que corte são as partes que deixou feitas',
+      /partes-feitas\.json/.test(codigo),
+    );
+    ok(
+      'e o reaproveitamento compara o SLUG, não só o nome do ficheiro',
+      /anterior\?\.slug|anterior\.slug/.test(codigo) && /assinaturaDasPartes/.test(codigo),
+      'sem isto, "parte-01.mp4 existe" quer dizer "serve", e não quer',
+    );
+    ok(
+      'partes sem identificação nenhuma são deitadas fora em vez de usadas',
+      /sem dizer de que vídeo são/.test(codigo),
+    );
+    ok(
+      'e quando o apagar do Node falha (caminhos com acento) há uma segunda mão',
+      /rmdir/.test(codigo) && /rm', \['-rf'/.test(codigo),
+      'nesta máquina o rmSync não apaga nada e o --recomecar ficava num beco',
+    );
+    /**
+     * 🔴 A TERCEIRA vez que este reaproveitamento entregou lixo em silêncio, e a mais
+     * fácil de repetir: um render de 20 minutos é morto com facilidade, e o que fica em
+     * disco é um MP4 com nome, com tamanho e sem fim. "Existe" nunca quis dizer "serve".
+     */
+    ok(
+      'uma parte guardada só é reaproveitada depois de lhe CONTAREM os fotogramas',
+      /count_frames/.test(codigo) && /contados === esperados/.test(codigo),
+      'sem isto, um render interrompido a meio deixa uma parte truncada que entra no vídeo final',
+    );
+
+    /**
+     * 🔴 A CONSTANTE ESPELHADA EM QUATRO FICHEIROS — 10/08/2026.
+     *
+     * ═══ POR QUE ESTA PROVA TEM DE LER O TEXTO DO FICHEIRO ═══
+     * A `contaDoRender()` lá em cima diz-se *"a testemunha independente do render"*, e é
+     * mesmo — do ALGORITMO. Mas os NÚMEROS ela importa do `srt-longo.js`. Resultado: o
+     * render podia ter o respiro que quisesse que ela ficava verde. E teve: **0,35
+     * enquanto os outros três ficheiros tinham 0,21**, durante um dia inteiro.
+     *
+     * O preço: o render calculou 11444 fotogramas para um vídeo de 11220 e morreu na
+     * QUARTA de quatro partes, depois de meia hora de máquina.
+     *
+     * ⚠️ Por isso isto lê o ficheiro em TEXTO. É feio e é de propósito: ler o texto é a
+     * única maneira de ver o que lá está escrito, em vez de ver o que se importou.
+     */
+    const numeroDe = (texto, nome) => {
+      const m = texto.match(new RegExp(`(?:export\\s+)?const\\s+${nome}\\s*=\\s*([0-9.]+)`));
+      return m ? Number(m[1]) : null;
+    };
+    const longTsx = join(RAIZ, 'youtube-render', 'src', 'Long.tsx');
+    const telasTsx = join(RAIZ, 'youtube-render', 'src', 'longo', 'telas.tsx');
+    const srtJs = join(RAIZ, 'src', 'scripts', 'youtube', 'srt-longo.js');
+    const descJs = join(RAIZ, 'src', 'scripts', 'youtube', 'descricao-longo.js');
+    if ([longTsx, telasTsx, srtJs, descJs].every((f) => existsSync(f))) {
+      const doLong = readFileSync(longTsx, 'utf-8');
+      const doTelas = readFileSync(telasTsx, 'utf-8');
+      const doSrt = readFileSync(srtJs, 'utf-8');
+      const doDesc = readFileSync(descJs, 'utf-8');
+      /** [nome, valor no render, valores nos irmãos que também o declaram] */
+      const espelhadas = [
+        ['RESPIRO_SEC', numeroDe(codigo, 'RESPIRO_SEC'), { 'Long.tsx': numeroDe(doLong, 'RESPIRO_SEC'), 'srt-longo.js': numeroDe(doSrt, 'RESPIRO_SEC'), 'descricao-longo.js': numeroDe(doDesc, 'RESPIRO_SEC') }],
+        ['VOZ_ENTRA_FRAMES', numeroDe(codigo, 'VOZ_ENTRA_FRAMES'), { 'Long.tsx': numeroDe(doLong, 'VOZ_ENTRA_FRAMES'), 'srt-longo.js': numeroDe(doSrt, 'VOZ_ENTRA_FRAMES') }],
+        ['SIGNATURE_FRAMES', numeroDe(codigo, 'SIGNATURE_FRAMES'), { 'Long.tsx': numeroDe(doLong, 'SIGNATURE_FRAMES') }],
+        ['TELA_FINAL_FRAMES', numeroDe(codigo, 'TELA_FINAL_FRAMES'), { 'longo/telas.tsx': numeroDe(doTelas, 'TELA_FINAL_FRAMES') }],
+        ['CARTAO_CAPITULO_FRAMES', numeroDe(codigo, 'CARTAO_CAPITULO_FRAMES'), { 'srt-longo.js': numeroDe(doSrt, 'CARTAO_CAPITULO_FRAMES') }],
+      ];
+      for (const [nome, noRender, irmaos] of espelhadas) {
+        const diferentes = Object.entries(irmaos).filter(([, v]) => v !== null && v !== noRender);
+        ok(
+          `${nome}: o render diz ${noRender} e os outros ficheiros dizem o mesmo`,
+          noRender !== null && diferentes.length === 0,
+          diferentes.length
+            ? `o render tem ${noRender} e ${diferentes.map(([f, v]) => `${f} tem ${v}`).join(' · ')}`
+            : 'não se encontrou a constante no render',
+        );
+      }
+    }
+  } else {
+    console.log('  ⏭️  o render não está nesta máquina — as quatro provas do cache ficam de fora');
+  }
 }
 
 // ═══ 6. CONTRA O VÍDEO REAL, SE ELE ESTIVER AQUI ═════════════════════════════

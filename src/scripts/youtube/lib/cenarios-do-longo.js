@@ -73,6 +73,77 @@ const FAMILIAS = [
   { nome: 'a dívida com um amigo', procura: /\bemprestei|devo (pro|para o) (meu )?(amigo|irm)/i },
 ];
 
+/**
+ * ═══ 🔴 QUEM VIVE A HISTÓRIA — 10/08/2026, ordem do dono ═══
+ *
+ * Palavras dele, ao ver o segundo vídeo seguido sobre dois homens: *"Sempre fala dos dois
+ * homens, isso tem que ser dinâmico, no vídeo anterior a história foi de 2 homens, agora
+ * não pode se repetir… poderia ser um homem, uma mulher, ou um homem e uma mulher, ou
+ * poderia ser dois irmãos, poderia ser um avô, poderia um pai, uma mãe, entendeu?"* E a
+ * seguir: *"quanto mais variações, melhor"*.
+ *
+ * ⚠️ **O CADERNO GUARDAVA A CENA E A IMAGEM, E NÃO GUARDAVA A PESSOA.** Por isso o
+ * domingo e a fatura pararam de se repetir em 10/08 — e os dois homens continuaram. A
+ * trava só sabe proibir aquilo que sabe medir, e ninguém lhe tinha ensinado a olhar para
+ * quem é o dono da história.
+ *
+ * ⚠️ **É VERDADE, e não gosto** (`verdade-versus-gosto`): o elenco é ESCOLHIDO por nós e
+ * escrito no pedido como ordem — não se lê do texto com adivinhação, nem se julga se
+ * ficou bom. Manda-se, grava-se, e o seguinte não pode repetir.
+ *
+ * ⚠️ **Nenhum tem NOME**, e é regra antiga desta casa: neste canal só existem "eu" e
+ * "você". O elenco diz de QUEM é a história, não como se chama.
+ */
+export const ELENCOS = [
+  'você mesmo, contando a sua própria história em primeira pessoa, sem comparar com ninguém',
+  'uma mãe de família, que faz a conta da casa e sabe de cor o que falta',
+  'um pai de família, que recebe no dia cinco e vê o dinheiro sumir antes do vinte',
+  'um casal, que discute o mesmo dinheiro por dois pontos de vista diferentes',
+  'duas irmãs, com o mesmo começo e escolhas diferentes',
+  'dois irmãos, com o mesmo começo e escolhas diferentes',
+  'uma avó e uma neta, duas gerações a olhar para o mesmo problema',
+  'um avô e um neto, duas gerações a olhar para o mesmo problema',
+  'uma mãe e uma filha já adulta, cada uma na sua fase da vida',
+  'duas amigas de trabalho, que ganham o mesmo e vivem diferente',
+  'um jovem no primeiro emprego, que ainda tem tudo pela frente',
+  'uma pessoa que acabou de se aposentar, olhando para trás',
+  'uma mulher que sustenta a casa sozinha',
+  'um homem que trabalha por conta própria, com renda que muda todo mês',
+  'um casal recém-casado, a juntar duas vidas financeiras numa só',
+  'uma família com filhos pequenos, onde cada gasto é uma escolha',
+];
+
+/**
+ * ═══ 🔴 A FUNÇÃO DO APP QUE ESTE VÍDEO MOSTRA — 10/08/2026, ordem do dono ═══
+ *
+ * Palavras dele: *"fala que jogou na calculadora do FinMoovi, igualzinho os anteriores, o
+ * FinMoovi tem centenas de funcionalidades e o roteiro só ataca sobre cartão??? já falei
+ * isso milhares de vezes"*.
+ *
+ * ⚠️ **A LISTA SAIU DAS TELAS QUE O APP TEM MESMO** (`client/src/pages` do FinMoovi), e
+ * não de imaginação. Uma lista inventada poria o vídeo a prometer uma tela que não existe
+ * — e isso o canal não faz.
+ *
+ * ⚠️ **UMA POR VÍDEO, e é decisão do dono** (10/08): a demonstração mostra UMA função,
+ * fica gravada no caderno, e não se repete nos próximos ${RAIO_DE_CENARIOS} vídeos.
+ */
+export const FUNCOES_DO_APP = [
+  { chave: 'contas', nome: 'as Contas', oQueFaz: 'ver o saldo de todas as contas do banco num sítio só, somado' },
+  { chave: 'cartoes', nome: 'os Cartões de Crédito', oQueFaz: 'ver a fatura de cada cartão e quanto do limite já foi usado' },
+  { chave: 'extrato', nome: 'o Extrato', oQueFaz: 'ver tudo o que entrou e saiu, lançamento a lançamento' },
+  { chave: 'fluxo-de-caixa', nome: 'o Fluxo de Caixa', oQueFaz: 'ver o que ainda vai entrar e sair até ao fim do mês' },
+  { chave: 'categorias', nome: 'as Categorias', oQueFaz: 'ver em que é que o dinheiro foi parar, por tipo de gasto' },
+  { chave: 'balanco-mensal', nome: 'o Balanço do Mês', oQueFaz: 'ver quanto entrou e quanto saiu no mês, lado a lado' },
+  { chave: 'planejamento', nome: 'o Planejamento do Mês', oQueFaz: 'dizer antes quanto se pode gastar em cada coisa, e acompanhar' },
+  { chave: 'relatorios', nome: 'os Relatórios', oQueFaz: 'ver a evolução de vários meses num gráfico' },
+  { chave: 'compras', nome: 'o Relatório de Compras', oQueFaz: 'ver o que se comprou e onde, item a item' },
+  { chave: 'lembretes', nome: 'os Lembretes', oQueFaz: 'ser avisado antes de a conta vencer' },
+  { chave: 'recibos', nome: 'a Captura de Recibos', oQueFaz: 'tirar uma foto do recibo e ele lançar-se sozinho' },
+  { chave: 'multi-moeda', nome: 'as Três Moedas', oQueFaz: 'ter dinheiro em real, dólar e euro, e ver tudo convertido' },
+  { chave: 'sincronizacao', nome: 'a Sincronização', oQueFaz: 'lançar no telemóvel e aparecer no computador na hora' },
+  { chave: 'partilha', nome: 'a Partilha', oQueFaz: 'a casa toda a ver e lançar nas mesmas contas' },
+];
+
 /** Lê o caderno. Nunca lança — sem caderno, é como se nenhum vídeo tivesse saído. */
 export function lerCaderno(caminho = CADERNO_DE_CENARIOS) {
   try {
@@ -143,7 +214,55 @@ export function promessasGastas({ caderno = lerCaderno(), raio = RAIO_DE_CENARIO
  * ⚠️ Se o slug já lá estiver, SUBSTITUI em vez de acrescentar — refazer um vídeo não
  * pode fazer o caderno pensar que saíram dois.
  */
-export function guardarCenarios(slug, texto, { caminho = CADERNO_DE_CENARIOS, fio = null, promessa = null } = {}) {
+/**
+ * ⚠️ **O SLUG DESTE VÍDEO NÃO CONTA COMO GASTO** — 10/08/2026.
+ * Refazer um vídeo lia o caderno com a linha DELE lá dentro, e o gerador via como
+ * proibido o elenco e a função que ele próprio tinha escolhido na corrida anterior.
+ * Ninguém dá por isso: sai outro elenco, e parece uma escolha.
+ */
+const semEste = (caderno, slug, raio) =>
+  (caderno.videos || []).filter((v) => v.slug !== slug).slice(-raio);
+
+/** Que elencos os últimos vídeos usaram. */
+export function elencosGastos({ caderno = lerCaderno(), raio = RAIO_DE_CENARIOS, slug = null } = {}) {
+  return [...new Set(semEste(caderno, slug, raio).map((v) => v.elenco).filter(Boolean))];
+}
+
+/** Que funções do app os últimos vídeos mostraram. */
+export function funcoesGastas({ caderno = lerCaderno(), raio = RAIO_DE_CENARIOS, slug = null } = {}) {
+  return [...new Set(semEste(caderno, slug, raio).map((v) => v.funcaoDoApp).filter(Boolean))];
+}
+
+/**
+ * Escolhe o que este vídeo vai usar, evitando o que os últimos usaram.
+ *
+ * ⚠️ **Determinista pelo nome do vídeo, nunca por sorteio nem pela hora** — é a mesma
+ * regra das capas e das fotografias: o mesmo vídeo pedido duas vezes tem de dar a mesma
+ * história. Um sorteio faria uma corrida de repescagem contar outra coisa.
+ *
+ * ⚠️ **Se estiverem todos gastos, escolhe à mesma** — repetir é melhor do que parar, e é
+ * a regra da casa desde 09/08. Com 16 elencos e 14 funções para uma janela de 6, isso
+ * não acontece tão cedo.
+ */
+function escolherDeterminista(lista, slug, gastos, chaveDe = (x) => x) {
+  const livres = lista.filter((x) => !gastos.includes(chaveDe(x)));
+  const pool = livres.length ? livres : lista;
+  let soma = 0;
+  for (const c of String(slug || '')) soma = (soma + c.codePointAt(0)) % 100000;
+  return pool[soma % pool.length];
+}
+
+export function escolherElenco(slug, gastos = []) {
+  return escolherDeterminista(ELENCOS, slug, gastos);
+}
+
+export function escolherFuncaoDoApp(slug, gastos = []) {
+  /** ⚠️ O deslocamento existe para o elenco e a função não andarem sempre ao par: sem ele,
+   *  o mesmo nome de vídeo cairia sempre no mesmo par das duas listas. */
+  return escolherDeterminista(FUNCOES_DO_APP, `${slug}::app`, gastos, (x) => x.chave);
+}
+
+export function guardarCenarios(slug, texto, { caminho = CADERNO_DE_CENARIOS, fio = null, promessa = null, elenco = null, funcaoDoApp = null } = {}) {
   const caderno = lerCaderno(caminho);
   const cenarios = cenariosDoTexto(texto);
   const videos = (caderno.videos || []).filter((v) => v.slug !== slug);
@@ -151,6 +270,8 @@ export function guardarCenarios(slug, texto, { caminho = CADERNO_DE_CENARIOS, fi
     slug,
     cenarios,
     ...(fio ? { fio } : {}),
+    ...(elenco ? { elenco } : {}),
+    ...(funcaoDoApp ? { funcaoDoApp } : {}),
     ...(promessa ? { promessa: String(promessa).trim() } : {}),
     em: new Date().toISOString().slice(0, 10),
   });

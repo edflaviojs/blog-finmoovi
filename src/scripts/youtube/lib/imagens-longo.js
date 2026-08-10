@@ -167,6 +167,52 @@ const ILUSTRACOES = [
   { figura: 'boia', pista: /respirar|respirou|aliviad|folga no mes|voltar a tona/ },
   { figura: 'cofre', pista: /guardar|guardei|reserva|proteger|protege/ },
   { figura: 'balde-furado', pista: /furad|nao para em pe|nao sobra nada|ta furado/ },
+
+  /**
+   * ═══ 🔴 AS DEZOITO QUE ESTAVAM PAGAS E INALCANÇÁVEIS — 10/08/2026 ═══
+   *
+   * ═══ O QUE O DONO VIU ═══
+   * *"Esses trechos só têm letras, não tem socos, não tem mudança de imagens, isso é
+   * ponto de fuga dos espectadores… usar mais nossos b-rolls."*
+   *
+   * ═══ O QUE A MEDIÇÃO DISSE ═══
+   * O vídeo de 10/08 gasta **70% do tempo em `palavras`** — letra na tela — contra **6%
+   * em ilustração**. Os dois piores buracos que ele apontou (01:13 e 02:36, trinta e
+   * vinte e sete segundos sem nada) são **os dois cenas de `palavras`**.
+   *
+   * ═══ A CAUSA, E NÃO ERA O TETO ═══
+   * O teto era 6 e entraram 3 — logo o teto não estava a apertar. **Estavam apertadas as
+   * PISTAS: catorze figuras tinham pista escrita, e as figuras são trinta e três.** As
+   * outras dezanove nunca podiam ser escolhidas, por mais que a narração pedisse, porque
+   * nada as sabia procurar. Estavam pagas, prontas, e fora de alcance.
+   *
+   * ⚠️ **AS PISTAS SAEM DO SIGNIFICADO, e o significado já estava escrito** —
+   * `METAPHOR_MEANINGS` em `lib/schema-short.js` diz o que cada figura quer dizer
+   * (*bola-de-ferro: "a dívida que prende e pesa"*). Não se inventou nenhuma leitura
+   * nova: traduziu-se cada significado para as palavras com que uma pessoa o diz.
+   *
+   * ⚠️ **E continua a valer a lição do `ralo`:** uma pista que não casa com fala nenhuma
+   * é uma figura morta na mesma. Por isso são frases do dia a dia — *"nunca mais consegui
+   * sair disso"*, *"achei que ia dar certo"* — e não termos de banco.
+   */
+  { figura: 'bola-neve', pista: /bola de neve|foi virando|de pouquinho em pouquinho|comeca pequen|vai somando|vira uma montanha/ },
+  { figura: 'escorregao', pista: /escorregu|tropec|vacil|dei mole|deslize|foi so uma vez/ },
+  { figura: 'foguete', pista: /disparou|decolou|subiu rapido|foi la pra cima|dobrou de/ },
+  { figura: 'semente', pista: /plantar|planta|semente|comeca(r)? pequeno|daqui a (uns |alguns )?anos|no longo prazo|com o tempo (rende|cresce)/ },
+  { figura: 'montanha-russa', pista: /sobe e desce|um mes sim outro nao|nunca sei quanto|instavel|vai e volta/ },
+  { figura: 'bolha', pista: /estour(a|ou)|nao era bem assim|era so promessa|parecia bom demais|furou/ },
+  { figura: 'balanca', pista: /comparar|de um lado.*do outro|vale mais a pena|qual dos dois|pesa mais/ },
+  { figura: 'bola-de-ferro', pista: /arrastando|preso|nao consigo sair|amarrado|me segura|arrasto isso/ },
+  { figura: 'guarda-chuva', pista: /imprevisto|se acontecer alguma coisa|emergencia|pegar de surpresa|quando chove/ },
+  { figura: 'mochila-pedras', pista: /carreg|peso nas costas|pesado demais|aguentando|nas costas/ },
+  { figura: 'gangorra', pista: /um sobe (e )?o outro desce|troca de lugar|nunca ficam iguais|desequilibr/ },
+  { figura: 'corda-bamba', pista: /no limite|sem margem|qualquer coisa derruba|no fio|apertadinho|sem rede/ },
+  { figura: 'vela', pista: /esperando|enquanto isso|o tempo passa(ndo)?|adiar|deixar pra depois|fui empurrando/ },
+  { figura: 'trem-perdido', pista: /perdi a chance|ja passou|era so ter|se eu tivesse|tarde demais|perdi o tempo/ },
+  { figura: 'duas-portas', pista: /so da pra escolher um|ou um ou outro|abrir mao|tem que abrir mao|nao da pros dois/ },
+  { figura: 'semaforo', pista: /parar ou seguir|hora de parar|sinal de alerta|luz vermelha|pisou no freio/ },
+  { figura: 'escudo', pista: /aguent(a|ei)|segurou o tranco|nao me derrub|protegid|blindad/ },
+  { figura: 'fumaca', pista: /virou fumaca|sumiu|evapor|nao sobrou nada|foi embora sem/ },
 ];
 
 /**
@@ -175,8 +221,29 @@ const ILUSTRACOES = [
  * ausência deles. Aqui cada aparição é uma figura DIFERENTE (há 32 e nunca se repete
  * uma), portanto seis não cansam como quatro do mesmo boneco cansavam.
  */
-const TETO_DE_ILUSTRACOES = 6;
-const INTERVALO_DA_ILUSTRACAO = 3;
+/**
+ * ═══ 🔴 SEIS PASSOU A CATORZE — 10/08/2026, ordem do dono com o número à frente ═══
+ *
+ * O vídeo media **70% do tempo em letra na tela**. O alvo que ele aprovou é **35%**, e
+ * seis ilustrações não chegavam nem perto de lá: mesmo que as seis entrassem, sobravam
+ * mais de trinta cenas de `palavras`.
+ *
+ * ⚠️ **Catorze não é um palpite: é a conta.** Um guião longo dá ~55 cenas. Para a letra
+ * ficar em 35% é preciso que ~19 cenas mudem de família. As metáforas dão 2, as
+ * fotografias 3, o app 5 e o b-roll do catálogo 3 — sobram ~14 para as ilustrações. É
+ * exactamente isto.
+ *
+ * ⚠️ **E o intervalo desceu de 3 para 2 pela MESMA conta.** Com 3 cenas de intervalo
+ * obrigatório, catorze ilustrações precisam de 42 cenas de espaço e o guião tem 55 —
+ * não cabiam, e o teto novo não passaria de enfeite no código. Duas de intervalo ainda
+ * garante que nunca há duas coladas, que era o que a regra queria dizer.
+ *
+ * ⚠️ **Cada aparição continua a ser uma figura DIFERENTE** (nunca se repete uma no mesmo
+ * vídeo), e são 33 no catálogo — portanto catorze cabem sem repetir nenhuma. Era ESTA a
+ * razão de o teto poder subir: o que cansa é o mesmo boneco, não haver desenhos.
+ */
+const TETO_DE_ILUSTRACOES = 14;
+const INTERVALO_DA_ILUSTRACAO = 2;
 
 /**
  * ═══ 📸 AS TRÊS FOTOGRAFIAS DA MANUS (04/08/2026, fim) ═══
@@ -444,7 +511,65 @@ export function escolherLugaresDaMetafora(cenas, fio) {
  * queixava, porque nada estava errado, só desperdiçado.
  * Agora recebe a lista do que já está tomado e escolhe apenas entre o que sobra.
  */
-export function escolherLugaresDaIlustracao(cenas, lugaresDaMetafora = new Map(), fio = null, ocupados = new Set(), lugaresDaFoto = new Map()) {
+/**
+ * ═══ 🔴 O QUE UM LEITOR DE IA ESCOLHEU PARA CADA CENA — 10/08/2026 ═══
+ *
+ * ═══ POR QUE AS PISTAS NÃO CHEGAM, E ESTÁ MEDIDO ═══
+ * Abriram-se as 33 figuras (eram 14 alcançáveis) e subiu-se o teto de 6 para 14. O vídeo
+ * passou de **3 ilustrações para 5**, em 55 cenas. O teto nunca foi o travão: **é o
+ * casamento por palavra-gatilho que não escala.** Uma pista escrita à mão só apanha a
+ * cena que calhe de usar aquelas palavras, e uma narração de seis minutos quase nunca as
+ * usa. Continuar a escrever pistas era continuar a adivinhar como as pessoas falam — a
+ * lição do `ralo`, agora pela terceira vez.
+ *
+ * ═══ POR QUE ISTO NÃO É "GOSTO A FINGIR DE VERDADE" ═══
+ * Regra da casa (`verdade-versus-gosto`): o que se mede, mede-se com código; **o que é
+ * julgamento mede-se com um segundo leitor de IA.** *"Esta figura combina com esta
+ * frase?"* é julgamento — nunca foi outra coisa, e escrevê-lo em `regex` era fingir que
+ * era conta. O significado de cada figura já está escrito há meses em
+ * `METAPHOR_MEANINGS`; o leitor lê a narração, lê os significados, e escolhe.
+ *
+ * ⚠️ **E O RESULTADO É GRAVADO, por isso o montador continua determinista.** É a MESMA
+ * forma das fotografias: quem paga a IA é um passo à parte (`ilustrador-longo.js`), que
+ * escreve um ficheiro; o montador só lê. Correr o montador duas vezes dá o mesmo vídeo.
+ *
+ * ⚠️ **Sem ficheiro, ou com um slug que ainda não passou pelo ilustrador, isto devolve
+ * VAZIO** e as pistas escritas à mão continuam a valer. Nunca se leva a escolha de outro
+ * vídeo — é a mesma trava das fotografias, e pela mesma razão.
+ */
+export function ilustracoesDoCatalogo(slug, catalogoDeMesa = null) {
+  if (!slug) return new Map();
+  try {
+    let catalogo = catalogoDeMesa;
+    if (!catalogo) {
+      const p = join(process.cwd(), '.github', 'data', 'ilustracoes-do-longo.json');
+      if (!existsSync(p)) return new Map();
+      catalogo = JSON.parse(readFileSync(p, 'utf-8'));
+    }
+    const doVideo = catalogo?.videos?.[slug];
+    if (!Array.isArray(doVideo)) return new Map();
+    const conhecidas = new Set(ILUSTRACOES.map((x) => x.figura));
+    const fora = [];
+    const mapa = new Map();
+    for (const e of doVideo) {
+      if (!e || e.cena === undefined || !e.figura) continue;
+      /**
+       * ⚠️ **UMA FIGURA QUE NÃO EXISTE NÃO ENTRA, E DIZ-SE.** O leitor devolve texto; um
+       * nome trocado ("relógio" em vez de "relogio") daria uma cena sem desenho nenhum e
+       * ninguém saberia porquê. Cair fora em silêncio é o modo de falha desta casa.
+       */
+      if (!conhecidas.has(String(e.figura))) { fora.push(e.figura); continue; }
+      mapa.set(String(e.cena), String(e.figura));
+    }
+    if (fora.length) console.log(`⚠️ o ilustrador nomeou ${fora.length} figura(s) que não existem e foram ignoradas: ${[...new Set(fora)].join(', ')}`);
+    return mapa;
+  } catch (err) {
+    console.log(`⚠️ não deu para ler as ilustrações escolhidas (${err.message}) — valem as pistas escritas à mão.`);
+    return new Map();
+  }
+}
+
+export function escolherLugaresDaIlustracao(cenas, lugaresDaMetafora = new Map(), fio = null, ocupados = new Set(), lugaresDaFoto = new Map(), escolhidasPorLeitor = new Map()) {
   const lugares = new Map();
   const usadas = new Set(fio ? [fio] : []);
   const escolhidos = [];
@@ -461,8 +586,17 @@ export function escolherLugaresDaIlustracao(cenas, lugaresDaMetafora = new Map()
   cenas.forEach((c, i) => {
     if (escolhidos.length >= TETO_DE_ILUSTRACOES) return;
     if (!livre(c, i) || !cabe(i)) return;
-    const texto = semAcento(c.narration);
-    const achada = ILUSTRACOES.find((x) => !usadas.has(x.figura) && x.pista.test(texto));
+    /**
+     * ⚠️ **O LEITOR MANDA, A PISTA É A RESERVA** — e a ordem não é indiferente.
+     * A pista é uma adivinhação sobre como as pessoas falam; o leitor leu a frase mesmo.
+     * Mas as três guardas continuam a valer para os dois: nunca a figura do fio condutor,
+     * nunca a mesma figura duas vezes, e nunca duas coladas. Uma escolha do leitor que
+     * parta uma dessas regras é DESCARTADA — ele escolhe a figura, não a montagem.
+     */
+    const doLeitor = escolhidasPorLeitor.get(String(c.id));
+    const achada = (doLeitor && !usadas.has(doLeitor))
+      ? { figura: doLeitor }
+      : ILUSTRACOES.find((x) => !usadas.has(x.figura) && x.pista.test(semAcento(c.narration)));
     if (!achada) return;
     usadas.add(achada.figura);
     escolhidos.push(i);
@@ -663,7 +797,7 @@ export function dirigirImagens(cenas, mapa = {}, slug = null) {
    * fotografias pela mesma razão que já guardavam da metáfora: duas imagens grandes
    * coladas lêem-se como "agora o vídeo é de imagens", em vez de duas coisas diferentes.
    */
-  const lugaresDaIlustracao = escolherLugaresDaIlustracao(cenas, lugaresDaMetafora, fio, ocupados, lugaresDaFoto);
+  const lugaresDaIlustracao = escolherLugaresDaIlustracao(cenas, lugaresDaMetafora, fio, ocupados, lugaresDaFoto, ilustracoesDoCatalogo(slug));
 
   const dirigida = primeiraPassagem.map((c, i) => {
     if (lugaresDaFoto.has(i)) {

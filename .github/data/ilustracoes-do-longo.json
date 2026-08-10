@@ -1,0 +1,62 @@
+{
+  "videos": {
+    "dono-dois-homens-mesma-idade-mesmo-trabalho": [
+      {
+        "cena": "1",
+        "figura": "bifurcacao"
+      },
+      {
+        "cena": "5",
+        "figura": "semaforo"
+      },
+      {
+        "cena": "9",
+        "figura": "mochila-pedras"
+      },
+      {
+        "cena": "12",
+        "figura": "semente"
+      },
+      {
+        "cena": "13",
+        "figura": "escorregao"
+      },
+      {
+        "cena": "16",
+        "figura": "duas-portas"
+      },
+      {
+        "cena": "20",
+        "figura": "balanca"
+      },
+      {
+        "cena": "26",
+        "figura": "fumaca"
+      },
+      {
+        "cena": "34",
+        "figura": "ralo"
+      },
+      {
+        "cena": "43",
+        "figura": "balde-furado"
+      },
+      {
+        "cena": "44",
+        "figura": "ampulheta"
+      },
+      {
+        "cena": "51",
+        "figura": "bola-neve"
+      },
+      {
+        "cena": "53",
+        "figura": "cofre"
+      },
+      {
+        "cena": "54",
+        "figura": "escudo"
+      }
+    ]
+  }
+}

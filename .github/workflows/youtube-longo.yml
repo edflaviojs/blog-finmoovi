@@ -446,6 +446,98 @@ jobs:
           node src/scripts/youtube/montar-longo.js --slug="$SLUG" || \
             echo "::warning::o montador não gostou das fotografias — fica o guião de antes delas."
 
+      # ── 1-c-bis. OS DESENHOS DE CADA CENA ─────────────────────────────────────
+      #
+      # 🔴 **70% DO VÍDEO ERA LETRA NA TELA — 10/08/2026, queixa do dono.**
+      #
+      # Palavras dele: *"Esses trechos só têm letras, não tem socos, não tem mudança de
+      # imagens, isso é ponto de fuga dos espectadores… quero cenas mudando toda hora."*
+      # Medido no vídeo desse dia: 70% do tempo em `palavras` contra 6% em ilustração, e
+      # os dois piores buracos (30s e 27s sem nada) eram os dois cenas de `palavras`.
+      #
+      # ⚠️ **A escolha da figura era por palavra-gatilho e não escalava.** Abriram-se as
+      # 33 figuras (só 14 tinham pista) e subiu-se o teto de 6 para 14: o vídeo passou de
+      # 3 ilustrações para 5, em 55 cenas. Com o leitor de IA a escolher pelo SIGNIFICADO
+      # (que já estava escrito em `METAPHOR_MEANINGS`), passou a 11 — 70% → 55% de letra.
+      #
+      # ⚠️ **VEM DEPOIS DAS FOTOGRAFIAS, e a ordem importa:** o ilustrador só olha para as
+      # cenas que sobraram em `palavras`, e as fotografias já tiraram as delas. Ao
+      # contrário, ele escolheria desenho para cenas que iam levar fotografia.
+      #
+      # ⚠️ **E O MONTADOR CORRE OUTRA VEZ A SEGUIR** — é ele que põe os desenhos no guião.
+      # Continua determinista: quem paga a IA é este passo, que escreve um ficheiro; o
+      # montador só lê. É a mesma forma das fotografias.
+      #
+      # 🔴 **NUNCA MATA A CORRIDA.** Sem chave, sem resposta, ou com resposta estragada, o
+      # vídeo sai com as pistas escritas à mão. Menos desenhos > vídeo nenhum.
+      - name: Os desenhos de cada cena (o leitor escolhe pelo significado)
+        if: steps.escolher.outputs.skip != 'true'
+        env:
+          KIE_AI_KEY: ${{ secrets.KIE_AI_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
+        run: |
+          set -uo pipefail
+          node src/scripts/youtube/ilustrador-longo.js --slug="$SLUG" || \
+            echo "::warning::o ilustrador não correu bem — o vídeo sai com as pistas escritas à mão."
+          node src/scripts/youtube/montar-longo.js --slug="$SLUG" || \
+            echo "::warning::o montador não gostou dos desenhos — fica o guião de antes deles."
+          # ⚠️ CONFERIR O RESULTADO, NUNCA O CÓDIGO DE SAÍDA. É esta linha que diz, em
+          # texto, quanto do vídeo ficou em letra na tela — o número da queixa do dono.
+          node -e "const p=require('./youtube-render/public/roteiro/'+process.argv[1]+'.json');const c=p.scenes.reduce((a,s)=>{const k=(s.visual&&s.visual.tipo)||'?';a[k]=(a[k]||0)+1;return a;},{});const tot=p.scenes.length;console.log('🎨 '+(c.ilustracao||0)+' ilustrações · '+(c.palavras||0)+'/'+tot+' cenas só com letra ('+Math.round((c.palavras||0)/tot*100)+'%)');" "$SLUG"
+
+      # ── 1-d. A CAPA ───────────────────────────────────────────────────────────
+      #
+      # 🔴 **O PROGRAMA DA CAPA EXISTIA E NINGUÉM O CHAMAVA — 10/08/2026.**
+      #
+      # ═══ O DEFEITO, E ELE NÃO SE QUEIXAVA ═══
+      # `capa-manus.js` está escrito, testado e dinâmico desde 09/08 (seis moldes, a cena
+      # tirada da metáfora do vídeo, o título tirado da fila). **Mas nenhum workflow deste
+      # repositório o corria** — foi conferido com `grep capa-manus .github/workflows/`,
+      # que não devolvia uma única linha. Todas as capas até hoje foram feitas à mão.
+      #
+      # Consequência, e é a pior espécie: o vídeo subia **sem miniatura própria**, o
+      # YouTube escolhia um fotograma sozinho, e a corrida acabava **a verde**. O dono só
+      # descobriria abrindo o Studio — que foi exactamente como se descobriu o domingo
+      # sem vídeo (§64). Ver o aviso de `acharCapa` em `upload-longo.js`: sem capa, ele
+      # escreve *"(FALTA — o vídeo subiria sem miniatura própria)"* e sobe à mesma.
+      #
+      # ⚠️ **VEM DEPOIS DAS FOTOGRAFIAS E ANTES DO COMMIT, e o sítio não é indiferente.**
+      # A capa é escrita em `youtube-render/public/manus/<slug>/capa-<molde>.jpg`, que já
+      # está no `git add` do passo seguinte — portanto entra no MESMO commit das
+      # fotografias. Um passo próprio a empurrar seria uma segunda corrida a disputar o
+      # ramo, e é assim que se perdem ficheiros nesta casa.
+      #
+      # ⚠️ **E O MOLDE ESCOLHIDO FICA GRAVADO** no `longo-cenarios.json` (o mesmo caderno
+      # das cenas), que é o que faz o molde RODAR de vídeo para vídeo. Se este passo
+      # corresse depois do commit, o caderno aprenderia na nuvem e morreria com ela.
+      #
+      # 🔴 **NUNCA MATA A CORRIDA** — regra do dono, 09/08: uma capa é um enfeite caro,
+      # mas um vídeo sem capa continua a ser um vídeo, e um vídeo que não existe não é
+      # nada. Sem chave da Manus, salta em silêncio, como as fotografias.
+      - name: A capa do YouTube (só se houver chave da Manus)
+        if: steps.escolher.outputs.skip != 'true'
+        env:
+          MANUS_API_KEY: ${{ secrets.MANUS_API_KEY }}
+        run: |
+          set -uo pipefail
+          if [ -z "${MANUS_API_KEY:-}" ]; then
+            echo "::warning::não há chave da Manus nos segredos — este vídeo sobe SEM miniatura própria e o YouTube escolhe um fotograma sozinho."
+            exit 0
+          fi
+          node src/scripts/youtube/capa-manus.js --slug="$SLUG" --so=capa || \
+            echo "::warning::a capa não saiu — o vídeo sobe sem miniatura própria, e isso é melhor do que não haver vídeo."
+          # ⚠️ CONFERIR O RESULTADO, NUNCA O CÓDIGO DE SAÍDA — regra da casa. É esta linha
+          # que diz, em texto, se sexta-feira houve capa ou não; sem ela voltava a ser
+          # preciso abrir o Studio para saber.
+          if ls youtube-render/public/manus/"$SLUG"/capa-*.jpg >/dev/null 2>&1; then
+            echo "✅ capa: $(ls youtube-render/public/manus/"$SLUG"/capa-*.jpg | head -1)"
+          else
+            echo "::warning::não ficou nenhuma capa em youtube-render/public/manus/$SLUG/ — o vídeo sobe sem miniatura própria."
+          fi
+
       # 🔴 O CADERNO DE CENAS TEM DE SAIR DAQUI GRAVADO — 09/08/2026.
       #
       # ═══ O DEFEITO, MEDIDO ═══

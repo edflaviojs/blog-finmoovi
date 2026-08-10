@@ -47,6 +47,12 @@ import { BORDAO } from '../youtube/lib/schema-short.js';
 //    aqui uma cópia mais grosseira, as duas divergiram, e a prova reprovava cenas boas.
 import { assinaturaDoEcra } from '../youtube/lib/imagens-longo.js';
 import { montarFichaDeDivida } from '../youtube/lib/simulador.js';
+// ⚠️ A MESMA função que alimenta o caderno de cenas. É de propósito: o que ela lê nos
+//    exemplos é exactamente o que ela vai proibir no vídeo seguinte. Uma conta, um sítio.
+import {
+  cenariosDoTexto, ELENCOS, FUNCOES_DO_APP, RAIO_DE_CENARIOS,
+  escolherElenco, escolherFuncaoDoApp, elencosGastos,
+} from '../youtube/lib/cenarios-do-longo.js';
 import { buildPromptLeitorBloco, buildPromptLeitorCapitulo } from '../youtube/lib/leitor-longo.js';
 
 let passou = 0;
@@ -626,6 +632,80 @@ console.log('   (a prova nasceu de uma falha REAL: a trava punia "moedinha" e o 
   ok('o molde que o prompt da chamada manda usar PASSA na trava da chamada', v.ok, v.erros.join(' | '));
 
   /**
+   * 🔴 A 17ª OCORRÊNCIA, E ESTA ESCAPOU A TODAS AS PROVAS DE CIMA — 10/08/2026.
+   *
+   * ═══ O QUE ACONTECEU ═══
+   * O caderno de cenas (`lib/cenarios-do-longo.js`) entra no pedido do mapa a dizer
+   * *"o domingo já saiu, não pode voltar"*. E o vídeo seguinte escreveu à mesma
+   * **"Até que eu parei num domingo"**. Não foi desobediência: a palavra *domingo*
+   * aparecia CINCO vezes no que o modelo lê, e duas delas como exemplo do que é BOM
+   * (o capítulo-exemplo que ele é mandado copiar, e a lista "o que faz isto prender").
+   *
+   * As provas de cima só olham para um lado — *"a regra está escrita no pedido?"*. Esta
+   * olha para o outro: **o pedido está a ENSINAR o que o caderno proíbe?**
+   *
+   * ═══ A RÉGUA, E PORQUE ELA NÃO É GOSTO ═══
+   * `cenariosDoTexto()` é a MESMA função que alimenta o caderno — logo, o que ela lê nos
+   * exemplos é exactamente o que ela vai proibir no vídeo seguinte. Uma conta, um sítio.
+   *
+   * ⚠️ **O ASSUNTO do exemplo está isento, e o enfeite não.** O exemplo declara-se como
+   * sendo de outro vídeo (*"o assunto é de OUTRO vídeo de propósito"*) e o modelo é
+   * avisado disso; o que ele copia sem pensar é o DETALHE pequeno, porque é esse que se
+   * lhe manda copiar quando se diz *"copie a FORMA"*. Por isso `a fatura do cartão` está
+   * na lista dos permitidos (é o assunto: três assinaturas caem numa fatura) e mais nada.
+   *
+   * ⚠️ **Ao acrescentar um permitido aqui, escreva porquê.** Cada nome nesta lista é uma
+   * cena que os vídeos vão continuar a repetir — e foi disso que o dono se queixou.
+   */
+  {
+    /**
+     * ⚠️ **SÓ O ASSUNTO DECLARADO DE CADA EXEMPLO ENTRA AQUI.** O capítulo-exemplo conta
+     * três assinaturas esquecidas que caem numa fatura de cartão; o de abertura conta uma
+     * conta de luz. São as histórias deles, ditas ao modelo como sendo *"de OUTRO vídeo
+     * de propósito"*. Tudo o resto que apareça é enfeite — e enfeite é o que se copia sem
+     * pensar, porque é isso que se pede quando se diz *"copie a FORMA"*.
+     *
+     * ⚠️ **É por prompt, e não uma lista só.** Uma lista global deixaria a conta de luz
+     * passar no pedido do capítulo, onde ela seria uma fuga a sério.
+     */
+    const ASSUNTO_DO_EXEMPLO = ['a fatura do cartão', 'as assinaturas esquecidas'];
+    const ASSUNTO_POR_PEDIDO = {
+      capitulo: ASSUNTO_DO_EXEMPLO,
+      mapa: ASSUNTO_DO_EXEMPLO,
+      abertura: [...ASSUNTO_DO_EXEMPLO, 'a conta de luz'],
+    };
+    const enfeites = (nome, texto) => {
+      const achadas = cenariosDoTexto(texto).filter((c) => !ASSUNTO_DO_EXEMPLO.includes(c));
+      ok(
+        `o exemplo "${nome}" não ensina nenhuma cena que o caderno vai proibir`,
+        achadas.length === 0,
+        achadas.length ? `ensina: ${achadas.join(' · ')}` : '',
+      );
+    };
+    enfeites('capítulo', [
+      EXEMPLO_DE_CAPITULO.titulo,
+      EXEMPLO_DE_CAPITULO.pergunta,
+      EXEMPLO_DE_CAPITULO.desenvolvimento,
+      EXEMPLO_DE_CAPITULO.regancho,
+    ].join(' '));
+    enfeites('mapa', (EXEMPLO_DE_MAPA.capitulos || []).map((c) => c.titulo).join(' '));
+
+    /**
+     * E o pedido em si — as listas de "o que faz isto prender" e o "repare" que fecha o
+     * exemplo são instruções diretas, e foi de lá que o domingo saiu duas das cinco vezes.
+     * ⚠️ Aqui NÃO há isenção nenhuma: uma instrução não tem "assunto de outro vídeo".
+     */
+    for (const [nome, texto] of [['capitulo', prompts.capitulo], ['mapa', prompts.mapa], ['abertura', prompts.abertura]]) {
+      const achadas = cenariosDoTexto(texto).filter((c) => !ASSUNTO_POR_PEDIDO[nome].includes(c));
+      ok(
+        `o pedido do ${nome} não dá como bom exemplo uma cena que o caderno proíbe`,
+        achadas.length === 0,
+        achadas.length ? `ensina: ${achadas.join(' · ')}` : '',
+      );
+    }
+  }
+
+  /**
    * ⚠️ E O POLIDOR TAMBÉM CONTA — ele reescreve, logo pode partir uma trava.
    * O polidor dos blocos de parágrafo único (abertura, chamada, fecho) foi ligado em
    * 04/08 por ordem do dono. Se o prompt DELE não repetir as regras de verdade de
@@ -891,6 +971,66 @@ console.log('   (a 1ª prova apanha a montagem a PERDER parágrafos do guião, e
   ok(
     'o mesmo guião dá sempre exatamente as mesmas imagens',
     JSON.stringify(outraVez.map((c) => c.visual)) === JSON.stringify(cenas.map((c) => c.visual)),
+  );
+}
+
+// ═══ O ELENCO E A FUNÇÃO DO APP RODAM ════════════════════════════════════════
+console.log('\nO ELENCO E A FUNÇÃO DO APP NÃO SE REPETEM');
+
+{
+  /**
+   * 🔴 10/08/2026 — as duas queixas do dono viradas em conta.
+   *
+   * *"Sempre fala dos dois homens, isso tem que ser dinâmico"* e *"o FinMoovi tem
+   * centenas de funcionalidades e o roteiro só ataca sobre cartão??? já falei isso
+   * milhares de vezes"*.
+   *
+   * ⚠️ A régua não é "o texto ficou variado" — isso é gosto. É: **em seis vídeos
+   * seguidos, saem seis elencos diferentes e seis funções diferentes?** Isso conta-se.
+   */
+  ok('há elencos que cheguem para a janela de 6 vídeos', ELENCOS.length >= RAIO_DE_CENARIOS, `${ELENCOS.length} elencos`);
+  ok('há funções do app que cheguem para a janela de 6 vídeos', FUNCOES_DO_APP.length >= RAIO_DE_CENARIOS, `${FUNCOES_DO_APP.length} funções`);
+
+  const slugs = ['a-um', 'b-dois', 'c-tres', 'd-quatro', 'e-cinco', 'f-seis'];
+  const ge = [];
+  const gf = [];
+  for (const s of slugs) {
+    ge.push(escolherElenco(s, ge));
+    gf.push(escolherFuncaoDoApp(s, gf).chave);
+  }
+  ok('seis vídeos seguidos dão seis elencos DIFERENTES', new Set(ge).size === ge.length, ge.map((e) => e.slice(0, 24)).join(' | '));
+  ok('seis vídeos seguidos dão seis funções do app DIFERENTES', new Set(gf).size === gf.length, gf.join(' · '));
+
+  /**
+   * ⚠️ **Determinista, e isto não é preciosismo:** uma repescagem de sábado tem de contar
+   * a MESMA história que a corrida de sexta contaria. Um sorteio faria o vídeo mudar de
+   * elenco entre duas tentativas do mesmo vídeo.
+   */
+  ok('o mesmo vídeo pedido duas vezes dá o mesmo elenco', escolherElenco('x-igual', []) === escolherElenco('x-igual', []));
+  ok('e a mesma função do app', escolherFuncaoDoApp('x-igual', []).chave === escolherFuncaoDoApp('x-igual', []).chave);
+
+  /**
+   * 🔴 A ARMADILHA QUE ISTO APANHA, e ela já mordeu duas vezes nesta casa (o caderno de
+   * cenas em 09/08, o cache do render em 10/08): **refazer um vídeo lê o caderno com a
+   * linha DELE lá dentro.** Sem esta guarda, a repescagem via o próprio elenco como
+   * gasto, escolhia outro, e ninguém dava por nada — parecia uma escolha.
+   */
+  ok(
+    'refazer um vídeo NÃO conta o elenco dele próprio como gasto',
+    escolherElenco('x-igual', elencosGastos({ caderno: { videos: [{ slug: 'x-igual', elenco: escolherElenco('x-igual', []) }] }, slug: 'x-igual' })) === escolherElenco('x-igual', []),
+  );
+
+  /**
+   * ⚠️ E as duas listas não podem andar ao par: se o mesmo nome caísse sempre no mesmo
+   * índice das duas, "família com filhos" viria sempre com a mesma tela do app.
+   */
+  const pares = slugs.map((s) => `${ELENCOS.indexOf(escolherElenco(s, []))}:${FUNCOES_DO_APP.findIndex((f) => f.chave === escolherFuncaoDoApp(s, []).chave)}`);
+  ok('o elenco e a função não andam sempre ao par', new Set(pares.map((p) => p.split(':')[0] === p.split(':')[1])).size <= 2 && !pares.every((p) => p.split(':')[0] === p.split(':')[1]), pares.join(' '));
+
+  /** ⚠️ Regra antiga da casa: neste canal ninguém tem nome. O elenco diz de QUEM é a história. */
+  ok(
+    'nenhum elenco traz um nome próprio',
+    ELENCOS.every((e) => !/\b(cláudia|claudia|antônio|antonio|joão|joao|maria|josé|jose|pedro)\b/i.test(e)),
   );
 }
 
