@@ -579,6 +579,24 @@ export function socosDoVideoLongo(
   fps: number,
   /** A família de imagem de cada cena, na mesma ordem dos arranques. Sem ela, só o relógio. */
   familias: string[] = [],
+  /**
+   * ═══ 🔴 O PAPEL DE CADA CENA NA HISTÓRIA — 10/08/2026, queixa do dono ═══
+   *
+   * *"Os socos têm que ser condizente com o que se fala, às vezes percebo que um soco
+   * verde está falando de coisas negativas e vice-versa, isso não pode acontecer."*
+   *
+   * ⚠️ **E ele tem razão porque a cor NUNCA olhou para o texto.** Ela alternava
+   * 🔴🟢🔴🟢 por CONTAGEM (`i % 2`), o que dá metade dos socos com a cor errada por
+   * construção. Medido neste vídeo: aos 56s um soco VERDE em *"ela lembrou de uma outra
+   * conta mais antiga"*, e aos 86s outro verde em *"cada pedaço ficava separado"*.
+   *
+   * ⚠️ **Isto é VERDADE e não gosto** (`verdade-versus-gosto`): não se pergunta a
+   * ninguém se a frase é positiva. O mapa deste canal IMPÕE três atos — o susto, a
+   * armadilha e a virada — e cada cena já sabe em que ato vive. A cor lê-se daí.
+   *
+   * Sem esta lista, volta-se à alternância de antes.
+   */
+  papeis: Array<'problema' | 'ganho'> = [],
 ): Array<{ frame: number; tipo: TipoDeImpacto; som: string }> {
   if (!iniciosDeCena.length) return [];
   const passo = Math.round(INTERVALO_DO_SOCO_SEC * fps);
@@ -632,7 +650,17 @@ export function socosDoVideoLongo(
    */
   escolhidos.sort((a, b) => a.frame - b.frame);
   return escolhidos.map((s, i) => {
-    const tipo: TipoDeImpacto = i % 2 === 0 ? 'alerta' : 'virada';
+    /**
+     * ⚠️ **A COR VEM DA CENA EM QUE O SOCO CAI, e não da contagem.** Procura-se a cena
+     * cujo arranque é o deste soco (ele cai sempre num arranque, por construção) e
+     * lê-se o papel dela. Só quando não há lista de papéis é que se volta a alternar —
+     * e aí é uma degradação honesta, não o comportamento normal.
+     */
+    const cena = iniciosDeCena.indexOf(s.frame);
+    const papel = cena >= 0 ? papeis[cena] : undefined;
+    const tipo: TipoDeImpacto = papel
+      ? (papel === 'ganho' ? 'virada' : 'alerta')
+      : (i % 2 === 0 ? 'alerta' : 'virada');
     return { frame: s.frame, tipo, som: tipo === 'alerta' ? 'warning.ogg' : 'kaching.ogg' };
   });
 }

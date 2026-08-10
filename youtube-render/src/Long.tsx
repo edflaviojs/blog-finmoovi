@@ -152,6 +152,15 @@ export const CAPA_FRAMES = 240;
 export const SIGNATURE_FRAMES = 75;
 export const PLACA_FRAMES = 78; // ~2,6s de placa de capítulo, por cima da cena
 /**
+ * 🔴 ONDE BATE O SOCO DE COR DA ABERTURA — 10/08/2026, ordem do dono: *"o primeiro soco
+ * precisa ser nos 2, 3, 4 segundos iniciais"*.
+ *
+ * 75 fotogramas = **2,5 segundos**, dentro dos 8 segundos da capa. Fica depois de a
+ * pergunta já estar escrita e antes de a capa sair — que é a janela em que ele existe
+ * para quem está a ver, e não só para quem mede.
+ */
+export const SOCO_DA_COR_NA_ABERTURA = 75;
+/**
  * O RESPIRO ENTRE CENAS. O TTS já acrescenta 0,35s de silêncio ao fim de cada fala
  * (`TAIL_PAD`), e o Short soma mais 0,7s por cena. Aqui são 0,35s: num vídeo de seis
  * minutos com ~23 cenas, 0,7s por cena seriam 16 segundos de silêncio — o dobro do
@@ -405,11 +414,32 @@ const CapaLonga: React.FC<{ pergunta: string; metaphor?: string | null; frames: 
         * já aprovou. A roda dos quatro glifos vale para os socos do meio do vídeo; a
         * abertura é a assinatura e não roda.
         *
-        * ⚠️ **Sem som próprio** (`som=""`): o baque já toca aqui em cima, no mesmo
-        * fotograma. Dois ficheiros de som ao mesmo tempo não fazem um soco mais forte —
-        * fazem um soco sujo.
+        * ═══ 🔴 E MUDOU DE SÍTIO NO MESMO DIA — DOS 0,1s PARA OS 2,5s ═══
+        *
+        * Palavras do dono, depois de ver o vídeo: *"O primeiro soco precisa ser nos 2, 3,
+        * 4 segundos iniciais, ele está demorando muito, o primeiro soco só aparece no
+        * segundo 11."*
+        *
+        * ⚠️ **O soco dos 0,1s ESTAVA LÁ e ele não o viu** — conferido no fotograma: aos
+        * 0,2s há um triângulo vermelho a ecrã inteiro. Aos 0,1 segundos de vídeo o olho
+        * de quem abre ainda não pousou; o que ele registou como "o primeiro soco" foi o
+        * seguinte, aos 11s, já dentro do conteúdo.
+        *
+        * ⚠️ **É por isso que o de 16s pode ter o soco no fotograma 3 e este não pode.**
+        * No Short em ciclo, quem vê já está a olhar quando ele reinicia — o soco no
+        * princípio é a peça que faz voltar atrás. Num vídeo de seis minutos, o princípio
+        * é o instante em que a pessoa ainda está a chegar. **A mesma peça, dois formatos,
+        * dois sítios.**
+        *
+        * ⚠️ **O clarão branco e o baque FICAM aos 0,1s.** Eles são a entrada da capa, e
+        * tirá-los devolvia o vídeo ao silêncio absoluto do princípio (§08/08). O que se
+        * moveu foi a COR.
+        *
+        * ⚠️ **Som próprio agora, e é por ter deixado de coincidir com o baque.** Enquanto
+        * batiam no mesmo fotograma, dois ficheiros ao mesmo tempo faziam um soco sujo;
+        * separados por 2,4 segundos, são duas batidas e o soco precisa da sua.
         */}
-      <SequenciaDeImpacto from={SOCO_DA_ABERTURA} tipo="alerta" som="" formato="deitado" glifo={0} />
+      <SequenciaDeImpacto from={SOCO_DA_COR_NA_ABERTURA} tipo="alerta" som="warning.ogg" formato="deitado" glifo={0} />
     </AbsoluteFill>
   );
 };
@@ -608,6 +638,27 @@ const SomDaFamilia: React.FC<{ visual?: LongVisual; frames: number }> = ({ visua
     // a fotografia entra com o mesmo deslize das outras imagens grandes
     case 'foto':
       return <SomDoMomento ficheiro={SOM.deslize} volume={0.22} />;
+    /**
+     * ═══ 🔴 AS DUAS FAMÍLIAS QUE ENTRAVAM EM SILÊNCIO — 10/08/2026 ═══
+     *
+     * Ordem do dono: *"o som de cada entrada"*, olhando o que o Short de 16s faz.
+     *
+     * ⚠️ **E a que faltava era a MAIOR de todas.** A família `palavras` é o cavalo de
+     * carga do vídeo longo — **metade das cenas**. Nenhuma delas tinha som de entrada:
+     * o ecrã trocava e não se ouvia nada. Um vídeo em que só um terço das mudanças se
+     * ouve não soa "com som", soa mal sincronizado.
+     *
+     * ⚠️ **`pop` e não `estalo`, e o volume é MAIS BAIXO que todos os outros.** Estas
+     * cenas são as mais numerosas: ao ritmo de uma a cada ~6,8 segundos, um som forte
+     * repetido vinte e seis vezes deixa de marcar a entrada e passa a ser um tique. A
+     * regra da casa aplicada ao som é a mesma da metáfora e do soco — **o que se repete
+     * muito tem de ser mais discreto, senão vira papel de parede.**
+     */
+    case 'palavras':
+      return <SomDoMomento ficheiro={SOM.teclado} atraso={4} volume={0.14} />;
+    /** O b-roll é uma tela do app a entrar — o mesmo deslize das outras imagens grandes. */
+    case 'broll':
+      return <SomDoMomento ficheiro={SOM.deslize} atraso={6} volume={0.2} />;
     default:
       return null;
   }
@@ -812,7 +863,28 @@ export const Long: React.FC<{ script?: LongScript; timing?: LongTiming; slug?: s
    * a tela mais tempo fica na mesma coisa. Ver `socosDoVideoLongo`.
    */
   const familiasDasCenas = script.scenes.map((c) => String(c.visual?.tipo || 'palavras'));
-  const socos = socosDoVideoLongo(inicios, conteudo, fps, familiasDasCenas);
+  /**
+   * ═══ 🔴 O PAPEL DE CADA CENA — 10/08/2026, queixa do dono ═══
+   *
+   * *"Os socos têm que ser condizente com o que se fala, às vezes percebo que um soco
+   * verde está falando de coisas negativas."*
+   *
+   * ⚠️ **A leitura sai da ESTRUTURA que o mapa impõe, e não de julgar o texto.** Este
+   * canal escreve sempre três atos: 1 o susto · 2 a armadilha · 3 a virada. Logo:
+   *   · o **ato 3** é onde a coisa se resolve → 🟢 ganho;
+   *   · a **demonstração** é o app a mostrar a saída → 🟢 ganho, viva em que ato viver;
+   *   · a **chamada** e o **fim** entregam a promessa → 🟢 ganho;
+   *   · tudo o resto (abertura, atos 1 e 2) é o problema a ser contado → 🔴.
+   *
+   * ⚠️ **Nada aqui pergunta a uma IA se a frase é positiva.** Pedir isso seria trocar uma
+   * verdade que já está no guião por um palpite — e é a regra da casa não o fazer.
+   */
+  const papeisDasCenas = script.scenes.map((c): 'problema' | 'ganho' => {
+    if (c.parte === 'demonstracao' || c.parte === 'chamada' || c.parte === 'fecho') return 'ganho';
+    if (Number(c.capitulo) >= 3) return 'ganho';
+    return 'problema';
+  });
+  const socos = socosDoVideoLongo(inicios, conteudo, fps, familiasDasCenas, papeisDasCenas);
   const socosRelativos = socos.map((s) => s.frame);
 
   const framesDaCapa = (() => {

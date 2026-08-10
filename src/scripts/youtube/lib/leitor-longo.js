@@ -28,7 +28,7 @@
 import { generateText } from '../../apis/kie-ai.js';
 import { PERSONA, VICIOS, O_QUE_PRESERVAR } from './voz-do-canal.js';
 import { BORDAO } from './schema-short.js';
-import { MAX_PALAVRAS_CAPA } from './palavras.js';
+import { MAX_PALAVRAS_CAPA_LONGO } from './palavras.js';
 import { PARTES_DO_CAPITULO, PARTES_POSSIVEIS, ORCAMENTO } from './schema-longo.js';
 
 function extrairJson(texto) {
@@ -125,7 +125,7 @@ Responda APENAS com JSON válido, sem markdown:
  */
 const REGRAS_DO_BLOCO = {
   abertura: `Este bloco é a ABERTURA do vídeo — os primeiros 35 segundos, onde se ganha ou perde quem está a ver.
-✓ A 1ª FRASE é a CAPA: aparece ESCRITA na tela enquanto é dita. Tem de continuar a ser uma PERGUNTA que dói, terminada em "?", com no máximo ${MAX_PALAVRAS_CAPA} palavras. Se a tornar afirmação, ou a esticar, a sua versão é recusada.
+✓ A 1ª FRASE é a CAPA: aparece ESCRITA na tela enquanto é dita. Tem de continuar a ser uma PERGUNTA que dói, terminada em "?", com no máximo ${MAX_PALAVRAS_CAPA_LONGO} palavras. Se a tornar afirmação, ou a esticar, a sua versão é recusada.
 ✓ A resposta vem COLADA, na frase seguinte. Pergunta pendurada é proibida neste canal.
 ✓ A PROMESSA do vídeo continua dita com todas as letras. Não a apague.
 ⛔ NÃO peça nada (comentário, inscrição, curtir, link) — isso acontece uma vez só, muito mais à frente.

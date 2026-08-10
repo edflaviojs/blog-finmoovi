@@ -609,7 +609,30 @@ export const CartaoDeFrase: React.FC<{ texto: string; etiquetaTexto?: string; va
               <span key={i} style={{
                 display: 'inline-block',
                 opacity: pop,
-                transform: `translateY(${interpolate(pop, [0, 1], [22, 0]) - onda * 6}px)`,
+                /**
+                 * ═══ 🔴 A PALAVRA VOLTOU A CRESCER — 10/08/2026, ordem do dono ═══
+                 *
+                 * *"A palavra falada aparece escrita no mesmo instante. O longo tem
+                 * legenda karaokê, mas as palavras de ênfase não crescem como no de 16s."*
+                 *
+                 * ⚠️ **E não crescem por uma razão que custou caro em 08/08:** a versão
+                 * antiga aumentava o **tamanho da letra**, e o tamanho da letra MUDA O
+                 * ESPAÇO que a palavra ocupa. A caixa flex reservava o tamanho final e as
+                 * palavras transbordavam umas por cima das outras — o defeito que ele
+                 * apanhou no fotograma zero do vídeo de 50s (*"inflação encolh**seu**
+                 * salário"*). O conserto de então foi desligar o crescimento: escala 1,00.
+                 *
+                 * ⚠️ **`scale` NÃO é a mesma coisa que mudar o tamanho da letra.** Ele
+                 * desenha a palavra maior **sem mexer no espaço que ela ocupa**: a caixa
+                 * continua a medir o mesmo, as vizinhas não se movem, e nada é reservado
+                 * a mais. É a diferença entre esticar o desenho e reescrever o texto.
+                 *
+                 * ⚠️ **10%, e o número é a folga que já existe.** O espaço horizontal
+                 * entre palavras é 26% do tamanho da letra; crescer 10% gasta 5% de cada
+                 * lado. Fica dentro da folga com margem — e é por isso que 35% (o valor
+                 * antigo) não cabia de maneira nenhuma, fosse com que técnica fosse.
+                 */
+                transform: `translateY(${interpolate(pop, [0, 1], [22, 0]) - onda * 6}px) scale(${1 + onda * 0.1})`,
                 ...(chamada ? gradientText : {}),
                 ...(chamada
                   ? { filter: `drop-shadow(0 0 ${44 + onda * 26}px rgba(139,92,246,${0.55 + onda * 0.25}))` }

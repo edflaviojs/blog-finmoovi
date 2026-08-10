@@ -47,6 +47,34 @@ export const semAcento = (s) => String(s || '').toLowerCase().normalize('NFD').r
 export const MAX_PALAVRAS_CAPA = 18;
 
 /**
+ * ═══ 🔴 O TETO DO VÍDEO LONGO É MAIS APERTADO — 10/08/2026, ordem do dono ═══
+ *
+ * *"O gancho de 2 segundos. O de 16s abre com uma frase que dói em 6 palavras. O longo
+ * abre com uma pergunta de 18 palavras escrita na tela. São 7 segundos até a primeira
+ * ideia entrar."*
+ *
+ * ⚠️ **E é um número NOVO, não uma mudança no antigo, de propósito.** O `MAX_PALAVRAS_CAPA`
+ * de 18 é partilhado com o **Short que publica todos os dias**, e o aviso aqui em cima
+ * conta a história de quando ele foi 13: reprovava a frase que o próprio dono tinha
+ * escrito como modelo. Mexer nele para apertar o longo mexia no Short sem ninguém pedir.
+ *
+ * ⚠️ **12 é a conta, e não um palpite.** A capa do vídeo longo dura **exactamente o tempo
+ * de a pergunta ser dita** (`framesDaCapa` em `Long.tsx` fecha-a 0,5s depois da última
+ * palavra). A 2,6 palavras por segundo: 18 palavras = 6,9s de capa; **12 = 4,6s**. São
+ * 2,3 segundos ganhos antes de a primeira ideia entrar — que era exactamente a queixa.
+ *
+ * ⚠️ **A frase-exemplo foi encurtada NO MESMO COMMIT.** É a regra escrita aqui em cima —
+ * *"mexer num sem mexer no outro faz a capa sair a meio da frase"* — e agora também a
+ * regra do exemplo: um teto que reprova o próprio exemplo do pedido é a 18ª ocorrência
+ * do prompt contra o validador.
+ *
+ * ⚠️ **Só os três ficheiros do LONGO o usam** (`roteiro-longo`, `schema-longo`,
+ * `leitor-longo`). O `segundo-leitor.js` fica com o 18 porque quem o chama é o
+ * `roteiro-narrativa.js`, que é do Short.
+ */
+export const MAX_PALAVRAS_CAPA_LONGO = 12;
+
+/**
  * A PALAVRA-CHAVE TEM DE SER UMA QUE FOI MESMO DITA (erro apanhado em 31/07).
  *
  * O validador exige que `keyword` apareça na narração do gancho. A 1ª versão punha

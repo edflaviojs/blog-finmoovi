@@ -64,40 +64,44 @@
     ],
     "onde-o-salario-some": [
       {
-        "cena": "2",
-        "figura": "mochila-pedras"
+        "cena": "1",
+        "figura": "fumaca"
       },
       {
-        "cena": "4",
-        "figura": "balanca"
-      },
-      {
-        "cena": "14",
-        "figura": "corda-bamba"
-      },
-      {
-        "cena": "15",
-        "figura": "castelo-cartas"
-      },
-      {
-        "cena": "18",
-        "figura": "balde-furado"
-      },
-      {
-        "cena": "20",
+        "cena": "8",
         "figura": "escorregao"
       },
       {
-        "cena": "21",
-        "figura": "gangorra"
+        "cena": "26",
+        "figura": "balde-furado"
       },
       {
-        "cena": "50",
+        "cena": "33",
         "figura": "semaforo"
       },
       {
-        "cena": "52",
-        "figura": "fumaca"
+        "cena": "36",
+        "figura": "mochila-pedras"
+      },
+      {
+        "cena": "41",
+        "figura": "balanca"
+      },
+      {
+        "cena": "43",
+        "figura": "cofre"
+      },
+      {
+        "cena": "44",
+        "figura": "corda-bamba"
+      },
+      {
+        "cena": "47",
+        "figura": "castelo-cartas"
+      },
+      {
+        "cena": "54",
+        "figura": "ralo"
       }
     ]
   }

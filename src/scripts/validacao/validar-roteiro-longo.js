@@ -49,6 +49,7 @@ import { assinaturaDoEcra } from '../youtube/lib/imagens-longo.js';
 import { montarFichaDeDivida } from '../youtube/lib/simulador.js';
 // ⚠️ A MESMA função que alimenta o caderno de cenas. É de propósito: o que ela lê nos
 //    exemplos é exactamente o que ela vai proibir no vídeo seguinte. Uma conta, um sítio.
+import { MAX_PALAVRAS_CAPA_LONGO } from '../youtube/lib/palavras.js';
 import {
   cenariosDoTexto, ELENCOS, FUNCOES_DO_APP, RAIO_DE_CENARIOS,
   escolherElenco, escolherFuncaoDoApp, elencosGastos,
@@ -302,10 +303,23 @@ reprova(
  * a pergunta LONGA e VAGA. Por isso uma pergunta curta na 1ª frase **passa**, e é isto
  * que esta prova garante: que ninguém volte a proibi-la sem ler esta linha.
  */
-const aberturaComPerguntaCurtaNaCapa = EXEMPLO_DE_ABERTURA.fala.replace(
-  'Todo dia dez a conta de luz chega na caixa do correio da minha mãe.',
-  'Por que a conta de luz sobe sozinha todo mês?',
-);
+/**
+ * ⚠️ **TROCAR A 1ª FRASE SEM A ESCREVER À MÃO — 10/08/2026.**
+ *
+ * Estas provas faziam `.replace('Todo dia dez a conta de luz chega na caixa do correio
+ * da minha mãe.', ...)`. Quando o teto da capa do longo desceu para 12 palavras, a frase
+ * do exemplo foi encurtada — e o `.replace` deixou de casar. **Não ficaram vermelhas:
+ * ficaram INÚTEIS.** Passavam a alimentar a trava com a abertura BOA e a exigir que ela
+ * reprovasse, o que é o pior modo de falha de uma prova negativa.
+ *
+ * Agora troca-se "a primeira frase", seja ela qual for.
+ */
+const trocandoAPrimeiraFrase = (nova) => {
+  const partes = EXEMPLO_DE_ABERTURA.fala.split(/(?<=[.?!])\s+/);
+  return [nova, ...partes.slice(1)].join(' ');
+};
+
+const aberturaComPerguntaCurtaNaCapa = trocandoAPrimeiraFrase('Por que a conta de luz sobe sozinha todo mês?');
 {
   // ⚠️ `passa()` e não `.length`: `validarAbertura` devolve `{ ok, erros }`, e a
   //    anti-cópia reprova sempre um exemplo comparado consigo próprio.
@@ -316,10 +330,7 @@ const aberturaComPerguntaCurtaNaCapa = EXEMPLO_DE_ABERTURA.fala.replace(
  * A queixa exacta do dono sobre o vídeo que ele viu: *"ele começa dizendo 'um deles
  * para de trabalhar'... mas quem é um deles? Não se falou nada de ninguém antes."*
  */
-const aberturaComPronomeSolto = EXEMPLO_DE_ABERTURA.fala.replace(
-  'Todo dia dez a conta de luz chega na caixa do correio da minha mãe.',
-  'Um deles para de trabalhar e respira.',
-);
+const aberturaComPronomeSolto = trocandoAPrimeiraFrase('Um deles para de trabalhar e respira.');
 reprova(
   'abertura: começa a apontar para quem ainda não foi apresentado',
   validarAbertura(aberturaComPronomeSolto, { promessa: EXEMPLO_DE_ABERTURA.promessa }),
@@ -332,10 +343,7 @@ reprova(
  * ainda pega ônibus"*. Ele corrigiu: *"não temos nada que fale sobre colocar nomes de
  * pessoas, o nosso ecossistema é anónimo, aquilo era um exemplo"*.
  */
-const aberturaComNome = EXEMPLO_DE_ABERTURA.fala.replace(
-  'Todo dia dez a conta de luz chega na caixa do correio da minha mãe.',
-  'Todo dia dez a conta de luz chega na casa do João.',
-);
+const aberturaComNome = trocandoAPrimeiraFrase('A conta de luz chega na casa do João.');
 reprova(
   'abertura: dá nome a uma pessoa (o canal é anónimo)',
   validarAbertura(aberturaComNome, { promessa: EXEMPLO_DE_ABERTURA.promessa }),
@@ -1019,6 +1027,55 @@ console.log('   (a 1ª prova apanha a montagem a PERDER parágrafos do guião, e
   ok(
     'o mesmo guião dá sempre exatamente as mesmas imagens',
     JSON.stringify(outraVez.map((c) => c.visual)) === JSON.stringify(cenas.map((c) => c.visual)),
+  );
+}
+
+
+// ═══ AS SETE MELHORIAS DE 10/08/2026 ═════════════════════════════════════════
+console.log('\nO QUE O LONGO APRENDEU COM O SHORT DE 16s');
+
+{
+  const t = { term: 'x', angle: 'y', definition: '', body: '' };
+  const pMapa = buildPromptMapa(t, []);
+  const pAbertura = buildPromptAbertura(t, EXEMPLO_DE_MAPA, []);
+  const pMeio = buildPromptCapitulo(t, EXEMPLO_DE_MAPA, 1, '');
+  const pPrimeiro = buildPromptCapitulo(t, EXEMPLO_DE_MAPA, 0, '');
+
+  /** #1 — o gancho curto. A capa dura o tempo de a pergunta ser dita. */
+  ok(
+    '#1 a capa do LONGO tem teto próprio, mais apertado que o do Short',
+    MAX_PALAVRAS_CAPA_LONGO < 18 && new RegExp(String(MAX_PALAVRAS_CAPA_LONGO)).test(pAbertura),
+    `longo ${MAX_PALAVRAS_CAPA_LONGO} palavras · Short continua em 18`,
+  );
+  /**
+   * ⚠️ **E o exemplo TEM de caber no teto** — um teto que reprova o próprio exemplo do
+   * pedido é a armadilha de sempre: o modelo copia o exemplo e leva com a trava.
+   */
+  const capaDoExemplo = EXEMPLO_DE_ABERTURA.fala.split(/(?<=[.?!])\s+/)[0]
+    .replace(/[^\p{L}\p{N}\s]/gu, ' ').split(/\s+/).filter(Boolean).length;
+  ok(
+    'e a 1ª frase do exemplo cabe nesse teto',
+    capaDoExemplo <= MAX_PALAVRAS_CAPA_LONGO,
+    `${capaDoExemplo} palavras`,
+  );
+
+  /** #6 — a promessa lembrada no meio, e SÓ no meio. */
+  ok('#6 o ato do MEIO recebe a tarefa de lembrar a promessa', /ATO DO MEIO/.test(pMeio));
+  ok('e o primeiro ato NÃO a recebe (senão é a abertura outra vez)', !/ATO DO MEIO/.test(pPrimeiro));
+  ok('e o lembrete proíbe prometer coisa nova', /Não prometa nada NOVO/.test(pMeio));
+
+  /** #7 — um número por ato. */
+  ok('#7 o mapa pede um número NOVO por ato', /oNumeroDoAto/.test(pMapa));
+  ok('e o formato do JSON tem o campo nos três capítulos', (pMapa.match(/oNumeroDoAto/g) || []).length >= 4);
+  ok(
+    'e o mapa-exemplo traz os três, diferentes',
+    new Set((EXEMPLO_DE_MAPA.capitulos || []).map((c) => c.oNumeroDoAto).filter(Boolean)).size === 3,
+    (EXEMPLO_DE_MAPA.capitulos || []).map((c) => c.oNumeroDoAto).join(' · '),
+  );
+  ok(
+    'e cada um deles está na lista de valores do mapa (não se inventa dinheiro)',
+    (EXEMPLO_DE_MAPA.capitulos || []).every((c) => !c.oNumeroDoAto
+      || (EXEMPLO_DE_MAPA.valores || []).some((v) => v.nome === c.oNumeroDoAto)),
   );
 }
 

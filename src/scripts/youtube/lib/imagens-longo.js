@@ -789,11 +789,32 @@ export function dirigirImagens(cenas, mapa = {}, slug = null) {
       return { ...c, visual: { tipo: 'conta', linhas: linhasDaConta(ficha), destaque: ficha.aMais } };
     }
 
-    // 3. O CARTÃO DE NÚMERO — só na PRIMEIRA vez que o valor entra na história.
+    /**
+     * 3. O CARTÃO DE NÚMERO — na primeira vez que **cada** valor entra na história.
+     *
+     * ═══ 🔴 OS NÚMEROS QUE PERDIAM A VEZ PARA SEMPRE — 10/08/2026 ═══
+     *
+     * Ordem do dono, olhando o que o Short de 16s faz: *"o número na tela, grande,
+     * sozinho. No longo os valores aparecem no meio do texto. Uma tela só com R$ 236
+     * por 2 segundos vale mais que uma frase que o diz."*
+     *
+     * ⚠️ **O defeito não era faltar a família — era ela desistir.** Esta cena escolhia
+     * `novos[0]` para o cartão e a seguir marcava **TODOS** os valores ditos como já
+     * mostrados. Consequência: uma cena que diz *"os duzentos e trinta e seis e os
+     * cinquenta do remédio"* dava cartão ao primeiro e **queimava o segundo para o resto
+     * do vídeo** — ele nunca mais podia ter o seu ecrã, mesmo aparecendo sozinho três
+     * cenas à frente.
+     *
+     * Agora só o valor que RECEBEU o cartão fica marcado. Os outros continuam à espera
+     * da sua vez, e ganham-na na primeira cena em que forem o número novo.
+     *
+     * ⚠️ **A regra "um cartão por valor" continua de pé** — o que muda é que ela deixa
+     * de castigar valores por terem sido ditos na frase errada. Repetir o mesmo número
+     * em dois ecrãs continua proibido, e é o que impede isto de virar uma enxurrada.
+     */
     if (novos.length) {
       const valor = novos[0];
       jaMostrado.add(valor);
-      ditos.forEach((v) => jaMostrado.add(v));
       return { ...c, visual: { tipo: 'numero', valor, rotulo: dic.get(valor) } };
     }
 

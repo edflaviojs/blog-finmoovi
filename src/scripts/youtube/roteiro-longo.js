@@ -39,7 +39,7 @@ import { fileURLToPath } from 'url';
 
 import { generateText } from '../apis/kie-ai.js';
 import { BORDAO, METAPHORS, METAPHOR_MEANINGS } from './lib/schema-short.js';
-import { MAX_PALAVRAS_CAPA } from './lib/palavras.js';
+import { MAX_PALAVRAS_CAPA_LONGO } from './lib/palavras.js';
 import { PERSONA, VICIOS_ESSENCIAIS, O_QUE_PRESERVAR } from './lib/voz-do-canal.js';
 import { montarFichaDeNumeros, montarFichaDeDivida } from './lib/simulador.js';
 import { polirCapitulo, polirBloco } from './lib/leitor-longo.js';
@@ -201,16 +201,19 @@ export const EXEMPLO_DE_MAPA = {
       titulo: 'A noite em que eu li o extrato linha por linha',
       oQueAcrescenta: 'o susto: de onde vêm os cento e oitenta e nove reais, item a item',
       oQueFicaEmAberto: 'há quanto tempo é que aquilo já saía sem ninguém ver',
+      oNumeroDoAto: 'o streaming que ninguém abria',
     },
     {
       titulo: 'O que aparece quando você põe tudo no mesmo lugar',
       oQueAcrescenta: 'o tempo: os mesmos cento e oitenta e nove reais multiplicados pelos meses que já passaram',
       oQueFicaEmAberto: 'quais delas dá mesmo para cortar sem falta nenhuma',
+      oNumeroDoAto: 'a academia parada',
     },
     {
       titulo: 'Cancelar sem perder o que a casa usa',
       oQueAcrescenta: 'a saída: quais dos cento e oitenta e nove saem hoje e quais ficam',
       oQueFicaEmAberto: 'a cobrança que volta sozinha se ninguém olhar',
+      oNumeroDoAto: 'o jogo do celular',
     },
   ],
   respostaDaPromessa: 'As assinaturas esquecidas saem da conta no dia em que você as vê escritas num sítio só',
@@ -241,7 +244,7 @@ export const EXEMPLO_DE_MAPA = {
  */
 export const EXEMPLO_DE_ABERTURA = {
   promessa: 'Vou te mostrar onde a sua conta de luz sobe sozinha e o que dá pra desligar hoje',
-  fala: 'Todo dia dez a conta de luz chega na caixa do correio da minha mãe. '
+  fala: 'A conta de luz da minha mãe chega todo dia dez. '
     + 'Três meses seguidos ela veio mais cara, e ninguém em casa comprou nada novo. '
     + 'Então o que mudou? '
     + 'Mudou o chuveiro, que nem passa vinte minutos ligado por dia e pesa mais do que parece. '
@@ -589,6 +592,10 @@ ${blocoDeCenarios}
    · **titulo** — no máximo ${MAX_PALAVRAS_TITULO} palavras, e ele PROMETE o que o ato entrega. ⛔ Proibido "Introdução", "Conclusão", "Parte 1", "Resumo".
    · **oQueAcrescenta** — o facto NOVO que este ato traz sobre o MESMO dinheiro. Se um ato não acrescenta nada, o vídeo dá voltas.
    · **oQueFicaEmAberto** — a ponta que este ato deixa no ar para o seguinte agarrar.
+   · 🔴 **oNumeroDoAto** — o NOME (da lista de valores) do dinheiro que ESTE ato traz de novo.
+     ⚠️ **Um por ato, e os três DIFERENTES.** Ordem do dono, 10/08/2026: *"um número diferente por capítulo. Hoje o vídeo gira em torno de um número só. Três números — um por ato — dão três motivos para ficar."*
+     ⚠️ **Isto NÃO substitui o número-espinha**: ele continua a atravessar os três atos e a ser dito nos três. O que se acrescenta é o número que só este ato revela — a peça nova que faz valer a pena ficar até aqui.
+     ✅ Exemplo: espinha *"o total que sai todo mês"*; ato 1 revela *"o streaming que ninguém abria"*, ato 2 *"quanto isso deu em doze meses"*, ato 3 *"o que sobra depois de cortar"*.
 7. **respostaDaPromessa** — a lição do fim, que responde ao que a promessa prometeu. Tem de falar da MESMA coisa.
 8. **lacoAberto** — a provocação final, DENTRO deste tema. ⛔ Proibido prometer "no próximo vídeo" ou "semana que vem": não há fila de vídeos, e prometer o que não existe é mentira.
 9. **fioCondutor** — a imagem da capa, uma destas: ${menuDeImagens(proibidas)}.
@@ -614,9 +621,9 @@ Responda APENAS com JSON válido, sem markdown, exatamente com estes campos:
   "contaDoCartao": "...",
   "capituloDaDemonstracao": 2,
   "capitulos": [
-    { "titulo": "...", "oQueAcrescenta": "...", "oQueFicaEmAberto": "..." },
-    { "titulo": "...", "oQueAcrescenta": "...", "oQueFicaEmAberto": "..." },
-    { "titulo": "...", "oQueAcrescenta": "...", "oQueFicaEmAberto": "..." }
+    { "titulo": "...", "oQueAcrescenta": "...", "oQueFicaEmAberto": "...", "oNumeroDoAto": "..." },
+    { "titulo": "...", "oQueAcrescenta": "...", "oQueFicaEmAberto": "...", "oNumeroDoAto": "..." },
+    { "titulo": "...", "oQueAcrescenta": "...", "oQueFicaEmAberto": "...", "oNumeroDoAto": "..." }
   ],
   "respostaDaPromessa": "...",
   "lacoAberto": "..."
@@ -666,7 +673,8 @@ A PROMESSA DESTE VÍDEO: "${mapa.promessa}"
 Os capítulos que vêm a seguir: ${mapa.capitulos.map((c, i) => `${i + 1}) ${c.titulo}`).join(' · ')}
 
 ════════ O QUE A ABERTURA TEM DE FAZER, POR ESTA ORDEM ════════
-1. 🔴 **A 1ª FRASE É A CAPA e aparece ESCRITA na tela enquanto você a diz.** No máximo ${MAX_PALAVRAS_CAPA} palavras. O computador confere o tamanho.
+1. 🔴 **A 1ª FRASE É A CAPA e aparece ESCRITA na tela enquanto você a diz.** No máximo ${MAX_PALAVRAS_CAPA_LONGO} palavras — e quanto menos, melhor. O computador confere o tamanho.
+   · 🔴 **A CAPA DURA O TEMPO DE ELA SER DITA.** Cada palavra a mais aqui é meio segundo a mais até a primeira ideia entrar, e é aí que se perde quem chegou.
    · **Pode ser uma cena ou pode ser uma pergunta — o que ela NÃO pode ser é comprida e vaga.** Uma pergunta de dezoito palavras cheia de "de que forma" e "considerando que" não prende ninguém.
    · **Comece pelo que se VÊ.** ✓ *"O ônibus das cinco da manhã, outra vez."* ✓ *"A conta de luz chegou de novo no dia dez."* ✓ *"Por que o dinheiro some antes do dia vinte?"*
    · ⛔ **Ninguém pode ser "um deles", "ele", "os dois" nesta frase.** Diga QUEM são antes de dizer o que fazem. Um vídeo que começa a apontar para quem ainda não existe começou no meio, e quem está vendo sai. O computador confere.
@@ -754,7 +762,16 @@ ${ficha.texto}
 ⛔ **NÃO diga que a dívida rola para sempre no rotativo.** Não rola: desde 2017 o banco é OBRIGADO a parcelar depois de um mês, e é isso que a conta acima já leva em conta. Assustar com uma coisa que a lei proíbe é perder a credibilidade de vez.` : ''}${indice > 0 ? `
    · ⛔ **O ato anterior JÁ ENTREGOU isto, e não se repete:** ${mapa.capitulos[indice - 1].oQueAcrescenta}` : ''}
    · **E deixa no ar:** ${plano.oQueFicaEmAberto}
-${seguinte ? `O ato seguinte chama-se "${seguinte.titulo}" — o seu re-gancho aponta para lá SEM dizer o nome dele.` : 'Este é o último ato. O re-gancho entrega a conversa ao fim do vídeo.'}
+${seguinte ? `O ato seguinte chama-se "${seguinte.titulo}" — o seu re-gancho aponta para lá SEM dizer o nome dele.` : 'Este é o último ato. O re-gancho entrega a conversa ao fim do vídeo.'}${indice === 1 ? `
+
+════════ ⏱️ ESTE É O ATO DO MEIO — E TEM UMA TAREFA A MAIS ════════
+🔴 **UMA frase deste ato lembra o que a pessoa vai levar daqui**, e ela é: *"${mapa.promessa}"*.
+
+Ordem do dono, 10/08/2026: *"a promessa repetida no meio. Aos 3 minutos, lembrar em uma frase o que a pessoa vai levar. Vídeo longo perde gente no meio, não no começo."*
+
+⚠️ **NÃO é repetir a frase da abertura com as mesmas palavras** — isso lê-se como o vídeo a andar para trás. É dizê-la POR OUTRAS PALAVRAS, no meio da história, como quem se lembra em voz alta: *"e é por isto que eu queria te mostrar isto hoje"*, *"guarda esse número, que no fim ele volta"*.
+⚠️ **UMA frase, e no meio do parágrafo.** Um parágrafo inteiro a lembrar a promessa é o vídeo a parar para se explicar.
+⛔ **Não prometa nada NOVO.** É a MESMA promessa, dita de outra maneira. Prometer coisa nova aqui é dívida que o ato 3 não consegue pagar.` : ''}
 
 ${ancora ? `${ancora}\n` : ''}
 ════════ AS PARTES DESTE ATO ════════

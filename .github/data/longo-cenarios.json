@@ -25,13 +25,12 @@
     {
       "slug": "onde-o-salario-some",
       "cenarios": [
-        "o mercado",
-        "o aluguel"
+        "o mercado"
       ],
-      "fio": "bifurcacao",
+      "fio": "balanca",
       "elenco": "uma avó e uma neta, duas gerações a olhar para o mesmo problema",
       "funcaoDoApp": "contas",
-      "promessa": "Vou te mostrar como enxergar todo o dinheiro da casa junto e descobrir quanto você realmente tem para o mês",
+      "promessa": "Vou te mostrar como descobrir quanto dinheiro você realmente tem antes de decidir o que cabe no mês",
       "em": "2026-08-10"
     }
   ]

@@ -36,7 +36,7 @@
  */
 
 import { METAPHORS, BORDAO, longestSharedWordRun } from './schema-short.js';
-import { keywordFalada, MAX_PALAVRAS_CAPA, semAcento } from './palavras.js';
+import { keywordFalada, MAX_PALAVRAS_CAPA_LONGO, semAcento } from './palavras.js';
 
 // ─── a forma ─────────────────────────────────────────────────────────────────
 
@@ -996,8 +996,8 @@ export function validarAbertura(fala, { promessa = '', exemploParaComparar = '' 
    * segundo leitor, nunca numa expressão regular. É a regra da casa.
    */
   const nCapa = contarPalavras(capa);
-  if (nCapa > MAX_PALAVRAS_CAPA) {
-    erros.push(`abertura: a 1ª frase tem ${nCapa} palavras (máximo ${MAX_PALAVRAS_CAPA}) — ela aparece ESCRITA na tela enquanto é dita, e mais do que isto não cabe`);
+  if (nCapa > MAX_PALAVRAS_CAPA_LONGO) {
+    erros.push(`abertura: a 1ª frase tem ${nCapa} palavras (máximo ${MAX_PALAVRAS_CAPA_LONGO}) — ela aparece ESCRITA na tela enquanto é dita, e mais do que isto não cabe`);
   }
 
   /**

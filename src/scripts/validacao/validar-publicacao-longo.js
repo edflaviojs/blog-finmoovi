@@ -854,6 +854,45 @@ console.log('\n5-b. AS PARTES GUARDADAS SABEM DE QUE VÍDEO SÃO');
      * fácil de repetir: um render de 20 minutos é morto com facilidade, e o que fica em
      * disco é um MP4 com nome, com tamanho e sem fim. "Existe" nunca quis dizer "serve".
      */
+    /**
+     * 🔴 OS SOCOS — as duas queixas do dono de 10/08, viradas em prova.
+     *
+     * 1. *"Os socos têm que ser condizente com o que se fala, às vezes percebo que um
+     *    soco verde está falando de coisas negativas."* A cor alternava por CONTAGEM
+     *    (`i % 2`), o que dá metade errada por construção.
+     * 2. *"O primeiro soco precisa ser nos 2, 3, 4 segundos iniciais."* O soco de cor
+     *    estava no fotograma 3 (0,1s) — cedo demais para o olho de quem abre.
+     */
+    const longTsxTexto = existsSync(join(RAIZ, 'youtube-render', 'src', 'Long.tsx'))
+      ? readFileSync(join(RAIZ, 'youtube-render', 'src', 'Long.tsx'), 'utf-8') : '';
+    const impactoTexto = existsSync(join(RAIZ, 'youtube-render', 'src', 'impacto.tsx'))
+      ? readFileSync(join(RAIZ, 'youtube-render', 'src', 'impacto.tsx'), 'utf-8') : '';
+    if (longTsxTexto && impactoTexto) {
+      ok(
+        '🔴 a cor do soco vem do ATO da história, e não da contagem',
+        /papeisDasCenas/.test(longTsxTexto) && /papel === 'ganho'/.test(impactoTexto),
+        'sem isto, metade dos socos sai com a cor errada por construção',
+      );
+      ok(
+        'e o ato 3, a demonstração, a chamada e o fim são sempre GANHO (verde)',
+        /parte === 'demonstracao'[\s\S]{0,120}'ganho'/.test(longTsxTexto) && /capitulo\) >= 3/.test(longTsxTexto),
+      );
+      const frameDoSoco = Number((longTsxTexto.match(/SOCO_DA_COR_NA_ABERTURA\s*=\s*(\d+)/) || [])[1]);
+      ok(
+        '🔴 o soco de cor da abertura cai entre os 2 e os 4 segundos',
+        Number.isFinite(frameDoSoco) && frameDoSoco >= 60 && frameDoSoco <= 120,
+        `está no fotograma ${frameDoSoco} (${(frameDoSoco / 30).toFixed(1)}s) — a 30 fps, 2s são 60 e 4s são 120`,
+      );
+      ok(
+        'e o clarão + baque da entrada FICAM no princípio (tirá-los devolvia o silêncio de 08/08)',
+        /SomDoMomento[\s\S]{0,80}SOCO_DA_ABERTURA/.test(longTsxTexto),
+      );
+      ok(
+        'o soco procura primeiro o trecho em que a imagem não muda',
+        /PARADO_DEMAIS_SEC/.test(impactoTexto) && /familias\.length === iniciosDeCena\.length/.test(impactoTexto),
+      );
+    }
+
     ok(
       'uma parte guardada só é reaproveitada depois de lhe CONTAREM os fotogramas',
       /count_frames/.test(codigo) && /contados === esperados/.test(codigo),
