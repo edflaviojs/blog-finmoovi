@@ -1094,19 +1094,42 @@ export function montarPedido({ canalId, midias, legenda, quandoUTC, settings }) 
 }
 
 /**
- * ♦ 06/08/2026 — O REEL DE TESTE, POR ORDEM DO DONO.
+ * ♦ 10/08/2026 — O REEL DE TESTE FOI RETIRADO. ESTA CONTA NÃO O ACEITA.
  *
- * O Instagram mostra o Reel **primeiro só a quem NÃO segue o perfil**; se os números
- * forem bons, ele "gradua" e passa também aos seguidores. Para um canal a começar, quem
- * interessa alcançar é exatamente quem ainda não segue.
+ * A ideia era boa e foi ordem do dono em 06/08: o Instagram mostra o Reel de teste
+ * **primeiro só a quem NÃO segue o perfil** e, se os números forem bons, "gradua" e
+ * passa também aos seguidores — que é exatamente o que interessa a um canal a começar.
  *
- * ⚠️ **A graduação é AUTOMÁTICA (`SS_PERFORMANCE`) e não é detalhe.** Na outra opção
- * (`MANUAL`) é preciso alguém carregar num botão para o vídeo chegar aos seguidores — e
- * uma regra que depende de alguém se lembrar não é uma regra. Ficaria um Reel por semana
- * preso, sem ninguém dar por nada.
+ * 🔴 **SÓ QUE A CONTA @finmoovi NÃO É ELEGÍVEL, e a prova está no servidor.** Foram lidos
+ * os quatro Reels agendados desde então, um a um, e a conta é sempre a mesma:
  *
- * ⚠️ E o Instagram **não deixa ter convidados (`collaborators`) num Reel de teste**. Hoje
- * não usamos convidados; no dia em que houver uma parceria, é preciso escolher.
+ *   | agendado em | `is_trial_reel` | resultado                                        |
+ *   |-------------|-----------------|--------------------------------------------------|
+ *   | 06/08       | ausente         | ✅ PUBLICADO (`instagram.com/reel/DbtvPlgFES7/`) |
+ *   | 08/08       | `true`          | ❌ ERRO                                          |
+ *   | 09/08       | `true`          | ❌ ERRO                                          |
+ *   | 10/08       | `true`          | ❌ ERRO                                          |
+ *
+ * O motivo, palavra por palavra, em `GET /notifications`:
+ * **`An error occurred while posting on instagram: This account doesn't support Trial Reels`**.
+ * Três em três. Não é intermitência, não é o vídeo, não é a legenda: é a opção.
+ *
+ * 🔴 **E O QUE ISTO CUSTOU FOI TRÊS DIAS DE SILÊNCIO**, porque a falha não acontece aqui.
+ * Este robô só ENTREGA o pedido, ao meio-dia; quem publica é o Multipost, às 19h. O
+ * agendamento é aceite com `200`, a corrida do GitHub acaba **verde**, e o post morre
+ * sete horas depois sem ninguém a olhar. É essa a família de defeito, e a cura não é
+ * este conserto — é o vigia (`vigiar.js`), que nasceu no mesmo dia por causa disto.
+ *
+ * ⚠️ **PARA VOLTAR A LIGAR** (se um dia a conta ficar elegível — a elegibilidade é da
+ * Meta e muda com o tamanho e o tipo da conta): repor `is_trial_reel: true` **e**
+ * `graduation_strategy: 'SS_PERFORMANCE'` (na opção `MANUAL` alguém tem de carregar num
+ * botão para o vídeo chegar aos seguidores, e uma regra que depende de alguém se lembrar
+ * não é uma regra). E o Instagram **não deixa ter convidados (`collaborators`) num Reel
+ * de teste** — as duas coisas juntas dão erro.
+ *
+ * 🔴 **Mas não repor sem PROVAR primeiro num envio verdadeiro**, porque o erro não
+ * aparece na entrega: aparece horas depois, no servidor. Há uma prova de mesa a segurar
+ * isto (`validar-multipost.js` §2) para que a opção não volte por distração.
  */
 export function corpoDoAgendamento({ canalId, media, capa, legenda, quandoUTC }, registar = () => {}) {
   const cover = capaParaOInstagram(capa, registar);
@@ -1118,8 +1141,6 @@ export function corpoDoAgendamento({ canalId, media, capa, legenda, quandoUTC },
     settings: {
       __type: 'instagram',
       post_type: 'post',
-      is_trial_reel: true,
-      graduation_strategy: 'SS_PERFORMANCE',
       // ⚠️ A capa só entra quando existe E está inteira — ver `capaParaOInstagram`.
       ...(cover ? { cover } : {}),
     },
@@ -1481,7 +1502,7 @@ async function inspecionar() {
       log(`   opções que aceita: ${campos.join(', ') || '(nenhuma)'}${obrig.length ? `   (* = obrigatória)` : ''}`);
       // O que NÓS mandamos, ao lado — para se ver de relance um campo inventado.
       const nossas = rede.id === 'instagram'
-        ? ['__type', 'post_type', 'is_trial_reel', 'graduation_strategy', 'cover']
+        ? ['__type', 'post_type', 'cover']
         : Object.keys(opcoesDaRede(rede, { titulo: 'x', quadroDoPinterest: 'x' }));
       const inventadas = nossas.filter((n) => n !== '__type' && !Object.prototype.hasOwnProperty.call(props, n));
       log(`   o que nós mandamos: ${nossas.join(', ')}`);

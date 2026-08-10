@@ -77,21 +77,32 @@ console.log('\n1. A CAPA DO REEL — na forma que o SERVIDOR disse aceitar');
     corpoDoAgendamento({ ...PEDIDO, capa: null }).posts[0].settings.cover === undefined);
 }
 
-console.log('\n2. O REEL DE TESTE (ordem do dono, 06/08)');
+console.log('\n2. O REEL DE TESTE — RETIRADO em 10/08, e esta prova é a trava');
 
 {
   const settings = corpoDoAgendamento(PEDIDO).posts[0].settings;
-  ok('o Reel sai marcado como Reel de teste', settings.is_trial_reel === true);
   /**
-   * 🔴 A GRADUAÇÃO TEM DE SER AUTOMÁTICA. Na opção manual é preciso alguém carregar num
-   * botão para o vídeo chegar aos seguidores — ficaria um Reel por semana preso, sem
-   * ninguém dar por nada. Uma regra que depende de alguém se lembrar não é uma regra.
+   * 🔴 ESTA PROVA ESTAVA VIRADA AO CONTRÁRIO ATÉ 10/08 — exigia `is_trial_reel === true`.
+   * Ou seja: **a suite inteira passava a verde enquanto o Instagram falhava todos os
+   * dias**, porque ela media se mandávamos a opção, e nunca se a conta a aceitava.
+   *
+   * O que o servidor respondeu, três vezes em três (08, 09 e 10/08):
+   *   `An error occurred while posting on instagram: This account doesn't support Trial Reels`
+   * E o único Reel que publicou (06/08) foi o único agendado SEM a opção.
+   *
+   * ⚠️ Uma prova de mesa não sabe o que o servidor aceita — ver o cabeçalho deste
+   * ficheiro. O que ela sabe fazer é **impedir que a opção volte por distração**, e é
+   * só isso que se lhe pede aqui. Para voltar a ligá-la: ver `corpoDoAgendamento`.
    */
-  ok('🔴 e gradua SOZINHO — nunca à espera de um clique',
-    settings.graduation_strategy === 'SS_PERFORMANCE', settings.graduation_strategy);
-  // ⚠️ O Instagram não aceita convidados num Reel de teste — as duas coisas juntas dão erro.
-  ok('e não leva convidados, que o Instagram proíbe num Reel de teste',
-    settings.collaborators === undefined);
+  ok('🔴 o Reel NÃO vai marcado como Reel de teste (esta conta não o aceita)',
+    settings.is_trial_reel === undefined, JSON.stringify(settings.is_trial_reel));
+  ok('🔴 e a estratégia de graduação também não vai — ela só existe para o Reel de teste',
+    settings.graduation_strategy === undefined, JSON.stringify(settings.graduation_strategy));
+  ok('nenhum campo do Reel de teste sobrou no pedido',
+    !Object.keys(settings).some((c) => /trial|graduation/i.test(c)),
+    Object.keys(settings).join(', '));
+  // ⚠️ Continua a não levar convidados: hoje não há parcerias, e o campo vazio seria ruído.
+  ok('e não leva convidados', settings.collaborators === undefined);
   ok('continua a ser Reel/feed, não Story', settings.post_type === 'post');
 }
 
