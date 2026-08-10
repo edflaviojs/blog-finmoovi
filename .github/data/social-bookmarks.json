@@ -938,5 +938,65 @@
         "status": 200
       }
     }
+  },
+  {
+    "slug": "como-organizar-suas-despesas-mensais-com-facilidade-e",
+    "title": "Como organizar suas despesas mensais com facilidade e segurança",
+    "url": "https://blog.finmoovi.com/posts/como-organizar-suas-despesas-mensais-com-facilidade-e",
+    "submittedAt": "2026-08-10T15:51:16.540Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1816409477
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "como-usar-o-cambio-a-seu-favor-e-evitar-perdas-guia-2026",
+    "title": "Como usar o câmbio a seu favor e evitar perdas – guia 2026",
+    "url": "https://blog.finmoovi.com/posts/como-usar-o-cambio-a-seu-favor-e-evitar-perdas-guia-2026",
+    "submittedAt": "2026-08-10T15:51:17.025Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1816409480
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "como-escolher-o-app-ideal-para-suas-financas-em-2026",
+    "title": "Como escolher o app ideal para suas finanças em 2026",
+    "url": "https://blog.finmoovi.com/posts/como-escolher-o-app-ideal-para-suas-financas-em-2026",
+    "submittedAt": "2026-08-10T15:51:17.431Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1816409485
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
   }
 ]
