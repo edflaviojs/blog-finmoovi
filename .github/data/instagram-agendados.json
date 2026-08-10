@@ -135,7 +135,7 @@
     "publicaEm": "2026-08-10T22:00:00.000Z",
     "publicaEmBR": "10/08 às 19h00",
     "agendadoEm": "2026-08-10T16:11:15.667Z",
-    "atualizadoEm": "2026-08-10T16:11:20.713Z",
+    "atualizadoEm": "2026-08-10T20:41:10.332Z",
     "redes": {
       "facebook": {
         "postId": "cmsnfi3jz0006s390rutvg48x",
@@ -202,6 +202,15 @@
         "tipo": "vídeo",
         "publicaEm": "2026-08-10T22:31:00.000Z",
         "publicaEmBR": "10/08 às 19h31"
+      },
+      "instagram": {
+        "postId": "cmsnp56lx000es390ksmwur2v",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-08-10T22:00:00.000Z",
+        "publicaEmBR": "10/08 às 19h00",
+        "midia": "o vídeo",
+        "caracteres": 653,
+        "limite": 2200
       }
     }
   }
