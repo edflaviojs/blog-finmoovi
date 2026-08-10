@@ -103,12 +103,122 @@ const semAcento = (t) => String(t || '').normalize('NFD').replace(/[̀-ͯ]/g, ''
  * quatro modos de captura e **não tem dinheiro nenhum no ecrã**. Foi a única que já podia
  * ter entrado desde sempre.
  */
+/**
+ * ═══ 🔴 A `pista` ESTAVA ESCRITA AQUI E NINGUÉM A LIA — 10/08/2026 ═══
+ *
+ * ═══ O QUE SE MEDIU, no vídeo `onde-o-salario-some` ═══
+ * A escolha era `BROLL_PERMITIDO[i++ % 4]` — **rodízio cego**, nos dois sítios que
+ * escolhem b-roll. O campo `pista`, que diz quando cada tela faz sentido, nunca era
+ * consultado. Resultado medido, com a demonstração deste vídeo na tela **das Contas**:
+ *
+ * | tela que aparecia | o que a voz dizia | |
+ * |---|---|---|
+ * | Captura de recibo | *"quando você olha uma conta de cada vez…"* | ❌ |
+ * | Captura por voz | *"eu e minha avó olhávamos para o dinheiro…"* | ❌ |
+ * | **Cartão de crédito** | *"o app somou tudo e mostrou o total de mil e duzentos"* | ❌ |
+ * | Extrato | *"quatrocentos mais trezentos…"* | ✅ |
+ * | **Cartão de crédito** | *"dinheiro espalhado em mais de uma conta"* | ❌ |
+ * | Extrato | *"quando você coloca tudo no mesmo lugar"* | ✅ |
+ *
+ * **Quatro em seis erradas, e um cartão de crédito duas vezes numa história que não tem
+ * cartão nenhum.** São as duas queixas mais repetidas do dono ao mesmo tempo: *"o roteiro
+ * só ataca sobre cartão"* e *"o ecrã diz uma coisa enquanto a voz diz outra"*.
+ *
+ * ═══ 🔑 A FAMÍLIA DE DEFEITO, QUE É A COISA A LEVAR DAQUI ═══
+ * **Um campo de dados que descreve uma regra, escrito, e nenhum código o lê.** Não dá
+ * erro, não fica vermelho, e só se vê OLHANDO o fotograma. Já mordeu quatro vezes:
+ *   · `METAPHOR_MEANINGS` — 32 significados escritos, e o ilustrador usava `regex` (§67.3);
+ *   · `fioCondutor` — a metáfora do vídeo, e a capa nunca a usou (09/08);
+ *   · `numeroEspinha` — no caderno, e a capa procurava-o no ficheiro errado (10/08);
+ *   · `pista` do b-roll — aqui.
+ *
+ * **A cura não é ler a `pista`: é a TRAVA.** Ver `conferirImagens`, alínea (e): uma tela
+ * que a história não comporta é agora um ERRO, e há prova que a faz morder. Ler o campo
+ * conserta hoje; a trava é que impede a quinta vez.
+ *
+ * ⚠️ **`exige` é o que a história tem de ter para a tela poder aparecer.** Não é gosto:
+ * é `verdade-versus-gosto` — ou o mapa tem uma conta de cartão, ou não tem.
+ */
 export const BROLL_PERMITIDO = [
-  { comp: 'CartoesCountUpLong', frames: 210, familia: 'cartoes', pista: /fatura|cartao|limite|parcel/i },
-  { comp: 'ExtratoListaLong', frames: 210, familia: 'extrato', pista: /extrato|entrou|saiu|lancament|conta do banco/i },
-  { comp: 'SmartCapture3DLong', frames: 210, familia: null, pista: /registrar|anotar|lancar|foto do recibo|nota fiscal/i },
-  { comp: 'SmartCaptureVozLong', frames: 210, familia: null, pista: /falar|por voz|ditar/i },
+  {
+    comp: 'CartoesCountUpLong',
+    frames: 210,
+    familia: 'cartoes',
+    pista: /fatura|cartao|limite|parcel/i,
+    // 🔴 Sem uma conta de cartão na história, esta tela mostra uma dívida que ninguém tem.
+    exige: (mapa) => Boolean(mapa?.contaDoCartao) || Boolean(mapa?.fichaDeDivida),
+    porqueNao: 'esta história não tem cartão de crédito nenhum',
+  },
+  {
+    comp: 'ExtratoListaLong',
+    frames: 210,
+    familia: 'extrato',
+    // ⚠️ **`junt` saiu daqui, e é uma lição.** Ao alargar a pista para esta tela "casar
+    //    mais", ela passou a casar com quase tudo — porque `juntar tudo` é justamente a
+    //    frase que MANDA entrar b-roll. Resultado medido: o Extrato quatro vezes em seis.
+    //    Uma pista que casa com tudo não é uma pista; é o rodízio cego outra vez.
+    pista: /extrato|entrou|saiu|lancament|conta do banco|saldo|somou/i,
+    // O extrato serve qualquer história de dinheiro: toda a gente tem entradas e saídas.
+    exige: () => true,
+  },
+  {
+    comp: 'SmartCapture3DLong',
+    frames: 210,
+    familia: null,
+    pista: /registrar|anotar|lancar|foto do recibo|nota fiscal|recibo|comprovante/i,
+    exige: () => true,
+  },
+  {
+    comp: 'SmartCaptureVozLong',
+    frames: 210,
+    familia: null,
+    pista: /falar|por voz|ditar|dizer para o app/i,
+    exige: () => true,
+  },
 ];
+
+/**
+ * As telas que ESTE vídeo pode mostrar. **Nunca devolve vazio** — se a história não
+ * comportar nenhuma, o vídeo sai sem b-roll do catálogo, que é melhor do que sair com uma
+ * tela que a contradiz.
+ */
+export function brollDoVideo(mapa) {
+  return BROLL_PERMITIDO.filter((b) => b.exige(mapa));
+}
+
+/**
+ * ⚠️ **NENHUMA TELA MAIS DO QUE DUAS VEZES, e o número é a conta.** São 6 cenas de b-roll
+ * e 3 telas disponíveis num vídeo sem cartão: 2 cada dá exactamente 6.
+ *
+ * 🔴 **Isto nasceu de um erro meu, no mesmo dia.** Ao pôr a `pista` a mandar, sem contar
+ * as repetições, o vídeo saiu com o **Extrato quatro vezes em seis** — troquei "tela
+ * errada" por "tela repetida", que é o mesmo defeito com outra roupa (a monotonia
+ * mede-se em repetição do MESMO ecrã). A fala manda **entre as que ainda têm vez**.
+ */
+const TETO_POR_TELA = 2;
+
+/**
+ * Qual tela para esta cena: **a que a fala pede**, entre as que ainda têm vez; e só
+ * quando nenhuma pede é que se escolhe a menos usada.
+ *
+ * ⚠️ **O rodízio FICA como rede, e é de propósito.** A passagem do equilíbrio mete b-roll
+ * em cenas escolhidas por serem a terceira igual seguida — essas podem não falar de nada
+ * que uma tela peça. Aí é melhor uma tela genérica do que a terceira tela de palavras.
+ * O que não pode é o rodízio passar à frente de uma tela que a fala PEDIU.
+ *
+ * @param usos Map ou objeto `comp -> quantas vezes já saiu neste vídeo`.
+ */
+export function escolherBroll(texto, permitidas, usos = {}) {
+  if (!permitidas.length) return null;
+  const quantas = (b) => Number((usos instanceof Map ? usos.get(b.comp) : usos[b.comp]) || 0);
+  // ⚠️ Se o teto já apanhou todas, ele cede — repetir é melhor do que não haver tela.
+  const comVez = permitidas.filter((b) => quantas(b) < TETO_POR_TELA);
+  const candidatas = comVez.length ? comVez : permitidas;
+  const pedidas = candidatas.filter((b) => b.pista.test(semAcento(String(texto || ''))));
+  const lista = pedidas.length ? pedidas : candidatas;
+  // A menos usada; empate desfeito pela ordem da lista, que é estável.
+  return lista.reduce((a, b) => (quantas(b) < quantas(a) ? b : a), lista[0]);
+}
 
 /**
  * OS NÚMEROS DESTA HISTÓRIA, no formato que as telas do catálogo esperam.
@@ -750,7 +860,8 @@ export function dirigirImagens(cenas, mapa = {}, slug = null) {
   }
   let contaFeita = false;
   let brollUsado = 0;
-  let iBroll = 0;
+  /** Quantas vezes cada tela do app já saiu — é o que impede o Extrato quatro vezes. */
+  const usosDoBroll = {};
   let passoDoApp = 0;
 
   /**
@@ -846,8 +957,12 @@ export function dirigirImagens(cenas, mapa = {}, slug = null) {
 
     // 7. O B-ROLL DO APP — só onde a narração fala de juntar tudo num sítio, e no
     //    máximo três vezes no vídeo inteiro.
-    if (BROLL_PERMITIDO.length && PISTA_TUDO_JUNTO.test(texto) && brollUsado < TETO_DE_BROLL) {
-      const escolha = BROLL_PERMITIDO[iBroll++ % BROLL_PERMITIDO.length];
+    // ⚠️ `escolherBroll` — a tela que a FALA pede, e só depois o rodízio. E `brollDoVideo`
+    //    tira as que a história não comporta. Ver a nota em `BROLL_PERMITIDO`.
+    const podeUsar = brollDoVideo(mapa);
+    if (podeUsar.length && PISTA_TUDO_JUNTO.test(texto) && brollUsado < TETO_DE_BROLL) {
+      const escolha = escolherBroll(texto, podeUsar, usosDoBroll);
+      usosDoBroll[escolha.comp] = (usosDoBroll[escolha.comp] || 0) + 1;
       brollUsado++;
       return { ...c, visual: { tipo: 'broll', comp: escolha.comp, brollFrames: escolha.frames, valores: valoresDoBroll(escolha, mapa), etiqueta } };
     }
@@ -919,7 +1034,16 @@ export function equilibrar(cenas, { fio = null, mapa = null } = {}) {
   let estagio = Math.max(0, ...saida.map((c) => c.visual?.estagio || 0));
   let ultimaMetafora = saida.reduce((a, c, i) => (c.visual?.tipo === 'metafora' ? i : a), -Infinity);
   let brollUsado = saida.filter((c) => c.visual?.tipo === 'broll').length;
-  let iBroll = brollUsado;
+  /**
+   * ⚠️ **CONTA AS QUE JÁ ESTÃO NO GUIÃO, e não começa do zero.** Esta passagem corre
+   * depois da de cima; se ela não visse o que já saiu, podia pôr uma terceira e uma
+   * quarta cópia da mesma tela — que é exactamente o defeito que o teto por tela existe
+   * para impedir.
+   */
+  const usosDoBroll = {};
+  for (const c of saida) {
+    if (c.visual?.tipo === 'broll' && c.visual.comp) usosDoBroll[c.visual.comp] = (usosDoBroll[c.visual.comp] || 0) + 1;
+  }
 
   for (let i = 2; i < saida.length; i++) {
     const t = saida[i].visual?.tipo;
@@ -933,8 +1057,12 @@ export function equilibrar(cenas, { fio = null, mapa = null } = {}) {
       estagio += 1;
       ultimaMetafora = i - 1;
       meio.visual = { ...meio.visual, tipo: 'metafora', fio: fioReal, estagio };
-    } else if (BROLL_PERMITIDO.length && brollUsado < TETO_DE_BROLL) {
-      const escolha = BROLL_PERMITIDO[iBroll++ % BROLL_PERMITIDO.length];
+    } else if (brollDoVideo(mapa).length && brollUsado < TETO_DE_BROLL) {
+      // ⚠️ Aqui a cena foi escolhida por ser a terceira igual seguida, e o texto dela pode
+      //    não pedir tela nenhuma — mas a `pista` continua a mandar quando pede, e a tela
+      //    que a história não comporta continua fora. Ver `BROLL_PERMITIDO`.
+      const escolha = escolherBroll(meio.narration, brollDoVideo(mapa), usosDoBroll);
+      usosDoBroll[escolha.comp] = (usosDoBroll[escolha.comp] || 0) + 1;
       brollUsado++;
       meio.visual = { ...meio.visual, tipo: 'broll', comp: escolha.comp, brollFrames: escolha.frames, valores: valoresDoBroll(escolha, mapa) };
     }
@@ -1112,8 +1240,52 @@ export function conferirImagens(cenas, mapa = {}, slugDoVideo = null, catalogoDe
   const brolls = cenas.filter((c) => c.visual?.tipo === 'broll');
   if (brolls.length > TETO_DE_BROLL) erros.push(`${brolls.length} cenas de b-roll do catálogo — o teto é ${TETO_DE_BROLL}`);
   for (const b of brolls) {
-    if (!BROLL_PERMITIDO.some((x) => x.comp === b.visual.comp)) {
+    const tela = BROLL_PERMITIDO.find((x) => x.comp === b.visual.comp);
+    if (!tela) {
       erros.push(`cena ${b.id}: "${b.visual.comp}" não está na lista de b-roll permitido (as outras mostram dinheiro de outra história)`);
+      continue;
+    }
+    /**
+     * 🔴 **A TRAVA QUE IMPEDE A QUINTA VEZ — 10/08/2026.**
+     *
+     * Ler a `pista` conserta o vídeo de hoje; **é esta linha que impede o defeito de
+     * voltar.** Sem ela, qualquer refactor que volte ao rodízio cego passa despercebido —
+     * e foi exactamente assim que um cartão de crédito apareceu duas vezes num vídeo sem
+     * cartão nenhum, atravessou uma aprovação, e só se viu **olhando o fotograma**.
+     *
+     * ⚠️ **É VERDADE e não gosto** (`verdade-versus-gosto`): não se pergunta a ninguém se
+     * a tela combina. Ou o mapa tem uma conta de cartão, ou não tem.
+     */
+    if (!tela.exige(mapa)) {
+      erros.push(`cena ${b.id}: a tela "${b.visual.comp}" não pode entrar neste vídeo — ${tela.porqueNao || 'a história não tem o que ela mostra'}`);
+    }
+  }
+  /**
+   * ⚠️ **A REGRA CERTA É "PASSOU À FRENTE DE UMA MELHOR", e não "nenhuma casou".**
+   *
+   * 🔴 **A minha primeira versão desta trava dava ALARME FALSO, e foi medida a dar.** Ela
+   * dizia: *"zero telas pedidas pela fala = a escolha voltou ao rodízio cego"*. Mas zero
+   * também acontece quando **nenhuma tela do catálogo serve** — e é o caso do vídeo
+   * `onde-o-salario-some`, cuja história é sobre juntar contas e cujo catálogo, sem a
+   * tela de cartão, só tem Extrato e as duas Capturas.
+   *
+   * ⚠️ **Uma trava que morde num caso legítimo ensina quem a lê a ignorá-la** — é a lição
+   * escrita em `prompt-versus-validador`, e por pouco ficava aqui dentro.
+   *
+   * A regra precisa: **a tela escolhida não foi pedida pela fala, E havia outra que foi,
+   * E essa outra ainda tinha vez.** Aí sim, a escolha passou à frente de uma melhor —
+   * que é a assinatura exacta do rodízio cego, e nada mais.
+   */
+  const usados = {};
+  for (const b of brolls) usados[b.visual.comp] = (usados[b.visual.comp] || 0) + 1;
+  for (const b of brolls) {
+    const tela = BROLL_PERMITIDO.find((x) => x.comp === b.visual.comp);
+    if (!tela || tela.pista.test(semAcento(String(b.narration || '')))) continue;
+    const melhor = brollDoVideo(mapa).find((x) => x.comp !== b.visual.comp
+      && x.pista.test(semAcento(String(b.narration || '')))
+      && (usados[x.comp] || 0) < TETO_POR_TELA);
+    if (melhor) {
+      erros.push(`cena ${b.id}: entrou "${b.visual.comp}" quando a fala pedia "${melhor.comp}" — a escolha passou à frente da tela certa`);
     }
   }
 

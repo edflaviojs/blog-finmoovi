@@ -44,7 +44,9 @@ import { iniciosDasCenas, VOZ_ENTRA_FRAMES, RESPIRO_SEC, CARTAO_CAPITULO_FRAMES 
 import { proximoDomingo, emPortugues, palavrasChave, montarMetadados, tituloAprovado, acharCapa, estreiaOcupada } from '../youtube/upload-longo.js';
 import { proximoLongo, comoArgumentos } from '../youtube/pick-next-longo.js';
 import { conferirTema, caudaDoTitulo, fazerSlug } from '../youtube/temas-longo.js';
-import { conferirImagens, escolherLugaresDaFoto } from '../youtube/lib/imagens-longo.js';
+import {
+  conferirImagens, escolherLugaresDaFoto, brollDoVideo, escolherBroll,
+} from '../youtube/lib/imagens-longo.js';
 import {
   PAPEIS, pistaDaCena, pedidoDaFoto, pedidoDoCartaz, doBanco, guardarNoBanco, NAO_REPETIR_EM,
   // ⚠️ Trazido com OUTRO NOME de propósito: a prova compara os dois lados para garantir
@@ -1573,6 +1575,128 @@ console.log('   (a Manus era o único ponto do vídeo longo sem plano B)\n');
   ok('a tarefa faz as 3 chamadas conhecidas (criar, perguntar, buscar)', chamadas.length === 3, `achei ${chamadas.length}`);
   ok('🔴 TODAS levam a mesma chave — nenhuma pergunta pela tarefa a outra conta',
     chamadas.every((c) => /\bchave\b/.test(c)), chamadas.filter((c) => !/\bchave\b/.test(c)).map((c) => c.slice(0, 60)).join(' | '));
+}
+
+// ═══ AS TELAS DO APP: A FALA MANDA, E O RODÍZIO CEGO NÃO VOLTA ═══════════════
+/**
+ * 🔴 A `pista` DE CADA TELA ESTAVA ESCRITA E NINGUÉM A LIA — 10/08/2026.
+ *
+ * ═══ A FAMÍLIA DE DEFEITO, que é a coisa a levar daqui ═══
+ * **Um campo de dados que descreve uma regra, escrito, e nenhum código o lê.** Não dá
+ * erro, não fica vermelho, e só se vê OLHANDO o fotograma. Já mordeu quatro vezes:
+ * `METAPHOR_MEANINGS` (§67.3), `fioCondutor` na capa (09/08), `numeroEspinha` no selo
+ * (10/08), e a `pista` do b-roll.
+ *
+ * ⚠️ **Estas provas são de COMPORTAMENTO e não de texto.** Uma prova que procurasse a
+ * palavra "pista" no ficheiro ficaria verde com o campo lido para nada. Estas dão um
+ * texto ao escolhedor e conferem o que ele devolve — continuam a valer depois de
+ * qualquer reescrita.
+ */
+console.log('\n📱 AS TELAS DO APP — a fala manda, e o rodízio cego não volta');
+console.log('   (a família: um campo que descreve uma regra e ninguém o lê — 4 ocorrências)\n');
+{
+  const COM_CARTAO = { contaDoCartao: 'Mastercard Itaú', valores: [{ nome: 'a fatura', valor: 1200 }] };
+  const SEM_CARTAO = { contaDoCartao: null, fichaDeDivida: null, valores: [{ nome: 'o saldo', valor: 1200 }] };
+
+  // ── 1. a tela que a história não comporta nunca sai ──
+  const permitidasSem = brollDoVideo(SEM_CARTAO).map((b) => b.comp);
+  ok('🔴 sem cartão na história, a tela de cartão NÃO está disponível',
+    !permitidasSem.includes('CartoesCountUpLong'), permitidasSem.join(' '));
+  ok('e com cartão, está', brollDoVideo(COM_CARTAO).map((b) => b.comp).includes('CartoesCountUpLong'));
+  ok('mas o vídeo nunca fica sem telas nenhumas', brollDoVideo(SEM_CARTAO).length >= 2, String(permitidasSem.length));
+
+  // ── 2. a FALA manda sobre o rodízio ──
+  /**
+   * ⚠️ **É esta a prova que mata o defeito.** Dá-se um texto que só uma tela pede, e
+   * pede-se a escolha três voltas seguidas: com o rodízio cego, saía uma tela diferente
+   * de cada vez. Agora sai sempre a que a fala pediu.
+   */
+  const falaDeRecibo = 'eu tirei uma foto do recibo e ele lancou-se sozinho';
+  const tres = [0, 1, 2].map((v) => escolherBroll(falaDeRecibo, brollDoVideo(SEM_CARTAO), v).comp);
+  ok('🔴 a tela que a FALA pede ganha ao rodízio, em qualquer volta',
+    new Set(tres).size === 1 && tres[0] === 'SmartCapture3DLong', tres.join(' '));
+
+  const falaDeExtrato = 'quatrocentos mais trezentos, junto com os quinhentos que ja estavam la';
+  ok('e outra fala pede outra tela', escolherBroll(falaDeExtrato, brollDoVideo(SEM_CARTAO), 0).comp === 'ExtratoListaLong',
+    escolherBroll(falaDeExtrato, brollDoVideo(SEM_CARTAO), 0).comp);
+
+  ok('🔴 nem quando a fala pede a tela PROIBIDA (o cartão continua fora)',
+    escolherBroll('a fatura do cartao com o limite estourado', brollDoVideo(SEM_CARTAO), 0).comp !== 'CartoesCountUpLong');
+
+  // ── 3. sem fala que peça, o rodízio continua a existir (e é de propósito) ──
+  const mudo = 'ela ficou calada durante uns segundos e depois respirou fundo';
+  const usosMudo = {};
+  const rodam = brollDoVideo(SEM_CARTAO).map(() => {
+    const e = escolherBroll(mudo, brollDoVideo(SEM_CARTAO), usosMudo);
+    usosMudo[e.comp] = (usosMudo[e.comp] || 0) + 1;
+    return e.comp;
+  });
+  ok('sem fala que peça nada, o rodízio ainda roda (senão voltavam as telas de palavras)',
+    new Set(rodam).size === brollDoVideo(SEM_CARTAO).length, rodam.join(' '));
+
+  // ── 4. A TRAVA morde ──
+  /**
+   * 🔴 **Ler a `pista` conserta hoje; é a trava que impede a quinta vez.** Monta-se de
+   * propósito um guião com a tela proibida e confere-se que `conferirImagens` o reprova.
+   */
+  const cenaMa = [{
+    id: 1, narration: 'o app somou tudo e mostrou o total de mil e duzentos',
+    visual: { tipo: 'broll', comp: 'CartoesCountUpLong', brollFrames: 210 },
+  }];
+  const queixas = conferirImagens(cenaMa, SEM_CARTAO);
+  ok('🔴 a trava REPROVA a tela de cartão num vídeo sem cartão',
+    queixas.some((e) => /não pode entrar neste vídeo/.test(e)), queixas.join(' | ') || '(não reprovou nada)');
+  ok('e diz PORQUÊ, em português', queixas.some((e) => /não tem cartão de crédito/.test(e)));
+  ok('e a mesma cena PASSA quando a história tem cartão',
+    !conferirImagens(cenaMa, COM_CARTAO).some((e) => /não pode entrar neste vídeo/.test(e)));
+
+  /**
+   * ⚠️ **E a assinatura exacta do defeito: ZERO telas pedidas pela fala.** Não se exige
+   * que todas casem (a passagem do equilíbrio mete telas em cenas que não pedem nada),
+   * mas zero em três ou mais só acontece se a escolha voltou ao rodízio cego.
+   */
+  /**
+   * 🔴 **A trava apanha "passou à frente da tela certa" — e SÓ isso.**
+   *
+   * ⚠️ **A minha 1ª versão desta trava dava alarme falso, e foi medida a dar:** ela dizia
+   * *"zero telas pedidas pela fala = rodízio cego"*, e zero também acontece quando
+   * **nenhuma tela do catálogo serve** — que é o caso real deste vídeo. Uma trava que
+   * morde num caso legítimo ensina quem a lê a ignorá-la. As duas provas abaixo fixam a
+   * diferença: uma tem de morder, a outra tem de ficar calada.
+   */
+  const passouAFrente = [{
+    id: 1,
+    narration: 'eu tirei uma foto do recibo e ele lancou-se sozinho',
+    visual: { tipo: 'broll', comp: 'ExtratoListaLong', brollFrames: 210 },
+  }];
+  ok('🔴 apanha a escolha que passou à frente da tela que a fala pedia',
+    conferirImagens(passouAFrente, SEM_CARTAO).some((e) => /passou à frente/.test(e)),
+    conferirImagens(passouAFrente, SEM_CARTAO).join(' | ') || '(não reprovou)');
+
+  const nenhumaServia = [1, 2, 3].map((i) => ({
+    id: i,
+    narration: 'ela olhou pela janela e ficou a pensar na vida durante uns segundos',
+    visual: { tipo: 'broll', comp: ['ExtratoListaLong', 'SmartCapture3DLong', 'SmartCaptureVozLong'][i - 1], brollFrames: 210 },
+  }));
+  ok('e NÃO reclama quando nenhuma tela do catálogo servia (era o alarme falso)',
+    !conferirImagens(nenhumaServia, SEM_CARTAO).some((e) => /passou à frente|rodízio/.test(e)),
+    conferirImagens(nenhumaServia, SEM_CARTAO).join(' | '));
+
+  // ── 5. nenhuma tela mais do que duas vezes ──
+  /**
+   * 🔴 **E este erro fui EU que o fiz, no mesmo dia.** Ao pôr a `pista` a mandar sem
+   * contar repetições, o vídeo saiu com o **Extrato quatro vezes em seis** — troquei
+   * "tela errada" por "tela repetida", que é o mesmo defeito com outra roupa.
+   */
+  const usos = {};
+  const seis = Array.from({ length: 6 }, () => {
+    const e = escolherBroll('quando a gente junta tudo no mesmo sitio', brollDoVideo(SEM_CARTAO), usos);
+    usos[e.comp] = (usos[e.comp] || 0) + 1;
+    return e.comp;
+  });
+  ok('🔴 nenhuma tela sai mais do que 2 vezes em 6 cenas',
+    Object.values(usos).every((n) => n <= 2), JSON.stringify(usos));
+  ok('e as 3 telas disponíveis são todas usadas', new Set(seis).size === 3, seis.join(' '));
 }
 
 // ═══ O LEITOR DE TEXTO, E A ORDEM QUE POUPA CRÉDITOS ═════════════════════════
