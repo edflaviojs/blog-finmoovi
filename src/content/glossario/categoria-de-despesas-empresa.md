@@ -4,6 +4,7 @@ definition: "O que é categoria de despesas empresa e como isso aparece no seu d
 title: "categoria de despesas empresa - Glossário Financeiro"
 description: "O que é categoria de despesas empresa e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/categoria-de-despesas-empresa.webp"
+imageAlt: "Moedas douradas empilhadas, gráfico de crescimento e cofrinho sob cúpula de vidro."
 category: "basico"
 tags: ["categoria de despesas empresa", "glossário", "finanças"]
 author: "FinMoovi"

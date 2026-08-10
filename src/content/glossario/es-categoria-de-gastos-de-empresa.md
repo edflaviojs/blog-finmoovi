@@ -4,6 +4,7 @@ definition: "Qué es categoría de gastos de empresa y cómo aparece en tu día 
 title: "categoría de gastos de empresa - Glosario Financiero"
 description: "Qué es categoría de gastos de empresa y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/categoria-de-despesas-empresa.webp"
+imageAlt: "Mónedas doradas apiladas, gráfico de crecimiento amarillo y hucha bajo campana de vidrio."
 category: "basico"
 tags: ["categoría de gastos de empresa", "glosario", "finanzas"]
 author: "FinMoovi"

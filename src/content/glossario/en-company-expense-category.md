@@ -4,6 +4,7 @@ definition: "What company expense category is and how it shows up in your everyd
 title: "company expense category - Financial Glossary"
 description: "What company expense category is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/categoria-de-despesas-empresa.webp"
+imageAlt: "Gold coins, rising chart, and piggy bank in glass dome on purple background"
 category: "basico"
 tags: ["company expense category", "glossary", "finance"]
 author: "FinMoovi"
