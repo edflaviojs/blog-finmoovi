@@ -343,8 +343,21 @@ export const EXEMPLO_DE_FECHO = 'No fim das contas, a sua conta de luz não sobe
  * Short: este é o MOLDE que o próprio prompt manda usar. Puni-lo seria reprovar quem
  * obedece — a inversão exata do defeito crónico desta casa.
  */
+/**
+ * 🔴 A FALA MUDOU EM 10/08/2026 — e é a decisão do dono de 07/08 (§12-A), que nunca tinha
+ * chegado ao vídeo longo.
+ *
+ * O molde dizia *"Comenta FINMOOVI aqui embaixo"*. **Em sete das nove redes por onde este
+ * vídeo passa não há ninguém a responder comentários** — só o Instagram e o YouTube têm
+ * robô a cumprir. Prometer resposta onde ela não existe é pior do que não prometer nada.
+ *
+ * ⚠️ **E o pedido não desapareceu, mudou de sítio:** o *"comenta FINMOOVI"* continua
+ * ESCRITO na descrição do YouTube e na legenda do Instagram — os dois únicos lugares onde
+ * há robô. O que muda é a FALA, que é a mesma em todo o lado e por isso tem de ser
+ * verdade em todo o lado.
+ */
 export const EXEMPLO_DE_CHAMADA = 'Quer ver quanto a sua casa está levando por mês nessas coisas pequenas? '
-  + 'Comenta FINMOOVI aqui embaixo que eu te mando o app de graça, e você faz essa conta em dois toques.';
+  + 'Procura FinMoovi no navegador: é de graça, e você faz essa conta em dois toques.';
 
 /**
  * O TEXTO CONTRA O QUAL SE MEDE A CÓPIA. Repare no que fica DE FORA:
@@ -823,10 +836,12 @@ ${ancora ? `${ancora}\n` : ''}
 ════════ O QUE A CHAMADA TEM DE FAZER ════════
 A pessoa acabou de ver um número que a assustou — e ela quer o DELA. Isso é tudo.
 · Pergunte se ela quer ver o número dela.
-· Peça o COMENTÁRIO com a palavra FINMOOVI, prometendo o que você manda em troca.
-· Molde a adaptar: "quer ver o SEU? comenta FINMOOVI aqui que eu te mando."
+· Mande-a PROCURAR o app pelo nome — "FinMoovi", escrito assim — e diga que é de graça e que abre no navegador.
+· Molde a adaptar: "quer ver o SEU? procura FinMoovi. É de graça."
 ⛔ Não conte história nova. Não repita nada do que já foi dito. Não diga o bordão do canal.
-⛔ Não mande clicar em link: a chamada provada deste canal é o comentário.
+⛔ NÃO peça comentário. Este vídeo sai em NOVE redes e em sete delas ninguém responde — a resposta automática só existe no Instagram e no YouTube. Prometer resposta onde ela não existe é pior do que não prometer nada.
+⛔ Não mande clicar em link nem dizer "o link está aqui embaixo": no Instagram e no TikTok o endereço escrito não é clicável, e a pessoa ia procurar um link que não existe.
+✓ O pedido de comentário NÃO desapareceu — ele vive na descrição do YouTube e na legenda do Instagram, escrito, onde há mesmo um robô a responder. Aqui é a FALA, e a fala é a mesma em todo o lado.
 ⚠️ **TAMANHO: entre ${ORCAMENTO.chamada.min} e ${ORCAMENTO.chamada.max} palavras.** É um recado, não um capítulo.
 
 ${O_QUE_PODE_PROMETER}

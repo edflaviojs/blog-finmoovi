@@ -48,7 +48,7 @@
 
 import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { valoresEmDinheiro } from './schema-longo.js';
+import { valoresEmDinheiro, CHAMADA_NO_ECRA, CHAMADA_ETIQUETA_ECRA } from './schema-longo.js';
 
 /** Sem acentos e em minúsculas — para as pistas abaixo casarem com fala real. */
 const semAcento = (t) => String(t || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
@@ -1010,7 +1010,7 @@ export function dirigirImagens(cenas, mapa = {}, slug = null) {
     // ⚠️ `primeiraDoBloco` — ver a nota acima: com a chamada partida em duas cenas,
     //    o cartao saia DUAS VEZES SEGUIDAS.
     if (c.parte === 'chamada' && primeiraDoBloco.has(indice)) {
-      return { ...c, visual: { tipo: 'frase', texto: 'Comenta FINMOOVI', etiquetaTexto: 'aqui nos comentários', variante: 'chamada' } };
+      return { ...c, visual: { tipo: 'frase', texto: CHAMADA_NO_ECRA, etiquetaTexto: CHAMADA_ETIQUETA_ECRA, variante: 'chamada' } };
     }
 
     // 5. A METÁFORA — o ator do fio condutor, nos lugares reservados na 1ª passagem.
@@ -1365,7 +1365,7 @@ export function conferirImagens(cenas, mapa = {}, slugDoVideo = null, catalogoDe
 
   // (f) toda frase que vai ao ecrã foi ESCRITA pelo guião, não inventada aqui
   const declaradas = new Set([
-    'Comenta FINMOOVI',
+    CHAMADA_NO_ECRA,
     ...(mapa.capitulos || []).flatMap((c) => [c.titulo, c.oQueFicaEmAberto, c.oQueAcrescenta]).filter(Boolean),
     mapa.promessa, mapa.lacoAberto, mapa.respostaDaPromessa,
   ].filter(Boolean));
@@ -1499,7 +1499,7 @@ export function consertarImagens(cenas, mapa = {}, slugDoVideo = null, catalogoD
 
   // (f) toda frase no ecrã foi ESCRITA pelo guião
   const declaradas = new Set([
-    'Comenta FINMOOVI',
+    CHAMADA_NO_ECRA,
     ...(mapa.capitulos || []).flatMap((c) => [c.titulo, c.oQueFicaEmAberto, c.oQueAcrescenta]).filter(Boolean),
     mapa.promessa, mapa.lacoAberto, mapa.respostaDaPromessa,
   ].filter(Boolean));

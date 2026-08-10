@@ -621,7 +621,13 @@ console.log('   (a prova nasceu de uma falha REAL: a trava punia "moedinha" e o 
     ['ninguém tem nome neste canal', ['abertura', 'capitulo', 'fecho'], /NINGUÉM TEM NOME NESTE CANAL/],
     ['ninguém é "um deles" antes de ser apresentado', ['abertura'], /antes de dizer o que fazem/],
     ['o título de capítulo não é genérico', ['mapa'], /Introdução/],
-    ['a chamada diz FINMOOVI', ['chamada'], /FINMOOVI/],
+    // 🔴 10/08: era /FINMOOVI/ em MAIÚSCULAS, de quando o prompt mandava pedir o
+    // comentário com a palavra escrita assim. A fala nova manda PROCURAR o app pelo
+    // nome — "FinMoovi" — e a trava é a mesma: o nome tem de ser ordenado.
+    ['a chamada manda dizer o nome FinMoovi', ['chamada'], /PROCURAR o app pelo nome[\s\S]*FinMoovi/],
+    // 🔴 E a proibição nova, que é a razão de tudo isto: pedir comentário é prometer
+    // resposta em sete redes onde ninguém responde. Ver §12-A e `PEDIDO_DA_CHAMADA`.
+    ['a chamada NÃO pede comentário', ['chamada'], /NÃO peça coment[áa]rio/],
     ['o capítulo abre com pergunta', ['capitulo'], /PERGUNTA que dói/],
     ['a demonstração nomeia o app', ['capitulo'], /FinMoovi/],
     ['trata por "você", nunca por "o senhor"', ['capitulo', 'abertura', 'fecho', 'chamada', 'mapa'], /NUNCA por "o senhor"/],
@@ -752,7 +758,11 @@ console.log('   (a prova nasceu de uma falha REAL: a trava punia "moedinha" e o 
     ['a capa continua pergunta e cabe na tela', 'abertura', /PERGUNTA que dói.*"\?"/s],
     ['a abertura não pede nada', 'abertura', /NÃO peça nada/],
     ['a abertura não diz o bordão', 'abertura', /NÃO escreva o bordão/],
-    ['a chamada mantém FINMOOVI e o pedido', 'chamada', /FINMOOVI e a pedir o comentário/],
+    // 🔴 10/08: o polidor mandava "manter FINMOOVI e o pedido do comentário". Se ele
+    // ficasse assim, reescreveria de volta para a fala velha o bloco que o gerador
+    // acabou de escrever com a nova — e o vídeo saía com as duas.
+    ['a chamada mantém o nome e manda PROCURAR', 'chamada', /FINMOOVI e a mandar PROCURAR o app pelo nome/],
+    ['e o polidor também não pede comentário', 'chamada', /NÃO peça coment[áa]rio/],
     ['a chamada não diz o bordão', 'chamada', /NÃO escreva o bordão/],
     ['o fecho acaba no bordão à letra', 'fecho', /ÚLTIMA frase é o bordão do canal, à letra/],
     ['o fecho não cita fonte', 'fecho', /NÃO cite fonte nenhuma/],

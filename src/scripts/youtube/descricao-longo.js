@@ -454,8 +454,18 @@ export function montarDescricao(plano, timing, opts = {}) {
     '',
     plano.promessa,
     '',
-    // A narração pede "comenta FINMOOVI que eu te mando o app" — e é no comentário, não
-    // na descrição, que as pessoas procuram o link (§54). A chamada fica em cima.
+    /**
+     * 🔑 O PEDIDO DE COMENTÁRIO FICA AQUI — E DESDE 10/08 SÓ AQUI.
+     *
+     * ⚠️ A nota anterior dizia *"a narração pede comenta FINMOOVI"*, e **deixou de ser
+     * verdade**: a fala do vídeo passou a mandar PROCURAR o app pelo nome, porque ele sai
+     * em nove redes e em sete ninguém responde a comentários (§12-A). Ver
+     * `EXEMPLO_DE_CHAMADA` em `roteiro-longo.js`.
+     *
+     * ✅ **Na descrição do YouTube o pedido continua, e continua verdadeiro:** aqui há
+     * mesmo um robô a responder — `src/scripts/youtube/comentarios.js`, de hora a hora
+     * desde 05/08. A promessa é cumprida em dois sítios: este e a legenda do Instagram.
+     */
     '👉 Comenta FINMOOVI aqui embaixo que eu te mando o app.',
   ];
 

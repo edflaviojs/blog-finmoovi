@@ -211,6 +211,50 @@ const TITULOS_GENERICOS = [
 const PALAVRAS_DE_CHAMADA = /\b(comenta\p{L}*|coment[áa]ri\p{L}*|inscrev\p{L}*|inscri[çc]\p{L}*|inscrit\p{L}*|curte|curtir|likes?|links?|sininho)\b|\b(na|d[ao]) (descri[çc][ãa]o|bio)\b/iu;
 
 /**
+ * 🔑 A CHAMADA DO VÍDEO LONGO — 10/08/2026, e é a mesma decisão do dono de 07/08 (§12-A),
+ * que nunca tinha chegado a este formato.
+ *
+ * ═══ O QUE ESTAVA ERRADO, E PORQUE NINGUÉM VIU ═══
+ * Em 07/08 a fala dos Shorts mudou de *"comenta FINMOOVI"* para **"procura FinMoovi"**,
+ * porque **em sete das nove redes ninguém responde a comentários** — só o Instagram e o
+ * YouTube têm robô a cumprir. O vídeo LONGO ficou para trás e continuou a pedir o
+ * comentário, na fala **e** escrito no ecrã.
+ *
+ * 🔴 **E não era esquecimento: o próprio código ORDENAVA a fala velha em cinco sítios** —
+ * o molde do prompt, a instrução do prompt, o segundo leitor, o cartão do ecrã e **esta
+ * trava**, que rejeitava qualquer chamada que não pedisse comentário. É o par
+ * *prompt × validador* que esta casa já pagou vinte vezes: **o prompt manda escrever
+ * exactamente o que o validador exige, e a fala nova era impossível.**
+ *
+ * ⚠️ **POR QUE HÁ UMA EXPRESSÃO SÓ PARA A CHAMADA, EM VEZ DE JUNTAR "procura" À DE CIMA:**
+ * `PALAVRAS_DE_CHAMADA` também serve para PROIBIR que se peça alguma coisa nos outros
+ * blocos. *"Comenta"* e *"inscreve"* não têm outro sentido; **"procura" tem** — *"procura
+ * saber para onde vai o dinheiro"* é conteúdo, não chamada. Juntá-la ali reprovaria
+ * aberturas boas. Por isso a chamada exige o verbo **colado ao nome do produto**, que é
+ * uma coisa que só a chamada faz.
+ */
+export const PEDIDO_DA_CHAMADA = new RegExp(
+  '\\b(comenta\\p{L}*|coment[áa]ri\\p{L}*)\\b'
+  + '|\\b(procur\\p{L}*|busc\\p{L}*|pesquis\\p{L}*|baix\\p{L}*|abr\\p{L}*|us\\p{L}*|test\\p{L}*)\\s+(o\\s+|a\\s+|pelo\\s+|por\\s+)?finmoovi\\b',
+  'iu',
+);
+
+/**
+ * A frase que aparece ESCRITA no ecrã no bloco da chamada, e a etiqueta por baixo dela.
+ *
+ * 🔴 **VIVE AQUI, NUM SÍTIO SÓ, DE PROPÓSITO.** Ela era escrita à mão em três lugares de
+ * `imagens-longo.js` — o cartão e as duas listas de "frases que o guião declarou". Mudar
+ * o cartão sem mudar as listas fazia a própria trava recusar a frase nova (*"não está
+ * declarada no guião"*) e rebaixar a cena, em silêncio. Constante espelhada é a família
+ * de defeito nº 1 desta casa.
+ *
+ * ⚠️ E a seta: no Short a pastilha tinha uma seta para baixo, que passou a LUPA quando a
+ * fala mudou — uma seta a apontar para nada é a mesma mentira, em desenho.
+ */
+export const CHAMADA_NO_ECRA = 'Procura FinMoovi';
+export const CHAMADA_ETIQUETA_ECRA = 'é de graça, no navegador';
+
+/**
  * 🔴 NINGUÉM TEM NOME NESTE CANAL — 08/08/2026, correcção do dono.
  *
  * Ele mandou dois vídeos como referência de FORMA e um deles dava nomes aos dois
@@ -1191,13 +1235,22 @@ export function validarChamada(fala) {
   if (n < ORCAMENTO.chamada.min || n > ORCAMENTO.chamada.max) {
     erros.push(`${queixaDeTamanho('chamada', n, ORCAMENTO.chamada)} É um recado rápido, não um capítulo.`);
   }
-  if (!/finmoovi/i.test(txt)) erros.push('chamada: não diz FINMOOVI — é a palavra que a pessoa tem de escrever no comentário');
-  if (!PALAVRAS_DE_CHAMADA.test(txt)) erros.push('chamada: não pede nada — é o único bloco do vídeo em que se pede, e ele tem de pedir');
+  if (!/finmoovi/i.test(txt)) erros.push('chamada: não diz FINMOOVI — é o nome que a pessoa tem de procurar');
+  /**
+   * 🔴 ESTA TRAVA EXIGIA O COMENTÁRIO ATÉ 10/08 — e era ela que tornava impossível a fala
+   * decidida pelo dono em 07/08. Ver `PEDIDO_DA_CHAMADA`.
+   * Agora aceita as duas: *"procura FinMoovi"* (a nova, verdadeira nas nove redes) e
+   * *"comenta FINMOOVI"* (que continua válida, e é o que a DESCRIÇÃO do YouTube diz, onde
+   * há mesmo um robô a responder).
+   */
+  if (!PEDIDO_DA_CHAMADA.test(txt)) {
+    erros.push('chamada: não pede nada — é o único bloco do vídeo em que se pede, e ele tem de pedir (mandar PROCURAR o FinMoovi conta)');
+  }
   if (/link (na|no|aqui)|clica no link|na bio|na descri/i.test(txt)) {
-    // No vídeo LONGO o link até é clicável na descrição — mas a nossa CTA provada é o
-    // comentário, e a descrição dos Shorts já mostrou que o link genérico não converte
-    // (§33.3). Fica o comentário, que é o que sabemos que funciona.
-    avisos.push('chamada: manda ir ao link — no vídeo longo isso é possível, mas a chamada provada deste canal é o comentário');
+    // ⚠️ No vídeo LONGO o link até é clicável na descrição — mas mandar clicar continua
+    // fora: no Instagram e no TikTok o endereço na legenda NÃO é clicável, e este mesmo
+    // vídeo passa por lá. Uma frase que só é verdade em duas das nove não entra na fala.
+    avisos.push('chamada: manda ir ao link — em duas das redes por onde este vídeo passa o link não é clicável');
   }
   if (temBordao(txt)) erros.push('chamada: diz o bordão — ele fecha o vídeo, não a chamada');
   erros.push(...proibicoesGerais(txt, 'chamada'));
