@@ -1368,6 +1368,22 @@ console.log('   (as quatro coisas que estavam partidas e não tocavam em prova n
   ok('o título da fila manda sobre o tema (é a frase que o dono aprovou)', daFila.de === 'o título da fila' && daFila.titulo === 'DOIS HOMENS, MESMO SALÁRIO', `deu "${daFila.titulo}"`);
   ok('e sem fonte nenhuma não se paga capa', tituloDaCapa({}).titulo === '');
 
+  /**
+   * ⚠️ **O `--titulo` do dono ganha a TUDO, e entra tal e qual.** Ele não passa pela
+   * limpeza das fontes automáticas: o que ele escreve JÁ É o título, e cortá-lo no
+   * primeiro dois-pontos deitaria fora a parte que ele pensou.
+   */
+  const aMao = tituloDaCapa({ mandado: 'Onde o salário some', tituloDaFila: 'Um título qualquer da fila', tema: 'e um tema qualquer' });
+  ok('🔴 o título escrito à mão ganha à fila e ao tema', aMao.de === 'o título que você escreveu' && aMao.titulo === 'ONDE O SALÁRIO SOME', `deu "${aMao.titulo}"`);
+  ok('e não é cortado no dois-pontos como as outras fontes',
+    tituloDaCapa({ mandado: 'Dívida: o plano de 3 passos' }).titulo === 'DÍVIDA: O PLANO DE 3 PASSOS');
+  ok('nem perde o ponto de interrogação', tituloDaCapa({ mandado: 'Para onde foi o seu salário?' }).titulo === 'PARA ONDE FOI O SEU SALÁRIO?');
+  ok('e um título comprido AVISA mas sai na mesma (o gosto é do dono)', (() => {
+    let avisou = false;
+    const r = tituloDaCapa({ mandado: 'uma frase deliberadamente comprida com muito mais do que doze palavras lá dentro' }, () => { avisou = true; });
+    return avisou && r.titulo.startsWith('UMA FRASE');
+  })());
+
   // ── 2. o selo lê o número onde ele VIVE, e não onde não está ──
   /**
    * ⚠️ Esta prova usa a forma REAL dos dois ficheiros, medida em 10/08: o guião montado

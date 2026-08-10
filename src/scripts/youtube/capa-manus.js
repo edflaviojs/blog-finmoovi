@@ -31,6 +31,7 @@
  * Uso:
  *   node --env-file=.env.local src/scripts/youtube/capa-manus.js --slug=sair-do-vermelho
  *   node --env-file=.env.local src/scripts/youtube/capa-manus.js --slug=... --so=capa
+ *   node --env-file=.env.local src/scripts/youtube/capa-manus.js --slug=... --titulo="ONDE O SALÁRIO SOME"
  *   node --env-file=.env.local src/scripts/youtube/capa-manus.js --creditos
  */
 
@@ -256,7 +257,29 @@ ${REGRAS_FIXAS}`,
  */
 export const MINIMO_DE_PALAVRAS_NO_TITULO = 3;
 
-export function tituloDaCapa({ tituloDaFila = '', tema = '', fraseDaCapa = '' } = {}, aoSaltar = () => {}) {
+export function tituloDaCapa({ mandado = '', tituloDaFila = '', tema = '', fraseDaCapa = '' } = {}, aoSaltar = () => {}) {
+  /**
+   * 🔴 **O QUE O DONO ESCREVE À MÃO ENTRA TAL E QUAL** — `--titulo="ONDE O SALÁRIO SOME"`.
+   *
+   * ⚠️ **E NÃO PASSA PELA LIMPEZA DAS OUTRAS FONTES, de propósito.** As três fontes
+   * automáticas são textos escritos para outra coisa (a fila, o guião, a narração) e por
+   * isso precisam de ser cortadas no primeiro dois-pontos. O que ele escreve **já é o
+   * título** — cortá-lo no `:` ou no `?` seria deitar fora exactamente a parte que ele
+   * pensou. Só se tiram aspas e espaços a mais.
+   *
+   * ⚠️ **O teto continua a avisar, mas não manda.** Se ele quiser 15 palavras, saem 15
+   * palavras e fica o aviso. Uma trava que discute com o dono sobre gosto é a regra
+   * `verdade-versus-gosto` ao contrário: o que cabe numa miniatura é gosto, e o gosto é
+   * dele.
+   */
+  const daMao = String(mandado || '').replace(/[“”"']/g, '').replace(/\s+/g, ' ').trim();
+  if (daMao) {
+    const n = daMao.split(/\s+/).length;
+    if (n > MAX_PALAVRAS_CAPA_LONGO) {
+      aoSaltar(`o título que você escreveu tem ${n} palavras (o costume são até ${MAX_PALAVRAS_CAPA_LONGO}) — vai assim mesmo, é a sua escolha`);
+    }
+    return { titulo: daMao.toLocaleUpperCase('pt-BR'), de: 'o título que você escreveu' };
+  }
   const fontes = [
     { de: 'o título da fila', texto: tituloDaFila },
     { de: 'o tema do guião', texto: tema },
@@ -421,7 +444,12 @@ async function main() {
     // A conta e o porquê estão em `tituloDaCapa`, lá em cima — fora do `main` para a
     // prova lhe poder chegar, que é o que faltava quando o "ONDE" passou.
     const { titulo, de: deOnde } = tituloDaCapa(
-      { tituloDaFila: naFila.titulo, tema: roteiro.tema, fraseDaCapa: roteiro.capa },
+      {
+        mandado: args.titulo && args.titulo !== true ? String(args.titulo) : '',
+        tituloDaFila: naFila.titulo,
+        tema: roteiro.tema,
+        fraseDaCapa: roteiro.capa,
+      },
       (m) => console.log(`   ⏭️  ${m}`),
     );
     if (!titulo) {
