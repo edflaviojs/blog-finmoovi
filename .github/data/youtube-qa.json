@@ -52,5 +52,23 @@
     ],
     "veredito": "1. **O LOOP — 10/10**  \nPrimeiro e último quadro são praticamente iguais: **“Confira suas contas”**, no mesmo local e com a mesma composição. Excelente para loop invisível.\n\n2. **A FAIXA DE BAIXO — 9/10**  \nNão há informação importante colada no limite inferior. As legendas ficam acima da área mais crítica da interface.\n\n3. **TEXTO POR CIMA DE TEXTO — 9/10**  \nNão vejo frases sobrepostas nem palavras cortadas. Os destaques coloridos estão bem separados do restante do texto.\n\n4. **LEGIBILIDADE — 9/10**  \nTexto principal grande, branco e com alto contraste. As legendas são menores, mas ainda parecem adequadas para celular.\n\n5. **TELA VIVA OU VAZIA? — 7/10**  \nHá bastante espaço roxo vazio em vários quadros, principalmente abaixo das legendas. Funciona como estética, mas poderia ter mais elementos visuais.\n\n6. **COERÊNCIA — 8/10**  \nOs quadros claramente pertencem ao mesmo vídeo e a sequência conta uma pequena história. Porém, algumas legendas aparecem como fragmentos isolados.\n\n7. **TESTE CENTRAL — 7/10**  \nPelos quadros parados, **parece mais um vídeo baseado em slides animados do que um vídeo profissional dinâmico**; a identidade visual é boa, mas a composição se repete muito.\n\nNOTA GERAL: 8,5\nPROBLEMA 1: Excesso de espaço vazio, principalmente na metade inferior dos quadros, visível em vários segundos.\nPROBLEMA 2: A repetição do mesmo layout faz o conteúdo parecer mais “slide” do que vídeo, especialmente nos quadros 0,1s, 6,9s e 16,1s.\nPROBLEMA 3: As legendas em alguns momentos são fragmentos curtos (“maior e eu”, “banco e confiro”), o que reduz a força visual isoladamente.\nPRIMEIRA COISA A MUDAR: Aproveitar melhor o espaço vazio com elementos visuais ou variações de composição, sem mexer no excelente encaixe do primeiro e último quadro.",
     "quando": "2026-08-09T05:36:34.463Z"
+  },
+  {
+    "slug": "loop-seguro-venceu-ta-perdendo",
+    "formato": "loop16",
+    "nota": 7.5,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      2.4,
+      4.8,
+      7.3,
+      9.7,
+      12.1,
+      14.5,
+      16.9
+    ],
+    "veredito": "1. **O LOOP — 7/10**  \nO primeiro e o último quadro têm o mesmo fundo, logo e a mesma frase principal **“Seguro vencido preocupa”**, então o retorno é relativamente disfarçado. Mas não são iguais: o texto inferior muda de **“Se você ainda.”** para **“ficam comigo sempre.”**. Pelo quadro parado, não dá para saber se a transição faz isso parecer natural.\n\n2. **A FAIXA DE BAIXO — 5/10**  \nSim. A frase menor de todos os quadros fica na região inferior, relativamente próxima da área que pode ser coberta pela interface do Shorts/Reels. A informação importante está baixa demais.\n\n3. **TEXTO POR CIMA DE TEXTO — 7/10**  \nNão há um caso grave de duas frases sobrepostas. Porém, no **quadro 7 / 14,5s**, “Seguro traz proteção” passa por cima do escudo e do símbolo de dólar, deixando a leitura mais carregada. Não há palavra claramente cortada pela borda.\n\n4. **LEGIBILIDADE — 8/10**  \nAs frases principais estão grandes, em negrito e com bom contraste. O texto menor também é legível, mas perde força por estar mais baixo e ter partes em cinza.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — 8/10**  \nNão está vazia. O fundo tem textura, elementos gráficos e o escudo funciona como elemento visual central. Alguns quadros ficam um pouco repetitivos, mas não parecem telas abandonadas.\n\n6. **COERÊNCIA — 9/10**  \nMuito coerente. Logo, fundo, paleta, tipografia e ilustração do seguro permanecem consistentes. A sequência também parece contar uma pequena história: preocupação → proteção → aviso → esquecimento → proteção.\n\n7. **TESTE CENTRAL — 8/10**  \nParece mais um **vídeo profissional com identidade visual** do que uma sequência de slides, embora a repetição do mesmo enquadramento e do mesmo escudo aproxime alguns momentos de uma apresentação animada.\n\n**NOTA GERAL: 7,5/10**  \n**PROBLEMA 1: Texto importante baixo demais em praticamente todos os quadros, especialmente nos segundos 0,1s–16,9s.**  \n**PROBLEMA 2: O loop não é perfeitamente idêntico: o primeiro quadro termina visualmente diferente do último, principalmente no texto inferior.**  \n**PROBLEMA 3: No quadro de 14,5s, “Seguro traz proteção” compete visualmente com o escudo e o símbolo de dólar.**  \n**PRIMEIRA COISA A MUDAR: Subir toda a informação textual inferior para uma zona segura e aproximar visualmente o primeiro e o último quadro.**",
+    "quando": "2026-08-10T05:57:23.486Z"
   }
 ]
