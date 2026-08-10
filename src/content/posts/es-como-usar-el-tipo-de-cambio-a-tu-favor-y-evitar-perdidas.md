@@ -3,6 +3,7 @@ title: "Cómo usar el tipo de cambio a tu favor y evitar pérdidas – guía 202
 description: "Descubre cómo el tipo de cambio impacta tu día a día y aprende a usar herramientas multimoneda para organizar tus finanzas sin complicaciones."
 tickerHeadline: "Tipo de cambio que no succiona bolsillo"
 image: "/images/posts/como-usar-o-cambio-a-seu-favor-e-evitar-perdas-guia-2026.webp"
+imageAlt: "Grupo de personas sonrientes alrededor de mesa blanca con libro abierto, taza y planta."
 category: "dicas"
 locale: "es"
 tags: ["cambio de divisas","finanzas personales","economía","dinero"]

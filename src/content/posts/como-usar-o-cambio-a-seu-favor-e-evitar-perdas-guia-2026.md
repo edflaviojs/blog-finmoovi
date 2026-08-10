@@ -3,6 +3,7 @@ title: "Como usar o câmbio a seu favor e evitar perdas – guia 2026"
 description: "Descubra como o câmbio impacta seu dia a dia, aprenda a usar ferramentas multimoeda e organize suas finanças sem complicação. Dicas práticas e passo a passo."
 tickerHeadline: "Câmbio que não suga seu bolso"
 image: "/images/posts/como-usar-o-cambio-a-seu-favor-e-evitar-perdas-guia-2026.webp"
+imageAlt: "Grupo de pessoas reunidas em mesa branca, lendo livro aberto e conversando."
 category: "dicas"
 locale: "pt"
 tags: ["foreign exchange","finanças pessoais","economia","dinheiro"]
