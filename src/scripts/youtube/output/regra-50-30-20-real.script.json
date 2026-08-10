@@ -1,0 +1,209 @@
+{
+  "slug": "regra-50-30-20-real",
+  "term": "Regra 50/30/20 com salário de R$ 4 mil — funciona?",
+  "category": "controle",
+  "keyword": "salário",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Com *salário de quatro mil reais*, a regra cinquenta trinta vinte cabe na sua vida?"
+  },
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "bifurcacao",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Com salário de quatro mil reais, a regra cinquenta trinta vinte cabe na sua vida? Eu fiz a conta e vi que só o aluguel já aperta tudo.",
+      "durationSec": 10.8,
+      "shots": [
+        {
+          "anchor": "quatro",
+          "visual": {
+            "type": "statement",
+            "text": "Renda de R$ 4 mil"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "cinquenta",
+          "visual": {
+            "type": "formula",
+            "text": "50 / 30 / 20"
+          }
+        },
+        {
+          "anchor": "aluguel",
+          "visual": {
+            "type": "number",
+            "text": "R$ 1.200"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "A teoria muda quando chegam o aluguel, o mercado e as contas do mês. A gente trabalha duro e nunca aprendeu a organizar.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "teoria",
+          "visual": {
+            "type": "statement",
+            "text": "A teoria muda na prática"
+          },
+          "sfx": "typewriter"
+        },
+        {
+          "anchor": "aluguel",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          }
+        },
+        {
+          "anchor": "trabalha",
+          "visual": {
+            "type": "statement",
+            "text": "Trabalho duro sem plano"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Mas botando no papel, eu vi que sobravam novecentos reais depois de pagar o básico. Isso dá um susto quando a gente olha de perto.",
+      "durationSec": 9.6,
+      "shots": [
+        {
+          "anchor": "papel",
+          "visual": {
+            "type": "list",
+            "text": "Papel e números reais"
+          }
+        },
+        {
+          "anchor": "novecentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 900"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "quando",
+          "visual": {
+            "type": "statement",
+            "text": "Olhe de perto"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei essa conta no FinMoovi e ele me mostrou certinho para onde vai o dinheiro.",
+      "durationSec": 6.2,
+      "shots": [
+        {
+          "anchor": "joguei",
+          "visual": {
+            "type": "app",
+            "app": "calculadora",
+            "note": "Tela mostrando a simulação do orçamento e divisão do dinheiro"
+          },
+          "sfx": "click"
+        },
+        {
+          "anchor": "mostrou",
+          "visual": {
+            "type": "chart",
+            "text": "Para onde vai o dinheiro"
+          }
+        },
+        {
+          "anchor": "onde",
+          "visual": {
+            "type": "icon",
+            "icon": "target"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver como fica o seu? Procura o FinMoovi. É de graça.",
+      "durationSec": 4.6,
+      "shots": [
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "statement",
+            "text": "Veja sua própria conta"
+          }
+        },
+        {
+          "anchor": "Procura",
+          "visual": {
+            "type": "statement",
+            "text": "FinMoovi grátis"
+          }
+        },
+        {
+          "anchor": "graça",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "A regra pode até funcionar, mas precisa caber na sua vida real. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "regra",
+          "visual": {
+            "type": "statement",
+            "text": "Funciona na vida real"
+          }
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "icon",
+            "icon": "shield"
+          }
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Controle seu dinheiro"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja seu dinheiro no FinMoovi",
+    "target": "app"
+  },
+  "totalDurationSec": 47.3
+}
