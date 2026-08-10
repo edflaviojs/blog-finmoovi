@@ -146,7 +146,8 @@ export const BROLL_PERMITIDO = [
     familia: 'cartoes',
     pista: /fatura|cartao|limite|parcel/i,
     // 🔴 Sem uma conta de cartão na história, esta tela mostra uma dívida que ninguém tem.
-    exige: (mapa) => Boolean(mapa?.contaDoCartao) || Boolean(mapa?.fichaDeDivida),
+    //    E sem números da história, mostraria a fatura da GRAVAÇÃO (R$ 1.240).
+    exige: (mapa) => (Boolean(mapa?.contaDoCartao) || Boolean(mapa?.fichaDeDivida)) && temDinheiroNaHistoria(mapa),
     porqueNao: 'esta história não tem cartão de crédito nenhum',
   },
   {
@@ -158,8 +159,11 @@ export const BROLL_PERMITIDO = [
     //    frase que MANDA entrar b-roll. Resultado medido: o Extrato quatro vezes em seis.
     //    Uma pista que casa com tudo não é uma pista; é o rodízio cego outra vez.
     pista: /extrato|entrou|saiu|lancament|conta do banco|saldo|somou/i,
-    // O extrato serve qualquer história de dinheiro: toda a gente tem entradas e saídas.
-    exige: () => true,
+    // O extrato serve qualquer história de dinheiro — mas **só se ela tiver números**.
+    // 🔴 Sem eles, esta tela sai com o saldo e as linhas da GRAVAÇÃO (R$ 3.754,91,
+    //    aluguel de R$ 1.500…), que é o defeito que ela própria existe para não ter.
+    exige: (mapa) => temDinheiroNaHistoria(mapa),
+    porqueNao: 'esta história não tem números com que encher a tela',
   },
   {
     comp: 'SmartCapture3DLong',
@@ -232,9 +236,42 @@ export function escolherBroll(texto, permitidas, usos = {}) {
  * tem de ser maior do que a fatura, senão a barra aparece cheia e conta uma história que
  * a voz não contou. A régua é o dobro arredondado à centena de cima. **Nunca é falado.**
  */
-function valoresDoBroll(escolha, mapa) {
+/**
+ * O rótulo de uma linha, curto o bastante para caber na tela.
+ *
+ * ⚠️ **Corta em palavra inteira e deixa reticências**, e a diferença importa: um rótulo
+ * de lista com "…" lê-se como continuação; um cortado a meio da palavra lê-se como um
+ * defeito. (Uma miniatura é outro caso — lá não se corta de todo. Ver `tituloDaCapa`.)
+ */
+function rotuloCurto(texto, maximo = 30) {
+  const t = String(texto || '').trim().replace(/\s+/g, ' ');
+  if (t.length <= maximo) return t;
+  const cortado = t.slice(0, maximo);
+  return `${cortado.slice(0, cortado.lastIndexOf(' ')).replace(/[,;:.]$/, '')}…`;
+}
+
+/**
+ * ═══ 🔴 AS LINHAS DE LANÇAMENTO TAMBÉM MOSTRAVAM DINHEIRO DE OUTRA HISTÓRIA — 10/08 ═══
+ *
+ * De manhã, esta função ensinou o **saldo grande** da tela do Extrato a receber o número
+ * da história. **As quatro linhas por baixo dele continuaram com os valores da gravação**
+ * — R$ 1.500,00 de aluguel, R$ 159,20 de luz, R$ 235,89 de supermercado — e só se viu
+ * **olhando o fotograma** do vídeo já renderizado, ao fim do dia.
+ *
+ * É a queixa nº 1 do dono um andar abaixo de onde ela foi consertada. E é a lição de que
+ * **consertar "o número" não é o mesmo que consertar "os números"**: o sítio onde se
+ * olhou ficou certo e o do lado ficou como estava.
+ *
+ * ⚠️ **As linhas passam a ser os OUTROS valores da história**, sem sinal (`neutro`): a
+ * história dá saldos, não movimentos, e pintar um saldo de verde com um `+` seria dizer
+ * que entrou dinheiro — informação que a voz não deu. Ver `ExtratoLista.tsx`.
+ */
+export function valoresDoBroll(escolha, mapa) {
   if (!escolha?.familia || !mapa) return null;
-  const daLista = (mapa.valores || []).map((v) => Number(v.valor)).filter((n) => Number.isFinite(n) && n > 0);
+  const entradas = (mapa.valores || [])
+    .map((v) => ({ nome: String(v.nome || '').trim(), valor: Number(v.valor) }))
+    .filter((v) => Number.isFinite(v.valor) && v.valor > 0);
+  const daLista = entradas.map((v) => v.valor);
   const espinha = Number(mapa.numeroEspinha);
   const valor = daLista.length ? Math.max(...daLista) : (Number.isFinite(espinha) ? espinha : null);
   if (!valor) return null;
@@ -253,8 +290,45 @@ function valoresDoBroll(escolha, mapa) {
       },
     };
   }
-  if (escolha.familia === 'extrato') return { extrato: { saldoAtualValue: valor } };
+  if (escolha.familia === 'extrato') {
+    /**
+     * ⚠️ **O MAIOR VALOR É O SALDO GRANDE, e sai da lista das linhas** — senão o mesmo
+     * número aparecia duas vezes no ecrã, uma vez em cima e outra na lista.
+     * ⚠️ **Tira-se UMA ocorrência e não todas as iguais:** se a história tiver dois
+     * valores de 300, os dois continuam a ser ditos pela voz e os dois podem aparecer.
+     */
+    const linhas = [...entradas];
+    const iMaior = linhas.findIndex((v) => v.valor === valor);
+    if (iMaior >= 0) linhas.splice(iMaior, 1);
+    return {
+      extrato: {
+        saldoAtualValue: valor,
+        // ⚠️ Quatro é o que cabe na tela sem encolher a letra. Se a história tiver mais,
+        //    entram os quatro primeiros — nenhum inventado, apenas menos.
+        transacoes: linhas.slice(0, 4).map((v) => ({
+          nome: rotuloCurto(v.nome) || 'valor da história',
+          // ⚠️ Sem categoria: a história não dá nenhuma, e inventar uma é inventar.
+          cat: '',
+          valor: dinheiro(v.valor),
+          tipo: 'neutro',
+        })),
+      },
+    };
+  }
   return null;
+}
+
+/**
+ * A história tem números com que encher uma tela de dinheiro?
+ *
+ * ⚠️ **É isto que fecha o buraco de vez.** Sem valores, `valoresDoBroll` devolvia `null`,
+ * o envelope ia vazio, e a tela saía com os números da GRAVAÇÃO — exactamente o defeito
+ * que se estava a consertar, só que num vídeo diferente. Agora, uma tela que mostra
+ * dinheiro só entra quando a história tem dinheiro para lhe pôr.
+ */
+function temDinheiroNaHistoria(mapa) {
+  const daLista = (mapa?.valores || []).map((v) => Number(v.valor)).filter((n) => Number.isFinite(n) && n > 0);
+  return daLista.length > 0 || Number.isFinite(Number(mapa?.numeroEspinha));
 }
 
 /**

@@ -45,7 +45,7 @@ import { proximoDomingo, emPortugues, palavrasChave, montarMetadados, tituloApro
 import { proximoLongo, comoArgumentos } from '../youtube/pick-next-longo.js';
 import { conferirTema, caudaDoTitulo, fazerSlug } from '../youtube/temas-longo.js';
 import {
-  conferirImagens, escolherLugaresDaFoto, brollDoVideo, escolherBroll,
+  conferirImagens, escolherLugaresDaFoto, brollDoVideo, escolherBroll, valoresDoBroll, BROLL_PERMITIDO,
 } from '../youtube/lib/imagens-longo.js';
 import {
   PAPEIS, pistaDaCena, pedidoDaFoto, pedidoDoCartaz, doBanco, guardarNoBanco, NAO_REPETIR_EM,
@@ -1697,6 +1697,73 @@ console.log('   (a família: um campo que descreve uma regra e ninguém o lê �
   ok('🔴 nenhuma tela sai mais do que 2 vezes em 6 cenas',
     Object.values(usos).every((n) => n <= 2), JSON.stringify(usos));
   ok('e as 3 telas disponíveis são todas usadas', new Set(seis).size === 3, seis.join(' '));
+
+  // ── 6. NENHUM número da GRAVAÇÃO sobrevive nas telas ──
+  /**
+   * 🔴 **CONSERTAR "O NÚMERO" NÃO É CONSERTAR "OS NÚMEROS" — 10/08/2026, ao fim do dia.**
+   *
+   * De manhã, o saldo grande da tela do Extrato aprendeu a receber o número da história.
+   * **As quatro linhas por baixo dele ficaram como estavam** — aluguel de R$ 1.500,00,
+   * luz de R$ 159,20, supermercado de R$ 235,89 — e só se viu **olhando o fotograma** do
+   * vídeo já renderizado. O sítio onde se olhou ficou certo, e o do lado ficou igual.
+   *
+   * ⚠️ **Esta prova é a régua contra os números REAIS da gravação**, lidos do catálogo:
+   * é ela que garante que não sobrou nenhum, em campo nenhum.
+   */
+  const HISTORIA = {
+    numeroEspinha: 1200,
+    valores: [
+      { nome: 'o dinheiro que a gente achava que tinha para o mês', valor: 1200 },
+      { nome: 'o saldo da conta que minha avó olhava todo dia', valor: 400 },
+      { nome: 'o saldo que estava na outra conta', valor: 300 },
+      { nome: 'o dinheiro que eu tinha separado para as contas da casa', valor: 500 },
+    ],
+  };
+  const doExtrato = valoresDoBroll(BROLL_PERMITIDO.find((b) => b.familia === 'extrato'), HISTORIA);
+  const noEcra = JSON.stringify(doExtrato);
+  ok('🔴 o saldo grande é o número da história', doExtrato.extrato.saldoAtualValue === 1200);
+  ok('e as LINHAS também são da história', doExtrato.extrato.transacoes.length === 3,
+    JSON.stringify(doExtrato.extrato.transacoes.map((t) => t.valor)));
+  /** Os números REAIS da gravação — se algum aparecer, ficou lá dentro. */
+  for (const gravado of ['3.754,91', '1.500,00', '159,20', '235,89', '6.500,00']) {
+    ok(`  nenhum vestígio de R$ ${gravado} (o valor da gravação)`, !noEcra.includes(gravado));
+  }
+  ok('as linhas não inventam sinal (`neutro`, sem + nem −)',
+    doExtrato.extrato.transacoes.every((t) => t.tipo === 'neutro' && !/^[+-]/.test(t.valor)));
+  ok('nem inventam categoria', doExtrato.extrato.transacoes.every((t) => t.cat === ''));
+  ok('e o saldo grande não se repete nas linhas',
+    !doExtrato.extrato.transacoes.some((t) => t.valor.includes('1.200')), JSON.stringify(doExtrato.extrato.transacoes));
+
+  /**
+   * 🔴 **E SEM NÚMEROS NA HISTÓRIA, A TELA NEM ENTRA.** Era aqui que o buraco ficava
+   * aberto: `valoresDoBroll` devolvia `null`, o envelope ia vazio, e a tela saía com os
+   * números da gravação — o mesmo defeito, noutro vídeo.
+   */
+  const SEM_NUMEROS = { contaDoCartao: null, valores: [] };
+  ok('🔴 sem números na história, a tela do Extrato NEM ESTÁ disponível',
+    !brollDoVideo(SEM_NUMEROS).some((b) => b.familia === 'extrato'),
+    brollDoVideo(SEM_NUMEROS).map((b) => b.comp).join(' '));
+  ok('e as telas que NÃO mostram dinheiro continuam disponíveis',
+    brollDoVideo(SEM_NUMEROS).length === 2, String(brollDoVideo(SEM_NUMEROS).length));
+  ok('a trava reprova o Extrato numa história sem números',
+    conferirImagens([{ id: 1, narration: 'o extrato mostrou tudo', visual: { tipo: 'broll', comp: 'ExtratoListaLong', brollFrames: 210 } }], SEM_NUMEROS)
+      .some((e) => /não pode entrar neste vídeo/.test(e)));
+
+  // ── 7. o rótulo das linhas corta em palavra inteira ──
+  /**
+   * ⚠️ **A REGRA DE VERDADE: o rótulo cortado é um PREFIXO que acaba onde havia um
+   * espaço.** A minha 1ª versão desta prova procurava `\w…$` — e isso é exactamente o
+   * aspecto de um corte CERTO ("…que minha…"), portanto ela reprovava o que estava bom.
+   * Uma prova que reprova o certo manda consertar o que não está partido.
+   */
+  const rotulos = doExtrato.extrato.transacoes.map((t) => t.nome);
+  const originais = HISTORIA.valores.map((v) => v.nome);
+  ok('os rótulos cabem na linha', rotulos.every((r) => r.length <= 31), rotulos.map((r) => `${r}(${r.length})`).join(' | '));
+  ok('e cortam sempre em palavra inteira, nunca a meio', rotulos.every((r) => {
+    if (!r.endsWith('…')) return originais.includes(r);
+    const inteiro = originais.find((o) => o.startsWith(r.slice(0, -1)));
+    return Boolean(inteiro) && inteiro[r.length - 1] === ' ';
+  }), rotulos.join(' | '));
 }
 
 // ═══ O LEITOR DE TEXTO, E A ORDEM QUE POUPA CRÉDITOS ═════════════════════════
