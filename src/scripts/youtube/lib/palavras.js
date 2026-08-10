@@ -156,13 +156,27 @@ export function keywordFalada(termo, falaDoGancho) {
  */
 export const MAX_PALAVRAS_ASSUNTO = 6;
 
+/**
+ * A PRIMEIRA FRASE DE UM TEXTO, LIMPA — até ao primeiro dois-pontos ou ponto final.
+ *
+ * ⚠️ **SAIU DE DENTRO DO `assuntoCurto` EM 10/08/2026, e o comportamento dele não mudou
+ * uma vírgula** — era um fecho lá dentro e passou a ser uma função com nome, porque a capa
+ * do vídeo longo precisa da MESMA limpeza sem o corte às seis palavras. Escrever a
+ * limpeza uma segunda vez era garantir que as duas divergiam, que é a família de defeito
+ * nº 1 desta casa.
+ *
+ * ⚠️ **Nunca corta a meio de uma frase** — só nas fronteiras que a pontuação já marca.
+ * Quem cortar palavras a mais faz isso por sua conta, e assume o que isso significa.
+ */
+export const primeiraFrase = (s) => String(s || '')
+  .replace(/[“”"'*]/g, '')
+  .split(/[\n:.!?]/)[0]
+  .replace(/\s+/g, ' ')
+  .trim()
+  .replace(/[,;–—-]+$/, '');
+
 export function assuntoCurto({ tema = '', titulo = '' } = {}) {
-  const limpar = (s) => String(s || '')
-    .replace(/[“”"'*]/g, '')
-    .split(/[\n:.!?]/)[0]
-    .replace(/\s+/g, ' ')
-    .trim()
-    .replace(/[,;–—-]+$/, '');
+  const limpar = primeiraFrase;
 
   const candidatos = [limpar(tema), limpar(titulo)].filter(Boolean);
   const cabe = candidatos.find((c) => c.split(/\s+/).length <= MAX_PALAVRAS_ASSUNTO);

@@ -265,8 +265,28 @@ export function escolherFuncaoDoApp(slug, gastos = []) {
 export function guardarCenarios(slug, texto, { caminho = CADERNO_DE_CENARIOS, fio = null, promessa = null, elenco = null, funcaoDoApp = null } = {}) {
   const caderno = lerCaderno(caminho);
   const cenarios = cenariosDoTexto(texto);
+  /**
+   * 🔴 O QUE JÁ ESTAVA GRAVADO NESTA LINHA NÃO SE PERDE — 10/08/2026.
+   *
+   * ═══ O DEFEITO ═══
+   * Esta função apaga a linha do vídeo e escreve uma nova. Só que **o molde da capa é
+   * escrito noutro momento e por outro programa** (`guardarMolde`, no `capa-manus.js`),
+   * na MESMA linha deste caderno — de propósito, para haver um caderno só. Ao regravar
+   * sem o trazer, **o molde desaparecia** e a rotação das capas perdia a memória.
+   *
+   * ⚠️ **No robô isto não morde**, porque o guião é escrito antes da capa. Morde quando
+   * se refaz o guião de um vídeo que já tem capa — e não dá erro nenhum: o caderno fica
+   * simplesmente a dizer que aquele vídeo não teve molde, e o vídeo seguinte pode repetir
+   * exactamente o enquadramento que acabou de sair.
+   *
+   * ⚠️ **Guarda-se o que lá estava, não uma lista de campos escrita à mão.** Uma lista
+   * teria de ser lembrada por quem acrescentar o próximo campo — que é como este defeito
+   * nasceu.
+   */
+  const jaLaEstava = (caderno.videos || []).find((v) => v.slug === slug) || {};
   const videos = (caderno.videos || []).filter((v) => v.slug !== slug);
   videos.push({
+    ...jaLaEstava,
     slug,
     cenarios,
     ...(fio ? { fio } : {}),

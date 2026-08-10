@@ -189,8 +189,47 @@ export function cenaDoFio(fio) {
  * divergem no dia em que um deles não for gravado — e foi exactamente isso que aconteceu
  * com `longo-cenarios.json`, que o robô escrevia e nunca comitava. Um sítio, um `git add`.
  */
-export function moldesGastos({ caderno = lerCaderno(), raio = 3 } = {}) {
-  return [...new Set((caderno.videos || []).slice(-raio).map((v) => v.molde).filter(Boolean))];
+/**
+ * ═══ 🔴 O MOLDE REPETIA DENTRO DA JANELA — 10/08/2026, medido ═══
+ *
+ * ═══ O QUE SE MEDIU ═══
+ * Simulados seis vídeos seguidos a partir do caderno real, o molde `heroi-central` saiu
+ * no **1º e no 6º**. A história (cena, elenco, função, metáfora) não repetia nenhuma vez;
+ * só a capa é que repetia. Ou seja: **o vídeo era novo e a miniatura já tinha sido vista.**
+ *
+ * ═══ A CAUSA, E ERA UM NÚMERO ═══
+ * Esta janela olhava **três** vídeos para trás enquanto tudo o resto olha
+ * `RAIO_DE_CENARIOS` (**seis**) — e há exactamente **seis moldes**. Com três proibidos,
+ * sobravam três livres e um deles voltava cedo demais.
+ *
+ * ⚠️ **Fica em CINCO e não em seis, e a diferença importa.** Com cinco proibidos sobra
+ * sempre um molde livre, e é esse que sai: os seis moldes passam a rodar em ciclo e
+ * **nenhum se repete dentro de seis vídeos**. Com seis proibidos não sobraria nenhum, a
+ * lista caía toda para "então escolhe à mesma", e voltava-se ao princípio.
+ *
+ * **Medido depois do conserto:** a menor distância entre duas capas do mesmo molde passou
+ * de **5** para **6** vídeos. Doze vídeos simulados, zero repetições dentro da janela.
+ */
+const RAIO_DE_MOLDES = 5;
+
+export function moldesGastos({ caderno = lerCaderno(), raio = RAIO_DE_MOLDES, slug = null } = {}) {
+  /**
+   * ═══ 🔴 O VÍDEO NÃO CONTA CONTRA SI PRÓPRIO — 10/08/2026 ═══
+   *
+   * ⚠️ **É a armadilha que o comentário do elenco diz que "já mordeu duas vezes nesta
+   * casa" — e esta função era a terceira vez, por falta da mesma linha.**
+   *
+   * Pedir a capa do mesmo vídeo outra vez lia o caderno **com a linha dele lá dentro**, e
+   * via como gasto o molde que ele próprio tinha escolhido na tentativa anterior.
+   * Medido: `heroi-central` na 1ª vez, `antes-depois` na 2ª — o que contradiz, com a capa
+   * já paga, a regra escrita em cima nesta mesma função: *"o mesmo vídeo pedido duas
+   * vezes tem de dar a mesma capa, senão refazer um vídeo muda-lhe a cara"*.
+   *
+   * ⚠️ Isto **não** impede pedir uma capa nova de propósito: para isso há `--variante`,
+   * que força o molde pelo nome. O que se conserta é a mudança que acontecia **sozinha**.
+   */
+  const anteriores = (caderno.videos || []).filter((v) => v.slug !== slug).slice(-raio);
+  return [...new Set(anteriores.map((v) => v.molde).filter(Boolean))];
 }
 
 /** Regista o molde que este vídeo usou. Nunca lança: uma capa vale mais do que um registo. */

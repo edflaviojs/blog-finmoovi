@@ -20,16 +20,35 @@
  * Uso: node src/scripts/validacao/validar-publicacao-longo.js
  */
 
-import { readFileSync, existsSync } from 'fs';
+import { readFileSync, existsSync, writeFileSync, mkdirSync } from 'fs';
 import { dirname, join, resolve } from 'path';
 import { fileURLToPath } from 'url';
+import { tmpdir } from 'os';
+
+/**
+ * ⚠️ **IMPORTAR O `capa-manus.js` NÃO GERA IMAGEM NENHUMA NEM CUSTA UM CRÉDITO.** Ele tem
+ * a guarda do `chamadoPeloNome` desde 09/08 — que nasceu exactamente de um `import` de
+ * teste ter disparado uma corrida a sério e gasto créditos. É por causa dessa guarda que
+ * estas provas podem existir.
+ */
+import { tituloDaCapa, seloDaCapa } from '../youtube/capa-manus.js';
+import { escolherMolde, moldesGastos, CENA_DA_CAPA } from '../youtube/lib/capas-do-longo.js';
+import { guardarCenarios } from '../youtube/lib/cenarios-do-longo.js';
+import { CUSTO_POR_IMAGEM, custoPorImagem } from '../youtube/lib/manus-client.js';
+import { METAPHORS } from '../youtube/lib/schema-short.js';
+import { primeiraFrase } from '../youtube/lib/palavras.js';
 
 import { iniciosDasCenas, VOZ_ENTRA_FRAMES, RESPIRO_SEC, CARTAO_CAPITULO_FRAMES } from '../youtube/srt-longo.js';
 import { proximoDomingo, emPortugues, palavrasChave, montarMetadados, tituloAprovado, acharCapa, estreiaOcupada } from '../youtube/upload-longo.js';
 import { proximoLongo, comoArgumentos } from '../youtube/pick-next-longo.js';
 import { conferirTema, caudaDoTitulo, fazerSlug } from '../youtube/temas-longo.js';
 import { conferirImagens, escolherLugaresDaFoto } from '../youtube/lib/imagens-longo.js';
-import { PAPEIS, pistaDaCena, pedidoDaFoto, pedidoDoCartaz, doBanco, guardarNoBanco, NAO_REPETIR_EM } from '../youtube/fotos-longo.js';
+import {
+  PAPEIS, pistaDaCena, pedidoDaFoto, pedidoDoCartaz, doBanco, guardarNoBanco, NAO_REPETIR_EM,
+  // ⚠️ Trazido com OUTRO NOME de propósito: a prova compara os dois lados para garantir
+  //    que continua a ser o mesmo número. Era em quatro sítios, e os quatro divergiram.
+  CUSTO_POR_IMAGEM as CUSTO_DAS_FOTOS,
+} from '../youtube/fotos-longo.js';
 import { tempoDosCapitulos, montarDescricao, conferirCapitulos, blocosDeReserva, palavrasDoVideo } from '../youtube/descricao-longo.js';
 
 const RAIZ = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
@@ -1304,6 +1323,129 @@ console.log('\n9. AS FOTOGRAFIAS AUTOMÁTICAS E O BANCO DE IMAGENS');
   ok('o pedido da fotografia proíbe QUALQUER texto legível', /NO READABLE TEXT AND NO NUMBERS AT ALL/.test(foto));
   ok('e diz o que fazer em vez disso (o ritmo das linhas, desfocado)', /RHYTHM of rows and columns/.test(foto));
   ok('e leva a frase que a voz diz naquele segundo', foto.includes(cenas[2].narration));
+}
+
+// ═══ A CAPA: O TÍTULO, O SELO, O MOLDE E O CUSTO ═════════════════════════════
+/**
+ * 🔴 AS QUATRO COISAS QUE ESTAVAM PARTIDAS NA CAPA E NÃO TOCAVAM EM PROVA NENHUMA —
+ * 10/08/2026.
+ *
+ * Todas elas atravessaram 153 provas verdes. Nenhuma dava erro: a capa saía, bonita, com
+ * o título errado, sem selo, com o molde do vídeo passado, e o orçamento a dizer que
+ * cabiam mais imagens do que cabiam. **É o modo de falha desta casa: o programa corre,
+ * escreve ✅, e faz a coisa errada.**
+ */
+console.log('\n🖼️  A CAPA — o título, o selo, o molde e o custo');
+console.log('   (as quatro coisas que estavam partidas e não tocavam em prova nenhuma)\n');
+{
+  // ── 1. o título nunca sai de uma palavra nem cortado a meio ──
+  const semTitulo = tituloDaCapa({ tema: 'Onde' });
+  ok('um tema de UMA palavra não faz capa (era o "ONDE" a toda a largura)', semTitulo.titulo === '', `deu "${semTitulo.titulo}"`);
+
+  const daCapa = tituloDaCapa({ tema: 'Onde', fraseDaCapa: 'Por que o dinheiro some antes do fim do mês?' });
+  ok('e a frase da capa do vídeo entra no lugar dele', daCapa.de === 'a frase da capa do vídeo');
+  ok('INTEIRA, e não cortada às 6 palavras', daCapa.titulo === 'POR QUE O DINHEIRO SOME ANTES DO FIM DO MÊS', `deu "${daCapa.titulo}"`);
+  /**
+   * ⚠️ **A REGRA DE VERDADE, e não uma lista de palavras suspeitas.** O que interessa não
+   * é "acaba numa preposição?" — é que o título seja **exactamente** a frase limpa da
+   * fonte, sem uma palavra cortada. Assim a prova continua a valer para frases que
+   * ninguém previu.
+   */
+  const nuncaCorta = [
+    'Por que o dinheiro some antes do fim do mês?',
+    'Você sabe para onde vai o seu décimo terceiro todos os anos?',
+    'Dívida do cartão: como sair do vermelho sem apertar mais o mês',
+    'O seu salário aguenta mais um mês assim?',
+  ].every((frase) => {
+    const r = tituloDaCapa({ fraseDaCapa: frase });
+    return r.titulo === primeiraFrase(frase).toLocaleUpperCase('pt-BR');
+  });
+  ok('o título é a frase INTEIRA da fonte — nunca corta uma palavra', nuncaCorta);
+  ok('e uma frase acima do teto é saltada, em vez de cortada',
+    tituloDaCapa({ fraseDaCapa: 'uma frase deliberadamente comprida com muito mais do que doze palavras lá dentro para forçar o caso' }).titulo === '');
+
+  const daFila = tituloDaCapa({ tituloDaFila: 'Dois homens, mesmo salário: por que só um se aposentou', tema: 'um tema qualquer' });
+  ok('o título da fila manda sobre o tema (é a frase que o dono aprovou)', daFila.de === 'o título da fila' && daFila.titulo === 'DOIS HOMENS, MESMO SALÁRIO', `deu "${daFila.titulo}"`);
+  ok('e sem fonte nenhuma não se paga capa', tituloDaCapa({}).titulo === '');
+
+  // ── 2. o selo lê o número onde ele VIVE, e não onde não está ──
+  /**
+   * ⚠️ Esta prova usa a forma REAL dos dois ficheiros, medida em 10/08: o guião montado
+   * não tem `mapa` nenhum, e o caderno tem. Escrever aqui um guião com `mapa` faria a
+   * prova ficar verde sobre uma coisa que não existe — que é como o defeito sobreviveu.
+   */
+  const guiaoMontado = { slug: 'x', formato: 'longo', tema: 'x', promessa: 'x', fioCondutor: 'balanca', capa: 'x?', capitulos: [], scenes: [], palavras: 1 };
+  const cadernoReal = { mapa: { numeroEspinha: 1200, fichaDeDivida: null } };
+  const s = seloDaCapa({ ficha: null, caderno: cadernoReal, roteiro: guiaoMontado });
+  ok('🔴 sem ficha de cartão, o selo sai do NÚMERO-ESPINHA do caderno', s && s.valor === 1200 && s.rotulo === 'POR MÊS', JSON.stringify(s));
+  ok('e o guião montado sozinho não tem o número (era aí que se procurava)', guiaoMontado.mapa === undefined);
+  ok('com ficha de cartão, ganha o "A MAIS"', seloDaCapa({ ficha: { aMais: 614 }, caderno: cadernoReal, roteiro: guiaoMontado })?.rotulo === 'A MAIS');
+  ok('🔴 sem caderno (sobra órfã), a capa sai SEM selo — nunca se inventa número', seloDaCapa({ ficha: null, caderno: null, roteiro: guiaoMontado }) === null);
+  ok('e um número pequeno demais não vira selo', seloDaCapa({ ficha: null, caderno: { mapa: { numeroEspinha: 3 } }, roteiro: {} }) === null);
+
+  // ── 3. o molde da capa não se repete dentro da janela dos 6 vídeos ──
+  /**
+   * ⚠️ **Seis vídeos, que é a janela da história.** Antes disto a janela dos moldes era de
+   * três, e o `heroi-central` voltava ao 6º vídeo — a história era nova e a miniatura já
+   * tinha sido vista.
+   */
+  const nomes = ['um-video', 'outro-video', 'terceiro-video', 'quarto-video', 'quinto-video', 'sexto-video', 'setimo-video', 'oitavo-video'];
+  let cad = { videos: [] };
+  const saidos = [];
+  for (const n of nomes) {
+    const m = escolherMolde(n, moldesGastos({ caderno: cad, slug: n }));
+    saidos.push(m.nome);
+    cad = { videos: [...cad.videos, { slug: n, molde: m.nome }] };
+  }
+  const primeirosSeis = saidos.slice(0, 6);
+  ok('seis vídeos seguidos dão seis moldes DIFERENTES', new Set(primeirosSeis).size === 6, primeirosSeis.join(' '));
+  let menorDistancia = 99;
+  for (let i = 0; i < saidos.length; i++) {
+    for (let j = i + 1; j < saidos.length; j++) if (saidos[i] === saidos[j]) menorDistancia = Math.min(menorDistancia, j - i);
+  }
+  ok('e um molde nunca volta antes de 6 vídeos', menorDistancia >= 6, `voltou ao fim de ${menorDistancia}`);
+
+  /**
+   * 🔴 A ARMADILHA QUE JÁ MORDEU TRÊS VEZES NESTA CASA: o vídeo contar-se a si próprio
+   * como gasto. No elenco e na função tinha guarda; no molde não tinha.
+   */
+  const semEle = escolherMolde('um-video', moldesGastos({ caderno: { videos: [] }, slug: 'um-video' })).nome;
+  const comEle = escolherMolde('um-video', moldesGastos({ caderno: { videos: [{ slug: 'um-video', molde: semEle }] }, slug: 'um-video' })).nome;
+  ok('🔴 refazer a capa do MESMO vídeo dá o MESMO molde', semEle === comEle, `${semEle} → ${comEle}`);
+
+  // ── 4. o caderno não perde o molde quando o guião é reescrito ──
+  /**
+   * ⚠️ `guardarCenarios` apaga a linha do vídeo e escreve outra. O molde é gravado por
+   * outro programa, na MESMA linha — e desaparecia. Aqui grava-se num ficheiro de
+   * rascunho, para a prova não mexer no caderno a sério.
+   */
+  // ⚠️ Fora do repositório, de propósito: uma prova NUNCA escreve no caderno a sério nem
+  //    deixa lixo por comitar. `tmpdir()` é limpo pelo sistema.
+  const rascunho = join(tmpdir(), 'finmoovi-prova-caderno-longo.json');
+  mkdirSync(dirname(rascunho), { recursive: true });
+  writeFileSync(rascunho, `${JSON.stringify({ videos: [{ slug: 'v', cenarios: [], molde: 'o-cerco', elenco: 'uma mãe de família' }] }, null, 2)}\n`, 'utf-8');
+  guardarCenarios('v', 'um texto qualquer sobre o mercado', { caminho: rascunho, fio: 'balanca' });
+  const depoisDeRegravar = JSON.parse(readFileSync(rascunho, 'utf-8')).videos.find((x) => x.slug === 'v');
+  ok('🔴 reescrever o guião NÃO apaga o molde já gravado', depoisDeRegravar.molde === 'o-cerco', JSON.stringify(depoisDeRegravar));
+  ok('e o fio novo entra na mesma', depoisDeRegravar.fio === 'balanca');
+
+  // ── 5. o custo por imagem é UM número só, e é o medido ──
+  /**
+   * ⚠️ Ele viveu em quatro sítios e as quatro cópias divergiram: 52, 52, 52 e "~48",
+   * quando o medido são ~82. Por isso o orçamento prometia 6 imagens onde cabiam 4.
+   */
+  ok('o custo por imagem é o MEDIDO em 10/08, e não o de 04/08', CUSTO_POR_IMAGEM === 82, `está ${CUSTO_POR_IMAGEM}`);
+  ok('e o `fotos-longo.js` usa exactamente o mesmo número', CUSTO_DAS_FOTOS === CUSTO_POR_IMAGEM);
+  ok('a conta do orçamento acerta nas 4 imagens de 329 créditos', Math.floor(329 / CUSTO_POR_IMAGEM) === 4, `deu ${Math.floor(329 / CUSTO_POR_IMAGEM)}`);
+  ok('e com o número antigo teria prometido 6 (era este o defeito)', Math.floor(329 / 52) === 6);
+  ok('a medição do custo real bate: 329 em 4 pedidos → 82', custoPorImagem(400, 71, 4) === 82, String(custoPorImagem(400, 71, 4)));
+  ok('e não inventa número quando não há como saber', custoPorImagem(100, 100, 4) === null && custoPorImagem(100, 90, 0) === null);
+
+  // ── 6. nenhuma metáfora do catálogo fica sem cena de capa ──
+  const semCena = METAPHORS
+    .map((m) => (typeof m === 'string' ? m : m.id))
+    .filter((m) => m && m !== 'clique-link' && !CENA_DA_CAPA[m]);
+  ok('todas as metáforas do catálogo têm cena de capa escrita', semCena.length === 0, semCena.join(', '));
 }
 
 // ═══ RESULTADO ═══════════════════════════════════════════════════════════════

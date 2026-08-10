@@ -23,7 +23,8 @@
  * uma conta que se esgota a meio de uma corrida do robô é um vídeo sem capa, e ninguém
  * daria por isso a ler o registo.
  *
- * ⚠️ **NADA DISTO ENTRA NO ROBÔ DIÁRIO.** É chamado à mão, por enquanto.
+ * ⚠️ **NADA DISTO ENTRA NO ROBÔ DIÁRIO (o do Short).** Entra no do vídeo longo, que corre
+ * uma vez por semana: as fotografias desde 09/08 e a capa desde 10/08/2026.
  */
 
 const BASE = 'https://api.manus.ai';
@@ -62,8 +63,45 @@ async function pedir(caminho, { metodo = 'POST', corpo } = {}) {
  * tinha 40. Por isso aqui ele chama-se `restaHoje`, e o teto (`max_refresh_credits`)
  * vem à parte.
  *
- * Custo medido em 04/08/2026: **52 créditos por imagem** — ou seja, 5 a 6 por dia grátis.
+ * O custo por imagem vive em `CUSTO_POR_IMAGEM`, aqui em baixo.
  */
+/**
+ * ═══ 🔴 O CUSTO ESTAVA ERRADO, E POR ISSO O ORÇAMENTO NUNCA AVISOU — 10/08/2026 ═══
+ *
+ * ═══ O QUE ACONTECEU ═══
+ * O programa acreditava em **52 créditos por imagem**, medido em 04/08 com uma tarefa só.
+ * Em 10/08 o dono mediu quatro imagens numa corrida: **329 créditos, ~82 cada.** Com o 52,
+ * a conta `créditos ÷ custo` prometia **6** imagens onde cabiam **4** — e por isso o
+ * orçamento acabou a meio da corrida **sem nunca ter avisado**. O aviso existia; o número
+ * que ele usava é que estava errado.
+ *
+ * ⚠️ **E O NÚMERO VIVIA EM QUATRO SÍTIOS**, que é a família de defeito nº 1 desta casa:
+ * um `const` em `fotos-longo.js`, um `52` escrito à mão no `--creditos` do `capa-manus.js`,
+ * um comentário aqui, e um "~48" solto noutro comentário. Quatro cópias divergem sempre —
+ * e divergiram. **Agora é um sítio só, e quem precisar dele importa-o.**
+ *
+ * ⚠️ **82 é uma MÉDIA de quatro imagens, não uma lei.** Por isso o programa passou a
+ * escrever, no fim de cada corrida, quanto custou de VERDADE por imagem (ver
+ * `custoPorImagem`). Quando esse número se afastar deste, corrige-se este — com medição,
+ * como se corrigiu hoje, e não com palpite.
+ *
+ * ⚠️ **Não se arredondou para cima "por segurança".** A 90, a conta diria 3 imagens onde
+ * cabem 4, e o dono perderia uma imagem por corrida por causa de uma margem inventada. A
+ * régua é o que se mediu; quem quiser folga, tira-a do resultado, não da régua.
+ */
+export const CUSTO_POR_IMAGEM = 82;
+
+/**
+ * Quanto custou, de verdade, por imagem — para o número aqui de cima nunca mais envelhecer
+ * em silêncio. Devolve `null` quando não dá para saber (nenhuma imagem, ou o saldo subiu
+ * por causa da renovação do dia ter caído no meio da corrida).
+ */
+export function custoPorImagem(livresAntes, livresDepois, quantasImagens) {
+  const gasto = Number(livresAntes) - Number(livresDepois);
+  if (!Number.isFinite(gasto) || gasto <= 0 || !quantasImagens) return null;
+  return Math.round(gasto / quantasImagens);
+}
+
 export async function creditos() {
   const j = await pedir('/v2/usage.availableCredits', { metodo: 'GET' });
   return {

@@ -49,7 +49,9 @@ import * as fs from 'node:fs';
 import { join } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { execFileSync } from 'node:child_process';
-import { creditos, pedirAgente, descarregar } from './lib/manus-client.js';
+import {
+  creditos, pedirAgente, descarregar, CUSTO_POR_IMAGEM, custoPorImagem,
+} from './lib/manus-client.js';
 
 const ROOT = process.cwd();
 const ROTEIRO_DIR = join(ROOT, 'youtube-render', 'public', 'roteiro');
@@ -58,8 +60,12 @@ const MANUS_DIR = join(ROOT, 'youtube-render', 'public', 'manus');
 const CATALOGO = join(ROOT, '.github', 'data', 'fotos-do-longo.json');
 const BANCO = join(ROOT, '.github', 'data', 'banco-de-imagens.json');
 
-/** ⚠️ Medido em 04/08: **52 créditos por imagem**, e a conta grátis renova 300 por dia. */
-const CUSTO_POR_IMAGEM = 52;
+/**
+ * ⚠️ **O CUSTO SAIU DAQUI — 10/08/2026.** Era um `const 52` local, e havia outras três
+ * cópias do mesmo número noutros ficheiros. Medido em 10/08: **~82 créditos por imagem**,
+ * e com o 52 esta conta prometia 6 imagens onde cabiam 4 — foi assim que o orçamento
+ * acabou a meio sem avisar. Agora vem do `manus-client.js`, que é quem fala com a conta.
+ */
 /** A regra do dono: não repetir nos últimos N vídeos. Com um por semana, são dois meses. */
 const NAO_REPETIR_EM = 8;
 
@@ -427,10 +433,18 @@ async function principal() {
 
   // ── medir os créditos ANTES, e gerar só o que couber ──
   let cabem = paraGerar.length;
+  /**
+   * ⚠️ **O SALDO DE ANTES GUARDA-SE PARA SE MEDIR O CUSTO REAL NO FIM** — 10/08/2026.
+   * O `CUSTO_POR_IMAGEM` esteve dois meses errado (52 contra os 82 reais) porque nada
+   * voltava a medi-lo. Agora cada corrida diz quanto custou de verdade.
+   */
+  let livresAntes = null;
+  let pagas = 0;
   if (paraGerar.length) {
     const c = await creditos();
+    livresAntes = c.livres;
     cabem = Math.min(paraGerar.length, Math.floor(c.total / CUSTO_POR_IMAGEM));
-    log(`\n💳 ${c.total} créditos (${c.restaHoje} da renovação de hoje) → dá para ${Math.floor(c.total / CUSTO_POR_IMAGEM)} imagem(ns)`);
+    log(`\n💳 ${c.total} créditos (${c.restaHoje} da renovação de hoje) → a ${CUSTO_POR_IMAGEM} por imagem, dá para ${Math.floor(c.total / CUSTO_POR_IMAGEM)} imagem(ns)`);
     if (cabem < paraGerar.length) {
       log(`   ⚠️ faltam créditos para ${paraGerar.length - cabem} — este vídeo sai com menos fotografias, e isso é melhor do que ficar à espera.`);
     }
@@ -494,6 +508,9 @@ async function principal() {
       };
 
       porGastar -= 1;
+      // ⚠️ Conta-se a TENTATIVA, e não a imagem que ficou boa: uma recusada custou
+      //    exactamente o mesmo. Dividir o gasto pelas boas dava um custo inflacionado.
+      pagas += 1;
       let r;
       try {
         r = await pedirAgente(pedido, { titulo: `FinMoovi · ${slug} · ${nome} · ${tentativa}`, aoAndar: (m) => log(`      ${m}`) });
@@ -568,6 +585,30 @@ async function principal() {
   if (recusadas.length) {
     log(`\n🚧 ${recusadas.length} imagem(ns) recusada(s) — guardadas na quarentena do banco, não se perderam:`);
     for (const r of recusadas) log(`   · ${r.papel} (tentativa ${r.tentativa}): ${r.motivo}`);
+  }
+
+  /**
+   * 🔴 QUANTO CUSTOU DE VERDADE — 10/08/2026, e é o que impede o `CUSTO_POR_IMAGEM` de
+   * envelhecer outra vez em silêncio.
+   *
+   * ⚠️ **Vem ANTES do `return` das zero fotografias, de propósito:** é justamente na
+   * corrida em que tudo foi recusado que mais se gastou sem nada a mostrar. Sair antes de
+   * escrever isto seria pagar e não registar.
+   *
+   * ⚠️ **Nunca parte a corrida.** Se a leitura do saldo falhar, fica sem o número — não
+   * fica sem as fotografias que já estão em disco.
+   */
+  if (livresAntes !== null && pagas) {
+    try {
+      const fim = await creditos();
+      const real = custoPorImagem(livresAntes, fim.livres, pagas);
+      if (real) {
+        log(`\n💳 custou ${livresAntes - fim.livres} créditos em ${pagas} pedido(s) → ${real} por imagem (a régua diz ${CUSTO_POR_IMAGEM})`);
+        if (Math.abs(real - CUSTO_POR_IMAGEM) > 15) {
+          log(`   ⚠️ a régua está a ${Math.abs(real - CUSTO_POR_IMAGEM)} créditos da realidade — corrija CUSTO_POR_IMAGEM em lib/manus-client.js.`);
+        }
+      }
+    } catch { /* sem saldo lido, fica sem o número — as imagens já estão feitas */ }
   }
 
   if (!feitas.length) {

@@ -22,7 +22,11 @@
  * vídeo, nunca escrito à mão aqui. Um cartaz com um número inventado seria pior do que
  * cartaz nenhum.
  *
- * ⚠️ **NÃO ENTRA NO ROBÔ DIÁRIO.** Corre-se à mão, e conta os créditos gastos.
+ * ⚠️ **NÃO ENTRA NO ROBÔ DIÁRIO (o do Short) — mas ENTRA no do vídeo longo, desde
+ * 10/08/2026.** O `youtube-longo.yml` chama-o com `--so=capa` entre as fotografias e o
+ * commit. Antes disso o programa existia e **nenhum workflow o corria**: todas as capas
+ * do canal tinham sido feitas à mão, e os vídeos automáticos subiam sem miniatura própria
+ * com a corrida a acabar a verde.
  *
  * Uso:
  *   node --env-file=.env.local src/scripts/youtube/capa-manus.js --slug=sair-do-vermelho
@@ -48,8 +52,10 @@ import { fileURLToPath, pathToFileURL } from 'url';
  * É a §42.5 noutro sítio: *o script correu, disse quase-✅, e não fez o trabalho.*
  */
 import { execFileSync } from 'child_process';
-import { creditos, pedirAgente, descarregar } from './lib/manus-client.js';
-import { assuntoCurto } from './lib/palavras.js';
+import {
+  creditos, pedirAgente, descarregar, CUSTO_POR_IMAGEM, custoPorImagem,
+} from './lib/manus-client.js';
+import { primeiraFrase, MAX_PALAVRAS_CAPA_LONGO } from './lib/palavras.js';
 import {
   MOLDES, escolherMolde, cenaDoFio, moldesGastos, guardarMolde,
 } from './lib/capas-do-longo.js';
@@ -205,11 +211,119 @@ ${REGRAS_FIXAS}`,
   ];
 }
 
+/**
+ * 🔴 UM TÍTULO DE UMA PALAVRA JÁ CHEGOU A SAIR DAQUI — 10/08/2026.
+ *
+ * ═══ O QUE SE MEDIU ═══
+ * No vídeo `onde-o-salario-some`, o `tema` do guião é a palavra **"Onde"** — o resto
+ * perdeu-se na altura em que a corrida foi lançada à mão. Metido nesta conta, o resultado
+ * era uma miniatura com a palavra **"ONDE"** escrita a toda a largura, paga a ~82
+ * créditos, e o programa **não se queixava**: "Onde" cabe no limite de palavras, portanto
+ * passava por boa.
+ *
+ * ⚠️ **`assuntoCurto` escolhe o primeiro candidato que CABE, e caber não é ser um
+ * título.** Ela está certa para o que faz — é a conta do ASSUNTO, o que vai à descrição e
+ * às etiquetas — e não se mexe nela sem mexer no Short. O que faltava era **julgar o
+ * resultado antes de o pagar**, e é isso que esta função é.
+ *
+ * ═══ 🔴 E ELA NÃO SERVE PARA A CAPA, POR UMA SEGUNDA RAZÃO, MEDIDA ═══
+ * `assuntoCurto` corta às **seis palavras**. Posta a trabalhar sobre a frase da capa deste
+ * vídeo, devolveu **"POR QUE O DINHEIRO SOME ANTES"** — uma frase pendurada, cortada a
+ * meio, para pôr em letras enormes na miniatura do canal. Um título cortado a meio é tão
+ * mau como um título de uma palavra; só é mais difícil de ver.
+ *
+ * ⚠️ **Portanto aqui não se corta nada.** Usa-se a MESMA limpeza (`primeiraFrase`, que
+ * saiu de dentro do `assuntoCurto` para não haver duas cópias da regra) e aceita-se a
+ * frase **inteira** — ou não se aceita. O teto é `MAX_PALAVRAS_CAPA_LONGO`, que é o mesmo
+ * teto que a frase da capa já obedece dentro do vídeo: se cabe na tela, cabe na miniatura.
+ *
+ * ═══ A ORDEM DAS FONTES, E PORQUÊ ═══
+ *   1. **o título da fila** — é a frase que o dono escreveu e aprovou;
+ *   2. **o tema do guião** — o que o robô recebeu como tarefa;
+ *   3. **a frase da capa do vídeo** — a pergunta que já aparece ESCRITA no ecrã aos
+ *      primeiros segundos. Nunca passa de 12 palavras (lei desde 10/08) e é, à letra, a
+ *      manchete do vídeo. É a rede por baixo das outras duas, e a que nunca falha.
+ *
+ * Ganha a primeira que der uma frase inteira entre três e doze palavras.
+ *
+ * ⚠️ **Se nenhuma der, devolve vazio e NÃO SE PAGA A CAPA.** Uma miniatura a dizer "ONDE"
+ * fica na lista do canal para sempre; sem miniatura, o YouTube escolhe um fotograma do
+ * próprio vídeo. Das duas, a segunda é a menos má — e no robô isto vira um aviso, não uma
+ * corrida morta (o passo do workflow acaba em `|| echo ::warning`).
+ *
+ * ⚠️ **VIVE FORA DO `main` de propósito.** Estava lá dentro, e por isso nenhuma prova lhe
+ * chegava — foi assim que o "ONDE" atravessou 153 provas verdes sem tocar em nenhuma.
+ */
+export const MINIMO_DE_PALAVRAS_NO_TITULO = 3;
+
+export function tituloDaCapa({ tituloDaFila = '', tema = '', fraseDaCapa = '' } = {}, aoSaltar = () => {}) {
+  const fontes = [
+    { de: 'o título da fila', texto: tituloDaFila },
+    { de: 'o tema do guião', texto: tema },
+    { de: 'a frase da capa do vídeo', texto: fraseDaCapa },
+  ];
+  for (const f of fontes) {
+    if (!f.texto) continue;
+    const t = primeiraFrase(f.texto);
+    const n = t.split(/\s+/).filter(Boolean).length;
+    if (n >= MINIMO_DE_PALAVRAS_NO_TITULO && n <= MAX_PALAVRAS_CAPA_LONGO) {
+      return { titulo: t.toLocaleUpperCase('pt-BR'), de: f.de };
+    }
+    aoSaltar(
+      n < MINIMO_DE_PALAVRAS_NO_TITULO
+        ? `${f.de} dava "${t}" — ${n} palavra(s), curto demais para uma miniatura`
+        : `${f.de} dava ${n} palavras — comprido demais, e cortá-lo deixaria a frase pendurada`,
+    );
+  }
+  return { titulo: '', de: '' };
+}
+
+/**
+ * 🔴 O NÚMERO-ESPINHA ESTAVA A SER PROCURADO NO FICHEIRO ERRADO — 10/08/2026.
+ *
+ * ═══ O DEFEITO, E ELE NÃO SE QUEIXAVA ═══
+ * Isto lia `roteiro.mapa.numeroEspinha` do guião **montado**
+ * (`youtube-render/public/roteiro/<slug>.json`) — e esse ficheiro **não tem `mapa`
+ * nenhum**. As chaves dele são `slug, formato, tema, promessa, fioCondutor, capa,
+ * capitulos, scenes, palavras`. O montador não o copia para lá.
+ *
+ * Portanto a rede de segurança escrita em 09/08 — *"sem ficha usa-se o número-espinha do
+ * próprio vídeo"* — **nunca chegou a apanhar nada**. `Number(undefined)` dá `NaN`,
+ * `Number.isFinite(NaN)` dá falso, e a capa saía **sem selo**, em silêncio, com uma linha
+ * a dizer "sem número no guião" que não era verdade.
+ *
+ * ⚠️ **Medido no vídeo `onde-o-salario-some`:** `fichaDeDivida: null` (não é história de
+ * cartão) e `numeroEspinha: 1200` no caderno. O número existia, estava a dois passos
+ * daqui, e a capa ia sair sem o selo que trava o dedo de quem passa.
+ *
+ * ⚠️ **É a mesma família do defeito §67.7 nº 4:** uma regra a ler um número de um ficheiro
+ * que não é o que o tem. O conserto é ler onde ele vive — o caderno, que o programa **já
+ * abre** para tirar a ficha de juros. Não se abre ficheiro novo nenhum.
+ *
+ * ⚠️ **E o caderno só vale com o guião ao lado** (ver a nota do caderno órfão): quem
+ * chama já entrega `caderno = null` quando é sobra de uma corrida antiga. Sem os dois,
+ * fica sem selo — que é a regra certa: **nunca se inventa número**.
+ */
+export function seloDaCapa({ ficha = null, caderno = null, roteiro = {} } = {}) {
+  const aMais = ficha?.aMais || null;
+  if (aMais) return { valor: aMais, rotulo: 'A MAIS' };
+  const espinha = Number(
+    caderno?.mapa?.numeroEspinha
+    ?? caderno?.numeroEspinha
+    ?? roteiro?.mapa?.numeroEspinha
+    ?? roteiro?.numeroEspinha,
+  );
+  // ⚠️ O piso de 10 existe para um "3" solto no guião não virar um selo a dizer "R$ 3".
+  return Number.isFinite(espinha) && espinha >= 10 ? { valor: espinha, rotulo: 'POR MÊS' } : null;
+}
+
 async function main() {
   if (args.creditos) {
     const c = await creditos();
     console.log(`\n💳 créditos: ${c.total} ao todo · ${c.restaHoje} ainda por gastar hoje (de ${c.porDia}/dia) · ${c.livres} de saldo próprio`);
-    console.log(`   a 52 créditos por imagem, dá para mais ${Math.floor(c.total / 52)} imagem(ns)\n`);
+    // ⚠️ O 52 estava escrito à mão AQUI e num `const` noutro ficheiro — duas cópias do
+    //    mesmo número, e as duas erradas. Agora é o do `manus-client.js`, medido em 10/08.
+    console.log(`   a ${CUSTO_POR_IMAGEM} créditos por imagem, dá para mais ${Math.floor(c.total / CUSTO_POR_IMAGEM)} imagem(ns)\n`);
     return;
   }
 
@@ -290,22 +404,29 @@ async function main() {
      * e errada. É o mesmo defeito de família que o `FOTOS_POR_VIDEO` tinha em
      * `imagens-longo.js`, e que reprovava todos os vídeos menos o piloto.
      *
-     * Agora sai do TEMA do guião, que é a frase que o dono aprovou na fila. Corta-se
-     * no primeiro dois-pontos (o tema tem a forma "Título: a explicação") e limita-se a
-     * seis palavras — uma miniatura com uma frase inteira não se lê no telemóvel.
-     */
-    /**
-     * ⚠️ **`assuntoCurto`, A MESMA CONTA DA DESCRIÇÃO E DAS ETIQUETAS** — 09/08/2026.
-     * Aqui estava escrito à mão "as 6 primeiras palavras do tema até ao dois-pontos", o
-     * que num tema de um parágrafo dava uma capa a dizer
-     * **"DOIS HOMENS, MESMA IDADE, MESMO TRABALHO,"**. Três sítios com a mesma regra
-     * escrita três vezes divergem sempre; agora é uma conta só, e o título da fila entra
-     * como segunda hipótese.
+     * Passou então a sair do TEMA do guião, cortado às seis palavras pelo `assuntoCurto`
+     * — a mesma conta da descrição e das etiquetas, para não haver três cópias da regra.
+     *
+     * ⚠️ **E EM 10/08 ISSO MOSTROU-SE ERRADO PARA A CAPA, com duas medições:** um tema de
+     * uma palavra dava a miniatura **"ONDE"**, e o corte às seis palavras dava
+     * **"POR QUE O DINHEIRO SOME ANTES"** — pendurada a meio. A conta do ASSUNTO não é a
+     * conta do TÍTULO. A escolha vive agora em `tituloDaCapa`, fora do `main`, com as
+     * três fontes por ordem e o teto de 12 palavras. Ver a nota lá em cima.
      */
     const naFila = (lerFilaDeTemas().videos || []).find((v) => v.slug === slug) || {};
-    const titulo = assuntoCurto({ tema: roteiro.tema, titulo: naFila.titulo })
-      .toLocaleUpperCase('pt-BR');
-    if (!titulo) throw new Error('o guião não tem "tema" — sem título não se faz a capa');
+    // A conta e o porquê estão em `tituloDaCapa`, lá em cima — fora do `main` para a
+    // prova lhe poder chegar, que é o que faltava quando o "ONDE" passou.
+    const { titulo, de: deOnde } = tituloDaCapa(
+      { tituloDaFila: naFila.titulo, tema: roteiro.tema, fraseDaCapa: roteiro.capa },
+      (m) => console.log(`   ⏭️  ${m}`),
+    );
+    if (!titulo) {
+      throw new Error(
+        'nenhuma fonte deu um título com mais de duas palavras (fila, tema, frase da capa) '
+        + '— a capa NÃO se faz, para não gastar créditos numa miniatura que não diz nada',
+      );
+    }
+    console.log(`   ✍️  título da capa: "${titulo}" (de ${deOnde})`);
     /**
      * 🔴 SEM A FICHA DE JUROS, A CAPA JÁ NÃO PARA — 09/08/2026, ordem do dono:
      * *"nunca parar e não gerar"*.
@@ -321,12 +442,11 @@ async function main() {
      * em vez de "A MAIS". Se nem espinha houver, a capa sai **sem o selo** — uma capa
      * com um selo a menos é uma capa; uma capa com um número inventado é uma mentira.
      */
-    const aMais = ficha?.aMais || null;
-    const espinha = Number(roteiro.mapa?.numeroEspinha ?? roteiro.numeroEspinha);
-    selo = aMais
-      ? { valor: aMais, rotulo: 'A MAIS' }
-      : (Number.isFinite(espinha) && espinha >= 10 ? { valor: espinha, rotulo: 'POR MÊS' } : null);
-    if (!selo) console.log('   ⚠️ sem número no guião — a capa sai sem o selo vermelho (nada é inventado).');
+    // ⚠️ A conta, e o defeito que ela conserta, estão em `seloDaCapa`, lá em cima: o
+    //    número-espinha era procurado no guião montado, que NÃO o tem. Ver a nota lá.
+    selo = seloDaCapa({ ficha, caderno, roteiro });
+    if (!selo) console.log('   ⚠️ sem número no guião nem no caderno — a capa sai sem o selo vermelho (nada é inventado).');
+    else console.log(`   🔖 selo: R$ ${selo.valor} ${selo.rotulo}`);
     /**
      * 🔴 A CENA SAI DA METÁFORA DO VÍDEO, E O MOLDE RODA — 09/08/2026.
      *
@@ -342,7 +462,9 @@ async function main() {
      */
     const fio = roteiro.fioCondutor || roteiro.mapa?.fioCondutor || null;
     const forcado = args.variante && args.variante !== true ? String(args.variante) : null;
-    molde = (forcado && MOLDES.find((m) => m.nome === forcado)) || escolherMolde(slug, moldesGastos());
+    // ⚠️ `slug` vai lá dentro para o vídeo não contar o molde DELE PRÓPRIO como gasto —
+    //    ver a nota de `moldesGastos`. Sem ele, pedir a capa outra vez mudava o molde.
+    molde = (forcado && MOLDES.find((m) => m.nome === forcado)) || escolherMolde(slug, moldesGastos({ slug }));
     if (forcado && !MOLDES.find((m) => m.nome === forcado)) {
       console.log(`   ⚠️ não há molde "${forcado}". Os que existem: ${MOLDES.map((m) => m.nome).join(', ')}. Vai o escolhido pelo nome do vídeo.`);
     }
@@ -366,9 +488,10 @@ async function main() {
     }
   }
 
-  // ⚠️ Refazer UMA imagem sem pagar as outras outra vez. Cada pedido custa ~48 créditos
-  // dos 300 que a conta grátis renova por dia — refazer as quatro por causa de uma seria
-  // metade do orçamento do dia deitado fora.
+  // ⚠️ Refazer UMA imagem sem pagar as outras outra vez. Cada pedido custa ~82 créditos
+  // (medido em 10/08 — aqui dizia "~48", que era a terceira cópia errada do mesmo número)
+  // dos 300 que a conta grátis renova por dia: refazer as quatro por causa de uma seria
+  // MAIS do que o orçamento do dia inteiro deitado fora.
   const apenas = args.apenas && args.apenas !== true ? String(args.apenas) : null;
   const fila = apenas ? trabalhos.filter((t) => t.ficheiro.includes(apenas)) : trabalhos;
   if (apenas && !fila.length) throw new Error(`"--apenas=${apenas}" não bate com nenhum pedido`);
@@ -408,9 +531,13 @@ async function main() {
     return { ok: false, porque: `o selo devia dizer R$ ${alvo} ${selo.rotulo} e leu-se: ${lido.slice(0, 120)}` };
   };
 
+  /** Quantos pedidos foram mesmo pagos — é o divisor da conta do custo real, lá em baixo.
+   *  ⚠️ Conta-se a TENTATIVA e não a imagem boa: uma recusada custou o mesmo. */
+  let pedidos = 0;
   for (const t of fila) {
     console.log(`🖼️  ${t.ficheiro} — ${t.onde}`);
     try {
+      pedidos += 1;
       /**
        * A tentativa vai no título da tarefa, como já vai no `fotos-longo.js`. Serve para
        * distinguir corridas no painel da Manus.
@@ -443,7 +570,7 @@ async function main() {
          * *"essa capa que gerou tem que ir pro nosso banco de imagens que poderá ser
          * usada no futuro, e tem que gerar outra"*.
          *
-         * Correr isto outra vez escrevia POR CIMA da anterior. Cada capa custa 52
+         * Correr isto outra vez escrevia POR CIMA da anterior. Cada capa custa ~82
          * créditos; uma que não agradou hoje pode servir noutro vídeo, e a que era boa
          * desaparecia sem ninguém dar por nada. Agora a nova ganha um número e as
          * antigas ficam todas na pasta.
@@ -527,7 +654,7 @@ async function main() {
   /**
    * 🔴 O QUE FOI RECUSADO VAI PARA O BANCO — ordem do dono: *"essa capa que gerou tem
    * que ir pro nosso banco de imagens que poderá ser usada no futuro, e tem que gerar
-   * outra"*. Custou 52 créditos; não se deita fora sem registo.
+   * outra"*. Custou ~82 créditos; não se deita fora sem registo.
    *
    * ⚠️ **Vai para `recusadas`, a prateleira de onde nenhum robô escolhe sozinho** — a
    * mesma que o `fotos-longo.js` usa. Uma capa com o número errado não pode voltar a
@@ -549,6 +676,19 @@ async function main() {
 
   const depois = await creditos();
   console.log(`\n💳 créditos depois: ${depois.livres} livres — gastou ${antes.livres - depois.livres}`);
+  /**
+   * ⚠️ **QUANTO CUSTOU POR IMAGEM, MEDIDO** — 10/08/2026. O `CUSTO_POR_IMAGEM` esteve
+   * errado em 30 créditos durante dois meses porque ninguém o voltou a medir. Esta linha
+   * é o que faz o erro aparecer da próxima vez, em vez de esperar por outra corrida
+   * interrompida a meio.
+   */
+  const real = custoPorImagem(antes.livres, depois.livres, pedidos);
+  if (real) {
+    console.log(`   → ${real} por imagem em ${pedidos} pedido(s) (a régua diz ${CUSTO_POR_IMAGEM})`);
+    if (Math.abs(real - CUSTO_POR_IMAGEM) > 15) {
+      console.log(`   ⚠️ a régua está a ${Math.abs(real - CUSTO_POR_IMAGEM)} créditos da realidade — corrija CUSTO_POR_IMAGEM em lib/manus-client.js.`);
+    }
+  }
   console.log(`📁 ${destino}\n`);
 }
 
