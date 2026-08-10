@@ -1,0 +1,117 @@
+{
+  "slug": "loop-seguro-venceu-ta-perdendo",
+  "formato": "loop16",
+  "term": "O seguro que venceu",
+  "category": "vida",
+  "keyword": "SEGURO",
+  "situacao": "seguro-venceu",
+  "gancho": "ta-perdendo",
+  "ganchoFamilia": "tá perdendo",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "escudo",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se você ainda deixa seguro vencer, tá perdendo proteção. Vi a mensagem do corretor.",
+      "durationSec": 5.07,
+      "shots": [
+        {
+          "anchor": "deixa",
+          "visual": {
+            "type": "statement",
+            "text": "Seguro vencido preocupa"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "seguro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escudo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu fiquei preocupado porque meu seguro venceu ontem e quase esqueci.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "fiquei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escudo"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "preocupado",
+          "visual": {
+            "type": "statement",
+            "text": "Eu quase esqueci"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então guardei o aviso, meu jeito mudou e eu acompanho melhor.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "guardei",
+          "visual": {
+            "type": "statement",
+            "text": "Guardei o aviso"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "aviso",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escudo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Seguro e proteção ficam comigo sempre.",
+      "durationSec": 2.17,
+      "shots": [
+        {
+          "anchor": "Seguro",
+          "visual": {
+            "type": "statement",
+            "text": "Seguro traz proteção"
+          }
+        },
+        {
+          "anchor": "proteção",
+          "visual": {
+            "type": "statement",
+            "text": "Seguro vencido preocupa"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}

@@ -16,5 +16,11 @@
     "gancho": "se-parar",
     "turno": "noite",
     "em": "2026-08-09T05:33:32.004Z"
+  },
+  {
+    "situacao": "seguro-venceu",
+    "gancho": "ta-perdendo",
+    "turno": "manha",
+    "em": "2026-08-10T05:54:21.528Z"
   }
 ]
