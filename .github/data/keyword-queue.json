@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-09T11:18:45.138Z",
+  "updatedAt": "2026-08-10T08:20:10.979Z",
   "sourceCursor": 1,
   "entries": [
     {
@@ -1628,6 +1628,62 @@
       "status": "pending",
       "addedAt": "2026-08-04T15:12:11.255Z",
       "finmooviHook": "enviado via /status 04/08"
+    },
+    {
+      "keyword": "acciónes",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-08-10T08:20:10.616Z"
+    },
+    {
+      "keyword": "controle de gastos whatsapp",
+      "category": "glossario",
+      "priority": 3,
+      "source": "autocomplete",
+      "status": "pending",
+      "addedAt": "2026-08-10T08:20:10.977Z"
+    },
+    {
+      "keyword": "planejamento financeiro pessoal",
+      "category": "glossario",
+      "priority": 3,
+      "source": "autocomplete",
+      "status": "pending",
+      "addedAt": "2026-08-10T08:20:10.977Z"
+    },
+    {
+      "keyword": "planejamento financeiro familiar",
+      "category": "glossario",
+      "priority": 3,
+      "source": "autocomplete",
+      "status": "pending",
+      "addedAt": "2026-08-10T08:20:10.977Z"
+    },
+    {
+      "keyword": "planejamento financeiro planilha",
+      "category": "glossario",
+      "priority": 3,
+      "source": "autocomplete",
+      "status": "pending",
+      "addedAt": "2026-08-10T08:20:10.977Z"
+    },
+    {
+      "keyword": "custo de vida no paraguai",
+      "category": "glossario",
+      "priority": 3,
+      "source": "autocomplete",
+      "status": "pending",
+      "addedAt": "2026-08-10T08:20:10.977Z"
+    },
+    {
+      "keyword": "custo de vida na espanha",
+      "category": "glossario",
+      "priority": 3,
+      "source": "autocomplete",
+      "status": "pending",
+      "addedAt": "2026-08-10T08:20:10.978Z"
     }
   ]
 }

@@ -1,16 +1,16 @@
 # 🔎 GSC — Digest de Oportunidades (Fase 1)
 
 **Propriedade:** https://blog.finmoovi.com/
-**Período:** 2026-07-06 → 2026-08-03 (28 dias)
-**Gerado em:** 2026-08-03T10:31:31.625Z
+**Período:** 2026-07-13 → 2026-08-10 (28 dias)
+**Gerado em:** 2026-08-10T08:20:10.548Z
 
-**Totais no período:** 1183 queries · 3370 impressões · 0 cliques
+**Totais no período:** 1563 queries · 6300 impressões · 1 cliques
 
 ## 1. 🎯 Striking distance (posição 5–20 — perto da 1ª página)
 
 | Query | Impr. | Cliques | Posição | CTR |
 |---|---|---|---|---|
-| mobills alternative | 6 | 0 | 7.2 | 0% |
+| mobills alternative | 8 | 0 | 5.9 | 0% |
 | what is credito | 6 | 0 | 8 | 0% |
 | tesouro selic ou cdb | 5 | 0 | 5 | 0% |
 | qué es cambio | 4 | 0 | 9.8 | 0% |
@@ -21,68 +21,69 @@
 
 | Query | Impr. | Posição | CTR | CTR esperado |
 |---|---|---|---|---|
-| mobills alternative | 6 | 7.2 | 0% | ~4% |
+| mobills alternative | 8 | 5.9 | 0% | ~5% |
 | what is credito | 6 | 8 | 0% | ~3.2% |
 | tesouro selic ou cdb | 5 | 5 | 0% | ~6% |
 | qué es cambio | 4 | 9.8 | 0% | ~2.5% |
+| ted vs pix | 3 | 1.7 | 0% | ~15% |
 
 ## 3. 🕳️ Lacunas (busca com impressão SEM página dedicada — candidatas à Fase 3)
 
 | Query | Impr. | Posição | Slug sugerido |
 |---|---|---|---|
-| financing | 240 | 43.1 | `financing` |
-| investment fund | 172 | 79 | `investment-fund` |
-| financiamiento | 68 | 53.8 | `financiamiento` |
-| investment funds | 53 | 83.6 | `investment-funds` |
-| fund investment | 49 | 71.4 | `fund-investment` |
-| fund investments | 43 | 83 | `fund-investments` |
-| volatilidad que es | 41 | 90.1 | `volatilidad-que-es` |
-| acciones ejemplos | 36 | 67.9 | `acciones-ejemplos` |
-| invest funds | 31 | 85.6 | `invest-funds` |
-| foreign exchange | 29 | 71.3 | `foreign-exchange` |
-| what is an investment fund | 29 | 71.8 | `what-is-an-investment-fund` |
-| pagos anticipados | 24 | 72.5 | `pagos-anticipados` |
-| renta variable | 22 | 60.5 | `renta-variable` |
-| renta variable que es | 22 | 56.1 | `renta-variable-que-es` |
-| what are investment funds | 22 | 71.4 | `what-are-investment-funds` |
-| invertir en etfs | 21 | 56.9 | `invertir-en-etfs` |
-| wealth management | 21 | 79.7 | `wealth-management` |
-| que es la renta variable | 20 | 63.1 | `que-es-la-renta-variable` |
-| etf que es | 18 | 89.1 | `etf-que-es` |
-| fundo de investimento | 17 | 88.5 | `fundo-de-investimento` |
-| invest fund | 17 | 83.9 | `invest-fund` |
-| que es renta variable | 17 | 56.1 | `que-es-renta-variable` |
-| etf investment | 16 | 66.1 | `etf-investment` |
-| how do investment funds work | 16 | 76.1 | `how-do-investment-funds-work` |
-| volatility | 16 | 67.1 | `volatility` |
+| financing | 458 | 41.6 | `financing` |
+| investment fund | 334 | 78.9 | `investment-fund` |
+| financiamiento | 155 | 62.9 | `financiamiento` |
+| investment funds | 116 | 82 | `investment-funds` |
+| fund investment | 98 | 76.9 | `fund-investment` |
+| acciones ejemplos | 78 | 75.9 | `acciones-ejemplos` |
+| fund investments | 78 | 83.2 | `fund-investments` |
+| etf investment | 77 | 67.8 | `etf-investment` |
+| volatilidad que es | 68 | 92.4 | `volatilidad-que-es` |
+| etf investing | 62 | 62.7 | `etf-investing` |
+| what is an investment fund | 60 | 75.6 | `what-is-an-investment-fund` |
+| invest funds | 58 | 84.3 | `invest-funds` |
+| investing in etf | 55 | 62.1 | `investing-in-etf` |
+| what are investment funds | 52 | 73 | `what-are-investment-funds` |
+| wealth management | 47 | 76.5 | `wealth-management` |
+| investing in etfs | 45 | 61.1 | `investing-in-etfs` |
+| renta variable que es | 44 | 57.9 | `renta-variable-que-es` |
+| pagos anticipados | 42 | 72.7 | `pagos-anticipados` |
+| que es la renta variable | 39 | 62.4 | `que-es-la-renta-variable` |
+| que es renta variable | 39 | 59.1 | `que-es-renta-variable` |
+| invest fund | 35 | 83.3 | `invest-fund` |
+| volatility | 35 | 63.6 | `volatility` |
+| acciónes | 33 | 76.1 | `acciones` |
+| how do investment funds work | 32 | 77.3 | `how-do-investment-funds-work` |
+| renta variable | 31 | 58.2 | `renta-variable` |
 
 ## 4. 🔀 Canibalização por query (≥2 páginas na mesma busca — consolidar na Fase 2)
 
-- **financing** (240 impr.): https://blog.finmoovi.com/en/glossario/en-financing/ (192) · https://blog.finmoovi.com/en/glossario/en-financing (48)
-- **investment fund** (172 impr.): https://blog.finmoovi.com/en/glossario/en-investment-fund/ (107) · https://blog.finmoovi.com/en/glossario/en-investment-fund (65)
-- **investment funds** (53 impr.): https://blog.finmoovi.com/en/glossario/en-investment-fund/ (33) · https://blog.finmoovi.com/en/glossario/en-investment-fund (20)
-- **fund investment** (49 impr.): https://blog.finmoovi.com/en/glossario/en-investment-fund/ (32) · https://blog.finmoovi.com/en/glossario/en-investment-fund (17)
-- **fund investments** (43 impr.): https://blog.finmoovi.com/en/glossario/en-investment-fund/ (28) · https://blog.finmoovi.com/en/glossario/en-investment-fund (15)
-- **volatilidad que es** (41 impr.): https://blog.finmoovi.com/es/glossario/es-volatilidad/ (25) · https://blog.finmoovi.com/es/glossario/es-volatilidad (16)
-- **acciones ejemplos** (36 impr.): https://blog.finmoovi.com/es/glossario/es-acciones (20) · https://blog.finmoovi.com/es/glossario/es-acciones/ (16)
-- **invest funds** (31 impr.): https://blog.finmoovi.com/en/glossario/en-investment-fund/ (26) · https://blog.finmoovi.com/en/glossario/en-investment-fund (5)
+- **financing** (458 impr.): https://blog.finmoovi.com/en/glossario/en-financing/ (410) · https://blog.finmoovi.com/en/glossario/en-financing (48)
+- **investment fund** (334 impr.): https://blog.finmoovi.com/en/glossario/en-investment-fund/ (269) · https://blog.finmoovi.com/en/glossario/en-investment-fund (65)
+- **investment funds** (116 impr.): https://blog.finmoovi.com/en/glossario/en-investment-fund/ (96) · https://blog.finmoovi.com/en/glossario/en-investment-fund (20)
+- **fund investment** (98 impr.): https://blog.finmoovi.com/en/glossario/en-investment-fund/ (81) · https://blog.finmoovi.com/en/glossario/en-investment-fund (17)
+- **etfs** (81 impr.): https://blog.finmoovi.com/en/posts/en-etfs-what-they-are-and-how-to-invest-simply-and-profitably/ (72) · https://blog.finmoovi.com/es/posts/es-etfs-que-son-y-como-invertir-de-forma-simple-y-rentable/ (9)
+- **acciones ejemplos** (78 impr.): https://blog.finmoovi.com/es/glossario/es-acciones/ (58) · https://blog.finmoovi.com/es/glossario/es-acciones (20)
+- **fund investments** (78 impr.): https://blog.finmoovi.com/en/glossario/en-investment-fund/ (63) · https://blog.finmoovi.com/en/glossario/en-investment-fund (15)
+- **volatilidad que es** (68 impr.): https://blog.finmoovi.com/es/glossario/es-volatilidad/ (52) · https://blog.finmoovi.com/es/glossario/es-volatilidad (16)
+- **what is an investment fund** (60 impr.): https://blog.finmoovi.com/en/glossario/en-investment-fund/ (50) · https://blog.finmoovi.com/en/glossario/en-investment-fund (10)
+- **invest funds** (58 impr.): https://blog.finmoovi.com/en/glossario/en-investment-fund/ (53) · https://blog.finmoovi.com/en/glossario/en-investment-fund (5)
+- **what are investment funds** (52 impr.): https://blog.finmoovi.com/en/glossario/en-investment-fund/ (42) · https://blog.finmoovi.com/en/glossario/en-investment-fund (10)
+- **wealth management** (47 impr.): https://blog.finmoovi.com/en/glossario/en-wealth-management/ (24) · https://blog.finmoovi.com/es/glossario/es-wealth-management/ (20) · https://blog.finmoovi.com/glossario/wealth-management/ (3)
+- **renta variable que es** (44 impr.): https://blog.finmoovi.com/es/glossario/es-renta-variable/ (34) · https://blog.finmoovi.com/es/glossario/es-renta-variable (10)
+- **que es la renta variable** (39 impr.): https://blog.finmoovi.com/es/glossario/es-renta-variable/ (32) · https://blog.finmoovi.com/es/glossario/es-renta-variable (7)
+- **que es renta variable** (39 impr.): https://blog.finmoovi.com/es/glossario/es-renta-variable/ (32) · https://blog.finmoovi.com/es/glossario/es-renta-variable (7)
+- **invest fund** (35 impr.): https://blog.finmoovi.com/en/glossario/en-investment-fund/ (33) · https://blog.finmoovi.com/en/glossario/en-investment-fund (2)
+- **volatility** (35 impr.): https://blog.finmoovi.com/en/glossario/en-volatility/ (30) · https://blog.finmoovi.com/en/glossario/en-volatility (5)
+- **acciónes** (33 impr.): https://blog.finmoovi.com/es/glossario/es-acciones/ (30) · https://blog.finmoovi.com/es/glossario/es-acciones (3)
+- **how do investment funds work** (32 impr.): https://blog.finmoovi.com/en/glossario/en-investment-fund/ (26) · https://blog.finmoovi.com/en/glossario/en-investment-fund (6)
+- **renta variable** (31 impr.): https://blog.finmoovi.com/es/glossario/es-renta-variable/ (25) · https://blog.finmoovi.com/es/glossario/es-renta-variable (6)
+- **investment of funds** (30 impr.): https://blog.finmoovi.com/en/glossario/en-investment-fund/ (25) · https://blog.finmoovi.com/en/glossario/en-investment-fund (5)
+- **que es una renta variable** (30 impr.): https://blog.finmoovi.com/es/glossario/es-renta-variable/ (26) · https://blog.finmoovi.com/es/glossario/es-renta-variable (4)
 - **foreign exchange** (29 impr.): https://blog.finmoovi.com/en/glossario/en-cambio/ (20) · https://blog.finmoovi.com/en/glossario/en-cambio (9)
-- **what is an investment fund** (29 impr.): https://blog.finmoovi.com/en/glossario/en-investment-fund/ (19) · https://blog.finmoovi.com/en/glossario/en-investment-fund (10)
-- **renta variable** (22 impr.): https://blog.finmoovi.com/es/glossario/es-renta-variable/ (16) · https://blog.finmoovi.com/es/glossario/es-renta-variable (6)
-- **renta variable que es** (22 impr.): https://blog.finmoovi.com/es/glossario/es-renta-variable/ (12) · https://blog.finmoovi.com/es/glossario/es-renta-variable (10)
-- **what are investment funds** (22 impr.): https://blog.finmoovi.com/en/glossario/en-investment-fund/ (12) · https://blog.finmoovi.com/en/glossario/en-investment-fund (10)
-- **etf que es** (20 impr.): https://blog.finmoovi.com/es/posts/es-etfs-que-son-y-como-invertir-de-forma-simple-y-rentable/ (13) · https://blog.finmoovi.com/es/glossario/es-etf/ (7)
-- **que es la renta variable** (20 impr.): https://blog.finmoovi.com/es/glossario/es-renta-variable/ (13) · https://blog.finmoovi.com/es/glossario/es-renta-variable (7)
-- **wealth management** (20 impr.): https://blog.finmoovi.com/en/glossario/en-wealth-management/ (17) · https://blog.finmoovi.com/glossario/wealth-management/ (3)
-- **etfs** (18 impr.): https://blog.finmoovi.com/en/posts/en-etfs-what-they-are-and-how-to-invest-simply-and-profitably/ (9) · https://blog.finmoovi.com/es/posts/es-etfs-que-son-y-como-invertir-de-forma-simple-y-rentable/ (9)
-- **invest fund** (17 impr.): https://blog.finmoovi.com/en/glossario/en-investment-fund/ (15) · https://blog.finmoovi.com/en/glossario/en-investment-fund (2)
-- **que es renta variable** (17 impr.): https://blog.finmoovi.com/es/glossario/es-renta-variable/ (10) · https://blog.finmoovi.com/es/glossario/es-renta-variable (7)
-- **how do investment funds work** (16 impr.): https://blog.finmoovi.com/en/glossario/en-investment-fund/ (10) · https://blog.finmoovi.com/en/glossario/en-investment-fund (6)
-- **volatility** (16 impr.): https://blog.finmoovi.com/en/glossario/en-volatility/ (11) · https://blog.finmoovi.com/en/glossario/en-volatility (5)
-- **alternatives to spreadsheets for daily cash reporting** (13 impr.): https://blog.finmoovi.com/en/posts/en-7-alternatives-to-google-sheets-for-finance-updated-guide-20/ (7) · https://blog.finmoovi.com/en/posts/en-7-alternatives-to-google-sheets-for-finance-updated-guide-20 (6)
-- **investment of funds** (13 impr.): https://blog.finmoovi.com/en/glossario/en-investment-fund/ (8) · https://blog.finmoovi.com/en/glossario/en-investment-fund (5)
-- **que es una renta variable** (13 impr.): https://blog.finmoovi.com/es/glossario/es-renta-variable/ (9) · https://blog.finmoovi.com/es/glossario/es-renta-variable (4)
-- **fondo de emergencia** (12 impr.): https://blog.finmoovi.com/es/glossario/es-fondo-de-emergencia (8) · https://blog.finmoovi.com/es/glossario/es-fondo-de-emergencia/ (4)
+- **how to invest in etf** (27 impr.): https://blog.finmoovi.com/en/posts/en-etfs-what-they-are-and-how-to-invest-simply-and-profitably/ (24) · https://blog.finmoovi.com/en/posts/en-etfs-what-they-are-and-how-to-invest-simply-and-profitably (3)
+- **etf que es** (25 impr.): https://blog.finmoovi.com/es/posts/es-etfs-que-son-y-como-invertir-de-forma-simple-y-rentable/ (16) · https://blog.finmoovi.com/es/glossario/es-etf/ (9)
 
 ---
 _CTR esperado é heurística de priorização, não dado do GSC. Gerado automaticamente pelo motor GSC (Fase 1)._

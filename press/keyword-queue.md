@@ -1,14 +1,12 @@
 # 🗂️ Fila de Keywords (Fase 3)
 
-**Atualizado em:** 2026-08-04T15:12:11.666Z
-**Totais:** 132 pendente(s) · 23 usada(s) · 16 pulada(s)
+**Atualizado em:** 2026-08-10T08:20:10.979Z
+**Totais:** 96 pendente(s) · 31 usada(s) · 51 pulada(s)
 
 ## ⏳ Pendentes por fonte
 
-### Manuais (prioridade 1) — 110
+### Manuais (prioridade 1) — 79
 
-- fluxo de caixa _(glossario)_
-- saldo devedor _(glossario)_
 - fatura do cartão _(glossario)_
 - categoria de despesa _(glossario)_
 - teto de gastos _(glossario)_
@@ -19,8 +17,6 @@
 - parcelamento _(glossario)_
 - renda mensal _(glossario)_
 - lista de compras _(glossario)_
-- app de controle financeiro
-- qual o melhor aplicativo para controle financeiro
 - planilha de gastos mensal
 - template excel finanças pessoais
 - excel para despesas mensais
@@ -30,22 +26,16 @@
 - orçamento gratis
 - app financas gratis
 - contas do dia
-- significado de credito _(glossario)_
 - cartao de credito pagbank como funciona _(glossario)_
 - como funciona a anuidade do cartão _(glossario)_
 - como funciona a amortização de financiamento _(glossario)_
 - como funciona a transferência de financiamento _(glossario)_
 - como funciona cartao virtual nubank _(glossario)_
 - como funciona construir limite no nubank _(glossario)_
-- como funciona financiamento _(glossario)_
-- como funciona financiamento bancário _(glossario)_
 - como funciona financiamento de carro _(glossario)_
-- como funciona financiamento de carros _(glossario)_
 - como funciona financiamento de casas _(glossario)_
 - como funciona financiamento de moto _(glossario)_
-- como funciona financiamento de motos _(glossario)_
 - como funciona financiamento de veiculo _(glossario)_
-- como funciona financiamento de veículos _(glossario)_
 - como funciona minha casa minha vida financiamento _(glossario)_
 - tabela para economizar dinheiro​
 - supermercado economizando​
@@ -54,46 +44,25 @@
 - qual o melhor horário para tomar banho e economizar energia​
 - qual a temperatura ideal do ar-condicionado para economizar energia​
 - porque é importante economizar água​
-- calculadora de investimento sardinha _(glossario)_
-- conceito de juros _(glossario)_
-- conceito de juros simples _(glossario)_
-- conceitos de juros _(glossario)_
-- conceitos de juros simples _(glossario)_
-- financiamento o que e _(glossario)_
 - juros de mora o que e _(glossario)_
-- juros o que e _(glossario)_
 - no contexto da economia a relacao entre consumo investimento _(glossario)_
 - o que e financeiro _(glossario)_
 - o que e finanças _(glossario)_
-- o que e juro _(glossario)_
-- o que e juros de mora _(glossario)_
 - o que e juros sobre capital proprio _(glossario)_
 - o que e montante _(glossario)_
 - o que e taxa _(glossario)_
-- o que e taxa de juros _(glossario)_
-- o que significa a palavra juro _(glossario)_
-- o que significa a palavra juros _(glossario)_
 - o que significa cred juros no extrato da caixa _(glossario)_
-- o que significa juros compostos _(glossario)_
-- o que significa juros de mora _(glossario)_
-- o que significa taxa _(glossario)_
-- oq significa juro _(glossario)_
-- quais investimentos tem juros compostos _(glossario)_
-- simulador de investimento sardinha _(glossario)_
 - taxa de investimento _(glossario)_
 - formas de economizar dinheiro _(glossario)_
 - gastar dinheiro _(glossario)_
 - gastar menos _(glossario)_
 - guardar dinheiro _(glossario)_
-- guardar dinheiro como _(glossario)_
 - juntar dinheiro em um ano _(glossario)_
 - meios de economizar energia _(glossario)_
 - melhores formas de guardar dinheiro _(glossario)_
 - metas para guardar dinheiro _(glossario)_
-- o que e poupar _(glossario)_
 - o que fazer para economizar energia _(glossario)_
 - o que significa economizar _(glossario)_
-- o que é economizar _(glossario)_
 - planejamento para guardar dinheiro _(glossario)_
 - planilha para economizar dinheiro _(glossario)_
 - farmácias economizar
@@ -120,7 +89,6 @@
 
 ### Lacunas do GSC (prioridade 2) — 8
 
-- acciones ejemplos
 - foreign exchange
 - pagos anticipados
 - renta variable
@@ -128,38 +96,34 @@
 - wealth management
 - fundo de investimento
 - volatility
+- acciónes
 
-### Autocomplete (prioridade 3) — 14
+### Autocomplete (prioridade 3) — 9
 
-- fluxo de caixa excel _(glossario)_
-- fatura do cartão mais _(glossario)_
-- fatura do cartão atacadão _(glossario)_
-- categoria de despesas _(glossario)_
-- categoria de despesas pessoais _(glossario)_
 - categoria de despesas empresa _(glossario)_
-- teto de gastos governo lula _(glossario)_
-- teto de gastos campanha eleitoral 2026 _(glossario)_
-- teto de gastos temer _(glossario)_
-- despesa recorrente significado _(glossario)_
 - despesa recorrente splitwise _(glossario)_
 - despesa recorrente conta azul _(glossario)_
-- controle de gastos pessoais _(glossario)_
-- controle de gastos planilha _(glossario)_
+- controle de gastos whatsapp _(glossario)_
+- planejamento financeiro pessoal _(glossario)_
+- planejamento financeiro familiar _(glossario)_
+- planejamento financeiro planilha _(glossario)_
+- custo de vida no paraguai _(glossario)_
+- custo de vida na espanha _(glossario)_
 
 ## ✅ Últimas usadas
 
 | Keyword | Usada por | Em |
 |---|---|---|
+| saldo devedor | glossario-auto-diario | 2026-08-09 |
+| categoria de despesas pessoais | glossario-auto-diario | 2026-08-08 |
+| qual o melhor aplicativo para controle financeiro | gerar-dicas-financeiras | 2026-08-08 |
+| fatura do cartão mais | glossario-auto-diario | 2026-08-07 |
+| acciones ejemplos | gerar-dicas-financeiras | 2026-08-07 |
+| fluxo de caixa | glossario-auto-diario | 2026-08-06 |
+| fluxo de caixa excel | glossario-auto-diario | 2026-08-05 |
+| app de controle financeiro | gerar-post-investimentos | 2026-08-05 |
 | fluxo de caixa descontado | glossario-auto-diario | 2026-08-04 |
 | fund investments | gerar-post-inteligente | 2026-08-04 |
-| kyco | gerar-dicas-financeiras | 2026-08-04 |
-| financiamiento | gerar-post-orcamento | 2026-08-03 |
-| exemplo de gasto variável | glossario-auto-diario | 2026-08-03 |
-| financing | gerar-dicas-financeiras | 2026-08-03 |
-| gasto variável | glossario-auto-diario | 2026-08-02 |
-| como poupar dinheiro dicas | gerar-dicas-financeiras | 2026-08-02 |
-| gasto variavel unitario | glossario-auto-diario | 2026-08-01 |
-| organizar finanças pessoais | gerar-dicas-financeiras | 2026-08-01 |
 
 ## ⏭️ Puladas (já cobertas)
 
@@ -179,6 +143,41 @@
 - saldo devedor caixa (nome-proprio-local)
 - saldo devedor facta (nome-proprio-local)
 - fatura do cartão casas bahia (nome-proprio-local)
+- fatura do cartão atacadão (nome-proprio-local)
+- categoria de despesas (variacao-duplicada)
+- teto de gastos governo lula (fora-do-nicho)
+- teto de gastos campanha eleitoral 2026 (fora-do-nicho)
+- teto de gastos temer (fora-do-nicho)
+- despesa recorrente significado (variacao-duplicada)
+- controle de gastos pessoais (variacao-duplicada)
+- controle de gastos planilha (variacao-duplicada)
+- significado de credito (verbete-ja-existe)
+- como funciona financiamento (verbete-ja-existe)
+- como funciona financiamento bancário (verbete-ja-existe)
+- como funciona financiamento de carros (variacao-duplicada)
+- como funciona financiamento de motos (variacao-duplicada)
+- como funciona financiamento de veículos (variacao-duplicada)
+- calculadora de investimento sardinha (produto-de-terceiro)
+- conceito de juros (verbete-ja-existe)
+- conceito de juros simples (verbete-ja-existe)
+- conceitos de juros (variacao-duplicada)
+- conceitos de juros simples (variacao-duplicada)
+- financiamento o que e (verbete-ja-existe)
+- juros o que e (verbete-ja-existe)
+- o que e juro (verbete-ja-existe)
+- o que e juros de mora (variacao-duplicada)
+- o que e taxa de juros (verbete-ja-existe)
+- o que significa a palavra juro (verbete-ja-existe)
+- o que significa a palavra juros (variacao-duplicada)
+- o que significa juros compostos (verbete-ja-existe)
+- o que significa juros de mora (variacao-duplicada)
+- o que significa taxa (variacao-duplicada)
+- oq significa juro (variacao-duplicada)
+- quais investimentos tem juros compostos (verbete-ja-existe)
+- simulador de investimento sardinha (produto-de-terceiro)
+- guardar dinheiro como (variacao-duplicada)
+- o que e poupar (verbete-ja-existe)
+- o que é economizar (variacao-duplicada)
 
 ---
 _Gerado automaticamente por keyword-queue-sync.js (Fase 3). Fontes: data/keywords-manuais.csv · lacunas do GSC · Google Autocomplete._
