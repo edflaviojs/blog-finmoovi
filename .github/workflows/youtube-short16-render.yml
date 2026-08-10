@@ -312,15 +312,41 @@ jobs:
             --video="youtube-render/out/$FILE_SLUG.mp4" \
             --contexto="Short de 16 segundos em loop, formato novo do canal: comeca no conteudo, acaba do nada, e tem de reiniciar sem a pessoa perceber."
 
+      # ♦ A CAPA — 10/08/2026, quando os 16s passaram a sair também nas redes.
+      #
+      # 🔴 SEM ELA, DUAS REDES NÃO PUBLICAM DE TODO. O Pinterest exige duas mídias (vídeo
+      # primeiro, capa depois) e o Bluesky não publica vídeo nenhum — leva a capa deitada e
+      # mais nada. Sem capa, as duas ficavam de fora e o registo diria só "não saiu".
+      # E no Instagram a diferença é outra: sem capa ele escolhe um fotograma ao calhas.
+      #
+      # ⚠️ SÃO SEMPRE AS DUAS — em pé (Instagram/Pinterest) e deitada (Bluesky). É o mesmo
+      # `capa-short.js` do formato de 50 segundos, já testado sobre um roteiro de 16s: ele
+      # lê o `term`, a `keyword` e a categoria, que este formato também tem.
+      #
+      # ⚠️ NUNCA MATA A CORRIDA — regra do dono, 09/08: um vídeo sem capa continua a ser um
+      # vídeo, e um vídeo que não existe não é nada. Se a capa falhar, o YouTube recebe o
+      # vídeo na mesma e as redes recebem o que conseguirem.
+      - name: Tirar a capa (em pé e deitada)
+        if: steps.turno.outputs.saltar != 'true' && steps.roteiro.outputs.saltar != 'true'
+        run: |
+          node src/scripts/youtube/capa-short.js --slug="$FILE_SLUG" || \
+            echo "::warning::a capa não saiu — o Pinterest e o Bluesky ficam de fora hoje, e o resto segue."
+
       # O artefato chama-se `short-<slug>` como o do outro formato — é assim que o
       # carteiro o encontra, sem uma linha de código nova do lado dele.
-      - name: Subir artefato (MP4 + legendas + fotogramas do QA)
+      #
+      # ⚠️ A CAPA VAI COM `if-no-files-found: error` DESLIGADO PARA ELA. Não dá para pedir
+      # dois comportamentos diferentes no mesmo passo, por isso o `error` continua a valer
+      # para o conjunto — e o MP4, que é o que não pode faltar, está lá. Uma capa em falta
+      # aparece no aviso do passo de cima, não aqui.
+      - name: Subir artefato (MP4 + capa + legendas + fotogramas do QA)
         if: steps.turno.outputs.saltar != 'true' && steps.roteiro.outputs.saltar != 'true'
         uses: actions/upload-artifact@v4
         with:
           name: short-${{ env.FILE_SLUG }}
           path: |
             youtube-render/out/${{ env.FILE_SLUG }}.mp4
+            youtube-render/out/capa-${{ env.FILE_SLUG }}*.jpg
             youtube-render/out/qa-${{ env.FILE_SLUG }}.jpg
             youtube-render/public/audio/${{ env.FILE_SLUG }}/*.srt
           if-no-files-found: error
@@ -328,15 +354,27 @@ jobs:
       # ♦ UMA FILA POR TURNO — e é o que impede o carteiro das 9h de entregar o vídeo
       # da noite (ou, pior, o de 50 segundos). O `outbox.js` já aceita `--fila=` desde
       # que o Instagram entrou; aqui não precisou de UMA LINHA nova.
+      # ♦ E DESDE 10/08 SÃO DUAS FILAS POR TURNO — a do YouTube e a das redes.
+      #
+      # É o mesmo desenho do Short de 50 segundos, que tem `youtube-outbox` e
+      # `instagram-outbox` lado a lado: **filas separadas para carteiros separados**. Uma
+      # fila só, partilhada, faria o primeiro carteiro a chegar tirar o vídeo de lá e o
+      # segundo encontrar-se-ia com a fila vazia — e o formato inteiro emudecia numa das
+      # pontas, em silêncio, que é o defeito que este dia inteiro veio consertar.
       - name: Pôr na fila do turno
         if: steps.turno.outputs.saltar != 'true' && steps.roteiro.outputs.saltar != 'true'
         run: |
           node src/scripts/youtube/outbox.js enqueue \
             --file-slug="$FILE_SLUG" --run-id="${{ github.run_id }}" \
             --fila=short16-${{ matrix.turno }}.json
+          node src/scripts/youtube/outbox.js enqueue \
+            --file-slug="$FILE_SLUG" --run-id="${{ github.run_id }}" \
+            --fila=short16-${{ matrix.turno }}-redes.json
           git config user.name "FinMoovi Bot"
           git config user.email "bot@finmoovi.com"
-          git add .github/data/short16-${{ matrix.turno }}.json .github/data/youtube-qa.json
+          git add .github/data/short16-${{ matrix.turno }}.json \
+                  .github/data/short16-${{ matrix.turno }}-redes.json \
+                  .github/data/youtube-qa.json
           if git diff --staged --quiet; then
             echo "Filas sem mudanças."
           else

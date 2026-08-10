@@ -266,6 +266,8 @@ export function lerNumeral(palavras) {
   let ultima = Infinity;
   let usadas = 0;
   let leu = false;
+  // 🔑 Se houve um "e" desde a última parcela lida. Ver a nota da SOMA SEM "E".
+  let viuE = false;
 
   for (let i = 0; i < palavras.length; i++) {
     const p = semAcentoMin(palavras[i]);
@@ -274,6 +276,7 @@ export function lerNumeral(palavras) {
       // O "e" só pertence ao número se o que vem a seguir também pertencer.
       const prox = semAcentoMin(palavras[i + 1] || '');
       if (!leu || !(prox in VALOR_DA_PALAVRA || prox in MULTIPLICADOR)) break;
+      viuE = true;
       continue;
     }
     if (p in MULTIPLICADOR) {
@@ -282,15 +285,42 @@ export function lerNumeral(palavras) {
       ultima = Infinity;
       leu = true;
       usadas = i + 1;
+      viuE = false;
       continue;
     }
     if (p in VALOR_DA_PALAVRA) {
       const v = VALOR_DA_PALAVRA[p];
       if (v >= ultima) break;   // não desceu → começou outro número, é lista
+      /**
+       * 🔴 SOMA SEM "E" NÃO É SOMA — É UMA LISTA. Apanhado em 10/08/2026, e já estava
+       * agendado para publicar.
+       *
+       * O vídeo `regra-50-30-20-real` fala da **regra 50/30/20**, e a narração diz
+       * *"a regra cinquenta trinta vinte cabe na sua vida?"*. Os três desceram
+       * (50 > 30 > 20), portanto a trava que já existia — *"não desceu, é lista"* —
+       * deixou passar, e a legenda ia sair com **"a regra 100"**. Um número que
+       * ninguém disse, numa legenda publicada.
+       *
+       * 🔑 A regra do português é curta: parcelas de um numeral **exigem "e"** —
+       * *cento **e** cinquenta*, *vinte **e** cinco*, *mil **e** quinhentos*. Sem "e"
+       * só existe a forma MULTIPLICATIVA (*quatro mil*), e essa é o ramo de cima, que
+       * não passa por aqui.
+       *
+       * ⚠️ **A exigência é só para SOMAR a uma parcela já lida** (`acc > 0`). Depois de
+       * um multiplicador o acumulador está a zero, e por isso *"mil quinhentos"*
+       * continua a ler-se — tirar isso seria consertar um defeito partindo outro.
+       *
+       * 📌 O que passa a acontecer com a frase do vídeo: os três ficam por escrever
+       * (cada um sozinho é menor que o piso e não traz "reais" nem "por cento"). A
+       * legenda diz o que a voz disse. É feio e é **verdade** — e a alternativa era um
+       * número inventado.
+       */
+      if (acc > 0 && !viuE) break;
       acc += v;
       ultima = v;
       leu = true;
       usadas = i + 1;
+      viuE = false;
       continue;
     }
     break;
@@ -340,6 +370,36 @@ export function numerosEmAlgarismo(texto) {
  * os números em algarismo. É por aqui que passa tudo o que vem da narração.
  */
 export const paraLer = (texto) => numerosEmAlgarismo(limpar(texto));
+
+/**
+ * 🔑 O GANCHO DO VÍDEO — e porque não basta ler `intro.frase`.
+ *
+ * ═══ O CASO REAL (10/08/2026) ═══
+ * Ao ligar os Shorts de **16 segundos** às redes, a legenda saiu com o título e depois um
+ * buraco: o gancho vinha vazio. O motivo é que os dois formatos guardam a mesma coisa em
+ * sítios diferentes, e ninguém tinha reparado porque até aqui só um deles era entregue:
+ *
+ *   · o Short de 50s tem um bloco `intro` com a frase de abertura;
+ *   · o de 16s **não tem `intro` nenhum** — a frase de abertura é a narração da cena de
+ *     papel `hook`, que é por onde o vídeo começa;
+ *   · e o de 16s tem um campo chamado `gancho`, que **não é a frase**: é o nome da
+ *     família de gancho (`ta-perdendo`). Ler esse campo teria posto um identificador
+ *     interno numa legenda publicada.
+ *
+ * ⚠️ **É A FAMÍLIA DE DEFEITO Nº 1 DESTA CASA** — regra velha a correr em estrutura nova.
+ * O código não rebentava: devolvia vazio e publicava na mesma, calado. Por isso a rede de
+ * segurança está aqui e não em quem chama: quem escreve uma legenda nova ganha o
+ * comportamento certo sem ter de saber isto.
+ *
+ * ⚠️ A cena de `hook` é procurada pelo PAPEL, nunca pela posição. Ordem de cenas muda;
+ * papel não.
+ */
+export function ganchoDoRoteiro(roteiro) {
+  const daIntro = roteiro?.intro?.frase;
+  if (daIntro) return paraLer(daIntro);
+  const hook = (roteiro?.scenes || []).find((c) => c && c.role === 'hook');
+  return hook?.narration ? paraLer(hook.narration) : '';
+}
 
 /**
  * ⚠️ OS ACENTOS FICAM. O Instagram aceita-os e é com eles que se procura em
@@ -480,7 +540,8 @@ export function etiquetasDo(roteiro) {
 export function montarLegenda(roteiro) {
   const titulo = limpar(roteiro.term || roteiro.keyword || '');
   // ⚠️ O gancho vem da NARRAÇÃO, logo traz os números por extenso. Ver `numerosEmAlgarismo`.
-  const gancho = paraLer(roteiro.intro?.frase || '');
+  // ⚠️ E não se lê `intro.frase` à mão: o de 16s não tem `intro`. Ver `ganchoDoRoteiro`.
+  const gancho = ganchoDoRoteiro(roteiro);
   const topicos = topicosDoRoteiro(roteiro);
   const tagsUnicas = etiquetasDo(roteiro);
 
@@ -649,7 +710,7 @@ const tituloEGancho = (roteiro) => ({
   // O título já é escrito para o OLHO (é ele que vai no YouTube) e por isso já traz os
   // algarismos; o gancho vem da narração, que é escrita para o OUVIDO.
   titulo: limpar(roteiro.term || roteiro.keyword || ''),
-  gancho: paraLer(roteiro.intro?.frase || ''),
+  gancho: ganchoDoRoteiro(roteiro),
 });
 
 /** TikTok — sem link clicável, e as etiquetas contam muito. */

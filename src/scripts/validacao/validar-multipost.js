@@ -24,7 +24,7 @@ import {
   duracaoDoMp4, primeiraLinha, STORY_MAX_SEG, MINUTOS_ATE_O_STORY,
   REDES, REDE_DE_FORA, REDE_TIKTOK, midiasDaRede, opcoesDaRede, montarPedido, oQueFalta,
   encaixarNoLimite, cortarNaPalavra, MAX_TITULO_TIKTOK, falaPedeComentario,
-  numerosEmAlgarismo, lerNumeral, topicosDoRoteiro, montarLegenda,
+  numerosEmAlgarismo, lerNumeral, topicosDoRoteiro, montarLegenda, ganchoDoRoteiro,
   linkDoVideo, topicosSemOProduto, comoLista, MAX_ETIQUETAS_LINKEDIN,
   horaDaRede, MINUTOS_DE_MARGEM, STORIES, minutosDoStory, storiesEmFalta,
 } from '../multipost/entregar.js';
@@ -522,6 +522,33 @@ console.log('\n12. OS NÚMEROS DA LEGENDA — de "cento e cinquenta reais" para 
   }
   ok('a percentagem também: "quinze por cento" → "15%"',
     N('rende quinze por cento ao ano') === 'rende 15% ao ano', N('rende quinze por cento ao ano'));
+
+  /**
+   * 🔴 O NÚMERO INVENTADO — apanhado em 10/08/2026, já com o vídeo agendado.
+   *
+   * O vídeo `regra-50-30-20-real` fala da **regra 50/30/20** e a narração diz *"a regra
+   * cinquenta trinta vinte cabe na sua vida?"*. Os três DESCEM (50 > 30 > 20), portanto a
+   * trava que já existia — *"não desceu, é lista"* — deixava passar, e somava: a legenda
+   * ia publicar **"a regra 100"**. Um número que ninguém disse.
+   *
+   * 🔑 A regra do português: parcelas de um numeral **exigem "e"**. Sem "e" só existe a
+   * forma multiplicativa (*quatro mil*), que é outro ramo do código.
+   *
+   * ⚠️ As três provas a seguir são um par indivisível: a primeira mata o número
+   * inventado, e as outras duas garantem que o conserto não partiu a soma legítima.
+   */
+  ok('🔴 "a regra cinquenta trinta vinte" NÃO vira "a regra 100" — soma sem "e" é lista',
+    N('a regra cinquenta trinta vinte cabe na sua vida?') === 'a regra cinquenta trinta vinte cabe na sua vida?',
+    N('a regra cinquenta trinta vinte cabe na sua vida?'));
+  ok('mas com "e" continua a somar: "cento e cinquenta e três reais" → "R$ 153"',
+    N('cento e cinquenta e três reais') === 'R$ 153', N('cento e cinquenta e três reais'));
+  /**
+   * ⚠️ Depois de um multiplicador o acumulador está a zero, e por isso aqui NÃO se exige
+   * o "e" — senão o conserto de cima partia este caso, que é o defeito mais comum desta
+   * casa: arrumar um sítio e estragar o do lado.
+   */
+  ok('⚠️ e "mil quinhentos reais" (sem "e", depois do multiplicador) continua a ler-se',
+    N('mil quinhentos reais') === 'R$ 1.500', N('mil quinhentos reais'));
   ok('sem unidade, mas de 100 para cima, converte: "duzentos" → "200"',
     N('o outro duzentos, e o resto some') === 'o outro 200, e o resto some', N('o outro duzentos, e o resto some'));
 
@@ -895,6 +922,48 @@ console.log('\n19. O VIGIA DAS REDES — a pergunta que só o servidor sabe resp
     motivoLegivel({ error: JSON.stringify({ cause: { failure: { message: "This account doesn't support Trial Reels" } } }) })
       === "This account doesn't support Trial Reels");
   ok('e um post sem erro não inventa motivo nenhum', motivoLegivel({}) === '');
+}
+
+console.log('\n20. O GANCHO — os dois formatos guardam-no em sítios diferentes');
+
+{
+  // O Short de 50s: a frase de abertura vive num bloco `intro`.
+  const DE_50S = { term: 'Regra 50/30/20', intro: { frase: 'Com salário de quatro mil reais, isso cabe?' } };
+  // O de 16s: NÃO tem `intro`. A frase é a narração da cena de papel `hook`.
+  const DE_16S = {
+    term: 'A conta de luz do verão',
+    gancho: 'ta-perdendo',
+    scenes: [
+      { role: 'hook', narration: 'Se você ainda faz conta de luz no susto, tá perdendo dinheiro' },
+      { role: 'beat', narration: 'Eu vi a conta subir após ventilador ligado' },
+    ],
+  };
+
+  ok('no de 50s o gancho vem do bloco `intro`',
+    ganchoDoRoteiro(DE_50S) === 'Com salário de R$ 4.000, isso cabe?', ganchoDoRoteiro(DE_50S));
+  /**
+   * 🔴 A PROVA QUE ESTE BLOCO EXISTE PARA FAZER. Sem ela a legenda do de 16s saía com o
+   * título e depois um BURACO — e saía calada, porque um gancho vazio não rebenta nada.
+   */
+  ok('🔴 no de 16s vem da cena de papel `hook` — e não fica vazio',
+    ganchoDoRoteiro(DE_16S) === 'Se você ainda faz conta de luz no susto, tá perdendo dinheiro',
+    ganchoDoRoteiro(DE_16S));
+  /**
+   * 🔴 E NUNCA DO CAMPO `gancho`, que no de 16s **não é a frase**: é o nome da família de
+   * gancho (`ta-perdendo`). Lê-lo poria um identificador interno numa legenda publicada.
+   */
+  ok('🔴 e NUNCA do campo `gancho`, que ali é um identificador interno',
+    !ganchoDoRoteiro(DE_16S).includes('ta-perdendo'));
+  ok('a cena é achada pelo PAPEL, não pela posição',
+    ganchoDoRoteiro({ scenes: [{ role: 'beat', narration: 'meio' }, { role: 'hook', narration: 'o começo' }] }) === 'o começo');
+  ok('e um roteiro sem nenhum dos dois devolve vazio, sem rebentar',
+    ganchoDoRoteiro({ scenes: [] }) === '' && ganchoDoRoteiro({}) === '');
+
+  // 🔑 A legenda inteira do de 16s: título, gancho e tópicos, pela ordem certa.
+  const legenda = montarLegenda(DE_16S).split('\n');
+  ok('🔑 e a legenda do de 16s deixa de ter o buraco onde devia estar o gancho',
+    legenda[0] === 'A conta de luz do verão' && legenda[2].startsWith('Se você ainda faz conta de luz'),
+    legenda.slice(0, 3).join(' | '));
 }
 
 console.log(`\n${'═'.repeat(72)}`);

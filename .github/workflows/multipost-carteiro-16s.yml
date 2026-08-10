@@ -1,0 +1,179 @@
+name: Multipost — Entregar os Shorts de 16s às 7 redes
+
+# ♦ O TERCEIRO CARTEIRO — 10/08/2026, IMPLEMENTACAO26 §15 (ordem do dono).
+#
+# ═══ O BURACO QUE ISTO TAPA ═══
+# O canal produz TRÊS vídeos por dia — um Short de 50s e dois de 16s — e até hoje só o de
+# 50 segundos saía nas redes. Os dois de 16s subiam ao YouTube e paravam ali. Não era
+# defeito: era trabalho que nunca tinha sido feito, e por isso nada se queixava.
+#
+# ═══ A HORA DE CADA UM, E PORQUE NÃO SÃO TRÊS BLOCOS IGUAIS ═══
+# Cada formato tem a sua janela, e elas NÃO se tocam — três vídeos a cair no mesmo par de
+# horas é a assinatura de um robô, que é exactamente o que a tabela de minutos desiguais
+# do `entregar.js` existe para evitar:
+#
+#   | formato        | âncora  | a última rede sai |
+#   |----------------|---------|-------------------|
+#   | 16s da manhã   | 10h BR  | 11h47             |
+#   | 16s da noite   | 14h BR  | 15h47             |
+#   | Short de 50s   | 19h BR  | 20h47             |
+#
+# ⚠️ **O 16s "da noite" chega às redes ANTES de ir ao ar no YouTube** (lá sai às 18h40).
+# É de propósito e é uma preferência, não uma regra: o rótulo "noite" é da grelha do
+# YouTube, e nas redes as 14h tapam o buraco da tarde. Empurrá-lo para depois das 19h
+# encostava-o ao Short de 50s, e aí sim havia dois vídeos na mesma janela.
+#
+# ⚠️ **AS DUAS RONDAS DISTINGUEM-SE POR `github.event.schedule`, NUNCA POR LER O RELÓGIO.**
+# É a mesma regra do robô que produz os 16s, e ela existe porque o atraso do cron do GitHub
+# (já medido em 112 minutos nesta casa) faria a corrida da manhã pensar que era a da noite.
+#
+# ⚠️ O NOME DA FILA É `short16-<turno>-redes.json`, separado do `short16-<turno>.json` que o
+# YouTube consome. Fila partilhada faria o primeiro carteiro a chegar tirar o vídeo de lá e
+# o segundo encontrar a fila vazia — uma ponta do canal emudecia em silêncio.
+#
+# Sem pendentes na fila = sucesso neutro (exit 78), como nos outros carteiros.
+
+on:
+  workflow_dispatch:
+    inputs:
+      turno:
+        description: 'Qual turno entregar (manha ou noite)'
+        required: true
+        default: 'manha'
+      slug:
+        description: 'Entregar este slug (vazio = o próximo da fila do turno)'
+        required: false
+      run_id:
+        description: 'De que corrida vem o vídeo (só com slug à mão; sem isto o MP4 não é baixado)'
+        required: false
+      dry_run:
+        description: 'Ensaio (mostra o texto e a hora de cada rede, não envia nada)'
+        type: boolean
+        default: false
+  schedule:
+    # ⚠️ A ENTREGA CORRE ANTES DA ÂNCORA, sempre — quem publica é o Multipost, e o
+    # agendamento vai dentro do pedido. Uma corrida depois da hora empurraria o vídeo para
+    # o dia seguinte (a trava está em `proximaHoraBrasilEmUTC`, mas contar com ela seria
+    # desenhar para o remendo).
+    - cron: '0 11 * * *'    # 08h00 BR — entrega o da manhã, que sai às 10h
+    - cron: '40 14 * * *'   # 11h40 BR — entrega o da noite, que sai às 14h
+
+permissions:
+  contents: write
+  actions: read
+
+# MESMO grupo dos outros carteiros: todos commitam em .github/data, e dois `git push` no
+# mesmo segundo é como se perde um caderno.
+concurrency:
+  group: youtube-short-daily
+  cancel-in-progress: false
+
+jobs:
+  entregar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      # ⚠️ O `case` sobre `github.event.schedule` é a única maneira honesta de saber que
+      # ronda é esta. Num `workflow_dispatch` o campo vem vazio e vale o que o dono escreveu.
+      - name: Que turno é este?
+        id: turno
+        run: |
+          case "${{ github.event.schedule }}" in
+            "0 11 * * *")  TURNO=manha; HORA=10 ;;
+            "40 14 * * *") TURNO=noite; HORA=14 ;;
+            *)             TURNO="${{ github.event.inputs.turno }}"; HORA="" ;;
+          esac
+          if [ -z "$TURNO" ]; then echo "❌ sem turno — nem do relógio, nem do botão."; exit 1; fi
+          if [ "$TURNO" != "manha" ] && [ "$TURNO" != "noite" ]; then
+            echo "❌ turno inválido: \"$TURNO\" (só existem manha e noite)"; exit 1
+          fi
+          # À mão, sem relógio: cada turno mantém a sua âncora.
+          if [ -z "$HORA" ]; then
+            if [ "$TURNO" = "manha" ]; then HORA=10; else HORA=14; fi
+          fi
+          echo "TURNO=$TURNO" >> "$GITHUB_ENV"
+          echo "HORA_BR=$HORA" >> "$GITHUB_ENV"
+          echo "🕒 turno $TURNO — a primeira rede sai às ${HORA}h do Brasil."
+
+      - name: Próximo da fila deste turno
+        id: fila
+        run: |
+          PEDIDO="${{ github.event.inputs.slug }}"
+          if [ -n "$PEDIDO" ]; then
+            echo "FILE_SLUG=$PEDIDO" >> "$GITHUB_ENV"
+            echo "RUN_ID=${{ github.event.inputs.run_id }}" >> "$GITHUB_ENV"
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+            echo "🎯 pedido à mão: $PEDIDO"
+            exit 0
+          fi
+          set +e
+          BILHETE="$(node src/scripts/youtube/outbox.js next --fila=short16-$TURNO-redes.json)"
+          CODE=$?
+          set -e
+          if [ "$CODE" = "78" ]; then
+            echo "📭 nada na fila de redes de $TURNO — sucesso neutro."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          if [ "$CODE" != "0" ]; then
+            echo "❌ leitura da fila falhou (code $CODE)"
+            exit "$CODE"
+          fi
+          echo "bilhete: $BILHETE"
+          {
+            echo "FILE_SLUG=$(echo "$BILHETE" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>console.log(JSON.parse(s).fileSlug))')"
+            echo "RUN_ID=$(echo "$BILHETE" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>console.log(JSON.parse(s).runId))')"
+          } >> "$GITHUB_ENV"
+          echo "skip=false" >> "$GITHUB_OUTPUT"
+
+      - name: Instalar dependências
+        if: steps.fila.outputs.skip != 'true'
+        run: npm ci
+
+      # O artefato foi gravado a partir de youtube-render/, então baixá-lo PARA lá
+      # reconstrói o que o entregador espera: out/<slug>.mp4 e out/capa-<slug>*.jpg.
+      - name: Baixar o vídeo e a capa do run de produção
+        if: steps.fila.outputs.skip != 'true' && env.RUN_ID != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh run download "$RUN_ID" --name "short-$FILE_SLUG" --dir youtube-render
+          test -f "youtube-render/out/$FILE_SLUG.mp4" || { echo "❌ MP4 não veio no artefato"; ls -R youtube-render | head -30; exit 1; }
+          # ⚠️ A capa em falta é AVISO, não paragem: sem ela o Pinterest e o Bluesky ficam
+          # de fora (um exige duas mídias, o outro não publica vídeo) e as outras cinco
+          # saem na mesma. Um vídeo em cinco redes é melhor do que nenhum em sete.
+          test -f "youtube-render/out/capa-$FILE_SLUG.jpg" \
+            || echo "::warning::sem capa — o Pinterest e o Bluesky ficam de fora deste."
+          echo "🎞️ $(du -h "youtube-render/out/$FILE_SLUG.mp4" | cut -f1) prontos para entrega."
+
+      - name: Entregar ao Multipost e agendar
+        if: steps.fila.outputs.skip != 'true'
+        env:
+          MULTIPOST_API_KEY: ${{ secrets.MULTIPOST_API_KEY }}
+        run: |
+          ARGS="--slug=$FILE_SLUG --hora=$HORA_BR"
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
+          node src/scripts/multipost/entregar.js $ARGS
+
+      - name: Tirar da fila e commitar o caderno
+        if: steps.fila.outputs.skip != 'true' && github.event.inputs.dry_run != 'true'
+        run: |
+          node src/scripts/youtube/outbox.js done --file-slug="$FILE_SLUG" --fila=short16-$TURNO-redes.json
+          git config user.name "FinMoovi Bot"
+          git config user.email "bot@finmoovi.com"
+          git add .github/data/short16-$TURNO-redes.json .github/data/instagram-agendados.json
+          if git diff --staged --quiet; then
+            echo "Sem mudanças a commitar."
+          else
+            git commit -m "chore: 16s $FILE_SLUG ($TURNO) agendado nas redes [skip ci]"
+            bash .github/scripts/empurrar.sh
+          fi
