@@ -125,16 +125,34 @@ async function pedir(caminho, { metodo = 'POST', corpo, chave } = {}) {
  * um comentário aqui, e um "~48" solto noutro comentário. Quatro cópias divergem sempre —
  * e divergiram. **Agora é um sítio só, e quem precisar dele importa-o.**
  *
- * ⚠️ **82 é uma MÉDIA de quatro imagens, não uma lei.** Por isso o programa passou a
- * escrever, no fim de cada corrida, quanto custou de VERDADE por imagem (ver
- * `custoPorImagem`). Quando esse número se afastar deste, corrige-se este — com medição,
- * como se corrigiu hoje, e não com palpite.
+ * ⚠️ **E O CUSTO NÃO É UM NÚMERO — É UMA FAIXA.** No mesmo dia, com o aviso novo já a
+ * funcionar, mediu-se separadamente:
  *
- * ⚠️ **Não se arredondou para cima "por segurança".** A 90, a conta diria 3 imagens onde
- * cabem 4, e o dono perderia uma imagem por corrida por causa de uma margem inventada. A
- * régua é o que se mediu; quem quiser folga, tira-a do resultado, não da régua.
+ * | o que se pediu | quanto custou |
+ * |---|---|
+ * | 4 imagens de uma vez (09/08) | 329 → **82** cada |
+ * | 1 **capa** (10/08) | **99** |
+ * | 2 **fotografias** (10/08) | 133 → **67** cada |
+ *
+ * A capa custa mais do que uma fotografia, e faz sentido: o pedido dela é três vezes
+ * maior (composição + molde + tipografia + selo + assinatura do canal + proibições) e o
+ * agente trabalha mais tempo.
+ *
+ * ⚠️ **Fica o MAIS CARO dos três, e isto corrige o que eu tinha escrito aqui de manhã.**
+ * Eu tinha argumentado contra arredondar "por segurança" — e continua certo: **não se
+ * inventa uma margem**. Mas 99 não é margem inventada, é a medição do caso mais caro. E o
+ * defeito que isto conserta era **prometer a mais** (dizia 6 imagens onde cabiam 4) e a
+ * corrida morrer a meio com o vídeo por acabar. Entre falhar por excesso e por defeito,
+ * esta conta tem de falhar por defeito.
+ *
+ * ⚠️ **A alternativa — um custo por TIPO de imagem — fica para quando houver mais
+ * medições.** Com três pontos, separar capas de fotografias seria construir uma tabela em
+ * cima de uma amostra de um; e esta casa já foi mordida por isso.
+ *
+ * Cada corrida continua a escrever quanto custou DE VERDADE (`custoPorImagem`) e a avisar
+ * quando esta régua se afasta. É assim que este número se corrige: com medição.
  */
-export const CUSTO_POR_IMAGEM = 82;
+export const CUSTO_POR_IMAGEM = 99;
 
 /**
  * Quanto custou, de verdade, por imagem — para o número aqui de cima nunca mais envelhecer

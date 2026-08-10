@@ -21,6 +21,28 @@
       "usadoEm": [
         "dono-dois-homens-mesma-idade-mesmo-trabalho"
       ]
+    },
+    {
+      "ficheiro": "manus/onde-o-salario-some/susto.jpg",
+      "significado": "o susto de olhar a conta",
+      "tipo": "foto",
+      "pistas": [
+        "voce ja olhou o saldo do"
+      ],
+      "usadoEm": [
+        "onde-o-salario-some"
+      ]
+    },
+    {
+      "ficheiro": "manus/onde-o-salario-some/virada.jpg",
+      "significado": "a saída que se abre",
+      "tipo": "foto",
+      "pistas": [
+        "eu sentei com a minha avo"
+      ],
+      "usadoEm": [
+        "onde-o-salario-some"
+      ]
     }
   ],
   "recusadas": [

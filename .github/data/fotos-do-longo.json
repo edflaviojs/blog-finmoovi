@@ -9,6 +9,24 @@
         "movimento": "aproxima",
         "pista": "voce sabe o que aqueles trezentos"
       }
+    ],
+    "onde-o-salario-some": [
+      {
+        "ficheiro": "manus/onde-o-salario-some/susto.jpg",
+        "nome": "o susto de olhar a conta",
+        "significado": "o susto de olhar a conta",
+        "tipo": "foto",
+        "movimento": "aproxima",
+        "pista": "voce ja olhou o saldo do"
+      },
+      {
+        "ficheiro": "manus/onde-o-salario-some/virada.jpg",
+        "nome": "a saída que se abre",
+        "significado": "a saída que se abre",
+        "tipo": "foto",
+        "movimento": "aproxima-lento",
+        "pista": "eu sentei com a minha avo"
+      }
     ]
   }
 }

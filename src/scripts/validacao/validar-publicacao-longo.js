@@ -1452,11 +1452,22 @@ console.log('   (as quatro coisas que estavam partidas e não tocavam em prova n
    * ⚠️ Ele viveu em quatro sítios e as quatro cópias divergiram: 52, 52, 52 e "~48",
    * quando o medido são ~82. Por isso o orçamento prometia 6 imagens onde cabiam 4.
    */
-  ok('o custo por imagem é o MEDIDO em 10/08, e não o de 04/08', CUSTO_POR_IMAGEM === 82, `está ${CUSTO_POR_IMAGEM}`);
+  /**
+   * ⚠️ **A RÉGUA É O CASO MAIS CARO MEDIDO, e não a média.** Três medições em dois dias:
+   * 4 imagens de uma vez → 82 cada · 1 capa → **99** · 2 fotografias → 67 cada. A capa
+   * custa mais porque o pedido dela é três vezes maior.
+   *
+   * O defeito que isto conserta era **prometer a MAIS** (dizia 6 imagens onde cabiam 4) e
+   * a corrida morrer a meio. Entre falhar por excesso e por defeito, esta conta tem de
+   * falhar por defeito — por isso fica o mais caro, e não a média.
+   */
+  ok('o custo por imagem é o CASO MAIS CARO medido, não a média', CUSTO_POR_IMAGEM === 99, `está ${CUSTO_POR_IMAGEM}`);
   ok('e o `fotos-longo.js` usa exactamente o mesmo número', CUSTO_DAS_FOTOS === CUSTO_POR_IMAGEM);
-  ok('a conta do orçamento acerta nas 4 imagens de 329 créditos', Math.floor(329 / CUSTO_POR_IMAGEM) === 4, `deu ${Math.floor(329 / CUSTO_POR_IMAGEM)}`);
-  ok('e com o número antigo teria prometido 6 (era este o defeito)', Math.floor(329 / 52) === 6);
-  ok('a medição do custo real bate: 329 em 4 pedidos → 82', custoPorImagem(400, 71, 4) === 82, String(custoPorImagem(400, 71, 4)));
+  ok('🔴 o orçamento NUNCA promete mais do que a capa mais cara permite',
+    Math.floor(329 / CUSTO_POR_IMAGEM) <= Math.floor(329 / 99), `deu ${Math.floor(329 / CUSTO_POR_IMAGEM)}`);
+  ok('e com o número antigo (52) teria prometido 6 onde cabiam 4 — era este o defeito', Math.floor(329 / 52) === 6);
+  ok('a medição do custo real bate: 133 em 2 fotografias → 67', custoPorImagem(223, 90, 2) === 67, String(custoPorImagem(223, 90, 2)));
+  ok('e a da capa: 99 num pedido', custoPorImagem(322, 223, 1) === 99, String(custoPorImagem(322, 223, 1)));
   ok('e não inventa número quando não há como saber', custoPorImagem(100, 100, 4) === null && custoPorImagem(100, 90, 0) === null);
 
   // ── 6. nenhuma metáfora do catálogo fica sem cena de capa ──
