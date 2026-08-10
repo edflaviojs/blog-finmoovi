@@ -1608,6 +1608,18 @@ console.log('\n🔤 O LEITOR DE TEXTO — e a ordem que poupa créditos\n');
   const srt = readFileSync(join(RAIZ, 'src', 'scripts', 'youtube', 'srt-longo.js'), 'utf-8');
   ok('a tradução paga é OPT-IN — sem `--pago`, nada muda na nuvem',
     /const PAGO = Boolean\(args\.pago\)/.test(srt) && /PAGO \? \{ pago: 'leitor' \} : \{\}/.test(srt));
+  ok('e a descrição tem a mesma opção, pela mesma razão',
+    /pago = false/.test(readFileSync(join(RAIZ, 'src', 'scripts', 'youtube', 'descricao-longo.js'), 'utf-8')));
+
+  /**
+   * ⚠️ **`--linguas` existe porque uma corrida foi cortada a meio.** Cada língua leva
+   * perto de meia hora; repetir tudo por causa da segunda era pagar a primeira outra vez.
+   * A prova garante que, **sem a opção, continuam a sair as duas** — que é o que a nuvem
+   * precisa.
+   */
+  ok('sem `--linguas`, saem as duas de sempre', /linguas = \['en', 'es'\]/.test(srt));
+  ok('e uma língua desconhecida não passa (não se cria um .fr.srt calado)',
+    /\['en', 'es'\]\.includes\(l\)/.test(srt));
 }
 
 // ═══ RESULTADO ═══════════════════════════════════════════════════════════════

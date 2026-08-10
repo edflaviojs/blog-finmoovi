@@ -184,7 +184,21 @@ async function traduzirComTeimosia(texto, lingua) {
   return '';
 }
 
-export async function gerarLegendas(slug, { soPt = false, registar = console.log } = {}) {
+/**
+ * ═══ `--linguas=es` — REFAZER UMA SÓ, SEM PAGAR AS OUTRAS OUTRA VEZ — 10/08/2026 ═══
+ *
+ * ⚠️ **Nasceu de uma corrida interrompida.** Traduzir um vídeo de seis minutos são ~50
+ * cenas por língua, e cada língua leva perto de meia hora. Numa corrida em que o inglês
+ * ficou pronto e o espanhol foi cortado a meio, repetir tudo era pagar o inglês uma
+ * segunda vez e esperar mais trinta minutos por uma coisa que já estava em disco.
+ *
+ * É a mesma ideia do `--apenas` das imagens da Manus, e pela mesma razão.
+ *
+ * ⚠️ **A legenda em português é refeita SEMPRE, e é de graça:** ela não passa por IA
+ * nenhuma — sai dos tempos medidos da voz. Reescrevê-la custa zero e garante que as três
+ * faixas vêm da mesma medição.
+ */
+export async function gerarLegendas(slug, { soPt = false, linguas = ['en', 'es'], registar = console.log } = {}) {
   const caminhoPlano = join(ROTEIRO_DIR, `${slug}.json`);
   if (!existsSync(caminhoPlano)) throw new Error(`não há guião montado para "${slug}" — corra o montador antes`);
   const plano = JSON.parse(readFileSync(caminhoPlano, 'utf-8'));
@@ -214,7 +228,7 @@ export async function gerarLegendas(slug, { soPt = false, registar = console.log
   if (soPt) return { feitos, blocosPt: blocosPt.length };
 
   // ── INGLÊS E ESPANHOL — traduzidas cena a cena, dentro do intervalo falado ──
-  for (const lingua of ['en', 'es']) {
+  for (const lingua of linguas) {
     const palavras = [];
     let falhadas = 0;
     for (let i = 0; i < plano.scenes.length; i++) {
@@ -249,7 +263,13 @@ export async function gerarLegendas(slug, { soPt = false, registar = console.log
 // ─── execução direta ─────────────────────────────────────────────────────────
 if (process.argv[1] && process.argv[1].replace(/\\/g, '/').endsWith('youtube/srt-longo.js')) {
   const slug = String(args.slug && args.slug !== true ? args.slug : 'sair-do-vermelho');
-  gerarLegendas(slug, { soPt: Boolean(args['so-pt']) })
+  // ⚠️ Só as línguas conhecidas entram — um `--linguas=fr` calado geraria um ficheiro
+  //    `.fr.srt` com o prompt a pedir uma etiqueta que não existe.
+  const pedidas = args.linguas && args.linguas !== true
+    ? String(args.linguas).split(',').map((l) => l.trim()).filter((l) => ['en', 'es'].includes(l))
+    : ['en', 'es'];
+  if (args.linguas && !pedidas.length) throw new Error('`--linguas` só conhece "en" e "es"');
+  gerarLegendas(slug, { soPt: Boolean(args['so-pt']), linguas: pedidas })
     .catch((err) => { console.error(`\n❌ ${err.message}\n`); process.exit(1); });
 }
 
