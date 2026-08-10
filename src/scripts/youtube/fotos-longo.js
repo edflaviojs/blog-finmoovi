@@ -50,7 +50,7 @@ import { join } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { execFileSync } from 'node:child_process';
 import {
-  creditos, pedirAgente, descarregar, CUSTO_POR_IMAGEM, custoPorImagem, quantasCabem,
+  pedirAgente, descarregar, CUSTO_POR_IMAGEM, custoPorImagem, quantasCabem, saldos, cabemAoTodo,
 } from './lib/manus-client.js';
 
 const ROOT = process.cwd();
@@ -441,12 +441,24 @@ async function principal() {
   let livresAntes = null;
   let pagas = 0;
   if (paraGerar.length) {
-    const c = await creditos();
-    livresAntes = c.livres;
-    cabem = quantasCabem(c.total, paraGerar.length);
-    log(`\n💳 ${c.total} créditos (${c.restaHoje} da renovação de hoje) → a ${CUSTO_POR_IMAGEM} por imagem, dá para ${quantasCabem(c.total)} imagem(ns)`);
+    /**
+     * ⚠️ **AS CONTAS TODAS, e a soma do `total` — não do `livres`.** Com duas contas, a
+     * corrida pode começar numa e acabar noutra; somando, a medição do custo continua
+     * certa aconteça o que acontecer. E numa conta paga o `free_credits` pode estar a
+     * zero e o gasto sair do saldo comprado — a diferença dos "livres" daria zero e o
+     * programa escreveria que as imagens saíram de graça.
+     */
+    const lidos = await saldos();
+    livresAntes = lidos.reduce((a, s) => a + s.total, 0);
+    cabem = cabemAoTodo(lidos, paraGerar.length);
+    for (const s of lidos) {
+      log(s.erro
+        ? `\n💳 ${s.nome}: ❌ não respondeu — ${s.erro}`
+        : `\n💳 ${s.nome}: ${s.total} créditos (${s.restaHoje} da renovação de hoje) → ${quantasCabem(s.total)} imagem(ns)`);
+    }
+    log(`   a ${CUSTO_POR_IMAGEM} créditos por imagem, dá para ${cabemAoTodo(lidos)} ao todo`);
     // ⚠️ O saldo pode vir NEGATIVO (visto: -2). Sem isto o aviso saía a falar de "-1".
-    if (c.total <= 0) log('   ⚠️ o saldo está a zero ou negativo — hoje não sai imagem nenhuma. A renovação diária ainda não caiu.');
+    if (!cabemAoTodo(lidos)) log('   ⚠️ nenhuma conta tem para uma imagem — hoje não sai nenhuma. A renovação diária ainda não caiu.');
     if (cabem < paraGerar.length) {
       log(`   ⚠️ faltam créditos para ${paraGerar.length - cabem} — este vídeo sai com menos fotografias, e isso é melhor do que ficar à espera.`);
     }
@@ -602,10 +614,10 @@ async function principal() {
    */
   if (livresAntes !== null && pagas) {
     try {
-      const fim = await creditos();
-      const real = custoPorImagem(livresAntes, fim.livres, pagas);
+      const fim = (await saldos()).reduce((a, s) => a + s.total, 0);
+      const real = custoPorImagem(livresAntes, fim, pagas);
       if (real) {
-        log(`\n💳 custou ${livresAntes - fim.livres} créditos em ${pagas} pedido(s) → ${real} por imagem (a régua diz ${CUSTO_POR_IMAGEM})`);
+        log(`\n💳 custou ${livresAntes - fim} créditos em ${pagas} pedido(s) → ${real} por imagem (a régua diz ${CUSTO_POR_IMAGEM})`);
         if (Math.abs(real - CUSTO_POR_IMAGEM) > 15) {
           log(`   ⚠️ a régua está a ${Math.abs(real - CUSTO_POR_IMAGEM)} créditos da realidade — corrija CUSTO_POR_IMAGEM em lib/manus-client.js.`);
         }

@@ -54,7 +54,7 @@ import { fileURLToPath, pathToFileURL } from 'url';
  */
 import { execFileSync } from 'child_process';
 import {
-  creditos, pedirAgente, descarregar, CUSTO_POR_IMAGEM, custoPorImagem, quantasCabem,
+  pedirAgente, descarregar, CUSTO_POR_IMAGEM, custoPorImagem, quantasCabem, saldos, cabemAoTodo,
 } from './lib/manus-client.js';
 import { primeiraFrase, MAX_PALAVRAS_CAPA_LONGO } from './lib/palavras.js';
 import {
@@ -342,15 +342,30 @@ export function seloDaCapa({ ficha = null, caderno = null, roteiro = {} } = {}) 
 
 async function main() {
   if (args.creditos) {
-    const c = await creditos();
-    console.log(`\n💳 créditos: ${c.total} ao todo · ${c.restaHoje} ainda por gastar hoje (de ${c.porDia}/dia) · ${c.livres} de saldo próprio`);
-    // ⚠️ O 52 estava escrito à mão AQUI e num `const` noutro ficheiro — duas cópias do
-    //    mesmo número, e as duas erradas. Agora é o do `manus-client.js`, medido em 10/08.
-    console.log(`   a ${CUSTO_POR_IMAGEM} créditos por imagem, dá para mais ${quantasCabem(c.total)} imagem(ns)`);
+    const lidos = await saldos();
+    console.log('');
+    for (const s of lidos) {
+      if (s.erro) {
+        console.log(`💳 ${s.nome} (${s.variavel}) — ❌ não respondeu: ${s.erro}`);
+        continue;
+      }
+      console.log(`💳 ${s.nome} (${s.variavel}): ${s.total} ao todo · ${s.restaHoje} ainda por gastar hoje (de ${s.porDia}/dia) · ${s.livres} de saldo próprio`);
+      // ⚠️ O 52 estava escrito à mão AQUI e num `const` noutro ficheiro — duas cópias do
+      //    mesmo número, e as duas erradas. Agora é o do `manus-client.js`, medido em 10/08.
+      console.log(`   → dá para ${quantasCabem(s.total)} imagem(ns), a ${CUSTO_POR_IMAGEM} créditos cada`);
+    }
+    /**
+     * ⚠️ **O TOTAL É A SOMA DAS IMAGENS, E NÃO A SOMA DOS CRÉDITOS.** Ver `cabemAoTodo`:
+     * com 50 numa conta e 50 noutra há 100 créditos e **zero** imagens possíveis, porque
+     * nenhuma das duas paga uma sozinha.
+     */
+    const cabem = cabemAoTodo(lidos);
+    console.log(`\n📊 ao todo: ${cabem} imagem(ns)${lidos.length > 1 ? `, somando as ${lidos.length} contas` : ''}`);
     // ⚠️ O saldo PODE vir negativo (visto: -2 em 10/08). Antes desta linha saía
     //    "dá para mais -1 imagem(ns)", que não é uma resposta.
-    if (c.total <= 0) console.log('   ⚠️ hoje NÃO dá para nenhuma — a renovação diária ainda não caiu.\n');
-    else console.log('');
+    if (!cabem) console.log('   ⚠️ hoje NÃO dá para nenhuma — a renovação diária ainda não caiu.');
+    if (lidos.length === 1) console.log('   ℹ️ só há uma conta ligada. Para ter reserva, ponha MANUS_API_KEY_2 no .env.local.');
+    console.log('');
     return;
   }
 
@@ -400,9 +415,20 @@ async function main() {
   const destino = join(RAIZ, 'youtube-render', 'public', 'manus', slug);
   mkdirSync(destino, { recursive: true });
 
-  const antes = await creditos();
+  /**
+   * ⚠️ **O SALDO MEDE-SE SOMANDO AS CONTAS TODAS, e é o que faz a conta do custo
+   * continuar certa mesmo quando a corrida troca de conta a meio.** Qualquer que seja a
+   * conta que pagou, a soma desceu na mesma medida.
+   *
+   * ⚠️ **E soma-se o `total`, não o `livres`.** Numa conta paga, `free_credits` pode
+   * ficar em zero e o gasto sair do saldo comprado: a diferença dos "livres" daria zero,
+   * e o programa escreveria que a imagem foi de graça.
+   */
+  const antes = await saldos();
+  const somar = (lista) => lista.reduce((a, s) => a + s.total, 0);
   console.log(`\n🎨 MANUS — "${roteiro.tema}"`);
-  console.log(`   créditos antes: ${antes.livres} livres de ${antes.total}\n`);
+  for (const s of antes) console.log(`   ${s.nome}: ${s.erro ? `❌ ${s.erro}` : `${s.total} créditos → ${quantasCabem(s.total)} imagem(ns)`}`);
+  console.log(`   cabem ${cabemAoTodo(antes)} imagem(ns) ao todo\n`);
 
   const trabalhos = [];
   /** As capas que a máquina leu e recusou — vão para a quarentena do banco no fim. */
@@ -706,15 +732,18 @@ async function main() {
     console.log('   Para pedir outra: o mesmo comando outra vez (a anterior não é apagada).');
   }
 
-  const depois = await creditos();
-  console.log(`\n💳 créditos depois: ${depois.livres} livres — gastou ${antes.livres - depois.livres}`);
+  const depois = await saldos();
+  console.log(`\n💳 depois: ${depois.map((s) => `${s.nome} ${s.total}`).join(' · ')} — gastou ${somar(antes) - somar(depois)}`);
   /**
    * ⚠️ **QUANTO CUSTOU POR IMAGEM, MEDIDO** — 10/08/2026. O `CUSTO_POR_IMAGEM` esteve
    * errado em 30 créditos durante dois meses porque ninguém o voltou a medir. Esta linha
    * é o que faz o erro aparecer da próxima vez, em vez de esperar por outra corrida
    * interrompida a meio.
+   *
+   * ⚠️ **Somam-se as contas todas**, e por isso a medição continua certa mesmo quando a
+   * corrida começa numa conta e acaba noutra.
    */
-  const real = custoPorImagem(antes.livres, depois.livres, pedidos);
+  const real = custoPorImagem(somar(antes), somar(depois), pedidos);
   if (real) {
     console.log(`   → ${real} por imagem em ${pedidos} pedido(s) (a régua diz ${CUSTO_POR_IMAGEM})`);
     if (Math.abs(real - CUSTO_POR_IMAGEM) > 15) {

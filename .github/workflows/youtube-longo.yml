@@ -414,12 +414,29 @@ jobs:
         if: steps.escolher.outputs.skip != 'true'
         env:
           MANUS_API_KEY: ${{ secrets.MANUS_API_KEY }}
+          # ═══ 🔴 A SEGUNDA CONTA DA MANUS — 10/08/2026, ordem do dono ═══
+          #
+          # A Manus era **o único ponto do vídeo longo sem plano B**. Medido no dia: o
+          # saldo estava em **-2** e não saía uma única imagem. Numa sexta às 23h isso é o
+          # vídeo da semana a subir sem capa e sem fotografias, com a corrida a verde e
+          # ninguém a saber até abrir o Studio.
+          #
+          # ⚠️ **A conta 1 gasta-se até secar, e só então entra a 2** (decisão do dono).
+          # A escolha é feita pelo programa, imagem a imagem, e cada tarefa fica agarrada
+          # à conta que a criou — ver o cabeçalho de `lib/manus-client.js`.
+          #
+          # ⚠️ **Se o segredo não existir, não falha nada:** a lista fica com uma conta e
+          # o comportamento é exactamente o de antes.
+          MANUS_API_KEY_2: ${{ secrets.MANUS_API_KEY_2 }}
         run: |
           set -uo pipefail
-          if [ -z "${MANUS_API_KEY:-}" ]; then
-            echo "::warning::não há chave da Manus nos segredos — este vídeo sai SEM fotografias."
-            echo "  Para as ligar: criar o segredo MANUS_API_KEY no GitHub."
+          if [ -z "${MANUS_API_KEY:-}" ] && [ -z "${MANUS_API_KEY_2:-}" ]; then
+            echo "::warning::não há chave nenhuma da Manus nos segredos — este vídeo sai SEM fotografias."
+            echo "  Para as ligar: criar o segredo MANUS_API_KEY no GitHub (e MANUS_API_KEY_2 para a reserva)."
             exit 0
+          fi
+          if [ -z "${MANUS_API_KEY_2:-}" ]; then
+            echo "::notice::só há uma conta da Manus ligada. Sem reserva, um saldo esgotado é um vídeo sem imagens."
           fi
           echo "🔤 a instalar o leitor de texto (é ele que recusa uma fotografia com letras)…"
           sudo timeout 300 apt-get install -y -qq tesseract-ocr tesseract-ocr-por || {
@@ -521,10 +538,15 @@ jobs:
         if: steps.escolher.outputs.skip != 'true'
         env:
           MANUS_API_KEY: ${{ secrets.MANUS_API_KEY }}
+          # ⚠️ A conta de reserva — ver a nota no passo das fotografias. Tem de estar
+          #    nos DOIS passos: as variáveis de ambiente não passam de um passo para o
+          #    outro, e a capa é feita depois das fotografias, que é exactamente quando a
+          #    conta 1 tem mais hipóteses de já estar seca.
+          MANUS_API_KEY_2: ${{ secrets.MANUS_API_KEY_2 }}
         run: |
           set -uo pipefail
-          if [ -z "${MANUS_API_KEY:-}" ]; then
-            echo "::warning::não há chave da Manus nos segredos — este vídeo sobe SEM miniatura própria e o YouTube escolhe um fotograma sozinho."
+          if [ -z "${MANUS_API_KEY:-}" ] && [ -z "${MANUS_API_KEY_2:-}" ]; then
+            echo "::warning::não há chave nenhuma da Manus nos segredos — este vídeo sobe SEM miniatura própria e o YouTube escolhe um fotograma sozinho."
             exit 0
           fi
           node src/scripts/youtube/capa-manus.js --slug="$SLUG" --so=capa || \

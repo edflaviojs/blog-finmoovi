@@ -34,7 +34,9 @@ import { tmpdir } from 'os';
 import { tituloDaCapa, seloDaCapa } from '../youtube/capa-manus.js';
 import { escolherMolde, moldesGastos, CENA_DA_CAPA } from '../youtube/lib/capas-do-longo.js';
 import { guardarCenarios } from '../youtube/lib/cenarios-do-longo.js';
-import { CUSTO_POR_IMAGEM, custoPorImagem } from '../youtube/lib/manus-client.js';
+import {
+  CUSTO_POR_IMAGEM, custoPorImagem, contas, exigirContas, escolherConta, cabemAoTodo,
+} from '../youtube/lib/manus-client.js';
 import { METAPHORS } from '../youtube/lib/schema-short.js';
 import { primeiraFrase } from '../youtube/lib/palavras.js';
 
@@ -1462,6 +1464,104 @@ console.log('   (as quatro coisas que estavam partidas e não tocavam em prova n
     .map((m) => (typeof m === 'string' ? m : m.id))
     .filter((m) => m && m !== 'clique-link' && !CENA_DA_CAPA[m]);
   ok('todas as metáforas do catálogo têm cena de capa escrita', semCena.length === 0, semCena.join(', '));
+}
+
+// ═══ AS DUAS CONTAS DA MANUS ══════════════════════════════════════════════════
+/**
+ * 🔴 A MANUS ERA O ÚNICO PONTO DO VÍDEO LONGO SEM PLANO B — 10/08/2026.
+ *
+ * ⚠️ **A prova que vale mais é a última: a chave não muda a meio de uma tarefa.** Uma
+ * tarefa pertence à conta que a criou, e perguntar por ela a outra conta devolve **vazio,
+ * sem erro** — o programa diria "voltou sem imagem" com a imagem feita e paga.
+ */
+console.log('\n💳 AS DUAS CONTAS DA MANUS — a reserva que entra quando a primeira seca');
+console.log('   (a Manus era o único ponto do vídeo longo sem plano B)\n');
+{
+  const guardadas = { 1: process.env.MANUS_API_KEY, 2: process.env.MANUS_API_KEY_2, 3: process.env.MANUS_API_KEY_3 };
+  const pôrChaves = (a, b, c) => {
+    if (a) process.env.MANUS_API_KEY = a; else delete process.env.MANUS_API_KEY;
+    if (b) process.env.MANUS_API_KEY_2 = b; else delete process.env.MANUS_API_KEY_2;
+    if (c) process.env.MANUS_API_KEY_3 = c; else delete process.env.MANUS_API_KEY_3;
+  };
+  try {
+    // ── com UMA chave, o comportamento é o de sempre ──
+    pôrChaves('k1');
+    ok('com uma chave só, há uma conta — e nada muda', contas().length === 1 && contas()[0].nome === 'conta 1');
+
+    pôrChaves('k1', 'k2');
+    const duas = contas();
+    ok('com duas chaves, há duas contas, por ordem', duas.length === 2 && duas[1].variavel === 'MANUS_API_KEY_2');
+
+    pôrChaves();
+    ok('sem chave nenhuma, `contas()` devolve vazio em vez de rebentar', contas().length === 0);
+    ok('e `exigirContas()` rebenta com um erro que diz o que fazer', (() => {
+      try { exigirContas(); return false; } catch (e) { return /MANUS_API_KEY/.test(e.message) && /env\.local/.test(e.message); }
+    })());
+
+    // ── a ordem: a 1ª até secar ──
+    const s = (nome, total, erro = null) => ({ nome, variavel: 'X', chave: 'k', total, livres: total, erro });
+    ok('🔴 escolhe a conta 1 enquanto ela tiver para uma imagem',
+      escolherConta([s('conta 1', 200), s('conta 2', 300)])?.nome === 'conta 1');
+    ok('e só passa à 2 quando a 1 não tem para UMA imagem inteira',
+      escolherConta([s('conta 1', CUSTO_POR_IMAGEM - 1), s('conta 2', 300)])?.nome === 'conta 2');
+    ok('salta uma conta que não respondeu',
+      escolherConta([s('conta 1', 300, 'chave inválida'), s('conta 2', 300)])?.nome === 'conta 2');
+    ok('e devolve nada quando nenhuma tem — em vez de tentar e falhar',
+      escolherConta([s('conta 1', 10), s('conta 2', 10)]) === null);
+    ok('um saldo negativo não conta como conta boa', escolherConta([s('conta 1', -2)]) === null);
+
+    /**
+     * 🔴 **OS CRÉDITOS NÃO SE JUNTAM ENTRE CONTAS**, e esta é a conta que quase saiu
+     * errada. É a mesma família do `329 ÷ 52` consertado nesta mesma manhã.
+     */
+    ok('🔴 50 + 50 créditos dão ZERO imagens (nenhuma conta paga uma sozinha)',
+      cabemAoTodo([s('conta 1', 50), s('conta 2', 50)]) === 0);
+    ok('e não 1, que é o que a soma dos créditos diria', Math.floor(100 / CUSTO_POR_IMAGEM) === 1);
+    ok('300 + 300 dão 6 imagens (3 em cada), e não 7',
+      cabemAoTodo([s('conta 1', 300), s('conta 2', 300)]) === 6, String(cabemAoTodo([s('conta 1', 300), s('conta 2', 300)])));
+    ok('e o teto de quantas se queriam continua a valer',
+      cabemAoTodo([s('conta 1', 300), s('conta 2', 300)], 2) === 2);
+  } finally {
+    pôrChaves(guardadas[1], guardadas[2], guardadas[3]);
+  }
+
+  /**
+   * 🔴 A PROVA QUE MAIS IMPORTA — **a chave não muda a meio de uma tarefa.**
+   *
+   * ⚠️ **Lê-se o FICHEIRO, e não se chama a rede.** Chamar a Manus numa prova gastaria
+   * créditos de verdade; e o que se quer garantir aqui é estrutural: que as três chamadas
+   * de uma tarefa levam todas a mesma chave. Um `pedir(...)` sem `chave` no meio do
+   * `pedirAgente` é o defeito, e vê-se a olho no texto.
+   */
+  const fonte = readFileSync(join(RAIZ, 'src', 'scripts', 'youtube', 'lib', 'manus-client.js'), 'utf-8');
+  const corpoDoPedirAgente = fonte.slice(fonte.indexOf('export async function pedirAgente'));
+  /**
+   * ⚠️ **Conta os parênteses em vez de usar uma expressão regular.** A 1ª versão desta
+   * prova usava `[^)]*` e parava no `)` de `encodeURIComponent(taskId)` — ficava com
+   * meia chamada e dizia que faltava a chave que estava lá. **A prova ficou vermelha por
+   * culpa da prova**, que é o pior tipo de vermelho: manda consertar o que está bom.
+   */
+  const chamadasDe = (texto) => {
+    const achadas = [];
+    for (let i = texto.indexOf('pedir('); i >= 0; i = texto.indexOf('pedir(', i + 1)) {
+      // ⚠️ `await pedir(` e não `pedirAgente(` nem `.pedir(` — o caractere antes tem de
+      //    ser um espaço, para não apanhar o nome da própria função.
+      if (!/\s/.test(texto[i - 1] || '')) continue;
+      let nivel = 0;
+      for (let j = i + 5; j < texto.length; j++) {
+        if (texto[j] === '(') nivel += 1;
+        else if (texto[j] === ')') {
+          nivel -= 1;
+          if (nivel === 0) { achadas.push(texto.slice(i, j + 1)); break; }
+        }
+      }
+    }
+    return achadas;
+  };
+  const chamadas = chamadasDe(corpoDoPedirAgente).filter((c) => c.includes('/v2/'));
+  ok('a tarefa faz as 3 chamadas conhecidas (criar, perguntar, buscar)', chamadas.length === 3, `achei ${chamadas.length}`);
+  ok('🔴 TODAS levam a mesma chave — nenhuma pergunta pela tarefa a outra conta',
+    chamadas.every((c) => /\bchave\b/.test(c)), chamadas.filter((c) => !/\bchave\b/.test(c)).map((c) => c.slice(0, 60)).join(' | '));
 }
 
 // ═══ RESULTADO ═══════════════════════════════════════════════════════════════
