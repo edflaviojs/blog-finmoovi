@@ -74,6 +74,9 @@ import { join, dirname } from 'node:path';
 
 // ─── caminhos ────────────────────────────────────────────────────────────────
 import { caminhoDaCapa, caminhoDaCapaLarga } from '../youtube/capa-short.js';
+// ⚠️ A capa do vídeo LONGO não está em `out/`: mora na pasta da Manus e traz o molde no
+// nome (são seis). `acharCapa` já sabe procurá-la — e já sabe ignorar as recusadas.
+import { acharCapa } from '../youtube/upload-longo.js';
 import { BORDAO } from '../youtube/lib/schema-short.js';
 /**
  * 🔑 A CALCULADORA DAQUELE TEMA — importada, não recriada.
@@ -538,7 +541,8 @@ export function etiquetasDo(roteiro) {
 }
 
 export function montarLegenda(roteiro) {
-  const titulo = limpar(roteiro.term || roteiro.keyword || '');
+  // ⚠️ Não é `limpar(term)`: o título do vídeo longo tem 140 letras. Ver `tituloParaLegenda`.
+  const titulo = tituloParaLegenda(roteiro);
   // ⚠️ O gancho vem da NARRAÇÃO, logo traz os números por extenso. Ver `numerosEmAlgarismo`.
   // ⚠️ E não se lê `intro.frase` à mão: o de 16s não tem `intro`. Ver `ganchoDoRoteiro`.
   const gancho = ganchoDoRoteiro(roteiro);
@@ -709,7 +713,7 @@ export function encaixarNoLimite(blocos, limite) {
 const tituloEGancho = (roteiro) => ({
   // O título já é escrito para o OLHO (é ele que vai no YouTube) e por isso já traz os
   // algarismos; o gancho vem da narração, que é escrita para o OUVIDO.
-  titulo: limpar(roteiro.term || roteiro.keyword || ''),
+  titulo: tituloParaLegenda(roteiro),
   gancho: ganchoDoRoteiro(roteiro),
 });
 
@@ -917,6 +921,83 @@ export const REDE_DE_FORA = {
   x: 'cobra US$ 0,20 por post com link (decisão do dono, 07/08)',
   tiktok: 'ordem do dono, 07/08: nada é enviado — nem em privado — enquanto a auditoria não sair',
 };
+
+/**
+ * 🔑 OS TRÊS FORMATOS DO CANAL — 10/08/2026.
+ *
+ * ═══ O QUE ISTO VEIO ARRUMAR ═══
+ * Até hoje este robô só sabia entregar UMA coisa: o Short de 50 segundos. Os dois Shorts
+ * de 16s e o vídeo longo semanal subiam ao YouTube e paravam ali. Não era defeito — era
+ * trabalho por fazer, e por isso nada se queixava.
+ *
+ * ⚠️ **E NÃO CHEGAVA PÔ-LOS TODOS NA MESMA FILA.** Os formatos diferem em coisas que
+ * mudam o que se pode publicar, e cada linha desta tabela é uma dessas diferenças:
+ *
+ * ═══ `pasta` — onde o Remotion escreve ═══
+ * O Short sai em `out/`; o longo sai em `out/longo/`. Adivinhar o caminho errado dá
+ * *"não encontrei o vídeo"* e a corrida morre antes de tentar seja o que for.
+ *
+ * ═══ `redes` — 🔴 e é aqui que está a decisão de conteúdo ═══
+ * O vídeo longo é **DEITADO (16:9) e tem 5 a 8 minutos**. O Instagram, o Threads e o
+ * Pinterest são casas de vídeo **em pé e curto**: um vídeo deitado de sete minutos entra
+ * lá como uma faixa fina no meio do ecrã, e é pior do que não entrar. Ele vai às quatro
+ * onde vídeo comprido e deitado é normal: **Facebook, LinkedIn, Telegram e Bluesky**
+ * (este leva a capa e o link, como sempre).
+ * ⚠️ `null` quer dizer *todas* — é o que os dois formatos de Short usam.
+ *
+ * ═══ `stories` — porquê nenhum, no longo ═══
+ * O Story tem tecto de 60 segundos: acima disso vai a **capa em pé**. O longo não tem
+ * capa em pé — a dele é a miniatura do YouTube, deitada. Sobraria um Story com uma
+ * imagem deitada esmagada no meio de um ecrã vertical.
+ *
+ * ═══ `horaBR` — três janelas que não se tocam ═══
+ * Três vídeos por dia a cair no mesmo par de horas é a assinatura de um robô. Cada
+ * formato tem a sua janela de 1h47, e o carteiro de cada um passa a sua `--hora`.
+ */
+export const FORMATOS = {
+  // O Short de 50s — o que já existia. Continua a ser o padrão quando o roteiro não diz.
+  curto: { nome: 'Short de 50s', pasta: ['youtube-render', 'out'], redes: null, stories: true, horaBR: 19 },
+  // Os dois de 16s em loop. Mesma pasta, mesmas redes; só a hora é que vem do turno.
+  loop16: { nome: 'Short de 16s', pasta: ['youtube-render', 'out'], redes: null, stories: true, horaBR: 10 },
+  longo: {
+    nome: 'Vídeo longo',
+    pasta: ['youtube-render', 'out', 'longo'],
+    redes: ['facebook', 'linkedin-page', 'telegram', 'bluesky'],
+    stories: false,
+    // 20h no domingo: a estreia no YouTube é às 19h, e as redes vêm DEPOIS dela.
+    horaBR: 20,
+  },
+};
+
+/** O formato deste vídeo, dito pelo próprio roteiro. Sem `formato` escrito, é o de 50s. */
+export function formatoDoRoteiro(roteiro) {
+  return FORMATOS[roteiro?.formato] || FORMATOS.curto;
+}
+
+/**
+ * As redes que este formato recebe.
+ * ⚠️ Filtra `REDES`, nunca constrói uma lista nova: assim os minutos, os limites e a
+ * ordem continuam a vir de um sítio só, e o TikTok continua fora de todos.
+ */
+export function redesDoFormato(formato, redes = REDES) {
+  if (!formato?.redes) return redes;
+  return redes.filter((r) => formato.redes.includes(r.id));
+}
+
+/**
+ * 🔴 O TÍTULO DO VÍDEO LONGO NÃO CABE EM LADO NENHUM.
+ *
+ * O `term` de um Short tem 20 a 40 letras. O do longo é o título do YouTube inteiro —
+ * o de 10/08 tem **140 letras**. Ele entra como primeira linha da legenda e, no Bluesky
+ * (300) e no Threads (500), comia o texto todo e o link ia ao corte.
+ *
+ * ⚠️ Corta-se na PALAVRA e só quando passa — um título curto não é tocado.
+ */
+export const MAX_TITULO_NA_LEGENDA = 90;
+export function tituloParaLegenda(roteiro) {
+  const t = limpar(roteiro?.term || roteiro?.keyword || '');
+  return t.length > MAX_TITULO_NA_LEGENDA ? `${cortarNaPalavra(t, MAX_TITULO_NA_LEGENDA)}…` : t;
+}
 
 /**
  * 🔴 UM VÍDEO ANTIGO NÃO PODE ESTREAR NAS SETE REDES NOVAS.
@@ -1618,12 +1699,19 @@ async function main() {
   if (!slug) throw new Error('Falta --slug.');
   const horaBR = Number(args.hora) > 0 ? Number(args.hora) : HORA_BR_PADRAO;
 
-  const mp4 = join(MP4_DIR, `${slug}.mp4`);
+  /**
+   * ⚠️ O ROTEIRO É LIDO PRIMEIRO, e o vídeo só depois — porque é o roteiro que diz o
+   * FORMATO, e é o formato que diz em que pasta o vídeo está (`out/` ou `out/longo/`).
+   * Ao contrário, procurava-se o Short numa pasta e o longo noutra às cegas.
+   */
   const roteiroPath = join(SCRIPT_DIR, `${slug}.script.json`);
-  if (!existsSync(mp4)) throw new Error(`Não encontrei o vídeo: ${mp4}`);
   if (!existsSync(roteiroPath)) throw new Error(`Não encontrei o roteiro: ${roteiroPath}`);
-
   const roteiro = JSON.parse(readFileSync(roteiroPath, 'utf-8'));
+
+  const formato = formatoDoRoteiro(roteiro);
+  const mp4 = join(ROOT, ...formato.pasta, `${slug}.mp4`);
+  if (!existsSync(mp4)) throw new Error(`Não encontrei o vídeo: ${mp4}`);
+
   const legenda = montarLegenda(roteiro);
   const tamanhoMB = (statSync(mp4).size / 1048576).toFixed(1);
 
@@ -1633,8 +1721,26 @@ async function main() {
    * é ela que decide quantas redes este vídeo tem, e portanto o que conta como "já saiu
    * em todas".
    */
+  /**
+   * ⚠️ **AS DUAS FILTRAGENS SÃO POR ESTA ORDEM, e a ordem importa.** Primeiro o FORMATO
+   * (que redes fazem sentido para um vídeo assim), e só depois a trava do vídeo antigo
+   * (que corta para o Instagram quando a fala ainda pede comentário).
+   *
+   * 🔴 E há um caso em que as duas juntas dão ZERO redes: um vídeo LONGO com a fala
+   * velha. O Instagram não está na lista do longo, portanto a trava não tem para onde
+   * cortar. Isso é o comportamento certo — melhor não sair em lado nenhum do que sair a
+   * prometer resposta onde ninguém responde —, mas tem de ser DITO, senão parece avaria.
+   */
+  const redesDoDia = redesDoFormato(formato);
   const soInstagram = falaPedeComentario(roteiro);
-  const aEntregar = soInstagram ? REDES.filter((r) => r.id === 'instagram') : REDES;
+  const aEntregar = soInstagram ? redesDoDia.filter((r) => r.id === 'instagram') : redesDoDia;
+  const storiesDoDia = formato.stories ? STORIES : [];
+  if (soInstagram && !aEntregar.length) {
+    log(`\n🔴 "${slug}" é um ${formato.nome} cuja fala ainda PEDE COMENTÁRIO — e o Instagram,`);
+    log('   que é a única rede onde há robô a responder, não recebe este formato.');
+    log('   Não sai em rede nenhuma. Refaça o vídeo com a fala nova ("procura FinMoovi").');
+    return 0;
+  }
   if (soInstagram) {
     log('\n🔴 A FALA DESTE VÍDEO AINDA PEDE COMENTÁRIO — foi escrito antes de 07/08.');
     log('   Sai SÓ no Instagram, que é onde a automação responde. As outras sete ficam de fora:');
@@ -1677,7 +1783,7 @@ async function main() {
    * falhar para o robô dizer *"já foi agendado nas 7 redes, nada a fazer"* e **nunca mais
    * o tentar**: a única cura seria editar o caderno à mão. Apanhado a reler o código.
    */
-  const storiesQueFaltam = storiesEmFalta(registo, aEntregar);
+  const storiesQueFaltam = storiesEmFalta(registo, aEntregar, storiesDoDia);
 
   if (!DRY_RUN && registo && !estado.faltam.length && !storiesQueFaltam.length) {
     log(`⏭️  "${slug}" já foi agendado nas ${estado.feitas.length} redes (e nos Stories) em ${registo.agendadoEm}. Nada a fazer.`);
@@ -1693,17 +1799,38 @@ async function main() {
   log(`🎞️  ficheiro: ${tamanhoMB} MB`);
   log(`🕖 âncora: ${emHoraDoBrasil(quando)} no Brasil  =  ${quando.toISOString()} em UTC`);
 
-  const capaLocal = caminhoDaCapa(slug);
-  const capaLargaLocal = caminhoDaCapaLarga(slug);
-  const temCapa = existsSync(capaLocal);
+  /**
+   * 🔴 A CAPA DO VÍDEO LONGO VIVE NOUTRO SÍTIO — e é uma só, deitada.
+   *
+   * O Short tira duas fotografias do mesmo instante (em pé, 1080×1920, e deitada,
+   * 1280×720) e guarda-as em `out/capa-<slug>*.jpg`. O longo não: a capa dele é a
+   * miniatura do YouTube, feita pela Manus, e mora em
+   * `youtube-render/public/manus/<slug>/capa-<molde>.jpg` — com o MOLDE no nome, que são
+   * seis, e por isso não se adivinha o caminho: pergunta-se ao `acharCapa`, que já sabe
+   * procurar (e já sabe ignorar as que estão em quarentena).
+   *
+   * ⚠️ **Ela entra como capa DEITADA**, que é a forma dela. Quem a usa é o Bluesky. Capa
+   * "em pé" do longo não existe — e é por isso que este formato não faz Story.
+   */
+  const doLongo = formato === FORMATOS.longo;
+  const capaDoLongo = doLongo ? acharCapa(slug) : null;
+  const capaLocal = doLongo ? null : caminhoDaCapa(slug);
+  const capaLargaLocal = doLongo ? capaDoLongo : caminhoDaCapaLarga(slug);
+  const temCapa = Boolean(capaLocal) && existsSync(capaLocal);
   // ⚠️ A deitada só existe nos vídeos produzidos depois de ela nascer — ver `midiasDaRede`.
-  const temCapaLarga = existsSync(capaLargaLocal);
-  const titulo = limpar(roteiro.term || roteiro.keyword || '');
+  const temCapaLarga = Boolean(capaLargaLocal) && existsSync(capaLargaLocal);
+  const titulo = tituloParaLegenda(roteiro);
 
   if (DRY_RUN) {
     // A capa aparece no ensaio de propósito: a sua ausência tem de ser visível ANTES
     // da entrega, e não descoberta depois no perfil.
-    log(`🖼️  capa: ${temCapa ? `${Math.round(statSync(capaLocal).size / 1024)} KB` : 'FALTA — o Instagram escolheria um fotograma ao calhas, e o Pinterest nem sairia'}`);
+    // ⚠️ A queixa da capa em pé só faz sentido a quem a usa. No vídeo longo ela NÃO EXISTE
+    // (a capa dele é a miniatura deitada do YouTube) e nem o Instagram nem o Pinterest
+    // recebem este formato: dizer "o Pinterest nem sairia" seria um alarme inventado.
+    const semCapaDizQue = doLongo
+      ? 'não há — e não faz falta: este formato não vai ao Instagram nem ao Pinterest'
+      : 'FALTA — o Instagram escolheria um fotograma ao calhas, e o Pinterest nem sairia';
+    log(`🖼️  capa em pé: ${temCapa ? `${Math.round(statSync(capaLocal).size / 1024)} KB` : semCapaDizQue}`);
     /**
      * ⚠️ O ENSAIO MOSTRA O PEDIDO, NÃO O DISCO. A capa foi entregue duas semanas num
      * campo que não existe e o ensaio dizia sempre "capa: 139 KB" — verdade, e inútil:
@@ -1731,10 +1858,16 @@ async function main() {
       for (const l of texto.split('\n')) log(`     ${l}`);
     }
 
-    const escolha = oQueVaiNoStory({ duracaoSeg: duracaoDoMp4(mp4), media, capa });
+    // ⚠️ A duração só se mede quando há Story para decidir. O vídeo longo não faz Story
+    // (ver `FORMATOS`), e mandar o ffprobe ler 136 MB para não usar a resposta era gasto
+    // puro — e mais um sítio onde uma corrida podia morrer sem precisar.
+    if (!storiesDoDia.length) log(`\n📖 Stories: nenhum — o ${formato.nome} não faz Story (a capa dele é deitada).`);
+    const escolha = storiesDoDia.length
+      ? oQueVaiNoStory({ duracaoSeg: duracaoDoMp4(mp4), media, capa })
+      : null;
     log(`\n${'─'.repeat(72)}`);
     // ⚠️ Só o Instagram e o Facebook fazem Story — perguntado ao servidor. Ver `STORIES`.
-    for (const story of STORIES) {
+    for (const story of storiesDoDia) {
       const dona = aEntregar.find((r) => r.id === story.canal);
       const hora = dona ? emHoraDoBrasil(horaDaRede(quando, { minutos: minutosDoStory(story) }).quandoUTC) : null;
       log(`📖 ${story.nome}${hora ? `, ${MINUTOS_ATE_O_STORY} min depois do post (${hora})` : ''}:`);
@@ -1868,8 +2001,11 @@ async function main() {
    * se chega a esta linha; se o Story falhar — por limite do plano, por rede, por o que
    * for —, o dia continua a ter Reel.
    */
-  const escolhaDoStory = oQueVaiNoStory({ duracaoSeg: duracaoDoMp4(mp4), media, capa });
-  for (const story of STORIES) {
+  // ⚠️ Mesma razão do ensaio: sem Story para decidir, não se mede nada. Ver `FORMATOS`.
+  const escolhaDoStory = storiesDoDia.length
+    ? oQueVaiNoStory({ duracaoSeg: duracaoDoMp4(mp4), media, capa })
+    : null;
+  for (const story of storiesDoDia) {
     if (registo?.redes?.[story.id]) { log(`\n⏭️  ${story.nome}: já estava agendado`); continue; }
     const dona = aEntregar.find((r) => r.id === story.canal);
     // 🔴 Story órfão não sai: se o post daquela rede não foi agendado (falhou, ou a rede

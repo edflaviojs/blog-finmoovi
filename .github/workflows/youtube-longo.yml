@@ -686,6 +686,17 @@ jobs:
             youtube-render/out/longo/${{ env.SLUG }}.mp4
             youtube-render/public/audio/${{ env.SLUG }}/*.srt
             src/scripts/youtube/output/${{ env.SLUG }}.descricao.txt
+            src/scripts/youtube/output/${{ env.SLUG }}.script.json
+            youtube-render/public/manus/${{ env.SLUG }}/capa-*.jpg
+          # ⚠️ AS DUAS LINHAS DE CIMA ENTRARAM EM 10/08, e cada uma tapa um buraco do
+          # carteiro das redes:
+          #   · o `.script.json` é de onde ele tira a legenda, o gancho e os tópicos —
+          #     sem ele a entrega morre logo com "não encontrei o roteiro";
+          #   · a `capa-*.jpg` é a que vai ao Bluesky, que NÃO publica vídeo: sem ela,
+          #     aquela rede fica de fora todas as semanas, em silêncio.
+          # ⚠️ A capa pode não existir (só sai se houver chave da Manus) e o padrão fica
+          # vazio — isso é AVISO, não erro: o `if-no-files-found` olha o conjunto, e o MP4
+          # está sempre lá.
           if-no-files-found: error
           retention-days: 30
 
@@ -721,12 +732,26 @@ jobs:
 
       # ⚠️ Se isto não correr, o caderno não sabe que o vídeo foi ao ar — e na semana
       # seguinte o robô voltava a escolher o mesmo tema. Anda sempre com a subida.
-      - name: Guardar no caderno do vídeo longo
+      # ♦ E DESDE 10/08 ELE TAMBÉM ENTRA NA FILA DAS REDES (IMPLEMENTACAO26 §15).
+      #
+      # Até aqui o vídeo longo subia ao YouTube e parava ali — nunca foi ligado ao
+      # Multipost. Vai às QUATRO redes onde vídeo deitado e comprido é normal (Facebook,
+      # LinkedIn, Telegram e Bluesky); ver `FORMATOS` em `entregar.js` para saber porque
+      # não vai ao Instagram, ao Threads nem ao Pinterest.
+      #
+      # ⚠️ A FILA É PRÓPRIA, como a dos outros formatos. E o carteiro dela corre ao
+      # DOMINGO, não hoje: o vídeo é produzido no sábado de madrugada e estreia no
+      # domingo às 19h — as redes vêm depois da estreia, nunca antes.
+      - name: Guardar no caderno do vídeo longo e pôr na fila das redes
         if: steps.escolher.outputs.skip != 'true' && (github.event_name == 'schedule' || github.event.inputs.publicar == 'true')
         run: |
+          node src/scripts/youtube/outbox.js enqueue \
+            --file-slug="$SLUG" --run-id="${{ github.run_id }}" \
+            --fila=longo-redes.json
           git config user.name "FinMoovi Bot"
           git config user.email "bot@finmoovi.com"
-          git add .github/data/youtube-longos-published.json .github/data/youtube-longos.json
+          git add .github/data/youtube-longos-published.json .github/data/youtube-longos.json \
+                  .github/data/longo-redes.json
           if git diff --staged --quiet; then
             echo "Nada de novo no caderno."
           else

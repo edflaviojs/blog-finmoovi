@@ -27,6 +27,7 @@ import {
   numerosEmAlgarismo, lerNumeral, topicosDoRoteiro, montarLegenda, ganchoDoRoteiro,
   linkDoVideo, topicosSemOProduto, comoLista, MAX_ETIQUETAS_LINKEDIN,
   horaDaRede, MINUTOS_DE_MARGEM, STORIES, minutosDoStory, storiesEmFalta,
+  FORMATOS, formatoDoRoteiro, redesDoFormato, tituloParaLegenda, MAX_TITULO_NA_LEGENDA,
 } from '../multipost/entregar.js';
 // ⚠️ O vigia nasceu em 10/08 e prova-se aqui, no mesmo sítio da entrega: são as duas
 // metades da mesma pergunta — o que mandamos, e o que a rede fez com aquilo.
@@ -964,6 +965,68 @@ console.log('\n20. O GANCHO — os dois formatos guardam-no em sítios diferente
   ok('🔑 e a legenda do de 16s deixa de ter o buraco onde devia estar o gancho',
     legenda[0] === 'A conta de luz do verão' && legenda[2].startsWith('Se você ainda faz conta de luz'),
     legenda.slice(0, 3).join(' | '));
+}
+
+console.log('\n21. OS TRÊS FORMATOS — cada vídeo vai onde faz sentido, e só lá');
+
+{
+  ok('o roteiro sem `formato` continua a ser o Short de 50s (é o que os antigos são)',
+    formatoDoRoteiro({}) === FORMATOS.curto);
+  ok('e `loop16` e `longo` são reconhecidos pelo próprio roteiro',
+    formatoDoRoteiro({ formato: 'loop16' }) === FORMATOS.loop16
+    && formatoDoRoteiro({ formato: 'longo' }) === FORMATOS.longo);
+
+  /**
+   * 🔴 A REGRA DE CONTEÚDO DO VÍDEO LONGO. Ele é DEITADO (16:9) e tem 5 a 8 minutos. O
+   * Instagram, o Threads e o Pinterest são casas de vídeo EM PÉ e CURTO: lá ele entraria
+   * como uma faixa fina no meio do ecrã, que é pior do que não entrar.
+   */
+  const doLongo = redesDoFormato(FORMATOS.longo).map((r) => r.id);
+  ok('🔴 o vídeo longo vai a QUATRO redes — as que aceitam vídeo deitado e comprido',
+    doLongo.join(',') === 'facebook,linkedin-page,telegram,bluesky', doLongo.join(','));
+  ok('🔴 e não vai ao Instagram, ao Threads nem ao Pinterest (vídeo em pé e curto)',
+    !doLongo.includes('instagram') && !doLongo.includes('threads') && !doLongo.includes('pinterest'));
+  ok('os dois Shorts vão às sete, como sempre',
+    redesDoFormato(FORMATOS.curto).length === REDES.length
+    && redesDoFormato(FORMATOS.loop16).length === REDES.length);
+  /**
+   * ⚠️ O TIKTOK CONTINUA FORA DE TODOS. `redesDoFormato` FILTRA `REDES` em vez de
+   * construir listas novas — se um dia alguém escrever a lista do longo à mão, é aqui
+   * que se vê que o TikTok voltou pela porta das traseiras.
+   */
+  ok('⚠️ e o TikTok continua fora de todos os formatos, porque se FILTRA `REDES`',
+    Object.values(FORMATOS).every((f) => !redesDoFormato(f).some((r) => r.id === 'tiktok')));
+
+  ok('🔑 só o vídeo longo é que não faz Story — a capa dele é deitada',
+    FORMATOS.longo.stories === false && FORMATOS.curto.stories === true && FORMATOS.loop16.stories === true);
+
+  /**
+   * 🔴 TRÊS JANELAS QUE NÃO SE TOCAM. Cada formato ocupa 1h47 (do minuto 0 ao 107).
+   * Três vídeos por dia a cair no mesmo par de horas é a assinatura de um robô.
+   */
+  const ULTIMO_MINUTO = Math.max(...REDES.map((r) => r.minutos));
+  const janelas = [FORMATOS.loop16.horaBR, 14, FORMATOS.curto.horaBR].sort((a, b) => a - b);
+  ok('🔴 as três janelas do dia não se sobrepõem (cada uma ocupa 1h47)',
+    janelas.every((h, i) => i === 0 || (h * 60) > (janelas[i - 1] * 60 + ULTIMO_MINUTO)),
+    janelas.join('h, ') + 'h');
+  ok('e a última rede do dia continua dentro do horário nobre (antes das 22h)',
+    FORMATOS.curto.horaBR * 60 + ULTIMO_MINUTO < 22 * 60);
+  ok('o longo sai DEPOIS da estreia no YouTube, que é às 19h de domingo',
+    FORMATOS.longo.horaBR >= 20);
+
+  /**
+   * 🔴 O TÍTULO DO LONGO NÃO CABE EM LADO NENHUM. O `term` dele é o título do YouTube
+   * inteiro — o de 10/08 tem 140 letras — e ia como primeira linha da legenda. No Bluesky
+   * (300) comia o texto todo e o link caía no corte.
+   */
+  const TITULO_LONGO = 'Onde o salário some: por que o dinheiro parece acabar antes do fim do mês, e como ver quanto você realmente tem antes de decidir o que cabe';
+  const cortado = tituloParaLegenda({ term: TITULO_LONGO });
+  ok('🔴 um título de 140 letras é cortado, e cortado na PALAVRA',
+    cortado.length <= MAX_TITULO_NA_LEGENDA + 1 && cortado.endsWith('…') && !cortado.includes('  '), cortado);
+  ok('e um título curto não é tocado',
+    tituloParaLegenda({ term: 'A conta de luz do verão' }) === 'A conta de luz do verão');
+  ok('sem `term`, vale a palavra-chave — como sempre valeu',
+    tituloParaLegenda({ keyword: 'Alavancagem' }) === 'Alavancagem');
 }
 
 console.log(`\n${'═'.repeat(72)}`);
