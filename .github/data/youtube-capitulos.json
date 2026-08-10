@@ -368,8 +368,51 @@
           "titulo": "meta da viagem"
         }
       ]
+    },
+    {
+      "videoId": "VU9FI7zkvRA",
+      "title": "Como Investir pelo Nubank do Zero em 2026 (o jeito certo, passo a passo)",
+      "channel": "Luciano Fernandes",
+      "duracaoSeg": 727,
+      "idioma": "pt",
+      "viewsPerDay": 449,
+      "vistoEm": "2026-08-10",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "O contraste: 113 milhões x 5,5 milhões"
+        },
+        {
+          "seg": 90,
+          "titulo": "O Nubank é uma corretora"
+        },
+        {
+          "seg": 150,
+          "titulo": "Antes de investir: mentalidade e emoção"
+        },
+        {
+          "seg": 270,
+          "titulo": "Primeiro a reserva de emergência"
+        },
+        {
+          "seg": 330,
+          "titulo": "Passo a passo: onde clicar no app"
+        },
+        {
+          "seg": 420,
+          "titulo": "Renda fixa: CDB, LCI/LCA e Tesouro Direto"
+        },
+        {
+          "seg": 510,
+          "titulo": "Renda variável: ações, FIIs e ETFs"
+        },
+        {
+          "seg": 630,
+          "titulo": "Como acompanhar e a oportunidade que a maioria ignora"
+        }
+      ]
     }
   ],
-  "atualizadoEm": "2026-08-09T04:55:30.359Z",
-  "total": 8
+  "atualizadoEm": "2026-08-10T05:17:23.017Z",
+  "total": 9
 }
