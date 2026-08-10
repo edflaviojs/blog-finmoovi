@@ -53,7 +53,7 @@ import { fileURLToPath, pathToFileURL } from 'url';
  */
 import { execFileSync } from 'child_process';
 import {
-  creditos, pedirAgente, descarregar, CUSTO_POR_IMAGEM, custoPorImagem,
+  creditos, pedirAgente, descarregar, CUSTO_POR_IMAGEM, custoPorImagem, quantasCabem,
 } from './lib/manus-client.js';
 import { primeiraFrase, MAX_PALAVRAS_CAPA_LONGO } from './lib/palavras.js';
 import {
@@ -323,7 +323,11 @@ async function main() {
     console.log(`\n💳 créditos: ${c.total} ao todo · ${c.restaHoje} ainda por gastar hoje (de ${c.porDia}/dia) · ${c.livres} de saldo próprio`);
     // ⚠️ O 52 estava escrito à mão AQUI e num `const` noutro ficheiro — duas cópias do
     //    mesmo número, e as duas erradas. Agora é o do `manus-client.js`, medido em 10/08.
-    console.log(`   a ${CUSTO_POR_IMAGEM} créditos por imagem, dá para mais ${Math.floor(c.total / CUSTO_POR_IMAGEM)} imagem(ns)\n`);
+    console.log(`   a ${CUSTO_POR_IMAGEM} créditos por imagem, dá para mais ${quantasCabem(c.total)} imagem(ns)`);
+    // ⚠️ O saldo PODE vir negativo (visto: -2 em 10/08). Antes desta linha saía
+    //    "dá para mais -1 imagem(ns)", que não é uma resposta.
+    if (c.total <= 0) console.log('   ⚠️ hoje NÃO dá para nenhuma — a renovação diária ainda não caiu.\n');
+    else console.log('');
     return;
   }
 

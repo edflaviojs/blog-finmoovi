@@ -50,7 +50,7 @@ import { join } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { execFileSync } from 'node:child_process';
 import {
-  creditos, pedirAgente, descarregar, CUSTO_POR_IMAGEM, custoPorImagem,
+  creditos, pedirAgente, descarregar, CUSTO_POR_IMAGEM, custoPorImagem, quantasCabem,
 } from './lib/manus-client.js';
 
 const ROOT = process.cwd();
@@ -443,8 +443,10 @@ async function principal() {
   if (paraGerar.length) {
     const c = await creditos();
     livresAntes = c.livres;
-    cabem = Math.min(paraGerar.length, Math.floor(c.total / CUSTO_POR_IMAGEM));
-    log(`\n💳 ${c.total} créditos (${c.restaHoje} da renovação de hoje) → a ${CUSTO_POR_IMAGEM} por imagem, dá para ${Math.floor(c.total / CUSTO_POR_IMAGEM)} imagem(ns)`);
+    cabem = quantasCabem(c.total, paraGerar.length);
+    log(`\n💳 ${c.total} créditos (${c.restaHoje} da renovação de hoje) → a ${CUSTO_POR_IMAGEM} por imagem, dá para ${quantasCabem(c.total)} imagem(ns)`);
+    // ⚠️ O saldo pode vir NEGATIVO (visto: -2). Sem isto o aviso saía a falar de "-1".
+    if (c.total <= 0) log('   ⚠️ o saldo está a zero ou negativo — hoje não sai imagem nenhuma. A renovação diária ainda não caiu.');
     if (cabem < paraGerar.length) {
       log(`   ⚠️ faltam créditos para ${paraGerar.length - cabem} — este vídeo sai com menos fotografias, e isso é melhor do que ficar à espera.`);
     }

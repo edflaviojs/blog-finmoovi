@@ -96,6 +96,20 @@ export const CUSTO_POR_IMAGEM = 82;
  * em silêncio. Devolve `null` quando não dá para saber (nenhuma imagem, ou o saldo subiu
  * por causa da renovação do dia ter caído no meio da corrida).
  */
+/**
+ * Quantas imagens cabem no saldo. **Nunca devolve um número negativo.**
+ *
+ * ⚠️ **O saldo PODE VIR NEGATIVO, e isso foi visto — 10/08/2026: `-2`.** A conta grátis
+ * fica a dever quando a última imagem custa mais do que restava, e só volta ao positivo
+ * quando a renovação do dia cai. Sem esta guarda, o programa escrevia *"dá para mais -1
+ * imagem(ns)"* — que não é uma resposta — e a conta do orçamento ficava com um limite
+ * negativo. **Zero é a resposta certa, e diz-se com todas as letras: hoje não dá.**
+ */
+export function quantasCabem(saldo, quantasQueria = Infinity) {
+  const cabem = Math.floor(Number(saldo || 0) / CUSTO_POR_IMAGEM);
+  return Math.max(0, Math.min(quantasQueria, cabem));
+}
+
 export function custoPorImagem(livresAntes, livresDepois, quantasImagens) {
   const gasto = Number(livresAntes) - Number(livresDepois);
   if (!Number.isFinite(gasto) || gasto <= 0 || !quantasImagens) return null;
