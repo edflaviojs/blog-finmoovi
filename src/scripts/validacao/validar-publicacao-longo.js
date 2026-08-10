@@ -1564,6 +1564,41 @@ console.log('   (a Manus era o único ponto do vídeo longo sem plano B)\n');
     chamadas.every((c) => /\bchave\b/.test(c)), chamadas.filter((c) => !/\bchave\b/.test(c)).map((c) => c.slice(0, 60)).join(' | '));
 }
 
+// ═══ O LEITOR DE TEXTO, E A ORDEM QUE POUPA CRÉDITOS ═════════════════════════
+/**
+ * 🔴 O TESSERACT ESTAVA INSTALADO E O PROGRAMA NÃO O ENCONTRAVA — 10/08/2026.
+ *
+ * Na nuvem (Linux) o `apt` põe-no no caminho; na máquina do dono ele vive em
+ * `C:\Program Files\Tesseract-OCR\` e não está no caminho. `haLeitor()` dizia **não** —
+ * e o programa das fotografias **pagava a imagem, descarregava-a, encolhia-a, e SÓ ENTÃO**
+ * descobria que não a podia conferir. **198 créditos no lixo**, com o leitor a dois passos.
+ */
+console.log('\n🔤 O LEITOR DE TEXTO — e a ordem que poupa créditos\n');
+{
+  const fonte = readFileSync(join(RAIZ, 'src', 'scripts', 'youtube', 'fotos-longo.js'), 'utf-8');
+  ok('procura o tesseract também onde o Windows o instala',
+    /Program Files\\\\Tesseract-OCR/.test(fonte));
+  ok('e o `-l por+eng` deixou de ser fixo (esta máquina só tem inglês)',
+    !/'-l',\s*'por\+eng'/.test(fonte) && /idiomasDoLeitor/.test(fonte));
+
+  /**
+   * 🔴 **A PROVA QUE VALE DINHEIRO: conferir o leitor ANTES do primeiro pedido pago.**
+   * Compara-se a posição das duas coisas no ficheiro — se o `haLeitor()` voltar para
+   * depois do `pedirAgente`, esta prova fica vermelha.
+   */
+  const guarda = fonte.indexOf('if (!haLeitor())');
+  const primeiroPago = fonte.indexOf('await pedirAgente(');
+  ok('🔴 o leitor é conferido ANTES do primeiro pedido pago', guarda > 0 && guarda < primeiroPago,
+    `guarda em ${guarda}, primeiro pedido pago em ${primeiroPago}`);
+  ok('e sem leitor sai a ZERO, não a vermelho (o vídeo sai com as ilustrações)',
+    /nenhuma fotografia vai ser pedida[\s\S]{0,600}?\n\s*return;/.test(fonte));
+
+  // ── as legendas pagas são opt-in ──
+  const srt = readFileSync(join(RAIZ, 'src', 'scripts', 'youtube', 'srt-longo.js'), 'utf-8');
+  ok('a tradução paga é OPT-IN — sem `--pago`, nada muda na nuvem',
+    /const PAGO = Boolean\(args\.pago\)/.test(srt) && /PAGO \? \{ pago: 'leitor' \} : \{\}/.test(srt));
+}
+
 // ═══ RESULTADO ═══════════════════════════════════════════════════════════════
 console.log(`\n${'═'.repeat(72)}`);
 console.log(`  ${passou} provas verdes · ${falhou} vermelhas`);

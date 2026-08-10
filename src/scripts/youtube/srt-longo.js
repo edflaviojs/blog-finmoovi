@@ -43,6 +43,8 @@
  * Há uma prova automática que compara esta conta com a do render (`validar-publicacao-longo.js`).
  *
  * Uso: node src/scripts/youtube/srt-longo.js --slug=sair-do-vermelho
+ *      node src/scripts/youtube/srt-longo.js --slug=... --pago   (à mão, quando as
+ *          chaves gratuitas de texto não respondem nesta máquina — ver `PAGO`)
  *      node src/scripts/youtube/srt-longo.js --slug=... --so-pt   (sem gastar IA)
  */
 
@@ -131,9 +133,35 @@ export function iniciosDasCenas(plano, timing) {
  * que não é a que está à frente dele.**
  */
 const ETIQUETA = { en: 'inglês (en-US)', es: 'espanhol (es-ES)' };
+
+/**
+ * ═══ 🔴 `--pago`, E É OPT-IN POR UMA RAZÃO DE DINHEIRO — 10/08/2026 ═══
+ *
+ * ═══ O QUE ACONTECEU ═══
+ * Ao tentar fechar um vídeo à mão nesta máquina, as legendas en/es **não saíram**: os
+ * três provedores gratuitos de texto respondem `HTTP 401` aqui (a chave do Groq que vive
+ * no `.env.local` está morta, e as do Cerebras e da Cloudflare nunca lá estiveram). Na
+ * nuvem os três funcionam — **este é mais um dos defeitos que só mordem na máquina do
+ * dono**, e por isso ninguém tinha dado por ele.
+ *
+ * A chave PAGA (`KIE_AI_KEY`) está aqui e funciona: é ela que escreve o guião.
+ *
+ * ⚠️ **MAS NÃO SE LIGA POR OMISSÃO, e é a mesma regra escrita em `kie-ai.js`:** esta
+ * conta serve os 27 robôs do blog. Ligar o pago "porque é mais fiável" põe toda a gente
+ * a pagar por uma coisa que na nuvem já sai de graça. Fica uma opção que só entra quando
+ * é pedida — e quem a pede é uma pessoa, à mão, num dia em que precisa do vídeo pronto.
+ *
+ * ⚠️ **O papel é `leitor` e não `escritor`.** Traduzir é reescrever texto que já existe,
+ * que é o trabalho do leitor; e a fila do leitor (claude → gemini → gpt) tem duas redes
+ * por baixo, enquanto a do escritor é um modelo só.
+ */
+const PAGO = Boolean(args.pago);
+
 async function traduzir(texto, lingua) {
   const pedido = `Traduza para ${ETIQUETA[lingua]} o trecho de narração abaixo. É a legenda de um vídeo de finanças pessoais de cerca de seis minutos, narrado na primeira pessoa, em tom coloquial e direto — não é um anúncio nem um texto formal. Mantenha o tom e o comprimento aproximado. Responda APENAS com a tradução, sem aspas nem comentários.\n\n${texto}`;
-  const saida = await generateText(pedido, { maxTokens: 500, temperature: 0.3 });
+  const saida = await generateText(pedido, {
+    maxTokens: 500, temperature: 0.3, ...(PAGO ? { pago: 'leitor' } : {}),
+  });
   return String(saida || '').trim().replace(/^["']|["']$/g, '');
 }
 

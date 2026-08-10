@@ -276,9 +276,54 @@ ${REGRAS_FIXAS}`;
 // ═══════════════════════════════════════════════════════════════════════════════
 
 /** Há leitor de texto nesta máquina? */
+/**
+ * ═══ 🔴 O LEITOR ESTAVA INSTALADO E O PROGRAMA NÃO O ENCONTRAVA — 10/08/2026 ═══
+ *
+ * ═══ O QUE ACONTECEU, E QUANTO CUSTAVA ═══
+ * `haLeitor()` chamava `tesseract` a seco. Na nuvem (Linux) isso acha-o, porque o `apt`
+ * o põe no caminho. **Na máquina do dono ele está em `C:\Program Files\Tesseract-OCR\` e
+ * não está no caminho** — portanto `haLeitor()` dizia **não**, e o programa das
+ * fotografias **paga a imagem, descarrega-a, encolhe-a, e SÓ ENTÃO** descobre que não a
+ * pode conferir e deita-a fora. **Duas fotografias = 164 créditos no lixo**, com o
+ * tesseract instalado a dois passos.
+ *
+ * ⚠️ **É a família de defeito nº 1 desta casa noutro sítio:** uma regra escrita para uma
+ * estrutura (o Linux da nuvem) a correr calada noutra (o Windows do dono).
+ *
+ * ⚠️ **E O IDIOMA TAMBÉM ESTAVA ERRADO.** Pedia-se `-l por+eng`, mas esta instalação só
+ * traz `eng` e `osd` — `tesseract` recusa-se a correr com um idioma que não tem, e
+ * rebentava com um erro que ninguém ligaria à fotografia. Agora pergunta-se-lhe quais
+ * tem e usam-se os que existem.
+ */
+const CAMINHOS_DO_LEITOR = [
+  'tesseract',
+  'C:\\Program Files\\Tesseract-OCR\\tesseract.exe',
+  'C:\\Program Files (x86)\\Tesseract-OCR\\tesseract.exe',
+];
+
+/** O leitor desta máquina, ou `null`. Lembra-se da resposta — é a mesma a corrida toda. */
+let leitorAchado;
+export function ondeEstaOLeitor() {
+  if (leitorAchado !== undefined) return leitorAchado;
+  for (const c of CAMINHOS_DO_LEITOR) {
+    try { execFileSync(c, ['--version'], { stdio: 'ignore' }); leitorAchado = c; return c; } catch { /* o próximo */ }
+  }
+  leitorAchado = null;
+  return null;
+}
+
+/** Os idiomas que ESTA instalação tem, dos que nos interessam. Nunca devolve vazio. */
+function idiomasDoLeitor(exe) {
+  try {
+    const saida = String(execFileSync(exe, ['--list-langs'], { encoding: 'utf-8', stdio: ['ignore', 'pipe', 'ignore'] }));
+    const tem = (l) => new RegExp(`^${l}$`, 'm').test(saida);
+    const querem = ['por', 'eng'].filter(tem);
+    return querem.length ? querem.join('+') : 'eng';
+  } catch { return 'eng'; }
+}
+
 export function haLeitor() {
-  try { execFileSync('tesseract', ['--version'], { stdio: 'ignore' }); return true; }
-  catch { return false; }
+  return ondeEstaOLeitor() !== null;
 }
 
 /**
@@ -291,7 +336,9 @@ export function haLeitor() {
  * pode contradizer a voz.
  */
 export function lerTextoDaImagem(caminho) {
-  const bruto = execFileSync('tesseract', [caminho, 'stdout', '-l', 'por+eng'], {
+  const exe = ondeEstaOLeitor();
+  if (!exe) throw new Error('não há leitor de texto nesta máquina');
+  const bruto = execFileSync(exe, [caminho, 'stdout', '-l', idiomasDoLeitor(exe)], {
     encoding: 'utf-8', stdio: ['ignore', 'pipe', 'ignore'],
   });
   const achados = String(bruto).match(/[\p{L}]{3,}|\d{2,}/gu) || [];
@@ -448,6 +495,24 @@ async function principal() {
      * zero e o gasto sair do saldo comprado — a diferença dos "livres" daria zero e o
      * programa escreveria que as imagens saíram de graça.
      */
+    /**
+     * 🔴 **O LEITOR CONFERE-SE ANTES DE PAGAR — 10/08/2026.**
+     *
+     * A verificação existia, mas **lá em baixo, depois de a imagem estar comprada,
+     * descarregada e encolhida**. Sem leitor, o programa pagava tudo e deitava fora:
+     * duas fotografias são 164 créditos, mais de metade da renovação de um dia.
+     *
+     * ⚠️ **E sai a ZERO, não a vermelho** — regra do dono, `nunca-parar-o-video-tem-de-sair`:
+     * um vídeo sem fotografias é um vídeo; uma corrida morta não é nada. As ilustrações e
+     * o b-roll entram na mesma.
+     */
+    if (!haLeitor()) {
+      log('\n🔴 NÃO HÁ LEITOR DE TEXTO NESTA MÁQUINA — nenhuma fotografia vai ser pedida.');
+      log('   A regra "nem uma letra legível na fotografia" não se pode garantir sem a ler,');
+      log('   e pedi-las às cegas era pagar para deitar fora. O vídeo sai com as ilustrações.');
+      log(`   Procurei em: ${CAMINHOS_DO_LEITOR.join(' · ')}`);
+      return;
+    }
     const lidos = await saldos();
     livresAntes = lidos.reduce((a, s) => a + s.total, 0);
     cabem = cabemAoTodo(lidos, paraGerar.length);
