@@ -329,7 +329,19 @@ export function blocosDeReserva(plano, palavras) {
  * Os três blocos, escritos pela IA a partir do guião. Se ela falhar ou vier cortada,
  * devolve o texto de reserva — nunca uma descrição pela metade.
  */
-export async function blocosDeTexto(plano, palavras, { gerar = null } = {}) {
+/**
+ * ═══ 🔴 `--pago`, PELA MESMA RAZÃO DO `srt-longo.js` — 10/08/2026 ═══
+ *
+ * Os três blocos de texto desta descrição são escritos pela IA. Na máquina do dono os
+ * três provedores GRATUITOS respondem `HTTP 401`, e então sai o **texto de reserva** —
+ * em silêncio, sem uma queixa. É o pior modo de falha desta casa, e está descrito no
+ * próprio workflow: *"sem as chaves, isto não falha: sai o texto de reserva, em silêncio,
+ * todas as semanas"*.
+ *
+ * ⚠️ **NÃO se liga por omissão.** Na nuvem os gratuitos funcionam e esta mesma conta paga
+ * serve os 27 robôs do blog. Só entra quando uma pessoa a pede, à mão.
+ */
+export async function blocosDeTexto(plano, palavras, { gerar = null, pago = false } = {}) {
   let generateText = gerar;
   if (!generateText) {
     try { ({ generateText } = await import('../apis/kie-ai.js')); }
@@ -370,7 +382,9 @@ ${capitulos}
 
   for (let tentativa = 1; tentativa <= TENTATIVAS_LLM; tentativa++) {
     try {
-      const out = await generateText(prompt, { maxTokens: ORCAMENTO_RESPOSTA, temperature: 0.6 });
+      const out = await generateText(prompt, {
+        maxTokens: ORCAMENTO_RESPOSTA, temperature: 0.6, ...(pago ? { pago: 'leitor' } : {}),
+      });
       const apanhar = (tag, seguinte) => {
         const re = new RegExp(`---${tag}---\\s*([\\s\\S]*?)(?=---(?:${seguinte})---|$)`);
         const m = String(out || '').match(re);
@@ -489,7 +503,11 @@ export function montarDescricao(plano, timing, opts = {}) {
 export async function prepararDescricao(plano, timing, opts = {}) {
   const naFila = opts.naFila || daFila(plano.slug);
   const palavras = palavrasDoVideo(plano, naFila);
-  const blocos = opts.semIa ? blocosDeReserva(plano, palavras) : await blocosDeTexto(plano, palavras);
+  const blocos = opts.semIa
+    ? blocosDeReserva(plano, palavras)
+    // ⚠️ `pago` vem de quem chama (o `--pago` da linha de comando). Sem ele, os
+    //    provedores gratuitos — que é o que a nuvem usa. Ver `blocosDeTexto`.
+    : await blocosDeTexto(plano, palavras, { pago: Boolean(opts.pago) });
   return montarDescricao(plano, timing, { naFila, blocos });
 }
 
@@ -502,7 +520,10 @@ if (process.argv[1] && process.argv[1].replace(/\\/g, '/').endsWith('youtube/des
   const caminhoTiming = join(AUDIO_DIR, slug, 'timing.json');
   const timing = existsSync(caminhoTiming) ? JSON.parse(readFileSync(caminhoTiming, 'utf-8')) : null;
 
-  const d = await prepararDescricao(plano, timing, { semIa: Boolean(args['sem-ia']) });
+  const d = await prepararDescricao(plano, timing, {
+    semIa: Boolean(args['sem-ia']),
+    pago: Boolean(args.pago),
+  });
 
   if (d.estimado) {
     console.log('\n⚠️ AINDA NÃO HÁ VOZ GERADA — os tempos abaixo são ESTIMATIVA pelo número de palavras.');
