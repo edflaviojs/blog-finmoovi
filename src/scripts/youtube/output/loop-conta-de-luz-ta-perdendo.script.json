@@ -1,0 +1,117 @@
+{
+  "slug": "loop-conta-de-luz-ta-perdendo",
+  "formato": "loop16",
+  "term": "A conta de luz do verão",
+  "category": "vida",
+  "keyword": "LUZ",
+  "situacao": "conta-de-luz",
+  "gancho": "ta-perdendo",
+  "ganchoFamilia": "tá perdendo",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ralo",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se você ainda faz conta de luz no susto, tá perdendo dinheiro",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "statement",
+            "text": "Conta de luz no susto"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "susto",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu vi a conta subir após ventilador ligado",
+      "durationSec": 2.9,
+      "shots": [
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "subir",
+          "visual": {
+            "type": "statement",
+            "text": "Minha conta subiu"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Eu agora olho tudo pelo app e evito esses sustos",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "evito",
+          "visual": {
+            "type": "statement",
+            "text": "Passei a acompanhar tudo"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "esses",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Se você ainda faz conta de luz no susto, segue perdendo dinheiro",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "statement",
+            "text": "Ainda perde dinheiro"
+          }
+        },
+        {
+          "anchor": "susto",
+          "visual": {
+            "type": "statement",
+            "text": "Conta de luz no susto"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}

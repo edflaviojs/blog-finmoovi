@@ -22,5 +22,11 @@
     "gancho": "ta-perdendo",
     "turno": "manha",
     "em": "2026-08-10T05:54:21.528Z"
+  },
+  {
+    "situacao": "conta-de-luz",
+    "gancho": "ta-perdendo",
+    "turno": "noite",
+    "em": "2026-08-10T05:58:06.867Z"
   }
 ]
