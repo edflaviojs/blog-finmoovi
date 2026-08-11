@@ -456,9 +456,26 @@ async function lerTelegram(caderno) {
 
   // 🔑 Os grupos onde ele está vêm das próprias mensagens — o dono não teve de descobrir
   // número de grupo nenhum. Ele só o pôs num sítio, e é esse que aparece.
+  /**
+   * 🔴 DE ONDE VÊM OS GRUPOS — e as três fontes existem por uma razão medida.
+   *
+   * Para saber se quem mandou `/start` é o dono, é preciso perguntar **quem são os
+   * administradores do grupo** — e para isso é preciso conhecer o grupo.
+   *
+   * ⚠️ **E o `/start` costuma chegar SOZINHO**, num dia em que não houve comentário
+   * nenhum: aí não há grupo nesta leva, e o dono nunca seria reconhecido. Foi visto ao
+   * desenhar isto, antes de morder.
+   *
+   * Por isso somam-se três fontes:
+   *   1. os grupos já guardados no caderno;
+   *   2. os que aparecem nas mensagens desta leva;
+   *   3. 🔑 **os que estão nos comentários já guardados** — cada comentário do Telegram
+   *      traz o `chatId` de onde veio, e isso resolve o primeiro arranque.
+   */
   const grupos = [...new Set([
     ...(caderno.telegramGrupos || []),
     ...updates.map((u) => u?.message?.chat).filter((c) => c && (c.type === 'group' || c.type === 'supergroup')).map((c) => c.id),
+    ...(caderno.comentarios || []).filter((c) => c.rede === 'Telegram' && c.chatId).map((c) => c.chatId),
   ])];
   const adminIds = new Set();
   for (const g of grupos) {
