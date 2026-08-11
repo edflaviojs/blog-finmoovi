@@ -144,6 +144,47 @@ if (existsSync(redditFile)) {
   } catch { /* arquivo ilegível → estado vazio */ }
 }
 
+// ── Caixa de entrada das redes (.github/data/comentarios-redes.json) ──
+//
+// 🔴 Só entram aqui os comentários que ESPERAM pelo dono. Quem escreveu FINMOOVI a pedir
+// o app já foi respondido sozinho pelo robô e não aparece — o painel é a lista de trabalho,
+// não o histórico. Ver `src/scripts/redes/comentarios-redes.js`.
+//
+// ⚠️ Instagram e YouTube não estão aqui de propósito: os dois têm robô próprio a responder.
+interface ComentarioRede {
+  id: string;
+  rede: string;
+  autor: string;
+  texto: string;
+  quando?: string;
+  link: string;
+  rascunho: string;
+  ehQueixa?: boolean;
+  motivo?: string;
+}
+
+const comentariosFile = join(process.cwd(), '.github/data/comentarios-redes.json');
+let comentariosRedes: ComentarioRede[] = [];
+let comentariosAtualizadoEm = '';
+if (existsSync(comentariosFile)) {
+  try {
+    const parsed = JSON.parse(readFileSync(comentariosFile, 'utf-8'));
+    comentariosAtualizadoEm = String(parsed?.atualizadoEm || '');
+    if (Array.isArray(parsed?.comentarios)) {
+      comentariosRedes = parsed.comentarios
+        .slice()
+        // 🔑 As queixas primeiro, e só depois por data. São elas que estragam se ficarem
+        // à espera — um elogio pode esperar um dia, uma reclamação não.
+        .sort((a: ComentarioRede, b: ComentarioRede) => {
+          if (Boolean(a.ehQueixa) !== Boolean(b.ehQueixa)) return a.ehQueixa ? -1 : 1;
+          return String(b.quando || '').localeCompare(String(a.quando || ''));
+        })
+        .slice(0, 20);
+    }
+  } catch { /* arquivo ilegível → estado vazio */ }
+}
+const queixasAbertas = comentariosRedes.filter(c => c.ehQueixa).length;
+
 // ── Trava de tradução (lang-guard) — scan barato em BUILD TIME (só regex)
 //    sobre todos os en-*/es-* de posts e glossário ──
 const langGuardDirs: [string, string][] = [
@@ -376,6 +417,40 @@ const daysAgo = (d: string) => {
               )}
             </div>
           </>
+        )}
+      </section>
+
+      <section class="status-panel panel-redes">
+        <h2>
+          📥 Comentários das REDES à sua espera <span class="count">({comentariosRedes.length})</span>
+          {queixasAbertas > 0 && <span class="tag alerta">{queixasAbertas} reclamação(ões)</span>}
+        </h2>
+        <p class="panel-hint">
+          Facebook, Threads, Bluesky e Telegram numa lista só, 3× por dia. Quem escreveu
+          <strong> FINMOOVI</strong> pedindo o app já foi respondido sozinho e não aparece aqui.
+          <br />
+          <em>Instagram e YouTube têm robô próprio e ficam de fora.</em>
+          {comentariosAtualizadoEm && <> · última olhada: {fmtIsoDay(comentariosAtualizadoEm)}</>}
+        </p>
+        {comentariosRedes.length === 0 ? (
+          <p class="empty-line">Nenhum comentário à espera. O robô segue olhando 3× por dia. 👀</p>
+        ) : (
+          <ul class="lista-comentarios">
+            {comentariosRedes.map(c => (
+              <li class={c.ehQueixa ? 'comentario queixa' : 'comentario'}>
+                <div class="cabeca">
+                  <span class="tag">{c.rede}</span>
+                  <span class="autor">@{c.autor}</span>
+                  {c.ehQueixa && <span class="tag alerta">reclamação</span>}
+                  <span class="time">{c.quando ? daysAgo(c.quando) : ''}</span>
+                </div>
+                <p class="dito">{c.texto}</p>
+                {/* 🔑 O rascunho é uma SUGESTÃO. Nada daqui sai sozinho — ver o robô. */}
+                <p class="rascunho"><strong>Resposta sugerida:</strong> {c.rascunho}</p>
+                <a href={c.link} target="_blank" rel="noopener noreferrer nofollow">responder lá ↗</a>
+              </li>
+            ))}
+          </ul>
         )}
       </section>
 
@@ -944,6 +1019,73 @@ const daysAgo = (d: string) => {
   .cm-mod-list :global(button:disabled) {
     opacity: 0.5;
     cursor: wait;
+  }
+
+  /* ── Caixa de entrada das redes ─────────────────────────────────────────────
+     ⚠️ Classe PRÓPRIA (`panel-redes`), e não `panel-comentarios`: essa já é do painel
+     de moderação do blog, e dois painéis com o mesmo nome e a mesma cor ao lado um do
+     outro é exactamente como se lê o painel errado. */
+  /* ⚠️ `--accent-primary`, e não `--accent-blue`: essa variável NÃO EXISTE em
+     `tokens.css` (há sítios neste ficheiro que a usam e vivem do valor de reserva).
+     E o azul já é do painel da fila — duas barras azuis lado a lado não distinguem nada. */
+  .status-panel.panel-redes {
+    border-left: 3px solid var(--accent-primary);
+  }
+
+  .lista-comentarios li.comentario {
+    display: block;
+    padding: var(--space-3, 12px) 0;
+  }
+
+  /* 🔴 A reclamação tem de saltar à vista: é a que estraga se ficar à espera. */
+  .lista-comentarios li.comentario.queixa {
+    border-left: 2px solid var(--accent-red, #f85149);
+    padding-left: var(--space-3, 12px);
+  }
+
+  .lista-comentarios .cabeca {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2, 8px);
+    margin-bottom: var(--space-2, 8px);
+  }
+
+  /* ⚠️ `.tag` já traz `margin-left` de fábrica (linha ~1436), e aqui a linha é um `flex`
+     com `gap`: somados, o primeiro rótulo ficava com o dobro do espaço à esquerda.
+     Quem usa `gap` manda; a margem antiga é zerada só dentro desta linha. */
+  .lista-comentarios .cabeca .tag {
+    margin-left: 0;
+  }
+
+  .lista-comentarios .autor {
+    font-size: var(--text-sm, 0.875rem);
+    color: var(--text-secondary, #8b949e);
+  }
+
+  .lista-comentarios .dito {
+    margin: 0 0 var(--space-2, 8px);
+    color: var(--text-primary, #f0f6fc);
+    line-height: 1.5;
+  }
+
+  .lista-comentarios .rascunho {
+    margin: 0 0 var(--space-2, 8px);
+    padding: var(--space-2, 8px) var(--space-3, 12px);
+    background: var(--bg-primary, #0d1117);
+    border-radius: var(--radius-md, 8px);
+    font-size: var(--text-sm, 0.875rem);
+    color: var(--text-secondary, #8b949e);
+    line-height: 1.5;
+  }
+
+  .lista-comentarios .rascunho strong {
+    color: var(--text-primary, #f0f6fc);
+  }
+
+  .status-panel .tag.alerta {
+    background: var(--accent-red, #f85149);
+    color: #fff;
   }
 
   .status-panel.panel-reddit {

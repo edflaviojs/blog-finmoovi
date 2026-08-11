@@ -1,0 +1,109 @@
+name: Redes — Caixa de entrada dos comentários (3× por dia)
+
+# ♦ A CAIXA DE ENTRADA DAS REDES — 11/08/2026, IMPLEMENTACAO26 §17 (pedido do dono).
+#
+# ═══ O QUE ELE PEDIU ═══
+# "Robôs que monitorem os comentários que eu recebo em todas as redes e unifiquem num só
+# lugar, com uma prévia de uma boa resposta para cada um."
+#
+# ═══ 🔴 O QUE SE DESCOBRIU AO PERGUNTAR, EM VEZ DE ASSUMIR ═══
+# O **Multipost não serve** para isto: o manual dele diz que as automações de comentário
+# são **do Instagram**, e o `/comments` da API pública são os comentários internos de
+# aprovação (medido num post real: veio vazio). Cada rede tem de ser perguntada
+# directamente — como o robô do YouTube já faz.
+#
+# E das oito redes, só três dão para ler comentários com o que temos hoje:
+#   · **Bluesky** — ✅ e LER não precisa de chave nenhuma. É esta a fase 1.
+#   · Facebook e Threads — dão, mas precisam de um token que ainda não existe (fase 2).
+#   · **Telegram** — o canal NÃO tem grupo de discussão: hoje não há comentário nenhum.
+#   · LinkedIn (aprovação caso a caso), Pinterest (a API não expõe), TikTok (fechado), X (pago).
+#
+# ⚠️ **Instagram e YouTube ficam de fora de propósito** — já têm robô próprio a responder.
+# Metê-los aqui seria responder duas vezes à mesma pessoa.
+#
+# ═══ QUEM RESPONDE, E QUEM ESPERA ═══
+# 🔴 **Automático SÓ por palavra-chave** (decisão do dono, 07/08 e confirmada em 11/08).
+# Quem escreve FINMOOVI recebe o link na hora. Todo o resto — elogio, dúvida, queixa —
+# vira RASCUNHO no painel da `/status`, e só sai se o dono mandar.
+#
+# ⚠️ E há uma trava por cima dessa: quem escreve FINMOOVI **a reclamar** também vai para
+# rascunho. Um robô a responder "Boa! 🚀 aqui está o link" a quem escreveu "esse app
+# cobrou errado" é o print que o dono não quer.
+
+on:
+  schedule:
+    # As três horas não são sorteadas: cada uma vem **depois** de um vídeo ir ao ar, que é
+    # quando os comentários aparecem. Os vídeos saem às 10h, 14h e 19h do Brasil.
+    - cron: '0 15 * * *'   # 12h00 BR — depois do Short de 16s da manhã
+    - cron: '0 19 * * *'   # 16h00 BR — depois do de 16s da tarde
+    - cron: '0 1 * * *'    # 22h00 BR — depois do Short de 50s
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Ensaio (lê e mostra, não responde nem grava)'
+        type: boolean
+        default: false
+      sem_ia:
+        description: 'Não gastar IA nos rascunhos (usa os de reserva)'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+# Grupo próprio: ele escreve um ficheiro que mais ninguém toca
+# (`.github/data/comentarios-redes.json`), e esperar pelos carteiros só o faria chegar tarde.
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+jobs:
+  ler:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - run: npm ci
+
+      # ⚠️ As provas correm ANTES de o robô tocar em rede nenhuma. Elas são baratas (não
+      # gastam chave, não fazem chamadas) e são a única defesa contra o caso que não se
+      # pode medir depois: responder sozinho a uma reclamação. Ver o cabeçalho delas.
+      - name: As provas de mesa (a trava da queixa está aqui)
+        run: node src/scripts/validacao/validar-comentarios-redes.js
+
+      - name: Ler os comentários e escrever os rascunhos
+        env:
+          # ⚠️ LER não precisa de nenhuma destas. Sem `BLUESKY_APP_PASSWORD` o robô lê,
+          # escreve rascunhos e diz que a resposta automática está desligada — em vez de
+          # falhar. Sem chave de IA, os rascunhos são os de reserva.
+          BLUESKY_IDENTIFIER: ${{ vars.BLUESKY_IDENTIFIER || 'finmoovi.bsky.social' }}
+          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          KIE_API_KEY: ${{ secrets.KIE_API_KEY }}
+        run: |
+          ARGS=""
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
+          if [ "${{ github.event.inputs.sem_ia }}" = "true" ]; then ARGS="$ARGS --sem-ia"; fi
+          node src/scripts/redes/comentarios-redes.js $ARGS
+
+      - name: Guardar o caderno
+        if: github.event.inputs.dry_run != 'true'
+        run: |
+          git config user.name "FinMoovi Bot"
+          git config user.email "bot@finmoovi.com"
+          git add .github/data/comentarios-redes.json
+          if git diff --staged --quiet; then
+            echo "Nada de novo na caixa de entrada."
+          else
+            git commit -m "chore: caixa de entrada das redes atualizada [skip ci]"
+            bash .github/scripts/empurrar.sh
+          fi
