@@ -1,7 +1,7 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-08-10T06:09:26.350Z
-**Posts:** 270 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 39
+**Gerado em:** 2026-08-11T05:51:45.289Z
+**Posts:** 276 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 39
 
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
@@ -47,11 +47,11 @@
 - _According to the **central bank**, 45 % of families lack an emergency reserve, which can lead to debt._
 
 **en-5-tips-to-reorganize-your-finances-on-vacation.md**
-- _According to the Brazilian Institute of Geography and Statistics (IBGE), in 2022, most Brazilians (64._
-- _According to Serasa, in 2022, almost 60% of Brazilians used apps to control their finances, showing the growing awareness of the importance of personal financial management._
+- _According to the national statistics office, in 2022, most people (64._
+- _According to credit bureaus, in 2022, almost 60% of people used apps to control their finances, showing the growing awareness of the importance of personal financial management._
 
 **en-budget-for-couples-dividing-expenses.md**
-- _In the case of João and Maria, they can decide to divide expenses according to the percentage of their salaries in relation to the total._
+- _In the case of John and Mary, they can decide to divide expenses according to the percentage of their salaries in relation to the total._
 
 **en-budget-review.md**
 - _After checking your expenses, adjust them according to your needs and goals._
