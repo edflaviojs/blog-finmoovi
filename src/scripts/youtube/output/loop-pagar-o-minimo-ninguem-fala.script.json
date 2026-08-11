@@ -1,0 +1,117 @@
+{
+  "slug": "loop-pagar-o-minimo-ninguem-fala",
+  "formato": "loop16",
+  "term": "Pagar só o mínimo",
+  "category": "vida",
+  "keyword": "MÍNIMO",
+  "situacao": "pagar-o-minimo",
+  "gancho": "ninguem-fala",
+  "ganchoFamilia": "ninguém fala",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ratoeira",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Ninguém fala isso sobre pagar o mínimo, mas é real.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "Ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "Pagar o mínimo é real"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "pagar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu paguei o mínimo, e comigo a conta apertou lá em casa.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "paguei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "mínimo",
+          "visual": {
+            "type": "statement",
+            "text": "A conta apertou em casa"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então eu parei de empurrar a fatura e passei a pagar tudo.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "parei",
+          "visual": {
+            "type": "statement",
+            "text": "Parei de empurrar a fatura"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "empurrar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Porque pagar o mínimo nunca saiu barato comigo.",
+      "durationSec": 2.9,
+      "shots": [
+        {
+          "anchor": "pagar",
+          "visual": {
+            "type": "statement",
+            "text": "Pagar o mínimo saiu caro"
+          }
+        },
+        {
+          "anchor": "mínimo",
+          "visual": {
+            "type": "statement",
+            "text": "Pagar o mínimo é real"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
