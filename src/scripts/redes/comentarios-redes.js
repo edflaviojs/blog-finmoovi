@@ -17,9 +17,10 @@
  *   | rede      | ler | responder | nota                                                |
  *   |-----------|-----|-----------|-----------------------------------------------------|
  *   | Bluesky   | ✅  | ✅        | **ler não precisa de chave nenhuma** — provado       |
- *   | Facebook  | ✅  | ✅        | precisa de token de página (fase 2)                  |
- *   | Threads   | ✅  | ✅        | precisa de token (fase 2)                            |
- *   | Telegram  | ❌  | —         | o canal NÃO tem grupo de discussão: não há comentário|
+ *   | Telegram  | ✅  | ✅        | 🔴 só depois do GRUPO DE DISCUSSÃO, e com um bot     |
+ *   |           |     |           | SÓ DE LEITURA — nunca o que publica (ver abaixo)     |
+ *   | Facebook  | ✅  | ✅        | precisa de token de página (por fazer)               |
+ *   | Threads   | ✅  | ✅        | precisa de token (por fazer)                         |
  *   | LinkedIn  | ⚠️  | ⚠️        | exige um produto que a LinkedIn aprova caso a caso   |
  *   | Pinterest | ⚠️  | ⚠️        | a API não expõe comentários de pin                   |
  *   | TikTok    | ❌  | ❌        | a API não abre isto a apps comuns (IMPL26 §12-B)     |
@@ -214,10 +215,10 @@ export async function escreverRascunho(comentario, gerar = generateText) {
 // ═══════════════════════════════════════════════════════════════════════════════
 
 export function lerCaderno(caminho = CADERNO) {
-  if (!existsSync(caminho)) return { comentarios: [], respondidos: {} };
+  if (!existsSync(caminho)) return { comentarios: [], respondidos: {}, telegramOffset: null };
   try {
     const d = JSON.parse(readFileSync(caminho, 'utf-8'));
-    return { comentarios: d.comentarios || [], respondidos: d.respondidos || {} };
+    return { comentarios: d.comentarios || [], respondidos: d.respondidos || {}, telegramOffset: d.telegramOffset || null };
   } catch {
     // ⚠️ Não se apaga um caderno que não se consegue ler: apagá-lo faria o robô responder
     // outra vez a toda a gente. Pára-se e diz-se.
@@ -333,6 +334,146 @@ async function responderNoBluesky(sessao, comentario, texto) {
 }
 
 // ═══════════════════════════════════════════════════════════════════════════════
+// Telegram — a fase 3, ligada em 11/08
+// ═══════════════════════════════════════════════════════════════════════════════
+
+/**
+ * 🔴 UM BOT SÓ PARA LER, E NUNCA O QUE PUBLICA.
+ *
+ * `TELEGRAM_LEITOR_TOKEN` é de um bot NOVO (`FinMoovi Leitor`), criado só para isto. O
+ * `finmoovi_bot` é o que o Multipost usa para publicar o vídeo diário — e **dois programas
+ * a chamar `getUpdates` com o mesmo token disputam a mesma fila**: um leva a mensagem e o
+ * outro fica sem ela. O que se partiria era a **publicação diária**, e só se daria por isso
+ * dias depois.
+ *
+ * ⚠️ E o bot precisa de duas coisas que se fazem à mão, uma vez:
+ *   · `/setprivacy → Disable` no BotFather, **ANTES** de entrar no grupo (depois não pega);
+ *   · ser **administrador** do grupo de discussão.
+ * Sem a primeira ele fica cego — recebe só o que lhe é dirigido.
+ */
+const TELEGRAM_API = 'https://api.telegram.org/bot';
+const CANAL_TELEGRAM = process.env.TELEGRAM_CANAL || 'finmoovi';
+
+/**
+ * 🔑 O QUE É, E O QUE NÃO É, UM COMENTÁRIO NO TELEGRAM.
+ *
+ * O grupo de discussão recebe três coisas, e só uma delas é comentário:
+ *   1. **o próprio vídeo**, reencaminhado automaticamente do canal — vem com
+ *      `is_automatic_forward` e é NOSSO. Tratá-lo como comentário faria o robô responder
+ *      ao próprio post, todos os dias;
+ *   2. **as respostas dos administradores** — o dono a responder é resposta, não pergunta;
+ *   3. **os comentários das pessoas** — o que interessa.
+ *
+ * ⚠️ Os administradores são perguntados ao servidor (`getChatAdministrators`), nunca
+ * escritos no código: quem é administrador muda, e uma lista à mão ficaria a mentir.
+ */
+export function comentariosDoTelegram(updates, { adminIds = new Set(), canal = CANAL_TELEGRAM } = {}) {
+  const fora = [];
+  for (const u of updates || []) {
+    const m = u?.message;
+    if (!m || !m.text) continue;                       // sem texto não há o que responder
+    if (m.is_automatic_forward) continue;              // 1. é o nosso próprio vídeo
+    if (m.from?.is_bot) continue;                      // robôs não se respondem uns aos outros
+    if (m.sender_chat) continue;                       // veio em nome do canal, não de uma pessoa
+    if (adminIds.has(m.from?.id)) continue;            // 2. o dono a responder
+
+    /**
+     * O endereço que abre ESTE comentário. Quando o Telegram diz de que post do canal ele
+     * é resposta (`forward_from_message_id`), dá para montar o link que abre a conversa no
+     * sítio certo. Sem isso, sobra o link do grupo — que serve, mas cai no fim.
+     */
+    const doPost = m.reply_to_message?.forward_from_message_id;
+    const link = doPost
+      ? `https://t.me/${canal}/${doPost}?comment=${m.message_id}`
+      : `https://t.me/c/${String(m.chat?.id).replace('-100', '')}/${m.message_id}`;
+
+    fora.push({
+      id: `tg:${m.chat?.id}:${m.message_id}`,
+      rede: 'Telegram',
+      autor: m.from?.username || [m.from?.first_name, m.from?.last_name].filter(Boolean).join(' ') || '(sem nome)',
+      texto: m.text,
+      quando: m.date ? new Date(m.date * 1000).toISOString() : '',
+      link,
+      // O necessário para responder no sítio certo, sem voltar a perguntar.
+      chatId: m.chat?.id,
+      messageId: m.message_id,
+    });
+  }
+  return fora;
+}
+
+async function telegram(token, metodo, params = {}) {
+  const r = await fetch(`${TELEGRAM_API}${token}/${metodo}`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(params),
+  });
+  const j = await r.json();
+  if (!j.ok) throw new Error(`Telegram ${metodo}: ${j.description || r.status}`);
+  return j.result;
+}
+
+/**
+ * ⚠️ **O `offset` É UMA FACA DE DOIS GUMES, e é por isso que está explicado aqui.**
+ *
+ * Pedir `getUpdates` com `offset` **confirma ao Telegram** que as anteriores já foram
+ * tratadas, e ele deita-as fora. Sem `offset`, ele devolve sempre desde a mais antiga —
+ * seguro, mas o teto de 100 por chamada faria perder as NOVAS no dia em que houvesse
+ * movimento a sério.
+ *
+ * 🔑 A saída: guarda-se o `offset` no caderno **depois** de os comentários estarem lá
+ * escritos. Assim, o que já foi lido está em disco antes de ser dado como entregue.
+ * ⚠️ O Telegram só guarda as mensagens **24 horas**. Este robô corre 3× por dia (o maior
+ * intervalo é de 14 h), com folga — mas se um dia ele parar mais de um dia, perde-se o que
+ * houve nesse buraco. Fica dito.
+ */
+async function lerTelegram(caderno) {
+  const token = (process.env.TELEGRAM_LEITOR_TOKEN || '').trim();
+  if (!token) {
+    log('⚠️ sem TELEGRAM_LEITOR_TOKEN — o Telegram não é lido (o Bluesky segue normal).');
+    return { comentarios: [], offset: caderno.telegramOffset };
+  }
+
+  const eu = await telegram(token, 'getMe');
+  const params = { limit: 100, timeout: 0, allowed_updates: ['message'] };
+  if (caderno.telegramOffset) params.offset = caderno.telegramOffset;
+  const updates = await telegram(token, 'getUpdates', params);
+
+  // 🔑 Os grupos onde ele está vêm das próprias mensagens — o dono não teve de descobrir
+  // número de grupo nenhum. Ele só o pôs num sítio, e é esse que aparece.
+  const grupos = [...new Set(updates.map((u) => u?.message?.chat?.id).filter(Boolean))];
+  const adminIds = new Set();
+  for (const g of grupos) {
+    try {
+      for (const a of await telegram(token, 'getChatAdministrators', { chat_id: g })) {
+        if (a?.user?.id) adminIds.add(a.user.id);
+      }
+    } catch (e) {
+      // ⚠️ Não saber quem é administrador não pode calar o robô: no pior caso o dono vê
+      // as suas próprias respostas no painel, que é feio e não é grave.
+      log(`   ⚠️ não consegui a lista de administradores do grupo ${g} (${e.message}).`);
+    }
+  }
+
+  const comentarios = comentariosDoTelegram(updates, { adminIds });
+  const ultimo = updates.length ? Math.max(...updates.map((u) => u.update_id)) : null;
+  log(`✈️  Telegram: ${eu.username ? `@${eu.username}` : 'bot'} · ${updates.length} mensagem(ns) na fila · ${comentarios.length} são comentário`);
+  if (!grupos.length) log('   (o bot ainda não viu nenhum grupo — ele só recebe a partir do momento em que entrou)');
+  return { comentarios, offset: ultimo !== null ? ultimo + 1 : caderno.telegramOffset, token };
+}
+
+async function responderNoTelegram(token, comentario, texto) {
+  return telegram(token, 'sendMessage', {
+    chat_id: comentario.chatId,
+    reply_to_message_id: comentario.messageId,
+    text: texto,
+    // ⚠️ Sem pré-visualização do link: o cartão do site ocuparia meia tela numa resposta
+    // de uma linha, e a conversa fica ilegível.
+    link_preview_options: { is_disabled: true },
+  });
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
 
 async function main() {
   log(`\n💬 A caixa de entrada das redes${DRY_RUN ? ' (ENSAIO: não responde nem grava)' : ''}`);
@@ -342,15 +483,34 @@ async function main() {
   const jaRespondidos = new Set(Object.keys(caderno.respondidos));
   log(`📓 já respondidos até hoje: ${jaRespondidos.size}`);
 
-  const encontrados = await lerBluesky();
+  /**
+   * ⚠️ **UMA REDE A FALHAR NÃO PODE CALAR AS OUTRAS.** Se o Bluesky estiver em baixo, os
+   * comentários do Telegram têm de aparecer na mesma — e ao contrário. Por isso cada uma
+   * é lida dentro do seu próprio `catch`, e o que se perde é só ela.
+   */
+  const encontrados = [];
+  try {
+    encontrados.push(...await lerBluesky());
+  } catch (e) {
+    log(`⚠️ o Bluesky não deu para ler (${e.message}) — as outras redes seguem.`);
+  }
+
+  let tg = { comentarios: [], offset: caderno.telegramOffset, token: null };
+  try {
+    tg = await lerTelegram(caderno);
+    encontrados.push(...tg.comentarios);
+  } catch (e) {
+    log(`⚠️ o Telegram não deu para ler (${e.message}) — as outras redes seguem.`);
+  }
+
   log(`\n📥 ${encontrados.length} comentário(s) encontrados no total.\n`);
 
   const sessao = DRY_RUN ? null : await sessaoBluesky().catch((e) => {
-    log(`⚠️ ${e.message} — hoje ninguém é respondido sozinho; fica tudo em rascunho.`);
+    log(`⚠️ ${e.message} — no Bluesky ninguém é respondido sozinho hoje; fica em rascunho.`);
     return null;
   });
   if (!sessao && !DRY_RUN) {
-    log('⚠️ sem BLUESKY_APP_PASSWORD: a resposta automática está DESLIGADA (a leitura não precisa dela).');
+    log('⚠️ sem BLUESKY_APP_PASSWORD: a resposta automática do Bluesky está DESLIGADA (a leitura não precisa dela).');
   }
 
   const painel = [];
@@ -359,10 +519,16 @@ async function main() {
     const { accao, automatica, motivo } = oQueFazerCom(c, jaRespondidos);
     if (accao === 'ja-respondido') continue;
 
-    if (automatica && sessao && respondidos < MAX_RESPOSTAS_POR_CORRIDA && !DRY_RUN) {
+    /**
+     * 🔑 CADA REDE RESPONDE PELO SEU PRÓPRIO CAMINHO, e a que não tiver chave cai no
+     * painel em vez de rebentar. É isto que deixa ligar uma rede de cada vez.
+     */
+    const podeResponder = (c.rede === 'Bluesky' && sessao) || (c.rede === 'Telegram' && tg.token);
+    if (automatica && podeResponder && respondidos < MAX_RESPOSTAS_POR_CORRIDA && !DRY_RUN) {
       const texto = respostaDaVez(jaRespondidos.size + respondidos);
       try {
-        await responderNoBluesky(sessao, c, texto);
+        if (c.rede === 'Telegram') await responderNoTelegram(tg.token, c, texto);
+        else await responderNoBluesky(sessao, c, texto);
         caderno.respondidos[c.id] = { rede: c.rede, quando: new Date().toISOString(), texto };
         respondidos += 1;
         log(`⚡ ${c.rede} · @${c.autor}: pediu o app — RESPONDIDO sozinho.`);
@@ -385,6 +551,12 @@ async function main() {
 
   if (!DRY_RUN) {
     caderno.comentarios = painel;
+    /**
+     * 🔑 O `offset` DO TELEGRAM É GUARDADO AQUI, e não quando foi lido — de propósito.
+     * Escrevê-lo só depois de os comentários estarem no caderno garante que nada é dado
+     * como entregue antes de estar em disco. Ver `lerTelegram`.
+     */
+    caderno.telegramOffset = tg.offset;
     caderno.atualizadoEm = new Date().toISOString();
     gravarCaderno(caderno);
     log(`\n💾 caderno gravado: ${CADERNO}`);

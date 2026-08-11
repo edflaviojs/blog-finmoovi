@@ -20,7 +20,7 @@
 import {
   pedeOApp, ehQueixa, oQueFazerCom, respostaDaVez, RESPOSTAS,
   rascunhoDeReserva, promptDoRascunho, escreverRascunho,
-  comentariosDoBluesky, respostasDaArvore,
+  comentariosDoBluesky, respostasDaArvore, comentariosDoTelegram,
 } from '../redes/comentarios-redes.js';
 
 let passou = 0;
@@ -187,6 +187,74 @@ console.log('\n6. O BLUESKY — ler a árvore sem trazer a nossa própria voz');
   ok('e traz onde responder, sem voltar a perguntar ao servidor',
     respostas[0].raiz?.uri === 'at://meu/1' && respostas[0].pai?.uri === 'at://a/1');
   ok('a rede vem escrita, porque o painel junta várias', respostas.every((r) => r.rede === 'Bluesky'));
+}
+
+console.log('\n7. O TELEGRAM — as três coisas que caem no grupo, e só uma é comentário');
+
+{
+  const GRUPO = -1001234567890;
+  const DONO = 111;
+  const admins = new Set([DONO, 999]); // o dono e o próprio bot
+
+  const updates = [
+    /**
+     * 🔴 1. O NOSSO PRÓPRIO VÍDEO. O Telegram reencaminha o post do canal para dentro do
+     * grupo, sozinho, com `is_automatic_forward`. Sem esta trava o robô responderia ao
+     * seu próprio post — todos os dias, para sempre.
+     */
+    { update_id: 10, message: { message_id: 1, chat: { id: GRUPO }, is_automatic_forward: true, text: 'Você sabe quanto some por mês?', sender_chat: { id: -100999 } } },
+    // 2. o dono a responder — é resposta, não pergunta
+    { update_id: 11, message: { message_id: 2, chat: { id: GRUPO }, from: { id: DONO, username: 'edflavio' }, text: 'valeu!', date: 1000 } },
+    // 3. o comentário de uma pessoa — o que interessa
+    {
+      update_id: 12,
+      message: {
+        message_id: 3, chat: { id: GRUPO }, from: { id: 222, username: 'maria' },
+        text: 'como pego o FINMOOVI?', date: 2000,
+        reply_to_message: { forward_from_message_id: 8 },
+      },
+    },
+    // e um robô qualquer que entre no grupo não pode virar conversa
+    { update_id: 13, message: { message_id: 4, chat: { id: GRUPO }, from: { id: 333, is_bot: true }, text: 'FINMOOVI', date: 3000 } },
+    // mensagem sem texto (uma foto, por exemplo) não tem o que responder
+    { update_id: 14, message: { message_id: 5, chat: { id: GRUPO }, from: { id: 444 }, date: 4000 } },
+  ];
+
+  const c = comentariosDoTelegram(updates, { adminIds: admins, canal: 'finmoovi' });
+  ok('🔴 dos cinco, só UM é comentário', c.length === 1, `apanhou ${c.length}: ${c.map(x => x.texto).join(' | ')}`);
+  ok('🔴 e o nosso próprio vídeo NÃO entra (é reencaminhado sozinho pelo canal)',
+    !c.some(x => /quanto some/.test(x.texto)));
+  ok('🔴 nem o dono a responder — senão o painel encheria com a sua própria voz',
+    !c.some(x => x.autor === 'edflavio'));
+  ok('nem outro robô', !c.some(x => x.texto === 'FINMOOVI' && x.autor !== 'maria'));
+  ok('nem mensagem sem texto, que não tem o que responder', c.length === 1);
+
+  /**
+   * 🔑 O LINK TEM DE ABRIR O COMENTÁRIO, não o canal. Quando o Telegram diz de que post
+   * ele é resposta, dá para montar o endereço que abre a conversa no sítio certo.
+   */
+  ok('🔑 o link abre o comentário no post certo do canal',
+    c[0].link === 'https://t.me/finmoovi/8?comment=3', c[0].link);
+  ok('e traz onde responder, sem voltar a perguntar', c[0].chatId === GRUPO && c[0].messageId === 3);
+  ok('a rede vem escrita, para o painel juntar com o Bluesky', c[0].rede === 'Telegram');
+  ok('e o identificador não colide com o de outra rede', c[0].id.startsWith('tg:'));
+
+  // A decisão continua a ser a mesma, venha de onde vier.
+  ok('🔑 um pedido no Telegram é respondido sozinho, como no Bluesky',
+    oQueFazerCom(c[0]).automatica === true);
+  const queixaTg = comentariosDoTelegram(
+    [{ update_id: 20, message: { message_id: 9, chat: { id: GRUPO }, from: { id: 555, username: 'joao' }, text: 'o FINMOOVI cobrou errado', date: 5000 } }],
+    { adminIds: admins },
+  );
+  ok('🔴 e uma queixa no Telegram também espera pelo dono',
+    oQueFazerCom(queixaTg[0]).automatica === false);
+
+  /**
+   * ⚠️ SEM SABER QUEM É ADMINISTRADOR, O ROBÔ NÃO PODE CALAR-SE. No pior caso o dono vê
+   * a sua própria resposta no painel — feio, e muito melhor do que não ver nada.
+   */
+  ok('⚠️ sem a lista de administradores ele continua a ler (só fica menos esperto)',
+    comentariosDoTelegram(updates, {}).length === 2);
 }
 
 console.log(`\n${'═'.repeat(72)}`);
