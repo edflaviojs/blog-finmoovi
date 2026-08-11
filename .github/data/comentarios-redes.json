@@ -1,21 +1,6 @@
 {
-  "comentarios": [
-    {
-      "id": "tg:-1003862793343:6",
-      "rede": "Telegram",
-      "autor": "Fernanda Sousa",
-      "texto": "Show",
-      "quando": "2026-08-11T14:44:29.000Z",
-      "link": "https://t.me/finmoovi/7?comment=6",
-      "chatId": -1003862793343,
-      "messageId": 6,
-      "motivo": "não pede o app — o dono decide o que dizer",
-      "automatica": false,
-      "rascunho": "Valeu! Conta pra gente o que mais tem te ajudado.",
-      "ehQueixa": false
-    }
-  ],
+  "comentarios": [],
   "respondidos": {},
   "telegramOffset": 834227175,
-  "atualizadoEm": "2026-08-11T15:50:27.351Z"
+  "atualizadoEm": "2026-08-11T16:03:42.256Z"
 }
