@@ -481,6 +481,30 @@ export function comentariosDoTelegram(updates, { adminIds = new Set(), canal = C
   return fora;
 }
 
+/**
+ * 🔑 O GRUPO DE DISCUSSÃO, PERGUNTADO AO CANAL — e é isto que devia ter sido feito logo.
+ *
+ * As outras três fontes (o caderno, as mensagens desta leva, os comentários guardados)
+ * dependem todas de **alguém já ter escrito alguma coisa**. No primeiro arranque não há
+ * nada disso, e o robô ficava sem saber qual é o grupo — logo sem saber quem são os
+ * administradores, logo sem conseguir avisar o dono. **Duas corridas às cegas a descobrir.**
+ *
+ * ✅ `getChat` no canal devolve `linked_chat_id`: o grupo de discussão ligado a ele. Não
+ * depende de mensagem nenhuma, e responde na primeira corrida.
+ *
+ * ⚠️ **Nunca derruba nada:** se o canal não existir, não tiver grupo ligado, ou o bot não
+ * o puder ver, devolve lista vazia e as outras fontes continuam de pé.
+ */
+export async function grupoDoCanal(token, canal = CANAL_TELEGRAM, pedir = null) {
+  try {
+    const chamar = pedir || ((m, p) => telegram(token, m, p));
+    const info = await chamar('getChat', { chat_id: `@${String(canal).replace(/^@/, '')}` });
+    return info?.linked_chat_id ? [info.linked_chat_id] : [];
+  } catch {
+    return [];
+  }
+}
+
 async function telegram(token, metodo, params = {}) {
   const r = await fetch(`${TELEGRAM_API}${token}/${metodo}`, {
     method: 'POST',
@@ -540,13 +564,27 @@ async function lerTelegram(caderno) {
     ...(caderno.telegramGrupos || []),
     ...updates.map((u) => u?.message?.chat).filter((c) => c && (c.type === 'group' || c.type === 'supergroup')).map((c) => c.id),
     ...(caderno.comentarios || []).filter((c) => c.rede === 'Telegram' && c.chatId).map((c) => c.chatId),
+    // 🔑 …e a quarta, que é a única que NÃO depende de alguém ter escrito: ver abaixo.
+    ...(await grupoDoCanal(token)),
   ])];
+  /**
+   * 🔎 O QUE ELE VIU, dito em voz alta — e isto ficou de propósito.
+   *
+   * Sem esta linha, "0 comentários" e "não estou a ver o grupo" são indistinguíveis no
+   * registo, e o diagnóstico passa a ser adivinhação. Custou duas corridas às cegas em
+   * 11/08 até se perceber que o grupo não estava a ser reconhecido.
+   */
+  const vistos = updates.map((u) => `${u?.message?.chat?.type || '?'}:${u?.message?.chat?.id || '?'}`);
+  log(`   chats vistos nesta leva: ${vistos.length ? [...new Set(vistos)].join(' · ') : '(nenhum)'}`);
+  log(`   grupos conhecidos: ${grupos.length ? grupos.join(' · ') : '(nenhum ainda)'}`);
+
   const adminIds = new Set();
+  let donos = [];
   for (const g of grupos) {
     try {
-      for (const a of await telegram(token, 'getChatAdministrators', { chat_id: g })) {
-        if (a?.user?.id) adminIds.add(a.user.id);
-      }
+      const admins = await telegram(token, 'getChatAdministrators', { chat_id: g });
+      for (const a of admins) if (a?.user?.id) adminIds.add(a.user.id);
+      donos = [...new Set([...donos, ...donosNosAdministradores(admins)])];
     } catch (e) {
       // ⚠️ Não saber quem é administrador não pode calar o robô: no pior caso o dono vê
       // as suas próprias respostas no painel, que é feio e não é grave.
@@ -556,37 +594,40 @@ async function lerTelegram(caderno) {
 
   const comentarios = comentariosDoTelegram(updates, { adminIds });
   const ultimo = updates.length ? Math.max(...updates.map((u) => u.update_id)) : null;
-  // 🔑 O `/start` do dono, se veio nesta leva. Ver `donoNasMensagens`.
-  const dono = donoNasMensagens(updates, adminIds) || caderno.telegramDono;
   const resolvidos = jaRespondidosAMao(updates, adminIds);
   if (resolvidos.size) log(`   ✅ ${resolvidos.size} comentário(s) que o dono já respondeu à mão — saem do painel.`);
-  if (dono && !caderno.telegramDono) log(`   ✅ conversa privada do dono reconhecida — os avisos passam a chegar-lhe.`);
   log(`✈️  Telegram: ${eu.username ? `@${eu.username}` : 'bot'} · ${updates.length} mensagem(ns) na fila · ${comentarios.length} são comentário`);
-  if (!grupos.length) log('   (o bot ainda não viu nenhum grupo — ele só recebe a partir do momento em que entrou)');
-  return { comentarios, offset: ultimo !== null ? ultimo + 1 : caderno.telegramOffset, token, grupos, dono, resolvidos };
+  log(`   quem recebe os avisos: ${donos.length ? donos.join(' · ') : '(ninguém — não achei administrador humano)'}`);
+  return { comentarios, offset: ultimo !== null ? ultimo + 1 : caderno.telegramOffset, token, grupos, donos, resolvidos };
 }
 
 /**
- * 🔑 QUEM É O DONO, E POR QUE NÃO BASTA "O PRIMEIRO QUE FALAR COM O BOT".
+ * 🔑 QUEM É O DONO — e as duas voltas erradas que se deram até chegar aqui.
  *
- * Para o bot poder escrever ao dono, o dono tem de lhe falar primeiro (regra do Telegram).
- * O caminho fácil seria guardar o identificador do primeiro que mandasse `/start` — e aí
- * **qualquer pessoa que descobrisse o bot passaria a receber os comentários do canal**,
- * com o texto e o link de quem escreveu. É pouco provável e seria grave.
+ * ═══ O QUE NÃO SERVE ═══
+ * **1ª tentativa: "o primeiro que mandar /start".** Rejeitada logo: qualquer pessoa que
+ * descobrisse o bot passaria a receber os comentários do canal, com o texto e o link de
+ * quem escreveu.
  *
- * ✅ A regra segura: só se aceita a conversa privada de quem é **administrador do grupo
- * de discussão**. Isso é perguntado ao servidor, e é exacto.
+ * **2ª tentativa: apanhar a conversa privada dele nas mensagens, e conferir que é
+ * administrador.** Seguro, mas **não funcionou na prática** — e a razão é boa de guardar:
+ * o `getUpdates` **consome**. O `/start` chega uma vez, e se nessa leva o robô ainda não
+ * souber qual é o grupo (para saber quem são os administradores), a mensagem passa e
+ * **não volta**. Foram duas corridas às cegas a perceber isto.
  *
- * ⚠️ Os grupos ficam guardados no caderno, e não só os desta corrida: no dia em que o
- * `/start` chegar sozinho (sem nenhuma mensagem de grupo na mesma leva) ainda assim se
- * sabe a quem perguntar.
+ * ═══ ✅ O QUE SERVE — e não depende de apanhar nada no ar ═══
+ * **Pergunta-se ao canal qual é o grupo dele** (`getChat` devolve `linked_chat_id`), e ao
+ * grupo quem são os administradores. Daí sai o identificador de utilizador do dono — e no
+ * Telegram, **numa conversa privada o `chat_id` É o identificador do utilizador**.
+ *
+ * 🔑 Ou seja: não é preciso ver o `/start`. Basta ele ter aberto a conversa alguma vez.
+ * Se não tiver, o `sendMessage` responde `403` e diz-se-lhe o que fazer — em vez de ficar
+ * calado a fingir que está tudo bem.
  */
-export function donoNasMensagens(updates, adminIds) {
-  for (const u of updates || []) {
-    const m = u?.message;
-    if (m?.chat?.type === 'private' && adminIds.has(m.from?.id)) return m.chat.id;
-  }
-  return null;
+export function donosNosAdministradores(admins) {
+  return (admins || [])
+    .filter((a) => a?.user?.id && !a.user.is_bot)
+    .map((a) => a.user.id);
 }
 
 /**
@@ -656,7 +697,7 @@ async function main() {
 
   let tg = {
     comentarios: [], offset: caderno.telegramOffset, token: null,
-    grupos: caderno.telegramGrupos, dono: caderno.telegramDono, resolvidos: new Set(),
+    grupos: caderno.telegramGrupos, donos: [], resolvidos: new Set(),
   };
   try {
     tg = await lerTelegram(caderno);
@@ -707,9 +748,49 @@ async function main() {
     log(`      rascunho: ${rascunho.slice(0, 80)}`);
   }
 
+  /**
+   * 🔔 O AVISO PRIVADO — o que tira o dono de ter de se lembrar de abrir a `/status`.
+   *
+   * 🔑 **No Telegram, o `chat_id` de uma conversa privada É o identificador do
+   * utilizador.** Por isso basta saber quem são os administradores humanos do grupo (ver
+   * `donosNosAdministradores`) — não é preciso apanhar o `/start` deles no ar.
+   *
+   * ⚠️ **Nunca repete**: o que já foi avisado fica marcado no caderno. Sem isso, de quatro
+   * em quatro horas ele receberia o mesmo comentário até o responder — a maneira mais
+   * rápida de ensinar alguém a ignorar avisos.
+   * ⚠️ E **falhar a avisar não derruba nada**: o comentário já está no painel. O aviso é
+   * um lucro, nunca um ponto de falha.
+   */
+  let avisados = 0;
+  const porAvisar = painel.filter((c) => !caderno.avisados[c.id]);
+  if (tg.token && (tg.donos || []).length && porAvisar.length && !DRY_RUN) {
+    for (const c of porAvisar) {
+      for (const quem of tg.donos) {
+        try {
+          await avisarODono(tg.token, quem, c);
+          caderno.avisados[c.id] = new Date().toISOString();
+          avisados += 1;
+          gravarCaderno(caderno);
+        } catch (e) {
+          /**
+           * ⚠️ `403` aqui quer dizer uma coisa só, e tem cura de dez segundos: **um bot não
+           * pode escrever a quem nunca lhe falou**. Dizer isso é melhor do que repetir o
+           * erro cru — quem lê o registo não tem de saber a regra do Telegram de cor.
+           */
+          const cura = /403/.test(e.message)
+            ? ' — abra uma conversa com o bot e escreva /start; um bot não pode falar primeiro'
+            : '';
+          log(`   ⚠️ não deu para avisar ${quem} sobre @${c.autor} (${e.message})${cura}`);
+        }
+      }
+    }
+  } else if (porAvisar.length && !DRY_RUN && !(tg.donos || []).length) {
+    log('💤 aviso privado desligado — não encontrei administrador humano no grupo de discussão.');
+  }
+
   log('\n────────────────────────────────────────────────────────────────');
   const total = juntarAoPainel(caderno.comentarios, painel, { respondidos: caderno.respondidos, resolvidos: tg.resolvidos }).length;
-  log(`⚡ ${respondidos} respondido(s) sozinho · 📝 ${painel.length} novo(s) · ${total} à espera de si na /status`);
+  log(`⚡ ${respondidos} respondido(s) sozinho · 📝 ${painel.length} novo(s) · ${total} à espera de si na /status${avisados ? ` · 🔔 ${avisados} aviso(s)` : ''}`);
   if (painel.some((c) => c.ehQueixa)) log('🔴 há queixa(s) na lista — essas são as primeiras a ler.');
 
   if (!DRY_RUN) {

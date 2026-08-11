@@ -21,7 +21,7 @@ import {
   pedeOApp, ehQueixa, oQueFazerCom, respostaDaVez, RESPOSTAS,
   rascunhoDeReserva, promptDoRascunho, escreverRascunho,
   comentariosDoBluesky, respostasDaArvore, comentariosDoTelegram,
-  donoNasMensagens, textoDoAviso, juntarAoPainel, jaRespondidosAMao,
+  donosNosAdministradores, grupoDoCanal, textoDoAviso, juntarAoPainel, jaRespondidosAMao,
 } from '../redes/comentarios-redes.js';
 
 let passou = 0;
@@ -273,12 +273,45 @@ console.log('\n7. O TELEGRAM — as três coisas que caem no grupo, e só uma é
    * Guardar "o primeiro que mandar /start" faria com que qualquer pessoa que descobrisse o
    * bot passasse a receber os comentários do canal, com texto e link de quem escreveu.
    */
-  ok('🔑 o `/start` de um ADMINISTRADOR identifica o dono',
-    donoNasMensagens(privada, new Set([555])) === 555);
-  ok('🔴 e o de um estranho NÃO — senão ele receberia os comentários do canal',
-    donoNasMensagens(privada, new Set([111])) === null);
-  ok('uma mensagem de grupo nunca é confundida com a conversa privada do dono',
-    donoNasMensagens(updates, admins) === null);
+  /**
+   * 🔑 QUEM RECEBE OS AVISOS — e as duas voltas erradas até aqui, que valem mais do que a
+   * solução.
+   *
+   * 1ª: "o primeiro que mandar /start" — qualquer pessoa que descobrisse o bot passaria a
+   *     receber os comentários do canal, com texto e link de quem escreveu. Rejeitada.
+   * 2ª: apanhar a conversa privada dele nas mensagens e conferir que é administrador —
+   *     segura, mas NÃO FUNCIONOU: o `getUpdates` consome, o `/start` chega uma vez, e se
+   *     nessa leva o robô ainda não souber qual é o grupo, a mensagem passa e não volta.
+   * ✅ 3ª: perguntar ao GRUPO quem são os administradores. Numa conversa privada do
+   *     Telegram, o `chat_id` É o identificador do utilizador — logo não é preciso ver o
+   *     `/start` de ninguém.
+   */
+  const admins2 = [
+    { user: { id: 111, is_bot: false, username: 'edflavio' } },
+    { user: { id: 999, is_bot: true, username: 'Finmoovi_leitor_bot' } },
+  ];
+  ok('🔑 quem recebe o aviso é o administrador HUMANO do grupo',
+    donosNosAdministradores(admins2).join() === '111');
+  ok('🔴 e o próprio bot nunca entra nessa lista — ele escreveria a si mesmo',
+    !donosNosAdministradores(admins2).includes(999));
+  ok('sem administrador humano, não se inventa ninguém',
+    donosNosAdministradores([{ user: { id: 5, is_bot: true } }]).length === 0);
+  ok('e uma lista vazia não rebenta', donosNosAdministradores(undefined).length === 0);
+
+  /**
+   * 🔑 E O GRUPO VEM DO PRÓPRIO CANAL — a única fonte que não depende de alguém já ter
+   * escrito. As outras três (caderno, mensagens da leva, comentários guardados) estão
+   * todas vazias no primeiro arranque, e foi isso que custou duas corridas às cegas.
+   */
+  const canalComGrupo = async () => ({ id: -100111, linked_chat_id: -100777 });
+  ok('🔑 `getChat` no canal devolve o grupo de discussão ligado a ele',
+    (await grupoDoCanal('t', 'finmoovi', canalComGrupo)).join() === '-100777');
+  const canalSemGrupo = async () => ({ id: -100111 });
+  ok('um canal sem grupo ligado devolve lista vazia, sem rebentar',
+    (await grupoDoCanal('t', 'finmoovi', canalSemGrupo)).length === 0);
+  const canalQueFalha = async () => { throw new Error('chat not found'); };
+  ok('⚠️ e se a pergunta falhar, as outras fontes continuam de pé',
+    (await grupoDoCanal('t', 'finmoovi', canalQueFalha)).length === 0);
 
   // O aviso que ele recebe: o essencial, e nada mais.
   const aviso = textoDoAviso({ rede: 'Telegram', autor: 'maria', texto: 'Show', rascunho: 'Valeu!', link: 'https://t.me/x/1?comment=2', ehQueixa: false });
