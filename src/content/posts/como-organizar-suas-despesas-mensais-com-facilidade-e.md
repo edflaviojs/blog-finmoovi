@@ -3,6 +3,7 @@ title: "Como organizar suas despesas mensais com facilidade e segurança"
 description: "Descubra passo a passo como criar e usar uma planilha de gastos mensal, substitua a bagunça por clareza e ainda aproveite o FinMoovi para automatizar tudo em poucos minutos."
 tickerHeadline: "Sua conta no controle em minutos"
 image: "/images/posts/como-organizar-suas-despesas-mensais-com-facilidade-e.webp"
+imageAlt: "Forma abstrata amarela e azul sobre fundo gradiente escuro e branco."
 category: "orcamento"
 locale: "pt"
 tags: ["planilha de gastos","controle de despesas","orçamento mensal","app financeiro","FinMoovi","automação de finanças","categorias de gasto","planilha de gastos mensal"]

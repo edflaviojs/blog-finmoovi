@@ -3,6 +3,7 @@ title: "Cómo organizar tus gastos mensuales con facilidad y seguridad"
 description: "Descubre paso a paso cómo crear y usar una planilla de gastos mensual, sustituye el desorden por claridad y aprovecha FinMoovi para automatizar todo en pocos minutos."
 tickerHeadline: "Tus finanzas bajo control en minutos"
 image: "/images/posts/como-organizar-suas-despesas-mensais-com-facilidade-e.webp"
+imageAlt: "Forma abstracta amarilla y azul sobre fondo degradado oscuro."
 category: "orcamento"
 locale: "es"
 tags: ["planilla de gastos","control de gastos","presupuesto mensual","app financiero","FinMoovi","automatización de finanzas","categorías de gasto","planilla de gastos mensual"]

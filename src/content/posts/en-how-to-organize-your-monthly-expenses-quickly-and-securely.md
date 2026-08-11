@@ -3,6 +3,7 @@ title: "How to Organize Your Monthly Expenses Quickly and Securely"
 description: "Step‑by‑step guide to building a simple expense spreadsheet and automating it with FinMoovi in just minutes."
 tickerHeadline: "Your finances under control in minutes"
 image: "/images/posts/como-organizar-suas-despesas-mensais-com-facilidade-e.webp"
+imageAlt: "Abstract yellow and blue curved shapes on a gradient background with white space."
 category: "orcamento"
 locale: "en"
 tags: ["expense spreadsheet","expense tracking","monthly budget","financial app","FinMoovi","finance automation","spending categories","monthly expense spreadsheet"]
