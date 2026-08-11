@@ -21,7 +21,7 @@ import {
   pedeOApp, ehQueixa, oQueFazerCom, respostaDaVez, RESPOSTAS,
   rascunhoDeReserva, promptDoRascunho, escreverRascunho,
   comentariosDoBluesky, respostasDaArvore, comentariosDoTelegram,
-  donoNasMensagens, textoDoAviso,
+  donoNasMensagens, textoDoAviso, juntarAoPainel, jaRespondidosAMao,
 } from '../redes/comentarios-redes.js';
 
 let passou = 0;
@@ -287,6 +287,63 @@ console.log('\n7. O TELEGRAM — as três coisas que caem no grupo, e só uma é
   ok('🔴 e uma reclamação vem marcada como tal logo na primeira linha',
     textoDoAviso({ rede: 'Telegram', autor: 'j', texto: 'cobrou errado', rascunho: 'x', link: 'y', ehQueixa: true }).split(String.fromCharCode(10))
 [0].includes('RECLAMAÇÃO'));
+}
+
+console.log('\n8. 🔴 O PAINEL ACUMULA — o defeito que APAGOU um comentário de verdade');
+
+{
+  const HOJE = new Date('2026-08-11T12:00:00Z');
+  const antigo = { id: 'tg:1:5', rede: 'Telegram', autor: 'fernanda', texto: 'Show', quando: '2026-08-11T09:00:00Z', rascunho: 'Valeu!' };
+  const novo = { id: 'tg:1:9', rede: 'Telegram', autor: 'joao', texto: 'top', quando: '2026-08-11T11:00:00Z', rascunho: 'Obrigado!' };
+
+  /**
+   * 🔴 A PROVA QUE ESTE BLOCO EXISTE PARA FAZER, e nasceu de um caso real.
+   *
+   * A primeira versão gravava `caderno.comentarios = painel`, com o painel montado só do
+   * que ESTA corrida encontrou. No Telegram, o `getUpdates` CONSOME as mensagens — logo,
+   * na corrida seguinte o comentário não voltava a aparecer e **era apagado do painel**,
+   * antes de o dono lhe ter respondido. Aconteceu com um comentário de uma pessoa real,
+   * no mesmo dia em que chegou.
+   */
+  ok('🔴 um comentário guardado NÃO desaparece quando a corrida não o reencontra',
+    juntarAoPainel([antigo], [], { agora: HOJE }).length === 1);
+  ok('e o novo entra ao lado dele, sem apagar nada',
+    juntarAoPainel([antigo], [novo], { agora: HOJE }).length === 2);
+  ok('o mesmo comentário não entra duas vezes',
+    juntarAoPainel([antigo], [antigo], { agora: HOJE }).length === 1);
+  // ⚠️ O NOVO GANHA: ele traz o rascunho acabado de escrever.
+  ok('⚠️ e quando volta a aparecer, é a versão nova que fica',
+    juntarAoPainel([antigo], [{ ...antigo, rascunho: 'outro' }], { agora: HOJE })[0].rascunho === 'outro');
+  ok('os mais recentes ficam em cima',
+    juntarAoPainel([antigo], [novo], { agora: HOJE })[0].id === novo.id);
+
+  // ── quando é que ele SAI da lista ────────────────────────────────────────────
+  ok('sai quando o robô já lhe respondeu',
+    juntarAoPainel([antigo], [], { respondidos: { 'tg:1:5': {} }, agora: HOJE }).length === 0);
+  ok('🔑 sai quando o DONO lhe respondeu à mão',
+    juntarAoPainel([antigo], [], { resolvidos: new Set(['tg:1:5']), agora: HOJE }).length === 0);
+  ok('e sai quando envelhece — uma lista que só cresce ninguém lê',
+    juntarAoPainel([{ ...antigo, quando: '2026-07-01T09:00:00Z' }], [], { agora: HOJE }).length === 0);
+  /**
+   * ⚠️ SEM DATA LEGÍVEL, FICA. Deitar fora o que não se consegue medir é perder de
+   * propósito — e a data vem do outro lado, não é nossa.
+   */
+  ok('⚠️ um comentário sem data legível FICA, em vez de ser deitado fora',
+    juntarAoPainel([{ id: 'x', texto: 'a' }], [], { agora: HOJE }).length === 1);
+
+  // ── como se sabe que o dono respondeu à mão ──────────────────────────────────
+  const GRUPO = -100777;
+  const respostaDoDono = [{
+    update_id: 40,
+    message: {
+      message_id: 20, chat: { id: GRUPO, type: 'supergroup' }, from: { id: 111 },
+      text: 'valeu Fernanda!', reply_to_message: { message_id: 5 },
+    },
+  }];
+  ok('🔑 uma resposta de ADMINISTRADOR marca aquele comentário como tratado',
+    jaRespondidosAMao(respostaDoDono, new Set([111])).has(`tg:${GRUPO}:5`));
+  ok('🔴 mas a resposta de outra PESSOA não marca nada — ela não resolveu por si',
+    jaRespondidosAMao(respostaDoDono, new Set([999])).size === 0);
 }
 
 console.log(`\n${'═'.repeat(72)}`);

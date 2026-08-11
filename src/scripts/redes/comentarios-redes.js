@@ -121,6 +121,70 @@ export function ehQueixa(texto) {
 }
 
 /**
+ * 🔴 O PAINEL ACUMULA — E ISTO NASCEU DE UM DEFEITO REAL, VISTO EM 11/08.
+ *
+ * ═══ O QUE ACONTECEU ═══
+ * A primeira versão fazia `caderno.comentarios = painel`, com o `painel` montado só do
+ * que **esta corrida** foi buscar. Parecia certo e estava errado: no Telegram, o
+ * `getUpdates` **consome** as mensagens (ver o `offset`). Ou seja, um comentário aparecia
+ * numa corrida e **desaparecia do painel quatro horas depois** — antes de o dono o ter
+ * respondido, e sem deixar rasto.
+ *
+ * Foi assim que o comentário de uma pessoa real se perdeu no mesmo dia em que chegou.
+ *
+ * ⚠️ **É a família de defeito nº 1 desta casa outra vez:** a regra ("o painel é o que
+ * encontrei agora") foi escrita quando só havia Bluesky — onde a leitura NÃO consome, e
+ * portanto reencontrar tudo a cada corrida era verdade. Ao entrar uma rede com outra
+ * mecânica, a regra continuou a correr e passou a apagar trabalho.
+ *
+ * ═══ QUANDO É QUE UM COMENTÁRIO SAI DA LISTA ═══
+ * 1. **foi respondido pelo robô** (está em `respondidos`);
+ * 2. 🔑 **o dono respondeu-lhe à mão** — no Telegram isso é detectável: uma mensagem de
+ *    administrador que responde àquela. É a única forma honesta de saber que está tratado;
+ * 3. **envelheceu** — passados `DIAS_NO_PAINEL`, sai. Um comentário de três semanas já
+ *    não se responde, e uma lista que só cresce ninguém lê.
+ */
+export const DIAS_NO_PAINEL = 14;
+
+export function juntarAoPainel(guardados, novos, { respondidos = {}, resolvidos = new Set(), agora = new Date(), dias = DIAS_NO_PAINEL } = {}) {
+  const porId = new Map();
+  for (const c of [...(guardados || []), ...(novos || [])]) {
+    if (!c?.id) continue;
+    // ⚠️ O NOVO GANHA ao guardado: ele traz o rascunho acabado de escrever.
+    porId.set(c.id, { ...(porId.get(c.id) || {}), ...c });
+  }
+  const limite = agora.getTime() - dias * 24 * 3600 * 1000;
+  return [...porId.values()].filter((c) => {
+    if (respondidos[c.id]) return false;
+    if (resolvidos.has(c.id)) return false;
+    const quando = c.quando ? new Date(c.quando).getTime() : NaN;
+    // ⚠️ Sem data legível, FICA. Deitar fora o que não se consegue medir é como perder de
+    // propósito — e a data é do outro lado, não nossa.
+    if (Number.isNaN(quando)) return true;
+    return quando >= limite;
+  }).sort((a, b) => String(b.quando || '').localeCompare(String(a.quando || '')));
+}
+
+/**
+ * 🔑 QUEM O DONO JÁ RESPONDEU À MÃO — lido das próprias mensagens do Telegram.
+ *
+ * Uma mensagem de administrador que **responde a outra** (`reply_to_message`) diz que
+ * aquele comentário está tratado. É o único sinal honesto que existe: o robô não tem como
+ * saber de outra maneira, e deixar tudo no painel para sempre torná-lo-ia inútil.
+ */
+export function jaRespondidosAMao(updates, adminIds = new Set()) {
+  const fora = new Set();
+  for (const u of updates || []) {
+    const m = u?.message;
+    if (!m?.reply_to_message) continue;
+    if (!adminIds.has(m.from?.id)) continue;
+    if (m.chat?.type !== 'group' && m.chat?.type !== 'supergroup') continue;
+    fora.add(`tg:${m.chat.id}:${m.reply_to_message.message_id}`);
+  }
+  return fora;
+}
+
+/**
  * A DECISÃO SOBRE UM COMENTÁRIO — isolada de propósito para ser provada sem rede.
  *
  * `automatica` só é verdade quando as três coisas se juntam: pede o app, não é queixa, e
@@ -494,10 +558,12 @@ async function lerTelegram(caderno) {
   const ultimo = updates.length ? Math.max(...updates.map((u) => u.update_id)) : null;
   // 🔑 O `/start` do dono, se veio nesta leva. Ver `donoNasMensagens`.
   const dono = donoNasMensagens(updates, adminIds) || caderno.telegramDono;
+  const resolvidos = jaRespondidosAMao(updates, adminIds);
+  if (resolvidos.size) log(`   ✅ ${resolvidos.size} comentário(s) que o dono já respondeu à mão — saem do painel.`);
   if (dono && !caderno.telegramDono) log(`   ✅ conversa privada do dono reconhecida — os avisos passam a chegar-lhe.`);
   log(`✈️  Telegram: ${eu.username ? `@${eu.username}` : 'bot'} · ${updates.length} mensagem(ns) na fila · ${comentarios.length} são comentário`);
   if (!grupos.length) log('   (o bot ainda não viu nenhum grupo — ele só recebe a partir do momento em que entrou)');
-  return { comentarios, offset: ultimo !== null ? ultimo + 1 : caderno.telegramOffset, token, grupos, dono };
+  return { comentarios, offset: ultimo !== null ? ultimo + 1 : caderno.telegramOffset, token, grupos, dono, resolvidos };
 }
 
 /**
@@ -588,7 +654,10 @@ async function main() {
     log(`⚠️ o Bluesky não deu para ler (${e.message}) — as outras redes seguem.`);
   }
 
-  let tg = { comentarios: [], offset: caderno.telegramOffset, token: null, grupos: caderno.telegramGrupos, dono: caderno.telegramDono };
+  let tg = {
+    comentarios: [], offset: caderno.telegramOffset, token: null,
+    grupos: caderno.telegramGrupos, dono: caderno.telegramDono, resolvidos: new Set(),
+  };
   try {
     tg = await lerTelegram(caderno);
     encontrados.push(...tg.comentarios);
@@ -639,11 +708,20 @@ async function main() {
   }
 
   log('\n────────────────────────────────────────────────────────────────');
-  log(`⚡ ${respondidos} respondido(s) sozinho · 📝 ${painel.length} à espera de si na /status`);
+  const total = juntarAoPainel(caderno.comentarios, painel, { respondidos: caderno.respondidos, resolvidos: tg.resolvidos }).length;
+  log(`⚡ ${respondidos} respondido(s) sozinho · 📝 ${painel.length} novo(s) · ${total} à espera de si na /status`);
   if (painel.some((c) => c.ehQueixa)) log('🔴 há queixa(s) na lista — essas são as primeiras a ler.');
 
   if (!DRY_RUN) {
-    caderno.comentarios = painel;
+    /**
+     * 🔴 ACUMULA, NÃO SUBSTITUI. Ver `juntarAoPainel`: no Telegram a leitura CONSOME as
+     * mensagens, portanto escrever só o que ESTA corrida encontrou apagava o que ainda
+     * estava por responder. Perdeu-se um comentário real assim, em 11/08.
+     */
+    caderno.comentarios = juntarAoPainel(caderno.comentarios, painel, {
+      respondidos: caderno.respondidos,
+      resolvidos: tg.resolvidos,
+    });
     /**
      * 🔑 O `offset` DO TELEGRAM É GUARDADO AQUI, e não quando foi lido — de propósito.
      * Escrevê-lo só depois de os comentários estarem no caderno garante que nada é dado
