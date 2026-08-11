@@ -215,10 +215,16 @@ export async function escreverRascunho(comentario, gerar = generateText) {
 // ═══════════════════════════════════════════════════════════════════════════════
 
 export function lerCaderno(caminho = CADERNO) {
-  if (!existsSync(caminho)) return { comentarios: [], respondidos: {}, telegramOffset: null };
+  if (!existsSync(caminho)) {
+    return { comentarios: [], respondidos: {}, telegramOffset: null, telegramGrupos: [], telegramDono: null, avisados: {} };
+  }
   try {
     const d = JSON.parse(readFileSync(caminho, 'utf-8'));
-    return { comentarios: d.comentarios || [], respondidos: d.respondidos || {}, telegramOffset: d.telegramOffset || null };
+    return {
+      comentarios: d.comentarios || [], respondidos: d.respondidos || {},
+      telegramOffset: d.telegramOffset || null, telegramGrupos: d.telegramGrupos || [],
+      telegramDono: d.telegramDono || null, avisados: d.avisados || {},
+    };
   } catch {
     // ⚠️ Não se apaga um caderno que não se consegue ler: apagá-lo faria o robô responder
     // outra vez a toda a gente. Pára-se e diz-se.
@@ -372,6 +378,15 @@ export function comentariosDoTelegram(updates, { adminIds = new Set(), canal = C
   for (const u of updates || []) {
     const m = u?.message;
     if (!m || !m.text) continue;                       // sem texto não há o que responder
+    /**
+     * 🔴 SÓ O QUE VEM DE UM GRUPO É COMENTÁRIO — apanhado em 11/08, antes de morder.
+     *
+     * Quando o dono manda `/start` ao bot em conversa privada (é preciso fazê-lo uma vez,
+     * senão o bot não lhe pode escrever), essa mensagem também cai no `getUpdates`. Sem
+     * esta linha ela entrava no painel **como se fosse um comentário de alguém** — e o
+     * dono via a sua própria mensagem privada na lista de trabalho.
+     */
+    if (m.chat?.type !== 'group' && m.chat?.type !== 'supergroup') continue;
     if (m.is_automatic_forward) continue;              // 1. é o nosso próprio vídeo
     if (m.from?.is_bot) continue;                      // robôs não se respondem uns aos outros
     if (m.sender_chat) continue;                       // veio em nome do canal, não de uma pessoa
@@ -441,7 +456,10 @@ async function lerTelegram(caderno) {
 
   // 🔑 Os grupos onde ele está vêm das próprias mensagens — o dono não teve de descobrir
   // número de grupo nenhum. Ele só o pôs num sítio, e é esse que aparece.
-  const grupos = [...new Set(updates.map((u) => u?.message?.chat?.id).filter(Boolean))];
+  const grupos = [...new Set([
+    ...(caderno.telegramGrupos || []),
+    ...updates.map((u) => u?.message?.chat).filter((c) => c && (c.type === 'group' || c.type === 'supergroup')).map((c) => c.id),
+  ])];
   const adminIds = new Set();
   for (const g of grupos) {
     try {
@@ -457,9 +475,67 @@ async function lerTelegram(caderno) {
 
   const comentarios = comentariosDoTelegram(updates, { adminIds });
   const ultimo = updates.length ? Math.max(...updates.map((u) => u.update_id)) : null;
+  // 🔑 O `/start` do dono, se veio nesta leva. Ver `donoNasMensagens`.
+  const dono = donoNasMensagens(updates, adminIds) || caderno.telegramDono;
+  if (dono && !caderno.telegramDono) log(`   ✅ conversa privada do dono reconhecida — os avisos passam a chegar-lhe.`);
   log(`✈️  Telegram: ${eu.username ? `@${eu.username}` : 'bot'} · ${updates.length} mensagem(ns) na fila · ${comentarios.length} são comentário`);
   if (!grupos.length) log('   (o bot ainda não viu nenhum grupo — ele só recebe a partir do momento em que entrou)');
-  return { comentarios, offset: ultimo !== null ? ultimo + 1 : caderno.telegramOffset, token };
+  return { comentarios, offset: ultimo !== null ? ultimo + 1 : caderno.telegramOffset, token, grupos, dono };
+}
+
+/**
+ * 🔑 QUEM É O DONO, E POR QUE NÃO BASTA "O PRIMEIRO QUE FALAR COM O BOT".
+ *
+ * Para o bot poder escrever ao dono, o dono tem de lhe falar primeiro (regra do Telegram).
+ * O caminho fácil seria guardar o identificador do primeiro que mandasse `/start` — e aí
+ * **qualquer pessoa que descobrisse o bot passaria a receber os comentários do canal**,
+ * com o texto e o link de quem escreveu. É pouco provável e seria grave.
+ *
+ * ✅ A regra segura: só se aceita a conversa privada de quem é **administrador do grupo
+ * de discussão**. Isso é perguntado ao servidor, e é exacto.
+ *
+ * ⚠️ Os grupos ficam guardados no caderno, e não só os desta corrida: no dia em que o
+ * `/start` chegar sozinho (sem nenhuma mensagem de grupo na mesma leva) ainda assim se
+ * sabe a quem perguntar.
+ */
+export function donoNasMensagens(updates, adminIds) {
+  for (const u of updates || []) {
+    const m = u?.message;
+    if (m?.chat?.type === 'private' && adminIds.has(m.from?.id)) return m.chat.id;
+  }
+  return null;
+}
+
+/**
+ * O AVISO PRIVADO — o que tira o dono de ter de se lembrar de abrir a `/status`.
+ *
+ * ⚠️ **Nunca repete.** O que já foi avisado fica marcado no caderno; senão, de quatro em
+ * quatro horas, ele receberia o mesmo comentário outra vez até o responder — que é a
+ * maneira mais rápida de ensinar alguém a ignorar avisos.
+ *
+ * ⚠️ E **falhar a avisar não pode derrubar a corrida**: o comentário já está no painel,
+ * que é o que interessa.
+ */
+export function textoDoAviso(comentario) {
+  return [
+    comentario.ehQueixa ? '🔴 RECLAMAÇÃO em ' + comentario.rede : '📥 Comentário novo no ' + comentario.rede,
+    '',
+    `@${comentario.autor} escreveu:`,
+    `"${comentario.texto}"`,
+    '',
+    '💬 Sugestão de resposta:',
+    comentario.rascunho,
+    '',
+    comentario.link,
+  ].join('\n');
+}
+
+async function avisarODono(token, chatId, comentario) {
+  return telegram(token, 'sendMessage', {
+    chat_id: chatId,
+    text: textoDoAviso(comentario),
+    link_preview_options: { is_disabled: true },
+  });
 }
 
 async function responderNoTelegram(token, comentario, texto) {
@@ -495,7 +571,7 @@ async function main() {
     log(`⚠️ o Bluesky não deu para ler (${e.message}) — as outras redes seguem.`);
   }
 
-  let tg = { comentarios: [], offset: caderno.telegramOffset, token: null };
+  let tg = { comentarios: [], offset: caderno.telegramOffset, token: null, grupos: caderno.telegramGrupos, dono: caderno.telegramDono };
   try {
     tg = await lerTelegram(caderno);
     encontrados.push(...tg.comentarios);

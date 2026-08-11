@@ -21,6 +21,7 @@ import {
   pedeOApp, ehQueixa, oQueFazerCom, respostaDaVez, RESPOSTAS,
   rascunhoDeReserva, promptDoRascunho, escreverRascunho,
   comentariosDoBluesky, respostasDaArvore, comentariosDoTelegram,
+  donoNasMensagens, textoDoAviso,
 } from '../redes/comentarios-redes.js';
 
 let passou = 0;
@@ -202,22 +203,22 @@ console.log('\n7. O TELEGRAM — as três coisas que caem no grupo, e só uma é
      * grupo, sozinho, com `is_automatic_forward`. Sem esta trava o robô responderia ao
      * seu próprio post — todos os dias, para sempre.
      */
-    { update_id: 10, message: { message_id: 1, chat: { id: GRUPO }, is_automatic_forward: true, text: 'Você sabe quanto some por mês?', sender_chat: { id: -100999 } } },
+    { update_id: 10, message: { message_id: 1, chat: { id: GRUPO, type: 'supergroup' }, is_automatic_forward: true, text: 'Você sabe quanto some por mês?', sender_chat: { id: -100999 } } },
     // 2. o dono a responder — é resposta, não pergunta
-    { update_id: 11, message: { message_id: 2, chat: { id: GRUPO }, from: { id: DONO, username: 'edflavio' }, text: 'valeu!', date: 1000 } },
+    { update_id: 11, message: { message_id: 2, chat: { id: GRUPO, type: 'supergroup' }, from: { id: DONO, username: 'edflavio' }, text: 'valeu!', date: 1000 } },
     // 3. o comentário de uma pessoa — o que interessa
     {
       update_id: 12,
       message: {
-        message_id: 3, chat: { id: GRUPO }, from: { id: 222, username: 'maria' },
+        message_id: 3, chat: { id: GRUPO, type: 'supergroup' }, from: { id: 222, username: 'maria' },
         text: 'como pego o FINMOOVI?', date: 2000,
         reply_to_message: { forward_from_message_id: 8 },
       },
     },
     // e um robô qualquer que entre no grupo não pode virar conversa
-    { update_id: 13, message: { message_id: 4, chat: { id: GRUPO }, from: { id: 333, is_bot: true }, text: 'FINMOOVI', date: 3000 } },
+    { update_id: 13, message: { message_id: 4, chat: { id: GRUPO, type: 'supergroup' }, from: { id: 333, is_bot: true }, text: 'FINMOOVI', date: 3000 } },
     // mensagem sem texto (uma foto, por exemplo) não tem o que responder
-    { update_id: 14, message: { message_id: 5, chat: { id: GRUPO }, from: { id: 444 }, date: 4000 } },
+    { update_id: 14, message: { message_id: 5, chat: { id: GRUPO, type: 'supergroup' }, from: { id: 444 }, date: 4000 } },
   ];
 
   const c = comentariosDoTelegram(updates, { adminIds: admins, canal: 'finmoovi' });
@@ -243,7 +244,7 @@ console.log('\n7. O TELEGRAM — as três coisas que caem no grupo, e só uma é
   ok('🔑 um pedido no Telegram é respondido sozinho, como no Bluesky',
     oQueFazerCom(c[0]).automatica === true);
   const queixaTg = comentariosDoTelegram(
-    [{ update_id: 20, message: { message_id: 9, chat: { id: GRUPO }, from: { id: 555, username: 'joao' }, text: 'o FINMOOVI cobrou errado', date: 5000 } }],
+    [{ update_id: 20, message: { message_id: 9, chat: { id: GRUPO, type: 'supergroup' }, from: { id: 555, username: 'joao' }, text: 'o FINMOOVI cobrou errado', date: 5000 } }],
     { adminIds: admins },
   );
   ok('🔴 e uma queixa no Telegram também espera pelo dono',
@@ -255,6 +256,37 @@ console.log('\n7. O TELEGRAM — as três coisas que caem no grupo, e só uma é
    */
   ok('⚠️ sem a lista de administradores ele continua a ler (só fica menos esperto)',
     comentariosDoTelegram(updates, {}).length === 2);
+
+  /**
+   * 🔴 A CONVERSA PRIVADA NÃO É COMENTÁRIO — apanhado em 11/08, antes de morder.
+   *
+   * O dono tem de mandar `/start` ao bot em privado (senão o bot não lhe pode escrever), e
+   * essa mensagem também cai no `getUpdates`. Sem a trava do tipo de chat, ela entrava no
+   * painel **como se fosse um comentário de alguém** — e o dono via a sua própria mensagem
+   * privada na lista de trabalho.
+   */
+  const privada = [{ update_id: 30, message: { message_id: 1, chat: { id: 555, type: 'private' }, from: { id: 555, username: 'edflavio' }, text: '/start', date: 6000 } }];
+  ok('🔴 uma conversa privada com o bot NÃO vira comentário', comentariosDoTelegram(privada, {}).length === 0);
+
+  /**
+   * 🔑 E É DELA QUE SE DESCOBRE QUEM É O DONO — mas só se ele for administrador do grupo.
+   * Guardar "o primeiro que mandar /start" faria com que qualquer pessoa que descobrisse o
+   * bot passasse a receber os comentários do canal, com texto e link de quem escreveu.
+   */
+  ok('🔑 o `/start` de um ADMINISTRADOR identifica o dono',
+    donoNasMensagens(privada, new Set([555])) === 555);
+  ok('🔴 e o de um estranho NÃO — senão ele receberia os comentários do canal',
+    donoNasMensagens(privada, new Set([111])) === null);
+  ok('uma mensagem de grupo nunca é confundida com a conversa privada do dono',
+    donoNasMensagens(updates, admins) === null);
+
+  // O aviso que ele recebe: o essencial, e nada mais.
+  const aviso = textoDoAviso({ rede: 'Telegram', autor: 'maria', texto: 'Show', rascunho: 'Valeu!', link: 'https://t.me/x/1?comment=2', ehQueixa: false });
+  ok('o aviso leva quem disse, o que disse, o rascunho e o link',
+    aviso.includes('maria') && aviso.includes('Show') && aviso.includes('Valeu!') && aviso.includes('https://t.me/x/1?comment=2'));
+  ok('🔴 e uma reclamação vem marcada como tal logo na primeira linha',
+    textoDoAviso({ rede: 'Telegram', autor: 'j', texto: 'cobrou errado', rascunho: 'x', link: 'y', ehQueixa: true }).split(String.fromCharCode(10))
+[0].includes('RECLAMAÇÃO'));
 }
 
 console.log(`\n${'═'.repeat(72)}`);
