@@ -47,6 +47,10 @@ on:
         description: 'Não gastar IA nos rascunhos (usa os de reserva)'
         type: boolean
         default: false
+      testar_aviso:
+        description: 'SÓ TESTAR: manda uma mensagem de teste ao dono, pelo caminho verdadeiro'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -98,6 +102,7 @@ jobs:
           ARGS=""
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
           if [ "${{ github.event.inputs.sem_ia }}" = "true" ]; then ARGS="$ARGS --sem-ia"; fi
+          if [ "${{ github.event.inputs.testar_aviso }}" = "true" ]; then ARGS="$ARGS --testar-aviso"; fi
           node src/scripts/redes/comentarios-redes.js $ARGS
 
       - name: Guardar o caderno

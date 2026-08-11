@@ -761,6 +761,37 @@ async function main() {
    * ⚠️ E **falhar a avisar não derruba nada**: o comentário já está no painel. O aviso é
    * um lucro, nunca um ponto de falha.
    */
+  /**
+   * 🧪 `--testar-aviso` — porque "ninguém comentou" e "o aviso não chega" são a MESMA
+   * coisa vista de fora, e essa confusão já custou um dia inteiro neste projecto.
+   *
+   * Manda UMA mensagem, marcada como teste, pelo caminho verdadeiro. Se ela chegar, está
+   * provado; se der `403`, diz-se o que fazer. Fica no código de propósito: no dia em que
+   * isto for montado noutro canal, é a primeira coisa a correr.
+   */
+  if (args['testar-aviso']) {
+    if (!tg.token) { log('❌ sem TELEGRAM_LEITOR_TOKEN — não há por onde testar.'); return 1; }
+    if (!(tg.donos || []).length) { log('❌ não encontrei administrador humano no grupo — ver as linhas acima.'); return 1; }
+    for (const quem of tg.donos) {
+      try {
+        await avisarODono(tg.token, quem, {
+          rede: 'Telegram', autor: 'teste', ehQueixa: false,
+          texto: 'Isto é um teste do aviso — ninguém escreveu isto de verdade.',
+          rascunho: 'Se você está a ler esta mensagem, o aviso funciona e não é preciso fazer mais nada.',
+          link: 'https://t.me/finmoovi',
+        });
+        log(`✅ aviso de teste entregue a ${quem} — o caminho está provado.`);
+      } catch (e) {
+        const cura = /403/.test(e.message)
+          ? ' → abra uma conversa com o bot e escreva /start; um bot não pode falar primeiro'
+          : '';
+        log(`❌ não chegou a ${quem}: ${e.message}${cura}`);
+        return 1;
+      }
+    }
+    return 0;
+  }
+
   let avisados = 0;
   const porAvisar = painel.filter((c) => !caderno.avisados[c.id]);
   if (tg.token && (tg.donos || []).length && porAvisar.length && !DRY_RUN) {
