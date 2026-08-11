@@ -4,6 +4,7 @@ definition: "Qué es control de gastos WhatsApp y cómo aparece en tu día a dí
 title: "control de gastos WhatsApp - Glosario Financiero"
 description: "Qué es control de gastos WhatsApp y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/controle-de-gastos-whatsapp.webp"
+imageAlt: "Monedas doradas apiladas, hucha cerdo en frasco de vidrio, planta verde, fondo azul oscuro."
 category: "basico"
 tags: ["control de gastos WhatsApp", "glosario", "finanzas"]
 author: "FinMoovi"

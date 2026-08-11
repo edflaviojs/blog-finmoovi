@@ -4,6 +4,7 @@ definition: "What WhatsApp expense control is and how it shows up in your everyd
 title: "WhatsApp expense control - Financial Glossary"
 description: "What WhatsApp expense control is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/controle-de-gastos-whatsapp.webp"
+imageAlt: "Gold coins stacked with green plants, piggy bank in glass jar, dark blue background"
 category: "basico"
 tags: ["WhatsApp expense control", "glossary", "finance"]
 author: "FinMoovi"

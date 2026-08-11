@@ -3,6 +3,7 @@ title: "Cómo crear una plantilla Excel para finanzas personales en 2026 y logra
 description: "Descubre paso a paso cómo montar una hoja Excel que controle ingresos, gastos y metas, y combina con la app FinMoovi para simplificar tu dinero."
 tickerHeadline: "La plantilla que simplifica tu dinero"
 image: "/images/posts/como-criar-um-modelo-excel-para-financas-pessoais-em-2026-e.webp"
+imageAlt: "Tres personas sonrientes revisan documentos en una mesa de madera con plantas verdes."
 category: "dicas"
 tags:
   - "excel finanzas personales"

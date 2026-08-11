@@ -3,6 +3,7 @@ title: "How to Build a Personal Finance Excel Template in 2026 for Peace of Mind
 description: "Create a simple Excel template to track income, expenses, and savings, and integrate it with FinMoovi for effortless budgeting."
 tickerHeadline: "The template that simplifies your money"
 image: "/images/posts/como-criar-um-modelo-excel-para-financas-pessoais-em-2026-e.webp"
+imageAlt: "Three people reviewing documents at a wooden table with a pen."
 category: "dicas"
 tags:
   - "personal finance"

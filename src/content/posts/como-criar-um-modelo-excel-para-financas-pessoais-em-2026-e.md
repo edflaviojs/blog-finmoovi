@@ -3,6 +3,7 @@ title: "Como criar um modelo Excel para finanças pessoais em 2026 e ganhar tran
 description: "Aprenda a montar um template Excel de finanças pessoais, passo a passo, e descubra como o FinMoovi pode automatizar o registro em apenas 5 minutos."
 tickerHeadline: "O modelo que simplifica seu dinheiro"
 image: "/images/posts/como-criar-um-modelo-excel-para-financas-pessoais-em-2026-e.webp"
+imageAlt: "Casal sorridente analisa documentos em mesa de madeira, com caneta e plantas verdes ao fundo."
 category: "dicas"
 tags:
   - "template excel finanças pessoais"
