@@ -25,14 +25,14 @@ seo:
   keywords: ["personal finance","Excel budget template","financial tracking","budgeting app","FinMoovi","expense tracking","savings plan"]
 ---
 
-The end of the month rolls around and, when you log into your bank, you realize the money vanished faster than expected. A **personal finance Excel template** lets you line up income, expenses, and goals in clear columns, giving you an instant snapshot and the ability to tweak things on the fly—without pricey software.
+The end of the month rolls around and, when you log into your bank, you realize the money vanished faster than expected. A **[personal finance](/en/posts/en-30-day-rule-for-purchases) Excel template** lets you line up income, expenses, and goals in clear columns, giving you an instant snapshot and the ability to tweak things on the fly—without pricey software.
 
 ### Why an Excel template still makes sense in 2026  
-Even with a flood of budgeting apps, Excel remains the go‑to for anyone who wants **full control** over layout and formulas. It:
+Even with a flood of [budgeting](/en/posts/en-how-small-actions-can-transform-your-finances-in-2026) apps, Excel remains the go‑to for anyone who wants **full control** over layout and formulas. It:
 
 * **Lets you customize** categories to fit your lifestyle (e.g., “morning coffee” or “streaming subscription”).  
 * **Works offline** – perfect when your connection is spotty or you simply don’t want to rely on the cloud.  
-* **Links with other sheets** – if you already use spreadsheets for travel planning or investment tracking, everything can live in one file.  
+* **Links with other sheets** – if you already use spreadsheets for travel [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) or investment tracking, everything can live in one file.  
 
 And the cost? Practically zero—just the productivity suite that comes with most computers.
 
@@ -47,7 +47,7 @@ And the cost? Practically zero—just the productivity suite that comes with mos
 | **Fixed Expenses** | Rent, utilities, internet, insurance. |
 | **Variable Expenses** | Groceries, transport, entertainment, impulse buys. |
 | **Investments** | Certificates of deposit (CDs), mutual funds, cryptocurrencies. |
-| **Emergency Fund** | Movements into your safety‑net account. |
+| **[Emergency Fund](/en/glossario/en-emergency-fund)** | Movements into your safety‑net account. |
 
 #### 2. Create standard columns  
 In each tab add **Date**, **Description**, **Category**, **Amount**, and **Payment Method**. Use data validation so the category is chosen from a drop‑down list—this eliminates typos.
@@ -56,7 +56,7 @@ In each tab add **Date**, **Description**, **Category**, **Amount**, and **Payme
 
 - **Monthly Total**: `=SUM(Amount)` at the bottom of each tab.  
 - **Available Balance**: `=Summary!B2 - (FixedExpenses!B$10 + VariableExpenses!B$20)`.  
-- **Savings Goal**: `=Income!B$5 * 0.20` (20 % of your earnings).  
+- **[Savings](/en/glossario/en-savings) Goal**: `=Income!B$5 * 0.20` (20 % of your earnings).  
 
 These formulas auto‑update as you add rows, keeping the summary dashboard current in real time.
 
@@ -72,7 +72,7 @@ Select the monthly totals for income and expenses and insert a column chart. The
 2. **Review weekly** – set aside 15 minutes at week’s end to verify categories and adjust projections.  
 3. **Use FinMoovi’s smart capture**: snap a photo of a receipt or statement, and the app auto‑categorizes it. Then click “Export CSV” and drop the file into Excel in under five minutes.  
 4. **Update monthly goals** – if your salary changes or an unexpected bill pops up, tweak the savings target to keep the plan realistic.  
-5. **Back up to the cloud** – even though Excel works offline, saving the file to Google Drive, OneDrive, or another cloud service protects you from data loss.
+5. **Back up to the cloud** – even though Excel works offline, [saving](/en/posts/en-how-to-build-a-budget-that-actually-works-in-2026) the file to Google Drive, OneDrive, or another cloud service protects you from data loss.
 
 ### Practical integration: FinMoovi + your template  
 
@@ -99,7 +99,7 @@ Using both gives you the best of both worlds: **total flexibility** from the spr
 - **Automatic emergency fund**: set a formula that moves 5 % of monthly income to the “Emergency Fund” tab, cementing the habit without conscious effort.
 
 ### Conclusion  
-A **personal finance Excel template** delivers clarity, control, and the feeling that your money is truly in your hands. Paired with FinMoovi’s instant expense capture, you save time and cut errors, freeing you to focus on what matters most: living with less stress and hitting your financial goals. Start today, follow the steps above, and notice the difference within the first week.
+A **[personal finance](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your) Excel template** delivers clarity, control, and the feeling that your money is truly in your hands. Paired with FinMoovi’s instant expense capture, you save time and cut errors, freeing you to focus on what matters most: living with less stress and hitting your financial goals. Start today, follow the steps above, and notice the difference within the first week.
 
 ## Frequently Asked Questions  
 
@@ -110,7 +110,7 @@ Pick categories that mirror your biggest spending areas. Start with the basics (
 Yes. Most spreadsheet apps (Google Sheets, Microsoft Excel mobile) let you open, edit, and view your file on smartphones and tablets while keeping full functionality.  
 
 ### Does FinMoovi work without internet?  
-FinMoovi’s offline mode lets you capture receipts and categorize expenses even when you’re offline. The data syncs automatically once you’re back online.  
+FinMoovi’s offline mode lets you capture receipts and [categorize expenses](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end) even when you’re offline. The data syncs automatically once you’re back online.  
 
 ### Do I need to be a formula expert to use the template?  
 No. Basic sum, average, and conditional‑formatting formulas are enough for most users. If you want to go deeper, free tutorials on sites like [Investopedia](https://www.investopedia.com) walk you through each step.

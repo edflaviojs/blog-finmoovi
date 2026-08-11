@@ -63,7 +63,7 @@ Variable income gathers assets whose return **is not guaranteed** and depends on
 | Product | Where to Find | Average Return 2024‑2025* | Features |
 |---------|----------------|---------------------------|----------|
 | Listed company stocks | Stock exchange | 12 %‑20 % a year (major stock index) | High volatility, occasional dividends |
-| ETFs (Index Funds) | Brokerages | 11 %‑18 % a year (e.g., broad‑market ETF) | Automatic diversification, low management fee |
+| ETFs (Index Funds) | Brokerages | 11 %‑18 % a year (e.g., broad‑market ETF) | Automatic [diversification](/en/glossario/en-diversification), low management fee |
 | Real Estate Investment Trusts (REITs) | Brokerages | 7 %‑9 % a year (monthly yield) | Rental income, vacancy risk |
 | Cryptocurrencies | Exchanges | Varies widely (e.g., BTC 2024: +30 % a year) | Extremely volatile, regulatory risk |
 
@@ -107,7 +107,7 @@ In practice, when you buy a stock you become a shareholder of the company. Your 
 
 ## When to Choose Fixed Income
 
-1. **Short‑term goal** – If you need the money within up to 2 years (e.g., emergency fund, vacation), fixed income ensures the capital stays preserved.  
+1. **Short‑term goal** – If you need the money within up to 2 years (e.g., [emergency fund](/en/glossario/en-emergency-fund), vacation), fixed income ensures the capital stays preserved.  
 2. **Conservative profile** – Those who can’t tolerate seeing their investment value swing prefer the safety of a CD or government bond.  
 3. **High‑interest environment** – When the central bank base rate is above 12 % a year, fixed income already offers very attractive returns.  
 4. **Need for income** – Tax‑exempt bank notes and some corporate bonds pay monthly interest, generating a stable cash flow.

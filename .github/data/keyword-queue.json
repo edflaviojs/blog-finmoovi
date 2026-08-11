@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-11T10:40:00.996Z",
-  "sourceCursor": 1,
+  "updatedAt": "2026-08-11T11:35:22.927Z",
+  "sourceCursor": 0,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -664,16 +664,18 @@
       "category": "glossario",
       "priority": 3,
       "source": "autocomplete",
-      "status": "pending",
-      "addedAt": "2026-08-03T10:31:32.128Z"
+      "status": "skipped",
+      "addedAt": "2026-08-03T10:31:32.128Z",
+      "reason": "produto-de-terceiro"
     },
     {
       "keyword": "despesa recorrente conta azul",
       "category": "glossario",
       "priority": 3,
       "source": "autocomplete",
-      "status": "pending",
-      "addedAt": "2026-08-03T10:31:32.129Z"
+      "status": "skipped",
+      "addedAt": "2026-08-03T10:31:32.129Z",
+      "reason": "nome-proprio-local"
     },
     {
       "keyword": "controle de gastos pessoais",
@@ -1652,8 +1654,10 @@
       "category": "glossario",
       "priority": 3,
       "source": "autocomplete",
-      "status": "pending",
-      "addedAt": "2026-08-10T08:20:10.977Z"
+      "status": "used",
+      "addedAt": "2026-08-10T08:20:10.977Z",
+      "usedAt": "2026-08-11T11:35:22.927Z",
+      "usedBy": "glossario-auto-diario"
     },
     {
       "keyword": "planejamento financeiro pessoal",

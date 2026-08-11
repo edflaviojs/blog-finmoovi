@@ -27,7 +27,7 @@ Private pension is a long‑term [government bonds](/en/posts/en-tesouro-direto-
 
 ![How Private Pension Works](/images/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale--2.webp)
 
-An example of how private pension works: imagine that you invest **$100 per month** for 20 years in a private pension plan with an interest rate of 8% per year. At the end of this period, you will have invested around **$24,000**, and you can receive a monthly income of approximately **$500** after retirement.
+An example of how private pension works: imagine that you invest **$100 per month** for 20 years in a private pension plan with an [interest](/en/glossario/en-interest) rate of 8% per year. At the end of this period, you will have invested around **$24,000**, and you can receive a monthly income of approximately **$500** after retirement.
 
 ## How Investing on Your Own Works
 
