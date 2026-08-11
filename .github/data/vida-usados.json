@@ -28,5 +28,11 @@
     "gancho": "ta-perdendo",
     "turno": "noite",
     "em": "2026-08-10T05:58:06.867Z"
+  },
+  {
+    "situacao": "guardar-salario-curto",
+    "gancho": "ninguem-fala",
+    "turno": "manha",
+    "em": "2026-08-11T05:34:40.125Z"
   }
 ]

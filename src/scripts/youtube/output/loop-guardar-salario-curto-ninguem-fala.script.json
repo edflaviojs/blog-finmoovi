@@ -1,0 +1,117 @@
+{
+  "slug": "loop-guardar-salario-curto-ninguem-fala",
+  "formato": "loop16",
+  "term": "Guardar com salário curto",
+  "category": "vida",
+  "keyword": "GUARDAR",
+  "situacao": "guardar-salario-curto",
+  "gancho": "ninguem-fala",
+  "ganchoFamilia": "ninguém fala",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "balde-furado",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Ninguém fala isso sobre guardar, mas é real.",
+      "durationSec": 2.9,
+      "shots": [
+        {
+          "anchor": "Ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "Guardar também aperta"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "guardar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu guardava um pouquinho, mas lá em casa faltava antes do mês acabar.",
+      "durationSec": 4.7,
+      "shots": [
+        {
+          "anchor": "guardava",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "pouquinho",
+          "visual": {
+            "type": "statement",
+            "text": "O dinheiro sumia"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então comecei a separar primeiro, e o que sobrava ficava quietinho.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "comecei",
+          "visual": {
+            "type": "statement",
+            "text": "Separei antes"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "separar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Agora eu sei. Ninguém fala isso, mas guardar pode escapar.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "Ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "Guardar pode escapar"
+          }
+        },
+        {
+          "anchor": "guardar",
+          "visual": {
+            "type": "statement",
+            "text": "Guardar também aperta"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
