@@ -70,6 +70,9 @@
  */
 
 import { readFileSync, writeFileSync, existsSync, statSync, mkdirSync } from 'node:fs';
+// ⚠️ Só para a cópia do Telegram (ver `comprimirParaOTelegram`). O ffmpeg pode não estar
+// na máquina, e por isso essa função nunca pode matar a corrida.
+import { spawnSync } from 'node:child_process';
 import { join, dirname } from 'node:path';
 
 // ─── caminhos ────────────────────────────────────────────────────────────────
@@ -956,9 +959,9 @@ export const REDE_DE_FORA = {
  */
 export const FORMATOS = {
   // O Short de 50s — o que já existia. Continua a ser o padrão quando o roteiro não diz.
-  curto: { nome: 'Short de 50s', pasta: ['youtube-render', 'out'], redes: null, stories: true, horaBR: 19 },
+  curto: { nome: 'Short de 50s', pasta: ['youtube-render', 'out'], redes: null, stories: true, horaBR: 19, comprimirParaTelegram: true },
   // Os dois de 16s em loop. Mesma pasta, mesmas redes; só a hora é que vem do turno.
-  loop16: { nome: 'Short de 16s', pasta: ['youtube-render', 'out'], redes: null, stories: true, horaBR: 10 },
+  loop16: { nome: 'Short de 16s', pasta: ['youtube-render', 'out'], redes: null, stories: true, horaBR: 10, comprimirParaTelegram: true },
   longo: {
     nome: 'Vídeo longo',
     pasta: ['youtube-render', 'out', 'longo'],
@@ -984,8 +987,46 @@ export const FORMATOS = {
      * agarradas: a pastilha do ecrã, a voz e esta linha dizem a mesma coisa ou nenhuma.
      */
     chamadaRespondidaAMao: true,
+    /**
+     * 🔴 O LONGO NÃO SE COMPRIME PARA O TELEGRAM — leva a capa e o link.
+     *
+     * Ele tem **~136 MB** e 5 a 8 minutos. Espremê-lo para caber nos 20 MB do Telegram
+     * (ver `TELEGRAM_MAX_BYTES`) seria tirar-lhe **85% do peso**: a imagem ficava
+     * desfeita exactamente no formato onde a pessoa mais repara nela.
+     *
+     * ⚠️ E não é só evitar o mal: um vídeo deitado de sete minutos DENTRO do Telegram é
+     * mau de ver. A capa com o texto e o link leva a pessoa ao YouTube, que é onde ele
+     * foi feito para ser visto — e é o mesmo caminho que o Bluesky já faz.
+     */
+    comprimirParaTelegram: false,
   },
 };
+
+/**
+ * 🔴 O TETO DO TELEGRAM — 20 MB, e é a razão de o Short de ontem não ter saído lá.
+ *
+ * ═══ O CASO, MEDIDO EM 11/08/2026 ═══
+ * O Telegram recusou o Short com `ETELEGRAM: 400 Bad Request: wrong type of the web page
+ * content` — a **mesma frase** do defeito de 07/08, que era do rótulo do ficheiro. Só que
+ * desta vez o rótulo estava certo: `curl -I` devolveu `video/mp4` nos dois. O que mudou
+ * foi o **tamanho**:
+ *
+ *   | ficheiro            | tamanho    | resultado    |
+ *   |---------------------|------------|--------------|
+ *   | teste de 07/08      | 18,6 MB    | ✅ publicou  |
+ *   | Short de 10/08      | **23,8 MB**| ❌ recusado  |
+ *
+ * 🔑 **A causa: o Postiz não empurra o ficheiro — entrega o ENDEREÇO** (é o mesmo desenho
+ * que obrigou à verificação de domínio do TikTok, §3). E o Telegram, quando é ELE a ir
+ * buscar por URL, aceita no máximo **20 MB** (por envio direto aceitaria 50). A mensagem
+ * de erro não diz isso; diz sempre a mesma frase inútil.
+ *
+ * ⚠️ **A margem é de propósito.** Aponta-se a 18 MB, não a 20: o `Content-Length` que o
+ * Telegram vê é o do ficheiro servido, e ficar a raspar no teto é convidar o defeito a
+ * voltar num dia em que o vídeo saia meio megabyte maior.
+ */
+export const TELEGRAM_MAX_BYTES = 20 * 1024 * 1024;
+export const TELEGRAM_ALVO_BYTES = 18 * 1024 * 1024;
 
 /** O formato deste vídeo, dito pelo próprio roteiro. Sem `formato` escrito, é o de 50s. */
 export function formatoDoRoteiro(roteiro) {
@@ -1469,7 +1510,7 @@ export function opcoesDaRede(rede, { titulo, quadroDoPinterest, link } = {}) {
  * que o download funciona, a rede funciona e a conta funciona — o defeito está no código
  * do Multipost (`bluesky.provider.ts:97`). Diagnóstico FECHADO, não repetir. Vai a capa.
  */
-export function midiasDaRede(rede, { media, capa, capaLarga }) {
+export function midiasDaRede(rede, { media, capa, capaLarga, mediaTelegram }) {
   if (rede.midia === 'video+capa') {
     if (!capa) return { midias: null, motivo: 'o Pinterest exige uma capa junto do vídeo, e hoje não veio capa no artefato' };
     // A capa EM PÉ, e é a certa: no Pinterest o formato alto é o que ocupa mais tela.
@@ -1503,7 +1544,94 @@ export function midiasDaRede(rede, { media, capa, capaLarga }) {
         : 'vai a capa em pé — não veio a deitada no artefato (vídeo antigo)',
     };
   }
+  /**
+   * 🔴 O TELEGRAM É O ÚNICO QUE TEM TETO DE TAMANHO — ver `TELEGRAM_MAX_BYTES`.
+   *
+   * As outras seis **baixam o ficheiro** e não se queixam do peso. O Telegram vai buscá-lo
+   * por endereço e recusa acima de 20 MB, com uma frase que não diz isso.
+   *
+   * Por isso ele recebe, por esta ordem:
+   *   1. a **cópia comprimida**, quando o vídeo passava do teto e coube depois de apertar;
+   *   2. o **vídeo tal e qual**, quando já cabia (é o caso dos Shorts de 16s, com ~9 MB);
+   *   3. a **capa e o texto com o link**, quando não há como caber — o vídeo longo, e
+   *      qualquer dia em que a compressão não corra (ffmpeg em falta, por exemplo).
+   *
+   * ⚠️ **O caso 3 nunca é silêncio**: o post sai à mesma, com imagem e link, e o motivo
+   * fica escrito. Um Telegram sem post é pior do que um Telegram com capa.
+   */
+  if (rede.id === 'telegram') {
+    if (mediaTelegram) {
+      return {
+        midias: [mediaTelegram.media],
+        motivo: mediaTelegram.comprimido
+          ? `o vídeo, numa cópia de ${(mediaTelegram.bytes / 1048576).toFixed(1)} MB — o Telegram recusa acima de 20 MB quando vai buscar por endereço`
+          : 'o vídeo (cabe nos 20 MB do Telegram)',
+      };
+    }
+    const escolhida = capaLarga || capa;
+    if (!escolhida) {
+      return { midias: [], motivo: 'o vídeo não cabe nos 20 MB do Telegram e não há capa; vai só o texto com o link' };
+    }
+    return { midias: [escolhida], motivo: 'o vídeo não cabe nos 20 MB do Telegram; vai a capa com o texto e o link' };
+  }
   return { midias: [media], motivo: 'o vídeo' };
+}
+
+/**
+ * A CÓPIA DO VÍDEO PARA O TELEGRAM, apertada até caber — ver `TELEGRAM_MAX_BYTES`.
+ *
+ * 🔑 **A taxa é CALCULADA a partir da duração, não escolhida ao calhas.** Um Short de 50
+ * segundos com alvo de 18 MB dá ~2,9 Mbps de imagem, que num vídeo vertical de desenho é
+ * de sobra — a diferença não se vê. Fixar um CRF às cegas dava ficheiros de tamanho
+ * imprevisível, e o que aqui interessa é **um número máximo**, não uma qualidade máxima.
+ *
+ * ⚠️ **NUNCA MATA A CORRIDA.** Sem ffmpeg, com o vídeo sem duração legível, ou se a
+ * compressão não chegar ao teto, devolve `null` — e quem chama manda a capa e o link.
+ * Um Telegram com imagem é melhor do que uma corrida vermelha.
+ *
+ * ⚠️ Devolve também o vídeo ORIGINAL, sem tocar nele, quando ele já cabia. É o caso dos
+ * Shorts de 16 segundos, e poupa uma volta de ffmpeg todos os dias.
+ */
+export function comprimirParaOTelegram({ mp4, destino, duracaoSeg, tamanhoBytes, correr = spawnSync, existe = existsSync, medir = statSync }, registar = () => {}) {
+  if (tamanhoBytes <= TELEGRAM_MAX_BYTES) {
+    return { caminho: mp4, bytes: tamanhoBytes, comprimido: false };
+  }
+  if (!duracaoSeg || duracaoSeg <= 0) {
+    registar('⚠️ não consegui ler a duração do vídeo — o Telegram vai levar a capa e o link.');
+    return null;
+  }
+  // O som fica em 128 kbps e desconta-se do orçamento; o resto é imagem.
+  const bitsDisponiveis = TELEGRAM_ALVO_BYTES * 8;
+  const taxaVideo = Math.floor(bitsDisponiveis / duracaoSeg) - 128000;
+  if (taxaVideo < 300000) {
+    registar(`⚠️ para caber nos 18 MB este vídeo ficaria a ${Math.round(taxaVideo / 1000)} kbps — desfeito. Vai a capa e o link.`);
+    return null;
+  }
+  const r = correr('ffmpeg', [
+    '-y', '-v', 'error', '-i', mp4,
+    '-c:v', 'libx264', '-preset', 'veryfast',
+    '-b:v', `${taxaVideo}`, '-maxrate', `${Math.floor(taxaVideo * 1.2)}`, '-bufsize', `${taxaVideo * 2}`,
+    '-c:a', 'aac', '-b:a', '128k',
+    '-pix_fmt', 'yuv420p', '-movflags', '+faststart',
+    destino,
+  ], { stdio: 'pipe' });
+
+  if (r.error || r.status !== 0 || !existe(destino)) {
+    registar(`⚠️ a compressão para o Telegram não correu (${r.error?.message || `código ${r.status}`}) — vai a capa e o link.`);
+    return null;
+  }
+  const bytes = medir(destino).size;
+  /**
+   * 🔴 CONFERIR O QUE SAIU, e não confiar em ter pedido. O `-b:v` é um alvo, não uma
+   * promessa: um vídeo com muito movimento pode passar na mesma. Se passou do teto, o
+   * ficheiro é deitado fora e vai a capa — mandar um ficheiro grande na mesma seria
+   * repetir o defeito de ontem sabendo dele.
+   */
+  if (bytes > TELEGRAM_MAX_BYTES) {
+    registar(`⚠️ mesmo apertado ficou com ${(bytes / 1048576).toFixed(1)} MB, acima do teto — vai a capa e o link.`);
+    return null;
+  }
+  return { caminho: destino, bytes, comprimido: true };
 }
 
 /**
@@ -1871,12 +1999,32 @@ async function main() {
     const media = { id: '(id do vídeo)', path: 'https://exemplo/video.mp4' };
     const capa = temCapa ? { id: '(id da capa)', path: 'https://exemplo/capa.jpg' } : null;
     const capaLarga = temCapaLarga ? { id: '(id da capa deitada)', path: 'https://exemplo/capa-yt.jpg' } : null;
+
+    /**
+     * 🔑 O ENSAIO TEM DE DIZER O QUE VAI ACONTECER AO TELEGRAM, e para isso mede o
+     * ficheiro **de verdade** — não simula. Se não medisse, o ensaio dizia "vai o vídeo" e
+     * na entrega a sério o Telegram levava a capa, ou nada: exactamente a surpresa que
+     * este ensaio existe para não haver.
+     * ⚠️ Aqui NÃO se corre o ffmpeg (um ensaio não gasta um minuto de máquina): assume-se
+     * que a compressão consegue, e diz-se qual dos caminhos vai ser tomado.
+     */
+    const bytesDoVideo = statSync(mp4).size;
+    const cabeNoTelegram = bytesDoVideo <= TELEGRAM_MAX_BYTES;
+    const telegramNoEnsaio = (cabeNoTelegram || formato.comprimirParaTelegram)
+      ? { media, bytes: cabeNoTelegram ? bytesDoVideo : TELEGRAM_ALVO_BYTES, comprimido: !cabeNoTelegram }
+      : null;
+    if (aEntregar.some((r) => r.id === 'telegram')) {
+      log(`📎 Telegram: o vídeo tem ${(bytesDoVideo / 1048576).toFixed(1)} MB e o teto dele é 20 MB — ${
+        cabeNoTelegram ? 'cabe, vai o mesmo das outras'
+          : formato.comprimirParaTelegram ? 'vai uma cópia apertada para ~18 MB'
+            : 'não se comprime neste formato, vai a capa com o link'}`);
+    }
     log(`🖼️  capa deitada (Bluesky): ${temCapaLarga ? `${Math.round(statSync(capaLargaLocal).size / 1024)} KB` : 'FALTA — vai a em pé'}`);
 
     for (const rede of aEntregar) {
       const { quandoUTC: hora } = horaDaRede(quando, rede);
       const texto = rede.legenda(roteiro, rede.limite);
-      const { midias, motivo } = midiasDaRede(rede, { media, capa, capaLarga });
+      const { midias, motivo } = midiasDaRede(rede, { media, capa, capaLarga, mediaTelegram: telegramNoEnsaio });
       log(`\n${'─'.repeat(72)}`);
       log(`📡 ${rede.nome}  ·  ${emHoraDoBrasil(hora)} BR  ·  limite ${rede.limite} (a rede de segurança; o real pergunta-se ao servidor)`);
       if (!midias) { log(`   ⏭️  NÃO SAI — ${motivo}`); continue; }
@@ -1955,10 +2103,54 @@ async function main() {
     }
   }
 
+  /**
+   * 🔴 A CÓPIA PARA O TELEGRAM — ver `TELEGRAM_MAX_BYTES` e `comprimirParaOTelegram`.
+   *
+   * Só se faz quando o Telegram está na lista deste formato E o vídeo passa dos 20 MB.
+   * Nos Shorts de 16s (~9 MB) isto não corre: eles já cabiam.
+   *
+   * ⚠️ **É um SEGUNDO envio, e é o preço certo a pagar.** As outras seis redes continuam
+   * a receber o ficheiro bom, sem tocar nele — comprimir para todas por causa do teto de
+   * uma seria estragar seis para arrumar uma.
+   * ⚠️ E na retoma reaproveita-se, como o resto: o `id` fica no caderno.
+   */
+  let mediaTelegram = registo?.midias?.telegram || null;
+  const querTelegram = aEntregar.some((r) => r.id === 'telegram');
+  if (querTelegram && !mediaTelegram) {
+    const bytes = statSync(mp4).size;
+    if (!formato.comprimirParaTelegram && bytes > TELEGRAM_MAX_BYTES) {
+      log(`📎 Telegram: o ${formato.nome} tem ${(bytes / 1048576).toFixed(1)} MB e não se comprime — vai a capa com o link.`);
+    } else {
+      const apertado = comprimirParaOTelegram({
+        mp4,
+        destino: join(dirname(mp4), `telegram-${slug}.mp4`),
+        duracaoSeg: duracaoDoMp4(mp4),
+        tamanhoBytes: bytes,
+      }, log);
+      if (apertado) {
+        try {
+          mediaTelegram = {
+            media: apertado.comprimido
+              ? await enviarFicheiro(k, apertado.caminho, `telegram-${slug}.mp4`)
+              : media,
+            bytes: apertado.bytes,
+            comprimido: apertado.comprimido,
+          };
+          log(apertado.comprimido
+            ? `📎 Telegram: cópia de ${(apertado.bytes / 1048576).toFixed(1)} MB entregue (o original tinha ${(bytes / 1048576).toFixed(1)} MB)`
+            : `📎 Telegram: o vídeo cabe (${(bytes / 1048576).toFixed(1)} MB) — vai o mesmo das outras`);
+        } catch (e) {
+          log(`⚠️ a cópia para o Telegram falhou a subir (${e.message}) — ele leva a capa e o link.`);
+          mediaTelegram = null;
+        }
+      }
+    }
+  }
+
   const anotar = (chaveDaRede, valor) => {
     caderno[slug] = {
       ...(caderno[slug] || {}),
-      midias: { video: media, capa, capaLarga },
+      midias: { video: media, capa, capaLarga, ...(mediaTelegram ? { telegram: mediaTelegram } : {}) },
       publicaEm: quando.toISOString(),
       publicaEmBR: emHoraDoBrasil(quando),
       agendadoEm: caderno[slug]?.agendadoEm || new Date().toISOString(),
@@ -1982,7 +2174,7 @@ async function main() {
 
       const limite = await limiteDaRede(k, canal.id, rede);
       const texto = rede.legenda(roteiro, limite);
-      const { midias, motivo } = midiasDaRede(rede, { media, capa, capaLarga });
+      const { midias, motivo } = midiasDaRede(rede, { media, capa, capaLarga, mediaTelegram });
       if (!midias) { log(`\n⏭️  ${rede.nome}: NÃO SAI — ${motivo}`); falharam.push(`${rede.nome} (${motivo})`); continue; }
 
       const { quandoUTC: hora, atrasada } = horaDaRede(quando, rede);

@@ -28,6 +28,7 @@ import {
   linkDoVideo, topicosSemOProduto, comoLista, MAX_ETIQUETAS_LINKEDIN,
   horaDaRede, MINUTOS_DE_MARGEM, STORIES, minutosDoStory, storiesEmFalta,
   FORMATOS, formatoDoRoteiro, redesDoFormato, tituloParaLegenda, MAX_TITULO_NA_LEGENDA,
+  comprimirParaOTelegram, TELEGRAM_MAX_BYTES,
 } from '../multipost/entregar.js';
 // ⚠️ O vigia nasceu em 10/08 e prova-se aqui, no mesmo sítio da entrega: são as duas
 // metades da mesma pergunta — o que mandamos, e o que a rede fez com aquilo.
@@ -302,7 +303,11 @@ console.log('\n7. A MÍDIA DE CADA REDE — e a ORDEM, que no Pinterest é a reg
   ok('🔑 mas o Pinterest continua com a capa EM PÉ',
     midiasDaRede(rede('pinterest'), { media: MEDIA, capa: CAPA, capaLarga: CAPA_LARGA }).midias[1] === CAPA);
 
-  for (const id of ['instagram', 'tiktok', 'facebook', 'linkedin-page', 'threads', 'telegram']) {
+  /**
+   * ⚠️ O TELEGRAM SAIU DESTA LISTA EM 11/08 e passou a ter secção própria (a 22): ele é o
+   * único com TETO DE TAMANHO, e por isso o que leva depende do peso do ficheiro.
+   */
+  for (const id of ['instagram', 'tiktok', 'facebook', 'linkedin-page', 'threads']) {
     const m = midiasDaRede(rede(id), { media: MEDIA, capa: CAPA });
     ok(`${id}: leva só o vídeo`, m.midias.length === 1 && m.midias[0] === MEDIA);
   }
@@ -1046,6 +1051,85 @@ console.log('\n21. OS TRÊS FORMATOS — cada vídeo vai onde faz sentido, e só
     tituloParaLegenda({ term: 'A conta de luz do verão' }) === 'A conta de luz do verão');
   ok('sem `term`, vale a palavra-chave — como sempre valeu',
     tituloParaLegenda({ keyword: 'Alavancagem' }) === 'Alavancagem');
+}
+
+console.log('\n22. O TETO DE 20 MB DO TELEGRAM — o defeito de 10/08, medido');
+
+{
+  const TG = rede('telegram');
+  const VIDEO = { id: 'v', path: 'https://x/v.mp4' };
+  const APERTADO = { id: 't', path: 'https://x/telegram-v.mp4' };
+  const CAPA_LARGA = { id: 'cw', path: 'https://x/capa-yt.jpg' };
+
+  /**
+   * 🔴 O CASO REAL. O Short de 10/08 tinha 23,8 MB e o Telegram recusou-o com
+   * `wrong type of the web page content` — a MESMA frase do defeito do rótulo, de 07/08.
+   * Só que o rótulo estava certo (`curl -I` deu `video/mp4` nos dois): o que mudou foi o
+   * tamanho. O teste de 07/08, com 18,6 MB, tinha publicado.
+   */
+  ok('🔴 com a cópia apertada, o Telegram leva VÍDEO',
+    midiasDaRede(TG, { media: VIDEO, capa: CAPA, mediaTelegram: { media: APERTADO, bytes: 18 * 1048576, comprimido: true } }).midias[0] === APERTADO);
+  ok('e o registo diz o tamanho e o porquê',
+    /20 MB/.test(midiasDaRede(TG, { media: VIDEO, capa: CAPA, mediaTelegram: { media: APERTADO, bytes: 18 * 1048576, comprimido: true } }).motivo));
+  ok('quando já cabia, vai o MESMO ficheiro das outras (não se aperta por desporto)',
+    midiasDaRede(TG, { media: VIDEO, capa: CAPA, mediaTelegram: { media: VIDEO, bytes: 9 * 1048576, comprimido: false } }).midias[0] === VIDEO);
+  /**
+   * 🔴 E SEM CÓPIA POSSÍVEL ELE AINDA SAI. É o caso do vídeo longo (136 MB) e o de um dia
+   * em que o ffmpeg falte. Um Telegram com capa e link é melhor do que um Telegram vazio
+   * — e melhor do que uma corrida vermelha.
+   */
+  const semCopia = midiasDaRede(TG, { media: VIDEO, capa: CAPA, capaLarga: CAPA_LARGA, mediaTelegram: null });
+  ok('🔴 sem cópia possível ele NÃO fica calado — vai a capa com o link',
+    semCopia.midias.length === 1 && semCopia.midias[0] === CAPA_LARGA, JSON.stringify(semCopia.motivo));
+  ok('e diz que foi por causa dos 20 MB', /20 MB/.test(semCopia.motivo));
+  ok('sem capa nenhuma, ainda vai o texto com o link',
+    midiasDaRede(TG, { media: VIDEO, capa: null, mediaTelegram: null }).midias.length === 0);
+
+  // ── a compressão em si, sem chamar o ffmpeg de verdade ──────────────────────
+  const nunca = () => { throw new Error('não devia ter corrido o ffmpeg'); };
+  ok('🔑 um vídeo que já cabe NÃO passa pelo ffmpeg',
+    comprimirParaOTelegram({ mp4: 'v.mp4', destino: 't.mp4', duracaoSeg: 16, tamanhoBytes: 9 * 1048576, correr: nunca }).comprimido === false);
+
+  const chamadas = [];
+  const fingirFfmpeg = (bin, args) => { chamadas.push(args); return { status: 0 }; };
+  const apertado = comprimirParaOTelegram({
+    mp4: 'v.mp4', destino: 't.mp4', duracaoSeg: 50, tamanhoBytes: 24 * 1048576,
+    correr: fingirFfmpeg, existe: () => true, medir: () => ({ size: 17 * 1048576 }),
+  });
+  ok('um vídeo acima do teto é apertado, e o resultado cabe',
+    apertado && apertado.comprimido === true && apertado.bytes < TELEGRAM_MAX_BYTES);
+  /**
+   * 🔑 A TAXA É CALCULADA A PARTIR DA DURAÇÃO, não escolhida ao calhas — é o que garante
+   * um TAMANHO máximo. Um Short de 50s com alvo de 18 MB dá ~2,9 Mbps, que é de sobra.
+   */
+  const taxa = Number(chamadas[0][chamadas[0].indexOf('-b:v') + 1]);
+  ok('🔑 e a taxa vem da duração (50s → ~2,9 Mbps), não de um CRF às cegas',
+    taxa > 2500000 && taxa < 3200000, `${Math.round(taxa / 1000)} kbps`);
+
+  /**
+   * 🔴 CONFERIR O QUE SAIU, e não confiar em ter pedido: `-b:v` é um alvo, não uma
+   * promessa. Se o ficheiro ficar acima do teto na mesma, deita-se fora — mandá-lo seria
+   * repetir o defeito de ontem sabendo dele.
+   */
+  ok('🔴 se mesmo apertado ficar acima de 20 MB, é deitado fora',
+    comprimirParaOTelegram({
+      mp4: 'v.mp4', destino: 't.mp4', duracaoSeg: 50, tamanhoBytes: 40 * 1048576,
+      correr: () => ({ status: 0 }), existe: () => true, medir: () => ({ size: 25 * 1048576 }),
+    }) === null);
+  ok('o ffmpeg em falta não mata a corrida — devolve nada e vai a capa',
+    comprimirParaOTelegram({
+      mp4: 'v.mp4', destino: 't.mp4', duracaoSeg: 50, tamanhoBytes: 24 * 1048576,
+      correr: () => ({ error: new Error('ffmpeg não existe'), status: null }), existe: () => false,
+    }) === null);
+  ok('e um vídeo tão comprido que ficaria desfeito também não é apertado',
+    comprimirParaOTelegram({
+      mp4: 'v.mp4', destino: 't.mp4', duracaoSeg: 60 * 60, tamanhoBytes: 500 * 1048576, correr: nunca,
+    }) === null);
+
+  ok('🔑 os dois Shorts comprimem para o Telegram; o vídeo longo não',
+    FORMATOS.curto.comprimirParaTelegram === true
+    && FORMATOS.loop16.comprimirParaTelegram === true
+    && FORMATOS.longo.comprimirParaTelegram === false);
 }
 
 console.log(`\n${'═'.repeat(72)}`);

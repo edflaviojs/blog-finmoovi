@@ -155,6 +155,30 @@ jobs:
             || echo "::warning::sem capa — o Pinterest e o Bluesky ficam de fora deste."
           echo "🎞️ $(du -h "youtube-render/out/$FILE_SLUG.mp4" | cut -f1) prontos para entrega."
 
+      # ♦ 11/08/2026 — O ffmpeg ENTROU AQUI por causa do teto de 20 MB do Telegram.
+      #
+      # O Short de 10/08 tinha 23,8 MB e o Telegram recusou-o: ele vai BUSCAR o ficheiro
+      # por endereço, e nesse caminho aceita no máximo 20 MB. A cura é uma cópia apertada
+      # só para ele — e quem a faz é o ffmpeg. Ver `comprimirParaOTelegram`.
+      #
+      # ⚠️ **NÃO PODE MATAR A CORRIDA.** Sem ffmpeg o Telegram leva a capa com o link, que
+      # é pior do que o vídeo e muito melhor do que nada. As outras seis nem dão por isso.
+      - name: Garantir o ffmpeg (é ele que aperta a cópia do Telegram)
+        if: steps.fila.outputs.skip != 'true'
+        run: |
+          set -uo pipefail
+          if command -v ffmpeg >/dev/null; then
+            echo "ffmpeg já cá está."
+          else
+            echo "ffmpeg em falta — a instalar (sem atualizar a lista, que é o que se pendura)."
+            sudo timeout 300 apt-get install -y -qq ffmpeg || {
+              echo "::warning::não deu à primeira — a atualizar a lista e a tentar outra vez."
+              sudo timeout 300 apt-get update -qq || true
+              sudo timeout 600 apt-get install -y -qq ffmpeg || true
+            }
+          fi
+          command -v ffmpeg >/dev/null && ffmpeg -version | head -1             || echo "::warning::sem ffmpeg — o Telegram vai levar a capa com o link em vez do vídeo."
+
       - name: Entregar ao Multipost e agendar
         if: steps.fila.outputs.skip != 'true'
         env:
