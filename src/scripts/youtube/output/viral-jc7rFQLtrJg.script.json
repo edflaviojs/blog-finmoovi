@@ -1,0 +1,214 @@
+{
+  "slug": "viral-jc7rFQLtrJg",
+  "term": "Erros financeiros",
+  "category": "mindset",
+  "keyword": "financeiros",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você sabe quanto os *seus erros financeiros* tiram da sua conta todo mês?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "buraco",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você sabe quanto os seus erros financeiros tiram da sua conta todo mês? Eu somei os meus e levei um susto.",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "erros",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "tiram",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro escorrendo sem perceber"
+          }
+        },
+        {
+          "anchor": "levei",
+          "visual": {
+            "type": "number",
+            "text": "R$ ?"
+          },
+          "sfx": "alert"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "A gente compra no impulso, esquece uma conta, parcela uma coisinha pequena. Na correria, parece tudo normal.",
+      "durationSec": 6.5,
+      "shots": [
+        {
+          "anchor": "compra",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          }
+        },
+        {
+          "anchor": "esquece",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          },
+          "sfx": "slide"
+        },
+        {
+          "anchor": "correria",
+          "visual": {
+            "type": "statement",
+            "text": "Na correria, passa batido"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Só que quarenta reais aqui, quarenta ali, e quando você soma, já foram quatrocentos e oitenta reais do seu bolso no ano.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "quarenta",
+          "visual": {
+            "type": "number",
+            "text": "R$ 40"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "quando",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          }
+        },
+        {
+          "anchor": "quatrocentos",
+          "visual": {
+            "type": "counter",
+            "from": 40,
+            "to": 480,
+            "prefix": "R$"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei meus gastos no FinMoovi e ele me mostrou justamente esses gastos repetidos. A soma chegou a quatrocentos e oitenta reais.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "joguei",
+          "visual": {
+            "type": "app",
+            "app": "extrato",
+            "note": "Lista de gastos repetidos destacados no extrato"
+          }
+        },
+        {
+          "anchor": "justamente",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          }
+        },
+        {
+          "anchor": "soma",
+          "visual": {
+            "type": "number",
+            "text": "R$ 480"
+          },
+          "sfx": "ding"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer descobrir os seus? Procura o FinMoovi. É de graça.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "descobrir",
+          "visual": {
+            "type": "statement",
+            "text": "Veja quanto você perde"
+          }
+        },
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "statement",
+            "text": "FinMoovi é grátis"
+          }
+        },
+        {
+          "anchor": "graça",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Então olha cada gasto antes de pagar, porque erro pequeno repetido tira dinheiro da sua conta. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "gasto",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          }
+        },
+        {
+          "anchor": "repetido",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro sem controle some"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Descubra para onde seu dinheiro vai",
+    "target": "app"
+  },
+  "totalDurationSec": 44.2
+}
