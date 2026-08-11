@@ -32,27 +32,27 @@ Fixed income includes investments where the remuneration (interest or [yield](/e
 
 | Product | Where to Find | Average Rate 2024‑2025* | Features |
 |---------|----------------|-----------------------|----------|
-| [CDB](/en/glossario/en-cdb) (Bank Deposit Certificate) | Commercial banks | 108 % of [CDI](/en/glossario/en-cdi) (≈ 13.2% a year) | [FGC guarantee](/en/glossario/en-fgc-guarantee) up to R$ 250 k per institution |
-| Treasury Direct – [Selic](/en/glossario/en-selic) | Federal government | 12.8 % a year (Selic 2026) | Daily [liquidity](/en/glossario/en-liquidity), low sovereign risk |
-| LCIs/LCAs (Real Estate/Agricultural Credit Letters) | Banks, brokerages | 107 % of CDI (≈ 13 % a year) | IR‑exempt, FGC protection |
-| Corporate [Debentures](/en/glossario/en-debentures) | Brokerages | 9 %‑12 % a year (depending on rating) | Credit risk of the issuing company |
+| [certificates of deposit (CDs)](/en/glossario/en-cdb) | Commercial banks | 108 % of [interbank rate](/en/glossario/en-cdi) (≈ 13.2% a year) | [FDIC guarantee](/en/glossario/en-fgc-guarantee) up to $50,000 per institution |
+| Government bonds – [central bank base rate](/en/glossario/en-selic) | Federal government | 12.8 % a year (central bank base rate 2026) | Daily [liquidity](/en/glossario/en-liquidity), low sovereign risk |
+| Tax‑exempt bank notes | Banks, brokerages | 107 % of interbank rate (≈ 13 % a year) | Tax‑exempt, FDIC protection |
+| Corporate bonds | Brokerages | 9 %‑12 % a year (depending on rating) | Credit risk of the issuing company |
 
-*Rates based on data from the Central Bank and Treasury Direct up to December 2025.
+*Rates based on data from the central bank and government bonds up to December 2025.
 
-The logic is simple: you lend money (or buy bonds) and receive interest over time. The **principal** (the amount invested) is usually returned at maturity or can be redeemed early, depending on the product. Because the remuneration is linked to indexes like the CDI or Selic, changes in the country’s interest rates affect the return directly.
+The logic is simple: you lend money (or buy bonds) and receive interest over time. The **principal** (the amount invested) is usually returned at maturity or can be redeemed early, depending on the product. Because the remuneration is linked to indexes like the interbank rate or central bank base rate, changes in the country’s interest rates affect the return directly.
 
 ### Advantages of Fixed Income
 
 1. **Predictability** – You know how much you’ll earn, or at least you have a guaranteed floor.  
 2. **Low risk of capital loss** – In most cases, risk is limited to the issuer (bank or government).  
-3. **Liquidity** – Selic Treasury and some CDBs allow redemption at any time without a heavy penalty.  
-4. **IR exemption** – LCIs and LCAs are tax‑free, which boosts net yield.
+3. **Liquidity** – Central bank base rate government bonds and some CDs allow redemption at any time without a heavy penalty.  
+4. **Tax exemption** – Tax‑exempt bank notes are tax‑free, which boosts net yield.
 
 ### Disadvantages of Fixed Income
 
 1. **Limited profitability** – When inflation rises, fixed income can fall behind more aggressive investments.  
-2. **Dependence on the Selic rate** – If the Central Bank keeps rates low for a long period, returns drop.  
-3. **Possible “opportunity cost”** – Money locked in a 5‑year CDB earns less than stocks that could jump 30 % in six months.
+2. **Dependence on the central bank base rate** – If the central bank keeps rates low for a long period, returns drop.  
+3. **Possible “opportunity cost”** – Money locked in a 5‑year CD earns less than stocks that could jump 30 % in six months.
 
 ---
 
@@ -62,12 +62,12 @@ Variable income gathers assets whose return **is not guaranteed** and depends on
 
 | Product | Where to Find | Average Return 2024‑2025* | Features |
 |---------|----------------|---------------------------|----------|
-| Listed company stocks | Stock exchange (B3) | 12 %‑20 % a year (Ibovespa index) | High volatility, occasional dividends |
-| ETFs (Index Funds) | Brokerages | 11 %‑18 % a year (e.g., BOVA11) | Automatic diversification, low management fee |
-| Real Estate Investment Funds (FIIs) | Brokerages | 7 %‑9 % a year (monthly yield) | Rental income, vacancy risk |
+| Listed company stocks | Stock exchange | 12 %‑20 % a year (major stock index) | High volatility, occasional dividends |
+| ETFs (Index Funds) | Brokerages | 11 %‑18 % a year (e.g., broad‑market ETF) | Automatic diversification, low management fee |
+| Real Estate Investment Trusts (REITs) | Brokerages | 7 %‑9 % a year (monthly yield) | Rental income, vacancy risk |
 | Cryptocurrencies | Exchanges | Varies widely (e.g., BTC 2024: +30 % a year) | Extremely volatile, regulatory risk |
 
-*Return based on historical performance of the Ibovespa and main ETFs up to December 2025.
+*Return based on historical performance of the major stock index and main ETFs up to December 2025.
 
 In practice, when you buy a stock you become a shareholder of the company. Your gain comes from **share price appreciation** (when the price goes up) and, sometimes, from **dividends** paid out. The return can far exceed that of fixed income, but it can also be negative during downturns.
 
@@ -92,14 +92,14 @@ In practice, when you buy a stock you become a shareholder of the company. Your 
 | Criterion | Fixed Income | Variable Income |
 |-----------|--------------|-----------------|
 | **Return predictability** | High (pre‑defined rates) | Low (market‑dependent) |
-| **Capital loss risk** | Low to moderate (FGC, sovereign risk) | High to moderate (company, sector) |
-| **Liquidity** | Generally high (Selic Treasury, CDBs) | Varies (stocks can be highly liquid, FIIs less) |
-| **Average return (2024‑2025)** | 12 %‑13 % a year (CDI, Selic) | 12 %‑20 % a year (Ibovespa, ETFs) |
+| **Capital loss risk** | Low to moderate (FDIC, sovereign risk) | High to moderate (company, sector) |
+| **Liquidity** | Generally high (government bonds, CDs) | Varies (stocks can be highly liquid, REITs less) |
+| **Average return (2024‑2025)** | 12 %‑13 % a year (interbank rate, central bank base rate) | 12 %‑20 % a year (major stock index, ETFs) |
 | **Inflation protection** | Moderate (depends on index) | Good (companies can pass inflation on) |
-| **Tax implication** | Regressive IR (15 %‑22.5 %) or exempt (LCI/LCA) | IR of 15 % (stocks) or 20 % (others) |
+| **Tax implication** | Regressive tax (15 %‑22.5 %) or exempt (tax‑exempt bank notes) | Tax of 15 % (stocks) or 20 % (others) |
 | **Management complexity** | Simple (just pick the bond) | More complex (market analysis) |
 | **Suitable for** | Conservatives, short/medium term, emergency reserve | Aggressive, medium/long term, growth seekers |
-| **Product example** | Selic Treasury 2026 (12.8 % a year) | BOVA11 ETF (Ibovespa) – 15 % a year |
+| **Product example** | Government bond (central bank base rate) 2026 (12.8 % a year) | Broad‑market ETF – 15 % a year |
 
 ![Comparative Table](/images/posts/renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026-4.webp)
 
@@ -108,16 +108,16 @@ In practice, when you buy a stock you become a shareholder of the company. Your 
 ## When to Choose Fixed Income
 
 1. **Short‑term goal** – If you need the money within up to 2 years (e.g., emergency fund, vacation), fixed income ensures the capital stays preserved.  
-2. **Conservative profile** – Those who can’t tolerate seeing their investment value swing prefer the safety of a CDB or Treasury.  
-3. **High‑interest environment** – When the Selic is above 12 % a year, fixed income already offers very attractive returns.  
-4. **Need for income** – LCIs/LCAs and some debentures pay monthly interest, generating a stable cash flow.
+2. **Conservative profile** – Those who can’t tolerate seeing their investment value swing prefer the safety of a CD or government bond.  
+3. **High‑interest environment** – When the central bank base rate is above 12 % a year, fixed income already offers very attractive returns.  
+4. **Need for income** – Tax‑exempt bank notes and some corporate bonds pay monthly interest, generating a stable cash flow.
 
 ### Practical Strategy
 
-- **30 %** of assets in Selic Treasury for immediate liquidity.  
-- **30 %** in CDBs maturing in 2‑3 years, taking advantage of the CDI rate.  
-- **20 %** in LCIs/LCAs for IR exemption.  
-- **20 %** in corporate debentures from well‑rated companies (AA rating or higher).
+- **30 %** of assets in government bonds for immediate liquidity.  
+- **30 %** in CDs maturing in 2‑3 years, taking advantage of the interbank rate.  
+- **20 %** in tax‑exempt bank notes for tax exemption.  
+- **20 %** in corporate bonds from well‑rated companies (AA rating or higher).
 
 ---
 
@@ -125,16 +125,16 @@ In practice, when you buy a stock you become a shareholder of the company. Your 
 
 1. **Long‑term horizon** – If you have 5 years or more and can “ride out” volatility, variable income can comfortably outpace inflation.  
 2. **Aggressive profile** – Those who can tolerate up to a 30 % capital drop in a year but aim for 20 %‑30 % annual returns have room for stocks and ETFs.  
-3. **Seeking diversification** – Investing across different sectors (technology, clean energy) or FIIs can lower relative risk.  
-4. **Low‑interest scenario** – When the Selic is at historically low levels (e.g., 6 % a year), fixed income loses appeal and variable income becomes more interesting.
+3. **Seeking diversification** – Investing across different sectors (technology, clean energy) or REITs can lower relative risk.  
+4. **Low‑interest scenario** – When the central bank base rate is at historically low levels (e.g., 6 % a year), fixed income loses appeal and variable income becomes more interesting.
 
 ![When to Choose Variable Income](/images/posts/renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026-6.webp)
 
 ### Practical Strategy
 
-- **40 %** in broad‑market ETFs (e.g., BOVA11) for diversification without picking individual stocks.  
-- **30 %** in dividend‑paying stocks (e.g., banks, utilities) to generate passive income.  
-- **20 %** in FIIs that pay monthly yields.  
+- **40 %** in broad‑market ETFs for diversification without picking individual stocks.  
+- **30 %** in dividend‑paying stocks (e.g., utilities, consumer staples) to generate passive income.  
+- **20 %** in REITs that pay monthly yields.  
 - **10 %** in short‑term opportunities (e.g., small‑caps or cryptocurrencies) – only if you have sufficient knowledge.
 
 ---
@@ -151,5 +151,5 @@ Regardless of the choice, **management and monitoring** are essential. That’s 
 
 ### Sources
 
-- [Banco Central do Brasil – Interest Rates](https://www.bcb.gov.br)  
-- [Tesouro Direto – Public Bonds](https://www.tesourodireto.com.br)
+- [Central bank – Interest Rates](https://www.bcb.gov.br)  
+- [Government bonds – Public Bonds](https://www.tesourodireto.com.br)

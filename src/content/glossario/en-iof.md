@@ -11,9 +11,9 @@ publishedAt: 2026-05-19
 readingTime: 2
 ---
 
-## What is IOF?
+## What is the Financial Operations Tax (IOF)?
 
-IOF (Imposto sobre Operações Financeiras) is a federal tax that applies to various financial operations: loans, exchange, insurance, and even [investments](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026) redeemed in less than 30 days.
+The Financial Operations Tax (IOF) is a federal tax that applies to various financial operations: loans, exchange, insurance, and even [investments](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026) redeemed in less than 30 days.
 
 ## Where IOF appears
 
@@ -40,7 +40,7 @@ IOF (Imposto sobre Operações Financeiras) is a federal tax that applies to var
 
 ## Practical tip
 
-If you invested in [CDB](/en/glossario/en-cdb) or Tesouro [Selic](/en/glossario/en-selic), wait at least 30 days to redeem. This way you won't pay IOF on the income. This is an important rule for emergency reserve.
+If you invested in [certificates of deposit (CDs)](/en/glossario/en-cdb) or [government bonds](/en/glossario/en-selic), wait at least 30 days to redeem. This way you won't pay IOF on the income. This is an important rule for emergency reserve.
 
 ## IOF regression table (investments)
 

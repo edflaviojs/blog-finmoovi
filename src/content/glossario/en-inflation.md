@@ -13,11 +13,11 @@ readingTime: 1
 
 ## What is Inflation?
 
-Inflation is the general increase in prices. When inflation rises, the same amount of [money](/en/posts/en-30-day-rule-for-purchases) buys fewer things. That's why R$ 100 today buy less than R$ 100 did 10 years ago.
+Inflation is the general increase in prices. When inflation rises, the same amount of [money](/en/posts/en-30-day-rule-for-purchases) buys fewer things. That's why $20 today buys less than $20 did 10 years ago.
 
-## How is it measured in Brazil?
+## How is it measured?
 
-The main index is the **IPCA** (Índice de Preços ao Consumidor Amplo), calculated by the IBGE. It measures the price variation of a basket of products and services consumed by families.
+The main index is the **consumer price index**, calculated by the national statistics office. It measures the price variation of a basket of products and services consumed by families.
 
 ## Why does it matter for your finances?
 
@@ -29,6 +29,6 @@ If your [investments](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-20
 ## How to protect yourself?
 
 - Invest in assets that yield above inflation
-- Tesouro IPCA+ guarantees real returns
+- Inflation-linked government bonds guarantee real returns
 - Diversify between fixed and [variable income](/en/glossario/en-variable-income)
-- Track the monthly IPCA
+- Track the monthly consumer price index

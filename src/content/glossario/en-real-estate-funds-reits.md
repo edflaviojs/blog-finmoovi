@@ -11,7 +11,7 @@ publishedAt: 2026-05-19
 readingTime: 2
 ---
 
-## What are [Real Estate Funds](/en/posts/en-real-estate-funds-for-beginners-complete-guide) (FIIs)?
+## What are Real Estate Funds (REITs)?
 
 Real Estate Funds are like "investor condominiums" that pool [money](/en/posts/en-30-day-rule-for-purchases) to buy properties (malls, warehouses, offices) or securities from the real estate sector. You buy shares on the [stock](/en/glossario/en-stocks) exchange and receive monthly rents.
 
@@ -20,25 +20,25 @@ Real Estate Funds are like "investor condominiums" that pool [money](/en/posts/e
 1. The fund buys properties with the [money](/en/posts/en-avoid-impulse-purchases) from the shareholders  
 2. The properties are rented to companies  
 3. The rents are distributed monthly to the shareholders  
-4. Returns are **exempt from IR** for individuals  
+4. Returns are **exempt from income tax** for individuals  
 
 ## Advantages
 
 - Tax-free monthly income  
-- Invest in properties with little money (from R$ 10)  
+- Invest in properties with little money (from $2)  
 - Diversification (a fund can have several properties)  
 - [Liquidity](/en/glossario/en-liquidity) (sell instantly on the stock exchange)  
 - No need to deal with tenants  
 
-## Types of FIIs
+## Types of REITs
 
 | Type   | Example | Characteristic                         |
 |--------|---------|----------------------------------------|
-| Tijolo | HGLG11  | Physical properties (warehouses)      |
-| Papel  | KNCR11  | Real estate debt securities            |
-| Híbrido| KNRI11  | Mix of tijolo and papel                |
-| FOF    | BCFF11  | Fund that invests in other FIIs        |
+| Brick | REIT001 | Physical properties (warehouses)      |
+| Paper  | REIT002 | Real estate debt securities            |
+| Hybrid | REIT003 | Mix of brick and paper                |
+| Fund of Funds | REIT004 | Fund that invests in other REITs        |
 
 ## How much does it [yield](/en/glossario/en-yield)?
 
-The market average is 0.7% to 1% per month in returns. With R$ 100,000 invested, you can receive R$ 700-1,000/month exempt from IR.
+The market average is 0.7% to 1% per month in returns. With $20,000 invested, you can receive $140-$200/month exempt from income tax.

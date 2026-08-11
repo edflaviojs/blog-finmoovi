@@ -11,45 +11,45 @@ publishedAt: 2026-05-19
 readingTime: 2
 ---
 
-## What are LCI and LCA?
+## What are tax‑exempt bank notes?
 
-LCI (Letra de Crédito Imobiliário) and LCA (Letra de Crédito do Agronegócio) are fixed‑income [investments](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026) issued by banks. The big advantage: they are **exempt from Income Tax** for individuals.
+Tax‑exempt bank notes (LCI) and tax‑exempt bank notes (LCA) are fixed‑income [investments](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026) issued by banks. The big advantage: they are **exempt from Income Tax** for individuals.
 
-## Difference between LCI and LCA
+## Difference between tax‑exempt bank notes
 
 The only difference is the destination of the [money](/en/posts/en-30-day-rule-for-purchases):
-- **LCI:** the bank uses it to [finance](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using) the real estate sector
-- **LCA:** the bank uses it to finance the agribusiness
+- **Tax‑exempt bank note (LCI):** the bank uses it to [finance](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using) the real estate sector
+- **Tax‑exempt bank note (LCA):** the bank uses it to finance the agribusiness
 
 For the investor, they work in the same way.
 
 ## Advantages
 
-- Exemption from IR (higher net income)
-- Protection by FGC up to R$ 250,000
-- [Yield](/en/glossario/en-yield) generally linked to [CDI](/en/glossario/en-cdi) (85-100%)
-- Security similar to [CDB](/en/glossario/en-cdb)
+- Exemption from Income Tax (higher net income)
+- Protection by FGC up to $50,000
+- [Yield](/en/glossario/en-yield) generally linked to [interbank rate](/en/glossario/en-cdi) (85‑100%)
+- Security similar to [certificates of deposit (CDs)](/en/glossario/en-cdb)
 
 ## Disadvantages
 
 - Minimum lock‑up period of 90 days (cannot withdraw before)
-- Minimum investment usually higher (R$ 1,000-5,000)
-- Fewer options available than CDB
+- Minimum investment usually higher ($200‑$1,000)
+- Fewer options available than certificates of deposit (CDs)
 
-## LCI/LCA vs. CDB
+## Tax‑exempt bank notes vs. certificates of deposit (CDs)
 
-An LCI that pays 85% of CDI can yield more than a CDB of 100% of CDI, due to the exemption from IR:
+A tax‑exempt bank note that pays 85% of the interbank rate can yield more than a certificate of deposit offering 100% of the interbank rate, due to the exemption from Income Tax:
 
-| | CDB 100% CDI | LCI 85% CDI |
+| | Certificates of deposit (CDs) 100% interbank rate | Tax‑exempt bank note 85% interbank rate |
 |--|-------------|-------------|
-| Gross yield | 13,65% | 11,60% |
-| IR (15%) | -2,05% | 0% |
-| **Net yield** | **11,60%** | **11,60%** |
+| Gross yield | 13.65% | 11.60% |
+| Income Tax (15%) | -2.05% | 0% |
+| **Net yield** | **11.60%** | **11.60%** |
 
-In this example, they yield the same. But an LCI of 90% of CDI already beats the CDB of 100%.
+In this example, they yield the same. But a tax‑exempt bank note of 90% of the interbank rate already beats the certificate of deposit of 100%.
 
-## When to invest in LCI/LCA
+## When to invest in tax‑exempt bank notes
 
 - When you won't need the money for at least 90 days
 - To diversify fixed‑income investments
-- When you find rates above 90% of CDI
+- When you find rates above 90% of the interbank rate

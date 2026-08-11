@@ -37,8 +37,8 @@ Financing is when a bank lends you [money](/en/posts/en-30-day-rule-for-purchase
 2. **Choose the shortest term that fits your [budget](/en/posts/en-5-alternatives-to-mobills-in-2026)** — less interest
 3. **Compare rates between banks** — the difference can be huge
 4. **Prefer SAC** — pays less interest in total
-5. **Amortize whenever possible** — every extra R$ 1,000 saves thousands
+5. **Amortize whenever possible** — every extra $200 saves thousands
 
 ## How much does a financing cost
 
-A R$ 400,000 property financed over 30 years at 10% per year [costs](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide) around R$ 1,000,000 in total. You pay more than double the property's value in interest.
+A $80,000 property financed over 30 years at 10% per year [costs](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide) around $200,000 in total. You pay more than double the property's value in interest.

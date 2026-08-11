@@ -11,31 +11,31 @@ publishedAt: 2026-05-19
 readingTime: 1
 ---
 
-## What is IPCA?
+## What is the CPI?
 
-The IPCA (National Broad Consumer Price Index) is the official thermometer of [inflation](/en/glossario/en-inflation) in Brazil. It measures how much prices have risen (or fallen) in a given period. It is calculated by the IBGE every month.
+The CPI (Consumer Price Index) is the official thermometer of [inflation](/en/glossario/en-inflation). It measures how much prices have risen (or fallen) in a given period. It is calculated by the national statistics office every month.
 
 ## What it measures
 
-The IPCA tracks the prices of a "basket" of products and services that Brazilian families consume:
+The CPI tracks the prices of a "basket" of products and services that families consume:
 - Food (rice, beans, meat)
 - Housing (rent, energy, water)
 - Transportation (gasoline, bus)
 - Health (health plan, medicines)
 - Education (school tuition)
 
-## Why IPCA matters to you
+## Why the CPI matters to you
 
-1. **Your [money](/en/posts/en-30-day-rule-for-purchases) loses value:** if the IPCA is 5% per year, R$ 100 today will be worth R$ 95 in a year
-2. **[Investments](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026):** returns below the IPCA mean you're losing [money](/en/posts/en-avoid-impulse-purchases)
-3. **[Selic](/en/glossario/en-selic):** the Central Bank raises or lowers the Selic to control the IPCA
-4. **Adjustments:** rents, health plans, and salaries are adjusted by the IPCA
+1. **Your [money](/en/posts/en-30-day-rule-for-purchases) loses value:** if the CPI is 5% per year, $20 today will be worth $19 in a year  
+2. **[Investments](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026):** returns below the CPI mean you're losing [money](/en/posts/en-avoid-impulse-purchases)  
+3. **[central bank base rate](/en/glossario/en-selic):** the Central Bank raises or lowers the base rate to control the CPI  
+4. **Adjustments:** rents, health plans, and salaries are adjusted by the CPI  
 
-## IPCA and investments
+## CPI and investments
 
-For your money to really grow, your investments need to [yield](/en/glossario/en-yield) **above the IPCA**. That's why there are securities like the Tesouro IPCA+, which guarantee real returns (above inflation).
+For your money to really grow, your investments need to [yield](/en/glossario/en-yield) **above the CPI**. That's why there are securities like inflation-linked government bonds, which guarantee real returns (above inflation).
 
-## IPCA history
+## CPI history
 
 - 2020: 4.52%
 - 2021: 10.06%

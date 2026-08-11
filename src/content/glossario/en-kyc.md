@@ -21,7 +21,7 @@ seo:
 ## What it is
 The term "KYC" is an English acronym for "Know Your Customer", which in Portuguese means "Conheça Seu Cliente". It is a process used by financial institutions to verify the identity and legitimacy of their customers, aiming to prevent illicit activities such as money laundering and terrorist [financing](/en/glossario/en-financing). In short, KYC is a way to ensure that financial institutions are dealing with real, legitimate people, not criminals or fraudsters.
 
-Basically, KYC involves collecting and verifying personal and financial information from customers, such as name, address, date of birth, CPF number, [income](/en/posts/en-building-a-diversified-portfolio-with-r-500), and occupation. This information is then checked against government databases and other sources to ensure it is accurate and up‑to‑date.
+Basically, KYC involves collecting and verifying personal and financial information from customers, such as name, address, date of birth, tax ID number, [income](/en/posts/en-building-a-diversified-portfolio-with-r-500), and occupation. This information is then checked against government databases and other sources to ensure it is accurate and up‑to‑date.
 
 ![What it is](/images/glossario/kyc-inline-1.webp)
 
@@ -31,7 +31,7 @@ Basically, KYC involves collecting and verifying personal and financial informat
 The KYC process usually starts when a customer opens an account at a financial institution, such as a bank or a brokerage. The customer is asked to provide documents and personal information, which the institution then verifies. If the information is deemed legitimate, the account is approved and the customer can start using the institution’s services.
 
 Here are the main steps of the KYC process:
-* Information collection: the customer provides documents and personal information, such as name, address, and CPF number.
+* Information collection: the customer provides documents and personal information, such as name, address, and tax ID number.
 * Identity verification: the financial institution checks the customer’s identity against government databases and other sources.
 * Legitimacy verification: the financial institution confirms that the customer is a real, legitimate person, not a criminal or fraudster.
 * Account approval: if the information is considered legitimate, the account is approved and the customer can start using the institution’s services.
@@ -57,9 +57,9 @@ Other risks include:
 * Impact on customers: the KYC process can be time‑consuming and bureaucratic, which may affect the customer experience and satisfaction with the financial institution.
 
 ## Practical examples
-Let's consider a practical example. Imagine you are a worker who earns R$ 5,000 per month and want to open a bank account to deposit your salary. The bank asks you to provide documents and personal information, such as name, address, and CPF number, to carry out the KYC process. **Practical tip:** it is important to provide accurate and up‑to‑date information to avoid delays or problems in account approval.
+Let's consider a practical example. Imagine you are a worker who earns $1,000 per month and want to open a bank account to deposit your salary. The bank asks you to provide documents and personal information, such as name, address, and tax ID number, to carry out the KYC process. **Practical tip:** it is important to provide accurate and up‑to‑date information to avoid delays or problems in account approval.
 
-Another example is a person who wants to [invest](/en/posts/en-invest-or-pay-off-debt-which-is-better-in-2026) in [ações](/en/glossario/en-stocks) and needs to open an account at a brokerage. The brokerage asks the person to provide information about their income and occupation, to verify whether they have the financial capacity to invest. **Practical tip:** it is important to have a good understanding of your financial goals and investment capacity before opening an account at a brokerage.
+Another example is a person who wants to [invest](/en/posts/en-invest-or-pay-off-debt-which-is-better-in-2026) in [stocks](/en/glossario/en-stocks) and needs to open an account at a brokerage. The brokerage asks the person to provide information about their income and occupation, to verify whether they have the financial capacity to invest. **Practical tip:** it is important to have a good understanding of your financial goals and investment capacity before opening an account at a brokerage.
 
 ## Start today
 Now that you understand what KYC is and how it works, it’s time to start using this information to improve your financial experience. **Practical tip:** start by checking whether the financial institutions you use comply with KYC regulations and have a good reputation for security and compliance. Also, make sure to provide accurate and up‑to‑date information whenever needed, to avoid delays or problems in account approvals. With these practical tips, you’ll be better prepared to handle the KYC process and protect your [financial security](/en/posts/en-7-best-personal-finance-apps-2026-complete-guide-to-organize).

@@ -13,14 +13,14 @@ readingTime: 2
 
 ## What is Private Pension?
 
-Private Pension is a long-term [investment](/en/posts/en-building-a-diversified-portfolio-with-r-500) designed for [retirement](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide). You contribute monthly and, in the future, redeem the accumulated value (with returns). It's a complement to the INSS retirement.
+Private Pension is a long‑term [investment](/en/posts/en-building-a-diversified-portfolio-with-r-500) designed for [retirement](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide). You contribute monthly and, in the future, redeem the accumulated value (with returns). It’s a complement to the public pension system.
 
-## PGBL vs. VGBL
+## Tax‑deferred retirement plan vs. tax‑deferred retirement plan
 
-| | PGBL | VGBL |
+| | Tax‑deferred plan (full tax return) | Tax‑deferred plan (simplified tax return) |
 |--|------|------|
-| Deducts IR? | Yes (up to 12% of income) | No |
-| IR on redemption | On total value | Only on returns |
+| Deducts income tax? | Yes (up to 12% of income) | No |
+| Income tax on redemption | On total value | Only on returns |
 | For whom? | Those who file a complete tax return | Those who file a simplified tax return |
 
 ## Taxation Tables
@@ -42,18 +42,18 @@ Private Pension is a long-term [investment](/en/posts/en-building-a-diversified-
 
 ## Advantages
 
-- Tax [benefits](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026) (PGBL)
+- Tax [benefits](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026) (tax‑deferred plan)
 - Does not enter into inheritance (succession [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips))
 - Monthly [investment](/en/posts/en-tesouro-direto-for-beginners) discipline
 - 10% rate after 10 years (regressive)
 
 ## Disadvantages
 
-- High administration fees (many funds charge 1-2%)
+- High administration fees (many funds charge 1‑2%)
 - Loading fee (some charge on entry)
 - Returns may be lower than [investing on your own](/en/posts/en-private-pension-vs-investing-on-your-own-which-is-worth-it)
 - Little flexibility
 
 ## Tip
 
-If you're going to take out a private pension, choose funds with an administration fee below 1% and no loading fee. Traditional banks tend to charge a lot — prefer independent brokerages.
+If you’re going to take out a private pension, choose funds with an administration fee below 1% and no loading fee. Traditional banks tend to charge a lot — prefer independent brokerages.

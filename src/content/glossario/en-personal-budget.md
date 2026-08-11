@@ -11,7 +11,7 @@ publishedAt: 2026-05-19
 readingTime: 1
 ---
 
-## What is Personal [Budget](/en/posts/en-5-tips-to-reorganize-your-finances-on-vacation)?
+## What is Personal [budget](/en/posts/en-5-tips-to-reorganize-your-finances-on-vacation)?
 
 Personal [budget](/en/posts/en-how-to-create-personal-budget) is a plan that shows how much [money](/en/posts/en-avoid-impulse-purchases) comes in, how much goes out, and where it goes. It's the most basic and powerful tool in [personal finance](/en/posts/en-30-day-rule-for-purchases). Without a budget, you're driving in the dark.
 
@@ -53,6 +53,6 @@ Personal [budget](/en/posts/en-how-to-create-personal-budget) is a plan that sho
 ## Common mistakes
 
 1. Not including small expenses (coffee, delivery)
-2. Forgetting annual expenses (IPVA, IPTU, insurance)
+2. Forgetting annual expenses (annual vehicle tax, property tax, insurance)
 3. Not reviewing monthly
 4. Creating a budget that's too restrictive (not sustainable)

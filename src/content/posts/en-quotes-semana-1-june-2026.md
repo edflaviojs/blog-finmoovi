@@ -1,6 +1,6 @@
 ---
-title: "Weekly Summary: Dollar at R$ 5.03 — Week 1 of june"
-description: "Weekly financial market summary: dollar, euro, Selic and tips for investors. Week 1 of june 2026."
+title: "Weekly Summary: Dollar at title: .01 — Week 1 of June"
+description: "Weekly financial market summary: dollar, euro, central bank base rate and tips for investors. Week 1 of June 2026."
 image: "/images/posts/en-quotes-semana-1-june-2026.svg"
 imageAlt: "Blue bars on black background, some purple shades, rounded rectangle."
 category: "cotacoes"
@@ -17,27 +17,25 @@ seo:
   keywords: ["dollar quote today", "euro quote", "financial market summary", "selic"]
 ---
 
-## Weekly Summary of the Brazilian [Financial Market](/en/posts/en-quotes-semana-5-june-2026)
+## Weekly Summary of the [Financial Market](/en/posts/en-quotes-semana-5-june-2026)
 
-The past week was marked by relative stability in the [foreign exchange](/en/glossario/en-cambio) market, with the commercial [dollar](/en/posts/en-quotes-semana-1-july-2026) closing at R$ 5.03 and the euro at R$ 5.84. Let's analyze how these numbers affect our finances and investments.
+The past week was marked by relative stability in the [foreign exchange](/en/glossario/en-cambio) market, with the commercial [dollar](/en/posts/en-quotes-semana-1-july-2026) closing at $1.01 and the euro at $1.17. Let's analyze how these numbers affect our finances and investments.
 
 ## Dollar and Euro: Weekly Trend
 
-The dollar showed a slight increase throughout the week, but nothing that caused major impacts on investments. The euro maintained a stability trend, which is good for those with investments in foreign currency. With the euro at R$ 5.84, it's a good time to evaluate whether to diversify your investment portfolio with euro-denominated assets. Tools like FinMoovi can help track your investments in multiple currencies, making it easier to manage your wealth.
+The dollar showed a slight increase throughout the week, but nothing that caused major impacts on investments. The euro maintained a stability trend, which is good for those with investments in foreign currency. With the euro at $1.17, it's a good time to evaluate whether to diversify your investment portfolio with euro-denominated assets. Tools like FinMoovi can help track your investments in multiple currencies, making it easier to manage your wealth.
 
-## [Selic](/en/glossario/en-selic) and Impact on Investments
+## [central bank base rate](/en/glossario/en-selic) and Impact on Investments
 
-The Selic rate, which is the economy's base [interest](/en/glossario/en-interest) rate, continues to be an important factor for investments. With the Selic at 12.25% per year, fixed-income investments, such as treasury bonds, continue attracting the attention of many investors. However, it's important to remember that high interest rates can also increase [financing](/en/glossario/en-financing) costs for businesses and consumers, which can affect economic growth. Therefore, it's essential to keep an eye on economic news and adjust your investment strategy accordingly.
+The central bank base rate, which is the economy's base [interest](/en/glossario/en-interest) rate, continues to be an important factor for investments. With the central bank base rate at 12.25% per year, fixed-income investments, such as treasury bonds, continue attracting the attention of many investors. However, it's important to remember that high interest rates can also increase [financing](/en/glossario/en-financing) costs for businesses and consumers, which can affect economic growth. Therefore, it's essential to keep an eye on economic news and adjust your investment strategy accordingly.
 
 ## Practical Tip for Individual Investors
 
-A practical tip for individual investors is to diversify your investment portfolio. With the dollar at R$ 5.03 and the euro at R$ 5.84, it may be a good time to invest in foreign currency assets. Additionally, it's important not to forget investing in [fixed income](/en/glossario/en-fixed-income), such as treasury bonds, to have a more stable income source. Remember that [diversification](/en/glossario/en-diversification) is the key to minimizing risks and maximizing gains.
+A practical tip for individual investors is to diversify your investment portfolio. With the dollar at $1.01 and the euro at $1.17, it may be a good time to invest in foreign currency assets. Additionally, it's important not to forget investing in [fixed income](/en/glossario/en-fixed-income), such as treasury bonds, to have a more stable income source. Remember that [diversification](/en/glossario/en-diversification) is the key to minimizing risks and maximizing gains.
 
 ## What to Expect for Next Week
 
 For next week, it's important to pay attention to economic and political news that may affect the foreign exchange market and interest rates. Additionally, it's essential to continue monitoring your investment portfolio and adjust your strategy according to market changes. With the help of tools like FinMoovi, it's easier to track your investments and make informed decisions. We'll continue monitoring the market and bringing updates and practical tips for you.
 
-
 ---
 **Ready to track your investments? Try [FinMoovi for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**
-

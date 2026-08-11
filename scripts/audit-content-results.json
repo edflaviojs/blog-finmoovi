@@ -44,21 +44,6 @@
     }
   },
   {
-    "file": "en-30-day-rule-for-purchases.md",
-    "dir": "posts",
-    "severity": 2,
-    "issues": {
-      "currency": 3,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": []
-    }
-  },
-  {
     "file": "en-5-practical-steps-to-start-saving-for-black-friday-2026.md",
     "dir": "posts",
     "severity": 2,
@@ -75,62 +60,6 @@
       "ptLeftovers": [
         "investimentos"
       ]
-    }
-  },
-  {
-    "file": "en-5-tips-to-prepare-financially-for-the-second-half-of-the.md",
-    "dir": "posts",
-    "severity": 2,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [
-        "Receita Federal",
-        "Serasa",
-        "IBGE",
-        "Banco Central do Brasil"
-      ],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": []
-    }
-  },
-  {
-    "file": "en-5-tips-to-reorganize-your-finances-on-vacation.md",
-    "dir": "posts",
-    "severity": 2,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [
-        "Serasa",
-        "IBGE"
-      ],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": []
-    }
-  },
-  {
-    "file": "en-avoid-impulse-purchases.md",
-    "dir": "posts",
-    "severity": 2,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [
-        "Serasa",
-        "Banco Central do Brasil"
-      ],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": []
     }
   },
   {
@@ -155,233 +84,6 @@
     }
   },
   {
-    "file": "en-budget-for-couples-dividing-expenses.md",
-    "dir": "posts",
-    "severity": 2,
-    "issues": {
-      "currency": 3,
-      "brInstitutions": [
-        "Receita Federal",
-        "Banco Central do Brasil"
-      ],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": []
-    }
-  },
-  {
-    "file": "en-budget-review.md",
-    "dir": "posts",
-    "severity": 2,
-    "issues": {
-      "currency": 5,
-      "brInstitutions": [
-        "Banco Central do Brasil"
-      ],
-      "brProducts": [
-        "Tesouro Direto"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": []
-    }
-  },
-  {
-    "file": "en-bull-market-e-bear-market.md",
-    "dir": "glossario",
-    "severity": 2,
-    "issues": {
-      "currency": 4,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": []
-    }
-  },
-  {
-    "file": "en-cdi.md",
-    "dir": "glossario",
-    "severity": 2,
-    "issues": {
-      "currency": 4,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": []
-    }
-  },
-  {
-    "file": "en-come-cotas.md",
-    "dir": "glossario",
-    "severity": 2,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [
-        "PGBL",
-        "VGBL"
-      ],
-      "ptLeftovers": []
-    }
-  },
-  {
-    "file": "en-creating-an-emergency-fund.md",
-    "dir": "posts",
-    "severity": 2,
-    "issues": {
-      "currency": 5,
-      "brInstitutions": [
-        "Banco Central do Brasil"
-      ],
-      "brProducts": [
-        "Tesouro Direto"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": []
-    }
-  },
-  {
-    "file": "en-credit-card-vs-debit-card-which-is-worth-it-in-2026.md",
-    "dir": "posts",
-    "severity": 2,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [
-        "Banco Central do Brasil"
-      ],
-      "brProducts": [
-        "Tesouro Direto"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": []
-    }
-  },
-  {
-    "file": "en-credit-score.md",
-    "dir": "glossario",
-    "severity": 2,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [
-        "Serasa",
-        "SPC"
-      ],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": []
-    }
-  },
-  {
-    "file": "en-debentures.md",
-    "dir": "glossario",
-    "severity": 2,
-    "issues": {
-      "currency": 1,
-      "brInstitutions": [],
-      "brProducts": [
-        "CDB",
-        "CDI"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [
-        "IPCA"
-      ],
-      "ptLeftovers": []
-    }
-  },
-  {
-    "file": "en-dividends.md",
-    "dir": "glossario",
-    "severity": 2,
-    "issues": {
-      "currency": 5,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": []
-    }
-  },
-  {
-    "file": "en-early-payoff.md",
-    "dir": "glossario",
-    "severity": 2,
-    "issues": {
-      "currency": 4,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": []
-    }
-  },
-  {
-    "file": "en-emergency-fund.md",
-    "dir": "glossario",
-    "severity": 2,
-    "issues": {
-      "currency": 3,
-      "brInstitutions": [],
-      "brProducts": [
-        "CDB",
-        "CDI",
-        "Selic"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": []
-    }
-  },
-  {
-    "file": "en-etf.md",
-    "dir": "glossario",
-    "severity": 2,
-    "issues": {
-      "currency": 4,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": [
-        "ações"
-      ]
-    }
-  },
-  {
     "file": "en-fgc-guarantee.md",
     "dir": "glossario",
     "severity": 2,
@@ -402,36 +104,13 @@
     }
   },
   {
-    "file": "en-financial-emergency.md",
-    "dir": "glossario",
-    "severity": 2,
-    "issues": {
-      "currency": 2,
-      "brInstitutions": [],
-      "brProducts": [
-        "CDB",
-        "FGTS",
-        "Selic"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": []
-    }
-  },
-  {
     "file": "en-financial-investment.md",
     "dir": "glossario",
     "severity": 2,
     "issues": {
       "currency": 0,
       "brInstitutions": [],
-      "brProducts": [
-        "Tesouro Direto",
-        "CDB",
-        "Selic"
-      ],
+      "brProducts": [],
       "geoRefs": [],
       "ptWordsCount": 0,
       "brBrands": [],
@@ -447,15 +126,9 @@
     "dir": "posts",
     "severity": 2,
     "issues": {
-      "currency": 5,
-      "brInstitutions": [
-        "Serasa",
-        "IBGE",
-        "Banco Central do Brasil"
-      ],
-      "brProducts": [
-        "Tesouro Direto"
-      ],
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
       "geoRefs": [],
       "ptWordsCount": 0,
       "brBrands": [],
@@ -2652,7 +2325,52 @@
     }
   },
   {
+    "file": "en-30-day-rule-for-purchases.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-5-alternatives-to-mobills-in-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-5-tips-to-prepare-financially-for-the-second-half-of-the.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-5-tips-to-reorganize-your-finances-on-vacation.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -2757,8 +2475,68 @@
     }
   },
   {
+    "file": "en-avoid-impulse-purchases.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-back-to-school-save-money-and-plan-your-school-expenses-2026.md",
     "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-budget-for-couples-dividing-expenses.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-budget-review.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-bull-market-e-bear-market.md",
+    "dir": "glossario",
     "severity": 0,
     "issues": {
       "currency": 0,
@@ -2847,6 +2625,51 @@
     }
   },
   {
+    "file": "en-cdi.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-come-cotas.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-company-expense-category.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-compound-interest.md",
     "dir": "glossario",
     "severity": 0,
@@ -2892,6 +2715,21 @@
     }
   },
   {
+    "file": "en-creating-an-emergency-fund.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-credit-card-statement.md",
     "dir": "glossario",
     "severity": 0,
@@ -2907,7 +2745,52 @@
     }
   },
   {
+    "file": "en-credit-card-vs-debit-card-which-is-worth-it-in-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-credit-score.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-credit.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-debentures.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -2997,6 +2880,21 @@
     }
   },
   {
+    "file": "en-dividends.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-do-you-also-lose-track-of-where-your-money-went-at-the-end.md",
     "dir": "posts",
     "severity": 0,
@@ -3027,8 +2925,53 @@
     }
   },
   {
+    "file": "en-early-payoff.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-economic-valentine-s-day.md",
     "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-emergency-fund.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-etf.md",
+    "dir": "glossario",
     "severity": 0,
     "issues": {
       "currency": 0,
@@ -3089,6 +3032,21 @@
   {
     "file": "en-financial-education-for-children.md",
     "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-financial-emergency.md",
+    "dir": "glossario",
     "severity": 0,
     "issues": {
       "currency": 0,
@@ -3327,6 +3285,21 @@
     }
   },
   {
+    "file": "en-how-to-organize-your-monthly-expenses-quickly-and-securely.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-how-to-save-on-a-july-vacation-without-giving-up-the-fun.md",
     "dir": "posts",
     "severity": 0,
@@ -3418,6 +3391,21 @@
   },
   {
     "file": "en-how-to-use-credit-without-squeezing-your-budget-5-steps.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-how-to-use-exchange-rates-to-your-advantage-and-avoid-losses.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -4302,6 +4290,21 @@
     }
   },
   {
+    "file": "es-categoria-de-gastos-de-empresa.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-categoria-de-gastos-personales.md",
     "dir": "glossario",
     "severity": 0,
@@ -4467,6 +4470,21 @@
     }
   },
   {
+    "file": "es-como-organizar-tus-gastos-mensuales-con-facilidad-y.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-como-pequenas-acciones-pueden-cambiar-tus-finanzas-en-2026.md",
     "dir": "posts",
     "severity": 0,
@@ -4558,6 +4576,21 @@
   },
   {
     "file": "es-como-usar-credito-sin-ahogar-tu-presupuesto-5-pasos.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-como-usar-el-tipo-de-cambio-a-tu-favor-y-evitar-perdidas.md",
     "dir": "posts",
     "severity": 0,
     "issues": {

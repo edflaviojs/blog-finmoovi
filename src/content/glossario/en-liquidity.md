@@ -17,18 +17,18 @@ Liquidity is the ability to quickly convert an [investment](/en/posts/en-buildin
 
 ## Types of liquidity
 
-- **Daily liquidity (D+0):** [Money](/en/posts/en-avoid-impulse-purchases) available on the same day. Ex: Tesouro [Selic](/en/glossario/en-selic), [CDB](/en/glossario/en-cdb) with daily liquidity.
-- **Liquidity D+1:** Available the next day. Ex: Some investment funds.
-- **Liquidity at maturity:** Can only be redeemed on the agreed-upon date. Ex: CDB with a term, LCI/LCA.
+- **Daily liquidity (D+0):** [Money](/en/posts/en-avoid-impulse-purchases) available on the same day. Ex: government bonds [central bank base rate](/en/glossario/en-selic), [CDs](/en/glossario/en-cdb) with daily liquidity.
+- **Liquidity D+1:** Available the next day. Ex: Some [investment funds](/en/glossario/en-investment-fund).
+- **Liquidity at maturity:** Can only be redeemed on the agreed-upon date. Ex: CDs with a term, tax‑exempt bank notes.
 
 ## Liquidity scale
 
 From most liquid to least liquid:
 
 1. Money in a checking account
-2. Tesouro Selic / CDB with daily liquidity
-3. [Fundos](/en/glossario/en-investment-fund) DI
-4. CDB with a term
+2. Government bonds / CDs with daily liquidity
+3. [Investment funds](/en/glossario/en-investment-fund) DI
+4. CDs with a term
 5. Real estate funds
 6. Stocks
 7. Real estate
