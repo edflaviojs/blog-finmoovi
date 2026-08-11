@@ -88,5 +88,23 @@
     ],
     "veredito": "1. **O LOOP — 6/10**  \nPrimeiro e último quadro têm o mesmo título e composição, o que ajuda bastante. Mas o texto inferior muda de **“Se você ainda.”** para **“segue perdendo dinheiro”**, então o reinício não parece perfeitamente invisível pelos quadros.\n\n2. **A FAIXA DE BAIXO — 4/10**  \nSim. O texto inferior aparece claramente no terço de baixo em praticamente todos os quadros. Essa área é justamente a mais vulnerável à interface do Shorts/Reels.\n\n3. **TEXTO POR CIMA DE TEXTO — 5/10**  \nNo quadro de **10,5s**, há aparência de texto duplicado/fantasma (“Ainda perde dinheiro”), deixando a leitura confusa. Alguns quadros também mostram frases incompletas, como **“Eu vi a”**.\n\n4. **LEGIBILIDADE — 8/10**  \nOs títulos principais são grandes, fortes e com bom contraste. Os textos menores na parte inferior são mais fracos e podem ficar difíceis de ler em celular.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — 7/10**  \nHá bastante espaço vazio no centro/inferior. O fundo e os elementos gráficos evitam que pareça totalmente vazio, mas alguns quadros ficam visualmente parados.\n\n6. **COERÊNCIA — 8/10**  \nSim. A identidade visual é muito consistente e existe uma sequência textual clara: conta de luz → aumento → perda de dinheiro → retorno à conta de luz.\n\n7. **TESTE CENTRAL — 5/10**  \nPelos quadros, parece mais uma sequência de **slides animados** do que um vídeo profissional, principalmente porque o mesmo cartão grande domina quase todos os momentos.\n\nNOTA GERAL: 6.5  \nPROBLEMA 1: O loop não é perfeito: o primeiro quadro termina/recomeça com textos inferiores diferentes.  \nPROBLEMA 2: Texto importante está no terço inferior em praticamente todos os quadros.  \nPROBLEMA 3: O quadro de 10,5s mostra texto aparentemente duplicado/fantasma.  \nPRIMEIRA COISA A MUDAR: Faça o primeiro e o último quadro visualmente idênticos também no texto inferior, mantendo toda a informação importante longe da faixa inferior.",
     "quando": "2026-08-10T06:01:01.278Z"
+  },
+  {
+    "slug": "loop-guardar-salario-curto-ninguem-fala",
+    "formato": "loop16",
+    "nota": 7.1,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      2.4,
+      4.8,
+      7.1,
+      9.5,
+      11.9,
+      14.3,
+      16.6
+    ],
+    "veredito": "1. **O LOOP — 9/10**  \nO primeiro e o último quadro mostram praticamente a mesma coisa: **“Guardar também aperta”**, na mesma posição e com o mesmo visual. É um bom fechamento para loop. Há pequena diferença no texto da legenda, mas o elemento principal permite uma reinicialização bem discreta.\n\n2. **A FAIXA DE BAIXO — 8/10**  \nNão há informação importante colada no limite inferior. As legendas ficam relativamente acima da interface do celular. Ainda assim, algumas chegam perto da região inferior de segurança.\n\n3. **TEXTO POR CIMA DE TEXTO — 6/10**  \nHá problemas visíveis nos quadros **2,4s, 4,8s, 9,5s e 11,9s**, principalmente nas legendas. Em **11,9s**, “Guardar pode escapar” aparece sobre o balde e fica visualmente confuso. Algumas palavras parecem parcialmente sobrepostas/entrando umas nas outras.\n\n4. **LEGIBILIDADE — 8/10**  \nOs textos principais são grandes, fortes e têm bom contraste. As legendas menores são mais problemáticas: em alguns quadros, palavras em cinza ficam pouco destacadas contra o fundo.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — 5/10**  \nExiste bastante espaço vazio na metade inferior dos quadros. O balde e os textos ocupam relativamente pouco da tela, fazendo algumas imagens parecerem subaproveitadas.\n\n6. **COERÊNCIA — 8/10**  \nA identidade visual é muito consistente: mesmo fundo, logo, tipografia, cores e ilustração. A sequência conta uma ideia progressiva, mas alguns quadros parecem repetição do mesmo estado visual em vez de evolução clara.\n\n7. **TESTE CENTRAL — 6/10**  \n**Parece mais um conjunto de slides animados do que um vídeo profissional**, porque vários quadros têm composição quase idêntica e poucos elementos visuais mudam.\n\nNOTA GERAL: **7,1**\nPROBLEMA 1: **Legendas confusas/sobrepostas, principalmente no quadro de 11,9s**\nPROBLEMA 2: **Muito espaço vazio na parte inferior em vários quadros, especialmente 4,8s e 7,1s**\nPROBLEMA 3: **Repetição visual faz o conteúdo parecer slides, principalmente entre 4,8s e 7,1s**\nPRIMEIRA COISA A MUDAR: **Melhorar a composição das legendas e usar mais da área vertical da tela para criar sensação de vídeo, não de slides**",
+    "quando": "2026-08-11T05:37:41.657Z"
   }
 ]
