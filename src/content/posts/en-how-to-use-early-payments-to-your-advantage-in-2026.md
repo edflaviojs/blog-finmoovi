@@ -3,6 +3,7 @@ title: "How to Use Early Payments to Your Advantage in 2026"
 description: "Discover how early payments can improve your budget, cut interest, and bring financial peace using FinMoovi."
 tickerHeadline: "The trick that cuts expenses early"
 image: "/images/posts/como-usar-pagamentos-antecipados-a-seu-favor-em-2026.webp"
+imageAlt: "Yellow abstract ribbon waves against a dark blue background with white space below."
 category: "dicas"
 locale: "en"
 tags: ["early payments","personal finance","budgeting","money"]

@@ -3,6 +3,7 @@ title: "Como usar pagamentos antecipados a seu favor em 2026"
 description: "Descubra como pagamentos antecipados podem melhorar seu orçamento, reduzir juros e trazer tranquilidade financeira usando o FinMoovi."
 tickerHeadline: "O truque que corta despesas antes de apa"
 image: "/images/posts/como-usar-pagamentos-antecipados-a-seu-favor-em-2026.webp"
+imageAlt: "Fita dourada ondulada sobre fundo azul escuro com reflexo no chão."
 category: "dicas"
 locale: "pt"
 tags: ["pagos anticipados","finanças pessoais","economia","dinheiro"]
