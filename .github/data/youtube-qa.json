@@ -106,5 +106,23 @@
     ],
     "veredito": "1. **O LOOP — 9/10**  \nO primeiro e o último quadro mostram praticamente a mesma coisa: **“Guardar também aperta”**, na mesma posição e com o mesmo visual. É um bom fechamento para loop. Há pequena diferença no texto da legenda, mas o elemento principal permite uma reinicialização bem discreta.\n\n2. **A FAIXA DE BAIXO — 8/10**  \nNão há informação importante colada no limite inferior. As legendas ficam relativamente acima da interface do celular. Ainda assim, algumas chegam perto da região inferior de segurança.\n\n3. **TEXTO POR CIMA DE TEXTO — 6/10**  \nHá problemas visíveis nos quadros **2,4s, 4,8s, 9,5s e 11,9s**, principalmente nas legendas. Em **11,9s**, “Guardar pode escapar” aparece sobre o balde e fica visualmente confuso. Algumas palavras parecem parcialmente sobrepostas/entrando umas nas outras.\n\n4. **LEGIBILIDADE — 8/10**  \nOs textos principais são grandes, fortes e têm bom contraste. As legendas menores são mais problemáticas: em alguns quadros, palavras em cinza ficam pouco destacadas contra o fundo.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — 5/10**  \nExiste bastante espaço vazio na metade inferior dos quadros. O balde e os textos ocupam relativamente pouco da tela, fazendo algumas imagens parecerem subaproveitadas.\n\n6. **COERÊNCIA — 8/10**  \nA identidade visual é muito consistente: mesmo fundo, logo, tipografia, cores e ilustração. A sequência conta uma ideia progressiva, mas alguns quadros parecem repetição do mesmo estado visual em vez de evolução clara.\n\n7. **TESTE CENTRAL — 6/10**  \n**Parece mais um conjunto de slides animados do que um vídeo profissional**, porque vários quadros têm composição quase idêntica e poucos elementos visuais mudam.\n\nNOTA GERAL: **7,1**\nPROBLEMA 1: **Legendas confusas/sobrepostas, principalmente no quadro de 11,9s**\nPROBLEMA 2: **Muito espaço vazio na parte inferior em vários quadros, especialmente 4,8s e 7,1s**\nPROBLEMA 3: **Repetição visual faz o conteúdo parecer slides, principalmente entre 4,8s e 7,1s**\nPRIMEIRA COISA A MUDAR: **Melhorar a composição das legendas e usar mais da área vertical da tela para criar sensação de vídeo, não de slides**",
     "quando": "2026-08-11T05:37:41.657Z"
+  },
+  {
+    "slug": "loop-pagar-o-minimo-ninguem-fala",
+    "formato": "loop16",
+    "nota": 7.5,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      2.1,
+      4.3,
+      6.4,
+      8.6,
+      10.7,
+      12.9,
+      14.9
+    ],
+    "veredito": "1. **O LOOP — 9/10**  \nO primeiro e o último quadro são praticamente iguais: mesma frase, mesma posição e mesmo fundo. Isso favorece bastante o reinício imperceptível.\n\n2. **A FAIXA DE BAIXO — 6/10**  \nHá legendas/informações importantes na região inferior em vários quadros. No celular, podem ficar parcialmente cobertas pela interface do Shorts/Reels.\n\n3. **TEXTO POR CIMA DE TEXTO — 7/10**  \nNão há sobreposição grave de duas frases, mas as legendas aparecem em estados incompletos, como **“sobre pagar o”**, **“a conta apertou”** e **“barato comigo.”**. Pelos quadros, parecem trechos de uma legenda em andamento.\n\n4. **LEGIBILIDADE — 8/10**  \nOs textos principais são grandes, fortes e têm bom contraste. As legendas inferiores são menores e ficam mais vulneráveis à interface do celular.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — 7/10**  \nExiste bastante espaço vazio, principalmente entre o conteúdo principal e as legendas. O fundo decorado evita que pareça totalmente vazio, mas a composição poderia ocupar melhor a tela.\n\n6. **COERÊNCIA — 8/10**  \nOs quadros têm identidade visual muito consistente e a sequência conta uma história: mínimo → conta apertada → parar de empurrar → custo do mínimo. Porém, alguns quadros parecem mais “cartelas” do que cenas contínuas.\n\n7. **TESTE CENTRAL — 6/10**  \n**Parece mais uma sequência de slides animados do que um vídeo profissional**, porque a maioria dos quadros depende de cards de texto centralizados, com pouca informação visual além deles.\n\nNOTA GERAL: **7,5**\nPROBLEMA 1: **Faixa inferior — legendas importantes ficam muito baixas, especialmente nos quadros de 0,1s, 6,4s, 10,7s e 14,9s.**\nPROBLEMA 2: **Sensação de slides — os cards grandes e repetitivos dominam a composição em vários quadros.**\nPROBLEMA 3: **Legendas fragmentadas — em 2,1s e outros momentos aparecem frases incompletas, o que pode parecer texto cortado em um quadro parado.**\nPRIMEIRA COISA A MUDAR: **Suba todas as legendas inferiores para uma área segura e reduza a dependência dos grandes cards de texto.**",
+    "quando": "2026-08-11T05:42:59.810Z"
   }
 ]
