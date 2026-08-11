@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-10T13:22:38.098Z",
-  "sourceCursor": 1,
+  "updatedAt": "2026-08-11T09:50:50.659Z",
+  "sourceCursor": 2,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -525,8 +525,10 @@
       "category": null,
       "priority": 2,
       "source": "gsc-gap",
-      "status": "pending",
-      "addedAt": "2026-08-03T10:31:31.687Z"
+      "status": "used",
+      "addedAt": "2026-08-03T10:31:31.687Z",
+      "usedAt": "2026-08-11T09:50:50.659Z",
+      "usedBy": "gerar-dicas-financeiras"
     },
     {
       "keyword": "renta variable",
