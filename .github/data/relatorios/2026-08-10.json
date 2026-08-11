@@ -1,0 +1,650 @@
+{
+  "date": "2026-08-10",
+  "counts": {
+    "content": 9,
+    "videos": 3,
+    "pins": 3,
+    "failures": 2,
+    "runs": 56
+  },
+  "failures": [
+    {
+      "name": "Cotações Semanal",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/31382508982",
+      "timeLisbon": "12:12"
+    },
+    {
+      "name": "Multipost — Vigia das redes (diário)",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/31430717313",
+      "timeLisbon": "21:47"
+    }
+  ],
+  "content": [
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "pt",
+      "slug": "categoria-de-despesas-empresa",
+      "url": "https://blog.finmoovi.com/glossario/categoria-de-despesas-empresa",
+      "title": "categoria de despesas empresa - Glossário Financeiro",
+      "description": "O que é categoria de despesas empresa e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi.",
+      "category": "basico",
+      "publishedAt": "2026-08-10"
+    },
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "es",
+      "slug": "es-categoria-de-gastos-de-empresa",
+      "url": "https://blog.finmoovi.com/es/glossario/es-categoria-de-gastos-de-empresa",
+      "title": "categoría de gastos de empresa - Glosario Financiero",
+      "description": "Qué es categoría de gastos de empresa y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi.",
+      "category": "basico",
+      "publishedAt": "2026-08-10"
+    },
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "en",
+      "slug": "en-company-expense-category",
+      "url": "https://blog.finmoovi.com/en/glossario/en-company-expense-category",
+      "title": "company expense category - Financial Glossary",
+      "description": "What company expense category is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi.",
+      "category": "basico",
+      "publishedAt": "2026-08-10"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "pt",
+      "slug": "como-organizar-suas-despesas-mensais-com-facilidade-e",
+      "url": "https://blog.finmoovi.com/posts/como-organizar-suas-despesas-mensais-com-facilidade-e",
+      "title": "Como organizar suas despesas mensais com facilidade e segurança",
+      "description": "Descubra passo a passo como criar e usar uma planilha de gastos mensal, substitua a bagunça por clareza e ainda aproveite o FinMoovi para automatizar tudo em poucos minutos.",
+      "category": "orcamento",
+      "publishedAt": "2026-08-10"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "es",
+      "slug": "es-como-organizar-tus-gastos-mensuales-con-facilidad-y",
+      "url": "https://blog.finmoovi.com/es/posts/es-como-organizar-tus-gastos-mensuales-con-facilidad-y",
+      "title": "Cómo organizar tus gastos mensuales con facilidad y seguridad",
+      "description": "Descubre paso a paso cómo crear y usar una planilla de gastos mensual, sustituye el desorden por claridad y aprovecha FinMoovi para automatizar todo en pocos minutos.",
+      "category": "orcamento",
+      "publishedAt": "2026-08-10"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "es",
+      "slug": "es-como-usar-el-tipo-de-cambio-a-tu-favor-y-evitar-perdidas",
+      "url": "https://blog.finmoovi.com/es/posts/es-como-usar-el-tipo-de-cambio-a-tu-favor-y-evitar-perdidas",
+      "title": "Cómo usar el tipo de cambio a tu favor y evitar pérdidas – guía 2026",
+      "description": "Descubre cómo el tipo de cambio impacta tu día a día y aprende a usar herramientas multimoneda para organizar tus finanzas sin complicaciones.",
+      "category": "dicas",
+      "publishedAt": "2026-08-10"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "pt",
+      "slug": "como-usar-o-cambio-a-seu-favor-e-evitar-perdas-guia-2026",
+      "url": "https://blog.finmoovi.com/posts/como-usar-o-cambio-a-seu-favor-e-evitar-perdas-guia-2026",
+      "title": "Como usar o câmbio a seu favor e evitar perdas – guia 2026",
+      "description": "Descubra como o câmbio impacta seu dia a dia, aprenda a usar ferramentas multimoeda e organize suas finanças sem complicação. Dicas práticas e passo a passo.",
+      "category": "dicas",
+      "publishedAt": "2026-08-10"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "en",
+      "slug": "en-how-to-organize-your-monthly-expenses-quickly-and-securely",
+      "url": "https://blog.finmoovi.com/en/posts/en-how-to-organize-your-monthly-expenses-quickly-and-securely",
+      "title": "How to Organize Your Monthly Expenses Quickly and Securely",
+      "description": "Step‑by‑step guide to building a simple expense spreadsheet and automating it with FinMoovi in just minutes.",
+      "category": "orcamento",
+      "publishedAt": "2026-08-10"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "en",
+      "slug": "en-how-to-use-exchange-rates-to-your-advantage-and-avoid-losses",
+      "url": "https://blog.finmoovi.com/en/posts/en-how-to-use-exchange-rates-to-your-advantage-and-avoid-losses",
+      "title": "How to Use Exchange Rates to Your Advantage and Avoid Losses – 2026 Guide",
+      "description": "Learn how exchange rates affect daily life, use multi‑currency tools and keep your finances organized. Practical tips and step‑by‑step guide.",
+      "category": "dicas",
+      "publishedAt": "2026-08-10"
+    }
+  ],
+  "videos": [
+    {
+      "slug": "loop-seguro-venceu-ta-perdendo",
+      "videoId": "vyZIMA8VVtA",
+      "uploadedAt": "2026-08-10T12:26:08.561Z",
+      "title": "SEGURO: como não deixar vencer e perder proteção",
+      "formato": "loop16",
+      "timeLisbon": "13:26"
+    },
+    {
+      "slug": "kw-caixa-no-vermelho",
+      "videoId": "9Yp_zkERQB0",
+      "uploadedAt": "2026-08-10T15:48:32.683Z",
+      "title": "VERMELHO: 3 erros que te custam r$ 500",
+      "formato": "short50",
+      "timeLisbon": "16:48"
+    },
+    {
+      "slug": "loop-conta-de-luz-ta-perdendo",
+      "videoId": "aT6_znWFnCs",
+      "uploadedAt": "2026-08-10T22:18:18.205Z",
+      "title": "LUZ: 3 erros que aumentam conta",
+      "formato": "loop16",
+      "timeLisbon": "23:18"
+    }
+  ],
+  "pins": [
+    {
+      "slug": "como-organizar-suas-despesas-mensais-com-facilidade-e",
+      "title": "Como organizar suas despesas mensais com facilidade e segurança",
+      "pinId": "1105281933578099749",
+      "publishedAt": "2026-08-10T15:50:48.419Z",
+      "postUrl": "https://blog.finmoovi.com/posts/como-organizar-suas-despesas-mensais-com-facilidade-e",
+      "timeLisbon": "16:50"
+    },
+    {
+      "slug": "como-usar-o-cambio-a-seu-favor-e-evitar-perdas-guia-2026",
+      "title": "Como usar o câmbio a seu favor e evitar perdas – guia 2026",
+      "pinId": "1105281933578099757",
+      "publishedAt": "2026-08-10T15:50:51.307Z",
+      "postUrl": "https://blog.finmoovi.com/posts/como-usar-o-cambio-a-seu-favor-e-evitar-perdas-guia-2026",
+      "timeLisbon": "16:50"
+    },
+    {
+      "slug": "como-escolher-o-app-ideal-para-suas-financas-em-2026",
+      "title": "Como escolher o app ideal para suas finanças em 2026",
+      "pinId": "1105281933578099765",
+      "publishedAt": "2026-08-10T15:50:54.204Z",
+      "postUrl": "https://blog.finmoovi.com/posts/como-escolher-o-app-ideal-para-suas-financas-em-2026",
+      "timeLisbon": "16:50"
+    }
+  ],
+  "runsSummary": [
+    {
+      "name": "YouTube — Responder aos comentários (FINMOOVI)",
+      "count": 14,
+      "ok": 14,
+      "fail": 0,
+      "firstTimeLisbon": "00:56"
+    },
+    {
+      "name": "IndexNow (indexação instantânea Bing/Copilot)",
+      "count": 4,
+      "ok": 4,
+      "fail": 0,
+      "firstTimeLisbon": "02:05"
+    },
+    {
+      "name": "YouTube — Detetive de tendências (diário)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "06:17"
+    },
+    {
+      "name": "YouTube — Produzir Shorts de 16s em loop (2 por dia)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "06:53"
+    },
+    {
+      "name": "Sweep de Traduções (lang-guard)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "07:06"
+    },
+    {
+      "name": "Sincronizar i18n (auto-corretor PT/EN/ES)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "07:07"
+    },
+    {
+      "name": "Fact Firewall (anti-alucinacao)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "07:09"
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "count": 2,
+      "ok": 2,
+      "fail": 0,
+      "firstTimeLisbon": "07:54"
+    },
+    {
+      "name": "Gerar ALT descritivo das imagens (IA de visão)",
+      "count": 3,
+      "ok": 3,
+      "fail": 0,
+      "firstTimeLisbon": "08:43"
+    },
+    {
+      "name": "YouTube — Renderizar Short (completo)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "09:10"
+    },
+    {
+      "name": "GSC - Digest de Oportunidades",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "09:19"
+    },
+    {
+      "name": "Community Monitor",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "09:24"
+    },
+    {
+      "name": "Sazonal Multimercado (timezone)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "10:03"
+    },
+    {
+      "name": "Atualizar Estatísticas",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "10:03"
+    },
+    {
+      "name": "GSC - Monitor de Indexacao",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "10:04"
+    },
+    {
+      "name": "Gerar Arte Sazonal (candidatos p/ aprovação)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "10:06"
+    },
+    {
+      "name": "YouTube — Medir retenção dos Shorts",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "10:07"
+    },
+    {
+      "name": "YouTube — Guarda do canal (diário)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "10:44"
+    },
+    {
+      "name": "Fix i18n Content (Daily Batch)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "10:57"
+    },
+    {
+      "name": "Gerar Dicas Financeiras",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "11:07"
+    },
+    {
+      "name": "Cotações Semanal",
+      "count": 1,
+      "ok": 0,
+      "fail": 1,
+      "firstTimeLisbon": "12:12"
+    },
+    {
+      "name": "Detect BR-only Posts (Weekly)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "12:13"
+    },
+    {
+      "name": "Glossário Diário Automático",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "12:38"
+    },
+    {
+      "name": "Relatório Semanal de Analytics",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "12:43"
+    },
+    {
+      "name": "YouTube — Publicar Shorts de 16s (9h e 19h BR)",
+      "count": 2,
+      "ok": 2,
+      "fail": 0,
+      "firstTimeLisbon": "13:25"
+    },
+    {
+      "name": "Post Orçamento Semanal",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "14:20"
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "14:22"
+    },
+    {
+      "name": "Regenerar capas antigas do glossário (estilo 3D)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "14:56"
+    },
+    {
+      "name": "Newsletter Digest Semanal",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "15:18"
+    },
+    {
+      "name": "YouTube — Publicar Short (horário nobre)",
+      "count": 2,
+      "ok": 2,
+      "fail": 0,
+      "firstTimeLisbon": "16:47"
+    },
+    {
+      "name": "Social Distribution (Pinterest + Bookmarks)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "16:50"
+    },
+    {
+      "name": "Multipost — Entregar o Short às 8 redes (a partir das 19h BR)",
+      "count": 2,
+      "ok": 2,
+      "fail": 0,
+      "firstTimeLisbon": "17:10"
+    },
+    {
+      "name": "Multipost — Vigia das redes (diário)",
+      "count": 1,
+      "ok": 0,
+      "fail": 1,
+      "firstTimeLisbon": "21:47"
+    },
+    {
+      "name": "Multipost — Entregar os Shorts de 16s às 7 redes",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "22:13"
+    }
+  ],
+  "emails": [
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "timeLisbon": "07:54"
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "timeLisbon": "09:15"
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "timeLisbon": "14:22"
+    },
+    {
+      "name": "Newsletter Digest Semanal",
+      "timeLisbon": "15:18"
+    }
+  ],
+  "pendencias": [
+    "18/08/2026 — ESTUDO APIFY das transcrições (vídeo longo). Só a partir dessa data: o arquivo .github/data/youtube-capitulos.json precisa de ~2 semanas a acumular para haver 40-50 longos e se escolherem os MELHORES para transcrever. Passos: criar chave em console.apify.com/settings/integrations (permissões limitadas + validade 1 mês) → guardar como APIFY_TOKEN no cofre do GitHub (nunca no chat) → criar/configurar o actor de transcrições → 30-50 transcrições (~$0,25 do crédito grátis de $5/mês) → ler os primeiros 30s de cada. ⚠️ Estudo à mão, NUNCA dentro do robô diário. Detalhe completo: IMPLEMENTACAO20 §33.6",
+    "~18/08/2026 — RE-MEDIR A RETENÇÃO (youtube-retencao.yml, disparo manual). A de 03/08 deu 97 visualizações em 10 vídeos: audiência pequena de mais para haver curva. Agora que os vídeos vão a público na hora, 10-14 dias dão sinal a sério. IMPLEMENTACAO20 §33.2",
+    "Google Cloud billing: criar perfil de pagamentos PORTUGAL (NIF + cartão PT) → destrava vozes TTS premium + trial $300",
+    "Escolher voz definitiva do canal (Antonio edge ↔ Piper faber alternando; premium depende do billing)",
+    "Pinterest: avaliar o 1º pin com descrição rica SEO (sexta 24/07 ~16h)",
+    "Pinterest: renovar refresh token até 16/09 (lembrete automático via issue quando faltar ≤7d)",
+    "Upgrade Pinterest p/ cadência diária? Avaliar analytics ~07/08"
+  ],
+  "agenda": [
+    {
+      "name": "YouTube — Responder aos comentários (FINMOOVI)",
+      "times": [
+        "00:25",
+        "01:25",
+        "02:25",
+        "03:25",
+        "04:25",
+        "05:25",
+        "06:25",
+        "07:25",
+        "08:25",
+        "09:25",
+        "10:25",
+        "11:25",
+        "12:25",
+        "13:25",
+        "14:25",
+        "15:25",
+        "16:25",
+        "17:25",
+        "18:25",
+        "19:25",
+        "20:25",
+        "21:25",
+        "22:25",
+        "23:25"
+      ]
+    },
+    {
+      "name": "IndexNow (indexação instantânea Bing/Copilot)",
+      "times": [
+        "01:00",
+        "07:00",
+        "13:00",
+        "19:00"
+      ]
+    },
+    {
+      "name": "YouTube — Detetive de tendências (diário)",
+      "times": [
+        "05:00"
+      ]
+    },
+    {
+      "name": "YouTube — Produzir Shorts de 16s em loop (2 por dia)",
+      "times": [
+        "05:30"
+      ]
+    },
+    {
+      "name": "Fact Firewall (anti-alucinacao)",
+      "times": [
+        "06:00"
+      ]
+    },
+    {
+      "name": "Sincronizar i18n (auto-corretor PT/EN/ES)",
+      "times": [
+        "06:00"
+      ]
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "times": [
+        "06:40",
+        "07:40"
+      ]
+    },
+    {
+      "name": "Gerar ALT descritivo das imagens (IA de visão)",
+      "times": [
+        "07:00",
+        "10:00",
+        "12:00"
+      ]
+    },
+    {
+      "name": "YouTube — Renderizar Short (completo)",
+      "times": [
+        "07:30"
+      ]
+    },
+    {
+      "name": "Community Monitor",
+      "times": [
+        "08:00"
+      ]
+    },
+    {
+      "name": "Glossário Financeiro",
+      "times": [
+        "08:00"
+      ]
+    },
+    {
+      "name": "GSC - Otimizar CTR (titulo/meta)",
+      "times": [
+        "08:00"
+      ]
+    },
+    {
+      "name": "GSC - Monitor de Indexacao",
+      "times": [
+        "09:00"
+      ]
+    },
+    {
+      "name": "Sazonal Multimercado (timezone)",
+      "times": [
+        "09:00"
+      ]
+    },
+    {
+      "name": "YouTube — Guarda do canal (diário)",
+      "times": [
+        "09:10"
+      ]
+    },
+    {
+      "name": "Multipost — Vigia das redes (diário)",
+      "times": [
+        "09:20"
+      ]
+    },
+    {
+      "name": "Fix i18n Content (Daily Batch)",
+      "times": [
+        "09:30"
+      ]
+    },
+    {
+      "name": "Gerar Dicas Financeiras",
+      "times": [
+        "10:00"
+      ]
+    },
+    {
+      "name": "SEO Monitor Semanal",
+      "times": [
+        "10:00"
+      ]
+    },
+    {
+      "name": "Gerar Post Inteligente (Analytics-driven)",
+      "times": [
+        "11:00"
+      ]
+    },
+    {
+      "name": "Glossário Diário Automático",
+      "times": [
+        "12:00"
+      ]
+    },
+    {
+      "name": "Multipost — Entregar os Shorts de 16s às 7 redes",
+      "times": [
+        "12:00",
+        "15:40"
+      ]
+    },
+    {
+      "name": "YouTube — Publicar Shorts de 16s (9h e 19h BR)",
+      "times": [
+        "12:40",
+        "22:40"
+      ]
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "times": [
+        "13:00"
+      ]
+    },
+    {
+      "name": "Regenerar capas antigas do glossário (estilo 3D)",
+      "times": [
+        "13:30"
+      ]
+    },
+    {
+      "name": "Sindicação Extra (Hashnode + Tumblr + Blogger)",
+      "times": [
+        "14:00"
+      ]
+    },
+    {
+      "name": "Syndicate Content & Send Pingbacks",
+      "times": [
+        "15:00"
+      ]
+    },
+    {
+      "name": "YouTube — Publicar Short (horário nobre)",
+      "times": [
+        "16:00",
+        "21:00"
+      ]
+    },
+    {
+      "name": "Multipost — Entregar o Short às 8 redes (a partir das 19h BR)",
+      "times": [
+        "16:20"
+      ]
+    }
+  ]
+}
