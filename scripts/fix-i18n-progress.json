@@ -211,6 +211,10 @@
     "tentativas": 1,
     "ultimaSeveridade": 0
   },
+  "en-fixed-income.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
   "en-fundos-imobiliarios-for-beginners-complete-guide.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
@@ -387,6 +391,10 @@
     "tentativas": 1,
     "ultimaSeveridade": 0
   },
+  "en-quotes-semana-5-june-2026.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
   "en-real-estate-funds-for-beginners-complete-guide.md": {
     "tentativas": 1,
     "ultimaSeveridade": 1
@@ -415,13 +423,33 @@
     "tentativas": 1,
     "ultimaSeveridade": 0
   },
+  "en-save-on-your-market-bill.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "en-saving-money-on-supermarket-shopping.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
   "en-saving-on-your-energy-bill.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
   },
+  "en-savings.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "en-selic.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
   "en-simple-interest.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
+  },
+  "en-spread-bancario.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
   },
   "en-stocks.md": {
     "tentativas": 1,
@@ -483,9 +511,21 @@
     "tentativas": 1,
     "ultimaSeveridade": null
   },
+  "es-5-consejos-para-prepararse-financieramente-para-el-segundo.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "es-5-consejos-para-reorganizar-tus-finanzas-en-vacaciones.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 1
+  },
   "es-5-pasos-practicos-para-empezar-a-ahorrar-para-la-black-frida.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
+  },
+  "es-5-pasos-practicos-para-empezar-a-ahorrar-para-la-black.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
   },
   "es-7-alternativas-a-la-hoja-de-calculo-de-google-para-finanzas-.md": {
     "tentativas": 1,
@@ -506,6 +546,18 @@
   "es-ahorrando-en-la-cuenta-de-energia.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
+  },
+  "es-ahorrando-en-la-cuenta-del-mercado.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "es-ahorrando-en-las-compras-del-supermercado.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "es-ahorrando-en-las-vacaciones.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
   },
   "es-ahorro.md": {
     "tentativas": 1,
@@ -543,6 +595,10 @@
     "tentativas": 1,
     "ultimaSeveridade": null
   },
+  "es-cashback-inteligente.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
   "es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
@@ -551,9 +607,17 @@
     "tentativas": 1,
     "ultimaSeveridade": null
   },
+  "es-cdi.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
   "es-come-cotas.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
+  },
+  "es-como-ahorrar-en-el-plan-de-celular-e-internet-en-2026.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
   },
   "es-como-ahorrar-en-el-supermercado-en-2026-consejos-reales.md": {
     "tentativas": 1,
@@ -562,6 +626,14 @@
   "es-como-ahorrar-en-las-vacaciones-de-julio-sin-renunciar-a-la-d.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
+  },
+  "es-como-crear-una-reserva-de-emergencia.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "es-como-evitar-compras-impulsivas-y-proteger-tu-bolsillo.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
   },
   "es-como-reducir-gastos-fijos-mensuales-de-forma-eficaz.md": {
     "tentativas": 1,
@@ -578,6 +650,10 @@
   "es-cotizaciones-semana-2-julio-2026.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
+  },
+  "es-cotizaciones-semana-3-julio-2026.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
   },
   "es-credito.md": {
     "tentativas": 1,

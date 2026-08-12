@@ -28,13 +28,13 @@ Fixed income is the name we give to investments that have a predictable return, 
 
 ## How it works
 
-When you buy a fixed‑income security, you are acquiring a contract that pays a fixed interest rate or one linked to an index (like the CDI – the interbank interest rate). There are two main moments: the purchase, which can be made with amounts starting at $30, and the maturity, when the issuer returns the principal plus interest. In the meantime, the security can accrue interest daily, but the amount you will receive at the end is already defined. For example, a CDB (Certificate of Bank Deposit) that pays 110% of the CDI will yield 10% more than the CDI rate over the term.
+When you buy a fixed‑income security, you are acquiring a contract that pays a fixed interest rate or one linked to an index (like the interbank rate). There are two main moments: the purchase, which can be made with amounts starting at $30, and the maturity, when the issuer returns the principal plus interest. In the meantime, the security can accrue interest daily, but the amount you will receive at the end is already defined. For example, a CD (certificate of deposit) that pays 110% of the interbank rate will yield 10% more than the interbank rate over the term.
 
 ## Advantages
 
 - **Predictability:** You know how much you will receive, which makes budgeting and goal‑setting easier.  
-- **Safety:** Most fixed‑income securities issued by banks or the National Treasury have the guarantee of the Fundo Garantidor de Créditos (FGC) up to $250 mil per person and per institution.  
-- **Liquidity:** Some securities allow early redemption without major losses, such as DI [funds](/en/glossario/en-investment-fund) or Treasury [Selic](/en/glossario/en-selic).  
+- **Safety:** Most fixed‑income securities issued by banks or the national treasury have the guarantee of the deposit insurance fund up to $50,000 per person and per institution.  
+- **Liquidity:** Some securities allow early redemption without major losses, such as DI [funds](/en/glossario/en-investment-fund) or government bond linked to the [central bank base rate](/en/glossario/en-selic).  
 - **[Diversification](/en/glossario/en-diversification):** Even those with little money can build a balanced portfolio, reducing reliance on more volatile investments.
 
 ![Advantages](/images/glossario/renda-fixa-inline-3.webp)
@@ -43,29 +43,29 @@ When you buy a fixed‑income security, you are acquiring a contract that pays a
 
 ## Risks
 
-- **Credit risk:** If the issuer (bank or company) goes bankrupt, you may lose part or all of your capital. Therefore, prefer well‑rated institutions or securities guaranteed by the FGC.  
+- **Credit risk:** If the issuer (bank or company) goes bankrupt, you may lose part or all of your capital. Therefore, prefer well‑rated institutions or securities guaranteed by the deposit insurance fund.  
 - **Interest‑rate risk:** When interest rates rise, the price of already‑issued securities falls. If you need to sell before maturity, you may receive less than you paid.  
-- **Inflation:** If the return rate falls below inflation, your purchasing power decreases. Hence, securities linked to the IPCA (consumer price index) are a good option to protect your money from price hikes.
+- **Inflation:** If the return rate falls below inflation, your purchasing power decreases. Hence, securities linked to the consumer price index are a good option to protect your money from price hikes.
 
 ## Practical examples
 
 Imagine you earn $4,500 per month and can save 10% of your salary, i.e., $450. You decide to invest this amount in three fixed‑income options:
 
-- **Treasury Selic:** Purchase a security that yields the Selic rate (currently 13.75% per year). In 12 months, your $450 investment generates roughly $61 of interest, totaling $511.  
-- **CDB at 100% of CDI:** The CDI is at 13.15% per year. The same $450 yields about $59, reaching $509 at year‑end.  
-- **Treasury IPCA+ 2026:** This security pays inflation + 4.5% per year. If inflation is 4% over the period, your total return will be 8.5% per year, generating $38 of interest, totaling $488.  
+- **Government bond linked to the central bank base rate:** Purchase a security that yields the base rate (currently 13.75% per year). In 12 months, your $450 investment generates roughly $61 of interest, totaling $511.  
+- **CD at 100% of the interbank rate:** The interbank rate is at 13.15% per year. The same $450 yields about $59, reaching $509 at year‑end.  
+- **Inflation‑linked government bond:** This security pays inflation + 4.5% per year. If inflation is 4% over the period, your total return will be 8.5% per year, generating $38 of interest, totaling $488.  
 
-If you earn $7,200 and can allocate 15% ($1,080) to fixed income, the effect of “compound interest” becomes even clearer. Investing $1,080 every month in Treasury Selic, after 5 years you will have accumulated more than $70 mil, whereas the same amount in a [savings](/en/glossario/en-savings) account would yield less than half that.
+If you earn $7,200 and can allocate 15% ($1,080) to fixed income, the effect of “compound interest” becomes even clearer. Investing $1,080 every month in a government bond linked to the central bank base rate, after 5 years you will have accumulated more than $14,000, whereas the same amount in a [savings](/en/glossario/en-savings) account would yield less than half that.
 
 ## How to start
 
-1. **Open an account at a brokerage:** Choose one with a simple interface and low fees. I use the **Rico** app, which is very intuitive and has a step‑by‑step tutorial – it feels like a friend showed it to me.  
+1. **Open an account at a brokerage:** Choose one with a simple interface and low fees. I use a **brokerage** app, which is very intuitive and has a step‑by‑step tutorial – it feels like a friend showed it to me.  
 2. **Define your goal:** Are you saving for a down payment on a house, building an emergency fund, or securing retirement? Each goal may have a different horizon, and that determines the type of security you should choose.  
 3. **Set up a contribution plan:** Decide how much you will invest each month. **Practical tip:** Start with an amount that doesn’t strain your budget, such as 5% to 10% of your income, and increase it gradually when you get a raise.  
-4. **Choose the securities:** For short term (up to 2 years), Treasury Selic or daily‑liquidity CDBs are ideal. For medium term (2 to 5 years), consider LCIs (Real Estate Credit Letters) which are exempt from income tax. For long term, IPCA+ Treasuries protect against inflation.  
+4. **Choose the securities:** For short term (up to 2 years), government bonds linked to the central bank base rate or daily‑liquidity CDs are ideal. For medium term (2 to 5 years), consider tax‑exempt bank notes, which are exempt from income tax. For long term, inflation‑linked government bonds protect against inflation.  
 5. **Monitor performance:** Use the brokerage’s app to see daily returns. **Practical tip:** Set aside 15 minutes during the first week of each month to check whether the investments are still aligned with your objectives.  
 6. **Rebalance when needed:** If your situation changes (salary increase, goal shift), adjust the allocation. **Practical tip:** When you receive a raise, direct at least 30% of the difference to fixed income before thinking about extra spending.
 
 ## Start today
 
-Don’t wait for the “right moment” to start investing – the right moment is now. Every real you put into a fixed‑income security is working for you, ensuring a calmer future that’s less dependent on surprises. Open your account, pick your first security, and watch your money grow safely. You’ll be surprised by the difference small monthly contributions can make over the years. Let’s go!
+Don’t wait for the “right moment” to start investing – the right moment is now. Every dollar you put into a fixed‑income security is working for you, ensuring a calmer future that’s less dependent on surprises. Open your account, pick your first security, and watch your money grow safely. You’ll be surprised by the difference small monthly contributions can make over the years. Let’s go!

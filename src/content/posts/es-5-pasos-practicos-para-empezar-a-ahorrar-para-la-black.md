@@ -98,7 +98,7 @@ Guardar dinero en cuenta corriente rinde casi nada (aprox. **0,3 %** al año, 
 - **Bonos del gobierno** – título público con [rendimiento](/es/posts/es-montando-cartera-diversificada-con-r-500) atado a la tasa base del banco central, rescatable en cualquier momento.
 - **Fondos de [renta fija](/es/posts/es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026) a corto plazo** – algunos ofrecen rendimiento superior al 100 % del tasa interbancaria.
 
-**Cómo hacerlo:** Abre la cuenta en una correduría (como **XP Investimentos** o **Rico**) y transfiere hasta **€180** de tu “alcancía” mensual. El retorno puede añadir entre **€27** y **€45** a tu fondo hasta noviembre, aumentando tu poder de compra.
+**Cómo hacerlo:** Abre la cuenta en una correduría y transfiere hasta **€180** de tu “alcancía” mensual. El retorno puede añadir entre **€27** y **€45** a tu fondo hasta noviembre, aumentando tu poder de compra.
 
 > *Consejo extra:* Si usas FinMoovi, puedes conectar tu cuenta de inversiones y seguir el crecimiento de la reserva en tiempo real.
 

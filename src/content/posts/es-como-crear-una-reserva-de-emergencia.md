@@ -18,9 +18,9 @@ seo:
 ---
 
 ## Definiendo la reserva de emergencia
-Una reserva de emergencia es una cantidad de [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) guardada para cubrir [gastos](/es/posts/es-metodo-50-30-20-para-presupuesto) inesperados o pérdida de ingresos. Es esencial tener una reserva para evitar deudas y mantener la estabilidad financiera. Por ejemplo, si usted gana R$ 5.000 por mes y pierde el empleo, una reserva de emergencia puede ayudar a pagar las cuentas mientras busca un nuevo trabajo.
+Una reserva de emergencia es una cantidad de [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) guardada para cubrir [gastos](/es/posts/es-metodo-50-30-20-para-presupuesto) inesperados o pérdida de ingresos. Es esencial tener una reserva para evitar deudas y mantener la estabilidad financiera. Por ejemplo, si usted gana **€900 al mes** y pierde el empleo, una reserva de emergencia puede ayudar a pagar las cuentas mientras busca un nuevo trabajo.
 
-Una buena regla es tener entre 3 a 6 meses de [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo) cubiertos por la reserva. Si sus gastos mensuales son de R$ 3.500, usted necesitaría una reserva de R$ 10.500 a R$ 21.000. Esto puede parecer mucho, pero es importante comenzar a ahorrar lo antes posible.
+Una buena regla es tener entre 3 a 6 meses de [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo) cubiertos por la reserva. Si sus gastos mensuales son de **€630**, usted necesitaría una reserva de **€1.890 a €3.780**. Esto puede parecer mucho, pero es importante comenzar a ahorrar lo antes posible.
 
 ## Cómo calcular la reserva necesaria
 Para calcular la reserva necesaria, es importante saber cuáles son sus gastos mensuales. Haga una lista de todos los gastos, incluyendo:
@@ -34,8 +34,6 @@ Para calcular la reserva necesaria, es importante saber cuáles son sus gastos m
 
 ![Cómo calcular la reserva necesaria](/images/posts/como-criar-uma-reserva-de-emergencia-2.webp)
 
-
-
 ## Estrategias para crear la reserva
 Crear una reserva de emergencia requiere disciplina y paciencia. Aquí están algunas estrategias para ayudar:
 - Defina un [valor](/es/glossario/es-valor-financiero) mensual para depositar en la reserva
@@ -43,23 +41,19 @@ Crear una reserva de emergencia requiere disciplina y paciencia. Aquí están al
 - Evite sacar dinero de la reserva para gastos no esenciales
 - Considere abrir una cuenta de ahorro separada para la reserva de emergencia, para que sea más difícil acceder al dinero para gastos cotidianos
 
-Recuerde que la clave es comenzar pequeño y aumentar la reserva con el tiempo. Incluso R$ 100 por mes pueden hacer una gran diferencia a lo largo de un año.
+Recuerde que la clave es comenzar pequeño y aumentar la reserva con el tiempo. Incluso **€18 al mes** pueden hacer una gran diferencia a lo largo de un año.
 
 ![Estrategias para crear la reserva](/images/posts/como-criar-uma-reserva-de-emergencia-3.webp)
-
-
 
 ## Importancia de la reserva de emergencia
 Tener una reserva de emergencia es crucial para la salud financiera. Sin ella, usted puede encontrarse en una situación difícil si pierde el empleo, tiene una emergencia médica o necesita hacer una reparación costosa en su casa. Además, una reserva de emergencia puede ayudar a reducir el estrés financiero y mejorar la calidad de vida.
 
-Para más información sobre cómo gestionar sus finanzas y crear una reserva de emergencia, usted puede visitar el sitio web del [Banco Central del Brasil](https://www.bcb.gov.br) o del [Tesoro Directo](https://www.tesourodireto.com.br).
+Para más información sobre cómo gestionar sus finanzas y crear una reserva de emergencia, usted puede visitar el sitio web del [el banco central](https://www.bcb.gov.br) o del [bonos del gobierno](https://www.tesourodireto.com.br).
 
 ![Importancia de la reserva de emergencia](/images/posts/como-criar-uma-reserva-de-emergencia-4.webp)
 
-
-
 ## Comience hoy
-No espere hasta que sea demasiado tarde para comenzar a crear su reserva de emergencia. Comience a ahorrar hoy, incluso si es un valor pequeño. Recuerde que cada real cuenta y que la disciplina es la clave para alcanzar sus objetivos financieros.
+No espere hasta que sea demasiado tarde para comenzar a crear su reserva de emergencia. Comience a ahorrar hoy, incluso si es un valor pequeño. Recuerde que cada **euro** cuenta y que la disciplina es la clave para alcanzar sus objetivos financieros.
 
 ---
 **¿Quiere salir de la teoría? Descargue [FinMoovi gratis por 7 días](https://finmoovi.com) y comience a registrar sus gastos hoy. Sin tarjeta, sin compromiso.**
