@@ -30,6 +30,24 @@ export async function onRequestPost(context) {
     const lang = body.lang || 'pt';
     const source = body.source || 'newsletter';
 
+    /**
+     * A PROVA DO CONSENTIMENTO — RGPD art. 7(1), 12/08/2026.
+     *
+     * A lei europeia não pede só que haja consentimento: pede que se consiga
+     * **demonstrar** que ele existiu. Até aqui guardava-se o email e mais nada — e um
+     * email sozinho não prova nada: não diz quando a pessoa se inscreveu, nem o que
+     * lhe foi mostrado no momento em que carregou no botão.
+     *
+     * ⚠️ **NÃO se guarda o endereço IP.** Seria o caminho fácil, mas é dado pessoal
+     * a mais para o que se quer provar. A hora, o idioma, a origem do formulário e o
+     * TEXTO que estava no ecrã chegam — e não criam um dado novo sobre ninguém.
+     */
+    const consentAt = new Date().toISOString();
+    const consentText = {
+      en: 'By subscribing you accept our Privacy Policy.',
+      es: 'Al suscribirte aceptas nuestra Política de Privacidad.',
+    }[lang] || 'Ao se inscrever, você aceita nossa Política de Privacidade.';
+
     if (supabaseUrl && supabaseKey) {
       const checkRes = await fetch(
         `${supabaseUrl}/rest/v1/newsletter_subscribers?email=eq.${encodeURIComponent(email)}&select=id,active`,
@@ -39,34 +57,51 @@ export async function onRequestPost(context) {
 
       if (existing.length > 0) {
         if (!existing[0].active) {
-          await fetch(
-            `${supabaseUrl}/rest/v1/newsletter_subscribers?email=eq.${encodeURIComponent(email)}`,
-            {
-              method: 'PATCH',
-              headers: {
-                'apikey': supabaseKey,
-                'Authorization': `Bearer ${supabaseKey}`,
-                'Content-Type': 'application/json',
-                'Prefer': 'return=minimal'
-              },
-              body: JSON.stringify({ active: true, unsubscribed_at: null, lang, source })
-            }
-          );
+          // Quem tinha cancelado e volta está a dar um consentimento NOVO — a prova
+          // do anterior não serve para este. Mesmo cuidado do INSERT: se a base ainda
+          // não tem as colunas da prova, reativa-se à mesma (ver o comentário abaixo).
+          const alvo = `${supabaseUrl}/rest/v1/newsletter_subscribers?email=eq.${encodeURIComponent(email)}`;
+          const cabecalhos = {
+            'apikey': supabaseKey,
+            'Authorization': `Bearer ${supabaseKey}`,
+            'Content-Type': 'application/json',
+            'Prefer': 'return=minimal'
+          };
+          const reativar = (corpo) => fetch(alvo, { method: 'PATCH', headers: cabecalhos, body: JSON.stringify(corpo) });
+          const base = { active: true, unsubscribed_at: null, lang, source };
+          const res = await reativar({ ...base, consent_at: consentAt, consent_text: consentText });
+          if (!res.ok) await reativar(base);
         }
       } else {
-        await fetch(
+        const cabecalhos = {
+          'apikey': supabaseKey,
+          'Authorization': `Bearer ${supabaseKey}`,
+          'Content-Type': 'application/json',
+          'Prefer': 'return=minimal'
+        };
+        const gravar = (corpo) => fetch(
           `${supabaseUrl}/rest/v1/newsletter_subscribers`,
-          {
-            method: 'POST',
-            headers: {
-              'apikey': supabaseKey,
-              'Authorization': `Bearer ${supabaseKey}`,
-              'Content-Type': 'application/json',
-              'Prefer': 'return=minimal'
-            },
-            body: JSON.stringify({ email, lang, source })
-          }
+          { method: 'POST', headers: cabecalhos, body: JSON.stringify(corpo) }
         );
+
+        /**
+         * ⚠️ **A INSCRIÇÃO NUNCA PODE PARTIR-SE POR CAUSA DA PROVA.**
+         * As colunas `consent_at` e `consent_text` só existem depois de alguém as
+         * criar na base de dados; enquanto não existirem, o PostgREST devolve 400 e
+         * **deitava fora a inscrição inteira** — trocaríamos um defeito legal por um
+         * defeito pior, que é perder o leitor sem ninguém dar por isso.
+         * Por isso: tenta-se COM a prova e, se a base ainda não a conhece, grava-se
+         * SEM ela. Quando as colunas existirem, isto passa a gravar sozinho.
+         *
+         * SQL para as criar (correr uma vez no Supabase):
+         *   alter table newsletter_subscribers
+         *     add column if not exists consent_at   timestamptz,
+         *     add column if not exists consent_text text;
+         */
+        const res = await gravar({ email, lang, source, consent_at: consentAt, consent_text: consentText });
+        if (!res.ok) {
+          await gravar({ email, lang, source });
+        }
       }
     }
 

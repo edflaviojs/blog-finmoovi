@@ -2,36 +2,155 @@
 import { config } from '../../../site.config';
 import { canonicalPath } from '@/utils/url';
 
-// Aviso de cookies estilo mini-popup (Terra-like): pequeno, centralizado na
-// base, some ao aceitar e não volta (localStorage). Renderizado pelo Footer,
-// logo presente em todas as páginas sem tocar em cada uma.
+/**
+ * O AVISO DE PRIVACIDADE — reescrito em 12/08/2026 (RGPD/GDPR + LGPD).
+ *
+ * ═══ O QUE ESTAVA ERRADO ANTES ═══
+ * O aviso antigo dizia *"usa cookies para melhorar sua experiência"* e tinha um único
+ * botão, "Continuar". Três defeitos, e o primeiro é o mais embaraçoso:
+ *
+ *   1. **Era mentira contra nós próprios.** Este blog NÃO usa cookies de rastreamento
+ *      nem publicidade — a nossa própria Política de Cookies diz isso, e está certa.
+ *      O aviso assumia uma culpa que o site não tem.
+ *   2. **Não havia como recusar.** Um aviso só com "Continuar" é o padrão que as
+ *      autoridades europeias tratam como consentimento forçado.
+ *   3. **O botão não ligava nem desligava nada.** Só escondia o próprio aviso.
+ *
+ * ═══ O QUE ESTE FAZ ═══
+ * · Diz a verdade: sem cookies próprios, sem publicidade, sem venda de dados.
+ * · Dá **duas saídas com o mesmo peso visual** — aceitar e recusar. Se um botão for
+ *   mais bonito do que o outro, a escolha deixa de ser livre, e é isso que se pune.
+ * · E a escolha **faz alguma coisa**, que é o ponto: a MEDIÇÃO DE AUDIÊNCIA (Cloudflare,
+ *   sem cookies e sem identificar ninguém) corre por omissão, mas **desliga-se de
+ *   verdade** em quem recusa — e em todas as páginas seguintes, não só naquela.
+ *
+ * ⚠️ **O QUE NÃO ESTÁ AQUI, E PORQUÊ.** Procurou-se o suspeito do costume — um
+ * terceiro a ser chamado antes de qualquer escolha — e **não existe**: medido no HTML
+ * construído, uma página deste blog não pede UM ÚNICO script a domínio externo. Os
+ * comentários são próprios (não é o Giscus, que está desligado desde que o dono viu
+ * que exigir conta do GitHub afastava o leitor), as fontes são servidas daqui, e a
+ * verificação anti-robô só é carregada no momento em que alguém envia um comentário.
+ *
+ * ⚠️ **A escolha pode ser mudada depois** — é exigência de quem dá consentimento
+ * poder retirá-lo. O rodapé tem "Privacidade e cookies", que reabre este aviso.
+ *
+ * ⚠️ **A VERSÃO (`VERSAO_DO_AVISO`) É O QUE FAZ O AVISO VOLTAR.** Se um dia entrar
+ * um serviço novo, sobe-se o número e toda a gente é perguntada outra vez — uma
+ * escolha feita sobre um texto antigo não vale para um tratamento novo.
+ */
+const VERSAO_DO_AVISO = 1;
+
 const path = Astro.url.pathname;
 const locale = path.startsWith('/en/') || path === '/en' ? 'en'
   : path.startsWith('/es/') || path === '/es' ? 'es' : 'pt';
 
 const T = {
-  pt: { pre: 'usa cookies para melhorar sua experiência, conforme a', link: 'Política de Privacidade', btn: 'Continuar', policy: '/privacidade' },
-  en: { pre: 'uses cookies to improve your experience, as per our', link: 'Privacy Policy', btn: 'Continue', policy: '/privacidade' },
-  es: { pre: 'usa cookies para mejorar tu experiencia, según la', link: 'Política de Privacidad', btn: 'Continuar', policy: '/privacidade' },
+  pt: {
+    titulo: 'Sua privacidade',
+    texto: 'não usa cookies de rastreamento, não mostra publicidade e não vende seus dados. Medimos a audiência de forma anônima e agregada — e você pode recusar até isso.',
+    aceitar: 'Aceitar',
+    recusar: 'Recusar',
+    saibaMais: 'Como tratamos seus dados',
+    politica: '/privacidade',
+  },
+  en: {
+    titulo: 'Your privacy',
+    texto: 'uses no tracking cookies, shows no ads and does not sell your data. We measure audience anonymously and in aggregate — and you can decline even that.',
+    aceitar: 'Accept',
+    recusar: 'Decline',
+    saibaMais: 'How we handle your data',
+    politica: '/privacidade',
+  },
+  es: {
+    titulo: 'Tu privacidad',
+    texto: 'no usa cookies de rastreo, no muestra publicidad y no vende tus datos. Medimos la audiencia de forma anónima y agregada — y puedes rechazar incluso eso.',
+    aceitar: 'Aceptar',
+    recusar: 'Rechazar',
+    saibaMais: 'Cómo tratamos tus datos',
+    politica: '/privacidade',
+  },
 }[locale];
 ---
 
-<div class="cookie-notice" id="cookie-notice" role="dialog" aria-label="Aviso de cookies" hidden>
-  <p><b>{config.siteName}</b> {T.pre} <a href={canonicalPath(T.policy)}>{T.link}</a>.</p>
-  <button id="cookie-accept">{T.btn}</button>
+<div class="cookie-notice" id="cookie-notice" role="dialog" aria-modal="false" aria-labelledby="cookie-notice-title" hidden>
+  <p class="cookie-notice-title" id="cookie-notice-title">{T.titulo}</p>
+  <p class="cookie-notice-text"><b>{config.siteName}</b> {T.texto}</p>
+  <div class="cookie-notice-actions">
+    <button id="cookie-accept" type="button">{T.aceitar}</button>
+    <button id="cookie-reject" type="button">{T.recusar}</button>
+  </div>
+  <a class="cookie-notice-link" href={canonicalPath(T.politica)}>{T.saibaMais}</a>
 </div>
 
-<script>
-  const KEY = 'fm-cookie-ok';
-  const el = document.getElementById('cookie-notice') as HTMLElement;
-  const btn = document.getElementById('cookie-accept') as HTMLButtonElement;
-  try {
-    if (!localStorage.getItem(KEY)) el.hidden = false;
-  } catch (e) { /* sem localStorage → não exibe */ }
-  btn.addEventListener('click', () => {
-    try { localStorage.setItem(KEY, '1'); } catch (e) {}
-    el.remove();
-  });
+<script is:inline define:vars={{ VERSAO_DO_AVISO }}>
+  (function () {
+    var KEY = 'fm-consent';
+
+    /**
+     * A escolha guardada. Fica só no aparelho de quem escolheu — não vai para
+     * servidor nenhum, porque para provar um consentimento de cookies não é preciso
+     * saber QUEM consentiu: guardar o nome de quem recusou seria criar exatamente o
+     * dado pessoal que este aviso existe para evitar.
+     */
+    function ler() {
+      try {
+        var bruto = localStorage.getItem(KEY);
+        if (!bruto) return null;
+        var d = JSON.parse(bruto);
+        // Escolha feita sobre um texto antigo não vale para um tratamento novo.
+        if (!d || d.versao !== VERSAO_DO_AVISO) return null;
+        return d;
+      } catch (e) { return null; }
+    }
+
+    function guardar(estado) {
+      try {
+        localStorage.setItem(KEY, JSON.stringify({
+          estado: estado,
+          versao: VERSAO_DO_AVISO,
+          em: new Date().toISOString(),
+        }));
+      } catch (e) { /* navegador sem armazenamento — a escolha vale só nesta visita */ }
+      window.fmConsent = estado;
+      document.dispatchEvent(new CustomEvent('fm-consent', { detail: { estado: estado } }));
+    }
+
+    var guardado = ler();
+    window.fmConsent = guardado ? guardado.estado : 'pendente';
+
+    var el = document.getElementById('cookie-notice');
+    if (!el) return;
+
+    function mostrar() { el.hidden = false; }
+    function esconder() { el.hidden = true; }
+
+    if (!guardado) mostrar();
+
+    document.getElementById('cookie-accept').addEventListener('click', function () {
+      guardar('aceito');
+      esconder();
+    });
+    document.getElementById('cookie-reject').addEventListener('click', function () {
+      guardar('recusado');
+      esconder();
+      /**
+       * ⚠️ RECUSAR TEM DE FAZER ALGUMA COISA, SENÃO O BOTÃO É DECORAÇÃO.
+       * A medição de audiência é do Cloudflare, sem cookies e sem identificar
+       * ninguém — mas quem recusa fica mesmo de fora: o beacon é retirado da
+       * página e não volta a ser carregado nas seguintes.
+       */
+      var beacon = document.querySelector('script[src*="cloudflareinsights"]');
+      if (beacon && beacon.parentNode) beacon.parentNode.removeChild(beacon);
+    });
+
+    // O rodapé (e qualquer link com data-abrir-privacidade) reabre a escolha.
+    document.addEventListener('click', function (ev) {
+      var alvo = ev.target.closest ? ev.target.closest('[data-abrir-privacidade]') : null;
+      if (!alvo) return;
+      ev.preventDefault();
+      mostrar();
+    });
+  })();
 </script>
 
 <style>
@@ -41,11 +160,11 @@ const T = {
     bottom: 16px;
     transform: translateX(-50%);
     z-index: var(--z-toast);
-    width: min(92vw, 300px);
+    width: min(92vw, 340px);
     background: var(--bg-secondary);
     border: 1px solid var(--border-default);
     border-radius: var(--radius-lg);
-    padding: var(--space-3) var(--space-4);
+    padding: var(--space-4);
     box-shadow: var(--shadow-lg);
     font-size: 12px;
     line-height: 1.55;
@@ -53,24 +172,57 @@ const T = {
     text-align: center;
   }
 
-  .cookie-notice p { margin: 0; }
-  .cookie-notice b { color: var(--text-primary); }
-
-  .cookie-notice a {
-    color: var(--accent-primary);
-    font-weight: 600;
+  .cookie-notice-title {
+    margin: 0 0 var(--space-1);
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-primary);
   }
 
-  .cookie-notice button {
-    display: block;
-    margin: var(--space-2) auto 0;
-    background: var(--gradient-cta);
-    border: 0;
-    color: #fff;
+  .cookie-notice-text { margin: 0; }
+  .cookie-notice b { color: var(--text-primary); }
+
+  /*
+    ⚠️ OS DOIS BOTÕES TÊM O MESMO PESO — de propósito, e é o coração deste aviso.
+    Mesmo tamanho, mesma fonte, mesma altura, lado a lado. O "Aceitar" leva a cor
+    da marca e o "Recusar" leva o contorno, que é a diferença mínima para se saber
+    qual é qual; nada que torne um deles mais difícil de encontrar ou de carregar.
+  */
+  .cookie-notice-actions {
+    display: flex;
+    gap: var(--space-2);
+    margin: var(--space-3) 0 var(--space-2);
+  }
+
+  .cookie-notice-actions button {
+    flex: 1 1 0;
+    font-family: inherit;
     font-weight: 700;
     font-size: 12.5px;
-    padding: 7px 26px;
+    padding: 8px 12px;
     border-radius: var(--radius-full);
     cursor: pointer;
+    line-height: 1.2;
+  }
+
+  #cookie-accept {
+    background: var(--gradient-cta);
+    border: 1px solid transparent;
+    color: #fff;
+  }
+
+  #cookie-reject {
+    background: transparent;
+    border: 1px solid var(--border-default);
+    color: var(--text-primary);
+  }
+
+  #cookie-reject:hover { border-color: var(--text-secondary); }
+
+  .cookie-notice-link {
+    display: inline-block;
+    color: var(--accent-primary);
+    font-weight: 600;
+    font-size: 11.5px;
   }
 </style>

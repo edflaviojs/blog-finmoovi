@@ -6,7 +6,7 @@ import { config } from '../../site.config';
 
 const brand = config.brand.name;
 const contactEmail = 'finmoovi@gmail.com';
-const updated = '13 de julho de 2026';
+const updated = '12 de agosto de 2026';
 ---
 
 <BaseLayout
@@ -38,7 +38,7 @@ const updated = '13 de julho de 2026';
         <p><strong>Dados que você nos fornece:</strong></p>
         <ul>
           <li><strong>E-mail</strong> — quando você assina a newsletter (opcionalmente com o idioma e a origem da inscrição).</li>
-          <li><strong>Comentários</strong> — se você comenta, os comentários são processados pelo Giscus e ficam vinculados à sua conta do <strong>GitHub</strong>, conforme a política de privacidade do GitHub.</li>
+          <li><strong>Comentários</strong> — se você comenta, guardamos <strong>o nome que você escolheu e o texto do comentário</strong>. Não é preciso criar conta nem informar e-mail. Para conter abuso, guardamos também um <strong>código embaralhado</strong> derivado do seu endereço IP e do dia (uma impressão digital que não permite recuperar o IP nem identificar você) — <strong>o endereço IP em si nunca é gravado</strong>. Todo comentário nasce pendente e só aparece depois de moderação.</li>
         </ul>
         <p><strong>Dados coletados automaticamente:</strong></p>
         <ul>
@@ -66,9 +66,9 @@ const updated = '13 de julho de 2026';
           (operadores) necessários para o funcionamento do site, e apenas na medida necessária:
         </p>
         <ul>
-          <li><strong>Cloudflare</strong> — hospedagem/CDN e análise de audiência (sem cookies).</li>
+          <li><strong>Cloudflare</strong> — hospedagem/CDN, análise de audiência (sem cookies) e a verificação anti-robô do formulário de comentários.</li>
           <li><strong>Resend</strong> — envio dos e-mails da newsletter.</li>
-          <li><strong>GitHub (Giscus)</strong> — hospedagem e exibição dos comentários.</li>
+          <li><strong>Supabase</strong> — banco de dados onde ficam os comentários e os e-mails da newsletter.</li>
         </ul>
         <p>
           Podemos divulgar informações se exigido por lei ou para proteger direitos e a segurança do serviço.
@@ -84,15 +84,34 @@ const updated = '13 de julho de 2026';
           (tema e idioma) — você pode limpá-lo a qualquer momento nas configurações do navegador.
         </p>
         <p>
-          Se você interagir com <strong>comentários (Giscus/GitHub)</strong> ou com conteúdos incorporados de
-          terceiros (por exemplo, botões ou embeds de redes sociais), esses serviços podem definir seus próprios
-          cookies, conforme as respectivas políticas.
+          Se você interagir com conteúdos incorporados de terceiros (por exemplo, botões ou embeds de redes
+          sociais), esses serviços podem definir seus próprios cookies, conforme as respectivas políticas. Ao
+          enviar um comentário, a <strong>verificação anti-robô da Cloudflare</strong> pode ser carregada nesse
+          momento — apenas nesse momento, e apenas para confirmar que você não é um robô.
+        </p>
+
+        <h3>A sua escolha, e o que ela faz</h3>
+        <p>
+          Na primeira visita mostramos um aviso com <strong>duas opções de igual peso: "Aceitar" e "Recusar"</strong>.
+          A escolha fica guardada apenas no seu navegador e produz efeito real:
+        </p>
+        <ul>
+          <li><strong>Se você aceita:</strong> os comentários (GitHub) passam a carregar automaticamente nos artigos.</li>
+          <li><strong>Se você recusa:</strong> a medição de audiência é desligada em todas as páginas, e os
+          comentários nunca se conectam ao GitHub sem que você clique.</li>
+          <li><strong>Se você não escolhe:</strong> os comentários continuam bloqueados; apenas a medição anônima
+          e agregada permanece ativa (ela não usa cookies e não identifica você).</li>
+        </ul>
+        <p>
+          <strong>Você pode mudar de ideia quando quiser:</strong> use o link
+          <strong>"Privacidade e cookies"</strong> no rodapé de qualquer página para reabrir o aviso e alterar a
+          sua escolha.
         </p>
 
         <h2>6. Retenção de dados</h2>
         <ul>
-          <li><strong>E-mail da newsletter:</strong> mantido enquanto você estiver inscrito. Ao cancelar (link em cada e-mail), removemos você da lista.</li>
-          <li><strong>Comentários:</strong> permanecem visíveis enquanto você os mantiver publicados no GitHub; você pode editá-los ou excluí-los na sua conta.</li>
+          <li><strong>E-mail da newsletter:</strong> mantido enquanto você estiver inscrito. Ao cancelar (link em cada e-mail), removemos você da lista. Junto com o e-mail guardamos a <strong>data e hora da inscrição e o texto de consentimento exibido</strong> — é o registro que comprova que a inscrição foi voluntária. <strong>Não guardamos o seu endereço IP.</strong></li>
+          <li><strong>Comentários:</strong> permanecem publicados enquanto o artigo existir. Para apagar um comentário seu, escreva para o nosso e-mail indicando o artigo e o nome usado.</li>
           <li><strong>Métricas agregadas:</strong> retidas de forma agregada/anônima pelo período do provedor de analytics.</li>
           <li><strong>Preferências locais:</strong> ficam no seu dispositivo até você limpá-las.</li>
         </ul>

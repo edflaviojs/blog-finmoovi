@@ -124,6 +124,14 @@ const socials = [
           {footerLinks.legal.map(link => (
             <li><a href={link.href} data-i18n={link.i18n}>{link.label}</a></li>
           ))}
+          {/*
+            ⚠️ REABRIR A ESCOLHA É EXIGÊNCIA, NÃO CORTESIA (12/08/2026).
+            Quem dá consentimento tem de o poder retirar com a mesma facilidade com que
+            o deu. Sem esta linha, quem carregasse "Aceitar" ficava preso à decisão para
+            sempre — e o aviso passava a ser uma porta de sentido único.
+            O clique é apanhado pelo CookieNotice, que volta a mostrar o aviso.
+          */}
+          <li><a href={canonicalPath('/cookies')} data-abrir-privacidade data-i18n="footer.link.preferencias">Privacidade e cookies</a></li>
         </ul>
       </div>
     </div>

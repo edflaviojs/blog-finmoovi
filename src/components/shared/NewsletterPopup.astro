@@ -26,7 +26,11 @@
       <button type="submit" class="popup-btn" id="popup-btn">Quero o Guia!</button>
     </form>
     <p class="popup-message" id="popup-message"></p>
-    <p class="popup-privacy" id="popup-privacy">Sem spam. Cancele quando quiser.</p>
+    <!--
+      ⚠️ O aviso de privacidade tem de estar ONDE o email é pedido (RGPD art. 13).
+      "Sem spam" é promessa comercial, não é informação sobre tratamento de dados.
+    -->
+    <p class="popup-privacy" id="popup-privacy">Sem spam. Cancele quando quiser. Ao se inscrever, você aceita nossa <a href="/privacidade/">Política de Privacidade</a>.</p>
   </div>
 </div>
 
@@ -46,26 +50,28 @@
         title: 'Guia Grátis: 30 Dias para Organizar suas Finanças',
         desc: 'Receba o guia passo a passo + dicas semanais de finanças pessoais. Um email por semana, sem spam.',
         btn: 'Quero o Guia!',
-        privacy: 'Sem spam. Cancele quando quiser.'
+        privacy: 'Sem spam. Cancele quando quiser. Ao se inscrever, você aceita nossa <a href="/privacidade/">Política de Privacidade</a>.'
       },
       en: {
         title: 'Free Guide: 30 Days to Organize Your Finances',
         desc: 'Get the step-by-step guide + weekly personal finance tips. One email per week, no spam.',
         btn: 'Get the Guide!',
-        privacy: 'No spam. Unsubscribe anytime.'
+        privacy: 'No spam. Unsubscribe anytime. By subscribing you accept our <a href="/privacidade/">Privacy Policy</a>.'
       },
       es: {
         title: 'Guía Gratis: 30 Días para Organizar tus Finanzas',
         desc: 'Recibe la guía paso a paso + consejos semanales de finanzas personales. Un email por semana, sin spam.',
         btn: '¡Quiero la Guía!',
-        privacy: 'Sin spam. Cancela cuando quieras.'
+        privacy: 'Sin spam. Cancela cuando quieras. Al suscribirte aceptas nuestra <a href="/privacidade/">Política de Privacidad</a>.'
       }
     };
     var t = texts[lang] || texts.pt;
     document.getElementById('popup-title').textContent = t.title;
     document.getElementById('popup-desc').textContent = t.desc;
     document.getElementById('popup-btn').textContent = t.btn;
-    document.getElementById('popup-privacy').textContent = t.privacy;
+    // innerHTML e não textContent: o aviso leva o link para a Política de Privacidade,
+    // e com textContent a etiqueta <a> apareceria escrita no ecrã em vez de ser um link.
+    document.getElementById('popup-privacy').innerHTML = t.privacy;
     var closeLabels = { pt: 'Fechar', en: 'Close', es: 'Cerrar' };
     document.getElementById('popup-close').setAttribute('aria-label', closeLabels[lang] || 'Fechar');
 
@@ -291,5 +297,11 @@
     font-size: var(--text-xs);
     color: var(--text-tertiary);
     margin-top: var(--space-3);
+  }
+
+  .popup-privacy a {
+    color: var(--accent-primary);
+    text-decoration: underline;
+    text-underline-offset: 2px;
   }
 </style>

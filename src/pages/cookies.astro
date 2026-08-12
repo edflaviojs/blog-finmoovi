@@ -7,7 +7,7 @@ import { canonicalPath } from '@/utils/url';
 
 const brand = config.brand.name;
 const contactEmail = 'finmoovi@gmail.com';
-const updated = '13 de julho de 2026';
+const updated = '12 de agosto de 2026';
 ---
 
 <BaseLayout
@@ -49,10 +49,21 @@ const updated = '13 de julho de 2026';
           cada serviço:
         </p>
         <ul>
-          <li><strong>Comentários (Giscus / GitHub):</strong> ao usar os comentários, o GitHub pode definir cookies de sessão/autenticação.</li>
+          <li><strong>Verificação anti-robô (Cloudflare Turnstile):</strong> só é carregada <strong>quando você envia um comentário</strong>, e apenas para confirmar que você não é um robô. Ela não segue você entre páginas nem cria perfil de navegação.</li>
           <li><strong>Conteúdos e botões de redes sociais</strong> eventualmente incorporados podem usar cookies dos respectivos provedores.</li>
         </ul>
         <p>Não controlamos os cookies de terceiros — consulte as políticas de privacidade de cada serviço.</p>
+
+        <h2>3.1. A sua escolha</h2>
+        <p>
+          Na primeira visita aparece um aviso com <strong>"Aceitar" e "Recusar" com o mesmo destaque</strong>. A
+          escolha fica no seu navegador e tem efeito real: <strong>quem recusa deixa de ser contabilizado</strong>
+          na análise de audiência, em todas as páginas — e não apenas naquela em que recusou.
+        </p>
+        <p>
+          Para mudar a sua escolha a qualquer momento, use o link <strong>"Privacidade e cookies"</strong> no rodapé
+          de qualquer página.
+        </p>
 
         <h2>4. Como gerenciar cookies</h2>
         <p>Você tem controle total. Na maioria dos navegadores é possível:</p>

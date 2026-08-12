@@ -182,9 +182,35 @@ const ogLocale = currentLocale === 'pt' ? 'pt_BR' : currentLocale === 'es' ? 'es
 <body>
   <slot />
   <script is:inline src="/scripts/i18n.js?v=2" defer></script>
-  <!-- Cloudflare Web Analytics -->
+  <!--
+    Cloudflare Web Analytics — medição SEM cookies e sem identificar ninguém.
+
+    ⚠️ **ELE RESPEITA QUEM RECUSOU, E É POR ISSO QUE DEIXOU DE SER UMA `<script src>`
+    DIRETA** (12/08/2026). O aviso de privacidade tem um botão "Recusar"; um botão que
+    não desliga nada é decoração, e decoração é exatamente o que as autoridades
+    europeias tratam como consentimento de fachada. Escrito no HTML, o beacon era
+    pedido pelo navegador antes de qualquer código nosso correr — dava para o apagar
+    da página, mas ele voltava na página seguinte.
+
+    Agora nasce por JavaScript, e só quando a escolha guardada não é "recusado". Quem
+    nunca escolheu continua a ser medido: a medição é anónima e agregada, e essa é a
+    base legítima que a Política de Privacidade declara. Quem recusou fica de fora em
+    todas as páginas, não só naquela onde carregou no botão.
+  -->
   {config.analytics.cloudflareBeaconToken && (
-    <script is:inline defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon={`{"token": "${config.analytics.cloudflareBeaconToken}"}`}></script>
+    <script is:inline define:vars={{ token: config.analytics.cloudflareBeaconToken }}>
+      (function () {
+        try {
+          var d = JSON.parse(localStorage.getItem('fm-consent') || 'null');
+          if (d && d.estado === 'recusado') return;
+        } catch (e) { /* sem armazenamento — vale a medição anónima */ }
+        var s = document.createElement('script');
+        s.defer = true;
+        s.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+        s.setAttribute('data-cf-beacon', JSON.stringify({ token: token }));
+        document.body.appendChild(s);
+      })();
+    </script>
   )}
 </body>
 </html>

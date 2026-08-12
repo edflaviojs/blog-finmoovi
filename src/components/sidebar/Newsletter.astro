@@ -1,5 +1,6 @@
 ---
 import { config } from '../../../site.config';
+import { canonicalPath } from '@/utils/url';
 
 const urlPath = Astro.url?.pathname || '';
 let locale = 'pt';
@@ -13,21 +14,24 @@ const texts = {
     desc: `Receba as melhores dicas de ${config.content.niche.pt} toda semana no seu email.`,
     placeholder: 'seu@email.com',
     btn: 'Inscrever',
-    privacy: 'Sem spam. Cancele quando quiser.'
+    privacy: 'Sem spam. Cancele quando quiser. Ao se inscrever, você aceita nossa',
+    privacyLink: 'Política de Privacidade'
   },
   en: {
     title: 'Weekly Newsletter',
     desc: `Get the best ${config.content.niche.en} tips delivered to your inbox every week.`,
     placeholder: 'your@email.com',
     btn: 'Subscribe',
-    privacy: 'No spam. Unsubscribe anytime.'
+    privacy: 'No spam. Unsubscribe anytime. By subscribing you accept our',
+    privacyLink: 'Privacy Policy'
   },
   es: {
     title: 'Newsletter Semanal',
     desc: `Recibe los mejores consejos de ${config.content.niche.es} cada semana en tu email.`,
     placeholder: 'tu@email.com',
     btn: 'Suscribirse',
-    privacy: 'Sin spam. Cancela cuando quieras.'
+    privacy: 'Sin spam. Cancela cuando quieras. Al suscribirte aceptas nuestra',
+    privacyLink: 'Política de Privacidad'
   }
 };
 const t = texts[locale] || texts.pt;
@@ -51,7 +55,15 @@ const t = texts[locale] || texts.pt;
     </button>
   </form>
   <p class="newsletter-message" id="newsletter-message"></p>
-  <p class="newsletter-privacy">{t.privacy}</p>
+  {/*
+    ⚠️ O AVISO DE PRIVACIDADE VIVE ONDE O DADO É PEDIDO (RGPD art. 13, 12/08/2026).
+    Antes dizia só "Sem spam" — o que é uma promessa comercial, não informação sobre
+    tratamento de dados. Quem escreve o email tem de poder ver, ali mesmo e antes de
+    carregar no botão, o que lhe vai acontecer. Um link enterrado no rodapé não conta.
+  */}
+  <p class="newsletter-privacy">
+    {t.privacy} <a href={canonicalPath('/privacidade')}>{t.privacyLink}</a>.
+  </p>
 </div>
 
 <script>
@@ -191,5 +203,11 @@ const t = texts[locale] || texts.pt;
     text-align: center;
     margin-top: var(--space-2);
     margin-bottom: 0;
+  }
+
+  .newsletter-privacy a {
+    color: var(--accent-primary);
+    text-decoration: underline;
+    text-underline-offset: 2px;
   }
 </style>
