@@ -1,0 +1,66 @@
+name: YouTube — Corrigir a promessa de "grátis" no que já está no ar
+
+# Os vídeos publicados antes de 12/08/2026 dizem na descrição e no primeiro
+# comentário que o app "é grátis" ou "é de graça". Não é: são 7 dias de teste, e
+# foi esse texto que rendeu duas queixas de propaganda enganosa.
+#
+# ⚠️ Por omissão faz ENSAIO: mostra ANTES → DEPOIS de cada vídeo e não escreve
+# nada. Só escreve quando `aplicar` for "sim". A ordem certa é correr em ensaio,
+# ler tudo, e só então aplicar.
+#
+# ⚠️ O selo "APP GRÁTIS" queimado na IMAGEM dos vídeos antigos não se corrige por
+# aqui — isso exigia refazer e voltar a subir o vídeo (e perder as visualizações).
+# Decisão do dono: corrigir o texto, deixar o selo dos antigos.
+
+on:
+  workflow_dispatch:
+    inputs:
+      aplicar:
+        description: 'Escrever mesmo no YouTube? ("sim" aplica; qualquer outra coisa é só ensaio)'
+        required: false
+        default: 'nao'
+      video:
+        description: 'Corrigir só um vídeo (o ID, ex.: _RdK4AS4Iso). Vazio = todos.'
+        required: false
+        default: ''
+
+# Não escreve no repositório: só no YouTube, e só quando mandado.
+permissions:
+  contents: read
+
+concurrency:
+  group: youtube-corrigir-gratis
+  cancel-in-progress: false
+
+jobs:
+  corrigir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Instalar dependências
+        run: npm ci
+
+      # As trocas correm SEM rede e têm provas próprias. Se elas ficarem vermelhas,
+      # nada deve chegar ao YouTube — é mais barato falhar aqui do que reescrever
+      # 26 descrições com um defeito dentro.
+      - name: Provar as trocas antes de tocar no canal
+        run: node src/scripts/youtube/lib/promessa-gratis.js --provar
+
+      - name: Corrigir a promessa
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: |
+          ARGS=""
+          [ "${{ github.event.inputs.aplicar }}" = "sim" ] && ARGS="$ARGS --aplicar"
+          [ -n "${{ github.event.inputs.video }}" ] && ARGS="$ARGS --video=${{ github.event.inputs.video }}"
+          echo "argumentos: ${ARGS:-(ensaio, todos)}"
+          node src/scripts/youtube/corrigir-promessa-gratis.js $ARGS
