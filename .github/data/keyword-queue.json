@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-12T09:53:48.860Z",
-  "sourceCursor": 1,
+  "updatedAt": "2026-08-12T10:06:55.936Z",
+  "sourceCursor": 2,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -535,8 +535,10 @@
       "category": null,
       "priority": 2,
       "source": "gsc-gap",
-      "status": "pending",
-      "addedAt": "2026-08-03T10:31:31.687Z"
+      "status": "used",
+      "addedAt": "2026-08-03T10:31:31.687Z",
+      "usedAt": "2026-08-12T10:06:55.936Z",
+      "usedBy": "gerar-post-investimentos"
     },
     {
       "keyword": "invertir en etfs",

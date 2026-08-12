@@ -41,7 +41,7 @@ This monthly‑goal approach also makes it easier to spread larger expenses—li
 
 ## Take Advantage of Smart Shopping
 
-Hunting for sales and buying in bulk are classic strategies, but they require discipline to avoid over‑buying. Use FinMoovi’s smart [receipt capture](/en/posts/en-how-to-organize-your-money-with-an-easy-to-use-app): once you log a purchase, the app automatically categorizes it and flags items you’ve already bought. This helps you avoid buying the same notebook twice and quickly spot when you’re spending more than planned.
+Hunting for sales and buying in bulk are classic [strategies](/en/posts/en-how-to-diversify-with-variable-income-assets-in-2026), but they require discipline to avoid over‑buying. Use FinMoovi’s smart [receipt capture](/en/posts/en-how-to-organize-your-money-with-an-easy-to-use-app): once you log a purchase, the app automatically categorizes it and flags items you’ve already bought. This helps you avoid buying the same notebook twice and quickly spot when you’re spending more than planned.
 
 If you’re shopping abroad or on international websites, the app’s [multi‑currency](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using) feature converts prices on the fly, so you can compare the cost of the same item in different currencies without reaching for a calculator.
 
