@@ -3,6 +3,7 @@ title: "How to Diversify with Variable‑Income Assets in 2026"
 description: "Learn how variable‑income investments work, their benefits and risks, and see how FinMoovi can organize your portfolio in minutes."
 tickerHeadline: "Variable income made simple"
 image: "/images/posts/como-diversificar-com-ativos-de-renda-variavel-em-2026.webp"
+imageAlt: "Gold ribbon forming upward trend line on dark blue background"
 category: "investimentos"
 locale: "en"
 tags: ["variable income","investments","diversification","cash flow","FinMoovi","risks","strategies","stocks","ETFs"]
