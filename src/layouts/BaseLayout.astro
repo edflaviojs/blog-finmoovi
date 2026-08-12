@@ -2,6 +2,7 @@
 import '@/styles/global.css';
 import { config } from '../../site.config';
 import { absUrl, canonicalPath } from '@/utils/url';
+import LanguageSuggestion from '@/components/shared/LanguageSuggestion.astro';
 
 interface Props {
   title: string;
@@ -181,6 +182,14 @@ const ogLocale = currentLocale === 'pt' ? 'pt_BR' : currentLocale === 'es' ? 'es
 </head>
 <body>
   <slot />
+
+  <!--
+    Sugestão de idioma — preso ao MESMO `hasI18nVersion` que decide os `hreflang`
+    lá em cima. Onde não há tradução declarada, não há nada a sugerir e o
+    componente nem chega a nascer.
+  -->
+  {hasI18nVersion && config.locales.length > 1 && <LanguageSuggestion />}
+
   <script is:inline src="/scripts/i18n.js?v=2" defer></script>
   <!--
     Cloudflare Web Analytics — medição SEM cookies e sem identificar ninguém.

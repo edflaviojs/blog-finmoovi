@@ -1,0 +1,401 @@
+---
+/**
+ * A SUGESTÃO DE IDIOMA — a gaveta que sobe do rodapé (12/08/2026).
+ *
+ * ═══ O QUE FAZ ═══
+ * Um leitor com o telemóvel em inglês cai num artigo em português vindo da busca.
+ * Esta gaveta sobe de baixo e oferece-lhe a MESMA página em inglês. Ele escolhe;
+ * nada acontece sozinho.
+ *
+ * ═══ POR QUE SUGERE EM VEZ DE TROCAR SOZINHO ═══
+ * Trocar o idioma sozinho conforme quem visita é o erro clássico: o robô do Google
+ * rastreia a partir de IPs dos Estados Unidos, veria inglês na URL portuguesa, e as
+ * páginas em português deixariam de ser indexadas como português. São 97 posts e 88
+ * verbetes por idioma em jogo. A sugestão é o que o próprio Google recomenda.
+ *
+ * ═══ POR QUE GAVETA E NÃO POPUP NO MEIO ═══
+ * O Google tem uma regra escrita só para telemóvel: o que TAPA o conteúdo logo depois
+ * do clique na busca perde posição (intrusive interstitial). Cookies e verificação de
+ * idade estão isentos por serem obrigação legal — sugestão de idioma NÃO está. A
+ * gaveta ocupa ~1/5 do ecrã e o artigo continua a ler-se por trás.
+ *
+ * ⚠️ **ESPERA PELO AVISO DE PRIVACIDADE, E ISSO NÃO É DETALHE.** O `CookieNotice` é
+ * fixo no mesmo canto (`bottom: 16px`) e aparece na PRIMEIRA visita — exatamente
+ * quando esta gaveta também quer aparecer. Sem esta espera, todo o leitor novo vindo
+ * do Google via os dois empilhados. Só sobe depois de a escolha de privacidade estar
+ * feita, ouvindo o evento `fm-consent` que o próprio `CookieNotice` emite.
+ *
+ * ⚠️ **NÃO USA `fm-lang` PARA SABER SE A PESSOA JÁ ESCOLHEU.** O `LanguageSwitcher`
+ * escreve `fm-lang` SOZINHO em toda a página `/en` e `/es`, só por a URL ter prefixo —
+ * um brasileiro que espreita um artigo em inglês uma vez ficaria marcado como "inglês"
+ * para sempre. A memória desta gaveta é própria (`fm-lang-suggest`) e só é escrita
+ * quando alguém carrega mesmo num dos dois botões.
+ *
+ * ⚠️ **OS TEXTOS ESTÃO AQUI EM VEZ DE VIREM DO `t()`, DE PROPÓSITO.** O `t()` devolve
+ * sempre o idioma DA PÁGINA, e esta gaveta tem de falar o idioma DE DESTINO: quem não
+ * lê português não pode ser convidado em português. É o mesmo padrão do `CookieNotice`.
+ *
+ * ⚠️ **SÓ NASCE ONDE HÁ TRADUÇÃO.** Quem monta este componente é o `BaseLayout`, preso
+ * ao mesmo `hasI18nVersion` que decide os `hreflang`. E, por cima disso, o script ainda
+ * confirma que o `<link rel="alternate">` do idioma desejado existe mesmo antes de
+ * mostrar seja o que for — nunca despeja ninguém na home.
+ */
+
+/**
+ * Textos da gaveta, escritos no idioma DE DESTINO. A chave é o idioma sugerido.
+ *
+ * ⚠️ **SIGLA E NÃO BANDEIRA, E ISSO SÓ SE VIU NUMA FOTO.** A primeira versão trazia
+ * 🇺🇸/🇧🇷/🇪🇸 e no ecrã apareciam as LETRAS «US», «BR», «ES»: o Windows não tem tipo
+ * de letra para bandeiras, e o Chrome desenha o par de indicadores como texto cru.
+ * Ficava com ar de coisa partida para todo o leitor de computador. A sigla num selo
+ * é o que o próprio cabeçalho do blog já faz (`LanguageSwitcher`, o círculo «PT») e
+ * lê-se igual em qualquer aparelho.
+ */
+const TEXTOS = {
+  pt: {
+    codigo: 'PT',
+    titulo: 'Esta página está disponível em português',
+    ir: 'Ler em português',
+    nao: 'Agora não',
+    fechar: 'Fechar',
+  },
+  en: {
+    codigo: 'EN',
+    titulo: 'This page is available in English',
+    ir: 'Read in English',
+    nao: 'Not now',
+    fechar: 'Close',
+  },
+  es: {
+    codigo: 'ES',
+    titulo: 'Esta página está disponible en español',
+    ir: 'Leer en español',
+    nao: 'Ahora no',
+    fechar: 'Cerrar',
+  },
+};
+
+// Idioma DESTA página, resolvido no build a partir da URL — igual ao CookieNotice.
+// A página é estática e servida por CDN, por isso quem visita é descoberto no
+// navegador (ver o script), nunca aqui.
+const path = Astro.url.pathname;
+const ATUAL = path.startsWith('/en/') || path === '/en' ? 'en'
+  : path.startsWith('/es/') || path === '/es' ? 'es' : 'pt';
+---
+
+<div
+  class="lang-sheet"
+  id="lang-sheet"
+  role="dialog"
+  aria-modal="false"
+  aria-labelledby="lang-sheet-title"
+  hidden
+>
+  <span class="lang-sheet-grab" aria-hidden="true"></span>
+
+  <div class="lang-sheet-row">
+    <span class="lang-sheet-code" id="lang-sheet-code" aria-hidden="true"></span>
+
+    <div class="lang-sheet-body">
+      <p class="lang-sheet-title" id="lang-sheet-title"></p>
+      <div class="lang-sheet-actions">
+        <button class="lang-sheet-go" type="button" id="lang-sheet-go"></button>
+        <button class="lang-sheet-no" type="button" id="lang-sheet-no"></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script is:inline define:vars={{ TEXTOS, ATUAL }}>
+  (function () {
+    var KEY = 'fm-lang-suggest';
+
+    var el = document.getElementById('lang-sheet');
+    if (!el) return;
+
+    /**
+     * O idioma que a pessoa configurou no aparelho. É melhor sinal do que a
+     * localização: um brasileiro de férias em Londres quer português, e um IP
+     * inglês diria o contrário.
+     *
+     * Idioma desconhecido (francês, alemão, japonês…) cai em INGLÊS, não em
+     * português — é o que alcança mais gente.
+     */
+    function idiomaDesejado() {
+      var lista = (navigator.languages && navigator.languages.length)
+        ? navigator.languages
+        : [navigator.language];
+
+      for (var i = 0; i < lista.length; i++) {
+        // 'pt-BR' e 'pt-PT' são ambos português; 'en-GB' e 'en-US' são ambos inglês.
+        var base = String(lista[i] || '').toLowerCase().split('-')[0];
+        if (base === 'pt' || base === 'en' || base === 'es') return base;
+      }
+      return 'en';
+    }
+
+    function jaDecidiu() {
+      try { return !!localStorage.getItem(KEY); } catch (e) { return false; }
+    }
+
+    function guardar(estado, idioma) {
+      try {
+        localStorage.setItem(KEY, JSON.stringify({
+          estado: estado,
+          idioma: idioma,
+          em: new Date().toISOString(),
+        }));
+      } catch (e) { /* navegador sem armazenamento — a escolha vale só nesta visita */ }
+    }
+
+    if (jaDecidiu()) return;
+
+    var alvo = idiomaDesejado();
+    if (alvo === ATUAL) return;
+
+    var T = TEXTOS[alvo];
+    if (!T) return;
+
+    /**
+     * O destino sai do `<link rel="alternate" hreflang="...">` que o BaseLayout já
+     * emite — a mesma fonte que o Google lê. Se não houver, não há nada a oferecer e
+     * a gaveta não aparece.
+     *
+     * Usa só o PATHNAME: mantém quem visita no servidor atual (produção ou pré-visão)
+     * em vez de o atirar para a URL absoluta de produção. Os `<link rel="alternate">`
+     * do RSS não têm `hreflang`, por isso não entram neste seletor.
+     */
+    var link = document.querySelector('link[rel="alternate"][hreflang="' + alvo + '"]');
+    if (!link) return;
+
+    var destino;
+    try {
+      var u = new URL(link.getAttribute('href'), window.location.origin);
+      destino = u.pathname + u.search;
+    } catch (e) { return; }
+
+    // Nada a oferecer se o alternate apontar para a página onde já se está.
+    if (destino === window.location.pathname + window.location.search) return;
+
+    document.getElementById('lang-sheet-code').textContent = T.codigo;
+    document.getElementById('lang-sheet-title').textContent = T.titulo;
+
+    var btnIr = document.getElementById('lang-sheet-go');
+    var btnNao = document.getElementById('lang-sheet-no');
+    btnIr.textContent = T.ir;
+    btnNao.textContent = T.nao;
+    btnNao.setAttribute('aria-label', T.fechar);
+
+    /**
+     * ⚠️ O TERCEIRO CONCORRENTE PELO MESMO ECRÃ: o `NewsletterPopup`. Só apareceu num
+     * ensaio com navegador a sério — nenhuma prova de mesa o via. É um modal a
+     * `z-index: 10000`, muito acima desta gaveta, e dispara a 75% de rolagem, aos 30
+     * segundos, ou quando o rato sai da janela. Sem esta guarda, quem deixasse a
+     * gaveta aberta e continuasse a ler via-a espreitar por baixo do escurecimento
+     * do modal.
+     *
+     * A gaveta sai de cena, mas **não fica marcada como decidida**: quem foi
+     * interrompido não escolheu nada, e volta a ser convidado na página seguinte.
+     */
+    var popupNews = document.getElementById('newsletter-popup');
+    function newsletterAberto() {
+      return !!(popupNews && popupNews.classList.contains('visible'));
+    }
+
+    function mostrar() {
+      if (newsletterAberto()) return;
+      el.hidden = false;
+      // Dois quadros: o primeiro para o navegador assumir o estado escondido já
+      // visível, o segundo para a transição ter de onde partir. Com um só, a gaveta
+      // aparecia de repente em vez de subir.
+      requestAnimationFrame(function () {
+        requestAnimationFrame(function () { el.classList.add('is-open'); });
+      });
+    }
+
+    function esconder() {
+      el.classList.remove('is-open');
+      document.removeEventListener('keydown', aoTeclar);
+      window.setTimeout(function () { el.hidden = true; }, 420);
+    }
+
+    function aoTeclar(ev) {
+      if (ev.key === 'Escape') { guardar('dispensado', alvo); esconder(); }
+    }
+
+    btnIr.addEventListener('click', function () {
+      guardar('aceito', alvo);
+      window.location.href = destino;
+    });
+
+    btnNao.addEventListener('click', function () {
+      guardar('dispensado', alvo);
+      esconder();
+    });
+
+    document.addEventListener('keydown', aoTeclar);
+
+    // Se o modal da newsletter abrir com a gaveta no ecrã, a gaveta cede o lugar.
+    if (popupNews && window.MutationObserver) {
+      new MutationObserver(function () {
+        if (newsletterAberto() && !el.hidden) esconder();
+      }).observe(popupNews, { attributes: true, attributeFilter: ['class'] });
+    }
+
+    /**
+     * ⚠️ UM AVISO DE CADA VEZ. O aviso de privacidade ocupa este mesmo canto e tem
+     * prioridade — é obrigação legal, isto é cortesia. `window.fmConsent` é posto
+     * pelo CookieNotice; enquanto estiver 'pendente', esperamos pelo evento que ele
+     * emite quando alguém escolhe.
+     *
+     * A espera é SÓ para 'pendente', e a diferença importa: numa página sem rodapé
+     * o CookieNotice não existe, `window.fmConsent` fica por definir, e esperar por
+     * um evento que nunca chega seria uma gaveta que nunca aparece — a falhar em
+     * silêncio, que é a pior maneira de falhar.
+     */
+    if (window.fmConsent === 'pendente') {
+      document.addEventListener('fm-consent', function () {
+        // Pequena folga para o aviso anterior sair de cena antes de esta subir.
+        window.setTimeout(mostrar, 260);
+      }, { once: true });
+    } else {
+      mostrar();
+    }
+  })();
+</script>
+
+<style>
+  /*
+    Fixa e por cima do conteúdo: NÃO empurra a página, logo não mexe no CLS nem na
+    nota de velocidade — que é precisamente o defeito da alternativa em faixa no topo.
+    Abaixo de --z-toast (400), onde vive o aviso de privacidade: os dois nunca
+    aparecem juntos, mas se um dia aparecerem, a obrigação legal fica à frente.
+  */
+  .lang-sheet {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: var(--z-modal);
+    padding: var(--space-3) var(--space-4) calc(var(--space-4) + env(safe-area-inset-bottom, 0px));
+    background: var(--glass-bg);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-top: 1px solid var(--border-default);
+    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.28);
+    transform: translateY(115%);
+    transition: transform 420ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .lang-sheet.is-open { transform: translateY(0); }
+
+  /* A pega do topo: é o que faz o leitor reconhecer uma gaveta de telemóvel. */
+  .lang-sheet-grab {
+    display: block;
+    width: 34px;
+    height: 3px;
+    margin: 0 auto var(--space-3);
+    border-radius: var(--radius-full);
+    background: var(--border-default);
+  }
+
+  .lang-sheet-row {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+  }
+
+  /* O mesmo selo redondo do seletor de idioma do cabeçalho — lê-se em qualquer
+     aparelho, ao contrário de uma bandeira em emoji. */
+  .lang-sheet-code {
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: var(--radius-full);
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-default);
+    font-size: 10.5px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    color: var(--text-secondary);
+  }
+
+  .lang-sheet-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    min-width: 0;
+  }
+
+  .lang-sheet-title {
+    margin: 0;
+    font-size: 13.5px;
+    font-weight: 700;
+    line-height: 1.35;
+    color: var(--text-primary);
+    text-wrap: balance;
+  }
+
+  .lang-sheet-actions {
+    display: flex;
+    gap: var(--space-2);
+  }
+
+  .lang-sheet-actions button {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 12.5px;
+    padding: 9px 14px;
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+
+  .lang-sheet-go {
+    flex: 1 1 auto;
+    background: var(--gradient-cta);
+    border: 1px solid transparent;
+    color: #fff;
+  }
+
+  .lang-sheet-no {
+    flex: 0 0 auto;
+    background: transparent;
+    border: 1px solid var(--border-default);
+    color: var(--text-secondary);
+  }
+
+  .lang-sheet-no:hover { border-color: var(--text-secondary); color: var(--text-primary); }
+
+  .lang-sheet-actions button:focus-visible {
+    outline: 2px solid var(--accent-primary);
+    outline-offset: 2px;
+  }
+
+  /* No computador uma barra de ponta a ponta é pesada demais para uma cortesia:
+     encolhe para um cartão no canto, com todos os cantos arredondados. */
+  @media (min-width: 640px) {
+    .lang-sheet {
+      left: auto;
+      right: var(--space-6);
+      bottom: var(--space-6);
+      width: min(92vw, 420px);
+      border: 1px solid var(--border-default);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      transform: translateY(calc(100% + var(--space-6)));
+    }
+
+    .lang-sheet.is-open { transform: translateY(0); }
+    .lang-sheet-grab { display: none; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .lang-sheet { transition-duration: 1ms; }
+  }
+</style>
