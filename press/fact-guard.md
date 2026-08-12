@@ -1,7 +1,7 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-08-11T05:51:45.289Z
-**Posts:** 276 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 39
+**Gerado em:** 2026-08-12T06:11:44.628Z
+**Posts:** 282 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 38
 
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
@@ -62,9 +62,6 @@
 
 **en-etfs-what-they-are-and-how-to-invest-simply-and-profitably.md**
 - _, IMAB11) in 70/30 or 60/40 ratios, according to your profile._
-
-**en-finmoovi-cost-of-living-index-june-2026.md**
-- _In June 2026, the cost of living rose 0,16 % according to the overall IPCA released by IBGE, indicating a modest increase in consumer prices that month._
 
 **en-private-pension-vs-investing-on-your-own-which-is-worth-it.md**
 - _These plans are offered by financial institutions and insurance companies, and can be customized according to the investor's needs and objectives._
