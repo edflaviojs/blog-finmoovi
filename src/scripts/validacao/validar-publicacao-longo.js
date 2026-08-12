@@ -46,7 +46,14 @@ import { proximoLongo, comoArgumentos } from '../youtube/pick-next-longo.js';
 import { conferirTema, caudaDoTitulo, fazerSlug } from '../youtube/temas-longo.js';
 import {
   conferirImagens, escolherLugaresDaFoto, brollDoVideo, escolherBroll, valoresDoBroll, BROLL_PERMITIDO,
+  TETO_DE_ILUSTRACOES,
 } from '../youtube/lib/imagens-longo.js';
+/**
+ * ⚠️ **IMPORTAR O ILUSTRADOR NÃO PEDE NADA A IA NENHUMA.** Ele só corre quando é chamado
+ * pelo nome (o `executadoDireto` no fim do ficheiro) — a mesma guarda do `capa-manus.js`,
+ * e pela mesma razão: um `import` de teste não pode gastar dinheiro.
+ */
+import { montarPedido as montarPedidoDeDesenhos } from '../youtube/ilustrador-longo.js';
 import {
   PAPEIS, pistaDaCena, pedidoDaFoto, pedidoDoCartaz, doBanco, guardarNoBanco, NAO_REPETIR_EM,
   // ⚠️ Trazido com OUTRO NOME de propósito: a prova compara os dois lados para garantir
@@ -824,6 +831,46 @@ console.log('\n5. O ROBÔ DIÁRIO NÃO É TOCADO');
     'e o ilustrador vem DEPOIS das fotografias (senão escolhe desenho para cenas que vão levar foto)',
     fluxo.indexOf('fotos-longo.js') < fluxo.indexOf('ilustrador-longo.js'),
   );
+
+  // ═══ 🔴 O PEDIDO DOS DESENHOS DIZ QUANTOS SE QUEREM — 12/08/2026 ═══════════
+  //
+  // Medido no vídeo de 10/08: o pedido não trazia número nenhum, o leitor escolheu 10
+  // com teto para 14, e o vídeo saiu com 22 de 54 cenas só com letra (41%) contra os
+  // 35% pedidos pelo dono. As vagas estavam livres — o travão era o pedido.
+  //
+  // ⚠️ AS PROVAS OLHAM O TEXTO QUE SAI, e não o ficheiro: uma que procurasse a palavra
+  // "alvo" no código ficaria verde com o número fora do pedido. É a mesma lição do
+  // campo `pista`, que estava escrito e ninguém lia (§68.2).
+  const cenasFalsas = Array.from({ length: 40 }, (_, i) => ({ id: i + 1, narration: `trecho número ${i + 1}` }));
+  const pedidoDosDesenhos = montarPedidoDeDesenhos({ tema: 'teste' }, cenasFalsas);
+  ok(
+    '🔴 o pedido dos desenhos DIZ QUANTOS se querem (sem número, o leitor escolhe a menos)',
+    new RegExp(`\\*\\*Escolha ${TETO_DE_ILUSTRACOES} trechos\\*\\*`).test(pedidoDosDesenhos),
+    'medido em 10/08: sem o número, 10 escolhas para 14 vagas e 41% do vídeo em letra na tela',
+  );
+  ok(
+    'e o número pedido é o TETO das ilustrações, não um número escrito à mão',
+    pedidoDosDesenhos.includes(String(TETO_DE_ILUSTRACOES)),
+    'se algum dia forem dois números diferentes, o pedido promete vagas que a montagem não tem',
+  );
+  ok(
+    '🔴 e o pedido diz que o alvo é o TOTAL de escolhas, não a ordem da lista',
+    /alvo é o número de ESCOLHAS/i.test(pedidoDosDesenhos),
+    'é esta frase que faz um trecho sem figura custar zero em vez de custar um desenho',
+  );
+  ok(
+    '⚠️ e a regra da figura errada CONTINUA lá (o alvo não pode ensinar a forçar)',
+    /pior do que nenhuma/i.test(pedidoDosDesenhos),
+    'uma figura que contradiz a voz é pior do que letra na tela — o alvo não revoga isto',
+  );
+  {
+    // Com menos cenas do que o teto, pedir o teto seria prometer o impossível.
+    const poucas = montarPedidoDeDesenhos({ tema: 'teste' }, cenasFalsas.slice(0, 5));
+    ok(
+      'e com poucas cenas pede-se o que há, não o teto',
+      /\*\*Escolha 5 trechos\*\*/.test(poucas),
+    );
+  }
   ok(
     '🔴 o robô manda fazer a CAPA do YouTube (sem ela o vídeo sobe sem miniatura e ninguém dá por nada)',
     /capa-manus\.js/.test(fluxo),

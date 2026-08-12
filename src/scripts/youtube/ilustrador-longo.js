@@ -26,6 +26,11 @@
  * era conta. O significado das 33 figuras já está escrito há meses em
  * `METAPHOR_MEANINGS` — o leitor lê a narração, lê os significados, e escolhe.
  *
+ * ═══ 🔴 E DEPOIS FALTAVA DIZER-LHE QUANTOS (12/08/2026) ═══
+ * O leitor resolveu o "qual figura" e deixou o "quantas" por dizer: escolheu **10** com
+ * teto para 14, e o vídeo ficou em **41% de letra** contra os 35% pedidos. O pedido não
+ * trazia número nenhum. Ver a nota em `montarPedido`.
+ *
  * ═══ ⚠️ O QUE ESTE PROGRAMA NÃO FAZ ═══
  * · **Não monta nada.** Escreve `.github/data/ilustracoes-do-longo.json` e sai. Quem
  *   monta é o `montar-longo.js`, que continua determinista e de graça — a MESMA forma
@@ -47,6 +52,7 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { generateText } from '../apis/kie-ai.js';
 import { METAPHOR_MEANINGS } from './lib/schema-short.js';
+import { TETO_DE_ILUSTRACOES } from './lib/imagens-longo.js';
 
 const RAIZ = process.cwd();
 const ROTEIRO_DIR = join(RAIZ, 'youtube-render', 'public', 'roteiro');
@@ -85,9 +91,29 @@ export function cenasQuePrecisamDeDesenho(plano) {
   });
 }
 
+/**
+ * ⚠️ **QUANTOS SE PEDEM — e por que o número tem de estar escrito (12/08/2026).**
+ *
+ * O pedido não dizia quantos desenhos se queriam. Medido no vídeo de 10/08: o leitor
+ * escolheu **10**, o teto é o `TETO_DE_ILUSTRACOES` (que vem de `imagens-longo.js` e é a
+ * conta dos 35%), e o vídeo saiu com **22 de 54 cenas só com letra na tela (41%)**.
+ *
+ * 🔴 **E as vagas estavam livres:** as regras de espaçamento barraram **uma** das dez
+ * (10 escolhidas → 9 montadas). O travão era o pedido, não o espaço.
+ *
+ * ⚠️ **O alvo é o número de ESCOLHAS, e não a ordem da lista** — é esta a frase que faz
+ * o trabalho. O leitor ia trecho a trecho e respondia "nenhuma" nos que não encaixavam,
+ * e cada "nenhuma" era um desenho a menos. Dizendo-lhe que o alvo é o TOTAL, saltar um
+ * trecho mau deixa de custar um desenho: ele procura outro trecho.
+ *
+ * ⚠️ **A regra da figura errada NÃO foi enfraquecida.** Uma figura que contradiz a voz
+ * continua a ser pior do que nenhuma — é o nº 3 e continua lá. O que mudou é que ser
+ * cauteloso deixou de ser de graça: cada trecho sem desenho é letra na tela.
+ */
 export function montarPedido(plano, cenas) {
   const catalogo = FIGURAS.map(([f, sentido]) => `  ${f} — ${sentido}`).join('\n');
   const lista = cenas.map((c) => `[${c.id}] ${String(c.narration).replace(/\s+/g, ' ').trim()}`).join('\n\n');
+  const alvo = Math.min(TETO_DE_ILUSTRACOES, cenas.length);
   return `Você escolhe a ILUSTRAÇÃO ANIMADA que acompanha cada trecho de um vídeo de finanças pessoais em português do Brasil.
 
 ════════ AS FIGURAS QUE EXISTEM, E O QUE CADA UMA QUER DIZER ════════
@@ -96,10 +122,17 @@ ${catalogo}
 ════════ OS TRECHOS ════════
 ${lista}
 
+════════ QUANTOS ESCOLHER ════════
+🔴 **Escolha ${alvo} trechos**, dos ${cenas.length} da lista.
+
+Cada trecho que fica sem desenho aparece no vídeo como LETRA NA TELA, e é essa a queixa nº 1 de quem manda fazer este vídeo. Escolher a menos não é ser cuidadoso — é deixar o vídeo mais parado.
+
+⚠️ **O alvo é o número de ESCOLHAS, não a ordem da lista.** Se um trecho não tiver figura que sirva, salte-o e escolha outro. Saltar um trecho não custa um desenho; parar antes de chegar a ${alvo} custa.
+
 ════════ COMO ESCOLHER ════════
 1. Leia o trecho e pergunte: **o que está a acontecer com o dinheiro desta pessoa, aqui?**
 2. Escolha a figura cujo SIGNIFICADO é essa coisa. A figura ilustra a IDEIA do trecho, não uma palavra solta dele.
-3. 🔴 **Se nenhuma encaixar de verdade, responda "nenhuma".** Uma figura errada é pior do que nenhuma: ela contradiz o que a voz está a dizer, e quem vê repara. Não force.
+3. 🔴 **Se nenhuma encaixar de verdade, responda "nenhuma" — e escolha outro trecho no lugar dele.** Uma figura errada é pior do que nenhuma: ela contradiz o que a voz está a dizer, e quem vê repara. Não force a figura; procure o trecho.
 4. ⛔ **Nunca repita a mesma figura** em dois trechos. Há ${FIGURAS.length} e elas chegam.
 5. ⛔ Não escolha pelo objeto citado. Se o trecho fala em "guardar dinheiro", a figura é a do que ACONTECE (paciência? proteção? subir um degrau?), não a primeira que tenha a ver com guardar.
 

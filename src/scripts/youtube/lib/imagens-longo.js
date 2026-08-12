@@ -497,7 +497,13 @@ const ILUSTRACOES = [
  * vídeo), e são 33 no catálogo — portanto catorze cabem sem repetir nenhuma. Era ESTA a
  * razão de o teto poder subir: o que cansa é o mesmo boneco, não haver desenhos.
  */
-const TETO_DE_ILUSTRACOES = 14;
+/**
+ * ⚠️ **EXPORTADO de propósito, e não por arrumação (12/08/2026).** Quem PEDE os desenhos
+ * ao leitor (`ilustrador-longo.js`) precisa de dizer quantos quer, e esse número é este.
+ * Escrevê-lo lá outra vez seria a mesma constante em dois ficheiros — a família de defeito
+ * nº1 desta casa (o respiro em §67.7 vivia em QUATRO). Muda-se aqui, muda em todo o lado.
+ */
+export const TETO_DE_ILUSTRACOES = 14;
 const INTERVALO_DA_ILUSTRACAO = 2;
 
 /**
