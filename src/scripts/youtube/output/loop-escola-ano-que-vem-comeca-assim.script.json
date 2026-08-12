@@ -1,0 +1,117 @@
+{
+  "slug": "loop-escola-ano-que-vem-comeca-assim",
+  "formato": "loop16",
+  "term": "A escola do ano que vem",
+  "category": "vida",
+  "keyword": "ESCOLA",
+  "situacao": "escola-ano-que-vem",
+  "gancho": "comeca-assim",
+  "ganchoFamilia": "começa assim",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "relogio",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Quer aprender a se preparar pra matrícula? Começa assim, olha.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "aprender",
+          "visual": {
+            "type": "statement",
+            "text": "A matrícula está chegando"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "preparar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "relogio"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu vi a lista da escola chegando e meu coração apertou.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "lista",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "relogio"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "escola",
+          "visual": {
+            "type": "statement",
+            "text": "Meu coração apertou"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Comigo aconteceu. Eu deixei pra depois, e a matrícula virou aperto.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "Comigo",
+          "visual": {
+            "type": "statement",
+            "text": "A matrícula virou aperto"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "relogio"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Hoje eu olho meu calendário antes, porque aprender começa assim.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "calendário",
+          "visual": {
+            "type": "statement",
+            "text": "Eu olho antes"
+          }
+        },
+        {
+          "anchor": "aprender",
+          "visual": {
+            "type": "statement",
+            "text": "A matrícula está chegando"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
