@@ -56,7 +56,7 @@ Despesas variáveis, como transporte e alimentação fora, podem ser difíceis d
 
 ## Construindo uma Poupança
 Construir uma poupança é essencial para lidar com imprevistos e alcançar objetivos financeiros de longo prazo. Aqui estão algumas etapas para começar:
-1. Defina metas: Estabeleça metas específicas, como criar um fundo de emergência ou economizar para uma compra importante.
+1. Defina metas: Estabeleça metas específicas, como criar um [fundo de emergência](/ferramentas/calculadora-reserva) ou economizar para uma compra importante.
 2. Automatize: Configure transferências automáticas de sua conta corrente para sua conta de poupança.
 3. Aumente gradualmente: Aumente a quantia poupada ao longo do tempo, à medida que sua situação financeira melhorar.
 
@@ -71,4 +71,4 @@ Gerenciar suas finanças não precisa ser uma tarefa sobre-humana. Comece dedica
 
 
 
-**Quer automatizar esse controle? [Teste o FinMoovi grátis por 7 dias](https://finmoovi.com) — ele categoriza [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo) automaticamente e gera relatórios sem esforço.**
+**Quer automatizar esse controle? [Teste o FinMoovi grátis por 7 dias](https://finmoovi.com) — ele categoriza [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo) automaticamente e gera [relatórios](/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) sem esforço.**

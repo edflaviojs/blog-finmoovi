@@ -34,7 +34,7 @@ To apply the 30-day rule, you need to create a system to record the purchases yo
 ## Advantages of the 30-Day Rule
 The 30-day rule has several advantages. In addition to helping you avoid impulse purchases, it also helps reduce financial stress and increase awareness of [personal finances](/en/posts/en-5-tips-to-reorganize-your-finances-on-vacation). When you wait 30 days before buying something, you have time to think about whether the item is really necessary and if you can afford it.
 
-For example, imagine you earn $800 per month and want to buy a new smartphone that costs $400. If you wait 30 days, you might discover it's not that necessary after all and that you can use the [money](/en/posts/en-save-on-your-market-bill) to pay off a debt or invest in a fund.
+For example, imagine you earn $800 per month and want to buy a new smartphone that costs $400. If you wait 30 days, you might discover it's not that necessary after all and that you can use the [money](/en/posts/en-save-on-your-market-bill) to pay off a [debt](/en/glossario/en-debt) or invest in a fund.
 
 ## Exceptions to the 30-Day Rule
 Although the 30-day rule is a useful technique, there are some exceptions. If you need something essential, like food or medicine, you don't need to wait 30 days. Additionally, if you're [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) a major purchase, like a car or a house, it's better to do more in-depth research and not just rely on the 30-day rule.
@@ -54,4 +54,4 @@ Don't wait any longer to start using the 30-day rule. Today is the day to start 
 
 
 ---
-**Tired of spreadsheets? [Test FinMoovi for free](https://finmoovi.com) and control your expenses with AI, multi-currency, and reports that make sense.**
+**Tired of spreadsheets? [Test FinMoovi for free](https://finmoovi.com) and control your expenses with AI, multi-currency, and [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end) that make sense.**

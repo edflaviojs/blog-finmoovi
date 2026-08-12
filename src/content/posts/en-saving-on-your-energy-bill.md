@@ -23,7 +23,7 @@ To start [saving](/en/posts/en-how-to-build-a-budget-that-actually-works-in-2026
 One of the main causes of excessive energy spending is the unnecessary use of electronic devices. Often, we leave the TV, computer, or refrigerator on even when we're not using them. This not only increases your energy bill but also reduces the lifespan of your appliances. **Practical tip:** Turn off all electronic devices when not in use, including phone and laptop chargers, as they continue to consume energy even when the device is fully charged.
 
 ## Choosing Energy-Efficient Appliances
-Another way to save on your energy bill is to invest in energy-efficient appliances. When buying a new appliance, such as a refrigerator or air conditioner, look for options with an energy efficiency seal. These appliances may be a bit more expensive, but in the long run, they can help significantly reduce your energy bill.
+Another way to save on your energy bill is to [invest](/en/posts/en-invest-or-pay-off-debt-which-is-better-in-2026) in energy-efficient appliances. When buying a new appliance, such as a refrigerator or air conditioner, look for options with an energy efficiency seal. These appliances may be a bit more expensive, but in the long run, they can help significantly reduce your energy bill.
 
 For example, if you're paying $40 per month for energy and can reduce that to $30 per month with the help of efficient appliances, you'll be saving $120 per year. This could be enough to pay for a small trip or a course you've always wanted to take.
 
@@ -44,7 +44,7 @@ To really understand where you can save energy, it's essential to monitor your e
 ![Planejamento e Monitoramento](/images/posts/economize-na-conta-de-energia-3.svg)
 
 ## Start Today
-Don't wait any longer to start saving on your energy bill. With small changes in your daily routine and investing in efficient appliances, you can make a big difference in your monthly [budget](/en/posts/en-5-tips-to-reorganize-your-finances-on-vacation). Remember, every dollar saved is a step towards financial security and peace of mind.
+Don't wait any longer to start saving on your energy bill. With small changes in your daily routine and investing in efficient appliances, you can make a big difference in your monthly [budget](/en/posts/en-5-tips-to-reorganize-your-finances-on-vacation). Remember, every dollar saved is a step towards [financial security](/en/posts/en-7-best-personal-finance-apps-2026-complete-guide-to-organize) and peace of mind.
 
 ![Comece hoje](/images/posts/economize-na-conta-de-energia-5.svg)
 

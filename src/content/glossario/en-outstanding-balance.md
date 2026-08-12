@@ -29,7 +29,7 @@ An outstanding balance is simply the amount you still owe on any credit instrume
 
 
 ## Why it matters for everyday finances
-- **[Cash flow](/en/glossario/en-cash-flow) impact** – Every month a portion of your income goes straight to servicing the debt, shrinking the money you can spend on essentials or savings.  
+- **[Cash flow](/en/glossario/en-cash-flow) impact** – Every month a portion of your income goes straight to servicing the debt, shrinking the money you can spend on essentials or [savings](/en/glossario/en-savings).  
 - **[Interest](/en/glossario/en-interest) accumulation** – Most debts charge interest, so the longer the balance sits unpaid, the more you pay over time.  
 - **[Credit score](/en/glossario/en-credit-score) risk** – High balances relative to your credit limit can lower your credit score, making future borrowing more expensive.  
 
