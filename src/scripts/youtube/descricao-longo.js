@@ -226,7 +226,7 @@ export function tempoDosCapitulos(plano, timing, opts = {}) {
      */
     if (cena.parte && !partesVistas.has(cena.parte)) {
       partesVistas.add(cena.parte);
-      if (cena.parte === 'demonstracao') brutas.push({ titulo: `Na prática: ${chave} no app grátis`, seg: t, cartao: false });
+      if (cena.parte === 'demonstracao') brutas.push({ titulo: `Na prática: ${chave} no app`, seg: t, cartao: false });
       if (cena.parte === 'fecho') brutas.push({ titulo: `Resumo e próximo passo: ${chave}`, seg: t, cartao: false });
     }
     const dur = medido(cena.id) || cena.durationSec;
@@ -318,7 +318,7 @@ export function blocosDeReserva(plano, palavras) {
   const sobre = [
     `Este vídeo é sobre *${chave}*: o que é, por que isso mexe no seu bolso e o que dá para fazer já a partir de hoje.`,
     `Tudo com contas em reais${nPassos ? `, num plano de ${nPassos} passos` : ''}, e sem palavra difícil.`,
-    'No caminho eu mostro como fazer a conta do seu caso no FinMoovi — o app é grátis e funciona no navegador, sem instalar nada.',
+    'No caminho eu mostro como fazer a conta do seu caso no FinMoovi — o app tem 7 dias grátis e funciona no navegador, sem instalar nada.',
     outras ? `Se você procura ${outras}, comece por aqui.` : '',
   ].filter(Boolean).join(' ');
   const aprender = (plano.capitulos || []).map((c) => c.titulo).filter(Boolean);
@@ -476,7 +476,7 @@ export function montarDescricao(plano, timing, opts = {}) {
 
   linhas.push(
     '',
-    `📲 *Organize suas finanças (grátis, sem instalar):* ${APP_URL}`,
+    `📲 *Organize suas finanças (7 dias grátis, sem instalar):* ${APP_URL}`,
     `🧮 *Faça a conta do seu caso:* ${link}`,
     `📖 *Guia completo sobre ${chave}:* ${glossario}`,
     `📚 *Mais artigos de educação financeira:* ${BLOG_URL}`,

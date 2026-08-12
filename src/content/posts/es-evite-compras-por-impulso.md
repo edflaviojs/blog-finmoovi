@@ -49,4 +49,4 @@ Ahora que sabes cómo evitar compras por impulso, es hora de empezar a actuar. R
 
 
 ---
-**El próximo paso es tuyo. [Prueba [FinMoovi](/es/posts/es-5-alternativas-al-mobills-en-2026) gratis por 7 días](https://finmoovi.com) y descubre hacia dónde está yendo tu dinero de verdad.**
+**El próximo paso es tuyo. [Prueba FinMoovi gratis por 7 días](https://finmoovi.com) y descubre hacia dónde está yendo tu dinero de verdad.**

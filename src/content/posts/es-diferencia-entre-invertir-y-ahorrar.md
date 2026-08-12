@@ -58,4 +58,4 @@ Ahora que usted entiende la diferencia entre invertir y ahorrar, es hora de come
 
 
 ---
-**¿Listo para organizar sus finanzas? Experimente el [FinMoovi gratis](https://finmoovi.com) — en 5 minutos ya tiene una visión clara de hacia dónde va su dinero.**
+**¿Listo para organizar sus finanzas? Experimente el [FinMoovi gratis por 7 días](https://finmoovi.com) — en 5 minutos ya tiene una visión clara de hacia dónde va su dinero.**

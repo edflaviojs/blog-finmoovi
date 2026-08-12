@@ -44,4 +44,4 @@ For the coming week, it’s hard to predict with certainty what will happen in t
 In short, the past week was marked by exchange‑rate stability and a Selic rate that remains a key factor for investors. Remember to diversify your investments and stay alert to market shifts. With FinMoovi, you can easily track your investments and make informed decisions. See you next week!
 
 ---
-**Ready to track your investments? Try [FinMoovi for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**
+**Ready to track your investments? Try [FinMoovi free for 7 days](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**

@@ -44,4 +44,4 @@ For the next week, it's hard to predict with certainty what will happen in the f
 In summary, this week was marked by a slight rise in the dollar and stability in the central bank base rate. It's important to watch exchange rates and interest rates to make informed decisions about your investments. With the help of [FinMoovi](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your), you can easily track your investments and achieve your financial goals. See you next week!
 
 ---
-**Ready to track your investments? [Try FinMoovi for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**
+**Ready to track your investments? [Try FinMoovi free for 7 days](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**

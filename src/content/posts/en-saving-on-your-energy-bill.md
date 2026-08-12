@@ -49,4 +49,4 @@ Don't wait any longer to start saving on your energy bill. With small changes in
 ![Comece hoje](/images/posts/economize-na-conta-de-energia-5.svg)
 
 ---
-**Want to put this into practice? [Test [FinMoovi](/en/posts/en-migrating-from-spreadsheets-to-a-financial-app) for free for 7 days](https://[finmoovi](/en/posts/en-5-alternatives-to-mobills-in-2026).com) and see how easy it is to control your finances with [automatic categorization](/en/posts/en-you-re-not-alone-in-struggling-to-organize-your-finances) and visual [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end).**
+**Want to put this into practice? [Test FinMoovi for free for 7 days](https://finmoovi.com) and see how easy it is to control your finances with [automatic categorization](/en/posts/en-you-re-not-alone-in-struggling-to-organize-your-finances) and visual [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end).**

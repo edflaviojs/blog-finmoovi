@@ -980,7 +980,35 @@ function proibicoesGerais(fala, ondeEstou) {
   }
 
   const brinde = fala.match(BRINDES_PROIBIDOS);
-  if (brinde) erros.push(`${ondeEstou}: promete "${brinde[0]}", que NÃO EXISTE — só há o app FinMoovi (grátis) e as calculadoras do blog`);
+  if (brinde) erros.push(`${ondeEstou}: promete "${brinde[0]}", que NÃO EXISTE — só há o app FinMoovi (teste de sete dias grátis) e as calculadoras do blog`);
+
+  /**
+   * 🔴 "GRÁTIS" SEM PRAZO É PROPAGANDA ENGANOSA — 12/08/2026, ordem do dono.
+   *
+   * O FinMoovi **não é grátis**: é um teste de SETE DIAS, e passado esse prazo o app
+   * tranca (ver `plan-limits.ts` no repositório do app). A fala, a legenda e o selo do
+   * vídeo diziam só *"é de graça"* — e **chegaram duas queixas de propaganda enganosa**
+   * de gente que entrou a pensar que era grátis para sempre.
+   *
+   * ⚠️ **A trava, e não só a ordem no prompt** — a regra desta casa: o que o prompt
+   * pede e nada pune, o modelo ignora. O prompt manda dizer o prazo; isto cobra.
+   *
+   * ⚠️ **A calculadora do blog continua a poder ser "grátis"**, porque é verdade. Por
+   * isso a frase só é reprovada quando o "grátis" NÃO está colado a uma calculadora ou
+   * ferramenta — e qualquer forma de dizer o prazo ("sete dias", "7 dias") absolve.
+   */
+  const dizGratis = fala.match(/\b(de\s+gra[çc]a|gr[áa]tis|gratuit[oa]s?)\b/i);
+  if (dizGratis && !/\b(sete|7)\s*dias\b/i.test(fala)) {
+    const semAsFerramentas = fala.replace(
+      /(calculadora|ferramenta|planilha)s?[^.!?]{0,40}?\b(de\s+gra[çc]a|gr[áa]tis|gratuit[oa]s?)\b/gi, '',
+    );
+    if (/\b(de\s+gra[çc]a|gr[áa]tis|gratuit[oa]s?)\b/i.test(semAsFerramentas)) {
+      erros.push(
+        `${ondeEstou}: diz "${dizGratis[0]}" sem o prazo — o FinMoovi NÃO é grátis, é um TESTE de sete dias. `
+        + 'Dizer só "é de graça" é propaganda enganosa (já rendeu duas queixas). Diga "sete dias grátis".',
+      );
+    }
+  }
 
   const rebaixa = fala.match(REBAIXA_GRANDEZA);
   if (rebaixa) erros.push(`${ondeEstou}: rebaixa o dinheiro com "${rebaixa[0]}" — diga que PARECE pouco, mas chame-o pelo nome`);

@@ -57,4 +57,4 @@ Grab a piece of paper or open your app right now and log the next expense you fe
 
 ---
 
-**Ready to organize your finances? [Try FinMoovi for free](https://finmoovi.com) — in 5 minutes you’ll have a clear view of where your money is going.**
+**Ready to organize your finances? [Try FinMoovi free for 7 days](https://finmoovi.com) — in 5 minutes you’ll have a clear view of where your money is going.**

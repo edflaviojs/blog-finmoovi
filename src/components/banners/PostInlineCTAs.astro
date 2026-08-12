@@ -20,9 +20,9 @@ function buildCTAs(lang) {
   const note = ctaNote[lang] || ctaNote.pt;
 
   const titles = {
-    pt: [title, `${f[0]} com o ${appName}`, f[1], f[2], 'Comece grátis — sem cartão', 'Sua privacidade importa', f[3] || f[0], 'Relatórios inteligentes', 'Simples e automático', 'Alcance seus objetivos', 'Funciona offline', `${appName} — o mais completo`],
-    en: [title, `${f[0]} with ${appName}`, f[1], f[2], 'Start free — no credit card', 'Your privacy matters', f[3] || f[0], 'Smart reports', 'Simple and automatic', 'Reach your goals', 'Works offline', `${appName} — the most complete`],
-    es: [title, `${f[0]} con ${appName}`, f[1], f[2], 'Comienza gratis — sin tarjeta', 'Tu privacidad importa', f[3] || f[0], 'Reportes inteligentes', 'Simple y automático', 'Alcanza tus objetivos', 'Funciona offline', `${appName} — la más completa`],
+    pt: [title, `${f[0]} com o ${appName}`, f[1], f[2], 'Teste grátis por 7 dias — sem cartão', 'Sua privacidade importa', f[3] || f[0], 'Relatórios inteligentes', 'Simples e automático', 'Alcance seus objetivos', 'Funciona offline', `${appName} — o mais completo`],
+    en: [title, `${f[0]} with ${appName}`, f[1], f[2], 'Try free for 7 days — no credit card', 'Your privacy matters', f[3] || f[0], 'Smart reports', 'Simple and automatic', 'Reach your goals', 'Works offline', `${appName} — the most complete`],
+    es: [title, `${f[0]} con ${appName}`, f[1], f[2], 'Prueba gratis 7 días — sin tarjeta', 'Tu privacidad importa', f[3] || f[0], 'Reportes inteligentes', 'Simple y automático', 'Alcanza tus objetivos', 'Funciona offline', `${appName} — la más completa`],
   };
 
   const descs = {
@@ -41,7 +41,7 @@ const ctasData = JSON.stringify({
   en: buildCTAs('en'),
   es: buildCTAs('es'),
 });
-const badgeText = { pt: 'App Gratuito', en: 'Free App', es: 'App Gratuita' }[locale] || 'App Gratuito';
+const badgeText = { pt: '7 dias grátis', en: '7 days free', es: '7 días gratis' }[locale] || '7 dias grátis';
 const btnText = (ctaText[locale] || ctaText.pt);
 ---
 

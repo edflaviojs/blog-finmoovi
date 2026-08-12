@@ -35,7 +35,7 @@ const BLOG_URL = 'https://blog.finmoovi.com/';
  */
 export function textoDoPrimeiroComentario({ ferramentaUrl, palavraChave } = {}) {
   const linhas = [
-    '📲 O FinMoovi é grátis e abre direto no navegador, sem instalar nada:',
+    '📲 O FinMoovi tem 7 dias grátis e abre direto no navegador, sem instalar nada:',
     APP_URL,
     '',
   ];

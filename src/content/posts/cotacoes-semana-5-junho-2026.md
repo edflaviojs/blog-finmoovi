@@ -56,5 +56,5 @@ Com uma abordagem informada e uma ferramenta de gestão de investimentos confiá
 
 
 ---
-**Pronto para acompanhar seus investimentos? Experimente o [FinMoovi de graça](https://finmoovi.com) — em 5 minutos você terá uma visão clara de para onde está indo seu dinheiro.**
+**Pronto para acompanhar seus investimentos? Experimente o [FinMoovi grátis por 7 dias](https://finmoovi.com) — em 5 minutos você terá uma visão clara de para onde está indo seu dinheiro.**
 

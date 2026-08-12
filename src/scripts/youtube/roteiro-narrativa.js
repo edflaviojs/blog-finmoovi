@@ -380,11 +380,13 @@ ${EXEMPLOS_DE_CAPA.map((f) => `   ✓ "${f}"`).join('\n')}
    ⛔ **DIGA O QUE APARECEU NA TELA.** Frases como "mostrou onde o dinheiro aperta" ou "mostrou o estrago" não mostram nada — quem ouve fica na mesma.
    Diga a coisa CONCRETA: o nome da linha, a soma marcada, qual ficou em primeiro lugar, ou um valor **que já exista** neste roteiro.
    ⚠️ **NÃO invente número nenhum para cumprir isto.** Se não houver um valor à mão, nomeie a COISA — é igualmente concreto e é verdade.
-5. O CONVITE (~6s): a pessoa acabou de ver um número que assustou ou animou — e ela quer o DELA. Mande-a PROCURAR o app pelo nome, e diga que é de graça. Molde a adaptar: "quer ver o SEU? procura FinMoovi. É de graça."
+5. O CONVITE (~6s): a pessoa acabou de ver um número que assustou ou animou — e ela quer o DELA. Mande-a PROCURAR o app pelo nome, e diga que tem sete dias grátis. Molde a adaptar: "quer ver o SEU? procura FinMoovi. São sete dias grátis."
+   ⛔ **NUNCA diga que o app é "grátis", "de graça" ou "gratuito" sem mais nada.** O FinMoovi é um TESTE de sete dias, e depois disso é pago. Dizer só "é grátis" é propaganda enganosa — já rendeu queixas de gente que se sentiu enganada (ordem do dono, 12/08/2026). Diga sempre o prazo: "sete dias grátis".
+   ✗ "Procura FinMoovi. É de graça." (a pessoa entende que o app inteiro é grátis para sempre — e não é)
    ⛔ **NÃO PEÇA COMENTÁRIO E NÃO MANDE CLICAR EM NADA.** Este mesmo vídeo sai em OITO redes ao mesmo tempo, mais o YouTube — e a automação que responde ao comentário só existe em duas delas. Nas outras a pessoa comentaria e não receberia nada: promessa quebrada é pior do que chamada nenhuma. O "comenta FINMOOVI" continua a existir, mas ESCRITO na legenda do Instagram e do YouTube, onde há robô a cumpri-lo — e a automação dispara pelo comentário, não pelo áudio. O computador confere.
    ✗ "Comenta FINMOOVI aqui embaixo que eu te mando o app." (só funciona em duas das nove)
    ✗ "O link tá aqui embaixo." (no Instagram e no TikTok o endereço na legenda é texto morto, não dá para clicar)
-   ✓ "Quer ver o seu? Procura FinMoovi. É de graça."
+   ✓ "Quer ver o seu? Procura FinMoovi. São sete dias grátis."
 6. O FECHO (~7s): **RESPONDA, com todas as letras, a PERGUNTA DA CAPA** — é a lição do vídeo numa frase, curta e dura, do tipo que se repete para um amigo. Sem "tchau", sem "até a próxima".
    ⛔ **NÃO termine com outra pergunta.** O fecho é quem responde, não quem pergunta.
    ✗ "…e quando você corta, os quinhentos reais voltam pra você. E agora?" (foi ao ar; o dono: *"o que é 'e agora'???"*)
@@ -413,7 +415,7 @@ Elas cabem TODAS num bloco só — normalmente a virada ou a demonstração. **E
    Teste: consigo fazer uma SEM fazer a outra? Se não consigo, são a mesma.
 
 ════════ O QUE VOCÊ PODE PROMETER ════════
-SOMENTE duas coisas, porque só estas existem: o **app FinMoovi (grátis)** e a **calculadora do blog**.
+SOMENTE duas coisas, porque só estas existem: o **app FinMoovi (teste de sete dias grátis)** e a **calculadora do blog (essa sim, grátis de verdade)**.
 ⛔ É PROIBIDO oferecer planilha, ebook, PDF, apostila, curso, aula, checklist, mapa mental ou qualquer material que o canal não tem. Prometer o que não existe é pior do que não convidar.
 
 ════════ COERÊNCIA DOS VALORES ════════
@@ -503,14 +505,14 @@ const EXEMPLO_DE_FORMA = [
   // calculadora do FinMoovi" que o bloco 4 ENSINA — medido ao vivo em 03/08: o
   // modelo obedeceu ao molde e a anti-cópia (que inclui este exemplo) barrou-o.
   'Fui conferir no FinMoovi e ele tinha marcado a cobrança em vermelho, repetindo mês após mês na minha cara.',
-  'Quer ver se a sua conta tem uma dessas? Procura FinMoovi. É de graça.',
+  'Quer ver se a sua conta tem uma dessas? Procura FinMoovi. São sete dias grátis.',
   `Tarifa que você não pediu é dinheiro que sai calado. ${BORDAO}`,
 ];
 
 /**
  * O TEXTO CONTRA O QUAL SE MEDE A CÓPIA — e repare no que fica DE FORA.
  *
- * · O bloco 5 (o convite) sai: "procura FinMoovi, é de graça" é o molde que o
+ * · O bloco 5 (o convite) sai: "procura FinMoovi, são sete dias grátis" é o molde que o
  *   próprio prompt manda usar. Puni-lo seria reprovar quem obedece — o modo de
  *   falha crónico deste repositório.
  * · O bordão sai pela mesma razão: é obrigatório dizê-lo, à letra.
@@ -894,11 +896,41 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
   if (/link (na|no|aqui)|clica no link|na bio|na descri/i.test(falaToda)) {
     erros.push(
       'a fala manda clicar em link — em vídeo vertical o link não é clicável, e no Instagram e no TikTok o endereço '
-      + 'escrito na legenda é texto morto. O convite manda PROCURAR o nome: "procura FinMoovi, é de graça".',
+      + 'escrito na legenda é texto morto. O convite manda PROCURAR o nome: "procura FinMoovi, são sete dias grátis".',
     );
   }
   if (!/finmoovi/i.test(blocos[4]?.fala || '')) {
     erros.push('o bloco "convite" não diz o nome FinMoovi — é ele que a pessoa vai procurar, então tem de ser dito');
+  }
+  /**
+   * 🔴 "GRÁTIS" SEM PRAZO É PROPAGANDA ENGANOSA — 12/08/2026, ordem do dono.
+   *
+   * ═══ POR QUE EXISTE ═══
+   * O FinMoovi **não é grátis**: é um teste de SETE DIAS, e depois disso o app tranca
+   * (ver `plan-limits.ts` no repositório do app — passados os sete dias não se cria
+   * lançamento, categoria nem cartão). Durante meses a fala, a legenda, a descrição e
+   * o selo do vídeo diziam só "é de graça" — e **chegaram duas queixas de propaganda
+   * enganosa** de gente que se inscreveu a pensar que era grátis para sempre.
+   *
+   * ⚠️ **E porquê uma trava, e não só a ordem no prompt:** é a regra desta casa —
+   * o que o prompt pede e nada pune, o modelo ignora. O prompt manda dizer o prazo;
+   * isto é o que cobra. As duas pontas, no mesmo commit.
+   *
+   * O que NÃO dispara: "calculadora grátis" e "ferramenta grátis" continuam a ser
+   * verdade (as do blog são mesmo de borla) — por isso a trava só olha o que está
+   * colado ao APP, e aceita qualquer forma de dizer o prazo ("sete dias", "7 dias").
+   */
+  const dizGratis = falaToda.match(/\b(de\s+gra[çc]a|gr[áa]tis|gratuit[oa]s?)\b/i);
+  if (dizGratis && !/\b(sete|7)\s*dias\b/i.test(falaToda)) {
+    const sobreOApp = /\b(de\s+gra[çc]a|gr[áa]tis|gratuit[oa]s?)\b/i.test(
+      falaToda.replace(/(calculadora|ferramenta|planilha)s?[^.!?]{0,40}?\b(de\s+gra[çc]a|gr[áa]tis|gratuit[oa]s?)\b/gi, ''),
+    );
+    if (sobreOApp) {
+      erros.push(
+        `a fala diz "${dizGratis[0]}" sem dizer o prazo — o FinMoovi NÃO é grátis, é um teste de sete dias. `
+        + 'Dizer só "é de graça" é propaganda enganosa (já rendeu queixas). Escreva "são sete dias grátis".',
+      );
+    }
   }
   /**
    * ♦ O CONVITE DEIXOU DE PEDIR COMENTÁRIO (07/08/2026) — e esta é a outra ponta da regra.
@@ -925,7 +957,7 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
     erros.push(
       `a fala pede "${pedeComentario[0]}" — este vídeo sai em oito redes mais o YouTube, e só em duas existe robô `
       + 'a responder a quem comenta. Nas outras a promessa fica por cumprir. O convite manda PROCURAR o nome: '
-      + '"quer ver o seu? procura FinMoovi, é de graça". O pedido de comentário vive na LEGENDA, não na fala.',
+      + '"quer ver o seu? procura FinMoovi, são sete dias grátis". O pedido de comentário vive na LEGENDA, não na fala.',
     );
   }
   // BORDÃO — passa de aviso a ERRO (31/07/2026). O prompt manda dizê-lo uma vez e
@@ -1315,7 +1347,7 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
   // brinde inexistente (ver BRINDES_PROIBIDOS)
   const brinde = falaToda.match(BRINDES_PROIBIDOS);
   if (brinde) {
-    erros.push(`a fala promete "${brinde[0]}", que NÃO EXISTE — só é permitido oferecer o app FinMoovi (grátis) ou a calculadora do blog`);
+    erros.push(`a fala promete "${brinde[0]}", que NÃO EXISTE — só é permitido oferecer o app FinMoovi (teste de sete dias grátis) ou a calculadora do blog`);
   }
   // GRANDEZA REBAIXADA. 1º teste: cem reais viraram "esse centavo". 3º teste: "esse
   // dinheirinho". O mesmo vício — diminutivo tira o valor da coisa que o vídeo quer

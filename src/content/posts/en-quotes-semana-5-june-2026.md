@@ -52,4 +52,4 @@ Remember that the financial market is volatile and can change quickly. Therefore
 So, folks? What did you think of the weekly summary? Do you have any questions or comments? Leave them below!
 
 ---
-**Ready to track your [investments](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)? Try [FinMoovi for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**
+**Ready to track your [investments](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)? Try [FinMoovi free for 7 days](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**

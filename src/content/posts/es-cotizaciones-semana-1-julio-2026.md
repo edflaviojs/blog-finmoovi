@@ -49,5 +49,5 @@ En resumen, la semana del 29 de junio al 6 de julio de 2026 ha sido de estabilid
 
 
 ---
-**¿Listo para seguir tus inversiones? [Prueba FinMoovi gratis](https://finmoovi.com) — en 5 minutos tendrás una visión clara de a dónde va tu dinero.**
+**¿Listo para seguir tus inversiones? [Prueba FinMoovi gratis por 7 días](https://finmoovi.com) — en 5 minutos tendrás una visión clara de a dónde va tu dinero.**
 

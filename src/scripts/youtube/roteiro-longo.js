@@ -376,7 +376,7 @@ export const EXEMPLO_DE_FECHO = 'No fim das contas, a sua conta de luz não sobe
  * volume que a sustenta, não o gosto. Ver `FORMATOS.longo.chamadaRespondidaAMao`.
  */
 export const EXEMPLO_DE_CHAMADA = 'Quer ver quanto a sua casa está levando por mês nessas coisas pequenas? '
-  + 'Comenta FINMOOVI aqui embaixo que eu te mando o app de graça, e você faz essa conta em dois toques.';
+  + 'Comenta FINMOOVI aqui embaixo que eu te mando o app com sete dias grátis, e você faz essa conta em dois toques.';
 
 /**
  * O TEXTO CONTRA O QUAL SE MEDE A CÓPIA. Repare no que fica DE FORA:
@@ -483,8 +483,9 @@ ${OS_MOVIMENTOS}
 · número inventado para chocar — o computador confere e reprova.`;
 
 const O_QUE_PODE_PROMETER = `════════ O QUE VOCÊ PODE OFERECER ════════
-SOMENTE duas coisas, porque só estas existem: o **app FinMoovi (grátis)** e as **calculadoras do blog**.
-⛔ É PROIBIDO oferecer planilha, ebook, PDF, apostila, curso, aula, checklist ou qualquer material que o canal não tem.`;
+SOMENTE duas coisas, porque só estas existem: o **app FinMoovi (teste de sete dias grátis)** e as **calculadoras do blog (essas sim, grátis de verdade)**.
+⛔ É PROIBIDO oferecer planilha, ebook, PDF, apostila, curso, aula, checklist ou qualquer material que o canal não tem.
+⛔ **NUNCA diga que o app é "grátis", "de graça" ou "gratuito" sem dizer o prazo.** O FinMoovi é um TESTE de sete dias e depois disso é pago — dizer só "é grátis" é propaganda enganosa, e já rendeu queixas (ordem do dono, 12/08/2026). Diga sempre: "sete dias grátis".`;
 
 const menuDeImagens = (proibidas = []) => METAPHORS
   .filter((m) => m !== 'clique-link' && !proibidas.includes(m))

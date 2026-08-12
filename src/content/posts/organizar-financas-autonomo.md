@@ -58,4 +58,4 @@ Não importa onde você está em sua jornada financeira, o importante é começa
 
 
 ---
-**Pronto para organizar suas finanças? Experimente o [FinMoovi grátis](https://finmoovi.com) — em 5 minutos você já tem uma visão clara de para onde vai seu dinheiro.**
+**Pronto para organizar suas finanças? Experimente o [FinMoovi grátis por 7 dias](https://finmoovi.com) — em 5 minutos você já tem uma visão clara de para onde vai seu dinheiro.**

@@ -40,4 +40,4 @@ Para la próxima semana, es importante estar atento a las decisiones económicas
 En resumen, la semana estuvo marcada por estabilidad en las tasas de cambio y mantenimiento de la tasa Selic, lo que puede influir en las estrategias de inversión. Diversificar la cartera, incluyendo inversiones en diferentes monedas, y utilizar herramientas de gestión como FinMoovi puede ser una estrategia inteligente para maximizar los rendimientos y minimizar los riesgos. Manténgase atento a las noticias económicas y ajuste su plan de inversión según los cambios en el mercado.
 
 ---
-**¿Listo para seguir tus inversiones? Prueba [FinMoovi gratis](https://finmoovi.com) — en 5 minutos tendrás una visión clara de a dónde va tu dinero.**
+**¿Listo para seguir tus inversiones? Prueba [FinMoovi gratis por 7 días](https://finmoovi.com) — en 5 minutos tendrás una visión clara de a dónde va tu dinero.**

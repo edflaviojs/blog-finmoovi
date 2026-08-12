@@ -52,4 +52,4 @@ No importa dónde estés en tu jornada financiera, lo importante es comenzar a t
 ![Comece hoy](/images/posts/organizar-financas-autonomo-5.svg)
 
 ---
-**¿Listo para organizar tus finanzas? Experimenta [FinMoovi gratis](https://finmoovi.com) — en 5 minutos ya tienes una visión clara de hacia dónde va tu dinero.**
+**¿Listo para organizar tus finanzas? Experimenta [FinMoovi gratis por 7 días](https://finmoovi.com) — en 5 minutos ya tienes una visión clara de hacia dónde va tu dinero.**

@@ -556,7 +556,7 @@ function deterministicMeta(script) {
   // desleixo deixou de ser raro.
   const descriptionHook =
     `Entenda ${kw} de um jeito simples e rápido.\n` +
-    `${script?.cta?.text || 'Coloque em prática com as ferramentas grátis do FinMoovi.'}`;
+    `${script?.cta?.text || 'Coloque em prática com as calculadoras grátis do blog FinMoovi.'}`;
   const hashtags = [
     buildHashtag(kw),
     '#FinançasPessoais',
@@ -578,7 +578,7 @@ function deterministicMeta(script) {
   const topicos = [
     `O que é ${kw} e por que isso mexe no seu bolso`,
     script.term && script.term !== kw ? script.term : `Como ${kw} aparece no dia a dia`,
-    `Como calcular o seu caso com as ferramentas grátis do FinMoovi`,
+    `Como calcular o seu caso com as calculadoras grátis do blog`,
   ].filter(Boolean).map((t) => String(t).slice(0, 90));
 
   return { title, descriptionHook, hashtags, tags, topicos };

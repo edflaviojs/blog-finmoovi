@@ -60,4 +60,4 @@ Solo necesitas coger papel y bolígrafo (o abrir la [app de finanzas](/es/posts/
 
 ---
 
-**¿Listo para organizar tus finanzas? [Prueba FinMoovi gratis](https://finmoovi.com) — en 5 minutos ya tienes una visión clara de a dónde va tu [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia).**
+**¿Listo para organizar tus finanzas? [Prueba FinMoovi gratis por 7 días](https://finmoovi.com) — en 5 minutos ya tienes una visión clara de a dónde va tu [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia).**

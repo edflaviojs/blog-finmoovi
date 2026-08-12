@@ -66,4 +66,4 @@ Basta pegar papel e caneta (ou abrir o [app de finanças](/posts/planilha-de-gas
 
 ---
 
-**Pronto para organizar suas finanças? [Experimente o FinMoovi grátis](https://finmoovi.com) — em 5 minutos você já tem uma visão clara de para onde vai seu dinheiro.**
+**Pronto para organizar suas finanças? [Experimente o FinMoovi grátis por 7 dias](https://finmoovi.com) — em 5 minutos você já tem uma visão clara de para onde vai seu dinheiro.**

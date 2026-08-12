@@ -48,4 +48,4 @@ For the coming week, the market is expected to continue closely monitoring globa
 In short, this week was marked by the stability of foreign currencies and the importance of understanding the Selic’s impact on investments. With the right tools, like FinMoovi, and a well‑thought‑out approach, you can navigate the financial market with more confidence. See you next week, when we’ll bring more news and tips to help you manage your finances effectively!
 
 ---
-**Ready to track your investments? [Try FinMoovi for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**
+**Ready to track your investments? [Try FinMoovi free for 7 days](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**

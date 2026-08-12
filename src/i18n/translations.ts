@@ -38,7 +38,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     'sidebar.categorias': 'Categorias',
 
     // CTA
-    'cta.badge': 'App Gratuito',
+    'cta.badge': '7 dias grátis',
     'cta.title': config.app.ctaTitle.pt,
     'cta.desc': appFeatures.pt.slice(0, 3).join('. ') + '.',
     'cta.feature1': `✓ ${appFeatures.pt[0]}`,
@@ -110,7 +110,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     'sobre.sobreApp.p1': `O ${appName} é um app inteligente criado para te ajudar com ${niche.pt}. ${appFeatures.pt.join('. ')}.`,
     'sobre.sobreApp.p2': 'O blog é uma extensão do nosso compromisso com educação. Mesmo que você não use o app, o conteúdo aqui é 100% gratuito e feito para te ajudar.',
     'sobre.cta.title': `Quer organizar suas ${niche.pt}?`,
-    'sobre.cta.desc': `Teste o ${appName} grátis. ${ctaNote.pt}`,
+    'sobre.cta.desc': `Teste o ${appName} grátis por 7 dias. ${ctaNote.pt}`,
     'sobre.cta.btn': ctaText.pt,
     'sobre.cta.blog': 'Ver o Blog',
     'sobre.contato': 'Contato',
@@ -149,7 +149,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     'sidebar.categorias': 'Categories',
 
     // CTA
-    'cta.badge': 'Free App',
+    'cta.badge': '7 days free',
     'cta.title': config.app.ctaTitle.en,
     'cta.desc': appFeatures.en.slice(0, 3).join('. ') + '.',
     'cta.feature1': `✓ ${appFeatures.en[0]}`,
@@ -221,7 +221,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     'sobre.sobreApp.p1': `${appName} is a smart app built to help you with ${niche.en}. ${appFeatures.en.join('. ')}.`,
     'sobre.sobreApp.p2': 'The blog is an extension of our commitment to education. Even if you don\'t use the app, the content here is 100% free and made to help you.',
     'sobre.cta.title': `Want to organize your ${niche.en}?`,
-    'sobre.cta.desc': `Try ${appName} for free. ${ctaNote.en}`,
+    'sobre.cta.desc': `Try ${appName} free for 7 days. ${ctaNote.en}`,
     'sobre.cta.btn': ctaText.en,
     'sobre.cta.blog': 'See the Blog',
     'sobre.contato': 'Contact',
@@ -260,7 +260,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     'sidebar.categorias': 'Categorías',
 
     // CTA
-    'cta.badge': 'App Gratuita',
+    'cta.badge': '7 días gratis',
     'cta.title': config.app.ctaTitle.es,
     'cta.desc': appFeatures.es.slice(0, 3).join('. ') + '.',
     'cta.feature1': `✓ ${appFeatures.es[0]}`,
@@ -332,7 +332,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     'sobre.sobreApp.p1': `${appName} es una app inteligente creada para ayudarte con ${niche.es}. ${appFeatures.es.join('. ')}.`,
     'sobre.sobreApp.p2': 'El blog es una extensión de nuestro compromiso con la educación. Aunque no uses la app, el contenido aquí es 100% gratuito y hecho para ayudarte.',
     'sobre.cta.title': `¿Quieres organizar tus ${niche.es}?`,
-    'sobre.cta.desc': `Prueba ${appName} gratis. ${ctaNote.es}`,
+    'sobre.cta.desc': `Prueba ${appName} gratis por 7 días. ${ctaNote.es}`,
     'sobre.cta.btn': ctaText.es,
     'sobre.cta.blog': 'Ver el Blog',
     'sobre.contato': 'Contacto',

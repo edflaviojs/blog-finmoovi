@@ -501,6 +501,29 @@ reprova(
 reprova('chamada: não diz FINMOOVI', validarChamada('Quer ver quanto a sua casa está levando por mês? Comenta aqui embaixo que eu te mando o app de graça hoje.'), 'não diz FINMOOVI');
 reprova('chamada: não pede nada', validarChamada('Quer ver quanto a sua casa está levando por mês nessas coisas pequenas? O FinMoovi faz essa conta em dois toques, de graça.'), 'não pede nada');
 
+/**
+ * 🔴 "GRÁTIS" SEM PRAZO — as duas pontas da regra de 12/08/2026.
+ *
+ * O app é um TESTE de sete dias, não é grátis. Estas três provas guardam a trava dos
+ * dois erros possíveis: deixar passar o que engana, e reprovar o que é verdade.
+ */
+reprova(
+  'chamada: diz "de graça" sem o prazo (propaganda enganosa)',
+  validarChamada('Quer ver quanto a sua casa está levando por mês nessas coisas pequenas? Comenta FINMOOVI aqui embaixo que eu te mando o app de graça, e você faz essa conta em dois toques.'),
+  'sem o prazo',
+);
+reprova(
+  'chamada: diz "grátis" sem o prazo, na outra grafia',
+  validarChamada('Quer ver quanto a sua casa está levando por mês nessas coisas pequenas? Comenta FINMOOVI aqui embaixo que eu te mando o app grátis, e você faz essa conta em dois toques.'),
+  'sem o prazo',
+);
+{
+  // ⚠️ A OUTRA PONTA: a calculadora do blog É grátis de verdade, e dizê-lo não pode
+  // reprovar ninguém. Sem esta prova, a trava acima curava a mentira criando outra.
+  const v = validarChamada('Quer ver quanto a sua casa está levando por mês nessas coisas pequenas? Comenta FINMOOVI aqui embaixo que eu te mando a calculadora grátis do blog, e você faz essa conta em dois toques.');
+  ok('a calculadora do blog PODE ser chamada de grátis (é verdade)', !v.erros.some((e) => /sem o prazo/.test(e)), v.erros.join(' | '));
+}
+
 // — o fecho —
 reprova('fecho: sem o bordão', validarFecho(EXEMPLO_DE_FECHO.replace(BORDAO, 'E é isso.'), { promessa: EXEMPLO_DE_ABERTURA.promessa }), 'não foi dito');
 reprova(

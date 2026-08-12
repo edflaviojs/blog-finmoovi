@@ -60,4 +60,4 @@ Just grab paper and a pen (or open your [finance app](/en/posts/en-expense-sprea
 
 ---  
 
-**Ready to organize your finances? [Try FinMoovi for free](https://finmoovi.com) — in 5 minutes you’ll have a clear view of where your [money](/en/posts/en-30-day-rule-for-purchases) is going.**
+**Ready to organize your finances? [Try FinMoovi free for 7 days](https://finmoovi.com) — in 5 minutes you’ll have a clear view of where your [money](/en/posts/en-30-day-rule-for-purchases) is going.**

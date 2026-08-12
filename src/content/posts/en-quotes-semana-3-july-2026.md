@@ -58,4 +58,4 @@ The [rate](/en/glossario/en-financial-fee) Selic stayed at **13.75 % per year*
 **Quick summary:** Dollar in slight decline, euro stable, high Selic keeping fixed income attractive and credit expensive. Review the currency allocation of your portfolio using **FinMoovi** – it tracks multiple currencies and helps you make more informed decisions. Next week, watch the U.S. inflation calendar and keep enjoying the returns of fixed income while protecting your wealth against exchange‑rate [volatility](/en/glossario/en-volatility). Have a great investment week!
 
 ---
-**Ready to track your investments? [Try FinMoovi for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**
+**Ready to track your investments? [Try FinMoovi free for 7 days](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**

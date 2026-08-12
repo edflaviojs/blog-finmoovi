@@ -57,4 +57,4 @@ Toma un papel o abre tu app ahora mismo y registra el próximo gasto que sientas
 
 ---
 
-**¿Listo para organizar tus finanzas? [Prueba el FinMoovi gratis](https://finmoovi.com) — en 5 minutos ya tienes una visión clara de a dónde va tu dinero.**
+**¿Listo para organizar tus finanzas? [Prueba el FinMoovi gratis por 7 días](https://finmoovi.com) — en 5 minutos ya tienes una visión clara de a dónde va tu dinero.**

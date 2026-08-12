@@ -84,12 +84,12 @@ const MAX_PRIMEIROS_POR_CORRIDA = 5;
  * ⚠️ Se mudar o endereço aqui, mude também na descrição (upload-short.js).
  */
 const RESPOSTAS = [
-  'Boa! 🚀 O FinMoovi é grátis e abre direto no navegador, sem instalar nada: https://finmoovi.com',
-  'Show! Aqui tá ele, grátis e sem instalar: https://finmoovi.com 💚',
-  'Prontinho! É de graça e roda no navegador: https://finmoovi.com 🙌',
-  'Fechou! Pode entrar por aqui, é grátis: https://finmoovi.com ✅',
-  'Massa! O app é gratuito e abre no navegador: https://finmoovi.com 🚀',
-  'Valeu pelo comentário! Tá aqui, de graça: https://finmoovi.com 😉',
+  'Boa! 🚀 O FinMoovi tem 7 dias grátis e abre direto no navegador, sem instalar nada: https://finmoovi.com',
+  'Show! Aqui tá ele — 7 dias grátis, sem cartão e sem instalar: https://finmoovi.com 💚',
+  'Prontinho! São 7 dias grátis pra testar, roda no navegador: https://finmoovi.com 🙌',
+  'Fechou! Pode entrar por aqui, o teste de 7 dias é grátis: https://finmoovi.com ✅',
+  'Massa! Dá pra testar 7 dias grátis, abre no navegador: https://finmoovi.com 🚀',
+  'Valeu pelo comentário! Tá aqui, com 7 dias grátis pra experimentar: https://finmoovi.com 😉',
 ];
 
 const args = Object.fromEntries(

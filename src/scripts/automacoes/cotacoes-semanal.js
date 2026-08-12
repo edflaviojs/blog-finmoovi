@@ -159,13 +159,13 @@ ${contentWithImages}
 
 ${locale === 'pt' ? `
 ---
-**Pronto para acompanhar seus investimentos? [Experimente o ${config.app.name} de graça](${config.app.url}) — em 5 minutos você terá uma visão clara de para onde está indo seu dinheiro.**
+**Pronto para acompanhar seus investimentos? [Experimente o ${config.app.name} grátis por 7 dias](${config.app.url}) — em 5 minutos você terá uma visão clara de para onde está indo seu dinheiro.**
 ` : locale === 'en' ? `
 ---
-**Ready to track your investments? [Try ${config.app.name} for free](${config.app.url}) — in 5 minutes you'll have a clear view of where your money is going.**
+**Ready to track your investments? [Try ${config.app.name} free for 7 days](${config.app.url}) — in 5 minutes you'll have a clear view of where your money is going.**
 ` : `
 ---
-**¿Listo para seguir tus inversiones? [Prueba ${config.app.name} gratis](${config.app.url}) — en 5 minutos tendrás una visión clara de a dónde va tu dinero.**
+**¿Listo para seguir tus inversiones? [Prueba ${config.app.name} gratis por 7 días](${config.app.url}) — en 5 minutos tendrás una visión clara de a dónde va tu dinero.**
 `}
 `;
 

@@ -159,9 +159,9 @@ const HEADINGS = {
 };
 
 const CTA = {
-  pt: `**Quer ver o quanto a inflação mexe no SEU orçamento? [Experimente o ${config.app.name} de graça](${config.app.url}) — em 5 minutos você terá uma visão clara de para onde está indo seu dinheiro.**`,
-  en: `**Want to see how inflation hits YOUR budget? [Try ${config.app.name} for free](${config.app.url}) — in 5 minutes you'll have a clear view of where your money is going.**`,
-  es: `**¿Quieres ver cuánto afecta la inflación a TU presupuesto? [Prueba ${config.app.name} gratis](${config.app.url}) — en 5 minutos tendrás una visión clara de a dónde va tu dinero.**`,
+  pt: `**Quer ver o quanto a inflação mexe no SEU orçamento? [Experimente o ${config.app.name} grátis por 7 dias](${config.app.url}) — em 5 minutos você terá uma visão clara de para onde está indo seu dinheiro.**`,
+  en: `**Want to see how inflation hits YOUR budget? [Try ${config.app.name} free for 7 days](${config.app.url}) — in 5 minutes you'll have a clear view of where your money is going.**`,
+  es: `**¿Quieres ver cuánto afecta la inflación a TU presupuesto? [Prueba ${config.app.name} gratis por 7 días](${config.app.url}) — en 5 minutos tendrás una visión clara de a dónde va tu dinero.**`,
 };
 
 // ---------------------------------------------------------------------------

@@ -310,9 +310,9 @@ export async function generateBlogPost(topic, options = {}) {
 
   const ctaVariations = [
     `Quer colocar isso em prática? [Teste o ${config.app.name} grátis por 7 dias](${config.app.url}) e veja como é fácil controlar suas finanças com categorização automática e relatórios visuais.`,
-    `Pronto para organizar suas finanças? [Experimente o ${config.app.name} grátis](${config.app.url}) — em 5 minutos você já tem uma visão clara de para onde vai seu dinheiro.`,
+    `Pronto para organizar suas finanças? [Experimente o ${config.app.name} grátis por 7 dias](${config.app.url}) — em 5 minutos você já tem uma visão clara de para onde vai seu dinheiro.`,
     `Quer sair da teoria? [Baixe o ${config.app.name} grátis por 7 dias](${config.app.url}) e comece a registrar seus gastos hoje. Sem cartão, sem compromisso.`,
-    `Cansado de planilha? [Teste o ${config.app.name} grátis](${config.app.url}) e controle seus gastos com IA, multi-moeda e relatórios que fazem sentido.`,
+    `Cansado de planilha? [Teste o ${config.app.name} grátis por 7 dias](${config.app.url}) e controle seus gastos com IA, multi-moeda e relatórios que fazem sentido.`,
     `Quer ver isso funcionando na prática? [Comece grátis com o ${config.app.name}](${config.app.url}) — 7 dias para organizar suas finanças sem complicação.`,
     `O próximo passo é seu. [Teste o ${config.app.name} grátis por 7 dias](${config.app.url}) e descubra para onde seu dinheiro está indo de verdade.`,
   ];

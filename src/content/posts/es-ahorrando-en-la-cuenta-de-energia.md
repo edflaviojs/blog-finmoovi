@@ -54,4 +54,4 @@ Ahora que sabes cómo ahorrar en la cuenta de energía, es hora de comenzar a ac
 ![Comece hoje](/images/posts/economize-na-conta-de-energia-5.svg)
 
 ---
-**¿Cansado de planilla? [Prueba [FinMoovi](/es/posts/es-tambien-tienes-dificultad-para-organizar-tus-finanzas) gratis](https://[finmoovi](/es/posts/es-5-alternativas-al-mobills-en-2026).com) y controla tus [gastos](/es/posts/es-metodo-50-30-20-para-presupuesto) con IA, multi-moneda y reportes que tienen sentido.**
+**¿Cansado de planilla? [Prueba FinMoovi gratis por 7 días](https://finmoovi.com) y controla tus [gastos](/es/posts/es-metodo-50-30-20-para-presupuesto) con IA, multi-moneda y reportes que tienen sentido.**

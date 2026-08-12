@@ -33,7 +33,7 @@ const API = 'https://www.googleapis.com/youtube/v3';
 export const PLAYLIST_GERAL = {
   chave: 'geral',
   titulo: 'FinMoovi — Educação financeira na prática',
-  descricao: 'Todos os vídeos do FinMoovi: dívidas, investimento e organização do dinheiro, com contas em reais e sem palavra difícil. App grátis em https://app.finmoovi.com',
+  descricao: 'Todos os vídeos do FinMoovi: dívidas, investimento e organização do dinheiro, com contas em reais e sem palavra difícil. App com 7 dias grátis em https://app.finmoovi.com',
 };
 
 /**

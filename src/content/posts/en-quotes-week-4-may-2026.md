@@ -40,4 +40,4 @@ For the next week, it's important to pay attention to global economic decisions,
 In summary, the week was marked by stability in exchange rates and maintenance of the Selic rate, which can influence investment strategies. Diversifying the portfolio, including investments in different currencies, and using management tools like FinMoovi can be an intelligent strategy to maximize returns and minimize risks. Stay tuned to economic news and adjust your investment plan according to market changes.
 
 ---
-**Ready to track your investments? Try [FinMoovi for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**
+**Ready to track your investments? Try [FinMoovi free for 7 days](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**

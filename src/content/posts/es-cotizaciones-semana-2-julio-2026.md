@@ -57,4 +57,4 @@ La tasa base del banco central quedó en **13,75 % al año**, como ya estaba p
 **Resumen rápido:** la moneda local ganó fuerza contra el dólar y el euro, la tasa base del banco central sigue alta, y la mejor jugada ahora es proteger tu poder de compra con un “cushion” cambiario y mantener una buena parte de la cartera en renta fija. Y no olvides: FinMoovi hace todo esto más simple, así que vale la pena echarle un vistazo!
 
 ---
-**¿Listo para seguir tus inversiones? [Prueba FinMoovi gratis](https://finmoovi.com) — en 5 minutos tendrás una visión clara de a dónde va tu dinero.**
+**¿Listo para seguir tus inversiones? [Prueba FinMoovi gratis por 7 días](https://finmoovi.com) — en 5 minutos tendrás una visión clara de a dónde va tu dinero.**

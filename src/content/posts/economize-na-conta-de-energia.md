@@ -60,4 +60,4 @@ Agora que você sabe como economizar na conta de energia, é hora de começar a 
 
 
 ---
-**Cansado de planilha? Teste o [FinMoovi grátis](https://finmoovi.com) e controle seus gastos com IA, multi-[moeda](/glossario/moeda) e relatórios que fazem sentido.**
+**Cansado de planilha? Teste o [FinMoovi grátis por 7 dias](https://finmoovi.com) e controle seus gastos com IA, multi-[moeda](/glossario/moeda) e relatórios que fazem sentido.**

@@ -1447,7 +1447,7 @@ export const TelaFinal: React.FC<{ frames?: number }> = ({ frames = TELA_FINAL_F
           </div>
           <div style={{
             marginTop: 30, fontFamily: BODY, fontWeight: 700, fontSize: 30, color: BRAND.sub,
-          }}>app.finmoovi.com · grátis, sem instalar</div>
+          }}>app.finmoovi.com · 7 dias grátis, sem instalar</div>
         </div>
 
         {/*

@@ -53,4 +53,4 @@ No es necesario esperar hasta el próximo mes para comenzar a ahorrar en las com
 ![Comience hoy](/images/posts/economize-nas-compras-do-supermercado-6.webp)
 
 ---
-**¿Quiere salir de la teoría? [Descargue [FinMoovi](/es/posts/es-migrando-de-la-hoja-de-calculo-a-una-app-financiera) gratis por 7 días](https://[finmoovi](/es/posts/es-5-alternativas-al-mobills-en-2026).com) y comience a registrar sus gastos hoy. Sin tarjeta, sin compromiso.**
+**¿Quiere salir de la teoría? [Descargue FinMoovi gratis por 7 días](https://finmoovi.com) y comience a registrar sus gastos hoy. Sin tarjeta, sin compromiso.**

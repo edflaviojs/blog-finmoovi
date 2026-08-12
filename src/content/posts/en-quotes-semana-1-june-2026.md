@@ -38,4 +38,4 @@ A practical tip for individual investors is to diversify your investment portfol
 For next week, it's important to pay attention to economic and political news that may affect the foreign exchange market and interest rates. Additionally, it's essential to continue monitoring your investment portfolio and adjust your strategy according to market changes. With the help of tools like FinMoovi, it's easier to track your investments and make informed decisions. We'll continue monitoring the market and bringing updates and practical tips for you.
 
 ---
-**Ready to track your investments? Try [FinMoovi for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**
+**Ready to track your investments? Try [FinMoovi free for 7 days](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**

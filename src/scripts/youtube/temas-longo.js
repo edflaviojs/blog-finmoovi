@@ -144,7 +144,7 @@ O QUE O NOSSO CANAL E:
 - fala com quem ganha entre 2 e 6 mil reais por mes e nunca ve o dinheiro sobrar;
 - ensina com CONTAS FEITAS e numeros em reais, nunca com promessas;
 - o narrador conta na primeira pessoa uma coisa que viveu — nunca inventa uma personagem com nome;
-- tem um app gratis (FinMoovi) que aparece UMA vez, a fazer a conta.
+- tem um app (FinMoovi, com sete dias gratis para testar) que aparece UMA vez, a fazer a conta.
 
 O QUE O CANAL RECUSA, e nao se negoceia:
 - promessa de ficar rico depressa, segredo, urgencia inventada;

@@ -275,7 +275,29 @@ export const Watermark: React.FC = () => {
 };
 
 /**
- * O CARIMBO "APP GRÁTIS" — 05/08/2026, IMPL20 §53.
+ * O CARIMBO "7 DIAS GRÁTIS" — 05/08/2026, IMPL20 §53.
+ *
+ * 🔴 **DIZIA "APP GRÁTIS" ATÉ 12/08/2026, E ERA MENTIRA.** O FinMoovi não é grátis:
+ * é um teste de sete dias, e depois disso o app tranca (`plan-limits.ts` no repositório
+ * do app). Chegaram **duas queixas de propaganda enganosa** de gente que se inscreveu a
+ * pensar que era grátis para sempre — e este selo era a peça mais visível de todas,
+ * porque o YouTube o escolhe para a miniatura da grelha de Shorts. Ordem do dono.
+ *
+ * ⚠️ **O TAMANHO FOI MEDIDO EM PIXELS, NÃO ADIVINHADO** (fotograma 300 renderizado,
+ * medido pixel a pixel nos dois estados):
+ *
+ *   · "APP GRÁTIS"    (34px, padding 24) → x 778…1035, **257px** de largura
+ *   · "7 DIAS GRÁTIS" (30px, padding 20) → x 770…1035, **265px** de largura
+ *
+ * Três caracteres a mais custaram **8px** — e não os ~63px que custariam se a fonte
+ * tivesse ficado nos 34. Foi por isso que ela desceu para 30 e o padding para 20.
+ * A folga até à `EtiquetaTema` (canto esquerdo) passou de 288px para 280px.
+ *
+ * ⚠️ **O PIOR CASO CONTINUA APERTADO, E ISSO JÁ ERA VERDADE ANTES.** A etiqueta corta
+ * aos 26 caracteres; a essa largura ela acabaria por volta de x=763, o que deixa 7px
+ * de folga (eram 15px com o selo antigo). Nos temas reais medidos ela fica nos 17-19
+ * caracteres, logo a folga verdadeira são os 280px acima. Se um dia um tema encostar
+ * mesmo, é o selo que fica por cima — e o selo é o que não pode faltar.
  *
  * ═══ POR QUE ESTÁ NO VÍDEO E NÃO SÓ NA CAPA ═══
  * Descobriu-se que **o YouTube não usa a nossa capa na grelha de Shorts**: ele guarda
@@ -301,15 +323,15 @@ export const CarimboAppGratis: React.FC = () => (
     position: 'absolute', top: 152, right: 40,
     background: 'linear-gradient(135deg, #ff1f3d 0%, #ff7a00 100%)',
     color: BRAND.yellow,
-    fontFamily: BODY, fontWeight: 900, fontSize: 34, letterSpacing: 0.5,
+    fontFamily: BODY, fontWeight: 900, fontSize: 30, letterSpacing: 0.5,
     textTransform: 'uppercase',
-    padding: '12px 24px', borderRadius: 16,
+    padding: '12px 20px', borderRadius: 16,
     border: `4px solid ${BRAND.yellow}`,
     transform: 'rotate(-4deg)',
     textShadow: '0 2px 0 rgba(0,0,0,0.35)',
     boxShadow: '0 0 34px rgba(255,31,61,0.6), 0 8px 20px rgba(0,0,0,0.5)',
     whiteSpace: 'nowrap',
-  }}>App Grátis</div>
+  }}>7 Dias Grátis</div>
 );
 
 // ─────────────────────────────────────────────────────────────────────────────

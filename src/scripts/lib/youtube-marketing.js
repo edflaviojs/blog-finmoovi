@@ -227,7 +227,7 @@ export function getCTAStrategies(contentType = 'short') {
         {
           id: 'app-demo',
           when: 'O tema envolve controle/acompanhamento (gastos, saldo, fatura)',
-          script: 'Quer controlar isso no automático? FinMoovi grátis, link na bio.',
+          script: 'Quer controlar isso no automático? FinMoovi, 7 dias grátis — link na bio.',
           target: 'app',
           placement: 'Penúltima cena, com shot "app" mostrando a tela relevante',
         },

@@ -48,4 +48,4 @@ Now that you know how to negotiate discounts on fixed bills, it's time to start.
 ![Comece hoje](/images/posts/negociar-descontos-em-contas-fixas-6.webp)
 
 ---
-**Want to put this into practice? [Test [FinMoovi](/en/posts/en-5-alternatives-to-mobills-in-2026) for free for 7 days](https://finmoovi.com) and see how easy it is to control your finances with automatic categorization and visual reports.**
+**Want to put this into practice? [Test FinMoovi for free for 7 days](https://finmoovi.com) and see how easy it is to control your finances with automatic categorization and visual reports.**

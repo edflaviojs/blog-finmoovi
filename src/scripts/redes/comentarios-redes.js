@@ -203,12 +203,12 @@ export function oQueFazerCom(comentario, jaRespondidos = new Set()) {
 
 /** As respostas do pedido do app. Rodam para nunca saírem duas iguais seguidas. */
 export const RESPOSTAS = [
-  `Boa! 🚀 O FinMoovi é grátis e abre direto no navegador, sem instalar nada: ${APP_URL}`,
-  `Show! Aqui tá ele, grátis e sem instalar: ${APP_URL} 💚`,
-  `Prontinho! É de graça e roda no navegador: ${APP_URL} 🙌`,
-  `Fechou! Pode entrar por aqui, é grátis: ${APP_URL} ✅`,
-  `Massa! O app é gratuito e abre no navegador: ${APP_URL} 🚀`,
-  `Valeu pelo comentário! Tá aqui, de graça: ${APP_URL} 😉`,
+  `Boa! 🚀 O FinMoovi tem 7 dias grátis e abre direto no navegador, sem instalar nada: ${APP_URL}`,
+  `Show! Aqui tá ele — 7 dias grátis, sem cartão e sem instalar: ${APP_URL} 💚`,
+  `Prontinho! São 7 dias grátis pra testar, roda no navegador: ${APP_URL} 🙌`,
+  `Fechou! Pode entrar por aqui, o teste de 7 dias é grátis: ${APP_URL} ✅`,
+  `Massa! Dá pra testar 7 dias grátis, abre no navegador: ${APP_URL} 🚀`,
+  `Valeu pelo comentário! Tá aqui, com 7 dias grátis pra experimentar: ${APP_URL} 😉`,
 ];
 
 export function respostaDaVez(quantasJaForam) {

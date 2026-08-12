@@ -58,5 +58,5 @@ Em resumo, a semana que passou foi marcada por estabilidade no mercado de câmbi
 
 
 ---
-**Pronto para acompanhar seus investimentos? Experimente o [FinMoovi de graça](https://finmoovi.com) — em 5 minutos você terá uma visão clara de para onde está indo seu dinheiro.**
+**Pronto para acompanhar seus investimentos? Experimente o [FinMoovi grátis por 7 dias](https://finmoovi.com) — em 5 minutos você terá uma visão clara de para onde está indo seu dinheiro.**
 

@@ -155,7 +155,7 @@ const Remate: React.FC<{ texto: string; corpo: number; largura: number }> = ({ t
  * em todo o lado" por "inteira no sítio que importa, ausente na grelha" — e a grelha
  * é o único sítio onde a marca já é óbvia, porque o perfil é dele.
  *
- * A ETIQUETA vive no canto oposto: é uma promessa ("App Grátis"), não é decoração,
+ * A ETIQUETA vive no canto oposto: é uma promessa ("7 Dias Grátis"), não é decoração,
  * e um canto superior é onde o olho vai a seguir ao número.
  */
 const FAIXA_DE_CIMA = 96;
@@ -264,7 +264,9 @@ const FaixaDeCima: React.FC<{ etiqueta?: string; largura?: number; escala?: numb
 );
 
 export const CapaFoto: React.FC<CapaFotoProps> = ({
-  metaphor, tema = '', numero = '', remate = '', etiqueta = 'App Grátis', formato = 'vertical',
+  // ⚠️ "7 Dias Grátis" e não "App Grátis" (12/08/2026): o app é um TESTE de sete dias
+  // e prometer o contrário na capa é propaganda enganosa — ver o carimbo em `scenes.tsx`.
+  metaphor, tema = '', numero = '', remate = '', etiqueta = '7 Dias Grátis', formato = 'vertical',
 }) => {
   /**
    * ⚠️ 1280×720 — E ELA VOLTOU, porque eu a tinha deitado fora por engano.

@@ -562,7 +562,7 @@ export function montarLegenda(roteiro) {
     '',
     '💡 A verdade é que a maior parte das pessoas perde dinheiro sem perceber — não por falta de esforço, mas por falta de conta feita.',
     '',
-    '👉 Comenta FINMOOVI aqui embaixo que eu te mando o app de graça. É de verdade, eu respondo.',
+    '👉 Comenta FINMOOVI aqui embaixo que eu te mando o app com 7 dias grátis. É de verdade, eu respondo.',
     '',
     '🔗 Ou entra direto: finmoovi.com',
     '',
@@ -607,8 +607,8 @@ export function legendaEmHtml(legenda) {
  * escrito na legenda é texto morto: aparece, mas não se toca nele. Por isso nessas duas a
  * frase manda PROCURAR o nome, que é verdade em qualquer sítio.
  */
-const CHAMADA_COM_LINK = `👉 O FinMoovi é grátis e abre direto no navegador: ${APP_URL}`;
-const CHAMADA_SEM_LINK = '👉 Quer fazer essa conta com os SEUS números? Procura FinMoovi — é de graça e abre no navegador.';
+const CHAMADA_COM_LINK = `👉 O FinMoovi tem 7 dias grátis e abre direto no navegador: ${APP_URL}`;
+const CHAMADA_SEM_LINK = '👉 Quer fazer essa conta com os SEUS números? Procura FinMoovi — 7 dias grátis e abre no navegador.';
 
 /**
  * 🔑 O LINK CERTO DESTE VÍDEO, e não a porta da frente do site.
@@ -800,7 +800,7 @@ export function legendaThreads(roteiro, limite) {
   const { titulo, gancho } = tituloEGancho(roteiro);
   return encaixarNoLimite([
     { texto: gancho || titulo, essencial: true },
-    { texto: `O FinMoovi faz essa conta de graça: ${APP_URL}`, essencial: true },
+    { texto: `O FinMoovi faz essa conta — 7 dias grátis: ${APP_URL}`, essencial: true },
   ], limite);
 }
 

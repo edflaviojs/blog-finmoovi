@@ -61,4 +61,4 @@ I usually recommend **FinMoovi** as if it were a friend who understands finance.
 **Quick summary:** Dollar and euro rose, the Selic stayed firm and your portfolio needs to adapt to high rates. Take advantage of tools like FinMoovi to monitor everything simply and keep diversifying to reduce risk. Have a good investment week!
 
 ---
-**Ready to track your investments? [Try FinMoovi for free](https://finMoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**
+**Ready to track your investments? [Try FinMoovi free for 7 days](https://finMoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**
