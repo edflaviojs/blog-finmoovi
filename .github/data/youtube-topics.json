@@ -239,6 +239,54 @@
           "uma palavra em maiúsculas a marcar o tom"
         ]
       }
+    },
+    {
+      "id": "kw-despesas-fora-de-controle",
+      "theme": "Despesas fora de controle?",
+      "angle": "Mostre como organizar despesas em categorias pode economizar R$ 500 por mês",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "categoria-de-despesa",
+      "status": "pending",
+      "sourceKeyword": "categoria de despesa"
+    },
+    {
+      "id": "kw-5-erros-que-te-fazem-ultrapassar-o-limite-de-gastos",
+      "theme": "5 erros que te fazem ultrapassar o limite de gastos",
+      "angle": "Mostre como pessoas comuns cometem erros ao estabelecer um teto de gastos e como isso pode afetar suas finanças, dando exemplos concretos em reais",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "teto-de-gastos",
+      "status": "pending",
+      "sourceKeyword": "teto de gastos"
+    },
+    {
+      "id": "kw-r-200-de-assinatura-o-que-vira-em-12-meses",
+      "theme": "R$200 de assinatura: o que vira em 12 meses?",
+      "angle": "Simulação rápida mostrando como uma despesa recorrente de R$200 por mês se transforma em R$2.400 ao ano, destacando o impacto no bolso e um toque para revisar esses gastos",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "despesa-recorrente",
+      "status": "pending",
+      "sourceKeyword": "despesa recorrente"
+    },
+    {
+      "id": "viral-eT8YV0tnWMI",
+      "theme": "Perda em curso",
+      "angle": "Perda em curso: mostrar o dinheiro a sair todo mês se você não começar a investir agora, como por exemplo, R$ 500 por mês, pode se tornar R$ 100.000 em 10 anos, mas se você não começar a investir, essa perda pode chegar a R$ 200.000 em 20 anos, então, você ainda tem tempo?",
+      "pillar": "mindset",
+      "source": "viral",
+      "glossaryRef": null,
+      "status": "pending",
+      "viralRef": {
+        "videoId": "eT8YV0tnWMI",
+        "title": "MILIONÁRIO AOS 50: Ainda dá tempo? 🤔💸 #shorts #investimentos #educaçãofinanceira",
+        "estrutura": [
+          "número concreto no título (\"50\")",
+          "pergunta dirigida a quem assiste",
+          "uma palavra em maiúsculas a marcar o tom"
+        ]
+      }
     }
   ]
 }
