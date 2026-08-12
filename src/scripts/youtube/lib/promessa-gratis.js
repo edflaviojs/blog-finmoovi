@@ -83,6 +83,14 @@ const TROCAS = [
   [/(?<=^|[\s,;:—-])É de graça\b/g, 'São 7 dias grátis'],
   [/(?<=^|[\s,;:—-])é de graça\b/g, 'são 7 dias grátis'],
   [/(?<=^|[\s,;:—-])é gr[áa]tis\b/gi, 'são 7 dias grátis'],
+  /**
+   * ⚠️ **"DE GRAÇA" NO FIM DA FRASE PEDE TRAVESSÃO, NÃO "COM".** Terceira coisa que
+   * só o ensaio contra o canal mostrou: a descrição real acabava em *"use o app
+   * FinMoovi pra simular sua dívida de graça"*, e o "com" colava o prazo à DÍVIDA —
+   * *"simular sua dívida com 7 dias grátis"*. Com travessão o prazo volta a ser do
+   * app, que é de quem ele é.
+   */
+  [/ de graça(?=[.!?]|$)/gim, ' — são 7 dias grátis'],
   [/(?<!dias )\bde graça\b/gi, 'com 7 dias grátis'],
 
   /**
@@ -253,6 +261,12 @@ const CASOS = [
     nome: 'o convite do comentário',
     de: 'Comenta FINMOOVI e receba o app grátis.',
     esperado: 'Comenta FINMOOVI e receba o app com 7 dias grátis.',
+  },
+  {
+    // ♦ Do ensaio contra o canal: com "com", o prazo colava-se à DÍVIDA.
+    nome: '🔴 "de graça" a fechar a frase leva travessão, senão o prazo muda de dono',
+    de: 'Entenda a diferença entre SAC e Price e use o app FinMoovi pra simular sua dívida de graça.',
+    esperado: 'Entenda a diferença entre SAC e Price e use o app FinMoovi pra simular sua dívida — são 7 dias grátis.',
   },
 ];
 
