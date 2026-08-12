@@ -8,6 +8,7 @@ locale: "es"
 tags: ["CDB","Tesouro Selic","inversiones","renta fija","riesgos","beneficios","cdb vs tesouro selic","¿cuál rinde más","renta fija comparación"]
 author: "FinMoovi"
 publishedAt: 2026-06-24
+updatedAt: "2026-08-12"
 readingTime: 4
 featured: false
 translationKey: "cdb-vs-tesouro-selic-qual-rende-mais-em-2026"
@@ -57,4 +58,15 @@ Ahora que usted tiene una idea mejor sobre el certificado de depósito y los bon
 ![Próximos Pasos](/images/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026-6.webp)
 
 Para acompañar sus inversiones en un solo lugar, pruebe [FinMoovi gratis por 7 días](https://finmoovi.com) — multi‑moneda, informes inteligentes y 100 % offline.
+
+## ¿Tesouro Selic o CDB?
+
+Si estás decidiendo entre Tesouro Selic y un CDB, lo esencial es mirar tres aspectos: liquidez, riesgo y objetivo de rentabilidad. 
+
+1. **Liquidez** – El Tesouro Selic permite rescate en cualquier día hábil, mientras que muchos CDBs exigen que el dinero quede inmovilizado hasta la fecha de vencimiento; algunos ofrecen liquidez diaria, pero con condiciones diferentes.  
+2. **Riesgo** – Ambos están respaldados por el gobierno y el Banco Central, lo que los coloca en la categoría de inversión de bajo riesgo. Sin embargo, el Tesouro Selic está directamente ligado a la tasa Selic, mientras que el CDB depende de la salud financiera del banco emisor; elegir una institución con buena reputación minimiza esa preocupación.  
+3. **Objetivo de rentabilidad** – Si buscas que tu dinero siga el ritmo de la tasa básica de la economía, el Tesouro Selic es la opción más alineada. Si prefieres una posible rentabilidad ligeramente superior a cambio de aceptar una fecha de vencimiento fija, un CDB puede ser más atractivo.
+
+En la práctica, muchos inversores combinan ambos: usan el Tesouro Selic para el fondo de emergencia y el CDB para metas de medio plazo. La clave está en que la elección se ajuste a tu horizonte de tiempo y a cuánta flexibilidad necesites.
+
 <!-- SCHEMA_AUTO:{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué es el certificado de depósito?","acceptedAnswer":{"@type":"Answer","text":"El certificado de depósito es un tipo de inversión de renta fija ofrecida por bancos e instituciones financieras. Funciona como un préstamo que usted hace al banco, y a cambio, el banco paga una tasa de interés. El certificado de depósito puede ser pre‑fijado, post‑fijado o híbrido, cada uno con su propia forma de calcular los intereses."}},{"@type":"Question","name":"¿Qué son los bonos del gobierno?","acceptedAnswer":{"@type":"Answer","text":"Los bonos del gobierno, por otro lado, son una inversión de renta fija emitida por el gobierno, con garantía estatal. Están indexados a la tasa base del banco central, que es la tasa básica de interés de la economía definida por el banco central. Esto significa que el rendimiento de los bonos del gobierno…"}}]} -->
