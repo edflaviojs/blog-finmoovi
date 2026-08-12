@@ -29,6 +29,9 @@ import { validateShortScript } from '../youtube/lib/schema-short.js';
 import { prateleirasDoVideo, PLAYLIST_GERAL } from '../youtube/lib/playlists.js';
 import { inserirNoShort, inserirNoLongo, conferirOportunidade, fazerSlugDoDono } from '../../../functions/api/_oportunidade-fila.js';
 import { proximoLongo } from '../youtube/pick-next-longo.js';
+// ⚠️ O guarda do canal também só corre quando é chamado pelo nome — importá-lo não
+//    pergunta nada ao YouTube nem manda email.
+import { conferirEstados } from '../youtube/guarda.js';
 import { validarNarrativa, buildPromptNarrativa } from '../youtube/roteiro-narrativa.js';
 import { jaSaiuVideoNoDia, produziuNoDia } from '../youtube/outbox.js';
 import { readFileSync } from 'fs';
@@ -763,6 +766,68 @@ console.log('\n🕐 OS HORÁRIOS — o cron, o turno e a estreia têm de bater\n
       wf.indexOf('- name: O guardião do agendado') < wf.indexOf('run: npm ci'),
       `guardião em ${wf.indexOf('- name: O guardião do agendado')}, npm ci em ${wf.indexOf('run: npm ci')}`);
   }
+}
+
+// ═══ 🔴 O GUARDA DO CANAL NÃO PODE ACUSAR UM SHORT AGENDADO — 12/08/2026 ══════
+/**
+ * **Apanhado a rever o trabalho, e teria dado um alarme falso todos os dias.**
+ *
+ * A regra do guarda dizia `v.formato === 'longo' && v.publishAt && …` — certa enquanto só
+ * o longo estreava com hora marcada. No dia em que os Shorts passaram a subir privados,
+ * um Short à espera da sua hora caía no *"todo o resto já devia estar no ar"* e era
+ * acusado de ter **saído do ar**. O guarda corre às 08:10 e o de 16s sobe às 08:40:
+ * bastava o cron atrasar meia hora — e já atrasou 112 minutos.
+ *
+ * ⚠️ **É a família de defeito nº1 desta casa: regra velha a correr em estrutura nova.**
+ * E o estrago não seria um incómodo — um alarme falso ensina quem o lê a ignorá-lo.
+ */
+console.log('\n🛡️  O GUARDA DO CANAL — um Short agendado não é um Short que saiu do ar\n');
+{
+  const AGORA = new Date('2026-08-12T09:00:00.000Z').getTime();
+  const short = (extra) => ({ slug: 's16', formato: 'short16', videoId: 'vvv', ...extra });
+
+  ok('🔴 Short privado, à espera da hora marcada → NÃO alarma',
+    conferirEstados(
+      [short({ publishAt: '2026-08-12T11:40:00.000Z' })],
+      { vvv: { privacidade: 'private', estreia: '2026-08-12T11:40:00.000Z' } }, AGORA,
+    ).length === 0);
+
+  ok('⚠️ mas se DEIXOU de estar agendado antes da hora, alarma',
+    conferirEstados(
+      [short({ publishAt: '2026-08-12T11:40:00.000Z' })],
+      { vvv: { privacidade: 'private', estreia: null } }, AGORA,
+    ).some((a) => /DEIXOU DE ESTAR AGENDADO/.test(a)));
+
+  ok('⚠️ e se a hora no YouTube não bate com a do caderno, avisa',
+    conferirEstados(
+      [short({ publishAt: '2026-08-12T11:40:00.000Z' })],
+      { vvv: { privacidade: 'private', estreia: '2026-08-12T18:40:00.000Z' } }, AGORA,
+    ).some((a) => /o caderno diz/.test(a)));
+
+  /**
+   * ⚠️ **E O ALARME VERDADEIRO CONTINUA A DISPARAR.** Um Short que subiu público (sem
+   * hora marcada) e está privado saiu mesmo do ar — afrouxar isto seria trocar um alarme
+   * falso por uma cegueira.
+   */
+  ok('🔴 Short SEM hora marcada e privado → alarma (esse saiu mesmo do ar)',
+    conferirEstados([short({})], { vvv: { privacidade: 'private', estreia: null } }, AGORA)
+      .some((a) => /saiu do ar/.test(a)));
+  ok('e depois da hora passar, exige-se público',
+    conferirEstados(
+      [short({ publishAt: '2026-08-12T08:40:00.000Z' })],
+      { vvv: { privacidade: 'private', estreia: null } }, AGORA,
+    ).some((a) => /saiu do ar/.test(a)));
+  ok('✅ e público depois da hora está certo',
+    conferirEstados(
+      [short({ publishAt: '2026-08-12T08:40:00.000Z' })],
+      { vvv: { privacidade: 'public', estreia: null } }, AGORA,
+    ).length === 0);
+
+  ok('⚠️ e o vídeo LONGO continua a ser tratado como sempre',
+    conferirEstados(
+      [{ slug: 'l', formato: 'longo', videoId: 'lll', publishAt: '2026-08-16T22:00:00.000Z' }],
+      { lll: { privacidade: 'private', estreia: '2026-08-16T22:00:00.000Z' } }, AGORA,
+    ).length === 0);
 }
 
 console.log(`\n${'═'.repeat(72)}`);

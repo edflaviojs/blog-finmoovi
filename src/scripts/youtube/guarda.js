@@ -15,9 +15,15 @@
  *
  * | formato | como sobe | o que aqui se exige |
  * |---|---|---|
- * | **longo, antes da estreia** | privado, com `publishAt` | continuar **privado** e à MESMA hora |
- * | **longo, depois da estreia** | o YouTube torna-o público | continuar **público** |
- * | **50s e 16s** | já público (§ auditoria de 03/08) | continuar **público** |
+ * ♦ **12/08/2026 — A REGRA DEIXOU DE SER SOBRE O FORMATO.** Os dois Shorts passaram a
+ * subir privados três horas antes, com hora marcada, como o longo já fazia. O que decide
+ * é **haver ou não uma hora marcada por cumprir**:
+ *
+ * | estado | como está | o que aqui se exige |
+ * |---|---|---|
+ * | **qualquer um, com hora marcada por vir** | privado, com `publishAt` | continuar **privado** e à MESMA hora |
+ * | **qualquer um, hora já passada** | o YouTube torna-o público | continuar **público** |
+ * | **subiu público (sem hora marcada)** | público desde o envio | continuar **público** |
  *
  * E há uma terceira pergunta, que nenhum programa fazia: **saiu o vídeo de ontem?**
  * Foi assim que o canal ficou dois dias sem vídeo em 07/08 sem ninguém reparar.
@@ -123,7 +129,22 @@ export function conferirEstados(lista, estados, agora = Date.now()) {
      * ficar sem vídeo — o vídeo estava marcado, deixou de estar, e a estreia combinada
      * nunca ia acontecer.
      */
-    const porEstrear = v.formato === 'longo' && v.publishAt && new Date(v.publishAt).getTime() > agora;
+    /**
+     * 🔴 **DEIXOU DE SER SÓ DO LONGO — 12/08/2026.** Esta linha dizia
+     * `v.formato === 'longo' && v.publishAt && …`, e estava certa enquanto só o longo
+     * estreava com hora marcada. Nesse mesmo dia os dois Shorts passaram a subir
+     * **privados três horas antes**, e a condição velha a correr na estrutura nova dava
+     * o pior tipo de alarme: um Short à espera da sua hora seria acusado de ter
+     * **"saído do ar"**. O guarda corre às 08:10 e o de 16s sobe às 08:40 — bastava o
+     * cron do GitHub atrasar meia hora (já atrasou 112 minutos) para o alarme falso sair.
+     *
+     * ⚠️ **E um alarme falso não é um incómodo: é a trava a ensinar quem a lê a
+     * ignorá-la** — a mesma lição da trava do rodízio cego (§68.10).
+     *
+     * A regra certa nunca foi sobre o formato: **um vídeo com hora marcada no futuro
+     * tem de estar privado à espera dela.** Vale para os três formatos.
+     */
+    const porEstrear = Boolean(v.publishAt) && new Date(v.publishAt).getTime() > agora;
     if (porEstrear) {
       const quando = emPortugues(new Date(v.publishAt));
       if (e.privacidade !== 'private' || !e.estreia) {
