@@ -314,6 +314,110 @@ function contarPublicados() {
   } catch { return 0; }
 }
 
+// ─── 🔴 O CONSERTO DO TEMPO DE TELA DO APP — 12/08/2026 ──────────────────────
+/**
+ * ═══ O DIA QUE ISTO CUSTOU ═══
+ * 12/08/2026, corrida 31576147535: **quatro tentativas em TRÊS temas, doze ao todo,
+ * todas mortas no mesmo muro** — *"cena 4 shot 1: app «calculadora» segura só ~2,3s de
+ * tela (mínimo 2,5s)"*. O canal ficou sem Short novo, e só não ficou sem vídeo porque
+ * havia um de ontem na fila.
+ *
+ * ⚠️ **E É UMA DIFERENÇA DE DOIS DÉCIMOS DE SEGUNDO.** Pedir ao modelo que tente outra
+ * vez é pedir-lhe que acerte por sorte numa conta que ele não vê: o tempo de tela não
+ * está escrito em lado nenhum do que ele escreve — **é CALCULADO** a partir de quantas
+ * palavras separam uma âncora da seguinte. Ele escolhe números; a aritmética é nossa.
+ *
+ * ═══ POR QUE ISTO NÃO INVENTA NADA ═══
+ * O modelo escolhe a âncora **por NÚMERO** (`ancoraIndice`), e é o nosso código que a
+ * transforma em palavra. Este conserto mexe **só nesse número** — nem uma letra da
+ * narração, nem uma imagem, nem um som. O que muda é **QUANDO** a tela do app entra,
+ * e entrar mais cedo (ou sair mais tarde) é exactamente o que a regra do dono pede:
+ * *"sempre que for usar os nossos b-rolls o tempo de tela não pode ser 2,5s — tem que
+ * ser o dobro"*.
+ *
+ * ═══ ⚠️ E POR QUE NÃO HÁ AQUI NENHUMA CONTA DE TEMPO ═══
+ * Este conserto **não sabe** calcular tempo de tela, de propósito. Ele propõe uma
+ * mudança, **volta a montar o roteiro e volta a chamar o validador de produção**, e só
+ * fica com a mudança se o número de erros tiver DESCIDO. Copiar para aqui a fórmula do
+ * `estimateShotScreenTimes` seria a mesma conta em dois sítios — a família de defeito
+ * nº1 desta casa, a mesma do respiro que vivia em quatro ficheiros.
+ *
+ * @returns {{plano: object, consertos: string[]}}
+ */
+const MOVIMENTOS_MAX = 12;
+
+export function esticarTelaDoApp(t, narrativa, plano, validar) {
+  const consertos = [];
+  const contarErros = (p) => {
+    const v = validar(montarRoteiro(t, narrativa, p));
+    return { total: (v.errors || []).length, doApp: (v.errors || []).filter((e) => /segura só ~/.test(e)).length };
+  };
+
+  let atual = contarErros(plano);
+  if (!atual.doApp) return { plano, consertos };
+
+  for (let passo = 0; passo < MOVIMENTOS_MAX && atual.doApp > 0; passo++) {
+    let melhorou = false;
+
+    for (let b = 0; b < (plano.blocos || []).length && !melhorou; b++) {
+      const shots = (plano.blocos[b] && plano.blocos[b].shots) || [];
+      const legais = palavrasAncoraveis((narrativa.blocos[b] && narrativa.blocos[b].fala) || '');
+      for (let j = 0; j < shots.length && !melhorou; j++) {
+        if (!shots[j] || !shots[j].visual || shots[j].visual.type !== 'app') continue;
+
+        /**
+         * As duas maneiras honestas de dar tela a um shot, por esta ordem:
+         *  1. **empurrar o SEGUINTE para mais tarde** — o app fica mais tempo e o que
+         *     vem a seguir entra depois. É a primeira porque não mexe no princípio
+         *     da cena, que é onde o gancho vive.
+         *  2. **puxar o APP para mais cedo** — serve quando o app é o primeiro shot e
+         *     não há nada atrás dele para empurrar.
+         * ⚠️ **Os índices têm de ficar sempre a subir:** a leitura das âncoras é uma
+         * varredura para a frente, e uma âncora fora de ordem não é encontrada.
+         *
+         * ⚠️ **E CADA UMA VAI ATÉ AO FIM, palavra a palavra.** A minha 1ª versão tentava
+         * UM passo de cada vez e só ficava com ele se o total de erros descesse — mas um
+         * passo raramente chega (o buraco medido era de mais de dois segundos), portanto
+         * nenhum passo isolado melhorava nada e o conserto não fazia rigorosamente nada.
+         * **Apanhado pela prova, e não em produção.**
+         */
+        const candidatos = [];
+        if (j + 1 < shots.length) {
+          const limite = j + 2 < shots.length ? Number(shots[j + 2].ancoraIndice) - 1 : legais.length;
+          for (let novo = Number(shots[j + 1].ancoraIndice) + 1; novo <= limite; novo++) {
+            candidatos.push({ alvo: j + 1, valor: novo, como: 'o shot seguinte entra mais tarde' });
+          }
+        }
+        {
+          const minimo = j > 0 ? Number(shots[j - 1].ancoraIndice) + 1 : 1;
+          for (let novo = Number(shots[j].ancoraIndice) - 1; novo >= minimo; novo--) {
+            candidatos.push({ alvo: j, valor: novo, como: 'a tela do app entra mais cedo' });
+          }
+        }
+
+        for (const c of candidatos) {
+          const tentativa = structuredClone(plano);
+          tentativa.blocos[b].shots[c.alvo].ancoraIndice = c.valor;
+          const depois = contarErros(tentativa);
+          // ⚠️ **Só se o TOTAL descer.** Se esta mudança apagar o erro do tempo de tela
+          //    e acender outro qualquer, não é um conserto — é uma troca de defeito.
+          if (depois.total < atual.total) {
+            plano.blocos[b].shots[c.alvo].ancoraIndice = c.valor;
+            consertos.push(`bloco ${b + 1} shot ${j + 1} (app "${shots[j].visual.app}"): ${c.como}`);
+            atual = depois;
+            melhorou = true;
+            break;
+          }
+        }
+      }
+    }
+
+    if (!melhorou) break;
+  }
+
+  return { plano, consertos };
+}
+
 // ─── montagem do roteiro final ───────────────────────────────────────────────
 /** Converte o plano (índices) no roteiro que o render e o TTS consomem. */
 export function montarRoteiro(t, narrativa, plano) {
@@ -435,6 +539,15 @@ export async function gerarCoreografia(t, narrativa, { tentativas = 4 } = {}) {
       console.log(`  ⚠ tentativa ${i}/${tentativas} reprovada (plano): ${local.erros.join(' | ')}`);
       continue;
     }
+
+    /**
+     * ⛑️ **ANTES DE JULGAR, CONSERTA-SE O QUE TEM CONSERTO HONESTO** (12/08/2026).
+     * O tempo de tela do app é aritmética que o modelo não vê — pedir-lhe que a acerte
+     * é pedir sorte. Aqui move-se só o NÚMERO da âncora e mede-se outra vez. Ver
+     * `esticarTelaDoApp`: em 12/08 este erro sozinho matou doze tentativas e três temas.
+     */
+    const { consertos } = esticarTelaDoApp(t, narrativa, plano, validateShortScript);
+    for (const c of consertos) console.log(`  ⛑️  ${c}`);
 
     // Só agora vira roteiro e passa pelo validador de sempre — reaproveitado, não
     // reescrito: ele já sabe de sons repetidos, tempo de tela do app e duração.

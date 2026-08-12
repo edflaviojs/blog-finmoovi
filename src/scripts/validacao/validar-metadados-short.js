@@ -18,11 +18,24 @@ import {
   buildMetadata, deterministicMeta, respostaCortada, MAX_PALAVRAS_TITULO_SHORT,
 } from '../youtube/upload-short.js';
 import { avaliarRetencao, RETENCAO_MINIMA } from '../youtube/retencao.js';
+/**
+ * ⚠️ **IMPORTAR A COREOGRAFIA NÃO CHAMA IA NENHUMA.** Ela só corre quando é chamada
+ * pelo nome (o `executadoDireto` no fim do ficheiro) — a mesma guarda do `capa-manus.js`,
+ * e pela mesma razão: um `import` de teste não pode gastar dinheiro.
+ */
+import { esticarTelaDoApp, montarRoteiro } from '../youtube/coreografia.js';
+import { validateShortScript } from '../youtube/lib/schema-short.js';
 import { prateleirasDoVideo, PLAYLIST_GERAL } from '../youtube/lib/playlists.js';
 import { inserirNoShort, inserirNoLongo, conferirOportunidade, fazerSlugDoDono } from '../../../functions/api/_oportunidade-fila.js';
 import { proximoLongo } from '../youtube/pick-next-longo.js';
 import { validarNarrativa, buildPromptNarrativa } from '../youtube/roteiro-narrativa.js';
-import { jaSaiuVideoNoDia } from '../youtube/outbox.js';
+import { jaSaiuVideoNoDia, produziuNoDia } from '../youtube/outbox.js';
+import { readFileSync } from 'fs';
+import { join, dirname, resolve } from 'path';
+import { fileURLToPath } from 'url';
+
+/** A raiz do projeto — para as provas que leem o workflow a sério. */
+const RAIZ = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
 
 let passou = 0;
 let falhou = 0;
@@ -457,6 +470,144 @@ console.log('\n10. A CHAMADA DA FALA — uma só, verdadeira nas oito redes');
     /PROCURAR o app pelo nome/.test(prompt));
   ok('e o prompt explica PORQUÊ (as oito redes)',
     /OITO redes/.test(prompt));
+}
+
+// ═══ 🔴 O TEMPO DE TELA DO APP CONSERTA-SE, EM VEZ DE MATAR O DIA — 12/08/2026 ═══
+/**
+ * ⚠️ **O DIA QUE ISTO CUSTOU.** Corrida 31576147535: quatro tentativas em TRÊS temas,
+ * doze ao todo, todas mortas no mesmo muro — *"app «calculadora» segura só ~2,3s de
+ * tela (mínimo 2,5s)"*. Dois décimos de segundo, e o canal sem Short novo.
+ *
+ * ⚠️ **ESTAS PROVAS SÃO DE COMPORTAMENTO.** Constroem um plano com o defeito, chamam o
+ * conserto e voltam a medir com o **validador de produção**. Uma prova que procurasse a
+ * palavra "esticar" no ficheiro ficaria verde com o conserto a não fazer nada.
+ */
+console.log('\n⏱️  O TEMPO DE TELA DO APP — conserta-se em vez de reprovar\n');
+{
+  const NARRATIVA = {
+    fioCondutor: 'ralo',
+    blocos: [
+      { papel: 'gancho', fala: 'Você paga o mínimo da fatura todo mês e acha que está resolvendo alguma coisa?' },
+      { papel: 'empatia', fala: 'Ela pagava certinho todo mês e mesmo assim a conta nunca diminuía de verdade.' },
+      { papel: 'virada', fala: 'Quando ela somou tudo, descobriu que estava pagando quase o dobro sem perceber.' },
+      { papel: 'demonstracao', fala: 'Joguei esses pagamentos dentro do FinMoovi e ele mostrou na hora quanto sobrava mesmo.' },
+      { papel: 'convite', fala: 'Quer fazer essa conta com a sua dívida? Procura o app FinMoovi. É de graça.' },
+      { papel: 'fecho', fala: 'Pagando um pouco a mais por mês, o peso diminui rápido. Dinheiro sem controle é dinheiro dos outros.' },
+    ],
+  };
+  const T = { slug: 'prova-tempo-de-tela', term: 'pagar o mínimo da fatura', category: 'basico' };
+  const shot = (n, visual, sfx) => (sfx ? { ancoraIndice: n, visual, sfx } : { ancoraIndice: n, visual });
+  /**
+   * O bloco da demonstração com a tela do app **espremida**: ela entra na palavra 1 e o
+   * shot seguinte entra logo na 2 — exactamente a forma do defeito de hoje.
+   */
+  const planoDoente = () => ({
+    introFrase: 'Você paga o mínimo?',
+    ctaTexto: 'Procura o FinMoovi',
+    blocos: [
+      { shots: [shot(1, { type: 'text', text: 'paga o mínimo?' }), shot(5, { type: 'icon', icon: 'question' })] },
+      { shots: [shot(1, { type: 'text', text: 'todo mês' }), shot(6, { type: 'metaphor', metaphor: 'ralo' })] },
+      { shots: [shot(1, { type: 'text', text: 'o dobro' }), shot(6, { type: 'icon', icon: 'warning' })] },
+      { shots: [shot(1, { type: 'app', app: 'calculadora' }), shot(2, { type: 'text', text: 'na hora' })] },
+      { shots: [shot(1, { type: 'text', text: 'é de graça' }), shot(6, { type: 'icon', icon: 'question' })] },
+      { shots: [shot(1, { type: 'text', text: 'diminui rápido' }), shot(6, { type: 'icon', icon: 'warning' })] },
+    ],
+  });
+
+  const doente = planoDoente();
+  const antes = validateShortScript(montarRoteiro(T, NARRATIVA, doente));
+  const erroDoApp = (v) => (v.errors || []).filter((e) => /segura só ~/.test(e));
+  ok('🔴 o plano doente reproduz o defeito de 12/08 (a tela do app espremida)',
+    erroDoApp(antes).length === 1, erroDoApp(antes).join(' | ') || 'não reproduziu');
+
+  const { plano: curado, consertos } = esticarTelaDoApp(T, NARRATIVA, planoDoente(), validateShortScript);
+  const depoisRoteiro = montarRoteiro(T, NARRATIVA, curado);
+  const depois = validateShortScript(depoisRoteiro);
+  ok('✅ e o conserto tira-o, sem precisar de outra tentativa de IA',
+    erroDoApp(depois).length === 0, erroDoApp(depois).join(' | '));
+  ok('e diz o que fez', consertos.length >= 1, consertos.join(' · '));
+  ok('🔴 o total de erros DESCE (não se troca um defeito por outro)',
+    (depois.errors || []).length < (antes.errors || []).length,
+    `${(antes.errors || []).length} → ${(depois.errors || []).length}`);
+
+  /**
+   * 🔴 **A PROVA QUE GUARDA A FRONTEIRA:** o conserto mexe no NÚMERO da âncora e em
+   * mais nada. Se um dia alguém o puser a reescrever narração, imagem ou som para
+   * fazer a conta bater, isto acende.
+   */
+  const antesRoteiro = montarRoteiro(T, NARRATIVA, planoDoente());
+  ok('🔴 a NARRAÇÃO não muda uma letra',
+    JSON.stringify(depoisRoteiro.scenes.map((s) => s.narration)) === JSON.stringify(antesRoteiro.scenes.map((s) => s.narration)));
+  ok('🔴 as IMAGENS e os SONS não mudam',
+    JSON.stringify(depoisRoteiro.scenes.map((s) => s.shots.map((x) => [x.visual, x.sfx])))
+      === JSON.stringify(antesRoteiro.scenes.map((s) => s.shots.map((x) => [x.visual, x.sfx]))));
+  ok('e o número de shots é o mesmo (nenhum foi deitado fora)',
+    JSON.stringify(depoisRoteiro.scenes.map((s) => s.shots.length))
+      === JSON.stringify(antesRoteiro.scenes.map((s) => s.shots.length)));
+
+  /**
+   * ⚠️ **E NUM PLANO SÃO NÃO MEXE NADA.** Um conserto que "arruma" o que já estava bom
+   * é a maneira mais rápida de estragar um vídeo aprovado.
+   */
+  const sao = planoDoente();
+  sao.blocos[3].shots[1].ancoraIndice = 8;
+  const saoAntes = JSON.stringify(sao);
+  const { consertos: nenhum } = esticarTelaDoApp(T, NARRATIVA, sao, validateShortScript);
+  ok('⚠️ num plano sem o defeito, não toca em nada',
+    nenhum.length === 0 && JSON.stringify(sao) === saoAntes, nenhum.join(' · '));
+}
+
+// ═══ 🛟 O GUARDIÃO DA PRODUÇÃO — 12/08/2026 ═══════════════════════════════════
+/**
+ * ⚠️ **A REPESCAGEM QUE JÁ EXISTIA É DA ENTREGA, NÃO DA PRODUÇÃO.** Em 12/08 a fábrica
+ * não produziu nada e a repescagem das 17h não tinha o que entregar. Estas provas
+ * guardam a segunda ronda de PRODUÇÃO, e sobretudo o alinhamento entre o horário dela
+ * e a guarda que a trava — o defeito que já mordeu no Short de 16s: *um formato novo
+ * desligava a rede de segurança do outro, em silêncio.*
+ */
+console.log('\n🛟 O GUARDIÃO DA PRODUÇÃO — a segunda ronda, e o que a impede de duplicar\n');
+{
+  const wf = readFileSync(join(RAIZ, '.github', 'workflows', 'youtube-short-render.yml'), 'utf-8');
+  const crons = [...wf.matchAll(/^\s*-\s*cron:\s*'([^']+)'/gm)].map((m) => m[1]);
+  ok('🔴 a produção passa a ter DUAS rondas por dia', crons.length === 2, crons.join(' · '));
+
+  const CRON_GUARDIAO = crons[1];
+  /**
+   * 🔴 **A PROVA QUE VALE MAIS DESTE BLOCO.** A guarda compara `github.event.schedule`
+   * com a hora do cron ESCRITA À MÃO. Se alguém mudar o horário e esquecer a guarda,
+   * ela deixa de reconhecer a ronda: a repescagem passa a produzir TODOS OS DIAS, um
+   * segundo vídeo por cima do primeiro, sem erro nenhum. Aqui as duas são comparadas.
+   */
+  ok('🔴 e a guarda conhece a hora exacta da segunda (mudar o cron sem mudar a guarda acende isto)',
+    wf.includes(`"\${{ github.event.schedule }}" = "${CRON_GUARDIAO}"`), CRON_GUARDIAO);
+
+  ok('a segunda ronda PERGUNTA se a fábrica já produziu hoje',
+    /outbox\.js produzido-hoje/.test(wf));
+  ok('e quando a resposta é "sim", acaba ali (sem gastar IA)',
+    /produzido-hoje\)" = "sim" \]; then[\s\S]{0,220}skip=true/.test(wf));
+  /**
+   * ⚠️ **A ORDEM IMPORTA:** a pergunta tem de vir ANTES de escolher o tema. Depois de
+   * `pick-next-short` a fila já se mexeu — e um dia normal gastaria um tema à toa.
+   */
+  ok('🔴 e pergunta ANTES de escolher o tema (senão a fila mexe-se num dia normal)',
+    wf.indexOf('produzido-hoje') < wf.indexOf('pick-next-short.js'));
+
+  // ── e a pergunta responde certo (comportamento, não texto) ──
+  const HOJE = '2026-08-12';
+  ok('sem nada produzido hoje, responde que não',
+    produziuNoDia(HOJE, [{ fileSlug: 'a', producedAt: '2026-08-11T07:53:35.075Z' }]) === false);
+  ok('com um vídeo feito hoje, responde que sim',
+    produziuNoDia(HOJE, [{ fileSlug: 'a', producedAt: '2026-08-12T06:40:00.000Z' }]) === true);
+  ok('⚠️ e com a fila VAZIA responde que não (é o caso do dia que falhou)',
+    produziuNoDia(HOJE, []) === false);
+  /**
+   * ⚠️ **O CASO QUE ENGANA:** a fila tem um vídeo — mas é o de ONTEM, que sobrou. O dia
+   * está coberto para a entrega e a fábrica continua parada. Foi exactamente isto que
+   * aconteceu em 12/08, e é por isto que esta pergunta olha o `producedAt` e não "a
+   * fila tem alguma coisa".
+   */
+  ok('🔴 um vídeo de ONTEM na fila NÃO conta como produção de hoje',
+    produziuNoDia(HOJE, [{ fileSlug: 'viral-jc7rFQLtrJg', producedAt: '2026-08-11T07:53:35.075Z' }]) === false);
 }
 
 console.log(`\n${'═'.repeat(72)}`);

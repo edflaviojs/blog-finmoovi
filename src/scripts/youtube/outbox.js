@@ -109,6 +109,31 @@ export function jaSaiuVideoNoDia(diaUTC, tracking, formato = '') {
   });
 }
 
+/**
+ * ♦ 12/08/2026 — O GUARDIÃO DA PRODUÇÃO (ordem do dono, depois de o Short de 50s não
+ * ter saído: *"tem que ir tentando até ele conseguir gerar"*).
+ *
+ * ⚠️ **A REPESCAGEM QUE JÁ EXISTIA É DA ENTREGA, NÃO DA PRODUÇÃO — e a diferença é o
+ * dia todo.** A das 17h BR pega num vídeo que **já está na fila** e entrega-o. Se a
+ * manhã não produziu nada, ela não tem o que entregar: em 12/08 o canal só se safou
+ * porque havia um vídeo de ontem à espera. **Guardar o trabalho não é o mesmo que
+ * fazê-lo.**
+ *
+ * Esta pergunta é a outra metade: *"hoje chegou a sair alguma coisa da fábrica?"*
+ *
+ * ⚠️ **Olha o `producedAt` da FILA, e não o tracking.** O tracking diz o que foi
+ * PUBLICADO, e o que se quer saber aqui é o que foi FEITO — um vídeo produzido de
+ * manhã e ainda por publicar conta, senão a repescagem produzia um segundo vídeo por
+ * cima do primeiro.
+ *
+ * ⚠️ **Só serve antes da ronda de entrega**, e é de propósito: depois de o carteiro
+ * levar o bilhete, o `producedAt` sai da fila com ele. A repescagem da produção corre
+ * de manhã, muito antes das 12h BR.
+ */
+export function produziuNoDia(diaUTC, fila) {
+  return (fila || []).some((e) => String((e && e.producedAt) || '').slice(0, 10) === diaUTC);
+}
+
 // ─── execução direta (CLI dos workflows) ─────────────────────────────────────
 const executadoDireto = process.argv[1] && process.argv[1].replace(/\\/g, '/').endsWith('outbox.js');
 if (executadoDireto) {
@@ -154,8 +179,14 @@ if (executadoDireto) {
     // isto, o Short de 16s das 8h40 respondia "sim" todos os dias e desligava a
     // repescagem do de 50s em silêncio.
     console.log(jaSaiuVideoNoDia(hoje, tracking, flags.formato || '') ? 'sim' : 'nao');
+  } else if (comando === 'produzido-hoje') {
+    // Mesma forma do `saiu-hoje`: imprime `sim`/`nao` e sai sempre a 0. O guardião da
+    // produção é o passo que menos pode falhar por engano — se ele rebentar, o dia sem
+    // vídeo passa a ser dois.
+    const hoje = flags.dia || new Date().toISOString().slice(0, 10);
+    console.log(produziuNoDia(hoje, fila) ? 'sim' : 'nao');
   } else {
-    console.error('comando desconhecido — use: enqueue | next | done | pending | saiu-hoje');
+    console.error('comando desconhecido — use: enqueue | next | done | pending | saiu-hoje | produzido-hoje');
     process.exit(1);
   }
 }

@@ -37,6 +37,23 @@ on:
     # 06:30 UTC todo dia: o vídeo fica pronto ~07h UTC e o dono publica de manhã
     # (Lisboa/BR). Horário ajustável — é só mudar o cron aqui.
     - cron: '30 6 * * *'
+    # ♦ 12/08/2026 — O GUARDIÃO DA PRODUÇÃO (ordem do dono: *"tem que ir tentando até
+    # ele conseguir gerar"*). 11:00 universais = 08h00 no Brasil.
+    #
+    # ⚠️ **A REPESCAGEM QUE JÁ EXISTIA É DA ENTREGA, NÃO DA PRODUÇÃO.** A das 17h BR
+    # (em `youtube-short-publish.yml`) pega num vídeo QUE JÁ ESTÁ NA FILA. Em 12/08 a
+    # fábrica não produziu nada — doze tentativas em três temas — e ela não tinha o que
+    # entregar: o canal só se safou porque havia um vídeo de ontem à espera.
+    # **Guardar o trabalho não é o mesmo que fazê-lo.**
+    #
+    # ⚠️ **QUATRO HORAS ANTES DA ENTREGA**, que é às 15:00 universais. Tem de sobrar
+    # tempo para escrever, dizer, legendar e renderizar dez mil fotogramas — uma
+    # repescagem que acaba depois do carteiro não serve de nada.
+    #
+    # ⚠️ **E SÓ TRABALHA SE A MANHÃ NÃO PRODUZIU** (ver o passo "Resolver slug e modo"):
+    # num dia normal ela pergunta, ouve "sim" e acaba em segundos, sem gastar um cêntimo
+    # de IA. É a mesma forma da repescagem da entrega, e pela mesma razão.
+    - cron: '0 11 * * *'
 
 # Necessário para commitar o roteiro gerado + o tracking do upload.
 permissions:
@@ -81,6 +98,26 @@ jobs:
       - name: Resolver slug e modo
         id: resolve
         run: |
+          # ♦ 12/08/2026 — O GUARDIÃO DA PRODUÇÃO, e ele começa por não fazer nada.
+          #
+          # ⚠️ Num dia normal a manhã produziu, esta ronda pergunta, ouve "sim" e acaba
+          # aqui — segundos, zero IA, zero créditos. Só quando a fábrica não deu nada é
+          # que ela se põe a trabalhar, e aí faz o ciclo inteiro (escolher, escrever,
+          # dizer, legendar, renderizar, pôr na fila).
+          #
+          # ⚠️ `github.event.schedule` diz QUAL dos dois crons disparou — não se adivinha
+          # pela hora do relógio, que é a lição do atraso do GitHub (até 112 minutos).
+          # ⚠️ E pergunta-se pela PRODUÇÃO (`producedAt` na fila), não pela entrega: um
+          # vídeo feito de manhã e ainda por publicar conta — senão esta ronda produzia
+          # um segundo vídeo por cima do primeiro.
+          if [ "${{ github.event.schedule }}" = "0 11 * * *" ]; then
+            if [ "$(node src/scripts/youtube/outbox.js produzido-hoje)" = "sim" ]; then
+              echo "✅ a fábrica já produziu hoje — o guardião não faz nada."
+              echo "skip=true" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            echo "::warning::🛟 GUARDIÃO DA PRODUÇÃO — hoje ainda não saiu vídeo nenhum da fábrica; a tentar outra vez."
+          fi
           if [ "${{ github.event_name }}" = "schedule" ] || [ "${{ github.event.inputs.auto }}" = "true" ]; then
             set +e
             SLUG="$(node src/scripts/youtube/pick-next-short.js)"
