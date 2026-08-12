@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-12T10:06:55.936Z",
-  "sourceCursor": 2,
+  "updatedAt": "2026-08-12T11:37:30.354Z",
+  "sourceCursor": 0,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -1668,8 +1668,10 @@
       "category": "glossario",
       "priority": 3,
       "source": "autocomplete",
-      "status": "pending",
-      "addedAt": "2026-08-10T08:20:10.977Z"
+      "status": "used",
+      "addedAt": "2026-08-10T08:20:10.977Z",
+      "usedAt": "2026-08-12T11:37:30.354Z",
+      "usedBy": "glossario-auto-diario"
     },
     {
       "keyword": "planejamento financeiro familiar",
