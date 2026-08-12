@@ -40,7 +40,7 @@ The installment isn't a one-time event — it's a fixed cost that quietly eats a
 
 ## In FinMoovi
 
-Add the installment as a **recurring expense** and it shows up automatically in your **cash flow** every month — so before signing anything you can see how much of your income the loan will actually take, and whether what's left still covers the essentials. No [spreadsheet](/en/posts/en-migrating-from-spreadsheets-to-a-financial-app), no guessing.
+Add the installment as a **recurring expense** and it shows up automatically in your **[cash flow](/en/glossario/en-cash-flow)** every month — so before signing anything you can see how much of your income the loan will actually take, and whether what's left still covers the essentials. No [spreadsheet](/en/posts/en-migrating-from-spreadsheets-to-a-financial-app), no guessing.
 
 - **Practical tip:** register the installment as recurring *before* you accept the offer, and look at the month that has the least money left over.
 - **Practical tip:** if the loan is to pay off other debts, make sure the new installment is smaller than the ones it replaces — otherwise you're not [saving](/en/posts/en-how-to-build-a-budget-that-actually-works-in-2026), just rearranging.

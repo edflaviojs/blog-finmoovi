@@ -32,4 +32,4 @@ Imagine you receive a [credit](/en/glossario/en-credit)‑card statement that lo
 
 
 
-The term “discounted cash flow” (DCF) is a method that tells you how much a series of future cash inflows and outflows is worth today. In plain words, it answers
+The term “discounted [cash flow](/en/glossario/en-cash-flow)” (DCF) is a method that tells you how much a series of future cash inflows and outflows is worth today. In plain words, it answers

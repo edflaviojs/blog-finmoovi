@@ -33,7 +33,7 @@ Debentures are debt securities issued by companies. When you buy a debenture, yo
 
 - Yield is generally higher than CDs and government bonds
 - Incentivized debentures are exempt from income tax
-- Diversification of fixed income
+- [Diversification](/en/glossario/en-diversification) of fixed income
 - Varied terms (2 to 15 years)
 
 ## Risks

@@ -20,7 +20,7 @@ seo:
 
 ## O que é a fatura do cartão mais  
 
-A fatura do cartão mais é o resumo mensal que aparece na sua conta quando você usa o cartão de crédito para pagar compras, serviços ou até mesmo transferências. Ela traz o valor total gasto, a data de vencimento, o limite disponível e, muitas vezes, uma lista de cada operação. Se você ainda não percebeu, a fatura pode ser a principal fonte de “surpresa” no fim do mês, principalmente quando o gasto ultrapassa o que você realmente pode pagar.
+A fatura do cartão mais é o resumo mensal que aparece na sua conta quando você usa o cartão de [crédito](/glossario/credito) para pagar compras, serviços ou até mesmo transferências. Ela traz o valor total gasto, a data de vencimento, o limite disponível e, muitas vezes, uma lista de cada operação. Se você ainda não percebeu, a fatura pode ser a principal fonte de “surpresa” no fim do mês, principalmente quando o gasto ultrapassa o que você realmente pode pagar.
 
 ![O que é a fatura do cartão mais  ](/images/glossario/fatura-do-cartao-mais-inline-1.webp)
 
@@ -28,7 +28,7 @@ A fatura do cartão mais é o resumo mensal que aparece na sua conta quando voc�
 
 ## Por que a fatura costuma virar dor de cabeça  
 
-Imagine que você fez três compras pequenas: um café diário, um lanche rápido e a assinatura de um streaming. Cada uma parece insignificante, mas somadas dão o preço de um aluguel. Quando a fatura chega, o valor total aparece de repente, sem explicação clara de onde cada centavo veio. Essa falta de transparência gera ansiedade, atrasos no pagamento e, em casos mais graves, juros que aumentam ainda mais a dívida.  
+Imagine que você fez três compras pequenas: um café diário, um lanche rápido e a assinatura de um streaming. Cada uma parece insignificante, mas somadas dão o preço de um aluguel. Quando a fatura chega, o valor total aparece de repente, sem explicação clara de onde cada centavo veio. Essa falta de transparência gera ansiedade, atrasos no pagamento e, em casos mais graves, [juros](/glossario/juros) que aumentam ainda mais a [dívida](/glossario/divida).  
 
 - **Falta de organização:** as despesas ficam espalhadas em diferentes categorias.  
 - **Datas diferentes:** alguns pagamentos têm vencimento imediato, outros são parcelados.  
@@ -54,7 +54,7 @@ Manter a fatura sob controle traz mais do que tranquilidade mental. Você ganha:
 
 - **Visibilidade real do consumo:** saber exatamente quanto está gastando em cada categoria.  
 - **Prevenção de juros:** ao pagar antes do vencimento, evita custos extras.  
-- **Planejamento financeiro:** permite ajustar o orçamento mensal para não comprometer outras metas, como uma viagem ou a reserva de emergência.  
+- **Planejamento financeiro:** permite ajustar o orçamento mensal para não comprometer outras metas, como uma viagem ou a [reserva de emergência](/ferramentas/calculadora-reserva).  
 
 ## Como o FinMoovi ajuda a dominar a fatura  
 
@@ -63,7 +63,7 @@ O FinMoovi foi pensado para quem quer transformar a fatura de um “monstro” e
 - **Captura inteligente:** tire uma foto da nota fiscal ou grave a voz ao fazer a compra; o app reconhece o valor e a categoria automaticamente.  
 - **Categorização automática:** o algoritmo classifica despesas em alimentação, transporte, lazer, etc., sem que você precise criar tags manualmente.  
 - **Multimoeda:** suporte a BRL, USD e EUR, com conversão em tempo real, ideal para quem compra online ou viaja.  
-- **Fluxo de caixa e relatórios:** visualize entradas e saídas em gráficos simples, detectando picos de gasto antes da fatura fechar.  
+- **[Fluxo de caixa](/glossario/fluxo-de-caixa) e relatórios:** visualize entradas e saídas em gráficos simples, detectando picos de gasto antes da fatura fechar.  
 - **Planejamento mensal / metas:** defina limites para cada categoria e acompanhe o progresso ao longo do mês.  
 - **Cartões de crédito / fatura:** sincronize suas contas de cartão; o app traz a fatura completa, destaca parcelas e calcula o total a pagar.  
 - **Modo compras:** crie listas de itens, veja o total em tempo real e evite exceder o orçamento antes mesmo de chegar ao caixa.  
@@ -83,7 +83,7 @@ O FinMoovi foi pensado para quem quer transformar a fatura de um “monstro” e
 Se você já domina o básico, pode ir além:
 
 - **Revisão semanal:** reserve 15 minutos toda sexta-feira para conferir as despesas registradas e ajustar categorias que ficaram fora do padrão.  
-- **Análise de tendências:** compare o gasto de cada mês nos últimos seis meses; identifique períodos de alta (como férias) e ajuste o orçamento futuro.  
+- **Análise de tendências:** compare o gasto de cada mês nos últimos seis meses; identifique períodos de alta (como [férias](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias)) e ajuste o orçamento futuro.  
 - **Uso de metas de economia:** defina um objetivo, como “economizar o equivalente a duas assinaturas de streaming”, e acompanhe o progresso no painel de metas do FinMoovi.  
 
 ## Comece hoje  

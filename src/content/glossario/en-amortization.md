@@ -13,7 +13,7 @@ readingTime: 1
 
 ## What is Amortization?
 
-Amortization is the act of paying the principal value of a [debt](/en/glossario/en-debt) gradually. Each installment you pay has two parts: the amortization (which reduces the outstanding balance) and the [interest](/en/glossario/en-interest) (which is the cost of the [loan](/en/glossario/en-loan)).
+Amortization is the act of paying the principal value of a [debt](/en/glossario/en-debt) gradually. Each installment you pay has two parts: the amortization (which reduces the [outstanding balance](/en/glossario/en-outstanding-balance)) and the [interest](/en/glossario/en-interest) (which is the cost of the [loan](/en/glossario/en-loan)).
 
 ## Types of amortization
 

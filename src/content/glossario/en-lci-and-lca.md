@@ -13,7 +13,7 @@ readingTime: 2
 
 ## What are tax‑exempt bank notes?
 
-Tax‑exempt bank notes (LCI) and tax‑exempt bank notes (LCA) are fixed‑income [investments](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026) issued by banks. The big advantage: they are **exempt from Income Tax** for individuals.
+Tax‑exempt bank notes (LCI) and tax‑exempt bank notes (LCA) are fixed‑income [investments](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026) issued by banks. The big advantage: they are **exempt from [Income Tax](/en/glossario/en-income-tax)** for individuals.
 
 ## Difference between tax‑exempt bank notes
 

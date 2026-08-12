@@ -19,10 +19,10 @@ seo:
 ---
 
 ## Why tracking expenses on WhatsApp feels like a nightmare  
-You’ve probably sent a photo of a receipt to a friend, saved a voice note about a grocery run, and then forgotten where that note went. The next month, the bank statement looks like a mystery novel: “Why did I spend the price of a daily coffee on a random app subscription?” The pain is real—​you know you’re spending, but the data lives scattered across chat bubbles, screenshots, and sticky notes. The result? Missed budgeting opportunities, surprise overdrafts, and a constant feeling that you’re “always broke” even when you earn enough to cover your rent.
+You’ve probably sent a photo of a receipt to a friend, saved a voice note about a grocery run, and then forgotten where that note went. The next month, the bank statement looks like a mystery novel: “Why did I spend the price of a daily coffee on a random app subscription?” The pain is real—​you know you’re spending, but the data lives scattered across chat bubbles, screenshots, and sticky notes. The result? Missed [budgeting](/en/posts/en-how-small-actions-can-transform-your-finances-in-2026) opportunities, surprise overdrafts, and a constant feeling that you’re “always broke” even when you earn enough to cover your rent.
 
 ## What is WhatsApp expense control?  
-WhatsApp expense control is simply the habit of using the messaging app to record, discuss, and sometimes even split money. It’s convenient because the app is already on your phone, but it’s also chaotic:  
+WhatsApp [expense control](/en/posts/en-budgeting-with-minimum-wage-practical-tips) is simply the habit of using the messaging app to record, discuss, and sometimes even split money. It’s convenient because the app is already on your phone, but it’s also chaotic:  
 
 ![Why tracking expenses on WhatsApp feels like a nightmare  ](/images/glossario/controle-de-gastos-whatsapp-inline-1.webp)
 
@@ -35,9 +35,9 @@ WhatsApp expense control is simply the habit of using the messaging app to recor
 In short, you’re trying to turn a conversation platform into a bookkeeping tool, and the results are usually inaccurate, incomplete, and stressful.
 
 ## How FinMoovi’s smart capture changes the game  
-Enter FinMoovi, the personal finance app that treats your WhatsApp habits as a feature, not a flaw. Its **smart capture** function lets you snap a photo of any receipt or record a quick voice note directly inside the app. The moment you do, FinMoovi’s AI (artificial intelligence) reads the numbers, identifies the merchant, and automatically places the expense into the right category—food, transport, entertainment, you name it. No more manual entry, no more hunting for the right chat thread.  
+Enter FinMoovi, the [personal finance](/en/posts/en-30-day-rule-for-purchases) app that treats your WhatsApp habits as a feature, not a flaw. Its **smart capture** function lets you snap a photo of any receipt or record a quick voice note directly inside the app. The moment you do, FinMoovi’s AI (artificial intelligence) reads the numbers, identifies the merchant, and automatically places the expense into the right category—food, transport, entertainment, you name it. No more manual entry, no more hunting for the right chat thread.  
 
-Because the capture works offline, you can use it on a subway or in a market without Wi‑Fi, and the data syncs later when you’re back online. The app also supports multiple currencies, so whether you’re paying in dollars, euros, or any local money, the expense is logged correctly and converted for a unified view of your cash flow.
+Because the capture works offline, you can use it on a subway or in a market without Wi‑Fi, and the data syncs later when you’re back online. The app also supports multiple currencies, so whether you’re paying in dollars, euros, or any local money, the expense is logged correctly and converted for a unified view of your [cash flow](/en/glossario/en-cash-flow).
 
 ![How FinMoovi’s smart capture changes the game  ](/images/glossario/controle-de-gastos-whatsapp-inline-3.webp)
 
@@ -59,12 +59,12 @@ Because every capture is stored, you can later generate a report that groups all
 
 **Practical tip:** *Use voice notes for on‑the‑go expenses.* When you’re in a hurry (e.g., paying for a taxi), just say “Taxi, 15 dollars” into the app. The AI will transcribe and categorize it, so you never have to write anything down later.  
 
-**Practical tip:** *Set weekly reminders.* FinMoovi can alert you every Sunday to review the week’s spending. The notification appears as a friendly ping, not a stern warning, making the review feel like a quick check‑in with a buddy.  
+**Practical tip:** *Set weekly [reminders](/en/posts/en-forgot-to-pay-a-bill-how-to-fix-it-in-2026).* FinMoovi can alert you every Sunday to review the week’s spending. The notification appears as a friendly ping, not a stern warning, making the review feel like a quick check‑in with a buddy.  
 
 Beyond these, consider these habits:  
 
 - Keep the app’s “shopping mode” active when you’re at the supermarket; add items to a list and watch the total update in real time.  
-- Link your credit cards so the app pulls the statement automatically, then reconcile with the receipts you captured.  
+- Link your [credit](/en/glossario/en-credit) cards so the app pulls the statement automatically, then reconcile with the receipts you captured.  
 - Use the “goals” feature to allocate a portion of your income to a vacation fund; the app will show you how each expense moves you closer or farther from that goal.
 
 ## Start today  

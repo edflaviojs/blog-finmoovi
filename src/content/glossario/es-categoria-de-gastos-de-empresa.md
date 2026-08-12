@@ -33,14 +33,14 @@ Una categoría de gastos de empresa es simplemente una etiqueta que asignas a ca
 ## Cómo organizar tus gastos con FinMoovi
   
 FinMoovi convierte la tarea de clasificar gastos en algo casi automático. Cuando recibes un recibo, solo haces una foto o lo dictas con tu voz; la app reconoce el texto (tecnología OCR) y asigna la categoría adecuada sin que tengas que buscar en una lista. Además, funciona en varias monedas, así que puedes registrar una compra en dólares, euros o la moneda local sin complicaciones.  
-- Captura inteligente: foto del recibo o comando de voz → reconocimiento automático del texto.  
+- [Captura inteligente](/es/posts/es-como-conseguir-financiacion-para-tus-proyectos-sin): foto del recibo o comando de voz → reconocimiento automático del texto.  
 - Categorización automática: la app sugiere la categoría basada en historial y palabras clave.  
 - Multimoneda: registra gastos en cualquier divisa y visualiza todo en una sola vista consolidada.  
-- Flujo de caja e informes: ve en tiempo real cuánto entra y sale, con gráficos por categoría.  
-- Planificación mensual y metas: define cuánto quieres gastar en cada categoría y la app te avisa si te acercas al límite.  
-- Tarjetas de crédito y facturas: enlaza tus tarjetas y la app importa los movimientos, asignándolos a las categorías correctas.  
+- [Flujo de caja](/es/glossario/es-flujo-de-caja) e informes: ve en tiempo real cuánto entra y sale, con gráficos por categoría.  
+- [Planificación mensual](/es/posts/es-como-organizar-tu-dinero-con-una-app-facil-de-usar) y metas: define cuánto quieres gastar en cada categoría y la app te avisa si te acercas al límite.  
+- Tarjetas de [crédito](/es/glossario/es-credito) y [facturas](/es/posts/es-olvidaste-pagar-una-factura-y-te-quedaste-sin-dinero-como): enlaza tus tarjetas y la app importa los movimientos, asignándolos a las categorías correctas.  
 - Modo compras: crea una lista de lo que necesitas comprar y la app muestra el total estimado en tiempo real.  
-- Recordatorios y alertas de saldo: recibe notificaciones cuando una categoría supera el presupuesto o cuando falta dinero en la cuenta.  
+- Recordatorios y [alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no) de saldo: recibe notificaciones cuando una categoría supera el presupuesto o cuando falta dinero en la cuenta.  
 - Offline / PWA / sincronización: funciona sin conexión y guarda los datos en la nube para que estén siempre actualizados.  
 
 ![Cómo organizar tus gastos con FinMoovi](/images/glossario/categoria-de-despesas-empresa-inline-3.webp)

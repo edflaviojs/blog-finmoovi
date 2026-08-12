@@ -24,8 +24,8 @@ Not all of them. This is the part that confuses people most:
 | --- | --- |
 | Open-ended [fixed income](/en/glossario/en-fixed-income) funds | Equity funds |
 | Open-ended multi-asset funds | ETFs |
-|  | Real estate funds |
-|  | [Private pension](/en/glossario/en-private-pension) plans (tax-deferred retirement plans) |
+|  | [Real estate funds](/en/posts/en-real-estate-funds-for-beginners-complete-guide) |
+|  | [Private pension](/en/glossario/en-private-pension) plans (tax-deferred [retirement](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide) plans) |
 
 In the funds with no come-cotas, tax only appears when you redeem.
 

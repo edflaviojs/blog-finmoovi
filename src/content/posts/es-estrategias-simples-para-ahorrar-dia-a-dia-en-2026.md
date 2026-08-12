@@ -72,7 +72,7 @@ El camino hacia un futuro [financiero](/es/posts/es-como-evitar-perder-la-fecha-
 ### Preguntas frecuentes  
 
 #### ¿Cómo reconoce FinMoovi las categorías de los gastos?  
-La aplicación usa tecnología de reconocimiento de texto (OCR) para leer facturas y, basándose en palabras clave, clasifica automáticamente cada ítem en las categorías predefinidas.  
+La aplicación usa tecnología de reconocimiento de texto (OCR) para leer [facturas](/es/posts/es-olvidaste-pagar-una-factura-y-te-quedaste-sin-dinero-como) y, basándose en palabras clave, clasifica automáticamente cada ítem en las categorías predefinidas.  
 
 #### ¿Es seguro almacenar mis datos financieros en la app?  
 Sí. FinMoovi utiliza cifrado de extremo a extremo y guarda la información en servidores con certificación de seguridad, garantizando que tus datos permanezcan privados.  

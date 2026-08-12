@@ -64,4 +64,4 @@ None of this guarantees a profit — a well-governed company can still fall in p
 - **Check the listing tier.** It is the fastest governance signal you can get
 - **Look for tag-along rights.** Without them, a sale of control can leave you out of the premium
 - **Confirm there are independent directors** on the board
-- **Read the disclosure history**: a company that reports late once tends to do it again
+- **Read the disclosure history**: a company that [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end) late once tends to do it again

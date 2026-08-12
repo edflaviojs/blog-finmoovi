@@ -22,14 +22,14 @@ seo:
 ¿Alguna vez has abierto el chat de un grupo familiar y te has encontrado con una cadena interminable de “¿Quién pagó la pizza?” “Yo ya envié el dinero” “¿Cuánto quedó?” y, al final del día, no sabes cuánto gastaste en total? Ese ruido constante de notas de voz, fotos de tickets y mensajes sueltos se vuelve un verdadero agujero negro para tu presupuesto. No es solo molestia; es una señal de que el dinero se está escapando sin que puedas seguirle la pista. Cuando cada gasto está escondido en un mensaje de WhatsApp, la única forma de saber si estás dentro del presupuesto es hacer cuentas manuales, y eso lleva tiempo, genera errores y, lo peor, genera estrés.
 
 ## ¿Qué significa “control de gastos WhatsApp”?
-El término se refiere a la práctica de usar la popular aplicación de mensajería para registrar, seguir y organizar los gastos cotidianos. En lugar de anotar todo en una hoja de cálculo o en una libreta, la gente suele enviar fotos de recibos, copiar y pegar montos o dictar notas de voz. El problema es que, sin una herramienta que agrupe y clasifique automáticamente esa información, el “control” termina siendo solo una ilusión. Cada mensaje es un dato aislado; no hay forma de ver el flujo de caja, comparar categorías ni proyectar el próximo mes. Por eso, el “control de gastos WhatsApp” necesita una capa que convierta esos fragmentos de conversación en datos estructurados y útiles.
+El término se refiere a la práctica de usar la popular aplicación de mensajería para registrar, seguir y organizar los gastos cotidianos. En lugar de anotar todo en una hoja de cálculo o en una libreta, la gente suele enviar fotos de recibos, copiar y pegar montos o dictar notas de voz. El problema es que, sin una herramienta que agrupe y clasifique automáticamente esa información, el “control” termina siendo solo una ilusión. Cada mensaje es un dato aislado; no hay forma de ver el [flujo de caja](/es/glossario/es-flujo-de-caja), comparar categorías ni proyectar el próximo mes. Por eso, el “[control de gastos](/es/posts/es-7-alternativas-a-la-hoja-de-calculo-de-google-para-finanzas) WhatsApp” necesita una capa que convierta esos fragmentos de conversación en datos estructurados y útiles.
 
 ![¿Te suena el caos de los mensajes de gasto?](/images/glossario/controle-de-gastos-whatsapp-inline-1.webp)
 
 
 
 ## Cómo FinMoovi transforma ese caos en claridad
-FinMoovi es el amigo digital que toma esos mensajes dispersos y los convierte en un tablero de control financiero. La aplicación se integra de forma natural con tu teléfono: basta con abrir el chat, tomar una foto del recibo o grabar una nota de voz y FinMoovi lo reconoce al instante. Gracias a su **captura inteligente**, el texto del recibo o la cifra hablada se extrae automáticamente (esto se llama reconocimiento óptico de caracteres y reconocimiento de voz). Luego, la **categorización automática** asigna cada gasto a una categoría – comida, transporte, ocio – sin que tengas que mover un dedo.
+FinMoovi es el amigo digital que toma esos mensajes dispersos y los convierte en un tablero de control financiero. La aplicación se integra de forma natural con tu teléfono: basta con abrir el chat, tomar una foto del recibo o grabar una nota de voz y FinMoovi lo reconoce al instante. Gracias a su **[captura inteligente](/es/posts/es-como-conseguir-financiacion-para-tus-proyectos-sin)**, el texto del recibo o la cifra hablada se extrae automáticamente (esto se llama reconocimiento óptico de caracteres y reconocimiento de voz). Luego, la **categorización automática** asigna cada gasto a una categoría – comida, transporte, ocio – sin que tengas que mover un dedo.
 
 Algunas de las funciones que hacen que el control sea realmente útil son:
 
@@ -37,10 +37,10 @@ Algunas de las funciones que hacen que el control sea realmente útil son:
 
 
 
-- **Multimoneda**: puedes registrar gastos en la moneda que prefieras, ya sea el precio de un café al día o el alquiler de un apartamento, y la app los convierte al tipo de cambio actual para que veas todo en una sola vista.
+- **Multimoneda**: puedes registrar gastos en la moneda que prefieras, ya sea el precio de un café al día o el alquiler de un apartamento, y la app los convierte al tipo de [cambio](/es/glossario/es-cambio) actual para que veas todo en una sola vista.
 - **Flujo de caja e informes**: gráficos simples que muestran cuánto entra y sale cada semana, con alertas cuando te acercas al límite que te has propuesto.
-- **Planificación mensual y metas**: define cuánto quieres ahorrar para un viaje o para un fondo de emergencia y la app te muestra el progreso día a día.
-- **Tarjetas de crédito y facturas**: enlaza tus tarjetas y la app importa los movimientos, agrupándolos con los gastos que ya registraste por WhatsApp.
+- **Planificación mensual y metas**: define cuánto quieres ahorrar para un viaje o para un [fondo de emergencia](/es/glossario/es-fondo-de-emergencia) y la app te muestra el progreso día a día.
+- **Tarjetas de [crédito](/es/glossario/es-credito) y facturas**: enlaza tus tarjetas y la app importa los movimientos, agrupándolos con los gastos que ya registraste por WhatsApp.
 - **Modo compras**: crea una lista de la compra y ve el total en tiempo real mientras vas añadiendo ítems; al terminar, la app te sugiere cuánto deberías reservar para la próxima semana.
 - **Recordatorios y alertas de saldo**: notificaciones que te avisan cuando el saldo de tu cuenta corriente está bajo o cuando una factura está próxima a vencer.
 - **Offline / PWA / sincronización**: funciona sin conexión a internet y, al volver a estar online, sincroniza todo en la nube para que puedas acceder desde cualquier dispositivo.

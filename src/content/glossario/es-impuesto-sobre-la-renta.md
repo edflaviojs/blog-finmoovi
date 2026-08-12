@@ -71,7 +71,7 @@ Para un país, el impuesto sobre la renta es la principal forma de financiar los
 
 **Alguien con un ingreso extra.** La retención sobre su salario se calculó como si ese salario fuera su único ingreso. El trabajo por cuenta propia encima puede empujarlo a un tramo más alto, así que espere deber algo al declarar. Apartar una parte de cada pago evita la sorpresa.
 
-**Alguien que recibió alquiler.** El alquiler cuenta como ingreso en la mayoría de los sistemas, y los [costos](/es/posts/es-prevision-privada-2026-vale-la-pena-guia-practica) de mantener el inmueble suelen ser deducibles — justamente por eso vale la pena conservar esas facturas.
+**Alguien que recibió alquiler.** El alquiler cuenta como ingreso en la mayoría de los sistemas, y los [costos](/es/posts/es-prevision-privada-2026-vale-la-pena-guia-practica) de mantener el inmueble suelen ser deducibles — justamente por eso vale la pena conservar esas [facturas](/es/posts/es-olvidaste-pagar-una-factura-y-te-quedaste-sin-dinero-como).
 
 **Consejo práctico:** Registre ingresos y gastos a lo largo del año en un solo lugar, en vez de reconstruirlos de memoria en la semana de la declaración. FinMoovi los categoriza a medida que ocurren, así que al declarar usted lee un informe en lugar de hacer arqueología.
 

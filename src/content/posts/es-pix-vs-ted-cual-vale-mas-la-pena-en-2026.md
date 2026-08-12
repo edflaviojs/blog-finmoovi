@@ -65,7 +65,7 @@ Juan vendió su coche por €8,100 y necesitó recibir el valor en su cuenta. Op
 
 ## Cuándo elegir el PIX
 
-- **Pagos del día a día:** facturas de luz, agua, internet o dividir la cuenta del restaurante.  
+- **Pagos del día a día:** [facturas](/es/posts/es-olvidaste-pagar-una-factura-y-te-quedaste-sin-dinero-como) de luz, agua, internet o dividir la cuenta del restaurante.  
 - **Transferencias de bajo valor:** enviar dinero a familiares o amigos rápidamente.  
 - **Cuando el costo importa:** si quieres evitar tarifas, el PIX gratuito es la opción obvia.  
 - **Operaciones fuera del horario bancario:** si necesitas pagar a un proveedor a las 22 h, el PIX garantiza que el dinero llegue inmediatamente.

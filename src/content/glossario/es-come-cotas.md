@@ -24,7 +24,7 @@ No en todos. Esta es la parte que más confunde:
 | --- | --- |
 | Fondos de [renta fija](/es/glossario/es-renta-fija) abiertos | Fondos de acciones |
 | Fondos multimercado abiertos | ETFs |
-| | Fondos inmobiliarios |
+| | [Fondos inmobiliarios](/es/glossario/es-fondos-inmobiliarios) |
 | | [Pensión privada](/es/glossario/es-pension-privada) (PGBL y VGBL) |
 
 En los que no lo tienen, el impuesto aparece solo cuando rescatas.

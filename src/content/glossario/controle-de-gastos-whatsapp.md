@@ -28,7 +28,7 @@ Muitos de nós usamos o WhatsApp para dividir a conta do almoço, combinar a com
 
 ## O que realmente significa “controle de gastos WhatsApp”  
 
-Controle de gastos WhatsApp não é um termo técnico; é a prática de transformar mensagens, fotos de notas fiscais e áudios de pagamentos em informações organizadas. Em vez de deixar cada “paguei 30” ou “nota de 50” flutuar na caixa de entrada, você converte esses dados em categorias (alimentação, transporte, lazer) e acompanha o saldo em tempo real. A ideia é usar a ferramenta que já está no seu bolso para criar um mini‑extrato diário, sem precisar abrir planilhas complicadas ou anotar tudo à mão.
+[Controle de gastos](/posts/7-alternativas-a-planilha-google-para-financas-guia) WhatsApp não é um termo técnico; é a prática de transformar mensagens, fotos de notas fiscais e áudios de pagamentos em informações organizadas. Em vez de deixar cada “paguei 30” ou “nota de 50” flutuar na caixa de entrada, você converte esses dados em categorias (alimentação, transporte, lazer) e acompanha o saldo em tempo real. A ideia é usar a ferramenta que já está no seu bolso para criar um mini‑extrato diário, sem precisar abrir planilhas complicadas ou anotar tudo à mão.
 
 ## Como transformar conversas em dados financeiros  
 
@@ -46,14 +46,14 @@ Essas etapas eliminam a necessidade de copiar e colar números, reduzindo erros 
 
 ## Funcionalidades do FinMoovi que dão conta do recado  
 
-FinMoovi foi pensado para quem quer usar o WhatsApp como aliado, e traz um conjunto de recursos que cobrem todo o ciclo de controle de gastos.  
+FinMoovi foi pensado para quem quer usar o WhatsApp como aliado, e traz um conjunto de recursos que cobrem todo o ciclo de [controle de gastos](/posts/7-melhores-apps-de-controle-financeiro-2026-guia-completo).  
 
 - **Captura inteligente**: foto de nota ou áudio são transformados em lançamentos automaticamente, com reconhecimento de texto (OCR) e voz.  
 - **Categorização automática**: o sistema classifica cada gasto em categorias predefinidas, mas permite ajustes manuais caso algo não caia na caixa correta.  
-- **Multimoeda**: funciona com diferentes moedas (real, dólar, euro) e converte valores na taxa do dia, ideal para quem recebe ou paga em outra moeda.  
-- **Fluxo de caixa e relatórios**: visualiza entradas e saídas em gráficos simples, mostrando onde o dinheiro está entrando e saindo.  
-- **Planejamento mensal e metas**: define limites para cada categoria e acompanha o progresso, enviando alertas quando estiver perto do teto.  
-- **Cartões de crédito e fatura**: integra as despesas feitas com cartão, mostrando o saldo disponível e a data de vencimento da fatura.  
+- **Multimoeda**: funciona com diferentes moedas (real, dólar, euro) e converte valores na taxa do dia, ideal para quem recebe ou paga em outra [moeda](/glossario/moeda).  
+- **[Fluxo de caixa](/glossario/fluxo-de-caixa) e relatórios**: visualiza entradas e saídas em gráficos simples, mostrando onde o dinheiro está entrando e saindo.  
+- **Planejamento mensal e metas**: define limites para cada categoria e acompanha o progresso, enviando [alertas](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto) quando estiver perto do teto.  
+- **Cartões de [crédito](/glossario/credito) e fatura**: integra as despesas feitas com cartão, mostrando o saldo disponível e a data de vencimento da fatura.  
 - **Modo compras**: cria listas de compras dentro do chat; o total é atualizado em tempo real à medida que você adiciona itens.  
 - **Lembretes e alertas de saldo**: notifica quando o saldo da conta bancária fica baixo ou quando uma despesa ultrapassa o limite diário.  
 - **Offline / PWA / sincronização**: funciona mesmo sem internet, guardando os dados localmente e sincronizando quando a conexão volta, como um aplicativo web progressivo (PWA).  

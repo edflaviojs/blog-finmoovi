@@ -28,7 +28,7 @@ Do not confuse it with "buying good things" — here you are judging the asset, 
 
 Quality is not an opinion: it comes from indicators you can look up.
 
-- **Credit rating**: a score from agencies (Moody's, Fitch, S&P) estimating the chance of default. AAA is the top; anything below BBB− is considered speculative
+- **[Credit](/en/glossario/en-credit) rating**: a score from agencies (Moody's, Fitch, S&P) estimating the chance of default. AAA is the top; anything below BBB− is considered speculative
 - **Payment history**: how often the issuer has met its obligations in the past
 - **[Profit margin](/en/glossario/en-profit-margin)**: companies with healthy margins tend to survive bad years
 - **Debt level**: a reasonable debt-to-equity ratio means the issuer is not overstretched
@@ -37,7 +37,7 @@ Quality is not an opinion: it comes from indicators you can look up.
 ## What high quality gives you
 
 - **Lower [volatility](/en/glossario/en-volatility)**: prices swing less, which protects your money in a crisis
-- **Predictable income**: dividends or interest arrive more consistently, which makes planning possible
+- **Predictable income**: [dividends](/en/glossario/en-dividends) or [interest](/en/glossario/en-interest) arrive more consistently, which makes planning possible
 - **Better collateral**: quality assets are accepted as security for cheaper borrowing
 
 ## The trade-off nobody mentions

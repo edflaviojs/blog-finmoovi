@@ -13,7 +13,7 @@ readingTime: 2
 
 ## ¿Qué es la Tabla SAC?
 
-SAC (Sistema de [Amortización](/es/glossario/es-amortizacion) Constante) es un método de pago de financiamientos donde el **valor de la amortización** (parte que reduce la [deuda](/es/glossario/es-deuda)) es igual en todas las cuotas. Como el **[interés](/es/glossario/es-interes)** disminuye conforme el saldo deudor cae, las cuotas quedan menores a lo largo del tiempo.
+SAC (Sistema de [Amortización](/es/glossario/es-amortizacion) Constante) es un método de pago de financiamientos donde el **valor de la amortización** (parte que reduce la [deuda](/es/glossario/es-deuda)) es igual en todas las cuotas. Como el **[interés](/es/glossario/es-interes)** disminuye conforme el [saldo deudor](/es/glossario/es-saldo-deudor) cae, las cuotas quedan menores a lo largo del tiempo.
 
 ## Cómo funciona
 

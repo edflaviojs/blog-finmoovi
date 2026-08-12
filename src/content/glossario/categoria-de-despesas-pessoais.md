@@ -47,14 +47,14 @@ Depois de definir as categorias, mantenha-as consistentes. Se um gasto não enca
 ## Ferramentas que facilitam a classificação automática  
 A parte mais chata de registrar despesas costuma ser a digitação manual. É aqui que o FinMoovi entra como aquele amigo que já tem a conta pronta.  
 
-- **Captura inteligente:** basta tirar uma foto da nota fiscal ou falar o valor que acabou de pagar; o app reconhece o texto e preenche os campos automaticamente.  
+- **[Captura inteligente](/posts/como-garantir-financiamento-para-seus-projetos-sem-dor-de):** basta tirar uma foto da nota fiscal ou falar o valor que acabou de pagar; o app reconhece o texto e preenche os campos automaticamente.  
 - **Categorização automática:** com base no texto da nota ou na palavra‑chave que você disser, o FinMoovi coloca a despesa na categoria correta sem que você precise escolher.  
-- **Multimoeda:** se você paga um café em euros, um aluguel em dólares ou faz compras em reais, o app converte tudo para a moeda que você definiu como padrão, permitindo comparar gastos mesmo viajando.  
-- **Fluxo de caixa e relatórios:** gráficos simples mostram quanto entrou e saiu por categoria, ajudando a visualizar onde está o “vazamento”.  
+- **Multimoeda:** se você paga um café em euros, um aluguel em dólares ou faz compras em reais, o app converte tudo para a [moeda](/glossario/moeda) que você definiu como padrão, permitindo comparar gastos mesmo viajando.  
+- **[Fluxo de caixa](/glossario/fluxo-de-caixa) e relatórios:** gráficos simples mostram quanto entrou e saiu por categoria, ajudando a visualizar onde está o “vazamento”.  
 - **Planejamento mensal e metas:** você define quanto quer gastar em cada categoria e o app avisa quando está perto do limite.  
-- **Cartões de crédito e fatura:** ao registrar a fatura, o FinMoovi distribui cada compra nas categorias já criadas, facilitando o controle do que realmente está sendo parcelado.  
+- **Cartões de [crédito](/glossario/credito) e fatura:** ao registrar a fatura, o FinMoovi distribui cada compra nas categorias já criadas, facilitando o controle do que realmente está sendo parcelado.  
 - **Modo compras:** crie uma lista de supermercado, veja o total em tempo real enquanto adiciona itens e evite surpresas no caixa.  
-- **Lembretes e alertas de saldo:** notificações avisam quando o saldo da conta corrente está baixo ou quando uma conta está prestes a vencer.  
+- **Lembretes e [alertas](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto) de saldo:** notificações avisam quando o saldo da conta corrente está baixo ou quando uma conta está prestes a vencer.  
 - **Offline / PWA / sincronização:** mesmo sem internet, você pode registrar despesas; ao reconectar, tudo se sincroniza automaticamente.  
 
 ## Dicas práticas para manter tudo organizado  
@@ -64,7 +64,7 @@ A parte mais chata de registrar despesas costuma ser a digitação manual. É aq
 
 **Dica prática:** estabeleça um limite mensal para cada categoria e use os alertas do app para ser notificado quando estiver a 80 % do limite; isso cria um gatilho mental que ajuda a reduzir o consumo antes que o orçamento estoure.  
 
-Além dessas dicas, mantenha a lista de categorias enxuta – quanto menos categorias, mais fácil será analisar os relatórios. Se perceber que alguma categoria está vazia por muito tempo, talvez seja hora de fundi‑la com outra mais abrangente.  
+Além dessas [dicas](/posts/7-erros-financeiros-iniciante), mantenha a lista de categorias enxuta – quanto menos categorias, mais fácil será analisar os relatórios. Se perceber que alguma categoria está vazia por muito tempo, talvez seja hora de fundi‑la com outra mais abrangente.  
 
 ## Comece hoje  
 Abra o FinMoovi, escolha “Captura inteligente”, tire a foto da última nota que você tem na mão e deixe o app categorizar automaticamente. Em seguida, vá em “Metas mensais”, defina um limite para “Alimentação” equivalente ao preço de duas refeições fora por semana, e ative o alerta de 80 %. Em menos de cinco minutos você já terá um ponto de partida sólido para entender e controlar seus gastos.

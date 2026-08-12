@@ -35,8 +35,8 @@ The best protection against financial emergencies is the **emergency reserve**:
 
 If the emergency arrives and you don't have a reserve:
 
-1. **Don't use [overdraft](/en/glossario/en-overdraft)** (interest rates of 15%/month)
-2. **Don't use credit card revolving** (interest rates of 16%/month)
+1. **Don't use [overdraft](/en/glossario/en-overdraft)** ([interest](/en/glossario/en-interest) rates of 15%/month)
+2. **Don't use [credit](/en/glossario/en-credit) card revolving** (interest rates of 16%/month)
 3. Request a payroll loan (interest rates of 1-2%/month)
 4. Anticipate severance guarantee fund or year-end bonus
 5. Sell something you don't use (marketplace)

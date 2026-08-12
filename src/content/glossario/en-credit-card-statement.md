@@ -20,7 +20,7 @@ seo:
 
 ## What the credit card statement really means
 
-You’ve just opened the app, and the notification says: “Your card bill is ready.” You stare at the numbers, wonder why the total is almost the price of a month’s rent, and feel that familiar knot in your stomach. That notification is the **credit card statement** – the monthly summary that shows every purchase, fee, and interest charge linked to your card. It’s the document that tells you how much you owe, when the payment is due, and what the minimum payment is. If you don’t understand it, you can easily miss a payment, pay more interest, or think you’re broke when you actually have money left in the bank.
+You’ve just opened the app, and the notification says: “Your card bill is ready.” You stare at the numbers, wonder why the total is almost the price of a month’s rent, and feel that familiar knot in your stomach. That notification is the **[credit](/en/glossario/en-credit) card statement** – the monthly summary that shows every purchase, fee, and [interest](/en/glossario/en-interest) charge linked to your card. It’s the document that tells you how much you owe, when the payment is due, and what the minimum payment is. If you don’t understand it, you can easily miss a payment, pay more interest, or think you’re broke when you actually have money left in the bank.
 
 ![What the credit card statement really means](/images/glossario/fatura-do-cartao-mais-inline-1.webp)
 
@@ -40,7 +40,7 @@ Understanding each line helps you see where your money goes and prevents surpris
 
 ## Why the statement can be a hidden trap
 
-Many people treat the statement like a mystery box. They glance at the total, pay the minimum, and assume the rest will sort itself out. The problem is that the minimum payment often covers only a fraction of the balance, leaving the rest to accrue interest. Over time, that interest can turn a modest purchase—say, a pair of shoes worth the price of a daily coffee—into a debt that feels like a small car loan.
+Many people treat the statement like a mystery box. They glance at the total, pay the minimum, and assume the rest will sort itself out. The problem is that the minimum payment often covers only a fraction of the balance, leaving the rest to accrue interest. Over time, that interest can turn a modest purchase—say, a pair of shoes worth the price of a daily coffee—into a [debt](/en/glossario/en-debt) that feels like a small car [loan](/en/glossario/en-loan).
 
 Other common pitfalls:
 
@@ -52,7 +52,7 @@ When you don’t have a clear picture, you end up paying more than you should, a
 
 ## How FinMoovi’s smart capture changes the game
 
-Imagine you could snap a photo of every receipt the moment you get it, or simply speak “lunch” into your phone, and the app instantly knows where that expense belongs. FinMoovi’s **smart capture** does exactly that. Using image recognition and voice‑to‑text technology, the app reads the amount, date, and merchant from a picture of a receipt or from your spoken note, then automatically categorizes the expense (e.g., “groceries,” “transport,” “entertainment”). The moment the purchase appears on your credit card statement, FinMoovi matches it with the captured data, so you see a fully labeled line‑item instead of a vague “merchant XYZ.”
+Imagine you could snap a photo of every receipt the moment you get it, or simply speak “lunch” into your phone, and the app instantly knows where that expense belongs. FinMoovi’s **[smart capture](/en/posts/en-how-to-never-miss-a-bill-payment-deadline-simple-5-minute)** does exactly that. Using image recognition and voice‑to‑text technology, the app reads the amount, date, and merchant from a picture of a receipt or from your spoken note, then automatically categorizes the expense (e.g., “groceries,” “transport,” “entertainment”). The moment the purchase appears on your [credit card](/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026) statement, FinMoovi matches it with the captured data, so you see a fully labeled line‑item instead of a vague “merchant XYZ.”
 
 ![How FinMoovi’s smart capture changes the game](/images/glossario/fatura-do-cartao-mais-inline-3.webp)
 

@@ -18,7 +18,7 @@ seo:
 ---
 
 ## O que é planejamento financeiro pessoal  
-O planejamento financeiro pessoal é basicamente um mapa que mostra para onde vai cada centavo que entra e sai da sua conta. Imagine que você tem um carro e quer chegar a um destino: sem um GPS, você pode acabar dando voltas, gastando combustível à toa e ainda perder tempo. O mesmo vale para o dinheiro – sem um plano, você pode acabar gastando mais do que ganha, ficar sem reserva para emergências ou nunca alcançar aquele objetivo de comprar um imóvel ou fazer uma viagem dos sonhos. O planejamento serve para organizar receitas (o que entra) e despesas (o que sai), definir metas de curto, médio e longo prazo e acompanhar o progresso ao longo do tempo.
+O [planejamento financeiro](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo) pessoal é basicamente um mapa que mostra para onde vai cada centavo que entra e sai da sua conta. Imagine que você tem um carro e quer chegar a um destino: sem um GPS, você pode acabar dando voltas, gastando combustível à toa e ainda perder tempo. O mesmo vale para o dinheiro – sem um plano, você pode acabar gastando mais do que ganha, ficar sem reserva para emergências ou nunca alcançar aquele objetivo de comprar um imóvel ou fazer uma viagem dos sonhos. O planejamento serve para organizar receitas (o que entra) e despesas (o que sai), definir metas de curto, médio e longo prazo e acompanhar o progresso ao longo do tempo.
 
 ## Por que a maioria das pessoas sente que o plano nunca funciona  
 A dor mais comum é a sensação de que, mesmo tentando anotar tudo em um papel ou numa planilha, o dinheiro “some” antes do fim do mês. Isso acontece porque:  
@@ -41,7 +41,7 @@ Começar não precisa ser complicado. Siga estes passos básicos:
 - **Anote as despesas fixas:** aluguel, contas de luz/água, transporte, plano de saúde.  
 - **Registre os gastos variáveis:** supermercado, lazer, compras online.  
 - **Defina metas claras:** “Guardar o equivalente a duas vezes o preço de um café por dia em 6 meses”.  
-- **Monte um orçamento mensal:** distribua a renda entre despesas essenciais, reserva de emergência e metas.  
+- **Monte um orçamento mensal:** distribua a renda entre despesas essenciais, [reserva de emergência](/ferramentas/calculadora-reserva) e metas.  
 
 ![Como montar um plano simples e eficaz  ](/images/glossario/planejamento-financeiro-pessoal-inline-3.webp)
 
@@ -56,15 +56,15 @@ Se você já tentou anotar tudo à mão, vai entender que a tecnologia pode ser 
 - **Captura inteligente:** tire uma foto da nota fiscal ou grave a voz ao pagar algo; o app reconhece o valor e a descrição automaticamente, evitando digitação manual.  
 - **Categorização automática:** usando inteligência artificial, ele classifica a despesa em categorias como alimentação, transporte ou lazer, sem que você precise escolher.  
 - **Multimoeda:** aceita transações em diferentes moedas (BRL, USD, EUR) e converte tudo para a sua moeda base, ideal para quem viaja ou tem renda em outra moeda.  
-- **Fluxo de caixa e relatórios:** mostra em tempo real quanto entrou, saiu e o saldo disponível, com gráficos simples que facilitam a visualização.  
+- **[Fluxo de caixa](/glossario/fluxo-de-caixa) e relatórios:** mostra em tempo real quanto entrou, saiu e o saldo disponível, com gráficos simples que facilitam a visualização.  
 - **Planejamento mensal e metas:** permite criar metas com valores e prazos; o app avisa quando você está perto de alcançar ou quando está desviando.  
-- **Cartões de crédito e fatura:** integra as faturas dos cartões, calcula o gasto total e alerta sobre o vencimento, ajudando a evitar juros.  
+- **Cartões de [crédito](/glossario/credito) e fatura:** integra as faturas dos cartões, calcula o gasto total e alerta sobre o vencimento, ajudando a evitar [juros](/glossario/juros).  
 - **Modo compras:** crie listas de compras; o app soma tudo em tempo real, mostrando quanto ainda cabe no orçamento antes de finalizar a compra.  
 - **Lembretes e alertas de saldo:** notifica quando o saldo está baixo ou quando uma despesa ultrapassa o limite definido.  
 - **Offline/PWA/sincronização:** funciona mesmo sem internet e salva tudo na nuvem, garantindo que seus dados estejam sempre atualizados em qualquer dispositivo.
 
 ## Dicas práticas para colocar em prática  
-**Dica prática:** ao receber seu salário, transfira imediatamente o equivalente ao preço de um aluguel para uma conta de reserva de emergência. Isso cria um colchão sem precisar pensar depois.  
+**Dica prática:** ao receber seu salário, transfira imediatamente o equivalente ao preço de um aluguel para uma conta de [reserva de emergência](/glossario/reserva-de-emergencia). Isso cria um colchão sem precisar pensar depois.  
 
 **Dica prática:** use o modo compras do FinMoovi antes de ir ao supermercado; adicione os itens que pretende comprar e acompanhe o total em tempo real. Assim você evita comprar itens impulsivos que aumentam a conta.  
 

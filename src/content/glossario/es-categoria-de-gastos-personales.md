@@ -31,19 +31,19 @@ Una categoría de gastos personales es simplemente un “cajón” donde guardas
 ## Por qué organizar tus gastos marca la diferencia
 - **Visibilidad:** Al final del mes puedes ver que, por ejemplo, gastas el equivalente a dos alquileres en comida fuera de casa.
 - **Control:** Detectas rápidamente un gasto fuera de lo habitual, como una suscripción que ya no usas.
-- **Ahorro:** Al saber cuánto consumes en cada categoría, puedes ajustar hábitos y destinar ese dinero a metas, como un viaje o un fondo de emergencia.
-- **Toma de decisiones:** Cuando llega una oferta de crédito, sabes exactamente cuánto puedes pagar sin comprometer tus prioridades.
+- **[Ahorro](/es/glossario/es-ahorro):** Al saber cuánto consumes en cada categoría, puedes ajustar hábitos y destinar ese dinero a metas, como un viaje o un [fondo de emergencia](/es/glossario/es-fondo-de-emergencia).
+- **Toma de decisiones:** Cuando llega una oferta de [crédito](/es/glossario/es-credito), sabes exactamente cuánto puedes pagar sin comprometer tus prioridades.
 
 ## Cómo FinMoovi simplifica la gestión de categorías
 FinMoovi actúa como ese amigo que siempre tiene la respuesta correcta. Sus funciones principales están diseñadas para que la clasificación sea automática y sin esfuerzo:
-- **Captura inteligente:** Toma una foto del recibo o usa la voz para registrar el gasto; la app reconoce el monto y la descripción.
+- **[Captura inteligente](/es/posts/es-como-conseguir-financiacion-para-tus-proyectos-sin):** Toma una foto del recibo o usa la voz para registrar el gasto; la app reconoce el monto y la descripción.
 - **Categorización automática:** Con inteligencia artificial, asigna la categoría adecuada (por ejemplo, “Supermercado” o “Cine”) sin que tengas que mover nada.
 - **Multimoneda:** Funciona con cualquier moneda, ya sea el precio de un café al día o el valor de una compra en el extranjero.
-- **Flujo de caja e informes:** Muestra en tiempo real cuánto entra y sale, con gráficos fáciles de entender.
+- **[Flujo de caja](/es/glossario/es-flujo-de-caja) e informes:** Muestra en tiempo real cuánto entra y sale, con gráficos fáciles de entender.
 - **Planificación mensual y metas:** Te permite fijar objetivos (como ahorrar el equivalente a tres alquileres) y seguir su progreso.
 - **Tarjetas de crédito y facturas:** Integra tus tarjetas, muestra el saldo pendiente y te avisa de fechas de vencimiento.
 - **Modo compras:** Crea una lista de lo que necesitas, suma el total al instante y evita sorpresas al pagar.
-- **Recordatorios y alertas de saldo:** Notifica cuando estás cerca del límite de una categoría o cuando un gasto supera lo habitual.
+- **Recordatorios y [alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no) de saldo:** Notifica cuando estás cerca del límite de una categoría o cuando un gasto supera lo habitual.
 - **Offline / PWA / sincronización:** Funciona sin conexión y guarda todo en la nube para que lo tengas siempre actualizado.
 
 ![Por qué organizar tus gastos marca la diferencia](/images/glossario/categoria-de-despesas-pessoais-inline-3.webp)

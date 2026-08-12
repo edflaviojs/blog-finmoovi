@@ -20,7 +20,7 @@ seo:
 
 ## O que é saldo devedor
 
-Quando você vê aquele número vermelho no extrato do cartão ou na fatura do empréstimo, está olhando para o saldo devedor. Em termos simples, é o total que ainda falta pagar de uma dívida, seja ela um parcelamento, um financiamento ou um crédito rotativo. Esse valor inclui o principal (o que você realmente pegou) mais os juros e eventuais encargos que foram adicionados ao longo do tempo. Quanto maior o saldo devedor, mais dinheiro sai do seu orçamento antes de chegar ao que realmente importa, como a reserva para emergências ou aquele passeio que você planeja.
+Quando você vê aquele número vermelho no extrato do cartão ou na fatura do [empréstimo](/glossario/emprestimo), está olhando para o saldo devedor. Em termos simples, é o total que ainda falta pagar de uma dívida, seja ela um parcelamento, um [financiamento](/glossario/financiamento) ou um crédito rotativo. Esse valor inclui o principal (o que você realmente pegou) mais os juros e eventuais encargos que foram adicionados ao longo do tempo. Quanto maior o saldo devedor, mais dinheiro sai do seu orçamento antes de chegar ao que realmente importa, como a reserva para emergências ou aquele passeio que você planeja.
 
 ![O que é saldo devedor](/images/glossario/saldo-devedor-inline-1.webp)
 
@@ -29,14 +29,14 @@ Quando você vê aquele número vermelho no extrato do cartão ou na fatura do e
 ## Por que ele aparece na sua conta
 
 O saldo devedor pode surgir de várias maneiras no seu dia a dia, e entender a origem ajuda a lidar melhor com ele.  
-- **Cartão de crédito:** quando você não paga o total da fatura, o que fica em aberto vira saldo devedor com juros altos.  
+- **[Cartão de crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena):** quando você não paga o total da fatura, o que fica em aberto vira saldo devedor com juros altos.  
 - **Empréstimo pessoal ou consignado:** as parcelas que ainda não foram quitadas permanecem como saldo devedor.  
 - **Financiamento de veículo ou imóvel:** o valor que ainda resta do contrato aparece como saldo devedor até a última parcela.  
-- **Cheque especial:** usar o limite do banco gera um saldo devedor que cresce rapidamente se não for quitado.
+- **[Cheque especial](/glossario/cheque-especial):** usar o limite do banco gera um saldo devedor que cresce rapidamente se não for quitado.
 
 ## Como o saldo devedor afeta seu fluxo de caixa
 
-Ter um saldo devedor elevado pode transformar o seu orçamento em uma corrida contra o relógio. Quando a dívida consome parte do que entra todo mês, você sente falta de recursos para despesas essenciais e para pequenos prazeres, como um café diário ou uma assinatura de streaming. Além disso, juros compostos (juros que incidem sobre juros) podem fazer o saldo crescer mesmo que você não esteja gastando mais. Isso gera um efeito bola de neve: quanto mais tempo a dívida fica aberta, mais difícil fica de quitá‑la sem sacrificar outras metas financeiras.
+Ter um saldo devedor elevado pode transformar o seu orçamento em uma corrida contra o relógio. Quando a dívida consome parte do que entra todo mês, você sente falta de recursos para despesas essenciais e para pequenos prazeres, como um café diário ou uma assinatura de streaming. Além disso, [juros compostos](/ferramentas/calculadora-juros-compostos) (juros que incidem sobre juros) podem fazer o saldo crescer mesmo que você não esteja gastando mais. Isso gera um efeito bola de neve: quanto mais tempo a dívida fica aberta, mais difícil fica de quitá‑la sem sacrificar outras metas financeiras.
 
 ![Como o saldo devedor afeta seu fluxo de caixa](/images/glossario/saldo-devedor-inline-3.webp)
 
@@ -56,7 +56,7 @@ A boa notícia é que, com disciplina e algumas táticas simples, você pode fre
 Se você ainda não tem um aliado digital, o FinMoovi chega como aquele amigo que entende de finanças e ainda tem a tecnologia ao seu lado. A plataforma oferece recursos que tornam o controle do saldo devedor quase automático:  
 - **Captura inteligente:** tire foto da nota ou grave a voz da fatura; o app reconhece o valor e já classifica a dívida.  
 - **Multimoeda:** funciona tanto com real, dólar ou euro, facilitando quem tem despesas em diferentes moedas.  
-- **Fluxo de caixa e relatórios:** visualize entradas e saídas em gráficos claros, identificando onde o saldo devedor pesa mais.  
+- **[Fluxo de caixa](/glossario/fluxo-de-caixa) e relatórios:** visualize entradas e saídas em gráficos claros, identificando onde o saldo devedor pesa mais.  
 - **Planejamento mensal e metas:** defina quanto quer pagar por mês e acompanhe o progresso.  
 - **Cartões de crédito e faturas:** registre cada cartão; o FinMoovi avisa quando o limite está próximo de ser ultrapassado.  
 - **Modo compras:** crie lista de compras, veja o total em tempo real e evite surpresas no fim do mês.  

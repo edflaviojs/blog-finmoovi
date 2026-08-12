@@ -71,7 +71,7 @@ For a country, income tax is the main way public services get funded — schools
 
 **Someone with a side income.** The tax withheld on your salary was calculated as if that salary were your only income. Freelance work on top can push you into a higher band, so expect to owe something at filing time. Setting aside a slice of each freelance payment avoids the surprise.
 
-**Someone who received rent.** Rent counts as income in most systems, and the costs of maintaining the property are often deductible — which is exactly why those invoices are worth keeping.
+**Someone who received rent.** Rent counts as income in most systems, and the costs of maintaining the property are often deductible — which is exactly why those [invoices](/en/posts/en-forgot-to-pay-a-bill-how-to-fix-it-in-2026) are worth keeping.
 
 **Practical tip:** Track income and expenses through the year in one place instead of rebuilding them from memory in filing week. FinMoovi categorises them as they happen, so at filing time you are reading a report rather than doing archaeology.
 

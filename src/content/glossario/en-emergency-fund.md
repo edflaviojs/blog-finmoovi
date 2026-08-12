@@ -26,7 +26,7 @@ The reserve needs to have **daily [liquidity](/en/glossario/en-liquidity)** (imm
 - [certificates of deposit (CDs)](/en/glossario/en-cdb) with daily liquidity (100% [interbank rate](/en/glossario/en-cdi) or more)
 - Remunerated account
 
-**Never** leave it in stocks, real estate funds, or investments with a redemption deadline.
+**Never** leave it in [stocks](/en/glossario/en-stocks), real estate funds, or investments with a redemption deadline.
 
 ## How to build it?
 

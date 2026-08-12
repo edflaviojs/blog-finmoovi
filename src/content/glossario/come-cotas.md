@@ -25,7 +25,7 @@ Não é em todos. É esta a diferença que mais confunde:
 | --- | --- |
 | Fundos de [renda fixa](/glossario/renda-fixa) abertos | Fundos de ações |
 | Fundos multimercado abertos | ETFs |
-| | Fundos imobiliários |
+| | [Fundos imobiliários](/glossario/fundos-imobiliarios) |
 | | [Previdência privada](/glossario/previdencia-privada) (PGBL e VGBL) |
 
 Nos que não têm, o imposto só aparece quando você resgata.

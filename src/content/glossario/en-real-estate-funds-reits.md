@@ -26,7 +26,7 @@ Real Estate Funds are like "investor condominiums" that pool [money](/en/posts/e
 
 - Tax-free monthly income  
 - Invest in properties with little money (from $2)  
-- Diversification (a fund can have several properties)  
+- [Diversification](/en/glossario/en-diversification) (a fund can have several properties)  
 - [Liquidity](/en/glossario/en-liquidity) (sell instantly on the stock exchange)  
 - No need to deal with tenants  
 

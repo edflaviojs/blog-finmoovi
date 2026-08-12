@@ -47,14 +47,14 @@ Ao final do mês, subtraia o total das saídas do total das entradas. Se o resul
 
 Imagine ter tudo isso na palma da mão, sem precisar abrir planilha ou anotar em caderninho. O FinMoovi traz uma série de funcionalidades que transformam o controle do fluxo de caixa em algo quase automático:
 
-- **Captura inteligente** – tire foto da nota fiscal ou fale “gastei 30 no supermercado” que o app reconhece o valor e a categoria, economizando tempo.  
+- **[Captura inteligente](/posts/como-garantir-financiamento-para-seus-projetos-sem-dor-de)** – tire foto da nota fiscal ou fale “gastei 30 no supermercado” que o app reconhece o valor e a categoria, economizando tempo.  
 - **Categorização automática** – o algoritmo classifica despesas em alimentação, transporte, lazer, etc., sem que você precise escolher manualmente.  
-- **Multimoeda** – funciona tanto com a moeda local quanto com dólares ou euros, ideal para quem recebe ou gasta em diferentes moedas.  
+- **Multimoeda** – funciona tanto com a [moeda](/glossario/moeda) local quanto com dólares ou euros, ideal para quem recebe ou gasta em diferentes moedas.  
 - **Painel de fluxo de caixa** – veja entradas e saídas do mês num único painel e descubra para onde seu dinheiro está indo, tudo em tempo real.  
 - **Planejamento mensal e metas** – defina quanto quer economizar ou quanto pode gastar em cada categoria e acompanhe o progresso.  
-- **Cartões de crédito e fatura** – registre as compras feitas no cartão e o app avisa quando a fatura está próxima de vencer.  
+- **Cartões de [crédito](/glossario/credito) e fatura** – registre as compras feitas no cartão e o app avisa quando a fatura está próxima de vencer.  
 - **Modo compras** – crie listas de supermercado, veja o total acumulado enquanto adiciona itens e evite surpresas no caixa.  
-- **Lembretes e alertas de saldo** – receba notificações quando o saldo ficar baixo ou quando uma conta estiver vencendo.  
+- **Lembretes e [alertas](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto) de saldo** – receba notificações quando o saldo ficar baixo ou quando uma conta estiver vencendo.  
 - **Offline e PWA** – mesmo sem internet, você continua registrando; ao reconectar, tudo sincroniza automaticamente.
 
 Com esses recursos, o fluxo de caixa deixa de ser um peso e passa a ser um aliado que te mostra, de forma clara, como cada decisão impacta seu bolso.
@@ -65,7 +65,7 @@ Com esses recursos, o fluxo de caixa deixa de ser um peso e passa a ser um aliad
 
 **Dica prática:** Use o modo compras do FinMoovi antes de ir ao supermercado. Adicione os itens que pretende comprar e acompanhe o total em tempo real; isso costuma reduzir o impulso de levar produtos não planejados.  
 
-**Dica prática:** Ative os alertas de saldo e de vencimento de faturas. Uma notificação simples pode evitar juros desnecessários e impedir que você gaste mais do que tem disponível.  
+**Dica prática:** Ative os [alertas de saldo](/posts/como-organizar-seu-dinheiro-com-um-app-facil-de-usar) e de vencimento de faturas. Uma notificação simples pode evitar [juros](/glossario/juros) desnecessários e impedir que você gaste mais do que tem disponível.  
 
 Além dessas, mantenha a disciplina de registrar tudo no mesmo dia. Se algo foi pago em dinheiro, tire uma foto da nota e deixe o app fazer o resto. Se preferir, use a gravação de voz para inserir rapidamente despesas enquanto está em movimento.
 

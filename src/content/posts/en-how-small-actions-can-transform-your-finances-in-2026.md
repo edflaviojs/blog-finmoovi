@@ -46,7 +46,7 @@ Another simple yet powerful action is to define monthly goals. In FinMoovi you c
 Seeing progress works like a thermometer: when you’re close to the goal, motivation spikes; if you’re far off, a “watch‑out” alert appears. This visual cue turns the abstract idea of [saving](/en/posts/en-how-to-build-a-budget-that-actually-works-in-2026) into something tangible.
 
 ## Example 3: Automate Payment Reminders  
-Forgetting bills is one of the biggest threats to financial health. FinMoovi lets you schedule payment reminders in advance. Just enter the due date and pick a notification time. When the alert pops up, you have enough time to arrange the payment, avoiding late fees and that dreaded “tight‑budget” feeling.
+Forgetting bills is one of the biggest threats to financial health. FinMoovi lets you schedule payment [reminders](/en/posts/en-forgot-to-pay-a-bill-how-to-fix-it-in-2026) in advance. Just enter the due date and pick a notification time. When the alert pops up, you have enough time to arrange the payment, avoiding late fees and that dreaded “tight‑budget” feeling.
 
 The app also lets you mark a bill as “paid” with a single tap, keeping your cash‑flow picture up to date. This automation reduces stress and ensures your finances stay on track.
 
@@ -74,3 +74,4 @@ Start with relative targets, like “spend less than the price of a daily coffee
 ---
 
 **The next step is yours. [Try FinMoovi free for 7 days](https://finmoovi.com) and discover exactly where your money is going.**
+<!-- SCHEMA_AUTO:{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does the smart capture recognize different languages on receipts?","acceptedAnswer":{"@type":"Answer","text":"The algorithm uses advanced optical character recognition (OCR) that detects text in multiple languages, allowing automatic categorization even on foreign receipts."}},{"@type":"Question","name":"Is it safe to store my financial data in FinMoovi?","acceptedAnswer":{"@type":"Answer","text":"Yes. The app employs end‑to‑end encryption and follows international security standards, keeping your information confidential. Frequently asked questions"}},{"@type":"Question","name":"Can I use FinMoovi offline?","acceptedAnswer":{"@type":"Answer","text":"The app works offline and syncs your data once you’re back online, so you never miss a record."}},{"@type":"Question","name":"How do I set realistic goals without exact numbers?","acceptedAnswer":{"@type":"Answer","text":"Start with relative targets, like “spend less than the price of a daily coffee on leisure.” This everyday reference avoids the need for precise figures. The next step is yours. Try FinMoovi free for 7 days and discover exactly where your money is going."}}]} -->

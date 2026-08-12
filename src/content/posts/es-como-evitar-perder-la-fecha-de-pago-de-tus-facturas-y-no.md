@@ -28,7 +28,7 @@ Puedes evitar que se te pase la fecha de pago de tus facturas simplemente config
 La mayoría de las personas usa el calendario del móvil o anota fechas en papel. El problema es la fragmentación: el calendario puede no sincronizar entre dispositivos, la agenda se llena y el papel se pierde fácilmente. Además, las notificaciones son genéricas; no distinguen entre “factura de agua” y “suscripción de streaming”. Cuando llega la alerta, el cerebro ya está saturado de otras tareas y puede ignorarla. La falta de un “gancho” específico hace que el aviso sea solo otro ruido digital.
 
 ### Cómo FinMoovi transforma este escenario  
-FinMoovi está pensado para ser tu asistente financiero personal. Al abrir la app, registras cada cuenta a pagar – sea factura, cargo de tarjeta o suscripción digital – y defines la fecha de vencimiento. A partir de ahí, el sistema genera **alertas inteligentes**:
+FinMoovi está pensado para ser tu asistente financiero personal. Al abrir la app, registras cada cuenta a pagar – sea factura, cargo de tarjeta o suscripción digital – y defines la fecha de vencimiento. A partir de ahí, el sistema genera **[alertas inteligentes](/es/posts/es-olvidaste-pagar-una-factura-y-te-quedaste-sin-dinero-como)**:
 
 - **Notificaciones push** 48 h, 24 h y 1 h antes del vencimiento, resaltando la categoría y el importe.
 - **Smart Capture**: si lo prefieres, activa la voz que, al acercarse el plazo, lee el nombre de la cuenta y el importe, como si fuera un recordatorio de un amigo.  

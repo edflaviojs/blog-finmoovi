@@ -33,7 +33,7 @@ Cash flow, in plain language, is simply the record of all the money that enters 
 ## How most people try to track cash flow (and why it fails)
 
 - Write everything on a piece of paper, hoping you’ll remember later  
-- Use a spreadsheet, manually typing each receipt and bill  
+- Use a [spreadsheet](/en/posts/en-migrating-from-spreadsheets-to-a-financial-app), manually typing each receipt and bill  
 - Rely on bank statements, which only show transactions after they’ve happened  
 
 ![How most people try to track cash flow (and why it fails)](/images/glossario/fluxo-de-caixa-inline-3.webp)

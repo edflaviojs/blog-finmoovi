@@ -20,7 +20,7 @@ seo:
 
 ## Understanding personal expense categories
 
-Most people feel a knot in the stomach when the credit‑card bill arrives, but they can’t pinpoint why. Maybe the “shopping” line is huge, or the “food” line looks like a small loan. The problem isn’t the amount itself—it’s the lack of a clear picture of where every cent is going. That’s where the idea of a **personal expense category** steps in: a label you attach to each purchase (like groceries, transport, entertainment) so you can see patterns, cut waste, and plan the future.
+Most people feel a knot in the stomach when the [credit](/en/glossario/en-credit)‑card bill arrives, but they can’t pinpoint why. Maybe the “shopping” line is huge, or the “food” line looks like a small [loan](/en/glossario/en-loan). The problem isn’t the amount itself—it’s the lack of a clear picture of where every cent is going. That’s where the idea of a **personal expense category** steps in: a label you attach to each purchase (like groceries, transport, entertainment) so you can see patterns, cut waste, and plan the future.
 
 ![Understanding personal expense categories](/images/glossario/categoria-de-despesas-pessoais-inline-1.webp)
 
@@ -31,7 +31,7 @@ Most people feel a knot in the stomach when the credit‑card bill arrives, but 
 - Housing (rent, utilities)
 - Entertainment (streaming, outings)
 - Health & wellness
-- Savings & investments
+- [Savings](/en/glossario/en-savings) & investments
 
 By grouping expenses under these headings, you turn a chaotic list of receipts into a tidy ledger that tells a story.
 
@@ -41,13 +41,13 @@ When you look at a raw list of transactions, it’s easy to miss the big picture
 
 - **Visibility:** You instantly see which buckets are swallowing most of your income.
 - **Control:** Knowing that “eating out” costs as much as a month’s rent helps you set limits.
-- **Goal‑setting:** You can allocate a specific portion of your earnings to “travel” or “emergency fund” and track progress.
+- **Goal‑setting:** You can allocate a specific portion of your earnings to “travel” or “[emergency fund](/en/glossario/en-emergency-fund)” and track progress.
 
 Think of categories as the rooms in a house. If you know which room is messy, you can clean it; if you don’t know, you’ll keep tripping over the same mess.
 
 ## How FinMoovi’s smart capture changes the game
 
-Imagine you’re at a coffee shop, paying cash for a latte that costs about the price of a daily coffee. You pull out your phone, snap a photo of the receipt, and FinMoovi instantly reads the amount, recognizes the merchant, and tags it as “Food & Drink” without you lifting a finger. That’s the **smart capture** feature: it uses image‑recognition (or voice) to turn a paper slip into a categorized entry automatically.
+Imagine you’re at a coffee shop, paying cash for a latte that costs about the price of a daily coffee. You pull out your phone, snap a photo of the receipt, and FinMoovi instantly reads the amount, recognizes the merchant, and tags it as “Food & Drink” without you lifting a finger. That’s the **[smart capture](/en/posts/en-how-to-never-miss-a-bill-payment-deadline-simple-5-minute)** feature: it uses image‑recognition (or voice) to turn a paper slip into a categorized entry automatically.
 
 ![How FinMoovi’s smart capture changes the game](/images/glossario/categoria-de-despesas-pessoais-inline-3.webp)
 
@@ -79,7 +79,7 @@ Credit‑card bills become less intimidating when you can break them down by cat
 
 ## Start today
 
-Open FinMoovi, tap the **Smart Capture** button, and take a photo of any receipt you have right now—whether it’s a grocery bag, a fuel pump, or a digital receipt on your screen. In the next five minutes:
+Open FinMoovi, tap the **[Smart Capture](/en/posts/en-how-to-secure-financing-for-your-projects-without-headaches)** button, and take a photo of any receipt you have right now—whether it’s a grocery bag, a fuel pump, or a digital receipt on your screen. In the next five minutes:
 
 1. Confirm the automatically assigned category (or change it if needed).
 2. Set a budget limit for that category for the current month.

@@ -20,7 +20,7 @@ seo:
 
 ## ¿Te suena ese peso en el bolsillo?
 
-¿Alguna vez has mirado tu cuenta y sientes que, a pesar de ganar lo suficiente para pagar el alquiler, siempre falta un poco para cubrir los gastos? Ese vacío suele ser el **saldo deudor**, esa parte de tus finanzas que sigue “pendiendo” porque una deuda no se ha amortizado por completo. Tal vez sea un préstamo estudiantil, una tarjeta de crédito que usas para emergencias o un crédito de consumo que te ayuda a comprar el sofá que necesitabas. Cada mes ves cómo el dinero entra, pero al cerrar el mes el saldo deudor vuelve a aparecer, como una sombra que te impide respirar tranquilo.
+¿Alguna vez has mirado tu cuenta y sientes que, a pesar de ganar lo suficiente para pagar el alquiler, siempre falta un poco para cubrir los gastos? Ese vacío suele ser el **saldo deudor**, esa parte de tus finanzas que sigue “pendiendo” porque una deuda no se ha amortizado por completo. Tal vez sea un [préstamo](/es/glossario/es-prestamo) estudiantil, una tarjeta de [crédito](/es/glossario/es-credito) que usas para emergencias o un crédito de consumo que te ayuda a comprar el sofá que necesitabas. Cada mes ves cómo el dinero entra, pero al cerrar el mes el saldo deudor vuelve a aparecer, como una sombra que te impide respirar tranquilo.
 
 ![¿Te suena ese peso en el bolsillo?](/images/glossario/saldo-devedor-inline-1.webp)
 
@@ -28,11 +28,11 @@ seo:
 
 ## ¿Qué es el saldo deudor?
 
-El saldo deudor es simplemente el monto que aún debes a una entidad financiera o a un acreedor. No se trata solo de la cifra que aparece en la factura de la tarjeta; incluye intereses, comisiones y cualquier cargo adicional que se haya generado. En términos cotidianos, es el “peso” que sigue cargando tu bolsillo después de haber recibido el dinero. Cuando el saldo deudor es alto, reduce tu capacidad de ahorro y limita la flexibilidad para afrontar imprevistos, como una reparación del coche o una visita al médico.
+El saldo deudor es simplemente el monto que aún debes a una entidad financiera o a un acreedor. No se trata solo de la cifra que aparece en la [factura de la tarjeta](/es/glossario/es-factura-de-la-tarjeta); incluye intereses, comisiones y cualquier cargo adicional que se haya generado. En términos cotidianos, es el “peso” que sigue cargando tu bolsillo después de haber recibido el dinero. Cuando el saldo deudor es alto, reduce tu capacidad de ahorro y limita la flexibilidad para afrontar imprevistos, como una reparación del coche o una visita al médico.
 
 ## Cómo FinMoovi te ayuda a domar el saldo deudor
 
-FinMoovi está pensado para que el control de tus deudas sea tan sencillo como tomar una foto del recibo. Imagina que acabas de pagar la cuota de tu préstamo estudiantil. Con la función de **captura inteligente**, solo necesitas apuntar con la cámara del móvil o dictar el monto, y la app reconoce automáticamente el valor, la fecha y la entidad. En segundos, la información se categoriza como “deuda recurrente” y se incorpora al flujo de caja.
+FinMoovi está pensado para que el control de tus deudas sea tan sencillo como tomar una foto del recibo. Imagina que acabas de pagar la cuota de tu préstamo estudiantil. Con la función de **[captura inteligente](/es/posts/es-como-conseguir-financiacion-para-tus-proyectos-sin)**, solo necesitas apuntar con la cámara del móvil o dictar el monto, y la app reconoce automáticamente el valor, la fecha y la entidad. En segundos, la información se categoriza como “deuda recurrente” y se incorpora al [flujo de caja](/es/glossario/es-flujo-de-caja).
 
 ![Cómo FinMoovi te ayuda a domar el saldo deudor](/images/glossario/saldo-devedor-inline-3.webp)
 
@@ -60,7 +60,7 @@ FinMoovi está pensado para que el control de tus deudas sea tan sencillo como t
 
 ## Otros recursos útiles dentro de FinMoovi
 
-FinMoovi no solo te ayuda a registrar y visualizar deudas; también ofrece herramientas complementarias que hacen la gestión financiera más holística:
+FinMoovi no solo te ayuda a registrar y visualizar deudas; también ofrece herramientas complementarias que hacen la [gestión financiera](/es/posts/es-5-alternativas-a-organizze-en-2026-opciones-para-administrar) más holística:
 
 - **Análisis de tendencias**: Gráficos que comparan tu saldo deudor mes a mes, mostrando si la tendencia es a la baja o al alza.
 - **Simulador de pagos**: Introduce diferentes montos de pago y la app calcula cuánto tiempo tardarás en eliminar la deuda y cuánto ahorrarás en intereses.

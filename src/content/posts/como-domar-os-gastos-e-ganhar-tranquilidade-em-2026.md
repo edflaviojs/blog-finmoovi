@@ -43,7 +43,7 @@ Ao registrar cada gasto no FinMoovi, o app já separa essas categorias, permitin
 
 ## Automatize o controle com alertas
 
-Um dos maiores desafios de manter o orçamento em dia é esquecer que certos gastos ainda estão por vir – como a renovação de um plano de celular ou a taxa anual de um cartão de [crédito](/glossario/credito). O FinMoovi permite criar **[alertas de saldo](/posts/como-organizar-seu-dinheiro-com-um-app-facil-de-usar)** e **lembretes de vencimento**. Basta definir que, quando o gasto de uma categoria alcançar 80 % do limite que você estabeleceu, o app enviará uma notificação. Assim, você tem tempo de reagir antes que o saldo se esgote.
+Um dos maiores desafios de manter o orçamento em dia é esquecer que certos gastos ainda estão por vir – como a renovação de um plano de celular ou a taxa anual de um cartão de [crédito](/glossario/credito). O FinMoovi permite criar **[alertas de saldo](/posts/como-organizar-seu-dinheiro-com-um-app-facil-de-usar)** e **lembretes de [vencimento](/posts/ja-esqueceu-de-pagar-a-conta-e-ficou-na-mao-como-mudar-isso)**. Basta definir que, quando o gasto de uma categoria alcançar 80 % do limite que você estabeleceu, o app enviará uma notificação. Assim, você tem tempo de reagir antes que o saldo se esgote.
 
 ## Transforme a lista de compras em um aliado
 
