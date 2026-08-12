@@ -475,6 +475,68 @@ DRY_RUN=true node scripts/rename-post-slugs.js
 
 ---
 
+## 12. A gaveta de sugestão de idioma (12/08/2026)
+
+`src/components/shared/LanguageSuggestion.astro`, montado pelo `BaseLayout`.
+
+Leitor com o aparelho noutro idioma recebe a oferta da MESMA página na língua dele.
+**Sugere, nunca troca sozinho.**
+
+### As regras que não se quebram
+
+| Regra | Porquê |
+|---|---|
+| **Sugerir, nunca redirecionar** | O robô do Google rastreia de IPs dos EUA. Trocar por geografia faria `/` deixar de ser indexada como português — 97 posts + 88 verbetes por idioma em jogo. |
+| **Gaveta no rodapé, nunca popup no meio** | O Google penaliza no telemóvel o que tapa o conteúdo logo após o clique na busca. Cookies e idade estão isentos (obrigação legal); idioma não está. Ocupa 13-16% do ecrã. |
+| **O idioma vem do APARELHO**, não do IP | Um brasileiro de férias em Londres quer português. `navigator.languages`; `pt-PT` e `pt-BR` → `pt`; idioma desconhecido → **inglês** (alcança mais gente). |
+| **Texto no idioma de DESTINO** | Quem não lê português não pode ser convidado em português. Por isso os 3 textos estão escritos no componente e **não** vêm do `t()`, que devolveria sempre o idioma da página. Mesmo padrão do `CookieNotice`. |
+| **Só onde há tradução** | Preso ao mesmo `hasI18nVersion` do `BaseLayout` que decide os `hreflang`, e o script ainda confirma o `<link rel="alternate">` antes de mostrar. 585 das 636 páginas; as 51 restantes são exatamente as sem tradução. |
+
+### ⚠️ Três inquilinos no mesmo canto do ecrã
+
+Antes de acrescentar QUALQUER aviso novo ao blog, saber que o rodapé já tem três, e
+**nenhum sabe da existência dos outros**:
+
+| Quem | Quando aparece | z-index |
+|---|---|---|
+| `CookieNotice` | **primeira visita** | `--z-toast` (400) |
+| `NewsletterPopup` | 75% de rolagem · 30s · rato a sair | **10000** |
+| `LanguageSuggestion` | logo após a escolha de privacidade | `--z-modal` (300) |
+
+O `CookieNotice` emite `fm-consent` quando alguém escolhe — é por aí que a gaveta espera a
+vez, sem tocar no ficheiro dele. O `NewsletterPopup` não avisa ninguém: a gaveta vigia-lhe a
+classe `visible` com um `MutationObserver` e sai de cena, **sem se marcar como decidida**
+(quem foi interrompido não escolheu).
+
+### ⚠️ `fm-lang` NÃO diz que a pessoa escolheu
+
+O `LanguageSwitcher` escreve essa chave **sozinho** em toda página `/en` e `/es`, só por a
+URL ter prefixo. Um brasileiro que espreita um artigo em inglês uma vez ficaria marcado como
+«inglês» para sempre. A gaveta tem chave própria: **`fm-lang-suggest`**, escrita só quando
+alguém carrega mesmo num dos dois botões.
+
+### ⚠️ Sigla, não bandeira
+
+`🇺🇸` aparece como as letras `US` no Windows — o sistema não tem tipo de letra para
+bandeiras. Usar o selo de sigla, que é o que o `LanguageSwitcher` do cabeçalho já faz.
+
+### A contagem
+
+`lang-<idioma>-visto` / `-aceito` / `-dispensado`, via `/api/cta-track` para a tabela
+**`cta_clicks` que já existe** (uma tabela nova não existiria no Supabase, e o endpoint
+devolve `200` com `stored: false` quando falha — daria tudo verde e zero números). Filtrar
+por `variant LIKE 'lang-%'`. **Quem recusou os cookies não é contado**; a gaveta continua a
+aparecer-lhe, porque sugerir não é rastrear.
+
+### A mesma gaveta na landing
+
+`backup-app-22052025/landing/src/components/LanguageSuggestion.tsx`, montada no `App.tsx`.
+Só nas 3 homes — as 4 páginas legais existem num idioma só. **Devolve `null` na primeira
+renderização**, obrigatoriamente: é montada no `App.tsx` (só browser) enquanto o
+`entry-server` pré-renderiza sem ela; emitir DOM à primeira partiria a hidratação.
+
+---
+
 ## Referência Rápida
 
 ```

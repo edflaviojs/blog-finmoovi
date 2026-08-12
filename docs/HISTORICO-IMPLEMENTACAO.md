@@ -302,3 +302,107 @@ Segunda regra, descoberta depois e mais perigosa: o Cloudflare casa a **origem**
 **A lição.** Os guards verificavam a **forma** do link e nunca se a **página existe** — por isso a regressão dos 9 links passou por 1 revisor e 2 codificadores. Guard de forma sem guard de existência é falsa segurança. E análise estática não revela nada disto: o redirect vem do Cloudflare e não está em arquivo nenhum. **Prove com `curl -I -L` contra o domínio publicado.**
 
 **Linha de base do GSC** (manhã de 29/07, antes do deploy, pela API do Google — `.github/data/gsc-index-status.json`): 508 URLs, **120 indexadas (23,6%)**, 148 "Page with redirect", 195 "Discovered - currently not indexed", 2 "Redirect error", e **118 URLs onde o canonical escolhido pelo Google divergia do nosso — a diferença sendo exatamente a barra final**. O arquivo é sobrescrito todo dia mas commitado, então o histórico fica no git. Acompanhar: `Page with redirect` deve despencar e `120/508` deve subir nas próximas 2 a 4 semanas.
+
+---
+
+## 🌍 Sugestão de idioma, 90 páginas cortadas e o rastreador injetado (2026-08-12)
+
+Três commits no blog (`9345bd44`, `337b9ea0`, `d850f494`) e dois no repositório do app
+(`e5dd4f8`, `df44aed`). Começou como «dá para sugerir o idioma ao visitante?» e destapou
+dois defeitos que ninguém procurava.
+
+**`9345bd44` — a gaveta de sugestão de idioma.** Leitor com o aparelho em inglês cai num
+artigo em português vindo da busca e não tinha como saber que o MESMO artigo existe na
+língua dele. Sobe uma gaveta no rodapé a oferecer a página equivalente; ele escolhe, nada
+troca sozinho.
+
+- **Porque SUGERE e não troca sozinho:** o robô do Google rastreia a partir de IPs dos
+  EUA. Trocar o idioma conforme quem visita fá-lo-ia ver inglês na URL portuguesa, e as
+  páginas em português deixariam de ser indexadas como português (97 posts + 88 verbetes
+  por idioma).
+- **Porque GAVETA e não popup no meio:** o Google penaliza no telemóvel o que tapa o
+  conteúdo logo após o clique na busca. Cookies e verificação de idade estão isentos por
+  serem obrigação legal; sugestão de idioma não está. Ocupa 13-16% do ecrã.
+- **O idioma vem do APARELHO** (`navigator.languages`), não do IP: um brasileiro de férias
+  em Londres quer português. Nada sai do aparelho.
+- Preso ao mesmo `hasI18nVersion` que decide os `hreflang`: **585 das 636 páginas** a
+  recebem, e as 51 restantes são exatamente as sem tradução declarada.
+- **`fm-lang` NÃO serve para saber se a pessoa escolheu** — o `LanguageSwitcher` escreve
+  essa chave sozinho em toda página `/en` e `/es`, só por a URL ter prefixo. Chave própria:
+  `fm-lang-suggest`.
+- Três armadilhas que só o ensaio com navegador real apanhou: o `CookieNotice` ocupa o
+  mesmo canto e aparece na PRIMEIRA visita (agora a gaveta espera o evento `fm-consent`);
+  o `NewsletterPopup` (z-index 10000) abre aos 75% de rolagem e passava-lhe por cima
+  (agora cede o lugar, **sem** se marcar como decidida); e as bandeiras em emoji saíam como
+  as letras «US»/«BR»/«ES» no Windows (passou a usar o selo de sigla do cabeçalho).
+
+**`337b9ea0` — 90 páginas ficavam mais largas que o telemóvel.** Medido em perfil de
+iPhone 13 (ecrã de 390px): **90 de 555 páginas** (mediana +69px, pior caso +474px).
+Duas consequências, e a segunda é a grave: o texto do artigo era cortado no lado direito
+(«Enquanto você folheia a fatura do cartão e ten…»), e **o aviso de privacidade saía do
+ecrã** — página mais larga que o ecrã faz o navegador alargar a *layout viewport*, e tudo
+o que é `position: fixed; bottom` é empurrado para fora da vista (medido na altura 1201
+num ecrã de 664). O leitor nunca via o aviso e nunca escolhia.
+
+Duas causas, não uma: **89 páginas por uma `<table>`** (o artigo é item de `display: grid`,
+e item de grid nasce com `min-width: auto` — recusa-se a encolher abaixo da largura mínima
+do conteúdo; tabela de 7 colunas pede 828px, a coluna ia atrás e a página também. O
+`width: 100%` da tabela não impedia nada: 100% de uma coluna já esticada); e **1 página
+por `=IFERROR(PreviousCell+CurrentValue,CurrentValue)`**, 48 caracteres sem um espaço,
+escrita como texto normal.
+
+Conserto em 3 ficheiros: `src/utils/rehype-wrap-tables.ts` (novo) mete cada tabela numa
+caixa `.table-scroll`; `global.css` ganha `min-width: 0` nos itens do grid,
+`overflow-x: auto` na caixa e `overflow-wrap: break-word` no `.post-content`;
+`astro.config.mjs` liga o plugin. **No BUILD e não nos 90 markdowns**, pela mesma razão do
+`remark-canonical-links`: o bot escreve conteúdo todo dia, e consertar os ficheiros de hoje
+voltava a partir amanhã na primeira tabela nova. **Recusado o atalho
+`table { display: block; overflow-x: auto }`** — uma linha de CSS que teria dispensado o
+plugin, mas que faz o VoiceOver do Safari deixar de anunciar a tabela como tabela: perdem-se
+os cabeçalhos de coluna. A caixa leva `tabindex="0"` (regra `scrollable-region-focusable`
+do axe). Resultado: **90 → 0 em 636 páginas medidas uma a uma**.
+
+**`d850f494` — contar a gaveta, e calar quem recusou.** Três momentos por idioma
+(`lang-en-visto`/`-aceito`/`-dispensado`) para a tabela **`cta_clicks` que já existe** — uma
+tabela nova não existiria no Supabase e o endpoint devolve `200` com `stored: false` quando
+a gravação falha, o que daria tudo verde com zero números. **E o contador antigo
+(`PostInlineCTAs`) disparava para quem tinha carregado em «Recusar»** — a medição do
+Cloudflare respeitava, essa não. Consertado junto. A gaveta continua a APARECER para quem
+recusou; o que deixa de haver é contagem.
+
+**O rastreador que a Cloudflare injetava por cima (resolvido no painel, não em código).**
+Uma prova que só perguntava «a landing continua a não pedir nada a terceiros?» respondeu
+que não. O painel `finmoovi.com` do Web Analytics estava em **RUM → «Habilitar»
+(injeção automática)**, que não fica só no host configurado: injeta no **domínio inteiro**,
+e por isso o token `3cdd3537` entrava também no blog e no app, **por cima** do código deles.
+Medido no ar, depois de carregar em «Recusar» e recarregar: **2 pedidos ao medidor**, um
+deles o envio de dados em `/cdn-cgi/rum`. Ou seja: o botão «Recusar», reescrito nesse mesmo
+dia precisamente porque um botão que não desliga nada é decoração, continuava a não
+desligar nada. O nosso código obedecia; a plataforma fazia outra coisa. A opção passou a
+«Ative com a instalação do JS Snippet» e o snippet do `finmoovi.com` passou a estar escrito
+em `landing/index.html`. Medido depois, de sessão limpa: **2 páginas visitadas, zero
+pedidos, zero scripts**.
+
+⚠️ **Ao remedir, isolar a sessão.** Testando «clica Recusar e recarrega» sobra 1 pedido a
+`/cdn-cgi/rum` — é a página ANTERIOR a descarregar dados recolhidos antes da recusa, o que
+é legítimo. Sem isolar, essa sobra faz parecer que o conserto falhou.
+
+**As lições.** Três, e todas da mesma família:
+
+1. **Medir no repositório, no `dist/` ou com `curl` não prova o que o VISITANTE recebe.**
+   O script do rastreador não estava em ficheiro nenhum e nem aparecia ao `curl` — a
+   Cloudflare só o injeta para pedidos de navegador. Só o navegador a sério contra o site
+   no ar o apanhou.
+2. **Ausência de configuração no repositório não prova ausência de automação.** Concluí por
+   escrito que «nada publica a landing» porque não havia `wrangler.*` em `landing/`, nem
+   workflow, e a fase de deploy do doc estava a ⬜ PENDENTE. A automação vivia no painel da
+   Cloudflare. Quando a conclusão for sobre algo fora do disco, **pedir a fotografia do
+   painel** — resolveu isto em segundos.
+3. **A prova pode medir o alvo errado.** A 1ª versão do ensaio do conserto das tabelas deu
+   FALHA a dizer que não funcionava: media a PRIMEIRA `.table-scroll` da página, que tem 2
+   colunas, cabe, e por isso não rola. Tinha de medir a mais larga.
+
+**Provas.** 27 em navegador real para a gaveta do blog, 10 para o conserto das tabelas, 12
+para a contagem (que interceptam o pedido e leem o corpo), 26 para a gaveta da landing, 13
+finais contra os 3 sites no ar. Mais as 64 provas da casa e o build completo com todos os
+validadores, a cada passo.
