@@ -47,6 +47,26 @@ const cortar = (s, n = 100) => {
   return t.length > n ? `${t.slice(0, n)}…` : t;
 };
 
+/**
+ * ⚠️ **MOSTRAR A JANELA À VOLTA DA DIFERENÇA, E NÃO O PRINCÍPIO DA LINHA.**
+ *
+ * A primeira versão cortava os primeiros 100 caracteres — e três descrições longas
+ * apareceram no ensaio com o "antes" e o "depois" IGUAIS no ecrã, porque a única
+ * palavra que mudava estava no caractere 300. Quem lê isso aprova às cegas, e um
+ * ensaio que não deixa ver o que muda não é um ensaio: é um carimbo.
+ */
+function janelaDaDiferenca(antes, depois, margem = 55) {
+  const a = String(antes || '').replace(/\s+/g, ' ').trim();
+  const b = String(depois || '').replace(/\s+/g, ' ').trim();
+  let i = 0;
+  while (i < a.length && i < b.length && a[i] === b[i]) i++;
+  // ...e recua até ao princípio da palavra, para não cortar a meio dela.
+  while (i > 0 && !/\s/.test(a[i - 1])) i--;
+  const ini = Math.max(0, i - margem);
+  const jan = (s) => `${ini > 0 ? '…' : ''}${s.slice(ini, i + margem * 3)}${i + margem * 3 < s.length ? '…' : ''}`;
+  return { antes: jan(a), depois: jan(b) };
+}
+
 async function pedir(url, acesso) {
   const r = await fetch(url, { headers: { Authorization: `Bearer ${acesso}` } });
   const j = await r.json().catch(() => ({}));
@@ -159,9 +179,10 @@ for (const v of videos) {
   console.log(`  https://youtu.be/${id}`);
 
   if (titulo.mudou) {
+    const j = janelaDaDiferenca(s.title, titulo.texto);
     console.log(`  TÍTULO`);
-    console.log(`    antes : ${cortar(s.title)}`);
-    console.log(`    depois: ${cortar(titulo.texto)}`);
+    console.log(`    antes : ${j.antes}`);
+    console.log(`    depois: ${j.depois}`);
   }
 
   if (descricao.mudou) {
@@ -172,15 +193,17 @@ for (const v of videos) {
     console.log(`  DESCRIÇÃO`);
     for (let i = 0; i < Math.max(antes.length, depois.length); i++) {
       if (antes[i] === depois[i]) continue;
-      console.log(`    antes : ${cortar(antes[i])}`);
-      console.log(`    depois: ${cortar(depois[i])}`);
+      const j = janelaDaDiferenca(antes[i], depois[i]);
+      console.log(`    antes : ${j.antes}`);
+      console.log(`    depois: ${j.depois}`);
     }
   }
 
   for (const c of comentarios) {
+    const j = janelaDaDiferenca(c.texto, c.novo.texto);
     console.log(`  COMENTÁRIO DO CANAL`);
-    console.log(`    antes : ${cortar(c.texto)}`);
-    console.log(`    depois: ${cortar(c.novo.texto)}`);
+    console.log(`    antes : ${j.antes}`);
+    console.log(`    depois: ${j.depois}`);
   }
 
   const sobras = [...titulo.sobras, ...descricao.sobras, ...comentarios.flatMap((c) => c.novo.sobras)];
