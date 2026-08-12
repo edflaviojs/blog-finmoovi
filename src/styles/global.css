@@ -83,6 +83,21 @@ input, textarea, select {
   gap: var(--space-8);
 }
 
+/*
+  ⚠️ SEM ISTO, 90 PÁGINAS FICAVAM MAIS LARGAS QUE O TELEMÓVEL (medido 12/08/2026).
+
+  Um item de grid nasce com `min-width: auto`: recusa-se a encolher abaixo da
+  largura mínima do seu conteúdo. Uma tabela de comparação pede 828px de mínimo,
+  logo a coluna ia a 828px e a página ia atrás — o texto do artigo era cortado no
+  lado direito E o aviso de privacidade, que é `position: fixed`, saía do ecrã.
+
+  `min-width: 0` deixa a coluna acompanhar o ecrã. Quem tem de rolar por dentro é
+  o conteúdo largo (ver `.table-scroll` e `.post-content pre`), nunca a página.
+*/
+.layout-with-sidebar > * {
+  min-width: 0;
+}
+
 @media (min-width: 1024px) {
   .layout-with-sidebar {
     grid-template-columns: 1fr var(--sidebar-width);
@@ -120,6 +135,19 @@ input, textarea, select {
 }
 
 /* Post Content Styles */
+
+/*
+  A 2ª causa das páginas cortadas, e só apareceu em UMA das 90: uma fórmula de
+  Excel escrita como texto normal —
+  `=IFERROR(PreviousCell+CurrentValue,CurrentValue)`, 48 caracteres sem um único
+  espaço. Sem sítio por onde partir, a palavra estica a coluna toda, tal como a
+  tabela fazia. Vale para o que aí vem: link colado, código a meio da frase, nome
+  de ficheiro comprido.
+*/
+.post-content {
+  overflow-wrap: break-word;
+}
+
 .post-content h2 {
   margin-top: var(--space-12);
   margin-bottom: var(--space-4);
@@ -190,10 +218,22 @@ input, textarea, select {
   margin: var(--space-8) 0;
 }
 
+/*
+  A caixa que rola por baixo da tabela (posta no build pelo `rehype-wrap-tables`).
+  A tabela continua a ser tabela — quem rola é a caixa. O `overscroll-behavior-x`
+  impede que arrastar a tabela até ao fim faça o navegador recuar de página.
+*/
+.table-scroll {
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  margin: var(--space-6) 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* A margem vertical passou para `.table-scroll`; mantê-la aqui somava as duas. */
 .post-content table {
   width: 100%;
   border-collapse: collapse;
-  margin: var(--space-6) 0;
 }
 
 .post-content th, .post-content td {
