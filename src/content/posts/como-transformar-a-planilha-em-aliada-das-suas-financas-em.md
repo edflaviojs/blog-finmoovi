@@ -3,6 +3,7 @@ title: "Como transformar a planilha em aliada das suas finanças em 2026"
 description: "Descubra como usar Excel para controlar despesas mensais de forma simples, visual e sem dor de cabeça, e veja como a captura inteligente do FinMoovi pode acelerar o processo."
 tickerHeadline: "A planilha que realmente funciona"
 image: "/images/posts/como-transformar-a-planilha-em-aliada-das-suas-financas-em.webp"
+imageAlt: "Caderno marrom, calculadora, moedas e plantas verdes sobre superfície de mármore branco."
 category: "dicas"
 locale: "pt"
 tags: ["excel para despesas mensais","finanças pessoais","economia","dinheiro"]

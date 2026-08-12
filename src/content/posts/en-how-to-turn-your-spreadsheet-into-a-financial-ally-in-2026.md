@@ -3,6 +3,7 @@ title: "How to Turn Your Spreadsheet into a Financial Ally in 2026"
 description: "Learn to use Excel for simple, visual monthly expense tracking and see how FinMoovi’s smart receipt capture speeds up the process."
 tickerHeadline: "The spreadsheet that really works"
 image: "/images/posts/como-transformar-a-planilha-em-aliada-das-suas-financas-em.webp"
+imageAlt: "Brown notebook, coins, calculator, and green plants on white marble surface."
 category: "dicas"
 locale: "en"
 tags: ["excel for monthly expenses","personal finance","budgeting","money"]
