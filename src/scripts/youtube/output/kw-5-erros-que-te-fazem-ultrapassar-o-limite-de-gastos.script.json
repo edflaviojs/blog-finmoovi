@@ -1,0 +1,220 @@
+{
+  "slug": "kw-5-erros-que-te-fazem-ultrapassar-o-limite-de-gastos",
+  "term": "5 erros que te fazem ultrapassar o limite de gastos",
+  "category": "mindset",
+  "keyword": "limite",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você cria um *limite de gastos* e passa dele todo mês?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "buraco",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você cria um limite de gastos e passa dele todo mês? A culpa é de cinco errinhos nessa conta.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "limite",
+          "visual": {
+            "type": "statement",
+            "text": "Seu limite está furado"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "passa",
+          "visual": {
+            "type": "number",
+            "text": "R$ 0"
+          }
+        },
+        {
+          "anchor": "cinco",
+          "visual": {
+            "type": "statement",
+            "text": "5 erros escondidos"
+          },
+          "sfx": "alert"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Parece fácil no papel, só que aluguel, mercado e remédio não param de chegar. Aí você empurra as contas.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "papel",
+          "visual": {
+            "type": "statement",
+            "text": "No papel parece simples"
+          }
+        },
+        {
+          "anchor": "remédio",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "empurra",
+          "visual": {
+            "type": "statement",
+            "text": "Conta empurrada vira bola de neve"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Olha os cinco erros. Esquecer conta fixa, ignorar imprevistos, contar com dinheiro que não entrou, copiar o mês passado e aumentar o limite.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "erros",
+          "visual": {
+            "type": "statement",
+            "text": "5 erros no seu limite"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "imprevistos",
+          "visual": {
+            "type": "list",
+            "text": "Fixas • Imprevistos • Entradas"
+          }
+        },
+        {
+          "anchor": "copiar",
+          "visual": {
+            "type": "list",
+            "text": "Passado • Limite maior"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Aumentar o limite foi o que eu fiz. Joguei no FinMoovi e ele me mostrou limite de mil reais, mas gastos de mil e quatrocentos.",
+      "durationSec": 9.6,
+      "shots": [
+        {
+          "anchor": "Joguei",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Dashboard do FinMoovi mostrando visão geral dos gastos e do limite"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "limite",
+          "visual": {
+            "type": "number",
+            "text": "R$ 1.000"
+          }
+        },
+        {
+          "anchor": "gastos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 1.400"
+          },
+          "sfx": "alert"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "O furo apareceu na hora. Quer ver o seu? Procura o FinMoovi, é de graça.",
+      "durationSec": 5.8,
+      "shots": [
+        {
+          "anchor": "furo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          }
+        },
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "statement",
+            "text": "Quer descobrir o seu?"
+          }
+        },
+        {
+          "anchor": "Procura",
+          "visual": {
+            "type": "statement",
+            "text": "FinMoovi: grátis"
+          }
+        },
+        {
+          "anchor": "graça",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Esse limite precisa caber no seu bolso. Passar dele aperta o seu mês. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "limite",
+          "visual": {
+            "type": "statement",
+            "text": "O limite precisa caber"
+          }
+        },
+        {
+          "anchor": "Passar",
+          "visual": {
+            "type": "statement",
+            "text": "Passou? O mês aperta"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro sem controle escapa"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Descubra onde seu dinheiro fura",
+    "target": "app"
+  },
+  "totalDurationSec": 46.5
+}
