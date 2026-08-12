@@ -16,6 +16,7 @@
 import {
   titularOShort, escolherEtiquetas, variacoesDaEtiqueta,
   buildMetadata, deterministicMeta, respostaCortada, MAX_PALAVRAS_TITULO_SHORT,
+  estreiaMarcada, agendadosPorConferir,
 } from '../youtube/upload-short.js';
 import { avaliarRetencao, RETENCAO_MINIMA } from '../youtube/retencao.js';
 /**
@@ -637,6 +638,131 @@ console.log('\n🛟 O GUARDIÃO DA PRODUÇÃO — a segunda ronda, e o que a imp
    */
   ok('🔴 um vídeo de ONTEM na fila NÃO conta como produção de hoje',
     produziuNoDia(HOJE, [{ fileSlug: 'viral-jc7rFQLtrJg', producedAt: '2026-08-11T07:53:35.075Z' }]) === false);
+}
+
+// ═══ 📅 PRIVADO, COM A HORA MARCADA — 12/08/2026 ══════════════════════════════
+/**
+ * Ordem do dono: *"quero que ele entre como privado e agendado nos horários corretos…
+ * mas não podemos correr o risco de ficar vídeo sem ser postado"*.
+ *
+ * ⚠️ **AS DUAS METADES DESTAS PROVAS SÃO DIFERENTES.** Uma guarda que o agendamento
+ * ACONTECE; a outra guarda que ele **desiste a tempo** — porque o cron do GitHub atrasa,
+ * e uma hora marcada que já passou deixaria o vídeo privado para sempre.
+ */
+console.log('\n📅 O ENVIO PRIVADO COM HORA MARCADA — e a trava que nunca deixa um vídeo por publicar\n');
+{
+  const AGORA = new Date('2026-08-12T12:00:00.000Z');
+
+  const daqui3h = estreiaMarcada('15:00', AGORA);
+  ok('🔴 com três horas pela frente, marca a estreia',
+    daqui3h.estreia instanceof Date && daqui3h.estreia.toISOString() === '2026-08-12T15:00:00.000Z',
+    daqui3h.porque);
+  ok('e diz quantos minutos de antecedência ficaram', /180 min de antecedência/.test(daqui3h.porque), daqui3h.porque);
+
+  /**
+   * 🔴 **A TRAVA QUE VALE O VÍDEO DO DIA.** O cron do GitHub já atrasou 112 minutos nesta
+   * casa. Se a ronda das 12:00 só arrancar depois das 15:00, a hora marcada JÁ PASSOU —
+   * e o YouTube recusa um `publishAt` no passado. Sem isto, o vídeo ficava privado para
+   * sempre com a corrida a VERDE.
+   */
+  const jaPassou = estreiaMarcada('15:00', new Date('2026-08-12T15:20:00.000Z'));
+  ok('🔴 se a hora JÁ PASSOU, sobe público na hora (nunca fica por publicar)',
+    jaPassou.estreia === null && /JÁ PASSOU/.test(jaPassou.porque), jaPassou.porque);
+  const emCima = estreiaMarcada('15:00', new Date('2026-08-12T14:55:00.000Z'));
+  ok('e se faltam 5 minutos também (agendar aí não dá aviso nenhum ao YouTube)',
+    emCima.estreia === null, emCima.porque);
+  /**
+   * ⚠️ **MAS 40 MINUTOS AINDA SE AGENDA.** Quarenta minutos de aviso ao YouTube é melhor
+   * do que nenhum — só se desiste quando a hora está mesmo em cima. Uma trava que
+   * desistisse cedo de mais deitava fora o que o dono pediu.
+   */
+  const apertado = estreiaMarcada('15:00', new Date('2026-08-12T14:20:00.000Z'));
+  ok('⚠️ mas com 40 minutos ainda agenda (desistir cedo demais deitava fora o pedido)',
+    apertado.estreia instanceof Date, apertado.porque);
+  ok('sem hora nenhuma, é o comportamento de sempre: público já',
+    estreiaMarcada('', AGORA).estreia === null && estreiaMarcada(undefined, AGORA).estreia === null);
+
+  // ── o que se manda ao YouTube ──
+  const scriptFalso = { slug: 's', term: 'juros compostos', keyword: 'juros compostos', category: 'basico', scenes: [], cta: {} };
+  const cruo = deterministicMeta(scriptFalso);
+  const agendado = buildMetadata(cruo, scriptFalso, new Date('2026-08-12T15:00:00.000Z'));
+  ok('🔴 agendado vai `private` COM `publishAt` (as duas andam juntas)',
+    agendado.status.privacyStatus === 'private' && agendado.status.publishAt === '2026-08-12T15:00:00.000Z',
+    JSON.stringify(agendado.status));
+  const publico = buildMetadata(cruo, scriptFalso);
+  ok('⚠️ e sem hora marcada NADA muda — sobe público, como desde 03/08',
+    publico.status.privacyStatus === 'public' && !('publishAt' in publico.status),
+    JSON.stringify(publico.status));
+
+  // ── o guardião do agendado ──
+  const HOJE = new Date('2026-08-12T20:00:00.000Z');
+  const caderno = {
+    'ja-passou': { videoId: 'aaa', publishAt: '2026-08-12T15:00:00.000Z' },
+    'ainda-vem': { videoId: 'bbb', publishAt: '2026-08-12T21:40:00.000Z' },
+    'publico-de-sempre': { videoId: 'ccc', uploadedAt: '2026-08-11T15:00:00.000Z' },
+    'velho-de-mais': { videoId: 'ddd', publishAt: '2026-08-01T15:00:00.000Z' },
+  };
+  const porConferir = agendadosPorConferir(caderno, HOJE).map((p) => p.slug);
+  ok('🔴 o guardião pergunta pelos que já deviam estar no ar',
+    porConferir.includes('ja-passou'), porConferir.join(' · '));
+  ok('e não pelos que ainda não chegou a hora', !porConferir.includes('ainda-vem'));
+  ok('🔴 nem toca nos que subiram públicos (esses nunca tiveram hora marcada)',
+    !porConferir.includes('publico-de-sempre'));
+  ok('⚠️ nem em vídeos antigos (um privado à mão pelo dono não é para mexer)',
+    !porConferir.includes('velho-de-mais'), porConferir.join(' · '));
+}
+
+// ═══ 🔴 OS HORÁRIOS TÊM DE ANDAR TODOS JUNTOS ════════════════════════════════
+/**
+ * **É a armadilha desta casa, e já mordeu hoje de manhã no guardião da produção.** Três
+ * coisas separadas guardam a mesma hora: o `cron`, o `case` que reconhece o turno, e a
+ * hora que vai marcada no upload. Mudar uma sem as outras não dá erro nenhum — dá um
+ * turno inválido, ou um vídeo agendado para a hora errada.
+ */
+console.log('\n🕐 OS HORÁRIOS — o cron, o turno e a estreia têm de bater\n');
+{
+  const wf16 = readFileSync(join(RAIZ, '.github', 'workflows', 'youtube-short16-publish.yml'), 'utf-8');
+  const crons16 = [...wf16.matchAll(/^\s*-\s*cron:\s*'([^']+)'/gm)].map((m) => m[1]);
+  ok('o de 16s continua com duas entregas por dia', crons16.length === 2, crons16.join(' · '));
+  for (const c of crons16) {
+    ok(`  🔴 o \`case\` do turno conhece o cron "${c}"`, wf16.includes(`"${c}")`));
+  }
+  /** A estreia de cada turno tem de ser exactamente TRÊS horas depois do envio. */
+  const horaDoCron = (c) => { const [m, h] = c.split(' '); return Number(h) * 60 + Number(m); };
+  const estreias = [...wf16.matchAll(/(manha|noite%?)\)\s*ESTREIA=(\d{1,2}):(\d{2})/g)]
+    .map((m) => Number(m[2]) * 60 + Number(m[3]));
+  ok('🔴 e cada estreia é 3 horas depois do seu envio',
+    estreias.length === 2
+    && estreias[0] - horaDoCron(crons16[0]) === 180
+    && estreias[1] - horaDoCron(crons16[1]) === 180,
+    `envios ${crons16.map(horaDoCron).join('/')} · estreias ${estreias.join('/')} (minutos)`);
+
+  const wf50 = readFileSync(join(RAIZ, '.github', 'workflows', 'youtube-short-publish.yml'), 'utf-8');
+  const crons50 = [...wf50.matchAll(/^\s*-\s*cron:\s*'([^']+)'/gm)].map((m) => m[1]);
+  ok('o de 50s continua com envio + repescagem', crons50.length === 2, crons50.join(' · '));
+  ok('🔴 o envio das 12:00 leva a estreia das 15:00 (três horas)',
+    /"\$\{\{ github\.event\.schedule \}\}" = "0 12 \* \* \*" \]; then ESTREIA="--estreia=15:00"/.test(wf50));
+  /**
+   * 🔴 **A REPESCAGEM NÃO PODE LEVAR HORA MARCADA.** Ela só corre quando a entrega
+   * falhou; ali o que está em causa é o vídeo existir hoje, não a antecedência. Dar-lhe
+   * estreia empurrava o vídeo do dia para ainda mais tarde.
+   */
+  ok('🔴 e a repescagem NÃO leva estreia nenhuma (a rede de segurança não tem condições)',
+    !new RegExp(`= "${crons50[1].replace(/\*/g, '\\*')}" \\]; then ESTREIA=`).test(wf50), crons50[1]);
+
+  // ── o guardião do agendado está nos dois, e antes do npm ci ──
+  /**
+   * ⚠️ **A MINHA 1ª VERSÃO DESTA PROVA MEDIA O MEU PRÓPRIO COMENTÁRIO.** Ela procurava
+   * `npm ci` no ficheiro — e o comentário que explica *"corre ANTES do npm ci"* aparece
+   * antes do passo. Ficou vermelha com o workflow certo. Agora compara os PASSOS: o nome
+   * de um contra o `run:` do outro.
+   */
+  for (const [nome, wf] of [['16s', wf16], ['50s', wf50]]) {
+    ok(`  o guardião do agendado corre no ${nome}`, /--conferir-agendados/.test(wf));
+    ok(`  e o passo dele vem ANTES do passo que instala (corre nos dias sem entrega)`,
+      wf.indexOf('- name: O guardião do agendado') < wf.indexOf('run: npm ci'),
+      `guardião em ${wf.indexOf('- name: O guardião do agendado')}, npm ci em ${wf.indexOf('run: npm ci')}`);
+  }
 }
 
 console.log(`\n${'═'.repeat(72)}`);

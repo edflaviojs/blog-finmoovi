@@ -32,6 +32,12 @@ import { creditoDaMusica, TRILHA } from './lib/musica.js';
 import { caminhoDaCapaLarga } from './capa-short.js';
 import { textoDoPrimeiroComentario, escreverPrimeiroComentario } from './lib/primeiro-comentario.js';
 import { arrumarNasPlaylists } from './lib/playlists.js';
+/**
+ * ⚠️ **A MESMA função que o vídeo longo usa para perguntar o estado ao YouTube.** Uma
+ * cópia dela aqui seria a mesma pergunta em dois sítios — a família de defeito nº1 desta
+ * casa. Importar `upload-longo.js` não corre nada: ele tem a guarda do `chamadoPeloNome`.
+ */
+import { estadoNoYouTube } from './upload-longo.js';
 
 // ─── caminhos ────────────────────────────────────────────────────────────────
 const ROOT = process.cwd();
@@ -89,6 +95,54 @@ const args = Object.fromEntries(
 );
 const SLUG = args.slug && args.slug !== true ? String(args.slug) : 'juros-compostos';
 const DRY_RUN = Boolean(args['dry-run']);
+
+/**
+ * ═══ 🔴 SUBIR PRIVADO E MARCAR A HORA — 12/08/2026, ordem do dono ═══════════════
+ *
+ * *"Quero que ele entre como privado e agendado nos horários corretos. A intenção é dar
+ * tempo para o YouTube saber do que se trata o vídeo e divulgar para a audiência certa."*
+ *
+ * ⚠️ **OS HORÁRIOS DE IR AO AR NÃO MUDAM.** O que muda é a hora do ENVIO: o vídeo passa a
+ * chegar **três horas antes** e fica privado, com a estreia marcada. Quem publica é o
+ * YouTube, ao segundo certo. É a mesma manobra que o vídeo longo já faz desde 05/08 — ver
+ * `montarMetadados` em `upload-longo.js`.
+ *
+ * ═══ 🔴 E A TRAVA QUE IMPEDE UM VÍDEO DE FICAR POR PUBLICAR ═══
+ * O dono foi explícito: *"não podemos correr o risco de ficar vídeo sem ser postado"*.
+ * **O cron do GitHub atrasa — já se mediu até 112 minutos nesta casa.** Se a ronda das
+ * 12:00 só arrancar às 15:20, a hora marcada **já passou**, e o YouTube recusa um
+ * `publishAt` no passado: o vídeo ficaria privado para sempre, com a corrida a verde.
+ *
+ * Por isso: **falta pouco (ou já passou) → sobe PÚBLICO na hora**, que é exactamente o
+ * comportamento de sempre. A rede de segurança não pode ter condições.
+ *
+ * ⚠️ **E o contrário também é regra:** com 40 minutos de antecedência agenda-se na mesma.
+ * Quarenta minutos de aviso ao YouTube é melhor do que nenhum — só se desiste quando a
+ * hora está mesmo em cima.
+ */
+const MARGEM_MINIMA_MIN = 15;
+
+/**
+ * A hora marcada para este vídeo, ou `null` para subir público já.
+ * @param {string} pedido `HH:MM` em hora universal (o relógio do cron), ou vazio.
+ * @param {Date} agora
+ */
+export function estreiaMarcada(pedido, agora = new Date()) {
+  const m = /^(\d{1,2}):(\d{2})$/.exec(String(pedido || '').trim());
+  if (!m) return { estreia: null, porque: 'sem --estreia: sobe público na hora, como sempre' };
+  const alvo = new Date(agora);
+  alvo.setUTCHours(Number(m[1]), Number(m[2]), 0, 0);
+  const minutos = (alvo.getTime() - agora.getTime()) / 60000;
+  if (minutos < MARGEM_MINIMA_MIN) {
+    return {
+      estreia: null,
+      porque: minutos < 0
+        ? `a hora marcada (${pedido}Z) JÁ PASSOU há ${Math.round(-minutos)} min — sobe público na hora, para não ficar por publicar`
+        : `faltam só ${Math.round(minutos)} min para as ${pedido}Z (mínimo ${MARGEM_MINIMA_MIN}) — sobe público na hora`,
+    };
+  }
+  return { estreia: alvo, porque: `privado, com estreia marcada para as ${pedido}Z (${Math.round(minutos)} min de antecedência)` };
+}
 
 // ─── util ────────────────────────────────────────────────────────────────────
 function log(msg) { console.log(msg); }
@@ -531,7 +585,11 @@ function deterministicMeta(script) {
 }
 
 // Monta o payload final (snippet/status) já sanitizado.
-function buildMetadata(raw, script) {
+/**
+ * @param estreia `Date` para subir privado com hora marcada, ou `null` para público já.
+ *                Ver `estreiaMarcada` — é lá que mora a trava que impede vídeo por publicar.
+ */
+function buildMetadata(raw, script, estreia = null) {
   const toolUrl = resolveToolUrl(script);
 
   // Maiúscula inicial: a palavra-chave entra crua no começo do título e saía em
@@ -637,12 +695,95 @@ function buildMetadata(raw, script) {
       defaultLanguage: 'pt-BR',
       defaultAudioLanguage: 'pt-BR',
     },
-    status: {
-      privacyStatus: 'public', // auditoria da API aprovada (03/08/2026) — sobe já público
-      selfDeclaredMadeForKids: false,
-      license: 'youtube',
-    },
+    /**
+     * ⚠️ **`privacyStatus: private` + `publishAt` é a combinação que agenda** — e as duas
+     * andam juntas: `publishAt` sozinho, num vídeo público, **não faz nada**. Está escrito
+     * assim em `upload-longo.js` desde 05/08, e é a mesma armadilha aqui.
+     *
+     * ⚠️ **Sem `estreia`, nada muda:** sobe público na hora, exactamente como desde
+     * 03/08. É a forma de sempre nesta casa — uma opção nova com o comportamento antigo
+     * por omissão.
+     */
+    status: estreia
+      ? {
+        privacyStatus: 'private',
+        publishAt: estreia.toISOString(),
+        selfDeclaredMadeForKids: false,
+        license: 'youtube',
+      }
+      : {
+        privacyStatus: 'public', // auditoria da API aprovada (03/08/2026) — sobe já público
+        selfDeclaredMadeForKids: false,
+        license: 'youtube',
+      },
   };
+}
+
+/**
+ * ═══ 🛟 O GUARDIÃO DO AGENDADO — 12/08/2026 ══════════════════════════════════
+ *
+ * ⚠️ **AGENDAR CRIA UM MODO DE FALHA QUE NÃO EXISTIA.** Até hoje, upload bem-sucedido
+ * era sinónimo de vídeo no ar. Com hora marcada, um vídeo pode subir perfeitamente,
+ * a corrida acabar a VERDE, e ele **nunca ficar público** — o YouTube engasga, a hora
+ * é recusada, alguém mexe no Studio. E é exactamente a coisa que o dono disse que não
+ * podia acontecer: *"não podemos correr o risco de ficar vídeo sem ser postado"*.
+ *
+ * ⚠️ **E ISTO NÃO SE LIMITA A AVISAR — CONSERTA.** Um aviso num registo que ninguém lê
+ * é a mesma coisa que nada (é a lição do domingo sem vídeo, §64). Se a hora marcada já
+ * passou e o vídeo continua privado, **ele é tornado público aqui**. Não se está a
+ * inventar nada: é exactamente o que estava combinado que acontecesse àquela hora.
+ *
+ * ⚠️ **SÓ MEXE NO QUE ESTE ROBÔ AGENDOU**, e só nos últimos dias: o campo `publishAt`
+ * do nosso caderno é a única fonte. Um vídeo que o dono tenha posto privado à mão não
+ * tem esse campo e não é tocado.
+ */
+const DIAS_A_OLHAR = 3;
+
+export function agendadosPorConferir(tracking, agora = new Date()) {
+  const limite = agora.getTime() - DIAS_A_OLHAR * 24 * 3600 * 1000;
+  return Object.entries(tracking || {})
+    .filter(([, v]) => v && v.videoId && v.publishAt)
+    .filter(([, v]) => {
+      const t = new Date(v.publishAt).getTime();
+      return Number.isFinite(t) && t <= agora.getTime() && t >= limite;
+    })
+    .map(([slug, v]) => ({ slug, videoId: v.videoId, publishAt: v.publishAt }));
+}
+
+async function tornarPublico(chave, videoId) {
+  const r = await fetch('https://www.googleapis.com/youtube/v3/videos?part=status', {
+    method: 'PUT',
+    headers: { Authorization: `Bearer ${chave}`, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ id: videoId, status: { privacyStatus: 'public', selfDeclaredMadeForKids: false, license: 'youtube' } }),
+  });
+  if (!r.ok) throw new Error(`${r.status}: ${(await r.text().catch(() => '')).slice(0, 200)}`);
+}
+
+async function conferirAgendados() {
+  const tracking = loadTracking();
+  const pendentes = agendadosPorConferir(tracking);
+  log(`\n🛟 O guardião do agendado — ${pendentes.length} vídeo(s) cuja hora já passou.`);
+  if (!pendentes.length) { log('   nada a conferir.'); return; }
+
+  const chave = await getAccessToken();
+  const estados = await estadoNoYouTube(pendentes.map((p) => p.videoId), chave);
+  let consertados = 0;
+  for (const p of pendentes) {
+    const e = estados[p.videoId];
+    if (!e) { log(`   ⚠️ o YouTube não conhece ${p.videoId} ("${p.slug}") — a saltar.`); continue; }
+    if (e.privacidade === 'public') { log(`   ✅ "${p.slug}" está público, como combinado.`); continue; }
+    log(`\n   🔴 "${p.slug}" devia estar no ar desde ${p.publishAt} e está "${e.privacidade}".`);
+    try {
+      await tornarPublico(chave, p.videoId);
+      consertados += 1;
+      log(`   ⛑️  tornado PÚBLICO agora → https://youtu.be/${p.videoId}`);
+      console.log(`::warning::o vídeo "${p.slug}" tinha ficado privado depois da hora marcada — foi publicado agora.`);
+    } catch (err) {
+      log(`   ❌ não deu para publicar: ${err.message}`);
+      console.log(`::error::o vídeo "${p.slug}" está privado depois da hora marcada e não deu para publicar — VÁ AO STUDIO.`);
+    }
+  }
+  log(`\n   ${consertados} conserto(s).`);
 }
 
 // ─── OAuth ───────────────────────────────────────────────────────────────────
@@ -720,7 +861,10 @@ async function uploadVideo(accessToken, metadata, mp4Path) {
   }
   const video = JSON.parse(putText);
   if (!video.id) throw new Error(`Upload retornou sem id: ${putText.slice(0, 300)}`);
-  return video.id;
+  // ⚠️ Devolve o VÍDEO INTEIRO e não só o id (12/08/2026): é no `status` que vem a
+  //    confirmação de que a hora marcada foi aceite. Sem isso, agendar seria uma
+  //    esperança em vez de um facto.
+  return video;
 }
 
 // ─── captions.insert (multipart) ─────────────────────────────────────────────
@@ -775,6 +919,16 @@ function saveTracking(data) {
 
 // ─── main ────────────────────────────────────────────────────────────────────
 async function main() {
+  /**
+   * ⚠️ **O GUARDIÃO CORRE SOZINHO E SAI** — não sobe nada, não escreve caderno, não pede
+   * IA. É só uma pergunta ao YouTube sobre o que já lá está, e o conserto se a resposta
+   * for a errada. Ver `conferirAgendados`.
+   */
+  if (args['conferir-agendados']) {
+    await conferirAgendados();
+    return;
+  }
+
   log(`\n=== YouTube upload — slug "${SLUG}"${DRY_RUN ? ' (DRY-RUN)' : ''} ===`);
 
   const script = loadScript(SLUG);
@@ -790,7 +944,12 @@ async function main() {
 
   // Metadados: LLM → fallback determinístico.
   const raw = (await tryLlm(script)) || deterministicMeta(script);
-  const metadata = buildMetadata(raw, script);
+  // ⚠️ A DECISÃO DE AGENDAR É TOMADA AQUI, E DITA EM VOZ ALTA. Ver `estreiaMarcada`:
+  //    quando a hora está em cima (ou já passou), ela devolve `null` e o vídeo sobe
+  //    público na hora — a rede de segurança não pode ter condições.
+  const { estreia, porque } = estreiaMarcada(args.estreia === true ? '' : args.estreia);
+  log(`🕒 ${porque}`);
+  const metadata = buildMetadata(raw, script, estreia);
 
   // Arquivos.
   const mp4Path = join(MP4_DIR, `${SLUG}.mp4`);
@@ -821,10 +980,34 @@ async function main() {
   // Upload.
   const accessToken = await getAccessToken();
   log('🔑 Access token renovado.');
-  log('⬆️  Enviando vídeo (público)...');
-  const videoId = await uploadVideo(accessToken, metadata, mp4Path);
+  log(`⬆️  Enviando vídeo (${estreia ? 'privado, com hora marcada' : 'público'})...`);
+  const video = await uploadVideo(accessToken, metadata, mp4Path);
+  const videoId = video.id;
   const url = `https://youtu.be/${videoId}`;
   log(`✅ Vídeo enviado: ${url}`);
+
+  /**
+   * 🔴 **CONFERIR O RESULTADO, NUNCA O CÓDIGO DE SAÍDA** — a regra da casa, e aqui ela
+   * vale o vídeo do dia: se o YouTube ignorar a hora marcada, o vídeo fica **privado
+   * para sempre** e a corrida acaba a VERDE. Ninguém dava por nada até alguém abrir o
+   * Studio. É a mesma conferência que o vídeo longo faz desde 05/08.
+   *
+   * ⚠️ **AVISA, NÃO DERRUBA.** O vídeo já está lá em cima: rebentar aqui deixaria o
+   * bilhete na fila e a repescagem subiria um SEGUNDO vídeo igual. Um aviso gritado é
+   * melhor do que um vídeo duplicado no canal.
+   */
+  if (estreia) {
+    const marcado = video?.status?.publishAt;
+    const privado = video?.status?.privacyStatus;
+    if (privado !== 'private' || !marcado) {
+      log(`\n🔴 ATENÇÃO: o YouTube devolveu privacidade "${privado}" e estreia "${marcado || 'nenhuma'}".`);
+      log('   Era esperado "private" com hora marcada. CONFIRA NO STUDIO.');
+      console.log('::error::o YouTube não aceitou a hora marcada — o vídeo pode ficar privado. Confira no Studio.');
+    } else {
+      const bate = Math.abs(new Date(marcado).getTime() - estreia.getTime()) < 60000;
+      log(`📅 confirmado pelo YouTube: estreia em ${marcado}${bate ? ' ✅' : ' ⚠️ (diferente do que pedimos!)'}`);
+    }
+  }
 
   // Legendas (falha em uma não derruba as outras nem o processo).
   for (const s of srtPaths) {
@@ -895,11 +1078,24 @@ async function main() {
     uploadedAt: new Date().toISOString(),
     title: metadata.snippet.title,
     formato: script.formato || 'short50',
+    /**
+     * ⚠️ **A HORA MARCADA FICA GRAVADA** (12/08/2026) — e não é arrumação: é por ela que
+     * o guardião do dia seguinte sabe qual vídeo devia já estar no ar. Sem este campo,
+     * um vídeo agendado que o YouTube não publicasse ficaria privado para sempre e
+     * ninguém teria como perguntar por ele.
+     * Nos vídeos que sobem públicos, não existe — e a ausência quer dizer "já está no ar".
+     */
+    ...(estreia ? { publishAt: estreia.toISOString() } : {}),
   };
   saveTracking(tracking);
   log(`📝 tracking atualizado em ${TRACKING}`);
 
-  log(`\n🌍 Vídeo PÚBLICO — já está no ar, sem passo manual no Studio.`);
+  if (estreia) {
+    log(`\n📅 Vídeo PRIVADO no Studio, com estreia marcada para ${estreia.toISOString()}.`);
+    log('   O YouTube torna-o público sozinho, à hora certa — não há passo manual.');
+  } else {
+    log(`\n🌍 Vídeo PÚBLICO — já está no ar, sem passo manual no Studio.`);
+  }
   log(`   ${url}`);
 }
 

@@ -27,8 +27,20 @@ on:
         required: true
         default: 'manha'
   schedule:
-    - cron: '40 11 * * *'   # 08:40 BR — a entrega da manhã
-    - cron: '40 21 * * *'   # 18:40 BR — a entrega da noite
+    # ♦ 12/08/2026 — ENVIA TRÊS HORAS ANTES, E O YOUTUBE PUBLICA À HORA DE SEMPRE.
+    #
+    # Ordem do dono: o vídeo entra privado e agendado, para dar tempo ao YouTube de
+    # perceber do que se trata antes de o mostrar a alguém.
+    #
+    # ⚠️ **AS HORAS DE IR AO AR NÃO MUDARAM:** 08:40 e 18:40 BR, como sempre. O que mudou
+    # foi a hora do ENVIO — 05:40 e 15:40 BR. A estreia vai marcada no próprio upload
+    # (`--estreia=` no passo de publicar).
+    #
+    # 🔴 **E O `case` DO TURNO, LOGO ABAIXO, TEM DE MUDAR JUNTO.** Ele reconhece a ronda
+    # pela hora do cron escrita à mão: mudar uma sem a outra faz o turno cair no `*)`, e
+    # aí o robô morre com "turno inválido" — ou pior, entrega o vídeo errado.
+    - cron: '40 8 * * *'    # 05:40 BR — envia o da manhã, que estreia às 08:40 BR
+    - cron: '40 18 * * *'   # 15:40 BR — envia o da noite, que estreia às 18:40 BR
 
 permissions:
   contents: write
@@ -60,17 +72,42 @@ jobs:
       - name: Que turno é este?
         id: turno
         run: |
+          # 🔴 AS HORAS AQUI SÃO AS DOS CRONS LÁ EM CIMA, E TÊM DE ANDAR JUNTAS.
+          #    Mudar uma sem a outra faz o turno cair no `*)` e o robô morrer com
+          #    "turno inválido". Há prova de mesa que compara as duas listas.
           case "${{ github.event.schedule }}" in
-            "40 11 * * *") TURNO=manha ;;
-            "40 21 * * *") TURNO=noite ;;
+            "40 8 * * *")  TURNO=manha ;;
+            "40 18 * * *") TURNO=noite ;;
             *)             TURNO="${{ github.event.inputs.turno }}" ;;
           esac
+          # A hora a que este turno ESTREIA — vai marcada no upload, três horas depois
+          # do envio. Ver `estreiaMarcada` em `upload-short.js`.
+          case "$TURNO" in
+            manha) ESTREIA=11:40 ;;
+            noite) ESTREIA=21:40 ;;
+          esac
+          echo "ESTREIA=$ESTREIA" >> "$GITHUB_ENV"
           if [ "$TURNO" != "manha" ] && [ "$TURNO" != "noite" ]; then
             echo "❌ turno inválido: '$TURNO'"
             exit 1
           fi
           echo "TURNO=$TURNO" >> "$GITHUB_ENV"
           echo "🕘 ronda de $TURNO"
+
+      # ♦ 12/08/2026 — 🛟 O GUARDIÃO DO AGENDADO. O mesmo do formato de 50s, e é de
+      # propósito que corra nos dois: com quatro entregas por dia (duas de cada formato),
+      # um vídeo que fique preso em privado é apanhado na entrega seguinte, poucas horas
+      # depois. Ver o cabeçalho completo em `youtube-short-publish.yml`.
+      # ⚠️ Corre ANTES do `npm ci` e sem `if` — tem de correr mesmo nos dias sem entrega.
+      # ⚠️ E nunca derruba a entrega de hoje.
+      - name: O guardião do agendado (o que devia estar no ar, está?)
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: |
+          node src/scripts/youtube/upload-short.js --conferir-agendados || \
+            echo "::warning::o guardião do agendado não correu — segue-se para a entrega de hoje."
 
       - name: Próximo da fila deste turno
         id: fila
@@ -113,7 +150,10 @@ jobs:
       # dono valerem aqui de graça: título de 8 palavras com a palavra-chave em
       # MAIÚSCULAS, três hashtags, etiquetas a encher os 500 caracteres. Nada disso
       # precisou de ser reescrito — o formato novo herda tudo.
-      - name: Publicar no YouTube (público)
+      # ♦ 12/08/2026 — privado, com a estreia do turno marcada. Ver o cabeçalho dos crons.
+      # ⚠️ Se a hora já tiver passado (o cron do GitHub atrasa), `estreiaMarcada` manda-o
+      #    público na hora e diz porquê — nunca fica um vídeo por publicar.
+      - name: Publicar no YouTube (privado, com estreia marcada)
         if: steps.fila.outputs.saltar != 'true'
         env:
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
@@ -124,7 +164,7 @@ jobs:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
-        run: node src/scripts/youtube/upload-short.js --slug="$FILE_SLUG"
+        run: node src/scripts/youtube/upload-short.js --slug="$FILE_SLUG" --estreia="$ESTREIA"
 
       - name: Tirar da fila e commitar
         if: steps.fila.outputs.saltar != 'true'

@@ -7,12 +7,15 @@ name: YouTube — Publicar Short (horário nobre)
 # baixa o artefato do run de produção e publica no YouTube — no horário nobre
 # do Brasil, não às 03:30 da manhã como era quando tudo acontecia num fôlego.
 #
-# Horário: 15:00 UTC = 12:00 no Brasil (almoço). Para mudar para a noite
-# (19:00 BR), troque o cron por '0 22 * * *'. É UMA linha.
+# ♦ 12/08/2026 — O VÍDEO VAI AO AR ÀS 15:00 UTC (12h no Brasil), COMO SEMPRE. O que
+# mudou é que ele **CHEGA três horas antes**, privado, com a estreia marcada: o dono
+# quer que o YouTube tenha tempo de perceber do que se trata antes de o mostrar.
+# Para mudar a hora de ir ao ar são DUAS linhas que andam juntas — o cron do envio e
+# o `--estreia=` do passo de publicar. Há prova de mesa que compara as duas.
 #
-# A auditoria da API foi APROVADA (03/08/2026): a porta private→public abriu e o
-# upload já sobe PÚBLICO. Não há mais o clique manual no Studio — o que este
-# workflow entrega, vai ao ar na hora.
+# A auditoria da API foi APROVADA (03/08/2026): a porta private→public abriu, e é por
+# isso que o robô pode marcar a hora sozinho. Continua a não haver clique manual no
+# Studio — quem publica ao segundo certo é o YouTube.
 #
 # Sem pendentes na fila = sucesso neutro (exit 78, o mesmo "nada a fazer" do
 # pick-next-short). O passo de publicar é BARATO e determinístico de propósito
@@ -21,7 +24,21 @@ name: YouTube — Publicar Short (horário nobre)
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 15 * * *'   # 12:00 BRT — almoço (noite BR: '0 22 * * *')
+    # ♦ 12/08/2026 — SOBE ÀS 12:00 UTC (09h BR) E ESTREIA ÀS 15:00 UTC (12h BR).
+    #
+    # Ordem do dono: *"quero que ele entre como privado e agendado nos horários corretos.
+    # A intenção é dar tempo para o YouTube saber do que se trata o vídeo e divulgar para
+    # a audiência certa."*
+    #
+    # ⚠️ **A HORA DE IR AO AR NÃO MUDOU — continua 12h no Brasil.** O que mudou foi a hora
+    # do ENVIO: três horas antes, e o vídeo fica privado no Studio com a estreia marcada.
+    # Quem o publica é o YouTube, ao segundo certo (`--estreia=15:00` no passo de publicar).
+    #
+    # ⚠️ **POR QUE TRÊS HORAS E NÃO DUAS**, que era o mínimo pedido: o cron do GitHub
+    # atrasa — mediu-se até 112 minutos nesta casa. Com duas, um atraso grande deixava o
+    # vídeo com minutos de antecedência ou com a hora já passada. Com três, mesmo no pior
+    # atraso ainda sobra mais de uma hora.
+    - cron: '0 12 * * *'   # 09:00 BRT — envia; a estreia fica marcada para as 15:00 UTC
     # ♦ 07/08/2026 — A SEGUNDA RONDA (ordem do dono: *"não podemos correr o risco
     # de não ter vídeo postado no dia"*). Em 06/08 a entrega das 12h nunca chegou a
     # receber máquina do GitHub e o canal ficou DOIS DIAS sem Short, com o vídeo
@@ -54,6 +71,30 @@ jobs:
         with:
           node-version: '22'
           cache: 'npm'
+
+      # ♦ 12/08/2026 — 🛟 O GUARDIÃO DO AGENDADO.
+      #
+      # ⚠️ **AGENDAR CRIA UM MODO DE FALHA QUE NÃO EXISTIA.** Até hoje, upload feito era
+      # vídeo no ar. Com hora marcada, o vídeo pode subir bem, a corrida acabar a VERDE e
+      # ele **nunca ficar público**. É exactamente o risco que o dono disse que não podia
+      # correr — e ninguém daria por nada até abrir o Studio.
+      #
+      # Este passo pergunta ao YouTube pelos vídeos cuja hora já passou e, se algum
+      # continuar privado, **torna-o público na hora**. Não avisa: conserta.
+      #
+      # ⚠️ **CORRE ANTES DO PASSO QUE INSTALA e SEM `if`**, de propósito: tem de correr
+      # mesmo nos dias em que não há nada para publicar (`upload-short.js` só usa node e
+      # ficheiros locais — provado a correr com o `node_modules` fora do disco).
+      # ⚠️ **E NUNCA DERRUBA A ENTREGA DE HOJE.** Um guardião que impede a publicação é
+      # pior do que o defeito que ele guarda.
+      - name: O guardião do agendado (o que devia estar no ar, está?)
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: |
+          node src/scripts/youtube/upload-short.js --conferir-agendados || \
+            echo "::warning::o guardião do agendado não correu — segue-se para a entrega de hoje."
 
       - name: Próximo da fila de saída
         id: fila
@@ -112,7 +153,17 @@ jobs:
           test -f "youtube-render/out/$FILE_SLUG.mp4" || { echo "❌ MP4 não veio no artefato"; ls -R youtube-render | head -30; exit 1; }
           echo "🎞️ $(du -h "youtube-render/out/$FILE_SLUG.mp4" | cut -f1) prontos para entrega."
 
-      - name: Publicar no YouTube (público)
+      # ♦ 12/08/2026 — PRIVADO COM HORA MARCADA, e só na ronda de envio.
+      #
+      # ⚠️ **A REPESCAGEM CONTINUA A SUBIR PÚBLICO NA HORA**, e isso não é esquecimento:
+      # ela só corre quando a entrega falhou, e ali o que está em causa é o vídeo existir.
+      # Dar-lhe hora marcada seria empurrar o vídeo do dia para ainda mais tarde. **A rede
+      # de segurança não pode ter condições.**
+      #
+      # ⚠️ E a decisão de agendar tem a última palavra DENTRO do programa: se a hora já
+      # passou (o cron do GitHub atrasa), `estreiaMarcada` devolve "público na hora" e
+      # diz porquê. Ver o cabeçalho dela em `upload-short.js`.
+      - name: Publicar no YouTube (privado, com estreia marcada)
         if: steps.fila.outputs.skip != 'true'
         env:
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
@@ -123,7 +174,10 @@ jobs:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
-        run: node src/scripts/youtube/upload-short.js --slug="$FILE_SLUG"
+        run: |
+          ESTREIA=""
+          if [ "${{ github.event.schedule }}" = "0 12 * * *" ]; then ESTREIA="--estreia=15:00"; fi
+          node src/scripts/youtube/upload-short.js --slug="$FILE_SLUG" $ESTREIA
 
       - name: Tirar da fila e commitar tracking
         if: steps.fila.outputs.skip != 'true'
