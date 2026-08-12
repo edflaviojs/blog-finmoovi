@@ -1796,6 +1796,94 @@ console.log('   (a família: um campo que descreve uma regra e ninguém o lê �
     conferirImagens([{ id: 1, narration: 'o extrato mostrou tudo', visual: { tipo: 'broll', comp: 'ExtratoListaLong', brollFrames: 210 } }], SEM_NUMEROS)
       .some((e) => /não pode entrar neste vídeo/.test(e)));
 
+  // ═══ 🔴 A ROSCA DO BALANÇO — 12/08/2026 ═══════════════════════════════════
+  /**
+   * ⚠️ **O QUE ESTAS PROVAS GUARDAM não é a tela: é a fronteira do que se pode desenhar.**
+   * A rosca mostra *pedaços de um todo*, e a única coisa no mapa que declara essa relação
+   * é a `somas`. Com valores soltos, ela desenharia uma conta que ninguém fez — e os dois
+   * rótulos chamariam **despesas** ao que a voz não chamou de nada.
+   *
+   * É a mesma linha do sinal `neutro` das linhas do Extrato: **inventar o rótulo é
+   * inventar informação**, e isso é pior do que a tela não aparecer.
+   */
+  {
+    const COM_SOMA = {
+      ...HISTORIA,
+      somas: [{
+        de: [
+          'o saldo da conta que minha avó olhava todo dia',
+          'o saldo que estava na outra conta',
+          'o dinheiro que eu tinha separado para as contas da casa',
+        ],
+        da: 'o dinheiro que a gente achava que tinha para o mês',
+      }],
+    };
+    ok('🔴 sem soma DECLARADA, a rosca do Balanço nem está disponível',
+      !brollDoVideo(HISTORIA).some((b) => b.familia === 'balanco'),
+      brollDoVideo(HISTORIA).map((b) => b.comp).join(' '));
+    ok('e com a soma declarada, está',
+      brollDoVideo(COM_SOMA).some((b) => b.comp === 'BalancoDonutLong'));
+
+    const daRosca = valoresDoBroll(BROLL_PERMITIDO.find((b) => b.familia === 'balanco'), COM_SOMA);
+    const noEcraDaRosca = JSON.stringify(daRosca);
+    ok('o total no meio é o total DECLARADO', daRosca.balanco.despesasValue === 1200);
+    ok('e as fatias são as PARTES da soma, não os valores todos',
+      daRosca.balanco.categorias.length === 3,
+      JSON.stringify(daRosca.balanco.categorias.map((c) => c.valor)));
+    ok('as fatias fecham o círculo (a conta bate)',
+      Math.abs(daRosca.balanco.categorias.reduce((a, c) => a + c.pct, 0) - 100) < 0.2,
+      String(daRosca.balanco.categorias.reduce((a, c) => a + c.pct, 0)));
+    ok('🔴 e os dois rótulos deixam de dizer "despesas" (a voz nunca o disse)',
+      !/[Dd]espesas/.test(daRosca.balanco.tituloDaTela) && !/[Dd]espesas/.test(daRosca.balanco.rotuloDoCentro)
+      && !/[Dd]espesas/.test(daRosca.balanco.subtitulo),
+      `${daRosca.balanco.tituloDaTela} · ${daRosca.balanco.rotuloDoCentro} · ${daRosca.balanco.subtitulo}`);
+    ok('nem sobra o mês da gravação', !/Julho 2026/.test(noEcraDaRosca));
+    /** Os números REAIS da gravação do Balanço — se algum aparecer, ficou lá dentro. */
+    for (const gravado of ['5.044,99', '10.000,00', '4.955,01', '1.500,00', '950,00']) {
+      ok(`  nenhum vestígio de R$ ${gravado} (o valor da gravação)`, !noEcraDaRosca.includes(gravado));
+    }
+    ok('a trava reprova a rosca numa história sem soma declarada',
+      conferirImagens([{ id: 1, narration: 'somando tudo', visual: { tipo: 'broll', comp: 'BalancoDonutLong', brollFrames: 210 } }], HISTORIA)
+        .some((e) => /não pode entrar neste vídeo/.test(e)));
+
+    /**
+     * ⚠️ **UM NOME DE COMPOSIÇÃO ERRADO NÃO DÁ ERRO — DÁ UMA CENA EM BRANCO.** O
+     * `BROLL` do `Long.tsx` é um dicionário: uma chave que não existe devolve `undefined`
+     * e o render segue. Esta prova lê o ficheiro e confere que cada tela do catálogo tem
+     * lá o seu componente. (É a mesma família do campo escrito que ninguém lê.)
+     */
+    const longTsx = readFileSync(join(RAIZ, 'youtube-render', 'src', 'Long.tsx'), 'utf-8');
+    const mapaDoBroll = longTsx.slice(longTsx.indexOf('const BROLL'), longTsx.indexOf('};', longTsx.indexOf('const BROLL')));
+    for (const b of BROLL_PERMITIDO) {
+      ok(`  o render conhece a tela ${b.comp}`, new RegExp(`\\b${b.comp}\\b`).test(mapaDoBroll));
+    }
+
+    /**
+     * ═══ 🔴 NENHUM CAMPO PODE FICAR A LER O OBJETO ORIGINAL ═══════════════════
+     *
+     * ⚠️ **É A ÚNICA PROVA QUE APANHA A TELA MEIO CERTA.** Fotogramas do Short byte a
+     * byte provam que ele não mudou — e provariam exactamente o mesmo se o envelope
+     * estivesse morto. O defeito que fica no meio é este: **um campo passa a ler a
+     * história e o do lado continua na gravação**. Foi assim que o saldo grande do
+     * Extrato ficou certo e as quatro linhas por baixo dele ficaram com o aluguel de
+     * R$ 1.500 — *consertar "o número" não é consertar "os números"* (10/08).
+     *
+     * Esta é uma prova de TEXTO, e assumidamente: o que ela guarda é a FORMA do
+     * ficheiro (nenhuma leitura direta ao objeto de dados), que é coisa que se lê no
+     * ficheiro e não se observa no comportamento sem renderizar o vídeo todo.
+     */
+    for (const [ficheiro, objeto] of [['BalancoDonut.tsx', 'balanco'], ['ExtratoLista.tsx', 'extrato'], ['CartoesCountUp.tsx', 'cartoes']]) {
+      const fonte = readFileSync(join(RAIZ, 'youtube-render', 'src', ficheiro), 'utf-8')
+        .split('\n').filter((l) => !l.trim().startsWith('//') && !l.trim().startsWith('*')).join('\n');
+      // As únicas menções legítimas: o `import` e o padrão passado ao `useDados`.
+      const soltas = (fonte.match(new RegExp(`\\b${objeto}\\.`, 'g')) || []).length;
+      ok(`  🔴 ${ficheiro} lê TUDO pelo envelope (zero leituras diretas a \`${objeto}.\`)`,
+        soltas === 0, `${soltas} leitura(s) direta(s)`);
+      ok(`  e continua a passar \`${objeto}\` como padrão (sem envelope, é o que o Short vê)`,
+        new RegExp(`useDados\\(${objeto},`).test(fonte));
+    }
+  }
+
   // ── 7. o rótulo das linhas corta em palavra inteira ──
   /**
    * ⚠️ **A REGRA DE VERDADE: o rótulo cortado é um PREFIXO que acaba onde havia um

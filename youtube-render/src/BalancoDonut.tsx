@@ -3,6 +3,7 @@ import { Background } from './scenes';
 import { BRAND, DISPLAY, BODY } from './theme';
 import { RoamingWatermark } from './broll/watermark';
 import { balanco } from './broll/balanco';
+import { useDados } from './broll/valores-da-historia';
 
 // Estilo NOVO da tela de Balanço: ROSCA (donut) das Maiores Despesas por
 // categoria, com os segmentos desenhando um a um + total no centro + legenda.
@@ -28,23 +29,28 @@ const Segment: React.FC<{ startPct: number; pct: number; cor: string; delay: num
 };
 
 const Donut: React.FC = () => {
+  // ⚠️ Envelope vazio (= o Short) devolve o objeto `balanco` original, campo a campo.
+  //    Ver `broll/valores-da-historia.tsx`: sem provider, `useDados` devolve o padrão.
+  const d = useDados(balanco, 'balanco');
   let cum = 0;
   return (
     <svg width={520} height={520} viewBox="0 0 520 520">
-      {balanco.categorias.map((c, i) => {
+      {d.categorias.map((c, i) => {
         const seg = <Segment key={i} startPct={cum} pct={c.pct} cor={c.cor} delay={i * 5} />;
         cum += c.pct;
         return seg;
       })}
-      <text x={CX} y={CY - 14} textAnchor="middle" fill={BRAND.sub} fontFamily={BODY} fontSize={30}>Despesas</text>
-      <text x={CX} y={CY + 44} textAnchor="middle" fill={BRAND.text} fontFamily={DISPLAY} fontWeight={900} fontSize={58}>{balanco.totalDespesas}</text>
+      <text x={CX} y={CY - 14} textAnchor="middle" fill={BRAND.sub} fontFamily={BODY} fontSize={30}>{d.rotuloDoCentro}</text>
+      <text x={CX} y={CY + 44} textAnchor="middle" fill={BRAND.text} fontFamily={DISPLAY} fontWeight={900} fontSize={58}>{d.totalDespesas}</text>
     </svg>
   );
 };
 
-const Legend: React.FC = () => (
+const Legend: React.FC = () => {
+  const d = useDados(balanco, 'balanco');
+  return (
   <div style={{ display: 'flex', flexDirection: 'column', gap: 14, marginTop: 20 }}>
-    {balanco.categorias.filter((c) => c.nome !== 'Outros').map((c, i) => (
+    {d.categorias.filter((c) => c.nome !== 'Outros').map((c, i) => (
       <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 16, width: 640, fontFamily: BODY }}>
         <div style={{ width: 22, height: 22, borderRadius: 6, background: c.cor }} />
         <div style={{ flex: 1, fontSize: 30, fontWeight: 700, color: BRAND.text }}>{c.nome}</div>
@@ -53,18 +59,22 @@ const Legend: React.FC = () => (
       </div>
     ))}
   </div>
-);
+  );
+};
 
-const Scene: React.FC = () => (
+const Scene: React.FC = () => {
+  const d = useDados(balanco, 'balanco');
+  return (
   <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center' }}>
     <div style={{ textAlign: 'center', marginBottom: 10 }}>
-      <div style={{ fontFamily: DISPLAY, fontWeight: 900, fontSize: 46, color: BRAND.text }}>Maiores Despesas</div>
-      <div style={{ color: BRAND.sub, fontFamily: BODY, fontSize: 28 }}>Balanço · {balanco.mes}</div>
+      <div style={{ fontFamily: DISPLAY, fontWeight: 900, fontSize: 46, color: BRAND.text }}>{d.tituloDaTela}</div>
+      <div style={{ color: BRAND.sub, fontFamily: BODY, fontSize: 28 }}>{d.subtitulo}</div>
     </div>
     <Donut />
     <Legend />
   </AbsoluteFill>
-);
+  );
+};
 
 export const BalancoDonutShort: React.FC = () => (
   <AbsoluteFill><Background /><Scene /><RoamingWatermark /></AbsoluteFill>

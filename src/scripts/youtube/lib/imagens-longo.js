@@ -166,6 +166,27 @@ export const BROLL_PERMITIDO = [
     porqueNao: 'esta história não tem números com que encher a tela',
   },
   {
+    /**
+     * ═══ A ROSCA DO BALANÇO — 12/08/2026 ═══
+     * Ordem do dono: mais telas do app, para as seis cenas de b-roll deixarem de girar
+     * entre quatro. Esta é a única das três que faltavam que se pode encher **sem
+     * inventar** — ver `somaUsavel` e a nota em `broll/balanco.ts`.
+     *
+     * ⚠️ **`junt` está de fora da pista de propósito.** Foi tirado do Extrato pela mesma
+     * razão: *"juntar tudo"* é justamente a frase que MANDA entrar b-roll, e uma pista
+     * que casa com tudo não é uma pista.
+     */
+    comp: 'BalancoDonutLong',
+    frames: 210,
+    familia: 'balanco',
+    pista: /soma|somad|somand|no total|ao todo|para onde (foi|vai)|dividid|reparti|fatia|percent|por cento/i,
+    // 🔴 Sem uma soma DECLARADA no mapa, uma rosca desenha pedaços de um todo que
+    //    ninguém disse existir — e os rótulos chamariam "despesas" ao que a voz não
+    //    chamou de nada. Ver `somaUsavel`.
+    exige: (mapa) => Boolean(somaUsavel(mapa)),
+    porqueNao: 'esta história não declarou nenhuma soma (que valores fazem parte de qual total)',
+  },
+  {
     comp: 'SmartCapture3DLong',
     frames: 210,
     familia: null,
@@ -193,6 +214,9 @@ export function brollDoVideo(mapa) {
 /**
  * ⚠️ **NENHUMA TELA MAIS DO QUE DUAS VEZES, e o número é a conta.** São 6 cenas de b-roll
  * e 3 telas disponíveis num vídeo sem cartão: 2 cada dá exactamente 6.
+ * ⚠️ **12/08: com a rosca do Balanço são 4** numa história que declare uma soma — e aí o
+ * teto deixa de ser o que aperta (4 × 2 = 8 para 6 cenas). Fica em dois na mesma: o que
+ * ele impede é a MESMA tela sair três vezes, e isso não muda com o catálogo a crescer.
  *
  * 🔴 **Isto nasceu de um erro meu, no mesmo dia.** Ao pôr a `pista` a mandar, sem contar
  * as repetições, o vídeo saiu com o **Extrato quatro vezes em seis** — troquei "tela
@@ -314,6 +338,71 @@ export function valoresDoBroll(escolha, mapa) {
         })),
       },
     };
+  }
+  if (escolha.familia === 'balanco') {
+    const soma = somaUsavel(mapa);
+    if (!soma) return null;
+    /**
+     * ⚠️ **AS PARTES SÃO AS DA `somas`, e não os valores todos da história.** Uma rosca
+     * mostra *pedaços de um todo* — e a única coisa que declara essa relação é a `somas`
+     * do mapa (*"estes valores dão aquele total"*). Encher a rosca com valores soltos
+     * seria desenhar uma conta que ninguém fez.
+     *
+     * ⚠️ **E OS DOIS RÓTULOS TÊM DE MUDAR COM ELA.** A tela diz *"Maiores Despesas"* e
+     * *"Despesas"* no meio — a história não declarou que estes valores são despesas, e
+     * chamá-los assim é inventar. O título passa a ser o NOME do total, que são as
+     * palavras da própria história; o do meio passa a *"Total"*, que é o que ele é.
+     */
+    const CORES = ['#22d3ee', '#84cc16', '#8b5cf6', '#ef4444', '#d6219c'];
+    const partes = [...soma.partes].sort((a, b) => b.valor - a.valor);
+    // ⚠️ Cinco é o que a legenda mostra sem encolher a letra — e o resto NÃO se deita
+    //    fora: vai para "Outros", senão a rosca fica com um buraco e a conta deixa de
+    //    fechar. É o mesmo que a tela já faz com os dados da gravação.
+    const cabem = partes.slice(0, 5);
+    const sobra = partes.slice(5).reduce((a, p) => a + p.valor, 0);
+    const pct = (v) => Math.round((v / soma.total) * 1000) / 10;
+    const categorias = cabem.map((p, i) => ({
+      nome: rotuloCurto(p.nome, 22) || 'valor da história',
+      pct: pct(p.valor),
+      valor: dinheiro(p.valor),
+      cor: CORES[i % CORES.length],
+    }));
+    if (sobra > 0) categorias.push({ nome: 'Outros', pct: pct(sobra), valor: '', cor: '#475569' });
+    return {
+      balanco: {
+        tituloDaTela: rotuloCurto(soma.nomeDoTotal, 34) || 'O que isto soma',
+        rotuloDoCentro: 'Total',
+        // ⚠️ Sem mês: a história não diz nenhum, e "Julho 2026" é da gravação.
+        subtitulo: 'Balanço',
+        totalDespesas: dinheiro(soma.total),
+        despesasValue: soma.total,
+        categorias,
+      },
+    };
+  }
+  return null;
+}
+
+/**
+ * A soma que esta história DECLAROU: as partes, o total, e o nome do total.
+ *
+ * ⚠️ **`somas` é o único sítio do mapa que diz que uns valores fazem parte de outro.**
+ * O resto é uma lista plana de `{nome, valor}` — sem ela, não há como saber que 400, 300
+ * e 500 são pedaços de 1200 em vez de três coisas soltas. Sem soma declarada, devolve
+ * `null` e esta tela não entra.
+ */
+function somaUsavel(mapa) {
+  const valores = (mapa?.valores || [])
+    .map((v) => ({ nome: String(v?.nome || '').trim(), valor: Number(v?.valor) }))
+    .filter((v) => v.nome && Number.isFinite(v.valor) && v.valor > 0);
+  const achar = (nome) => valores.find((v) => v.nome.toLowerCase() === String(nome || '').trim().toLowerCase());
+  for (const s of (mapa?.somas || [])) {
+    const total = achar(s?.da);
+    const partes = (Array.isArray(s?.de) ? s.de : []).map(achar).filter(Boolean);
+    // ⚠️ Duas partes é o mínimo para uma rosca dizer alguma coisa; uma fatia só é um círculo.
+    if (total && partes.length >= 2 && total.valor > 0) {
+      return { partes, total: total.valor, nomeDoTotal: total.nome };
+    }
   }
   return null;
 }
