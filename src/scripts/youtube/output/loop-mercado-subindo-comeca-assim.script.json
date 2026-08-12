@@ -1,0 +1,117 @@
+{
+  "slug": "loop-mercado-subindo-comeca-assim",
+  "formato": "loop16",
+  "term": "O mercado que sobe toda semana",
+  "category": "vida",
+  "keyword": "MERCADO",
+  "situacao": "mercado-subindo",
+  "gancho": "comeca-assim",
+  "ganchoFamilia": "começa assim",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "escada",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Quer aprender a gastar menos no mercado? Começa assim.",
+      "durationSec": 3.18,
+      "shots": [
+        {
+          "anchor": "aprender",
+          "visual": {
+            "type": "statement",
+            "text": "Gastar menos no mercado"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "gastar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escada"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu vi meu carrinho de sempre subir de preço, mês após mês.",
+      "durationSec": 4.24,
+      "shots": [
+        {
+          "anchor": "carrinho",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escada"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "subir",
+          "visual": {
+            "type": "statement",
+            "text": "Meu carrinho ficou caro"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Comigo, a conta apertou, e eu comecei a conferir cada compra.",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "Comigo",
+          "visual": {
+            "type": "statement",
+            "text": "Eu conferi cada compra"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escada"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "O mercado ficou mais caro, então eu aprendi. Começa assim, olhando.",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "mercado",
+          "visual": {
+            "type": "statement",
+            "text": "Começa assim: olhando"
+          }
+        },
+        {
+          "anchor": "aprendi",
+          "visual": {
+            "type": "statement",
+            "text": "Gastar menos no mercado"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
