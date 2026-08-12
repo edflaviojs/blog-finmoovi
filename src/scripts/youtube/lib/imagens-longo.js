@@ -375,8 +375,14 @@ export function valoresDoBroll(escolha, mapa) {
         despesasValue: lados.sai,
         liquidoValue: liquido,
         liquidoCor: liquido >= 0 ? '#22c55e' : '#ef4444',
-        // ⚠️ Sem mês: a história não diz nenhum, e "Julho 2026" é da gravação.
-        subtitulo: 'Neste mês',
+        /**
+         * ⚠️ **SEM SUBTÍTULO NENHUM, e a 1ª versão desta linha dizia "Neste mês".**
+         * Apanhado a reler: *"Julho 2026"* é da gravação e tinha de sair — mas trocá-lo
+         * por *"Neste mês"* é **afirmar um período que a história pode não ter**. É o
+         * mesmo erro do sinal inventado, um andar mais acima: a tela passaria a dizer
+         * uma coisa que a voz nunca disse. O título ("Fluxo de Caixa") já diz o que é.
+         */
+        subtitulo: '',
       },
     };
   }

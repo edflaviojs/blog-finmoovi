@@ -1923,6 +1923,13 @@ console.log('   (a família: um campo que descreve uma regra e ninguém o lê �
     for (const gravado of ['10.000,00', '5.044,99', '6.604,93', '4.955,0', 'Julho 2026']) {
       ok(`  nenhum vestígio de ${gravado} (o valor da gravação)`, !noEcraDoFluxo.includes(gravado));
     }
+    /**
+     * 🔴 **NEM SE INVENTA UM PERÍODO NO LUGAR DELE.** A 1ª versão trocava *"Julho 2026"*
+     * por *"Neste mês"* — e isso **afirma um período que a história pode não ter**. É o
+     * mesmo erro do sinal inventado, um andar acima. Apanhado a reler, não em produção.
+     */
+    ok('🔴 e o subtítulo não inventa um período no lugar do mês da gravação',
+      doFluxo.fluxo.subtitulo === '', JSON.stringify(doFluxo.fluxo.subtitulo));
     ok('a trava reprova o Fluxo numa história sem os dois lados',
       conferirImagens([{ id: 1, narration: 'o que entra e o que sai', visual: { tipo: 'broll', comp: 'FluxoBarrasLong', brollFrames: 210 } }], HISTORIA)
         .some((e) => /não pode entrar neste vídeo/.test(e)));

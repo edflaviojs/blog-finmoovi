@@ -23,7 +23,7 @@ import { avaliarRetencao, RETENCAO_MINIMA } from '../youtube/retencao.js';
  * pelo nome (o `executadoDireto` no fim do ficheiro) — a mesma guarda do `capa-manus.js`,
  * e pela mesma razão: um `import` de teste não pode gastar dinheiro.
  */
-import { esticarTelaDoApp, montarRoteiro } from '../youtube/coreografia.js';
+import { esticarTelaDoApp, montarRoteiro, palavrasAncoraveis } from '../youtube/coreografia.js';
 import { validateShortScript } from '../youtube/lib/schema-short.js';
 import { prateleirasDoVideo, PLAYLIST_GERAL } from '../youtube/lib/playlists.js';
 import { inserirNoShort, inserirNoLongo, conferirOportunidade, fazerSlugDoDono } from '../../../functions/api/_oportunidade-fila.js';
@@ -544,6 +544,35 @@ console.log('\n⏱️  O TEMPO DE TELA DO APP — conserta-se em vez de reprovar
   ok('e o número de shots é o mesmo (nenhum foi deitado fora)',
     JSON.stringify(depoisRoteiro.scenes.map((s) => s.shots.length))
       === JSON.stringify(antesRoteiro.scenes.map((s) => s.shots.length)));
+
+  /**
+   * 🔴 **O MOVIMENTO TEM DE SER O MENOR QUE RESOLVE — e é isto que protege o vídeo.**
+   *
+   * Empurrar o shot seguinte para o fim da fala dava tela ao app **e deixava o shot
+   * seguinte a piscar**: nenhuma regra pune um shot de texto curto, portanto o total de
+   * erros não subia e o conserto passaria por bom. O que impede isso é os candidatos
+   * serem tentados **por ordem, do menor para o maior**, ficando com o primeiro que
+   * resolve. Sem esta prova, essa ordem é uma intenção — com ela, é uma regra.
+   */
+  {
+    const { plano: curado } = esticarTelaDoApp(T, NARRATIVA, planoDoente(), validateShortScript);
+    const parou = Number(curado.blocos[3].shots[1].ancoraIndice);
+    /**
+     * ⚠️ **A MINHA 1ª VERSÃO DESTA PROVA ESTAVA ERRADA** — media se "vindo de mais perto
+     * mexe menos", e o destino é ABSOLUTO: a palavra onde os 2,5s se cumprem é a mesma,
+     * venha-se de onde se vier. A propriedade certa é esta: **um passo antes ainda não
+     * resolvia.** É a terceira vez hoje que uma prova minha reprova código bom.
+     */
+    const umPassoAntes = planoDoente();
+    umPassoAntes.blocos[3].shots[1].ancoraIndice = parou - 1;
+    const aindaFalha = validateShortScript(montarRoteiro(T, NARRATIVA, umPassoAntes))
+      .errors.some((e) => /segura só ~/.test(e));
+    ok('🔴 e parou no MENOR movimento que resolve (um passo antes ainda falhava)',
+      aindaFalha, `parou em ${parou}; em ${parou - 1} ${aindaFalha ? 'ainda falhava' : 'JÁ CHEGAVA — mexeu de mais'}`);
+    ok('e nunca atira o shot seguinte para o fim da fala (ele ficaria a piscar)',
+      parou < palavrasAncoraveis(NARRATIVA.blocos[3].fala).length,
+      `${parou} de ${palavrasAncoraveis(NARRATIVA.blocos[3].fala).length} palavras`);
+  }
 
   /**
    * ⚠️ **E NUM PLANO SÃO NÃO MEXE NADA.** Um conserto que "arruma" o que já estava bom
