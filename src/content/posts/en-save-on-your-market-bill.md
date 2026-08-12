@@ -1,6 +1,6 @@
 ---
 title: "Save on Your Market Bill"
-description: "Practical tips to reduce semi-annual expenses by up to "00 and improve your personal finances."
+description: "Practical tips to reduce semi-annual expenses by up to $200 and improve your personal finances."
 image: "/images/posts/economize-na-conta-do-mercado.webp"
 imageAlt: "A hand placing coins on stacks of coins with a plant growing from one."
 category: "dicas"

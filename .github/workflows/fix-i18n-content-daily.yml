@@ -76,6 +76,23 @@ jobs:
       - name: Desfazer links internos inventados (link-guard)
         run: node src/scripts/validacao/link-guard.js --no-commit
 
+      # ♦ 12/08/2026 — 🧾 O GUARDA DO CABEÇALHO, e nasceu de um defeito deste robô.
+      #
+      # Às 10:03 ele escreveu `by up to "00` numa `description` (era `R$ 1,000.00` e
+      # devia ter ficado `$200`). Uma aspa solta parte o YAML — e a corrida acabou a
+      # VERDE e empurrou. Quem começou a cair foram os OUTROS robôs: o gerador de ALT
+      # falhou às 10:06 e às 11:47 com um erro do `js-yaml` que nem diz o nome do
+      # ficheiro. **O defeito estava a um sítio de distância de onde doía.**
+      #
+      # ⚠️ E um cabeçalho que não lê parte a construção do site — e um build vermelho
+      # faz o blog **parar de publicar em silêncio** (a lição de 06/08).
+      #
+      # ⚠️ REPARA EM VEZ DE REPROVAR, pela mesma razão escrita no passo de cima: o
+      # ficheiro partido volta à versão do repositório e os outros dezanove seguem.
+      # O `git add -A` do passo seguinte leva a reparação.
+      - name: Desfazer cabeçalhos partidos (frontmatter-guard)
+        run: node src/scripts/validacao/frontmatter-guard.js
+
       - name: Commit fixes
         if: ${{ inputs.dry_run != 'true' }}
         run: |
