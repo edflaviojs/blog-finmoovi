@@ -48,7 +48,7 @@
 
 import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { valoresEmDinheiro, CHAMADA_NO_ECRA, CHAMADA_ETIQUETA_ECRA } from './schema-longo.js';
+import { valoresEmDinheiro, CHAMADA_NO_ECRA, CHAMADA_ETIQUETA_ECRA, tipoDoValor } from './schema-longo.js';
 
 /** Sem acentos e em minúsculas — para as pistas abaixo casarem com fala real. */
 const semAcento = (t) => String(t || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
@@ -164,6 +164,23 @@ export const BROLL_PERMITIDO = [
     //    aluguel de R$ 1.500…), que é o defeito que ela própria existe para não ter.
     exige: (mapa) => temDinheiroNaHistoria(mapa),
     porqueNao: 'esta história não tem números com que encher a tela',
+  },
+  {
+    /**
+     * ═══ AS BARRAS DO FLUXO — 12/08/2026, e só existem por causa do `tipo` ═══
+     * Esta tela desenha uma barra **RECEITAS** verde e uma **DESPESAS** vermelha. Até
+     * hoje o mapa não dizia se um valor entrava ou saía, e por isso ela estava de fora:
+     * pôr um valor qualquer na barra verde é dizer que entrou dinheiro. Agora a história
+     * declara-o (`tipo`), e a tela só entra quando ela declarou **os dois lados**.
+     */
+    comp: 'FluxoBarrasLong',
+    frames: 210,
+    familia: 'fluxo',
+    pista: /entra|entrou|recebe|receb|salario|ganha|sobra|sobrou|no fim do mes|mais do que|menos do que/i,
+    // 🔴 Sem um valor que ENTRA e outro que SAI, uma das barras seria inventada — e uma
+    //    barra vazia ao lado de uma cheia conta uma história que a voz não contou.
+    exige: (mapa) => temEntradaESaida(mapa),
+    porqueNao: 'esta história não declarou dinheiro que entra E dinheiro que sai',
   },
   {
     /**
@@ -339,6 +356,30 @@ export function valoresDoBroll(escolha, mapa) {
       },
     };
   }
+  if (escolha.familia === 'fluxo') {
+    const lados = entradasESaidas(mapa);
+    if (!lados) return null;
+    const liquido = lados.entra - lados.sai;
+    /**
+     * ⚠️ **A COR DO SALDO DO PERÍODO SEGUE A CONTA, e isto não é enfeite.** A tela pintava
+     * este número de VERDE fixo. Numa história em que sai mais do que entra, verde diz
+     * *"sobrou dinheiro"* — e é a mentira mais cara que uma tela de finanças pode contar.
+     * É a mesma regra do sinal `neutro` das linhas do Extrato: **o que não se sabe não se
+     * pinta**, e o que se sabe pinta-se pelo que é.
+     */
+    return {
+      fluxo: {
+        receitas: dinheiro(lados.entra),
+        receitasValue: lados.entra,
+        despesas: dinheiro(lados.sai),
+        despesasValue: lados.sai,
+        liquidoValue: liquido,
+        liquidoCor: liquido >= 0 ? '#22c55e' : '#ef4444',
+        // ⚠️ Sem mês: a história não diz nenhum, e "Julho 2026" é da gravação.
+        subtitulo: 'Neste mês',
+      },
+    };
+  }
   if (escolha.familia === 'balanco') {
     const soma = somaUsavel(mapa);
     if (!soma) return null;
@@ -381,6 +422,58 @@ export function valoresDoBroll(escolha, mapa) {
     };
   }
   return null;
+}
+
+/**
+ * O que ENTRA e o que SAI nesta história, somados por lado.
+ *
+ * ═══ 🔴 A ARMADILHA, E ELA DAVA UM NÚMERO AO DOBRO ═══
+ * A lista de valores traz as PARTES **e o TOTAL delas** — 39 + 90 + 60, e também os 189.
+ * Somar tudo o que é `sai` dava **378**: o dinheiro da pessoa contado duas vezes, numa
+ * barra vermelha do dobro do tamanho. Não daria erro nenhum; daria uma tela errada.
+ *
+ * Por isso, quando uma `somas` declara um total e as suas partes **do mesmo lado**, as
+ * partes saem da conta e fica o total. É a mesma decisão que o Extrato tomou ao tirar o
+ * saldo grande das linhas: **o mesmo dinheiro não aparece duas vezes no ecrã.**
+ */
+function ladosDoDinheiro(mapa) {
+  const valores = (mapa?.valores || [])
+    .map((v) => ({ nome: String(v?.nome || '').trim(), valor: Number(v?.valor), tipo: tipoDoValor(v) }))
+    .filter((v) => v.nome && Number.isFinite(v.valor) && v.valor > 0);
+  const achar = (nome) => valores.find((v) => v.nome.toLowerCase() === String(nome || '').trim().toLowerCase());
+
+  const partesJaContadas = new Set();
+  for (const s of (mapa?.somas || [])) {
+    const total = achar(s?.da);
+    if (!total) continue;
+    const partes = (Array.isArray(s?.de) ? s.de : []).map(achar).filter(Boolean);
+    // ⚠️ Só quando o total e as partes estão do MESMO lado. Um total que sai feito de
+    //    parcelas que entram não é a mesma coisa contada duas vezes — é outra conta.
+    if (partes.length >= 2 && partes.every((p) => p.tipo === total.tipo)) {
+      for (const p of partes) partesJaContadas.add(p.nome.toLowerCase());
+    }
+  }
+  const somaDoLado = (t) => valores
+    .filter((v) => v.tipo === t && !partesJaContadas.has(v.nome.toLowerCase()))
+    .reduce((a, v) => a + v.valor, 0);
+  return { entra: somaDoLado('entra'), sai: somaDoLado('sai') };
+}
+
+/** Os dois lados, ou `null` quando falta um deles. */
+function entradasESaidas(mapa) {
+  const l = ladosDoDinheiro(mapa);
+  return l.entra > 0 && l.sai > 0 ? l : null;
+}
+
+/**
+ * A história declarou dinheiro dos DOIS lados?
+ *
+ * 🔴 **Um lado só não chega, e é isto que impede a mentira.** Com só saídas, a barra verde
+ * ficaria a zero ao lado de uma vermelha cheia — a tela diria *"esta pessoa não recebe
+ * nada"*, que é uma frase que a voz nunca disse.
+ */
+function temEntradaESaida(mapa) {
+  return Boolean(entradasESaidas(mapa));
 }
 
 /**

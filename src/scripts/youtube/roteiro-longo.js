@@ -168,11 +168,25 @@ export const EXEMPLO_DE_MAPA = {
   promessa: 'Vou te mostrar como achar as assinaturas que você paga sem usar e cortar as maiores ainda hoje',
   fioCondutor: 'ralo',
   numeroEspinha: 189,
+  /**
+   * ⚠️ **O `tipo` ESTÁ AQUI PORQUE O EXEMPLO É QUEM ENSINA — 12/08/2026.**
+   *
+   * A regra escrita no pedido não chega: esta casa já mediu três vezes que **o exemplo
+   * pesa mais do que a proibição**. Um campo explicado na regra 3 e ausente do exemplo é
+   * um campo que o modelo não preenche.
+   *
+   * 🔴 **E POR ISSO ENTROU AQUI UM VALOR QUE ENTRA.** A história das assinaturas é toda
+   * de dinheiro que SAI, e um exemplo só com `"sai"` ensinaria que `"entra"` não se usa —
+   * a tela de Fluxo (que precisa dos dois) nunca apareceria, e o conserto seria código
+   * morto no dia em que nasceu. O salário também dá contexto ao 189: cento e oitenta e
+   * nove reais dizem muito mais ao lado do que entra em casa.
+   */
   valores: [
-    { nome: 'o streaming que ninguém abria', valor: 39 },
-    { nome: 'a academia parada', valor: 90 },
-    { nome: 'o jogo do celular', valor: 60 },
-    { nome: 'o que sai da conta todo mês sem ninguém ver', valor: 189 },
+    { nome: 'o que entra em casa todo mês', valor: 2400, tipo: 'entra' },
+    { nome: 'o streaming que ninguém abria', valor: 39, tipo: 'sai' },
+    { nome: 'a academia parada', valor: 90, tipo: 'sai' },
+    { nome: 'o jogo do celular', valor: 60, tipo: 'sai' },
+    { nome: 'o que sai da conta todo mês sem ninguém ver', valor: 189, tipo: 'sai' },
   ],
   somas: [
     { de: ['o streaming que ninguém abria', 'a academia parada', 'o jogo do celular'], da: 'o que sai da conta todo mês sem ninguém ver' },
@@ -599,6 +613,13 @@ ${blocoDeCenarios}
 1. **A PROMESSA** — uma frase só, entre 5 e 25 palavras, dizendo o que a pessoa leva daqui. NÃO é pergunta. É o que o vídeo ENTREGA.
 2. 🔴 **O NÚMERO-ESPINHA** (\`numeroEspinha\`) — **UM número de dinheiro para o vídeo INTEIRO**. É o número da história, e os três atos são obrigados a dizê-lo. O computador confere nos três.
 3. 🔴 **A LISTA DE VALORES** (\`valores\`) — **TODO o dinheiro que este vídeo pode dizer**, cada um com um nome do dia a dia. Nada fora desta lista pode ser falado em nenhum capítulo, e o computador confere. O número-espinha é um destes valores.
+   · 🔴 **\`tipo\` — o que este dinheiro É**, uma destas três palavras, e mais nenhuma:
+     · **\`"entra"\`** — dinheiro que CHEGA à pessoa.
+     · **\`"sai"\`** — dinheiro que VAI EMBORA todo mês.
+     · **\`"saldo"\`** — dinheiro PARADO: o que está numa conta ou guardado.
+     ⚠️ **Isto não é arrumação.** O app mostra o que entra em VERDE e o que sai em VERMELHO, e o computador desenha as telas por este campo. Chamar verde ao que sai seria dizer a quem vê que entrou dinheiro — e a sua história não disse isso.
+     ✅ **Na dúvida, escreva \`"saldo"\`** — errar para \`saldo\` faz uma tela não aparecer; errar para \`entra\` põe uma mentira no ecrã.
+     ⚠️ **Mas somar não muda o que a coisa é:** o total de três contas que saem continua a ser \`"sai"\`. \`"saldo"\` é o dinheiro que está PARADO nalgum sítio — o que há na conta, o que está guardado —, não "qualquer número grande".
    · **somas** (quando houver) — que valores somam para dar qual. **A conta tem de bater exatamente.** É o narrador a somar à frente de quem ouve.
      🔴 **A FORMA É OBRIGATÓRIA, e o computador reprova quem a der pela metade:** cada soma precisa de **DOIS OU MAIS** nomes em \`de\` e **UM** nome em \`da\`, e os três têm de estar escritos **exatamente como estão na lista de valores**.
      ✅ **Se a história não tiver nenhuma conta que bata, escreva \`"somas": []\`.** Uma lista vazia é resposta certa; uma soma com um nome só é reprovada.
@@ -634,7 +655,7 @@ Responda APENAS com JSON válido, sem markdown, exatamente com estes campos:
   "promessa": "...",
   "fioCondutor": "...",
   "numeroEspinha": 0,
-  "valores": [ { "nome": "...", "valor": 0 } ],
+  "valores": [ { "nome": "...", "valor": 0, "tipo": "entra | sai | saldo" } ],
   "somas": [ { "de": ["...", "..."], "da": "..." } ],
   "contaDoCartao": "...",
   "capituloDaDemonstracao": 2,

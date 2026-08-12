@@ -36,6 +36,7 @@ const RAIZ = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
 import {
   validarMapa, validarAbertura, validarCapitulo, validarChamada, validarFecho, validarLongo,
   contarPalavras, ORCAMENTO, MAX_PALAVRAS_TITULO, PARTES_DO_CAPITULO, valoresEmDinheiro, nomeDePessoa,
+  consertarMapa, tipoDoValor, TIPOS_DE_VALOR, TIPO_POR_OMISSAO,
 } from '../youtube/lib/schema-longo.js';
 import {
   EXEMPLO_DE_MAPA, EXEMPLO_DE_ABERTURA, EXEMPLO_DE_CAPITULO, EXEMPLO_DE_FECHO,
@@ -151,6 +152,47 @@ const planoDoExemplo = (i) => ({
     `o número-espinha (${EXEMPLO_DE_MAPA.numeroEspinha}) está na lista de valores`,
     EXEMPLO_DE_MAPA.valores.some((v) => v.valor === EXEMPLO_DE_MAPA.numeroEspinha),
   );
+
+  // ═══ 🔴 O QUE CADA DINHEIRO É (`tipo`) — 12/08/2026 ═══════════════════════
+  /**
+   * ⚠️ **O EXEMPLO É QUEM ENSINA — e é por isso que estas provas olham para ELE.**
+   * Um campo explicado na regra 3 e ausente do mapa-exemplo é um campo que o modelo não
+   * preenche: está medido três vezes nesta casa. E se o exemplo só mostrasse `"sai"`, a
+   * tela de Fluxo (que precisa dos dois lados) nunca apareceria — o conserto nasceria
+   * morto.
+   */
+  ok('🔴 todos os valores do mapa-exemplo dizem o que são (`tipo`)',
+    EXEMPLO_DE_MAPA.valores.every((v) => TIPOS_DE_VALOR.includes(v.tipo)),
+    EXEMPLO_DE_MAPA.valores.map((v) => v.tipo).join(' · '));
+  ok('🔴 e o exemplo mostra os DOIS lados (só com "sai", a tela de Fluxo nascia morta)',
+    EXEMPLO_DE_MAPA.valores.some((v) => v.tipo === 'entra')
+    && EXEMPLO_DE_MAPA.valores.some((v) => v.tipo === 'sai'));
+  ok('o total das parcelas fica do mesmo lado delas (somar não muda o que a coisa é)',
+    EXEMPLO_DE_MAPA.valores.find((v) => v.nome === s.da).tipo
+      === EXEMPLO_DE_MAPA.valores.find((v) => v.nome === s.de[0]).tipo);
+
+  /**
+   * ⚠️ **QUEM NÃO DIZ FICA `saldo`, E NUNCA REPROVA.** Um campo novo e obrigatório
+   * reprovaria todos os mapas já escritos — e um vídeo que não sai é pior do que um
+   * vídeo com uma tela a menos (regra do dono, 09/08). `saldo` é o valor neutro: nenhuma
+   * tela com sinal o aceita, portanto **o silêncio nunca inventa nada**.
+   */
+  ok('quem não diz o tipo fica no neutro', tipoDoValor({ nome: 'x', valor: 10 }) === TIPO_POR_OMISSAO);
+  ok('e uma palavra que não existe também', tipoDoValor({ nome: 'x', valor: 10, tipo: 'receita' }) === TIPO_POR_OMISSAO);
+  ok('mas "SAI" com maiúsculas é aceite (não se reprova por causa de maiúsculas)',
+    tipoDoValor({ nome: 'x', valor: 10, tipo: ' SAI ' }) === 'sai');
+  {
+    const semTipo = { ...EXEMPLO_DE_MAPA, valores: EXEMPLO_DE_MAPA.valores.map(({ tipo, ...resto }) => resto) };
+    ok('🔴 um mapa sem tipo nenhum NÃO é reprovado', validarMapa(semTipo).ok === true);
+    const arranjado = consertarMapa(structuredClone(semTipo));
+    ok('e o conserto põe-lhe o neutro, dizendo que o fez',
+      arranjado.mapa.valores.every((v) => v.tipo === TIPO_POR_OMISSAO)
+      && arranjado.consertos.some((c) => /tipo/.test(c)));
+    const tipoInvalido = { ...EXEMPLO_DE_MAPA, valores: EXEMPLO_DE_MAPA.valores.map((v, i) => (i === 0 ? { ...v, tipo: 'receita' } : v)) };
+    const v2 = validarMapa(tipoInvalido);
+    ok('um tipo inventado dá AVISO e não erro', v2.ok === true && v2.avisos.some((a) => /tipo/.test(a)),
+      v2.avisos.join(' | '));
+  }
 
   const ditosNoAto1 = valoresEmDinheiro(PARTES_DO_CAPITULO.map((p) => EXEMPLO_DE_CAPITULO[p]).join(' '));
   const permitidos = EXEMPLO_DE_MAPA.valores.map((v) => v.valor);

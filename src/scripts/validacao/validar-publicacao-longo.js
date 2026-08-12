@@ -1872,7 +1872,62 @@ console.log('   (a família: um campo que descreve uma regra e ninguém o lê �
      * ficheiro (nenhuma leitura direta ao objeto de dados), que é coisa que se lê no
      * ficheiro e não se observa no comportamento sem renderizar o vídeo todo.
      */
-    for (const [ficheiro, objeto] of [['BalancoDonut.tsx', 'balanco'], ['ExtratoLista.tsx', 'extrato'], ['CartoesCountUp.tsx', 'cartoes']]) {
+    // ═══ 🔴 AS BARRAS DO FLUXO — 12/08/2026 ═══════════════════════════════════
+    /**
+     * ⚠️ **ESTA TELA SÓ EXISTE POR CAUSA DO `tipo`.** Ela desenha uma barra RECEITAS
+     * verde e uma DESPESAS vermelha; sem a história declarar de que lado está cada
+     * dinheiro, encher qualquer uma delas é **inventar o sinal**.
+     */
+    const COM_LADOS = {
+      valores: [
+        { nome: 'o que entra em casa todo mês', valor: 2400, tipo: 'entra' },
+        { nome: 'o streaming', valor: 39, tipo: 'sai' },
+        { nome: 'a academia parada', valor: 90, tipo: 'sai' },
+        { nome: 'o jogo do celular', valor: 60, tipo: 'sai' },
+        { nome: 'o que sai todo mês sem ninguém ver', valor: 189, tipo: 'sai' },
+      ],
+      somas: [{ de: ['o streaming', 'a academia parada', 'o jogo do celular'], da: 'o que sai todo mês sem ninguém ver' }],
+    };
+    ok('🔴 sem lado declarado, a tela do Fluxo nem está disponível',
+      !brollDoVideo(HISTORIA).some((b) => b.familia === 'fluxo'),
+      brollDoVideo(HISTORIA).map((b) => b.comp).join(' '));
+    ok('e só com saídas (sem nada que entre) continua fora',
+      !brollDoVideo({ valores: COM_LADOS.valores.filter((v) => v.tipo === 'sai') }).some((b) => b.familia === 'fluxo'));
+    ok('com os dois lados declarados, está',
+      brollDoVideo(COM_LADOS).some((b) => b.comp === 'FluxoBarrasLong'));
+
+    const doFluxo = valoresDoBroll(BROLL_PERMITIDO.find((b) => b.familia === 'fluxo'), COM_LADOS);
+    ok('o que entra é o que a história disse que entra', doFluxo.fluxo.receitasValue === 2400);
+    /**
+     * 🔴 **A PROVA QUE VALE MAIS DESTE BLOCO.** A lista traz as parcelas **e o total
+     * delas**. Somar tudo o que é `sai` dava 39+90+60+189 = **378**: o dinheiro contado
+     * duas vezes, numa barra do dobro do tamanho, sem dar erro nenhum.
+     */
+    ok('🔴 e o que sai NÃO é contado duas vezes (o total tapa as suas parcelas)',
+      doFluxo.fluxo.despesasValue === 189, `deu ${doFluxo.fluxo.despesasValue} (378 = contado a dobrar)`);
+    ok('o saldo do período é a subtração dos dois', doFluxo.fluxo.liquidoValue === 2400 - 189);
+    ok('e fica VERDE porque sobrou', doFluxo.fluxo.liquidoCor === '#22c55e');
+    {
+      const APERTADO = {
+        valores: [
+          { nome: 'o que entra', valor: 1200, tipo: 'entra' },
+          { nome: 'o que sai', valor: 1500, tipo: 'sai' },
+        ],
+      };
+      const aperto = valoresDoBroll(BROLL_PERMITIDO.find((b) => b.familia === 'fluxo'), APERTADO);
+      ok('🔴 e fica VERMELHO quando sai mais do que entra (verde diria "sobrou dinheiro")',
+        aperto.fluxo.liquidoValue === -300 && aperto.fluxo.liquidoCor === '#ef4444',
+        `${aperto.fluxo.liquidoValue} · ${aperto.fluxo.liquidoCor}`);
+    }
+    const noEcraDoFluxo = JSON.stringify(doFluxo);
+    for (const gravado of ['10.000,00', '5.044,99', '6.604,93', '4.955,0', 'Julho 2026']) {
+      ok(`  nenhum vestígio de ${gravado} (o valor da gravação)`, !noEcraDoFluxo.includes(gravado));
+    }
+    ok('a trava reprova o Fluxo numa história sem os dois lados',
+      conferirImagens([{ id: 1, narration: 'o que entra e o que sai', visual: { tipo: 'broll', comp: 'FluxoBarrasLong', brollFrames: 210 } }], HISTORIA)
+        .some((e) => /não pode entrar neste vídeo/.test(e)));
+
+    for (const [ficheiro, objeto] of [['BalancoDonut.tsx', 'balanco'], ['FluxoBarras.tsx', 'fluxo'], ['ExtratoLista.tsx', 'extrato'], ['CartoesCountUp.tsx', 'cartoes']]) {
       const fonte = readFileSync(join(RAIZ, 'youtube-render', 'src', ficheiro), 'utf-8')
         .split('\n').filter((l) => !l.trim().startsWith('//') && !l.trim().startsWith('*')).join('\n');
       // As únicas menções legítimas: o `import` e o padrão passado ao `useDados`.

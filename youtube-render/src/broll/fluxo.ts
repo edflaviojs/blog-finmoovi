@@ -2,6 +2,18 @@
 // "Fluxo de Caixa — Análise completa do seu fluxo financeiro"). Fonte única
 // p/ os estilos nativos; footage usa `footageFrame`.
 export const fluxo = {
+  /**
+   * ⚠️ **O SUBTÍTULO E A COR SÃO DADOS — 12/08/2026.**
+   *
+   * O mês (*"Julho 2026"*) é da gravação e nenhuma história o diz. E o saldo do período
+   * estava pintado de VERDE fixo: numa história em que sai mais do que entra, verde diz
+   * *"sobrou dinheiro"* — a mentira mais cara que esta tela podia contar.
+   *
+   * Ficam aqui com o valor de sempre; o vídeo longo põe os seus por cima e **o Short lê
+   * estes**. Ver `broll/valores-da-historia`.
+   */
+  subtitulo: 'Julho 2026',
+  liquidoCor: '#22c55e',
   title: 'Fluxo de Caixa',
   subtitle: 'Análise completa do seu fluxo financeiro',
   periodo: '01/07 — 31/07/2026',

@@ -518,13 +518,49 @@ const temBordao = (txt) => soPalavras(txt).includes(BORDAO_EM_PALAVRAS);
 // ─── ANDAR 0 — o MAPA ────────────────────────────────────────────────────────
 
 /**
+ * ═══ 🔴 O QUE CADA DINHEIRO É — 12/08/2026 ══════════════════════════════════
+ *
+ * ═══ O DEFEITO QUE ISTO CONSERTA, E ELE NÃO ESTAVA NO CÓDIGO DO VÍDEO ═══
+ * As telas do app do catálogo dizem coisas com **sinal**: a tela de Fluxo desenha uma
+ * barra **RECEITAS** verde e uma **DESPESAS** vermelha. O mapa declarava
+ * `valores: [{nome, valor}]` — **um nome e uma quantia, e mais nada**. Pôr um valor da
+ * história em qualquer das barras era **inventar o sinal**: uma barra verde diz *"entrou
+ * dinheiro"*, e a voz podia nunca ter dito isso.
+ *
+ * Por causa disso, três telas do app ficaram de fora do vídeo longo e as seis cenas de
+ * b-roll giravam entre quatro ecrãs. O obstáculo **nunca foi o Short** — era este campo
+ * que não existia.
+ *
+ * ⚠️ **PRECEDENTE DENTRO DESTA CASA:** é exactamente por isto que `contaDoCartao` existe.
+ * O mapa é obrigado a **apontar com o dedo** qual dos valores é a fatura, senão a conta
+ * dos juros diria que o amigo cobra 16% ao mês. A mesma regra, um andar acima.
+ *
+ * ═══ ⚠️ POR QUE É UM AVISO E NUNCA UM ERRO ═══
+ * Um campo novo e OBRIGATÓRIO reprovaria todos os mapas já escritos e os que a IA
+ * escrevesse sem ele — e um vídeo que não sai é pior do que um vídeo com uma tela a
+ * menos (regra do dono, 09/08). Quem não diz fica `saldo`, que é **o valor neutro**: sem
+ * seta, sem cor, sem sinal. Nenhuma tela com sinal aceita um `saldo`, portanto **o
+ * silêncio nunca inventa nada** — só faz a tela não aparecer.
+ */
+export const TIPOS_DE_VALOR = ['entra', 'sai', 'saldo'];
+export const TIPO_POR_OMISSAO = 'saldo';
+
+/**
+ * O que este dinheiro é, sempre um dos três. **Nunca devolve nada fora da lista.**
+ */
+export function tipoDoValor(v) {
+  const t = String((v && v.tipo) || '').trim().toLowerCase();
+  return TIPOS_DE_VALOR.includes(t) ? t : TIPO_POR_OMISSAO;
+}
+
+/**
  * O MAPA é o contrato do vídeo inteiro, e é validado ANTES de existir uma linha de
  * guião. É aqui que se apanha, por dez cêntimos de texto, o defeito que custaria
  * seis minutos de roteiro: dois capítulos com o mesmo número, um título que não
  * promete nada, um fecho que não responde ao que a abertura prometeu.
  *
  * Forma esperada:
- * { promessa, fioCondutor, numeroEspinha, valores:[{nome,valor}], somas?:[{de:[nomes],da:nome}],
+ * { promessa, fioCondutor, numeroEspinha, valores:[{nome,valor,tipo?}], somas?:[{de:[nomes],da:nome}],
  *   capituloDaDemonstracao, capitulos:[{titulo, oQueAcrescenta, oQueFicaEmAberto}], respostaDaPromessa, lacoAberto }
  */
 export function validarMapa(mapa) {
@@ -626,6 +662,9 @@ export function validarMapa(mapa) {
     if (!v || !String(v.nome || '').trim()) erros.push(`valores[${i}]: sem "nome" (o que este dinheiro é)`);
     if (!Number.isFinite(numeros[i]) || numeros[i] < 10) {
       erros.push(`valores[${i}] ("${(v && v.nome) || '?'}"): o valor tem de ser um número de 10 para cima (veio ${JSON.stringify(v && v.valor)})`);
+    }
+    if (v && v.tipo != null && !TIPOS_DE_VALOR.includes(String(v.tipo).trim().toLowerCase())) {
+      avisos.push(`valores[${i}] ("${(v && v.nome) || '?'}"): "tipo" é ${JSON.stringify(v.tipo)} e só pode ser ${TIPOS_DE_VALOR.join(', ')} — fica "${TIPO_POR_OMISSAO}"`);
     }
   });
 
@@ -828,6 +867,15 @@ export function consertarMapa(mapa, { proibidas = [] } = {}) {
     consertos.push(`${(m.valores || []).length - valores.length} valor(es) sem nome ou sem número foram deitados fora`);
   }
   if (!valores.length) return { mapa: m, consertos, fatal: 'sem lista de valores — não há dinheiro nenhum para o vídeo dizer' };
+  /**
+   * ⚠️ **O `tipo` é NORMALIZADO aqui, e nunca reprova.** Quem não diz, ou diz uma
+   * palavra que não existe, fica `saldo` — o valor neutro, que nenhuma tela com sinal
+   * aceita. O silêncio faz a tela não aparecer; **nunca a faz aparecer errada.**
+   * Ver `TIPOS_DE_VALOR`.
+   */
+  const semTipo = valores.filter((v) => tipoDoValor(v) !== String(v.tipo || '').trim().toLowerCase()).length;
+  valores.forEach((v) => { v.tipo = tipoDoValor(v); });
+  if (semTipo) consertos.push(`${semTipo} valor(es) sem "tipo" (ou com um tipo que não existe) ficaram "${TIPO_POR_OMISSAO}" — a tela de Fluxo não os usa`);
   m.valores = valores;
   const numeros = valores.map((v) => Number(String(v.valor).replace(',', '.')));
 
