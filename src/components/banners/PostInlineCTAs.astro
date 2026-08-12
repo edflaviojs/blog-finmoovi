@@ -90,7 +90,15 @@ const btnText = (ctaText[locale] || ctaText.pt);
   if (!content) return;
 
   // Track CTA clicks for A/B analysis
+  //
+  // ⚠️ **QUEM RECUSOU FICA DE FORA, E ISSO FALTAVA AQUI** (12/08/2026). O aviso de
+  // privacidade promete que se pode recusar a medição de audiência, e a medição do
+  // Cloudflare cumpre — mas esta contagem disparava na mesma. Um botão "Recusar"
+  // que só desliga metade do que promete é o mesmo defeito que o aviso antigo tinha
+  // antes de ser reescrito. `window.fmConsent` é posto pelo `CookieNotice`; quem
+  // nunca escolheu continua a ser contado, que é a base declarada na Política.
   document.addEventListener('click', function(e) {
+    if (window.fmConsent === 'recusado') return;
     var btn = e.target.closest('.pic-btn');
     if (!btn) return;
     var cta = btn.closest('.post-inline-cta');

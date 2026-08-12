@@ -148,6 +148,36 @@ const ATUAL = path.startsWith('/en/') || path === '/en' ? 'en'
       } catch (e) { /* navegador sem armazenamento — a escolha vale só nesta visita */ }
     }
 
+    /**
+     * A CONTAGEM — para se saber se esta gaveta serve para alguma coisa.
+     *
+     * ⚠️ **QUEM RECUSOU FICA DE FORA.** O aviso de privacidade promete que se pode
+     * recusar a medição de audiência; contar cliques é medição de audiência. Quem
+     * nunca escolheu continua a ser contado — é a base declarada na Política, e é
+     * o mesmo critério da medição do Cloudflare.
+     *
+     * ⚠️ **VAI PARA A TABELA QUE JÁ EXISTE (`cta_clicks`, via `/api/cta-track`), e
+     * isso é escolha e não preguiça.** Uma tabela nova não existiria no Supabase: o
+     * endpoint devolve `200` com `stored: false` quando a gravação falha — nunca se
+     * queixa. Ficaríamos com tudo verde e ZERO números guardados, que é o defeito
+     * mais caro que esta casa já apanhou. Para separar depois, basta filtrar os
+     * `variant` que começam por `lang-`.
+     *
+     * Não vai NADA sobre quem visita: só o caminho da página, o idioma sugerido e
+     * o momento. Sem identificador, sem cookie, sem sessão.
+     */
+    function contar(evento, idioma) {
+      if (window.fmConsent === 'recusado') return;
+      try {
+        navigator.sendBeacon('/api/cta-track', JSON.stringify({
+          variant: 'lang-' + idioma + '-' + evento,
+          title: 'de ' + ATUAL,
+          page: window.location.pathname,
+          ts: Date.now(),
+        }));
+      } catch (e) { /* medir nunca pode partir a página */ }
+    }
+
     if (jaDecidiu()) return;
 
     var alvo = idiomaDesejado();
@@ -204,6 +234,9 @@ const ATUAL = path.startsWith('/en/') || path === '/en' ? 'en'
 
     function mostrar() {
       if (newsletterAberto()) return;
+      // Conta-se DEPOIS da guarda: uma gaveta que não chegou a subir não foi vista,
+      // e contá-la faria a taxa de cliques parecer pior do que é.
+      contar('visto', alvo);
       el.hidden = false;
       // Dois quadros: o primeiro para o navegador assumir o estado escondido já
       // visível, o segundo para a transição ter de onde partir. Com um só, a gaveta
@@ -220,16 +253,23 @@ const ATUAL = path.startsWith('/en/') || path === '/en' ? 'en'
     }
 
     function aoTeclar(ev) {
-      if (ev.key === 'Escape') { guardar('dispensado', alvo); esconder(); }
+      if (ev.key !== 'Escape') return;
+      guardar('dispensado', alvo);
+      contar('dispensado', alvo);
+      esconder();
     }
 
     btnIr.addEventListener('click', function () {
       guardar('aceito', alvo);
+      // `sendBeacon` foi feito exatamente para isto: sobrevive à saída da página,
+      // ao contrário de um `fetch`, que o navegador cancela ao navegar.
+      contar('aceito', alvo);
       window.location.href = destino;
     });
 
     btnNao.addEventListener('click', function () {
       guardar('dispensado', alvo);
+      contar('dispensado', alvo);
       esconder();
     });
 
