@@ -3,6 +3,7 @@ title: "Cómo crear tu presupuesto familiar con Excel y apps"
 description: "Aprende paso a paso a crear tu presupuesto familiar en Excel, integrarlo con FinMoovi y controlar tus finanzas de forma visual y sencilla."
 tickerHeadline: "Convierte tu hoja en aliada"
 image: "/images/posts/como-montar-seu-orcamento-familiar-usando-excel-e-apps.webp"
+imageAlt: "Gráficos financieros desenfocados con líneas onduladas naranjas y azules sobre fondo oscuro."
 category: "dicas"
 locale: "es"
 tags: ["presupuesto familiar excel","finanzas personales","economía","dinero"]

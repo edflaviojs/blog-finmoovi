@@ -3,6 +3,7 @@ title: "How to Build Your Family Budget Using Excel and Apps"
 description: "Learn step‑by‑step how to create a family budget in Excel, integrate it with FinMoovi, and gain visual control of your finances effortlessly."
 tickerHeadline: "Turn Your Spreadsheet into an Ally"
 image: "/images/posts/como-montar-seu-orcamento-familiar-usando-excel-e-apps.webp"
+imageAlt: "Blurred orange and teal financial charts with glowing dots on a dark blue background."
 category: "dicas"
 locale: "en"
 tags: ["family budget excel","personal finance","savings","money"]

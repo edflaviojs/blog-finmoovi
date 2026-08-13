@@ -3,6 +3,7 @@ title: "Como montar seu orçamento familiar usando Excel e apps"
 description: "Descubra passo a passo como criar um orçamento familiar no Excel, integrar com o FinMoovi e ganhar controle visual das finanças sem complicação."
 tickerHeadline: "Transforme sua planilha em aliado"
 image: "/images/posts/como-montar-seu-orcamento-familiar-usando-excel-e-apps.webp"
+imageAlt: "Gráficos financeiros abstratos em laranja e azul sobre fundo escuro."
 category: "dicas"
 locale: "pt"
 tags: ["orçamento familiar excel","finanças pessoais","economia","dinheiro"]
