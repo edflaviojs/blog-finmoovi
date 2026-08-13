@@ -4,6 +4,7 @@ definition: "What family financial planning is and how it shows up in your every
 title: "family financial planning - Financial Glossary"
 description: "What family financial planning is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/planejamento-financeiro-familiar.webp"
+imageAlt: "Gold coins and glass jars with green plants on a dark blue background"
 category: "basico"
 tags: ["family financial planning", "glossary", "finance"]
 author: "FinMoovi"

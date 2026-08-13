@@ -2,6 +2,7 @@
 title: "Índice FinMoovi del Costo de Vida — Julio/2026"
 description: "IPCA de julio/2026 por grupo de gasto: índice general en 0,07% en el mes y 4,44% en 12 meses. Cambio de cierre y consejos para proteger tu bolsillo."
 image: "/images/posts/indice-finmoovi-custo-de-vida-julho-2026.webp"
+imageAlt: "Calculadora, monedas, cuaderno marrón, pluma y eucalipto sobre fondo blanco."
 category: "cotacoes"
 tags: ["costo de vida","ipca","inflación","cotizaciones","presupuesto"]
 author: "FinMoovi"

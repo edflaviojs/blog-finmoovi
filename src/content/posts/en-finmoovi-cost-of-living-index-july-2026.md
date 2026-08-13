@@ -2,6 +2,7 @@
 title: "FinMoovi Cost of Living Index — July/2026"
 description: "IPCA for July/2026 by expense group: overall index at 0.07% in the month and 4.44% over 12 months. Month-close exchange rates and tips to protect your budget."
 image: "/images/posts/indice-finmoovi-custo-de-vida-julho-2026.webp"
+imageAlt: "Red notebook, calculator, coins, and green leaves on white marble surface."
 category: "cotacoes"
 tags: ["cost of living","ipca","inflation","quotes","budget"]
 author: "FinMoovi"

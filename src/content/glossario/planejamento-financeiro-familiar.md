@@ -4,6 +4,7 @@ definition: "O que é planejamento financeiro familiar e como isso aparece no se
 title: "planejamento financeiro familiar - Glossário Financeiro"
 description: "O que é planejamento financeiro familiar e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/planejamento-financeiro-familiar.webp"
+imageAlt: "Moedas douradas empilhadas e plantas crescendo em frascos de vidro sobre fundo escuro."
 category: "basico"
 tags: ["planejamento financeiro familiar", "glossário", "finanças"]
 author: "FinMoovi"
