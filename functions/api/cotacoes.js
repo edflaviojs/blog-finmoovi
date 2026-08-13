@@ -36,6 +36,10 @@ function corsHeaders(request) {
     'Content-Type': 'application/json',
     // Cache no edge/browser por 2 min (cotações no cliente atualizam a cada 5 min)
     'Cache-Control': 'public, max-age=120',
+    // A resposta MUDA conforme o Origin de quem pergunta. Sem isto, uma regra de
+    // cache futura poderia servir a um domínio o Allow-Origin do outro — e o
+    // navegador barraria o pedido.
+    'Vary': 'Origin',
   };
 }
 
@@ -105,12 +109,75 @@ async function buildData(env) {
   return out;
 }
 
+// Segundos que a resposta pronta fica guardada no edge. Igual ao max-age já
+// declarado no Cache-Control — o cliente repete a cada 5 min de qualquer forma.
+const EDGE_TTL = 120;
+
+/**
+ * Chave de cache: a própria URL SEM query string.
+ *
+ * Tem de ser fixa. Se entrasse a query (?nocache=…, ?utm_…), cada visitante
+ * criaria uma entrada nova e o cache nunca acertaria.
+ *
+ * O que fica guardado é só o CORPO em JSON — os cabeçalhos CORS são remontados
+ * a cada pedido, porque o Access-Control-Allow-Origin depende de QUEM pergunta.
+ * Guardar a resposta inteira devolveria a um domínio o cabeçalho do outro.
+ */
+function cacheKey(request) {
+  const u = new URL(request.url);
+  u.search = '';
+  return new Request(u.toString(), { method: 'GET' });
+}
+
 export async function onRequestGet(context) {
   const headers = corsHeaders(context.request);
+
+  // PORQUÊ: sem isto, o Cloudflare respondia `cf-cache-status: DYNAMIC` — ou
+  // seja, NADA era guardado e cada visitante fazia o edge ir buscar as 6 APIs
+  // externas outra vez (medido em 2,2 s). O `cf: { cacheTtl }` lá em cima só
+  // guarda as respostas DAS APIS, não a nossa resposta já montada; entre elas
+  // ficava a espera em série (AwesomeAPI → fallbacks → IBOV → BCB) que ninguém
+  // reaproveitava. Agora o primeiro visitante de cada região paga, e os
+  // seguintes recebem do edge nos 2 minutos seguintes.
+  //
+  // O cache do Cloudflare é POR REGIÃO, não global: cada data center tem a sua
+  // primeira falha. É esperado, e continua a ser 1 chamada por região a cada
+  // 2 min em vez de 1 por visitante.
+  const cache = typeof caches !== 'undefined' ? caches.default : null;
+  const key = cache ? cacheKey(context.request) : null;
+
+  if (cache) {
+    try {
+      const hit = await cache.match(key);
+      if (hit) {
+        return new Response(await hit.text(), {
+          status: 200,
+          headers: { ...headers, 'X-FM-Cache': 'hit' },
+        });
+      }
+    } catch (e) { /* sem cache (dev local) → segue e busca ao vivo */ }
+  }
+
   try {
     const data = await buildData(context.env);
-    return new Response(JSON.stringify(data), { status: 200, headers });
+    const body = JSON.stringify(data);
+
+    // waitUntil: gravar não pode atrasar a resposta de quem já esperou pelas APIs.
+    if (cache) {
+      try {
+        context.waitUntil(cache.put(key, new Response(body, {
+          headers: {
+            'Content-Type': 'application/json',
+            'Cache-Control': 'public, max-age=' + EDGE_TTL,
+          },
+        })));
+      } catch (e) { /* falha ao gravar não pode derrubar a resposta */ }
+    }
+
+    return new Response(body, { status: 200, headers: { ...headers, 'X-FM-Cache': 'miss' } });
   } catch (e) {
+    // Erro NÃO entra no cache: senão 2 minutos de todos os visitantes a ver "--"
+    // por causa de uma falha momentânea de uma API externa.
     return new Response(JSON.stringify({ error: true }), { status: 200, headers });
   }
 }
