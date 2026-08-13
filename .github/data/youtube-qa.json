@@ -160,5 +160,23 @@
     ],
     "veredito": "1. **O LOOP — 9/10**  \nPrimeiro e último quadro são praticamente iguais: mesma mensagem **“Gastar menos no mercado”**, mesma posição e mesma composição. Excelente para um loop. A pequena diferença é o contexto visual/textual ao redor, mas o elemento principal fecha bem.\n\n2. **A FAIXA DE BAIXO — 5/10**  \nNos quadros 5–8, as legendas ficam claramente no terço inferior. Em um celular, essa região pode ser parcialmente coberta pela interface do Shorts/Reels. O conteúdo principal está seguro, mas as legendas não.\n\n3. **TEXTO POR CIMA DE TEXTO — 7/10**  \nNão vejo duas frases grandes realmente sobrepostas. Porém, há textos menores fragmentados, como **“Quem aprender a”**, **“mercado? Começa assim.”** e **“mês após mês.”**, que ficam visualmente próximos e podem parecer uma sequência de palavras soltas.\n\n4. **LEGIBILIDADE — 8/10**  \nOs textos principais são grandes, brancos e com fundo escuro, funcionando bem no celular. As legendas menores têm contraste razoável, mas poderiam ser um pouco maiores e mais fortes.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — 7/10**  \nExiste bastante espaço vazio, principalmente na parte inferior de vários quadros. O fundo decorativo evita que pareça completamente vazio, mas a composição poderia ocupar melhor a tela.\n\n6. **COERÊNCIA — 9/10**  \nOs 8 quadros parecem claramente pertencer ao mesmo vídeo: mesma identidade visual, cores, logo, gráfico e linguagem. A sequência também conta uma pequena história: problema → evolução dos preços → descoberta → retorno ao início.\n\n7. **TESTE CENTRAL — 6/10**  \nPelos quadros parados, parece mais um **vídeo feito com slides animados** do que um vídeo profissional com cenas vivas, porque cada momento é dominado por cartões estáticos e gráficos.\n\nNOTA GERAL: 7,5  \nPROBLEMA 1: As legendas dos quadros 5–8 (13s–18,1s) estão no terço inferior e podem ser cobertas pela interface.  \nPROBLEMA 2: O vídeo parece bastante baseado em slides estáticos, especialmente nos quadros 1, 4, 6, 7 e 8.  \nPROBLEMA 3: Há áreas vazias grandes na metade inferior de vários quadros, reduzindo a sensação de preenchimento visual.  \nPRIMEIRA COISA A MUDAR: Subir as legendas dos quadros 5–8 para uma área segura e usar esse espaço para deixar a composição mais dinâmica.",
     "quando": "2026-08-12T06:02:21.749Z"
+  },
+  {
+    "slug": "loop-primeiro-guardado-depois-de-anos",
+    "formato": "loop16",
+    "nota": 6.5,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      2.6,
+      5.2,
+      7.8,
+      10.5,
+      13.1,
+      15.7,
+      18.2
+    ],
+    "veredito": "1. **O LOOP — 4/10**  \nO primeiro quadro mostra **“Anos tentando, consegui”** e o último também, então existe uma boa intenção de encaixe. Porém, o primeiro está em uma posição/composição diferente do último e os elementos visuais não parecem idênticos. **Não dá para saber pelos quadros** se a transição realmente esconde o reinício.\n\n2. **FAIXA DE BAIXO — 7/10**  \nNão há informação essencial muito baixa. As legendas ficam relativamente acima da área crítica, mas algumas palavras estão próximas do limite inferior de segurança.\n\n3. **TEXTO POR CIMA DE TEXTO — 5/10**  \nHá momentos confusos, principalmente nos quadros **5–7 (10,5–15,7s)**: frases grandes no centro competem visualmente com as legendas menores abaixo. No quadro 6, **“Depois de anos, consegui”** também fica visualmente pesado.\n\n4. **LEGIBILIDADE — 8/10**  \nO texto principal é grande, branco e com bom contraste. As legendas menores são o ponto mais fraco: no celular, algumas palavras podem perder força, especialmente sobre o fundo roxo.\n\n5. **TELA VIVA OU VAZIA — 5/10**  \nExiste bastante espaço vazio no centro/inferior em vários quadros, especialmente **2, 3, 4 e 7**. O cenário tem textura e decoração, mas isso não substitui informação visual.\n\n6. **COERÊNCIA — 8/10**  \nSim, os quadros parecem pertencer ao mesmo vídeo: mesma identidade visual, cores, tipografia e elementos gráficos. A narrativa também avança: tentativa → descoberta → fechamento de contas → dinheiro guardado.\n\n7. **TESTE CENTRAL — 6/10**  \nPelos quadros parados, parece **mais um vídeo animado baseado em slides do que um vídeo profissional dinâmico**; falta variedade visual entre os momentos.\n\nNOTA GERAL: 6,5/10  \nPROBLEMA 1: O loop ainda não parece perfeitamente contínuo entre o quadro 1 (0,1s) e o quadro 8 (18,2s).  \nPROBLEMA 2: Há excesso de espaço vazio em vários quadros, principalmente 2, 3, 4 e 7.  \nPROBLEMA 3: As frases grandes e as legendas menores competem entre si nos quadros 5–7.  \nPRIMEIRA COISA A MUDAR: Fazer o último quadro visualmente praticamente idêntico ao primeiro, para que o reinício pareça uma continuação natural.",
+    "quando": "2026-08-13T06:00:41.822Z"
   }
 ]
