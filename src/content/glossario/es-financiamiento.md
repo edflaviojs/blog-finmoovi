@@ -33,12 +33,12 @@ Financiamiento es cuando un banco presta [dinero](/es/posts/es-ahorra-en-las-com
 
 ## [Consejos](/es/posts/es-7-errores-financieros-principiante) para financiar bien
 
-1. **Dale la mayor entrada posible** — reduce los intereses totales
-2. **Elige el plazo más corto que quepa en tu bolsillo** — menos intereses
-3. **Compara tasas entre bancos** — la diferencia puede ser enorme
-4. **Prefiere SAC** — paga menos intereses en total
-5. **Amortiza siempre que puedas** — cada R$ 1.000 extra ahorra miles
+1. **Dale la mayor entrada posible** — reduce los intereses totales  
+2. **Elige el plazo más corto que quepa en tu bolsillo** — menos intereses  
+3. **Compara tasas entre bancos** — la diferencia puede ser enorme  
+4. **Prefiere SAC** — paga menos intereses en total  
+5. **Amortiza siempre que puedas** — cada €180 extra ahorra miles  
 
 ## Cuánto cuesta un financiamiento
 
-Un inmueble de R$ 400.000 financiado en 30 años a 10% a.a. cuesta en total cerca de R$ 1.000.000. Tú pagas más del doble del valor del inmueble en intereses.
+Un inmueble de €72.000 financiado en 30 años a 10% a.a. cuesta en total cerca de €180.000. Tú pagas más del doble del valor del inmueble en intereses.

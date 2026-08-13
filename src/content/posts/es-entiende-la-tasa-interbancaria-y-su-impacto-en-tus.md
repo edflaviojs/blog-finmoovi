@@ -24,7 +24,7 @@ Imagina la escena: acabas de recibir el extracto de tu cuenta corriente y ves qu
 La **tasa interbancaria** es el promedio que los bancos cobran al prestarse dinero entre sí, y sirve como referencia para la rentabilidad de muchos instrumentos de renta fija. Cuando colocas tu dinero en un **certificado de depósito**, un fondo DI o un bono del gobierno atado a la tasa interbancaria, la rentabilidad que ves es un porcentaje “sobre la tasa interbancaria”. Es decir, si la tasa está en 13 % anual y tu título paga 100 % de la tasa, tu rendimiento será aproximadamente 13 % al año. Cuando la tasa varía, el retorno de tus inversiones varía en la misma proporción.
 
 ## Cómo se calcula la tasa interbancaria
-La tasa no la decide un organismo gubernamental; surge de las negociaciones diarias entre bancos en la llamada “cámara de compensación”. Cada operación de préstamo de muy corto plazo (generalmente de un día) tiene un costo, y la media ponderada de esos costos forma la tasa interbancaria. Esta cifra se publica diariamente por entidades como CETIP y se usa como benchmark (referencia) para prácticamente todos los contratos de renta fija del mercado.
+La tasa no la decide un organismo gubernamental; surge de las negociaciones diarias entre bancos en la llamada “cámara de compensación”. Cada operación de préstamo de muy corto plazo (generalmente de un día) tiene un costo, y la media ponderada de esos costos forma la tasa interbancaria. Esta cifra se publica diariamente por **entidades de compensación** y se usa como benchmark (referencia) para prácticamente todos los contratos de renta fija del mercado.
 
 ## Por qué la tasa interbancaria importa al inversor común
 - **Referencia de rentabilidad:** La mayoría de los productos de renta fija anuncian su ganancia como “X % de la tasa interbancaria”. Sin entender qué significa, puedes pensar que estás ganando “X % al año” sin percatarte de que ese X % está ligado a un número que cambia.
@@ -37,7 +37,7 @@ La tasa no la decide un organismo gubernamental; surge de las negociaciones diar
 | **Certificados de depósito** | Pagan un porcentaje de la tasa (ej.: 95 % de la tasa). Si la tasa sube, tu rendimiento sube en la misma medida. |
 | **Fondos DI** | Invierten casi exclusivamente en títulos atados a la tasa, por lo que siguen la tasa casi en tiempo real. |
 | **Bonos vinculados a la tasa base del banco central** | Su rendimiento está ligado a la tasa base del banco central, que suele acompañar a la tasa interbancaria; la diferencia suele ser mínima. |
-| **LCI/LCA** | Algunos ofrecen “X % de la tasa interbancaria” y además están exentos de [impuesto sobre la renta](/es/glossario/es-impuesto-sobre-la-renta), lo que hace la comparación aún más atractiva. |
+| **bonos bancarios exentos de impuestos** | Algunos ofrecen “X % de la tasa interbancaria” y además están exentos de [impuesto sobre la renta](/es/glossario/es-impuesto-sobre-la-renta), lo que hace la comparación aún más atractiva. |
 
 ![Por qué la tasa interbancaria importa al inversor común](/images/posts/entenda-a-taxa-cdi-e-seu-impacto-nos-seus-investimentos-2.webp)
 
@@ -61,7 +61,7 @@ FinMoovi te permite tomar una foto de tu última factura o del extracto de la in
 
 ## Estrategias prácticas para lidiar con la variación de la tasa
 1. **Diversifica entre diferentes porcentajes de la tasa:** Combina un certificado de depósito al 95 % de la tasa con otro al 105 % para equilibrar [riesgo y retorno](/es/posts/es-etfs-que-son-y-como-invertir-de-forma-simple-y-rentable).
-2. **Incluye productos exentos de impuesto:** [LCI y LCA](/es/glossario/es-lci-y-lca) que pagan la tasa pueden mejorar la ganancia neta.
+2. **Incluye productos exentos de impuesto:** [bonos bancarios exentos de impuestos](/es/glossario/es-lci-y-lca) que pagan la tasa pueden mejorar la ganancia neta.
 3. **Sigue la política monetaria:** Las decisiones de los bancos centrales influyen directamente en la tasa; estar informado ayuda a anticipar movimientos.
 4. **Usa metas a corto plazo:** Si la tasa está alta, puede ser interesante “bloquear” parte del dinero en un título de corto plazo para aprovechar el rendimiento.
 
@@ -87,4 +87,3 @@ La tasa interbancaria es específica al mercado local; para quienes mantienen re
 ---
 
 **Para seguir tus inversiones en un solo lugar, [prueba FinMoovi gratis 7 días](https://finmoovi.com) — multimoneda, informes inteligentes y 100 % offline.**
-<!-- SCHEMA_AUTO:{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué pasa si la tasa queda por debajo de la inflación?","acceptedAnswer":{"@type":"Answer","text":"Si la tasa está por debajo de la inflación, tu inversión pierde poder de compra, aunque muestre un rendimiento positivo en términos nominales. Evalúa alternativas que ofrezcan protección inflacionaria, como bonos vinculados al índice de precios al consumidor."}},{"@type":"Question","name":"¿Cómo saber si un fondo realmente rinde por encima de la tasa?","acceptedAnswer":{"@type":"Answer","text":"Revisa el historial de rentabilidad neta del fondo y compáralo con la tasa interbancaria del mismo período. Presta atención a las comisiones de gestión, que pueden reducir la ganancia real."}},{"@type":"Question","name":"¿Puede la tasa ser negativa?","acceptedAnswer":{"@type":"Answer","text":"En situaciones de política monetaria extremadamente expansiva, la tasa base del banco central puede ser muy baja, pero la tasa interbancaria rara vez se vuelve negativa. Aun así, es importante monitorear las condiciones económicas."}},{"@type":"Question","name":"¿Puedo usar la tasa como referencia para inversiones en el exterior?","acceptedAnswer":{"@type":"Answer","text":"La tasa interbancaria es específica al mercado local; para quienes mantienen recursos en monedas extranjeras, la referencia equivalente suele ser el LIBOR o el Euribor. FinMoovi, con su funcionalidad multimoneda, permite seguir ambas referencias. Para seguir tus inversiones en un solo lugar…"}}]} -->

@@ -13,11 +13,11 @@ readingTime: 2
 
 ## ¿Qué es IPCA?
 
-El IPCA (Índice Nacional de Preços ao Consumidor Amplo) es el termómetro oficial de la [inflación](/es/glossario/es-inflacion) en Brasil. Mide cuánto han subido (o bajado) los precios en un período determinado. Lo calcula el IBGE cada mes.
+El IPCA (Índice Nacional de Preços ao Consumidor Amplo) es el termómetro oficial de la [inflación](/es/glossario/es-inflacion) en muchos países. Mide cuánto han subido (o bajado) los precios en un período determinado. Lo calcula la oficina de estadísticas cada mes.
 
 ## Qué mide
 
-El IPCA sigue los precios de una "cesta" de productos y servicios que consumen las familias brasileñas:
+El IPCA sigue los precios de una "cesta" de productos y servicios que consumen las familias:
 - Alimentación (arroz, frijoles, carne)
 - Vivienda (alquiler, energía, agua)
 - Transporte (gasolina, autobús)
@@ -26,14 +26,14 @@ El IPCA sigue los precios de una "cesta" de productos y servicios que consumen l
 
 ## Por qué el IPCA importa para ti
 
-1. **Tu dinero pierde [valor](/es/glossario/es-valor-financiero):** si el IPCA es 5% al año, R$ 100 hoy valen R$ 95 dentro de un año
+1. **Tu dinero pierde [valor](/es/glossario/es-valor-financiero):** si el IPCA es 5% al año, €18 hoy valen €17 dentro de un año
 2. **Inversiones:** rendimientos por debajo del IPCA significan que estás perdiendo dinero
-3. **[Selic](/es/glossario/es-selic):** el Banco Central sube o baja la Selic para controlar el IPCA
+3. **[tasa base del banco central](/es/glossario/es-selic):** el Banco Central sube o baja la tasa base del banco central para controlar el IPCA
 4. **Ajustes:** alquileres, planes de salud y salarios se ajustan por el IPCA
 
 ## IPCA e inversiones
 
-Para que tu dinero crezca de verdad, tus inversiones deben rendir **por encima del IPCA**. Por eso existen títulos como el Tesoro IPCA+, que garantizan [rendimiento](/es/posts/es-montando-cartera-diversificada-con-r-500) real (por encima de la inflación).
+Para que tu dinero crezca de verdad, tus inversiones deben rendir **por encima del IPCA**. Por eso existen títulos como los bonos del gobierno indexados al IPC, que garantizan [rendimiento](/es/posts/es-montando-cartera-diversificada-con-r-500) real (por encima de la inflación).
 
 ## IPCA histórico
 

@@ -1,6 +1,6 @@
 ---
-title: "Resumen Semanal: Dólar a R$ 5.03 — Semana 4 de mayo"
-description: "Resumen semanal del mercado financiero: dólar, euro, Selic y consejos para inversores. Semana 4 de mayo 2026."
+title: "Resumen Semanal: Dólar a €0,90 — Semana 4 de mayo"
+description: "Resumen semanal del mercado financiero: dólar, euro, tasa base del banco central y consejos para inversores. Semana 4 de mayo 2026."
 image: "/images/posts/es-cotizaciones-semana-4-mayo-2026.webp"
 imageAlt: "Circuito electrónico con luces azules y rojas, y símbolo de dólar en el centro."
 category: "cotacoes"
@@ -17,17 +17,17 @@ seo:
   keywords: ["cotización dólar hoy", "cotización euro", "resumen mercado financiero", "selic"]
 ---
 
-## Resumen Semanal del [Mercado Financiero](/es/posts/es-cotizaciones-semana-3-junio-2026) Brasileño
+## Resumen Semanal del [Mercado Financiero](/es/posts/es-cotizaciones-semana-3-junio-2026)
 
-La semana del 20 al 27 de mayo de 2026 estuvo marcada por movimientos significativos en el [mercado financiero](/es/posts/es-cotizaciones-semana-4-junio-2026) brasileño, con destaque para las variaciones en las tasas de [cambio](/es/glossario/es-cambio) y el mantenimiento de la [tasa Selic](/es/glossario/es-selic). Vamos a profundizar en los detalles y entender cómo estos eventos afectan a los inversores individuales.
+La semana del 20 al 27 de mayo de 2026 estuvo marcada por movimientos significativos en el [mercado financiero](/es/posts/es-cotizaciones-semana-4-junio-2026), con destaque para las variaciones en las tasas de [cambio](/es/glossario/es-cambio) y el mantenimiento de la [tasa base del banco central](/es/glossario/es-selic). Vamos a profundizar en los detalles y entender cómo estos eventos afectan a los inversores individuales.
 
 ## [Dólar](/es/posts/es-cotizaciones-semana-1-junio-2026) y Euro: Tendencia de la Semana
 
-El dólar estadounidense cerró la semana en R$ 5,03, mostrando una ligera estabilidad en relación con la semana anterior. El euro, cotizado a R$ 5,85, también mantuvo una tendencia de estabilidad con variaciones mínimas a lo largo de la semana. Esta relativa calma en las tasas de cambio es un alivio para los importadores y turistas, pero puede significar menos oportunidades para los inversores que apuestan por variaciones cambiarias.
+El dólar estadounidense cerró la semana en €0,90, mostrando una ligera estabilidad en relación con la semana anterior. El euro, cotizado a €1,05, también mantuvo una tendencia de estabilidad con variaciones mínimas a lo largo de la semana. Esta relativa calma en las tasas de cambio es un alivio para los importadores y turistas, pero puede significar menos oportunidades para los inversores que apuestan por variaciones cambiarias.
 
-## Selic e Impacto en las Inversiones
+## Tasa base del banco central e Impacto en las Inversiones
 
-La tasa Selic, actualmente en 12,25% anual, fue mantenida por el Comité de Política Monetária (Copom) del Banco Central. Esta decisión busca controlar la [inflación](/es/glossario/es-inflacion) y mantener la estabilidad económica. Para los inversores, el mantenimiento de la Selic significa que las inversiones con tasas de interés prefijadas, como los títulos del [Tesouro Direto](/es/glossario/es-tesouro-direto), continuarán ofreciendo rendimientos atractivos, especialmente cuando se comparan con otras opciones de inversión de bajo riesgo.
+La tasa base del banco central, actualmente en 12,25% anual, fue mantenida por el Comité de Política Monetaria (Copom) del banco central. Esta decisión busca controlar la [inflación](/es/glossario/es-inflacion) y mantener la estabilidad económica. Para los inversores, el mantenimiento de la tasa base del banco central significa que las inversiones con tasas de interés prefijadas, como los [bonos del gobierno](/es/glossario/es-tesouro-direto), continuarán ofreciendo rendimientos atractivos, especialmente cuando se comparan con otras opciones de inversión de bajo riesgo.
 
 ## Consejo Práctico para el Inversor
 
@@ -35,9 +35,9 @@ Un consejo valioso para los inversores individuales es diversificar sus inversio
 
 ## Qué Esperar para la Próxima Semana
 
-Para la próxima semana, es importante estar atento a las decisiones económicas globales, como las reuniones de la Reserva Federal (FED) en EE.UU. y del Banco Central Europeo (BCE), que pueden influir en las tasas de interés y, consecuentemente, en las tasas de cambio. Además, el desempeño de las principales economías mundiales y las noticias sobre comercio internacional también pueden afectar el mercado financiero brasileño. Con la ayuda de herramientas de gestión de inversiones y manteniéndose informado, los inversores pueden tomar decisiones más acertadas y aprovechar las oportunidades que surgen en el mercado.
+Para la próxima semana, es importante estar atento a las decisiones económicas globales, como las reuniones de la Reserva Federal (FED) en EE.UU. y del Banco Central Europeo (BCE), que pueden influir en las tasas de interés y, consecuentemente, en las tasas de cambio. Además, el desempeño de las principales economías mundiales y las noticias sobre comercio internacional también pueden afectar el mercado financiero. Con la ayuda de herramientas de gestión de inversiones y manteniéndose informado, los inversores pueden tomar decisiones más acertadas y aprovechar las oportunidades que surgen en el mercado.
 
-En resumen, la semana estuvo marcada por estabilidad en las tasas de cambio y mantenimiento de la tasa Selic, lo que puede influir en las estrategias de inversión. Diversificar la cartera, incluyendo inversiones en diferentes monedas, y utilizar herramientas de gestión como FinMoovi puede ser una estrategia inteligente para maximizar los rendimientos y minimizar los riesgos. Manténgase atento a las noticias económicas y ajuste su plan de inversión según los cambios en el mercado.
+En resumen, la semana estuvo marcada por estabilidad en las tasas de cambio y mantenimiento de la tasa base del banco central, lo que puede influir en las estrategias de inversión. Diversificar la cartera, incluyendo inversiones en diferentes monedas, y utilizar herramientas de gestión como FinMoovi puede ser una estrategia inteligente para maximizar los rendimientos y minimizar los riesgos. Manténgase atento a las noticias económicas y ajuste su plan de inversión según los cambios en el mercado.
 
 ---
 **¿Listo para seguir tus inversiones? Prueba [FinMoovi gratis por 7 días](https://finmoovi.com) — en 5 minutos tendrás una visión clara de a dónde va tu dinero.**

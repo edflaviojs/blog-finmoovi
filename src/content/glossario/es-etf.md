@@ -21,14 +21,12 @@ seo:
 ## Qué es
 Un ETF, o Exchange-Traded Fund, es un tipo de [inversión](/es/posts/es-montando-cartera-diversificada-con-r-500) que combina características de los fondos mutuos y las acciones. En otras palabras, es un fondo que se negocia en una [bolsa de valores](/es/glossario/es-bolsa-de-valores), como las acciones, pero ofrece [diversificación](/es/glossario/es-diversificacion) como un fondo mutuo. Esto significa que, al invertir en un ETF, estás comprando una pequeña parte de un portafolio diversificado de acciones, bonos o otros activos.
 
-Un ejemplo para entender mejor: imagina que quieres invertir en el mercado de tecnología, pero no quieres poner todo tu [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) en una sola acción, como la de una empresa de tecnología brasileña. Un ETF de tecnología te permite invertir en un portafolio que incluye acciones de varias empresas de tecnología, reduciendo así el riesgo.
+Un ejemplo para entender mejor: imagina que quieres invertir en el mercado de tecnología, pero no quieres poner todo tu [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) en una sola acción, como la de una empresa de tecnología. Un ETF de tecnología te permite invertir en un portafolio que incluye acciones de varias empresas de tecnología, reduciendo así el riesgo.
 
 ![Qué es](/images/glossario/etf-inline-1.webp)
 
-
-
 ## Cómo funciona
-Un ETF funciona de la siguiente manera: se crea un fondo que compra una cantidad determinada de acciones, bonos u otros activos. Luego, se emiten unidades de este fondo, que se pueden comprar y vender en una bolsa de valores. El precio de cada unidad del ETF se determina por el [valor](/es/glossario/es-valor-financiero) de los activos que componen el fondo. Por ejemplo, si un ETF de tecnología tiene un portafolio con acciones de empresas como Magazine Luiza, Nubank y Stone, el valor del ETF variará según el desempeño de estas empresas en el mercado.
+Un ETF funciona de la siguiente manera: se crea un fondo que compra una cantidad determinada de acciones, bonos u otros activos. Luego, se emiten unidades de este fondo, que se pueden comprar y vender en una bolsa de valores. El precio de cada unidad del ETF se determina por el [valor](/es/glossario/es-valor-financiero) de los activos que componen el fondo. Por ejemplo, si un ETF de tecnología tiene un portafolio con acciones de empresas como una gran cadena minorista, un banco digital y una empresa de pagos, el valor del ETF variará según el desempeño de estas empresas en el mercado.
 
 **Consejo práctico:** Es importante investigar y entender qué activos componen el ETF antes de invertir, ya que esto puede afectar tu exposición al riesgo y tus objetivos de inversión.
 
@@ -47,18 +45,15 @@ Aunque los ETFs ofrecen varias ventajas, también conllevan riesgos. Algunos de 
 
 ![Ventajas](/images/glossario/etf-inline-3.webp)
 
-
-
 **Consejo práctico:** **Es crucial tener una estrategia de inversión a largo plazo y no dejar que las fluctuaciones a corto plazo te asusten.** Además, **diversificar tu cartera** incluyendo diferentes tipos de inversiones puede ayudar a mitigar el riesgo.
 
 ## Ejemplos prácticos
-Para entender mejor cómo funcionan los ETFs, consideremos un ejemplo. Supongamos que tienes un salario de R$5.000 al mes y decides invertir R$1.000 en un ETF de índice de acciones brasileñas. Este ETF sigue el desempeño del Ibovespa, el principal índice de la bolsa de valores de Brasil. Si el Ibovespa sube un 10% en un año, el valor de tu inversión en el ETF también aumentaría aproximadamente un 10%, menos los costos del fondo.
+Para entender mejor cómo funcionan los ETFs, consideremos un ejemplo. Supongamos que tienes un salario de €900 al mes y decides invertir €180 en un ETF que sigue el principal índice de la bolsa de valores. Si ese índice sube un 10 % en un año, el valor de tu inversión en el ETF también aumentaría aproximadamente un 10 %, menos los costos del fondo.
 
-Otro ejemplo sería invertir en un ETF de bonos del gobierno brasileño. Si estás buscando una inversión más conservadora, un ETF de bonos podría ofrecer una rentabilidad más estable, aunque generalmente más baja que la de las acciones.
+Otro ejemplo sería invertir en un ETF de bonos del gobierno. Si estás buscando una inversión más conservadora, un ETF de bonos podría ofrecer una rentabilidad más estable, aunque generalmente más baja que la de las acciones.
 
 ## Cómo empezar
-Para empezar a invertir en ETFs, primero debes abrir una cuenta en una corredora de valores. Luego, investiga y selecciona los ETFs que mejor se ajusten a tus objetivos de inversión y tu tolerancia al riesgo. **Consejo práctico:** **Comienza con pequeñas cantidades** y aumenta gradualmente tu inversión a medida que te sientas más cómodo con el proceso.
+Para empezar a invertir en ETFs, primero debes abrir una cuenta en una correduría. Luego, investiga y selecciona los ETFs que mejor se ajusten a tus objetivos de inversión y tu tolerancia al riesgo. **Consejo práctico:** **Comienza con pequeñas cantidades** y aumenta gradualmente tu inversión a medida que te sientas más cómodo con el proceso.
 
 ## Empieza hoy
 No esperes más para empezar a construir tu futuro financiero. Invertir en ETFs puede ser una excelente manera de diversificar tu cartera y alcanzar tus objetivos financieros. Recuerda, la clave es la disciplina y la paciencia. ¡Así que comienza hoy y observa cómo tu dinero puede crecer con el tiempo!
-

@@ -17,24 +17,24 @@ Dividendos son la parte del beneficio que una empresa distribuye a sus accionist
 
 ## ¿Cómo funciona?
 
-1. La empresa tiene beneficio en el trimestre/año
-2. El consejo decide distribuir parte de ese beneficio
-3. Quien tenía acciones en la "fecha con" recibe los dividendos
-4. El [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) cae directo en tu cuenta de corredor
+1. La empresa tiene beneficio en el trimestre/año  
+2. El consejo decide distribuir parte de ese beneficio  
+3. Quien tenía acciones en la "fecha con" recibe los dividendos  
+4. El [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) cae directo en tu cuenta de corredor  
 
-## Dividendos en Brasil
+## Dividendos
 
-- Son **exentos de Impuesto de Renta** para persona física
-- Empresas brasileñas están obligadas a distribuir como mínimo el 25% del beneficio
-- Sectores que más pagan: bancos, eléctricas, telecomunicaciones
+- Son **exentos de Impuesto de Renta** para persona física  
+- Las empresas están obligadas a distribuir como mínimo el 25 % del beneficio  
+- Sectores que más pagan: bancos, eléctricas, telecomunicaciones  
 
 ## Ejemplo práctico
 
-Si tienes 100 acciones de una empresa que paga R$ 2,00 por acción en dividendos:
-- Recibes: 100 × R$ 2,00 = **R$ 200,00**
-- Sin vender ninguna acción
-- Sin pagar impuesto
+Si tienes 100 acciones de una empresa que paga €0,36 por acción en dividendos:  
+- Recibes: 100 × €0,36 = **€36,00**  
+- Sin vender ninguna acción  
+- Sin pagar impuesto  
 
 ## Estrategia de dividendos
 
-Muchos inversores montan carteras enfocadas en dividendos para generar [renta pasiva](/es/posts/es-guia-completa-de-fondos-inmobiliarios-para-principiantes) mensual. Con R$ 500.000 invertidos en buenas pagadoras, es posible recibir R$ 3.000-5.000/mes.
+Muchos inversores montan carteras enfocadas en dividendos para generar [renta pasiva](/es/posts/es-guia-completa-de-fondos-inmobiliarios-para-principiantes) mensual. Con €90.000 invertidos en buenas pagadoras, es posible recibir €540‑900/mes.

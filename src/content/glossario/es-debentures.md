@@ -11,34 +11,34 @@ publishedAt: 2026-05-19
 readingTime: 2
 ---
 
-## ¿Qué son las Debêntures?
+## ¿Qué son las debentures?
 
-Las Debêntures son títulos de deuda emitidos por empresas. Cuando compras una debênture, estás prestando [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) a la empresa — y ella te paga intereses por ello. Es como un [CDB](/es/glossario/es-cdb), pero emitido por empresas (no bancos).
+Las debentures son títulos de deuda emitidos por empresas. Cuando compras una debenture, estás prestando [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) a la empresa — y ella te paga intereses por ello. Es como un [certificados de depósito](/es/glossario/es-cdb), pero emitido por empresas (no bancos).
 
 ## Tipos
 
-### Debêntures comunes
+### Debentures comunes
 
-- Tributadas por el IR (tabela regresiva)
-- No tienen garantía del FGC
-- Rendimiento generalmente [CDI](/es/glossario/es-cdi) + spread
+- Tributadas por el IR (tabla regresiva)
+- No tienen garantía del **fondo de garantía**
+- Rendimiento generalmente **tasa interbancaria** + spread
 
-### Debêntures incentivadas
+### Debentures incentivadas
 
 - **Exentas de IR** para persona física
 - Financian proyectos de infraestructura
-- Rendimiento: IPCA + tasa fija
+- Rendimiento: **índice de precios al consumidor** + tasa fija
 
 ## Ventajas
 
-- Rendimiento generalmente mayor que CDB y Tesoro
-- Debêntures incentivadas son exentas de IR
+- Rendimiento generalmente mayor que certificados de depósito y **bonos del gobierno**
+- Debentures incentivadas son exentas de IR
 - [Diversificación](/es/posts/es-etfs-que-son-y-como-invertir-de-forma-simple-y-rentable) de la [renta fija](/es/posts/es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026)
 - Plazos variados (2 a 15 años)
 
 ## Riesgos
 
-- **Riesgo de crédito:** empresa puede no pagar (no tiene FGC)
+- **Riesgo de crédito:** empresa puede no pagar (no tiene fondo de garantía)
 - **Riesgo de [liquidez](/es/glossario/es-liquidez):** puede ser difícil vender antes del vencimiento
 - **Riesgo de mercado:** precio puede oscilar si se vende antes
 
@@ -53,7 +53,7 @@ Antes de invertir, verifica:
 
 ## Para quién es indicado
 
-- Inversionistas con patrimonio por encima de R$ 50.000
-- Quien ya tiene Tesoro y CDB y quiere diversificar
-- Quien busca exención de IR (debêntures incentivadas)
+- Inversionistas con patrimonio por encima de €9.000
+- Quien ya tiene bonos del gobierno y certificados de depósito y quiere diversificar
+- Quien busca exención de IR (debentures incentivadas)
 - Perfil moderado a arrojado

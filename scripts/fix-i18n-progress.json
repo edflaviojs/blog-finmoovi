@@ -503,6 +503,10 @@
     "tentativas": 1,
     "ultimaSeveridade": null
   },
+  "en-you-also-forget-to-record-your-expenses.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
   "en-z-score.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
@@ -655,9 +659,21 @@
     "tentativas": 1,
     "ultimaSeveridade": 0
   },
+  "es-cotizaciones-semana-3-junio-2026.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "es-cotizaciones-semana-4-mayo-2026.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
   "es-credito.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
+  },
+  "es-debentures.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
   },
   "es-deuda.md": {
     "tentativas": 1,
@@ -679,17 +695,49 @@
     "tentativas": 1,
     "ultimaSeveridade": null
   },
+  "es-dividendos.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
   "es-educacion-financiera-para-ninos.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
+  },
+  "es-emergencia-financiera.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "es-entiende-la-tasa-interbancaria-y-su-impacto-en-tus.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 2
+  },
+  "es-etf.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
   },
   "es-etfs-que-son-y-como-invertir-de-forma-simple-y-rentable.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
   },
+  "es-evite-compras-por-impulso.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "es-financiamiento.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "es-fondo-de-emergencia.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
   "es-fondo-de-inversion.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
+  },
+  "es-fondos-inmobiliarios.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
   },
   "es-ganancia-de-capital.md": {
     "tentativas": 1,
@@ -719,6 +767,14 @@
     "tentativas": 1,
     "ultimaSeveridade": null
   },
+  "es-indice-finmoovi-costo-de-vida-junio-2026.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 1
+  },
+  "es-inflacion.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 1
+  },
   "es-interes-compuesto.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
@@ -739,13 +795,33 @@
     "tentativas": 1,
     "ultimaSeveridade": null
   },
+  "es-iof.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "es-ipca.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
   "es-juros.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
   },
+  "es-kyc.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
   "es-lc.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
+  },
+  "es-lci-y-lca.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 1
+  },
+  "es-liquidez.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
   },
   "es-margen-de-ganancia.md": {
     "tentativas": 1,
@@ -790,6 +866,10 @@
   "es-p-l-preco-lucro.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
+  },
+  "es-pago-anticipado.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
   },
   "es-patrimonio-neto.md": {
     "tentativas": 1,

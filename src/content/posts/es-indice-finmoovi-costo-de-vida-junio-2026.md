@@ -17,7 +17,7 @@ seo:
   keywords: ["ipca junio 2026","índice de costo de vida","inflación por grupo de gasto","cotización dólar cierre"]
 ---
 
-En junio de 2026, el costo de vida subió 0,16 % según el IPCA general divulgado por el IBGE, indicando un aumento modesto en los precios al consumidor ese mes. Este ajuste refleja la variación acumulada de 4,64 % en los últimos 12 meses, mostrando que la [inflación](/es/glossario/es-inflacion) aún presiona la cartera, aunque el ritmo mensual ha sido relativamente bajo.
+En junio de 2026, el costo de vida subió 0,16 % según el IPCA general divulgado por la oficina de estadísticas, indicando un aumento modesto en los precios al consumidor ese mes. Este ajuste refleja la variación acumulada de 4,64 % en los últimos 12 meses, mostrando que la [inflación](/es/glossario/es-inflacion) aún presiona la cartera, aunque el ritmo mensual ha sido relativamente bajo.
 
 ## IPCA de Junio por grupo de gasto
 
@@ -38,10 +38,10 @@ En junio de 2026, el costo de vida subió 0,16 % según el IPCA general divulg
 
 | Moneda | Cierre del mes |
 | --- | --- |
-| Dólar (USD/BRL) | R$ 5.07 |
-| Euro (EUR/BRL) | R$ 5.78 |
+| Dólar (USD/EUR) | €0,91 |
+| Euro (EUR) | €1,04 |
 
-*Fuentes: IPCA/IBGE (variación por grupo de gasto) y cotizaciones AwesomeAPI de cierre del mes. Índice editorial producido por FinMoovi.*
+*Fuentes: IPCA/oficina de estadísticas (variación por grupo de gasto) y cotizaciones AwesomeAPI de cierre del mes. Índice editorial producido por FinMoovi.*
 
 ## Destacados del mes
 
@@ -49,14 +49,14 @@ En junio de 2026, el costo de vida subió 0,16 % según el IPCA general divulg
 Con un aumento de 0,63 % en el mes y 5,85 % en 12 meses, el sector de vivienda fue el que más subió, impactando directamente el alquiler y las facturas de energía, que pesan en el [presupuesto familiar](/es/posts/es-como-regalar-en-el-dia-del-padre-gastando-poco-7-ideas-que).
 
 ### Alimentación y bebidas registra caída  
-La categoría de alimentación y bebidas retrocedió 0,24 % en el mes, aliviando un poco el bolsillo de los brasileños, aunque aún registra 3,82 % de aumento en los últimos 12 meses.
+La categoría de alimentación y bebidas retrocedió 0,24 % en el mes, aliviando un poco el bolsillo de las personas, aunque aún registra 3,82 % de aumento en los últimos 12 meses.
 
 ## Cómo protegerse
 
-- Revise su presupuesto mensual usando la [Calculadora de Orçamento](/ferramentas/calculadora-orcamento/) para identificar gastos que pueden ajustarse.  
-- Refuerce su reserva de emergencia con la [Calculadora de Reserva de Emergência](/ferramentas/calculadora-reserva/) para enfrentar posibles aumentos de precios.  
-- Aproveche el [Conversor de Moedas](/ferramentas/conversor-moedas/) para monitorear la cotización del dólar (R$ 5,07) y del euro (R$ 5,78) antes de compras internacionales.  
-- Simule inversiones que superen la inflación usando el [Simulador de Investimento](/ferramentas/simulador-investimento/) y proteja su patrimonio.
+- Revise su presupuesto mensual usando la [Calculadora de Presupuesto](/ferramentas/calculadora-orcamento/) para identificar gastos que pueden ajustarse.  
+- Refuerce su reserva de emergencia con la [Calculadora de Reserva de Emergencia](/ferramentas/calculadora-reserva/) para enfrentar posibles aumentos de precios.  
+- Aproveche el [Conversor de Monedas](/ferramentas/conversor-moedas/) para monitorear la cotización del dólar (€0,91) y del euro (€1,04) antes de compras internacionales.  
+- Simule inversiones que superen la inflación usando el [Simulador de Inversión](/ferramentas/simulador-investimento/) y proteja su patrimonio.
 
 ## Preguntas frecuentes
 
@@ -76,4 +76,3 @@ Sí, aunque el ritmo mensual sea bajo, el aumento acumulado de 4,64 % en los �
 **¿Quieres ver cuánto afecta la inflación a TU presupuesto? [Prueba FinMoovi gratis por 7 días](https://finmoovi.com) — en 5 minutos tendrás una visión clara de a dónde va tu dinero.**
 
 *Nota: este es un índice editorial en evolución — las próximas ediciones podrán sumar nuevos recortes y fuentes públicas.*
-<!-- SCHEMA_AUTO:{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué significa la variación de 0,16 % del IPCA en junio?","acceptedAnswer":{"@type":"Answer","text":"Significa que, en promedio, los precios al consumidor aumentaron 0,16 % en el mes, un ritmo de alza relativamente bajo comparado con períodos de mayor inflación."}},{"@type":"Question","name":"¿Por qué la vivienda está presionando el bolsillo?","acceptedAnswer":{"@type":"Answer","text":"El aumento de 0,63 % en los precios de la vivienda refleja reajustes de alquileres y facturas de servicios, que son gastos fijos y de gran peso en el presupuesto familiar."}},{"@type":"Question","name":"¿Cómo ayuda la caída en alimentación al consumidor?","acceptedAnswer":{"@type":"Answer","text":"La reducción de 0,24 % en los precios de alimentos y bebidas disminuye el costo de las compras en el supermercado, ofreciendo un alivio temporal en los gastos mensuales."}},{"@type":"Question","name":"¿La inflación anual de 4,64 % sigue siendo preocupante?","acceptedAnswer":{"@type":"Answer","text":"Sí, aunque el ritmo mensual sea bajo, el aumento acumulado de 4,64 % en los últimos 12 meses indica que los precios siguen subiendo, exigiendo atención al planificación financiera. ¿Quieres ver cuánto afecta la inflación a TU presupuesto? Prueba FinMoovi gratis por 7 días — en 5 minutos tendrás una visión…"}}]} -->

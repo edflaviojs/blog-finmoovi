@@ -17,16 +17,16 @@ La reserva de emergencia es un colchón financiero que te protege de imprevistos
 
 ## ¿Cuánto guardar?
 
-La recomendación es tener entre **3 a 6 meses** de tus gastos mensuales. Si gastas R$ 3.000/mes, tu reserva ideal está entre R$ 9.000 y R$ 18.000.
+La recomendación es tener entre **3 a 6 meses** de tus gastos mensuales. Si gastas €540/mes, tu reserva ideal está entre €1.620 y €3.240.
 
 ## ¿Dónde dejar?
 
 La reserva necesita tener **[liquidez](/es/glossario/es-liquidez) diaria** (acceso inmediato):
-- Tesouro Selic
-- [CDB](/es/glossario/es-cdb) con liquidez diaria (100% [CDI](/es/glossario/es-cdi) o más)
+- bonos del gobierno a corto plazo
+- [certificados de depósito](/es/glossario/es-cdb) con liquidez diaria (100% [tasa interbancaria](/es/glossario/es-cdi) o más)
 - Cuenta remunerada
 
-**Nunca** lo dejes en [ações](/es/glossario/es-acciones), [fundos](/es/glossario/es-fondo-de-inversion) inmobiliarios o inversiones con plazo de rescate.
+**Nunca** lo dejes en [acciones](/es/glossario/es-acciones), [fondos](/es/glossario/es-fondo-de-inversion) inmobiliarios o inversiones con plazo de rescate.
 
 ## ¿Cómo montar?
 

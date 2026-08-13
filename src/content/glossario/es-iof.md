@@ -17,7 +17,7 @@ IOF (Imposto sobre Operações Financeiras) es un impuesto federal que grava div
 
 ## Dónde aparece el IOF
 
-### Inversiones ([renda fixa](/es/glossario/es-renta-fija))
+### Inversiones ([renta fija](/es/glossario/es-renta-fija))
 
 - Incide sobre rendimientos rescatados en menos de 30 días
 - Comienza en 96% el día 1 y llega a 0% el día 30
@@ -25,7 +25,7 @@ IOF (Imposto sobre Operações Financeiras) es un impuesto federal que grava div
 
 ### Tarjeta de [crédito](/es/posts/es-tarjeta-de-credito-vs-tarjeta-de-debito-cual-vale-mas-la) internacional
 
-- 4,38% sobre compras en [moeda](/es/glossario/es-moeda) extranjera
+- 4,38% sobre compras en [moneda](/es/glossario/es-moeda) extranjera
 - Incide sobre el [valor](/es/glossario/es-valor-financiero) total de la compra
 
 ### Préstamos y financiamientos
@@ -40,7 +40,7 @@ IOF (Imposto sobre Operações Financeiras) es un impuesto federal que grava div
 
 ## Consejo práctico
 
-Si invertiste en [CDB](/es/glossario/es-cdb) o Tesouro Selic, espera al menos 30 días para rescatar. Así no pagas IOF sobre los rendimientos. Esta es una regla importante para la reserva de emergencia.
+Si invertiste en [certificados de depósito](/es/glossario/es-cdb) o bonos del gobierno a corto plazo, espera al menos 30 días para rescatar. Así no pagas IOF sobre los rendimientos. Esta es una regla importante para la reserva de emergencia.
 
 ## Tabla regresiva del IOF (inversiones)
 

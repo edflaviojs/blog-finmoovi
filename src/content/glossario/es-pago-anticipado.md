@@ -13,7 +13,7 @@ readingTime: 2
 
 ## ¿Qué es Pago Anticipado?
 
-El pago anticipado es pagar una deuda (financiación, préstamo, [consorcio](/es/glossario/es-consorcio)) antes del plazo final. Cuando haces esto, tienes derecho a un descuento en los [juros](/es/glossario/es-interes) que se cobrarían en el futuro. Es un derecho garantizado por el Código de Defensa del Consumidor.
+El pago anticipado es pagar una deuda (financiación, préstamo, [consorcio](/es/glossario/es-consorcio)) antes del plazo final. Cuando haces esto, tienes derecho a un descuento en los [intereses](/es/glossario/es-interes) que se cobrarían en el futuro. Es un derecho garantizado por el Código de Defensa del Consumidor.
 
 ## Tus derechos
 
@@ -24,16 +24,16 @@ El pago anticipado es pagar una deuda (financiación, préstamo, [consorcio](/es
 
 ## Cuánto ahorras
 
-Ejemplo: financiación de R$ 200.000 en 30 años al 10% a.a.
-- Total que pagaría: ~R$ 632.000
-- Si paga en 15 años: ~R$ 387.000
-- **[Ahorro](/es/glossario/es-ahorro): R$ 245.000** (¡casi el [valor](/es/glossario/es-valor-financiero) de la propiedad!)
+Ejemplo: financiación de €36.000 en 30 años al 10% a.a.
+- Total que pagaría: ~€113.760
+- Si paga en 15 años: ~€69.660
+- **[Ahorro](/es/glossario/es-ahorro): €44.100** (¡casi el [valor](/es/glossario/es-valor-financiero) de la propiedad!)
 
 ## Cuándo vale la pena pagar
 
 ✅ Vale la pena:
 - Los intereses de la deuda son mayores que el [rendimiento](/es/posts/es-montando-cartera-diversificada-con-r-500) de las inversiones
-- Financiación inmobiliaria con [taxa](/es/glossario/es-tasa-financiera) alta (>9% a.a.)
+- Financiación inmobiliaria con [tasa](/es/glossario/es-tasa-financiera) alta (>9% a.a.)
 - Préstamos personales y consignados
 - Cuando tienes dinero parado rindiendo menos
 

@@ -22,11 +22,9 @@ seo:
 El término "KYC" se refiere a "Know Your Customer" (Conoce a tu Cliente), un proceso que las instituciones financieras y empresas utilizan para verificar la identidad de sus clientes y evaluar el riesgo de lavado de [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) o [financiamiento](/es/glossario/es-financiamiento) del terrorismo. En otras palabras, es un conjunto de medidas para asegurarse de que los clientes sean quienes dicen ser y no estén involucrados en actividades ilícitas.
 
 ## Cómo funciona
-El proceso KYC implica la recopilación y verificación de información personal y financiera de los clientes, como nombre, dirección, número de identificación, ingresos y ocupación. Las instituciones financieras utilizan esta información para evaluar el riesgo de cada cliente y determinar si es necesario realizar una verificación más exhaustiva. Por ejemplo, si un cliente tiene un salario de R$5.000 al mes y quiere abrir una cuenta de [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado), la institución financiera puede requerir documentación adicional para verificar su ingreso y ocupación.
+El proceso KYC implica la recopilación y verificación de información personal y financiera de los clientes, como nombre, dirección, número de identificación, ingresos y ocupación. Las instituciones financieras utilizan esta información para evaluar el riesgo de cada cliente y determinar si es necesario realizar una verificación más exhaustiva. Por ejemplo, si un cliente tiene un salario de €900 al mes y quiere abrir una cuenta de [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado), la institución financiera puede requerir documentación adicional para verificar su ingreso y ocupación.
 
 ![Qué es](/images/glossario/kyc-inline-1.webp)
-
-
 
 * Información personal: nombre, dirección, fecha de nacimiento, etc.
 * Información financiera: ingresos, ocupación, historial crediticio, etc.
@@ -43,8 +41,6 @@ El proceso KYC ofrece varias ventajas para las instituciones financieras y los c
 
 ![Ventajas](/images/glossario/kyc-inline-3.webp)
 
-
-
 ## Riesgos
 Aunque el proceso KYC es importante para la seguridad y la confianza en las transacciones financieras, también puede presentar algunos riesgos. Algunos de los riesgos incluyen:
 * La recopilación y almacenamiento de información personal y financiera puede ser vulnerable a la piratería informática y el robo de identidad
@@ -54,10 +50,10 @@ Aunque el proceso KYC es importante para la seguridad y la confianza en las tran
 **Consejo práctico:** Es importante leer y entender los términos y condiciones de la institución financiera antes de abrir una cuenta, para saber qué información se requiere y cómo se utilizará.
 
 ## Ejemplos prácticos
-Por ejemplo, si un cliente quiere abrir una cuenta de [ahorro](/es/posts/es-como-usar-el-cashback-de-forma-inteligente-y-multiplicar-tus) en una institución financiera, el proceso KYC puede incluir la verificación de su identidad y ocupación. Si el cliente tiene un salario de R$3.000 al mes y quiere depositar R$10.000 en su cuenta, la institución financiera puede requerir documentación adicional para verificar el origen de los fondos.
+Por ejemplo, si un cliente quiere abrir una cuenta de [ahorro](/es/posts/es-como-usar-el-cashback-de-forma-inteligente-y-multiplicar-tus) en una institución financiera, el proceso KYC puede incluir la verificación de su identidad y ocupación. Si el cliente tiene un salario de €540 al mes y quiere depositar €1 800 en su cuenta, la institución financiera puede requerir documentación adicional para verificar el origen de los fondos.
 
 * Un cliente que tiene un negocio propio y quiere abrir una cuenta de negocios puede necesitar proporcionar documentación adicional, como el registro de la empresa y los estados financieros.
-* Un cliente que tiene un salario de R$8.000 al mes y quiere invertir en una cuenta de inversión puede necesitar proporcionar documentación adicional, como la declaración de impuestos y el historial crediticio.
+* Un cliente que tiene un salario de €1 440 al mes y quiere invertir en una cuenta de inversión puede necesitar proporcionar documentación adicional, como la declaración de impuestos y el historial crediticio.
 
 **Consejo práctico:** Es importante mantener actualizada la información personal y financiera en la institución financiera, para evitar problemas en el futuro.
 
@@ -69,4 +65,3 @@ Para empezar a utilizar el proceso KYC, es importante entender qué información
 
 ## Empieza hoy
 No espere más para empezar a utilizar el proceso KYC y proteger su identidad y finanzas. **Consejo práctico:** Comience por investigar y comparar diferentes instituciones financieras y sus procesos KYC, y luego recopile y prepare la documentación necesaria para el proceso de verificación. ¡Empiece hoy a proteger su futuro [financiero](/es/posts/es-pierdes-el-control-de-los-gastos-cuando-viajas-usando)!
-
