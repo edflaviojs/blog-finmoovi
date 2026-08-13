@@ -118,8 +118,31 @@ const ogLocale = currentLocale === 'pt' ? 'pt_BR' : currentLocale === 'es' ? 'es
   <meta name="twitter:description" content={description} />
   <meta name="twitter:image" content={ogImage} />
 
-  <!-- Preconnect: Cloudflare Web Analytics (reduz latência do beacon) -->
-  <link rel="preconnect" href="https://static.cloudflareinsights.com" crossorigin />
+  <!--
+    Preconnect da medição — SÓ para quem não recusou.
+
+    Escrito como <link> fixo, ele abria DNS + TLS com o servidor de medição no
+    primeiro milissegundo da página, antes de qualquer código nosso correr —
+    inclusive para quem já tinha carregado em "Recusar". O beacon em si já
+    respeita a recusa desde 12/08/2026; a CONEXÃO não respeitava, e uma conexão
+    aberta a um terceiro já é um contacto que a pessoa recusou.
+
+    Feito por script inline no <head>, mantém-se o adiantamento para quem aceita
+    (corre antes de todo o resto da página) e quem recusou não abre nada.
+  -->
+  <script is:inline>
+    (function () {
+      try {
+        var d = JSON.parse(localStorage.getItem('fm-consent') || 'null');
+        if (d && d.estado === 'recusado') return;
+      } catch (e) { /* sem armazenamento — vale a medição anónima */ }
+      var l = document.createElement('link');
+      l.rel = 'preconnect';
+      l.href = 'https://static.cloudflareinsights.com';
+      l.crossOrigin = '';
+      document.head.appendChild(l);
+    })();
+  </script>
 
   <!-- Preload da imagem LCP (herói/capa) — inicia o download antes de descobrir o <img> -->
   {preloadImage && (
