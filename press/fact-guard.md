@@ -1,7 +1,7 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-08-12T06:11:44.628Z
-**Posts:** 282 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 38
+**Gerado em:** 2026-08-13T06:14:56.906Z
+**Posts:** 291 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 42
 
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
@@ -18,6 +18,10 @@
 
 **7-maneiras-de-economizar-na-volta-as-aulas-do-2-semestre.md**
 - _**Ajuste o limite** de acordo com a realidade da sua família, reservando sempre uma margem para imprevistos._
+
+**como-diversificar-com-ativos-de-renda-variavel-em-2026.md**
+- _Em termos simples, o ganho ou a perda varia de acordo com a valorização ou desvalorização dos ativos, o que traz a possibilidade de retornos superiores ao longo do tempo, mas também implica maior [vol_
+- _**Rebalanceie trimestralmente** – ajuste a proporção entre renda fixa e variável de acordo com seu conforto frente à volatilidade._
 
 **como-escolher-fundos-de-investimento-em-2026-e-dar-o.md**
 - _**Rebalanceamento semestral** – Ajuste a proporção entre fundos de acordo com a performance e seu objetivo._
@@ -63,6 +67,12 @@
 **en-etfs-what-they-are-and-how-to-invest-simply-and-profitably.md**
 - _, IMAB11) in 70/30 or 60/40 ratios, according to your profile._
 
+**en-forgot-to-pay-a-bill-how-to-fix-it-in-2026.md**
+- _She wasn’t alone: according to the OECD, more than 30 % of consumers say they missed a payment deadline at least once in the past year[^1]._
+
+**en-how-to-diversify-with-variable-income-assets-in-2026.md**
+- _**Rebalance quarterly** – adjust the mix between fixed and variable income according to how comfortable you are with volatility._
+
 **en-private-pension-vs-investing-on-your-own-which-is-worth-it.md**
 - _These plans are offered by financial institutions and insurance companies, and can be customized according to the investor's needs and objectives._
 
@@ -106,6 +116,9 @@
 
 **indice-finmoovi-custo-de-vida-junho-2026.md**
 - _Em junho de 2026, o custo de vida subiu 0,16 % segundo o IPCA geral divulgado pelo IBGE, indicando um aumento modesto nos preços ao consumidor naquele mês._
+
+**ja-esqueceu-de-pagar-a-conta-e-ficou-na-mao-como-mudar-isso.md**
+- _Ela não era a única: segundo a OECD, mais de 30 % dos consumidores relatam ter perdido prazos de pagamento pelo menos uma vez no último ano[^1]._
 
 **orcamento-para-casal-dividindo-despesas.md**
 - _No caso de João e Maria, eles podem decidir dividir as despesas de acordo com a porcentagem de seus salários em relação ao total._
