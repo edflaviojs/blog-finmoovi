@@ -1,5 +1,10 @@
 User-agent: *
 Allow: /
+# /status/ está atrás do Cloudflare Access: devolve 302 para a tela de login, e
+# o `noindex` da página nunca chega a ser lido. Sem esta linha o Google gasta
+# rastreio num desvio que nunca dá em página. (Regra mais específica vence o
+# `Allow: /` acima.)
+Disallow: /status/
 
 Sitemap: https://blog.finmoovi.com/sitemap-index.xml
 Sitemap: https://blog.finmoovi.com/sitemap-news.xml
