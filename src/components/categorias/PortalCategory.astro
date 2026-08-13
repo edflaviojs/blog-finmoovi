@@ -117,7 +117,21 @@ const grade = posts.slice(1, 7);
 const resto = posts.slice(7);
 ---
 
-<BaseLayout title={T.title} description={T.desc} alternates={alternates}>
+<!--
+  A imagem do destaque é o elemento LCP desta página (confirmado no relatório
+  do Google). A home e os posts já mandavam este aviso; a categoria era a única
+  que não mandava — e era justamente a que aparecia no relatório. Os três
+  valores têm de bater com os do <img> lá em baixo, senão o navegador baixa
+  duas imagens diferentes em vez de reaproveitar a que já pediu.
+-->
+<BaseLayout
+  title={T.title}
+  description={T.desc}
+  alternates={alternates}
+  preloadImage={destaque?.image}
+  preloadImageSrcset={destaque?.image ? imgSrcset(destaque.image) : undefined}
+  preloadImageSizes="(min-width: 1024px) 1100px, 100vw"
+>
   <Header />
 
   <main class="cat-page">
