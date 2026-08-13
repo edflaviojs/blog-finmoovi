@@ -96,7 +96,13 @@
   /* Text */
   --text-primary: #0d1117;
   --text-secondary: #47546a;
-  --text-tertiary: #7b8798;
+  /* #7b8798 dava 3,4:1 sobre a página (#f4f7fb) e 3,6:1 sobre o card branco —
+     abaixo do mínimo de 4,5:1. Reprovava de uma vez as datas, o "min de leitura",
+     os títulos EM DESTAQUE/FERRAMENTAS e os rótulos USD/BRL da barra de cotações.
+     #5d6a7c dá 5,1:1 na página, 5,5:1 no card e 4,8:1 no bloco #eaf0f7 — o mais
+     claro que passa nos TRÊS fundos do tema claro (o #eaf0f7 é o que aperta). O tema escuro não usa este
+     valor (lá são 4,8:1, já aprovado) e não muda. */
+  --text-tertiary: #5d6a7c;
   --text-link: #2f6fed;
 
   /* Borders */
@@ -107,7 +113,10 @@
   /* Accent */
   --accent-primary: #2f6fed;
   --accent-green: #1a9e5c;
-  --accent-red: #d13c4b;
+  /* Só é usado como COR DE TEXTO no tema claro (o "AGORA" de 11px da tarja de
+     notícia, o % negativo das cotações). #d13c4b dava 4,1:1 sobre o #eaf0f7 da
+     tarja — reprovado. #b52d3c dá 5,4:1 ali e 6,2:1 sobre branco. */
+  --accent-red: #b52d3c;
   --accent-yellow: #9a6700;
   --accent-purple: #8250df;
   --brand-cyan: #0e7490; /* ciano da marca (tema claro: escurecido p/ contraste WCAG >=4.5:1) */
