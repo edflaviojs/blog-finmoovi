@@ -3,6 +3,7 @@ title: "Cómo diversificar con activos de renta variable en 2026"
 description: "Descubre cómo funciona la renta variable, sus beneficios y riesgos, y cómo FinMoovi puede organizar tus inversiones en minutos."
 tickerHeadline: "Renta variable sin misterio"
 image: "/images/posts/como-diversificar-com-ativos-de-renda-variavel-em-2026.webp"
+imageAlt: "Cinta dorada ondulante ascendente sobre fondo azul oscuro, con línea y punto amarillo."
 category: "investimentos"
 locale: "es"
 tags: ["renta variable","inversiones","diversificación","flujo de caja","FinMoovi","riesgos","estrategias","renta variable"]

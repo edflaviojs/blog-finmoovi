@@ -3,6 +3,7 @@ title: "Forgot to Pay a Bill? How to Fix It in 2026"
 description: "Discover how FinMoovi’s Smart Alerts stop missed payments, fees, and stress with offline reminders and voice capture."
 tickerHeadline: "Bills that don’t catch you"
 image: "/images/posts/ja-esqueceu-de-pagar-a-conta-e-ficou-na-mao-como-mudar-isso.webp"
+imageAlt: "Brown wallet, two black calculators, and scattered coins on white marble."
 category: "ferramentas"
 locale: "en"
 tags: ["missed payment","smart alerts","bill management","FinMoovi","personal finance","offline notifications","voice capture","reminders","due dates","invoices","finmoovi","personal finance"]

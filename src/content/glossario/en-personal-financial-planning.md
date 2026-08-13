@@ -4,6 +4,7 @@ definition: "What personal financial planning is and how it shows up in your eve
 title: "personal financial planning - Financial Glossary"
 description: "What personal financial planning is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/planejamento-financeiro-pessoal.webp"
+imageAlt: "Stacks of gold coins, yellow bar chart, and a glass jar with a plant on a dark surface."
 category: "basico"
 tags: ["personal financial planning", "glossary", "finance"]
 author: "FinMoovi"

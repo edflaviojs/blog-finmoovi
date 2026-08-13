@@ -3,6 +3,7 @@ title: "Cómo convertir la hoja de cálculo en aliada de tus finanzas en 2026"
 description: "Descubre cómo usar Excel para controlar gastos mensuales de forma simple, visual y sin complicaciones, y conoce cómo la captura inteligente de FinMoovi acelera el proceso."
 tickerHeadline: "La hoja de cálculo que realmente funcion"
 image: "/images/posts/como-transformar-a-planilha-em-aliada-das-suas-financas-em.webp"
+imageAlt: "Cuaderno marrón, monedas, calculadora gris y plantas verdes sobre fondo blanco."
 category: "dicas"
 locale: "es"
 tags: ["excel para gastos mensuales","finanzas personales","economía","dinero"]

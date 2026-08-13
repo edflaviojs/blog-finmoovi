@@ -3,6 +3,7 @@ title: "¿Olvidaste pagar una factura y te quedaste sin dinero? Cómo cambiarlo 
 description: "Descubre cómo las Alertas Inteligentes de FinMoovi evitan facturas atrasadas, intereses y multas con notificaciones offline y captura por voz."
 tickerHeadline: "La factura que no te atrapa"
 image: "/images/posts/ja-esqueceu-de-pagar-a-conta-e-ficou-na-mao-como-mudar-isso.webp"
+imageAlt: "Mármol blanco con monedas, billetera marrón, dos calculadoras y plantas verdes."
 category: "ferramentas"
 locale: "es"
 tags: ["olvidar pago","alertas inteligentes","control de facturas","FinMoovi","gestión financiera","notificaciones offline","captura por voz","alertas","cuentas por pagar","vencimiento","facturas","finmoovi","finanzas personales"]

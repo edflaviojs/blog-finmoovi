@@ -3,6 +3,7 @@ title: "Já esqueceu de pagar a conta e ficou na mão? Como mudar isso em 2026"
 description: "Descubra como os Alertas Inteligentes do FinMoovi evitam faturas atrasadas, juros e multas com notificações offline e captura por voz."
 tickerHeadline: "A conta que não te pega"
 image: "/images/posts/ja-esqueceu-de-pagar-a-conta-e-ficou-na-mao-como-mudar-isso.webp"
+imageAlt: "Carteira marrom, calculadoras e moedas sobre superfície branca de mármore com folhas verdes."
 category: "ferramentas"
 locale: "pt"
 tags: ["esquecer pagamento","alertas inteligentes","controle de faturas","FinMoovi","gestão financeira","notificações offline","captura por voz","alertas","contas a pagar","vencimento","faturas","finmoovi","finanças pessoais"]

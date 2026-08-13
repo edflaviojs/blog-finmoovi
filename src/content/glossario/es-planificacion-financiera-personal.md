@@ -4,6 +4,7 @@ definition: "Qué es planificación financiera personal y cómo aparece en tu d�
 title: "planificación financiera personal - Glosario Financiero"
 description: "Qué es planificación financiera personal y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/planejamento-financeiro-pessoal.webp"
+imageAlt: "Monedas doradas, barras y planta en frasco sobre fondo oscuro."
 category: "basico"
 tags: ["planificación financiera personal", "glosario", "finanzas"]
 author: "FinMoovi"
