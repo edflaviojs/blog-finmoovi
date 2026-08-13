@@ -1,0 +1,211 @@
+{
+  "slug": "viral-m97XJBm4IdI",
+  "term": "Alfabetização Financeira",
+  "category": "mindset",
+  "keyword": "Alfabetização",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Sabe como a *alfabetização financeira*, que é entender seu dinheiro, salva quinhentos reais todo mês?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "mochila-pedras",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Sabe como a alfabetização financeira, que é entender seu dinheiro, salva quinhentos reais todo mês? Você consegue isso mudando coisas bem pequenas.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "Sabe",
+          "visual": {
+            "type": "statement",
+            "text": "Pequenas mudanças somam"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "entender",
+          "visual": {
+            "type": "icon",
+            "icon": "money"
+          }
+        },
+        {
+          "anchor": "quinhentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          },
+          "sfx": "coin"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Esses gastos aparecem todo dia. É um lanche na rua, uma comprinha sem pensar, uma assinatura que você nem usa.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "Esses",
+          "visual": {
+            "type": "statement",
+            "text": "Gastos passam despercebidos"
+          }
+        },
+        {
+          "anchor": "lanche",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "assinatura",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Eles parecem pequenos. Só que tudo junto no fim do mês, são quinhentos reais sumindo da sua conta.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "Eles",
+          "visual": {
+            "type": "statement",
+            "text": "Parece pouco no começo"
+          }
+        },
+        {
+          "anchor": "tudo",
+          "visual": {
+            "type": "chart",
+            "text": "Pequenos gastos juntos"
+          }
+        },
+        {
+          "anchor": "quinhentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          },
+          "sfx": "alert"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei essas continhas no FinMoovi, e ele me mostrou na hora os quinhentos reais que eu tava pagando sem perceber.",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "joguei",
+          "visual": {
+            "type": "statement",
+            "text": "Veja onde seu dinheiro vai"
+          }
+        },
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Painel do FinMoovi com visão dos gastos e saldo"
+          },
+          "sfx": "keyboard"
+        },
+        {
+          "anchor": "quinhentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu caso? Procura o FinMoovi. São sete dias grátis.",
+      "durationSec": 4.6,
+      "shots": [
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "statement",
+            "text": "Descubra seu caso"
+          }
+        },
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "icon",
+            "icon": "target"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "E segurar esse dinheiro começa com passos simples no seu dia a dia. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "segurar",
+          "visual": {
+            "type": "statement",
+            "text": "Controle começa no dia"
+          }
+        },
+        {
+          "anchor": "passos",
+          "visual": {
+            "type": "icon",
+            "icon": "shield"
+          }
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro sob controle"
+          },
+          "sfx": "ding"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja seu dinheiro em 7 dias",
+    "target": "app"
+  },
+  "totalDurationSec": 43.5
+}
