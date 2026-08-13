@@ -1,0 +1,117 @@
+{
+  "slug": "loop-carro-quebrou-depois-de-anos",
+  "formato": "loop16",
+  "term": "O carro quebrou no meio do mês",
+  "category": "vida",
+  "keyword": "CARRO",
+  "situacao": "carro-quebrou",
+  "gancho": "depois-de-anos",
+  "ganchoFamilia": "depois de anos",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "domino",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Depois de anos tentando, descobri isso. Carro parado na oficina",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "tentando",
+          "visual": {
+            "type": "statement",
+            "text": "Carro parado na oficina"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "descobri",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "domino"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu fiquei apertado com boletos e mercado quando meu carro quebrou",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "fiquei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "domino"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "apertado",
+          "visual": {
+            "type": "statement",
+            "text": "Contas apertaram em casa"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então eu guardei um pouco antes dos imprevistos chegarem",
+      "durationSec": 3.26,
+      "shots": [
+        {
+          "anchor": "guardei",
+          "visual": {
+            "type": "statement",
+            "text": "Guardei antes dos problemas"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "imprevistos",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "domino"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Depois de anos tentando, descobri isso comigo e meu carro já voltou",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "tentando",
+          "visual": {
+            "type": "statement",
+            "text": "Descobri isso comigo"
+          }
+        },
+        {
+          "anchor": "descobri",
+          "visual": {
+            "type": "statement",
+            "text": "Carro parado na oficina"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
