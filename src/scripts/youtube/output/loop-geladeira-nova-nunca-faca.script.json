@@ -1,0 +1,117 @@
+{
+  "slug": "loop-geladeira-nova-nunca-faca",
+  "formato": "loop16",
+  "term": "Trocar a geladeira",
+  "category": "vida",
+  "keyword": "GELADEIRA",
+  "situacao": "geladeira-nova",
+  "gancho": "nunca-faca",
+  "ganchoFamilia": "nunca faça",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ratoeira",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Nunca faça isso com a geladeira. Comigo aconteceu de madrugada.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "geladeira",
+          "visual": {
+            "type": "statement",
+            "text": "Nunca faça isso"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "Comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Ela fazia barulho, e eu adiava a troca, apertado.",
+      "durationSec": 3.26,
+      "shots": [
+        {
+          "anchor": "fazia",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "barulho",
+          "visual": {
+            "type": "statement",
+            "text": "Eu adiei a troca"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Só que a gente ficou sem jeito quando ela parou mesmo.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "jeito",
+          "visual": {
+            "type": "statement",
+            "text": "Ela parou de vez"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "parou",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Agora, quando penso na geladeira, lembro. Nunca faça isso comigo de novo.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "penso",
+          "visual": {
+            "type": "statement",
+            "text": "Nunca faça isso de novo"
+          }
+        },
+        {
+          "anchor": "geladeira",
+          "visual": {
+            "type": "statement",
+            "text": "Nunca faça isso"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
