@@ -1,0 +1,244 @@
+{
+  "slug": "viral-NvOAZbXe04Q",
+  "term": "5 filtros para enriquecer",
+  "category": "mindset",
+  "keyword": "enriquecer",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você sabe por que seu *dinheiro não cresce mesmo tentando enriquecer*?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "mochila-pedras",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você sabe por que seu dinheiro não cresce mesmo tentando enriquecer? Eu vou te mostrar cinco filtros simples pra mudar isso no dia a dia.",
+      "durationSec": 9.6,
+      "shots": [
+        {
+          "anchor": "sabe",
+          "visual": {
+            "type": "statement",
+            "text": "O dinheiro escapa sem perceber"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "enriquecer",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          }
+        },
+        {
+          "anchor": "cinco",
+          "visual": {
+            "type": "number",
+            "text": "5"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "isso",
+          "visual": {
+            "type": "statement",
+            "text": "Filtros para o dia a dia"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Dia corrido faz a gente pagar conta no automático e esquecer pequenas escolhas. Assinatura parada e compra sem pensar acumulam.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "corrido",
+          "visual": {
+            "type": "icon",
+            "icon": "clock"
+          }
+        },
+        {
+          "anchor": "automático",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "Assinatura",
+          "visual": {
+            "type": "statement",
+            "text": "Assinaturas pesam todo mês"
+          }
+        },
+        {
+          "anchor": "acumulam",
+          "visual": {
+            "type": "number",
+            "text": "R$ 100"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Esses filtros mostram que cem reais esquecidos viram novecentos no ano, e o susto aparece quando a soma fica pronta.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "Esses",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          }
+        },
+        {
+          "anchor": "novecentos",
+          "visual": {
+            "type": "counter",
+            "from": 100,
+            "to": 900,
+            "prefix": "R$"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "soma",
+          "visual": {
+            "type": "chart",
+            "text": "Pequenos valores somam"
+          }
+        },
+        {
+          "anchor": "pronta",
+          "visual": {
+            "type": "statement",
+            "text": "A soma finalmente aparece",
+            "sfx": "alert"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "A soma pronta eu vi na calculadora do FinMoovi que mostrou novecentos reais e os cinco filtros. Guardar primeiro, evitar impulso, comparar preços, cuidar das contas e aprender sempre.",
+      "durationSec": 11.2,
+      "shots": [
+        {
+          "anchor": "calculadora",
+          "visual": {
+            "type": "app",
+            "app": "calculadora",
+            "note": "Calculadora do FinMoovi mostrando R$ 900"
+          },
+          "sfx": "keyboard"
+        },
+        {
+          "anchor": "filtros",
+          "visual": {
+            "type": "list",
+            "text": "5 filtros"
+          }
+        },
+        {
+          "anchor": "comparar",
+          "visual": {
+            "type": "statement",
+            "text": "Compare antes de comprar"
+          },
+          "sfx": "click"
+        },
+        {
+          "anchor": "sempre",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "E aprender sempre ajuda a escolher melhor. Quer ver o seu? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 6.5,
+      "shots": [
+        {
+          "anchor": "aprender",
+          "visual": {
+            "type": "statement",
+            "text": "Aprender melhora suas escolhas"
+          }
+        },
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "statement",
+            "text": "Veja o seu resultado"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Seu dinheiro cresce quando você cuida das escolhas do dia a dia. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "cresce",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          }
+        },
+        {
+          "anchor": "escolhas",
+          "visual": {
+            "type": "statement",
+            "text": "Escolhas pequenas fazem diferença"
+          }
+        },
+        {
+          "anchor": "outros",
+          "visual": {
+            "type": "statement",
+            "text": "Assuma o controle"
+          },
+          "sfx": "sparkle"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja onde seu dinheiro está indo",
+    "target": "app"
+  },
+  "totalDurationSec": 50
+}
