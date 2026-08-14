@@ -1,0 +1,117 @@
+{
+  "slug": "loop-dentista-das-criancas-nunca-faca",
+  "formato": "loop16",
+  "term": "O dentista das crianças",
+  "category": "vida",
+  "keyword": "DENTISTA",
+  "situacao": "dentista-das-criancas",
+  "gancho": "nunca-faca",
+  "ganchoFamilia": "nunca faça",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "buraco",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Nunca faça isso com o orçamento do aparelho. Comigo aconteceu ontem.",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "orçamento",
+          "visual": {
+            "type": "statement",
+            "text": "Nunca faça isso"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "aparelho",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu olhei a conta e percebi que estava cavando um buraco.",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "olhei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "statement",
+            "text": "Eu cavei um buraco"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então parei, abri o aplicativo e reorganizei as contas de casa.",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "parei",
+          "visual": {
+            "type": "statement",
+            "text": "Reorganizei as contas"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "aplicativo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Eu nunca faço isso. Primeiro confiro o orçamento do aparelho.",
+      "durationSec": 3.53,
+      "shots": [
+        {
+          "anchor": "Primeiro",
+          "visual": {
+            "type": "statement",
+            "text": "Confiro o orçamento"
+          }
+        },
+        {
+          "anchor": "confiro",
+          "visual": {
+            "type": "statement",
+            "text": "Nunca faça isso"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}

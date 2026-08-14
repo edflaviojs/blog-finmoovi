@@ -70,5 +70,11 @@
     "gancho": "nunca-faca",
     "turno": "manha",
     "em": "2026-08-14T05:53:35.226Z"
+  },
+  {
+    "situacao": "dentista-das-criancas",
+    "gancho": "nunca-faca",
+    "turno": "noite",
+    "em": "2026-08-14T05:57:47.105Z"
   }
 ]
