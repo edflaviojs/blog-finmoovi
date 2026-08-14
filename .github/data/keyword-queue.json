@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-14T09:52:04.737Z",
-  "sourceCursor": 1,
+  "updatedAt": "2026-08-14T11:35:43.314Z",
+  "sourceCursor": 0,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -1692,8 +1692,10 @@
       "category": "glossario",
       "priority": 3,
       "source": "autocomplete",
-      "status": "pending",
-      "addedAt": "2026-08-10T08:20:10.977Z"
+      "status": "used",
+      "addedAt": "2026-08-10T08:20:10.977Z",
+      "usedAt": "2026-08-14T11:35:43.314Z",
+      "usedBy": "glossario-auto-diario"
     },
     {
       "keyword": "custo de vida no paraguai",

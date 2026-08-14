@@ -23,7 +23,7 @@ Cuando vamos al supermercado, es común comprar más de lo que necesitamos, espe
 Un ejemplo práctico es el caso de una persona que gana **€900** por mes y gasta cerca de **€270** en alimentación fuera de casa. Si esa persona comienza a cocinar en casa y planifica sus compras, puede fácilmente reducir ese valor a **€180**, ahorrando **€90** por mes.
 
 ## Organice su lista de compras
-Una lista de compras bien organizada puede ayudar a evitar compras impulsivas y a garantizar que usted compre solo lo que necesita. Aquí están algunas sugerencias para organizar su lista de compras:
+Una lista de compras bien organizada puede ayudar a evitar [compras impulsivas](/es/posts/es-7-pasos-practicos-para-ahorrar-dinero-para-el-dia-del-nino) y a garantizar que usted compre solo lo que necesita. Aquí están algunas sugerencias para organizar su lista de compras:
 * **Consejo práctico:** Haga una lista de compras semanal y divida en categorías, como frutas, verduras, carnes, lácteos, etc.
 * Verifique lo que usted ya tiene en casa antes de ir al supermercado para evitar compras duplicadas.
 * Planifique sus comidas para la semana y haga una lista de compras con base en eso.

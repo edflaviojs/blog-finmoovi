@@ -41,7 +41,7 @@ FinMoovi’s [smart capture](/en/posts/en-how-to-secure-financing-for-your-proje
 By the end of the week you’ll see how much you spent on food compared to the cost of a daily coffee. That perspective helps you tweak habits without doing complex calculations.
 
 ## Example 2: Set Monthly Savings Goals  
-Another simple yet powerful action is to define monthly goals. In FinMoovi you can create an objective like “save the equivalent of one month’s rent” or “cut streaming [costs](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide).” The app generates a progress chart that updates with every expense you log.
+Another simple yet powerful action is to define [monthly goals](/en/posts/en-7-practical-steps-to-save-money-for-children-s-day-2026). In FinMoovi you can create an objective like “save the equivalent of one month’s rent” or “cut streaming [costs](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide).” The app generates a progress chart that updates with every expense you log.
 
 Seeing progress works like a thermometer: when you’re close to the goal, motivation spikes; if you’re far off, a “watch‑out” alert appears. This visual cue turns the abstract idea of [saving](/en/posts/en-how-to-build-a-budget-that-actually-works-in-2026) into something tangible.
 

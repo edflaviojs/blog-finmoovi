@@ -43,7 +43,7 @@ A captura inteligente do FinMoovi permite que você tire uma foto da nota fiscal
 Ao final da semana, você verá quanto gastou em alimentação comparado ao preço de um café diário. Essa percepção ajuda a ajustar hábitos sem precisar de cálculos complexos.
 
 ## Exemplo 2: Defina metas mensais de economia
-Outra ação simples, mas poderosa, é estabelecer metas mensais. No FinMoovi, você pode criar um objetivo como “economizar o equivalente a um aluguel” ou “reduzir gastos com streaming”. O app gera um gráfico de progresso que se atualiza a cada registro de despesa.
+Outra ação simples, mas poderosa, é estabelecer [metas mensais](/posts/7-passos-praticos-para-guardar-dinheiro-para-o-dia-das). No FinMoovi, você pode criar um objetivo como “economizar o equivalente a um aluguel” ou “reduzir gastos com streaming”. O app gera um gráfico de progresso que se atualiza a cada registro de despesa.
 
 A visualização desse progresso funciona como um termômetro: quando você está próximo da meta, o incentivo aumenta; se está distante, o alerta de “ponto de atenção” aparece. Essa abordagem visual transforma a abstração de economizar em algo tangível.
 

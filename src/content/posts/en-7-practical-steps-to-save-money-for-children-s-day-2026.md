@@ -20,7 +20,7 @@ seo:
 
 Imagine the scene: a mailbox full of coupons, your phone buzzing with toy promos that look impossible to resist, and at the same time the electricity bill climbing like it’s on turbo mode. You feel that tightness in your chest thinking that, without a plan, Children’s Day could turn into an “unexpected expense” that messes up the whole month’s budget. The anxiety of picking the perfect gift, combined with the fear of hurting the rest of the bills, is real – and it happens to many people.
 
-That’s exactly where **planning ahead** makes a difference. Instead of leaving everything to the last minute, why not turn that fear into a visual goal, like a thermometer that climbs gradually toward the target? The **FinMoovi** app helps turn this worry into a 5‑minute routine: open the app, use the smart capture to photograph your latest phone bill, and in a few clicks the system automatically categorizes the telecom expense. That way you instantly see how much you can set aside for the gift without jeopardizing other bills.
+That’s exactly where **[planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) ahead** makes a difference. Instead of leaving everything to the last minute, why not turn that fear into a visual goal, like a thermometer that climbs gradually toward the target? The **FinMoovi** app helps turn this worry into a 5‑minute routine: open the app, use the [smart capture](/en/posts/en-how-to-never-miss-a-bill-payment-deadline-simple-5-minute) to photograph your latest phone bill, and in a few clicks the system automatically categorizes the telecom expense. That way you instantly see how much you can set aside for the gift without jeopardizing other bills.
 
 Below is a **30‑day plan** that mixes tiny daily tweaks with the power of goal visualization. Each step takes less than five minutes, and by the end you’ll have the peace of mind of seeing the Children’s Day “bank account” full and ready for celebration.
 
@@ -30,7 +30,7 @@ Below is a **30‑day plan** that mixes tiny daily tweaks with the power of goal
 2. **Create a thermometer in FinMoovi** using the *Monthly Planning / Goals* feature. Set the total amount you want to save and the 30‑day deadline.  
 3. **Watch the progress daily.** Seeing the bar rise feels just like scoring a point in a game.  
 
-> **Quick tip:** Open the app, tap *Goals*, and select “Create new goal.” Choose “Children’s Day” and set the target amount. Then enable daily reminders to check the thermometer.
+> **Quick tip:** Open the app, tap *Goals*, and select “Create new goal.” Choose “Children’s Day” and set the target amount. Then enable daily [reminders](/en/posts/en-forgot-to-pay-a-bill-how-to-fix-it-in-2026) to check the thermometer.
 
 ## 2. Capture and categorize your recurring expenses  
 
@@ -41,7 +41,7 @@ Most budget‑eating items are recurring and often go unnoticed. Use FinMoovi’
 - **Snap photos of receipts** from grocery stores, pharmacies, or utility bills.  
 - **Voice command** (“categorize last expense as groceries”).  
 
-The app reads the amount, assigns the category, and updates your cash flow. You’ll see exactly how much you’re spending in each area and where you can cut.
+The app reads the amount, assigns the category, and updates your [cash flow](/en/glossario/en-cash-flow). You’ll see exactly how much you’re spending in each area and where you can cut.
 
 > **5‑minute micro‑action:** Photograph the latest electricity bill or phone carrier statement, let FinMoovi classify it, and see the total utilities spend. That instantly shows where you could save a “coffee per day.”
 
@@ -68,7 +68,7 @@ These options keep the magic alive but cost far less than a high‑tech toy. Rec
 
 ## 5. Build a “digital piggy bank” with the cash‑flow feature  
 
-FinMoovi lets you create **sub‑accounts** inside the same app. Open a sub‑account called “Children’s Day” and, each week, transfer an amount equal to the price of a coffee per day. This creates an automatic savings habit without needing separate bank accounts.
+FinMoovi lets you create **sub‑accounts** inside the same app. Open a sub‑account called “Children’s Day” and, each week, transfer an amount equal to the price of a coffee per day. This creates an automatic [savings](/en/glossario/en-savings) habit without needing separate bank accounts.
 
 - **Week 1:** 1/7 of the goal.  
 - **Week 2:** +1/7.  
@@ -82,7 +82,7 @@ When a store launches a toy promotion, check whether the discount outweighs the 
 
 ![6. Take advantage of smart promotions and cashback](/images/posts/7-passos-praticos-para-guardar-dinheiro-para-o-dia-das-6.webp)
 
-Also, enable **smart cashback** (if available) on credit cards or payment apps. Direct the return straight to the “Children’s Day” sub‑account. Every cent returned becomes another step toward the target.
+Also, enable **smart cashback** (if available) on [credit](/en/glossario/en-credit) cards or payment apps. Direct the return straight to the “Children’s Day” sub‑account. Every cent returned becomes another step toward the target.
 
 ## 7. Review and adjust every Sunday  
 
@@ -114,9 +114,9 @@ Following this roadmap turns Children’s Day from a possible “financial pinch
 
 ### Why FinMoovi makes a difference  
 
-- **Smart capture** removes the need to type values manually, cutting errors and saving time.  
+- **Smart capture** removes the need to type values manually, cutting errors and [saving](/en/posts/en-how-to-build-a-budget-that-actually-works-in-2026) time.  
 - **Monthly planning / goals** gives a clear, motivating visual, like a thermometer that rises with each deposit.  
-- **Cash‑flow and reports** let you see exactly where your money goes, making pinpoint cuts easy.  
+- **Cash‑flow and [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end)** let you see exactly where your money goes, making pinpoint cuts easy.  
 - **Reminders and alerts** ensure you don’t miss discount or cashback opportunities.  
 
 All of this can be set up in a few clicks, without complex spreadsheets or multiple apps.

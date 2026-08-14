@@ -41,7 +41,7 @@ La captura inteligente de FinMoovi te permite tomar una foto de la factura o dic
 Al final de la semana, verás cuánto gastaste en alimentación comparado con el precio de un café diario. Esta percepción ayuda a ajustar hábitos sin necesidad de cálculos complejos.
 
 ## Ejemplo 2: Define metas mensuales de ahorro
-Otra acción simple, pero poderosa, es establecer metas mensuales. En FinMoovi, puedes crear un objetivo como “ahorrar el equivalente a un alquiler” o “reducir gastos en streaming”. La app genera un gráfico de progreso que se actualiza con cada registro de gasto.
+Otra acción simple, pero poderosa, es establecer [metas mensuales](/es/posts/es-7-pasos-practicos-para-ahorrar-dinero-para-el-dia-del-nino). En FinMoovi, puedes crear un objetivo como “ahorrar el equivalente a un alquiler” o “reducir gastos en streaming”. La app genera un gráfico de progreso que se actualiza con cada registro de gasto.
 
 La visualización de este progreso funciona como un termómetro: cuando estás cerca de la meta, el incentivo aumenta; si estás lejos, aparece una alerta de “punto de atención”. Este enfoque visual transforma la abstracción de ahorrar en algo tangible.
 
