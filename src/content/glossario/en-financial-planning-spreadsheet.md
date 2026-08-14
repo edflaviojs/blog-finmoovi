@@ -4,6 +4,7 @@ definition: "What financial planning spreadsheet is and how it shows up in your 
 title: "financial planning spreadsheet - Financial Glossary"
 description: "What financial planning spreadsheet is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/planejamento-financeiro-planilha.webp"
+imageAlt: "Gold coins, bars, and jars with green plants on dark background"
 category: "basico"
 tags: ["financial planning spreadsheet", "glossary", "finance"]
 author: "FinMoovi"

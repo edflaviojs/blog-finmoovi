@@ -3,6 +3,7 @@ title: "7 Practical Steps to Save Money for Children’s Day 2026"
 description: "Simple 30‑day plan to save for Children’s Day without squeezing your budget."
 tickerHeadline: "A pocket‑friendly trick"
 image: "/images/posts/7-passos-praticos-para-guardar-dinheiro-para-o-dia-das.webp"
+imageAlt: "White text over blue background with yellow and cyan wavy lines."
 category: "orcamento"
 locale: "en"
 tags: ["children's day savings","financial planning","FinMoovi","impulse purchases","monthly goals","expense control","affordable children's day","budget‑friendly kids gifts"]

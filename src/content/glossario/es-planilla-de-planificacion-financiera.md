@@ -4,6 +4,7 @@ definition: "Qué es planilla de planificación financiera y cómo aparece en tu
 title: "planilla de planificación financiera - Glosario Financiero"
 description: "Qué es planilla de planificación financiera y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/planejamento-financeiro-planilha.webp"
+imageAlt: "Monedas doradas y barras formando gráfico ascendente con plantas creciendo en frascos."
 category: "basico"
 tags: ["planilla de planificación financiera", "glosario", "finanzas"]
 author: "FinMoovi"
