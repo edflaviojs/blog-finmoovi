@@ -3,6 +3,7 @@ title: "Tranquilidade financeira com um app em 2026 para seu dia a dia"
 description: "Aprenda como um app de finanças pessoais pode organizar seus gastos, evitar compras por impulso e trazer paz mental em poucos minutos diários."
 tickerHeadline: "O segredo para controlar seu dinheiro"
 image: "/images/posts/tranquilidade-financeira-com-um-app-em-2026-para-seu-dia-a.webp"
+imageAlt: "Fundo azul escuro com formas onduladas douradas e espaço em branco."
 category: "dicas"
 locale: "pt"
 tags: ["app finanças pessoais","finanças pessoais","economia","dinheiro"]

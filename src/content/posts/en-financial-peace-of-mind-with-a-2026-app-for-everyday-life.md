@@ -3,6 +3,7 @@ title: "Financial Peace of Mind with a 2026 App for Everyday Life"
 description: "Discover how a personal‑finance app can tidy up your spending, stop impulse buys, and give you mental calm in just a few minutes a day."
 tickerHeadline: "The secret to controlling your money"
 image: "/images/posts/tranquilidade-financeira-com-um-app-em-2026-para-seu-dia-a.webp"
+imageAlt: "Wavy yellow ribbon on dark blue background with white space below"
 category: "dicas"
 locale: "en"
 tags: ["personal finance app","personal finance","budgeting","money"]
