@@ -20,7 +20,7 @@ It's the state where your finances are organized and you don't live in fear of t
 ### 1. Expenses lower than income
 
 - At least 20% of the salary is left over
-- No use of special check or revolving credit
+- No use of overdraft or revolving credit card
 
 ### 2. Complete emergency reserve
 
@@ -29,15 +29,15 @@ It's the state where your finances are organized and you don't live in fear of t
 
 ### 3. No expensive debts
 
-- Zero special check
-- Zero credit card revolving
+- Zero overdraft
+- Zero revolving credit card
 - [Financing](/en/glossario/en-financing) under control (installment < 30% of income)
 
 ### 4. Growing investments
 
 - Regular monthly contributions
 - Diversified portfolio
-- Return above [inflation](/en/glossario/en-inflation) (IPCA)
+- Return above [inflation](/en/glossario/en-inflation) (consumer price index)
 
 ### 5. Protection (insurances)
 

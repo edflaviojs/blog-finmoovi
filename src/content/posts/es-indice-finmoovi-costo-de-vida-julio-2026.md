@@ -39,15 +39,15 @@ En julio de 2026, el [costo de vida](/es/posts/es-indice-finmoovi-costo-de-vida-
 
 | Moneda | Cierre del mes |
 | --- | --- |
-| Dólar (USD/BRL) | R$ 5.16 |
-| Euro (EUR/BRL) | R$ 5.95 |
+| Dólar (USD/EUR) | €0,93 |
+| Euro (EUR/EUR) | €1,07 |
 
 *Fuentes: IPCA/IBGE (variación por grupo de gasto) y cotizaciones AwesomeAPI de cierre del mes. Índice editorial producido por FinMoovi.*
 
 ## Destacados del mes
 
 ### Vivienda: +0,99 %  
-Es el grupo que más subió, reflejando aumento en los alquileres y [facturas](/es/posts/es-olvidaste-pagar-una-factura-y-te-quedaste-sin-dinero-como) de energía; el bolsillo del brasileño siente el peso en los gastos fijos mensuales.
+Es el grupo que más subió, reflejando aumento en los alquileres y [facturas](/es/posts/es-olvidaste-pagar-una-factura-y-te-quedaste-sin-dinero-como) de energía; el bolsillo de los consumidores siente el peso en los gastos fijos mensuales.
 
 ### Alimentación y bebidas: -0,67 %  
 Es el grupo que más cayó, trayendo alivio en las compras del supermercado, pero la caída aún no compensa el aumento general acumulado.
@@ -56,7 +56,7 @@ Es el grupo que más cayó, trayendo alivio en las compras del supermercado, per
 
 - Usa la [Calculadora de Orçamento](/ferramentas/calculadora-orcamento/) para ajustar gastos e identificar dónde la [inflación](/es/glossario/es-inflacion) está impactando más.  
 - Reevalúa tu reserva de emergencia con la [Calculadora de Reserva de Emergência](/ferramentas/calculadora-reserva/) para garantizar una cobertura suficiente.  
-- Consulta el [Conversor de Moedas](/ferramentas/conversor-moedas/) antes de comprar productos importados o viajar, considerando el dólar a R$ 5,16 y el euro a R$ 5,95.  
+- Consulta el [Conversor de Moedas](/ferramentas/conversor-moedas/) antes de comprar productos importados o viajar, considerando el dólar a €0,93 y el euro a €1,07.  
 - Evalúa opciones de inversión que superen la inflación usando el [Simulador de Investimento](/ferramentas/simulador-investimento/).
 
 ## Preguntas frecuentes

@@ -53,6 +53,6 @@ Presupuesto personal es un plan que muestra cuánto dinero entra, cuánto sale y
 ## Errores comunes
 
 1. No incluir [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo) pequeños (café, delivery)
-2. Olvidar gastos anuales (IPVA, IPTU, seguros)
+2. Olvidar gastos anuales (impuesto anual de circulación, impuesto sobre bienes inmuebles, seguros)
 3. No revisar mensualmente
 4. Hacer un presupuesto muy restrictivo (no se sostiene)

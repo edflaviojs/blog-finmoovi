@@ -17,25 +17,25 @@ Consortium is a system where several people join together to buy something (car,
 
 ## How does it work?
 
-1. You join a consortium group
-2. Pay monthly installments (no [interest](/en/glossario/en-interest), but with administration fee)
-3. Every month there is an assembly with a drawing
-4. Awarded participants receive a letter of credit
-5. You can bid (offer advance installments) to be awarded earlier
+1. You join a consortium group  
+2. Pay monthly installments (no [interest](/en/glossario/en-interest), but with administration fee)  
+3. Every month there is an assembly with a drawing  
+4. Awarded participants receive a letter of credit  
+5. You can bid (offer advance installments) to be awarded earlier  
 
 ## Advantages
 
-- No interest (only administration fee of 10-20% of the total)
-- Forced [savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet) discipline
-- Cash purchase power (letter of credit)
-- Can use FGTS for bidding (properties)
+- No interest (only administration fee of 10-20% of the total)  
+- Forced [savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet) discipline  
+- Cash purchase power (letter of credit)  
+- Can use the severance guarantee fund for bidding (properties)  
 
 ## Disadvantages
 
-- Don't know when you'll be awarded
-- Administration fee can be high
-- [Money](/en/posts/en-30-day-rule-for-purchases) is locked until awarded or the group ends
-- Installments can be adjusted
+- Don't know when you'll be awarded  
+- Administration fee can be high  
+- [Money](/en/posts/en-30-day-rule-for-purchases) is locked until awarded or the group ends  
+- Installments can be adjusted  
 
 ## Consortium vs. [Financing](/en/glossario/en-financing)
 
@@ -48,7 +48,7 @@ Consortium is a system where several people join together to buy something (car,
 
 ## When it's worth it
 
-- When you're not in a hurry to receive the item
-- To change cars in 2-3 years
-- As a form of forced [savings](/en/posts/en-how-to-use-cashback-wisely-and-multiply-your-income)
+- When you're not in a hurry to receive the item  
+- To change cars in 2-3 years  
+- As a form of forced [savings](/en/posts/en-how-to-use-cashback-wisely-and-multiply-your-income)  
 - When you want to avoid financing interest

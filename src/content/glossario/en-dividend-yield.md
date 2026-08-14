@@ -18,16 +18,12 @@ The Dividend Yield is calculated by dividing the annual value of dividends paid 
 
 ![Introduction to Dividend Yield](/images/glossario/en-dividend-yield-inline-1.webp)
 
-
-
 ## Practical Example
-Let's consider an example to understand better. Imagine you bought a share of company "X" for $12.50 (approximately R$ 100,00 at the current exchange rate) and that this company pays an annual dividend of $0.62 (approximately R$ 5,00) per share. In this case, the Dividend Yield would be:
+Let's consider an example to understand better. Imagine you bought a share of company "X" for $12.50 (approximately $20 at the current exchange rate) and that this company pays an annual dividend of $0.62 (approximately $1) per share. In this case, the Dividend Yield would be:
 
 Dividend Yield = ($0.62 / $12.50) * 100 = 5%
 
 ![Practical Example](/images/glossario/en-dividend-yield-inline-3.webp)
-
-
 
 This means that, for every $12.50 invested, you can expect to receive $0.62 in dividends over the year, which corresponds to a 5% return.
 

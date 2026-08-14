@@ -19,16 +19,16 @@ La volatilidad es la intensidad con la que el precio de una inversión sube y ba
 
 | Activo | Volatilidad | Variación típica diaria |
 |--------|-------------|--------------------------|
-| [Poupança](/es/glossario/es-ahorro) | Casi cero | 0 % |
-| [Tesouro Selic](/es/posts/es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026) | Muy baja | 0,03 % |
-| [Ações](/es/glossario/es-acciones) (Ibovespa) | Media | 1‑2 % |
+| [ahorro](/es/glossario/es-ahorro) | Casi cero | 0 % |
+| [bonos del gobierno](/es/posts/es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026) | Muy baja | 0,03 % |
+| [acciones](/es/glossario/es-acciones) (Ibovespa) | Media | 1‑2 % |
 | Bitcoin | Muy alta | 3‑10 % |
 | Meme coins | Extrema | 10‑50 % |
 
 ## ¿Volatilidad es mala?
 
 No necesariamente. Depende de tu perfil:
-- **Conservador:** la volatilidad es estrés. Prefiere [renda fixa](/es/glossario/es-renta-fija).
+- **Conservador:** la volatilidad es estrés. Prefiere [renta fija](/es/glossario/es-renta-fija).
 - **Moderado:** acepta alguna oscilación a [cambio](/es/glossario/es-cambio) de mayor retorno.
 - **Arrojado:** usa la volatilidad a su favor (compra en las caídas).
 
@@ -42,4 +42,4 @@ No necesariamente. Depende de tu perfil:
 
 ## Índice de volatilidad
 
-En Brasil, el principal indicador es el **VIX** (índice del miedo). Cuando el VIX está alto, el mercado está nervioso. Cuando está bajo, está tranquilo.
+En el mercado, el principal indicador es el **VIX** (índice del miedo). Cuando el VIX está alto, el mercado está nervioso. Cuando está bajo, está tranquilo.

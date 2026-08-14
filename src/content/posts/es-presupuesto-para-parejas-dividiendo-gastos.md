@@ -18,28 +18,26 @@ seo:
 ---
 
 ## Definiendo el [Presupuesto](/es/posts/es-5-consejos-para-reorganizar-tus-finanzas-en-vacaciones)
-Para empezar, es importante entender que un [presupuesto](/es/posts/es-como-crear-un-presupuesto-personal-en-5-pasos-simples) eficaz para parejas implica considerar las necesidades, deseos y objetivos financieros de ambos socios. Vamos considerar un ejemplo: João y Maria, una pareja con salarios de R$ 4.000 y R$ 3.500, respectivamente. Ellos necesitan decidir cómo dividir sus [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo) de forma justa.
+Para empezar, es importante entender que un [presupuesto](/es/posts/es-como-crear-un-presupuesto-personal-en-5-pasos-simples) eficaz para parejas implica considerar las necesidades, deseos y objetivos financieros de ambos socios. Vamos considerar un ejemplo: João y Maria, una pareja con salarios de €720 y €630, respectivamente. Ellos necesitan decidir cómo dividir sus [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo) de forma justa.
 
 ### Ejemplo de Gastos
 Aquí está una tabla con los gastos mensuales de la pareja:
-| Categoría | [Valor](/es/glossario/es-valor-financiero) (R$) |
+| Categoría | [Valor](/es/glossario/es-valor-financiero) (€) |
 | --- | --- |
-| Alquiler | 2.500 |
-| Cuentas (luz, agua, etc.) | 500 |
-| Alimentación | 1.500 |
-| Transporte | 800 |
-| Ocio | 1.000 |
-| Otros | 500 |
+| Alquiler | 450 |
+| Cuentas (luz, agua, etc.) | 90 |
+| Alimentación | 270 |
+| Transporte | 144 |
+| Ocio | 180 |
+| Otros | 90 |
 
 ## Dividiendo los Gastos
 Una forma común de dividir los gastos es considerar la proporción de los salarios. En el caso de João y Maria, ellos pueden decidir dividir los gastos de acuerdo con el porcentaje de sus salarios en relación con el total. Por ejemplo:
 
-- João: 4.000 / (4.000 + 3.500) = 53,3%
-- Maria: 3.500 / (4.000 + 3.500) = 46,7%
+- João: 720 / (720 + 630) = 53,3%
+- Maria: 630 / (720 + 630) = 46,7%
 
 ![Dividiendo los Gastos](/images/posts/orcamento-para-casal-dividindo-despesas-2.webp)
-
-
 
 Con base en esto, ellos pueden calcular la parte de cada uno en cada categoría de gasto.
 
@@ -54,17 +52,13 @@ Aquí están los pasos para organizar el presupuesto:
 
 ![Organizando el Presupuesto](/images/posts/orcamento-para-casal-dividindo-despesas-3.webp)
 
-
-
 ## Gestionando las Finanzas
-Para mantener las finanzas en orden, es crucial tener un sistema de control. Esto puede incluir el uso de hojas de cálculo electrónicas o [aplicaciones financieras](/es/posts/es-tecnica-de-los-sobres-digitales-guia-practica-para-2026). El [Banco Central del Brasil](https://www.bcb.gov.br) ofrece información valiosa sobre [gestión financiera](/es/posts/es-montando-cartera-diversificada-con-r-500) y [planificación](/es/posts/es-presupuesto-con-salario-minimo-consejos-practicos).
+Para mantener las finanzas en orden, es crucial tener un sistema de control. Esto puede incluir el uso de hojas de cálculo electrónicas o [aplicaciones financieras](/es/posts/es-tecnica-de-los-sobres-digitales-guia-practica-para-2026). El [el banco central](https://www.bcb.gov.br) ofrece información valiosa sobre [gestión financiera](/es/posts/es-montando-cartera-diversificada-con-r-500) y [planificación](/es/posts/es-presupuesto-con-salario-minimo-consejos-practicos).
 
 ## Comienza con 5 minutos por día
-Para mantener el presupuesto bajo control, dedica algunos minutos todos los días para revisar los gastos y actualizar el presupuesto. Esto puede hacerse durante el desayuno o antes de dormir. Recuerda que la clave para el éxito es la consistencia y la comunicación entre los socios. Visita el sitio web de la [Receita Federal](https://www.gov.br/receitafederal) para obtener más información sobre planificación financiera y tributación.
+Para mantener el presupuesto bajo control, dedica algunos minutos todos los días para revisar los gastos y actualizar el presupuesto. Esto puede hacerse durante el desayuno o antes de dormir. Recuerda que la clave para el éxito es la consistencia y la comunicación entre los socios. Visita el sitio web de la [autoridad fiscal](https://www.gov.br/receitafederal) para obtener más información sobre planificación financiera y tributación.
 
 ![Gestionando las Finanzas](/images/posts/orcamento-para-casal-dividindo-despesas-4.webp)
-
-
 
 ---
 

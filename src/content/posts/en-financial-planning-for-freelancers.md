@@ -30,9 +30,7 @@ Here's an example of how you can categorize your expenses:
 - Variable expenses: $1,500 (dining out, entertainment, etc.)
 - Savings: $1,000 (half of what you earn above average)
 
-![Gastos Fixos e Variáveis](/images/posts/planejamento-financeiro-para-autonomos-2.webp)
-
-
+![Fixed and Variable Expenses](/images/posts/planejamento-financeiro-para-autonomos-2.webp)
 
 **Practical tip:** Try to reduce your variable expenses by 10% to 20% per month to increase your savings.
 
@@ -44,11 +42,9 @@ For example, if your monthly expenses are $3,500, you should have an emergency f
 ## Revenue Management
 As a freelancer, your revenue can vary greatly from month to month. It's essential to have a strategy to manage these variations. This can include diversifying your clients or services offered, so you're not dependent on just one source of revenue.
 
-Additionally, it's crucial to have an effective billing system to ensure you receive what's owed to you. This can include using client management and invoicing tools, like [Serasa](https://www.serasa.com.br), to help monitor and collect debts.
+Additionally, it's crucial to have an effective billing system to ensure you receive what's owed to you. This can include using client management and invoicing tools, like [credit bureaus](https://www.serasa.com.br), to help monitor and collect debts.
 
-![Gestão de Receitas](/images/posts/planejamento-financeiro-para-autonomos-4.webp)
-
-
+![Revenue Management](/images/posts/planejamento-financeiro-para-autonomos-4.webp)
 
 ## Financial Education
 [Financial education](/en/glossario/en-financial-education) is essential for anyone, especially freelancers. This includes understanding basic financial concepts, such as interest, investments, and taxes. There are many resources available online, like [Investopedia](https://www.investopedia.com), that can help improve your financial knowledge.
@@ -60,8 +56,6 @@ Don't delay your financial planning any longer. Start today by recording your ex
 
 ---
 
-![Comece hoje](/images/posts/planejamento-financeiro-para-autonomos-6.webp)
-
-
+![Start Today](/images/posts/planejamento-financeiro-para-autonomos-6.webp)
 
 **Want to see this in action? [Start free with FinMoovi](https://finmoovi.com) — 7 days to organize your finances without complication.**

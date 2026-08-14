@@ -23,19 +23,17 @@ Cuando se habla de [planificación financiera](/es/posts/es-5-consejos-para-reor
 
 ## Cómo funciona la Previsión Privada
 
-La previsión privada es un plan de [inversión](/es/posts/es-guia-completa-para-principiantes-sobre-tesouro-direto) de largo plazo que ofrece una renta mensual después de la jubilación. Estos planes son ofrecidos por instituciones financieras y aseguradoras, y pueden ser personalizados de acuerdo con las necesidades y objetivos del inversor. La previsión privada puede ser realizada a través de planes como el VGBL (Vida Generador de Beneficio Libre) o el PGBL (Plano Generador de Beneficio Libre).
+La previsión privada es un plan de [inversión](/es/posts/es-guia-completa-para-principiantes-sobre-tesouro-direto) de largo plazo que ofrece una renta mensual después de la jubilación. Estos planes son ofrecidos por instituciones financieras y aseguradoras, y pueden ser personalizados de acuerdo con las necesidades y objetivos del inversor. La previsión privada puede realizarse a través de planes de pensiones con ventajas fiscales.
 
 ![Cómo funciona la Previsión Privada](/images/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale--2.webp)
 
-
-
-Un ejemplo de cómo funciona la previsión privada: imagine que usted invierte $500 por mes durante 20 años en un plan de previsión privada con una tasa de interés del 8% anual. Al final de este período, usted habrá invertido alrededor de $120.000, y podrá recibir una renta mensual de aproximadamente $2.500 después de la jubilación.
+Un ejemplo de cómo funciona la previsión privada: imagine que usted invierte **€90** por mes durante 20 años en un plan de previsión privada con una tasa de interés del 8% anual. Al final de este período, usted habrá invertido alrededor de **€21.600**, y podrá recibir una renta mensual de aproximadamente **€450** después de la jubilación.
 
 ## Cómo funciona Invertir por Cuenta Propia
 
 Invertir por cuenta propia significa que usted mismo elige las [inversiones](/es/posts/es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026) y administra su dinero. Esto puede incluir inversiones en [acciones](/es/glossario/es-acciones), títulos, fondos de inversión, bienes raíces, entre otros. Esta opción ofrece más flexibilidad y control sobre las inversiones, pero también exige más conocimiento y habilidad para gestionar los riesgos.
 
-Un ejemplo de cómo funciona invertir por cuenta propia: imagine que usted invierte $1.000 por mes en un fondo de inversión en acciones, con una tasa de administración del 1,5% anual. Si el fondo tiene un desempeño promedio del 10% anual, usted podrá tener un patrimonio de aproximadamente $300.000 después de 10 años.
+Un ejemplo de cómo funciona invertir por cuenta propia: imagine que usted invierte **€180** por mes en un fondo de inversión en acciones, con una tasa de administración del 1,5% anual. Si el fondo tiene un desempeño promedio del 10% anual, usted podrá tener un patrimonio de aproximadamente **€54.000** después de 10 años.
 
 ## Tabla Comparativa
 
@@ -49,8 +47,6 @@ Un ejemplo de cómo funciona invertir por cuenta propia: imagine que usted invie
 | **[Liquidez](/es/glossario/es-liquidez)** | Baja liquidez, ya que los recursos están bloqueados hasta la jubilación | Alta liquidez, ya que usted puede vender inversiones en cualquier momento |
 
 ![Tabla Comparativa](/images/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale--4.webp)
-
-
 
 ## Cuándo Elegir la Previsión Privada
 
@@ -66,8 +62,6 @@ Invertir por cuenta propia es una buena opción para usted si:
 
 ![Cuándo Elegir Invertir por Cuenta Propia](/images/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale--6.webp)
 
-
-
 * Usted tiene experiencia en inversiones y está dispuesto a gestionar sus propios recursos;
 * Usted está buscando una mayor flexibilidad y control sobre sus inversiones;
 * Usted está dispuesto a asumir un mayor riesgo en busca de un mayor rendimiento.
@@ -76,6 +70,6 @@ Invertir por cuenta propia es una buena opción para usted si:
 
 En resumen, la elección entre previsión privada y invertir por cuenta propia depende de su perfil y objetivos financieros. Si usted está buscando una renta mensual garantizada y no tiene experiencia en inversiones, la previsión privada puede ser la mejor opción. Por otro lado, si usted tiene experiencia en inversiones y está buscando una mayor flexibilidad y control, invertir por cuenta propia puede ser la mejor elección.
 
-Independientemente de la elección, es importante recordar que el seguimiento y el monitoreo de las inversiones son fundamentales para alcanzar los objetivos financieros. El FinMoovi es una herramienta útil para seguir sus inversiones y tener una visión clara de su patrimonio. Con el FinMoovi, usted puede tener acceso a información en tiempo real sobre sus inversiones, además de recibir alertas y notificaciones personalizadas para ayudarlo a tomar decisiones informadas.
+Independientemente de la elección, es importante recordar que el seguimiento y el monitoreo de las inversiones son fundamentales para alcanzar los objetivos financieros. **FinMoovi** es una herramienta útil para seguir sus inversiones y tener una visión clara de su patrimonio. Con FinMoovi, usted puede tener acceso a información en tiempo real sobre sus inversiones, además de recibir alertas y notificaciones personalizadas para ayudarlo a tomar decisiones informadas.
 
-Recuerde que la [educación financiera](/es/glossario/es-educacion-financiera) es fundamental para tomar decisiones informadas sobre sus inversiones. Además, es importante consultar a un profesional financiero antes de tomar cualquier decisión. Con la ayuda del FinMoovi y de un profesional financiero, usted puede alcanzar sus objetivos financieros y tener una jubilación tranquila y segura.
+Recuerde que la [educación financiera](/es/glossario/es-educacion-financiera) es fundamental para tomar decisiones informadas sobre sus inversiones. Además, es importante consultar a un profesional financiero antes de tomar cualquier decisión. Con la ayuda de FinMoovi y de un profesional financiero, usted puede alcanzar sus objetivos financieros y tener una jubilación tranquila y segura.

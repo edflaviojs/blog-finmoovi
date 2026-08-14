@@ -13,7 +13,7 @@ readingTime: 2
 
 ## ¿Qué es Score de [Crédito](/es/posts/es-tarjeta-de-credito-vs-tarjeta-de-debito-cual-vale-mas-la)?
 
-El score de [crédito](/es/glossario/es-credito) es una puntuación de 0 a 1000 que los burós de crédito (Serasa, SPC, Boa Vista) otorgan a usted. Esta puntuación indica a bancos y comercios cuál es la probabilidad de que usted pague sus cuentas a tiempo.
+El score de [crédito](/es/glossario/es-credito) es una puntuación de 0 a 1000 que los burós de crédito otorgan a usted. Esta puntuación indica a bancos y comercios cuál es la probabilidad de que usted pague sus cuentas a tiempo.
 
 ## Rangos de score
 
@@ -30,18 +30,18 @@ El score de [crédito](/es/glossario/es-credito) es una puntuación de 0 a 1000 
 - Pagar cuentas a tiempo
 - Tener historial largo de buen pago
 - Tener cuentas a su nombre (luz, teléfono)
-- Cadastro Positivo activo
+- Registro positivo activo
 
 **Disminuye:**
 - Retrasar pagos
-- Tener nombre negativado (SPC/Serasa)
+- Tener nombre negativado (burós de crédito)
 - Muchas consultas de crédito en poco tiempo
 - Usar mucho del límite de la tarjeta
 
 ## ¿Cómo mejorar su score
 
 1. Pague todas las cuentas a tiempo (incluso las pequeñas)
-2. Active el Cadastro Positivo en Serasa
+2. Active el registro positivo
 3. Negocie y liquide deudas pendientes
 4. Evite solicitar crédito en muchos lugares al mismo tiempo
 5. Mantenga sus datos de registro actualizados
