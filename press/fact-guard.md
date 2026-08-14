@@ -1,7 +1,7 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-08-13T06:14:56.906Z
-**Posts:** 291 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 42
+**Gerado em:** 2026-08-14T06:11:10.873Z
+**Posts:** 300 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 45
 
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
@@ -25,6 +25,9 @@
 
 **como-escolher-fundos-de-investimento-em-2026-e-dar-o.md**
 - _**Rebalanceamento semestral** – Ajuste a proporção entre fundos de acordo com a performance e seu objetivo._
+
+**como-montar-seu-orcamento-familiar-usando-excel-e-apps.md**
+- _- **Visibilidade total**: você pode ver todas as receitas e despesas em um único quadro, arrastar linhas e criar tabelas dinâmicas conforme a necessidade._
 
 **como-montar-um-orcamento-que-realmente-funciona-em-2026.md**
 - _Ajuste conforme a realidade._
@@ -66,6 +69,9 @@
 
 **en-etfs-what-they-are-and-how-to-invest-simply-and-profitably.md**
 - _, IMAB11) in 70/30 or 60/40 ratios, according to your profile._
+
+**en-finmoovi-cost-of-living-index-july-2026.md**
+- _In July 2026, the [cost of living](/en/posts/en-finmoovi-cost-of-living-index-june-2026) rose 0,07 % according to the IPCA, indicating a modest increase in consumer prices for the month._
 
 **en-forgot-to-pay-a-bill-how-to-fix-it-in-2026.md**
 - _She wasn’t alone: according to the OECD, more than 30 % of consumers say they missed a payment deadline at least once in the past year[^1]._
@@ -113,6 +119,9 @@
 
 **es-revisite-su-presupuesto.md**
 - _La revisión del [presupuesto](/es/posts/es-como-crear-un-presupuesto-personal-en-5-pasos-simples) es una etapa crucial en este proceso, ya que nos permite identificar áreas donde podemos mejorar y aju_
+
+**indice-finmoovi-custo-de-vida-julho-2026.md**
+- _Em julho de 2026, o custo de vida subiu 0,07 % segundo o [IPCA](/glossario/ipca), indicando um aumento discreto nos preços ao consumidor no mês._
 
 **indice-finmoovi-custo-de-vida-junho-2026.md**
 - _Em junho de 2026, o custo de vida subiu 0,16 % segundo o IPCA geral divulgado pelo IBGE, indicando um aumento modesto nos preços ao consumidor naquele mês._
