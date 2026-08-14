@@ -196,5 +196,23 @@
     ],
     "veredito": "1. **O LOOP — 6/10**  \nPrimeiro e último quadro têm a mesma composição e o mesmo título (“Carro parado na oficina”), mas o texto inferior muda de **“Depois de anos”** para **“carro já voltou”**. Essa diferença pode denunciar o reinício.\n\n2. **A FAIXA DE BAIXO — 4/10**  \nSim. Em vários quadros, as legendas ficam no terço inferior — especialmente **0,1s, 2,4s, 4,8s e 16,8s**. É uma região arriscada para a interface do Shorts/Reels.\n\n3. **TEXTO POR CIMA DE TEXTO — 7/10**  \nNão há uma sobreposição grave evidente, mas alguns textos parecem fragmentados (“tentando, descobri isso”, “mercado quando meu”), o que pode deixar a leitura estranha em um frame parado.\n\n4. **LEGIBILIDADE — 8/10**  \nOs títulos principais são grandes, fortes e com bom contraste. As legendas menores têm contraste suficiente, mas poderiam ganhar um pouco mais de tamanho para celular.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — 6/10**  \nHá bastante espaço vazio, principalmente abaixo dos elementos principais. O fundo ocupa muito espaço sem acrescentar informação.\n\n6. **COERÊNCIA — 9/10**  \nOs quadros parecem claramente do mesmo vídeo: mesma identidade visual, cores, tipografia e lógica de história. A sequência também avança de forma compreensível.\n\n7. **TESTE CENTRAL — 6/10**  \n**Pelos quadros parados, parece mais uma sequência de slides bem produzidos do que um vídeo profissional**, porque cada cena é muito estática e organizada como uma arte.\n\nNOTA GERAL: 7\nPROBLEMA 1: O loop — 16,8s: o texto inferior é diferente do primeiro quadro, então o reinício pode ser percebido.\nPROBLEMA 2: A faixa de baixo — principalmente 0,1s a 7,2s: legendas importantes estão muito próximas da área coberta pela interface.\nPROBLEMA 3: Tela vazia — vários quadros têm grandes áreas de fundo sem informação visual.\nPRIMEIRA COISA A MUDAR: Fazer o último quadro visualmente idêntico ao primeiro, inclusive a posição e o conteúdo do texto inferior.",
     "quando": "2026-08-13T06:05:26.852Z"
+  },
+  {
+    "slug": "loop-geladeira-nova-nunca-faca",
+    "formato": "loop16",
+    "nota": 8.2,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      2.5,
+      5,
+      7.5,
+      10,
+      12.5,
+      14.9,
+      17.4
+    ],
+    "veredito": "1. **O LOOP — 9,5/10**  \n   O primeiro e o último quadro são praticamente iguais: mesmo fundo, logo, caixa e texto **“Nunca faça isso”**, na mesma posição. É um ótimo ponto para loop. Pelos quadros, não dá para saber se há alguma diferença de movimento/transição.\n\n2. **A FAIXA DE BAIXO — 6,5/10**  \n   As legendas ficam relativamente baixas, principalmente nos quadros da segunda linha. No celular, podem ficar parcialmente cobertas pelos elementos da interface. O título principal está bem protegido.\n\n3. **TEXTO POR CIMA DE TEXTO — 9/10**  \n   Não vejo frases sobrepostas nem palavras cortadas. O texto está bem separado. Há repetição visual de **“Nunca faça isso”**, mas não é sobreposição.\n\n4. **LEGIBILIDADE — 8,5/10**  \n   O texto principal é grande, pesado e tem bom contraste. As legendas menores são legíveis, mas o texto cinza sobre o fundo roxo perde um pouco de força em celular.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — 6,5/10**  \n   Há bastante espaço vazio, especialmente na metade inferior de vários quadros. O visual é limpo, mas alguns momentos parecem ter pouca informação ocupando a tela.\n\n6. **COERÊNCIA — 9/10**  \n   Os quadros claramente pertencem ao mesmo vídeo: mesma identidade visual, mesma posição dos elementos e progressão da frase. A sequência conta uma pequena história: **geladeira → troca → barulho → parou → de novo**.\n\n7. **TESTE CENTRAL — 7/10**  \n   Pelos quadros parados, parece **um vídeo com estética de slides bem produzidos**, mais do que um vídeo profissional cheio de elementos visuais. A identidade é boa, mas há muito quadro estático e espaço vazio.\n\nNOTA GERAL: 8,2\nPROBLEMA 1: A faixa de legendas está baixa demais, principalmente nos quadros de 14,9s e 17,4s.\nPROBLEMA 2: Há espaço vazio demais em vários quadros, deixando o conteúdo com aparência de slide.\nPROBLEMA 3: O texto cinza das legendas perde contraste em alguns momentos, especialmente contra o fundo roxo.\nPRIMEIRA COISA A MUDAR: Subir a faixa das legendas para uma área mais segura do celular e usar o espaço vazio para dar mais presença visual ao conteúdo.",
+    "quando": "2026-08-14T05:56:34.958Z"
   }
 ]
