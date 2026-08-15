@@ -1,0 +1,117 @@
+{
+  "slug": "loop-emprestimo-por-telefone-voces-viram",
+  "formato": "loop16",
+  "term": "O empréstimo que o banco ofereceu",
+  "category": "vida",
+  "keyword": "EMPRÉSTIMO",
+  "situacao": "emprestimo-por-telefone",
+  "gancho": "voces-viram",
+  "ganchoFamilia": "vocês viram",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "areia-movedica",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Gente, vocês viram que o banco me ligou oferecendo dinheiro fácil?",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "vocês",
+          "visual": {
+            "type": "statement",
+            "text": "Banco ofereceu dinheiro"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "viram",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "areia-movedica"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Comigo aconteceu. Eu aceitei, e lá em casa o aperto aumentou.",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "Comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "areia-movedica"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "Aceitei e o aperto aumentou"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então eu parei, respirei, e agora confiro tudo antes de pegar.",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "parei",
+          "visual": {
+            "type": "statement",
+            "text": "Agora confiro antes de pegar"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "respirei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "areia-movedica"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Dinheiro fácil, quando chega, me faz lembrar do banco ligando.",
+      "durationSec": 3.53,
+      "shots": [
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro fácil me lembra"
+          }
+        },
+        {
+          "anchor": "fácil",
+          "visual": {
+            "type": "statement",
+            "text": "Banco ofereceu dinheiro"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
