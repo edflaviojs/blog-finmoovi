@@ -250,5 +250,23 @@
     ],
     "veredito": "1. **O LOOP — 9/10**  \nO primeiro e o último quadro têm praticamente o mesmo cenário e a mesma manchete, na mesma posição. O que muda é a frase menor na parte inferior: começa com **“Gente, vocês viram”** e termina com **“sobe?”**. Pelos quadros, o loop parece bem planejado, mas não dá para saber se a transição realmente esconde essa diferença.\n\n2. **A FAIXA DE BAIXO — 9/10**  \nNão há informação importante no terço inferior extremo. As frases ficam mais para o meio da tela, deixando espaço seguro para a interface do Shorts/Reels.\n\n3. **TEXTO POR CIMA DE TEXTO — 8/10**  \nNão há frases claramente sobrepostas. Porém, no quadro de **4,4s**, o elemento gráfico central interfere visualmente na frase **“Eu morava de”**, reduzindo um pouco a leitura.\n\n4. **LEGIBILIDADE — 9/10**  \nAs letras são grandes, grossas e com bom contraste. O destaque em azul/rosa ajuda bastante. O texto menor continua legível no celular, embora pudesse ter um pouco mais de contraste em alguns quadros.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — 7/10**  \nHá bastante espaço vazio na metade inferior dos quadros. O visual não fica feio, mas algumas telas parecem ter muito “ar” sem informação ou elemento visual.\n\n6. **COERÊNCIA — 9/10**  \nTodos os quadros têm o mesmo estilo visual, logo, fundo, tipografia e linguagem. A história avança claramente: aluguel → dinheiro indo embora → consequência → casa/economia.\n\n7. **TESTE CENTRAL — 8/10**  \nParece mais um **vídeo profissional de motion graphics** do que slides, mas os quadros com muito espaço vazio e textos estáticos ainda dão uma leve sensação de apresentação em cartões.\n\n**NOTA GERAL: 8,5/10**  \n**PROBLEMA 1: Muito espaço vazio na parte inferior, principalmente nos quadros de 4,4s e 13,1s.**  \n**PROBLEMA 2: No quadro de 4,4s, o elemento gráfico central compete com a frase “Eu morava de”.**  \n**PROBLEMA 3: O primeiro e o último quadro não têm a mesma frase inferior, então o loop depende da transição para esconder essa diferença.**  \n**PRIMEIRA COISA A MUDAR: Reduziria o espaço vazio e deixaria o texto/elementos visuais ocuparem melhor a tela sem entrar na área da interface.**",
     "quando": "2026-08-15T04:59:13.209Z"
+  },
+  {
+    "slug": "loop-emprestimo-por-telefone-voces-viram",
+    "formato": "loop16",
+    "nota": 7.5,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      2.6,
+      5.1,
+      7.7,
+      10.3,
+      12.9,
+      15.4,
+      17.9
+    ],
+    "veredito": "1. **O LOOP — 8/10**  \nO primeiro e o último quadro têm praticamente o mesmo visual: mesmo fundo e o card **“Banco ofereceu dinheiro”** no mesmo lugar. A diferença é o texto inferior: começa com **“Gente, vocês viram”** e termina com **“ligando.”**. Pelos quadros, o loop visual parece bem preparado.\n\n2. **A FAIXA DE BAIXO — 5/10**  \nHá texto importante no terço inferior em **todos os quadros**. As legendas ficam relativamente baixas e podem ser parcialmente cobertas pela interface do Shorts/Reels.\n\n3. **TEXTO POR CIMA DE TEXTO — 8/10**  \nNão vejo frases claramente sobrepostas ou palavras cortadas. O grande **“EMPRÉSTIMO”** ao fundo compete um pouco visualmente com os elementos principais, mas não chega a causar sobreposição grave.\n\n4. **LEGIBILIDADE — 8/10**  \nOs textos principais são grandes, brancos e com bom contraste. As legendas inferiores são menores, mas ainda parecem legíveis em celular. O problema maior é a posição, não o tamanho.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — 6/10**  \nOs quadros 2 e 6 têm bastante área vazia, especialmente acima do elemento central. O fundo ajuda a não parecer totalmente vazio, mas ainda existe espaço que poderia ser melhor aproveitado.\n\n6. **COERÊNCIA — 9/10**  \nOs quadros claramente pertencem ao mesmo vídeo: mesma identidade visual, tipografia, cores e estrutura. A narrativa também avança de forma compreensível: oferta → ligação → aceitação → arrependimento/cuidado → conferência → nova ligação.\n\n7. **TESTE CENTRAL — 8/10**  \nParece mais um **vídeo profissional com identidade visual** do que uma sequência de slides, embora os quadros muito estáticos e centralizados ainda deem um leve aspecto de apresentação.\n\nNOTA GERAL: 7.5\nPROBLEMA 1: Texto importante no terço inferior em praticamente todos os quadros, especialmente em 0.1s, 2.6s, 5.1s e 7.7s.\nPROBLEMA 2: Os quadros 2.6s e 12.9s têm áreas grandes visualmente vazias.\nPROBLEMA 3: O último quadro está em 17.9s, embora o vídeo esteja descrito como um Short de 16 segundos.\nPRIMEIRA COISA A MUDAR: Subir as legendas inferiores para uma zona segura, preservando o loop visual entre o primeiro e o último quadro.",
+    "quando": "2026-08-15T05:04:06.385Z"
   }
 ]
