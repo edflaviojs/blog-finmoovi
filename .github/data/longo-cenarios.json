@@ -25,13 +25,12 @@
     {
       "slug": "dono-dois-homens-mesma-idade-mesmo-trabalho",
       "cenarios": [
-        "o boleto",
         "a aposentadoria"
       ],
-      "fio": "relogio",
+      "fio": "ampulheta",
       "elenco": "uma mãe e uma filha já adulta, cada uma na sua fase da vida",
       "funcaoDoApp": "categorias",
-      "promessa": "Vou te mostrar como uma escolha de longo prazo muda o caminho da aposentadoria de uma família",
+      "promessa": "Vou te mostrar como uma escolha simples na previdência pode separar o dinheiro que só guarda do dinheiro que ajuda na aposentadoria",
       "em": "2026-08-15"
     }
   ]
