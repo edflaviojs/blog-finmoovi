@@ -1,7 +1,7 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-08-14T06:11:10.873Z
-**Posts:** 300 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 45
+**Gerado em:** 2026-08-15T05:22:04.073Z
+**Posts:** 306 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 45
 
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
@@ -71,7 +71,7 @@
 - _, IMAB11) in 70/30 or 60/40 ratios, according to your profile._
 
 **en-finmoovi-cost-of-living-index-july-2026.md**
-- _In July 2026, the [cost of living](/en/posts/en-finmoovi-cost-of-living-index-june-2026) rose 0,07 % according to the IPCA, indicating a modest increase in consumer prices for the month._
+- _07 % according to the consumer price index (CPI), indicating a modest increase in consumer prices for the month._
 
 **en-forgot-to-pay-a-bill-how-to-fix-it-in-2026.md**
 - _She wasn’t alone: according to the OECD, more than 30 % of consumers say they missed a payment deadline at least once in the past year[^1]._
@@ -115,7 +115,7 @@
 
 **es-revision-de-presupuesto.md**
 - _Después de verificar tus gastos, ajústalos de acuerdo con tus necesidades y objetivos._
-- _Verifica tus ingresos de los últimos 6 meses y ajústalos de acuerdo con tus necesidades y objetivos._
+- _Verifica tus ingresos de los últimos 6 meses y ajústalos de acuerdo con tus necesidades y objetivos._
 
 **es-revisite-su-presupuesto.md**
 - _La revisión del [presupuesto](/es/posts/es-como-crear-un-presupuesto-personal-en-5-pasos-simples) es una etapa crucial en este proceso, ya que nos permite identificar áreas donde podemos mejorar y aju_
