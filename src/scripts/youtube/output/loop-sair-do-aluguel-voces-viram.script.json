@@ -1,0 +1,117 @@
+{
+  "slug": "loop-sair-do-aluguel-voces-viram",
+  "formato": "loop16",
+  "term": "Sair do aluguel",
+  "category": "vida",
+  "keyword": "ALUGUEL",
+  "situacao": "sair-do-aluguel",
+  "gancho": "voces-viram",
+  "ganchoFamilia": "vocês viram",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ralo",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Gente, vocês viram que o aluguel sobe e continua assim?",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "vocês",
+          "visual": {
+            "type": "statement",
+            "text": "O aluguel sobe sempre"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "viram",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu morava de aluguel e todo ano via meu dinheiro escorrer.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "morava",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "aluguel",
+          "visual": {
+            "type": "statement",
+            "text": "Meu dinheiro escorria"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então comecei a guardar um pouquinho pensando mesmo na nossa casa.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "comecei",
+          "visual": {
+            "type": "statement",
+            "text": "Comecei a guardar"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "guardar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Hoje vejo o aluguel e lembro. Vocês viram que sobe?",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "aluguel",
+          "visual": {
+            "type": "statement",
+            "text": "Vocês viram que sobe?"
+          }
+        },
+        {
+          "anchor": "lembro",
+          "visual": {
+            "type": "statement",
+            "text": "O aluguel sobe sempre"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}

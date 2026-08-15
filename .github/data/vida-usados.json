@@ -76,5 +76,11 @@
     "gancho": "nunca-faca",
     "turno": "noite",
     "em": "2026-08-14T05:57:47.105Z"
+  },
+  {
+    "situacao": "sair-do-aluguel",
+    "gancho": "voces-viram",
+    "turno": "manha",
+    "em": "2026-08-15T04:55:46.487Z"
   }
 ]
