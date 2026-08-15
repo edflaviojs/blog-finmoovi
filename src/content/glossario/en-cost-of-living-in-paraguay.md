@@ -4,6 +4,7 @@ definition: "What cost of living in Paraguay is and how it shows up in your ever
 title: "cost of living in Paraguay - Financial Glossary"
 description: "What cost of living in Paraguay is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/custo-de-vida-no-paraguai.webp"
+imageAlt: "Gold coins stacked in columns beside a glass jar filled with coins and a green sprout, on a dark background."
 category: "basico"
 tags: ["cost of living in Paraguay", "glossary", "finance"]
 author: "FinMoovi"

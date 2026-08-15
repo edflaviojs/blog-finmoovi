@@ -4,6 +4,7 @@ definition: "Qué es costo de vida en Paraguay y cómo aparece en tu día a día
 title: "costo de vida en Paraguay - Glosario Financiero"
 description: "Qué es costo de vida en Paraguay y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/custo-de-vida-no-paraguai.webp"
+imageAlt: "Monedas doradas apiladas y frasco con planta sobre fondo oscuro."
 category: "basico"
 tags: ["costo de vida en Paraguay", "glosario", "finanzas"]
 author: "FinMoovi"
