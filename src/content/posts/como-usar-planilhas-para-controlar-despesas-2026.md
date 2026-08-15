@@ -3,6 +3,7 @@ title: "Como usar planilhas para controlar despesas (2026)"
 description: "Descubra como organizar suas despesas com planilhas simples e o app FinMoovi, ganhando clareza e paz financeira em poucos minutos, sem precisar ser especialista."
 tickerHeadline: "Planilha que simplifica seu dinheiro"
 image: "/images/posts/como-usar-planilhas-para-controlar-despesas-2026.webp"
+imageAlt: "Caderno marrom, calculadora, moedas e plantas sobre fundo branco."
 category: "dicas"
 locale: "pt"
 tags: ["excel despesas","finanças pessoais","economia","dinheiro"]

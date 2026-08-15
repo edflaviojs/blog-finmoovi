@@ -3,6 +3,7 @@ title: "How to Use Spreadsheets to Track Expenses (2026)"
 description: "Learn how to organize your expenses with simple spreadsheets and the FinMoovi app, gaining clarity and financial peace in minutes—no expertise needed."
 tickerHeadline: "Spreadsheet that simplifies your money"
 image: "/images/posts/como-usar-planilhas-para-controlar-despesas-2026.webp"
+imageAlt: "Brown notebook, calculator, coins, and green plants on white marble surface."
 category: "dicas"
 locale: "en"
 tags: ["excel expenses","personal finance","budgeting","money"]

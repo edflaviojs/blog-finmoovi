@@ -3,6 +3,7 @@ title: "Cómo usar hojas de cálculo para controlar gastos (2026)"
 description: "Aprende a organizar tus gastos con hojas de cálculo simples y la app FinMoovi. Gana claridad y tranquilidad financiera en minutos, sin ser experto."
 tickerHeadline: "Hoja que simplifica tu dinero"
 image: "/images/posts/como-usar-planilhas-para-controlar-despesas-2026.webp"
+imageAlt: "Cuaderno marrón, calculadora, monedas y plantas verdes sobre superficie blanca."
 category: "dicas"
 locale: "es"
 tags: ["excel gastos","finanzas personales","economía","dinero"]
