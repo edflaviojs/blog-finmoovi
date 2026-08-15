@@ -1907,5 +1907,126 @@
         "publicaEmBR": "15/08 às 14h31"
       }
     }
+  },
+  "viral-m97XJBm4IdI": {
+    "midias": {
+      "video": {
+        "id": "4577090e-2fb2-4ce1-819a-8520dddb779d",
+        "name": "vhpGv255GE.mp4",
+        "originalName": null,
+        "path": "https://media.help4desk.com/vhpGv255GE.mp4",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capa": {
+        "id": "f48c1c7b-55c1-4c58-a5de-615e4f48df7f",
+        "name": "5OhMopBBo4.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/5OhMopBBo4.jpeg",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capaLarga": {
+        "id": "16fc65a4-fc04-4ec5-b5db-63f14ead4a76",
+        "name": "2fmNDi8Y4X.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/2fmNDi8Y4X.jpeg",
+        "thumbnail": null,
+        "alt": null
+      },
+      "telegram": {
+        "media": {
+          "id": "6d043f11-4266-4fa4-8e27-91c2c70f7a3c",
+          "name": "wnUUwZqsGQ.mp4",
+          "originalName": null,
+          "path": "https://media.help4desk.com/wnUUwZqsGQ.mp4",
+          "thumbnail": null,
+          "alt": null
+        },
+        "bytes": 18254505,
+        "comprimido": true
+      }
+    },
+    "publicaEm": "2026-08-15T22:00:00.000Z",
+    "publicaEmBR": "15/08 às 19h00",
+    "agendadoEm": "2026-08-15T15:37:40.748Z",
+    "atualizadoEm": "2026-08-15T15:37:44.437Z",
+    "redes": {
+      "instagram": {
+        "postId": "cmsuji5jf003xs390k7sm16jv",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-08-15T22:00:00.000Z",
+        "publicaEmBR": "15/08 às 19h00",
+        "midia": "o vídeo",
+        "caracteres": 715,
+        "limite": 2200
+      },
+      "facebook": {
+        "postId": "cmsuji5y5003ys390ke3ekuu3",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-08-15T22:26:00.000Z",
+        "publicaEmBR": "15/08 às 19h26",
+        "midia": "o vídeo",
+        "caracteres": 485,
+        "limite": 63206
+      },
+      "linkedin-page": {
+        "postId": "cmsuji6a3003zs390ctqetbsu",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-08-15T22:43:00.000Z",
+        "publicaEmBR": "15/08 às 19h43",
+        "midia": "o vídeo",
+        "caracteres": 487,
+        "limite": 3000
+      },
+      "threads": {
+        "postId": "cmsuji6lj0040s390a4lco8s1",
+        "canal": "finmoovi",
+        "publicaEm": "2026-08-15T22:58:00.000Z",
+        "publicaEmBR": "15/08 às 19h58",
+        "midia": "o vídeo",
+        "caracteres": 154,
+        "limite": 500
+      },
+      "telegram": {
+        "postId": "cmsuji6wh0041s390q9ggoud2",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-08-15T23:14:00.000Z",
+        "publicaEmBR": "15/08 às 20h14",
+        "midia": "o vídeo, numa cópia de 17.4 MB — o Telegram recusa acima de 20 MB quando vai buscar por endereço",
+        "caracteres": 347,
+        "limite": 4096
+      },
+      "pinterest": {
+        "postId": "cmsuji7u10042s390gtmmamwj",
+        "canal": "finmoovi",
+        "publicaEm": "2026-08-15T23:31:00.000Z",
+        "publicaEmBR": "15/08 às 20h31",
+        "midia": "vídeo primeiro, capa depois — a ordem que o Pinterest exige",
+        "caracteres": 480,
+        "limite": 500
+      },
+      "bluesky": {
+        "postId": "cmsuji8650043s390vpqibib3",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-08-15T23:47:00.000Z",
+        "publicaEmBR": "15/08 às 20h47",
+        "midia": "vai a capa DEITADA (o Bluesky não publica vídeo, e a em pé ficaria cortada no feed)",
+        "caracteres": 111,
+        "limite": 300
+      },
+      "instagram-story": {
+        "postId": "cmsuji8eu0044s390bi8ysz60",
+        "tipo": "vídeo",
+        "publicaEm": "2026-08-15T22:05:00.000Z",
+        "publicaEmBR": "15/08 às 19h05"
+      },
+      "facebook-story": {
+        "postId": "cmsuji8jc0045s390cnkggdgo",
+        "tipo": "vídeo",
+        "publicaEm": "2026-08-15T22:31:00.000Z",
+        "publicaEmBR": "15/08 às 19h31"
+      }
+    }
   }
 }
