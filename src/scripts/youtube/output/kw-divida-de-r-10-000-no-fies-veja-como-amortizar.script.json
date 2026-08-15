@@ -1,0 +1,215 @@
+{
+  "slug": "kw-divida-de-r-10-000-no-fies-veja-como-amortizar",
+  "term": "Dívida de R$ 10.000 no FIES? Veja como amortizar!",
+  "category": "mindset",
+  "keyword": "Dívida",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você tem *dez mil reais no FIES* e acha que vai levar anos pra diminuir?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "areia-movedica",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você tem dez mil reais no FIES e acha que vai levar anos pra diminuir? Uma estudante conseguiu reduzir essa dívida em dois anos.",
+      "durationSec": 9.2,
+      "shots": [
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "number",
+            "text": "R$ 10.000"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "FIES",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          }
+        },
+        {
+          "anchor": "reduzir",
+          "visual": {
+            "type": "statement",
+            "text": "Dívida pode diminuir"
+          },
+          "sfx": "sparkle"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Dois anos passaram pagando as parcelas e separando um pouco de dinheiro quando sobrava. Ela queria ver a dívida cair.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "anos",
+          "visual": {
+            "type": "counter",
+            "from": 1,
+            "to": 2,
+            "prefix": "R$"
+          }
+        },
+        {
+          "anchor": "separando",
+          "visual": {
+            "type": "statement",
+            "text": "Separar dinheiro ajuda"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "dívida",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "areia-movedica"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Essa vontade virou acompanhamento. Em dois anos, ela viu a dívida diminuir com os pagamentos. E ainda faltava caminho.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "virou",
+          "visual": {
+            "type": "icon",
+            "icon": "target"
+          }
+        },
+        {
+          "anchor": "dois",
+          "visual": {
+            "type": "chart",
+            "text": "Acompanhar evolução"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "diminuir",
+          "visual": {
+            "type": "statement",
+            "text": "Pagamentos reduzem dívida"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Pra acompanhar esse caminho, eu coloquei os dados no FinMoovi. Apareceu a dívida do FIES começando em dez mil reais.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "acompanhar",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Tela inicial mostrando acompanhamento da dívida"
+          },
+          "sfx": "keyboard"
+        },
+        {
+          "anchor": "Apareceu",
+          "visual": {
+            "type": "number",
+            "text": "R$ 10.000"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "FIES",
+          "visual": {
+            "type": "list",
+            "text": "Parcelas do FIES"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu caso? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 4.2,
+      "shots": [
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "statement",
+            "text": "Descubra seu caminho"
+          }
+        },
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "statement",
+            "text": "Use FinMoovi grátis"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Com dez mil reais no FIES, dá pra reduzir a dívida acompanhando pagamento por pagamento. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "number",
+            "text": "R$ 10.000"
+          }
+        },
+        {
+          "anchor": "reduzir",
+          "visual": {
+            "type": "chart",
+            "text": "Dívida diminuindo"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja seu caso no FinMoovi",
+    "target": "app"
+  },
+  "totalDurationSec": 44.6
+}
