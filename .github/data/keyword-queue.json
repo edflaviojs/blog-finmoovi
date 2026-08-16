@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-15T11:09:00.206Z",
-  "sourceCursor": 0,
+  "updatedAt": "2026-08-16T09:18:04.625Z",
+  "sourceCursor": 1,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -792,9 +792,11 @@
       "category": null,
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "used",
       "addedAt": "2026-08-04T14:22:33.695Z",
-      "finmooviHook": "enviado via /status 04/08"
+      "finmooviHook": "enviado via /status 04/08",
+      "usedAt": "2026-08-16T09:18:04.625Z",
+      "usedBy": "gerar-dicas-financeiras"
     },
     {
       "keyword": "app financas gratis",
