@@ -88,5 +88,11 @@
     "gancho": "voces-viram",
     "turno": "noite",
     "em": "2026-08-15T05:01:02.355Z"
+  },
+  {
+    "situacao": "viagem-fim-de-ano",
+    "gancho": "e-serio-que",
+    "turno": "manha",
+    "em": "2026-08-16T04:59:32.312Z"
   }
 ]

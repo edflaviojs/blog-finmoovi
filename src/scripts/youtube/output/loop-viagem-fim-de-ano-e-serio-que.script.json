@@ -1,0 +1,117 @@
+{
+  "slug": "loop-viagem-fim-de-ano-e-serio-que",
+  "formato": "loop16",
+  "term": "A viagem de fim de ano",
+  "category": "vida",
+  "keyword": "VIAGEM",
+  "situacao": "viagem-fim-de-ano",
+  "gancho": "e-serio-que",
+  "ganchoFamilia": "é sério que",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "cofre",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "É sério que ninguém está falando de praia em dezembro?",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "sério",
+          "visual": {
+            "type": "statement",
+            "text": "Praia em dezembro?"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "ninguém",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "cofre"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu olhei as contas. A viagem apertaria tudo lá em casa.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "olhei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "cofre"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "contas",
+          "visual": {
+            "type": "statement",
+            "text": "A viagem apertou tudo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então guardei um pouquinho antes do mercado, boleto, aluguel e escola.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "guardei",
+          "visual": {
+            "type": "statement",
+            "text": "Guardei antes das contas"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "pouquinho",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "cofre"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Hoje, quando falam, eu lembro. Ninguém está falando da praia.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "falam",
+          "visual": {
+            "type": "statement",
+            "text": "Ninguém fala da praia"
+          }
+        },
+        {
+          "anchor": "lembro",
+          "visual": {
+            "type": "statement",
+            "text": "Praia em dezembro?"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
