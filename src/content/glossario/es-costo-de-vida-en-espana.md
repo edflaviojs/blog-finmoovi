@@ -4,6 +4,7 @@ definition: "Qué es costo de vida en España y cómo aparece en tu día a día 
 title: "costo de vida en España - Glosario Financiero"
 description: "Qué es costo de vida en España y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/custo-de-vida-na-espanha.webp"
+imageAlt: "Monedas apiladas, esfera con símbolo bitcoin y frasco con planta sobre fondo oscuro."
 category: "basico"
 tags: ["costo de vida en España", "glosario", "finanzas"]
 author: "FinMoovi"

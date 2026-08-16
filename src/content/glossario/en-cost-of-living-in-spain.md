@@ -4,6 +4,7 @@ definition: "What Cost of Living in Spain is and how it shows up in your everyda
 title: "Cost of Living in Spain - Financial Glossary"
 description: "What Cost of Living in Spain is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/custo-de-vida-na-espanha.webp"
+imageAlt: "Gold coins, Bitcoin orb, and money jar with plant on dark background."
 category: "basico"
 tags: ["Cost of Living in Spain", "glossary", "finance"]
 author: "FinMoovi"

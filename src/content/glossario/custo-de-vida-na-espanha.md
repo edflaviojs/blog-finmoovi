@@ -4,6 +4,7 @@ definition: "O que é custo de vida na espanha e como isso aparece no seu dia a 
 title: "custo de vida na espanha - Glossário Financeiro"
 description: "O que é custo de vida na espanha e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/custo-de-vida-na-espanha.webp"
+imageAlt: "pilhas de moedas douradas, símbolo de euro em vidro e planta crescendo em pote"
 category: "basico"
 tags: ["custo de vida na espanha", "glossário", "finanças"]
 author: "FinMoovi"
