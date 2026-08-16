@@ -3,6 +3,7 @@ title: "Como montar um orçamento gratuito e eficaz em 2026"
 description: "Aprenda a criar um orçamento sem custos usando ferramentas digitais e a captura inteligente do FinMoovi. Passo a passo prático para organizar seu dinheiro."
 tickerHeadline: "O truque que simplifica seu dinheiro"
 image: "/images/posts/como-montar-um-orcamento-gratuito-e-eficaz-em-2026.webp"
+imageAlt: "Formas onduladas em azul e dourado sobre fundo bege e branco."
 category: "dicas"
 locale: "pt"
 tags: ["orçamento gratis","finanças pessoais","economia","dinheiro"]

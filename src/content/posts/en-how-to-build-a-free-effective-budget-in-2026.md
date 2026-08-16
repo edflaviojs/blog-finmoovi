@@ -3,6 +3,7 @@ title: "How to Build a Free, Effective Budget in 2026"
 description: "Learn to create a free budget with digital tools and FinMoovi’s smart receipt capture. Step‑by‑step guide to get your money under control."
 tickerHeadline: "The trick that simplifies your money"
 image: "/images/posts/como-montar-um-orcamento-gratuito-e-eficaz-em-2026.webp"
+imageAlt: "Blue and gold wavy abstract shapes on a gradient background."
 category: "dicas"
 locale: "en"
 tags: ["free budget","personal finance","budgeting","money"]

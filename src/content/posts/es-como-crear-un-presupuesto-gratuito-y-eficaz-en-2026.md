@@ -3,6 +3,7 @@ title: "Cómo crear un presupuesto gratuito y eficaz en 2026"
 description: "Aprende a crear un presupuesto sin costos usando herramientas digitales y la captura inteligente de FinMoovi. Paso a paso práctico para organizar tu dinero."
 tickerHeadline: "El truco que simplifica tu dinero"
 image: "/images/posts/como-montar-um-orcamento-gratuito-e-eficaz-em-2026.webp"
+imageAlt: "Ondas abstractas en azul y dorado sobre fondo beige y blanco."
 category: "dicas"
 locale: "es"
 tags: ["presupuesto gratis","finanzas personales","economía","dinero"]
