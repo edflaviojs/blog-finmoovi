@@ -1,0 +1,117 @@
+{
+  "slug": "loop-dez-vezes-sem-juros-e-serio-que",
+  "formato": "loop16",
+  "term": "O sem juros que virou rombo",
+  "category": "vida",
+  "keyword": "PARCELA",
+  "situacao": "dez-vezes-sem-juros",
+  "gancho": "e-serio-que",
+  "ganchoFamilia": "é sério que",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "mochila-pedras",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "É sério que ninguém está falando de parcela sem juros?",
+      "durationSec": 3.53,
+      "shots": [
+        {
+          "anchor": "sério",
+          "visual": {
+            "type": "statement",
+            "text": "Parcela sem juros?"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "ninguém",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu achei que cabia, só que a fatura veio cheia de pedacinhos.",
+      "durationSec": 4.24,
+      "shots": [
+        {
+          "anchor": "achei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "cabia",
+          "visual": {
+            "type": "statement",
+            "text": "Fatura cheia"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então eu passei a olhar tudo antes, comigo mudou bastante.",
+      "durationSec": 3.53,
+      "shots": [
+        {
+          "anchor": "passei",
+          "visual": {
+            "type": "statement",
+            "text": "Olho antes"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "olhar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Agora entendo por que ninguém fala de parcela sem juros assim.",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "entendo",
+          "visual": {
+            "type": "statement",
+            "text": "Ninguém fala disso"
+          }
+        },
+        {
+          "anchor": "ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "Parcela sem juros?"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.19
+}
