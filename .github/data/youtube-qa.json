@@ -286,5 +286,23 @@
     ],
     "veredito": "1. **O LOOP — 9/10**  \nPrimeiro e último quadro são praticamente iguais: ambos mostram **“Praia em dezembro?”** no mesmo layout. Para um loop visual, funciona muito bem. Não dá para saber pelos quadros se a transição entre eles é imperceptível.\n\n2. **A FAIXA DE BAIXO — 5/10**  \nHá texto importante na região inferior em praticamente todos os quadros: **“É sério que”, “dezembro?”, “contas...”, “em casa.”, “mercado...”** etc. No celular, essa área pode ser parcialmente coberta pela interface.\n\n3. **TEXTO POR CIMA DE TEXTO — 7/10**  \nNão vejo frases claramente sobrepostas umas às outras. Porém, nos quadros 3–6 há palavras coloridas misturadas visualmente com palavras cinzas na mesma linha, o que pode parecer confuso em movimento.\n\n4. **LEGIBILIDADE — 8/10**  \nO texto principal é grande, branco e com ótimo contraste. As legendas inferiores são bem menores e têm menos prioridade visual; podem ficar difíceis de ler em uma tela pequena.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — 5/10**  \nExiste bastante espaço vazio, principalmente entre o título central e o texto inferior. O cofre é um bom elemento visual, mas aparece parado em apenas alguns momentos. Pelos quadros, a composição parece relativamente estática.\n\n6. **COERÊNCIA — 9/10**  \nOs quadros parecem claramente pertencer ao mesmo vídeo: mesma identidade visual, logo, fundo, tipografia e elementos. A sequência também conta uma história: **praia → guardar dinheiro → viagem apertando as contas → despesas → escola → retorno à praia**.\n\n7. **TESTE CENTRAL — 5/10**  \nPelos quadros parados, parece mais uma **apresentação em slides animada** do que um vídeo profissional dinâmico; falta mais variedade visual e ocupação do espaço.\n\nNOTA GERAL: 7/10  \nPROBLEMA 1: Texto importante demais na faixa inferior, especialmente nos quadros 1–6, onde pode ser coberto pela interface do Shorts/Reels.  \nPROBLEMA 2: Muito espaço vazio e pouca variedade visual, fazendo o conteúdo parecer slides.  \nPROBLEMA 3: As legendas inferiores são pequenas e visualmente secundárias demais para um vídeo pensado para celular.  \nPRIMEIRA COISA A MUDAR: Suba todo o texto importante para uma área segura acima do terço inferior e use esse espaço para elementos visuais maiores.",
     "quando": "2026-08-16T05:02:45.887Z"
+  },
+  {
+    "slug": "loop-dez-vezes-sem-juros-e-serio-que",
+    "formato": "loop16",
+    "nota": 7,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      2.1,
+      4.3,
+      6.4,
+      8.6,
+      10.7,
+      12.9,
+      15
+    ],
+    "veredito": "1. **O LOOP — 6,5/10**  \nO primeiro e o último quadro têm o mesmo fundo e a mesma frase principal, **“Parcela sem juros?”**, no mesmo lugar. Mas o texto de baixo muda de **“É sério que”** para **“juros assim.”**. Ao reiniciar, a mudança pode ser percebida.\n\n2. **A FAIXA DE BAIXO — 6/10**  \nHá texto importante no terço inferior em praticamente todos os quadros. Não está colado no limite da tela, mas fica numa região que pode sofrer interferência da interface do Shorts/Reels.\n\n3. **TEXTO POR CIMA DE TEXTO — 9/10**  \nNão vejo frases claramente sobrepostas nem palavras cortadas. O texto está bem separado e dentro da área visual.\n\n4. **LEGIBILIDADE — 8,5/10**  \nO texto principal é grande, grosso e com bom contraste. As legendas menores continuam legíveis, mas poderiam estar um pouco maiores para celular.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — 6,5/10**  \nExiste bastante espaço vazio, principalmente entre os elementos centrais e o texto inferior. O fundo ajuda a preencher, mas ainda passa uma sensação de tela pouco ocupada.\n\n6. **COERÊNCIA — 8/10**  \nOs quadros claramente pertencem ao mesmo vídeo: mesma identidade visual, tipografia, cores e elementos. A sequência evolui de “parcela sem juros?” para a ideia de uma fatura cheia e depois volta à frase inicial.\n\n7. **TESTE CENTRAL — 5/10**  \nParece mais uma sequência de **slides animados** do que um vídeo profissional, porque cada quadro depende muito de uma composição estática de texto + ícone.\n\nNOTA GERAL: 7,0  \nPROBLEMA 1: o loop não fecha perfeitamente — no 15s o texto inferior é “juros assim.” e no 0,1s volta para “É sério que”  \nPROBLEMA 2: texto importante fica no terço inferior, sujeito à interface do Shorts/Reels  \nPROBLEMA 3: a composição tem bastante espaço vazio e aparência de slides  \nPRIMEIRA COISA A MUDAR: faça o último quadro visualmente idêntico ao primeiro, ou termine de modo que a mudança do texto inferior para o início pareça uma continuação natural.",
+    "quando": "2026-08-16T05:06:38.826Z"
   }
 ]
