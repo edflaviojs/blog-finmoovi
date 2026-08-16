@@ -1,0 +1,228 @@
+{
+  "slug": "kw-despesas-fora-de-controle",
+  "term": "Despesas fora de controle?",
+  "category": "mindset",
+  "keyword": "fora",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Sabe para onde vão os *quinhentos reais* que somem da sua conta todo mês?"
+  },
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "balanca",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Sabe para onde vão os quinhentos reais que somem da sua conta todo mês? Eu descobri quando separei meus gastos.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "onde",
+          "visual": {
+            "type": "statement",
+            "text": "Para onde foi?"
+          },
+          "sfx": "alert"
+        },
+        {
+          "anchor": "quinhentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          }
+        },
+        {
+          "anchor": "separei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balanca"
+          },
+          "sfx": "whoosh"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Apareceu o mercado, a comida fora de casa e aquelas assinaturas. Coisas pequenas que eu pagava no automático, sem perceber.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "mercado",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          }
+        },
+        {
+          "anchor": "casa",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          }
+        },
+        {
+          "anchor": "assinaturas",
+          "visual": {
+            "type": "list",
+            "text": "Mercado • Fora • Apps"
+          }
+        },
+        {
+          "anchor": "automático",
+          "visual": {
+            "type": "statement",
+            "text": "Passa despercebido"
+          },
+          "sfx": "ding"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Aí eu somei tudo. Mercado, duzentos e cinquenta. Comida fora, cento e cinquenta. Assinaturas, cem. Deu quinhentos reais.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "somei",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 500,
+            "prefix": "R$"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "Mercado",
+          "visual": {
+            "type": "chart",
+            "text": "Mercado R$250"
+          }
+        },
+        {
+          "anchor": "Comida",
+          "visual": {
+            "type": "chart",
+            "text": "Fora R$150"
+          }
+        },
+        {
+          "anchor": "Assinaturas",
+          "visual": {
+            "type": "chart",
+            "text": "Apps R$100"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei esses gastos no FinMoovi e ele me mostrou tudo separadinho na tela. Quinhentos reais.",
+      "durationSec": 6.2,
+      "shots": [
+        {
+          "anchor": "joguei",
+          "visual": {
+            "type": "app",
+            "app": "balanco",
+            "note": "Categorias separadas e total consolidado"
+          }
+        },
+        {
+          "anchor": "tela",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balanca"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "Quinhentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu? Procura o FinMoovi. São sete dias grátis.",
+      "durationSec": 4.2,
+      "shots": [
+        {
+          "anchor": "Procura",
+          "visual": {
+            "type": "statement",
+            "text": "Veja seu padrão"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Você só controla o seu bolso quando vê para onde esses quinhentos reais estão indo. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "controla",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balanca"
+          }
+        },
+        {
+          "anchor": "quinhentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Sem visão, sem controle"
+          }
+        },
+        {
+          "anchor": "outros",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          },
+          "sfx": "alert"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Teste grátis por 7 dias",
+    "target": "app"
+  },
+  "totalDurationSec": 41.2
+}
