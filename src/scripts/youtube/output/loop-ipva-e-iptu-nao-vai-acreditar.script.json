@@ -1,0 +1,117 @@
+{
+  "slug": "loop-ipva-e-iptu-nao-vai-acreditar",
+  "formato": "loop16",
+  "term": "IPVA e IPTU de janeiro",
+  "category": "vida",
+  "keyword": "JANEIRO",
+  "situacao": "ipva-e-iptu",
+  "gancho": "nao-vai-acreditar",
+  "ganchoFamilia": "não vai acreditar",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "avalanche",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você não vai acreditar, mas… janeiro chegou pesado lá em casa.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "acreditar",
+          "visual": {
+            "type": "statement",
+            "text": "Janeiro chegou pesado"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "janeiro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "avalanche"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "IPVA e IPTU bateram juntos, apertei o mercado para pagar tudo.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "bateram",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "avalanche"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "juntos",
+          "visual": {
+            "type": "statement",
+            "text": "IPVA e IPTU juntos"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então, agora eu separo os carnês assim que chegam, bem caladinho.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "separo",
+          "visual": {
+            "type": "statement",
+            "text": "Eu separo os carnês"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "carnês",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "avalanche"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Você não vai acreditar. Janeiro chega, e eu lembro.",
+      "durationSec": 3.26,
+      "shots": [
+        {
+          "anchor": "acreditar",
+          "visual": {
+            "type": "statement",
+            "text": "Janeiro chega de novo"
+          }
+        },
+        {
+          "anchor": "Janeiro",
+          "visual": {
+            "type": "statement",
+            "text": "Janeiro chegou pesado"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
