@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-10T09:04:27.324Z",
+  "updatedAt": "2026-08-17T08:28:35.869Z",
   "selic": {
     "value": "14.00",
     "unit": "% a.a.",
@@ -7,31 +7,31 @@
     "url": "https://www.bcb.gov.br"
   },
   "ipca": {
-    "value": "N/D",
+    "value": "4.44",
     "unit": "% (12 meses)",
     "source": "IBGE/BCB",
     "url": "https://www.ibge.gov.br"
   },
   "cdi": {
-    "value": "0.21",
+    "value": "0.47",
     "unit": "% a.a.",
     "source": "Banco Central do Brasil",
     "url": "https://www.bcb.gov.br"
   },
   "usdBrl": {
-    "value": "5.0908",
+    "value": "5.2236",
     "unit": "BRL",
     "source": "Banco Central do Brasil (PTAX)",
     "url": "https://www.bcb.gov.br"
   },
   "eurBrl": {
-    "value": "5.8791",
+    "value": "5.9985",
     "unit": "BRL",
     "source": "ExchangeRate API",
     "url": "https://www.exchangerate-api.com"
   },
   "poupanca": {
-    "value": "0.6717",
+    "value": "0.6699",
     "unit": "% a.m.",
     "source": "Banco Central do Brasil",
     "url": "https://www.bcb.gov.br"
