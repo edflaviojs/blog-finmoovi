@@ -1,0 +1,221 @@
+{
+  "slug": "poupanca-vs-cdb",
+  "term": "Poupança vs CDB: quem ganha em 1 ano?",
+  "category": "investimento",
+  "keyword": "Poupança",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Deixar dez mil reais na poupança ou no CDB faz *diferença* em um ano?"
+  },
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "balanca",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Deixar dez mil reais na poupança ou no CDB faz diferença em um ano? Faz, e muita, quando a gente senta pra fazer a conta.",
+      "durationSec": 9.6,
+      "shots": [
+        {
+          "anchor": "diferença",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balanca"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "muita",
+          "visual": {
+            "type": "counter",
+            "from": 10000,
+            "to": 11200,
+            "prefix": "R$"
+          }
+        },
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "formula",
+            "text": "Compare os dois rendimentos"
+          },
+          "sfx": "typewriter"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu sei que muita gente deixa o dinheiro na poupança porque ninguém explicou o que é esse tal de CDB, e dá vergonha de perguntar.",
+      "durationSec": 9.6,
+      "shots": [
+        {
+          "anchor": "muita",
+          "visual": {
+            "type": "statement",
+            "text": "Ninguém nasce sabendo"
+          }
+        },
+        {
+          "anchor": "poupança",
+          "visual": {
+            "type": "icon",
+            "icon": "piggy"
+          }
+        },
+        {
+          "anchor": "explicou",
+          "visual": {
+            "type": "icon",
+            "icon": "bulb"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "vergonha",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Só que o CDB é só um dinheiro que você empresta pro banco, e ele te paga por isso. Mas na hora de escolher, a dúvida aparece.",
+      "durationSec": 10.4,
+      "shots": [
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "icon",
+            "icon": "money"
+          }
+        },
+        {
+          "anchor": "banco",
+          "visual": {
+            "type": "icon",
+            "icon": "bank"
+          },
+          "sfx": "click"
+        },
+        {
+          "anchor": "hora",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balanca"
+          }
+        },
+        {
+          "anchor": "dúvida",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Pra tirar a prova, eu joguei os dez mil lá no FinMoovi e ele me mostrou na hora quem rendeu mais no fim do ano.",
+      "durationSec": 9.6,
+      "shots": [
+        {
+          "anchor": "tirar",
+          "visual": {
+            "type": "app",
+            "app": "calculadora",
+            "note": "Comparação entre poupança e CDB com R$10 mil"
+          },
+          "sfx": "keyboard"
+        },
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "balanco",
+            "note": "Resultado final com destaque para o maior rendimento"
+          }
+        },
+        {
+          "anchor": "rendeu",
+          "visual": {
+            "type": "chart",
+            "text": "Quem ganhou em 12 meses"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "E aí você pode ver o seu caso também. Procura o FinMoovi, são sete dias grátis.",
+      "durationSec": 6.2,
+      "shots": [
+        {
+          "anchor": "caso",
+          "visual": {
+            "type": "statement",
+            "text": "Cada pessoa tem um resultado"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "No fim das contas, CDB ou poupança vai da sua escolha. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "escolha",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balanca"
+          }
+        },
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "icon",
+            "icon": "shield"
+          }
+        },
+        {
+          "anchor": "outros",
+          "visual": {
+            "type": "statement",
+            "text": "Controle muda o jogo"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Teste sua comparação grátis",
+    "target": "app"
+  },
+  "totalDurationSec": 52.3
+}
