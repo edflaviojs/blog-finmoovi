@@ -11,17 +11,17 @@ publishedAt: 2026-05-19
 readingTime: 2
 ---
 
-## ¿Qué es Câmbio?
+## ¿Qué es el cambio?
 
-Câmbio es el intercambio de una moneda por otra. Cuando compras dólares para viajar o cuando una empresa importa productos, estás realizando una operación de câmbio. La tasa de câmbio indica cuánto cuesta una moneda en relación con otra.
+El cambio es el intercambio de una moneda por otra. Cuando compras dólares para viajar o cuando una empresa importa productos, estás realizando una operación de cambio. La tasa de cambio indica cuánto cuesta una moneda en relación con otra.
 
-## ¿Cómo funciona la tasa de câmbio
+## ¿Cómo funciona la tasa de cambio
 
-- **USD/BRL = 5,50** significa que 1 [dólar](/es/posts/es-cotizaciones-semana-1-julio-2026) cuesta R$ 5,50
+- **USD/EUR = 0,99** significa que 1 [dólar](/es/posts/es-cotizaciones-semana-1-julio-2026) cuesta € 0,99
 - La tasa cambia cada segundo en el mercado
 - Está influenciada por los intereses, la [inflación](/es/glossario/es-inflacion), la política y el flujo de capitales
 
-## Tipos de câmbio
+## Tipos de cambio
 
 | Tipo | Uso | Spread |
 |------|-----|--------|
@@ -31,12 +31,12 @@ Câmbio es el intercambio de una moneda por otra. Cuando compras dólares para v
 
 ## [Consejos](/es/posts/es-7-errores-financieros-principiante) para comprar moneda extranjera
 
-1. **Compre poco a poco** — no intentes acertar el mejor momento
-2. **Compare casas de câmbio** — los spreads varían mucho
-3. **Evite aeropuertos** — las tasas son las peores
-4. **[Tarjeta de débito](/es/posts/es-tarjeta-de-credito-vs-tarjeta-de-debito-cual-vale-mas-la) internacional** — generalmente mejor que [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) en efectivo
-5. **IOF:** 4,38% en la tarjeta, 1,1% en efectivo
+1. **Compre poco a poco** — no intentes acertar el mejor momento  
+2. **Compare casas de cambio** — los spreads varían mucho  
+3. **Evite aeropuertos** — las tasas son las peores  
+4. **[Tarjeta de débito](/es/posts/es-tarjeta-de-credito-vs-tarjeta-de-debito-cual-vale-mas-la) internacional** — generalmente mejor que [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) en efectivo  
+5. **Impuesto:** 4,38% en la tarjeta, 1,1% en efectivo  
 
-## Câmbio e investimentos
+## Cambio e inversiones
 
-Invertir en activos dolarizados (ETFs internacionales, BDRs) es una forma de protegerse de la devaluación del real. Cuando el [dólar](/es/posts/es-cotizaciones-semana-1-junio-2026) sube, tus inversiones internacionales valorizan en reales.
+Invertir en activos dolarizados (ETFs internacionales, BDRs) es una forma de protegerse de la devaluación de la moneda local. Cuando el [dólar](/es/posts/es-cotizaciones-semana-1-junio-2026) sube, tus inversiones internacionales valorizan en la moneda local.

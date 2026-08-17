@@ -26,23 +26,17 @@ There are many cashback programs available in the market, so it's essential to c
 ## Maximizing your cashback
 To maximize your cashback, it's crucial to understand how it works and how you can take full advantage of it. For example, some cashback programs offer cashback on purchases made in specific categories, such as food or clothing. Others offer cashback on purchases made on specific days of the week or at specific times. Additionally, it's essential to remember that cashback is a discount, so it's crucial to compare prices before making a purchase.
 
-![Escolhendo o melhor programa de cashback](/images/posts/cashback-inteligente-2.webp)
-
-
+![Choosing the best cashback program](/images/posts/cashback-inteligente-2.webp)
 
 ## Avoiding traps
-Although cashback can be a great way to save [money](/en/posts/en-30-day-rule-for-purchases), it's essential to be aware of the traps. For example, some cashback programs may have high fees or interest rates, so it's crucial to read the terms and conditions before signing up. Additionally, it's essential to remember that cashback is not a substitute for responsible [financial management](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your). It's crucial to have a [budget](/en/posts/en-5-tips-to-reorganize-your-finances-on-vacation) and prioritize your [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the) before making purchases. You can learn more about responsible [financial management](/en/posts/en-building-a-diversified-portfolio-with-r-500) on the [Banco Central do Brasil](https://www.bcb.gov.br) website.
+Although cashback can be a great way to save [money](/en/posts/en-30-day-rule-for-purchases), it's essential to be aware of the traps. For example, some cashback programs may have high fees or interest rates, so it's crucial to read the terms and conditions before signing up. Additionally, it's essential to remember that cashback is not a substitute for responsible [financial management](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your). It's crucial to have a [budget](/en/posts/en-5-tips-to-reorganize-your-finances-on-vacation) and prioritize your [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the) before making purchases. You can learn more about responsible [financial management](/en/posts/en-building-a-diversified-portfolio-with-r-500) on the [the central bank](https://www.bcb.gov.br) website.
 
-![Maximizando o seu cashback](/images/posts/cashback-inteligente-3.webp)
-
-
+![Maximizing your cashback](/images/posts/cashback-inteligente-3.webp)
 
 ## Start today
-Now that you know how to use cashback intelligently, it's time to start saving [money](/en/posts/en-avoid-impulse-purchases). Remember to choose a cashback program that suits your needs and read the terms and conditions before signing up. Additionally, it's essential to remember that cashback is only part of responsible [financial management](/en/posts/en-budgeting-with-minimum-wage-practical-tips). You can learn more about responsible [financial management](/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026) on the [Investopedia](https://www.investopedia.com) website.
+Now that you know how to use cashback intelligently, it's time to start saving [money](/en/posts/en-avoid-impulse-purchases). Remember to choose a cashback program that suits your needs and read the terms and conditions before signing up. Additionally, it’s essential to remember that cashback is only part of responsible [financial management](/en/posts/en-budgeting-with-minimum-wage-practical-tips). You can learn more about responsible [financial management](/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026) on the [Investopedia](https://www.investopedia.com) website.
 
-![Evitando armadilhas](/images/posts/cashback-inteligente-4.webp)
-
-
+![Avoiding traps](/images/posts/cashback-inteligente-4.webp)
 
 ---
 **Want to put this into practice? Test [FinMoovi for free for 7 days](https://finmoovi.com) and see how easy it is to control your finances with automatic categorization and visual reports.**

@@ -17,7 +17,7 @@ Wealth Management is a premium financial service that takes care of all aspects 
 
 ## For whom is it
 
-It is generally aimed at people with assets above R$ 1 million. But the concepts can be applied by anyone:
+It is generally aimed at people with assets above $200,000. But the concepts can be applied by anyone:
 
 ## Pillars of Wealth Management
 
@@ -30,8 +30,8 @@ It is generally aimed at people with assets above R$ 1 million. But the concepts
 ### 2. Tax Planning
 
 - Legally minimizing taxes
-- Choosing the best structures (PF vs. PJ)
-- Timing sales to optimize IR
+- Choosing the best structures (individual vs. corporate)
+- Timing sales to optimize income tax
 
 ### 3. Succession Planning
 
@@ -51,7 +51,7 @@ It is generally aimed at people with assets above R$ 1 million. But the concepts
 Even without a wealth manager, you can:
 
 1. Diversify [investments](/en/posts/en-private-pension-vs-investing-on-your-own-which-is-worth-it) (fixed income + variable + international)
-2. Use PGBL to reduce IR
+2. Use tax‑deferred retirement plans to reduce income tax
 3. Have adequate insurance
 4. Keep organized records
 5. Use apps like [FinMoovi](/en/posts/en-5-alternatives-to-mobills-in-2026) for total control

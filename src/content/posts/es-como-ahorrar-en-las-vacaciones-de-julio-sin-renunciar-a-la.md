@@ -25,7 +25,7 @@ seo:
 ---
 
 ## Introducción  
-Julio es el mes más esperado por quien quiere escapar de la rutina, pero también el periodo en que los precios tienden a subir: pasajes aéreos, hoteles e incluso la cuenta de energía en las casas de veraneo. Si ganas alrededor de **€540** al mes, como la mayoría de los trabajadores formales, puede ser fácil salir del [presupuesto](/es/posts/es-como-crear-un-presupuesto-personal-en-5-pasos-simples) y terminar el mes con la cuenta bancaria en rojo. La buena noticia es que, con una [planificación](/es/posts/es-presupuesto-con-salario-minimo-consejos-practicos) sencilla y algunos cambios de hábito, es posible disfrutar de las [vacaciones](/es/posts/es-5-consejos-para-reorganizar-tus-finanzas-en-vacaciones) sin comprometer tus finanzas. A continuación, presento siete pasos que transformarán tu [viaje](/es/posts/es-pierdes-el-control-de-los-gastos-cuando-viajas-usando) de julio en una experiencia económica y placentera.  
+Julio es el mes más esperado por quien quiere escapar de la rutina, pero también el periodo en que los precios tienden a subir: pasajes aéreos, hoteles e incluso la cuenta de energía en las casas de veraneo. Si ganas alrededor de **€2 000** al mes, como la mayoría de los trabajadores formales, puede ser fácil salir del [presupuesto](/es/posts/es-como-crear-un-presupuesto-personal-en-5-pasos-simples) y terminar el mes con la cuenta bancaria en rojo. La buena noticia es que, con una [planificación](/es/posts/es-presupuesto-con-salario-minimo-consejos-practicos) sencilla y algunos cambios de hábito, es posible disfrutar de las [vacaciones](/es/posts/es-5-consejos-para-reorganizar-tus-finanzas-en-vacaciones) sin comprometer tus finanzas. A continuación, presento siete pasos que transformarán tu [viaje](/es/posts/es-pierdes-el-control-de-los-gastos-cuando-viajas-usando) de julio en una experiencia económica y placentera.  
 
 ---  
 
@@ -37,12 +37,12 @@ La ansiedad de conseguir la “mejor oferta” suele llevar a compras impulsivas
 ![1. Defina un techo de gasto antes de reservar](/images/posts/como-economizar-nas-ferias-de-julho-sem-abrir-mao-da-diversa-2.webp)  
 
 **Ejemplo práctico:**  
-- Salario bruto: €540  
-- Descuentos (INSS, IR): ~€97 → **€443 neto**  
-- Gastos fijos mensuales (alquiler, cuentas, transporte): €270  
-- Reserva de emergencia: €90 (10 % de los ingresos)  
+- Salario bruto: €2 000  
+- Deducciones (contribuciones al sistema público de pensiones y al impuesto sobre la renta): ~€400 → **€1 600 neto**  
+- Gastos fijos mensuales (alquiler, cuentas, transporte): €800  
+- Reserva de emergencia: €200 (10 % de los ingresos)  
 
-Quedan **€83** para gastos extra. Si las vacaciones son en julio, reserva **€36** de ese monto para el viaje, manteniendo €47 para el resto del mes.  
+Quedan **€200** para gastos extra. Si las vacaciones son en julio, reserva **€80** de ese monto para el viaje, manteniendo €120 para el resto del mes.  
 
 ### Herramienta útil  
 El **app [FinMoovi](/es/posts/es-5-alternativas-al-mobills-en-2026)** permite crear categorías específicas – “Vacaciones de julio” – y seguir en tiempo real cuánto ya se ha consumido, ayudándote a respetar el techo establecido.  
@@ -134,7 +134,7 @@ Incluso con la mejor planificación, los imprevistos aparecen. Usa el **FinMoovi
 | ✅ | Acción | Ahorro estimado |
 |---|--------|-----------------|
 | 1 | Definir techo de gasto | Mantiene el presupuesto intacto |
-| 2 | Elegir destino off‑season | Hasta €108 en el pasaje |
+| 2 | Elegir destino off‑season | Hasta €99 en el pasaje |
 | 3 | Optar por autobús o coche compartido | €18‑€36 por trayecto |
 | 4 | Alojamiento en Airbnb/hostal | €153 en 5 noches |
 | 5 | Cocinar parte de las comidas | €32 en 5 días |
@@ -153,4 +153,3 @@ Incluso con la mejor planificación, los imprevistos aparecen. Usa el **FinMoovi
 ## Conclusión  
 
 Ahorrar en las vacaciones de julio no significa renunciar a la diversión; se trata de tomar decisiones conscientes y usar herramientas que simplifiquen el seguimiento de los gastos. Al definir un límite, elegir destinos más baratos, optimizar transporte y alojamiento, preparar tus propias comidas y priorizar actividades de bajo costo, puedes disfrutar del viaje con tranquilidad financiera. Recuerda: cada euro ahorrado ahora puede reinvertirse en una nueva experiencia o reforzar tu reserva de emergencia. Prepárate, planifica y aprovecha lo mejor del verano – sin estrés, sin cuentas rojas. ¡Buen viaje y buenas ahorros!
-<!-- SCHEMA_AUTO:{"@context":"https://schema.org","@type":"HowTo","name":"Cómo ahorrar en las vacaciones de julio sin renunciar a la diversión","step":[{"@type":"HowToStep","position":1,"name":"Define un techo de gasto antes de reservar","text":"Define un techo de gasto antes de reservar"},{"@type":"HowToStep","position":2,"name":"Elige destinos “off‑season”","text":"Elige destinos “off‑season”"},{"@type":"HowToStep","position":3,"name":"Transporte terrestre: autobús o coche compartido","text":"Transporte terrestre: autobús o coche compartido"},{"@type":"HowToStep","position":4,"name":"Alojamiento inteligente: Airbnb, hostales o intercambio de casas","text":"Alojamiento inteligente: Airbnb, hostales o intercambio de casas"},{"@type":"HowToStep","position":5,"name":"Alimentación: cocinar vs comer fuera","text":"Alimentación: cocinar vs comer fuera"},{"@type":"HowToStep","position":6,"name":"Actividades gratuitas o de bajo costo","text":"Actividades gratuitas o de bajo costo"},{"@type":"HowToStep","position":7,"name":"Control de gastos en tiempo real","text":"Control de gastos en tiempo real"}]} -->

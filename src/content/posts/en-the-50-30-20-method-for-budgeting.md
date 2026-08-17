@@ -25,13 +25,13 @@ The 50-30-20 method is a simple and effective strategy for managing your finance
 - **[Savings](/en/posts/en-smart-cashback) (20%):** This part of your salary should be destined for [savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet), investments, debt repayment, and emergency funds.
 
 ### Practical Example
-Let's consider a salary of R$ 4,000.00 per month. Applying the 50-30-20 method, we would have:
+Let's consider a salary of $800 per month. Applying the 50-30-20 method, we would have:
 
-| Category | Percentage | Value (R$) |
+| Category | Percentage | Value ($) |
 | --- | --- | --- |
-| Needs | 50% | 2,000.00 |
-| Desires | 30% | 1,200.00 |
-| Savings | 20% | 800.00 |
+| Needs | 50% | 400 |
+| Desires | 30% | 240 |
+| Savings | 20% | 160 |
 
 ## Organizing your Finances
 To start applying the 50-30-20 method, you need to have a clear view of your current finances. This includes knowing exactly how much you earn, how much you spend, and where you spend.
@@ -41,7 +41,7 @@ To start applying the 50-30-20 method, you need to have a clear view of your cur
 3. **Calculate the percentage:** Based on your income and expenses, calculate the percentage that each category occupies in your budget.
 4. **Adjust your expenses:** If necessary, make adjustments so that your budget fits the 50-30-20 method.
 
-![Organizando suas Finanças](/images/posts/metodo-50-30-20-para-orcamento-2.webp)
+![Organizing your Finances](/images/posts/metodo-50-30-20-para-orcamento-2.webp)
 
 
 
@@ -52,7 +52,7 @@ The savings part is crucial for your financial future. Here, you can consider di
 - **Investments:** There are several investment options, such as [stocks](/en/glossario/en-stocks), investment funds, debt securities, etc. It's essential to understand the risks and benefits of each option before investing.
 - **Debt repayment:** If you have high-interest debts, it may be a good idea to use part of your money to pay them off.
 
-![Economizando e Investindo](/images/posts/metodo-50-30-20-para-orcamento-3.webp)
+![Saving and Investing](/images/posts/metodo-50-30-20-para-orcamento-3.webp)
 
 
 
@@ -65,7 +65,7 @@ It's essential to maintain a balance between what you need and what you want. He
 - **Cut unnecessary expenses:** Identify expenses that are not essential and cut them.
 - **Find alternatives:** For desires, try to find cheaper alternatives that don't compromise your quality of life.
 
-![Gerenciando Desejos e Necessidades](/images/posts/metodo-50-30-20-para-orcamento-4.webp)
+![Managing Desires and Needs](/images/posts/metodo-50-30-20-para-orcamento-4.webp)
 
 
 

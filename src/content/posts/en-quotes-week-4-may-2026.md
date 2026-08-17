@@ -1,6 +1,6 @@
 ---
-title: "Weekly Summary: Dollar at R$ 5.03 — Week 4 of May"
-description: "Weekly financial market summary: dollar, euro, Selic and tips for investors. Week 4 of May 2026."
+title: "Weekly Summary: Dollar at title: .00 — Week 4 of May"
+description: "Weekly financial market summary: dollar, euro, central bank base rate and tips for investors. Week 4 of May 2026."
 image: "/images/posts/en-quotes-week-4-may-2026.webp"
 imageAlt: "Cityscape with skyscrapers and graphs overlaid on a blue-tinted white background."
 category: "cotacoes"
@@ -17,17 +17,17 @@ seo:
   keywords: ["dollar quote today", "euro quote", "financial market summary", "selic"]
 ---
 
-## Weekly Summary of the Brazilian [Financial Market](/en/posts/en-quotes-semana-2-july-2026)
+## Weekly Summary of the [Financial Market](/en/posts/en-quotes-semana-2-july-2026)
 
-The week of May 20-26, 2026 was marked by significant movements in the Brazilian [financial market](/en/posts/en-quotes-semana-3-june-2026), with highlights in exchange rate variations and the maintenance of the [Selic rate](/en/glossario/en-selic). Let's dive into the details and understand how these events affect individual investors.
+The week of May 20-26, 2026 was marked by significant movements in the financial market, with highlights in exchange rate variations and the maintenance of the [central bank base rate](/en/glossario/en-selic). Let's dive into the details and understand how these events affect individual investors.
 
 ## [Dollar](/en/posts/en-quotes-semana-1-june-2026) and Euro: Weekly Trend
 
-The [US dollar](/en/posts/en-investing-in-dollar-in-brazil) closed the week at R$ 5.03, showing slight stability compared to the previous week. The euro, quoted at R$ 5.85, also maintained a stability trend with minimal variations throughout the week. This relative calm in exchange rates is a relief for importers and tourists, but it may mean fewer opportunities for investors who bet on exchange rate variations.
+The [US dollar](/en/posts/en-investing-in-dollar-in-brazil) closed the week at $1.00, showing slight stability compared to the previous week. The euro, quoted at $1.17, also maintained a stability trend with minimal variations throughout the week. This relative calm in exchange rates is a relief for importers and tourists, but it may mean fewer opportunities for investors who bet on exchange rate variations.
 
-## Selic and Impact on Investments
+## Central Bank Base Rate and Impact on Investments
 
-The Selic rate, currently at 12.25% per year, was maintained by the Monetary Policy Committee (Copom) of the Central Bank. This decision aims to control [inflation](/en/glossario/en-inflation) and maintain economic stability. For investors, the maintenance of Selic means that interest rate-fixed investments, such as [Treasury Direct](/en/glossario/en-tesouro-direto) titles, will continue to offer attractive returns, especially when compared to other low-risk investment options.
+The central bank base rate, currently at 12.25% per year, was maintained by the Monetary Policy Committee (Copom) of the central bank. This decision aims to control [inflation](/en/glossario/en-inflation) and maintain economic stability. For investors, the maintenance of the rate means that interest rate‑fixed investments, such as [government bonds](/en/glossario/en-tesouro-direto) titles, will continue to offer attractive returns, especially when compared to other low‑risk investment options.
 
 ## Practical Tip for Investors
 
@@ -35,9 +35,9 @@ A valuable tip for individual investors is to diversify their investments, inclu
 
 ## What to Expect for Next Week
 
-For the next week, it's important to pay attention to global economic decisions, such as meetings of the Federal Reserve (FED) in the USA and the European Central Bank (ECB), which can influence interest rates and, consequently, exchange rates. Additionally, the performance of major world economies and news about international trade can also affect the Brazilian financial market. With the help of investment management tools and staying informed, investors can make more accurate decisions and take advantage of the opportunities that arise in the market.
+For the next week, it's important to pay attention to global economic decisions, such as meetings of the Federal Reserve (FED) in the USA and the European Central Bank (ECB), which can influence interest rates and, consequently, exchange rates. Additionally, the performance of major world economies and news about international trade can also affect the financial market. With the help of investment management tools and staying informed, investors can make more accurate decisions and take advantage of the opportunities that arise in the market.
 
-In summary, the week was marked by stability in exchange rates and maintenance of the Selic rate, which can influence investment strategies. Diversifying the portfolio, including investments in different currencies, and using management tools like FinMoovi can be an intelligent strategy to maximize returns and minimize risks. Stay tuned to economic news and adjust your investment plan according to market changes.
+In summary, the week was marked by stability in exchange rates and maintenance of the central bank base rate, which can influence investment strategies. Diversifying the portfolio, including investments in different currencies, and using management tools like FinMoovi can be an intelligent strategy to maximize returns and minimize risks. Stay tuned to economic news and adjust your investment plan according to market changes.
 
 ---
 **Ready to track your investments? Try [FinMoovi free for 7 days](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**

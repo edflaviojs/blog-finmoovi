@@ -52,12 +52,12 @@ Building an emergency reserve and allocating money to long‑term assets already
 
 | Item                     | Value ($) |
 |--------------------------|-----------|
-| Gross monthly salary     | $700 |
-| Fixed monthly expenses   | $360 |
-| Emergency reserve        | $1,000 |
-| Current investments      | $2,400 |
+| Gross monthly salary     | $3,500 |
+| Fixed monthly expenses   | $1,800 |
+| Emergency reserve        | $2,000 |
+| Current investments      | $5,000 |
 
-After paying the bills, calculate how much is left for new investments. In the example above, the person has **$340** of free margin (700 – 360). If you allocate 30 % of that margin to new contributions, the monthly contribution will be **$102**.
+After paying the bills, calculate how much is left for new investments. In the example above, the person has **$1,700** of free margin (3,500 – 1,800). If you allocate 30 % of that margin to new contributions, the monthly contribution will be **$510**.
 
 > **Practical tip:** Use the app **FinMoovi** to record these inflows and outflows. It lets you categorize each expense and instantly shows how much you can invest each month.
 
@@ -79,13 +79,13 @@ For the second half, most people focus on **short and medium term**, but don’t
 | **Real‑estate funds**             | Medium     | Monthly rent receipts, good for passive income |
 | **Cryptocurrencies or alternative assets** | High       | Only 5 % of the portfolio, for those who accept volatility |
 
-#### Sample allocation for someone earning $700
+#### Sample allocation for someone earning $3,500
 
-- **Government bonds:** 30 % ($31) – immediate liquidity.  
-- **Certificates of deposit (CDs) from mid‑size banks:** 20 % ($20) – higher [yield](/en/glossario/en-yield) than the central bank base rate.  
-- **Stock ETF tracking a major index:** 25 % ($26) – exposure to the [stock](/en/glossario/en-stocks) market.  
-- **Real‑estate funds (e.g., a typical fund):** 20 % ($20) – monthly rental income.  
-- **Cryptocurrencies:** 5 % ($5) – controlled risk, can be used as “upside potential”.
+- **Government bonds:** 30 % ($1,050) – immediate liquidity.  
+- **Certificates of deposit (CDs) from mid‑size banks:** 20 % ($700) – higher [yield](/en/glossario/en-yield) than the central bank base rate.  
+- **Stock ETF tracking a major index:** 25 % ($875) – exposure to the [stock](/en/glossario/en-stocks) market.  
+- **Real‑estate funds (e.g., a typical fund):** 20 % ($700) – monthly rental income.  
+- **Cryptocurrencies:** 5 % ($175) – controlled risk, can be used as “upside potential”.
 
 > **Note:** Percentages can shift according to your risk profile. The key is to keep a disciplined monthly contribution.
 

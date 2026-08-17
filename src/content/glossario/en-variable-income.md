@@ -23,12 +23,12 @@ Variable Income is everything that doesn't have a guaranteed return. The price g
 | Risk | Low | Medium to high |
 | Potential | Limited | Unlimited |
 | Ideal horizon | Short/medium | Long (5+ years) |
-| Example | [CDB](/en/glossario/en-cdb), Treasury | [Stocks](/en/glossario/en-stocks), FIIs |
+| Example | [certificates of deposit (CDs)](/en/glossario/en-cdb), government bonds | [Stocks](/en/glossario/en-stocks), REITs |
 
 ## Main variable income investments
 
 1. **Stocks** — pieces of companies  
-2. **[Funds](/en/glossario/en-investment-fund) Real Estate (FIIs)** — shares of funds that invest in real estate  
+2. **[Funds](/en/glossario/en-investment-fund) Real Estate (REITs)** — shares of funds that invest in real estate  
 3. **ETFs** — funds that replicate indexes  
 4. **Cryptocurrencies** — decentralized digital assets  
 5. **Derivatives** — futures contracts, options (advanced)

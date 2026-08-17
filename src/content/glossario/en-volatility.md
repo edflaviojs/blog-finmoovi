@@ -20,8 +20,8 @@ Volatility is the intensity with which the price of an [investment](/en/posts/en
 | Asset | Volatility | Typical daily variation |
 |-------|-------------|----------------------|
 | [Savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet) | Almost zero | 0% |
-| Treasury [Selic](/en/glossario/en-selic) | Very low | 0.03% |
-| [Stocks](/en/glossario/en-stocks) (Ibovespa) | Medium | 1-2% |
+| [central bank base rate](/en/glossario/en-selic) | Very low | 0.03% |
+| [major stock index](/en/glossario/en-stocks) | Medium | 1-2% |
 | Bitcoin | Very high | 3-10% |
 | Meme coins | Extreme | 10-50% |
 
@@ -34,12 +34,12 @@ Not necessarily. It depends on your profile:
 
 ## How to deal with volatility
 
-1. **Have a long horizon** — in the short term, everything oscillates
-2. **Diversify** — different assets oscillate at different times
-3. **Don't check every day** — checking prices daily generates anxiety
-4. **[Invest](/en/posts/en-invest-or-pay-off-debt-which-is-better-in-2026) regularly** — monthly contributions smooth out the average price
-5. **Have an emergency reserve** — to avoid having to sell at a low price
+1. **Have a long horizon** — in the short term, everything oscillates  
+2. **Diversify** — different assets oscillate at different times  
+3. **Don't check every day** — checking prices daily generates anxiety  
+4. **[Invest](/en/posts/en-invest-or-pay-off-debt-which-is-better-in-2026) regularly** — monthly contributions smooth out the average price  
+5. **Have an emergency reserve** — to avoid having to sell at a low price  
 
 ## Volatility index
 
-In Brazil, the main indicator is the **VIX** (fear index). When the VIX is high, the market is nervous. When it's low, it's calm.
+Globally, the main indicator is the **VIX** (fear index). When the VIX is high, the market is nervous. When it's low, it's calm.

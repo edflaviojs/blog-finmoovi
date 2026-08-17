@@ -303,6 +303,10 @@
     "tentativas": 1,
     "ultimaSeveridade": null
   },
+  "en-investments-for-the-second-half-practical-strategies-for.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 1
+  },
   "en-iof.md": {
     "tentativas": 1,
     "ultimaSeveridade": 0
@@ -379,6 +383,10 @@
     "tentativas": 1,
     "ultimaSeveridade": null
   },
+  "en-pix.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
   "en-poupanca.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
@@ -407,6 +415,10 @@
     "tentativas": 1,
     "ultimaSeveridade": null
   },
+  "en-quotes-semana-1-july-2026.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 1
+  },
   "en-quotes-semana-1-june-2026.md": {
     "tentativas": 1,
     "ultimaSeveridade": 0
@@ -419,11 +431,19 @@
     "tentativas": 1,
     "ultimaSeveridade": null
   },
+  "en-quotes-semana-3-june-2026.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 1
+  },
   "en-quotes-semana-4-june-2026.md": {
     "tentativas": 1,
     "ultimaSeveridade": 0
   },
   "en-quotes-semana-5-june-2026.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "en-quotes-week-4-may-2026.md": {
     "tentativas": 1,
     "ultimaSeveridade": 0
   },
@@ -446,6 +466,10 @@
   "en-sac-amortization-table.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
+  },
+  "en-sac-vs-price-amortization-table.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
   },
   "en-salary-bonus.md": {
     "tentativas": 1,
@@ -479,6 +503,10 @@
     "tentativas": 1,
     "ultimaSeveridade": null
   },
+  "en-smart-cashback.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
   "en-spread-bancario.md": {
     "tentativas": 1,
     "ultimaSeveridade": 0
@@ -499,21 +527,41 @@
     "tentativas": 1,
     "ultimaSeveridade": null
   },
+  "en-the-50-30-20-method-for-budgeting.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
   "en-tips-for-controlling-credit-card-expenses.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
+  },
+  "en-understanding-the-interbank-rate-and-its-impact-on-your.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 1
   },
   "en-usura.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
   },
+  "en-variable-income.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
   "en-venda-a-descoberto.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
   },
+  "en-volatility.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
   "en-wall-street.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
+  },
+  "en-wealth-management.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
   },
   "en-webull.md": {
     "tentativas": 1,
@@ -547,6 +595,10 @@
     "tentativas": 1,
     "ultimaSeveridade": null
   },
+  "es-5-alternativas-a-organizze-en-2026-opciones-para-administrar.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
   "es-5-consejos-para-prepararse-financieramente-para-el-segundo.md": {
     "tentativas": 1,
     "ultimaSeveridade": 0
@@ -566,6 +618,10 @@
   "es-7-alternativas-a-la-hoja-de-calculo-de-google-para-finanzas-.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
+  },
+  "es-7-alternativas-a-la-hoja-de-calculo-de-google-para-finanzas.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
   },
   "es-acciones.md": {
     "tentativas": 1,
@@ -631,6 +687,10 @@
     "tentativas": 1,
     "ultimaSeveridade": null
   },
+  "es-cambio.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
   "es-cashback-inteligente.md": {
     "tentativas": 1,
     "ultimaSeveridade": 0
@@ -663,6 +723,10 @@
     "tentativas": 1,
     "ultimaSeveridade": null
   },
+  "es-como-ahorrar-en-las-vacaciones-de-julio-sin-renunciar-a-la.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
   "es-como-crear-una-reserva-de-emergencia.md": {
     "tentativas": 1,
     "ultimaSeveridade": 0
@@ -683,6 +747,18 @@
     "tentativas": 1,
     "ultimaSeveridade": null
   },
+  "es-consejos-para-controlar-gastos-en-la-tarjeta-de-credito.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "es-cotizaciones-semana-1-julio-2026.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "es-cotizaciones-semana-1-junio-2026.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
   "es-cotizaciones-semana-2-julio-2026.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
@@ -692,6 +768,10 @@
     "ultimaSeveridade": 0
   },
   "es-cotizaciones-semana-3-junio-2026.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "es-cotizaciones-semana-4-junio-2026.md": {
     "tentativas": 1,
     "ultimaSeveridade": 0
   },

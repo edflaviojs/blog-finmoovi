@@ -15,7 +15,7 @@ The Tabela SAC is a method of calculating installments that keeps the [amortizat
 On the other hand, the Tabela Price is a method that keeps the installment value constant throughout the financing. In this case, the amortization and interest vary with each installment. At the beginning of the financing, a large part of the installment is used to pay interest, and only a small part is used to amortize the loan. As the financing progresses, the part used to pay interest decreases, and the part that amortizes the loan increases.
 
 ## Practical Example
-Let's consider an example to better understand the difference between these two tables. Imagine you financed $4,700 USD (approximately R$ 10,000,00), with 12% annual interest, to be paid in 12 months.
+Let's consider an example to better understand the difference between these two tables. Imagine you financed $4,700, with 12% annual interest, to be paid in 12 months.
 
 ### Tabela SAC
 - Installment 1: $443 USD (amortization: $389 USD, interest: $54 USD)
