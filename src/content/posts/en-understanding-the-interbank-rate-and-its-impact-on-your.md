@@ -35,7 +35,7 @@ The interbank rate isn’t set by a government agency; it emerges from daily tra
 
 | Investment Type | How the Interbank Rate Comes In |
 |-----------------|---------------------------------|
-| **Certificates of Deposit (CDs)** | Pay a percentage of the interbank rate (e.g., 95 % of the rate). When the rate rises, your yield rises proportionally. |
+| **Certificates of Deposit (CDs)** | Pay a percentage of the interbank rate (e.g., 95 % of the rate). When the rate rises, your [yield](/en/glossario/en-yield) rises proportionally. |
 | **Interbank‑rate funds** | Invest almost exclusively in securities linked to the interbank rate, so they track the rate almost in real time. |
 | **Government Bonds (linked to the central bank base rate)** | Their return follows the central bank base rate, which usually moves hand‑in‑hand with the interbank rate; the gap is typically tiny. |
 | **Tax‑Free CDs** | Some offer “X % of the interbank rate” and are exempt from [income tax](/en/glossario/en-income-tax), making the comparison even more attractive. |

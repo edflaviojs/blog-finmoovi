@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-17T07:41:56.244Z",
-  "sourceCursor": 0,
+  "updatedAt": "2026-08-17T12:55:50.659Z",
+  "sourceCursor": 1,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -803,9 +803,11 @@
       "category": null,
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "used",
       "addedAt": "2026-08-04T14:22:33.695Z",
-      "finmooviHook": "enviado via /status 04/08"
+      "finmooviHook": "enviado via /status 04/08",
+      "usedAt": "2026-08-17T12:55:50.659Z",
+      "usedBy": "gerar-post-orcamento"
     },
     {
       "keyword": "contas do dia",

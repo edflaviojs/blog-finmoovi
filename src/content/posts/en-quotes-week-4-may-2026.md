@@ -27,7 +27,7 @@ The [US dollar](/en/posts/en-investing-in-dollar-in-brazil) closed the week at $
 
 ## Central Bank Base Rate and Impact on Investments
 
-The central bank base rate, currently at 12.25% per year, was maintained by the Monetary Policy Committee (Copom) of the central bank. This decision aims to control [inflation](/en/glossario/en-inflation) and maintain economic stability. For investors, the maintenance of the rate means that interest rate‑fixed investments, such as [government bonds](/en/glossario/en-tesouro-direto) titles, will continue to offer attractive returns, especially when compared to other low‑risk investment options.
+The central bank base rate, currently at 12.25% per year, was maintained by the Monetary Policy Committee (Copom) of the central bank. This decision aims to control [inflation](/en/glossario/en-inflation) and maintain economic stability. For investors, the maintenance of the rate means that [interest](/en/glossario/en-interest) rate‑fixed investments, such as [government bonds](/en/glossario/en-tesouro-direto) titles, will continue to offer attractive returns, especially when compared to other low‑risk investment options.
 
 ## Practical Tip for Investors
 
