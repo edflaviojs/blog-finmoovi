@@ -1,0 +1,117 @@
+{
+  "slug": "loop-decimo-terceiro-nao-vai-acreditar",
+  "formato": "loop16",
+  "term": "O 13º antes que suma",
+  "category": "vida",
+  "keyword": "13º",
+  "situacao": "decimo-terceiro",
+  "gancho": "nao-vai-acreditar",
+  "ganchoFamilia": "não vai acreditar",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "fumaca",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você não vai acreditar, mas… eu vi meu décimo terceiro cair e, antes do carnaval, sumir.",
+      "durationSec": 5.79,
+      "shots": [
+        {
+          "anchor": "acreditar",
+          "visual": {
+            "type": "statement",
+            "text": "Meu décimo terceiro sumiu"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "décimo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Comigo aconteceu. Paguei contas, mercado, escola, e o dinheiro evaporou.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "Comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "O dinheiro evaporou"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então, eu passei a separar meu décimo terceiro assim que cai.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "passei",
+          "visual": {
+            "type": "statement",
+            "text": "Eu separo assim que cai"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "separar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Não quero acreditar. Vai sumir.",
+      "durationSec": 1.81,
+      "shots": [
+        {
+          "anchor": "quero",
+          "visual": {
+            "type": "statement",
+            "text": "Vai sumir"
+          }
+        },
+        {
+          "anchor": "acreditar",
+          "visual": {
+            "type": "statement",
+            "text": "Meu décimo terceiro sumiu"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
