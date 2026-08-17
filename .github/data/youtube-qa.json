@@ -322,5 +322,23 @@
     ],
     "veredito": "1. **O LOOP — 9/10**  \nO primeiro e o último quadro mostram praticamente a mesma cena: **“Meu décimo terceiro sumiu”**, no mesmo lugar e com a mesma identidade visual. Visualmente, o loop está muito bem preparado. Não dá para saber pelos quadros se a entrada/saída realmente fica imperceptível.\n\n2. **A FAIXA DE BAIXO — 9/10**  \nNão há informação importante claramente colada no rodapé. As legendas ficam relativamente acima da área de botões da interface. No quadro de 0,1s, porém, a legenda está mais próxima dessa região.\n\n3. **TEXTO POR CIMA DE TEXTO — 8/10**  \nNão vejo frases claramente sobrepostas ou palavras cortadas. O quadro de **16,7s** é o mais carregado visualmente porque “Vai sumir” fica sobre a área da animação/moneda, mas continua legível.\n\n4. **LEGIBILIDADE — 9/10**  \nTexto principal grande, pesado e com ótimo contraste. As legendas também têm boa leitura graças aos destaques coloridos. Funciona bem para celular.\n\n5. **TELA VIVA OU VAZIA? — 7/10**  \nHá bastante espaço vazio, principalmente na metade inferior de vários quadros. O fundo tem partículas e elementos gráficos, então não parece abandonado, mas alguns quadros poderiam usar melhor o espaço.\n\n6. **COERÊNCIA — 9/10**  \nTodos os quadros parecem claramente pertencer ao mesmo vídeo: mesma marca, fundo, tipografia e linguagem visual. A sequência também conta uma história: décimo terceiro → dinheiro sumindo → contas/escola → “vai sumir” → retorno ao começo.\n\n7. **TESTE CENTRAL — 8/10**  \nPelos quadros parados, **parece mais um motion graphic profissional do que slides comuns**, mas a composição é bastante estática; a sensação de “vídeo” dependerá principalmente do movimento e das transições, que não dá para avaliar pelos quadros.\n\n**NOTA GERAL: 8.5/10**  \n**PROBLEMA 1: O tempo informado não bate com a proposta de 16 segundos — há quadro em 19,4s.**  \n**PROBLEMA 2: Há áreas vazias grandes em vários quadros, especialmente abaixo do conteúdo principal.**  \n**PROBLEMA 3: No quadro 16,7s, “Vai sumir” compete visualmente com a animação da moeda.**  \n**PRIMEIRA COISA A MUDAR: Conferir a duração real para garantir que o vídeo tenha 16 segundos e que o primeiro e o último quadro realmente se encaixem no loop.**",
     "quando": "2026-08-17T05:10:09.710Z"
+  },
+  {
+    "slug": "loop-ipva-e-iptu-nao-vai-acreditar",
+    "formato": "loop16",
+    "nota": 8,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      2.5,
+      4.9,
+      7.4,
+      9.9,
+      12.4,
+      14.8,
+      17.2
+    ],
+    "veredito": "1. **O LOOP — 9/10**  \nPrimeiro e último quadro mostram praticamente a mesma coisa: **“Janeiro chegou pesado”**, no mesmo local e com a mesma composição. Ótimo para loop. A pequena diferença visual de partículas não dá para avaliar como movimento pelos quadros.\n\n2. **A FAIXA DE BAIXO — 6/10**  \nHá informação importante muito baixa em vários quadros. As frases menores ficam próximas do terço inferior e podem ser parcialmente cobertas pela interface do Shorts/Reels.\n\n3. **TEXTO POR CIMA DE TEXTO — 8/10**  \nNão vejo frases claramente sobrepostas ou palavras cortadas. O texto está bem separado. O ponto de atenção é o texto menor e cinza, que fica visualmente mais fraco em alguns quadros.\n\n4. **LEGIBILIDADE — 8/10**  \nOs títulos grandes têm ótimo tamanho e contraste. As palavras menores, como **“Você não vai”**, **“o mercado para”** e **“Janeiro chega”**, têm contraste menor e podem exigir mais esforço no celular.\n\n5. **TELA VIVA OU VAZIA? — 7/10**  \nA parte superior tem bastante personalidade com partículas e elementos gráficos, mas existe bastante espaço vazio, principalmente abaixo dos textos principais. Não está morta, mas poderia ocupar melhor a tela.\n\n6. **COERÊNCIA — 9/10**  \nOs oito quadros parecem claramente pertencer ao mesmo vídeo: mesma identidade visual, logo, fundo, tipografia e tratamento de palavras. A sequência também conta uma história: janeiro → IPVA/IPTU → carnês → guardar dinheiro → janeiro volta.\n\n7. **TESTE CENTRAL — 7/10**  \nParece **um vídeo de slides bem produzido**, mais do que um vídeo realmente dinâmico. Pelos quadros parados, não dá para saber se o movimento e as transições resolvem isso.\n\nNOTA GERAL: 8/10  \nPROBLEMA 1: Texto importante baixo demais, principalmente nos quadros 1, 2, 4, 5, 6, 7 e 8.  \nPROBLEMA 2: Textos secundários em cinza têm contraste fraco, principalmente nos quadros 1, 2, 4 e 7.  \nPROBLEMA 3: Há bastante espaço vazio na metade inferior de vários quadros.  \nPRIMEIRA COISA A MUDAR: Suba todo o texto secundário para uma área mais segura do centro da tela, mantendo o primeiro e o último quadro praticamente idênticos.",
+    "quando": "2026-08-17T05:16:36.860Z"
   }
 ]
