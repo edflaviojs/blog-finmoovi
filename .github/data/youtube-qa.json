@@ -304,5 +304,23 @@
     ],
     "veredito": "1. **O LOOP — 6,5/10**  \nO primeiro e o último quadro têm o mesmo fundo e a mesma frase principal, **“Parcela sem juros?”**, no mesmo lugar. Mas o texto de baixo muda de **“É sério que”** para **“juros assim.”**. Ao reiniciar, a mudança pode ser percebida.\n\n2. **A FAIXA DE BAIXO — 6/10**  \nHá texto importante no terço inferior em praticamente todos os quadros. Não está colado no limite da tela, mas fica numa região que pode sofrer interferência da interface do Shorts/Reels.\n\n3. **TEXTO POR CIMA DE TEXTO — 9/10**  \nNão vejo frases claramente sobrepostas nem palavras cortadas. O texto está bem separado e dentro da área visual.\n\n4. **LEGIBILIDADE — 8,5/10**  \nO texto principal é grande, grosso e com bom contraste. As legendas menores continuam legíveis, mas poderiam estar um pouco maiores para celular.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — 6,5/10**  \nExiste bastante espaço vazio, principalmente entre os elementos centrais e o texto inferior. O fundo ajuda a preencher, mas ainda passa uma sensação de tela pouco ocupada.\n\n6. **COERÊNCIA — 8/10**  \nOs quadros claramente pertencem ao mesmo vídeo: mesma identidade visual, tipografia, cores e elementos. A sequência evolui de “parcela sem juros?” para a ideia de uma fatura cheia e depois volta à frase inicial.\n\n7. **TESTE CENTRAL — 5/10**  \nParece mais uma sequência de **slides animados** do que um vídeo profissional, porque cada quadro depende muito de uma composição estática de texto + ícone.\n\nNOTA GERAL: 7,0  \nPROBLEMA 1: o loop não fecha perfeitamente — no 15s o texto inferior é “juros assim.” e no 0,1s volta para “É sério que”  \nPROBLEMA 2: texto importante fica no terço inferior, sujeito à interface do Shorts/Reels  \nPROBLEMA 3: a composição tem bastante espaço vazio e aparência de slides  \nPRIMEIRA COISA A MUDAR: faça o último quadro visualmente idêntico ao primeiro, ou termine de modo que a mudança do texto inferior para o início pareça uma continuação natural.",
     "quando": "2026-08-16T05:06:38.826Z"
+  },
+  {
+    "slug": "loop-decimo-terceiro-nao-vai-acreditar",
+    "formato": "loop16",
+    "nota": 8.5,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      2.8,
+      5.6,
+      8.3,
+      11.1,
+      13.9,
+      16.7,
+      19.4
+    ],
+    "veredito": "1. **O LOOP — 9/10**  \nO primeiro e o último quadro mostram praticamente a mesma cena: **“Meu décimo terceiro sumiu”**, no mesmo lugar e com a mesma identidade visual. Visualmente, o loop está muito bem preparado. Não dá para saber pelos quadros se a entrada/saída realmente fica imperceptível.\n\n2. **A FAIXA DE BAIXO — 9/10**  \nNão há informação importante claramente colada no rodapé. As legendas ficam relativamente acima da área de botões da interface. No quadro de 0,1s, porém, a legenda está mais próxima dessa região.\n\n3. **TEXTO POR CIMA DE TEXTO — 8/10**  \nNão vejo frases claramente sobrepostas ou palavras cortadas. O quadro de **16,7s** é o mais carregado visualmente porque “Vai sumir” fica sobre a área da animação/moneda, mas continua legível.\n\n4. **LEGIBILIDADE — 9/10**  \nTexto principal grande, pesado e com ótimo contraste. As legendas também têm boa leitura graças aos destaques coloridos. Funciona bem para celular.\n\n5. **TELA VIVA OU VAZIA? — 7/10**  \nHá bastante espaço vazio, principalmente na metade inferior de vários quadros. O fundo tem partículas e elementos gráficos, então não parece abandonado, mas alguns quadros poderiam usar melhor o espaço.\n\n6. **COERÊNCIA — 9/10**  \nTodos os quadros parecem claramente pertencer ao mesmo vídeo: mesma marca, fundo, tipografia e linguagem visual. A sequência também conta uma história: décimo terceiro → dinheiro sumindo → contas/escola → “vai sumir” → retorno ao começo.\n\n7. **TESTE CENTRAL — 8/10**  \nPelos quadros parados, **parece mais um motion graphic profissional do que slides comuns**, mas a composição é bastante estática; a sensação de “vídeo” dependerá principalmente do movimento e das transições, que não dá para avaliar pelos quadros.\n\n**NOTA GERAL: 8.5/10**  \n**PROBLEMA 1: O tempo informado não bate com a proposta de 16 segundos — há quadro em 19,4s.**  \n**PROBLEMA 2: Há áreas vazias grandes em vários quadros, especialmente abaixo do conteúdo principal.**  \n**PROBLEMA 3: No quadro 16,7s, “Vai sumir” compete visualmente com a animação da moeda.**  \n**PRIMEIRA COISA A MUDAR: Conferir a duração real para garantir que o vídeo tenha 16 segundos e que o primeiro e o último quadro realmente se encaixem no loop.**",
+    "quando": "2026-08-17T05:10:09.710Z"
   }
 ]
