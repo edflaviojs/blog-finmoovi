@@ -1,11 +1,11 @@
 # 🗂️ Fila de Keywords (Fase 3)
 
-**Atualizado em:** 2026-08-10T08:20:10.979Z
-**Totais:** 96 pendente(s) · 31 usada(s) · 51 pulada(s)
+**Atualizado em:** 2026-08-17T07:41:56.244Z
+**Totais:** 77 pendente(s) · 48 usada(s) · 53 pulada(s)
 
 ## ⏳ Pendentes por fonte
 
-### Manuais (prioridade 1) — 79
+### Manuais (prioridade 1) — 72
 
 - fatura do cartão _(glossario)_
 - categoria de despesa _(glossario)_
@@ -17,13 +17,6 @@
 - parcelamento _(glossario)_
 - renda mensal _(glossario)_
 - lista de compras _(glossario)_
-- planilha de gastos mensal
-- template excel finanças pessoais
-- excel para despesas mensais
-- orçamento familiar excel
-- app finanças pessoais
-- excel despesas
-- orçamento gratis
 - app financas gratis
 - contas do dia
 - cartao de credito pagbank como funciona _(glossario)_
@@ -87,43 +80,32 @@
 - o que levar para comer na praia para economizar
 - por que é importante economizar energia elétrica
 
-### Lacunas do GSC (prioridade 2) — 8
+### Lacunas do GSC (prioridade 2) — 5
 
-- foreign exchange
-- pagos anticipados
-- renta variable
 - invertir en etfs
 - wealth management
 - fundo de investimento
 - volatility
 - acciónes
 
-### Autocomplete (prioridade 3) — 9
+### Autocomplete (prioridade 3) — 0
 
-- categoria de despesas empresa _(glossario)_
-- despesa recorrente splitwise _(glossario)_
-- despesa recorrente conta azul _(glossario)_
-- controle de gastos whatsapp _(glossario)_
-- planejamento financeiro pessoal _(glossario)_
-- planejamento financeiro familiar _(glossario)_
-- planejamento financeiro planilha _(glossario)_
-- custo de vida no paraguai _(glossario)_
-- custo de vida na espanha _(glossario)_
+_Nenhuma._
 
 ## ✅ Últimas usadas
 
 | Keyword | Usada por | Em |
 |---|---|---|
-| saldo devedor | glossario-auto-diario | 2026-08-09 |
-| categoria de despesas pessoais | glossario-auto-diario | 2026-08-08 |
-| qual o melhor aplicativo para controle financeiro | gerar-dicas-financeiras | 2026-08-08 |
-| fatura do cartão mais | glossario-auto-diario | 2026-08-07 |
-| acciones ejemplos | gerar-dicas-financeiras | 2026-08-07 |
-| fluxo de caixa | glossario-auto-diario | 2026-08-06 |
-| fluxo de caixa excel | glossario-auto-diario | 2026-08-05 |
-| app de controle financeiro | gerar-post-investimentos | 2026-08-05 |
-| fluxo de caixa descontado | glossario-auto-diario | 2026-08-04 |
-| fund investments | gerar-post-inteligente | 2026-08-04 |
+| custo de vida na espanha | glossario-auto-diario | 2026-08-16 |
+| orçamento gratis | gerar-dicas-financeiras | 2026-08-16 |
+| custo de vida no paraguai | glossario-auto-diario | 2026-08-15 |
+| excel despesas | gerar-dicas-financeiras | 2026-08-15 |
+| planejamento financeiro planilha | glossario-auto-diario | 2026-08-14 |
+| app finanças pessoais | gerar-dicas-financeiras | 2026-08-14 |
+| planejamento financeiro familiar | glossario-auto-diario | 2026-08-13 |
+| orçamento familiar excel | gerar-dicas-financeiras | 2026-08-13 |
+| planejamento financeiro pessoal | glossario-auto-diario | 2026-08-12 |
+| renta variable | gerar-post-investimentos | 2026-08-12 |
 
 ## ⏭️ Puladas (já cobertas)
 
@@ -149,6 +131,8 @@
 - teto de gastos campanha eleitoral 2026 (fora-do-nicho)
 - teto de gastos temer (fora-do-nicho)
 - despesa recorrente significado (variacao-duplicada)
+- despesa recorrente splitwise (produto-de-terceiro)
+- despesa recorrente conta azul (nome-proprio-local)
 - controle de gastos pessoais (variacao-duplicada)
 - controle de gastos planilha (variacao-duplicada)
 - significado de credito (verbete-ja-existe)
