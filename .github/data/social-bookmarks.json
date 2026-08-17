@@ -1198,5 +1198,65 @@
         "status": 200
       }
     }
+  },
+  {
+    "slug": "descubra-como-controlar-seu-dinheiro-com-apps-gratuitos",
+    "title": "Descubra como controlar seu dinheiro com apps gratuitos",
+    "url": "https://blog.finmoovi.com/posts/descubra-como-controlar-seu-dinheiro-com-apps-gratuitos",
+    "submittedAt": "2026-08-17T15:16:39.751Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1823353661
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "como-montar-um-orcamento-gratuito-e-eficaz-em-2026",
+    "title": "Como montar um orçamento gratuito e eficaz em 2026",
+    "url": "https://blog.finmoovi.com/posts/como-montar-um-orcamento-gratuito-e-eficaz-em-2026",
+    "submittedAt": "2026-08-17T15:16:40.482Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1823353663
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "como-usar-planilhas-para-controlar-despesas-2026",
+    "title": "Como usar planilhas para controlar despesas (2026)",
+    "url": "https://blog.finmoovi.com/posts/como-usar-planilhas-para-controlar-despesas-2026",
+    "submittedAt": "2026-08-17T15:16:41.038Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1823353670
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
   }
 ]
