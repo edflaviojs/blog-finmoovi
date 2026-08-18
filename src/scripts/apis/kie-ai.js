@@ -10,6 +10,7 @@ import { config } from '../../../site.config.ts';
 import { FACT_GUARD_PROMPT } from '../lib/fact-guard.js';
 import { CURRENT_YEAR } from '../lib/year-guard.js';
 import { postCoreRules, seedKeywordRules } from '../lib/prompt-post.js';
+import { medir, fichasDaResposta } from '../lib/medidor.js';
 
 // Provedores de geração de texto (todos compatíveis com a API OpenAI), em
 // ordem de prioridade/fallback. Cada um se auto-habilita conforme as
@@ -288,6 +289,14 @@ export async function generateText(prompt, options = {}) {
           ? (data.content || []).filter((c) => c && c.type === 'text').map((c) => c.text).join('')
           : (data.choices?.[0]?.message?.content || '');
         if (content) {
+          // Medidor: fichas REAIS quando a API as devolve; senão a estimativa
+          // grosseira (mesma divisão por 4 usada em toda a casa), para o
+          // relatório nunca ficar sem número.
+          const fichas = fichasDaResposta(data) || {
+            entrada: Math.ceil((config.ai.personality.length + prompt.length) / 4),
+            saida: Math.ceil(content.length / 4),
+          };
+          medir({ fornecedor: provider.name, tipo: 'texto', modelo: useModel, ...fichas });
           const via = p > 0 ? ` (fallback #${p})` : ' (primário)';
           console.log(`🤖 Texto gerado via ${provider.name} — ${useModel}${via}`);
           return content;
@@ -314,6 +323,9 @@ export async function generateText(prompt, options = {}) {
 
       const errText = await response.text().catch(() => '');
       errors.push(`${provider.name}: HTTP ${response.status} ${errText.slice(0, 200)}`);
+      // Recusa também é medida: costuma não custar, mas mostra desperdício e
+      // avaria — foi assim que a Cerebras esteve morta sem ninguém reparar.
+      medir({ fornecedor: provider.name, tipo: 'texto', modelo: useModel, falhou: true });
       if (contaFechada(response.status)) {
         contasFechadas.add(provider.name);
         // O MOTIVO vai para o registo, não só o número. Em 18/08/2026 o Cerebras

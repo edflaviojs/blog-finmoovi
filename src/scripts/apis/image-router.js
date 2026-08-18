@@ -18,6 +18,7 @@ import { join } from 'path';
 import sharp from 'sharp';
 import { saveSVGImage } from './svg-generator.js';
 import { config } from '../../../site.config.ts';
+import { medir } from '../lib/medidor.js';
 
 // --- Configuration ---
 
@@ -122,10 +123,12 @@ export async function generateAIImage(topic, slug, destination = 'posts', prompt
       const imagePath = await callProvider(provider, prompt, slug, destination, dir);
       if (imagePath) {
         console.log(`✅ [${provider.name}] Image saved: ${imagePath}`);
+        medir({ fornecedor: provider.name, tipo: 'imagem', modelo: provider.model, unidades: 1 });
         return imagePath;
       }
     } catch (err) {
       console.warn(`⚠️ [${provider.name}] Failed: ${err.message}`);
+      medir({ fornecedor: provider.name, tipo: 'imagem', modelo: provider.model, falhou: true });
       // Continue to next provider
     }
   }

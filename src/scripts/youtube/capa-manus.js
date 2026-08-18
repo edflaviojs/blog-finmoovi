@@ -68,6 +68,7 @@ import {
  * único crédito.
  */
 import { haLeitor, lerTextoDaImagem, BANCO as BANCO_DE_IMAGENS } from './fotos-longo.js';
+import { medir } from '../lib/medidor.js';
 
 const AQUI = dirname(fileURLToPath(import.meta.url));
 const RAIZ = resolve(AQUI, '..', '..', '..');
@@ -744,6 +745,10 @@ async function main() {
    * corrida começa numa conta e acaba noutra.
    */
   const real = custoPorImagem(somar(antes), somar(depois), pedidos);
+  // Medidor: aqui a unidade são CRÉDITOS REALMENTE GASTOS (saldo antes menos
+  // saldo depois) — é o número mais fiável da casa, porque vem do próprio saldo
+  // da Manus e não de uma estimativa nossa.
+  medir({ fornecedor: 'manus', tipo: 'imagem', modelo: 'capa', unidades: Math.max(0, somar(antes) - somar(depois)) });
   if (real) {
     console.log(`   → ${real} por imagem em ${pedidos} pedido(s) (a régua diz ${CUSTO_POR_IMAGEM})`);
     if (Math.abs(real - CUSTO_POR_IMAGEM) > 15) {

@@ -391,6 +391,56 @@ function htmlFalhas(failures) {
   return `${sectionTitle('🚨 Falhas', failures.length, '#f85149')}<table style="width:100%;border-collapse:collapse;">${rows}</table>`;
 }
 
+/**
+ * 💰 O CONSUMO DOS SERVIÇOS PAGOS — a secção que o dono pediu em 18/08/2026:
+ * *"não estou conseguindo acompanhar esses gastos"*.
+ *
+ * Lê o que o `relatorio-gastos.js` já apurou (ele corre meia hora antes). NÃO
+ * relê os registos: são ~60 corridas por dia e este e-mail tem de sair depressa.
+ *
+ * ⚠️ Se o apuramento for de OUTRO dia, diz isso em vez de mostrar o número.
+ * Um número velho apresentado como novo é pior do que secção nenhuma — é
+ * exactamente o tipo de silêncio que deixou a Cerebras morta um dia inteiro.
+ */
+function htmlGastos(rel, hojeISO) {
+  const titulo = '💰 Consumo dos serviços pagos';
+  if (!rel || !rel.dia) {
+    return `${sectionTitle(titulo, undefined, '#d29922')}<p style="color:#d29922;font-size:13px;margin:4px 0 0;">⚠️ Ainda não há apuramento. (O robô "Consumo dos serviços pagos" corre às 05:10 UTC.)</p>`;
+  }
+  if (rel.dia !== hojeISO) {
+    return `${sectionTitle(titulo, undefined, '#d29922')}<p style="color:#d29922;font-size:13px;margin:4px 0 0;">⚠️ O último apuramento é de ${esc(rel.dia)}, não de hoje — o robô de consumo não correu. Número antigo não é mostrado de propósito.</p>`;
+  }
+  if (!rel.linhas || !rel.linhas.length) {
+    return `${sectionTitle(titulo, 0)}${emptyLine('Nenhuma chamada a serviço pago nas últimas 24h.')}`;
+  }
+
+  const rows = rel.linhas.map((l) => {
+    const custo = l.custo === null || l.custo === undefined
+      ? '<span style="color:#8b949e;">preço não configurado</span>'
+      : `US$ ${Number(l.custo).toFixed(4)}`;
+    const disparou = l.salto !== null && l.salto !== undefined && l.salto >= 2.5;
+    const comparacao = l.salto === null || l.salto === undefined
+      ? '<span style="color:#8b949e;">sem base</span>'
+      : `<span style="color:${disparou ? '#f85149' : '#8b949e'};">${disparou ? '⚠️ ' : ''}${Number(l.salto).toFixed(1)}× a média</span>`;
+    return `<tr>
+      <td style="padding:6px 8px 6px 0;color:#c9d1d9;font-size:13px;">${esc(l.fornecedor)} <span style="color:#8b949e;">(${esc(l.tipo)})</span></td>
+      <td style="padding:6px 8px;color:#8b949e;font-size:13px;">${l.chamadas} chamadas${l.recusas ? ` · ${l.recusas} recusadas` : ''}</td>
+      <td style="padding:6px 8px;color:#8b949e;font-size:13px;">${l.quanto} ${esc(l.unidade || '')}</td>
+      <td style="padding:6px 8px;color:#c9d1d9;font-size:13px;">${custo}</td>
+      <td style="padding:6px 0 6px 8px;font-size:13px;">${comparacao}</td>
+    </tr>`;
+  }).join('');
+
+  const alarme = (rel.alarmes && rel.alarmes.length)
+    ? `<p style="color:#f85149;font-size:13px;margin:10px 0 0;">🚨 Consumindo muito acima do normal: <strong>${esc(rel.alarmes.join(', '))}</strong> — vale conferir o painel desse serviço.</p>`
+    : '';
+  const aviso = (rel.semPreco && rel.semPreco.length)
+    ? `<p style="color:#8b949e;font-size:12px;margin:8px 0 0;">Sem preço configurado: ${esc(rel.semPreco.join(', '))}. Preencha <code>.github/data/precos-ia.json</code> para ver em dinheiro. A comparação com a média funciona sem isso.</p>`
+    : '';
+
+  return `${sectionTitle(titulo, rel.linhas.length, '#d29922')}<table style="width:100%;border-collapse:collapse;">${rows}</table>${alarme}${aviso}`;
+}
+
 function htmlConteudo(items) {
   const localeFlag = { pt: '🇧🇷', en: '🇺🇸', es: '🇪🇸' };
   if (items.length === 0) {
@@ -634,6 +684,15 @@ async function main() {
     }
   } catch (err) {
     sections.push(warnBlock('🚨 Falhas', err.message));
+  }
+
+  // 1-bis. Consumo dos serviços pagos (perto do topo: é dinheiro)
+  try {
+    const gastos = JSON.parse(readFileSync(join(process.cwd(), '.github', 'data', 'gastos-diarios.json'), 'utf-8'));
+    sections.push(htmlGastos(gastos.relatorio, new Date().toISOString().split('T')[0]));
+  } catch (err) {
+    // Ficheiro ainda não existe (primeiros dias) — não é falha, é ausência.
+    sections.push(htmlGastos(null, new Date().toISOString().split('T')[0]));
   }
 
   // 2. Conteúdo publicado

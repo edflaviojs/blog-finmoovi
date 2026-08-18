@@ -18,6 +18,7 @@ import { readFileSync, writeFileSync, readdirSync, existsSync } from 'fs';
 import { join } from 'path';
 import matter from 'gray-matter';
 import sharp from 'sharp';
+import { medir, fichasDaResposta } from '../lib/medidor.js';
 
 const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 const THROTTLE_MS = 2500; // ~24 req/min, abaixo do limite do Groq free
@@ -131,8 +132,14 @@ async function describeImage(imageBuffer, mime, locale, topic) {
           await sleep(wait);
           continue;
         }
-        if (!res.ok) throw new Error(`${provider.name} HTTP ${res.status}: ${(await res.text()).slice(0, 120)}`);
+        if (!res.ok) {
+          medir({ fornecedor: provider.name, tipo: 'visao', modelo: provider.model, falhou: true });
+          throw new Error(`${provider.name} HTTP ${res.status}: ${(await res.text()).slice(0, 120)}`);
+        }
         const json = await res.json();
+        // Este caminho NÃO passa pelo kie-ai.js — chama a Cloudflare directamente.
+        // Sem esta linha ficava de fora da conta, e é ele que corre a cada 2h.
+        medir({ fornecedor: provider.name, tipo: 'visao', modelo: provider.model, unidades: 1, ...(fichasDaResposta(json) || {}) });
         // O nativo devolve result.response; o compativel devolve choices[].
         let alt = (provider.native
           ? json.result?.response

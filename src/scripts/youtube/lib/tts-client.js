@@ -22,6 +22,8 @@
  * dono escolher entre as vozes pt-BR do Edge — é 1 linha.
  */
 
+import { medir } from '../../lib/medidor.js';
+
 // Voz padrão por provedor. `edge` usa nomes de voz da Microsoft (`pt-BR-<Nome>Neural`);
 // `azure` idem; `piper` usa o caminho do modelo .onnx (via env).
 export const VOICES = {
@@ -273,7 +275,14 @@ export async function transcribeWords(audioBuffer, { language = 'pt', ext = 'mp3
     body: fd,
     signal: AbortSignal.timeout(120000),
   });
-  if (!res.ok) throw new Error(`whisper HTTP ${res.status}: ${(await res.text().catch(() => '')).slice(0, 200)}`);
+  if (!res.ok) {
+    medir({ fornecedor: 'together', tipo: 'voz', modelo: 'whisper-large-v3', falhou: true });
+    throw new Error(`whisper HTTP ${res.status}: ${(await res.text().catch(() => '')).slice(0, 200)}`);
+  }
+  // O Whisper da Together cobra por MINUTO de áudio, não por ficha — daí a
+  // unidade ser o tamanho do áudio (em KB), que é o que temos aqui sem
+  // descodificar o ficheiro.
+  medir({ fornecedor: 'together', tipo: 'voz', modelo: 'whisper-large-v3', unidades: Math.max(1, Math.round(audioBuffer.length / 1024)) });
   const data = await res.json();
   const words = data.words || (data.segments ? data.segments.flatMap((s) => s.words || []) : []);
   return words.map((w) => ({ word: w.word, start: w.start, end: w.end }));

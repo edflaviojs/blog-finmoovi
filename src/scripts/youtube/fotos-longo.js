@@ -52,6 +52,7 @@ import { execFileSync } from 'node:child_process';
 import {
   pedirAgente, descarregar, CUSTO_POR_IMAGEM, custoPorImagem, quantasCabem, saldos, cabemAoTodo,
 } from './lib/manus-client.js';
+import { medir } from '../lib/medidor.js';
 
 const ROOT = process.cwd();
 const ROTEIRO_DIR = join(ROOT, 'youtube-render', 'public', 'roteiro');
@@ -681,6 +682,8 @@ async function principal() {
     try {
       const fim = (await saldos()).reduce((a, s) => a + s.total, 0);
       const real = custoPorImagem(livresAntes, fim, pagas);
+      // Medidor: créditos REALMENTE gastos (saldo antes − saldo depois).
+      medir({ fornecedor: 'manus', tipo: 'imagem', modelo: 'fotografias', unidades: Math.max(0, livresAntes - fim) });
       if (real) {
         log(`\n💳 custou ${livresAntes - fim} créditos em ${pagas} pedido(s) → ${real} por imagem (a régua diz ${CUSTO_POR_IMAGEM})`);
         if (Math.abs(real - CUSTO_POR_IMAGEM) > 15) {

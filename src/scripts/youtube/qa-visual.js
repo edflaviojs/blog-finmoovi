@@ -43,6 +43,7 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync, statSync } from 'node:fs';
 import { join, dirname, basename } from 'node:path';
 import { execFileSync } from 'node:child_process';
+import { medir, fichasDaResposta } from '../lib/medidor.js';
 
 const ROOT = process.cwd();
 const REGISTO = join(ROOT, '.github', 'data', 'youtube-qa.json');
@@ -182,8 +183,19 @@ async function perguntarAoLeitor(imagem, pergunta) {
    * vazio — que é exactamente o defeito "resposta da IA cortada em silêncio" já
    * registado neste repositório.
    */
-  if (j.code && j.code >= 400) throw new Error(`o leitor recusou (${j.code}): ${j.msg || ''}`);
-  if (!r.ok) throw new Error(`HTTP ${r.status}`);
+  if (j.code && j.code >= 400) {
+    medir({ fornecedor: 'kie.ai', tipo: 'visao', modelo: LEITOR.model, falhou: true });
+    throw new Error(`o leitor recusou (${j.code}): ${j.msg || ''}`);
+  }
+  if (!r.ok) {
+    medir({ fornecedor: 'kie.ai', tipo: 'visao', modelo: LEITOR.model, falhou: true });
+    throw new Error(`HTTP ${r.status}`);
+  }
+
+  // Este é PAGO (a chave é a KIE_AI_KEY). Fichas reais quando vêm; senão a
+  // estimativa — e a imagem conta como unidade, que é o que pesa aqui.
+  const fichas = fichasDaResposta(j) || {};
+  medir({ fornecedor: 'kie.ai', tipo: 'visao', modelo: LEITOR.model, unidades: 1, ...fichas });
 
   const texto = j.choices?.[0]?.message?.content;
   if (!texto || !String(texto).trim()) throw new Error('o leitor respondeu vazio');

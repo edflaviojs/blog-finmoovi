@@ -1,0 +1,21 @@
+{
+  "_leia_isto": "Preços dos serviços pagos. ENQUANTO ESTIVEREM A NULL, o relatório mostra o CONSUMO (chamadas, fichas, imagens) e o SALTO em relação à média — que já apanha surpresa — mas não mostra dinheiro. Preencher é opcional. NUNCA se põe aqui um número inventado: um valor errado dá falsa segurança, que é pior do que não ter valor nenhum.",
+  "_como_preencher": "Use UM dos dois campos por serviço. 'porMilFichas' = quanto custa cada 1000 fichas (tokens), em US$ — é assim que os serviços de texto cobram. 'porUnidade' = quanto custa cada imagem/áudio/crédito, em US$. Os valores estão no painel de preços de cada fornecedor.",
+  "_onde_ver_o_preco": {
+    "cerebras": "https://cloud.cerebras.ai — separador Billing",
+    "together": "https://api.together.ai/settings/billing",
+    "kie.ai": "https://kie.ai — painel da conta",
+    "manus": "https://manus.ai — créditos",
+    "cloudflare": "painel Cloudflare → Workers AI (cobra por 'neurons', com camada gratuita diária)"
+  },
+
+  "cerebras": { "porMilFichas": null },
+  "groq": { "porMilFichas": null },
+  "together": { "porUnidade": null },
+  "kie.ai": { "porMilFichas": null },
+  "manus": { "porUnidade": null },
+  "cloudflare": { "porUnidade": null },
+  "Cloudflare Workers AI": { "porUnidade": null },
+  "Together.ai": { "porUnidade": null },
+  "Pollinations.ai": { "porUnidade": 0 }
+}

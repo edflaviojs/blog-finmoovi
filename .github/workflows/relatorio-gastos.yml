@@ -1,0 +1,69 @@
+name: Consumo dos serviços pagos
+
+# Corre ANTES do "Digest Diario de Conteudo" (05:40 e 06:40 UTC), porque é o
+# digest que mostra este apuramento no e-mail das 7h. Meia hora de folga chega
+# de sobra, e o digest diz em voz alta se o apuramento não for de hoje.
+on:
+  schedule:
+    - cron: '10 5 * * *'
+  workflow_dispatch:
+    inputs:
+      horas:
+        description: 'Quantas horas para trás (padrão 24)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+  actions: read   # é o que permite LER os registos das outras corridas
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+jobs:
+  apurar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Configure git
+        run: |
+          git config user.name "${{ vars.BOT_NAME || 'FinMoovi Bot' }}"
+          git config user.email "${{ vars.BOT_EMAIL || 'bot@finmoovi.com' }}"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Somar o consumo do dia
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          HORAS="${{ github.event.inputs.horas }}"
+          if [ -n "$HORAS" ]; then
+            node src/scripts/automacoes/relatorio-gastos.js --horas="$HORAS"
+          else
+            node src/scripts/automacoes/relatorio-gastos.js
+          fi
+
+      - name: Guardar o histórico
+        run: |
+          git add .github/data/gastos-diarios.json
+          if git diff --cached --quiet -- .github/data/gastos-diarios.json; then
+            echo "sem alterações no histórico"
+          else
+            git commit -m "chore: consumo dos servicos pagos do dia [skip ci]" -- .github/data/gastos-diarios.json
+          fi
+
+      - name: Empurrar
+        run: bash .github/scripts/empurrar.sh
