@@ -1,0 +1,117 @@
+{
+  "slug": "loop-remedio-todo-mes-faca-isso",
+  "formato": "loop16",
+  "term": "O remédio de todo mês",
+  "category": "vida",
+  "keyword": "REMÉDIO",
+  "situacao": "remedio-todo-mes",
+  "gancho": "faca-isso",
+  "ganchoFamilia": "faça isso",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "balde-furado",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se você quer comprar seu remédio sem aperto, FAÇA ISSO.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "comprar",
+          "visual": {
+            "type": "statement",
+            "text": "Confira o remédio antes"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "remédio",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Comigo, a receita venceu e eu quase fiquei sem o remédio.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "Comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "receita",
+          "visual": {
+            "type": "statement",
+            "text": "Quase fiquei sem remédio"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então eu passei a deixar a receita guardada e olhar antes.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "passei",
+          "visual": {
+            "type": "statement",
+            "text": "Passei a olhar a receita"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "deixar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Agora, se você quer remédio sem aperto, faça isso antes.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "remédio",
+          "visual": {
+            "type": "statement",
+            "text": "Faça isso antes de sair"
+          }
+        },
+        {
+          "anchor": "aperto",
+          "visual": {
+            "type": "statement",
+            "text": "Confira o remédio antes"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
