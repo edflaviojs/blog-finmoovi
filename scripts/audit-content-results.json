@@ -496,28 +496,11 @@
     }
   },
   {
-    "file": "en-pix.md",
-    "dir": "glossario",
-    "severity": 1,
-    "issues": {
-      "currency": 1,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [
-        "CPF"
-      ],
-      "ptLeftovers": []
-    }
-  },
-  {
     "file": "en-quotes-semana-1-july-2026.md",
     "dir": "posts",
     "severity": 1,
     "issues": {
-      "currency": 2,
+      "currency": 0,
       "brInstitutions": [],
       "brProducts": [
         "Selic"
@@ -534,24 +517,7 @@
     "dir": "posts",
     "severity": 1,
     "issues": {
-      "currency": 2,
-      "brInstitutions": [],
-      "brProducts": [
-        "Selic"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": []
-    }
-  },
-  {
-    "file": "en-quotes-week-4-may-2026.md",
-    "dir": "posts",
-    "severity": 1,
-    "issues": {
-      "currency": 2,
+      "currency": 0,
       "brInstitutions": [],
       "brProducts": [
         "Selic"
@@ -581,53 +547,6 @@
     }
   },
   {
-    "file": "en-sac-vs-price-amortization-table.md",
-    "dir": "glossario",
-    "severity": 1,
-    "issues": {
-      "currency": 1,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": []
-    }
-  },
-  {
-    "file": "en-smart-cashback.md",
-    "dir": "posts",
-    "severity": 1,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [
-        "Banco Central do Brasil"
-      ],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": []
-    }
-  },
-  {
-    "file": "en-the-50-30-20-method-for-budgeting.md",
-    "dir": "posts",
-    "severity": 1,
-    "issues": {
-      "currency": 2,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": []
-    }
-  },
-  {
     "file": "en-understanding-the-interbank-rate-and-its-impact-on-your.md",
     "dir": "posts",
     "severity": 1,
@@ -645,74 +564,6 @@
     }
   },
   {
-    "file": "en-variable-income.md",
-    "dir": "glossario",
-    "severity": 1,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [],
-      "brProducts": [
-        "CDB"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": []
-    }
-  },
-  {
-    "file": "en-volatility.md",
-    "dir": "glossario",
-    "severity": 1,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [],
-      "brProducts": [
-        "Selic"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": []
-    }
-  },
-  {
-    "file": "en-wealth-management.md",
-    "dir": "glossario",
-    "severity": 1,
-    "issues": {
-      "currency": 1,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [
-        "PGBL"
-      ],
-      "ptLeftovers": []
-    }
-  },
-  {
-    "file": "es-5-alternativas-a-organizze-en-2026-opciones-para-administrar.md",
-    "dir": "posts",
-    "severity": 1,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [
-        "Nubank"
-      ],
-      "brAcronyms": [],
-      "ptLeftovers": []
-    }
-  },
-  {
     "file": "es-5-consejos-para-reorganizar-tus-finanzas-en-vacaciones.md",
     "dir": "posts",
     "severity": 1,
@@ -726,38 +577,6 @@
       "brAcronyms": [],
       "ptLeftovers": [
         "poupança"
-      ]
-    }
-  },
-  {
-    "file": "es-7-alternativas-a-la-hoja-de-calculo-de-google-para-finanzas.md",
-    "dir": "posts",
-    "severity": 1,
-    "issues": {
-      "currency": 1,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": []
-    }
-  },
-  {
-    "file": "es-cambio.md",
-    "dir": "glossario",
-    "severity": 1,
-    "issues": {
-      "currency": 1,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": [
-        "investimentos"
       ]
     }
   },
@@ -779,23 +598,6 @@
     }
   },
   {
-    "file": "es-como-ahorrar-en-las-vacaciones-de-julio-sin-renunciar-a-la.md",
-    "dir": "posts",
-    "severity": 1,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [
-        "INSS"
-      ],
-      "ptLeftovers": []
-    }
-  },
-  {
     "file": "es-como-usar-el-cashback-de-forma-inteligente-y-multiplicar-tus.md",
     "dir": "posts",
     "severity": 1,
@@ -810,74 +612,6 @@
       "ptLeftovers": [
         "dívidas"
       ]
-    }
-  },
-  {
-    "file": "es-consejos-para-controlar-gastos-en-la-tarjeta-de-credito.md",
-    "dir": "posts",
-    "severity": 1,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [
-        "Serasa"
-      ],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": []
-    }
-  },
-  {
-    "file": "es-cotizaciones-semana-1-julio-2026.md",
-    "dir": "posts",
-    "severity": 1,
-    "issues": {
-      "currency": 2,
-      "brInstitutions": [],
-      "brProducts": [
-        "Selic"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": []
-    }
-  },
-  {
-    "file": "es-cotizaciones-semana-1-junio-2026.md",
-    "dir": "posts",
-    "severity": 1,
-    "issues": {
-      "currency": 2,
-      "brInstitutions": [],
-      "brProducts": [
-        "Selic"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": []
-    }
-  },
-  {
-    "file": "es-cotizaciones-semana-4-junio-2026.md",
-    "dir": "posts",
-    "severity": 1,
-    "issues": {
-      "currency": 2,
-      "brInstitutions": [],
-      "brProducts": [
-        "Selic"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": []
     }
   },
   {
@@ -1747,6 +1481,21 @@
   {
     "file": "en-discounted-cash-flow.md",
     "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-discover-how-to-take-control-of-your-money-with-free-apps.md",
+    "dir": "posts",
     "severity": 0,
     "issues": {
       "currency": 0,
@@ -3035,6 +2784,21 @@
     }
   },
   {
+    "file": "en-pix.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-present-value.md",
     "dir": "glossario",
     "severity": 0,
@@ -3155,6 +2919,21 @@
     }
   },
   {
+    "file": "en-quotes-week-4-may-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-real-estate-funds-reits.md",
     "dir": "glossario",
     "severity": 0,
@@ -3201,6 +2980,21 @@
   },
   {
     "file": "en-sac-amortization-table.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-sac-vs-price-amortization-table.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -3365,6 +3159,21 @@
     }
   },
   {
+    "file": "en-smart-cashback.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-spread-bancario.md",
     "dir": "glossario",
     "severity": 0,
@@ -3382,6 +3191,21 @@
   {
     "file": "en-stocks.md",
     "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-the-50-30-20-method-for-budgeting.md",
+    "dir": "posts",
     "severity": 0,
     "issues": {
       "currency": 0,
@@ -3455,6 +3279,21 @@
     }
   },
   {
+    "file": "en-variable-income.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-venda-a-descoberto.md",
     "dir": "glossario",
     "severity": 0,
@@ -3470,7 +3309,37 @@
     }
   },
   {
+    "file": "en-volatility.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-wall-street.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-wealth-management.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -3605,6 +3474,21 @@
     }
   },
   {
+    "file": "es-5-alternativas-a-organizze-en-2026-opciones-para-administrar.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-5-alternativas-al-mobills-en-2026.md",
     "dir": "posts",
     "severity": 0,
@@ -3651,6 +3535,21 @@
   },
   {
     "file": "es-6-mejores-apps-financieros-para-freelancers-guia-practica.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-7-alternativas-a-la-hoja-de-calculo-de-google-para-finanzas.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -3950,6 +3849,21 @@
     }
   },
   {
+    "file": "es-cambio.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-cashback-inteligente.md",
     "dir": "posts",
     "severity": 0,
@@ -4026,6 +3940,21 @@
   },
   {
     "file": "es-como-ahorrar-en-el-plan-de-celular-e-internet-en-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-como-ahorrar-en-las-vacaciones-de-julio-sin-renunciar-a-la.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -4445,6 +4374,21 @@
     }
   },
   {
+    "file": "es-consejos-para-controlar-gastos-en-la-tarjeta-de-credito.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-consorcio-vs-financiacion-cual-vale-mas-la-pena-en-2026.md",
     "dir": "posts",
     "severity": 0,
@@ -4520,6 +4464,36 @@
     }
   },
   {
+    "file": "es-cotizaciones-semana-1-julio-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-cotizaciones-semana-1-junio-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-cotizaciones-semana-2-julio-2026.md",
     "dir": "posts",
     "severity": 0,
@@ -4551,6 +4525,21 @@
   },
   {
     "file": "es-cotizaciones-semana-3-junio-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-cotizaciones-semana-4-junio-2026.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -4597,6 +4586,21 @@
   {
     "file": "es-debentures.md",
     "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-descubre-como-controlar-tu-dinero-con-apps-gratuitas.md",
+    "dir": "posts",
     "severity": 0,
     "issues": {
       "currency": 0,
