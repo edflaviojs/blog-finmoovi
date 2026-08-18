@@ -3,6 +3,7 @@ title: "Discover How to Take Control of Your Money with Free Apps"
 description: "Learn to organize expenses, set goals, and avoid surprises with a free, easy‑to‑use finance app – just a few minutes a day."
 tickerHeadline: "The app that puts your finances in order"
 image: "/images/posts/descubra-como-controlar-seu-dinheiro-com-apps-gratuitos.webp"
+imageAlt: "Colorful, glowing financial charts and graphs on a dark blue background."
 category: "orcamento"
 locale: "en"
 tags: ["free finance app","expense tracking","receipt capture","financial planning","automatic reports","free finance app"]

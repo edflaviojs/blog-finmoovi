@@ -3,6 +3,7 @@ title: "Descubra como controlar seu dinheiro com apps gratuitos"
 description: "Aprenda a organizar despesas, definir metas e evitar surpresas usando um app de finanças grátis e fácil de usar – tudo em poucos minutos por dia."
 tickerHeadline: "O app que transforma sua conta em ordem"
 image: "/images/posts/descubra-como-controlar-seu-dinheiro-com-apps-gratuitos.webp"
+imageAlt: "Gráficos financeiros coloridos e desfocados sobre fundo azul escuro."
 category: "orcamento"
 locale: "pt"
 tags: ["app finanças gratuito","controle de despesas","captura de notas","planejamento financeiro","relatórios automáticos","app financas gratis"]
