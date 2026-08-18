@@ -147,6 +147,23 @@ function provedoresPagos(papel) {
 }
 
 /**
+ * Provedores que já recusaram por CONTA/CHAVE nesta corrida. Vive no módulo de
+ * propósito: vale para todas as chamadas do mesmo processo, e morre com ele —
+ * a corrida seguinte volta a experimentar (a conta pode ter sido paga).
+ */
+const contasFechadas = new Set();
+
+/**
+ * O provedor recusou por conta/chave, e não por avaria ou excesso de pedidos?
+ *   401 chave inválida · 402 sem créditos · 403 sem permissão
+ * Nenhum destes muda de resposta por se tentar outra vez a seguir.
+ * 429 (limite de taxa) e 5xx (avaria) ficam DE FORA: esses passam.
+ */
+function contaFechada(status) {
+  return status === 401 || status === 402 || status === 403;
+}
+
+/**
  * Gera texto com roteamento entre múltiplos provedores (API compatível OpenAI).
  * Tenta cada provedor na ordem; em rate limit (429) faz backoff curto e retenta
  * o mesmo; em erro/queda ou 429 esgotado, cai para o próximo provedor. Só lança
@@ -175,6 +192,18 @@ export async function generateText(prompt, options = {}) {
 
   for (let p = 0; p < providers.length; p++) {
     const provider = providers[p];
+
+    // Provedor que já disse "a tua conta não paga isto" nesta mesma corrida não
+    // é tentado outra vez. 401/402/403 não muda de resposta em cinco minutos —
+    // muda quando o dono acerta a conta ou a chave, e isso não acontece a meio
+    // de uma corrida. Medido em 18/08/2026: o Cerebras devolveu HTTP 402 em
+    // TODAS as chamadas de todas as corridas, uma por cada texto gerado, só
+    // para cair no Groq a seguir. Ver contaFechada() mais abaixo.
+    if (contasFechadas.has(provider.name)) {
+      errors.push(`${provider.name}: pulado — já recusou por conta/chave nesta corrida`);
+      console.log(`⏭️ ${provider.name}: pulado — já recusou por conta/chave nesta corrida.`);
+      continue;
+    }
     // o override de modelo continua a valer só para o primário GRATUITO — com o pago
     // à frente, `p === 0` deixaria de ser quem o chamador julga que é.
     const useModel = (p === 0 && model && !oPago) ? model : provider.model;
@@ -285,7 +314,12 @@ export async function generateText(prompt, options = {}) {
 
       const errText = await response.text().catch(() => '');
       errors.push(`${provider.name}: HTTP ${response.status} ${errText.slice(0, 200)}`);
-      console.log(`⚠️ ${provider.name} falhou (HTTP ${response.status}) — tentando próximo provedor...`);
+      if (contaFechada(response.status)) {
+        contasFechadas.add(provider.name);
+        console.log(`⚠️ ${provider.name} recusou por conta/chave (HTTP ${response.status}) — não volta a ser tentado nesta corrida.`);
+      } else {
+        console.log(`⚠️ ${provider.name} falhou (HTTP ${response.status}) — tentando próximo provedor...`);
+      }
       break; // erro não-recuperável nesse provedor → próximo
     }
   }

@@ -164,13 +164,28 @@ async function callProvider(provider, prompt, slug, destination, dir) {
     let headers;
 
     if (provider.format === 'cloudflare') {
-      body = {
-        prompt,
-        negative_prompt: NEGATIVE_PROMPT,
-        width: provider.maxWidth,
-        height: provider.maxHeight,
-        num_steps: provider.steps,
-      };
+      // ⚠️ O FLUX.1-schnell da Cloudflare aceita SÓ `prompt` e `steps`.
+      // Mandávamos também negative_prompt/width/height/num_steps e ele recusava
+      // TODAS as chamadas, sempre, com HTTP 400:
+      //   «Additional or unevaluated properties '/negative_prompt, /width,
+      //    /height, /num_steps' at '/' not allowed»
+      // Como há Together e Pollinations por baixo, as imagens continuavam a
+      // sair e ninguém reparou — o primeiro fornecedor estava morto há tempo
+      // indeterminado, a gastar uma chamada e um aviso por imagem (medido em
+      // 18/08/2026: 6 recusas numa só corrida do glossário).
+      //
+      // Sem campo próprio para o negativo, as exclusões vão no fim do próprio
+      // texto — é o que a Cloudflare recomenda para este modelo. O tamanho é o
+      // do modelo (quadrado); o sharp lá em baixo normaliza tudo a 1200x750.
+      //
+      // Vai SÓ o `prompt`, e é de propósito: é o único campo que a mensagem de
+      // erro do próprio servidor confirma como aceite. `steps` não foi recusado
+      // porque nunca chegou a ser enviado — logo não está provado, e o valor por
+      // omissão do modelo (4) é já o que `provider.steps` pedia. Sem chave da
+      // Cloudflare nesta máquina não há como ensaiar antes de publicar; a
+      // primeira corrida a seguir é que confirma (procurar por
+      // "[Cloudflare Workers AI] Image saved" no registo).
+      body = { prompt: `${prompt}. Avoid: ${NEGATIVE_PROMPT}` };
       headers = {
         'Authorization': `Bearer ${provider.apiKey}`,
         'Content-Type': 'application/json',
