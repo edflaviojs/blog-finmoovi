@@ -2996,5 +2996,126 @@
         "publicaEmBR": "18/08 às 14h31"
       }
     }
+  },
+  "kw-despesas-fora-de-controle": {
+    "midias": {
+      "video": {
+        "id": "a51ef7b5-32cc-4d67-a992-4789c6ad2a8e",
+        "name": "HpaeDtUBEb.mp4",
+        "originalName": null,
+        "path": "https://media.help4desk.com/HpaeDtUBEb.mp4",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capa": {
+        "id": "497e8809-4897-480e-b112-cab810a8aade",
+        "name": "MQvB8yZfi0.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/MQvB8yZfi0.jpeg",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capaLarga": {
+        "id": "e53b74e8-5444-409a-a183-f7bf8f1f76ea",
+        "name": "3qP9uNL7nb.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/3qP9uNL7nb.jpeg",
+        "thumbnail": null,
+        "alt": null
+      },
+      "telegram": {
+        "media": {
+          "id": "f9f1938d-d66c-4ae5-a42d-961b482ea813",
+          "name": "v1qucqIgJ8.mp4",
+          "originalName": null,
+          "path": "https://media.help4desk.com/v1qucqIgJ8.mp4",
+          "thumbnail": null,
+          "alt": null
+        },
+        "bytes": 18257850,
+        "comprimido": true
+      }
+    },
+    "publicaEm": "2026-08-18T22:00:00.000Z",
+    "publicaEmBR": "18/08 às 19h00",
+    "agendadoEm": "2026-08-18T16:01:10.465Z",
+    "atualizadoEm": "2026-08-18T16:01:13.831Z",
+    "redes": {
+      "instagram": {
+        "postId": "cmsyunxb90066s390qo42qa7j",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-08-18T22:00:00.000Z",
+        "publicaEmBR": "18/08 às 19h00",
+        "midia": "o vídeo",
+        "caracteres": 739,
+        "limite": 2200
+      },
+      "facebook": {
+        "postId": "cmsyunxpf0067s390mslfr22r",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-08-18T22:26:00.000Z",
+        "publicaEmBR": "18/08 às 19h26",
+        "midia": "o vídeo",
+        "caracteres": 509,
+        "limite": 63206
+      },
+      "linkedin-page": {
+        "postId": "cmsyuny2l0068s39004wtcaef",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-08-18T22:43:00.000Z",
+        "publicaEmBR": "18/08 às 19h43",
+        "midia": "o vídeo",
+        "caracteres": 431,
+        "limite": 3000
+      },
+      "threads": {
+        "postId": "cmsyunye40069s390b1qiehml",
+        "canal": "finmoovi",
+        "publicaEm": "2026-08-18T22:58:00.000Z",
+        "publicaEmBR": "18/08 às 19h58",
+        "midia": "o vídeo",
+        "caracteres": 126,
+        "limite": 500
+      },
+      "telegram": {
+        "postId": "cmsyunyp0006as390c4j5f6qj",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-08-18T23:14:00.000Z",
+        "publicaEmBR": "18/08 às 20h14",
+        "midia": "o vídeo, numa cópia de 17.4 MB — o Telegram recusa acima de 20 MB quando vai buscar por endereço",
+        "caracteres": 380,
+        "limite": 4096
+      },
+      "pinterest": {
+        "postId": "cmsyunzc1006bs390vnod149k",
+        "canal": "finmoovi",
+        "publicaEm": "2026-08-18T23:31:00.000Z",
+        "publicaEmBR": "18/08 às 20h31",
+        "midia": "vídeo primeiro, capa depois — a ordem que o Pinterest exige",
+        "caracteres": 405,
+        "limite": 500
+      },
+      "bluesky": {
+        "postId": "cmsyunzns006cs3900benfh98",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-08-18T23:47:00.000Z",
+        "publicaEmBR": "18/08 às 20h47",
+        "midia": "vai a capa DEITADA (o Bluesky não publica vídeo, e a em pé ficaria cortada no feed)",
+        "caracteres": 83,
+        "limite": 300
+      },
+      "instagram-story": {
+        "postId": "cmsyunzwr006ds3902b9l6l04",
+        "tipo": "vídeo",
+        "publicaEm": "2026-08-18T22:05:00.000Z",
+        "publicaEmBR": "18/08 às 19h05"
+      },
+      "facebook-story": {
+        "postId": "cmsyuo00s006es390v5rukt12",
+        "tipo": "vídeo",
+        "publicaEm": "2026-08-18T22:31:00.000Z",
+        "publicaEmBR": "18/08 às 19h31"
+      }
+    }
   }
 }
