@@ -1,0 +1,42 @@
+name: Diagnóstico — quem responde no motor de IA
+
+# SÓ à mão. Não tem horário, não escreve no repositório, não publica nada:
+# faz uma pergunta minúscula ao motor de texto e diz qual fornecedor respondeu.
+#
+# Existe porque em 18/08/2026 a Cerebras começou a recusar (HTTP 402) e a única
+# maneira de saber se tinha voltado era esperar que um robô de CONTEÚDO corresse
+# por acaso — e esses publicam. Medir não pode custar uma publicação.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
+jobs:
+  diagnosticar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Perguntar ao motor de texto
+        env:
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          KIE_API_KEY: ${{ secrets.KIE_API_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
+        run: node src/scripts/diagnostico/fornecedores-ia.js
