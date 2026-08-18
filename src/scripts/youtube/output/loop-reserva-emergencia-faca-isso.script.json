@@ -1,0 +1,117 @@
+{
+  "slug": "loop-reserva-emergencia-faca-isso",
+  "formato": "loop16",
+  "term": "A reserva de emergência",
+  "category": "vida",
+  "keyword": "RESERVA",
+  "situacao": "reserva-emergencia",
+  "gancho": "faca-isso",
+  "ganchoFamilia": "faça isso",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "guarda-chuva",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se você quer dormir tranquilo, FAÇA ISSO.",
+      "durationSec": 2.53,
+      "shots": [
+        {
+          "anchor": "dormir",
+          "visual": {
+            "type": "statement",
+            "text": "Quero dormir tranquilo"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "tranquilo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "guarda-chuva"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Comigo aconteceu. Aluguel, luz e mercado apertaram juntos, eu fiquei.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "Comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "guarda-chuva"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "Tudo apertou junto"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Eu comecei a guardar um pouquinho. Hoje, quando aperta, meu dinheiro segura.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "comecei",
+          "visual": {
+            "type": "statement",
+            "text": "Meu dinheiro segura"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "guardar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "guarda-chuva"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Foi assim comigo. Eu aprendi que dormir tranquilo começa quando eu faço isso.",
+      "durationSec": 4.7,
+      "shots": [
+        {
+          "anchor": "comigo",
+          "visual": {
+            "type": "statement",
+            "text": "Dormir tranquilo começa aqui"
+          }
+        },
+        {
+          "anchor": "aprendi",
+          "visual": {
+            "type": "statement",
+            "text": "Quero dormir tranquilo"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.19
+}
