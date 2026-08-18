@@ -3,6 +3,7 @@ title: "Montar sua primeira carteira de ETFs em 2026"
 description: "Descubra como começar a investir em ETFs de forma simples, usando o FinMoovi para acompanhar seus resultados e construir uma carteira diversificada."
 tickerHeadline: "Comece a investir em ETFs hoje"
 image: "/images/posts/montar-sua-primeira-carteira-de-etfs-em-2026.webp"
+imageAlt: "Formas abstratas onduladas em azul escuro e amarelo com sombras suaves."
 category: "dicas"
 tags:
   - "ETFs"

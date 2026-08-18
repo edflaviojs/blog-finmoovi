@@ -3,6 +3,7 @@ title: "Cómo montar tu primera cartera de ETFs en 2026"
 description: "Aprende paso a paso a crear una cartera diversificada de ETFs en 2026 con FinMoovi. Guía práctica y sin complicaciones."
 tickerHeadline: "Empieza a invertir en ETFs hoy"
 image: "/images/posts/montar-sua-primeira-carteira-de-etfs-em-2026.webp"
+imageAlt: "Formas onduladas abstractas en azul oscuro y amarillo con sombras suaves sobre fondo blanco."
 category: "dicas"
 tags:
   - "ETFs"

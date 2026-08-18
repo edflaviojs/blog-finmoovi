@@ -3,6 +3,7 @@ title: "Building Your First ETF Portfolio in 2026"
 description: "Start investing in ETFs today with a diversified portfolio and low costs."
 tickerHeadline: "Invest in ETFs Now"
 image: "/images/posts/montar-sua-primeira-carteira-de-etfs-em-2026.webp"
+imageAlt: "Abstract yellow and navy blue wavy shapes with paper-cut shadows."
 category: "dicas"
 tags:
   - "ETFs"
