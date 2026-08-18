@@ -414,3 +414,36 @@ export function markUsed(keyword, usedBy, file = QUEUE_FILE) {
     return false;
   }
 }
+
+/**
+ * Marca a keyword como DESCARTADA — para o gerador chamar quando a recusa é
+ * permanente (o próximo dia daria exactamente o mesmo resultado).
+ *
+ * Por que existe (18/08/2026): quando um gerador recusa uma keyword e a corrida
+ * morre, ela fica `pending` e é escolhida OUTRA VEZ no dia seguinte. Foi assim
+ * que "fatura do cartão" derrubou o Glossário Diário dois dias seguidos: a
+ * tradução dela dava o mesmo ficheiro EN/ES de "fatura do cartão mais", já
+ * publicado. Sem marcar, o robô repete o mesmo erro todos os dias, para sempre.
+ *
+ * Diferente de markUsed: aqui NADA foi publicado. Retorna true se marcou e
+ * salvou; false caso contrário (nunca lança).
+ */
+export function markSkipped(keyword, reason, file = QUEUE_FILE) {
+  try {
+    const queue = loadQueue(file);
+    const norm = normalizeKeyword(keyword);
+    const entry = queue.entries.find(e => e.status === 'pending' && normalizeKeyword(e.keyword) === norm);
+    if (!entry) {
+      console.log(`⚠️ keyword-queue: "${keyword}" não encontrada como pending para descartar.`);
+      return false;
+    }
+    entry.status = 'skipped';
+    entry.reason = reason || 'recusada-pelo-gerador';
+    entry.skippedAt = new Date().toISOString();
+    console.log(`ℹ️ keyword-queue: "${keyword}" descartada (${entry.reason}) — não volta a ser escolhida.`);
+    return saveQueue(queue, file);
+  } catch (e) {
+    console.log(`⚠️ keyword-queue: markSkipped falhou (${e.message}).`);
+    return false;
+  }
+}
