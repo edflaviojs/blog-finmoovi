@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-17T12:55:50.659Z",
-  "sourceCursor": 1,
+  "updatedAt": "2026-08-18T10:17:08.251Z",
+  "sourceCursor": 2,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -545,8 +545,10 @@
       "category": null,
       "priority": 2,
       "source": "gsc-gap",
-      "status": "pending",
-      "addedAt": "2026-08-03T10:31:31.688Z"
+      "status": "used",
+      "addedAt": "2026-08-03T10:31:31.688Z",
+      "usedAt": "2026-08-18T10:17:08.251Z",
+      "usedBy": "gerar-post-inteligente"
     },
     {
       "keyword": "wealth management",
