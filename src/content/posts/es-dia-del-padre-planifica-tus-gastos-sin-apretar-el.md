@@ -64,7 +64,7 @@ Después de la celebración, haz una revisión rápida:
 
 1. Verifica si el gasto quedó dentro de la meta.  
 2. Evalúa si la experiencia fue satisfactoria para tu papá.  
-3. Ajusta la categoría de gasto para el próximo año, aumentando o disminuyendo el techo según tu realidad.
+3. Ajusta la [categoría de gasto](/es/glossario/es-categoria-de-gasto) para el próximo año, aumentando o disminuyendo el techo según tu realidad.
 
 Este ciclo de revisión convierte la fecha en un hábito [financiero](/es/posts/es-pierdes-el-control-de-los-gastos-cuando-viajas-usando) saludable, evitando la acumulación de deudas en los años siguientes.
 

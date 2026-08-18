@@ -26,16 +26,16 @@ seo:
   keywords: ["ETFs","cartera de inversión","inversión para principiantes","diversificación","FinMoovi","inversión automática","rebalanceo"]
 ---
 
-¿Llegas a fin de mes, la factura de la luz acaba de llegar y aún piensas en cómo hacer que tu dinero rinda más? Invertir en ETFs te permite montar una cartera diversificada con bajo coste, usando un solo producto que replica índices de mercado. Es ideal para quien quiere obtener rentabilidad sin tener que elegir acciones una por una.
+¿Llegas a fin de mes, la factura de la luz acaba de llegar y aún piensas en cómo hacer que tu dinero rinda más? Invertir en ETFs te permite montar una cartera diversificada con bajo coste, usando un solo producto que replica índices de mercado. Es ideal para quien quiere obtener rentabilidad sin tener que elegir [acciones](/es/glossario/es-acciones) una por una.
 
 ### Por qué los ETFs son la elección correcta para principiantes
 Los ETFs (fondos cotizados en bolsa) funcionan como una “cesta” de activos que sigue la evolución de un índice, ya sea de grandes empresas globales o de sectores específicos. Esta estructura ofrece tres ventajas principales:
 
-1. **Diversificación instantánea** – al comprar una sola cuota, ya estás expuesto a decenas o incluso cientos de acciones.  
+1. **[Diversificación](/es/glossario/es-diversificacion) instantánea** – al comprar una sola cuota, ya estás expuesto a decenas o incluso cientos de acciones.  
 2. **Costes reducidos** – las comisiones de gestión suelen ser una fracción de las que cobran los fondos tradicionales.  
-3. **Liquidez diaria** – las cuotas se negocian como acciones, pudiendo comprarse o venderse en cualquier momento durante la sesión.
+3. **[Liquidez](/es/glossario/es-liquidez) diaria** – las cuotas se negocian como acciones, pudiendo comprarse o venderse en cualquier momento durante la sesión.
 
-Estos beneficios los destaca la [Investopedia](https://www.investopedia.com/terms/e/etf.asp) y estudios de la OCDE que señalan el creciente interés de los inversores individuales en productos de bajo coste.
+Estos [beneficios](/es/posts/es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026) los destaca la [Investopedia](https://www.investopedia.com/terms/e/etf.asp) y estudios de la OCDE que señalan el creciente interés de los inversores individuales en productos de bajo coste.
 
 ### Paso a paso para montar tu primera cartera de ETFs
 
@@ -44,8 +44,8 @@ Antes de abrir la cuenta en la correduría, piensa qué quieres lograr: reserva 
 
 #### 2. Elige los tipos de índices que se ajusten a tu perfil  
 - **Índice global de grandes empresas** – bueno para quien busca estabilidad y exposición a distintas economías.  
-- **Sectores de tecnología o energía limpia** – indicado para quien acepta más volatilidad a cambio de mayor potencial de crecimiento.  
-- **Renta fija o bonos públicos globales** – aporta seguridad y reduce la variación de la cartera.
+- **Sectores de tecnología o energía limpia** – indicado para quien acepta más [volatilidad](/es/glossario/es-volatilidad) a cambio de mayor potencial de crecimiento.  
+- **[Renta fija](/es/glossario/es-renta-fija) o bonos públicos globales** – aporta seguridad y reduce la variación de la cartera.
 
 #### 3. Distribuye tu capital entre los ETFs seleccionados  
 Una regla práctica para principiantes es la “regla 60/40”: 60 % en ETFs de acciones globales y 40 % en ETFs de renta fija. Ajusta la proporción según tu tolerancia al riesgo.
@@ -53,7 +53,7 @@ Una regla práctica para principiantes es la “regla 60/40”: 60 % en ETFs d
 #### 4. Abre una cuenta en una correduría que ofrezca negociación de ETFs sin tarifa de custodia. Muchas plataformas permiten comenzar con el equivalente al precio de un café rápido.
 
 #### 5. Registra la compra en FinMoovi y sigue el desempeño  
-Una vez adquieras las cuotas, abre FinMoovi, ve a la sección **Flujo de caja y reportes** y registra la operación. En pocos clics, la app genera un gráfico de evolución, muestra la asignación por categoría y envía alertas cuando la proporción de un ETF se sale del objetivo definido.
+Una vez adquieras las cuotas, abre FinMoovi, ve a la sección **[Flujo de caja](/es/glossario/es-flujo-de-caja) y reportes** y registra la operación. En pocos clics, la app genera un gráfico de evolución, muestra la asignación por categoría y envía alertas cuando la proporción de un ETF se sale del objetivo definido.
 
 #### 6. Revisa tu cartera cada trimestre  
 Utiliza el recurso de **reportes mensuales** de FinMoovi para comparar el rendimiento real con la meta. Si algún ETF está muy por encima o por debajo del peso ideal, la app sugiere ajustes automáticos, facilitando el reequilibrio sin complicaciones.
@@ -83,7 +83,7 @@ Estas funcionalidades convierten la tarea de monitorizar inversiones en algo tan
 
 ### Conclusión motivadora
 
-Invertir en ETFs es el puente entre quien todavía tiene dudas y quien ya cosecha los frutos de una diversificación inteligente. Con unos pocos clics en FinMoovi, conviertes la idea de “guardar dinero” en un plan visual, monitorado y ajustable. Empieza ahora: abre la app, captura la primera nota de aporte usando la **captura inteligente**, categorízala como “ETF – Global” y da el primer paso en menos de cinco minutos. Tu futuro financiero te lo agradecerá.
+Invertir en ETFs es el puente entre quien todavía tiene dudas y quien ya cosecha los frutos de una diversificación inteligente. Con unos pocos clics en FinMoovi, conviertes la idea de “guardar dinero” en un plan visual, monitorado y ajustable. Empieza ahora: abre la app, captura la primera nota de aporte usando la **[captura inteligente](/es/posts/es-como-conseguir-financiacion-para-tus-proyectos-sin)**, categorízala como “ETF – Global” y da el primer paso en menos de cinco minutos. Tu futuro financiero te lo agradecerá.
 
 ## Preguntas frecuentes
 

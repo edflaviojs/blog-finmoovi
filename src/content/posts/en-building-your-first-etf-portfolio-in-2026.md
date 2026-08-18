@@ -26,26 +26,26 @@ seo:
   keywords: ["ETFs","investing","portfolio","diversification","low cost","finance"]
 ---
 
-You're at the end of the month, the electricity bill has just arrived, and you're still thinking about how to make your money work harder; investing in ETFs allows you to build a diversified portfolio with low costs, using a single product that replicates market indexes, ideal for those who want to earn returns without choosing individual stocks.
+You're at the end of the month, the electricity bill has just arrived, and you're still thinking about how to make your money work harder; investing in ETFs allows you to build a [diversified portfolio](/en/posts/en-building-a-diversified-portfolio-with-r-500) with low costs, using a single product that replicates market indexes, ideal for those who want to earn returns without choosing individual stocks.
 
 ### Why ETFs are the right choice for beginners
 ETFs (Exchange-Traded Funds) work like a "basket" of assets that track the performance of an index, such as a global large-cap index or a specific sector index. This structure brings three main advantages:
 
-1. **Instant diversification** – by buying a single share, you're already exposed to dozens or even hundreds of stocks.
+1. **Instant [diversification](/en/glossario/en-diversification)** – by buying a single share, you're already exposed to dozens or even hundreds of stocks.
 2. **Reduced costs** – management fees are generally a fraction of those charged by traditional funds.
-3. **Daily liquidity** – shares are traded like stocks, and can be bought or sold at any time during trading hours.
+3. **Daily [liquidity](/en/glossario/en-liquidity)** – shares are traded like stocks, and can be bought or sold at any time during trading hours.
 
-These benefits are cited by sources like [Investopedia](https://www.investopedia.com/terms/e/etf.asp) and reinforced by OECD studies that point to the growing participation of individual investors in low-cost products.
+These [benefits](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026) are cited by sources like [Investopedia](https://www.investopedia.com/terms/e/etf.asp) and reinforced by OECD studies that point to the growing participation of individual investors in low-cost products.
 
 ### Step-by-step guide to building your first ETF portfolio
 
 #### 1. Define your goal and time horizon
-Before opening a brokerage account, think about what you want to achieve: emergency fund, retirement, or a medium-term goal, such as buying a property. Use a simple reference, like "covering the cost of rent for three months" or "accumulating the equivalent of a daily coffee for a year".
+Before opening a brokerage account, think about what you want to achieve: [emergency fund](/en/glossario/en-emergency-fund), retirement, or a medium-term goal, such as buying a property. Use a simple reference, like "covering the cost of rent for three months" or "accumulating the equivalent of a daily coffee for a year".
 
 #### 2. Choose the types of indexes that fit your profile
 - **Global large-cap index** – good for those seeking stability and exposure to different economies.
-- **Technology or clean energy sector index** – indicated for those who accept more volatility in exchange for growth potential.
-- **Fixed income or global government bonds** – provides security and reduces portfolio variation.
+- **Technology or clean energy sector index** – indicated for those who accept more [volatility](/en/glossario/en-volatility) in exchange for growth potential.
+- **[Fixed income](/en/glossario/en-fixed-income) or global government bonds** – provides security and reduces portfolio variation.
 
 #### 3. Distribute your capital among the selected ETFs
 A practical rule for beginners is the "60/40 rule": 60% in global stock ETFs and 40% in fixed income ETFs. Adjust the proportion according to your risk tolerance.
@@ -53,7 +53,7 @@ A practical rule for beginners is the "60/40 rule": 60% in global stock ETFs and
 #### 4. Open an account with a brokerage that offers ETF trading without custody fees. Many platforms allow you to start with an amount equivalent to the price of a fast food meal.
 
 #### 5. Register the purchase in FinMoovi and track performance
-When acquiring the shares, open FinMoovi, go to the **Cash Flow and Reports** section, and register the operation. In a few clicks, the app generates a growth graph, shows the allocation by category, and sends alerts when the proportion of an ETF deviates from the defined target.
+When acquiring the shares, open FinMoovi, go to the **[Cash Flow](/en/glossario/en-cash-flow) and Reports** section, and register the operation. In a few clicks, the app generates a growth graph, shows the allocation by category, and sends alerts when the proportion of an ETF deviates from the defined target.
 
 #### 6. Review your portfolio every quarter
 Use the **Monthly Reports** feature of FinMoovi to compare actual performance with the target. If an ETF is significantly above or below the ideal weight, the app suggests automatic adjustments, making rebalancing easy.
