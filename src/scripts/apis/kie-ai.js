@@ -316,7 +316,13 @@ export async function generateText(prompt, options = {}) {
       errors.push(`${provider.name}: HTTP ${response.status} ${errText.slice(0, 200)}`);
       if (contaFechada(response.status)) {
         contasFechadas.add(provider.name);
+        // O MOTIVO vai para o registo, não só o número. Em 18/08/2026 o Cerebras
+        // passou de 100% de sucesso (dia 17 inteiro) a 100% de HTTP 402 antes
+        // das 5h — e ninguém conseguia dizer PORQUÊ, porque o corpo da resposta
+        // era deitado fora e só o número aparecia. "402" não distingue créditos
+        // no fim, plano mudado, chave expirada ou modelo fora do plano.
         console.log(`⚠️ ${provider.name} recusou por conta/chave (HTTP ${response.status}) — não volta a ser tentado nesta corrida.`);
+        console.log(`   ↳ o servidor explicou: ${errText.slice(0, 300) || '(resposta vazia)'}`);
       } else {
         console.log(`⚠️ ${provider.name} falhou (HTTP ${response.status}) — tentando próximo provedor...`);
       }
