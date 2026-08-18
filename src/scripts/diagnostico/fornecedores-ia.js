@@ -40,7 +40,11 @@ async function main() {
 
   const inicio = Date.now();
   try {
-    const resposta = await generateText(PERGUNTA, { maxTokens: 10, temperature: 0 });
+    // ⚠️ `maxTokens` FOLGADO de propósito. A primeira versão pedia 10 e o Groq
+    // devolvia "resposta vazia" — não estava avariado: o gpt-oss-120b gasta
+    // fichas a raciocinar ANTES de escrever, e em 10 não sobrava nenhuma para a
+    // resposta. Uma régua curta demais inventa avaria onde não há.
+    const resposta = await generateText(PERGUNTA, { maxTokens: 300, temperature: 0 });
     console.log(`\n✅ Respondeu em ${((Date.now() - inicio) / 1000).toFixed(1)}s: "${String(resposta).trim().slice(0, 60)}"`);
     console.log('   (a linha "Texto gerado via ..." acima diz QUEM respondeu)');
     process.exit(0);
