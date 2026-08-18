@@ -1,0 +1,215 @@
+{
+  "slug": "kw-r-200-de-assinatura-o-que-vira-em-12-meses",
+  "term": "R$200 de assinatura: o que vira em 12 meses?",
+  "category": "mindset",
+  "keyword": "assinatura",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você sabe *quanto uma assinatura de duzentos reais por mês leva do seu bolso em um ano?*"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ralo",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você sabe quanto uma assinatura de duzentos reais por mês leva do seu bolso em um ano? Dá dois mil e quatrocentos reais.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "Você",
+          "visual": {
+            "type": "statement",
+            "text": "Assinaturas somam"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "duzentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 200/mês"
+          }
+        },
+        {
+          "anchor": "dois",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 2400,
+            "prefix": "R$"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Esse valor começa pequeno. É aquela cobrança que passa batida, junto com outras contas.",
+      "durationSec": 5.4,
+      "shots": [
+        {
+          "anchor": "Esse",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          },
+          "sfx": "slide"
+        },
+        {
+          "anchor": "cobrança",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          }
+        },
+        {
+          "anchor": "contas",
+          "visual": {
+            "type": "list",
+            "text": "Contas do mês"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Essas cobranças somam dois mil e quatrocentos reais em doze meses. E aí você percebe o tamanho da conta.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "Essas",
+          "visual": {
+            "type": "chart",
+            "text": "12 meses de gastos"
+          }
+        },
+        {
+          "anchor": "dois",
+          "visual": {
+            "type": "number",
+            "text": "R$ 2.400"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "você",
+          "visual": {
+            "type": "statement",
+            "text": "O valor aparece"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Aí eu joguei isso no FinMoovi. Ele me mostrou dois mil quinhentos e quarenta e dois no Tesouro Selic.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "joguei",
+          "visual": {
+            "type": "formula",
+            "text": "R$200 x 12 meses"
+          },
+          "sfx": "typewriter"
+        },
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Tela do FinMoovi mostrando projeção no Tesouro Selic"
+          }
+        },
+        {
+          "anchor": "Tesouro",
+          "visual": {
+            "type": "number",
+            "text": "R$ 2.542"
+          },
+          "sfx": "ding"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Esse resultado apareceu na tela. Quer ver o seu? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 5.8,
+      "shots": [
+        {
+          "anchor": "Esse",
+          "visual": {
+            "type": "statement",
+            "text": "Seu resultado"
+          }
+        },
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Então, duzentos reais por mês podem virar dois mil e quatrocentos no ano. Vale revisar o que sai da sua conta. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 10.8,
+      "shots": [
+        {
+          "anchor": "Então",
+          "visual": {
+            "type": "statement",
+            "text": "Pequenas saídas"
+          },
+          "sfx": "alert"
+        },
+        {
+          "anchor": "dois",
+          "visual": {
+            "type": "number",
+            "text": "R$ 2.400"
+          }
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          },
+          "sfx": "thud"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja seu dinheiro no FinMoovi",
+    "target": "app"
+  },
+  "totalDurationSec": 45.4
+}
