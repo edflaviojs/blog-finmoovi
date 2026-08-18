@@ -103,7 +103,18 @@ async function fixGap({ dir, kind, sourceName, missingLocales, present }) {
     }
     const outPath = join(dir, filename);
     if (existsSync(outPath)) {
-      throw new Error(`Colisão: ${filename} já existe (não sobrescrevo). Grupo ${sourceName}.`);
+      // Desde 18/08/2026 o nome vem do TÍTULO traduzido (antes vinha do
+      // translationKey, e nascia em português — ver i18n-sync.js). Com isso
+      // esta colisão passa a ter um significado concreto: DOIS conteúdos
+      // diferentes traduzem para o mesmo nome, como "fatura do cartão" e
+      // "fatura do cartão mais" que dão ambos `en-credit-card-statement.md`.
+      // Continua a bloquear de propósito — escrever por cima apagaria conteúdo
+      // publicado —, mas agora diz o que fazer.
+      throw new Error(
+        `Colisão: ${filename} já existe e é de outro conteúdo (não sobrescrevo). Grupo ${sourceName}.\n` +
+        `   → Dois conteúdos com títulos que traduzem igual. Decida à mão qual fica: ` +
+        `apagar/renomear um deles, ou dar-lhe um título mais específico e voltar a correr.`
+      );
     }
     if (DRY_RUN) {
       console.log(`   [dry-run] geraria ${filename} (${target}) a partir de ${src.file}`);

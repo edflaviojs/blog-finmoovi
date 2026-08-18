@@ -25,6 +25,7 @@ import { readdirSync, readFileSync, existsSync } from 'fs';
 import { join } from 'path';
 import { generateText } from '../apis/kie-ai.js';
 import { guardedTranslate } from './lang-guard.js';
+import { trimSlug } from './seo-guard.js';
 import { config } from '../../../site.config.ts';
 
 // T8: sincroniza apenas os locales configurados (modo 1 idioma = nada a sincronizar)
@@ -47,6 +48,18 @@ export function localeFromFilename(file) {
 /** Slug base do glossário: filename sem prefixo de locale e sem .md */
 export function glossarioBaseSlug(file) {
   return file.replace(/^(en-|es-)/, '').replace(/\.md$/, '');
+}
+
+/**
+ * Título/termo → slug. Mesma receita dos geradores (gerar-dicas-financeiras.js
+ * e irmãos), para o auto-corretor batizar os arquivos como eles batizam.
+ */
+export function createSlug(title) {
+  return trimSlug(String(title ?? '')
+    .toLowerCase()
+    .normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, ''));
 }
 
 /** Separa frontmatter/body e detecta o EOL usado no arquivo. */
@@ -294,18 +307,45 @@ export async function buildTranslatedFile(sourceRaw, sourceFile, targetLocale, k
   if (eol === '\r\n') content = content.replace(/\r?\n/g, '\r\n');
   if (!content.endsWith(eol)) content += eol;
 
-  // Nome do arquivo alvo (derivado do translationKey — estável entre renames).
-  let base;
-  if (kind === 'glossario') {
-    base = getScalar(fm, 'translationKey') || glossarioBaseSlug(sourceFile);
-  } else {
-    base = getScalar(fm, 'translationKey');
-    if (!base) throw new Error(`Post sem translationKey: ${sourceFile}`);
-  }
+  // ── NOME DO ARQUIVO ALVO ────────────────────────────────────────────────────
+  // Vem do TÍTULO/TERMO já traduzido — nunca do translationKey.
+  //
+  // ⚠️ Até 18/08/2026 vinha do translationKey, e o translationKey é sempre o
+  // slug PORTUGUÊS da peça-mãe. Ou seja: todo arquivo que este auto-corretor
+  // criava nascia com nome em português — `en-glossario-fatura-do-cartao-mais.md`
+  // — e o gate `scripts/validate-slug-language.js` REPROVA exactamente isso.
+  // Resultado: sempre que a rede de segurança tinha mesmo de agir, matava a
+  // corrida que a chamou. Dois dias do Glossário Diário morreram assim, e o
+  // script é chamado por 17 workflows: era uma mina debaixo de todos.
+  //
+  // O translationKey NÃO muda — continua a ser ele a casar os irmãos entre
+  // idiomas (scanPosts/scanGlossario agrupam por ele). Muda só o NOME do
+  // ficheiro, que é o que vira URL.
+  const base = nomeBaseTraduzido(translated, fm, sourceFile, kind);
   const prefix = targetLocale === 'pt' ? '' : `${targetLocale}-`;
   const filename = `${prefix}${base}.md`;
 
   return { filename, content };
+}
+
+/**
+ * Slug base do arquivo traduzido, derivado do que a IA devolveu.
+ * Glossário prefere `term` (o `title` arrasta o sufixo "- Financial Glossary"
+ * para dentro da URL); post usa `title`. Se a tradução não veio utilizável,
+ * cai no comportamento antigo (translationKey) — pior nome, mas nunca nome nenhum.
+ */
+function nomeBaseTraduzido(translated, fm, sourceFile, kind) {
+  const fonte = kind === 'glossario'
+    ? (translated.term || translated.title)
+    : translated.title;
+  const slug = createSlug(fonte || '');
+  if (slug) return slug;
+
+  console.log(`::warning::${sourceFile}: tradução sem título/termo utilizável — nome do arquivo cai no translationKey (pode conter português).`);
+  if (kind === 'glossario') return getScalar(fm, 'translationKey') || glossarioBaseSlug(sourceFile);
+  const key = getScalar(fm, 'translationKey');
+  if (!key) throw new Error(`Post sem translationKey: ${sourceFile}`);
+  return key;
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
