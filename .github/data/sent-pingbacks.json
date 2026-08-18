@@ -2428,5 +2428,41 @@
     "target": "https://schema.org",
     "status": "no-endpoint",
     "sentAt": "2026-08-13T14:58:03.702Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/descubra-como-controlar-seu-dinheiro-com-apps-gratuitos/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-08-18T14:33:49.292Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/en-building-your-first-etf-portfolio-in-2026/",
+    "target": "https://www.investopedia.com/terms/e/etf.asp",
+    "status": "no-endpoint",
+    "sentAt": "2026-08-18T14:33:49.460Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/en-discover-how-to-take-control-of-your-money-with-free-apps/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-08-18T14:33:49.647Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/es-como-montar-tu-primera-cartera-de-etfs-en-2026/",
+    "target": "https://www.investopedia.com/terms/e/etf.asp",
+    "status": "no-endpoint",
+    "sentAt": "2026-08-18T14:33:49.848Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/es-descubre-como-controlar-tu-dinero-con-apps-gratuitas/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-08-18T14:33:50.008Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/montar-sua-primeira-carteira-de-etfs-em-2026/",
+    "target": "https://www.investopedia.com/terms/e/etf.asp",
+    "status": "no-endpoint",
+    "sentAt": "2026-08-18T14:33:50.188Z"
   }
 ]
