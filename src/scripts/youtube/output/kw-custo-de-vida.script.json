@@ -1,0 +1,216 @@
+{
+  "slug": "kw-custo-de-vida",
+  "term": "custo de vida",
+  "category": "mindset",
+  "keyword": "custo",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você sabe *pra onde vai o seu dinheiro* quando o custo de vida aperta?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ralo",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você sabe pra onde vai o seu dinheiro quando o custo de vida aperta? Ele escapa em gastos pequenos que você nem percebe.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "sabe",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro está escapando"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "custo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          }
+        },
+        {
+          "anchor": "escapa",
+          "visual": {
+            "type": "icon",
+            "icon": "money"
+          },
+          "sfx": "whoosh"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "E esses gastos aparecem todo dia. Trinta reais no delivery. Vinte no aplicativo. Cinquenta aqui e ali.",
+      "durationSec": 6.5,
+      "shots": [
+        {
+          "anchor": "aparecem",
+          "visual": {
+            "type": "statement",
+            "text": "Todo dia, um pouco"
+          }
+        },
+        {
+          "anchor": "Trinta",
+          "visual": {
+            "type": "number",
+            "text": "R$ 30"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "Cinquenta",
+          "visual": {
+            "type": "number",
+            "text": "R$ 50"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "E aí o que parecia pouco muda de tamanho. Cinquenta reais por semana viram seiscentos reais em poucos meses. Isso assusta.",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "muda",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          },
+          "sfx": "slide"
+        },
+        {
+          "anchor": "Cinquenta",
+          "visual": {
+            "type": "number",
+            "text": "R$ 50 / semana"
+          }
+        },
+        {
+          "anchor": "seiscentos",
+          "visual": {
+            "type": "counter",
+            "from": 50,
+            "to": 600,
+            "prefix": "R$"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "E foi aí que eu somei tudo no FinMoovi. Ele mostrou as compras repetidas e destacou os seiscentos reais.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "somei",
+          "visual": {
+            "type": "statement",
+            "text": "Hora de somar tudo"
+          }
+        },
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "compras",
+            "note": "Lista de compras repetidas destacadas, com categorias e valores visíveis"
+          },
+          "sfx": "click"
+        },
+        {
+          "anchor": "destacou",
+          "visual": {
+            "type": "number",
+            "text": "R$ 600"
+          },
+          "sfx": "ding"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu número também? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 4.6,
+      "shots": [
+        {
+          "anchor": "número",
+          "visual": {
+            "type": "statement",
+            "text": "Veja o seu número"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Você sabe pra onde vai o seu dinheiro quando o custo de vida aperta. Vai embora nos gastos que você nem percebe. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 11.2,
+      "shots": [
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          }
+        },
+        {
+          "anchor": "gastos",
+          "visual": {
+            "type": "statement",
+            "text": "Sem controle, ele some"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Descubra onde seu dinheiro escapa",
+    "target": "app"
+  },
+  "totalDurationSec": 46.5
+}
