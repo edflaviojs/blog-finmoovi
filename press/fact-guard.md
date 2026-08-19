@@ -1,7 +1,7 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-08-18T05:25:53.228Z
-**Posts:** 315 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 45
+**Gerado em:** 2026-08-19T05:26:35.744Z
+**Posts:** 318 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 47
 
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
@@ -63,6 +63,10 @@
 **en-budget-review.md**
 - _After checking your expenses, adjust them according to your needs and goals._
 - _Check your income over the past 6 months and adjust it according to your needs and goals._
+
+**en-building-your-first-etf-portfolio-in-2026.md**
+- _Adjust the proportion according to your risk tolerance._
+- _**Reviewing goals** – every anniversary of the account, adjust the objective according to changes in life (new job, children, etc._
 
 **en-consortium-vs-loan-which-is-better-in-2026.md**
 - _Interest rates vary widely, but in 2026 the global average for consumer credit hovers around 12 %–18 % per year, according to the World Bank._
@@ -128,6 +132,9 @@
 
 **ja-esqueceu-de-pagar-a-conta-e-ficou-na-mao-como-mudar-isso.md**
 - _Ela não era a única: segundo a OECD, mais de 30 % dos consumidores relatam ter perdido prazos de pagamento pelo menos uma vez no último ano[^1]._
+
+**montar-sua-primeira-carteira-de-etfs-em-2026.md**
+- _**Revisão de metas** – a cada aniversário da conta, ajuste o objetivo de acordo com mudanças na vida (novo emprego, filhos, etc._
 
 **orcamento-para-casal-dividindo-despesas.md**
 - _No caso de João e Maria, eles podem decidir dividir as despesas de acordo com a porcentagem de seus salários em relação ao total._
