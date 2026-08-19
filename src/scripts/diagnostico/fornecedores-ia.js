@@ -19,11 +19,56 @@
  */
 
 import { generateText } from '../apis/kie-ai.js';
+import { generateAIImage } from '../apis/image-router.js';
 
 const PERGUNTA = 'Responda apenas com a palavra: ok';
 
+/**
+ * A fila das IMAGENS também é testada — foi o dono quem exigiu que isto
+ * abraçasse tudo, não só o texto: *"tem que abraçar todos os formatos"*.
+ *
+ * E no dia seguinte deu-lhe razão: a Together desligou o
+ * `black-forest-labs/FLUX.1-schnell` em 19/08/2026 e o modelo teve de ser
+ * trocado sem haver chave nesta máquina para ensaiar. Sem esta prova, a única
+ * forma de saber se a troca pegou era esperar que um robô de conteúdo
+ * PUBLICASSE alguma coisa.
+ *
+ * A imagem é gerada na máquina descartável do GitHub e morre com ela: este
+ * workflow não tem permissão de escrita e não commita nada.
+ */
+async function provaDaImagem() {
+  console.log('\n🖼️  Agora a fila das IMAGENS (Cloudflare → Together → Pollinations → desenho).\n');
+  const inicio = Date.now();
+  try {
+    const caminho = await generateAIImage('teste de diagnóstico', `diagnostico-${process.pid}`, 'glossario', 'glossary');
+    console.log(`\n✅ Imagem gerada em ${((Date.now() - inicio) / 1000).toFixed(1)}s → ${caminho}`);
+    console.log('   (a linha "[...] Image saved" acima diz QUAL fornecedor a fez;');
+    console.log('    se disser "SVG", então TODOS os geradores de imagem falharam)');
+    return true;
+  } catch (erro) {
+    console.log(`\n❌ A fila das imagens falhou por inteiro: ${erro.message}`);
+    return false;
+  }
+}
+
 async function main() {
-  console.log('🩺 Diagnóstico dos fornecedores de texto\n');
+  console.log('🩺 Diagnóstico dos fornecedores de IA\n');
+
+  /**
+   * `--so-imagem` salta a prova do texto.
+   *
+   * Serve para uma coisa concreta: o roteador PARA no primeiro fornecedor que
+   * responder, portanto enquanto a Cloudflare funcionar a Together nunca chega
+   * a ser experimentada — e foi justamente a Together que mudou de modelo em
+   * 19/08/2026. O workflow corre este ficheiro uma segunda vez SEM as chaves da
+   * Cloudflare: como cada arranque monta a lista de fornecedores de novo, a
+   * Together passa a ser a primeira e fica provada. Sem truques no código de
+   * produção.
+   */
+  if (process.argv.includes('--so-imagem')) {
+    const ok = await provaDaImagem();
+    process.exit(ok ? 0 : 1);
+  }
 
   const chaves = [
     ['CEREBRAS_API_KEY', 'cerebras'],
@@ -47,11 +92,15 @@ async function main() {
     const resposta = await generateText(PERGUNTA, { maxTokens: 300, temperature: 0 });
     console.log(`\n✅ Respondeu em ${((Date.now() - inicio) / 1000).toFixed(1)}s: "${String(resposta).trim().slice(0, 60)}"`);
     console.log('   (a linha "Texto gerado via ..." acima diz QUEM respondeu)');
-    process.exit(0);
   } catch (erro) {
-    console.log(`\n❌ NENHUM fornecedor respondeu.\n${erro.message}`);
+    console.log(`\n❌ NENHUM fornecedor de TEXTO respondeu.\n${erro.message}`);
+    await provaDaImagem();
     process.exit(1);
   }
+
+  // A fila das imagens corre mesmo quando a do texto correu bem: são independentes.
+  const imagemOk = await provaDaImagem();
+  process.exit(imagemOk ? 0 : 1);
 }
 
 main();

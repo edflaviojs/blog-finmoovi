@@ -32,11 +32,24 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Perguntar ao motor de texto
+      - name: Perguntar ao motor de texto e à fila normal de imagens
         env:
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           KIE_API_KEY: ${{ secrets.KIE_API_KEY }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
+          TOGETHER_API_KEY: ${{ secrets.TOGETHER_API_KEY }}
         run: node src/scripts/diagnostico/fornecedores-ia.js
+
+      # A Together SOZINHA. Sem isto ela nunca seria experimentada: o roteador
+      # para no primeiro que responder, e a Cloudflare responde primeiro.
+      # Aqui as chaves da Cloudflare são deixadas de fora de propósito, e como
+      # este é um arranque novo a lista de fornecedores é montada outra vez.
+      # `continue-on-error`: a Together é o PLANO B — se ela estiver em baixo o
+      # diagnóstico deve DIZER isso, não morrer e esconder o resto.
+      - name: A Together sozinha (o plano B das imagens)
+        continue-on-error: true
+        env:
+          TOGETHER_API_KEY: ${{ secrets.TOGETHER_API_KEY }}
+        run: node src/scripts/diagnostico/fornecedores-ia.js --so-imagem

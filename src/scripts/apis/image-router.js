@@ -6,7 +6,7 @@
  *
  * Providers:
  * 1. Cloudflare Workers AI (FLUX.1-schnell) — free, fast global edge
- * 2. Together.ai (FLUX.1-schnell) — reliable backup
+ * 2. Together.ai (Qwen-Image) — reliable backup
  * 3. Pollinations.ai (FLUX) — free, keyless reinforcement before SVG
  * 4. SVG fallback — always works, no external dependency
  *
@@ -39,7 +39,24 @@ const PROVIDERS = [
     enabled: !!process.env.TOGETHER_API_KEY,
     endpoint: 'https://api.together.xyz/v1/images/generations',
     apiKey: process.env.TOGETHER_API_KEY,
-    model: 'black-forest-labs/FLUX.1-schnell',
+    /**
+     * ⚠️ ERA `black-forest-labs/FLUX.1-schnell`, DESLIGADO PELA TOGETHER EM
+     * 19/08/2026 (aviso por e-mail: "Descontinuação do black-forest-labs/
+     * FLUX.1-schnell amanhã"). `Qwen/Qwen-Image` é o substituto que eles
+     * próprios recomendam no aviso.
+     *
+     * ⚠️ NÃO CONFUNDIR com a linha da Cloudflare aqui em cima, que também diz
+     * "flux-1-schnell": essa é a cópia da CLOUDFLARE, na infraestrutura dela, e
+     * não foi tocada pelo aviso. O Whisper da Together (voz, em
+     * youtube/lib/tts-client.js) também é outro modelo e continua igual.
+     *
+     * ⚠️ POR CONFIRMAR NA PRIMEIRA CORRIDA: não há chave da Together nesta
+     * máquina, logo isto não pôde ser ensaiado antes de publicar. Se o nome ou o
+     * formato do pedido não servirem, a Together falha e o roteador cai na
+     * Pollinations — que é onde já ia cair com o modelo desligado. Procurar
+     * "[Together.ai] Image saved" no registo para dar por confirmado.
+     */
+    model: 'Qwen/Qwen-Image',
     maxWidth: 1152,
     maxHeight: 640,
     steps: 4,
