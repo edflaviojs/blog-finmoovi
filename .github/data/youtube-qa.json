@@ -376,5 +376,23 @@
     ],
     "veredito": "1. **O LOOP — 7/10**  \nO primeiro e o último quadro têm a mesma composição principal: “Confira o remédio antes”. Isso favorece o loop. Porém, o texto inferior muda: no primeiro aparece “Se você quer...”, enquanto no último aparece apenas “antes.” Então a repetição não é totalmente invisível.\n\n2. **A FAIXA DE BAIXO — 6/10**  \nHá texto importante bem baixo em vários quadros, principalmente nos segundos **0,1 · 4,4 · 6,7 · 8,9 · 11,1 · 13,3 · 15,5**. No celular, essa área pode ficar parcialmente coberta pela interface.\n\n3. **TEXTO POR CIMA DE TEXTO — 8/10**  \nNão vejo frases claramente sobrepostas. As palavras destacadas funcionam como legenda dinâmica. O principal risco é a combinação de texto pequeno com o fundo cheio de elementos.\n\n4. **LEGIBILIDADE — 8/10**  \nOs textos principais são grandes, com bom contraste e caixas escuras. As legendas inferiores são menores e podem ficar difíceis de ler em telas pequenas, especialmente quando há várias palavras.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — 6/10**  \nNos quadros **2,2s, 8,9s e 11,1s**, existe bastante espaço vazio na metade inferior. Como é um vídeo vertical de 16 segundos, essa área poderia ser melhor aproveitada para criar mais sensação de conteúdo.\n\n6. **COERÊNCIA — 9/10**  \nOs oito quadros claramente parecem pertencer ao mesmo vídeo: mesma identidade visual, personagem/objeto central, tipografia, cores e marca. A sequência também comunica uma progressão.\n\n7. **TESTE CENTRAL — 5/10**  \n**Pelos quadros parados, parece mais uma sequência de slides animados do que um vídeo profissional**, porque vários momentos têm praticamente a mesma composição e apenas o texto/objeto muda.\n\nNOTA GERAL: 7/10  \nPROBLEMA 1: O loop ainda não é invisível — primeiro e último quadro têm a mesma composição, mas as legendas inferiores são diferentes, em 0,1s e 15,5s.  \nPROBLEMA 2: Texto importante está muito baixo, principalmente em 6,7s–15,5s, podendo ser coberto pela interface do Shorts/Reels.  \nPROBLEMA 3: Há áreas grandes e pouco aproveitadas nos quadros de 2,2s, 8,9s e 11,1s.  \nPRIMEIRA COISA A MUDAR: Fazer o último quadro terminar visualmente exatamente como o primeiro, inclusive na área das legendas, e subir o texto inferior para uma zona segura.",
     "quando": "2026-08-18T05:08:44.813Z"
+  },
+  {
+    "slug": "loop-material-escolar-se-parar",
+    "formato": "loop16",
+    "nota": 5,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      1.9,
+      3.9,
+      5.8,
+      7.8,
+      9.7,
+      11.6,
+      13.5
+    ],
+    "veredito": "1. O LOOP: **Nota 3/10**  \nPrimeiro quadro tem “Cuidado com a lista” pequeno à esquerda; último quadro tem o mesmo texto grande centralizado. Não batem visualmente, quebra o loop.\n\n2. A FAIXA DE BAIXO: **Nota 4/10**  \nTem palavras importantes no terço inferior (ex: “o que acontece”, “de conferir a”, “na escola”), risco alto de ficar escondido pela UI.\n\n3. TEXTO POR CIMA DE TEXTO: **Nota 6/10**  \nNão tem sobreposição direta, mas algumas palavras estão muito próximas da borda e podem parecer cortadas.\n\n4. LEGIBILIDADE: **Nota 5/10**  \nTexto principal ok, mas os textos pequenos de apoio são difíceis de ler no celular.\n\n5. TELA VIVA OU VAZIA: **Nota 6/10**  \nTem bastante área vazia em vários quadros, principalmente no centro/baixo, sensação de “respiro demais”.\n\n6. COERÊNCIA: **Nota 8/10**  \nA história faz sentido e evolui (erro → consequência → correção), bem consistente.\n\n7. TESTE CENTRAL: **Parece mais SLIDES do que vídeo**  \nMuito estático, elementos não mudam muito além do texto.\n\n---\n\nNOTA GERAL: 5/10  \nPROBLEMA 1: Loop quebrado entre 13.5s e 0.1s (layout totalmente diferente)  \nPROBLEMA 2: Texto importante no terço inferior (vários quadros, ex: 3.9s e 11.6s)  \nPROBLEMA 3: Texto secundário pequeno demais para celular (vários quadros)  \nPRIMEIRA COISA A MUDAR: Ajustar o último quadro para ficar visualmente igual ao primeiro e fechar o loop invisível.",
+    "quando": "2026-08-19T05:29:56.237Z"
   }
 ]
