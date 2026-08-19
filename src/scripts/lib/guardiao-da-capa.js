@@ -123,18 +123,34 @@ export async function medirNitidez(imageBuffer) {
 // ─────────────────────────────────────────────────────────────────────────────
 
 /**
- * Fornecedores de visão, na ordem. É o MESMO formato e a mesma ordem do
- * `gerar-alt-imagens.js`, que corre 3x/dia há semanas — caminho provado, não
- * inventado aqui.
+ * Fornecedores de visão, na ordem. Mesmo formato do `gerar-alt-imagens.js`, que
+ * corre 3x/dia há semanas — caminho provado, não inventado aqui.
  *
- * Sondado em 19/08/2026 na máquina do dono: `GEMINI_API_KEY` responde 403
- * ("Your project has been denied access") e `KIE_API_KEY` é uma chave de teste
- * inválida. Ou seja, NÃO há olhos locais — esta trava só se prova a correr no
- * GitHub, onde o `GROQ_API_KEY` existe (está em 38 workflows). É para isso que
- * serve o `--provar` do diagnóstico.
+ * ⚠️ A ORDEM É AO CONTRÁRIO DA DO `gerar-alt-imagens.js`, E É DE PROPÓSITO. Lá o
+ * Groq vem primeiro. Aqui a Cloudflare vem primeiro, porque foi medido na primeira
+ * corrida real desta trava (19/08/2026, corrida 32255948526): o Groq respondeu
+ * **HTTP 429, cota esgotada** — a chave dele está repartida por 38 workflows e o
+ * robô dos textos alternativos consome-a três vezes ao dia. Uma trava que depende
+ * de uma cota disputada fica cega justamente nos dias movimentados.
+ *
+ * A Cloudflare tem cota própria (é a mesma conta que gera as imagens) e nessa
+ * corrida respondeu 200. Fica primeiro; o Groq fica como reserva.
+ *
+ * Sondado na máquina do dono, também em 19/08: `GEMINI_API_KEY` responde 403
+ * ("Your project has been denied access") e `KIE_API_KEY` começa por "test" e é
+ * inválida. Não há olhos locais — esta trava só se prova a correr no GitHub, com
+ * `gh workflow run diagnostico-ia.yml`.
  */
 function fornecedores() {
   return [
+    {
+      name: 'Cloudflare Workers AI',
+      enabled: !!(process.env.CLOUDFLARE_ACCOUNT_ID && process.env.CLOUDFLARE_AI_TOKEN),
+      url: `https://api.cloudflare.com/client/v4/accounts/${process.env.CLOUDFLARE_ACCOUNT_ID}/ai/run/@cf/meta/llama-3.2-11b-vision-instruct`,
+      apiKey: process.env.CLOUDFLARE_AI_TOKEN,
+      model: '@cf/meta/llama-3.2-11b-vision-instruct',
+      formato: 'cloudflare',
+    },
     {
       name: 'Groq',
       enabled: !!process.env.GROQ_API_KEY,
@@ -144,14 +160,6 @@ function fornecedores() {
       // qwen3.6 raciocina por omissão e o <think> sai dentro do content.
       extraBody: { reasoning_effort: 'none' },
       formato: 'openai',
-    },
-    {
-      name: 'Cloudflare Workers AI',
-      enabled: !!(process.env.CLOUDFLARE_ACCOUNT_ID && process.env.CLOUDFLARE_AI_TOKEN),
-      url: `https://api.cloudflare.com/client/v4/accounts/${process.env.CLOUDFLARE_ACCOUNT_ID}/ai/run/@cf/meta/llama-3.2-11b-vision-instruct`,
-      apiKey: process.env.CLOUDFLARE_AI_TOKEN,
-      model: '@cf/meta/llama-3.2-11b-vision-instruct',
-      formato: 'cloudflare',
     },
     {
       name: 'Gemini',
@@ -228,7 +236,10 @@ async function perguntar(provider, imageBuffer, mime) {
     // sondado em 28/07/2026: responde 400 (code 3030). Só o /ai/run nativo com
     // { prompt, image: [bytes] } responde 200. Igual ao gerar-alt-imagens.js.
     headers.Authorization = `Bearer ${provider.apiKey}`;
-    body = { prompt: PERGUNTA, image: [...imageBuffer], max_tokens: 120, temperature: 0 };
+    // 200 e não 120: a pergunta pede JSON com três campos e uma amostra de texto.
+    // Régua curta demais inventa avaria — foi o que aconteceu com o `maxTokens: 10`
+    // do diagnóstico dos textos, que fez o Groq parecer avariado sem estar.
+    body = { prompt: PERGUNTA, image: [...imageBuffer], max_tokens: 200, temperature: 0 };
   } else {
     headers.Authorization = `Bearer ${provider.apiKey}`;
     body = {
@@ -256,14 +267,35 @@ async function perguntar(provider, imageBuffer, mime) {
   const json = await res.json();
   medir({ fornecedor: provider.name, tipo: 'visao', modelo: provider.model, unidades: 1, ...(fichasDaResposta(json) || {}) });
 
-  const texto = provider.formato === 'gemini'
+  const bruto = provider.formato === 'gemini'
     ? json.candidates?.[0]?.content?.parts?.map(p => p.text).join('')
     : provider.formato === 'cloudflare'
-      ? json.result?.response
+      ? (json.result?.response ?? json.result)
       : json.choices?.[0]?.message?.content;
 
-  const lido = lerJson(texto);
-  if (!lido || !lido.nivel) throw new Error(`${provider.name}: resposta sem nível legível ("${String(texto).slice(0, 60)}")`);
+  /**
+   * ⚠️ A RESPOSTA PODE NÃO SER TEXTO. Medido em 19/08/2026, na primeira corrida
+   * real desta trava: o modelo de visão da Cloudflare devolveu um OBJECTO e o
+   * código, que esperava string, registou apenas «resposta sem nível legível
+   * ("[object Object]")» — e a trava ficou cega com a chave a funcionar.
+   *
+   * Como este pedido manda responder em JSON, o objecto devolvido já pode SER a
+   * resposta. Por isso: se vier objecto com `nivel`, usa-se directamente; se vier
+   * outro objecto, passa a texto para o `lerJson` procurar o JSON lá dentro.
+   */
+  let lido = null;
+  if (bruto && typeof bruto === 'object' && !Array.isArray(bruto) && bruto.nivel) {
+    lido = bruto;
+  } else {
+    lido = lerJson(typeof bruto === 'string' ? bruto : JSON.stringify(bruto));
+  }
+
+  if (!lido || !lido.nivel) {
+    // A mensagem mostra o FORMATO, não só o valor: foi a falta disso que fez a
+    // primeira falha custar uma corrida inteira para ser entendida.
+    const forma = bruto && typeof bruto === 'object' ? `objecto com chaves [${Object.keys(bruto).join(', ')}]` : `"${String(bruto).slice(0, 80)}"`;
+    throw new Error(`${provider.name}: resposta sem nível legível — ${forma}`);
+  }
 
   const nivel = String(lido.nivel).toLowerCase();
   if (!['proeminente', 'incidental', 'nenhuma'].includes(nivel)) {

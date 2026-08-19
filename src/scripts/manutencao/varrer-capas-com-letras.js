@@ -123,9 +123,24 @@ async function main() {
 
   const reprovadas = [];
   let medidas = 0;
+  /**
+   * ⚠️ CONTA AS MEDIÇÕES CEGAS E DESISTE.
+   *
+   * Ter chave NÃO é ter resposta. Na primeira corrida real desta varredura
+   * (19/08/2026, corrida 32255952993) as duas chaves de visão estavam presentes
+   * mas nenhuma respondia — o Groq com HTTP 429 e a Cloudflare com um formato de
+   * resposta que o código não sabia ler. A varredura ia percorrer as 744 imagens
+   * sem ver nenhuma e terminar a dizer **"0 reprovadas"**, que é o pior resultado
+   * possível: parece um atestado de saúde e não é nada.
+   *
+   * É a lição de `corrida-verde-post-morto-depois`: verde sem prova não é verde.
+   */
+  let cegas = 0;
+  const MAX_CEGAS = 5;
+  let desistiu = false;
 
   for (const col of COLECOES) {
-    if (!existsSync(col.imgDir)) continue;
+    if (desistiu || !existsSync(col.imgDir)) continue;
     const porImagem = mapearMd(col.mdDir);
 
     // Só as capas principais: as variantes -400/-800 são recortes da mesma imagem.
@@ -144,6 +159,18 @@ async function main() {
         continue;
       }
       medidas++;
+
+      // Cega = a IA de visão não respondeu. Sem ela, "aprovada" não quer dizer
+      // nada, portanto não se conta como medição válida nem se segue em frente.
+      if (verLetras && veredito.cega) {
+        cegas++;
+        if (cegas >= MAX_CEGAS) {
+          desistiu = true;
+          break;
+        }
+        continue;
+      }
+
       if (veredito.aprovada) continue;
 
       const usos = porImagem.get(f) || [];
@@ -155,7 +182,21 @@ async function main() {
     }
   }
 
+  if (desistiu) {
+    console.log(`\n🚨 DESISTI: as primeiras ${MAX_CEGAS} imagens não puderam ser VISTAS.`);
+    console.log('   As chaves de visão estão presentes mas nenhuma respondeu — normalmente');
+    console.log('   cota do Groq esgotada (HTTP 429, ele é repartido por 38 robôs).');
+    console.log('   Os avisos acima dizem o motivo exacto de cada fornecedor.');
+    console.log('   NADA foi medido e NADA foi tocado. Tente mais tarde.');
+    console.log('   (Continuar daria "0 reprovadas", que pareceria um atestado de saúde.)');
+    process.exitCode = 1;
+    return;
+  }
+
   console.log(`\n📊 ${medidas} capas medidas — ${reprovadas.length} reprovadas.`);
+  if (cegas > 0) {
+    console.log(`   ⚠️ ${cegas} não puderam ser vistas (visão sem resposta) — ficaram de fora da conta.`);
+  }
 
   if (!REGERAR) {
     if (reprovadas.length) console.log('   Para refazer estas capas: acrescente --regerar (comece com --limit 10).');
