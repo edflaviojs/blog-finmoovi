@@ -860,8 +860,59 @@
           "titulo": "Resumo do episódio e o que vem no próximo aporte"
         }
       ]
+    },
+    {
+      "videoId": "I0Jk81xaitQ",
+      "title": "AUDIOLIVRO – O CÓDIGO DO DINHEIRO: COMO OS MAIS RICOS DO MUNDO PENSAM E MULTIPLICAM PATRIMÔNIO",
+      "channel": "Desenvolvimento Inteligente - Audiobooks Inéditos",
+      "duracaoSeg": 4849,
+      "idioma": "pt",
+      "viewsPerDay": 212,
+      "vistoEm": "2026-08-19",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "O código invisível que define seu futuro financeiro"
+        },
+        {
+          "seg": 147,
+          "titulo": "O erro psicológico que faz a maioria perder dinheiro"
+        },
+        {
+          "seg": 623,
+          "titulo": "Mentalidade de abundância: o segredo que muda todas as decisões"
+        },
+        {
+          "seg": 1094,
+          "titulo": "O conceito de ativo que pode transformar seu patrimônio"
+        },
+        {
+          "seg": 1537,
+          "titulo": "A força que fez Warren Buffett enriquecer de forma extraordinária"
+        },
+        {
+          "seg": 1979,
+          "titulo": "Por que depender de um único salário é um risco enorme"
+        },
+        {
+          "seg": 2433,
+          "titulo": "Como os ricos tomam decisões antes de investir um único real"
+        },
+        {
+          "seg": 3340,
+          "titulo": "A verdade sobre as dívidas que quase ninguém explica"
+        },
+        {
+          "seg": 3788,
+          "titulo": "O ativo invisível que vale mais do que dinheiro"
+        },
+        {
+          "seg": 4256,
+          "titulo": "O hábito que faz o patrimônio crescer no automático"
+        }
+      ]
     }
   ],
-  "atualizadoEm": "2026-08-18T04:25:54.644Z",
-  "total": 16
+  "atualizadoEm": "2026-08-19T04:28:12.921Z",
+  "total": 17
 }
