@@ -18,9 +18,17 @@ on:
         type: boolean
         default: false
       limit:
-        description: 'Quantas capas no máximo (lote)'
+        description: 'Quantas capas REPROVADAS no máximo (lote de correcção)'
         type: string
         default: '10'
+      max_medicoes:
+        description: 'Quantas imagens medir no máximo (protege a cota diária de IA)'
+        type: string
+        default: '80'
+      desde:
+        description: 'Medir só capas commitadas a partir desta data (AAAA-MM-DD). Vazio = todas'
+        type: string
+        default: '2026-08-18'
 
 permissions:
   contents: write
@@ -38,6 +46,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          # `--desde` lê a data do último commit de cada imagem com `git log`, e
+          # isso não funciona no clone raso que o checkout faz por omissão. Sem
+          # isto a data vinha vazia e a varredura media o acervo TODO, gastando a
+          # cota do dia. É o mesmo motivo pelo qual o regenerar-capas-glossario.yml
+          # também pede o histórico completo.
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v7
@@ -58,7 +74,8 @@ jobs:
           CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
           TOGETHER_API_KEY: ${{ secrets.TOGETHER_API_KEY }}
         run: |
-          ARGS="--limit ${{ inputs.limit }}"
+          ARGS="--limit ${{ inputs.limit }} --max-medicoes ${{ inputs.max_medicoes }}"
+          if [ -n "${{ inputs.desde }}" ]; then ARGS="$ARGS --desde ${{ inputs.desde }}"; fi
           if [ "${{ inputs.regerar }}" = "true" ]; then ARGS="$ARGS --regerar"; fi
           echo "Argumentos: $ARGS"
           node --import tsx src/scripts/manutencao/varrer-capas-com-letras.js $ARGS

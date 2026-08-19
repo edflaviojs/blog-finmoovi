@@ -37,6 +37,7 @@
 
 import { readFileSync, writeFileSync, readdirSync, existsSync } from 'fs';
 import { join } from 'path';
+import { execSync } from 'child_process';
 import matter from 'gray-matter';
 import { aprovarCapa, olhosDisponiveis, LIMITE_NITIDEZ } from '../lib/guardiao-da-capa.js';
 import { generateAIImage } from '../apis/image-router.js';
@@ -50,6 +51,47 @@ const num = (bandeira, omissao) => {
 
 const LIMITE = num('--limit', Infinity);
 const REGERAR = args.includes('--regerar');
+
+/**
+ * ⚠️ TETO DE MEDIÇÕES — E PORQUE ELE EXISTE.
+ *
+ * Cada imagem custa uma consulta a uma IA de visão, e a cota gratuita da
+ * Cloudflare é de **10.000 neurons por DIA**, partilhada com quem GERA as imagens
+ * e com o robô dos textos alternativos.
+ *
+ * Medido em 19/08/2026: uma varredura de **92 imagens** esgotou a cota do dia
+ * («you have used up your daily free allocation of 10,000 neurons»). A varredura
+ * seguinte ficou cega e desistiu — e, pior, a trava anti-letras da PRODUÇÃO
+ * também ficou cega no resto desse dia. O acervo tem ~744 imagens: não cabe num
+ * dia, e nunca caberá.
+ *
+ * Por isso o teto é de MEDIÇÕES, não de reprovações. `--limit` limitava as
+ * reprovadas, o que não protege nada: uma varredura que não encontra nada mede
+ * tudo e gasta tudo.
+ */
+const MAX_MEDICOES = num('--max-medicoes', 80);
+
+/**
+ * `--desde AAAA-MM-DD` mede só as imagens commitadas a partir dessa data.
+ *
+ * É a forma sensata de usar isto: as capas suspeitas são as de 18 e 19/08/2026,
+ * umas poucas dezenas, e não as 744 do acervo. Varrer tudo gasta a cota do dia
+ * para reexaminar centenas de imagens que nunca deram problema.
+ */
+const DESDE = (() => {
+  const i = args.indexOf('--desde');
+  return i >= 0 ? args[i + 1] : null;
+})();
+
+/** Data do último commit de um ficheiro. null quando não se sabe. */
+function dataDoCommit(caminhoRelativo) {
+  try {
+    const out = execSync(`git log -1 --format=%cI -- "${caminhoRelativo}"`, { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }).trim();
+    return out || null;
+  } catch {
+    return null;
+  }
+}
 // Triagem grosseira só com a régua local. Apanha ilustrações planas boas — usar
 // apenas para ver a ordem de grandeza, nunca com --regerar.
 const USAR_NITIDEZ = args.includes('--usar-nitidez');
@@ -58,8 +100,8 @@ const THROTTLE_MS = num('--pausa', 6000); // gentil com as APIs, como nos outros
 const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 
 const COLECOES = [
-  { destino: 'posts', imgDir: join(ROOT, 'public/images/posts'), mdDir: join(ROOT, 'src/content/posts'), campo: 'title' },
-  { destino: 'glossario', imgDir: join(ROOT, 'public/images/glossario'), mdDir: join(ROOT, 'src/content/glossario'), campo: 'term' },
+  { destino: 'posts', imgDir: join(ROOT, 'public/images/posts'), imgDirRel: 'public/images/posts', mdDir: join(ROOT, 'src/content/posts'), campo: 'title' },
+  { destino: 'glossario', imgDir: join(ROOT, 'public/images/glossario'), imgDirRel: 'public/images/glossario', mdDir: join(ROOT, 'src/content/glossario'), campo: 'term' },
 ];
 
 /**
@@ -138,6 +180,8 @@ async function main() {
   let cegas = 0;
   const MAX_CEGAS = 5;
   let desistiu = false;
+  let esgotouTeto = false;
+  let saltadasPorData = 0;
 
   for (const col of COLECOES) {
     if (desistiu || !existsSync(col.imgDir)) continue;
@@ -150,7 +194,21 @@ async function main() {
 
     for (const f of ficheiros) {
       if (reprovadas.length >= LIMITE) break;
+      if (medidas >= MAX_MEDICOES) {
+        esgotouTeto = true;
+        break;
+      }
       const caminho = join(col.imgDir, f);
+
+      if (DESDE) {
+        const data = dataDoCommit(`${col.imgDirRel}/${f}`);
+        // Sem data conhecida, mede — é mais seguro que saltar em silêncio.
+        if (data && data < DESDE) {
+          saltadasPorData++;
+          continue;
+        }
+      }
+
       let veredito;
       try {
         veredito = await aprovarCapa(readFileSync(caminho), { verLetras, exigirNitidez: USAR_NITIDEZ });
@@ -196,6 +254,17 @@ async function main() {
   console.log(`\n📊 ${medidas} capas medidas — ${reprovadas.length} reprovadas.`);
   if (cegas > 0) {
     console.log(`   ⚠️ ${cegas} não puderam ser vistas (visão sem resposta) — ficaram de fora da conta.`);
+  }
+  if (saltadasPorData > 0) {
+    console.log(`   ⏭️ ${saltadasPorData} saltadas por serem anteriores a ${DESDE}.`);
+  }
+  // NUNCA calar um teto: um relatório truncado que não diz que foi truncado
+  // lê-se como "está tudo visto".
+  if (esgotouTeto) {
+    console.log(`   ✂️ TETO DE ${MAX_MEDICOES} MEDIÇÕES ATINGIDO — o resto do acervo NÃO foi visto.`);
+    console.log('      A cota de visão é diária (10.000 neurons na Cloudflare) e uma varredura');
+    console.log('      de 92 imagens esgotou-a em 19/08. Correr por lotes, em dias diferentes,');
+    console.log('      ou usar --desde AAAA-MM-DD para medir só as capas suspeitas.');
   }
 
   if (!REGERAR) {
