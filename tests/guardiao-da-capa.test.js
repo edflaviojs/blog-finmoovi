@@ -29,7 +29,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, existsSync } from 'fs';
 import { join } from 'path';
-import { medirNitidez, aprovarCapa, LIMITE_NITIDEZ } from '../src/scripts/lib/guardiao-da-capa.js';
+import { medirNitidez, aprovarCapa, LIMITE_NITIDEZ, ECOS_DO_ENUNCIADO } from '../src/scripts/lib/guardiao-da-capa.js';
 import { assuntoVisual } from '../src/scripts/apis/image-router.js';
 
 const AMOSTRAS = join(process.cwd(), 'tests', 'amostras');
@@ -98,6 +98,25 @@ test('o assunto visual não tem pontuação, acentos nem anos', () => {
     assert.ok(!/(19|20)\d{2}/.test(a), `ano em "${a}"`);
     assert.ok(!/[áàâãéêíóôõúç]/i.test(a), `acento (logo, português) em "${a}"`);
     assert.ok(a.split(/\s+/).length <= 4, `assunto longo demais: "${a}"`);
+  }
+});
+
+test('a resposta que ECOA o enunciado é apanhada', () => {
+  // Medido na corrida 32256396811 (19/08/2026): a IA de visão devolveu
+  // {"nivel":"proeminente","amostra":"the text you can read, or empty"} —
+  // copiou o exemplo do pedido em vez de olhar a imagem, e a capa foi recusada
+  // por engano. Este é o eco EXACTO que aconteceu; se a lista deixar de o cobrir,
+  // o falso positivo volta.
+  const ecoReal = 'the text you can read, or empty';
+  const apanhado = ECOS_DO_ENUNCIADO.some(e => ecoReal.toLowerCase().includes(e));
+  assert.ok(apanhado, `a lista de ecos não cobre "${ecoReal}"`);
+
+  // E não pode apanhar texto legítimo que uma capa possa ter de verdade —
+  // incluindo o texto real que saiu na capa de 19/08.
+  const leiturasReais = ["Cansarlose de a1ot cer gasts", 'BANCO 2026', 'SALE', ''];
+  for (const amostra of leiturasReais) {
+    assert.ok(!ECOS_DO_ENUNCIADO.some(e => amostra.toLowerCase().includes(e)),
+      `"${amostra}" é leitura legítima e não podia ser tratada como eco`);
   }
 });
 

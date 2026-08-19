@@ -201,8 +201,33 @@ const PERGUNTA =
   'large areas of solid colour is "boa", not "borrada". A sharp photo with a ' +
   'deliberately soft background (bokeh) is also "boa".\n' +
   '\n' +
-  'Answer ONLY with compact JSON, no markdown fence: ' +
-  '{"nivel":"proeminente|incidental|nenhuma","amostra":"the text you can read, or empty","qualidade":"boa|borrada"}';
+  'Answer ONLY with compact JSON, no markdown fence, no explanation. Fill each ' +
+  'field with your own finding — never copy the words of this instruction:\n' +
+  '{"nivel":<proeminente|incidental|nenhuma>,"amostra":<the exact words you can ' +
+  'read in the image, or an empty string>,"qualidade":<boa|borrada>}';
+
+/**
+ * ⚠️ RESPOSTAS QUE SÃO CÓPIA DO ENUNCIADO.
+ *
+ * Medido na corrida 32256396811 (19/08/2026): o modelo de visão devolveu
+ * `{"nivel":"proeminente","amostra":"the text you can read, or empty"}` — copiou
+ * o texto de exemplo do próprio pedido em vez de olhar a imagem, e a capa foi
+ * recusada por engano.
+ *
+ * É outra vez `o-exemplo-pesa-mais-que-a-proibicao`: um exemplo escrito com
+ * palavras copiáveis convida à cópia. O pedido acima já usa `<...>` em vez de
+ * texto entre aspas, mas isto fica como rede: uma resposta que devolva o
+ * enunciado não é uma leitura da imagem, e é tratada como falha do fornecedor
+ * (passa ao seguinte) em vez de virar recusa de uma capa que pode estar boa.
+ */
+export const ECOS_DO_ENUNCIADO = [
+  'the text you can read',
+  'the exact words',
+  'or an empty string',
+  'or empty',
+  'proeminente|incidental',
+  'boa|borrada',
+];
 
 /** Extrai o primeiro objecto JSON de uma resposta, mesmo suja de cerca ou prosa. */
 function lerJson(texto) {
@@ -301,9 +326,18 @@ async function perguntar(provider, imageBuffer, mime) {
   if (!['proeminente', 'incidental', 'nenhuma'].includes(nivel)) {
     throw new Error(`${provider.name}: nível desconhecido "${nivel}"`);
   }
+
+  const amostra = String(lido.amostra || '').slice(0, 80);
+  const eco = ECOS_DO_ENUNCIADO.find(e => amostra.toLowerCase().includes(e));
+  if (eco) {
+    // Não é uma leitura da imagem — é o enunciado de volta. Falha do fornecedor,
+    // não defeito da capa.
+    throw new Error(`${provider.name}: devolveu o enunciado em vez de ler a imagem ("${amostra}")`);
+  }
+
   // A qualidade é secundária: se o modelo não a devolver, não se inventa defeito.
   const borrada = String(lido.qualidade || '').toLowerCase() === 'borrada';
-  return { nivel, amostra: String(lido.amostra || '').slice(0, 80), borrada };
+  return { nivel, amostra, borrada };
 }
 
 /**
