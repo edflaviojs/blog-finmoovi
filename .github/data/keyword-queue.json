@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-19T09:23:49.189Z",
-  "sourceCursor": 2,
+  "updatedAt": "2026-08-19T09:35:30.315Z",
+  "sourceCursor": 1,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -824,9 +824,11 @@
       "category": null,
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "used",
       "addedAt": "2026-08-04T14:22:33.695Z",
-      "finmooviHook": "enviado via /status 04/08"
+      "finmooviHook": "enviado via /status 04/08",
+      "usedAt": "2026-08-19T09:35:30.315Z",
+      "usedBy": "gerar-post-investimentos"
     },
     {
       "keyword": "significado de credito",

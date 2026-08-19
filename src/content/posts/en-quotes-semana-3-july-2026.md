@@ -39,7 +39,7 @@ The [rate](/en/glossario/en-financial-fee) central bank base rate stayed at **13
 
 1. **[Fixed income](/en/glossario/en-fixed-income) more attractive** – Government bonds, certificates of deposit (CDs) and tax‑exempt bank notes continue offering returns above 13 % per year. For anyone still holding a portion of the portfolio in [savings](/en/glossario/en-savings), the gap between 0.5 % on savings and 13 % on fixed income is huge. Switching savings to a central bank base rate Treasury bond can yield tens of thousands more over five years.
 
-2. **Higher credit cost** – Loans, financing and credit cards become more expensive. If you have debt, the golden rule remains: the higher the central bank base rate, the higher the [interest](/en/glossario/en-interest) you pay. Reducing the outstanding balance or renegotiating the debt becomes even more urgent.
+2. **Higher credit cost** – Loans, financing and credit cards become more expensive. If you have debt, the golden rule remains: the higher the central bank base rate, the higher the [interest](/en/glossario/en-interest) you pay. Reducing the [outstanding balance](/en/glossario/en-outstanding-balance) or renegotiating the debt becomes even more urgent.
 
 ## 3. Practical Tip for Individual Investors
 
