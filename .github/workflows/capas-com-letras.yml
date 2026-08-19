@@ -1,0 +1,81 @@
+name: Capas — varrer (e refazer) as que têm letras ou estão borradas
+
+# SÓ à mão, e por lotes pequenos.
+#
+# PARA QUE SERVE: as travas do guardiao-da-capa.js protegem as capas NOVAS. As que
+# já estão no ar entraram antes de existir trava — incluindo as de 18 e 19/08/2026,
+# em que uma capa saiu com o título do post desenhado por cima e outras saíram
+# borradas. Este robô é a limpeza do passado.
+#
+# COMEÇAR SEMPRE POR RELATAR (regerar: false). O relatório não toca em nada e diz
+# quantas capas estão reprovadas e quais. Só depois se manda refazer, em lotes,
+# porque cada capa refeita é uma chamada paga na fila das imagens.
+on:
+  workflow_dispatch:
+    inputs:
+      regerar:
+        description: 'Refazer as capas reprovadas? (false = só relatar)'
+        type: boolean
+        default: false
+      limit:
+        description: 'Quantas capas no máximo (lote)'
+        type: string
+        default: '10'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+jobs:
+  varrer:
+    runs-on: ubuntu-latest
+    # A varredura mede centenas de imagens e cada regeneração espera pela API.
+    # 25 min é o teto do GitHub que os outros robôs de imagem desta casa usam.
+    timeout-minutes: 25
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Varrer as capas
+        env:
+          # Visão: é o que permite VER as letras. Sem isto só a nitidez é medida
+          # e o relatório diz-lo em voz alta.
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          # Geração: só usada quando `regerar` é true.
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
+          TOGETHER_API_KEY: ${{ secrets.TOGETHER_API_KEY }}
+        run: |
+          ARGS="--limit ${{ inputs.limit }}"
+          if [ "${{ inputs.regerar }}" = "true" ]; then ARGS="$ARGS --regerar"; fi
+          echo "Argumentos: $ARGS"
+          node --import tsx src/scripts/manutencao/varrer-capas-com-letras.js $ARGS
+
+      # Só commita quando há mesmo ficheiro mudado. Em modo relatório não há
+      # nenhum, e um commit vazio faria o robô parecer que fez trabalho.
+      - name: Commitar as capas refeitas
+        if: ${{ inputs.regerar }}
+        run: |
+          git config user.name "FinMoovi Bot"
+          git config user.email "bot@finmoovi.com"
+          git add public/images src/content || true
+          if git diff --cached --quiet; then
+            echo "Nada mudou — nenhuma capa foi refeita neste lote."
+            exit 0
+          fi
+          git commit -m "fix(capas): refazer capas com letras ou borradas [bot]"
+          # Outros robôs commitam a toda a hora; rebase antes de empurrar.
+          git pull --rebase origin main
+          git push

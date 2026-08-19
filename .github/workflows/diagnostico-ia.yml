@@ -48,8 +48,14 @@ jobs:
       # este é um arranque novo a lista de fornecedores é montada outra vez.
       # `continue-on-error`: a Together é o PLANO B — se ela estiver em baixo o
       # diagnóstico deve DIZER isso, não morrer e esconder o resto.
+      # O GROQ_API_KEY vai aqui de propósito, embora este passo seja sobre a
+      # Together: é ele que dá olhos à trava anti-letras. Sem ele a imagem da
+      # Together sairia sem ninguém a olhar — e é justamente a dela que mais
+      # interessa ver, porque o Qwen-Image é um modelo ESPECIALISTA em escrever
+      # texto (foi o substituto imposto quando a Together desligou o FLUX).
       - name: A Together sozinha (o plano B das imagens)
         continue-on-error: true
         env:
           TOGETHER_API_KEY: ${{ secrets.TOGETHER_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: node src/scripts/diagnostico/fornecedores-ia.js --so-imagem

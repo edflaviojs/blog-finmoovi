@@ -18,10 +18,77 @@
  * Sai 0 se algum fornecedor respondeu; 1 se NENHUM respondeu.
  */
 
+import { readFileSync, existsSync } from 'fs';
+import { join } from 'path';
 import { generateText } from '../apis/kie-ai.js';
 import { generateAIImage } from '../apis/image-router.js';
+import { temLetras, olhosDisponiveis } from '../lib/guardiao-da-capa.js';
 
 const PERGUNTA = 'Responda apenas com a palavra: ok';
+
+/**
+ * A TRAVA ANTI-LETRAS provada contra amostras reais.
+ *
+ * PORQUE VIVE AQUI E NÃO NOS TESTES: a trava precisa de IA de visão, e não há
+ * chave de visão na máquina do dono (medido em 19/08/2026: a do Gemini responde
+ * 403 e a KIE_API_KEY é de teste). O CI dos testes também não tem. Este
+ * diagnóstico é o único lugar da casa onde o `GROQ_API_KEY` existe — logo é aqui
+ * que se prova.
+ *
+ * PORQUE IMPORTA PROVAR TODO O DIA: a regra "capa sem letras" já foi quebrada
+ * quatro vezes em três meses, sempre em silêncio, e quem descobria era o dono ao
+ * abrir o site. Se um dia a trava deixar de funcionar — modelo de visão
+ * aposentado, formato de resposta mudado, cota esgotada — isto avisa antes de
+ * saírem capas erradas.
+ *
+ * As amostras são as próprias imagens que falharam em 19/08 e estão guardadas em
+ * tests/amostras/. A prova é dupla de propósito: tem de RECUSAR a que tem letras
+ * E ACEITAR a que não tem. Só metade não prova nada — um detector que reprova
+ * tudo passaria no primeiro caso.
+ */
+async function provaDaTravaDeLetras() {
+  console.log('\n🛡️  A trava anti-letras das capas (a regra que já se quebrou 4x).\n');
+
+  const olhos = olhosDisponiveis();
+  if (olhos.length === 0) {
+    console.log('❌ Nenhuma IA de visão configurada — a trava está CEGA nesta corrida.');
+    console.log('   As capas continuam a sair (a trava nunca bloqueia a publicação),');
+    console.log('   mas ninguém está a olhar para elas. Faltam CLOUDFLARE_* ou GROQ_API_KEY.');
+    return false;
+  }
+  console.log(`Olhos disponíveis: ${olhos.join(' → ')}`);
+
+  const dir = join(process.cwd(), 'tests', 'amostras');
+  const casos = [
+    { ficheiro: 'capa-com-letras.webp', esperado: true, descricao: 'a capa de 19/08 com o título desenhado por cima' },
+    { ficheiro: 'capa-boa.webp', esperado: false, descricao: 'uma capa correcta, sem nada escrito' },
+  ];
+
+  let acertos = 0;
+  for (const caso of casos) {
+    const caminho = join(dir, caso.ficheiro);
+    if (!existsSync(caminho)) {
+      console.log(`⚠️ falta a amostra ${caso.ficheiro} — sem ela isto não prova nada`);
+      continue;
+    }
+    try {
+      const r = await temLetras(readFileSync(caminho));
+      const certo = r.reprovada === caso.esperado;
+      if (certo) acertos++;
+      console.log(`${certo ? '✅' : '❌'} ${caso.ficheiro} — ${caso.descricao}`);
+      console.log(`     esperado ${caso.esperado ? 'RECUSAR' : 'ACEITAR'}, obtido ${r.reprovada ? 'RECUSAR' : 'ACEITAR'}` +
+        ` (nível "${r.nivel}"${r.amostra ? `, leu: "${r.amostra}"` : ''}, via ${r.quem || 'ninguém'})`);
+    } catch (erro) {
+      console.log(`❌ ${caso.ficheiro}: ${erro.message}`);
+    }
+  }
+
+  const ok = acertos === casos.length;
+  console.log(ok
+    ? '\n✅ A trava anti-letras está a funcionar: recusa o que tem letras e aceita o que não tem.'
+    : '\n🚨 A TRAVA ANTI-LETRAS NÃO ESTÁ DE PÉ — capas com texto podem voltar a ser publicadas.');
+  return ok;
+}
 
 /**
  * A fila das IMAGENS também é testada — foi o dono quem exigiu que isto
@@ -70,6 +137,12 @@ async function main() {
     process.exit(ok ? 0 : 1);
   }
 
+  /** `--so-trava` prova apenas a trava anti-letras. Útil para conferir depressa. */
+  if (process.argv.includes('--so-trava')) {
+    const ok = await provaDaTravaDeLetras();
+    process.exit(ok ? 0 : 1);
+  }
+
   const chaves = [
     ['CEREBRAS_API_KEY', 'cerebras'],
     ['GROQ_API_KEY', 'groq'],
@@ -95,11 +168,21 @@ async function main() {
   } catch (erro) {
     console.log(`\n❌ NENHUM fornecedor de TEXTO respondeu.\n${erro.message}`);
     await provaDaImagem();
+    await provaDaTravaDeLetras();
     process.exit(1);
   }
 
   // A fila das imagens corre mesmo quando a do texto correu bem: são independentes.
   const imagemOk = await provaDaImagem();
+  // A trava também: uma coisa é a imagem SAIR, outra é ela estar em condições.
+  // Foi essa a distinção que faltou em 19/08 — as capas saíram todas, verdes, e
+  // com letras. A trava não pode derrubar o diagnóstico do que é a fila em si,
+  // por isso o código de saída continua a ser o da fila.
+  const travaOk = await provaDaTravaDeLetras();
+  if (imagemOk && !travaOk) {
+    console.log('\n⚠️ A fila das imagens está de pé, mas a trava anti-letras não —');
+    console.log('   ou seja: as capas saem, e ninguém garante que saem sem texto.');
+  }
   process.exit(imagemOk ? 0 : 1);
 }
 
