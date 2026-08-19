@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-18T15:16:34.406Z",
-  "sourceCursor": 1,
+  "updatedAt": "2026-08-19T09:23:49.189Z",
+  "sourceCursor": 2,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -559,24 +559,28 @@
       "category": null,
       "priority": 2,
       "source": "gsc-gap",
-      "status": "pending",
-      "addedAt": "2026-08-03T10:31:31.688Z"
+      "status": "skipped",
+      "addedAt": "2026-08-03T10:31:31.688Z",
+      "reason": "coberto-glossario"
     },
     {
       "keyword": "fundo de investimento",
       "category": null,
       "priority": 2,
       "source": "gsc-gap",
-      "status": "pending",
-      "addedAt": "2026-08-03T10:31:31.688Z"
+      "status": "skipped",
+      "addedAt": "2026-08-03T10:31:31.688Z",
+      "reason": "coberto-glossario"
     },
     {
       "keyword": "volatility",
       "category": null,
       "priority": 2,
       "source": "gsc-gap",
-      "status": "pending",
-      "addedAt": "2026-08-03T10:31:31.688Z"
+      "status": "used",
+      "addedAt": "2026-08-03T10:31:31.688Z",
+      "usedAt": "2026-08-19T09:23:49.189Z",
+      "usedBy": "gerar-dicas-financeiras"
     },
     {
       "keyword": "fatura do cartão mais",

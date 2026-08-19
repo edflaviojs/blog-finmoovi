@@ -75,7 +75,7 @@ João sold his car for $9,000 and needed the money in his account. He chose a TE
 
 If you typed “ted pix” into Google, you’re probably looking for a straight‑forward answer: which transfer method should you use right now? Here’s the practical rundown.
 
-Both TED and PIX move money between banks, but they serve different everyday needs. Use **TED** when you need a guaranteed same‑day credit to the recipient’s account and you’re comfortable waiting until the banking cut‑off time. It’s the go‑to for larger, scheduled payments such as paying a supplier or settling a loan instalment.
+Both TED and PIX move money between banks, but they serve different everyday needs. Use **TED** when you need a guaranteed same‑day [credit](/en/glossario/en-credit) to the recipient’s account and you’re comfortable waiting until the banking cut‑off time. It’s the go‑to for larger, scheduled payments such as paying a supplier or settling a [loan](/en/glossario/en-loan) instalment.
 
 Reach for **PIX** when speed matters more than the exact timing of the credit. A PIX transaction appears in the recipient’s balance almost instantly, making it perfect for splitting a dinner bill, paying a freelancer, or sending cash to family on short notice. Because it works 24/7, you can send money late at night or on weekends without worrying about banking hours.
 
