@@ -1,0 +1,90 @@
+{
+  "dias": {
+    "2026-08-19": {
+      "cerebras|texto": 6695,
+      "together|voz": 209,
+      "cloudflare|texto": 2004,
+      "kie/gpt-5-2|texto": 8204,
+      "groq|texto": 668,
+      "kie.ai|visao": 1180
+    }
+  },
+  "relatorio": {
+    "dia": "2026-08-19",
+    "horas": 24,
+    "geradoEm": "2026-08-19T05:41:17.274Z",
+    "linhas": [
+      {
+        "fornecedor": "cerebras",
+        "tipo": "texto",
+        "chamadas": 18,
+        "recusas": 0,
+        "quanto": 6695,
+        "unidade": "fichas",
+        "custo": null,
+        "salto": null
+      },
+      {
+        "fornecedor": "together",
+        "tipo": "voz",
+        "chamadas": 8,
+        "recusas": 0,
+        "quanto": 209,
+        "unidade": "unidades",
+        "custo": null,
+        "salto": null
+      },
+      {
+        "fornecedor": "cloudflare",
+        "tipo": "texto",
+        "chamadas": 4,
+        "recusas": 0,
+        "quanto": 2004,
+        "unidade": "fichas",
+        "custo": null,
+        "salto": null
+      },
+      {
+        "fornecedor": "kie/gpt-5-2",
+        "tipo": "texto",
+        "chamadas": 4,
+        "recusas": 0,
+        "quanto": 8204,
+        "unidade": "fichas",
+        "custo": null,
+        "salto": null
+      },
+      {
+        "fornecedor": "groq",
+        "tipo": "texto",
+        "chamadas": 1,
+        "recusas": 0,
+        "quanto": 668,
+        "unidade": "fichas",
+        "custo": null,
+        "salto": null
+      },
+      {
+        "fornecedor": "kie.ai",
+        "tipo": "visao",
+        "chamadas": 1,
+        "recusas": 0,
+        "quanto": 1180,
+        "unidade": "fichas",
+        "custo": null,
+        "salto": null
+      }
+    ],
+    "alarmes": [],
+    "custoTotal": 0,
+    "semPreco": [
+      "cerebras",
+      "together",
+      "cloudflare",
+      "kie/gpt-5-2",
+      "groq",
+      "kie.ai"
+    ]
+  },
+  "atualizadoEm": "2026-08-19T05:41:17.274Z"
+}
