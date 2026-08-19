@@ -1258,5 +1258,85 @@
         "status": 200
       }
     }
+  },
+  {
+    "slug": "cansado-de-anotar-cada-gasto-a-mao-e-perder-a-nocao-do-seu",
+    "title": "Cansado de anotar cada gasto à mão e perder a noção do seu dinheiro?",
+    "url": "https://blog.finmoovi.com/posts/cansado-de-anotar-cada-gasto-a-mao-e-perder-a-nocao-do-seu",
+    "submittedAt": "2026-08-19T15:22:21.760Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1826143016
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "como-lidar-com-a-volatilidade-nas-financas-pessoais-em-2026",
+    "title": "Como lidar com a volatilidade nas finanças pessoais em 2026",
+    "url": "https://blog.finmoovi.com/posts/como-lidar-com-a-volatilidade-nas-financas-pessoais-em-2026",
+    "submittedAt": "2026-08-19T15:22:22.537Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1826143023
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "como-manter-as-contas-do-dia-sob-controle-e-evitar-surpresas",
+    "title": "Como manter as contas do dia sob controle e evitar surpresas",
+    "url": "https://blog.finmoovi.com/posts/como-manter-as-contas-do-dia-sob-controle-e-evitar-surpresas",
+    "submittedAt": "2026-08-19T15:22:23.141Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1826143027
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "montar-sua-primeira-carteira-de-etfs-em-2026",
+    "title": "Montar sua primeira carteira de ETFs em 2026",
+    "url": "https://blog.finmoovi.com/posts/montar-sua-primeira-carteira-de-etfs-em-2026",
+    "submittedAt": "2026-08-19T15:22:23.786Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1826143030
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
   }
 ]
