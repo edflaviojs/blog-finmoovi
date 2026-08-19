@@ -4,6 +4,7 @@ definition: "Qué es techo de gastos y cómo aparece en tu día a día — expli
 title: "techo de gastos - Glosario Financiero"
 description: "Qué es techo de gastos y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/teto-de-gastos.webp"
+imageAlt: "Monedas doradas apiladas, gráfico de barras rojas ascendente y planta en frasco de vidrio."
 category: "basico"
 tags: ["techo de gastos", "glosario", "finanzas"]
 author: "FinMoovi"

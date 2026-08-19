@@ -4,6 +4,7 @@ definition: "O que é teto de gastos e como isso aparece no seu dia a dia — ex
 title: "teto de gastos - Glossário Financeiro"
 description: "O que é teto de gastos e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/teto-de-gastos.webp"
+imageAlt: "Moedas douradas, gráfico vermelho ascendente e planta crescendo em frasco de vidro."
 category: "basico"
 tags: ["teto de gastos", "glossário", "finanças"]
 author: "FinMoovi"

@@ -3,6 +3,7 @@ title: "How to Keep Daily Expenses Under Control and Avoid Surprises"
 description: "Learn simple ways to track everyday spending, capture receipts instantly, and gain financial peace of mind with smart note capture."
 tickerHeadline: "Master Your Daily Expenses"
 image: "/images/posts/como-manter-as-contas-do-dia-sob-controle-e-evitar-surpresas.webp"
+imageAlt: "Blurred group of people sitting around a table in hazy light."
 category: "investimentos"
 locale: "en"
 tags: ["daily expense tracking","financial organization","receipt capture","budgeting","FinMoovi","cash flow management","daily spending"]

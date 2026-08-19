@@ -4,6 +4,7 @@ definition: "What Spending limit is and how it shows up in your everyday money â
 title: "Spending limit - Financial Glossary"
 description: "What Spending limit is and how it shows up in your everyday money â€” explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/teto-de-gastos.webp"
+imageAlt: "Gold coins, red bar chart, and glass jar with plant on dark background."
 category: "basico"
 tags: ["Spending limit", "glossary", "finance"]
 author: "FinMoovi"

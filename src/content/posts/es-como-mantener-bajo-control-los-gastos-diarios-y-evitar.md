@@ -3,6 +3,7 @@ title: "Cómo mantener bajo control los gastos diarios y evitar sorpresas"
 description: "Descubre cómo organizar los gastos diarios, registrar tus gastos en segundos y lograr tranquilidad financiera con captura inteligente de recibos."
 tickerHeadline: "Domina tus gastos diarios"
 image: "/images/posts/como-manter-as-contas-do-dia-sob-controle-e-evitar-surpresas.webp"
+imageAlt: "Grupo de personas desenfocadas comiendo en una mesa con luz cálida."
 category: "investimentos"
 locale: "es"
 tags: ["control de gastos","organización financiera","captura de recibos","planificación diaria","FinMoovi","gestión de efectivo","gastos diarios"]

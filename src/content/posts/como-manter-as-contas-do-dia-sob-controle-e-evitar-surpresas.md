@@ -3,6 +3,7 @@ title: "Como manter as contas do dia sob controle e evitar surpresas"
 description: "Descubra como organizar as contas do dia a dia, registrar despesas em segundos e ganhar tranquilidade financeira usando captura inteligente de notas."
 tickerHeadline: "Domine suas contas diárias"
 image: "/images/posts/como-manter-as-contas-do-dia-sob-controle-e-evitar-surpresas.webp"
+imageAlt: "Pessoas sentadas em mesa, desfocadas, em ambiente claro e neutro."
 category: "investimentos"
 locale: "pt"
 tags: ["controle de despesas","organização financeira","captura de notas","planejamento diário","FinMoovi","gestão de caixa","contas do dia"]
