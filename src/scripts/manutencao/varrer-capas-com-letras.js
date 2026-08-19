@@ -4,8 +4,20 @@
  *
  * PARA QUE SERVE: as travas do `guardiao-da-capa.js` protegem as capas NOVAS. As
  * que já estão no ar entraram antes de existir trava — incluindo as de 18 e
- * 19/08/2026, que foram o motivo de tudo isto. Este script é a limpeza do
- * passado; não corre sozinho, corre quando o dono manda.
+ * 19/08/2026, que foram o motivo de tudo isto. Este script é a limpeza do passado.
+ *
+ * ⚠️ E O PASSADO É MAIOR DO QUE PARECIA. Medido em 19/08/2026 sobre as primeiras 92
+ * imagens: 16 tinham texto de verdade, e várias em posts ANTIGOS — "cashback
+ * inteligente" ("Economic"), "cartão de crédito vs débito" ("Cartão die cresitó
+ * Cartão's debito"), "economizar no supermercado" ("CCSS"). Ou seja: os dois
+ * consertos de 18 e 19/08 explicam a PIORA aguda, mas sempre escapou uma parcela.
+ * É a razão da queixa antiga do dono, *"vira e mexe acontece o mesmo problema"*.
+ *
+ * COMO CORRE: uma vez por dia, sozinho, em lotes pequenos. O dono pediu em 19/08:
+ * *"quero atacar todas e corrigir todas, mas com limites generosos diarios... tipo
+ * assim 10 por dia no maximo para nao sobrecarregar"*. Daí `--max-correcoes 10`
+ * (refazer é o que custa dinheiro e mexe no site) e `--max-medicoes 40` (medir é
+ * barato mas gasta cota de visão).
  *
  * COMO DECIDE — e porque é DIFERENTE da produção:
  * Na produção a régua de nitidez local pode ser usada porque o router SABE que
@@ -29,13 +41,17 @@
  *     capa, para o robô `gerar-alt-imagens` (3x/dia) descrever a imagem nova.
  *
  * Uso:
- *   node --import tsx src/scripts/manutencao/varrer-capas-com-letras.js
- *   node --import tsx src/scripts/manutencao/varrer-capas-com-letras.js --limit 40
- *   node --import tsx src/scripts/manutencao/varrer-capas-com-letras.js --so-nitidez
- *   node --import tsx src/scripts/manutencao/varrer-capas-com-letras.js --regerar --limit 10
+ *   node --import tsx .../varrer-capas-com-letras.js                          # relatar
+ *   node --import tsx .../varrer-capas-com-letras.js --regerar                # o lote do dia
+ *   node --import tsx .../varrer-capas-com-letras.js --max-medicoes 40 --max-correcoes 10
+ *   node --import tsx .../varrer-capas-com-letras.js --desde 2026-08-18       # só as recentes
+ *   node --import tsx .../varrer-capas-com-letras.js --usar-nitidez           # triagem sem IA
+ *
+ * O progresso vive em `data/capas-auditadas.json` e é commitado pelo robô. Para
+ * remedir tudo de novo (por exemplo se o critério mudar), apagar esse ficheiro.
  */
 
-import { readFileSync, writeFileSync, readdirSync, existsSync } from 'fs';
+import { readFileSync, writeFileSync, readdirSync, existsSync, mkdirSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
 import matter from 'gray-matter';
@@ -82,6 +98,82 @@ const DESDE = (() => {
   const i = args.indexOf('--desde');
   return i >= 0 ? args[i + 1] : null;
 })();
+
+/**
+ * ⚠️ QUANTAS CAPAS SE REFAZEM POR DIA. Pedido do dono em 19/08/2026, textual:
+ * *"quero atacar todas e corrigir todas, mas com limites generosos diarios... tipo
+ * assim 10 por dia no maximo para nao sobrecarregar"*.
+ *
+ * Refazer é a parte que custa dinheiro (~$0.05 por imagem quando cai na Together)
+ * e a parte que MEXE no site. Medir é barato e pode ir mais depressa.
+ */
+const MAX_CORRECOES = num('--max-correcoes', 10);
+
+/**
+ * O INVENTÁRIO — a memória de onde a varredura ficou.
+ *
+ * ⚠️ SEM ISTO O "10 POR DIA" NUNCA ACABA. As imagens são percorridas por ordem
+ * alfabética; sem registo do que já foi visto, cada corrida mediria outra vez as
+ * mesmas primeiras 40 e as últimas centenas nunca seriam alcançadas. Foi o que
+ * aconteceu nas duas primeiras corridas: ambas começaram no mesmo "5-alternativas".
+ *
+ * Guarda-se o veredito de cada imagem já medida, com a citação que motivou a
+ * recusa — serve de auditoria: o dono pode ver POR QUE cada capa foi refeita, o
+ * que importa porque a IA de visão já produziu falsos alarmes.
+ *
+ * Ficheiro único, escrito por um robô só, uma vez por dia — não é o caso dos 60
+ * robôs a disputar o mesmo ficheiro que costuma pintar as corridas de vermelho.
+ */
+const INVENTARIO = join(ROOT, 'data', 'capas-auditadas.json');
+
+function lerInventario() {
+  try {
+    const j = JSON.parse(readFileSync(INVENTARIO, 'utf8'));
+    return { vistas: j.vistas || {}, corrigidas: j.corrigidas || {} };
+  } catch {
+    return { vistas: {}, corrigidas: {} };
+  }
+}
+
+function gravarInventario(inv) {
+  try {
+    const dir = join(ROOT, 'data');
+    if (!existsSync(dir)) mkdirSync(dir, { recursive: true });
+    writeFileSync(INVENTARIO, JSON.stringify(inv, null, 2));
+  } catch (e) {
+    console.warn(`   ⚠️ não deu para gravar o inventário: ${e.message}`);
+  }
+}
+
+/**
+ * O PROGRESSO GERAL — é a pergunta que o dono faz, textualmente: *"mas quantas
+ * faltam pra gente corrigir?"*. Sai em TODAS as corridas, relatório ou correcção.
+ */
+function mostrarProgresso(inv) {
+  const total = totalDoAcervo();
+  const vistas = Object.keys(inv.vistas).length;
+  const corrigidas = Object.keys(inv.corrigidas).length;
+  const porCorrigir = Object.entries(inv.vistas).filter(([f, v]) => v.reprovada && !inv.corrigidas[f]).length;
+  const comProblema = corrigidas + porCorrigir;
+  console.log('\n📈 PROGRESSO GERAL');
+  console.log(`   medidas: ${vistas} de ${total}  (faltam medir ${total - vistas})`);
+  console.log(`   com problema encontrado: ${comProblema}  →  ${corrigidas} já corrigidas, ${porCorrigir} na fila`);
+  if (vistas > 0 && vistas < total) {
+    // Estimativa marcada como estimativa. Nunca apresentar isto como medida.
+    const estimado = Math.round(total * comProblema / vistas);
+    console.log(`   ESTIMATIVA para o acervo todo (não é medida): ~${estimado} imagens com problema`);
+  }
+}
+
+/** Quantas imagens existem no acervo (capas + variantes principais, sem -400/-800). */
+function totalDoAcervo() {
+  let n = 0;
+  for (const col of COLECOES) {
+    if (!existsSync(col.imgDir)) continue;
+    n += readdirSync(col.imgDir).filter(f => f.endsWith('.webp') && !/-(400|800)\.webp$/.test(f)).length;
+  }
+  return n;
+}
 
 /** Data do último commit de um ficheiro. null quando não se sabe. */
 function dataDoCommit(caminhoRelativo) {
@@ -140,6 +232,7 @@ function limparAlt(usos) {
 async function main() {
   const olhos = olhosDisponiveis();
   const verLetras = olhos.length > 0;
+  const hoje = new Date().toISOString().slice(0, 10);
 
   console.log('🔎 Varredura das capas publicadas');
   console.log(`   olhos:   ${verLetras ? olhos.join(' → ') : 'NENHUM'}`);
@@ -161,6 +254,21 @@ async function main() {
   if (USAR_NITIDEZ) {
     console.log('⚠️ Triagem grosseira: a régua local não distingue ilustração plana de');
     console.log('   borrão, portanto ESPERE falsos positivos nesta lista.\n');
+  }
+
+  const inv = lerInventario();
+  const jaVistas = Object.keys(inv.vistas).length;
+
+  /**
+   * As reprovadas que ficaram de dias anteriores entram na frente da fila. Sem
+   * isto, um dia com 12 reprovadas deixava 2 para trás e o inventário marcava-as
+   * como vistas — nunca voltariam a ser medidas nem corrigidas.
+   */
+  const pendentesDeAntes = Object.entries(inv.vistas)
+    .filter(([f, v]) => v && v.reprovada && !inv.corrigidas[f])
+    .map(([f]) => f);
+  if (pendentesDeAntes.length) {
+    console.log(`↩️ ${pendentesDeAntes.length} reprovada(s) de dias anteriores ainda por corrigir — entram primeiro.\n`);
   }
 
   const reprovadas = [];
@@ -200,6 +308,17 @@ async function main() {
       }
       const caminho = join(col.imgDir, f);
 
+      // Já medida num dia anterior: não se gasta cota outra vez. Se ficou
+      // reprovada e ainda não foi corrigida, é recuperada aqui para a fila.
+      if (inv.vistas[f]) {
+        if (inv.vistas[f].reprovada && !inv.corrigidas[f]) {
+          const usos = porImagem.get(f) || [];
+          const titulo = usos.length ? String(usos[0].dados[col.campo] || usos[0].dados.title || f) : f.replace(/\.webp$/, '').replace(/-/g, ' ');
+          reprovadas.push({ f, caminho, veredito: { motivo: inv.vistas[f].motivo }, usos, titulo, col });
+        }
+        continue;
+      }
+
       if (DESDE) {
         const data = dataDoCommit(`${col.imgDirRel}/${f}`);
         // Sem data conhecida, mede — é mais seguro que saltar em silêncio.
@@ -229,27 +348,41 @@ async function main() {
         continue;
       }
 
-      if (veredito.aprovada) continue;
+      // Fica no inventário mesmo quando passa: é isso que faz a varredura AVANÇAR
+      // no acervo em vez de remedir sempre as primeiras.
+      inv.vistas[f] = {
+        reprovada: !veredito.aprovada,
+        motivo: veredito.motivo || null,
+        em: hoje,
+      };
+
+      if (veredito.aprovada) {
+        if (verLetras) await sleep(1200); // conta-gotas com a IA de visão
+        continue;
+      }
 
       const usos = porImagem.get(f) || [];
       const titulo = usos.length ? String(usos[0].dados[col.campo] || usos[0].dados.title || f) : f.replace(/\.webp$/, '').replace(/-/g, ' ');
       reprovadas.push({ f, caminho, veredito, usos, titulo, col });
       console.log(`❌ ${f}`);
       console.log(`     ${veredito.motivo}`);
-      if (verLetras) await sleep(1500); // conta-gotas com a IA de visão
+      if (verLetras) await sleep(1200); // conta-gotas com a IA de visão
     }
   }
 
   if (desistiu) {
-    console.log(`\n🚨 DESISTI: as primeiras ${MAX_CEGAS} imagens não puderam ser VISTAS.`);
+    console.log(`\n🚨 DESISTI: ${MAX_CEGAS} imagens seguidas não puderam ser VISTAS.`);
     console.log('   As chaves de visão estão presentes mas nenhuma respondeu — normalmente');
-    console.log('   cota do Groq esgotada (HTTP 429, ele é repartido por 38 robôs).');
+    console.log('   cota esgotada (a da Cloudflare é diária; o Groq é repartido por 38 robôs).');
     console.log('   Os avisos acima dizem o motivo exacto de cada fornecedor.');
-    console.log('   NADA foi medido e NADA foi tocado. Tente mais tarde.');
+    console.log('   O inventário NÃO foi gravado e NADA foi tocado. Amanhã continua daqui.');
     console.log('   (Continuar daria "0 reprovadas", que pareceria um atestado de saúde.)');
     process.exitCode = 1;
     return;
   }
+
+  // Só se grava o inventário quando a corrida foi mesmo capaz de VER.
+  gravarInventario(inv);
 
   console.log(`\n📊 ${medidas} capas medidas — ${reprovadas.length} reprovadas.`);
   if (cegas > 0) {
@@ -268,13 +401,19 @@ async function main() {
   }
 
   if (!REGERAR) {
-    if (reprovadas.length) console.log('   Para refazer estas capas: acrescente --regerar (comece com --limit 10).');
+    if (reprovadas.length) console.log('   Para refazer estas capas: acrescente --regerar.');
+    mostrarProgresso(inv);
     return;
   }
 
-  console.log('\n🎨 Refazendo as reprovadas...\n');
+  const lote = reprovadas.slice(0, MAX_CORRECOES);
+  console.log(`\n🎨 Refazendo ${lote.length} capa(s) — o teto do dia é ${MAX_CORRECOES}.\n`);
+  if (reprovadas.length > lote.length) {
+    console.log(`   ${reprovadas.length - lote.length} ficam para a próxima corrida (estão marcadas no inventário).\n`);
+  }
+
   let refeitas = 0;
-  for (const r of reprovadas) {
+  for (const r of lote) {
     const slug = r.f.replace(/\.webp$/, '');
     const tipo = r.col.destino === 'glossario' ? 'glossary' : 'cover';
     try {
@@ -286,6 +425,10 @@ async function main() {
       } else {
         refeitas++;
         limparAlt(r.usos);
+        // Fica registado O QUE motivou a substituição. É auditoria: a IA de visão
+        // já produziu falsos alarmes, e o dono tem de poder ver o motivo de cada
+        // capa refeita sem ir ao registo da corrida.
+        inv.corrigidas[r.f] = { em: hoje, motivo: r.veredito.motivo || null };
         console.log(`   ✅ ${slug} refeita`);
       }
     } catch (e) {
@@ -294,8 +437,12 @@ async function main() {
     await sleep(THROTTLE_MS);
   }
 
-  console.log(`\n✅ ${refeitas} de ${reprovadas.length} capas refeitas.`);
+  gravarInventario(inv);
+
+  console.log(`\n✅ ${refeitas} de ${lote.length} capas refeitas neste lote.`);
   if (refeitas > 0) console.log('   O imageAlt das refeitas foi apagado — o robô das 3x/dia redescreve-as.');
+
+  mostrarProgresso(inv);
 }
 
 main().catch(e => {
