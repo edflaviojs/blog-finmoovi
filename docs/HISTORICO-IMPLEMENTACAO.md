@@ -138,6 +138,13 @@ Volume/semana (se tudo rodar): ~10 glossário, até 7 dicas, 8 posts de outras c
 
 ## Arquitetura Atual do Blog
 
+> ⚠️ **Esta árvore é do ARRANQUE do projeto e ficou para trás** (diz «3 posts .md» quando
+> hoje são ~110, e não conhece `src/scripts/lib/`, `src/scripts/apis/`,
+> `src/scripts/manutencao/`, `src/scripts/youtube/`, `src/scripts/multipost/`, `tests/`
+> nem os ~60 workflows). Serve como retrato histórico. Para o estado actual de uma área,
+> ler a entrada datada correspondente mais abaixo — as entradas dizem sempre os caminhos
+> dos ficheiros que criaram.
+
 ```
 blog-finmoovi/
 ├── public/
@@ -406,3 +413,102 @@ pedidos, zero scripts**.
 para a contagem (que interceptam o pedido e leem o corpo), 26 para a gaveta da landing, 13
 finais contra os 3 sites no ar. Mais as 64 provas da casa e o build completo com todos os
 validadores, a cada passo.
+
+## 🖼️ As capas com letras: a regra passou a ser MEDIDA e não pedida (2026-08-19)
+
+Sete commits (`36cbef5b`, `cf43aa97`, `9a571069`, `e2c31ea2`, `fb482d25`, `fdbb9fd2`,
+`3fec218e`). Começou com o dono a abrir o blog e a ver uma capa com o título do post
+desenhado por cima, em letras trocadas: *«Cansarlose de a1ot cer gasts b ta l a'o mae tor
+esu dinieriee?»*. A frase dele: *«vira e mexe acontece o mesmo problema»* — e tinha razão,
+era a **quarta** vez (11/06 `201f4f10`, 13/06 `21e51a39`, 18/08 `e25332ae`, 19/08). Todas as
+vezes se melhorou o PEDIDO ao modelo e ninguém mediu o resultado.
+
+**As duas causas, ambas consertos de 18 e 19/08.** No dia 18 (`e25332ae`) a Cloudflare
+recusava 100% das chamadas porque `negative_prompt` é um campo que ela não aceita; tirou-se o
+campo e dobrou-se a lista de proibições **no fim do próprio prompt**. O FLUX.1-schnell é
+destilado, não tem CFG nem prompt negativo: leu as 20 palavras — *«text, letters, words,
+titles, typography…»* — como **encomenda de tipografia**. E a Cloudflare, consertada, passou a
+ser a fornecedora nº1 (13 das 18 imagens do dia). No dia 19 (`931a31fe`) a Together desligou
+o FLUX.1-schnell e o modelo foi trocado para `Qwen/Qwen-Image` **mantendo `steps: 4`** — o 4
+era do modelo destilado, o Qwen precisa de 28, e todas as imagens dela saíram a um sétimo do
+caminho, ou seja borradas (nitidez **14** contra 400-900 das boas).
+
+**A causa RAIZ, que não estava à vista.** Os oito robôs de conteúdo chamam
+`generateCoverImage(post.title, …)`: a frase inteira do título, em português, com
+interrogação, ia dentro do pedido de imagem. Para o modelo aquilo parece legenda a desenhar.
+Agora vai só um **assunto visual** curto em inglês (`assuntoVisual`), com tabela de temas —
+medido nos 108 títulos reais: 104 casam um tema (22 assuntos distintos, a variedade fica), 4
+caem no genérico, **zero saídas com palavra portuguesa**. A limpeza é feita num ponto só, no
+`image-router`, e protege qualquer robô futuro.
+
+**Três camadas independentes** (`src/scripts/lib/guardiao-da-capa.js` é a terceira):
+1. o pedido nunca nomeia o proibido — os estilos descrevem em positivo («clean unmarked
+   surfaces», «screen off»);
+2. o título nunca chega ao modelo;
+3. a imagem é **medida antes de ser gravada** — com letras ou borrada é recusada e refeita
+   com outra semente. Esta continua a valer mesmo que alguém estrague as outras duas.
+
+**Um estilo foi REMOVIDO, e era a fábrica das duas queixas.** O «abstract glowing data
+visualization, modern dashboard aesthetic with **blurred** colorful light streaks» pedia
+desfoque (essas capas medem 9 a 20) **e** pedia painel de dados, logo o modelo desenhava
+rótulos falsos — medido no acervo: «2070», «PLANNS», «CHANGE». Não se afina um estilo cuja
+própria ideia exige o que não podemos ter. A pedido do dono, os abstratos caíram de 40% para
+1 em 10 (sorteio ponderado).
+
+**A régua de nitidez só vale onde se espera detalhe** — e isto foi a maior surpresa técnica
+do dia. Uma **ilustração plana** boa mede **13**, praticamente o mesmo que o borrão que mede
+**14**, e não há métrica local que os separe (testou-se média, p99, p99,9 e máximo do
+laplaciano). Por isso quem manda é o estilo pedido (campo `plana`), que só o router conhece;
+e a varredura do passado, que já não sabe o estilo, julga pela IA de visão. Sem esta
+distinção mandava-se refazer dezenas de ilustrações que estão boas.
+
+**As armadilhas que só a corrida real destapou** — e todas eram do tipo «verde sem prova»:
+
+- **Ter chave não é ter resposta.** Os dois olhos de visão estavam configurados e nenhum
+  respondia: Groq **429** (a chave é repartida por 38 workflows) e a Cloudflare devolvia um
+  **objecto** onde o código esperava texto, deixando no registo apenas `resposta sem nível
+  legível ("[object Object]")`. A ordem dos olhos aqui é ao CONTRÁRIO do
+  `gerar-alt-imagens.js`: Cloudflare primeiro, por ter cota própria.
+- **A varredura ia dizer «0 reprovadas» sem ter visto nada.** Atestado de saúde falso. Agora
+  conta as medições cegas e **desiste à quinta**, sem tocar em nada.
+- **A IA de visão copiou o exemplo do pedido.** Devolveu `"amostra":"the text you can read,
+  or empty"` e recusou uma capa boa. Pior: na primeira varredura completa, **36 de 60
+  reprovações eram falso alarme**, com o nível a dizer «proeminente» e a amostra a dizer
+  «None» (12x), «proeminente» (16x), «nenhuma» (6x). **Um campo com lista de opções não serve
+  para DECIDIR** — o modelo copia o primeiro valor; serve para triar. Recusar passou a exigir
+  a **prova** (a citação do texto) mais uma **segunda leitura**, com pergunta diferente e sem
+  lista de opções. Na dúvida, a capa passa.
+- **92 imagens esgotaram a cota do DIA** («you have used up your daily free allocation of
+  10,000 neurons») e a trava da PRODUÇÃO ficou cega no resto do dia. Uma limpeza do passado
+  não pode desarmar a defesa do presente: daí `--max-medicoes` (teto de IMAGENS, não de
+  reprovadas) e `--desde AAAA-MM-DD`, que exige `fetch-depth: 0` no checkout senão a data vem
+  vazia e mede-se tudo outra vez.
+
+**O passado é maior e mais antigo do que os dois consertos.** Medido nas primeiras 92 de 751
+imagens: **16 com texto real** (3 capas, 13 internas), taxa de 17%, **estimativa** de ~130 no
+acervo. E várias em posts ANTIGOS — «cashback-inteligente» («Economic»),
+«cartao-de-credito-vs-debito» («Cartão die cresitó»), «economizar-no-supermercado» («CCSS»).
+Os dois erros de 18-19/08 explicam a piora AGUDA; o fundo histórico é outra coisa, e é ele a
+razão da queixa antiga do dono.
+
+**A limpeza anda sozinha** (`capas-com-letras.yml`, 22:30 UTC = 19:30 no Brasil, depois do
+ciclo de conteúdo porque a cota é partilhada e publicar tem prioridade). Pedido do dono: **10
+correcções por noite**; medições 40. A peça que faltava era a **memória de progresso**
+(`data/capas-auditadas.json`): sem ela cada corrida remedia as mesmas primeiras 40 por ordem
+alfabética e o «10 por dia» nunca acaba — as duas primeiras corridas começaram ambas no mesmo
+«5-alternativas». Guarda também a citação que motivou cada recusa, para auditoria. Prazo:
+~13 dias para corrigir, ~19 para medir o acervo.
+
+**A progressão vai no e-mail das 7h**, a pedido do dono: `10/119 capas refeitas — 11 na
+fila`. Duas coisas ficam ditas de propósito: o denominador é **estimativa** e pode SUBIR (só
+12% foi medido), e se o robô **não avança** desde ontem sai alarme com a data — um «10/119»
+parado uma semana parece progresso e pode ser corrida morta.
+
+**Provas.** 93 provas da casa, com as três imagens que falharam guardadas em
+`tests/amostras/` (uma delas apanhou um erro meu: «cartão de crédito» era classificado como
+dívida). A trava de letras foi provada **na corrida real 32256396811**: recusou a capa de
+19/08 e leu o texto certo, e aceitou a capa boa — a prova é dupla de propósito, porque um
+detector que reprova tudo passaria em metade. O fim do borrão também está medido: a
+Cloudflare passou a gerar com nitidez **789 e 1421** e a Together com **642 e 673**, quando
+no dia anterior a mesma Together dava **14**. Localmente, 3 capas geradas de verdade pela
+Pollinations com o prompt limpo: **zero letras nas três**, olhadas uma a uma.
