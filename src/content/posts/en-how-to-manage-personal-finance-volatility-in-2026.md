@@ -3,6 +3,7 @@ title: "How to Manage Personal Finance Volatility in 2026"
 description: "Learn in plain language how spending volatility impacts your wallet and get practical tips with FinMoovi to take control."
 tickerHeadline: "When Money Swings"
 image: "/images/posts/como-lidar-com-a-volatilidade-nas-financas-pessoais-em-2026.webp"
+imageAlt: "Smiling couple in casual clothes reviewing documents and laptop indoors"
 category: "dicas"
 locale: "en"
 tags: ["volatility","personal finance","economy","money"]

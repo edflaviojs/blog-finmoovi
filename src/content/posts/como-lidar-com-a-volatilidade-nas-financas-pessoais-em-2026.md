@@ -3,6 +3,7 @@ title: "Como lidar com a volatilidade nas finanças pessoais em 2026"
 description: "Descubra, em linguagem simples, como a volatilidade afeta seu bolso e aprenda estratégias práticas usando o FinMoovi para ganhar controle."
 tickerHeadline: "Quando o dinheiro balança"
 image: "/images/posts/como-lidar-com-a-volatilidade-nas-financas-pessoais-em-2026.webp"
+imageAlt: "Casal sorridente revisando documentos e laptop em ambiente doméstico claro."
 category: "dicas"
 locale: "pt"
 tags: ["volatility","finanças pessoais","economia","dinheiro"]

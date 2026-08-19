@@ -3,6 +3,7 @@ title: "Cómo manejar la volatilidad en tus finanzas personales en 2026"
 description: "Descubre en lenguaje sencillo cómo la volatilidad afecta tu bolsillo y aprende acciones prácticas con FinMoovi para tomar el control."
 tickerHeadline: "Cuando el dinero tiembla"
 image: "/images/posts/como-lidar-com-a-volatilidade-nas-financas-pessoais-em-2026.webp"
+imageAlt: "Pareja sonriente revisando documentos y laptop en sala con planta verde."
 category: "dicas"
 locale: "es"
 tags: ["volatilidad","finanzas personales","economía","dinero"]
