@@ -392,6 +392,42 @@ function htmlFalhas(failures) {
 }
 
 /**
+ * ⏰ LEMBRETES COM DATA — pedido do dono em 19/08/2026: *"deixe também um alerta
+ * para voltarmos a ver isso daqui 7 dias"*.
+ *
+ * Porquê AQUI e não num agendador: este e-mail é o único sítio que ele lê todos
+ * os dias. Um agendador na nuvem não consegue avisá-lo (não tem canal ligado) e
+ * um lembrete que ninguém vê é pior que nenhum — dá a sensação de estar coberto.
+ *
+ * 🔑 O lembrete NÃO desaparece no dia seguinte: repete-se todos os dias até
+ * alguém pôr `feito: true` em `.github/data/lembretes.json`. Um aviso que passa
+ * uma vez é um aviso que se perde num dia de correria.
+ */
+function htmlLembretes(hojeISO) {
+  let dados;
+  try {
+    dados = JSON.parse(readFileSync(join(process.cwd(), '.github', 'data', 'lembretes.json'), 'utf-8'));
+  } catch {
+    return ''; // sem ficheiro não há secção — ausência não é falha
+  }
+  const devidos = (dados.lembretes || [])
+    .filter(l => l && !l.feito && typeof l.data === 'string' && l.data <= hojeISO)
+    .sort((a, b) => String(a.data).localeCompare(String(b.data)));
+  if (!devidos.length) return '';
+
+  const linhas = devidos.map((l) => {
+    const dias = Math.max(0, Math.round((Date.parse(hojeISO) - Date.parse(l.data)) / 86400000));
+    const idade = dias === 0 ? 'hoje' : `há ${dias} dia${dias > 1 ? 's' : ''}`;
+    return `<div style="margin:0 0 14px;padding:12px;background:#161b22;border-left:3px solid #d29922;border-radius:4px;">
+      <div style="color:#f0f6fc;font-size:14px;font-weight:600;">${esc(l.titulo || 'Lembrete')} <span style="color:#8b949e;font-weight:400;font-size:12px;">— marcado para ${esc(l.data)} (${idade})</span></div>
+      <div style="color:#c9d1d9;font-size:13px;margin-top:6px;line-height:1.5;">${esc(l.texto || '')}</div>
+    </div>`;
+  }).join('');
+
+  return `${sectionTitle('⏰ Lembretes', devidos.length, '#d29922')}${linhas}`;
+}
+
+/**
  * 💰 O CONSUMO DOS SERVIÇOS PAGOS — a secção que o dono pediu em 18/08/2026:
  * *"não estou conseguindo acompanhar esses gastos"*.
  *
@@ -684,6 +720,16 @@ async function main() {
     }
   } catch (err) {
     sections.push(warnBlock('🚨 Falhas', err.message));
+  }
+
+  // 1-ter. Lembretes com data — logo a seguir às falhas e antes de tudo o
+  // resto: é o que o dono combinou consigo próprio, e é o que se perde num dia
+  // de correria. (As falhas ficam em primeiro porque são de hoje e urgentes.)
+  try {
+    const lembretes = htmlLembretes(new Date().toISOString().split('T')[0]);
+    if (lembretes) sections.push(lembretes);
+  } catch (err) {
+    sections.push(warnBlock('⏰ Lembretes', err.message));
   }
 
   // 1-bis. Consumo dos serviços pagos (perto do topo: é dinheiro)

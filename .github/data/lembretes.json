@@ -1,0 +1,13 @@
+{
+  "_leia_isto": "Lembretes com data marcada. A partir do dia indicado, o lembrete aparece no e-mail das 7h (o Digest Diario) e CONTINUA a aparecer todos os dias ate alguem por 'feito': true. E de proposito: um lembrete que aparece uma vez e desaparece e um lembrete que se perde.",
+  "_como_usar": "Acrescentar um objeto a lista com { data: 'AAAA-MM-DD', titulo, texto }. Para o calar, por 'feito': true (nao apagar — o historico do que se combinou tem valor).",
+  "lembretes": [
+    {
+      "data": "2026-08-26",
+      "titulo": "TikTok: cobrar resposta da auditoria",
+      "texto": "O 3o pedido de auditoria do app multipost-finmoovi foi enviado em 19/08 e ficou 'In review'. Se ainda nao houve resposta, e hora de cobrar. ANTES de agir, conferir o estado no portal (pode ter mudado sem ninguem reparar) e medir se o site continua de pe — foi o site que reprovou as duas vezes anteriores. O suporte deles ja ignorou um pedido durante 6 dias, entao nao contar com esse canal.",
+      "feito": false,
+      "criadoEm": "2026-08-19"
+    }
+  ]
+}
