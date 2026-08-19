@@ -4,6 +4,7 @@ definition: "Qué es categoría de gasto y cómo aparece en tu día a día — e
 title: "categoría de gasto - Glosario Financiero"
 description: "Qué es categoría de gasto y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/categoria-de-despesa.webp"
+imageAlt: "Monedas doradas apiladas, frascos de vidrio y gráfico ascendente sobre fondo azul."
 category: "basico"
 tags: ["categoría de gasto", "glosario", "finanzas"]
 author: "FinMoovi"

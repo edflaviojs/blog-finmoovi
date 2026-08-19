@@ -4,6 +4,7 @@ definition: "O que é categoria de despesa e como isso aparece no seu dia a dia 
 title: "categoria de despesa - Glossário Financeiro"
 description: "O que é categoria de despesa e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/categoria-de-despesa.webp"
+imageAlt: "Moedas douradas, frascos de vidro e gráfico de crescimento ascendente sobre fundo azul escuro."
 category: "basico"
 tags: ["categoria de despesa", "glossário", "finanças"]
 author: "FinMoovi"

@@ -4,6 +4,7 @@ definition: "What Expense category is and how it shows up in your everyday money
 title: "Expense category - Financial Glossary"
 description: "What Expense category is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/categoria-de-despesa.webp"
+imageAlt: "Gold coins, glass jar, and gold arrow chart on dark blue background"
 category: "basico"
 tags: ["Expense category", "glossary", "finance"]
 author: "FinMoovi"
