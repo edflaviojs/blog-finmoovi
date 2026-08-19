@@ -1,0 +1,117 @@
+{
+  "slug": "loop-material-escolar-se-parar",
+  "formato": "loop16",
+  "term": "O material escolar",
+  "category": "vida",
+  "keyword": "MATERIAL",
+  "situacao": "material-escolar",
+  "gancho": "se-parar",
+  "ganchoFamilia": "e se parar",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "mochila-pedras",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "O que acontece se você parar de conferir a lista?",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "acontece",
+          "visual": {
+            "type": "statement",
+            "text": "Cuidado com a lista"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "parar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu vi a papelaria cheia e comprei material sem olhar direito.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "papelaria",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "cheia",
+          "visual": {
+            "type": "statement",
+            "text": "Comprei sem conferir"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Eu percebi meu erro e agora confiro tudo calminho antes.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "percebi",
+          "visual": {
+            "type": "statement",
+            "text": "Agora olho tudo"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "confiro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Parar de conferir a lista me deixou perdido lá na escola.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "Parar",
+          "visual": {
+            "type": "statement",
+            "text": "A lista me perdeu"
+          }
+        },
+        {
+          "anchor": "conferir",
+          "visual": {
+            "type": "statement",
+            "text": "Cuidado com a lista"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
