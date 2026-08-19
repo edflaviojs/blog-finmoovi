@@ -19,11 +19,11 @@ seo:
 ---
 
 ## What it is
-The stock exchange, also known as the market for [ações](/en/glossario/en-stocks), is a place where people buy and sell small pieces of companies, known as stocks. Imagine you own a small piece of a company, like Nubank or Magazine Luiza. When the company does well, the [valor](/en/glossario/en-financial-value) of your stock rises, and you can sell it for a higher price than you paid. It’s like having a small share of a business that can grow and generate profits.
+The stock exchange, also known as the market for [stocks](/en/glossario/en-stocks), is a place where people buy and sell small pieces of companies, known as stocks. Imagine you own a small piece of a company, like a digital bank or a large retailer. When the company does well, the [value](/en/glossario/en-financial-value) of your stock rises, and you can sell it for a higher price than you paid. It’s like having a small share of a business that can grow and generate profits.
 
-* Ações: small pieces of companies that can be bought and sold
-* Títulos: documents that represent ownership of stocks or other investments
-* Índices: measures of the performance of the [stock market](/en/posts/en-etfs-what-they-are-and-how-to-invest-simply-and-profitably), such as the Ibovespa
+* Stocks: small pieces of companies that can be bought and sold  
+* Securities: documents that represent ownership of stocks or other investments  
+* Indices: measures of the performance of the [stock market](/en/posts/en-etfs-what-they-are-and-how-to-invest-simply-and-profitably), such as a major index  
 
 ![What it is](/images/glossario/bolsa-de-valores-inline-1.webp)
 
@@ -36,9 +36,9 @@ The stock exchange works like an auction, where people submit prices to buy or s
 
 ## Advantages
 Investing in the stock exchange can be a great way to grow your wealth over time. Here are some advantages of investing in the stock exchange:
-* Potential for high returns: stocks can increase in value quickly, generating significant profits
-* [Diversificação](/en/glossario/en-diversification): investing in the stock exchange allows you to diversify your portfolio, reducing the risk of loss
-* [Liquidity](/en/glossario/en-liquidity): stocks can be bought and sold quickly, allowing you to access your money when needed
+* Potential for high returns: stocks can increase in value quickly, generating significant profits  
+* [Diversification](/en/glossario/en-diversification): investing in the stock exchange allows you to diversify your portfolio, reducing the risk of loss  
+* [Liquidity](/en/glossario/en-liquidity): stocks can be bought and sold quickly, allowing you to access your money when needed  
 
 **Practical tip:** It’s important to diversify your portfolio by investing in different types of stocks and sectors. For example, if you invest $200 per month in technology company stocks, it’s a good idea to also invest in stocks of companies in other sectors, such as health or [finance](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using).
 
@@ -46,4 +46,4 @@ Investing in the stock exchange can be a great way to grow your wealth over time
 
 ## Risks
 However, investing in the stock exchange also involves risks. Here are some of the main risks:
-* Loss of value: stocks can decrease in value, resulting
+* Loss of value: stocks can decrease in value, resulting...

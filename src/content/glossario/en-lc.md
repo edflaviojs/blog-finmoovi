@@ -20,9 +20,9 @@ seo:
 
 ## What it is
 
-LC stands for **Letra de Câmbio** — a Brazilian [fixed income](/en/glossario/en-fixed-income) security issued by **finance companies**, not by banks.
+LC stands for **Letter of Exchange** — a fixed‑income security issued by **finance companies**, not by banks.
 
-It works exactly like a [CDB](/en/glossario/en-cdb): you lend money to the institution for a set term and it pays you back with [interest](/en/glossario/en-interest). The difference is who is doing the borrowing.
+It works exactly like a [certificate of deposit (CD)](/en/glossario/en-cdb): you lend money to the institution for a set term and it pays you back with [interest](/en/glossario/en-interest). The difference is who is doing the borrowing.
 
 ## Careful with the name: these are three different things
 
@@ -30,27 +30,27 @@ This is where almost everyone gets lost, and the naming does not help:
 
 | Acronym | What it is |
 | --- | --- |
-| **LC** | Letra de **Câmbio**. Issued by a finance company. Income tax applies |
-| **LCI / LCA** | Letras de **Crédito** for real estate and agribusiness. Issued by banks and **exempt** from income tax for individuals — see [LCI and LCA](/en/glossario/en-lci-and-lca) |
-| **Letter of credit** | A trade-finance instrument where a bank guarantees payment between a buyer and a seller. Nothing to do with investing |
+| **LC** | Letter of **Exchange**. Issued by a finance company. Income tax applies |
+| **LCI / LCA** | Tax‑exempt bank notes for real estate and agribusiness. Issued by banks and **exempt** from income tax for individuals — see [tax‑exempt bank notes](/en/glossario/en-lci-and-lca) |
+| **Letter of credit** | A trade‑finance instrument where a bank guarantees payment between a buyer and a seller. Nothing to do with investing |
 
-Despite "câmbio" (exchange) in the name, an LC has **no connection to foreign currency**. The term is historical.
+Despite “exchange” in the name, an LC has **no connection to foreign currency**. The term is historical.
 
 ## How it works
 
-- You pick an LC with a defined term and rate (for example, 115% of the [CDI](/en/glossario/en-cdi) benchmark)
+- You pick an LC with a defined term and rate (for example, 115% of the [interbank rate](/en/glossario/en-cdi) benchmark)
 - The money stays invested until maturity — many LCs **do not allow early withdrawal**
 - At maturity you receive the principal plus interest, with tax already deducted
 
-## It pays more than a CDB, and there is a reason
+## It pays more than a CD, and there is a reason
 
-LCs usually offer better rates than CDBs from large banks. That is not generosity: it is the price of risk. Finance companies are **smaller** institutions with less access to cheap funding, so they pay more to raise money.
+LCs usually offer better rates than CDs from large banks. That is not generosity: it is the price of risk. Finance companies are **smaller** institutions with less access to cheap funding, so they pay more to raise money.
 
-What levels the field is the **[deposit guarantee fund](/en/glossario/en-fgc-guarantee)**: if the issuer fails, the fund returns your money up to the guaranteed limit, per taxpayer and per institution — the same cover a CDB gets.
+What levels the field is the **[deposit guarantee fund](/en/glossario/en-fgc-guarantee)**: if the issuer fails, the fund returns your money up to the guaranteed limit, per taxpayer and per institution — the same cover a CD gets.
 
 ## Tax
 
-An LC follows the same regressive [income tax](/en/glossario/en-income-tax) table as a CDB: the longer the money stays invested, the lower the rate. It is **not exempt** — LCI/LCA are the exempt ones, which is exactly why mixing the two up costs money when you compare them.
+An LC follows the same regressive [income tax](/en/glossario/en-income-tax) table as a CD: the longer the money stays invested, the lower the rate. It is **not exempt** — LCI/LCA are the exempt ones, which is exactly why mixing the two up costs money when you compare them.
 
 ## Risks
 
@@ -60,7 +60,7 @@ An LC follows the same regressive [income tax](/en/glossario/en-income-tax) tabl
 
 ## Before investing
 
-- **Confirm whether it is an LC or an LCI/LCA.** The tax exemption changes the final result
-- **Check for a lock-up period.** With no early withdrawal, the term is a commitment, not a suggestion
+- **Confirm whether it is an LC or a tax‑exempt bank note.** The tax exemption changes the final result
+- **Check for a lock‑up period.** With no early withdrawal, the term is a commitment, not a suggestion
 - **Add up what you already hold** at the same institution so you stay under the guarantee limit
 - **Compare net, not gross**: 115% of the benchmark with tax can end up below an exempt option paying less

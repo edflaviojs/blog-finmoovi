@@ -13,11 +13,11 @@ readingTime: 1
 
 ## ¿Qué es Wealth Management?
 
-Wealth Management (gestão de patrimônio) es un servicio [financiero](/es/posts/es-pierdes-el-control-de-los-gastos-cuando-viajas-usando) premium que cuida de todos los aspectos de la vida financiera de una persona: inversiones, impuestos, herencia, seguros y [planificación](/es/posts/es-presupuesto-con-salario-minimo-consejos-practicos) a largo plazo.
+Wealth Management (gestión de patrimonio) es un servicio [financiero](/es/posts/es-pierdes-el-control-de-los-gastos-cuando-viajas-usando) premium que cuida de todos los aspectos de la vida financiera de una persona: inversiones, impuestos, herencia, seguros y [planificación](/es/posts/es-presupuesto-con-salario-minimo-consejos-practicos) a largo plazo.
 
 ## Para quién es
 
-Generalmente dirigido a personas con patrimonio superior a R$ 1 millón. Pero los conceptos pueden ser aplicados por cualquier persona:
+Generalmente dirigido a personas con patrimonio superior a €180.000. Pero los conceptos pueden ser aplicados por cualquier persona:
 
 ## Pilares del Wealth Management
 
@@ -30,8 +30,8 @@ Generalmente dirigido a personas con patrimonio superior a R$ 1 millón. Pero lo
 ### 2. Planificación Tributaria
 
 - Minimizar impuestos legalmente
-- Elegir mejores estructuras (PF vs. PJ)
-- Timing de ventas para optimizar IR
+- Elegir mejores estructuras (persona física vs. persona jurídica)
+- Timing de ventas para optimizar el impuesto sobre la renta
 
 ### 3. Planificación Sucesoria
 
@@ -50,8 +50,8 @@ Generalmente dirigido a personas con patrimonio superior a R$ 1 millón. Pero lo
 
 Incluso sin un wealth manager, puedes:
 
-1. [Diversificar inversiones](/es/posts/es-montando-cartera-diversificada-con-r-500) ([renda fixa](/es/glossario/es-renta-fija) + variable + internacional)
-2. Usar PGBL para reducir IR
+1. [Diversificar inversiones](/es/posts/es-montando-cartera-diversificada-con-r-500) ([renta fija](/es/glossario/es-renta-fija) + variable + internacional)
+2. Usar planes de pensiones con ventajas fiscales para reducir el impuesto sobre la renta
 3. Tener seguros adecuados
 4. Mantener registros organizados
 5. Usar apps como [FinMoovi](/es/posts/es-5-alternativas-al-mobills-en-2026) para control total

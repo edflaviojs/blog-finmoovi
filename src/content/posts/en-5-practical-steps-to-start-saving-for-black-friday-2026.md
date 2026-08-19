@@ -38,7 +38,7 @@ First things first—know exactly how much you plan to spend on Black Friday. Ac
 
 Now that you have a number, turn that goal into monthly targets. If Black Friday 2026 falls in **November**, you have **8 months** (from March to October) to save.
 
-![2. Crie um “cofrinho” mensal](/images/posts/5-passos-praticos-para-comecar-a-poupar-para-a-black-friday--2.webp)
+![2. Create a monthly “piggy bank”](/images/posts/5-passos-praticos-para-comecar-a-poupar-para-a-black-friday--2.webp)
 
 **Actionable tip:**
 
@@ -77,7 +77,7 @@ These small savings can add up to **$200** to **$300** over the next few months 
 
 The famous **30‑day rule** acts as a mental filter: when you see something you want to buy, write it down and wait 30 days. If you still need it after that period, consider the purchase; if not, it was just a passing desire.
 
-![4. Use o método “30 dias” para compras por impulso](/images/posts/5-passos-praticos-para-comecar-a-poupar-para-a-black-friday--4.webp)
+![4. Use the “30‑day” method for impulse purchases](/images/posts/5-passos-praticos-para-comecar-a-poupar-para-a-black-friday--4.webp)
 
 **How to apply:**
 
@@ -98,7 +98,7 @@ Keeping money in a checking account earns almost nothing (around **0.3 %** a y
 - **Government bonds linked to the central bank base rate** – redeemable at any time.
 - **Short‑term fixed‑[income](/en/posts/en-building-a-diversified-portfolio-with-r-500) funds** – some offer returns above 100 % of the interbank rate.
 
-**How to do it:** Open an account with a broker (such as **XP Investimentos** or **Rico**) and transfer up to **$200** from your monthly “piggy bank.” The return could add between **$30** and **$50** to your fund by November, increasing your buying power.
+**How to do it:** Open an account with a brokerage (such as a major broker) and transfer up to **$200** from your monthly “piggy bank.” The return could add between **$30** and **$50** to your fund by November, increasing your buying power.
 
 > *Extra tip:* If you use FinMoovi, you can link your investment account and watch your reserve grow in real time.
 
@@ -106,10 +106,10 @@ Keeping money in a checking account earns almost nothing (around **0.3 %** a y
 
 Going into Black Friday without a plan can turn a great opportunity into a spending trap. Get ready:
 
-![6. Monte um plano de “shopping inteligente” para o dia](/images/posts/5-passos-praticos-para-comecar-a-poupar-para-a-black-friday--6.webp)
+![6. Build a “smart‑shopping” plan for the day](/images/posts/5-passos-praticos-para-comecar-a-poupar-para-a-black-friday--6.webp)
 
 1. **Prioritize the list** – highlight essential items (e.g., TV) and keep “extras” as secondary.
-2. **Set the maximum price** you’re willing to pay – use price‑history tools (sites like **Zoom**).
+2. **Set the maximum price** you’re willing to pay – use price‑history tools (sites like **PriceTracker**).
 3. **Mark promotions early** – sign up for store newsletters to receive coupons.
 4. **Build a schedule** – know which stores launch deals first (e.g., Amazon at 00:00).
 5. **Use FinMoovi** to log the amount spent on each purchase and ensure you don’t exceed the total budget.
@@ -145,4 +145,3 @@ If needed, adjust monthly targets or swap out a strategy. The key is to stay dis
 Follow this roadmap, and you’ll walk into Black Friday with cash in hand, debt‑free, and ready to snag the best deals.
 
 > **Use FinMoovi to keep tabs on your spending and avoid surprises at month‑end.**
-<!-- SCHEMA_AUTO:{"@context":"https://schema.org","@type":"HowTo","name":"5 practical steps to start saving for Black Friday 2026","step":[{"@type":"HowToStep","position":1,"name":"Set the goal: how much do you want to spend?","text":"First things first—know exactly how much you plan to spend on Black Friday. According to the central bank, consumption in November 2023 rose 13.2 % compared with the same period a year earlier…"},{"@type":"HowToStep","position":2,"name":"List the items you really want to buy (e.g., 55‑inch TV, running shoes, home appliance).","text":"List the items you really want to buy (e.g., 55‑inch TV, running shoes, home appliance)."},{"@type":"HowToStep","position":3,"name":"Research the average price today (use comparison sites or the retailer’s own page).","text":"Research the average price today (use comparison sites or the retailer’s own page)."},{"@type":"HowToStep","position":4,"name":"Add everything up and tack on an extra 10 % for surprises or fees.","text":"> Example: If the TV costs $500, the shoes $70 and the coffee maker $40, the total is $610. Add 10 % → $671. That will be your “budget” for Black Friday."},{"@type":"HowToStep","position":5,"name":"Build a monthly “piggy bank”","text":"Now that you have a number, turn that goal into monthly targets. If Black Friday 2026 falls in November, you have 8 months (from March to October) to save. 2. Crie um “cofrinho” mensal Actionable…"},{"@type":"HowToStep","position":6,"name":"Trim fixed expenses before Black Friday","text":"Fixed expenses are the biggest savings killers. According to credit bureaus, the average debt of families in 2023 topped $2,400, showing that many people carry unnecessary costs. 5 steps to cut costs:"},{"@type":"HowToStep","position":7,"name":"Renegotiate your mobile plan – many carriers offer smaller packages with up to 30 % discount if you switch plans.","text":"Renegotiate your mobile plan – many carriers offer smaller packages with up to 30 % discount if you switch plans."},{"@type":"HowToStep","position":8,"name":"Adjust your electricity bill – replace bulbs with LEDs, use timers, and set the air‑conditioner 1 °C lower; you can save up to $30 per month.","text":"Adjust your electricity bill – replace bulbs with LEDs, use timers, and set the air‑conditioner 1 °C lower; you can save up to $30 per month."}]} -->

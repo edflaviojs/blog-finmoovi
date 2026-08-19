@@ -8,8 +8,8 @@
     "ultimaSeveridade": 0
   },
   "en-5-practical-steps-to-start-saving-for-black-friday-2026.md": {
-    "tentativas": 1,
-    "ultimaSeveridade": null
+    "tentativas": 2,
+    "ultimaSeveridade": 0
   },
   "en-5-tips-to-prepare-financially-for-the-second-half-of-the.md": {
     "tentativas": 1,
@@ -44,8 +44,8 @@
     "ultimaSeveridade": 0
   },
   "en-bolsa-de-valores.md": {
-    "tentativas": 1,
-    "ultimaSeveridade": null
+    "tentativas": 2,
+    "ultimaSeveridade": 0
   },
   "en-budget-for-couples-dividing-expenses.md": {
     "tentativas": 1,
@@ -176,8 +176,8 @@
     "ultimaSeveridade": null
   },
   "en-fgc-guarantee.md": {
-    "tentativas": 1,
-    "ultimaSeveridade": null
+    "tentativas": 2,
+    "ultimaSeveridade": 2
   },
   "en-financial-comfort-zone.md": {
     "tentativas": 1,
@@ -208,24 +208,24 @@
     "ultimaSeveridade": null
   },
   "en-financial-investment.md": {
-    "tentativas": 1,
-    "ultimaSeveridade": 2
+    "tentativas": 2,
+    "ultimaSeveridade": 0
   },
   "en-financial-option.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
   },
   "en-financial-planning-for-couples.md": {
-    "tentativas": 1,
-    "ultimaSeveridade": 2
+    "tentativas": 2,
+    "ultimaSeveridade": 0
   },
   "en-financial-planning-for-freelancers.md": {
     "tentativas": 1,
     "ultimaSeveridade": 0
   },
   "en-financial-value.md": {
-    "tentativas": 1,
-    "ultimaSeveridade": null
+    "tentativas": 2,
+    "ultimaSeveridade": 1
   },
   "en-financing.md": {
     "tentativas": 1,
@@ -252,8 +252,8 @@
     "ultimaSeveridade": null
   },
   "en-hedge.md": {
-    "tentativas": 1,
-    "ultimaSeveridade": null
+    "tentativas": 2,
+    "ultimaSeveridade": 0
   },
   "en-how-to-avoid-impulse-purchases-and-protect-your-wallet.md": {
     "tentativas": 1,
@@ -324,8 +324,8 @@
     "ultimaSeveridade": 0
   },
   "en-lc.md": {
-    "tentativas": 1,
-    "ultimaSeveridade": null
+    "tentativas": 2,
+    "ultimaSeveridade": 2
   },
   "en-lci-and-lca.md": {
     "tentativas": 1,
@@ -424,12 +424,12 @@
     "ultimaSeveridade": 0
   },
   "en-quotes-semana-2-july-2026.md": {
-    "tentativas": 1,
-    "ultimaSeveridade": null
+    "tentativas": 2,
+    "ultimaSeveridade": 0
   },
   "en-quotes-semana-3-july-2026.md": {
-    "tentativas": 1,
-    "ultimaSeveridade": null
+    "tentativas": 2,
+    "ultimaSeveridade": 1
   },
   "en-quotes-semana-3-june-2026.md": {
     "tentativas": 1,
@@ -779,6 +779,10 @@
     "tentativas": 1,
     "ultimaSeveridade": 0
   },
+  "es-cotizaciones-semana-5-junio-2026.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
   "es-credito.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
@@ -814,6 +818,10 @@
   "es-educacion-financiera-para-ninos.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
+  },
+  "es-educacion-financiera.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
   },
   "es-emergencia-financiera.md": {
     "tentativas": 1,
@@ -907,6 +915,10 @@
     "tentativas": 1,
     "ultimaSeveridade": null
   },
+  "es-inversiones-para-el-segundo-semestre-estrategias-practicas.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 1
+  },
   "es-invertir-en-dolar-en-brasil.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
@@ -946,6 +958,10 @@
   "es-meta-financiera.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
+  },
+  "es-metodo-50-30-20-para-presupuesto.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
   },
   "es-moeda.md": {
     "tentativas": 1,
@@ -995,9 +1011,17 @@
     "tentativas": 1,
     "ultimaSeveridade": 0
   },
+  "es-pierdes-el-control-de-los-gastos-cuando-viajas-usando.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
   "es-pix-vs-ted-cual-vale-mas-la-pena-en-2026.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
+  },
+  "es-pix.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
   },
   "es-planeamiento-financiero-para-autonomos.md": {
     "tentativas": 1,
@@ -1055,7 +1079,19 @@
     "tentativas": 1,
     "ultimaSeveridade": 0
   },
+  "es-renta-variable.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
   "es-revision-de-presupuesto.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "es-revisite-su-presupuesto.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "es-selic.md": {
     "tentativas": 1,
     "ultimaSeveridade": 0
   },
@@ -1122,6 +1158,10 @@
   "es-wall-street.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
+  },
+  "es-wealth-management.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
   },
   "es-webull.md": {
     "tentativas": 1,

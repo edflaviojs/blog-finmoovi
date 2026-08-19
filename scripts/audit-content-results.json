@@ -1104,6 +1104,21 @@
     }
   },
   {
+    "file": "en-building-your-first-etf-portfolio-in-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-bull-market-e-bear-market.md",
     "dir": "glossario",
     "severity": 0,
@@ -1646,6 +1661,21 @@
   {
     "file": "en-etfs-what-they-are-and-how-to-invest-simply-and-profitably.md",
     "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-expense-category.md",
+    "dir": "glossario",
     "severity": 0,
     "issues": {
       "currency": 0,
@@ -3879,6 +3909,21 @@
     }
   },
   {
+    "file": "es-categoria-de-gasto.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-categoria-de-gastos-de-empresa.md",
     "dir": "glossario",
     "severity": 0,
@@ -4165,6 +4210,21 @@
   },
   {
     "file": "es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-como-montar-tu-primera-cartera-de-etfs-en-2026.md",
     "dir": "posts",
     "severity": 0,
     "issues": {

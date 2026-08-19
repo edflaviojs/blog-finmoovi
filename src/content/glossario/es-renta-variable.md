@@ -23,7 +23,7 @@ Renta Variable es todo lo que no tiene retorno garantizado. El precio sube y baj
 | Riesgo | Bajo | Medio a alto |
 | Potencial | Limitado | Ilimitado |
 | Plazo ideal | Corto/medio | Largo (5+ años) |
-| Ejemplo | [CDB](/es/glossario/es-cdb), Tesoro | Acciones, FIIs |
+| Ejemplo | [certificados de depósito](/es/glossario/es-cdb), bonos del gobierno | Acciones, FIIs |
 
 ## Principales inversiones de renta variable
 

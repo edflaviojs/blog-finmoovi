@@ -27,7 +27,7 @@ An investment is simply putting your money into a financial product expecting to
 - **Certificates of deposit (CDs)** – works like a loan to the bank.  
 - **[government bonds](/en/glossario/en-tesouro-direto)** – purchase of securities issued by the government.  
 - **Investment funds** – pools of resources managed by professional managers.  
-- **Tax‑exempt bank notes** (LCI/LCA) – tax‑exempt [income tax](/en/glossario/en-income-tax) securities for those who invest in real‑estate or agricultural credit.  
+- **Tax‑exempt bank notes** – tax‑exempt [income tax](/en/glossario/en-income-tax) securities for those who invest in real‑estate or agricultural credit.  
 
 The core idea is that, instead of leaving money idle in a checking account, you put it in a place that generates income. This helps protect purchasing power against inflation and builds a cushion for future projects.
 
@@ -61,4 +61,4 @@ No investment is completely risk‑free, and understanding the pitfalls helps av
 - **Liquidity risk** – some products can only be redeemed after a set period, which can hinder emergencies.  
 - **Market risk** – price variations of assets can reduce the investment’s value.  
 
-It’s important to match your investor profile (conservative, moderate, or)
+It’s important to match your investor profile (conservative, moderate, or aggressive) with the type of investment you choose.
