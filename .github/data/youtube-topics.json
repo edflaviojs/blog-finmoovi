@@ -287,6 +287,69 @@
           "uma palavra em maiúsculas a marcar o tom"
         ]
       }
+    },
+    {
+      "id": "kw-gaste-menos-poupe-r-500",
+      "theme": "Gaste menos, poupe R$ 500",
+      "angle": "Mostro como cortei 30% dos meus gastos mensais",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "controle-de-gastos",
+      "status": "pending",
+      "sourceKeyword": "controle de gastos"
+    },
+    {
+      "id": "kw-5-erros-que-te-impedem-de-poupar-r-1-000-por-mes",
+      "theme": "5 erros que te impedem de poupar R$ 1.000 por mês",
+      "angle": "Vamos mostrar como evitar esses erros comuns e alcançar seus objetivos financeiros",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "planejamento-financeiro",
+      "status": "pending",
+      "sourceKeyword": "planejamento financeiro"
+    },
+    {
+      "id": "kw-custo-de-vida",
+      "theme": "custo de vida",
+      "angle": "Transformar \"custo de vida\" num video pratico com numeros reais",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": null,
+      "status": "pending",
+      "sourceKeyword": "custo de vida"
+    },
+    {
+      "id": "viral-4t_8St6xhPE",
+      "theme": "Investir R$ 1000",
+      "angle": "pergunta provocativa: mostrar que R$ 1000 pode render muito mais com investimentos certos",
+      "pillar": "investimento",
+      "source": "viral",
+      "glossaryRef": null,
+      "status": "pending",
+      "viralRef": {
+        "videoId": "4t_8St6xhPE",
+        "title": "4 Milhões é pouco dinheiro, né?",
+        "estrutura": [
+          "lista numerada (o número está no início e promete quantas coisas vêm)",
+          "pergunta dirigida a quem assiste"
+        ]
+      }
+    },
+    {
+      "id": "viral-JgAMCoztptU",
+      "theme": "Juntar dinheiro",
+      "angle": "Título afirmativo simples: mostrar como pequenas economias podem realizar sonhos, sem precisar de grandes números ou perguntas complicadas, apenas ações práticas e diárias",
+      "pillar": "mindset",
+      "source": "viral",
+      "glossaryRef": null,
+      "status": "pending",
+      "viralRef": {
+        "videoId": "JgAMCoztptU",
+        "title": "Educação financeira Quem Junta Moedas Realiza Sonhos",
+        "estrutura": [
+          "título afirmativo simples, sem número nem pergunta"
+        ]
+      }
     }
   ]
 }
