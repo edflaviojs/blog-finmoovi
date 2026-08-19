@@ -227,7 +227,72 @@ export const ECOS_DO_ENUNCIADO = [
   'or empty',
   'proeminente|incidental',
   'boa|borrada',
+  'nobody would actually read',
+  'a reader would actually read',
+  'do not describe the scene',
 ];
+
+/**
+ * ⚠️ AMOSTRAS QUE NÃO SÃO PROVA DE NADA.
+ *
+ * Medido na primeira varredura real (corrida 32256692568, 19/08/2026): de 60
+ * capas "reprovadas", cerca de 36 eram FALSO ALARME, e o padrão era sempre o
+ * mesmo — o nível vinha "proeminente" e a amostra dizia o contrário:
+ *
+ *   "proeminente" (16x) ...... copiou o nome do próprio nível
+ *   "None"/"none" (12x) ...... está a dizer que NÃO há texto
+ *   "nenhuma" (6x) ........... idem
+ *   "No written text is visible in the image." ... idem, por extenso
+ *   "nobody would actually read this" ........... ecoou o enunciado
+ *
+ * Ou seja: o modelo copia o primeiro valor da lista de opções que eu lhe escrevo.
+ * É `o-exemplo-pesa-mais-que-a-proibicao` pela terceira vez neste ficheiro, e a
+ * licão final é mais dura do que "escrever melhor o pedido": **um campo com lista
+ * de opções não é confiável para DECIDIR**. Serve para triar.
+ *
+ * Por isso a decisão de recusar passou a exigir a PROVA — a citação do texto — e
+ * uma amostra desta lista não é prova. Sem prova não se recusa nada. Errar para o
+ * lado de publicar uma capa que talvez tenha letras é melhor que refazer em
+ * silêncio dezenas de capas que estão boas.
+ */
+const AMOSTRAS_VAZIAS = [
+  '', 'none', 'nenhuma', 'nenhum', 'nothing', 'null', 'undefined', 'empty', 'n/a', 'na',
+  'no text', 'sem texto', 'nao', 'não', 'no', 'false',
+  // os próprios valores dos campos, que o modelo copia por descuido
+  'proeminente', 'incidental', 'boa', 'borrada',
+];
+
+/** A amostra é prova de que há texto na imagem? */
+export function amostraEhProva(amostra) {
+  const a = String(amostra || '').trim();
+  if (AMOSTRAS_VAZIAS.includes(a.toLowerCase())) return false;
+  if (ECOS_DO_ENUNCIADO.some(e => a.toLowerCase().includes(e))) return false;
+  // Frases que DECLARAM ausência ("No written text is visible in the image.")
+  if (/\b(no|nao|não|sem)\b[^.]{0,30}\b(text|texto|writing|words|palavras|letras|letters)\b/i.test(a)) return false;
+  // Precisa de pelo menos dois caracteres que se leiam. Um "$" ou um "19" sozinhos
+  // não sustentam uma recusa — é o tipo de marca que a gaveta "incidental" cobre.
+  const legiveis = a.replace(/[^\p{L}\p{N}]/gu, '');
+  return legiveis.length >= 3;
+}
+
+/**
+ * A SEGUNDA OPINIÃO, que é quem decide a recusa.
+ *
+ * Tem UM campo só e NENHUMA lista de opções, de propósito: foi a lista de opções
+ * que produziu os 36 falsos alarmes da corrida 32256692568 — o modelo copiava o
+ * primeiro valor em vez de responder. Aqui não há valor para copiar; ou ele cita
+ * o que está na imagem, ou escreve NONE.
+ *
+ * Também diz explicitamente para NÃO descrever a cena, porque parte dos falsos
+ * alarmes eram descrições ("Happy couple laughing at a phone") entregues como se
+ * fossem texto lido.
+ */
+const PERGUNTA_CONFIRMACAO =
+  'Look at this image and find CHARACTERS RENDERED IN THE IMAGE ITSELF — a headline, ' +
+  'a caption, a wordmark, a sentence or a large number that a reader would read.\n' +
+  'Do NOT describe the scene. Do NOT explain. Quote only what is actually written.\n' +
+  'If nothing is written, answer exactly NONE.\n' +
+  'Answer ONLY with compact JSON: {"citacao":"..."}';
 
 /** Extrai o primeiro objecto JSON de uma resposta, mesmo suja de cerca ou prosa. */
 function lerJson(texto) {
@@ -242,8 +307,11 @@ function lerJson(texto) {
   }
 }
 
-/** Pergunta a UMA IA de visão. Devolve `{nivel, amostra}` ou lança. */
-async function perguntar(provider, imageBuffer, mime) {
+/**
+ * Faz UMA pergunta a UMA IA de visão e devolve o JSON lido da resposta.
+ * A pergunta é parâmetro porque há duas: a de triagem e a de confirmação.
+ */
+async function chamarVisao(provider, imageBuffer, mime, pergunta) {
   const base64 = imageBuffer.toString('base64');
   let url = provider.url;
   let body;
@@ -253,7 +321,7 @@ async function perguntar(provider, imageBuffer, mime) {
     // O Gemini leva a chave na URL e a imagem em `inline_data`.
     url += `?key=${provider.apiKey}`;
     body = {
-      contents: [{ parts: [{ text: PERGUNTA }, { inline_data: { mime_type: mime, data: base64 } }] }],
+      contents: [{ parts: [{ text: pergunta }, { inline_data: { mime_type: mime, data: base64 } }] }],
       generationConfig: { temperature: 0, maxOutputTokens: 2048 },
     };
   } else if (provider.formato === 'cloudflare') {
@@ -264,7 +332,7 @@ async function perguntar(provider, imageBuffer, mime) {
     // 200 e não 120: a pergunta pede JSON com três campos e uma amostra de texto.
     // Régua curta demais inventa avaria — foi o que aconteceu com o `maxTokens: 10`
     // do diagnóstico dos textos, que fez o Groq parecer avariado sem estar.
-    body = { prompt: PERGUNTA, image: [...imageBuffer], max_tokens: 200, temperature: 0 };
+    body = { prompt: pergunta, image: [...imageBuffer], max_tokens: 200, temperature: 0 };
   } else {
     headers.Authorization = `Bearer ${provider.apiKey}`;
     body = {
@@ -275,7 +343,7 @@ async function perguntar(provider, imageBuffer, mime) {
       messages: [{
         role: 'user',
         content: [
-          { type: 'text', text: PERGUNTA },
+          { type: 'text', text: pergunta },
           { type: 'image_url', image_url: { url: `data:${mime};base64,${base64}` } },
         ],
       }],
@@ -309,18 +377,26 @@ async function perguntar(provider, imageBuffer, mime) {
    * outro objecto, passa a texto para o `lerJson` procurar o JSON lá dentro.
    */
   let lido = null;
-  if (bruto && typeof bruto === 'object' && !Array.isArray(bruto) && bruto.nivel) {
+  if (bruto && typeof bruto === 'object' && !Array.isArray(bruto)) {
     lido = bruto;
   } else {
     lido = lerJson(typeof bruto === 'string' ? bruto : JSON.stringify(bruto));
   }
 
-  if (!lido || !lido.nivel) {
+  if (!lido || typeof lido !== 'object') {
     // A mensagem mostra o FORMATO, não só o valor: foi a falta disso que fez a
     // primeira falha custar uma corrida inteira para ser entendida.
     const forma = bruto && typeof bruto === 'object' ? `objecto com chaves [${Object.keys(bruto).join(', ')}]` : `"${String(bruto).slice(0, 80)}"`;
-    throw new Error(`${provider.name}: resposta sem nível legível — ${forma}`);
+    throw new Error(`${provider.name}: resposta ilegível — ${forma}`);
   }
+  return lido;
+}
+
+/** A triagem: devolve `{nivel, amostra, borrada}` ou lança. */
+async function perguntar(provider, imageBuffer, mime) {
+  const lido = await chamarVisao(provider, imageBuffer, mime, PERGUNTA);
+
+  if (!lido.nivel) throw new Error(`${provider.name}: resposta sem nível — chaves [${Object.keys(lido).join(', ')}]`);
 
   const nivel = String(lido.nivel).toLowerCase();
   if (!['proeminente', 'incidental', 'nenhuma'].includes(nivel)) {
@@ -328,16 +404,24 @@ async function perguntar(provider, imageBuffer, mime) {
   }
 
   const amostra = String(lido.amostra || '').slice(0, 80);
-  const eco = ECOS_DO_ENUNCIADO.find(e => amostra.toLowerCase().includes(e));
-  if (eco) {
-    // Não é uma leitura da imagem — é o enunciado de volta. Falha do fornecedor,
-    // não defeito da capa.
-    throw new Error(`${provider.name}: devolveu o enunciado em vez de ler a imagem ("${amostra}")`);
-  }
-
   // A qualidade é secundária: se o modelo não a devolver, não se inventa defeito.
   const borrada = String(lido.qualidade || '').toLowerCase() === 'borrada';
   return { nivel, amostra, borrada };
+}
+
+/**
+ * A confirmação: pergunta outra vez, com uma pergunta diferente e SEM lista de
+ * opções, e devolve a citação encontrada (string vazia = nada escrito).
+ *
+ * É esta que decide a recusa. A triagem sozinha errou 36 vezes em 60 na corrida
+ * 32256692568; pedir uma segunda leitura, formulada de outro modo, é a diferença
+ * entre uma trava que ajuda e uma que manda refazer capas boas. Custa uma chamada
+ * extra APENAS nas imagens que a triagem apontou.
+ */
+async function confirmar(provider, imageBuffer, mime) {
+  const lido = await chamarVisao(provider, imageBuffer, mime, PERGUNTA_CONFIRMACAO);
+  const citacao = String(lido.citacao ?? lido.amostra ?? '').trim().slice(0, 120);
+  return amostraEhProva(citacao) ? citacao : '';
 }
 
 /**
@@ -360,7 +444,36 @@ export async function olharCapa(imageBuffer, mime = 'image/webp') {
   for (const provider of ativos) {
     try {
       const { nivel, amostra, borrada } = await perguntar(provider, imageBuffer, mime);
-      return { reprovada: nivel === 'proeminente', nivel, amostra, borrada, indisponivel: false, quem: provider.name };
+
+      /**
+       * ⚠️ RECUSAR EXIGE PROVA, EM DOIS PASSOS.
+       *
+       * O `nivel` sozinho não serve para decidir: é um campo com lista de opções e
+       * o modelo copia o primeiro valor. Na corrida 32256692568 ele devolveu
+       * "proeminente" 16 vezes com a amostra a dizer "None" ou "nenhuma".
+       *
+       * Portanto: a triagem só APONTA. Para recusar é preciso (1) uma amostra que
+       * seja prova e (2) uma segunda leitura, com outra pergunta, a confirmar. Sem
+       * as duas, a capa passa. Uma capa com letras que escape é um defeito visível
+       * que se conserta; dezenas de capas boas refeitas em silêncio, não.
+       */
+      let reprovada = false;
+      let prova = amostra;
+      if (nivel === 'proeminente') {
+        if (!amostraEhProva(amostra)) {
+          console.log(`   🔎 triagem apontou texto mas sem prova ("${amostra}") — a capa passa`);
+        } else {
+          const citacao = await confirmar(provider, imageBuffer, mime);
+          if (citacao) {
+            reprovada = true;
+            prova = citacao;
+          } else {
+            console.log(`   🔎 a 2ª leitura não confirmou o texto ("${amostra}") — a capa passa`);
+          }
+        }
+      }
+
+      return { reprovada, nivel, amostra: prova, borrada, indisponivel: false, quem: provider.name };
     } catch (e) {
       erros.push(e.message);
     }

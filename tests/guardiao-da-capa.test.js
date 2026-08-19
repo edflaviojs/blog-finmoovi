@@ -29,7 +29,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, existsSync } from 'fs';
 import { join } from 'path';
-import { medirNitidez, aprovarCapa, LIMITE_NITIDEZ, ECOS_DO_ENUNCIADO } from '../src/scripts/lib/guardiao-da-capa.js';
+import { medirNitidez, aprovarCapa, LIMITE_NITIDEZ, ECOS_DO_ENUNCIADO, amostraEhProva } from '../src/scripts/lib/guardiao-da-capa.js';
 import { assuntoVisual } from '../src/scripts/apis/image-router.js';
 
 const AMOSTRAS = join(process.cwd(), 'tests', 'amostras');
@@ -117,6 +117,44 @@ test('a resposta que ECOA o enunciado é apanhada', () => {
   for (const amostra of leiturasReais) {
     assert.ok(!ECOS_DO_ENUNCIADO.some(e => amostra.toLowerCase().includes(e)),
       `"${amostra}" é leitura legítima e não podia ser tratada como eco`);
+  }
+});
+
+/**
+ * As amostras abaixo são LITERALMENTE as que a IA de visão devolveu na primeira
+ * varredura real (corrida 32256692568, 19/08/2026), em que 36 de 60 capas foram
+ * reprovadas por engano. Não são inventadas: é o registo dessa corrida.
+ */
+test('as amostras que a IA devolveu por engano NÃO são prova de texto', () => {
+  const falsosAlarmes = [
+    'proeminente',      // 16x — copiou o nome do próprio nível
+    'None', 'none',     // 12x — está a dizer que não há texto
+    'nenhuma',          // 6x
+    'Nothing',
+    'No written text is visible in the image.',
+    'nobody would actually read this',   // ecoou o enunciado
+    'the text you can read, or empty',   // idem
+    '',
+    '$',                // marca solta, não sustenta recusa
+    '19',
+  ];
+  for (const a of falsosAlarmes) {
+    assert.equal(amostraEhProva(a), false, `"${a}" não podia sustentar uma recusa`);
+  }
+});
+
+test('o texto REAL que saiu nas capas de 19/08 continua a ser prova', () => {
+  const reais = [
+    "Cansarlose de a1ot cer gasts b ta l a'o mae tor esu dinieriee?",
+    'cando-de-anotar calte gusto a-manto e- perrer a-nocao do seu -',
+    '7 pasos prjases carar dindeidre yeard et atidie s/s nlirlinti 2226 2026',
+    'Cartão die cresitó Cartão\'s debito',
+    "Maximieage o s'ew cashback",
+    'Working Together',
+    'Investing in growth',
+  ];
+  for (const a of reais) {
+    assert.equal(amostraEhProva(a), true, `"${a}" é texto real e tinha de contar como prova`);
   }
 });
 
