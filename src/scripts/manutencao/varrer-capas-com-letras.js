@@ -135,10 +135,20 @@ function lerInventario() {
   }
 }
 
-function gravarInventario(inv) {
+/**
+ * Grava o inventário.
+ *
+ * `totalAcervo` e `ultimaCorrida` são gravados para o E-MAIL DAS 7H, que mostra a
+ * progressão ao dono e não pode ficar a contar imagens em disco nem a adivinhar se
+ * o robô ainda está vivo. Sem `ultimaCorrida` um "10/120" parado durante uma
+ * semana leria-se como progresso — é o defeito de `corrida-verde-post-morto-depois`.
+ */
+function gravarInventario(inv, hoje) {
   try {
     const dir = join(ROOT, 'data');
     if (!existsSync(dir)) mkdirSync(dir, { recursive: true });
+    inv.totalAcervo = totalDoAcervo();
+    inv.ultimaCorrida = hoje;
     writeFileSync(INVENTARIO, JSON.stringify(inv, null, 2));
   } catch (e) {
     console.warn(`   ⚠️ não deu para gravar o inventário: ${e.message}`);
@@ -382,7 +392,7 @@ async function main() {
   }
 
   // Só se grava o inventário quando a corrida foi mesmo capaz de VER.
-  gravarInventario(inv);
+  gravarInventario(inv, hoje);
 
   console.log(`\n📊 ${medidas} capas medidas — ${reprovadas.length} reprovadas.`);
   if (cegas > 0) {
@@ -437,7 +447,7 @@ async function main() {
     await sleep(THROTTLE_MS);
   }
 
-  gravarInventario(inv);
+  gravarInventario(inv, hoje);
 
   console.log(`\n✅ ${refeitas} de ${lote.length} capas refeitas neste lote.`);
   if (refeitas > 0) console.log('   O imageAlt das refeitas foi apagado — o robô das 3x/dia redescreve-as.');

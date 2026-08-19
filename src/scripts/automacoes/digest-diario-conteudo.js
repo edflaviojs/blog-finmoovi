@@ -477,6 +477,74 @@ function htmlGastos(rel, hojeISO) {
   return `${sectionTitle(titulo, rel.linhas.length, '#d29922')}<table style="width:100%;border-collapse:collapse;">${rows}</table>${alarme}${aviso}`;
 }
 
+/**
+ * 🖼️ A LIMPEZA DAS CAPAS — pedido do dono em 19/08/2026, textual: *"quero que me
+ * envie no email diario a progressao... tipo assim capas refeitas 10 falta 120,
+ * portanto estamos em 10/120"*.
+ *
+ * Lê `data/capas-auditadas.json`, que o robô `capas-com-letras.yml` escreve todas
+ * as noites (22:30 UTC). Não mede nada aqui: medir custa cota de IA de visão e
+ * este e-mail tem de sair depressa.
+ *
+ * ⚠️ O DENOMINADOR É ESTIMADO E TEM DE SER DITO. Só uma parte do acervo foi
+ * medida, portanto "faltam 120" é uma proporção, não uma contagem. À medida que a
+ * varredura avança o número ajusta-se — e pode SUBIR. Apresentar uma estimativa
+ * como se fosse contagem é o mesmo defeito de mostrar um apuramento velho como
+ * novo, logo aqui em cima na secção dos gastos.
+ *
+ * ⚠️ E SE O ROBÔ PAROU, DIZ QUE PAROU. Um "10/120" repetido durante uma semana
+ * parece progresso e é uma corrida morta — foi o que aconteceu com o vídeo que
+ * ficou verde e não publicou nada.
+ */
+function htmlCapas(inv, hojeISO) {
+  const titulo = '🖼️ Capas com letras (limpeza do acervo)';
+
+  if (!inv) {
+    return `${sectionTitle(titulo, undefined, '#d29922')}<p style="color:#d29922;font-size:13px;margin:4px 0 0;">⚠️ Ainda não há auditoria. (O robô "Capas — varrer" corre às 22:30 UTC, 19:30 no Brasil.)</p>`;
+  }
+
+  const vistas = Object.keys(inv.vistas || {}).length;
+  const corrigidas = Object.keys(inv.corrigidas || {}).length;
+  const naFila = Object.entries(inv.vistas || {}).filter(([f, v]) => v && v.reprovada && !(inv.corrigidas || {})[f]).length;
+  const comProblema = corrigidas + naFila;
+  const total = Number(inv.totalAcervo) || 0;
+  const faltamMedir = Math.max(0, total - vistas);
+
+  // Estimativa do total com problema, projectando a taxa medida no resto do acervo.
+  const estimado = vistas > 0 ? Math.round(total * comProblema / vistas) : 0;
+  const denominador = Math.max(estimado, comProblema);
+
+  // O robô corre todas as noites; se o último avanço não é de ontem nem de hoje,
+  // alguma coisa parou.
+  const ultimo = inv.ultimaCorrida || null;
+  const ontemISO = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
+  const paradoDesde = ultimo && ultimo !== hojeISO && ultimo !== ontemISO ? ultimo : null;
+
+  if (comProblema === 0 && vistas > 0 && faltamMedir === 0) {
+    return `${sectionTitle(titulo, 0)}${emptyLine(`Acervo inteiro auditado (${vistas} imagens) e nenhuma com letras. Limpeza concluída.`)}`;
+  }
+
+  const pct = denominador > 0 ? Math.round(100 * corrigidas / denominador) : 0;
+  const barra = `<div style="background:#21262d;border-radius:4px;height:8px;margin:8px 0;overflow:hidden;"><div style="background:#3fb950;height:8px;width:${pct}%;"></div></div>`;
+
+  const linhaPrincipal = `<p style="color:#c9d1d9;font-size:15px;margin:4px 0 0;">
+    <strong style="color:#f0f6fc;">${corrigidas}/${denominador}</strong> capas refeitas
+    ${naFila > 0 ? `<span style="color:#8b949e;font-size:13px;">— ${naFila} já identificada(s) na fila</span>` : ''}
+  </p>`;
+
+  const detalhe = `<p style="color:#8b949e;font-size:12px;margin:6px 0 0;">
+    Auditadas ${vistas} de ${total} imagens${faltamMedir > 0 ? ` (faltam medir ${faltamMedir})` : ''}.
+    ${faltamMedir > 0 ? `O total de <strong>${denominador}</strong> é <strong>estimativa</strong> (taxa de ${Math.round(100 * comProblema / vistas)}% no que já foi visto) — vai ajustar-se, e pode subir.` : 'O total já é contagem, não estimativa.'}
+    Ritmo: 10 correções por noite, como combinado.
+  </p>`;
+
+  const alerta = paradoDesde
+    ? `<p style="color:#f85149;font-size:13px;margin:8px 0 0;">🚨 O robô das capas não avança desde <strong>${esc(paradoDesde)}</strong> — normalmente é cota de IA esgotada. Ver as corridas de "Capas — varrer".</p>`
+    : '';
+
+  return `${sectionTitle(titulo, undefined, '#3fb950')}${linhaPrincipal}${barra}${detalhe}${alerta}`;
+}
+
 function htmlConteudo(items) {
   const localeFlag = { pt: '🇧🇷', en: '🇺🇸', es: '🇪🇸' };
   if (items.length === 0) {
@@ -739,6 +807,17 @@ async function main() {
   } catch (err) {
     // Ficheiro ainda não existe (primeiros dias) — não é falha, é ausência.
     sections.push(htmlGastos(null, new Date().toISOString().split('T')[0]));
+  }
+
+  // 1-quater. A limpeza das capas com letras — o dono pediu a progressão em
+  // 19/08/2026 e quer ver o "10/120" todos os dias, não ir procurar.
+  try {
+    const inv = JSON.parse(readFileSync(join(process.cwd(), 'data', 'capas-auditadas.json'), 'utf-8'));
+    sections.push(htmlCapas(inv, new Date().toISOString().split('T')[0]));
+  } catch (err) {
+    // Ficheiro ainda não existe (a primeira corrida do robô é 19/08 à noite) —
+    // não é falha, é ausência, e a secção diz isso.
+    sections.push(htmlCapas(null, new Date().toISOString().split('T')[0]));
   }
 
   // 2. Conteúdo publicado
