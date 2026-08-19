@@ -124,5 +124,11 @@
     "gancho": "faca-isso",
     "turno": "noite",
     "em": "2026-08-18T05:06:33.298Z"
+  },
+  {
+    "situacao": "limpar-o-nome",
+    "gancho": "se-parar",
+    "turno": "manha",
+    "em": "2026-08-19T05:02:22.239Z"
   }
 ]

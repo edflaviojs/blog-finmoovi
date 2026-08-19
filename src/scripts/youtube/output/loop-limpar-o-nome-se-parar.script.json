@@ -1,0 +1,117 @@
+{
+  "slug": "loop-limpar-o-nome-se-parar",
+  "formato": "loop16",
+  "term": "Limpar o nome",
+  "category": "vida",
+  "keyword": "NOME",
+  "situacao": "limpar-o-nome",
+  "gancho": "se-parar",
+  "ganchoFamilia": "e se parar",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "buraco",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "O que acontece se você parar de ignorar boletos? Eu vi compra recusada.",
+      "durationSec": 4.3,
+      "shots": [
+        {
+          "anchor": "acontece",
+          "visual": {
+            "type": "statement",
+            "text": "Compra recusada na loja"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "parar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Comigo aconteceu isso na loja e meu nome estava sujo ainda.",
+      "durationSec": 3.63,
+      "shots": [
+        {
+          "anchor": "Comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "Nome sujo me travou"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então eu conferi contas em casa e limpei nome depois.",
+      "durationSec": 3.3,
+      "shots": [
+        {
+          "anchor": "conferi",
+          "visual": {
+            "type": "statement",
+            "text": "Conferi minhas contas"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "contas",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Agora eu sei que parar de ignorar boletos evita compra recusada também.",
+      "durationSec": 3.97,
+      "shots": [
+        {
+          "anchor": "parar",
+          "visual": {
+            "type": "statement",
+            "text": "Pare de ignorar boletos"
+          }
+        },
+        {
+          "anchor": "ignorar",
+          "visual": {
+            "type": "statement",
+            "text": "Compra recusada na loja"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
