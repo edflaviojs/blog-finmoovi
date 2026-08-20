@@ -32,7 +32,7 @@ According to the World Bank on financial inclusion, many people struggle with ke
 
 ## How offline voice capture works
 
-FinMoovi was designed for those who don’t want to depend on a constant connection. The voice capture runs **100 % offline**, using your phone’s microphone to turn speech into text. The process happens in three simple steps:
+FinMoovi was designed for those who don’t want to depend on a constant connection. The [voice capture](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end) runs **100 % offline**, using your phone’s microphone to turn speech into text. The process happens in three simple steps:
 
 ![How offline voice capture works](/images/posts/cansado-de-anotar-cada-gasto-a-mao-e-perder-a-nocao-do-seu-2.webp)
 
@@ -45,7 +45,7 @@ The offline voice‑recognition technology has gained traction in recent years, 
 ## Step‑by‑step guide to using FinMoovi in 5 minutes
 
 1. **Install and open the app** – No account creation needed; just accept the terms of use and enable the microphone.  
-2. **Activate voice capture** – Tap the microphone icon on the main screen.  
+2. **Activate [voice capture](/en/posts/en-forgot-to-pay-a-bill-how-to-fix-it-in-2026)** – Tap the microphone icon on the main screen.  
 3. **Speak the expense** – Say something like “I paid groceries for about a daily coffee.” The app detects the approximate amount and the “food” category.  
 4. **Confirm or adjust** – In a few seconds, FinMoovi shows the transaction. If you need to fine‑tune the amount, just swipe and type the exact number.  
 5. **View the balance** – Right after confirmation, the dashboard displays the updated balance, with monthly spending charts ready for analysis.
@@ -68,14 +68,14 @@ This flow takes less than five minutes, and you have the expense recorded, class
 
 - **Peace of mind** – Knowing exactly how much is left for upcoming purchases prevents unpleasant surprises.  
 - **More conscious decisions** – When the balance is visible, you think twice before making an impulsive spend.  
-- **Easier goal planning** – Whether saving for a trip or an emergency fund, real‑time tracking shows genuine progress.  
-- **Time savings** – Instead of hours tweaking spreadsheets, you spend a few minutes on entry and use the rest of the day to live.
+- **Easier goal [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips)** – Whether [saving](/en/posts/en-how-to-build-a-budget-that-actually-works-in-2026) for a trip or an [emergency fund](/en/glossario/en-emergency-fund), real‑time tracking shows genuine progress.  
+- **Time [savings](/en/glossario/en-savings)** – Instead of hours tweaking spreadsheets, you spend a few minutes on entry and use the rest of the day to live.
 
 ## Practical tips to turn the habit into a routine
 
 - **Set a daily moment** – As soon as you walk in the door, record your expenses vocally before sinking into the couch.  
 - **Use consistent terms** – Saying “electricity bill” or “utilities” helps the AI categorize more accurately.  
-- **Leverage alerts** – FinMoovi can notify you when a category’s balance nears its limit, preventing budget overruns.  
+- **[Leverage](/en/glossario/en-leverage) alerts** – FinMoovi can notify you when a category’s balance nears its limit, preventing budget overruns.  
 - **Review weekly** – Spend 10 minutes at week’s end checking the charts and adjusting goals if needed.
 
 ![Practical tips to turn the habit into a routine](/images/posts/cansado-de-anotar-cada-gasto-a-mao-e-perder-a-nocao-do-seu-6.webp)
@@ -86,7 +86,7 @@ This flow takes less than five minutes, and you have the expense recorded, class
 Speech recognition runs locally on the device using optimized algorithms that never send data to the cloud, ensuring privacy and offline functionality.
 
 **Can FinMoovi handle multiple currencies?**  
-Yes, the app supports multi‑currency, allowing you to log expenses in different currencies and automatically convert them with the latest exchange rate when a connection is available.
+Yes, the app supports [multi‑currency](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using), allowing you to log expenses in different currencies and automatically convert them with the latest exchange rate when a connection is available.
 
 **What happens if I speak an approximate amount?**  
 FinMoovi records the approximate value and opens a quick‑edit field for you to fine‑tune the number, making corrections easy without reopening the transaction.

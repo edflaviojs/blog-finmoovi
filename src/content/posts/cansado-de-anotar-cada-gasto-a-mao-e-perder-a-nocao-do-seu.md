@@ -19,7 +19,7 @@ seo:
   keywords: ["registro de despesas","captura por voz","FinMoovi","controle financeiro offline","automação de gastos","planejamento financeiro","substituir planilha","app financeiro","relatórios IA","finmoovi","finanças pessoais"]
 ---
 
-Ao chegar em casa depois de um dia corrido, abrir a planilha ou o caderno de anotações e digitar cada conta paga – luz, água, supermercado – parece mais uma tarefa que um alívio. Você sente que, enquanto escreve, o dinheiro já está se mexendo em outra conta, e o saldo que vê no final do mês nunca corresponde à realidade. A boa notícia? Em menos de cinco minutos, basta abrir o FinMoovi, dizer “paguei conta de luz cerca de um aluguel” e deixar que o app faça todo o trabalho, atualizando seu extrato instantaneamente, mesmo sem internet.
+Ao chegar em casa depois de um dia corrido, abrir a [planilha](/posts/migrando-da-planilha-para-um-app-financeiro) ou o caderno de anotações e digitar cada conta paga – luz, água, supermercado – parece mais uma tarefa que um alívio. Você sente que, enquanto escreve, o dinheiro já está se mexendo em outra conta, e o saldo que vê no final do mês nunca corresponde à realidade. A boa notícia? Em menos de cinco minutos, basta abrir o FinMoovi, dizer “paguei conta de luz cerca de um aluguel” e deixar que o app faça todo o trabalho, atualizando seu extrato instantaneamente, mesmo sem internet.
 
 ## Por que o registro manual te deixa na mão
 
@@ -32,7 +32,7 @@ worldbank.org/en/topic/financialinclusion】. Além disso, a procrastinação na
 
 ## Como a captura por voz funciona offline
 
-O FinMoovi foi pensado para quem não quer depender de conexão constante. A captura por voz opera 100 % offline, usando o microfone do celular para transformar sua fala em texto. O processo acontece em três etapas simples:
+O FinMoovi foi pensado para quem não quer depender de conexão constante. A [captura por voz](/posts/ja-esqueceu-de-pagar-a-conta-e-ficou-na-mao-como-mudar-isso) opera 100 % offline, usando o microfone do celular para transformar sua fala em texto. O processo acontece em três etapas simples:
 
 ![Como a captura por voz funciona offline](/images/posts/cansado-de-anotar-cada-gasto-a-mao-e-perder-a-nocao-do-seu-2.webp)
 
@@ -47,7 +47,7 @@ A tecnologia de reconhecimento de voz offline tem ganhado força nos últimos an
 ## Passo a passo para usar o FinMoovi em 5 minutos
 
 1. **Instale e abra o app** – Não é preciso criar conta; basta aceitar os termos de uso e habilitar o microfone.
-2. **Ative a captura por voz** – Toque no ícone de microfone na tela principal.
+2. **Ative a [captura por voz](/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim)** – Toque no ícone de microfone na tela principal.
 3. **Fale a despesa** – Diga algo como “paguei supermercado por cerca de um café diário”. O app reconhece o valor aproximado e a categoria “alimentação”.
 4. **Confirme ou ajuste** – Em poucos segundos, o FinMoovi mostra a transação. Se precisar ajustar o valor, basta deslizar e digitar o número exato.
 5. **Visualize o saldo** – Logo após a confirmação, o painel de controle exibe o saldo atualizado, com gráficos de gastos mensais já prontos para análise.
@@ -72,14 +72,14 @@ Esse fluxo leva menos de cinco minutos, e você já tem a conta registrada, clas
 
 - **Paz mental** – Saber exatamente quanto resta para as próximas compras impede surpresas desagradáveis.
 - **Decisões mais conscientes** – Quando o saldo está visível, você pensa duas vezes antes de fazer um gasto impulsivo.
-- **Facilidade para planejar metas** – Seja guardar para uma viagem ou para a reserva de emergência, o acompanhamento em tempo real mostra o progresso real.
+- **Facilidade para planejar metas** – Seja guardar para uma viagem ou para a [reserva de emergência](/ferramentas/calculadora-reserva), o acompanhamento em tempo real mostra o progresso real.
 - **Economia de tempo** – Em vez de horas gastas ajustando planilhas, você dedica poucos minutos ao registro e usa o restante para viver.
 
 ## Dicas práticas para transformar o hábito
 
 - **Reserve um momento diário** – Assim que entrar em casa, faça o registro vocal antes de sentar no sofá.
 - **Use termos consistentes** – Falar “conta de luz” ou “energia” ajuda a IA a categorizar melhor.
-- **Aproveite os alertas** – O FinMoovi pode enviar notificações quando o saldo ficar próximo ao limite da categoria, evitando ultrapassar o orçamento.
+- **Aproveite os [alertas](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto)** – O FinMoovi pode enviar notificações quando o saldo ficar próximo ao limite da categoria, evitando ultrapassar o orçamento.
 - **Revise semanalmente** – Dedique 10 minutos no fim da semana para conferir os gráficos e ajustar metas, se necessário.
 
 ![Dicas práticas para transformar o hábito](/images/posts/cansado-de-anotar-cada-gasto-a-mao-e-perder-a-nocao-do-seu-6.webp)
@@ -91,7 +91,7 @@ Esse fluxo leva menos de cinco minutos, e você já tem a conta registrada, clas
 O reconhecimento de fala acontece localmente no dispositivo, usando algoritmos otimizados que não enviam dados para a nuvem, garantindo privacidade e funcionamento offline.
 
 ### Posso usar o FinMoovi para múltiplas moedas?
-Sim, o app suporta multimoeda, permitindo registrar despesas em diferentes moedas e convertê‑las automaticamente com taxa de câmbio atualizada quando houver conexão.
+Sim, o app suporta [multimoeda](/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas), permitindo registrar despesas em diferentes moedas e convertê‑las automaticamente com taxa de [câmbio](/glossario/cambio) atualizada quando houver conexão.
 
 ### O que acontece se eu falar um valor aproximado?
 O FinMoovi registra o valor aproximado e abre um campo para ajuste rápido, facilitando correções sem precisar reabrir a transação.
