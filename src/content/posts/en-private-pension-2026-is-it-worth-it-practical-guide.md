@@ -26,8 +26,8 @@ Two main types of plans exist:
 
 | Type | How it works | When it pays |
 |------|--------------|--------------|
-| **PGBL** (Plano Gerador de Benefício Livre) | Contributions are deductible from Income Tax (up to 12% of gross income). | At retirement, tax is applied on the total (contributions + earnings). |
-| **VGBL** (Vida Gerador de Benefício Livre) | No tax deduction on contributions. | Tax is applied only on the earnings at the time of withdrawal. |
+| **Tax‑deferred retirement plan (PGBL)** | Contributions are deductible from Income Tax (up to 12% of gross income). | At retirement, tax is applied on the total (contributions + earnings). |
+| **Tax‑deferred retirement plan (VGBL)** | No tax deduction on contributions. | Tax is applied only on the earnings at the time of withdrawal. |
 
 These acronyms can look confusing, but the core idea is simple: you put money in, it grows, and later it turns into income.
 
@@ -75,17 +75,17 @@ These numbers assume you **make no withdrawals** before retirement and that the 
 
 | Product | Avg. return 2025‑2026 | [Liquidity](/en/glossario/en-liquidity) | Costs | Best for |
 |--------|----------------------|-----------|-------|----------|
-| **Private pension (PGBL/VGBL)** | 6% – 7% per year (depending on the fund) | Low – only withdraw at retirement or in specific cases | Admin fees 1.5‑2.5% | Retirement planning, tax benefit |
+| **Private pension (tax‑deferred retirement plans)** | 6% – 7% per year (depending on the fund) | Low – only withdraw at retirement or in specific cases | Admin fees 1.5‑2.5% | Retirement planning, tax benefit |
 | **[CD](/en/glossario/en-cdb) (Certificate of Deposit)** | 100% of interbank rate (≈ 5.5% per year) | Medium – withdrawal after 30 days | Near‑zero fees | Short‑to‑medium horizon investors |
 | **Government bonds (central bank base rate)** | 100% of central bank base rate (≈ 5.75% per year) | High – daily withdrawal | Custody fee ~0.2% per year | Conservative profile, emergency reserve |
 
-The main advantage of private pension is the **tax benefit** (for PGBL) and the possibility of turning the balance into a guaranteed monthly income. However, if quick access to cash is your priority, government bonds or a CD are more suitable.
+The main advantage of private pension is the **tax benefit** (for the tax‑deferred plan) and the possibility of turning the balance into a guaranteed monthly income. However, if quick access to cash is your priority, government bonds or a CD are more suitable.
 
 ## Risks and cautions
 
 1. **Market risk** – In funds that invest in stocks or ETFs, the value can swing a lot. If your retirement horizon is short, this risk can be problematic.  
 2. **High administration‑fee risk** – As we saw, fees above 2% can shave up to 10% off gains over 30 years.  
-3. **Regulatory‑change risk** – Shifts in tax rules or deduction limits can affect the attractiveness of PGBL.  
+3. **Regulatory‑change risk** – Shifts in tax rules or deduction limits can affect the attractiveness of the tax‑deferred plan.  
 4. **Institutional default risk** – Although the insurance regulator guarantees insurers’ solvency, always check the company’s rating.
 
 ![Risks and cautions](/images/posts/previdencia-privada-2026-vale-a-pena-guia-pratico-6.webp)
@@ -98,7 +98,7 @@ The main advantage of private pension is the **tax benefit** (for PGBL) and the 
 ## Next steps
 
 1. **List your goals** – Define how much you want to accumulate by retirement and whether you need monthly income or a lump sum.  
-2. **Run simulations** – Use the calculator from the [government bonds portal](https://www.tesourodireto.com.br) or your bank to compare PGBL/VGBL with CDs and government bonds.  
+2. **Run simulations** – Use the calculator from the [government bonds portal](https://www.tesourodireto.com.br) or your bank to compare tax‑deferred retirement plans with CDs and government bonds.  
 3. **Check the fees** – Ask your broker or manager for a detailed breakdown of administration and performance fees.  
 4. **Build a contribution plan** – Choose a monthly amount that fits your budget (e.g., $100, $200 or $1,000) and adjust if needed.  
 5. **Monitor regularly** – Review your plan every 12 months, making sure the return aligns with your target and that fees remain competitive.
@@ -108,4 +108,3 @@ Following these steps will give you clarity on whether private pension still mak
 ---
 
 **To keep all your investments in one place, [try FinMoovi free for 7 days](https://finmoovi.com) — multi‑currency, smart reports and 100% offline.**
-<!-- SCHEMA_AUTO:{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is private pension?","acceptedAnswer":{"@type":"Answer","text":"Private pension, also called a complementary pension plan, works like a long‑term savings vehicle that you feed throughout your working life. The money is invested in funds managed by financial institutions and, when you retire, you receive either a monthly benefit (income) or a lump‑sum payment."}},{"@type":"Question","name":"How does private pension work in 2026?","acceptedAnswer":{"@type":"Answer","text":"In 2026 the landscape changed in three critical ways:"}},{"@type":"Question","name":"Practical simulation – how much does it really earn?","acceptedAnswer":{"@type":"Answer","text":"Let’s assume three monthly contribution profiles: $100, $200 and $1,000. We’ll use a fixed‑income fund with a 1.8% annual administration fee and an average return of 6.5% per year (roughly interbank rate + 0.5%)."}}]} -->

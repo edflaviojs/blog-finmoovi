@@ -21,7 +21,7 @@ seo:
 
 Imagina la escena: acabas de recibir el extracto de tu cuenta corriente y ves que la aplicación que hiciste el mes pasado rinde menos de lo esperado. La frustración aparece, porque parece que el dinero “se quedó” mientras el [costo de vida](/es/posts/es-indice-finmoovi-costo-de-vida-junio-2026) sube. Esa sensación de que el retorno no sigue a la [inflación](/es/glossario/es-inflacion) es muy común, y la raíz del problema suele estar en la **tasa interbancaria**, que actúa como termómetro para la mayor parte de los productos de [renta fija](/es/glossario/es-renta-fija).
 
-La **tasa interbancaria** es el promedio que los bancos cobran al prestarse dinero entre sí, y sirve como referencia para la rentabilidad de muchos instrumentos de renta fija. Cuando colocas tu dinero en un **certificado de depósito**, un fondo DI o un bono del gobierno atado a la tasa interbancaria, la rentabilidad que ves es un porcentaje “sobre la tasa interbancaria”. Es decir, si la tasa está en 13 % anual y tu título paga 100 % de la tasa, tu rendimiento será aproximadamente 13 % al año. Cuando la tasa varía, el retorno de tus inversiones varía en la misma proporción.
+La **tasa interbancaria** es el promedio que los bancos cobran al prestarse dinero entre sí, y sirve como referencia para la rentabilidad de muchos instrumentos de renta fija. Cuando colocas tu dinero en un **certificado de depósito**, un **fondo de referencia interbancaria** o un bono del gobierno atado a la tasa interbancaria, la rentabilidad que ves es un porcentaje “sobre la tasa interbancaria”. Es decir, si la tasa está en 13 % anual y tu título paga 100 % de la tasa, tu rendimiento será aproximadamente 13 % al año. Cuando la tasa varía, el retorno de tus inversiones varía en la misma proporción.
 
 ## Cómo se calcula la tasa interbancaria
 La tasa no la decide un organismo gubernamental; surge de las negociaciones diarias entre bancos en la llamada “cámara de compensación”. Cada operación de préstamo de muy corto plazo (generalmente de un día) tiene un costo, y la media ponderada de esos costos forma la tasa interbancaria. Esta cifra se publica diariamente por **entidades de compensación** y se usa como benchmark (referencia) para prácticamente todos los contratos de renta fija del mercado.
@@ -35,9 +35,9 @@ La tasa no la decide un organismo gubernamental; surge de las negociaciones diar
 | Tipo de inversión | Cómo entra la tasa interbancaria |
 |-------------------|---------------------------------|
 | **Certificados de depósito** | Pagan un porcentaje de la tasa (ej.: 95 % de la tasa). Si la tasa sube, tu rendimiento sube en la misma medida. |
-| **Fondos DI** | Invierten casi exclusivamente en títulos atados a la tasa, por lo que siguen la tasa casi en tiempo real. |
+| **Fondos de referencia interbancaria** | Invierten casi exclusivamente en títulos atados a la tasa, por lo que siguen la tasa casi en tiempo real. |
 | **Bonos vinculados a la tasa base del banco central** | Su rendimiento está ligado a la tasa base del banco central, que suele acompañar a la tasa interbancaria; la diferencia suele ser mínima. |
-| **bonos bancarios exentos de impuestos** | Algunos ofrecen “X % de la tasa interbancaria” y además están exentos de [impuesto sobre la renta](/es/glossario/es-impuesto-sobre-la-renta), lo que hace la comparación aún más atractiva. |
+| **Bonos bancarios exentos de impuestos** | Algunos ofrecen “X % de la tasa interbancaria” y además están exentos de [impuesto sobre la renta](/es/glossario/es-impuesto-sobre-la-renta), lo que hace la comparación aún más atractiva. |
 
 ![Por qué la tasa interbancaria importa al inversor común](/images/posts/entenda-a-taxa-cdi-e-seu-impacto-nos-seus-investimentos-2.webp)
 

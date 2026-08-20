@@ -1,6 +1,6 @@
 ---
-title: "Building a Diversified Portfolio with R$500"
-description: "Learn how to build a diversified portfolio with just R$500, understanding the basic concepts of investment and risk management."
+title: "Building a Diversified Portfolio with title: 00"
+description: "Learn how to build a diversified portfolio with just description: 00, understanding the basic concepts of investment and risk management."
 image: "/images/posts/montando-carteira-diversificada-com-r-500.webp"
 imageAlt: "Man holding phone sits on couch with two women and open laptop nearby."
 category: "investimentos"
@@ -29,7 +29,7 @@ There are many types of investments available in the market. Some examples inclu
 ## Planning and Objectives
 Before starting to invest, it's crucial to define your objectives and plan how you'll achieve them. Consider what you want to achieve with your investments. Are you looking for extra income, saving for a house, or planning your retirement? How much time do you have to invest? Your risk profile is also vital. Some people are willing to take more risks in search of higher returns, while others prefer safer investments, even if the returns are lower.
 
-![Tipos de Investimentos](/images/posts/montando-carteira-diversificada-com-r-500-2.webp)
+![Types of Investments](/images/posts/montando-carteira-diversificada-com-r-500-2.webp)
 
 ## Income Simulations
 Let's consider a practical example. Suppose you invest $100 in an [investment fund](/en/glossario/en-investment-fund) that offers an annual return of 8%. After a year, your investment will be worth $108. If you continue investing $100 every month, after 5 years, your investment could be worth around $900, considering the same annual return of 8%. It's essential to remember that these are just examples, and the actual performance of investments may vary.
@@ -37,11 +37,11 @@ Let's consider a practical example. Suppose you invest $100 in an [investment fu
 ## Risks
 Investing always involves risks. Risk is the possibility of losing part or all of your investment. There are different types of risks, such as market risk (the value of assets may fall), credit risk (the company or government that issued the bond may not pay), and [liquidity](/en/glossario/en-liquidity) risk (you may not be able to sell your investment quickly enough or at the price you want). To manage these risks, it's essential to diversify your portfolio and understand the risks associated with each investment. Evaluate whether it makes sense for your risk profile and financial objectives.
 
-![Simulações de Rendimento](/images/posts/montando-carteira-diversificada-com-r-500-4.webp)
+![Return Simulations](/images/posts/montando-carteira-diversificada-com-r-500-4.webp)
 
 ## Next Steps
 Now that you've understood the basic concepts of investment and diversification, it's time to put this knowledge into practice. Consider starting with small amounts and increasing your investments as you become more comfortable. Remember that the key to success is consistency and patience. Don't be afraid to seek help from a financial professional if you're not confident investing on your own. Additionally, consider using tools like FinMoovi to help manage your investments efficiently.
 
-![Próximos passos](/images/posts/montando-carteira-diversificada-com-r-500-6.webp)
+![Next Steps](/images/posts/montando-carteira-diversificada-com-r-500-6.webp)
 
 To track your investments in one place, try [FinMoovi for free for 7 days](https://finmoovi.com) — multi-currency, intelligent reports, and 100% offline.

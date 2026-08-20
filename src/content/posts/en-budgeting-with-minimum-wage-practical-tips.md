@@ -49,7 +49,7 @@ Variable expenses, such as transportation and eating out, can be challenging to 
 2. Transportation: Consider carpooling, using a bicycle, or walking for short distances.
 3. Entertainment: Find free or low-cost activities, such as parks, libraries, or game nights with friends.
 
-![Priorizando Necessidades](/images/posts/orcamento-com-salario-minimo-dicas-praticas-2.webp)
+![Prioritizing Needs](/images/posts/orcamento-com-salario-minimo-dicas-praticas-2.webp)
 
 
 
@@ -59,14 +59,14 @@ Building savings is essential for dealing with unexpected expenses and achieving
 2. Automate: Set up automatic transfers from your checking account to your savings account.
 3. Gradually increase: Increase the amount saved over time, as your financial situation improves.
 
-![Gerenciando Despesas Variáveis](/images/posts/orcamento-com-salario-minimo-dicas-praticas-3.webp)
+![Managing Variable Expenses](/images/posts/orcamento-com-salario-minimo-dicas-praticas-3.webp)
 
 
 
 ## Start with 5 minutes a day
 Managing your finances doesn't have to be a superhuman task. Start by dedicating just 5 minutes a day to review your expenses, plan your purchases, and monitor your savings. Over time, these habits will become natural, and you'll be on the path to greater financial stability.
 
-![Construindo uma Poupança](/images/posts/orcamento-com-salario-minimo-dicas-praticas-4.webp)
+![Building Savings](/images/posts/orcamento-com-salario-minimo-dicas-praticas-4.webp)
 
 
 

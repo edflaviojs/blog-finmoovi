@@ -22,13 +22,13 @@ seo:
 
 When we get to the checkout with a cart already full, it’s harder to keep reason in check. So I set aside a bit of time on the weekend to see what the pantry actually needs. Look at the last receipt, check what’s about to expire, and make a consumption plan for the next two weeks. This simple habit can shave about 10 % off your spend – no complex math needed, just write down what you truly need.  
 
-If your salary is between $600 and $1,600, allocating up to 15 % of your [income](/en/posts/en-building-a-diversified-portfolio-with-r-500) ($90 to $240) to food is a healthy starting point. Within that limit, pre‑defining what to buy helps avoid impulse buys and prevents purchasing items you already have at home.  
+If your monthly income is between $2,000 and $5,000, allocating up to 15 % ($300‑$750) of your [income](/en/posts/en-building-a-diversified-portfolio-with-r-500) to food is a healthy starting point. Within that limit, pre‑defining what to buy helps avoid impulse buys and prevents purchasing items you already have at home.  
 
 ## Make a List and Stick to It  
 
 The shopping list is your treasure map. When you have the paper or the app open, each step in the aisle has a purpose. If a 20 % discount pops up on a product not on your list, ask yourself: “Do I really need this?”  
 
-![Faça lista e siga à risca](/images/posts/como-economizar-no-supermercado-em-2026-dicas-reais-2.webp)  
+![Make a list and stick to it](/images/posts/como-economizar-no-supermercado-em-2026-dicas-reais-2.webp)  
 
 **Practical tip:** before you head out, write down the maximum price you’re willing to pay for each item. For example, for rice you might set $4, for chicken breast $3. When you find the product, compare the actual price with your limit. If it’s higher, walk away – another opportunity will come.  
 
@@ -42,9 +42,9 @@ It’s worth checking the price list on the supermarket’s website or using pri
 
 Most grocery chains have point programs or loyalty cards. Every purchase generates credits that can be redeemed for discounts or free items. If your cart totals $50, a program that returns 2 % in [credit](/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026) gives you $1 back right away. Not a lot, but combined with other strategies, these amounts add up.  
 
-![Use cupons e programas de fidelidade](/images/posts/como-economizar-no-supermercado-em-2026-dicas-reais-4.webp)  
+![Use coupons and loyalty programs](/images/posts/como-economizar-no-supermercado-em-2026-dicas-reais-4.webp)  
 
-Also, coupon sites (for example, Cuponeria) often provide codes for discounts on specific items. Before you check out, do a quick search; five minutes of effort can net you up to $6 in [savings](/en/glossario/en-savings).  
+Also, coupon sites (for example, a popular coupon site) often provide codes for discounts on specific items. Before you check out, do a quick search; five minutes of effort can net you up to $6 in [savings](/en/glossario/en-savings).  
 
 ## Avoid Impulse Purchases  
 
@@ -56,7 +56,7 @@ In the grocery store, the candy and beverage aisles are perfect traps. If you ha
 
 Just grab paper and a pen (or open your [finance app](/en/posts/en-expense-spreadsheet-when-it-stops-working)) right now, list what you need, and set a price limit for each item. On your next market trip, stick to the list, choose store brands, and use the loyalty program. The difference will show up on your statement at month‑end and, more importantly, in your wallet.  
 
-![Comece hoje](/images/posts/como-economizar-no-supermercado-em-2026-dicas-reais-6.webp)  
+![Start today](/images/posts/como-economizar-no-supermercado-em-2026-dicas-reais-6.webp)  
 
 ---  
 

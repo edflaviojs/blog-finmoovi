@@ -33,7 +33,7 @@ The US dollar (USD) closed the week at $1.04, showing a slight stability compare
 
 The [rate](/en/glossario/en-financial-fee) central bank base rate, which is the basic [interest](/en/glossario/en-interest) rate of the economy, continues to be a crucial factor for investors. With the central bank base rate held at specific levels, investments in government bonds and other financial products can be affected. It’s essential to understand how changes in the central bank base rate can influence the return on your investments and adjust your strategy accordingly. If you’re thinking about investing, it’s a good idea to consider [diversification](/en/glossario/en-diversification), including investments in different currencies, which can be facilitated with tools like [FinMoovi](/en/posts/en-5-alternatives-to-mobills-in-2026), which helps you track your investments in multiple currencies in a practical way.
 
-![Selic and Impact on Investments](/images/posts/en-quotes-semana-1-july-2026-inline-3.webp)
+![central bank base rate and Impact on Investments](/images/posts/en-quotes-semana-1-july-2026-inline-3.webp)
 
 
 

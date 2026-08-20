@@ -19,14 +19,14 @@ seo:
 ---
 
 ## What it is
-Government bonds are a program created by the government that allows citizens to invest directly in public bonds, such as LTNs (short‑term bonds) and NTNs (long‑term bonds). These bonds are basically loans you make to the government, which, in return, pays [interest](/en/glossario/en-interest) on the [value](/en/glossario/en-financial-value) invested. It’s a way to put your money to work safely and profitably, because the bonds are guaranteed by the government.
+Government bonds are a program created by the government that allows citizens to invest directly in public bonds, such as short‑term bonds and inflation‑linked bonds. These bonds are basically loans you make to the government, which, in return, pays [interest](/en/glossario/en-interest) on the [value](/en/glossario/en-financial-value) invested. It’s a way to put your money to work safely and profitably, because the bonds are guaranteed by the government.
 
 The government bonds vary in maturities and interest rates, which means you can choose the one that best fits your financial needs. For example, if you have $1,000 to invest and don’t need the money for the next 5 years, you can opt for a longer‑term bond, which usually offers higher interest rates.
 
 ![What it is](/images/glossario/tesouro-direto-inline-1.webp)
 
-* LTNs: Short‑term bonds, usually 1 to 5 years, offering fixed interest rates.  
-* NTNs: Longer‑term bonds, ranging from 5 to 10 years, also offering fixed interest rates, but they may be adjusted by the consumer price index, which helps protect the investment’s value against inflation.
+* Short‑term bonds: Usually 1 to 5 years, offering fixed interest rates.  
+* Inflation‑linked bonds: Ranging from 5 to 10 years, also offering fixed interest rates, but they may be adjusted by the consumer price index, which helps protect the investment’s value against inflation.
 
 ## How it works
 The operation of government bonds is relatively simple. You buy a public bond at its nominal value (the amount for which the bond is issued) and, during the agreed term, the government pays interest on that amount. At the end of the term, the government returns the bond’s nominal value plus the accumulated interest. **Practical tip:** It’s important to understand that interest is paid periodically—monthly, quarterly, semi‑annually, or annually—depending on the bond you choose.

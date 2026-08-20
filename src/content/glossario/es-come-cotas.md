@@ -12,7 +12,7 @@ publishedAt: 2026-06-02
 
 ## Qué es el come-cotas
 
-Come-cotas — literalmente "come cuotas" — es el apodo del cobro **anticipado** del [Impuesto sobre la Renta](/es/glossario/es-impuesto-sobre-la-renta) en algunos [fondos de inversión](/es/glossario/es-fondo-de-inversion) brasileños. Dos veces al año, el último día hábil de **mayo** y de **noviembre**, la autoridad fiscal cobra el impuesto sobre el rendimiento acumulado, aunque no hayas retirado nada.
+Come-cotas — literalmente "come cuotas" — es el apodo del cobro **anticipado** del [Impuesto sobre la Renta](/es/glossario/es-impuesto-sobre-la-renta) en algunos [fondos de inversión](/es/glossario/es-fondo-de-inversion). Dos veces al año, el último día hábil de **mayo** y de **noviembre**, la autoridad fiscal cobra el impuesto sobre el rendimiento acumulado, aunque no hayas retirado nada.
 
 El nombre viene de la forma del cobro: en lugar de sacar dinero de tu cuenta, el fondo **cancela una parte de tus cuotas** para pagar el impuesto. El valor por cuota sigue igual; simplemente pasas a tener menos cuotas.
 
@@ -24,8 +24,8 @@ No en todos. Esta es la parte que más confunde:
 | --- | --- |
 | Fondos de [renta fija](/es/glossario/es-renta-fija) abiertos | Fondos de acciones |
 | Fondos multimercado abiertos | ETFs |
-| | [Fondos inmobiliarios](/es/glossario/es-fondos-inmobiliarios) |
-| | [Pensión privada](/es/glossario/es-pension-privada) (PGBL y VGBL) |
+|  | [Fondos inmobiliarios](/es/glossario/es-fondos-inmobiliarios) |
+|  | [Planes de pensiones con ventajas fiscales](/es/glossario/es-pension-privada) |
 
 En los que no lo tienen, el impuesto aparece solo cuando rescatas.
 
@@ -57,4 +57,4 @@ Por eso, para un objetivo a muchos años, vale comparar un fondo con come-cotas 
 - **Para plazos largos**, considera si el impuesto es anticipado o solo al rescate.
 - **No lo confundas** con la comisión de administración: esa la cobra el gestor, no la autoridad fiscal.
 
-> Este término explica una regla fiscal **brasileña**, incluida aquí porque aparece en los extractos de fondos en portugués. Las reglas tributarias cambian y hay excepciones por tipo de fondo — para una decisión concreta, consulta el informe de rendimientos de tu fondo o un contador.
+> Este término explica una regla fiscal **de algunos países**, incluida aquí porque aparece en los extractos de fondos en portugués. Las reglas tributarias cambian y hay excepciones por tipo de fondo — para una decisión concreta, consulta el informe de rendimientos de tu fondo o un contador.

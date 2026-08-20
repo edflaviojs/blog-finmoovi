@@ -11,17 +11,17 @@ publishedAt: 2026-05-19
 readingTime: 1
 ---
 
-## ¿Qué es la Garantía FGC?
+## ¿Qué es la garantía del fondo de garantía de depósitos?
 
-El FGC (Fondo Garantidor de Créditos) es como un seguro para tus [inversiones](/es/posts/es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026) en bancos. Si el banco quiebra, el FGC te devuelve tu dinero — hasta **€45.000** por persona por institución financiera.
+El fondo de garantía de depósitos (FGD) es como un seguro para tus [inversiones](/es/posts/es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026) en bancos. Si el banco quiebra, el fondo de garantía de depósitos te devuelve tu dinero — hasta **€45.000** por persona por institución financiera.
 
 ## ¿Qué está cubierto?
 
-- [certificados de depósito](/es/glossario/es-cdb) (Certificado de Depósito Bancário)  
-- [LCI y LCA](/es/glossario/es-lci-y-lca)  
-- [Poupança](/es/glossario/es-ahorro)  
+- [certificados de depósito](/es/glossario/es-cdb) (Certificado de Depósito Bancario)  
+- [bonos bancarios exentos de impuestos](/es/glossario/es-lci-y-lca)  
+- [ahorro](/es/glossario/es-ahorro)  
 - Cuenta corriente  
-- RDB  
+- Recibo de depósito  
 - Letras de [cambio](/es/glossario/es-cambio)  
 
 ## ¿Qué NO está cubierto?
@@ -30,7 +30,7 @@ El FGC (Fondo Garantidor de Créditos) es como un seguro para tus [inversiones](
 - Fondos de inversión  
 - Deudas  
 - Bonos del gobierno (tienen garantía del gobierno federal)  
-- CRI y CRA  
+- Instrumentos de crédito estructurados  
 - Previsión privada  
 
 ## Límites
@@ -43,8 +43,8 @@ El FGC (Fondo Garantidor de Créditos) es como un seguro para tus [inversiones](
 Si tienes **€90.000** para invertir en certificados de depósito:  
 - Coloca **€45.000** en el Banco A  
 - Coloca **€45.000** en el Banco B  
-- Ambos están 100 % cubiertos por el FGC  
+- Ambos están 100 % cubiertos por el fondo de garantía de depósitos  
 
 ## Consejo importante
 
-Los bancos más pequeños generalmente pagan tasas más altas (120‑130 % de la [tasa interbancaria](/es/glossario/es-cdi)) justamente porque son menos conocidos. Con la garantía del FGC, el riesgo es prácticamente el mismo que el de un gran banco — pero el rendimiento es mayor.
+Los bancos más pequeños generalmente pagan tasas más altas (120‑130 % de la [tasa interbancaria](/es/glossario/es-cdi)) justamente porque son menos conocidos. Con la garantía del fondo de garantía de depósitos, el riesgo es prácticamente el mismo que el de un gran banco — pero el rendimiento es mayor.
