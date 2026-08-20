@@ -1,0 +1,207 @@
+{
+  "slug": "100-reais-por-dia",
+  "term": "R$ 100 por dia: quanto vira em 10 anos?",
+  "category": "mindset",
+  "keyword": "vira",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Cem reais por dia, *quanto isso vira em dez anos?*"
+  },
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "semente",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Cem reais por dia, quanto isso vira em dez anos? Café, lanche e Uber fazem parecer pouca coisa.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "quanto",
+          "visual": {
+            "type": "statement",
+            "text": "Quanto isso pode virar?"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "Café",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "semente"
+          }
+        },
+        {
+          "anchor": "Uber",
+          "visual": {
+            "type": "icon",
+            "icon": "money"
+          },
+          "sfx": "coin"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Pouco por vez, o senhor paga o café, chama o Uber e pega um lanche porque tá cansado.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "Pouco",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "semente"
+          }
+        },
+        {
+          "anchor": "café",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          }
+        },
+        {
+          "anchor": "lanche",
+          "visual": {
+            "type": "statement",
+            "text": "Pequenos gastos somam"
+          },
+          "sfx": "pop"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Cansado todo dia dá trinta e seis mil reais num ano. Em dez anos, são trezentos e sessenta mil reais.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "Cansado",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "semente"
+          }
+        },
+        {
+          "anchor": "trinta",
+          "visual": {
+            "type": "number",
+            "text": "R$ 36.000"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "trezentos",
+          "visual": {
+            "type": "counter",
+            "from": 36000,
+            "to": 360000,
+            "prefix": "R$"
+          },
+          "sfx": "whoosh"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Essa soma eu joguei no FinMoovi. Ele me mostrou trezentos e sessenta mil reais em dez anos.",
+      "durationSec": 6.5,
+      "shots": [
+        {
+          "anchor": "Essa",
+          "visual": {
+            "type": "app",
+            "app": "calculadora",
+            "note": "Calculadora do FinMoovi exibindo o cálculo de R$ 100 por dia"
+          }
+        },
+        {
+          "anchor": "trezentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 360.000"
+          },
+          "sfx": "ding"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu? Procura o FinMoovi. São sete dias grátis.",
+      "durationSec": 4.2,
+      "shots": [
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Então, cem reais por dia podem virar trezentos e sessenta mil reais em dez anos, só no que sai do seu bolso. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 11.2,
+      "shots": [
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "semente"
+          }
+        },
+        {
+          "anchor": "trezentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 360.000"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja quanto você pode juntar",
+    "target": "app"
+  },
+  "totalDurationSec": 43.4
+}
