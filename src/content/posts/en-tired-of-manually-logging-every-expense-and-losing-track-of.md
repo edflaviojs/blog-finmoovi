@@ -3,6 +3,7 @@ title: "Tired of Manually Logging Every Expense and Losing Track of Your Money?"
 description: "Discover how FinMoovi’s voice capture eliminates manual entry and keeps your balance up‑to‑date, even offline."
 tickerHeadline: "Missing expenses?"
 image: "/images/posts/cansado-de-anotar-cada-gasto-a-mao-e-perder-a-nocao-do-seu.webp"
+imageAlt: "White text on blurred blue and green financial chart background."
 category: "ferramentas"
 locale: "en"
 tags: ["expense tracking","voice capture","FinMoovi","offline financial control","expense automation","financial planning","replace spreadsheet","finance app","AI reports","finmoovi","personal finance"]
