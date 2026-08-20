@@ -3722,5 +3722,126 @@
         "publicaEmBR": "20/08 às 14h31"
       }
     }
+  },
+  "kw-r-200-de-assinatura-o-que-vira-em-12-meses": {
+    "midias": {
+      "video": {
+        "id": "0a9a004c-26e7-4fbc-800a-1fc7dbe267af",
+        "name": "nKqmjwRvdp.mp4",
+        "originalName": null,
+        "path": "https://media.help4desk.com/nKqmjwRvdp.mp4",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capa": {
+        "id": "92c41ea5-771c-455a-8bf1-3ae7565fec4d",
+        "name": "J30Cw0Ip4m.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/J30Cw0Ip4m.jpeg",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capaLarga": {
+        "id": "e86fd7fb-3b0f-4926-bb8f-e8cc67057a9c",
+        "name": "cGdQIyefX8.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/cGdQIyefX8.jpeg",
+        "thumbnail": null,
+        "alt": null
+      },
+      "telegram": {
+        "media": {
+          "id": "2441a98e-0a00-42c6-ad1d-26e8df9b6ab4",
+          "name": "NiVcMZeNEW.mp4",
+          "originalName": null,
+          "path": "https://media.help4desk.com/NiVcMZeNEW.mp4",
+          "thumbnail": null,
+          "alt": null
+        },
+        "bytes": 18166175,
+        "comprimido": true
+      }
+    },
+    "publicaEm": "2026-08-20T22:00:00.000Z",
+    "publicaEmBR": "20/08 às 19h00",
+    "agendadoEm": "2026-08-20T15:51:24.386Z",
+    "atualizadoEm": "2026-08-20T15:51:28.982Z",
+    "redes": {
+      "instagram": {
+        "postId": "cmt1p72cy007os390b8axpxm3",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-08-20T22:00:00.000Z",
+        "publicaEmBR": "20/08 às 19h00",
+        "midia": "o vídeo",
+        "caracteres": 724,
+        "limite": 2200
+      },
+      "facebook": {
+        "postId": "cmt1p72wt007ps390do111h1n",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-08-20T22:26:00.000Z",
+        "publicaEmBR": "20/08 às 19h26",
+        "midia": "o vídeo",
+        "caracteres": 494,
+        "limite": 63206
+      },
+      "linkedin-page": {
+        "postId": "cmt1p73dl007qs390tqaqwnz9",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-08-20T22:43:00.000Z",
+        "publicaEmBR": "20/08 às 19h43",
+        "midia": "o vídeo",
+        "caracteres": 496,
+        "limite": 3000
+      },
+      "threads": {
+        "postId": "cmt1p73tn007rs3900rle0919",
+        "canal": "finmoovi",
+        "publicaEm": "2026-08-20T22:58:00.000Z",
+        "publicaEmBR": "20/08 às 19h58",
+        "midia": "o vídeo",
+        "caracteres": 143,
+        "limite": 500
+      },
+      "telegram": {
+        "postId": "cmt1p7495007ss390df11wkax",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-08-20T23:14:00.000Z",
+        "publicaEmBR": "20/08 às 20h14",
+        "midia": "o vídeo, numa cópia de 17.3 MB — o Telegram recusa acima de 20 MB quando vai buscar por endereço",
+        "caracteres": 359,
+        "limite": 4096
+      },
+      "pinterest": {
+        "postId": "cmt1p754t007ts390bzms4jkt",
+        "canal": "finmoovi",
+        "publicaEm": "2026-08-20T23:31:00.000Z",
+        "publicaEmBR": "20/08 às 20h31",
+        "midia": "vídeo primeiro, capa depois — a ordem que o Pinterest exige",
+        "caracteres": 469,
+        "limite": 500
+      },
+      "bluesky": {
+        "postId": "cmt1p75ld007us390lnpk6rqj",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-08-20T23:47:00.000Z",
+        "publicaEmBR": "20/08 às 20h47",
+        "midia": "vai a capa DEITADA (o Bluesky não publica vídeo, e a em pé ficaria cortada no feed)",
+        "caracteres": 100,
+        "limite": 300
+      },
+      "instagram-story": {
+        "postId": "cmt1p75wi007vs3908ugq70z0",
+        "tipo": "vídeo",
+        "publicaEm": "2026-08-20T22:05:00.000Z",
+        "publicaEmBR": "20/08 às 19h05"
+      },
+      "facebook-story": {
+        "postId": "cmt1p762f007ws390bc11fks5",
+        "tipo": "vídeo",
+        "publicaEm": "2026-08-20T22:31:00.000Z",
+        "publicaEmBR": "20/08 às 19h31"
+      }
+    }
   }
 }
