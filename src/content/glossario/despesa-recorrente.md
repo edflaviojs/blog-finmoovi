@@ -4,6 +4,7 @@ definition: "O que é despesa recorrente e como isso aparece no seu dia a dia �
 title: "despesa recorrente - Glossário Financeiro"
 description: "O que é despesa recorrente e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/despesa-recorrente.webp"
+imageAlt: "Moedas douradas empilhadas, jarra com planta e seta rosa ascendente sobre fundo escuro."
 category: "basico"
 tags: ["despesa recorrente", "glossário", "finanças"]
 author: "FinMoovi"

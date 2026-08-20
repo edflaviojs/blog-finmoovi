@@ -4,6 +4,7 @@ definition: "Qué es gasto recurrente y cómo aparece en tu día a día — expl
 title: "gasto recurrente - Glosario Financiero"
 description: "Qué es gasto recurrente y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/despesa-recorrente.webp"
+imageAlt: "Monedas doradas, frascos rosas y una flecha ascendente sobre fondo oscuro."
 category: "basico"
 tags: ["gasto recurrente", "glosario", "finanzas"]
 author: "FinMoovi"

@@ -4,6 +4,7 @@ definition: "What recurring expense is and how it shows up in your everyday mone
 title: "recurring expense - Financial Glossary"
 description: "What recurring expense is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/despesa-recorrente.webp"
+imageAlt: "Gold coins and pink growth arrow on dark blue background"
 category: "basico"
 tags: ["recurring expense", "glossary", "finance"]
 author: "FinMoovi"
