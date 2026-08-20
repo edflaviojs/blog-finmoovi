@@ -412,5 +412,23 @@
     ],
     "veredito": "1. **O LOOP — 9/10**  \nPrimeiro e último quadro são praticamente iguais: mesma frase **“Pagar a barata primeiro”**, no mesmo lugar e com o mesmo visual. É um bom fechamento para loop. Só não dá para saber se a transição realmente esconde a reinicialização pelos quadros parados.\n\n2. **A FAIXA DE BAIXO — 9/10**  \nNão há informação importante no terço inferior. As legendas ficam acima da área mais problemática da interface do Shorts/Reels.\n\n3. **TEXTO POR CIMA DE TEXTO — 8/10**  \nNão vejo frases claramente sobrepostas nem palavras cortadas. O quadro de 4,8s tem bastante informação em duas camadas, mas elas estão separadas. Nada parece encostado perigosamente na borda.\n\n4. **LEGIBILIDADE — 9/10**  \nOs títulos são grandes, grossos e têm excelente contraste. As legendas menores continuam legíveis, embora algumas palavras em cinza percam um pouco de força no celular.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — 7/10**  \nHá bastante espaço vazio, principalmente entre o título e a legenda e nas áreas laterais. O fundo decorado evita que pareça abandonado, mas visualmente ainda sobra espaço demais.\n\n6. **COERÊNCIA — 9/10**  \nOs oito quadros parecem claramente pertencer ao mesmo vídeo. A sequência conta uma história: pagar a dívida barata → dívida cara crescendo → decisão → consequência. O retorno ao primeiro quadro também é coerente.\n\n7. **TESTE CENTRAL — 6/10**  \n**Parece mais uma sequência de slides animados do que um vídeo profissional**, principalmente pela repetição do mesmo cartão preto, do mesmo fundo e da mesma balança.\n\nNOTA GERAL: 8/10  \nPROBLEMA 1: Aparência de slides, principalmente nos quadros 2,4,6 e 8, pela repetição visual  \nPROBLEMA 2: Espaços vazios grandes entre título e legenda, especialmente nos quadros 1, 5 e 8  \nPROBLEMA 3: Legendas menores em cinza perdem um pouco de impacto no celular, especialmente nos quadros 2 e 3  \nPRIMEIRA COISA A MUDAR: Criar mais variação visual entre os quadros para parecer uma sequência de vídeo, não oito slides com o mesmo template.",
     "quando": "2026-08-20T05:06:52.776Z"
+  },
+  {
+    "slug": "loop-gas-acabou-ta-perdendo",
+    "formato": "loop16",
+    "nota": 7.5,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      2.3,
+      4.5,
+      6.8,
+      9,
+      11.3,
+      13.5,
+      15.7
+    ],
+    "veredito": "1. **O LOOP — 9/10**  \nPrimeiro e último quadro são praticamente iguais: mesmo fundo, composição e frase **“O gás pode acabar”**. É uma ótima base para loop. Pelos quadros, não dá para saber se a transição entre eles está realmente imperceptível.\n\n2. **A FAIXA DE BAIXO — 6/10**  \nAs legendas aparecem bem baixas em vários quadros, especialmente **2,3s, 4,5s, 6,8s, 9s, 11,3s e 13,5s**. Não estão cortadas, mas ficam numa zona de risco para a interface do Shorts/Reels.\n\n3. **TEXTO POR CIMA DE TEXTO — 8/10**  \nNão vejo frases claramente sobrepostas nem palavras cortadas. Os destaques coloridos sobre algumas palavras funcionam. Há, porém, momentos em que o texto fica visualmente apertado.\n\n4. **LEGIBILIDADE — 8/10**  \nOs textos principais são grandes, fortes e com bom contraste. As legendas menores embaixo são o ponto fraco: palavras não destacadas ficam com pouco contraste sobre o fundo roxo.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — 6/10**  \nHá bastante espaço vazio, principalmente na metade inferior dos quadros com título. O fundo tem textura e elementos gráficos, mas ainda sobra área demais sem informação.\n\n6. **COERÊNCIA — 9/10**  \nMuito consistente visualmente: mesma identidade, fundo, logo, tipografia e linguagem. A sequência também parece construir uma fala: **“O gás pode acabar” → situação → “Agora eu confiro” → “olho o botijão” → “Se você cozinha...” → “acaba.”**\n\n7. **TESTE CENTRAL — 6/10**  \n**Parece mais um vídeo de motion design do que slides, mas os quadros isolados ainda têm cara de cards animados**, principalmente porque a composição se repete bastante.\n\nNOTA GERAL: 7.5\nPROBLEMA 1: As legendas estão baixas demais em vários quadros, principalmente em 2,3s–13,5s.\nPROBLEMA 2: Há áreas grandes e pouco aproveitadas na parte inferior dos quadros.\nPROBLEMA 3: As legendas pequenas e cinzas perdem contraste no fundo roxo.\nPRIMEIRA COISA A MUDAR: Subir todas as legendas para uma área segura e aumentar um pouco seu tamanho/contraste.",
+    "quando": "2026-08-20T05:11:50.603Z"
   }
 ]
