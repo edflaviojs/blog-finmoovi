@@ -2464,5 +2464,23 @@
     "target": "https://www.investopedia.com/terms/e/etf.asp",
     "status": "no-endpoint",
     "sentAt": "2026-08-18T14:33:50.188Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/cansado-de-anotar-cada-gasto-a-mao-e-perder-a-nocao-do-seu/",
+    "target": "https://www.investopedia.com/terms/v/voice-recognition.asp】.",
+    "status": "no-endpoint",
+    "sentAt": "2026-08-20T14:36:23.490Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/en-tired-of-manually-logging-every-expense-and-losing-track-of/",
+    "target": "https://www.investopedia.com/terms/v/voice-recognition.asp",
+    "status": "no-endpoint",
+    "sentAt": "2026-08-20T14:36:23.630Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/es-cansado-de-anotar-cada-gasto-a-mano-y-perder-la-nocion-de-tu/",
+    "target": "https://www.investopedia.com/terms/v/voice-recognition.asp】.",
+    "status": "no-endpoint",
+    "sentAt": "2026-08-20T14:36:23.770Z"
   }
 ]
