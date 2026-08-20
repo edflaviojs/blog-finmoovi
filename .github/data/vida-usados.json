@@ -142,5 +142,11 @@
     "gancho": "ta-perdendo",
     "turno": "manha",
     "em": "2026-08-20T05:03:51.687Z"
+  },
+  {
+    "situacao": "gas-acabou",
+    "gancho": "ta-perdendo",
+    "turno": "noite",
+    "em": "2026-08-20T05:08:45.544Z"
   }
 ]

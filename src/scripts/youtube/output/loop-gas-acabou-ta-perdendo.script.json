@@ -1,0 +1,117 @@
+{
+  "slug": "loop-gas-acabou-ta-perdendo",
+  "formato": "loop16",
+  "term": "O gás que acabou",
+  "category": "vida",
+  "keyword": "GÁS",
+  "situacao": "gas-acabou",
+  "gancho": "ta-perdendo",
+  "ganchoFamilia": "tá perdendo",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "escorregao",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se você ainda cozinha sem conferir o gás, tá perdendo tempo.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "cozinha",
+          "visual": {
+            "type": "statement",
+            "text": "O gás pode acabar"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "conferir",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escorregao"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Domingo, o gás acabou no meu almoço, e eu fiquei parado.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "Domingo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escorregao"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "acabou",
+          "visual": {
+            "type": "statement",
+            "text": "Acabou no almoço"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Desde então, antes de começar, eu olho o botijão, caladinho.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "começar",
+          "visual": {
+            "type": "statement",
+            "text": "Agora eu confiro"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "botijão",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escorregao"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Se você cozinha, tá perdendo tempo quando o gás acaba.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "cozinha",
+          "visual": {
+            "type": "statement",
+            "text": "Cozinhar sem conferir custa"
+          }
+        },
+        {
+          "anchor": "perdendo",
+          "visual": {
+            "type": "statement",
+            "text": "O gás pode acabar"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
