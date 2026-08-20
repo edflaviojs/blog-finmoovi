@@ -1,8 +1,15 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-08-19T05:26:35.744Z
-**Posts:** 318 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 47
+**Gerado em:** 2026-08-20T05:27:24.836Z
+**Posts:** 327 · limpos: 1 · bloqueados p/ revisao: 0 · com flags: 48
 
+## ✂️ Cortes aplicados (citacao/estatistica sem fonte confiavel)
+
+**en-financial-planning-for-couples.md**
+- link removido: https://www.experian.com
+- link removido: https://www.treasury.gov
+- link removido: https://www.federalreserve.gov
+- link removido: https://www.census.gov
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
 
@@ -97,6 +104,9 @@
 
 **en-review-your-budget.md**
 - _Reviewing our [budget](/en/posts/en-budgeting-with-minimum-wage-practical-tips) is a crucial step in this process, as it allows us to identify areas for improvement and adjust our strategies according_
+
+**en-tired-of-manually-logging-every-expense-and-losing-track-of.md**
+- _According to the World Bank on financial inclusion, many people struggle with keeping accurate records, which often leads to impulsive decisions, like buying a wanted item instead of paying a forgotte_
 
 **en-you-re-not-alone-in-struggling-to-organize-your-finances.md**
 - _According to statistics, people who use expense management apps like FinMoovi tend to save more and have better financial health._
