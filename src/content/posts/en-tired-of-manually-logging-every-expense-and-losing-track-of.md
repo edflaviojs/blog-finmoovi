@@ -1,22 +1,47 @@
 ---
-title: "Tired of Manually Logging Every Expense and Losing Track of Your Money?"
-description: "Discover how FinMoovi’s voice capture eliminates manual entry and keeps your balance up‑to‑date, even offline."
-tickerHeadline: "Missing expenses?"
-image: "/images/posts/cansado-de-anotar-cada-gasto-a-mao-e-perder-a-nocao-do-seu.webp"
-imageAlt: "White text on blurred blue and green financial chart background."
-category: "ferramentas"
-locale: "en"
-tags: ["expense tracking","voice capture","FinMoovi","offline financial control","expense automation","financial planning","replace spreadsheet","finance app","AI reports","finmoovi","personal finance"]
-author: "FinMoovi"
-publishedAt: 2026-08-19
+title: Tired of Manually Logging Every Expense and Losing Track of Your Money?
+description: >-
+  Discover how FinMoovi’s voice capture eliminates manual entry and keeps your
+  balance up‑to‑date, even offline.
+tickerHeadline: Missing expenses?
+image: /images/posts/cansado-de-anotar-cada-gasto-a-mao-e-perder-a-nocao-do-seu.webp
+category: ferramentas
+locale: en
+tags:
+  - expense tracking
+  - voice capture
+  - FinMoovi
+  - offline financial control
+  - expense automation
+  - financial planning
+  - replace spreadsheet
+  - finance app
+  - AI reports
+  - finmoovi
+  - personal finance
+author: FinMoovi
+publishedAt: 2026-08-19T00:00:00.000Z
 readingTime: 5
 featured: false
-translationKey: "cansado-de-anotar-cada-gasto-a-mao-e-perder-a-nocao-do-seu"
-scope: "universal"
+translationKey: cansado-de-anotar-cada-gasto-a-mao-e-perder-a-nocao-do-seu
+scope: universal
 seo:
-  metaTitle: "Tired of Manually Logging Every Expense and Losing Track of Your Money?"
-  metaDescription: "Discover how FinMoovi’s voice capture eliminates manual entry and keeps your balance up‑to‑date, even offline."
-  keywords: ["expense tracking","voice capture","FinMoovi","offline financial control","expense automation","financial planning","replace spreadsheet","finance app","AI reports","finmoovi","personal finance"]
+  metaTitle: Tired of Manually Logging Every Expense and Losing Track of Your Money?
+  metaDescription: >-
+    Discover how FinMoovi’s voice capture eliminates manual entry and keeps your
+    balance up‑to‑date, even offline.
+  keywords:
+    - expense tracking
+    - voice capture
+    - FinMoovi
+    - offline financial control
+    - expense automation
+    - financial planning
+    - replace spreadsheet
+    - finance app
+    - AI reports
+    - finmoovi
+    - personal finance
 ---
 
 When you get home after a hectic day, opening a spreadsheet or a notebook to type every bill – electricity, water, groceries – feels more like a chore than a relief. You get the sense that while you’re writing, the money is already moving in another account, and the balance you see at month‑end never matches reality. Good news: in under five minutes, just open FinMoovi, say “I paid the electricity bill about the same as my rent,” and let the app do the work, updating your statement instantly, even without an internet connection.

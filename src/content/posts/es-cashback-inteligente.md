@@ -1,20 +1,31 @@
 ---
-title: "Cashback Inteligente"
-description: "Aprende a usar cashback de forma inteligente y ahorra dinero en compras del día a día."
-image: "/images/posts/cashback-inteligente.webp"
-imageAlt: "Cuaderno marrón, calculadora negra y monedas sobre fondo de mármol con plantas."
-category: "dicas"
-locale: "es"
-tags: ["cómo usar cashback de forma inteligente","finanzas personales","economía","dinero"]
-author: "FinMoovi"
-publishedAt: 2026-07-07
+title: Cashback Inteligente
+description: >-
+  Aprende a usar cashback de forma inteligente y ahorra dinero en compras del
+  día a día.
+image: /images/posts/cashback-inteligente.webp
+category: dicas
+locale: es
+tags:
+  - cómo usar cashback de forma inteligente
+  - finanzas personales
+  - economía
+  - dinero
+author: FinMoovi
+publishedAt: 2026-07-07T00:00:00.000Z
 readingTime: 3
 featured: false
-translationKey: "cashback-inteligente"
+translationKey: cashback-inteligente
 seo:
-  metaTitle: "Cashback Inteligente"
-  metaDescription: "Aprende a usar cashback de forma inteligente y ahorra dinero en compras del día a día."
-  keywords: ["cómo usar cashback de forma inteligente","finanzas personales","economía","dinero"]
+  metaTitle: Cashback Inteligente
+  metaDescription: >-
+    Aprende a usar cashback de forma inteligente y ahorra dinero en compras del
+    día a día.
+  keywords:
+    - cómo usar cashback de forma inteligente
+    - finanzas personales
+    - economía
+    - dinero
 ---
 
 ## Cashback: ¿Qué es y cómo funciona

@@ -1,22 +1,47 @@
 ---
-title: "¿Cansado de anotar cada gasto a mano y perder la noción de tu dinero?"
-description: "Descubre cómo la captura por voz de FinMoovi elimina la digitación manual y mantiene tu saldo siempre actualizado, incluso offline."
-tickerHeadline: "¿Gastos que no aparecen?"
-image: "/images/posts/cansado-de-anotar-cada-gasto-a-mao-e-perder-a-nocao-do-seu.webp"
-imageAlt: "Texto blanco sobre fondo azul con gráficos financieros verdes y rojos difuminados."
-category: "ferramentas"
-locale: "es"
-tags: ["registro de gastos","captura por voz","FinMoovi","control financiero offline","automatización de gastos","planificación financiera","sustituir hoja de cálculo","app financiero","informes IA","finmoovi","finanzas personales"]
-author: "FinMoovi"
-publishedAt: 2026-08-19
+title: ¿Cansado de anotar cada gasto a mano y perder la noción de tu dinero?
+description: >-
+  Descubre cómo la captura por voz de FinMoovi elimina la digitación manual y
+  mantiene tu saldo siempre actualizado, incluso offline.
+tickerHeadline: ¿Gastos que no aparecen?
+image: /images/posts/cansado-de-anotar-cada-gasto-a-mao-e-perder-a-nocao-do-seu.webp
+category: ferramentas
+locale: es
+tags:
+  - registro de gastos
+  - captura por voz
+  - FinMoovi
+  - control financiero offline
+  - automatización de gastos
+  - planificación financiera
+  - sustituir hoja de cálculo
+  - app financiero
+  - informes IA
+  - finmoovi
+  - finanzas personales
+author: FinMoovi
+publishedAt: 2026-08-19T00:00:00.000Z
 readingTime: 6
 featured: false
-translationKey: "cansado-de-anotar-cada-gasto-a-mao-e-perder-a-nocao-do-seu"
-scope: "universal"
+translationKey: cansado-de-anotar-cada-gasto-a-mao-e-perder-a-nocao-do-seu
+scope: universal
 seo:
-  metaTitle: "¿Cansado de anotar cada gasto a mano y perder la noción de tu dinero?"
-  metaDescription: "Descubre cómo la captura por voz de FinMoovi elimina la digitación manual y mantiene tu saldo siempre actualizado, incluso offline."
-  keywords: ["registro de gastos","captura por voz","FinMoovi","control financiero offline","automatización de gastos","planificación financiera","sustituir hoja de cálculo","app financiero","informes IA","finmoovi","finanzas personales"]
+  metaTitle: ¿Cansado de anotar cada gasto a mano y perder la noción de tu dinero?
+  metaDescription: >-
+    Descubre cómo la captura por voz de FinMoovi elimina la digitación manual y
+    mantiene tu saldo siempre actualizado, incluso offline.
+  keywords:
+    - registro de gastos
+    - captura por voz
+    - FinMoovi
+    - control financiero offline
+    - automatización de gastos
+    - planificación financiera
+    - sustituir hoja de cálculo
+    - app financiero
+    - informes IA
+    - finmoovi
+    - finanzas personales
 ---
 
 Al llegar a casa después de un día ajetreado, abrir la [hoja de cálculo](/es/posts/es-migrando-de-la-hoja-de-calculo-a-una-app-financiera) o el cuaderno de anotaciones y escribir cada cuenta pagada – luz, agua, supermercado – parece más una tarea que un alivio. Sientes que, mientras escribes, el dinero ya se está moviendo en otra cuenta, y el saldo que ves al final del mes nunca corresponde a la realidad. ¿La buena noticia? En menos de cinco minutos basta con abrir FinMoovi, decir “pagué la factura de luz por alrededor de un alquiler” y dejar que la app haga todo el trabajo, actualizando tu extracto al instante, incluso sin internet.

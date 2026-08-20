@@ -1,22 +1,41 @@
 ---
-title: "7 passos práticos para guardar dinheiro para o Dia das Crianças 2026"
-description: "Descubra estratégias simples e um plano de 30 dias para economizar antes do Dia das Crianças sem apertar o orçamento."
-tickerHeadline: "O truque que cabe no bolso"
-image: "/images/posts/7-passos-praticos-para-guardar-dinheiro-para-o-dia-das.webp"
-imageAlt: "Gráfico financeiro com linhas onduladas coloridas sobre fundo azul escuro."
-category: "orcamento"
-locale: "pt"
-tags: ["economia Dia das Crianças","planejamento financeiro","FinMoovi","compras por impulso","metas mensais","controle de gastos","dia das crianças barato","presente econômico crianças"]
-author: "FinMoovi"
-publishedAt: 2026-08-14
+title: 7 passos práticos para guardar dinheiro para o Dia das Crianças 2026
+description: >-
+  Descubra estratégias simples e um plano de 30 dias para economizar antes do
+  Dia das Crianças sem apertar o orçamento.
+tickerHeadline: O truque que cabe no bolso
+image: /images/posts/7-passos-praticos-para-guardar-dinheiro-para-o-dia-das.webp
+category: orcamento
+locale: pt
+tags:
+  - economia Dia das Crianças
+  - planejamento financeiro
+  - FinMoovi
+  - compras por impulso
+  - metas mensais
+  - controle de gastos
+  - dia das crianças barato
+  - presente econômico crianças
+author: FinMoovi
+publishedAt: 2026-08-14T00:00:00.000Z
 readingTime: 7
 featured: false
-translationKey: "7-passos-praticos-para-guardar-dinheiro-para-o-dia-das"
-scope: "universal"
+translationKey: 7-passos-praticos-para-guardar-dinheiro-para-o-dia-das
+scope: universal
 seo:
-  metaTitle: "7 passos práticos para guardar dinheiro para o Dia das Crianças 2026"
-  metaDescription: "Descubra estratégias simples e um plano de 30 dias para economizar antes do Dia das Crianças sem apertar o orçamento."
-  keywords: ["economia Dia das Crianças","planejamento financeiro","FinMoovi","compras por impulso","metas mensais","controle de gastos","dia das crianças barato","presente econômico crianças"]
+  metaTitle: 7 passos práticos para guardar dinheiro para o Dia das Crianças 2026
+  metaDescription: >-
+    Descubra estratégias simples e um plano de 30 dias para economizar antes do
+    Dia das Crianças sem apertar o orçamento.
+  keywords:
+    - economia Dia das Crianças
+    - planejamento financeiro
+    - FinMoovi
+    - compras por impulso
+    - metas mensais
+    - controle de gastos
+    - dia das crianças barato
+    - presente econômico crianças
 ---
 
 Imagine a cena: a caixa de correio cheia de cupons, o celular vibrando com promoções de brinquedos que parecem irresistíveis e, ao mesmo tempo, a conta de luz subindo como se tivesse passado por um turbo. Você sente aquele aperto no peito ao pensar que, se não houver um plano, o dia das crianças vai virar um “gasto inesperado” que vai mexer com todo o orçamento do mês. A ansiedade de escolher o presente perfeito, somada ao medo de comprometer o restante das contas, é real – e acontece com muita gente.

@@ -1,20 +1,31 @@
 ---
-title: "Smart Cashback"
-description: "Learn how to use cashback intelligently and save money on your daily purchases."
-image: "/images/posts/cashback-inteligente.webp"
-imageAlt: "Brown leather wallet, calculator, coins, and potted plants on white marble surface."
-category: "dicas"
-locale: "en"
-tags: ["how to use cashback intelligently","personal finance","economy","money"]
-author: "FinMoovi"
-publishedAt: 2026-07-07
+title: Smart Cashback
+description: >-
+  Learn how to use cashback intelligently and save money on your daily
+  purchases.
+image: /images/posts/cashback-inteligente.webp
+category: dicas
+locale: en
+tags:
+  - how to use cashback intelligently
+  - personal finance
+  - economy
+  - money
+author: FinMoovi
+publishedAt: 2026-07-07T00:00:00.000Z
 readingTime: 3
 featured: false
-translationKey: "cashback-inteligente"
+translationKey: cashback-inteligente
 seo:
-  metaTitle: "Smart Cashback"
-  metaDescription: "Learn how to use cashback intelligently and save money on your daily purchases."
-  keywords: ["how to use cashback intelligently","personal finance","economy","money"]
+  metaTitle: Smart Cashback
+  metaDescription: >-
+    Learn how to use cashback intelligently and save money on your daily
+    purchases.
+  keywords:
+    - how to use cashback intelligently
+    - personal finance
+    - economy
+    - money
 ---
 
 ## Cashback: What it is and how it works

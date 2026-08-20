@@ -1,22 +1,37 @@
 ---
-title: "7 Practical Steps to Save Money for Children’s Day 2026"
-description: "Simple 30‑day plan to save for Children’s Day without squeezing your budget."
-tickerHeadline: "A pocket‑friendly trick"
-image: "/images/posts/7-passos-praticos-para-guardar-dinheiro-para-o-dia-das.webp"
-imageAlt: "White text over blue background with yellow and cyan wavy lines."
-category: "orcamento"
-locale: "en"
-tags: ["children's day savings","financial planning","FinMoovi","impulse purchases","monthly goals","expense control","affordable children's day","budget‑friendly kids gifts"]
-author: "FinMoovi"
-publishedAt: 2026-08-14
+title: 7 Practical Steps to Save Money for Children’s Day 2026
+description: Simple 30‑day plan to save for Children’s Day without squeezing your budget.
+tickerHeadline: A pocket‑friendly trick
+image: /images/posts/7-passos-praticos-para-guardar-dinheiro-para-o-dia-das.webp
+category: orcamento
+locale: en
+tags:
+  - children's day savings
+  - financial planning
+  - FinMoovi
+  - impulse purchases
+  - monthly goals
+  - expense control
+  - affordable children's day
+  - budget‑friendly kids gifts
+author: FinMoovi
+publishedAt: 2026-08-14T00:00:00.000Z
 readingTime: 6
 featured: false
-translationKey: "7-passos-praticos-para-guardar-dinheiro-para-o-dia-das"
-scope: "universal"
+translationKey: 7-passos-praticos-para-guardar-dinheiro-para-o-dia-das
+scope: universal
 seo:
-  metaTitle: "7 Practical Steps to Save Money for Children’s Day 2026"
-  metaDescription: "Simple 30‑day plan to save for Children’s Day without squeezing your budget."
-  keywords: ["children's day savings","financial planning","FinMoovi","impulse purchases","monthly goals","expense control","affordable children's day","budget‑friendly kids gifts"]
+  metaTitle: 7 Practical Steps to Save Money for Children’s Day 2026
+  metaDescription: Simple 30‑day plan to save for Children’s Day without squeezing your budget.
+  keywords:
+    - children's day savings
+    - financial planning
+    - FinMoovi
+    - impulse purchases
+    - monthly goals
+    - expense control
+    - affordable children's day
+    - budget‑friendly kids gifts
 ---
 
 Imagine the scene: a mailbox full of coupons, your phone buzzing with toy promos that look impossible to resist, and at the same time the electricity bill climbing like it’s on turbo mode. You feel that tightness in your chest thinking that, without a plan, Children’s Day could turn into an “unexpected expense” that messes up the whole month’s budget. The anxiety of picking the perfect gift, combined with the fear of hurting the rest of the bills, is real – and it happens to many people.
