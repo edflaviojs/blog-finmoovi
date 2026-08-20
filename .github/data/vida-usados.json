@@ -136,5 +136,11 @@
     "gancho": "se-parar",
     "turno": "noite",
     "em": "2026-08-19T05:20:42.011Z"
+  },
+  {
+    "situacao": "trocar-divida-cara",
+    "gancho": "ta-perdendo",
+    "turno": "manha",
+    "em": "2026-08-20T05:03:51.687Z"
   }
 ]

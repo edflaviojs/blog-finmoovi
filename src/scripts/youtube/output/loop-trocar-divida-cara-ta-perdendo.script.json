@@ -1,0 +1,117 @@
+{
+  "slug": "loop-trocar-divida-cara-ta-perdendo",
+  "formato": "loop16",
+  "term": "Trocar dívida cara por barata",
+  "category": "vida",
+  "keyword": "DÍVIDA",
+  "situacao": "trocar-divida-cara",
+  "gancho": "ta-perdendo",
+  "ganchoFamilia": "tá perdendo",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "balanca",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se você ainda paga a barata primeiro, tá perdendo dinheiro.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "barata",
+          "visual": {
+            "type": "statement",
+            "text": "Pagar a barata primeiro"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "primeiro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balanca"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Comigo aconteceu. Quitei a parcela menor, enquanto a dívida cara crescia.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "Comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balanca"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "A dívida cara crescia"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então eu parei, comparei tudo, e passei a pagar a mais cara.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "parei",
+          "visual": {
+            "type": "statement",
+            "text": "Passei a pagar a cara"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "comparei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balanca"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Desde então, a barata primeiro me faz perder dinheiro.",
+      "durationSec": 3.26,
+      "shots": [
+        {
+          "anchor": "barata",
+          "visual": {
+            "type": "statement",
+            "text": "A barata faz perder dinheiro"
+          }
+        },
+        {
+          "anchor": "primeiro",
+          "visual": {
+            "type": "statement",
+            "text": "Pagar a barata primeiro"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
