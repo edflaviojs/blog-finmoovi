@@ -394,5 +394,23 @@
     ],
     "veredito": "1. O LOOP: **Nota 3/10**  \nPrimeiro quadro tem “Cuidado com a lista” pequeno à esquerda; último quadro tem o mesmo texto grande centralizado. Não batem visualmente, quebra o loop.\n\n2. A FAIXA DE BAIXO: **Nota 4/10**  \nTem palavras importantes no terço inferior (ex: “o que acontece”, “de conferir a”, “na escola”), risco alto de ficar escondido pela UI.\n\n3. TEXTO POR CIMA DE TEXTO: **Nota 6/10**  \nNão tem sobreposição direta, mas algumas palavras estão muito próximas da borda e podem parecer cortadas.\n\n4. LEGIBILIDADE: **Nota 5/10**  \nTexto principal ok, mas os textos pequenos de apoio são difíceis de ler no celular.\n\n5. TELA VIVA OU VAZIA: **Nota 6/10**  \nTem bastante área vazia em vários quadros, principalmente no centro/baixo, sensação de “respiro demais”.\n\n6. COERÊNCIA: **Nota 8/10**  \nA história faz sentido e evolui (erro → consequência → correção), bem consistente.\n\n7. TESTE CENTRAL: **Parece mais SLIDES do que vídeo**  \nMuito estático, elementos não mudam muito além do texto.\n\n---\n\nNOTA GERAL: 5/10  \nPROBLEMA 1: Loop quebrado entre 13.5s e 0.1s (layout totalmente diferente)  \nPROBLEMA 2: Texto importante no terço inferior (vários quadros, ex: 3.9s e 11.6s)  \nPROBLEMA 3: Texto secundário pequeno demais para celular (vários quadros)  \nPRIMEIRA COISA A MUDAR: Ajustar o último quadro para ficar visualmente igual ao primeiro e fechar o loop invisível.",
     "quando": "2026-08-19T05:29:56.237Z"
+  },
+  {
+    "slug": "loop-trocar-divida-cara-ta-perdendo",
+    "formato": "loop16",
+    "nota": 8,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      2.4,
+      4.8,
+      7.2,
+      9.5,
+      11.9,
+      14.3,
+      16.6
+    ],
+    "veredito": "1. **O LOOP — 9/10**  \nPrimeiro e último quadro são praticamente iguais: mesma frase **“Pagar a barata primeiro”**, no mesmo lugar e com o mesmo visual. É um bom fechamento para loop. Só não dá para saber se a transição realmente esconde a reinicialização pelos quadros parados.\n\n2. **A FAIXA DE BAIXO — 9/10**  \nNão há informação importante no terço inferior. As legendas ficam acima da área mais problemática da interface do Shorts/Reels.\n\n3. **TEXTO POR CIMA DE TEXTO — 8/10**  \nNão vejo frases claramente sobrepostas nem palavras cortadas. O quadro de 4,8s tem bastante informação em duas camadas, mas elas estão separadas. Nada parece encostado perigosamente na borda.\n\n4. **LEGIBILIDADE — 9/10**  \nOs títulos são grandes, grossos e têm excelente contraste. As legendas menores continuam legíveis, embora algumas palavras em cinza percam um pouco de força no celular.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — 7/10**  \nHá bastante espaço vazio, principalmente entre o título e a legenda e nas áreas laterais. O fundo decorado evita que pareça abandonado, mas visualmente ainda sobra espaço demais.\n\n6. **COERÊNCIA — 9/10**  \nOs oito quadros parecem claramente pertencer ao mesmo vídeo. A sequência conta uma história: pagar a dívida barata → dívida cara crescendo → decisão → consequência. O retorno ao primeiro quadro também é coerente.\n\n7. **TESTE CENTRAL — 6/10**  \n**Parece mais uma sequência de slides animados do que um vídeo profissional**, principalmente pela repetição do mesmo cartão preto, do mesmo fundo e da mesma balança.\n\nNOTA GERAL: 8/10  \nPROBLEMA 1: Aparência de slides, principalmente nos quadros 2,4,6 e 8, pela repetição visual  \nPROBLEMA 2: Espaços vazios grandes entre título e legenda, especialmente nos quadros 1, 5 e 8  \nPROBLEMA 3: Legendas menores em cinza perdem um pouco de impacto no celular, especialmente nos quadros 2 e 3  \nPRIMEIRA COISA A MUDAR: Criar mais variação visual entre os quadros para parecer uma sequência de vídeo, não oito slides com o mesmo template.",
+    "quando": "2026-08-20T05:06:52.776Z"
   }
 ]
