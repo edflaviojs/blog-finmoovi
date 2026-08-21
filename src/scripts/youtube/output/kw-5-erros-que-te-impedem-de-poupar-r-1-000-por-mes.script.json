@@ -1,0 +1,204 @@
+{
+  "slug": "kw-5-erros-que-te-impedem-de-poupar-r-1-000-por-mes",
+  "term": "5 erros que te impedem de poupar R$ 1.000 por mês",
+  "category": "mindset",
+  "keyword": "erros",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você *tenta guardar mil reais por mês e nunca consegue?*"
+  },
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "escada",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você tenta guardar mil reais por mês e nunca consegue? Cinco erros pequenos podem estar comendo esse dinheiro. Eu vejo isso direto.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "tenta",
+          "visual": {
+            "type": "statement",
+            "text": "Por que não sobra dinheiro?"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "Cinco",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escada"
+          }
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "number",
+            "text": "R$ 1.000"
+          },
+          "sfx": "coin"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Você compra por impulso, esquece uma assinatura, come fora, parcela demais, e deixa dinheiro sem destino.",
+      "durationSec": 6.2,
+      "shots": [
+        {
+          "anchor": "compra",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          }
+        },
+        {
+          "anchor": "assinatura",
+          "visual": {
+            "type": "statement",
+            "text": "Assinaturas esquecidas"
+          },
+          "sfx": "alert"
+        },
+        {
+          "anchor": "deixa",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Esse dinheiro vai saindo. No fim, os mil reais que você queria guardar já foram embora.",
+      "durationSec": 6.2,
+      "shots": [
+        {
+          "anchor": "Esse",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escada"
+          }
+        },
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "number",
+            "text": "R$ 1.000"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "embora",
+          "visual": {
+            "type": "statement",
+            "text": "O dinheiro sumiu"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Foi aí que eu usei o FinMoovi. Coloquei meus gastos, e ele mostrou os cinco maiores.",
+      "durationSec": 6.2,
+      "shots": [
+        {
+          "anchor": "usei",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Tela inicial do FinMoovi com visão dos gastos e resumo financeiro"
+          },
+          "sfx": "click"
+        },
+        {
+          "anchor": "cinco",
+          "visual": {
+            "type": "list",
+            "text": "5 maiores gastos"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver os seus? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "statement",
+            "text": "Descubra seus gastos"
+          }
+        },
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "statement",
+            "text": "FinMoovi grátis"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Pra guardar mil reais por mês, comece corrigindo esses cinco erros. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "guardar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escada"
+          }
+        },
+        {
+          "anchor": "cinco",
+          "visual": {
+            "type": "number",
+            "text": "5 erros"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Controle seu dinheiro"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja seus gastos agora",
+    "target": "app"
+  },
+  "totalDurationSec": 37.8
+}
