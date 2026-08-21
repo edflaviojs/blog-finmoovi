@@ -1006,5 +1006,77 @@
     "target": "https://schema.org",
     "status": "no-endpoint",
     "sentAt": "2026-08-14T10:44:40.711Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/cansado-de-anotar-cada-gasto-a-mao-e-perder-a-nocao-do-seu/",
+    "target": "https://www.investopedia.com/terms/v/voice-recognition.asp】.",
+    "status": "no-endpoint",
+    "sentAt": "2026-08-21T10:16:28.504Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/como-iniciar-investimentos-em-acoes-de-forma-pratica-em-2026/",
+    "target": "https://www.investopedia.com/terms/s/stock.asp",
+    "status": "no-endpoint",
+    "sentAt": "2026-08-21T10:16:28.562Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/descubra-como-controlar-seu-dinheiro-com-apps-gratuitos/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-08-21T10:16:28.575Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/en-building-your-first-etf-portfolio-in-2026/",
+    "target": "https://www.investopedia.com/terms/e/etf.asp",
+    "status": "no-endpoint",
+    "sentAt": "2026-08-21T10:16:28.656Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/en-discover-how-to-take-control-of-your-money-with-free-apps/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-08-21T10:16:28.667Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/en-how-to-start-investing-in-stocks-the-easy-way-in-2026/",
+    "target": "https://www.investopedia.com/terms/s/stock.asp",
+    "status": "no-endpoint",
+    "sentAt": "2026-08-21T10:16:28.740Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/en-tired-of-manually-logging-every-expense-and-losing-track-of/",
+    "target": "https://www.investopedia.com/terms/v/voice-recognition.asp",
+    "status": "no-endpoint",
+    "sentAt": "2026-08-21T10:16:28.752Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/es-cansado-de-anotar-cada-gasto-a-mano-y-perder-la-nocion-de-tu/",
+    "target": "https://www.investopedia.com/terms/v/voice-recognition.asp】.",
+    "status": "no-endpoint",
+    "sentAt": "2026-08-21T10:16:28.846Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/es-como-iniciar-inversiones-en-acciones-de-forma-practica-en/",
+    "target": "https://www.investopedia.com/terms/s/stock.asp",
+    "status": "no-endpoint",
+    "sentAt": "2026-08-21T10:16:28.860Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/es-como-montar-tu-primera-cartera-de-etfs-en-2026/",
+    "target": "https://www.investopedia.com/terms/e/etf.asp",
+    "status": "no-endpoint",
+    "sentAt": "2026-08-21T10:16:28.917Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/es-descubre-como-controlar-tu-dinero-con-apps-gratuitas/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-08-21T10:16:28.929Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/montar-sua-primeira-carteira-de-etfs-em-2026/",
+    "target": "https://www.investopedia.com/terms/e/etf.asp",
+    "status": "no-endpoint",
+    "sentAt": "2026-08-21T10:16:28.984Z"
   }
 ]
