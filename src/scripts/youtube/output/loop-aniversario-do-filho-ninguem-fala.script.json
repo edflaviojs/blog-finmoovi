@@ -1,0 +1,117 @@
+{
+  "slug": "loop-aniversario-do-filho-ninguem-fala",
+  "formato": "loop16",
+  "term": "Aniversário do filho",
+  "category": "vida",
+  "keyword": "ANIVERSÁRIO",
+  "situacao": "aniversario-do-filho",
+  "gancho": "ninguem-fala",
+  "ganchoFamilia": "ninguém fala",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "bolha",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Ninguém fala isso sobre festa de filho, mas é real",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "Ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "A festa que aperta"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "festa",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bolha"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu vi a festa do meu menino apertar as contas",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "festa",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bolha"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "menino",
+          "visual": {
+            "type": "statement",
+            "text": "Meu menino e as contas"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "E aí organizei tudo com calma usando app lá em casa",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "organizei",
+          "visual": {
+            "type": "statement",
+            "text": "Organizei tudo em casa"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "calma",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bolha"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Hoje eu sei que aquela festa do filho ainda é real",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "festa",
+          "visual": {
+            "type": "statement",
+            "text": "A festa ainda é real"
+          }
+        },
+        {
+          "anchor": "filho",
+          "visual": {
+            "type": "statement",
+            "text": "A festa que aperta"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
