@@ -448,5 +448,23 @@
     ],
     "veredito": "**1. O LOOP — Nota: 3/10**  \nO primeiro quadro mostra “Conta única me pegou” e o último também, mas não parece ser exatamente a mesma cena: muda o contexto e a posição da narrativa. Pode funcionar como repetição de frase, mas não como loop imperceptível.\n\n**2. A FAIXA DE BAIXO — Nota: 8/10**  \nA maior parte das informações importantes está acima da área inferior. Alguns textos pequenos ficam perto da parte de baixo, mas não parecem cortados.\n\n**3. TEXTO POR CIMA DE TEXTO — Nota: 6/10**  \nHá momentos em que a legenda inferior fica visualmente próxima do texto principal. Não parece haver corte grave, mas existe risco de poluição.\n\n**4. LEGIBILIDADE — Nota: 8/10**  \nO texto principal é grande e tem bom contraste. As legendas menores embaixo podem ficar difíceis em telas pequenas.\n\n**5. A TELA ESTÁ VIVA OU VAZIA? — Nota: 6/10**  \nAlguns quadros têm muito espaço vazio no fundo. O visual é bonito, mas falta mais elemento visual contando a história.\n\n**6. COERÊNCIA — Nota: 8/10**  \nOs quadros parecem pertencer ao mesmo vídeo: mesma identidade visual, cores e tema. A sequência conta uma evolução.\n\n**7. TESTE CENTRAL — Nota: 7/10**  \nParece mais um vídeo animado do que slides, mas alguns momentos passam sensação de card parado porque há pouca mudança visual.\n\nNOTA GERAL: 7  \nPROBLEMA 1: O loop não fecha perfeitamente: quadro 0.1s e 15s não parecem a mesma cena, apesar da frase repetida.  \nPROBLEMA 2: Quadros com muito espaço vazio e pouca ação visual, principalmente nos momentos do gráfico.  \nPROBLEMA 3: Legendas inferiores pequenas podem perder força no celular.  \nPRIMEIRA COISA A MUDAR: Fazer o último quadro terminar exatamente na mesma composição do primeiro para criar um loop invisível.",
     "quando": "2026-08-21T05:08:28.237Z"
+  },
+  {
+    "slug": "loop-aniversario-do-filho-ninguem-fala",
+    "formato": "loop16",
+    "nota": 7,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      1.8,
+      3.6,
+      5.4,
+      7.2,
+      9,
+      10.9,
+      12.6
+    ],
+    "veredito": "1. **O LOOP — 5/10.** O primeiro e o último quadro têm o mesmo fundo e o mesmo título (“A festa que aperta”), mas o texto inferior muda de “Ninguém fala isso” para “é real”. Pelos quadros, o corte não parece totalmente invisível.\n\n2. **A FAIXA DE BAIXO — 9/10.** As informações importantes estão acima da área mais inferior da tela. O texto das legendas está relativamente seguro para a interface do Shorts/Reels.\n\n3. **TEXTO POR CIMA DE TEXTO — 9/10.** Não vejo frases sobrepostas nem palavras claramente cortadas. Os textos estão separados e bem organizados.\n\n4. **LEGIBILIDADE — 9/10.** O texto principal é grande, em branco e com fundo escuro, funcionando muito bem no celular. As legendas menores ainda parecem legíveis, embora tenham menos destaque.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — 6/10.** Há bastante espaço vazio, principalmente na metade inferior. As bolas luminosas ajudam, mas vários quadros continuam visualmente parados e com pouca informação.\n\n6. **COERÊNCIA — 9/10.** Os oito quadros parecem claramente pertencer ao mesmo vídeo: mesma identidade visual, fundo, logo, tipografia e progressão da mensagem. A sequência também conta uma pequena história.\n\n7. **TESTE CENTRAL — 6/10.** Pelos quadros parados, parece mais uma sequência de slides animados do que um vídeo profissional; não dá para saber pelos quadros se o movimento e as transições resolvem isso.\n\nNOTA GERAL: 7/10\nPROBLEMA 1: O loop — primeiro quadro (0,1s) e último (12,6s) não têm a mesma frase inferior.\nPROBLEMA 2: A tela tem áreas grandes e pouco ocupadas em vários quadros, especialmente abaixo do conteúdo.\nPROBLEMA 3: A composição depende muito de cartões de texto estáticos, dando aparência de slides.\nPRIMEIRA COISA A MUDAR: Faça o último quadro visualmente mais próximo do primeiro, especialmente na frase inferior, para o reinício desaparecer.",
+    "quando": "2026-08-21T05:12:17.026Z"
   }
 ]
