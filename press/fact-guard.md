@@ -1,15 +1,8 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-08-20T05:27:24.836Z
-**Posts:** 327 · limpos: 1 · bloqueados p/ revisao: 0 · com flags: 48
+**Gerado em:** 2026-08-21T05:29:26.558Z
+**Posts:** 327 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 48
 
-## ✂️ Cortes aplicados (citacao/estatistica sem fonte confiavel)
-
-**en-financial-planning-for-couples.md**
-- link removido: https://www.experian.com
-- link removido: https://www.treasury.gov
-- link removido: https://www.federalreserve.gov
-- link removido: https://www.census.gov
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
 
