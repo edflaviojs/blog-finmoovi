@@ -1,22 +1,41 @@
 ---
-title: "Como manter as contas do dia sob controle e evitar surpresas"
-description: "Descubra como organizar as contas do dia a dia, registrar despesas em segundos e ganhar tranquilidade financeira usando captura inteligente de notas."
-tickerHeadline: "Domine suas contas diárias"
-image: "/images/posts/como-manter-as-contas-do-dia-sob-controle-e-evitar-surpresas.webp"
-imageAlt: "Pessoas sentadas em mesa, desfocadas, em ambiente claro e neutro."
-category: "investimentos"
-locale: "pt"
-tags: ["controle de despesas","organização financeira","captura de notas","planejamento diário","FinMoovi","gestão de caixa","contas do dia"]
-author: "FinMoovi"
-publishedAt: 2026-08-19
+title: Como manter as contas do dia sob controle e evitar surpresas
+description: >-
+  Descubra como organizar as contas do dia a dia, registrar despesas em segundos
+  e ganhar tranquilidade financeira usando captura inteligente de notas.
+tickerHeadline: Domine suas contas diárias
+image: >-
+  /images/posts/como-manter-as-contas-do-dia-sob-controle-e-evitar-surpresas.webp
+category: investimentos
+locale: pt
+tags:
+  - controle de despesas
+  - organização financeira
+  - captura de notas
+  - planejamento diário
+  - FinMoovi
+  - gestão de caixa
+  - contas do dia
+author: FinMoovi
+publishedAt: 2026-08-19T00:00:00.000Z
 readingTime: 5
 featured: false
-translationKey: "como-manter-as-contas-do-dia-sob-controle-e-evitar-surpresas"
-scope: "universal"
+translationKey: como-manter-as-contas-do-dia-sob-controle-e-evitar-surpresas
+scope: universal
 seo:
-  metaTitle: "Como manter as contas do dia sob controle e evitar surpresas"
-  metaDescription: "Descubra como organizar as contas do dia a dia, registrar despesas em segundos e ganhar tranquilidade financeira usando captura inteligente de notas."
-  keywords: ["controle de despesas","organização financeira","captura de notas","planejamento diário","FinMoovi","gestão de caixa","contas do dia"]
+  metaTitle: Como manter as contas do dia sob controle e evitar surpresas
+  metaDescription: >-
+    Descubra como organizar as contas do dia a dia, registrar despesas em
+    segundos e ganhar tranquilidade financeira usando captura inteligente de
+    notas.
+  keywords:
+    - controle de despesas
+    - organização financeira
+    - captura de notas
+    - planejamento diário
+    - FinMoovi
+    - gestão de caixa
+    - contas do dia
 ---
 
 Chegando em casa depois de um dia corrido, você abre a bolsa e encontra um monte de papéis: recibos de cafeteria, tickets de transporte, aquele cupom de desconto que ainda não usou. Sem saber quanto gastou, a sensação de que o dinheiro “some” aumenta a ansiedade e faz o [planejamento mensal](/posts/como-organizar-seu-dinheiro-com-um-app-facil-de-usar) parecer impossível. Essa bagunça de notas soltas é o que chamamos de **contas do dia**, ou seja, todas as despesas cotidianas que, se não forem registradas, acabam escapando do seu orçamento.

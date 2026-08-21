@@ -1,22 +1,40 @@
 ---
-title: "How to Keep Daily Expenses Under Control and Avoid Surprises"
-description: "Learn simple ways to track everyday spending, capture receipts instantly, and gain financial peace of mind with smart note capture."
-tickerHeadline: "Master Your Daily Expenses"
-image: "/images/posts/como-manter-as-contas-do-dia-sob-controle-e-evitar-surpresas.webp"
-imageAlt: "Blurred group of people sitting around a table in hazy light."
-category: "investimentos"
-locale: "en"
-tags: ["daily expense tracking","financial organization","receipt capture","budgeting","FinMoovi","cash flow management","daily spending"]
-author: "FinMoovi"
-publishedAt: 2026-08-19
+title: How to Keep Daily Expenses Under Control and Avoid Surprises
+description: >-
+  Learn simple ways to track everyday spending, capture receipts instantly, and
+  gain financial peace of mind with smart note capture.
+tickerHeadline: Master Your Daily Expenses
+image: >-
+  /images/posts/como-manter-as-contas-do-dia-sob-controle-e-evitar-surpresas.webp
+category: investimentos
+locale: en
+tags:
+  - daily expense tracking
+  - financial organization
+  - receipt capture
+  - budgeting
+  - FinMoovi
+  - cash flow management
+  - daily spending
+author: FinMoovi
+publishedAt: 2026-08-19T00:00:00.000Z
 readingTime: 5
 featured: false
-translationKey: "como-manter-as-contas-do-dia-sob-controle-e-evitar-surpresas"
-scope: "universal"
+translationKey: como-manter-as-contas-do-dia-sob-controle-e-evitar-surpresas
+scope: universal
 seo:
-  metaTitle: "How to Keep Daily Expenses Under Control and Avoid Surprises"
-  metaDescription: "Learn simple ways to track everyday spending, capture receipts instantly, and gain financial peace of mind with smart note capture."
-  keywords: ["daily expense tracking","financial organization","receipt capture","budgeting","FinMoovi","cash flow management","daily spending"]
+  metaTitle: How to Keep Daily Expenses Under Control and Avoid Surprises
+  metaDescription: >-
+    Learn simple ways to track everyday spending, capture receipts instantly,
+    and gain financial peace of mind with smart note capture.
+  keywords:
+    - daily expense tracking
+    - financial organization
+    - receipt capture
+    - budgeting
+    - FinMoovi
+    - cash flow management
+    - daily spending
 ---
 
 Coming home after a hectic day, you open your bag and find a pile of papers: coffee shop receipts, transit tickets, that discount coupon you haven’t used yet. Not knowing how much you’ve spent makes the money feel like it “disappears,” raising anxiety and turning monthly [budgeting](/en/posts/en-financial-peace-of-mind-with-a-2026-app-for-everyday-life) into a nightmare. This jumble of loose receipts is what we call **daily expenses**—the everyday outlays that, if not recorded, slip out of your budget.
