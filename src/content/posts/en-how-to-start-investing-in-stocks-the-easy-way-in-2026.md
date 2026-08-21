@@ -3,6 +3,7 @@ title: "How to Start Investing in Stocks the Easy Way in 2026"
 description: "Learn in plain language how to turn your spare cash into stocks using everyday examples and the FinMoovi app in just a few minutes."
 tickerHeadline: "Your first stock, no hassle"
 image: "/images/posts/como-iniciar-investimentos-em-acoes-de-forma-pratica-em-2026.webp"
+imageAlt: "Brown notebook, calculator, coins, and green leaves on white marble."
 category: "dicas"
 locale: "en"
 tags: ["stocks","personal finance","economy","money"]

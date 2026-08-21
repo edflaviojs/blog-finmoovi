@@ -3,6 +3,7 @@ title: "Cómo iniciar inversiones en acciones de forma práctica en 2026"
 description: "Descubre en lenguaje sencillo cómo hacer que tu dinero trabaje en acciones, con ejemplos cotidianos y la app FinMoovi para dar el primer paso en minutos."
 tickerHeadline: "Tu primera acción sin complicaciones"
 image: "/images/posts/como-iniciar-investimentos-em-acoes-de-forma-pratica-em-2026.webp"
+imageAlt: "Cuaderno marrón, calculadora, monedas de euro y plantas sobre superficie de mármol blanco."
 category: "dicas"
 locale: "es"
 tags: ["acciones","finanzas personales","economía","dinero"]

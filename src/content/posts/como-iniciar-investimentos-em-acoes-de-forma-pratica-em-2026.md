@@ -3,6 +3,7 @@ title: "Como iniciar investimentos em ações de forma prática em 2026"
 description: "Descubra, em linguagem simples, como transformar seu dinheiro em ações, usando exemplos do dia a dia e o app FinMoovi para dar o primeiro passo em poucos minutos."
 tickerHeadline: "A primeira ação sem complicação"
 image: "/images/posts/como-iniciar-investimentos-em-acoes-de-forma-pratica-em-2026.webp"
+imageAlt: "Caderno marrom, calculadora e moedas sobre mármore branco com galhos verdes."
 category: "dicas"
 locale: "pt"
 tags: ["acciónes","finanças pessoais","economia","dinheiro"]
