@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-21T09:26:14.481Z",
-  "sourceCursor": 2,
+  "updatedAt": "2026-08-21T11:16:09.267Z",
+  "sourceCursor": 1,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -314,9 +314,11 @@
       "category": "glossario",
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "used",
       "addedAt": "2026-07-27T11:01:33.051Z",
-      "finmooviHook": "Foto da nota ou comando de voz: o gasto entra categorizado e já aparece no seu total do mês."
+      "finmooviHook": "Foto da nota ou comando de voz: o gasto entra categorizado e já aparece no seu total do mês.",
+      "usedAt": "2026-08-21T11:16:09.267Z",
+      "usedBy": "glossario-auto-diario"
     },
     {
       "keyword": "planejamento financeiro",

@@ -18,9 +18,9 @@ seo:
   keywords: ["Children's Day savings","financial planning","FinMoovi","savings goals","conscious shopping","expense control","affordable Children’s Day","economical gifts for kids"]
 ---
 
-It’s a Saturday afternoon, you’re at the grocery store trying to keep the bill low, and suddenly your shopping list has turned into a series of impulse buys. As the checkout line moves forward, the thought pops up: Children’s Day is only a few months away—new toys, clothes, maybe even a special outing. Your heart tightens when you see the total, and you realize that if nothing changes, the family budget will be squeezed in the weeks ahead. That feeling of always playing catch‑up is more common than you think, but there’s a clear path to turn anxiety into financial calm.
+It’s a Saturday afternoon, you’re at the grocery store trying to keep the bill low, and suddenly your shopping list has turned into a series of impulse buys. As the checkout line moves forward, the thought pops up: Children’s Day is only a few months away—new toys, clothes, maybe even a special outing. Your heart tightens when you see the total, and you realize that if nothing changes, the [family budget](/en/posts/en-how-to-gift-on-father-s-day-without-spending-much-7-budget) will be squeezed in the weeks ahead. That feeling of always playing catch‑up is more common than you think, but there’s a clear path to turn anxiety into financial calm.
 
-The good news is that, with a bit of organization and the help of an app like **FinMoovi**, you can turn that worry into a concrete plan. In under five minutes, open the app, use the **smart capture** feature to snap your latest credit‑card statement, and set a specific savings goal for Children’s Day. FinMoovi automatically categorizes your spending, shows how much you’ve already saved, and tells you what’s still missing. From there, everything becomes visual—and, most importantly, easier to follow.
+The good news is that, with a bit of organization and the help of an app like **FinMoovi**, you can turn that worry into a concrete plan. In under five minutes, open the app, use the **smart capture** feature to snap your latest [credit](/en/glossario/en-credit)‑card statement, and set a specific [savings](/en/glossario/en-savings) goal for Children’s Day. FinMoovi automatically categorizes your spending, shows how much you’ve already saved, and tells you what’s still missing. From there, everything becomes visual—and, most importantly, easier to follow.
 
 Below are seven practical steps that will help you save ahead of time while keeping peace of mind until the big day.
 
@@ -28,7 +28,7 @@ Below are seven practical steps that will help you save ahead of time while keep
 
 The first thing that usually trips people up is not having a clear target. Instead of “I’ll save for Children’s Day,” decide **how much** you want to set aside. Use everyday references that make sense, like “about one month’s rent” or “the cost of a daily coffee.”
 
-In FinMoovi, go to the **Monthly Planning / Goals** section, create a new goal called “Children’s Day 2026,” and enter the desired amount. The app will show how much you need to save each week or month, breaking the objective into bite‑size, measurable steps.
+In FinMoovi, go to the **Monthly [Planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) / Goals** section, create a new goal called “Children’s Day 2026,” and enter the desired amount. The app will show how much you need to save each week or month, breaking the objective into bite‑size, measurable steps.
 
 ## 2. Automate capture of recurring expenses  
 
@@ -36,11 +36,11 @@ Most household expenses are recurring: electricity, internet, streaming subscrip
 
 ![2. Automate capture of recurring expenses](/images/posts/como-economizar-para-o-dia-das-criancas-ja-em-2026-7-passos-2.webp)
 
-Use FinMoovi’s **smart capture** to photograph your monthly bills. The app will automatically read the amount and category, adding everything to your **cash flow** view. That way you’ll see in real time how much is truly available for the Children’s Day goal.
+Use FinMoovi’s **smart capture** to photograph your monthly bills. The app will automatically read the amount and category, adding everything to your **[cash flow](/en/glossario/en-cash-flow)** view. That way you’ll see in real time how much is truly available for the Children’s Day goal.
 
 ## 3. Create a separate “digital piggy bank”  
 
-Many finance apps let you set up sub‑accounts or virtual “piggy banks.” In FinMoovi, simply create a **piggy bank** dedicated to Children’s Day. Set up an automatic transfer of a fixed amount (for example, 10 % of your monthly income) right after payday. This automatic move removes the temptation to spend the money elsewhere.
+Many [finance](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using) apps let you set up sub‑accounts or virtual “piggy banks.” In FinMoovi, simply create a **piggy bank** dedicated to Children’s Day. Set up an automatic transfer of a fixed amount (for example, 10 % of your monthly income) right after payday. This automatic move removes the temptation to spend the money elsewhere.
 
 ## 4. Trim “invisible” expenses with tiny tweaks  
 
@@ -66,7 +66,7 @@ The anxiety of not knowing how much you’ll spend often leads to impulsive buys
 
 ![6. Build a gift list with a real‑time total](/images/posts/como-economizar-para-o-dia-das-criancas-ja-em-2026-7-passos-6.webp)
 
-When you build the list, include “alternatives” – for example, a higher‑priced brand‑name toy and a similar, more affordable option. The app will show the cost difference, making it easier to pick the one that fits your budget.
+When you build the list, include “[alternatives](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your)” – for example, a higher‑priced brand‑name toy and a similar, more affordable option. The app will show the cost difference, making it easier to pick the one that fits your budget.
 
 ## 7. Review and adjust every two weeks  
 
@@ -92,6 +92,6 @@ Research from **Investopedia** shows that the habit of setting clear goals is li
 
 ### Conclusion  
 
-Saving for Children’s Day doesn’t have to mean stress or extreme sacrifice. By breaking the plan into small steps and using technology to your advantage, you can secure gifts that bring joy without jeopardizing your family’s financial health. FinMoovi puts it all in the palm of your hand: automatic expense capture, personalized goals, digital piggy banks, and alerts that keep you on track.
+[Saving](/en/posts/en-how-to-build-a-budget-that-actually-works-in-2026) for Children’s Day doesn’t have to mean stress or extreme sacrifice. By breaking the plan into small steps and using technology to your advantage, you can secure gifts that bring joy without jeopardizing your family’s financial health. FinMoovi puts it all in the palm of your hand: automatic expense capture, personalized goals, digital piggy banks, and alerts that keep you on track.
 
 **Use FinMoovi to monitor your spending and avoid end‑of‑month surprises.**
