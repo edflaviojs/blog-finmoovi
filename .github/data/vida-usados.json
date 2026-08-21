@@ -148,5 +148,11 @@
     "gancho": "ta-perdendo",
     "turno": "noite",
     "em": "2026-08-20T05:08:45.544Z"
+  },
+  {
+    "situacao": "conta-so-das-contas",
+    "gancho": "ninguem-fala",
+    "turno": "manha",
+    "em": "2026-08-21T05:05:30.492Z"
   }
 ]

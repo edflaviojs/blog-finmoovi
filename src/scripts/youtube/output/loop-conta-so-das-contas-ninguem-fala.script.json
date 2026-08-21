@@ -1,0 +1,117 @@
+{
+  "slug": "loop-conta-so-das-contas-ninguem-fala",
+  "formato": "loop16",
+  "term": "Uma conta só para as contas",
+  "category": "vida",
+  "keyword": "CONTA",
+  "situacao": "conta-so-das-contas",
+  "gancho": "ninguem-fala",
+  "ganchoFamilia": "ninguém fala",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "bifurcacao",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Ninguém fala isso sobre conta única, mas é real Vi meu salário",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "Ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "Conta única me pegou"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bifurcacao"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu juntava tudo e as contas sumiam antes dos boletos chegarem",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "juntava",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bifurcacao"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "contas",
+          "visual": {
+            "type": "statement",
+            "text": "Salário sumia nas contas"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então separei meu dinheiro das contas e organizei meu mês",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "separei",
+          "visual": {
+            "type": "statement",
+            "text": "Separei dinheiro das contas"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bifurcacao"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Conta única nunca mais escondi meu salário lá dentro",
+      "durationSec": 3.26,
+      "shots": [
+        {
+          "anchor": "Conta",
+          "visual": {
+            "type": "statement",
+            "text": "Conta única mudou tudo"
+          }
+        },
+        {
+          "anchor": "única",
+          "visual": {
+            "type": "statement",
+            "text": "Conta única me pegou"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
