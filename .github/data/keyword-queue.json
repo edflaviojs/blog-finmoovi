@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-20T11:15:56.717Z",
-  "sourceCursor": 1,
+  "updatedAt": "2026-08-21T09:26:14.481Z",
+  "sourceCursor": 2,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -1676,8 +1676,10 @@
       "category": null,
       "priority": 2,
       "source": "gsc-gap",
-      "status": "pending",
-      "addedAt": "2026-08-10T08:20:10.616Z"
+      "status": "used",
+      "addedAt": "2026-08-10T08:20:10.616Z",
+      "usedAt": "2026-08-21T09:26:14.481Z",
+      "usedBy": "gerar-dicas-financeiras"
     },
     {
       "keyword": "controle de gastos whatsapp",
