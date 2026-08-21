@@ -911,8 +911,67 @@
           "titulo": "O hábito que faz o patrimônio crescer no automático"
         }
       ]
+    },
+    {
+      "videoId": "cnEvP30pbrA",
+      "title": "Se Você Seguir Estas 10 Regras, Nunca Mais Faltará Dinheiro",
+      "channel": "Nexus Finanças",
+      "duracaoSeg": 1468,
+      "idioma": "pt",
+      "viewsPerDay": 971,
+      "vistoEm": "2026-08-21",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "O que a escola não te ensinou"
+        },
+        {
+          "seg": 125,
+          "titulo": "Regra 1: A fórmula da riqueza (Não é o que você pensa)"
+        },
+        {
+          "seg": 287,
+          "titulo": "Regra 2: Como fazer o dinheiro trabalhar sozinho"
+        },
+        {
+          "seg": 372,
+          "titulo": "Regra 3: O segredo dos Juros Compostos e o Fator Tempo"
+        },
+        {
+          "seg": 530,
+          "titulo": "Regra 4: O alicerce: Sua proteção contra imprevistos"
+        },
+        {
+          "seg": 637,
+          "titulo": "Regra 5: Ativos vs. Passivos (Onde seu dinheiro some?)"
+        },
+        {
+          "seg": 751,
+          "titulo": "Regra 6: Como vencer a impulsividade e o \"Eu Mereço\""
+        },
+        {
+          "seg": 845,
+          "titulo": "Regra 7: Nem toda dívida é ruim? Entenda a diferença"
+        },
+        {
+          "seg": 947,
+          "titulo": "Regra 8: O investimento que ninguém pode te tirar"
+        },
+        {
+          "seg": 1062,
+          "titulo": "Regra 9: O poder silencioso da consistência"
+        },
+        {
+          "seg": 1210,
+          "titulo": "Regra 10: O segredo que muda o seu jogo financeiro"
+        },
+        {
+          "seg": 1360,
+          "titulo": "Comece por aqui: Seu plano de ação"
+        }
+      ]
     }
   ],
-  "atualizadoEm": "2026-08-20T04:27:52.713Z",
-  "total": 17
+  "atualizadoEm": "2026-08-21T04:29:10.321Z",
+  "total": 18
 }
