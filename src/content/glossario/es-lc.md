@@ -31,10 +31,10 @@ Aquí es donde casi todos se pierden, y el nombre no ayuda:
 | Sigla | Qué es |
 | --- | --- |
 | **LC** | Letra de **Cambio**. Emitida por una financiera. Paga Impuesto sobre la Renta |
-| **LCI / LCA** | Letras de **Crédito** inmobiliario y del agronegocio. Emitidas por bancos y **exentas** de impuesto para personas físicas — ver [LCI y LCA](/es/glossario/es-lci-y-lca) |
+| **Bonos bancarios exentos de impuestos** | Bonos de **Crédito** inmobiliario y del agronegocio. Emitidos por bancos y **exentos** de impuesto para personas físicas — ver [bonos bancarios exentos de impuestos](/es/glossario/es-lci-y-lca) |
 | **Carta de crédito** | Instrumento de comercio exterior en el que un banco garantiza el pago entre comprador y vendedor. Nada que ver con invertir |
 
-A pesar del "câmbio" en el nombre, la LC **no tiene relación con moneda extranjera**. El término es histórico.
+A pesar del "cambio" en el nombre, la LC **no tiene relación con moneda extranjera**. El término es histórico.
 
 ## Cómo funciona
 
@@ -50,7 +50,7 @@ Lo que nivela el juego es el **[fondo de garantía](/es/glossario/es-garantia-fg
 
 ## Impuesto
 
-La LC sigue la tabla regresiva del [Impuesto sobre la Renta](/es/glossario/es-impuesto-sobre-la-renta), igual que el certificado de depósito: cuanto más tiempo queda invertido el dinero, menor la tasa. **No es exenta** — las exentas son la LCI/LCA, y por eso mismo confundirlas cuesta dinero al comparar.
+La LC sigue la tabla regresiva del [Impuesto sobre la Renta](/es/glossario/es-impuesto-sobre-la-renta), igual que el certificado de depósito: cuanto más tiempo queda invertido el dinero, menor la tasa. **No es exenta** — las exentas son los bonos bancarios exentos de impuestos, y por eso mismo confundirlas cuesta dinero al comparar.
 
 ## Riesgos
 
@@ -60,7 +60,7 @@ La LC sigue la tabla regresiva del [Impuesto sobre la Renta](/es/glossario/es-im
 
 ## Antes de invertir
 
-- **Confirma si es LC o LCI/LCA.** La exención de impuesto cambia el resultado final
+- **Confirma si es LC o bonos bancarios exentos de impuestos.** La exención de impuesto cambia el resultado final
 - **Revisa si hay carencia.** Sin rescate anticipado, el plazo es un compromiso, no una sugerencia
 - **Suma lo que ya tienes** en la misma institución para no pasar del límite garantizado
 - **Compara el neto, no el bruto**: 115% del tasa interbancaria con impuesto puede rendir menos que una exenta con tasa menor

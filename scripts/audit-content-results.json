@@ -56,81 +56,6 @@
     }
   },
   {
-    "file": "en-tesouro-direto-for-beginners.md",
-    "dir": "posts",
-    "severity": 2,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [],
-      "brProducts": [
-        "Tesouro Direto"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [
-        "LCI",
-        "LTN",
-        "NTN"
-      ],
-      "ptLeftovers": []
-    }
-  },
-  {
-    "file": "en-tesouro-direto.md",
-    "dir": "glossario",
-    "severity": 2,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [
-        "LTN",
-        "NTN"
-      ],
-      "ptLeftovers": []
-    }
-  },
-  {
-    "file": "es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026.md",
-    "dir": "posts",
-    "severity": 2,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [],
-      "brProducts": [
-        "CDB",
-        "Selic"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": []
-    }
-  },
-  {
-    "file": "es-come-cotas.md",
-    "dir": "glossario",
-    "severity": 2,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [
-        "PGBL",
-        "VGBL"
-      ],
-      "ptLeftovers": []
-    }
-  },
-  {
     "file": "es-entiende-la-tasa-interbancaria-y-su-impacto-en-tus.md",
     "dir": "posts",
     "severity": 2,
@@ -165,9 +90,7 @@
         "LCI",
         "LCA"
       ],
-      "ptLeftovers": [
-        "poupança"
-      ]
+      "ptLeftovers": []
     }
   },
   {
@@ -177,9 +100,7 @@
     "issues": {
       "currency": 0,
       "brInstitutions": [],
-      "brProducts": [
-        "Tesouro Direto"
-      ],
+      "brProducts": [],
       "geoRefs": [],
       "ptWordsCount": 0,
       "brBrands": [],
@@ -192,35 +113,13 @@
     }
   },
   {
-    "file": "es-indice-finmoovi-costo-de-vida-julio-2026.md",
-    "dir": "posts",
-    "severity": 2,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [
-        "IBGE"
-      ],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [
-        "IPCA"
-      ],
-      "ptLeftovers": []
-    }
-  },
-  {
     "file": "es-lc.md",
     "dir": "glossario",
     "severity": 2,
     "issues": {
       "currency": 0,
       "brInstitutions": [],
-      "brProducts": [
-        "CDB",
-        "CDI"
-      ],
+      "brProducts": [],
       "geoRefs": [],
       "ptWordsCount": 0,
       "brBrands": [],
@@ -229,58 +128,6 @@
         "LCA"
       ],
       "ptLeftovers": []
-    }
-  },
-  {
-    "file": "es-prevision-privada-2026-vale-la-pena-guia-practica.md",
-    "dir": "posts",
-    "severity": 2,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [
-        "PGBL",
-        "VGBL"
-      ],
-      "ptLeftovers": []
-    }
-  },
-  {
-    "file": "en-budgeting-with-minimum-wage-practical-tips.md",
-    "dir": "posts",
-    "severity": 1,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": [
-        "poupança"
-      ]
-    }
-  },
-  {
-    "file": "en-building-a-diversified-portfolio-with-r-500.md",
-    "dir": "posts",
-    "severity": 1,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": [
-        "investimentos"
-      ]
     }
   },
   {
@@ -318,23 +165,6 @@
     }
   },
   {
-    "file": "en-how-to-use-cashback-wisely-and-multiply-your-income.md",
-    "dir": "posts",
-    "severity": 1,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": [
-        "dívidas"
-      ]
-    }
-  },
-  {
     "file": "en-investments-for-the-second-half-practical-strategies-for.md",
     "dir": "posts",
     "severity": 1,
@@ -349,23 +179,6 @@
       "ptLeftovers": [
         "investimentos"
       ]
-    }
-  },
-  {
-    "file": "en-quotes-semana-1-july-2026.md",
-    "dir": "posts",
-    "severity": 1,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [],
-      "brProducts": [
-        "Selic"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": []
     }
   },
   {
@@ -844,6 +657,36 @@
   },
   {
     "file": "en-budget-review.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-budgeting-with-minimum-wage-practical-tips.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-building-a-diversified-portfolio-with-r-500.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -2193,6 +2036,21 @@
     }
   },
   {
+    "file": "en-how-to-use-cashback-wisely-and-multiply-your-income.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-how-to-use-credit-without-squeezing-your-budget-5-steps.md",
     "dir": "posts",
     "severity": 0,
@@ -2733,6 +2591,21 @@
     }
   },
   {
+    "file": "en-quotes-semana-1-july-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-quotes-semana-1-june-2026.md",
     "dir": "posts",
     "severity": 0,
@@ -2809,6 +2682,21 @@
   },
   {
     "file": "en-real-estate-funds-reits.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-recurring-expense.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -3079,6 +2967,36 @@
   },
   {
     "file": "en-stocks.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-tesouro-direto-for-beginners.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-tesouro-direto.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -3843,6 +3761,21 @@
     }
   },
   {
+    "file": "es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-cdb.md",
     "dir": "glossario",
     "severity": 0,
@@ -3859,6 +3792,21 @@
   },
   {
     "file": "es-cdi.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-come-cotas.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -4983,6 +4931,21 @@
     }
   },
   {
+    "file": "es-gasto-recurrente.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-gasto-variable.md",
     "dir": "glossario",
     "severity": 0,
@@ -5060,6 +5023,21 @@
   {
     "file": "es-independencia-financiera.md",
     "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-indice-finmoovi-costo-de-vida-julio-2026.md",
+    "dir": "posts",
     "severity": 0,
     "issues": {
       "currency": 0,
@@ -5614,6 +5592,21 @@
   },
   {
     "file": "es-presupuesto-semanal-guia-para-quien-recibe-su-salario-cada.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-prevision-privada-2026-vale-la-pena-guia-practica.md",
     "dir": "posts",
     "severity": 0,
     "issues": {

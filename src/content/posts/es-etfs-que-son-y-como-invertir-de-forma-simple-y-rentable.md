@@ -27,7 +27,7 @@ seo:
 
 Cuando compras 10 cuotas de un ETF que replica el índice de referencia, estás, en la práctica, invirtiendo en todas las empresas que componen ese índice (en la misma proporción). Si el índice sube un 2 %, el [valor](/es/glossario/es-valor-financiero) de tus cuotas también sube aproximadamente un 2 %.
 
-![Como funciona na prática](/images/posts/etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel-2.webp)
+![Cómo funciona en la práctica](/images/posts/etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel-2.webp)
 
 La gestión del fondo puede ser **pasiva** (simplemente sigue el índice) o **activa** (busca superar el índice). La mayoría de los ETFs en muchos países son pasivos, lo que reduce los costos de administración.
 
@@ -59,7 +59,7 @@ Si, en [cambio](/es/glossario/es-cambio), hubieras colocado el mismo monto en un
 4. **Realiza la orden de compra** – selecciona el ticker (código) del ETF, indica la cantidad y confirma la operación.  
 5. **Sigue el desempeño** – usa reportes mensuales o una app de finanzas para ver cómo evoluciona tu inversión.
 
-![Como começar a investir](/images/posts/etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel-4.webp)
+![Cómo comenzar a invertir](/images/posts/etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel-4.webp)
 
 ### Simulación de aporte mensual
 
@@ -79,7 +79,7 @@ Si, en [cambio](/es/glossario/es-cambio), hubieras colocado el mismo monto en un
 - **Liquidación** – Aunque la cotización sea inmediata, la liquidación financiera ocurre en D+2 (dos días hábiles después de la compra).  
 - **Impuestos** – Las ganancias se gravan al 15 % para operaciones de renta variable, y hay exención para ventas hasta €3.600 mensuales.  
 
-> **Consejo:** antes de comprar, verifica si el ETF está registrado en la **[CVM](https://www.cvm.gov.br)** y si el prospecto está disponible para consulta.
+> **Consejo:** antes de comprar, verifica si el ETF está registrado en el regulador financiero y si el prospecto está disponible para consulta.
 
 ## Estrategias simples con ETFs
 
@@ -87,7 +87,7 @@ Si, en [cambio](/es/glossario/es-cambio), hubieras colocado el mismo monto en un
 - **Rebalanceo periódico:** cada 6 o 12 meses, ajusta las proporciones para mantener la estrategia original.  
 - **Aporte programado:** usa la función de compra automática del corredor para aplicar €90 cada mes, reduciendo el riesgo de timing del mercado.  
 
-![Estratégias simples com ETFs](/images/posts/etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel-6.webp)
+![Estrategias simples con ETFs](/images/posts/etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel-6.webp)
 
 ## Próximos pasos
 
@@ -101,4 +101,3 @@ Recuerda que la inversión es una maratón, no una carrera de 100 m. Evalúa s
 ---
 
 **Para seguir tus inversiones en un solo lugar, [prueba FinMoovi gratis por 7 días](https://finmoovi.com) — multi‑moneda, reportes inteligentes y 100 % offline.**
-<!-- SCHEMA_AUTO:{"@context":"https://schema.org","@type":"HowTo","name":"ETFs: qué son y cómo invertir de forma simple y rentable","step":[{"@type":"HowToStep","position":1,"name":"Abre una cuenta en un corredor – elige uno que ofrezca comisión de corretaje cero o reducida para ETFs.","text":"Abre una cuenta en un corredor – elige uno que ofrezca comisión de corretaje cero o reducida para ETFs."},{"@type":"HowToStep","position":2,"name":"Define el objetivo – si el foco es a largo plazo, un ETF de acciones puede ser adecuado; para renta fija, busca ETFs que sigan la tasa interbancaria o los bonos del gobierno.","text":"Define el objetivo – si el foco es a largo plazo, un ETF de acciones puede ser adecuado; para renta fija, busca ETFs que sigan la tasa interbancaria o los bonos del gobierno."},{"@type":"HowToStep","position":3,"name":"Elabora un plan de aporte – por ejemplo, invertir €90 cada mes en un ETF de acciones locales.","text":"Elabora un plan de aporte – por ejemplo, invertir €90 cada mes en un ETF de acciones locales."},{"@type":"HowToStep","position":4,"name":"Realiza la orden de compra – selecciona el ticker (código) del ETF, indica la cantidad y confirma la operación.","text":"Realiza la orden de compra – selecciona el ticker (código) del ETF, indica la cantidad y confirma la operación."},{"@type":"HowToStep","position":5,"name":"Sigue el desempeño – usa reportes mensuales o una app de finanzas para ver cómo evoluciona tu inversión.","text":"Como começar a investir"},{"@type":"HowToStep","position":6,"name":"Elige el ETF que más se ajuste a tu objetivo (acciones, renta fija, sectores).","text":"Elige el ETF que más se ajuste a tu objetivo (acciones, renta fija, sectores)."},{"@type":"HowToStep","position":7,"name":"Abre la cuenta en un corredor que ofrezca herramientas de seguimiento, como reportes de posición y gráficos.","text":"Abre la cuenta en un corredor que ofrezca herramientas de seguimiento, como reportes de posición y gráficos."},{"@type":"HowToStep","position":8,"name":"Define un aporte – comienza con €90 o menos y aumenta gradualmente según tu presupuesto lo permita.","text":"Define un aporte – comienza con €90 o menos y aumenta gradualmente según tu presupuesto lo permita."}]} -->

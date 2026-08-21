@@ -51,11 +51,11 @@ Construir una reserva de emergencia y colocar recursos en activos de largo plazo
 ![Cómo armar la cartera: 5 pasos simples](/images/posts/investimentos-para-o-segundo-semestre-estrategias-praticas-p-2.webp)
 
 | Ítem                     | [Valor](/es/glossario/es-valor-financiero) (€) |
-|--------------------------|-----------|
-| Salario bruto mensual    | 630,00 |
-| Gastos fijos mensuales   | 324,00 |
-| Reserva de emergencia    | 900,00 |
-| Inversiones actuales     | 2.160,00 |
+|--------------------------|-----------------------------------------------|
+| Salario bruto mensual    | €630,00 |
+| Gastos fijos mensuales   | €324,00 |
+| Reserva de emergencia    | €900,00 |
+| Inversiones actuales     | €2.160,00 |
 
 Después de pagar las cuentas, calcula cuánto sobra para nuevos aportes. En el ejemplo anterior, la persona tiene **€306,00** de margen libre (630 – 324). Si destinas el 30 % de ese margen a nuevos aportes, el aporte mensual será **€92**.
 

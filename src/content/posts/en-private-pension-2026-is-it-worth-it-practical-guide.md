@@ -20,14 +20,14 @@ seo:
 
 ## What is [private pension](/en/glossario/en-private-pension)?
 
-Private pension, also called a complementary pension plan, works like a *long‑term [savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet) vehicle* that you feed throughout your working life. The [money](/en/posts/en-30-day-rule-for-purchases) is invested in funds managed by financial institutions and, when you retire, you receive either a monthly benefit (income) or a lump‑sum payment.
+Private pension, also called a complementary retirement plan, works like a *long‑term [savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet) vehicle* that you feed throughout your working life. The [money](/en/posts/en-30-day-rule-for-purchases) is invested in funds managed by financial institutions and, when you retire, you receive either a monthly benefit (income) or a lump‑sum payment.
 
 Two main types of plans exist:
 
 | Type | How it works | When it pays |
 |------|--------------|--------------|
-| **Tax‑deferred retirement plan (PGBL)** | Contributions are deductible from Income Tax (up to 12% of gross income). | At retirement, tax is applied on the total (contributions + earnings). |
-| **Tax‑deferred retirement plan (VGBL)** | No tax deduction on contributions. | Tax is applied only on the earnings at the time of withdrawal. |
+| **Tax‑deductible retirement plan** | Contributions are deductible from Income Tax (up to 12% of gross income). | At retirement, tax is applied on the total (contributions + earnings). |
+| **Tax‑deferred retirement plan** | No tax deduction on contributions. | Tax is applied only on the earnings at the time of withdrawal. |
 
 These acronyms can look confusing, but the core idea is simple: you put money in, it grows, and later it turns into income.
 
@@ -53,7 +53,7 @@ Even though administration fees have dropped, they can still eat a large chunk o
 | **Performance** | Charge on returns that exceed a reference index (e.g., [interbank rate](/en/glossario/en-cdi)). | 10% – 20% of the excess over the benchmark. |
 | **Load (Carregamento)** | Charge on entry (or exit) of funds. | Can reach 5% on entry, but most plans have already eliminated this fee. |
 
-On top of those, keep an eye on **IOF** (Tax on Financial Operations) that applies during the first 30 days of investment. If you need to withdraw before that period, IOF is charged on a sliding scale, reaching up to 96% in the first days.
+On top of those, keep an eye on **financial transaction tax (FTT)** that applies during the first 30 days of investment. If you need to withdraw before that period, the tax is charged on a sliding scale, reaching up to 96% in the first days.
 
 ## Practical simulation – how much does it really earn?
 
@@ -79,14 +79,14 @@ These numbers assume you **make no withdrawals** before retirement and that the 
 | **[CD](/en/glossario/en-cdb) (Certificate of Deposit)** | 100% of interbank rate (≈ 5.5% per year) | Medium – withdrawal after 30 days | Near‑zero fees | Short‑to‑medium horizon investors |
 | **Government bonds (central bank base rate)** | 100% of central bank base rate (≈ 5.75% per year) | High – daily withdrawal | Custody fee ~0.2% per year | Conservative profile, emergency reserve |
 
-The main advantage of private pension is the **tax benefit** (for the tax‑deferred plan) and the possibility of turning the balance into a guaranteed monthly income. However, if quick access to cash is your priority, government bonds or a CD are more suitable.
+The main advantage of private pension is the **tax benefit** (for the tax‑deductible plan) and the possibility of turning the balance into a guaranteed monthly income. However, if quick access to cash is your priority, government bonds or a CD are more suitable.
 
 ## Risks and cautions
 
 1. **Market risk** – In funds that invest in stocks or ETFs, the value can swing a lot. If your retirement horizon is short, this risk can be problematic.  
 2. **High administration‑fee risk** – As we saw, fees above 2% can shave up to 10% off gains over 30 years.  
-3. **Regulatory‑change risk** – Shifts in tax rules or deduction limits can affect the attractiveness of the tax‑deferred plan.  
-4. **Institutional default risk** – Although the insurance regulator guarantees insurers’ solvency, always check the company’s rating.
+3. **Regulatory‑change risk** – Shifts in tax rules or deduction limits can affect the attractiveness of the tax‑deductible plan.  
+4. **Institutional default risk** – Although the financial regulator guarantees insurers’ solvency, always check the company’s rating.
 
 ![Risks and cautions](/images/posts/previdencia-privada-2026-vale-a-pena-guia-pratico-6.webp)
 
@@ -98,7 +98,7 @@ The main advantage of private pension is the **tax benefit** (for the tax‑defe
 ## Next steps
 
 1. **List your goals** – Define how much you want to accumulate by retirement and whether you need monthly income or a lump sum.  
-2. **Run simulations** – Use the calculator from the [government bonds portal](https://www.tesourodireto.com.br) or your bank to compare tax‑deferred retirement plans with CDs and government bonds.  
+2. **Run simulations** – Use the calculator from the [government bonds portal](https://www.tesourodireto.com.br) or your bank to compare tax‑deductible retirement plans with CDs and government bonds.  
 3. **Check the fees** – Ask your broker or manager for a detailed breakdown of administration and performance fees.  
 4. **Build a contribution plan** – Choose a monthly amount that fits your budget (e.g., $100, $200 or $1,000) and adjust if needed.  
 5. **Monitor regularly** – Review your plan every 12 months, making sure the return aligns with your target and that fees remain competitive.

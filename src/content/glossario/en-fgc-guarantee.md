@@ -17,11 +17,11 @@ The Deposit Insurance Fund (similar to FDIC insurance) is like an insurance for 
 
 ## What is covered
 
-- [Certificates of Deposit (CDs)](/en/glossario/en-cdb) (formerly CDB)
-- Real estate‑backed securities (formerly [LCI and LCA](/en/glossario/en-lci-and-lca))
+- [Certificates of Deposit (CDs)](/en/glossario/en-cdb)
+- [Tax‑exempt bank notes](/en/glossario/en-lci-and-lca)
 - Savings account
 - Checking account
-- Bank deposit receipts (formerly RDB)
+- Bank deposit receipts
 - [Foreign exchange](/en/glossario/en-cambio) letters
 
 ## What is NOT covered
@@ -29,8 +29,8 @@ The Deposit Insurance Fund (similar to FDIC insurance) is like an insurance for 
 - Stocks
 - Investment funds
 - [Debentures](/en/glossario/en-debentures)
-- Government bonds (formerly Treasury Direct, which has a federal government guarantee)
-- Real estate investment certificates (formerly CRI and CRA)
+- Government bonds
+- Real estate investment certificates
 - [Private pension](/en/glossario/en-private-pension)
 
 ## Limits

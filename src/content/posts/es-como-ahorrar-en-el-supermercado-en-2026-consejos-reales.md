@@ -22,29 +22,29 @@ seo:
 
 Cuando llegamos a la caja con el carrito lleno, suele ser más difícil encontrar espacio para la razón. Por eso, reservé un ratito el fin de semana para analizar lo que realmente falta en la despensa. Mira la última factura, revisa lo que está por vencerse y haz un plan de consumo para las próximas dos semanas. Esta práctica simple ya puede reducir el gasto en torno al 10 % – sin necesidad de cálculos complejos, basta anotar lo que realmente necesitas.
 
-Si tu salario está entre €540 y €1,440, destinar hasta el 15 % de los ingresos (≈ €81 a €216) a la alimentación es un buen punto de partida. Dentro de ese límite, la predefinición de lo que vas a comprar ayuda a evitar “compras impulsivas” y a adquirir artículos que aún tienes en casa.
+Si tu salario está entre **€1,500 y €4,000**, destinar hasta el **15 %** de los ingresos (≈ **€225 a €600**) a la alimentación es un buen punto de partida. Dentro de ese límite, la predefinición de lo que vas a comprar ayuda a evitar “compras impulsivas” y a adquirir artículos que aún tienes en casa.
 
 ## Haz una lista y síguela al pie de la letra
 
 La lista de compras es tu mapa del tesoro. Cuando tienes el papel o la app abierta, cada paso en el pasillo tiene un objetivo. Si aparece una promoción del 20 % en un producto que no está en la lista, pregúntate a ti mismo: “¿Realmente lo necesito?”
 
-![Faça lista e siga à risca](/images/posts/como-economizar-no-supermercado-em-2026-dicas-reais-2.webp)
+![Haz la lista y síguela al pie de la letra](/images/posts/como-economizar-no-supermercado-em-2026-dicas-reais-2.webp)
 
-**Consejo práctico:** antes de salir, anota el precio máximo que estás dispuesto a pagar por cada artículo. Por ejemplo, para arroz puedes fijar €4, para pechuga de pollo €3. Cuando encuentres el producto, compara el [valor](/es/glossario/es-valor-financiero) real con el límite. Si está por encima, déjalo pasar – siempre habrá otra oportunidad.
+**Consejo práctico:** antes de salir, anota el precio máximo que estás dispuesto a pagar por cada artículo. Por ejemplo, para arroz puedes fijar **€4**, para pechuga de pollo **€3**. Cuando encuentres el producto, compara el [valor](/es/glossario/es-valor-financiero) real con el límite. Si está por encima, déjalo pasar – siempre habrá otra oportunidad.
 
 ## Apuesta por marcas propias
 
-Muchos supermercados ofrecen líneas de marcas propias que brindan una calidad similar a las marcas líderes, pero con un precio hasta un 30 % menor. La diferencia suele estar en la inversión en marketing, no en la materia prima. Prueba sustituir el detergente de marca por uno de la marca propia; el [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado) puede ser de €1 a €2 por envase, lo que acumulado a lo largo de un año representa hasta €22.
+Muchos supermercados ofrecen líneas de marcas propias que brindan una calidad similar a las marcas líderes, pero con un precio hasta un 30 % menor. La diferencia suele estar en la inversión en marketing, no en la materia prima. Prueba sustituir el detergente de marca por uno de la marca propia; el [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado) puede ser de **€1 a €2** por envase, lo que acumulado a lo largo de un año representa hasta **€22**.
 
 Vale la pena consultar la tabla de precios en el sitio del propio supermercado o usar apps de [comparación](/es/posts/es-prevision-privada-2026-vale-la-pena-guia-practica) de precios, como **[FinMoovi](/es/posts/es-5-alternativas-al-mobills-en-2026)** – muestra las opciones más baratas al lado de tu lista.
 
 ## Usa cupones y programas de fidelidad
 
-La mayoría de las cadenas de supermercados tienen programas de puntos o tarjetas de fidelidad. Cada compra genera créditos que pueden canjearse por descuentos o productos gratuitos. Si tu carrito totaliza €45, un programa que devuelve el 2 % en [crédito](/es/glossario/es-credito) genera €1 de retorno inmediato. No es mucho, pero sumado a otras estrategias, esos valores se acumulan.
+La mayoría de las cadenas de supermercados tienen programas de puntos o tarjetas de fidelidad. Cada compra genera créditos que pueden canjearse por descuentos o productos gratuitos. Si tu carrito totaliza **€45**, un programa que devuelve el 2 % en [crédito](/es/glossario/es-credito) genera **€1** de retorno inmediato. No es mucho, pero sumado a otras estrategias, esos valores se acumulan.
 
-![Use cupons e programas de fidelidade](/images/posts/como-economizar-no-supermercado-em-2026-dicas-reais-4.webp)
+![Usa cupones y programas de fidelidad](/images/posts/como-economizar-no-supermercado-em-2026-dicas-reais-4.webp)
 
-Además, sitios de cupones (por ejemplo, Cuponeria) frecuentemente ofrecen códigos para descuentos en artículos específicos. Antes de finalizar la compra, haz una rápida búsqueda; el esfuerzo de cinco minutos puede generar hasta €5 de ahorro.
+Además, sitios de cupones (por ejemplo, Cuponeria) frecuentemente ofrecen códigos para descuentos en artículos específicos. Antes de finalizar la compra, haz una rápida búsqueda; el esfuerzo de cinco minutos puede generar hasta **€5** de ahorro.
 
 ## Evita compras impulsivas
 
@@ -56,7 +56,7 @@ En el supermercado, los pasillos de dulces y bebidas son trampas perfectas. Si t
 
 Solo necesitas coger papel y bolígrafo (o abrir la [app de finanzas](/es/posts/es-planilla-de-gastos-cuando-ella-deja-de-funcionar)) ahora mismo, listar lo que falta y definir un límite de precio para cada artículo. En la próxima visita al mercado, sigue la lista, prefiere marcas propias y usa el programa de fidelidad. La diferencia al final del mes aparecerá en el extracto y, lo más importante, en tu bolsillo.
 
-![Comece hoje](/images/posts/como-economizar-no-supermercado-em-2026-dicas-reais-6.webp)
+![Empieza hoy](/images/posts/como-economizar-no-supermercado-em-2026-dicas-reais-6.webp)
 
 ---
 

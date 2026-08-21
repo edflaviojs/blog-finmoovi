@@ -28,8 +28,8 @@ No todas las tarjetas ofrecen la misma tasa de retorno. Algunas dan 1,5 % en t
 
 ![Escolha o cartão certo e combine benefícios](/images/posts/como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re-2.webp)
 
-- **Si tu salario está entre €540 y €900** y la mayor parte de los [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo) son en alimentación y transporte, opta por una tarjeta que ofrezca 4 % de cashback en supermercados y 2 % en estaciones.
-- **Para quien gana entre €1.080 y €1.440**, vale la pena considerar una tarjeta premium que devuelva 3 % en todas las compras, aunque la anualidad sea mayor, porque el volumen de gasto lo compensa.
+- **Si tu salario está entre €1.500 y €2.000** y la mayor parte de los [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo) son en alimentación y transporte, opta por una tarjeta que ofrezca 4 % de cashback en supermercados y 2 % en estaciones.
+- **Para quien gana entre €2.500 y €4.000**, vale la pena considerar una tarjeta premium que devuelva 3 % en todas las compras, aunque la anualidad sea mayor, porque el volumen de gasto lo compensa.
 
 **Consejo práctico:** antes de abrir la cuenta, haz un cálculo rápido de la anualidad versus el cashback esperado. Si la anualidad es de €22 al año, necesitas generar al menos €720 en gastos con un 3 % de retorno para que el beneficio supere el costo.
 
@@ -37,11 +37,11 @@ No todas las tarjetas ofrecen la misma tasa de retorno. Algunas dan 1,5 % en t
 
 Muchas personas simplemente usan el [crédito](/es/glossario/es-credito) devuelto para pagar la factura de la tarjeta. Eso elimina el beneficio inmediato, pero pierde la oportunidad de crear una reserva. Reserva el cashback en una cuenta separada – puede ser una cuenta corriente con rendimiento automático o una cuenta digital que ofrezca rendimiento del 100 % de la **tasa interbancaria**.
 
-- Salario mensual: €810
-- Gastos mensuales con tarjeta: €360 (supermercado, combustible, delivery)
-- Cashback medio: 3 % → €11
+- Salario mensual: €2.100
+- Gastos mensuales con tarjeta: €900 (supermercado, combustible, delivery)
+- Cashback medio: 3 % → €27
 
-Al depositar esos €11 en una cuenta de rendimiento, acumulas €130 al final de un año, sin ningún esfuerzo extra. Ese monto puede ser la primera cuota de tu [fondo de emergencia](/es/glossario/es-fondo-de-emergencia).
+Al depositar esos €27 en una cuenta de rendimiento, acumulas €321 al final de un año, sin ningún esfuerzo extra. Ese monto puede ser la primera cuota de tu [fondo de emergencia](/es/glossario/es-fondo-de-emergencia).
 
 ## Usa el cashback para “pagar deudas” de forma inteligente
 

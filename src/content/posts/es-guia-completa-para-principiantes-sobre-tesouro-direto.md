@@ -32,9 +32,9 @@ Otra ventaja es la [liquidez](/es/glossario/es-liquidez). Usted puede rescatar s
 ## Tipos de Títulos
 Existen varios tipos de títulos disponibles en los bonos del gobierno, cada uno con sus características y plazos. Algunos de los más comunes incluyen:
 
-* Bonos del gobierno a corto plazo (LTN): títulos con plazos de 1 a 10 años y intereses fijos.
-* Bonos del gobierno indexados (NTN): títulos con plazos de 1 a 30 años y intereses fijos o variables.
-* Bonos bancarios exentos de impuestos (LCI) con índice de [inflación](/es/glossario/es-inflacion): títulos con plazos de 1 a 5 años y intereses fijos más una corrección por inflación.
+* Bonos del gobierno a corto plazo: títulos con plazos de 1 a 10 años y intereses fijos.
+* Bonos del gobierno indexados: títulos con plazos de 1 a 30 años y intereses fijos o variables.
+* Bonos bancarios exentos de impuestos con índice de [inflación](/es/glossario/es-inflacion): títulos con plazos de 1 a 5 años y intereses fijos más una corrección por inflación.
 
 Por ejemplo, si usted invierte €900 en un bono del gobierno a corto plazo con plazo de 5 años y intereses del 6% anual, usted recibirá €1.204,40 después del vencimiento, considerando intereses compuestos anualmente.
 
