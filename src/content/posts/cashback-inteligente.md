@@ -4,6 +4,7 @@ description: >-
   Aprenda a usar cashback de forma inteligente e economize dinheiro em compras
   do dia a dia.
 image: /images/posts/cashback-inteligente.webp
+imageAlt: "Caderno marrom, calculadora, moedas e planta verde sobre fundo branco."
 category: dicas
 locale: pt
 tags:

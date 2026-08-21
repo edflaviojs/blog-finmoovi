@@ -5,6 +5,7 @@ description: >-
   balance up‑to‑date, even offline.
 tickerHeadline: Missing expenses?
 image: /images/posts/cansado-de-anotar-cada-gasto-a-mao-e-perder-a-nocao-do-seu.webp
+imageAlt: "Smiling family using smartphones and tablet at a table"
 category: ferramentas
 locale: en
 tags:

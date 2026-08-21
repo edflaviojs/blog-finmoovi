@@ -5,6 +5,7 @@ description: >-
   Dia das Crianças sem apertar o orçamento.
 tickerHeadline: O truque que cabe no bolso
 image: /images/posts/7-passos-praticos-para-guardar-dinheiro-para-o-dia-das.webp
+imageAlt: "Carteira marrom, calculadora, moedas e plantas sobre fundo branco."
 category: orcamento
 locale: pt
 tags:

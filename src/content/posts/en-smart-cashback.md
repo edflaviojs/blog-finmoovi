@@ -4,6 +4,7 @@ description: >-
   Learn how to use cashback intelligently and save money on your daily
   purchases.
 image: /images/posts/cashback-inteligente.webp
+imageAlt: "Brown leather wallet, calculator, scattered coins, and potted plant on white surface."
 category: dicas
 locale: en
 tags:

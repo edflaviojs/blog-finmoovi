@@ -5,6 +5,7 @@ description: >-
   mantém seu saldo sempre atualizado, mesmo offline.
 tickerHeadline: Gastos que não aparecem?
 image: /images/posts/cansado-de-anotar-cada-gasto-a-mao-e-perder-a-nocao-do-seu.webp
+imageAlt: "Família sorridente usando smartphones e tablet em mesa com cadernos e planta."
 category: ferramentas
 locale: pt
 tags:

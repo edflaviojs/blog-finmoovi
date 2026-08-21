@@ -5,6 +5,7 @@ description: >-
   del Niño sin apretar el presupuesto.
 tickerHeadline: El truco que cabe en el bolsillo
 image: /images/posts/7-passos-praticos-para-guardar-dinheiro-para-o-dia-das.webp
+imageAlt: "Cartera marrón, calculadora y monedas sobre fondo blanco con ramas verdes."
 category: orcamento
 locale: es
 tags:
