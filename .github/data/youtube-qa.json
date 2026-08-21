@@ -430,5 +430,23 @@
     ],
     "veredito": "1. **O LOOP — 9/10**  \nPrimeiro e último quadro são praticamente iguais: mesmo fundo, composição e frase **“O gás pode acabar”**. É uma ótima base para loop. Pelos quadros, não dá para saber se a transição entre eles está realmente imperceptível.\n\n2. **A FAIXA DE BAIXO — 6/10**  \nAs legendas aparecem bem baixas em vários quadros, especialmente **2,3s, 4,5s, 6,8s, 9s, 11,3s e 13,5s**. Não estão cortadas, mas ficam numa zona de risco para a interface do Shorts/Reels.\n\n3. **TEXTO POR CIMA DE TEXTO — 8/10**  \nNão vejo frases claramente sobrepostas nem palavras cortadas. Os destaques coloridos sobre algumas palavras funcionam. Há, porém, momentos em que o texto fica visualmente apertado.\n\n4. **LEGIBILIDADE — 8/10**  \nOs textos principais são grandes, fortes e com bom contraste. As legendas menores embaixo são o ponto fraco: palavras não destacadas ficam com pouco contraste sobre o fundo roxo.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — 6/10**  \nHá bastante espaço vazio, principalmente na metade inferior dos quadros com título. O fundo tem textura e elementos gráficos, mas ainda sobra área demais sem informação.\n\n6. **COERÊNCIA — 9/10**  \nMuito consistente visualmente: mesma identidade, fundo, logo, tipografia e linguagem. A sequência também parece construir uma fala: **“O gás pode acabar” → situação → “Agora eu confiro” → “olho o botijão” → “Se você cozinha...” → “acaba.”**\n\n7. **TESTE CENTRAL — 6/10**  \n**Parece mais um vídeo de motion design do que slides, mas os quadros isolados ainda têm cara de cards animados**, principalmente porque a composição se repete bastante.\n\nNOTA GERAL: 7.5\nPROBLEMA 1: As legendas estão baixas demais em vários quadros, principalmente em 2,3s–13,5s.\nPROBLEMA 2: Há áreas grandes e pouco aproveitadas na parte inferior dos quadros.\nPROBLEMA 3: As legendas pequenas e cinzas perdem contraste no fundo roxo.\nPRIMEIRA COISA A MUDAR: Subir todas as legendas para uma área segura e aumentar um pouco seu tamanho/contraste.",
     "quando": "2026-08-20T05:11:50.603Z"
+  },
+  {
+    "slug": "loop-conta-so-das-contas-ninguem-fala",
+    "formato": "loop16",
+    "nota": 7,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      2.1,
+      4.3,
+      6.4,
+      8.6,
+      10.7,
+      12.9,
+      15
+    ],
+    "veredito": "**1. O LOOP — Nota: 3/10**  \nO primeiro quadro mostra “Conta única me pegou” e o último também, mas não parece ser exatamente a mesma cena: muda o contexto e a posição da narrativa. Pode funcionar como repetição de frase, mas não como loop imperceptível.\n\n**2. A FAIXA DE BAIXO — Nota: 8/10**  \nA maior parte das informações importantes está acima da área inferior. Alguns textos pequenos ficam perto da parte de baixo, mas não parecem cortados.\n\n**3. TEXTO POR CIMA DE TEXTO — Nota: 6/10**  \nHá momentos em que a legenda inferior fica visualmente próxima do texto principal. Não parece haver corte grave, mas existe risco de poluição.\n\n**4. LEGIBILIDADE — Nota: 8/10**  \nO texto principal é grande e tem bom contraste. As legendas menores embaixo podem ficar difíceis em telas pequenas.\n\n**5. A TELA ESTÁ VIVA OU VAZIA? — Nota: 6/10**  \nAlguns quadros têm muito espaço vazio no fundo. O visual é bonito, mas falta mais elemento visual contando a história.\n\n**6. COERÊNCIA — Nota: 8/10**  \nOs quadros parecem pertencer ao mesmo vídeo: mesma identidade visual, cores e tema. A sequência conta uma evolução.\n\n**7. TESTE CENTRAL — Nota: 7/10**  \nParece mais um vídeo animado do que slides, mas alguns momentos passam sensação de card parado porque há pouca mudança visual.\n\nNOTA GERAL: 7  \nPROBLEMA 1: O loop não fecha perfeitamente: quadro 0.1s e 15s não parecem a mesma cena, apesar da frase repetida.  \nPROBLEMA 2: Quadros com muito espaço vazio e pouca ação visual, principalmente nos momentos do gráfico.  \nPROBLEMA 3: Legendas inferiores pequenas podem perder força no celular.  \nPRIMEIRA COISA A MUDAR: Fazer o último quadro terminar exatamente na mesma composição do primeiro para criar um loop invisível.",
+    "quando": "2026-08-21T05:08:28.237Z"
   }
 ]
