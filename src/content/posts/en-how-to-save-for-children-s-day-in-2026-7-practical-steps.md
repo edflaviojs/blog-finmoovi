@@ -3,6 +3,7 @@ title: "How to Save for Children’s Day in 2026: 7 Practical Steps"
 description: "Discover 7 simple strategies to save money before Children’s Day and secure gifts without stretching your budget."
 tickerHeadline: "The trick that saves your wallet"
 image: "/images/posts/como-economizar-para-o-dia-das-criancas-ja-em-2026-7-passos.webp"
+imageAlt: "Yellow and blue abstract curved shapes on a white background."
 category: "orcamento"
 locale: "en"
 tags: ["Children's Day savings","financial planning","FinMoovi","savings goals","conscious shopping","expense control","affordable Children’s Day","economical gifts for kids"]

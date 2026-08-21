@@ -4,6 +4,7 @@ definition: "O que é controle de gastos e como isso aparece no seu dia a dia �
 title: "controle de gastos - Glossário Financeiro"
 description: "O que é controle de gastos e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/controle-de-gastos.webp"
+imageAlt: "Moedas douradas empilhadas, seta ascendente, balança e planta crescendo em pote de vidro."
 category: "basico"
 tags: ["controle de gastos", "glossário", "finanças"]
 author: "FinMoovi"

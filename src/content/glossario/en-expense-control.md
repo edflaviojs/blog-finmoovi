@@ -4,6 +4,7 @@ definition: "What Expense control is and how it shows up in your everyday money 
 title: "Expense control - Financial Glossary"
 description: "What Expense control is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/controle-de-gastos.webp"
+imageAlt: "Gold coins, upward arrow, scale, and jar with plant on blue background."
 category: "basico"
 tags: ["Expense control", "glossary", "finance"]
 author: "FinMoovi"

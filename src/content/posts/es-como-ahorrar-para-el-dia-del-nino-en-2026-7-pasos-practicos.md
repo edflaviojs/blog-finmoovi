@@ -3,6 +3,7 @@ title: "Cómo ahorrar para el Día del Niño en 2026: 7 pasos prácticos"
 description: "Descubre 7 estrategias simples para ahorrar antes del Día del Niño y asegurar regalos sin apretar el presupuesto."
 tickerHeadline: "El truco que salva tu bolsillo"
 image: "/images/posts/como-economizar-para-o-dia-das-criancas-ja-em-2026-7-passos.webp"
+imageAlt: "Forma abstracta ondulada en amarillo y azul sobre fondo blanco."
 category: "orcamento"
 locale: "es"
 tags: ["ahorro Día del Niño","planificación financiera","FinMoovi","metas de ahorro","compras conscientes","control de gastos","Día del Niño barato","regalo económico niños"]

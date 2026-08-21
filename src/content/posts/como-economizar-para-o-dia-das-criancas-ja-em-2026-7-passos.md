@@ -3,6 +3,7 @@ title: "Como economizar para o Dia das Crianças já em 2026: 7 passos práticos
 description: "Descubra 7 estratégias simples para guardar dinheiro antes do Dia das Crianças e garantir presentes sem apertar o orçamento."
 tickerHeadline: "O truque que salva seu bolso"
 image: "/images/posts/como-economizar-para-o-dia-das-criancas-ja-em-2026-7-passos.webp"
+imageAlt: "Formas abstratas onduladas em amarelo e azul sobre fundo branco."
 category: "orcamento"
 locale: "pt"
 tags: ["economia Dia das Crianças","planejamento financeiro","FinMoovi","metas de poupança","compras conscientes","controle de despesas","dia das crianças barato","presente econômico crianças"]
