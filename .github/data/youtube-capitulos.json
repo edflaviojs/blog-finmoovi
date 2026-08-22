@@ -970,8 +970,130 @@
           "titulo": "Comece por aqui: Seu plano de ação"
         }
       ]
+    },
+    {
+      "videoId": "uyGKHehG_Ck",
+      "title": "Crie uma Assistente Financeira com Gemini (Foto, Áudio e Planilha) | Live #128",
+      "channel": "Domine a Inteligência Artificial  | Thiago Caliman",
+      "duracaoSeg": 2996,
+      "idioma": "pt",
+      "viewsPerDay": 454,
+      "vistoEm": "2026-08-22",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "Introdução: Sua Assistente Financeira com Gemini"
+        },
+        {
+          "seg": 88,
+          "titulo": "O que você vai aprender: Foto, Áudio e Planilha Grátis"
+        },
+        {
+          "seg": 187,
+          "titulo": "Caso Real: Controle de Fazenda e Notas Fiscais"
+        },
+        {
+          "seg": 332,
+          "titulo": "Os 4 Pilares para criar sua solução com IA"
+        },
+        {
+          "seg": 489,
+          "titulo": "Fluxo da Aula: Criando sem gastar R$ 1,00"
+        },
+        {
+          "seg": 633,
+          "titulo": "Gemini Canvas vs. Google AI Studio"
+        },
+        {
+          "seg": 767,
+          "titulo": "Passo a Passo: Ativando o Modo Canvas no Gemini"
+        },
+        {
+          "seg": 900,
+          "titulo": "Personalizando sua Assistente: O nome Janete Finchat"
+        },
+        {
+          "seg": 1048,
+          "titulo": "Teste Prático: Lançando despesas por texto e foto"
+        },
+        {
+          "seg": 1210,
+          "titulo": "Conexão Persistente: Dicas sobre Firebase e App Script"
+        },
+        {
+          "seg": 1394,
+          "titulo": "Como configurar sua Planilha no Google Sheets"
+        },
+        {
+          "seg": 1615,
+          "titulo": "O Caminho mais fácil: Usando o Google AI Studio"
+        },
+        {
+          "seg": 1685,
+          "titulo": "Criando a Aplicação Web via Comando de Voz"
+        },
+        {
+          "seg": 1811,
+          "titulo": "Autenticação e Integração Automática com Google Sheets"
+        },
+        {
+          "seg": 2035,
+          "titulo": "Diagnóstico de Gastos e Relatórios via Chat"
+        },
+        {
+          "seg": 2315,
+          "titulo": "Como corrigir erros na aplicação (Fix de Código)"
+        },
+        {
+          "seg": 2638,
+          "titulo": "Publicando e Compartilhando seu App Financeiro"
+        },
+        {
+          "seg": 2800,
+          "titulo": "Respondendo dúvidas da Comunidade e Encerramento"
+        }
+      ]
+    },
+    {
+      "videoId": "x5b2bJx7YH0",
+      "title": "Como Criar uma Planilha de Controle de Gastos no Planilhas Google",
+      "channel": "Trilhando Tecnologia",
+      "duracaoSeg": 740,
+      "idioma": "pt",
+      "viewsPerDay": 134,
+      "vistoEm": "2026-08-22",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "Introdução do vídeo"
+        },
+        {
+          "seg": 56,
+          "titulo": "Formatação e estilização"
+        },
+        {
+          "seg": 225,
+          "titulo": "Caixas de seleção"
+        },
+        {
+          "seg": 266,
+          "titulo": "Resumo geral de gastos"
+        },
+        {
+          "seg": 511,
+          "titulo": "Lista suspensa de categorias"
+        },
+        {
+          "seg": 583,
+          "titulo": "Resumo de gastos por categoria"
+        },
+        {
+          "seg": 704,
+          "titulo": "Conclusão do vídeo"
+        }
+      ]
     }
   ],
-  "atualizadoEm": "2026-08-21T04:29:10.321Z",
-  "total": 18
+  "atualizadoEm": "2026-08-22T04:23:23.012Z",
+  "total": 20
 }
