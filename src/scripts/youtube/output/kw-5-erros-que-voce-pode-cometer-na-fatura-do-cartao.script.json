@@ -1,0 +1,212 @@
+{
+  "slug": "kw-5-erros-que-voce-pode-cometer-na-fatura-do-cartao",
+  "term": "5 erros que você pode cometer na fatura do cartão",
+  "category": "mindset",
+  "keyword": "comete",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você comete algum desses *cinco erros* na fatura do cartão sem se dar conta?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ratoeira",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você comete algum desses cinco erros na fatura do cartão sem se dar conta? Eu já vi gente pagar quinhentos reais por mês sem perceber.",
+      "durationSec": 9.6,
+      "shots": [
+        {
+          "anchor": "comete",
+          "visual": {
+            "type": "statement",
+            "text": "5 erros escondidos"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "cinco",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          }
+        },
+        {
+          "anchor": "quinhentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          },
+          "sfx": "coin"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Isso acontece na correria. Compras esquecidas, assinaturas paradas, parcelas longas e cobranças que ninguém olha.",
+      "durationSec": 5.8,
+      "shots": [
+        {
+          "anchor": "correria",
+          "visual": {
+            "type": "icon",
+            "icon": "clock"
+          },
+          "sfx": "alert"
+        },
+        {
+          "anchor": "assinaturas",
+          "visual": {
+            "type": "statement",
+            "text": "Assinaturas esquecidas"
+          }
+        },
+        {
+          "anchor": "parcelas",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Esses cinco erros são assinatura sem uso, compra esquecida, muitas parcelas, cobrança errada e fatura sem conferir. Juntos, isso pode custar quinhentos reais por mês.",
+      "durationSec": 9.6,
+      "shots": [
+        {
+          "anchor": "cinco",
+          "visual": {
+            "type": "list",
+            "text": "5 erros do cartão"
+          }
+        },
+        {
+          "anchor": "assinatura",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          },
+          "sfx": "click"
+        },
+        {
+          "anchor": "fatura",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          }
+        },
+        {
+          "anchor": "quinhentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu somei minhas faturas no FinMoovi e a tela mostrou quinhentos reais em perdas no mês.",
+      "durationSec": 6.2,
+      "shots": [
+        {
+          "anchor": "somei",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Resumo das faturas e gastos acumulados"
+          },
+          "sfx": "keyboard"
+        },
+        {
+          "anchor": "tela",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          }
+        },
+        {
+          "anchor": "perdas",
+          "visual": {
+            "type": "chart",
+            "text": "Perdas no mês"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Esse número me fez querer olhar a minha conta também. Quer ver o seu? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "número",
+          "visual": {
+            "type": "statement",
+            "text": "Descubra seu número"
+          }
+        },
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "statement",
+            "text": "FinMoovi grátis"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Você evita esses erros na fatura e economiza. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 5.8,
+      "shots": [
+        {
+          "anchor": "evita",
+          "visual": {
+            "type": "icon",
+            "icon": "shield"
+          }
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Controle seu dinheiro"
+          },
+          "sfx": "sparkle"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja seus gastos escondidos",
+    "target": "app"
+  },
+  "totalDurationSec": 44.7
+}
