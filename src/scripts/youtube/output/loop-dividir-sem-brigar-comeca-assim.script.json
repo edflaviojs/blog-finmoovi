@@ -1,0 +1,117 @@
+{
+  "slug": "loop-dividir-sem-brigar-comeca-assim",
+  "formato": "loop16",
+  "term": "Dividir as contas sem brigar",
+  "category": "vida",
+  "keyword": "CASAL",
+  "situacao": "dividir-sem-brigar",
+  "gancho": "comeca-assim",
+  "ganchoFamilia": "começa assim",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "gangorra",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Quer aprender a dividir as contas? Começa assim.",
+      "durationSec": 2.9,
+      "shots": [
+        {
+          "anchor": "aprender",
+          "visual": {
+            "type": "statement",
+            "text": "Dividir as contas"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "dividir",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "gangorra"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Domingo, lá em casa, eu vi a gente brigando pelo boleto.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "Domingo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "gangorra"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "brigando",
+          "visual": {
+            "type": "statement",
+            "text": "Briga pelo boleto"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Eu anotei cada pagamento, e a conversa ficou calminha.",
+      "durationSec": 3.26,
+      "shots": [
+        {
+          "anchor": "anotei",
+          "visual": {
+            "type": "statement",
+            "text": "Tudo anotado"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "pagamento",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "gangorra"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Desde então, eu confiro tudo antes. Dividir as contas começa assim, lá em casa.",
+      "durationSec": 5.07,
+      "shots": [
+        {
+          "anchor": "confiro",
+          "visual": {
+            "type": "statement",
+            "text": "Começa assim em casa"
+          }
+        },
+        {
+          "anchor": "Dividir",
+          "visual": {
+            "type": "statement",
+            "text": "Dividir as contas"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.21
+}

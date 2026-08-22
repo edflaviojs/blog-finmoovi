@@ -160,5 +160,11 @@
     "gancho": "ninguem-fala",
     "turno": "noite",
     "em": "2026-08-21T05:09:21.324Z"
+  },
+  {
+    "situacao": "dividir-sem-brigar",
+    "gancho": "comeca-assim",
+    "turno": "manha",
+    "em": "2026-08-22T04:58:56.607Z"
   }
 ]
