@@ -484,5 +484,23 @@
     ],
     "veredito": "1. **O LOOP — Nota: 5/10**  \nO primeiro quadro e o último têm o mesmo estilo e tema (“Dividir as contas”), mas não parecem exatamente a mesma cena. O último mostra uma frase mais avançada, então o reinício pode ser percebido.\n\n2. **A FAIXA DE BAIXO — Nota: 9/10**  \nNão há informações importantes no terço inferior. O texto fica mais no centro/parte média, seguro para celular.\n\n3. **TEXTO POR CIMA DE TEXTO — Nota: 7/10**  \nHá alguns momentos em que legenda e destaque colorido ficam muito próximos, mas não parece haver frases totalmente sobrepostas. Alguns textos parecem cortados pela animação.\n\n4. **LEGIBILIDADE — Nota: 8/10**  \nAs letras principais são grandes e têm bom contraste. As legendas menores embaixo podem ficar pequenas em telas menores.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — Nota: 6/10**  \nAlguns quadros têm bastante espaço vazio roxo, principalmente quando aparece só texto e fundo. Falta mais elemento visual para prender atenção.\n\n6. **COERÊNCIA — Nota: 9/10**  \nOs quadros parecem pertencer ao mesmo vídeo: mesma identidade visual, mesma paleta e sequência lógica de explicação.\n\n7. **TESTE CENTRAL — Nota: 7/10**  \nParece mais um vídeo animado profissional do que slides, mas alguns momentos parados passam sensação de apresentação de telas.\n\nNOTA GERAL: 7\nPROBLEMA 1: O loop não fecha perfeitamente: quadro 0.1s (“Dividir as contas”) e quadro 17.8s (“Dividir as contas”) têm diferença de contexto e podem revelar o reinício.\nPROBLEMA 2: Quadro 5.1s e 12.7s têm muito espaço vazio, deixando a tela menos dinâmica.\nPROBLEMA 3: As legendas inferiores em alguns quadros parecem pequenas para consumo rápido no celular.\nPRIMEIRA COISA A MUDAR: Fazer o último quadro terminar exatamente igual ao primeiro, com a mesma composição e posição dos elementos.",
     "quando": "2026-08-22T05:02:02.631Z"
+  },
+  {
+    "slug": "loop-presente-de-natal-comeca-assim",
+    "formato": "loop16",
+    "nota": 6,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      2.4,
+      4.7,
+      7.1,
+      9.5,
+      11.8,
+      14.2,
+      16.5
+    ],
+    "veredito": "**1. O LOOP — Nota: 4/10**  \nO primeiro quadro (0.1s) e o último (16.5s) têm o mesmo tema e cenário, mas não mostram exatamente a mesma coisa. O último volta para “Lista de Natal mudou”, enquanto o primeiro começa com “Lista de Natal mudou” + outra frase. Dá para perceber a repetição.\n\n**2. A FAIXA DE BAIXO — Nota: 8/10**  \nA maior parte da informação está no centro. Não há texto importante colado na área inferior extrema que seria coberta pela interface.  \n\n**3. TEXTO POR CIMA DE TEXTO — Nota: 5/10**  \nHá vários quadros com palavras destacadas em cores diferentes e frases quebradas (“Quer aprender presentes?”, “vi a lista”, “tudo e meu”). Algumas composições parecem confusas e podem parecer texto sobreposto.\n\n**4. LEGIBILIDADE — Nota: 8/10**  \nO texto principal é grande e tem bom contraste. As palavras menores na parte inferior têm contraste menor e podem ser difíceis no celular.\n\n**5. A TELA ESTÁ VIVA OU VAZIA? — Nota: 6/10**  \nAlguns quadros ficam muito vazios no meio e dependem apenas do texto. Falta mais elemento visual contando a história.\n\n**6. COERÊNCIA — Nota: 7/10**  \nOs quadros parecem do mesmo vídeo, com identidade visual consistente. Porém, a sequência de frases parece quebrada e difícil de acompanhar.\n\n**7. TESTE CENTRAL — Nota: 5/10**  \nParece mais uma sequência de slides animados do que um vídeo profissional, porque quase todos os quadros são telas estáticas com texto.\n\nNOTA GERAL: 6  \nPROBLEMA 1: Falta um loop perfeito: o primeiro e o último quadro (0.1s e 16.5s) não encaixam naturalmente.  \nPROBLEMA 2: A narrativa visual fica fraca nos quadros 4.7s e 11.8s, onde aparecem apenas frases soltas sem avanço claro.  \nPROBLEMA 3: As frases menores e palavras destacadas em vários quadros deixam a leitura confusa.  \nPRIMEIRA COISA A MUDAR: Criar uma abertura e um encerramento visualmente idênticos para o reinício parecer contínuo.",
+    "quando": "2026-08-22T05:05:48.578Z"
   }
 ]
