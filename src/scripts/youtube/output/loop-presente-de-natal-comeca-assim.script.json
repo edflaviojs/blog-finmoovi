@@ -1,0 +1,117 @@
+{
+  "slug": "loop-presente-de-natal-comeca-assim",
+  "formato": "loop16",
+  "term": "O presente de Natal",
+  "category": "vida",
+  "keyword": "NATAL",
+  "situacao": "presente-de-natal",
+  "gancho": "comeca-assim",
+  "ganchoFamilia": "começa assim",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "fumaca",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Quer aprender presentes? Começa assim. Eu vi a lista lá.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "aprender",
+          "visual": {
+            "type": "statement",
+            "text": "Lista de Natal mudou"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "presentes",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu quase comprei tudo e meu dinheiro virou fumaça presentes.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "quase",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "comprei",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro virou fumaça"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "E aí percebi que agora separo antes da lista Natal.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "percebi",
+          "visual": {
+            "type": "statement",
+            "text": "Separei antes da lista"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "separo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Então eu aprendi presentes começam assim quando olho a lista de Natal.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "aprendi",
+          "visual": {
+            "type": "statement",
+            "text": "Aprendi com presentes"
+          }
+        },
+        {
+          "anchor": "presentes",
+          "visual": {
+            "type": "statement",
+            "text": "Lista de Natal mudou"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
