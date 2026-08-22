@@ -3,6 +3,7 @@ title: "Poupança vs CDB: qual vale mais a pena em 2026?"
 description: "Descubra se a poupança ou o CDB rende mais para seu dinheiro em 2026 e como usar o FinMoovi para decidir."
 tickerHeadline: "Qual rende mais: poupança ou CDB?"
 image: "/images/posts/poupanca-vs-cdb-qual-vale-mais-a-pena-em-2026.webp"
+imageAlt: "Moedas, calculadora e caderno marrom sobre superfície branca com ramos verdes."
 category: "investimentos"
 locale: "pt"
 tags: ["poupança","CDB","investimentos","finmoovi","comparação financeira","rendimento 2026","escolha de investimento","poupança vs cdb","onde guardar dinheiro"]

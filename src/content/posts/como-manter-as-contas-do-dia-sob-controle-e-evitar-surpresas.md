@@ -5,6 +5,7 @@ description: >-
   e ganhar tranquilidade financeira usando captura inteligente de notas.
 tickerHeadline: Domine suas contas diárias
 image: >-
+imageAlt: "Pai, mãe e filha sorrindo no sofá, usando tablets e laptop."
   /images/posts/como-manter-as-contas-do-dia-sob-controle-e-evitar-surpresas.webp
 category: investimentos
 locale: pt

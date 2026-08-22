@@ -3,6 +3,7 @@ title: "Ahorro vs Certificados de depósito: ¿qué vale más la pena en 2026?"
 description: "Descubre si el ahorro o los certificados de depósito rinden más en 2026 y cómo FinMoovi te ayuda a decidir."
 tickerHeadline: "¿Qué rinde más: ahorro o CD?"
 image: "/images/posts/poupanca-vs-cdb-qual-vale-mais-a-pena-em-2026.webp"
+imageAlt: "Calculadora, monedas, agenda marrón y plantas verdes sobre superficie blanca."
 category: "investimentos"
 locale: "es"
 tags: ["ahorro","certificados de depósito","inversiones","finmoovi","comparación financiera","rendimiento 2026","elección de inversión","ahorro vs certificados","dónde guardar dinero"]

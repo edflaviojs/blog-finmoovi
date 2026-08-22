@@ -5,6 +5,7 @@ description: >-
   práctica con FinMoovi.
 tickerHeadline: Financiación sin complicaciones
 image: >-
+imageAlt: "Mesa con carpeta marrón, monedas, teclado, tablet y plantas verdes."
   /images/posts/como-garantir-financiamento-para-seus-projetos-sem-dor-de-ca.webp
 category: orcamento
 locale: es

@@ -3,6 +3,7 @@ title: "Savings vs CD: Which Is Worth It in 2026?"
 description: "Find out whether a savings account or a CD gives better returns in 2026 and how FinMoovi can help you decide."
 tickerHeadline: "Which yields more: savings or CD?"
 image: "/images/posts/poupanca-vs-cdb-qual-vale-mais-a-pena-em-2026.webp"
+imageAlt: "Brown wallet, silver calculator, scattered coins, and green branches on white marble."
 category: "investimentos"
 locale: "en"
 tags: ["savings","CD","investments","FinMoovi","financial comparison","2026 returns","investment choice","savings vs CD","where to keep money"]

@@ -5,6 +5,7 @@ description: >-
   gain financial peace of mind with smart note capture.
 tickerHeadline: Master Your Daily Expenses
 image: >-
+imageAlt: "Family on beige sofa using tablets and laptop, with potted plant on wall."
   /images/posts/como-manter-as-contas-do-dia-sob-controle-e-evitar-surpresas.webp
 category: investimentos
 locale: en
