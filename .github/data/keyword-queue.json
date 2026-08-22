@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T09:18:22.270Z",
+  "updatedAt": "2026-08-22T11:10:39.902Z",
   "sourceCursor": 1,
   "entries": [
     {
@@ -325,9 +325,11 @@
       "category": "glossario",
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "used",
       "addedAt": "2026-07-27T11:01:33.052Z",
-      "finmooviHook": "O planejamento mensal transforma metas em limites por categoria que você acompanha dia a dia."
+      "finmooviHook": "O planejamento mensal transforma metas em limites por categoria que você acompanha dia a dia.",
+      "usedAt": "2026-08-22T11:10:39.902Z",
+      "usedBy": "glossario-auto-diario"
     },
     {
       "keyword": "custo de vida",
