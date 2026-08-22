@@ -1,7 +1,7 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-08-21T05:29:26.558Z
-**Posts:** 327 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 48
+**Gerado em:** 2026-08-22T05:23:50.784Z
+**Posts:** 336 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 50
 
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
@@ -22,6 +22,9 @@
 **como-diversificar-com-ativos-de-renda-variavel-em-2026.md**
 - _Em termos simples, o ganho ou a perda varia de acordo com a valorização ou desvalorização dos ativos, o que traz a possibilidade de retornos superiores ao longo do tempo, mas também implica maior [vol_
 - _**Rebalanceie trimestralmente** – ajuste a proporção entre renda fixa e variável de acordo com seu conforto frente à volatilidade._
+
+**como-economizar-para-o-dia-das-criancas-ja-em-2026-7-passos.md**
+- _Além disso, o hábito de definir metas claras está associado a maior taxa de sucesso na realização de objetivos financeiros, segundo a **Investopedia**._
 
 **como-escolher-fundos-de-investimento-em-2026-e-dar-o.md**
 - _**Rebalanceamento semestral** – Ajuste a proporção entre fundos de acordo com a performance e seu objetivo._
@@ -144,6 +147,9 @@
 
 **planilha-de-gastos-quando-ela-deixa-de-funcionar.md**
 - _Elas oferecem flexibilidade, são gratuitas e podem ser customizadas de acordo com as suas necessidades._
+
+**poupanca-vs-cdb-qual-vale-mais-a-pena-em-2026.md**
+- _Contudo, há **imposto de renda regressivo** (de 22,5% a 15% conforme o prazo) e, em alguns casos, **carência** para resgate, o que reduz a liquidez._
 
 **previdencia-privada-vs-investir-por-conta-propria-qual-vale.md**
 - _Esses planos são oferecidos por instituições financeiras e seguradoras, e podem ser personalizados de acordo com as necessidades e objetivos do investidor._
