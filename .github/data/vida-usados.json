@@ -178,5 +178,11 @@
     "gancho": "depois-de-anos",
     "turno": "manha",
     "em": "2026-08-23T05:00:53.831Z"
+  },
+  {
+    "situacao": "delivery-de-sexta",
+    "gancho": "depois-de-anos",
+    "turno": "noite",
+    "em": "2026-08-23T05:04:38.163Z"
   }
 ]

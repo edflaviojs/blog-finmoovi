@@ -1,0 +1,117 @@
+{
+  "slug": "loop-delivery-de-sexta-depois-de-anos",
+  "formato": "loop16",
+  "term": "O delivery de toda sexta",
+  "category": "vida",
+  "keyword": "DELIVERY",
+  "situacao": "delivery-de-sexta",
+  "gancho": "depois-de-anos",
+  "ganchoFamilia": "depois de anos",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ralo",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Depois de anos tentando, descobri isso. Eu vi meu delivery sexta",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "tentando",
+          "visual": {
+            "type": "statement",
+            "text": "Meu delivery virou hábito"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "descobri",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu cansava e gastava com jantar pelo aplicativo, sem perceber",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "cansava",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "gastava",
+          "visual": {
+            "type": "statement",
+            "text": "Jantar pelo aplicativo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então cortei o costume lá em casa e organizei",
+      "durationSec": 3.26,
+      "shots": [
+        {
+          "anchor": "cortei",
+          "visual": {
+            "type": "statement",
+            "text": "Mudei o costume de casa"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "costume",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Descobri isso quando parei meu delivery de sexta e cuidei melhor dele",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "Descobri",
+          "visual": {
+            "type": "statement",
+            "text": "Descobri isso de novo"
+          }
+        },
+        {
+          "anchor": "parei",
+          "visual": {
+            "type": "statement",
+            "text": "Meu delivery virou hábito"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
