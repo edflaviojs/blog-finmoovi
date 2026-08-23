@@ -1,22 +1,36 @@
 ---
-title: "Como transformar a bagunça das contas em controle visual em 2026"
-description: "Descubra um método prático para organizar finanças pessoais usando visualização e automação, sem números confusos. Comece agora e veja a diferença."
-tickerHeadline: "Sua conta sob controle em minutos"
-image: "/images/posts/como-transformar-a-bagunca-das-contas-em-controle-visual-em-.webp"
-imageAlt: "Três pessoas sorrindo em sala, analisando documentos e laptop sobre mesa branca."
-category: "dicas"
-locale: "pt"
-tags: ["organizar finanças pessoais","finanças pessoais","economia","dinheiro"]
-author: "FinMoovi"
-publishedAt: 2026-08-01
+title: Como transformar a bagunça das contas em controle visual em 2026
+description: >-
+  Descubra um método prático para organizar finanças pessoais usando
+  visualização e automação, sem números confusos. Comece agora e veja a
+  diferença.
+tickerHeadline: Sua conta sob controle em minutos
+image: >-
+  /images/posts/como-transformar-a-bagunca-das-contas-em-controle-visual-em-.webp
+category: dicas
+locale: pt
+tags:
+  - organizar finanças pessoais
+  - finanças pessoais
+  - economia
+  - dinheiro
+author: FinMoovi
+publishedAt: 2026-08-01T00:00:00.000Z
 readingTime: 5
 featured: true
-translationKey: "como-transformar-a-bagunca-das-contas-em-controle-visual-em"
-scope: "universal"
+translationKey: como-transformar-a-bagunca-das-contas-em-controle-visual-em
+scope: universal
 seo:
-  metaTitle: "Como transformar a bagunça das contas em controle visual em 2026"
-  metaDescription: "Descubra um método prático para organizar finanças pessoais usando visualização e automação, sem números confusos. Comece agora e veja a diferença."
-  keywords: ["organizar finanças pessoais","finanças pessoais","economia","dinheiro"]
+  metaTitle: Como transformar a bagunça das contas em controle visual em 2026
+  metaDescription: >-
+    Descubra um método prático para organizar finanças pessoais usando
+    visualização e automação, sem números confusos. Comece agora e veja a
+    diferença.
+  keywords:
+    - organizar finanças pessoais
+    - finanças pessoais
+    - economia
+    - dinheiro
 ---
 
 Imagine a cena: você acorda, abre a gaveta da mesa e se depara com um monte de notas fiscais, recibos de supermercado, extratos de cartão e aquele papel amassado que diz “conta de luz”. Enquanto tenta encontrar o último comprovante de pagamento, o relógio já avançou meia‑hora e a ansiedade já começou a pesar. Essa bagunça é o que chamamos de “desordem financeira”, e ela impede que você tenha clareza sobre onde o dinheiro realmente está indo.

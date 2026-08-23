@@ -1,22 +1,33 @@
 ---
-title: "How to Build Your Family Budget Using Excel and Apps"
-description: "Learn step‑by‑step how to create a family budget in Excel, integrate it with FinMoovi, and gain visual control of your finances effortlessly."
-tickerHeadline: "Turn Your Spreadsheet into an Ally"
-image: "/images/posts/como-montar-seu-orcamento-familiar-usando-excel-e-apps.webp"
-imageAlt: "Blurred orange and teal financial charts with glowing dots on a dark blue background."
-category: "dicas"
-locale: "en"
-tags: ["family budget excel","personal finance","savings","money"]
-author: "FinMoovi"
-publishedAt: 2026-08-13
+title: How to Build Your Family Budget Using Excel and Apps
+description: >-
+  Learn step‑by‑step how to create a family budget in Excel, integrate it with
+  FinMoovi, and gain visual control of your finances effortlessly.
+tickerHeadline: Turn Your Spreadsheet into an Ally
+image: /images/posts/como-montar-seu-orcamento-familiar-usando-excel-e-apps.webp
+category: dicas
+locale: en
+tags:
+  - family budget excel
+  - personal finance
+  - savings
+  - money
+author: FinMoovi
+publishedAt: 2026-08-13T00:00:00.000Z
 readingTime: 6
 featured: false
-translationKey: "como-montar-seu-orcamento-familiar-usando-excel-e-apps"
-scope: "universal"
+translationKey: como-montar-seu-orcamento-familiar-usando-excel-e-apps
+scope: universal
 seo:
-  metaTitle: "How to Build Your Family Budget Using Excel and Apps"
-  metaDescription: "Learn step‑by‑step how to create a family budget in Excel, integrate it with FinMoovi, and gain visual control of your finances effortlessly."
-  keywords: ["family budget excel","personal finance","savings","money"]
+  metaTitle: How to Build Your Family Budget Using Excel and Apps
+  metaDescription: >-
+    Learn step‑by‑step how to create a family budget in Excel, integrate it with
+    FinMoovi, and gain visual control of your finances effortlessly.
+  keywords:
+    - family budget excel
+    - personal finance
+    - savings
+    - money
 ---
 
 Imagine the scene: you get home after a full day of work, open the electricity bill, see that the amount has almost doubled the price of a daily coffee, and you still have the [credit](/en/glossario/en-credit)‑card statement flashing on your phone. Your heart tightens, your mind starts listing expenses that seem endless – rent, groceries, transportation, that streaming plan you don’t even remember signing up for. In the middle of this whirlwind, the feeling that money simply disappears is almost inevitable.

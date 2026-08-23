@@ -1,22 +1,33 @@
 ---
-title: "Cómo crear tu presupuesto familiar con Excel y apps"
-description: "Aprende paso a paso a crear tu presupuesto familiar en Excel, integrarlo con FinMoovi y controlar tus finanzas de forma visual y sencilla."
-tickerHeadline: "Convierte tu hoja en aliada"
-image: "/images/posts/como-montar-seu-orcamento-familiar-usando-excel-e-apps.webp"
-imageAlt: "Gráficos financieros desenfocados con líneas onduladas naranjas y azules sobre fondo oscuro."
-category: "dicas"
-locale: "es"
-tags: ["presupuesto familiar excel","finanzas personales","economía","dinero"]
-author: "FinMoovi"
-publishedAt: 2026-08-13
+title: Cómo crear tu presupuesto familiar con Excel y apps
+description: >-
+  Aprende paso a paso a crear tu presupuesto familiar en Excel, integrarlo con
+  FinMoovi y controlar tus finanzas de forma visual y sencilla.
+tickerHeadline: Convierte tu hoja en aliada
+image: /images/posts/como-montar-seu-orcamento-familiar-usando-excel-e-apps.webp
+category: dicas
+locale: es
+tags:
+  - presupuesto familiar excel
+  - finanzas personales
+  - economía
+  - dinero
+author: FinMoovi
+publishedAt: 2026-08-13T00:00:00.000Z
 readingTime: 6
 featured: false
-translationKey: "como-montar-seu-orcamento-familiar-usando-excel-e-apps"
-scope: "universal"
+translationKey: como-montar-seu-orcamento-familiar-usando-excel-e-apps
+scope: universal
 seo:
-  metaTitle: "Cómo crear tu presupuesto familiar con Excel y apps"
-  metaDescription: "Aprende paso a paso a crear tu presupuesto familiar en Excel, integrarlo con FinMoovi y controlar tus finanzas de forma visual y sencilla."
-  keywords: ["presupuesto familiar excel","finanzas personales","economía","dinero"]
+  metaTitle: Cómo crear tu presupuesto familiar con Excel y apps
+  metaDescription: >-
+    Aprende paso a paso a crear tu presupuesto familiar en Excel, integrarlo con
+    FinMoovi y controlar tus finanzas de forma visual y sencilla.
+  keywords:
+    - presupuesto familiar excel
+    - finanzas personales
+    - economía
+    - dinero
 ---
 
 Imagina la escena: llegas a casa después de un día entero de trabajo, abres la factura de la luz y ves que el importe ha subido casi el doble del precio de un café diario, y además tienes la notificación del [crédito](/es/glossario/es-credito) en la pantalla del móvil. El corazón se acelera, la mente empieza a enumerar gastos que parecen no acabar – alquiler, supermercado, transporte, ese plan de streaming que ni recuerdas haber suscrito. En medio de este torbellino, la sensación de que el dinero simplemente desaparece es casi inevitable.

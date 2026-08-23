@@ -1,22 +1,33 @@
 ---
-title: "Como montar seu orçamento familiar usando Excel e apps"
-description: "Descubra passo a passo como criar um orçamento familiar no Excel, integrar com o FinMoovi e ganhar controle visual das finanças sem complicação."
-tickerHeadline: "Transforme sua planilha em aliado"
-image: "/images/posts/como-montar-seu-orcamento-familiar-usando-excel-e-apps.webp"
-imageAlt: "Gráficos financeiros abstratos em laranja e azul sobre fundo escuro."
-category: "dicas"
-locale: "pt"
-tags: ["orçamento familiar excel","finanças pessoais","economia","dinheiro"]
-author: "FinMoovi"
-publishedAt: 2026-08-13
+title: Como montar seu orçamento familiar usando Excel e apps
+description: >-
+  Descubra passo a passo como criar um orçamento familiar no Excel, integrar com
+  o FinMoovi e ganhar controle visual das finanças sem complicação.
+tickerHeadline: Transforme sua planilha em aliado
+image: /images/posts/como-montar-seu-orcamento-familiar-usando-excel-e-apps.webp
+category: dicas
+locale: pt
+tags:
+  - orçamento familiar excel
+  - finanças pessoais
+  - economia
+  - dinheiro
+author: FinMoovi
+publishedAt: 2026-08-13T00:00:00.000Z
 readingTime: 6
 featured: true
-translationKey: "como-montar-seu-orcamento-familiar-usando-excel-e-apps"
-scope: "universal"
+translationKey: como-montar-seu-orcamento-familiar-usando-excel-e-apps
+scope: universal
 seo:
-  metaTitle: "Como montar seu orçamento familiar usando Excel e apps"
-  metaDescription: "Descubra passo a passo como criar um orçamento familiar no Excel, integrar com o FinMoovi e ganhar controle visual das finanças sem complicação."
-  keywords: ["orçamento familiar excel","finanças pessoais","economia","dinheiro"]
+  metaTitle: Como montar seu orçamento familiar usando Excel e apps
+  metaDescription: >-
+    Descubra passo a passo como criar um orçamento familiar no Excel, integrar
+    com o FinMoovi e ganhar controle visual das finanças sem complicação.
+  keywords:
+    - orçamento familiar excel
+    - finanças pessoais
+    - economia
+    - dinheiro
 ---
 
 Imagine a cena: você chega em casa depois de um dia inteiro de trabalho, abre a conta de energia, vê que o valor subiu quase duas vezes o preço de um café diário e ainda tem a fatura do cartão de [crédito](/glossario/credito) piscando na tela do celular. O coração aperta, a mente começa a listar despesas que parecem não ter fim – aluguel, supermercado, transporte, aquele plano de streaming que você nem lembra de ter assinado. No meio desse turbilhão, a sensação de que o dinheiro simplesmente desaparece é quase inevitável.
