@@ -4811,5 +4811,126 @@
         "publicaEmBR": "23/08 às 14h31"
       }
     }
+  },
+  "kw-5-erros-que-te-impedem-de-poupar-r-1-000-por-mes": {
+    "midias": {
+      "video": {
+        "id": "d158544e-1e29-46f4-b318-26b58aa4c366",
+        "name": "ZxPJYEpk7z.mp4",
+        "originalName": null,
+        "path": "https://media.help4desk.com/ZxPJYEpk7z.mp4",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capa": {
+        "id": "45291bf6-f2b8-416d-bae4-69ff86ebc76e",
+        "name": "gMVDxthhkf.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/gMVDxthhkf.jpeg",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capaLarga": {
+        "id": "06e62adc-3731-40ba-94c4-73204451a9e6",
+        "name": "Avw5g081oC.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/Avw5g081oC.jpeg",
+        "thumbnail": null,
+        "alt": null
+      },
+      "telegram": {
+        "media": {
+          "id": "04405e3e-6a55-4867-9e0b-f3565172468d",
+          "name": "tOyYs5gpBu.mp4",
+          "originalName": null,
+          "path": "https://media.help4desk.com/tOyYs5gpBu.mp4",
+          "thumbnail": null,
+          "alt": null
+        },
+        "bytes": 18088733,
+        "comprimido": true
+      }
+    },
+    "publicaEm": "2026-08-23T22:00:00.000Z",
+    "publicaEmBR": "23/08 às 19h00",
+    "agendadoEm": "2026-08-23T15:41:48.930Z",
+    "atualizadoEm": "2026-08-23T15:41:53.265Z",
+    "redes": {
+      "instagram": {
+        "postId": "cmt5z6ac1009xs390npxff0st",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-08-23T22:00:00.000Z",
+        "publicaEmBR": "23/08 às 19h00",
+        "midia": "o vídeo",
+        "caracteres": 666,
+        "limite": 2200
+      },
+      "facebook": {
+        "postId": "cmt5z6aui009ys390swx7h5rd",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-08-23T22:26:00.000Z",
+        "publicaEmBR": "23/08 às 19h26",
+        "midia": "o vídeo",
+        "caracteres": 436,
+        "limite": 63206
+      },
+      "linkedin-page": {
+        "postId": "cmt5z6b9x009zs390cb1ch008",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-08-23T22:43:00.000Z",
+        "publicaEmBR": "23/08 às 19h43",
+        "midia": "o vídeo",
+        "caracteres": 438,
+        "limite": 3000
+      },
+      "threads": {
+        "postId": "cmt5z6bov00a0s390nibc9r58",
+        "canal": "finmoovi",
+        "publicaEm": "2026-08-23T22:58:00.000Z",
+        "publicaEmBR": "23/08 às 19h58",
+        "midia": "o vídeo",
+        "caracteres": 118,
+        "limite": 500
+      },
+      "telegram": {
+        "postId": "cmt5z6c4k00a1s390mm3ut2m9",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-08-23T23:14:00.000Z",
+        "publicaEmBR": "23/08 às 20h14",
+        "midia": "o vídeo, numa cópia de 17.3 MB — o Telegram recusa acima de 20 MB quando vai buscar por endereço",
+        "caracteres": 306,
+        "limite": 4096
+      },
+      "pinterest": {
+        "postId": "cmt5z6cwx00a2s390itpqerez",
+        "canal": "finmoovi",
+        "publicaEm": "2026-08-23T23:31:00.000Z",
+        "publicaEmBR": "23/08 às 20h31",
+        "midia": "vídeo primeiro, capa depois — a ordem que o Pinterest exige",
+        "caracteres": 406,
+        "limite": 500
+      },
+      "bluesky": {
+        "postId": "cmt5z6dcq00a3s390eszjpm4h",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-08-23T23:47:00.000Z",
+        "publicaEmBR": "23/08 às 20h47",
+        "midia": "vai a capa DEITADA (o Bluesky não publica vídeo, e a em pé ficaria cortada no feed)",
+        "caracteres": 75,
+        "limite": 300
+      },
+      "instagram-story": {
+        "postId": "cmt5z6dmz00a4s390h1ohji5z",
+        "tipo": "vídeo",
+        "publicaEm": "2026-08-23T22:05:00.000Z",
+        "publicaEmBR": "23/08 às 19h05"
+      },
+      "facebook-story": {
+        "postId": "cmt5z6dss00a5s390oxyi0g3p",
+        "tipo": "vídeo",
+        "publicaEm": "2026-08-23T22:31:00.000Z",
+        "publicaEmBR": "23/08 às 19h31"
+      }
+    }
   }
 }
