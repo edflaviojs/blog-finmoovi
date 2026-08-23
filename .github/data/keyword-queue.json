@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T11:10:39.902Z",
+  "updatedAt": "2026-08-23T09:19:04.869Z",
   "sourceCursor": 1,
   "entries": [
     {
@@ -1019,9 +1019,11 @@
       "category": null,
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "used",
       "addedAt": "2026-08-04T15:02:40.427Z",
-      "finmooviHook": "enviado via /status 04/08"
+      "finmooviHook": "enviado via /status 04/08",
+      "usedAt": "2026-08-23T09:19:04.869Z",
+      "usedBy": "gerar-dicas-financeiras"
     },
     {
       "keyword": "supermercado economiza​",
