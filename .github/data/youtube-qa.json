@@ -520,5 +520,23 @@
     ],
     "veredito": "1. **O LOOP — Nota**  \nPrimeiro quadro (0.1s) e último (15s) têm o mesmo tema e fundo, mas não são a mesma cena. O início mostra “Meu plano mudou” e o final mostra a mesma frase, porém com contexto diferente (“saúde melhor”). O reinício pode ser percebido.\n\n2. **FAIXA DE BAIXO — Nota: 9/10**  \nNão há informação importante na área inferior da tela. O texto principal fica no centro, seguro para Shorts/Reels.\n\n3. **TEXTO POR CIMA DE TEXTO — Nota: 6/10**  \nHá alguns momentos com palavras destacadas sobre a frase (“descobri”, “do”, “melhor”), mas não chega a parecer erro grave. Alguns trechos ficam visualmente apertados.\n\n4. **LEGIBILIDADE — Nota: 8/10**  \nO texto é grande e tem bom contraste. Funciona no celular. Algumas frases menores poderiam ser um pouco maiores.\n\n5. **TELA VIVA OU VAZIA? — Nota: 6/10**  \nO fundo é bonito, mas há muito espaço vazio em vários quadros. Falta mais elemento visual ou movimento percebido para prender atenção.\n\n6. **COERÊNCIA — Nota: 8/10**  \nOs quadros parecem do mesmo vídeo, com identidade visual consistente. A sequência conta uma pequena história, mas alguns cortes parecem apenas troca de frase.\n\n7. **TESTE CENTRAL — Nota: 6/10**  \nParece mais uma sequência de slides animados do que um vídeo profissional, porque quase todos os quadros dependem de texto central parado.\n\nNOTA GERAL: 7  \nPROBLEMA 1: O loop não fecha perfeitamente: quadro 0.1s e quadro 15s não são a mesma imagem/cena.  \nPROBLEMA 2: Muitos quadros têm aparência de slide, com pouco elemento visual além do texto.  \nPROBLEMA 3: O final (“saúde melhor”) não prepara um retorno natural para o começo.  \nPRIMEIRA COISA A MUDAR: Fazer o último quadro visualmente idêntico ao primeiro, para criar um loop invisível.",
     "quando": "2026-08-23T05:03:54.017Z"
+  },
+  {
+    "slug": "loop-delivery-de-sexta-depois-de-anos",
+    "formato": "loop16",
+    "nota": 6,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      2.3,
+      4.7,
+      7,
+      9.4,
+      11.7,
+      14,
+      16.3
+    ],
+    "veredito": "**Análise dos quadros parados (0.1s → 16.3s)**\n\n**1. O LOOP — Nota: 3/10**  \nO primeiro quadro e o último não mostram a mesma coisa. O início tem “Meu delivery virou hábito” e o final repete essa frase, mas a posição e o contexto mudaram. Não parece um reinício invisível.\n\n**2. A FAIXA DE BAIXO — Nota: 8/10**  \nA parte inferior está relativamente livre. O texto fica mais no centro/baixo, mas não parece coberto pela interface do Shorts/Reels.\n\n**3. TEXTO POR CIMA DE TEXTO — Nota: 5/10**  \nHá alguns momentos com palavras destacadas sobre outras palavras (“descobri”, “delivery”, “jantar”), criando sensação de sobreposição. Não parece cortado, mas pode confundir rápido no celular.\n\n**4. LEGIBILIDADE — Nota: 7/10**  \nO texto principal é grande e tem bom contraste. As frases menores na parte inferior são mais difíceis de ler em uma tela pequena.\n\n**5. A TELA ESTÁ VIVA OU VAZIA? — Nota: 6/10**  \nExistem áreas grandes de fundo vazio. O visual é bonito, mas alguns quadros parecem parados demais, principalmente quando só há texto e espaço negativo.\n\n**6. COERÊNCIA — Nota: 8/10**  \nOs quadros parecem pertencer ao mesmo vídeo: mesma identidade visual, cores e tema. A sequência conta uma pequena história sobre mudança de hábito.\n\n**7. TESTE CENTRAL — Nota: 6/10**  \nParece mais uma sequência de slides animados do que um vídeo profissional, porque muitos quadros dependem apenas de texto aparecendo em fundos semelhantes.\n\nNOTA GERAL: 6  \nPROBLEMA 1: O loop não fecha bem: quadro 1 (0.1s) e quadro 8 (16.3s) não são idênticos, então a reinicialização fica perceptível.  \nPROBLEMA 2: Quadro 6 (11.7s) tem pouca informação visual e parece uma pausa vazia.  \nPROBLEMA 3: Quadros 2 e 3 (2.3s e 4.7s) têm palavras destacadas que podem deixar a leitura confusa.  \nPRIMEIRA COISA A MUDAR: Fazer o último quadro terminar exatamente no mesmo estado visual do primeiro para criar um loop invisível.",
+    "quando": "2026-08-23T05:07:18.827Z"
   }
 ]
