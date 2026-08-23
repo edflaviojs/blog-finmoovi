@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T09:19:04.869Z",
+  "updatedAt": "2026-08-23T11:10:51.746Z",
   "sourceCursor": 1,
   "entries": [
     {
@@ -336,9 +336,11 @@
       "category": "glossario",
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "used",
       "addedAt": "2026-07-27T11:01:33.052Z",
-      "finmooviHook": "Some seus gastos fixos e variáveis no fluxo de caixa e veja o custo real do seu mês."
+      "finmooviHook": "Some seus gastos fixos e variáveis no fluxo de caixa e veja o custo real do seu mês.",
+      "usedAt": "2026-08-23T11:10:51.746Z",
+      "usedBy": "glossario-auto-diario"
     },
     {
       "keyword": "parcelamento",
