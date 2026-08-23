@@ -1,5 +1,486 @@
 [
   {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/financaspessoais/comments/1vvt1aw/o_poder_de_organizar_as_finan%C3%A7as_toda_semana/",
+    "subreddit": "financaspessoais",
+    "title": "O poder de organizar as finanças toda semana",
+    "matchedKeywords": [
+      "gastos",
+      "investimento"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/como-criar-orcamento-pessoal",
+    "responded": false
+  },
+  {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/investimentos/comments/1vvw1r7/banco_bradesco_desconto_em_contasal%C3%A1rio_ap%C3%B3s/",
+    "subreddit": "investimentos",
+    "title": "Banco Bradesco — desconto em conta-salário após renegociação de dívidas",
+    "matchedKeywords": [
+      "dívida"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/como-sair-das-dividas",
+    "responded": false
+  },
+  {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/investimentos/comments/1vvv1j8/inicio_no_mercado_de_trabalho_independ%C3%AAncia/",
+    "subreddit": "investimentos",
+    "title": "Inicio no mercado de trabalho, independência financeira e vida adulta: me deem opiniões",
+    "matchedKeywords": [
+      "reserva de emergência",
+      "gastos",
+      "investimento"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/criar-reserva-de-emergencia",
+    "responded": false
+  },
+  {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/investimentos/comments/1vvh118/poupan%C3%A7as_filha_ppr/",
+    "subreddit": "investimentos",
+    "title": "Poupanças Filha / PPR",
+    "matchedKeywords": [
+      "poupança"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/diferenca-entre-investir-e-poupar",
+    "responded": false
+  },
+  {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/investimentos/comments/1vvg9r8/tesouro_selic_ou_tesouro_reserva_para_reserva_de/",
+    "subreddit": "investimentos",
+    "title": "Tesouro Selic ou Tesouro Reserva para reserva de emergência?",
+    "matchedKeywords": [
+      "reserva de emergência",
+      "investir"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/criar-reserva-de-emergencia",
+    "responded": false
+  },
+  {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/investimentos/comments/1vvff3k/em_uma_poss%C3%ADvel_crise_voc%C3%AAs_confiariam_mais_no/",
+    "subreddit": "investimentos",
+    "title": "Em uma possível crise, vocês confiariam mais no FGC ou no Tesouro Direto?",
+    "matchedKeywords": [
+      "tesouro direto",
+      "gastos",
+      "investimento"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/tesouro-direto-para-iniciantes",
+    "responded": false
+  },
+  {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/investimentos/comments/1vv7pym/mais_um_motivo_pra_ter_conta_em_banc%C3%A3o/",
+    "subreddit": "investimentos",
+    "title": "Mais um motivo pra ter conta em bancão",
+    "matchedKeywords": [
+      "poupança"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/diferenca-entre-investir-e-poupar",
+    "responded": false
+  },
+  {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/literaciafinanceira/comments/1vvmoc6/porfolio_aos_35_anos_opini%C3%B5es/",
+    "subreddit": "literaciafinanceira",
+    "title": "Porfolio aos 35 anos? Opiniões?",
+    "matchedKeywords": [
+      "investimento"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/montando-carteira-diversificada-com-r-500",
+    "responded": false
+  },
+  {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/literaciafinanceira/comments/1vvknu9/trading_212_vs_trading_republic_qual_preferem/",
+    "subreddit": "literaciafinanceira",
+    "title": "Trading 212 vs Trading republic qual preferem?",
+    "matchedKeywords": [
+      "poupança"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/diferenca-entre-investir-e-poupar",
+    "responded": false
+  },
+  {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/literaciafinanceira/comments/1vvh2lj/finan%C3%A7as_pessoais_estudante/",
+    "subreddit": "literaciafinanceira",
+    "title": "finanças pessoais estudante",
+    "matchedKeywords": [
+      "investir",
+      "poupar",
+      "dívida"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/montando-carteira-diversificada-com-r-500",
+    "responded": false
+  },
+  {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/literaciafinanceira/comments/1vvh0gq/poupan%C3%A7as_filha_ppr/",
+    "subreddit": "literaciafinanceira",
+    "title": "Poupanças Filha / PPR",
+    "matchedKeywords": [
+      "investimento",
+      "poupança"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/montando-carteira-diversificada-com-r-500",
+    "responded": false
+  },
+  {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/literaciafinanceira/comments/1vveji4/pagamento_do_imposto_das_maisvalias/",
+    "subreddit": "literaciafinanceira",
+    "title": "Pagamento do imposto das mais-valias.",
+    "matchedKeywords": [
+      "investimento"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/montando-carteira-diversificada-com-r-500",
+    "responded": false
+  },
+  {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/literaciafinanceira/comments/1vvds7k/site_rondapt/",
+    "subreddit": "literaciafinanceira",
+    "title": "Site Ronda.Pt",
+    "matchedKeywords": [
+      "investimento"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/montando-carteira-diversificada-com-r-500",
+    "responded": false
+  },
+  {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/literaciafinanceira/comments/1vvcs54/melhor_corretora_para_dividendos/",
+    "subreddit": "literaciafinanceira",
+    "title": "Melhor corretora para dividendos",
+    "matchedKeywords": [
+      "investir"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/montando-carteira-diversificada-com-r-500",
+    "responded": false
+  },
+  {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/literaciafinanceira/comments/1vv9ads/oitava_atualiza%C3%A7%C3%A3o_grande_de_agosto/",
+    "subreddit": "literaciafinanceira",
+    "title": "Oitava - atualização grande de agosto",
+    "matchedKeywords": [
+      "investimento"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/montando-carteira-diversificada-com-r-500",
+    "responded": false
+  },
+  {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/literaciafinanceira/comments/1vv7wpt/investimento_em_etf_de_reit/",
+    "subreddit": "literaciafinanceira",
+    "title": "Investimento em ETF de REIT",
+    "matchedKeywords": [
+      "investimento"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/montando-carteira-diversificada-com-r-500",
+    "responded": false
+  },
+  {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/personalfinance/comments/1vvz26t/sanity_check_on_my_plan/",
+    "subreddit": "personalfinance",
+    "title": "sanity check on my plan",
+    "matchedKeywords": [
+      "savings"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/diferenca-entre-investir-e-poupar",
+    "responded": false
+  },
+  {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/personalfinance/comments/1vvx2iq/medical_debt_and_apartment_collections/",
+    "subreddit": "personalfinance",
+    "title": "Medical Debt and Apartment Collections",
+    "matchedKeywords": [
+      "debt"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/como-sair-das-dividas",
+    "responded": false
+  },
+  {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/personalfinance/comments/1vvw1ts/im_confused_on_what_i_should_do_and_need_help/",
+    "subreddit": "personalfinance",
+    "title": "im confused on what i should do and need help",
+    "matchedKeywords": [
+      "expenses"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/como-criar-orcamento-pessoal",
+    "responded": false
+  },
+  {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/personalfinance/comments/1vvvhvc/trs_vs_orp_for_my_situation/",
+    "subreddit": "personalfinance",
+    "title": "TRS vs ORP for my situation",
+    "matchedKeywords": [
+      "expenses",
+      "debt"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/como-criar-orcamento-pessoal",
+    "responded": false
+  },
+  {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/personalfinance/comments/1vvueqb/hey_i_opened_up_a_utma_for_my_daughter_at/",
+    "subreddit": "personalfinance",
+    "title": "Hey! I opened up a UTMA for my daughter at Fidelity! Looking for some tips!",
+    "matchedKeywords": [
+      "investing"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/montando-carteira-diversificada-com-r-500",
+    "responded": false
+  },
+  {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/personalfinance/comments/1vvt5s7/tools_for_asset_management/",
+    "subreddit": "personalfinance",
+    "title": "Tools for asset management",
+    "matchedKeywords": [
+      "budget"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/metodo-50-30-20-para-salario-brasileiro",
+    "responded": false
+  },
+  {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/personalfinance/comments/1vvseq4/mobile_home_maybe_an_okay_idea_in_this_particular/",
+    "subreddit": "personalfinance",
+    "title": "Mobile home maybe an okay idea in this particular circumstance?",
+    "matchedKeywords": [
+      "debt"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/como-sair-das-dividas",
+    "responded": false
+  },
+  {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/personalfinance/comments/1vvr3tc/struggling_with_quitting_my_restaurant_job_at_20/",
+    "subreddit": "personalfinance",
+    "title": "Struggling with quitting my restaurant job at 20 while managing college and savings—need advice on letting go of the \"hustle\" guilt.",
+    "matchedKeywords": [
+      "budget",
+      "expenses",
+      "investing",
+      "savings"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/metodo-50-30-20-para-salario-brasileiro",
+    "responded": false
+  },
+  {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/personalfinance/comments/1vvqzz6/is_holding_1_years_worth_of_living_expenses_a/",
+    "subreddit": "personalfinance",
+    "title": "Is holding 1 year’s worth of living expenses a good hedge against a possible AI bubble?",
+    "matchedKeywords": [
+      "expenses"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/como-criar-orcamento-pessoal",
+    "responded": false
+  },
+  {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/personalfinance/comments/1vvq83x/monthly_savings_per_household/",
+    "subreddit": "personalfinance",
+    "title": "Monthly savings per household",
+    "matchedKeywords": [
+      "expenses",
+      "savings"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/como-criar-orcamento-pessoal",
+    "responded": false
+  },
+  {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/personalfinance/comments/1vvq47b/moving_to_nyc_buy_or_rent/",
+    "subreddit": "personalfinance",
+    "title": "Moving to NYC, Buy or Rent?",
+    "matchedKeywords": [
+      "debt"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/como-sair-das-dividas",
+    "responded": false
+  },
+  {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/FinancialPlanning/comments/1vvx6zr/cash_out_refi_rental_to_pay_off_debt_vs_few_years/",
+    "subreddit": "FinancialPlanning",
+    "title": "Cash out refi rental to pay off debt vs few years of aggressive debt pay down",
+    "matchedKeywords": [
+      "expenses",
+      "debt"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/como-criar-orcamento-pessoal",
+    "responded": false
+  },
+  {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/FinancialPlanning/comments/1vvvvs8/need_advice_on_what_to_do_with_settlement_money_i/",
+    "subreddit": "FinancialPlanning",
+    "title": "Need Advice on what to do with settlement money. I am lost on what course to take.",
+    "matchedKeywords": [
+      "debt"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/como-sair-das-dividas",
+    "responded": false
+  },
+  {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/FinancialPlanning/comments/1vvo0cn/are_these_two_etfs_reliable_for_long_term_hold_in/",
+    "subreddit": "FinancialPlanning",
+    "title": "Are these two ETF’s reliable for long term hold in a Roth IRA?",
+    "matchedKeywords": [
+      "investing"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/montando-carteira-diversificada-com-r-500",
+    "responded": false
+  },
+  {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/FinancialPlanning/comments/1vvede3/can_i_justify_getting_a_new_car_once_i_start_my/",
+    "subreddit": "FinancialPlanning",
+    "title": "Can I justify getting a new car once I start my new job despite trying to get out of debt?",
+    "matchedKeywords": [
+      "expenses",
+      "savings",
+      "debt"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/como-criar-orcamento-pessoal",
+    "responded": false
+  },
+  {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/FinancialPlanning/comments/1vv6fnx/is_this_health_savings_account_question_valid/",
+    "subreddit": "FinancialPlanning",
+    "title": "Is this health savings account question valid cash wise ?",
+    "matchedKeywords": [
+      "savings",
+      "debt"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/diferenca-entre-investir-e-poupar",
+    "responded": false
+  },
+  {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/povertyfinance/comments/1vw0dz5/the_emergency_side_of_starting_a_debt_management/",
+    "subreddit": "povertyfinance",
+    "title": "The emergency side of starting a debt management plan. Anyone experienced this?",
+    "matchedKeywords": [
+      "debt"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/como-sair-das-dividas",
+    "responded": false
+  },
+  {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/povertyfinance/comments/1vvzsbh/is_it_worth_trying_to_fight_an_eviction/",
+    "subreddit": "povertyfinance",
+    "title": "Is it worth trying to fight an eviction?",
+    "matchedKeywords": [
+      "savings"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/diferenca-entre-investir-e-poupar",
+    "responded": false
+  },
+  {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/povertyfinance/comments/1vvy6b8/is_refinancing_student_loans_actually_worth_it/",
+    "subreddit": "povertyfinance",
+    "title": "Is refinancing student loans actually worth it when money is tight?",
+    "matchedKeywords": [
+      "budget"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/metodo-50-30-20-para-salario-brasileiro",
+    "responded": false
+  },
+  {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/povertyfinance/comments/1vvxuzj/calling_tomorrow/",
+    "subreddit": "povertyfinance",
+    "title": "Calling Tomorrow",
+    "matchedKeywords": [
+      "debt"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/como-sair-das-dividas",
+    "responded": false
+  },
+  {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/povertyfinance/comments/1vvo49g/late_in_life_im_starting_over_financially_after/",
+    "subreddit": "povertyfinance",
+    "title": "Late in life, I’m starting over financially after losing my savings to a former partner. How did you recover?",
+    "matchedKeywords": [
+      "savings"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/diferenca-entre-investir-e-poupar",
+    "responded": false
+  },
+  {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/povertyfinance/comments/1vvjkw6/finally_getting_serious_about_moving_forward/",
+    "subreddit": "povertyfinance",
+    "title": "Finally Getting Serious About Moving Forward",
+    "matchedKeywords": [
+      "debt"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/como-sair-das-dividas",
+    "responded": false
+  },
+  {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/povertyfinance/comments/1vvc6lx/hello_from_debt_heads_podcast/",
+    "subreddit": "povertyfinance",
+    "title": "Hello from Debt Heads Podcast!",
+    "matchedKeywords": [
+      "debt"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/como-sair-das-dividas",
+    "responded": false
+  },
+  {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/povertyfinance/comments/1vvagra/small_savings_big_differences/",
+    "subreddit": "povertyfinance",
+    "title": "Small savings, big differences.",
+    "matchedKeywords": [
+      "expenses",
+      "savings"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/como-criar-orcamento-pessoal",
+    "responded": false
+  },
+  {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/povertyfinance/comments/1vv8m8y/post_group_job_interview/",
+    "subreddit": "povertyfinance",
+    "title": "Post group job interview.",
+    "matchedKeywords": [
+      "expenses"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/como-criar-orcamento-pessoal",
+    "responded": false
+  },
+  {
+    "foundAt": "2026-08-23",
+    "redditUrl": "https://reddit.com/r/povertyfinance/comments/1vv7izq/24f_and_i_feel_like_ive_avoided_learning_basic/",
+    "subreddit": "povertyfinance",
+    "title": "24F and I feel like I’ve avoided learning basic adult skills — looking for advice/stories from women who turned things around",
+    "matchedKeywords": [
+      "debt"
+    ],
+    "suggestedBlogPost": "https://blog.finmoovi.com/posts/como-sair-das-dividas",
+    "responded": false
+  },
+  {
     "foundAt": "2026-08-22",
     "redditUrl": "https://reddit.com/r/financaspessoais/comments/1vuhs8t/santo_de_casa_n%C3%A3o_faz_milagre/",
     "subreddit": "financaspessoais",
@@ -93,490 +574,6 @@
       "dívida"
     ],
     "suggestedBlogPost": "https://blog.finmoovi.com/posts/criar-reserva-de-emergencia",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-22",
-    "redditUrl": "https://reddit.com/r/investimentos/comments/1vuqjpx/taxas_do_tesouro_direto_est%C3%A3o_derretendo/",
-    "subreddit": "investimentos",
-    "title": "Taxas do tesouro direto estão derretendo",
-    "matchedKeywords": [
-      "tesouro direto"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/posts/tesouro-direto-para-iniciantes",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-22",
-    "redditUrl": "https://reddit.com/r/investimentos/comments/1vuqj4e/19_anos_invisto_desde_os_14_anos_relato/",
-    "subreddit": "investimentos",
-    "title": "19 anos, invisto desde os 14 anos (relato)",
-    "matchedKeywords": [
-      "investimento"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/posts/montando-carteira-diversificada-com-r-500",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-22",
-    "redditUrl": "https://reddit.com/r/investimentos/comments/1vupf34/o_que_minha_carteira_tem_a_dizer/",
-    "subreddit": "investimentos",
-    "title": "O que minha carteira tem a dizer?",
-    "matchedKeywords": [
-      "investir"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/posts/montando-carteira-diversificada-com-r-500",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-22",
-    "redditUrl": "https://reddit.com/r/investimentos/comments/1vung0i/ter_hiperfoco_em_investimento_na_hora_errada_mais/",
-    "subreddit": "investimentos",
-    "title": "Ter hiperfoco em investimento na hora errada mais te atrapalha do que te ajuda",
-    "matchedKeywords": [
-      "reserva de emergência",
-      "juros compostos",
-      "investimento",
-      "poupar"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/posts/criar-reserva-de-emergencia",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-22",
-    "redditUrl": "https://reddit.com/r/investimentos/comments/1vulvvk/investimentos_para_viajar/",
-    "subreddit": "investimentos",
-    "title": "investimentos para VIAJAR",
-    "matchedKeywords": [
-      "investimento"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/posts/montando-carteira-diversificada-com-r-500",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-22",
-    "redditUrl": "https://reddit.com/r/investimentos/comments/1vull9p/taxas_sobre_investimentos/",
-    "subreddit": "investimentos",
-    "title": "Taxas sobre investimentos",
-    "matchedKeywords": [
-      "investimento"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/posts/montando-carteira-diversificada-com-r-500",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-22",
-    "redditUrl": "https://reddit.com/r/investimentos/comments/1vulg6v/para_enfrentar_a_grita_por_novo_ajuste_fiscal/",
-    "subreddit": "investimentos",
-    "title": "Para enfrentar a grita por “novo ajuste fiscal”",
-    "matchedKeywords": [
-      "dívida"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/posts/como-sair-das-dividas",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-22",
-    "redditUrl": "https://reddit.com/r/investimentos/comments/1vuku1p/fracasso/",
-    "subreddit": "investimentos",
-    "title": "Fracasso",
-    "matchedKeywords": [
-      "investir"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/posts/montando-carteira-diversificada-com-r-500",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-22",
-    "redditUrl": "https://reddit.com/r/investimentos/comments/1vuj7va/carro_el%C3%A9trico_%C3%A9_um_bom_investimento_para_ser_uber/",
-    "subreddit": "investimentos",
-    "title": "Carro elétrico é um bom investimento para ser Uber?",
-    "matchedKeywords": [
-      "investimento"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/posts/montando-carteira-diversificada-com-r-500",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-22",
-    "redditUrl": "https://reddit.com/r/investimentos/comments/1vugtkm/consegui_juntar_20k_e_deixo_em_cdi/",
-    "subreddit": "investimentos",
-    "title": "Consegui juntar 20k e deixo em CDI",
-    "matchedKeywords": [
-      "investir"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/posts/montando-carteira-diversificada-com-r-500",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-22",
-    "redditUrl": "https://reddit.com/r/literaciafinanceira/comments/1vv4pdc/opini%C3%A3o_moradia_ch/",
-    "subreddit": "literaciafinanceira",
-    "title": "Opinião | Moradia - CH",
-    "matchedKeywords": [
-      "orçamento",
-      "investimento"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/posts/metodo-50-30-20-para-salario-brasileiro",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-22",
-    "redditUrl": "https://reddit.com/r/literaciafinanceira/comments/1vuupfd/conta_jovem/",
-    "subreddit": "literaciafinanceira",
-    "title": "Conta Jovem",
-    "matchedKeywords": [
-      "investimento",
-      "poupança"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/posts/montando-carteira-diversificada-com-r-500",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-22",
-    "redditUrl": "https://reddit.com/r/literaciafinanceira/comments/1vunu0j/aquisi%C3%A7%C3%A3o_de_carro_el%C3%A9trico/",
-    "subreddit": "literaciafinanceira",
-    "title": "Aquisição de carro elétrico",
-    "matchedKeywords": [
-      "poupar"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/posts/diferenca-entre-investir-e-poupar",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-22",
-    "redditUrl": "https://reddit.com/r/literaciafinanceira/comments/1vun4da/maisvalias/",
-    "subreddit": "literaciafinanceira",
-    "title": "Mais-Valias",
-    "matchedKeywords": [
-      "investimento"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/posts/montando-carteira-diversificada-com-r-500",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-22",
-    "redditUrl": "https://reddit.com/r/literaciafinanceira/comments/1vuc7nf/se_o_portugu%C3%AAs_mediano_descontasse_ao_longo_de_40/",
-    "subreddit": "literaciafinanceira",
-    "title": "Se o português mediano descontasse (ao longo de 40 anos) para um ETF SP500 em vez da S. Social, receberia 1 milhão de euros (em dinheiro de hoje) no dia da reforma",
-    "matchedKeywords": [
-      "juros compostos",
-      "investimento"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/ferramentas/calculadora-juros-compostos",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-22",
-    "redditUrl": "https://reddit.com/r/literaciafinanceira/comments/1vuah3v/pouparinvestir_filhos_menores/",
-    "subreddit": "literaciafinanceira",
-    "title": "Poupar/Investir - Filhos Menores",
-    "matchedKeywords": [
-      "investimento",
-      "poupança"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/posts/montando-carteira-diversificada-com-r-500",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-22",
-    "redditUrl": "https://reddit.com/r/personalfinance/comments/1vv52e5/investment_advice_for_inheritance/",
-    "subreddit": "personalfinance",
-    "title": "Investment advice for inheritance",
-    "matchedKeywords": [
-      "expenses",
-      "investing",
-      "debt"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/posts/como-criar-orcamento-pessoal",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-22",
-    "redditUrl": "https://reddit.com/r/personalfinance/comments/1vv4by3/gauging_my_financial_health/",
-    "subreddit": "personalfinance",
-    "title": "Gauging my financial health",
-    "matchedKeywords": [
-      "investing"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/posts/montando-carteira-diversificada-com-r-500",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-22",
-    "redditUrl": "https://reddit.com/r/personalfinance/comments/1vv3iwu/lower_paying_remote_role_or_higher_paying_in/",
-    "subreddit": "personalfinance",
-    "title": "Lower paying remote role or higher paying in person role that I would have to move for?",
-    "matchedKeywords": [
-      "expenses",
-      "savings"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/posts/como-criar-orcamento-pessoal",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-22",
-    "redditUrl": "https://reddit.com/r/personalfinance/comments/1vv1w0n/need_401k_roth_ira/",
-    "subreddit": "personalfinance",
-    "title": "Need 401k & Roth IRA?",
-    "matchedKeywords": [
-      "emergency fund"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/posts/criar-reserva-de-emergencia",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-22",
-    "redditUrl": "https://reddit.com/r/personalfinance/comments/1vv1nhe/filing_back_taxes_financial_advice/",
-    "subreddit": "personalfinance",
-    "title": "Filing back taxes + financial advice",
-    "matchedKeywords": [
-      "savings",
-      "debt"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/posts/diferenca-entre-investir-e-poupar",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-22",
-    "redditUrl": "https://reddit.com/r/personalfinance/comments/1vv0tdh/should_i_take_out_student_loans_for_my_graduate/",
-    "subreddit": "personalfinance",
-    "title": "Should I take out student loans for my graduate school?",
-    "matchedKeywords": [
-      "emergency fund",
-      "expenses",
-      "investing",
-      "savings",
-      "debt"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/posts/criar-reserva-de-emergencia",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-22",
-    "redditUrl": "https://reddit.com/r/personalfinance/comments/1vuzcn9/mom_is_still_getting_billed_by_hospital_after_my/",
-    "subreddit": "personalfinance",
-    "title": "Mom is still getting billed by hospital after my dad died 6 years ago.",
-    "matchedKeywords": [
-      "debt"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/posts/como-sair-das-dividas",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-22",
-    "redditUrl": "https://reddit.com/r/personalfinance/comments/1vuzbhg/i_have_a_debt_that_has_to_be_paid_tomorrow_im/",
-    "subreddit": "personalfinance",
-    "title": "I have a debt that has to be paid tomorrow, I’m lost what do I do.",
-    "matchedKeywords": [
-      "debt"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/posts/como-sair-das-dividas",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-22",
-    "redditUrl": "https://reddit.com/r/personalfinance/comments/1vuygu0/socal_fee_only_financial_planners_range_finance/",
-    "subreddit": "personalfinance",
-    "title": "SoCal fee only financial planners? range finance?",
-    "matchedKeywords": [
-      "savings"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/posts/diferenca-entre-investir-e-poupar",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-22",
-    "redditUrl": "https://reddit.com/r/personalfinance/comments/1vuxoz9/anything_else_to_consider/",
-    "subreddit": "personalfinance",
-    "title": "Anything else to consider?",
-    "matchedKeywords": [
-      "emergency fund",
-      "savings"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/posts/criar-reserva-de-emergencia",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-22",
-    "redditUrl": "https://reddit.com/r/personalfinance/comments/1vuwj71/budgeting_for_seasonal_jobs/",
-    "subreddit": "personalfinance",
-    "title": "Budgeting for seasonal jobs",
-    "matchedKeywords": [
-      "budget"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/posts/metodo-50-30-20-para-salario-brasileiro",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-22",
-    "redditUrl": "https://reddit.com/r/personalfinance/comments/1vuwfxp/too_much_in_hysa_now/",
-    "subreddit": "personalfinance",
-    "title": "Too much in HYSA now",
-    "matchedKeywords": [
-      "savings"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/posts/diferenca-entre-investir-e-poupar",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-22",
-    "redditUrl": "https://reddit.com/r/FinancialPlanning/comments/1vusb02/advice_on_buying_a_new_car/",
-    "subreddit": "FinancialPlanning",
-    "title": "Advice On Buying a New Car",
-    "matchedKeywords": [
-      "budget",
-      "savings"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/posts/metodo-50-30-20-para-salario-brasileiro",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-22",
-    "redditUrl": "https://reddit.com/r/FinancialPlanning/comments/1vulzom/23yrs_starting_a_new_careerlife_want_to_learn/",
-    "subreddit": "FinancialPlanning",
-    "title": "23yrs starting a new career/life want to learn financial planning to buy a house before 2030",
-    "matchedKeywords": [
-      "savings",
-      "debt"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/posts/diferenca-entre-investir-e-poupar",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-22",
-    "redditUrl": "https://reddit.com/r/FinancialPlanning/comments/1vuj7l0/rollover_ira_withdrawal_to_clear_debt/",
-    "subreddit": "FinancialPlanning",
-    "title": "Rollover IRA Withdrawal to Clear Debt?",
-    "matchedKeywords": [
-      "debt"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/posts/como-sair-das-dividas",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-22",
-    "redditUrl": "https://reddit.com/r/povertyfinance/comments/1vv1mrz/struggling_as_a_single_mom_what_can_i_do_next/",
-    "subreddit": "povertyfinance",
-    "title": "Struggling as a single mom, what can I do next?",
-    "matchedKeywords": [
-      "savings",
-      "debt"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/posts/diferenca-entre-investir-e-poupar",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-22",
-    "redditUrl": "https://reddit.com/r/povertyfinance/comments/1vuzvtt/i_have_a_debt_that_has_to_be_paid_tomorrow_im/",
-    "subreddit": "povertyfinance",
-    "title": "I have a debt that has to be paid tomorrow, I’m lost what do I do.",
-    "matchedKeywords": [
-      "debt"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/posts/como-sair-das-dividas",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-22",
-    "redditUrl": "https://reddit.com/r/povertyfinance/comments/1vutwla/finally_scored_a_second_job_to_bring_an_extra/",
-    "subreddit": "povertyfinance",
-    "title": "Finally scored a second job to bring an extra income, and my first job is declining my availability change.",
-    "matchedKeywords": [
-      "savings"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/posts/diferenca-entre-investir-e-poupar",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-22",
-    "redditUrl": "https://reddit.com/r/povertyfinance/comments/1vun2cd/easy_healthy_recipes_for_a_depressed_student/",
-    "subreddit": "povertyfinance",
-    "title": "Easy, healthy recipes for a depressed student?",
-    "matchedKeywords": [
-      "budget"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/posts/metodo-50-30-20-para-salario-brasileiro",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-22",
-    "redditUrl": "https://reddit.com/r/povertyfinance/comments/1vufwzc/looking_for_advice_i_feel_like_im_missing/",
-    "subreddit": "povertyfinance",
-    "title": "Looking for advice, I feel like I'm missing something",
-    "matchedKeywords": [
-      "savings",
-      "debt"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/posts/diferenca-entre-investir-e-poupar",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-22",
-    "redditUrl": "https://reddit.com/r/povertyfinance/comments/1vueulq/finally_caught_up_with_all_my_bills_havent_paid_a/",
-    "subreddit": "povertyfinance",
-    "title": "Finally caught up with all my bills! Haven’t paid a late fee in two consecutive cycles",
-    "matchedKeywords": [
-      "budget",
-      "debt"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/posts/metodo-50-30-20-para-salario-brasileiro",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-22",
-    "redditUrl": "https://reddit.com/r/povertyfinance/comments/1vuebaj/how_to_survive/",
-    "subreddit": "povertyfinance",
-    "title": "How to survive.",
-    "matchedKeywords": [
-      "debt"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/posts/como-sair-das-dividas",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-22",
-    "redditUrl": "https://reddit.com/r/povertyfinance/comments/1vu4e5r/comparison_is_making_me_have_really_ugly_feelings/",
-    "subreddit": "povertyfinance",
-    "title": "Comparison is making me have really ugly feelings",
-    "matchedKeywords": [
-      "savings"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/posts/diferenca-entre-investir-e-poupar",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-22",
-    "redditUrl": "https://reddit.com/r/povertyfinance/comments/1vtxgjj/10_grocery_haul_for_the_week/",
-    "subreddit": "povertyfinance",
-    "title": "$10 grocery haul for the week",
-    "matchedKeywords": [
-      "budget"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/posts/metodo-50-30-20-para-salario-brasileiro",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-21",
-    "redditUrl": "https://reddit.com/r/financaspessoais/comments/1vu4v13/d%C3%ADvidas_e_mais_d%C3%ADvidas/",
-    "subreddit": "financaspessoais",
-    "title": "Dívidas e mais dívidas",
-    "matchedKeywords": [
-      "dívida"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/posts/como-sair-das-dividas",
-    "responded": false
-  },
-  {
-    "foundAt": "2026-08-21",
-    "redditUrl": "https://reddit.com/r/financaspessoais/comments/1vtufgj/d%C3%ADvidas_de_cart%C3%A3o_de_cr%C3%A9dito_58k/",
-    "subreddit": "financaspessoais",
-    "title": "Dívidas de cartão de crédito (58k).",
-    "matchedKeywords": [
-      "gastos",
-      "dívida"
-    ],
-    "suggestedBlogPost": "https://blog.finmoovi.com/posts/como-criar-orcamento-pessoal",
     "responded": false
   }
 ]
