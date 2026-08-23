@@ -1,0 +1,215 @@
+{
+  "slug": "viral-4t_8St6xhPE",
+  "term": "Investir R$ 1000",
+  "category": "investimento",
+  "keyword": "Investir",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "*Você acha que investir mil reais não dá em nada?*"
+  },
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "foguete",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você acha que investir mil reais não dá em nada? Eu vejo muita gente deixando esse dinheiro parado.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "investir",
+          "visual": {
+            "type": "statement",
+            "text": "Mil reais podem começar"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "muita",
+          "visual": {
+            "type": "icon",
+            "icon": "money"
+          }
+        },
+        {
+          "anchor": "parado",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro parado não cresce"
+          },
+          "sfx": "alert"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu sei que a vida é corrida e esse dinheiro acaba ficando lá esquecido na conta.",
+      "durationSec": 6.2,
+      "shots": [
+        {
+          "anchor": "corrida",
+          "visual": {
+            "type": "icon",
+            "icon": "clock"
+          }
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "O dinheiro fica esquecido"
+          }
+        },
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          },
+          "sfx": "ding"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Só que mil reais parece pouco até a gente ver esse valor crescer.",
+      "durationSec": 5,
+      "shots": [
+        {
+          "anchor": "pouco",
+          "visual": {
+            "type": "number",
+            "text": "R$ 1.000"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "valor",
+          "visual": {
+            "type": "chart",
+            "text": "Crescimento do valor"
+          }
+        },
+        {
+          "anchor": "crescer",
+          "visual": {
+            "type": "counter",
+            "from": 1000,
+            "to": 1900,
+            "prefix": "R$"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei isso no FinMoovi e ele me mostrou mil e novecentos reais na tela.",
+      "durationSec": 5.8,
+      "shots": [
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Tela mostrando evolução do investimento"
+          },
+          "sfx": "click"
+        },
+        {
+          "anchor": "novecentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 1.900"
+          }
+        },
+        {
+          "anchor": "tela",
+          "visual": {
+            "type": "statement",
+            "text": "Resultado na tela"
+          },
+          "sfx": "sparkle"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "E aí você pode ver o seu também procurando o FinMoovi com sete dias grátis.",
+      "durationSec": 5.8,
+      "shots": [
+        {
+          "anchor": "pode",
+          "visual": {
+            "type": "statement",
+            "text": "Veja seu resultado"
+          }
+        },
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "icon",
+            "icon": "target"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Investir esses mil reais é cuidar melhor do que é seu. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "Investir",
+          "visual": {
+            "type": "statement",
+            "text": "Invista no que é seu"
+          }
+        },
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "number",
+            "text": "R$ 1.000"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "icon",
+            "icon": "shield"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja seu dinheiro crescer",
+    "target": "app"
+  },
+  "totalDurationSec": 36.6
+}
