@@ -502,5 +502,23 @@
     ],
     "veredito": "**1. O LOOP — Nota: 4/10**  \nO primeiro quadro (0.1s) e o último (16.5s) têm o mesmo tema e cenário, mas não mostram exatamente a mesma coisa. O último volta para “Lista de Natal mudou”, enquanto o primeiro começa com “Lista de Natal mudou” + outra frase. Dá para perceber a repetição.\n\n**2. A FAIXA DE BAIXO — Nota: 8/10**  \nA maior parte da informação está no centro. Não há texto importante colado na área inferior extrema que seria coberta pela interface.  \n\n**3. TEXTO POR CIMA DE TEXTO — Nota: 5/10**  \nHá vários quadros com palavras destacadas em cores diferentes e frases quebradas (“Quer aprender presentes?”, “vi a lista”, “tudo e meu”). Algumas composições parecem confusas e podem parecer texto sobreposto.\n\n**4. LEGIBILIDADE — Nota: 8/10**  \nO texto principal é grande e tem bom contraste. As palavras menores na parte inferior têm contraste menor e podem ser difíceis no celular.\n\n**5. A TELA ESTÁ VIVA OU VAZIA? — Nota: 6/10**  \nAlguns quadros ficam muito vazios no meio e dependem apenas do texto. Falta mais elemento visual contando a história.\n\n**6. COERÊNCIA — Nota: 7/10**  \nOs quadros parecem do mesmo vídeo, com identidade visual consistente. Porém, a sequência de frases parece quebrada e difícil de acompanhar.\n\n**7. TESTE CENTRAL — Nota: 5/10**  \nParece mais uma sequência de slides animados do que um vídeo profissional, porque quase todos os quadros são telas estáticas com texto.\n\nNOTA GERAL: 6  \nPROBLEMA 1: Falta um loop perfeito: o primeiro e o último quadro (0.1s e 16.5s) não encaixam naturalmente.  \nPROBLEMA 2: A narrativa visual fica fraca nos quadros 4.7s e 11.8s, onde aparecem apenas frases soltas sem avanço claro.  \nPROBLEMA 3: As frases menores e palavras destacadas em vários quadros deixam a leitura confusa.  \nPRIMEIRA COISA A MUDAR: Criar uma abertura e um encerramento visualmente idênticos para o reinício parecer contínuo.",
     "quando": "2026-08-22T05:05:48.578Z"
+  },
+  {
+    "slug": "loop-plano-de-saude-subiu-depois-de-anos",
+    "formato": "loop16",
+    "nota": 7,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      2.2,
+      4.3,
+      6.5,
+      8.6,
+      10.8,
+      12.9,
+      15
+    ],
+    "veredito": "1. **O LOOP — Nota**  \nPrimeiro quadro (0.1s) e último (15s) têm o mesmo tema e fundo, mas não são a mesma cena. O início mostra “Meu plano mudou” e o final mostra a mesma frase, porém com contexto diferente (“saúde melhor”). O reinício pode ser percebido.\n\n2. **FAIXA DE BAIXO — Nota: 9/10**  \nNão há informação importante na área inferior da tela. O texto principal fica no centro, seguro para Shorts/Reels.\n\n3. **TEXTO POR CIMA DE TEXTO — Nota: 6/10**  \nHá alguns momentos com palavras destacadas sobre a frase (“descobri”, “do”, “melhor”), mas não chega a parecer erro grave. Alguns trechos ficam visualmente apertados.\n\n4. **LEGIBILIDADE — Nota: 8/10**  \nO texto é grande e tem bom contraste. Funciona no celular. Algumas frases menores poderiam ser um pouco maiores.\n\n5. **TELA VIVA OU VAZIA? — Nota: 6/10**  \nO fundo é bonito, mas há muito espaço vazio em vários quadros. Falta mais elemento visual ou movimento percebido para prender atenção.\n\n6. **COERÊNCIA — Nota: 8/10**  \nOs quadros parecem do mesmo vídeo, com identidade visual consistente. A sequência conta uma pequena história, mas alguns cortes parecem apenas troca de frase.\n\n7. **TESTE CENTRAL — Nota: 6/10**  \nParece mais uma sequência de slides animados do que um vídeo profissional, porque quase todos os quadros dependem de texto central parado.\n\nNOTA GERAL: 7  \nPROBLEMA 1: O loop não fecha perfeitamente: quadro 0.1s e quadro 15s não são a mesma imagem/cena.  \nPROBLEMA 2: Muitos quadros têm aparência de slide, com pouco elemento visual além do texto.  \nPROBLEMA 3: O final (“saúde melhor”) não prepara um retorno natural para o começo.  \nPRIMEIRA COISA A MUDAR: Fazer o último quadro visualmente idêntico ao primeiro, para criar um loop invisível.",
+    "quando": "2026-08-23T05:03:54.017Z"
   }
 ]
