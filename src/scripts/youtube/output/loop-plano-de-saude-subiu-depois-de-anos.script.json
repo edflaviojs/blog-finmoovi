@@ -1,0 +1,117 @@
+{
+  "slug": "loop-plano-de-saude-subiu-depois-de-anos",
+  "formato": "loop16",
+  "term": "O plano de saúde que subiu",
+  "category": "vida",
+  "keyword": "PLANO",
+  "situacao": "plano-de-saude-subiu",
+  "gancho": "depois-de-anos",
+  "ganchoFamilia": "depois de anos",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "bola-neve",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Depois de anos tentando, descobri isso sobre meu plano de saúde",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "tentando",
+          "visual": {
+            "type": "statement",
+            "text": "Meu plano mudou"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "descobri",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-neve"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "A carta chegou e eu vi o reajuste do contrato assustado",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "carta",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-neve"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "chegou",
+          "visual": {
+            "type": "statement",
+            "text": "A carta chegou"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então cortei gastos pequenos e hoje confiro tudo com calma em casa",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "cortei",
+          "visual": {
+            "type": "statement",
+            "text": "Revisei meus gastos"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "gastos",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-neve"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Depois disso descobri meu plano de saúde melhor",
+      "durationSec": 2.9,
+      "shots": [
+        {
+          "anchor": "disso",
+          "visual": {
+            "type": "statement",
+            "text": "Descobri meu plano"
+          }
+        },
+        {
+          "anchor": "descobri",
+          "visual": {
+            "type": "statement",
+            "text": "Meu plano mudou"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
