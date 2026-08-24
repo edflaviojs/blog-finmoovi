@@ -1,21 +1,33 @@
 ---
-title: "Cómo usar el cashback de forma inteligente y multiplicar tus ingresos"
-description: "Descubre, en lenguaje sencillo, estrategias prácticas para transformar el cashback en ahorro real y generar ingresos extra en tu día a día."
-tickerHeadline: "Cashback que rinde más"
-image: "/images/posts/como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re.webp"
-imageAlt: "Cuatro personas sentadas en una mesa con papeles y una planta al fondo."
-category: "dicas"
-locale: "es"
-tags: ["cómo usar cashback de forma inteligente","finanzas personales","ahorro","dinero"]
-author: "FinMoovi"
-publishedAt: 2026-07-17
+title: Cómo usar el cashback de forma inteligente y multiplicar tus ingresos
+description: >-
+  Descubre, en lenguaje sencillo, estrategias prácticas para transformar el
+  cashback en ahorro real y generar ingresos extra en tu día a día.
+tickerHeadline: Cashback que rinde más
+image: >-
+  /images/posts/como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re.webp
+category: dicas
+locale: es
+tags:
+  - cómo usar cashback de forma inteligente
+  - finanzas personales
+  - ahorro
+  - dinero
+author: FinMoovi
+publishedAt: 2026-07-17T00:00:00.000Z
 readingTime: 4
 featured: false
-translationKey: "como-usar-cashback-de-forma-inteligente-e-multiplicar-sua"
+translationKey: como-usar-cashback-de-forma-inteligente-e-multiplicar-sua
 seo:
-  metaTitle: "Cómo usar el cashback de forma inteligente y multiplicar tus ingresos"
-  metaDescription: "Descubre, en lenguaje sencillo, estrategias prácticas para transformar el cashback en ahorro real y generar ingresos extra en tu día a día."
-  keywords: ["cómo usar cashback de forma inteligente","finanzas personales","ahorro","dinero"]
+  metaTitle: Cómo usar el cashback de forma inteligente y multiplicar tus ingresos
+  metaDescription: >-
+    Descubre, en lenguaje sencillo, estrategias prácticas para transformar el
+    cashback en ahorro real y generar ingresos extra en tu día a día.
+  keywords:
+    - cómo usar cashback de forma inteligente
+    - finanzas personales
+    - ahorro
+    - dinero
 ---
 
 ## Cashback como aliado de verdad

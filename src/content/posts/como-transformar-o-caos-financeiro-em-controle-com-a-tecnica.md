@@ -1,22 +1,36 @@
 ---
-title: "Como transformar o caos financeiro em controle com a técnica Kyco (2026)"
-description: "Descubra a técnica Kyco para organizar despesas, evitar compras por impulso e ganhar tranquilidade, usando o app FinMoovi. Dicas práticas e ação em 5 minutos."
-tickerHeadline: "O método que acalma seu bolso"
-image: "/images/posts/como-transformar-o-caos-financeiro-em-controle-com-a-tecnica.webp"
-imageAlt: "Casal sorridente usando tablet em mesa de madeira, com plantas e prateleiras ao fundo."
-category: "dicas"
-locale: "pt"
-tags: ["kyco","finanças pessoais","economia","dinheiro"]
-author: "FinMoovi"
-publishedAt: 2026-08-04
+title: Como transformar o caos financeiro em controle com a técnica Kyco (2026)
+description: >-
+  Descubra a técnica Kyco para organizar despesas, evitar compras por impulso e
+  ganhar tranquilidade, usando o app FinMoovi. Dicas práticas e ação em 5
+  minutos.
+tickerHeadline: O método que acalma seu bolso
+image: >-
+  /images/posts/como-transformar-o-caos-financeiro-em-controle-com-a-tecnica.webp
+category: dicas
+locale: pt
+tags:
+  - kyco
+  - finanças pessoais
+  - economia
+  - dinheiro
+author: FinMoovi
+publishedAt: 2026-08-04T00:00:00.000Z
 readingTime: 5
 featured: true
-translationKey: "como-transformar-o-caos-financeiro-em-controle-com-a-tecnica"
-scope: "universal"
+translationKey: como-transformar-o-caos-financeiro-em-controle-com-a-tecnica
+scope: universal
 seo:
-  metaTitle: "Como transformar o caos financeiro em controle com a técnica Kyco (2026)"
-  metaDescription: "Descubra a técnica Kyco para organizar despesas, evitar compras por impulso e ganhar tranquilidade, usando o app FinMoovi. Dicas práticas e ação em 5 minutos."
-  keywords: ["kyco","finanças pessoais","economia","dinheiro"]
+  metaTitle: Como transformar o caos financeiro em controle com a técnica Kyco (2026)
+  metaDescription: >-
+    Descubra a técnica Kyco para organizar despesas, evitar compras por impulso
+    e ganhar tranquilidade, usando o app FinMoovi. Dicas práticas e ação em 5
+    minutos.
+  keywords:
+    - kyco
+    - finanças pessoais
+    - economia
+    - dinheiro
 ---
 
 Imagine a cena: você chega ao caixa do supermercado, ainda com a lista de compras em mãos, mas a fila à sua frente está cheia. Enquanto espera, o olhar passa por um expositor de chocolates, depois por um carrinho de balas, e antes que perceba, o caixa já está imprimindo uma nota fiscal que você nem sabia que precisava. No fim da compra, a sacola pesa mais que o que você realmente precisava, e a pilha de recibos em casa parece um pequeno monte de papel que só aumenta a ansiedade.

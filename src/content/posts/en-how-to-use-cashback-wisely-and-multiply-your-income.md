@@ -1,21 +1,33 @@
 ---
-title: "How to Use Cashback Wisely and Multiply Your Income"
-description: "Discover, in plain language, practical strategies to turn cashback into real savings and even generate extra earnings in your daily life."
-tickerHeadline: "Cashback that earns more"
-image: "/images/posts/como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re.webp"
-imageAlt: "Four people sitting around table with papers and glasses in a room with plant."
-category: "dicas"
-locale: "en"
-tags: ["how to use cashback wisely","personal finance","savings","money"]
-author: "FinMoovi"
-publishedAt: 2026-07-17
+title: How to Use Cashback Wisely and Multiply Your Income
+description: >-
+  Discover, in plain language, practical strategies to turn cashback into real
+  savings and even generate extra earnings in your daily life.
+tickerHeadline: Cashback that earns more
+image: >-
+  /images/posts/como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re.webp
+category: dicas
+locale: en
+tags:
+  - how to use cashback wisely
+  - personal finance
+  - savings
+  - money
+author: FinMoovi
+publishedAt: 2026-07-17T00:00:00.000Z
 readingTime: 4
 featured: false
-translationKey: "como-usar-cashback-de-forma-inteligente-e-multiplicar-sua"
+translationKey: como-usar-cashback-de-forma-inteligente-e-multiplicar-sua
 seo:
-  metaTitle: "How to Use Cashback Wisely and Multiply Your Income"
-  metaDescription: "Discover, in plain language, practical strategies to turn cashback into real savings and even generate extra earnings in your daily life."
-  keywords: ["how to use cashback wisely","personal finance","savings","money"]
+  metaTitle: How to Use Cashback Wisely and Multiply Your Income
+  metaDescription: >-
+    Discover, in plain language, practical strategies to turn cashback into real
+    savings and even generate extra earnings in your daily life.
+  keywords:
+    - how to use cashback wisely
+    - personal finance
+    - savings
+    - money
 ---
 
 ## Cashback as a Real Ally

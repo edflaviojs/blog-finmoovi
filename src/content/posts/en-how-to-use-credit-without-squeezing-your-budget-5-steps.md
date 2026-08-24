@@ -1,22 +1,33 @@
 ---
-title: "How to Use Credit Without Squeezing Your Budget: 5 Steps"
-description: "Learn how to turn a loan into an ally, use credit wisely and keep your finances calm. Practical 5‑step guide."
-tickerHeadline: "The trick that saves your credit"
-image: "/images/posts/como-usar-credito-sem-sufocar-seu-orcamento-5-passos.webp"
-imageAlt: "Gold arrow rising through blue and yellow gradient background"
-category: "dicas"
-locale: "en"
-tags: ["financing","personal finance","budgeting","money"]
-author: "FinMoovi"
-publishedAt: 2026-08-03
+title: 'How to Use Credit Without Squeezing Your Budget: 5 Steps'
+description: >-
+  Learn how to turn a loan into an ally, use credit wisely and keep your
+  finances calm. Practical 5‑step guide.
+tickerHeadline: The trick that saves your credit
+image: /images/posts/como-usar-credito-sem-sufocar-seu-orcamento-5-passos.webp
+category: dicas
+locale: en
+tags:
+  - financing
+  - personal finance
+  - budgeting
+  - money
+author: FinMoovi
+publishedAt: 2026-08-03T00:00:00.000Z
 readingTime: 5
 featured: false
-translationKey: "como-usar-credito-sem-sufocar-seu-orcamento-5-passos"
-scope: "universal"
+translationKey: como-usar-credito-sem-sufocar-seu-orcamento-5-passos
+scope: universal
 seo:
-  metaTitle: "How to Use Credit Without Squeezing Your Budget: 5 Steps"
-  metaDescription: "Learn how to turn a loan into an ally, use credit wisely and keep your finances calm. Practical 5‑step guide."
-  keywords: ["financing","personal finance","budgeting","money"]
+  metaTitle: 'How to Use Credit Without Squeezing Your Budget: 5 Steps'
+  metaDescription: >-
+    Learn how to turn a loan into an ally, use credit wisely and keep your
+    finances calm. Practical 5‑step guide.
+  keywords:
+    - financing
+    - personal finance
+    - budgeting
+    - money
 ---
 
 Imagine the scene: you just got a [loan](/en/glossario/en-loan) offer for that car you’ve been eyeing, but as soon as you open the contract your stomach does a flip. The monthly payments look small, yet when you line them up against rent, utilities, that daily coffee habit, the weight suddenly shows up. In an instant, the dream of a new car turns into a constant worry: *“Will I still be able to save for emergencies?”*

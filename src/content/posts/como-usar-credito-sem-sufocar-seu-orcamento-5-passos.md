@@ -1,22 +1,34 @@
 ---
-title: "Como usar crédito sem sufocar seu orçamento: 5 passos"
-description: "Descubra como transformar um financiamento em aliado, usando crédito de forma inteligente e mantendo a tranquilidade financeira. Guia prático em 5 passos."
-tickerHeadline: "O truque que salva seu crédito"
-image: "/images/posts/como-usar-credito-sem-sufocar-seu-orcamento-5-passos.webp"
-imageAlt: "Fita dourada ondulada formando seta ascendente sobre fundo gradiente azul e amarelo."
-category: "dicas"
-locale: "pt"
-tags: ["financing","finanças pessoais","economia","dinheiro"]
-author: "FinMoovi"
-publishedAt: 2026-08-03
+title: 'Como usar crédito sem sufocar seu orçamento: 5 passos'
+description: >-
+  Descubra como transformar um financiamento em aliado, usando crédito de forma
+  inteligente e mantendo a tranquilidade financeira. Guia prático em 5 passos.
+tickerHeadline: O truque que salva seu crédito
+image: /images/posts/como-usar-credito-sem-sufocar-seu-orcamento-5-passos.webp
+category: dicas
+locale: pt
+tags:
+  - financing
+  - finanças pessoais
+  - economia
+  - dinheiro
+author: FinMoovi
+publishedAt: 2026-08-03T00:00:00.000Z
 readingTime: 6
 featured: true
-translationKey: "como-usar-credito-sem-sufocar-seu-orcamento-5-passos"
-scope: "universal"
+translationKey: como-usar-credito-sem-sufocar-seu-orcamento-5-passos
+scope: universal
 seo:
-  metaTitle: "Como usar crédito sem sufocar seu orçamento: 5 passos"
-  metaDescription: "Descubra como transformar um financiamento em aliado, usando crédito de forma inteligente e mantendo a tranquilidade financeira. Guia prático em 5 passos."
-  keywords: ["financing","finanças pessoais","economia","dinheiro"]
+  metaTitle: 'Como usar crédito sem sufocar seu orçamento: 5 passos'
+  metaDescription: >-
+    Descubra como transformar um financiamento em aliado, usando crédito de
+    forma inteligente e mantendo a tranquilidade financeira. Guia prático em 5
+    passos.
+  keywords:
+    - financing
+    - finanças pessoais
+    - economia
+    - dinheiro
 ---
 
 Imagine a cena: você acabou de receber a proposta de [financiamento](/glossario/financiamento) para aquele carro que você sempre quis, mas ao abrir o contrato sente um frio na barriga. As parcelas parecem pequenas, mas quando você as compara com as contas do mês – aluguel, contas de luz, aquele gasto diário com café – o peso começa a aparecer. De repente, o sonho de ter um carro novo se transforma em preocupação constante: “Será que ainda vou conseguir guardar um pouco para emergências?”

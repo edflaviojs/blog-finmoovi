@@ -1,22 +1,34 @@
 ---
-title: "Cómo transformar el caos financiero en control con la técnica Kyco (2026)"
-description: "Descubre la técnica Kyco para organizar gastos, evitar compras impulsivas y ganar tranquilidad con FinMoovi. Tips prácticos en 5 min."
-tickerHeadline: "El método que calma tu bolsillo"
-image: "/images/posts/como-transformar-o-caos-financeiro-em-controle-com-a-tecnica.webp"
-imageAlt: "Pareja sonriente revisando tablet en mesa de madera con taza y planta."
-category: "dicas"
-locale: "es"
-tags: ["kyco","finanzas personales","economía","dinero"]
-author: "FinMoovi"
-publishedAt: 2026-08-04
+title: Cómo transformar el caos financiero en control con la técnica Kyco (2026)
+description: >-
+  Descubre la técnica Kyco para organizar gastos, evitar compras impulsivas y
+  ganar tranquilidad con FinMoovi. Tips prácticos en 5 min.
+tickerHeadline: El método que calma tu bolsillo
+image: >-
+  /images/posts/como-transformar-o-caos-financeiro-em-controle-com-a-tecnica.webp
+category: dicas
+locale: es
+tags:
+  - kyco
+  - finanzas personales
+  - economía
+  - dinero
+author: FinMoovi
+publishedAt: 2026-08-04T00:00:00.000Z
 readingTime: 5
 featured: false
-translationKey: "como-transformar-o-caos-financeiro-em-controle-com-a-tecnica"
-scope: "universal"
+translationKey: como-transformar-o-caos-financeiro-em-controle-com-a-tecnica
+scope: universal
 seo:
-  metaTitle: "Cómo transformar el caos financiero en control con la técnica Kyco (2026)"
-  metaDescription: "Descubre la técnica Kyco para organizar gastos, evitar compras impulsivas y ganar tranquilidad con FinMoovi. Tips prácticos en 5 min."
-  keywords: ["kyco","finanzas personales","economía","dinero"]
+  metaTitle: Cómo transformar el caos financiero en control con la técnica Kyco (2026)
+  metaDescription: >-
+    Descubre la técnica Kyco para organizar gastos, evitar compras impulsivas y
+    ganar tranquilidad con FinMoovi. Tips prácticos en 5 min.
+  keywords:
+    - kyco
+    - finanzas personales
+    - economía
+    - dinero
 ---
 
 Imagina la escena: llegas a la caja del supermercado con la lista de la compra en la mano, pero la fila delante de ti está larga. Mientras esperas, tu mirada pasa por un mostrador de chocolates, luego por una góndola de caramelos, y antes de que te des cuenta, la caja ya está imprimiendo una factura que ni sabías que necesitabas. Al final, la bolsa pesa más de lo que realmente necesitabas y la pila de recibos en casa parece un pequeño montón de papel que solo aumenta la ansiedad.

@@ -1,22 +1,39 @@
 ---
-title: "Cómo usar crédito sin ahogar tu presupuesto: 5 pasos prácticos"
-description: "Aprende a convertir un préstamo en aliado, manejando el crédito con inteligencia y manteniendo la tranquilidad financiera. Guía en 5 pasos."
-tickerHeadline: "El truco que protege tu crédito"
-image: "/images/posts/como-usar-credito-sem-sufocar-seu-orcamento-5-passos.webp"
-imageAlt: "Flecha dorada ascendente ondulada sobre fondo degradado azul y amarillo."
-category: "dicas"
-locale: "es"
-tags: ["financiación","finanzas personales","economía","dinero","crédito","presupuesto","ahorro"]
-author: "FinMoovi"
-publishedAt: 2026-08-03
+title: 'Cómo usar crédito sin ahogar tu presupuesto: 5 pasos prácticos'
+description: >-
+  Aprende a convertir un préstamo en aliado, manejando el crédito con
+  inteligencia y manteniendo la tranquilidad financiera. Guía en 5 pasos.
+tickerHeadline: El truco que protege tu crédito
+image: /images/posts/como-usar-credito-sem-sufocar-seu-orcamento-5-passos.webp
+category: dicas
+locale: es
+tags:
+  - financiación
+  - finanzas personales
+  - economía
+  - dinero
+  - crédito
+  - presupuesto
+  - ahorro
+author: FinMoovi
+publishedAt: 2026-08-03T00:00:00.000Z
 readingTime: 6
 featured: false
-translationKey: "como-usar-credito-sem-sufocar-seu-orcamento-5-passos"
-scope: "universal"
+translationKey: como-usar-credito-sem-sufocar-seu-orcamento-5-passos
+scope: universal
 seo:
-  metaTitle: "Cómo usar crédito sin ahogar tu presupuesto: 5 pasos prácticos"
-  metaDescription: "Aprende a convertir un préstamo en aliado, manejando el crédito con inteligencia y manteniendo la tranquilidad financiera. Guía en 5 pasos."
-  keywords: ["financiación","finanzas personales","economía","dinero","crédito","presupuesto","ahorro"]
+  metaTitle: 'Cómo usar crédito sin ahogar tu presupuesto: 5 pasos prácticos'
+  metaDescription: >-
+    Aprende a convertir un préstamo en aliado, manejando el crédito con
+    inteligencia y manteniendo la tranquilidad financiera. Guía en 5 pasos.
+  keywords:
+    - financiación
+    - finanzas personales
+    - economía
+    - dinero
+    - crédito
+    - presupuesto
+    - ahorro
 ---
 
 Imagina la escena: acabas de recibir la propuesta de [financiación](/es/posts/es-como-conseguir-financiacion-para-tus-proyectos-sin) para ese coche que siempre has querido, pero al abrir el contrato sientes un escalofrío. Las cuotas parecen pequeñas, pero cuando las comparas con los gastos del mes – alquiler, la factura de la luz, ese café diario – el peso empieza a notarse. De repente, el sueño de tener un coche nuevo se transforma en una preocupación constante: “¿Voy a poder ahorrar algo para emergencias?”
