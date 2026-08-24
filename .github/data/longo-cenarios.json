@@ -27,13 +27,12 @@
       "cenarios": [
         "a fatura do cartão",
         "o boleto",
-        "a conta de luz",
-        "a aposentadoria"
+        "o salário que cai na conta"
       ],
-      "fio": "relogio",
+      "fio": "ampulheta",
       "elenco": "uma mãe e uma filha já adulta, cada uma na sua fase da vida",
       "funcaoDoApp": "categorias",
-      "promessa": "Vou te mostrar como uma escolha mensal separou duas aposentadorias com o mesmo salário",
+      "promessa": "Vou te mostrar como encontrar dinheiro no mês e escolher uma previdência para o futuro",
       "em": "2026-08-24"
     }
   ]
