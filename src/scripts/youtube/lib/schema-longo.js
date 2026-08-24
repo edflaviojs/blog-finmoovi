@@ -194,6 +194,17 @@ const TITULOS_GENERICOS = [
 ];
 
 /**
+ * A MESMA régua, exportada — para a prova de mesa reaplicar o CRITÉRIO e não uma
+ * cópia dele. (22/08/2026: a prova tinha uma cópia estreita — só `introdu|conclus` —
+ * e divergiu desta lista no dia em que o detetive trouxe um "Resumo geral de gastos"
+ * de um vídeo real. Duas réguas iguais separam-se; uma régua num sítio só, não.)
+ */
+export function ehTituloGenerico(titulo) {
+  const chave = semAcento(String(titulo || '')).replace(/[^\p{L}\p{N}\s]/gu, ' ').replace(/\s+/g, ' ').trim();
+  return TITULOS_GENERICOS.some((g) => chave === g || chave.startsWith(`${g} `));
+}
+
+/**
  * AS PALAVRAS DA CHAMADA. Só podem existir no bloco `chamada` — é a trava que
  * garante o "CTA uma vez" do dono. Repare que `finmoovi` NÃO está aqui de propósito:
  * o app tem o seu momento no capítulo da demonstração, e é lá que o nome se diz. Quem
@@ -609,7 +620,7 @@ export function validarMapa(mapa) {
         erros.push(`capítulo ${n}: o título tem ${p} palavras (máximo ${MAX_PALAVRAS_TITULO}) — é um título, não uma frase do guião`);
       }
       const chave = semAcento(titulo).replace(/[^\p{L}\p{N}\s]/gu, ' ').replace(/\s+/g, ' ').trim();
-      if (TITULOS_GENERICOS.some((g) => chave === g || chave.startsWith(`${g} `))) {
+      if (ehTituloGenerico(titulo)) {
         erros.push(
           `capítulo ${n}: "${titulo}" é um título que não promete nada. Nos vídeos longos reais, as aberturas fracas `
           + 'chamam-se assim e as boas NOMEIAM o que a pessoa vai levar dali. Escreva o que o capítulo entrega.',

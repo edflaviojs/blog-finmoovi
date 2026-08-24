@@ -35,7 +35,7 @@ const RAIZ = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
 
 import {
   validarMapa, validarAbertura, validarCapitulo, validarChamada, validarFecho, validarLongo,
-  contarPalavras, ORCAMENTO, MAX_PALAVRAS_TITULO, PARTES_DO_CAPITULO, valoresEmDinheiro, nomeDePessoa,
+  contarPalavras, ORCAMENTO, MAX_PALAVRAS_TITULO, PARTES_DO_CAPITULO, valoresEmDinheiro, nomeDePessoa, ehTituloGenerico,
   consertarMapa, tipoDoValor, TIPOS_DE_VALOR, TIPO_POR_OMISSAO,
 } from '../youtube/lib/schema-longo.js';
 import {
@@ -248,22 +248,26 @@ console.log('   (a lição de 03/08: prova sintética passa, o caso real falha)\
   const dados = JSON.parse(readFileSync(caminho, 'utf-8'));
   const titulos = dados.videos.flatMap((v) => v.capitulos.map((c) => c.titulo));
 
-  const comprido = titulos.filter((t) => contarPalavras(t) > MAX_PALAVRAS_TITULO);
-  ok(
-    `nenhum dos ${titulos.length} títulos reais é reprovado por comprimento (teto ${MAX_PALAVRAS_TITULO})`,
-    comprido.length === 0,
-    comprido.join(' · '),
-  );
-
-  // Um mapa é construído com cada título real, para o validador o julgar de verdade.
+  /**
+   * ⚠️ 22/08/2026 — DOIS FINS DE SEMANA SEM VÍDEO por causa desta prova.
+   * O acervo CRESCE todos os dias (o detetive de tendências colhe capítulos de vídeos
+   * reais de outros canais), e a prova antiga fazia duas suposições que a realidade
+   * desmentiu no dia 17/08:
+   *   · "nenhum título real passa das 13 palavras" — um vídeo real trouxe um de 15;
+   *   · "genérico = começa por introdu/conclus" — uma CÓPIA estreita da régua
+   *     verdadeira (`TITULOS_GENERICOS` tem também resumo, sumario, …).
+   * O que esta prova deve garantir é UMA coisa: o validador não recusa nenhum título
+   * real BOM (nem genérico, nem comprido). A recusa dos maus reaplica o CRITÉRIO
+   * exportado pelo próprio validador — nunca mais uma cópia.
+   */
   const mapaCom = (titulo) => validarMapa({
     ...EXEMPLO_DE_MAPA,
     capitulos: EXEMPLO_DE_MAPA.capitulos.map((c, i) => (i === 0 ? { ...c, titulo } : c)),
   });
   const recusados = titulos.filter((t) => !mapaCom(t).ok);
-  const esperados = titulos.filter((t) => /^(introdu|conclus)/i.test(t.trim()));
+  const esperados = titulos.filter((t) => ehTituloGenerico(t) || contarPalavras(t) > MAX_PALAVRAS_TITULO);
   ok(
-    `os títulos recusados são EXATAMENTE os genéricos (${recusados.length} recusados, ${esperados.length} genéricos reais)`,
+    `os títulos recusados são EXATAMENTE os que a régua da casa manda recusar — genéricos ou compridos (${recusados.length} recusados, ${esperados.length} esperados, ${titulos.length} no acervo)`,
     recusados.length === esperados.length && recusados.every((t) => esperados.includes(t)),
     `recusados: ${recusados.join(' · ')}`,
   );
