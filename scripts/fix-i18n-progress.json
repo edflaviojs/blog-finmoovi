@@ -448,7 +448,7 @@
     "ultimaSeveridade": 0
   },
   "en-real-estate-funds-for-beginners-complete-guide.md": {
-    "tentativas": 2,
+    "tentativas": 3,
     "ultimaSeveridade": 1
   },
   "en-real-estate-funds-reits.md": {
@@ -536,7 +536,7 @@
     "ultimaSeveridade": null
   },
   "en-understanding-the-interbank-rate-and-its-impact-on-your.md": {
-    "tentativas": 2,
+    "tentativas": 3,
     "ultimaSeveridade": 1
   },
   "en-usura.md": {
@@ -716,7 +716,7 @@
     "ultimaSeveridade": 0
   },
   "es-como-ahorrar-en-el-supermercado-en-2026-consejos-reales.md": {
-    "tentativas": 2,
+    "tentativas": 3,
     "ultimaSeveridade": 1
   },
   "es-como-ahorrar-en-las-vacaciones-de-julio-sin-renunciar-a-la-d.md": {
@@ -735,6 +735,10 @@
     "tentativas": 1,
     "ultimaSeveridade": 0
   },
+  "es-como-iniciar-inversiones-en-acciones-de-forma-practica-en.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 1
+  },
   "es-como-reducir-gastos-fijos-mensuales-de-forma-eficaz.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
@@ -744,8 +748,8 @@
     "ultimaSeveridade": null
   },
   "es-como-usar-el-cashback-de-forma-inteligente-y-multiplicar-tus.md": {
-    "tentativas": 2,
-    "ultimaSeveridade": 1
+    "tentativas": 3,
+    "ultimaSeveridade": 0
   },
   "es-consejos-para-controlar-gastos-en-la-tarjeta-de-credito.md": {
     "tentativas": 1,
@@ -892,12 +896,12 @@
     "ultimaSeveridade": 0
   },
   "es-indice-finmoovi-costo-de-vida-junio-2026.md": {
-    "tentativas": 2,
+    "tentativas": 3,
     "ultimaSeveridade": 1
   },
   "es-inflacion.md": {
-    "tentativas": 2,
-    "ultimaSeveridade": 1
+    "tentativas": 3,
+    "ultimaSeveridade": 0
   },
   "es-interes-compuesto.md": {
     "tentativas": 1,
@@ -916,7 +920,7 @@
     "ultimaSeveridade": null
   },
   "es-inversiones-para-el-segundo-semestre-estrategias-practicas.md": {
-    "tentativas": 2,
+    "tentativas": 3,
     "ultimaSeveridade": 1
   },
   "es-invertir-en-dolar-en-brasil.md": {
@@ -944,7 +948,7 @@
     "ultimaSeveridade": 2
   },
   "es-lci-y-lca.md": {
-    "tentativas": 2,
+    "tentativas": 3,
     "ultimaSeveridade": 1
   },
   "es-liquidez.md": {

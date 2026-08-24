@@ -6,9 +6,7 @@
     "issues": {
       "currency": 0,
       "brInstitutions": [],
-      "brProducts": [
-        "CDB"
-      ],
+      "brProducts": [],
       "geoRefs": [],
       "ptWordsCount": 0,
       "brBrands": [],
@@ -33,24 +31,6 @@
       "brAcronyms": [
         "LCI",
         "LCA"
-      ],
-      "ptLeftovers": []
-    }
-  },
-  {
-    "file": "en-private-pension-2026-is-it-worth-it-practical-guide.md",
-    "dir": "posts",
-    "severity": 2,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [
-        "PGBL",
-        "VGBL"
       ],
       "ptLeftovers": []
     }
@@ -89,25 +69,6 @@
       "brAcronyms": [
         "LCI",
         "LCA"
-      ],
-      "ptLeftovers": []
-    }
-  },
-  {
-    "file": "es-guia-completa-para-principiantes-sobre-tesouro-direto.md",
-    "dir": "posts",
-    "severity": 2,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [
-        "LCI",
-        "LTN",
-        "NTN"
       ],
       "ptLeftovers": []
     }
@@ -161,6 +122,23 @@
       "brAcronyms": [],
       "ptLeftovers": [
         "reais"
+      ]
+    }
+  },
+  {
+    "file": "en-how-to-start-investing-in-stocks-the-easy-way-in-2026.md",
+    "dir": "posts",
+    "severity": 1,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "investimentos"
       ]
     }
   },
@@ -250,23 +228,6 @@
     }
   },
   {
-    "file": "es-5-consejos-para-reorganizar-tus-finanzas-en-vacaciones.md",
-    "dir": "posts",
-    "severity": 1,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": [
-        "poupança"
-      ]
-    }
-  },
-  {
     "file": "es-como-ahorrar-en-el-supermercado-en-2026-consejos-reales.md",
     "dir": "posts",
     "severity": 1,
@@ -280,6 +241,23 @@
       "brAcronyms": [],
       "ptLeftovers": [
         "reais"
+      ]
+    }
+  },
+  {
+    "file": "es-como-iniciar-inversiones-en-acciones-de-forma-practica-en.md",
+    "dir": "posts",
+    "severity": 1,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "investimentos"
       ]
     }
   },
@@ -298,23 +276,6 @@
       "ptLeftovers": [
         "dívidas"
       ]
-    }
-  },
-  {
-    "file": "es-etfs-que-son-y-como-invertir-de-forma-simple-y-rentable.md",
-    "dir": "posts",
-    "severity": 1,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [
-        "CVM"
-      ],
-      "ptLeftovers": []
     }
   },
   {
@@ -956,6 +917,21 @@
     }
   },
   {
+    "file": "en-cost-of-living.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-creating-an-emergency-fund.md",
     "dir": "posts",
     "severity": 0,
@@ -1286,6 +1262,21 @@
     }
   },
   {
+    "file": "en-expense-control.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-expense-spreadsheet-when-it-stops-working.md",
     "dir": "posts",
     "severity": 0,
@@ -1526,6 +1517,21 @@
     }
   },
   {
+    "file": "en-financial-planning.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-financing.md",
     "dir": "glossario",
     "severity": 0,
@@ -1736,6 +1742,21 @@
     }
   },
   {
+    "file": "en-how-to-build-your-2026-savings-table-and-keep-spending-in.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-how-to-build-your-family-budget-using-excel-and-apps.md",
     "dir": "posts",
     "severity": 0,
@@ -1916,6 +1937,21 @@
     }
   },
   {
+    "file": "en-how-to-save-for-children-s-day-in-2026-7-practical-steps.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-how-to-save-on-a-july-vacation-without-giving-up-the-fun.md",
     "dir": "posts",
     "severity": 0,
@@ -1992,6 +2028,21 @@
   },
   {
     "file": "en-how-to-turn-financial-chaos-into-control-with-the-kyco.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-how-to-turn-your-grocery-trip-into-real-savings-2026.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -2546,6 +2597,21 @@
     }
   },
   {
+    "file": "en-private-pension-2026-is-it-worth-it-practical-guide.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-private-pension-vs-investing-on-your-own-which-is-worth-it.md",
     "dir": "posts",
     "severity": 0,
@@ -2847,6 +2913,21 @@
   },
   {
     "file": "en-saving-on-your-energy-bill.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-savings-vs-cd-which-is-worth-it-in-2026.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -3341,6 +3422,21 @@
     }
   },
   {
+    "file": "es-5-consejos-para-reorganizar-tus-finanzas-en-vacaciones.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-5-pasos-practicos-para-empezar-a-ahorrar-para-la-black.md",
     "dir": "posts",
     "severity": 0,
@@ -3537,6 +3633,21 @@
   },
   {
     "file": "es-ahorrar-dinero-7-habitos-simples-para-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-ahorro-vs-certificados-de-deposito-que-vale-mas-la-pena-en.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -3851,6 +3962,21 @@
     }
   },
   {
+    "file": "es-como-ahorrar-para-el-dia-del-nino-en-2026-7-pasos-practicos.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-como-conseguir-financiacion-para-tus-proyectos-sin.md",
     "dir": "posts",
     "severity": 0,
@@ -3882,6 +4008,21 @@
   },
   {
     "file": "es-como-crear-tu-presupuesto-familiar-con-excel-y-apps.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-como-crear-tu-tabla-de-ahorro-2026-y-controlar-gastos.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -4226,6 +4367,21 @@
     }
   },
   {
+    "file": "es-como-transformar-la-visita-al-supermercado-en-ahorro-real.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-como-usar-credito-sin-ahogar-tu-presupuesto-5-pasos.md",
     "dir": "posts",
     "severity": 0,
@@ -4361,6 +4517,21 @@
     }
   },
   {
+    "file": "es-control-de-gastos.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-costo-de-vida-en-espana.md",
     "dir": "glossario",
     "severity": 0,
@@ -4377,6 +4548,21 @@
   },
   {
     "file": "es-costo-de-vida-en-paraguay.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-costo-de-vida.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -4751,6 +4937,21 @@
     }
   },
   {
+    "file": "es-etfs-que-son-y-como-invertir-de-forma-simple-y-rentable.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-evite-compras-por-impulso.md",
     "dir": "posts",
     "severity": 0,
@@ -4977,6 +5178,21 @@
   },
   {
     "file": "es-guia-completa-de-fondos-inmobiliarios-para-principiantes.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-guia-completa-para-principiantes-sobre-tesouro-direto.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -5487,6 +5703,21 @@
   },
   {
     "file": "es-planificacion-financiera-personal.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-planificacion-financiera.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {

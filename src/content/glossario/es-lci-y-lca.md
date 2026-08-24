@@ -11,7 +11,7 @@ translationKey: "glossario-lci-e-lca"
 readingTime: 2
 ---
 
-## ¿Qué son LCI y LCA?
+## ¿Qué son los bonos bancarios exentos de impuestos (LCI y LCA)?
 
 LCI (bonos bancarios exentos de impuestos inmobiliarios) y LCA (bonos bancarios exentos de impuestos del sector agro) son [inversiones](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) de [renta fija](/glossario/renda-fixa) emitidas por bancos. La gran ventaja: son **exentas de [Impuesto a la Renta](/glossario/imposto-de-renda)** para personas físicas.
 
@@ -36,20 +36,20 @@ Para el inversor, funcionan de la misma manera.
 - Inversión mínima generalmente mayor (€180-€900)
 - Menos opciones disponibles que los [certificados de depósito](/glossario/cdb)
 
-## LCI/LCA vs. CDB
+## Bonos bancarios exentos de impuestos vs. certificados de depósito
 
-Una LCI que paga 85% de la tasa interbancaria puede rendir más que un CDB al 100% de la tasa interbancaria, por la exención de IR:
+Una LCI que paga 85 % de la tasa interbancaria puede rendir más que un CDB al 100 % de la tasa interbancaria, por la exención de IR:
 
-| | certificados de depósito 100% tasa interbancaria | bonos bancarios exentos de impuestos 85% tasa interbancaria |
+| | certificados de depósito 100 % tasa interbancaria | bonos bancarios exentos de impuestos 85 % tasa interbancaria |
 |--|-------------|-------------|
-| Rendimiento bruto | 13,65% | 11,60% |
-| IR (15%) | -2,05% | 0% |
-| **Rendimiento neto** | **11,60%** | **11,60%** |
+| Rendimiento bruto | 13,65 % | 11,60 % |
+| IR (15 %) | -2,05 % | 0 % |
+| **Rendimiento neto** | **11,60 %** | **11,60 %** |
 
-En este ejemplo, rinden igual. Pero una LCI del 90% de la tasa interbancaria ya supera al CDB al 100%.
+En este ejemplo, rinden igual. Pero una LCI del 90 % de la tasa interbancaria ya supera al CDB al 100 %.
 
-## Cuándo invertir en LCI/LCA
+## Cuándo invertir en bonos bancarios exentos de impuestos
 
 - Cuando no necesites el dinero por al menos 90 días
 - Para diversificar la renta fija
-- Cuando encuentres tasas superiores al 90% de la tasa interbancaria
+- Cuando encuentres tasas superiores al 90 % de la tasa interbancaria

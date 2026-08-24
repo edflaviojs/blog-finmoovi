@@ -128,7 +128,7 @@ Para el segundo semestre, la mayoría de la gente se concentra en **corto y medi
 
 ## Herramientas y recursos útiles
 
-- **[Banco Central]** – consulta de la tasa base del banco central e indicadores económicos.  
+- **[el banco central]** – consulta de la tasa base del banco central e indicadores económicos.  
 - **[Portal de bonos del gobierno]** – sitio oficial para adquirir títulos públicos.  
 - **FinMoovi** – app de finanzas personales que integra control de gastos, metas de inversión y alertas de mercado. Ideal para quien quiere visualizar la cartera completa en un solo lugar.
 

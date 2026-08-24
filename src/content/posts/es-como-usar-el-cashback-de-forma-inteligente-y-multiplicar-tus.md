@@ -26,7 +26,7 @@ Cuando pagas un snack de €6,30 con una tarjeta que devuelve el 2 % del gasto
 
 No todas las tarjetas ofrecen la misma tasa de retorno. Algunas dan 1,5 % en todas las compras, otras dan 5 % en categorías específicas (como supermercados o estaciones de gasolina) y 1 % en el resto. La clave está en alinear la tarjeta con tu patrón de consumo.
 
-![Escolha o cartão certo e combine benefícios](/images/posts/como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re-2.webp)
+![Elige la tarjeta correcta y combina beneficios](/images/posts/como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re-2.webp)
 
 - **Si tu salario está entre €1.500 y €2.000** y la mayor parte de los [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo) son en alimentación y transporte, opta por una tarjeta que ofrezca 4 % de cashback en supermercados y 2 % en estaciones.
 - **Para quien gana entre €2.500 y €4.000**, vale la pena considerar una tarjeta premium que devuelva 3 % en todas las compras, aunque la anualidad sea mayor, porque el volumen de gasto lo compensa.
@@ -47,7 +47,7 @@ Al depositar esos €27 en una cuenta de rendimiento, acumulas €321 al final d
 
 Si tienes deudas con intereses superiores al 10 % anual (como rotativo de tarjeta o [sobregiro](/es/glossario/es-sobregiro)), el cashback puede ser un aliado para reducir esos cargos. Cada centavo que recibes tiene un costo de oportunidad menor que los intereses de la deuda, por lo que aplicar el cashback para amortizar la deuda genera ahorro real.
 
-![Use o cashback para “pagar dívidas” de forma inteligente](/images/posts/como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re-4.webp)
+![Usa el cashback para “pagar deudas” de forma inteligente](/images/posts/como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re-4.webp)
 
 Supongamos que tengas una deuda de €216 en rotativo con intereses del 12 % anual. Un cashback mensual de €14 (generado por gastos de €480 con un 3 % de retorno) reduce el saldo deudor en €14, evitando que casi €2 de intereses se cobren cada mes. En 12 meses, ahorras alrededor de €26 en intereses.
 
@@ -63,7 +63,7 @@ Para no perder esas oportunidades, crea el hábito de revisar la app de la tarje
 
 La disciplina es lo que transforma el cashback de un detalle puntual en un hábito rentable. Usa una aplicación de finanzas personales (como el **FinMoovi**, que recomiendo porque simplifica la visualización de todas tus cuentas) para registrar automáticamente el valor recibido y el destino que le das.
 
-![Automatize o processo e acompanhe os resultados](/images/posts/como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re-6.webp)
+![Automatiza el proceso y sigue los resultados](/images/posts/como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re-6.webp)
 
 Además de facilitar el control, la app permite generar informes mensuales como:
 

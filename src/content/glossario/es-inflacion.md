@@ -17,7 +17,7 @@ La inflación es el aumento general de los precios. Cuando la inflación sube, e
 
 ## ¿Cómo se mide?
 
-El principal índice es el **IPCA** (Índice de Precios al Consumidor Amplio), calculado por la oficina de estadísticas. Mide la variación de precios de una canasta de productos y servicios consumidos por las familias.
+El principal índice es el **índice de precios al consumidor** (Índice de Precios al Consumidor Amplio), calculado por la oficina de estadísticas. Mide la variación de precios de una canasta de productos y servicios consumidos por las familias.
 
 ## ¿Por qué importa para tus finanzas?
 
@@ -29,6 +29,6 @@ Si tus inversiones rinden menos que la inflación, estás **perdiendo dinero** e
 ## ¿Cómo protegerse?
 
 - Invierte en activos que rindan por encima de la inflación
-- Bonos del gobierno IPCA+ garantizan [rendimiento](/es/posts/es-montando-cartera-diversificada-con-r-500) real
+- Bonos del gobierno indexados al **índice de precios al consumidor** garantizan [rendimiento](/es/posts/es-montando-cartera-diversificada-con-r-500) real
 - Diversifica entre [renta fija](/es/glossario/es-renta-fija) y variable
-- Sigue el IPCA mensual
+- Sigue el **índice de precios al consumidor** mensual

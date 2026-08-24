@@ -1,6 +1,6 @@
 ---
 title: "Índice FinMoovi del Costo de Vida — Junio/2026"
-description: "IPCA de junio/2026 por grupo de gasto: índice general en 0,16% en el mes y 4,64% en 12 meses. Cambio de cierre y consejos para proteger tu bolsillo."
+description: "Índice de precios al consumidor de junio/2026 por grupo de gasto: índice general 0,16% en el mes y 4,64% en 12 meses. Tipo de cambio y consejos para proteger tu bolsillo."
 image: "/images/posts/indice-finmoovi-custo-de-vida-junho-2026.webp"
 imageAlt: "Escritorio con portátiles, tazas y plantas bajo luz cálida de ventana."
 category: "cotacoes"
@@ -17,13 +17,13 @@ seo:
   keywords: ["ipca junio 2026","índice de costo de vida","inflación por grupo de gasto","cotización dólar cierre"]
 ---
 
-En junio de 2026, el costo de vida subió 0,16 % según el IPCA general divulgado por la oficina de estadísticas, indicando un aumento modesto en los precios al consumidor ese mes. Este ajuste refleja la variación acumulada de 4,64 % en los últimos 12 meses, mostrando que la [inflación](/es/glossario/es-inflacion) aún presiona la cartera, aunque el ritmo mensual ha sido relativamente bajo.
+En junio de 2026, el costo de vida subió 0,16 % según el **índice de precios al consumidor** general divulgado por la oficina de estadísticas, indicando un aumento modesto en los precios al consumidor ese mes. Este ajuste refleja la variación acumulada de 4,64 % en los últimos 12 meses, mostrando que la [inflación](/es/glossario/es-inflacion) aún presiona la cartera, aunque el ritmo mensual ha sido relativamente bajo.
 
 ## IPCA de Junio por grupo de gasto
 
 | Grupo de gasto | Variación en el mes | Acumulado 12 meses |
 | --- | --- | --- |
-| Índice general (IPCA) | 0,16% | 4,64% |
+| Índice general (**índice de precios al consumidor**) | 0,16% | 4,64% |
 | Alimentos y bebidas | -0,24% | 3,82% |
 | Vivienda | 0,63% | 5,85% |
 | Artículos del hogar | 0,23% | 0,69% |
@@ -41,7 +41,7 @@ En junio de 2026, el costo de vida subió 0,16 % según el IPCA general divulg
 | Dólar (USD/EUR) | €0,91 |
 | Euro (EUR) | €1,04 |
 
-*Fuentes: IPCA/oficina de estadísticas (variación por grupo de gasto) y cotizaciones AwesomeAPI de cierre del mes. Índice editorial producido por FinMoovi.*
+*Fuentes: índice de precios al consumidor/oficina de estadísticas (variación por grupo de gasto) y cotizaciones AwesomeAPI de cierre del mes. Índice editorial producido por FinMoovi.*
 
 ## Destacados del mes
 
@@ -60,16 +60,16 @@ La categoría de alimentación y bebidas retrocedió 0,24 % en el mes, alivian
 
 ## Preguntas frecuentes
 
-### ¿Qué significa la variación de 0,16 % del IPCA en junio?
+### ¿Qué significa la variación de 0,16 % del **índice de precios al consumidor** en junio?  
 Significa que, en promedio, los precios al consumidor aumentaron 0,16 % en el mes, un ritmo de alza relativamente bajo comparado con períodos de mayor inflación.
 
-### ¿Por qué la vivienda está presionando el bolsillo?
+### ¿Por qué la vivienda está presionando el bolsillo?  
 El aumento de 0,63 % en los precios de la vivienda refleja reajustes de alquileres y facturas de servicios, que son gastos fijos y de gran peso en el presupuesto familiar.
 
-### ¿Cómo ayuda la caída en alimentación al consumidor?
+### ¿Cómo ayuda la caída en alimentación al consumidor?  
 La reducción de 0,24 % en los precios de alimentos y bebidas disminuye el costo de las compras en el supermercado, ofreciendo un alivio temporal en los gastos mensuales.  
 
-### ¿La inflación anual de 4,64 % sigue siendo preocupante?
+### ¿La inflación anual de 4,64 % sigue siendo preocupante?  
 Sí, aunque el ritmo mensual sea bajo, el aumento acumulado de 4,64 % en los últimos 12 meses indica que los precios siguen subiendo, exigiendo atención al [planificación financiera](/es/posts/es-como-crear-un-presupuesto-personal-en-5-pasos-simples).
 
 ---
