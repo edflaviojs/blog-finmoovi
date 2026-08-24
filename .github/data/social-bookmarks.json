@@ -1398,5 +1398,85 @@
         "status": 200
       }
     }
+  },
+  {
+    "slug": "como-controlar-seu-fluxo-de-caixa-pessoal-em-2026",
+    "title": "Como controlar seu fluxo de caixa pessoal em 2026",
+    "url": "https://blog.finmoovi.com/posts/como-controlar-seu-fluxo-de-caixa-pessoal-em-2026",
+    "submittedAt": "2026-08-24T15:29:55.812Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1833109331
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "como-cortar-custos-no-supermercado-e-ainda-comer-bem",
+    "title": "Como cortar custos no supermercado e ainda comer bem",
+    "url": "https://blog.finmoovi.com/posts/como-cortar-custos-no-supermercado-e-ainda-comer-bem",
+    "submittedAt": "2026-08-24T15:29:56.448Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1833109333
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "como-transformar-a-ida-ao-supermercado-em-economia-real-2026",
+    "title": "Como transformar a ida ao supermercado em economia real (2026)",
+    "url": "https://blog.finmoovi.com/posts/como-transformar-a-ida-ao-supermercado-em-economia-real-2026",
+    "submittedAt": "2026-08-24T15:29:56.839Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1833109336
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "como-montar-sua-tabela-de-economia-2026-e-controlar-gastos",
+    "title": "Como montar sua tabela de economia 2026 e controlar gastos",
+    "url": "https://blog.finmoovi.com/posts/como-montar-sua-tabela-de-economia-2026-e-controlar-gastos",
+    "submittedAt": "2026-08-24T15:29:57.239Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1833109338
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
   }
 ]
