@@ -184,5 +184,11 @@
     "gancho": "depois-de-anos",
     "turno": "noite",
     "em": "2026-08-23T05:04:38.163Z"
+  },
+  {
+    "situacao": "pagar-a-vista",
+    "gancho": "nunca-faca",
+    "turno": "manha",
+    "em": "2026-08-24T05:10:18.722Z"
   }
 ]

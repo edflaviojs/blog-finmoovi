@@ -1,0 +1,117 @@
+{
+  "slug": "loop-pagar-a-vista-nunca-faca",
+  "formato": "loop16",
+  "term": "Pagar à vista e pedir desconto",
+  "category": "vida",
+  "keyword": "DESCONTO",
+  "situacao": "pagar-a-vista",
+  "gancho": "nunca-faca",
+  "ganchoFamilia": "nunca faça",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "duas-portas",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Nunca faça isso com a compra à vista. Eu vi ontem.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "compra",
+          "visual": {
+            "type": "statement",
+            "text": "Compra à vista"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "vista",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "duas-portas"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu fiquei calado na loja e paguei sem pedir desconto.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "fiquei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "duas-portas"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "calado",
+          "visual": {
+            "type": "statement",
+            "text": "Fiquei calado na loja"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então hoje eu pergunto o preço à vista e economizo.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "pergunto",
+          "visual": {
+            "type": "statement",
+            "text": "Pergunto antes de pagar"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "preço",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "duas-portas"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Nunca faça isso com a compra à vista sem perguntar antes.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "compra",
+          "visual": {
+            "type": "statement",
+            "text": "Nunca faça isso"
+          }
+        },
+        {
+          "anchor": "vista",
+          "visual": {
+            "type": "statement",
+            "text": "Compra à vista"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
