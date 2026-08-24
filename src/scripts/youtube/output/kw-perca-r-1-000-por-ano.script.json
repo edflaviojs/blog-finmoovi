@@ -1,0 +1,214 @@
+{
+  "slug": "kw-perca-r-1-000-por-ano",
+  "term": "Perca R$ 1.000 por ano?",
+  "category": "investimento",
+  "keyword": "Perca",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "*Perca mil reais por ano* sem entender o CDI?"
+  },
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "bola-neve",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Perca mil reais por ano sem entender o CDI? Seu investimento pode estar rendendo menos do que poderia, e você nem percebe.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "Perca",
+          "visual": {
+            "type": "number",
+            "text": "R$ 1.000"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "investimento",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-neve"
+          }
+        },
+        {
+          "anchor": "menos",
+          "visual": {
+            "type": "statement",
+            "text": "Rendimento abaixo do potencial"
+          },
+          "sfx": "alert"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Isso acontece porque a gente olha o dinheiro na conta e acha que tá tudo certo. Só que o CDI tá ali por trás.",
+      "durationSec": 9.2,
+      "shots": [
+        {
+          "anchor": "Isso",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          }
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-neve"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "trás",
+          "visual": {
+            "type": "statement",
+            "text": "O CDI fica por trás"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Por trás dele, existe uma referência usada nos investimentos de renda fixa. E escolher uma taxa ruim pode deixar dinheiro na mesa.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "existe",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-neve"
+          }
+        },
+        {
+          "anchor": "investimentos",
+          "visual": {
+            "type": "chart",
+            "text": "Renda fixa"
+          },
+          "sfx": "typewriter"
+        },
+        {
+          "anchor": "taxa",
+          "visual": {
+            "type": "statement",
+            "text": "Taxa ruim deixa dinheiro"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei meus investimentos no FinMoovi e ele mostrou a comparação entre as opções. A diferença apareceu direto na tela.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "joguei",
+          "visual": {
+            "type": "statement",
+            "text": "Compare antes de escolher"
+          },
+          "sfx": "click"
+        },
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Dashboard do FinMoovi mostrando os investimentos e a comparação de rendimento"
+          }
+        },
+        {
+          "anchor": "diferença",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-neve"
+          },
+          "sfx": "coin"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "statement",
+            "text": "Descubra o seu resultado"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "number",
+            "text": "7 dias grátis"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Entender o CDI ajuda você a escolher melhor onde deixar seu dinheiro. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "Entender",
+          "visual": {
+            "type": "statement",
+            "text": "Escolha melhor onde investir"
+          }
+        },
+        {
+          "anchor": "melhor",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-neve"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro sem controle custa caro"
+          },
+          "sfx": "thud"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja quanto seu dinheiro pode render",
+    "target": "app"
+  },
+  "totalDurationSec": 45
+}
