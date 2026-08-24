@@ -5174,5 +5174,126 @@
         "publicaEmBR": "24/08 às 14h31"
       }
     }
+  },
+  "kw-5-erros-que-voce-pode-cometer-na-fatura-do-cartao": {
+    "midias": {
+      "video": {
+        "id": "2184ecd4-d902-493f-afb9-686df9609129",
+        "name": "pKcMuWZ1oh.mp4",
+        "originalName": null,
+        "path": "https://media.help4desk.com/pKcMuWZ1oh.mp4",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capa": {
+        "id": "35d27c56-e7e6-41ee-97ae-e66a62dccb12",
+        "name": "kGX9SQwTex.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/kGX9SQwTex.jpeg",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capaLarga": {
+        "id": "eed33f10-cecc-4cad-b6d8-ad4050c31d35",
+        "name": "W5BX2uqaf2.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/W5BX2uqaf2.jpeg",
+        "thumbnail": null,
+        "alt": null
+      },
+      "telegram": {
+        "media": {
+          "id": "199c6af5-f32b-411f-bca6-9e2250438683",
+          "name": "R0VFuie8S8.mp4",
+          "originalName": null,
+          "path": "https://media.help4desk.com/R0VFuie8S8.mp4",
+          "thumbnail": null,
+          "alt": null
+        },
+        "bytes": 18290032,
+        "comprimido": true
+      }
+    },
+    "publicaEm": "2026-08-24T22:00:00.000Z",
+    "publicaEmBR": "24/08 às 19h00",
+    "agendadoEm": "2026-08-24T15:58:56.084Z",
+    "atualizadoEm": "2026-08-24T15:58:59.236Z",
+    "redes": {
+      "instagram": {
+        "postId": "cmt7f85lq00b0s390jc5lhc9g",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-08-24T22:00:00.000Z",
+        "publicaEmBR": "24/08 às 19h00",
+        "midia": "o vídeo",
+        "caracteres": 781,
+        "limite": 2200
+      },
+      "facebook": {
+        "postId": "cmt7f85ze00b1s390msdm5rbh",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-08-24T22:26:00.000Z",
+        "publicaEmBR": "24/08 às 19h26",
+        "midia": "o vídeo",
+        "caracteres": 551,
+        "limite": 63206
+      },
+      "linkedin-page": {
+        "postId": "cmt7f86a300b2s390vhm6q3k2",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-08-24T22:43:00.000Z",
+        "publicaEmBR": "24/08 às 19h43",
+        "midia": "o vídeo",
+        "caracteres": 477,
+        "limite": 3000
+      },
+      "threads": {
+        "postId": "cmt7f86l300b3s390v3zn9r4k",
+        "canal": "finmoovi",
+        "publicaEm": "2026-08-24T22:58:00.000Z",
+        "publicaEmBR": "24/08 às 19h58",
+        "midia": "o vídeo",
+        "caracteres": 139,
+        "limite": 500
+      },
+      "telegram": {
+        "postId": "cmt7f86vx00b4s390tx3ynu10",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-08-24T23:14:00.000Z",
+        "publicaEmBR": "24/08 às 20h14",
+        "midia": "o vídeo, numa cópia de 17.4 MB — o Telegram recusa acima de 20 MB quando vai buscar por endereço",
+        "caracteres": 420,
+        "limite": 4096
+      },
+      "pinterest": {
+        "postId": "cmt7f87i700b5s390ndqt685s",
+        "canal": "finmoovi",
+        "publicaEm": "2026-08-24T23:31:00.000Z",
+        "publicaEmBR": "24/08 às 20h31",
+        "midia": "vídeo primeiro, capa depois — a ordem que o Pinterest exige",
+        "caracteres": 426,
+        "limite": 500
+      },
+      "bluesky": {
+        "postId": "cmt7f87sv00b6s390sqcuyw1d",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-08-24T23:47:00.000Z",
+        "publicaEmBR": "24/08 às 20h47",
+        "midia": "vai a capa DEITADA (o Bluesky não publica vídeo, e a em pé ficaria cortada no feed)",
+        "caracteres": 96,
+        "limite": 300
+      },
+      "instagram-story": {
+        "postId": "cmt7f881b00b7s390xvxteajj",
+        "tipo": "vídeo",
+        "publicaEm": "2026-08-24T22:05:00.000Z",
+        "publicaEmBR": "24/08 às 19h05"
+      },
+      "facebook-story": {
+        "postId": "cmt7f886400b8s390v3d7q9mn",
+        "tipo": "vídeo",
+        "publicaEm": "2026-08-24T22:31:00.000Z",
+        "publicaEmBR": "24/08 às 19h31"
+      }
+    }
   }
 }
