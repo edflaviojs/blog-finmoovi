@@ -538,5 +538,23 @@
     ],
     "veredito": "**Análise dos quadros parados (0.1s → 16.3s)**\n\n**1. O LOOP — Nota: 3/10**  \nO primeiro quadro e o último não mostram a mesma coisa. O início tem “Meu delivery virou hábito” e o final repete essa frase, mas a posição e o contexto mudaram. Não parece um reinício invisível.\n\n**2. A FAIXA DE BAIXO — Nota: 8/10**  \nA parte inferior está relativamente livre. O texto fica mais no centro/baixo, mas não parece coberto pela interface do Shorts/Reels.\n\n**3. TEXTO POR CIMA DE TEXTO — Nota: 5/10**  \nHá alguns momentos com palavras destacadas sobre outras palavras (“descobri”, “delivery”, “jantar”), criando sensação de sobreposição. Não parece cortado, mas pode confundir rápido no celular.\n\n**4. LEGIBILIDADE — Nota: 7/10**  \nO texto principal é grande e tem bom contraste. As frases menores na parte inferior são mais difíceis de ler em uma tela pequena.\n\n**5. A TELA ESTÁ VIVA OU VAZIA? — Nota: 6/10**  \nExistem áreas grandes de fundo vazio. O visual é bonito, mas alguns quadros parecem parados demais, principalmente quando só há texto e espaço negativo.\n\n**6. COERÊNCIA — Nota: 8/10**  \nOs quadros parecem pertencer ao mesmo vídeo: mesma identidade visual, cores e tema. A sequência conta uma pequena história sobre mudança de hábito.\n\n**7. TESTE CENTRAL — Nota: 6/10**  \nParece mais uma sequência de slides animados do que um vídeo profissional, porque muitos quadros dependem apenas de texto aparecendo em fundos semelhantes.\n\nNOTA GERAL: 6  \nPROBLEMA 1: O loop não fecha bem: quadro 1 (0.1s) e quadro 8 (16.3s) não são idênticos, então a reinicialização fica perceptível.  \nPROBLEMA 2: Quadro 6 (11.7s) tem pouca informação visual e parece uma pausa vazia.  \nPROBLEMA 3: Quadros 2 e 3 (2.3s e 4.7s) têm palavras destacadas que podem deixar a leitura confusa.  \nPRIMEIRA COISA A MUDAR: Fazer o último quadro terminar exatamente no mesmo estado visual do primeiro para criar um loop invisível.",
     "quando": "2026-08-23T05:07:18.827Z"
+  },
+  {
+    "slug": "loop-pagar-a-vista-nunca-faca",
+    "formato": "loop16",
+    "nota": 7,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14
+    ],
+    "veredito": "1. **O LOOP — Nota: 6/10**  \nO primeiro quadro e o último têm o mesmo estilo e fundo, mas não são a mesma cena. Começa com “Compra à vista” e termina praticamente igual, porém o texto menor e a posição mudam. O reinício pode ser percebido.\n\n2. **A FAIXA DE BAIXO — Nota: 8/10**  \nNão há informação crítica muito baixa. O texto inferior aparece perto da área de risco, mas parece estar acima dos botões da plataforma.\n\n3. **TEXTO POR CIMA DE TEXTO — Nota: 7/10**  \nHá alguns quadros com palavras separadas e frases quebradas (“à vista”, “vi ontem”, “perguntar antes”), dando sensação de montagem em pedaços. Não parece haver texto cortado pela borda.\n\n4. **LEGIBILIDADE — Nota: 8/10**  \nO texto principal é grande e tem bom contraste. As palavras menores embaixo podem ficar difíceis de ler em celular.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — Nota: 7/10**  \nAlguns quadros têm bastante espaço vazio no fundo roxo. A composição funciona, mas poderia ter mais elementos visuais para prender atenção.\n\n6. **COERÊNCIA — Nota: 8/10**  \nOs quadros parecem fazer parte do mesmo vídeo, com identidade visual consistente. A sequência conta uma ideia, mas algumas transições entre frases parecem bruscas.\n\n7. **TESTE CENTRAL — Nota: 7/10**  \nParece mais um conjunto de slides animados do que um vídeo profissional, porque muitos quadros dependem apenas de texto parado no centro.\n\nNOTA GERAL: 7\nPROBLEMA 1: Loop fraco — quadro 0.1s e quadro 14s não são exatamente iguais, então o reinício pode ser percebido.\nPROBLEMA 2: Alguns quadros parecem vazios e dependem demais de texto parado (principalmente 2s e 12s).\nPROBLEMA 3: Texto secundário dividido em palavras soltas reduz a sensação de vídeo fluido (quadros 2s, 4s e 14s).\nPRIMEIRA COISA A MUDAR: Fazer o último quadro terminar exatamente no mesmo enquadramento do primeiro para criar um loop invisível.",
+    "quando": "2026-08-24T05:13:06.511Z"
   }
 ]
