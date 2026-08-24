@@ -26,7 +26,7 @@ The solution starts **before** you even step inside the store. Open FinMoovi and
 
 ## Meal planning as the foundation of savings
 
-When you map out the weekly menu, impulse buys disappear and the risk of food expiring in the fridge drops dramatically. Set aside a weekend moment to jot down, in FinMoovi, the dishes you plan to prepare. The app lets you categorize each meal (breakfast, lunch, dinner) and, with a single click on **“generate shopping list,”** it automatically builds the needed items, already populated with average market prices.
+When you map out the weekly menu, impulse buys disappear and the risk of food expiring in the fridge drops dramatically. Set aside a weekend moment to jot down, in FinMoovi, the dishes you plan to prepare. The app lets you categorize each meal (breakfast, lunch, dinner) and, with a single click on **“generate [shopping list](/en/posts/en-how-to-cut-grocery-costs-and-still-eat-well),”** it automatically builds the needed items, already populated with average market prices.
 
 This habit creates a **visual budget**: you see, category by category, how much Monday’s lunch will cost compared to Friday’s dinner. The result? Fewer “just because” items and more focus on what you’ll actually eat.
 

@@ -19,7 +19,7 @@ seo:
   keywords: ["back to school","cheap school supplies","back to school budget"]
 ---
 
-The morning starts with the beep of the supermarket checkout, and your eight‑year‑old is already pointing at every notebook, pencil and snack on the shelf. You’ve got the shopping list in hand, but your heart races as the cart fills up like a cardboard vault and the [family budget](/en/posts/en-how-to-gift-on-father-s-day-without-spending-much-7-budget) seems to disappear faster than the last slice of bread. This scene plays out in many households: the pressure to get everything the school asks for without blowing the bank account.
+The morning starts with the beep of the supermarket checkout, and your eight‑year‑old is already pointing at every notebook, pencil and snack on the shelf. You’ve got the [shopping list](/en/posts/en-how-to-cut-grocery-costs-and-still-eat-well) in hand, but your heart races as the cart fills up like a cardboard vault and the [family budget](/en/posts/en-how-to-gift-on-father-s-day-without-spending-much-7-budget) seems to disappear faster than the last slice of bread. This scene plays out in many households: the pressure to get everything the school asks for without blowing the bank account.
 
 **The fix begins with one simple step in FinMoovi:** snap a photo of the receipt for the school‑supply haul, let the app automatically categorize each item, and in a few seconds see how much you’ve already spent on “Study Materials.” In five minutes you have a clear picture and can decide on the spot what to keep and what to postpone.
 

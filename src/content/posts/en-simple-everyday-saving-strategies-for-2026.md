@@ -43,7 +43,7 @@ One of the simplest yet most effective rules is to make sure fixed [costs](/en/p
 
 ## Turn impulse buys into conscious choices
 
-Most unexpected purchases happen when we’re on “autopilot.” A strategy that works well is FinMoovi’s “shopping mode”: create a shopping list inside the app, and you’ll see a real‑time estimate of the total. While you’re in the store, tick off only the items you truly need. If the total starts to climb too high, the app sends a gentle alert, reminding you that the item can wait. Those few seconds are often enough to rethink whether you really need that product.
+Most unexpected purchases happen when we’re on “autopilot.” A strategy that works well is FinMoovi’s “shopping mode”: create a [shopping list](/en/posts/en-how-to-cut-grocery-costs-and-still-eat-well) inside the app, and you’ll see a real‑time estimate of the total. While you’re in the store, tick off only the items you truly need. If the total starts to climb too high, the app sends a gentle alert, reminding you that the item can wait. Those few seconds are often enough to rethink whether you really need that product.
 
 ---
 

@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-24T11:17:47.362Z",
-  "sourceCursor": 0,
+  "updatedAt": "2026-08-24T13:02:18.163Z",
+  "sourceCursor": 1,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -1032,9 +1032,11 @@
       "category": null,
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "used",
       "addedAt": "2026-08-04T15:02:40.427Z",
-      "finmooviHook": "enviado via /status 04/08"
+      "finmooviHook": "enviado via /status 04/08",
+      "usedAt": "2026-08-24T13:02:18.163Z",
+      "usedBy": "gerar-post-orcamento"
     },
     {
       "keyword": "qual é a melhor forma de guardar dinheiro​",

@@ -26,7 +26,7 @@ A solução começa antes mesmo de você entrar no supermercado. Ao abrir o FinM
 
 ## Planejamento de refeições como base da economia
 
-Quando você planeja o cardápio da semana, elimina compras por impulso e reduz o risco de alimentos que vencem na geladeira. Reserve um momento no fim de semana para anotar, no FinMoovi, os pratos que pretende preparar. O app permite categorizar cada refeição (café, almoço, jantar) e, ao clicar em “gerar lista de compras”, ele monta automaticamente os itens necessários, já com preços médios de mercado.
+Quando você planeja o cardápio da semana, elimina compras por impulso e reduz o risco de alimentos que vencem na geladeira. Reserve um momento no fim de semana para anotar, no FinMoovi, os pratos que pretende preparar. O app permite categorizar cada refeição (café, almoço, jantar) e, ao clicar em “gerar [lista de compras](/posts/como-cortar-custos-no-supermercado-e-ainda-comer-bem)”, ele monta automaticamente os itens necessários, já com preços médios de mercado.
 
 Esse hábito cria um **[orçamento visual](/posts/como-organizar-seu-dinheiro-com-um-app-facil-de-usar)**: você vê, categoria por categoria, quanto o almoço de segunda‑feira vai custar comparado ao jantar de sexta‑feira. O resultado? Menos itens “por acaso” e mais foco no que realmente será consumido.
 
