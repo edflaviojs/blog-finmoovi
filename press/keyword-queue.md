@@ -1,24 +1,15 @@
 # 🗂️ Fila de Keywords (Fase 3)
 
-**Atualizado em:** 2026-08-17T07:41:56.244Z
-**Totais:** 77 pendente(s) · 48 usada(s) · 53 pulada(s)
+**Atualizado em:** 2026-08-24T07:48:27.404Z
+**Totais:** 72 pendente(s) · 61 usada(s) · 56 pulada(s)
 
 ## ⏳ Pendentes por fonte
 
-### Manuais (prioridade 1) — 72
+### Manuais (prioridade 1) — 61
 
-- fatura do cartão _(glossario)_
-- categoria de despesa _(glossario)_
-- teto de gastos _(glossario)_
-- despesa recorrente _(glossario)_
-- controle de gastos _(glossario)_
-- planejamento financeiro _(glossario)_
-- custo de vida _(glossario)_
 - parcelamento _(glossario)_
 - renda mensal _(glossario)_
 - lista de compras _(glossario)_
-- app financas gratis
-- contas do dia
 - cartao de credito pagbank como funciona _(glossario)_
 - como funciona a anuidade do cartão _(glossario)_
 - como funciona a amortização de financiamento _(glossario)_
@@ -30,8 +21,6 @@
 - como funciona financiamento de moto _(glossario)_
 - como funciona financiamento de veiculo _(glossario)_
 - como funciona minha casa minha vida financiamento _(glossario)_
-- tabela para economizar dinheiro​
-- supermercado economizando​
 - supermercado economiza​
 - qual é a melhor forma de guardar dinheiro​
 - qual o melhor horário para tomar banho e economizar energia​
@@ -80,32 +69,37 @@
 - o que levar para comer na praia para economizar
 - por que é importante economizar energia elétrica
 
-### Lacunas do GSC (prioridade 2) — 5
+### Lacunas do GSC (prioridade 2) — 2
 
-- invertir en etfs
-- wealth management
-- fundo de investimento
-- volatility
-- acciónes
+- flujo de caja
+- outstanding balance
 
-### Autocomplete (prioridade 3) — 0
+### Autocomplete (prioridade 3) — 9
 
-_Nenhuma._
+- parcelamento mei _(glossario)_
+- parcelamento simples nacional _(glossario)_
+- parcelamento ipva _(glossario)_
+- renda mensal o que é _(glossario)_
+- renda mensal vitalicia _(glossario)_
+- renda mensal do neymar _(glossario)_
+- lista de compras supermercado _(glossario)_
+- lista de compras do mês _(glossario)_
+- lista de compras completa _(glossario)_
 
 ## ✅ Últimas usadas
 
 | Keyword | Usada por | Em |
 |---|---|---|
-| custo de vida na espanha | glossario-auto-diario | 2026-08-16 |
-| orçamento gratis | gerar-dicas-financeiras | 2026-08-16 |
-| custo de vida no paraguai | glossario-auto-diario | 2026-08-15 |
-| excel despesas | gerar-dicas-financeiras | 2026-08-15 |
-| planejamento financeiro planilha | glossario-auto-diario | 2026-08-14 |
-| app finanças pessoais | gerar-dicas-financeiras | 2026-08-14 |
-| planejamento financeiro familiar | glossario-auto-diario | 2026-08-13 |
-| orçamento familiar excel | gerar-dicas-financeiras | 2026-08-13 |
-| planejamento financeiro pessoal | glossario-auto-diario | 2026-08-12 |
-| renta variable | gerar-post-investimentos | 2026-08-12 |
+| custo de vida | glossario-auto-diario | 2026-08-23 |
+| supermercado economizando​ | gerar-dicas-financeiras | 2026-08-23 |
+| planejamento financeiro | glossario-auto-diario | 2026-08-22 |
+| tabela para economizar dinheiro​ | gerar-dicas-financeiras | 2026-08-22 |
+| controle de gastos | glossario-auto-diario | 2026-08-21 |
+| acciónes | gerar-dicas-financeiras | 2026-08-21 |
+| despesa recorrente | glossario-auto-diario | 2026-08-20 |
+| teto de gastos | glossario-auto-diario | 2026-08-19 |
+| contas do dia | gerar-post-investimentos | 2026-08-19 |
+| volatility | gerar-dicas-financeiras | 2026-08-19 |
 
 ## ⏭️ Puladas (já cobertas)
 
@@ -120,11 +114,14 @@ _Nenhuma._
 - kyc (coberto-glossario)
 - kyc o que é (coberto-glossario)
 - kyc shopee (nome-proprio-local)
+- fatura do cartão (colide-com-verbete-existente)
 - fluxo de caixa sebrae (nome-proprio-local)
 - saldo devedor cohab mg (nome-proprio-local)
 - saldo devedor caixa (nome-proprio-local)
 - saldo devedor facta (nome-proprio-local)
 - fatura do cartão casas bahia (nome-proprio-local)
+- wealth management (coberto-glossario)
+- fundo de investimento (coberto-glossario)
 - fatura do cartão atacadão (nome-proprio-local)
 - categoria de despesas (variacao-duplicada)
 - teto de gastos governo lula (fora-do-nicho)

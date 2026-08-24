@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T11:10:51.746Z",
+  "updatedAt": "2026-08-24T07:48:27.404Z",
   "sourceCursor": 1,
   "entries": [
     {
@@ -1750,6 +1750,94 @@
       "addedAt": "2026-08-10T08:20:10.978Z",
       "usedAt": "2026-08-16T11:10:13.230Z",
       "usedBy": "glossario-auto-diario"
+    },
+    {
+      "keyword": "flujo de caja",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-08-24T07:48:27.005Z"
+    },
+    {
+      "keyword": "outstanding balance",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-08-24T07:48:27.005Z"
+    },
+    {
+      "keyword": "parcelamento mei",
+      "category": "glossario",
+      "priority": 3,
+      "source": "autocomplete",
+      "status": "pending",
+      "addedAt": "2026-08-24T07:48:27.401Z"
+    },
+    {
+      "keyword": "parcelamento simples nacional",
+      "category": "glossario",
+      "priority": 3,
+      "source": "autocomplete",
+      "status": "pending",
+      "addedAt": "2026-08-24T07:48:27.401Z"
+    },
+    {
+      "keyword": "parcelamento ipva",
+      "category": "glossario",
+      "priority": 3,
+      "source": "autocomplete",
+      "status": "pending",
+      "addedAt": "2026-08-24T07:48:27.401Z"
+    },
+    {
+      "keyword": "renda mensal o que é",
+      "category": "glossario",
+      "priority": 3,
+      "source": "autocomplete",
+      "status": "pending",
+      "addedAt": "2026-08-24T07:48:27.401Z"
+    },
+    {
+      "keyword": "renda mensal vitalicia",
+      "category": "glossario",
+      "priority": 3,
+      "source": "autocomplete",
+      "status": "pending",
+      "addedAt": "2026-08-24T07:48:27.401Z"
+    },
+    {
+      "keyword": "renda mensal do neymar",
+      "category": "glossario",
+      "priority": 3,
+      "source": "autocomplete",
+      "status": "pending",
+      "addedAt": "2026-08-24T07:48:27.402Z"
+    },
+    {
+      "keyword": "lista de compras supermercado",
+      "category": "glossario",
+      "priority": 3,
+      "source": "autocomplete",
+      "status": "pending",
+      "addedAt": "2026-08-24T07:48:27.403Z"
+    },
+    {
+      "keyword": "lista de compras do mês",
+      "category": "glossario",
+      "priority": 3,
+      "source": "autocomplete",
+      "status": "pending",
+      "addedAt": "2026-08-24T07:48:27.403Z"
+    },
+    {
+      "keyword": "lista de compras completa",
+      "category": "glossario",
+      "priority": 3,
+      "source": "autocomplete",
+      "status": "pending",
+      "addedAt": "2026-08-24T07:48:27.403Z"
     }
   ]
 }
