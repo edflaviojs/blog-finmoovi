@@ -1,0 +1,117 @@
+{
+  "slug": "loop-assinaturas-esquecidas-nunca-faca",
+  "formato": "loop16",
+  "term": "As assinaturas que ninguém cancela",
+  "category": "vida",
+  "keyword": "ASSINATURA",
+  "situacao": "assinaturas-esquecidas",
+  "gancho": "nunca-faca",
+  "ganchoFamilia": "nunca faça",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "balde-furado",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Nunca faça isso com a fatura. Eu vi assinaturas esquecidas.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "fatura",
+          "visual": {
+            "type": "statement",
+            "text": "Fatura com assinaturas"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "assinaturas",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Comigo aconteceu em casa, e pagava serviços que ninguém usava.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "Comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "Serviços esquecidos em casa"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então conferi tudo e agora cancelo o que fica parado.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "conferi",
+          "visual": {
+            "type": "statement",
+            "text": "Cortei o que parado"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "cancelo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Nunca faça isso com a fatura. Eu olho assinaturas antes de pagar.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "fatura",
+          "visual": {
+            "type": "statement",
+            "text": "Olho antes da fatura"
+          }
+        },
+        {
+          "anchor": "assinaturas",
+          "visual": {
+            "type": "statement",
+            "text": "Fatura com assinaturas"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
