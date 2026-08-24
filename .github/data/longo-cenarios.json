@@ -25,13 +25,16 @@
     {
       "slug": "dono-dois-homens-mesma-idade-mesmo-trabalho",
       "cenarios": [
+        "a fatura do cartão",
+        "o boleto",
+        "a conta de luz",
         "a aposentadoria"
       ],
-      "fio": "ampulheta",
+      "fio": "relogio",
       "elenco": "uma mãe e uma filha já adulta, cada uma na sua fase da vida",
       "funcaoDoApp": "categorias",
-      "promessa": "Vou te mostrar como uma escolha simples na previdência pode separar o dinheiro que só guarda do dinheiro que ajuda na aposentadoria",
-      "em": "2026-08-15"
+      "promessa": "Vou te mostrar como uma escolha mensal separou duas aposentadorias com o mesmo salário",
+      "em": "2026-08-24"
     }
   ]
 }
