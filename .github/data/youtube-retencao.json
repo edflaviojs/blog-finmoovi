@@ -1,11 +1,11 @@
 {
-  "medidoEm": "2026-08-17T08:31:53.287Z",
+  "medidoEm": "2026-08-24T08:37:08.072Z",
   "resumo": {
-    "videosMedidos": 39,
-    "comAudiencia": 32,
+    "videosMedidos": 60,
+    "comAudiencia": 52,
     "comCurva": 5,
-    "viewsTotais": 1148,
-    "percentagemMediaDoCanal": 4.197062500000001,
+    "viewsTotais": 1700,
+    "percentagemMediaDoCanal": 6.788542307692309,
     "metadeSaiAosSegundos": 11.2,
     "ficamAte3s": 1.07032,
     "ficamAte50pc": 0.36971999999999994,
@@ -16,10 +16,22 @@
     "visualizacoesMinimas": 10,
     "abaixo": [
       {
+        "slug": "loop-material-escolar-se-parar",
+        "videoId": "b32W6oUkMNQ",
+        "percentagemMedia": 0,
+        "views": 10
+      },
+      {
         "slug": "loop-primeiro-guardado-depois-de-anos",
         "videoId": "p6RFQTzJ340",
         "percentagemMedia": 0.2992,
-        "views": 254
+        "views": 253
+      },
+      {
+        "slug": "loop-reserva-emergencia-faca-isso",
+        "videoId": "-dnPYUrfMRc",
+        "percentagemMedia": 0.3075,
+        "views": 109
       },
       {
         "slug": "kw-erro-ao-usar-amortizacao-price-r-200-mil-a-mais-no-financiam",
@@ -43,7 +55,7 @@
         "slug": "regra-50-30-20-real",
         "videoId": "jfhJ4HeEEJo",
         "percentagemMedia": 0.4779,
-        "views": 12
+        "views": 13
       },
       {
         "slug": "juros-compostos",
@@ -70,6 +82,12 @@
         "views": 29
       },
       {
+        "slug": "loop-trocar-divida-cara-ta-perdendo",
+        "videoId": "WAm6MZFTQwY",
+        "percentagemMedia": 0.6135,
+        "views": 14
+      },
+      {
         "slug": "kw-5-erros-que-aumentam-seu-saldo-devedor",
         "videoId": "EX-IlDW7ZjA",
         "percentagemMedia": 0.6473,
@@ -79,10 +97,10 @@
         "slug": "loop-reforma-banheiro-se-parar",
         "videoId": "0xXemMB9l7g",
         "percentagemMedia": 0.6806,
-        "views": 438
+        "views": 439
       }
     ],
-    "julgados": 19
+    "julgados": 26
   },
   "videos": [
     {
@@ -313,7 +331,7 @@
       "publicadoEm": "2026-08-09",
       "privacidade": "public",
       "duracaoSeg": 13,
-      "views": 438,
+      "views": 439,
       "minutosTotais": 13,
       "duracaoMediaSeg": 8,
       "percentagemMedia": 0.6806,
@@ -413,7 +431,7 @@
       "publicadoEm": "2026-08-11",
       "privacidade": "public",
       "duracaoSeg": 49,
-      "views": 12,
+      "views": 13,
       "minutosTotais": 2,
       "duracaoMediaSeg": 23,
       "percentagemMedia": 0.4779,
@@ -478,7 +496,7 @@
       "publicadoEm": "2026-08-13",
       "privacidade": "public",
       "duracaoSeg": 19,
-      "views": 254,
+      "views": 253,
       "minutosTotais": 5,
       "duracaoMediaSeg": 5,
       "percentagemMedia": 0.2992,
@@ -526,10 +544,10 @@
       "publicadoEm": "2026-08-14",
       "privacidade": "public",
       "duracaoSeg": 18,
-      "views": 1,
+      "views": 5,
       "minutosTotais": 0,
-      "duracaoMediaSeg": 0,
-      "percentagemMedia": 0,
+      "duracaoMediaSeg": 8,
+      "percentagemMedia": 0.4611,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
     },
@@ -539,6 +557,10 @@
       "publicadoEm": "2026-08-14",
       "privacidade": "public",
       "duracaoSeg": 52,
+      "views": 2,
+      "minutosTotais": 0,
+      "duracaoMediaSeg": 14,
+      "percentagemMedia": 0.2692,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
     },
@@ -548,7 +570,7 @@
       "publicadoEm": "2026-08-14",
       "privacidade": "public",
       "duracaoSeg": 18,
-      "views": 2,
+      "views": 3,
       "minutosTotais": 0,
       "duracaoMediaSeg": 0,
       "percentagemMedia": 0,
@@ -561,6 +583,10 @@
       "publicadoEm": "2026-08-15",
       "privacidade": "public",
       "duracaoSeg": 16,
+      "views": 5,
+      "minutosTotais": 55,
+      "duracaoMediaSeg": 3304,
+      "percentagemMedia": 206.5402,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
     },
@@ -570,6 +596,10 @@
       "publicadoEm": "2026-08-15",
       "privacidade": "public",
       "duracaoSeg": 60,
+      "views": 1,
+      "minutosTotais": 0,
+      "duracaoMediaSeg": 0,
+      "percentagemMedia": 0,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
     },
@@ -579,6 +609,10 @@
       "publicadoEm": "2026-08-15",
       "privacidade": "public",
       "duracaoSeg": 19,
+      "views": 2,
+      "minutosTotais": 0,
+      "duracaoMediaSeg": 0,
+      "percentagemMedia": 0,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
     },
@@ -588,6 +622,10 @@
       "publicadoEm": "2026-08-16",
       "privacidade": "public",
       "duracaoSeg": 18,
+      "views": 3,
+      "minutosTotais": 0,
+      "duracaoMediaSeg": 0,
+      "percentagemMedia": 0,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
     },
@@ -597,6 +635,10 @@
       "publicadoEm": "2026-08-16",
       "privacidade": "public",
       "duracaoSeg": 54,
+      "views": 268,
+      "minutosTotais": 29,
+      "duracaoMediaSeg": 244,
+      "percentagemMedia": 4.5328,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
     },
@@ -606,6 +648,251 @@
       "publicadoEm": "2026-08-16",
       "privacidade": "public",
       "duracaoSeg": 16,
+      "views": 17,
+      "minutosTotais": 2,
+      "duracaoMediaSeg": 33,
+      "percentagemMedia": 2.1203,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "loop-decimo-terceiro-nao-vai-acreditar",
+      "videoId": "NTJxayaV88s",
+      "publicadoEm": "2026-08-17",
+      "privacidade": "public",
+      "duracaoSeg": 20,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "kw-despesas-fora-de-controle",
+      "videoId": "XOCVmLuTxiI",
+      "publicadoEm": "2026-08-17",
+      "privacidade": "public",
+      "duracaoSeg": 55,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "loop-ipva-e-iptu-nao-vai-acreditar",
+      "videoId": "It07lW03rbY",
+      "publicadoEm": "2026-08-17",
+      "privacidade": "public",
+      "duracaoSeg": 18,
+      "views": 1,
+      "minutosTotais": 0,
+      "duracaoMediaSeg": 0,
+      "percentagemMedia": 0,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "loop-reserva-emergencia-faca-isso",
+      "videoId": "-dnPYUrfMRc",
+      "publicadoEm": "2026-08-18",
+      "privacidade": "public",
+      "duracaoSeg": 20,
+      "views": 109,
+      "minutosTotais": 1,
+      "duracaoMediaSeg": 6,
+      "percentagemMedia": 0.3075,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "poupanca-vs-cdb",
+      "videoId": "T5WjFs_zbnw",
+      "publicadoEm": "2026-08-18",
+      "privacidade": "public",
+      "duracaoSeg": 51,
+      "views": 2,
+      "minutosTotais": 0,
+      "duracaoMediaSeg": 0,
+      "percentagemMedia": 0,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "loop-remedio-todo-mes-faca-isso",
+      "videoId": "Ee-6Sdchm6A",
+      "publicadoEm": "2026-08-18",
+      "privacidade": "public",
+      "duracaoSeg": 16,
+      "views": 5,
+      "minutosTotais": 0,
+      "duracaoMediaSeg": 4,
+      "percentagemMedia": 0.2688,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "loop-limpar-o-nome-se-parar",
+      "videoId": "QcSTOMDvjmo",
+      "publicadoEm": "2026-08-19",
+      "privacidade": "public",
+      "duracaoSeg": 17,
+      "views": 9,
+      "minutosTotais": 0,
+      "duracaoMediaSeg": 6,
+      "percentagemMedia": 0.3874,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "kw-r-200-de-assinatura-o-que-vira-em-12-meses",
+      "videoId": "Fz90EOZEjdQ",
+      "publicadoEm": "2026-08-19",
+      "privacidade": "public",
+      "duracaoSeg": 54,
+      "views": 1,
+      "minutosTotais": 0,
+      "duracaoMediaSeg": 0,
+      "percentagemMedia": 0,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "loop-material-escolar-se-parar",
+      "videoId": "b32W6oUkMNQ",
+      "publicadoEm": "2026-08-19",
+      "privacidade": "public",
+      "duracaoSeg": 14,
+      "views": 10,
+      "minutosTotais": 0,
+      "duracaoMediaSeg": 0,
+      "percentagemMedia": 0,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "loop-trocar-divida-cara-ta-perdendo",
+      "videoId": "WAm6MZFTQwY",
+      "publicadoEm": "2026-08-20",
+      "privacidade": "public",
+      "duracaoSeg": 17,
+      "views": 14,
+      "minutosTotais": 0,
+      "duracaoMediaSeg": 10,
+      "percentagemMedia": 0.6135,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "kw-custo-de-vida",
+      "videoId": "KrVrkXRLm-4",
+      "publicadoEm": "2026-08-20",
+      "privacidade": "public",
+      "duracaoSeg": 57,
+      "views": 1,
+      "minutosTotais": 0,
+      "duracaoMediaSeg": 9,
+      "percentagemMedia": 0.174,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "loop-gas-acabou-ta-perdendo",
+      "videoId": "BCuSkTIkBLk",
+      "publicadoEm": "2026-08-20",
+      "privacidade": "public",
+      "duracaoSeg": 16,
+      "views": 68,
+      "minutosTotais": 2,
+      "duracaoMediaSeg": 13,
+      "percentagemMedia": 0.8151999999999999,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "loop-conta-so-das-contas-ninguem-fala",
+      "videoId": "WzDA5pYhjRg",
+      "publicadoEm": "2026-08-21",
+      "privacidade": "public",
+      "duracaoSeg": 16,
+      "views": 20,
+      "minutosTotais": 1,
+      "duracaoMediaSeg": 18,
+      "percentagemMedia": 1.1338,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "100-reais-por-dia",
+      "videoId": "NLWgdFG22RQ",
+      "publicadoEm": "2026-08-21",
+      "privacidade": "public",
+      "duracaoSeg": 50,
+      "views": 1,
+      "minutosTotais": 0,
+      "duracaoMediaSeg": 0,
+      "percentagemMedia": 0,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "loop-aniversario-do-filho-ninguem-fala",
+      "videoId": "hsUtCD2RudM",
+      "publicadoEm": "2026-08-21",
+      "privacidade": "public",
+      "duracaoSeg": 13,
+      "views": 7,
+      "minutosTotais": 0,
+      "duracaoMediaSeg": 13,
+      "percentagemMedia": 1.0744,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "loop-dividir-sem-brigar-comeca-assim",
+      "videoId": "VbtDXoEDo6c",
+      "publicadoEm": "2026-08-22",
+      "privacidade": "public",
+      "duracaoSeg": 18,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "kw-5-erros-que-te-impedem-de-poupar-r-1-000-por-mes",
+      "videoId": "oJSXmhzVfLk",
+      "publicadoEm": "2026-08-22",
+      "privacidade": "public",
+      "duracaoSeg": 49,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "loop-presente-de-natal-comeca-assim",
+      "videoId": "s-rlTP43-Ls",
+      "publicadoEm": "2026-08-22",
+      "privacidade": "public",
+      "duracaoSeg": 17,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "loop-plano-de-saude-subiu-depois-de-anos",
+      "videoId": "BmMFc1Oktzw",
+      "publicadoEm": "2026-08-23",
+      "privacidade": "public",
+      "duracaoSeg": 16,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "kw-5-erros-que-voce-pode-cometer-na-fatura-do-cartao",
+      "videoId": "6YXcISESKdQ",
+      "publicadoEm": "2026-08-23",
+      "privacidade": "public",
+      "duracaoSeg": 56,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "loop-delivery-de-sexta-depois-de-anos",
+      "videoId": "32HdE6zxnVs",
+      "publicadoEm": "2026-08-23",
+      "privacidade": "public",
+      "duracaoSeg": 17,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
     }
