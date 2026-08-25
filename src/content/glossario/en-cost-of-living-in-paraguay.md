@@ -28,10 +28,10 @@ The phrase “custo de vida no Paraguai” is simply the amount of money you nee
 
 ## How it impacts your personal budget
 
-When you know the real cost of living, you can decide if a job offer, a remote‑work contract, or a retirement plan is viable. Without that knowledge, you might end up spending more than you earn, borrowing to cover groceries, or missing out on savings opportunities. The impact shows up in three main ways:
+When you know the real [cost of living](/en/glossario/en-cost-of-living), you can decide if a job offer, a remote‑work contract, or a retirement plan is viable. Without that knowledge, you might end up spending more than you earn, borrowing to cover groceries, or missing out on savings opportunities. The impact shows up in three main ways:
 
-- **Cash flow gaps:** Money leaves the account faster than it arrives, forcing you to dip into emergency funds.
-- **Hidden inflation:** Small price increases (like a slightly higher bus fare) accumulate and erode purchasing power.
+- **[Cash flow](/en/glossario/en-cash-flow) gaps:** Money leaves the account faster than it arrives, forcing you to dip into emergency funds.
+- **Hidden [inflation](/en/glossario/en-inflation):** Small price increases (like a slightly higher bus fare) accumulate and erode purchasing power.
 - **Opportunity cost:** Money tied up in everyday expenses can’t be invested in assets that grow over time.
 
 ## Estimating the real numbers
@@ -64,8 +64,8 @@ FinMoovi solves the budgeting headache with a single, intuitive feature: **smart
 
 Beyond smart capture, FinMoovi offers:
 
-- Real‑time cash‑flow reports that show where your money goes each week.
-- Monthly planning tools where you set goals (e.g., “save the equivalent of two months’ rent”) and track progress.
+- Real‑time cash‑flow [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end) that show where your money goes each week.
+- Monthly [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) tools where you set goals (e.g., “save the equivalent of two months’ rent”) and track progress.
 - Integration with credit‑card statements, so bills appear as a single line item instead of dozens of separate purchases.
 - Shopping mode, which lets you create a list, add items on the fly, and see the total cost update instantly.
 - Reminders and balance alerts that warn you when you’re close to overspending in a category.
@@ -77,7 +77,7 @@ All these features work together to keep the “custo de vida no Paraguai” vis
 
 **Practical tip:** Take a photo of every receipt with FinMoovi’s smart capture; the app will categorize it automatically, so you always know how much you’ve spent on food, transport, or leisure.
 
-**Practical tip:** Set a monthly spending limit for each category in the app and enable balance alerts; when you approach the limit, FinMoovi sends a push notification, helping you curb impulse buys.
+**Practical tip:** Set a monthly [spending limit](/en/glossario/en-spending-limit) for each category in the app and enable balance alerts; when you approach the limit, FinMoovi sends a push notification, helping you curb impulse buys.
 
 **Practical tip:** Use the multi‑currency view to compare your local expenses with the purchasing power of your foreign earnings; this reveals whether you’re truly saving or just spending more in local terms.
 

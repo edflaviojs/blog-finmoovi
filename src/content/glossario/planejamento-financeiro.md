@@ -27,14 +27,14 @@ Planejamento financeiro é a prática de organizar suas receitas e despesas de m
 
 ## Por que a maioria das pessoas sente que o dinheiro escapa
 
-Muitos sentem que o dinheiro desaparece antes do fim do mês porque não há um mapa claro do fluxo de caixa. Alguns motivos comuns são:
+Muitos sentem que o dinheiro desaparece antes do fim do mês porque não há um mapa claro do [fluxo de caixa](/glossario/fluxo-de-caixa). Alguns motivos comuns são:
 
 - Gastos impulsivos com itens que parecem pequenos, como um café por dia ou um lanche extra, que somam quase o valor de um aluguel.
 - Falta de registro das despesas, o que impede a visualização de padrões de consumo.
-- Uso de cartões de crédito sem controle, gerando faturas que parecem impossíveis de pagar.
+- Uso de cartões de [crédito](/glossario/credito) sem controle, gerando faturas que parecem impossíveis de pagar.
 - Ausência de metas definidas, fazendo com que o dinheiro seja gasto em qualquer coisa que apareça.
 
-Esses fatores criam um ciclo de ansiedade e falta de controle, dificultando a realização de projetos como viajar, comprar um carro ou montar uma reserva de emergência.
+Esses fatores criam um ciclo de ansiedade e falta de controle, dificultando a realização de projetos como viajar, comprar um carro ou montar uma [reserva de emergência](/ferramentas/calculadora-reserva).
 
 ## Como montar um plano simples em cinco passos
 
@@ -52,7 +52,7 @@ A boa notícia é que você pode criar um planejamento financeiro eficaz em pouc
 
 ## Ferramentas que dão suporte ao seu plano
 
-Hoje em dia, aplicativos de finanças pessoais facilitam cada etapa do planejamento. Um exemplo que funciona como um assistente de bolso é o FinMoovi. Ele oferece:
+Hoje em dia, [aplicativos](/posts/5-alternativas-ao-mobills-em-2026) de finanças pessoais facilitam cada etapa do planejamento. Um exemplo que funciona como um assistente de bolso é o FinMoovi. Ele oferece:
 
 - Captura inteligente: tire foto da nota fiscal ou grave a voz ao pagar, e o app reconhece o valor e a categoria automaticamente.
 - Categorização automática: despesas são agrupadas em categorias como alimentação, transporte ou lazer sem que você precise digitar nada.
@@ -69,7 +69,7 @@ Hoje em dia, aplicativos de finanças pessoais facilitam cada etapa do planejame
 Manter o planejamento financeiro não precisa ser um sacrifício. Experimente estas sugestões:
 
 - **Dica prática:** registre cada gasto em até 60 segundos usando a captura inteligente do FinMoovi; assim você evita acumular recibos e tem tudo organizado instantaneamente.
-- **Dica prática:** reserve, logo após receber a renda, um percentual equivalente ao preço de um café por dia para a sua reserva de emergência; isso cria um hábito de poupança sem sentir falta.
+- **Dica prática:** reserve, logo após receber a renda, um percentual equivalente ao preço de um café por dia para a sua [reserva de emergência](/glossario/reserva-de-emergencia); isso cria um hábito de [poupança](/glossario/poupanca) sem sentir falta.
 - **Dica prática:** revise os limites mensais toda segunda-feira; ajuste o que estiver fora de realidade e celebre as categorias que ficaram dentro do orçamento.
 
 Além disso, mantenha a disciplina revisando os relatórios semanais e ajustando metas conforme necessário. Pequenos ajustes evitam grandes desvios no futuro.

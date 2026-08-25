@@ -20,7 +20,7 @@ seo:
 
 ## O que é planejamento financeiro familiar  
 
-A maioria das famílias sente aquele aperto no fim do mês: a conta de luz chega mais alta, o carro precisa de manutenção e ainda falta dinheiro para a viagem que estava nos planos. Esse desconforto acontece porque não há um mapa que mostre para onde o dinheiro está indo e como ele pode ser distribuído de forma equilibrada. Planejamento financeiro familiar é exatamente isso – um conjunto de decisões e ações que organizam receitas (o que entra) e despesas (o que sai) de modo a garantir que as necessidades básicas sejam cobertas, que haja reserva para imprevistos e ainda espaço para realizar sonhos. Em termos simples, é como montar um roteiro de viagem: você define o destino, calcula quanto precisa gastar e escolhe a melhor rota para chegar lá sem ficar sem combustível.
+A maioria das famílias sente aquele aperto no fim do mês: a conta de luz chega mais alta, o carro precisa de manutenção e ainda falta dinheiro para a viagem que estava nos planos. Esse desconforto acontece porque não há um mapa que mostre para onde o dinheiro está indo e como ele pode ser distribuído de forma equilibrada. [Planejamento financeiro](/glossario/planejamento-financeiro) familiar é exatamente isso – um conjunto de decisões e [ações](/glossario/acoes) que organizam receitas (o que entra) e despesas (o que sai) de modo a garantir que as necessidades básicas sejam cobertas, que haja reserva para imprevistos e ainda espaço para realizar sonhos. Em termos simples, é como montar um roteiro de viagem: você define o destino, calcula quanto precisa gastar e escolhe a melhor rota para chegar lá sem ficar sem combustível.
 
 ![O que é planejamento financeiro familiar  ](/images/glossario/planejamento-financeiro-familiar-inline-1.webp)
 
@@ -33,9 +33,9 @@ Mesmo sabendo da importância, muitas famílias não conseguem manter o plano po
 - **Falta de visibilidade:** as despesas ficam espalhadas em anotações, planilhas ou na memória, o que dificulta o acompanhamento.  
 - **Desconexão entre membros:** quando cada pessoa controla seu próprio dinheiro, o gasto total da casa sai do controle.  
 - **Objetivos pouco claros:** sem metas específicas (como “economizar o equivalente a duas mensalidades de academia”), o esforço parece vago e desmotivador.  
-- **Imprevistos não previstos:** emergências médicas ou reparos inesperados podem destruir a reserva se não houver um fundo de emergência bem definido.
+- **Imprevistos não previstos:** emergências mé[dicas](/posts/7-erros-financeiros-iniciante) ou reparos inesperados podem destruir a reserva se não houver um fundo de emergência bem definido.
 
-Essas barreiras criam um ciclo de ansiedade e decisões impulsivas, como usar o cartão de crédito para cobrir despesas básicas, gerando juros que aumentam ainda mais o desequilíbrio.
+Essas barreiras criam um ciclo de ansiedade e decisões impulsivas, como usar o cartão de [crédito](/glossario/credito) para cobrir despesas básicas, gerando juros que aumentam ainda mais o desequilíbrio.
 
 ## Como montar um plano simples e eficaz  
 
@@ -49,7 +49,7 @@ Começar não precisa ser complicado. O segredo está em dividir o processo em p
 2. **Registre cada gasto:** desde o aluguel até o preço de um café por dia.  
 3. **Classifique as despesas:** essenciais (moradia, alimentação), não essenciais (lazer, assinaturas) e variáveis (contas de energia, combustível).  
 4. **Defina metas de curto e longo prazo:** montar uma reserva equivalente a três meses de despesas, comprar um carro usado, financiar a educação dos filhos.  
-5. **Acompanhe o fluxo de caixa:** compare o que entrou com o que saiu e ajuste as categorias quando necessário.  
+5. **Acompanhe o [fluxo de caixa](/glossario/fluxo-de-caixa):** compare o que entrou com o que saiu e ajuste as categorias quando necessário.  
 
 **Dica prática:** ao registrar um gasto, anote imediatamente a categoria (ex.: “supermercado”) e o valor aproximado; isso evita que a memória distorça o número depois.  
 
@@ -79,7 +79,7 @@ Para que o plano financeiro não se torne apenas mais uma lista de tarefas, é i
 - **Reunião mensal de finanças:** reserve 30 minutos no fim do mês para revisar os relatórios do FinMoovi, celebrar metas alcançadas e ajustar categorias que ficaram fora do esperado.  
 - **Divisão de responsabilidades:** cada adulto pode ficar responsável por uma categoria (ex.: um cuida das contas de energia, outro das compras de supermercado), usando o app para registrar tudo em conjunto.  
 - **Uso de alertas como lembrete de disciplina:** configure o FinMoovi para enviar um alerta quando o gasto em lazer ultrapassar o limite definido; isso funciona como um “freio” imediato.  
-- **Celebrar pequenas vitórias:** ao alcançar a reserva de emergência equivalente a três meses de despesas, faça uma comemoração simples, como um jantar caseiro, reforçando a motivação.
+- **Celebrar pequenas vitórias:** ao alcançar a [reserva de emergência](/ferramentas/calculadora-reserva) equivalente a três meses de despesas, faça uma comemoração simples, como um jantar caseiro, reforçando a motivação.
 
 Essas práticas criam um ciclo positivo: mais controle gera menos ansiedade, o que permite decisões mais racionais e, consequentemente, maior prosperidade financeira.
 

@@ -38,7 +38,7 @@ Las debentures son títulos de deuda emitidos por empresas. Cuando compras una d
 
 ## Riesgos
 
-- **Riesgo de crédito:** empresa puede no pagar (no tiene fondo de garantía)
+- **Riesgo de [crédito](/es/glossario/es-credito):** empresa puede no pagar (no tiene fondo de garantía)
 - **Riesgo de [liquidez](/es/glossario/es-liquidez):** puede ser difícil vender antes del vencimiento
 - **Riesgo de mercado:** precio puede oscilar si se vende antes
 

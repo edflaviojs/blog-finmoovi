@@ -33,11 +33,11 @@ Imagina que decides que el gasto mensual en comida no debe superar el equivalent
 - **Captura inteligente:** tomas una foto del recibo o usas la voz para registrar la compra; la app reconoce el monto y la categoría automáticamente.  
 - **Categorización automática:** el algoritmo asigna la compra a “comida”, “transporte” u otra categoría sin que tengas que mover fichas.  
 - **Multimoneda:** funciona igual si pagas en dólares, euros o cualquier otra moneda; el límite se mantiene en tu moneda base.  
-- **Flujo de caja e informes:** ves en tiempo real cuánto has gastado y cuánto queda disponible en cada techo.  
-- **Planificación mensual y metas:** estableces metas de ahorro y la app muestra el progreso día a día.  
-- **Tarjetas de crédito y facturas:** enlazas tus tarjetas y la app importa los gastos de la factura, evitando duplicados.  
-- **Modo compras:** creas una lista de la compra y la app muestra el total acumulado mientras vas añadiendo ítems.  
-- **Recordatorios y alertas de saldo:** recibes avisos cuando el saldo de tu cuenta está bajo o cuando el techo está próximo a romperse.  
+- **[Flujo de caja](/es/glossario/es-flujo-de-caja) e informes:** ves en tiempo real cuánto has gastado y cuánto queda disponible en cada techo.  
+- **[Planificación mensual](/es/posts/es-como-organizar-tu-dinero-con-una-app-facil-de-usar) y metas:** estableces metas de [ahorro](/es/glossario/es-ahorro) y la app muestra el progreso día a día.  
+- **Tarjetas de [crédito](/es/glossario/es-credito) y facturas:** enlazas tus tarjetas y la app importa los gastos de la factura, evitando duplicados.  
+- **Modo compras:** creas una [lista de la compra](/es/posts/es-como-recortar-gastos-en-el-supermercado-y-seguir-comiendo) y la app muestra el total acumulado mientras vas añadiendo ítems.  
+- **Recordatorios y [alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no) de saldo:** recibes avisos cuando el saldo de tu cuenta está bajo o cuando el techo está próximo a romperse.  
 - **Offline / PWA / sincronización:** puedes registrar gastos sin conexión y la información se sincroniza cuando vuelves a estar online.  
 
 ## Herramientas de FinMoovi que te facilitan el control

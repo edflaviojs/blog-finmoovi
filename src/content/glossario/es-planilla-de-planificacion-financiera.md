@@ -20,7 +20,7 @@ seo:
 
 ## El dolor de no saber a dónde se va el dinero
 
-¿Te ha pasado que al final del mes te preguntas cómo lograste gastar casi el equivalente a un alquiler en cosas que ni recuerdas haber comprado? Esa sensación de sorpresa (y a veces de culpa) es típica cuando no llevas un registro claro de tus ingresos y gastos. Sin una visión concreta, cualquier intento de ahorrar o invertir se vuelve una apuesta: no sabes si puedes destinar “un café al día” a un fondo de emergencia o si ese gasto extra ya está comprometido. La falta de organización también genera estrés al recibir la factura de la tarjeta de crédito y no reconocer varios cargos. En resumen, la incertidumbre financiera te roba tranquilidad y oportunidades.
+¿Te ha pasado que al final del mes te preguntas cómo lograste gastar casi el equivalente a un alquiler en cosas que ni recuerdas haber comprado? Esa sensación de sorpresa (y a veces de culpa) es típica cuando no llevas un registro claro de tus ingresos y gastos. Sin una visión concreta, cualquier intento de ahorrar o invertir se vuelve una apuesta: no sabes si puedes destinar “un café al día” a un [fondo de emergencia](/es/glossario/es-fondo-de-emergencia) o si ese gasto extra ya está comprometido. La falta de organización también genera estrés al recibir la [factura de la tarjeta](/es/glossario/es-factura-de-la-tarjeta) de crédito y no reconocer varios cargos. En resumen, la incertidumbre financiera te roba tranquilidad y oportunidades.
 
 ![El dolor de no saber a dónde se va el dinero](/images/glossario/planejamento-financeiro-planilha-inline-1.webp)
 
@@ -28,7 +28,7 @@ seo:
 
 ## Qué es una planilla de planificación financiera
 
-Una planilla de planificación financiera es simplemente una tabla donde anotas tus ingresos, gastos, metas y el progreso de cada una. No necesitas ser un experto en Excel; la idea es tener un documento estructurado que te permita ver de un vistazo cuánto entra, cuánto sale y cuánto queda para tus objetivos. Cada fila representa una transacción (por ejemplo, “supermercado” o “salario”) y cada columna clasifica la información (fecha, categoría, monto, moneda). Con esa base, puedes crear presupuestos mensuales, proyectar ahorros y comparar diferentes escenarios sin complicaciones.
+Una planilla de [planificación financiera](/es/glossario/es-planificacion-financiera) es simplemente una tabla donde anotas tus ingresos, gastos, metas y el progreso de cada una. No necesitas ser un experto en Excel; la idea es tener un documento estructurado que te permita ver de un vistazo cuánto entra, cuánto sale y cuánto queda para tus objetivos. Cada fila representa una transacción (por ejemplo, “supermercado” o “salario”) y cada columna clasifica la información (fecha, categoría, monto, moneda). Con esa base, puedes crear presupuestos mensuales, proyectar ahorros y comparar diferentes escenarios sin complicaciones.
 
 ## Ventajas de usar una planilla digital vs papel
 
@@ -49,11 +49,11 @@ FinMoovi toma la idea de la planilla y la lleva al siguiente nivel con tecnolog�
 - Captura inteligente: toma una foto del recibo o graba la voz y la app reconoce el monto y la categoría.
 - Categorización automática: el algoritmo asigna cada gasto a “alimentación”, “transporte”, “entretenimiento”, etc., sin que tengas que decidirlo.
 - Multimoneda: registra en la moneda que prefieras (dólar, euro, etc.) y la app muestra el equivalente en tu moneda base.
-- Flujo de caja e informes: visualiza en gráficos cuánto entra y sale, detecta tendencias y genera reportes mensuales.
+- [Flujo de caja](/es/glossario/es-flujo-de-caja) e informes: visualiza en gráficos cuánto entra y sale, detecta tendencias y genera reportes mensuales.
 - Planificación mensual y metas: define un objetivo (por ejemplo, “ahorrar el precio de un viaje”) y la app muestra cuánto debes reservar cada semana.
 - Tarjetas de crédito y facturas: enlaza tus tarjetas y la app importa los movimientos, agrupándolos por ciclo de facturación.
-- Modo compras: crea una lista de la compra, ve el total en tiempo real y recibe alertas si superas el presupuesto.
-- Recordatorios y alertas de saldo: notificaciones cuando el saldo de tu cuenta corriente está bajo o cuando una factura está próxima a vencer.
+- Modo compras: crea una lista de la compra, ve el total en tiempo real y recibe [alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no) si superas el presupuesto.
+- Recordatorios y [alertas de saldo](/es/posts/es-como-organizar-tu-dinero-con-una-app-facil-de-usar): notificaciones cuando el saldo de tu cuenta corriente está bajo o cuando una factura está próxima a vencer.
 - Offline / PWA / sincronización: funciona como una aplicación web progresiva, puedes usarla sin internet y tus datos se sincronizan al volver a conectarte.
 
 ## Pasos para crear tu propia planilla con FinMoovi

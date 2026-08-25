@@ -19,7 +19,7 @@ seo:
 
 ## Feeling stuck with money
 
-You’ve probably noticed that at the end of the month you’re either scrambling to cover the rent or wondering where the money for that spontaneous weekend trip disappeared. The bank statement looks like a mystery novel, and you can’t tell if you’re overspending on coffee, paying too much for a streaming service, or simply forgetting a recurring subscription. That uneasy feeling of “I’m always one step behind” is the exact problem financial planning aims to solve.
+You’ve probably noticed that at the end of the month you’re either scrambling to cover the rent or wondering where the money for that spontaneous weekend trip disappeared. The bank statement looks like a mystery novel, and you can’t tell if you’re overspending on coffee, paying too much for a streaming service, or simply forgetting a recurring subscription. That uneasy feeling of “I’m always one step behind” is the exact problem financial [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) aims to solve.
 
 ![Feeling stuck with money](/images/glossario/planejamento-financeiro-inline-1.webp)
 
@@ -27,7 +27,7 @@ You’ve probably noticed that at the end of the month you’re either scramblin
 
 ## What financial planning really means
 
-Financial planning isn’t a fancy term reserved for accountants; it’s simply a roadmap that turns your vague goals—like “save for a vacation” or “pay off that credit card”—into concrete, day‑to‑day actions. Think of it as setting a budget for each category (food, transport, entertainment) and then checking in daily to see if you’re still on track. When you break down big ambitions into small, manageable limits, you gain control and can adjust on the fly instead of waiting for the next paycheck.
+Financial planning isn’t a fancy term reserved for accountants; it’s simply a roadmap that turns your vague goals—like “save for a vacation” or “pay off that [credit](/en/glossario/en-credit) card”—into concrete, day‑to‑day actions. Think of it as setting a budget for each category (food, transport, entertainment) and then checking in daily to see if you’re still on track. When you break down big ambitions into small, manageable limits, you gain control and can adjust on the fly instead of waiting for the next paycheck.
 
 ## How FinMoovi’s smart capture makes planning effortless
 
@@ -42,12 +42,12 @@ Imagine snapping a photo of today’s grocery receipt with your phone, and the a
 
 ## Key components of a solid plan
 
-- **Cash flow overview** – A visual summary of money coming in versus going out, updated automatically as you capture receipts.  
+- **[Cash flow](/en/glossario/en-cash-flow) overview** – A visual summary of money coming in versus going out, updated automatically as you capture receipts.  
 - **Category limits** – Pre‑defined spending caps for each area of life, based on your income and goals.  
 - **Goal tracking** – Dedicated sections for short‑term targets (like a weekend getaway) and long‑term aspirations (such as a down‑payment on a house).  
 - **Credit‑card integration** – Syncs your card statements, so you see upcoming bills before they hit your account.  
 - **Shopping mode** – Create a list before you head out, and watch a real‑time total update as you add items, preventing surprise overspends.  
-- **Reminders & alerts** – Push notifications warn you when balances dip low or when a recurring payment is due.  
+- **[Reminders](/en/posts/en-forgot-to-pay-a-bill-how-to-fix-it-in-2026) & alerts** – [Push notifications](/en/posts/en-how-to-never-miss-a-bill-payment-deadline-simple-5-minute) warn you when balances dip low or when a recurring payment is due.  
 - **Offline access** – Even without internet, you can capture expenses; everything syncs once you’re back online.
 
 ## Practical tips to keep on track
@@ -61,7 +61,7 @@ Imagine snapping a photo of today’s grocery receipt with your phone, and the a
 Beyond these, remember to:
 
 - Keep your goals visible: Pin the “vacation fund” or “emergency stash” to your home screen for daily motivation.  
-- Review your multi‑currency balances weekly if you travel often; the app’s conversion tool shows you exactly how much you’ve spent abroad in home‑currency terms.  
+- Review your [multi‑currency](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using) balances weekly if you travel often; the app’s conversion tool shows you exactly how much you’ve spent abroad in home‑currency terms.  
 - Use the shopping mode for big purchases; the running total helps you stay within the “price of a month’s rent” ceiling you’ve set for that category.
 
 ## Start today

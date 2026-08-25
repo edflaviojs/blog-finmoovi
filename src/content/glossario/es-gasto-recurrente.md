@@ -33,10 +33,10 @@ Un gasto recurrente es cualquier desembolso que ocurre de forma regular —seman
 - Suscripciones a plataformas de streaming (el precio de un café al día)
 - Cuotas de gimnasio o clases de yoga
 - Seguros de auto o salud
-- Pago de una tarjeta de crédito (factura mensual)
+- Pago de una tarjeta de [crédito](/es/glossario/es-credito) (factura mensual)
 
 ## Cómo identificar tus gastos recurrentes
-El primer paso para tomar el control es reconocer cuáles son esos pagos que se repiten sin que los notes. **Consejo práctico:** revisa tu extracto bancario de los últimos tres meses y marca cada línea que aparezca al menos dos veces. Luego, agrupa los ítems por categoría (vivienda, servicios, ocio, etc.). Con esa lista clara, podrás ver cuánto representa cada categoría en tu flujo de caja.
+El primer paso para tomar el control es reconocer cuáles son esos pagos que se repiten sin que los notes. **Consejo práctico:** revisa tu extracto bancario de los últimos tres meses y marca cada línea que aparezca al menos dos veces. Luego, agrupa los ítems por categoría (vivienda, servicios, ocio, etc.). Con esa lista clara, podrás ver cuánto representa cada categoría en tu [flujo de caja](/es/glossario/es-flujo-de-caja).
 
 ## Herramientas para gestionarlos: FinMoovi al rescate
 Aquí es donde entra FinMoovi, la app que actúa como tu asistente financiero personal. Imagina que, al registrar una factura de luz, simplemente tomas una foto o la dictas con tu voz; FinMoovi reconoce el monto, la fecha y la categoría, y lo guarda automáticamente. Además, la app soporta varias monedas, por lo que si viajas o recibes ingresos en dólares o euros, todo se convierte al mismo panel sin complicaciones.
@@ -49,10 +49,10 @@ Aquí es donde entra FinMoovi, la app que actúa como tu asistente financiero pe
 - **Categorización automática:** el algoritmo asigna la categoría (servicio, suscripción, etc.) sin que tengas que elegirla manualmente.
 - **Multimoneda:** maneja BRL, USD, EUR y cualquier otra moneda que necesites.
 - **Flujo de caja e informes:** visualiza ingresos y egresos en gráficos claros; los gastos recurrentes aparecen como líneas fijas mes a mes.
-- **Planificación mensual y metas:** define cuánto quieres ahorrar y la app te muestra si tus gastos recurrentes lo permiten.
+- **[Planificación mensual](/es/posts/es-como-organizar-tu-dinero-con-una-app-facil-de-usar) y metas:** define cuánto quieres ahorrar y la app te muestra si tus gastos recurrentes lo permiten.
 - **Tarjetas de crédito y facturación:** enlaza tus tarjetas; FinMoovi trae la factura completa y la desglosa.
-- **Modo compras:** crea una lista de la compra; el total se actualiza en tiempo real mientras añades productos.
-- **Recordatorios y alertas de saldo:** recibe notificaciones cuando se acerque la fecha de un pago o cuando el saldo sea bajo.
+- **Modo compras:** crea una [lista de la compra](/es/posts/es-como-recortar-gastos-en-el-supermercado-y-seguir-comiendo); el total se actualiza en tiempo real mientras añades productos.
+- **Recordatorios y [alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no) de saldo:** recibe notificaciones cuando se acerque la fecha de un pago o cuando el saldo sea bajo.
 - **Offline / PWA / sincronización:** funciona sin conexión y guarda los datos en la nube para que los tengas siempre actualizados.
 
 Con FinMoovi, basta con lanzar una vez un gasto como recurrente y la app lo repite en el flujo de caja cada mes, sin volver a escribirlo. Así, tu presupuesto se mantiene actualizado sin esfuerzo.
@@ -67,4 +67,4 @@ Otras tácticas útiles incluyen:
 - **Crear un “fondo de gastos recurrentes”:** destina una pequeña cantidad cada mes a una cuenta separada; así tendrás siempre el dinero listo para esos pagos.
 
 ## Empieza hoy
-Dedica cinco minutos a abrir FinMoovi, toma una foto de tu última factura de luz y marca la opción “recurrente”. La app hará el resto: guardará el gasto, lo incluirá en tu flujo de caja mensual y te enviará una alerta antes de la próxima fecha de vencimiento. Con ese pequeño paso, ya tendrás un control mucho más claro de tus finanzas.
+Dedica cinco minutos a abrir FinMoovi, toma una foto de tu última factura de luz y marca la opción “recurrente”. La app hará el resto: guardará el gasto, lo incluirá en tu flujo de caja mensual y te enviará una alerta antes de la próxima fecha de [vencimiento](/es/posts/es-olvidaste-pagar-una-factura-y-te-quedaste-sin-dinero-como). Con ese pequeño paso, ya tendrás un control mucho más claro de tus finanzas.

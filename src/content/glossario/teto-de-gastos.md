@@ -20,7 +20,7 @@ seo:
 
 ## O que é teto de gastos  
 
-Imagine que, ao final do mês, você percebe que gastou quase o equivalente a dois aluguéis em compras de supermercado, enquanto ainda tem contas de luz e internet para pagar. Esse descompasso acontece porque não há um limite definido para cada tipo de despesa. O “teto de gastos” é exatamente isso: um valor máximo que você decide não ultrapassar em uma categoria (como alimentação, lazer ou transporte) durante um período determinado. Quando o limite é respeitado, sobra dinheiro para outras prioridades ou para a reserva de emergência.  
+Imagine que, ao final do mês, você percebe que gastou quase o equivalente a dois aluguéis em compras de supermercado, enquanto ainda tem contas de luz e internet para pagar. Esse descompasso acontece porque não há um limite definido para cada tipo de despesa. O “teto de gastos” é exatamente isso: um valor máximo que você decide não ultrapassar em uma categoria (como alimentação, lazer ou transporte) durante um período determinado. Quando o limite é respeitado, sobra dinheiro para outras prioridades ou para a [reserva de emergência](/glossario/reserva-de-emergencia).  
 
 ![O que é teto de gastos  ](/images/glossario/teto-de-gastos-inline-1.webp)
 
@@ -48,18 +48,18 @@ Definir um teto não precisa ser um bicho de sete cabeças. Comece com passos si
 - Estime quanto seria confortável gastar no próximo mês, considerando renda e metas (como guardar o equivalente a três cafés por dia).  
 - Defina um limite realista, que ainda permita alguma flexibilidade para imprevistos.  
 
-**Dica prática:** Use a regra 50/30/20 como ponto de partida – 50 % para necessidades, 30 % para desejos e 20 % para poupança ou investimentos.  
+**Dica prática:** Use a [regra 50/30/20](/ferramentas/calculadora-orcamento) como ponto de partida – 50 % para necessidades, 30 % para desejos e 20 % para [poupança](/glossario/poupanca) ou investimentos.  
 
 Depois de estabelecer os limites, o próximo passo é monitorar o consumo em tempo real.  
 
 ## Ferramentas que facilitam  
 
-Hoje em dia, aplicativos de finanças pessoais automatizam grande parte do trabalho. Eles permitem:  
+Hoje em dia, [aplicativos](/posts/5-alternativas-ao-mobills-em-2026) de finanças pessoais automatizam grande parte do trabalho. Eles permitem:  
 
 - Captura inteligente de notas fiscais por foto ou gravação de voz, transformando o papel em dado digital sem esforço.  
 - Categorização automática, que reconhece palavras‑chave (como “supermercado” ou “gasolina”) e aloca a despesa na categoria correta.  
 - Suporte multimoeda, ajustando os valores conforme a taxa de câmbio do dia, ideal para quem compra em dólares ou euros.  
-- Fluxo de caixa e relatórios que mostram a entrada e saída de dinheiro em gráficos simples.  
+- [Fluxo de caixa](/glossario/fluxo-de-caixa) e relatórios que mostram a entrada e saída de dinheiro em gráficos simples.  
 
 Essas funcionalidades reduzem a necessidade de planilhas manuais e dão mais clareza para ajustar o teto quando necessário.  
 
@@ -71,7 +71,7 @@ Além disso, o FinMoovi oferece:
 
 - Multimoeda automática, que converte gastos em diferentes moedas para a sua moeda base, facilitando o controle de viagens.  
 - Planejamento mensal com metas personalizadas, como “economizar o equivalente a duas jantares fora”.  
-- Integração com cartões de crédito, importando faturas e mostrando o saldo disponível em tempo real.  
+- Integração com cartões de [crédito](/glossario/credito), importando faturas e mostrando o saldo disponível em tempo real.  
 - Modo compras, onde você cria uma lista de itens e vê o total acumulado enquanto adiciona produtos, evitando surpresas no caixa.  
 - Lembretes de saldo baixo e alertas de teto, que chegam como notificações discretas no celular.  
 - Funcionalidade offline e versão PWA, permitindo registrar despesas mesmo sem internet e sincronizar tudo quando houver conexão.  

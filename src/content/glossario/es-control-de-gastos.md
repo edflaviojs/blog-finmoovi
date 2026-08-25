@@ -19,9 +19,9 @@ seo:
 ---
 
 ## ¿Qué es el control de gastos?
-El control de gastos es un tema que preocupa a muchas personas, ya que es común sentir que el dinero se escapa de las manos sin saber exactamente hacia dónde va. Imagina que estás pagando todas tus cuentas y gastos mensuales, pero al final del mes te das cuenta de que no tienes suficiente dinero ahorrado para tus objetivos a largo plazo, como comprar una casa o pagar una deuda. Esto se debe a que no tienes un control claro de tus gastos diarios y mensuales.
+El control de gastos es un tema que preocupa a muchas personas, ya que es común sentir que el dinero se escapa de las manos sin saber exactamente hacia dónde va. Imagina que estás pagando todas tus cuentas y gastos mensuales, pero al final del mes te das cuenta de que no tienes suficiente dinero ahorrado para tus objetivos a largo plazo, como comprar una casa o pagar una [deuda](/es/glossario/es-deuda). Esto se debe a que no tienes un control claro de tus gastos diarios y mensuales.
 
-* Gastos fijos: alquiler, servicios básicos, tarjetas de crédito
+* Gastos fijos: alquiler, servicios básicos, tarjetas de [crédito](/es/glossario/es-credito)
 * Gastos variables: comida, transporte, entretenimiento
 * Gastos imprevistos: reparaciones, médicos, viajes inesperados
 
@@ -32,7 +32,7 @@ El control de gastos es un tema que preocupa a muchas personas, ya que es común
 ## Cómo funciona el control de gastos
 El control de gastos se basa en la idea de llevar un registro de todos tus gastos, para que puedas ver exactamente hacia dónde va tu dinero. Esto te permite identificar áreas en las que puedes reducir gastos y asignar ese dinero a objetivos más importantes. Por ejemplo, si te das cuenta de que estás gastando demasiado dinero en comida fuera de casa, puedes empezar a cocinar en casa y ahorrar ese dinero para pagar una deuda o aumentar tus ahorros.
 
-Un amigo me recomendó una herramienta llamada FinMoovi, que me ha ayudado mucho a controlar mis gastos. Con FinMoovi, puedo tomar una foto del recibo o usar un comando de voz para registrar mis gastos, y ellos se categorizan automáticamente. De esta manera, puedo ver mi total mensual en tiempo real y hacer ajustes según sea necesario. Además, FinMoovi me permite establecer metas y planificar mis gastos mensuales, lo que me ha ayudado a ahorrar dinero y a alcanzar mis objetivos financieros.
+Un amigo me recomendó una herramienta llamada FinMoovi, que me ha ayudado mucho a controlar mis gastos. Con FinMoovi, puedo tomar una foto del recibo o usar un comando de voz para registrar mis gastos, y ellos se categorizan automáticamente. De esta manera, puedo ver mi total mensual en tiempo real y hacer ajustes según sea necesario. Además, FinMoovi me permite establecer metas y planificar mis gastos mensuales, lo que me ha ayudado a [ahorrar dinero](/es/posts/es-5-pasos-practicos-para-empezar-a-ahorrar-para-la-black) y a alcanzar mis objetivos financieros.
 
 ## Consejos prácticos para controlar tus gastos
 **Consejo práctico:** Establece un presupuesto mensual y prioriza tus gastos. Identifica tus gastos esenciales, como el alquiler y los servicios básicos, y asigna dinero para ellos primero. Luego, puedes asignar dinero para gastos no esenciales, como entretenimiento y viajes.
@@ -44,11 +44,11 @@ FinMoovi ofrece varias funcionalidades que me han ayudado a controlar mis gastos
 * Captura inteligente: puedo tomar una foto del recibo o usar un comando de voz para registrar mis gastos, y ellos se categorizan automáticamente.
 * Categorización automática: FinMoovi categoriza mis gastos en diferentes categorías, como comida, transporte y entretenimiento.
 * Multimoneda: puedo registrar gastos en diferentes monedas, lo que me es útil cuando viajo al extranjero.
-* Flujo de caja e informes: puedo ver mi flujo de caja y obtener informes detallados sobre mis gastos.
-* Planificación mensual y metas: puedo establecer metas y planificar mis gastos mensuales, lo que me ha ayudado a ahorrar dinero y a alcanzar mis objetivos financieros.
+* [Flujo de caja](/es/glossario/es-flujo-de-caja) e informes: puedo ver mi flujo de caja y obtener informes detallados sobre mis gastos.
+* [Planificación mensual](/es/posts/es-como-organizar-tu-dinero-con-una-app-facil-de-usar) y metas: puedo establecer metas y planificar mis gastos mensuales, lo que me ha ayudado a ahorrar dinero y a alcanzar mis objetivos financieros.
 * Tarjetas de crédito y factura: puedo registrar mis gastos con tarjetas de crédito y factura, y FinMoovi me recuerda cuando es hora de pagar.
 * Modo compras: puedo crear una lista de compras y ver el total en tiempo real, lo que me ayuda a no gastar de más.
-* Recordatorios y alertas de saldo: FinMoovi me recuerda cuando mi saldo es bajo, lo que me ayuda a evitar gastos innecesarios.
+* Recordatorios y [alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no) de saldo: FinMoovi me recuerda cuando mi saldo es bajo, lo que me ayuda a evitar gastos innecesarios.
 * Offline y PWA: puedo acceder a FinMoovi desde cualquier lugar, incluso sin conexión a Internet.
 
 ![Consejos prácticos para controlar tus gastos](/images/glossario/controle-de-gastos-inline-3.webp)

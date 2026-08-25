@@ -18,11 +18,11 @@ seo:
 ---
 
 ## What is Simple National Installment?
-If you’ve ever received a tax notice that says you need to pay an amount roughly equal to the price of a daily coffee *every* month for the next year, you know the pressure of a large lump‑sum bill. The “parcelamento simples nacional” is a government‑offered program that lets small businesses and self‑employed professionals split that big payment into equal, manageable monthly portions. In plain language, it’s a way to turn a single heavy expense into a series of smaller, predictable outflows that line up with your regular cash flow.
+If you’ve ever received a tax notice that says you need to pay an amount roughly equal to the price of a daily coffee *every* month for the next year, you know the pressure of a large lump‑sum bill. The “parcelamento simples nacional” is a government‑offered program that lets small businesses and self‑employed professionals split that big payment into equal, manageable monthly portions. In plain language, it’s a way to turn a single heavy expense into a series of smaller, predictable outflows that line up with your regular [cash flow](/en/glossario/en-cash-flow).
 
-- **Equal monthly amounts** – the total debt is divided by the number of months you choose, usually up to twelve.
+- **Equal monthly amounts** – the total [debt](/en/glossario/en-debt) is divided by the number of months you choose, usually up to twelve.
 - **Fixed due date** – each installment is due on the same calendar day, making it easy to remember.
-- **No extra interest** – the government does not charge additional interest, only a modest administrative fee that is already included in the installment value.
+- **No extra [interest](/en/glossario/en-interest)** – the government does not charge additional interest, only a modest administrative fee that is already included in the installment value.
 
 ![What is Simple National Installment?](/images/glossario/parcelamento-simples-nacional-inline-1.webp)
 
@@ -52,7 +52,7 @@ Even a simple plan can trip you up if you’re not careful. The most frequent mi
 To stay on track, treat each installment like any other recurring bill: mark it on your calendar, keep a buffer in your account, and double‑check the fee before you commit.
 
 ## FinMoovi makes it easy
-Here’s where FinMoovi steps in and turns the whole process from “meh” to “managed.” The app’s **smart capture** feature lets you snap a photo of the tax notice—or even dictate the key numbers with your voice. FinMoovi instantly reads the amount, the number of installments, and the due date, then categorizes the expense under “Taxes – Installments” without you lifting a finger. From that moment, the app:
+Here’s where FinMoovi steps in and turns the whole process from “meh” to “managed.” The app’s **[smart capture](/en/posts/en-how-to-never-miss-a-bill-payment-deadline-simple-5-minute)** feature lets you snap a photo of the tax notice—or even dictate the key numbers with your voice. FinMoovi instantly reads the amount, the number of installments, and the due date, then categorizes the expense under “Taxes – Installments” without you lifting a finger. From that moment, the app:
 
 - Adds the installment to your cash‑flow forecast, showing how it will affect your monthly balance.
 - Sends you a reminder 24 hours before each due date, so you never miss a payment.

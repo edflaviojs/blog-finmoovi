@@ -32,7 +32,7 @@ Mesmo que cada parcela pareça pequena – algo como o preço de um café por di
 
 ## Identificando suas despesas recorrentes  
 
-Para ter clareza, comece listando tudo que aparece na sua conta bancária ou no extrato do cartão de crédito. Preste atenção nos lançamentos que se repetem com a mesma periodicidade. Uma forma prática de fazer isso é:
+Para ter clareza, comece listando tudo que aparece na sua conta bancária ou no extrato do cartão de [crédito](/glossario/credito). Preste atenção nos lançamentos que se repetem com a mesma periodicidade. Uma forma prática de fazer isso é:
 
 ![Identificando suas despesas recorrentes  ](/images/glossario/despesa-recorrente-inline-3.webp)
 
@@ -48,11 +48,11 @@ Ao categorizar, você percebe rapidamente quais áreas consomem mais do seu dinh
 
 ## Ferramentas para controlar as despesas recorrentes  
 
-Hoje, aplicativos de finanças pessoais facilitam esse acompanhamento. Eles capturam a informação de forma inteligente – basta tirar uma foto da fatura ou falar “paguei a academia” que o app reconhece o valor e a categoria. A categorização automática agrupa despesas semelhantes, permitindo visualizar o total gasto por tipo. Se você lida com mais de uma moeda (por exemplo, dólares para compras online ou euros para viagens), a funcionalidade multimoeda converte tudo para a sua moeda base, mantendo o controle coerente.
+Hoje, [aplicativos](/posts/5-alternativas-ao-mobills-em-2026) de [finanças pessoais](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar) facilitam esse acompanhamento. Eles capturam a informação de forma inteligente – basta tirar uma foto da fatura ou falar “paguei a academia” que o app reconhece o valor e a categoria. A categorização automática agrupa despesas semelhantes, permitindo visualizar o total gasto por tipo. Se você lida com mais de uma [moeda](/glossario/moeda) (por exemplo, dólares para compras online ou euros para viagens), a funcionalidade multimoeda converte tudo para a sua moeda base, mantendo o controle coerente.
 
 Outras funcionalidades úteis incluem:
 
-- Fluxo de caixa e relatórios que mostram a entrada e saída de dinheiro ao longo do tempo
+- [Fluxo de caixa](/glossario/fluxo-de-caixa) e relatórios que mostram a entrada e saída de dinheiro ao longo do tempo
 - Planejamento mensal com metas de economia ou investimento
 - Integração com cartões de crédito, exibindo a fatura completa e permitindo pagar diretamente pelo app
 - Modo compras com lista de itens e total em tempo real, ideal para evitar compras impulsivas
@@ -78,7 +78,7 @@ Além disso, o FinMoovi permite:
 - Visualizar todas as despesas recorrentes em um painel único, com filtros por moeda ou categoria
 - Gerar relatórios mensais que mostram quanto do seu orçamento está comprometido com custos fixos
 - Definir metas de redução, como “diminuir 20% das assinaturas de streaming” e acompanhar o progresso
-- Receber lembretes antes do vencimento de cada conta, evitando juros por atraso
+- Receber lembretes antes do vencimento de cada conta, evitando [juros](/glossario/juros) por atraso
 - Usar o modo compras para planejar a lista de supermercado, vendo o total em tempo real e comparando com o orçamento disponível
 
 Com a funcionalidade offline, você pode registrar despesas mesmo sem internet, e ao reconectar, tudo se sincroniza automaticamente. Essa integração completa transforma a tarefa de controlar despesas recorrentes em algo quase automático, liberando tempo e energia para outras prioridades.

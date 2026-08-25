@@ -50,14 +50,14 @@ Nem todo mundo precisa de 30 categorias diferentes. O segredo está em adaptar a
 
 ## Ferramentas que automatizam a classificação  
 
-É aqui que o FinMoovi entra como aquele amigo que sempre tem a solução na manga. O app permite tirar foto da nota ou gravar a voz descrevendo a compra; a tecnologia de captura inteligente reconhece o valor e, em segundos, coloca o gasto na categoria correta. Não importa se a compra foi feita em moeda local, em dólares ou euros – o recurso multimoeda converte tudo para o padrão que você definiu, facilitando o controle mesmo em viagens.
+É aqui que o FinMoovi entra como aquele amigo que sempre tem a solução na manga. O app permite tirar foto da nota ou gravar a voz descrevendo a compra; a tecnologia de captura inteligente reconhece o valor e, em segundos, coloca o gasto na categoria correta. Não importa se a compra foi feita em [moeda](/glossario/moeda) local, em dólares ou euros – o recurso multimoeda converte tudo para o padrão que você definiu, facilitando o controle mesmo em viagens.
 
 Cada gasto entra numa categoria automaticamente, e os relatórios mostram onde você gasta mais, permitindo ajustes rápidos. Além disso, o FinMoovi oferece:
 
-- **Fluxo de caixa** em tempo real, mostrando entradas e saídas agrupadas por categoria.  
+- **[Fluxo de caixa](/glossario/fluxo-de-caixa)** em tempo real, mostrando entradas e saídas agrupadas por categoria.  
 - **Relatórios mensais** que destacam a porcentagem de cada categoria no total gasto.  
-- **Planejamento de metas**: defina limites mensais para categorias como “lazer” e receba alertas quando estiver próximo do teto.  
-- **Integração com cartões de crédito**: as faturas são importadas e as despesas são distribuídas nas categorias que você já usa.  
+- **Planejamento de metas**: defina limites mensais para categorias como “lazer” e receba [alertas](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto) quando estiver próximo do teto.  
+- **Integração com cartões de [crédito](/glossario/credito)**: as faturas são importadas e as despesas são distribuídas nas categorias que você já usa.  
 - **Modo compras**: crie listas de supermercado, veja o total estimado em tempo real e, ao finalizar, registre tudo com um clique.  
 - **Lembretes de saldo** e notificações de gastos inesperados.  
 - **Uso offline** via PWA (aplicação web progressiva) que sincroniza tudo quando a internet volta.
@@ -74,7 +74,7 @@ Mesmo com a tecnologia, alguns hábitos podem atrapalhar o controle das categori
 
 ## Dicas práticas para manter o controle  
 
-- **Defina limites mensais** para as categorias que mais pesam no seu orçamento e configure alertas no app.  
+- **Defina limites mensais** para as categorias que mais pesam no seu orçamento e configure [alertas](/posts/ja-esqueceu-de-pagar-a-conta-e-ficou-na-mao-como-mudar-isso) no app.  
 - **Use a função de voz** para registrar despesas rápidas, como um lanche no caminho do trabalho; assim você não perde tempo digitando.  
 - **Revise o relatório semanalmente** e ajuste as metas se perceber que está gastando mais do que o planejado em alguma área.  
 
@@ -84,7 +84,7 @@ Mesmo com a tecnologia, alguns hábitos podem atrapalhar o controle das categori
 
 ## Como usar as categorias para planejar o futuro  
 
-Com os dados organizados, fica fácil projetar quanto você pode economizar para objetivos maiores, como uma reserva de emergência ou a compra de um bem durável. Basta analisar o relatório de “discricionário” e identificar gastos que podem ser reduzidos ou eliminados. O FinMoovi permite criar metas específicas (ex.: “economizar o equivalente a três aluguéis em 12 meses”) e acompanhar o progresso ao longo do tempo, mostrando o quanto cada categoria contribui para alcançar o objetivo.
+Com os dados organizados, fica fácil projetar quanto você pode economizar para objetivos maiores, como uma [reserva de emergência](/ferramentas/calculadora-reserva) ou a compra de um bem durável. Basta analisar o relatório de “discricionário” e identificar gastos que podem ser reduzidos ou eliminados. O FinMoovi permite criar metas específicas (ex.: “economizar o equivalente a três aluguéis em 12 meses”) e acompanhar o progresso ao longo do tempo, mostrando o quanto cada categoria contribui para alcançar o objetivo.
 
 ## Comece hoje  
 

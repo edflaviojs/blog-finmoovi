@@ -33,7 +33,7 @@ You’ve just paid the rent, bought a coffee that cost about the price of a smal
 
 ## What a financial planning spreadsheet really is
 
-A financial planning spreadsheet is simply a table where you record income, expenses, savings goals and the balance over time. Think of it as a digital notebook that lets you see, at a glance, whether you’re spending more than you earn, how fast you’re approaching a goal, and where you can cut back. The power comes from the structure: rows for each transaction, columns for date, amount, category, and a running total. When the data is clean, the spreadsheet can generate charts, cash‑flow statements, and forecasts without you having to do the math yourself.
+A [financial planning](/en/glossario/en-financial-planning) spreadsheet is simply a table where you record income, expenses, [savings](/en/glossario/en-savings) goals and the balance over time. Think of it as a digital notebook that lets you see, at a glance, whether you’re spending more than you earn, how fast you’re approaching a goal, and where you can cut back. The power comes from the structure: rows for each transaction, columns for date, amount, category, and a running total. When the data is clean, the spreadsheet can generate charts, cash‑flow statements, and forecasts without you having to do the math yourself.
 
 ## FinMoovi’s smart capture: turning receipts into data automatically
 
@@ -51,9 +51,9 @@ Imagine you finish a dinner, snap a photo of the receipt, and the app instantly 
 
 FinMoovi bundles the spreadsheet idea with features that turn a static table into a living financial coach.
 
-- **Multi‑currency handling:** Record expenses in any currency; the app converts them using the latest rates, so a coffee bought in euros shows up correctly next to your local salary.
+- **[Multi‑currency](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using) handling:** Record expenses in any currency; the app converts them using the latest rates, so a coffee bought in euros shows up correctly next to your local salary.
 - **Cash‑flow dashboard:** Visual summary of money coming in vs. going out, updated in real time.
-- **Monthly planning & goals:** Set a target (e.g., “save the equivalent of two months’ rent”) and watch a progress bar fill as you log transactions.
+- **Monthly [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) & goals:** Set a target (e.g., “save the equivalent of two months’ rent”) and watch a progress bar fill as you log transactions.
 - **Credit‑card & bill tracker:** Import statements automatically; the app flags upcoming due dates and calculates the minimum payment.
 - **Shopping mode:** Create a list, add items, and see the total update live, preventing surprise overspends at the checkout.
 - **Reminders & balance alerts:** Push notifications when you’re close to a limit or when a recurring bill is due.
@@ -65,11 +65,11 @@ FinMoovi bundles the spreadsheet idea with features that turn a static table int
 
 **Practical tip:** Review the cash‑flow dashboard every Sunday. A quick glance lets you spot trends—like a rising “subscriptions” line—and adjust before the next week starts.
 
-**Practical tip:** Set a “buffer goal” equal to about one month’s rent. Treat it like an emergency fund; when the balance dips below, the app will send a red alert, nudging you to pause discretionary spending.
+**Practical tip:** Set a “buffer goal” equal to about one month’s rent. Treat it like an [emergency fund](/en/glossario/en-emergency-fund); when the balance dips below, the app will send a red alert, nudging you to pause discretionary spending.
 
 - Keep categories simple: “Housing,” “Transport,” “Food,” “Fun,” “Savings.” Too many buckets make the spreadsheet noisy.
 - Use the shopping mode for big trips: add expected costs (flight, hotel, meals) and watch the projected total stay under your travel budget.
-- Leverage multi‑currency conversion for foreign purchases; it prevents hidden exchange‑rate losses from creeping into your plan.
+- [Leverage](/en/glossario/en-leverage) multi‑currency conversion for foreign purchases; it prevents hidden exchange‑rate losses from creeping into your plan.
 
 ## Start today
 

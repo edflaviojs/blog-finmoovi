@@ -20,7 +20,7 @@ seo:
 
 ## Entendendo o custo de vida na Espanha  
 
-Muitos que sonham em mudar para a Espanha começam a sentir um aperto no bolso logo nos primeiros meses: o aluguel parece maior que o esperado, as contas de água e luz chegam no fim do salário, e ainda tem aquele gasto diário com café, transporte e lazer que vai se acumulando sem perceber. Esse “custo de vida” não é só o preço de um apartamento; ele engloba tudo que você paga para manter seu padrão de vida – moradia, alimentação, transporte, saúde, lazer e até pequenos luxos que dão conforto ao dia a dia. Quando esses itens não são mapeados, a conta bancária acaba dando um salto inesperado e o planejamento financeiro vira um quebra-cabeça.
+Muitos que sonham em mudar para a Espanha começam a sentir um aperto no bolso logo nos primeiros meses: o aluguel parece maior que o esperado, as contas de água e luz chegam no fim do salário, e ainda tem aquele gasto diário com café, transporte e lazer que vai se acumulando sem perceber. Esse “[custo de vida](/glossario/custo-de-vida)” não é só o preço de um apartamento; ele engloba tudo que você paga para manter seu padrão de vida – moradia, alimentação, transporte, saúde, lazer e até pequenos luxos que dão conforto ao dia a dia. Quando esses itens não são mapeados, a conta bancária acaba dando um salto inesperado e o [planejamento financeiro](/glossario/planejamento-financeiro) vira um quebra-cabeça.
 
 ![Entendendo o custo de vida na Espanha  ](/images/glossario/custo-de-vida-na-espanha-inline-1.webp)
 
@@ -28,16 +28,16 @@ Muitos que sonham em mudar para a Espanha começam a sentir um aperto no bolso l
 
 ## Como o custo de vida impacta seu orçamento  
 
-Se você não tem clareza de quanto cada categoria consome, fica difícil ajustar o que realmente cabe no seu orçamento. Por exemplo, gastar “cerca de um aluguel” em alimentação pode parecer razoável, mas se o aluguel já representa quase metade da renda, o restante pode não ser suficiente para cobrir despesas essenciais. Além disso, a variação cambial entre o euro e outras moedas pode distorcer ainda mais a percepção de gasto, principalmente se você recebe renda em outra moeda. Sem um controle preciso, a conta de fim de mês pode revelar surpresas desagradáveis, como a fatura do cartão de crédito que ultrapassa o limite ou a falta de dinheiro para pagar a conta de luz.
+Se você não tem clareza de quanto cada categoria consome, fica difícil ajustar o que realmente cabe no seu orçamento. Por exemplo, gastar “cerca de um aluguel” em alimentação pode parecer razoável, mas se o aluguel já representa quase metade da renda, o restante pode não ser suficiente para cobrir despesas essenciais. Além disso, a variação cambial entre o euro e outras moedas pode distorcer ainda mais a percepção de gasto, principalmente se você recebe renda em outra moeda. Sem um controle preciso, a conta de fim de mês pode revelar surpresas desagradáveis, como a fatura do cartão de [crédito](/glossario/credito) que ultrapassa o limite ou a falta de dinheiro para pagar a conta de luz.
 
 ## Ferramentas para controlar o gasto  
 
 - **Captura inteligente**: tirar foto da nota fiscal ou gravar a voz da compra e deixar o app categorizar automaticamente.  
 - **Multimoeda**: converter gastos de diferentes moedas (por exemplo, euros, dólares ou reais) em tempo real, mantendo tudo na mesma visualização.  
-- **Fluxo de caixa e relatórios**: visualizar entradas e saídas em gráficos simples que mostram onde o dinheiro está sendo usado.  
+- **[Fluxo de caixa](/glossario/fluxo-de-caixa) e relatórios**: visualizar entradas e saídas em gráficos simples que mostram onde o dinheiro está sendo usado.  
 - **Planejamento mensal e metas**: definir limites por categoria e acompanhar o progresso ao longo do mês.  
 - **Cartões de crédito e fatura**: integrar as despesas do cartão ao app, evitando surpresas na data de fechamento.  
-- **Modo compras**: criar lista de compras com cálculo automático do total à medida que você adiciona itens.  
+- **Modo compras**: criar [lista de compras](/posts/como-cortar-custos-no-supermercado-e-ainda-comer-bem) com cálculo automático do total à medida que você adiciona itens.  
 - **Lembretes e alertas de saldo**: receber notificações quando o saldo está próximo do limite ou quando uma conta está prestes a vencer.  
 - **Offline / PWA / sincronização**: usar o app mesmo sem internet e ter os dados sincronizados entre dispositivos quando a conexão volta.
 
@@ -45,7 +45,7 @@ Se você não tem clareza de quanto cada categoria consome, fica difícil ajusta
 
 
 
-Essas funcionalidades, quando usadas de forma integrada, transformam a gestão financeira de um esforço manual para um processo quase automático.
+Essas funcionalidades, quando usadas de forma integrada, transformam a [gestão financeira](/posts/5-alternativas-ao-mobills-em-2026) de um esforço manual para um processo quase automático.
 
 ## Como o FinMoovi resolve na prática  
 

@@ -27,7 +27,7 @@ Imagina que acabas de recibir una factura de un proveedor que te cobra el precio
 
 ## ¿Qué es el parcelamento MEI
 
-El parcelamento MEI es simplemente la posibilidad de dividir una deuda o un gasto grande en varias cuotas más pequeñas, de manera que el pago se ajuste a tu flujo de caja. No se trata de un crédito tradicional con intereses altos; es una modalidad de pago que permite distribuir el monto total a lo largo de meses, manteniendo la obligación original pero aliviando la carga mensual. En la práctica, funciona como un acuerdo entre tú y el proveedor o la entidad que emite la factura, donde se pacta una fecha de vencimiento para cada cuota.
+El parcelamento MEI es simplemente la posibilidad de dividir una [deuda](/es/glossario/es-deuda) o un gasto grande en varias cuotas más pequeñas, de manera que el pago se ajuste a tu [flujo de caja](/es/glossario/es-flujo-de-caja). No se trata de un [crédito](/es/glossario/es-credito) tradicional con intereses altos; es una modalidad de pago que permite distribuir el monto total a lo largo de meses, manteniendo la obligación original pero aliviando la carga mensual. En la práctica, funciona como un acuerdo entre tú y el proveedor o la entidad que emite la factura, donde se pacta una fecha de vencimiento para cada cuota.
 
 ## Cómo funciona en la práctica
 
@@ -62,12 +62,12 @@ Este método es útil tanto para gastos de equipamiento (una máquina de café q
 Aquí es donde entra FinMoovi, la app que actúa como ese amigo que siempre tiene la solución a mano. Con FinMoovi puedes gestionar el parcelamento MEI sin perder de vista ningún detalle:
 
 - **Captura inteligente**: basta con tomar una foto del recibo o dictar la información por voz; la app reconoce automáticamente el monto, la fecha y la descripción, y lo clasifica sin que tengas que escribir nada.
-- **Multimoneda**: si recibes pagos en diferentes divisas (dólares, euros o la moneda local), FinMoovi los convierte al tipo de cambio del día y los muestra en una sola vista, evitando confusiones.
+- **Multimoneda**: si recibes pagos en diferentes divisas (dólares, euros o la moneda local), FinMoovi los convierte al tipo de [cambio](/es/glossario/es-cambio) del día y los muestra en una sola vista, evitando confusiones.
 - **Flujo de caja e informes**: visualiza en tiempo real cuánto entra y sale, con gráficos que resaltan las cuotas pendientes y los pagos realizados.
-- **Planificación mensual y metas**: define cuánto quieres ahorrar cada mes y la app te avisa si una cuota del parcelamento compromete esa meta.
+- **[Planificación mensual](/es/posts/es-como-organizar-tu-dinero-con-una-app-facil-de-usar) y metas**: define cuánto quieres ahorrar cada mes y la app te avisa si una cuota del parcelamento compromete esa meta.
 - **Tarjetas de crédito y facturación**: enlaza tus tarjetas y la app te muestra el resumen de gastos, indicando cuál cuota corresponde a cada tarjeta.
 - **Modo compras**: crea listas de lo que necesitas comprar; la app suma automáticamente el total y te muestra cuánto queda disponible después de descontar las cuotas del parcelamento.
-- **Recordatorios y alertas de saldo**: recibe notificaciones antes de cada vencimiento y avisos si tu saldo está bajo.
+- **Recordatorios y [alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no) de saldo**: recibe notificaciones antes de cada vencimiento y avisos si tu saldo está bajo.
 - **Offline / PWA / sincronización**: aunque no tengas conexión, puedes seguir registrando pagos; cuando vuelvas a estar online, todo se sincroniza automáticamente.
 
 ## Consejos para usar el parcelamento de forma inteligente

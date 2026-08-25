@@ -20,7 +20,7 @@ seo:
 
 ## Por que o controle de gastos parece impossível  
 
-Você já chegou ao fim do mês e percebeu que o dinheiro acabou antes mesmo de pagar a conta de luz, enquanto o extrato do cartão mostra compras que nem lembra? Essa sensação de “onde foi tudo?” é a dor mais comum quando não há um registro claro do que entra e sai. Sem saber quanto gastou em um café diário, em um lanche rápido ou em um streaming, fica impossível ajustar o orçamento e ainda sobra pouco para a reserva de emergência.  
+Você já chegou ao fim do mês e percebeu que o dinheiro acabou antes mesmo de pagar a conta de luz, enquanto o extrato do cartão mostra compras que nem lembra? Essa sensação de “onde foi tudo?” é a dor mais comum quando não há um registro claro do que entra e sai. Sem saber quanto gastou em um café diário, em um lanche rápido ou em um streaming, fica impossível ajustar o orçamento e ainda sobra pouco para a [reserva de emergência](/ferramentas/calculadora-reserva).  
 
 ![Por que o controle de gastos parece impossível  ](/images/glossario/controle-de-gastos-inline-1.webp)
 
@@ -55,14 +55,14 @@ Se você ainda usa papel e caneta, pode estar perdendo tempo e precisão. O FinM
 Além disso, o FinMoovi oferece recursos que cobrem todo o ciclo financeiro:  
 
 - **Multimoeda**: acompanhe despesas em diferentes moedas (real, dólar, euro) sem conversões manuais.  
-- **Fluxo de caixa e relatórios**: visualize entradas e saídas em gráficos simples que mostram onde seu dinheiro está realmente.  
+- **[Fluxo de caixa](/glossario/fluxo-de-caixa) e relatórios**: visualize entradas e saídas em gráficos simples que mostram onde seu dinheiro está realmente.  
 - **Planejamento mensal e metas**: defina quanto quer economizar e veja o progresso em tempo real.  
-- **Cartões de crédito e fatura**: registre as compras feitas no cartão e receba alertas antes da data de vencimento.  
+- **Cartões de [crédito](/glossario/credito) e fatura**: registre as compras feitas no cartão e receba [alertas](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto) antes da data de vencimento.  
 - **Modo compras**: crie listas de supermercado, veja o total acumulado enquanto adiciona itens e evite surpresas no caixa.  
-- **Lembretes e alertas de saldo**: receba notificações quando o saldo ficar próximo do limite definido.  
+- **Lembretes e [alertas de saldo](/posts/como-organizar-seu-dinheiro-com-um-app-facil-de-usar)**: receba notificações quando o saldo ficar próximo do limite definido.  
 - **Offline / PWA / sincronização**: use o app mesmo sem internet; tudo fica salvo e sincroniza quando você se conectar novamente.  
 
-**Dica prática:** ative o modo “lista de compras” antes de ir ao mercado; ao escanear o código de barras de cada produto, o app soma automaticamente e avisa se você está ultrapassando o orçamento diário.  
+**Dica prática:** ative o modo “[lista de compras](/posts/como-cortar-custos-no-supermercado-e-ainda-comer-bem)” antes de ir ao mercado; ao escanear o código de barras de cada produto, o app soma automaticamente e avisa se você está ultrapassando o orçamento diário.  
 
 ## Dicas práticas para manter o ritmo  
 

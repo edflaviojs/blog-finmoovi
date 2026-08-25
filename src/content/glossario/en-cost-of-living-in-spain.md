@@ -20,7 +20,7 @@ seo:
 
 ## Feeling the pinch in Spain
 
-You’ve just landed in Madrid, Barcelona, or a smaller town, and the first thing you notice is how quickly the everyday expenses add up. A cup of coffee that used to cost a few coins now feels like a small investment, the rent you pay each month is roughly the same as a year’s worth of groceries, and the occasional night out suddenly looks like a budget breach. This feeling of “where does all my money go?” is the exact pain point that many newcomers and long‑term residents experience when trying to understand the real cost of living in Spain.
+You’ve just landed in Madrid, Barcelona, or a smaller town, and the first thing you notice is how quickly the everyday expenses add up. A cup of coffee that used to cost a few coins now feels like a small investment, the rent you pay each month is roughly the same as a year’s worth of groceries, and the occasional night out suddenly looks like a budget breach. This feeling of “where does all my money go?” is the exact pain point that many newcomers and long‑term residents experience when trying to understand the real [cost of living](/en/glossario/en-cost-of-living) in Spain.
 
 ![Feeling the pinch in Spain](/images/glossario/custo-de-vida-na-espanha-inline-1.webp)
 
@@ -38,4 +38,4 @@ The term “cost of living” is a shorthand for the total amount of money you n
 
 When you break down the monthly outflow, the biggest items usually look like this:
 - **Housing:** roughly one to two months’ rent for a modest apartment in the city centre, or about half a month’s rent for a shared flat in the suburbs.
-- **Food:** the price of a weekly grocery basket that covers basic meals, plus the occasional take‑away lunch that costs about
+- **Food:** the price of a weekly grocery basket that covers basic meals, plus the occasional take‑away lunch that [costs](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide) about

@@ -22,7 +22,7 @@ seo:
 Você já percebeu que, ao final do mês, o dinheiro parece ter desaparecido como se fosse um truque de mágica? A conta de luz, o gasto com alimentação, as compras impulsivas e ainda aquela fatura de cartão que chega cheia de surpresas. Essa sensação de “não sei para onde foi” é a dor que motiva a gente a buscar uma forma mais organizada de acompanhar o que entra e sai. Quando não há um registro claro, fica impossível ajustar hábitos, planejar uma viagem ou até mesmo guardar um dinheirinho para emergências.
 
 ## O que significa “planejamento financeiro planilha”
-Planejamento financeiro planilha é simplesmente usar uma tabela – seja no papel, no Excel ou em um aplicativo – para mapear receitas, despesas e metas. A ideia é transformar números abstratos em algo visual, onde cada linha representa um gasto ou uma entrada e cada coluna mostra o período (dia, semana ou mês). Assim, você tem um panorama completo e pode identificar rapidamente onde cortar, onde investir e como alcançar objetivos como comprar um carro usado, fazer aquela reforma ou simplesmente ter uma reserva para imprevistos.
+[Planejamento financeiro](/glossario/planejamento-financeiro) planilha é simplesmente usar uma tabela – seja no papel, no Excel ou em um aplicativo – para mapear receitas, despesas e metas. A ideia é transformar números abstratos em algo visual, onde cada linha representa um gasto ou uma entrada e cada coluna mostra o período (dia, semana ou mês). Assim, você tem um panorama completo e pode identificar rapidamente onde cortar, onde investir e como alcançar objetivos como comprar um carro usado, fazer aquela reforma ou simplesmente ter uma reserva para imprevistos.
 
 ![Por que a maioria das pessoas sente falta de controle](/images/glossario/planejamento-financeiro-planilha-inline-1.webp)
 
@@ -48,16 +48,16 @@ Se a ideia de digitar tudo manualmente ainda parece cansativa, o FinMoovi chega 
 
 - **Captura inteligente**: tire foto da nota fiscal ou grave a voz descrevendo a compra; o app reconhece o valor e preenche a linha automaticamente.  
 - **Categorização automática**: ao identificar palavras‑chave (como “supermercado” ou “gasolina”), o FinMoovi já coloca a despesa na categoria correta.  
-- **Multimoeda**: você pode registrar gastos em diferentes moedas (por exemplo, dólares de uma viagem ou euros de um curso online) e o app converte tudo para a moeda que você escolher.  
-- **Fluxo de caixa e relatórios**: gráficos de entrada vs. saída e relatórios mensais que mostram onde está o maior consumo.  
+- **Multimoeda**: você pode registrar gastos em diferentes moedas (por exemplo, dólares de uma viagem ou euros de um curso online) e o app converte tudo para a [moeda](/glossario/moeda) que você escolher.  
+- **[Fluxo de caixa](/glossario/fluxo-de-caixa) e relatórios**: gráficos de entrada vs. saída e relatórios mensais que mostram onde está o maior consumo.  
 - **Planejamento mensal e metas**: defina um objetivo (como “economizar o equivalente a duas vezes o preço de um café por dia”) e acompanhe o progresso.  
-- **Cartões de crédito e fatura**: registre as compras feitas no cartão; o app avisa quando a fatura está próxima de vencer.  
+- **Cartões de [crédito](/glossario/credito) e fatura**: registre as compras feitas no cartão; o app avisa quando a fatura está próxima de vencer.  
 - **Modo compras**: crie listas de supermercado; o total em tempo real aparece enquanto você adiciona itens, evitando surpresas no caixa.  
-- **Lembretes e alertas de saldo**: notificações quando o saldo está baixo ou quando uma despesa ultrapassa o limite definido.  
+- **Lembretes e [alertas de saldo](/posts/como-organizar-seu-dinheiro-com-um-app-facil-de-usar)**: notificações quando o saldo está baixo ou quando uma despesa ultrapassa o limite definido.  
 - **Offline / PWA / sincronização**: use o app mesmo sem internet e, ao reconectar, tudo se atualiza nos seus dispositivos.
 
 ## Dicas práticas para tirar o máximo proveito
-Com a planilha (ou o FinMoovi) em mãos, alguns hábitos simples podem transformar seu controle financeiro:
+Com a planilha (ou o FinMoovi) em mãos, alguns hábitos simples podem transformar seu [controle financeiro](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto):
 
 - **Dica prática:** registre cada gasto dentro de 24 horas. Quanto mais rápido você anotar, menor a chance de esquecer pequenos valores que, somados, podem virar um grande buraco.  
 - **Dica prática:** reserve um dia da semana para revisar as categorias. Se perceber que a despesa com lazer está consumindo quase metade do orçamento, ajuste o limite ou busque alternativas mais baratas.  

@@ -40,7 +40,7 @@ La cuota no es un evento único: es un costo fijo que se come una parte de cada 
 
 ## En FinMoovi
 
-Registra la cuota como un **gasto recurrente** y aparecerá automáticamente en tu **[flujo de caja](/es/glossario/es-flujo-de-caja)** cada mes — así, antes de firmar, puedes ver cuánto de tus ingresos se llevará el préstamo y si lo que queda todavía cubre lo esencial. Sin planilla, sin adivinar.
+Registra la cuota como un **[gasto recurrente](/es/glossario/es-gasto-recurrente)** y aparecerá automáticamente en tu **[flujo de caja](/es/glossario/es-flujo-de-caja)** cada mes — así, antes de firmar, puedes ver cuánto de tus ingresos se llevará el préstamo y si lo que queda todavía cubre lo esencial. Sin planilla, sin adivinar.
 
 - **Consejo práctico:** registra la cuota como recurrente *antes* de aceptar la oferta y mira el mes con menos dinero disponible.
 - **Consejo práctico:** si el préstamo es para pagar otras deudas, asegúrate de que la nueva cuota sea menor que las que reemplaza — de lo contrario no ahorras, solo reordenas.

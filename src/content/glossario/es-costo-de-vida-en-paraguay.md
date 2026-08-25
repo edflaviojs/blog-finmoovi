@@ -20,7 +20,7 @@ seo:
 
 ## ¿Qué te está costando dormir tranquilo?
 
-Si últimamente sientes que el sueldo se queda corto al pagar el alquiler, la luz y el café de la mañana, no estás solo. Esa sensación de que el dinero desaparece antes de que termine el mes es el síntoma clásico de no tener claro el **costo de vida**. Cuando no sabes cuánto gastas realmente, cualquier gasto inesperado se vuelve una sorpresa desagradable y el estrés financiero se instala.
+Si últimamente sientes que el sueldo se queda corto al pagar el alquiler, la luz y el café de la mañana, no estás solo. Esa sensación de que el dinero desaparece antes de que termine el mes es el síntoma clásico de no tener claro el **[costo de vida](/es/glossario/es-costo-de-vida)**. Cuando no sabes cuánto gastas realmente, cualquier gasto inesperado se vuelve una sorpresa desagradable y el estrés financiero se instala.
 
 ![¿Qué te está costando dormir tranquilo?](/images/glossario/custo-de-vida-no-paraguai-inline-1.webp)
 
@@ -59,11 +59,11 @@ Aquí es donde entra FinMoovi, la aplicación que actúa como ese amigo que siem
 
 - **Captura inteligente:** toma una foto del recibo o graba una nota de voz y la app extrae automáticamente el monto y la categoría.
 - **Multimoneda:** aunque la mayor parte de tus gastos estén en guaraníes, puedes registrar compras en dólares o euros sin complicaciones; la app los convierte al tipo de cambio del día.
-- **Flujo de caja e informes:** visualiza en tiempo real cuánto entra y sale, con gráficos que muestran tendencias mensuales.
-- **Planificación mensual y metas:** define un objetivo de ahorro y la app te avisa si te estás acercando o alejando de él.
-- **Tarjetas de crédito y facturas:** enlaza tus tarjetas y la app importa los movimientos, categorizándolos sin que tengas que hacerlo a mano.
+- **[Flujo de caja](/es/glossario/es-flujo-de-caja) e informes:** visualiza en tiempo real cuánto entra y sale, con gráficos que muestran tendencias mensuales.
+- **[Planificación mensual](/es/posts/es-como-organizar-tu-dinero-con-una-app-facil-de-usar) y metas:** define un objetivo de [ahorro](/es/glossario/es-ahorro) y la app te avisa si te estás acercando o alejando de él.
+- **Tarjetas de [crédito](/es/glossario/es-credito) y facturas:** enlaza tus tarjetas y la app importa los movimientos, categorizándolos sin que tengas que hacerlo a mano.
 - **Modo compras:** crea una lista de la compra, y mientras vas marcando artículos, la app muestra el total acumulado en tiempo real.
-- **Recordatorios y alertas de saldo:** recibe notificaciones cuando el saldo de tu cuenta o tarjeta está bajo, o cuando una factura está próxima a vencer.
+- **Recordatorios y [alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no) de saldo:** recibe notificaciones cuando el saldo de tu cuenta o tarjeta está bajo, o cuando una factura está próxima a vencer.
 - **Offline / PWA / sincronización:** funciona sin conexión y guarda los datos en tu navegador; cuando vuelvas a estar online, sincroniza todo automáticamente.
 
 Con estas herramientas, el proceso de controlar el costo de vida pasa de ser una tarea tediosa a un hábito de pocos minutos al día.

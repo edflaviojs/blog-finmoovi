@@ -26,7 +26,7 @@ Ever opened your bank app and saw that the money you thought you had left for th
 
 
 
-- You notice the credit‑card bill is higher than expected.  
+- You notice the [credit](/en/glossario/en-credit)‑card bill is higher than expected.  
 - You’re forced to skip a weekend outing because the “fun” money disappeared.  
 - You end the month scrambling to cover the rent, wondering why you’re short on cash.
 
@@ -36,7 +36,7 @@ These moments happen because there’s no invisible guard telling you when you�
 
 A spending limit is simply a pre‑set maximum you decide to allocate to a specific category—like groceries, entertainment, or travel—during a given period, usually a month. Think of it as a fence you draw around each budget bucket. When you stay inside the fence, you know you’ll have enough for the next month’s obligations; when you step over, you’ll feel the pinch.
 
-The concept is not about restricting freedom; it’s about giving yourself a clear, visual cue that says, “I can spend up to this amount, and no more, unless I adjust the plan.” By turning vague ideas like “I shouldn’t overspend” into concrete numbers—say, “no more than the price of a daily coffee times 30”—you turn budgeting from a guesswork game into a measurable habit.
+The concept is not about restricting freedom; it’s about giving yourself a clear, visual cue that says, “I can spend up to this amount, and no more, unless I adjust the plan.” By turning vague ideas like “I shouldn’t overspend” into concrete numbers—say, “no more than the price of a daily coffee times 30”—you turn [budgeting](/en/posts/en-financial-peace-of-mind-with-a-2026-app-for-everyday-life) from a guesswork game into a measurable habit.
 
 ## How FinMoovi helps you stay under the limit
 
@@ -46,10 +46,10 @@ Imagine a friend who not only reminds you of your fence but also hands you a too
 
 
 
-- **Smart capture** (photo or voice) + automatic categorization: No manual entry, no missed expenses.  
-- **Multi‑currency support**: Whether you’re paying in dollars, euros, or any other currency, the app converts on the fly, so your limit stays consistent.  
+- **Smart capture** (photo or voice) + [automatic categorization](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end): No manual entry, no missed expenses.  
+- **[Multi‑currency](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using) support**: Whether you’re paying in dollars, euros, or any other currency, the app converts on the fly, so your limit stays consistent.  
 - **Cash‑flow reports**: Visual graphs show you how money moves in and out, highlighting where you’re safe and where you’re tight.  
-- **Monthly planning & goals**: Set targets like “save for a vacation” and see how each category contributes.  
+- **Monthly [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) & goals**: Set targets like “save for a vacation” and see how each category contributes.  
 - **Credit‑card integration**: Sync your cards, and the app pulls statements automatically, keeping everything in one place.  
 - **Shopping mode**: Create a list, watch a real‑time total as you add items, and stop before you exceed the budget.  
 - **Reminders & balance alerts**: Get a gentle nudge when you’re 80 % of the way to your limit.  
@@ -63,7 +63,7 @@ FinMoovi lets you **set a limit for each category and receive a heads‑up when 
 
 **Practical tip:** Whenever you receive a receipt—whether it’s a digital email or a paper slip—use FinMoovi’s smart capture right away. The instant categorization prevents forgotten expenses that could silently push you over the limit.
 
-**Practical tip:** Leverage the multi‑currency feature when traveling or shopping online abroad. Convert the amount to your home currency in the app, then compare it to the limit you set in that same currency; you’ll avoid surprise overruns caused by exchange‑rate fluctuations.
+**Practical tip:** [Leverage](/en/glossario/en-leverage) the multi‑currency feature when traveling or shopping online abroad. Convert the amount to your home currency in the app, then compare it to the limit you set in that same currency; you’ll avoid surprise overruns caused by exchange‑rate fluctuations.
 
 Additional habits that reinforce the ceiling:
 

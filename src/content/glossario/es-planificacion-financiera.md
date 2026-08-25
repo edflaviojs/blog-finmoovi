@@ -19,7 +19,7 @@ seo:
 
 ## El dinero se escapa sin que te des cuenta
 
-¿Te ha pasado que al final del mes no sabes en qué se fue todo el sueldo? Pagas el alquiler, la luz y el supermercado, pero al revisar la cuenta bancaria ves que ya no queda nada para el plan de vacaciones o para ese fondo de emergencia. Esa sensación de que el dinero “desaparece” es el punto de partida de la mayoría de las personas que buscan ordenar sus finanzas.
+¿Te ha pasado que al final del mes no sabes en qué se fue todo el sueldo? Pagas el alquiler, la luz y el supermercado, pero al revisar la cuenta bancaria ves que ya no queda nada para el plan de [vacaciones](/es/posts/es-5-consejos-para-reorganizar-tus-finanzas-en-vacaciones) o para ese [fondo de emergencia](/es/glossario/es-fondo-de-emergencia). Esa sensación de que el dinero “desaparece” es el punto de partida de la mayoría de las personas que buscan ordenar sus finanzas.
 
 ![El dinero se escapa sin que te des cuenta](/images/glossario/planejamento-financeiro-inline-1.webp)
 
@@ -38,7 +38,7 @@ Para que la planificación no quede en teoría, sigue estos pasos simples:
 
 
 - **Define tus metas**: escribe al menos tres objetivos a corto (un año), medio (tres años) y largo plazo (más de cinco años). Usa referencias cotidianas, como “un alquiler de dos habitaciones” o “el precio de un café al día durante un año”.
-- **Conoce tu flujo de caja**: anota ingresos y gastos durante un mes completo. Cada entrada (salario, ingresos extra) y cada salida (comida, transporte) cuenta.
+- **Conoce tu [flujo de caja](/es/glossario/es-flujo-de-caja)**: anota ingresos y gastos durante un mes completo. Cada entrada (salario, ingresos extra) y cada salida (comida, transporte) cuenta.
 - **Clasifica y prioriza**: separa gastos fijos (alquiler, seguros) de variables (salidas, hobbies). Identifica qué partidas puedes reducir sin sacrificar tu calidad de vida.
 - **Establece límites por categoría**: asigna un techo de gasto a cada grupo (ej. “no más de 10% del ingreso en entretenimiento”). Así sabrás cuándo estás cerca del límite.
 - **Revisa y ajusta mensualmente**: al cerrar el mes, compara lo planeado con lo real y corrige lo necesario. La disciplina se construye con pequeños ajustes continuos.
@@ -51,9 +51,9 @@ Aquí es donde entra FinMoovi, la app que actúa como un asistente financiero en
 - Multimoneda (BRL/USD/EUR) para viajeros o freelancers internacionales
 - Flujo de caja e informes visuales que muestran dónde se va cada centavo
 - Planificación mensual / metas que convierten tus objetivos en límites por categoría que puedes seguir día a día
-- Gestión de tarjetas de crédito y facturas, con recordatorios de vencimiento
+- Gestión de tarjetas de [crédito](/es/glossario/es-credito) y facturas, con recordatorios de vencimiento
 - Modo compras: lista de la compra con total en tiempo real mientras añades productos
-- Recordatorios / alertas de saldo bajo para evitar sorpresas
+- Recordatorios / [alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no) de saldo bajo para evitar sorpresas
 - Operación offline / PWA (aplicación web progresiva) y sincronización en la nube para que nunca pierdas datos
 
 Con FinMoovi, la planificación mensual deja de ser una hoja de cálculo aburrida y se vuelve una experiencia interactiva: cada gasto queda registrado al instante, y puedes ver en pantalla cómo afecta a tus límites mensuales.
@@ -66,7 +66,7 @@ Con FinMoovi, la planificación mensual deja de ser una hoja de cálculo aburrid
 
 Además, recuerda:
 
-- Evita usar tarjetas de crédito para compras que no puedes pagar al final del mes; el interés puede convertir un gasto pequeño en una deuda costosa.
+- Evita usar tarjetas de crédito para compras que no puedes pagar al final del mes; el [interés](/es/glossario/es-interes) puede convertir un gasto pequeño en una deuda costosa.
 - Reserva una pequeña partida para “gastos inesperados” (por ejemplo, el equivalente a una cena fuera) y mantenla separada del resto del presupuesto.
 - Cada vez que recibas un ingreso extra (bono, devolución de impuestos), destina al menos la mitad a tus metas de largo plazo.
 

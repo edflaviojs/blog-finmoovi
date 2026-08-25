@@ -28,13 +28,13 @@ seo:
 
 - Facturas que llegan sin aviso y se pagan en el último minuto.  
 - Gastos de supermercado que superan el presupuesto porque no se registran.  
-- Tarjetas de crédito que generan intereses porque la fecha de corte se olvida.  
+- Tarjetas de [crédito](/es/glossario/es-credito) que generan intereses porque la fecha de corte se olvida.  
 
 **Consejo práctico:** **Revisa tus gastos al final de cada día y anota lo esencial; un registro rápido evita sorpresas al mes.**  
 
 ## Qué significa planificación financiera familiar
 
-La planificación financiera familiar es el proceso de organizar los ingresos y los gastos de todos los miembros del hogar para alcanzar metas a corto, medio y largo plazo. No se trata de cortar todo lo que te gusta, sino de crear un mapa que muestre cuánto entra, cuánto sale y dónde puedes ahorrar sin sacrificar la calidad de vida. En otras palabras, es como diseñar una ruta antes de iniciar un viaje: sabes dónde estás, a dónde quieres llegar y qué paradas necesitas hacer.
+La [planificación financiera](/es/glossario/es-planificacion-financiera) familiar es el proceso de organizar los ingresos y los gastos de todos los miembros del hogar para alcanzar metas a corto, medio y largo plazo. No se trata de cortar todo lo que te gusta, sino de crear un mapa que muestre cuánto entra, cuánto sale y dónde puedes ahorrar sin sacrificar la calidad de vida. En otras palabras, es como diseñar una ruta antes de iniciar un viaje: sabes dónde estás, a dónde quieres llegar y qué paradas necesitas hacer.
 
 **Consejo práctico:** **Define una meta clara, como “poder pagar el alquiler y el supermercado sin usar la tarjeta de crédito”.** Esa meta será el punto de referencia para ajustar cada gasto.
 
@@ -48,11 +48,11 @@ Imagina que tu mejor amigo es un asistente financiero que nunca duerme. FinMoovi
 
 - **Captura inteligente:** foto del recibo o dictado de voz → clasificación automática.  
 - **Multimoneda:** visualiza tus gastos en la moneda que más te convenga.  
-- **Flujo de caja e informes:** ve en tiempo real cuánto entra y sale, con gráficos claros.  
+- **[Flujo de caja](/es/glossario/es-flujo-de-caja) e informes:** ve en tiempo real cuánto entra y sale, con gráficos claros.  
 - **Planificación mensual y metas:** establece objetivos y sigue su progreso.  
-- **Tarjetas de crédito y facturas:** registra cada compra y recibe alertas antes de la fecha de corte.  
+- **Tarjetas de crédito y facturas:** registra cada compra y recibe [alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no) antes de la fecha de corte.  
 - **Modo compras:** crea listas, suma el total en tiempo real y evita sobrepasar el presupuesto.  
-- **Recordatorios y alertas de saldo:** notificaciones cuando el saldo está bajo o una factura está próxima.  
+- **Recordatorios y [alertas de saldo](/es/posts/es-como-organizar-tu-dinero-con-una-app-facil-de-usar):** notificaciones cuando el saldo está bajo o una factura está próxima.  
 
 ## Cómo usar las funciones paso a paso
 
@@ -68,7 +68,7 @@ Imagina que tu mejor amigo es un asistente financiero que nunca duerme. FinMoovi
 
 - **Controla los pequeños gastos:** un café al día puede parecer insignificante, pero sumado a lo largo del mes equivale a un gasto de alquiler. Usa la función de “Modo compras” para ver el total antes de pagar.  
 - **Aprovecha la multimoneda:** si viajas o compras en línea, registra el gasto en la moneda original y FinMoovi lo convertirá al valor que manejas en casa, evitando sorpresas en el presupuesto.  
-- **Revisa tus tarjetas de crédito:** la app te muestra la fecha de corte y el saldo pendiente; paga la factura antes de la fecha límite para evitar intereses.  
+- **Revisa tus tarjetas de crédito:** la app te muestra la fecha de corte y el [saldo pendiente](/es/posts/es-como-evitar-que-el-saldo-pendiente-arruine-tu-presupuesto-en); paga la factura antes de la fecha límite para evitar intereses.  
 
 ## Empieza hoy
 

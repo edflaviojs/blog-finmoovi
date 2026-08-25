@@ -46,14 +46,14 @@ Depois de separar, some os valores de cada categoria. O total será o seu custo 
 
 ## Ferramentas que facilitam o controle  
 
-Hoje em dia, não é preciso usar planilha manual. Aplicativos de finanças pessoais permitem registrar tudo em segundos. Uma funcionalidade que faz diferença é a **captura inteligente**: basta tirar foto da nota fiscal ou falar o valor que acabou de pagar, e o app categoriza automaticamente (por exemplo, “alimentação” ou “transporte”). Isso elimina a etapa de digitar cada número.
+Hoje em dia, não é preciso usar planilha manual. [Aplicativos](/posts/5-alternativas-ao-mobills-em-2026) de [finanças pessoais](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar) permitem registrar tudo em segundos. Uma funcionalidade que faz diferença é a **captura inteligente**: basta tirar foto da nota fiscal ou falar o valor que acabou de pagar, e o app categoriza automaticamente (por exemplo, “alimentação” ou “transporte”). Isso elimina a etapa de digitar cada número.
 
 Além disso, a maioria dos apps já oferece:
 
-- **Multimoeda:** suporte a diferentes moedas (BRL, USD, EUR), ideal para quem viaja ou tem renda em outra moeda.  
-- **Fluxo de caixa e relatórios:** visualização de entradas e saídas em gráficos, facilitando a identificação de picos de gasto.  
+- **Multimoeda:** suporte a diferentes moedas (BRL, USD, EUR), ideal para quem viaja ou tem renda em outra [moeda](/glossario/moeda).  
+- **[Fluxo de caixa](/glossario/fluxo-de-caixa) e relatórios:** visualização de entradas e saídas em gráficos, facilitando a identificação de picos de gasto.  
 - **Planejamento mensal e metas:** definição de limites para cada categoria e acompanhamento do progresso.  
-- **Cartões de crédito e fatura:** integração que traz todas as despesas de cartão em um só lugar, evitando surpresas na fatura.  
+- **Cartões de [crédito](/glossario/credito) e fatura:** integração que traz todas as despesas de cartão em um só lugar, evitando surpresas na fatura.  
 - **Modo compras:** lista de itens com cálculo automático do total em tempo real, ajudando a manter o orçamento na hora da compra.  
 - **Lembretes e alertas de saldo:** notificações quando o limite está próximo ou quando falta dinheiro para pagar uma conta.  
 - **Offline/PWA/sincronização:** acesso mesmo sem internet e atualização automática quando a conexão volta.
@@ -64,7 +64,7 @@ Além disso, a maioria dos apps já oferece:
 - **Dica prática:** troque o carro por transporte público ou bicicleta em dias de menor demanda; o gasto com combustível pode cair em até 30 %.  
 - **Dica prática:** estabeleça um “dia sem compras” por semana. Nesse dia, evite gastar em itens não essenciais e use o dinheiro economizado para pagar alguma conta fixa.
 
-Outras estratégias simples incluem:
+Outras [estratégias](/posts/como-diversificar-com-ativos-de-renda-variavel-em-2026) simples incluem:
 
 - Preparar refeições em casa ao invés de comer fora todos os dias.  
 - Comprar produtos em quantidade maior quando houver promoção, desde que o consumo seja garantido.  

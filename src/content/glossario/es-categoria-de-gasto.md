@@ -32,7 +32,7 @@ Una categoría de gasto es simplemente un “cajón” donde guardas cada desemb
 - **Visibilidad instantánea**: sabes en segundos si estás gastando más de lo que deberías en comida o en entretenimiento.  
 - **Control de metas**: puedes fijar un límite mensual para cada categoría y ver si lo cumples.  
 - **Toma de decisiones informada**: al comparar categorías, decides dónde recortar sin sacrificar lo esencial.  
-- **Facilidad para reportes**: los informes financieros se generan automáticamente cuando los datos ya están clasificados.  
+- **Facilidad para reportes**: los [informes](/es/posts/es-tambien-te-quedas-sin-saber-a-donde-fue-tu-dinero-al-final) financieros se generan automáticamente cuando los datos ya están clasificados.  
 
 ![Ventajas de organizar tus gastos por categorías](/images/glossario/categoria-de-despesa-inline-3.webp)
 

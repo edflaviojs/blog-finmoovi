@@ -39,7 +39,7 @@ Al visualizar estas categorías, el “costo de vida” deja de ser una cifra ab
 
 ## FinMoovi: la solución práctica  
 
-Aquí es donde FinMoovi entra en escena. La app te permite **registrar tus gastos fijos y variables en el flujo de caja y descubrir el costo real de tu mes** sin complicaciones. Con su captura inteligente, basta con tomar una foto del recibo o dictar el gasto en voz y la aplicación lo categoriza automáticamente, ahorrándote tiempo y errores. Además, funciona en varias monedas, así que si viajas o recibes ingresos en dólares o euros, todo se convierte al instante.  
+Aquí es donde FinMoovi entra en escena. La app te permite **registrar tus gastos fijos y variables en el [flujo de caja](/es/glossario/es-flujo-de-caja) y descubrir el costo real de tu mes** sin complicaciones. Con su captura inteligente, basta con tomar una foto del recibo o dictar el gasto en voz y la aplicación lo categoriza automáticamente, ahorrándote tiempo y errores. Además, funciona en varias monedas, así que si viajas o recibes ingresos en dólares o euros, todo se convierte al instante.  
 
 ![FinMoovi: la solución práctica  ](/images/glossario/custo-de-vida-inline-3.webp)
 
@@ -49,9 +49,9 @@ Aquí es donde FinMoovi entra en escena. La app te permite **registrar tus gasto
 - **Multimoneda:** BRL, USD, EUR y más → conversiones en tiempo real.  
 - **Flujo de caja e informes:** visualiza ingresos vs. gastos en gráficos claros.  
 - **Planificación mensual y metas:** define cuánto quieres ahorrar y sigue tu progreso.  
-- **Tarjetas de crédito y facturas:** sincroniza tus tarjetas para ver el saldo y la fecha de vencimiento.  
+- **Tarjetas de [crédito](/es/glossario/es-credito) y facturas:** sincroniza tus tarjetas para ver el saldo y la fecha de vencimiento.  
 - **Modo compras:** crea listas, ve el total en tiempo real y evita sorpresas al pagar.  
-- **Recordatorios y alertas:** notificaciones de bajo saldo o pagos próximos.  
+- **Recordatorios y [alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no):** notificaciones de bajo saldo o pagos próximos.  
 - **Modo offline / PWA / sincronización:** usa la app sin conexión y tus datos se actualizan al volver a internet.  
 
 Con FinMoovi, cada gasto queda registrado, categorizado y listo para ser analizado, lo que te da una visión clara del costo de vida y te ayuda a tomar decisiones informadas.
@@ -68,14 +68,14 @@ Con FinMoovi, cada gasto queda registrado, categorizado y listo para ser analiza
 - **Negocia tus servicios:** Llama a tu proveedor de internet o teléfono y pregunta por planes más económicos; a menudo hay ofertas ocultas.  
 - **Optimiza el transporte:** Si el costo de la gasolina supera el de un pase mensual de transporte público, cambia de hábito.  
 
-Aplicar estos consejos mientras usas FinMoovi te permite medir el impacto inmediato de cada cambio y ajustar tu presupuesto en tiempo real.
+Aplicar estos [consejos](/es/posts/es-7-errores-financieros-principiante) mientras usas FinMoovi te permite medir el impacto inmediato de cada [cambio](/es/glossario/es-cambio) y ajustar tu presupuesto en tiempo real.
 
 ## Herramientas de seguimiento y planificación  
 
 FinMoovi no solo registra; también te ayuda a planificar. Puedes crear metas mensuales, como “ahorrar el equivalente a dos cafés al día”, y la app mostrará un progreso visual cada vez que registres un gasto. Los informes mensuales te revelan qué porcentaje de tu ingreso se destina a cada categoría, facilitando la identificación de áreas donde recortar. Además, la función de alertas te avisa cuando te acercas al límite que te has impuesto, evitando sorpresas desagradables al cerrar el mes.  
 
 - **Informe de categorías:** porcentaje de gasto por vivienda, alimentación, ocio, etc.  
-- **Meta de ahorro:** define un objetivo y recibe notificaciones de avance.  
+- **Meta de [ahorro](/es/glossario/es-ahorro):** define un objetivo y recibe notificaciones de avance.  
 - **Alertas de saldo bajo:** evita sobregiros y cargos extra.  
 
 Con estos datos en la palma de la mano, el costo de vida deja de ser una incógnita y se convierte en una herramienta de control.

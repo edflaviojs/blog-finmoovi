@@ -19,13 +19,13 @@ seo:
 
 ## What is parcelamento MEI?
 
-Imagine you just opened a small home‑based bakery. The first month sales cover flour, electricity, and a modest profit, but the tax bill that comes with being a Microentrepreneur Individual (MEI) feels like a sudden dent in your cash flow. You hear about “parcelamento MEI” – the option to split that tax payment into monthly installments – and wonder if it’s a safe shortcut or a hidden trap.
+Imagine you just opened a small home‑based bakery. The first month sales cover flour, electricity, and a modest profit, but the tax bill that comes with being a Microentrepreneur Individual (MEI) feels like a sudden dent in your [cash flow](/en/glossario/en-cash-flow). You hear about “parcelamento MEI” – the option to split that tax payment into monthly installments – and wonder if it’s a safe shortcut or a hidden trap.
 
 ![What is parcelamento MEI?](/images/glossario/parcelamento-mei-inline-1.webp)
 
 
 
-Parcelamento MEI is simply the legal possibility for MEIs to break down the mandatory tax (the DAS) into smaller, manageable payments spread over several months. Instead of paying the whole amount at once, you can choose, for example, three or six equal parts. The government charges a modest interest, but the trade‑off is that you keep liquidity for day‑to‑day expenses.
+Parcelamento MEI is simply the legal possibility for MEIs to break down the mandatory tax (the DAS) into smaller, manageable payments spread over several months. Instead of paying the whole amount at once, you can choose, for example, three or six equal parts. The government charges a modest [interest](/en/glossario/en-interest), but the trade‑off is that you keep [liquidity](/en/glossario/en-liquidity) for day‑to‑day expenses.
 
 ## Why it matters for you
 
@@ -45,7 +45,7 @@ Parcelamento MEI is simply the legal possibility for MEIs to break down the mand
 
 ## How FinMoovi’s smart capture helps
 
-Here’s where a friendly app like FinMoovi steps in. Its **smart capture** feature lets you snap a photo of any receipt, invoice, or even a printed tax notice, and the app instantly extracts the numbers, categorizes them, and updates your cash‑flow forecast. No more manual entry, no more “I don’t know where that money went”.
+Here’s where a friendly app like FinMoovi steps in. Its **[smart capture](/en/posts/en-how-to-never-miss-a-bill-payment-deadline-simple-5-minute)** feature lets you snap a photo of any receipt, invoice, or even a printed tax notice, and the app instantly extracts the numbers, categorizes them, and updates your cash‑flow forecast. No more manual entry, no more “I don’t know where that money went”.
 
 When you receive the parcelamento schedule, just point your phone at the document. FinMoovi reads the installment amounts, due dates, and interest rate, then automatically:
 
@@ -59,7 +59,7 @@ Because the app works offline and syncs later, you can capture a receipt even in
 
 **Practical tip:** Set up a dedicated “tax jar” in your bank account and schedule an automatic transfer right after each sale. Seeing the money move into that jar each day makes the future installment feel less like a surprise.
 
-**Practical tip:** Use FinMoovi’s monthly planning view to compare your projected income with the total of upcoming installments. If the gap looks tight, consider adjusting your product mix for the next month (e.g., add a higher‑margin item).
+**Practical tip:** Use FinMoovi’s monthly [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) view to compare your projected income with the total of upcoming installments. If the gap looks tight, consider adjusting your product mix for the next month (e.g., add a higher‑margin item).
 
 **Practical tip:** When you capture the parcelamento notice, add a short voice note like “pay on the 5th, interest 1.2%”. The voice tag is searchable, so months later you can quickly recall why you chose a six‑month plan instead of three.
 
@@ -68,7 +68,7 @@ Because the app works offline and syncs later, you can capture a receipt even in
 1. **Capture the tax notice** – open FinMoovi, tap the camera icon, snap the document, and let the app read the numbers.
 2. **Review the auto‑categorization** – ensure the installments are under “Taxes – MEI”. If something looks off, edit it in a tap.
 3. **Check the cash‑flow forecast** – the app shows a graph with income, expenses, and the upcoming tax slices. Spot any red zones early.
-4. **Set reminders** – FinMoovi will push a notification the day before each payment. You can also add a custom alert a week earlier if you prefer a buffer.
+4. **Set [reminders](/en/posts/en-forgot-to-pay-a-bill-how-to-fix-it-in-2026)** – FinMoovi will push a notification the day before each payment. You can also add a custom alert a week earlier if you prefer a buffer.
 5. **Pay on time** – use your preferred payment method (bank slip, card, or digital wallet). After payment, capture the receipt; the app will mark the installment as paid automatically.
 
 ## Benefits beyond the tax

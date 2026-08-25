@@ -19,7 +19,7 @@ seo:
 
 ## O que é parcelamento simples nacional  
 
-Imagine que você acabou de fechar um contrato de prestação de serviço e o cliente quer pagar em três vezes, mas o seu negócio ainda não tem um sistema que registre essas parcelas de forma automática. O “parcelamento simples nacional” é a forma mais direta de dividir um valor total em parcelas mensais, sem juros adicionais, e registrar cada pagamento no seu fluxo de caixa. Em termos simples, é como dividir a conta de um jantar em partes iguais e anotar quem pagou o quê, só que aplicado a receitas e despesas de um negócio.  
+Imagine que você acabou de fechar um contrato de prestação de serviço e o cliente quer pagar em três vezes, mas o seu negócio ainda não tem um sistema que registre essas parcelas de forma automática. O “parcelamento simples nacional” é a forma mais direta de dividir um valor total em parcelas mensais, sem [juros](/glossario/juros) adicionais, e registrar cada pagamento no seu [fluxo de caixa](/glossario/fluxo-de-caixa). Em termos simples, é como dividir a conta de um jantar em partes iguais e anotar quem pagou o quê, só que aplicado a receitas e despesas de um negócio.  
 
 ![O que é parcelamento simples nacional  ](/images/glossario/parcelamento-simples-nacional-inline-1.webp)
 
@@ -55,18 +55,18 @@ Muitos empreendedores acabam esquecendo de registrar alguma parcela ou confundem
 
 **Dica prática:** use uma planilha ou app que permita marcar a moeda de cada transação; isso evita confusão ao consolidar os números.  
 
-**Dica prática:** programe alertas de vencimento para receber notificações antes que a data de pagamento se aproxime.  
+**Dica prática:** programe [alertas](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto) de vencimento para receber notificações antes que a data de pagamento se aproxime.  
 
 ## Como o FinMoovi ajuda  
 
 O FinMoovi foi pensado para quem quer controlar o parcelamento simples nacional sem complicação. A captura inteligente permite tirar foto da nota ou gravar a voz explicando a transação; o app reconhece automaticamente o valor, a data e a moeda, preenchendo os campos de “valor da parcela”, “data de vencimento” e “status”.  
 
 - **Multimoeda:** aceita BRL, USD e EUR, convertendo tudo para a moeda que você escolher como base, facilitando a visualização do fluxo total.  
-- **Fluxo de caixa e relatórios:** gera gráficos que mostram a entrada de cada parcela ao longo do mês, ajudando a identificar períodos de maior ou menor liquidez.  
+- **Fluxo de caixa e relatórios:** gera gráficos que mostram a entrada de cada parcela ao longo do mês, ajudando a identificar períodos de maior ou menor [liquidez](/glossario/liquidez).  
 - **Planejamento mensal / metas:** permite definir metas de receita mensal, incluindo as parcelas esperadas, e acompanha o progresso em tempo real.  
-- **Cartões de crédito / fatura:** integra as despesas de cartões, de modo que o pagamento de parcelas não seja confundido com o saldo da fatura.  
+- **Cartões de [crédito](/glossario/credito) / fatura:** integra as despesas de cartões, de modo que o pagamento de parcelas não seja confundido com o saldo da fatura.  
 - **Modo compras:** cria listas de compras e mostra o total em tempo real, útil para quem precisa comprar insumos e quer saber quanto ainda cabe no orçamento.  
-- **Lembretes / alertas de saldo:** envia notificações quando uma parcela está próxima do vencimento ou quando o saldo cair abaixo de um limite definido.  
+- **Lembretes / [alertas de saldo](/posts/como-organizar-seu-dinheiro-com-um-app-facil-de-usar):** envia notificações quando uma parcela está próxima do vencimento ou quando o saldo cair abaixo de um limite definido.  
 - **Offline / PWA / sincronização:** funciona mesmo sem internet e sincroniza tudo quando a conexão volta, garantindo que nenhum dado se perca.  
 
 ## Dicas práticas para dominar o parcelamento simples nacional  

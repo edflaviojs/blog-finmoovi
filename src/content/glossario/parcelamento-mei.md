@@ -27,7 +27,7 @@ Se você acabou de abrir sua empresa como Microempreendedor Individual e já rec
 
 ## Como funciona na prática  
 
-Quando o cliente aceita pagar em parcelas, você emite a primeira nota fiscal no momento da venda e, nas notas subsequentes, indica que se trata de “parcelamento”. Cada parcela deve ser lançada como receita no período em que o pagamento for efetivamente recebido. Assim, o fluxo de caixa reflete a realidade: no primeiro mês entra o valor da primeira parcela, nos meses seguintes entra o restante. Essa separação ajuda a manter o controle financeiro e a cumprir a obrigação de recolher o imposto sobre o total da venda, mas de forma distribuída ao longo do tempo.
+Quando o cliente aceita pagar em parcelas, você emite a primeira nota fiscal no momento da venda e, nas notas subsequentes, indica que se trata de “parcelamento”. Cada parcela deve ser lançada como receita no período em que o pagamento for efetivamente recebido. Assim, o [fluxo de caixa](/glossario/fluxo-de-caixa) reflete a realidade: no primeiro mês entra o valor da primeira parcela, nos meses seguintes entra o restante. Essa separação ajuda a manter o [controle financeiro](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto) e a cumprir a obrigação de recolher o imposto sobre o total da venda, mas de forma distribuída ao longo do tempo.
 
 - **Emissão da nota:** a primeira nota traz o valor total da venda e a condição de parcelamento.  
 - **Registro das parcelas:** a cada pagamento, registre a parcela como receita no mês correspondente.  
@@ -53,12 +53,12 @@ O FinMoovi funciona como aquele amigo que entende de finanças e ainda tem as fe
 
 - **Captura inteligente:** tire uma foto da nota fiscal ou grave a voz descrevendo a operação; o app reconhece o valor, a data e a categoria automaticamente, economizando tempo.  
 - **Categorização automática:** o sistema classifica a entrada como “Venda – Parcelamento”, separando-a das demais receitas.  
-- **Multimoeda:** se você recebe em dólares ou euros, o FinMoovi converte para a moeda que você usa no controle, usando a taxa do dia, sem precisar fazer cálculos manuais.  
+- **Multimoeda:** se você recebe em dólares ou euros, o FinMoovi converte para a [moeda](/glossario/moeda) que você usa no controle, usando a taxa do dia, sem precisar fazer cálculos manuais.  
 - **Fluxo de caixa e relatórios:** visualize, em tempo real, quanto já recebeu de cada venda parcelada e quanto ainda está por receber. Os relatórios mostram o impacto no limite de faturamento.  
 - **Planejamento mensal e metas:** defina metas de faturamento e veja se as parcelas previstas ajudam a alcançá‑las sem ultrapassar o teto anual.  
-- **Cartões de crédito e fatura:** registre pagamentos feitos por cartão; o app avisa quando a fatura está próxima de vencer, evitando juros.  
+- **Cartões de [crédito](/glossario/credito) e fatura:** registre pagamentos feitos por cartão; o app avisa quando a fatura está próxima de vencer, evitando [juros](/glossario/juros).  
 - **Modo compras:** crie listas de itens que você pretende vender; o total aparece em tempo real, facilitando a negociação de parcelas.  
-- **Lembretes e alertas de saldo:** receba notificações quando uma parcela está prestes a vencer ou quando o saldo disponível está baixo.  
+- **Lembretes e [alertas de saldo](/posts/como-organizar-seu-dinheiro-com-um-app-facil-de-usar):** receba notificações quando uma parcela está prestes a vencer ou quando o saldo disponível está baixo.  
 - **Offline / PWA / sincronização:** mesmo sem internet, você pode registrar as parcelas; ao se conectar novamente, tudo sincroniza automaticamente.  
 
 **Dica prática:** ao receber a primeira parcela, use a captura inteligente para registrar a nota; depois, configure um lembrete mensal para registrar as próximas parcelas automaticamente.
