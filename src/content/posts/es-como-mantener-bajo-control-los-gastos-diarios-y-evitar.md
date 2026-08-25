@@ -5,8 +5,8 @@ description: >-
   lograr tranquilidad financiera con captura inteligente de recibos.
 tickerHeadline: Domina tus gastos diarios
 image: >-
-imageAlt: "Familia sonriente en sofá revisando tabletas y portátil con planta de fondo."
   /images/posts/como-manter-as-contas-do-dia-sob-controle-e-evitar-surpresas.webp
+imageAlt: "Familia sonriente en sofá revisando tabletas y portátil con planta de fondo."
 category: investimentos
 locale: es
 tags:
