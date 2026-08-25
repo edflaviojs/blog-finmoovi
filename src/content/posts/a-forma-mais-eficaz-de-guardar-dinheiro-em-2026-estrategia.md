@@ -43,11 +43,11 @@ Esses pontos mostram que a solução precisa ser **prática, automática e visua
 
 ### 1. Separe antes de gastar
 
-A primeira regra é tratar a poupança como uma conta fixa, assim como o aluguel ou a conta de luz. Quando o salário entra, transfira imediatamente (ou programe) um percentual – por exemplo, 10 % a 20 % – para uma conta ou investimento de baixo risco. Essa movimentação deve acontecer em até cinco minutos, antes que qualquer outra despesa seja considerada.
+A primeira regra é tratar a [poupança](/glossario/poupanca) como uma conta fixa, assim como o aluguel ou a conta de luz. Quando o salário entra, transfira imediatamente (ou programe) um percentual – por exemplo, 10 % a 20 % – para uma conta ou investimento de baixo risco. Essa movimentação deve acontecer em até cinco minutos, antes que qualquer outra despesa seja considerada.
 
 ### 2. Use metas visuais
 
-Transforme o número em algo que você veja todos os dias. Um gráfico de barra que mostra “Objetivo: 3 meses de reserva de emergência” ou um ícone de cofre crescente no seu aplicativo cria um estímulo visual constante.
+Transforme o número em algo que você veja todos os dias. Um gráfico de barra que mostra “Objetivo: 3 meses de [reserva de emergência](/ferramentas/calculadora-reserva)” ou um ícone de cofre crescente no seu aplicativo cria um estímulo visual constante.
 
 ### 3. Capture e categorize automaticamente
 
@@ -61,16 +61,16 @@ A funcionalidade de **captura inteligente** do FinMoovi permite tirar foto da no
 
 ### 4. Revisões mensais rápidas
 
-Dedique, no fim de cada mês, 10 minutos para analisar o relatório de fluxo de caixa. O FinMoovi gera um resumo que mostra quanto entrou, quanto saiu e quanto foi guardado. Ajuste o percentual de transferência se perceber que ficou muito apertado ou, ao contrário, que há espaço para aumentar a meta.
+Dedique, no fim de cada mês, 10 minutos para analisar o relatório de [fluxo de caixa](/glossario/fluxo-de-caixa). O FinMoovi gera um resumo que mostra quanto entrou, quanto saiu e quanto foi guardado. Ajuste o percentual de transferência se perceber que ficou muito apertado ou, ao contrário, que há espaço para aumentar a meta.
 
 ## Dicas práticas para potencializar a economia
 
 | Dica | Como aplicar |
 |------|--------------|
 | **Desafio dos 7 dias** | Durante uma semana, redirecione todo o troco de cafés e lanches para sua conta de reserva. |
-| **Arredondamento automático** | Configure seu cartão de débito para arredondar cada compra ao próximo múltiplo de 5 % e salvar a diferença. |
+| **Arredondamento automático** | Configure seu [cartão de débito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena) para arredondar cada compra ao próximo múltiplo de 5 % e salvar a diferença. |
 | **Plano de “primeira compra”** | Ao comprar um item maior (ex.: eletrodoméstico), comprometa-se a guardar o equivalente a duas vezes o valor em pequenas despesas diárias. |
-| **Uso de multimoeda** | Se receber em diferentes moedas, converta o excedente para a moeda da sua meta, aproveitando variações favoráveis. |
+| **Uso de multimoeda** | Se receber em diferentes moedas, converta o excedente para a [moeda](/glossario/moeda) da sua meta, aproveitando variações favoráveis. |
 
 ![Dicas práticas para potencializar a economia](/images/posts/a-forma-mais-eficaz-de-guardar-dinheiro-em-2026-estrategia-2.webp)
 
@@ -82,7 +82,7 @@ Essas práticas não exigem grandes sacrifícios; elas apenas redirecionam recur
 
 - **Automatize tudo**: quanto menos decisões manuais, menor a chance de falhar.
 - **Celebre pequenos marcos**: ao alcançar 25 % da meta, recompense-se com algo simbólico, como um filme em casa.
-- **Mantenha o app aberto**: o painel de “Lembretes/alertas de saldo” avisa quando está próximo de ultrapassar o limite de gastos mensais, reforçando a necessidade de economizar.
+- **Mantenha o app aberto**: o painel de “Lembretes/[alertas](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto) de saldo” avisa quando está próximo de ultrapassar o limite de gastos mensais, reforçando a necessidade de economizar.
 
 ## O papel do FinMoovi no seu dia a dia
 
@@ -111,4 +111,4 @@ Sim. Mesmo que a renda flutue, programar transferências baseadas em percentuais
 Use o modo compras do FinMoovi: ele mostra o total em tempo real e avisa quando o gasto ultrapassa o limite pré‑definido, ajudando a manter o controle.
 
 ### Preciso de um investimento complexo para a reserva?
-Não. Para a reserva de emergência, opções de baixa volatilidade, como fundos de mercado monetário ou contas de rendimento estável, são suficientes.
+Não. Para a [reserva de emergência](/glossario/reserva-de-emergencia), opções de baixa [volatilidade](/glossario/volatilidade), como fundos de mercado monetário ou contas de rendimento estável, são suficientes.

@@ -43,7 +43,7 @@ These points show that the solution must be **practical, automatic, and visual**
 
 ### 1. Separate before you spend  
 
-Treat savings like a fixed bill—just like rent or the electricity bill. When your salary arrives, transfer (or schedule) a percentage—say **10 % to 20 %**—to a low‑risk account or investment within five minutes, before any other expense is considered.
+Treat [savings](/en/glossario/en-savings) like a fixed bill—just like rent or the electricity bill. When your salary arrives, transfer (or schedule) a percentage—say **10 % to 20 %**—to a low‑risk account or investment within five minutes, before any other expense is considered.
 
 ### 2. Use visual goals  
 
@@ -68,7 +68,7 @@ At the end of each month, spend about **10 minutes** reviewing the cash‑flow r
 | Tip | How to apply |
 |-----|--------------|
 | **7‑day challenge** | For one week, redirect every bit of change from coffee and snacks to your reserve account. |
-| **Automatic rounding** | Set your debit card to round each purchase up to the nearest 5 % and save the difference. |
+| **Automatic rounding** | Set your [debit card](/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026) to round each purchase up to the nearest 5 % and save the difference. |
 | **“First purchase” plan** | When buying a big item (e.g., a home appliance), commit to saving twice its price in small daily expenses. |
 | **Multi‑currency use** | If you receive money in different currencies, convert the surplus to the currency of your goal, taking advantage of favorable rates. |
 
@@ -80,11 +80,11 @@ These practices don’t require major sacrifices; they simply redirect money tha
 
 - **Automate everything**: the fewer manual decisions, the lower the chance of slipping up.  
 - **Celebrate small milestones**: when you hit 25 % of your goal, treat yourself to something simple, like a movie night at home.  
-- **Keep the app open**: the “Balance Alerts” panel warns you when you’re close to exceeding your monthly spending limit, reinforcing the need to save.
+- **Keep the app open**: the “Balance Alerts” panel warns you when you’re close to exceeding your monthly [spending limit](/en/glossario/en-spending-limit), reinforcing the need to save.
 
 ## The role of FinMoovi in your daily life  
 
-FinMoovi stands out by combining **smart capture**, **monthly planning**, and **cash‑flow reports** in one place. By using a receipt photo to feed the “Savings” category automatically, you eliminate the manual entry step, reduce friction, and ensure every cent is accounted for. Plus, offline capability means your expenses are logged even without a connection and sync later when you’re back online.
+FinMoovi stands out by combining **smart capture**, **monthly [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips)**, and **cash‑flow [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end)** in one place. By using a receipt photo to feed the “Savings” category automatically, you eliminate the manual entry step, reduce friction, and ensure every cent is accounted for. Plus, offline capability means your expenses are logged even without a connection and sync later when you’re back online.
 
 ![FinMoovi’s role in daily life](/images/posts/a-forma-mais-eficaz-de-guardar-dinheiro-em-2026-estrategia-4.webp)
 
@@ -106,4 +106,4 @@ Yes. Even if your income fluctuates, programming transfers based on percentages 
 Use FinMoovi’s shopping mode: it shows the real‑time total and alerts you when a purchase exceeds a preset limit, helping you stay in control.
 
 ### Do I need a complex investment for the reserve?  
-No. For an emergency fund, low‑volatility options like money‑market funds or stable‑yield accounts are sufficient.
+No. For an [emergency fund](/en/glossario/en-emergency-fund), low‑[volatility](/en/glossario/en-volatility) options like money‑market funds or stable‑[yield](/en/glossario/en-yield) accounts are sufficient.
