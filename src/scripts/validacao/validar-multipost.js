@@ -29,6 +29,7 @@ import {
   horaDaRede, MINUTOS_DE_MARGEM, STORIES, minutosDoStory, storiesEmFalta,
   FORMATOS, formatoDoRoteiro, redesDoFormato, tituloParaLegenda, MAX_TITULO_NA_LEGENDA,
   comprimirParaOTelegram, TELEGRAM_MAX_BYTES,
+  canalDaRede, eDaNossaConta, NOSSA_CONTA,
 } from '../multipost/entregar.js';
 // ⚠️ O vigia nasceu em 10/08 e prova-se aqui, no mesmo sítio da entrega: são as duas
 // metades da mesma pergunta — o que mandamos, e o que a rede fez com aquilo.
@@ -1130,6 +1131,95 @@ console.log('\n22. O TETO DE 20 MB DO TELEGRAM — o defeito de 10/08, medido');
     FORMATOS.curto.comprimirParaTelegram === true
     && FORMATOS.loop16.comprimirParaTelegram === true
     && FORMATOS.longo.comprimirParaTelegram === false);
+}
+
+console.log('\n23. A CONTA CERTA — duas marcas no mesmo Multipost (24/08)');
+
+{
+  /**
+   * 🔴 ESTA É A LISTA VERDADEIRA, lida do servidor em 25/08/2026 — não é inventada.
+   *
+   * Em 24/08 o dono ligou a **GoApexi** ao mesmo Multipost, e passaram a existir duas
+   * contas de Instagram e duas de Facebook. Até aqui o robô pegava **a primeira**; nesse
+   * dia calhou ser a do FinMoovi, por sorte. A ordem é do servidor, e um reconectar
+   * bastava para a inverter — e o Short diário sairia no perfil da outra marca.
+   *
+   * ⚠️ Repare nas três formas diferentes com que o servidor guarda a MESMA conta:
+   * `name` com maiúsculas, `name` em minúsculas, e o Bluesky com o domínio colado ao
+   * `profile`. Era por isso que uma regra ingénua (só o `name`, ou só o `profile`) deixava
+   * um canal de fora sem se queixar.
+   */
+  const CANAIS = [
+    { id: 'a', identifier: 'tiktok', name: 'finmoovi', profile: 'finmoovi' },
+    { id: 'b', identifier: 'pinterest', name: 'finmoovi', profile: 'finmoovi' },
+    { id: 'c', identifier: 'facebook', name: 'FinMoovi', profile: 'finmoovi' },
+    { id: 'd', identifier: 'facebook', name: 'GoApexi1', profile: 'goapexi1' },
+    { id: 'e', identifier: 'linkedin-page', name: 'FinMoovi', profile: 'finmoovi' },
+    { id: 'f', identifier: 'instagram', name: 'FinMoovi', profile: 'finmoovi' },
+    { id: 'g', identifier: 'instagram', name: 'GoApexi', profile: 'goapexi1' },
+    { id: 'h', identifier: 'x', name: 'FinMoovi', profile: 'finmoovi' },
+    { id: 'i', identifier: 'threads', name: 'finmoovi', profile: 'finmoovi' },
+    { id: 'j', identifier: 'bluesky', name: 'FinMoovi', profile: 'finmoovi.bsky.social' },
+    { id: 'k', identifier: 'telegram', name: 'FinMoovi', profile: 'finmoovi' },
+  ];
+
+  ok('🔴 o Instagram escolhido é o do FinMoovi, e NÃO o da GoApexi',
+    canalDaRede(CANAIS, rede('instagram')).id === 'f');
+  ok('🔴 e o Facebook também',
+    canalDaRede(CANAIS, rede('facebook')).id === 'c');
+
+  /**
+   * 🔑 **A PROVA QUE INTERESSA É ESTA: a ordem deixou de contar.** Com a lista ao
+   * contrário, a GoApexi vem primeiro — que é exactamente o que aconteceria depois de um
+   * reconectar. O robô antigo publicava lá; este continua a escolher a nossa.
+   */
+  const AO_CONTRARIO = [...CANAIS].reverse();
+  ok('🔑 com a lista INVERTIDA (a GoApexi primeiro) a escolha não muda',
+    canalDaRede(AO_CONTRARIO, rede('instagram')).id === 'f'
+    && canalDaRede(AO_CONTRARIO, rede('facebook')).id === 'c');
+
+  ok('🔑 as 9 redes da tabela acham todas a conta do FinMoovi',
+    REDES.every((r) => canalDaRede(CANAIS, r)?.id) && canalDaRede(CANAIS, REDE_TIKTOK)?.id === 'a');
+
+  // ⚠️ O Bluesky é o único com o domínio colado ao utilizador — e por isso o único que
+  // uma comparação só pelo `profile` deixaria de fora.
+  ok('⚠️ o Bluesky (profile "finmoovi.bsky.social") também é reconhecido',
+    canalDaRede(CANAIS, rede('bluesky')).id === 'j');
+
+  /**
+   * 🔴 NA DÚVIDA NÃO SE ENTREGA. Publicar na conta errada é pior do que não publicar: o
+   * post apagado depois já foi visto e já notificou os seguidores da outra marca.
+   */
+  const semNos = CANAIS.filter((c) => c.identifier !== 'instagram').concat([{ id: 'g', identifier: 'instagram', name: 'GoApexi', profile: 'goapexi1' }]);
+  const avisos = [];
+  ok('🔴 se SÓ houver a conta da outra marca, devolve nada — não publica lá',
+    canalDaRede(semNos, rede('instagram'), (m) => avisos.push(m)) === null);
+  ok('e diz porquê, com o nome da conta que encontrou',
+    avisos.some((m) => /GoApexi/.test(m) && /NENHUMA/.test(m)), avisos.join(' | '));
+
+  const duplicadas = [...CANAIS, { id: 'z', identifier: 'instagram', name: 'FinMoovi', profile: 'finmoovi' }];
+  const avisos2 = [];
+  ok('🔴 com DUAS contas nossas iguais, também recusa — chutar publicaria na errada',
+    canalDaRede(duplicadas, rede('instagram'), (m) => avisos2.push(m)) === null);
+
+  /**
+   * ⚠️ COMPARAÇÃO EXATA, NUNCA "CONTÉM". Com "contém", uma conta chamada "FinMoovi Clube"
+   * entrava calada — e é precisamente esse o erro que isto veio travar.
+   */
+  ok('⚠️ "FinMoovi Clube" NÃO conta como sendo a nossa conta',
+    eDaNossaConta({ name: 'FinMoovi Clube', profile: 'finmooviclube' }) === false);
+  ok('e a comparação ignora maiúsculas e espaços à volta',
+    eDaNossaConta({ name: '  FINMOOVI ', profile: '' }) === true);
+  ok('a conta desta casa é "finmoovi" (e muda por MULTIPOST_CONTA, sem tocar no código)',
+    NOSSA_CONTA === (process.env.MULTIPOST_CONTA || 'finmoovi').trim().toLowerCase());
+
+  /**
+   * 🔴 E A REDE NÃO LIGADA CONTINUA A SER `null`, como sempre foi — quem chama trata isso
+   * como aviso nas acessórias e como falha no Instagram. Este conserto não podia mudar
+   * esse contrato: mudá-lo faria o dia inteiro cair por uma rede em baixo.
+   */
+  ok('uma rede que não está ligada continua a devolver nada (contrato antigo intacto)',
+    canalDaRede(CANAIS.filter((c) => c.identifier !== 'telegram'), rede('telegram')) === null);
 }
 
 console.log(`\n${'═'.repeat(72)}`);

@@ -1156,11 +1156,72 @@ async function listarCanais(k) {
   return Array.isArray(canais) ? canais.filter((c) => c && !c.disabled) : [];
 }
 
-/** O canal de uma rede, ou `null` se ela não estiver ligada (isso é aviso, não falha). */
-export function canalDaRede(canais, rede, registar = () => {}) {
-  const meus = (canais || []).filter((c) => c.identifier === rede.id);
-  if (!meus.length) return null;
-  if (meus.length > 1) registar(`⚠️ há ${meus.length} contas de ${rede.nome} ligadas — a usar a primeira: ${meus[0].name}`);
+/**
+ * 🔴 A CONTA DESTA CASA — 25/08/2026, e nasceu de um susto que quase não foi visto.
+ *
+ * ═══ O QUE ACONTECEU ═══
+ * Em 24/08 o dono ligou ao mesmo Multipost as contas de **outra marca dele, a GoApexi**:
+ * uma página de Facebook e um Instagram. Passaram a existir **duas contas de Instagram e
+ * duas de Facebook** no mesmo servidor.
+ *
+ * E este robô escolhia **a primeira que o servidor devolvesse**, com um aviso no registo e
+ * mais nada. Nesse dia calhou vir a do FinMoovi primeiro — **por sorte**. A ordem é
+ * decidida lá dentro, não por nós: basta o dono reconectar a conta (o identificador muda,
+ * e já mudou uma vez) para ela passar a vir em segundo, e o Short diário do FinMoovi ia
+ * publicar **no Instagram da outra marca**.
+ *
+ * 🔑 **UM AVISO NO REGISTO NÃO É UMA TRAVA.** Este robô corre de madrugada e ninguém lê o
+ * registo de uma corrida verde — é a mesma família de defeito do `catch` que só escreve no
+ * log e deixa a corrida verde mentirosa (o monitor do blog morreu 28 dias assim).
+ *
+ * ═══ A REGRA NOVA ═══
+ * A conta é escolhida **pelo nome**, e na dúvida NÃO SE ENTREGA. Publicar na conta errada
+ * é pior do que não publicar: um post apagado depois já foi visto, já foi notificado aos
+ * seguidores da outra marca, e não se desfaz.
+ *
+ * ⚠️ Mede-se o `name` **e** o `profile` porque o servidor não é coerente entre canais:
+ * o Bluesky guarda `name: "FinMoovi"` mas `profile: "finmoovi.bsky.social"`, e o TikTok e
+ * o Threads guardam o nome já em minúsculas. Medido nos 11 canais em 25/08: esta regra
+ * apanha os 10 do FinMoovi e deixa de fora os 2 da GoApexi.
+ *
+ * ⚠️ **É comparação EXATA, nunca "contém".** Com "contém", uma conta chamada
+ * "FinMoovi Clube" entraria calada — que é exatamente o tipo de erro que isto veio travar.
+ */
+export const NOSSA_CONTA = (process.env.MULTIPOST_CONTA || 'finmoovi').trim().toLowerCase();
+
+/**
+ * Este canal é da nossa conta?
+ * ⚠️ O `split('.')` é só para o Bluesky, que cola o domínio ao utilizador
+ * (`finmoovi.bsky.social`). Nas outras dez o `profile` já vem limpo.
+ */
+export function eDaNossaConta(canal, conta = NOSSA_CONTA) {
+  const igual = (v) => String(v || '').trim().toLowerCase() === conta;
+  const perfil = String(canal?.profile || '').trim().toLowerCase();
+  return igual(canal?.name) || igual(perfil) || igual(perfil.split('.')[0]);
+}
+
+/**
+ * O canal DA NOSSA CONTA naquela rede, ou `null` — e `null` nunca é silêncio: quem chama
+ * trata-o como "não está ligado" (aviso nas redes acessórias, falha no Instagram, que é o
+ * principal), e o motivo verdadeiro fica escrito no registo.
+ */
+export function canalDaRede(canais, rede, registar = () => {}, conta = NOSSA_CONTA) {
+  const naRede = (canais || []).filter((c) => c.identifier === rede.id);
+  if (!naRede.length) return null;
+
+  const meus = naRede.filter((c) => eDaNossaConta(c, conta));
+  if (!meus.length) {
+    registar(`🔴 ${rede.nome}: há ${naRede.length} conta(s) ligada(s) (${naRede.map((c) => c.name).join(', ')}) e NENHUMA é "${conta}" — não se entrega a uma conta que não é a nossa.`);
+    return null;
+  }
+  /**
+   * 🔴 DUAS CONTAS COM O MESMO NOME: não se adivinha. Escolher uma seria uma moeda ao ar
+   * com o perfil de uma marca em jogo — e a coroa não se desfaz.
+   */
+  if (meus.length > 1) {
+    registar(`🔴 ${rede.nome}: há ${meus.length} contas chamadas "${conta}" ligadas ao mesmo tempo — não dá para saber qual é, e chutar publicaria na errada. Desligue uma no painel.`);
+    return null;
+  }
   return meus[0];
 }
 
@@ -1750,9 +1811,17 @@ async function inspecionar() {
   const k = chave();
   const canais = await listarCanais(k);
   log(`\n🔌 ${canais.length} canais ligados e ativos:\n`);
+  /**
+   * ⚠️ **A CONTA APARECE PRIMEIRO, e é de propósito.** Desde 24/08 há canais de outra
+   * marca ligados ao mesmo servidor (ver `NOSSA_CONTA`). Um inspetor que listasse
+   * *"instagram — recebe o vídeo às 0 min"* sem dizer DE QUEM é a conta seria uma
+   * meia-verdade perigosa: dava a entender que aquele canal recebe, quando não recebe.
+   */
   for (const c of canais) {
     const naTabela = REDES.find((r) => r.id === c.identifier);
-    const nota = naTabela ? `recebe o vídeo às ${naTabela.minutos} min do Reel` : (REDE_DE_FORA[c.identifier] ? `NÃO recebe: ${REDE_DE_FORA[c.identifier]}` : 'NÃO está na tabela — não recebe nada');
+    const nota = !eDaNossaConta(c)
+      ? `⛔ é de OUTRA conta (a nossa é "${NOSSA_CONTA}") — não recebe nada daqui`
+      : (naTabela ? `recebe o vídeo às ${naTabela.minutos} min do Reel` : (REDE_DE_FORA[c.identifier] ? `NÃO recebe: ${REDE_DE_FORA[c.identifier]}` : 'NÃO está na tabela — não recebe nada'));
     log(`  · ${String(c.identifier).padEnd(14)} "${c.name}"  ${nota}`);
   }
 
@@ -1767,10 +1836,15 @@ async function inspecionar() {
    * aparecer AQUI — não no dia em que se religa.
    */
   for (const rede of [...REDES, REDE_TIKTOK]) {
-    const canal = canalDaRede(canais, rede);
+    /**
+     * ⚠️ O `log` vai como registador para o inspetor dizer o motivo VERDADEIRO. Sem ele,
+     * uma rede que só tem a conta da outra marca ligada aparecia como "NÃO ESTÁ LIGADO",
+     * que é mentira e mandava procurar defeito no sítio errado.
+     */
+    const canal = canalDaRede(canais, rede, log);
     const espera = !REDES.includes(rede) ? '   ⏸️ (à espera: não recebe nada hoje)' : '';
     log(`\n${'─'.repeat(72)}`);
-    if (!canal) { log(`📡 ${rede.nome}: ⚠️ NÃO ESTÁ LIGADO — este vídeo não sairia lá.`); continue; }
+    if (!canal) { log(`📡 ${rede.nome}: ⚠️ NÃO ESTÁ LIGADO (na conta "${NOSSA_CONTA}") — este vídeo não sairia lá.`); continue; }
     log(`📡 ${rede.nome}  (${canal.identifier})  id=${canal.id}${espera}`);
     const r = await fetch(`${API}/integration-settings/${encodeURIComponent(canal.id)}`, { headers: { Authorization: k } });
     const t = await r.text();
