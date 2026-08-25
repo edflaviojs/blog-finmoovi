@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-25T09:25:16.378Z",
-  "sourceCursor": 2,
+  "updatedAt": "2026-08-25T10:19:43.275Z",
+  "sourceCursor": 1,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -1043,9 +1043,11 @@
       "category": null,
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "used",
       "addedAt": "2026-08-04T15:05:22.581Z",
-      "finmooviHook": "enviado via /status 04/08"
+      "finmooviHook": "enviado via /status 04/08",
+      "usedAt": "2026-08-25T10:19:43.275Z",
+      "usedBy": "gerar-post-inteligente"
     },
     {
       "keyword": "qual o melhor horário para tomar banho e economizar energia​",
