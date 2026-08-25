@@ -3,6 +3,7 @@ title: "Como cortar custos no supermercado e ainda comer bem"
 description: "Descubra estratégias simples para reduzir despesas no mercado, usar listas inteligentes e apps como FinMoovi para transformar suas compras em economia real."
 tickerHeadline: "O truque que reduz sua conta do mercado"
 image: "/images/posts/como-cortar-custos-no-supermercado-e-ainda-comer-bem.webp"
+imageAlt: "Calculadora, caderno de couro marrom, caneta preta, moedas e plantas sobre superfície branca."
 category: "orcamento"
 locale: "pt"
 tags: ["economia supermercado","lista de compras","controle de gastos","aplicativos financeiros","captura de notas fiscais","supermercado economiza​"]
