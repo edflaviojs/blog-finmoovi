@@ -196,5 +196,11 @@
     "gancho": "nunca-faca",
     "turno": "noite",
     "em": "2026-08-24T05:13:52.238Z"
+  },
+  {
+    "situacao": "vender-o-parado",
+    "gancho": "voces-viram",
+    "turno": "manha",
+    "em": "2026-08-25T05:04:50.411Z"
   }
 ]

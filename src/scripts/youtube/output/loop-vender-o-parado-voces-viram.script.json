@@ -1,0 +1,117 @@
+{
+  "slug": "loop-vender-o-parado-voces-viram",
+  "formato": "loop16",
+  "term": "Vender o que está parado",
+  "category": "vida",
+  "keyword": "VENDER",
+  "situacao": "vender-o-parado",
+  "gancho": "voces-viram",
+  "ganchoFamilia": "vocês viram",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "semente",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Gente, vocês viram que minha garagem cheia de coisas paradas",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "vocês",
+          "visual": {
+            "type": "statement",
+            "text": "Garagem cheia de coisas"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "viram",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "semente"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu vendi coisas esquecidas comigo lá em casa e aliviei",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "vendi",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "semente"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "coisas",
+          "visual": {
+            "type": "statement",
+            "text": "Vendi o que não usava"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então percebi meu canto vazio guardando menos coisas sem uso velhas",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "percebi",
+          "visual": {
+            "type": "statement",
+            "text": "Menos coisas esquecidas"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "canto",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "semente"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "A gente limpou minha garagem cheia e vi coisas paradas sumindo",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "limpou",
+          "visual": {
+            "type": "statement",
+            "text": "Garagem ficou limpa"
+          }
+        },
+        {
+          "anchor": "garagem",
+          "visual": {
+            "type": "statement",
+            "text": "Garagem cheia de coisas"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
