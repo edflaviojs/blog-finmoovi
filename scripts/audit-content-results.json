@@ -262,42 +262,8 @@
     }
   },
   {
-    "file": "es-como-usar-el-cashback-de-forma-inteligente-y-multiplicar-tus.md",
-    "dir": "posts",
-    "severity": 1,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": [
-        "dívidas"
-      ]
-    }
-  },
-  {
     "file": "es-indice-finmoovi-costo-de-vida-junio-2026.md",
     "dir": "posts",
-    "severity": 1,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [
-        "IPCA"
-      ],
-      "ptLeftovers": []
-    }
-  },
-  {
-    "file": "es-inflacion.md",
-    "dir": "glossario",
     "severity": 1,
     "issues": {
       "currency": 0,
@@ -1802,7 +1768,37 @@
     }
   },
   {
+    "file": "en-how-to-control-your-personal-cash-flow-in-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-how-to-create-personal-budget.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-how-to-cut-grocery-costs-and-still-eat-well.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -2343,6 +2339,21 @@
   },
   {
     "file": "en-loan.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-mei-installment-payment.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -3992,6 +4003,21 @@
     }
   },
   {
+    "file": "es-como-controlar-tu-flujo-de-caja-personal-en-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-como-convertir-la-hoja-de-calculo-en-aliada-de-tus-finanzas.md",
     "dir": "posts",
     "severity": 0,
@@ -4292,6 +4318,21 @@
     }
   },
   {
+    "file": "es-como-recortar-gastos-en-el-supermercado-y-seguir-comiendo.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-como-reducir-el-peso-de-tu-prestamo-en-2026-con-amortizacion.md",
     "dir": "posts",
     "severity": 0,
@@ -4383,6 +4424,21 @@
   },
   {
     "file": "es-como-usar-credito-sin-ahogar-tu-presupuesto-5-pasos.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-como-usar-el-cashback-de-forma-inteligente-y-multiplicar-tus.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -5267,6 +5323,21 @@
     }
   },
   {
+    "file": "es-inflacion.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-interes-compuesto.md",
     "dir": "glossario",
     "severity": 0,
@@ -5568,6 +5639,21 @@
   },
   {
     "file": "es-pago-anticipado.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-parcelamiento-mei.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
