@@ -3,6 +3,7 @@ title: "Como evitar que a conta pendente atrapalhe seu orçamento em 2026"
 description: "Descubra, em linguagem simples, como identificar e controlar o saldo pendente que suga seu dinheiro e use o FinMoovi para transformar dívidas em tranquilidade."
 tickerHeadline: "O saldo que suga seu salário"
 image: "/images/posts/como-evitar-que-a-conta-pendente-atrapalhe-seu-orcamento-em.webp"
+imageAlt: "Notebook com tela colorida, xícara cinza e planta em mesa de escritório."
 category: "dicas"
 locale: "pt"
 tags: ["outstanding balance","finanças pessoais","economia","dinheiro"]
