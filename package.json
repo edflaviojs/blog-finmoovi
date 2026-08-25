@@ -19,6 +19,7 @@
     "validate:i18n:posts": "node src/scripts/validacao/validar-i18n.js",
     "validate:slugs": "node scripts/validate-slug-language.js",
     "validate:capas": "node src/scripts/validacao/validar-capas.js",
+    "validate:no-ar": "node src/scripts/validacao/vigia-do-ar.js",
     "validate:trailing-slash": "node --import tsx scripts/validate-trailing-slash.js",
     "validate:glossary-links": "node --import tsx scripts/validate-glossary-links.js",
     "validate:internal-links": "node --import tsx scripts/validate-internal-links.js",

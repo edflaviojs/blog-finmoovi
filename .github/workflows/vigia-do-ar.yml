@@ -1,0 +1,69 @@
+name: Vigia do ar (o site tem tudo o que o repo tem?)
+
+# PORQUE ESTE WORKFLOW EXISTE
+#
+# 22/08/2026: um robo partiu o frontmatter de 6 posts, o build do Astro passou
+# a falhar e o blog ficou TRES DIAS sem publicar. Os posts de 23, 24 e 25
+# entraram no repo e nunca chegaram ao ar. Nenhum dos ~80 workflows ficou
+# vermelho: cada um mede o SEU pedaco (traducoes, capas, links, YouTube) e
+# nenhum media a unica coisa que interessa ao leitor — o que esta PUBLICADO.
+# O unico e-mail vermelho que chegou ao Ed era de outro assunto (capas), e
+# apontava para 15 falsos alarmes.
+#
+# Este e o unico workflow que mede DE FORA PARA DENTRO: le o sitemap do site
+# no ar e compara com o repo. Nao le codigo, nao confia em build verde.
+# Ver a licao "build verde nao prova que o app abre" — aqui foi pior, porque
+# nem sequer havia vermelho.
+
+on:
+  # 20:00 UTC = 17h no Brasil, 21h em Portugal. DEPOIS dos robos de conteudo
+  # (que publicam entre as 06h e as 11h30 UTC), com folga de sobra para o
+  # deploy da Cloudflare — e ainda dentro do dia para o Ed poder agir.
+  # Nao usa IA nenhuma, portanto o pico do Groq nao se aplica aqui.
+  schedule:
+    - cron: '0 20 * * *'
+  workflow_dispatch:
+    inputs:
+      graca_horas:
+        description: 'Horas de tolerancia antes de cobrar um post (padrao 6)'
+        required: false
+        default: '6'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+jobs:
+  vigia:
+    runs-on: ubuntu-latest
+    # Um pedido de rede e uma varredura de ficheiros. Se passar disto, ha algo
+    # muito errado — melhor falhar depressa do que queimar cota.
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          # O vigia precisa de saber QUANDO cada post entrou no repo, para nao
+          # cobrar o que ainda esta a ser publicado. 300 commits cobrem umas
+          # semanas ao ritmo dos bots; o que for mais antigo do que isso e
+          # estiver fora do ar conta como falha na mesma (fail-closed).
+          fetch-depth: 300
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      # Le YAML a serio (gray-matter). Ler o frontmatter linha-a-linha foi
+      # exatamente o defeito que causou o incidente que este vigia vigia.
+      - name: O site tem tudo o que o repo tem?
+        env:
+          VIGIA_GRACA_HORAS: ${{ github.event.inputs.graca_horas || '6' }}
+        run: npm run validate:no-ar
