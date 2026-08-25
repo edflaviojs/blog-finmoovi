@@ -1,20 +1,32 @@
 ---
-title: "Weekly Summary: Dollar at title: .02 — Week 3 of July"
-description: "Weekly financial market summary: dollar, euro, central bank base rate and tips for investors. Week 3 of July 2026."
-image: "/images/posts/cotacoes-semana-2026-07-20.webp"
-imageAlt: "Blue screen displaying green and orange fluctuating financial charts with numerical data."
-category: "cotacoes"
-tags: ["quotes","dollar","euro","financial market","selic"]
-author: "FinMoovi"
-publishedAt: 2026-07-20
+title: 'Weekly Summary: Dollar at title: .02 — Week 3 of July'
+description: >-
+  Weekly financial market summary: dollar, euro, central bank base rate and tips
+  for investors. Week 3 of July 2026.
+image: /images/posts/cotacoes-semana-2026-07-20.webp
+category: cotacoes
+tags:
+  - quotes
+  - dollar
+  - euro
+  - financial market
+  - selic
+author: FinMoovi
+publishedAt: 2026-07-20T00:00:00.000Z
 readingTime: 3
 featured: false
-locale: "en"
-translationKey: "cotacoes-semana-3-julho-2026"
+locale: en
+translationKey: cotacoes-semana-3-julho-2026
 seo:
-  metaTitle: "Quotes Semana 3 july 2026: Dólar R$ 5.11"
-  metaDescription: "Weekly summary: dólar a R$ 5.11, euro a R$ 5.84. Analysis e tips para investors."
-  keywords: ["dollar quote today", "euro quote", "financial market summary", "selic"]
+  metaTitle: 'Quotes Semana 3 july 2026: Dólar R$ 5.11'
+  metaDescription: >-
+    Weekly summary: dólar a R$ 5.11, euro a R$ 5.84. Analysis e tips para
+    investors.
+  keywords:
+    - dollar quote today
+    - euro quote
+    - financial market summary
+    - selic
 ---
 
 ## Weekly Summary (July 13 to July 20, 2026)

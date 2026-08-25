@@ -1,21 +1,33 @@
 ---
-title: "Resumo Semanal: Dólar a R$ 5.17 — Semana 5 de junho"
-description: "Resumo semanal do mercado financeiro: dólar, euro, Selic e dicas para investidores. Semana 5 de junho 2026."
-image: "/images/posts/cotacoes-semana-2026-06-29.webp"
-imageAlt: "Caderneta, moedas, calculadora e folhas sobre uma superfície de mármore branco."
-category: "cotacoes"
-tags: ["cotações","dólar","euro","mercado financeiro","selic"]
-author: "FinMoovi"
-publishedAt: 2026-06-29
+title: 'Resumo Semanal: Dólar a R$ 5.17 — Semana 5 de junho'
+description: >-
+  Resumo semanal do mercado financeiro: dólar, euro, Selic e dicas para
+  investidores. Semana 5 de junho 2026.
+image: /images/posts/cotacoes-semana-2026-06-29.webp
+category: cotacoes
+tags:
+  - cotações
+  - dólar
+  - euro
+  - mercado financeiro
+  - selic
+author: FinMoovi
+publishedAt: 2026-06-29T00:00:00.000Z
 readingTime: 3
 featured: false
-locale: "pt"
-translationKey: "cotacoes-semana-5-junho-2026"
-scope: "br-only"
+locale: pt
+translationKey: cotacoes-semana-5-junho-2026
+scope: br-only
 seo:
-  metaTitle: "Cotações Semana 5 junho 2026: Dólar R$ 5.17"
-  metaDescription: "Resumo semanal: dólar a R$ 5.17, euro a R$ 5.89. Análise e dicas para investidores."
-  keywords: ["cotação dólar hoje", "cotação euro", "resumo mercado financeiro", "selic"]
+  metaTitle: 'Cotações Semana 5 junho 2026: Dólar R$ 5.17'
+  metaDescription: >-
+    Resumo semanal: dólar a R$ 5.17, euro a R$ 5.89. Análise e dicas para
+    investidores.
+  keywords:
+    - cotação dólar hoje
+    - cotação euro
+    - resumo mercado financeiro
+    - selic
 ---
 
 ## Resumo Semanal do Mercado Financeiro Brasileiro: 22/06/2026 a 29/06/2026

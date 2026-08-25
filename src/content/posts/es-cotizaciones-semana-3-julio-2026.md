@@ -1,20 +1,32 @@
 ---
-title: "Resumen Semanal: Dólar a €0,92 — Semana 3 de julio"
-description: "Resumen semanal del mercado financiero: dólar, euro, tasa base del banco central y consejos para inversores. Semana 3 de julio 2026."
-image: "/images/posts/cotacoes-semana-2026-07-20.webp"
-imageAlt: "Gráfico financiero borroso en pantalla azul con líneas verdes y naranjas ascendentes."
-category: "cotacoes"
-tags: ["cotizaciones","dólar","euro","mercado financiero","selic"]
-author: "FinMoovi"
-publishedAt: 2026-07-20
+title: 'Resumen Semanal: Dólar a €0,92 — Semana 3 de julio'
+description: >-
+  Resumen semanal del mercado financiero: dólar, euro, tasa base del banco
+  central y consejos para inversores. Semana 3 de julio 2026.
+image: /images/posts/cotacoes-semana-2026-07-20.webp
+category: cotacoes
+tags:
+  - cotizaciones
+  - dólar
+  - euro
+  - mercado financiero
+  - selic
+author: FinMoovi
+publishedAt: 2026-07-20T00:00:00.000Z
 readingTime: 3
 featured: false
-locale: "es"
-translationKey: "cotacoes-semana-3-julho-2026"
+locale: es
+translationKey: cotacoes-semana-3-julho-2026
 seo:
-  metaTitle: "Cotizaciones Semana 3 julio 2026: Dólar R$ 5.11"
-  metaDescription: "Resumen semanal: dólar a R$ 5.11, euro a R$ 5.84. Análisis e consejos para inversores."
-  keywords: ["cotización dólar hoy", "cotización euro", "resumen mercado financiero", "selic"]
+  metaTitle: 'Cotizaciones Semana 3 julio 2026: Dólar R$ 5.11'
+  metaDescription: >-
+    Resumen semanal: dólar a R$ 5.11, euro a R$ 5.84. Análisis e consejos para
+    inversores.
+  keywords:
+    - cotización dólar hoy
+    - cotización euro
+    - resumen mercado financiero
+    - selic
 ---
 
 ## Resumen del dólar y el euro (13 – 20 julio 2026)

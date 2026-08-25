@@ -1,21 +1,33 @@
 ---
-title: "Resumo Semanal: Dólar a R$ 5.11 — Semana 3 de julho"
-description: "Resumo semanal do mercado financeiro: dólar, euro, Selic e dicas para investidores. Semana 3 de julho 2026."
-image: "/images/posts/cotacoes-semana-2026-07-20.webp"
-imageAlt: "Tela azul com gráficos financeiros verdes e laranjas e números."
-category: "cotacoes"
-tags: ["cotações","dólar","euro","mercado financeiro","selic"]
-author: "FinMoovi"
-publishedAt: 2026-07-20
+title: 'Resumo Semanal: Dólar a R$ 5.11 — Semana 3 de julho'
+description: >-
+  Resumo semanal do mercado financeiro: dólar, euro, Selic e dicas para
+  investidores. Semana 3 de julho 2026.
+image: /images/posts/cotacoes-semana-2026-07-20.webp
+category: cotacoes
+tags:
+  - cotações
+  - dólar
+  - euro
+  - mercado financeiro
+  - selic
+author: FinMoovi
+publishedAt: 2026-07-20T00:00:00.000Z
 readingTime: 3
 featured: false
-locale: "pt"
-translationKey: "cotacoes-semana-3-julho-2026"
-scope: "br-only"
+locale: pt
+translationKey: cotacoes-semana-3-julho-2026
+scope: br-only
 seo:
-  metaTitle: "Cotações Semana 3 julho 2026: Dólar R$ 5.11"
-  metaDescription: "Resumo semanal: dólar a R$ 5.11, euro a R$ 5.84. Análise e dicas para investidores."
-  keywords: ["cotação dólar hoje", "cotação euro", "resumo mercado financeiro", "selic"]
+  metaTitle: 'Cotações Semana 3 julho 2026: Dólar R$ 5.11'
+  metaDescription: >-
+    Resumo semanal: dólar a R$ 5.11, euro a R$ 5.84. Análise e dicas para
+    investidores.
+  keywords:
+    - cotação dólar hoje
+    - cotação euro
+    - resumo mercado financeiro
+    - selic
 ---
 
 ## Resumo da Semana (13/07 – 20/07/2026)
