@@ -3,6 +3,7 @@ title: "A forma mais eficaz de guardar dinheiro em 2026: estratégia prática e 
 description: "Descubra a estratégia mais eficaz para guardar dinheiro em 2026, com automação, metas visuais e um passo a passo de 5 minutos usando o app FinMoovi."
 tickerHeadline: "O truque que transforma poupança em hábi"
 image: "/images/posts/a-forma-mais-eficaz-de-guardar-dinheiro-em-2026-estrategia.webp"
+imageAlt: "Notebook aberto com tela colorida, xícara de café e livros em mesa de madeira."
 category: "dicas"
 tags:
   - "guardar dinheiro"
