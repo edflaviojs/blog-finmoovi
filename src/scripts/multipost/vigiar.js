@@ -151,7 +151,50 @@ export function classificarPost({ estado, publicaEm, agora, toleranciaMin = TOLE
   return { alarme: false, resumo: atrasoMin > 0 ? `${estado} (a repetir há ${atrasoMin} min)` : `${estado} (ainda não deu a hora)` };
 }
 
-/** A frase humana daquele post, quando existe uma. Ver a nota sobre `/notifications`. */
+/**
+ * 🔴 **"Activity task failed" NÃO É O MOTIVO — É O EMBRULHO.** Medido em 25/08/2026.
+ *
+ * ═══ O CASO QUE PAGOU ISTO ═══
+ * Em 24/08 sete publicações falharam e o e-mail deste vigia disse, sete vezes:
+ * *"FALHOU — Activity task failed"*. E dizia mais: *"a frase acima já é o motivo real,
+ * lido do servidor"*. **Era mentira, e a mentira era minha.**
+ *
+ * O Multipost corre os envios num motor de tarefas (Temporal). Quando o provedor recusa,
+ * esse motor embrulha a recusa e põe por cima a **sua** frase — *"Activity task failed"* —,
+ * que quer dizer apenas *"uma tarefa falhou"*. O motivo verdadeiro **vinha na mesma
+ * resposta**, dois níveis abaixo, em `error.details[0].json`:
+ *
+ *   · Instagram → `{"error":{"message":"(#10) Application does not have permission for
+ *     this action","type":"OAuthException","code":10}}` — a Meta tinha desmarcado a conta
+ *     do FinMoovi quando uma segunda marca foi ligada ao mesmo app;
+ *   · Pinterest → `{"code":21,"message":"/v5/pins didn't finish after 7 seconds"}` — um
+ *     engasgo deles, que publicou bem nas outras duas tentativas do mesmo dia.
+ *
+ * 🔑 **Duas causas completamente diferentes no mesmo e-mail, e a frase do embrulho é
+ * IGUAL nas duas.** Quem lesse o aviso concluiria "é tudo o mesmo problema" — e não era.
+ * É o parente do defeito de 10/08: *mensagem de erro igual não é causa igual*.
+ *
+ * ⚠️ **As duas famílias guardam a frase em sítios diferentes**, e por isso as duas são
+ * procuradas: a Meta põe-na em `error.message`, o Pinterest põe-na em `message`.
+ */
+export function fraseDaRede(erro) {
+  const detalhes = erro?.cause?.details || erro?.details;
+  const bruto = Array.isArray(detalhes) ? detalhes[0]?.json : null;
+  if (!bruto) return '';
+  let d = bruto;
+  if (typeof bruto === 'string') {
+    try { d = JSON.parse(bruto); } catch { return String(bruto).slice(0, 200); }
+  }
+  return String(d?.error?.message || d?.message || '').trim();
+}
+
+/**
+ * A frase humana daquele post, quando existe uma. Ver a nota sobre `/notifications`.
+ *
+ * ⚠️ **A cadeia antiga fica como rede de segurança, e não é enfeite:** nem toda a falha
+ * traz `details` (a do Bluesky não trazia sequer notificação). Um vigia que só soubesse
+ * ler o sítio novo ficaria mudo exactamente nos casos raros — que são os que interessam.
+ */
 export function motivoLegivel(detalhe) {
   const bruto = detalhe?.error;
   if (!bruto) return '';
@@ -160,7 +203,8 @@ export function motivoLegivel(detalhe) {
     try { e = JSON.parse(bruto); } catch { return bruto.slice(0, 200); }
   }
   return String(
-    e?.cause?.failure?.message || e?.failure?.message || e?.message || JSON.stringify(e),
+    fraseDaRede(e)
+    || e?.cause?.failure?.message || e?.failure?.message || e?.message || JSON.stringify(e),
   ).slice(0, 200);
 }
 

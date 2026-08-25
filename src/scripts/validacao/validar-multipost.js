@@ -929,6 +929,58 @@ console.log('\n19. O VIGIA DAS REDES — a pergunta que só o servidor sabe resp
     motivoLegivel({ error: JSON.stringify({ cause: { failure: { message: "This account doesn't support Trial Reels" } } }) })
       === "This account doesn't support Trial Reels");
   ok('e um post sem erro não inventa motivo nenhum', motivoLegivel({}) === '');
+
+  /**
+   * 🔴 "Activity task failed" É O EMBRULHO, NÃO O MOTIVO — 25/08/2026.
+   *
+   * Os dois `error` abaixo são **cópias byte a byte** do que o servidor devolveu nas
+   * falhas de 24/08 (encurtados no `stackTrace`, que não se lê). O e-mail do vigia
+   * mostrou a mesma frase inútil sete vezes — e por baixo havia DUAS causas diferentes.
+   */
+  const ERRO_INSTAGRAM = {
+    cause: {
+      failure: { source: 'TypeScriptSDK', stackTrace: 'ApplicationFailure: \n    at InstagramProvider.fetch (…)' },
+      type: 'bad_body',
+      nonRetryable: true,
+      details: [{ identifier: '', json: '{"error":{"message":"(#10) Application does not have permission for this action","type":"OAuthException","code":10,"fbtrace_id":"AGkJnyOmt59kvPLi1rr45Ad"}}' }],
+    },
+    failure: { message: 'Activity task failed' },
+  };
+  const ERRO_PINTEREST = {
+    cause: {
+      type: 'bad_body',
+      nonRetryable: true,
+      details: [{ identifier: '', json: '{"code":21,"message":"/v5/pins didn\'t finish after 7 seconds"}', body: '{"link":"…"}' }],
+    },
+    failure: { message: 'Activity task failed' },
+  };
+
+  ok('🔴 o Instagram diz a frase da META, e não "Activity task failed"',
+    motivoLegivel({ error: ERRO_INSTAGRAM }) === '(#10) Application does not have permission for this action',
+    motivoLegivel({ error: ERRO_INSTAGRAM }));
+  /**
+   * 🔑 A PROVA QUE MAIS IMPORTA: as duas falhas do mesmo e-mail passam a dizer coisas
+   * DIFERENTES. Era isso que faltava para não se concluir "é tudo o mesmo problema" —
+   * o Instagram era permissão revogada, o Pinterest foi um engasgo de 7 segundos.
+   */
+  ok('🔑 e o Pinterest diz a DELE — duas causas, duas frases',
+    motivoLegivel({ error: ERRO_PINTEREST }) === "/v5/pins didn't finish after 7 seconds",
+    motivoLegivel({ error: ERRO_PINTEREST }));
+  ok('🔴 nenhuma das duas continua a dizer "Activity task failed"',
+    !/Activity task failed/.test(motivoLegivel({ error: ERRO_INSTAGRAM }))
+    && !/Activity task failed/.test(motivoLegivel({ error: ERRO_PINTEREST })));
+  ok('o mesmo vale quando o erro vem como TEXTO, que é como o servidor o manda',
+    motivoLegivel({ error: JSON.stringify(ERRO_INSTAGRAM) }) === '(#10) Application does not have permission for this action');
+
+  /**
+   * ⚠️ A CADEIA ANTIGA TEM DE CONTINUAR A VALER. Nem toda a falha traz `details` — a do
+   * Bluesky não trazia sequer notificação. Um vigia que só soubesse ler o sítio novo
+   * ficaria mudo exactamente nos casos raros, que são os que interessam.
+   */
+  ok('⚠️ sem `details`, ainda cai na frase de fora (rede de segurança intacta)',
+    motivoLegivel({ error: { failure: { message: 'Activity task failed' } } }) === 'Activity task failed');
+  ok('e um `details` estragado não derruba nem inventa',
+    motivoLegivel({ error: { cause: { details: [{ json: 'isto não é json' }] } } }) === 'isto não é json');
 }
 
 console.log('\n20. O GANCHO — os dois formatos guardam-no em sítios diferentes');
