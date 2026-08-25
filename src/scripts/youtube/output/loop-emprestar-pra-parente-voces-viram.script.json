@@ -1,0 +1,117 @@
+{
+  "slug": "loop-emprestar-pra-parente-voces-viram",
+  "formato": "loop16",
+  "term": "Emprestar dinheiro pra parente",
+  "category": "vida",
+  "keyword": "EMPRESTAR",
+  "situacao": "emprestar-pra-parente",
+  "gancho": "voces-viram",
+  "ganchoFamilia": "vocês viram",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "corda-bamba",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Gente, vocês viram que parente pede emprestado e promete devolver?",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "vocês",
+          "visual": {
+            "type": "statement",
+            "text": "Parente pediu emprestado"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "viram",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "corda-bamba"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Comigo aconteceu. Emprestei pra família e faltou dinheiro pras contas.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "Comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "corda-bamba"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "Faltou dinheiro em casa"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Eu fiquei apertado, então agora penso antes, porque minhas contas vencem.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "fiquei",
+          "visual": {
+            "type": "statement",
+            "text": "Minhas contas também vencem"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "apertado",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "corda-bamba"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Presta atenção. Parente pede, eu lembro disso e seguro meu dinheiro.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "Presta",
+          "visual": {
+            "type": "statement",
+            "text": "Eu seguro meu dinheiro"
+          }
+        },
+        {
+          "anchor": "atenção",
+          "visual": {
+            "type": "statement",
+            "text": "Parente pediu emprestado"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
