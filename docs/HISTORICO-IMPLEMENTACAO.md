@@ -512,3 +512,123 @@ detector que reprova tudo passaria em metade. O fim do borrão também está med
 Cloudflare passou a gerar com nitidez **789 e 1421** e a Together com **642 e 673**, quando
 no dia anterior a mesma Together dava **14**. Localmente, 3 capas geradas de verdade pela
 Pollinations com o prompt limpo: **zero letras nas três**, olhadas uma a uma.
+
+---
+
+## 🚨 O blog parou 3 dias e nenhum robô avisou — a linha dobrada do YAML (2026-08-25)
+
+**O que chegou ao dono:** um e-mail vermelho do `i18n-sync.yml` («All jobs have failed»).
+Era a ponta menor do problema. A medição de verdade: **o site estava congelado em 22/08**,
+com os posts de 23, 24 e 25 gravados no repositório e **nunca publicados**. Três dias.
+`sitemap` mais recente `2026-08-22`, 670 endereços, enquanto o repo já tinha 654 ficheiros
+de conteúdo.
+
+### A causa raiz: um valor que não cabe na linha
+
+Quando o caminho da capa passa dos ~80 caracteres, quem re-serializa o frontmatter com
+js-yaml (`varrer-capas-com-letras.js`, os tradutores) escreve-o **dobrado**. Isto é YAML
+perfeitamente **válido**:
+
+```yaml
+image: >-
+  /images/posts/nome-muito-comprido.webp
+```
+
+A chave fica numa linha e o **valor na seguinte**. Dois robôs que trabalham **linha a linha**
+não sabiam ler isso — e a mesma cegueira produziu dois estragos de tamanhos muito diferentes.
+
+**1. O leitor — 15 falsos alarmes (o e-mail que o dono recebeu).**
+`validar-capas.js` partia cada linha no primeiro `:` e ficava com `image = ">-"`. Acusava
+«caminho fora de /images/» em **15 posts cujas 15 capas estavam todas no disco**, no sítio
+certo. Foi isto que pintou o `i18n-sync` de vermelho todos os dias desde 22/08 — ruído, não
+defeito.
+
+**2. O escritor — 6 posts partidos e o site em baixo (o que ninguém viu).**
+`gerar-alt-imagens.js` inseria o alt com `raw.replace(/^(image:.*)$/m, "$1\n" + alt)`, o que
+metia a linha nova **entre a chave e o seu valor**:
+
+```yaml
+image: >-
+imageAlt: "Pai, mãe e filha sorrindo no sofá..."   # <-- partiu aqui
+  /images/posts/como-manter-as-contas-do-dia-sob-controle-e-evitar-surpresas.webp
+```
+
+Frontmatter inválido → `npm run build` morre em `bad indentation of a mapping entry` → a
+Cloudflare não publica nada de novo. **6 posts** (2 PT + 2 EN + 2 ES), a partir do commit
+`452ec12` de 22/08 06:44.
+
+### A cronologia (bate certo ao minuto)
+
+| Quando | O quê |
+|--------|-------|
+| 21/08 22:55 | `chore(capas): auditar e refazer capas` re-serializa 15 posts → nasce o `image: >-` |
+| 22/08 05:19 | O guard reprova os 15 (falso alarme). **Primeiro e-mail vermelho** |
+| 22/08 06:44 | `content(a11y): gerar imageAlt` parte 6 posts → **o blog para, em silêncio** |
+| 23, 24, 25/08 | Posts novos entram no repo e **não vão para o ar** |
+| 25/08 11:28 | O próprio `gerar-alt-imagens` começa a falhar pelo YAML que ele partiu |
+
+### O conserto (5 commits)
+
+| Commit | O quê |
+|--------|-------|
+| `b9447d4` | `validar-capas.js` passa a usar **gray-matter** — o mesmo caminho que o Astro usa para ler conteúdo, logo o guard vê exatamente o que o site vê. YAML partido passa a ser ERRO listado e nunca um crash a meio da varredura |
+| `4125a2a` | `gerar-alt-imagens.js`: `inserirDepoisDe()` / `substituirCampo()` tratam a chave e o bloco indentado como **uma unidade**, preservando o fim-de-linha |
+| `a97b6b0` | Os 6 posts reparados — **1 linha movida** em cada. As capas nunca faltaram |
+| `ed610a3` | `regenerar-capas-glossario.js` (o irmão do defeito, ainda por disparar): apagava só a linha `imageAlt:` e deixaria o valor órfão. As três funções passam a viver em **`src/scripts/lib/frontmatter-bloco.js`** — uma cópia, um sítio para consertar |
+| `f2efec0` | O **vigia do ar** (ver abaixo) |
+
+**Regra que fica:** qualquer robô que edite frontmatter usa `src/scripts/lib/frontmatter-bloco.js`.
+**Nunca mais um `replace` de uma linha só.** Fixado em `tests/frontmatter-bloco.test.js`
+(8 casos; a suite completa: **101 passam, 0 falham**).
+
+### O vigia do ar — o alarme que faltava (`vigia-do-ar.yml`, 20:00 UTC = 17h BR)
+
+O que dói neste incidente não é o defeito: é que ele **passou três dias sem alarme**. Havia
+~80 workflows a correr e nenhum viu, porque **cada um mede o seu pedaço** (traduções, capas,
+links, YouTube) e nenhum media a única coisa que interessa ao leitor — **o que está
+publicado**. O único vermelho que chegou apontava para 15 falsos alarmes.
+
+`src/scripts/validacao/vigia-do-ar.js` (`npm run validate:no-ar`) é o único robô que mede
+**de fora para dentro**: lê o `sitemap-index.xml` do site **no ar** e compara com o repo. O
+sitemap sai do próprio build com o mesmo filtro das páginas (`!data.draft`, ver
+`src/pages/sitemap-index.xml.ts`), portanto **é a lista exata do que está publicado**. Se o
+build falhou, ou se a Cloudflare não publicou, o que falta aparece ali.
+
+Decisões que o tornam útil — e que não se devem desfazer:
+
+- **Compara pelo SLUG, não reconstrói as URLs.** Uma regra copiada do site envelhece e passa
+  a inventar defeito; o slug vem do nome do ficheiro, a única coisa que os dois lados
+  partilham de certeza.
+- **Janela de graça de 6h** (`VIGIA_GRACA_HORAS`): um post commitado há minutos ainda pode
+  estar a ser montado. Sem isto dava alarme falso todas as manhãs.
+- **Fail-closed em três pontos**: sitemap inacessível, sitemap com menos de 50 endereços
+  (página de erro/Cloudflare), ou 0 ficheiros analisados. **Não conseguir medir NÃO é o mesmo
+  que estar tudo bem.**
+- **De propósito FORA do `npm run build`**: se estivesse lá, um site fora do ar impediria de
+  publicar o próprio conserto.
+- Precisa de `fetch-depth: 300` para saber a idade dos ficheiros.
+
+### Provas
+
+- **Antes/depois do build:** com os 6 posts como estavam no GitHub, `npm run build` **falha**
+  (`bad indentation of a mapping entry`, saída 127). Com o conserto, **passa** — 119 páginas
+  de posts geradas e o alt novo presente no HTML.
+- **O guard:** 654 ficheiros, de 15 erros para **0**. Verde na corrida real do `i18n Gate`
+  (`32846432171`).
+- **O site voltou:** sitemap de **670 → 700 endereços**, `lastmod` de `2026-08-22` para
+  `2026-08-25`. Os 6 posts reparados confirmados a 200 nos três idiomas.
+- **O vigia vê mesmo:** verde sozinho não provava nada, por isso serviu-se um sitemap
+  truncado em `127.0.0.1:8899` a imitar 22/08 — ficou **vermelho**, apontou os 3 posts
+  parados há 23h e **poupou** os 6 daquela manhã que ainda estavam na janela. Site fora do ar
+  e sitemap com 1 endereço: vermelho, com a razão. Corrida real no GitHub (`32848227479`):
+  654 ficheiros, 0 em falta, verde.
+
+### As duas armadilhas desta caçada
+
+1. **O e-mail vermelho apontava para o sintoma menor.** O guard queixava-se de capas; o
+   estrago real era o site parado. Quando um robô fica vermelho, **medir o que está no ar**
+   antes de acreditar no assunto do e-mail.
+2. **As URLs do blog enganam — errei duas vezes no mesmo dia**, e as duas dariam alarme
+   falso. PT: `/posts/<slug>/`. EN: `/en/posts/`**`en-`**`<slug>/`. ES: `/es/posts/`**`es-`**`<slug>/`
+   — o prefixo do idioma **fica** na URL. Ler o formato no `sitemap-index.xml` **antes** de
+   concluir que alguma coisa caiu.

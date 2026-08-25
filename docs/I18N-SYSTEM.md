@@ -59,6 +59,32 @@ O `translationKey` é o slug PT e serve como chave de ligação. Se o post PT é
 - EN: `translationKey: "como-economizar-dinheiro"` (mesmo valor)
 - ES: `translationKey: "como-economizar-dinheiro"` (mesmo valor)
 
+### ⚠️ O valor pode estar na LINHA SEGUINTE (escalar em bloco)
+
+Quando um valor não cabe na linha (~80 caracteres), quem re-serializa com js-yaml escreve-o
+**dobrado**. Isto é YAML **válido** e aparece muito em `image:`, `description:` e `imageAlt:`:
+
+```yaml
+image: >-
+  /images/posts/nome-muito-comprido.webp
+```
+
+**A chave está numa linha e o valor na seguinte.** Quem ler o frontmatter linha a linha
+(`line.split(':')`) guarda `">-"` como se fosse o caminho, e quem escrever com um
+`replace(/^(image:.*)$/m, ...)` mete a linha nova **entre a chave e o seu valor**, partindo o
+ficheiro.
+
+Não é teoria: em 22/08/2026 isto deu **15 falsos alarmes** no guard das capas e **6 posts com
+YAML inválido**, que derrubaram o build e deixaram o blog **3 dias sem publicar** — sem que
+nenhum robô ficasse vermelho por isso. História completa em `docs/HISTORICO-IMPLEMENTACAO.md`
+(2026-08-25).
+
+**Regras que ficam:**
+
+- **Ler** frontmatter → sempre `gray-matter` (YAML a sério), nunca `split(':')` por linha.
+- **Escrever** frontmatter → sempre `src/scripts/lib/frontmatter-bloco.js` (§8), que trata a
+  chave e o bloco indentado como **uma unidade**. Nunca um `replace` de uma linha só.
+
 ---
 
 ## 4. Scripts Geradores
@@ -139,6 +165,28 @@ consciente do dono (27/07), não esquecimento.
 - Se qualquer verificação falha → **build é BLOQUEADO** com exit code 1
 - Mensagens de erro indicam exactamente qual ficheiro/translationKey tem problema
 
+### O que estas travas NÃO cobrem — e o vigia do ar (25/08/2026)
+
+Todas as travas acima medem **por dentro**: olham para o repo. Nenhuma responde à única
+pergunta que interessa ao leitor — **isto chegou ao ar?**
+
+Em 22/08/2026 o build passou a falhar por frontmatter partido e o blog ficou **3 dias sem
+publicar**, com os posts de 23, 24 e 25 presos no repo. Havia ~80 workflows a correr e
+**nenhum ficou vermelho por isso**, porque cada um mede o seu pedaço.
+
+```bash
+npm run validate:no-ar   # src/scripts/validacao/vigia-do-ar.js
+```
+
+Lê o `sitemap-index.xml` do site **no ar** (que sai do build com o mesmo filtro `!data.draft`
+das páginas) e compara com o repo. Corre sozinho em `vigia-do-ar.yml`, **20:00 UTC = 17h BR**
+— depois dos robôs de conteúdo, com folga para o deploy da Cloudflare, e ainda dentro do dia
+para dar tempo de agir.
+
+Fica **fora** do `npm run build` de propósito: se estivesse lá, um site fora do ar impediria
+de publicar o próprio conserto. Detalhe e provas em `docs/HISTORICO-IMPLEMENTACAO.md`
+(2026-08-25).
+
 ---
 
 ## 6. Workflows GitHub Actions
@@ -196,6 +244,7 @@ Localização: `src/scripts/lib/`
 | `translation-prompt.js` | Prompt padronizado de adaptação cultural para LLMs. Instrui tradução + adaptação (moeda, faixa salarial, referências locais) |
 | `lang-guard.js` | Detecta idioma errado no corpo do texto via heurística (stopwords + acentos). Oferece `guardedTranslate()` com retry automático |
 | `year-guard.js` | Corrige anos defasados em títulos gerados por LLM. Função pura `fixStaleYear(text)` substitui anos < atual |
+| `frontmatter-bloco.js` | **Edição do frontmatter ciente de escalar em bloco.** `inserirDepoisDe()`, `substituirCampo()`, `apagarCampo()` — tratam a chave e o bloco indentado que a segue como uma unidade, e preservam o fim-de-linha. **Obrigatório** para qualquer robô que escreva no frontmatter (ver §3) |
 
 ### Uso nos geradores
 
@@ -213,6 +262,21 @@ const enPost = await guardedTranslate(
   'en',
   `${slug} (en)`
 );
+```
+
+### Escrever no frontmatter de um ficheiro já existente
+
+```javascript
+import { inserirDepoisDe, substituirCampo, apagarCampo } from '../lib/frontmatter-bloco.js';
+
+// ✅ certo: funciona com `image: /x.webp` E com `image: >-` + valor na linha seguinte
+out = inserirDepoisDe(raw, 'image', `imageAlt: "${alt}"`);
+out = substituirCampo(raw, 'imageAlt', `imageAlt: "${alt}"`);
+out = apagarCampo(raw, 'imageAlt');
+
+// ❌ errado: parte o ficheiro quando o valor está dobrado (incidente de 22/08/2026)
+out = raw.replace(/^(image:.*)$/m, `$1\n imageAlt: "${alt}"`);
+out = raw.replace(/^imageAlt:\s*.*\r?\n/m, '');
 ```
 
 ---

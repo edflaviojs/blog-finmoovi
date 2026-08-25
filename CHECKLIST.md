@@ -96,12 +96,14 @@ Após tudo configurado, vá em GitHub → Actions → habilite os workflows:
 - [ ] `analytics-report.yml` — relatório semanal
 - [ ] `seo-monitor.yml` — monitoramento SEO
 - [ ] `keep-alive.yml` — manter workflows ativos
+- [ ] `vigia-do-ar.yml` — **alarme diário: o repo publicou e o site não?** (20:00 UTC). Não é opcional como os de cima: é o único que mede o que está NO AR. Sem ele, um build partido derruba a publicação em silêncio — foi o que aconteceu em 22/08/2026, três dias sem ninguém dar por isso. Usa o `siteUrl` do `site.config.ts`; para apontar noutro sítio, `VIGIA_SITE`
 
 ---
 
 ## Etapa 10: Validação Final
 
 - [ ] `npm run validate` → ✅ TEMPLATE VALID
+- [ ] `npm run validate:no-ar` → ✅ tudo o que o repo tem está no ar (só depois do 1º deploy)
 - [ ] Visitou todas as páginas no browser
 - [ ] Testou em mobile
 - [ ] Verificou que NÃO aparece "FinMoovi" em lugar nenhum
