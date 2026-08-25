@@ -19,6 +19,7 @@ import { join } from 'path';
 import matter from 'gray-matter';
 import sharp from 'sharp';
 import { medir, fichasDaResposta } from '../lib/medidor.js';
+import { inserirDepoisDe, substituirCampo } from '../lib/frontmatter-bloco.js';
 
 const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 const THROTTLE_MS = 2500; // ~24 req/min, abaixo do limite do Groq free
@@ -163,67 +164,6 @@ async function describeImage(imageBuffer, mime, locale, topic) {
     }
   }
   throw lastErr;
-}
-
-// ---------------------------------------------------------------------------
-// Escrita cirurgica no frontmatter, CIENTE DE ESCALAR EM BLOCO do YAML.
-//
-// O `image:` nem sempre cabe na linha. Quando o caminho passa dos 80
-// caracteres, quem re-serializa com js-yaml (varrer-capas-com-letras.js, os
-// tradutores) escreve o valor dobrado — YAML perfeitamente valido:
-//
-//     image: >-
-//       /images/posts/nome-muito-comprido.webp
-//
-// O `raw.replace(/^(image:.*)$/m, "$1\n" + alt)` de antes metia o imageAlt
-// ENTRE a chave e o seu valor e partia o frontmatter ao meio. Medido em
-// 25/08/2026: 6 posts (2 PT + 2 EN + 2 ES) com YAML invalido desde 22/08 e o
-// blog sem publicar durante 3 dias — nenhum robo ficou vermelho por isso.
-//
-// Estas duas funcoes tratam a linha da chave e o bloco indentado que a segue
-// como UMA UNIDADE. Trabalham por linhas e preservam o fim-de-linha original.
-// ---------------------------------------------------------------------------
-
-function quebraDeLinha(raw) {
-  return raw.includes('\r\n') ? '\r\n' : '\n';
-}
-
-// Indice da ultima linha que ainda pertence ao valor da chave em `lines[i]`.
-// Para uma chave normal e a propria linha; para um escalar em bloco (`>-`, `|`)
-// e a ultima das linhas indentadas que se seguem.
-function fimDoValor(lines, i) {
-  if (!/^[A-Za-z0-9_-]+:\s*[>|][-+]?\d*\s*$/.test(lines[i])) return i;
-  let fim = i;
-  for (let j = i + 1; j < lines.length; j++) {
-    if (/^[ \t]+\S/.test(lines[j])) fim = j;      // continuacao do bloco
-    else if (lines[j].trim() === '') continue;     // linha vazia pode ser do bloco
-    else break;                                    // linha nao indentada: acabou
-  }
-  return fim;
-}
-
-function indiceDaChave(lines, chave) {
-  return lines.findIndex(l => new RegExp(`^${chave}:`).test(l));
-}
-
-function inserirDepoisDe(raw, chave, linhaNova) {
-  const eol = quebraDeLinha(raw);
-  const lines = raw.split(/\r?\n/);
-  const i = indiceDaChave(lines, chave);
-  if (i === -1) return raw;
-  lines.splice(fimDoValor(lines, i) + 1, 0, linhaNova);
-  return lines.join(eol);
-}
-
-function substituirCampo(raw, chave, linhaNova) {
-  const eol = quebraDeLinha(raw);
-  const lines = raw.split(/\r?\n/);
-  const i = indiceDaChave(lines, chave);
-  if (i === -1) return raw;
-  // Apaga a chave E o bloco todo — senao as linhas indentadas ficavam orfas
-  // debaixo do valor novo, que e outra forma de partir o YAML.
-  lines.splice(i, fimDoValor(lines, i) - i + 1, linhaNova);
-  return lines.join(eol);
 }
 
 async function run() {

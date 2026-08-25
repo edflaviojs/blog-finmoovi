@@ -23,6 +23,7 @@ import { readFileSync, writeFileSync, readdirSync, existsSync, statSync, unlinkS
 import { join } from 'path';
 import { execSync } from 'child_process';
 import { generateAIImage } from '../apis/image-router.js';
+import { apagarCampo } from '../lib/frontmatter-bloco.js';
 
 // Capas commitadas antes desta data são do estilo antigo (prompt novo = 15/07)
 const CUTOFF = '2026-07-16T00:00:00Z';
@@ -137,7 +138,11 @@ for (const { slug, topic, mdFiles: refs, wasSvg } of batch) {
       if (wasSvg) {
         raw = raw.replace(`/images/glossario/${slug}.svg`, `/images/glossario/${slug}.webp`);
       }
-      raw = raw.replace(/^imageAlt:\s*.*\r?\n/m, '');
+      // Apaga a chave E o bloco indentado, se o alt estiver dobrado. O
+      // `replace(/^imageAlt:.*\n/m, '')` de antes levava so a linha da chave e
+      // deixava o valor orfao debaixo dela — YAML invalido, o mesmo estrago
+      // que parou o blog 3 dias em 22/08/2026.
+      raw = apagarCampo(raw, 'imageAlt');
       if (raw !== before) writeFileSync(p, raw, 'utf8');
     }
 
