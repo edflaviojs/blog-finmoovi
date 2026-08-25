@@ -1210,8 +1210,71 @@
           "titulo": "Conclusão e interação com os inscritos"
         }
       ]
+    },
+    {
+      "videoId": "h7Sx-nbYwv8",
+      "title": "Como invertir para principiantes (con poco dinero)",
+      "channel": "Lola Vargas",
+      "duracaoSeg": 2133,
+      "idioma": "es",
+      "viewsPerDay": 2172,
+      "vistoEm": "2026-08-25",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "introducción"
+        },
+        {
+          "seg": 70,
+          "titulo": "Por qué deberías invertir?"
+        },
+        {
+          "seg": 138,
+          "titulo": "Mi historia invirtiendo"
+        },
+        {
+          "seg": 373,
+          "titulo": "Qué son las inversiones?"
+        },
+        {
+          "seg": 453,
+          "titulo": "Como gano dinero de las inversiones?"
+        },
+        {
+          "seg": 676,
+          "titulo": "Principios de inversionista"
+        },
+        {
+          "seg": 900,
+          "titulo": "El tiempo y las inversiones"
+        },
+        {
+          "seg": 988,
+          "titulo": "El interes compuesto"
+        },
+        {
+          "seg": 1288,
+          "titulo": "Qué se compra?"
+        },
+        {
+          "seg": 1310,
+          "titulo": "activos de renta fija"
+        },
+        {
+          "seg": 1408,
+          "titulo": "Activos de renta variable"
+        },
+        {
+          "seg": 1781,
+          "titulo": "Donde comprar"
+        },
+        {
+          "seg": 1856,
+          "titulo": "Tutorial de tu primera inversión"
+        }
+      ]
     }
   ],
-  "atualizadoEm": "2026-08-24T04:36:17.162Z",
-  "total": 22
+  "atualizadoEm": "2026-08-25T04:30:02.632Z",
+  "total": 23
 }
