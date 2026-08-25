@@ -592,5 +592,23 @@
     ],
     "veredito": "1. **O LOOP — 9/10**  \nPrimeiro e último quadro têm o mesmo título, fundo e composição no mesmo lugar. A diferença é o texto inferior, então o loop visual parece bem preparado.\n\n2. **A FAIXA DE BAIXO — 9/10**  \nNão há informação importante claramente escondida na faixa inferior. Os textos principais ficam acima da área mais crítica.\n\n3. **TEXTO POR CIMA DE TEXTO — 9/10**  \nNão vejo frases sobrepostas nem palavras claramente cortadas. Os destaques coloridos também estão bem separados.\n\n4. **LEGIBILIDADE — 9/10**  \nTexto grande, branco e com bom contraste. As palavras destacadas em azul/rosa funcionam bem em tela de celular.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — 7/10**  \nHá bastante espaço vazio em vários quadros, principalmente no centro e nas laterais. O design é limpo, mas alguns momentos podem parecer parados demais.\n\n6. **COERÊNCIA — 9/10**  \nOs 8 quadros parecem pertencer claramente ao mesmo vídeo: mesma identidade visual, mesma posição dos elementos e progressão lógica da história.\n\n7. **TESTE CENTRAL — 7/10**  \nPelos quadros parados, parece mais um **motion design em formato de slides** do que um vídeo profissional cheio de elementos visuais — embora a identidade visual seja consistente.\n\nNOTA GERAL: 8,5  \nPROBLEMA 1: Muito espaço vazio em alguns quadros, principalmente nos quadros 2 e 6 (2,3s e 11,7s)  \nPROBLEMA 2: A composição repetida de título + legenda pode dar aparência de slides, especialmente nos quadros 1, 4, 5, 7 e 8  \nPROBLEMA 3: O texto inferior fica relativamente próximo da área que pode ser ocupada pela interface do Shorts/Reels  \nPRIMEIRA COISA A MUDAR: Preencher melhor os momentos mais vazios com elementos visuais relacionados à história, sem perder a simplicidade.",
     "quando": "2026-08-25T05:07:55.311Z"
+  },
+  {
+    "slug": "loop-emprestar-pra-parente-voces-viram",
+    "formato": "loop16",
+    "nota": 7,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      2.8,
+      5.6,
+      8.3,
+      11.1,
+      13.9,
+      16.7,
+      19.4
+    ],
+    "veredito": "1. **O LOOP — 7/10**  \nO primeiro e o último quadro têm o mesmo título visual (“Parente pediu emprestado”), o que ajuda bastante. Mas o restante do conteúdo é diferente: o primeiro começa com “Gente, vocês viram” e o último termina com “meu dinheiro.” Então, pelos quadros, **não dá para garantir que a reinicialização seja imperceptível**.\n\n2. **A FAIXA DE BAIXO — 6/10**  \nHá legendas importantes relativamente baixas em vários quadros, especialmente nos segundos **0.1, 2.8, 5.6, 8.3, 11.1, 13.9, 16.7 e 19.4**. No celular, essa região pode competir com a interface do Shorts/Reels.\n\n3. **TEXTO POR CIMA DE TEXTO — 8/10**  \nNão vejo frases claramente sobrepostas nem palavras cortadas. Os destaques coloridos das palavras estão bem separados. O principal cuidado seria manter todas as legendas longe das bordas.\n\n4. **LEGIBILIDADE — 9/10**  \nFonte grande, pesada e com ótimo contraste. As palavras destacadas em azul/rosa também chamam atenção. **Está bem adaptado para celular.**\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — 6/10**  \nExiste bastante espaço vazio, principalmente na metade inferior dos quadros com a ilustração. O fundo é bonito, mas grandes áreas ficam sem informação. Isso pode fazer o conteúdo parecer mais “template” do que vídeo.\n\n6. **COERÊNCIA — 9/10**  \nOs oito quadros têm identidade visual muito consistente: mesmo fundo, logo, tipografia, cores e linguagem. A sequência também avança claramente: empréstimo → falta de dinheiro → contas → conclusão.\n\n7. **TESTE CENTRAL — 6/10**  \n**Parece mais uma apresentação de slides animada do que um vídeo profissional**, porque há pouca variação visual e vários quadros dependem praticamente do mesmo layout.\n\n**NOTA GERAL: 7/10**  \n**PROBLEMA 1: O loop não é totalmente invisível — no último quadro (19.4s), “meu dinheiro.” muda abruptamente para o início “Gente, vocês viram”.**  \n**PROBLEMA 2: As legendas ficam baixas demais em vários quadros, podendo ser cobertas pela interface do Shorts/Reels.**  \n**PROBLEMA 3: Há áreas grandes e vazias, principalmente nos quadros de 2.8s, 11.1s e 13.9s, deixando o vídeo com aparência de slides.**  \n**PRIMEIRA COISA A MUDAR: Fazer o último quadro terminar visualmente mais próximo do primeiro, mantendo a mesma composição e posição dos elementos para esconder melhor o reinício.**",
+    "quando": "2026-08-25T05:11:37.282Z"
   }
 ]
