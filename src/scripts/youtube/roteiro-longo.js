@@ -63,6 +63,8 @@ import { loadRecentPublishedContext } from './roteiro-short.js';
 import {
   cenariosGastos, guardarCenarios, fiosGastos, promessasGastas, RAIO_DE_CENARIOS,
   escolherElenco, escolherFuncaoDoApp, elencosGastos, funcoesGastas,
+  // ♦ 25/08/2026 — a cena passou a ser ESCOLHIDA, e não pedida. Ver `escolherCena`.
+  escolherCena, cenasGastas, cenariosDoTexto,
 } from './lib/cenarios-do-longo.js';
 
 const AQUI = dirname(fileURLToPath(import.meta.url));
@@ -497,7 +499,7 @@ ${t.angle ? `ÂNGULO: ${t.angle}\n` : ''}${t.definition ? `DEFINIÇÃO: ${t.defi
 
 // ═══ ANDAR 0 — O MAPA ═══════════════════════════════════════════════════════
 
-export function buildPromptMapa(t, proibidas = [], cenariosJaGastos = [], promessasAnteriores = [], elenco = null, funcaoDoApp = null) {
+export function buildPromptMapa(t, proibidas = [], cenariosJaGastos = [], promessasAnteriores = [], elenco = null, funcaoDoApp = null, cena = null) {
   /**
    * 🔴 A HISTÓRIA TEM DE SER OUTRA — 08/08 (as cenas) e 09/08/2026 (o resto).
    *
@@ -538,10 +540,43 @@ A sua promessa tem de entregar uma coisa **diferente destas**. Se ela pudesse se
 resumo de qualquer um dos vídeos acima, está errada — recomece.`);
   }
 
+  /**
+   * ═══ 🔴 A CENA DESTE VÍDEO — 25/08/2026, e a mudança é de FORMA, não de força ═══
+   *
+   * ═══ O QUE ESTAVA AQUI, E POR QUE FALHOU ═══
+   * Estava um bloco `⛔ CENAS JÁ GASTAS` — uma proibição escrita, seguida de doze
+   * sugestões. **Foi a única coisa deste prompt que era PEDIDA em vez de MANDADA, e foi a
+   * única que repetiu:** o caderno mostra *"a fatura do cartão"* no 1º e no 3º vídeo, com
+   * a proibição no sítio. O elenco, a função do app e a imagem — todos escolhidos por nós
+   * — nunca repetiram uma única vez.
+   *
+   * ⚠️ **Uma proibição ensina o modelo a trocar a palavra e a contar a mesma história.**
+   * É a queixa do dono, à letra, em 08/08: *"trocar o nome do papel que está na mão e
+   * contar a mesma coisa é repetir na mesma"*. E é [[o-exemplo-pesa-mais-que-a-proibicao]]:
+   * o modelo faz o que lhe é MOSTRADO.
+   *
+   * ⚠️ **A lista de gastas fica — mas como reforço, nunca sozinha.** Uma ordem concreta
+   * ("é ESTA cena") mais a lista do que não pode voltar dizem a mesma coisa, e por isso
+   * não se contradizem. Ver [[prompt-versus-validador]]: o que parte uma corrida é o
+   * validador punir o que o prompt manda, e aqui os dois mandam o mesmo.
+   */
+  if (cena) {
+    linhas.push(`\n════════ 🎬 A CENA DESTE VÍDEO — JÁ ESTÁ DECIDIDA ════════
+Este vídeo acontece à volta de: **${cena}**.
+
+🔴 **Não é uma sugestão, é a cena deste vídeo.** É daqui que saem os exemplos, os valores e
+o aperto — a história tem de nascer desta situação concreta, não de "as contas do mês" em
+geral. Comece por ela e deixe-a atravessar o vídeo inteiro.
+
+⚠️ Isto não obriga o vídeo a ser SOBRE isto: o assunto continua a ser o do tema. É por AQUI
+que se entra nele, com uma cena que nenhum vídeo recente deste canal usou.`);
+  }
+
   if (cenariosJaGastos.length) {
-    linhas.push(`\n════════ ⛔ CENAS JÁ GASTAS NOS ÚLTIMOS VÍDEOS ════════
-Estas cenas saíram nos vídeos recentes deste canal e **não podem voltar**: ${cenariosJaGastos.join(' · ')}.
-**Escolha outro momento da vida das pessoas.** O dinheiro aparece em todo o lado: a farmácia no fim do mês, o presente de aniversário, o conserto do chuveiro, a corrida de aplicativo que virou hábito, o almoço fora todo dia, a caixa de ferramentas comprada e nunca usada, o cachorro que adoeceu, a formatura do filho, o material escolar de janeiro, o pneu que furou, o casamento de um amigo, a máquina de lavar que parou.`);
+    linhas.push(`\n════════ ⛔ E ESTAS JÁ SAÍRAM — NÃO PODEM VOLTAR ════════
+Os vídeos recentes deste canal já contaram: ${cenariosJaGastos.join(' · ')}.
+Não as traga de volta nem disfarçadas com outro nome — trocar "fatura" por "boleto" e
+contar a mesma coisa é repetir na mesma.`);
   }
 
   /**
@@ -1169,11 +1204,18 @@ export async function gerarMapa(t, { proibidas = [], tentativas = 3, cenarios = 
    */
   const elenco = escolherElenco(slug, elencosGastos({ slug }));
   const funcaoDoApp = escolherFuncaoDoApp(slug, funcoesGastas({ slug }));
+  /**
+   * 🔴 **A CENA PASSOU A SER ESCOLHIDA — 25/08/2026.** Era a única peça da história que ia
+   * ao pedido como PROIBIÇÃO, e foi a única que repetiu ("a fatura do cartão" no 1º e no
+   * 3º vídeo). Agora é decidida aqui, como o elenco e a função. Ver `escolherCena`.
+   */
+  const cena = escolherCena(slug, cenasGastas({ slug }));
   if (gastos.length) console.log(`🚫 cenas já gastas nos últimos ${RAIO_DE_CENARIOS} vídeos: ${gastos.join(' · ')}`);
   if (jaContadas.length) console.log(`📼 histórias já contadas: ${jaContadas.map((p) => `"${String(p).slice(0, 60)}…"`).join(' | ')}`);
   console.log(`👥 quem vive esta história: ${elenco}`);
   console.log(`📱 função do app nesta demonstração: ${funcaoDoApp.nome} — ${funcaoDoApp.oQueFaz}`);
-  const prompt = buildPromptMapa(t, proibidas, gastos, jaContadas, elenco, funcaoDoApp);
+  console.log(`🎬 a cena por onde este vídeo entra: ${cena}`);
+  const prompt = buildPromptMapa(t, proibidas, gastos, jaContadas, elenco, funcaoDoApp, cena);
   const exigencias = [];
   let corretivo = '';
 
@@ -1184,6 +1226,16 @@ export async function gerarMapa(t, { proibidas = [], tentativas = 3, cenarios = 
    * domingo. Agora a menos má fica de lado, e no fim tenta-se consertá-la.
    */
   let melhor = null;
+  /**
+   * 🔴 **UM MAPA VÁLIDO QUE REPETE A CENA NÃO É UM MAPA REPROVADO — 25/08/2026.**
+   *
+   * Ele passa em todas as regras: tem promessa, três capítulos, valores. O que ele tem de
+   * errado é contar outra vez a história da semana passada — e isso **nenhuma trava sabe
+   * medir sem ser esta**. Guarda-se de lado, pede-se outro dizendo o que ele reciclou, e
+   * se no fim não vier melhor **vai este à mesma**: a regra do dono é *"nunca parar e não
+   * gerar o vídeo"*, e um vídeo com uma cena repetida continua a ser um vídeo.
+   */
+  let validoMasRepetido = null;
 
   for (let i = 1; i <= tentativas; i++) {
     if (i > 1) await dormir(8000);
@@ -1198,10 +1250,47 @@ export async function gerarMapa(t, { proibidas = [], tentativas = 3, cenarios = 
       continue;
     }
     const v = validarMapa(mapa);
-    if (v.ok) return { mapa, avisos: v.avisos, tentativa: i, consertos: [], elenco, funcaoDoApp };
+    if (v.ok) {
+      /**
+       * ⚠️ **MEDIR O RESULTADO, NÃO ACREDITAR NO PEDIDO** — regra da casa. O bloco da
+       * cena manda; esta linha confere se foi obedecido. Os dois dizem a MESMA coisa,
+       * por isso não se contradizem (a armadilha de [[prompt-versus-validador]]).
+       */
+      const reciclou = cenariosDoTexto(JSON.stringify(mapa)).filter((c) => gastos.includes(c));
+      if (!reciclou.length) return { mapa, avisos: v.avisos, tentativa: i, consertos: [], elenco, funcaoDoApp, cena };
+      if (!validoMasRepetido) validoMasRepetido = { mapa, avisos: v.avisos, tentativa: i, reciclou };
+      if (i < tentativas) {
+        console.log(`  ♻️  tentativa ${i}/${tentativas}: o mapa passa nas regras mas trouxe de volta ${reciclou.join(' · ')} — a pedir outro.`);
+        corretivo = montarCorretivo(acumular(exigencias, [
+          `NÃO conte outra vez ${reciclou.join(' nem ')} — isso já saiu num vídeo recente deste canal.`
+          + ` Reescreva o mapa inteiro a partir de "${cena}", que é a cena deste vídeo.`,
+        ]));
+        continue;
+      }
+    }
     if (!melhor || v.erros.length < melhor.v.erros.length) melhor = { mapa, v, tentativa: i };
     corretivo = montarCorretivo(acumular(exigencias, v.erros));
-    console.log(`  ⚠ mapa — tentativa ${i}/${tentativas} reprovada: ${v.erros.join(' | ')}`);
+    if (!v.ok) console.log(`  ⚠ mapa — tentativa ${i}/${tentativas} reprovada: ${v.erros.join(' | ')}`);
+  }
+
+  /**
+   * ⚠️ **ANTES DE CONSERTAR UM MAPA PARTIDO, prefere-se um mapa INTEIRO.** Um mapa válido
+   * que repete uma cena é melhor do que o remendo de um mapa que nem sequer passa nas
+   * regras — e vai com o aviso escrito, para o defeito não passar em silêncio.
+   */
+  if (validoMasRepetido) {
+    console.log(`\n♻️  o mapa vai com uma cena repetida (${validoMasRepetido.reciclou.join(' · ')}) — ${tentativas} tentativas e o modelo não largou.`);
+    console.log(`   Um vídeo com uma cena repetida é melhor do que vídeo nenhum. O sítio de apertar é o PEDIDO, não a trava.\n`);
+    console.log(`::warning::vídeo longo "${slug || ''}": o mapa repetiu a cena ${validoMasRepetido.reciclou.join(' · ')} apesar de lhe ter sido mandada "${cena}".`);
+    return {
+      mapa: validoMasRepetido.mapa,
+      avisos: [...(validoMasRepetido.avisos || []), `cena repetida: ${validoMasRepetido.reciclou.join(' · ')}`],
+      tentativa: validoMasRepetido.tentativa,
+      consertos: [],
+      elenco,
+      funcaoDoApp,
+      cena,
+    };
   }
 
   /**
@@ -1239,6 +1328,9 @@ export async function gerarMapa(t, { proibidas = [], tentativas = 3, cenarios = 
     // o caderno fica sem ele e o vídeo seguinte volta a poder repeti-lo.
     elenco,
     funcaoDoApp,
+    /** ⚠️ E a cena pela mesma razão exacta: sem ela no caderno, o vídeo seguinte pode
+     *  receber a mesma cena e ninguém dá por isso — sai outra história e parece escolha. */
+    cena,
   };
 }
 
@@ -1343,6 +1435,8 @@ export async function gerarLongo(t, { proibidas = [], polir = true, slug = 'long
      */
     mapa.elenco = feito.elenco || null;
     mapa.funcaoDoApp = feito.funcaoDoApp || null;
+    /** ⚠️ A cena viaja com eles, e pela MESMA razão do aviso acima — ver `escolherCena`. */
+    mapa.cena = feito.cena || null;
     caderno.mapa = mapa;
     guardar();
     console.log(`   ✅ mapa aprovado na tentativa ${feito.tentativa}`);
@@ -1850,7 +1944,11 @@ if (executadoDireto) {
     // como a trava das cenas não aprendia antes de 09/08 por falta de um `git add`.
     elenco: mapa?.elenco || null,
     funcaoDoApp: mapa?.funcaoDoApp?.chave || null,
+    // 🔴 25/08/2026 — a cena ESCOLHIDA. Sem esta linha ela não tem memória e volta a
+    // poder sair daqui a duas semanas, que é o defeito que se está a fechar.
+    cena: mapa?.cena || null,
   });
   console.log(`📓 cenas deste vídeo, guardadas para os próximos ${RAIO_DE_CENARIOS}: ${usados.length ? usados.join(' · ') : '(nenhuma das conhecidas)'}`);
+  console.log(`📓 cena mandada a este vídeo, guardada para os próximos ${RAIO_DE_CENARIOS}: ${mapa?.cena || '(nenhuma)'}`);
   console.log(`📓 imagem deste vídeo, guardada para os próximos ${RAIO_DE_CENARIOS}: ${mapa?.fioCondutor || '(nenhuma)'}\n`);
 }

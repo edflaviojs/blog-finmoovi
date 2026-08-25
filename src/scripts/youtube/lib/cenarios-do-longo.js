@@ -144,6 +144,55 @@ export const FUNCOES_DO_APP = [
   { chave: 'partilha', nome: 'a Partilha', oQueFaz: 'a casa toda a ver e lançar nas mesmas contas' },
 ];
 
+/**
+ * ═══ 🔴 A CENA DESTE VÍDEO — 25/08/2026, e nasceu de MEDIR o caderno ═══
+ *
+ * ═══ A PROVA, NOS DADOS DO PRÓPRIO CANAL ═══
+ * Três vídeos feitos. Duas coisas eram **escolhidas por nós e mandadas** ao modelo, e
+ * duas eram **pedidas** com uma proibição escrita. O resultado, medido em
+ * `longo-cenarios.json`:
+ *
+ * | o quê | como ia ao pedido | repetiu? |
+ * |---|---|---|
+ * | o elenco | ESCOLHIDO aqui, mandado | não — avó/neta, mãe/filha |
+ * | a função do app | ESCOLHIDA aqui, mandada | não — contas, categorias |
+ * | a imagem (`fio`) | menu com as gastas FORA da lista | não — mochila, balança, ampulheta |
+ * | **a cena** | **proibição escrita no texto** | **SIM — "a fatura do cartão" no 1º e no 3º** |
+ *
+ * ⚠️ **A única que era pedida foi a única que repetiu.** É a lição
+ * [[o-exemplo-pesa-mais-que-a-proibicao]] outra vez: o modelo faz o que lhe é MOSTRADO,
+ * não o que lhe é dito. Uma lista de "não use isto" ensina-o a trocar a palavra e a
+ * contar a mesma história — foi exactamente a queixa do dono em 08/08 e em 10/08.
+ *
+ * E o cabeçalho deste ficheiro dizia, com todas as letras: *"aqui NÃO HÁ TRAVA NENHUMA…
+ * o gerador não é reprovado por os usar"*. Estava certo em não travar; estava errado em
+ * ficar só pelo pedido. **A cura não é punir: é ESCOLHER**, como já se fazia ao lado.
+ *
+ * ⚠️ **Nenhuma destas cenas está nas `FAMILIAS`**, e é de propósito: as FAMILIAS são o
+ * que já se gastou e se quer detectar; estas são o terreno novo para onde mandar o vídeo.
+ */
+export const CENAS_DA_VIDA = [
+  'a farmácia no fim do mês, quando o remédio de uso contínuo acaba',
+  'o presente de aniversário que ninguém tinha posto na conta',
+  'o chuveiro que queimou num sábado à noite',
+  'a corrida de aplicativo que virou hábito de todos os dias',
+  'o almoço fora, todo dia útil, sem ninguém somar',
+  'a caixa de ferramentas comprada com vontade e nunca usada',
+  'o cachorro que adoeceu de repente',
+  'a formatura do filho — a beca, a foto e a festa',
+  'o pneu que furou a caminho do trabalho',
+  'o casamento de um amigo, com presente e roupa nova',
+  'a máquina de lavar que parou no meio da semana',
+  'o dentista que apareceu como emergência',
+  'o cafezinho e o lanche da tarde, todo dia, no trabalho',
+  'a mudança de casa, com caminhão e caixas',
+  'o churrasco de fim de semana que junta a família toda',
+  'o curso comprado numa promoção e nunca aberto',
+  'o primeiro emprego — o uniforme, a condução e o troco que não sobra',
+  'a consulta que virou exame, e o exame que virou tratamento',
+  'a vaquinha da família para a emergência de alguém',
+];
+
 /** Lê o caderno. Nunca lança — sem caderno, é como se nenhum vídeo tivesse saído. */
 export function lerCaderno(caminho = CADERNO_DE_CENARIOS) {
   try {
@@ -256,13 +305,27 @@ export function escolherElenco(slug, gastos = []) {
   return escolherDeterminista(ELENCOS, slug, gastos);
 }
 
+/** Que cenas os últimos vídeos já receberam — as ESCOLHIDAS, não as adivinhadas do texto. */
+export function cenasGastas({ caderno = lerCaderno(), raio = RAIO_DE_CENARIOS, slug = null } = {}) {
+  return [...new Set(semEste(caderno, slug, raio).map((v) => v.cena).filter(Boolean))];
+}
+
+/**
+ * A cena deste vídeo. ⚠️ O sal `::cena` existe pela mesma razão do `::app`: sem ele, o
+ * mesmo nome de vídeo cairia sempre no mesmo lugar das três listas e o elenco, a função
+ * e a cena andariam sempre ao par.
+ */
+export function escolherCena(slug, gastos = []) {
+  return escolherDeterminista(CENAS_DA_VIDA, `${slug}::cena`, gastos);
+}
+
 export function escolherFuncaoDoApp(slug, gastos = []) {
   /** ⚠️ O deslocamento existe para o elenco e a função não andarem sempre ao par: sem ele,
    *  o mesmo nome de vídeo cairia sempre no mesmo par das duas listas. */
   return escolherDeterminista(FUNCOES_DO_APP, `${slug}::app`, gastos, (x) => x.chave);
 }
 
-export function guardarCenarios(slug, texto, { caminho = CADERNO_DE_CENARIOS, fio = null, promessa = null, elenco = null, funcaoDoApp = null } = {}) {
+export function guardarCenarios(slug, texto, { caminho = CADERNO_DE_CENARIOS, fio = null, promessa = null, elenco = null, funcaoDoApp = null, cena = null } = {}) {
   const caderno = lerCaderno(caminho);
   const cenarios = cenariosDoTexto(texto);
   /**
@@ -292,6 +355,9 @@ export function guardarCenarios(slug, texto, { caminho = CADERNO_DE_CENARIOS, fi
     ...(fio ? { fio } : {}),
     ...(elenco ? { elenco } : {}),
     ...(funcaoDoApp ? { funcaoDoApp } : {}),
+    /** ⚠️ A cena ESCOLHIDA, gravada tal e qual — é ela que o vídeo seguinte proíbe.
+     *  Sem isto, a escolha não teria memória e voltaria a sair daqui a duas semanas. */
+    ...(cena ? { cena } : {}),
     ...(promessa ? { promessa: String(promessa).trim() } : {}),
     em: new Date().toISOString().slice(0, 10),
   });

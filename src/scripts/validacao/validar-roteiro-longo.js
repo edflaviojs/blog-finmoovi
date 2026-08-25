@@ -54,6 +54,7 @@ import { MAX_PALAVRAS_CAPA_LONGO } from '../youtube/lib/palavras.js';
 import {
   cenariosDoTexto, ELENCOS, FUNCOES_DO_APP, RAIO_DE_CENARIOS,
   escolherElenco, escolherFuncaoDoApp, elencosGastos,
+  CENAS_DA_VIDA, escolherCena, cenasGastas, guardarCenarios,
 } from '../youtube/lib/cenarios-do-longo.js';
 import { buildPromptLeitorBloco, buildPromptLeitorCapitulo } from '../youtube/lib/leitor-longo.js';
 
@@ -1245,6 +1246,66 @@ console.log('\nO ELENCO E A FUNÇÃO DO APP NÃO SE REPETEM');
     'nenhum elenco traz um nome próprio',
     ELENCOS.every((e) => !/\b(cláudia|claudia|antônio|antonio|joão|joao|maria|josé|jose|pedro)\b/i.test(e)),
   );
+
+  /**
+   * ═══ 🔴 A CENA DEIXOU DE SER PEDIDA E PASSOU A SER MANDADA — 25/08/2026 ═══
+   *
+   * ═══ O QUE ESTAS PROVAS GUARDAM, e a razão está nos dados do canal ═══
+   * Três vídeos feitos. Tudo o que era ESCOLHIDO por nós nunca repetiu (elenco, função do
+   * app, imagem). A **cena** era a única coisa que ia ao pedido como PROIBIÇÃO — e foi a
+   * única que repetiu: *"a fatura do cartão"* está no 1º e no 3º vídeo do
+   * `longo-cenarios.json`, com a proibição escrita no prompt.
+   *
+   * ⚠️ Queixa do dono, 08/08: *"fala do problema no cartão, fala do domingo, fala que foi
+   * ver a fatura… cada vídeo tem que ser exemplos e histórias totalmente diferentes"*.
+   * É [[o-exemplo-pesa-mais-que-a-proibicao]]: o modelo faz o que lhe é MOSTRADO.
+   */
+  {
+    ok('há cenas que cheguem para a janela de 6 vídeos', CENAS_DA_VIDA.length > RAIO_DE_CENARIOS * 2, `${CENAS_DA_VIDA.length} cenas`);
+
+    const slugs = ['v1', 'v2', 'v3', 'v4', 'v5', 'v6'];
+    const gc = [];
+    for (const s of slugs) { const c = escolherCena(s, [...gc]); gc.push(c); }
+    ok('🔴 seis vídeos seguidos recebem seis CENAS diferentes', new Set(gc).size === gc.length, gc.map((c) => c.slice(0, 22)).join(' | '));
+
+    /** ⚠️ Determinista: uma repescagem de sábado tem de contar a MESMA história. */
+    ok('o mesmo vídeo pedido duas vezes recebe a mesma cena', escolherCena('x-igual', []) === escolherCena('x-igual', []));
+    ok('refazer um vídeo NÃO conta a cena dele próprio como gasta',
+      cenasGastas({ caderno: { videos: [{ slug: 'eu', cena: CENAS_DA_VIDA[0] }] }, slug: 'eu' }).length === 0);
+
+    /**
+     * 🔴 **NENHUMA CENA NOVA PODE JÁ SER UMA CENA GASTA.** Mandar o vídeo para "a fatura
+     * do cartão" quando ela está na lista das proibidas seria a trava a ordenar o que a
+     * outra metade do prompt proíbe — a armadilha de [[prompt-versus-validador]], que
+     * nesta casa já produziu oito tentativas falhadas seguidas.
+     */
+    const colididas = CENAS_DA_VIDA.filter((c) => cenariosDoTexto(c).length);
+    ok('🔴 nenhuma cena mandada cai numa família que o prompt proíbe', colididas.length === 0, colididas.join(' | '));
+
+    /** ⚠️ E a escolha tem de ir mesmo ao PEDIDO — código bom que ninguém chama não serve. */
+    const temaDeMesa = { term: 'tema de prova', angle: 'ângulo de prova', definition: '', body: '' };
+    const pedido = buildPromptMapa(temaDeMesa, [], ['a fatura do cartão'], [], 'um casal', null, 'o pneu que furou a caminho do trabalho');
+    ok('a cena escolhida aparece no pedido como decisão fechada',
+      /A CENA DESTE VÍDEO — JÁ ESTÁ DECIDIDA/.test(pedido) && /o pneu que furou a caminho do trabalho/.test(pedido));
+    ok('e a lista das gastas continua lá, como reforço', /a fatura do cartão/.test(pedido));
+    /**
+     * ⚠️ **O PEDIDO NÃO PODE MOSTRAR EXEMPLOS DE CENAS ALTERNATIVAS.** A versão antiga
+     * listava doze ("a farmácia…, o presente…, o chuveiro…") logo a seguir à proibição —
+     * e um menu de sugestões compete com a ordem. Uma cena só, mandada.
+     */
+    ok('o pedido não oferece um menu de cenas a competir com a ordem',
+      (pedido.match(/o conserto do chuveiro|a caixa de ferramentas comprada e nunca usada/g) || []).length === 0);
+
+    /** ⚠️ E o caderno tem de GRAVAR a cena — sem memória, ela volta a sair daqui a duas semanas. */
+    {
+      const tmp = join(RAIZ, 'node_modules', '.cache', `cenas-de-mesa-${process.pid}.json`);
+      guardarCenarios('de-mesa', 'texto qualquer sem cenas conhecidas', { caminho: tmp, cena: CENAS_DA_VIDA[3] });
+      const lido = JSON.parse(readFileSync(tmp, 'utf-8'));
+      ok('a cena mandada fica gravada no caderno', lido.videos[0].cena === CENAS_DA_VIDA[3], JSON.stringify(lido.videos[0]));
+      ok('e o vídeo seguinte já a vê como gasta',
+        cenasGastas({ caderno: lido }).includes(CENAS_DA_VIDA[3]));
+    }
+  }
 }
 
 // ═══ RESULTADO ═══════════════════════════════════════════════════════════════
