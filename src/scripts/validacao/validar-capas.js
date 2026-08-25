@@ -22,6 +22,7 @@
 
 import { readdirSync, readFileSync, existsSync } from 'fs';
 import { join } from 'path';
+import matter from 'gray-matter';
 
 const POSTS_DIR = join(process.cwd(), 'src', 'content', 'posts');
 const GLOSSARIO_DIR = join(process.cwd(), 'src', 'content', 'glossario');
@@ -29,20 +30,23 @@ const PUBLIC_DIR = join(process.cwd(), 'public');
 
 const BLOCKING = process.env.CAPA_GUARD_BLOCKING === '1';
 
+// YAML de verdade (gray-matter), nao leitura linha-a-linha.
+//
+// O parser caseiro anterior partia cada linha no primeiro ':' e ficava com o
+// que sobrava. Isso le mal QUALQUER escalar em bloco do YAML:
+//
+//     image: >-
+//       /images/posts/nome-muito-comprido.webp
+//
+// Ele guardava image = ">-" e o guard acusava "caminho fora de /images/".
+// Medido em 25/08/2026: 15 posts reprovados, 15 capas presentes no disco —
+// 15 falsos alarmes, o robo vermelho desde 22/08. O gerador comecou a dobrar
+// a linha porque o caminho passou dos 80 caracteres, e a dobra e YAML valido.
+//
+// gray-matter e o mesmo caminho que o Astro usa para ler o conteudo, logo o
+// guard passa a ver EXATAMENTE o que o site ve.
 function parseFrontmatter(content) {
-  const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
-  if (!match) return {};
-  const fm = {};
-  match[1].split('\n').forEach(line => {
-    const [key, ...rest] = line.split(':');
-    if (key && rest.length) {
-      let value = rest.join(':').trim();
-      if (value.startsWith('"') && value.endsWith('"')) value = value.slice(1, -1);
-      else if (value.startsWith("'") && value.endsWith("'")) value = value.slice(1, -1);
-      fm[key.trim()] = value;
-    }
-  });
-  return fm;
+  return matter(content).data || {};
 }
 
 function main() {
@@ -65,12 +69,29 @@ function main() {
       totalFiles++;
       const relPath = `${label}/${file}`;
       const content = readFileSync(join(dir, file), 'utf-8');
-      const fm = parseFrontmatter(content);
+
+      // YAML partido e ERRO listado, nunca um crash: um throw aqui mataria a
+      // varredura no meio e o relatorio sairia sem os ficheiros seguintes.
+      let fm;
+      try {
+        fm = parseFrontmatter(content);
+      } catch (err) {
+        errors.push(`❌ frontmatter YAML inválido: ${relPath} — ${err.message.split('\n')[0]}`);
+        continue;
+      }
+
       const image = fm.image;
 
       // Campo ausente: AVISO
-      if (image === undefined) {
+      if (image === undefined || image === null) {
         warnings.campoAusente.push(relPath);
+        continue;
+      }
+
+      // YAML tipa sozinho: image sem aspas pode vir numero, data ou lista.
+      // Nao e caminho nenhum — ERRO, e nunca deixar rebentar no .trim().
+      if (typeof image !== 'string') {
+        errors.push(`❌ image não é texto: ${relPath} — image: "${String(image)}"`);
         continue;
       }
 
