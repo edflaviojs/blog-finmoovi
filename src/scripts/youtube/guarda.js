@@ -52,7 +52,7 @@ import { pathToFileURL } from 'node:url';
  * o modo de falha crónico desta casa.
  */
 import { getAccessToken } from './upload-short.js';
-import { estadoNoYouTube, emPortugues } from './upload-longo.js';
+import { estadoNoYouTube, emPortugues, longosDoCanal } from './upload-longo.js';
 
 const ROOT = process.cwd();
 const CADERNO_LONGOS = join(ROOT, '.github', 'data', 'youtube-longos-published.json');
@@ -201,17 +201,66 @@ export function conferirORitmo(lista, agora = Date.now(), janelaHoras = JANELA_H
   return alarmes;
 }
 
+/**
+ * 🔴 **HÁ VÍDEO LONGO PARA HOJE? — a pergunta que faltava, 25/08/2026.**
+ *
+ * ═══ POR QUE ISTO NÃO EXISTIA, E QUANTO CUSTOU ═══
+ * Estava escrito, três funções acima: *"só se cobra o que tem relógio diário. O vídeo
+ * longo é semanal e por isso não entra aqui — quem trata dele é a conferência da
+ * estreia."* Era verdade a meias, e a metade que faltava é a que dói: **a conferência da
+ * estreia só olha para vídeos que estão no caderno.** Um domingo em que o robô não
+ * produziu nada não deixa linha nenhuma no caderno — e um vídeo que nunca existiu não
+ * aparece em vigia nenhuma.
+ *
+ * Medido: os domingos **16/08** (dois vídeos iguais) e **23/08** (nenhum vídeo) passaram
+ * os dois sem um único alarme. O dono descobriu os dois abrindo o Studio, dias depois.
+ *
+ * ⚠️ **A pergunta é feita AO CANAL, nunca ao caderno** — é essa a diferença que faz isto
+ * funcionar. E é feita **ao domingo**, que é quando a resposta já é definitiva: a última
+ * repescagem da produção fecha no sábado às 18:00 universais, e a estreia é às 22:00 de
+ * domingo. O guarda corre às 08:10 — sobram **14 horas** para reagir.
+ *
+ * ⚠️ **Só ao domingo, e isso é de propósito.** Perguntar isto à terça-feira daria um
+ * alarme todos os dias da semana, e um alarme que toca sempre ensina quem o lê a
+ * ignorá-lo — a lição que este ficheiro já aprendeu com os Shorts.
+ */
+export function conferirODomingo(doCanal, agora = new Date()) {
+  if (new Date(agora).getUTCDay() !== 0) return [];
+  const hoje = new Date(agora).toISOString().slice(0, 10);
+  const doDia = (doCanal || []).filter((v) => v.dia === hoje);
+  if (doDia.length) {
+    log(`   ✅ ${NOME_DO_FORMATO.longo} — ${doDia.length} para hoje: ${doDia.map((v) => `"${v.titulo}"`).join(' · ')}`);
+    return [];
+  }
+  return [
+    `🔴 ${NOME_DO_FORMATO.longo} NÃO EXISTE para hoje (${hoje}). O canal não tem nenhum vídeo longo`
+    + ' publicado nem agendado para este domingo — a produção de sexta/sábado não entregou.',
+  ];
+}
+
 async function principal() {
   const lista = tudoOQuePublicamos()
     .filter((v) => !args['so-longo'] || v.formato === 'longo');
   log(`\n=== 👮 O GUARDA DO CANAL — ${lista.length} vídeo(s) no caderno ===\n`);
-  if (!lista.length) { log('📭 não há nada publicado para vigiar.\n'); return; }
 
   let chave;
   try { chave = await getAccessToken(); } catch (err) {
     log(`🔴 sem chaves do YouTube (${err.message}) — o guarda não consegue perguntar nada.`);
     log('   Isto É um alarme: um guarda cego não vigia.');
     process.exit(9);
+  }
+
+  /**
+   * 🔴 **O CANAL É PERGUNTADO MESMO COM O CADERNO VAZIO — 25/08/2026.**
+   * A versão anterior desistia aqui quando o caderno não tinha nada (*"não há nada
+   * publicado para vigiar"*). É precisamente o caso a vigiar: **um caderno vazio não
+   * prova um canal vazio**, e as três semanas de vídeo longo repetido nasceram de um
+   * caderno que não foi gravado. Um guarda que só sabe o que lhe escreveram é um guarda
+   * que confirma o erro em vez de o apanhar.
+   */
+  let doCanal = null;
+  try { doCanal = await longosDoCanal(chave); } catch (err) {
+    log(`⚠️ não deu para pedir a lista do canal (${err.message}).`);
   }
 
   /**
@@ -227,7 +276,16 @@ async function principal() {
   const alarmes = [
     ...conferirEstados(lista, estados),
     ...(args['so-longo'] ? [] : conferirORitmo(lista)),
+    ...(doCanal ? conferirODomingo(doCanal) : []),
   ];
+  /**
+   * ⚠️ **NÃO VER, AO DOMINGO, É UM ALARME.** Nos outros dias a lista do canal só serve
+   * de reforço e a falha não vale um email; ao domingo ela é a ÚNICA testemunha de que
+   * o vídeo da semana existe, e um guarda cego não pode dizer que está tudo bem.
+   */
+  if (!doCanal && new Date().getUTCDay() === 0) {
+    alarmes.push('🔴 ao domingo, e não deu para perguntar ao canal se há vídeo longo hoje — o guarda ficou cego no dia que mais importa.');
+  }
 
   if (!alarmes.length) {
     log('\n✅ está tudo como foi combinado.\n');

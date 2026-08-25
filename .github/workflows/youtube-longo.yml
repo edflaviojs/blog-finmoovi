@@ -263,16 +263,41 @@ jobs:
       # Se os temas novos não forem gravados aqui, a corrida seguinte volta a lê-los dos
       # mesmos virais, paga a IA outra vez e cria temas repetidos com outro nome — porque
       # a dedup é feita contra o que está na fila. Guardar custa segundos.
-      - name: Guardar os temas novos na fila
+      #
+      # ═══ 🔴 E DESDE 25/08/2026 ELE TAMBÉM **RESERVA O TEMA E O DOMINGO** ═══
+      #
+      # ═══ O QUE ISTO CONSERTA, MEDIDO NAS CORRIDAS REAIS ═══
+      # Até aqui, a única marca de *"este tema já foi feito"* era escrita no **último
+      # passo** desta corrida — depois de 40 minutos de trabalho e da subida ao YouTube.
+      # Em 15/08 esse passo falhou (o empurrão foi recusado três vezes, com o vídeo já em
+      # cima). Resultado: **o vídeo ficou no ar e o robô nunca soube.** Escolheu o mesmo
+      # tema na semana seguinte, e na outra. Três domingos com a mesma história e a mesma
+      # capa, e o dono a descobri-lo no Studio.
+      #
+      # ⚠️ **A cura não é empurrar melhor no fim: é marcar no princípio.** Aqui a corrida
+      # ainda não gastou um cêntimo. Se a marca não conseguir ser gravada, perde-se uma
+      # corrida barata — em vez de se subir um vídeo que ninguém anota.
+      #
+      # ⚠️ **UM COMMIT SÓ, e é de propósito.** Dois passos a empurrar são duas corridas a
+      # disputar o mesmo ramo, e já se perderam 19 ficheiros nesta casa por causa disso
+      # (memória `blog-deploy-parado-por-link-do-robo`). A reserva viaja com os temas.
+      #
+      # ⚠️ **A reserva não é uma publicação** — não leva `videoId`, e por isso o guarda
+      # ignora-a e a subida no fim preenche-a. E **expira sozinha** se o domingo passar
+      # sem vídeo, para que uma corrida morta a meio não faça o tema desaparecer da fila
+      # em silêncio. Ver `reservaAindaVale` em `pick-next-longo.js`.
+      - name: Reservar o tema e o domingo, e guardar os temas novos na fila
         if: steps.escolher.outputs.skip != 'true'
         run: |
+          set -euo pipefail
+          node src/scripts/youtube/upload-longo.js --reservar --slug="$SLUG"
           git config user.name "FinMoovi Bot"
           git config user.email "bot@finmoovi.com"
-          git add .github/data/youtube-longos.json
+          git add .github/data/youtube-longos.json .github/data/youtube-longos-published.json
           if git diff --staged --quiet; then
-            echo "Sem temas novos (a fila já tinha o que fazer)."
+            echo "Nada de novo (nem temas, nem reserva por escrever)."
           else
-            git commit -m "chore: temas novos do video longo, vindos dos virais [skip ci]"
+            git commit -m "chore: reserva do video longo $SLUG (e temas novos, se houver) [skip ci]"
             bash .github/scripts/empurrar.sh
           fi
 
@@ -391,8 +416,24 @@ jobs:
           # nome do vídeo (`<nome>.json`), portanto o guião do piloto e o do vídeo da
           # semana são ficheiros diferentes e não se pisam.
           node src/scripts/youtube/montar-longo.js --slug=sair-do-vermelho > /dev/null
-          node src/scripts/validacao/validar-roteiro-longo.js
-          node src/scripts/validacao/validar-publicacao-longo.js
+          # ═══ 🔴 `--sem-acervo`, E ESTA OPÇÃO CUSTOU UM DOMINGO INTEIRO ═══
+          #
+          # Em 22/08 as TRÊS corridas deste robô morreram exactamente aqui, e o canal
+          # ficou sem vídeo no domingo 23/08. A causa não tinha nada a ver com vídeo: o
+          # detetive de tendências trouxe, em 17/08, títulos de capítulo de OUTROS canais
+          # (um de 15 palavras, três a começar por "Resumo"), e uma prova que os lê ficou
+          # vermelha. O `set -euo pipefail` fez o resto.
+          #
+          # ⚠️ A régua foi endireitada em 24/08 (`0c780aeb`) — mas o CASTIGO continuava
+          # errado. Estes ficheiros de `.github/data/` são enchidos todos os dias por
+          # outros robôs, com material que não é nosso: a próxima surpresa vai aparecer.
+          #
+          # Com `--sem-acervo`, as provas do ACERVO avisam (e o aviso aparece no topo da
+          # corrida) e as provas do MOTOR continuam a travar tudo, como devem. A
+          # conferência diária corre as mesmas provas SEM esta opção e fica vermelha na
+          # mesma — o alarme chega, o domingo não fica vazio.
+          node src/scripts/validacao/validar-roteiro-longo.js --sem-acervo
+          node src/scripts/validacao/validar-publicacao-longo.js --sem-acervo
 
       # ── 1-c. AS FOTOGRAFIAS ───────────────────────────────────────────────────
       #
@@ -579,13 +620,29 @@ jobs:
       - name: Guardar o caderno de cenas, as fotografias e o banco
         if: steps.escolher.outputs.skip != 'true'
         run: |
+          # ═══ 🔴 A RESERVA DO TEMA QUE REALMENTE GANHOU — 25/08/2026 ═══
+          #
+          # O passo lá de cima reserva o PRIMEIRO tema da fila. Mas o passo do guião pode
+          # trocar de tema pelo caminho (ordem do dono, 09/08: *"se existe algum bloqueio
+          # ele pula para o próximo tema… mas nunca parar e não gerar o vídeo"*) — e aí a
+          # reserva ficava no tema errado, com o tema certo por marcar.
+          #
+          # ⚠️ **Isto NÃO é um empurrão novo.** Vai no commit que já existe, e o sítio foi
+          # escolhido: estamos a ~10 minutos de corrida e o render, que é o que custa 40,
+          # ainda não começou. Dois passos a empurrar são duas corridas a disputar o mesmo
+          # ramo, e já se perderam 19 ficheiros nesta casa por causa disso.
+          #
+          # ⚠️ E ela não apaga a primeira: o tema que travou fica reservado esta semana e
+          # **volta à fila sozinho** quando o domingo passar (`reservaAindaVale`).
+          node src/scripts/youtube/upload-longo.js --reservar --slug="$SLUG" || \
+            echo "::warning::não deu para reservar \"$SLUG\" — o caderno é escrito no fim na mesma."
           git config user.name "FinMoovi Bot"
           git config user.email "bot@finmoovi.com"
-          git add .github/data/longo-cenarios.json .github/data/fotos-do-longo.json .github/data/banco-de-imagens.json youtube-render/public/manus || true
+          git add .github/data/longo-cenarios.json .github/data/fotos-do-longo.json .github/data/banco-de-imagens.json .github/data/youtube-longos-published.json youtube-render/public/manus || true
           if git diff --staged --quiet; then
             echo "Sem novidades para guardar."
           else
-            git commit -m "chore: cenas e fotografias do video longo $SLUG [skip ci]"
+            git commit -m "chore: cenas, fotografias e reserva do video longo $SLUG [skip ci]"
             bash .github/scripts/empurrar.sh
           fi
 

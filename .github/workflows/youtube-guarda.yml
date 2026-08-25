@@ -86,20 +86,58 @@ jobs:
           echo "o próprio guarda falhou a correr (código $CODE) — ninguém está a vigiar o agendamento." >> "$GITHUB_OUTPUT"
           echo "FIM" >> "$GITHUB_OUTPUT"
 
+      # ═══ 🔴 AS PROVAS DO VÍDEO LONGO, ACERVO INCLUÍDO — 25/08/2026 ═══
+      #
+      # Desde hoje o robô que FAZ o vídeo corre as provas com `--sem-acervo`: as provas
+      # que lêem `.github/data/` (colheitas de outros robôs, títulos de canais que não são
+      # nossos) avisam em vez de travarem. Foi uma surpresa dessas que deixou o domingo
+      # 23/08 sem vídeo — as três corridas de 22/08 morreram numa prova de títulos.
+      #
+      # ⚠️ **Mas baixar o castigo lá não pode ser apagar o alarme.** É aqui que ele passa
+      # a tocar: estas provas correm INTEIRAS, todos os dias, e uma vermelha manda email.
+      # O defeito continua a ser visto no dia seguinte — o que deixa de acontecer é o
+      # canal ficar sem vídeo por causa dele.
+      #
+      # ⚠️ Não gastam rede, nem IA, nem créditos: são provas de mesa. O montador corre
+      # antes porque sete delas lêem o guião do piloto já montado, e ele é derivado (não
+      # vai para o repositório). É determinista e leva dois segundos.
+      - name: As provas do vídeo longo — com o acervo a valer vermelho
+        id: acervo
+        run: |
+          set +e
+          node src/scripts/youtube/montar-longo.js --slug=sair-do-vermelho > /dev/null 2>&1
+          node src/scripts/validacao/validar-roteiro-longo.js > /tmp/provas-roteiro.txt 2>&1; A=$?
+          node src/scripts/validacao/validar-publicacao-longo.js > /tmp/provas-publicacao.txt 2>&1; B=$?
+          set -e
+          cat /tmp/provas-roteiro.txt /tmp/provas-publicacao.txt
+          if [ "$A" = "0" ] && [ "$B" = "0" ]; then
+            echo "alarme=nao" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "alarme=sim" >> "$GITHUB_OUTPUT"
+          {
+            echo "alarmes<<FIM"
+            echo "🔴 as provas do vídeo longo têm vermelhas (o vídeo ainda sai, mas isto é para olhar):"
+            sed -n '/AS QUE FALHARAM/,/═══/p' /tmp/provas-roteiro.txt /tmp/provas-publicacao.txt | grep '·' | head -20
+            echo "FIM"
+          } >> "$GITHUB_OUTPUT"
+
       # ⚠️ O EMAIL VAI PELO MESMO CAMINHO DO RELATÓRIO DIÁRIO (Resend), porque é o único
       # que já se sabe que chega ao dono. Um alarme que só existe no separador "Actions"
       # é um alarme que ninguém lê — foi exactamente assim que este defeito passou.
       - name: Avisar o dono
-        if: steps.vigiar.outputs.alarme == 'sim'
+        if: steps.vigiar.outputs.alarme == 'sim' || steps.acervo.outputs.alarme == 'sim'
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           DIGEST_TO: ${{ vars.DIGEST_TO || 'finmoovi@gmail.com' }}
-          ALARMES: ${{ steps.vigiar.outputs.alarmes }}
+          ALARMES: |
+            ${{ steps.vigiar.outputs.alarmes }}
+            ${{ steps.acervo.outputs.alarmes }}
           CORRIDA: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: node .github/scripts/avisar-guarda-canal.mjs
 
       - name: Ficar vermelho para o aviso não passar despercebido
-        if: steps.vigiar.outputs.alarme == 'sim'
+        if: steps.vigiar.outputs.alarme == 'sim' || steps.acervo.outputs.alarme == 'sim'
         run: |
-          echo "::error::há vídeo(s) fora do combinado — ver o email e o registo acima."
+          echo "::error::há vídeo(s) fora do combinado ou provas vermelhas — ver o email e o registo acima."
           exit 1

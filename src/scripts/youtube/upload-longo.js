@@ -213,6 +213,12 @@ export async function estadoNoYouTube(videoIds, chave) {
 /**
  * A mesma pergunta de `estreiaOcupada`, mas **confirmada com o YouTube**.
  * Sem chave, ou se a rede falhar, cai na resposta do caderno — que é a conservadora.
+ *
+ * ⚠️ **DESDE 25/08/2026 ISTO JÁ NÃO DECIDE NADA — quem decide é `diaCheio`.** Fica aqui
+ * porque a ideia é boa e continua a valer (perguntar ao YouTube se a reserva ainda é
+ * verdade), mas ela só olha para vídeos que **já estão no caderno** — e o caso que partiu
+ * três domingos foi precisamente um vídeo que subiu e não chegou a ser anotado. Ver o
+ * aviso grande em `diaCheio`. Não pôr esta função a decidir outra vez.
  */
 export async function estreiaOcupadaDeVerdade(estreia, { caderno = lerCaderno(), slugAtual = null, chave = null, registar = () => {} } = {}) {
   const ocupado = estreiaOcupada(estreia, caderno, slugAtual);
@@ -237,6 +243,257 @@ export async function estreiaOcupadaDeVerdade(estreia, { caderno = lerCaderno(),
     registar(`   ⚠️ não deu para perguntar ao YouTube (${err.message}) — trata-se como ocupada, que é o erro barato.`);
     return ocupado;
   }
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// 🔴 A REGRA DO DOMINGO PASSOU A MEDIR O **CANAL** — 25/08/2026
+// ═══════════════════════════════════════════════════════════════════════════════
+/**
+ * ═══ O QUE FALHOU, MEDIDO NAS CORRIDAS REAIS ═══
+ *
+ * Domingo **16/08 saíram DOIS vídeos com o mesmo tema e a mesma capa**. As três corridas
+ * de sábado 15/08 escolheram o mesmo tema e duas subiram-no, com horas de intervalo.
+ *
+ * A trava "um domingo, um vídeo" existia e estava ligada. Ela não apanhou nada por uma
+ * razão só: **ela pergunta ao ficheiro.** A corrida das 02:52 subiu o vídeo e depois **não
+ * conseguiu gravar o caderno** (o empurrão foi recusado três vezes). Para a corrida das
+ * 12:50, o caderno dizia que o domingo estava vazio — e estava a dizer a verdade sobre o
+ * ficheiro e uma mentira sobre o canal.
+ *
+ * ⚠️ E a `estreiaOcupadaDeVerdade` **não salvava isto**, apesar de falar com o YouTube:
+ * ela só pergunta pelos vídeos que **já estão no caderno**. Um vídeo que subiu e não foi
+ * anotado é invisível para ela. Uma trava que só vê o que já foi anotado não protege
+ * contra o caso em que a anotação falha — e a anotação é exactamente o que falhou.
+ *
+ * ═══ A REGRA QUE FICA ═══
+ * **Quem sabe quantos vídeos há num domingo é o canal.** Pergunta-se-lhe a lista dos
+ * envios e conta-se quantos vídeos LONGOS caem naquele dia — contando tanto os já
+ * públicos como os privados com estreia marcada. É a regra da casa outra vez: *conferir o
+ * resultado, nunca o que está escrito.*
+ *
+ * ⚠️ **OS SHORTS NÃO CONTAM, e sem esta linha isto era um desastre:** o canal publica
+ * Shorts todos os dias, portanto "há vídeo neste dia" seria verdade sempre e o vídeo
+ * longo nunca mais se fazia. O que separa os dois é a **duração** — daí pedir-se
+ * `contentDetails` e cortar aos 3 minutos.
+ *
+ * ⚠️ **Isto NÃO substitui o caderno; soma-se a ele.** O caderno continua a valer para
+ * escolher o tema e para o guarda. O que muda é quem decide se o dia está cheio.
+ */
+const DURACAO_MINIMA_DE_LONGO_SEG = 180;
+
+/** `PT6M12S` → 372. O YouTube só devolve a duração assim. */
+export function duracaoEmSegundos(iso) {
+  const m = /^P(?:(\d+)D)?T(?:(\d+)H)?(?:(\d+)M)?(?:(\d+(?:\.\d+)?)S)?$/.exec(String(iso || ''));
+  if (!m) return 0;
+  return (Number(m[1] || 0) * 86400) + (Number(m[2] || 0) * 3600)
+    + (Number(m[3] || 0) * 60) + Math.round(Number(m[4] || 0));
+}
+
+/**
+ * O DIA em que cada vídeo do canal está (ou vai estar) no ar.
+ *
+ * ⚠️ **São dois campos diferentes e confundi-los daria a resposta errada:**
+ *   · privado **com** hora marcada → o dia que interessa é o da ESTREIA (`status.publishAt`);
+ *   · já público → o dia em que foi publicado (`snippet.publishedAt`);
+ *   · privado **sem** hora marcada → não vai ao ar dia nenhum; não ocupa nada.
+ */
+export function diaNoAr(v) {
+  const priv = v?.status?.privacyStatus;
+  const marcada = v?.status?.publishAt;
+  if (priv === 'private') return marcada ? String(marcada).slice(0, 10) : null;
+  return v?.snippet?.publishedAt ? String(v.snippet.publishedAt).slice(0, 10) : null;
+}
+
+/**
+ * OS VÍDEOS LONGOS DO CANAL, como o YouTube os vê.
+ *
+ * ⚠️ `maxResults` do YouTube é 50 por chamada. Vinte e cinco chegam e sobram: o canal
+ * publica ~3 vídeos por dia, portanto isto cobre mais de uma semana — e a pergunta é
+ * sempre sobre um domingo que está a dias de distância, nunca sobre o mês passado.
+ */
+export async function longosDoCanal(chave, { maximo = 25, buscar = fetch } = {}) {
+  const cabecalho = { headers: { Authorization: `Bearer ${chave}` } };
+  const rCanal = await buscar('https://www.googleapis.com/youtube/v3/channels?part=contentDetails&mine=true', cabecalho);
+  if (!rCanal.ok) throw new Error(`o YouTube não disse qual é o canal (${rCanal.status})`);
+  const canal = await rCanal.json();
+  const playlist = canal?.items?.[0]?.contentDetails?.relatedPlaylists?.uploads;
+  if (!playlist) throw new Error('o YouTube não devolveu a prateleira de envios do canal');
+
+  const rLista = await buscar(
+    `https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails&maxResults=${maximo}&playlistId=${playlist}`,
+    cabecalho,
+  );
+  if (!rLista.ok) throw new Error(`o YouTube não devolveu os envios (${rLista.status})`);
+  const lista = await rLista.json();
+  const ids = (lista.items || []).map((i) => i?.contentDetails?.videoId).filter(Boolean);
+  if (!ids.length) return [];
+
+  const rVideos = await buscar(
+    `https://www.googleapis.com/youtube/v3/videos?part=status,snippet,contentDetails&id=${ids.join(',')}`,
+    cabecalho,
+  );
+  if (!rVideos.ok) throw new Error(`o YouTube não descreveu os vídeos (${rVideos.status})`);
+  const videos = await rVideos.json();
+
+  return (videos.items || [])
+    .map((v) => ({
+      id: v.id,
+      titulo: v?.snippet?.title || '',
+      duracaoSeg: duracaoEmSegundos(v?.contentDetails?.duration),
+      privacidade: v?.status?.privacyStatus || null,
+      dia: diaNoAr(v),
+    }))
+    .filter((v) => v.duracaoSeg >= DURACAO_MINIMA_DE_LONGO_SEG && v.dia);
+}
+
+/**
+ * QUANTOS VÍDEOS LONGOS ESTE DOMINGO ACEITA — e por omissão é **um**.
+ *
+ * ═══ POR QUE ISTO EXISTE, e por que tem prazo de validade ═══
+ * Em 25/08/2026 o dono autorizou, por escrito, **dois vídeos no domingo 30/08**: o que já
+ * estava agendado repetia o tema pela terceira vez, e ele quis o robô a provar, sozinho,
+ * que consegue fazer outro. A regra "um domingo, um vídeo" continua boa e continua ligada
+ * — o que se acrescenta é a possibilidade de a **furar por escrito, com data e motivo**.
+ *
+ * ⚠️ **A exceção EXPIRA.** Sem `validoAte`, ou passada essa data, ela deixa de contar.
+ * Uma exceção sem prazo deixa de ser exceção e passa a ser a regra nova, em silêncio — e
+ * é assim que uma casa perde as suas próprias travas.
+ */
+const EXCECOES = join(ROOT, '.github', 'data', 'longo-domingos-duplos.json');
+
+export function quantosCabemNesteDia(estreia, { ficheiro = EXCECOES, agora = new Date() } = {}) {
+  const dia = new Date(estreia).toISOString().slice(0, 10);
+  if (!existsSync(ficheiro)) return { cabem: 1, excecao: null };
+  let dados;
+  try { dados = JSON.parse(readFileSync(ficheiro, 'utf-8')); } catch { return { cabem: 1, excecao: null }; }
+  const e = dados?.domingos?.[dia];
+  if (!e) return { cabem: 1, excecao: null };
+  if (!e.validoAte || new Date(`${e.validoAte}T23:59:59Z`).getTime() < new Date(agora).getTime()) {
+    return { cabem: 1, excecao: null, expirou: Boolean(e.validoAte) };
+  }
+  const cabem = Number.isInteger(e.quantos) && e.quantos > 0 ? e.quantos : 1;
+  return { cabem, excecao: e };
+}
+
+/**
+ * ♦ **O SEGUNDO VÍDEO DO MESMO DOMINGO NÃO ESTREIA À MESMA HORA.**
+ *
+ * Quando um domingo tem exceção escrita e **já lá está** um vídeo, o que entra agora vai
+ * à hora que a exceção mandar. Dois vídeos ao mesmo minuto na aba de quem se inscreveu é
+ * a pior versão daquilo que o dono autorizou: ele quis dois vídeos, não dois vídeos a
+ * competirem no mesmo segundo — que é exactamente a razão de existir a regra que a
+ * exceção está a furar.
+ *
+ * Devolve a hora nova, ou `null` quando nada muda (sem exceção, sem hora escrita, ou o
+ * domingo ainda estar vazio — aí este é o primeiro e fica na hora de sempre).
+ */
+export function horaDaExcecao(estreia, jaLa, excecao) {
+  if (!excecao?.horaExtra || !(jaLa > 0)) return null;
+  const [h, m] = String(excecao.horaExtra).split(':').map(Number);
+  if (!Number.isFinite(h) || !Number.isFinite(m)) return null;
+  const nova = new Date(estreia.getTime());
+  nova.setUTCHours(h, m, 0, 0);
+  return nova;
+}
+
+/**
+ * AS RESERVAS DAQUELE DIA QUE O CANAL NÃO PODE VER.
+ *
+ * ⚠️ Uma reserva é uma linha no caderno **sem vídeo no YouTube** — o tema já foi tomado
+ * por uma corrida que ainda está a trabalhar. O canal não sabe dela, e por isso ela tem
+ * de ser somada à conta: sem isto, duas corridas do mesmo sábado tomavam o mesmo domingo,
+ * que foi exactamente o que aconteceu em 15/08.
+ */
+export function reservasDoDia(estreia, caderno = lerCaderno(), slugAtual = null) {
+  return ocupacaoNoCaderno(estreia, caderno, slugAtual).filter((o) => !o.temVideo).map((o) => o.slug);
+}
+
+/**
+ * TUDO O QUE O CADERNO DIZ ESTAR NAQUELE DIA — com vídeo ou só reservado.
+ *
+ * 🔴 **ISTO EXISTE PORQUE A RESPOSTA DE RECURSO IGNORAVA A EXCEÇÃO — apanhado em
+ * 25/08/2026, a correr o comando exacto do robô.**
+ *
+ * Quando o YouTube não responde, a decisão cai no caderno. E a resposta do caderno era um
+ * SIM/NÃO (`estreiaOcupada`), escrito quando "um domingo, um vídeo" não tinha excepções.
+ * Resultado: num domingo que o dono autorizou por escrito a levar dois vídeos, uma
+ * gaguez do YouTube na sexta à noite fazia o robô desistir — **e a autorização dele não
+ * valia nada por causa de um erro de rede**.
+ *
+ * É a família de defeito nº 1 desta casa outra vez: uma régua velha (sim/não) a correr
+ * numa estrutura nova (uma contagem contra um teto). As duas respostas passam a ser
+ * contagens, e as duas passam pelo mesmo teto.
+ */
+export function ocupacaoNoCaderno(estreia, caderno = lerCaderno(), slugAtual = null) {
+  const dia = new Date(estreia).toISOString().slice(0, 10);
+  return Object.entries(caderno || {})
+    .filter(([slug, r]) => slug !== slugAtual && r
+      && String(r.publishAt || r.uploadedAt || '').slice(0, 10) === dia)
+    .map(([slug, r]) => ({ slug, temVideo: Boolean(r.videoId) }));
+}
+
+/**
+ * A RESPOSTA DE RECURSO: o dia está cheio **segundo o caderno**, contra o mesmo teto.
+ * Usada só quando não se conseguiu ver o canal. Ver o aviso de `ocupacaoNoCaderno`.
+ */
+export function diaCheioNoCaderno(estreia, caderno = lerCaderno(), slugAtual = null, opcoesDoTeto = {}) {
+  const quem = ocupacaoNoCaderno(estreia, caderno, slugAtual);
+  const { cabem } = quantosCabemNesteDia(estreia, opcoesDoTeto);
+  return quem.length >= cabem ? { jaLa: quem.length, cabem, quem } : null;
+}
+
+/**
+ * 🔴 **O DIA ESTÁ CHEIO?** — a única pergunta que decide, e ela é feita AO CANAL.
+ *
+ * A conta é: *vídeos longos que o CANAL já tem naquele dia* **+** *reservas do caderno
+ * que ainda não têm vídeo* — contra quantos aquele dia aceita (um, salvo exceção escrita).
+ *
+ * Devolve `undefined` quando **não se conseguiu ver** — e aí quem chama tem de cair na
+ * resposta do caderno, que é a conservadora. Um guarda cego não dá autorização: diz que
+ * não viu. Nos outros casos devolve `{ cheio, jaLa, cabem, quem, reservas, excecao }`.
+ */
+export async function diaCheio(estreia, {
+  chave = null, caderno = lerCaderno(), slugAtual = null, registar = () => {}, listar = longosDoCanal,
+} = {}) {
+  const dia = new Date(estreia).toISOString().slice(0, 10);
+  const { cabem, excecao, expirou } = quantosCabemNesteDia(estreia);
+  if (excecao) {
+    registar(`   ♦ ${dia}: exceção escrita e datada — cabem ${cabem} vídeos longos. Motivo: ${excecao.porque || '(sem motivo escrito)'}`);
+  } else if (expirou) {
+    registar(`   ♦ ${dia}: havia uma exceção, mas já EXPIROU — volta a valer um domingo, um vídeo.`);
+  }
+
+  const reservas = reservasDoDia(estreia, caderno, slugAtual);
+  if (reservas.length) registar(`   📌 reservas do caderno para ${dia}, ainda sem vídeo: ${reservas.join(', ')}`);
+
+  if (!chave) return undefined;
+  let doCanal;
+  try {
+    doCanal = await listar(chave);
+  } catch (err) {
+    registar(`   ⚠️ não deu para perguntar ao canal (${err.message}) — decide o caderno.`);
+    return undefined;
+  }
+  /** ⚠️ Um vídeo NÃO ocupa o dia contra si próprio — a mesma razão que a de `estreiaOcupada`. */
+  const meu = slugAtual ? caderno?.[slugAtual]?.videoId : null;
+  /**
+   * 🔴 **O CORTE DA DURAÇÃO É REPETIDO AQUI DE PROPÓSITO — e foi uma prova que o exigiu.**
+   *
+   * Ele já vive em `longosDoCanal`. Mas quem DECIDE é esta função, e quem decide não pode
+   * depender de quem lhe entrega a lista ter feito o trabalho: bastou uma prova entregar
+   * uma lista não filtrada para um **Short de 58 segundos ocupar o domingo** — e um Short
+   * ocupa todos os dias, porque o canal publica Shorts todos os dias. O vídeo longo
+   * nunca mais se fazia, e a corrida acabava a verde a dizer *"o dia já tem dono"*.
+   *
+   * É a família de defeito nº 1 desta casa: uma regra que vive num sítio e uma decisão
+   * que vive noutro. **A regra passa a viver onde a decisão é tomada.**
+   */
+  const noDia = doCanal.filter((v) => v.dia === dia && v.id !== meu
+    && (v.duracaoSeg === undefined || v.duracaoSeg >= DURACAO_MINIMA_DE_LONGO_SEG));
+  registar(`   👀 o CANAL diz que ${dia} já tem ${noDia.length} vídeo(s) longo(s)${noDia.length ? `: ${noDia.map((v) => `"${v.titulo}" (${v.privacidade})`).join(' · ')}` : ''}`);
+
+  const total = noDia.length + reservas.length;
+  return { cheio: total >= cabem, jaLa: total, cabem, quem: noDia, reservas, excecao };
 }
 
 /** "domingo, 9 de agosto, às 19h00 do Brasil" — para quem lê o registo entender. */
@@ -517,10 +774,9 @@ async function conferirEstreiaSozinha() {
   if (Number.isNaN(estreia.getTime())) throw new Error(`"${marcada}" não é uma data que eu saiba ler.`);
   log(`📅 a próxima estreia seria ${emPortugues(estreia)}.`);
 
-  // ⚠️ Com as chaves à mão, pergunta-se ao YOUTUBE em vez de acreditar no caderno.
-  // Ver `estreiaOcupadaDeVerdade`: uma reserva de um vídeo que entretanto foi tornado
-  // público **não ocupa nada** — e sem isto o canal perdia uma semana por causa de uma
-  // linha que já não era verdade.
+  // ⚠️ Com as chaves à mão, conta-se quantos vídeos longos o CANAL já tem naquele dia,
+  // em vez de acreditar no caderno — ver o aviso grande em `diaCheio`. Sem chave, a
+  // resposta de recurso é a do caderno, contra o mesmo teto (`diaCheioNoCaderno`).
   let chave = null;
   try { chave = await getAccessToken(); } catch { /* sem chaves, decide o caderno */ }
 
@@ -533,20 +789,86 @@ async function conferirEstreiaSozinha() {
    * pensar que era ele próprio a subir — **e o dia parecia sempre livre**.
    * Apanhado a correr o comando exato do robô, não a ler o código.
    */
-  const ocupado = await estreiaOcupadaDeVerdade(estreia, {
-    caderno: lerCaderno(), slugAtual: valor('slug'), chave, registar: log,
+  /**
+   * 🔴 **PRIMEIRO PERGUNTA-SE AO CANAL — 25/08/2026.** Ver o aviso grande em `diaCheio`:
+   * a pergunta ao caderno deixou passar DOIS vídeos iguais no domingo 16/08, porque o
+   * caderno não tinha sido gravado. Só se cai no caderno quando o canal não responde.
+   */
+  const visto = await diaCheio(estreia, {
+    chave, caderno: lerCaderno(), slugAtual: valor('slug'), registar: log,
   });
-  if (ocupado) {
-    log(`⏭️  esse dia já é do vídeo "${ocupado.slug}" — um dia, um vídeo.`);
+  if (visto?.cheio) {
+    log(`⏭️  ${emPortugues(estreia)} já tem ${visto.jaLa} vídeo(s) longo(s) e só cabem ${visto.cabem}.`);
     log('   Nada a fazer hoje (não é avaria).');
     process.exit(78);
+  }
+  if (visto === undefined) {
+    log('   (o canal não respondeu — a decidir pelo caderno, que é o conservador)');
+    /**
+     * ⚠️ **A RESPOSTA DE RECURSO PASSA PELO MESMO TETO** — ver `diaCheioNoCaderno`. Antes
+     * era um sim/não que não conhecia excepções, e uma gaguez do YouTube apagava uma
+     * autorização escrita do dono.
+     */
+    const cheioNoCaderno = diaCheioNoCaderno(estreia, lerCaderno(), valor('slug'));
+    if (cheioNoCaderno) {
+      log(`⏭️  segundo o caderno, ${emPortugues(estreia)} já tem ${cheioNoCaderno.jaLa} vídeo(s) e só cabem ${cheioNoCaderno.cabem}: ${cheioNoCaderno.quem.map((q) => q.slug).join(', ')}`);
+      log('   Nada a fazer hoje (não é avaria).');
+      process.exit(78);
+    }
   }
   log('✅ o dia está livre.');
 }
 
 
+/**
+ * 🔴 **RESERVAR O TEMA E O DOMINGO ANTES DE GASTAR UM CÊNTIMO — 25/08/2026.**
+ *
+ * ═══ O QUE ISTO CONSERTA, MEDIDO ═══
+ * Até hoje a ÚNICA marca de "este tema já foi feito" era escrita no **último passo** da
+ * corrida, depois de 40 minutos de trabalho e da subida. Em 15/08 esse passo falhou (o
+ * empurrão foi recusado três vezes) — e o resultado foi o pior possível: **o vídeo ficou
+ * no ar e ninguém soube.** Na semana seguinte o robô escolheu o mesmo tema, e na outra
+ * também. Três domingos com a mesma história e a mesma capa.
+ *
+ * A cura não é empurrar melhor no fim: é **marcar no princípio**. Aqui a corrida custa
+ * dois segundos e ainda não gastou nada. Se a marca não conseguir ser gravada, perde-se
+ * uma corrida barata — em vez de se subir um vídeo que ninguém anota.
+ *
+ * ⚠️ **A reserva não é uma publicação.** Ela não leva `videoId`, e é isso que a distingue:
+ * o `pick-next-longo` salta-a (o tema está tomado), o guarda ignora-a (não há vídeo para
+ * vigiar), e a subida no fim preenche-a. Ver o aviso em `reservasDoDia`.
+ *
+ * ⚠️ **E ELA EXPIRA SOZINHA.** Se a corrida morrer a meio, o domingo passa e a reserva
+ * fica lá, sem vídeo. Sem prazo, esse tema desaparecia da fila para sempre — em silêncio,
+ * que é o modo de falha que esta casa mais paga. Ver `pick-next-longo.js`.
+ */
+async function reservarSozinha() {
+  const slug = valor('slug');
+  if (!slug) throw new Error('é preciso dizer que vídeo se reserva (--slug=...).');
+  const marcada = valor('publicar-em');
+  const estreia = marcada ? new Date(marcada) : proximoDomingo();
+  if (Number.isNaN(estreia.getTime())) throw new Error(`"${marcada}" não é uma data que eu saiba ler.`);
+
+  const caderno = lerCaderno();
+  if (caderno[slug]?.videoId) {
+    log(`✅ "${slug}" já tem vídeo no YouTube (${caderno[slug].videoId}) — não se reserva o que já está feito.`);
+    return;
+  }
+  caderno[slug] = {
+    ...(caderno[slug] || {}),
+    estado: 'reservado',
+    publishAt: estreia.toISOString(),
+    reservadoEm: new Date().toISOString(),
+    corrida: process.env.GITHUB_RUN_ID || null,
+  };
+  gravarCaderno(caderno);
+  log(`📌 "${slug}" reservado para ${emPortugues(estreia)}.`);
+  log('   A partir de agora nenhuma outra corrida escolhe este tema nem este domingo.');
+}
+
 async function principal() {
   if (args['conferir-estreia']) { await conferirEstreiaSozinha(); return; }
+  if (args.reservar) { await reservarSozinha(); return; }
   log(`\n=== YouTube · vídeo longo "${SLUG}"${ENSAIO ? ' (ENSAIO — nada é enviado)' : ''} ===`);
 
   // ── o que tem de existir ──
@@ -641,24 +963,70 @@ async function principal() {
    * vídeos para o ano que vem. Se oito domingos seguidos estiverem tomados, há coisa
    * mais errada do que uma data, e aí sim vale a pena parar e olhar.
    */
-  let ocupado = estreiaOcupada(estreia, caderno, SLUG);
+  /**
+   * 🔴 **A CHAVE VEM PARA CIMA — 25/08/2026, e não é arrumação.** A decisão da data
+   * passou a precisar de perguntar ao CANAL (ver `diaCheio`), e a chave era pedida
+   * cinquenta linhas mais abaixo. Com ela aqui, a mesma chave serve as duas coisas —
+   * uma renovação, não duas.
+   * ⚠️ Num ensaio não se pede chave nenhuma: um `--dry-run` não pode depender de rede.
+   */
+  let chave = null;
+  if (!ENSAIO) {
+    try { chave = await getAccessToken(); log('\n🔑 chave do Google renovada.'); }
+    catch (err) { log(`⚠️ não deu para renovar a chave do Google (${err.message}) — a data decide-se pelo caderno.`); }
+  }
+
+  /**
+   * 🔴 **O DIA MEDE-SE NO CANAL, E NÃO NO CADERNO — 25/08/2026.**
+   * Em 15/08 duas corridas do mesmo sábado tomaram o mesmo domingo porque o caderno não
+   * tinha sido gravado entre elas, e o domingo 16/08 acabou com dois vídeos iguais no ar.
+   * Ver o aviso grande em `diaCheio`. O caderno continua a valer quando o canal não fala.
+   */
+  const naoCabe = async (quando) => {
+    const visto = await diaCheio(quando, { chave, caderno, slugAtual: SLUG, registar: log });
+    if (visto === undefined) {
+      /** ⚠️ A resposta de recurso passa pelo MESMO teto — ver `diaCheioNoCaderno`. */
+      const oc = diaCheioNoCaderno(quando, caderno, SLUG);
+      return oc ? { porque: `segundo o caderno esse dia já tem ${oc.jaLa} vídeo(s) e só cabem ${oc.cabem}`, jaLa: oc.jaLa } : null;
+    }
+    return visto.cheio
+      ? { porque: `esse dia já tem ${visto.jaLa} vídeo(s) longo(s) e só cabem ${visto.cabem}`, jaLa: visto.jaLa, excecao: visto.excecao }
+      : null;
+  };
+
+  let ocupado = await naoCabe(estreia);
   if (ocupado && marcada) {
     throw new Error(
-      `${emPortugues(estreia)} já é do vídeo "${ocupado.slug}" — um dia, um vídeo.\n`
+      `${emPortugues(estreia)}: ${ocupado.porque} — um dia, um vídeo.\n`
       + '   Dois vídeos do canal a estrear no mesmo dia competem um com o outro na lista de quem se inscreveu.\n'
       + '   Como a data foi escrita à mão (--publicar-em), isto para em vez de a mudar por baixo de si.',
     );
   }
   for (let semanas = 0; ocupado && semanas < 8; semanas += 1) {
-    log(`📅 ${emPortugues(estreia)} já é do vídeo "${ocupado.slug}" — a passar para o domingo seguinte.`);
+    log(`📅 ${emPortugues(estreia)}: ${ocupado.porque} — a passar para o domingo seguinte.`);
     estreia.setUTCDate(estreia.getUTCDate() + 7);
-    ocupado = estreiaOcupada(estreia, caderno, SLUG);
+    ocupado = await naoCabe(estreia); // eslint-disable-line no-await-in-loop
   }
   if (ocupado) {
     throw new Error(
       'oito domingos seguidos já têm dono — isto não é uma questão de data.\n'
       + '   Ver o caderno `.github/data/youtube-longos-published.json`.',
     );
+  }
+
+  /**
+   * ♦ A hora do segundo vídeo do mesmo domingo — ver `horaDaExcecao`.
+   * ⚠️ Uma data escrita à mão (`--publicar-em`) manda sempre, e nada aqui lhe toca.
+   */
+  if (!marcada) {
+    const { excecao } = quantosCabemNesteDia(estreia);
+    const jaLa = (await diaCheio(estreia, { chave, caderno, slugAtual: SLUG }))?.jaLa ?? 0;
+    const outraHora = horaDaExcecao(estreia, jaLa, excecao);
+    if (outraHora) {
+      log(`♦ este domingo já tem ${jaLa} vídeo — este entra às ${excecao.horaExtra} universais, para não competirem no mesmo minuto.`);
+      if (outraHora.getTime() <= Date.now()) throw new Error(`a hora da exceção (${outraHora.toISOString()}) já passou — o YouTube recusa.`);
+      estreia.setTime(outraHora.getTime());
+    }
   }
 
   const metadados = montarMetadados({
@@ -691,8 +1059,12 @@ async function principal() {
   if (!existsSync(caminhoMp4)) throw new Error(`o vídeo não está feito: ${caminhoMp4}`);
 
   // ── a subida ──
-  const chave = await getAccessToken();
-  log('\n🔑 chave do Google renovada.');
+  /**
+   * ⚠️ A chave já foi renovada lá em cima, para decidir a data contra o CANAL. Se de lá
+   * tiver vindo vazia (o Google não respondeu), tenta-se outra vez aqui — e aqui é a
+   * sério: sem chave não há subida nenhuma, e isso É avaria.
+   */
+  if (!chave) chave = await getAccessToken();
   log(`⬆️  a enviar ${(statSync(caminhoMp4).size / (1024 * 1024)).toFixed(1)} MB (privado, com estreia marcada)…`);
   const video = await subirVideo(chave, metadados, caminhoMp4);
   const endereco = `https://youtu.be/${video.id}`;
@@ -774,6 +1146,48 @@ async function principal() {
   };
   gravarCaderno(caderno);
   log(`📝 caderno próprio atualizado em ${TRACKING}`);
+
+  /**
+   * 🔴 **A FILA PASSA A APRENDER — 25/08/2026, e a falta disto custou três semanas.**
+   *
+   * ═══ O QUE ESTAVA ERRADO ═══
+   * O tema `dono-dois-homens-mesma-idade-mesmo-trabalho` foi ao ar em 09/08, DUAS vezes em
+   * 16/08 e outra em 30/08 — e o campo `estado` dele na fila **continuava a dizer
+   * "proposto"** enquanto isto era escrito. Nada, em ficheiro nenhum, alguma vez o
+   * reescreveu: procurou-se quem escrevia na fila e só havia quem lá acrescentava temas.
+   *
+   * A única marca de "já foi feito" era o caderno — e o caderno é gravado no fim, por um
+   * empurrão que **falhou três vezes seguidas em 15/08**. Uma marca só, no sítio mais
+   * frágil da corrida.
+   *
+   * ⚠️ **E o `prioridade` fixava-o à cabeça da fila para sempre.** Ele é a "oportunidade
+   * do dono" e foi feito para furar a fila UMA vez; sem ninguém o apagar, furava-a todas
+   * as semanas. Uma marca que nunca se gasta não é uma prioridade: é uma âncora.
+   *
+   * ⚠️ **Isto NÃO substitui o caderno; é a segunda marca.** Duas marcas em ficheiros
+   * diferentes, escritas no mesmo instante: para o tema voltar a repetir-se agora é
+   * preciso que as DUAS se percam.
+   */
+  try {
+    const naFilaAgora = (fila.videos || []).find((v) => v.slug === SLUG);
+    if (naFilaAgora) {
+      naFilaAgora.estado = 'publicado';
+      naFilaAgora.publicadoEm = new Date().toISOString();
+      naFilaAgora.videoId = video.id;
+      /** A oportunidade do dono gasta-se ao ser usada — ver o aviso acima. */
+      if (naFilaAgora.prioridade) {
+        delete naFilaAgora.prioridade;
+        log('   (a marca de prioridade deste tema foi gasta — ele já não fura a fila)');
+      }
+      writeFileSync(FILA, `${JSON.stringify(fila, null, 2)}\n`, 'utf-8');
+      log(`📝 fila de temas atualizada: "${SLUG}" passou a "publicado".`);
+    }
+  } catch (err) {
+    // ⚠️ NUNCA derruba: o vídeo já está em cima e o caderno já foi escrito. Isto é a
+    //    segunda marca, não a primeira — e uma segunda marca que derruba a corrida seria
+    //    pior do que não a ter.
+    log(`⚠️ não deu para marcar o tema como publicado na fila (${err.message}) — o caderno já tem o registo.`);
+  }
 
   log(`\n🔒 O vídeo está PRIVADO e estreia ${emPortugues(estreia)}.`);
   log(`   Há um dia inteiro para o ver no Studio antes de ir ao ar: ${endereco}`);

@@ -61,7 +61,30 @@ function lerJson(caminho, porOmissao) {
  * vídeo mas morreu antes de guardar o caderno faria o vídeo outra vez na semana seguinte.
  * Se só se olhasse ao caderno, um tema que o dono suspendeu voltaria a entrar.
  */
-export function proximoLongo({ fila = lerJson(FILA, { videos: [] }), caderno = lerJson(CADERNO, {}), saltar = [] } = {}) {
+/**
+ * 🔴 **UMA RESERVA QUE NÃO DEU VÍDEO EXPIRA — 25/08/2026.**
+ *
+ * Desde hoje o robô **reserva** o tema no caderno antes de trabalhar (ver `--reservar` em
+ * `upload-longo.js`), para que uma gravação falhada no fim não faça o tema repetir-se
+ * na semana seguinte — que foi o que aconteceu três semanas seguidas.
+ *
+ * ⚠️ **Mas uma marca no princípio traz o perigo simétrico:** se a corrida morrer a meio,
+ * o tema fica marcado como tomado e **nunca mais volta à fila**. Um tema que desaparece
+ * em silêncio é exactamente o modo de falha que se está a corrigir, virado do avesso.
+ *
+ * A régua: uma reserva **sem vídeo** cujo domingo **já passou** não vale nada. O domingo
+ * passou, vídeo não houve — o tema volta a estar por fazer. Corrige-se sozinha, sem
+ * ninguém ter de se lembrar de apagar uma linha (e *uma regra que depende de alguém se
+ * lembrar não é uma regra*).
+ */
+export function reservaAindaVale(registo, agora = new Date()) {
+  if (!registo) return false;
+  if (registo.videoId) return true;                    // já é vídeo, não é reserva
+  if (!registo.publishAt) return true;                 // sem data, não se pode dizer que caducou
+  return new Date(registo.publishAt).getTime() > new Date(agora).getTime();
+}
+
+export function proximoLongo({ fila = lerJson(FILA, { videos: [] }), caderno = lerJson(CADERNO, {}), saltar = [], agora = new Date() } = {}) {
   /**
    * 🔴 OS QUE JÁ SE TENTOU HOJE — 09/08/2026, ordem do dono: *"se existe algum bloqueio
    * ele pula para o próximo tema… mas nunca parar e não gerar o vídeo"*.
@@ -78,7 +101,8 @@ export function proximoLongo({ fila = lerJson(FILA, { videos: [] }), caderno = l
   const porFazer = (fila.videos || []).filter((v) => v && v.slug
     && !saltados.has(v.slug)
     && !JA_TRATADOS.has(String(v.estado || '').toLowerCase())
-    && !caderno[v.slug]);
+    /** ⚠️ Uma RESERVA caducada não tranca nada — ver `reservaAindaVale`. */
+    && !reservaAindaVale(caderno[v.slug], agora));
   /**
    * ♦ 06/08/2026 — A OPORTUNIDADE DO DONO FURA A FILA (IMPL20 §60).
    * ⚠️ **A marca, e não só a posição.** O tema do dono é escrito à cabeça do ficheiro, e

@@ -1,0 +1,29 @@
+{
+  "_leia": [
+    "OS DOMINGOS QUE ACEITAM MAIS DE UM VIDEO LONGO — e por omissao NENHUM aceita.",
+    "",
+    "A regra da casa e UM DOMINGO, UM VIDEO: dois videos do canal a estrear no mesmo dia",
+    "competem um com o outro na aba de quem se inscreveu. Ela continua ligada e continua a",
+    "valer para todos os domingos que NAO estejam escritos aqui.",
+    "",
+    "Este ficheiro existe para a furar de uma maneira honesta: por escrito, com motivo, com",
+    "quem autorizou e COM PRAZO. Uma excecao sem prazo deixa de ser excecao e passa a ser a",
+    "regra nova, em silencio — e e assim que uma casa perde as suas proprias travas.",
+    "",
+    "  quantos    quantos videos LONGOS aquele dia aceita (por omissao 1)",
+    "  horaExtra  a hora universal a que o SEGUNDO video estreia, para nao competirem no",
+    "             mesmo minuto. 22:00 universais = 19h00 do Brasil.",
+    "  validoAte  depois deste dia a linha deixa de contar, sozinha. Sem ela, nao conta.",
+    "",
+    "Quem le isto: `quantosCabemNesteDia` em src/scripts/youtube/upload-longo.js"
+  ],
+  "domingos": {
+    "2026-08-30": {
+      "quantos": 2,
+      "horaExtra": "19:00",
+      "porque": "Autorizado pelo dono em 25/08/2026. O video ja agendado para este domingo repete o mesmo tema e a mesma capa pela 3a vez (as corridas de 15 e 22/08 falharam e o caderno nunca foi gravado). Ele quis manter esse e ter, ao lado, um video NOVO feito pelo robo sozinho — para provar no ar que a producao automatica voltou a funcionar.",
+      "quemAutorizou": "Ed Flavio",
+      "validoAte": "2026-08-30"
+    }
+  }
+}

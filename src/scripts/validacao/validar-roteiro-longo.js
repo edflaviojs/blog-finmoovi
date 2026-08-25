@@ -60,6 +60,23 @@ import { buildPromptLeitorBloco, buildPromptLeitorCapitulo } from '../youtube/li
 let passou = 0;
 let falhou = 0;
 const falhas = [];
+const avisos = [];
+
+/**
+ * 🔴 **A PROVA DO ACERVO AVISA; A PROVA DO MOTOR TRAVA — 25/08/2026.**
+ *
+ * Em 22/08 as três corridas do vídeo longo morreram na prova dos títulos reais e o canal
+ * ficou sem vídeo no domingo 23/08. A prova estava certa em existir e o conserto de 24/08
+ * (`0c780aeb`) endireitou-a — mas **o castigo continuava errado**: o acervo em
+ * `.github/data/youtube-capitulos.json` é enchido todos os dias pelo detetive de
+ * tendências, com títulos de canais que não são nossos. Uma surpresa lá dentro não pode
+ * custar a semana de vídeo.
+ *
+ * Com `--sem-acervo` (como o robô do vídeo a chama) estas provas avisam. Sem a opção
+ * (como a conferência diária a chama) continuam vermelhas e o email sai. Ver o aviso
+ * gémeo em `validar-publicacao-longo.js`.
+ */
+const SEM_ACERVO = process.argv.includes('--sem-acervo');
 
 function ok(nome, condicao, detalhe = '') {
   if (condicao) {
@@ -70,6 +87,14 @@ function ok(nome, condicao, detalhe = '') {
     falhas.push(`${nome}${detalhe ? ` — ${detalhe}` : ''}`);
     console.log(`  ❌ ${nome}${detalhe ? ` — ${detalhe}` : ''}`);
   }
+}
+
+/** Uma prova que lê o acervo que OUTROS robôs enchem. Ver o aviso acima. */
+function acervo(nome, condicao, detalhe = '') {
+  if (condicao) { passou++; console.log(`  ✅ ${nome}`); return; }
+  if (!SEM_ACERVO) { ok(nome, condicao, detalhe); return; }
+  avisos.push(`${nome}${detalhe ? ` — ${detalhe}` : ''}`);
+  console.log(`  ⚠️  ${nome}${detalhe ? ` — ${detalhe}` : ''}  (acervo — avisa, não trava o vídeo)`);
 }
 
 const semCopia = (v) => ({ ...v, erros: v.erros.filter((e) => !/copiou o exemplo/.test(e)) });
@@ -266,7 +291,13 @@ console.log('   (a lição de 03/08: prova sintética passa, o caso real falha)\
   });
   const recusados = titulos.filter((t) => !mapaCom(t).ok);
   const esperados = titulos.filter((t) => ehTituloGenerico(t) || contarPalavras(t) > MAX_PALAVRAS_TITULO);
-  ok(
+  /**
+   * ⚠️ **`acervo` E NÃO `ok`, e é esta linha que impede o próximo domingo vazio.** O
+   * conserto de 24/08 endireitou a régua; esta linha endireita o CASTIGO. Os títulos vêm
+   * de canais que não são nossos e mudam todos os dias — a próxima surpresa vai aparecer,
+   * e quando aparecer o vídeo sai na mesma e o aviso fica escrito.
+   */
+  acervo(
     `os títulos recusados são EXATAMENTE os que a régua da casa manda recusar — genéricos ou compridos (${recusados.length} recusados, ${esperados.length} esperados, ${titulos.length} no acervo)`,
     recusados.length === esperados.length && recusados.every((t) => esperados.includes(t)),
     `recusados: ${recusados.join(' · ')}`,
@@ -1218,10 +1249,15 @@ console.log('\nO ELENCO E A FUNÇÃO DO APP NÃO SE REPETEM');
 
 // ═══ RESULTADO ═══════════════════════════════════════════════════════════════
 console.log(`\n${'═'.repeat(72)}`);
-console.log(`  ${passou} provas verdes · ${falhou} vermelhas`);
+console.log(`  ${passou} provas verdes · ${falhou} vermelhas${avisos.length ? ` · ${avisos.length} aviso(s) do acervo` : ''}`);
 if (falhou) {
   console.log('\n  ❌ AS QUE FALHARAM:');
   falhas.forEach((f) => console.log(`     · ${f}`));
+}
+if (avisos.length) {
+  console.log('\n  ⚠️  O ACERVO ANDA ESTRANHO (não trava o vídeo, mas é para olhar):');
+  avisos.forEach((a) => console.log(`     · ${a}`));
+  avisos.forEach((a) => console.log(`::warning::acervo do vídeo longo: ${a}`));
 }
 console.log(`${'═'.repeat(72)}\n`);
 process.exit(falhou ? 1 : 0);

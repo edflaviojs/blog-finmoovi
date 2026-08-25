@@ -77,6 +77,38 @@ const TELA_FINAL_FRAMES = 300;
 let passou = 0;
 let falhou = 0;
 const falhas = [];
+const avisos = [];
+
+/**
+ * 🔴 **AS PROVAS DO ACERVO NÃO PODEM MATAR A PRODUÇÃO DO VÍDEO — 25/08/2026.**
+ *
+ * ═══ O CASO REAL, MEDIDO ═══
+ * Em 22/08 as **três** corridas do vídeo longo morreram aqui, e o canal ficou sem vídeo
+ * ao domingo 23/08. A causa não tinha nada a ver com vídeo: o detetive de tendências
+ * trouxe, em 17/08, títulos reais novos (um de 15 palavras, três a começar por "Resumo"),
+ * e uma prova que os lia ficou vermelha. `set -euo pipefail` fez o resto.
+ *
+ * ⚠️ **É a família de defeito nº 1 desta casa a aparecer de um ângulo novo:** uma prova
+ * escrita contra um acervo de 40 títulos a correr, calada, contra um acervo de 193 que
+ * cresce todos os dias. E o castigo era desproporcionado — perder a semana inteira de
+ * vídeo por causa de um ficheiro que OUTRO robô escreve sozinho.
+ *
+ * ═══ A REGRA QUE FICA ═══
+ * Há duas espécies de prova aqui dentro, e elas merecem castigos diferentes:
+ *   · **prova do MOTOR** (`ok`) — só lê código e dados de mesa. Se falha, o programa está
+ *     partido e o vídeo não pode sair. Vermelho, sempre.
+ *   · **prova do ACERVO** (`acervo`) — lê ficheiros de `.github/data/` que outros robôs
+ *     enchem todos os dias. Se falha, há matéria-prima estranha — e isso é para alguém
+ *     olhar, **não para o canal ficar sem vídeo**.
+ *
+ * Com `--sem-acervo` (que é como o robô do vídeo a chama), a prova do acervo AVISA e não
+ * conta como vermelha. Sem a opção — que é como a conferência diária a chama — ela é
+ * vermelha como qualquer outra, e o alarme chega na mesma.
+ *
+ * ⚠️ **Isto não é baixar a régua: é mudar quem leva o castigo.** A prova continua a correr
+ * e a queixar-se nas duas vias; o que deixa de acontecer é o domingo ficar vazio.
+ */
+const SEM_ACERVO = process.argv.includes('--sem-acervo');
 
 function ok(nome, condicao, detalhe = '') {
   if (condicao) {
@@ -87,6 +119,14 @@ function ok(nome, condicao, detalhe = '') {
     falhas.push(`${nome}${detalhe ? ` — ${detalhe}` : ''}`);
     console.log(`  ❌ ${nome}${detalhe ? ` — ${detalhe}` : ''}`);
   }
+}
+
+/** Uma prova que lê o acervo que outros robôs enchem. Ver o aviso acima. */
+function acervo(nome, condicao, detalhe = '') {
+  if (condicao) { passou++; console.log(`  ✅ ${nome}`); return; }
+  if (!SEM_ACERVO) { ok(nome, condicao, detalhe); return; }
+  avisos.push(`${nome}${detalhe ? ` — ${detalhe}` : ''}`);
+  console.log(`  ⚠️  ${nome}${detalhe ? ` — ${detalhe}` : ''}  (acervo — avisa, não trava o vídeo)`);
 }
 
 // ═══ UM VÍDEO DE MESA — 12 cenas, 3 capítulos, feito à mão para não depender de nada ═══
@@ -572,7 +612,9 @@ console.log('\n4. AS TRAVAS QUE PARAM TUDO');
     'sem título aprovado na fila, não há título nenhum (e a subida pára)',
     tituloAprovado('um-video-que-nao-existe', { videos: [] }) === null,
   );
-  ok(
+  /** ⚠️ ACERVO: o dono reescreve títulos na fila quando quer. Um título mudado não é um
+   *  vídeo partido — avisa, não trava. Ver o cabeçalho de `acervo`. */
+  acervo(
     'o título do piloto é o que o dono aceitou, à letra',
     tituloAprovado('sair-do-vermelho', JSON.parse(readFileSync(join(RAIZ, '.github', 'data', 'youtube-longos.json'), 'utf-8')))
       === 'Dívida do cartão: como sair do vermelho sem apertar mais o mês',
@@ -605,7 +647,10 @@ console.log('\n4. AS TRAVAS QUE PARAM TUDO');
       proximo === null || !caderno[proximo.slug],
       proximo ? `devolveu "${proximo.slug}"` : 'a fila está vazia',
     );
-    ok(
+    /** ⚠️ ACERVO: quem enche a fila quando ela seca é o detetive de tendências, sozinho.
+     *  Um tema sem título é um tema que não sobe — mas os OUTROS sobem, e o robô salta-o
+     *  na volta seguinte. Não vale a semana de vídeo. */
+    acervo(
       'e todo o vídeo por fazer na fila já traz um título aprovado',
       (filaReal.videos || [])
         .filter((v) => !caderno[v.slug] && !['publicado', 'publicado-a-mao', 'suspenso', 'reprovado'].includes(String(v.estado || '')))
@@ -1141,10 +1186,13 @@ console.log('\n7. OS TEMAS TIRADOS DOS VIRAIS');
   const tendencias = existsSync(join(RAIZ, '.github', 'data', 'youtube-trends.json'))
     ? JSON.parse(readFileSync(join(RAIZ, '.github', 'data', 'youtube-trends.json'), 'utf-8'))
     : null;
-  ok('o detetive continua a guardar a lista dos vídeos LONGOS virais',
+  /** ⚠️ ACERVO: esta colheita é reescrita TODOS OS DIAS por outro robô, com vídeos de
+   *  canais que não são nossos. Foi uma surpresa desta família que deixou 23/08 sem
+   *  vídeo. Avisa, não trava — ver o cabeçalho de `acervo`. */
+  acervo('o detetive continua a guardar a lista dos vídeos LONGOS virais',
     Array.isArray(tendencias?.topLongos) && tendencias.topLongos.length > 0,
     `topLongos: ${tendencias?.topLongos?.length ?? 'não existe'}`);
-  ok('e cada um traz o que é preciso para se decidir sobre ele',
+  acervo('e cada um traz o que é preciso para se decidir sobre ele',
     (tendencias?.topLongos || []).every((v) => v.videoId && v.title && Number.isFinite(v.duracaoSeg)));
 }
 
@@ -2010,12 +2058,261 @@ console.log('\n🔤 O LEITOR DE TEXTO — e a ordem que poupa créditos\n');
     /\['en', 'es'\]\.includes\(l\)/.test(srt));
 }
 
+// ═══ 20. O DOMINGO MEDE-SE NO CANAL, E NÃO NO CADERNO (25/08/2026) ═══════════
+/**
+ * 🔴 **AS TRÊS SEMANAS DE VÍDEO REPETIDO, CONGELADAS EM PROVAS.**
+ *
+ * O que aconteceu, medido nas corridas reais:
+ *   · **16/08** — dois vídeos com o mesmo tema e a mesma capa. As três corridas de 15/08
+ *     escolheram o mesmo tema; duas subiram-no. A trava "um domingo, um vídeo" estava
+ *     ligada e não apanhou nada, porque **pergunta ao ficheiro** — e o ficheiro não tinha
+ *     sido gravado (o empurrão foi recusado três vezes, com o vídeo já em cima).
+ *   · **23/08** — nenhum vídeo. As três corridas morreram numa prova que lê títulos de
+ *     canais que não são nossos.
+ *   · **30/08** — o mesmo tema pela terceira vez, e por disparo à mão.
+ *
+ * ⚠️ **Nenhum destes três domingos deu um único alarme.** O dono descobriu-os no Studio.
+ *
+ * Estas provas guardam as travas que nasceram daí. Ver [[verdade-versus-gosto]]: tudo o
+ * que está aqui é verdade que se mede com código — dias, contagens, durações — nunca gosto.
+ */
+console.log('\n20. O DOMINGO MEDE-SE NO CANAL (as 3 semanas de vídeo repetido)');
+
+{
+  const {
+    duracaoEmSegundos, diaNoAr, quantosCabemNesteDia, reservasDoDia, diaCheio, horaDaExcecao,
+  } = await import('../youtube/upload-longo.js');
+  const { reservaAindaVale, proximoLongo: proximo2 } = await import('../youtube/pick-next-longo.js');
+  const { conferirODomingo } = await import('../youtube/guarda.js');
+
+  // ── a duração, que é o que separa um vídeo longo de um Short ──
+  ok('a duração do YouTube é lida em segundos', duracaoEmSegundos('PT6M12S') === 372, String(duracaoEmSegundos('PT6M12S')));
+  ok('e aguenta horas e segundos soltos', duracaoEmSegundos('PT1H2M3S') === 3723 && duracaoEmSegundos('PT58S') === 58);
+  ok('e o que não souber ler vale zero (nunca finge que é um vídeo longo)', duracaoEmSegundos('lixo') === 0 && duracaoEmSegundos(null) === 0);
+
+  /**
+   * ⚠️ SÃO DOIS CAMPOS DIFERENTES e confundi-los daria a resposta errada todos os
+   * sábados: um vídeo privado com estreia marcada ocupa o dia da ESTREIA, não o dia em
+   * que foi enviado.
+   */
+  ok('um vídeo privado com estreia marcada ocupa o dia da ESTREIA',
+    diaNoAr({ status: { privacyStatus: 'private', publishAt: '2026-08-30T22:00:00Z' }, snippet: { publishedAt: '2026-08-24T11:00:00Z' } }) === '2026-08-30');
+  ok('um vídeo já público ocupa o dia em que foi publicado',
+    diaNoAr({ status: { privacyStatus: 'public' }, snippet: { publishedAt: '2026-08-16T22:00:00Z' } }) === '2026-08-16');
+  ok('e um privado SEM hora marcada não ocupa dia nenhum (não vai ao ar)',
+    diaNoAr({ status: { privacyStatus: 'private' }, snippet: { publishedAt: '2026-08-24T11:00:00Z' } }) === null);
+
+  // ── a exceção escrita, e o prazo dela ──
+  const fichExcecao = join(tmpdir(), `excecoes-de-mesa-${process.pid}.json`);
+  writeFileSync(fichExcecao, JSON.stringify({
+    domingos: {
+      '2026-08-30': { quantos: 2, horaExtra: '19:00', porque: 'de mesa', validoAte: '2026-08-30' },
+      '2026-09-13': { quantos: 3, porque: 'sem prazo escrito' },
+    },
+  }), 'utf-8');
+  const cabem = (dia, quando) => quantosCabemNesteDia(new Date(dia), { ficheiro: fichExcecao, agora: new Date(quando) });
+  ok('por omissão um domingo aceita UM vídeo longo', cabem('2026-09-06T22:00:00Z', '2026-09-05T02:00:00Z').cabem === 1);
+  ok('um domingo com exceção válida aceita os que ela disser', cabem('2026-08-30T22:00:00Z', '2026-08-25T12:00:00Z').cabem === 2);
+  /**
+   * 🔴 **A EXCEÇÃO EXPIRA, E ESTA É A PROVA QUE IMPEDE A TRAVA DE SE PERDER.** Uma
+   * exceção sem prazo deixa de ser exceção e passa a ser a regra nova, em silêncio.
+   */
+  ok('passada a data, a exceção deixa de contar sozinha', cabem('2026-08-30T22:00:00Z', '2026-09-05T02:00:00Z').cabem === 1);
+  ok('e uma exceção SEM prazo escrito nunca chega a contar', cabem('2026-09-13T22:00:00Z', '2026-09-12T02:00:00Z').cabem === 1);
+
+  /** ⚠️ A regra vale para o ficheiro a sério: toda a exceção tem de dizer porquê e até quando. */
+  {
+    const real = join(RAIZ, '.github', 'data', 'longo-domingos-duplos.json');
+    const dados = existsSync(real) ? JSON.parse(readFileSync(real, 'utf-8')) : { domingos: {} };
+    ok('no ficheiro a sério, toda a exceção traz motivo e prazo',
+      Object.entries(dados.domingos || {}).every(([, e]) => e.porque && e.validoAte),
+      Object.keys(dados.domingos || {}).join(' · '));
+  }
+
+  // ── as reservas, que o canal não pode ver ──
+  const cadernoDeMesa = {
+    ja: { videoId: 'X1', publishAt: '2026-08-30T22:00:00.000Z' },
+    reservado: { estado: 'reservado', publishAt: '2026-08-30T19:00:00.000Z' },
+    outroDia: { estado: 'reservado', publishAt: '2026-09-06T22:00:00.000Z' },
+  };
+  ok('uma reserva sem vídeo conta como ocupante do dia',
+    reservasDoDia(new Date('2026-08-30T22:00:00Z'), cadernoDeMesa).join() === 'reservado');
+  ok('mas uma linha que JÁ tem vídeo não conta duas vezes (o canal já a mostra)',
+    !reservasDoDia(new Date('2026-08-30T22:00:00Z'), cadernoDeMesa).includes('ja'));
+  ok('e um vídeo nunca se ocupa a si próprio',
+    reservasDoDia(new Date('2026-08-30T22:00:00Z'), cadernoDeMesa, 'reservado').length === 0);
+
+  // ── a decisão do dia, contra o canal ──
+  const canal = (videos) => async () => videos;
+  /**
+   * ⚠️ **UM DOMINGO SEM EXCEÇÃO ESCRITA, e a escolha custou duas provas vermelhas.**
+   * A 1ª versão destas provas usava 30/08 — que é justamente o domingo que o dono
+   * autorizou a levar dois vídeos. Elas ficavam vermelhas hoje e ficariam **verdes
+   * sozinhas depois de 30/08**, quando a exceção expirasse. É medir um ESTADO passageiro
+   * em vez de uma REGRA: a prova tem de valer no dia em que se escreve e daqui a um ano.
+   */
+  const DOMINGO_NORMAL = '2026-09-06T22:00:00Z';
+  const UM_LONGO = [{ id: 'WaXL2ST00eE', titulo: 'o que já lá está', duracaoSeg: 369, privacidade: 'private', dia: '2026-09-06' }];
+  const UM_SHORT = [{ id: 'S1', titulo: 'um Short', duracaoSeg: 58, privacidade: 'public', dia: '2026-09-06' }];
+
+  ok('com o domingo vazio, o robô pode trabalhar',
+    (await diaCheio(new Date(DOMINGO_NORMAL), { chave: 'x', caderno: {}, listar: canal([]) }))?.cheio === false);
+  ok('com um vídeo longo já lá, o domingo está cheio',
+    (await diaCheio(new Date(DOMINGO_NORMAL), { chave: 'x', caderno: {}, listar: canal(UM_LONGO) }))?.cheio === true);
+
+  /**
+   * 🔴 **O SHORT NÃO OCUPA O DOMINGO — e esta prova apanhou o defeito a sério, em
+   * 25/08/2026, no minuto em que foi escrita.** O corte da duração vivia só dentro de
+   * `longosDoCanal`; bastou entregar a esta função uma lista não filtrada para um Short
+   * de 58 segundos tomar o dia. E o canal publica Shorts **todos os dias** — o vídeo
+   * longo nunca mais se faria, e a corrida acabaria a VERDE a dizer "o dia já tem dono".
+   * O corte passou a viver também onde a decisão é tomada.
+   */
+  ok('🔴 um SHORT nunca ocupa o domingo do vídeo longo',
+    (await diaCheio(new Date('2026-09-06T22:00:00Z'), { chave: 'x', caderno: {}, listar: canal(UM_SHORT) }))?.cheio === false);
+
+  /**
+   * 🔴 **O CASO DE 15/08, EXACTAMENTE COMO ACONTECEU.** A corrida das 02:52 subiu o vídeo
+   * e não conseguiu gravar o caderno. Para a corrida das 12:50 o caderno dizia que o
+   * domingo estava vazio — e estava a dizer a verdade sobre o ficheiro e uma mentira
+   * sobre o canal. Com a pergunta feita ao canal, a segunda corrida desiste.
+   */
+  ok('🔴 com o CADERNO VAZIO e o vídeo já no canal, a segunda corrida do dia desiste',
+    (await diaCheio(new Date(DOMINGO_NORMAL), { chave: 'x', caderno: {}, slugAtual: 'outro-tema', listar: canal(UM_LONGO) }))?.cheio === true);
+
+  ok('um vídeo não se ocupa a si próprio no canal',
+    (await diaCheio(new Date(DOMINGO_NORMAL), {
+      chave: 'x', caderno: { meu: { videoId: 'WaXL2ST00eE' } }, slugAtual: 'meu', listar: canal(UM_LONGO),
+    }))?.cheio === false);
+
+  /**
+   * ⚠️ **NÃO VER NÃO É AUTORIZAR.** Sem chave, ou com o YouTube em baixo, isto devolve
+   * `undefined` e quem chama cai no caderno, que é o conservador. Um guarda cego que
+   * dissesse "pode ir" era pior do que não haver guarda.
+   */
+  ok('sem chave, não decide nada — devolve "não vi"',
+    (await diaCheio(new Date('2026-09-06T22:00:00Z'), { chave: null, caderno: {} })) === undefined);
+  ok('e se o YouTube rebentar, também não decide',
+    (await diaCheio(new Date('2026-09-06T22:00:00Z'), {
+      chave: 'x', caderno: {}, listar: async () => { throw new Error('502'); },
+    })) === undefined);
+
+  /**
+   * 🔴 **A RESPOSTA DE RECURSO PASSA PELO MESMO TETO — apanhado em 25/08/2026 a correr
+   * o comando exacto do robô, não a ler o código.**
+   *
+   * Quando o YouTube não responde, a decisão cai no caderno. E a resposta do caderno era
+   * um sim/não escrito quando "um domingo, um vídeo" não tinha excepções: num domingo que
+   * o dono autorizou POR ESCRITO a levar dois vídeos, uma gaguez de rede na sexta à noite
+   * fazia o robô desistir — a autorização dele apagada por um erro de rede.
+   */
+  {
+    const { diaCheioNoCaderno } = await import('../youtube/upload-longo.js');
+    const umNoDia = { outro: { videoId: 'V1', publishAt: '2026-08-30T22:00:00.000Z' } };
+    const teto = { ficheiro: fichExcecao, agora: new Date('2026-08-25T12:00:00Z') };
+    ok('sem exceção, um vídeo no caderno enche o dia',
+      Boolean(diaCheioNoCaderno(new Date('2026-09-06T22:00:00Z'), { outro: { videoId: 'V1', publishAt: '2026-09-06T22:00:00.000Z' } }, 'eu')));
+    ok('🔴 mas com a exceção escrita, o caderno também deixa entrar o segundo',
+      diaCheioNoCaderno(new Date('2026-08-30T22:00:00Z'), umNoDia, 'eu', teto) === null);
+    ok('e ao segundo o dia fecha-se na mesma',
+      Boolean(diaCheioNoCaderno(new Date('2026-08-30T22:00:00Z'), {
+        ...umNoDia, maisUm: { videoId: 'V2', publishAt: '2026-08-30T19:00:00.000Z' },
+      }, 'eu', teto)));
+    /** ⚠️ E uma linha antiga sem `publishAt` conta pelo dia em que foi enviada. */
+    ok('uma linha só com a data de envio também ocupa o dia dela',
+      Boolean(diaCheioNoCaderno(new Date('2026-09-06T22:00:00Z'), { velho: { videoId: 'V9', uploadedAt: '2026-09-06T10:00:00.000Z' } }, 'eu')));
+  }
+
+  // ── o segundo vídeo do mesmo domingo não estreia ao mesmo minuto ──
+  {
+    const domingo = new Date('2026-08-30T22:00:00.000Z');
+    const exc = { quantos: 2, horaExtra: '19:00' };
+    ok('sendo o SEGUNDO do dia, entra à hora escrita na exceção',
+      horaDaExcecao(domingo, 1, exc)?.toISOString() === '2026-08-30T19:00:00.000Z',
+      String(horaDaExcecao(domingo, 1, exc)?.toISOString()));
+    ok('sendo o PRIMEIRO, fica na hora de sempre (19h00 do Brasil)', horaDaExcecao(domingo, 0, exc) === null);
+    ok('e sem exceção nenhuma, nada muda', horaDaExcecao(domingo, 1, null) === null);
+    ok('uma hora que não se saiba ler não mexe na estreia', horaDaExcecao(domingo, 1, { horaExtra: 'às tantas' }) === null);
+    /** ⚠️ E o dia NÃO pode mudar ao trocar a hora — seria marcar para outro domingo em silêncio. */
+    ok('a troca de hora nunca muda o DIA', horaDaExcecao(domingo, 1, exc)?.toISOString().slice(0, 10) === '2026-08-30');
+  }
+
+  // ── a reserva que expira sozinha ──
+  const filaDeDuas = { videos: [{ slug: 'a', titulo: 'A', tema: 't' }, { slug: 'b', titulo: 'B', tema: 't' }] };
+  const reserva = { a: { estado: 'reservado', publishAt: '2026-08-30T22:00:00Z' } };
+  ok('uma reserva VIVA tira o tema da fila (nenhuma outra corrida lhe toca)',
+    proximo2({ fila: filaDeDuas, caderno: reserva, agora: new Date('2026-08-29T02:00:00Z') })?.slug === 'b');
+  /**
+   * 🔴 **E ESTA É A TRAVA SIMÉTRICA.** Marcar no princípio conserta a repetição e traz o
+   * perigo do avesso: uma corrida que morra a meio deixaria o tema marcado como tomado
+   * **para sempre**, e ele desaparecia da fila em silêncio — o modo de falha que esta
+   * casa mais paga. O domingo passou sem vídeo: a reserva não vale nada.
+   */
+  ok('🔴 uma reserva cujo domingo JÁ PASSOU sem vídeo devolve o tema à fila',
+    proximo2({ fila: filaDeDuas, caderno: reserva, agora: new Date('2026-09-05T02:00:00Z') })?.slug === 'a');
+  ok('mas uma linha com vídeo continua a valer para sempre',
+    reservaAindaVale({ videoId: 'X', publishAt: '2020-01-01T00:00:00Z' }, new Date('2026-09-05T02:00:00Z')) === true);
+
+  // ── o vigia do domingo ──
+  const doDomingo = [{ id: 'V', titulo: 'o vídeo da semana', duracaoSeg: 400, privacidade: 'private', dia: '2026-08-30' }];
+  ok('ao domingo, sem vídeo longo no canal, o guarda grita',
+    conferirODomingo([], new Date('2026-08-30T08:10:00Z')).length === 1);
+  ok('ao domingo, com o vídeo lá, cala-se',
+    conferirODomingo(doDomingo, new Date('2026-08-30T08:10:00Z')).length === 0);
+  /**
+   * ⚠️ **SÓ AO DOMINGO, e isso é de propósito.** Perguntar isto à terça daria alarme
+   * todos os dias da semana — e um alarme que toca sempre ensina quem o lê a ignorá-lo.
+   */
+  ok('e em dia de semana não pergunta nada',
+    conferirODomingo([], new Date('2026-08-25T08:10:00Z')).length === 0);
+
+  // ── as ligações no robô, que é onde as regras se perdem ──
+  /**
+   * 🔴 **A REGRA CERTA NO FICHEIRO ERRADO NÃO SERVE DE NADA.** Metade dos defeitos desta
+   * casa foi código bom que ninguém chamava (a capa esteve escrita e parada dois dias).
+   * Estas quatro linhas provam que o robô CHAMA o que foi escrito.
+   */
+  const robo = readFileSync(join(RAIZ, '.github', 'workflows', 'youtube-longo.yml'), 'utf-8');
+  ok('o robô reserva o tema ANTES de gastar os 40 minutos', /upload-longo\.js --reservar --slug/.test(robo));
+  /**
+   * ⚠️ **DUAS RESERVAS, E AS DUAS SÃO PRECISAS.** A primeira é a do tema escolhido, feita
+   * antes de gastar um cêntimo. A segunda é a do tema que REALMENTE ganhou — porque o
+   * passo do guião pode trocar de tema pelo caminho, e aí a primeira ficava no tema
+   * errado. A segunda viaja no commit das cenas, sem empurrão novo.
+   */
+  ok('e reserva outra vez o tema que ganhou, se ele tiver mudado pelo caminho',
+    (robo.match(/upload-longo\.js --reservar --slug/g) || []).length >= 2);
+  ok('e empurra a reserva no mesmo commit dos temas (um só, para não disputarem o ramo)',
+    /git add .*youtube-longos\.json .*youtube-longos-published\.json/.test(robo));
+  ok('as provas do vídeo correm com o acervo a AVISAR, não a travar',
+    /validar-roteiro-longo\.js --sem-acervo/.test(robo) && /validar-publicacao-longo\.js --sem-acervo/.test(robo));
+  const guardaYml = readFileSync(join(RAIZ, '.github', 'workflows', 'youtube-guarda.yml'), 'utf-8');
+  ok('mas a conferência diária corre-as INTEIRAS — o alarme não se perde',
+    /validar-roteiro-longo\.js >/.test(guardaYml) && /steps\.acervo\.outputs\.alarme == 'sim'/.test(guardaYml));
+
+  /** ⚠️ E a segunda marca: a fila tem de aprender que o tema foi publicado. */
+  const fonteUpload = readFileSync(join(RAIZ, 'src', 'scripts', 'youtube', 'upload-longo.js'), 'utf-8');
+  ok('ao publicar, o tema é marcado na fila e a prioridade dele gasta-se',
+    /estado = 'publicado'/.test(fonteUpload) && /delete naFilaAgora\.prioridade/.test(fonteUpload));
+}
+
 // ═══ RESULTADO ═══════════════════════════════════════════════════════════════
 console.log(`\n${'═'.repeat(72)}`);
-console.log(`  ${passou} provas verdes · ${falhou} vermelhas`);
+console.log(`  ${passou} provas verdes · ${falhou} vermelhas${avisos.length ? ` · ${avisos.length} aviso(s) do acervo` : ''}`);
 if (falhou) {
   console.log('\n  ❌ AS QUE FALHARAM:');
   falhas.forEach((f) => console.log(`     · ${f}`));
+}
+/**
+ * ⚠️ **O AVISO TEM DE SER VISÍVEL, senão isto era só uma prova desligada.** Ele sai
+ * também como aviso do GitHub, que é o que aparece no topo da corrida sem ninguém
+ * abrir o registo — e a conferência diária (que corre SEM `--sem-acervo`) fica vermelha
+ * pelo mesmo motivo e manda email. Duas campainhas, nenhuma delas o domingo vazio.
+ */
+if (avisos.length) {
+  console.log('\n  ⚠️  O ACERVO ANDA ESTRANHO (não trava o vídeo, mas é para olhar):');
+  avisos.forEach((a) => console.log(`     · ${a}`));
+  avisos.forEach((a) => console.log(`::warning::acervo do vídeo longo: ${a}`));
 }
 console.log(`${'═'.repeat(72)}\n`);
 process.exit(falhou ? 1 : 0);
