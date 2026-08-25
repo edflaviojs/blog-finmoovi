@@ -1,0 +1,214 @@
+{
+  "slug": "reserva-emergencia-quanto",
+  "term": "Reserva de emergência: quanto VOCÊ precisa?",
+  "category": "controle",
+  "keyword": "emergência",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "*Sabe quanto você precisa* guardar para uma emergência?"
+  },
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "bifurcacao",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Sabe quanto você precisa guardar para uma emergência? Eu somei os seus gastos e deu seis meses de contas.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "quanto",
+          "visual": {
+            "type": "statement",
+            "text": "Quanto guardar?"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "emergência",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          }
+        },
+        {
+          "anchor": "meses",
+          "visual": {
+            "type": "number",
+            "text": "6 meses"
+          },
+          "sfx": "coin"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "É o aluguel, o mercado, o remédio e aquele conserto urgente de quando a vida aperta.",
+      "durationSec": 6.2,
+      "shots": [
+        {
+          "anchor": "aluguel",
+          "visual": {
+            "type": "list",
+            "text": "Aluguel + mercado"
+          }
+        },
+        {
+          "anchor": "remédio",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          },
+          "sfx": "click"
+        },
+        {
+          "anchor": "urgente",
+          "visual": {
+            "type": "statement",
+            "text": "Imprevistos chegam"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "E aí você olha e vê que três mil e quinhentos reais por mês viram vinte e um mil reais.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "olha",
+          "visual": {
+            "type": "statement",
+            "text": "Faça a conta"
+          },
+          "sfx": "typewriter"
+        },
+        {
+          "anchor": "três",
+          "visual": {
+            "type": "number",
+            "text": "R$ 3.500"
+          }
+        },
+        {
+          "anchor": "vinte",
+          "visual": {
+            "type": "counter",
+            "from": 3500,
+            "to": 21000,
+            "prefix": "R$"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei esses gastos lá no FinMoovi e ele me mostrou na hora esses seis meses de reserva.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "joguei",
+          "visual": {
+            "type": "app",
+            "app": "calculadora",
+            "note": "Tela mostrando os gastos inseridos e cálculo da reserva"
+          }
+        },
+        {
+          "anchor": "mostrou",
+          "visual": {
+            "type": "chart",
+            "text": "Reserva ideal"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "seis",
+          "visual": {
+            "type": "number",
+            "text": "6 meses"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Começar é simples. Quer calcular a sua? Procura o FinMoovi. São sete dias grátis.",
+      "durationSec": 5.4,
+      "shots": [
+        {
+          "anchor": "Começar",
+          "visual": {
+            "type": "statement",
+            "text": "Comece agora"
+          }
+        },
+        {
+          "anchor": "calcular",
+          "visual": {
+            "type": "icon",
+            "icon": "target"
+          }
+        },
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Então, você precisa guardar de três a seis meses dos seus gastos. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "precisa",
+          "visual": {
+            "type": "statement",
+            "text": "Guarde 3 a 6 meses"
+          }
+        },
+        {
+          "anchor": "três",
+          "visual": {
+            "type": "number",
+            "text": "3-6 meses"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "icon",
+            "icon": "shield"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Calcule sua reserva grátis",
+    "target": "app"
+  },
+  "totalDurationSec": 40.8
+}
