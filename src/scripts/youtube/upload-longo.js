@@ -474,6 +474,27 @@ export async function diaCheio(estreia, {
     registar(`   ⚠️ não deu para perguntar ao canal (${err.message}) — decide o caderno.`);
     return undefined;
   }
+  /**
+   * 🔴 **UMA LISTA VAZIA NÃO É UM CANAL VAZIO — 25/08/2026.**
+   *
+   * Este pedido só se queixa quando **rebenta**. Se o YouTube devolver uma prateleira
+   * vazia — endereço trocado, permissão em falta, resposta cortada — ele não lança erro
+   * nenhum: devolve zero vídeos, e zero vídeos quer dizer *"o domingo está livre"*.
+   * **A trava desligava-se sozinha, em silêncio, e a corrida acabava a verde.** É a
+   * mesma família da resposta de IA cortada que esta casa já pagou.
+   *
+   * A régua: o caderno diz que este canal tem vídeos longos. Se o canal disser que não
+   * tem nenhum, quem está errado é a resposta — e não se decide com ela. Cai-se no
+   * caderno, que é o conservador.
+   *
+   * ⚠️ **E não trava um canal novo a sério:** se o caderno também não tiver nenhum, não
+   * há contradição nenhuma e a lista vazia é aceite como verdade.
+   */
+  const conhecidos = Object.values(caderno || {}).filter((r) => r?.videoId).length;
+  if (!doCanal.length && conhecidos > 0) {
+    registar(`   ⚠️ o canal devolveu ZERO vídeos longos, mas o caderno conhece ${conhecidos} — a resposta não é de confiança. Decide o caderno.`);
+    return undefined;
+  }
   /** ⚠️ Um vídeo NÃO ocupa o dia contra si próprio — a mesma razão que a de `estreiaOcupada`. */
   const meu = slugAtual ? caderno?.[slugAtual]?.videoId : null;
   /**

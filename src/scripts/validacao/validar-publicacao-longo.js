@@ -2192,6 +2192,22 @@ console.log('\n20. O DOMINGO MEDE-SE NO CANAL (as 3 semanas de vídeo repetido)'
    */
   ok('sem chave, não decide nada — devolve "não vi"',
     (await diaCheio(new Date('2026-09-06T22:00:00Z'), { chave: null, caderno: {} })) === undefined);
+
+  /**
+   * 🔴 **UMA LISTA VAZIA NÃO É UM CANAL VAZIO — e sem esta trava ela DESLIGAVA tudo.**
+   *
+   * O pedido ao YouTube só se queixa quando rebenta. Endereço trocado, permissão em
+   * falta ou resposta cortada devolvem **zero vídeos sem erro nenhum** — e zero vídeos
+   * quer dizer *"o domingo está livre"*. A trava apagava-se a si própria, em silêncio,
+   * com a corrida a acabar a VERDE. Mesma família da resposta de IA cortada.
+   */
+  ok('🔴 canal a devolver ZERO com o caderno cheio não decide nada (a resposta não é de confiança)',
+    (await diaCheio(new Date('2026-09-06T22:00:00Z'), {
+      chave: 'x', caderno: { um: { videoId: 'V1' } }, listar: canal([]),
+    })) === undefined);
+  /** ⚠️ Mas um canal a sério vazio (caderno também vazio) não tem contradição nenhuma. */
+  ok('e num canal mesmo vazio, zero é a verdade e o robô trabalha',
+    (await diaCheio(new Date('2026-09-06T22:00:00Z'), { chave: 'x', caderno: {}, listar: canal([]) }))?.cheio === false);
   ok('e se o YouTube rebentar, também não decide',
     (await diaCheio(new Date('2026-09-06T22:00:00Z'), {
       chave: 'x', caderno: {}, listar: async () => { throw new Error('502'); },

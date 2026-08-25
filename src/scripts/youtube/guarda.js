@@ -262,6 +262,19 @@ async function principal() {
   try { doCanal = await longosDoCanal(chave); } catch (err) {
     log(`⚠️ não deu para pedir a lista do canal (${err.message}).`);
   }
+  /**
+   * ⚠️ **DIZER EM TEXTO O QUE O CANAL RESPONDEU, mesmo quando corre bem.**
+   * A 1ª versão calava-se em caso de sucesso — e é justamente aí que mora o perigo: uma
+   * prateleira vazia não lança erro nenhum, devolve zero vídeos, e zero vídeos quer dizer
+   * "todos os domingos estão livres". Sem esta linha, a única maneira de saber que a
+   * pergunta ao canal ainda funciona seria esperar por um domingo estragado.
+   * É esta linha que prova, todos os dias, que a trava do vídeo longo está viva.
+   */
+  if (doCanal) {
+    log(`\n📺 o CANAL respondeu com ${doCanal.length} vídeo(s) longo(s) recentes:`);
+    doCanal.slice(0, 6).forEach((v) => log(`   · ${v.dia} — "${v.titulo}" (${v.privacidade}, ${Math.round(v.duracaoSeg / 60)}min)`));
+    if (!doCanal.length) log('   ⚠️ ZERO — se este canal tem vídeos longos, esta resposta não é de confiança.');
+  }
 
   /**
    * ⚠️ ÀS FATIAS DE 50, que é o tecto da API do YouTube por chamada. Com um pedido por
