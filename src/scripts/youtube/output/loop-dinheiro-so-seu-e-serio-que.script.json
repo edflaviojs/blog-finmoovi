@@ -1,0 +1,117 @@
+{
+  "slug": "loop-dinheiro-so-seu-e-serio-que",
+  "formato": "loop16",
+  "term": "Um dinheiro só seu",
+  "category": "vida",
+  "keyword": "SEU",
+  "situacao": "dinheiro-so-seu",
+  "gancho": "e-serio-que",
+  "ganchoFamilia": "é sério que",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "cofre",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "É sério que ninguém está falando de dinheiro só meu?",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "sério",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro só meu"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "ninguém",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "cofre"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu pedia pro meu marido até pra comprar coisinhas pequenas sempre.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "pedia",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "cofre"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "marido",
+          "visual": {
+            "type": "statement",
+            "text": "Eu pedia até pouco"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então guardei meu dinheiro caladinho e comecei a decidir minhas compras.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "guardei",
+          "visual": {
+            "type": "statement",
+            "text": "Guardei meu dinheiro"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "cofre"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Agora vejo que meu dinheiro só meu ninguém precisa perguntar",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Meu dinheiro sem pedir"
+          }
+        },
+        {
+          "anchor": "ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro só meu"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
