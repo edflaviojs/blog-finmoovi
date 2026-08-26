@@ -628,5 +628,23 @@
     ],
     "veredito": "1. **O LOOP — 9/10**  \nPrimeiro e último quadro mostram **“Dinheiro só meu”** no mesmo estilo e composição. O fundo também é praticamente idêntico. É um bom fechamento para reiniciar sem chamar atenção.\n\n2. **A FAIXA DE BAIXO — 5/10**  \nHá informação importante no terço inferior em **todos os quadros**, principalmente as palavras destacadas. No celular, essa região pode ser parcialmente coberta pela interface.\n\n3. **TEXTO POR CIMA DE TEXTO — 8/10**  \nNão vejo frases claramente sobrepostas ou palavras cortadas. O texto está relativamente bem separado. O maior problema é que algumas frases aparecem **fragmentadas**, como “de dinheiro só” e “meu marido até”.\n\n4. **LEGIBILIDADE — 8/10**  \nOs textos principais são grandes, com bom contraste e fáceis de ler. As palavras menores na parte inferior são mais difíceis de enxergar rapidamente no celular.\n\n5. **TELA VIVA OU VAZIA? — 6/10**  \nExiste bastante espaço vazio, especialmente nas áreas laterais e inferiores. Os quadros da **safe** deixam a composição ainda mais parada.\n\n6. **COERÊNCIA — 7/10**  \nVisualmente, todos parecem pertencer ao mesmo vídeo. Porém, a sequência narrativa não fica totalmente clara pelos quadros: há repetição da safe em **4.2s, 8.4s e 10.5s**, e os textos inferiores parecem partes de uma frase maior.\n\n7. **TESTE CENTRAL — 6/10**  \nParece mais um **motion design baseado em slides** do que um vídeo profissional dinâmico, principalmente pela repetição da mesma imagem da safe em vários momentos.\n\nNOTA GERAL: 7/10  \nPROBLEMA 1: Repetição visual da safe em 4.2s, 8.4s e 10.5s deixa o vídeo com aparência de slides.  \nPROBLEMA 2: Texto importante fica muito baixo em praticamente todos os quadros, especialmente nas legendas inferiores.  \nPROBLEMA 3: A sequência das frases inferiores parece fragmentada e difícil de acompanhar rapidamente.  \nPRIMEIRA COISA A MUDAR: Substituir a repetição da safe por variações visuais que avancem claramente a história, mantendo o primeiro e o último quadro semelhantes para preservar o loop.",
     "quando": "2026-08-26T05:08:25.976Z"
+  },
+  {
+    "slug": "loop-parcela-atrasada-e-serio-que",
+    "formato": "loop16",
+    "nota": 8.5,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      2.1,
+      4.3,
+      6.4,
+      8.5,
+      10.7,
+      12.8,
+      14.9
+    ],
+    "veredito": "1. **O LOOP — 9/10**  \nPrimeiro e último quadro mostram praticamente a mesma mensagem: **“Boleto vencido no sábado”**, no mesmo estilo e posição. Pelos quadros, o loop parece muito bem preparado. Não dá para saber se a transição realmente fica imperceptível.\n\n2. **A FAIXA DE BAIXO — 7/10**  \nHá texto importante na parte inferior em vários quadros, especialmente **“É sério que”**, **“Então hoje confiro”**, **“não esquecer”**, **“ninguém falou de”** e **“antes”**. No celular, essa região pode sofrer interferência da interface.\n\n3. **TEXTO POR CIMA DE TEXTO — 8/10**  \nNão vejo frases claramente sobrepostas entre si. Porém, no **quadro de 6,4s**, o grande X cobre parcialmente a informação textual atrás dele, reduzindo a leitura.\n\n4. **LEGIBILIDADE — 8/10**  \nOs textos principais são grandes, fortes e têm bom contraste. As palavras menores na parte inferior são mais vulneráveis no celular, principalmente porque ficam próximas da faixa de interface.\n\n5. **TELA VIVA OU VAZIA? — 8/10**  \nA composição usa bastante espaço negativo, mas o fundo tem textura, elementos gráficos e marca d’água. Não parece simplesmente uma tela vazia. O quadro de **6,4s** é especialmente forte visualmente.\n\n6. **COERÊNCIA — 9/10**  \nOs 8 quadros claramente pertencem ao mesmo vídeo: mesma identidade visual, tipografia, cores, elementos gráficos e progressão da mensagem. A sequência conta uma pequena história: problema → consequência → aprendizado → retorno ao início.\n\n7. **TESTE CENTRAL — 8/10**  \nParece mais um **vídeo profissional com linguagem de motion design** do que slides, embora alguns quadros muito estáticos ainda possam dar sensação de apresentação.\n\nNOTA GERAL: 8,5  \nPROBLEMA 1: Texto importante muito baixo no quadro, especialmente em 10,7s, 12,8s e 14,9s.  \nPROBLEMA 2: O grande X de 4,3s interfere na leitura do texto que está atrás dele.  \nPROBLEMA 3: Alguns textos inferiores são pequenos e ficam vulneráveis à interface do Shorts/Reels.  \nPRIMEIRA COISA A MUDAR: Subir todos os textos inferiores para uma área mais segura, mantendo o terço inferior livre para a interface.",
+    "quando": "2026-08-26T05:12:09.453Z"
   }
 ]
