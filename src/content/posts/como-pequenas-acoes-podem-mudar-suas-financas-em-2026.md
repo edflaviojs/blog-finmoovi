@@ -19,7 +19,7 @@ seo:
   keywords: ["acciones ejemplos","finanças pessoais","economia","dinheiro"]
 ---
 
-Imagine a cena: você acabou de comprar um lanche rápido, recebeu a nota fiscal e, ao chegar em casa, já sente aquele peso no bolso. A conta parece desaparecer no meio de tantas outras – contas de luz, internet, aluguel e ainda aquele café que você compra todo dia. No fim do mês, a surpresa é a mesma: o dinheiro acabou antes do esperado e você não sabe exatamente onde foi gasto.
+Imagine a cena: você acabou de comprar um lanche rápido, recebeu a nota fiscal e, ao chegar em casa, já sente aquele peso no bolso. A conta parece desaparecer no meio de tantas outras – [contas de luz](/posts/temperatura-ideal-do-ar-condicionado-para-economizar-energia), internet, aluguel e ainda aquele café que você compra todo dia. No fim do mês, a surpresa é a mesma: o dinheiro acabou antes do esperado e você não sabe exatamente onde foi gasto.
 
 É nesse momento que o FinMoovi entra em cena. Em apenas cinco minutos, você pode tirar uma foto da nota fiscal ou usar a voz para registrar a compra, e o app categoriza tudo automaticamente. Assim, cada centavo ganha um rótulo e você volta a ter clareza sobre o que realmente está consumindo. Pronto para transformar esse caos em controle?
 

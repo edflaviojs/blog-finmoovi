@@ -70,7 +70,7 @@ João vendeu seu carro por R$ 45 mil e precisou receber o valor em sua conta
 
 ## Quando escolher o PIX
 
-- **Pagamentos do dia a dia:** contas de luz, água, internet ou dividir a conta de restaurante.
+- **Pagamentos do dia a dia:** [contas de luz](/posts/temperatura-ideal-do-ar-condicionado-para-economizar-energia), água, internet ou dividir a conta de restaurante.
 - **Transferências de baixo valor:** enviar dinheiro para familiares ou amigos rapidamente.
 - **Quando o custo importa:** se você quer evitar tarifas, o PIX gratuito é a escolha óbvia.
 - **Operações fora do horário bancário:** se precisar pagar um fornecedor às 22 h, o PIX garante que o dinheiro chega imediatamente.
