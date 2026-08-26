@@ -5,6 +5,7 @@ description: >-
   FinMoovi, and gain visual control of your finances effortlessly.
 tickerHeadline: Turn Your Spreadsheet into an Ally
 image: /images/posts/como-montar-seu-orcamento-familiar-usando-excel-e-apps.webp
+imageAlt: "Three people at a table with a tablet, pen, and notebook."
 category: dicas
 locale: en
 tags:

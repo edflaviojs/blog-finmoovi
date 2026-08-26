@@ -3,6 +3,7 @@ title: "How to Control Your Personal Cash Flow in 2026"
 description: "Learn in simple terms how to use FinMoovi to track income and expenses, avoid surprises, and gain financial peace of mind."
 tickerHeadline: "The detail that flips a negative balance"
 image: "/images/posts/como-controlar-seu-fluxo-de-caixa-pessoal-em-2026.webp"
+imageAlt: "Laptop displaying colorful abstract wallpaper sits on wooden desk beside coffee mug."
 category: "dicas"
 locale: "en"
 tags: ["cash flow","personal finance","economy","money"]

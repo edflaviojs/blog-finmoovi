@@ -3,6 +3,7 @@ title: "How to Stop Outstanding Balances from Sabotaging Your Budget in 2026"
 description: "Learn simple steps to spot and control outstanding balances that drain your money, and use FinMoovi to turn debt into peace of mind."
 tickerHeadline: "The balance that drains your paycheck"
 image: "/images/posts/como-evitar-que-a-conta-pendente-atrapalhe-seu-orcamento-em.webp"
+imageAlt: "Laptop displaying rainbow gradient screen, grey mug, and green plant on desk."
 category: "dicas"
 locale: "en"
 tags: ["outstanding balance","personal finance","budgeting","money management"]

@@ -3,6 +3,7 @@ title: "How to Cut Grocery Costs and Still Eat Well"
 description: "Discover simple strategies to lower grocery expenses, use smart lists, and apps like FinMoovi to turn your shopping into real savings."
 tickerHeadline: "The trick that slashes your grocery bill"
 image: "/images/posts/como-cortar-custos-no-supermercado-e-ainda-comer-bem.webp"
+imageAlt: "Brown notebook, calculator, pen, coins, and green sprigs on white marble."
 category: "orcamento"
 locale: "en"
 tags: ["grocery savings","shopping list","expense control","financial apps","receipt capture","grocery budgeting"]

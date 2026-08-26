@@ -3,6 +3,7 @@ title: "Como montar sua tabela de economia 2026 e controlar gastos"
 description: "Descubra, passo a passo, como criar uma tabela simples para economizar dinheiro, usar metas e o app FinMoovi para transformar gastos em controle visual e simples."
 tickerHeadline: "Sua tabela de economia em 5 minutos"
 image: "/images/posts/como-montar-sua-tabela-de-economia-2026-e-controlar-gastos.webp"
+imageAlt: "Casal sorridente conversando em sala, homem em suéter laranja e mulher em branco."
 category: "dicas"
 locale: "pt"
 tags: ["tabela para economizar dinheiro","finanças pessoais","economia","dinheiro"]

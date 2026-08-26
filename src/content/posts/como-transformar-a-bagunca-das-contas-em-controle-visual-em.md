@@ -7,6 +7,7 @@ description: >-
 tickerHeadline: Sua conta sob controle em minutos
 image: >-
   /images/posts/como-transformar-a-bagunca-das-contas-em-controle-visual-em-.webp
+imageAlt: "Casal sorridente usando computador e tablet em sala iluminada com plantas ao fundo."
 category: dicas
 locale: pt
 tags:

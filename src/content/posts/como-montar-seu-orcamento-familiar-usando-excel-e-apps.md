@@ -5,6 +5,7 @@ description: >-
   o FinMoovi e ganhar controle visual das finanças sem complicação.
 tickerHeadline: Transforme sua planilha em aliado
 image: /images/posts/como-montar-seu-orcamento-familiar-usando-excel-e-apps.webp
+imageAlt: "Três pessoas sorridentes em mesa com tablet, caneta e caderno."
 category: dicas
 locale: pt
 tags:

@@ -4,6 +4,7 @@ description: >-
   Resumo semanal do mercado financeiro: dólar, euro, Selic e dicas para
   investidores. Semana 5 de junho 2026.
 image: /images/posts/cotacoes-semana-2026-06-29.webp
+imageAlt: "Notebook aberto com tela colorida, xícara de café, cadernos e plantas em mesa de madeira."
 category: cotacoes
 tags:
   - cotações

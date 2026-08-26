@@ -7,6 +7,7 @@ description: >-
 tickerHeadline: O método que acalma seu bolso
 image: >-
   /images/posts/como-transformar-o-caos-financeiro-em-controle-com-a-tecnica.webp
+imageAlt: "Casal sorridente em mesa com tablet, caderno e caneta. Homem de camisa azul, mulher de suéter vermelho."
 category: dicas
 locale: pt
 tags:

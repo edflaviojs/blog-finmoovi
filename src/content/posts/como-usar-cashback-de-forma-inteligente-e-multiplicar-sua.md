@@ -6,6 +6,7 @@ description: >-
 tickerHeadline: Cashback que rende mais
 image: >-
   /images/posts/como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re.webp
+imageAlt: "Notebook aberto, caderno e caneca sobre mesa de madeira iluminada."
 category: dicas
 locale: pt
 tags:

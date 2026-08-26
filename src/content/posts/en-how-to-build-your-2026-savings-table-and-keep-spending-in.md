@@ -3,6 +3,7 @@ title: "How to Build Your 2026 Savings Table and Keep Spending in Check"
 description: "Step‑by‑step guide to creating a simple savings table, setting realistic goals, and using the FinMoovi app for clear, visual expense control."
 tickerHeadline: "Your savings table in 5 minutes"
 image: "/images/posts/como-montar-sua-tabela-de-economia-2026-e-controlar-gastos.webp"
+imageAlt: "Three smiling people sit around a table with a light blue mug."
 category: "dicas"
 locale: "en"
 tags: ["savings table","personal finance","budgeting","money"]

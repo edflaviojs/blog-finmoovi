@@ -3,6 +3,7 @@ title: "Como transformar a ida ao supermercado em economia real (2026)"
 description: "Descubra, em menos de 5 min, como usar o FinMoovi para planejar refeições e reduzir gastos no supermercado sem sacrifícios."
 tickerHeadline: "A lista que faz seu carrinho pesar menos"
 image: "/images/posts/como-transformar-a-ida-ao-supermercado-em-economia-real-2026.webp"
+imageAlt: "Mulher de blusa branca escrevendo em caderno, com fundo verde desfocado."
 category: "dicas"
 locale: "pt"
 tags: ["supermercado economizando","finanças pessoais","economia","dinheiro"]
