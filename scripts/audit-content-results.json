@@ -1993,6 +1993,21 @@
     }
   },
   {
+    "file": "en-how-to-stop-outstanding-balances-from-sabotaging-your-budget.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-how-to-tame-your-spending-and-find-peace-in-2026.md",
     "dir": "posts",
     "severity": 0,
@@ -3013,6 +3028,21 @@
     }
   },
   {
+    "file": "en-simple-national-installment.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-smart-cashback.md",
     "dir": "posts",
     "severity": 0,
@@ -3104,6 +3134,21 @@
   },
   {
     "file": "en-the-50-30-20-method-for-budgeting.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-the-most-effective-way-to-save-money-in-2026-a-practical.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -4214,6 +4259,21 @@
   },
   {
     "file": "es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-como-evitar-que-el-saldo-pendiente-arruine-tu-presupuesto-en.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -5458,6 +5518,21 @@
     }
   },
   {
+    "file": "es-la-forma-mas-eficaz-de-ahorrar-dinero-en-2026-estrategia.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-liquidez.md",
     "dir": "glossario",
     "severity": 0,
@@ -5639,6 +5714,21 @@
   },
   {
     "file": "es-pago-anticipado.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-parcelamiento-del-simples-nacional.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
