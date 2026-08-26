@@ -350,6 +350,68 @@
           "título afirmativo simples, sem número nem pergunta"
         ]
       }
+    },
+    {
+      "id": "kw-5-erros-ao-parcelar-compras-de-r-1-000",
+      "theme": "5 erros ao parcelar compras de R$ 1.000",
+      "angle": "Mostre como evitar problemas financeiros comuns ao dividir compras em parcelas",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "parcelamento",
+      "status": "pending",
+      "sourceKeyword": "parcelamento"
+    },
+    {
+      "id": "kw-quanto-voce-precisa-ganhar-por-mes",
+      "theme": "Quanto você precisa ganhar por mês?",
+      "angle": "Vamos calcular juntos com base em seus gastos diários, como R$ 500 em alimentação e R$ 1.000 em aluguel, para descobrir qual é a renda mensal ideal para você viver confortavelmente",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "renda-mensal",
+      "status": "pending",
+      "sourceKeyword": "renda mensal"
+    },
+    {
+      "id": "kw-5-erros-na-lista-de-compras-que-te-custam-r-500-mes",
+      "theme": "5 erros na lista de compras que te custam R$ 500/mês",
+      "angle": "Mostro como identificar e corrigir esses erros comuns",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "lista-de-compras",
+      "status": "pending",
+      "sourceKeyword": "lista de compras"
+    },
+    {
+      "id": "viral-M4IPngsT9BM",
+      "theme": "Perda financeira",
+      "angle": "Perda em curso: mostrar o dinheiro a sair todo mês com um exemplo prático de como a falta de educação financeira pode afetar o orçamento familiar",
+      "pillar": "mindset",
+      "source": "viral",
+      "glossaryRef": null,
+      "status": "pending",
+      "viralRef": {
+        "videoId": "M4IPngsT9BM",
+        "title": "O problema de educação financeira no Brasil é coisa séria!",
+        "estrutura": [
+          "título afirmativo simples, sem número nem pergunta"
+        ]
+      }
+    },
+    {
+      "id": "viral-RErIArKiZwg",
+      "theme": "Mudança de Mindset",
+      "angle": "Título afirmativo simples: como pequenas mudanças no seu mindset podem economizar R$ 500 por mês",
+      "pillar": "mindset",
+      "source": "viral",
+      "glossaryRef": null,
+      "status": "pending",
+      "viralRef": {
+        "videoId": "RErIArKiZwg",
+        "title": "educação financeira ✅",
+        "estrutura": [
+          "título afirmativo simples, sem número nem pergunta"
+        ]
+      }
     }
   ]
 }
