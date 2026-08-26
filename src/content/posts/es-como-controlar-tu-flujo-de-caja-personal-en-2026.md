@@ -3,6 +3,7 @@ title: "Cómo controlar tu flujo de caja personal en 2026"
 description: "Descubre, en lenguaje sencillo, cómo usar FinMoovi para organizar ingresos y gastos, evitando sorpresas y logrando tranquilidad financiera."
 tickerHeadline: "El detalle que vuelve el saldo negativo"
 image: "/images/posts/como-controlar-seu-fluxo-de-caixa-pessoal-em-2026.webp"
+imageAlt: "Escritorio con portátil, taza gris, monitor y plantas junto a ventana."
 category: "dicas"
 locale: "es"
 tags: ["flujo de caja","finanzas personales","economía","dinero"]

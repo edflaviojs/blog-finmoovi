@@ -4,6 +4,7 @@ description: >-
   Weekly financial market summary: dollar, euro, central bank base rate and tips
   for investors. Week 5 of June 2026.
 image: /images/posts/cotacoes-semana-2026-06-29.webp
+imageAlt: "Laptop with colorful screen, coffee mug, and notebooks on wooden desk."
 category: cotacoes
 tags:
   - quotes

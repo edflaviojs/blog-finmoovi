@@ -3,6 +3,7 @@ title: "Cómo evitar que el saldo pendiente arruine tu presupuesto en 2026"
 description: "Descubre en lenguaje sencillo cómo identificar y controlar el saldo pendiente que consume tu dinero y usa FinMoovi para transformar deudas en tranquilidad."
 tickerHeadline: "El saldo que absorbe tu salario"
 image: "/images/posts/como-evitar-que-a-conta-pendente-atrapalhe-seu-orcamento-em.webp"
+imageAlt: "Portátil con pantalla arcoíris, taza gris y planta verde sobre escritorio."
 category: "dicas"
 locale: "es"
 tags: ["saldo pendiente","finanzas personales","economía","dinero"]

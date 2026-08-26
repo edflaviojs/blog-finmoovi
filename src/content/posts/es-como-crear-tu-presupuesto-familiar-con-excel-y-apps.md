@@ -5,6 +5,7 @@ description: >-
   FinMoovi y controlar tus finanzas de forma visual y sencilla.
 tickerHeadline: Convierte tu hoja en aliada
 image: /images/posts/como-montar-seu-orcamento-familiar-usando-excel-e-apps.webp
+imageAlt: "Tres personas sonrientes en mesa con tablet, cuadernos y plantas."
 category: dicas
 locale: es
 tags:

@@ -6,6 +6,7 @@ description: >-
 tickerHeadline: The method that calms your wallet
 image: >-
   /images/posts/como-transformar-o-caos-financeiro-em-controle-com-a-tecnica.webp
+imageAlt: "Smiling couple reviewing tablet and documents at a wooden table."
 category: dicas
 locale: en
 tags:

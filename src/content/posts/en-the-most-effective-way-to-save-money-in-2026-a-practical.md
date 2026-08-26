@@ -3,6 +3,7 @@ title: "The Most Effective Way to Save Money in 2026: A Practical, Automatic Str
 description: "Learn a simple, automated method to turn everyday expenses into a solid savings habit—no big sacrifices required."
 tickerHeadline: "The trick that turns savings into habit"
 image: "/images/posts/a-forma-mais-eficaz-de-guardar-dinheiro-em-2026-estrategia.webp"
+imageAlt: "Laptop with rainbow screen, coffee cup, and desk near window"
 category: "dicas"
 tags:
   - "savings"

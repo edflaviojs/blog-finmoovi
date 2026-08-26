@@ -3,6 +3,7 @@ title: "Cómo crear tu tabla de ahorro 2026 y controlar gastos"
 description: "Aprende paso a paso a crear una tabla sencilla para ahorrar, usar metas y la app FinMoovi para transformar gastos en control visual."
 tickerHeadline: "Tu tabla de ahorro en 5 minutos"
 image: "/images/posts/como-montar-sua-tabela-de-economia-2026-e-controlar-gastos.webp"
+imageAlt: "Tres personas sonrientes conversando en sala, mujer con taza azul, hombre en naranja."
 category: "dicas"
 locale: "es"
 tags: ["tabla para ahorrar dinero","finanzas personales","ahorro","dinero"]

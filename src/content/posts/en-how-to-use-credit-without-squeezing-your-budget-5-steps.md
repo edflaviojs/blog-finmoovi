@@ -5,6 +5,7 @@ description: >-
   finances calm. Practical 5‑step guide.
 tickerHeadline: The trick that saves your credit
 image: /images/posts/como-usar-credito-sem-sufocar-seu-orcamento-5-passos.webp
+imageAlt: "Three smiling people using tablets and a laptop at a wooden table."
 category: dicas
 locale: en
 tags:

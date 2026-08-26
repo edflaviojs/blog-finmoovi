@@ -3,6 +3,7 @@ title: "Cómo recortar gastos en el supermercado y seguir comiendo bien"
 description: "Descubre estrategias simples para reducir tus gastos en el mercado, usar listas inteligentes y apps como FinMoovi para transformar tus compras en ahorro real."
 tickerHeadline: "El truco que reduce tu cuenta del superm"
 image: "/images/posts/como-cortar-custos-no-supermercado-e-ainda-comer-bem.webp"
+imageAlt: "Calculadora, monedas, libreta marrón y bolígrafo sobre superficie blanca con ramas verdes."
 category: "orcamento"
 locale: "es"
 tags: ["ahorro supermercado","lista de la compra","control de gastos","aplicaciones financieras","captura de facturas","supermercado económico"]

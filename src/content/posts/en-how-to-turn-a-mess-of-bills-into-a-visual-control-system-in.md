@@ -6,6 +6,7 @@ description: >-
 tickerHeadline: Your finances under control in minutes
 image: >-
   /images/posts/como-transformar-a-bagunca-das-contas-em-controle-visual-em-.webp
+imageAlt: "Smiling couple in sweaters using a laptop and tablet at a table."
 category: dicas
 locale: en
 tags:

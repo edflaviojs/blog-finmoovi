@@ -4,6 +4,7 @@ description: >-
   Weekly financial market summary: dollar, euro, central bank base rate and tips
   for investors. Week 3 of June 2026.
 image: /images/posts/cotacoes-semana-2026-06-15.webp
+imageAlt: "Three smiling businesspeople exchanging stacks of US dollar bills outdoors."
 category: cotacoes
 tags:
   - quotes

@@ -3,6 +3,7 @@ title: "Best Time to Shower to Save Energy in 2026"
 description: "Discover the optimal shower time to cut electricity bills and manage your money with practical tips and a handy app."
 tickerHeadline: "The trick that slashes your electricity "
 image: "/images/posts/horario-ideal-para-banho-e-economia-de-energia-em-2026.webp"
+imageAlt: "Three smiling adults use tablets and laptop with cash on table."
 category: "dicas"
 locale: "en"
 tags: ["best time to shower to save energy","personal finance","savings","money"]

@@ -3,6 +3,7 @@ title: "How to Turn Your Grocery Trip into Real Savings (2026)"
 description: "Discover in under 5 minutes how to use FinMoovi to plan meals and cut grocery spending without sacrifice."
 tickerHeadline: "The list that lightens your cart"
 image: "/images/posts/como-transformar-a-ida-ao-supermercado-em-economia-real-2026.webp"
+imageAlt: "Woman in white shirt writing on paper at table with green background."
 category: "dicas"
 locale: "en"
 tags: ["grocery savings","personal finance","budgeting","money"]

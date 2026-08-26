@@ -6,6 +6,7 @@ description: >-
 tickerHeadline: Cashback that earns more
 image: >-
   /images/posts/como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re.webp
+imageAlt: "Laptop with colorful abstract wallpaper on wooden desk beside coffee mug and notebook."
 category: dicas
 locale: en
 tags:
