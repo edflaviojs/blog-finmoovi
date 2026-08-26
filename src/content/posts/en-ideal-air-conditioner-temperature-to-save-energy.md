@@ -3,6 +3,7 @@ title: "Ideal Air‑Conditioner Temperature to Save Energy"
 description: "Learn the optimal thermostat setting to cut electricity bills, with practical tips and how FinMoovi helps you track usage."
 tickerHeadline: "Temperature that cuts the bill"
 image: "/images/posts/temperatura-ideal-do-ar-condicionado-para-economizar-energia.webp"
+imageAlt: "Black calculator, brown wallet, and silver coins on white marble surface."
 category: "investimentos"
 locale: "en"
 tags: ["air conditioner temperature","energy savings","smart consumption","climate control","FinMoovi","electricity bills","thermal comfort","ideal thermostat"]

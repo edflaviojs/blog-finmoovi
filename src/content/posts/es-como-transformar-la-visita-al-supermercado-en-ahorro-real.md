@@ -3,6 +3,7 @@ title: "Cómo transformar la visita al supermercado en ahorro real (2026)"
 description: "Descubre en menos de 5 min cómo usar FinMoovi para planificar comidas y reducir gastos en el supermercado sin sacrificios."
 tickerHeadline: "La lista que aligera tu carrito"
 image: "/images/posts/como-transformar-a-ida-ao-supermercado-em-economia-real-2026.webp"
+imageAlt: "Mujer con camisa blanca escribe en cuaderno sobre mesa, fondo verde desenfocado."
 category: "dicas"
 locale: "es"
 tags: ["supermercado ahorrando","finanzas personales","ahorro","dinero"]

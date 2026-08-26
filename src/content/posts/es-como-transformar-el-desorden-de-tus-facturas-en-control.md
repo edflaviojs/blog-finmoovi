@@ -7,6 +7,7 @@ description: >-
 tickerHeadline: Tus cuentas bajo control en minutos
 image: >-
   /images/posts/como-transformar-a-bagunca-das-contas-em-controle-visual-em-.webp
+imageAlt: "Pareja sonriente revisando documentos y portátil en casa iluminada por ventana."
 category: dicas
 locale: es
 tags:

@@ -5,6 +5,7 @@ description: >-
   inteligencia y manteniendo la tranquilidad financiera. Guía en 5 pasos.
 tickerHeadline: El truco que protege tu crédito
 image: /images/posts/como-usar-credito-sem-sufocar-seu-orcamento-5-passos.webp
+imageAlt: "Tres personas sonrientes usan tabletas y portátil en mesa con plantas."
 category: dicas
 locale: es
 tags:

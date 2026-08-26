@@ -3,6 +3,7 @@ title: "Temperatura ideal del aire acondicionado para ahorrar energía"
 description: "Descubre la temperatura recomendada para usar el aire acondicionado sin derrochar energía y cómo FinMoovi te ayuda a controlar el consumo."
 tickerHeadline: "La temperatura que corta la factura"
 image: "/images/posts/temperatura-ideal-do-ar-condicionado-para-economizar-energia.webp"
+imageAlt: "Calculadora negra, monedas, cuaderno marrón y plantas verdes sobre superficie blanca."
 category: "investimentos"
 locale: "es"
 tags: ["temperatura aire acondicionado","ahorro energía","consumo inteligente","ajuste de clima","FinMoivi","facturas de luz","confort térmico","temperatura ideal aire acondicionado para ahorrar energía"]

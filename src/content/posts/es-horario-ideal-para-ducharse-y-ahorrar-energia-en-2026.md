@@ -3,6 +3,7 @@ title: "Horario ideal para ducharse y ahorrar energía en 2026"
 description: "Descubre cuándo ducharte para reducir la factura de luz y controla tus finanzas con consejos prácticos y la app FinMoovi."
 tickerHeadline: "El truco que baja la factura de luz"
 image: "/images/posts/horario-ideal-para-banho-e-economia-de-energia-em-2026.webp"
+imageAlt: "Tres personas sonrientes revisan tabletas y portátiles con dinero sobre la mesa."
 category: "dicas"
 locale: "es"
 tags: ["mejor horario para ducharse y ahorrar energía","finanzas personales","ahorro","dinero"]

@@ -3,6 +3,7 @@ title: "Temperatura ideal do ar‑condicionado para economizar energia"
 description: "Descubra a temperatura recomendada para usar o ar‑condicionado sem desperdiçar energia, com dicas práticas e como o FinMoovi pode ajudar a monitorar seu consumo."
 tickerHeadline: "A temperatura que corta a conta"
 image: "/images/posts/temperatura-ideal-do-ar-condicionado-para-economizar-energia.webp"
+imageAlt: "Calculadora, moedas e caderno marrom sobre superfície branca com plantas verdes."
 category: "investimentos"
 locale: "pt"
 tags: ["temperatura ar-condicionado","economia energia","consumo inteligente","ajuste de clima","FinMoovi","contas de luz","conforto térmico","qual a temperatura ideal do ar-condicionado para economizar energia​"]

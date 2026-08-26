@@ -6,6 +6,7 @@ description: >-
 tickerHeadline: El método que calma tu bolsillo
 image: >-
   /images/posts/como-transformar-o-caos-financeiro-em-controle-com-a-tecnica.webp
+imageAlt: "Pareja sonriente en sofá revisando tablet y tarjeta sobre mesa de madera."
 category: dicas
 locale: es
 tags:

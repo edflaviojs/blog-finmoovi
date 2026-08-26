@@ -3,6 +3,7 @@ title: "Horário ideal para banho e economia de energia em 2026"
 description: "Descubra como escolher o melhor momento para o banho, reduzir o consumo de energia e ainda controlar suas finanças com dicas práticas e um app que facilita tudo."
 tickerHeadline: "O truque que corta a conta de luz"
 image: "/images/posts/horario-ideal-para-banho-e-economia-de-energia-em-2026.webp"
+imageAlt: "Três pessoas sorrindo com tablet, computador e dinheiro em sala clara."
 category: "dicas"
 locale: "pt"
 tags: ["qual o melhor horário para tomar banho e economizar energia","finanças pessoais","economia","dinheiro"]

@@ -4,6 +4,7 @@ description: >-
   Resumen semanal del mercado financiero: dólar, euro, tasa base del banco
   central y consejos para inversores. Semana 5 de junio 2026.
 image: /images/posts/cotacoes-semana-2026-06-29.webp
+imageAlt: "Escritorio con portátil, taza de café, cuadernos y plantas."
 category: cotacoes
 tags:
   - cotizaciones

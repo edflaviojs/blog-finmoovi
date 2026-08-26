@@ -3,6 +3,7 @@ title: "La forma más eficaz de ahorrar dinero en 2026: estrategia práctica y a
 description: "Descubre cómo combinar automatización, metas visuales y revisiones mensuales para transformar el ahorro en hábito sin sacrificios."
 tickerHeadline: "El truco que convierte ahorro en hábito"
 image: "/images/posts/a-forma-mais-eficaz-de-guardar-dinheiro-em-2026-estrategia.webp"
+imageAlt: "Portátil con pantalla multicolor, taza de café gris y libros en escritorio de madera."
 category: "dicas"
 tags:
   - "ahorro"

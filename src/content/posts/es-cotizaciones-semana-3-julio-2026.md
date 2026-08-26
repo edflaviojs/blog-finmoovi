@@ -4,6 +4,7 @@ description: >-
   Resumen semanal del mercado financiero: dólar, euro, tasa base del banco
   central y consejos para inversores. Semana 3 de julio 2026.
 image: /images/posts/cotacoes-semana-2026-07-20.webp
+imageAlt: "Portátil y monitor con gráficos financieros, taza de café y plantas en escritorio."
 category: cotacoes
 tags:
   - cotizaciones

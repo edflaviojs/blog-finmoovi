@@ -6,6 +6,7 @@ description: >-
 tickerHeadline: Cashback que rinde más
 image: >-
   /images/posts/como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re.webp
+imageAlt: "Escritorio con portátil, taza gris, cuaderno y planta junto a ventana iluminada."
 category: dicas
 locale: es
 tags:
