@@ -223,13 +223,16 @@ function splitHashtagPhrases(raw) {
 }
 
 // Monta a lista final de hashtags a partir de frases cruas: token único cada
-// (CamelCase), sem stopword solta, dedup case-insensitive, no máx 5 — #Shorts
-// sempre por último.
-function buildHashtagList(rawList) {
+// (CamelCase), sem stopword solta, dedup case-insensitive — a do tema primeiro,
+// depois as duas fixas (#FinMoovi e #Shorts).
+function buildHashtagList(rawList, palavraChaveDeReserva = '') {
   const out = [];
   for (const raw of rawList || []) {
     const tag = buildHashtag(raw);
-    if (!tag || tag.toLowerCase() === '#shorts') continue; // #Shorts é sempre adicionado no fim
+    if (!tag) continue;
+    // As duas fixas entram no fim, escritas à mão. Se a IA as sugerir, descartam-se
+    // aqui — senão gastavam o único lugar que sobra para o tema.
+    if (tag.toLowerCase() === '#shorts' || tag.toLowerCase() === '#finmoovi') continue;
     if (out.some((x) => x.toLowerCase() === tag.toLowerCase())) continue;
     out.push(tag);
   }
@@ -238,8 +241,29 @@ function buildHashtagList(rawList) {
    * voltadas para o nosso público"*. Eram 4 + `#Shorts`. ⚠️ **`#Shorts` conta como uma
    * das três** — ele é obrigatório (é por ele que o YouTube reconhece o formato), logo
    * sobram duas para o tema. Menos e mais certeiras vale mais do que cinco a espalhar.
+   *
+   * ♦ 26/08/2026 — A MARCA PASSA A SER FIXA. Ordem do dono: *"quero sempre essas
+   * #finmoovi #shorts"* mais uma terceira, **dinâmica** (a do tema). Das duas do tema
+   * sobra portanto UMA — e continua a valer a régua de 06/08: são três, não mais.
+   *
+   * ⚠️ **A ORDEM É DELIBERADA, não é gosto.** O YouTube mostra as **3 primeiras
+   * hashtags da descrição ACIMA do título**, como links — mas só quando o título não
+   * traz hashtags nenhumas (e os nossos não trazem). Quem faz um estranho clicar é a
+   * do TEMA, por isso vai à frente; a marca ganha mais por estar num vídeo encontrado
+   * do que por vir primeiro numa lista que ninguém procurou.
+   *
+   * ⚠️ O prompt continua a pedir DUAS ao modelo de propósito: se a primeira for
+   * reprovada pelo `buildHashtag` (monstro colado, stopword solta), a segunda entra
+   * no lugar dela. Pedir uma só deixava-nos sem rede.
+   *
+   * ⚠️ **E se as duas forem reprovadas?** Sem rede saíam só `#FinMoovi #Shorts` — duas,
+   * quando o dono pediu **três no mínimo**. A palavra-chave do vídeo é a reserva óbvia:
+   * é o assunto dele, e já passa pelo mesmo `buildHashtag` que as outras. Se nem ela
+   * servir (rara, mas possível), saem duas — e isso é preferível a inventar uma etiqueta
+   * que não diz respeito ao vídeo.
    */
-  return [...out.slice(0, 2), '#Shorts'];
+  const doTema = out.length ? out[0] : buildHashtag(palavraChaveDeReserva);
+  return [...(doTema ? [doTema] : []), '#FinMoovi', '#Shorts'];
 }
 
 // ─── o título do Short ───────────────────────────────────────────────────────
@@ -611,8 +635,10 @@ function buildMetadata(raw, script, estreia = null) {
   );
   if (doDono) log(`⭐ título escrito pelo dono: "${doDono}"`);
 
-  // Hashtags: token único (CamelCase), sem stopword solta, dedup, no máx 5 (#Shorts sempre por último).
-  const hashtags = buildHashtagList(raw.hashtags);
+  // Hashtags: token único (CamelCase), sem stopword solta, dedup. São TRÊS e nesta ordem:
+  // a do tema (dinâmica), #FinMoovi e #Shorts — as duas últimas fixas desde 26/08.
+  // A palavra-chave vai como reserva, para o caso de a IA não devolver nada aproveitável.
+  const hashtags = buildHashtagList(raw.hashtags, script.keyword || script.term || '');
 
   const palavraChave = sanitizeText(script.keyword || script.term || 'finanças', 60).toLowerCase();
   const hook = sanitizeText(raw.descriptionHook, 1500);
@@ -1042,12 +1068,35 @@ async function main() {
   // Num Short a descrição fica atrás de um toque; o comentário do criador aparece na
   // conversa. ⚠️ Fixar não existe na API — são dois cliques no Studio, e é decisão de
   // quem publica. Falhar aqui não derruba nada: o vídeo já está no ar.
-  try {
-    const texto = textoDoPrimeiroComentario({ ferramentaUrl: resolveToolUrl(script), palavraChave: script.keyword });
-    const comentarioId = await escreverPrimeiroComentario(accessToken, videoId, texto);
-    log(`💬 primeiro comentário escrito${comentarioId ? ` (${comentarioId})` : ''} — falta fixar à mão no Studio.`);
-  } catch (err) {
-    log(`⚠️ o primeiro comentário falhou (o vídeo já está no ar): ${err.message}`);
+  //
+  /**
+   * ♦ 26/08/2026 — NÃO SE COMENTA EM VÍDEO PRIVADO, E NÃO VALE A PENA TENTAR.
+   *
+   * Desde 12/08 o Short sobe **privado com estreia marcada** e, desde esse dia exacto,
+   * esta chamada devolvia **403 todos os dias**: *"The comment thread could not be
+   * created due to insufficient permissions"*. A mensagem engana — **não é falta de
+   * permissão**: o mesmo token comentou sem problema a 10 e a 11/08 e continua a
+   * comentar hoje. O YouTube é que **não aceita comentários num vídeo que ainda não é
+   * público**. Mudou a ordem das coisas (12/08) e este passo ficou para trás.
+   *
+   * 🔑 **E o buraco já estava tapado — ninguém sabia.** O `comentarios.js` corre de
+   * hora a hora, **pergunta ao YouTube** que vídeos não têm comentário nosso (pelo id
+   * do autor, não por caderno) e escreve-o. Medido em 26/08: **48 dos 50 vídeos do
+   * canal já o tinham**. Por isso aqui não se constrói repescagem nenhuma — apenas se
+   * deixa de dar um alarme falso que já custou uma manhã a perseguir um fantasma.
+   *
+   * ⚠️ Sem `estreia` (vídeo público à partida) o comportamento é o de sempre.
+   */
+  if (estreia) {
+    log('💬 primeiro comentário: fica para depois da estreia — não se comenta em vídeo privado. O robô de hora a hora escreve-o.');
+  } else {
+    try {
+      const texto = textoDoPrimeiroComentario({ ferramentaUrl: resolveToolUrl(script), palavraChave: script.keyword });
+      const comentarioId = await escreverPrimeiroComentario(accessToken, videoId, texto);
+      log(`💬 primeiro comentário escrito${comentarioId ? ` (${comentarioId})` : ''} — falta fixar à mão no Studio.`);
+    } catch (err) {
+      log(`⚠️ o primeiro comentário falhou (o vídeo já está no ar): ${err.message}`);
+    }
   }
 
   /**

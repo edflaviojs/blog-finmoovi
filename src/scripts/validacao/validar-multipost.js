@@ -202,16 +202,16 @@ const ROTEIRO = {
     { role: 'beat', narration: 'Eu joguei isso no FinMoovi e ele me mostrou que o saque ficou no topo da lista.' },
   ],
 };
-// ⚠️ O TikTok está FORA de `REDES` (ordem do dono) mas continua a ser medido — por isso
-// esta busca também olha para ele. Ver `REDE_TIKTOK`.
-const rede = (id) => (id === 'tiktok' ? REDE_TIKTOK : REDES.find((r) => r.id === id));
+// ⚠️ Desde 26/08 o TikTok voltou a `REDES`, mas a busca aceita os dois nomes: o canal novo
+// (`zernio-tiktok`, que publica) e o antigo (`tiktok`, do app reprovado). Ver `REDE_TIKTOK`.
+const rede = (id) => REDES.find((r) => r.id === id) || (/tiktok/.test(id) ? REDE_TIKTOK : undefined);
 
 console.log('\n6. A TABELA DAS OITO REDES — quem entra, quem não, e a que horas');
 
 {
-  ok('são sete redes a receber', REDES.length === 7, `são ${REDES.length}`);
+  ok('são oito redes a receber', REDES.length === 8, `são ${REDES.length}`);
   ok('e são exatamente as combinadas',
-    REDES.map((r) => r.id).join(',') === 'instagram,facebook,linkedin-page,threads,telegram,pinterest,bluesky',
+    REDES.map((r) => r.id).join(',') === 'instagram,zernio-tiktok,facebook,linkedin-page,threads,telegram,pinterest,bluesky',
     REDES.map((r) => r.id).join(','));
   /**
    * 🔴 O X FICA DE FORA POR ORDEM DO DONO (07/08): desde 02/2026 cobra US$ 0,20 por post
@@ -222,23 +222,26 @@ console.log('\n6. A TABELA DAS OITO REDES — quem entra, quem não, e a que hor
     !REDES.some((r) => r.id === 'x') && Boolean(REDE_DE_FORA.x));
   ok('e está escrito PORQUÊ, não só que não entra', /0,20|link/i.test(REDE_DE_FORA.x));
   /**
-   * 🔴 E O TIKTOK TAMBÉM NÃO, POR ORDEM DIRETA DO DONO (07/08): *"não quero enviar nada
-   * até eles nos dar autorização para postar"* — **nem em privado**. Isto revoga o §12-C,
-   * que permitia 1 por dia em `SELF_ONLY`.
+   * ✅ 26/08/2026 — O TIKTOK VOLTOU, e a fechadura mudou de lado.
    *
-   * ⚠️ Esta prova é a fechadura. Se alguém repuser o TikTok na tabela a olhar para o
-   * §12-C (que continua escrito no documento), ela acende antes de sair um vídeo.
+   * De 07/08 a 26/08 esta prova exigia o CONTRÁRIO: que o TikTok não recebesse nada, nem em
+   * privado, por ordem do dono enquanto a auditoria não saísse. **A ordem foi revogada por
+   * ele em 26/08** (*"podemos religar o TikTok pra valer e a sério"*), depois de a
+   * publicação passar a sair pelo app já aprovado do Zernio.
+   *
+   * 🔴 **A NOVA FECHADURA É OUTRA, e é mais perigosa do que a antiga:** existem DOIS canais
+   * de TikTok no Multipost com o mesmo nome no ecrã. O antigo (`tiktok`) é do nosso app,
+   * **reprovado três vezes**, e publica em privado. Quem publica a sério é `zernio-tiktok`.
+   * Trocar um pelo outro não dá erro nenhum — dá vídeos privados que ninguém vê.
    */
-  ok('🔴 o TikTok NÃO recebe nada enquanto a auditoria não sair — nem em privado',
-    !REDES.some((r) => r.id === 'tiktok') && Boolean(REDE_DE_FORA.tiktok));
-  ok('e está escrito que é ordem do dono, e que vale para o privado também',
-    /dono/i.test(REDE_DE_FORA.tiktok) && /privado/i.test(REDE_DE_FORA.tiktok));
-  /**
-   * ⚠️ MAS ELE FICA PRONTO. As opções dele continuam medidas aqui em baixo — senão, no dia
-   * em que a auditoria passasse, religava-se um TikTok que ninguém provava há meses.
-   */
-  ok('⏸️ o TikTok continua guardado e pronto para voltar ao minuto 12',
-    REDE_TIKTOK.id === 'tiktok' && REDE_TIKTOK.minutos === 12 && typeof REDE_TIKTOK.legenda === 'function');
+  ok('✅ o TikTok recebe — e pelo canal do ZERNIO, não pelo do app reprovado',
+    REDES.some((r) => r.id === 'zernio-tiktok') && !REDES.some((r) => r.id === 'tiktok'));
+  ok('🔴 e o canal ANTIGO continua de fora, com o motivo escrito',
+    Boolean(REDE_DE_FORA.tiktok) && /antigo|reprovad/i.test(REDE_DE_FORA.tiktok));
+  ok('e está escrito que quem publica agora é o zernio-tiktok',
+    /zernio-tiktok/.test(REDE_DE_FORA.tiktok));
+  ok('o TikTok está no minuto 12, com legenda própria',
+    REDE_TIKTOK.id === 'zernio-tiktok' && REDE_TIKTOK.minutos === 12 && typeof REDE_TIKTOK.legenda === 'function');
 
   ok('o Instagram é a âncora das 19h (minuto zero)', rede('instagram').minutos === 0);
   const minutos = REDES.map((r) => r.minutos);
@@ -308,7 +311,7 @@ console.log('\n7. A MÍDIA DE CADA REDE — e a ORDEM, que no Pinterest é a reg
    * ⚠️ O TELEGRAM SAIU DESTA LISTA EM 11/08 e passou a ter secção própria (a 22): ele é o
    * único com TETO DE TAMANHO, e por isso o que leva depende do peso do ficheiro.
    */
-  for (const id of ['instagram', 'tiktok', 'facebook', 'linkedin-page', 'threads']) {
+  for (const id of ['instagram', 'zernio-tiktok', 'facebook', 'linkedin-page', 'threads']) {
     const m = midiasDaRede(rede(id), { media: MEDIA, capa: CAPA });
     ok(`${id}: leva só o vídeo`, m.midias.length === 1 && m.midias[0] === MEDIA);
   }
@@ -317,13 +320,24 @@ console.log('\n7. A MÍDIA DE CADA REDE — e a ORDEM, que no Pinterest é a reg
 console.log('\n8. AS OPÇÕES DE CADA REDE — perguntadas ao servidor, não deduzidas');
 
 {
-  const tk = opcoesDaRede(rede('tiktok'), { titulo: 'Um título qualquer' });
+  const LEGENDA_TK = 'Uma legenda de teste. #financas #FinMoovi';
+  const tk = opcoesDaRede(rede('zernio-tiktok'), { titulo: 'Um título qualquer', legenda: LEGENDA_TK });
   /**
-   * 🔴 ENQUANTO A AUDITORIA NÃO SAIR, O TIKTOK SÓ ACEITA PRIVADO. Não é excesso de zelo:
-   * foi a segunda parede de 07/08 — "App not approved for public posting". Se alguém
-   * puser PUBLIC_TO_EVERYONE antes da aprovação, volta a falhar todos os dias em silêncio.
+   * ✅ 26/08/2026 — PÚBLICO. Até 25/08 esta prova exigia `SELF_ONLY`, porque o nosso app não
+   * estava aprovado e o TikTok recusava tudo o que não fosse privado ("App not approved for
+   * public posting", a 2ª parede de 07/08). Quem publica agora é o app aprovado do Zernio.
    */
-  ok('🔴 TikTok: privado enquanto a auditoria não sair', tk.privacy_level === 'SELF_ONLY');
+  ok('✅ TikTok: publica PÚBLICO (o app do Zernio é aprovado)',
+    tk.privacy_level === 'PUBLIC_TO_EVERYONE');
+  /**
+   * 🔴 A PROVA QUE FALTAVA E QUE CUSTOU UMA TARDE: sem `description`, o vídeo chega ao
+   * TikTok **mudo** — sem legenda e sem hashtags. O `title` (nome do Postiz) atravessa e dá
+   * a ilusão de que o texto foi junto. Os nomes que o Zernio lê são `description`/`content`.
+   */
+  ok('🔴 TikTok: a legenda vai em `description` E em `content` (nomes do Zernio)',
+    tk.description === LEGENDA_TK && tk.content === LEGENDA_TK);
+  ok('🔴 TikTok: e o `__type` acompanha o canal, senão publica pelo app reprovado',
+    tk.__type === 'zernio-tiktok');
   // ⚠️ Ligado + privado = recusa. Medido.
   ok('🔴 TikTok: "conteúdo de marca" DESLIGADO (ligado + privado = recusa)',
     tk.brand_content_toggle === false && tk.brand_organic_toggle === false);
@@ -339,7 +353,9 @@ console.log('\n8. AS OPÇÕES DE CADA REDE — perguntadas ao servidor, não ded
     exigidasPeloTikTok.every((c) => tk[c] !== undefined),
     exigidasPeloTikTok.filter((c) => tk[c] === undefined).join(', '));
   ok('TikTok: o título é cortado no limite dele, sem partir palavra',
-    opcoesDaRede(rede('tiktok'), { titulo: 'palavra '.repeat(40) }).title.length <= MAX_TITULO_TIKTOK);
+    opcoesDaRede(rede('zernio-tiktok'), { titulo: 'palavra '.repeat(40) }).title.length <= MAX_TITULO_TIKTOK);
+  // 🔴 O servidor recusa com 400 acima de 90 — medido em 26/08 com um título de 96.
+  ok('TikTok: e esse limite é 90, que é o que o servidor aceita', MAX_TITULO_TIKTOK <= 90);
 
   const pin = opcoesDaRede(rede('pinterest'), { titulo: 'T', quadroDoPinterest: '110528' });
   ok('Pinterest: leva o quadro, que é obrigatório', pin.board === '110528');
@@ -1202,7 +1218,10 @@ console.log('\n23. A CONTA CERTA — duas marcas no mesmo Multipost (24/08)');
    * um canal de fora sem se queixar.
    */
   const CANAIS = [
+    // ⚠️ OS DOIS TIKTOKS EXISTEM MESMO, e com o MESMO nome no ecrã — é assim na conta do
+    // Ed desde 26/08. O 'a' é o do app próprio (reprovado); o 'z' é o que publica.
     { id: 'a', identifier: 'tiktok', name: 'finmoovi', profile: 'finmoovi' },
+    { id: 'z', identifier: 'zernio-tiktok', name: 'finmoovi', profile: 'finmoovi' },
     { id: 'b', identifier: 'pinterest', name: 'finmoovi', profile: 'finmoovi' },
     { id: 'c', identifier: 'facebook', name: 'FinMoovi', profile: 'finmoovi' },
     { id: 'd', identifier: 'facebook', name: 'GoApexi1', profile: 'goapexi1' },
@@ -1230,8 +1249,15 @@ console.log('\n23. A CONTA CERTA — duas marcas no mesmo Multipost (24/08)');
     canalDaRede(AO_CONTRARIO, rede('instagram')).id === 'f'
     && canalDaRede(AO_CONTRARIO, rede('facebook')).id === 'c');
 
-  ok('🔑 as 9 redes da tabela acham todas a conta do FinMoovi',
-    REDES.every((r) => canalDaRede(CANAIS, r)?.id) && canalDaRede(CANAIS, REDE_TIKTOK)?.id === 'a');
+  ok('🔑 as redes da tabela acham todas a conta do FinMoovi',
+    REDES.every((r) => canalDaRede(CANAIS, r)?.id));
+  /**
+   * 🔴 A PROVA MAIS IMPORTANTE DESTA SECÇÃO desde 26/08: com DOIS canais de TikTok com o
+   * mesmo nome, tem de sair o do **Zernio**. Escolher o outro não dá erro nenhum — dá
+   * vídeos privados, publicados por um app que o TikTok reprovou três vezes.
+   */
+  ok('🔴 entre os DOIS TikToks, escolhe o do Zernio — nunca o do app reprovado',
+    canalDaRede(CANAIS, REDE_TIKTOK)?.id === 'z');
 
   // ⚠️ O Bluesky é o único com o domínio colado ao utilizador — e por isso o único que
   // uma comparação só pelo `profile` deixaria de fora.

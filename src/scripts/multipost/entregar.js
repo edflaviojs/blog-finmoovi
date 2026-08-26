@@ -874,18 +874,35 @@ export const MAX_TITULO_PINTEREST = 95;
  * versão e apertar um limite, o robô segue o dele — não o que está escrito aqui.
  */
 /**
- * 🔴 O TIKTOK, PRONTO E À ESPERA — mas FORA da tabela por ordem do dono (ver `REDE_DE_FORA`).
+ * ✅ O TIKTOK VOLTOU À TABELA — 26/08/2026, ordem do dono: *"podemos religar o TikTok pra
+ * valer e a sério"*. Ele fica aqui, numa constante própria, porque as provas de mesa o
+ * medem pelo nome; e continua a entrar em `REDES`, no minuto 12.
  *
- * Ele vive aqui, e não apagado, de propósito: assim as provas de mesa continuam a medir as
- * opções dele (os oito campos obrigatórios, o privado, a marca desligada) e nada se
- * estraga em silêncio enquanto a auditoria não sai. **Religar é acrescentá-lo a `REDES`**,
- * no lugar dele — o minuto 12, entre o Instagram e o Facebook.
+ * ═══ 🔴 O QUE MUDOU, E POR QUE NÃO BASTAVA REPOR A LINHA ═══
+ * O `id` deixou de ser `'tiktok'` e passou a ser **`'zernio-tiktok'`**, e isto não é
+ * cosmética: são **dois canais diferentes** no Multipost, com o mesmo nome "finmoovi" no
+ * ecrã.
+ *   · `tiktok`        — o canal ANTIGO, do nosso app próprio, **REPROVADO 3 vezes** pelo
+ *                       TikTok (a última em 25/08, por *"personal or company internal
+ *                       use"*). Publica só em privado, com a conta privada, 5/dia.
+ *   · `zernio-tiktok` — o canal NOVO, que sai pelo app **já aprovado** do Zernio. Foi por
+ *                       aqui que saiu a 1ª publicação pública de verdade, em 26/08
+ *                       (`tiktok.com/@finmoovi/video/7678287783979646230`).
+ *
+ * ⚠️ **Religar apontando ao `id` antigo publicaria pelo caminho que não funciona** — e em
+ * silêncio, porque o canal existe e aceita o pedido. Foi a armadilha nº1 desta mudança.
+ *
+ * ⚠️ **O Multipost MENTE sobre este canal:** `/integration-settings/{id}` responde *"No
+ * additional settings required"*, e depois o `POST` recusa com 400 a exigir os oito campos
+ * do TikTok na mesma. A fonte da verdade é a recusa, não a consulta. (Medido em 26/08.)
  */
-export const REDE_TIKTOK = { id: 'tiktok', nome: 'TikTok', minutos: 12, limite: 2000, midia: 'video', legenda: legendaTikTok };
+// ⚠️ `limite` 2200 e não 2000: foi o servidor que disse, ao ser perguntado em 26/08. O número
+// verdadeiro é sempre o dele (`maxLength`), este é só a rede de segurança.
+export const REDE_TIKTOK = { id: 'zernio-tiktok', nome: 'TikTok', minutos: 12, limite: 2200, midia: 'video', legenda: legendaTikTok };
 
 export const REDES = [
   { id: 'instagram', nome: 'Instagram', minutos: 0, limite: 2200, midia: 'video', legenda: montarLegenda },
-  // ⬅️ o lugar do TikTok (minuto 12) fica VAGO. Ver `REDE_TIKTOK` e `REDE_DE_FORA`.
+  REDE_TIKTOK, // minuto 12 — voltou em 26/08. Ver o bloco acima: o id é `zernio-tiktok`.
   { id: 'facebook', nome: 'Facebook', minutos: 26, limite: 63206, midia: 'video', legenda: legendaFormal },
   { id: 'linkedin-page', nome: 'LinkedIn', minutos: 43, limite: 3000, midia: 'video', legenda: legendaLinkedIn },
   { id: 'threads', nome: 'Threads', minutos: 58, limite: 500, midia: 'video', legenda: legendaThreads },
@@ -905,24 +922,20 @@ export const REDES = [
  * daqui têm link: ~US$ 6/mês só para o dono. Decisão dele em 07/08.
  * 🔑 Publicar à mão pelo site continua GRÁTIS — o que se paga é a API. Ver IMPL26 §12-F.
  *
- * ═══ TIKTOK — 🔴 ORDEM DIRETA DO DONO EM 07/08 ═══
- * *"não quero enviar nada até eles nos dar autorização para postar"* — **nem em privado.**
+ * ═══ TIKTOK — ✅ SAIU DESTA LISTA EM 26/08/2026 ═══
+ * Esteve aqui de 07/08 a 26/08 por ordem do dono: *"não quero enviar nada até eles nos dar
+ * autorização para postar"* — nem em privado. **A razão desapareceu, não foi ignorada:** já
+ * não dependemos da autorização deles. A publicação passou a sair pelo app **já aprovado do
+ * Zernio**, e o argumento do §12-C (o empurrão do algoritmo acontece no momento da
+ * publicação e não se recupera) deixou de jogar contra — agora o vídeo nasce **público**.
  *
- * ⚠️ Isto REVOGA a decisão anterior (§12-C), que era publicar no máximo 1 por dia em
- * `SELF_ONLY` para manter o canal vivo. Ele é o dono da conta e do risco; a ordem nova
- * manda. Está escrito aqui para ninguém "consertar" isto mais tarde a olhar para o §12-C.
- *
- * ⚠️ **O que fica pronto e à espera:** as opções do TikTok (`opcoesDaRede`), o texto
- * (`legendaTikTok`) e as provas de mesa continuam todos aqui, com os oito campos
- * obrigatórios já certos e conferidos contra o servidor. **Voltar a ligar é UMA linha**:
- * repor a rede em `REDES`, no minuto 12, e tirar esta entrada.
- * ⚠️ E antes de repor: reler o §12-C, porque o argumento dele continua de pé — o TikTok dá
- * o empurrão do algoritmo **no momento da publicação**, e vídeo que nasce privado perde
- * esse momento e não o recupera.
+ * 🔴 **O canal `tiktok` antigo continua ligado no Multipost e NÃO deve receber nada.** Ele é
+ * do nosso app próprio, reprovado três vezes. Se alguém o puser em `REDES`, os vídeos saem
+ * privados sem ninguém dar por isso. Ver `REDE_TIKTOK` para a diferença entre os dois.
  */
 export const REDE_DE_FORA = {
   x: 'cobra US$ 0,20 por post com link (decisão do dono, 07/08)',
-  tiktok: 'ordem do dono, 07/08: nada é enviado — nem em privado — enquanto a auditoria não sair',
+  tiktok: 'é o canal ANTIGO, do app próprio reprovado — quem publica agora é `zernio-tiktok`',
 };
 
 /**
@@ -1503,26 +1516,42 @@ export function storiesEmFalta(registoDoSlug, redes = REDES, stories = STORIES) 
  *   · Instagram — post_type
  *   · os outros — nada obrigatório
  */
-export function opcoesDaRede(rede, { titulo, quadroDoPinterest, link } = {}) {
+export function opcoesDaRede(rede, { titulo, quadroDoPinterest, link, legenda } = {}) {
   switch (rede.id) {
     case 'tiktok':
+    case 'zernio-tiktok':
       /**
-       * 🔴 `SELF_ONLY` ENQUANTO A AUDITORIA NÃO SAIR, e não é excesso de zelo: enquanto o
-       * app não for aprovado, o TikTok RECUSA a publicação que não seja privada — e ainda
-       * exige que **a própria conta** esteja privada no momento em que ela sai. Foi essa a
-       * segunda parede de 07/08 (IMPL26 §3).
+       * ✅ 26/08/2026 — PASSOU A `PUBLIC_TO_EVERYONE`. Até 25/08 era `SELF_ONLY` e não era
+       * zelo a mais: com o nosso app por aprovar, o TikTok RECUSAVA tudo o que não fosse
+       * privado e ainda exigia a **conta** privada (a 2ª parede de 07/08, IMPL26 §3). Agora
+       * quem publica é o app **aprovado** do Zernio e essas duas exigências caíram — provado
+       * no ar em 26/08 com o vídeo `7678287783979646230`.
+       *
+       * ⚠️ **`description` E `content` são os nomes do ZERNIO, e é por eles que a legenda
+       * chega.** O Postiz passa estas opções **cruas** para o `platformSpecificData` do
+       * Zernio, por isso qualquer campo dele funciona desde que se escreva com o nome dele.
+       * Sem estes dois, o vídeo sai **sem legenda e sem hashtags** — foi exactamente o que
+       * aconteceu nos primeiros testes de 25/08, e demorou a perceber porque o `title` (nome
+       * do Postiz) chegava e dava a ilusão de que o texto ia junto.
+       * 🔴 **`title` tem tecto de 90 caracteres** e o servidor recusa com 400 acima disso —
+       * por isso a legenda comprida vai em `description`, e o `title` vai cortado.
        *
        * ⚠️ `brand_content_toggle` TEM de ficar desligado: ligado + privado = recusa. Medido.
        * ⚠️ `video_made_with_ai: true` porque a VOZ é sintetizada e o roteiro é escrito por
-       *    IA. Declarar é o lado seguro — ainda mais com o app em auditoria — e enquanto os
-       *    vídeos nascem privados não custa alcance nenhum.
+       *    IA. Declarar é o lado honesto e o TikTok mostra o selo — já visível no vídeo de
+       *    26/08. **Agora que o vídeo nasce público, isto TEM custo de alcance possível e
+       *    mesmo assim fica**: é uma declaração verdadeira.
        * ⚠️ `content_posting_method: DIRECT_POST` — em "UPLOAD" fica um rascunho à espera de
-       *    alguém pegar no telemóvel, que para um robô é o mesmo que não publicar.
+       *    alguém pegar no telemóvel, que para um robô é o mesmo que não publicar. E o
+       *    rascunho do TikTok chega **sem legenda nenhuma** (medido em 26/08), o que o torna
+       *    ainda pior do que parecia.
        */
       return {
-        __type: 'tiktok',
+        __type: rede.id,
         title: cortarNaPalavra(titulo || '', MAX_TITULO_TIKTOK),
-        privacy_level: 'SELF_ONLY',
+        description: legenda || '',
+        content: legenda || '',
+        privacy_level: 'PUBLIC_TO_EVERYONE',
         duet: false,
         stitch: false,
         comment: true,
@@ -1868,7 +1897,26 @@ async function inspecionar() {
         : Object.keys(opcoesDaRede(rede, { titulo: 'x', quadroDoPinterest: 'x' }));
       const inventadas = nossas.filter((n) => n !== '__type' && !Object.prototype.hasOwnProperty.call(props, n));
       log(`   o que nós mandamos: ${nossas.join(', ')}`);
-      if (inventadas.length) log(`   🔴 ELE NÃO CONHECE: ${inventadas.join(', ')} — vai ser deitado fora EM SILÊNCIO.`);
+      /**
+       * 🔴 26/08/2026 — AQUI O INSPETOR DAVA UM ALARME FALSO, E EU CAÍ NELE.
+       *
+       * Para o `zernio-tiktok` o servidor responde *"No additional settings required"* —
+       * ou seja, `properties` vem VAZIO — e este aviso concluía que os treze campos iam
+       * ser deitados fora. **É mentira dele, e está provado das duas pontas:**
+       *   · mandar sem eles → o `POST` recusa com **400** a exigir os oito do TikTok;
+       *   · mandar com eles → publicou, com legenda e hashtags
+       *     (`tiktok.com/@finmoovi/video/7678287783979646230`, 26/08).
+       *
+       * Deixar o vermelho aqui seria mandar o próximo a caçar um fantasma — foi o que me
+       * aconteceu duas vezes no mesmo dia. Por isso, neste canal, o aviso explica-se em vez
+       * de acusar. Nos outros canais nada muda.
+       */
+      if (inventadas.length && /zernio/.test(rede.id)) {
+        log(`   ⚠️ o servidor diz não conhecer: ${inventadas.join(', ')}`);
+        log(`   ✅ mas é ELE que mente: sem estes campos o POST dá 400, e com eles publicou (26/08). Ignorar este aviso.`);
+      } else if (inventadas.length) {
+        log(`   🔴 ELE NÃO CONHECE: ${inventadas.join(', ')} — vai ser deitado fora EM SILÊNCIO.`);
+      }
       const emFalta = obrig.filter((n) => !nossas.includes(n));
       if (emFalta.length) log(`   🔴 FALTA MANDAR (obrigatórias): ${emFalta.join(', ')}`);
       if (o.tools?.length) log(`   ferramentas: ${o.tools.map((x) => x.methodName).join(', ')}`);
@@ -2262,6 +2310,9 @@ async function main() {
           quandoUTC: hora,
           settings: opcoesDaRede(rede, {
             titulo,
+            // ⚠️ O TikTok pelo Zernio precisa da legenda DENTRO das opções (`description`),
+            // além de a levar no corpo. Sem isto o vídeo sai mudo. Ver `opcoesDaRede`.
+            legenda: texto,
             link: linkDoVideo(roteiro).url,
             quadroDoPinterest: rede.id === 'pinterest' ? (await quadroDoPinterest(k, canal.id)).id : undefined,
           }),
