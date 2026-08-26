@@ -1,0 +1,212 @@
+{
+  "slug": "kw-5-erros-na-lista-de-compras-que-te-custam-r-500-mes",
+  "term": "5 erros na lista de compras que te custam R$ 500/mês",
+  "category": "mindset",
+  "keyword": "compras",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Sabe onde *cinco erros* no mercado te fazem perder quinhentos reais por mês?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "castelo-cartas",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Sabe onde cinco erros no mercado te fazem perder quinhentos reais por mês? Nas compras feitas com pressa.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "onde",
+          "visual": {
+            "type": "statement",
+            "text": "Cinco erros, R$ 500 por mês"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "mercado",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "castelo-cartas"
+          }
+        },
+        {
+          "anchor": "compras",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "A gente entra correndo, compra sem olhar o que já tem em casa, vê promoção, esquece o que faltava e vai no impulso.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "correndo",
+          "visual": {
+            "type": "icon",
+            "icon": "clock"
+          }
+        },
+        {
+          "anchor": "casa",
+          "visual": {
+            "type": "statement",
+            "text": "Você já tinha em casa"
+          }
+        },
+        {
+          "anchor": "impulso",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          },
+          "sfx": "alert"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "E aí esse impulso vira cinco erros. Comprar repetido, pegar promoção sem precisar, ir com fome, esquecer a lista e levar a embalagem maior achando que é vantagem.",
+      "durationSec": 10.8,
+      "shots": [
+        {
+          "anchor": "cinco",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "castelo-cartas"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "promoção",
+          "visual": {
+            "type": "statement",
+            "text": "Promoção não é economia"
+          }
+        },
+        {
+          "anchor": "embalagem",
+          "visual": {
+            "type": "statement",
+            "text": "Maior nem sempre compensa"
+          },
+          "sfx": "coin"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Foi aí que eu joguei minhas compras no FinMoovi e ele me mostrou que isso dava quinhentos reais.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "joguei",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Dashboard do FinMoovi mostrando o resumo dos gastos com compras e o impacto acumulado."
+          }
+        },
+        {
+          "anchor": "mostrou",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "castelo-cartas"
+          }
+        },
+        {
+          "anchor": "quinhentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu? Procura o FinMoovi. São sete dias de graça.",
+      "durationSec": 4.6,
+      "shots": [
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "statement",
+            "text": "Quanto você perde?"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          }
+        },
+        {
+          "anchor": "graça",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Esses quinhentos reais vão embora quando você faz as compras no automático. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "quinhentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          }
+        },
+        {
+          "anchor": "automático",
+          "visual": {
+            "type": "statement",
+            "text": "Compras no automático custam caro"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "outros",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro sem controle é dos outros"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Descubra quanto você perde",
+    "target": "app"
+  },
+  "totalDurationSec": 45.3
+}
