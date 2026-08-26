@@ -214,5 +214,11 @@
     "gancho": "e-serio-que",
     "turno": "manha",
     "em": "2026-08-26T05:05:26.118Z"
+  },
+  {
+    "situacao": "parcela-atrasada",
+    "gancho": "e-serio-que",
+    "turno": "noite",
+    "em": "2026-08-26T05:09:07.013Z"
   }
 ]

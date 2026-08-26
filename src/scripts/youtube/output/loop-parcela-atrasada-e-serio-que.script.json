@@ -1,0 +1,117 @@
+{
+  "slug": "loop-parcela-atrasada-e-serio-que",
+  "formato": "loop16",
+  "term": "A parcela que atrasou",
+  "category": "vida",
+  "keyword": "ATRASO",
+  "situacao": "parcela-atrasada",
+  "gancho": "e-serio-que",
+  "ganchoFamilia": "é sério que",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "domino",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "É sério que ninguém está falando de boleto vencido sábado vi",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "sério",
+          "visual": {
+            "type": "statement",
+            "text": "Boleto vencido no sábado"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "ninguém",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "domino"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu fiquei preocupado em casa com contas e banco fechado",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "fiquei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "domino"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "preocupado",
+          "visual": {
+            "type": "statement",
+            "text": "Banco fechado me apertou"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então hoje confiro tudo antes e uso app para não esquecer",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "confiro",
+          "visual": {
+            "type": "statement",
+            "text": "Agora confiro antes"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "esquecer",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "domino"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "É sério que ninguém falou de boleto vencido comigo antes",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "sério",
+          "visual": {
+            "type": "statement",
+            "text": "Ninguém falou do boleto"
+          }
+        },
+        {
+          "anchor": "ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "Boleto vencido no sábado"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
