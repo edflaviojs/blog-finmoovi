@@ -5,6 +5,7 @@ description: >-
   de finanzas gratis y fácil – en pocos minutos al día.
 tickerHeadline: La app que pone tus finanzas en orden
 image: /images/posts/descubra-como-controlar-seu-dinheiro-com-apps-gratuitos.webp
+imageAlt: "Móvil con app financiera, portátil, taza de café y monitor en escritorio."
 category: orcamento
 locale: es
 tags:

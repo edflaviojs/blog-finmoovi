@@ -5,6 +5,7 @@ description: >-
   the bank. Practical tips, real‑life examples, and a step‑by‑step plan.
 tickerHeadline: How to stay on budget
 image: /images/posts/dia-dos-pais-planeje-gastos-sem-apertar-o-orcamento.webp
+imageAlt: "Laptop and monitor with colorful screens on a wooden desk with coffee cups and plants."
 category: dicas
 locale: en
 tags:

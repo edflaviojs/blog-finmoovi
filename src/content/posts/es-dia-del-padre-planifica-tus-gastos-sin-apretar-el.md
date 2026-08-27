@@ -5,6 +5,7 @@ description: >-
   presupuesto. Tips prácticos, ejemplos reales y plan paso a paso.
 tickerHeadline: Cómo no exceder el presupuesto
 image: /images/posts/dia-dos-pais-planeje-gastos-sem-apertar-o-orcamento.webp
+imageAlt: "Escritorio con portátil, monitor, tazas de café y plantas junto a ventana."
 category: dicas
 locale: es
 tags:

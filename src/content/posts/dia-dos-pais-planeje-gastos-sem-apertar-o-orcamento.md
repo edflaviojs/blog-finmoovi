@@ -6,6 +6,7 @@ description: >-
   passo a passo.
 tickerHeadline: Como não estourar o orçamento
 image: /images/posts/dia-dos-pais-planeje-gastos-sem-apertar-o-orcamento.webp
+imageAlt: "Escritório com notebook, monitor, xícaras de café e plantas sobre mesa de madeira."
 category: dicas
 locale: pt
 tags:

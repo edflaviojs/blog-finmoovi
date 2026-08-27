@@ -3,6 +3,7 @@ title: "Por que não vejo progresso na minha poupança?"
 description: "Descubra como acompanhar metas de poupança com relatórios automáticos e evitar surpresas ao final do mês."
 tickerHeadline: "O truque que falta na sua meta"
 image: "/images/posts/por-que-nao-vejo-progresso-na-minha-poupanca.webp"
+imageAlt: "Casal sorridente no sofá usando celulares e tablet, ambiente doméstico com janela e planta."
 category: "ferramentas"
 locale: "pt"
 tags: ["metas de poupança","relatórios financeiros","acompanhamento de gastos","FinMoovi","controle de despesas","metas","progresso","acompanhamento","objetivos","finmoovi","finanças pessoais"]

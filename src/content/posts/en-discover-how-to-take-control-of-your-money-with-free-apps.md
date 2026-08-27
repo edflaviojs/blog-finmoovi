@@ -5,6 +5,7 @@ description: >-
   easy‑to‑use finance app – just a few minutes a day.
 tickerHeadline: The app that puts your finances in order
 image: /images/posts/descubra-como-controlar-seu-dinheiro-com-apps-gratuitos.webp
+imageAlt: "Smartphone displaying finance app on desk with coffee cup and laptop."
 category: orcamento
 locale: en
 tags:

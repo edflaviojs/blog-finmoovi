@@ -4,6 +4,7 @@ description: >-
   Aprende a controlar tus gastos en la tarjeta de crédito con consejos prácticos
   y efectivos para una mejor gestión financiera.
 image: /images/posts/dicas-para-controlar-gastos-no-cartao-de-credito.webp
+imageAlt: "Tres mujeres sonrientes en mesa blanca con tarjeta de crédito y portátil."
 category: dicas
 locale: es
 tags:

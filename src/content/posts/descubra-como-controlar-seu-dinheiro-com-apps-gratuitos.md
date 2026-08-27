@@ -5,6 +5,7 @@ description: >-
   de finanças grátis e fácil de usar – tudo em poucos minutos por dia.
 tickerHeadline: O app que transforma sua conta em ordem
 image: /images/posts/descubra-como-controlar-seu-dinheiro-com-apps-gratuitos.webp
+imageAlt: "Smartphone exibe app financeiro em mesa com café, laptop e monitor colorido."
 category: orcamento
 locale: pt
 tags:

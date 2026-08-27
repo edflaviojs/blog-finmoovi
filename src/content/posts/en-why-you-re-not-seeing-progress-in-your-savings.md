@@ -3,6 +3,7 @@ title: "Why You’re Not Seeing Progress in Your Savings"
 description: "Learn how automatic reports can track your savings goals in real‑time and stop month‑end surprises."
 tickerHeadline: "The missing trick for your goal"
 image: "/images/posts/por-que-nao-vejo-progresso-na-minha-poupanca.webp"
+imageAlt: "Couple on couch using smartphones, man in grey shirt, woman in brown sweater."
 category: "ferramentas"
 locale: "en"
 tags: ["savings goals","financial reports","expense tracking","FinMoovi","expense control","goals","progress","monitoring","objectives","finmoovi","personal finance"]

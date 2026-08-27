@@ -3,6 +3,7 @@ title: "¿Por qué no veo progreso en mi ahorro?"
 description: "Descubre cómo seguir tus metas de ahorro con informes automáticos y evitar sorpresas al final del mes."
 tickerHeadline: "El truco que falta en tu meta"
 image: "/images/posts/por-que-nao-vejo-progresso-na-minha-poupanca.webp"
+imageAlt: "Pareja sonriente en sofá revisando teléfonos móviles y tabletas en sala iluminada."
 category: "ferramentas"
 locale: "es"
 tags: ["metas de ahorro","informes financieros","seguimiento de gastos","FinMoovi","control de gastos","metas","progreso","seguimiento","objetivos","finmoovi","finanzas personales"]

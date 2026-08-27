@@ -4,6 +4,7 @@ definition: "What cost of living is and how it shows up in your everyday money â
 title: "cost of living - Financial Glossary"
 description: "What cost of living is and how it shows up in your everyday money â€” explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/custo-de-vida.webp"
+imageAlt: "Gold coins, pink bar chart, clock, and plant in glass jar on dark blue background"
 category: "basico"
 tags: ["cost of living", "glossary", "finance"]
 author: "FinMoovi"

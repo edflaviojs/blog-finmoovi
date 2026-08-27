@@ -4,6 +4,7 @@ definition: "What financial planning is and how it shows up in your everyday mon
 title: "financial planning - Financial Glossary"
 description: "What financial planning is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/planejamento-financeiro.webp"
+imageAlt: "Stacks of gold coins, orange bar chart, and a growing plant in a glass jar."
 category: "basico"
 tags: ["financial planning", "glossary", "finance"]
 author: "FinMoovi"

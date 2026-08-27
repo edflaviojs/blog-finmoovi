@@ -4,6 +4,7 @@ description: >-
   Learn to control your credit card expenses with practical and effective tips
   for better financial management.
 image: /images/posts/dicas-para-controlar-gastos-no-cartao-de-credito.webp
+imageAlt: "Three smiling women at white table, one holding credit card, another using laptop."
 category: dicas
 locale: en
 tags:

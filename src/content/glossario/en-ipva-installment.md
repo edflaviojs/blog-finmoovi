@@ -4,6 +4,7 @@ definition: "What IPVA installment is and how it shows up in your everyday money
 title: "IPVA installment - Financial Glossary"
 description: "What IPVA installment is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/parcelamento-ipva.webp"
+imageAlt: "Gold coins, empty vase, plant, and jar of coins with red arrow."
 category: "basico"
 tags: ["IPVA installment", "glossary", "finance"]
 author: "FinMoovi"
