@@ -81,7 +81,7 @@ A veces aparecen gastos inesperados (una visita al médico, una reparación del 
 ---
 
 **Conclusión**  
-Dividir tu presupuesto en ciclos de siete días te ayuda a vivir con mayor tranquilidad, especialmente cuando tu salario llega cada viernes. La app **FinMoovi** simplifica el proceso: captura, clasificación y seguimiento en tiempo real, todo en tu móvil. Pon en práctica la micro‑acción de 5 minutos y verás cómo, semana a semana, tu dinero empieza a trabajar para ti y no al revés.
+Dividir tu presupuesto en ciclos de siete días te ayuda a vivir con mayor tranquilidad, especialmente cuando tu salario llega cada viernes. La app **FinMoovi** simplifica el proceso: captura, clasificación y [seguimiento](/es/posts/es-por-que-no-veo-progreso-en-mi-ahorro) en tiempo real, todo en tu móvil. Pon en práctica la micro‑acción de 5 minutos y verás cómo, semana a semana, tu dinero empieza a trabajar para ti y no al revés.
 
 > **Tip extra:** Si tienes ingresos variables (por ejemplo, trabajos freelance), simplemente registra cada entrada cuando llegue y la app ajustará automáticamente el presupuesto semanal.
 

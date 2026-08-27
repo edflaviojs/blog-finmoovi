@@ -53,7 +53,7 @@ FinMoovi ofrece una visión clara de tu consumo de energía a través de la func
 
 1. **Captura la factura** con la cámara del móvil – FinMoovi reconoce automáticamente el importe total y la fecha de vencimiento.  
 2. **Clasifica el gasto** como “Energía – Aire acondicionado”. La app crea una subcategoría que permite filtrar solo los gastos de refrigeración.  
-3. **Ajusta metas**: define un objetivo de reducción del **15 %** para el próximo trimestre. FinMoovi enviará [alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no) cuando el consumo supere la meta.  
+3. **Ajusta [metas](/es/posts/es-por-que-no-veo-progreso-en-mi-ahorro)**: define un objetivo de reducción del **15 %** para el próximo trimestre. FinMoovi enviará [alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no) cuando el consumo supere la meta.  
 4. **Visualiza el reporte**: en pocos clics tienes un panel que cruza la temperatura media (introducida manualmente) con el gasto real, facilitando decisiones rápidas.
 
 **Micro‑acción de 5 minutos**: abre FinMoovi, toma una foto de la última factura de luz, confirma la clasificación automática y fija la meta de [ahorro](/es/glossario/es-ahorro) “Aire acondicionado – Reducir 15 %”. En menos de cinco minutos ya tienes el punto de partida para monitorizar y mejorar tu consumo.

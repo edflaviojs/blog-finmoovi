@@ -62,7 +62,7 @@ This integration removes the need to type manually and guarantees every expense 
 ## Analyze and adjust your monthly budget
 1. **Compare the “Expected amount” with the actual spend**. If you see recurring gaps, adjust the expectation for the next month.
 2. **Use FinMoovi’s cash‑flow [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end)** to see where money comes in and goes out. Pie and bar charts are generated automatically, making the data easy to digest.
-3. **Set goals** – for example, cut leisure spending by 20 % or boost the emergency reserve by 10 % of a minimum salary. The app lets you create monthly targets and sends alerts when you’re close to the limit.
+3. **Set [goals](/en/posts/en-why-you-re-not-seeing-progress-in-your-savings)** – for example, cut leisure spending by 20 % or boost the emergency reserve by 10 % of a minimum salary. The app lets you create monthly targets and sends alerts when you’re close to the limit.
 
 According to [Investopedia](https://www.investopedia.com/terms/b/budget.asp), an effective budget “reflects an individual’s financial reality and allows for constant adjustments.” With a spreadsheet and FinMoovi, you get real‑time reality and the flexibility to tweak it.
 

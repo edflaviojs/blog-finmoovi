@@ -52,7 +52,7 @@ FinMoovi does more than just snap a photo of your bill. With **[smart capture](/
 
 ![Use technology to your advantage](/images/posts/horario-ideal-para-banho-e-economia-de-energia-em-2026-4.webp)
 
-- Set hourly consumption goals (e.g., “don’t exceed X kWh between 6 p.m. and 10 p.m.”).  
+- Set hourly consumption [goals](/en/posts/en-why-you-re-not-seeing-progress-in-your-savings) (e.g., “don’t exceed X kWh between 6 p.m. and 10 p.m.”).  
 - Receive push [reminders](/en/posts/en-forgot-to-pay-a-bill-how-to-fix-it-in-2026) when you’re close to the limit.  
 - View monthly reports that show consumption before and after timing changes.
 

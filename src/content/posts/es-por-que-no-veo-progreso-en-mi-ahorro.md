@@ -19,7 +19,7 @@ seo:
   keywords: ["metas de ahorro","informes financieros","seguimiento de gastos","FinMoovi","control de gastos","metas","progreso","seguimiento","objetivos","finmoovi","finanzas personales"]
 ---
 
-La forma más sencilla de seguir el progreso de tu meta de ahorro es usar **informes automáticos** que muestran, en tiempo real, el porcentaje acumulado y te avisan cuando vas atrasado. Así puedes ajustar tus gastos sin necesidad de hojas de cálculo complicadas ni cálculos manuales.
+La forma más sencilla de seguir el progreso de tu meta de [ahorro](/es/glossario/es-ahorro) es usar **informes automáticos** que muestran, en tiempo real, el porcentaje acumulado y te avisan cuando vas atrasado. Así puedes ajustar tus gastos sin necesidad de hojas de cálculo complicadas ni cálculos manuales.
 
 ## El problema que todos sentimos
 
@@ -43,7 +43,7 @@ Cada semana, FinMoovi genera un informe visual con gráficos de barras y líneas
 2. **Define el objetivo**: escribe “cerca de €4,500 (equivalente a tres salarios mensuales)” y elige el plazo de seis meses.  
 3. **Registra un gasto**: toma la foto del último ticket del supermercado o di “gasté 30 % de mi presupuesto de alimentación”. La app clasifica y actualiza el panel.  
 4. **Revisa el informe semanal**: toca “Informes” y observa el gráfico de progreso.  
-5. **Ajusta el ritmo**: si el informe muestra que vas un 10 % atrás, reduce un gasto pequeño (como ese snack diario) y registra el cambio.
+5. **Ajusta el ritmo**: si el informe muestra que vas un 10 % atrás, reduce un gasto pequeño (como ese snack diario) y registra el [cambio](/es/glossario/es-cambio).
 
 Dedica solo cinco minutos ahora para registrar tu último gasto en FinMoovi y verás el porcentaje actualizado al instante.
 
@@ -51,23 +51,23 @@ Dedica solo cinco minutos ahora para registrar tu último gasto en FinMoovi y ve
 
 | Aspecto | Antes de FinMoovi | Después de FinMoovi |
 |---------|-------------------|---------------------|
-| **Visibilidad** | Hoja de cálculo estática, difícil de interpretar | Panel dinámico con porcentajes claros |
+| **Visibilidad** | [Hoja de cálculo](/es/posts/es-migrando-de-la-hoja-de-calculo-a-una-app-financiera) estática, difícil de interpretar | Panel dinámico con porcentajes claros |
 | **Tiempo invertido** | 30 min a 1 h para actualizar la hoja | 2 min para registrar vía foto o voz |
-| **Precisión** | Errores de digitación y categorías manuales | Categorización automática con IA |
-| **Motivación** | Desánimo al no ver avance | Alertas positivas y gráficos de progreso |
+| **Precisión** | Errores de digitación y categorías manuales | [Categorización automática](/es/posts/es-tambien-olvidas-anotar-tus-gastos) con IA |
+| **Motivación** | Desánimo al no ver avance | [Alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no) positivas y gráficos de progreso |
 | **Decisión** | Retrasos recurrentes en las metas | Ajustes semanales basados en datos reales |
 
 ![Antes vs después: lo que cambia en la práctica](/images/posts/por-que-nao-vejo-progresso-na-minha-poupanca-4.webp)
 
 ## Datos que generan confianza
 
-Según Investopedia, el uso de **informes financieros automatizados** aumenta la probabilidad de cumplir metas en hasta un 35 % frente a métodos manuales. Además, la experiencia de usuarios de FinMoovi muestra que el 78 % logra alcanzar sus metas de ahorro en menos de la mitad del tiempo planificado, gracias al seguimiento visual constante.
+Según Investopedia, el uso de **informes financieros automatizados** aumenta la probabilidad de cumplir metas en hasta un 35 % frente a métodos manuales. Además, la experiencia de usuarios de FinMoovi muestra que el 78 % logra alcanzar sus [metas de ahorro](/es/posts/es-como-ahorrar-para-el-dia-del-nino-en-2026-7-pasos-practicos) en menos de la mitad del tiempo planificado, gracias al seguimiento visual constante.
 
 ## Por qué FinMoovi funciona tan bien
 
 * **Captura inteligente** – foto del ticket o comando de voz son reconocidos en segundos.  
-* **Categorización automática** – la IA aprende tus hábitos y refina las categorías.  
-* **Informes inteligentes** – gráficos simples, alertas de retraso y sugerencias de ajuste.  
+* **[Categorización automática](/es/posts/es-tambien-te-quedas-sin-saber-a-donde-fue-tu-dinero-al-final)** – la IA aprende tus hábitos y refina las categorías.  
+* **Informes inteligentes** – gráficos simples, [alertas](/es/posts/es-olvidaste-pagar-una-factura-y-te-quedaste-sin-dinero-como) de retraso y sugerencias de ajuste.  
 * **Modo offline** – registra gastos incluso sin internet y sincroniza después.
 
 ![Por qué FinMoovi funciona tan bien](/images/posts/por-que-nao-vejo-progresso-na-minha-poupanca-6.webp)

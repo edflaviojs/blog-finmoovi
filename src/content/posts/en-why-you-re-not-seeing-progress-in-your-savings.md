@@ -19,11 +19,11 @@ seo:
   keywords: ["savings goals","financial reports","expense tracking","FinMoovi","expense control","goals","progress","monitoring","objectives","finmoovi","personal finance"]
 ---
 
-The simplest way to keep tabs on the progress of your savings goal is to use automatic reports that show, in real time, the percentage you’ve already reached and alert you when you’re falling behind. This lets you tweak your spending without dealing with complicated spreadsheets or manual calculations.
+The simplest way to keep tabs on the progress of your [savings](/en/glossario/en-savings) goal is to use automatic reports that show, in real time, the percentage you’ve already reached and alert you when you’re falling behind. This lets you tweak your spending without dealing with complicated spreadsheets or manual calculations.
 
 ## The pain everyone feels
 
-Have you ever set a target—like saving the equivalent of two months’ rent for your dream trip—only to close the month and realize you’re still at square one? Frustration spikes when your bank statement doesn’t tell you “how much is left,” and paper notes get lost in a drawer. You feel like you’re saving, but you have no way to measure whether your pace is right.
+Have you ever set a target—like [saving](/en/posts/en-how-to-build-a-budget-that-actually-works-in-2026) the equivalent of two months’ rent for your dream trip—only to close the month and realize you’re still at square one? Frustration spikes when your bank statement doesn’t tell you “how much is left,” and paper notes get lost in a drawer. You feel like you’re saving, but you have no way to measure whether your pace is right.
 
 ## How FinMoovi changes the game
 
@@ -51,7 +51,7 @@ Spend just five minutes now to record your latest expense in FinMoovi and see th
 
 | Aspect | Before FinMoovi | After FinMoovi |
 |--------|-----------------|----------------|
-| **Visibility** | Static spreadsheet, hard to interpret | Dynamic dashboard with clear percentages |
+| **Visibility** | Static [spreadsheet](/en/posts/en-migrating-from-spreadsheets-to-a-financial-app), hard to interpret | Dynamic dashboard with clear percentages |
 | **Time spent** | 30 min–1 h updating a sheet | 2 min registering via photo or voice |
 | **Accuracy** | Typos and manual categories | Automatic AI‑driven categorization |
 | **Motivation** | Discouragement when progress isn’t visible | Positive alerts and progress graphs |
@@ -61,12 +61,12 @@ Spend just five minutes now to record your latest expense in FinMoovi and see th
 
 ## Data that builds confidence
 
-According to Investopedia, using **automated financial reports** boosts the likelihood of hitting savings goals by up to 35 % compared with manual methods. Moreover, FinMoovi users report that 78 % achieve their savings targets in less than half the planned time, thanks to constant visual monitoring.
+According to Investopedia, using **automated financial reports** boosts the likelihood of hitting [savings goals](/en/posts/en-how-to-save-for-children-s-day-in-2026-7-practical-steps) by up to 35 % compared with manual methods. Moreover, FinMoovi users report that 78 % achieve their savings targets in less than half the planned time, thanks to constant visual monitoring.
 
 ## Why FinMoovi works so well
 
-- **Smart Capture** – receipt photos or voice commands are recognized in seconds.  
-- **Automatic categorization** – the AI learns your habits and refines categories over time.  
+- **[Smart Capture](/en/posts/en-how-to-never-miss-a-bill-payment-deadline-simple-5-minute)** – receipt photos or voice commands are recognized in seconds.  
+- **[Automatic categorization](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end)** – the AI learns your habits and refines categories over time.  
 - **Intelligent reports** – simple charts, delay alerts, and adjustment suggestions.  
 - **Offline mode** – record expenses without internet and sync later.
 

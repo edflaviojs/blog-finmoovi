@@ -56,7 +56,7 @@ O FinMoovi vai além da simples captura de foto da conta. Com a **captura inteli
 
 
 
-- Definir metas de consumo horário (por exemplo, “não ultrapassar X unidades de energia entre 18 h e 22 h”).
+- Definir [metas](/posts/por-que-nao-vejo-progresso-na-minha-poupanca) de consumo horário (por exemplo, “não ultrapassar X unidades de energia entre 18 h e 22 h”).
 - Receber lembretes push quando estiver próximo do limite.
 - Visualizar [relatórios](/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) mensais que mostram a variação de consumo antes e depois das mudanças de horário.
 

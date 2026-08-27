@@ -70,7 +70,7 @@ Todo sin escribir nada. Puedes confirmar o ajustar la categoría con un toque, y
 
 ## Monitorea el flujo de caja semanal
 
-En lugar de analizar todo al final del mes, prueba hacer un **chequeo semanal**. Reserva un momento – quizá antes de cenar – para abrir el panel de flujo de caja en FinMoovi. Verás, en colores diferentes, cuánto ingresó, cuánto salió y el saldo proyectado para la próxima semana. Esta práctica crea un hábito de seguimiento que evita sorpresas desagradables y te ayuda a ajustar gastos en tiempo real.
+En lugar de analizar todo al final del mes, prueba hacer un **chequeo semanal**. Reserva un momento – quizá antes de cenar – para abrir el panel de flujo de caja en FinMoovi. Verás, en colores diferentes, cuánto ingresó, cuánto salió y el saldo proyectado para la próxima semana. Esta práctica crea un hábito de [seguimiento](/es/posts/es-por-que-no-veo-progreso-en-mi-ahorro) que evita sorpresas desagradables y te ayuda a ajustar gastos en tiempo real.
 
 ![Monitore el flujo de caja semanal](/images/posts/como-transformar-a-bagunca-das-contas-em-controle-visual-em--4.webp)
 

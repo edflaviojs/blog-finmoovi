@@ -64,7 +64,7 @@ Muchos apps de finanzas dependen de la nube, lo que puede ser problemático en z
 
 ### Tips rápidos para potenciar su uso  
 - **Agrupa cuentas por categoría** (vivienda, transporte) – ayuda a visualizar a dónde se va el dinero.  
-- **Define [metas de pago](/es/posts/es-como-conseguir-financiacion-para-tus-proyectos-sin)** (p. ej., “pagar todas las facturas antes de la mitad del mes”) y sigue el progreso en el panel de metas.  
+- **Define [metas de pago](/es/posts/es-como-conseguir-financiacion-para-tus-proyectos-sin)** (p. ej., “pagar todas las facturas antes de la mitad del mes”) y sigue el progreso en el panel de [metas](/es/posts/es-por-que-no-veo-progreso-en-mi-ahorro).  
 - **Usa la función [multimoneda](/es/posts/es-pierdes-el-control-de-los-gastos-cuando-viajas-usando)** si tienes gastos en dólares o euros; la app convierte automáticamente con la tasa de [cambio](/es/glossario/es-cambio) actual.  
 - **Revisa semanalmente** las notificaciones y ajusta los horarios si notas que recibes demasiados avisos a la vez.
 

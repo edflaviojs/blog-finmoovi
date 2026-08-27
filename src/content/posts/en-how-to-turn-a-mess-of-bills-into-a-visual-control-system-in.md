@@ -76,7 +76,7 @@ Instead of waiting until month‑end, try a **weekly check‑in**. Set aside a m
 
 ## Set Monthly Spending Goals
 
-Clear goals are the engine of financial discipline. For example, decide that “take‑out coffee” shouldn’t cost more than the price of two coffees per day. In FinMoovi you can set a target for each category and receive alerts when you’re close to the limit. This shifts the mindset from “spend until it’s gone” to “spend within the plan.”
+Clear [goals](/en/posts/en-why-you-re-not-seeing-progress-in-your-savings) are the engine of financial discipline. For example, decide that “take‑out coffee” shouldn’t cost more than the price of two coffees per day. In FinMoovi you can set a target for each category and receive alerts when you’re close to the limit. This shifts the mindset from “spend until it’s gone” to “spend within the plan.”
 
 ---
 

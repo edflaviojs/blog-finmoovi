@@ -98,7 +98,7 @@ Esse fluxo leva menos de cinco minutos, e você já tem a conta registrada, clas
 
 - **Paz mental** – Saber exatamente quanto resta para as próximas compras impede surpresas desagradáveis.
 - **Decisões mais conscientes** – Quando o saldo está visível, você pensa duas vezes antes de fazer um gasto impulsivo.
-- **Facilidade para planejar metas** – Seja guardar para uma viagem ou para a [reserva de emergência](/ferramentas/calculadora-reserva), o acompanhamento em tempo real mostra o progresso real.
+- **Facilidade para planejar [metas](/posts/por-que-nao-vejo-progresso-na-minha-poupanca)** – Seja guardar para uma viagem ou para a [reserva de emergência](/ferramentas/calculadora-reserva), o acompanhamento em tempo real mostra o progresso real.
 - **Economia de tempo** – Em vez de horas gastas ajustando planilhas, você dedica poucos minutos ao registro e usa o restante para viver.
 
 ## Dicas práticas para transformar o hábito

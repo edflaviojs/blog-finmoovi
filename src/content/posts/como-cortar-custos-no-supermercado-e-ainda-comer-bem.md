@@ -55,7 +55,7 @@ O recurso de [alertas](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-
 
 ## Transforme a rotina de pagamento em hábito de economia
 
-Depois de registrar a nota, o FinMoovi gera um relatório semanal que compara o gasto atual com a média dos últimos três meses. Se a tendência for de aumento, o app sugere metas de redução, como “diminuir 10% nos snacks” ou “trocar uma carne cara por uma opção mais econômica”. Essas metas são acompanhadas por lembretes automáticos, garantindo que você não esqueça de aplicar as mudanças.
+Depois de registrar a nota, o FinMoovi gera um relatório semanal que compara o gasto atual com a média dos últimos três meses. Se a tendência for de aumento, o app sugere [metas](/posts/por-que-nao-vejo-progresso-na-minha-poupanca) de redução, como “diminuir 10% nos snacks” ou “trocar uma carne cara por uma opção mais econômica”. Essas metas são acompanhadas por lembretes automáticos, garantindo que você não esqueça de aplicar as mudanças.
 
 ![Transforme a rotina de pagamento em hábito de economia](/images/posts/como-cortar-custos-no-supermercado-e-ainda-comer-bem-4.webp)
 

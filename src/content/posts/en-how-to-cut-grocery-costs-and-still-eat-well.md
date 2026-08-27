@@ -53,7 +53,7 @@ FinMoovi’s budget‑alert feature warns you when the running total on your lis
 
 ## Turn payment routine into a savings habit
 
-After logging the receipt, FinMoovi generates a weekly report that compares the current spend with the average of the past three months. If the trend is upward, the app suggests reduction goals, such as “cut 10% from snacks” or “swap an expensive cut of meat for a cheaper option.” These goals come with automatic [reminders](/en/posts/en-forgot-to-pay-a-bill-how-to-fix-it-in-2026), so you don’t forget to apply the changes.
+After logging the receipt, FinMoovi generates a weekly report that compares the current spend with the average of the past three months. If the trend is upward, the app suggests reduction [goals](/en/posts/en-why-you-re-not-seeing-progress-in-your-savings), such as “cut 10% from snacks” or “swap an expensive cut of meat for a cheaper option.” These goals come with automatic [reminders](/en/posts/en-forgot-to-pay-a-bill-how-to-fix-it-in-2026), so you don’t forget to apply the changes.
 
 ![Turn payment routine into a savings habit](/images/posts/como-cortar-custos-no-supermercado-e-ainda-comer-bem-4.webp)
 

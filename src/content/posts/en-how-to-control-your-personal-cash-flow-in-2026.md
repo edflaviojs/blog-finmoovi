@@ -30,7 +30,7 @@ The first advantage of FinMoovi is its **[smart capture](/en/posts/en-how-to-nev
 When the automatic capture runs, FinMoovi suggests the most likely category. If the suggestion isn’t right, you can drag the item to another category in just two clicks. This flexibility eliminates the need for complex spreadsheets and keeps everything organized, as if each expense had its own digital envelope.
 
 ### Set Monthly Goals  
-With a clear cash‑flow picture, setting goals becomes natural. Want to set aside the equivalent of one month’s rent for emergencies? Just create a goal in the app and track progress daily. FinMoovi sends alerts when you’re close to exceeding the limit or when you still have room to save, keeping motivation high.
+With a clear cash‑flow picture, setting [goals](/en/posts/en-why-you-re-not-seeing-progress-in-your-savings) becomes natural. Want to set aside the equivalent of one month’s rent for emergencies? Just create a goal in the app and track progress daily. FinMoovi sends alerts when you’re close to exceeding the limit or when you still have room to save, keeping motivation high.
 
 ### Practical Tip: Trim Spending in 5 Minutes  
 **Practical tip:** Open the weekly report, identify the category that ate up most of your money in the last seven days, click the category, choose “Adjust spending,” and lower the limit by 10 % for the next week. This tiny change, done in under five minutes, can free up the equivalent of a daily coffee, which you can redirect to your [emergency fund](/en/glossario/en-emergency-fund).

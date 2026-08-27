@@ -49,7 +49,7 @@ Es importante verificar regularmente la cuenta de energía para saber cuánto es
 **Consejo práctico:** Verifica si la empresa de energía eléctrica ofrece un servicio de monitoreo de consumo. Esto puede ayudar a identificar áreas donde puedes reducir el consumo y ahorrar [dinero](/es/posts/es-planeamiento-financiero-para-parejas).
 
 ## Comienza hoy
-Ahora que sabes cómo ahorrar en la cuenta de energía, es hora de comenzar a actuar. Comienza apagando las luces y aparatos cuando no estén en uso y cambia las lámparas incandescentes por lámparas LED. Con estos simples cambios, puedes ahorrar alrededor de €9 por mes y alcanzar tus objetivos financieros.
+Ahora que sabes cómo ahorrar en la cuenta de energía, es hora de comenzar a actuar. Comienza apagando las luces y aparatos cuando no estén en uso y cambia las lámparas incandescentes por lámparas LED. Con estos simples cambios, puedes ahorrar alrededor de €9 por mes y alcanzar tus [objetivos](/es/posts/es-por-que-no-veo-progreso-en-mi-ahorro) financieros.
 
 ![Comece hoje](/images/posts/economize-na-conta-de-energia-5.svg)
 

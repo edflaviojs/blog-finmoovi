@@ -53,7 +53,7 @@ La función de [alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus
 
 ## Convierte la rutina de pago en hábito de ahorro
 
-Después de registrar la factura, FinMoovi genera un informe semanal que compara el gasto actual con la media de los últimos tres meses. Si la tendencia es al alza, la app sugiere metas de reducción, como “disminuir 10 % en los snacks” o “cambiar una carne cara por una opción más económica”. Estas metas se acompañan de recordatorios automáticos, garantizando que no olvides aplicar los cambios.
+Después de registrar la factura, FinMoovi genera un informe semanal que compara el gasto actual con la media de los últimos tres meses. Si la tendencia es al alza, la app sugiere [metas](/es/posts/es-por-que-no-veo-progreso-en-mi-ahorro) de reducción, como “disminuir 10 % en los snacks” o “cambiar una carne cara por una opción más económica”. Estas metas se acompañan de recordatorios automáticos, garantizando que no olvides aplicar los cambios.
 
 ![Transforma la rutina de pago en hábito de ahorro](/images/posts/como-cortar-custos-no-supermercado-e-ainda-comer-bem-4.webp)
 

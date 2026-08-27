@@ -72,7 +72,7 @@ Tudo isso sem precisar digitar nada. Você ainda pode confirmar ou ajustar a cat
 
 ## Monitore o fluxo de caixa semanal
 
-Em vez de analisar tudo no fim do mês, experimente fazer um **check‑in semanal**. Reserve um momento – talvez antes do jantar – para abrir o painel de fluxo de caixa no FinMoovi. Você verá, em cores diferentes, quanto entrou, quanto saiu e o saldo projetado para a próxima semana. Essa prática cria um hábito de acompanhamento que impede surpresas desagradáveis e ajuda a ajustar gastos em tempo real.
+Em vez de analisar tudo no fim do mês, experimente fazer um **check‑in semanal**. Reserve um momento – talvez antes do jantar – para abrir o painel de fluxo de caixa no FinMoovi. Você verá, em cores diferentes, quanto entrou, quanto saiu e o saldo projetado para a próxima semana. Essa prática cria um hábito de [acompanhamento](/posts/por-que-nao-vejo-progresso-na-minha-poupanca) que impede surpresas desagradáveis e ajuda a ajustar gastos em tempo real.
 
 ![Monitore o fluxo de caixa semanal](/images/posts/como-transformar-a-bagunca-das-contas-em-controle-visual-em--4.webp)
 
