@@ -1,20 +1,31 @@
 ---
-title: "Tips for Controlling Credit Card Expenses"
-description: "Learn to control your credit card expenses with practical and effective tips for better financial management."
-image: "/images/posts/dicas-para-controlar-gastos-no-cartao-de-credito.webp"
-imageAlt: "Multicolored graph lines on dark blue background with blurred lights and icons."
-category: "dicas"
-locale: "en"
-tags: ["tips for controlling credit card expenses","personal finance","economy","money"]
-author: "FinMoovi"
-publishedAt: 2026-07-10
+title: Tips for Controlling Credit Card Expenses
+description: >-
+  Learn to control your credit card expenses with practical and effective tips
+  for better financial management.
+image: /images/posts/dicas-para-controlar-gastos-no-cartao-de-credito.webp
+category: dicas
+locale: en
+tags:
+  - tips for controlling credit card expenses
+  - personal finance
+  - economy
+  - money
+author: FinMoovi
+publishedAt: 2026-07-10T00:00:00.000Z
 readingTime: 3
 featured: false
-translationKey: "dicas-para-controlar-gastos-no-cartao-de-credito"
+translationKey: dicas-para-controlar-gastos-no-cartao-de-credito
 seo:
-  metaTitle: "Tips for Controlling Credit Card Expenses"
-  metaDescription: "Learn to control your credit card expenses with practical and effective tips for better financial management."
-  keywords: ["tips for controlling credit card expenses","personal finance","economy","money"]
+  metaTitle: Tips for Controlling Credit Card Expenses
+  metaDescription: >-
+    Learn to control your credit card expenses with practical and effective tips
+    for better financial management.
+  keywords:
+    - tips for controlling credit card expenses
+    - personal finance
+    - economy
+    - money
 ---
 
 ## Expense Control

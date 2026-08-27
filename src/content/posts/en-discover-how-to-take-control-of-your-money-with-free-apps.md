@@ -1,22 +1,37 @@
 ---
-title: "Discover How to Take Control of Your Money with Free Apps"
-description: "Learn to organize expenses, set goals, and avoid surprises with a free, easy‑to‑use finance app – just a few minutes a day."
-tickerHeadline: "The app that puts your finances in order"
-image: "/images/posts/descubra-como-controlar-seu-dinheiro-com-apps-gratuitos.webp"
-imageAlt: "Colorful, glowing financial charts and graphs on a dark blue background."
-category: "orcamento"
-locale: "en"
-tags: ["free finance app","expense tracking","receipt capture","financial planning","automatic reports","free finance app"]
-author: "FinMoovi"
-publishedAt: 2026-08-17
+title: Discover How to Take Control of Your Money with Free Apps
+description: >-
+  Learn to organize expenses, set goals, and avoid surprises with a free,
+  easy‑to‑use finance app – just a few minutes a day.
+tickerHeadline: The app that puts your finances in order
+image: /images/posts/descubra-como-controlar-seu-dinheiro-com-apps-gratuitos.webp
+category: orcamento
+locale: en
+tags:
+  - free finance app
+  - expense tracking
+  - receipt capture
+  - financial planning
+  - automatic reports
+  - free finance app
+author: FinMoovi
+publishedAt: 2026-08-17T00:00:00.000Z
 readingTime: 5
 featured: false
-translationKey: "descubra-como-controlar-seu-dinheiro-com-apps-gratuitos"
-scope: "universal"
+translationKey: descubra-como-controlar-seu-dinheiro-com-apps-gratuitos
+scope: universal
 seo:
-  metaTitle: "Discover How to Take Control of Your Money with Free Apps"
-  metaDescription: "Learn to organize expenses, set goals, and avoid surprises with a free, easy‑to‑use finance app – just a few minutes a day."
-  keywords: ["free finance app","expense tracking","receipt capture","financial planning","automatic reports","free finance app"]
+  metaTitle: Discover How to Take Control of Your Money with Free Apps
+  metaDescription: >-
+    Learn to organize expenses, set goals, and avoid surprises with a free,
+    easy‑to‑use finance app – just a few minutes a day.
+  keywords:
+    - free finance app
+    - expense tracking
+    - receipt capture
+    - financial planning
+    - automatic reports
+    - free finance app
 ---
 
 Imagine the scene: you get home, the kitchen table is covered with papers – grocery receipts, phone bills, [credit](/en/glossario/en-credit)‑card statements. Each one represents a cent that vanished without explanation, and the feeling that money is slipping through your fingers grows stronger every day. This mess creates anxiety and makes it impossible to see where your salary is going, let alone plan for the future or close the month without tight spots.

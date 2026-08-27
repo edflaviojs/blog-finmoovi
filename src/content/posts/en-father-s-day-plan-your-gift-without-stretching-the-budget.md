@@ -1,21 +1,34 @@
 ---
-title: "Father’s Day: Plan Your Gift Without Stretching the Budget"
-description: "Learn how to budget for Father’s Day gifts across countries without breaking the bank. Practical tips, real‑life examples, and a step‑by‑step plan."
-tickerHeadline: "How to stay on budget"
-image: "/images/posts/dia-dos-pais-planeje-gastos-sem-apertar-o-orcamento.webp"
-imageAlt: "Blurred blue and green financial charts with data points on dark background."
-category: "dicas"
-locale: "en"
-tags: ["father's day","father's day gift","budget","gift planning","personal finance"]
-author: "FinMoovi"
-publishedAt: 2026-07-25
+title: 'Father’s Day: Plan Your Gift Without Stretching the Budget'
+description: >-
+  Learn how to budget for Father’s Day gifts across countries without breaking
+  the bank. Practical tips, real‑life examples, and a step‑by‑step plan.
+tickerHeadline: How to stay on budget
+image: /images/posts/dia-dos-pais-planeje-gastos-sem-apertar-o-orcamento.webp
+category: dicas
+locale: en
+tags:
+  - father's day
+  - father's day gift
+  - budget
+  - gift planning
+  - personal finance
+author: FinMoovi
+publishedAt: 2026-07-25T00:00:00.000Z
 readingTime: 4
 featured: false
-translationKey: "dia-dos-pais-planeje-gastos-sem-apertar-o-orcamento"
+translationKey: dia-dos-pais-planeje-gastos-sem-apertar-o-orcamento
 seo:
-  metaTitle: "Father’s Day: Plan Your Gift Without Stretching the Budget"
-  metaDescription: "Learn how to budget for Father’s Day gifts across countries without breaking the bank. Practical tips, real‑life examples, and a step‑by‑step plan."
-  keywords: ["father's day","father's day gift","budget","gift planning","personal finance"]
+  metaTitle: 'Father’s Day: Plan Your Gift Without Stretching the Budget'
+  metaDescription: >-
+    Learn how to budget for Father’s Day gifts across countries without breaking
+    the bank. Practical tips, real‑life examples, and a step‑by‑step plan.
+  keywords:
+    - father's day
+    - father's day gift
+    - budget
+    - gift planning
+    - personal finance
 ---
 
 **[Planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) Father’s Day** means figuring out how much you can spend, picking a gift that will make him smile, and keeping your bank account healthy. Whether you’re celebrating in the U.S., the U.K., Portugal, Spain, or elsewhere, the secret is to anticipate expenses, use simple tools, and avoid turning a celebration into [debt](/en/glossario/en-debt).

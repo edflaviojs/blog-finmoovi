@@ -1199,6 +1199,206 @@
       "reprovada": true,
       "motivo": "borrada segundo a IA de visão (nitidez local 12)",
       "em": "2026-08-25"
+    },
+    "dia-dos-namorados-economico-2.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"Dajas do s namonados\")",
+      "em": "2026-08-27"
+    },
+    "dia-dos-namorados-economico-4.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"dos,nasmonio econ'deó\")",
+      "em": "2026-08-27"
+    },
+    "dia-dos-namorados-economico.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-08-27"
+    },
+    "dia-dos-pais-planeje-gastos-sem-apertar-o-orcamento.webp": {
+      "reprovada": true,
+      "motivo": "borrada segundo a IA de visão (nitidez local 19)",
+      "em": "2026-08-27"
+    },
+    "dicas-para-controlar-gastos-no-cartao-de-credito-2.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-08-27"
+    },
+    "dicas-para-controlar-gastos-no-cartao-de-credito-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-08-27"
+    },
+    "dicas-para-controlar-gastos-no-cartao-de-credito-4.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-08-27"
+    },
+    "dicas-para-controlar-gastos-no-cartao-de-credito-6.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"Shettle\")",
+      "em": "2026-08-27"
+    },
+    "dicas-para-controlar-gastos-no-cartao-de-credito.webp": {
+      "reprovada": true,
+      "motivo": "borrada segundo a IA de visão (nitidez local 14)",
+      "em": "2026-08-27"
+    },
+    "diferenca-entre-investir-e-poupar-2.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-08-27"
+    },
+    "diferenca-entre-investir-e-poupar-4.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-08-27"
+    },
+    "diferenca-entre-investir-e-poupar-6.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"Differé ans e h ougje Comce hoje\")",
+      "em": "2026-08-27"
+    },
+    "diferenca-entre-investir-e-poupar-o-que-realmente-importa-2.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"PSD\")",
+      "em": "2026-08-27"
+    },
+    "diferenca-entre-investir-e-poupar-o-que-realmente-importa-4.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-08-27"
+    },
+    "diferenca-entre-investir-e-poupar-o-que-realmente-importa-6.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"You're Hired!\")",
+      "em": "2026-08-27"
+    },
+    "diferenca-entre-investir-e-poupar-o-que-realmente-importa.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-08-27"
+    },
+    "diferenca-entre-investir-e-poupar.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-08-27"
+    },
+    "economizar-nas-compras-do-supermercado-2.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"Lo Glacio\")",
+      "em": "2026-08-27"
+    },
+    "economizar-nas-compras-do-supermercado-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-08-27"
+    },
+    "economizar-nas-compras-do-supermercado-4.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"Guava\")",
+      "em": "2026-08-27"
+    },
+    "economizar-nas-compras-do-supermercado.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-08-27"
+    },
+    "economize-na-conta-do-mercado-1.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"Economize an cotnta do merdca:...\")",
+      "em": "2026-08-27"
+    },
+    "economize-na-conta-do-mercado-3.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"DOMIRE À CCONT7-DÍO MPARIROT!\")",
+      "em": "2026-08-27"
+    },
+    "economize-na-conta-do-mercado-5.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"comize no conta do maarcie\")",
+      "em": "2026-08-27"
+    },
+    "economize-na-conta-do-mercado.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-08-27"
+    },
+    "economize-nas-compras-do-supermercado-2.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"$10.00\")",
+      "em": "2026-08-27"
+    },
+    "economize-nas-compras-do-supermercado-4.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-08-27"
+    },
+    "economize-nas-compras-do-supermercado-6.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-08-27"
+    },
+    "economize-nas-compras-do-supermercado.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-08-27"
+    },
+    "economize-nas-ferias-2.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"economize n'as-terias\")",
+      "em": "2026-08-27"
+    },
+    "economize-nas-ferias-4.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-08-27"
+    },
+    "economize-nas-ferias-6.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-08-27"
+    },
+    "economize-nas-ferias.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"Economizen hfaamize\")",
+      "em": "2026-08-27"
+    },
+    "educacao-financeira-para-criancas-2.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-08-27"
+    },
+    "educacao-financeira-para-criancas-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-08-27"
+    },
+    "educacao-financeira-para-criancas-4.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-08-27"
+    },
+    "educacao-financeira-para-criancas-6.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-08-27"
+    },
+    "educacao-financeira-para-criancas.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"Educacáós Financing\")",
+      "em": "2026-08-27"
+    },
+    "en-quotes-semana-1-july-2026-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-08-27"
+    },
+    "en-quotes-semana-1-july-2026-inline-3.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"Investing in the future, one coin at a time.\")",
+      "em": "2026-08-27"
     }
   },
   "corrigidas": {
@@ -1369,8 +1569,48 @@
     "criar-reserva-de-emergencia.webp": {
       "em": "2026-08-25",
       "motivo": "tem texto escrito (\"Criar Resurve Emeréncia\")"
+    },
+    "descubra-como-controlar-seu-dinheiro-com-apps-gratuitos.webp": {
+      "em": "2026-08-27",
+      "motivo": "borrada segundo a IA de visão (nitidez local 12)"
+    },
+    "dia-dos-namorados-economico-2.webp": {
+      "em": "2026-08-27",
+      "motivo": "tem texto escrito (\"Dajas do s namonados\")"
+    },
+    "dia-dos-namorados-economico-4.webp": {
+      "em": "2026-08-27",
+      "motivo": "tem texto escrito (\"dos,nasmonio econ'deó\")"
+    },
+    "dia-dos-pais-planeje-gastos-sem-apertar-o-orcamento.webp": {
+      "em": "2026-08-27",
+      "motivo": "borrada segundo a IA de visão (nitidez local 19)"
+    },
+    "dicas-para-controlar-gastos-no-cartao-de-credito-6.webp": {
+      "em": "2026-08-27",
+      "motivo": "tem texto escrito (\"Shettle\")"
+    },
+    "dicas-para-controlar-gastos-no-cartao-de-credito.webp": {
+      "em": "2026-08-27",
+      "motivo": "borrada segundo a IA de visão (nitidez local 14)"
+    },
+    "diferenca-entre-investir-e-poupar-6.webp": {
+      "em": "2026-08-27",
+      "motivo": "tem texto escrito (\"Differé ans e h ougje Comce hoje\")"
+    },
+    "diferenca-entre-investir-e-poupar-o-que-realmente-importa-2.webp": {
+      "em": "2026-08-27",
+      "motivo": "tem texto escrito (\"PSD\")"
+    },
+    "diferenca-entre-investir-e-poupar-o-que-realmente-importa-6.webp": {
+      "em": "2026-08-27",
+      "motivo": "tem texto escrito (\"You're Hired!\")"
+    },
+    "economizar-nas-compras-do-supermercado-2.webp": {
+      "em": "2026-08-27",
+      "motivo": "tem texto escrito (\"Lo Glacio\")"
     }
   },
-  "totalAcervo": 803,
-  "ultimaCorrida": "2026-08-25"
+  "totalAcervo": 817,
+  "ultimaCorrida": "2026-08-27"
 }

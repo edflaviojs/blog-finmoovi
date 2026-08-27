@@ -1,20 +1,31 @@
 ---
-title: "Dicas para controlar gastos no cartão de crédito"
-description: "Aprenda a controlar seus gastos no cartão de crédito com dicas práticas e eficazes para uma melhor gestão financeira."
-image: "/images/posts/dicas-para-controlar-gastos-no-cartao-de-credito.webp"
-imageAlt: "Gráfico colorido com linhas onduladas e pontos de luz em fundo escuro."
-category: "dicas"
-locale: "pt"
-tags: ["dicas para controlar gastos no cartão de crédito","finanças pessoais","economia","dinheiro"]
-author: "FinMoovi"
-publishedAt: 2026-07-10
+title: Dicas para controlar gastos no cartão de crédito
+description: >-
+  Aprenda a controlar seus gastos no cartão de crédito com dicas práticas e
+  eficazes para uma melhor gestão financeira.
+image: /images/posts/dicas-para-controlar-gastos-no-cartao-de-credito.webp
+category: dicas
+locale: pt
+tags:
+  - dicas para controlar gastos no cartão de crédito
+  - finanças pessoais
+  - economia
+  - dinheiro
+author: FinMoovi
+publishedAt: 2026-07-10T00:00:00.000Z
 readingTime: 3
 featured: true
-translationKey: "dicas-para-controlar-gastos-no-cartao-de-credito"
+translationKey: dicas-para-controlar-gastos-no-cartao-de-credito
 seo:
-  metaTitle: "Dicas para controlar gastos no cartão de crédito"
-  metaDescription: "Aprenda a controlar seus gastos no cartão de crédito com dicas práticas e eficazes para uma melhor gestão financeira."
-  keywords: ["dicas para controlar gastos no cartão de crédito","finanças pessoais","economia","dinheiro"]
+  metaTitle: Dicas para controlar gastos no cartão de crédito
+  metaDescription: >-
+    Aprenda a controlar seus gastos no cartão de crédito com dicas práticas e
+    eficazes para uma melhor gestão financeira.
+  keywords:
+    - dicas para controlar gastos no cartão de crédito
+    - finanças pessoais
+    - economia
+    - dinheiro
 ---
 
 ## Controle de Gastos

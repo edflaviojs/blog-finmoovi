@@ -1,22 +1,37 @@
 ---
-title: "Descubre cómo controlar tu dinero con apps gratuitas"
-description: "Aprende a organizar gastos, establecer metas y evitar sorpresas usando una app de finanzas gratis y fácil – en pocos minutos al día."
-tickerHeadline: "La app que pone tus finanzas en orden"
-image: "/images/posts/descubra-como-controlar-seu-dinheiro-com-apps-gratuitos.webp"
-imageAlt: "Gráficos financieros borrosos con líneas de colores sobre fondo azul oscuro."
-category: "orcamento"
-locale: "es"
-tags: ["app finanzas gratis","control de gastos","captura de notas","planificación financiera","informes automáticos","app finanzas gratis"]
-author: "FinMoovi"
-publishedAt: 2026-08-17
+title: Descubre cómo controlar tu dinero con apps gratuitas
+description: >-
+  Aprende a organizar gastos, establecer metas y evitar sorpresas usando una app
+  de finanzas gratis y fácil – en pocos minutos al día.
+tickerHeadline: La app que pone tus finanzas en orden
+image: /images/posts/descubra-como-controlar-seu-dinheiro-com-apps-gratuitos.webp
+category: orcamento
+locale: es
+tags:
+  - app finanzas gratis
+  - control de gastos
+  - captura de notas
+  - planificación financiera
+  - informes automáticos
+  - app finanzas gratis
+author: FinMoovi
+publishedAt: 2026-08-17T00:00:00.000Z
 readingTime: 5
 featured: false
-translationKey: "descubra-como-controlar-seu-dinheiro-com-apps-gratuitos"
-scope: "universal"
+translationKey: descubra-como-controlar-seu-dinheiro-com-apps-gratuitos
+scope: universal
 seo:
-  metaTitle: "Descubre cómo controlar tu dinero con apps gratuitas"
-  metaDescription: "Aprende a organizar gastos, establecer metas y evitar sorpresas usando una app de finanzas gratis y fácil – en pocos minutos al día."
-  keywords: ["app finanzas gratis","control de gastos","captura de notas","planificación financiera","informes automáticos","app finanzas gratis"]
+  metaTitle: Descubre cómo controlar tu dinero con apps gratuitas
+  metaDescription: >-
+    Aprende a organizar gastos, establecer metas y evitar sorpresas usando una
+    app de finanzas gratis y fácil – en pocos minutos al día.
+  keywords:
+    - app finanzas gratis
+    - control de gastos
+    - captura de notas
+    - planificación financiera
+    - informes automáticos
+    - app finanzas gratis
 ---
 
 Imagina la escena: llegas a casa y la mesa está llena de papeles – facturas del supermercado, recibos del móvil, estados de tarjeta. Cada uno representa un centavo que desapareció sin explicación, y la sensación de que el dinero se escapa de tus manos aumenta día a día. Este desorden genera ansiedad y te impide ver a dónde va tu salario, haciendo imposible planear el futuro o incluso cerrar el mes sin apuros.

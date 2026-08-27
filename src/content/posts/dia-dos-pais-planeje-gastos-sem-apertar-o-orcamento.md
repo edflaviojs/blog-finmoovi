@@ -1,21 +1,32 @@
 ---
-title: "Dia dos Pais: planeje gastos sem apertar o orçamento"
-description: "Aprenda a organizar o presente do Dia dos Pais (Brasil, Portugal, Espanha, EUA e UK) sem comprometer seu orçamento. Dicas práticas, exemplos reais e um plano passo a passo."
-tickerHeadline: "Como não estourar o orçamento"
-image: "/images/posts/dia-dos-pais-planeje-gastos-sem-apertar-o-orcamento.webp"
-imageAlt: "Gráficos de linhas onduladas em azul, verde e amarelo sobre fundo escuro."
-category: "dicas"
-locale: "pt"
-tags: ["dia dos pais","presente dia dos pais","father's day budget"]
-author: "FinMoovi"
-publishedAt: 2026-07-25
+title: 'Dia dos Pais: planeje gastos sem apertar o orçamento'
+description: >-
+  Aprenda a organizar o presente do Dia dos Pais (Brasil, Portugal, Espanha, EUA
+  e UK) sem comprometer seu orçamento. Dicas práticas, exemplos reais e um plano
+  passo a passo.
+tickerHeadline: Como não estourar o orçamento
+image: /images/posts/dia-dos-pais-planeje-gastos-sem-apertar-o-orcamento.webp
+category: dicas
+locale: pt
+tags:
+  - dia dos pais
+  - presente dia dos pais
+  - father's day budget
+author: FinMoovi
+publishedAt: 2026-07-25T00:00:00.000Z
 readingTime: 4
 featured: false
-translationKey: "dia-dos-pais-planeje-gastos-sem-apertar-o-orcamento"
+translationKey: dia-dos-pais-planeje-gastos-sem-apertar-o-orcamento
 seo:
-  metaTitle: "Dia dos Pais: planeje gastos sem apertar o orçamento"
-  metaDescription: "Aprenda a organizar o presente do Dia dos Pais (Brasil, Portugal, Espanha, EUA e UK) sem comprometer seu orçamento. Dicas práticas, exemplos reais e um plano passo a passo."
-  keywords: ["dia dos pais","presente dia dos pais","father's day budget"]
+  metaTitle: 'Dia dos Pais: planeje gastos sem apertar o orçamento'
+  metaDescription: >-
+    Aprenda a organizar o presente do Dia dos Pais (Brasil, Portugal, Espanha,
+    EUA e UK) sem comprometer seu orçamento. Dicas práticas, exemplos reais e um
+    plano passo a passo.
+  keywords:
+    - dia dos pais
+    - presente dia dos pais
+    - father's day budget
 ---
 
 **Planejar o Dia dos Pais** significa definir quanto você pode gastar, escolher um presente que agrade e ainda manter a conta bancária equilibrada. Seja no Brasil (09/08), Portugal (19/03), Espanha (19/03), EUA (20/06) ou Reino Unido (20/06), o segredo é antecipar despesas, usar ferramentas simples e não deixar a festa virar [dívida](/glossario/divida).
