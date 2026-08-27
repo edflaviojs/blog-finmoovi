@@ -1,0 +1,216 @@
+{
+  "slug": "kw-quanto-voce-precisa-ganhar-por-mes",
+  "term": "Quanto você precisa ganhar por mês?",
+  "category": "mindset",
+  "keyword": "precisa",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Quanto você *precisa ganhar por mês* pra não faltar nada?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "fumaca",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Quanto você precisa ganhar por mês pra não faltar nada? Eu somei o básico, como quinhentos reais de comida e mil de aluguel.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "Quanto",
+          "visual": {
+            "type": "statement",
+            "text": "Qual seu mínimo mensal?"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "quinhentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "aluguel",
+          "visual": {
+            "type": "number",
+            "text": "R$ 1.000 aluguel"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Sabe aquelas contas pequenas que batem na sua porta todo mês? Elas se juntam com esse aluguel e a comida.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "contas",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "todo",
+          "visual": {
+            "type": "statement",
+            "text": "Todo mês pesa"
+          }
+        },
+        {
+          "anchor": "comida",
+          "visual": {
+            "type": "statement",
+            "text": "Contas se acumulam"
+          },
+          "sfx": "alert"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "E aí, quando eu somei tudo, deu mil e quinhentos reais. Era o número exato que faltava pra você.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "somei",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 1500,
+            "prefix": "R$"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "número",
+          "visual": {
+            "type": "number",
+            "text": "R$ 1.500"
+          }
+        },
+        {
+          "anchor": "você",
+          "visual": {
+            "type": "statement",
+            "text": "Número encontrado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei essas contas no FinMoovi e ele me mostrou na hora esses mil e quinhentos reais.",
+      "durationSec": 6.5,
+      "shots": [
+        {
+          "anchor": "joguei",
+          "visual": {
+            "type": "app",
+            "app": "calculadora",
+            "note": "Tela do FinMoovi calculando despesas e mostrando resultado"
+          },
+          "sfx": "keyboard"
+        },
+        {
+          "anchor": "mostrou",
+          "visual": {
+            "type": "number",
+            "text": "R$ 1.500"
+          }
+        },
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "chart",
+            "text": "Resultado mensal"
+          },
+          "sfx": "ding"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Esse resultado mostra o que fazer. Quer descobrir o seu valor? Procura o FinMoovi, tem sete dias grátis.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "resultado",
+          "visual": {
+            "type": "statement",
+            "text": "Seu resultado aparece"
+          }
+        },
+        {
+          "anchor": "valor",
+          "visual": {
+            "type": "statement",
+            "text": "Descubra seu valor"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Pra viver tranquilo, você precisa desses mil e quinhentos reais por mês. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "tranquilo",
+          "visual": {
+            "type": "statement",
+            "text": "Viva mais tranquilo"
+          }
+        },
+        {
+          "anchor": "quinhentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 1.500"
+          }
+        },
+        {
+          "anchor": "outros",
+          "visual": {
+            "type": "icon",
+            "icon": "shield"
+          },
+          "sfx": "thud"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Descubra seu valor real",
+    "target": "app"
+  },
+  "totalDurationSec": 44.5
+}
