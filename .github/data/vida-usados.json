@@ -226,5 +226,11 @@
     "gancho": "nao-vai-acreditar",
     "turno": "manha",
     "em": "2026-08-27T15:24:15.987Z"
+  },
+  {
+    "situacao": "cheque-especial",
+    "gancho": "nao-vai-acreditar",
+    "turno": "noite",
+    "em": "2026-08-27T15:28:42.201Z"
   }
 ]

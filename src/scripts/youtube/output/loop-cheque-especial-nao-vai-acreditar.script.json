@@ -1,0 +1,117 @@
+{
+  "slug": "loop-cheque-especial-nao-vai-acreditar",
+  "formato": "loop16",
+  "term": "O cheque especial",
+  "category": "vida",
+  "keyword": "ESPECIAL",
+  "situacao": "cheque-especial",
+  "gancho": "nao-vai-acreditar",
+  "ganchoFamilia": "não vai acreditar",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "areia-movedica",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você não vai acreditar, mas ontem vi meu cheque especial",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "acreditar",
+          "visual": {
+            "type": "statement",
+            "text": "Meu cheque apareceu"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "ontem",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "areia-movedica"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu entrei no vermelho sem perceber e assustei com contas",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "entrei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "areia-movedica"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "vermelho",
+          "visual": {
+            "type": "statement",
+            "text": "Entrei no vermelho"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então agora olho meu app antes de pagar qualquer boleto",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "pagar",
+          "visual": {
+            "type": "statement",
+            "text": "Olho antes de pagar"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "qualquer",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "areia-movedica"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "E você não vai acreditar, meu cheque especial ainda me pega hoje",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "acreditar",
+          "visual": {
+            "type": "statement",
+            "text": "Cheque ainda me pega"
+          }
+        },
+        {
+          "anchor": "cheque",
+          "visual": {
+            "type": "statement",
+            "text": "Meu cheque apareceu"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
