@@ -1,7 +1,7 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-08-26T05:31:34.316Z
-**Posts:** 354 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 50
+**Gerado em:** 2026-08-27T16:05:01.331Z
+**Posts:** 363 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 52
 
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
@@ -104,6 +104,9 @@
 **en-tired-of-manually-logging-every-expense-and-losing-track-of.md**
 - _According to the World Bank on financial inclusion, many people struggle with keeping accurate records, which often leads to impulsive decisions, like buying a wanted item instead of paying a forgotte_
 
+**en-why-you-re-not-seeing-progress-in-your-savings.md**
+- _According to Investopedia, using **automated financial reports** boosts the likelihood of hitting savings goals by up to 35 % compared with manual methods._
+
 **en-you-re-not-alone-in-struggling-to-organize-your-finances.md**
 - _According to statistics, people who use expense management apps like FinMoovi tend to save more and have better financial health._
 
@@ -147,6 +150,9 @@
 
 **planilha-de-gastos-quando-ela-deixa-de-funcionar.md**
 - _Elas oferecem flexibilidade, são gratuitas e podem ser customizadas de acordo com as suas necessidades._
+
+**por-que-nao-vejo-progresso-na-minha-poupanca.md**
+- _Segundo a Investopedia, o uso de **relatórios financeiros automatizados** aumenta a probabilidade de cumprimento de metas em até 35 % quando comparado a métodos manuais._
 
 **poupanca-vs-cdb-qual-vale-mais-a-pena-em-2026.md**
 - _Contudo, há **imposto de renda regressivo** (de 22,5% a 15% conforme o prazo) e, em alguns casos, **carência** para resgate, o que reduz a liquidez._
