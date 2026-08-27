@@ -96,122 +96,80 @@
       "Together.ai|imagem": 2,
       "kie/gemini-3-pro|texto": 2952,
       "kie/claude-sonnet-5|texto": 0
+    },
+    "2026-08-27": {
+      "Cloudflare Workers AI|visao": 68,
+      "cerebras|texto": 6973,
+      "Cloudflare Workers AI|imagem": 10,
+      "together|voz": 203,
+      "kie/gpt-5-2|texto": 10389,
+      "kie.ai|visao": 2697
     }
   },
   "relatorio": {
-    "dia": "2026-08-26",
+    "dia": "2026-08-27",
     "horas": 24,
-    "geradoEm": "2026-08-26T05:45:25.730Z",
+    "geradoEm": "2026-08-27T16:25:16.588Z",
     "linhas": [
       {
         "fornecedor": "Cloudflare Workers AI",
         "tipo": "visao",
-        "chamadas": 87,
+        "chamadas": 68,
         "recusas": 0,
-        "quanto": 87,
+        "quanto": 68,
         "unidade": "unidades",
         "custo": null,
-        "salto": 0.5972540045766591
+        "salto": 0.4953173777315297
       },
       {
         "fornecedor": "cerebras",
         "tipo": "texto",
-        "chamadas": 44,
+        "chamadas": 17,
         "recusas": 0,
-        "quanto": 63931,
+        "quanto": 6973,
         "unidade": "fichas",
         "custo": null,
-        "salto": 0.6114305154402542
+        "salto": 0.061852312729834734
       },
       {
         "fornecedor": "Cloudflare Workers AI",
         "tipo": "imagem",
-        "chamadas": 28,
+        "chamadas": 10,
         "recusas": 0,
-        "quanto": 28,
+        "quanto": 10,
         "unidade": "unidades",
         "custo": null,
-        "salto": 1.12751677852349
+        "salto": 0.3954802259887006
       },
       {
         "fornecedor": "together",
         "tipo": "voz",
-        "chamadas": 14,
+        "chamadas": 8,
         "recusas": 0,
-        "quanto": 456,
+        "quanto": 203,
         "unidade": "unidades",
         "custo": null,
-        "salto": 0.43059490084985835
+        "salto": 0.18550913838120106
       },
       {
         "fornecedor": "kie/gpt-5-2",
         "tipo": "texto",
-        "chamadas": 10,
+        "chamadas": 5,
         "recusas": 0,
-        "quanto": 59207,
+        "quanto": 10389,
         "unidade": "fichas",
         "custo": null,
-        "salto": 0.6360247627466147
-      },
-      {
-        "fornecedor": "cloudflare",
-        "tipo": "texto",
-        "chamadas": 6,
-        "recusas": 0,
-        "quanto": 3029,
-        "unidade": "fichas",
-        "custo": null,
-        "salto": 1.7870206489675515
-      },
-      {
-        "fornecedor": "Groq",
-        "tipo": "visao",
-        "chamadas": 3,
-        "recusas": 0,
-        "quanto": 5730,
-        "unidade": "fichas",
-        "custo": null,
-        "salto": 0.20779088911291785
+        "salto": 0.10350157338104002
       },
       {
         "fornecedor": "kie.ai",
         "tipo": "visao",
         "chamadas": 2,
         "recusas": 0,
-        "quanto": 2688,
+        "quanto": 2697,
         "unidade": "fichas",
         "custo": null,
-        "salto": 1.1187347642547119
-      },
-      {
-        "fornecedor": "Together.ai",
-        "tipo": "imagem",
-        "chamadas": 2,
-        "recusas": 0,
-        "quanto": 2,
-        "unidade": "unidades",
-        "custo": null,
-        "salto": 0.6666666666666666
-      },
-      {
-        "fornecedor": "kie/gemini-3-pro",
-        "tipo": "texto",
-        "chamadas": 1,
-        "recusas": 0,
-        "quanto": 2952,
-        "unidade": "fichas",
-        "custo": null,
-        "salto": 0.1366223908918406
-      },
-      {
-        "fornecedor": "kie/claude-sonnet-5",
-        "tipo": "texto",
-        "chamadas": 0,
-        "recusas": 1,
-        "quanto": 0,
-        "unidade": "unidades",
-        "custo": null,
-        "salto": 0
+        "salto": 1.0301194958258306
       }
     ],
     "alarmes": [],
@@ -221,13 +179,8 @@
       "cerebras",
       "together",
       "kie/gpt-5-2",
-      "cloudflare",
-      "Groq",
-      "kie.ai",
-      "Together.ai",
-      "kie/gemini-3-pro",
-      "kie/claude-sonnet-5"
+      "kie.ai"
     ]
   },
-  "atualizadoEm": "2026-08-26T05:45:25.730Z"
+  "atualizadoEm": "2026-08-27T16:25:16.588Z"
 }
