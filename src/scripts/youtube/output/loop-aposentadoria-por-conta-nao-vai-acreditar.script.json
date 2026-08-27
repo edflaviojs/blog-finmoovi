@@ -1,0 +1,117 @@
+{
+  "slug": "loop-aposentadoria-por-conta-nao-vai-acreditar",
+  "formato": "loop16",
+  "term": "Aposentadoria de quem é autônomo",
+  "category": "vida",
+  "keyword": "APOSENTADORIA",
+  "situacao": "aposentadoria-por-conta",
+  "gancho": "nao-vai-acreditar",
+  "ganchoFamilia": "não vai acreditar",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "ampulheta",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você não vai acreditar, mas… vi meu futuro parado aqui",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "acreditar",
+          "visual": {
+            "type": "statement",
+            "text": "Meu futuro ficou parado"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "futuro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ampulheta"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu trabalhei por conta e fiquei sem guardar para aposentadoria",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "trabalhei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ampulheta"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "statement",
+            "text": "Trabalhei sem aposentadoria"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então eu comecei a separar um pouco e pensar melhor",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "comecei",
+          "visual": {
+            "type": "statement",
+            "text": "Comecei a me preparar"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "separar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ampulheta"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Você não vai acreditar como meu futuro mudou quando pensei em casa",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "acreditar",
+          "visual": {
+            "type": "statement",
+            "text": "Você não vai acreditar"
+          }
+        },
+        {
+          "anchor": "futuro",
+          "visual": {
+            "type": "statement",
+            "text": "Meu futuro ficou parado"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
