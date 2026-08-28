@@ -1,7 +1,7 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-08-27T16:05:01.331Z
-**Posts:** 363 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 52
+**Gerado em:** 2026-08-28T17:08:40.779Z
+**Posts:** 366 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 52
 
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
@@ -105,7 +105,7 @@
 - _According to the World Bank on financial inclusion, many people struggle with keeping accurate records, which often leads to impulsive decisions, like buying a wanted item instead of paying a forgotte_
 
 **en-why-you-re-not-seeing-progress-in-your-savings.md**
-- _According to Investopedia, using **automated financial reports** boosts the likelihood of hitting savings goals by up to 35 % compared with manual methods._
+- _According to Investopedia, using **automated financial reports** boosts the likelihood of hitting [savings goals](/en/posts/en-how-to-save-for-children-s-day-in-2026-7-practical-steps) by up to 35 % c_
 
 **en-you-re-not-alone-in-struggling-to-organize-your-finances.md**
 - _According to statistics, people who use expense management apps like FinMoovi tend to save more and have better financial health._
