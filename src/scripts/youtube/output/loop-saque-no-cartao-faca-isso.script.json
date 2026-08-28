@@ -1,0 +1,117 @@
+{
+  "slug": "loop-saque-no-cartao-faca-isso",
+  "formato": "loop16",
+  "term": "Sacar dinheiro no cartão",
+  "category": "vida",
+  "keyword": "SAQUE",
+  "situacao": "saque-no-cartao",
+  "gancho": "faca-isso",
+  "ganchoFamilia": "faça isso",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ratoeira",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se você quer sacar dinheiro, FAÇA ISSO.",
+      "durationSec": 2.6,
+      "shots": [
+        {
+          "anchor": "sacar",
+          "visual": {
+            "type": "statement",
+            "text": "Saque dinheiro com cuidado"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu fui ao caixa tarde, com meu cartão de crédito na mão.",
+      "durationSec": 4.45,
+      "shots": [
+        {
+          "anchor": "caixa",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "tarde",
+          "visual": {
+            "type": "statement",
+            "text": "Cartão na mão, tarde"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Saquei, e a fatura veio apertando as contas lá de casa.",
+      "durationSec": 4.08,
+      "shots": [
+        {
+          "anchor": "Saquei",
+          "visual": {
+            "type": "statement",
+            "text": "A fatura apertou"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "fatura",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Hoje, antes de sacar, eu confiro tudo, saque dinheiro, FAÇA ISSO.",
+      "durationSec": 4.08,
+      "shots": [
+        {
+          "anchor": "sacar",
+          "visual": {
+            "type": "statement",
+            "text": "Antes de sacar, confira"
+          }
+        },
+        {
+          "anchor": "confiro",
+          "visual": {
+            "type": "statement",
+            "text": "Saque dinheiro com cuidado"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.21
+}
