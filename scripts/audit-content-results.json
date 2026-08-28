@@ -2473,6 +2473,21 @@
     }
   },
   {
+    "file": "en-monthly-income.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-negotiating-discounts-on-fixed-bills.md",
     "dir": "posts",
     "severity": 0,
@@ -2984,6 +2999,21 @@
   },
   {
     "file": "en-saving-on-your-energy-bill.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-saving-water-benefits-for-your-wallet-and-the-planet-2026.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -3734,6 +3764,21 @@
   },
   {
     "file": "es-ahorrando-en-las-vacaciones.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-ahorrar-agua-beneficio-para-tu-bolsillo-y-el-planeta-2026.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -6224,6 +6269,21 @@
   },
   {
     "file": "es-renta-fija.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-renta-mensual.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
