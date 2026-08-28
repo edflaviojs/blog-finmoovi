@@ -3,6 +3,7 @@ title: "Economizar água: benefício para seu bolso e o planeta 2026"
 description: "Descubra como reduzir o consumo de água pode aliviar suas contas e proteger o meio‑ambiente, com dicas práticas e apoio do app FinMoovi."
 tickerHeadline: "A água que você desperdiça custa caro"
 image: "/images/posts/economizar-agua-beneficio-para-seu-bolso-e-o-planeta-2026.webp"
+imageAlt: "Formas abstratas onduladas em amarelo e dourado sobre fundo azul escuro."
 category: "dicas"
 locale: "pt"
 tags: ["porque é importante economizar água​","finanças pessoais","economia","dinheiro"]

@@ -4,6 +4,7 @@ description: >-
   Learn how to save money on your July vacation without sacrificing fun, with
   practical tips and financial planning.
 image: /images/posts/economize-nas-ferias.webp
+imageAlt: "Brown leather wallet, calculator, and scattered coins on white marble surface."
 category: dicas
 tags:
   - vacation budget

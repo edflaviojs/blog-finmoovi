@@ -4,6 +4,7 @@ definition: "Qué es parcelamiento del Simples Nacional y cómo aparece en tu d�
 title: "parcelamiento del Simples Nacional - Glosario Financiero"
 description: "Qué es parcelamiento del Simples Nacional y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/parcelamento-simples-nacional.webp"
+imageAlt: "Monedas doradas apiladas y plantas verdes creciendo en fondo oscuro"
 category: "basico"
 tags: ["parcelamiento del Simples Nacional", "glosario", "finanzas"]
 author: "FinMoovi"

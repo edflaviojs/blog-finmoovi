@@ -4,6 +4,7 @@ description: >-
   Aprende a ahorrar en tus vacaciones de julio sin comprometer la diversión.
   Consejos prácticos para planificar tus gastos y disfrutar de tu tiempo libre.
 image: /images/posts/economize-nas-ferias.webp
+imageAlt: "Cuaderno marrón, calculadora y monedas sobre fondo blanco con ramo verde."
 category: dicas
 tags:
   - ahorro

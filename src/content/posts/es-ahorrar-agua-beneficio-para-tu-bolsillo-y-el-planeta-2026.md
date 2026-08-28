@@ -3,6 +3,7 @@ title: "Ahorrar agua: beneficio para tu bolsillo y el planeta 2026"
 description: "Descubre cómo reducir el consumo de agua alivia tus facturas y protege el medio ambiente, con consejos prácticos y la ayuda de FinMoovi."
 tickerHeadline: "El agua que desperdicias cuesta caro"
 image: "/images/posts/economizar-agua-beneficio-para-seu-bolso-e-o-planeta-2026.webp"
+imageAlt: "Formas onduladas amarillas sobre fondo azul marino con franja blanca inferior."
 category: "dicas"
 locale: "es"
 tags: ["por qué es importante ahorrar agua","finanzas personales","economía","dinero"]

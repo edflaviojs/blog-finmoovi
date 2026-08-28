@@ -4,6 +4,7 @@ description: >-
   Aprenda a ensinar finanças pessoais para crianças e adolescentes, promovendo
   uma educação financeira sólida desde cedo.
 image: /images/posts/educacao-financeira-para-criancas.webp
+imageAlt: "Escritório com laptop, monitor, café e caderno sobre mesa branca, com planta ao lado."
 category: dicas
 locale: pt
 tags:

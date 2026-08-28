@@ -4,6 +4,7 @@ definition: "What monthly income is and how it shows up in your everyday money â
 title: "monthly income - Financial Glossary"
 description: "What monthly income is and how it shows up in your everyday money â€” explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/renda-mensal.webp"
+imageAlt: "Gold coins, silver dollar, scale, and plants on purple platform against dark blue background."
 category: "basico"
 tags: ["monthly income", "glossary", "finance"]
 author: "FinMoovi"

@@ -4,6 +4,7 @@ definition: "What MEI installment payment is and how it shows up in your everyda
 title: "MEI installment payment - Financial Glossary"
 description: "What MEI installment payment is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/parcelamento-mei.webp"
+imageAlt: "Gold coins, rising yellow bars, red balance scale, and green plant in glass jar on dark background"
 category: "basico"
 tags: ["MEI installment payment", "glossary", "finance"]
 author: "FinMoovi"

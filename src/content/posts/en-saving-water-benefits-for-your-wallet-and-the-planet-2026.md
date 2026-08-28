@@ -3,6 +3,7 @@ title: "Saving Water: Benefits for Your Wallet and the Planet 2026"
 description: "Learn how cutting water use can lower your bills, boost your savings, and protect the environment – with practical tips and the FinMoovi app."
 tickerHeadline: "Wasting water costs you"
 image: "/images/posts/economizar-agua-beneficio-para-seu-bolso-e-o-planeta-2026.webp"
+imageAlt: "Shiny gold wavy ribbons flow across a dark navy blue background."
 category: "dicas"
 locale: "en"
 tags: ["why water conservation matters","personal finance","savings","money","budgeting","sustainability"]

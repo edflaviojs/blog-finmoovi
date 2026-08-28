@@ -2,6 +2,7 @@
 title: Economize nas Férias
 description: Dicas práticas para economizar nas férias de julho sem comprometer a diversão.
 image: /images/posts/economize-nas-ferias.webp
+imageAlt: "Carteira marrom, calculadora, moedas e planta sobre superfície branca."
 category: dicas
 tags:
   - economia

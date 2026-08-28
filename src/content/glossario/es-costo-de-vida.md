@@ -4,6 +4,7 @@ definition: "Qué es costo de vida y cómo aparece en tu día a día — explica
 title: "costo de vida - Glosario Financiero"
 description: "Qué es costo de vida y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/custo-de-vida.webp"
+imageAlt: "Monedas de oro, gráfico de barras rosa, reloj y planta en frasco sobre fondo azul."
 category: "basico"
 tags: ["costo de vida", "glosario", "finanzas"]
 author: "FinMoovi"

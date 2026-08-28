@@ -4,6 +4,7 @@ description: >-
   Learn how to teach personal finance to children and teenagers, promoting solid
   financial education from an early age.
 image: /images/posts/educacao-financeira-para-criancas.webp
+imageAlt: "Silver laptop and white monitor with colorful screens on a desk."
 category: dicas
 locale: en
 tags:

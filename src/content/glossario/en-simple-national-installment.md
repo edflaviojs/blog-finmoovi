@@ -4,6 +4,7 @@ definition: "What Simple National Installment is and how it shows up in your eve
 title: "Simple National Installment - Financial Glossary"
 description: "What Simple National Installment is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/parcelamento-simples-nacional.webp"
+imageAlt: "Stacks of gold coins with growing plants on dark background"
 category: "basico"
 tags: ["Simple National Installment", "glossary", "finance"]
 author: "FinMoovi"
