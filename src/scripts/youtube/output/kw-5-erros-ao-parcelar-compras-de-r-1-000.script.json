@@ -1,0 +1,214 @@
+{
+  "slug": "kw-5-erros-ao-parcelar-compras-de-r-1-000",
+  "term": "5 erros ao parcelar compras de R$ 1.000",
+  "category": "mindset",
+  "keyword": "parcelar",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Vai *parcelar mil reais* e acha que a conta cabe no bolso?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "domino",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Vai parcelar mil reais e acha que a conta cabe no bolso? Vou te mostrar cinco errinhos que te enrolam.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "parcelar",
+          "visual": {
+            "type": "number",
+            "text": "R$ 1.000"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "cabe",
+          "visual": {
+            "type": "statement",
+            "text": "Cabe no bolso mesmo?"
+          }
+        },
+        {
+          "anchor": "errinhos",
+          "visual": {
+            "type": "statement",
+            "text": "5 erros que enrolam"
+          },
+          "sfx": "alert"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "A coisa aperta quando você divide sem olhar o total, mistura com outras compras e esquece as parcelas antigas.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "aperta",
+          "visual": {
+            "type": "statement",
+            "text": "A conta começa apertar"
+          }
+        },
+        {
+          "anchor": "total",
+          "visual": {
+            "type": "number",
+            "text": "R$ 1.000"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "parcelas",
+          "visual": {
+            "type": "icon",
+            "icon": "clock"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "E aí a conta junta esses erros. Você esquece o valor cheio, vai fazendo mais comprinhas, atrasa o dia de pagar e nem confere a fatura.",
+      "durationSec": 10,
+      "shots": [
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "domino"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "cheio",
+          "visual": {
+            "type": "statement",
+            "text": "O valor cheio some"
+          }
+        },
+        {
+          "anchor": "fatura",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          },
+          "sfx": "alert"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Mas olha o que eu fiz. Eu joguei as minhas parcelas no FinMoovi e ele me mostrou cada compra e o total.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "olha",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Visão geral das finanças e parcelas"
+          }
+        },
+        {
+          "anchor": "parcelas",
+          "visual": {
+            "type": "app",
+            "app": "compras",
+            "note": "Lista de compras parceladas"
+          },
+          "sfx": "click"
+        },
+        {
+          "anchor": "total",
+          "visual": {
+            "type": "number",
+            "text": "Total: R$ 1.000"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Você também pode ver isso. Procura o FinMoovi, são sete dias grátis pra testar.",
+      "durationSec": 5.4,
+      "shots": [
+        {
+          "anchor": "Você",
+          "visual": {
+            "type": "statement",
+            "text": "Veja tudo num só lugar"
+          }
+        },
+        {
+          "anchor": "dias",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "testar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Fazer a conta antes de parcelar evita o sufoco. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 6.2,
+      "shots": [
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "statement",
+            "text": "Faça a conta antes"
+          }
+        },
+        {
+          "anchor": "sufoco",
+          "visual": {
+            "type": "statement",
+            "text": "Evite o sufoco"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "outros",
+          "visual": {
+            "type": "statement",
+            "text": "Controle seu dinheiro"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja suas parcelas sem complicação",
+    "target": "app"
+  },
+  "totalDurationSec": 45.1
+}
