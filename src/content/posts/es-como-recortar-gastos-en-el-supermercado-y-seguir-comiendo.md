@@ -49,7 +49,7 @@ Estos números son solo referencias; lo importante es que FinMoovi presenta la p
 
 ## Evita compras impulsivas con alertas de saldo
 
-La función de [alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no) de saldo de FinMoovi avisa cuando el total de la lista supera el límite que has definido. Cuando la alerta suena, detente, reevalúa el artículo y pregúntate: “¿Realmente lo necesito o es solo un antojo momentáneo?”. Ese pequeño “freno” mental suele ahorrar lo equivalente a una comida fuera de casa al mes.
+La función de [alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no) de saldo de FinMoovi avisa cuando el total de la lista supera el límite que has definido. Cuando la alerta suena, detente, reevalúa el artículo y pregúntate: “¿Realmente lo necesito o es solo un antojo momentáneo?”. Ese pequeño “freno” mental suele [ahorrar](/es/posts/es-ahorra-en-la-farmacia-sin-sacrificios-guia-practica-2026) lo equivalente a una comida fuera de casa al mes.
 
 ## Convierte la rutina de pago en hábito de ahorro
 

@@ -18,7 +18,7 @@ seo:
 ---
 
 ## Reduciendo el Consumo
-Imagina que pagas alrededor de €36 por mes en tu cuenta de energía. Esto puede parecer un [valor](/es/glossario/es-valor-financiero) razonable, pero si sabes cómo reducir ese consumo, puedes ahorrar alrededor de €9 por mes, lo que es equivalente a €108 por año. Esto puede lograrse con algunos cambios simples en tu día a día. Por ejemplo, si tienes un salario de €900 por mes, una reducción de €9 en la cuenta de energía puede significar un [ahorro](/es/posts/es-regla-de-los-30-dias-para-compras) del 1% de tu salario.
+Imagina que pagas alrededor de €36 por mes en tu cuenta de energía. Esto puede parecer un [valor](/es/glossario/es-valor-financiero) razonable, pero si sabes cómo reducir ese consumo, puedes [ahorrar](/es/posts/es-ahorra-en-la-farmacia-sin-sacrificios-guia-practica-2026) alrededor de €9 por mes, lo que es equivalente a €108 por año. Esto puede lograrse con algunos cambios simples en tu día a día. Por ejemplo, si tienes un salario de €900 por mes, una reducción de €9 en la cuenta de energía puede significar un [ahorro](/es/posts/es-regla-de-los-30-dias-para-compras) del 1% de tu salario.
 
 Una de las principales razones para el alto consumo de energía es el uso excesivo de aparatos electrónicos. Muchas personas dejan la televisión, el computador y otros aparatos encendidos incluso cuando no están en uso. Esto puede aumentar significativamente la cuenta de energía. Además, el uso de lámparas incandescentes también puede contribuir al alto consumo de energía.
 

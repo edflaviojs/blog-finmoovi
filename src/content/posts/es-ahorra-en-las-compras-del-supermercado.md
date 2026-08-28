@@ -33,7 +33,7 @@ La elección del supermercado también puede afectar sus gastos. Algunos superme
 
 ![Organice su lista de compras](/images/posts/economize-nas-compras-do-supermercado-2.webp)
 
-Por ejemplo, si usted gasta **€18** por semana en un supermercado y descubre que otro supermercado de la región ofrece los mismos artículos por **€14**, usted puede ahorrar **€4** por semana, lo que es **€187** por año.
+Por ejemplo, si usted gasta **€18** por semana en un supermercado y descubre que otro supermercado de la región ofrece los mismos artículos por **€14**, usted puede [ahorrar](/es/posts/es-ahorra-en-la-farmacia-sin-sacrificios-guia-practica-2026) **€4** por semana, lo que es **€187** por año.
 
 ## Use cupones y promociones
 Muchos supermercados ofrecen cupones y promociones para ayudar a reducir los gastos. Es importante verificar los sitios web de los supermercados y las redes sociales para encontrar estas ofertas. Además, muchos supermercados tienen programas de fidelidad que pueden ayudar a ahorrar aún más.
