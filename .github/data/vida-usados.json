@@ -232,5 +232,11 @@
     "gancho": "nao-vai-acreditar",
     "turno": "noite",
     "em": "2026-08-27T15:28:42.201Z"
+  },
+  {
+    "situacao": "entrada-do-carro",
+    "gancho": "se-parar",
+    "turno": "manha",
+    "em": "2026-08-28T16:49:40.334Z"
   }
 ]

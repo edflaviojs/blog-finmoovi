@@ -1,0 +1,117 @@
+{
+  "slug": "loop-entrada-do-carro-se-parar",
+  "formato": "loop16",
+  "term": "Juntar a entrada do carro",
+  "category": "vida",
+  "keyword": "CARRO",
+  "situacao": "entrada-do-carro",
+  "gancho": "se-parar",
+  "ganchoFamilia": "e se parar",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "escada",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "O que acontece se você parar de poupar? Comigo, o carro escapou.",
+      "durationSec": 4.45,
+      "shots": [
+        {
+          "anchor": "acontece",
+          "visual": {
+            "type": "statement",
+            "text": "O carro escapou"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "parar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escada"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu gastava sem pensar, e meu dinheiro nunca chegava na entrada.",
+      "durationSec": 4.08,
+      "shots": [
+        {
+          "anchor": "gastava",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escada"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "pensar",
+          "visual": {
+            "type": "statement",
+            "text": "O dinheiro não chegava"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então eu separei primeiro, e a gente conseguiu guardar.",
+      "durationSec": 3.34,
+      "shots": [
+        {
+          "anchor": "separei",
+          "visual": {
+            "type": "statement",
+            "text": "Comecei a guardar"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "primeiro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escada"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Meu carro ficou perto quando eu parei de poupar.",
+      "durationSec": 3.34,
+      "shots": [
+        {
+          "anchor": "carro",
+          "visual": {
+            "type": "statement",
+            "text": "O carro ficou perto"
+          }
+        },
+        {
+          "anchor": "perto",
+          "visual": {
+            "type": "statement",
+            "text": "O carro escapou"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.21
+}
