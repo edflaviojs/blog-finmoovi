@@ -1,20 +1,31 @@
 ---
-title: "Financial Education for Children"
-description: "Learn how to teach personal finance to children and teenagers, promoting solid financial education from an early age."
-image: "/images/posts/educacao-financeira-para-criancas.webp"
-imageAlt: "Brown leather book, calculator, coins, and green leaves on white marble surface."
-category: "dicas"
-locale: "en"
-tags: ["financial education for children","personal finance","economy","money"]
-author: "FinMoovi"
-publishedAt: 2026-07-06
+title: Financial Education for Children
+description: >-
+  Learn how to teach personal finance to children and teenagers, promoting solid
+  financial education from an early age.
+image: /images/posts/educacao-financeira-para-criancas.webp
+category: dicas
+locale: en
+tags:
+  - financial education for children
+  - personal finance
+  - economy
+  - money
+author: FinMoovi
+publishedAt: 2026-07-06T00:00:00.000Z
 readingTime: 3
 featured: false
-translationKey: "educacao-financeira-para-criancas"
+translationKey: educacao-financeira-para-criancas
 seo:
-  metaTitle: "Financial Education for Children"
-  metaDescription: "Learn how to teach personal finance to children and teenagers, promoting solid financial education from an early age."
-  keywords: ["financial education for children","personal finance","economy","money"]
+  metaTitle: Financial Education for Children
+  metaDescription: >-
+    Learn how to teach personal finance to children and teenagers, promoting
+    solid financial education from an early age.
+  keywords:
+    - financial education for children
+    - personal finance
+    - economy
+    - money
 ---
 
 ## Basic [Financial Education](/en/glossario/en-financial-education)

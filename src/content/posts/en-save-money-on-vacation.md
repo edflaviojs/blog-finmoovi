@@ -1,19 +1,20 @@
 ---
-title: "Save Money on Vacation"
-description: "Learn how to save money on your July vacation without sacrificing fun, with practical tips and financial planning."
-image: "/images/posts/economize-nas-ferias.webp"
-imageAlt: "Blurry graph with multicolored lines and shapes on dark background, green gear visible."
-category: "dicas"
+title: Save Money on Vacation
+description: >-
+  Learn how to save money on your July vacation without sacrificing fun, with
+  practical tips and financial planning.
+image: /images/posts/economize-nas-ferias.webp
+category: dicas
 tags:
-  - "vacation budget"
-  - "financial planning"
-  - "save money"
-  - "travel tips"
-  - "personal finance"
-author: "FinMoovi"
-publishedAt: 2026-07-07
-locale: "en"
-translationKey: "economize-nas-ferias"
+  - vacation budget
+  - financial planning
+  - save money
+  - travel tips
+  - personal finance
+author: FinMoovi
+publishedAt: 2026-07-07T00:00:00.000Z
+locale: en
+translationKey: economize-nas-ferias
 featured: false
 draft: false
 translate: true

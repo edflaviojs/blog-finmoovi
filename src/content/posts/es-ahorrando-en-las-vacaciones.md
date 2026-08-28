@@ -1,19 +1,20 @@
 ---
-title: "Ahorrando en las Vacaciones"
-description: "Aprende a ahorrar en tus vacaciones de julio sin comprometer la diversión. Consejos prácticos para planificar tus gastos y disfrutar de tu tiempo libre."
-image: "/images/posts/economize-nas-ferias.webp"
-imageAlt: "Gráfico de líneas con colores brillantes en pantalla oscura con texto en portugués."
-category: "dicas"
+title: Ahorrando en las Vacaciones
+description: >-
+  Aprende a ahorrar en tus vacaciones de julio sin comprometer la diversión.
+  Consejos prácticos para planificar tus gastos y disfrutar de tu tiempo libre.
+image: /images/posts/economize-nas-ferias.webp
+category: dicas
 tags:
-  - "ahorro"
-  - "vacaciones"
-  - "finanzas personales"
-  - "planeamiento financiero"
-  - "control de gastos"
-author: "FinMoovi"
-publishedAt: 2026-07-07
-locale: "es"
-translationKey: "economize-nas-ferias"
+  - ahorro
+  - vacaciones
+  - finanzas personales
+  - planeamiento financiero
+  - control de gastos
+author: FinMoovi
+publishedAt: 2026-07-07T00:00:00.000Z
+locale: es
+translationKey: economize-nas-ferias
 featured: false
 draft: false
 translate: true

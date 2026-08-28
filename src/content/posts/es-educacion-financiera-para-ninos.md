@@ -1,20 +1,31 @@
 ---
-title: "Educación financiera para niños"
-description: "Aprende a enseñar finanzas personales a niños y adolescentes, promoviendo una educación financiera sólida desde temprano."
-image: "/images/posts/educacao-financeira-para-criancas.webp"
-imageAlt: "Cuaderno marrón con calculadora, monedas y hojas verdes sobre fondo de mármol blanco."
-category: "dicas"
-locale: "es"
-tags: ["educación financiera para niños","finanzas personales","economía","dinero"]
-author: "FinMoovi"
-publishedAt: 2026-07-06
+title: Educación financiera para niños
+description: >-
+  Aprende a enseñar finanzas personales a niños y adolescentes, promoviendo una
+  educación financiera sólida desde temprano.
+image: /images/posts/educacao-financeira-para-criancas.webp
+category: dicas
+locale: es
+tags:
+  - educación financiera para niños
+  - finanzas personales
+  - economía
+  - dinero
+author: FinMoovi
+publishedAt: 2026-07-06T00:00:00.000Z
 readingTime: 3
 featured: false
-translationKey: "educacao-financeira-para-criancas"
+translationKey: educacao-financeira-para-criancas
 seo:
-  metaTitle: "Educación financiera para niños"
-  metaDescription: "Aprende a enseñar finanzas personales a niños y adolescentes, promoviendo una educación financiera sólida desde temprano."
-  keywords: ["educación financiera para niños","finanzas personales","economía","dinero"]
+  metaTitle: Educación financiera para niños
+  metaDescription: >-
+    Aprende a enseñar finanzas personales a niños y adolescentes, promoviendo
+    una educación financiera sólida desde temprano.
+  keywords:
+    - educación financiera para niños
+    - finanzas personales
+    - economía
+    - dinero
 ---
 
 ## [Educación financiera](/es/glossario/es-educacion-financiera) básica

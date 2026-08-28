@@ -1,19 +1,18 @@
 ---
-title: "Economize nas Férias"
-description: "Dicas práticas para economizar nas férias de julho sem comprometer a diversão."
-image: "/images/posts/economize-nas-ferias.webp"
-imageAlt: "Gráfico colorido com linhas e engrenagem em tons de azul, verde e laranja."
-category: "dicas"
+title: Economize nas Férias
+description: Dicas práticas para economizar nas férias de julho sem comprometer a diversão.
+image: /images/posts/economize-nas-ferias.webp
+category: dicas
 tags:
-  - "economia"
-  - "férias"
-  - "julho"
-  - "planejamento financeiro"
-  - "orçamento"
-author: "FinMoovi"
-publishedAt: 2026-07-07
-locale: "pt"
-translationKey: "economize-nas-ferias"
+  - economia
+  - férias
+  - julho
+  - planejamento financeiro
+  - orçamento
+author: FinMoovi
+publishedAt: 2026-07-07T00:00:00.000Z
+locale: pt
+translationKey: economize-nas-ferias
 featured: false
 draft: false
 translate: true
