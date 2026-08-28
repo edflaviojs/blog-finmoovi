@@ -1,33 +1,33 @@
 {
-  "generatedAt": "2026-08-27T14:52:28.260Z",
+  "generatedAt": "2026-08-28T15:47:51.867Z",
   "periodDays": 60,
   "totalAnalyzed": 75,
   "contagem": {
-    "shorts": 20,
-    "longos": 55,
+    "shorts": 24,
+    "longos": 51,
     "naoPortugues": 3
   },
   "aggregate": {
     "topPattern": "statement",
-    "avgViewsPerDay": 3750,
+    "avgViewsPerDay": 3480,
     "titleStats": {
-      "percentWithNumber": 49,
-      "percentWithQuestion": 15,
+      "percentWithNumber": 44,
+      "percentWithQuestion": 13,
       "avgWordCount": 11,
-      "avgCharCount": 67
+      "avgCharCount": 66
     },
     "pillarHeat": {
-      "mindset": 244440.70429886805,
-      "investimento": 26301.833113272234,
-      "controle": 5677.612556293954,
-      "ferramentas": 4812.242977575442
+      "mindset": 228383.05123929685,
+      "investimento": 24621.29600159183,
+      "controle": 4931.2550072480135,
+      "ferramentas": 3061.6982738176084
     },
     "sampleTitles": [
       "NUNCA faça uma dessas 3 PERGUNTAS negociando CARRO",
       "O problema de educação financeira no Brasil é coisa séria!",
       "pessoas sem o mínimo de educação financeira",
       "COMO SAIR DA POBREZA: AULA COMPLETA DE EDUCAÇÃO FINANCEIRA",
-      "O Segredo dos desenhos que moldaram a nossa Mentalidade Financeira!"
+      "Segui as dicas do PRIMO POBRE por 1 ano e isso aconteceu"
     ]
   },
   "estudoDeCapitulos": {
@@ -69,10 +69,10 @@
       "title": "NUNCA faça uma dessas 3 PERGUNTAS negociando CARRO",
       "channel": "Emílio Gouvea",
       "publishedAt": "2026-08-24T12:23:24Z",
-      "views": 415419,
-      "likes": 20782,
-      "viewsPerDay": 133854.7073937875,
-      "likeRatio": 0.05002659964999193,
+      "views": 576877,
+      "likes": 27897,
+      "viewsPerDay": 139275.82155474232,
+      "likeRatio": 0.04835866224515798,
       "duracaoSeg": 166,
       "formato": "short",
       "idioma": "pt",
@@ -91,10 +91,10 @@
       "title": "O problema de educação financeira no Brasil é coisa séria!",
       "channel": "Entre Altas e Baixas",
       "publishedAt": "2026-08-25T19:40:21Z",
-      "views": 94559,
-      "likes": 5109,
-      "viewsPerDay": 52530.7541682856,
-      "likeRatio": 0.05402975919796106,
+      "views": 103729,
+      "likes": 5369,
+      "viewsPerDay": 36543.111509660084,
+      "likeRatio": 0.05175987428780765,
       "duracaoSeg": 59,
       "formato": "short",
       "idioma": "pt",
@@ -113,10 +113,10 @@
       "title": "pessoas sem o mínimo de educação financeira",
       "channel": "Maicon Küster",
       "publishedAt": "2026-07-09T15:00:19Z",
-      "views": 659953,
-      "likes": 51295,
-      "viewsPerDay": 13469.930349667993,
-      "likeRatio": 0.07772523194833572,
+      "views": 661100,
+      "likes": 51344,
+      "viewsPerDay": 13213.277835776245,
+      "likeRatio": 0.07766449856300106,
       "duracaoSeg": 1175,
       "formato": "longo",
       "idioma": "pt",
@@ -135,10 +135,10 @@
       "title": "COMO SAIR DA POBREZA: AULA COMPLETA DE EDUCAÇÃO FINANCEIRA",
       "channel": "POP SHOW TV",
       "publishedAt": "2026-08-14T21:00:17Z",
-      "views": 92072,
-      "likes": 9487,
-      "viewsPerDay": 7224.415704793932,
-      "likeRatio": 0.10303892605786776,
+      "views": 98447,
+      "likes": 9712,
+      "viewsPerDay": 7142.624740545576,
+      "likeRatio": 0.09865206659420805,
       "duracaoSeg": 2456,
       "formato": "longo",
       "idioma": "pt",
@@ -214,36 +214,14 @@
       "pillar": "mindset"
     },
     {
-      "videoId": "lW52zJdD308",
-      "title": "O Segredo dos desenhos que moldaram a nossa Mentalidade Financeira!",
-      "channel": "Investing Money Br",
-      "publishedAt": "2026-08-26T22:50:31Z",
-      "views": 5145,
-      "likes": 258,
-      "viewsPerDay": 5145,
-      "likeRatio": 0.05014577259475218,
-      "duracaoSeg": 13,
-      "formato": "short",
-      "idioma": "pt",
-      "capitulos": null,
-      "titlePatterns": {
-        "hasNumber": false,
-        "hasQuestion": false,
-        "hasEmoji": false,
-        "wordCount": 10,
-        "charCount": 67
-      },
-      "pillar": "mindset"
-    },
-    {
       "videoId": "fgc3D_4RHvA",
       "title": "Segui as dicas do PRIMO POBRE por 1 ano e isso aconteceu",
       "channel": "Bru Milli - Finanças ",
       "publishedAt": "2026-07-13T21:00:18Z",
-      "views": 214141,
-      "likes": 16362,
-      "viewsPerDay": 4785.856761226786,
-      "likeRatio": 0.07640760059960493,
+      "views": 224784,
+      "likes": 16525,
+      "viewsPerDay": 4909.768192291063,
+      "likeRatio": 0.07351501886255249,
       "duracaoSeg": 1314,
       "formato": "longo",
       "idioma": "pt",
@@ -262,10 +240,10 @@
       "title": "Investir depois dos 50 anos com pouco dinheiro: é possível ter resultados?",
       "channel": "Financeologia",
       "publishedAt": "2026-08-05T21:00:26Z",
-      "views": 88320,
-      "likes": 6261,
-      "viewsPerDay": 4061.7263723558153,
-      "likeRatio": 0.07088994565217391,
+      "views": 92361,
+      "likes": 6367,
+      "viewsPerDay": 4053.9585251785998,
+      "likeRatio": 0.06893602278017778,
       "duracaoSeg": 1438,
       "formato": "longo",
       "idioma": "pt",
@@ -280,36 +258,14 @@
       "pillar": "investimento"
     },
     {
-      "videoId": "EeNp7koqriQ",
-      "title": "5 INVESTIMENTOS PARA QUEM VAI COMEÇAR DO ZERO EM 2026",
-      "channel": "Nerds de Negócios",
-      "publishedAt": "2026-08-14T22:40:30Z",
-      "views": 41415,
-      "likes": 3306,
-      "viewsPerDay": 3267.4665056960084,
-      "likeRatio": 0.07982614994567186,
-      "duracaoSeg": 600,
-      "formato": "longo",
-      "idioma": "pt",
-      "capitulos": null,
-      "titlePatterns": {
-        "hasNumber": true,
-        "hasQuestion": false,
-        "hasEmoji": false,
-        "wordCount": 10,
-        "charCount": 53
-      },
-      "pillar": "investimento"
-    },
-    {
       "videoId": "lXQRM4uyNdQ",
       "title": "A Regra dos R$50 Que Silenciosamente Constrói Um Ano de Economias",
       "channel": "Dinheiro Descomplicado",
       "publishedAt": "2026-07-29T01:03:08Z",
-      "views": 96511,
-      "likes": 4627,
-      "viewsPerDay": 3263.162017301075,
-      "likeRatio": 0.0479427215550559,
+      "views": 98518,
+      "likes": 4662,
+      "viewsPerDay": 3218.029944832068,
+      "likeRatio": 0.04732130169106153,
       "duracaoSeg": 2321,
       "formato": "longo",
       "idioma": "pt",
@@ -324,36 +280,36 @@
       "pillar": "mindset"
     },
     {
-      "videoId": "7PWyX3NfH8U",
-      "title": "EUA apostam em tarifaço para sair do vermelho",
-      "channel": "g1",
-      "publishedAt": "2026-08-21T15:54:01Z",
-      "views": 16586,
-      "likes": 415,
-      "viewsPerDay": 2784.169623511568,
-      "likeRatio": 0.025021102134330158,
-      "duracaoSeg": 206,
+      "videoId": "EeNp7koqriQ",
+      "title": "5 INVESTIMENTOS PARA QUEM VAI COMEÇAR DO ZERO EM 2026",
+      "channel": "Nerds de Negócios",
+      "publishedAt": "2026-08-14T22:40:30Z",
+      "views": 42620,
+      "likes": 3349,
+      "viewsPerDay": 3107.90313220827,
+      "likeRatio": 0.07857813233223838,
+      "duracaoSeg": 600,
       "formato": "longo",
       "idioma": "pt",
       "capitulos": null,
       "titlePatterns": {
-        "hasNumber": false,
+        "hasNumber": true,
         "hasQuestion": false,
         "hasEmoji": false,
-        "wordCount": 8,
-        "charCount": 45
+        "wordCount": 10,
+        "charCount": 53
       },
-      "pillar": "controle"
+      "pillar": "investimento"
     },
     {
       "videoId": "9Coy1hm27VA",
       "title": "TUBINHO - EDUCAÇÃO FINANCEIRA - Ele se meteu em confusão na aula de finanças e o valentão apareceu!",
       "channel": "YouTubinho",
       "publishedAt": "2026-08-07T15:00:06Z",
-      "views": 55590,
-      "likes": 1915,
-      "viewsPerDay": 2780.2385153360447,
-      "likeRatio": 0.034448641842057925,
+      "views": 56827,
+      "likes": 1925,
+      "viewsPerDay": 2701.7819217392166,
+      "likeRatio": 0.03387474263994228,
       "duracaoSeg": 931,
       "formato": "longo",
       "idioma": "pt",
@@ -368,147 +324,14 @@
       "pillar": "mindset"
     },
     {
-      "videoId": "dFg9XzORY-k",
-      "title": "13 DICAS DE ESTILO PARA QUEM É BÁSICA E TEM POUCO DINHEIRO PRA INVESTIR!",
-      "channel": "Raisa Brito",
-      "publishedAt": "2026-08-25T21:45:09Z",
-      "views": 4320,
-      "likes": 758,
-      "viewsPerDay": 2521.309621912178,
-      "likeRatio": 0.17546296296296296,
-      "duracaoSeg": 960,
-      "formato": "longo",
-      "idioma": "pt",
-      "capitulos": null,
-      "titlePatterns": {
-        "hasNumber": true,
-        "hasQuestion": false,
-        "hasEmoji": false,
-        "wordCount": 14,
-        "charCount": 72
-      },
-      "pillar": "investimento"
-    },
-    {
-      "videoId": "CYYBcnFxBhE",
-      "title": "PARE DE SER ESCRAVO DAS DÍVIDAS: A Estratégia Real Para Prosperar | Raquel Mendes e Vinicius Iracet",
-      "channel": "Podcast a Voz",
-      "publishedAt": "2026-06-29T10:00:06Z",
-      "views": 133317,
-      "likes": 13883,
-      "viewsPerDay": 2251.861448250743,
-      "likeRatio": 0.10413525656892969,
-      "duracaoSeg": 5099,
-      "formato": "longo",
-      "idioma": "pt",
-      "capitulos": null,
-      "titlePatterns": {
-        "hasNumber": false,
-        "hasQuestion": false,
-        "hasEmoji": false,
-        "wordCount": 17,
-        "charCount": 99
-      },
-      "pillar": "mindset"
-    },
-    {
-      "videoId": "25ScX8Ixhm4",
-      "title": "OS 5 MELHORES INVESTIMENTOS PARA QUEM QUER COMEÇAR DO ZERO EM 2026",
-      "channel": "Nerds de Negócios",
-      "publishedAt": "2026-06-30T00:15:35Z",
-      "views": 129370,
-      "likes": 10161,
-      "viewsPerDay": 2207.3428935682323,
-      "likeRatio": 0.078542165880807,
-      "duracaoSeg": 601,
-      "formato": "longo",
-      "idioma": "pt",
-      "capitulos": null,
-      "titlePatterns": {
-        "hasNumber": true,
-        "hasQuestion": false,
-        "hasEmoji": false,
-        "wordCount": 12,
-        "charCount": 66
-      },
-      "pillar": "investimento"
-    },
-    {
-      "videoId": "iXTID46OzeU",
-      "title": "10 Formas de Ganhar R$ 300/dia Sendo Adolescente (Passo a Passo 2026)",
-      "channel": "O Milionário ",
-      "publishedAt": "2026-07-01T21:54:22Z",
-      "views": 121437,
-      "likes": 6992,
-      "viewsPerDay": 2141.4818475455522,
-      "likeRatio": 0.057577179936922025,
-      "duracaoSeg": 593,
-      "formato": "longo",
-      "idioma": "pt",
-      "capitulos": [
-        {
-          "seg": 0,
-          "titulo": "10 Formas de Ganhar Dinheiro Sendo Adolescente"
-        },
-        {
-          "seg": 41,
-          "titulo": "Forma 1: Criar um Produto com IA pra Vender"
-        },
-        {
-          "seg": 94,
-          "titulo": "Forma 2: Vender o Que Você Já Tem (Mercado Livre e OLX)"
-        },
-        {
-          "seg": 138,
-          "titulo": "Forma 3: Vender uma Habilidade (Fiverr, Workana, 99Freelas)"
-        },
-        {
-          "seg": 177,
-          "titulo": "Forma 4: Canal Dark com IA sem Aparecer"
-        },
-        {
-          "seg": 257,
-          "titulo": "Forma 5: Segundo Cérebro com IA pra Empresas"
-        },
-        {
-          "seg": 345,
-          "titulo": "Forma 6: Ganhar Dinheiro com Canal de Cortes"
-        },
-        {
-          "seg": 402,
-          "titulo": "Forma 7: Ganhar Dinheiro como Afiliado"
-        },
-        {
-          "seg": 442,
-          "titulo": "Forma 8: Vender IA pra Negócios do Seu Bairro"
-        },
-        {
-          "seg": 486,
-          "titulo": "Forma 9: Renda Extra em Dólar"
-        },
-        {
-          "seg": 549,
-          "titulo": "Forma 10: O Segredo pra Multiplicar Seu Dinheiro"
-        }
-      ],
-      "titlePatterns": {
-        "hasNumber": true,
-        "hasQuestion": false,
-        "hasEmoji": false,
-        "wordCount": 12,
-        "charCount": 69
-      },
-      "pillar": "investimento"
-    },
-    {
       "videoId": "h7Sx-nbYwv8",
       "title": "Como invertir para principiantes (con poco dinero)",
       "channel": "Lola Vargas",
       "publishedAt": "2026-08-23T23:06:12Z",
-      "views": 7228,
-      "likes": 888,
-      "viewsPerDay": 1976.4237066937635,
-      "likeRatio": 0.12285556170448257,
+      "views": 11640,
+      "likes": 1050,
+      "viewsPerDay": 2478.9275713911115,
+      "likeRatio": 0.09020618556701031,
       "duracaoSeg": 2133,
       "formato": "longo",
       "idioma": "es",
@@ -576,14 +399,80 @@
       "pillar": "investimento"
     },
     {
+      "videoId": "7PWyX3NfH8U",
+      "title": "EUA apostam em tarifaço para sair do vermelho",
+      "channel": "g1",
+      "publishedAt": "2026-08-21T15:54:01Z",
+      "views": 16715,
+      "likes": 416,
+      "viewsPerDay": 2389.317882052786,
+      "likeRatio": 0.02488782530661083,
+      "duracaoSeg": 206,
+      "formato": "longo",
+      "idioma": "pt",
+      "capitulos": null,
+      "titlePatterns": {
+        "hasNumber": false,
+        "hasQuestion": false,
+        "hasEmoji": false,
+        "wordCount": 8,
+        "charCount": 45
+      },
+      "pillar": "controle"
+    },
+    {
+      "videoId": "25ScX8Ixhm4",
+      "title": "OS 5 MELHORES INVESTIMENTOS PARA QUEM QUER COMEÇAR DO ZERO EM 2026",
+      "channel": "Nerds de Negócios",
+      "publishedAt": "2026-06-30T00:15:35Z",
+      "views": 132298,
+      "likes": 10293,
+      "viewsPerDay": 2218.0012679669353,
+      "likeRatio": 0.07780162965426538,
+      "duracaoSeg": 601,
+      "formato": "longo",
+      "idioma": "pt",
+      "capitulos": null,
+      "titlePatterns": {
+        "hasNumber": true,
+        "hasQuestion": false,
+        "hasEmoji": false,
+        "wordCount": 12,
+        "charCount": 66
+      },
+      "pillar": "investimento"
+    },
+    {
+      "videoId": "dFg9XzORY-k",
+      "title": "13 DICAS DE ESTILO PARA QUEM É BÁSICA E TEM POUCO DINHEIRO PRA INVESTIR!",
+      "channel": "Raisa Brito",
+      "publishedAt": "2026-08-25T21:45:09Z",
+      "views": 5919,
+      "likes": 904,
+      "viewsPerDay": 2150.906008279734,
+      "likeRatio": 0.15272850143605338,
+      "duracaoSeg": 960,
+      "formato": "longo",
+      "idioma": "pt",
+      "capitulos": null,
+      "titlePatterns": {
+        "hasNumber": true,
+        "hasQuestion": false,
+        "hasEmoji": false,
+        "wordCount": 14,
+        "charCount": 72
+      },
+      "pillar": "investimento"
+    },
+    {
       "videoId": "nNYaSBSThlo",
       "title": "A Faxineira Nunca Conseguia Guardar Dinheiro... Até Chegar aos R$ 20 Mil",
       "channel": "Rotina sob Controle",
       "publishedAt": "2026-07-06T12:00:24Z",
-      "views": 101264,
-      "likes": 4726,
-      "viewsPerDay": 1942.9204171163622,
-      "likeRatio": 0.04667009006162111,
+      "views": 101791,
+      "likes": 4745,
+      "viewsPerDay": 1914.8782998624554,
+      "likeRatio": 0.04661512314448232,
       "duracaoSeg": 1213,
       "formato": "longo",
       "idioma": "pt",
@@ -602,10 +491,10 @@
       "title": "27 Ideias de Negócios para Começar no Fundo de Quintal/ Garagem",
       "channel": "Renda Extra e Negócios",
       "publishedAt": "2026-08-12T22:00:36Z",
-      "views": 27530,
-      "likes": 779,
-      "viewsPerDay": 1872.4495130304977,
-      "likeRatio": 0.0282964039229931,
+      "views": 29330,
+      "likes": 792,
+      "viewsPerDay": 1863.2710419918858,
+      "likeRatio": 0.02700306853051483,
       "duracaoSeg": 1055,
       "formato": "longo",
       "idioma": "pt",
@@ -620,36 +509,14 @@
       "pillar": "investimento"
     },
     {
-      "videoId": "eT8YV0tnWMI",
-      "title": "MILIONÁRIO AOS 50: Ainda dá tempo? 🤔💸 #shorts #investimentos #educaçãofinanceira",
-      "channel": "Guilherme Agnello | Dividendista",
-      "publishedAt": "2026-08-04T22:00:11Z",
-      "views": 36575,
-      "likes": 2051,
-      "viewsPerDay": 1611.0232047172142,
-      "likeRatio": 0.05607655502392345,
-      "duracaoSeg": 72,
-      "formato": "short",
-      "idioma": "pt",
-      "capitulos": null,
-      "titlePatterns": {
-        "hasNumber": true,
-        "hasQuestion": true,
-        "hasEmoji": true,
-        "wordCount": 10,
-        "charCount": 82
-      },
-      "pillar": "mindset"
-    },
-    {
       "videoId": "5QDd1qgi2tA",
       "title": "MEU PLANEJAMENTO FINANCEIRO REAL | Organização financeira  com R$2.580,00 e metas atualizadas",
       "channel": "Ruth Szilagy",
       "publishedAt": "2026-07-28T21:00:08Z",
-      "views": 45244,
-      "likes": 3182,
-      "viewsPerDay": 1521.0795328954173,
-      "likeRatio": 0.07032976748298117,
+      "views": 48639,
+      "likes": 3240,
+      "viewsPerDay": 1580.0536159574865,
+      "likeRatio": 0.06661321162030469,
       "duracaoSeg": 1555,
       "formato": "longo",
       "idioma": "pt",
@@ -687,84 +554,16 @@
         "charCount": 93
       },
       "pillar": "mindset"
-    }
-  ],
-  "topShorts": [
-    {
-      "videoId": "XJoYwXNEXOU",
-      "title": "NUNCA faça uma dessas 3 PERGUNTAS negociando CARRO",
-      "channel": "Emílio Gouvea",
-      "publishedAt": "2026-08-24T12:23:24Z",
-      "views": 415419,
-      "likes": 20782,
-      "viewsPerDay": 133854.7073937875,
-      "likeRatio": 0.05002659964999193,
-      "duracaoSeg": 166,
-      "formato": "short",
-      "idioma": "pt",
-      "capitulos": null,
-      "titlePatterns": {
-        "hasNumber": true,
-        "hasQuestion": false,
-        "hasEmoji": false,
-        "wordCount": 8,
-        "charCount": 50
-      },
-      "pillar": "mindset"
-    },
-    {
-      "videoId": "M4IPngsT9BM",
-      "title": "O problema de educação financeira no Brasil é coisa séria!",
-      "channel": "Entre Altas e Baixas",
-      "publishedAt": "2026-08-25T19:40:21Z",
-      "views": 94559,
-      "likes": 5109,
-      "viewsPerDay": 52530.7541682856,
-      "likeRatio": 0.05402975919796106,
-      "duracaoSeg": 59,
-      "formato": "short",
-      "idioma": "pt",
-      "capitulos": null,
-      "titlePatterns": {
-        "hasNumber": false,
-        "hasQuestion": false,
-        "hasEmoji": false,
-        "wordCount": 10,
-        "charCount": 58
-      },
-      "pillar": "mindset"
-    },
-    {
-      "videoId": "lW52zJdD308",
-      "title": "O Segredo dos desenhos que moldaram a nossa Mentalidade Financeira!",
-      "channel": "Investing Money Br",
-      "publishedAt": "2026-08-26T22:50:31Z",
-      "views": 5145,
-      "likes": 258,
-      "viewsPerDay": 5145,
-      "likeRatio": 0.05014577259475218,
-      "duracaoSeg": 13,
-      "formato": "short",
-      "idioma": "pt",
-      "capitulos": null,
-      "titlePatterns": {
-        "hasNumber": false,
-        "hasQuestion": false,
-        "hasEmoji": false,
-        "wordCount": 10,
-        "charCount": 67
-      },
-      "pillar": "mindset"
     },
     {
       "videoId": "eT8YV0tnWMI",
       "title": "MILIONÁRIO AOS 50: Ainda dá tempo? 🤔💸 #shorts #investimentos #educaçãofinanceira",
       "channel": "Guilherme Agnello | Dividendista",
       "publishedAt": "2026-08-04T22:00:11Z",
-      "views": 36575,
-      "likes": 2051,
-      "viewsPerDay": 1611.0232047172142,
-      "likeRatio": 0.05607655502392345,
+      "views": 36614,
+      "likes": 2054,
+      "viewsPerDay": 1542.1985157570919,
+      "likeRatio": 0.056098760037144264,
       "duracaoSeg": 72,
       "formato": "short",
       "idioma": "pt",
@@ -779,14 +578,36 @@
       "pillar": "mindset"
     },
     {
+      "videoId": "xlYUblG369Y",
+      "title": "FIUK PEDE EDUCAÇÃO FINANCEIRA! LUANA PIOVANI RECLAMA QUE FALTA HÉTERO NO MUNDO! PEQUENA AMANDA PRESA",
+      "channel": "O Brasil Que Deu Certo",
+      "publishedAt": "2026-08-21T15:45:21Z",
+      "views": 8909,
+      "likes": 881,
+      "viewsPerDay": 1272.3994278671046,
+      "likeRatio": 0.09888876417106297,
+      "duracaoSeg": 4284,
+      "formato": "longo",
+      "idioma": "pt",
+      "capitulos": null,
+      "titlePatterns": {
+        "hasNumber": false,
+        "hasQuestion": false,
+        "hasEmoji": false,
+        "wordCount": 15,
+        "charCount": 100
+      },
+      "pillar": "mindset"
+    },
+    {
       "videoId": "RErIArKiZwg",
       "title": "educação financeira ✅",
       "channel": "Jhulya Parra",
       "publishedAt": "2026-08-20T20:00:28Z",
-      "views": 9659,
+      "views": 9666,
       "likes": 500,
-      "viewsPerDay": 1423.3507892236246,
-      "likeRatio": 0.05176519308417021,
+      "viewsPerDay": 1235.3397953249575,
+      "likeRatio": 0.051727705358990274,
       "duracaoSeg": 60,
       "formato": "short",
       "idioma": "pt",
@@ -805,10 +626,122 @@
       "title": "POR QUE SOBRA TÃO POUCO DINHEIRO? 💸🤔 #shorts #brasil #dinheiro",
       "channel": "Guilherme Agnello | Dividendista",
       "publishedAt": "2026-07-07T21:30:17Z",
-      "views": 60738,
+      "views": 60754,
       "likes": 3963,
-      "viewsPerDay": 1197.4279641972378,
-      "likeRatio": 0.06524745628766176,
+      "viewsPerDay": 1173.7139155693703,
+      "likeRatio": 0.06523027290384172,
+      "duracaoSeg": 79,
+      "formato": "short",
+      "idioma": "pt",
+      "capitulos": null,
+      "titlePatterns": {
+        "hasNumber": false,
+        "hasQuestion": true,
+        "hasEmoji": true,
+        "wordCount": 10,
+        "charCount": 64
+      },
+      "pillar": "investimento"
+    }
+  ],
+  "topShorts": [
+    {
+      "videoId": "XJoYwXNEXOU",
+      "title": "NUNCA faça uma dessas 3 PERGUNTAS negociando CARRO",
+      "channel": "Emílio Gouvea",
+      "publishedAt": "2026-08-24T12:23:24Z",
+      "views": 576877,
+      "likes": 27897,
+      "viewsPerDay": 139275.82155474232,
+      "likeRatio": 0.04835866224515798,
+      "duracaoSeg": 166,
+      "formato": "short",
+      "idioma": "pt",
+      "capitulos": null,
+      "titlePatterns": {
+        "hasNumber": true,
+        "hasQuestion": false,
+        "hasEmoji": false,
+        "wordCount": 8,
+        "charCount": 50
+      },
+      "pillar": "mindset"
+    },
+    {
+      "videoId": "M4IPngsT9BM",
+      "title": "O problema de educação financeira no Brasil é coisa séria!",
+      "channel": "Entre Altas e Baixas",
+      "publishedAt": "2026-08-25T19:40:21Z",
+      "views": 103729,
+      "likes": 5369,
+      "viewsPerDay": 36543.111509660084,
+      "likeRatio": 0.05175987428780765,
+      "duracaoSeg": 59,
+      "formato": "short",
+      "idioma": "pt",
+      "capitulos": null,
+      "titlePatterns": {
+        "hasNumber": false,
+        "hasQuestion": false,
+        "hasEmoji": false,
+        "wordCount": 10,
+        "charCount": 58
+      },
+      "pillar": "mindset"
+    },
+    {
+      "videoId": "eT8YV0tnWMI",
+      "title": "MILIONÁRIO AOS 50: Ainda dá tempo? 🤔💸 #shorts #investimentos #educaçãofinanceira",
+      "channel": "Guilherme Agnello | Dividendista",
+      "publishedAt": "2026-08-04T22:00:11Z",
+      "views": 36614,
+      "likes": 2054,
+      "viewsPerDay": 1542.1985157570919,
+      "likeRatio": 0.056098760037144264,
+      "duracaoSeg": 72,
+      "formato": "short",
+      "idioma": "pt",
+      "capitulos": null,
+      "titlePatterns": {
+        "hasNumber": true,
+        "hasQuestion": true,
+        "hasEmoji": true,
+        "wordCount": 10,
+        "charCount": 82
+      },
+      "pillar": "mindset"
+    },
+    {
+      "videoId": "RErIArKiZwg",
+      "title": "educação financeira ✅",
+      "channel": "Jhulya Parra",
+      "publishedAt": "2026-08-20T20:00:28Z",
+      "views": 9666,
+      "likes": 500,
+      "viewsPerDay": 1235.3397953249575,
+      "likeRatio": 0.051727705358990274,
+      "duracaoSeg": 60,
+      "formato": "short",
+      "idioma": "pt",
+      "capitulos": null,
+      "titlePatterns": {
+        "hasNumber": false,
+        "hasQuestion": false,
+        "hasEmoji": false,
+        "wordCount": 3,
+        "charCount": 21
+      },
+      "pillar": "mindset"
+    },
+    {
+      "videoId": "1wrEmG9SHqU",
+      "title": "POR QUE SOBRA TÃO POUCO DINHEIRO? 💸🤔 #shorts #brasil #dinheiro",
+      "channel": "Guilherme Agnello | Dividendista",
+      "publishedAt": "2026-07-07T21:30:17Z",
+      "views": 60754,
+      "likes": 3963,
+      "viewsPerDay": 1173.7139155693703,
+      "likeRatio": 0.06523027290384172,
       "duracaoSeg": 79,
       "formato": "short",
       "idioma": "pt",
@@ -823,36 +756,14 @@
       "pillar": "investimento"
     },
     {
-      "videoId": "qd_bK9_RnOk",
-      "title": "Quer ter paz financeira?  #educaçãofinanceira #dinheiro #investimentos",
-      "channel": "Dinheirando",
-      "publishedAt": "2026-08-23T20:48:11Z",
-      "views": 4447,
-      "likes": 209,
-      "viewsPerDay": 1184.930454577382,
-      "likeRatio": 0.04699797616370587,
-      "duracaoSeg": 53,
-      "formato": "short",
-      "idioma": "pt",
-      "capitulos": null,
-      "titlePatterns": {
-        "hasNumber": false,
-        "hasQuestion": true,
-        "hasEmoji": false,
-        "wordCount": 7,
-        "charCount": 70
-      },
-      "pillar": "mindset"
-    },
-    {
       "videoId": "lNA_AdQ9XgE",
       "title": "Se prepare pra sair do vermelho!",
       "channel": "Roberto Alves",
       "publishedAt": "2026-08-08T02:01:56Z",
-      "views": 21186,
-      "likes": 2032,
-      "viewsPerDay": 1084.5101083845054,
-      "likeRatio": 0.09591239497781553,
+      "views": 21194,
+      "likes": 2033,
+      "viewsPerDay": 1030.157347885707,
+      "likeRatio": 0.09592337453996413,
       "duracaoSeg": 67,
       "formato": "short",
       "idioma": "pt",
@@ -873,7 +784,7 @@
       "publishedAt": "2026-08-03T11:39:28Z",
       "views": 25536,
       "likes": 1707,
-      "viewsPerDay": 1058.091611542574,
+      "viewsPerDay": 1014.4409869885584,
       "likeRatio": 0.0668468045112782,
       "duracaoSeg": 132,
       "formato": "short",
@@ -889,26 +800,70 @@
       "pillar": "mindset"
     },
     {
-      "videoId": "MXpPTcwZYSU",
-      "title": "Entenda a importância de ter 5 mil na conta! #educaçãofinanceira #liberdadefinanceira #cortespodcast",
-      "channel": "Pílula Financeira",
-      "publishedAt": "2026-08-19T00:31:58Z",
-      "views": 8692,
-      "likes": 748,
-      "viewsPerDay": 1010.9847731952821,
-      "likeRatio": 0.08605614358030372,
-      "duracaoSeg": 96,
+      "videoId": "dKb1sLfLiu8",
+      "title": "Brasileiro e sua educação financeira",
+      "channel": "Brenusu",
+      "publishedAt": "2026-07-15T21:00:05Z",
+      "views": 44187,
+      "likes": 5448,
+      "viewsPerDay": 1009.2234684375354,
+      "likeRatio": 0.12329418154660873,
+      "duracaoSeg": 89,
       "formato": "short",
       "idioma": "pt",
       "capitulos": null,
       "titlePatterns": {
-        "hasNumber": true,
+        "hasNumber": false,
         "hasQuestion": false,
         "hasEmoji": false,
-        "wordCount": 12,
-        "charCount": 100
+        "wordCount": 5,
+        "charCount": 36
       },
       "pillar": "mindset"
+    },
+    {
+      "videoId": "v4wRXpQuv-k",
+      "title": "ESSE MONSTRO TE ROUBA SEM VOCÊ PERCEBER! 🚨💸 #shorts #economia #educaçãofinanceira",
+      "channel": "Guilherme Agnello | Dividendista",
+      "publishedAt": "2026-07-27T21:30:30Z",
+      "views": 31461,
+      "likes": 2122,
+      "viewsPerDay": 990.5218739053746,
+      "likeRatio": 0.0674485871396332,
+      "duracaoSeg": 82,
+      "formato": "short",
+      "idioma": "pt",
+      "capitulos": null,
+      "titlePatterns": {
+        "hasNumber": false,
+        "hasQuestion": false,
+        "hasEmoji": true,
+        "wordCount": 11,
+        "charCount": 83
+      },
+      "pillar": "mindset"
+    },
+    {
+      "videoId": "M0dUnl5Q1m0",
+      "title": "COMECE A INVESTIR COM POUCO #investir #dinheiro #financas #patrimonio #economizar",
+      "channel": "Café & Contas",
+      "publishedAt": "2026-08-27T11:00:06Z",
+      "views": 1181,
+      "likes": 53,
+      "viewsPerDay": 984.3183967652112,
+      "likeRatio": 0.04487722269263336,
+      "duracaoSeg": 66,
+      "formato": "short",
+      "idioma": "pt",
+      "capitulos": null,
+      "titlePatterns": {
+        "hasNumber": false,
+        "hasQuestion": false,
+        "hasEmoji": false,
+        "wordCount": 10,
+        "charCount": 81
+      },
+      "pillar": "investimento"
     }
   ],
   "topLongos": [
@@ -917,10 +872,10 @@
       "title": "pessoas sem o mínimo de educação financeira",
       "channel": "Maicon Küster",
       "publishedAt": "2026-07-09T15:00:19Z",
-      "views": 659953,
-      "likes": 51295,
-      "viewsPerDay": 13469.930349667993,
-      "likeRatio": 0.07772523194833572,
+      "views": 661100,
+      "likes": 51344,
+      "viewsPerDay": 13213.277835776245,
+      "likeRatio": 0.07766449856300106,
       "duracaoSeg": 1175,
       "formato": "longo",
       "idioma": "pt",
@@ -939,10 +894,10 @@
       "title": "COMO SAIR DA POBREZA: AULA COMPLETA DE EDUCAÇÃO FINANCEIRA",
       "channel": "POP SHOW TV",
       "publishedAt": "2026-08-14T21:00:17Z",
-      "views": 92072,
-      "likes": 9487,
-      "viewsPerDay": 7224.415704793932,
-      "likeRatio": 0.10303892605786776,
+      "views": 98447,
+      "likes": 9712,
+      "viewsPerDay": 7142.624740545576,
+      "likeRatio": 0.09865206659420805,
       "duracaoSeg": 2456,
       "formato": "longo",
       "idioma": "pt",
@@ -1022,10 +977,10 @@
       "title": "Segui as dicas do PRIMO POBRE por 1 ano e isso aconteceu",
       "channel": "Bru Milli - Finanças ",
       "publishedAt": "2026-07-13T21:00:18Z",
-      "views": 214141,
-      "likes": 16362,
-      "viewsPerDay": 4785.856761226786,
-      "likeRatio": 0.07640760059960493,
+      "views": 224784,
+      "likes": 16525,
+      "viewsPerDay": 4909.768192291063,
+      "likeRatio": 0.07351501886255249,
       "duracaoSeg": 1314,
       "formato": "longo",
       "idioma": "pt",
@@ -1044,10 +999,10 @@
       "title": "Investir depois dos 50 anos com pouco dinheiro: é possível ter resultados?",
       "channel": "Financeologia",
       "publishedAt": "2026-08-05T21:00:26Z",
-      "views": 88320,
-      "likes": 6261,
-      "viewsPerDay": 4061.7263723558153,
-      "likeRatio": 0.07088994565217391,
+      "views": 92361,
+      "likes": 6367,
+      "viewsPerDay": 4053.9585251785998,
+      "likeRatio": 0.06893602278017778,
       "duracaoSeg": 1438,
       "formato": "longo",
       "idioma": "pt",
@@ -1062,36 +1017,14 @@
       "pillar": "investimento"
     },
     {
-      "videoId": "EeNp7koqriQ",
-      "title": "5 INVESTIMENTOS PARA QUEM VAI COMEÇAR DO ZERO EM 2026",
-      "channel": "Nerds de Negócios",
-      "publishedAt": "2026-08-14T22:40:30Z",
-      "views": 41415,
-      "likes": 3306,
-      "viewsPerDay": 3267.4665056960084,
-      "likeRatio": 0.07982614994567186,
-      "duracaoSeg": 600,
-      "formato": "longo",
-      "idioma": "pt",
-      "capitulos": null,
-      "titlePatterns": {
-        "hasNumber": true,
-        "hasQuestion": false,
-        "hasEmoji": false,
-        "wordCount": 10,
-        "charCount": 53
-      },
-      "pillar": "investimento"
-    },
-    {
       "videoId": "lXQRM4uyNdQ",
       "title": "A Regra dos R$50 Que Silenciosamente Constrói Um Ano de Economias",
       "channel": "Dinheiro Descomplicado",
       "publishedAt": "2026-07-29T01:03:08Z",
-      "views": 96511,
-      "likes": 4627,
-      "viewsPerDay": 3263.162017301075,
-      "likeRatio": 0.0479427215550559,
+      "views": 98518,
+      "likes": 4662,
+      "viewsPerDay": 3218.029944832068,
+      "likeRatio": 0.04732130169106153,
       "duracaoSeg": 2321,
       "formato": "longo",
       "idioma": "pt",
@@ -1106,36 +1039,36 @@
       "pillar": "mindset"
     },
     {
-      "videoId": "7PWyX3NfH8U",
-      "title": "EUA apostam em tarifaço para sair do vermelho",
-      "channel": "g1",
-      "publishedAt": "2026-08-21T15:54:01Z",
-      "views": 16586,
-      "likes": 415,
-      "viewsPerDay": 2784.169623511568,
-      "likeRatio": 0.025021102134330158,
-      "duracaoSeg": 206,
+      "videoId": "EeNp7koqriQ",
+      "title": "5 INVESTIMENTOS PARA QUEM VAI COMEÇAR DO ZERO EM 2026",
+      "channel": "Nerds de Negócios",
+      "publishedAt": "2026-08-14T22:40:30Z",
+      "views": 42620,
+      "likes": 3349,
+      "viewsPerDay": 3107.90313220827,
+      "likeRatio": 0.07857813233223838,
+      "duracaoSeg": 600,
       "formato": "longo",
       "idioma": "pt",
       "capitulos": null,
       "titlePatterns": {
-        "hasNumber": false,
+        "hasNumber": true,
         "hasQuestion": false,
         "hasEmoji": false,
-        "wordCount": 8,
-        "charCount": 45
+        "wordCount": 10,
+        "charCount": 53
       },
-      "pillar": "controle"
+      "pillar": "investimento"
     },
     {
       "videoId": "9Coy1hm27VA",
       "title": "TUBINHO - EDUCAÇÃO FINANCEIRA - Ele se meteu em confusão na aula de finanças e o valentão apareceu!",
       "channel": "YouTubinho",
       "publishedAt": "2026-08-07T15:00:06Z",
-      "views": 55590,
-      "likes": 1915,
-      "viewsPerDay": 2780.2385153360447,
-      "likeRatio": 0.034448641842057925,
+      "views": 56827,
+      "likes": 1925,
+      "viewsPerDay": 2701.7819217392166,
+      "likeRatio": 0.03387474263994228,
       "duracaoSeg": 931,
       "formato": "longo",
       "idioma": "pt",
@@ -1150,37 +1083,90 @@
       "pillar": "mindset"
     },
     {
-      "videoId": "dFg9XzORY-k",
-      "title": "13 DICAS DE ESTILO PARA QUEM É BÁSICA E TEM POUCO DINHEIRO PRA INVESTIR!",
-      "channel": "Raisa Brito",
-      "publishedAt": "2026-08-25T21:45:09Z",
-      "views": 4320,
-      "likes": 758,
-      "viewsPerDay": 2521.309621912178,
-      "likeRatio": 0.17546296296296296,
-      "duracaoSeg": 960,
+      "videoId": "h7Sx-nbYwv8",
+      "title": "Como invertir para principiantes (con poco dinero)",
+      "channel": "Lola Vargas",
+      "publishedAt": "2026-08-23T23:06:12Z",
+      "views": 11640,
+      "likes": 1050,
+      "viewsPerDay": 2478.9275713911115,
+      "likeRatio": 0.09020618556701031,
+      "duracaoSeg": 2133,
       "formato": "longo",
-      "idioma": "pt",
-      "capitulos": null,
+      "idioma": "es",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "introducción"
+        },
+        {
+          "seg": 70,
+          "titulo": "Por qué deberías invertir?"
+        },
+        {
+          "seg": 138,
+          "titulo": "Mi historia invirtiendo"
+        },
+        {
+          "seg": 373,
+          "titulo": "Qué son las inversiones?"
+        },
+        {
+          "seg": 453,
+          "titulo": "Como gano dinero de las inversiones?"
+        },
+        {
+          "seg": 676,
+          "titulo": "Principios de inversionista"
+        },
+        {
+          "seg": 900,
+          "titulo": "El tiempo y las inversiones"
+        },
+        {
+          "seg": 988,
+          "titulo": "El interes compuesto"
+        },
+        {
+          "seg": 1288,
+          "titulo": "Qué se compra?"
+        },
+        {
+          "seg": 1310,
+          "titulo": "activos de renta fija"
+        },
+        {
+          "seg": 1408,
+          "titulo": "Activos de renta variable"
+        },
+        {
+          "seg": 1781,
+          "titulo": "Donde comprar"
+        },
+        {
+          "seg": 1856,
+          "titulo": "Tutorial de tu primera inversión"
+        }
+      ],
       "titlePatterns": {
-        "hasNumber": true,
+        "hasNumber": false,
         "hasQuestion": false,
         "hasEmoji": false,
-        "wordCount": 14,
-        "charCount": 72
+        "wordCount": 7,
+        "charCount": 50
       },
       "pillar": "investimento"
     },
     {
-      "videoId": "CYYBcnFxBhE",
-      "title": "PARE DE SER ESCRAVO DAS DÍVIDAS: A Estratégia Real Para Prosperar | Raquel Mendes e Vinicius Iracet",
-      "channel": "Podcast a Voz",
-      "publishedAt": "2026-06-29T10:00:06Z",
-      "views": 133317,
-      "likes": 13883,
-      "viewsPerDay": 2251.861448250743,
-      "likeRatio": 0.10413525656892969,
-      "duracaoSeg": 5099,
+      "videoId": "7PWyX3NfH8U",
+      "title": "EUA apostam em tarifaço para sair do vermelho",
+      "channel": "g1",
+      "publishedAt": "2026-08-21T15:54:01Z",
+      "views": 16715,
+      "likes": 416,
+      "viewsPerDay": 2389.317882052786,
+      "likeRatio": 0.02488782530661083,
+      "duracaoSeg": 206,
       "formato": "longo",
       "idioma": "pt",
       "capitulos": null,
@@ -1188,10 +1174,32 @@
         "hasNumber": false,
         "hasQuestion": false,
         "hasEmoji": false,
-        "wordCount": 17,
-        "charCount": 99
+        "wordCount": 8,
+        "charCount": 45
       },
-      "pillar": "mindset"
+      "pillar": "controle"
+    },
+    {
+      "videoId": "25ScX8Ixhm4",
+      "title": "OS 5 MELHORES INVESTIMENTOS PARA QUEM QUER COMEÇAR DO ZERO EM 2026",
+      "channel": "Nerds de Negócios",
+      "publishedAt": "2026-06-30T00:15:35Z",
+      "views": 132298,
+      "likes": 10293,
+      "viewsPerDay": 2218.0012679669353,
+      "likeRatio": 0.07780162965426538,
+      "duracaoSeg": 601,
+      "formato": "longo",
+      "idioma": "pt",
+      "capitulos": null,
+      "titlePatterns": {
+        "hasNumber": true,
+        "hasQuestion": false,
+        "hasEmoji": false,
+        "wordCount": 12,
+        "charCount": 66
+      },
+      "pillar": "investimento"
     }
   ]
 }
