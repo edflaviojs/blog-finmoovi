@@ -682,5 +682,23 @@
     ],
     "veredito": "1. **O LOOP — 9/10**  \nO primeiro e o último quadro são praticamente iguais: mesmo fundo, posição e frase **“Meu cheque apareceu”**. Excelente para loop. Pelos quadros, não dá para saber se a transição entre eles é realmente imperceptível.\n\n2. **A FAIXA DE BAIXO — 6/10**  \nAs frases menores ficam muito perto da parte inferior em vários quadros. Ex.: **“Você não vai”**, **“me pega hoje”** e **“vai acreditar, meu”**. Há risco de a interface do Shorts/Reels esconder parte delas.\n\n3. **TEXTO POR CIMA DE TEXTO — 8/10**  \nNão há sobreposição grave ou palavras claramente cortadas. Porém, o enorme **“ESPECIAL”** ao fundo compete visualmente com os textos principais.\n\n4. **LEGIBILIDADE — 9/10**  \nOs textos principais são grandes, grossos e têm bom contraste. As frases menores são mais frágeis, principalmente por estarem baixas e com pouco peso visual.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — 7/10**  \nHá bastante espaço vazio, especialmente nas áreas inferiores. O fundo gráfico e os elementos financeiros evitam que pareça totalmente vazio, mas ainda existe sensação de sobra de tela.\n\n6. **COERÊNCIA — 9/10**  \nOs 8 quadros parecem claramente pertencer ao mesmo vídeo: mesma identidade visual, tipografia, fundo e linguagem. A história também avança: cheque → entrada no vermelho → olhar antes de pagar → boleto → cobrança.\n\n7. **TESTE CENTRAL — 7/10**  \nParece mais um **vídeo de motion design baseado em slides** do que um vídeo profissional cheio de movimento, porque a estrutura visual se repete muito e cada quadro funciona quase como uma tela independente.\n\n**NOTA GERAL: 8/10**  \n**PROBLEMA 1: As legendas pequenas ficam baixas demais, especialmente nos quadros 0.1s, 2.1s, 4.2s, 6.3s, 10.5s, 12.7s e 14.7s.**  \n**PROBLEMA 2: O grande “ESPECIAL” ao fundo cria competição visual desnecessária com as mensagens principais.**  \n**PROBLEMA 3: A composição repetida faz o vídeo parecer um conjunto de slides animados.**  \n**PRIMEIRA COISA A MUDAR: Suba todas as legendas inferiores para uma zona segura e reduza a sensação de layout repetido entre os quadros.**",
     "quando": "2026-08-27T15:31:34.031Z"
+  },
+  {
+    "slug": "loop-entrada-do-carro-se-parar",
+    "formato": "loop16",
+    "nota": 7,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      2.2,
+      4.4,
+      6.5,
+      8.7,
+      10.9,
+      13.1,
+      15.2
+    ],
+    "veredito": "**1. O LOOP — Nota: 3/10**  \nO primeiro quadro mostra “O carro escapou” e o último também mostra “O carro escapou”, mas não parecem exatamente o mesmo estado visual. O último tem o título maior e diferente posição/organização. O reinício pode ser percebido.\n\n**2. A FAIXA DE BAIXO — Nota: 8/10**  \nNão há elementos importantes muito baixos. As legendas ficam próximas do centro inferior, mas ainda parecem visíveis acima da área de interface.\n\n**3. TEXTO POR CIMA DE TEXTO — Nota: 6/10**  \nNão há frases totalmente sobrepostas, mas alguns textos de legenda ficam com palavras destacadas e podem parecer confusos. Em alguns quadros há sensação de texto “apertado”.\n\n**4. LEGIBILIDADE — Nota: 8/10**  \nA letra é grande e tem bom contraste. Funciona para celular. Algumas legendas menores poderiam ser um pouco maiores.\n\n**5. A TELA ESTÁ VIVA OU VAZIA? — Nota: 7/10**  \nO gráfico de barras e os títulos ocupam bem a tela. Porém, alguns momentos têm muito espaço vazio na parte inferior e lateral.\n\n**6. COERÊNCIA — Nota: 8/10**  \nOs quadros parecem do mesmo vídeo, com identidade visual consistente. A sequência conta uma história: carro, dinheiro, poupar, perda.\n\n**7. TESTE CENTRAL — Nota: 7/10**  \nParece mais um vídeo animado do que slides, mas ainda passa uma sensação de sequência de cards com pouca variação visual.\n\nNOTA GERAL: 7\nPROBLEMA 1: O loop não fecha perfeitamente: o primeiro quadro (0.1s) e o último (15.2s) não são visualmente idênticos.\nPROBLEMA 2: Alguns quadros dependem muito de texto parado e têm pouca mudança visual entre cenas.\nPROBLEMA 3: A parte inferior fica com legendas próximas demais da área onde a interface do Reels/Shorts aparece.\nPRIMEIRA COISA A MUDAR: Fazer o último quadro terminar exatamente igual ao primeiro, mantendo posição, título e composição para criar um loop invisível.",
+    "quando": "2026-08-28T16:53:08.456Z"
   }
 ]
