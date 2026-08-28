@@ -28,7 +28,7 @@ Vamos paso a paso, como si un amigo te mostrara el camino, y al final tendrás u
 
 - **Urgencia motivadora**: cuando el tiempo es limitado, tendemos a cortar distracciones y a enfocarnos en lo que realmente importa.  
 - **Ciclo de pagos**: en los próximos tres meses, la mayoría de las facturas fijas (alquiler, servicios, cuotas) ya estarán pagadas, quedando solo los gastos variables y la preparación para la temporada de fiestas.  
-- **Espacio para ajustes**: 100 días permiten probar estrategias, corregir errores y celebrar pequeñas victorias antes de que termine el año.
+- **Espacio para ajustes**: 100 días permiten probar [estrategias](/es/posts/es-como-diversificar-con-activos-de-renta-variable-en-2026), corregir errores y celebrar pequeñas victorias antes de que termine el año.
 
 ## 2. Mapea tus flujos: dónde entra y sale el dinero
 
@@ -37,17 +37,17 @@ Vamos paso a paso, como si un amigo te mostrara el camino, y al final tendrás u
    - *Esenciales*: alquiler, facturas de luz/agua, transporte.  
    - *Variables*: supermercado, ocio, regalos.  
    - *Oportunidades*: reembolso, ingresos extra, inversiones a corto plazo.  
-3. **Calcula la media**: suma los gastos de cada grupo en los últimos 30 días y proyecta para los próximos 100. Usa la funcionalidad de **informes de flujo de caja** de FinMoovi para visualizar tendencias.
+3. **Calcula la media**: suma los gastos de cada grupo en los últimos 30 días y proyecta para los próximos 100. Usa la funcionalidad de **informes de [flujo de caja](/es/glossario/es-flujo-de-caja)** de FinMoovi para visualizar tendencias.
 
 ![2. Mapea tus flujos: dónde entra y sale el dinero](/images/posts/sprint-financeiro-como-usar-os-ultimos-100-dias-para-fechar-2.webp)
 
 ## 3. Define metas de caja mensuales – el “azul” como objetivo
 
-- **Meta de reserva**: reserva, al menos, el equivalente al coste de un café al día para un fondo de emergencia. Es una cantidad pequeña, pero crea un colchón de seguridad.  
+- **Meta de reserva**: reserva, al menos, el equivalente al coste de un café al día para un [fondo de emergencia](/es/glossario/es-fondo-de-emergencia). Es una cantidad pequeña, pero crea un colchón de seguridad.  
 - **Meta de reducción**: recorta un 10 % de los gastos variables. Si sueles gastar el precio de un almuerzo diario en snacks, intenta reducirlo a la mitad.  
 - **Meta de ingresos extra**: aprovecha oportunidades de **cashback inteligente** o trabajos freelance para añadir un “salario extra” de aproximadamente un salario mínimo al final de cada mes.
 
-Anota estas metas en la **planificación mensual** de FinMoovi; la app permite establecer alertas cuando te acercas al límite establecido.
+Anota estas metas en la **planificación mensual** de FinMoovi; la app permite establecer [alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no) cuando te acercas al límite establecido.
 
 ## 4. Herramientas prácticas: cómo FinMoovi ayuda a transformar el caos
 
@@ -60,7 +60,7 @@ Solo apunta la cámara del móvil a la factura o usa la grabación de voz para i
 Gráficos de entrada y salida en tiempo real dan la sensación de “ver el dinero”. Cuando el saldo se acerca a cero, la app envía una **alerta de saldo** para que tomes una acción inmediata.
 
 ### 4.3 Metas y recordatorios  
-Define metas de ahorro y recibe notificaciones diarias. Por ejemplo, “no superes el gasto de supermercado por encima de dos veces el precio de un café al día”.
+Define metas de [ahorro](/es/glossario/es-ahorro) y recibe notificaciones diarias. Por ejemplo, “no superes el gasto de supermercado por encima de dos veces el precio de un café al día”.
 
 ### 4.4 Modo compras  
 Crea listas de la compra y ve el total estimado en tiempo real. Esto evita el famoso “se me olvidó lo que necesitaba” que suele inflar la cuenta final.
@@ -92,9 +92,9 @@ Empieza con un micro‑objetivo: en los próximos 30 días, registra **500 gasto
 
 ## 7. Consejos rápidos para acelerar el sprint
 
-1. **Cambia la tarjeta de crédito por débito en las compras diarias** – el débito impide la acumulación de intereses invisibles.  
+1. **Cambia la tarjeta de [crédito](/es/glossario/es-credito) por débito en las compras diarias** – el débito impide la acumulación de intereses invisibles.  
 2. **Utiliza el cashback de forma inteligente** – reinvierte el retorno en una meta de reserva, en lugar de gastarlo de nuevo.  
-3. **Planifica las fiestas**: establece un presupuesto visual para regalos y comidas; el modo compras de FinMoovi ayuda a mantener el total bajo control.  
+3. **Planifica las fiestas**: establece un [presupuesto visual](/es/posts/es-como-organizar-tu-dinero-con-una-app-facil-de-usar) para regalos y comidas; el modo compras de FinMoovi ayuda a mantener el total bajo control.  
 4. **Negocia servicios**: teléfono, internet y streaming suelen tener promociones de fin de año; cambia de plan o pide descuento.  
 5. **Ingresos extra rápidos**: ofrece servicios de entrega o trabajos puntuales que paguen en efectivo, facilitando la aplicación inmediata en la reserva.
 
@@ -113,7 +113,7 @@ En menos de cinco minutos ya tienes un registro automático, un punto más en tu
 Cuando diciembre llega y el saldo está positivo, tienes dos grandes oportunidades:
 
 - **Reforzar el hábito**: sigue usando la captura inteligente como rutina diaria.  
-- **Invertir la reserva**: busca opciones de renta fija o fondos de inversión a corto plazo, según tu perfil. El sitio de finanzas [Investopedia](https://www.investopedia.com) ofrece guías claras para principiantes.
+- **Invertir la reserva**: busca opciones de [renta fija](/es/glossario/es-renta-fija) o fondos de inversión a corto plazo, según tu perfil. El sitio de finanzas [Investopedia](https://www.investopedia.com) ofrece guías claras para principiantes.
 
 Recuerda: el sprint no termina en diciembre. Es la semilla de un ciclo de control que puede repetirse cada año, siempre ajustando las metas según cambie la realidad.
 

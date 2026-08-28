@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-28T20:30:04.239Z",
-  "sourceCursor": 1,
+  "updatedAt": "2026-08-28T21:18:14.004Z",
+  "sourceCursor": 0,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -1828,8 +1828,10 @@
       "category": "glossario",
       "priority": 3,
       "source": "autocomplete",
-      "status": "pending",
-      "addedAt": "2026-08-24T07:48:27.401Z"
+      "status": "used",
+      "addedAt": "2026-08-24T07:48:27.401Z",
+      "usedAt": "2026-08-28T21:18:14.004Z",
+      "usedBy": "glossario-auto-diario"
     },
     {
       "keyword": "renda mensal do neymar",

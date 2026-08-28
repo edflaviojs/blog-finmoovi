@@ -28,7 +28,7 @@ Vamos ao passo a passo, como se fosse um amigo te mostrando o caminho, e ao fina
 
 - **Urgência motivadora**: quando o tempo é limitado, a gente tende a cortar distrações e focar no que realmente importa.
 - **Ciclo de pagamentos**: nos próximos três meses, a maioria das contas fixas (aluguel, serviços, parcelas) já foi quitada, restando apenas despesas variáveis e a preparação para a temporada de festas.
-- **Espaço para ajustes**: 100 dias dão margem para testar estratégias, corrigir erros e ainda celebrar pequenas vitórias antes do fim do ano.
+- **Espaço para ajustes**: 100 dias dão margem para testar [estratégias](/posts/como-diversificar-com-ativos-de-renda-variavel-em-2026), corrigir erros e ainda celebrar pequenas vitórias antes do fim do ano.
 
 ## 2. Mapeie seus fluxos: onde o dinheiro entra e sai
 
@@ -37,7 +37,7 @@ Vamos ao passo a passo, como se fosse um amigo te mostrando o caminho, e ao fina
    - *Essenciais*: aluguel, contas de luz/água, transporte.
    - *Variáveis*: supermercado, lazer, presentes.
    - *Oportunidades*: cashback, renda extra, investimentos de curto prazo.
-3. **Calcule a média**: some os gastos de cada grupo nos últimos 30 dias e projete para os próximos 100. Use a funcionalidade de **relatórios de fluxo de caixa** do FinMoovi para visualizar tendências.
+3. **Calcule a média**: some os gastos de cada grupo nos últimos 30 dias e projete para os próximos 100. Use a funcionalidade de **relatórios de [fluxo de caixa](/glossario/fluxo-de-caixa)** do FinMoovi para visualizar tendências.
 
 ![2. Mapeie seus fluxos: onde o dinheiro entra e sai](/images/posts/sprint-financeiro-como-usar-os-ultimos-100-dias-para-fechar-2.webp)
 
@@ -45,11 +45,11 @@ Vamos ao passo a passo, como se fosse um amigo te mostrando o caminho, e ao fina
 
 ## 3. Defina metas de caixa mensais – o “azul” como objetivo
 
-- **Meta de reserva**: reserve, ao menos, o equivalente ao custo de um café por dia para um fundo de emergência. É um valor pequeno, mas que cria um colchão de segurança.
+- **Meta de reserva**: reserve, ao menos, o equivalente ao custo de um café por dia para um [fundo de emergência](/ferramentas/calculadora-reserva). É um valor pequeno, mas que cria um colchão de segurança.
 - **Meta de redução**: corte 10 % dos gastos variáveis. Se você costuma gastar o preço de um almoço por dia em lanches, tente reduzir para metade.
 - **Meta de renda extra**: aproveite oportunidades de **cashback inteligente** ou trabalhos freelance para adicionar um “salário extra” de cerca de um salário mínimo ao final de cada mês.
 
-Anote essas metas no **planejamento mensal** do FinMoovi; o app permite definir alertas quando você se aproxima do limite estabelecido.
+Anote essas metas no **planejamento mensal** do FinMoovi; o app permite definir [alertas](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto) quando você se aproxima do limite estabelecido.
 
 ## 4. Ferramentas práticas: como o FinMoovi ajuda a transformar o caos
 
@@ -98,9 +98,9 @@ Comece com um micro‑objetivo: nos próximos 30 dias, registre **500 despesas**
 
 ## 7. Dicas rápidas para acelerar o sprint
 
-1. **Troque o cartão de crédito por débito nas compras do dia a dia** – o débito impede o acúmulo de juros invisíveis.
+1. **Troque o cartão de [crédito](/glossario/credito) por débito nas compras do dia a dia** – o débito impede o acúmulo de [juros](/glossario/juros) invisíveis.
 2. **Use o cashback de forma inteligente** – reinvista o retorno em uma meta de reserva, ao invés de gastar novamente.
-3. **Planeje as festas**: estabeleça um orçamento visual para presentes e comidas; o modo compras do FinMoovi ajuda a manter o total sob controle.
+3. **Planeje as festas**: estabeleça um [orçamento visual](/posts/como-organizar-seu-dinheiro-com-um-app-facil-de-usar) para presentes e comidas; o modo compras do FinMoovi ajuda a manter o total sob controle.
 4. **Negocie serviços**: telefone, internet e streaming costumam ter promoções de fim de ano; troque de plano ou peça desconto.
 5. **Renda extra rápida**: ofereça serviços de entrega ou trabalhos pontuais que paguem em dinheiro, facilitando a aplicação imediata na reserva.
 
@@ -119,7 +119,7 @@ Em menos de cinco minutos você já tem um lançamento automático, um ponto a m
 Quando dezembro chega e o saldo está positivo, você tem duas grandes oportunidades:
 
 - **Reforçar o hábito**: continue usando a captura inteligente como rotina diária.
-- **Investir a reserva**: procure opções de renda fixa ou fundos de investimento de curto prazo, de acordo com seu perfil. O site da [Investopedia](https://www.investopedia.com) oferece guias claros para iniciantes.
+- **Investir a reserva**: procure opções de [renda fixa](/glossario/renda-fixa) ou fundos de investimento de curto prazo, de acordo com seu perfil. O site da [Investopedia](https://www.investopedia.com) oferece guias claros para iniciantes.
 
 Lembre‑se: o sprint não termina em dezembro. Ele é a semente de um ciclo de controle que pode ser repetido a cada ano, sempre ajustando as metas conforme a realidade muda.
 

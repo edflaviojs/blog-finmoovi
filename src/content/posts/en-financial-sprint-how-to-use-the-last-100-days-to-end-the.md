@@ -18,7 +18,7 @@ seo:
   keywords: ["financial sprint","end the year in the black","expense control","cash‑flow goals","FinMoovi","year‑end planning","30‑day challenge","year‑end financial goals"]
 ---
 
-Imagine the scene: it’s a Monday in November, your phone buzzes with a notification that your credit‑card bill is almost maxed out. You’ve just paid the electricity bill, the rent, and you still have that weekend dinner eating away at your wallet. The thought that pops up is, “How am I going to finish the year without being in the red?” That tight‑knit feeling of stacked bills and little breathing room is exactly what we’ll turn into motivation.
+Imagine the scene: it’s a Monday in November, your phone buzzes with a notification that your [credit](/en/glossario/en-credit)‑card bill is almost maxed out. You’ve just paid the electricity bill, the rent, and you still have that weekend dinner eating away at your wallet. The thought that pops up is, “How am I going to finish the year without being in the red?” That tight‑knit feeling of stacked bills and little breathing room is exactly what we’ll turn into motivation.
 
 A **financial sprint** isn’t another complicated spreadsheet; it’s a short‑term action plan focused on the last 100 days of the calendar, turning anxiety into tangible results. The idea is simple: map every expense, set realistic targets, and use tools that automate tracking so that when December flips, you see a positive balance like sunshine after a storm.
 
@@ -27,7 +27,7 @@ Below is the step‑by‑step, as if a friend were showing you the way, and at t
 ## 1. Why 100 days? Short time frames create energy
 
 - **Motivating urgency**: when time is limited, we tend to cut distractions and focus on what truly matters.  
-- **Payment cycle**: over the next three months, most fixed bills (rent, utilities, loan installments) will already be paid, leaving only variable expenses and holiday‑season prep.  
+- **Payment cycle**: over the next three months, most fixed bills (rent, utilities, [loan](/en/glossario/en-loan) installments) will already be paid, leaving only variable expenses and holiday‑season prep.  
 - **Room for tweaks**: 100 days give you space to test strategies, fix mistakes, and celebrate small wins before the year ends.
 
 ## 2. Map your cash flows: where money comes in and goes out
@@ -37,17 +37,17 @@ Below is the step‑by‑step, as if a friend were showing you the way, and at t
    - *Essentials*: rent, electricity/water bills, transportation.  
    - *Variable*: groceries, leisure, gifts.  
    - *Opportunities*: smart cashback, side‑gig income, short‑term investments.  
-3. **Calculate the average**: add up the spending of each bucket over the past 30 days and project it for the next 100. Use the **cash‑flow reports** feature in FinMoovi to see trends.
+3. **Calculate the average**: add up the spending of each bucket over the past 30 days and project it for the next 100. Use the **cash‑flow [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end)** feature in FinMoovi to see trends.
 
 ![2. Map your cash flows: where money comes in and goes out](/images/posts/sprint-financeiro-como-usar-os-ultimos-100-dias-para-fechar-2.webp)
 
 ## 3. Set monthly cash‑flow goals – the “in the black” target
 
-- **Reserve goal**: set aside at least the cost of a coffee a day for an emergency fund. It’s a tiny amount, but it builds a safety cushion.  
+- **Reserve goal**: set aside at least the cost of a coffee a day for an [emergency fund](/en/glossario/en-emergency-fund). It’s a tiny amount, but it builds a safety cushion.  
 - **Reduction goal**: cut 10 % of variable spending. If you usually spend the price of a daily lunch on snacks, try halving that.  
-- **Extra‑income goal**: leverage smart cashback or freelance gigs to add roughly a minimum‑wage amount as “extra salary” each month.
+- **Extra‑income goal**: [leverage](/en/glossario/en-leverage) smart cashback or freelance gigs to add roughly a minimum‑wage amount as “extra salary” each month.
 
-Write these goals in the **monthly planning** section of FinMoovi; the app lets you set alerts when you approach the limit you defined.
+Write these goals in the **monthly [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips)** section of FinMoovi; the app lets you set alerts when you approach the limit you defined.
 
 ## 4. Practical tools: how FinMoovi turns chaos into order
 
@@ -60,7 +60,7 @@ Just point your phone’s camera at a receipt or use voice entry to log expenses
 Real‑time inflow/outflow charts give you the feeling of “seeing the money”. When the balance nears zero, the app sends a **balance alert** so you can act immediately.
 
 ### 4.3 Goals and reminders  
-Set savings targets and receive daily notifications. For example, “don’t exceed grocery spending beyond twice the price of a coffee per day”.
+Set [savings](/en/glossario/en-savings) targets and receive daily notifications. For example, “don’t exceed grocery spending beyond twice the price of a coffee per day”.
 
 ### 4.4 Shopping mode  
 Create shopping lists and see the estimated total in real time. This stops the classic “I forgot what I needed” that inflates the final bill.
@@ -92,7 +92,7 @@ Start with a micro‑goal: over the next 30 days, record **500 expenses** using 
 
 ## 7. Quick tips to speed up the sprint
 
-1. **Swap credit cards for debit on everyday purchases** – debit stops invisible interest from piling up.  
+1. **Swap credit cards for debit on everyday purchases** – debit stops invisible [interest](/en/glossario/en-interest) from piling up.  
 2. **Use smart cashback wisely** – reinvest the return into your reserve goal instead of spending it again.  
 3. **Plan holiday spending**: set a visual budget for gifts and food; FinMoovi’s shopping mode helps keep the total in check.  
 4. **Negotiate services**: phone, internet, and streaming often have year‑end promos; switch plans or ask for a discount.  
