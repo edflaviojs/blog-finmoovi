@@ -1273,8 +1273,63 @@
           "titulo": "Tutorial de tu primera inversión"
         }
       ]
+    },
+    {
+      "videoId": "A4JCBXq88sA",
+      "title": "AULA OBRIGATÓRIA: Como Investir em renda fixa com Pouco Dinheiro Sendo Iniciante",
+      "channel": "POP SHOW TV",
+      "duracaoSeg": 574,
+      "idioma": "pt",
+      "viewsPerDay": 431,
+      "vistoEm": "2026-08-29",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "Dinheiro parado na conta? O motivo pelo qual você trava seu crescimento financeiro"
+        },
+        {
+          "seg": 14,
+          "titulo": "Pouco dinheiro não é o problema, a real barreira que impede você de investir"
+        },
+        {
+          "seg": 48,
+          "titulo": "Hábito de investir: por que ele é mais importante do que o valor que você tem"
+        },
+        {
+          "seg": 120,
+          "titulo": "Quantidade guardada x quantidade ganha: o que realmente separa quem tem patrimônio"
+        },
+        {
+          "seg": 154,
+          "titulo": "Mentalidade de investidor: como começar não importa quanto você tenha"
+        },
+        {
+          "seg": 211,
+          "titulo": "Como criar o hábito de guardar dinheiro (e em quantos dias ele realmente se forma)"
+        },
+        {
+          "seg": 333,
+          "titulo": "Reserva de emergência: o passo prático para sair da mesmice financeira"
+        },
+        {
+          "seg": 390,
+          "titulo": "Tesouro Selic: o investimento que ensina você a criar o hábito de investir"
+        },
+        {
+          "seg": 435,
+          "titulo": "Onde encontrar esse investimento e a partir de quanto você pode começar"
+        },
+        {
+          "seg": 465,
+          "titulo": "Como calcular o valor ideal da sua reserva de emergência"
+        },
+        {
+          "seg": 518,
+          "titulo": "Os dois aprendizados que vão mudar sua relação com o dinheiro"
+        }
+      ]
     }
   ],
-  "atualizadoEm": "2026-08-28T15:47:51.866Z",
-  "total": 23
+  "atualizadoEm": "2026-08-29T10:35:47.835Z",
+  "total": 24
 }
