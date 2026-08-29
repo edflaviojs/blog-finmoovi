@@ -250,5 +250,11 @@
     "gancho": "faca-isso",
     "turno": "manha",
     "em": "2026-08-29T11:17:12.532Z"
+  },
+  {
+    "situacao": "fatura-maior",
+    "gancho": "faca-isso",
+    "turno": "noite",
+    "em": "2026-08-29T11:21:22.039Z"
   }
 ]

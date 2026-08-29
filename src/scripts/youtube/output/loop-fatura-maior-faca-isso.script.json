@@ -1,0 +1,117 @@
+{
+  "slug": "loop-fatura-maior-faca-isso",
+  "formato": "loop16",
+  "term": "A fatura veio maior",
+  "category": "vida",
+  "keyword": "FATURA",
+  "situacao": "fatura-maior",
+  "gancho": "faca-isso",
+  "ganchoFamilia": "faça isso",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "bola-neve",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se você quer entender a fatura, FAÇA ISSO.",
+      "durationSec": 2.9,
+      "shots": [
+        {
+          "anchor": "entender",
+          "visual": {
+            "type": "statement",
+            "text": "Entenda sua fatura"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "fatura",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-neve"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu achei que lembrava tudo, mas tinha compras que eu esqueci.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "achei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-neve"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "lembrava",
+          "visual": {
+            "type": "statement",
+            "text": "Eu esqueci compras"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então hoje eu confiro cada compra antes de pagar com calma.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "confiro",
+          "visual": {
+            "type": "statement",
+            "text": "Confiro tudo antes"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "compra",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-neve"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Assim, quando você quer entender a fatura, faça isso comigo antes, sempre.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "entender",
+          "visual": {
+            "type": "statement",
+            "text": "Entenda a fatura comigo"
+          }
+        },
+        {
+          "anchor": "fatura",
+          "visual": {
+            "type": "statement",
+            "text": "Entenda sua fatura"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
