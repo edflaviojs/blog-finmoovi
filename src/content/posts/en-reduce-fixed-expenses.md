@@ -1,20 +1,31 @@
 ---
-title: "How to Effectively Reduce Monthly Fixed Expenses"
-description: "Learn how to reduce monthly fixed expenses and save money with practical and effective tips. Discover how to manage your finances intelligently."
-image: "/images/posts/en-reduce-fixed-expenses.webp"
-imageAlt: "Desk with keyboard, calculator, papers, glasses, coffee cup, plant, and computer mouse."
-category: "dicas"
-tags: ["reduce fixed expenses", "personal finance", "save money", "budget"]
-author: "FinMoovi"
-publishedAt: 2026-05-26
+title: How to Effectively Reduce Monthly Fixed Expenses
+description: >-
+  Learn how to reduce monthly fixed expenses and save money with practical and
+  effective tips. Discover how to manage your finances intelligently.
+image: /images/posts/en-reduce-fixed-expenses.webp
+category: dicas
+tags:
+  - reduce fixed expenses
+  - personal finance
+  - save money
+  - budget
+author: FinMoovi
+publishedAt: 2026-05-26T00:00:00.000Z
 readingTime: 3
 featured: true
-locale: "en"
-translationKey: "como-reduzir-gastos-fixos-mensais-de-forma-eficaz"
+locale: en
+translationKey: como-reduzir-gastos-fixos-mensais-de-forma-eficaz
 seo:
-  metaTitle: "How to Effectively Reduce Monthly Fixed Expenses"
-  metaDescription: "Learn how to reduce monthly fixed expenses and save money with practical and effective tips. Discover how to manage your finances intelligently."
-  keywords: ["reduce fixed expenses", "personal finance", "save money", "budget"]
+  metaTitle: How to Effectively Reduce Monthly Fixed Expenses
+  metaDescription: >-
+    Learn how to reduce monthly fixed expenses and save money with practical and
+    effective tips. Discover how to manage your finances intelligently.
+  keywords:
+    - reduce fixed expenses
+    - personal finance
+    - save money
+    - budget
 ---
 
 ## Introduction

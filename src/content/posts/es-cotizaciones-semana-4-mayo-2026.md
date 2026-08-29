@@ -1,20 +1,32 @@
 ---
-title: "Resumen Semanal: Dólar a €0,90 — Semana 4 de mayo"
-description: "Resumen semanal del mercado financiero: dólar, euro, tasa base del banco central y consejos para inversores. Semana 4 de mayo 2026."
-image: "/images/posts/es-cotizaciones-semana-4-mayo-2026.webp"
-imageAlt: "Circuito electrónico con luces azules y rojas, y símbolo de dólar en el centro."
-category: "cotacoes"
-tags: ["cotizaciones", "dólar", "euro", "mercado financiero", "selic"]
-author: "FinMoovi"
-publishedAt: 2026-05-27
+title: 'Resumen Semanal: Dólar a €0,90 — Semana 4 de mayo'
+description: >-
+  Resumen semanal del mercado financiero: dólar, euro, tasa base del banco
+  central y consejos para inversores. Semana 4 de mayo 2026.
+image: /images/posts/es-cotizaciones-semana-4-mayo-2026.webp
+category: cotacoes
+tags:
+  - cotizaciones
+  - dólar
+  - euro
+  - mercado financiero
+  - selic
+author: FinMoovi
+publishedAt: 2026-05-27T00:00:00.000Z
 readingTime: 3
 featured: false
-locale: "es"
-translationKey: "cotacoes-semana-4-maio-2026"
+locale: es
+translationKey: cotacoes-semana-4-maio-2026
 seo:
-  metaTitle: "Cotizaciones Semana 4 mayo 2026: Dólar R$ 5.03"
-  metaDescription: "Resumen semanal: dólar a R$ 5.03, euro a R$ 5.85. Análisis y consejos para inversores."
-  keywords: ["cotización dólar hoy", "cotización euro", "resumen mercado financiero", "selic"]
+  metaTitle: 'Cotizaciones Semana 4 mayo 2026: Dólar R$ 5.03'
+  metaDescription: >-
+    Resumen semanal: dólar a R$ 5.03, euro a R$ 5.85. Análisis y consejos para
+    inversores.
+  keywords:
+    - cotización dólar hoy
+    - cotización euro
+    - resumen mercado financiero
+    - selic
 ---
 
 ## Resumen Semanal del [Mercado Financiero](/es/posts/es-cotizaciones-semana-3-junio-2026)
