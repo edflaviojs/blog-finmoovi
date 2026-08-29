@@ -1,0 +1,117 @@
+{
+  "slug": "loop-reforma-banheiro-faca-isso",
+  "formato": "loop16",
+  "term": "A reforma que sempre adia",
+  "category": "vida",
+  "keyword": "REFORMA",
+  "situacao": "reforma-banheiro",
+  "gancho": "faca-isso",
+  "ganchoFamilia": "faça isso",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "ampulheta",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se você quer parar de adiar, faça isso.",
+      "durationSec": 2.9,
+      "shots": [
+        {
+          "anchor": "parar",
+          "visual": {
+            "type": "statement",
+            "text": "Pare de adiar"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "adiar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ampulheta"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Lá em casa, eu empurrava aquilo vez que apertava o mês.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "empurrava",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ampulheta"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "aquilo",
+          "visual": {
+            "type": "statement",
+            "text": "Eu também empurrava"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Só que percebi. Quando eu adiava, o conserto continuava na cabeça.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "percebi",
+          "visual": {
+            "type": "statement",
+            "text": "Adiar fica na cabeça"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "adiava",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ampulheta"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Hoje, se você quer parar de adiar, eu olho primeiro para isso.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "parar",
+          "visual": {
+            "type": "statement",
+            "text": "Olhe primeiro para isso"
+          }
+        },
+        {
+          "anchor": "adiar",
+          "visual": {
+            "type": "statement",
+            "text": "Pare de adiar"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
