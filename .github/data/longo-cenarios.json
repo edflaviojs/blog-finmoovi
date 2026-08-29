@@ -34,6 +34,21 @@
       "funcaoDoApp": "categorias",
       "promessa": "Vou te mostrar como encontrar dinheiro no mês e escolher uma previdência para o futuro",
       "em": "2026-08-24"
+    },
+    {
+      "slug": "educacao-financeira-como-fazer",
+      "cenarios": [
+        "a fatura do cartão",
+        "o mercado",
+        "o aluguel",
+        "o carro"
+      ],
+      "fio": "balde-furado",
+      "elenco": "um jovem no primeiro emprego, que ainda tem tudo pela frente",
+      "funcaoDoApp": "balanco-mensal",
+      "cena": "o pneu que furou a caminho do trabalho",
+      "promessa": "Vou te mostrar onde os pequenos gastos estão levando seu salário antes do fim do mês e como enxergar isso a tempo",
+      "em": "2026-08-29"
     }
   ]
 }
