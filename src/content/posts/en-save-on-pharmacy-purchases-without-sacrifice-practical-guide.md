@@ -3,6 +3,7 @@ title: "Save on Pharmacy Purchases Without Sacrifice: Practical Guide 2026"
 description: "Discover simple ways to spend less at pharmacies, stay healthy, and use FinMoovi to track everything in minutes."
 tickerHeadline: "The tactic that cuts pharmacy spending"
 image: "/images/posts/economize-nas-farmacias-sem-sacrificio-guia-pratico-2026.webp"
+imageAlt: "Four smiling adults sitting together, examining a small booklet and smartphone."
 category: "dicas"
 locale: "en"
 tags: ["pharmacy savings","personal finance","budgeting","money"]

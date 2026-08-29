@@ -3,6 +3,7 @@ title: "Sprint financiero: Cómo usar los últimos 100 días para cerrar el año
 description: "Descubre un plan práctico de 100 días para terminar el año en positivo, con consejos accionables y la app FinMoovi como aliado."
 tickerHeadline: "Los 100 días que cambian tu saldo"
 image: "/images/posts/sprint-financeiro-como-usar-os-ultimos-100-dias-para-fechar.webp"
+imageAlt: "Cartera marrón, calculadora, monedas euro y gráfico financiero sobre fondo blanco con hojas verdes."
 category: "orcamento"
 locale: "es"
 tags: ["sprint financiero","cerrar el año en positivo","control de gastos","metas de caja","FinMoovi","planificación de fin de año","desafío de 30 días","metas financieras fin de año"]

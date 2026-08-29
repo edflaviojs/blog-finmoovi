@@ -4,6 +4,7 @@ description: >-
   Weekly financial market summary: dollar, euro, central bank base rate and tips
   for investors. Week 4 of May 2026.
 image: /images/posts/en-quotes-week-4-may-2026.webp
+imageAlt: "Laptop with colorful screen, white mug, monitor, and desk lamp in home office."
 category: cotacoes
 tags:
   - quotes

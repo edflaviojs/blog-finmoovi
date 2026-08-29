@@ -3,6 +3,7 @@ title: "Financial Sprint: How to Use the Last 100 Days to End the Year in the Bl
 description: "Discover a practical 100‑day plan to finish the year in the black, with actionable tips and the FinMoovi app as your ally."
 tickerHeadline: "100 Days to Flip Your Balance"
 image: "/images/posts/sprint-financeiro-como-usar-os-ultimos-100-dias-para-fechar.webp"
+imageAlt: "Brown notebook, calculator, coins, and financial chart on white marble with greenery."
 category: "orcamento"
 locale: "en"
 tags: ["financial sprint","end the year in the black","expense control","cash‑flow goals","FinMoovi","year‑end planning","30‑day challenge","year‑end financial goals"]

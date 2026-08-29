@@ -5,6 +5,7 @@ description: >-
   prácticos y eficaces. Descubre cómo gestionar tus finanzas de forma
   inteligente.
 image: /images/posts/es-reducir-gastos-fijos-mensuales.webp
+imageAlt: "Tres personas sonrientes revisan un teléfono móvil en una sala iluminada con plantas."
 category: dicas
 tags:
   - reducir gastos fijos

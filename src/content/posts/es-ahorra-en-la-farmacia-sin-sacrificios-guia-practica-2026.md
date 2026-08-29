@@ -3,6 +3,7 @@ title: "Ahorra en la farmacia sin sacrificios: Guía práctica 2026"
 description: "Descubre trucos simples para gastar menos en la farmacia, cuidar tu salud y usar FinMoovi para controlar todo en minutos."
 tickerHeadline: "La táctica que reduce el gasto en la far"
 image: "/images/posts/economize-nas-farmacias-sem-sacrificio-guia-pratico-2026.webp"
+imageAlt: "Cuatro personas sonrientes revisando un libro y teléfono en sala luminosa."
 category: "dicas"
 locale: "es"
 tags: ["farmacias","ahorrar","finanzas personales","economía","dinero"]

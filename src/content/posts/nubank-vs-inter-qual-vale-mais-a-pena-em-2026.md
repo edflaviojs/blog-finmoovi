@@ -3,6 +3,7 @@ title: "Nubank vs Inter: qual vale mais a pena em 2026?"
 description: "Descubra as diferenças entre Nubank e Inter em 2026 e escolha o melhor banco digital para o seu estilo de vida."
 tickerHeadline: "Qual banco digital faz seu dinheiro rend"
 image: "/images/posts/nubank-vs-inter-qual-vale-mais-a-pena-em-2026.webp"
+imageAlt: "Três pessoas sorrindo enquanto usam um tablet juntas em ambiente interno."
 category: "investimentos"
 locale: "pt"
 tags: ["Nubank","Inter","banco digital","comparação 2026","finanças pessoais","apps financeiros","FinMoovi","nubank vs inter","conta digital"]

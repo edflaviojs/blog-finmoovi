@@ -3,6 +3,7 @@ title: "Digital Bank vs Major Bank: Which Is Worth It in 2026?"
 description: "Compare two leading digital banks for 2026 and find out which one fits your lifestyle and financial goals."
 tickerHeadline: "Which digital bank earns more for you?"
 image: "/images/posts/nubank-vs-inter-qual-vale-mais-a-pena-em-2026.webp"
+imageAlt: "Three smiling adults sitting together, looking at a tablet device."
 category: "investimentos"
 locale: "en"
 tags: ["digital bank","major bank","personal finance","financial apps","FinMoovi","banking comparison 2026","checking account","credit card","investments","rewards program","multi‑currency","instant transfers"]

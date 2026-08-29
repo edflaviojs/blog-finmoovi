@@ -3,6 +3,7 @@ title: "Economize nas Farmácias sem Sacrifício: Guia Prático 2026"
 description: "Descubra estratégias simples para gastar menos em farmácias, manter a saúde em dia e usar o FinMoovi para controlar tudo em poucos minutos."
 tickerHeadline: "A tática que corta o gasto na farmácia"
 image: "/images/posts/economize-nas-farmacias-sem-sacrificio-guia-pratico-2026.webp"
+imageAlt: "Quatro amigos sorridentes sentados em sala, revisando caderno e celular juntos."
 category: "dicas"
 locale: "pt"
 tags: ["farmácias economizar","finanças pessoais","economia","dinheiro"]

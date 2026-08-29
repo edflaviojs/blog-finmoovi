@@ -4,6 +4,7 @@ definition: "What monthly lifetime income is and how it shows up in your everyda
 title: "monthly lifetime income - Financial Glossary"
 description: "What monthly lifetime income is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/renda-mensal-vitalicia.webp"
+imageAlt: "Gold coins, bar chart, and plant in jar on purple background"
 category: "basico"
 tags: ["monthly lifetime income", "glossary", "finance"]
 author: "FinMoovi"

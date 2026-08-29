@@ -4,6 +4,7 @@ description: >-
   Learn how to reduce monthly fixed expenses and save money with practical and
   effective tips. Discover how to manage your finances intelligently.
 image: /images/posts/en-reduce-fixed-expenses.webp
+imageAlt: "Gold and navy blue abstract waves on a white background"
 category: dicas
 tags:
   - reduce fixed expenses

@@ -3,6 +3,7 @@ title: "Banco digital A vs Banco digital B: ¿Cuál elegir en 2026?"
 description: "Descubre las diferencias entre dos bancos digitales en 2026 y elige la mejor opción para tu estilo de vida financiero."
 tickerHeadline: "¿Qué banco digital rinde más?"
 image: "/images/posts/nubank-vs-inter-qual-vale-mais-a-pena-em-2026.webp"
+imageAlt: "Tres personas sonrientes mirando una tablet en un entorno hogareño con plantas verdes."
 category: "investimentos"
 locale: "es"
 tags: ["banco digital","comparación 2026","finanzas personales","apps financieros","FinMoovi","banco digital A","banco digital B","cuenta digital"]

@@ -4,6 +4,7 @@ description: >-
   Resumen semanal del mercado financiero: dólar, euro, tasa base del banco
   central y consejos para inversores. Semana 4 de mayo 2026.
 image: /images/posts/es-cotizaciones-semana-4-mayo-2026.webp
+imageAlt: "Cuaderno marrón, monedas euro y calculadoras sobre superficie blanca con ramas verdes."
 category: cotacoes
 tags:
   - cotizaciones

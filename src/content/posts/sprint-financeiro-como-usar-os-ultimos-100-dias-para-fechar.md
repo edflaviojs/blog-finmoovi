@@ -3,6 +3,7 @@ title: "Sprint Financeiro: Como usar os últimos 100 dias para fechar o ano no a
 description: "Descubra um plano prático de 100 dias para terminar o ano no azul, com dicas acionáveis e o app FinMoovi como aliado."
 tickerHeadline: "Os 100 dias que mudam seu saldo"
 image: "/images/posts/sprint-financeiro-como-usar-os-ultimos-100-dias-para-fechar.webp"
+imageAlt: "Calculadora, caderno marrom, moedas e gráfico sobre superfície branca com folhas verdes."
 category: "orcamento"
 locale: "pt"
 tags: ["sprint financeiro","fechar o ano no azul","controle de despesas","metas de caixa","FinMoovi","planejamento de fim de ano","desafio de 30 dias","metas financeiras fim de ano"]

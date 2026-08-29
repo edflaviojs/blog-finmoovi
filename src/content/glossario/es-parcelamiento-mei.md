@@ -4,6 +4,7 @@ definition: "Qué es parcelamiento MEI y cómo aparece en tu día a día — exp
 title: "parcelamiento MEI - Glosario Financiero"
 description: "Qué es parcelamiento MEI y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/parcelamento-mei.webp"
+imageAlt: "Monedas doradas, gráfico de barras y planta creciendo en frasco sobre fondo azul oscuro."
 category: "basico"
 tags: ["parcelamiento MEI", "glosario", "finanzas"]
 author: "FinMoovi"
