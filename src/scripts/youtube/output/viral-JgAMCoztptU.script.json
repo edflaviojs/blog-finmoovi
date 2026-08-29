@@ -1,0 +1,227 @@
+{
+  "slug": "viral-JgAMCoztptU",
+  "term": "Juntar dinheiro",
+  "category": "mindset",
+  "keyword": "dinheiro",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você *acha* que dez reais por dia não realizam um sonho?"
+  },
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "montanha-russa",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você acha que dez reais por dia não realizam um sonho? Realizam sim, se você não deixar esse dinheiro escapar.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "acha",
+          "visual": {
+            "type": "statement",
+            "text": "Pequenos valores contam"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "sonho",
+          "visual": {
+            "type": "icon",
+            "icon": "target"
+          }
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "number",
+            "text": "R$ 10/dia"
+          },
+          "sfx": "coin"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "E ele escapa fácil. É um café na rua, um lanche correndo, uma comprinha que parecia pouca coisa.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "escapa",
+          "visual": {
+            "type": "statement",
+            "text": "O dinheiro some"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "café",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          }
+        },
+        {
+          "anchor": "comprinha",
+          "visual": {
+            "type": "statement",
+            "text": "Parece pouca coisa"
+          },
+          "sfx": "pop"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Só que pouca coisa por dia dá cento e vinte reais no mês. Em um ano, são mil quatrocentos e quarenta reais.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "pouca",
+          "visual": {
+            "type": "statement",
+            "text": "Pouco por dia acumula"
+          },
+          "sfx": "typewriter"
+        },
+        {
+          "anchor": "cento",
+          "visual": {
+            "type": "number",
+            "text": "R$ 120/mês"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "quatrocentos",
+          "visual": {
+            "type": "counter",
+            "from": 120,
+            "to": 1440,
+            "prefix": "R$"
+          },
+          "sfx": "coin"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei isso no FinMoovi e ele me mostrou mil quatrocentos e quarenta reais juntos só dessas pequenas escolhas.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "joguei",
+          "visual": {
+            "type": "app",
+            "app": "calculadora",
+            "note": "Calculadora do FinMoovi mostrando a projeção de R$ 1.440"
+          },
+          "sfx": "keyboard"
+        },
+        {
+          "anchor": "mostrou",
+          "visual": {
+            "type": "number",
+            "text": "R$ 1.440"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "pequenas",
+          "visual": {
+            "type": "statement",
+            "text": "Pequenas escolhas somam"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Então, se você quiser ver por onde o seu dinheiro tá escapando, baixa o FinMoovi. São sete dias grátis.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "Então",
+          "visual": {
+            "type": "statement",
+            "text": "Descubra seus vazamentos"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "icon",
+            "icon": "chart-down"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Dez reais por dia ajudam a realizar um sonho quando você começa a guardar. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "ajudam",
+          "visual": {
+            "type": "statement",
+            "text": "Guardar muda o jogo"
+          }
+        },
+        {
+          "anchor": "sonho",
+          "visual": {
+            "type": "icon",
+            "icon": "piggy"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Controle protege seu dinheiro"
+          },
+          "sfx": "thud"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja por onde seu dinheiro escapa",
+    "target": "app"
+  },
+  "totalDurationSec": 45.8
+}
