@@ -736,5 +736,23 @@
     ],
     "veredito": "1. **O LOOP — 9/10**  \nPrimeiro e último quadro são praticamente iguais: ambos mostram **“Pare de adiar”** no mesmo lugar, com o mesmo fundo. É uma boa base para o loop.\n\n2. **A FAIXA DE BAIXO — 7/10**  \nNão há texto importante no rodapé extremo, mas as frases ficam relativamente baixas e podem competir com a interface do Reels/Shorts.\n\n3. **TEXTO POR CIMA DE TEXTO — 8/10**  \nNão vejo duas frases realmente sobrepostas. O texto grande “REFORM...” no fundo é decorativo, mas em alguns quadros pode criar sensação de poluição visual.\n\n4. **LEGIBILIDADE — 8/10**  \nAs palavras destacadas têm ótimo contraste. O problema é que algumas frases são pequenas e ficam menos confortáveis para leitura rápida no celular.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — 6/10**  \nHá bastante espaço vazio, principalmente entre o elemento central e a frase inferior. O visual depende quase sempre da ampulheta e do texto.\n\n6. **COERÊNCIA — 7/10**  \nOs quadros claramente pertencem ao mesmo vídeo: mesma identidade, fundo, tipografia e ampulheta. Porém, olhando apenas os quadros, a sequência textual parece fragmentada e a história não fica totalmente clara.\n\n7. **TESTE CENTRAL — 6/10**  \n**Parece mais uma sequência de slides animados do que um vídeo profissional**, porque a composição se repete muito e há pouca informação visual nova entre os quadros.\n\n**NOTA GERAL: 7/10**  \n**PROBLEMA 1: A sequência de texto parece fragmentada, especialmente nos quadros de 4,5s a 13,5s**  \n**PROBLEMA 2: Muito espaço vazio e repetição visual da ampulheta**  \n**PROBLEMA 3: Texto relativamente baixo e pequeno para consumo rápido no celular**  \n**PRIMEIRA COISA A MUDAR: Fazer a sequência textual contar uma frase clara de ponta a ponta, mantendo o primeiro e o último quadro visualmente idênticos para preservar o loop.**",
     "quando": "2026-08-29T11:20:17.852Z"
+  },
+  {
+    "slug": "loop-fatura-maior-faca-isso",
+    "formato": "loop16",
+    "nota": 8.1,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      2.2,
+      4.4,
+      6.7,
+      8.9,
+      11.1,
+      13.3,
+      15.5
+    ],
+    "veredito": "1. **O LOOP — 9,5/10**  \nPrimeiro e último quadro mostram praticamente a mesma coisa: o card **“Entenda sua fatura”**, no mesmo lugar e com o mesmo visual. Ótimo para loop invisível. A pequena diferença é que o último quadro também tem a legenda embaixo.\n\n2. **A FAIXA DE BAIXO — 6/10**  \nAs legendas ficam no terço inferior em praticamente todos os quadros. Não estão coladas na borda, mas são informação importante e podem ser parcialmente cobertas pela interface do Reels/Shorts.\n\n3. **TEXTO POR CIMA DE TEXTO — 8/10**  \nNão vejo frases claramente sobrepostas nem palavras cortadas. O texto destacado em cores diferentes funciona bem. Também não há texto encostando perigosamente nas bordas.\n\n4. **LEGIBILIDADE — 8,5/10**  \nOs textos principais têm ótimo tamanho e contraste para celular. As legendas são menores, mas ainda parecem legíveis. O contraste das palavras cinzas é o ponto mais fraco.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — 7/10**  \nHá bastante espaço vazio, principalmente entre os cards e as legendas. O fundo é bonito e tem textura, mas alguns quadros poderiam aproveitar melhor a área central.\n\n6. **COERÊNCIA — 9/10**  \nOs oito quadros parecem claramente pertencer ao mesmo vídeo. A sequência comunica uma evolução: problema → compras → conferência da fatura → hábito/solução.\n\n7. **TESTE CENTRAL — 7,5/10**  \nTem aparência profissional, mas os cards grandes e muito estáticos fazem alguns momentos parecerem **slides animados**, especialmente nos quadros 3, 4, 6, 7 e 8.\n\nNOTA GERAL: 8,1\nPROBLEMA 1: A faixa inferior — legendas importantes ficam no terço de baixo, em todos os quadros.\nPROBLEMA 2: Sensação de slides — especialmente nos quadros 3/4 e 6/7/8, com cards grandes e pouca variação visual.\nPROBLEMA 3: Espaço vazio — principalmente na região entre o card principal e as legendas.\nPRIMEIRA COISA A MUDAR: Subir as legendas para uma área mais segura e usar melhor o espaço central para dar mais sensação de vídeo.",
+    "quando": "2026-08-29T11:24:24.830Z"
   }
 ]
