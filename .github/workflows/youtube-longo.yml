@@ -575,7 +575,25 @@ jobs:
       # 🔴 **NUNCA MATA A CORRIDA** — regra do dono, 09/08: uma capa é um enfeite caro,
       # mas um vídeo sem capa continua a ser um vídeo, e um vídeo que não existe não é
       # nada. Sem chave da Manus, salta em silêncio, como as fotografias.
-      - name: A capa do YouTube (só se houver chave da Manus)
+      # ═══ 🔴 JÁ NÃO É "SÓ SE HOUVER CHAVE DA MANUS" — 29/08/2026 ═══
+      #
+      # Queixa do dono: *"Mais uma vez a capa do vídeo longo do youtube sai iguais às
+      # anteriores… já vão quase 1 mês e isso não se resolve"*. A causa não era o
+      # programa que escolhe a capa — esse escolheu molde "a-queda" e metáfora
+      # "balde-furado", tudo diferente do vídeo anterior. A causa foi esta:
+      #
+      #     conta 1: ❌ api key has been deleted or does not exist
+      #     conta 2: ❌ api key has been deleted or does not exist
+      #     cabem 0 imagem(ns) ao todo
+      #
+      # As DUAS chaves da Manus mortas, em 24/08 e outra vez em 29/08. E este passo,
+      # como estava escrito, desistia com `exit 0` — corrida verde, sem capa.
+      #
+      # ⚠️ **UM FORNECEDOR PAGO SOZINHO NÃO É UM PLANO, É UMA APOSTA.** Agora o programa
+      # corre SEMPRE: sem Manus, a Cloudflare desenha a arte (é o mesmo desenhista que faz
+      # as capas do blog todos os dias) e o texto é escrito por nós com o `sharp`. Ver
+      # `src/scripts/youtube/lib/capa-cloudflare.js`.
+      - name: A capa do YouTube (Manus, e a Cloudflare como plano B)
         if: steps.escolher.outputs.skip != 'true'
         env:
           MANUS_API_KEY: ${{ secrets.MANUS_API_KEY }}
@@ -584,21 +602,39 @@ jobs:
           #    outro, e a capa é feita depois das fotografias, que é exactamente quando a
           #    conta 1 tem mais hipóteses de já estar seca.
           MANUS_API_KEY_2: ${{ secrets.MANUS_API_KEY_2 }}
+          # O plano B. São os MESMOS segredos que os robôs do blog já usam para as capas
+          # dos posts — não há chave nova para ninguém criar.
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
+          TOGETHER_API_KEY: ${{ secrets.TOGETHER_API_KEY }}
+          # A IA de visão que recusa arte borrada ou com letras tortas, antes de lhe
+          # escrevermos o título por cima. Sem ela o guardião fica cego, avisa, e deixa
+          # passar — que é a regra certa: não se recusa às cegas.
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: |
           set -uo pipefail
           if [ -z "${MANUS_API_KEY:-}" ] && [ -z "${MANUS_API_KEY_2:-}" ]; then
-            echo "::warning::não há chave nenhuma da Manus nos segredos — este vídeo sobe SEM miniatura própria e o YouTube escolhe um fotograma sozinho."
-            exit 0
+            echo "::warning::não há chave nenhuma da Manus nos segredos — a capa vai pelo plano B (Cloudflare)."
           fi
           node src/scripts/youtube/capa-manus.js --slug="$SLUG" --so=capa || \
             echo "::warning::a capa não saiu — o vídeo sobe sem miniatura própria, e isso é melhor do que não haver vídeo."
-          # ⚠️ CONFERIR O RESULTADO, NUNCA O CÓDIGO DE SAÍDA — regra da casa. É esta linha
-          # que diz, em texto, se sexta-feira houve capa ou não; sem ela voltava a ser
-          # preciso abrir o Studio para saber.
-          if ls youtube-render/public/manus/"$SLUG"/capa-*.jpg >/dev/null 2>&1; then
-            echo "✅ capa: $(ls youtube-render/public/manus/"$SLUG"/capa-*.jpg | head -1)"
+          # ═══ 🔴 A PERGUNTA MUDOU, E ERA ELA O DEFEITO ═══
+          #
+          # Isto perguntava `ls .../capa-*.jpg` — ou seja, "há um ficheiro de capa na
+          # pasta?". Em 24/08 a resposta foi SIM e estava certa: havia lá uma
+          # `capa-canal-youtube.jpg` feita à mão em Agosto. O vídeo subiu com ela, pela
+          # terceira vez, e este passo escreveu "✅ capa:".
+          #
+          # A pergunta certa é "esta corrida DESENHOU uma capa?", e quem responde é o
+          # recibo — escrito só quando uma capa nova fica em disco, e fora do repositório
+          # de propósito (ver .gitignore).
+          if [ -f "youtube-render/public/manus/$SLUG/capa-de-hoje.json" ]; then
+            echo "✅ capa desenhada nesta corrida:"
+            cat "youtube-render/public/manus/$SLUG/capa-de-hoje.json"
+            echo "CAPA_DE_HOJE=sim" >> "$GITHUB_ENV"
           else
-            echo "::warning::não ficou nenhuma capa em youtube-render/public/manus/$SLUG/ — o vídeo sobe sem miniatura própria."
+            echo "CAPA_DE_HOJE=nao" >> "$GITHUB_ENV"
+            echo "::warning::NENHUMA capa foi desenhada nesta corrida — nem pela Manus, nem pelo plano B. Se houver um ficheiro antigo na pasta, o vídeo sobe com a miniatura da semana passada."
           fi
 
       # 🔴 O CADERNO DE CENAS TEM DE SAIR DAQUI GRAVADO — 09/08/2026.
@@ -815,3 +851,37 @@ jobs:
             git commit -m "chore: video longo $SLUG agendado [skip ci]"
             bash .github/scripts/empurrar.sh
           fi
+
+      # ═══ 🔴 A CORRIDA FICA VERMELHA SE NÃO HOUVE CAPA — 29/08/2026 ═══
+      #
+      # Ordem do dono, depois de ver a mesma miniatura no Studio pela terceira vez:
+      # *"fazer a corrida ficar VERMELHA quando o vídeo sobe sem capa"*.
+      #
+      # ⚠️ **É O ÚLTIMO PASSO DE TODOS, e o sítio é a parte importante.** Falhar no passo
+      # da capa deitaria fora 40 minutos de render e o vídeo do domingo por causa de um
+      # enfeite — o oposto da regra da casa (*"nunca parar e não gerar o vídeo"*, 09/08).
+      # Aqui, o vídeo JÁ ESTÁ no YouTube com a estreia marcada e o caderno já está
+      # gravado. O que esta falha faz é uma coisa só: **tocar a campainha**. O GitHub
+      # manda o email da corrida vermelha, e o dono fica a saber no sábado em vez de
+      # descobrir sozinho no Studio duas semanas depois.
+      #
+      # ⚠️ **NÃO OLHA PARA `capa-*.jpg`**, e é essa a diferença que fecha o defeito: um
+      # ficheiro antigo na pasta responderia que sim. Olha para o recibo desta corrida.
+      - name: 🔔 Houve capa nova neste vídeo?
+        if: steps.escolher.outputs.skip != 'true'
+        run: |
+          if [ "${CAPA_DE_HOJE:-nao}" = "sim" ]; then
+            echo "✅ este vídeo foi para o ar com uma capa desenhada hoje."
+            exit 0
+          fi
+          echo "::error::O vídeo \"$SLUG\" foi publicado SEM capa nova. Nem a Manus nem o plano B (Cloudflare) desenharam uma miniatura nesta corrida."
+          echo ""
+          echo "O vídeo ESTÁ no ar e a estreia está marcada — isto não desfaz nada."
+          echo "O que falta é a miniatura. Ver o passo \"A capa do YouTube\" lá em cima:"
+          echo "  · \"api key has been deleted\"  → a chave da Manus morreu, é preciso uma nova"
+          echo "  · \"não há desenhista nenhum ligado\" → faltam CLOUDFLARE_ACCOUNT_ID e CLOUDFLARE_AI_TOKEN nos segredos"
+          echo "  · \"recusada — borrada\"        → a arte saiu má nas 3 tentativas dos 3 desenhistas"
+          echo ""
+          echo "Para pôr a capa à mão depois de resolver:"
+          echo "  node src/scripts/youtube/capa-manus.js --slug=$SLUG --so=capa"
+          exit 1

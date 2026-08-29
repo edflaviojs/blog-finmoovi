@@ -782,6 +782,44 @@ export function acharCapa(slug, existe = existsSync, listar = null) {
   return null;
 }
 
+/**
+ * 🔴 A CAPA DESTA CORRIDA — 29/08/2026, e é a resposta a três semanas com a mesma
+ * miniatura no ar.
+ *
+ * ═══ O QUE ACONTECEU, MEDIDO ═══
+ * Queixa do dono, 29/08: *"Mais uma vez a capa do vídeo longo do youtube sai iguais às
+ * anteriores… já vão quase 1 mês e isso não se resolve"*. E ele tinha razão três vezes.
+ *
+ * Nas corridas de 24/08 e 29/08 as duas chaves da Manus responderam
+ * *"api key has been deleted or does not exist"* e **nenhuma capa foi desenhada**. O
+ * vídeo de 24/08 não subiu sem miniatura: subiu com a `capa-canal-youtube.jpg` que
+ * estava na pasta dele desde Agosto, feita à mão. O `acharCapa` fez o que lhe compete —
+ * procurou um ficheiro e encontrou um.
+ *
+ * ⚠️ **O defeito não é o `acharCapa`, e por isso ele não se mexe.** Ele é a escolha
+ * DELIBERADA do dono: os nomes fixos existem para ele poder dizer *"é ESTA que vai ao
+ * ar"*, e o `entregar.js` também depende dele para o Bluesky. Tirar-lhe a rede partia
+ * duas coisas certas para consertar uma errada.
+ *
+ * ⚠️ **O defeito era a PERGUNTA.** "Há um ficheiro de capa?" e "esta corrida fez uma
+ * capa?" são perguntas diferentes, e durante três semanas usou-se a primeira para
+ * responder à segunda. Esta função responde à segunda, e a única fonte que serve é o
+ * recibo que o `capa-manus.js` escreve **só** quando uma capa nova fica em disco.
+ *
+ * ⚠️ **Não decide nada sozinha.** O vídeo sobe à mesma — *"um vídeo sem capa continua a
+ * ser um vídeo"*, regra do dono de 09/08. O que muda é que deixa de ser em silêncio.
+ */
+export function capaDestaCorrida(slug, existe = existsSync, ler = null) {
+  try {
+    const recibo = join(MANUS_DIR, slug, 'capa-de-hoje.json');
+    if (!existe(recibo)) return null;
+    const r = JSON.parse((ler || readFileSync)(recibo, 'utf-8'));
+    if (!r?.ficheiro) return null;
+    const caminho = join(MANUS_DIR, slug, r.ficheiro);
+    return existe(caminho) ? { ...r, caminho } : null;
+  } catch { return null; }
+}
+
 // ═══════════════════════════════════════════════════════════════════════════════
 /**
  * A CONFERÊNCIA DA DATA, SOZINHA — para o robô poder desistir ANTES de trabalhar.
@@ -1057,6 +1095,30 @@ async function principal() {
   // ── os ficheiros ──
   const caminhoMp4 = join(MP4_DIR, `${SLUG}.mp4`);
   const capa = acharCapa(SLUG);
+  /**
+   * 🔴 NUNCA MAIS EM SILÊNCIO — 29/08/2026. Ver a nota grande de `capaDestaCorrida`.
+   *
+   * ⚠️ **Isto não impede nada e é de propósito.** O vídeo sobe com a capa velha se for
+   * só isso que existe, porque uma miniatura repetida ainda é melhor do que um fotograma
+   * apanhado ao acaso pelo YouTube. O que não pode voltar a acontecer é o dono descobrir
+   * a repetição no Studio duas semanas depois, com a corrida a dizer que correu bem.
+   *
+   * ⚠️ **`::warning::` e não `::error::`** — quem manda a corrida a vermelho é o passo
+   * final do `youtube-longo.yml`, DEPOIS de o vídeo estar no ar. Falhar aqui deitaria
+   * fora 40 minutos de render por causa de um enfeite, que é o oposto da ordem do dono:
+   * *"nunca parar e não gerar o vídeo"*.
+   */
+  const feitaAgora = capaDestaCorrida(SLUG);
+  if (capa && !feitaAgora) {
+    log('');
+    log('⚠️  ATENÇÃO — ESTA CAPA NÃO FOI FEITA PARA ESTE VÍDEO NESTA CORRIDA.');
+    log(`    Ficheiro: ${capa}`);
+    log('    É um ficheiro que já estava na pasta (feito à mão, ou de uma corrida anterior).');
+    log('    Foi assim que a mesma miniatura foi para o ar três vezes em Agosto de 2026.');
+    console.log(`::warning::o vídeo "${SLUG}" vai subir com uma capa ANTIGA (${capa.split(/[\\/]/).pop()}) — nenhuma capa nova foi desenhada nesta corrida.`);
+  } else if (feitaAgora) {
+    log(`🖼️  capa feita nesta corrida por ${feitaAgora.quem} (molde "${feitaAgora.molde}")`);
+  }
   const legendas = LEGENDAS.map((l) => ({ ...l, path: join(AUDIO_ROOT, SLUG, `${SLUG}.${l.code}.srt`) }));
 
   log(`\n🎬 ${titulo}`);

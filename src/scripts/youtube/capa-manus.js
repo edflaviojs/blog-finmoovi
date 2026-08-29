@@ -61,6 +61,18 @@ import {
   MOLDES, escolherMolde, cenaDoFio, moldesGastos, guardarMolde,
 } from './lib/capas-do-longo.js';
 /**
+ * 🔴 O PLANO B — 29/08/2026. A razão inteira está escrita em `capa-cloudflare.js`.
+ *
+ * Em duas linhas: as duas chaves da Manus estavam mortas em 24/08 e em 29/08
+ * (*"api key has been deleted or does not exist"*), o robô ficou sem desenhar capa
+ * nenhuma, e o vídeo subiu com a miniatura VELHA que estava na pasta. Terceira semana
+ * com a mesma capa, corrida verde.
+ *
+ * ⚠️ **Não substitui a Manus — entra depois dela.** Enquanto houver crédito, a Manus
+ * continua a ser a primeira, porque desenha e escreve numa só peça. Isto é a rede.
+ */
+import { capaDeReserva } from './lib/capa-cloudflare.js';
+/**
  * ⚠️ IMPORTADO, NÃO COPIADO. O leitor de texto e o caminho do banco de imagens já vivem
  * no `fotos-longo.js`; uma segunda cópia divergia no dia em que alguém mexesse numa
  * delas — o modo de falha crónico desta casa. E `fotos-longo.js` só corre sozinho
@@ -425,7 +437,26 @@ async function main() {
    * ficar em zero e o gasto sair do saldo comprado: a diferença dos "livres" daria zero,
    * e o programa escreveria que a imagem foi de graça.
    */
-  const antes = await saldos();
+  /**
+   * 🔴 SEM CHAVE DA MANUS O PROGRAMA MORRIA AQUI — 29/08/2026, apanhado a correr.
+   *
+   * `saldos()` lança quando não há `MANUS_API_KEY` nenhuma, e esta linha era a primeira
+   * coisa depois de ler o guião. Resultado: com o plano B já escrito e a funcionar, o
+   * programa desistia **antes de lá chegar** e a capa não saía à mesma.
+   *
+   * ⚠️ **Só se viu a CORRER o comando exacto do robô** — `node capa-manus.js --so=capa`
+   * sem `--env-file`. As provas de mesa passavam todas, porque nenhuma delas arranca o
+   * programa como o robô o arranca. É a memória `robo-nao-arrancava`, outra vez, no
+   * ficheiro ao lado.
+   *
+   * ⚠️ **Não se mexe no `saldos()`**: quem pergunta o saldo (`--creditos`) tem mesmo de
+   * ouvir que não há chave. O que muda é aqui: **não ter conta na Manus deixou de ser um
+   * erro e passou a ser uma informação** — segue-se para o plano B.
+   */
+  const perguntarSaldos = async () => {
+    try { return await saldos(); } catch { return []; }
+  };
+  const antes = await perguntarSaldos();
   const somar = (lista) => lista.reduce((a, s) => a + s.total, 0);
   console.log(`\n🎨 MANUS — "${roteiro.tema}"`);
   for (const s of antes) console.log(`   ${s.nome}: ${s.erro ? `❌ ${s.erro}` : `${s.total} créditos → ${quantasCabem(s.total)} imagem(ns)`}`);
@@ -448,6 +479,28 @@ async function main() {
    * corrida, com a capa já paga. `node --check` não apanha isto; só correr apanha.
    */
   let molde = MOLDES[0];
+  /**
+   * ⚠️ **AQUI FORA, pela MESMA razão do `selo` e do `molde` — que já mordeu duas vezes
+   * neste ficheiro, e está escrito nas duas notas aqui em cima.** Quem precisa do título
+   * e da cena é o PLANO B, que corre lá em baixo, depois de a Manus ter falhado.
+   * Declarados dentro do `if`, davam `titulo is not defined` no ponto exacto em que o
+   * plano B existe para salvar a corrida.
+   */
+  let tituloDaMiniatura = '';
+  let cenaDaCapa = null;
+  /**
+   * 🔴 **"HÁ UM FICHEIRO DE CAPA NA PASTA" NÃO É "ESTA CORRIDA FEZ UMA CAPA"** — e é
+   * exactamente aí que o canal perdeu três semanas.
+   *
+   * Em 24/08, sem crédito na Manus, este programa não desenhou nada. A pasta do vídeo já
+   * tinha uma `capa-canal-youtube.jpg` feita à mão em Agosto, o `acharCapa` do
+   * `upload-longo.js` encontrou-a, e o vídeo subiu com a miniatura de duas semanas antes.
+   * Ninguém mentiu em lado nenhum: a pergunta é que estava errada.
+   *
+   * Por isso o que conta é ESTA variável, escrita só quando uma capa nova fica em disco
+   * nesta corrida — e é ela que vai para o recibo que o robô confere no fim.
+   */
+  let capaDeHoje = null;
   if (so !== 'imagens') {
     /**
      * 🔴 O TÍTULO ESTAVA CRAVADO EM 'SAIR DO VERMELHO' — 08/08/2026.
@@ -486,6 +539,7 @@ async function main() {
       );
     }
     console.log(`   ✍️  título da capa: "${titulo}" (de ${deOnde})`);
+    tituloDaMiniatura = titulo;
     /**
      * 🔴 SEM A FICHA DE JUROS, A CAPA JÁ NÃO PARA — 09/08/2026, ordem do dono:
      * *"nunca parar e não gerar"*.
@@ -528,6 +582,7 @@ async function main() {
       console.log(`   ⚠️ não há molde "${forcado}". Os que existem: ${MOLDES.map((m) => m.nome).join(', ')}. Vai o escolhido pelo nome do vídeo.`);
     }
     const cena = cenaDoFio(fio);
+    cenaDaCapa = cena;
     console.log(`   🎭 metáfora do vídeo: ${fio || '(nenhuma — vai a cena de reserva)'}`);
     console.log(`   🖼️  molde: ${molde.nome}`);
     trabalhos.push({
@@ -693,6 +748,7 @@ async function main() {
                  * do caderno de cenas: guarda-se depois de a coisa existir, senão o
                  * caderno passa a dizer que saiu um molde que ninguém chegou a ver.
                  */
+                capaDeHoje = { ficheiro: `${base}.jpg`, molde: molde.nome, quem: 'Manus' };
                 if (guardarMolde(slug, molde.nome)) console.log(`         📓 molde "${molde.nome}" guardado — os próximos vídeos vão evitá-lo`);
               } else {
                 console.log(`         ❌ RECUSADA — ${v.porque}`);
@@ -708,6 +764,71 @@ async function main() {
     } catch (err) {
       console.log(`      ❌ ${err.message.split('\n')[0]}`);
     }
+  }
+
+  /**
+   * ═══ 🔴 O PLANO B — 29/08/2026 ═══
+   *
+   * Corre quando a Manus não deixou capa nenhuma NESTA corrida: chave morta, sem
+   * créditos, agente sem responder, ou uma capa recusada pelo leitor do selo. A causa
+   * não interessa aqui — o que interessa é que o vídeo não pode ir para o ar outra vez
+   * com a miniatura da semana passada.
+   *
+   * ⚠️ **A condição é `capaDeHoje`, e nunca "existe um capa-*.jpg na pasta".** Ver a
+   * nota grande onde a variável é declarada: foi essa pergunta mal feita que pôs a mesma
+   * miniatura no ar três vezes.
+   *
+   * ⚠️ **Não gasta nada quando a Manus funcionou.** Enquanto houver crédito, a Manus
+   * continua a ser a primeira e este bloco nem sequer abre uma ligação.
+   */
+  if (so !== 'imagens' && !capaDeHoje && tituloDaMiniatura) {
+    console.log('\n🛟 a Manus não deixou capa nesta corrida — vai o plano B (o mesmo desenhista das capas do blog).');
+    const bytes = await capaDeReserva({
+      titulo: tituloDaMiniatura,
+      selo,
+      molde,
+      cena: cenaDaCapa,
+      aoAndar: (m) => console.log(`   ${m}`),
+    });
+    if (bytes) {
+      /**
+       * ⚠️ **O NOME LEVA O MOLDE, como o da Manus** (`capa-a-queda.jpg`), e não um nome
+       * novo à parte: é assim que o `acharCapa` do `upload-longo.js` a encontra, é assim
+       * que o guardião das capas antigas a reconhece, e é assim que ela não fica órfã.
+       *
+       * ⚠️ **E não escreve por cima de nada.** A regra do dono de 09/08 — *"essa capa que
+       * gerou tem que ir pro nosso banco de imagens"* — vale para as do plano B também.
+       */
+      let base = `capa-${molde.nome}`;
+      let versao = 1;
+      while (existsSync(join(destino, `${base}.jpg`))) {
+        versao += 1;
+        base = `capa-${molde.nome}-v${versao}`;
+      }
+      fs.writeFileSync(join(destino, `${base}.jpg`), bytes);
+      console.log(`   ✅ ${base}.jpg (${Math.round(bytes.length / 1024)} KB) — é esta que vai ao YouTube`);
+      capaDeHoje = { ficheiro: `${base}.jpg`, molde: molde.nome, quem: 'plano B' };
+      if (guardarMolde(slug, molde.nome)) console.log(`   📓 molde "${molde.nome}" guardado — os próximos vídeos vão evitá-lo`);
+    }
+  }
+
+  /**
+   * 🔴 O RECIBO — é ele que responde "esta corrida fez uma capa?", e a resposta não pode
+   * voltar a ser deduzida da existência de um ficheiro na pasta.
+   *
+   * ⚠️ **Escrito SÓ quando houve capa, e apagado quando não houve.** Um recibo antigo a
+   * sobreviver na pasta seria a mesma armadilha noutro sítio: o robô perguntaria, ele
+   * responderia que sim, e o vídeo subiria com a capa velha à mesma.
+   */
+  const recibo = join(destino, 'capa-de-hoje.json');
+  try {
+    if (capaDeHoje) {
+      fs.writeFileSync(recibo, `${JSON.stringify({ slug, ...capaDeHoje, em: new Date().toISOString() }, null, 2)}\n`, 'utf-8');
+    } else if (existsSync(recibo)) {
+      fs.rmSync(recibo);
+    }
+  } catch (err) {
+    console.log(`   ⚠️ não deu para escrever o recibo da capa (${err.message.split('\n')[0]})`);
   }
 
   /**
@@ -733,7 +854,7 @@ async function main() {
     console.log('   Para pedir outra: o mesmo comando outra vez (a anterior não é apagada).');
   }
 
-  const depois = await saldos();
+  const depois = await perguntarSaldos();
   console.log(`\n💳 depois: ${depois.map((s) => `${s.nome} ${s.total}`).join(' · ')} — gastou ${somar(antes) - somar(depois)}`);
   /**
    * ⚠️ **QUANTO CUSTOU POR IMAGEM, MEDIDO** — 10/08/2026. O `CUSTO_POR_IMAGEM` esteve

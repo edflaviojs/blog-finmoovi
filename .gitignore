@@ -47,3 +47,12 @@ youtube-render/out/
 # em JPEG (~250 KB), e ESSA vai para o repositorio — senao um clone limpo nao
 # consegue renderizar o video. Os PNG originais ficam de fora.
 youtube-render/public/manus/**/*.png
+
+# 🔴 O RECIBO DA CAPA FICA FORA DO REPOSITORIO, E E ISSO QUE O FAZ VALER — 29/08/2026.
+#
+# Ele responde a UMA pergunta: "esta corrida desenhou uma capa?". Guardado no
+# repositorio, um recibo de ha duas semanas viajava no clone e respondia "sim" a uma
+# corrida que nao desenhou nada — que e exactamente a armadilha que ele existe para
+# fechar (ver `capaDestaCorrida` em upload-longo.js). Fora do repositorio, ou foi
+# escrito nesta maquina nesta corrida, ou nao existe.
+youtube-render/public/manus/**/capa-de-hoje.json
