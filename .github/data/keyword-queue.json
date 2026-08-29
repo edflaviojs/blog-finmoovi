@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-29T14:05:24.028Z",
-  "sourceCursor": 1,
+  "updatedAt": "2026-08-29T15:23:20.680Z",
+  "sourceCursor": 0,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -1840,8 +1840,10 @@
       "category": "glossario",
       "priority": 3,
       "source": "autocomplete",
-      "status": "pending",
-      "addedAt": "2026-08-24T07:48:27.402Z"
+      "status": "used",
+      "addedAt": "2026-08-24T07:48:27.402Z",
+      "usedAt": "2026-08-29T15:23:20.680Z",
+      "usedBy": "glossario-auto-diario"
     },
     {
       "keyword": "lista de compras supermercado",
