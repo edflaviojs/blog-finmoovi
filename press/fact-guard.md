@@ -1,7 +1,7 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-08-28T17:08:40.779Z
-**Posts:** 366 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 52
+**Gerado em:** 2026-08-29T11:28:14.311Z
+**Posts:** 375 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 53
 
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
@@ -169,6 +169,10 @@
 
 **revisite-seu-orcamento.md**
 - _A revisão do [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) é uma etapa crucial nesse processo, pois nos permite identificar áreas onde podemos melhorar e ajustar nossas estraté_
+
+**sprint-financeiro-como-usar-os-ultimos-100-dias-para-fechar.md**
+- _- **Investir a reserva**: procure opções de [renda fixa](/glossario/renda-fixa) ou fundos de investimento de curto prazo, de acordo com seu perfil._
+- _Ele é a semente de um ciclo de controle que pode ser repetido a cada ano, sempre ajustando as metas conforme a realidade muda._
 
 **voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim.md**
 - _- **Instituto Brasileiro de Geografia e Estatística (IBGE)** revelou que 22 % das famílias têm dificuldade para pagar contas mensais, muitas vezes por falta de controle de despesas._
