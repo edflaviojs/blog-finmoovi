@@ -24,9 +24,15 @@
     ]
   },
   "educacao-financeira-como-fazer": {
-    "estado": "reservado",
-    "publishAt": "2026-08-30T22:00:00.000Z",
-    "reservadoEm": "2026-08-29T08:53:27.546Z",
-    "corrida": "33243763180"
+    "videoId": "AStHGn0_INc",
+    "uploadedAt": "2026-08-29T09:54:45.037Z",
+    "publishAt": "2026-08-30T19:00:00.000Z",
+    "titulo": "Educação financeira: como fazer o salário render sem ganhar mais",
+    "capitulos": 6,
+    "legendas": [
+      "pt",
+      "en",
+      "es"
+    ]
   }
 }

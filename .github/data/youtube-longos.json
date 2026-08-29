@@ -63,7 +63,7 @@
         "salário rende mais",
         "dinheiro no fim do mês"
       ],
-      "estado": "proposto",
+      "estado": "publicado",
       "viralRef": {
         "videoId": "jc7rFQLtrJg",
         "title": "pessoas sem o mínimo de educação financeira",
@@ -73,7 +73,9 @@
           "título afirmativo simples, sem número nem pergunta"
         ]
       },
-      "propostoEm": "2026-08-03T20:07:38.153Z"
+      "propostoEm": "2026-08-03T20:07:38.153Z",
+      "publicadoEm": "2026-08-29T09:54:45.037Z",
+      "videoId": "AStHGn0_INc"
     },
     {
       "slug": "compras-inteligentes-escolhas-com",
