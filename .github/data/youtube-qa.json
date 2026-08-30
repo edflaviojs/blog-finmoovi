@@ -772,5 +772,23 @@
     ],
     "veredito": "**1. O LOOP — Nota: 4/10**  \nO primeiro quadro e o último têm o mesmo texto principal (“Seguro vencido é real”), mas não parecem estar exatamente no mesmo momento visual. O último volta para uma mensagem parecida, porém falta uma sensação clara de continuidade perfeita.\n\n**2. A FAIXA DE BAIXO — Nota: 6/10**  \nNão há elementos importantes muito baixos, mas as legendas ficam próximas da área inferior e podem competir com a interface do Shorts/Reels.\n\n**3. TEXTO POR CIMA DE TEXTO — Nota: 5/10**  \nHá trechos com palavras destacadas em caixas coloridas junto de outras palavras, criando sensação de texto fragmentado. Não parece haver corte grave, mas fica visualmente carregado.\n\n**4. LEGIBILIDADE — Nota: 8/10**  \nO texto principal é grande, branco e com bom contraste. As legendas menores na parte inferior podem ficar difíceis de ler em telas pequenas.\n\n**5. A TELA ESTÁ VIVA OU VAZIA? — Nota: 7/10**  \nO fundo tem identidade visual e elementos gráficos, mas alguns quadros ficam com muito espaço vazio ao redor do objeto central.\n\n**6. COERÊNCIA — Nota: 8/10**  \nOs quadros parecem do mesmo vídeo: mesma identidade, cores e tema. A sequência tem começo, desenvolvimento e retorno ao gancho.\n\n**7. TESTE CENTRAL — Nota: 7/10**  \nParece mais um vídeo animado do que simples slides, mas ainda passa uma sensação de apresentação de telas porque os elementos mudam pouco entre quadros.\n\nNOTA GERAL: 6.5  \nPROBLEMA 1: O loop não está perfeito: o quadro 0.1s e o quadro 17.3s têm o mesmo tema, mas não parecem uma continuação natural.  \nPROBLEMA 2: As legendas inferiores ficam muito próximas da área onde a interface do Reels/Shorts aparece.  \nPROBLEMA 3: Falta mais variação visual e movimento percebido; vários quadros parecem apenas telas trocadas.  \nPRIMEIRA COISA A MUDAR: Fazer o último quadro terminar exatamente na mesma composição do primeiro para criar um loop invisível.",
     "quando": "2026-08-30T10:05:23.987Z"
+  },
+  {
+    "slug": "loop-conta-de-luz-ninguem-fala",
+    "formato": "loop16",
+    "nota": 8,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      1.9,
+      3.9,
+      5.8,
+      7.7,
+      9.6,
+      11.6,
+      13.4
+    ],
+    "veredito": "1. **O LOOP — Nota: 8/10**  \nO primeiro e o último quadro são praticamente iguais: mesma frase, mesmo fundo e mesma composição. Parece feito para reiniciar bem. Pequena diferença: o último quadro mostra uma variação de entrada/saída da frase.\n\n2. **A FAIXA DE BAIXO — Nota: 9/10**  \nO terço inferior está quase sempre livre. As legendas ficam mais no centro inferior, mas não parecem cair na área dos botões do Shorts/Reels.\n\n3. **TEXTO POR CIMA DE TEXTO — Nota: 8/10**  \nNão há frases grandes sobrepostas. Algumas palavras isoladas em destaque podem parecer um pouco soltas, mas não há cortes graves.\n\n4. **LEGIBILIDADE — Nota: 9/10**  \nA letra é grande, com bom contraste e destaque. Funciona bem para celular. Algumas legendas pequenas embaixo poderiam ter mais tamanho.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — Nota: 7/10**  \nHá bastante espaço vazio entre o título e a legenda. O visual é bonito, mas alguns quadros parecem parados demais.\n\n6. **COERÊNCIA — Nota: 9/10**  \nTodos os quadros parecem parte do mesmo vídeo: mesma identidade visual, mesma narrativa e sequência lógica.\n\n7. **TESTE CENTRAL — Nota: 7/10**  \nParece mais um conjunto de slides animados do que um vídeo profissional, porque quase todos os quadros são textos estáticos com pouca ação visual.\n\nNOTA GERAL: 8\nPROBLEMA 1: Falta de sensação de vídeo (quadros 1 a 8 / 0.1s a 13.4s) — parece slideshow em vez de narrativa em movimento.\nPROBLEMA 2: Áreas vazias grandes no centro da tela (principalmente 3.9s e 11.6s).\nPROBLEMA 3: Legendas pequenas na parte inferior podem perder força no celular.\nPRIMEIRA COISA A MUDAR: Adicionar mais elementos de ação visual entre os textos para parecer um vídeo e não uma sequência de cards.",
+    "quando": "2026-08-30T10:08:51.004Z"
   }
 ]
