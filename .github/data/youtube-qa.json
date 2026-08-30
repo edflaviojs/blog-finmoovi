@@ -754,5 +754,23 @@
     ],
     "veredito": "1. **O LOOP — 9,5/10**  \nPrimeiro e último quadro mostram praticamente a mesma coisa: o card **“Entenda sua fatura”**, no mesmo lugar e com o mesmo visual. Ótimo para loop invisível. A pequena diferença é que o último quadro também tem a legenda embaixo.\n\n2. **A FAIXA DE BAIXO — 6/10**  \nAs legendas ficam no terço inferior em praticamente todos os quadros. Não estão coladas na borda, mas são informação importante e podem ser parcialmente cobertas pela interface do Reels/Shorts.\n\n3. **TEXTO POR CIMA DE TEXTO — 8/10**  \nNão vejo frases claramente sobrepostas nem palavras cortadas. O texto destacado em cores diferentes funciona bem. Também não há texto encostando perigosamente nas bordas.\n\n4. **LEGIBILIDADE — 8,5/10**  \nOs textos principais têm ótimo tamanho e contraste para celular. As legendas são menores, mas ainda parecem legíveis. O contraste das palavras cinzas é o ponto mais fraco.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — 7/10**  \nHá bastante espaço vazio, principalmente entre os cards e as legendas. O fundo é bonito e tem textura, mas alguns quadros poderiam aproveitar melhor a área central.\n\n6. **COERÊNCIA — 9/10**  \nOs oito quadros parecem claramente pertencer ao mesmo vídeo. A sequência comunica uma evolução: problema → compras → conferência da fatura → hábito/solução.\n\n7. **TESTE CENTRAL — 7,5/10**  \nTem aparência profissional, mas os cards grandes e muito estáticos fazem alguns momentos parecerem **slides animados**, especialmente nos quadros 3, 4, 6, 7 e 8.\n\nNOTA GERAL: 8,1\nPROBLEMA 1: A faixa inferior — legendas importantes ficam no terço de baixo, em todos os quadros.\nPROBLEMA 2: Sensação de slides — especialmente nos quadros 3/4 e 6/7/8, com cards grandes e pouca variação visual.\nPROBLEMA 3: Espaço vazio — principalmente na região entre o card principal e as legendas.\nPRIMEIRA COISA A MUDAR: Subir as legendas para uma área mais segura e usar melhor o espaço central para dar mais sensação de vídeo.",
     "quando": "2026-08-29T11:24:24.830Z"
+  },
+  {
+    "slug": "loop-seguro-venceu-ninguem-fala",
+    "formato": "loop16",
+    "nota": 6.5,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      2.5,
+      5,
+      7.5,
+      9.9,
+      12.4,
+      14.9,
+      17.3
+    ],
+    "veredito": "**1. O LOOP — Nota: 4/10**  \nO primeiro quadro e o último têm o mesmo texto principal (“Seguro vencido é real”), mas não parecem estar exatamente no mesmo momento visual. O último volta para uma mensagem parecida, porém falta uma sensação clara de continuidade perfeita.\n\n**2. A FAIXA DE BAIXO — Nota: 6/10**  \nNão há elementos importantes muito baixos, mas as legendas ficam próximas da área inferior e podem competir com a interface do Shorts/Reels.\n\n**3. TEXTO POR CIMA DE TEXTO — Nota: 5/10**  \nHá trechos com palavras destacadas em caixas coloridas junto de outras palavras, criando sensação de texto fragmentado. Não parece haver corte grave, mas fica visualmente carregado.\n\n**4. LEGIBILIDADE — Nota: 8/10**  \nO texto principal é grande, branco e com bom contraste. As legendas menores na parte inferior podem ficar difíceis de ler em telas pequenas.\n\n**5. A TELA ESTÁ VIVA OU VAZIA? — Nota: 7/10**  \nO fundo tem identidade visual e elementos gráficos, mas alguns quadros ficam com muito espaço vazio ao redor do objeto central.\n\n**6. COERÊNCIA — Nota: 8/10**  \nOs quadros parecem do mesmo vídeo: mesma identidade, cores e tema. A sequência tem começo, desenvolvimento e retorno ao gancho.\n\n**7. TESTE CENTRAL — Nota: 7/10**  \nParece mais um vídeo animado do que simples slides, mas ainda passa uma sensação de apresentação de telas porque os elementos mudam pouco entre quadros.\n\nNOTA GERAL: 6.5  \nPROBLEMA 1: O loop não está perfeito: o quadro 0.1s e o quadro 17.3s têm o mesmo tema, mas não parecem uma continuação natural.  \nPROBLEMA 2: As legendas inferiores ficam muito próximas da área onde a interface do Reels/Shorts aparece.  \nPROBLEMA 3: Falta mais variação visual e movimento percebido; vários quadros parecem apenas telas trocadas.  \nPRIMEIRA COISA A MUDAR: Fazer o último quadro terminar exatamente na mesma composição do primeiro para criar um loop invisível.",
+    "quando": "2026-08-30T10:05:23.987Z"
   }
 ]
