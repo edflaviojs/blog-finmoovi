@@ -4,6 +4,7 @@ definition: "Qué es planificación financiera y cómo aparece en tu día a día
 title: "planificación financiera - Glosario Financiero"
 description: "Qué es planificación financiera y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/planejamento-financeiro.webp"
+imageAlt: "Monedas doradas, cerdito transparente con cerradura, planta verde y barras naranjas sobre fondo oscuro."
 category: "basico"
 tags: ["planificación financiera", "glosario", "finanzas"]
 author: "FinMoovi"

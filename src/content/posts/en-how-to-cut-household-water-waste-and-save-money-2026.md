@@ -3,6 +3,7 @@ title: "How to Cut Household Water Waste and Save Money (2026)"
 description: "Simple tips to reduce water use, lower your bills, and improve your budget with FinMoovi. Start saving in just 5 minutes."
 tickerHeadline: "Leaking water, leaking money"
 image: "/images/posts/como-cortar-o-desperdicio-de-agua-em-casa-e-poupar-no-bolso.webp"
+imageAlt: "Brown notebook, coins, calculator, and green leaves on white marble surface."
 category: "dicas"
 locale: "en"
 tags: ["how to save water","personal finance","budgeting","money"]

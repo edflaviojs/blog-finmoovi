@@ -5,6 +5,7 @@ description: >-
   práticos e dê os primeiros passos para investir com segurança e
   diversificação.
 image: /images/posts/etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel.webp
+imageAlt: "Escritório com laptop e monitor exibindo wallpaper colorido, xícaras e caderno."
 category: investimentos
 locale: pt
 tags:

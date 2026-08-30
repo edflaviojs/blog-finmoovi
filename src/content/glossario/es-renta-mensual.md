@@ -4,6 +4,7 @@ definition: "Qué es renta mensual y cómo aparece en tu día a día — explica
 title: "renta mensual - Glosario Financiero"
 description: "Qué es renta mensual y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/renda-mensal.webp"
+imageAlt: "Monedas doradas, planta verde y balanza sobre base rosa, fondo azul oscuro."
 category: "basico"
 tags: ["renta mensual", "glosario", "finanzas"]
 author: "FinMoovi"

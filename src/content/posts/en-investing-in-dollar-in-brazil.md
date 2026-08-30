@@ -4,6 +4,7 @@ description: >-
   Learn how to invest in dollars in Brazil safely and intelligently, considering
   the risks and benefits.
 image: /images/posts/investir-em-dolar-no-brasil.webp
+imageAlt: "Brown notebook, calculators, coins, and plants on a white marble surface."
 category: investimentos
 locale: en
 tags:

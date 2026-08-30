@@ -4,6 +4,7 @@ definition: "Qué es renta mensual de Neymar y cómo aparece en tu día a día �
 title: "renta mensual de Neymar - Glosario Financiero"
 description: "Qué es renta mensual de Neymar y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/renda-mensal-do-neymar.webp"
+imageAlt: "Monedas doradas apiladas y frascos con plantas verdes sobre fondo degradado azul y magenta."
 category: "basico"
 tags: ["renta mensual de Neymar", "glosario", "finanzas"]
 author: "FinMoovi"

@@ -4,6 +4,7 @@ definition: "Qué es renta mensual vitalicia y cómo aparece en tu día a día �
 title: "renta mensual vitalicia - Glosario Financiero"
 description: "Qué es renta mensual vitalicia y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/renda-mensal-vitalicia.webp"
+imageAlt: "Monedas doradas, gráfico de barras ascendente y planta en frasco sobre fondo púrpura."
 category: "basico"
 tags: ["renta mensual vitalicia", "glosario", "finanzas"]
 author: "FinMoovi"

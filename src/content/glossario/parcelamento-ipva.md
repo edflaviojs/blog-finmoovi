@@ -4,6 +4,7 @@ definition: "O que é parcelamento ipva e como isso aparece no seu dia a dia —
 title: "parcelamento ipva - Glossário Financeiro"
 description: "O que é parcelamento ipva e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/parcelamento-ipva.webp"
+imageAlt: "Pilhas de moedas douradas, vaso vazio, planta verde e frasco de ouro com gráfico ascendente."
 category: "basico"
 tags: ["parcelamento ipva", "glossário", "finanças"]
 author: "FinMoovi"

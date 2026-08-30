@@ -4,6 +4,7 @@ description: >-
   Aprenda a investir em dólar no Brasil de forma segura e inteligente,
   considerando os riscos e benefícios.
 image: /images/posts/investir-em-dolar-no-brasil.webp
+imageAlt: "Caderno marrom, calculadora, moedas e plantas sobre mesa branca de mármore."
 category: investimentos
 locale: pt
 tags:

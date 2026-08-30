@@ -3,6 +3,7 @@ title: "Como cortar o desperdício de água em casa e poupar no bolso (2026)"
 description: "Descubra estratégias simples para economizar água, reduzir contas e melhorar seu orçamento usando o FinMoovi. Dicas práticas e um app que ajuda em 5 minutos."
 tickerHeadline: "Água que sai, dinheiro que some"
 image: "/images/posts/como-cortar-o-desperdicio-de-agua-em-casa-e-poupar-no-bolso.webp"
+imageAlt: "Caderno marrom, calculadora preta, moedas e folhas verdes sobre fundo branco."
 category: "dicas"
 locale: "pt"
 tags: ["figuras de como economizar agua","finanças pessoais","economia","dinheiro"]

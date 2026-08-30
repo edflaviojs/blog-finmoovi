@@ -3,6 +3,7 @@ title: "Cómo reducir el desperdicio de agua en casa y ahorrar en el bolsillo (2
 description: "Descubre estrategias simples para ahorrar agua, reducir facturas y mejorar tu presupuesto con FinMoovi. Consejos prácticos y una app que ayuda en 5 minutos."
 tickerHeadline: "Agua que se escapa, dinero que se va"
 image: "/images/posts/como-cortar-o-desperdicio-de-agua-em-casa-e-poupar-no-bolso.webp"
+imageAlt: "Cuaderno marrón, calculadora, monedas y hojas verdes sobre fondo blanco."
 category: "dicas"
 locale: "es"
 tags: ["cómo ahorrar agua","finanzas personales","ahorro","dinero"]

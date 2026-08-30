@@ -4,6 +4,7 @@ definition: "What monthly income of Neymar is and how it shows up in your everyd
 title: "monthly income of Neymar - Financial Glossary"
 description: "What monthly income of Neymar is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/renda-mensal-do-neymar.webp"
+imageAlt: "Gold coins stacked beside glass jars with sprouting plants on purple background"
 category: "basico"
 tags: ["monthly income of Neymar", "glossary", "finance"]
 author: "FinMoovi"
