@@ -1,0 +1,117 @@
+{
+  "slug": "loop-conta-de-luz-ninguem-fala",
+  "formato": "loop16",
+  "term": "A conta de luz do verão",
+  "category": "vida",
+  "keyword": "LUZ",
+  "situacao": "conta-de-luz",
+  "gancho": "ninguem-fala",
+  "ganchoFamilia": "ninguém fala",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ralo",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Ninguém fala isso sobre a luz, mas é real no verão",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "Ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "A luz surpreende no verão"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "verão",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu vi a conta chegar alta depois do ventilador ligado",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "chegar",
+          "visual": {
+            "type": "statement",
+            "text": "Conta subiu em casa"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então eu conferi melhor meus gastos e cuidei da luz",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "conferi",
+          "visual": {
+            "type": "statement",
+            "text": "Passei a cuidar da luz"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "melhor",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "A luz do verão ainda é real quando percebi isso melhor",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "verão",
+          "visual": {
+            "type": "statement",
+            "text": "O verão revela a luz"
+          }
+        },
+        {
+          "anchor": "percebi",
+          "visual": {
+            "type": "statement",
+            "text": "A luz surpreende no verão"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}

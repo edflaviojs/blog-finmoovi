@@ -262,5 +262,11 @@
     "gancho": "ninguem-fala",
     "turno": "manha",
     "em": "2026-08-30T10:02:37.940Z"
+  },
+  {
+    "situacao": "conta-de-luz",
+    "gancho": "ninguem-fala",
+    "turno": "noite",
+    "em": "2026-08-30T10:06:06.846Z"
   }
 ]
