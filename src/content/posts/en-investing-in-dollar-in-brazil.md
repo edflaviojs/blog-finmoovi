@@ -1,20 +1,41 @@
 ---
-title: "Investing in Dollar in Brazil"
-description: "Learn how to invest in dollars in Brazil safely and intelligently, considering the risks and benefits."
-image: "/images/posts/investir-em-dolar-no-brasil.webp"
-imageAlt: "Three people sitting at a table with a laptop and bills."
-category: "investimentos"
-locale: "en"
-tags: ["investing in dollars","dollar investment","US dollar","foreign investment","foreign currency investment","safe investment","investing in dollars in Brazil","buying dollars for investment","dollarizing portfolio"]
-author: "FinMoovi"
-publishedAt: 2026-07-08
+title: Investing in Dollar in Brazil
+description: >-
+  Learn how to invest in dollars in Brazil safely and intelligently, considering
+  the risks and benefits.
+image: /images/posts/investir-em-dolar-no-brasil.webp
+category: investimentos
+locale: en
+tags:
+  - investing in dollars
+  - dollar investment
+  - US dollar
+  - foreign investment
+  - foreign currency investment
+  - safe investment
+  - investing in dollars in Brazil
+  - buying dollars for investment
+  - dollarizing portfolio
+author: FinMoovi
+publishedAt: 2026-07-08T00:00:00.000Z
 readingTime: 4
 featured: false
-translationKey: "investir-em-dolar-no-brasil"
+translationKey: investir-em-dolar-no-brasil
 seo:
-  metaTitle: "Investing in Dollar in Brazil"
-  metaDescription: "Learn how to invest in dollars in Brazil safely and intelligently, considering the risks and benefits."
-  keywords: ["investing in dollars","dollar investment","US dollar","foreign investment","foreign currency investment","safe investment","investing in dollars in Brazil","buying dollars for investment","dollarizing portfolio"]
+  metaTitle: Investing in Dollar in Brazil
+  metaDescription: >-
+    Learn how to invest in dollars in Brazil safely and intelligently,
+    considering the risks and benefits.
+  keywords:
+    - investing in dollars
+    - dollar investment
+    - US dollar
+    - foreign investment
+    - foreign currency investment
+    - safe investment
+    - investing in dollars in Brazil
+    - buying dollars for investment
+    - dollarizing portfolio
 ---
 
 ## Introduction to [Dollar](/en/posts/en-quotes-semana-1-july-2026) [Investment](/en/posts/en-building-a-diversified-portfolio-with-r-500)

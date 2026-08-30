@@ -1,21 +1,46 @@
 ---
-title: "ETFs: qué son y cómo invertir de forma simple y rentable"
-description: "Descubre qué son los ETFs, cómo funcionan, sus ventajas y precauciones. Ve ejemplos prácticos y da los primeros pasos para invertir con seguridad y diversificación."
-image: "/images/posts/etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel.webp"
-imageAlt: "Gráfico de acciones con líneas de colores y texto ETF en primer plano."
-category: "investimentos"
-locale: "es"
-tags: ["ETFs","inversión en fondos","bolsa de valores","diversificación","riesgo y retorno","cartera de inversiones","finanzas personales","qué es un ETF","cómo invertir en ETF","ETF para principiantes"]
-author: "FinMoovi"
-publishedAt: 2026-07-15
-updatedAt: "2026-08-27"
+title: 'ETFs: qué son y cómo invertir de forma simple y rentable'
+description: >-
+  Descubre qué son los ETFs, cómo funcionan, sus ventajas y precauciones. Ve
+  ejemplos prácticos y da los primeros pasos para invertir con seguridad y
+  diversificación.
+image: /images/posts/etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel.webp
+category: investimentos
+locale: es
+tags:
+  - ETFs
+  - inversión en fondos
+  - bolsa de valores
+  - diversificación
+  - riesgo y retorno
+  - cartera de inversiones
+  - finanzas personales
+  - qué es un ETF
+  - cómo invertir en ETF
+  - ETF para principiantes
+author: FinMoovi
+publishedAt: 2026-07-15T00:00:00.000Z
+updatedAt: '2026-08-27'
 readingTime: 5
 featured: false
-translationKey: "etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel"
+translationKey: etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel
 seo:
-  metaTitle: "ETFs: qué son y cómo invertir de forma simple y rentable"
-  metaDescription: "Descubre qué son los ETFs, cómo funcionan, sus ventajas y precauciones. Ve ejemplos prácticos y da los primeros pasos para invertir con seguridad y diversificación."
-  keywords: ["ETFs","inversión en fondos","bolsa de valores","diversificación","riesgo y retorno","cartera de inversiones","finanzas personales","qué es un ETF","cómo invertir en ETF","ETF para principiantes"]
+  metaTitle: 'ETFs: qué son y cómo invertir de forma simple y rentable'
+  metaDescription: >-
+    Descubre qué son los ETFs, cómo funcionan, sus ventajas y precauciones. Ve
+    ejemplos prácticos y da los primeros pasos para invertir con seguridad y
+    diversificación.
+  keywords:
+    - ETFs
+    - inversión en fondos
+    - bolsa de valores
+    - diversificación
+    - riesgo y retorno
+    - cartera de inversiones
+    - finanzas personales
+    - qué es un ETF
+    - cómo invertir en ETF
+    - ETF para principiantes
 ---
 
 ## Qué son los ETFs

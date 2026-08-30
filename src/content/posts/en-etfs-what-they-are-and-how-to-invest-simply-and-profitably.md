@@ -1,21 +1,46 @@
 ---
-title: "ETFs: What They Are and How to Invest Simply and Profitably"
-description: "Discover what ETFs are, how they work, their advantages and cautions. See practical examples and take the first steps to invest safely and with diversification."
-image: "/images/posts/etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel.webp"
-imageAlt: "Multicolored stock market graph on dark background with ETF text."
-category: "investimentos"
-locale: "en"
-tags: ["ETFs","fund investment","stock market","diversification","risk and return","investment portfolio","personal finance","what is an ETF","how to invest in ETFs","ETFs for beginners"]
-author: "FinMoovi"
-publishedAt: 2026-07-15
-updatedAt: "2026-08-27"
+title: 'ETFs: What They Are and How to Invest Simply and Profitably'
+description: >-
+  Discover what ETFs are, how they work, their advantages and cautions. See
+  practical examples and take the first steps to invest safely and with
+  diversification.
+image: /images/posts/etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel.webp
+category: investimentos
+locale: en
+tags:
+  - ETFs
+  - fund investment
+  - stock market
+  - diversification
+  - risk and return
+  - investment portfolio
+  - personal finance
+  - what is an ETF
+  - how to invest in ETFs
+  - ETFs for beginners
+author: FinMoovi
+publishedAt: 2026-07-15T00:00:00.000Z
+updatedAt: '2026-08-27'
 readingTime: 5
 featured: false
-translationKey: "etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel"
+translationKey: etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel
 seo:
-  metaTitle: "ETFs: What They Are and How to Invest Simply and Profitably"
-  metaDescription: "Discover what ETFs are, how they work, their advantages and cautions. See practical examples and take the first steps to invest safely and with diversification."
-  keywords: ["ETFs","fund investment","stock market","diversification","risk and return","investment portfolio","personal finance","what is an ETF","how to invest in ETFs","ETFs for beginners"]
+  metaTitle: 'ETFs: What They Are and How to Invest Simply and Profitably'
+  metaDescription: >-
+    Discover what ETFs are, how they work, their advantages and cautions. See
+    practical examples and take the first steps to invest safely and with
+    diversification.
+  keywords:
+    - ETFs
+    - fund investment
+    - stock market
+    - diversification
+    - risk and return
+    - investment portfolio
+    - personal finance
+    - what is an ETF
+    - how to invest in ETFs
+    - ETFs for beginners
 ---
 
 ## What ETFs Are

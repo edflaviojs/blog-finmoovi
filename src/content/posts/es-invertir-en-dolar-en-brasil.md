@@ -1,20 +1,41 @@
 ---
-title: "Invertir en Dólar en Brasil"
-description: "Aprende a invertir en dólar en Brasil de forma segura e inteligente, considerando los riesgos y beneficios."
-image: "/images/posts/investir-em-dolar-no-brasil.webp"
-imageAlt: "Tres personas sentadas en una mesa con una tableta y dinero en efectivo."
-category: "investimentos"
-locale: "es"
-tags: ["invertir en dólar","inversión en dólar","dólar americano","inversión en el exterior","inversión en moneda extranjera","inversión segura","invertir dólar brasil","comprar dólar inversión","dolarizar cartera"]
-author: "FinMoovi"
-publishedAt: 2026-07-08
+title: Invertir en Dólar en Brasil
+description: >-
+  Aprende a invertir en dólar en Brasil de forma segura e inteligente,
+  considerando los riesgos y beneficios.
+image: /images/posts/investir-em-dolar-no-brasil.webp
+category: investimentos
+locale: es
+tags:
+  - invertir en dólar
+  - inversión en dólar
+  - dólar americano
+  - inversión en el exterior
+  - inversión en moneda extranjera
+  - inversión segura
+  - invertir dólar brasil
+  - comprar dólar inversión
+  - dolarizar cartera
+author: FinMoovi
+publishedAt: 2026-07-08T00:00:00.000Z
 readingTime: 4
 featured: false
-translationKey: "investir-em-dolar-no-brasil"
+translationKey: investir-em-dolar-no-brasil
 seo:
-  metaTitle: "Invertir en Dólar en Brasil"
-  metaDescription: "Aprende a invertir en dólar en Brasil de forma segura e inteligente, considerando los riesgos y beneficios."
-  keywords: ["invertir en dólar","inversión en dólar","dólar americano","inversión en el exterior","inversión en moneda extranjera","inversión segura","invertir dólar brasil","comprar dólar inversión","dolarizar cartera"]
+  metaTitle: Invertir en Dólar en Brasil
+  metaDescription: >-
+    Aprende a invertir en dólar en Brasil de forma segura e inteligente,
+    considerando los riesgos y beneficios.
+  keywords:
+    - invertir en dólar
+    - inversión en dólar
+    - dólar americano
+    - inversión en el exterior
+    - inversión en moneda extranjera
+    - inversión segura
+    - invertir dólar brasil
+    - comprar dólar inversión
+    - dolarizar cartera
 ---
 
 ## Introducción a la [Inversión](/es/posts/es-montando-cartera-diversificada-con-r-500) en [Dólar](/es/posts/es-cotizaciones-semana-1-julio-2026)

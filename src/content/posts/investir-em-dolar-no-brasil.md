@@ -1,21 +1,42 @@
 ---
-title: "Investir em Dólar no Brasil"
-description: "Aprenda a investir em dólar no Brasil de forma segura e inteligente, considerando os riscos e benefícios."
-image: "/images/posts/investir-em-dolar-no-brasil.webp"
-imageAlt: "Três pessoas analisam documentos e tablet em uma mesa de madeira."
-category: "investimentos"
-locale: "pt"
-tags: ["investir em dólar","investimento em dólar","dólar americano","investimento no exterior","investimento em moeda estrangeira","investimento seguro","investir dólar brasil","comprar dólar investimento","dolarizar carteira"]
-author: "FinMoovi"
-publishedAt: 2026-07-08
+title: Investir em Dólar no Brasil
+description: >-
+  Aprenda a investir em dólar no Brasil de forma segura e inteligente,
+  considerando os riscos e benefícios.
+image: /images/posts/investir-em-dolar-no-brasil.webp
+category: investimentos
+locale: pt
+tags:
+  - investir em dólar
+  - investimento em dólar
+  - dólar americano
+  - investimento no exterior
+  - investimento em moeda estrangeira
+  - investimento seguro
+  - investir dólar brasil
+  - comprar dólar investimento
+  - dolarizar carteira
+author: FinMoovi
+publishedAt: 2026-07-08T00:00:00.000Z
 readingTime: 4
 featured: false
-translationKey: "investir-em-dolar-no-brasil"
-scope: "br-only"
+translationKey: investir-em-dolar-no-brasil
+scope: br-only
 seo:
-  metaTitle: "Investir em Dólar no Brasil"
-  metaDescription: "Aprenda a investir em dólar no Brasil de forma segura e inteligente, considerando os riscos e benefícios."
-  keywords: ["investir em dólar","investimento em dólar","dólar americano","investimento no exterior","investimento em moeda estrangeira","investimento seguro","investir dólar brasil","comprar dólar investimento","dolarizar carteira"]
+  metaTitle: Investir em Dólar no Brasil
+  metaDescription: >-
+    Aprenda a investir em dólar no Brasil de forma segura e inteligente,
+    considerando os riscos e benefícios.
+  keywords:
+    - investir em dólar
+    - investimento em dólar
+    - dólar americano
+    - investimento no exterior
+    - investimento em moeda estrangeira
+    - investimento seguro
+    - investir dólar brasil
+    - comprar dólar investimento
+    - dolarizar carteira
 ---
 
 ## Introdução ao Investimento em Dólar
