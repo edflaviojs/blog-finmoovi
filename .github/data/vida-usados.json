@@ -256,5 +256,11 @@
     "gancho": "faca-isso",
     "turno": "noite",
     "em": "2026-08-29T11:21:22.039Z"
+  },
+  {
+    "situacao": "seguro-venceu",
+    "gancho": "ninguem-fala",
+    "turno": "manha",
+    "em": "2026-08-30T10:02:37.940Z"
   }
 ]

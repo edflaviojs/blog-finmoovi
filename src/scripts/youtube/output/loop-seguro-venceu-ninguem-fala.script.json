@@ -1,0 +1,117 @@
+{
+  "slug": "loop-seguro-venceu-ninguem-fala",
+  "formato": "loop16",
+  "term": "O seguro que venceu",
+  "category": "vida",
+  "keyword": "SEGURO",
+  "situacao": "seguro-venceu",
+  "gancho": "ninguem-fala",
+  "ganchoFamilia": "ninguém fala",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "escudo",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Ninguém fala isso sobre seguro, mas é real aqui.",
+      "durationSec": 3.26,
+      "shots": [
+        {
+          "anchor": "Ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "Seguro vencido é real"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "seguro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escudo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Ontem eu vi a mensagem do corretor. Meu seguro venceu.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "Ontem",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escudo"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "mensagem",
+          "visual": {
+            "type": "statement",
+            "text": "O corretor avisou"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "E aí, fiquei pensando. Como eu deixei isso passar comigo sozinho?",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "fiquei",
+          "visual": {
+            "type": "statement",
+            "text": "Eu deixei passar"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "pensando",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escudo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Ninguém fala sobre seguro, mas comigo ele nunca passa calado de novo.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "Ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "Seguro não passa calado"
+          }
+        },
+        {
+          "anchor": "seguro",
+          "visual": {
+            "type": "statement",
+            "text": "Seguro vencido é real"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
