@@ -1,0 +1,254 @@
+{
+  "slug": "viral-M4IPngsT9BM",
+  "term": "Perda financeira",
+  "category": "mindset",
+  "keyword": "Perda",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Sabe onde começa a *perda de dinheiro* no fim do mês?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "balde-furado",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Sabe onde começa a perda de dinheiro no fim do mês? Nos pagamentos pequenos que você deixa passar.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "começa",
+          "visual": {
+            "type": "statement",
+            "text": "O rombo começa pequeno"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        },
+        {
+          "anchor": "pequenos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 20"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "passar",
+          "visual": {
+            "type": "statement",
+            "text": "E vai embora todo mês"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Isso acontece muito. É uma assinatura esquecida, uma comprinha parcelada, uma cobrança que você nem lembra mais.",
+      "durationSec": 6.5,
+      "shots": [
+        {
+          "anchor": "muito",
+          "visual": {
+            "type": "statement",
+            "text": "Acontece sem perceber"
+          }
+        },
+        {
+          "anchor": "esquecida",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "cobrança",
+          "visual": {
+            "type": "statement",
+            "text": "Pequenos gastos acumulam"
+          }
+        },
+        {
+          "anchor": "mais",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Um dia eu parei pra somar tudo. Eram cem reais aqui, oitenta ali, setenta em outra cobrança. Duzentos e cinquenta reais saindo da minha conta todo mês.",
+      "durationSec": 10.4,
+      "shots": [
+        {
+          "anchor": "somar",
+          "visual": {
+            "type": "app",
+            "app": "extrato",
+            "note": "Lista de cobranças recorrentes visível"
+          },
+          "sfx": "click"
+        },
+        {
+          "anchor": "setenta",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 100,
+            "prefix": "R$"
+          }
+        },
+        {
+          "anchor": "cobrança",
+          "visual": {
+            "type": "counter",
+            "from": 100,
+            "to": 250,
+            "prefix": "R$"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "saindo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei essas cobranças no FinMoovi e ele me mostrou na hora essa perda de duzentos e cinquenta reais.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "essas",
+          "visual": {
+            "type": "app",
+            "app": "smartcapture",
+            "note": "Cobranças adicionadas e organizadas automaticamente"
+          },
+          "sfx": "click"
+        },
+        {
+          "anchor": "mostrou",
+          "visual": {
+            "type": "statement",
+            "text": "A perda ficou visível"
+          }
+        },
+        {
+          "anchor": "perda",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        },
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "number",
+            "text": "R$ 250"
+          },
+          "sfx": "alert"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Agora é a sua vez de ver o seu número. Procura o FinMoovi. São sete dias grátis.",
+      "durationSec": 6.5,
+      "shots": [
+        {
+          "anchor": "número",
+          "visual": {
+            "type": "statement",
+            "text": "Veja o seu número"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias para descobrir"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Essa perda só cresce quando você deixa os pagamentos passarem sem olhar. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "perda",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        },
+        {
+          "anchor": "passarem",
+          "visual": {
+            "type": "statement",
+            "text": "Sem olhar, continua vazando"
+          }
+        },
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "statement",
+            "text": "Controle muda o destino"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "outros",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Descubra para onde vai seu dinheiro",
+    "target": "app"
+  },
+  "totalDurationSec": 44.9
+}
