@@ -1,0 +1,117 @@
+{
+  "slug": "loop-guardar-salario-curto-ta-perdendo",
+  "formato": "loop16",
+  "term": "Guardar com salário curto",
+  "category": "vida",
+  "keyword": "GUARDAR",
+  "situacao": "guardar-salario-curto",
+  "gancho": "ta-perdendo",
+  "ganchoFamilia": "tá perdendo",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "balde-furado",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se você ainda faz envelope, tá perdendo dinheiro. Eu vi ontem",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "envelope",
+          "visual": {
+            "type": "statement",
+            "text": "Envelope perdia dinheiro"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "perdendo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu guardava pouquinho no fim do mês, mas sumia tudo",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "guardava",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "pouquinho",
+          "visual": {
+            "type": "statement",
+            "text": "O dinheiro sumia"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então comecei a anotar contas e meu envelope ficou cheio",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "comecei",
+          "visual": {
+            "type": "statement",
+            "text": "Meu controle mudou"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "anotar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Eu vejo que fazer envelope ainda tá perdendo dinheiro comigo também",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "envelope",
+          "visual": {
+            "type": "statement",
+            "text": "Envelope ainda perde"
+          }
+        },
+        {
+          "anchor": "perdendo",
+          "visual": {
+            "type": "statement",
+            "text": "Envelope perdia dinheiro"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
