@@ -1658,5 +1658,65 @@
         "status": 200
       }
     }
+  },
+  {
+    "slug": "como-cortar-a-conta-de-luz-e-ganhar-tranquilidade",
+    "title": "Como cortar a conta de luz e ganhar tranquilidade",
+    "url": "https://blog.finmoovi.com/posts/como-cortar-a-conta-de-luz-e-ganhar-tranquilidade",
+    "submittedAt": "2026-08-31T20:29:38.393Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1839911743
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "como-reduzir-o-consumo-de-agua-em-casa-e-economizar-dinheiro",
+    "title": "Como reduzir o consumo de água em casa e economizar dinheiro",
+    "url": "https://blog.finmoovi.com/posts/como-reduzir-o-consumo-de-agua-em-casa-e-economizar-dinheiro",
+    "submittedAt": "2026-08-31T20:29:39.440Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1839911747
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "como-cortar-o-desperdicio-de-agua-em-casa-e-poupar-no-bolso",
+    "title": "Como cortar o desperdício de água em casa e poupar no bolso (2026)",
+    "url": "https://blog.finmoovi.com/posts/como-cortar-o-desperdicio-de-agua-em-casa-e-poupar-no-bolso",
+    "submittedAt": "2026-08-31T20:29:40.082Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1839911752
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
   }
 ]
