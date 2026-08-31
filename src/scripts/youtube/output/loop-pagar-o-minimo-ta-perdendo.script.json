@@ -1,0 +1,117 @@
+{
+  "slug": "loop-pagar-o-minimo-ta-perdendo",
+  "formato": "loop16",
+  "term": "Pagar só o mínimo",
+  "category": "vida",
+  "keyword": "MÍNIMO",
+  "situacao": "pagar-o-minimo",
+  "gancho": "ta-perdendo",
+  "ganchoFamilia": "tá perdendo",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ratoeira",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se você ainda paga o mínimo, tá perdendo seu sossego.",
+      "durationSec": 3.3,
+      "shots": [
+        {
+          "anchor": "mínimo",
+          "visual": {
+            "type": "statement",
+            "text": "Pagar o mínimo aperta"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "perdendo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu fiz isso caladinho quando a fatura apertou lá em casa.",
+      "durationSec": 3.63,
+      "shots": [
+        {
+          "anchor": "caladinho",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "fatura",
+          "visual": {
+            "type": "statement",
+            "text": "Eu fiz isso também"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "E aí percebi que a conta continuava comigo, ficando cada vez mais pesada.",
+      "durationSec": 4.3,
+      "shots": [
+        {
+          "anchor": "percebi",
+          "visual": {
+            "type": "statement",
+            "text": "A conta ficou comigo"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Desde então, lembro daquele aperto e penso no mínimo roubando meu sossego.",
+      "durationSec": 3.97,
+      "shots": [
+        {
+          "anchor": "lembro",
+          "visual": {
+            "type": "statement",
+            "text": "Meu sossego foi embora"
+          }
+        },
+        {
+          "anchor": "daquele",
+          "visual": {
+            "type": "statement",
+            "text": "Pagar o mínimo aperta"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}

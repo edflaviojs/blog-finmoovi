@@ -274,5 +274,11 @@
     "gancho": "ta-perdendo",
     "turno": "manha",
     "em": "2026-08-31T11:01:25.457Z"
+  },
+  {
+    "situacao": "pagar-o-minimo",
+    "gancho": "ta-perdendo",
+    "turno": "noite",
+    "em": "2026-08-31T11:05:07.585Z"
   }
 ]
