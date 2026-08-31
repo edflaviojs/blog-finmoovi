@@ -1,0 +1,238 @@
+{
+  "slug": "viral-RErIArKiZwg",
+  "term": "Mudança de Mindset",
+  "category": "mindset",
+  "keyword": "Mindset",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você acha que *mudar seu mindset* salva quinhentos reais todo mês?"
+  },
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "balanca",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você acha que mudar seu mindset salva quinhentos reais todo mês? Salva, se você pensar antes de comprar.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "acha",
+          "visual": {
+            "type": "statement",
+            "text": "Pensar antes de comprar"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "mindset",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balanca"
+          }
+        },
+        {
+          "anchor": "quinhentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Aquele gasto no automático vai no cafezinho, num lanche, numa comprinha à toa. Eu comecei a parar um minuto antes de pagar.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "automático",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          }
+        },
+        {
+          "anchor": "lanche",
+          "visual": {
+            "type": "icon",
+            "icon": "money"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "parar",
+          "visual": {
+            "type": "icon",
+            "icon": "clock"
+          }
+        },
+        {
+          "anchor": "pagar",
+          "visual": {
+            "type": "statement",
+            "text": "Pare por um minuto"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "E essa pausa foi somando. Cem reais aqui, cento e cinquenta ali, mais duzentos e cinquenta. Deu quinhentos reais.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "pausa",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balanca"
+          }
+        },
+        {
+          "anchor": "cento",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 100,
+            "prefix": "R$"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "mais",
+          "visual": {
+            "type": "counter",
+            "from": 100,
+            "to": 350,
+            "prefix": "R$"
+          }
+        },
+        {
+          "anchor": "quinhentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu abri o FinMoovi e ele me mostrou esses quinhentos reais sobrando no mês. Ele separou direitinho cada gasto que eu cortei.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Dashboard do FinMoovi mostrando R$ 500 sobrando no mês"
+          }
+        },
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "app",
+            "app": "extrato",
+            "note": "Extrato destacando os gastos cortados e os respectivos valores"
+          }
+        },
+        {
+          "anchor": "cada",
+          "visual": {
+            "type": "list",
+            "text": "Gastos cortados, um por um"
+          },
+          "sfx": "typewriter"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu também? Procura o FinMoovi. São sete dias grátis.",
+      "durationSec": 4.6,
+      "shots": [
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "statement",
+            "text": "Descubra quanto sobra"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Essa mudança de mindset, na sua cabeça, deixa quinhentos reais no bolso todo mês. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "mudança",
+          "visual": {
+            "type": "statement",
+            "text": "Sua mudança começa na cabeça"
+          }
+        },
+        {
+          "anchor": "quinhentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "bolso",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          }
+        },
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "statement",
+            "text": "Controle seu dinheiro"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja quanto sobra no seu mês",
+    "target": "app"
+  },
+  "totalDurationSec": 43.9
+}
