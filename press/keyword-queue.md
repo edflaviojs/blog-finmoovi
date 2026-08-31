@@ -1,11 +1,11 @@
 # 🗂️ Fila de Keywords (Fase 3)
 
-**Atualizado em:** 2026-08-24T07:48:27.404Z
-**Totais:** 72 pendente(s) · 61 usada(s) · 56 pulada(s)
+**Atualizado em:** 2026-08-31T14:32:18.390Z
+**Totais:** 56 pendente(s) · 78 usada(s) · 56 pulada(s)
 
 ## ⏳ Pendentes por fonte
 
-### Manuais (prioridade 1) — 61
+### Manuais (prioridade 1) — 53
 
 - parcelamento _(glossario)_
 - renda mensal _(glossario)_
@@ -21,11 +21,6 @@
 - como funciona financiamento de moto _(glossario)_
 - como funciona financiamento de veiculo _(glossario)_
 - como funciona minha casa minha vida financiamento _(glossario)_
-- supermercado economiza​
-- qual é a melhor forma de guardar dinheiro​
-- qual o melhor horário para tomar banho e economizar energia​
-- qual a temperatura ideal do ar-condicionado para economizar energia​
-- porque é importante economizar água​
 - juros de mora o que e _(glossario)_
 - no contexto da economia a relacao entre consumo investimento _(glossario)_
 - o que e financeiro _(glossario)_
@@ -47,9 +42,6 @@
 - o que significa economizar _(glossario)_
 - planejamento para guardar dinheiro _(glossario)_
 - planilha para economizar dinheiro _(glossario)_
-- farmácias economizar
-- figuras de como economizar agua
-- formas de como economizar agua
 - formas de economizar energia
 - como economizar agua
 - de como economizar água
@@ -69,20 +61,12 @@
 - o que levar para comer na praia para economizar
 - por que é importante economizar energia elétrica
 
-### Lacunas do GSC (prioridade 2) — 2
+### Lacunas do GSC (prioridade 2) — 1
 
-- flujo de caja
-- outstanding balance
+- investimentos simulador
 
-### Autocomplete (prioridade 3) — 9
+### Autocomplete (prioridade 3) — 2
 
-- parcelamento mei _(glossario)_
-- parcelamento simples nacional _(glossario)_
-- parcelamento ipva _(glossario)_
-- renda mensal o que é _(glossario)_
-- renda mensal vitalicia _(glossario)_
-- renda mensal do neymar _(glossario)_
-- lista de compras supermercado _(glossario)_
 - lista de compras do mês _(glossario)_
 - lista de compras completa _(glossario)_
 
@@ -90,16 +74,16 @@
 
 | Keyword | Usada por | Em |
 |---|---|---|
-| custo de vida | glossario-auto-diario | 2026-08-23 |
-| supermercado economizando​ | gerar-dicas-financeiras | 2026-08-23 |
-| planejamento financeiro | glossario-auto-diario | 2026-08-22 |
-| tabela para economizar dinheiro​ | gerar-dicas-financeiras | 2026-08-22 |
-| controle de gastos | glossario-auto-diario | 2026-08-21 |
-| acciónes | gerar-dicas-financeiras | 2026-08-21 |
-| despesa recorrente | glossario-auto-diario | 2026-08-20 |
-| teto de gastos | glossario-auto-diario | 2026-08-19 |
-| contas do dia | gerar-post-investimentos | 2026-08-19 |
-| volatility | gerar-dicas-financeiras | 2026-08-19 |
+| lista de compras supermercado | glossario-auto-diario | 2026-08-30 |
+| formas de como economizar agua | gerar-dicas-financeiras | 2026-08-30 |
+| renda mensal do neymar | glossario-auto-diario | 2026-08-29 |
+| figuras de como economizar agua | gerar-dicas-financeiras | 2026-08-29 |
+| renda mensal vitalicia | glossario-auto-diario | 2026-08-28 |
+| farmácias economizar | gerar-dicas-financeiras | 2026-08-28 |
+| renda mensal o que é | glossario-auto-diario | 2026-08-27 |
+| porque é importante economizar água​ | gerar-dicas-financeiras | 2026-08-27 |
+| parcelamento ipva | glossario-auto-diario | 2026-08-26 |
+| qual a temperatura ideal do ar-condicionado para economizar energia​ | gerar-post-investimentos | 2026-08-26 |
 
 ## ⏭️ Puladas (já cobertas)
 

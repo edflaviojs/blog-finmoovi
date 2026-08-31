@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30T15:06:41.585Z",
+  "updatedAt": "2026-08-31T14:32:18.390Z",
   "sourceCursor": 0,
   "entries": [
     {
@@ -1872,6 +1872,14 @@
       "source": "autocomplete",
       "status": "pending",
       "addedAt": "2026-08-24T07:48:27.403Z"
+    },
+    {
+      "keyword": "investimentos simulador",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-08-31T14:32:17.782Z"
     }
   ]
 }
