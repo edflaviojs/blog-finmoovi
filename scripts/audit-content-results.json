@@ -92,6 +92,23 @@
     }
   },
   {
+    "file": "en-digital-bank-vs-major-bank-which-is-worth-it-in-2026.md",
+    "dir": "posts",
+    "severity": 1,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [
+        "Nubank"
+      ],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-financial-value.md",
     "dir": "glossario",
     "severity": 1,
@@ -225,6 +242,23 @@
       "ptLeftovers": [
         "investimentos"
       ]
+    }
+  },
+  {
+    "file": "es-banco-digital-a-vs-banco-digital-b-cual-elegir-en-2026.md",
+    "dir": "posts",
+    "severity": 1,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [
+        "Nubank"
+      ],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -1513,6 +1547,21 @@
     }
   },
   {
+    "file": "en-financial-sprint-how-to-use-the-last-100-days-to-end-the.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-financing.md",
     "dir": "glossario",
     "severity": 0,
@@ -1828,6 +1877,21 @@
     }
   },
   {
+    "file": "en-how-to-cut-household-water-waste-and-save-money-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-how-to-diversify-with-variable-income-assets-in-2026.md",
     "dir": "posts",
     "severity": 0,
@@ -1934,6 +1998,21 @@
   },
   {
     "file": "en-how-to-organize-your-monthly-expenses-quickly-and-securely.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-how-to-reduce-household-water-use-and-save-money.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -2473,7 +2552,37 @@
     }
   },
   {
+    "file": "en-monthly-income-of-neymar.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-monthly-income.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-monthly-lifetime-income.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -2968,6 +3077,21 @@
     }
   },
   {
+    "file": "en-save-on-pharmacy-purchases-without-sacrifice-practical-guide.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-save-on-your-market-bill.md",
     "dir": "posts",
     "severity": 0,
@@ -3059,6 +3183,21 @@
   },
   {
     "file": "en-selic.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-shopping-list-for-the-supermarket.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -3690,6 +3829,21 @@
   {
     "file": "es-acciones.md",
     "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-ahorra-en-la-farmacia-sin-sacrificios-guia-practica-2026.md",
+    "dir": "posts",
     "severity": 0,
     "issues": {
       "currency": 0,
@@ -4484,6 +4638,36 @@
   },
   {
     "file": "es-como-recortar-gastos-en-el-supermercado-y-seguir-comiendo.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-como-reducir-el-consumo-de-agua-en-casa-y-ahorrar-dinero.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-como-reducir-el-desperdicio-de-agua-en-casa-y-ahorrar-en-el.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -5668,6 +5852,21 @@
     }
   },
   {
+    "file": "es-lista-de-compras-supermercado.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-margen-de-ganancia.md",
     "dir": "glossario",
     "severity": 0,
@@ -6283,6 +6482,36 @@
     }
   },
   {
+    "file": "es-renta-mensual-de-neymar.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-renta-mensual-vitalicia.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-renta-mensual.md",
     "dir": "glossario",
     "severity": 0,
@@ -6390,6 +6619,21 @@
   {
     "file": "es-spread-bancario.md",
     "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-sprint-financiero-como-usar-los-ultimos-100-dias-para-cerrar.md",
+    "dir": "posts",
     "severity": 0,
     "issues": {
       "currency": 0,
