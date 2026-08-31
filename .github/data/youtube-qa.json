@@ -790,5 +790,23 @@
     ],
     "veredito": "1. **O LOOP — Nota: 8/10**  \nO primeiro e o último quadro são praticamente iguais: mesma frase, mesmo fundo e mesma composição. Parece feito para reiniciar bem. Pequena diferença: o último quadro mostra uma variação de entrada/saída da frase.\n\n2. **A FAIXA DE BAIXO — Nota: 9/10**  \nO terço inferior está quase sempre livre. As legendas ficam mais no centro inferior, mas não parecem cair na área dos botões do Shorts/Reels.\n\n3. **TEXTO POR CIMA DE TEXTO — Nota: 8/10**  \nNão há frases grandes sobrepostas. Algumas palavras isoladas em destaque podem parecer um pouco soltas, mas não há cortes graves.\n\n4. **LEGIBILIDADE — Nota: 9/10**  \nA letra é grande, com bom contraste e destaque. Funciona bem para celular. Algumas legendas pequenas embaixo poderiam ter mais tamanho.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — Nota: 7/10**  \nHá bastante espaço vazio entre o título e a legenda. O visual é bonito, mas alguns quadros parecem parados demais.\n\n6. **COERÊNCIA — Nota: 9/10**  \nTodos os quadros parecem parte do mesmo vídeo: mesma identidade visual, mesma narrativa e sequência lógica.\n\n7. **TESTE CENTRAL — Nota: 7/10**  \nParece mais um conjunto de slides animados do que um vídeo profissional, porque quase todos os quadros são textos estáticos com pouca ação visual.\n\nNOTA GERAL: 8\nPROBLEMA 1: Falta de sensação de vídeo (quadros 1 a 8 / 0.1s a 13.4s) — parece slideshow em vez de narrativa em movimento.\nPROBLEMA 2: Áreas vazias grandes no centro da tela (principalmente 3.9s e 11.6s).\nPROBLEMA 3: Legendas pequenas na parte inferior podem perder força no celular.\nPRIMEIRA COISA A MUDAR: Adicionar mais elementos de ação visual entre os textos para parecer um vídeo e não uma sequência de cards.",
     "quando": "2026-08-30T10:08:51.004Z"
+  },
+  {
+    "slug": "loop-guardar-salario-curto-ta-perdendo",
+    "formato": "loop16",
+    "nota": 7,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      2.3,
+      4.6,
+      6.9,
+      9.2,
+      11.5,
+      13.8,
+      16
+    ],
+    "veredito": "1. **O LOOP — 9/10**  \nO primeiro e o último quadro praticamente repetem a mesma cena: mesmo fundo, mesmo tema e o título **“Envelope perdia dinheiro”**. Parece preparado para reiniciar sem chamar atenção.\n\n2. **A FAIXA DE BAIXO — 5/10**  \nAs legendas aparecem relativamente baixas em vários quadros. Em celular, podem ficar parcialmente escondidas pelos elementos da interface.\n\n3. **TEXTO POR CIMA DE TEXTO — 8/10**  \nNão vejo frases principais sobrepostas nem palavras claramente cortadas. O texto grande de fundo funciona mais como elemento gráfico.\n\n4. **LEGIBILIDADE — 9/10**  \nTítulos grandes, fontes fortes e bom contraste. As legendas também têm destaque visual suficiente para celular.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — 6/10**  \nNos quadros com o envelope, existe bastante espaço vazio ao redor. Funciona como respiro visual, mas pode dar sensação de slide se não houver movimento forte no vídeo.\n\n6. **COERÊNCIA — 9/10**  \nOs oito quadros têm a mesma identidade visual, cores, tipografia e personagem gráfico. A sequência também conta uma história clara: perda → descoberta → mudança → tentativa → repetição.\n\n7. **TESTE CENTRAL — 6/10**  \nPelos quadros parados, **parece mais uma apresentação animada do que um vídeo profissional dinâmico**; a qualidade visual é boa, mas há muitos momentos visualmente estáticos.\n\n**NOTA GERAL: 7/10**  \n**PROBLEMA 1: Legendas baixas demais em vários quadros, especialmente 0.1s, 2.3s, 4.6s e 13.8s.**  \n**PROBLEMA 2: Os quadros do envelope têm bastante área vazia e pouca informação visual.**  \n**PROBLEMA 3: A estrutura visual ainda lembra slides, principalmente nos quadros 2.3s, 4.6s e 11.5s.**  \n**PRIMEIRA COISA A MUDAR: Subir todas as legendas para uma zona segura e ocupar melhor o espaço vazio sem prejudicar o loop.**",
+    "quando": "2026-08-31T11:04:30.811Z"
   }
 ]
