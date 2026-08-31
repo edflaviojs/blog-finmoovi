@@ -19,7 +19,7 @@ seo:
   keywords: ["excel expenses","personal finance","budgeting","money"]
 ---
 
-Imagine the scene: you get home after a hectic day, open the kitchen drawer and find a pile of crumpled receipts—from the bakery, the gas station, the electricity bill. Your heart starts racing because you know that if you don’t put everything on paper, next month could end with “nothing left” in the account. That mess of papers is the classic sign that you still don’t have an easy way to see where your money is going.
+Imagine the scene: you get home after a hectic day, open the kitchen drawer and find a pile of crumpled receipts—from the bakery, the gas station, the [electricity bill](/en/posts/en-how-to-cut-your-electricity-bill-and-gain-peace-of-mind). Your heart starts racing because you know that if you don’t put everything on paper, next month could end with “nothing left” in the account. That mess of papers is the classic sign that you still don’t have an easy way to see where your money is going.
 
 The solution doesn’t have to be a complex software or a [spreadsheet](/en/posts/en-migrating-from-spreadsheets-to-a-financial-app) that only works for printing. The idea is to turn that chaos into a visual dashboard, where each expense shows up in a color, a category, a chart you understand in a few seconds. That’s exactly what the FinMoovi tool does: it captures a receipt with your phone’s camera, automatically recognizes the amount and the category (food, transport, leisure…) and fills your [expense spreadsheet](/en/posts/en-expense-spreadsheet-when-it-stops-working) in real time. In under five minutes you have a ready‑to‑analyze record and, best of all, you can keep using the spreadsheet you already know.
 

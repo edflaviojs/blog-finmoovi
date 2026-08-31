@@ -19,7 +19,7 @@ seo:
   keywords: ["expense spreadsheet","expense tracking","monthly budget","financial app","FinMoovi","finance automation","spending categories","monthly expense spreadsheet"]
 ---
 
-Imagine this: you get home after a hectic day, open your email and see dozens of receipts scattered on the table, reminding you that you still have to pay the electricity bill, the phone plan, and that dinner out you haven’t logged yet. Anxiety builds because, when you close the month’s books, the balance seems to have vanished like magic.  
+Imagine this: you get home after a hectic day, open your email and see dozens of receipts scattered on the table, reminding you that you still have to pay the [electricity bill](/en/posts/en-how-to-cut-your-electricity-bill-and-gain-peace-of-mind), the phone plan, and that dinner out you haven’t logged yet. Anxiety builds because, when you close the month’s books, the balance seems to have vanished like magic.  
 
 That chaos is exactly what most traditional expense spreadsheets look like – they start off well, but quickly become messy, hard to read, and almost impossible to keep up‑to‑date.
 
