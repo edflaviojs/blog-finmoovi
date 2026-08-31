@@ -3,6 +3,7 @@ title: "Como reduzir o consumo de água em casa e economizar dinheiro"
 description: "Descubra estratégias simples para cortar o desperdício de água, melhorar seu orçamento e ainda preservar o planeta. Dicas práticas e um app que ajuda a monitorar tudo."
 tickerHeadline: "Sua conta de água vai baixar"
 image: "/images/posts/como-reduzir-o-consumo-de-agua-em-casa-e-economizar-dinheiro.webp"
+imageAlt: "Fita dourada ondulada sobre fundo azul escuro."
 category: "dicas"
 locale: "pt"
 tags: ["formas de como economizar água","finanças pessoais","economia","dinheiro"]

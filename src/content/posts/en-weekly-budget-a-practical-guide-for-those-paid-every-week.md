@@ -5,6 +5,7 @@ description: >-
   avoid debt, and stretch your paycheck—no matter the amount.
 tickerHeadline: Your weekly paycheck under control
 image: /images/posts/orcamento-semanal-guia-para-quem-recebe-por-semana-2026.webp
+imageAlt: "Orange notebook, calculator, and coins on white marble with green leaves."
 category: orcamento
 locale: en
 tags:

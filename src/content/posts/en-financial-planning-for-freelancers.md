@@ -4,6 +4,7 @@ description: >-
   Learn to manage your finances as a freelancer and achieve financial stability.
   Practical tips and real-life examples.
 image: /images/posts/planejamento-financeiro-para-autonomos.webp
+imageAlt: "Three smiling professionals reviewing documents and phones at a desk with laptop and coffee."
 category: dicas
 locale: en
 tags:

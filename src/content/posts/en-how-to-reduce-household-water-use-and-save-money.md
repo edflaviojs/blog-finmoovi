@@ -3,6 +3,7 @@ title: "How to Reduce Household Water Use and Save Money"
 description: "Simple tips to cut water waste, lower your bills, and protect the planet. Learn practical steps and use FinMoovi to track savings."
 tickerHeadline: "Your water bill will drop"
 image: "/images/posts/como-reduzir-o-consumo-de-agua-em-casa-e-economizar-dinheiro.webp"
+imageAlt: "Golden wave flowing diagonally across a teal background with white space below."
 category: "dicas"
 locale: "en"
 tags: ["how to save water","personal finance","budgeting","water conservation","household savings"]

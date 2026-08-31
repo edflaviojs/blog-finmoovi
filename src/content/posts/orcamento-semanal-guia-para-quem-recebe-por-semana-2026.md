@@ -6,6 +6,7 @@ description: >-
   agora.
 tickerHeadline: Seu salário semanal sob controle
 image: /images/posts/orcamento-semanal-guia-para-quem-recebe-por-semana-2026.webp
+imageAlt: "Caderno laranja aberto, moedas, calculadora e folhas verdes sobre fundo branco."
 category: orcamento
 locale: pt
 tags:

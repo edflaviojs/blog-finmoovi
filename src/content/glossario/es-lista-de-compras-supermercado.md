@@ -4,6 +4,7 @@ definition: "Qué es lista de compras supermercado y cómo aparece en tu día a 
 title: "lista de compras supermercado - Glosario Financiero"
 description: "Qué es lista de compras supermercado y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/lista-de-compras-supermercado.webp"
+imageAlt: "Cofre, balanza, bola de cristal y pilas de monedas con plantas verdes."
 category: "basico"
 tags: ["lista de compras supermercado", "glosario", "finanzas"]
 author: "FinMoovi"

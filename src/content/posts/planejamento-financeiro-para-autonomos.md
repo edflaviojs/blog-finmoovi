@@ -4,6 +4,7 @@ description: >-
   Aprenda a gerenciar suas finanças como autônomo e alcance a estabilidade
   financeira. Dicas práticas e exemplos reais.
 image: /images/posts/planejamento-financeiro-para-autonomos.webp
+imageAlt: "Três pessoas sorrindo em mesa com documentos, celular, caneta e laptop aberto."
 category: dicas
 locale: pt
 tags:

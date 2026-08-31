@@ -4,6 +4,7 @@ description: >-
   Aprende a gestionar tus finanzas como autónomo y alcanza la estabilidad
   financiera. Consejos prácticos y ejemplos reales.
 image: /images/posts/planejamento-financeiro-para-autonomos.webp
+imageAlt: "Tres profesionales sonrientes revisan documentos y teléfonos en una mesa de oficina."
 category: dicas
 locale: es
 tags:

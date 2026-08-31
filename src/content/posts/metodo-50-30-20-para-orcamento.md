@@ -4,6 +4,7 @@ description: >-
   Aprenda a aplicar o método 50-30-20 no seu salário brasileiro para um
   orçamento saudável e alcançar suas metas financeiras.
 image: /images/posts/metodo-50-30-20-para-orcamento.webp
+imageAlt: "Quatro pessoas sorridentes em mesa com laptop, calculadora e documentos financeiros."
 category: orcamento
 locale: pt
 tags:

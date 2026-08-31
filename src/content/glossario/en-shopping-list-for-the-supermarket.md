@@ -4,6 +4,7 @@ definition: "What shopping list for the supermarket is and how it shows up in yo
 title: "shopping list for the supermarket - Financial Glossary"
 description: "What shopping list for the supermarket is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/lista-de-compras-supermercado.webp"
+imageAlt: "Gold coins, safe, scale, and glass jar with green plants on dark background."
 category: "basico"
 tags: ["shopping list for the supermarket", "glossary", "finance"]
 author: "FinMoovi"

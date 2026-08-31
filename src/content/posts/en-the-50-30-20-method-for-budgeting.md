@@ -4,6 +4,7 @@ description: >-
   Learn to apply the 50-30-20 method to your Brazilian salary for a healthy
   budget and achieve your financial goals.
 image: /images/posts/metodo-50-30-20-para-orcamento.webp
+imageAlt: "Four smiling people at a table with laptop, calculator, and documents."
 category: orcamento
 locale: en
 tags:

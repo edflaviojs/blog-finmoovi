@@ -5,6 +5,7 @@ description: >-
   Usa FinMoovi y controla tus finanzas para evitar deudas.
 tickerHeadline: Tu salario semanal bajo control
 image: /images/posts/orcamento-semanal-guia-para-quem-recebe-por-semana-2026.webp
+imageAlt: "Cuaderno naranja abierto, calculadora negra y monedas esparcidas sobre fondo blanco con ramas verdes."
 category: orcamento
 locale: es
 tags:
