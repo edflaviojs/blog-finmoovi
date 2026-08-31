@@ -1,22 +1,37 @@
 ---
-title: "Weekly Budget: A Practical Guide for Those Paid Every Week (2026)"
-description: "Learn how to build a weekly household budget with FinMoovi. Gain control, avoid debt, and stretch your paycheck—no matter the amount."
-tickerHeadline: "Your weekly paycheck under control"
-image: "/images/posts/orcamento-semanal-guia-para-quem-recebe-por-semana-2026.webp"
-imageAlt: "Two calculators, brown wallet, coins, and green plants on white marble surface."
-category: "orcamento"
-locale: "en"
-tags: ["weekly budget","expense tracking","personal finance","FinMoovi app","weekly income","household budget"]
-author: "FinMoovi"
-publishedAt: 2026-07-27
+title: 'Weekly Budget: A Practical Guide for Those Paid Every Week (2026)'
+description: >-
+  Learn how to build a weekly household budget with FinMoovi. Gain control,
+  avoid debt, and stretch your paycheck—no matter the amount.
+tickerHeadline: Your weekly paycheck under control
+image: /images/posts/orcamento-semanal-guia-para-quem-recebe-por-semana-2026.webp
+category: orcamento
+locale: en
+tags:
+  - weekly budget
+  - expense tracking
+  - personal finance
+  - FinMoovi app
+  - weekly income
+  - household budget
+author: FinMoovi
+publishedAt: 2026-07-27T00:00:00.000Z
 readingTime: 4
 featured: false
-translationKey: "orcamento-semanal-guia-para-quem-recebe-por-semana-2026"
-scope: "universal"
+translationKey: orcamento-semanal-guia-para-quem-recebe-por-semana-2026
+scope: universal
 seo:
-  metaTitle: "Weekly Budget: A Practical Guide for Those Paid Every Week (2026)"
-  metaDescription: "Learn how to build a weekly household budget with FinMoovi. Gain control, avoid debt, and stretch your paycheck—no matter the amount."
-  keywords: ["weekly budget","expense tracking","personal finance","FinMoovi app","weekly income","household budget"]
+  metaTitle: 'Weekly Budget: A Practical Guide for Those Paid Every Week (2026)'
+  metaDescription: >-
+    Learn how to build a weekly household budget with FinMoovi. Gain control,
+    avoid debt, and stretch your paycheck—no matter the amount.
+  keywords:
+    - weekly budget
+    - expense tracking
+    - personal finance
+    - FinMoovi app
+    - weekly income
+    - household budget
 ---
 
 Imagine it’s Monday morning: the alarm goes off, you rush to work, and when you get home you find the electric bill, the rent notice, and a reminder that the car needs a tune‑up. In the middle of that whirlwind you still have to split the money that just landed in your account – that paycheck that arrives every Friday – between household costs, groceries, and a little something for the future. The feeling that the last cent vanished into thin air is almost universal, especially when your [income](/en/posts/en-building-a-diversified-portfolio-with-r-500) comes in weekly chunks.

@@ -1,20 +1,41 @@
 ---
-title: "Método 50-30-20 para Orçamento"
-description: "Aprenda a aplicar o método 50-30-20 no seu salário brasileiro para um orçamento saudável e alcançar suas metas financeiras."
-image: "/images/posts/metodo-50-30-20-para-orcamento.webp"
-imageAlt: "Um texto em branco sobre um fundo azul com contorno dourado no centro."
-category: "orcamento"
-locale: "pt"
-tags: ["orçamento pessoal","método 50-30-20","salário brasileiro","finanças pessoais","controle de gastos","economia","regra 50 30 20","como dividir salário","método orçamento"]
-author: "FinMoovi"
-publishedAt: 2026-06-14
+title: Método 50-30-20 para Orçamento
+description: >-
+  Aprenda a aplicar o método 50-30-20 no seu salário brasileiro para um
+  orçamento saudável e alcançar suas metas financeiras.
+image: /images/posts/metodo-50-30-20-para-orcamento.webp
+category: orcamento
+locale: pt
+tags:
+  - orçamento pessoal
+  - método 50-30-20
+  - salário brasileiro
+  - finanças pessoais
+  - controle de gastos
+  - economia
+  - regra 50 30 20
+  - como dividir salário
+  - método orçamento
+author: FinMoovi
+publishedAt: 2026-06-14T00:00:00.000Z
 readingTime: 3
 featured: false
-translationKey: "metodo-50-30-20-para-orcamento"
+translationKey: metodo-50-30-20-para-orcamento
 seo:
-  metaTitle: "Método 50-30-20 para Orçamento"
-  metaDescription: "Aprenda a aplicar o método 50-30-20 no seu salário brasileiro para um orçamento saudável e alcançar suas metas financeiras."
-  keywords: ["orçamento pessoal","método 50-30-20","salário brasileiro","finanças pessoais","controle de gastos","economia","regra 50 30 20","como dividir salário","método orçamento"]
+  metaTitle: Método 50-30-20 para Orçamento
+  metaDescription: >-
+    Aprenda a aplicar o método 50-30-20 no seu salário brasileiro para um
+    orçamento saudável e alcançar suas metas financeiras.
+  keywords:
+    - orçamento pessoal
+    - método 50-30-20
+    - salário brasileiro
+    - finanças pessoais
+    - controle de gastos
+    - economia
+    - regra 50 30 20
+    - como dividir salário
+    - método orçamento
 ---
 
 ## Entendendo o [Método 50-30-20](/posts/metodo-50-30-20-para-orcamento)

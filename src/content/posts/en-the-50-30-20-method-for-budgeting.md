@@ -1,20 +1,41 @@
 ---
-title: "The 50-30-20 Method for Budgeting"
-description: "Learn to apply the 50-30-20 method to your Brazilian salary for a healthy budget and achieve your financial goals."
-image: "/images/posts/metodo-50-30-20-para-orcamento.webp"
-imageAlt: "Gold and blue graphic with white text reading \"Metodo 50-30-20\"."
-category: "orcamento"
-locale: "en"
-tags: ["personal budget","50-30-20 method","Brazilian salary","personal finance","expense control","economy","50 30 20 rule","how to divide salary","budget method"]
-author: "FinMoovi"
-publishedAt: 2026-06-14
+title: The 50-30-20 Method for Budgeting
+description: >-
+  Learn to apply the 50-30-20 method to your Brazilian salary for a healthy
+  budget and achieve your financial goals.
+image: /images/posts/metodo-50-30-20-para-orcamento.webp
+category: orcamento
+locale: en
+tags:
+  - personal budget
+  - 50-30-20 method
+  - Brazilian salary
+  - personal finance
+  - expense control
+  - economy
+  - 50 30 20 rule
+  - how to divide salary
+  - budget method
+author: FinMoovi
+publishedAt: 2026-06-14T00:00:00.000Z
 readingTime: 3
 featured: false
-translationKey: "metodo-50-30-20-para-orcamento"
+translationKey: metodo-50-30-20-para-orcamento
 seo:
-  metaTitle: "The 50-30-20 Method for Budgeting"
-  metaDescription: "Learn to apply the 50-30-20 method to your Brazilian salary for a healthy budget and achieve your financial goals."
-  keywords: ["personal budget","50-30-20 method","Brazilian salary","personal finance","expense control","economy","50 30 20 rule","how to divide salary","budget method"]
+  metaTitle: The 50-30-20 Method for Budgeting
+  metaDescription: >-
+    Learn to apply the 50-30-20 method to your Brazilian salary for a healthy
+    budget and achieve your financial goals.
+  keywords:
+    - personal budget
+    - 50-30-20 method
+    - Brazilian salary
+    - personal finance
+    - expense control
+    - economy
+    - 50 30 20 rule
+    - how to divide salary
+    - budget method
 ---
 
 ## Understanding the [50-30-20 Method](/en/posts/en-the-50-30-20-method-for-budgeting)

@@ -1,22 +1,39 @@
 ---
-title: "Orçamento semanal: guia para quem recebe por semana (2026)"
-description: "Aprenda a montar um orçamento doméstico quando o salário chega toda semana. Use o app FinMoovi e ganhe controle para viver sem apertos e evitar dívidas agora."
-tickerHeadline: "Seu salário semanal sob controle"
-image: "/images/posts/orcamento-semanal-guia-para-quem-recebe-por-semana-2026.webp"
-imageAlt: "Calculadoras, moedas e caderno marrom sobre mesa branca com plantas verdes."
-category: "orcamento"
-locale: "pt"
-tags: ["orçamento semanal","controle de gastos","finanças pessoais","app FinMoovi","receita semanal","orçamento doméstico para quem recebe por semana"]
-author: "FinMoovi"
-publishedAt: 2026-07-27
+title: 'Orçamento semanal: guia para quem recebe por semana (2026)'
+description: >-
+  Aprenda a montar um orçamento doméstico quando o salário chega toda semana.
+  Use o app FinMoovi e ganhe controle para viver sem apertos e evitar dívidas
+  agora.
+tickerHeadline: Seu salário semanal sob controle
+image: /images/posts/orcamento-semanal-guia-para-quem-recebe-por-semana-2026.webp
+category: orcamento
+locale: pt
+tags:
+  - orçamento semanal
+  - controle de gastos
+  - finanças pessoais
+  - app FinMoovi
+  - receita semanal
+  - orçamento doméstico para quem recebe por semana
+author: FinMoovi
+publishedAt: 2026-07-27T00:00:00.000Z
 readingTime: 2
 featured: false
-translationKey: "orcamento-semanal-guia-para-quem-recebe-por-semana-2026"
-scope: "universal"
+translationKey: orcamento-semanal-guia-para-quem-recebe-por-semana-2026
+scope: universal
 seo:
-  metaTitle: "Orçamento semanal: guia para quem recebe por semana (2026)"
-  metaDescription: "Aprenda a montar um orçamento doméstico quando o salário chega toda semana. Use o app FinMoovi e ganhe controle para viver sem apertos e evitar dívidas agora."
-  keywords: ["orçamento semanal","controle de gastos","finanças pessoais","app FinMoovi","receita semanal","orçamento doméstico para quem recebe por semana"]
+  metaTitle: 'Orçamento semanal: guia para quem recebe por semana (2026)'
+  metaDescription: >-
+    Aprenda a montar um orçamento doméstico quando o salário chega toda semana.
+    Use o app FinMoovi e ganhe controle para viver sem apertos e evitar dívidas
+    agora.
+  keywords:
+    - orçamento semanal
+    - controle de gastos
+    - finanças pessoais
+    - app FinMoovi
+    - receita semanal
+    - orçamento doméstico para quem recebe por semana
 ---
 
 Imagine a manhã de segunda‑feira: o alarme toca, você corre para o trabalho, e, ao chegar em casa, abre a caixa de correio e encontra a conta de luz, o boleto do aluguel e o aviso de que o carro precisa de manutenção. No meio desse turbilhão, ainda tem que dividir o dinheiro que acabou de entrar – aquele salário que chega toda sexta‑feira – entre as despesas da casa, da alimentação e ainda reservar um pouco para o futuro. A sensação de não saber para onde foi o último centavo é quase universal, principalmente quando a renda vem em parcelas semanais.

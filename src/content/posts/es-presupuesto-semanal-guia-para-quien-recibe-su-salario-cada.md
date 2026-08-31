@@ -1,22 +1,37 @@
 ---
-title: "Presupuesto semanal: guía para quien recibe su salario cada semana (2026)"
-description: "Aprende a crear un presupuesto semanal cuando tu salario llega cada viernes. Usa FinMoovi y controla tus finanzas para evitar deudas."
-tickerHeadline: "Tu salario semanal bajo control"
-image: "/images/posts/orcamento-semanal-guia-para-quem-recebe-por-semana-2026.webp"
-imageAlt: "Calculadoras, monedas, cuaderno marrón y plantas sobre superficie blanca."
-category: "orcamento"
-locale: "es"
-tags: ["presupuesto semanal","control de gastos","finanzas personales","app FinMoovi","ingreso semanal","presupuesto doméstico para quien recibe por semana"]
-author: "FinMoovi"
-publishedAt: 2026-07-27
+title: 'Presupuesto semanal: guía para quien recibe su salario cada semana (2026)'
+description: >-
+  Aprende a crear un presupuesto semanal cuando tu salario llega cada viernes.
+  Usa FinMoovi y controla tus finanzas para evitar deudas.
+tickerHeadline: Tu salario semanal bajo control
+image: /images/posts/orcamento-semanal-guia-para-quem-recebe-por-semana-2026.webp
+category: orcamento
+locale: es
+tags:
+  - presupuesto semanal
+  - control de gastos
+  - finanzas personales
+  - app FinMoovi
+  - ingreso semanal
+  - presupuesto doméstico para quien recibe por semana
+author: FinMoovi
+publishedAt: 2026-07-27T00:00:00.000Z
 readingTime: 5
 featured: false
-translationKey: "orcamento-semanal-guia-para-quem-recebe-por-semana-2026"
-scope: "universal"
+translationKey: orcamento-semanal-guia-para-quem-recebe-por-semana-2026
+scope: universal
 seo:
-  metaTitle: "Presupuesto semanal: guía para quien recibe su salario cada semana (2026)"
-  metaDescription: "Aprende a crear un presupuesto semanal cuando tu salario llega cada viernes. Usa FinMoovi y controla tus finanzas para evitar deudas."
-  keywords: ["presupuesto semanal","control de gastos","finanzas personales","app FinMoovi","ingreso semanal","presupuesto doméstico para quien recibe por semana"]
+  metaTitle: 'Presupuesto semanal: guía para quien recibe su salario cada semana (2026)'
+  metaDescription: >-
+    Aprende a crear un presupuesto semanal cuando tu salario llega cada viernes.
+    Usa FinMoovi y controla tus finanzas para evitar deudas.
+  keywords:
+    - presupuesto semanal
+    - control de gastos
+    - finanzas personales
+    - app FinMoovi
+    - ingreso semanal
+    - presupuesto doméstico para quien recibe por semana
 ---
 
 Imagine una mañana de lunes: suena el despertador, corre al trabajo y, al volver a casa, abre el buzón y encuentra la factura de la luz, el recibo del alquiler y la notificación de que el coche necesita una reparación. En medio de ese caos, todavía tiene que repartir el dinero que acaba de entrar – ese salario que llega cada viernes – entre los gastos del hogar, la alimentación y, además, reservar un poco para el futuro. La sensación de no saber a dónde se fue el último centavo es casi universal, sobre todo cuando los ingresos llegan en cuotas semanales.

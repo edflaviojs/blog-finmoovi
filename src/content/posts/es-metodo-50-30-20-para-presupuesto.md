@@ -1,20 +1,41 @@
 ---
-title: "Método 50-30-20 para Presupuesto"
-description: "Aprenda a aplicar el método 50-30-20 en su salario brasileño para un presupuesto saludable y alcanzar sus metas financieras."
-image: "/images/posts/metodo-50-30-20-para-orcamento.webp"
-imageAlt: "Un diseño gráfico con texto \"Método 50-30-20\" en un fondo azul con dorado."
-category: "orcamento"
-locale: "es"
-tags: ["presupuesto personal","método 50-30-20","salario brasileño","finanzas personales","control de gastos","economía","regla 50 30 20","como dividir salario","método presupuesto"]
-author: "FinMoovi"
-publishedAt: 2026-06-14
+title: Método 50-30-20 para Presupuesto
+description: >-
+  Aprenda a aplicar el método 50-30-20 en su salario brasileño para un
+  presupuesto saludable y alcanzar sus metas financieras.
+image: /images/posts/metodo-50-30-20-para-orcamento.webp
+category: orcamento
+locale: es
+tags:
+  - presupuesto personal
+  - método 50-30-20
+  - salario brasileño
+  - finanzas personales
+  - control de gastos
+  - economía
+  - regla 50 30 20
+  - como dividir salario
+  - método presupuesto
+author: FinMoovi
+publishedAt: 2026-06-14T00:00:00.000Z
 readingTime: 3
 featured: false
-translationKey: "metodo-50-30-20-para-orcamento"
+translationKey: metodo-50-30-20-para-orcamento
 seo:
-  metaTitle: "Método 50-30-20 para Presupuesto"
-  metaDescription: "Aprenda a aplicar el método 50-30-20 en su salario brasileño para un presupuesto saludable y alcanzar sus metas financieras."
-  keywords: ["presupuesto personal","método 50-30-20","salario brasileño","finanzas personales","control de gastos","economía","regla 50 30 20","como dividir salario","método presupuesto"]
+  metaTitle: Método 50-30-20 para Presupuesto
+  metaDescription: >-
+    Aprenda a aplicar el método 50-30-20 en su salario brasileño para un
+    presupuesto saludable y alcanzar sus metas financieras.
+  keywords:
+    - presupuesto personal
+    - método 50-30-20
+    - salario brasileño
+    - finanzas personales
+    - control de gastos
+    - economía
+    - regla 50 30 20
+    - como dividir salario
+    - método presupuesto
 ---
 
 ## Entendiendo el [Método 50-30-20](/es/posts/es-metodo-50-30-20-para-presupuesto)  

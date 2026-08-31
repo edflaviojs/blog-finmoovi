@@ -1,20 +1,31 @@
 ---
-title: "Planejamento Financeiro para Autônomos"
-description: "Aprenda a gerenciar suas finanças como autônomo e alcance a estabilidade financeira. Dicas práticas e exemplos reais."
-image: "/images/posts/planejamento-financeiro-para-autonomos.webp"
-imageAlt: "Gráfico colorido com linhas onduladas e pontos em tons de azul, verde e amarelo."
-category: "dicas"
-locale: "pt"
-tags: ["planejamento financeiro para autônomos","finanças pessoais","economia","dinheiro"]
-author: "FinMoovi"
-publishedAt: 2026-06-24
+title: Planejamento Financeiro para Autônomos
+description: >-
+  Aprenda a gerenciar suas finanças como autônomo e alcance a estabilidade
+  financeira. Dicas práticas e exemplos reais.
+image: /images/posts/planejamento-financeiro-para-autonomos.webp
+category: dicas
+locale: pt
+tags:
+  - planejamento financeiro para autônomos
+  - finanças pessoais
+  - economia
+  - dinheiro
+author: FinMoovi
+publishedAt: 2026-06-24T00:00:00.000Z
 readingTime: 3
 featured: true
-translationKey: "planejamento-financeiro-para-autonomos"
+translationKey: planejamento-financeiro-para-autonomos
 seo:
-  metaTitle: "Planejamento Financeiro para Autônomos"
-  metaDescription: "Aprenda a gerenciar suas finanças como autônomo e alcance a estabilidade financeira. Dicas práticas e exemplos reais."
-  keywords: ["planejamento financeiro para autônomos","finanças pessoais","economia","dinheiro"]
+  metaTitle: Planejamento Financeiro para Autônomos
+  metaDescription: >-
+    Aprenda a gerenciar suas finanças como autônomo e alcance a estabilidade
+    financeira. Dicas práticas e exemplos reais.
+  keywords:
+    - planejamento financeiro para autônomos
+    - finanças pessoais
+    - economia
+    - dinheiro
 ---
 
 ## [Planejamento](/posts/orcamento-com-salario-minimo-dicas-praticas) Básico

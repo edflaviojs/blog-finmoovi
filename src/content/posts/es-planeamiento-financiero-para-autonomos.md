@@ -1,20 +1,31 @@
 ---
-title: "Planeamiento Financiero para Autónomos"
-description: "Aprende a gestionar tus finanzas como autónomo y alcanza la estabilidad financiera. Consejos prácticos y ejemplos reales."
-image: "/images/posts/planejamento-financeiro-para-autonomos.webp"
-imageAlt: "Gráfico de líneas multicolores con puntos de datos en pantalla oscura con texto."
-category: "dicas"
-locale: "es"
-tags: ["planeamiento financiero para autónomos","finanzas personales","economía","dinero"]
-author: "FinMoovi"
-publishedAt: 2026-06-24
+title: Planeamiento Financiero para Autónomos
+description: >-
+  Aprende a gestionar tus finanzas como autónomo y alcanza la estabilidad
+  financiera. Consejos prácticos y ejemplos reales.
+image: /images/posts/planejamento-financeiro-para-autonomos.webp
+category: dicas
+locale: es
+tags:
+  - planeamiento financiero para autónomos
+  - finanzas personales
+  - economía
+  - dinero
+author: FinMoovi
+publishedAt: 2026-06-24T00:00:00.000Z
 readingTime: 3
 featured: false
-translationKey: "planejamento-financeiro-para-autonomos"
+translationKey: planejamento-financeiro-para-autonomos
 seo:
-  metaTitle: "Planeamiento Financiero para Autónomos"
-  metaDescription: "Aprende a gestionar tus finanzas como autónomo y alcanza la estabilidad financiera. Consejos prácticos y ejemplos reales."
-  keywords: ["planeamiento financiero para autónomos","finanzas personales","economía","dinero"]
+  metaTitle: Planeamiento Financiero para Autónomos
+  metaDescription: >-
+    Aprende a gestionar tus finanzas como autónomo y alcanza la estabilidad
+    financiera. Consejos prácticos y ejemplos reales.
+  keywords:
+    - planeamiento financiero para autónomos
+    - finanzas personales
+    - economía
+    - dinero
 ---
 
 ## Planeamiento Básico

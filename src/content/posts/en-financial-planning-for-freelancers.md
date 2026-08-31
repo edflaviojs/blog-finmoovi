@@ -1,20 +1,31 @@
 ---
-title: "Financial Planning for Freelancers"
-description: "Learn to manage your finances as a freelancer and achieve financial stability. Practical tips and real-life examples."
-image: "/images/posts/planejamento-financeiro-para-autonomos.webp"
-imageAlt: "Blurry graph with multicolored lines and dots on dark blue background with text."
-category: "dicas"
-locale: "en"
-tags: ["financial planning for freelancers","personal finance","economy","money"]
-author: "FinMoovi"
-publishedAt: 2026-06-24
+title: Financial Planning for Freelancers
+description: >-
+  Learn to manage your finances as a freelancer and achieve financial stability.
+  Practical tips and real-life examples.
+image: /images/posts/planejamento-financeiro-para-autonomos.webp
+category: dicas
+locale: en
+tags:
+  - financial planning for freelancers
+  - personal finance
+  - economy
+  - money
+author: FinMoovi
+publishedAt: 2026-06-24T00:00:00.000Z
 readingTime: 3
 featured: false
-translationKey: "planejamento-financeiro-para-autonomos"
+translationKey: planejamento-financeiro-para-autonomos
 seo:
-  metaTitle: "Financial Planning for Freelancers"
-  metaDescription: "Learn to manage your finances as a freelancer and achieve financial stability. Practical tips and real-life examples."
-  keywords: ["financial planning for freelancers","personal finance","economy","money"]
+  metaTitle: Financial Planning for Freelancers
+  metaDescription: >-
+    Learn to manage your finances as a freelancer and achieve financial
+    stability. Practical tips and real-life examples.
+  keywords:
+    - financial planning for freelancers
+    - personal finance
+    - economy
+    - money
 ---
 
 ## Basic [Planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips)
