@@ -1,0 +1,117 @@
+{
+  "slug": "loop-mercado-subindo-depois-de-anos",
+  "formato": "loop16",
+  "term": "O mercado que sobe toda semana",
+  "category": "vida",
+  "keyword": "MERCADO",
+  "situacao": "mercado-subindo",
+  "gancho": "depois-de-anos",
+  "ganchoFamilia": "depois de anos",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "escada",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Depois de anos tentando, descobri isso. Vi o mercado subir.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "tentando",
+          "visual": {
+            "type": "statement",
+            "text": "Mercado subindo todo dia"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "descobri",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escada"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu vi meu carrinho custar mais no mercado da semana.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "carrinho",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escada"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "custar",
+          "visual": {
+            "type": "statement",
+            "text": "Carrinho ficando mais caro"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "E aí comecei a anotar meus gastos e evitei aperto.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "comecei",
+          "visual": {
+            "type": "statement",
+            "text": "Comecei a anotar gastos"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "anotar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escada"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Descobri isso porque meu mercado subiu e eu vi o começo disso.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "Descobri",
+          "visual": {
+            "type": "statement",
+            "text": "Descobri isso no mercado"
+          }
+        },
+        {
+          "anchor": "mercado",
+          "visual": {
+            "type": "statement",
+            "text": "Mercado subindo todo dia"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
