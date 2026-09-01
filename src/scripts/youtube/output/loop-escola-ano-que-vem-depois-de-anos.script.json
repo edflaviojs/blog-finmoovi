@@ -1,0 +1,117 @@
+{
+  "slug": "loop-escola-ano-que-vem-depois-de-anos",
+  "formato": "loop16",
+  "term": "A escola do ano que vem",
+  "category": "vida",
+  "keyword": "ESCOLA",
+  "situacao": "escola-ano-que-vem",
+  "gancho": "depois-de-anos",
+  "ganchoFamilia": "depois de anos",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "relogio",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Depois de anos tentando, descobri isso. Novembro chegou lá em casa.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "tentando",
+          "visual": {
+            "type": "statement",
+            "text": "Novembro chegou em casa"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "descobri",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "relogio"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu vi a matrícula chegando e meu peito já apertou.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "matrícula",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "relogio"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "chegando",
+          "visual": {
+            "type": "statement",
+            "text": "A matrícula apertou"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então eu comecei a guardar um pouquinho sempre que sobrava.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "comecei",
+          "visual": {
+            "type": "statement",
+            "text": "Comecei a guardar"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "guardar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "relogio"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Agora, quando novembro se aproxima, eu lembro por que descobri isso.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "novembro",
+          "visual": {
+            "type": "statement",
+            "text": "Quando novembro volta"
+          }
+        },
+        {
+          "anchor": "aproxima",
+          "visual": {
+            "type": "statement",
+            "text": "Novembro chegou em casa"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
