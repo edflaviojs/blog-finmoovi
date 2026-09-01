@@ -50,6 +50,6 @@ Credit score is a note from 0 to 1000 that credit bureaus give to you. This note
 
 With a high score you can get:
 - Lower [interest](/en/glossario/en-interest) rates on [financing](/en/glossario/en-financing)
-- Higher credit card limits
+- Higher [credit card](/en/posts/en-digital-bank-vs-major-bank-which-is-worth-it-in-2026) limits
 - Easier approval for rentals
 - Better conditions on loans

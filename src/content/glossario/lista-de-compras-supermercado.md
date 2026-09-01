@@ -20,7 +20,7 @@ seo:
 
 ## Por que a lista de compras vira vilã do orçamento
 
-A maioria das pessoas sente aquele aperto no fim do mês quando percebe que o gasto no supermercado passou do esperado. Você entra na loja com a intenção de comprar apenas o essencial, mas sai com sacolas cheias de itens que nem lembrava de precisar. Esse descompasso acontece porque a lista de compras, que deveria ser um guia, acaba se transformando em um convite ao impulso. Quando não há controle, cada item extra vira um ponto a mais no seu fluxo de caixa, e o saldo que deveria cobrir outras contas desaparece como água.
+A maioria das pessoas sente aquele aperto no fim do mês quando percebe que o gasto no supermercado passou do esperado. Você entra na loja com a intenção de comprar apenas o essencial, mas sai com sacolas cheias de itens que nem lembrava de precisar. Esse descompasso acontece porque a [lista de compras](/posts/como-cortar-custos-no-supermercado-e-ainda-comer-bem), que deveria ser um guia, acaba se transformando em um convite ao impulso. Quando não há controle, cada item extra vira um ponto a mais no seu [fluxo de caixa](/glossario/fluxo-de-caixa), e o saldo que deveria cobrir outras contas desaparece como água.
 
 ![Por que a lista de compras vira vilã do orçamento](/images/glossario/lista-de-compras-supermercado-inline-1.webp)
 
@@ -49,7 +49,7 @@ O FinMoovi traz um modo compras pensado exatamente para quem quer transformar a 
 
 Além disso, o app suporta **multimoeda**, permitindo que você registre compras em diferentes moedas (como dólares ou euros) e veja o impacto no seu fluxo de caixa convertido para a moeda que você usa no dia a dia. O **fluxo de caixa** atualizado mostra, em tempo real, quanto ainda resta para outras despesas, enquanto os **relatórios** mensais destacam quais categorias consumiram mais do seu orçamento.  
 
-Se você tem cartão de crédito, o FinMoovi sincroniza a fatura e avisa quando o limite está próximo de ser atingido, evitando surpresas na conta. O **modo compras** exibe o total acumulado da lista em tempo real, permitindo que você ajuste a compra antes de chegar ao caixa. Por fim, os **lembretes** e **alertas de saldo** avisam quando o gasto ultrapassa o limite que você definiu para aquele mês.
+Se você tem cartão de [crédito](/glossario/credito), o FinMoovi sincroniza a fatura e avisa quando o limite está próximo de ser atingido, evitando surpresas na conta. O **modo compras** exibe o total acumulado da lista em tempo real, permitindo que você ajuste a compra antes de chegar ao caixa. Por fim, os **lembretes** e **[alertas](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto) de saldo** avisam quando o gasto ultrapassa o limite que você definiu para aquele mês.
 
 ## Dicas práticas para reduzir o gasto
 
@@ -57,7 +57,7 @@ Se você tem cartão de crédito, o FinMoovi sincroniza a fatura e avisa quando 
 
 **Dica prática:** use a captura inteligente para registrar a nota imediatamente ao voltar para casa. Assim, você tem a lista completa e pode comparar os preços com os que encontrou online, identificando oportunidades de economia para a próxima visita.  
 
-**Dica prática:** aproveite a funcionalidade de multimoeda ao fazer compras em lojas que aceitam cartões internacionais. Converta o valor gasto para a sua moeda de referência dentro do app e veja o impacto real no seu orçamento, evitando a sensação de “gastei demais” por causa da taxa de câmbio.  
+**Dica prática:** aproveite a funcionalidade de multimoeda ao fazer compras em lojas que aceitam cartões internacionais. Converta o valor gasto para a sua moeda de referência dentro do app e veja o impacto real no seu orçamento, evitando a sensação de “gastei demais” por causa da taxa de [câmbio](/glossario/cambio).  
 
 Além dessas sugestões, mantenha a lista sempre visível no celular. Quando o item não estiver na lista, pergunte a si mesmo se realmente precisa dele. Essa pausa de alguns segundos costuma ser suficiente para evitar compras impulsivas.
 
@@ -71,7 +71,7 @@ Se a sua meta for economizar o equivalente a um aluguel, o relatório mensal des
 
 Mesmo sem conexão à internet, o FinMoovi funciona como **PWA** (Progressive Web App), armazenando as listas e as notas localmente. Quando você se reconecta, tudo sincroniza automaticamente, garantindo que o fluxo de caixa esteja sempre atualizado.  
 
-Os **alertas de saldo** avisam quando o limite de crédito está próximo de ser atingido, enquanto os **lembretes de vencimento de fatura** evitam juros indesejados. Você pode programar notificações diárias para revisar a lista antes de ir ao supermercado, reforçando o hábito de comprar apenas o necessário.
+Os **alertas de saldo** avisam quando o limite de crédito está próximo de ser atingido, enquanto os **lembretes de vencimento de fatura** evitam [juros](/glossario/juros) indesejados. Você pode programar notificações diárias para revisar a lista antes de ir ao supermercado, reforçando o hábito de comprar apenas o necessário.
 
 ## Comece hoje
 

@@ -8,6 +8,7 @@ locale: "pt"
 tags: ["como reduzir gastos fixos mensais","finanças pessoais","economia","dinheiro"]
 author: "FinMoovi"
 publishedAt: 2026-05-26
+updatedAt: 2026-09-01
 readingTime: 3
 featured: false
 translationKey: "como-reduzir-gastos-fixos-mensais-de-forma-eficaz"

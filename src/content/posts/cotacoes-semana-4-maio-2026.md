@@ -7,6 +7,7 @@ category: "cotacoes"
 tags: ["cotações", "dólar", "euro", "mercado financeiro", "selic"]
 author: "FinMoovi"
 publishedAt: 2026-05-27
+updatedAt: 2026-09-01
 readingTime: 3
 featured: false
 locale: "pt"

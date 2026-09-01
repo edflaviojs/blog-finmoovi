@@ -47,4 +47,4 @@ Las transferencias bancarias instantáneas son el sistema de pagos creado por el
 
 ## Transferencias bancarias instantáneas y control [financiero](/es/posts/es-pierdes-el-control-de-los-gastos-cuando-viajas-usando)
 
-Las transferencias bancarias instantáneas facilitan el seguimiento de [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo) porque todas las transacciones quedan registradas en el extracto. Apps como [FinMoovi](/es/posts/es-5-alternativas-al-mobills-en-2026) categorizan automáticamente tus transferencias para que sepas exactamente a dónde va tu dinero.
+Las transferencias bancarias instantáneas facilitan el [seguimiento](/es/posts/es-por-que-no-veo-progreso-en-mi-ahorro) de [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo) porque todas las transacciones quedan registradas en el extracto. Apps como [FinMoovi](/es/posts/es-5-alternativas-al-mobills-en-2026) categorizan automáticamente tus transferencias para que sepas exactamente a dónde va tu dinero.

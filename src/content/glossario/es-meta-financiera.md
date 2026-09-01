@@ -13,7 +13,7 @@ readingTime: 2
 
 ## ¿Qué es Meta Financiera?
 
-Meta financiera es un objetivo concreto para tu dinero. No es "quiero ahorrar más" — es "quiero juntar **€1.800** hasta diciembre de 2025 para dar entrada al coche". Cuanto más específica, mayor la probabilidad de lograrla.
+Meta financiera es un objetivo concreto para tu dinero. No es "quiero [ahorrar](/es/posts/es-ahorra-en-la-farmacia-sin-sacrificios-guia-practica-2026) más" — es "quiero juntar **€1.800** hasta diciembre de 2025 para dar entrada al coche". Cuanto más específica, mayor la probabilidad de lograrla.
 
 ## Cómo definir buenas metas (método SMART)
 

@@ -37,4 +37,4 @@ If you own 100 shares of a company that pays $0.40 per share in dividends:
 
 ## Dividend strategy
 
-Many investors build portfolios focused on dividends to generate passive monthly income. With $100,000 invested in good payers, it's possible to receive $600‑$1,000/month.
+Many investors build portfolios focused on dividends to generate passive [monthly income](/en/glossario/en-monthly-income). With $100,000 invested in good payers, it's possible to receive $600‑$1,000/month.

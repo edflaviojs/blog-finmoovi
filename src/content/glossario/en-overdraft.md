@@ -13,7 +13,7 @@ readingTime: 2
 
 ## What is Overdraft?
 
-Overdraft is a [credit](/en/glossario/en-credit) limit that the bank makes available on your checking account. When your balance goes negative, you automatically use the overdraft — and pay very high [interest](/en/glossario/en-interest) rates for it.
+Overdraft is a [credit](/en/glossario/en-credit) limit that the bank makes available on your [checking account](/en/posts/en-digital-bank-vs-major-bank-which-is-worth-it-in-2026). When your balance goes negative, you automatically use the overdraft — and pay very high [interest](/en/glossario/en-interest) rates for it.
 
 ## Why is it so dangerous
 

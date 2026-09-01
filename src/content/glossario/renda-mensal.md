@@ -31,7 +31,7 @@ Sem saber exatamente quanto entra, fica impossível montar um orçamento que fun
 
 ## Como calcular sua renda mensal  
 
-1. **Liste todas as fontes de entrada** – salário, trabalhos temporários, renda de aluguel, dividendos, mesada, etc.  
+1. **Liste todas as fontes de entrada** – salário, trabalhos temporários, renda de aluguel, [dividendos](/glossario/dividendos), mesada, etc.  
 2. **Some os valores** – use a mesma frequência (mensal). Se algo for pago quinzenalmente, multiplique por dois; se for anual, divida por 12.  
 3. **Inclua receitas variáveis** – estime uma média dos últimos três a seis meses para ganhos que mudam de mês a mês, como freelance ou vendas de objetos usados.  
 
@@ -51,12 +51,12 @@ Esses deslizes costumam levar a orçamentos que “não fecham” no final do m�
 
 ## Ferramentas que ajudam a controlar a renda  
 
-- **Fluxo de caixa** – mostra entradas e saídas em tempo real, permitindo ver se o saldo está positivo ou negativo.  
+- **[Fluxo de caixa](/glossario/fluxo-de-caixa)** – mostra entradas e saídas em tempo real, permitindo ver se o saldo está positivo ou negativo.  
 - **Relatórios mensais** – gráficos que resumem a evolução da renda ao longo dos meses, úteis para identificar tendências.  
-- **Multimoeda** – suporte a diferentes moedas (BRL, USD, EUR), essencial para quem recebe em mais de uma moeda ou viaja com frequência.  
-- **Cartões de crédito e fatura** – integração que traz o extrato direto para o app, facilitando o controle dos gastos ligados ao cartão.  
+- **Multimoeda** – suporte a diferentes moedas (BRL, USD, EUR), essencial para quem recebe em mais de uma [moeda](/glossario/moeda) ou viaja com frequência.  
+- **Cartões de [crédito](/glossario/credito) e fatura** – integração que traz o extrato direto para o app, facilitando o controle dos gastos ligados ao cartão.  
 - **Modo compras** – cria listas de supermercado ou de compras online, mostrando o total em tempo real à medida que você adiciona itens.  
-- **Lembretes e alertas de saldo** – notificam quando o saldo está baixo ou quando uma conta está próxima do vencimento.  
+- **Lembretes e [alertas](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto) de saldo** – notificam quando o saldo está baixo ou quando uma conta está próxima do vencimento.  
 - **Offline / PWA / sincronização** – funciona mesmo sem internet e salva tudo na nuvem, garantindo acesso em qualquer dispositivo.  
 
 Essas funcionalidades, quando usadas juntas, transformam a gestão da renda de um esforço manual para um processo quase automático.
@@ -75,6 +75,6 @@ Além dessas, mantenha os alertas de saldo ativados; eles avisam quando o limite
 
 1. Abra o FinMoovi e, em menos de cinco minutos, tire uma foto da sua última folha de pagamento ou grave a voz dizendo “salário de X”.  
 2. Confirme a categorização automática e veja sua renda mensal aparecer no painel de fluxo de caixa.  
-3. Ative o alerta de saldo baixo e crie uma lista de compras para a próxima semana.  
+3. Ative o alerta de saldo baixo e crie uma [lista de compras](/posts/como-cortar-custos-no-supermercado-e-ainda-comer-bem) para a próxima semana.  
 
 Com esses passos rápidos, você já tem a base para controlar sua renda, evitar dívidas e começar a planejar metas reais. Boa gestão!

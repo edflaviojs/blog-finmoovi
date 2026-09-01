@@ -33,7 +33,7 @@ Muchas personas sienten que su renta mensual “se escapa” sin saber exactamen
 - No registran cada gasto y terminan gastando más de lo que creen.
 - Mezclan dinero de distintas monedas o fuentes sin un control claro.
 - No separan los gastos fijos (alquiler, servicios) de los variables (salidas, compras impulsivas).
-- Olvidan fechas de pago de tarjetas de crédito y terminan pagando intereses.
+- Olvidan fechas de pago de tarjetas de [crédito](/es/glossario/es-credito) y terminan pagando intereses.
 
 **Consejo práctico:** revisa cada fin de semana los movimientos de la semana anterior; una revisión corta evita sorpresas al final del mes.
 
@@ -55,13 +55,13 @@ Este cálculo te da una visión clara de cuánto puedes destinar a cada categor�
 
 ## Herramientas digitales que facilitan el control
 
-Hoy en día no necesitas una hoja de cálculo complicada ni una libreta de papel. Las apps de finanzas personales hacen el trabajo pesado por ti. Entre sus funciones más útiles están:
+Hoy en día no necesitas una hoja de cálculo complicada ni una libreta de papel. Las apps de [finanzas personales](/es/posts/es-5-alternativas-a-organizze-en-2026-opciones-para-administrar) hacen el trabajo pesado por ti. Entre sus funciones más útiles están:
 
 - **Captura inteligente**: toma una foto del recibo o graba la voz y la app reconoce automáticamente el monto y la categoría.  
 - **Categorización automática**: el algoritmo asigna cada gasto a grupos como “alimentación”, “transporte” o “entretenimiento” sin que tengas que hacerlo manualmente.  
-- **Multimoneda**: puedes registrar ingresos y gastos en diferentes monedas (dólares, euros, etc.) y la app los convierte al tipo de cambio que elijas.  
-- **Flujo de caja e informes**: visualiza en gráficos cuánto entra y sale cada mes, detecta tendencias y ajusta tu presupuesto.  
-- **Planificación mensual y metas**: define objetivos (ahorrar para un viaje, pagar una deuda) y la app te muestra el progreso día a día.  
+- **Multimoneda**: puedes registrar ingresos y gastos en diferentes monedas (dólares, euros, etc.) y la app los convierte al tipo de [cambio](/es/glossario/es-cambio) que elijas.  
+- **[Flujo de caja](/es/glossario/es-flujo-de-caja) e informes**: visualiza en gráficos cuánto entra y sale cada mes, detecta tendencias y ajusta tu presupuesto.  
+- **Planificación mensual y metas**: define objetivos ([ahorrar](/es/posts/es-ahorra-en-la-farmacia-sin-sacrificios-guia-practica-2026) para un viaje, pagar una deuda) y la app te muestra el progreso día a día.  
 - **Tarjetas de crédito y facturación**: sincroniza tus tarjetas, revisa el resumen y evita cargos inesperados.  
 - **Modo compras**: crea una lista, añade precios y la app muestra el total en tiempo real mientras vas de compras.  
 - **Recordatorios y alertas de saldo**: recibe notificaciones cuando el saldo está bajo o cuando una factura está próxima a vencer.  
@@ -71,7 +71,7 @@ Hoy en día no necesitas una hoja de cálculo complicada ni una libreta de papel
 
 FinMoovi reúne todas esas funciones en una sola herramienta, diseñada como la conversación que tendrías con un amigo que siempre está al tanto de tus finanzas. Imagina que acabas de pagar el alquiler y, sin abrir la app, dices “FinMoovi, registra este gasto”. La app captura la foto del recibo, lo reconoce, lo categoriza como “vivienda” y lo resta automáticamente de tu saldo disponible. Si recibes un pago en euros, lo introduces y FinMoovi lo convierte al tipo de cambio que hayas configurado, manteniendo tu presupuesto coherente.
 
-Además, el **flujo de caja** de FinMoovi te muestra en un solo vistazo cuánto dinero tienes para gastar este mes, cuánto está reservado para ahorros y cuánto está pendiente de facturas. Los **informes mensuales** se generan con un clic y te explican en lenguaje sencillo si estás por encima o por debajo de tu objetivo de ahorro. Si sueles olvidar la fecha de vencimiento de la tarjeta, la app te envía una alerta 48 horas antes, evitando intereses costosos.
+Además, el **flujo de caja** de FinMoovi te muestra en un solo vistazo cuánto dinero tienes para gastar este mes, cuánto está reservado para ahorros y cuánto está pendiente de facturas. Los **informes mensuales** se generan con un clic y te explican en lenguaje sencillo si estás por encima o por debajo de tu objetivo de [ahorro](/es/glossario/es-ahorro). Si sueles olvidar la fecha de vencimiento de la tarjeta, la app te envía una alerta 48 horas antes, evitando intereses costosos.
 
 ## Consejos prácticos para mejorar tu renta mensual
 

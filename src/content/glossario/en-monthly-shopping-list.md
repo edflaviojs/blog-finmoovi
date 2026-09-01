@@ -32,13 +32,13 @@ You’ve probably felt it: you walk into the grocery aisle with a vague idea of 
 
 ## What a monthly shopping list really is
 
-A monthly shopping list is more than a piece of paper with “milk, bread, eggs” scribbled on it. It’s a strategic tool that gathers every household need for the next 30 days, groups them by priority, and aligns them with the money you have earmarked for food, cleaning supplies, and personal care. When you treat the list as a planning document, you can compare the projected total with your cash flow, adjust quantities, or postpone non‑essential items until the next month.
+A monthly shopping list is more than a piece of paper with “milk, bread, eggs” scribbled on it. It’s a strategic tool that gathers every household need for the next 30 days, groups them by priority, and aligns them with the money you have earmarked for food, cleaning supplies, and personal care. When you treat the list as a [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) document, you can compare the projected total with your [cash flow](/en/glossario/en-cash-flow), adjust quantities, or postpone non‑essential items until the next month.
 
 Key elements of an effective list:
 
 - **Core staples** – items you use daily or weekly (e.g., rice, beans, coffee).  
 - **Seasonal or occasional items** – things you need only a few times a month (e.g., a birthday cake, a new shampoo).  
-- **Budget estimate** – a rough cost based on recent prices, helping you see if the list fits your spending limit.  
+- **Budget estimate** – a rough cost based on recent prices, helping you see if the list fits your [spending limit](/en/glossario/en-spending-limit).  
 
 ## How a smart shopping mode changes the game
 
@@ -48,11 +48,11 @@ FinMoovi’s “shopping mode” turns the traditional list into a live dashboar
 
 
 
-Benefits you’ll notice instantly:
+[Benefits](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026) you’ll notice instantly:
 
 - **Real‑time total** – see how each addition impacts your monthly ceiling, preventing surprise overspend.  
-- **Automatic categorization** – the app knows whether a purchase is “groceries,” “household,” or “personal care,” so you don’t have to tag it manually.  
-- **Multi‑currency support** – travel or shop online abroad? Prices convert on the fly, keeping your budget consistent.  
+- **[Automatic categorization](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end)** – the app knows whether a purchase is “groceries,” “household,” or “personal care,” so you don’t have to tag it manually.  
+- **[Multi‑currency](/en/posts/en-digital-bank-vs-major-bank-which-is-worth-it-in-2026) support** – travel or shop online abroad? Prices convert on the fly, keeping your budget consistent.  
 - **Sync across devices** – add items on your phone, review on a tablet, and get alerts on your laptop without re‑entering data.  
 
 ## Practical tips to keep your list under control

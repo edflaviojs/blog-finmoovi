@@ -20,7 +20,7 @@ seo:
 
 ## ¿Por qué el flujo de caja te quita el sueño?
   
-Muchos de nosotros sentimos que el dinero entra y sale sin control: el alquiler, la cuenta de luz, el café diario y, de repente, el saldo del banco parece un rompecabezas. Esa incertidumbre se vuelve más aguda cuando llega la [factura de la tarjeta](/es/glossario/es-factura-de-la-tarjeta) de [crédito](/es/glossario/es-credito) o cuando queremos ahorrar para un viaje pero no sabemos cuánto podemos destinar cada mes. Sin una visión clara de lo que realmente ingresa y sale, cualquier gasto inesperado se siente como una sorpresa desagradable.
+Muchos de nosotros sentimos que el dinero entra y sale sin control: el alquiler, la cuenta de luz, el café diario y, de repente, el saldo del banco parece un rompecabezas. Esa incertidumbre se vuelve más aguda cuando llega la [factura de la tarjeta](/es/glossario/es-factura-de-la-tarjeta) de [crédito](/es/glossario/es-credito) o cuando queremos [ahorrar](/es/posts/es-ahorra-en-la-farmacia-sin-sacrificios-guia-practica-2026) para un viaje pero no sabemos cuánto podemos destinar cada mes. Sin una visión clara de lo que realmente ingresa y sale, cualquier gasto inesperado se siente como una sorpresa desagradable.
 
 ## Qué es un flujo de caja en Excel
   

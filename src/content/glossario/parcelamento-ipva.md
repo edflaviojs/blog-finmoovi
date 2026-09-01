@@ -28,23 +28,23 @@ Se você tem um carro, provavelmente já sentiu aquele aperto no bolso quando ch
 
 ## Como o parcelamento funciona na prática  
 
-Quando você opta por parcelar, a dívida é transformada em parcelas mensais que entram no seu fluxo de caixa como qualquer outra conta fixa. Cada parcela inclui o valor original mais um acréscimo que pode ser comparado ao preço de um café por dia. O calendário de vencimento costuma ser alinhado ao mês de pagamento do imposto, mas pode variar de acordo com o estado.  
+Quando você opta por parcelar, a dívida é transformada em parcelas mensais que entram no seu [fluxo de caixa](/glossario/fluxo-de-caixa) como qualquer outra conta fixa. Cada parcela inclui o valor original mais um acréscimo que pode ser comparado ao preço de um café por dia. O calendário de vencimento costuma ser alinhado ao mês de pagamento do imposto, mas pode variar de acordo com o estado.  
 
 - **Primeira parcela:** costuma ser paga logo após a escolha do parcelamento.  
 - **Demais parcelas:** são cobradas nos meses subsequentes, até a quitação total.  
-- **Juros:** são aplicados sobre o saldo restante, como acontece em um empréstimo.  
+- **Juros:** são aplicados sobre o saldo restante, como acontece em um [empréstimo](/glossario/emprestimo).  
 
 Se alguma parcela for paga atrasada, a multa – que pode equivaler a alguns dias de salário – será adicionada ao próximo boleto, aumentando ainda mais o custo total.
 
 ## Vantagens e armadilhas do parcelamento  
 
-Dividir o IPVA traz benefícios claros:  
+Dividir o IPVA traz [benefícios](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) claros:  
 
 ![Vantagens e armadilhas do parcelamento  ](/images/glossario/parcelamento-ipva-inline-3.webp)
 
 
 
-- **Alívio imediato:** você não precisa desembolsar uma quantia que poderia ser usada para outras prioridades, como a reserva de emergência.  
+- **Alívio imediato:** você não precisa desembolsar uma quantia que poderia ser usada para outras prioridades, como a [reserva de emergência](/ferramentas/calculadora-reserva).  
 - **Planejamento mensal:** as parcelas entram como despesas fixas, facilitando a visualização no orçamento.  
 
 Por outro lado, há riscos que precisam ser monitorados:  
@@ -74,13 +74,13 @@ O FinMoovi reúne todas essas funcionalidades em um só lugar, como um amigo que
 
 ## Dicas práticas para não se perder nas parcelas  
 
-**Dica prática:** configure um alerta 5 dias antes do vencimento de cada parcela e mantenha o valor reservado em uma conta de poupança de fácil acesso.  
+**Dica prática:** configure um alerta 5 dias antes do vencimento de cada parcela e mantenha o valor reservado em uma conta de [poupança](/glossario/poupanca) de fácil acesso.  
 
 **Dica prática:** use a funcionalidade de categorização automática para agrupar todas as despesas do carro (IPVA, seguro, manutenção) e reveja o total mensalmente; assim você identifica se está gastando mais que o esperado.  
 
 **Dica prática:** aproveite o modo compras para criar uma lista de “despesas do carro” e, ao adicionar o IPVA parcelado, veja o impacto no seu orçamento antes de confirmar a compra.  
 
-Seguindo essas práticas, você transforma o parcelamento do IPVA de um risco em uma ferramenta de planejamento financeiro.
+Seguindo essas práticas, você transforma o parcelamento do IPVA de um risco em uma ferramenta de [planejamento financeiro](/glossario/planejamento-financeiro).
 
 ## Comece hoje  
 

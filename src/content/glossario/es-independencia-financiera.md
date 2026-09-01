@@ -47,7 +47,7 @@ Depende de cuánto ahorras:
 4. Invierte consistentemente (aportes mensuales)  
 5. Reinvierte todos los rendimientos  
 6. Aumenta los ingresos (promociones, ingresos extra)  
-7. Haz seguimiento del progreso mensualmente  
+7. Haz seguimiento del [progreso](/es/posts/es-por-que-no-veo-progreso-en-mi-ahorro) mensualmente  
 
 ## Independencia financiera parcial
 

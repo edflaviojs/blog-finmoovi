@@ -27,7 +27,7 @@ Você já se pegou pensando quanto o Neymar ganha por mês enquanto tenta fechar
 
 ## Entendendo a renda mensal
 
-Renda mensal é simplesmente o total que entra na sua conta a cada ciclo de 30 dias, seja salário, renda de aluguel ou ganhos de freelancer. Não há mistério: é a soma de tudo que você recebe antes de qualquer desconto. Quando falamos da “renda mensal do Neymar”, estamos falando de um valor bruto que inclui salário, patrocínios e direitos de imagem. Para quem tem um salário que paga o preço de um café por dia, a diferença é gigantesca, mas o conceito básico – entrada de dinheiro – é o mesmo.
+[Renda mensal](/glossario/renda-mensal) é simplesmente o total que entra na sua conta a cada ciclo de 30 dias, seja salário, renda de aluguel ou ganhos de freelancer. Não há mistério: é a soma de tudo que você recebe antes de qualquer desconto. Quando falamos da “renda mensal do Neymar”, estamos falando de um valor bruto que inclui salário, patrocínios e direitos de imagem. Para quem tem um salário que paga o preço de um café por dia, a diferença é gigantesca, mas o conceito básico – entrada de dinheiro – é o mesmo.
 
 ## Comparando a renda do Neymar com seu bolso
 
@@ -39,7 +39,7 @@ Ao colocar a renda do Neymar em perspectiva, percebemos que ele recebe “cerca 
 
 ## Como transformar números grandes em controle real
 
-A primeira ação para deixar a “renda mensal do Neymar” fora da sua mente e colocar o foco no seu fluxo de caixa é registrar tudo que entra e sai. Anotar cada gasto, mesmo que seja um lanche rápido, ajuda a criar um mapa real do seu dinheiro. Sem esse mapa, fica impossível saber onde cortar ou onde investir. É aqui que um aplicativo como o FinMoovi entra como um amigo que entende de finanças e facilita o registro diário.
+A primeira ação para deixar a “renda mensal do Neymar” fora da sua mente e colocar o foco no seu [fluxo de caixa](/glossario/fluxo-de-caixa) é registrar tudo que entra e sai. Anotar cada gasto, mesmo que seja um lanche rápido, ajuda a criar um mapa real do seu dinheiro. Sem esse mapa, fica impossível saber onde cortar ou onde investir. É aqui que um aplicativo como o FinMoovi entra como um amigo que entende de finanças e facilita o registro diário.
 
 ## Captura inteligente de despesas
 
@@ -67,15 +67,15 @@ Com os dados já capturados, o app gera um fluxo de caixa que mostra o saldo di�
 
 ## Planejamento mensal e metas alcançáveis
 
-Definir metas – como “economizar o equivalente a duas vezes o preço de um plano de internet” – fica mais fácil quando o app permite criar orçamentos mensais. Você estabelece limites para cada categoria e recebe alertas quando está próximo de ultrapassar. O planejamento mensal transforma a renda fixa em um plano de ação, não em um número abstrato.  
+Definir metas – como “economizar o equivalente a duas vezes o preço de um plano de internet” – fica mais fácil quando o app permite criar orçamentos mensais. Você estabelece limites para cada categoria e recebe alertas quando está próximo de ultrapassar. O planejamento mensal transforma a [renda fixa](/glossario/renda-fixa) em um plano de ação, não em um número abstrato.  
 
-- Metas de poupança personalizadas  
+- Metas de [poupança](/glossario/poupanca) personalizadas  
 - Limites por categoria (ex.: alimentação, transporte)  
 - Revisão automática ao final do mês  
 
 ## Cartões de crédito e fatura sob controle
 
-Muitos esquecem que o cartão de crédito pode virar um vilão se a fatura não for acompanhada. FinMoovi sincroniza suas contas de cartão, mostrando o gasto acumulado e a data de vencimento. Assim, você evita juros inesperados e paga o que realmente consumiu.  
+Muitos esquecem que o [cartão de crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena) pode virar um vilão se a fatura não for acompanhada. FinMoovi sincroniza suas contas de cartão, mostrando o gasto acumulado e a data de vencimento. Assim, você evita juros inesperados e paga o que realmente consumiu.  
 
 - Importação de fatura automática  
 - Visualização de gastos por estabelecimento  
@@ -83,7 +83,7 @@ Muitos esquecem que o cartão de crédito pode virar um vilão se a fatura não 
 
 ## Modo compras: lista + total em tempo real
 
-Antes de ir ao supermercado, crie uma lista de compras no app. À medida que adiciona itens, o FinMoovi soma o total estimado, permitindo que você veja se está dentro do orçamento. Quando o total se aproxima do limite, o app avisa, ajudando a evitar compras por impulso.  
+Antes de ir ao supermercado, crie uma [lista de compras](/posts/como-cortar-custos-no-supermercado-e-ainda-comer-bem) no app. À medida que adiciona itens, o FinMoovi soma o total estimado, permitindo que você veja se está dentro do orçamento. Quando o total se aproxima do limite, o app avisa, ajudando a evitar compras por impulso.  
 
 - Lista de compras com preços integrados  
 - Total em tempo real  

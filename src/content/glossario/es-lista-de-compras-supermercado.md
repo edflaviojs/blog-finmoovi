@@ -20,7 +20,7 @@ seo:
 
 ## El dolor de la lista de compras sin control
 
-¿Te ha pasado que llegas al supermercado con la mejor intención, pero al final del día el carrito está lleno de cosas que no necesitabas y la cuenta supera el presupuesto de una semana? Ese momento de “¡¿Cómo gasté tanto?!”, suele venir después de una compra impulsiva, de no saber cuánto queda disponible y de no haber registrado lo que ya se había comprado. El resultado es una factura que parece un rompecabezas y un presupuesto familiar que se desbalancea, generando estrés y la sensación de que el dinero se escapa sin que puedas controlarlo.
+¿Te ha pasado que llegas al supermercado con la mejor intención, pero al final del día el carrito está lleno de cosas que no necesitabas y la cuenta supera el presupuesto de una semana? Ese momento de “¡¿Cómo gasté tanto?!”, suele venir después de una compra impulsiva, de no saber cuánto queda disponible y de no haber registrado lo que ya se había comprado. El resultado es una factura que parece un rompecabezas y un [presupuesto familiar](/es/posts/es-como-regalar-en-el-dia-del-padre-gastando-poco-7-ideas-que) que se desbalancea, generando estrés y la sensación de que el dinero se escapa sin que puedas controlarlo.
 
 ![El dolor de la lista de compras sin control](/images/glossario/lista-de-compras-supermercado-inline-1.webp)
 
@@ -28,7 +28,7 @@ seo:
 
 ## Qué es una lista de compras supermercado
 
-Una lista de compras supermercado es simplemente un registro de los productos que planeas adquirir en tu visita al mercado. En teoría, sirve para evitar compras innecesarias y para mantener el gasto dentro de lo previsto. En la práctica, la mayoría de las personas la escribe en papel, la guarda en el móvil como una nota o simplemente la lleva en la cabeza. Cuando la lista no está vinculada a tu flujo de caja, cada artículo añadido se convierte en un gasto “ciego”, sin saber cómo impacta en tus finanzas mensuales. Además, la falta de actualización en tiempo real hace que sea fácil olvidar lo que ya está en el carrito y volver a comprar lo mismo.
+Una lista de compras supermercado es simplemente un registro de los productos que planeas adquirir en tu visita al mercado. En teoría, sirve para evitar compras innecesarias y para mantener el gasto dentro de lo previsto. En la práctica, la mayoría de las personas la escribe en papel, la guarda en el móvil como una nota o simplemente la lleva en la cabeza. Cuando la lista no está vinculada a tu [flujo de caja](/es/glossario/es-flujo-de-caja), cada artículo añadido se convierte en un gasto “ciego”, sin saber cómo impacta en tus finanzas mensuales. Además, la falta de actualización en tiempo real hace que sea fácil olvidar lo que ya está en el carrito y volver a comprar lo mismo.
 
 ## Cómo FinMoovi transforma esa experiencia
 
@@ -44,10 +44,10 @@ Imagina que tu lista de compras sea una extensión de tu presupuesto y que, mien
 - **Categorización automática**: el sistema reconoce cada producto y lo asigna a la categoría correcta (ej. “leche” → alimentos).  
 - **Multimoneda** (BRL/USD/EUR): convierte cualquier gasto a tu moneda base, útil si compras en diferentes divisas.  
 - **Flujo de caja e informes**: visualiza ingresos y egresos en gráficos simples, sin jerga técnica.  
-- **Planificación mensual / metas**: establece un límite de gasto para la lista de supermercado y recibe alertas cuando te acercas.  
-- **Tarjetas de crédito / factura**: vincula tus tarjetas y la app muestra el saldo disponible y la fecha de vencimiento.  
+- **Planificación mensual / metas**: establece un límite de gasto para la lista de supermercado y recibe [alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no) cuando te acercas.  
+- **Tarjetas de [crédito](/es/glossario/es-credito) / factura**: vincula tus tarjetas y la app muestra el saldo disponible y la fecha de vencimiento.  
 - **Modo compras** (lista + total en tiempo real): ve el total acumulado mientras marcas productos, evitando sorpresas al llegar a la caja.  
-- **Recordatorios / alertas de saldo**: notificaciones que te avisan si estás a punto de exceder tu presupuesto o si una oferta es relevante.  
+- **Recordatorios / [alertas de saldo](/es/posts/es-como-organizar-tu-dinero-con-una-app-facil-de-usar)**: notificaciones que te avisan si estás a punto de exceder tu presupuesto o si una oferta es relevante.  
 - **Offline / PWA / sincronización**: la aplicación funciona como una página web progresiva (PWA), lo que permite usarla sin conexión y sincronizar los datos automáticamente cuando haya internet.
 
 ## Consejos prácticos para ahorrar y organizar
@@ -56,7 +56,7 @@ Imagina que tu lista de compras sea una extensión de tu presupuesto y que, mien
 
 **Consejo práctico:** usa la función de captura inteligente para registrar cada compra en el momento. Si olvidas anotar algo, simplemente toma una foto del ticket al salir; la app lo procesará y actualizará tu lista sin que tengas que escribir nada.
 
-**Consejo práctico:** habilita las alertas de saldo y programa un recordatorio para revisar la lista antes de pasar por la caja. La notificación te mostrará cuánto te queda disponible y te permitirá eliminar artículos que no son esenciales.
+**Consejo práctico:** habilita las [alertas](/es/posts/es-olvidaste-pagar-una-factura-y-te-quedaste-sin-dinero-como) de saldo y programa un recordatorio para revisar la lista antes de pasar por la caja. La notificación te mostrará cuánto te queda disponible y te permitirá eliminar artículos que no son esenciales.
 
 Además, sigue estos pasos para maximizar el beneficio de tu lista:
 

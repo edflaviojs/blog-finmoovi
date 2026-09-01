@@ -24,7 +24,7 @@ Muchas veces te encuentras revisando el último extracto del banco y piensas: �
 
 ## ¿Qué es una renta mensual vitalicia?
   
-Una renta mensual vitalicia es un ingreso periódico que se recibe de por vida, sin importar cuánto tiempo vivas. En otras palabras, es como si tuvieras una “pensión” que se paga cada mes, pero el dinero proviene de una inversión o de un producto financiero que genera ese flujo. No se trata de un salario, sino de un pago que se mantiene mientras tú estés vivo, lo que elimina la preocupación de quedarte sin recursos en la tercera edad.
+Una [renta mensual](/es/glossario/es-renta-mensual) vitalicia es un ingreso periódico que se recibe de por vida, sin importar cuánto tiempo vivas. En otras palabras, es como si tuvieras una “pensión” que se paga cada mes, pero el dinero proviene de una inversión o de un producto financiero que genera ese flujo. No se trata de un salario, sino de un pago que se mantiene mientras tú estés vivo, lo que elimina la preocupación de quedarte sin recursos en la tercera edad.
 
 ![¿Te preocupa no tener suficiente dinero al llegar a la jubilación?](/images/glossario/renda-mensal-vitalicia-inline-1.webp)
 
@@ -35,7 +35,7 @@ Una renta mensual vitalicia es un ingreso periódico que se recibe de por vida, 
   - **Capital acumulado que se transforma en pagos**: al llegar a cierta edad, el capital ahorrado se convierte en una serie de pagos mensuales.
   - **Rentas de propiedades**: alquilar un inmueble y recibir el alquiler cada mes también cuenta como renta vitalicia.
 
-Cada una de estas opciones convierte un monto único o una serie de aportes en un ingreso constante. La clave está en elegir un producto que se ajuste a tu perfil de riesgo y a tus necesidades de liquidez.
+Cada una de estas opciones convierte un monto único o una serie de aportes en un ingreso constante. La clave está en elegir un producto que se ajuste a tu perfil de riesgo y a tus necesidades de [liquidez](/es/glossario/es-liquidez).
 
 ![Cómo se genera esa renta](/images/glossario/renda-mensal-vitalicia-inline-3.webp)
 
@@ -43,7 +43,7 @@ Cada una de estas opciones convierte un monto único o una serie de aportes en u
 
 ## Ventajas y riesgos que debes conocer
   
-**Ventaja principal:** la tranquilidad de saber que tendrás un ingreso mensual sin depender de un empleo. Además, la renta vitalicia suele estar protegida contra la inflación, lo que mantiene el poder adquisitivo con el tiempo.  
+**Ventaja principal:** la tranquilidad de saber que tendrás un ingreso mensual sin depender de un empleo. Además, la renta vitalicia suele estar protegida contra la [inflación](/es/glossario/es-inflacion), lo que mantiene el poder adquisitivo con el tiempo.  
 
 **Riesgos:** si la inversión subyacente pierde valor, el monto de la renta puede disminuir. También hay costos de gestión y, en algunos casos, penalizaciones por retirar dinero antes de tiempo. Por eso es fundamental entender bien las condiciones y comparar varias alternativas antes de decidir.
 
@@ -56,11 +56,11 @@ Cada una de estas opciones convierte un monto único o una serie de aportes en u
   Cuando empieces a planificar tu renta vitalicia, una herramienta como FinMoovi puede simplificar mucho el proceso. La app permite:
   - **Captura inteligente**: toma una foto del recibo o graba una nota de voz y la app categoriza automáticamente el gasto.
   - **Multimoneda**: maneja diferentes monedas (USD, EUR, etc.) sin complicaciones.
-  - **Flujo de caja e informes**: visualiza tus ingresos y egresos en tiempo real y genera reportes mensuales.
-  - **Planificación mensual y metas**: establece objetivos de ahorro y sigue su progreso.
+  - **[Flujo de caja](/es/glossario/es-flujo-de-caja) e informes**: visualiza tus ingresos y egresos en tiempo real y genera reportes mensuales.
+  - **[Planificación mensual](/es/posts/es-como-organizar-tu-dinero-con-una-app-facil-de-usar) y metas**: establece objetivos de ahorro y sigue su progreso.
   - **Tarjetas de crédito y facturas**: sincroniza tus tarjetas para ver el saldo y la fecha de vencimiento.
   - **Modo compras**: crea listas de la compra y ve el total en tiempo real mientras añades productos.
-  - **Recordatorios y alertas de saldo**: recibe notificaciones cuando el saldo esté bajo o se acerque una factura.
+  - **Recordatorios y [alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no) de saldo**: recibe notificaciones cuando el saldo esté bajo o se acerque una factura.
   - **Offline / PWA / sincronización**: usa la app sin conexión y tus datos se actualizan cuando vuelvas a estar en línea.
 
 Con estas funciones, puedes seguir de cerca cuánto estás ahorrando para tu renta vitalicia, identificar gastos innecesarios y ajustar tu plan sin perder tiempo.

@@ -28,7 +28,7 @@ You open your banking app and see that the money you earned this month barely co
 
 ## What "renda mensal do Neymar" really means
 
-The phrase “renda mensal do Neymar” is just a flashy way to talk about a very high monthly salary—think of a top‑tier athlete or a global influencer. In real terms, it’s an income that could cover several years of living expenses for an average family. By comparing your budget to that kind of cash flow, you can see the gap between dreaming and actually planning.
+The phrase “renda mensal do Neymar” is just a flashy way to talk about a very high monthly salary—think of a top‑tier athlete or a global influencer. In real terms, it’s an income that could cover several years of living expenses for an average family. By comparing your budget to that kind of [cash flow](/en/glossario/en-cash-flow), you can see the gap between dreaming and actually [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips).
 
 - **Scale:** If Neymar’s monthly earnings could buy a house in a prime city, your current paycheck might only cover a modest apartment.
 - **Stability:** Even a superstar’s income can fluctuate with contracts, endorsements, or injuries—so the concept teaches us to expect variability.
@@ -70,17 +70,17 @@ All these tools work together to give you the same kind of financial oversight a
 
 **Practical tip:** *Capture every expense the moment it happens.* Use the photo or voice capture in FinMoovi right after buying a coffee or paying for gas. This habit prevents forgotten small purchases that add up to a big leak.
 
-**Practical tip:** *Set a “Neymar‑level” buffer.* Aim to keep an emergency fund equal to about three months of essential costs—think of it as a mini version of a superstar’s safety net. FinMoovi’s goal tracker can remind you weekly until you reach it.
+**Practical tip:** *Set a “Neymar‑level” buffer.* Aim to keep an [emergency fund](/en/glossario/en-emergency-fund) equal to about three months of essential costs—think of it as a mini version of a superstar’s safety net. FinMoovi’s goal tracker can remind you weekly until you reach it.
 
 **Practical tip:** *Review the monthly report on a fixed day.* Choose a day, like the first Saturday of each month, to open the cash‑flow report. Spot any category that consistently exceeds your target and adjust the next month’s budget accordingly.
 
 Additional habits that reinforce these tips:
 
 - **Batch similar expenses:** Group grocery trips, transport fares, and entertainment outings to see the real impact.
-- **Use multi‑currency tracking:** If you shop online abroad, let FinMoovi convert the amount automatically so you always compare apples to apples.
-- **Leverage reminders:** Turn on low‑balance alerts to avoid overdraft fees, which can erode your savings faster than any impulse buy.
+- **Use [multi‑currency](/en/posts/en-digital-bank-vs-major-bank-which-is-worth-it-in-2026) tracking:** If you shop online abroad, let FinMoovi convert the amount automatically so you always compare apples to apples.
+- **Leverage reminders:** Turn on low‑balance alerts to avoid [overdraft](/en/glossario/en-overdraft) fees, which can erode your savings faster than any impulse buy.
 
-By applying these straightforward actions, you’ll gradually shrink the distance between your paycheck and the “Neymar‑style” financial comfort zone.
+By applying these straightforward actions, you’ll gradually shrink the distance between your paycheck and the “Neymar‑style” [financial comfort zone](/en/glossario/en-financial-comfort-zone).
 
 ## Start today
 

@@ -8,6 +8,7 @@ locale: "pt"
 tags: ["como organizar finanças de casal","finanças pessoais","economia","dinheiro"]
 author: "FinMoovi"
 publishedAt: 2026-05-27
+updatedAt: 2026-09-01
 readingTime: 3
 featured: false
 translationKey: "organizar-financas-de-casal"

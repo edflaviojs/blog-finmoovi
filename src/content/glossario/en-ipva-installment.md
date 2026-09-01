@@ -20,7 +20,7 @@ seo:
 
 ## The headache of the vehicle tax bill
 
-You’ve just received the notice that your car’s annual tax is due. The amount feels like the price of a weekend getaway, and the deadline is only a few weeks away. You start juggling the family budget, the grocery list, and the upcoming rent payment, wondering how you’ll fit this big expense without blowing your cash flow. The stress is real, and you know you’ll end up paying a penalty if you miss the deadline.
+You’ve just received the notice that your car’s annual tax is due. The amount feels like the price of a weekend getaway, and the deadline is only a few weeks away. You start juggling the family budget, the grocery list, and the upcoming rent payment, wondering how you’ll fit this big expense without blowing your [cash flow](/en/glossario/en-cash-flow). The stress is real, and you know you’ll end up paying a penalty if you miss the deadline.
 
 ![The headache of the vehicle tax bill](/images/glossario/parcelamento-ipva-inline-1.webp)
 
@@ -28,7 +28,7 @@ You’ve just received the notice that your car’s annual tax is due. The amoun
 
 ## What is “parcelamento ipva”?
 
-“Parcelamento ipva” is the option to split the vehicle tax into smaller, monthly installments instead of paying the whole amount at once. Think of it as turning a one‑time hit that equals about one month’s rent into a series of payments that look more like a regular utility bill. The government allows you to choose the number of months, usually up to twelve, and adds a modest interest rate. The goal is to make the tax more manageable, but it also means you have to keep track of an extra recurring charge.
+“Parcelamento ipva” is the option to split the vehicle tax into smaller, monthly installments instead of paying the whole amount at once. Think of it as turning a one‑time hit that equals about one month’s rent into a series of payments that look more like a regular utility bill. The government allows you to choose the number of months, usually up to twelve, and adds a modest [interest](/en/glossario/en-interest) rate. The goal is to make the tax more manageable, but it also means you have to keep track of an extra recurring charge.
 
 ## Why the usual way can mess up your cash flow
 
@@ -53,15 +53,15 @@ Imagine you’re at the bank, the cashier hands you a slip that says “IPVA –
 - Updates your cash‑flow forecast, showing exactly how the new payment will affect the balance for the next twelve months.
 - Sends you a reminder a day before the next due date, so you never miss a payment.
 
-All of this happens offline too; you can capture the receipt in a subway and the data syncs later when you’re back online. The result is a clean, automated record that lives alongside your other expenses, credit‑card bills, and savings goals.
+All of this happens offline too; you can capture the receipt in a subway and the data syncs later when you’re back online. The result is a clean, automated record that lives alongside your other expenses, credit‑card bills, and [savings](/en/glossario/en-savings) goals.
 
 ## Practical tips to master the installment plan
 
 **Practical tip:** Capture every IPVA receipt the moment you get it. A quick photo or voice note eliminates the “I‑might‑have‑forgotten” doubt.
 
-**Practical tip:** Set the installment amount as a recurring expense in FinMoovi’s monthly planning view. Treat it like a subscription so it automatically appears in your budget each month.
+**Practical tip:** Set the installment amount as a [recurring expense](/en/glossario/en-recurring-expense) in FinMoovi’s monthly [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) view. Treat it like a subscription so it automatically appears in your budget each month.
 
-**Practical tip:** Use the multi‑currency converter to see the real cost in your primary currency. This prevents surprise gaps when exchange rates shift.
+**Practical tip:** Use the [multi‑currency](/en/posts/en-digital-bank-vs-major-bank-which-is-worth-it-in-2026) converter to see the real cost in your primary currency. This prevents surprise gaps when exchange rates shift.
 
 When you follow these habits, the installment plan becomes just another line item, not a hidden surprise. Here’s a quick checklist you can copy‑paste into the app’s notes section:
 

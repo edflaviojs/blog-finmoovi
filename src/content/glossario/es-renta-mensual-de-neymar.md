@@ -20,7 +20,7 @@ seo:
 
 ## ¿Por qué te preocupa la “renta mensual de Neymar”?
 
-Te levantas, revisas tu cuenta y ves que el saldo apenas cubre el alquiler y el café de la mañana. Mientras tanto, los titulares hablan de la “renta mensual de Neymar” como si fuera una cifra que cualquiera debería alcanzar. Esa comparación te hace sentir que tus finanzas están estancadas y que nunca podrás llegar a ese nivel. El dolor es real: no sabes cuánto dinero entra y sale, y cada gasto inesperado te deja sin margen de maniobra.
+Te levantas, revisas tu cuenta y ves que el saldo apenas cubre el alquiler y el café de la mañana. Mientras tanto, los titulares hablan de la “[renta mensual](/es/glossario/es-renta-mensual) de Neymar” como si fuera una cifra que cualquiera debería alcanzar. Esa comparación te hace sentir que tus finanzas están estancadas y que nunca podrás llegar a ese nivel. El dolor es real: no sabes cuánto dinero entra y sale, y cada gasto inesperado te deja sin margen de maniobra.
 
 ![¿Por qué te preocupa la “renta mensual de Neymar”?](/images/glossario/renda-mensal-do-neymar-inline-1.webp)
 
@@ -32,9 +32,9 @@ Cuando los medios mencionan la “renta mensual de Neymar”, están hablando de
 
 ## Cómo la falta de control financiero te afecta a ti
 
-- No sabes cuánto puedes ahorrar al mes porque no tienes una visión clara de tus ingresos y gastos.
+- No sabes cuánto puedes [ahorrar](/es/posts/es-ahorra-en-la-farmacia-sin-sacrificios-guia-practica-2026) al mes porque no tienes una visión clara de tus ingresos y gastos.
 - Los gastos impulsivos aparecen como sorpresas desagradables al final del ciclo.
-- Te cuesta establecer metas, como comprar una casa o viajar, porque no puedes proyectar tu flujo de caja.
+- Te cuesta establecer metas, como comprar una casa o viajar, porque no puedes proyectar tu [flujo de caja](/es/glossario/es-flujo-de-caja).
 
 ![Cómo la falta de control financiero te afecta a ti](/images/glossario/renda-mensal-do-neymar-inline-3.webp)
 
@@ -54,9 +54,9 @@ Imagina que un amigo te recomienda una app que, con una foto del recibo o una no
 - **Multimoneda:** maneja diferentes monedas sin que tengas que hacer conversiones manuales; cada transacción se muestra en la moneda original y en una vista consolidada.
 - **Flujo de caja e informes:** visualiza un gráfico que muestra ingresos versus gastos, con filtros por semana, mes o año.
 - **Planificación mensual y metas:** define objetivos (ahorrar el equivalente al precio de un alquiler) y la app te indica cuánto debes reservar cada día.
-- **Tarjetas de crédito y facturas:** enlaza tus tarjetas; la app importa los movimientos y te avisa cuando la factura está por vencer.
+- **Tarjetas de [crédito](/es/glossario/es-credito) y facturas:** enlaza tus tarjetas; la app importa los movimientos y te avisa cuando la factura está por vencer.
 - **Modo compras:** crea una lista de la compra; mientras añades ítems, ves el total en tiempo real y evitas pasarte del presupuesto.
-- **Recordatorios y alertas de saldo:** recibe notificaciones cuando el saldo baja de un nivel que tú estableces.
+- **Recordatorios y [alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no) de saldo:** recibe notificaciones cuando el saldo baja de un nivel que tú estableces.
 - **Offline / PWA / sincronización:** la versión web progresiva (PWA) funciona en cualquier navegador y guarda datos sin conexión, sincronizando al volver a internet.
 
 ## Tips prácticos para manejar ingresos variables
@@ -64,7 +64,7 @@ Imagina que un amigo te recomienda una app que, con una foto del recibo o una no
 - **Divide y vencerás:** separa tus ingresos en “fijos” (salario) y “variables” (freelance, bonos). Asigna los fijos a gastos esenciales y reserva una parte de los variables para metas.
 - **Usa la regla del 50/30/20:** destina el 50 % a necesidades básicas, el 30 % a deseos y el 20 % a ahorro o inversión. FinMoovi te muestra si estás cumpliendo esa regla.
 - **Revisa la categoría “entretenimiento”:** si notas que el gasto supera el 10 % de tus ingresos, ajusta la lista de compras o busca alternativas más económicas.
-- **Aprovecha la alerta de saldo bajo:** configura la notificación cuando tu saldo sea equivalente al costo de un café al día; así evitarás quedarte sin liquidez.
+- **Aprovecha la alerta de saldo bajo:** configura la notificación cuando tu saldo sea equivalente al costo de un café al día; así evitarás quedarte sin [liquidez](/es/glossario/es-liquidez).
 - **Planifica con antelación:** antes de un viaje, usa la función de metas para crear un objetivo del equivalente a dos alquileres; la app te mostrará cuánto debes ahorrar semanalmente.
 
 ## Empieza hoy
