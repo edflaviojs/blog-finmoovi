@@ -6,6 +6,7 @@ description: >-
   caminho para sua aposentadoria.
 tickerHeadline: 'Previdência 2026: vale a pena?'
 image: /images/posts/previdencia-privada-2026-vale-a-pena-guia-pratico.webp
+imageAlt: "Caderno marrom aberto, calculadora e moedas espalhadas sobre superfície branca com folhas verdes."
 category: investimentos
 locale: pt
 tags:

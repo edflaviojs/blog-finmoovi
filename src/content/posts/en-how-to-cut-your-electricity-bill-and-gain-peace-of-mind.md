@@ -3,6 +3,7 @@ title: "How to Cut Your Electricity Bill and Gain Peace of Mind"
 description: "Simple, practical tips to lower home energy costs, use FinMoovi, and turn your electricity bill into a budgeting ally."
 tickerHeadline: "The electricity bill that hurts your wal"
 image: "/images/posts/como-cortar-a-conta-de-luz-e-ganhar-tranquilidade.webp"
+imageAlt: "Brown notebook, calculator, coins, and green plants on white marble surface."
 category: "dicas"
 locale: "en"
 tags: ["energy saving tips","personal finance","budgeting","electricity bill","home utilities","FinMoovi"]

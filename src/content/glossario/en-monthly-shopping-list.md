@@ -4,6 +4,7 @@ definition: "What monthly shopping list is and how it shows up in your everyday 
 title: "monthly shopping list - Financial Glossary"
 description: "What monthly shopping list is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/lista-de-compras-do-mes.webp"
+imageAlt: "Gold coins, rising arrow, and plant in jar on blue background"
 category: "basico"
 tags: ["monthly shopping list", "glossary", "finance"]
 author: "FinMoovi"

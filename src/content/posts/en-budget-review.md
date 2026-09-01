@@ -5,6 +5,7 @@ description: >-
   to adjust your spending and investments to achieve a more secure and
   prosperous life.
 image: /images/posts/revisao-de-orcamento.webp
+imageAlt: "Three smiling people review documents and a tablet at a wooden table."
 category: dicas
 tags:
   - budget review

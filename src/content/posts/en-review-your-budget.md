@@ -4,6 +4,7 @@ description: >-
   Discover the importance of reviewing your budget mid-year and learn how to
   make adjustments to achieve your financial goals.
 image: /images/posts/revisite-seu-orcamento.webp
+imageAlt: "Brown notebook, calculator, and coins on white marble with green leaves."
 category: dicas
 tags:
   - budget review

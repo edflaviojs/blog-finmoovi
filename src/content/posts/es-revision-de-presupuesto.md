@@ -5,6 +5,7 @@ description: >-
   objetivos financieros. Consejos prácticos y ejemplos para ayudarte a gestionar
   tus gastos e inversiones.
 image: /images/posts/revisao-de-orcamento.webp
+imageAlt: "Tres personas sonrientes revisan documentos financieros en una mesa con tablet y taza."
 category: dicas
 tags:
   - presupuesto

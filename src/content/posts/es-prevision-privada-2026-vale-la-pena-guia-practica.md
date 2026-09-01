@@ -6,6 +6,7 @@ description: >-
   mejor camino para tu jubilación.
 tickerHeadline: 'Previsión 2026: ¿vale la pena?'
 image: /images/posts/previdencia-privada-2026-vale-a-pena-guia-pratico.webp
+imageAlt: "Cuaderno marrón, calculadoras y monedas sobre fondo blanco con hojas verdes."
 category: investimentos
 locale: es
 tags:

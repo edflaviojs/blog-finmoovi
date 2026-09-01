@@ -6,6 +6,7 @@ description: >-
   your retirement.
 tickerHeadline: 'Private pension 2026: worth it?'
 image: /images/posts/previdencia-privada-2026-vale-a-pena-guia-pratico.webp
+imageAlt: "Orange notebook, calculators, coins, and green leaves on white marble surface."
 category: investimentos
 locale: en
 tags:

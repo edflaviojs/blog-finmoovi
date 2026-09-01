@@ -3,6 +3,7 @@ title: "Como cortar a conta de luz e ganhar tranquilidade"
 description: "Descubra, em linguagem simples, estratégias reais para economizar energia em casa, usar o FinMoovi e transformar a conta de luz em aliada do seu orçamento."
 tickerHeadline: "A conta de luz que pesa no bolso"
 image: "/images/posts/como-cortar-a-conta-de-luz-e-ganhar-tranquilidade.webp"
+imageAlt: "Caderno marrom, calculadora, moedas e plantas sobre superfície branca de mármore."
 category: "dicas"
 locale: "pt"
 tags: ["formas de economizar energia","finanças pessoais","economia","dinheiro"]

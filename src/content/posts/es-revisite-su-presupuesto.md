@@ -4,6 +4,7 @@ description: >-
   Revisar su presupuesto en la mitad del año es crucial para evaluar el progreso
   financiero y hacer ajustes necesarios para alcanzar los objetivos financieros.
 image: /images/posts/revisite-seu-orcamento.webp
+imageAlt: "Cuaderno marrón, calculadora, monedas y hojas verdes sobre fondo blanco."
 category: dicas
 tags:
   - presupuesto

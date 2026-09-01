@@ -4,6 +4,7 @@ definition: "O que é lista de compras do mês e como isso aparece no seu dia a 
 title: "lista de compras do mês - Glossário Financeiro"
 description: "O que é lista de compras do mês e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/lista-de-compras-do-mes.webp"
+imageAlt: "Pilhas de moedas douradas, gráfico de crescimento e planta em frasco sobre fundo azul."
 category: "basico"
 tags: ["lista de compras do mês", "glossário", "finanças"]
 author: "FinMoovi"

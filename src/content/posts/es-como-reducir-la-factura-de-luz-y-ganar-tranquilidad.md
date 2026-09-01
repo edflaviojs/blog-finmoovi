@@ -3,6 +3,7 @@ title: "Cómo reducir la factura de luz y ganar tranquilidad"
 description: "Descubre, en lenguaje sencillo, estrategias reales para ahorrar energía en casa, usar FinMoovi y convertir la factura de luz en aliada de tu presupuesto."
 tickerHeadline: "La factura de luz que pesa en tu bolsill"
 image: "/images/posts/como-cortar-a-conta-de-luz-e-ganhar-tranquilidade.webp"
+imageAlt: "Cuaderno marrón, calculadora, monedas y plantas sobre fondo blanco."
 category: "dicas"
 locale: "es"
 tags: ["formas de ahorrar energía","finanzas personales","economía","dinero"]

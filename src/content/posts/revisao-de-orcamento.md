@@ -4,6 +4,7 @@ description: >-
   Revisite seu orçamento no meio do ano e ajuste suas finanças para alcançar
   seus objetivos.
 image: /images/posts/revisao-de-orcamento.webp
+imageAlt: "Três pessoas sorrindo em mesa com tablet, documentos, planta e xícara."
 category: dicas
 tags:
   - orçamento
