@@ -1,0 +1,220 @@
+{
+  "slug": "viral-eT8YV0tnWMI",
+  "term": "Perda em curso",
+  "category": "mindset",
+  "keyword": "Perda",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Quanto *dinheiro você deixa escapar* enquanto a sua perda continua todo mês?"
+  },
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "ampulheta",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Quanto dinheiro você deixa escapar enquanto a sua perda continua todo mês? Cem reais por mês já fazem diferença.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "dinheiro escapando"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "escapar",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          }
+        },
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "number",
+            "text": "R$ 100/mês"
+          },
+          "sfx": "coin"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu sei como é. A gente paga as contas, resolve o mercado e deixa esse dinheiro pra depois.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "gente",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          }
+        },
+        {
+          "anchor": "contas",
+          "visual": {
+            "type": "statement",
+            "text": "contas todo mês"
+          }
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "deixa pra depois"
+          },
+          "sfx": "thud"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Só que quinhentos reais por mês viram sessenta mil reais saindo do seu bolso em dez anos.",
+      "durationSec": 6.5,
+      "shots": [
+        {
+          "anchor": "quinhentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500/mês"
+          }
+        },
+        {
+          "anchor": "viram",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 60000,
+            "prefix": "R$"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "bolso",
+          "visual": {
+            "type": "icon",
+            "icon": "chart-down"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei esses quinhentos reais na calculadora do FinMoovi. Ela mostrou cento e quatorze mil oitocentos e noventa reais no Tesouro Selic.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "joguei",
+          "visual": {
+            "type": "app",
+            "app": "calculadora",
+            "note": "simulação com R$500 por mês"
+          }
+        },
+        {
+          "anchor": "mostrou",
+          "visual": {
+            "type": "number",
+            "text": "R$ 114.890"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "Tesouro",
+          "visual": {
+            "type": "statement",
+            "text": "Tesouro Selic"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu número? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 4.2,
+      "shots": [
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          }
+        },
+        {
+          "anchor": "Procura",
+          "visual": {
+            "type": "statement",
+            "text": "descubra seu valor"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Você ainda tem tempo pra começar, mas cada mês parado deixa dinheiro pra trás. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "Você",
+          "visual": {
+            "type": "icon",
+            "icon": "clock"
+          }
+        },
+        {
+          "anchor": "cada",
+          "visual": {
+            "type": "statement",
+            "text": "cada mês conta"
+          }
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "icon",
+            "icon": "money"
+          }
+        },
+        {
+          "anchor": "outros",
+          "visual": {
+            "type": "statement",
+            "text": "controle é essencial"
+          },
+          "sfx": "alert"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja seu número agora",
+    "target": "app"
+  },
+  "totalDurationSec": 41.5
+}
