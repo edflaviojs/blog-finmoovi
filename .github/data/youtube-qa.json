@@ -844,5 +844,23 @@
     ],
     "veredito": "**1. O LOOP — Nota: 4/10**  \nO primeiro quadro mostra “Novembro chegou em casa” e o último também, mas não é exatamente a mesma composição: muda o enquadramento/estado visual e o contexto anterior não fecha perfeitamente. Dá para perceber a repetição, mas não parece um loop invisível.\n\n**2. A FAIXA DE BAIXO — Nota: 8/10**  \nA parte inferior está quase vazia. As legendas ficam acima da área crítica, então não há grande risco de a interface cobrir informação importante.\n\n**3. TEXTO POR CIMA DE TEXTO — Nota: 5/10**  \nAlgumas legendas inferiores parecem quebradas ou com palavras destacadas no meio da frase (“descobri”, “chegando”, “aproxima”), criando sensação de sobreposição/confusão.\n\n**4. LEGIBILIDADE — Nota: 8/10**  \nOs textos principais são grandes e têm bom contraste. As legendas menores poderiam ser um pouco maiores para leitura rápida no celular.\n\n**5. A TELA ESTÁ VIVA OU VAZIA? — Nota: 6/10**  \nHá bastante espaço vazio no fundo roxo. O estilo combina com a identidade, mas alguns quadros ficam visualmente parados demais.\n\n**6. COERÊNCIA — Nota: 8/10**  \nOs quadros parecem fazer parte do mesmo vídeo, com identidade visual consistente e uma sequência narrativa compreensível.\n\n**7. TESTE CENTRAL — Nota: 6/10**  \nParece mais uma sequência de slides animados do que um vídeo profissional, porque muitos quadros dependem apenas de troca de textos e cards estáticos.\n\nNOTA GERAL: 6,5  \nPROBLEMA 1: O loop não é invisível: o primeiro e o último quadro repetem a frase, mas não parecem continuar um ao outro naturalmente (0.1s e 16.3s).  \nPROBLEMA 2: As legendas pequenas no meio inferior parecem quebradas e podem atrapalhar a leitura (2.3s, 4.7s e 14.1s).  \nPROBLEMA 3: Muitos quadros têm pouco elemento visual além do texto, deixando sensação de slide (7s e 11.7s).  \nPRIMEIRA COISA A MUDAR: Fazer o último quadro terminar exatamente na mesma composição do primeiro, criando um reinício imperceptível.",
     "quando": "2026-09-01T09:35:25.368Z"
+  },
+  {
+    "slug": "loop-mercado-subindo-depois-de-anos",
+    "formato": "loop16",
+    "nota": 7,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      2.2,
+      4.3,
+      6.5,
+      8.6,
+      10.8,
+      12.9,
+      15
+    ],
+    "veredito": "1. **O LOOP — 8/10**  \nPrimeiro e último quadro têm a mesma ideia e o mesmo card principal, no mesmo lugar. Porém, o texto menor muda: começa com “Depois de anos” e termina com “o começo disso.” Isso pode denunciar o reinício.\n\n2. **A FAIXA DE BAIXO — 6/10**  \nHá texto importante relativamente baixo em vários quadros. Principalmente as frases pequenas na parte inferior podem ser cobertas pela interface do Shorts/Reels.\n\n3. **TEXTO POR CIMA DE TEXTO — 7/10**  \nNão vejo frases claramente sobrepostas. O problema mais próximo disso está no quadro **8, 15s**, onde o texto menor fica visualmente muito próximo da composição principal. No quadro **5, 8,6s**, a seta também interfere no texto inferior.\n\n4. **LEGIBILIDADE — 7/10**  \nOs textos principais são grandes e contrastados. Já as legendas menores, como “Depois de anos” e “E aí comecei”, são pequenas e têm contraste mais fraco para uma tela de celular.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — 6/10**  \nExiste bastante espaço vazio, especialmente na metade inferior dos quadros. O fundo decorativo ajuda, mas ainda dá uma sensação de área sobrando.\n\n6. **COERÊNCIA — 8,5/10**  \nOs oito quadros parecem claramente pertencer ao mesmo vídeo: mesma identidade visual, cores, tipografia e evolução do gráfico. A história também avança de forma compreensível.\n\n7. **TESTE CENTRAL — 5,5/10**  \n**Pelos quadros parados, parece mais uma sequência de slides animáveis do que um vídeo profissional**, principalmente porque cada cena é muito estática e baseada em cards.\n\n**NOTA GERAL: 7**\n**PROBLEMA 1: textos pequenos e baixos, principalmente nos quadros 1, 5, 6 e 7**\n**PROBLEMA 2: o loop não é totalmente invisível porque o texto secundário muda entre 0,1s e 15s**\n**PROBLEMA 3: muito espaço vazio na parte inferior e pouca informação visual em alguns quadros**\n**PRIMEIRA COISA A MUDAR: subir e aumentar as legendas inferiores e fazer o primeiro e o último quadro terem exatamente a mesma composição visual**",
+    "quando": "2026-09-01T09:40:13.763Z"
   }
 ]
