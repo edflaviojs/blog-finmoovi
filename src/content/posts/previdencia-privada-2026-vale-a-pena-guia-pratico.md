@@ -1,22 +1,47 @@
 ---
-title: "Previdência privada 2026: vale a pena? Guia prático"
-description: "Descubra se a previdência privada ainda rende em 2026, compare com outras opções e veja riscos, custos e simulações para decidir e escolher o melhor caminho para sua aposentadoria."
-tickerHeadline: "Previdência 2026: vale a pena?"
-image: "/images/posts/previdencia-privada-2026-vale-a-pena-guia-pratico.webp"
-imageAlt: "Casal analisa documentos e tablet em mesa branca, com xícara e planta ao fundo."
-category: "investimentos"
-locale: "pt"
-tags: ["previdência privada","2026","investimento","aposentadoria","custos","riscos","comparação","previdência privada vale a pena","pgbl ou vgbl","previdência ou investir"]
-author: "FinMoovi"
-publishedAt: 2026-07-22
+title: 'Previdência privada 2026: vale a pena? Guia prático'
+description: >-
+  Descubra se a previdência privada ainda rende em 2026, compare com outras
+  opções e veja riscos, custos e simulações para decidir e escolher o melhor
+  caminho para sua aposentadoria.
+tickerHeadline: 'Previdência 2026: vale a pena?'
+image: /images/posts/previdencia-privada-2026-vale-a-pena-guia-pratico.webp
+category: investimentos
+locale: pt
+tags:
+  - previdência privada
+  - '2026'
+  - investimento
+  - aposentadoria
+  - custos
+  - riscos
+  - comparação
+  - previdência privada vale a pena
+  - pgbl ou vgbl
+  - previdência ou investir
+author: FinMoovi
+publishedAt: 2026-07-22T00:00:00.000Z
 readingTime: 6
 featured: false
-translationKey: "previdencia-privada-2026-vale-a-pena-guia-pratico"
-scope: "br-only"
+translationKey: previdencia-privada-2026-vale-a-pena-guia-pratico
+scope: br-only
 seo:
-  metaTitle: "Previdência privada 2026: vale a pena? Guia prático"
-  metaDescription: "Descubra se a previdência privada ainda rende em 2026, compare com outras opções e veja riscos, custos e simulações para decidir e escolher o melhor caminho para sua aposentadoria."
-  keywords: ["previdência privada","2026","investimento","aposentadoria","custos","riscos","comparação","previdência privada vale a pena","pgbl ou vgbl","previdência ou investir"]
+  metaTitle: 'Previdência privada 2026: vale a pena? Guia prático'
+  metaDescription: >-
+    Descubra se a previdência privada ainda rende em 2026, compare com outras
+    opções e veja riscos, custos e simulações para decidir e escolher o melhor
+    caminho para sua aposentadoria.
+  keywords:
+    - previdência privada
+    - '2026'
+    - investimento
+    - aposentadoria
+    - custos
+    - riscos
+    - comparação
+    - previdência privada vale a pena
+    - pgbl ou vgbl
+    - previdência ou investir
 ---
 
 ## O que é [previdência privada](/glossario/previdencia-privada)?

@@ -1,19 +1,21 @@
 ---
-title: "Budget Review"
-description: "Review your budget to get back on track with your financial goals. Learn how to adjust your spending and investments to achieve a more secure and prosperous life."
-image: "/images/posts/revisao-de-orcamento.webp"
-imageAlt: "Blurry financial chart with green and orange lines on dark blue background."
-category: "dicas"
+title: Budget Review
+description: >-
+  Review your budget to get back on track with your financial goals. Learn how
+  to adjust your spending and investments to achieve a more secure and
+  prosperous life.
+image: /images/posts/revisao-de-orcamento.webp
+category: dicas
 tags:
-  - "budget review"
-  - "financial planning"
-  - "expense tracking"
-  - "investment adjustment"
-  - "financial goals"
-author: "FinMoovi"
-publishedAt: 2026-06-23
-locale: "en"
-translationKey: "revisao-de-orcamento"
+  - budget review
+  - financial planning
+  - expense tracking
+  - investment adjustment
+  - financial goals
+author: FinMoovi
+publishedAt: 2026-06-23T00:00:00.000Z
+locale: en
+translationKey: revisao-de-orcamento
 featured: false
 draft: false
 translate: true

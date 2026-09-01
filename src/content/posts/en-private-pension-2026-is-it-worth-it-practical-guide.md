@@ -1,21 +1,46 @@
 ---
-title: "Private pension 2026: is it worth it? Practical guide"
-description: "Find out if private pension still yields in 2026, compare with other options and see risks, costs and simulations to decide and choose the best path for your retirement."
-tickerHeadline: "Private pension 2026: worth it?"
-image: "/images/posts/previdencia-privada-2026-vale-a-pena-guia-pratico.webp"
-imageAlt: "Couple on sofa reviewing documents and tablet at white coffee table."
-category: "investimentos"
-locale: "en"
-tags: ["private pension","2026","investment","retirement","costs","risks","comparison","private pension worth it","PGBL or VGBL","pension or invest"]
-author: "FinMoovi"
-publishedAt: 2026-07-22
+title: 'Private pension 2026: is it worth it? Practical guide'
+description: >-
+  Find out if private pension still yields in 2026, compare with other options
+  and see risks, costs and simulations to decide and choose the best path for
+  your retirement.
+tickerHeadline: 'Private pension 2026: worth it?'
+image: /images/posts/previdencia-privada-2026-vale-a-pena-guia-pratico.webp
+category: investimentos
+locale: en
+tags:
+  - private pension
+  - '2026'
+  - investment
+  - retirement
+  - costs
+  - risks
+  - comparison
+  - private pension worth it
+  - PGBL or VGBL
+  - pension or invest
+author: FinMoovi
+publishedAt: 2026-07-22T00:00:00.000Z
 readingTime: 6
 featured: false
-translationKey: "previdencia-privada-2026-vale-a-pena-guia-pratico"
+translationKey: previdencia-privada-2026-vale-a-pena-guia-pratico
 seo:
-  metaTitle: "Private pension 2026: is it worth it? Practical guide"
-  metaDescription: "Find out if private pension still yields in 2026, compare with other options and see risks, costs and simulations to decide and choose the best path for your retirement."
-  keywords: ["private pension","2026","investment","retirement","costs","risks","comparison","private pension worth it","PGBL or VGBL","pension or invest"]
+  metaTitle: 'Private pension 2026: is it worth it? Practical guide'
+  metaDescription: >-
+    Find out if private pension still yields in 2026, compare with other options
+    and see risks, costs and simulations to decide and choose the best path for
+    your retirement.
+  keywords:
+    - private pension
+    - '2026'
+    - investment
+    - retirement
+    - costs
+    - risks
+    - comparison
+    - private pension worth it
+    - PGBL or VGBL
+    - pension or invest
 ---
 
 ## What is [private pension](/en/glossario/en-private-pension)?

@@ -1,19 +1,20 @@
 ---
-title: "Revisão de Orçamento"
-description: "Revisite seu orçamento no meio do ano e ajuste suas finanças para alcançar seus objetivos."
-image: "/images/posts/revisao-de-orcamento.webp"
-imageAlt: "Gráfico de linhas com ondas verdes e laranja em fundo escuro com números."
-category: "dicas"
+title: Revisão de Orçamento
+description: >-
+  Revisite seu orçamento no meio do ano e ajuste suas finanças para alcançar
+  seus objetivos.
+image: /images/posts/revisao-de-orcamento.webp
+category: dicas
 tags:
-  - "orçamento"
-  - "finanças pessoais"
-  - "planejamento financeiro"
-  - "economia"
-  - "investimentos"
-author: "FinMoovi"
-publishedAt: 2026-06-23
-locale: "pt"
-translationKey: "revisao-de-orcamento"
+  - orçamento
+  - finanças pessoais
+  - planejamento financeiro
+  - economia
+  - investimentos
+author: FinMoovi
+publishedAt: 2026-06-23T00:00:00.000Z
+locale: pt
+translationKey: revisao-de-orcamento
 featured: false
 draft: false
 translate: true

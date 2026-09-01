@@ -1,19 +1,18 @@
 ---
-title: "Revisite Seu Orçamento"
-description: "Revisão de orçamento no meio do ano: dicas práticas para você"
-image: "/images/posts/revisite-seu-orcamento.webp"
-imageAlt: "Câmera sobre uma mesa com moedas, uma calculadora e um caderno de couro marrom."
-category: "dicas"
+title: Revisite Seu Orçamento
+description: 'Revisão de orçamento no meio do ano: dicas práticas para você'
+image: /images/posts/revisite-seu-orcamento.webp
+category: dicas
 tags:
-  - "orçamento"
-  - "finanças pessoais"
-  - "planejamento financeiro"
-  - "gestão de dinheiro"
-  - "meio do ano"
-author: "FinMoovi"
-publishedAt: 2026-06-30
-locale: "pt"
-translationKey: "revisite-seu-orcamento"
+  - orçamento
+  - finanças pessoais
+  - planejamento financeiro
+  - gestão de dinheiro
+  - meio do ano
+author: FinMoovi
+publishedAt: 2026-06-30T00:00:00.000Z
+locale: pt
+translationKey: revisite-seu-orcamento
 featured: false
 draft: false
 translate: true

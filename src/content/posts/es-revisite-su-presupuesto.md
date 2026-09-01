@@ -1,19 +1,20 @@
 ---
-title: "Revisite Su Presupuesto"
-description: "Revisar su presupuesto en la mitad del año es crucial para evaluar el progreso financiero y hacer ajustes necesarios para alcanzar los objetivos financieros."
-image: "/images/posts/revisite-seu-orcamento.webp"
-imageAlt: "Un cuaderno marrón, calculadora, monedas y hojas sobre fondo blanco con plantas."
-category: "dicas"
+title: Revisite Su Presupuesto
+description: >-
+  Revisar su presupuesto en la mitad del año es crucial para evaluar el progreso
+  financiero y hacer ajustes necesarios para alcanzar los objetivos financieros.
+image: /images/posts/revisite-seu-orcamento.webp
+category: dicas
 tags:
-  - "presupuesto"
-  - "finanzas personales"
-  - "gestión de dinero"
-  - "ahorro"
-  - "inversión"
-author: "FinMoovi"
-publishedAt: 2026-06-30
-locale: "es"
-translationKey: "revisite-seu-orcamento"
+  - presupuesto
+  - finanzas personales
+  - gestión de dinero
+  - ahorro
+  - inversión
+author: FinMoovi
+publishedAt: 2026-06-30T00:00:00.000Z
+locale: es
+translationKey: revisite-seu-orcamento
 featured: false
 draft: false
 translate: true

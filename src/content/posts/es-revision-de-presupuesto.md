@@ -1,19 +1,21 @@
 ---
-title: "Revisión de Presupuesto"
-description: "Aprende a revisar tu presupuesto y ajustar tus finanzas para alcanzar tus objetivos financieros. Consejos prácticos y ejemplos para ayudarte a gestionar tus gastos e inversiones."
-image: "/images/posts/revisao-de-orcamento.webp"
-imageAlt: "Gráfico de líneas con colores verde, rojo y naranja en pantalla oscura con texto."
-category: "dicas"
+title: Revisión de Presupuesto
+description: >-
+  Aprende a revisar tu presupuesto y ajustar tus finanzas para alcanzar tus
+  objetivos financieros. Consejos prácticos y ejemplos para ayudarte a gestionar
+  tus gastos e inversiones.
+image: /images/posts/revisao-de-orcamento.webp
+category: dicas
 tags:
-  - "presupuesto"
-  - "finanzas personales"
-  - "gestión de dinero"
-  - "ahorro"
-  - "inversión"
-author: "FinMoovi"
-publishedAt: 2026-06-23
-locale: "es"
-translationKey: "revisao-de-orcamento"
+  - presupuesto
+  - finanzas personales
+  - gestión de dinero
+  - ahorro
+  - inversión
+author: FinMoovi
+publishedAt: 2026-06-23T00:00:00.000Z
+locale: es
+translationKey: revisao-de-orcamento
 featured: false
 draft: false
 translate: true

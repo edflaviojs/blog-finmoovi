@@ -1,19 +1,20 @@
 ---
-title: "Review Your Budget"
-description: "Discover the importance of reviewing your budget mid-year and learn how to make adjustments to achieve your financial goals."
-image: "/images/posts/revisite-seu-orcamento.webp"
-imageAlt: "Brown leather journal, calculator, coins on papers, and plants on white marble surface."
-category: "dicas"
+title: Review Your Budget
+description: >-
+  Discover the importance of reviewing your budget mid-year and learn how to
+  make adjustments to achieve your financial goals.
+image: /images/posts/revisite-seu-orcamento.webp
+category: dicas
 tags:
-  - "budget review"
-  - "financial planning"
-  - "mid-year assessment"
-  - "financial goals"
-  - "FinMoovi"
-author: "FinMoovi"
-publishedAt: 2026-06-30
-locale: "en"
-translationKey: "revisite-seu-orcamento"
+  - budget review
+  - financial planning
+  - mid-year assessment
+  - financial goals
+  - FinMoovi
+author: FinMoovi
+publishedAt: 2026-06-30T00:00:00.000Z
+locale: en
+translationKey: revisite-seu-orcamento
 featured: false
 draft: false
 translate: true
