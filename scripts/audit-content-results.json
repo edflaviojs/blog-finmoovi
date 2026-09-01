@@ -1892,6 +1892,21 @@
     }
   },
   {
+    "file": "en-how-to-cut-your-electricity-bill-and-gain-peace-of-mind.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-how-to-diversify-with-variable-income-assets-in-2026.md",
     "dir": "posts",
     "severity": 0,
@@ -2583,6 +2598,21 @@
   },
   {
     "file": "en-monthly-lifetime-income.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-monthly-shopping-list.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -4712,6 +4742,21 @@
     }
   },
   {
+    "file": "es-como-reducir-la-factura-de-luz-y-ganar-tranquilidad.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-como-regalar-en-el-dia-del-padre-gastando-poco-7-ideas-que.md",
     "dir": "posts",
     "severity": 0,
@@ -5838,6 +5883,21 @@
   },
   {
     "file": "es-liquidez.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-lista-de-compras-del-mes.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
