@@ -1375,8 +1375,51 @@
           "titulo": "Veja: playlist completa"
         }
       ]
+    },
+    {
+      "videoId": "mOBnzjrL-Xo",
+      "title": "Ingeniero Desvela: Mis 6 consejos para Comprar Tecnología sin arruinarte.",
+      "channel": "Ángel Díaz",
+      "duracaoSeg": 783,
+      "idioma": "es",
+      "viewsPerDay": 986,
+      "vistoEm": "2026-09-01",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "Intro"
+        },
+        {
+          "seg": 25,
+          "titulo": "La duda que nos asalta a todos"
+        },
+        {
+          "seg": 104,
+          "titulo": "1. Conoce tus necesidades y no compres por moda"
+        },
+        {
+          "seg": 228,
+          "titulo": "2. Monitorea bien el cambio de los precios"
+        },
+        {
+          "seg": 307,
+          "titulo": "3. Conoce los timing de compra de los productos"
+        },
+        {
+          "seg": 395,
+          "titulo": "4. Encuentra tu timing personal y no te dejes llevar"
+        },
+        {
+          "seg": 589,
+          "titulo": "5. Evita la trampa de la financiación"
+        },
+        {
+          "seg": 688,
+          "titulo": "6. Aprende qué tipo de persona eres y compra en base a ello"
+        }
+      ]
     }
   ],
-  "atualizadoEm": "2026-08-31T10:16:44.751Z",
-  "total": 25
+  "atualizadoEm": "2026-09-01T09:01:06.725Z",
+  "total": 26
 }
