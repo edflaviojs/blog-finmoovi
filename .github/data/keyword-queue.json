@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-31T17:45:50.181Z",
-  "sourceCursor": 0,
+  "updatedAt": "2026-09-01T14:22:01.158Z",
+  "sourceCursor": 1,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -1551,9 +1551,11 @@
       "category": null,
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "used",
       "addedAt": "2026-08-04T15:12:11.253Z",
-      "finmooviHook": "enviado via /status 04/08"
+      "finmooviHook": "enviado via /status 04/08",
+      "usedAt": "2026-09-01T14:22:01.158Z",
+      "usedBy": "gerar-post-inteligente"
     },
     {
       "keyword": "de como economizar água",
