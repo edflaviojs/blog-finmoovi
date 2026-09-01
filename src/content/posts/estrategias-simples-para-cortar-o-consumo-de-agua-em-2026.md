@@ -29,15 +29,15 @@ Imagine a cena: você chega ao final do mês, abre a conta de água e vê um nú
 
 ### Por que vale a pena cortar o consumo de água?
 
-A água não é apenas um recurso natural; ela representa um custo direto nas contas mensais e um impacto ambiental que afeta a todos. Segundo a **OECD**, o consumo per capita de água doméstica tem tendência a crescer em áreas urbanas, o que pressiona tanto os bolsos quanto os ecossistemas. Reduzir o desperdício traz três benefícios imediatos:
+A água não é apenas um recurso natural; ela representa um custo direto nas contas mensais e um impacto ambiental que afeta a todos. Segundo a **OECD**, o consumo per capita de água doméstica tem tendência a crescer em áreas urbanas, o que pressiona tanto os bolsos quanto os ecossistemas. Reduzir o desperdício traz três [benefícios](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) imediatos:
 
-1. **Alívio no orçamento** – menos litros consumidos significam faturas menores.
+1. **Alívio no orçamento** – menos litros consumidos significam [faturas](/posts/ja-esqueceu-de-pagar-a-conta-e-ficou-na-mao-como-mudar-isso) menores.
 2. **Tranquilidade mental** – menos preocupação com surpresas nas contas.
 3. **Contribuição ambiental** – menos pressão sobre reservatórios e estações de tratamento.
 
 ### Dicas práticas que cabem no dia a dia
 
-A seguir, sete ações que podem ser implementadas em poucos minutos, sem grandes investimentos.
+A seguir, sete [ações](/glossario/acoes) que podem ser implementadas em poucos minutos, sem grandes investimentos.
 
 #### 1. Reaproveite a água da máquina de lavar
 
@@ -65,7 +65,7 @@ Ao lavar legumes, coloque-os em uma tigela com água, deixe de molho e depois en
 
 #### 7. Monitore o consumo com o FinMoovi
 
-O aplicativo FinMoovi permite registrar a conta de água com a **captura inteligente** – basta tirar uma foto da fatura que o app categoriza automaticamente o gasto. No painel de “Fluxo de Caixa”, você visualiza a evolução mensal e define metas de redução. Em cinco minutos, registre a última conta e veja quanto pode economizar nas próximas semanas.
+O aplicativo FinMoovi permite registrar a conta de água com a **captura inteligente** – basta tirar uma foto da fatura que o app categoriza automaticamente o gasto. No painel de “[Fluxo de Caixa](/glossario/fluxo-de-caixa)”, você visualiza a evolução mensal e define [metas](/posts/por-que-nao-vejo-progresso-na-minha-poupanca) de redução. Em cinco minutos, registre a última conta e veja quanto pode economizar nas próximas semanas.
 
 ### Como transformar o desafio em hábito: o plano de 30 dias
 
@@ -84,9 +84,9 @@ Ao final do mês, compare a fatura registrada no app com a do início. A maioria
 
 Além da captura inteligente, o FinMoovi oferece:
 
-- **Alertas de consumo**: notifica quando o gasto ultrapassa a meta mensal.
-- **Relatórios visuais**: gráficos de barras que mostram a variação de consumo ao longo dos últimos seis meses.
-- **Planejamento de metas**: defina um objetivo de redução (ex.: “economizar 15 % até junho”) e acompanhe o progresso em tempo real.
+- **[Alertas](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto) de consumo**: notifica quando o gasto ultrapassa a meta mensal.
+- **[Relatórios](/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) visuais**: gráficos de barras que mostram a variação de consumo ao longo dos últimos seis meses.
+- **[Planejamento](/posts/orcamento-com-salario-minimo-dicas-praticas) de metas**: defina um objetivo de redução (ex.: “economizar 15 % até junho”) e acompanhe o progresso em tempo real.
 
 Essas funcionalidades transformam números abstratos em visualizações claras, facilitando a tomada de decisão e reforçando a sensação de controle.
 

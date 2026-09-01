@@ -29,7 +29,7 @@ Imagine la escena: llega a fin de mes, abre la factura de agua y ve un número q
 
 ### ¿Por qué vale la pena reducir el consumo de agua?
 
-El agua no es solo un recurso natural; representa un gasto directo en las facturas mensuales y un impacto ambiental que nos afecta a todos. Según la **OCDE**, el consumo per cápita de agua doméstica tiende a crecer en áreas urbanas, lo que presiona tanto a los bolsillos como a los ecosistemas. Reducir el desperdicio aporta tres beneficios inmediatos:
+El agua no es solo un recurso natural; representa un gasto directo en las [facturas](/es/posts/es-olvidaste-pagar-una-factura-y-te-quedaste-sin-dinero-como) mensuales y un impacto ambiental que nos afecta a todos. Según la **OCDE**, el consumo per cápita de agua doméstica tiende a crecer en áreas urbanas, lo que presiona tanto a los bolsillos como a los ecosistemas. Reducir el desperdicio aporta tres [beneficios](/es/posts/es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026) inmediatos:
 
 1. **Alivio en el presupuesto** – menos litros consumidos significan facturas menores.  
 2. **Tranquilidad mental** – menos preocupación por sorpresas en las cuentas.  
@@ -37,7 +37,7 @@ El agua no es solo un recurso natural; representa un gasto directo en las factur
 
 ### Consejos prácticos que caben en la vida diaria
 
-A continuación, siete acciones que puede implementar en pocos minutos, sin grandes inversiones.
+A continuación, siete [acciones](/es/glossario/es-acciones) que puede implementar en pocos minutos, sin grandes inversiones.
 
 #### 1. Reutilice el agua de la lavadora
 
@@ -65,7 +65,7 @@ Al lavar legumbres, colóquelas en un recipiente con agua, déjelas en remojo y 
 
 #### 7. Monitoree el consumo con FinMoovi
 
-La aplicación FinMoovi permite registrar la factura de agua con **captura inteligente** – basta con tomar una foto de la factura y la app categoriza automáticamente el gasto. En el panel de “Flujo de Caja” visualiza la evolución mensual y define metas de reducción. En cinco minutos, registre la última factura y vea cuánto puede ahorrar en las próximas semanas.
+La aplicación FinMoovi permite registrar la factura de agua con **captura inteligente** – basta con tomar una foto de la factura y la app categoriza automáticamente el gasto. En el panel de “[Flujo de Caja](/es/glossario/es-flujo-de-caja)” visualiza la evolución mensual y define [metas](/es/posts/es-por-que-no-veo-progreso-en-mi-ahorro) de reducción. En cinco minutos, registre la última factura y vea cuánto puede [ahorrar](/es/posts/es-ahorra-en-la-farmacia-sin-sacrificios-guia-practica-2026) en las próximas semanas.
 
 ### Cómo convertir el desafío en hábito: el plan de 30 días
 
@@ -84,7 +84,7 @@ Al final del mes, compare la factura registrada en la app con la del inicio. La 
 
 Además de la captura inteligente, FinMoovi ofrece:
 
-- **Alertas de consumo**: notifica cuando el gasto supera la meta mensual.  
+- **[Alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no) de consumo**: notifica cuando el gasto supera la meta mensual.  
 - **Reportes visuales**: gráficos de barras que muestran la variación de consumo en los últimos seis meses.  
 - **Planificación de metas**: defina un objetivo de reducción (p. ej., “ahorrar 15 % hasta junio”) y siga el progreso en tiempo real.  
 
@@ -94,7 +94,7 @@ Estas funcionalidades convierten números abstractos en visualizaciones claras, 
 
 - **Captación de agua de lluvia**: instalar un pequeño depósito en el jardín puede suplir la necesidad de regar plantas o lavar el coche los fines de semana.  
 - **Uso consciente de electrodomésticos**: el lavavajillas y la lavadora son más eficientes cuando operan en modo “eco”.  
-- **Educación familiar**: involucre a los niños con desafíos de “menos agua, más diversión”, como pintar figuras de gotas o crear un calendario de ahorro.  
+- **Educación familiar**: involucre a los niños con desafíos de “menos agua, más diversión”, como pintar figuras de gotas o crear un calendario de [ahorro](/es/glossario/es-ahorro).  
 
 ### Conclusión motivadora
 

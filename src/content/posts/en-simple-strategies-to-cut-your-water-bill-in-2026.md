@@ -29,7 +29,7 @@ Imagine this: it’s the end of the month, you open the water bill and the amoun
 
 ## Why it’s worth cutting water use  
 
-Water isn’t just a natural resource; it’s a direct line item on your monthly expenses and an environmental factor that touches us all. According to the **OECD**, per‑capita domestic water use is trending upward in urban areas, squeezing both wallets and ecosystems. Cutting waste brings three immediate benefits:
+Water isn’t just a natural resource; it’s a direct line item on your monthly expenses and an environmental factor that touches us all. According to the **OECD**, per‑capita domestic water use is trending upward in urban areas, squeezing both wallets and ecosystems. Cutting waste brings three immediate [benefits](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026):
 
 1. **More money in the budget** – fewer liters mean a smaller bill.  
 2. **Peace of mind** – fewer surprises when the statement arrives.  
@@ -65,7 +65,7 @@ When cleaning produce, soak them in a bowl, then give a quick rinse. For fruits,
 
 ### 7. Track consumption with FinMoovi  
 
-The FinMoovi app lets you log your water bill with **smart capture**—just snap a photo and the app automatically categorizes the expense. In the “Cash Flow” dashboard you can see monthly trends and set reduction targets. In five minutes, record your latest bill and see how much you could save in the weeks ahead.
+The [FinMoovi app](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end) lets you log your water bill with **[smart capture](/en/posts/en-how-to-never-miss-a-bill-payment-deadline-simple-5-minute)**—just snap a photo and the app automatically categorizes the expense. In the “[Cash Flow](/en/glossario/en-cash-flow)” dashboard you can see monthly trends and set reduction targets. In five minutes, record your latest bill and see how much you could save in the weeks ahead.
 
 ## Turning the challenge into a habit: a 30‑day plan  
 
@@ -86,7 +86,7 @@ Beyond smart capture, FinMoovi offers:
 
 - **Consumption alerts** – notify you when spending exceeds the monthly target.  
 - **Visual reports** – bar charts showing usage changes over the past six months.  
-- **Goal planning** – set a reduction target (e.g., “save 15 % by June”) and watch progress in real time.  
+- **Goal [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips)** – set a reduction target (e.g., “save 15 % by June”) and watch [progress](/en/posts/en-why-you-re-not-seeing-progress-in-your-savings) in real time.  
 
 These features turn abstract numbers into clear visuals, making decisions easier and reinforcing a sense of control.
 
@@ -94,11 +94,11 @@ These features turn abstract numbers into clear visuals, making decisions easier
 
 - **Rainwater harvesting** – a small backyard tank can cover garden watering or car washing on weekends.  
 - **Mindful appliance use** – dishwashers and washing machines are most efficient on “eco” settings.  
-- **Family education** – involve kids with challenges like “less water, more fun,” such as drawing water‑drop stickers or creating a savings calendar.  
+- **Family education** – involve kids with challenges like “less water, more fun,” such as drawing water‑drop stickers or creating a [savings](/en/glossario/en-savings) calendar.  
 
 ## A motivating close  
 
-Saving water doesn’t require pricey renovations or extreme sacrifices. With tiny tweaks—installing aerators, taking shorter showers, reusing water, and tracking everything with FinMoovi—you lower the bill, gain peace of mind, and protect the planet. Start today: open the app, snap a photo of your latest bill, and set a reduction goal. In a few clicks, you’re on the path to turning water use into an ally for your budget.
+[Saving](/en/posts/en-how-to-build-a-budget-that-actually-works-in-2026) water doesn’t require pricey renovations or extreme sacrifices. With tiny tweaks—installing aerators, taking shorter showers, reusing water, and tracking everything with FinMoovi—you lower the bill, gain peace of mind, and protect the planet. Start today: open the app, snap a photo of your latest bill, and set a reduction goal. In a few clicks, you’re on the path to turning water use into an ally for your budget.
 
 ## Frequently Asked Questions  
 
