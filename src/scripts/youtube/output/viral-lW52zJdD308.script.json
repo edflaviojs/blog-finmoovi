@@ -1,0 +1,236 @@
+{
+  "slug": "viral-lW52zJdD308",
+  "term": "Mentalidade Financeira",
+  "category": "mindset",
+  "keyword": "Mentalidade",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Sua *mentalidade financeira* tá fazendo quinhentos reais sumirem todo mês?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ralo",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Sua mentalidade financeira tá fazendo quinhentos reais sumirem todo mês? O pior é que a gente nem nota.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "financeira",
+          "visual": {
+            "type": "statement",
+            "text": "O problema começa na mente"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          }
+        },
+        {
+          "anchor": "nota",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          },
+          "sfx": "pop"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "A gente faz isso porque compra cansado, parcela sem pensar e fala que depois dá um jeito.",
+      "durationSec": 6.5,
+      "shots": [
+        {
+          "anchor": "compra",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          }
+        },
+        {
+          "anchor": "parcela",
+          "visual": {
+            "type": "statement",
+            "text": "Só dessa vez"
+          },
+          "sfx": "click"
+        },
+        {
+          "anchor": "jeito",
+          "visual": {
+            "type": "statement",
+            "text": "Depois eu resolvo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Só que esse depois chega. Uma compra aqui, outra ali, e quando você soma tudo, os quinhentos reais já saíram do seu bolso.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "chega",
+          "visual": {
+            "type": "statement",
+            "text": "O depois sempre chega"
+          },
+          "sfx": "alert"
+        },
+        {
+          "anchor": "outra",
+          "visual": {
+            "type": "icon",
+            "icon": "coins"
+          }
+        },
+        {
+          "anchor": "tudo",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 500,
+            "prefix": "R$"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "bolso",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei os meus gastos no FinMoovi e ele me mostrou uma lista bem clara. Foi ali que eu vi quanto esse costume de gastar no automático tava me custando.",
+      "durationSec": 11.5,
+      "shots": [
+        {
+          "anchor": "gastos",
+          "visual": {
+            "type": "app",
+            "app": "extrato",
+            "note": "Os gastos aparecem organizados em uma lista clara"
+          }
+        },
+        {
+          "anchor": "lista",
+          "visual": {
+            "type": "list",
+            "text": "Pequenos gastos acumulados"
+          }
+        },
+        {
+          "anchor": "costume",
+          "visual": {
+            "type": "statement",
+            "text": "Virou um costume"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "custando",
+          "visual": {
+            "type": "statement",
+            "text": "Quanto isso custa?"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer enxergar os seus também? Procura o FinMoovi. São sete dias grátis.",
+      "durationSec": 4.6,
+      "shots": [
+        {
+          "anchor": "enxergar",
+          "visual": {
+            "type": "statement",
+            "text": "Enxergue seus padrões"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias para testar"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Arrumar a sua mentalidade financeira começa quando você para de gastar no automático. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "financeira",
+          "visual": {
+            "type": "statement",
+            "text": "Mude a forma de pensar"
+          }
+        },
+        {
+          "anchor": "gastar",
+          "visual": {
+            "type": "icon",
+            "icon": "mind"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "statement",
+            "text": "Controle muda tudo"
+          }
+        },
+        {
+          "anchor": "outros",
+          "visual": {
+            "type": "statement",
+            "text": "Cuide do que é seu"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja para onde seu dinheiro vai",
+    "target": "app"
+  },
+  "totalDurationSec": 46
+}
