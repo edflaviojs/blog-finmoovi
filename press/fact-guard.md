@@ -1,7 +1,7 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-09-01T09:44:21.810Z
-**Posts:** 384 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 53
+**Gerado em:** 2026-09-02T09:17:16.084Z
+**Posts:** 387 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 55
 
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
@@ -101,6 +101,9 @@
 **en-review-your-budget.md**
 - _Reviewing our [budget](/en/posts/en-budgeting-with-minimum-wage-practical-tips) is a crucial step in this process, as it allows us to identify areas for improvement and adjust our strategies according_
 
+**en-simple-strategies-to-cut-your-water-bill-in-2026.md**
+- _According to the **OECD**, per‑capita domestic water use is trending upward in urban areas, squeezing both wallets and ecosystems._
+
 **en-tired-of-manually-logging-every-expense-and-losing-track-of.md**
 - _According to the World Bank on financial inclusion, many people struggle with keeping accurate records, which often leads to impulsive decisions, like buying a wanted item instead of paying a forgotte_
 
@@ -132,6 +135,9 @@
 
 **es-revisite-su-presupuesto.md**
 - _La revisión del [presupuesto](/es/posts/es-como-crear-un-presupuesto-personal-en-5-pasos-simples) es una etapa crucial en este proceso, ya que nos permite identificar áreas donde podemos mejorar y aju_
+
+**estrategias-simples-para-cortar-o-consumo-de-agua-em-2026.md**
+- _Segundo a **OECD**, o consumo per capita de água doméstica tem tendência a crescer em áreas urbanas, o que pressiona tanto os bolsos quanto os ecossistemas._
 
 **indice-finmoovi-custo-de-vida-julho-2026.md**
 - _Em julho de 2026, o custo de vida subiu 0,07 % segundo o [IPCA](/glossario/ipca), indicando um aumento discreto nos preços ao consumidor no mês._
