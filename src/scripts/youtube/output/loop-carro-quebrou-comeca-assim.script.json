@@ -1,0 +1,117 @@
+{
+  "slug": "loop-carro-quebrou-comeca-assim",
+  "formato": "loop16",
+  "term": "O carro quebrou no meio do mês",
+  "category": "vida",
+  "keyword": "CARRO",
+  "situacao": "carro-quebrou",
+  "gancho": "comeca-assim",
+  "ganchoFamilia": "começa assim",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "domino",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Quer aprender a evitar aperto? Começa assim.",
+      "durationSec": 2.53,
+      "shots": [
+        {
+          "anchor": "aprender",
+          "visual": {
+            "type": "statement",
+            "text": "Evite aperto"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "evitar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "domino"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Meu carro quebrou no meio do mês, e ficou parado na oficina.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "carro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "domino"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "quebrou",
+          "visual": {
+            "type": "statement",
+            "text": "Carro parado na oficina"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Eu me atrapalhei com as contas, então comecei a conferir tudo antes.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "atrapalhei",
+          "visual": {
+            "type": "statement",
+            "text": "Comecei a conferir"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "contas",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "domino"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Eu aprendo a evitar aperto começando assim, antes do próximo imprevisto.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "aprendo",
+          "visual": {
+            "type": "statement",
+            "text": "Evitar aperto começa assim"
+          }
+        },
+        {
+          "anchor": "evitar",
+          "visual": {
+            "type": "statement",
+            "text": "Evite aperto"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.19
+}
