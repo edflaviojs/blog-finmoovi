@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-01T15:18:20.989Z",
-  "sourceCursor": 0,
+  "updatedAt": "2026-09-02T14:47:01.160Z",
+  "sourceCursor": 1,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -347,9 +347,11 @@
       "category": "glossario",
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "used",
       "addedAt": "2026-07-27T11:01:33.052Z",
-      "finmooviHook": "O FinMoovi distribui as parcelas pelos meses certos no fluxo de caixa, então nenhuma te pega de surpresa."
+      "finmooviHook": "O FinMoovi distribui as parcelas pelos meses certos no fluxo de caixa, então nenhuma te pega de surpresa.",
+      "usedAt": "2026-09-02T14:47:01.160Z",
+      "usedBy": "glossario-auto-diario"
     },
     {
       "keyword": "renda mensal",
