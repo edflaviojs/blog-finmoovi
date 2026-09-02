@@ -1718,5 +1718,45 @@
         "status": 200
       }
     }
+  },
+  {
+    "slug": "por-que-meu-dinheiro-some-antes-do-salario-chegar",
+    "title": "Por que meu dinheiro some antes do salário chegar?",
+    "url": "https://blog.finmoovi.com/posts/por-que-meu-dinheiro-some-antes-do-salario-chegar",
+    "submittedAt": "2026-09-02T18:14:34.491Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1841660256
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "estrategias-simples-para-cortar-o-consumo-de-agua-em-2026",
+    "title": "Estratégias simples para cortar o consumo de água em 2026",
+    "url": "https://blog.finmoovi.com/posts/estrategias-simples-para-cortar-o-consumo-de-agua-em-2026",
+    "submittedAt": "2026-09-02T18:14:35.550Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1841660261
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
   }
 ]
