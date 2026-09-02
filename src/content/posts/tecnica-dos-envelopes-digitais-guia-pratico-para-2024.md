@@ -1,21 +1,40 @@
 ---
-title: "Técnica dos Envelopes Digitais: Guia Prático para 2026"
-description: "Aprenda a usar a técnica dos envelopes digitais para controlar gastos, montar orçamento e economizar, mesmo com salário de R$2.000 a R$8.000. Passo a passo simples."
-tickerHeadline: "Domine seus gastos em 3 passos"
-image: "/images/posts/tecnica-dos-envelopes-digitais-guia-pratico-para-2024.webp"
-imageAlt: "Gráfico financeiro azul com números e linhas onduladas sobre fundo escuro."
-category: "orcamento"
-locale: "pt"
-tags: ["envelopes digitais","controle de gastos","orçamento pessoal","finanças práticas","aplicativos financeiros","método envelopes","controle gastos categorias"]
-author: "FinMoovi"
-publishedAt: 2026-07-20
+title: 'Técnica dos Envelopes Digitais: Guia Prático para 2026'
+description: >-
+  Aprenda a usar a técnica dos envelopes digitais para controlar gastos, montar
+  orçamento e economizar, mesmo com salário de R$2.000 a R$8.000. Passo a passo
+  simples.
+tickerHeadline: Domine seus gastos em 3 passos
+image: /images/posts/tecnica-dos-envelopes-digitais-guia-pratico-para-2024.webp
+category: orcamento
+locale: pt
+tags:
+  - envelopes digitais
+  - controle de gastos
+  - orçamento pessoal
+  - finanças práticas
+  - aplicativos financeiros
+  - método envelopes
+  - controle gastos categorias
+author: FinMoovi
+publishedAt: 2026-07-20T00:00:00.000Z
 readingTime: 4
 featured: false
-translationKey: "tecnica-dos-envelopes-digitais-guia-pratico-para-2024"
+translationKey: tecnica-dos-envelopes-digitais-guia-pratico-para-2024
 seo:
-  metaTitle: "Técnica dos Envelopes Digitais: Guia Prático para 2026"
-  metaDescription: "Aprenda a usar a técnica dos envelopes digitais para controlar gastos, montar orçamento e economizar, mesmo com salário de R$2.000 a R$8.000. Passo a passo simples."
-  keywords: ["envelopes digitais","controle de gastos","orçamento pessoal","finanças práticas","aplicativos financeiros","método envelopes","controle gastos categorias"]
+  metaTitle: 'Técnica dos Envelopes Digitais: Guia Prático para 2026'
+  metaDescription: >-
+    Aprenda a usar a técnica dos envelopes digitais para controlar gastos,
+    montar orçamento e economizar, mesmo com salário de R$2.000 a R$8.000. Passo
+    a passo simples.
+  keywords:
+    - envelopes digitais
+    - controle de gastos
+    - orçamento pessoal
+    - finanças práticas
+    - aplicativos financeiros
+    - método envelopes
+    - controle gastos categorias
 ---
 
 ## Entender a técnica dos envelopes digitais

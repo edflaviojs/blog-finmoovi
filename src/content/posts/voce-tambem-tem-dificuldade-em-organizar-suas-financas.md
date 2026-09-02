@@ -1,20 +1,37 @@
 ---
-title: "Você também tem dificuldade em organizar suas finanças?"
-description: "Dificuldade em organizar finanças? Descubra como o FinMoovi pode ajudar."
-image: "/images/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas.webp"
-imageAlt: "duas mulheres sentadas no sofá segurando dinheiro e sorrindo"
-category: "dicas"
-locale: "pt"
-tags: ["finanças pessoais","organização financeira","categorização automática","aplicativos financeiros","gerenciamento de despesas","dinheiro","economia","aplicativos de finanças","finmoovi"]
-author: "FinMoovi"
-publishedAt: 2026-06-10
+title: Você também tem dificuldade em organizar suas finanças?
+description: Dificuldade em organizar finanças? Descubra como o FinMoovi pode ajudar.
+image: /images/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas.webp
+category: dicas
+locale: pt
+tags:
+  - finanças pessoais
+  - organização financeira
+  - categorização automática
+  - aplicativos financeiros
+  - gerenciamento de despesas
+  - dinheiro
+  - economia
+  - aplicativos de finanças
+  - finmoovi
+author: FinMoovi
+publishedAt: 2026-06-10T00:00:00.000Z
 readingTime: 4
 featured: false
-translationKey: "voce-tambem-tem-dificuldade-em-organizar-suas-financas"
+translationKey: voce-tambem-tem-dificuldade-em-organizar-suas-financas
 seo:
-  metaTitle: "Você também tem dificuldade em organizar suas finanças?"
-  metaDescription: "Dificuldade em organizar finanças? Descubra como o FinMoovi pode ajudar."
-  keywords: ["finanças pessoais","organização financeira","categorização automática","aplicativos financeiros","gerenciamento de despesas","dinheiro","economia","aplicativos de finanças","finmoovi"]
+  metaTitle: Você também tem dificuldade em organizar suas finanças?
+  metaDescription: Dificuldade em organizar finanças? Descubra como o FinMoovi pode ajudar.
+  keywords:
+    - finanças pessoais
+    - organização financeira
+    - categorização automática
+    - aplicativos financeiros
+    - gerenciamento de despesas
+    - dinheiro
+    - economia
+    - aplicativos de finanças
+    - finmoovi
 ---
 
 ## Você não está sozinho

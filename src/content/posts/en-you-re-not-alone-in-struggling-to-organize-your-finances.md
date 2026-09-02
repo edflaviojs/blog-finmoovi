@@ -1,20 +1,37 @@
 ---
-title: "You're Not Alone in Struggling to Organize Your Finances"
-description: "Struggling to organize your finances? Discover how FinMoovi can help."
-image: "/images/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas.webp"
-imageAlt: "Two women sitting on a couch, holding and examining banknotes and financial documents."
-category: "dicas"
-locale: "en"
-tags: ["personal finance","financial organization","automatic categorization","financial apps","expense management","money","economy","finance apps","finmoovi"]
-author: "FinMoovi"
-publishedAt: 2026-06-10
+title: You're Not Alone in Struggling to Organize Your Finances
+description: Struggling to organize your finances? Discover how FinMoovi can help.
+image: /images/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas.webp
+category: dicas
+locale: en
+tags:
+  - personal finance
+  - financial organization
+  - automatic categorization
+  - financial apps
+  - expense management
+  - money
+  - economy
+  - finance apps
+  - finmoovi
+author: FinMoovi
+publishedAt: 2026-06-10T00:00:00.000Z
 readingTime: 4
 featured: false
-translationKey: "voce-tambem-tem-dificuldade-em-organizar-suas-financas"
+translationKey: voce-tambem-tem-dificuldade-em-organizar-suas-financas
 seo:
-  metaTitle: "You're Not Alone in Struggling to Organize Your Finances"
-  metaDescription: "Struggling to organize your finances? Discover how FinMoovi can help."
-  keywords: ["personal finance","financial organization","automatic categorization","financial apps","expense management","money","economy","finance apps","finmoovi"]
+  metaTitle: You're Not Alone in Struggling to Organize Your Finances
+  metaDescription: Struggling to organize your finances? Discover how FinMoovi can help.
+  keywords:
+    - personal finance
+    - financial organization
+    - automatic categorization
+    - financial apps
+    - expense management
+    - money
+    - economy
+    - finance apps
+    - finmoovi
 ---
 
 ## You're Not Alone

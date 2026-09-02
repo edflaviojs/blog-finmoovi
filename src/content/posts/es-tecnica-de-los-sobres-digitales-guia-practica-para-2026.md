@@ -1,21 +1,40 @@
 ---
-title: "Técnica de los Sobres Digitales: Guía Práctica para 2026"
-description: "Aprende a usar la técnica de los sobres digitales para controlar gastos, montar presupuesto y ahorrar, incluso con un salario de €360 a €1,440. Paso a paso sencillo."
-tickerHeadline: "Domina tus gastos en 3 pasos"
-image: "/images/posts/tecnica-dos-envelopes-digitais-guia-pratico-para-2024.webp"
-imageAlt: "Gráfico financiero azul brillante con líneas onduladas y números desenfocados en fondo oscuro."
-category: "orcamento"
-locale: "es"
-tags: ["sobres digitales","control de gastos","presupuesto personal","finanzas prácticas","aplicaciones financieras","método sobres","control gastos categorías"]
-author: "FinMoovi"
-publishedAt: 2026-07-20
+title: 'Técnica de los Sobres Digitales: Guía Práctica para 2026'
+description: >-
+  Aprende a usar la técnica de los sobres digitales para controlar gastos,
+  montar presupuesto y ahorrar, incluso con un salario de €360 a €1,440. Paso a
+  paso sencillo.
+tickerHeadline: Domina tus gastos en 3 pasos
+image: /images/posts/tecnica-dos-envelopes-digitais-guia-pratico-para-2024.webp
+category: orcamento
+locale: es
+tags:
+  - sobres digitales
+  - control de gastos
+  - presupuesto personal
+  - finanzas prácticas
+  - aplicaciones financieras
+  - método sobres
+  - control gastos categorías
+author: FinMoovi
+publishedAt: 2026-07-20T00:00:00.000Z
 readingTime: 4
 featured: false
-translationKey: "tecnica-dos-envelopes-digitais-guia-pratico-para-2024"
+translationKey: tecnica-dos-envelopes-digitais-guia-pratico-para-2024
 seo:
-  metaTitle: "Técnica de los Sobres Digitales: Guía Práctica para 2026"
-  metaDescription: "Aprende a usar la técnica de los sobres digitales para controlar gastos, montar presupuesto y ahorrar, incluso con un salario de R$2.000 a R$8.000. Paso a paso sencillo."
-  keywords: ["sobres digitales","control de gastos","presupuesto personal","finanzas prácticas","aplicaciones financieras","método sobres","control gastos categorías"]
+  metaTitle: 'Técnica de los Sobres Digitales: Guía Práctica para 2026'
+  metaDescription: >-
+    Aprende a usar la técnica de los sobres digitales para controlar gastos,
+    montar presupuesto y ahorrar, incluso con un salario de R$2.000 a R$8.000.
+    Paso a paso sencillo.
+  keywords:
+    - sobres digitales
+    - control de gastos
+    - presupuesto personal
+    - finanzas prácticas
+    - aplicaciones financieras
+    - método sobres
+    - control gastos categorías
 ---
 
 ## Entender la técnica de los sobres digitales  
