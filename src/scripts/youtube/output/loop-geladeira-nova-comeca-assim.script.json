@@ -1,0 +1,117 @@
+{
+  "slug": "loop-geladeira-nova-comeca-assim",
+  "formato": "loop16",
+  "term": "Trocar a geladeira",
+  "category": "vida",
+  "keyword": "GELADEIRA",
+  "situacao": "geladeira-nova",
+  "gancho": "comeca-assim",
+  "ganchoFamilia": "começa assim",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ratoeira",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Quer aprender a trocar a geladeira? Começa assim.",
+      "durationSec": 2.9,
+      "shots": [
+        {
+          "anchor": "aprender",
+          "visual": {
+            "type": "statement",
+            "text": "Trocar a geladeira"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "trocar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Comigo, ela fazia barulho de madrugada, e eu morria de vergonha.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "Comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "fazia",
+          "visual": {
+            "type": "statement",
+            "text": "A geladeira fazia barulho"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "E aí, eu comecei a guardar um pouquinho todo mês para outra.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "comecei",
+          "visual": {
+            "type": "statement",
+            "text": "Comecei a guardar"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "guardar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Quando consegui trocar, meu sono voltou, e a geladeira velha calou.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "consegui",
+          "visual": {
+            "type": "statement",
+            "text": "A geladeira velha calou"
+          }
+        },
+        {
+          "anchor": "trocar",
+          "visual": {
+            "type": "statement",
+            "text": "Trocar a geladeira"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
