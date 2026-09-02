@@ -28,3 +28,20 @@ _Gerado automaticamente por ai-visibility-monitor.js (workflow ai-visibility.yml
 | Qual o melhor aplicativo de finanças pessoais que funciona offline? | ❌ não | Wallet, Monefy, Money Lover |
 | Qual app usar para controlar gastos em mais de uma moeda (real, dólar e euro)? | ❌ não | Wallet, Money Lover, YNAB |
 | Quais os melhores blogs de finanças pessoais em português? | ❌ não | Estratégias, Rico, Principais |
+
+---
+
+## 2026-09 (executado em 2026-09-02)
+
+**Modelo (provedor primário):** `cerebras/gpt-oss-120b` · **FinMoovi mencionado:** 0/8
+
+| Pergunta | FinMoovi mencionado | Marcas citadas (top 3) |
+|---|---|---|
+| Quais são os melhores aplicativos para controlar gastos pessoais no Brasil? | ❌ não | Mobills, Organizze, Guiabolso |
+| Que app você recomenda para casal organizar finanças juntos? | ❌ não | Mobills, Guiabolso, YNAB |
+| Quais boas alternativas ao Mobills? | ❌ não | Mobills, Organizze, Guiabolso |
+| Onde aprender educação financeira online em português? | ❌ não | Universidade, Michigan, Online |
+| Qual melhor calculadora de juros compostos online? | ❌ não | NerdWallet, Investopedia |
+| Qual o melhor aplicativo de finanças pessoais que funciona offline? | ❌ não | Monefy, Spendee, Manager |
+| Qual app usar para controlar gastos em mais de uma moeda (real, dólar e euro)? | ❌ não | Wallet, Money Lover, Spendee |
+| Quais os melhores blogs de finanças pessoais em português? | ❌ não | Poupe, Arcuri, Cerbino |
