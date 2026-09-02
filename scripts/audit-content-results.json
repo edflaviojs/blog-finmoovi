@@ -842,6 +842,21 @@
     }
   },
   {
+    "file": "en-complete-shopping-list.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-compound-interest.md",
     "dir": "glossario",
     "severity": 0,
@@ -3287,6 +3302,21 @@
     }
   },
   {
+    "file": "en-simple-strategies-to-cut-your-water-bill-in-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-smart-cashback.md",
     "dir": "posts",
     "severity": 0,
@@ -5372,6 +5402,21 @@
     }
   },
   {
+    "file": "es-estrategias-simples-para-reducir-el-consumo-de-agua-en-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-etf.md",
     "dir": "glossario",
     "severity": 0,
@@ -5883,6 +5928,21 @@
   },
   {
     "file": "es-liquidez.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-lista-de-compras-completa.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
