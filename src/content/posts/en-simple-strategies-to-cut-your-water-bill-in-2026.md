@@ -3,6 +3,7 @@ title: "Simple Strategies to Cut Your Water Bill in 2026"
 description: "Learn easy, low‑cost ways to lower your water bill and help the planet. Start saving today with practical tips and the FinMoovi app."
 tickerHeadline: "The trick that lowers your bill"
 image: "/images/posts/estrategias-simples-para-cortar-o-consumo-de-agua-em-2026.webp"
+imageAlt: "Laptop displaying financial charts on wooden desk with coffee cup and monitors."
 category: "dicas"
 tags:
   - "water saving"

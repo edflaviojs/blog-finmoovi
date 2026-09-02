@@ -4,6 +4,7 @@ definition: "What complete shopping list is and how it shows up in your everyday
 title: "complete shopping list - Financial Glossary"
 description: "What complete shopping list is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/lista-de-compras-completa.webp"
+imageAlt: "Gold coins, blue chart, plant in jar, pink piggy bank on dark surface."
 category: "basico"
 tags: ["complete shopping list", "glossary", "finance"]
 author: "FinMoovi"

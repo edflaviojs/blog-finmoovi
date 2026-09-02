@@ -3,6 +3,7 @@ title: "Estrategias simples para reducir el consumo de agua en 2026"
 description: "Descubre trucos prácticos para bajar la factura de agua, ahorrar dinero y cuidar el planeta con FinMoovi."
 tickerHeadline: "El truco que baja la cuenta"
 image: "/images/posts/estrategias-simples-para-cortar-o-consumo-de-agua-em-2026.webp"
+imageAlt: "Escritorio con portátiles, monitores, taza de café y gráficos en pantalla."
 category: "dicas"
 tags:
   - "agua"

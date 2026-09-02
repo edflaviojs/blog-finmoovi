@@ -6,6 +6,7 @@ description: >-
   step‑by‑step.
 tickerHeadline: Master your spending in 3 steps
 image: /images/posts/tecnica-dos-envelopes-digitais-guia-pratico-para-2024.webp
+imageAlt: "Three smiling friends indoors looking at smartphones, wearing casual sweaters."
 category: orcamento
 locale: en
 tags:

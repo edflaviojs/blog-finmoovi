@@ -4,6 +4,7 @@ definition: "Qué es lista de compras completa y cómo aparece en tu día a día
 title: "lista de compras completa - Glosario Financiero"
 description: "Qué es lista de compras completa y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/lista-de-compras-completa.webp"
+imageAlt: "monedas, cerdito, planta en frasco, gráfico azul, balanza, fondo oscuro"
 category: "basico"
 tags: ["lista de compras completa", "glosario", "finanzas"]
 author: "FinMoovi"

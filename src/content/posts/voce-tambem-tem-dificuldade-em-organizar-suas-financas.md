@@ -2,6 +2,7 @@
 title: Você também tem dificuldade em organizar suas finanças?
 description: Dificuldade em organizar finanças? Descubra como o FinMoovi pode ajudar.
 image: /images/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas.webp
+imageAlt: "Duas mulheres sorrindo e usando smartphones enquanto sentadas juntas em um sofá."
 category: dicas
 locale: pt
 tags:

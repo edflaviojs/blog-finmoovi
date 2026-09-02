@@ -6,6 +6,7 @@ description: >-
   paso sencillo.
 tickerHeadline: Domina tus gastos en 3 pasos
 image: /images/posts/tecnica-dos-envelopes-digitais-guia-pratico-para-2024.webp
+imageAlt: "Tres jóvenes sonrientes mirando sus teléfonos móviles sentados en un sofá interior."
 category: orcamento
 locale: es
 tags:

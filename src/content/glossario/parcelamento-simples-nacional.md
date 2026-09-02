@@ -4,6 +4,7 @@ definition: "O que é parcelamento simples nacional e como isso aparece no seu d
 title: "parcelamento simples nacional - Glossário Financeiro"
 description: "O que é parcelamento simples nacional e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/parcelamento-simples-nacional.webp"
+imageAlt: "pilhas de moedas douradas e plantas verdes crescendo em fundo azul escuro"
 category: "basico"
 tags: ["parcelamento simples nacional", "glossário", "finanças"]
 author: "FinMoovi"

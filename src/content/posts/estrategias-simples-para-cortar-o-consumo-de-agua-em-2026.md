@@ -3,6 +3,7 @@ title: "Estratégias simples para cortar o consumo de água em 2026"
 description: "Descubra truques práticos para economizar água em casa, reduzir a conta e ainda contribuir com o planeta. Dicas rápidas e um mini‑desafio de 5 minutos com o app FinMoovi."
 tickerHeadline: "O truque que faz a conta baixar"
 image: "/images/posts/estrategias-simples-para-cortar-o-consumo-de-agua-em-2026.webp"
+imageAlt: "Notebook e monitores com gráficos coloridos em mesa de escritório."
 category: "dicas"
 tags:
   - "economia de água"
