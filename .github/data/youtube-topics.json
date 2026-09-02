@@ -412,6 +412,87 @@
           "título afirmativo simples, sem número nem pergunta"
         ]
       }
+    },
+    {
+      "id": "kw-pagbank-vale-a-pena",
+      "theme": "PagBank: vale a pena?",
+      "angle": "Mostraremos como funciona o cartão de crédito do PagBank e se ele é uma boa opção para você, com exemplos práticos de como economizar R$ 100 por mês",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "cartao-de-credito-pagbank",
+      "status": "pending",
+      "sourceKeyword": "cartao de credito pagbank como funciona"
+    },
+    {
+      "id": "kw-anuidade-alta",
+      "theme": "Anuidade alta?",
+      "angle": "Mostro como economizar R$ 200/ano em taxas de cartão",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "anuidade-do-cartao",
+      "status": "pending",
+      "sourceKeyword": "como funciona a anuidade do cartão"
+    },
+    {
+      "id": "kw-amortizacao-de-r-10-000",
+      "theme": "Amortização de R$ 10.000",
+      "angle": "Veja como economizar R$ 1.500 com amortização certa",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "amortizacao-de-financiamento",
+      "status": "pending",
+      "sourceKeyword": "como funciona a amortização de financiamento"
+    },
+    {
+      "id": "viral-jxIC4Ton9-8",
+      "theme": "Investir pouco",
+      "angle": "Pergunta direta: mostrar que começar com pequenas quantias não é um obstáculo para investir, usando exemplo com R$ 100,00",
+      "pillar": "investimento",
+      "source": "viral",
+      "glossaryRef": null,
+      "status": "pending",
+      "viralRef": {
+        "videoId": "jxIC4Ton9-8",
+        "title": "COMEÇAR COM POUCO NÃO FAZ DIFERENÇA?! 🤔💸 #shorts #investimentos",
+        "estrutura": [
+          "pergunta dirigida a quem assiste",
+          "uma palavra em maiúsculas a marcar o tom"
+        ]
+      }
+    },
+    {
+      "id": "viral-byYCL8Tlwg8",
+      "theme": "Dívida Herdada",
+      "angle": "Perda em curso: mostrar o dinheiro a sair todo mês com R$ 30.000 de dívida após a morte de um familiar, usando o app FinMoovi para organizar as finanças",
+      "pillar": "controle",
+      "source": "viral",
+      "glossaryRef": null,
+      "status": "pending",
+      "viralRef": {
+        "videoId": "byYCL8Tlwg8",
+        "title": "Left With $63,000 of Debt After His Dad CHEATED?💔💸  #finance #daveramsey #family #betrayal #drama",
+        "estrutura": [
+          "número concreto no título (\"63,000\")",
+          "pergunta dirigida a quem assiste",
+          "uma palavra em maiúsculas a marcar o tom"
+        ]
+      }
+    },
+    {
+      "id": "viral-lW52zJdD308",
+      "theme": "Mentalidade Financeira",
+      "angle": "Título afirmativo simples: como a forma como pensamos sobre dinheiro afeta nossas finanças, mostrando como mudar a mentalidade pode economizar R$ 500 por mês",
+      "pillar": "mindset",
+      "source": "viral",
+      "glossaryRef": null,
+      "status": "pending",
+      "viralRef": {
+        "videoId": "lW52zJdD308",
+        "title": "O Segredo dos desenhos que moldaram a nossa Mentalidade Financeira!",
+        "estrutura": [
+          "título afirmativo simples, sem número nem pergunta"
+        ]
+      }
     }
   ]
 }
