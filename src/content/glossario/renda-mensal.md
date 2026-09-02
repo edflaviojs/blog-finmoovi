@@ -4,6 +4,7 @@ definition: "O que é renda mensal e como isso aparece no seu dia a dia — expl
 title: "renda mensal - Glossário Financeiro"
 description: "O que é renda mensal e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/renda-mensal.webp"
+imageAlt: "Moedas douradas, planta verde e balança sobre base roxa em fundo escuro."
 category: "basico"
 tags: ["renda mensal", "glossário", "finanças"]
 author: "FinMoovi"

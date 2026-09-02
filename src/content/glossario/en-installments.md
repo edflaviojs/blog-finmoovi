@@ -4,6 +4,7 @@ definition: "What Installments is and how it shows up in your everyday money —
 title: "Installments - Financial Glossary"
 description: "What Installments is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/parcelamento.webp"
+imageAlt: "Gold coins, black safe, and jar with plant on blue background with yellow arrow."
 category: "basico"
 tags: ["Installments", "glossary", "finance"]
 author: "FinMoovi"

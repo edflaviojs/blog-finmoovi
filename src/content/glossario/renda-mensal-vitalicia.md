@@ -4,6 +4,7 @@ definition: "O que é renda mensal vitalicia e como isso aparece no seu dia a di
 title: "renda mensal vitalicia - Glossário Financeiro"
 description: "O que é renda mensal vitalicia e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/renda-mensal-vitalicia.webp"
+imageAlt: "Moedas douradas, gráfico de barras com seta ascendente e planta em pote de vidro."
 category: "basico"
 tags: ["renda mensal vitalicia", "glossário", "finanças"]
 author: "FinMoovi"

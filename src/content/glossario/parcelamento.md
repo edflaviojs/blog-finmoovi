@@ -4,6 +4,7 @@ definition: "O que é parcelamento e como isso aparece no seu dia a dia — expl
 title: "parcelamento - Glossário Financeiro"
 description: "O que é parcelamento e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/parcelamento.webp"
+imageAlt: "Moedas douradas, cofre e planta crescendo em pote sobre fundo azul e roxo."
 category: "basico"
 tags: ["parcelamento", "glossário", "finanças"]
 author: "FinMoovi"

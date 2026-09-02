@@ -4,6 +4,7 @@ definition: "Qué es parcelamiento y cómo aparece en tu día a día — explica
 title: "parcelamiento - Glosario Financiero"
 description: "Qué es parcelamiento y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/parcelamento.webp"
+imageAlt: "Monedas doradas, caja fuerte, planta en frasco y flecha amarilla ascendente sobre fondo azul."
 category: "basico"
 tags: ["parcelamiento", "glosario", "finanzas"]
 author: "FinMoovi"

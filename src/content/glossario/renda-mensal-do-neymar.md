@@ -4,6 +4,7 @@ definition: "O que é renda mensal do neymar e como isso aparece no seu dia a di
 title: "renda mensal do neymar - Glossário Financeiro"
 description: "O que é renda mensal do neymar e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/renda-mensal-do-neymar.webp"
+imageAlt: "Moedas douradas empilhadas e potes de vidro com mudas verdes sobre fundo gradiente roxo e azul."
 category: "basico"
 tags: ["renda mensal do neymar", "glossário", "finanças"]
 author: "FinMoovi"
