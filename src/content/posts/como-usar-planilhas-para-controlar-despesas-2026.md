@@ -45,7 +45,7 @@ Com os dados já organizados, é hora de transformar números em decisões. Use 
 - **Bloqueie distrações**: ao registrar, mantenha o celular em modo silencioso para focar apenas nos números.
 - **Use cores**: atribua uma cor a cada categoria; o contraste visual ajuda a identificar rapidamente onde está o “vazamento”.
 - **Revisão semanal**: dedique um horário fixo – por exemplo, domingo à tarde – para analisar o resumo e ajustar o orçamento do próximo ciclo.
-- **Aprenda com [relatórios](/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim)**: o FinMoovi gera relatórios mensais que podem ser exportados para PDF; guarde-os como histórico e compare com meses anteriores.
+- **Aprenda com [relatórios](/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim)**: o FinMoovi gera [relatórios](/posts/por-que-meu-dinheiro-some-antes-do-salario-chegar) mensais que podem ser exportados para PDF; guarde-os como histórico e compare com meses anteriores.
 
 ### Comece hoje
 Pegue seu celular, abra o FinMoovi, tire uma foto da última nota fiscal que ainda está na sua bolsa e, em menos de cinco minutos, veja esse gasto aparecer na sua planilha. Depois, ajuste a categoria se necessário e deixe o app criar o gráfico de despesas do mês. Essa ação rápida já traz a sensação de controle que falta há tanto tempo.

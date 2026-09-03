@@ -45,7 +45,7 @@ Con los datos ya organizados, es hora de convertir números en decisiones. Usa l
 - **Bloquea distracciones**: al registrar, pon el móvil en modo silencioso para enfocarte solo en los números.  
 - **Usa colores**: asigna un color a cada categoría; el contraste visual ayuda a identificar rápidamente el “goteo”.  
 - **Revisión semanal**: reserva un horario fijo – por ejemplo, domingo por la tarde – para analizar el resumen y ajustar el presupuesto del próximo ciclo.  
-- **Aprende de los [informes](/es/posts/es-tambien-te-quedas-sin-saber-a-donde-fue-tu-dinero-al-final)**: FinMoovi genera informes mensuales que puedes exportar a PDF; guárdalos como historial y compáralos con meses anteriores.
+- **Aprende de los [informes](/es/posts/es-tambien-te-quedas-sin-saber-a-donde-fue-tu-dinero-al-final)**: FinMoovi genera [informes](/es/posts/es-por-que-mi-dinero-desaparece-antes-de-que-llegue-el-salario) mensuales que puedes exportar a PDF; guárdalos como historial y compáralos con meses anteriores.
 
 ### Empieza hoy
 Toma tu móvil, abre FinMoovi, haz una foto de la última factura que aún está en tu bolso y, en menos de cinco minutos, verás ese gasto aparecer en tu hoja. Luego, ajusta la categoría si es necesario y deja que la app cree el gráfico de gastos del mes. Esta acción rápida ya brinda la sensación de control que hacía tiempo que faltaba.

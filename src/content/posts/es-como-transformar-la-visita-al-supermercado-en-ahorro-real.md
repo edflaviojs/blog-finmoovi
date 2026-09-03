@@ -35,7 +35,7 @@ Este hábito crea un **[presupuesto visual](/es/posts/es-como-organizar-tu-diner
 
 ## Consejo práctico: usa la captura inteligente de factura
 
-Al terminar la compra, toma una foto de la factura con FinMoovi. La **captura inteligente** reconoce cada artículo, lo clasifica automáticamente en las categorías que ya definiste (frutas, lácteos, limpieza) y actualiza tu informe de gastos en segundos. Si algún producto quedó fuera del plan, la app lo señala y sugiere ajustes para la próxima lista. Esta funcionalidad ahorra tiempo de registro manual y evita la sensación de “no sé a dónde se fue el dinero”.
+Al terminar la compra, toma una foto de la factura con FinMoovi. La **captura [inteligente](/es/posts/es-por-que-mi-dinero-desaparece-antes-de-que-llegue-el-salario)** reconoce cada artículo, lo clasifica automáticamente en las categorías que ya definiste (frutas, lácteos, limpieza) y actualiza tu informe de gastos en segundos. Si algún producto quedó fuera del plan, la app lo señala y sugiere ajustes para la próxima lista. Esta funcionalidad ahorra tiempo de registro manual y evita la sensación de “no sé a dónde se fue el dinero”.
 
 ![Consejo práctico: usa la captura inteligente de factura](/images/posts/como-transformar-a-ida-ao-supermercado-em-economia-real-2026-2.webp)
 

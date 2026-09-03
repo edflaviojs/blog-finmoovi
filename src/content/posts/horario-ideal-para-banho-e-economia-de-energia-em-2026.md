@@ -21,7 +21,7 @@ seo:
 
 Imagine a cena: você acorda, o despertador ainda ecoa, e já sente o peso da conta de luz no fim do mês. A água quente já está a todo vapor, o chuveiro faz barulho, e, enquanto se prepara para o dia, a conta de energia parece subir a cada minuto. Você já se pegou pensando se existe um jeito de tomar banho sem que o gasto de energia pese no seu orçamento?
 
-A resposta está mais perto do que parece. O horário em que você abre a torneira quente pode influenciar diretamente o consumo de energia, especialmente em regiões onde as tarifas variam ao longo do dia. E, para transformar essa descoberta em ação concreta, o **FinMoovi** entra em cena: com a captura inteligente de foto da sua conta de energia, o app categoriza automaticamente o gasto e gera um alerta quando o consumo ultrapassa o limite ideal. Em menos de cinco minutos, você tem um panorama claro de quanto o banho está impactando suas finanças e pode ajustar a rotina sem esforço.
+A resposta está mais perto do que parece. O horário em que você abre a torneira quente pode influenciar diretamente o consumo de energia, especialmente em regiões onde as tarifas variam ao longo do dia. E, para transformar essa descoberta em ação concreta, o **FinMoovi** entra em cena: com a captura [inteligente](/posts/por-que-meu-dinheiro-some-antes-do-salario-chegar) de foto da sua conta de energia, o app categoriza automaticamente o gasto e gera um alerta quando o consumo ultrapassa o limite ideal. Em menos de cinco minutos, você tem um panorama claro de quanto o banho está impactando suas finanças e pode ajustar a rotina sem esforço.
 
 ## Por que o horário do banho importa
 

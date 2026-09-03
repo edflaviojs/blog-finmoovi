@@ -60,7 +60,7 @@ Categorias genéricas como “alimentação” ou “transporte” são úteis, 
 
 ## Automatize com a captura inteligente
 
-Aqui o FinMoovi entra em ação. Abra o app, escolha a opção de **captura inteligente**, aponte a câmera para a nota fiscal ou recibo e, em poucos segundos, o sistema identifica:
+Aqui o FinMoovi entra em ação. Abra o app, escolha a opção de **captura [inteligente](/posts/por-que-meu-dinheiro-some-antes-do-salario-chegar)**, aponte a câmera para a nota fiscal ou recibo e, em poucos segundos, o sistema identifica:
 
 * Valor total
 * Data da compra

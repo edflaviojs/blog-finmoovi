@@ -21,7 +21,7 @@ seo:
 
 Você chega ao caixa do supermercado carregando sacolas cheias, sente aquele peso no bolso e percebe que gastou quase o equivalente a um aluguel em poucos minutos. A conta chega, o coração acelera e, enquanto o caixa emite o cupom, surge a sensação de que poderia ter gasto bem menos. Essa situação acontece com todo mundo que tenta equilibrar a conta do mês com as compras de alimentos.
 
-É exatamente nesse momento que o FinMoovi entra em ação. Ao tirar uma foto da nota fiscal com a função de captura inteligente, o app categoriza automaticamente cada item, mostra onde você gastou mais e sugere ajustes para a próxima visita. Em menos de cinco minutos, você tem um panorama claro e pronto para mudar o hábito de compra.
+É exatamente nesse momento que o FinMoovi entra em ação. Ao tirar uma foto da nota fiscal com a função de captura [inteligente](/posts/por-que-meu-dinheiro-some-antes-do-salario-chegar), o app categoriza automaticamente cada item, mostra onde você gastou mais e sugere ajustes para a próxima visita. Em menos de cinco minutos, você tem um panorama claro e pronto para mudar o hábito de compra.
 
 ## Planeje a lista antes de ir
 

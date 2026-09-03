@@ -71,7 +71,7 @@ Segundo a Investopedia, o uso de **relatórios financeiros automatizados** aumen
 
 * **Captura inteligente** – foto da nota ou comando de voz são reconhecidos em segundos.
 * **[Categorização automática](/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim)** – a IA aprende seus hábitos e refina as categorias.
-* **Relatórios inteligentes** – gráficos simples, [alertas](/posts/ja-esqueceu-de-pagar-a-conta-e-ficou-na-mao-como-mudar-isso) de atraso e sugestões de ajuste.
+* **[Relatórios inteligentes](/posts/por-que-meu-dinheiro-some-antes-do-salario-chegar)** – gráficos simples, [alertas](/posts/ja-esqueceu-de-pagar-a-conta-e-ficou-na-mao-como-mudar-isso) de atraso e sugestões de ajuste.
 * **Modo offline** – registra despesas mesmo sem internet e sincroniza depois.
 
 ![Por que o FinMoovi funciona tão bem](/images/posts/por-que-nao-vejo-progresso-na-minha-poupanca-6.webp)

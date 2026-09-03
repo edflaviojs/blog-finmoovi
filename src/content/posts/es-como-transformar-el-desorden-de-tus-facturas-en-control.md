@@ -58,7 +58,7 @@ Categorías genéricas como “alimentación” o “transporte” son útiles, 
 
 ## Automatiza con la captura inteligente
 
-Aquí entra en juego FinMoovi. Abre la app, elige la opción de **captura inteligente**, apunta la cámara al ticket o factura y, en pocos segundos, el sistema identifica:
+Aquí entra en juego FinMoovi. Abre la app, elige la opción de **captura [inteligente](/es/posts/es-por-que-mi-dinero-desaparece-antes-de-que-llegue-el-salario)**, apunta la cámara al ticket o factura y, en pocos segundos, el sistema identifica:
 
 * Importe total  
 * Fecha de la compra  

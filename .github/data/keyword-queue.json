@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-02T14:47:01.160Z",
-  "sourceCursor": 1,
+  "updatedAt": "2026-09-03T13:07:16.277Z",
+  "sourceCursor": 2,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -1888,8 +1888,10 @@
       "category": null,
       "priority": 2,
       "source": "gsc-gap",
-      "status": "pending",
-      "addedAt": "2026-08-31T14:32:17.782Z"
+      "status": "used",
+      "addedAt": "2026-08-31T14:32:17.782Z",
+      "usedAt": "2026-09-03T13:07:16.277Z",
+      "usedBy": "gerar-dicas-financeiras"
     }
   ]
 }

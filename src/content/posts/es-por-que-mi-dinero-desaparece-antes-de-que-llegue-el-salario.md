@@ -19,10 +19,10 @@ seo:
   keywords: ["saldo desaparecido","control de gastos","captura por voz","OCR","FinMoovi","presupuesto personal","informes inteligentes","categorizar gastos","informes","control financiero","inteligente","finmoovi","finanzas personales"]
 ---
 
-Tu dinero desaparece porque los gastos no se registran y el presupuesto queda invisible; sin saber en qué se ha gastado cada céntimo, los pequeños desembolsos se acumulan y el saldo se esfuma antes del próximo pago. Esto ocurre incluso si tienes un salario entre €1,500 y €4,000 al mes y mantienes bajo control el alquiler y los gastos básicos.
+Tu [dinero desaparece](/es/posts/es-tambien-te-quedas-sin-saber-a-donde-fue-tu-dinero-al-final) porque los gastos no se registran y el presupuesto queda invisible; sin saber en qué se ha gastado cada céntimo, los pequeños desembolsos se acumulan y el saldo se esfuma antes del próximo pago. Esto ocurre incluso si tienes un salario entre €1,500 y €4,000 al mes y mantienes bajo control el alquiler y los gastos básicos.
 
 ## ¿Qué está pasando con tu dinero?
-Imagina la situación: recibes el pago, haces una planificación rápida — “ahora cabe un café al día, el alquiler y el transporte” — y, al llegar a la mitad del mes, el extracto muestra casi nada. La sensación de que el dinero “se ha escapado” es muy común. Esta subestimación crea un agujero en el flujo de caja, dejando el saldo casi nulo antes del próximo pago.
+Imagina la situación: recibes el pago, haces una [planificación](/es/posts/es-presupuesto-con-salario-minimo-consejos-practicos) rápida — “ahora cabe un café al día, el alquiler y el transporte” — y, al llegar a la mitad del mes, el extracto muestra casi nada. La sensación de que el dinero “se ha escapado” es muy común. Esta subestimación crea un agujero en el [flujo de caja](/es/glossario/es-flujo-de-caja), dejando el saldo casi nulo antes del próximo pago.
 
 ## Por qué anotar en el móvil no siempre funciona
 Muchos intentan registrar los gastos en una nota o en una aplicación de notas. ¿El problema? El hábito se rompe rápido. Puedes olvidar abrir la aplicación, escribir un valor equivocado o simplemente perder la motivación después de unos días. Cuando la rutina se interrumpe, la “visión” de tus finanzas desaparece, y con ella la capacidad de ajustar el presupuesto.
@@ -34,7 +34,7 @@ Ana, nuestra protagonista, ya pasó por eso. Anotaba cada compra en el móvil, p
 ## Cómo FinMoovi aporta claridad en 5 minutos
 Ahí es donde entra FinMoovi. La aplicación combina dos tecnologías que eliminan la barrera de la anotación manual:
 
-1. **Captura por voz** – solo pulsa el ícono del micrófono, dice el valor de la compra y, en segundos, el gasto queda registrado.  
+1. **[Captura por voz](/es/posts/es-olvidaste-pagar-una-factura-y-te-quedaste-sin-dinero-como)** – solo pulsa el ícono del micrófono, dice el valor de la compra y, en segundos, el gasto queda registrado.  
 2. **OCR (Reconocimiento Óptico de Caracteres)** – al tomar una foto de la factura o del recibo, la app extrae automáticamente el valor, la fecha y el comercio.
 
 Esta información se categoriza de forma automática (alimentación, transporte, ocio, etc.) y se almacena localmente, garantizando privacidad incluso sin conexión. En pocos clics, FinMoovi genera informes que muestran exactamente dónde se ha consumido cada euro, permitiendo ajustes rápidos para el próximo ciclo de pago.
@@ -53,7 +53,7 @@ Esta información se categoriza de forma automática (alimentación, transporte,
    - Fotografía la factura.  
    - FinMoovi extrae el valor, la fecha y el comercio, rellenando automáticamente los campos.  
 5. **Revisa el informe diario** – en el menú “Flujo de caja”, verás un gráfico circular que indica el porcentaje gastado en cada categoría.  
-6. **Ajusta el presupuesto** – define metas mensuales (por ejemplo, “no gastar más que el precio de un café al día”) y recibe alertas cuando estés cerca del límite.
+6. **Ajusta el presupuesto** – define [metas](/es/posts/es-por-que-no-veo-progreso-en-mi-ahorro) mensuales (por ejemplo, “no gastar más que el precio de un café al día”) y recibe [alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no) cuando estés cerca del límite.
 
 ## Antes vs después: el impacto real
 | Aspecto | Antes de FinMoovi | Después de FinMoovi |
@@ -66,7 +66,7 @@ Esta información se categoriza de forma automática (alimentación, transporte,
 
 ![Paso a paso: use la captura por voz y OCR](/images/posts/por-que-meu-dinheiro-some-antes-do-salario-chegar-4.webp)
 
-Un estudio de **Investopedia** muestra que los usuarios que utilizan apps de captura automática de gastos reducen sus desembolsos inesperados en hasta un 25 % [Investopedia](https://www.investopedia.com). Ana, tras un mes de uso, logró “ver” dónde se estaba consumiendo el 30 % de su salario y reasignó ese dinero a su fondo de emergencia.
+Un estudio de **Investopedia** muestra que los usuarios que utilizan apps de captura automática de gastos reducen sus desembolsos inesperados en hasta un 25 % [Investopedia](https://www.investopedia.com). Ana, tras un mes de uso, logró “ver” dónde se estaba consumiendo el 30 % de su salario y reasignó ese dinero a su [fondo de emergencia](/es/glossario/es-fondo-de-emergencia).
 
 ## Consejos para mantener el saldo bajo control
 - **Registra todo de inmediato** – la combinación de voz y OCR elimina la procrastinación.  

@@ -35,7 +35,7 @@ Esse hábito cria um **[orçamento visual](/posts/como-organizar-seu-dinheiro-co
 
 ## Dica prática: use a captura inteligente de nota fiscal
 
-Ao terminar as compras, tire uma foto da nota fiscal com o FinMoovi. A **captura inteligente** reconhece cada item, classifica automaticamente nas categorias que você já definiu (frutas, laticínios, limpeza) e atualiza o seu relatório de despesas em segundos. Se algum produto ficou fora do [planejamento](/posts/orcamento-com-salario-minimo-dicas-praticas), o app sinaliza e sugere ajustes para a próxima lista. Essa funcionalidade corta o tempo de registro manual e evita a sensação de “não sei onde o dinheiro foi”.
+Ao terminar as compras, tire uma foto da nota fiscal com o FinMoovi. A **captura [inteligente](/posts/por-que-meu-dinheiro-some-antes-do-salario-chegar)** reconhece cada item, classifica automaticamente nas categorias que você já definiu (frutas, laticínios, limpeza) e atualiza o seu relatório de despesas em segundos. Se algum produto ficou fora do [planejamento](/posts/orcamento-com-salario-minimo-dicas-praticas), o app sinaliza e sugere ajustes para a próxima lista. Essa funcionalidade corta o tempo de registro manual e evita a sensação de “não sei onde o dinheiro foi”.
 
 ![Dica prática: use a captura inteligente de nota fiscal](/images/posts/como-transformar-a-ida-ao-supermercado-em-economia-real-2026-2.webp)
 

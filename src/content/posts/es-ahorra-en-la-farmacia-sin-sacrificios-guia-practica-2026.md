@@ -23,7 +23,7 @@ Estás en la fila de la farmacia, empujando el carrito de compras mientras el re
 
 La solución comienza al convertir esta rutina en un punto de control: al tomar una foto de la factura con **FinMoovi**, la app reconoce cada artículo, lo clasifica automáticamente en categorías como “Medicamentos”, “Higiene personal” y “Suplementos”, y muestra en tiempo real cuánto has gastado en cada grupo. En menos de cinco minutos tienes una visión clara y puedes decidir al instante dónde recortar o sustituir productos sin comprometer tu salud.
 
-**Consejo práctico:** **Usa la captura inteligente de FinMoovi para registrar la factura de la farmacia antes de salir, ajusta las categorías y define un límite mensual para cada una.** Así, al hacer la próxima compra, la app avisa si ya has superado el techo establecido, evitando sorpresas al final del mes.
+**Consejo práctico:** **Usa la captura [inteligente](/es/posts/es-por-que-mi-dinero-desaparece-antes-de-que-llegue-el-salario) de FinMoovi para registrar la factura de la farmacia antes de salir, ajusta las categorías y define un límite mensual para cada una.** Así, al hacer la próxima compra, la app avisa si ya has superado el techo establecido, evitando sorpresas al final del mes.
 
 ## Prioriza lo esencial y elimina lo superfluo
 
