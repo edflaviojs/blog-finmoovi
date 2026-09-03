@@ -2938,5 +2938,59 @@
     "target": "https://schema.org",
     "status": "no-endpoint",
     "sentAt": "2026-09-01T17:39:12.192Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/en-finmoovi-vs-organizze-which-is-better-in-2026/",
+    "target": "https://www.investopedia.com/personal-finance-apps-4689740",
+    "status": "no-endpoint",
+    "sentAt": "2026-09-03T17:34:01.001Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/en-plan-your-future-with-an-investment-simulator/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-09-03T17:34:01.203Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/en-why-does-my-money-disappear-before-payday/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-09-03T17:34:01.402Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/es-finmoovi-vs-organizze-cual-es-el-mejor-en-2026/",
+    "target": "https://www.investopedia.com/personal-finance-apps-4689740",
+    "status": "no-endpoint",
+    "sentAt": "2026-09-03T17:34:01.589Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/es-planifica-tu-futuro-con-el-simulador-de-inversiones/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-09-03T17:34:01.778Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/es-por-que-mi-dinero-desaparece-antes-de-que-llegue-el-salario/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-09-03T17:34:01.973Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/finmoovi-vs-organizze-qual-o-melhor-em-2026/",
+    "target": "https://www.investopedia.com/personal-finance-apps-4689740",
+    "status": "no-endpoint",
+    "sentAt": "2026-09-03T17:34:02.180Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/planeje-seu-futuro-com-simulador-de-investimentos/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-09-03T17:34:02.406Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/por-que-meu-dinheiro-some-antes-do-salario-chegar/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-09-03T17:34:02.604Z"
   }
 ]
