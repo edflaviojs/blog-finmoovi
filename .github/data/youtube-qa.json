@@ -898,5 +898,23 @@
     ],
     "veredito": "1. **LOOP — 9/10**  \nO elemento principal é praticamente igual no 1º e no último quadro: **“Evite aperto”**, na mesma região. O que muda é a frase inferior: começa com **“Quer aprender a”** e termina com **“próximo imprevisto.”**. Isso ajuda o corte, mas não é um match visual perfeito.\n\n2. **FAIXA DE BAIXO — 8/10**  \nNão há informação importante colada no limite inferior. Porém, as frases inferiores ficam relativamente baixas e podem competir com a interface do Shorts/Reels.\n\n3. **TEXTO POR CIMA DE TEXTO — 8/10**  \nNão vejo duas frases claramente sobrepostas. O principal problema é que algumas frases parecem **incompletas entre os quadros**, como “evitar aperto? Começa”, “Meu carro quebrou” etc., dependendo do momento da animação.\n\n4. **LEGIBILIDADE — 8/10**  \nO texto principal é grande, grosso e tem bom contraste. As frases menores embaixo são mais difíceis de ler rapidamente no celular, principalmente por causa dos destaques coloridos.\n\n5. **TELA VIVA OU VAZIA — 7/10**  \nHá bastante espaço vazio na metade inferior de vários quadros. O elemento central é forte, mas a composição poderia aproveitar melhor a área disponível.\n\n6. **COERÊNCIA — 9/10**  \nOs 8 quadros claramente pertencem ao mesmo vídeo: mesma identidade visual, fundo, logo, tipografia e linguagem. A sequência também conta uma história: **carro parado → contas → conferir antes → evitar aperto → próximo imprevisto**.\n\n7. **TESTE CENTRAL — 8/10**  \nPelos quadros, parece **mais um vídeo animado profissional do que slides**, graças à identidade visual e aos elementos gráficos; ainda assim, a repetição do layout deixa um pouco de sensação de apresentação.\n\n**NOTA GERAL: 8,2/10**  \n**PROBLEMA 1: As frases inferiores ficam baixas demais em alguns quadros, especialmente 0,1s e 16s, podendo ser cobertas pela interface.**  \n**PROBLEMA 2: O primeiro e o último quadro não são visualmente idênticos por causa da frase inferior diferente.**  \n**PROBLEMA 3: Existe bastante área vazia na parte inferior, reduzindo o impacto visual.**  \n**PRIMEIRA COISA A MUDAR: Subir um pouco todas as frases inferiores e garantir que o último quadro termine com a mesma composição visual do primeiro.**",
     "quando": "2026-09-02T09:04:54.688Z"
+  },
+  {
+    "slug": "loop-primeiro-guardado-nunca-faca",
+    "formato": "loop16",
+    "nota": 7,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      2.1,
+      4.2,
+      6.4,
+      8.5,
+      10.6,
+      12.7,
+      14.8
+    ],
+    "veredito": "1. **O LOOP — 9/10**  \nPrimeiro e último quadro são praticamente idênticos: mesma frase, posição e cenário. É um bom fechamento para reiniciar sem chamar atenção.\n\n2. **A FAIXA DE BAIXO — 5/10**  \nO maior problema está no **quadro 5 — 8,5s**: texto + seta ocupam bastante a parte inferior e podem ser cobertos pela interface. No quadro 6 — 10,6s, a legenda também fica relativamente baixa.\n\n3. **TEXTO POR CIMA DE TEXTO — 8/10**  \nNão há sobreposição grave visível. Os textos parecem separados, mas algumas legendas ficam pequenas e próximas demais da área inferior.\n\n4. **LEGIBILIDADE — 7/10**  \nOs títulos grandes têm ótima leitura. Já as legendas menores, como **“e fiquei calmo”** e **“isso com o”**, perdem força no celular por tamanho e contraste.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — 6/10**  \nHá bastante espaço vazio em vários quadros. O fundo é bonito, mas muitos momentos têm pouco conteúdo visual além do texto e de um elemento gráfico pequeno.\n\n6. **COERÊNCIA — 8/10**  \nOs oito quadros parecem pertencer ao mesmo vídeo: identidade visual, fundo e tipografia são consistentes, e a sequência textual avança até voltar ao início.\n\n7. **TESTE CENTRAL — 6/10**  \nAinda parece mais uma sequência de **slides animados** do que um vídeo profissional, porque vários quadros dependem quase exclusivamente de uma frase central sobre um fundo estático.\n\nNOTA GERAL: 7\nPROBLEMA 1: Quadro 5 — 8,5s: a seta gigante e o texto ocupam a faixa inferior e podem ser encobertos pela interface.\nPROBLEMA 2: Quadros 2, 3 e 6 — 2,1s, 4,2s e 10,6s: há pouco conteúdo visual, deixando grandes áreas vazias.\nPROBLEMA 3: Quadros 2, 3 e 6 — 2,1s, 4,2s e 10,6s: legendas pequenas demais para terem o mesmo impacto dos títulos.\nPRIMEIRA COISA A MUDAR: Tire informação importante da faixa inferior e use mais elementos visuais no meio da tela para o vídeo parecer menos um conjunto de slides.",
+    "quando": "2026-09-03T09:08:00.222Z"
   }
 ]
