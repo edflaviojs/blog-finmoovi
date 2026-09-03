@@ -4,6 +4,7 @@ definition: "What shopping list is and how it shows up in your everyday money â€
 title: "shopping list - Financial Glossary"
 description: "What shopping list is and how it shows up in your everyday money â€” explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/lista-de-compras.webp"
+imageAlt: "Stacks of gold coins and glass jars with growing plants on dark background"
 category: "basico"
 tags: ["shopping list", "glossary", "finance"]
 author: "FinMoovi"

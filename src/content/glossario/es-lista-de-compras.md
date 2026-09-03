@@ -4,6 +4,7 @@ definition: "Qué es lista de compras y cómo aparece en tu día a día — expl
 title: "lista de compras - Glosario Financiero"
 description: "Qué es lista de compras y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/lista-de-compras.webp"
+imageAlt: "Monedas doradas apiladas y plantas verdes creciendo en frascos de vidrio sobre fondo oscuro."
 category: "basico"
 tags: ["lista de compras", "glosario", "finanzas"]
 author: "FinMoovi"

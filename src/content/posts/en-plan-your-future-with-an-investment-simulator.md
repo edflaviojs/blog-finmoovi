@@ -3,6 +3,7 @@ title: "Plan Your Future with an Investment Simulator"
 description: "Learn how to use FinMoovi's investment simulator, visualize scenarios and tweak goals in a few clicks for safer decisions."
 tickerHeadline: "See Your Money's Future"
 image: "/images/posts/planeje-seu-futuro-com-simulador-de-investimentos.webp"
+imageAlt: "Silver laptop on wooden desk with colorful abstract screen and black mug."
 category: "dicas"
 locale: "en"
 tags: ["investment simulator","personal finance","economy","money"]
