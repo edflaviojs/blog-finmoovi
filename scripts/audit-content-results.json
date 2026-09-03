@@ -2342,6 +2342,21 @@
     }
   },
   {
+    "file": "en-installments.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-interest.md",
     "dir": "glossario",
     "severity": 0,
@@ -3604,6 +3619,21 @@
   {
     "file": "en-whatsapp-expense-control.md",
     "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-why-does-my-money-disappear-before-payday.md",
+    "dir": "posts",
     "severity": 0,
     "issues": {
       "currency": 0,
@@ -6212,6 +6242,21 @@
     }
   },
   {
+    "file": "es-parcelamiento.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-patrimonio-neto.md",
     "dir": "glossario",
     "severity": 0,
@@ -6379,6 +6424,21 @@
   {
     "file": "es-planilla-de-planificacion-financiera.md",
     "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-por-que-mi-dinero-desaparece-antes-de-que-llegue-el-salario.md",
+    "dir": "posts",
     "severity": 0,
     "issues": {
       "currency": 0,
