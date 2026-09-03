@@ -1,0 +1,117 @@
+{
+  "slug": "loop-primeiro-guardado-nunca-faca",
+  "formato": "loop16",
+  "term": "O primeiro dinheiro guardado",
+  "category": "vida",
+  "keyword": "GUARDADO",
+  "situacao": "primeiro-guardado",
+  "gancho": "nunca-faca",
+  "ganchoFamilia": "nunca faça",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "semente",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Nunca faça isso com o dinheiro guardado. Eu vi sobrar",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro guardado sobrou"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "guardado",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "semente"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Comigo aconteceu quando as contas apertaram e eu fechei o mês",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "Comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "semente"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "Contas apertaram comigo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "E aí comecei a guardar pouquinho e fiquei calmo",
+      "durationSec": 3.26,
+      "shots": [
+        {
+          "anchor": "comecei",
+          "visual": {
+            "type": "statement",
+            "text": "Guardei um pouquinho"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "guardar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "semente"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Então nunca faça isso com o dinheiro guardado que eu vi sobrar",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Nunca faça isso"
+          }
+        },
+        {
+          "anchor": "guardado",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro guardado sobrou"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}

@@ -304,5 +304,11 @@
     "gancho": "comeca-assim",
     "turno": "noite",
     "em": "2026-09-02T09:01:51.578Z"
+  },
+  {
+    "situacao": "primeiro-guardado",
+    "gancho": "nunca-faca",
+    "turno": "manha",
+    "em": "2026-09-03T09:04:29.027Z"
   }
 ]
