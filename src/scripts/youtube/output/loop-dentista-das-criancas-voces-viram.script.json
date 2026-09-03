@@ -1,0 +1,117 @@
+{
+  "slug": "loop-dentista-das-criancas-voces-viram",
+  "formato": "loop16",
+  "term": "O dentista das crianças",
+  "category": "vida",
+  "keyword": "DENTISTA",
+  "situacao": "dentista-das-criancas",
+  "gancho": "voces-viram",
+  "ganchoFamilia": "vocês viram",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "buraco",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Gente, vocês viram que o aparelho das crianças ficou caro?",
+      "durationSec": 3.71,
+      "shots": [
+        {
+          "anchor": "vocês",
+          "visual": {
+            "type": "statement",
+            "text": "O aparelho ficou caro"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "viram",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu peguei o orçamento e travei, sem saber de onde tirar.",
+      "durationSec": 4.08,
+      "shots": [
+        {
+          "anchor": "peguei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "orçamento",
+          "visual": {
+            "type": "statement",
+            "text": "O orçamento me travou"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então, em casa, cortei gastos e respirei mais calmo.",
+      "durationSec": 3.34,
+      "shots": [
+        {
+          "anchor": "cortei",
+          "visual": {
+            "type": "statement",
+            "text": "Cortei gastos em casa"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "gastos",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Agora, quando viram o aparelho, eu lembro. Respirar antes de cavar.",
+      "durationSec": 4.08,
+      "shots": [
+        {
+          "anchor": "viram",
+          "visual": {
+            "type": "statement",
+            "text": "Respirar antes de cavar"
+          }
+        },
+        {
+          "anchor": "aparelho",
+          "visual": {
+            "type": "statement",
+            "text": "O aparelho ficou caro"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.21
+}

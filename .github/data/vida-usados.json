@@ -310,5 +310,11 @@
     "gancho": "nunca-faca",
     "turno": "manha",
     "em": "2026-09-03T09:04:29.027Z"
+  },
+  {
+    "situacao": "dentista-das-criancas",
+    "gancho": "voces-viram",
+    "turno": "noite",
+    "em": "2026-09-03T09:09:35.946Z"
   }
 ]
