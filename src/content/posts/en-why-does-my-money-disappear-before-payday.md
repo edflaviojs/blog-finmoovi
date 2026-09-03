@@ -3,6 +3,7 @@ title: "Why Does My Money Disappear Before Payday?"
 description: "Discover why your balance vanishes before the next paycheck and how FinMoovi’s voice‑and‑OCR capture restores financial control in minutes."
 tickerHeadline: "The mystery of missing money"
 image: "/images/posts/por-que-meu-dinheiro-some-antes-do-salario-chegar.webp"
+imageAlt: "Laptop, coffee, and colorful abstract wave on a sunlit wooden desk."
 category: "ferramentas"
 locale: "en"
 tags: ["missing balance","expense tracking","voice capture","OCR","FinMoovi","personal budgeting","smart reports","categorize spending","financial control","personal finance"]

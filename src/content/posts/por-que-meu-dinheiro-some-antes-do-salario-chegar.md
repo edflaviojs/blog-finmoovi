@@ -3,6 +3,7 @@ title: "Por que meu dinheiro some antes do salário chegar?"
 description: "Descubra por que seu saldo desaparece antes do pagamento e como o FinMoovi, com captura por voz e OCR, devolve o controle das finanças em poucos minutos."
 tickerHeadline: "O mistério do dinheiro sumido"
 image: "/images/posts/por-que-meu-dinheiro-some-antes-do-salario-chegar.webp"
+imageAlt: "Notebook, caneca e cadernos em mesa de escritório com luz solar."
 category: "ferramentas"
 locale: "pt"
 tags: ["saldo desaparecido","controle de despesas","captura por voz","OCR","FinMoovi","orçamento pessoal","relatórios inteligentes","categorizar gastos","relatórios","controle financeiro","inteligente","finmoovi","finanças pessoais"]
