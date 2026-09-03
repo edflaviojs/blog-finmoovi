@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-03T13:07:16.277Z",
-  "sourceCursor": 2,
+  "updatedAt": "2026-09-03T14:48:00.790Z",
+  "sourceCursor": 1,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -358,18 +358,21 @@
       "category": "glossario",
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "skipped",
       "addedAt": "2026-07-27T11:01:33.052Z",
-      "finmooviHook": "Cadastre entradas em BRL, USD ou EUR e o multimoeda consolida tudo numa visão só."
+      "finmooviHook": "Cadastre entradas em BRL, USD ou EUR e o multimoeda consolida tudo numa visão só.",
+      "reason": "coberto-glossario"
     },
     {
       "keyword": "lista de compras",
       "category": "glossario",
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "used",
       "addedAt": "2026-07-27T11:01:33.052Z",
-      "finmooviHook": "No modo compras, some os itens em tempo real e saia do mercado sem estourar o orçamento."
+      "finmooviHook": "No modo compras, some os itens em tempo real e saia do mercado sem estourar o orçamento.",
+      "usedAt": "2026-09-03T14:48:00.790Z",
+      "usedBy": "glossario-auto-diario"
     },
     {
       "keyword": "gasto fixo e variavel",

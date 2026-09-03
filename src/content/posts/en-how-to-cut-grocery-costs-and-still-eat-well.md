@@ -29,7 +29,7 @@ That’s exactly when FinMoovi steps in. By snapping a photo of the receipt with
 2. **Check what you already have at home** – Open the fridge and pantry; avoid buying items you already have in stock.  
 3. **Set limits by category** – Use a rough amount, like “the price of a coffee per day” for dairy, “a minimum‑wage amount” for meat, etc.
 
-**Practical tip:** *Before you leave, open FinMoovi, create a shopping list, and turn on the “real‑time total” mode. The app will show, after each item is checked off, how much of your budget remains.*  
+**Practical tip:** *Before you leave, open FinMoovi, create a [shopping list](/en/glossario/en-shopping-list), and turn on the “real‑time total” mode. The app will show, after each item is checked off, how much of your budget remains.*  
 
 ## Use smart receipt capture
 

@@ -27,7 +27,7 @@ La solución comienza antes de que entres al supermercado. Al abrir FinMoovi y u
 
 ## Planificación de comidas como base del ahorro
 
-Cuando planificas el menú de la semana, eliminas compras impulsivas y reduces el riesgo de alimentos que caducan en la nevera. Reserva un momento el fin de semana para anotar, en FinMoovi, los platos que vas a preparar. La app permite categorizar cada comida (desayuno, almuerzo, cena) y, al pulsar “generar lista de compras”, genera automáticamente los artículos necesarios, ya con precios medios del mercado.
+Cuando planificas el menú de la semana, eliminas compras impulsivas y reduces el riesgo de alimentos que caducan en la nevera. Reserva un momento el fin de semana para anotar, en FinMoovi, los platos que vas a preparar. La app permite categorizar cada comida (desayuno, almuerzo, cena) y, al pulsar “generar [lista de compras](/es/glossario/es-lista-de-compras)”, genera automáticamente los artículos necesarios, ya con precios medios del mercado.
 
 Este hábito crea un **[presupuesto visual](/es/posts/es-como-organizar-tu-dinero-con-una-app-facil-de-usar)**: ves, categoría por categoría, cuánto costará el almuerzo del lunes comparado con la cena del viernes. ¿El resultado? Menos artículos “por casualidad” y más foco en lo que realmente vas a consumir.
 

@@ -29,7 +29,7 @@ Você chega ao caixa do supermercado carregando sacolas cheias, sente aquele pes
 2. **Verifique o que já tem em casa** – Abra a geladeira e os armários; evite comprar o que ainda está em estoque.
 3. **Estabeleça limites por categoria** – Use um valor aproximado, como “o preço de um café por dia” para laticínios, “um [salário mínimo](/posts/orcamento-com-salario-minimo-dicas-praticas)” para carnes, etc.
 
-**Dica prática:** *Antes de sair, abra o FinMoovi, crie uma lista de compras e ative o modo “total em tempo real”. O app mostrará, a cada item marcado, quanto ainda resta dentro do seu limite.*
+**Dica prática:** *Antes de sair, abra o FinMoovi, crie uma [lista de compras](/glossario/lista-de-compras) e ative o modo “total em tempo real”. O app mostrará, a cada item marcado, quanto ainda resta dentro do seu limite.*
 
 ## Use a captura inteligente de notas fiscais
 
