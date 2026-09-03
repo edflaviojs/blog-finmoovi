@@ -2599,6 +2599,206 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-09-02"
+    },
+    "por-que-meu-dinheiro-some-antes-do-salario-chegar-2.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-03"
+    },
+    "por-que-meu-dinheiro-some-antes-do-salario-chegar-4.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-03"
+    },
+    "por-que-meu-dinheiro-some-antes-do-salario-chegar-6.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-03"
+    },
+    "por-que-meu-dinheiro-some-antes-do-salario-chegar.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-03"
+    },
+    "categoria-de-despesas-empresa-inline-3.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"Opiduisaredepolithesssslary\")",
+      "em": "2026-09-03"
+    },
+    "categoria-de-despesas-empresa.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-03"
+    },
+    "categoria-de-despesas-pessoais-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-03"
+    },
+    "categoria-de-despesas-pessoais-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-03"
+    },
+    "categoria-de-despesas-pessoais.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-03"
+    },
+    "cdb-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-03"
+    },
+    "cdb-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-03"
+    },
+    "cdb.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-03"
+    },
+    "cdi.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"CDI\")",
+      "em": "2026-09-03"
+    },
+    "cheque-especial.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-03"
+    },
+    "come-cotas.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-03"
+    },
+    "consorcio.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-03"
+    },
+    "controle-de-gastos-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-03"
+    },
+    "controle-de-gastos-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-03"
+    },
+    "controle-de-gastos-whatsapp-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-03"
+    },
+    "controle-de-gastos-whatsapp-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-03"
+    },
+    "controle-de-gastos-whatsapp.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-03"
+    },
+    "controle-de-gastos.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-03"
+    },
+    "credito-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-03"
+    },
+    "credito-inline-3.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"Investing in the future, one coin at a time.\")",
+      "em": "2026-09-03"
+    },
+    "credito.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-03"
+    },
+    "custo-de-vida-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-03"
+    },
+    "custo-de-vida-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-03"
+    },
+    "custo-de-vida-na-espanha-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-03"
+    },
+    "custo-de-vida-na-espanha-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-03"
+    },
+    "custo-de-vida-na-espanha.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-03"
+    },
+    "custo-de-vida-no-paraguai-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-03"
+    },
+    "custo-de-vida-no-paraguai-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-03"
+    },
+    "custo-de-vida-no-paraguai.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-03"
+    },
+    "custo-de-vida.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-03"
+    },
+    "debentures.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-03"
+    },
+    "despesa-recorrente-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-03"
+    },
+    "despesa-recorrente-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-03"
+    },
+    "despesa-recorrente.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-03"
+    },
+    "diversificacao-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-03"
+    },
+    "diversificacao-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-03"
     }
   },
   "corrigidas": {
@@ -3049,8 +3249,20 @@
     "bull-market-e-bear-market-inline-3.webp": {
       "em": "2026-09-02",
       "motivo": "tem texto escrito (\"Market, Erail, Eucemting, 109%, 1,019, Futial, Voruls, 365\")"
+    },
+    "categoria-de-despesas-empresa-inline-3.webp": {
+      "em": "2026-09-03",
+      "motivo": "tem texto escrito (\"Opiduisaredepolithesssslary\")"
+    },
+    "cdi.webp": {
+      "em": "2026-09-03",
+      "motivo": "tem texto escrito (\"CDI\")"
+    },
+    "credito-inline-3.webp": {
+      "em": "2026-09-03",
+      "motivo": "tem texto escrito (\"Investing in the future, one coin at a time.\")"
     }
   },
-  "totalAcervo": 861,
-  "ultimaCorrida": "2026-09-02"
+  "totalAcervo": 868,
+  "ultimaCorrida": "2026-09-03"
 }
