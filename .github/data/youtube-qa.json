@@ -916,5 +916,23 @@
     ],
     "veredito": "1. **O LOOP — 9/10**  \nPrimeiro e último quadro são praticamente idênticos: mesma frase, posição e cenário. É um bom fechamento para reiniciar sem chamar atenção.\n\n2. **A FAIXA DE BAIXO — 5/10**  \nO maior problema está no **quadro 5 — 8,5s**: texto + seta ocupam bastante a parte inferior e podem ser cobertos pela interface. No quadro 6 — 10,6s, a legenda também fica relativamente baixa.\n\n3. **TEXTO POR CIMA DE TEXTO — 8/10**  \nNão há sobreposição grave visível. Os textos parecem separados, mas algumas legendas ficam pequenas e próximas demais da área inferior.\n\n4. **LEGIBILIDADE — 7/10**  \nOs títulos grandes têm ótima leitura. Já as legendas menores, como **“e fiquei calmo”** e **“isso com o”**, perdem força no celular por tamanho e contraste.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — 6/10**  \nHá bastante espaço vazio em vários quadros. O fundo é bonito, mas muitos momentos têm pouco conteúdo visual além do texto e de um elemento gráfico pequeno.\n\n6. **COERÊNCIA — 8/10**  \nOs oito quadros parecem pertencer ao mesmo vídeo: identidade visual, fundo e tipografia são consistentes, e a sequência textual avança até voltar ao início.\n\n7. **TESTE CENTRAL — 6/10**  \nAinda parece mais uma sequência de **slides animados** do que um vídeo profissional, porque vários quadros dependem quase exclusivamente de uma frase central sobre um fundo estático.\n\nNOTA GERAL: 7\nPROBLEMA 1: Quadro 5 — 8,5s: a seta gigante e o texto ocupam a faixa inferior e podem ser encobertos pela interface.\nPROBLEMA 2: Quadros 2, 3 e 6 — 2,1s, 4,2s e 10,6s: há pouco conteúdo visual, deixando grandes áreas vazias.\nPROBLEMA 3: Quadros 2, 3 e 6 — 2,1s, 4,2s e 10,6s: legendas pequenas demais para terem o mesmo impacto dos títulos.\nPRIMEIRA COISA A MUDAR: Tire informação importante da faixa inferior e use mais elementos visuais no meio da tela para o vídeo parecer menos um conjunto de slides.",
     "quando": "2026-09-03T09:08:00.222Z"
+  },
+  {
+    "slug": "loop-dentista-das-criancas-voces-viram",
+    "formato": "loop16",
+    "nota": 7,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      2.4,
+      4.8,
+      7.2,
+      9.5,
+      11.9,
+      14.3,
+      16.6
+    ],
+    "veredito": "1. **LOOP — 8/10:** O primeiro e o último quadro repetem o mesmo título principal (“O aparelho ficou caro”) no mesmo lugar. Para um loop perfeito, porém, os textos menores são diferentes.\n\n2. **FAIXA DE BAIXO — 10/10:** Não há informação importante no terço inferior; as legendas ficam bem acima da área que normalmente seria coberta pela interface.\n\n3. **TEXTO POR CIMA DE TEXTO — 9/10:** Não há sobreposição evidente nem palavras cortadas. Os elementos de texto estão bem separados.\n\n4. **LEGIBILIDADE — 8/10:** Os títulos grandes têm ótima leitura no celular. As legendas menores, em cinza, têm contraste mais fraco e podem exigir atenção.\n\n5. **TELA VIVA OU VAZIA? — 5/10:** Há muito espaço vazio, principalmente abaixo dos elementos principais. A composição fica visualmente parada.\n\n6. **COERÊNCIA — 7/10:** A identidade visual é consistente e os quadros parecem pertencer ao mesmo vídeo, mas há repetição forte dos mesmos cards e pouca mudança visual entre cenas.\n\n7. **TESTE CENTRAL — 5/10:** Pela imagem parada, parece mais uma sequência de **slides animáveis** do que um vídeo profissional, porque os cards grandes se repetem e existe muito espaço vazio.\n\nNOTA GERAL: 7\nPROBLEMA 1: Muito espaço vazio no quadro, especialmente abaixo dos textos, em praticamente todos os segundos.\nPROBLEMA 2: Repetição visual forte em 4,8–7,2s e 14,3–16,6s, fazendo parecer uma apresentação de slides.\nPROBLEMA 3: As legendas menores têm pouco contraste e ficam visualmente fracas em vários quadros.\nPRIMEIRA COISA A MUDAR: Aproveite o espaço vazio com elementos visuais maiores e mais variados, mantendo o primeiro e o último quadro visualmente quase idênticos para fortalecer o loop.",
+    "quando": "2026-09-03T09:12:37.117Z"
   }
 ]
