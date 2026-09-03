@@ -1,0 +1,208 @@
+{
+  "slug": "viral-byYCL8Tlwg8",
+  "term": "Dívida Herdada",
+  "category": "controle",
+  "keyword": "Dívida",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você ficou com *trinta mil reais de dívida* depois que um parente se foi?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "bola-de-ferro",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você ficou com trinta mil reais de dívida depois que um parente se foi? Esse dinheiro sai do seu bolso todo mês sem você ver.",
+      "durationSec": 9.6,
+      "shots": [
+        {
+          "anchor": "trinta",
+          "visual": {
+            "type": "number",
+            "text": "R$ 30.000"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "dívida",
+          "visual": {
+            "type": "statement",
+            "text": "Uma dívida que pesa"
+          }
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-de-ferro"
+          },
+          "sfx": "thud"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "E esse dinheiro vai embora nas parcelas, nos remédios, nas contas de casa, e ninguém te ensinou a cuidar disso.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "parcelas",
+          "visual": {
+            "type": "statement",
+            "text": "Parcelas que não param"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "contas",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          }
+        },
+        {
+          "anchor": "cuidar",
+          "visual": {
+            "type": "statement",
+            "text": "Você não aprendeu isso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Só que esse buraco chegou a trinta mil reais quando eu juntei tudo que já paguei.",
+      "durationSec": 6.2,
+      "shots": [
+        {
+          "anchor": "buraco",
+          "visual": {
+            "type": "statement",
+            "text": "O buraco era maior"
+          },
+          "sfx": "alert"
+        },
+        {
+          "anchor": "trinta",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 30000,
+            "prefix": "R$"
+          }
+        },
+        {
+          "anchor": "tudo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-de-ferro"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei essas parcelas no FinMoovi e ele me mostrou na hora a soma dos trinta mil reais.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "joguei",
+          "visual": {
+            "type": "app",
+            "app": "extrato",
+            "note": "Lista de parcelas e pagamentos acumulados, com os valores somando até R$ 30.000"
+          },
+          "sfx": "keyboard"
+        },
+        {
+          "anchor": "soma",
+          "visual": {
+            "type": "number",
+            "text": "R$ 30.000"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Então, quer descobrir o tamanho da sua? Procura o app FinMoovi. São sete dias grátis.",
+      "durationSec": 5.8,
+      "shots": [
+        {
+          "anchor": "descobrir",
+          "visual": {
+            "type": "statement",
+            "text": "Saiba quanto você deve"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Você tem que encarar essa conta antes que ela seque o seu bolso. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "encarar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-de-ferro"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "statement",
+            "text": "Encare a conta agora"
+          }
+        },
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          },
+          "sfx": "alert"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Descubra o tamanho da sua dívida",
+    "target": "app"
+  },
+  "totalDurationSec": 43.9
+}
