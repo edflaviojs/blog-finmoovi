@@ -934,5 +934,23 @@
     ],
     "veredito": "1. **LOOP — 8/10:** O primeiro e o último quadro repetem o mesmo título principal (“O aparelho ficou caro”) no mesmo lugar. Para um loop perfeito, porém, os textos menores são diferentes.\n\n2. **FAIXA DE BAIXO — 10/10:** Não há informação importante no terço inferior; as legendas ficam bem acima da área que normalmente seria coberta pela interface.\n\n3. **TEXTO POR CIMA DE TEXTO — 9/10:** Não há sobreposição evidente nem palavras cortadas. Os elementos de texto estão bem separados.\n\n4. **LEGIBILIDADE — 8/10:** Os títulos grandes têm ótima leitura no celular. As legendas menores, em cinza, têm contraste mais fraco e podem exigir atenção.\n\n5. **TELA VIVA OU VAZIA? — 5/10:** Há muito espaço vazio, principalmente abaixo dos elementos principais. A composição fica visualmente parada.\n\n6. **COERÊNCIA — 7/10:** A identidade visual é consistente e os quadros parecem pertencer ao mesmo vídeo, mas há repetição forte dos mesmos cards e pouca mudança visual entre cenas.\n\n7. **TESTE CENTRAL — 5/10:** Pela imagem parada, parece mais uma sequência de **slides animáveis** do que um vídeo profissional, porque os cards grandes se repetem e existe muito espaço vazio.\n\nNOTA GERAL: 7\nPROBLEMA 1: Muito espaço vazio no quadro, especialmente abaixo dos textos, em praticamente todos os segundos.\nPROBLEMA 2: Repetição visual forte em 4,8–7,2s e 14,3–16,6s, fazendo parecer uma apresentação de slides.\nPROBLEMA 3: As legendas menores têm pouco contraste e ficam visualmente fracas em vários quadros.\nPRIMEIRA COISA A MUDAR: Aproveite o espaço vazio com elementos visuais maiores e mais variados, mantendo o primeiro e o último quadro visualmente quase idênticos para fortalecer o loop.",
     "quando": "2026-09-03T09:12:37.117Z"
+  },
+  {
+    "slug": "loop-sair-do-aluguel-e-serio-que",
+    "formato": "loop16",
+    "nota": 7,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      2.1,
+      4.2,
+      6.3,
+      8.5,
+      10.6,
+      12.7,
+      14.7
+    ],
+    "veredito": "1. **O LOOP — Nota: 5/10**  \nO primeiro quadro mostra “Sair do aluguel” e o último volta para “Sair do aluguel”, mas não no mesmo enquadramento exato: o último parece uma repetição de mensagem, porém a sequência anterior não fecha naturalmente. Dá para perceber o reinício.\n\n2. **A FAIXA DE BAIXO — Nota: 8/10**  \nO terço inferior está quase sempre livre. As legendas ficam no centro inferior, mas não parecem estar escondidas pela interface do Shorts/Reels.\n\n3. **TEXTO POR CIMA DE TEXTO — Nota: 7/10**  \nNão há frases grandes sobrepostas. Porém, algumas palavras das legendas inferiores parecem muito próximas de cortes e podem ficar confusas em movimento.\n\n4. **LEGIBILIDADE — Nota: 8/10**  \nOs textos principais têm tamanho bom e alto contraste. As legendas menores embaixo podem ficar pequenas em celulares menores.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — Nota: 6/10**  \nExiste bastante espaço vazio no fundo roxo. O design é limpo, mas alguns quadros parecem parados demais, como uma apresentação.\n\n6. **COERÊNCIA — Nota: 9/10**  \nOs quadros parecem fazer parte do mesmo vídeo: mesma identidade visual, mesma paleta e a história avança com a ideia de sair do aluguel.\n\n7. **TESTE CENTRAL — Nota: 6/10**  \nParece mais uma sequência de slides animados do que um vídeo profissional, porque cada quadro depende muito de texto parado e pouca ação visual.\n\nNOTA GERAL: 7  \nPROBLEMA 1: Pouca sensação de vídeo real e muita aparência de slides, principalmente nos quadros 2, 6 e 7 (4.2s, 10.6s e 12.7s).  \nPROBLEMA 2: O loop não é invisível; o quadro inicial e final repetem a ideia, mas não criam uma continuidade perfeita (0.1s e 14.7s).  \nPROBLEMA 3: Falta mais preenchimento visual e movimento narrativo nos fundos vazios ao longo do vídeo.  \nPRIMEIRA COISA A MUDAR: Criar uma transição visual contínua entre o último e o primeiro quadro para o reinício parecer parte da história.",
+    "quando": "2026-09-04T09:06:07.205Z"
   }
 ]
