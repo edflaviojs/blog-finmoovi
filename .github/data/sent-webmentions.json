@@ -1222,5 +1222,113 @@
     "target": "https://schema.org",
     "status": "no-endpoint",
     "sentAt": "2026-08-28T21:00:34.321Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/como-cortar-a-conta-de-luz-e-ganhar-tranquilidade/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-09-04T13:49:35.175Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/como-cortar-o-desperdicio-de-agua-em-casa-e-poupar-no-bolso/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-09-04T13:49:35.281Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/como-reduzir-o-consumo-de-agua-em-casa-e-economizar-dinheiro/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-09-04T13:49:35.315Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/en-finmoovi-vs-organizze-which-is-better-in-2026/",
+    "target": "https://www.investopedia.com/personal-finance-apps-4689740",
+    "status": "no-endpoint",
+    "sentAt": "2026-09-04T13:49:35.478Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/en-how-to-cut-household-water-waste-and-save-money-2026/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-09-04T13:49:35.511Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/en-how-to-cut-your-electricity-bill-and-gain-peace-of-mind/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-09-04T13:49:35.541Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/en-how-to-reduce-household-water-use-and-save-money/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-09-04T13:49:35.569Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/en-plan-your-future-with-an-investment-simulator/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-09-04T13:49:35.634Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/en-why-does-my-money-disappear-before-payday/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-09-04T13:49:35.741Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/es-como-reducir-el-consumo-de-agua-en-casa-y-ahorrar-dinero/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-09-04T13:49:35.770Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/es-como-reducir-el-desperdicio-de-agua-en-casa-y-ahorrar-en-el/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-09-04T13:49:35.805Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/es-como-reducir-la-factura-de-luz-y-ganar-tranquilidad/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-09-04T13:49:35.847Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/es-finmoovi-vs-organizze-cual-es-el-mejor-en-2026/",
+    "target": "https://www.investopedia.com/personal-finance-apps-4689740",
+    "status": "no-endpoint",
+    "sentAt": "2026-09-04T13:49:35.912Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/es-planifica-tu-futuro-con-el-simulador-de-inversiones/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-09-04T13:49:36.047Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/es-por-que-mi-dinero-desaparece-antes-de-que-llegue-el-salario/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-09-04T13:49:36.119Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/finmoovi-vs-organizze-qual-o-melhor-em-2026/",
+    "target": "https://www.investopedia.com/personal-finance-apps-4689740",
+    "status": "no-endpoint",
+    "sentAt": "2026-09-04T13:49:36.224Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/planeje-seu-futuro-com-simulador-de-investimentos/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-09-04T13:49:36.291Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/por-que-meu-dinheiro-some-antes-do-salario-chegar/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-09-04T13:49:36.391Z"
   }
 ]
