@@ -3,6 +3,7 @@ title: "Smart Water Management at Home: Practical Tips for 2026"
 description: "Learn simple ways to cut water waste at home, track usage with FinMoovi, and turn your water bill into real savings."
 tickerHeadline: "The water draining your wallet"
 image: "/images/posts/gestao-inteligente-da-agua-em-casa-dicas-praticas-para-2026.webp"
+imageAlt: "Four smiling people on a couch holding phones and a tablet."
 category: "dicas"
 locale: "en"
 tags: ["how to save water","personal finance","savings","budgeting"]

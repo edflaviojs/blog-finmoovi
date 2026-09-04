@@ -4,6 +4,7 @@ definition: "Qué es Fondo de Garantía del Tiempo de Servicio (FGTS) y cómo ap
 title: "Fondo de Garantía del Tiempo de Servicio (FGTS) - Glosario Financiero"
 description: "Qué es Fondo de Garantía del Tiempo de Servicio (FGTS) y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/fgts.webp"
+imageAlt: "Monedas doradas, gráfico de barras con flecha ascendente y planta creciendo en un frasco."
 category: "basico"
 tags: ["Fondo de Garantía del Tiempo de Servicio (FGTS)", "glosario", "finanzas"]
 author: "FinMoovi"

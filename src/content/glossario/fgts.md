@@ -4,6 +4,7 @@ definition: "O que é fgts e como isso aparece no seu dia a dia — explicado de
 title: "fgts - Glossário Financeiro"
 description: "O que é fgts e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/fgts.webp"
+imageAlt: "moedas douradas, gráfico de barras com seta ascendente e planta crescendo em cofre de vidro"
 category: "basico"
 tags: ["fgts", "glossário", "finanças"]
 author: "FinMoovi"

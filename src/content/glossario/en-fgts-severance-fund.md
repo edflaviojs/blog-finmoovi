@@ -4,6 +4,7 @@ definition: "What FGTS (Severance Fund) is and how it shows up in your everyday 
 title: "FGTS (Severance Fund) - Financial Glossary"
 description: "What FGTS (Severance Fund) is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/fgts.webp"
+imageAlt: "Gold coins, rising arrow chart, and plant in glass jar on dark background"
 category: "basico"
 tags: ["FGTS (Severance Fund)", "glossary", "finance"]
 author: "FinMoovi"

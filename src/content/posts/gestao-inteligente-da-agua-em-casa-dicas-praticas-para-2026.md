@@ -3,6 +3,7 @@ title: "Gestão inteligente da água em casa: dicas práticas para 2026"
 description: "Descubra como cortar o desperdício de água em casa com ações simples, usando o app FinMoovi para monitorar gastos e transformar sua conta em economia real."
 tickerHeadline: "A água que sai do seu bolso"
 image: "/images/posts/gestao-inteligente-da-agua-em-casa-dicas-praticas-para-2026.webp"
+imageAlt: "Quatro pessoas sorrindo em sala, usando tablets, com plantas verdes ao fundo."
 category: "dicas"
 locale: "pt"
 tags: ["de como economizar água","finanças pessoais","economia","dinheiro"]

@@ -3,6 +3,7 @@ title: "Gestión inteligente del agua en casa: consejos prácticos para 2026"
 description: "Descubre cómo reducir el desperdicio de agua en casa con acciones simples, usando la app FinMoovi para monitorizar gastos y convertir tu factura en ahorro real."
 tickerHeadline: "El agua que sale de tu bolsillo"
 image: "/images/posts/gestao-inteligente-da-agua-em-casa-dicas-praticas-para-2026.webp"
+imageAlt: "Cuatro personas sonrientes en sofá, dos con dispositivos móviles, plantas verdes."
 category: "dicas"
 locale: "es"
 tags: ["cómo ahorrar agua","finanzas personales","ahorro","dinero"]
