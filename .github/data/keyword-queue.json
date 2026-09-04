@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-03T14:48:00.790Z",
+  "updatedAt": "2026-09-04T13:01:12.681Z",
   "sourceCursor": 1,
   "entries": [
     {
@@ -1567,9 +1567,11 @@
       "category": null,
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "used",
       "addedAt": "2026-08-04T15:12:11.253Z",
-      "finmooviHook": "enviado via /status 04/08"
+      "finmooviHook": "enviado via /status 04/08",
+      "usedAt": "2026-09-04T13:01:12.681Z",
+      "usedBy": "gerar-dicas-financeiras"
     },
     {
       "keyword": "de economizar água",
