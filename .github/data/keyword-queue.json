@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T13:01:12.681Z",
+  "updatedAt": "2026-09-04T14:35:40.841Z",
   "sourceCursor": 1,
   "entries": [
     {
@@ -861,9 +861,10 @@
       "category": "glossario",
       "priority": 1,
       "source": "manual",
-      "status": "pending",
+      "status": "skipped",
       "addedAt": "2026-08-04T14:48:06.708Z",
-      "finmooviHook": "enviado via /status 04/08"
+      "finmooviHook": "enviado via /status 04/08",
+      "reason": "nome-proprio-local"
     },
     {
       "keyword": "como funciona a anuidade do cartão",
