@@ -395,6 +395,10 @@
     "tentativas": 1,
     "ultimaSeveridade": 0
   },
+  "en-plan-your-future-with-an-investment-simulator.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 1
+  },
   "en-poupanca.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
@@ -1046,6 +1050,10 @@
   "es-planeamiento-financiero-para-parejas.md": {
     "tentativas": 1,
     "ultimaSeveridade": 0
+  },
+  "es-planifica-tu-futuro-con-el-simulador-de-inversiones.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 1
   },
   "es-poupanca.md": {
     "tentativas": 1,
