@@ -1,6 +1,7 @@
 ---
 term: Debentures
 image: /images/glossario/en-debentures.webp
+imageAlt: "Gold coins and pink bars on purple background with plant sprouting from jar."
 definition: >-
   Debt securities issued by companies to raise capital. The investor lends money
   to the company in exchange for interest.
