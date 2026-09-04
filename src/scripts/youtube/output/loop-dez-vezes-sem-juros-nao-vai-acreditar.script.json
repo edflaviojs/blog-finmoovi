@@ -1,0 +1,117 @@
+{
+  "slug": "loop-dez-vezes-sem-juros-nao-vai-acreditar",
+  "formato": "loop16",
+  "term": "O sem juros que virou rombo",
+  "category": "vida",
+  "keyword": "PARCELA",
+  "situacao": "dez-vezes-sem-juros",
+  "gancho": "nao-vai-acreditar",
+  "ganchoFamilia": "não vai acreditar",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "mochila-pedras",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você não vai acreditar, mas ontem abri minha fatura assustado.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "acreditar",
+          "visual": {
+            "type": "statement",
+            "text": "A fatura me assustou"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "ontem",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu tinha comprado aos poucos, e a fatura seguinte veio pesada demais.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "tinha",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "comprado",
+          "visual": {
+            "type": "statement",
+            "text": "A conta ficou pesada"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então parei de parcelar, conferi tudo no aplicativo e cortei alguns excessos.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "parei",
+          "visual": {
+            "type": "statement",
+            "text": "Conferi tudo no aplicativo"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "parcelar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Hoje, quando vejo a fatura, já fico assustado.",
+      "durationSec": 2.9,
+      "shots": [
+        {
+          "anchor": "fatura",
+          "visual": {
+            "type": "statement",
+            "text": "A fatura ainda assusta"
+          }
+        },
+        {
+          "anchor": "assustado",
+          "visual": {
+            "type": "statement",
+            "text": "A fatura me assustou"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
