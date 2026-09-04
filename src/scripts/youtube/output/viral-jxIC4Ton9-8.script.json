@@ -1,0 +1,233 @@
+{
+  "slug": "viral-jxIC4Ton9-8",
+  "term": "Investir pouco",
+  "category": "investimento",
+  "keyword": "Investir",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você acha que precisa de *muito dinheiro* pra começar a investir?"
+  },
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "semente",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você acha que precisa de muito dinheiro pra começar a investir? Não precisa. Dá pra começar com pouco.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "muito",
+          "visual": {
+            "type": "statement",
+            "text": "Começar não exige muito"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "investir",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "semente"
+          }
+        },
+        {
+          "anchor": "pouco",
+          "visual": {
+            "type": "statement",
+            "text": "Pouco também pode começar"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu sei como é. Você paga as contas, compra comida, e no fim do mês sobra pouco pra pensar nisso.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "Você",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          }
+        },
+        {
+          "anchor": "contas",
+          "visual": {
+            "type": "statement",
+            "text": "As contas vêm primeiro"
+          }
+        },
+        {
+          "anchor": "sobra",
+          "visual": {
+            "type": "number",
+            "text": "R$ 100"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "nisso",
+          "visual": {
+            "type": "icon",
+            "icon": "mind"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Só que esse pouco já é um começo. Você separa uma quantia que cabe no seu bolso, e já tá investindo.",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "pouco",
+          "visual": {
+            "type": "number",
+            "text": "R$ 50"
+          }
+        },
+        {
+          "anchor": "começo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "semente"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "quantia",
+          "visual": {
+            "type": "statement",
+            "text": "Um valor que cabe"
+          }
+        },
+        {
+          "anchor": "investindo",
+          "visual": {
+            "type": "icon",
+            "icon": "growth"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu coloquei uma quantia pequena na calculadora do FinMoovi, e ele me mostrou opções de investimento que cabiam nesse valor.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "coloquei",
+          "visual": {
+            "type": "app",
+            "app": "calculadora",
+            "note": "Calculadora do FinMoovi exibindo uma quantia pequena inserida"
+          },
+          "sfx": "keyboard"
+        },
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "semente"
+          }
+        },
+        {
+          "anchor": "opções",
+          "visual": {
+            "type": "app",
+            "app": "calculadora",
+            "note": "Resultado mostrando opções de investimento compatíveis com o valor"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "statement",
+            "text": "Veja o que cabe pra você"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Pra começar a investir, comece com o que cabe no seu bolso. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "começar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "semente"
+          }
+        },
+        {
+          "anchor": "bolso",
+          "visual": {
+            "type": "statement",
+            "text": "Comece dentro da sua realidade"
+          }
+        },
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "icon",
+            "icon": "shield"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "outros",
+          "visual": {
+            "type": "statement",
+            "text": "Seu dinheiro merece controle"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja quanto cabe no seu bolso",
+    "target": "app"
+  },
+  "totalDurationSec": 41.5
+}
