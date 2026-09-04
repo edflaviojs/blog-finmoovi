@@ -1,14 +1,14 @@
 # GSC — Monitor de Indexação
 
-Gerado em: 2026-09-03T12:29:54.051Z
+Gerado em: 2026-09-04T12:30:48.484Z
 Propriedade: https://blog.finmoovi.com/
 
 ## Resumo
 
-- **716/760** URLs indexadas
-- **44** não indexadas
-- **0** com erro na inspeção
-- **36** página(s) de conteúdo fora do índice há ≥7 dias
+- **739/769** URLs indexadas
+- **29** não indexadas
+- **1** com erro na inspeção
+- **29** página(s) de conteúdo fora do índice há ≥7 dias
 
 ## Sitemap
 
@@ -17,8 +17,8 @@ Propriedade: https://blog.finmoovi.com/
 ## Por motivo (não indexadas)
 
 - Duplicate, Google chose different canonical than user: 8
-- Discovered - currently not indexed: 27
-- Crawled - currently not indexed: 4
+- Discovered - currently not indexed: 15
+- Crawled - currently not indexed: 1
 - URL is unknown to Google: 5
 
 ## Páginas de conteúdo há mais tempo fora do índice
@@ -27,7 +27,6 @@ Propriedade: https://blog.finmoovi.com/
 - `https://blog.finmoovi.com/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena/` — Duplicate, Google chose different canonical than user (desde 2026-08-07)
 - `https://blog.finmoovi.com/posts/como-economizar-nas-ferias-de-julho-sem-abrir-mao-da/` — Duplicate, Google chose different canonical than user (desde 2026-08-07)
 - `https://blog.finmoovi.com/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso/` — Discovered - currently not indexed (desde 2026-07-30)
-- `https://blog.finmoovi.com/posts/como-lidar-com-a-volatilidade-nas-financas-pessoais-em-2026/` — Discovered - currently not indexed (desde 2026-08-20)
 - `https://blog.finmoovi.com/posts/como-pequenas-acoes-podem-mudar-suas-financas-em-2026/` — Crawled - currently not indexed (desde 2026-08-21)
 - `https://blog.finmoovi.com/posts/como-reduzir-o-peso-do-seu-financiamento-em-2026-com/` — Duplicate, Google chose different canonical than user (desde 2026-08-07)
 - `https://blog.finmoovi.com/posts/como-usar-a-calculadora-de-juros-compostos-em-2026-e/` — Duplicate, Google chose different canonical than user (desde 2026-08-07)
@@ -35,27 +34,21 @@ Propriedade: https://blog.finmoovi.com/
 - `https://blog.finmoovi.com/posts/fundos-imobiliarios-para-iniciantes-guia-completo/` — Discovered - currently not indexed (desde 2026-07-30)
 - `https://blog.finmoovi.com/posts/investimentos-para-o-segundo-semestre-estrategias-praticas/` — Duplicate, Google chose different canonical than user (desde 2026-08-07)
 - `https://blog.finmoovi.com/posts/negociar-descontos-em-contas-fixas/` — Discovered - currently not indexed (desde 2026-08-12)
-- `https://blog.finmoovi.com/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas/` — URL is unknown to Google (desde 2026-07-30)
-- `https://blog.finmoovi.com/en/posts/en-how-to-manage-personal-finance-volatility-in-2026/` — Discovered - currently not indexed (desde 2026-08-20)
+- `https://blog.finmoovi.com/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas/` — Discovered - currently not indexed (desde 2026-07-30)
+- `https://blog.finmoovi.com/en/posts/en-how-to-manage-personal-finance-volatility-in-2026/` — URL is unknown to Google (desde 2026-08-20)
 - `https://blog.finmoovi.com/en/posts/en-real-estate-funds-for-beginners-complete-guide/` — Duplicate, Google chose different canonical than user (desde 2026-08-02)
 - `https://blog.finmoovi.com/glossario/bolsa-de-valores/` — Discovered - currently not indexed (desde 2026-07-30)
-- `https://blog.finmoovi.com/glossario/come-cotas/` — URL is unknown to Google (desde 2026-07-30)
-- `https://blog.finmoovi.com/glossario/controle-de-gastos/` — Discovered - currently not indexed (desde 2026-08-22)
 - `https://blog.finmoovi.com/glossario/custo-de-vida-no-paraguai/` — Discovered - currently not indexed (desde 2026-08-16)
-- `https://blog.finmoovi.com/glossario/custo-de-vida/` — Discovered - currently not indexed (desde 2026-08-26)
 - `https://blog.finmoovi.com/glossario/hedge/` — Discovered - currently not indexed (desde 2026-07-30)
 - `https://blog.finmoovi.com/glossario/planejamento-financeiro-planilha/` — URL is unknown to Google (desde 2026-08-15)
 - `https://blog.finmoovi.com/glossario/score-de-credito/` — Discovered - currently not indexed (desde 2026-07-30)
-- `https://blog.finmoovi.com/glossario/usura/` — Discovered - currently not indexed (desde 2026-07-30)
 - `https://blog.finmoovi.com/en/glossario/en-bolsa-de-valores/` — Discovered - currently not indexed (desde 2026-07-30)
-- `https://blog.finmoovi.com/en/glossario/en-come-cotas/` — Crawled - currently not indexed (desde 2026-07-30)
-- `https://blog.finmoovi.com/en/glossario/en-financial-planning-spreadsheet/` — Discovered - currently not indexed (desde 2026-08-15)
-- `https://blog.finmoovi.com/en/glossario/en-financial-value/` — Discovered - currently not indexed (desde 2026-07-30)
+- `https://blog.finmoovi.com/en/glossario/en-financial-planning-spreadsheet/` — URL is unknown to Google (desde 2026-08-15)
+- `https://blog.finmoovi.com/en/glossario/en-financial-value/` — URL is unknown to Google (desde 2026-07-30)
 - `https://blog.finmoovi.com/en/glossario/en-hedge/` — Discovered - currently not indexed (desde 2026-07-30)
-- `https://blog.finmoovi.com/en/glossario/en-kyc/` — Discovered - currently not indexed (desde 2026-07-30)
 - `https://blog.finmoovi.com/en/glossario/en-lc/` — URL is unknown to Google (desde 2026-07-30)
 - `https://blog.finmoovi.com/en/glossario/en-usura/` — Discovered - currently not indexed (desde 2026-07-30)
 - `https://blog.finmoovi.com/es/glossario/es-come-cotas/` — Discovered - currently not indexed (desde 2026-07-30)
-- `https://blog.finmoovi.com/es/glossario/es-debentures/` — URL is unknown to Google (desde 2026-07-30)
+- `https://blog.finmoovi.com/es/glossario/es-debentures/` — Discovered - currently not indexed (desde 2026-07-30)
 - `https://blog.finmoovi.com/es/glossario/es-lc/` — Discovered - currently not indexed (desde 2026-07-30)
 - `https://blog.finmoovi.com/es/glossario/es-planilla-de-planificacion-financiera/` — Discovered - currently not indexed (desde 2026-08-15)
