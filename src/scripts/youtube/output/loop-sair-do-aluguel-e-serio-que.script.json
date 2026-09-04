@@ -1,0 +1,117 @@
+{
+  "slug": "loop-sair-do-aluguel-e-serio-que",
+  "formato": "loop16",
+  "term": "Sair do aluguel",
+  "category": "vida",
+  "keyword": "ALUGUEL",
+  "situacao": "sair-do-aluguel",
+  "gancho": "e-serio-que",
+  "ganchoFamilia": "é sério que",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ralo",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "É sério que ninguém está falando de sair do aluguel?",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "sério",
+          "visual": {
+            "type": "statement",
+            "text": "Sair do aluguel"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "ninguém",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu pagava aluguel todo mês, e a conta sempre subia comigo.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "pagava",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "aluguel",
+          "visual": {
+            "type": "statement",
+            "text": "O aluguel sempre subia"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então, comecei a guardar um pouquinho para comprar meu cantinho.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "comecei",
+          "visual": {
+            "type": "statement",
+            "text": "Meu próprio cantinho"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "guardar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "E agora entendo por que ninguém fala de sair do aluguel.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "entendo",
+          "visual": {
+            "type": "statement",
+            "text": "Ninguém fala disso"
+          }
+        },
+        {
+          "anchor": "ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "Sair do aluguel"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
