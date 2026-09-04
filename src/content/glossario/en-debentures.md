@@ -1,13 +1,17 @@
 ---
-term: "Debentures"
-image: "/images/glossario/en-debentures.webp"
-imageAlt: "A dark blue background with a collection of coins, a piggy bank, and a plant in a glass jar."
-definition: "Debt securities issued by companies to raise capital. The investor lends money to the company in exchange for interest."
-category: "investimentos"
-locale: "en"
-translationKey: "glossario-debentures"
-relatedTerms: ["Renda Fixa", "CDI", "Tesouro Direto"]
-publishedAt: 2026-05-19
+term: Debentures
+image: /images/glossario/en-debentures.webp
+definition: >-
+  Debt securities issued by companies to raise capital. The investor lends money
+  to the company in exchange for interest.
+category: investimentos
+locale: en
+translationKey: glossario-debentures
+relatedTerms:
+  - Renda Fixa
+  - CDI
+  - Tesouro Direto
+publishedAt: 2026-05-19T00:00:00.000Z
 readingTime: 2
 ---
 
