@@ -1,13 +1,17 @@
 ---
-term: "PIX"
-image: "/images/glossario/en-pix.webp"
-imageAlt: "Gold coins, yellow bars, and plant sprout on blue pink background."
-definition: "Brazil's instant payment system created by the Central Bank. Allows free transfers 24/7 between any bank accounts."
-category: "basico"
-locale: "en"
-translationKey: "glossario-pix"
-relatedTerms: ["Câmbio", "IOF", "Score de Crédito"]
-publishedAt: 2026-05-19
+term: PIX
+image: /images/glossario/en-pix.webp
+definition: >-
+  Brazil's instant payment system created by the Central Bank. Allows free
+  transfers 24/7 between any bank accounts.
+category: basico
+locale: en
+translationKey: glossario-pix
+relatedTerms:
+  - Câmbio
+  - IOF
+  - Score de Crédito
+publishedAt: 2026-05-19T00:00:00.000Z
 readingTime: 2
 ---
 
