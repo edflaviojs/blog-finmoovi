@@ -19,7 +19,7 @@ seo:
   keywords: ["saldo desaparecido","control de gastos","captura por voz","OCR","FinMoovi","presupuesto personal","informes inteligentes","categorizar gastos","informes","control financiero","inteligente","finmoovi","finanzas personales"]
 ---
 
-Tu [dinero desaparece](/es/posts/es-tambien-te-quedas-sin-saber-a-donde-fue-tu-dinero-al-final) porque los gastos no se registran y el presupuesto queda invisible; sin saber en qué se ha gastado cada céntimo, los pequeños desembolsos se acumulan y el saldo se esfuma antes del próximo pago. Esto ocurre incluso si tienes un salario entre €1,500 y €4,000 al mes y mantienes bajo control el alquiler y los gastos básicos.
+Tu [dinero desaparece](/es/posts/es-tambien-te-quedas-sin-saber-a-donde-fue-tu-dinero-al-final) porque los gastos no se registran y el presupuesto queda invisible; sin saber en qué se ha gastado cada céntimo, los pequeños desembolsos se acumulan y el saldo se esfuma antes del próximo pago. Esto ocurre incluso si tienes un salario entre €1,500 y €4,000 al mes y mantienes bajo control el [alquiler](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026) y los gastos básicos.
 
 ## ¿Qué está pasando con tu dinero?
 Imagina la situación: recibes el pago, haces una [planificación](/es/posts/es-presupuesto-con-salario-minimo-consejos-practicos) rápida — “ahora cabe un café al día, el alquiler y el transporte” — y, al llegar a la mitad del mes, el extracto muestra casi nada. La sensación de que el dinero “se ha escapado” es muy común. Esta subestimación crea un agujero en el [flujo de caja](/es/glossario/es-flujo-de-caja), dejando el saldo casi nulo antes del próximo pago.

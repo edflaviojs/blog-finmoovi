@@ -41,7 +41,7 @@ María recibió un salario de €810 vía PIX y, la misma noche, transfirió €
 El TED (Transferencia Electrónica Disponible) es un servicio tradicional de transferencia entre bancos diferentes, regulado por el Banco Central. Solo puede usarse para valores superiores a €180 y tiene hora de corte: las órdenes enviadas hasta las 17 h (hora local) se compensan el mismo día hábil; después de esa hora, la transferencia solo ocurre el siguiente día hábil.
 
 - **Costo:** la mayoría de las instituciones cobra entre €0,36 y €1,08 por operación para personas físicas. Algunas fintechs ofrecen TED gratuito en paquetes premium.  
-- **Límite:** generalmente no hay límite máximo, lo que lo hace ideal para grandes transacciones, como la venta de un coche o el pago de alquiler.  
+- **Límite:** generalmente no hay límite máximo, lo que lo hace ideal para grandes transacciones, como la venta de un coche o el pago de [alquiler](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026).  
 - **Horario:** depende de la hora de corte del banco; fuera del horario comercial, la operación solo se procesará el próximo día hábil.  
 - **Seguridad:** la compensación ocurre a través de la red de pagos del Banco Central, con auditoría rigurosa.
 

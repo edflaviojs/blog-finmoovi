@@ -48,7 +48,7 @@ That quick process turns a sheet of numbers into a clear dashboard that guides y
 ### Daily monitoring with FinMoovi
 With the **[cash flow](/en/glossario/en-cash-flow) and reports** feature, FinMoovi folds your water bill into your overall financial picture. You’ll see, alongside food and transport expenses, how much water is eating into your budget. This view helps you balance priorities: if water costs are close to a daily coffee, it might be time to tighten habits.
 
-The **[multi‑currency](/en/posts/en-digital-bank-vs-major-bank-which-is-worth-it-in-2026)** mode also ensures that, whether you’re traveling or getting paid in another currency, the comparison still makes sense because the app automatically converts the amounts. So the savings you achieve on water flow straight into relief for your wallet, no matter the currency of your paycheck.
+The **[multi‑currency](/en/posts/en-digital-bank-vs-major-bank-which-is-worth-it-in-2026)** mode also ensures that, whether you’re traveling or getting paid in another currency, the [comparison](/en/posts/en-rent-vs-mortgage-which-is-worth-it-in-2026) still makes sense because the app automatically converts the amounts. So the savings you achieve on water flow straight into relief for your wallet, no matter the currency of your paycheck.
 
 ### Start today
 Change begins with a tiny step: open FinMoovi, go to **Smart Capture**, photograph your latest water bill, and let the app generate the report. Then set an alert for when consumption rises more than 10 % above the average of the past three months. That five‑minute exercise could be the launchpad for cutting waste and putting money back into your budget.

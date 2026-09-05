@@ -33,7 +33,7 @@ The fix starts with a simple, visual, and—most importantly—automatic record.
 **Practical tip:** before you open any document, jot down on a scrap of paper everything that left your wallet in the last 24 hours. This creates a “mental map” that helps you build a logical spreadsheet.
 
 ## Building your own expense spreadsheet
-1. **Set the main categories** – food, transportation, housing, leisure, health, [debt](/en/glossario/en-debt) payments, and emergency reserve.
+1. **Set the main categories** – food, transportation, [housing](/en/posts/en-rent-vs-mortgage-which-is-worth-it-in-2026), leisure, health, [debt](/en/glossario/en-debt) payments, and emergency reserve.
 2. **Create monthly columns** – January to December, or simply 1 to 30 for each day of the month if you prefer a daily view.
 3. **Add an “Expected amount” column** to compare what you planned versus what you actually spent.
 

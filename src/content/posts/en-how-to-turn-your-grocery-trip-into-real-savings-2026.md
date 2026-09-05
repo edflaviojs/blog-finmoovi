@@ -55,7 +55,7 @@ Many shoppers fall into the “buy because it’s on sale” trap. FinMoovi help
 
 ![Take advantage of promotions without breaking the budget](/images/posts/como-transformar-a-ida-ao-supermercado-em-economia-real-2026-4.webp)
 
-In addition, the **multicurrency** feature lets you record prices in different currencies—handy for travelers or anyone buying imported goods. This makes value comparison clearer and prevents surprises when you convert costs later.
+In addition, the **multicurrency** feature lets you record prices in different currencies—handy for travelers or anyone buying imported goods. This makes value [comparison](/en/posts/en-rent-vs-mortgage-which-is-worth-it-in-2026) clearer and prevents surprises when you convert costs later.
 
 ---
 

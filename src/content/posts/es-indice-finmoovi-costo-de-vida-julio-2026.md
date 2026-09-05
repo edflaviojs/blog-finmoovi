@@ -26,7 +26,7 @@ En julio de 2026, el [costo de vida](/es/posts/es-indice-finmoovi-costo-de-vida-
 | --- | --- | --- |
 | Índice general (índice de precios al consumidor) | 0,07% | 4,44% |
 | Alimentos y bebidas | -0,67% | 3,40% |
-| Vivienda | 0,99% | 5,93% |
+| [Vivienda](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026) | 0,99% | 5,93% |
 | Artículos del hogar | 0,07% | 0,67% |
 | Vestuario | -0,66% | 3,87% |
 | Transportes | 0,05% | 3,64% |

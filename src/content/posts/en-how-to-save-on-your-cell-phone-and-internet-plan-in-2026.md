@@ -37,7 +37,7 @@ Calling customer service and requesting an adjustment can save you 10 % to 20�
 When you’re at home or in places with free Wi‑Fi, turn off 4G/5G. Data‑usage settings on smartphones let you block apps that consume a lot of bandwidth (streaming, social media) when there’s no Wi‑Fi. This practice can cut monthly consumption by 2 GB to 5 GB, avoiding extra charges.
 
 ## Switch Provider or Plan
-If negotiation doesn’t work, research competitors. Smaller carriers often offer cheaper plans with sufficient coverage for urban areas. Use a plan comparison tool to find the best cost‑benefit ratio. Switching plans can save up to $16 per month.
+If negotiation doesn’t work, research competitors. Smaller carriers often offer cheaper plans with sufficient coverage for urban areas. Use a plan [comparison](/en/posts/en-rent-vs-mortgage-which-is-worth-it-in-2026) tool to find the best cost‑benefit ratio. Switching plans can save up to $16 per month.
 
 ![Use smart Wi‑Fi](/images/posts/como-economizar-no-plano-de-celular-e-internet-em-2026-4.webp)
 

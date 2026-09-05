@@ -87,7 +87,7 @@ If you type “ted pix” into Google you’re probably looking for a quick answ
 
 ## TED vs PIX: Quick Take
 
-If you type “ted pix” into Google you’re probably looking for a side‑by‑side comparison that tells you which method to reach for in everyday life. Here’s the bottom line: use PIX for anything that needs to move fast, stay within Brazil, and doesn’t require a formal bank‑to‑bank relationship. It works 24/7, even on holidays, and the recipient gets the money almost instantly.  
+If you type “ted pix” into Google you’re probably looking for a side‑by‑side [comparison](/en/posts/en-rent-vs-mortgage-which-is-worth-it-in-2026) that tells you which method to reach for in everyday life. Here’s the bottom line: use PIX for anything that needs to move fast, stay within Brazil, and doesn’t require a formal bank‑to‑bank relationship. It works 24/7, even on holidays, and the recipient gets the money almost instantly.  
 
 TED, on the other hand, is the go‑to when you’re sending larger sums to another bank and you need a guaranteed settlement record for accounting or tax purposes. The transfer can take a few hours, but it lands in the recipient’s account the same business day, and you get a clear proof of payment that many institutions still prefer.  
 

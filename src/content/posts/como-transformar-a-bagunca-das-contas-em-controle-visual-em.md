@@ -50,7 +50,7 @@ A primeira atitude para organizar as [finanças pessoais](/posts/5-alternativas-
 
 ## Crie categorias que façam sentido
 
-Categorias genéricas como “alimentação” ou “transporte” são úteis, mas muitas vezes ficam vagas demais. Experimente dividir “alimentação” em “supermercado”, “lanches fora” e “cafés”. Da mesma forma, “moradia” pode ser “aluguel”, “contas de serviços” e “manutenção”. Quando as categorias refletem a realidade do seu dia a dia, o cérebro reconhece rapidamente onde cada gasto se encaixa, facilitando a visualização no app.
+Categorias genéricas como “alimentação” ou “transporte” são úteis, mas muitas vezes ficam vagas demais. Experimente dividir “alimentação” em “supermercado”, “lanches fora” e “cafés”. Da mesma forma, “moradia” pode ser “[aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026)”, “contas de serviços” e “manutenção”. Quando as categorias refletem a realidade do seu dia a dia, o cérebro reconhece rapidamente onde cada gasto se encaixa, facilitando a visualização no app.
 
 ![Crie categorias que façam sentido](/images/posts/como-transformar-a-bagunca-das-contas-em-controle-visual-em--2.webp)
 

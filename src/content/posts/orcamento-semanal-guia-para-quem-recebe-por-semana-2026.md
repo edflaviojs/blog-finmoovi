@@ -37,7 +37,7 @@ seo:
     - orçamento doméstico para quem recebe por semana
 ---
 
-Imagine a manhã de segunda‑feira: o alarme toca, você corre para o trabalho, e, ao chegar em casa, abre a caixa de correio e encontra a conta de luz, o boleto do aluguel e o aviso de que o carro precisa de manutenção. No meio desse turbilhão, ainda tem que dividir o dinheiro que acabou de entrar – aquele salário que chega toda sexta‑feira – entre as despesas da casa, da alimentação e ainda reservar um pouco para o futuro. A sensação de não saber para onde foi o último centavo é quase universal, principalmente quando a renda vem em parcelas semanais.
+Imagine a manhã de segunda‑feira: o alarme toca, você corre para o trabalho, e, ao chegar em casa, abre a caixa de correio e encontra a conta de luz, o boleto do [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026) e o aviso de que o carro precisa de manutenção. No meio desse turbilhão, ainda tem que dividir o dinheiro que acabou de entrar – aquele salário que chega toda sexta‑feira – entre as despesas da casa, da alimentação e ainda reservar um pouco para o futuro. A sensação de não saber para onde foi o último centavo é quase universal, principalmente quando a renda vem em parcelas semanais.
 
 É justamente nessa situação que o conceito de **orçamento doméstico semanal** ganha vida. Em vez de pensar no mês inteiro de uma vez, você quebra o [planejamento](/posts/orcamento-com-salario-minimo-dicas-praticas) em ciclos de sete dias, alinhando a frequência de entrada de dinheiro com a frequência de saída. Dessa forma, a ansiedade diminui, o controle aumenta e fica muito mais fácil adaptar o plano a imprevistos – como um conserto inesperado ou um convite de última hora para um jantar.
 

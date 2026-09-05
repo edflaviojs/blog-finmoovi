@@ -35,7 +35,7 @@ FinMoovi está pensado para ser tu asistente financiero personal. Al abrir la ap
   *Ejemplo:* “Cuenta de agua, € X, vence en 1 h”.
 - **Modo offline**: aunque no haya internet, la app guarda la información localmente, garantizando que el recordatorio aparezca cuando te conectes a datos móviles o Wi‑Fi.
 
-Todo esto ocurre sin abrir varias pestañas ni buscar la factura en la bandeja de entrada. FinMoovi también categoriza automáticamente el gasto (vivienda, transporte, ocio) usando IA, facilitando la visualización del [flujo de caja](/es/glossario/es-flujo-de-caja).
+Todo esto ocurre sin abrir varias pestañas ni buscar la factura en la bandeja de entrada. FinMoovi también categoriza automáticamente el gasto ([vivienda](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026), transporte, ocio) usando IA, facilitando la visualización del [flujo de caja](/es/glossario/es-flujo-de-caja).
 
 ### Paso a paso práctico: 5 minutos para cambiar tu rutina  
 1. **Abre FinMoovi** y toca “+ Nueva Cuenta”.  

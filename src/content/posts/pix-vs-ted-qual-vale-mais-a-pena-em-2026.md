@@ -21,7 +21,7 @@ seo:
 
 ## Introdução
 
-Em 2026, o melhor depende da sua necessidade: se você precisa de rapidez e custo zero, o **[PIX](/glossario/pix)** costuma ser a escolha; se a prioridade é transferir grandes valores entre bancos com garantia de horário, o **TED** pode ser mais adequado. Ambos são seguros, mas apresentam diferenças que impactam seu bolso e sua rotina.
+Em 2026, o melhor depende da sua necessidade: se você precisa de rapidez e custo zero, o **[PIX](/glossario/pix)** costuma ser a escolha; se a prioridade é transferir grandes valores entre bancos com [garantia](/glossario/garantia) de horário, o **TED** pode ser mais adequado. Ambos são seguros, mas apresentam diferenças que impactam seu bolso e sua rotina.
 
 ## Como funciona o PIX
 
@@ -44,7 +44,7 @@ Maria recebeu um salário de R$ 4 500 via PIX e, na mesma noite, transferiu 
 O TED (Transferência Eletrônica Disponível) é um serviço tradicional de transferência entre bancos diferentes, regulado pelo Banco Central. Ele só pode ser usado para valores acima de R$ 1 000 e tem horário de corte: as ordens enviadas até as 17 h (horário de Brasília) são compensadas no mesmo dia útil; após esse horário, a transferência só ocorre no próximo dia útil.
 
 - **Custo:** a maioria das instituições cobra entre R$ 2 e R$ 6 por operação para pessoa física. Algumas fintechs oferecem TED gratuito em pacotes premium.
-- **Limite:** geralmente não há limite máximo, o que o torna ideal para grandes transações, como venda de carro ou pagamento de aluguel.
+- **Limite:** geralmente não há limite máximo, o que o torna ideal para grandes transações, como venda de carro ou pagamento de [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026).
 - **Horário:** depende do horário de corte do banco; fora do horário comercial, a operação só será processada no próximo dia útil.
 - **Segurança:** a compensação ocorre através da rede de pagamentos do Banco Central, com auditoria rigorosa.
 

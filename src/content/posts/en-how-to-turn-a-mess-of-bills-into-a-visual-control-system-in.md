@@ -48,7 +48,7 @@ The first step to organizing personal finances is **getting rid of the physical 
 
 ## Create Categories That Make Sense
 
-Broad categories like “food” or “transport” are useful, but they can be too vague. Try breaking “food” into “groceries,” “take‑out,” and “coffee shops.” Likewise, “housing” can become “rent,” “utility bills,” and “maintenance.” When your categories mirror your daily reality, your brain instantly knows where each expense belongs, making the visual view in the app much clearer.
+Broad categories like “food” or “transport” are useful, but they can be too vague. Try breaking “food” into “groceries,” “take‑out,” and “coffee shops.” Likewise, “[housing](/en/posts/en-rent-vs-mortgage-which-is-worth-it-in-2026)” can become “rent,” “utility bills,” and “maintenance.” When your categories mirror your daily reality, your brain instantly knows where each expense belongs, making the visual view in the app much clearer.
 
 ![Crie categorias que façam sentido](/images/posts/como-transformar-a-bagunca-das-contas-em-controle-visual-em--2.webp)
 
