@@ -49,6 +49,19 @@
       "cena": "o pneu que furou a caminho do trabalho",
       "promessa": "Vou te mostrar onde os pequenos gastos estão levando seu salário antes do fim do mês e como enxergar isso a tempo",
       "em": "2026-08-29"
+    },
+    {
+      "slug": "compras-inteligentes-escolhas-com",
+      "cenarios": [
+        "a fatura do cartão"
+      ],
+      "fio": "duas-portas",
+      "elenco": "um casal recém-casado, a juntar duas vidas financeiras numa só",
+      "funcaoDoApp": "compras",
+      "cena": "a caixa de ferramentas comprada com vontade e nunca usada",
+      "promessa": "Vou te mostrar como escolher compras que cabem no seu mês depois de organizar seu dinheiro",
+      "em": "2026-09-05",
+      "molde": "a-queda"
     }
   ]
 }
