@@ -3,6 +3,7 @@ title: "Aluguel vs Financiamento: qual vale mais a pena em 2026?"
 description: "Descubra prós e contras de alugar ou financiar sua casa, com dicas práticas e a ajuda do app FinMoovi."
 tickerHeadline: "Aluguel ou financiamento: a escolha cert"
 image: "/images/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026.webp"
+imageAlt: "Caderno marrom, calculadora e moedas sobre mármore branco com ramos verdes."
 category: "investimentos"
 locale: "pt"
 tags: ["aluguel","financiamento","moradia","FinMoovi","fluxo de caixa","decisão financeira","comparativo","alugar ou financiar"]

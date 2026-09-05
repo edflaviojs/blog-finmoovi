@@ -3,6 +3,7 @@ title: "Rent vs Mortgage: Which Is Worth It in 2026?"
 description: "Discover the pros and cons of renting or buying a home, with practical tips and help from the FinMoovi app."
 tickerHeadline: "Rent or Mortgage: The Right Choice"
 image: "/images/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026.webp"
+imageAlt: "Brown leather notebook, calculator, coins, and greenery on white marble."
 category: "investimentos"
 locale: "en"
 tags: ["rent","mortgage","housing","FinMoovi","cash flow","financial decision","comparison","rent or buy"]

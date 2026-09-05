@@ -3,6 +3,7 @@ title: "Alquiler vs Financiación: ¿qué conviene más en 2026?"
 description: "Descubre pros y contras de alquilar o financiar tu vivienda, con consejos prácticos y la ayuda de la app FinMoovi."
 tickerHeadline: "Alquiler o financiación: la mejor opción"
 image: "/images/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026.webp"
+imageAlt: "Cuaderno marrón, calculadora y monedas sobre fondo blanco con ramas verdes."
 category: "investimentos"
 locale: "es"
 tags: ["alquiler","financiación","vivienda","FinMoovi","flujo de caja","decisión financiera","comparativo","alquilar o financiar"]

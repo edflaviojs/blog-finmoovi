@@ -1,6 +1,7 @@
 ---
 term: Liquidity
 image: /images/glossario/en-liquidez.webp
+imageAlt: "Gold coins stacked and in glass jars with green plants on dark background."
 definition: >-
   The ease and speed with which an asset can be converted into cash without
   significant loss of value.
