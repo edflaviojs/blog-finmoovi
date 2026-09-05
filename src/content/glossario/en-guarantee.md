@@ -4,6 +4,7 @@ definition: "What guarantee is and how it shows up in your everyday money — ex
 title: "guarantee - Financial Glossary"
 description: "What guarantee is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/garantia.webp"
+imageAlt: "Gold coins, rising arrow, and plant in jar on dark blue background."
 category: "basico"
 tags: ["guarantee", "glossary", "finance"]
 author: "FinMoovi"

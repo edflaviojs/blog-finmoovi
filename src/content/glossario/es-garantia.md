@@ -4,6 +4,7 @@ definition: "Qué es garantia y cómo aparece en tu día a día — explicado de
 title: "garantia - Glosario Financiero"
 description: "Qué es garantia y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/garantia.webp"
+imageAlt: "Monedas doradas apiladas, gráfico ascendente y planta en frasco sobre fondo azul oscuro."
 category: "basico"
 tags: ["garantia", "glosario", "finanzas"]
 author: "FinMoovi"
