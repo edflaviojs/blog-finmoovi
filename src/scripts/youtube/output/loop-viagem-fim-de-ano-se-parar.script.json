@@ -1,0 +1,117 @@
+{
+  "slug": "loop-viagem-fim-de-ano-se-parar",
+  "formato": "loop16",
+  "term": "A viagem de fim de ano",
+  "category": "vida",
+  "keyword": "VIAGEM",
+  "situacao": "viagem-fim-de-ano",
+  "gancho": "se-parar",
+  "ganchoFamilia": "e se parar",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "cofre",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "O que acontece se você parar de guardar dinheiro? Dezembro chegou.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "acontece",
+          "visual": {
+            "type": "statement",
+            "text": "Dezembro chegou"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "parar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "cofre"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Lá em casa, meus filhos pediram praia, e eu tremi.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "filhos",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "cofre"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "pediram",
+          "visual": {
+            "type": "statement",
+            "text": "Meus filhos pediram praia"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então, comecei a guardar um pouquinho antes das contas apertarem.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "comecei",
+          "visual": {
+            "type": "statement",
+            "text": "Comecei a guardar"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "guardar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "cofre"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Se eu parar de guardar dinheiro, dezembro volta sem praia nenhuma.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "parar",
+          "visual": {
+            "type": "statement",
+            "text": "Dezembro sem praia"
+          }
+        },
+        {
+          "anchor": "guardar",
+          "visual": {
+            "type": "statement",
+            "text": "Dezembro chegou"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
