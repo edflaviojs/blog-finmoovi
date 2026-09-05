@@ -36,9 +36,15 @@
     ]
   },
   "compras-inteligentes-escolhas-com": {
-    "estado": "reservado",
+    "videoId": "NC4Pi61FDPU",
+    "uploadedAt": "2026-09-05T07:58:14.556Z",
     "publishAt": "2026-09-06T22:00:00.000Z",
-    "reservadoEm": "2026-09-05T06:56:59.014Z",
-    "corrida": "33950647230"
+    "titulo": "Compras inteligentes: 10 escolhas com o salário que você já tem",
+    "capitulos": 6,
+    "legendas": [
+      "pt",
+      "en",
+      "es"
+    ]
   }
 }
