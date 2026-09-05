@@ -10,5 +10,11 @@
     "runId": "33868226432",
     "producedAt": "2026-09-04T11:46:00.366Z",
     "artifact": "short-viral-jxIC4Ton9-8"
+  },
+  {
+    "fileSlug": "erros-cartao-credito",
+    "runId": "33961523598",
+    "producedAt": "2026-09-05T10:56:33.521Z",
+    "artifact": "short-erros-cartao-credito"
   }
 ]
