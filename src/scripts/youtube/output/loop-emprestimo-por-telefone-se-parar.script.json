@@ -1,0 +1,117 @@
+{
+  "slug": "loop-emprestimo-por-telefone-se-parar",
+  "formato": "loop16",
+  "term": "O empréstimo que o banco ofereceu",
+  "category": "vida",
+  "keyword": "EMPRÉSTIMO",
+  "situacao": "emprestimo-por-telefone",
+  "gancho": "se-parar",
+  "ganchoFamilia": "e se parar",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "areia-movedica",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "O que acontece se você parar de pagar o empréstimo?",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "acontece",
+          "visual": {
+            "type": "statement",
+            "text": "Parar de pagar o empréstimo"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "parar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "areia-movedica"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Comigo aconteceu. O banco ligou fim do mês, oferecendo dinheiro fácil.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "Comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "areia-movedica"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "O banco me ofereceu dinheiro"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Eu aceitei, paguei as contas e vi meu salário sumir rapidinho.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "aceitei",
+          "visual": {
+            "type": "statement",
+            "text": "Meu salário sumiu"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "paguei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "areia-movedica"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "A gente afundou. Comigo, parar de pagar virou o começo.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "afundou",
+          "visual": {
+            "type": "statement",
+            "text": "Parar de pagar virou começo"
+          }
+        },
+        {
+          "anchor": "Comigo",
+          "visual": {
+            "type": "statement",
+            "text": "Parar de pagar o empréstimo"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
