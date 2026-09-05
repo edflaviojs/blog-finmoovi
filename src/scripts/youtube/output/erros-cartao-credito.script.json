@@ -6,7 +6,7 @@
   "nextVideoTitle": "",
   "intro": {
     "style": "pergunta",
-    "frase": "Sabe quais *três erros no cartão tiram quinhentos reais* do seu bolso todo mês?"
+    "frase": "Você sabia que *três erros* no cartão podem tirar *quinhentos reais* do seu bolso todo mês?"
   },
   "music": {
     "id": "rock",
@@ -23,86 +23,91 @@
     {
       "id": 1,
       "role": "hook",
-      "narration": "Sabe quais três erros no cartão tiram quinhentos reais do seu bolso todo mês? A conta cresce caladinha e você acaba pagando sem ver.",
-      "durationSec": 9.2,
+      "narration": "Você sabia que três erros no cartão podem tirar quinhentos reais do seu bolso todo mês? Eu fui olhar e achei coisa que nem percebia.",
+      "durationSec": 9.6,
       "shots": [
         {
           "anchor": "três",
           "visual": {
-            "type": "number",
-            "text": "R$ 500"
+            "type": "statement",
+            "text": "3 erros que pesam no bolso"
           },
           "sfx": "boom"
         },
         {
-          "anchor": "cartão",
+          "anchor": "quinhentos",
           "visual": {
-            "type": "metaphor",
-            "metaphor": "mochila-pedras"
+            "type": "number",
+            "text": "R$ 500"
           }
         },
         {
-          "anchor": "cresce",
+          "anchor": "olhar",
           "visual": {
-            "type": "statement",
-            "text": "A conta cresce escondida"
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
           },
-          "sfx": "alert"
+          "sfx": "thud"
         }
       ]
     },
     {
       "id": 2,
       "role": "beat",
-      "narration": "É quando você paga só uma parte da fatura, divide a conta em muitas vezes e ainda saca dinheiro no cartão.",
+      "narration": "Essa correria faz a gente pagar só um pedaço da fatura, deixar o resto pro mês seguinte e seguir a vida.",
       "durationSec": 8.1,
       "shots": [
         {
-          "anchor": "fatura",
+          "anchor": "correria",
+          "visual": {
+            "type": "statement",
+            "text": "Na correria, passa batido"
+          }
+        },
+        {
+          "anchor": "pedaço",
           "visual": {
             "type": "icon",
             "icon": "card"
           }
         },
         {
-          "anchor": "vezes",
+          "anchor": "resto",
           "visual": {
-            "type": "metaphor",
-            "metaphor": "mochila-pedras"
+            "type": "statement",
+            "text": "O resto vira problema"
           },
-          "sfx": "thud"
-        },
-        {
-          "anchor": "dinheiro",
-          "visual": {
-            "type": "icon",
-            "icon": "money"
-          }
+          "sfx": "alert"
         }
       ]
     },
     {
       "id": 3,
       "role": "beat",
-      "narration": "E cada um pesa. O primeiro leva cento e cinquenta reais, o outro duzentos, e o saque mais cento e cinquenta. Juntando tudo, bate nos quinhentos.",
-      "durationSec": 10,
+      "narration": "E seguindo assim juntam três problemas. Pagar só um pedaço, parcelar a fatura em muitas vezes e sacar dinheiro no cartão. Juntos, podem chegar a quinhentos reais no mês.",
+      "durationSec": 11.2,
       "shots": [
         {
-          "anchor": "pesa",
+          "anchor": "três",
           "visual": {
-            "type": "metaphor",
-            "metaphor": "mochila-pedras"
+            "type": "number",
+            "text": "3"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "parcelar",
+          "visual": {
+            "type": "list",
+            "text": "Fatura parcelada"
           }
         },
         {
-          "anchor": "duzentos",
+          "anchor": "sacar",
           "visual": {
-            "type": "counter",
-            "from": 0,
-            "to": 200,
-            "prefix": "R$"
-          },
-          "sfx": "coin"
+            "type": "statement",
+            "text": "Saque no cartão"
+          }
         },
         {
           "anchor": "quinhentos",
@@ -117,56 +122,54 @@
     {
       "id": 4,
       "role": "beat",
-      "narration": "Eu joguei isso no FinMoovi e ele me mostrou que o saque no cartão ficou no topo da lista. Foi o que mais pesou.",
-      "durationSec": 9.2,
+      "narration": "Esse quinhentos apareceu quando eu joguei meus gastos na calculadora do FinMoovi. Ele me mostrou os três erros separados na tela.",
+      "durationSec": 8.1,
       "shots": [
         {
-          "anchor": "joguei",
+          "anchor": "Esse",
           "visual": {
             "type": "app",
-            "app": "dashboard",
-            "note": "Resumo financeiro com os gastos do cartão"
-          },
-          "sfx": "click"
-        },
-        {
-          "anchor": "saque",
-          "visual": {
-            "type": "app",
-            "app": "cartoes",
-            "note": "Lista dos custos do cartão em destaque"
+            "app": "calculadora",
+            "note": "Calculadora do FinMoovi com gastos inseridos e resultado de R$ 500"
           }
         },
         {
-          "anchor": "pesou",
+          "anchor": "FinMoovi",
           "visual": {
             "type": "statement",
-            "text": "Saque foi o maior peso"
+            "text": "O custo aparece separado"
           },
           "sfx": "ding"
+        },
+        {
+          "anchor": "três",
+          "visual": {
+            "type": "chart",
+            "text": "3 erros identificados"
+          }
         }
       ]
     },
     {
       "id": 5,
       "role": "cta",
-      "narration": "Quer ver o seu? Comenta FINMOOVI aqui que eu te mando o app grátis.",
-      "durationSec": 5.4,
+      "narration": "Se você quer ver o seu número, procura FinMoovi. São sete dias grátis.",
+      "durationSec": 5,
       "shots": [
         {
-          "anchor": "Quer",
+          "anchor": "número",
           "visual": {
             "type": "statement",
-            "text": "Veja seus gastos"
+            "text": "Descubra o seu número"
           }
         },
         {
-          "anchor": "FINMOOVI",
+          "anchor": "sete",
           "visual": {
             "type": "statement",
-            "text": "Digite FINMOOVI"
+            "text": "7 dias grátis"
           },
-          "sfx": "typewriter"
+          "sfx": "sparkle"
         },
         {
           "anchor": "grátis",
@@ -181,36 +184,44 @@
     {
       "id": 6,
       "role": "outro",
-      "narration": "Então foge disso. Esses três erros juntos tiram quinhentos reais do seu bolso todo mês. Dinheiro sem controle é dinheiro dos outros.",
-      "durationSec": 8.5,
+      "narration": "Podem tirar quinhentos reais do seu bolso todo mês. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 6.2,
       "shots": [
-        {
-          "anchor": "três",
-          "visual": {
-            "type": "metaphor",
-            "metaphor": "mochila-pedras"
-          }
-        },
         {
           "anchor": "quinhentos",
           "visual": {
             "type": "number",
             "text": "R$ 500"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "bolso",
+          "visual": {
+            "type": "statement",
+            "text": "Todo mês pesa"
+          }
+        },
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro sem controle custa"
           }
         },
         {
           "anchor": "outros",
           "visual": {
             "type": "statement",
-            "text": "Dinheiro sem controle some"
+            "text": "O controle precisa ser seu"
           }
         }
       ]
     }
   ],
   "cta": {
-    "text": "Comente FINMOOVI agora",
+    "text": "Veja quanto você perde por mês",
     "target": "app"
   },
-  "totalDurationSec": 50.4
+  "totalDurationSec": 48.2
 }
