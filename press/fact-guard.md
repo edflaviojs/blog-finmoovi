@@ -1,7 +1,7 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-09-04T09:20:00.769Z
-**Posts:** 396 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 55
+**Gerado em:** 2026-09-05T08:48:04.468Z
+**Posts:** 402 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 56
 
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
@@ -18,6 +18,11 @@
 
 **7-maneiras-de-economizar-na-volta-as-aulas-do-2-semestre.md**
 - _**Ajuste o limite** de acordo com a realidade da sua família, reservando sempre uma margem para imprevistos._
+
+**aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026.md**
+- _- **Entrada**: Geralmente corresponde a cerca de 20 % do valor total do imóvel, podendo ser ajustada conforme a política do banco._
+- _- **Taxa de juros**: Varia conforme o perfil do comprador, a taxa Selic e o prazo do contrato, que costuma ficar entre 15 e 30 anos._
+- _Sim, porém pode ser necessário pagar multa por rescisão antecipada, de acordo com o que está estipulado no contrato._
 
 **como-diversificar-com-ativos-de-renda-variavel-em-2026.md**
 - _Em termos simples, o ganho ou a perda varia de acordo com a valorização ou desvalorização dos ativos, o que traz a possibilidade de retornos superiores ao longo do tempo, mas também implica maior [vol_
