@@ -988,5 +988,23 @@
     ],
     "veredito": "1. **O LOOP — 9/10**  \nO primeiro e o último quadro são praticamente iguais: “Dezembro chegou” no mesmo lugar e com o mesmo visual. Isso favorece muito o reinício invisível. Há apenas pequenas diferenças no restante da composição/texto inferior.\n\n2. **A FAIXA DE BAIXO — 5/10**  \nSim. Em praticamente todos os quadros existe texto na região inferior, especialmente as legendas. Num celular, essa área pode ser parcialmente coberta pela interface do Shorts/Reels.\n\n3. **TEXTO POR CIMA DE TEXTO — 7/10**  \nNão há sobreposição grave, mas as frases aparecem fragmentadas entre os quadros e algumas palavras ficam muito próximas das bordas/elementos gráficos. O destaque colorido também pode dar sensação de texto “quebrado”.\n\n4. **LEGIBILIDADE — 8/10**  \nOs textos principais são grandes, brancos e com bom contraste. As legendas inferiores são menores e mais vulneráveis à interface do celular.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — 4/10**  \nEstá bastante vazia. Há grandes áreas de fundo roxo sem informação, principalmente na metade inferior. O vídeo depende quase sempre de uma caixa de texto ou de um cofre isolado.\n\n6. **COERÊNCIA — 8/10**  \nA identidade visual é muito consistente: mesma marca, fundo, tipografia, cofre e tratamento de texto. A sequência parece avançar a narrativa, embora alguns quadros mostrem pedaços de frase que ficam estranhos quando vistos isoladamente.\n\n7. **TESTE CENTRAL — 4/10**  \n**Parece mais uma sequência de slides animados do que um vídeo profissional**, porque cada quadro é muito estático, centralizado e com grandes áreas vazias.\n\nNOTA GERAL: 6.5\nPROBLEMA 1: A tela parece vazia demais, principalmente nos quadros 1, 3, 4, 5, 7 e 8.\nPROBLEMA 2: As legendas ficam baixas demais e podem cair na faixa coberta pela interface do Shorts/Reels.\nPROBLEMA 3: A narrativa visual depende demais de cartões de texto e do cofre parado, dando aparência de slides.\nPRIMEIRA COISA A MUDAR: Preencher mais a tela com elementos visuais e subir as legendas para uma zona segura, mantendo o primeiro e o último quadro praticamente idênticos.",
     "quando": "2026-09-05T08:32:08.506Z"
+  },
+  {
+    "slug": "loop-emprestimo-por-telefone-se-parar",
+    "formato": "loop16",
+    "nota": 7.5,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      2.5,
+      5,
+      7.5,
+      9.9,
+      12.4,
+      14.9,
+      17.3
+    ],
+    "veredito": "1. **O LOOP — Nota: 6/10**  \nO primeiro quadro mostra “Parar de pagar o empréstimo” e o último também, no mesmo estilo visual. Porém, o último quadro tem uma frase menor (“começo”) e não parece uma continuação exata do início. O loop existe, mas pode ser percebido.\n\n2. **A FAIXA DE BAIXO — Nota: 8/10**  \nNão há informações importantes muito próximas da área onde ficam botões e legendas do Shorts/Reels. O texto inferior está relativamente seguro.\n\n3. **TEXTO POR CIMA DE TEXTO — Nota: 7/10**  \nAlgumas palavras parecem cortadas ou parcialmente escondidas pelo destaque colorido (“oferecendo”, “rapidinho”). Não há grande sobreposição, mas há pequenos problemas de acabamento.\n\n4. **LEGIBILIDADE — Nota: 9/10**  \nAs letras principais são grandes, com bom contraste e funcionam bem para celular. Os textos menores na parte inferior poderiam ser um pouco maiores.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — Nota: 7/10**  \nHá momentos com muito espaço vazio no fundo roxo, principalmente entre os textos. O visual é limpo, mas algumas cenas parecem paradas demais.\n\n6. **COERÊNCIA — Nota: 9/10**  \nOs quadros parecem claramente parte do mesmo vídeo. A narrativa avança: empréstimo → banco oferece dinheiro → salário some → consequência.\n\n7. **TESTE CENTRAL — Nota: 7/10**  \nParece mais um conjunto de slides animados do que um vídeo profissional, porque cada quadro depende muito de uma tela estática com frase central.\n\nNOTA GERAL: 7.5  \nPROBLEMA 1: O loop ainda não é perfeito: o quadro final (17.3s) não copia exatamente o estado inicial (0.1s).  \nPROBLEMA 2: Alguns momentos têm aparência de slide parado, principalmente nos quadros 2.5s e 12.4s.  \nPROBLEMA 3: Textos pequenos na parte inferior e algumas palavras destacadas parecem mal posicionadas.  \nPRIMEIRA COISA A MUDAR: Fazer o último quadro terminar exatamente igual ao primeiro para criar um reinício invisível.",
+    "quando": "2026-09-05T08:36:46.315Z"
   }
 ]
