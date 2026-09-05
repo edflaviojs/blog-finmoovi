@@ -970,5 +970,23 @@
     ],
     "veredito": "1. **O LOOP — 8/10**  \nPrimeiro e último quadro têm o mesmo fundo e a mesma frase principal (“A fatura me assustou”), mas o texto inferior é diferente. Não é um encaixe visual 100% idêntico.\n\n2. **A FAIXA DE BAIXO — 6/10**  \nHá texto importante relativamente baixo em vários quadros (“Você não vai”, “parcelar”, “Hoje, quando”, “fico assustado.”). No celular, essa região pode ser parcialmente coberta pela interface.\n\n3. **TEXTO POR CIMA DE TEXTO — 8/10**  \nNão há sobreposição grave, mas alguns textos destacados ficam visualmente muito próximos das frases completas, especialmente nos quadros 3, 4 e 7.\n\n4. **LEGIBILIDADE — 9/10**  \nTexto grande, forte contraste e destaque por cores. Funciona bem para tela pequena. O texto secundário poderia estar um pouco mais afastado da faixa inferior.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — 7/10**  \nOs quadros com a ilustração da fatura funcionam bem, mas há bastante espaço vazio nas áreas inferiores e laterais dos quadros com apenas texto.\n\n6. **COERÊNCIA — 9/10**  \nOs oito quadros claramente pertencem ao mesmo vídeo: mesma identidade visual, cenário e tipografia. A sequência também conta uma história compreensível: susto → fatura → gastos → parcelamento → corte de excessos → consequência.\n\n7. **TESTE CENTRAL — 8/10**  \nParece mais um **vídeo profissional com elementos gráficos animados** do que simplesmente slides, embora alguns quadros parados excessivamente estáticos possam dar essa impressão.\n\nNOTA GERAL: 8\nPROBLEMA 1: Texto importante muito baixo, especialmente no quadro 8 / 16,9s.\nPROBLEMA 2: O primeiro e o último quadro não são visualmente idênticos por causa do texto inferior.\nPROBLEMA 3: Alguns quadros têm espaço vazio demais e dependem do movimento para parecerem realmente “vídeo”.\nPRIMEIRA COISA A MUDAR: Subir todo o texto inferior para uma zona segura e fazer o primeiro e o último quadro coincidirem visualmente o máximo possível.",
     "quando": "2026-09-04T09:22:08.245Z"
+  },
+  {
+    "slug": "loop-viagem-fim-de-ano-se-parar",
+    "formato": "loop16",
+    "nota": 6.5,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      2.4,
+      4.8,
+      7.2,
+      9.6,
+      12,
+      14.4,
+      16.8
+    ],
+    "veredito": "1. **O LOOP — 9/10**  \nO primeiro e o último quadro são praticamente iguais: “Dezembro chegou” no mesmo lugar e com o mesmo visual. Isso favorece muito o reinício invisível. Há apenas pequenas diferenças no restante da composição/texto inferior.\n\n2. **A FAIXA DE BAIXO — 5/10**  \nSim. Em praticamente todos os quadros existe texto na região inferior, especialmente as legendas. Num celular, essa área pode ser parcialmente coberta pela interface do Shorts/Reels.\n\n3. **TEXTO POR CIMA DE TEXTO — 7/10**  \nNão há sobreposição grave, mas as frases aparecem fragmentadas entre os quadros e algumas palavras ficam muito próximas das bordas/elementos gráficos. O destaque colorido também pode dar sensação de texto “quebrado”.\n\n4. **LEGIBILIDADE — 8/10**  \nOs textos principais são grandes, brancos e com bom contraste. As legendas inferiores são menores e mais vulneráveis à interface do celular.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — 4/10**  \nEstá bastante vazia. Há grandes áreas de fundo roxo sem informação, principalmente na metade inferior. O vídeo depende quase sempre de uma caixa de texto ou de um cofre isolado.\n\n6. **COERÊNCIA — 8/10**  \nA identidade visual é muito consistente: mesma marca, fundo, tipografia, cofre e tratamento de texto. A sequência parece avançar a narrativa, embora alguns quadros mostrem pedaços de frase que ficam estranhos quando vistos isoladamente.\n\n7. **TESTE CENTRAL — 4/10**  \n**Parece mais uma sequência de slides animados do que um vídeo profissional**, porque cada quadro é muito estático, centralizado e com grandes áreas vazias.\n\nNOTA GERAL: 6.5\nPROBLEMA 1: A tela parece vazia demais, principalmente nos quadros 1, 3, 4, 5, 7 e 8.\nPROBLEMA 2: As legendas ficam baixas demais e podem cair na faixa coberta pela interface do Shorts/Reels.\nPROBLEMA 3: A narrativa visual depende demais de cartões de texto e do cofre parado, dando aparência de slides.\nPRIMEIRA COISA A MUDAR: Preencher mais a tela com elementos visuais e subir as legendas para uma zona segura, mantendo o primeiro e o último quadro praticamente idênticos.",
+    "quando": "2026-09-05T08:32:08.506Z"
   }
 ]
