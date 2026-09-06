@@ -1,0 +1,217 @@
+{
+  "slug": "kw-anuidade-alta",
+  "term": "Anuidade alta?",
+  "category": "mindset",
+  "keyword": "Anuidade",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você tá *pagando anuidade alta* no cartão e nem percebe?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ratoeira",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você tá pagando anuidade alta no cartão e nem percebe? Eu consegui cortar duzentos reais por ano tirando essa cobrança.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "Você",
+          "visual": {
+            "type": "statement",
+            "text": "Cobrança que passa despercebida"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "anuidade",
+          "visual": {
+            "type": "number",
+            "text": "R$ 200"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "cartão",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Esse valor aparece lá na fatura, e na correria a gente paga junto. Quando vê, já passou mais um ano.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "valor",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          },
+          "sfx": "click"
+        },
+        {
+          "anchor": "fatura",
+          "visual": {
+            "type": "statement",
+            "text": "Fatura esconde pequenos custos"
+          }
+        },
+        {
+          "anchor": "Quando",
+          "visual": {
+            "type": "icon",
+            "icon": "clock"
+          },
+          "sfx": "ding"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "E no fim do ano, foram duzentos reais saindo da minha conta. Dinheiro que eu podia ter guardado.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "duzentos",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 200,
+            "prefix": "R$"
+          }
+        },
+        {
+          "anchor": "saindo",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro saindo todo ano"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "guardado",
+          "visual": {
+            "type": "icon",
+            "icon": "piggy"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei minhas contas no FinMoovi e ele me mostrou a anuidade levando esses duzentos reais no ano.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "joguei",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Tela mostrando visão geral das contas e cobranças"
+          },
+          "sfx": "typewriter"
+        },
+        {
+          "anchor": "anuidade",
+          "visual": {
+            "type": "chart",
+            "text": "Anuidade acumulada"
+          }
+        },
+        {
+          "anchor": "duzentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 200"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu valor? Procura o FinMoovi. São sete dias grátis.",
+      "durationSec": 4.6,
+      "shots": [
+        {
+          "anchor": "valor",
+          "visual": {
+            "type": "statement",
+            "text": "Descubra seu valor"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "counter",
+            "from": 1,
+            "to": 7,
+            "prefix": "R$"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Então, a anuidade pode custar duzentos reais por ano sem você perceber. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "anuidade",
+          "visual": {
+            "type": "statement",
+            "text": "Anuidade pesa no bolso"
+          },
+          "sfx": "alert"
+        },
+        {
+          "anchor": "duzentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 200"
+          }
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja quanto você perde",
+    "target": "app"
+  },
+  "totalDurationSec": 41.1
+}
