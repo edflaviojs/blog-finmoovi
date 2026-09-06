@@ -1521,8 +1521,110 @@
           "titulo": "O passo a passo final"
         }
       ]
+    },
+    {
+      "videoId": "KPfcVJ6zjIw",
+      "title": "GASTOS SOB CONTROLE: ONDE SUA EMPRESA PODE ESTAR PERDENDO DINHEIRO | Tainá Froner",
+      "channel": "Sebrae Talks",
+      "duracaoSeg": 339,
+      "idioma": "pt",
+      "viewsPerDay": 199,
+      "vistoEm": "2026-09-06",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "Introdução"
+        },
+        {
+          "seg": 57,
+          "titulo": "Importância do controle de gastos"
+        },
+        {
+          "seg": 81,
+          "titulo": "Vazamentos invisíveis"
+        },
+        {
+          "seg": 111,
+          "titulo": "O perigo de misturar as contas"
+        },
+        {
+          "seg": 142,
+          "titulo": "Não negligencie o estoque"
+        },
+        {
+          "seg": 156,
+          "titulo": "Gastos operacionais"
+        },
+        {
+          "seg": 183,
+          "titulo": "Gastos sem retorno"
+        },
+        {
+          "seg": 199,
+          "titulo": "Quanto custa sua empresa?"
+        },
+        {
+          "seg": 217,
+          "titulo": "Por onde começar?"
+        },
+        {
+          "seg": 280,
+          "titulo": "Conclusão"
+        }
+      ]
+    },
+    {
+      "videoId": "9-wJngK47QA",
+      "title": "The Top Money Tips That Save Marriages | Matt Bell",
+      "channel": "Focus on the Family",
+      "duracaoSeg": 2934,
+      "idioma": "en",
+      "viewsPerDay": 162,
+      "vistoEm": "2026-09-06",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "Why Money Matters in Marriage"
+        },
+        {
+          "seg": 205,
+          "titulo": "Matt Bell's Financial Failure Changed His Life"
+        },
+        {
+          "seg": 545,
+          "titulo": "Financial Transparency Builds Trust"
+        },
+        {
+          "seg": 850,
+          "titulo": "The Budget Mindset That Changes Everything"
+        },
+        {
+          "seg": 1155,
+          "titulo": "Building a Marriage Around God's Priorities"
+        },
+        {
+          "seg": 1440,
+          "titulo": "Preparing for Big Expenses Before They Happen"
+        },
+        {
+          "seg": 1720,
+          "titulo": "Getting Out of Debt Together"
+        },
+        {
+          "seg": 1920,
+          "titulo": "Understanding Your Money Personality"
+        },
+        {
+          "seg": 2280,
+          "titulo": "Smart Decisions for Young Couples & Families"
+        },
+        {
+          "seg": 2730,
+          "titulo": "The Powerful Perspective Every Marriage Needs"
+        }
+      ]
     }
   ],
-  "atualizadoEm": "2026-09-05T07:56:26.007Z",
-  "total": 27
+  "atualizadoEm": "2026-09-06T08:13:29.313Z",
+  "total": 29
 }
