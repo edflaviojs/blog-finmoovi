@@ -1,6 +1,7 @@
 ---
 term: Liquidez
 image: /images/glossario/es-liquidez.webp
+imageAlt: "Cerdito rosa, monedas doradas y plantas verdes sobre fondo azul oscuro."
 definition: >-
   La facilidad y rapidez con la que un activo puede convertirse en efectivo sin
   pérdida significativa de valor.

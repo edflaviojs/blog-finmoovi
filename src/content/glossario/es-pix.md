@@ -1,6 +1,7 @@
 ---
 term: PIX
 image: /images/glossario/es-pix.webp
+imageAlt: "Cerdito blanco, monedas doradas y planta verde en frascos sobre fondo azul."
 definition: >-
   El sistema de pagos instantáneos de Brasil creado por el Banco Central.
   Permite transferencias gratuitas 24/7 entre cualquier cuenta bancaria.
