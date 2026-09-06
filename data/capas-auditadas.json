@@ -3199,6 +3199,206 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-09-05"
+    },
+    "es-cdi.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-06"
+    },
+    "es-cheque-especial.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-06"
+    },
+    "es-come-cotas.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-06"
+    },
+    "es-consorcio.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-06"
+    },
+    "es-debentures.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-06"
+    },
+    "es-dividend-yield-inline-1.webp": {
+      "reprovada": true,
+      "motivo": "borrada segundo a IA de visão (nitidez local 822)",
+      "em": "2026-09-06"
+    },
+    "es-dividend-yield-inline-3.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"The Three Stooges\")",
+      "em": "2026-09-06"
+    },
+    "es-dividendos.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-06"
+    },
+    "es-educacao-financeira.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-06"
+    },
+    "es-financiamento.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-06"
+    },
+    "es-fundos-imobiliarios.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-06"
+    },
+    "es-ganho-de-capital.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-06"
+    },
+    "es-garantia-fgc.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-06"
+    },
+    "es-independencia-financeira.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-06"
+    },
+    "es-inflacao.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-06"
+    },
+    "es-iof.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-06"
+    },
+    "es-ipca.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-06"
+    },
+    "es-juros-compostos.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-06"
+    },
+    "es-juros-simples.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-06"
+    },
+    "es-know-your-customer.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-06"
+    },
+    "es-lci-e-lca.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-06"
+    },
+    "es-liquidez.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"Es licuiez\")",
+      "em": "2026-09-06"
+    },
+    "es-margem-de-lucro.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-06"
+    },
+    "es-meta-financeira.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-06"
+    },
+    "es-orcamento-pessoal.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-06"
+    },
+    "es-p-l-preco-lucro-inline-1.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"The Three Stooges\")",
+      "em": "2026-09-06"
+    },
+    "es-p-l-preco-lucro-inline-3.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"The New York Times\")",
+      "em": "2026-09-06"
+    },
+    "es-patrimonio-liquido.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-06"
+    },
+    "es-pix.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"Bit\")",
+      "em": "2026-09-06"
+    },
+    "es-previdencia-privada.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-06"
+    },
+    "es-quitacao-antecipada.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-06"
+    },
+    "es-renda-variavel.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-06"
+    },
+    "es-reserva-de-emergencia.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-06"
+    },
+    "es-score-de-credito.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-06"
+    },
+    "es-spread-bancario.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-06"
+    },
+    "es-tabela-sac.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-06"
+    },
+    "es-urgencia-financeira.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-06"
+    },
+    "es-valor-presente.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-06"
+    },
+    "es-volatilidade.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-06"
+    },
+    "es-wealth-management.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-06"
     }
   },
   "corrigidas": {
@@ -3705,8 +3905,32 @@
     "es-bull-market-e-bear-market-inline-3.webp": {
       "em": "2026-09-05",
       "motivo": "tem texto escrito (\"BEAR LARY MARKET\")"
+    },
+    "es-dividend-yield-inline-1.webp": {
+      "em": "2026-09-06",
+      "motivo": "borrada segundo a IA de visão (nitidez local 822)"
+    },
+    "es-dividend-yield-inline-3.webp": {
+      "em": "2026-09-06",
+      "motivo": "tem texto escrito (\"The Three Stooges\")"
+    },
+    "es-liquidez.webp": {
+      "em": "2026-09-06",
+      "motivo": "tem texto escrito (\"Es licuiez\")"
+    },
+    "es-p-l-preco-lucro-inline-1.webp": {
+      "em": "2026-09-06",
+      "motivo": "tem texto escrito (\"The Three Stooges\")"
+    },
+    "es-p-l-preco-lucro-inline-3.webp": {
+      "em": "2026-09-06",
+      "motivo": "tem texto escrito (\"The New York Times\")"
+    },
+    "es-pix.webp": {
+      "em": "2026-09-06",
+      "motivo": "tem texto escrito (\"Bit\")"
     }
   },
-  "totalAcervo": 887,
-  "ultimaCorrida": "2026-09-05"
+  "totalAcervo": 890,
+  "ultimaCorrida": "2026-09-06"
 }
