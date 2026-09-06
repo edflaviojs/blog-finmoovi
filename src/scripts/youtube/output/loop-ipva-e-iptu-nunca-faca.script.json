@@ -1,0 +1,117 @@
+{
+  "slug": "loop-ipva-e-iptu-nunca-faca",
+  "formato": "loop16",
+  "term": "IPVA e IPTU de janeiro",
+  "category": "vida",
+  "keyword": "JANEIRO",
+  "situacao": "ipva-e-iptu",
+  "gancho": "nunca-faca",
+  "ganchoFamilia": "nunca faça",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "avalanche",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Nunca faça isso com os carnês eu vi o aperto",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "carnês",
+          "visual": {
+            "type": "statement",
+            "text": "Cuidado com os carnês"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "aperto",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "avalanche"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Comigo aconteceu chegaram IPVA e IPTU juntos na mesma semana",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "Comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "avalanche"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "Carnês juntos apertaram"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então eu guardei um pouquinho antes lá em casa ficou tranquilo",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "guardei",
+          "visual": {
+            "type": "statement",
+            "text": "Eu me preparei antes"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "pouquinho",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "avalanche"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Nunca faça isso com os carnês apertarem meu bolso de novo",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "carnês",
+          "visual": {
+            "type": "statement",
+            "text": "Nunca faça isso com carnês"
+          }
+        },
+        {
+          "anchor": "apertarem",
+          "visual": {
+            "type": "statement",
+            "text": "Cuidado com os carnês"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}

@@ -346,5 +346,11 @@
     "gancho": "nunca-faca",
     "turno": "manha",
     "em": "2026-09-06T08:46:29.509Z"
+  },
+  {
+    "situacao": "ipva-e-iptu",
+    "gancho": "nunca-faca",
+    "turno": "noite",
+    "em": "2026-09-06T08:51:55.309Z"
   }
 ]
