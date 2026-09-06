@@ -1,0 +1,117 @@
+{
+  "slug": "loop-decimo-terceiro-nunca-faca",
+  "formato": "loop16",
+  "term": "O 13º antes que suma",
+  "category": "vida",
+  "keyword": "13º",
+  "situacao": "decimo-terceiro",
+  "gancho": "nunca-faca",
+  "ganchoFamilia": "nunca faça",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "fumaca",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Nunca faça isso com seu décimo. O meu sumiu no carnaval.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "décimo",
+          "visual": {
+            "type": "statement",
+            "text": "Meu décimo sumiu"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "sumiu",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu paguei mercado, boleto e parcela, e quando vi, acabou.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "paguei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "mercado",
+          "visual": {
+            "type": "statement",
+            "text": "As contas levaram tudo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então, hoje separo o dinheiro das contas sempre primeiro.",
+      "durationSec": 3.26,
+      "shots": [
+        {
+          "anchor": "separo",
+          "visual": {
+            "type": "statement",
+            "text": "Contas vêm primeiro"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Nunca faça isso com seu décimo, porque o meu sumiu no carnaval.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "décimo",
+          "visual": {
+            "type": "statement",
+            "text": "Meu décimo sumiu no carnaval"
+          }
+        },
+        {
+          "anchor": "sumiu",
+          "visual": {
+            "type": "statement",
+            "text": "Meu décimo sumiu"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
