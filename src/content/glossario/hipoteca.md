@@ -4,6 +4,7 @@ definition: "O que é hipoteca e como isso aparece no seu dia a dia — explicad
 title: "hipoteca - Glossário Financeiro"
 description: "O que é hipoteca e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/hipoteca.webp"
+imageAlt: "Moedas douradas empilhadas, planta verde e gráfico ascendente sobre fundo roxo e azul escuro."
 category: "basico"
 tags: ["hipoteca", "glossário", "finanças"]
 author: "FinMoovi"

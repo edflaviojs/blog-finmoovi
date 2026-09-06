@@ -4,6 +4,7 @@ definition: "What mortgage is and how it shows up in your everyday money — exp
 title: "mortgage - Financial Glossary"
 description: "What mortgage is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/hipoteca.webp"
+imageAlt: "Gold coins, jar with plant, and upward arrow on purple background."
 category: "basico"
 tags: ["mortgage", "glossary", "finance"]
 author: "FinMoovi"
