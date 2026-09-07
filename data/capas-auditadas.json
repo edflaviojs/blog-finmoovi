@@ -3399,6 +3399,206 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-09-06"
+    },
+    "es-zona-de-conforto-financeira.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-07"
+    },
+    "etf-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-07"
+    },
+    "etf-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-07"
+    },
+    "etf.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-07"
+    },
+    "exemplo-de-gasto-variavel-inline-1.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"Tous gasto variable\")",
+      "em": "2026-09-07"
+    },
+    "exemplo-de-gasto-variavel-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-07"
+    },
+    "exemplo-de-gasto-variavel.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-07"
+    },
+    "fatura-do-cartao-mais-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-07"
+    },
+    "fatura-do-cartao-mais-inline-3.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"Fenvería\")",
+      "em": "2026-09-07"
+    },
+    "fatura-do-cartao-mais.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-07"
+    },
+    "fgts-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-07"
+    },
+    "fgts-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-07"
+    },
+    "fgts.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-07"
+    },
+    "financiamento.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-07"
+    },
+    "fluxo-de-caixa-descontado-inline-1.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"Flujo de caja descontairy\")",
+      "em": "2026-09-07"
+    },
+    "fluxo-de-caixa-descontado-inline-2.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-07"
+    },
+    "fluxo-de-caixa-descontado-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-07"
+    },
+    "fluxo-de-caixa-descontado.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-07"
+    },
+    "fluxo-de-caixa-excel-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-07"
+    },
+    "fluxo-de-caixa-excel-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-07"
+    },
+    "fluxo-de-caixa-excel.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-07"
+    },
+    "fluxo-de-caixa-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-07"
+    },
+    "fluxo-de-caixa-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-07"
+    },
+    "fluxo-de-caixa.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-07"
+    },
+    "fundos-imobiliarios.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-07"
+    },
+    "fundos-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-07"
+    },
+    "fundos-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-07"
+    },
+    "fundos.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-07"
+    },
+    "ganho-de-capital.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-07"
+    },
+    "garantia-fgc.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-07"
+    },
+    "garantia-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-07"
+    },
+    "garantia-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-07"
+    },
+    "garantia.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-07"
+    },
+    "gasto-fixo-de-uma-empresa-inline-1.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"ONE\")",
+      "em": "2026-09-07"
+    },
+    "gasto-fixo-de-uma-empresa-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-07"
+    },
+    "gasto-fixo-de-uma-empresa.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-07"
+    },
+    "gasto-fixo-e-variavel-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-07"
+    },
+    "gasto-fixo-e-variavel-inline-3.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"ma lo. glosssairy.\")",
+      "em": "2026-09-07"
+    },
+    "gasto-fixo-e-variavel.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-07"
+    },
+    "gasto-fixo-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-07"
     }
   },
   "corrigidas": {
@@ -3929,8 +4129,28 @@
     "es-pix.webp": {
       "em": "2026-09-06",
       "motivo": "tem texto escrito (\"Bit\")"
+    },
+    "exemplo-de-gasto-variavel-inline-1.webp": {
+      "em": "2026-09-07",
+      "motivo": "tem texto escrito (\"Tous gasto variable\")"
+    },
+    "fatura-do-cartao-mais-inline-3.webp": {
+      "em": "2026-09-07",
+      "motivo": "tem texto escrito (\"Fenvería\")"
+    },
+    "fluxo-de-caixa-descontado-inline-1.webp": {
+      "em": "2026-09-07",
+      "motivo": "tem texto escrito (\"Flujo de caja descontairy\")"
+    },
+    "gasto-fixo-de-uma-empresa-inline-1.webp": {
+      "em": "2026-09-07",
+      "motivo": "tem texto escrito (\"ONE\")"
+    },
+    "gasto-fixo-e-variavel-inline-3.webp": {
+      "em": "2026-09-07",
+      "motivo": "tem texto escrito (\"ma lo. glosssairy.\")"
     }
   },
-  "totalAcervo": 890,
-  "ultimaCorrida": "2026-09-06"
+  "totalAcervo": 893,
+  "ultimaCorrida": "2026-09-07"
 }
