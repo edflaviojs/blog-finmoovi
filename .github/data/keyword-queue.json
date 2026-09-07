@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06T13:50:09.462Z",
+  "updatedAt": "2026-09-07T13:06:06.220Z",
   "sourceCursor": 1,
   "entries": [
     {
@@ -1898,6 +1898,102 @@
       "addedAt": "2026-08-31T14:32:17.782Z",
       "usedAt": "2026-09-03T13:07:16.277Z",
       "usedBy": "gerar-dicas-financeiras"
+    },
+    {
+      "keyword": "planificación financiera",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-09-07T13:06:05.567Z"
+    },
+    {
+      "keyword": "debentures",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-09-07T13:06:05.567Z"
+    },
+    {
+      "keyword": "outstanding balance meaning",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-09-07T13:06:05.567Z"
+    },
+    {
+      "keyword": "fundo fixo",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-09-07T13:06:05.567Z"
+    },
+    {
+      "keyword": "define outstanding balance",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-09-07T13:06:05.567Z"
+    },
+    {
+      "keyword": "control de gastos",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-09-07T13:06:05.567Z"
+    },
+    {
+      "keyword": "ejemplo de flujo de caja en excel",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-09-07T13:06:05.567Z"
+    },
+    {
+      "keyword": "is credit card worth it 2026",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-09-07T13:06:05.568Z"
+    },
+    {
+      "keyword": "o que é fatura",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-09-07T13:06:05.568Z"
+    },
+    {
+      "keyword": "how do freelancers organize finances",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-09-07T13:06:05.568Z"
+    },
+    {
+      "keyword": "control de gasto",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-09-07T13:06:05.568Z"
+    },
+    {
+      "keyword": "outstanding balance definition",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-09-07T13:06:05.568Z"
     }
   ]
 }

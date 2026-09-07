@@ -1,16 +1,12 @@
 # 🗂️ Fila de Keywords (Fase 3)
 
-**Atualizado em:** 2026-08-31T14:32:18.390Z
-**Totais:** 56 pendente(s) · 78 usada(s) · 56 pulada(s)
+**Atualizado em:** 2026-09-07T13:06:06.220Z
+**Totais:** 58 pendente(s) · 86 usada(s) · 58 pulada(s)
 
 ## ⏳ Pendentes por fonte
 
-### Manuais (prioridade 1) — 53
+### Manuais (prioridade 1) — 46
 
-- parcelamento _(glossario)_
-- renda mensal _(glossario)_
-- lista de compras _(glossario)_
-- cartao de credito pagbank como funciona _(glossario)_
 - como funciona a anuidade do cartão _(glossario)_
 - como funciona a amortização de financiamento _(glossario)_
 - como funciona a transferência de financiamento _(glossario)_
@@ -42,9 +38,6 @@
 - o que significa economizar _(glossario)_
 - planejamento para guardar dinheiro _(glossario)_
 - planilha para economizar dinheiro _(glossario)_
-- formas de economizar energia
-- como economizar agua
-- de como economizar água
 - de economizar água
 - economizar agua
 - para economizar água
@@ -61,29 +54,39 @@
 - o que levar para comer na praia para economizar
 - por que é importante economizar energia elétrica
 
-### Lacunas do GSC (prioridade 2) — 1
+### Lacunas do GSC (prioridade 2) — 12
 
-- investimentos simulador
+- planificación financiera
+- debentures
+- outstanding balance meaning
+- fundo fixo
+- define outstanding balance
+- control de gastos
+- ejemplo de flujo de caja en excel
+- is credit card worth it 2026
+- o que é fatura
+- how do freelancers organize finances
+- control de gasto
+- outstanding balance definition
 
-### Autocomplete (prioridade 3) — 2
+### Autocomplete (prioridade 3) — 0
 
-- lista de compras do mês _(glossario)_
-- lista de compras completa _(glossario)_
+_Nenhuma._
 
 ## ✅ Últimas usadas
 
 | Keyword | Usada por | Em |
 |---|---|---|
+| de como economizar água | gerar-dicas-financeiras | 2026-09-04 |
+| lista de compras | glossario-auto-diario | 2026-09-03 |
+| investimentos simulador | gerar-dicas-financeiras | 2026-09-03 |
+| parcelamento | glossario-auto-diario | 2026-09-02 |
+| lista de compras completa | glossario-auto-diario | 2026-09-01 |
+| como economizar agua | gerar-post-inteligente | 2026-09-01 |
+| lista de compras do mês | glossario-auto-diario | 2026-08-31 |
+| formas de economizar energia | gerar-dicas-financeiras | 2026-08-31 |
 | lista de compras supermercado | glossario-auto-diario | 2026-08-30 |
 | formas de como economizar agua | gerar-dicas-financeiras | 2026-08-30 |
-| renda mensal do neymar | glossario-auto-diario | 2026-08-29 |
-| figuras de como economizar agua | gerar-dicas-financeiras | 2026-08-29 |
-| renda mensal vitalicia | glossario-auto-diario | 2026-08-28 |
-| farmácias economizar | gerar-dicas-financeiras | 2026-08-28 |
-| renda mensal o que é | glossario-auto-diario | 2026-08-27 |
-| porque é importante economizar água​ | gerar-dicas-financeiras | 2026-08-27 |
-| parcelamento ipva | glossario-auto-diario | 2026-08-26 |
-| qual a temperatura ideal do ar-condicionado para economizar energia​ | gerar-post-investimentos | 2026-08-26 |
 
 ## ⏭️ Puladas (já cobertas)
 
@@ -99,6 +102,7 @@
 - kyc o que é (coberto-glossario)
 - kyc shopee (nome-proprio-local)
 - fatura do cartão (colide-com-verbete-existente)
+- renda mensal (coberto-glossario)
 - fluxo de caixa sebrae (nome-proprio-local)
 - saldo devedor cohab mg (nome-proprio-local)
 - saldo devedor caixa (nome-proprio-local)
@@ -117,6 +121,7 @@
 - controle de gastos pessoais (variacao-duplicada)
 - controle de gastos planilha (variacao-duplicada)
 - significado de credito (verbete-ja-existe)
+- cartao de credito pagbank como funciona (nome-proprio-local)
 - como funciona financiamento (verbete-ja-existe)
 - como funciona financiamento bancário (verbete-ja-existe)
 - como funciona financiamento de carros (variacao-duplicada)

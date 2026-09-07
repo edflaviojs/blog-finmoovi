@@ -1,27 +1,62 @@
 {
-  "generatedAt": "2026-08-31T14:32:17.711Z",
+  "generatedAt": "2026-09-07T13:06:05.487Z",
   "siteUrl": "https://blog.finmoovi.com/",
   "period": {
-    "startDate": "2026-08-03",
-    "endDate": "2026-08-31"
+    "startDate": "2026-08-10",
+    "endDate": "2026-09-07"
   },
   "hasData": true,
   "totals": {
-    "queries": 1168,
-    "pages": 166,
-    "impressions": 4225,
-    "clicks": 1
+    "queries": 794,
+    "pages": 152,
+    "impressions": 2872,
+    "clicks": 0
   },
   "opportunities": {
     "strikingDistance": [
       {
+        "query": "como reduzir gastos mensais",
+        "impressions": 533,
+        "clicks": 0,
+        "position": 8.9,
+        "ctr": 0
+      },
+      {
+        "query": "como organizar as financas pessoais",
+        "impressions": 116,
+        "clicks": 0,
+        "position": 10.1,
+        "ctr": 0
+      },
+      {
         "query": "is credit card worth it 2026",
-        "impressions": 9,
+        "impressions": 14,
         "clicks": 0,
         "position": 10.3,
         "ctr": 0
       },
       {
+        "query": "gastos recurrentes",
+        "impressions": 6,
+        "clicks": 0,
+        "position": 9.2,
+        "ctr": 0
+      },
+      {
+        "query": "ted pix",
+        "impressions": 5,
+        "clicks": 0,
+        "position": 6,
+        "ctr": 0
+      },
+      {
+        "query": "gasto recurrente",
+        "impressions": 4,
+        "clicks": 0,
+        "position": 8.5,
+        "ctr": 0
+      },
+      {
         "query": "cost of living july 2026",
         "impressions": 3,
         "clicks": 0,
@@ -29,21 +64,61 @@
         "ctr": 0
       },
       {
-        "query": "ted pix",
+        "query": "gastos recurrentes definicion",
         "impressions": 3,
         "clicks": 0,
-        "position": 6.7,
+        "position": 7.3,
         "ctr": 0
       }
     ],
     "lowCtr": [
       {
+        "query": "como reduzir gastos mensais",
+        "impressions": 533,
+        "clicks": 0,
+        "position": 8.9,
+        "ctr": 0,
+        "expectedCtr": 2.8
+      },
+      {
         "query": "mobills alternative",
+        "impressions": 8,
+        "clicks": 0,
+        "position": 2.8,
+        "ctr": 0,
+        "expectedCtr": 11
+      },
+      {
+        "query": "gastos recurrentes",
         "impressions": 6,
         "clicks": 0,
-        "position": 2,
+        "position": 9.2,
         "ctr": 0,
-        "expectedCtr": 15
+        "expectedCtr": 2.8
+      },
+      {
+        "query": "ted pix",
+        "impressions": 5,
+        "clicks": 0,
+        "position": 6,
+        "ctr": 0,
+        "expectedCtr": 5
+      },
+      {
+        "query": "gasto recurrente",
+        "impressions": 4,
+        "clicks": 0,
+        "position": 8.5,
+        "ctr": 0,
+        "expectedCtr": 2.8
+      },
+      {
+        "query": "que es renta mensual",
+        "impressions": 4,
+        "clicks": 0,
+        "position": 3,
+        "ctr": 0,
+        "expectedCtr": 11
       },
       {
         "query": "cost of living july 2026",
@@ -54,50 +129,36 @@
         "expectedCtr": 4
       },
       {
-        "query": "ted pix",
+        "query": "gastos recurrentes definicion",
         "impressions": 3,
         "clicks": 0,
-        "position": 6.7,
+        "position": 7.3,
         "ctr": 0,
         "expectedCtr": 4
       },
       {
-        "query": "ted vs pix",
+        "query": "renta mensual que es",
         "impressions": 3,
         "clicks": 0,
-        "position": 2,
+        "position": 4,
         "ctr": 0,
-        "expectedCtr": 15
+        "expectedCtr": 8
       }
     ],
     "gaps": [
       {
-        "query": "financing",
-        "impressions": 175,
+        "query": "planificación financiera",
+        "impressions": 77,
         "clicks": 0,
-        "position": 39.4,
-        "suggestedSlug": "financing"
-      },
-      {
-        "query": "investment fund",
-        "impressions": 134,
-        "clicks": 0,
-        "position": 79.4,
-        "suggestedSlug": "investment-fund"
+        "position": 56.1,
+        "suggestedSlug": "planificacion-financiera"
       },
       {
         "query": "flujo de caja",
-        "impressions": 81,
+        "impressions": 75,
         "clicks": 0,
-        "position": 93.1,
+        "position": 93,
         "suggestedSlug": "flujo-de-caja"
-      },
-      {
-        "query": "financiamiento",
-        "impressions": 73,
-        "clicks": 0,
-        "position": 66.6,
-        "suggestedSlug": "financiamiento"
       },
       {
         "query": "outstanding balance",
@@ -107,55 +168,6 @@
         "suggestedSlug": "outstanding-balance"
       },
       {
-        "query": "etf investing",
-        "impressions": 55,
-        "clicks": 0,
-        "position": 62.5,
-        "suggestedSlug": "etf-investing"
-      },
-      {
-        "query": "etf investment",
-        "impressions": 54,
-        "clicks": 0,
-        "position": 68.4,
-        "suggestedSlug": "etf-investment"
-      },
-      {
-        "query": "que es un prestamo",
-        "impressions": 54,
-        "clicks": 0,
-        "position": 96.6,
-        "suggestedSlug": "que-es-un-prestamo"
-      },
-      {
-        "query": "investment funds",
-        "impressions": 53,
-        "clicks": 0,
-        "position": 81.3,
-        "suggestedSlug": "investment-funds"
-      },
-      {
-        "query": "acciones ejemplos",
-        "impressions": 44,
-        "clicks": 0,
-        "position": 83.3,
-        "suggestedSlug": "acciones-ejemplos"
-      },
-      {
-        "query": "fund investment",
-        "impressions": 42,
-        "clicks": 0,
-        "position": 83.2,
-        "suggestedSlug": "fund-investment"
-      },
-      {
-        "query": "investing in etf",
-        "impressions": 41,
-        "clicks": 0,
-        "position": 61.3,
-        "suggestedSlug": "investing-in-etf"
-      },
-      {
         "query": "what does outstanding balance mean",
         "impressions": 36,
         "clicks": 0,
@@ -163,25 +175,25 @@
         "suggestedSlug": "what-does-outstanding-balance-mean"
       },
       {
-        "query": "fund investments",
-        "impressions": 35,
-        "clicks": 0,
-        "position": 84.9,
-        "suggestedSlug": "fund-investments"
-      },
-      {
         "query": "que es un mercado yahoo",
-        "impressions": 31,
+        "impressions": 33,
         "clicks": 0,
-        "position": 52.6,
+        "position": 57.1,
         "suggestedSlug": "que-es-un-mercado-yahoo"
       },
       {
-        "query": "investing in etfs",
-        "impressions": 30,
+        "query": "planificacion financiera",
+        "impressions": 32,
         "clicks": 0,
-        "position": 63.4,
-        "suggestedSlug": "investing-in-etfs"
+        "position": 57.8,
+        "suggestedSlug": "planificacion-financiera"
+      },
+      {
+        "query": "debentures",
+        "impressions": 31,
+        "clicks": 0,
+        "position": 90.9,
+        "suggestedSlug": "debentures"
       },
       {
         "query": "what does an outstanding balance mean",
@@ -191,20 +203,6 @@
         "suggestedSlug": "what-does-an-outstanding-balance-mean"
       },
       {
-        "query": "what is an investment fund",
-        "impressions": 30,
-        "clicks": 0,
-        "position": 79,
-        "suggestedSlug": "what-is-an-investment-fund"
-      },
-      {
-        "query": "invest funds",
-        "impressions": 29,
-        "clicks": 0,
-        "position": 84.7,
-        "suggestedSlug": "invest-funds"
-      },
-      {
         "query": "what is outstanding balance mean",
         "impressions": 29,
         "clicks": 0,
@@ -212,111 +210,170 @@
         "suggestedSlug": "what-is-outstanding-balance-mean"
       },
       {
-        "query": "volatilidad que es",
-        "impressions": 26,
+        "query": "outstanding balance meaning",
+        "impressions": 19,
         "clicks": 0,
-        "position": 95.8,
-        "suggestedSlug": "volatilidad-que-es"
+        "position": 77.6,
+        "suggestedSlug": "outstanding-balance-meaning"
       },
       {
-        "query": "what are investment funds",
-        "impressions": 26,
+        "query": "what is outstanding balance",
+        "impressions": 19,
         "clicks": 0,
-        "position": 76.3,
-        "suggestedSlug": "what-are-investment-funds"
+        "position": 44.7,
+        "suggestedSlug": "what-is-outstanding-balance"
       },
       {
-        "query": "acciónes",
-        "impressions": 23,
+        "query": "what does outstanding balance mean credit card",
+        "impressions": 18,
         "clicks": 0,
-        "position": 78.8,
-        "suggestedSlug": "acciones"
+        "position": 55.4,
+        "suggestedSlug": "what-does-outstanding-balance-mean-credit-card"
       },
       {
-        "query": "investimentos simulador",
-        "impressions": 23,
+        "query": "what is debenture",
+        "impressions": 18,
         "clicks": 0,
-        "position": 61.9,
-        "suggestedSlug": "investimentos-simulador"
+        "position": 88.7,
+        "suggestedSlug": "what-is-debenture"
       },
       {
-        "query": "pagos anticipados",
-        "impressions": 23,
+        "query": "what is outstanding balance in credit card",
+        "impressions": 18,
         "clicks": 0,
-        "position": 79.9,
-        "suggestedSlug": "pagos-anticipados"
+        "position": 51.2,
+        "suggestedSlug": "what-is-outstanding-balance-in-credit-card"
+      },
+      {
+        "query": "fundo fixo",
+        "impressions": 17,
+        "clicks": 0,
+        "position": 67.8,
+        "suggestedSlug": "fundo-fixo"
+      },
+      {
+        "query": "define outstanding balance",
+        "impressions": 16,
+        "clicks": 0,
+        "position": 42.3,
+        "suggestedSlug": "define-outstanding-balance"
+      },
+      {
+        "query": "control de gastos",
+        "impressions": 15,
+        "clicks": 0,
+        "position": 35.6,
+        "suggestedSlug": "control-de-gastos"
+      },
+      {
+        "query": "ejemplo de flujo de caja en excel",
+        "impressions": 15,
+        "clicks": 0,
+        "position": 76.9,
+        "suggestedSlug": "ejemplo-de-flujo-de-caja-en-excel"
+      },
+      {
+        "query": "is credit card worth it 2026",
+        "impressions": 14,
+        "clicks": 0,
+        "position": 10.3,
+        "suggestedSlug": "is-credit-card-worth-it-2026"
+      },
+      {
+        "query": "o que é fatura",
+        "impressions": 14,
+        "clicks": 0,
+        "position": 39.4,
+        "suggestedSlug": "o-que-e-fatura"
+      },
+      {
+        "query": "saldo devedor",
+        "impressions": 13,
+        "clicks": 0,
+        "position": 51.2,
+        "suggestedSlug": "saldo-devedor"
+      },
+      {
+        "query": "que es un prestamo",
+        "impressions": 12,
+        "clicks": 0,
+        "position": 95.7,
+        "suggestedSlug": "que-es-un-prestamo"
+      },
+      {
+        "query": "how do freelancers organize finances",
+        "impressions": 11,
+        "clicks": 0,
+        "position": 53.8,
+        "suggestedSlug": "how-do-freelancers-organize-finances"
+      },
+      {
+        "query": "control de gasto",
+        "impressions": 10,
+        "clicks": 0,
+        "position": 46.6,
+        "suggestedSlug": "control-de-gasto"
+      },
+      {
+        "query": "outstanding balance definition",
+        "impressions": 10,
+        "clicks": 0,
+        "position": 58.7,
+        "suggestedSlug": "outstanding-balance-definition"
       }
     ],
     "cannibalization": [
       {
-        "query": "que es un mercado yahoo",
-        "totalImpressions": 31,
+        "query": "planificación financiera",
+        "totalImpressions": 77,
         "pages": [
           {
-            "page": "https://blog.finmoovi.com/es/glossario/es-yahoo-finance/",
-            "impressions": 26,
+            "page": "https://blog.finmoovi.com/es/glossario/es-planificacion-financiera/",
+            "impressions": 56,
             "clicks": 0,
-            "position": 57.2
+            "position": 55.8
           },
           {
-            "page": "https://blog.finmoovi.com/es/glossario/es-yahoo-finance",
-            "impressions": 5,
+            "page": "https://blog.finmoovi.com/es/glossario/es-planificacion-financiera",
+            "impressions": 21,
             "clicks": 0,
-            "position": 28.8
+            "position": 57
+          }
+        ]
+      },
+      {
+        "query": "planificacion financiera",
+        "totalImpressions": 32,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-planificacion-financiera/",
+            "impressions": 25,
+            "clicks": 0,
+            "position": 57.6
+          },
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-planificacion-financiera",
+            "impressions": 7,
+            "clicks": 0,
+            "position": 58.4
           }
         ]
       },
       {
         "query": "fundo fixo",
-        "totalImpressions": 19,
+        "totalImpressions": 18,
         "pages": [
           {
             "page": "https://blog.finmoovi.com/glossario/gasto-fixo-de-uma-empresa/",
-            "impressions": 12,
+            "impressions": 11,
             "clicks": 0,
-            "position": 71.7
+            "position": 72.2
           },
           {
             "page": "https://blog.finmoovi.com/glossario/gasto-fixo/",
             "impressions": 7,
             "clicks": 0,
             "position": 62.4
-          }
-        ]
-      },
-      {
-        "query": "flujo de caja diario",
-        "totalImpressions": 4,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/es/glossario/es-flujo-de-caja-excel/",
-            "impressions": 2,
-            "clicks": 0,
-            "position": 84
-          },
-          {
-            "page": "https://blog.finmoovi.com/es/glossario/es-flujo-de-caja/",
-            "impressions": 2,
-            "clicks": 0,
-            "position": 91
-          }
-        ]
-      },
-      {
-        "query": "gasto variavel",
-        "totalImpressions": 4,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/glossario/exemplo-de-gasto-variavel/",
-            "impressions": 2,
-            "clicks": 0,
-            "position": 79.5
-          },
-          {
-            "page": "https://blog.finmoovi.com/glossario/gasto-variavel/",
-            "impressions": 2,
-            "clicks": 0,
-            "position": 92.5
           }
         ]
       }
