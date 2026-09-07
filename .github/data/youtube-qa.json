@@ -1060,5 +1060,23 @@
     ],
     "veredito": "1. **O LOOP — Nota: 5/10**  \nPrimeiro quadro (0.1s) e último quadro (15s) mostram a mesma ideia (“Minha reserva sumiu”), no mesmo estilo e cenário. Porém o último tem texto diferente embaixo (“quando tudo quebra”), então a volta não é totalmente invisível.\n\n2. **A FAIXA DE BAIXO — Nota: 8/10**  \nNão há informação importante no rodapé extremo da tela. O texto principal fica mais no centro. Parece seguro para a interface do Shorts/Reels.\n\n3. **TEXTO POR CIMA DE TEXTO — Nota: 6/10**  \nNão há frases totalmente sobrepostas, mas algumas palavras destacadas coloridas ficam próximas da linha principal e podem parecer confusas. Não dá para saber se há animação causando conflito.\n\n4. **LEGIBILIDADE — Nota: 8/10**  \nAs letras são grandes, com bom contraste e funcionam bem no celular. Algumas frases menores poderiam ter mais destaque.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — Nota: 6/10**  \nHá bastante espaço vazio no fundo em vários quadros. O objeto central ajuda, mas alguns momentos parecem parados demais.\n\n6. **COERÊNCIA — Nota: 8/10**  \nOs quadros parecem do mesmo vídeo: mesma identidade visual, personagem/objeto e narrativa. A sequência conta uma história de reserva financeira desaparecendo e problemas chegando.\n\n7. **TESTE CENTRAL — Nota: 7/10**  \nParece mais um vídeo animado profissional do que slides, mas alguns quadros com pouco conteúdo passam sensação de apresentação parada.\n\nNOTA GERAL: 7  \nPROBLEMA 1: O loop não fecha perfeitamente: o quadro 15s termina com “quando tudo quebra”, diferente do começo em 0.1s “Minha reserva sumiu”.  \nPROBLEMA 2: Alguns segundos têm pouco conteúdo visual (principalmente 2.1s, 4.3s e 10.7s), deixando a tela vazia.  \nPROBLEMA 3: A narrativa depende muito de texto pequeno embaixo, que pode perder força no celular.  \nPRIMEIRA COISA A MUDAR: Fazer o último quadro ser visualmente idêntico ao primeiro para criar um reinício invisível.",
     "quando": "2026-09-07T09:36:05.679Z"
+  },
+  {
+    "slug": "loop-remedio-todo-mes-voces-viram",
+    "formato": "loop16",
+    "nota": 7,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      2.1,
+      4.2,
+      6.4,
+      8.5,
+      10.6,
+      12.7,
+      14.8
+    ],
+    "veredito": "1. **O LOOP — Nota: 5/10**  \nO primeiro quadro mostra “Remédio apertou” e o último também mostra “Remédio apertou”, mas não é exatamente a mesma composição. O final parece voltar para o início pela frase, porém o objeto central e a posição do conteúdo não são idênticos. Pode funcionar, mas não é um loop perfeito.\n\n2. **A FAIXA DE BAIXO — Nota: 8/10**  \nA parte inferior está relativamente livre. O texto de legenda fica acima da área mais perigosa da interface, mas alguns trechos chegam perto da região inferior.\n\n3. **TEXTO POR CIMA DE TEXTO — Nota: 7/10**  \nNão há grandes sobreposições, mas algumas palavras aparecem isoladas e cortadas entre quadros (“receita.”, “faltar”), dando sensação de fragmentação.\n\n4. **LEGIBILIDADE — Nota: 8/10**  \nAs frases principais são grandes e têm bom contraste. As legendas menores na parte inferior podem ficar difíceis de ler em telas pequenas.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — Nota: 7/10**  \nAlguns quadros têm muito espaço vazio no fundo, principalmente quando aparece apenas o ícone do copo. Falta mais elemento visual sustentando a atenção.\n\n6. **COERÊNCIA — Nota: 8/10**  \nOs quadros parecem fazer parte do mesmo vídeo: mesma identidade visual, cores e narrativa. A sequência avança com começo, explicação e retorno.\n\n7. **TESTE CENTRAL — Nota: 6/10**  \nParece mais uma sequência de slides animados do que um vídeo profissional, porque cada quadro depende muito de textos parados e poucos elementos visuais mudam.\n\nNOTA GERAL: 7  \nPROBLEMA 1: O loop não é totalmente invisível: quadro 1 (0.1s) e quadro 8 (14.8s) têm a mesma frase, mas composição diferente.  \nPROBLEMA 2: Quadros 2, 3 e 6 (2.1s, 4.2s e 10.6s) ficam vazios com apenas o ícone, reduzindo retenção.  \nPROBLEMA 3: Quadros 3 e 8 (4.2s e 14.8s) têm palavras isoladas que parecem pedaços de legenda, prejudicando a leitura.  \nPRIMEIRA COISA A MUDAR: Criar um final que seja visualmente idêntico ao primeiro quadro e adicionar mais ação visual entre as frases.",
+    "quando": "2026-09-07T09:40:32.094Z"
   }
 ]
