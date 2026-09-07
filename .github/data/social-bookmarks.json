@@ -1838,5 +1838,65 @@
         "status": 200
       }
     }
+  },
+  {
+    "slug": "como-montar-um-plano-financeiro-que-realmente-funciona-em",
+    "title": "Como montar um plano financeiro que realmente funciona em 2026",
+    "url": "https://blog.finmoovi.com/posts/como-montar-um-plano-financeiro-que-realmente-funciona-em",
+    "submittedAt": "2026-09-07T18:56:00.761Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1847391412
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "cotacoes-semana-1-setembro-2026",
+    "title": "Resumo Semanal: Dólar a R$ 5.12 — Semana 1 de setembro",
+    "url": "https://blog.finmoovi.com/posts/cotacoes-semana-1-setembro-2026",
+    "submittedAt": "2026-09-07T18:56:01.595Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1847391900
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "entenda-o-saldo-pendente-e-como-regularizar-suas-contas",
+    "title": "Entenda o saldo pendente e como regularizar suas contas",
+    "url": "https://blog.finmoovi.com/posts/entenda-o-saldo-pendente-e-como-regularizar-suas-contas",
+    "submittedAt": "2026-09-07T18:56:02.286Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1847391906
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
   }
 ]
