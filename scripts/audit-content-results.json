@@ -1386,6 +1386,21 @@
     }
   },
   {
+    "file": "en-fgts-severance-fund.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-financial-comfort-zone.md",
     "dir": "glossario",
     "severity": 0,
@@ -1733,6 +1748,21 @@
   {
     "file": "en-forgot-to-pay-a-bill-how-to-fix-it-in-2026.md",
     "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-guarantee.md",
+    "dir": "glossario",
     "severity": 0,
     "issues": {
       "currency": 0,
@@ -2706,6 +2736,21 @@
     }
   },
   {
+    "file": "en-mortgage.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-negotiating-discounts-on-fixed-bills.md",
     "dir": "posts",
     "severity": 0,
@@ -3096,6 +3141,21 @@
     }
   },
   {
+    "file": "en-rent-vs-mortgage-which-is-worth-it-in-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-review-your-budget.md",
     "dir": "posts",
     "severity": 0,
@@ -3397,6 +3457,21 @@
   },
   {
     "file": "en-smart-cashback.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-smart-water-management-at-home-practical-tips-for-2026.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -4133,6 +4208,21 @@
   {
     "file": "es-ahorro.md",
     "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-alquiler-vs-financiacion-que-conviene-mas-en-2026.md",
+    "dir": "posts",
     "severity": 0,
     "issues": {
       "currency": 0,
@@ -5661,6 +5751,21 @@
     }
   },
   {
+    "file": "es-fondo-de-garantia-del-tiempo-de-servicio-fgts.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-fondo-de-inversion.md",
     "dir": "glossario",
     "severity": 0,
@@ -5692,6 +5797,21 @@
   },
   {
     "file": "es-ganancia-de-capital.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-garantia.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -5766,6 +5886,21 @@
     }
   },
   {
+    "file": "es-gestion-inteligente-del-agua-en-casa-consejos-practicos-para.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-gobernanza-corporativa.md",
     "dir": "glossario",
     "severity": 0,
@@ -5812,6 +5947,21 @@
   },
   {
     "file": "es-hedge.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-hipoteca.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
