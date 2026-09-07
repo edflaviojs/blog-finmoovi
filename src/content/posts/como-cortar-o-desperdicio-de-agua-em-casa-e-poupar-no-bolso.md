@@ -55,7 +55,7 @@ Um dos maiores [benefícios](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026
 
 
 ## Comece hoje
-Pegue seu celular, abra o FinMoovi e, em menos de cinco minutos, tire uma foto da sua última conta de água. Confirme a categoria “Água”, defina uma meta de redução de 10 % para o próximo mês e habilite o lembrete diário de “verificar torneira”. Cada pequena ação se soma, e logo você verá a conta de água cair, liberando recursos para outras prioridades – seja uma viagem, um investimento ou simplesmente mais tranquilidade no fim do mês.
+Pegue seu celular, abra o FinMoovi e, em menos de cinco minutos, tire uma foto da sua última conta de água. Confirme a categoria “Água”, defina uma meta de redução de 10 % para o próximo mês e habilite o lembrete diário de “verificar torneira”. Cada pequena ação se soma, e logo você verá a conta de água cair, liberando recursos para outras prioridades – seja uma viagem, um [investimento](/glossario/investimento) ou simplesmente mais tranquilidade no fim do mês.
 
 ## Perguntas frequentes
 ### Como o FinMoovi reconhece os números da conta de água?

@@ -53,7 +53,7 @@ One of the biggest [benefits](/en/posts/en-cdb-vs-treasury-selic-which-yields-mo
 ![Start today](/images/posts/como-cortar-o-desperdicio-de-agua-em-casa-e-poupar-no-bolso-6.webp)
 
 ## Get started today
-Grab your phone, open FinMoovi, and in less than five minutes snap a photo of your latest water bill. Confirm the “Water” category, set a 10 % reduction goal for next month, and enable a daily reminder to “check tap”. Each small action adds up, and soon you’ll see the water bill drop, freeing money for other priorities—whether it’s a trip, an investment, or simply more peace of mind at the end of the month.
+Grab your phone, open FinMoovi, and in less than five minutes snap a photo of your latest water bill. Confirm the “Water” category, set a 10 % reduction goal for next month, and enable a daily reminder to “check tap”. Each small action adds up, and soon you’ll see the water bill drop, freeing money for other priorities—whether it’s a trip, an [investment](/en/glossario/en-investment), or simply more peace of mind at the end of the month.
 
 ## Frequently Asked Questions
 ### How does FinMoovi read the numbers on my water bill?
