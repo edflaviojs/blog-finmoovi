@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-31T15:35:03.003Z",
+  "updatedAt": "2026-09-07T13:44:27.927Z",
   "selic": {
     "value": "14.00",
     "unit": "% a.a.",
@@ -13,31 +13,31 @@
     "url": "https://www.ibge.gov.br"
   },
   "cdi": {
-    "value": "1.04",
+    "value": "0.21",
     "unit": "% a.a.",
     "source": "Banco Central do Brasil",
     "url": "https://www.bcb.gov.br"
   },
   "usdBrl": {
-    "value": "5.2005",
+    "value": "5.1253",
     "unit": "BRL",
     "source": "Banco Central do Brasil (PTAX)",
     "url": "https://www.bcb.gov.br"
   },
   "eurBrl": {
-    "value": "6.0111",
+    "value": "5.9498",
     "unit": "BRL",
     "source": "ExchangeRate API",
     "url": "https://www.exchangerate-api.com"
   },
   "poupanca": {
-    "value": "0.6455",
+    "value": "0.6698",
     "unit": "% a.m.",
     "source": "Banco Central do Brasil",
     "url": "https://www.bcb.gov.br"
   },
   "desemprego": {
-    "value": "N/D",
+    "value": "5.3",
     "unit": "%",
     "source": "IBGE (PNAD Contínua)",
     "url": "https://www.ibge.gov.br"
