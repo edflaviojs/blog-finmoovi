@@ -1,0 +1,213 @@
+{
+  "slug": "kw-amortizacao-de-r-10-000",
+  "term": "Amortização de R$ 10.000",
+  "category": "mindset",
+  "keyword": "amortizar",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Dá pra *salvar mil e quinhentos reais* quando você decide amortizar dez mil da dívida?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "areia-movedica",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Dá pra salvar mil e quinhentos reais quando você decide amortizar dez mil da dívida? Dá sim, só depende do jeito que você faz.",
+      "durationSec": 9.2,
+      "shots": [
+        {
+          "anchor": "salvar",
+          "visual": {
+            "type": "statement",
+            "text": "Dívida pode afundar"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "amortizar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "areia-movedica"
+          }
+        },
+        {
+          "anchor": "você",
+          "visual": {
+            "type": "number",
+            "text": "R$ 1.500"
+          },
+          "sfx": "coin"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu sei que essa palavra parece complicada. A gente olha pro contrato do banco e tem até medo de mexer.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "essa",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          }
+        },
+        {
+          "anchor": "contrato",
+          "visual": {
+            "type": "statement",
+            "text": "Contrato parece difícil"
+          },
+          "sfx": "alert"
+        },
+        {
+          "anchor": "mexer",
+          "visual": {
+            "type": "icon",
+            "icon": "mind"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Só que amortizar é só adiantar um dinheiro. E escolher a opção certa deixa mil e quinhentos reais direto no seu bolso.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "amortizar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "areia-movedica"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "opção",
+          "visual": {
+            "type": "statement",
+            "text": "Escolha muda o resultado"
+          }
+        },
+        {
+          "anchor": "bolso",
+          "visual": {
+            "type": "number",
+            "text": "R$ 1.500"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei lá no FinMoovi que ia adiantar esses dez mil, e ele me mostrou na hora esses mil e quinhentos reais sobrando.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "joguei",
+          "visual": {
+            "type": "app",
+            "app": "calculadora",
+            "note": "Simulação de amortização com valor e economia"
+          },
+          "sfx": "keyboard"
+        },
+        {
+          "anchor": "mostrou",
+          "visual": {
+            "type": "chart",
+            "text": "Economia gerada"
+          }
+        },
+        {
+          "anchor": "sobrando",
+          "visual": {
+            "type": "number",
+            "text": "R$ 1.500"
+          },
+          "sfx": "coin"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver como fica no seu caso? Procura o FinMoovi. São sete dias grátis.",
+      "durationSec": 5.4,
+      "shots": [
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "statement",
+            "text": "Faça sua simulação"
+          }
+        },
+        {
+          "anchor": "Procura",
+          "visual": {
+            "type": "icon",
+            "icon": "target"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Pra salvar esse dinheiro todo, você só precisa escolher bem como vai amortizar. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "salvar",
+          "visual": {
+            "type": "statement",
+            "text": "Proteja seu dinheiro"
+          }
+        },
+        {
+          "anchor": "escolher",
+          "visual": {
+            "type": "icon",
+            "icon": "shield"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Controle muda tudo"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja sua economia no FinMoovi",
+    "target": "app"
+  },
+  "totalDurationSec": 47.3
+}
