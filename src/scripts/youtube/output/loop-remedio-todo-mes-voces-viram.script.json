@@ -1,0 +1,117 @@
+{
+  "slug": "loop-remedio-todo-mes-voces-viram",
+  "formato": "loop16",
+  "term": "O remédio de todo mês",
+  "category": "vida",
+  "keyword": "REMÉDIO",
+  "situacao": "remedio-todo-mes",
+  "gancho": "voces-viram",
+  "ganchoFamilia": "vocês viram",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "balde-furado",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Gente, vocês viram que o remédio apertou? Vi a receita.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "vocês",
+          "visual": {
+            "type": "statement",
+            "text": "Remédio apertou"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "viram",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu me enrolei com a conta do remédio e fiquei preocupado.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "enrolei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "statement",
+            "text": "A conta apertou"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então agora eu separo antes e não deixo faltar em casa.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "separo",
+          "visual": {
+            "type": "statement",
+            "text": "Separei antes"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "deixo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Gente, remédio apertou de novo e eu vi a receita.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "remédio",
+          "visual": {
+            "type": "statement",
+            "text": "Remédio de novo"
+          }
+        },
+        {
+          "anchor": "apertou",
+          "visual": {
+            "type": "statement",
+            "text": "Remédio apertou"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}

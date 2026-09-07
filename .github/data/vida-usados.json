@@ -358,5 +358,11 @@
     "gancho": "voces-viram",
     "turno": "manha",
     "em": "2026-09-07T09:33:03.713Z"
+  },
+  {
+    "situacao": "remedio-todo-mes",
+    "gancho": "voces-viram",
+    "turno": "noite",
+    "em": "2026-09-07T09:37:41.422Z"
   }
 ]
