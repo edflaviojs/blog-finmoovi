@@ -1623,8 +1623,55 @@
           "titulo": "The Powerful Perspective Every Marriage Needs"
         }
       ]
+    },
+    {
+      "videoId": "LxaAbj5wWUs",
+      "title": "OLITEF 2026 | MA01 - Educação Financeira Básica",
+      "channel": "Prof. Mansinho Jr.",
+      "duracaoSeg": 3480,
+      "idioma": "pt",
+      "viewsPerDay": 125,
+      "vistoEm": "2026-09-07",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "Início"
+        },
+        {
+          "seg": 251,
+          "titulo": "A História da Moeda"
+        },
+        {
+          "seg": 645,
+          "titulo": "Dica de Filme"
+        },
+        {
+          "seg": 795,
+          "titulo": "Sistema Financeiro Nacional"
+        },
+        {
+          "seg": 1201,
+          "titulo": "Matemática Financeira Básica"
+        },
+        {
+          "seg": 1384,
+          "titulo": "Juros Simples e Compostos"
+        },
+        {
+          "seg": 1590,
+          "titulo": "Noções de Economia"
+        },
+        {
+          "seg": 2918,
+          "titulo": "Finanças Pessoais"
+        },
+        {
+          "seg": 3288,
+          "titulo": "Dica de Livros"
+        }
+      ]
     }
   ],
-  "atualizadoEm": "2026-09-06T08:13:29.313Z",
-  "total": 29
+  "atualizadoEm": "2026-09-07T08:45:26.007Z",
+  "total": 30
 }
