@@ -632,3 +632,191 @@ Decisões que o tornam útil — e que não se devem desfazer:
    falso. PT: `/posts/<slug>/`. EN: `/en/posts/`**`en-`**`<slug>/`. ES: `/es/posts/`**`es-`**`<slug>/`
    — o prefixo do idioma **fica** na URL. Ler o formato no `sitemap-index.xml` **antes** de
    concluir que alguma coisa caiu.
+
+---
+
+## 🔴 As 10 corridas vermelhas e a caçada ao tráfego que não vinha (2026-09-07)
+
+Começou com um print da caixa de entrada: **10 e-mails "Run failed"** entre 30/08 e 06/09.
+Não eram 10 problemas — eram **três defeitos e um alarme falso**. E a investigação acabou
+noutro sítio: descobrir **por que 402 posts geram 1 clique por mês**.
+
+### Parte 1 — os três defeitos (commit `ea6fa3c`)
+
+**1. A fila do vídeo longo entupia PARA SEMPRE.**
+`gh run download --dir .` **aborta a extração inteira** se um ficheiro do artefato já existir
+no disco. E o roteiro `src/scripts/youtube/output/<slug>.script.json` **é commitado** — o
+checkout põe-no lá antes do passo. Colisão garantida, todos os domingos.
+
+O estrago não era a corrida perdida, era o **entupimento**: quem risca o vídeo da fila é o
+ÚLTIMO passo, que nunca corria. Ficaram **três** longos presos atrás do primeiro
+(`dono-dois-homens` 24/08, `educacao-financeira` 29/08, `compras-inteligentes` 05/09) — todos
+publicados no canal, nenhum entregue às 4 redes.
+
+Conserto em `multipost-carteiro-longo.yml`: baixar para `$(mktemp -d)` e `cp -Rf` para a raiz,
+que sobrescreve em vez de abortar. **Provado no ar** com `dry_run=true` (corrida `34105858552`):
+`165M prontos para entrega` — exatamente onde morria antes.
+
+> ⚠️ **FAMÍLIA DE DEFEITO NOVA:** quando o passo que LIMPA a fila vem depois do passo que pode
+> FALHAR, uma falha transitória vira permanente. Procurar este padrão em todos os carteiros.
+
+**2. "agosto" é português E espanhol — e a trava reprovava o português.**
+Em `src/scripts/validacao/validar-i18n.js`, a lista de meses traduzidos proibidos no
+`translationKey` incluía `abril` e `agosto` — **as duas únicas palavras iguais nas duas
+línguas**. O Cotações Semanal falhou **os cinco domingos de agosto** (03, 10, 17, 24 e 31) e o
+resumo não saía desde a semana 3 de julho. Abril repetiria em 2027.
+Os outros dez meses ES diferem do PT sem acentos (marzo≠marco, mayo≠maio…) e continuam a ser
+apanhados. Provado com 10 casos dos dois lados, 10/10.
+
+**3. O guard media o TEMA; o validador mede o TÍTULO.**
+`isThemeCovered(topic)` corre no tema de partida, curto. Quem barra no fim mede o slug, que é o
+título comprido que a IA escreveu:
+
+```
+tema    "reduzir conta de agua"                              -> 3 tokens, partilha 2 -> PASSA
+titulo  "como reduzir o consumo de agua em casa e economizar" -> partilha 4          -> BLOQUEIA
+```
+
+Seis corridas vermelhas entre 31/08 e 06/09, todas no tema de água. **E o vermelho nem era o
+pior:** os geradores fazem `git commit` ANTES do gate, por isso o post ia escrito, ilustrado e
+traduzido para 3 idiomas para ser deitado fora. Nos dias em que o título saía só um pouco
+diferente, PASSAVA — e é por isso que há **cinco posts PT sobre poupar água**.
+
+Nova `skipSeTituloCanibaliza()` em `src/scripts/lib/seo-guard.js` (fonte única), chamada logo a
+seguir ao `createSlug` nos **9 geradores**. Vira skip barato e VERDE com aviso visível.
+Provado: os 6 títulos reais que derrubaram as corridas são **6/6 apanhados**, com **0 falsos
+alarmes** em temas legítimos.
+
+**O alarme falso:** o Short de 05/09 levou `409 alreadyExists` do YouTube às 14h; a repescagem
+das 21h49 salvou (`youtu.be/Bm4HH3XQ7co`). Nada a consertar.
+
+**Commit `01a3a2f`:** esvaziar `longo-redes.json`. Por ordem do dono, os 3 longos presos ficam
+como estão (já publicados no canal) — mas a fila tinha de ser limpa, senão o carteiro serviria
+o mais antigo e o vídeo novo só sairia 3 semanas depois. `outbox.js next` com fila vazia dá
+exit **78** = sucesso neutro.
+
+### Parte 2 — por que o blog não pega tração
+
+Números do Google (03–31/08): **4.225 impressões, 1 clique**, 1.168 queries, 166 páginas.
+
+| medida | valor |
+|---|---|
+| posição média das 25 buscas com volume | **69ª — página 7** |
+| composição do site | **339 de 784 páginas (43%) são glossário** |
+| origem do tráfego | **8 de 8** das buscas com volume caem em páginas de GLOSSÁRIO |
+| palavras no Semrush (BR) | 229, tráfego estimado **0**, melhor posição do site: **29ª** |
+
+**A parte bem construída do blog não recebe visita; a parte que recebe é a que não converte.**
+Os 134 posts PT têm 23 de ferramenta, 47 de "como fazer", **0 de definição** e **3 CTAs + 4
+links para o app cada um** (`PostInlineCTAs.astro`, montado por JS — não aparece num grep ao
+HTML servido). Quem é dicionário é o glossário.
+
+**O ativo escondido são as CALCULADORAS:**
+
+| busca | volume/mês | posição |
+|---|---|---|
+| calculadora de juros compostos | **90.500** | 73 |
+| juros compostos calculadora | **33.100** | 77 |
+| calcular juros compostos | 6.600 | 81 |
+
+São **141 mil buscas/mês** a cair em `/ferramentas/calculadora-juros-compostos/`. E o **Mobills
+— concorrente direto do app — está em 5º** nessa palavra.
+
+**Canibalização real medida:** `o que e renda mensal` (1.000 buscas, KD 20) aparece 2× com
+`/glossario/renda-mensal/` (pos 64) e `/glossario/renda-mensal-vitalicia/` (pos 76).
+
+### Parte 3 — o gargalo: BACKLINKS
+
+**De 112 backlinks, apenas 4 são follow.** Authority Score do domínio: **6/100**. E por página:
+`finmoovi.com` tem 16 domínios; **`blog.finmoovi.com` tem ZERO**.
+
+Comparação que fecha: **`obinvest.org` está em 4º naquela busca de 90 mil com 3 backlinks** e
+uma página de 4 KB com 20 palavras.
+
+**O que NÃO é o problema (tudo medido, para não voltar a estas hipóteses):**
+
+| hipótese | medição |
+|---|---|
+| velocidade | **a nossa é a MAIS RÁPIDA** do top 10: 0,17s contra 0,87s do #4 |
+| peso | 82 KB — o #1 tem 888 KB e ganha |
+| conteúdo curto | o #4 tem 20 palavras e está em 4º; o #1 tem 956 — **dados ambíguos** |
+| penalização | **zero ações manuais** no GSC, nas DUAS propriedades |
+| idioma/mercado | o produto vende nos 3 (6 ofertas Hotmart: BRL/USD/EUR) |
+
+**Os ~40 sites de "Buy Backlinks Online Cheap" NÃO foram contratados** — são lojas que vendem
+backlinks e montam páginas com 3.000 links externos citando milhares de domínios, para
+parecerem cheias de clientes. Os chineses e os `.top`/`.shop` vêm do **ProductHunt** (apontam
+para `producthunt.com/r/DJK3ICW6N7ZSXT`, que redireciona para o blog). Quase todos `nofollow`.
+**Sem ação manual = o Google ignora. Não há nada a limpar, e desautorizar traria risco.**
+
+### Parte 4 — a receita do concorrente (o achado mais valioso)
+
+`toroinvestimentos.com.br` aponta **238 vezes** para o `mobills.com.br`. **Não é parceria nem
+rodapé** — são 238 ARTIGOS, cada um a usar uma calculadora do Mobills, muitos por **iframe**:
+
+```
+mobills.com.br/blog/embed/calculadoras/juros-composto.html        -> HTTP 200, 6.931 bytes
+mobills.com.br/blog/embed/calculadoras/financiamento-veiculo.html -> HTTP 200, 8.637 bytes
+   (a pagina embutivel traz 7 links de volta para mobills.com.br)
+```
+
+O portal precisa de uma calculadora no artigo e não quer programar uma. Cola o embed, ganha a
+ferramenta de graça, e o Mobills ganha o link.
+
+**O FinMoovi tem 7 calculadoras publicadas e ZERO versões embutíveis.**
+
+O padrão do `acionista.com.br` (45 links para o investidor10) foi verificado e **descartado**:
+são notícias de bolsa a citá-lo como fonte de dados — não é o negócio do FinMoovi.
+
+### O plano (decidido pelo dono em 07/09)
+
+| passo | esforço | retorno | estado |
+|---|---|---|---|
+| **1. Diretórios** (AlternativeTo, webcatalog.io, sitelike.org, mate.tools) | 1 tarde | ~4 links certos | 🟡 **o DONO faz — roteiro em `ROTEIRO-BACKLINKS-FINMOOVI.md`, na Área de Trabalho** |
+| **2. Embeds das 7 calculadoras** | programação | 0 sozinho, mas destrava o passo 3 | ⚪ **NÃO FEITO — não autorizado** |
+| **3. Oferecer aos portais** | contato, um a um | é onde estão os 238 | ⚪ depende do passo 2 |
+
+> ⚠️ **Construir o embed NÃO faz o link aparecer.** O Mobills tem 238 porque é conhecido e os
+> portais escolhem usá-lo. O embed é condição necessária, não suficiente — mas muda a conversa
+> de *"me dá um link?"* para *"tenho uma calculadora pronta para o seu artigo, de graça"*.
+
+**Alvos de contato (passo 3):** toroinvestimentos.com.br (AS 44) · suno.com.br (47) ·
+genialinvestimentos.com.br (53) · creditas.com (52) · guiadoinvestidor.com.br (43) ·
+acionista.com.br (37) · bmcnews.com.br (32) · financeone.com.br (30) ·
+**ecommercebrasil.com.br** (AS 45, linka a 3 dos 4, aceita artigo de convidado).
+
+### Como refazer esta investigação no Semrush
+
+```
+Posicoes:      semrush.com/analytics/organic/positions/?db=br&q=blog.finmoovi.com
+Uma palavra:   semrush.com/analytics/keywordoverview/?db=br&q=<palavra>
+Backlinks:     semrush.com/analytics/backlinks/overview/?q=blog.finmoovi.com&searchType=domain
+Backlink Gap:  semrush.com/analytics/backlinks/gap/?q0=blog.finmoovi.com&q1=mobills.com.br
+```
+
+No **Backlink Gap**: `blog.finmoovi.com` como **Subdomain** (Root Domain agrega os 63 links da
+landing e mascara), filtros **Best** + **AScore #21–60** + **ordenar por Matches** — de 6.483
+candidatos para 786 úteis. E **clicar no NÚMERO** da coluna do concorrente abre a lista dos
+links: é esse clique que revela se é parceria, rodapé ou artigo a artigo.
+
+⚠️ O Semrush **agrega o subdomínio no root domain** na tela de backlinks — os 63 domínios são
+do domínio inteiro. Ver "Top Pages" para separar.
+
+### As armadilhas desta sessão (quatro erros meus, todos apanhados pelo dono)
+
+1. **Recomendei estratégia a partir de 3 e 6 impressões.** Ruído, não evidência. Antes de
+   recomendar, dizer de quantas medições vem o número.
+2. **Li números soltos do HTML e inventei um defeito.** Vi `R$ 21,90` na landing em inglês e
+   anunciei "a página em inglês cobra em reais" — eram valores de um **extrato fictício numa
+   imagem de demonstração**. *Um grep devolve a linha, não o SIGNIFICADO.*
+3. **Inventei o endereço das páginas e medi 404s.** Montei `blog.finmoovi.com/<slug>/` de
+   cabeça; o real é `/posts/<slug>/`. Estive a medir a página *"Page not found"* (70.970 bytes,
+   sempre o mesmo tamanho — o sinal que ignorei) e afirmei **três coisas falsas** em cima disso:
+   que os posts não tinham CTA (têm 3 e 4 links), que faltavam posts de ferramenta (há 23) e
+   que os posts eram dicionário (0 são). **Este documento já avisava sobre o formato das URLs,
+   duas secções acima, e eu não li.**
+4. **Concluí que o produto era só brasileiro** por causa do erro 2 — vende nos 3 mercados.
+
+> **A regra que sai daqui: nunca montar uma URL de cabeça** (tirar do `sitemap-index.xml`) e
+> **conferir sempre o `<title>` antes de concluir seja o que for de uma página.** Duas páginas
+> diferentes com o mesmo tamanho ao byte é 404 disfarçado, não coincidência.
