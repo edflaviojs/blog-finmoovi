@@ -10580,5 +10580,135 @@
         "publicaEmBR": "08/09 às 14h31"
       }
     }
+  },
+  "erros-cartao-credito": {
+    "midias": {
+      "video": {
+        "id": "d4bd9713-e746-48a5-b7b6-b0a2b6d295d0",
+        "name": "feUUan7fUm.mp4",
+        "originalName": null,
+        "path": "https://media.help4desk.com/feUUan7fUm.mp4",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capa": {
+        "id": "cf6f9e63-afb0-460b-a99c-3d2dc0151acf",
+        "name": "dAj61vELei.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/dAj61vELei.jpeg",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capaLarga": {
+        "id": "097806ab-a5c4-4efc-96ff-39a263d3c991",
+        "name": "AncYZ8sD1B.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/AncYZ8sD1B.jpeg",
+        "thumbnail": null,
+        "alt": null
+      },
+      "telegram": {
+        "media": {
+          "id": "0671fbcd-3b46-4911-9e2c-4043cca26e52",
+          "name": "k09LjpJzkd.mp4",
+          "originalName": null,
+          "path": "https://media.help4desk.com/k09LjpJzkd.mp4",
+          "thumbnail": null,
+          "alt": null
+        },
+        "bytes": 18246166,
+        "comprimido": true
+      }
+    },
+    "publicaEm": "2026-09-07T22:00:00.000Z",
+    "publicaEmBR": "07/09 às 19h00",
+    "agendadoEm": "2026-09-07T19:12:56.584Z",
+    "atualizadoEm": "2026-09-07T19:13:00.149Z",
+    "redes": {
+      "instagram": {
+        "postId": "cmtrmbktt00mus390smpsxx9u",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-09-07T22:00:00.000Z",
+        "publicaEmBR": "07/09 às 19h00",
+        "midia": "o vídeo",
+        "caracteres": 728,
+        "limite": 2200
+      },
+      "zernio-tiktok": {
+        "postId": "cmtrmbl5200mvs390snku63sd",
+        "canal": "finmoovi",
+        "publicaEm": "2026-09-07T22:12:00.000Z",
+        "publicaEmBR": "07/09 às 19h12",
+        "midia": "o vídeo",
+        "caracteres": 274,
+        "limite": 2200
+      },
+      "facebook": {
+        "postId": "cmtrmblh600mws390rgpizc6j",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-09-07T22:26:00.000Z",
+        "publicaEmBR": "07/09 às 19h26",
+        "midia": "o vídeo",
+        "caracteres": 498,
+        "limite": 63206
+      },
+      "linkedin-page": {
+        "postId": "cmtrmblry00mxs390d01ayb97",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-09-07T22:43:00.000Z",
+        "publicaEmBR": "07/09 às 19h43",
+        "midia": "o vídeo",
+        "caracteres": 504,
+        "limite": 3000
+      },
+      "threads": {
+        "postId": "cmtrmbm3400mys3908hbxq02k",
+        "canal": "finmoovi",
+        "publicaEm": "2026-09-07T22:58:00.000Z",
+        "publicaEmBR": "07/09 às 19h58",
+        "midia": "o vídeo",
+        "caracteres": 142,
+        "limite": 500
+      },
+      "telegram": {
+        "postId": "cmtrmbmdt00mzs390scburo92",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-09-07T23:14:00.000Z",
+        "publicaEmBR": "07/09 às 20h14",
+        "midia": "o vídeo, numa cópia de 17.4 MB — o Telegram recusa acima de 20 MB quando vai buscar por endereço",
+        "caracteres": 370,
+        "limite": 4096
+      },
+      "pinterest": {
+        "postId": "cmtrmbn0700n0s390oldtxhvm",
+        "canal": "finmoovi",
+        "publicaEm": "2026-09-07T23:31:00.000Z",
+        "publicaEmBR": "07/09 às 20h31",
+        "midia": "vídeo primeiro, capa depois — a ordem que o Pinterest exige",
+        "caracteres": 479,
+        "limite": 500
+      },
+      "bluesky": {
+        "postId": "cmtrmbnbh00n1s390hx5qm63m",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-09-07T23:47:00.000Z",
+        "publicaEmBR": "07/09 às 20h47",
+        "midia": "vai a capa DEITADA (o Bluesky não publica vídeo, e a em pé ficaria cortada no feed)",
+        "caracteres": 99,
+        "limite": 300
+      },
+      "instagram-story": {
+        "postId": "cmtrmbnjo00n2s390367qoijc",
+        "tipo": "vídeo",
+        "publicaEm": "2026-09-07T22:05:00.000Z",
+        "publicaEmBR": "07/09 às 19h05"
+      },
+      "facebook-story": {
+        "postId": "cmtrmbnop00n3s390rcjy6lrm",
+        "tipo": "vídeo",
+        "publicaEm": "2026-09-07T22:31:00.000Z",
+        "publicaEmBR": "07/09 às 19h31"
+      }
+    }
   }
 }
