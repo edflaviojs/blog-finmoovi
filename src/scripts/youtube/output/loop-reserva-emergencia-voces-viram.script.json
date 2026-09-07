@@ -1,0 +1,117 @@
+{
+  "slug": "loop-reserva-emergencia-voces-viram",
+  "formato": "loop16",
+  "term": "A reserva de emergência",
+  "category": "vida",
+  "keyword": "RESERVA",
+  "situacao": "reserva-emergencia",
+  "gancho": "voces-viram",
+  "ganchoFamilia": "vocês viram",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "guarda-chuva",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Gente, vocês viram que minha reserva sumiu quando tudo quebrou",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "vocês",
+          "visual": {
+            "type": "statement",
+            "text": "Minha reserva sumiu"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "viram",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "guarda-chuva"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu passei aperto com luz, mercado e boletos juntos também",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "passei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "guarda-chuva"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "aperto",
+          "visual": {
+            "type": "statement",
+            "text": "Contas juntas apertaram"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então guardei um pouquinho antes e parei de viver sufoco",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "guardei",
+          "visual": {
+            "type": "statement",
+            "text": "Guardei um pouquinho"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "pouquinho",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "guarda-chuva"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Hoje eu lembro que minha reserva segura a casa quando tudo quebra",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "lembro",
+          "visual": {
+            "type": "statement",
+            "text": "Reserva segura a casa"
+          }
+        },
+        {
+          "anchor": "reserva",
+          "visual": {
+            "type": "statement",
+            "text": "Minha reserva sumiu"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
