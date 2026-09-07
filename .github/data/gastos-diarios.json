@@ -237,107 +237,116 @@
       "Together.ai|imagem": 4,
       "kie.ai|visao": 2557,
       "kie/claude-sonnet-5|texto": 618
+    },
+    "2026-09-07": {
+      "Cloudflare Workers AI|visao": 67,
+      "cerebras|texto": 35640,
+      "Cloudflare Workers AI|imagem": 19,
+      "together|voz": 470,
+      "kie/gpt-5-2|texto": 27128,
+      "Groq|visao": 9472,
+      "kie.ai|visao": 2670,
+      "kie/gemini-3-pro|texto": 3009,
+      "kie/claude-sonnet-5|texto": 0
     }
   },
   "relatorio": {
-    "dia": "2026-09-06",
+    "dia": "2026-09-07",
     "horas": 24,
-    "geradoEm": "2026-09-06T09:20:32.351Z",
+    "geradoEm": "2026-09-07T10:10:50.695Z",
     "linhas": [
       {
         "fornecedor": "Cloudflare Workers AI",
         "tipo": "visao",
-        "chamadas": 89,
+        "chamadas": 67,
         "recusas": 0,
-        "quanto": 89,
+        "quanto": 67,
         "unidade": "unidades",
         "custo": null,
-        "salto": 1.05414551607445
+        "salto": 0.7855946398659966
       },
       {
         "fornecedor": "cerebras",
         "tipo": "texto",
-        "chamadas": 41,
+        "chamadas": 37,
         "recusas": 0,
-        "quanto": 44285,
+        "quanto": 35640,
         "unidade": "fichas",
         "custo": null,
-        "salto": 0.6777965571752482
+        "salto": 0.5411408467201416
       },
       {
         "fornecedor": "Cloudflare Workers AI",
         "tipo": "imagem",
-        "chamadas": 30,
+        "chamadas": 19,
         "recusas": 0,
-        "quanto": 30,
+        "quanto": 19,
         "unidade": "unidades",
         "custo": null,
-        "salto": 1.0824742268041236
+        "salto": 0.6717171717171717
       },
       {
         "fornecedor": "together",
         "tipo": "voz",
         "chamadas": 14,
         "recusas": 0,
-        "quanto": 517,
+        "quanto": 470,
         "unidade": "unidades",
         "custo": null,
-        "salto": 0.5771929824561404
+        "salto": 0.5409404801052285
       },
       {
         "fornecedor": "kie/gpt-5-2",
         "tipo": "texto",
-        "chamadas": 9,
+        "chamadas": 7,
         "recusas": 0,
-        "quanto": 32204,
+        "quanto": 27128,
         "unidade": "fichas",
         "custo": null,
-        "salto": 0.562114124417758
+        "salto": 0.4654530480586106
       },
       {
         "fornecedor": "Groq",
         "tipo": "visao",
-        "chamadas": 9,
+        "chamadas": 5,
         "recusas": 0,
-        "quanto": 17066,
+        "quanto": 9472,
         "unidade": "fichas",
         "custo": null,
-        "salto": 0.647490514905149
-      },
-      {
-        "fornecedor": "Together.ai",
-        "tipo": "imagem",
-        "chamadas": 4,
-        "recusas": 0,
-        "quanto": 4,
-        "unidade": "unidades",
-        "custo": null,
-        "salto": 1.2
+        "salto": 0.38329556490773714
       },
       {
         "fornecedor": "kie.ai",
         "tipo": "visao",
         "chamadas": 2,
         "recusas": 0,
-        "quanto": 2557,
+        "quanto": 2670,
         "unidade": "fichas",
         "custo": null,
-        "salto": 0.6869435062941357
+        "salto": 0.7963018192663287
+      },
+      {
+        "fornecedor": "kie/gemini-3-pro",
+        "tipo": "texto",
+        "chamadas": 1,
+        "recusas": 0,
+        "quanto": 3009,
+        "unidade": "fichas",
+        "custo": null,
+        "salto": 0.5119088125212657
       },
       {
         "fornecedor": "kie/claude-sonnet-5",
         "tipo": "texto",
-        "chamadas": 1,
-        "recusas": 0,
-        "quanto": 618,
-        "unidade": "fichas",
+        "chamadas": 0,
+        "recusas": 1,
+        "quanto": 0,
+        "unidade": "unidades",
         "custo": null,
-        "salto": 7.616197183098592
+        "salto": 0
       }
     ],
-    "alarmes": [
-      "kie/claude-sonnet-5"
-    ],
+    "alarmes": [],
     "custoTotal": 0,
     "semPreco": [
       "Cloudflare Workers AI",
@@ -345,10 +354,10 @@
       "together",
       "kie/gpt-5-2",
       "Groq",
-      "Together.ai",
       "kie.ai",
+      "kie/gemini-3-pro",
       "kie/claude-sonnet-5"
     ]
   },
-  "atualizadoEm": "2026-09-06T09:20:32.351Z"
+  "atualizadoEm": "2026-09-07T10:10:50.695Z"
 }
