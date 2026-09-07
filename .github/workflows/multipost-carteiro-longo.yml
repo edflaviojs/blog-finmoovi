@@ -115,12 +115,33 @@ jobs:
 
       # O artefato foi gravado a partir da raiz, então baixá-lo PARA a raiz reconstrói o
       # que o entregador espera: out/longo/<slug>.mp4, o roteiro e a capa da Manus.
+      #
+      # ⚠️ MAS NUNCA DIRETO PARA A RAIZ. O `gh run download` ABORTA a extração inteira se
+      # UM ficheiro do artefato já existir no disco ("file exists") — e o roteiro
+      # `src/scripts/youtube/output/<slug>.script.json` É COMMITADO no repo, ou seja, o
+      # checkout põe-no lá antes deste passo. O artefato traz o mesmo ficheiro: colisão
+      # garantida, e a corrida morre ANTES de entregar seja o que for.
+      #
+      # O estrago não é a corrida perdida, é o ENTUPIMENTO: quem risca o vídeo da fila é o
+      # último passo, que nunca chega a correr. O bilhete fica lá para sempre e todos os
+      # domingos seguintes tentam o MESMO vídeo e morrem no mesmo sítio. Foi o que
+      # aconteceu de 24/08 a 06/09/2026: três vídeos longos presos atrás do primeiro
+      # (dono-dois-homens, educacao-financeira, compras-inteligentes), nenhum entregue às
+      # quatro redes, enquanto os três estavam bem publicados no canal — o que fez isto
+      # parecer defeito do YouTube quando era só o carteiro.
+      #
+      # Baixar para uma pasta à parte e copiar POR CIMA resolve o caso todo e não só este
+      # slug: o `cp -Rf` sobrescreve em vez de abortar, e vale para qualquer ficheiro do
+      # artefato que venha a ser commitado no futuro.
       - name: Baixar o vídeo, o roteiro e a capa
         if: steps.fila.outputs.skip != 'true' && env.RUN_ID != ''
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh run download "$RUN_ID" --name "longo-$FILE_SLUG" --dir .
+          BAIXA="$(mktemp -d)"
+          gh run download "$RUN_ID" --name "longo-$FILE_SLUG" --dir "$BAIXA"
+          cp -Rf "$BAIXA"/. .
+          rm -rf "$BAIXA"
           test -f "youtube-render/out/longo/$FILE_SLUG.mp4" || { echo "❌ MP4 não veio no artefato"; ls -R youtube-render/out | head -30; exit 1; }
           test -f "src/scripts/youtube/output/$FILE_SLUG.script.json" || { echo "❌ o roteiro não veio no artefato — sem ele não há legenda"; exit 1; }
           # ⚠️ A capa em falta é AVISO, não paragem: sem ela só o Bluesky fica de fora

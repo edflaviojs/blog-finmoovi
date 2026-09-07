@@ -122,6 +122,49 @@ export function warnSkip(theme, detail = '') {
 }
 
 /**
+ * SEGUNDA MEDIÇÃO — o TÍTULO que a IA escreveu canibaliza um post já publicado?
+ *
+ * ═══ POR QUE NÃO CHEGA MEDIR SÓ O TEMA ═══
+ * `isThemeCovered(topic)` mede o tema de PARTIDA e é chamado antes de gastar IA. Mas o
+ * tema de partida é CURTO e o título que a IA devolve é COMPRIDO — e quem manda no fim é
+ * o validador (`validacao/validar-i18n.js` §5), que mede o SLUG, ou seja, o título.
+ *
+ *   tema      "reduzir conta de água"                             → 3 tokens, partilha 2 → PASSA
+ *   título    "como reduzir o consumo de água em casa e economizar" → partilha 4 → BLOQUEIA
+ *
+ * O guard de entrada e o gate de saída mediam coisas diferentes, e o post morria no meio
+ * da diferença. Custou seis corridas vermelhas entre 31/08 e 06/09/2026 (dicas, orçamento
+ * e investimentos), todas presas no mesmo tema de água.
+ *
+ * ═══ E O VERMELHO NEM ERA O PIOR ═══
+ * Os geradores desta casa fazem `git commit` ANTES do gate de validação. Um post barrado
+ * no gate já foi escrito, ilustrado e traduzido para três idiomas — e é deitado fora sem
+ * nunca chegar ao push. Cota de IA gasta todos os dias para nada. E nos dias em que o
+ * título saía só um pouco diferente, PASSAVA: foi assim que o blog acabou com cinco posts
+ * PT sobre poupar água a competirem uns com os outros no Google.
+ *
+ * Chamar isto logo a seguir ao `createSlug(title)` — antes da capa, das traduções e do
+ * commit — transforma o vermelho num skip barato e VERDE, com aviso visível no Actions
+ * (padrão `warnSkip`, para não repetir o modo de falha clássico do repo: o gerador que
+ * não publica em silêncio).
+ *
+ * @param   {string} slugPt   O slug JÁ criado a partir do título (o mesmo que vai ao disco).
+ * @param   {string} rotulo   Nome do gerador, só para a mensagem ("dicas", "orçamento"...).
+ * @param   {string} [postsDir]
+ * @returns {boolean}         true = canibaliza, o gerador deve fazer `return` sem publicar.
+ */
+export function skipSeTituloCanibaliza(slugPt, rotulo, postsDir = POSTS_DIR) {
+  const r = isThemeCovered(slugPt, postsDir);
+  if (!r.covered) return false;
+  console.log(`⚠️ O TÍTULO gerado canibaliza um post já publicado — nada é escrito nem commitado.`);
+  warnSkip(
+    `${rotulo}: título canibaliza "${r.conflictSlug}"`,
+    `slug "${slugPt}" partilha: ${(r.shared || []).join(', ')}`,
+  );
+  return true;
+}
+
+/**
  * Bloco de texto (pt-BR) listando temas já cobertos, para injetar no prompt de
  * geração e a IA escolher um ângulo/subtema novo. Séries periódicas são omitidas.
  * Retorna '' se não houver temas.

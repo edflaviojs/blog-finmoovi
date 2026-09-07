@@ -1,6 +1,6 @@
 import { config } from '../../../site.config.ts';
 import { generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
-import { isThemeCovered, coveredThemesBlock, warnSkip, trimSlug } from '../lib/seo-guard.js';
+import { isThemeCovered, coveredThemesBlock, warnSkip, trimSlug, skipSeTituloCanibaliza } from '../lib/seo-guard.js';
 import { guardedTranslate } from '../lib/lang-guard.js';
 import { getTranslationInstructions } from '../lib/translation-prompt.js';
 import { postCoreRules } from '../lib/prompt-post.js';
@@ -378,6 +378,10 @@ async function main() {
 
     const allKeywords = [...new Set([...keywords, ...topic.keywords])];
     const slugPt = createSlug(title);
+
+    // ⚠️ Medir o TÍTULO, e não só o tema: é o slug que o validador olha no fim. Sem isto o
+    // post é escrito, ilustrado e traduzido para ser deitado fora pelo gate. Ver seo-guard.js.
+    if (skipSeTituloCanibaliza(slugPt, 'bofu', POSTS_DIR)) return;
 
     console.log(`✅ PT: ${title}`);
     const imagePath = await generateCoverImage(title, slugPt, 'posts');

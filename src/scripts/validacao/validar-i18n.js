@@ -130,7 +130,18 @@ function main() {
   }
 
   // 4. Verificar que translationKeys não contêm palavras traduzidas
-  const translatedMonths = /-(january|february|march|april|may|june|july|august|september|october|november|december|enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre)-/i;
+  //
+  // ⚠️ `abril` e `agosto` NÃO entram nesta lista: são as duas únicas palavras que se
+  // escrevem EXATAMENTE igual em português e em espanhol. Estavam aqui como meses ES e
+  // reprovavam o PT correto — o Cotações Semanal falhou os cinco domingos de agosto de
+  // 2026 (03, 10, 17, 24 e 31/08) por causa desta linha, e o resumo semanal ficou sem
+  // sair desde a semana 3 de julho. Abril traria o mesmo em 2027.
+  //
+  // Os outros dez meses ES diferem do PT depois de tirados os acentos (marzo≠marco,
+  // mayo≠maio, junio≠junho, julio≠julho, enero≠janeiro, febrero≠fevereiro,
+  // septiembre≠setembro, octubre≠outubro, noviembre≠novembro, diciembre≠dezembro) e os
+  // doze meses EN diferem todos do PT — esses continuam a ser apanhados.
+  const translatedMonths = /-(january|february|march|april|may|june|july|august|september|october|november|december|enero|febrero|marzo|mayo|junio|julio|septiembre|octubre|noviembre|diciembre)-/i;
   for (const [key, locales] of Object.entries(keyMap)) {
     if (translatedMonths.test(key)) {
       errors.push(`❌ translationKey "${key}" contém mês traduzido (deve usar PT como base)`);

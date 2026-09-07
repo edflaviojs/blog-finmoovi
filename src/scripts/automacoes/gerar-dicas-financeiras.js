@@ -6,7 +6,7 @@ import { config } from '../../../site.config.ts';
  */
 
 import { generateBlogPost, generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
-import { isThemeCovered, coveredThemesBlock, warnSkip, trimSlug } from '../lib/seo-guard.js';
+import { isThemeCovered, coveredThemesBlock, warnSkip, trimSlug, skipSeTituloCanibaliza } from '../lib/seo-guard.js';
 import { takeKeyword, markUsed, QUEUE_FILE } from '../lib/keyword-queue.js';
 import { guardedTranslate } from '../lib/lang-guard.js';
 import { getTranslationInstructions } from '../lib/translation-prompt.js';
@@ -350,6 +350,13 @@ Responda APENAS com o tema, em uma única linha, sem aspas e sem explicação.`,
       console.log(`⚠️ Post "${slugPt}" já existe — pulando para evitar duplicata de translationKey.`);
       return;
     }
+
+    // ⚠️ A medição do tema (isThemeCovered, lá em cima) NÃO chega: ela olha o tema curto de
+    // partida, e quem barra no fim é o validador, que olha o SLUG comprido que a IA acabou
+    // de escrever. Medir aqui — antes da capa, das traduções e do commit — é o que evita o
+    // post ser escrito para depois ser deitado fora. O porquê todo em seo-guard.js.
+    // A keyword da fila não é marcada como usada e volta no próximo ciclo, como no gate acima.
+    if (skipSeTituloCanibaliza(slugPt, 'dicas', POSTS_DIR)) return;
 
     const today = new Date().toISOString().split('T')[0];
 

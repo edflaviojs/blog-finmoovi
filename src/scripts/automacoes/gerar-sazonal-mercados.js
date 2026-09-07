@@ -13,7 +13,7 @@ import { config } from '../../../site.config.ts';
 
 import { generateBlogPost, generateCoverImage, generateInlineImage, generateText } from '../apis/kie-ai.js';
 import { getDueHoliday } from '../lib/calendario-sazonal.js';
-import { isThemeCovered, warnSkip, trimSlug } from '../lib/seo-guard.js';
+import { isThemeCovered, warnSkip, trimSlug, skipSeTituloCanibaliza } from '../lib/seo-guard.js';
 import { guardedTranslate } from '../lib/lang-guard.js';
 import { analyzeContent } from '../lib/fact-guard.js';
 import { fixStaleYear } from '../lib/year-guard.js';
@@ -187,6 +187,11 @@ async function main() {
   if (existing.some(f => f === `${slug}.md` || f === `en-${slug}.md` || f === `es-${slug}.md`)) {
     console.log(`⚠️ Post "${slug}" já existe. Abortando.`); return;
   }
+
+  // ⚠️ O guard acima só apanha o nome IGUAL; este apanha o tema PARECIDO, que é o que o
+  // validador mede no fim. Sem ele o post é escrito e traduzido para ser deitado fora pelo
+  // gate. Ver seo-guard.js.
+  if (skipSeTituloCanibaliza(slug, 'sazonal mercados', POSTS_DIR)) return;
 
   const today = now.toISOString().split('T')[0];
   // A capa TEM de existir no disco antes de escrever os .md. O catch antigo era

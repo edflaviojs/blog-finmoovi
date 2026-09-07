@@ -6,7 +6,7 @@ import { config } from '../../../site.config.ts';
  */
 
 import { generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
-import { isThemeCovered, coveredThemesBlock, warnSkip, trimSlug } from '../lib/seo-guard.js';
+import { isThemeCovered, coveredThemesBlock, warnSkip, trimSlug, skipSeTituloCanibaliza } from '../lib/seo-guard.js';
 import { takeKeyword, markUsed, QUEUE_FILE } from '../lib/keyword-queue.js';
 import { guardedTranslate } from '../lib/lang-guard.js';
 import { getTranslationInstructions } from '../lib/translation-prompt.js';
@@ -468,6 +468,11 @@ async function main() {
 
   const slug = slugify(post.title);
   console.log(`  Título: ${post.title}`);
+
+  // ⚠️ Medir o TÍTULO, e não só o tema (isThemeCovered lá em cima): é o slug que o validador
+  // olha no fim. Sem isto o post é escrito, ilustrado e traduzido para ser deitado fora pelo
+  // gate. Ver seo-guard.js.
+  if (skipSeTituloCanibaliza(slug, 'post inteligente', POSTS_DIR)) return;
 
   // 4. Generate cover image (same system as normal posts)
   const imagePath = await generateCoverImage(post.title, slug, 'posts');
