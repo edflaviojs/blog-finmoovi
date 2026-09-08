@@ -1,21 +1,21 @@
 ---
-title: "FinMoovi Cost of Living Index — July/2026"
-description: "CPI for July 2026 by expense group: overall index at 0.07% this month and 4.44% over 12 months. Month‑close exchange rates and tips to protect your budget."
+title: "Cost of Living July 2026 Update"
+description: "Descubra o custo de vida em julho de 2026 e como planejar seu orçamento com eficiência, obtenha informações atualizadas agora"
 image: "/images/posts/indice-finmoovi-custo-de-vida-julho-2026.webp"
 imageAlt: "Red notebook, calculator, coins, and green leaves on white marble surface."
 category: "cotacoes"
 tags: ["cost of living","ipca","inflation","quotes","budget"]
 author: "FinMoovi"
 publishedAt: 2026-08-13
-updatedAt: "2026-09-02"
+updatedAt: "2026-09-08"
 readingTime: 3
 featured: false
 locale: "en"
 translationKey: "indice-finmoovi-custo-de-vida-julho-2026"
 scope: "br-only"
 seo:
-  metaTitle: "FinMoovi Cost of Living Index — July/2026"
-  metaDescription: "IPCA for July/2026 by expense group: overall index at 0.07% in the month and 4.44% over 12 months. Month-close exchange rates and tips to protect your budget."
+  metaTitle: "Cost of Living July 2026 Update"
+  metaDescription: "Descubra o custo de vida em julho de 2026 e como planejar seu orçamento com eficiência, obtenha informações atualizadas agora"
   keywords: ["ipca july 2026","cost of living index brazil","inflation by expense group","dollar closing rate"]
 ---
 
