@@ -248,98 +248,131 @@
       "kie.ai|visao": 2670,
       "kie/gemini-3-pro|texto": 3009,
       "kie/claude-sonnet-5|texto": 0
+    },
+    "2026-09-08": {
+      "Cloudflare Workers AI|visao": 81,
+      "cerebras|texto": 63643,
+      "Cloudflare Workers AI|imagem": 26,
+      "kie/gpt-5-2|texto": 81644,
+      "together|voz": 491,
+      "cloudflare|texto": 1432,
+      "kie.ai|visao": 2167,
+      "Together.ai|imagem": 2,
+      "kie/gemini-3-pro|texto": 5977,
+      "groq|texto": 5152,
+      "kie/claude-sonnet-5|texto": 0
     }
   },
   "relatorio": {
-    "dia": "2026-09-07",
+    "dia": "2026-09-08",
     "horas": 24,
-    "geradoEm": "2026-09-07T10:10:50.695Z",
+    "geradoEm": "2026-09-08T09:34:36.490Z",
     "linhas": [
       {
         "fornecedor": "Cloudflare Workers AI",
         "tipo": "visao",
-        "chamadas": 67,
+        "chamadas": 81,
         "recusas": 0,
-        "quanto": 67,
+        "quanto": 81,
         "unidade": "unidades",
         "custo": null,
-        "salto": 0.7855946398659966
+        "salto": 0.9775862068965516
       },
       {
         "fornecedor": "cerebras",
         "tipo": "texto",
-        "chamadas": 37,
+        "chamadas": 44,
         "recusas": 0,
-        "quanto": 35640,
+        "quanto": 63643,
         "unidade": "fichas",
         "custo": null,
-        "salto": 0.5411408467201416
+        "salto": 0.9620161048260493
       },
       {
         "fornecedor": "Cloudflare Workers AI",
         "tipo": "imagem",
-        "chamadas": 19,
+        "chamadas": 26,
         "recusas": 0,
-        "quanto": 19,
+        "quanto": 26,
         "unidade": "unidades",
         "custo": null,
-        "salto": 0.6717171717171717
+        "salto": 0.9680851063829787
+      },
+      {
+        "fornecedor": "kie/gpt-5-2",
+        "tipo": "texto",
+        "chamadas": 14,
+        "recusas": 0,
+        "quanto": 81644,
+        "unidade": "fichas",
+        "custo": null,
+        "salto": 1.7446737063188968
       },
       {
         "fornecedor": "together",
         "tipo": "voz",
         "chamadas": 14,
         "recusas": 0,
-        "quanto": 470,
+        "quanto": 491,
         "unidade": "unidades",
         "custo": null,
-        "salto": 0.5409404801052285
+        "salto": 0.5687572397815654
       },
       {
-        "fornecedor": "kie/gpt-5-2",
+        "fornecedor": "cloudflare",
         "tipo": "texto",
-        "chamadas": 7,
+        "chamadas": 3,
         "recusas": 0,
-        "quanto": 27128,
+        "quanto": 1432,
         "unidade": "fichas",
         "custo": null,
-        "salto": 0.4654530480586106
-      },
-      {
-        "fornecedor": "Groq",
-        "tipo": "visao",
-        "chamadas": 5,
-        "recusas": 0,
-        "quanto": 9472,
-        "unidade": "fichas",
-        "custo": null,
-        "salto": 0.38329556490773714
+        "salto": 0.7538826006843906
       },
       {
         "fornecedor": "kie.ai",
         "tipo": "visao",
         "chamadas": 2,
         "recusas": 0,
-        "quanto": 2670,
+        "quanto": 2167,
         "unidade": "fichas",
         "custo": null,
-        "salto": 0.7963018192663287
+        "salto": 0.6434085510688836
+      },
+      {
+        "fornecedor": "Together.ai",
+        "tipo": "imagem",
+        "chamadas": 2,
+        "recusas": 0,
+        "quanto": 2,
+        "unidade": "unidades",
+        "custo": null,
+        "salto": 0.45454545454545453
       },
       {
         "fornecedor": "kie/gemini-3-pro",
         "tipo": "texto",
-        "chamadas": 1,
+        "chamadas": 2,
         "recusas": 0,
-        "quanto": 3009,
+        "quanto": 5977,
         "unidade": "fichas",
         "custo": null,
-        "salto": 0.5119088125212657
+        "salto": 1.0172462699268168
+      },
+      {
+        "fornecedor": "groq",
+        "tipo": "texto",
+        "chamadas": 1,
+        "recusas": 0,
+        "quanto": 5152,
+        "unidade": "fichas",
+        "custo": null,
+        "salto": 1.0182488965017458
       },
       {
         "fornecedor": "kie/claude-sonnet-5",
         "tipo": "texto",
         "chamadas": 0,
-        "recusas": 1,
+        "recusas": 2,
         "quanto": 0,
         "unidade": "unidades",
         "custo": null,
@@ -351,13 +384,15 @@
     "semPreco": [
       "Cloudflare Workers AI",
       "cerebras",
-      "together",
       "kie/gpt-5-2",
-      "Groq",
+      "together",
+      "cloudflare",
       "kie.ai",
+      "Together.ai",
       "kie/gemini-3-pro",
+      "groq",
       "kie/claude-sonnet-5"
     ]
   },
-  "atualizadoEm": "2026-09-07T10:10:50.695Z"
+  "atualizadoEm": "2026-09-08T09:34:36.490Z"
 }
