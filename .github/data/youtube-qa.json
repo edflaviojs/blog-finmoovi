@@ -1078,5 +1078,23 @@
     ],
     "veredito": "1. **O LOOP — Nota: 5/10**  \nO primeiro quadro mostra “Remédio apertou” e o último também mostra “Remédio apertou”, mas não é exatamente a mesma composição. O final parece voltar para o início pela frase, porém o objeto central e a posição do conteúdo não são idênticos. Pode funcionar, mas não é um loop perfeito.\n\n2. **A FAIXA DE BAIXO — Nota: 8/10**  \nA parte inferior está relativamente livre. O texto de legenda fica acima da área mais perigosa da interface, mas alguns trechos chegam perto da região inferior.\n\n3. **TEXTO POR CIMA DE TEXTO — Nota: 7/10**  \nNão há grandes sobreposições, mas algumas palavras aparecem isoladas e cortadas entre quadros (“receita.”, “faltar”), dando sensação de fragmentação.\n\n4. **LEGIBILIDADE — Nota: 8/10**  \nAs frases principais são grandes e têm bom contraste. As legendas menores na parte inferior podem ficar difíceis de ler em telas pequenas.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — Nota: 7/10**  \nAlguns quadros têm muito espaço vazio no fundo, principalmente quando aparece apenas o ícone do copo. Falta mais elemento visual sustentando a atenção.\n\n6. **COERÊNCIA — Nota: 8/10**  \nOs quadros parecem fazer parte do mesmo vídeo: mesma identidade visual, cores e narrativa. A sequência avança com começo, explicação e retorno.\n\n7. **TESTE CENTRAL — Nota: 6/10**  \nParece mais uma sequência de slides animados do que um vídeo profissional, porque cada quadro depende muito de textos parados e poucos elementos visuais mudam.\n\nNOTA GERAL: 7  \nPROBLEMA 1: O loop não é totalmente invisível: quadro 1 (0.1s) e quadro 8 (14.8s) têm a mesma frase, mas composição diferente.  \nPROBLEMA 2: Quadros 2, 3 e 6 (2.1s, 4.2s e 10.6s) ficam vazios com apenas o ícone, reduzindo retenção.  \nPROBLEMA 3: Quadros 3 e 8 (4.2s e 14.8s) têm palavras isoladas que parecem pedaços de legenda, prejudicando a leitura.  \nPRIMEIRA COISA A MUDAR: Criar um final que seja visualmente idêntico ao primeiro quadro e adicionar mais ação visual entre as frases.",
     "quando": "2026-09-07T09:40:32.094Z"
+  },
+  {
+    "slug": "loop-limpar-o-nome-e-serio-que",
+    "formato": "loop16",
+    "nota": null,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      2.1,
+      4.2,
+      6.3,
+      8.4,
+      10.5,
+      12.6,
+      14.6
+    ],
+    "veredito": "Posso fazer essa avaliação, mas preciso que você envie a imagem com os 8 quadros do vídeo. \n\nNo momento, eu só tenho o texto do pedido e não recebi os frames para analisar. Envie a imagem (o mosaico 8 quadros) e eu respondo exatamente no formato solicitado, avaliando apenas o que aparece nos quadros parados.",
+    "quando": "2026-09-08T09:04:04.533Z"
   }
 ]
