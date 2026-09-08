@@ -1,5 +1,30 @@
 [
   {
+    "file": "en-quotes-week-1-september-2026.md",
+    "dir": "posts",
+    "severity": 3,
+    "issues": {
+      "currency": 7,
+      "brInstitutions": [],
+      "brProducts": [
+        "CDB",
+        "Selic"
+      ],
+      "geoRefs": [
+        "brasileiro"
+      ],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "ações",
+        "poupança",
+        "reais",
+        "investimentos"
+      ]
+    }
+  },
+  {
     "file": "en-fgc-guarantee.md",
     "dir": "glossario",
     "severity": 2,
@@ -31,6 +56,25 @@
       "brAcronyms": [
         "LCI",
         "LCA"
+      ],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-cotizaciones-semana-1-septiembre-2026.md",
+    "dir": "posts",
+    "severity": 2,
+    "issues": {
+      "currency": 4,
+      "brInstitutions": [],
+      "brProducts": [
+        "Selic"
+      ],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "IPCA"
       ],
       "ptLeftovers": []
     }
@@ -1836,6 +1880,21 @@
     }
   },
   {
+    "file": "en-how-to-build-a-financial-plan-that-actually-works-in-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-how-to-build-a-free-effective-budget-in-2026.md",
     "dir": "posts",
     "severity": 0,
@@ -2482,6 +2541,21 @@
   },
   {
     "file": "en-investment-fund.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-investment.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -3621,6 +3695,21 @@
     }
   },
   {
+    "file": "en-understand-outstanding-balance-and-how-to-clear-your.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-understand-price-amortization-and-optimize-your-finances-in.md",
     "dir": "posts",
     "severity": 0,
@@ -4611,6 +4700,21 @@
     }
   },
   {
+    "file": "es-como-crear-un-plan-financiero-que-realmente-funciona-en-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-como-crear-un-presupuesto-gratuito-y-eficaz-en-2026.md",
     "dir": "posts",
     "severity": 0,
@@ -5556,6 +5660,21 @@
     }
   },
   {
+    "file": "es-entiende-el-saldo-pendiente-y-como-regularizar-tus-cuentas.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-entiende-la-amortizacion-price-y-optimiza-tus-finanzas-en.md",
     "dir": "posts",
     "severity": 0,
@@ -6082,6 +6201,21 @@
   },
   {
     "file": "es-interes.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-inversion.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {

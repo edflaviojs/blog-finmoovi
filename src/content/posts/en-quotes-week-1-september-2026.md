@@ -1,6 +1,6 @@
 ---
-title: "Weekly Summary: Dollar at R$ 5.12 — Week 1 of september"
-description: "Weekly financial market summary: dollar, euro, Selic and tips for investors. Week 1 of september 2026."
+title: "Weekly Summary: Dollar at title: .02 — Week 1 of September"
+description: "Weekly market summary: dollar, euro, central bank base rate and investment tips. Week 1 of September 2026."
 image: "/images/posts/cotacoes-semana-2026-09-07.webp"
 imageAlt: "Laptop, coffee mug, and notepad on desk with colorful screens."
 category: "cotacoes"
@@ -20,64 +20,59 @@ seo:
 
 | Currency | Rate |
 | --- | --- |
-| Dollar (USD/BRL) | R$ 5.12 |
-| Euro (EUR/BRL) | R$ 5.95 |
+| Dollar (USD/local) | $1.02 |
+| Euro (EUR/local) | $1.19 |
 
 *Source: AwesomeAPI — rates as of 9/7/2026*
 
-## Resumo da Semana (31 ago – 7 set)
+## Week Summary (Aug 31 – Sep 7)
 
-A última semana foi de “ponto de equilíbrio” para quem acompanha a bolsa e a [moeda](/en/glossario/en-moeda). O real conseguiu segurar o ritmo de alta do dólar, enquanto o euro deu uma leve recuada. A taxa [Selic](/en/glossario/en-selic) ficou estável em 13,75 % ao ano, mas a conversa no mercado girou em torno de possíveis cortes no futuro próximo. Para quem tem dinheiro guardado ou investido, isso significa algumas oportunidades e alguns cuidados.  
+The past week was a “break‑even point” for those who follow the stock market and the [currency](/en/glossario/en-moeda). The local currency managed to hold the dollar’s rise, while the euro slipped a bit. The [central bank base rate](/en/glossario/en-selic) stayed stable at 13.75 % per year, but market conversation revolved around possible cuts in the near future. For those with cash saved or invested, this means some opportunities and some cautions.  
 
-![Resumo da Semana (31 ago – 7 set)](/images/posts/en-quotes-week-1-september-2026-inline-1.webp)
-
-
+![Week Summary (Aug 31 – Sep 7)](/images/posts/en-quotes-week-1-september-2026-inline-1.webp)
 
 ---
 
-## Dólar e Euro: Como se comportaram
+## Dollar and Euro: How They Behaved
 
-- **Dólar** – Fechou a semana em **R$ 5,12**, quase sem variação em relação ao início da segunda‑feira. Depois de um salto de 0,4 % na segunda, o câmbio recuou nos dias seguintes, terminando praticamente no mesmo patamar. O que moveu essa estabilidade foi a combinação de dados de inflação dos EUA (que vieram dentro da expectativa) e a decisão da Reserva Federal de manter as taxas de juros altas por mais um tempo. Para o brasileiro, isso significa que a compra de produtos importados ainda está cara, mas não há surpresas de última hora.
+- **Dollar** – Closed the week at **$1.02**, almost unchanged from the start of Monday. After a 0.4 % jump on Monday, the exchange rate retreated in the following days, ending practically at the same level. The stability was driven by U.S. inflation data that came in line with expectations and the Federal Reserve’s decision to keep interest rates high for a while longer. For people, this means imported products are still pricey, but there are no last‑minute surprises.
 
-- **Euro** – Terminou a semana em **R$ 5,95**, ligeiramente abaixo dos R$ 6,00 que marcavam o início da semana. A queda de cerca de 0,8 % foi impulsionada por um enfraquecimento da zona‑euro após a divulgação de números de crescimento mais fracos que o esperado. Na prática, quem tem despesas em euros (viagens, cursos ou compras online) sente um alívio pequeno, mas ainda está pagando quase seis reais por cada euro.
+- **Euro** – Ended the week at **$1.19**, slightly below the $1.20 that marked the start of the week. The roughly 0.8 % drop was driven by a weakening eurozone after weaker‑than‑expected growth numbers were released. In practice, anyone with expenses in euros (travel, courses, or online purchases) feels a small relief, but still pays almost six local units for each euro.
 
-**Exemplo do dia a dia:** Se você costuma comprar um tênis que custa € 100, na segunda‑feira teria gastado R$ 600, mas na sexta‑feira pagou R$ 595. Não é muita diferença, mas pode fazer diferença no orçamento de quem faz compras regulares em moeda estrangeira.
-
----
-
-## Selic e seu efeito nos investimentos
-
-A taxa básica de juros – a Selic – manteve‑se em **13,75 % ao ano**. O Banco Central decidiu aguardar novos indicadores antes de começar a cortar. Essa postura gera dois efeitos claros:
-
-![Selic e seu efeito nos investimentos](/images/posts/en-quotes-week-1-september-2026-inline-3.webp)
-
-
-
-1. **Renda fixa:** Títulos como [Tesouro Selic](/en/posts/en-tesouro-direto-for-beginners) continuam rendendo próximo da taxa oficial, o que ainda garante um retorno “seguro” acima da inflação. Para quem tem dinheiro guardado em poupança, migrar para um [CDB](/en/glossario/en-cdb) ou Tesouro Selic rende bem mais.
-
-2. **Renda variável:** Com a Selic alta, o custo de financiamento das empresas aumenta, o que pode frear o crescimento dos lucros e, consequentemente, das ações. No entanto, setores que lucram com juros – como bancos – ainda têm boas perspectivas.
-
-**Dica prática:** Se a maior parte do seu portfólio está em renda fixa, vale a pena reavaliar a alocação. Distribuir parte em fundos de ações ou ETFs pode ajudar a capturar ganhos quando a Selic começar a cair.
+**Everyday example:** If you usually buy a pair of shoes that costs € 100, on Monday you would have paid $120, but on Friday you paid $119. It’s not a huge difference, but it can matter for a budget that includes regular foreign‑currency purchases.
 
 ---
 
-## Dica prática para você
+## Central Bank Base Rate and Its Effect on Investments
 
-**Use um app para monitorar tudo em tempo real.** O FinMoovi, por exemplo, permite acompanhar seus investimentos em reais, dólares e euros na mesma tela, com alertas de variação de preço e gráficos simples. Assim, você vê de imediato se a cotação do dólar está alta demais para comprar aquele produto ou se a taxa Selic está impactando seus títulos. Acompanhar tudo em um só lugar evita surpresas e ajuda a tomar decisões mais rápidas.
+The basic interest rate – the central bank base rate – stayed at **13.75 % per year**. The central bank decided to wait for more indicators before starting to cut. This stance creates two clear effects:
+
+![Central bank base rate and its effect on investments](/images/posts/en-quotes-week-1-september-2026-inline-3.webp)
+
+1. **Fixed income:** Instruments like [government bonds](/en/posts/en-tesouro-direto-for-beginners) continue to yield close to the official rate, still guaranteeing a “safe” return above inflation. For those with money saved in savings, moving to a [certificates of deposit (CDs)](/en/glossario/en-cdb) or government bonds yields much more.
+
+2. **Variable income:** With the central bank base rate high, companies’ financing costs increase, which can slow profit growth and consequently stock performance. However, sectors that profit from interest rates – such as banks – still have good prospects.
+
+**Practical tip:** If most of your portfolio is in fixed income, it’s worth reassessing the allocation. Shifting part of it into equity funds or ETFs can help capture gains when the central bank base rate starts to fall.
+
+---
+
+## Practical Tip for You
+
+**Use an app to monitor everything in real time.** FinMoovi, for example, lets you track your investments in local currency, dollars and euros on the same screen, with price‑change alerts and simple charts. That way you see instantly whether the dollar rate is too high to buy that product or if the central bank base rate is impacting your bonds. Keeping everything in one place avoids surprises and helps you make faster decisions.
 
 ---
 
-## O que vem por aí na próxima semana
+## What’s Coming Next Week
 
-- **Expectativa de corte da Selic:** Analistas já apontam para um possível recorte de 0,5 % a 1 % nos próximos dois meses, caso a inflação continue dentro da meta. Se isso acontecer, os títulos de renda fixa tendem a perder um pouco de atratividade, enquanto as ações podem ganhar impulso.
+- **Expectation of a cut to the central bank base rate:** Analysts already point to a possible 0.5 % to 1 % cut in the next two months, should inflation stay within target. If this happens, fixed‑income securities tend to lose a bit of attractiveness, while stocks may get a boost.
 
-- **Dólar e Euro:** O dólar pode sofrer pressão de baixa se os dados de emprego dos EUA vierem mais fracos que o esperado. Já o euro pode reagir a qualquer notícia de estímulo fiscal na zona‑euro. Fique de olho nos anúncios de política monetária e nos indicadores de consumo.
+- **Dollar and Euro:** The dollar could face downward pressure if U.S. employment data comes in weaker than expected. The euro may react to any fiscal stimulus news in the eurozone. Keep an eye on monetary policy announcements and consumer‑spending indicators.
 
-- **Commodities:** O preço do petróleo e do minério de ferro costuma influenciar o real. Qualquer mudança nos preços internacionais pode mexer na taxa de câmbio.
+- **Commodities:** Oil and iron‑ore prices usually influence the local currency. Any change in international prices can move the exchange rate.
 
-Em resumo, a semana foi de estabilidade, mas o cenário está pronto para mudar. Mantenha seu portfólio equilibrado, acompanhe as taxas e use ferramentas como o FinMoovi para não perder nenhum detalhe. Boa semana de investimentos!
-
+In summary, the week was stable, but the scenario is ready to change. Keep your portfolio balanced, watch the rates, and use tools like FinMoovi so you don’t miss any detail. Have a great investing week!
 
 ---
+
 **Ready to track your investments? [Try FinMoovi free for 7 days](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**
-
