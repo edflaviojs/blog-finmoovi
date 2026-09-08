@@ -1,0 +1,218 @@
+{
+  "slug": "kw-pagbank-vale-a-pena",
+  "term": "PagBank: vale a pena?",
+  "category": "mindset",
+  "keyword": "PagBank",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "O cartão do PagBank vale a pena ou *prende seu dinheiro*?"
+  },
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "escada",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "O cartão do PagBank vale a pena ou prende seu dinheiro? Ele ajuda quando você anota cada compra.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "PagBank",
+          "visual": {
+            "type": "statement",
+            "text": "Vale a pena?"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "prende",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escada"
+          }
+        },
+        {
+          "anchor": "anota",
+          "visual": {
+            "type": "statement",
+            "text": "Anote cada gasto"
+          },
+          "sfx": "typewriter"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Você faz uma compra, esquece a parcela e a fatura chega alta. Muita gente passa por isso porque ninguém ensinou a usar o cartão.",
+      "durationSec": 9.2,
+      "shots": [
+        {
+          "anchor": "esquece",
+          "visual": {
+            "type": "icon",
+            "icon": "clock"
+          },
+          "sfx": "click"
+        },
+        {
+          "anchor": "fatura",
+          "visual": {
+            "type": "statement",
+            "text": "A fatura sobe"
+          },
+          "sfx": "alert"
+        },
+        {
+          "anchor": "ninguém",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escada"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Cem reais por mês parece pouco, mas vira mil e duzentos no ano. E o susto vem na hora.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "number",
+            "text": "R$ 100"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "vira",
+          "visual": {
+            "type": "counter",
+            "from": 100,
+            "to": 1200,
+            "prefix": "R$"
+          }
+        },
+        {
+          "anchor": "susto",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          },
+          "sfx": "thud"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei essa conta no FinMoovi e ele me mostrou esses cem reais por mês no cartão.",
+      "durationSec": 6.5,
+      "shots": [
+        {
+          "anchor": "joguei",
+          "visual": {
+            "type": "app",
+            "app": "calculadora",
+            "note": "Conta mensal de R$ 100 transformada em R$ 1.200 por ano"
+          },
+          "sfx": "keyboard"
+        },
+        {
+          "anchor": "mostrou",
+          "visual": {
+            "type": "app",
+            "app": "cartoes",
+            "note": "Resumo dos gastos no cartão com os R$ 100 destacados"
+          }
+        },
+        {
+          "anchor": "cartão",
+          "visual": {
+            "type": "statement",
+            "text": "Veja onde o dinheiro vai"
+          },
+          "sfx": "ding"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Você pode ver isso também. Procura o FinMoovi. São sete dias grátis.",
+      "durationSec": 4.6,
+      "shots": [
+        {
+          "anchor": "Você",
+          "visual": {
+            "type": "statement",
+            "text": "Descubra seus gastos"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "O cartão do PagBank vale a pena quando você acompanha as compras. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "vale",
+          "visual": {
+            "type": "statement",
+            "text": "Acompanhe seus gastos"
+          }
+        },
+        {
+          "anchor": "acompanha",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escada"
+          }
+        },
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "icon",
+            "icon": "shield"
+          },
+          "sfx": "boom"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja seus gastos no FinMoovi",
+    "target": "app"
+  },
+  "totalDurationSec": 41.8
+}
