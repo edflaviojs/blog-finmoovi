@@ -4,6 +4,7 @@ definition: "What usurious interest is and how it shows up in your everyday mone
 title: "usurious interest - Financial Glossary"
 description: "What usurious interest is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/juros-abusivos.webp"
+imageAlt: "Stacks of gold coins and glass jars with sprouting plants on blue background."
 category: "basico"
 tags: ["usurious interest", "glossary", "finance"]
 author: "FinMoovi"

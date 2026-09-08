@@ -4,6 +4,7 @@ definition: "O que é juros abusivos e como isso aparece no seu dia a dia — ex
 title: "juros abusivos - Glossário Financeiro"
 description: "O que é juros abusivos e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/juros-abusivos.webp"
+imageAlt: "Moedas douradas empilhadas e plantas crescendo em frascos de vidro sobre fundo azul escuro."
 category: "basico"
 tags: ["juros abusivos", "glossário", "finanças"]
 author: "FinMoovi"

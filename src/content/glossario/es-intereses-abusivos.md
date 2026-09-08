@@ -4,6 +4,7 @@ definition: "Qué es intereses abusivos y cómo aparece en tu día a día — ex
 title: "intereses abusivos - Glosario Financiero"
 description: "Qué es intereses abusivos y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/juros-abusivos.webp"
+imageAlt: "Monedas doradas apiladas y frascos de vidrio con plantas verdes sobre fondo azul oscuro."
 category: "basico"
 tags: ["intereses abusivos", "glosario", "finanzas"]
 author: "FinMoovi"
