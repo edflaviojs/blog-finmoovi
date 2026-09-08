@@ -1096,5 +1096,23 @@
     ],
     "veredito": "Posso fazer essa avaliação, mas preciso que você envie a imagem com os 8 quadros do vídeo. \n\nNo momento, eu só tenho o texto do pedido e não recebi os frames para analisar. Envie a imagem (o mosaico 8 quadros) e eu respondo exatamente no formato solicitado, avaliando apenas o que aparece nos quadros parados.",
     "quando": "2026-09-08T09:04:04.533Z"
+  },
+  {
+    "slug": "loop-material-escolar-e-serio-que",
+    "formato": "loop16",
+    "nota": 6,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      2.2,
+      4.4,
+      6.6,
+      8.8,
+      11,
+      13.2,
+      15.3
+    ],
+    "veredito": "1. **O LOOP — 3/10.** O primeiro e o último têm o mesmo título e composição geral, mas não mostram exatamente a mesma coisa. No 1º quadro aparece “É sério que” embaixo; no último aparece “papelaria.” e o conteúdo central mudou. A reinicialização pode ser percebida.\n\n2. **A FAIXA DE BAIXO — 7/10.** Não há informação importante no limite inferior da tela. Porém, as legendas ficam dentro do terço inferior em praticamente todos os quadros, então estão um pouco mais expostas à interface.\n\n3. **TEXTO POR CIMA DE TEXTO — 8/10.** Não vejo frases claramente sobrepostas nem palavras cortadas. Os textos destacados continuam legíveis e afastados das bordas.\n\n4. **LEGIBILIDADE — 8/10.** Títulos grandes, brancos e com bom contraste. As legendas menores ainda funcionam no celular, embora possam ficar um pouco pequenas dependendo da tela.\n\n5. **TELA VIVA OU VAZIA — 5/10.** Há bastante espaço vazio, principalmente na metade inferior dos quadros com a sacola. O fundo decorado evita que pareça completamente vazio, mas a composição poderia ocupar melhor a tela.\n\n6. **COERÊNCIA — 7/10.** A identidade visual é muito consistente e existe uma sequência compreensível: lista escolar → salário apertado → guardar antes de comprar → papelaria. Porém, a passagem entre alguns quadros parece mais uma troca de slide do que uma evolução contínua.\n\n7. **TESTE CENTRAL — 4/10.** **Parece mais uma sequência de slides animáveis do que um vídeo profissional**, porque quase todos os quadros repetem a mesma estrutura central, com pouca mudança visual.\n\nNOTA GERAL: 6/10\nPROBLEMA 1: O LOOP — 3/10, principalmente entre 0.1s e 15.3s: o primeiro e o último não são visualmente idênticos.\nPROBLEMA 2: A TELA ESTÁ VIVA OU VAZIA — 5/10, especialmente em 2.2s, 4.4s e 13.2s: sobra muito espaço vazio.\nPROBLEMA 3: TESTE CENTRAL — 4/10: a repetição da mesma composição faz o vídeo parecer slides.\nPRIMEIRA COISA A MUDAR: Faça o último quadro visualmente igual ao primeiro, para o corte para 0.1s desaparecer completamente.",
+    "quando": "2026-09-08T09:13:57.995Z"
   }
 ]
