@@ -1,0 +1,117 @@
+{
+  "slug": "loop-limpar-o-nome-e-serio-que",
+  "formato": "loop16",
+  "term": "Limpar o nome",
+  "category": "vida",
+  "keyword": "NOME",
+  "situacao": "limpar-o-nome",
+  "gancho": "e-serio-que",
+  "ganchoFamilia": "é sério que",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "buraco",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "É sério que ninguém está falando de nome sujo? Vi minha compra recusada na loja.",
+      "durationSec": 5.43,
+      "shots": [
+        {
+          "anchor": "sério",
+          "visual": {
+            "type": "statement",
+            "text": "Nome sujo na loja"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "ninguém",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu fiquei calado e vi meu nome preso por contas esquecidas.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "fiquei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "calado",
+          "visual": {
+            "type": "statement",
+            "text": "Vergonha na compra"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então eu conferi tudo no app com mais calma.",
+      "durationSec": 3.26,
+      "shots": [
+        {
+          "anchor": "conferi",
+          "visual": {
+            "type": "statement",
+            "text": "Conferi minhas contas"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "calma",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Ninguém fala de nome sujo assim comigo",
+      "durationSec": 2.53,
+      "shots": [
+        {
+          "anchor": "Ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "Ninguém fala disso"
+          }
+        },
+        {
+          "anchor": "comigo",
+          "visual": {
+            "type": "statement",
+            "text": "Nome sujo na loja"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
