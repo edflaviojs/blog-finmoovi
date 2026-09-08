@@ -1,7 +1,7 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-09-07T09:56:28.984Z
-**Posts:** 402 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 56
+**Gerado em:** 2026-09-08T09:20:54.352Z
+**Posts:** 411 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 57
 
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
@@ -121,6 +121,9 @@
 **entenda-a-amortizacao-price-e-otimize-suas-financas-em-2026.md**
 - _Conforme o saldo vai diminuindo, a parcela passa a amortizar mais do principal._
 - _A PRICE tem parcelas fixas ao longo de todo o contrato, enquanto a SAC tem parcelas que diminuem conforme o saldo devedor é amortizado, resultando em pagamentos maiores no início e menores depois._
+
+**entenda-o-saldo-pendente-e-como-regularizar-suas-contas.md**
+- _Clique em “Pagar agora” – o app abre a opção de pagamento via transferência, boleto ou PIX, conforme a sua preferência._
 
 **es-migrando-de-la-hoja-de-calculo-a-una-app-financiera.md**
 - _De acuerdo con investigaciones, el 70% de las personas que usan hojas de cálculo abandonan en 30 días por falta de consistencia._
