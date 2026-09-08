@@ -2992,5 +2992,23 @@
     "target": "https://www.investopedia.com",
     "status": "no-endpoint",
     "sentAt": "2026-09-03T17:34:02.604Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/en-understand-outstanding-balance-and-how-to-clear-your/",
+    "target": "https://www.investopedia.com/terms/o/outstandingbalance.asp",
+    "status": "no-endpoint",
+    "sentAt": "2026-09-08T17:47:38.211Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/entenda-o-saldo-pendente-e-como-regularizar-suas-contas/",
+    "target": "https://www.investopedia.com/terms/o/outstandingbalance.asp",
+    "status": "no-endpoint",
+    "sentAt": "2026-09-08T17:47:38.373Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/es-entiende-el-saldo-pendiente-y-como-regularizar-tus-cuentas/",
+    "target": "https://www.investopedia.com/terms/o/outstandingbalance.asp",
+    "status": "no-endpoint",
+    "sentAt": "2026-09-08T17:47:38.475Z"
   }
 ]
