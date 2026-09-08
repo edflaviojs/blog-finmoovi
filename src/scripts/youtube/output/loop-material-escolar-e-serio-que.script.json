@@ -1,0 +1,117 @@
+{
+  "slug": "loop-material-escolar-e-serio-que",
+  "formato": "loop16",
+  "term": "O material escolar",
+  "category": "vida",
+  "keyword": "MATERIAL",
+  "situacao": "material-escolar",
+  "gancho": "e-serio-que",
+  "ganchoFamilia": "é sério que",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "mochila-pedras",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "É sério que ninguém está falando de lista escolar? Eu estava lá.",
+      "durationSec": 4.24,
+      "shots": [
+        {
+          "anchor": "sério",
+          "visual": {
+            "type": "statement",
+            "text": "Lista escolar apertou"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "ninguém",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Com a lista na mão, somei tudo e meu salário apertou.",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "lista",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "somei",
+          "visual": {
+            "type": "statement",
+            "text": "Meu salário apertou"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então, eu guardo um pouquinho antes de comprar as coisas.",
+      "durationSec": 3.53,
+      "shots": [
+        {
+          "anchor": "guardo",
+          "visual": {
+            "type": "statement",
+            "text": "Guardo antes de comprar"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "pouquinho",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Quando chega a lista, ninguém me pega desprevenido na papelaria.",
+      "durationSec": 3.53,
+      "shots": [
+        {
+          "anchor": "chega",
+          "visual": {
+            "type": "statement",
+            "text": "Ninguém me pega desprevenido"
+          }
+        },
+        {
+          "anchor": "lista",
+          "visual": {
+            "type": "statement",
+            "text": "Lista escolar apertou"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.19
+}
