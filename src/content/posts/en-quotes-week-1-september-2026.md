@@ -2,6 +2,7 @@
 title: "Weekly Summary: Dollar at R$ 5.12 — Week 1 of september"
 description: "Weekly financial market summary: dollar, euro, Selic and tips for investors. Week 1 of september 2026."
 image: "/images/posts/cotacoes-semana-2026-09-07.webp"
+imageAlt: "Laptop, coffee mug, and notepad on desk with colorful screens."
 category: "cotacoes"
 tags: ["quotes","dollar","euro","financial market","selic"]
 author: "FinMoovi"

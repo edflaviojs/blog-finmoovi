@@ -3,6 +3,7 @@ title: "How to Build a Financial Plan That Actually Works in 2026"
 description: "Step‑by‑step guide to creating a simple financial plan with FinMoovi, turning anxiety into peace of mind and hitting your goals."
 tickerHeadline: "The Plan That Changes Your Financial Lif"
 image: "/images/posts/como-montar-um-plano-financeiro-que-realmente-funciona-em.webp"
+imageAlt: "Brown notebook, calculator, coins, and greenery arranged on white marble surface."
 category: "dicas"
 locale: "en"
 tags: ["financial planning","personal finance","economy","money"]

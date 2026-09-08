@@ -2,6 +2,7 @@
 title: "Resumo Semanal: Dólar a R$ 5.12 — Semana 1 de setembro"
 description: "Resumo semanal do mercado financeiro: dólar, euro, Selic e dicas para investidores. Semana 1 de setembro 2026."
 image: "/images/posts/cotacoes-semana-2026-09-07.webp"
+imageAlt: "Notebook e monitor com gráficos, caneca branca e bloco de notas em mesa de escritório."
 category: "cotacoes"
 tags: ["cotações","dólar","euro","mercado financeiro","selic"]
 author: "FinMoovi"

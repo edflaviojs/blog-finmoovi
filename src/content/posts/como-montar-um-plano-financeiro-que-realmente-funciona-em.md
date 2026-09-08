@@ -3,6 +3,7 @@ title: "Como montar um plano financeiro que realmente funciona em 2026"
 description: "Descubra, passo a passo, como criar um plano financeiro simples, usando o FinMoovi, para transformar ansiedade em tranquilidade e alcançar suas metas."
 tickerHeadline: "O plano que muda sua vida financeira"
 image: "/images/posts/como-montar-um-plano-financeiro-que-realmente-funciona-em.webp"
+imageAlt: "Caderno marrom, calculadora, moedas e caneta sobre fundo branco com folhas verdes."
 category: "dicas"
 locale: "pt"
 tags: ["planificación financiera","finanças pessoais","economia","dinheiro"]

@@ -3,6 +3,7 @@ title: "Entiende el saldo pendiente y cómo regularizar tus cuentas"
 description: "Descubre qué significa el saldo pendiente, cómo aparece en los extractos y pasos simples para liquidarlo con FinMoovi, en pocos minutos."
 tickerHeadline: "¿Qué está consumiendo tu límite?"
 image: "/images/posts/entenda-o-saldo-pendente-e-como-regularizar-suas-contas.webp"
+imageAlt: "Cartera naranja, calculadora negra y monedas sobre mármol blanco con ramas verdes."
 category: "orcamento"
 locale: "es"
 tags: ["saldo pendiente","control de gastos","finmoovi","flujo de caja","deudas","presupuesto personal","significado de saldo pendiente"]

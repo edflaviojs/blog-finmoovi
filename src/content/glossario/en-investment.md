@@ -4,6 +4,7 @@ definition: "What investment is and how it shows up in your everyday money — e
 title: "investment - Financial Glossary"
 description: "What investment is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/investimento.webp"
+imageAlt: "Gold coins and glass jars with green plants on dark background."
 category: "basico"
 tags: ["investment", "glossary", "finance"]
 author: "FinMoovi"

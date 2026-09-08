@@ -4,6 +4,7 @@ definition: "Qué es inversión y cómo aparece en tu día a día — explicado 
 title: "inversión - Glosario Financiero"
 description: "Qué es inversión y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/investimento.webp"
+imageAlt: "Monedas doradas apiladas, frascos de vidrio con plantas verdes sobre fondo azul oscuro."
 category: "basico"
 tags: ["inversión", "glosario", "finanzas"]
 author: "FinMoovi"

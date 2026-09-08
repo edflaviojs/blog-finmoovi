@@ -3,6 +3,7 @@ title: "Understand Outstanding Balance and How to Clear Your Accounts"
 description: "Learn what an outstanding balance is, why it shows up on statements, and simple steps to settle it with FinMoovi in just minutes."
 tickerHeadline: "What’s Eating Your Credit Limit?"
 image: "/images/posts/entenda-o-saldo-pendente-e-como-regularizar-suas-contas.webp"
+imageAlt: "Orange wallet, black calculator, and scattered coins on a white marble surface."
 category: "orcamento"
 locale: "en"
 tags: ["outstanding balance","expense tracking","FinMoovi","cash flow","debts","personal budget","outstanding balance meaning"]
