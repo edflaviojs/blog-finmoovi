@@ -10,5 +10,11 @@
     "runId": "34221002670",
     "producedAt": "2026-09-08T11:51:38.119Z",
     "artifact": "short-kw-pagbank-vale-a-pena"
+  },
+  {
+    "fileSlug": "kw-cartao-virtual-vale-a-pena",
+    "runId": "34346361102",
+    "producedAt": "2026-09-09T11:53:18.471Z",
+    "artifact": "short-kw-cartao-virtual-vale-a-pena"
   }
 ]
