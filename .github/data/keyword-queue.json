@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-08T14:48:05.611Z",
-  "sourceCursor": 1,
+  "updatedAt": "2026-09-09T13:15:39.834Z",
+  "sourceCursor": 2,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -1933,8 +1933,10 @@
       "category": null,
       "priority": 2,
       "source": "gsc-gap",
-      "status": "pending",
-      "addedAt": "2026-09-07T13:06:05.567Z"
+      "status": "used",
+      "addedAt": "2026-09-07T13:06:05.567Z",
+      "usedAt": "2026-09-09T13:15:39.834Z",
+      "usedBy": "gerar-dicas-financeiras"
     },
     {
       "keyword": "define outstanding balance",
