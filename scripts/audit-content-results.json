@@ -1,30 +1,5 @@
 [
   {
-    "file": "en-quotes-week-1-september-2026.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 7,
-      "brInstitutions": [],
-      "brProducts": [
-        "CDB",
-        "Selic"
-      ],
-      "geoRefs": [
-        "brasileiro"
-      ],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": [
-        "ações",
-        "poupança",
-        "reais",
-        "investimentos"
-      ]
-    }
-  },
-  {
     "file": "en-fgc-guarantee.md",
     "dir": "glossario",
     "severity": 2,
@@ -56,25 +31,6 @@
       "brAcronyms": [
         "LCI",
         "LCA"
-      ],
-      "ptLeftovers": []
-    }
-  },
-  {
-    "file": "es-cotizaciones-semana-1-septiembre-2026.md",
-    "dir": "posts",
-    "severity": 2,
-    "issues": {
-      "currency": 4,
-      "brInstitutions": [],
-      "brProducts": [
-        "Selic"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [
-        "IPCA"
       ],
       "ptLeftovers": []
     }
@@ -354,6 +310,23 @@
       "ptLeftovers": [
         "investimentos"
       ]
+    }
+  },
+  {
+    "file": "es-cotizaciones-semana-1-septiembre-2026.md",
+    "dir": "posts",
+    "severity": 1,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [
+        "Selic"
+      ],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -3155,6 +3128,21 @@
     }
   },
   {
+    "file": "en-quotes-week-1-september-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-quotes-week-4-may-2026.md",
     "dir": "posts",
     "severity": 0,
@@ -3726,6 +3714,21 @@
   },
   {
     "file": "en-usura.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-usurious-interest.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -6201,6 +6204,21 @@
   },
   {
     "file": "es-interes.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-intereses-abusivos.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
