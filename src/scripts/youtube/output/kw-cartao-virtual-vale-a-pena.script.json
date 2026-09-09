@@ -1,0 +1,245 @@
+{
+  "slug": "kw-cartao-virtual-vale-a-pena",
+  "term": "Cartão virtual: vale a pena?",
+  "category": "mindset",
+  "keyword": "virtual",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "*Você usa cartão virtual* e ainda perde quinhentos reais por mês sem perceber?"
+  },
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "cofre",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você usa cartão virtual e ainda perde quinhentos reais por mês sem perceber? Eu criei o meu no Nubank e comecei a separar minhas compras.",
+      "durationSec": 9.6,
+      "shots": [
+        {
+          "anchor": "cartão",
+          "visual": {
+            "type": "statement",
+            "text": "Cartão virtual sob controle"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "quinhentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "Nubank",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          }
+        },
+        {
+          "anchor": "separar",
+          "visual": {
+            "type": "statement",
+            "text": "Separe suas compras"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Isso ajudou muito, porque as assinaturas, o mercado online e os aplicativos ficaram mais fáceis de ver.",
+      "durationSec": 6.5,
+      "shots": [
+        {
+          "anchor": "muito",
+          "visual": {
+            "type": "statement",
+            "text": "Mais fácil de enxergar"
+          }
+        },
+        {
+          "anchor": "assinaturas",
+          "visual": {
+            "type": "list",
+            "text": "Assinaturas · Mercado · Apps"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "aplicativos",
+          "visual": {
+            "type": "icon",
+            "icon": "chart-down"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Olhando cada compra, eu consegui somar o que dava pra cortar. Em um mês, economizei quinhentos reais.",
+      "durationSec": 6.5,
+      "shots": [
+        {
+          "anchor": "compra",
+          "visual": {
+            "type": "statement",
+            "text": "Veja compra por compra"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "somar",
+          "visual": {
+            "type": "formula",
+            "text": "Compras → total"
+          }
+        },
+        {
+          "anchor": "economizei",
+          "visual": {
+            "type": "statement",
+            "text": "Economia encontrada"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "quinhentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu só vi esse valor porque joguei minhas compras no FinMoovi e ele me mostrou a conta na tela.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "esse",
+          "visual": {
+            "type": "app",
+            "app": "compras",
+            "note": "Lista de compras e valores organizados"
+          },
+          "sfx": "click"
+        },
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "statement",
+            "text": "FinMoovi soma tudo"
+          }
+        },
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          },
+          "sfx": "ding"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Foi assim que eu soube onde cortar. Quer ver a sua? Procura o FinMoovi. São sete dias grátis.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "soube",
+          "visual": {
+            "type": "statement",
+            "text": "Agora você sabe onde"
+          }
+        },
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "statement",
+            "text": "Veja a sua também"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Então, o cartão virtual do Nubank vale a pena pra controlar suas compras. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "virtual",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          }
+        },
+        {
+          "anchor": "controlar",
+          "visual": {
+            "type": "statement",
+            "text": "Controle suas compras"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro sem controle"
+          }
+        },
+        {
+          "anchor": "outros",
+          "visual": {
+            "type": "statement",
+            "text": "Não deixe escapar"
+          },
+          "sfx": "thud"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Descubra onde seu dinheiro vai",
+    "target": "app"
+  },
+  "totalDurationSec": 44.5
+}
