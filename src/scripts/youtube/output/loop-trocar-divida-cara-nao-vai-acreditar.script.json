@@ -1,0 +1,117 @@
+{
+  "slug": "loop-trocar-divida-cara-nao-vai-acreditar",
+  "formato": "loop16",
+  "term": "Trocar dívida cara por barata",
+  "category": "vida",
+  "keyword": "DÍVIDA",
+  "situacao": "trocar-divida-cara",
+  "gancho": "nao-vai-acreditar",
+  "ganchoFamilia": "não vai acreditar",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "balanca",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você não vai acreditar, mas eu vi minha dívida barata crescer ontem.",
+      "durationSec": 4.24,
+      "shots": [
+        {
+          "anchor": "acreditar",
+          "visual": {
+            "type": "statement",
+            "text": "A dívida barata cresceu"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "dívida",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balanca"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu pagava a parcela menor, e a dívida cara só aumentava.",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "pagava",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balanca"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "parcela",
+          "visual": {
+            "type": "statement",
+            "text": "A dívida cara aumentava"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então troquei a cara pela barata, e parei de deixar crescer.",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "troquei",
+          "visual": {
+            "type": "statement",
+            "text": "Troquei a dívida"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "barata",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balanca"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Você não vai acreditar. A cara parou de crescer.",
+      "durationSec": 3.18,
+      "shots": [
+        {
+          "anchor": "acreditar",
+          "visual": {
+            "type": "statement",
+            "text": "A cara parou de crescer"
+          }
+        },
+        {
+          "anchor": "parou",
+          "visual": {
+            "type": "statement",
+            "text": "A dívida barata cresceu"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}

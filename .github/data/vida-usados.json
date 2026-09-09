@@ -376,5 +376,11 @@
     "gancho": "e-serio-que",
     "turno": "noite",
     "em": "2026-09-08T09:05:51.006Z"
+  },
+  {
+    "situacao": "trocar-divida-cara",
+    "gancho": "nao-vai-acreditar",
+    "turno": "manha",
+    "em": "2026-09-09T09:04:25.003Z"
   }
 ]
