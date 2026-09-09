@@ -1132,5 +1132,23 @@
     ],
     "veredito": "1. **LOOP — 10/10**  \nO primeiro e o último quadro mostram praticamente a mesma cena: **“A dívida barata cresceu”**, no mesmo tipo de posição e composição. É um ótimo ponto de corte para loop.\n\n2. **FAIXA DE BAIXO — 6/10**  \nOs textos menores ficam relativamente baixos, especialmente frases como **“Você não vai”**, **“cara pela barata,”** e **“parou de crescer.”** No celular, podem ficar parcialmente escondidos pela interface.\n\n3. **TEXTO POR CIMA DE TEXTO — 9/10**  \nNão vejo frases claramente sobrepostas nem palavras cortadas. O destaque colorido das palavras está bem separado do restante.\n\n4. **LEGIBILIDADE — 8/10**  \nOs textos principais são grandes, fortes e com ótimo contraste. As frases menores são o ponto fraco: ficam pequenas para leitura confortável em uma tela de celular.\n\n5. **TELA VIVA OU VAZIA — 7/10**  \nHá bastante espaço vazio na metade inferior dos quadros. O elemento da balança ajuda, mas alguns quadros parecem visualmente subocupados.\n\n6. **COERÊNCIA — 9/10**  \nTudo parece pertencer ao mesmo vídeo: mesma identidade visual, fundo, tipografia e cores. A sequência também conta uma história clara: dívida barata → dívida cara → troca → estabilização → retorno ao começo.\n\n7. **TESTE CENTRAL — 7/10**  \n**Pelos quadros parados, parece mais um vídeo de motion design baseado em slides do que um vídeo profissional dinâmico.** A identidade é boa, mas os grandes cartões de texto dominam demais a composição.\n\n**NOTA GERAL: 8/10**  \n**PROBLEMA 1: Textos pequenos e baixos, especialmente no quadro de 0.1s e nos quadros de 11.1s–15.5s**  \n**PROBLEMA 2: Muito espaço vazio na parte inferior de vários quadros**  \n**PROBLEMA 3: Os cartões grandes de texto fazem alguns quadros parecerem slides**  \n**PRIMEIRA COISA A MUDAR: Subir e aumentar ligeiramente as frases menores para garantir leitura e segurança contra a interface do celular.**",
     "quando": "2026-09-09T09:07:34.879Z"
+  },
+  {
+    "slug": "loop-gas-acabou-nao-vai-acreditar",
+    "formato": "loop16",
+    "nota": 6,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      2.3,
+      4.6,
+      6.9,
+      9.2,
+      11.5,
+      13.8,
+      16
+    ],
+    "veredito": "1. **O LOOP — Nota: 3/10**  \nO primeiro quadro (0.1s) e o último (16s) têm o mesmo tema e fundo, mas não parecem a mesma cena. O início mostra “O gás acabou no almoço” e o final volta para a mesma frase, porém o texto inferior e a composição mudam. Dá para perceber a volta.\n\n2. **A FAIXA DE BAIXO — Nota: 8/10**  \nNão há informações importantes na parte inferior que pareçam cortadas pela interface do celular. O texto de apoio fica mais ao centro.\n\n3. **TEXTO POR CIMA DE TEXTO — Nota: 5/10**  \nHá momentos com palavras destacadas e outras frases aparecendo próximas, causando sensação de sobreposição. Alguns trechos parecem apertados e difíceis de acompanhar.\n\n4. **LEGIBILIDADE — Nota: 8/10**  \nO texto principal é grande, com bom contraste e adequado para celular. As frases menores na parte inferior são mais fracas e podem perder leitura em tela pequena.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — Nota: 6/10**  \nAlguns quadros ficam muito vazios no meio da tela, principalmente nos momentos de transição (4.6s e 11.5s). Falta um elemento visual prendendo a atenção.\n\n6. **COERÊNCIA — Nota: 7/10**  \nOs quadros parecem pertencer ao mesmo vídeo, com mesma identidade visual. A sequência conta uma ideia, mas alguns saltos de texto parecem quebrar o fluxo.\n\n7. **TESTE CENTRAL — Nota: 6/10**  \nParece mais uma sequência de slides animados do que um vídeo profissional, porque a maior parte da tela é texto parado sobre fundo estático.\n\nNOTA GERAL: 6  \nPROBLEMA 1: O loop não fecha perfeitamente entre o quadro 0.1s e 16s, porque a volta para a frase inicial é perceptível.  \nPROBLEMA 2: Os quadros intermediários (4.6s e 11.5s) ficam vazios demais e perdem retenção.  \nPROBLEMA 3: O texto secundário em alguns momentos fica confuso e parece sobreposto.  \nPRIMEIRA COISA A MUDAR: Criar uma abertura e um final visualmente idênticos, com a mesma posição dos elementos, para o reinício parecer natural.",
+    "quando": "2026-09-09T09:10:59.473Z"
   }
 ]
