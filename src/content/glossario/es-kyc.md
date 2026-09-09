@@ -1,21 +1,38 @@
 ---
-term: "kyc"
-definition: "Entienda qué es kyc, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
-title: "kyc - Glosario Financiero"
-description: "Entienda qué es kyc, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
-image: "/images/glossario/kyc.webp"
-imageAlt: "Monedas doradas apiladas, letras tridimensionales KYC y planta en vaso sobre fondo púrpura."
-category: "basico"
-tags: ["kyc", "glossário", "finanças", "glosario", "finanzas", "brasil"]
-author: "FinMoovi"
-publishedAt: 2026-07-09
+term: kyc
+definition: >-
+  Entienda qué es kyc, cómo funciona, ventajas, riesgos y ejemplos prácticos de
+  aplicación en el mercado financiero brasileño.
+title: kyc - Glosario Financiero
+description: >-
+  Entienda qué es kyc, cómo funciona, ventajas, riesgos y ejemplos prácticos de
+  aplicación en el mercado financiero brasileño.
+image: /images/glossario/kyc.webp
+category: basico
+tags:
+  - kyc
+  - glossário
+  - finanças
+  - glosario
+  - finanzas
+  - brasil
+author: FinMoovi
+publishedAt: 2026-07-09T00:00:00.000Z
 readingTime: 5
-locale: "es"
-translationKey: "glossario-kyc"
+locale: es
+translationKey: glossario-kyc
 seo:
-  metaTitle: "kyc - Glosario Financiero"
-  metaDescription: "Entienda qué es kyc, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
-  keywords: ["kyc", "glossário", "finanças", "glosario", "finanzas", "brasil"]
+  metaTitle: kyc - Glosario Financiero
+  metaDescription: >-
+    Entienda qué es kyc, cómo funciona, ventajas, riesgos y ejemplos prácticos
+    de aplicación en el mercado financiero brasileño.
+  keywords:
+    - kyc
+    - glossário
+    - finanças
+    - glosario
+    - finanzas
+    - brasil
 ---
 
 ## Qué es

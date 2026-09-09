@@ -3799,6 +3799,206 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-09-08"
+    },
+    "ipca.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-09"
+    },
+    "juros-abusivos-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-09"
+    },
+    "juros-abusivos-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-09"
+    },
+    "juros-abusivos.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-09"
+    },
+    "juros-compostos.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-09"
+    },
+    "juros-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-09"
+    },
+    "juros-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-09"
+    },
+    "juros-simples.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-09"
+    },
+    "juros.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-09"
+    },
+    "know-your-customer.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-09"
+    },
+    "kyc-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-09"
+    },
+    "kyc-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-09"
+    },
+    "kyc.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"KYC\")",
+      "em": "2026-09-09"
+    },
+    "lc-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-09"
+    },
+    "lc-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-09"
+    },
+    "lc.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-09"
+    },
+    "lci-e-lca.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-09"
+    },
+    "liquidez.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-09"
+    },
+    "lista-de-compras-completa-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-09"
+    },
+    "lista-de-compras-completa-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-09"
+    },
+    "lista-de-compras-completa.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-09"
+    },
+    "lista-de-compras-do-mes-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-09"
+    },
+    "lista-de-compras-do-mes-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-09"
+    },
+    "lista-de-compras-do-mes.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-09"
+    },
+    "lista-de-compras-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-09"
+    },
+    "lista-de-compras-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-09"
+    },
+    "lista-de-compras-supermercado-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-09"
+    },
+    "lista-de-compras-supermercado-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-09"
+    },
+    "lista-de-compras-supermercado.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-09"
+    },
+    "lista-de-compras.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-09"
+    },
+    "margem-de-lucro.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-09"
+    },
+    "meta-financeira.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-09"
+    },
+    "moeda-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-09"
+    },
+    "moeda-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-09"
+    },
+    "moeda.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-09"
+    },
+    "nubank-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-09"
+    },
+    "nubank-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-09"
+    },
+    "nubank.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-09"
+    },
+    "opcao-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-09"
+    },
+    "opcao-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-09"
     }
   },
   "corrigidas": {
@@ -4361,8 +4561,12 @@
     "imposto-de-renda-inline-1.webp": {
       "em": "2026-09-08",
       "motivo": "tem texto escrito (\"The New York Times\")"
+    },
+    "kyc.webp": {
+      "em": "2026-09-09",
+      "motivo": "tem texto escrito (\"KYC\")"
     }
   },
-  "totalAcervo": 906,
-  "ultimaCorrida": "2026-09-08"
+  "totalAcervo": 909,
+  "ultimaCorrida": "2026-09-09"
 }

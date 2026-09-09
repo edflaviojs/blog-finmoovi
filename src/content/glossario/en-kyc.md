@@ -1,21 +1,38 @@
 ---
-term: "kyc"
-definition: "Understand what kyc is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
-title: "kyc - Financial Glossary"
-description: "Understand what kyc is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
-image: "/images/glossario/kyc.webp"
-imageAlt: "Gold KYC letters beside coin stacks and a glass jar with a plant."
-category: "basico"
-tags: ["kyc", "glossário", "finanças", "glossary", "finance", "brazil"]
-author: "FinMoovi"
-publishedAt: 2026-07-09
+term: kyc
+definition: >-
+  Understand what kyc is, how it works, advantages, risks and practical examples
+  of application in the Brazilian financial market.
+title: kyc - Financial Glossary
+description: >-
+  Understand what kyc is, how it works, advantages, risks and practical examples
+  of application in the Brazilian financial market.
+image: /images/glossario/kyc.webp
+category: basico
+tags:
+  - kyc
+  - glossário
+  - finanças
+  - glossary
+  - finance
+  - brazil
+author: FinMoovi
+publishedAt: 2026-07-09T00:00:00.000Z
 readingTime: 5
-locale: "en"
-translationKey: "glossario-kyc"
+locale: en
+translationKey: glossario-kyc
 seo:
-  metaTitle: "kyc - Financial Glossary"
-  metaDescription: "Understand what kyc is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
-  keywords: ["kyc", "glossário", "finanças", "glossary", "finance", "brazil"]
+  metaTitle: kyc - Financial Glossary
+  metaDescription: >-
+    Understand what kyc is, how it works, advantages, risks and practical
+    examples of application in the Brazilian financial market.
+  keywords:
+    - kyc
+    - glossário
+    - finanças
+    - glossary
+    - finance
+    - brazil
 ---
 
 ## What it is
