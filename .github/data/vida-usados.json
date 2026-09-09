@@ -382,5 +382,11 @@
     "gancho": "nao-vai-acreditar",
     "turno": "manha",
     "em": "2026-09-09T09:04:25.003Z"
+  },
+  {
+    "situacao": "gas-acabou",
+    "gancho": "nao-vai-acreditar",
+    "turno": "noite",
+    "em": "2026-09-09T09:08:22.844Z"
   }
 ]

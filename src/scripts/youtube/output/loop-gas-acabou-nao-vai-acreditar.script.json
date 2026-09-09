@@ -1,0 +1,117 @@
+{
+  "slug": "loop-gas-acabou-nao-vai-acreditar",
+  "formato": "loop16",
+  "term": "O gás que acabou",
+  "category": "vida",
+  "keyword": "GÁS",
+  "situacao": "gas-acabou",
+  "gancho": "nao-vai-acreditar",
+  "ganchoFamilia": "não vai acreditar",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "escorregao",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você não vai acreditar, mas… o gás acabou no meio do almoço de domingo.",
+      "durationSec": 5.07,
+      "shots": [
+        {
+          "anchor": "acreditar",
+          "visual": {
+            "type": "statement",
+            "text": "O gás acabou no almoço"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "acabou",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escorregao"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu servia almoço, o gás acabou bem na hora.",
+      "durationSec": 3.26,
+      "shots": [
+        {
+          "anchor": "servia",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escorregao"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "almoço",
+          "visual": {
+            "type": "statement",
+            "text": "O almoço ficou parado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então, olho o gás antes de cozinhar, todo domingo.",
+      "durationSec": 3.26,
+      "shots": [
+        {
+          "anchor": "cozinhar",
+          "visual": {
+            "type": "statement",
+            "text": "Agora olho o gás"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "domingo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escorregao"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Você não vai acreditar. Domingo, eu confiro o gás antes.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "acreditar",
+          "visual": {
+            "type": "statement",
+            "text": "Domingo eu confiro"
+          }
+        },
+        {
+          "anchor": "Domingo",
+          "visual": {
+            "type": "statement",
+            "text": "O gás acabou no almoço"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.21
+}
