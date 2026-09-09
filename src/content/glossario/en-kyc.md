@@ -8,6 +8,7 @@ description: >-
   Understand what kyc is, how it works, advantages, risks and practical examples
   of application in the Brazilian financial market.
 image: /images/glossario/kyc.webp
+imageAlt: "Gold coins and bars beside a plant in a glass jar on a dark blue background."
 category: basico
 tags:
   - kyc

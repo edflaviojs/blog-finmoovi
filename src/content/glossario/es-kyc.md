@@ -8,6 +8,7 @@ description: >-
   Entienda qué es kyc, cómo funciona, ventajas, riesgos y ejemplos prácticos de
   aplicación en el mercado financiero brasileño.
 image: /images/glossario/kyc.webp
+imageAlt: "Monedas doradas y barras crecientes junto a planta en vaso sobre fondo azul."
 category: basico
 tags:
   - kyc
