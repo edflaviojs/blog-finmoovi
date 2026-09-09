@@ -3,6 +3,7 @@ title: "Cómo reducir gastos de agua sin esfuerzo en 2026"
 description: "Descubre estrategias prácticas para bajar la factura de agua, evitar desperdicios y usar la tecnología a tu favor. Tips simples y económicos."
 tickerHeadline: "La factura de agua que molesta"
 image: "/images/posts/como-cortar-gastos-com-agua-sem-esforco-em-2026.webp"
+imageAlt: "Escritorio con portátil, taza de café, ratón y monitores con fondo colorido."
 category: "investimentos"
 locale: "es"
 tags: ["ahorro de agua","reducción de factura","consumo consciente","finanzas domésticas","app financiero","ahorrar agua"]

@@ -3,6 +3,7 @@ title: "Fundos de renda fixa: caminho simples para segurança"
 description: "Descubra como usar fundos de renda fixa para proteger seu futuro financeiro e reduzir a ansiedade com dicas práticas e o app FinMoovi."
 tickerHeadline: "Transforme seu dinheiro em tranquilidade"
 image: "/images/posts/fundos-de-renda-fixa-caminho-simples-para-seguranca.webp"
+imageAlt: "Notebook, caneca e celular sobre mesa de madeira com tela colorida."
 category: "dicas"
 locale: "pt"
 tags: ["fundo fixo","finanças pessoais","economia","dinheiro"]

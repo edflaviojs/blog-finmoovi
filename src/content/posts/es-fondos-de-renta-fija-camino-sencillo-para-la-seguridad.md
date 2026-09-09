@@ -3,6 +3,7 @@ title: "Fondos de renta fija: camino sencillo para la seguridad"
 description: "Descubre cómo usar fondos de renta fija para proteger tu futuro financiero y reducir la ansiedad con consejos prácticos y la app FinMoovi."
 tickerHeadline: "Convierte tu dinero en tranquilidad"
 image: "/images/posts/fundos-de-renda-fixa-caminho-simples-para-seguranca.webp"
+imageAlt: "Escritorio con portátil, taza de café, móvil y monitor con gráficos abstractos."
 category: "dicas"
 locale: "es"
 tags: ["fondos de renta fija","finanzas personales","economía","dinero"]

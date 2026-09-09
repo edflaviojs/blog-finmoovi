@@ -4,6 +4,7 @@ definition: "What Know Your Customer is and how it shows up in your everyday mon
 title: "Know Your Customer - Financial Glossary"
 description: "What Know Your Customer is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/know-your-customer.webp"
+imageAlt: "Gold coins, piggy bank, and plant in glass on dark blue background."
 category: "basico"
 tags: ["Know Your Customer", "glossary", "finance"]
 author: "FinMoovi"

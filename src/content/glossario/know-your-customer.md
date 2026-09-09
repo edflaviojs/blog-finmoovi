@@ -4,6 +4,7 @@ definition: "O que é know your customer e como isso aparece no seu dia a dia �
 title: "know your customer - Glossário Financeiro"
 description: "O que é know your customer e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/know-your-customer.webp"
+imageAlt: "Moedas douradas, porquinho da economia e barras amarelas sobre fundo azul."
 category: "basico"
 tags: ["know your customer", "glossário", "finanças"]
 author: "FinMoovi"

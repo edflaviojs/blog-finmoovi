@@ -3,6 +3,7 @@ title: "How to Cut Water Bills Effortlessly in 2026"
 description: "Practical tips to lower your water bill, avoid waste, and use tech to save money—simple, budget‑friendly ideas for financial peace."
 tickerHeadline: "The water bill that hurts"
 image: "/images/posts/como-cortar-gastos-com-agua-sem-esforco-em-2026.webp"
+imageAlt: "Laptop and coffee cup on wooden desk with colorful monitors."
 category: "investimentos"
 locale: "en"
 tags: ["water savings","bill reduction","conscious consumption","household finances","financial app","save water"]

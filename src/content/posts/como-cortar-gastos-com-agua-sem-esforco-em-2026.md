@@ -3,6 +3,7 @@ title: "Como cortar gastos com água sem esforço em 2026"
 description: "Descubra estratégias práticas para reduzir a conta de água, evitar desperdícios e usar a tecnologia a seu favor. Dicas simples que cabem no bolso e trazem tranquilidade financeira."
 tickerHeadline: "A conta de água que incomoda"
 image: "/images/posts/como-cortar-gastos-com-agua-sem-esforco-em-2026.webp"
+imageAlt: "Escritório com notebook, monitores coloridos e xícara de café sobre mesa de madeira."
 category: "investimentos"
 locale: "pt"
 tags: ["economia de água","redução de conta","consumo consciente","finanças domésticas","app financeiro","de economizar água"]

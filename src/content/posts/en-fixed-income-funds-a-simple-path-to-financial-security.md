@@ -3,6 +3,7 @@ title: "Fixed‑Income Funds: A Simple Path to Financial Security"
 description: "Learn how fixed‑income funds can safeguard your future and cut financial stress with easy tips and the FinMoovi app."
 tickerHeadline: "Turn your money into peace of mind"
 image: "/images/posts/fundos-de-renda-fixa-caminho-simples-para-seguranca.webp"
+imageAlt: "Laptop, coffee mug, and smartphone on a wooden desk."
 category: "dicas"
 locale: "en"
 tags: ["fixed‑income fund","personal finance","economy","money"]

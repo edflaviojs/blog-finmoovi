@@ -4,6 +4,7 @@ definition: "Qué es conoce a tu cliente y cómo aparece en tu día a día — e
 title: "conoce a tu cliente - Glosario Financiero"
 description: "Qué es conoce a tu cliente y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/know-your-customer.webp"
+imageAlt: "Monedas doradas, hucha cerdo en frasco, barras amarillas y planta verde sobre fondo azul."
 category: "basico"
 tags: ["conoce a tu cliente", "glosario", "finanzas"]
 author: "FinMoovi"
