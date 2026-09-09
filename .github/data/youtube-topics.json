@@ -493,6 +493,54 @@
           "título afirmativo simples, sem número nem pergunta"
         ]
       }
+    },
+    {
+      "id": "kw-transferencia-de-r-10-000",
+      "theme": "Transferência de R$ 10.000",
+      "angle": "Veja como funciona na prática",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "transferencia-de-financiamento",
+      "status": "pending",
+      "sourceKeyword": "como funciona a transferência de financiamento"
+    },
+    {
+      "id": "kw-cartao-virtual-vale-a-pena",
+      "theme": "Cartão virtual: vale a pena?",
+      "angle": "Mostro como uso o cartão virtual do Nubank para economizar R$ 500 por mês",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "cartao-virtual-nubank",
+      "status": "pending",
+      "sourceKeyword": "como funciona cartao virtual nubank"
+    },
+    {
+      "id": "kw-limite-no-nubank-ate-onde-vai",
+      "theme": "Limite no Nubank: até onde vai?",
+      "angle": "Vamos testar como funciona o limite no Nubank com um exemplo real de R$ 1.000,00",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "construir-limite-no-nubank",
+      "status": "pending",
+      "sourceKeyword": "como funciona construir limite no nubank"
+    },
+    {
+      "id": "viral-my4eWdTXx40",
+      "theme": "Perda de R$ 10.000",
+      "angle": "Perda em curso: mostrar o dinheiro a sair todo mês se você não começar a investir agora, com um exemplo concreto de quanto você pode perder em apenas 5 anos se não tomar ações",
+      "pillar": "mindset",
+      "source": "viral",
+      "glossaryRef": null,
+      "status": "pending",
+      "viralRef": {
+        "videoId": "my4eWdTXx40",
+        "title": "R$500.000 MIL EM QUANTOS ANOS? #investimentos #educaçãofinanceira  #investidor #finanças",
+        "estrutura": [
+          "número concreto no título (\"500.000 MIL\")",
+          "pergunta dirigida a quem assiste",
+          "uma palavra em maiúsculas a marcar o tom"
+        ]
+      }
     }
   ]
 }
