@@ -1,0 +1,117 @@
+{
+  "slug": "loop-conta-so-das-contas-faca-isso",
+  "formato": "loop16",
+  "term": "Uma conta só para as contas",
+  "category": "vida",
+  "keyword": "CONTA",
+  "situacao": "conta-so-das-contas",
+  "gancho": "faca-isso",
+  "ganchoFamilia": "faça isso",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "bifurcacao",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se você quer pagar tudo em dia, FAÇA ISSO.",
+      "durationSec": 3.26,
+      "shots": [
+        {
+          "anchor": "pagar",
+          "visual": {
+            "type": "statement",
+            "text": "Pagar tudo em dia"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "pagar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bifurcacao"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Comigo, o salário caía numa conta só e sumia muito depressa.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "Comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bifurcacao"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "salário",
+          "visual": {
+            "type": "statement",
+            "text": "O salário sumia"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Eu passei a separar as contas assim que o salário entrava.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "passei",
+          "visual": {
+            "type": "statement",
+            "text": "Separei as contas"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "separar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bifurcacao"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Porque, se você quer pagar, essa conta precisa ficar bem separada.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "pagar",
+          "visual": {
+            "type": "statement",
+            "text": "A conta fica separada"
+          }
+        },
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "statement",
+            "text": "Pagar tudo em dia"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
