@@ -1670,8 +1670,39 @@
           "titulo": "Dica de Livros"
         }
       ]
+    },
+    {
+      "videoId": "Tvv95pcDpd0",
+      "title": "Aprenda a Investir com Pouco Dinheiro: O MXRF11 é a Solução!",
+      "channel": "Alberto Pompeu ",
+      "duracaoSeg": 786,
+      "idioma": "pt",
+      "viewsPerDay": 3487,
+      "vistoEm": "2026-09-10",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "A matemática por trás dos R$ 100 mensais"
+        },
+        {
+          "seg": 86,
+          "titulo": "Desconstruindo o mito do alto investimento"
+        },
+        {
+          "seg": 214,
+          "titulo": "Cálculos reais: o efeito bola de neve"
+        },
+        {
+          "seg": 462,
+          "titulo": "O que compõe o MXRF11 por dentro"
+        },
+        {
+          "seg": 625,
+          "titulo": "Passo a passo: investindo na prática"
+        }
+      ]
     }
   ],
-  "atualizadoEm": "2026-09-09T08:28:59.513Z",
-  "total": 30
+  "atualizadoEm": "2026-09-10T08:31:04.984Z",
+  "total": 31
 }
