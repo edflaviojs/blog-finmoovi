@@ -1,0 +1,250 @@
+{
+  "slug": "kw-transferencia-de-r-10-000",
+  "term": "Transferência de R$ 10.000",
+  "category": "mindset",
+  "keyword": "Transferência",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você tem *medo* de fazer uma transferência de dez mil reais?"
+  },
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "duas-portas",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você tem medo de fazer uma transferência de dez mil reais? Vou te mostrar aqui na tela um cuidado que muita gente esquece.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "medo",
+          "visual": {
+            "type": "statement",
+            "text": "Medo de errar?"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "transferência",
+          "visual": {
+            "type": "number",
+            "text": "R$ 10.000"
+          }
+        },
+        {
+          "anchor": "cuidado",
+          "visual": {
+            "type": "statement",
+            "text": "Um cuidado muda tudo"
+          },
+          "sfx": "alert"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "O que acontece é que a gente recebe o dinheiro, já sai pagando as contas e nem olha se o valor chegou certinho.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "recebe",
+          "visual": {
+            "type": "icon",
+            "icon": "money"
+          }
+        },
+        {
+          "anchor": "pagando",
+          "visual": {
+            "type": "statement",
+            "text": "Pagar antes de conferir"
+          }
+        },
+        {
+          "anchor": "valor",
+          "visual": {
+            "type": "number",
+            "text": "R$ 10.000"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "certinho",
+          "visual": {
+            "type": "statement",
+            "text": "Confira até o fim"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Só que isso engana. Quando eu junto cada passo da transferência, eu vejo de verdade os dez mil reais na conta.",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "engana",
+          "visual": {
+            "type": "statement",
+            "text": "Nem tudo é tão simples"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "junto",
+          "visual": {
+            "type": "list",
+            "text": "Origem → envio → chegada"
+          }
+        },
+        {
+          "anchor": "vejo",
+          "visual": {
+            "type": "number",
+            "text": "R$ 10.000"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "statement",
+            "text": "Valor realmente na conta"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Para não ter erro, eu joguei isso no FinMoovi e ele me mostrou a transferência de dez mil reais confirmada na tela.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "Para",
+          "visual": {
+            "type": "statement",
+            "text": "Evite erro na conferência"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "joguei",
+          "visual": {
+            "type": "app",
+            "app": "extrato",
+            "note": "Tela do FinMoovi mostrando a transferência de R$ 10.000 no extrato, com status confirmado"
+          }
+        },
+        {
+          "anchor": "transferência",
+          "visual": {
+            "type": "number",
+            "text": "R$ 10.000"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "confirmada",
+          "visual": {
+            "type": "statement",
+            "text": "Transferência confirmada"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Lá eu vi certinho como acompanhar tudo, e você pode procurar o FinMoovi para testar de graça por sete dias.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "certinho",
+          "visual": {
+            "type": "statement",
+            "text": "Tudo mais claro"
+          }
+        },
+        {
+          "anchor": "acompanhar",
+          "visual": {
+            "type": "statement",
+            "text": "Acompanhe cada etapa"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "statement",
+            "text": "Teste por 7 dias grátis"
+          }
+        },
+        {
+          "anchor": "dias",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "A transferência de dez mil reais fica mais segura quando você acompanha cada passo. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "transferência",
+          "visual": {
+            "type": "number",
+            "text": "R$ 10.000"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "segura",
+          "visual": {
+            "type": "statement",
+            "text": "Segurança vem do acompanhamento"
+          }
+        },
+        {
+          "anchor": "acompanha",
+          "visual": {
+            "type": "statement",
+            "text": "Confira cada etapa"
+          },
+          "sfx": "click"
+        },
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "statement",
+            "text": "Sem controle, você perde"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Teste grátis por 7 dias",
+    "target": "app"
+  },
+  "totalDurationSec": 50
+}
