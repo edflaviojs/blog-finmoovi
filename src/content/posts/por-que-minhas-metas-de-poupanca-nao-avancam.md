@@ -3,6 +3,7 @@ title: "Por que minhas metas de poupança não avançam?"
 description: "Descubra por que suas metas de poupança ficam estagnadas e como os relatórios inteligentes do FinMoovi podem transformar seu acompanhamento em ação concreta."
 tickerHeadline: "Meta parada? Veja o porquê"
 image: "/images/posts/por-que-minhas-metas-de-poupanca-nao-avancam.webp"
+imageAlt: "Três pessoas sorrindo em torno de uma mesa com pilhas de moedas e um cofrinho rosa."
 category: "ferramentas"
 locale: "pt"
 tags: ["metas de poupança","relatórios inteligentes","FinMoovi","controle financeiro","motivação financeira","acompanhamento de gastos","metas","progresso","poupança","objetivos","finmoovi","finanças pessoais"]

@@ -3,6 +3,7 @@ title: "Why My Savings Goals Aren’t Moving Forward?"
 description: "Find out why your savings goals stall and how FinMoovi’s smart reports turn tracking into concrete action."
 tickerHeadline: "Goal Stalled? Here’s Why"
 image: "/images/posts/por-que-minhas-metas-de-poupanca-nao-avancam.webp"
+imageAlt: "Three smiling people at a table with stacks of coins and a pink piggy bank."
 category: "ferramentas"
 locale: "en"
 tags: ["savings goals","smart reports","FinMoovi","financial control","financial motivation","expense tracking","goals","progress","savings","objectives","personal finance"]

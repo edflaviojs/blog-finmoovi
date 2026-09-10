@@ -3,6 +3,7 @@ title: "¿Por qué mis metas de ahorro no avanzan?"
 description: "Descubre por qué tus metas de ahorro se estancan y cómo los informes inteligentes de FinMoovi pueden convertir tu seguimiento en acción concreta."
 tickerHeadline: "¿Meta parada? Descubre por qué"
 image: "/images/posts/por-que-minhas-metas-de-poupanca-nao-avancam.webp"
+imageAlt: "Tres personas sonrientes cuentan billetes y monedas sobre una mesa con un hucha rosa."
 category: "ferramentas"
 locale: "es"
 tags: ["metas de ahorro","informes inteligentes","FinMoovi","control financiero","motivación financiera","seguimiento de gastos","metas","progreso","ahorro","objetivos","finmoovi","finanzas personales"]
