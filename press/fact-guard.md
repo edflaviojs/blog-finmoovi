@@ -1,7 +1,7 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-09-09T09:23:14.206Z
-**Posts:** 411 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 57
+**Gerado em:** 2026-09-10T09:22:36.195Z
+**Posts:** 420 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 60
 
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
@@ -23,6 +23,9 @@
 - _- **Entrada**: Geralmente corresponde a cerca de 20 % do valor total do imóvel, podendo ser ajustada conforme a política do banco._
 - _- **Taxa de juros**: Varia conforme o perfil do comprador, a taxa Selic e o prazo do contrato, que costuma ficar entre 15 e 30 anos._
 - _Sim, porém pode ser necessário pagar multa por rescisão antecipada, de acordo com o que está estipulado no contrato._
+
+**como-cortar-gastos-com-agua-sem-esforco-em-2026.md**
+- _Segundo a Organização para a Cooperação e Desenvolvimento Econômico (OECD), famílias que adotam práticas simples de economia de água podem reduzir a conta em até 30 % OECD._
 
 **como-diversificar-com-ativos-de-renda-variavel-em-2026.md**
 - _Em termos simples, o ganho ou a perda varia de acordo com a valorização ou desvalorização dos ativos, o que traz a possibilidade de retornos superiores ao longo do tempo, mas também implica maior [vol_
@@ -87,6 +90,9 @@
 
 **en-forgot-to-pay-a-bill-how-to-fix-it-in-2026.md**
 - _She wasn’t alone: according to the OECD, more than 30 % of consumers say they missed a payment deadline at least once in the past year[^1]._
+
+**en-how-to-cut-water-bills-effortlessly-in-2026.md**
+- _According to the Organisation for Economic Co‑operation and Development (OECD), families that adopt simple water‑[saving](/en/posts/en-how-to-build-a-budget-that-actually-works-in-2026) habits can tri_
 
 **en-how-to-diversify-with-variable-income-assets-in-2026.md**
 - _**Rebalance quarterly** – adjust the mix between fixed and variable income according to how comfortable you are with volatility._
@@ -164,6 +170,9 @@
 
 **planilha-de-gastos-quando-ela-deixa-de-funcionar.md**
 - _Elas oferecem flexibilidade, são gratuitas e podem ser customizadas de acordo com as suas necessidades._
+
+**por-que-minhas-metas-de-poupanca-nao-avancam.md**
+- _As metas de poupança ficam no papel porque não há um acompanhamento em tempo real que mostre o progresso e ajuste o ritmo conforme os gastos cotidianos, fazendo com que a motivação se perca e o objeti_
 
 **por-que-nao-vejo-progresso-na-minha-poupanca.md**
 - _Segundo a Investopedia, o uso de **relatórios financeiros automatizados** aumenta a probabilidade de cumprimento de metas em até 35 % quando comparado a métodos manuais._
