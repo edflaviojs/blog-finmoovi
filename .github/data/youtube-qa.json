@@ -1168,5 +1168,23 @@
     ],
     "veredito": "1. **O LOOP — Nota: 5/10**  \nO primeiro quadro diz “Pagar tudo em dia” e o último volta para “Pagar tudo em dia”, no mesmo estilo e posição. Isso ajuda o loop. Porém, o último quadro não parece uma continuação natural do primeiro porque o texto inferior mudou e não há uma ligação visual clara.\n\n2. **A FAIXA DE BAIXO — Nota: 8/10**  \nA parte inferior tem legendas, mas elas estão relativamente acima da área mais crítica da interface. Não parece haver informação essencial cortada pelos botões do Shorts/Reels.\n\n3. **TEXTO POR CIMA DE TEXTO — Nota: 7/10**  \nNão há frases totalmente sobrepostas, mas algumas palavras destacadas em cores diferentes podem causar sensação de excesso visual. Não vi texto cortado pela borda.\n\n4. **LEGIBILIDADE — Nota: 8/10**  \nO texto principal é grande, branco e com bom contraste. As legendas menores ainda funcionam, mas podem ficar pequenas em celulares menores.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — Nota: 6/10**  \nHá muitos espaços vazios no centro e fundo. O elemento gráfico da moeda ajuda, mas alguns quadros parecem parados demais.\n\n6. **COERÊNCIA — Nota: 9/10**  \nOs quadros parecem claramente do mesmo vídeo. Existe uma sequência lógica: problema (“pagar tudo em dia”), explicação e solução (“separar as contas”).\n\n7. **TESTE CENTRAL — Nota: 7/10**  \nParece mais um vídeo animado simples do que uma sequência de slides, mas alguns quadros ainda passam sensação de card parado por falta de elementos visuais em movimento.\n\nNOTA GERAL: 7\nPROBLEMA 1: Falta de conexão visual forte entre o primeiro e o último quadro para um loop imperceptível (0.1s e 14.9s)\nPROBLEMA 2: Muitos espaços vazios deixando alguns momentos com aparência de slide (6.4s e 8.6s)\nPROBLEMA 3: As legendas inferiores têm pouco impacto visual e podem perder força no celular (vários quadros)\nPRIMEIRA COISA A MUDAR: Criar uma transição visual no final que leve exatamente de volta ao primeiro quadro sem parecer reinício.",
     "quando": "2026-09-10T09:06:57.785Z"
+  },
+  {
+    "slug": "loop-aniversario-do-filho-faca-isso",
+    "formato": "loop16",
+    "nota": 7,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      2.2,
+      4.4,
+      6.6,
+      8.8,
+      11,
+      13.1,
+      15.3
+    ],
+    "veredito": "1. **O LOOP — Nota: 6/10**  \nPrimeiro quadro: “A festa do meu filho”. Último quadro: “A festa do meu filho”. Existe tentativa de loop, mas não é exatamente o mesmo quadro: o fundo e posição parecem iguais, porém o texto de apoio muda e a sequência não fecha perfeitamente.\n\n2. **A FAIXA DE BAIXO — Nota: 8/10**  \nO terço inferior está relativamente livre. As legendas ficam no centro/baixo, mas não parecem cortadas pela interface do celular.\n\n3. **TEXTO POR CIMA DE TEXTO — Nota: 7/10**  \nNão há frases grandes sobrepostas. Porém, algumas legendas pequenas ficam próximas e podem gerar sensação de poluição em alguns momentos.\n\n4. **LEGIBILIDADE — Nota: 8/10**  \nOs títulos principais têm bom tamanho e contraste. As legendas menores embaixo podem ficar difíceis de ler em telas pequenas.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — Nota: 6/10**  \nHá bastante espaço vazio no fundo roxo. O visual é limpo, mas em alguns quadros parece mais uma apresentação parada do que um vídeo dinâmico.\n\n6. **COERÊNCIA — Nota: 9/10**  \nOs quadros parecem claramente parte do mesmo vídeo: mesma identidade visual, mesma narrativa e progressão da história.\n\n7. **TESTE CENTRAL: VÍDEO PROFISSIONAL OU SLIDES? — Nota: 6/10**  \nParece mais uma sequência de slides animados do que um Short com sensação de vídeo contínuo. Falta mais variação visual e elementos narrativos.\n\nNOTA GERAL: 7\nPROBLEMA 1: O maior problema é o loop: o último quadro repete a frase inicial, mas a transição entre o segundo 15.3s e 0.1s não parece totalmente invisível.\nPROBLEMA 2: A composição tem muito espaço vazio, principalmente no fundo, fazendo alguns momentos parecerem slides.\nPROBLEMA 3: As legendas pequenas na parte inferior perdem força no celular e podem competir com a interface do aplicativo.\nPRIMEIRA COISA A MUDAR: Criar um fechamento visual que seja exatamente igual ao primeiro quadro e preencher melhor o espaço com elementos narrativos.",
+    "quando": "2026-09-10T09:10:44.438Z"
   }
 ]
