@@ -3,6 +3,7 @@ title: "Entiende el saldo deudor y evita sorpresas en 2026"
 description: "Descubre qué es el saldo deudor, cómo impacta tu bolsillo y aprende a usar FinMoovi para mantenerlo bajo control."
 tickerHeadline: "El detalle que quita el sueño"
 image: "/images/posts/entenda-o-saldo-devedor-e-evite-surpresas-em-2026.webp"
+imageAlt: "Portátil con pantalla colorida sobre escritorio de madera, taza gris y luz cálida."
 category: "dicas"
 locale: "es"
 tags: ["saldo deudor","finanzas personales","economía","dinero"]

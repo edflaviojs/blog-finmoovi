@@ -3,6 +3,7 @@ title: "Understand Your Outstanding Balance and Avoid Surprises in 2026"
 description: "Learn what an outstanding balance really means, how it impacts your wallet, and step‑by‑step use FinMoovi to keep it under control."
 tickerHeadline: "The detail that steals your sleep"
 image: "/images/posts/entenda-o-saldo-devedor-e-evite-surpresas-em-2026.webp"
+imageAlt: "Laptop with colorful screen, coffee cup, and calculator on wooden desk"
 category: "dicas"
 locale: "en"
 tags: ["outstanding balance","personal finance","economy","money"]

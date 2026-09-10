@@ -3,6 +3,7 @@ title: "Entenda o saldo devedor e evite surpresas em 2026"
 description: "Descubra o que realmente significa “saldo devedor”, como ele afeta seu bolso e veja, passo a passo, como usar o FinMoovi para manter tudo sob controle."
 tickerHeadline: "O detalhe que tira seu sono"
 image: "/images/posts/entenda-o-saldo-devedor-e-evite-surpresas-em-2026.webp"
+imageAlt: "Notebook aberto com tela colorida, xícara de café e calculadora em mesa de madeira."
 category: "dicas"
 locale: "pt"
 tags: ["define outstanding balance","finanças pessoais","economia","dinheiro"]

@@ -4,6 +4,7 @@ definition: "What LCA is and how it shows up in your everyday money — explaine
 title: "LCA - Financial Glossary"
 description: "What LCA is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/lca.webp"
+imageAlt: "Gold coins stacked in columns with green plants growing from glass jars."
 category: "basico"
 tags: ["LCA", "glossary", "finance"]
 author: "FinMoovi"

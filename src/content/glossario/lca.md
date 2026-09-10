@@ -4,6 +4,7 @@ definition: "O que é lca e como isso aparece no seu dia a dia — explicado de 
 title: "lca - Glossário Financeiro"
 description: "O que é lca e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/lca.webp"
+imageAlt: "Moedas douradas empilhadas e plantas crescendo em frascos de vidro sobre fundo azul escuro."
 category: "basico"
 tags: ["lca", "glossário", "finanças"]
 author: "FinMoovi"

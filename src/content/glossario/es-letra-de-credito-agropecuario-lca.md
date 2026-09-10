@@ -4,6 +4,7 @@ definition: "Qué es Letra de Crédito Agropecuario (LCA) y cómo aparece en tu 
 title: "Letra de Crédito Agropecuario (LCA) - Glosario Financiero"
 description: "Qué es Letra de Crédito Agropecuario (LCA) y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/lca.webp"
+imageAlt: "Monedas doradas apiladas y plantas creciendo en frascos sobre fondo azul oscuro."
 category: "basico"
 tags: ["Letra de Crédito Agropecuario (LCA)", "glosario", "finanzas"]
 author: "FinMoovi"
