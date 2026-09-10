@@ -1150,5 +1150,23 @@
     ],
     "veredito": "1. **O LOOP — Nota: 3/10**  \nO primeiro quadro (0.1s) e o último (16s) têm o mesmo tema e fundo, mas não parecem a mesma cena. O início mostra “O gás acabou no almoço” e o final volta para a mesma frase, porém o texto inferior e a composição mudam. Dá para perceber a volta.\n\n2. **A FAIXA DE BAIXO — Nota: 8/10**  \nNão há informações importantes na parte inferior que pareçam cortadas pela interface do celular. O texto de apoio fica mais ao centro.\n\n3. **TEXTO POR CIMA DE TEXTO — Nota: 5/10**  \nHá momentos com palavras destacadas e outras frases aparecendo próximas, causando sensação de sobreposição. Alguns trechos parecem apertados e difíceis de acompanhar.\n\n4. **LEGIBILIDADE — Nota: 8/10**  \nO texto principal é grande, com bom contraste e adequado para celular. As frases menores na parte inferior são mais fracas e podem perder leitura em tela pequena.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — Nota: 6/10**  \nAlguns quadros ficam muito vazios no meio da tela, principalmente nos momentos de transição (4.6s e 11.5s). Falta um elemento visual prendendo a atenção.\n\n6. **COERÊNCIA — Nota: 7/10**  \nOs quadros parecem pertencer ao mesmo vídeo, com mesma identidade visual. A sequência conta uma ideia, mas alguns saltos de texto parecem quebrar o fluxo.\n\n7. **TESTE CENTRAL — Nota: 6/10**  \nParece mais uma sequência de slides animados do que um vídeo profissional, porque a maior parte da tela é texto parado sobre fundo estático.\n\nNOTA GERAL: 6  \nPROBLEMA 1: O loop não fecha perfeitamente entre o quadro 0.1s e 16s, porque a volta para a frase inicial é perceptível.  \nPROBLEMA 2: Os quadros intermediários (4.6s e 11.5s) ficam vazios demais e perdem retenção.  \nPROBLEMA 3: O texto secundário em alguns momentos fica confuso e parece sobreposto.  \nPRIMEIRA COISA A MUDAR: Criar uma abertura e um final visualmente idênticos, com a mesma posição dos elementos, para o reinício parecer natural.",
     "quando": "2026-09-09T09:10:59.473Z"
+  },
+  {
+    "slug": "loop-conta-so-das-contas-faca-isso",
+    "formato": "loop16",
+    "nota": 7,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      2.1,
+      4.3,
+      6.4,
+      8.6,
+      10.7,
+      12.9,
+      14.9
+    ],
+    "veredito": "1. **O LOOP — Nota: 5/10**  \nO primeiro quadro diz “Pagar tudo em dia” e o último volta para “Pagar tudo em dia”, no mesmo estilo e posição. Isso ajuda o loop. Porém, o último quadro não parece uma continuação natural do primeiro porque o texto inferior mudou e não há uma ligação visual clara.\n\n2. **A FAIXA DE BAIXO — Nota: 8/10**  \nA parte inferior tem legendas, mas elas estão relativamente acima da área mais crítica da interface. Não parece haver informação essencial cortada pelos botões do Shorts/Reels.\n\n3. **TEXTO POR CIMA DE TEXTO — Nota: 7/10**  \nNão há frases totalmente sobrepostas, mas algumas palavras destacadas em cores diferentes podem causar sensação de excesso visual. Não vi texto cortado pela borda.\n\n4. **LEGIBILIDADE — Nota: 8/10**  \nO texto principal é grande, branco e com bom contraste. As legendas menores ainda funcionam, mas podem ficar pequenas em celulares menores.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — Nota: 6/10**  \nHá muitos espaços vazios no centro e fundo. O elemento gráfico da moeda ajuda, mas alguns quadros parecem parados demais.\n\n6. **COERÊNCIA — Nota: 9/10**  \nOs quadros parecem claramente do mesmo vídeo. Existe uma sequência lógica: problema (“pagar tudo em dia”), explicação e solução (“separar as contas”).\n\n7. **TESTE CENTRAL — Nota: 7/10**  \nParece mais um vídeo animado simples do que uma sequência de slides, mas alguns quadros ainda passam sensação de card parado por falta de elementos visuais em movimento.\n\nNOTA GERAL: 7\nPROBLEMA 1: Falta de conexão visual forte entre o primeiro e o último quadro para um loop imperceptível (0.1s e 14.9s)\nPROBLEMA 2: Muitos espaços vazios deixando alguns momentos com aparência de slide (6.4s e 8.6s)\nPROBLEMA 3: As legendas inferiores têm pouco impacto visual e podem perder força no celular (vários quadros)\nPRIMEIRA COISA A MUDAR: Criar uma transição visual no final que leve exatamente de volta ao primeiro quadro sem parecer reinício.",
+    "quando": "2026-09-10T09:06:57.785Z"
   }
 ]
