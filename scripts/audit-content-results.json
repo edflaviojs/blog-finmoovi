@@ -1733,6 +1733,21 @@
     }
   },
   {
+    "file": "en-fixed-income-funds-a-simple-path-to-financial-security.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-fixed-income-vs-variable-income-which-is-worth-it-in-2026.md",
     "dir": "posts",
     "severity": 0,
@@ -2004,6 +2019,21 @@
   },
   {
     "file": "en-how-to-cut-household-water-waste-and-save-money-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-how-to-cut-water-bills-effortlessly-in-2026.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -2574,6 +2604,21 @@
   },
   {
     "file": "en-ipva-installment.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-know-your-customer.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -3878,6 +3923,21 @@
     }
   },
   {
+    "file": "en-why-my-savings-goals-aren-t-moving-forward.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-why-you-re-not-seeing-progress-in-your-savings.md",
     "dir": "posts",
     "severity": 0,
@@ -5048,6 +5108,21 @@
     }
   },
   {
+    "file": "es-como-reducir-gastos-de-agua-sin-esfuerzo-en-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-como-reducir-gastos-fijos-mensuales-de-forma-eficaz.md",
     "dir": "posts",
     "severity": 0,
@@ -5215,6 +5290,21 @@
   {
     "file": "es-como-usar-pagos-anticipados-a-tu-favor-en-2026.md",
     "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-conoce-a-tu-cliente.md",
+    "dir": "glossario",
     "severity": 0,
     "issues": {
       "currency": 0,
@@ -5890,6 +5980,21 @@
   {
     "file": "es-fondo-de-inversion.md",
     "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-fondos-de-renta-fija-camino-sencillo-para-la-seguridad.md",
+    "dir": "posts",
     "severity": 0,
     "issues": {
       "currency": 0,
@@ -6834,6 +6939,21 @@
   },
   {
     "file": "es-por-que-mi-dinero-desaparece-antes-de-que-llegue-el-salario.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-por-que-mis-metas-de-ahorro-no-avanzan.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
