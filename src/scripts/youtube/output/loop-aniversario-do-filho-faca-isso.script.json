@@ -1,0 +1,117 @@
+{
+  "slug": "loop-aniversario-do-filho-faca-isso",
+  "formato": "loop16",
+  "term": "Aniversário do filho",
+  "category": "vida",
+  "keyword": "ANIVERSÁRIO",
+  "situacao": "aniversario-do-filho",
+  "gancho": "faca-isso",
+  "ganchoFamilia": "faça isso",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "bolha",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se você quer a festa do seu filho, faça isso.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "festa",
+          "visual": {
+            "type": "statement",
+            "text": "A festa do meu filho"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "filho",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bolha"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu quis agradar meu menino, mas o salário já tinha destino.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "agradar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bolha"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "menino",
+          "visual": {
+            "type": "statement",
+            "text": "O salário já tinha destino"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "E aí, eu cortei o que dava e fiz festa simples.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "cortei",
+          "visual": {
+            "type": "statement",
+            "text": "Fiz uma festa simples"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "festa",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bolha"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Hoje, quando penso nisso, sei. Faça isso antes da festa.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "penso",
+          "visual": {
+            "type": "statement",
+            "text": "Faça isso antes da festa"
+          }
+        },
+        {
+          "anchor": "nisso",
+          "visual": {
+            "type": "statement",
+            "text": "A festa do meu filho"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
