@@ -55,7 +55,7 @@ Spend just five minutes now to record your latest expense in FinMoovi and see th
 | **Time spent** | 30 min–1 h updating a sheet | 2 min registering via photo or voice |
 | **Accuracy** | Typos and manual categories | Automatic AI‑driven categorization |
 | **Motivation** | Discouragement when progress isn’t visible | Positive alerts and progress graphs |
-| **Decision‑making** | Repeated delays in goals | Weekly adjustments based on real data |
+| **Decision‑making** | Repeated delays in [goals](/en/posts/en-why-my-savings-goals-aren-t-moving-forward) | Weekly adjustments based on real data |
 
 ![Before vs. after: what changes in practice](/images/posts/por-que-nao-vejo-progresso-na-minha-poupanca-4.webp)
 

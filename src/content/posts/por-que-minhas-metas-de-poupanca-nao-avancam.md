@@ -19,9 +19,9 @@ seo:
   keywords: ["metas de poupança","relatórios inteligentes","FinMoovi","controle financeiro","motivação financeira","acompanhamento de gastos","metas","progresso","poupança","objetivos","finmoovi","finanças pessoais"]
 ---
 
-As metas de poupança ficam no papel porque não há um acompanhamento em tempo real que mostre o progresso e ajuste o ritmo conforme os gastos cotidianos, fazendo com que a motivação se perca e o objetivo pareça distante, claramente.
+As metas de [poupança](/glossario/poupanca) ficam no papel porque não há um acompanhamento em tempo real que mostre o progresso e ajuste o ritmo conforme os gastos cotidianos, fazendo com que a motivação se perca e o objetivo pareça distante, claramente.
 
-Imagine a cena: você acabou de fechar a conta do cartão, anotou o valor da última compra de um lanche que custa o equivalente a um café por dia, e ainda assim sente que aquele plano de juntar o valor de quase um aluguel para a viagem dos sonhos está parado. A planilha está cheia de números, mas quando você abre, tudo parece confuso; não há um “ponto de luz” que indique se você está no caminho certo. O dia a dia segue, as contas chegam, e a meta vai ficando cada vez mais distante, como se fosse um filme que nunca tem final feliz. Essa sensação de estagnação é mais comum do que se pensa, e a raiz do problema costuma estar na falta de feedback imediato e visual.
+Imagine a cena: você acabou de fechar a conta do cartão, anotou o valor da última compra de um lanche que custa o equivalente a um café por dia, e ainda assim sente que aquele plano de juntar o valor de quase um [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026) para a viagem dos sonhos está parado. A planilha está cheia de números, mas quando você abre, tudo parece confuso; não há um “ponto de luz” que indique se você está no caminho certo. O dia a dia segue, as contas chegam, e a meta vai ficando cada vez mais distante, como se fosse um filme que nunca tem final feliz. Essa sensação de estagnação é mais comum do que se pensa, e a raiz do problema costuma estar na falta de feedback imediato e visual.
 
 ## Por que as metas parecem estagnar
 
@@ -31,7 +31,7 @@ A maioria das pessoas começa a definir metas com entusiasmo, mas logo esbarra e
 2. **Desconexão entre gasto e meta** – Cada compra parece isolada, e o cérebro não associa aquele pequeno gasto ao impacto na meta maior.
 3. **Ajustes tardios** – Quando o ritmo de poupança realmente sai da linha, o alerta só aparece semanas depois, quando já é tarde demais para corrigir.
 
-Esses pontos são confirmados por estudos de educação financeira da OECD, que apontam que a maioria dos adultos perde o foco nas metas de longo prazo por não ter ferramentas de acompanhamento simples e frequentes.
+Esses pontos são confirmados por estudos de [educação financeira](/glossario/educacao-financeira) da OECD, que apontam que a maioria dos adultos perde o foco nas metas de longo prazo por não ter ferramentas de acompanhamento simples e frequentes.
 
 ## Relatórios inteligentes do FinMoovi
 
@@ -42,7 +42,7 @@ Esses pontos são confirmados por estudos de educação financeira da OECD, que 
 
 
 * **Visão de progresso em tempo real** – Um gráfico de barra que mostra, a cada registro, quanto já foi acumulado em relação ao objetivo. É como ver o ponteiro de um medidor subir a cada passo.
-* **Alertas suaves** – Quando o ritmo de poupança está abaixo do esperado, o app envia uma notificação discreta, sugerindo um ajuste, como reduzir um gasto supérfluo ou transferir um valor extra.
+* **[Alertas](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto) suaves** – Quando o ritmo de poupança está abaixo do esperado, o app envia uma notificação discreta, sugerindo um ajuste, como reduzir um gasto supérfluo ou transferir um valor extra.
 * **Modo offline** – Todos os cálculos acontecem no seu dispositivo, sem precisar de conexão constante, garantindo privacidade e rapidez.
 
 Esses relatórios transformam números abstratos em informações acionáveis, permitindo que você tome decisões na hora, em vez de esperar a revisão mensal da planilha.
@@ -64,7 +64,7 @@ Esse processo rápido cria um hábito de registro e visualização, que, segundo
 | Aspecto | Antes de usar FinMoovi | Depois de usar FinMoovi |
 |---|---|---|
 | **Visibilidade** | Planilha cheia, mas sem sinal claro de progresso | Gráfico de barra que mostra a porcentagem acumulada |
-| **Tempo de reação** | Ajustes só percebidos após semanas | Alertas instantâneos sugerindo correções |
+| **Tempo de reação** | Ajustes só percebidos após semanas | [Alertas](/posts/ja-esqueceu-de-pagar-a-conta-e-ficou-na-mao-como-mudar-isso) instantâneos sugerindo correções |
 | **Motivação** | Sentimento de estagnação, metas “no papel” | Sensação de avanço a cada registro |
 | **Esforço** | Digitação manual, categorização confusa | Captura por foto ou voz, categorização automática |
 | **Privacidade** | Dados na nuvem, dependente de internet | Processamento offline, dados só no seu celular |
@@ -76,11 +76,11 @@ Esse processo rápido cria um hábito de registro e visualização, que, segundo
 ## Dicas práticas para manter a motivação
 
 * **Transforme cada gasto em ponto de progresso** – Ao registrar, pense: “Esse lanche me afastou X% da meta”. Essa mentalidade cria um vínculo direto entre consumo e objetivo.
-* **Use o modo “lista de compras”** – Antes de ir ao supermercado, adicione os itens no FinMoovi; ele mostrará o total em tempo real, ajudando a evitar compras por impulso.
+* **Use o modo “[lista de compras](/glossario/lista-de-compras)”** – Antes de ir ao supermercado, adicione os itens no FinMoovi; ele mostrará o total em tempo real, ajudando a evitar compras por impulso.
 * **Desafie a si mesmo** – Proponha “30 dias sem compras supérfluas” e acompanhe o relatório semanal. O feedback visual aumenta a sensação de conquista.
 * **Celebre micro‑marcos** – Quando o app sinalizar que você chegou a 25% da meta, permita-se um pequeno prazer (ex.: um filme). Isso reforça o comportamento positivo.
 
-Essas estratégias, aliadas aos relatórios inteligentes, criam um ciclo de feedback que mantém a meta viva e em movimento.
+Essas [estratégias](/posts/como-diversificar-com-ativos-de-renda-variavel-em-2026), aliadas aos relatórios inteligentes, criam um ciclo de feedback que mantém a meta viva e em movimento.
 
 Experimente o FinMoovi grátis por 7 dias e veja a diferença.
 
@@ -96,4 +96,4 @@ Não. O cálculo e a visualização dos relatórios são feitos offline; a conex
 
 
 ### Posso definir metas em moedas diferentes?
-Sim. O FinMoovi aceita multimoeda, permitindo que você acompanhe metas em dólares, euros ou a moeda local, facilitando viagens ou investimentos no exterior.
+Sim. O FinMoovi aceita multimoeda, permitindo que você acompanhe metas em dólares, euros ou a [moeda](/glossario/moeda) local, facilitando viagens ou investimentos no exterior.

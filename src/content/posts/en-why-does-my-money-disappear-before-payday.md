@@ -71,7 +71,7 @@ A study cited by Investopedia shows that users of automatic expense‑capture ap
 
 ## Tips to keep your balance in check  
 - **Log everything immediately** – the voice + OCR combo removes procrastination.  
-- **Review the report at day’s end** – five minutes to understand cash flow and tweak goals.  
+- **Review the report at day’s end** – five minutes to understand cash flow and tweak [goals](/en/posts/en-why-my-savings-goals-aren-t-moving-forward).  
 - **Use limit alerts** – FinMoovi notifies you when you’re nearing the “entertainment” cap.  
 - **Do an impulse‑buy “detox”** – spot patterns in the reports and set simple rules (e.g., “don’t buy anything above the price of a coffee per day”).  
 - **Take advantage of offline mode** – even without internet, the app keeps recording and syncs securely when you’re back online.

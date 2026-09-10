@@ -46,7 +46,7 @@ Now that you know how to turn financial chaos into visual control, why not get h
 
 ## Frequently Asked Questions  
 ### How does cash flow help me save?  
-Seeing income and outflows on a single dashboard lets you quickly spot where money is being consumed and cut unnecessary expenses, directing resources toward goals or reserves.
+Seeing income and outflows on a single dashboard lets you quickly spot where money is being consumed and cut unnecessary expenses, directing resources toward [goals](/en/posts/en-why-my-savings-goals-aren-t-moving-forward) or reserves.
 
 ![Get started today](/images/posts/como-controlar-seu-fluxo-de-caixa-pessoal-em-2026-1.webp)
 

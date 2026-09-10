@@ -82,7 +82,7 @@ Sim. Ao deslocar o banho para horários fora de ponta, o consumo de energia ocor
 
 
 ### Como o FinMoovi ajuda a monitorar o consumo de energia?
-O app permite capturar a conta de energia, categoriza automaticamente os gastos (como aquecimento de água) e oferece [alertas](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto) e metas para controlar o consumo em períodos específicos.
+O app permite capturar a conta de energia, categoriza automaticamente os gastos (como aquecimento de água) e oferece [alertas](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto) e [metas](/posts/por-que-minhas-metas-de-poupanca-nao-avancam) para controlar o consumo em períodos específicos.
 
 ### Preciso mudar o aquecedor para economizar?
 Não necessariamente. Ajustar o horário e reduzir o tempo de banho já traz [benefícios](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) significativos. Trocar por um modelo mais eficiente pode potencializar ainda mais a economia, mas não é obrigatório.

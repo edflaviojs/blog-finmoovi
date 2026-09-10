@@ -19,9 +19,9 @@ seo:
   keywords: ["savings goals","smart reports","FinMoovi","financial control","financial motivation","expense tracking","goals","progress","savings","objectives","personal finance"]
 ---
 
-Saving goals often stay on paper because there’s no real‑time feedback that shows progress and adjusts the pace as everyday expenses pile up. Without that instant visual cue, motivation fades and the target feels far away.
+[Saving](/en/posts/en-how-to-build-a-budget-that-actually-works-in-2026) goals often stay on paper because there’s no real‑time feedback that shows progress and adjusts the pace as everyday expenses pile up. Without that instant visual cue, motivation fades and the target feels far away.
 
-Imagine this: you’ve just closed your credit‑card bill, you jot down the cost of a snack that’s about the price of a daily coffee, yet the plan to save enough for a dream trip—almost the cost of a month’s rent—still looks stuck. Your spreadsheet is full of numbers, but when you open it, everything feels confusing; there’s no “green light” telling you you’re on track. Bills arrive, daily life goes on, and the goal drifts farther away, like a movie with no happy ending. This sense of stagnation is more common than you think, and the root cause is usually a lack of immediate, visual feedback.
+Imagine this: you’ve just closed your [credit](/en/glossario/en-credit)‑card bill, you jot down the cost of a snack that’s about the price of a daily coffee, yet the plan to save enough for a dream trip—almost the cost of a month’s rent—still looks stuck. Your spreadsheet is full of numbers, but when you open it, everything feels confusing; there’s no “green light” telling you you’re on track. Bills arrive, daily life goes on, and the goal drifts farther away, like a movie with no happy ending. This sense of stagnation is more common than you think, and the root cause is usually a lack of immediate, visual feedback.
 
 ## Why Goals Feel Stagnant
 
@@ -40,7 +40,7 @@ That’s where FinMoovi’s smart reports step in. By recording every expense—
 ![Smart Reports in FinMoovi](/images/posts/por-que-minhas-metas-de-poupanca-nao-avancam-2.webp)
 
 * **Real‑time progress view** – A bar chart updates with each entry, showing how much you’ve accumulated toward the target. It’s like watching a gauge needle climb with every step.
-* **Gentle alerts** – When your saving rate dips below expectations, the app sends a subtle notification suggesting a tweak, such as cutting a non‑essential expense or moving extra cash into savings.
+* **Gentle alerts** – When your saving rate dips below expectations, the app sends a subtle notification suggesting a tweak, such as cutting a non‑essential expense or moving extra cash into [savings](/en/glossario/en-savings).
 * **Offline mode** – All calculations happen on your device, no constant internet needed, ensuring privacy and speed.
 
 These reports turn abstract numbers into actionable insights, letting you make decisions on the spot instead of waiting for a monthly spreadsheet review.
@@ -64,7 +64,7 @@ This fast routine builds a habit of logging and visualizing, which, according to
 | **Visibility** | Spreadsheet full of numbers, no clear progress signal | Bar chart showing accumulated percentage |
 | **Reaction time** | Adjustments noticed only after weeks | Instant alerts suggesting corrections |
 | **Motivation** | Feeling stuck, goals “on paper” | Sense of forward movement with each entry |
-| **Effort** | Manual typing, confusing categorization | Photo or voice capture, automatic categorization |
+| **Effort** | Manual typing, confusing categorization | Photo or [voice capture](/en/posts/en-forgot-to-pay-a-bill-how-to-fix-it-in-2026), [automatic categorization](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end) |
 | **Privacy** | Data in the cloud, internet dependent | Offline processing, data stays on your phone |
 
 ![Before vs After](/images/posts/por-que-minhas-metas-de-poupanca-nao-avancam-4.webp)
@@ -72,11 +72,11 @@ This fast routine builds a habit of logging and visualizing, which, according to
 ## Practical Tips to Keep Motivation High
 
 * **Turn every expense into progress points** – When you log a purchase, think: “That snack set me back X% from my goal.” This creates a direct link between consumption and objective.
-* **Use the “shopping list” mode** – Before heading to the grocery store, add items in FinMoovi; it will show the total in real time, helping you avoid impulse buys.
+* **Use the “[shopping list](/en/glossario/en-shopping-list)” mode** – Before heading to the grocery store, add items in FinMoovi; it will show the total in real time, helping you avoid impulse buys.
 * **Challenge yourself** – Try a “30‑day no‑nonessential‑spending” sprint and track the weekly report. Visual feedback boosts the feeling of achievement.
 * **Celebrate micro‑milestones** – When the app signals you’ve hit 25% of the goal, treat yourself to a small reward (like a movie night). This reinforces positive behavior.
 
-These strategies, combined with smart reports, create a feedback loop that keeps your goal alive and moving forward.
+These [strategies](/en/posts/en-how-to-diversify-with-variable-income-assets-in-2026), combined with smart reports, create a feedback loop that keeps your goal alive and moving forward.
 
 Try FinMoovi free for 7 days and see the difference.
 
@@ -91,4 +91,4 @@ No. Calculations and visualizations happen offline; you only need a connection i
 ![FAQ](/images/posts/por-que-minhas-metas-de-poupanca-nao-avancam-6.webp)
 
 ### Can I set goals in different currencies?
-Yes. FinMoovi supports multi‑currency tracking, so you can monitor goals in dollars, euros, or your local currency—perfect for travel or overseas investments.
+Yes. FinMoovi supports [multi‑currency](/en/posts/en-digital-bank-vs-major-bank-which-is-worth-it-in-2026) tracking, so you can monitor goals in dollars, euros, or your local currency—perfect for travel or overseas investments.
