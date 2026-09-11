@@ -3,6 +3,7 @@ title: "How to Master Your Expenses and Find Peace in 2026"
 description: "Discover practical ways to control spending, turn receipts into insights, and use FinMoovi for financial peace."
 tickerHeadline: "The Money Leak Nobody Sees"
 image: "/images/posts/como-dominar-suas-despesas-e-ganhar-tranquilidade-em-2026.webp"
+imageAlt: "Smiling couple on beige couch reviewing white papers, green plant nearby."
 category: "dicas"
 locale: "en"
 tags: ["spending control","personal finance","economy","money"]

@@ -4,6 +4,7 @@ definition: "What Financial market is and how it shows up in your everyday money
 title: "Financial market - Financial Glossary"
 description: "What Financial market is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/mercado-financeiro.webp"
+imageAlt: "Gold coins, rising chart, and plant in jar on dark background"
 category: "basico"
 tags: ["Financial market", "glossary", "finance"]
 author: "FinMoovi"

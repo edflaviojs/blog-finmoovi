@@ -3,6 +3,7 @@ title: "Cómo dominar tus gastos y lograr tranquilidad en 2026"
 description: "Descubre estrategias prácticas para controlar gastos, transformar anotaciones en ideas y usar FinMoovi para lograr paz financiera."
 tickerHeadline: "La fuga de dinero que nadie ve"
 image: "/images/posts/como-dominar-suas-despesas-e-ganhar-tranquilidade-em-2026.webp"
+imageAlt: "Pareja sonriente revisando tablet y documentos en sofá con planta."
 category: "dicas"
 locale: "es"
 tags: ["control de gastos","finanzas personales","economía","dinero"]

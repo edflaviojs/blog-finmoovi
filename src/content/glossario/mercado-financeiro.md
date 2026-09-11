@@ -4,6 +4,7 @@ definition: "O que é mercado financeiro e como isso aparece no seu dia a dia �
 title: "mercado financeiro - Glossário Financeiro"
 description: "O que é mercado financeiro e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/mercado-financeiro.webp"
+imageAlt: "Moedas douradas empilhadas, gráfico de crescimento e planta em frasco sobre fundo escuro."
 category: "basico"
 tags: ["mercado financeiro", "glossário", "finanças"]
 author: "FinMoovi"
