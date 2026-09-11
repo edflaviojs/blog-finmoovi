@@ -1688,6 +1688,21 @@
     }
   },
   {
+    "file": "en-finmoovi-vs-mobills-which-to-choose-in-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-finmoovi-vs-organizze-which-is-better-in-2026.md",
     "dir": "posts",
     "severity": 0,
@@ -2634,6 +2649,21 @@
   },
   {
     "file": "en-kyc.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-lca.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -3744,6 +3774,21 @@
   },
   {
     "file": "en-understand-price-amortization-and-optimize-your-finances-in.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-understand-your-outstanding-balance-and-avoid-surprises-in.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -5753,6 +5798,21 @@
     }
   },
   {
+    "file": "es-entiende-el-saldo-deudor-y-evita-sorpresas-en-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-entiende-el-saldo-pendiente-y-como-regularizar-tus-cuentas.md",
     "dir": "posts",
     "severity": 0,
@@ -5875,6 +5935,21 @@
   {
     "file": "es-financiamiento.md",
     "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-finmoovi-vs-mobills-cual-elegir-en-2026.md",
+    "dir": "posts",
     "severity": 0,
     "issues": {
       "currency": 0,
@@ -6430,6 +6505,21 @@
   {
     "file": "es-la-forma-mas-eficaz-de-ahorrar-dinero-en-2026-estrategia.md",
     "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-letra-de-credito-agropecuario-lca.md",
+    "dir": "glossario",
     "severity": 0,
     "issues": {
       "currency": 0,
