@@ -1,7 +1,7 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-09-10T09:22:36.195Z
-**Posts:** 420 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 60
+**Gerado em:** 2026-09-11T09:21:00.290Z
+**Posts:** 426 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 60
 
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
@@ -172,7 +172,7 @@
 - _Elas oferecem flexibilidade, são gratuitas e podem ser customizadas de acordo com as suas necessidades._
 
 **por-que-minhas-metas-de-poupanca-nao-avancam.md**
-- _As metas de poupança ficam no papel porque não há um acompanhamento em tempo real que mostre o progresso e ajuste o ritmo conforme os gastos cotidianos, fazendo com que a motivação se perca e o objeti_
+- _As metas de [poupança](/glossario/poupanca) ficam no papel porque não há um acompanhamento em tempo real que mostre o progresso e ajuste o ritmo conforme os gastos cotidianos, fazendo com que a motiva_
 
 **por-que-nao-vejo-progresso-na-minha-poupanca.md**
 - _Segundo a Investopedia, o uso de **relatórios financeiros automatizados** aumenta a probabilidade de cumprimento de metas em até 35 % quando comparado a métodos manuais._
