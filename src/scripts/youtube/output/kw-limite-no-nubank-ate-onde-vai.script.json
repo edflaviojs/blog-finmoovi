@@ -1,0 +1,230 @@
+{
+  "slug": "kw-limite-no-nubank-ate-onde-vai",
+  "term": "Limite no Nubank: até onde vai?",
+  "category": "mindset",
+  "keyword": "Limite",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Sabe até *onde* vai um limite de mil reais no Nubank?"
+  },
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "bifurcacao",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Sabe até onde vai um limite de mil reais no Nubank? Eu testei e ele some rápido.",
+      "durationSec": 6.5,
+      "shots": [
+        {
+          "anchor": "onde",
+          "visual": {
+            "type": "statement",
+            "text": "Até onde dá?"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "limite",
+          "visual": {
+            "type": "number",
+            "text": "R$ 1.000"
+          }
+        },
+        {
+          "anchor": "some",
+          "visual": {
+            "type": "statement",
+            "text": "O limite desaparece rápido"
+          },
+          "sfx": "whoosh"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Cada vez que você passa o cartão, o que sobra diminui. Se você gasta quatrocentos, ficam só seiscentos reais.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "cartão",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          },
+          "sfx": "click"
+        },
+        {
+          "anchor": "diminui",
+          "visual": {
+            "type": "number",
+            "text": "R$ 600"
+          }
+        },
+        {
+          "anchor": "quatrocentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 400"
+          },
+          "sfx": "coin"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Aí você passa mais trezentos, e sobram só trezentos. É nessa hora que um gasto de surpresa aperta.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "trezentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 300"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "trezentos",
+          "visual": {
+            "type": "statement",
+            "text": "Só R$ 300 restantes"
+          }
+        },
+        {
+          "anchor": "surpresa",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          },
+          "sfx": "alert"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei essas compras no FinMoovi e ele somou pra mim. Os mil reais já foram. Na tela, eu vi certinho quanto já tinha usado.",
+      "durationSec": 9.6,
+      "shots": [
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Dashboard do FinMoovi mostrando o acompanhamento dos gastos e do limite usado"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "foram",
+          "visual": {
+            "type": "number",
+            "text": "R$ 0"
+          }
+        },
+        {
+          "anchor": "tela",
+          "visual": {
+            "type": "app",
+            "app": "balanco",
+            "note": "Resumo visual mostrando quanto do limite já foi usado"
+          }
+        },
+        {
+          "anchor": "usado",
+          "visual": {
+            "type": "statement",
+            "text": "Quanto já foi usado"
+          },
+          "sfx": "ding"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver como tá o seu? Procura o FinMoovi no celular. São sete dias de graça.",
+      "durationSec": 6.2,
+      "shots": [
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          }
+        },
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "statement",
+            "text": "FinMoovi no celular"
+          }
+        },
+        {
+          "anchor": "dias",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          }
+        },
+        {
+          "anchor": "graça",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "No fim, o seu limite é só o que sobrou no cartão. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "sobrou",
+          "visual": {
+            "type": "statement",
+            "text": "O que realmente sobrou?"
+          }
+        },
+        {
+          "anchor": "cartão",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "icon",
+            "icon": "shield"
+          },
+          "sfx": "ding"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja seu limite no FinMoovi",
+    "target": "app"
+  },
+  "totalDurationSec": 43.8
+}
