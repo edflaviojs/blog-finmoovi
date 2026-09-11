@@ -1,0 +1,117 @@
+{
+  "slug": "loop-presente-de-natal-ta-perdendo",
+  "formato": "loop16",
+  "term": "O presente de Natal",
+  "category": "vida",
+  "keyword": "NATAL",
+  "situacao": "presente-de-natal",
+  "gancho": "ta-perdendo",
+  "ganchoFamilia": "tá perdendo",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "fumaca",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se você ainda faz lista de presentes, tá perdendo dinheiro.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "lista",
+          "visual": {
+            "type": "statement",
+            "text": "Lista de presentes pesa"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "presentes",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Comigo aconteceu no Natal eu comprei presentes e meu bolso sumiu.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "Comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "Meu bolso sumiu"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "E aí eu vi que a gente precisava cuidar melhor.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "precisava",
+          "visual": {
+            "type": "statement",
+            "text": "A gente cuidou melhor"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "cuidar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Então se você ainda faz lista de presentes, tá perdendo dinheiro.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "lista",
+          "visual": {
+            "type": "statement",
+            "text": "Perdendo dinheiro ainda"
+          }
+        },
+        {
+          "anchor": "presentes",
+          "visual": {
+            "type": "statement",
+            "text": "Lista de presentes pesa"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
