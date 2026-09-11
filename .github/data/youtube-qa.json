@@ -1204,5 +1204,23 @@
     ],
     "veredito": "1. **LOOP — 7/10**  \nO primeiro e o último quadro repetem o mesmo visual principal e a mesma frase (“Papel esconde o controle”), no mesmo lugar. Porém, o texto menor embaixo muda de **“Se você ainda…”** para **“aperta.”**, então o encaixe não parece totalmente idêntico pelos quadros.\n\n2. **FAIXA DE BAIXO — 7/10**  \nHá texto importante relativamente baixo em vários quadros, especialmente nos quadros **5 (9s), 6 (11,2s), 7 (13,5s) e 8 (15,6s)**. Pode ficar vulnerável à interface do Shorts/Reels.\n\n3. **TEXTO POR CIMA DE TEXTO — 8/10**  \nNão vejo frases claramente sobrepostas nem palavras cortadas. O texto está bem separado. Alguns trechos pequenos ficam visualmente apertados, mas não parecem quebrados.\n\n4. **LEGIBILIDADE — 7/10**  \nAs frases grandes têm ótimo tamanho e contraste. O texto menor embaixo é mais fraco, principalmente quando aparece em cinza sobre o fundo roxo, e pode exigir atenção no celular.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — 6/10**  \nHá bastante espaço vazio na metade inferior de vários quadros. O elemento visual principal ocupa uma área relativamente pequena, deixando a composição com sensação de “respiro” excessivo.\n\n6. **COERÊNCIA — 9/10**  \nOs oito quadros têm identidade visual muito consistente: mesma marca, cores, tipografia e linguagem. A sequência também parece avançar a ideia do vídeo de forma lógica.\n\n7. **TESTE CENTRAL — 6/10**  \nPelos quadros parados, **parece mais uma sequência de slides animados do que um vídeo profissional**: a composição muda pouco e muitos quadros repetem exatamente a mesma estrutura. Movimento e transições **não dá para saber pelos quadros**.\n\nNOTA GERAL: 7\nPROBLEMA 1: Texto importante baixo demais, principalmente nos quadros 5–8 (9s–15,6s)\nPROBLEMA 2: O loop não parece perfeitamente contínuo porque o texto inferior muda entre 0,1s e 15,6s\nPROBLEMA 3: Muito espaço vazio e pouca variação visual entre alguns quadros, dando aparência de slides\nPRIMEIRA COISA A MUDAR: Subir o texto inferior para a zona segura e fazer o primeiro e o último quadro visualmente idênticos.",
     "quando": "2026-09-11T09:05:41.623Z"
+  },
+  {
+    "slug": "loop-presente-de-natal-ta-perdendo",
+    "formato": "loop16",
+    "nota": 7,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      2,
+      4.1,
+      6.1,
+      8.2,
+      10.2,
+      12.3,
+      14.3
+    ],
+    "veredito": "1. **O LOOP — 9/10**  \nO primeiro e o último quadro são praticamente iguais: **“Lista de presentes pesa”**, na mesma posição e com o mesmo visual. O loop parece bem preparado pelos quadros.\n\n2. **A FAIXA DE BAIXO — 5/10**  \nHá legendas importantes relativamente baixas em vários quadros. No quadro de **12,3s**, por exemplo, “de presentes, tá” fica numa região que pode ser parcialmente coberta pela interface do Reels/Shorts.\n\n3. **TEXTO POR CIMA DE TEXTO — 7/10**  \nNão vejo sobreposição grave, mas algumas legendas ficam visualmente apertadas. O destaque colorido misturado ao texto cinza reduz um pouco a separação entre palavras.\n\n4. **LEGIBILIDADE — 7/10**  \nOs textos grandes dos cartões são ótimos para celular. Já o texto cinza das legendas tem contraste menor e pode ficar difícil de ler rapidamente, principalmente sobre o fundo roxo.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — 5/10**  \nExiste bastante espaço roxo vazio na metade inferior dos quadros. A composição parece concentrada no centro/superior, deixando uma área grande sem função visual.\n\n6. **COERÊNCIA — 9/10**  \nOs quadros claramente pertencem ao mesmo vídeo: mesma identidade visual, tipografia, fundo e elementos gráficos. A mensagem também avança de forma lógica.\n\n7. **TESTE CENTRAL — 5/10**  \n**Parece mais uma sequência de slides animados do que um vídeo profissional**, porque a estrutura visual se repete muito e cada quadro parece uma tela independente.\n\nNOTA GERAL: 7\nPROBLEMA 1: A área inferior fica muito vazia e as legendas ficam vulneráveis à interface, principalmente no quadro de 12,3s\nPROBLEMA 2: O vídeo tem aparência de slides pela repetição da mesma composição\nPROBLEMA 3: O texto cinza das legendas perde contraste em alguns quadros\nPRIMEIRA COISA A MUDAR: Subir e dar mais presença visual às legendas, usando melhor o espaço vazio inferior sem comprometer o loop.",
+    "quando": "2026-09-11T09:10:11.748Z"
   }
 ]
