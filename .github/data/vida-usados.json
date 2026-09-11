@@ -400,5 +400,11 @@
     "gancho": "faca-isso",
     "turno": "noite",
     "em": "2026-09-10T09:07:45.601Z"
+  },
+  {
+    "situacao": "dividir-sem-brigar",
+    "gancho": "ta-perdendo",
+    "turno": "manha",
+    "em": "2026-09-11T09:02:46.228Z"
   }
 ]

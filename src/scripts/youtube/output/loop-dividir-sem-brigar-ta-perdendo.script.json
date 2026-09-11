@@ -1,0 +1,117 @@
+{
+  "slug": "loop-dividir-sem-brigar-ta-perdendo",
+  "formato": "loop16",
+  "term": "Dividir as contas sem brigar",
+  "category": "vida",
+  "keyword": "CASAL",
+  "situacao": "dividir-sem-brigar",
+  "gancho": "ta-perdendo",
+  "ganchoFamilia": "tá perdendo",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "gangorra",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se você ainda faz conta no papel, tá perdendo controle.",
+      "durationSec": 3.71,
+      "shots": [
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "statement",
+            "text": "Papel esconde o controle"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "papel",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "gangorra"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Domingo, eu e esposa brigamos sobre quem pagou o quê.",
+      "durationSec": 3.71,
+      "shots": [
+        {
+          "anchor": "Domingo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "gangorra"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "esposa",
+          "visual": {
+            "type": "statement",
+            "text": "Briga por conta paga"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então eu passei tudo pro aplicativo e a gente conferiu junto.",
+      "durationSec": 4.08,
+      "shots": [
+        {
+          "anchor": "passei",
+          "visual": {
+            "type": "statement",
+            "text": "A gente conferiu junto"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "aplicativo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "gangorra"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Hoje, papel fica de lado. Controle aparece quando conta aperta.",
+      "durationSec": 3.71,
+      "shots": [
+        {
+          "anchor": "papel",
+          "visual": {
+            "type": "statement",
+            "text": "Controle quando aperta"
+          }
+        },
+        {
+          "anchor": "Controle",
+          "visual": {
+            "type": "statement",
+            "text": "Papel esconde o controle"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.21
+}
