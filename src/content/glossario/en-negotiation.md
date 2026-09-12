@@ -4,6 +4,7 @@ definition: "What Negotiation is and how it shows up in your everyday money — 
 title: "Negotiation - Financial Glossary"
 description: "What Negotiation is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/negociacao.webp"
+imageAlt: "Gold coins stacked as bar chart next to plant growing from glass jar filled with coins."
 category: "basico"
 tags: ["Negotiation", "glossary", "finance"]
 author: "FinMoovi"

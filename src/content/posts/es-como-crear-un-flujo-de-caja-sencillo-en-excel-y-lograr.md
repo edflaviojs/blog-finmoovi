@@ -3,6 +3,7 @@ title: "Cómo crear un flujo de caja sencillo en Excel y lograr tranquilidad fin
 description: "Aprende a crear un flujo de caja en Excel paso a paso, con ejemplos cotidianos y la app FinMoovi para automatizar todo en minutos."
 tickerHeadline: "Transforma el caos de tus cuentas"
 image: "/images/posts/como-montar-um-fluxo-de-caixa-simples-no-excel-e-ganhar.webp"
+imageAlt: "Portátiles con gráficos financieros y taza de café sobre escritorio de madera."
 category: "dicas"
 locale: "es"
 tags: ["ejemplo de flujo de caja en excel","finanzas personales","economía","dinero"]

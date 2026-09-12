@@ -4,6 +4,7 @@ definition: "Qué es negociación y cómo aparece en tu día a día — explicad
 title: "negociación - Glosario Financiero"
 description: "Qué es negociación y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/negociacao.webp"
+imageAlt: "Pilas de monedas doradas y planta en frasco sobre fondo azul oscuro."
 category: "basico"
 tags: ["negociación", "glosario", "finanzas"]
 author: "FinMoovi"

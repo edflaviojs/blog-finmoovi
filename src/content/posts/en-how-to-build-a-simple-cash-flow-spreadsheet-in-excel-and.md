@@ -3,6 +3,7 @@ title: "How to Build a Simple Cash Flow Spreadsheet in Excel and Gain Financial 
 description: "Step‑by‑step guide to creating a cash‑flow spreadsheet in Excel, with everyday examples and the FinMoovi app for instant automation."
 tickerHeadline: "Turn messy bills into clear cash flow"
 image: "/images/posts/como-montar-um-fluxo-de-caixa-simples-no-excel-e-ganhar.webp"
+imageAlt: "Laptop displaying financial charts beside a white coffee mug on a desk."
 category: "dicas"
 locale: "en"
 tags: ["cash flow spreadsheet","personal finance","budgeting","FinMoovi","Excel","expense tracking"]

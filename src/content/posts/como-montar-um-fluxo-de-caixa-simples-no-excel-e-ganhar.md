@@ -3,6 +3,7 @@ title: "Como montar um fluxo de caixa simples no Excel e ganhar tranquilidade fi
 description: "Aprenda a criar um fluxo de caixa no Excel passo a passo, usando exemplos do dia a dia e o app FinMoovi para automatizar tudo em poucos minutos."
 tickerHeadline: "Transforme a bagunça das contas em contr"
 image: "/images/posts/como-montar-um-fluxo-de-caixa-simples-no-excel-e-ganhar.webp"
+imageAlt: "Notebook com gráfico de barras e xícara de café em mesa de escritório."
 category: "dicas"
 locale: "pt"
 tags: ["ejemplo de flujo de caja en excel","finanças pessoais","economia","dinheiro"]
