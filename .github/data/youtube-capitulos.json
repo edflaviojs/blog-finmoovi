@@ -1701,8 +1701,102 @@
           "titulo": "Passo a passo: investindo na prática"
         }
       ]
+    },
+    {
+      "videoId": "iqgcjpJ_nls",
+      "title": "COMO INVESTIR SEU DINHEIRO DE FORMA SIMPLES E FÁCIL",
+      "channel": "FAVELADO INVESTIDOR",
+      "duracaoSeg": 984,
+      "idioma": "pt",
+      "viewsPerDay": 923,
+      "vistoEm": "2026-09-12",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "Como se aposentar sem depender do INSS"
+        },
+        {
+          "seg": 32,
+          "titulo": "Regras de aposentadoria pelo INSS em 2026"
+        },
+        {
+          "seg": 253,
+          "titulo": "O que é fundo imobiliário e como investir com pouco dinheiro"
+        },
+        {
+          "seg": 411,
+          "titulo": "O que é Tesouro Direto e como funciona"
+        },
+        {
+          "seg": 536,
+          "titulo": "Tesouro Selic, Tesouro IPCA e Tesouro Prefixado: qual o melhor"
+        },
+        {
+          "seg": 761,
+          "titulo": "Melhores ações para investir e receber dividendos"
+        },
+        {
+          "seg": 905,
+          "titulo": "Como montar uma carteira de investimentos do zero"
+        }
+      ]
+    },
+    {
+      "videoId": "T3qDr1QnDw4",
+      "title": "OLITEF 2026 | EXERCÍCIOS Macrotema 01 - Sistema Financeiro | Matemática Financeira | Economia",
+      "channel": "Prof. Mansinho Jr.",
+      "duracaoSeg": 1845,
+      "idioma": "pt",
+      "viewsPerDay": 279,
+      "vistoEm": "2026-09-12",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "Início"
+        },
+        {
+          "seg": 131,
+          "titulo": "Questão 01"
+        },
+        {
+          "seg": 315,
+          "titulo": "Questão 02"
+        },
+        {
+          "seg": 425,
+          "titulo": "Questão 03"
+        },
+        {
+          "seg": 594,
+          "titulo": "Questão 04"
+        },
+        {
+          "seg": 772,
+          "titulo": "Questão 05"
+        },
+        {
+          "seg": 1009,
+          "titulo": "Questão 06"
+        },
+        {
+          "seg": 1189,
+          "titulo": "Questão 07"
+        },
+        {
+          "seg": 1295,
+          "titulo": "Questão 08"
+        },
+        {
+          "seg": 1395,
+          "titulo": "Questão 09"
+        },
+        {
+          "seg": 1575,
+          "titulo": "Questão 10"
+        }
+      ]
     }
   ],
-  "atualizadoEm": "2026-09-11T08:25:27.252Z",
-  "total": 31
+  "atualizadoEm": "2026-09-12T08:14:04.493Z",
+  "total": 33
 }
