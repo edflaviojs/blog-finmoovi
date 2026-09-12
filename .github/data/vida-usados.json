@@ -418,5 +418,11 @@
     "gancho": "ninguem-fala",
     "turno": "manha",
     "em": "2026-09-12T08:44:29.388Z"
+  },
+  {
+    "situacao": "delivery-de-sexta",
+    "gancho": "ninguem-fala",
+    "turno": "noite",
+    "em": "2026-09-12T08:49:22.539Z"
   }
 ]

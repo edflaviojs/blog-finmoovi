@@ -1,0 +1,117 @@
+{
+  "slug": "loop-delivery-de-sexta-ninguem-fala",
+  "formato": "loop16",
+  "term": "O delivery de toda sexta",
+  "category": "vida",
+  "keyword": "DELIVERY",
+  "situacao": "delivery-de-sexta",
+  "gancho": "ninguem-fala",
+  "ganchoFamilia": "ninguém fala",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ralo",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Ninguém fala isso sobre delivery de sexta, mas é real",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "Ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "Delivery de sexta pesa"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "delivery",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu via a fatura cheia depois do jantar com meus filhos",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "fatura",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "cheia",
+          "visual": {
+            "type": "statement",
+            "text": "A conta chegou em casa"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então percebi comigo. Parei o pedido e a gente mudou hábitos",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "percebi",
+          "visual": {
+            "type": "statement",
+            "text": "Mudei o pedido da noite"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Esse delivery de sexta, ninguém fala, mas é real comigo",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "delivery",
+          "visual": {
+            "type": "statement",
+            "text": "Ninguém fala sobre isso"
+          }
+        },
+        {
+          "anchor": "sexta",
+          "visual": {
+            "type": "statement",
+            "text": "Delivery de sexta pesa"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
