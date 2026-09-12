@@ -62,6 +62,20 @@
       "promessa": "Vou te mostrar como escolher compras que cabem no seu mês depois de organizar seu dinheiro",
       "em": "2026-09-05",
       "molde": "a-queda"
+    },
+    {
+      "slug": "gastos-fim-ano-como",
+      "cenarios": [
+        "o mercado",
+        "as assinaturas esquecidas"
+      ],
+      "fio": "guarda-chuva",
+      "elenco": "uma pessoa que acabou de se aposentar, olhando para trás",
+      "funcaoDoApp": "planejamento",
+      "cena": "a vaquinha da família para a emergência de alguém",
+      "promessa": "Vou te mostrar como encontrei seiscentos reais até dezembro sem cortar o café, o lazer ou criar renda extra",
+      "em": "2026-09-12",
+      "molde": "antes-depois"
     }
   ]
 }
