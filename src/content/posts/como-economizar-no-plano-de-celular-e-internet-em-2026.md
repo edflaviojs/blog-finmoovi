@@ -39,7 +39,7 @@ Ligar para o SAC e pedir um reajuste pode gerar uma economia de 10 % a 20 %.
 Quando estiver em casa ou em locais com Wi‑Fi gratuito, desative o 4G/5G. Configurações de “Uso de dados” nos smartphones permitem bloquear apps que consomem muita banda (streaming, redes sociais) quando não há Wi‑Fi. Essa prática pode reduzir de 2 GB a 5 GB o consumo mensal, evitando custos extras.
 
 ## Mude de operadora ou plano
-Se a negociação não resultar, pesquise concorrentes. Operadoras menores costumam oferecer planos com preço mais baixo e cobertura suficiente para áreas urbanas. Use o comparador de planos da Anatel ([Anatel – Comparador de Planos](https://www.anatel.gov.br)) para encontrar a melhor relação custo/benefício. Trocar de plano pode gerar economia de até R$80 por mês.
+Se a [negociação](/glossario/negociacao) não resultar, pesquise concorrentes. Operadoras menores costumam oferecer planos com preço mais baixo e cobertura suficiente para áreas urbanas. Use o comparador de planos da Anatel ([Anatel – Comparador de Planos](https://www.anatel.gov.br)) para encontrar a melhor relação custo/benefício. Trocar de plano pode gerar economia de até R$80 por mês.
 
 ![Use Wi‑Fi inteligente](/images/posts/como-economizar-no-plano-de-celular-e-internet-em-2026-4.webp)
 

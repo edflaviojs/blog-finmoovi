@@ -37,7 +37,7 @@ Llamar al servicio de atención al cliente y solicitar un reajuste puede generar
 Cuando estés en casa o en lugares con Wi‑Fi gratuito, desactiva el 4G/5G. Las configuraciones de “Uso de datos” en los smartphones permiten bloquear apps que consumen mucho ancho de banda (streaming, redes sociales) cuando no hay Wi‑Fi. Esta práctica puede reducir entre 2 GB y 5 GB el consumo mensual, evitando costos extra.
 
 ## Cambia de operadora o plan
-Si la negociación no da resultado, investiga a la competencia. Las operadoras más pequeñas suelen ofrecer planes con precio más bajo y cobertura suficiente para áreas urbanas. Usa el comparador de planes de la autoridad reguladora ([Comparador de planes](https://www.anatel.gov.br)) para encontrar la mejor relación costo/beneficio. Cambiar de plan puede generar un ahorro de hasta €14 al mes.
+Si la [negociación](/es/glossario/es-negociacion) no da resultado, investiga a la competencia. Las operadoras más pequeñas suelen ofrecer planes con precio más bajo y cobertura suficiente para áreas urbanas. Usa el comparador de planes de la autoridad reguladora ([Comparador de planes](https://www.anatel.gov.br)) para encontrar la mejor relación costo/beneficio. Cambiar de plan puede generar un ahorro de hasta €14 al mes.
 
 ![Use Wi‑Fi inteligente](/images/posts/como-economizar-no-plano-de-celular-e-internet-em-2026-4.webp)
 
