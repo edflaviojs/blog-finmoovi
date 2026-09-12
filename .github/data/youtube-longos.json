@@ -105,6 +105,57 @@
       "propostoEm": "2026-08-03T20:07:38.153Z",
       "publicadoEm": "2026-09-05T07:58:14.557Z",
       "videoId": "NC4Pi61FDPU"
+    },
+    {
+      "slug": "gastos-fim-ano-como",
+      "titulo": "Gastos do fim do ano: como sobrar R$ 600 sem cortar o cafezinho",
+      "tema": "Como encontrar R$ 600 no orçamento até dezembro sem cortar pequenos prazeres",
+      "angulo": "Eu mostro como encontrei R$ 600 que estavam escapando do meu orçamento sem cortar o café, o lazer ou criar uma renda extra. O cenário usa um salário de R$ 4.000, com contas fixas de R$ 2.200 e gastos variáveis que escondem R$ 200 por mês; no fim, a pessoa sai com um plano de três ajustes para chegar a R$ 600 até dezembro.",
+      "glossario": "controle-de-gastos",
+      "palavrasChave": [
+        "controle de gastos",
+        "organizar vida financeira",
+        "sobrar dinheiro mês",
+        "economizar dinheiro",
+        "gastos desnecessários"
+      ],
+      "estado": "proposto",
+      "viralRef": {
+        "videoId": "Gwn8-yGP6ug",
+        "title": "COMO ORGANIZAR SUAS FINANÇAS DE SETEMBRO A DEZEMBRO DE 2026",
+        "views": 191133,
+        "viewsPerDay": 28900,
+        "estrutura": [
+          "número concreto no título (\"2026\")",
+          "uma palavra em maiúsculas a marcar o tom"
+        ]
+      },
+      "propostoEm": "2026-09-11T08:25:27.286Z"
+    },
+    {
+      "slug": "divida-cartao-organize-suas",
+      "titulo": "Dívida do cartão: organize suas contas sem vender nada",
+      "tema": "Como sair da dívida do cartão usando o salário que já entra",
+      "angulo": "Eu mostro o que fiz quando percebi que a fatura do cartão estava consumindo meu dinheiro antes do fim do mês. O vídeo usa um cenário de quem ganha R$ 4.000, tem R$ 1.800 em contas fixas e acumulou R$ 3.500 no cartão, mostrando uma forma prática de reorganizar sem criar renda extra. No fim, a pessoa entende quanto precisa separar por mês para recuperar o controle.",
+      "glossario": "divida",
+      "palavrasChave": [
+        "dívida do cartão",
+        "organizar as contas",
+        "controle de gastos",
+        "sair do vermelho",
+        "fatura do cartão"
+      ],
+      "estado": "proposto",
+      "viralRef": {
+        "videoId": "qzgjvDTBykA",
+        "title": "JOVEM CAI NO SERASA e dá dicas de EDUCAÇÃO FINANCEIRA | CORTES do CASTRINHO",
+        "views": 72855,
+        "viewsPerDay": 12542,
+        "estrutura": [
+          "uma palavra em maiúsculas a marcar o tom"
+        ]
+      },
+      "propostoEm": "2026-09-11T08:25:27.286Z"
     }
   ]
 }
