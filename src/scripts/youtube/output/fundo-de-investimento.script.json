@@ -1,0 +1,221 @@
+{
+  "slug": "fundo-de-investimento",
+  "term": "fundo de investimento",
+  "category": "basico",
+  "keyword": "investimento",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você sabe *quem manda* nos seus mil reais num fundo de investimento?"
+  },
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "gangorra",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você sabe quem manda nos seus mil reais num fundo de investimento? Eles se juntam ao dinheiro dos outros, e alguém escolhe onde investir.",
+      "durationSec": 9.2,
+      "shots": [
+        {
+          "anchor": "manda",
+          "visual": {
+            "type": "statement",
+            "text": "Quem decide seu dinheiro?"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "Eles",
+          "visual": {
+            "type": "icon",
+            "icon": "money"
+          }
+        },
+        {
+          "anchor": "alguém",
+          "visual": {
+            "type": "statement",
+            "text": "Alguém escolhe por você"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Esse dinheiro pode ir para ações, títulos ou imóveis. Você não precisa escolher cada um sozinho.",
+      "durationSec": 6.2,
+      "shots": [
+        {
+          "anchor": "ações",
+          "visual": {
+            "type": "icon",
+            "icon": "growth"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "Você",
+          "visual": {
+            "type": "statement",
+            "text": "Você não precisa decidir tudo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Sozinho, você ia ter que pesquisar tudo. Já no fundo, os mil reais entram num pacote com vários investimentos, e o seu dinheiro acompanha o que acontece com eles.",
+      "durationSec": 11.2,
+      "shots": [
+        {
+          "anchor": "pesquisar",
+          "visual": {
+            "type": "statement",
+            "text": "Pesquisar tudo dá trabalho"
+          },
+          "sfx": "typewriter"
+        },
+        {
+          "anchor": "pacote",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "gangorra"
+          }
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "number",
+            "text": "R$ 1.000"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "acontece",
+          "visual": {
+            "type": "chart",
+            "text": "Seu dinheiro acompanha o conjunto"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Foi isso que eu vi no FinMoovi. Eu joguei o nome do fundo lá, e ele me mostrou na tela tudo o que tinha dentro desse pacote.",
+      "durationSec": 10.4,
+      "shots": [
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Dashboard do FinMoovi mostrando o fundo e seus dados principais"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "mostrou",
+          "visual": {
+            "type": "statement",
+            "text": "O pacote aparece na tela"
+          }
+        },
+        {
+          "anchor": "dentro",
+          "visual": {
+            "type": "list",
+            "text": "Investimentos dentro do fundo"
+          },
+          "sfx": "keyboard"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu? Procura o FinMoovi. São sete dias grátis.",
+      "durationSec": 4.2,
+      "shots": [
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "statement",
+            "text": "Quer conferir o seu?"
+          }
+        },
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "statement",
+            "text": "Comece grátis por 7 dias"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Assim, os seus mil reais entram num fundo e se espalham por vários investimentos de uma vez só. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 9.6,
+      "shots": [
+        {
+          "anchor": "entram",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "gangorra"
+          }
+        },
+        {
+          "anchor": "investimentos",
+          "visual": {
+            "type": "statement",
+            "text": "Vários investimentos, uma só entrada"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          }
+        },
+        {
+          "anchor": "outros",
+          "visual": {
+            "type": "statement",
+            "text": "Controle faz diferença"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja onde seu dinheiro está",
+    "target": "app"
+  },
+  "totalDurationSec": 50.8
+}
