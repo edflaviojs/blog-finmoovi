@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-11T14:39:16.006Z",
-  "sourceCursor": 1,
+  "updatedAt": "2026-09-12T12:30:48.642Z",
+  "sourceCursor": 2,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -1965,8 +1965,10 @@
       "category": null,
       "priority": 2,
       "source": "gsc-gap",
-      "status": "pending",
-      "addedAt": "2026-09-07T13:06:05.567Z"
+      "status": "used",
+      "addedAt": "2026-09-07T13:06:05.567Z",
+      "usedAt": "2026-09-12T12:30:48.642Z",
+      "usedBy": "gerar-dicas-financeiras"
     },
     {
       "keyword": "is credit card worth it 2026",
