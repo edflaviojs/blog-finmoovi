@@ -48,9 +48,15 @@
     ]
   },
   "gastos-fim-ano-como": {
-    "estado": "reservado",
+    "videoId": "yttsSbKZ8g8",
+    "uploadedAt": "2026-09-12T08:59:22.189Z",
     "publishAt": "2026-09-13T22:00:00.000Z",
-    "reservadoEm": "2026-09-12T07:54:40.651Z",
-    "corrida": "34679425636"
+    "titulo": "Gastos do fim do ano: como sobrar R$ 600 sem cortar o cafezinho",
+    "capitulos": 6,
+    "legendas": [
+      "pt",
+      "en",
+      "es"
+    ]
   }
 }
