@@ -1,0 +1,117 @@
+{
+  "slug": "loop-plano-de-saude-subiu-ninguem-fala",
+  "formato": "loop16",
+  "term": "O plano de saúde que subiu",
+  "category": "vida",
+  "keyword": "PLANO",
+  "situacao": "plano-de-saude-subiu",
+  "gancho": "ninguem-fala",
+  "ganchoFamilia": "ninguém fala",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "bola-neve",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Ninguém fala isso sobre plano de saúde, mas é real.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "Ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "O plano subiu"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "plano",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-neve"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Comigo aconteceu quando chegou a carta do reajuste do contrato.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "Comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-neve"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "Chegou a carta"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Eu olhei a mensalidade e percebi que, em casa, apertava demais.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "olhei",
+          "visual": {
+            "type": "statement",
+            "text": "Aperto em casa"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "mensalidade",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-neve"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Plano de saúde virou assunto que ninguém fala lá em casa.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "Plano",
+          "visual": {
+            "type": "statement",
+            "text": "Ninguém fala disso"
+          }
+        },
+        {
+          "anchor": "saúde",
+          "visual": {
+            "type": "statement",
+            "text": "O plano subiu"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
