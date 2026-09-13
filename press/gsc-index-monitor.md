@@ -1,6 +1,6 @@
 # GSC — Monitor de Indexação
 
-Gerado em: 2026-09-12T11:58:09.559Z
+Gerado em: 2026-09-13T13:06:03.326Z
 Propriedade: https://blog.finmoovi.com/
 
 ## Resumo
@@ -17,9 +17,9 @@ Propriedade: https://blog.finmoovi.com/
 ## Por motivo (não indexadas)
 
 - Duplicate, Google chose different canonical than user: 5
-- Discovered - currently not indexed: 7
+- Discovered - currently not indexed: 6
 - Crawled - currently not indexed: 1
-- URL is unknown to Google: 1
+- URL is unknown to Google: 2
 
 ## Páginas de conteúdo há mais tempo fora do índice
 
@@ -34,5 +34,5 @@ Propriedade: https://blog.finmoovi.com/
 - `https://blog.finmoovi.com/en/glossario/en-financial-planning-spreadsheet/` — Discovered - currently not indexed (desde 2026-08-15)
 - `https://blog.finmoovi.com/en/glossario/en-financial-value/` — Discovered - currently not indexed (desde 2026-07-30)
 - `https://blog.finmoovi.com/en/glossario/en-lc/` — URL is unknown to Google (desde 2026-07-30)
-- `https://blog.finmoovi.com/es/glossario/es-lc/` — Discovered - currently not indexed (desde 2026-07-30)
+- `https://blog.finmoovi.com/es/glossario/es-lc/` — URL is unknown to Google (desde 2026-07-30)
 - `https://blog.finmoovi.com/es/glossario/es-planilla-de-planificacion-financiera/` — Discovered - currently not indexed (desde 2026-08-15)
