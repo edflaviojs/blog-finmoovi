@@ -1276,5 +1276,23 @@
     ],
     "veredito": "1. **O LOOP — 9/10**  \nO primeiro e o último quadro são praticamente iguais: mesma composição e a mesma frase **“Aprendi a pedir desconto”**. É um bom ponto de encaixe para o loop.\n\n2. **A FAIXA DE BAIXO — 6/10**  \nAs frases inferiores ficam muito próximas da área que pode ser coberta pela interface do Shorts/Reels. O conteúdo principal não está lá, mas a legenda pode perder visibilidade.\n\n3. **TEXTO POR CIMA DE TEXTO — 8/10**  \nNão vejo frases claramente sobrepostas ou palavras cortadas. Porém, em alguns quadros o texto colorido e o texto cinza ficam visualmente muito próximos, dificultando a leitura rápida.\n\n4. **LEGIBILIDADE — 7/10**  \nOs títulos grandes são excelentes para celular. O problema está nas frases menores embaixo: o texto cinza tem pouco contraste com o fundo e pode desaparecer em telas pequenas.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — 6/10**  \nHá bastante espaço vazio, principalmente abaixo dos elementos principais. Como os quadros são muito estáticos, esse vazio aumenta a sensação de “arte parada”.\n\n6. **COERÊNCIA — 8/10**  \nTudo parece pertencer ao mesmo vídeo: mesma identidade visual, cores, tipografia e ilustração. A sequência das frases também sugere uma progressão: aprender → perguntar → economizar.\n\n7. **TESTE CENTRAL — 5/10**  \n**Pelos quadros parados, parece mais uma sequência de slides animáveis do que um vídeo profissional.** Não dá para saber pelos quadros se o movimento e as transições resolvem isso.\n\nNOTA GERAL: 7\nPROBLEMA 1: Texto inferior pequeno e pouco contrastado, principalmente nos quadros 2, 3, 4, 5, 6 e 7.\nPROBLEMA 2: Grande área vazia na parte inferior, deixando os quadros com aparência de slides.\nPROBLEMA 3: O loop é bom, mas os quadros intermediários repetem bastante a mesma composição, especialmente os quadros 2, 3 e 6.\nPRIMEIRA COISA A MUDAR: Suba e aumente o texto inferior, dando mais contraste, e use melhor o espaço vazio para criar sensação de vídeo em vez de slide.",
     "quando": "2026-09-13T09:43:49.336Z"
+  },
+  {
+    "slug": "loop-assinaturas-esquecidas-comeca-assim",
+    "formato": "loop16",
+    "nota": 7.5,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      2.2,
+      4.5,
+      6.7,
+      9,
+      11.2,
+      13.5,
+      15.6
+    ],
+    "veredito": "1. **O LOOP — 9/10**  \nO primeiro e o último quadro mostram **“Serviços que ninguém usava”**, praticamente no mesmo lugar e com a mesma composição. O reinício tende a ser bem discreto. Não dá para saber pelo quadro se a transição do último para o primeiro também é imperceptível.\n\n2. **A FAIXA DE BAIXO — 6/10**  \nHá texto importante relativamente baixo em vários quadros, principalmente os subtítulos. No celular, essa região pode ficar parcialmente escondida pelos elementos da interface.\n\n3. **TEXTO POR CIMA DE TEXTO — 8/10**  \nNão vejo frases claramente sobrepostas ou palavras cortadas. No **3º quadro (4,5s)**, porém, o fundo claro e os elementos atrás do ícone deixam a leitura um pouco mais confusa.\n\n4. **LEGIBILIDADE — 8/10**  \nOs títulos são grandes, fortes e com bom contraste. Os subtítulos menores ainda são legíveis, mas poderiam subir um pouco e ganhar mais segurança para telas pequenas.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — 7/10**  \nExiste bastante espaço vazio, especialmente na metade inferior de alguns quadros. O visual é limpo, mas em certos momentos parece faltar informação visual para preencher a tela.\n\n6. **COERÊNCIA — 9/10**  \nMuito consistente: mesma identidade visual, cores, tipografia e elementos gráficos. A sequência também conta uma história clara: **serviços inúteis → cancelamento → conta para de escapar → fatura vira → cortar assinaturas**.\n\n7. **TESTE CENTRAL — 6/10**  \nVisualmente, ainda parece mais uma sequência de **slides animáveis** do que um vídeo profissional, porque vários quadros dependem de cartões de texto estáticos e repetem a mesma composição.\n\nNOTA GERAL: 7,5  \nPROBLEMA 1: Texto dos subtítulos muito baixo, principalmente nos quadros de 0,1s a 15,6s  \nPROBLEMA 2: Grande quantidade de espaço vazio faz alguns momentos parecerem slides, especialmente no 1º e 4º quadros  \nPROBLEMA 3: Repetição visual dos cartões reduz a sensação de vídeo, principalmente nos quadros 1, 4, 7 e 8  \nPRIMEIRA COISA A MUDAR: Suba todos os subtítulos para uma área mais segura e use mais elementos visuais para ocupar o espaço vazio.",
+    "quando": "2026-09-13T09:49:18.289Z"
   }
 ]
