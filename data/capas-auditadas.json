@@ -4599,6 +4599,126 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-09-12"
+    },
+    "como-montar-um-fluxo-de-caixa-simples-no-excel-e-ganhar-2.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-13"
+    },
+    "como-montar-um-fluxo-de-caixa-simples-no-excel-e-ganhar-4.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-13"
+    },
+    "como-montar-um-fluxo-de-caixa-simples-no-excel-e-ganhar-6.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-13"
+    },
+    "como-montar-um-fluxo-de-caixa-simples-no-excel-e-ganhar.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-13"
+    },
+    "negociacao-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-13"
+    },
+    "negociacao-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-13"
+    },
+    "negociacao.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-13"
+    },
+    "xepa-financeira.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-13"
+    },
+    "xing-ling-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-13"
+    },
+    "xing-ling-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-13"
+    },
+    "xing-ling.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-13"
+    },
+    "yahoo-finance-inline-1.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"Investing in the future, one coin at a time.\")",
+      "em": "2026-09-13"
+    },
+    "yahoo-finance-inline-3.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"YHOO!\")",
+      "em": "2026-09-13"
+    },
+    "yahoo-finance.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-13"
+    },
+    "yield-inline-1.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"Merit Yield.\")",
+      "em": "2026-09-13"
+    },
+    "yield-inline-3.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"veld Ventajas\")",
+      "em": "2026-09-13"
+    },
+    "yield.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-13"
+    },
+    "z-score-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-13"
+    },
+    "z-score-inline-3.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"zscore Ventas, 1725\")",
+      "em": "2026-09-13"
+    },
+    "z-score.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-13"
+    },
+    "zero-coupon-inline-1.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"14.5M ADDS\")",
+      "em": "2026-09-13"
+    },
+    "zero-coupon-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-13"
+    },
+    "zero-coupon.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-13"
+    },
+    "zona-de-conforto-financeira.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-13"
     }
   },
   "corrigidas": {
@@ -5209,8 +5329,32 @@
     "webull-inline-3.webp": {
       "em": "2026-09-12",
       "motivo": "tem texto escrito (\"Planting the seeds of financial growth, one coin at a time.\")"
+    },
+    "yahoo-finance-inline-1.webp": {
+      "em": "2026-09-13",
+      "motivo": "tem texto escrito (\"Investing in the future, one coin at a time.\")"
+    },
+    "yahoo-finance-inline-3.webp": {
+      "em": "2026-09-13",
+      "motivo": "tem texto escrito (\"YHOO!\")"
+    },
+    "yield-inline-1.webp": {
+      "em": "2026-09-13",
+      "motivo": "tem texto escrito (\"Merit Yield.\")"
+    },
+    "yield-inline-3.webp": {
+      "em": "2026-09-13",
+      "motivo": "tem texto escrito (\"veld Ventajas\")"
+    },
+    "z-score-inline-3.webp": {
+      "em": "2026-09-13",
+      "motivo": "tem texto escrito (\"zscore Ventas, 1725\")"
+    },
+    "zero-coupon-inline-1.webp": {
+      "em": "2026-09-13",
+      "motivo": "tem texto escrito (\"14.5M ADDS\")"
     }
   },
-  "totalAcervo": 937,
-  "ultimaCorrida": "2026-09-12"
+  "totalAcervo": 944,
+  "ultimaCorrida": "2026-09-13"
 }
