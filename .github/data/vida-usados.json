@@ -430,5 +430,11 @@
     "gancho": "comeca-assim",
     "turno": "manha",
     "em": "2026-09-13T09:40:30.930Z"
+  },
+  {
+    "situacao": "assinaturas-esquecidas",
+    "gancho": "comeca-assim",
+    "turno": "noite",
+    "em": "2026-09-13T09:46:23.365Z"
   }
 ]

@@ -1,0 +1,117 @@
+{
+  "slug": "loop-assinaturas-esquecidas-comeca-assim",
+  "formato": "loop16",
+  "term": "As assinaturas que ninguém cancela",
+  "category": "vida",
+  "keyword": "ASSINATURA",
+  "situacao": "assinaturas-esquecidas",
+  "gancho": "comeca-assim",
+  "ganchoFamilia": "começa assim",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "balde-furado",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Quer aprender a cortar assinaturas? Começa assim.",
+      "durationSec": 2.53,
+      "shots": [
+        {
+          "anchor": "aprender",
+          "visual": {
+            "type": "statement",
+            "text": "Serviços que ninguém usava"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "cortar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu abri minha fatura e vi serviços que ninguém em casa usava.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "fatura",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "serviços",
+          "visual": {
+            "type": "statement",
+            "text": "Fui cancelando tudo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Só que eu fui cancelando tudo, e a conta parou de escapar.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "cancelando",
+          "visual": {
+            "type": "statement",
+            "text": "A conta parou de escapar"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Desde então, conferir a fatura virou meu começo para cortar assinaturas.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "conferir",
+          "visual": {
+            "type": "statement",
+            "text": "Cortar assinaturas começa"
+          }
+        },
+        {
+          "anchor": "fatura",
+          "visual": {
+            "type": "statement",
+            "text": "Serviços que ninguém usava"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.19
+}
