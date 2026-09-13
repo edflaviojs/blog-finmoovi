@@ -1,7 +1,7 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-09-12T09:00:27.362Z
-**Posts:** 429 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 60
+**Gerado em:** 2026-09-13T09:58:01.470Z
+**Posts:** 432 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 61
 
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
@@ -39,6 +39,9 @@
 
 **como-montar-seu-orcamento-familiar-usando-excel-e-apps.md**
 - _- **Visibilidade total**: você pode ver todas as receitas e despesas em um único quadro, arrastar linhas e criar tabelas dinâmicas conforme a necessidade._
+
+**como-montar-um-fluxo-de-caixa-simples-no-excel-e-ganhar.md**
+- _(Adaptar conforme a sua planilha)._
 
 **como-montar-um-orcamento-que-realmente-funciona-em-2026.md**
 - _Ajuste conforme a realidade._
