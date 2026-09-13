@@ -13050,5 +13050,68 @@
         "publicaEmBR": "13/09 às 19h31"
       }
     }
+  },
+  "gastos-fim-ano-como": {
+    "midias": {
+      "video": {
+        "id": "18090fec-0940-41e8-989d-5c02bd89076c",
+        "name": "hPdW29GsDL.mp4",
+        "originalName": null,
+        "path": "https://media.help4desk.com/hPdW29GsDL.mp4",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capa": null,
+      "capaLarga": {
+        "id": "7e3c263a-ece1-4050-8dda-243cfb3f3f45",
+        "name": "dsT0aTArBR.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/dsT0aTArBR.jpeg",
+        "thumbnail": null,
+        "alt": null
+      }
+    },
+    "publicaEm": "2026-09-14T23:00:00.000Z",
+    "publicaEmBR": "14/09 às 20h00",
+    "agendadoEm": "2026-09-13T23:04:19.482Z",
+    "atualizadoEm": "2026-09-13T23:04:21.208Z",
+    "redes": {
+      "facebook": {
+        "postId": "cmu0f88uh00s4s390i50ghmuy",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-09-14T23:26:00.000Z",
+        "publicaEmBR": "14/09 às 20h26",
+        "midia": "o vídeo",
+        "caracteres": 587,
+        "limite": 63206
+      },
+      "linkedin-page": {
+        "postId": "cmu0f89c800s5s390zyw6i18x",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-09-14T23:43:00.000Z",
+        "publicaEmBR": "14/09 às 20h43",
+        "midia": "o vídeo",
+        "caracteres": 618,
+        "limite": 3000
+      },
+      "telegram": {
+        "postId": "cmu0f89s700s6s390fp4e5fd7",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-09-15T00:14:00.000Z",
+        "publicaEmBR": "14/09 às 21h14",
+        "midia": "o vídeo não cabe nos 20 MB do Telegram; vai a capa com o texto e o link",
+        "caracteres": 487,
+        "limite": 4096
+      },
+      "bluesky": {
+        "postId": "cmu0f8a7x00s7s3904f07g21w",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-09-15T00:47:00.000Z",
+        "publicaEmBR": "14/09 às 21h47",
+        "midia": "vai a capa DEITADA (o Bluesky não publica vídeo, e a em pé ficaria cortada no feed)",
+        "caracteres": 142,
+        "limite": 300
+      }
+    }
   }
 }
