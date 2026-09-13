@@ -1,0 +1,229 @@
+{
+  "slug": "taxa-financeira",
+  "term": "taxa financeira",
+  "category": "basico",
+  "keyword": "financeira",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você sabe *quanto uma taxa financeira pode tirar da sua conta* sem você perceber?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "balde-furado",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você sabe quanto uma taxa financeira pode tirar da sua conta sem você perceber? Ela aparece numa cobrança e sai direto do seu bolso.",
+      "durationSec": 9.2,
+      "shots": [
+        {
+          "anchor": "quanto",
+          "visual": {
+            "type": "statement",
+            "text": "Quanto está escapando?"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "tirar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        },
+        {
+          "anchor": "cobrança",
+          "visual": {
+            "type": "number",
+            "text": "R$ 15"
+          },
+          "sfx": "coin"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Isso acontece com taxa de manutenção, taxa de serviço e cobrança ligada a alguma coisa que você fez. Na correria, passa batido.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "manutenção",
+          "visual": {
+            "type": "statement",
+            "text": "Manutenção pesa no bolso"
+          }
+        },
+        {
+          "anchor": "cobrança",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "batido",
+          "visual": {
+            "type": "statement",
+            "text": "Passa batido"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Uma cobrança de quinze reais parece pequena. Somando os meses, são cento e oitenta reais no ano. Aí pesa.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "quinze",
+          "visual": {
+            "type": "number",
+            "text": "R$ 15"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "Somando",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        },
+        {
+          "anchor": "cento",
+          "visual": {
+            "type": "counter",
+            "from": 15,
+            "to": 180,
+            "prefix": "R$"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu coloquei essa cobrança no FinMoovi, e ele me mostrou a taxa de manutenção, quinze reais por mês, e quanto isso dava no ano.",
+      "durationSec": 9.2,
+      "shots": [
+        {
+          "anchor": "cobrança",
+          "visual": {
+            "type": "statement",
+            "text": "Veja a cobrança por dentro"
+          }
+        },
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "extrato",
+            "note": "Cobrança de R$ 15 destacada no extrato, com identificação da taxa de manutenção"
+          }
+        },
+        {
+          "anchor": "manutenção",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        },
+        {
+          "anchor": "dava",
+          "visual": {
+            "type": "number",
+            "text": "R$ 180/ano"
+          },
+          "sfx": "ding"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver as suas cobranças? Procura o FinMoovi. São sete dias grátis.",
+      "durationSec": 4.6,
+      "shots": [
+        {
+          "anchor": "cobranças",
+          "visual": {
+            "type": "statement",
+            "text": "Encontre suas cobranças"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "number",
+            "text": "7 dias grátis"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Taxa financeira é o preço que cobram quando você paga alguma coisa ou usa um serviço. Veja quanto sai da conta. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 10.8,
+      "shots": [
+        {
+          "anchor": "preço",
+          "visual": {
+            "type": "statement",
+            "text": "Toda cobrança tem um preço"
+          }
+        },
+        {
+          "anchor": "Veja",
+          "visual": {
+            "type": "statement",
+            "text": "Confira antes de pagar"
+          },
+          "sfx": "alert"
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        },
+        {
+          "anchor": "outros",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro sem controle escapa"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja onde seu dinheiro está indo",
+    "target": "app"
+  },
+  "totalDurationSec": 49.6
+}
