@@ -1,0 +1,117 @@
+{
+  "slug": "loop-pagar-a-vista-comeca-assim",
+  "formato": "loop16",
+  "term": "Pagar à vista e pedir desconto",
+  "category": "vida",
+  "keyword": "DESCONTO",
+  "situacao": "pagar-a-vista",
+  "gancho": "comeca-assim",
+  "ganchoFamilia": "começa assim",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "duas-portas",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Quer aprender pagar à vista? Começa assim. Eu vi meu boleto ontem",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "aprender",
+          "visual": {
+            "type": "statement",
+            "text": "Aprendi a pedir desconto"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "pagar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "duas-portas"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Comigo foi vergonha perguntar desconto à vista e eu perguntei caladinho",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "Comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "duas-portas"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "vergonha",
+          "visual": {
+            "type": "statement",
+            "text": "Tive vergonha de perguntar"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então percebi que a gente economiza quando pede antes de pagar",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "percebi",
+          "visual": {
+            "type": "statement",
+            "text": "Hoje eu peço antes"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "economiza",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "duas-portas"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Quer aprender pagar à vista? Eu faço assim",
+      "durationSec": 2.9,
+      "shots": [
+        {
+          "anchor": "aprender",
+          "visual": {
+            "type": "statement",
+            "text": "Aprender a pagar à vista"
+          }
+        },
+        {
+          "anchor": "pagar",
+          "visual": {
+            "type": "statement",
+            "text": "Aprendi a pedir desconto"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}

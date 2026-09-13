@@ -424,5 +424,11 @@
     "gancho": "ninguem-fala",
     "turno": "noite",
     "em": "2026-09-12T08:49:22.539Z"
+  },
+  {
+    "situacao": "pagar-a-vista",
+    "gancho": "comeca-assim",
+    "turno": "manha",
+    "em": "2026-09-13T09:40:30.930Z"
   }
 ]
