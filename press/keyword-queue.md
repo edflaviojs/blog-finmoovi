@@ -1,11 +1,11 @@
 # 🗂️ Fila de Keywords (Fase 3)
 
-**Atualizado em:** 2026-09-07T13:06:06.220Z
-**Totais:** 58 pendente(s) · 86 usada(s) · 58 pulada(s)
+**Atualizado em:** 2026-09-14T13:27:30.623Z
+**Totais:** 58 pendente(s) · 94 usada(s) · 59 pulada(s)
 
 ## ⏳ Pendentes por fonte
 
-### Manuais (prioridade 1) — 46
+### Manuais (prioridade 1) — 45
 
 - como funciona a anuidade do cartão _(glossario)_
 - como funciona a amortização de financiamento _(glossario)_
@@ -38,7 +38,6 @@
 - o que significa economizar _(glossario)_
 - planejamento para guardar dinheiro _(glossario)_
 - planilha para economizar dinheiro _(glossario)_
-- de economizar água
 - economizar agua
 - para economizar água
 - sobre economizar água
@@ -54,20 +53,21 @@
 - o que levar para comer na praia para economizar
 - por que é importante economizar energia elétrica
 
-### Lacunas do GSC (prioridade 2) — 12
+### Lacunas do GSC (prioridade 2) — 13
 
-- planificación financiera
-- debentures
-- outstanding balance meaning
-- fundo fixo
-- define outstanding balance
-- control de gastos
-- ejemplo de flujo de caja en excel
-- is credit card worth it 2026
 - o que é fatura
 - how do freelancers organize finances
 - control de gasto
 - outstanding balance definition
+- expense control
+- installments
+- recurring fee definition
+- recurring payments financial planning
+- gastos recurrentes
+- parcelados
+- google finance alternative
+- gasto recurrente
+- calculadora tabela price
 
 ### Autocomplete (prioridade 3) — 0
 
@@ -77,16 +77,16 @@ _Nenhuma._
 
 | Keyword | Usada por | Em |
 |---|---|---|
+| is credit card worth it 2026 | gerar-dicas-financeiras | 2026-09-13 |
+| ejemplo de flujo de caja en excel | gerar-dicas-financeiras | 2026-09-12 |
+| control de gastos | gerar-dicas-financeiras | 2026-09-11 |
+| define outstanding balance | gerar-dicas-financeiras | 2026-09-10 |
+| de economizar água | gerar-post-investimentos | 2026-09-09 |
+| fundo fixo | gerar-dicas-financeiras | 2026-09-09 |
+| outstanding balance meaning | gerar-post-orcamento | 2026-09-07 |
+| planificación financiera | gerar-dicas-financeiras | 2026-09-07 |
 | de como economizar água | gerar-dicas-financeiras | 2026-09-04 |
 | lista de compras | glossario-auto-diario | 2026-09-03 |
-| investimentos simulador | gerar-dicas-financeiras | 2026-09-03 |
-| parcelamento | glossario-auto-diario | 2026-09-02 |
-| lista de compras completa | glossario-auto-diario | 2026-09-01 |
-| como economizar agua | gerar-post-inteligente | 2026-09-01 |
-| lista de compras do mês | glossario-auto-diario | 2026-08-31 |
-| formas de economizar energia | gerar-dicas-financeiras | 2026-08-31 |
-| lista de compras supermercado | glossario-auto-diario | 2026-08-30 |
-| formas de como economizar agua | gerar-dicas-financeiras | 2026-08-30 |
 
 ## ⏭️ Puladas (já cobertas)
 
@@ -148,6 +148,7 @@ _Nenhuma._
 - guardar dinheiro como (variacao-duplicada)
 - o que e poupar (verbete-ja-existe)
 - o que é economizar (variacao-duplicada)
+- debentures (coberto-glossario)
 
 ---
 _Gerado automaticamente por keyword-queue-sync.js (Fase 3). Fontes: data/keywords-manuais.csv · lacunas do GSC · Google Autocomplete._

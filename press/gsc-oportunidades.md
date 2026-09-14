@@ -1,73 +1,87 @@
 # 🔎 GSC — Digest de Oportunidades (Fase 1)
 
 **Propriedade:** https://blog.finmoovi.com/
-**Período:** 2026-08-10 → 2026-09-07 (28 dias)
-**Gerado em:** 2026-09-07T13:06:05.487Z
+**Período:** 2026-08-17 → 2026-09-14 (28 dias)
+**Gerado em:** 2026-09-14T13:27:29.689Z
 
-**Totais no período:** 794 queries · 2872 impressões · 0 cliques
+**Totais no período:** 676 queries · 3262 impressões · 0 cliques
 
 ## 1. 🎯 Striking distance (posição 5–20 — perto da 1ª página)
 
 | Query | Impr. | Cliques | Posição | CTR |
 |---|---|---|---|---|
-| como reduzir gastos mensais | 533 | 0 | 8.9 | 0% |
-| como organizar as financas pessoais | 116 | 0 | 10.1 | 0% |
-| is credit card worth it 2026 | 14 | 0 | 10.3 | 0% |
-| gastos recurrentes | 6 | 0 | 9.2 | 0% |
-| ted pix | 5 | 0 | 6 | 0% |
-| gasto recurrente | 4 | 0 | 8.5 | 0% |
+| como reduzir gastos mensais | 1161 | 0 | 8 | 0% |
+| como organizar as financas pessoais | 206 | 0 | 10.2 | 0% |
+| is credit card worth it 2026 | 20 | 0 | 9.7 | 0% |
+| gastos recurrentes | 11 | 0 | 10.8 | 0% |
+| o que significa saldo pendente | 11 | 0 | 9.3 | 0% |
+| gasto recurrente | 9 | 0 | 8.4 | 0% |
+| gastos recurrentes definicion | 7 | 0 | 7.9 | 0% |
+| %cdb 120% cdi liquidez diária setembro 2026 | 4 | 0 | 6.3 | 0% |
+| o que é saldo pendente | 4 | 0 | 10.5 | 0% |
+| que es un gasto recurrente | 4 | 0 | 8 | 0% |
 | cost of living july 2026 | 3 | 0 | 7.3 | 0% |
-| gastos recurrentes definicion | 3 | 0 | 7.3 | 0% |
+| lista de compras supermercado completa | 3 | 0 | 14 | 0% |
+| que son gastos recurrentes | 3 | 0 | 7 | 0% |
 
 ## 2. 📉 CTR baixo (boa posição, poucos cliques — reescrever title/meta na Fase 2)
 
 | Query | Impr. | Posição | CTR | CTR esperado |
 |---|---|---|---|---|
-| como reduzir gastos mensais | 533 | 8.9 | 0% | ~2.8% |
-| mobills alternative | 8 | 2.8 | 0% | ~11% |
-| gastos recurrentes | 6 | 9.2 | 0% | ~2.8% |
-| ted pix | 5 | 6 | 0% | ~5% |
-| gasto recurrente | 4 | 8.5 | 0% | ~2.8% |
-| que es renta mensual | 4 | 3 | 0% | ~11% |
+| como reduzir gastos mensais | 1161 | 8 | 0% | ~3.2% |
+| is credit card worth it 2026 | 20 | 9.7 | 0% | ~2.5% |
+| o que significa saldo pendente | 11 | 9.3 | 0% | ~2.8% |
+| gasto recurrente | 9 | 8.4 | 0% | ~3.2% |
+| mobills alternative | 8 | 3.5 | 0% | ~8% |
+| gastos recurrentes definicion | 7 | 7.9 | 0% | ~3.2% |
+| que es renta mensual | 5 | 3.4 | 0% | ~11% |
+| ted pix | 5 | 4.6 | 0% | ~6% |
+| %cdb 120% cdi liquidez diária setembro 2026 | 4 | 6.3 | 0% | ~5% |
+| que es un gasto recurrente | 4 | 8 | 0% | ~3.2% |
+| renta mensual que es | 4 | 4 | 0% | ~8% |
+| %eur brl cotação setembro 2026 | 3 | 2 | 0% | ~15% |
 | cost of living july 2026 | 3 | 7.3 | 0% | ~4% |
-| gastos recurrentes definicion | 3 | 7.3 | 0% | ~4% |
-| renta mensual que es | 3 | 4 | 0% | ~8% |
+| que es la renta mensual | 3 | 4.7 | 0% | ~6% |
+| que significa renta mensual | 3 | 4 | 0% | ~8% |
+| que son gastos recurrentes | 3 | 7 | 0% | ~4% |
+| ted vs pix | 3 | 4.7 | 0% | ~6% |
 
 ## 3. 🕳️ Lacunas (busca com impressão SEM página dedicada — candidatas à Fase 3)
 
 | Query | Impr. | Posição | Slug sugerido |
 |---|---|---|---|
-| planificación financiera | 77 | 56.1 | `planificacion-financiera` |
-| flujo de caja | 75 | 93 | `flujo-de-caja` |
-| outstanding balance | 66 | 48.1 | `outstanding-balance` |
-| what does outstanding balance mean | 36 | 63.6 | `what-does-outstanding-balance-mean` |
-| que es un mercado yahoo | 33 | 57.1 | `que-es-un-mercado-yahoo` |
-| planificacion financiera | 32 | 57.8 | `planificacion-financiera` |
+| planificación financiera | 107 | 56 | `planificacion-financiera` |
+| planificacion financiera | 50 | 57.7 | `planificacion-financiera` |
+| flujo de caja | 43 | 90.6 | `flujo-de-caja` |
+| outstanding balance | 38 | 49.4 | `outstanding-balance` |
 | debentures | 31 | 90.9 | `debentures` |
-| what does an outstanding balance mean | 30 | 55.7 | `what-does-an-outstanding-balance-mean` |
-| what is outstanding balance mean | 29 | 53.9 | `what-is-outstanding-balance-mean` |
-| outstanding balance meaning | 19 | 77.6 | `outstanding-balance-meaning` |
-| what is outstanding balance | 19 | 44.7 | `what-is-outstanding-balance` |
-| what does outstanding balance mean credit card | 18 | 55.4 | `what-does-outstanding-balance-mean-credit-card` |
+| que es un mercado yahoo | 31 | 56.2 | `que-es-un-mercado-yahoo` |
+| expense control | 25 | 59.8 | `expense-control` |
+| is credit card worth it 2026 | 20 | 9.7 | `is-credit-card-worth-it-2026` |
+| what does outstanding balance mean | 20 | 66.9 | `what-does-outstanding-balance-mean` |
+| control de gastos | 18 | 36.1 | `control-de-gastos` |
+| installments | 18 | 64.7 | `installments` |
 | what is debenture | 18 | 88.7 | `what-is-debenture` |
-| what is outstanding balance in credit card | 18 | 51.2 | `what-is-outstanding-balance-in-credit-card` |
-| fundo fixo | 17 | 67.8 | `fundo-fixo` |
-| define outstanding balance | 16 | 42.3 | `define-outstanding-balance` |
-| control de gastos | 15 | 35.6 | `control-de-gastos` |
-| ejemplo de flujo de caja en excel | 15 | 76.9 | `ejemplo-de-flujo-de-caja-en-excel` |
-| is credit card worth it 2026 | 14 | 10.3 | `is-credit-card-worth-it-2026` |
-| o que é fatura | 14 | 39.4 | `o-que-e-fatura` |
-| saldo devedor | 13 | 51.2 | `saldo-devedor` |
-| que es un prestamo | 12 | 95.7 | `que-es-un-prestamo` |
-| how do freelancers organize finances | 11 | 53.8 | `how-do-freelancers-organize-finances` |
-| control de gasto | 10 | 46.6 | `control-de-gasto` |
-| outstanding balance definition | 10 | 58.7 | `outstanding-balance-definition` |
+| what does an outstanding balance mean | 17 | 53.7 | `what-does-an-outstanding-balance-mean` |
+| what is outstanding balance mean | 16 | 53.8 | `what-is-outstanding-balance-mean` |
+| recurring fee definition | 14 | 51.1 | `recurring-fee-definition` |
+| outstanding balance meaning | 12 | 81 | `outstanding-balance-meaning` |
+| recurring payments financial planning | 12 | 74.3 | `recurring-payments-financial-planning` |
+| control de gasto | 11 | 46.8 | `control-de-gasto` |
+| define outstanding balance | 11 | 43.4 | `define-outstanding-balance` |
+| gastos recurrentes | 11 | 10.8 | `gastos-recurrentes` |
+| parcelados | 11 | 70.2 | `parcelados` |
+| google finance alternative | 10 | 68 | `google-finance-alternative` |
+| gasto recurrente | 9 | 8.4 | `gasto-recurrente` |
+| what is outstanding balance | 9 | 50.3 | `what-is-outstanding-balance` |
+| calculadora tabela price | 8 | 88.3 | `calculadora-tabela-price` |
 
 ## 4. 🔀 Canibalização por query (≥2 páginas na mesma busca — consolidar na Fase 2)
 
-- **planificación financiera** (77 impr.): https://blog.finmoovi.com/es/glossario/es-planificacion-financiera/ (56) · https://blog.finmoovi.com/es/glossario/es-planificacion-financiera (21)
-- **planificacion financiera** (32 impr.): https://blog.finmoovi.com/es/glossario/es-planificacion-financiera/ (25) · https://blog.finmoovi.com/es/glossario/es-planificacion-financiera (7)
-- **fundo fixo** (18 impr.): https://blog.finmoovi.com/glossario/gasto-fixo-de-uma-empresa/ (11) · https://blog.finmoovi.com/glossario/gasto-fixo/ (7)
+- **planificación financiera** (107 impr.): https://blog.finmoovi.com/es/glossario/es-planificacion-financiera/ (56) · https://blog.finmoovi.com/es/glossario/es-planificacion-financiera (51)
+- **planificacion financiera** (50 impr.): https://blog.finmoovi.com/es/glossario/es-planificacion-financiera (25) · https://blog.finmoovi.com/es/glossario/es-planificacion-financiera/ (25)
+- **expense control** (25 impr.): https://blog.finmoovi.com/en/glossario/en-expense-control/ (16) · https://blog.finmoovi.com/en/glossario/en-expense-control (9)
+- **fundo fixo** (9 impr.): https://blog.finmoovi.com/glossario/gasto-fixo-de-uma-empresa/ (5) · https://blog.finmoovi.com/glossario/gasto-fixo/ (4)
 
 ---
 _CTR esperado é heurística de priorização, não dado do GSC. Gerado automaticamente pelo motor GSC (Fase 1)._
