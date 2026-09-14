@@ -56,3 +56,6 @@ youtube-render/public/manus/**/*.png
 # fechar (ver `capaDestaCorrida` em upload-longo.js). Fora do repositorio, ou foi
 # escrito nesta maquina nesta corrida, ou nao existe.
 youtube-render/public/manus/**/capa-de-hoje.json
+
+# Laudo de corrida do vigia do ar (nao entra no repo)
+.vigia-do-ar.json

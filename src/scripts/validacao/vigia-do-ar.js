@@ -29,12 +29,34 @@
  * Exit 1 = ha conteudo publicavel que nao chegou ao ar, ou nao consegui medir
  */
 
-import { readdirSync, readFileSync, existsSync } from 'fs';
+import { readdirSync, readFileSync, existsSync, writeFileSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
 import matter from 'gray-matter';
 
 const SITE = process.env.VIGIA_SITE || 'https://blog.finmoovi.com';
+/**
+ * Laudo em JSON para o passo que AVISA (14/09/2026).
+ *
+ * Este vigia esteve VERMELHO cinco noites seguidas (09 a 13/09), foi a unica
+ * corrida vermelha de cada um desses dias, e o blog ficou esse tempo todo sem
+ * publicar sem ninguem dar por isso. O alarme tocou; o que faltou foi ele
+ * CHEGAR a alguem. Ficar vermelho e contar com o e-mail automatico do GitHub
+ * nao chega quando ha dezenas de robos a mandar e-mail.
+ *
+ * Por isso o vigia passa a deixar por escrito o que viu, e o workflow manda-o
+ * por e-mail quando falha. Ficheiro de corrida, nao entra no repo.
+ */
+const RELATORIO = process.env.VIGIA_RELATORIO || join(process.cwd(), '.vigia-do-ar.json');
+
+/** Grava o laudo. Nunca lanca: falhar a escrever nao pode mascarar o veredito. */
+function gravarLaudo(laudo) {
+  try {
+    writeFileSync(RELATORIO, JSON.stringify({ site: SITE, gracaHoras: GRACA_HORAS, ...laudo }, null, 2), 'utf-8');
+  } catch (e) {
+    console.log(`   (nao consegui gravar ${RELATORIO}: ${e.message})`);
+  }
+}
 const GRACA_HORAS = Number(process.env.VIGIA_GRACA_HORAS || 6);
 // Menos URLs do que isto significa sitemap truncado, pagina de erro ou
 // resposta da Cloudflare — nunca um blog com centenas de posts. Medir contra
@@ -93,6 +115,7 @@ async function main() {
     // Fail-closed: nao conseguir medir NAO e o mesmo que estar tudo bem.
     console.log(`🚫 Nao consegui ler o sitemap do site: ${err.message}`);
     console.log('   O site pode estar fora do ar. Vermelho de proposito.');
+    gravarLaudo({ estado: 'sem-sitemap', motivo: err.message, analisados: 0, emFalta: [], aCaminho: [] });
     process.exit(1);
   }
 
@@ -179,6 +202,7 @@ async function main() {
   if (analisados === 0) {
     console.log('\n🚫 Nenhum ficheiro de conteudo analisado — o vigia nao correu de verdade.');
     console.log('   Verifique o cwd (esperado: raiz do repo) e src/content/{posts,glossario}.');
+    gravarLaudo({ estado: 'nao-mediu', motivo: 'Nenhum ficheiro de conteudo analisado', analisados, emFalta: [], aCaminho: [] });
     process.exit(1);
   }
 
@@ -186,10 +210,12 @@ async function main() {
     console.log('\n🚫 O BLOG NAO ESTA A PUBLICAR TUDO.');
     console.log('   Foi assim que o site ficou 3 dias parado em 22/08/2026 sem ninguem dar por isso.');
     console.log('   Onde olhar: o build do Astro (`npm run build`) e o ultimo deploy na Cloudflare Pages.');
+    gravarLaudo({ estado: 'fora-do-ar', analisados, emFalta, aCaminho: aCaminho.map(a => a.rel) });
     process.exit(1);
   }
 
   console.log('\n✅ Tudo o que o repo tem esta no ar.');
+  gravarLaudo({ estado: 'ok', analisados, emFalta: [], aCaminho: aCaminho.map(a => a.rel) });
   process.exit(0);
 }
 

@@ -67,3 +67,20 @@ jobs:
         env:
           VIGIA_GRACA_HORAS: ${{ github.event.inputs.graca_horas || '6' }}
         run: npm run validate:no-ar
+
+      # 14/09/2026: este vigia ficou vermelho CINCO NOITES SEGUIDAS (09 a 13/09),
+      # era a unica corrida vermelha de cada dia, e o blog passou esse tempo todo
+      # sem publicar sem ninguem dar por isso. O alarme mediu certo e tocou; o que
+      # falhou foi a ENTREGA — ficar vermelho e contar com o e-mail automatico do
+      # GitHub nao chega quando ha dezenas de robos a mandar e-mail.
+      #
+      # `failure()` (e nao `always()`) de proposito: aviso que chega todos os dias
+      # deixa de ser aviso. E corre tambem quando o job rebenta ANTES do vigia —
+      # nesse caso o script manda "nao consegui medir", porque silencio foi
+      # exatamente o defeito que se veio consertar.
+      - name: Avisar por e-mail (so quando ha algo fora do ar)
+        if: failure()
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          DIGEST_TO: ${{ vars.DIGEST_TO || 'finmoovi@gmail.com' }}
+        run: node src/scripts/automacoes/avisar-vigia-do-ar.js
