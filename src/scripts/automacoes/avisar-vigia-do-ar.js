@@ -88,6 +88,24 @@ function montarEmail(laudo) {
     };
   }
 
+  // Ensaio pedido a mao: o alarme esta a ser TESTADO, nao disparado. Assunto
+  // inconfundivel — um e-mail de treino que pareca avaria e pior do que nenhum.
+  if (laudo.ensaio) {
+    return {
+      subject: '🧪 ENSAIO do alarme do blog — esta tudo bem',
+      corpo: `
+      <p style="color:#f0f6fc;font-size:15px;line-height:1.6;margin:0 0 16px;">
+        Este e-mail e um <strong>teste pedido a mao</strong>. Nao ha nada partido:
+        o vigia mediu ${escapar(laudo.analisados || 0)} ficheiros e <strong>nenhum</strong> esta fora do ar.
+      </p>
+      <p style="color:#8b949e;font-size:14px;line-height:1.6;margin:0 0 8px;">
+        Se recebeu isto, o caminho do aviso funciona: no dia em que o blog parar de publicar a serio,
+        chega um e-mail igual a este, com o assunto <strong style="color:#f85149;">BLOG PAROU DE PUBLICAR</strong>
+        e a lista do que ficou por sair.
+      </p>${rodape}`,
+    };
+  }
+
   if (laudo.estado === 'sem-sitemap') {
     return {
       subject: '🚨 BLOG: o site nao respondeu ao vigia',

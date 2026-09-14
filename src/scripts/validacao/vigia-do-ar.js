@@ -48,6 +48,19 @@ const SITE = process.env.VIGIA_SITE || 'https://blog.finmoovi.com';
  * por e-mail quando falha. Ficheiro de corrida, nao entra no repo.
  */
 const RELATORIO = process.env.VIGIA_RELATORIO || join(process.cwd(), '.vigia-do-ar.json');
+/**
+ * ENSAIO — corrida de treino do alarme, pedida a mao.
+ *
+ * Um alarme que nunca foi tocado nao e um alarme: e uma suposicao. Este vigia
+ * so fica vermelho quando algo esta partido, o que e o comportamento certo mas
+ * significa que o caminho do aviso pode estar avariado durante meses sem se
+ * saber — que e, na pratica, a mesma cegueira de 09/09 noutro sitio.
+ *
+ * Com `VIGIA_ENSAIO=true` o vigia mede a serio, diz o que viu, e depois falha
+ * de proposito para o aviso sair. O e-mail vai marcado como ENSAIO, para nunca
+ * se confundir com avaria a serio.
+ */
+const ENSAIO = String(process.env.VIGIA_ENSAIO || '').toLowerCase() === 'true';
 
 /** Grava o laudo. Nunca lanca: falhar a escrever nao pode mascarar o veredito. */
 function gravarLaudo(laudo) {
@@ -215,6 +228,14 @@ async function main() {
   }
 
   console.log('\n✅ Tudo o que o repo tem esta no ar.');
+
+  if (ENSAIO) {
+    console.log('\n🧪 ENSAIO pedido a mao: o blog esta BEM, mas vou falhar de proposito');
+    console.log('   para provar que o aviso por e-mail chega. Nao ha nada partido.');
+    gravarLaudo({ estado: 'ok', ensaio: true, analisados, emFalta: [], aCaminho: aCaminho.map(a => a.rel) });
+    process.exit(1);
+  }
+
   gravarLaudo({ estado: 'ok', analisados, emFalta: [], aCaminho: aCaminho.map(a => a.rel) });
   process.exit(0);
 }

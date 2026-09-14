@@ -28,6 +28,11 @@ on:
         description: 'Horas de tolerancia antes de cobrar um post (padrao 6)'
         required: false
         default: '6'
+      ensaio:
+        description: 'ENSAIO: falhar de proposito para provar que o e-mail de aviso chega (nao indica avaria)'
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -66,6 +71,8 @@ jobs:
       - name: O site tem tudo o que o repo tem?
         env:
           VIGIA_GRACA_HORAS: ${{ github.event.inputs.graca_horas || '6' }}
+          # So tem efeito quando o workflow e lancado a mao com a caixa marcada.
+          VIGIA_ENSAIO: ${{ github.event.inputs.ensaio || 'false' }}
         run: npm run validate:no-ar
 
       # 14/09/2026: este vigia ficou vermelho CINCO NOITES SEGUIDAS (09 a 13/09),
