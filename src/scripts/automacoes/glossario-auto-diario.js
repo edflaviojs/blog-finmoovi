@@ -8,6 +8,7 @@ import { config } from '../../../site.config.ts';
 import { generateGlossaryTerm } from './glossario-com-imagens.js';
 import { takeKeyword, markUsed, markSkipped, QUEUE_FILE, motivoDeMarca } from '../lib/keyword-queue.js';
 import { glossaryTermFromKeyword, keywordLooksLikeConcept } from '../lib/termo-guard.js';
+import { motivoDeSlugAposentado } from '../lib/slug-aposentado.js';
 import { writeFileSync, readFileSync, mkdirSync, existsSync, unlinkSync } from 'fs';
 import { join, resolve } from 'path';
 import { fileURLToPath } from 'url';
@@ -212,6 +213,12 @@ function escolherTermo(recusados) {
       // Não chama markUsed: a keyword permanece 'pending' na fila para reavaliação futura.
       console.warn(`⚠️ Keyword da fila "${queueEntry.keyword}" (termo limpo: "${termFromQueue}") não parece um conceito de glossário — voltando à rotação A-Z. Keyword mantida como pending.`);
       queueEntry = null;
+    } else if (motivoDeSlugAposentado(slugify(termFromQueue))) {
+      // 14/09/2026: o ficheiro não existe, mas a URL tem dono (foi fundida noutro
+      // verbete e ficou a redirecionar). Escrever aqui parte o build e o blog
+      // deixa de publicar em silêncio.
+      console.warn(`⚠️ Termo da fila "${termFromQueue}" recusado — ${motivoDeSlugAposentado(slugify(termFromQueue))}. Voltando à rotação A-Z.`);
+      queueEntry = null;
     } else {
       selectedTerm = termFromQueue;
       console.log(`📥 Termo vindo da fila de keywords: "${queueEntry.keyword}" → termo "${selectedTerm}" (fonte: ${queueEntry.source})`);
@@ -233,8 +240,12 @@ function escolherTermo(recusados) {
   // termo barrado. Percorre no máximo o abecedário todo e, se nada servir,
   // NÃO publica nada (dia sem verbete é melhor que verbete mau: a URL é
   // dívida permanente).
+  // `existsSync` e `motivoDeSlugAposentado` respondem a perguntas DIFERENTES:
+  // o primeiro diz se há ficheiro, o segundo se a URL ainda tem dono. Foi essa
+  // distinção que faltou em 09/09/2026 — ver src/scripts/lib/slug-aposentado.js.
   const aceitavel = (t) => !recusados.has(t)
     && !existsSync(join(GLOSSARIO_DIR, `${slugify(t)}.md`))
+    && !motivoDeSlugAposentado(slugify(t))
     && !motivoDeMarca(t)
     && keywordLooksLikeConcept(t);
 
@@ -254,8 +265,10 @@ function escolherTermo(recusados) {
     // esgotada é indistinguível de lista com problema.
     for (const t of termos) {
       if (existsSync(join(GLOSSARIO_DIR, `${slugify(t)}.md`))) continue;
+      const aposentada = motivoDeSlugAposentado(slugify(t));
       const marca = motivoDeMarca(t);
-      if (marca) console.warn(`   ⚠️ ${letra}: "${t}" recusado (${marca}) — tirar da lista POPULAR_TERMS.`);
+      if (aposentada) console.warn(`   ⚠️ ${letra}: "${t}" recusado (${aposentada}) — tirar da lista POPULAR_TERMS.`);
+      else if (marca) console.warn(`   ⚠️ ${letra}: "${t}" recusado (${marca}) — tirar da lista POPULAR_TERMS.`);
       else if (!keywordLooksLikeConcept(t)) console.warn(`   ⚠️ ${letra}: "${t}" recusado (não parece conceito) — tirar da lista POPULAR_TERMS.`);
     }
   }
