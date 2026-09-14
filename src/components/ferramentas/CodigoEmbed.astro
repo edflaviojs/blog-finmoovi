@@ -1,0 +1,110 @@
+---
+/**
+ * CÓDIGO PARA EMBUTIR — a caixa que entrega o link.
+ *
+ * A PARTE QUE SE PERDE DE VISTA: um link DENTRO de um iframe não conta para o
+ * Google. O conteúdo do iframe pertence ao blog.finmoovi.com, não à página do
+ * portal. Um portal que cole só o iframe manda-nos visitantes e zero link.
+ *
+ * Por isso o trecho que se dá a copiar tem DUAS partes: o iframe (a ferramenta)
+ * e, FORA dele, uma linha de crédito com uma âncora normal. Essa âncora fica no
+ * HTML do portal — é ela, e só ela, que o Google conta.
+ *
+ * É a receita do Mobills, que tem 238 links de um único portal de finanças:
+ * o portal ganha a calculadora de graça, a calculadora vem com assinatura.
+ *
+ * Props:
+ *  - titulo: nome da ferramenta, usado no `title` do iframe e no crédito
+ *  - slug:   pasta em /ferramentas/
+ *  - altura: altura do iframe em px (cada calculadora tem a sua)
+ */
+import { config } from '../../../site.config';
+
+interface Props {
+  titulo: string;
+  slug: string;
+  altura?: number;
+}
+
+const { titulo, slug, altura = 720 } = Astro.props;
+
+const base = config.siteUrl.replace(/\/+$/, '');
+const urlEmbed = `${base}/ferramentas/${slug}/embed/`;
+const urlPagina = `${base}/ferramentas/${slug}/`;
+
+const codigo = `<iframe src="${urlEmbed}" width="100%" height="${altura}" style="border:1px solid #30363d;border-radius:12px;max-width:100%" loading="lazy" title="${titulo} — FinMoovi"></iframe>
+<p style="font-size:13px;color:#666;margin-top:8px">${titulo} por <a href="${urlPagina}" target="_blank" rel="noopener">FinMoovi</a></p>`;
+---
+
+<section class="embed-box">
+  <h2>Quer esta calculadora no seu site?</h2>
+  <p class="embed-intro">
+    Pode usar de graça, em qualquer site. Copie o trecho abaixo e cole onde quiser que ela apareça.
+    A única condição é <strong>manter a linha de crédito</strong> que vem junto.
+  </p>
+
+  <textarea class="embed-codigo" id={`embed-${slug}`} readonly rows="4" spellcheck="false" set:text={codigo} />
+
+  <div class="embed-acoes">
+    <button class="embed-copiar" data-alvo={`embed-${slug}`}>Copiar código</button>
+    <a class="embed-previa" href={urlEmbed} target="_blank" rel="noopener">Ver como fica ↗</a>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll('.embed-copiar').forEach((botao) => {
+    botao.addEventListener('click', async () => {
+      const campo = document.getElementById(botao.dataset.alvo);
+      if (!campo) return;
+      try {
+        await navigator.clipboard.writeText(campo.value);
+      } catch {
+        // Navegador sem permissão de área de transferência: selecionar é o
+        // plano B honesto — o utilizador copia com Ctrl+C e vê que resultou.
+        campo.focus();
+        campo.select();
+      }
+      const antes = botao.textContent;
+      botao.textContent = 'Copiado ✓';
+      setTimeout(() => { botao.textContent = antes; }, 2000);
+    });
+  });
+</script>
+
+<style>
+  .embed-box {
+    margin-top: 2.5rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    border-radius: 12px;
+    padding: 1.5rem;
+  }
+  .embed-box h2 { color: var(--text-primary); font-size: 1.2rem; margin: 0 0 0.5rem; }
+  .embed-intro { color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin: 0 0 1rem; }
+  .embed-codigo {
+    width: 100%;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-default);
+    border-radius: 8px;
+    padding: 0.8rem;
+    color: var(--text-secondary);
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    resize: vertical;
+  }
+  .embed-codigo:focus { outline: none; border-color: var(--accent-primary); }
+  .embed-acoes { display: flex; align-items: center; gap: 1rem; margin-top: 0.8rem; flex-wrap: wrap; }
+  .embed-copiar {
+    padding: 0.6rem 1.2rem;
+    background: linear-gradient(135deg, var(--brand-cyan), #A91079);
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .embed-previa { color: var(--text-link); font-size: 0.85rem; text-decoration: none; }
+  .embed-previa:hover { text-decoration: underline; }
+</style>

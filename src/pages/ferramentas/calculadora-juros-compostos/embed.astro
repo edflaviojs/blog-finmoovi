@@ -1,0 +1,49 @@
+---
+/**
+ * Versão embutível da Calculadora de Juros Compostos.
+ *
+ * Endereço PRÓPRIO (/ferramentas/calculadora-juros-compostos/embed/) em vez de
+ * `?embed=true`: o blog é estático, e um parâmetro de endereço não existe no
+ * momento em que as páginas são montadas. O modo antigo estava no código desde
+ * sempre e nunca funcionou — a página com `?embed=true` devolvia a página
+ * inteira, medida byte a byte em 14/09/2026.
+ *
+ * Sem cabeçalho, sem rodapé, sem FAQ: quem embute quer a ferramenta, não o
+ * site à volta. Fica `noindex` (no EmbedLayout) para não competir no Google com
+ * a página completa, que é a que deve ranquear.
+ */
+import EmbedLayout from '@layouts/EmbedLayout.astro';
+import JurosCompostos from '@components/ferramentas/JurosCompostos.astro';
+import { config } from '../../../../site.config';
+
+const base = config.siteUrl.replace(/\/+$/, '');
+const urlPagina = `${base}/ferramentas/calculadora-juros-compostos/`;
+---
+
+<EmbedLayout
+  title="Calculadora de Juros Compostos"
+  description="Simule quanto seu dinheiro rende com juros compostos e aportes mensais."
+>
+  <h1 class="embed-titulo">Calculadora de Juros Compostos</h1>
+
+  <JurosCompostos />
+
+  <p class="embed-credito">
+    <a href={urlPagina} target="_blank" rel="noopener">Calculadora de Juros Compostos por FinMoovi</a>
+  </p>
+</EmbedLayout>
+
+<style>
+  .embed-titulo {
+    color: var(--text-primary);
+    font-size: 1.3rem;
+    margin: 0 0 1.2rem;
+  }
+  .embed-credito {
+    margin: 0;
+    text-align: right;
+    font-size: 0.8rem;
+  }
+  .embed-credito a { color: var(--text-secondary); text-decoration: none; }
+  .embed-credito a:hover { color: var(--text-link); text-decoration: underline; }
+</style>

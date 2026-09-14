@@ -1,0 +1,242 @@
+---
+/**
+ * Calculadora de Juros Compostos — a peça, sem página à volta.
+ *
+ * PORQUE EXISTE (14/09/2026):
+ * As 7 calculadoras tinham dentro delas um modo embed ligado a `?embed=true`.
+ * Nunca funcionou: o blog é `output: 'static'`, logo essa pergunta é respondida
+ * no BUILD, quando ainda não há visitante nenhum — dá sempre "não". Medido no
+ * ar: a página com `?embed=true` devolvia exatamente os mesmos 81.472
+ * caracteres da normal.
+ *
+ * A cura não é consertar a pergunta, é dar ENDEREÇO PRÓPRIO ao embed. Para isso
+ * a calculadora tem de existir fora da página: é este ficheiro. A página
+ * normal e a página de embed montam a mesma peça.
+ *
+ * Mantém os ids originais (`initial`, `monthly`, `rate`, `period`, `chart`…):
+ * são a interface entre o HTML e o script, e trocá-los não traria nada.
+ */
+---
+
+<div class="calculator-layout">
+  <div class="calculator-form">
+    <div class="form-group">
+      <label for="initial">Capital inicial (R$)</label>
+      <input type="number" id="initial" value="1000" min="0" step="100" />
+    </div>
+    <div class="form-group">
+      <label for="monthly">Aporte mensal (R$)</label>
+      <input type="number" id="monthly" value="500" min="0" step="50" />
+    </div>
+    <div class="form-group">
+      <label for="rate">Taxa de juros (% ao mês)</label>
+      <input type="number" id="rate" value="1" min="0" max="100" step="0.01" />
+    </div>
+    <div class="form-group">
+      <label for="period">Período (meses)</label>
+      <input type="number" id="period" value="60" min="1" max="600" step="1" />
+    </div>
+    <button class="calc-btn" id="calc-btn">Calcular</button>
+  </div>
+
+  <div class="calculator-results" id="results">
+    <div class="result-cards">
+      <div class="result-card">
+        <span class="result-label">Montante Final</span>
+        <span class="result-value" id="r-total">R$ 0</span>
+      </div>
+      <div class="result-card">
+        <span class="result-label">Total Investido</span>
+        <span class="result-value" id="r-invested">R$ 0</span>
+      </div>
+      <div class="result-card highlight">
+        <span class="result-label">Juros Ganhos</span>
+        <span class="result-value" id="r-interest">R$ 0</span>
+      </div>
+    </div>
+    <div class="chart-container">
+      <canvas id="chart" width="600" height="300"></canvas>
+    </div>
+  </div>
+</div>
+
+<script>
+  function formatCurrency(value) {
+    return 'R$ ' + value.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+  }
+
+  function calculate() {
+    const initial = parseFloat(document.getElementById('initial').value) || 0;
+    const monthly = parseFloat(document.getElementById('monthly').value) || 0;
+    const rate = (parseFloat(document.getElementById('rate').value) || 0) / 100;
+    const period = parseInt(document.getElementById('period').value) || 1;
+
+    let balance = initial;
+    const dataInvested = [initial];
+    const dataTotal = [initial];
+
+    for (let i = 1; i <= period; i++) {
+      balance = balance * (1 + rate) + monthly;
+      dataInvested.push(initial + monthly * i);
+      dataTotal.push(balance);
+    }
+
+    const totalInvested = initial + monthly * period;
+    const interest = balance - totalInvested;
+
+    document.getElementById('r-total').textContent = formatCurrency(balance);
+    document.getElementById('r-invested').textContent = formatCurrency(totalInvested);
+    document.getElementById('r-interest').textContent = formatCurrency(interest);
+    document.getElementById('results').style.display = 'block';
+
+    drawChart(dataInvested, dataTotal, period);
+  }
+
+  function drawChart(dataInvested, dataTotal, period) {
+    const canvas = document.getElementById('chart');
+    const ctx = canvas.getContext('2d');
+    const W = canvas.width;
+    const H = canvas.height;
+    const padding = 40;
+
+    ctx.clearRect(0, 0, W, H);
+
+    const maxVal = Math.max(...dataTotal);
+    const xStep = (W - padding * 2) / period;
+    const yScale = (H - padding * 2) / maxVal;
+
+    // Grid
+    ctx.strokeStyle = '#30363d';
+    ctx.lineWidth = 0.5;
+    for (let i = 0; i <= 4; i++) {
+      const y = padding + (H - padding * 2) * (i / 4);
+      ctx.beginPath();
+      ctx.moveTo(padding, y);
+      ctx.lineTo(W - padding, y);
+      ctx.stroke();
+      ctx.fillStyle = '#6e7681';
+      ctx.font = '10px Inter, sans-serif';
+      ctx.fillText(formatCurrency(maxVal * (1 - i / 4)), 0, y + 4);
+    }
+
+    // Invested line
+    ctx.strokeStyle = '#8b949e';
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    for (let i = 0; i <= period; i++) {
+      const x = padding + i * xStep;
+      const y = H - padding - dataInvested[i] * yScale;
+      i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+    }
+    ctx.stroke();
+
+    // Total line
+    ctx.strokeStyle = '#3fb950';
+    ctx.lineWidth = 2.5;
+    ctx.beginPath();
+    for (let i = 0; i <= period; i++) {
+      const x = padding + i * xStep;
+      const y = H - padding - dataTotal[i] * yScale;
+      i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+    }
+    ctx.stroke();
+
+    // Fill area between
+    ctx.fillStyle = 'rgba(63, 185, 80, 0.1)';
+    ctx.beginPath();
+    for (let i = 0; i <= period; i++) {
+      const x = padding + i * xStep;
+      const y = H - padding - dataTotal[i] * yScale;
+      i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+    }
+    for (let i = period; i >= 0; i--) {
+      const x = padding + i * xStep;
+      const y = H - padding - dataInvested[i] * yScale;
+      ctx.lineTo(x, y);
+    }
+    ctx.closePath();
+    ctx.fill();
+
+    // Legend
+    ctx.fillStyle = '#3fb950';
+    ctx.fillRect(W - 160, 10, 12, 12);
+    ctx.fillStyle = '#f0f6fc';
+    ctx.font = '11px Inter, sans-serif';
+    ctx.fillText('Montante', W - 144, 20);
+    ctx.fillStyle = '#8b949e';
+    ctx.fillRect(W - 160, 28, 12, 12);
+    ctx.fillStyle = '#f0f6fc';
+    ctx.fillText('Investido', W - 144, 38);
+  }
+
+  document.getElementById('calc-btn').addEventListener('click', calculate);
+  document.querySelectorAll('.calculator-form input').forEach(input => {
+    input.addEventListener('keyup', function(e) { if (e.key === 'Enter') calculate(); });
+  });
+  calculate();
+</script>
+
+<style>
+  .calculator-layout { display: grid; gap: 2rem; margin-bottom: 2rem; }
+  .calculator-form {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .form-group { display: flex; flex-direction: column; gap: 0.3rem; }
+  .form-group label { color: var(--text-secondary); font-size: 0.8rem; font-weight: 500; }
+  .form-group input {
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-default);
+    border-radius: 8px;
+    padding: 0.7rem;
+    color: var(--text-primary);
+    font-size: 1rem;
+  }
+  .form-group input:focus { outline: none; border-color: var(--accent-primary); }
+  .calc-btn {
+    grid-column: 1 / -1;
+    padding: 0.8rem;
+    background: linear-gradient(135deg, var(--brand-cyan), #A91079);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  .calc-btn:hover { transform: translateY(-1px); }
+
+  .calculator-results {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    border-radius: 12px;
+    padding: 1.5rem;
+  }
+  .result-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1.5rem; }
+  .result-card {
+    background: var(--bg-tertiary);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  .result-card.highlight { border: 1px solid #3fb950; }
+  .result-label { font-size: 0.75rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.05em; }
+  .result-value { font-size: 1.2rem; font-weight: 700; color: var(--text-primary); }
+  .result-card.highlight .result-value { color: #3fb950; }
+  .chart-container { width: 100%; overflow-x: auto; }
+  canvas { width: 100%; height: auto; }
+
+  @media (max-width: 640px) {
+    .calculator-form { grid-template-columns: 1fr; }
+    .result-cards { grid-template-columns: 1fr; }
+  }
+</style>
