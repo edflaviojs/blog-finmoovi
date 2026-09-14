@@ -94,7 +94,7 @@ Just open FinMoovi, choose [smart capture](/en/posts/en-how-to-never-miss-a-bill
 Start with the main areas of your life (housing, food, transport) and then refine by splitting the ones that eat up most of your budget. Adjust as you notice a category becoming too crowded or too empty.
 
 ### Does the app work offline?  
-Yes. Smart capture can be used without an internet connection, and the data syncs automatically once your phone is back online.
+Yes. [Smart capture](/en/posts/en-how-freelancers-can-organize-their-finances-in-2026) can be used without an internet connection, and the data syncs automatically once your phone is back online.
 
 ### Do I have to enter recurring expenses manually?  
 No. After you log the first occurrence, FinMoovi learns the pattern and suggests automatic repeats for fixed [costs](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide) like rent or utilities.

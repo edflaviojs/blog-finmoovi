@@ -71,7 +71,7 @@ Seeing your monthly spend in pie or bar charts (FinMoovi’s **Reports** feature
 
 ## Get Started Today  
 
-Open FinMoovi, use the smart capture on your next receipt, and set a monthly limit for pharmacy categories. In under five minutes you’ll have a dashboard that shows exactly how much you’re spending and where you can cut without harming your health. This tiny action turns the anxiety of standing at the checkout into confidence that you’re in control.
+Open FinMoovi, use the [smart capture](/en/posts/en-how-freelancers-can-organize-their-finances-in-2026) on your next receipt, and set a monthly limit for pharmacy categories. In under five minutes you’ll have a dashboard that shows exactly how much you’re spending and where you can cut without harming your health. This tiny action turns the anxiety of standing at the checkout into confidence that you’re in control.
 
 ## Frequently Asked Questions  
 
