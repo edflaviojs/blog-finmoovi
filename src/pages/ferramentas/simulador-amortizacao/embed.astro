@@ -1,0 +1,20 @@
+---
+/** Versão embutível do Simulador de Amortização. */
+import EmbedLayout from '@layouts/EmbedLayout.astro';
+import Amortizacao from '@components/ferramentas/Amortizacao.astro';
+import { config } from '../../../../site.config';
+
+const base = config.siteUrl.replace(/\/+$/, '');
+const urlPagina = `${base}/ferramentas/simulador-amortizacao/`;
+---
+
+<EmbedLayout
+  title="Simulador de Amortização"
+  description="Reduzir o prazo ou a parcela? Veja a diferença em reais."
+>
+  <h1 class="fm-embed-titulo">Simulador de Amortização</h1>
+  <Amortizacao />
+  <p class="fm-credito">
+    <a href={urlPagina} target="_blank" rel="noopener">Simulador de Amortização por FinMoovi</a>
+  </p>
+</EmbedLayout>

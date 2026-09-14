@@ -1,0 +1,185 @@
+---
+/**
+ * Calculadora de Desconto.
+ *
+ * O ACHADO: desconto sobre desconto NÃO SOMA. "30% + 20%" parece 50% e é 44%.
+ * A loja escreve os dois números lado a lado de propósito, e quase toda a gente
+ * soma de cabeça. Esta calculadora mostra o número real e diz quanto falta para
+ * ser o que parecia.
+ *
+ * Tem também o caminho inverso — "de R$ 200 por R$ 149, que desconto é este?" —
+ * que é como o preço aparece na vitrine.
+ */
+import '@/styles/ferramentas.css';
+---
+
+<div class="fm-grid">
+  <div class="fm-rail">
+    <div class="fm-ctrl">
+      <div class="fm-ctrl-top">
+        <label for="de-preco">Preço original</label>
+        <div class="fm-campo"><span class="fm-fixo">R$</span><input id="de-preco" type="text" inputmode="numeric" autocomplete="off" /></div>
+      </div>
+      <input class="fm-range" id="de-s-preco" type="range" min="1" max="10000" step="1" aria-label="Preço original" />
+    </div>
+
+    <div class="fm-ctrl">
+      <div class="fm-ctrl-top">
+        <label for="de-d1">Desconto</label>
+        <div class="fm-campo"><input id="de-d1" type="text" inputmode="decimal" autocomplete="off" /><span class="fm-fixo">%</span></div>
+      </div>
+      <input class="fm-range" id="de-s-d1" type="range" min="0" max="90" step="1" aria-label="Primeiro desconto" />
+    </div>
+
+    <div class="fm-ctrl">
+      <div class="fm-ctrl-top">
+        <label for="de-d2">Mais um desconto</label>
+        <div class="fm-campo"><input id="de-d2" type="text" inputmode="decimal" autocomplete="off" /><span class="fm-fixo">%</span></div>
+      </div>
+      <input class="fm-range" id="de-s-d2" type="range" min="0" max="90" step="1" aria-label="Segundo desconto" />
+      <span class="fm-eco">cupom, pagamento à vista…</span>
+    </div>
+
+    <div class="fm-ctrl">
+      <div class="fm-ctrl-top">
+        <label for="de-por">Ou: já sei o preço final</label>
+        <div class="fm-campo"><span class="fm-fixo">R$</span><input id="de-por" type="text" inputmode="numeric" autocomplete="off" /></div>
+      </div>
+      <button class="fm-inverso" id="de-descobrir" type="button">Descobrir o desconto ↑</button>
+    </div>
+  </div>
+
+  <div class="fm-saida">
+    <div class="fm-heroi">
+      <span class="fm-rotulo">Você paga</span>
+      <strong class="fm-heroi-valor" id="de-final">R$ 0</strong>
+      <p class="fm-heroi-nota" id="de-nota"></p>
+    </div>
+
+    <div class="fm-achado" id="de-achado" hidden>
+      <span class="fm-achado-marca" aria-hidden="true"></span>
+      <div class="fm-achado-txt">
+        <span class="fm-rotulo">Desconto sobre desconto não soma</span>
+        <p id="de-achado-frase"></p>
+      </div>
+    </div>
+
+    <div class="fm-reparticao tres">
+      <div class="fm-rep">
+        <span class="fm-rotulo">Preço original</span>
+        <strong class="fm-rep-valor" id="de-original">R$ 0</strong>
+      </div>
+      <div class="fm-rep bom">
+        <span class="fm-rotulo">Você economiza</span>
+        <strong class="fm-rep-valor" id="de-economia">R$ 0</strong>
+      </div>
+      <div class="fm-rep">
+        <span class="fm-rotulo">Desconto real</span>
+        <strong class="fm-rep-valor" id="de-real">0%</strong>
+      </div>
+    </div>
+
+    <div class="fm-barra" aria-hidden="true">
+      <span class="parte-a" id="de-barra-paga"></span>
+      <span class="parte-b" id="de-barra-desc"></span>
+    </div>
+
+    <details class="fm-tabela-wrap" open>
+      <summary>Descontos parecidos, preços diferentes</summary>
+      <div class="fm-tabela-scroll">
+        <table class="fm-tabela">
+          <thead><tr><th>Desconto</th><th>Você paga</th><th>Economiza</th></tr></thead>
+          <tbody id="de-tbody"></tbody>
+        </table>
+      </div>
+    </details>
+  </div>
+</div>
+
+<style>
+  .fm-inverso {
+    align-self: flex-start;
+    background: transparent;
+    border: 1px solid var(--border-default);
+    border-radius: 999px;
+    color: var(--text-secondary);
+    font: inherit;
+    font-size: 12px;
+    padding: 5px 12px;
+    cursor: pointer;
+    transition: border-color .15s, color .15s;
+  }
+  .fm-inverso:hover { border-color: var(--brand-cyan); color: var(--text-primary); }
+  .fm-inverso:focus-visible { outline: 2px solid var(--brand-cyan); outline-offset: 2px; }
+</style>
+
+<script>
+  import { brl, $, inteiro, campoDinheiro, campoDecimal, contador } from './ui.js';
+
+  const mostraFinal = contador($('de-final'), (v) => brl.format(v));
+
+  const lerPreco = campoDinheiro('de-preco', 'de-s-preco', 200, recalcular);
+  const lerD1 = campoDecimal('de-d1', 'de-s-d1', 30, recalcular, 99);
+  const lerD2 = campoDecimal('de-d2', 'de-s-d2', 0, recalcular, 99);
+
+  // Caminho inverso: "de 200 por 149, quanto é de desconto?"
+  const campoPor = $('de-por');
+  campoPor.value = '';
+  campoPor.addEventListener('input', () => {
+    const d = campoPor.value.replace(/\D/g, '');
+    campoPor.value = d ? inteiro.format(parseInt(d, 10)) : '';
+  });
+  $('de-descobrir').addEventListener('click', () => {
+    const preco = lerPreco();
+    const d = campoPor.value.replace(/\D/g, '');
+    const por = d ? parseInt(d, 10) : 0;
+    if (preco <= 0 || por <= 0 || por > preco) return;
+    const pct = (1 - por / preco) * 100;
+    // Escreve o resultado no primeiro desconto e zera o segundo.
+    $('de-d1').value = pct.toFixed(2).replace('.', ',');
+    $('de-d1').dispatchEvent(new Event('input', { bubbles: true }));
+    $('de-d2').value = '0,00';
+    $('de-d2').dispatchEvent(new Event('input', { bubbles: true }));
+  });
+
+  function recalcular() {
+    const preco = lerPreco(), d1 = lerD1(), d2 = lerD2();
+
+    const depois1 = preco * (1 - d1 / 100);
+    const final = depois1 * (1 - d2 / 100);
+    const economia = preco - final;
+    const real = preco > 0 ? (economia / preco) * 100 : 0;
+
+    mostraFinal(final);
+    $('de-original').textContent = brl.format(preco);
+    $('de-economia').textContent = brl.format(economia);
+    $('de-real').textContent = real.toFixed(real < 10 ? 1 : 0).replace('.', ',') + '%';
+
+    const pctPaga = preco > 0 ? (final / preco) * 100 : 100;
+    $('de-barra-paga').style.width = pctPaga + '%';
+    $('de-barra-desc').style.width = (100 - pctPaga) + '%';
+
+    if (d2 > 0) {
+      $('de-nota').innerHTML = 'depois de <b>' + d1.toFixed(0) + '%</b> e mais <b>' + d2.toFixed(0) + '%</b> sobre o valor já descontado.';
+      const soma = d1 + d2;
+      const falta = preco * (soma / 100) - economia;
+      $('de-achado').hidden = false;
+      $('de-achado-frase').innerHTML =
+        '<b>' + d1.toFixed(0) + '% + ' + d2.toFixed(0) + '%</b> parece ' + soma.toFixed(0) + '%, mas é <b>' +
+        real.toFixed(1).replace('.', ',') + '%</b>. O segundo desconto incide sobre o preço já baixado, não sobre o original — ' +
+        'na prática você deixa de economizar ' + brl.format(Math.max(0, falta)) + '.';
+    } else {
+      $('de-nota').innerHTML = 'com <b>' + d1.toFixed(d1 % 1 === 0 ? 0 : 1).replace('.', ',') + '%</b> de desconto sobre ' + brl.format(preco) + '.';
+      $('de-achado').hidden = true;
+    }
+
+    const faixas = [5, 10, 15, 20, 25, 30, 40, 50, 60, 70];
+    $('de-tbody').innerHTML = faixas.map((f) => {
+      const p = preco * (1 - f / 100);
+      const marca = (d2 === 0 && Math.round(d1) === f) ? ' class="marcada"' : '';
+      return '<tr' + marca + '><td>' + f + '%</td><td>' + brl.format(p) + '</td><td>' + brl.format(preco - p) + '</td></tr>';
+    }).join('');
+  }
+
+  recalcular();
+</script>

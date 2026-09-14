@@ -1,0 +1,108 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Header from '@components/header/Header.astro';
+import Footer from '@components/footer/Footer.astro';
+import InlineAppCTA from '@components/banners/InlineAppCTA.astro';
+import SchemaBreadcrumb from '@components/seo/SchemaBreadcrumb.astro';
+import Desconto from '@components/ferramentas/Desconto.astro';
+import CodigoEmbed from '@components/ferramentas/CodigoEmbed.astro';
+import { canonicalPath } from '@/utils/url';
+
+const breadcrumbItems = [
+  { name: 'Início', url: '/' },
+  { name: 'Ferramentas', url: '/ferramentas' },
+  { name: 'Calculadora de Desconto', url: '/ferramentas/calculadora-desconto' }
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Como calcular desconto em porcentagem?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Multiplique o preço pelo percentual dividido por 100 para achar o valor do desconto, e subtraia do preço. Exemplo: 30% de R$ 200 é R$ 60, então o preço final é R$ 140. O atalho é multiplicar direto: 200 × 0,70 = 140." }
+    },
+    {
+      "@type": "Question",
+      "name": "30% mais 20% de desconto dá 50%?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Não. O segundo desconto incide sobre o preço já reduzido, não sobre o original. 30% e depois 20% resultam em 44% de desconto real, não 50%. Por isso as lojas anunciam os dois números separados." }
+    },
+    {
+      "@type": "Question",
+      "name": "Como descobrir o percentual de desconto entre dois preços?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Divida o preço final pelo preço original, subtraia de 1 e multiplique por 100. De R$ 200 por R$ 149: 1 − (149 ÷ 200) = 0,255, ou seja, 25,5% de desconto." }
+    },
+    {
+      "@type": "Question",
+      "name": "Desconto à vista compensa em relação ao parcelado?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Depende do que o dinheiro renderia no período do parcelamento. Se o desconto à vista for maior do que o rendimento líquido que você teria guardando o valor durante as parcelas, pagar à vista compensa." }
+    }
+  ]
+};
+---
+
+<BaseLayout
+  title="Calculadora de Desconto e Porcentagem Grátis"
+  description="Calcule o preço com desconto, descubra o percentual entre dois preços e veja por que desconto sobre desconto não soma."
+  keywords={['calculadora de desconto', 'calcular porcentagem', 'quanto é de desconto', 'preço com desconto', 'desconto sobre desconto']}
+>
+  <SchemaBreadcrumb items={breadcrumbItems} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <Header />
+
+  <main class="tool-page" data-pagefind-body>
+    <div class="container">
+      <header class="tool-header">
+        <nav class="tool-breadcrumb">
+          <a href="/">Início</a> → <a href={canonicalPath('/ferramentas')}>Ferramentas</a> → <span>Desconto</span>
+        </nav>
+        <span class="fm-formula">final = preço × (1 − d₁) × (1 − d₂)</span>
+        <h1>Calculadora de Desconto</h1>
+        <p class="tool-subtitle">Quanto você paga, quanto economiza — e por que dois descontos seguidos nunca somam.</p>
+      </header>
+
+      <Desconto />
+
+      <InlineAppCTA variant="full" locale="pt" />
+
+      <section class="tool-faq">
+        <h2>Perguntas Frequentes</h2>
+        <details>
+          <summary>Como calcular desconto em porcentagem?</summary>
+          <p>Multiplique o preço pelo percentual e subtraia. 30% de R$ 200 são R$ 60, logo o final é R$ 140. O atalho é direto: <strong>200 × 0,70 = 140</strong>.</p>
+        </details>
+        <details>
+          <summary>30% mais 20% dá 50%?</summary>
+          <p><strong>Não.</strong> O segundo desconto incide sobre o preço já reduzido. 30% e depois 20% dão <strong>44%</strong>, não 50%. É por isso que as lojas anunciam os dois números separados em vez de somar.</p>
+        </details>
+        <details>
+          <summary>Como descobrir o desconto entre dois preços?</summary>
+          <p>Divida o final pelo original, subtraia de 1 e multiplique por 100. De R$ 200 por R$ 149: <strong>25,5%</strong>. A calculadora faz isso no campo "já sei o preço final".</p>
+        </details>
+        <details>
+          <summary>Desconto à vista compensa?</summary>
+          <p>Depende do que o dinheiro renderia durante o parcelamento. Se o desconto for maior que o rendimento líquido no período, pagar à vista compensa.</p>
+        </details>
+      </section>
+
+      <CodigoEmbed titulo="Calculadora de Desconto" slug="calculadora-desconto" altura={760} />
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .tool-page { padding: 2rem 0 4rem; }
+  .tool-header { margin-bottom: 2rem; }
+  .tool-breadcrumb { font-size: 0.8rem; color: var(--text-tertiary); margin-bottom: 1rem; }
+  .tool-breadcrumb a { color: var(--text-link); text-decoration: none; }
+  .tool-header h1 { color: var(--text-primary); font-size: 2rem; margin-bottom: 0.5rem; letter-spacing: -0.025em; }
+  .tool-subtitle { color: var(--text-secondary); font-size: 1rem; }
+  .tool-faq { margin-top: 2rem; }
+  .tool-faq h2 { color: var(--text-primary); font-size: 1.4rem; margin-bottom: 1rem; }
+  .tool-faq details { background: var(--bg-secondary); border: 1px solid var(--border-default); border-radius: 8px; margin-bottom: 0.5rem; padding: 1rem; }
+  .tool-faq summary { color: var(--text-primary); font-weight: 600; cursor: pointer; font-size: 0.95rem; }
+  .tool-faq details p { color: var(--text-secondary); margin-top: 0.75rem; line-height: 1.6; font-size: 0.9rem; }
+</style>

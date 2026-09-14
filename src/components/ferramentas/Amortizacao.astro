@@ -1,0 +1,252 @@
+---
+/**
+ * Simulador de Amortização — reduzir PRAZO ou reduzir PARCELA?
+ *
+ * O ACHADO desta é o erro mais caro do financiamento brasileiro: o banco
+ * oferece por omissão a redução da PARCELA, porque é o que alivia hoje. Mas
+ * reduzir o PRAZO costuma economizar várias vezes mais, porque corta os meses
+ * finais — que são precisamente os que ainda pagariam juros.
+ *
+ * A calculadora põe as duas ao lado uma da outra e diz a diferença em reais.
+ * Ninguém decide isto olhando para um contrato.
+ */
+import '@/styles/ferramentas.css';
+---
+
+<div class="fm-grid">
+  <div class="fm-rail">
+    <div class="fm-ctrl">
+      <div class="fm-ctrl-top">
+        <label for="am-saldo">Saldo devedor hoje</label>
+        <div class="fm-campo"><span class="fm-fixo">R$</span><input id="am-saldo" type="text" inputmode="numeric" autocomplete="off" /></div>
+      </div>
+      <input class="fm-range" id="am-s-saldo" type="range" min="5000" max="1500000" step="5000" aria-label="Saldo devedor" />
+      <span class="fm-eco">o que ainda falta pagar</span>
+    </div>
+
+    <div class="fm-ctrl">
+      <div class="fm-ctrl-top">
+        <label for="am-parcelas">Parcelas que faltam</label>
+        <div class="fm-campo"><input id="am-parcelas" type="text" inputmode="numeric" autocomplete="off" /><span class="fm-fixo">meses</span></div>
+      </div>
+      <input class="fm-range" id="am-s-parcelas" type="range" min="6" max="420" step="6" aria-label="Parcelas que faltam" />
+      <span class="fm-eco" id="am-eco-prazo"></span>
+    </div>
+
+    <div class="fm-ctrl">
+      <div class="fm-ctrl-top">
+        <label for="am-taxa">Taxa do contrato</label>
+        <div class="fm-campo"><input id="am-taxa" type="text" inputmode="decimal" autocomplete="off" /><span class="fm-fixo">% a.a.</span></div>
+      </div>
+      <input class="fm-range" id="am-s-taxa" type="range" min="1" max="30" step="0.1" aria-label="Taxa do contrato ao ano" />
+    </div>
+
+    <div class="fm-ctrl">
+      <div class="fm-ctrl-top">
+        <label for="am-valor">Quanto vai amortizar</label>
+        <div class="fm-campo"><span class="fm-fixo">R$</span><input id="am-valor" type="text" inputmode="numeric" autocomplete="off" /></div>
+      </div>
+      <input class="fm-range" id="am-s-valor" type="range" min="0" max="300000" step="1000" aria-label="Valor a amortizar" />
+      <span class="fm-eco" id="am-eco-valor"></span>
+    </div>
+  </div>
+
+  <div class="fm-saida">
+    <div class="fm-heroi">
+      <span class="fm-rotulo">Reduzindo o prazo, você economiza</span>
+      <strong class="fm-heroi-valor" id="am-economia">R$ 0</strong>
+      <p class="fm-heroi-nota" id="am-nota"></p>
+    </div>
+
+    <div class="fm-achado" id="am-achado" hidden>
+      <span class="fm-achado-marca" aria-hidden="true"></span>
+      <div class="fm-achado-txt">
+        <span class="fm-rotulo">O que o banco não oferece primeiro</span>
+        <p id="am-achado-frase"></p>
+      </div>
+    </div>
+
+    <figure class="fm-grafico">
+      <canvas id="am-chart" role="img" aria-label="Saldo devedor com e sem amortização"></canvas>
+      <figcaption class="fm-legenda">
+        <span class="fm-chave" data-cor="verde">Amortizando (reduz prazo)</span>
+        <span class="fm-chave" data-cor="cinza">Sem amortizar</span>
+        <span class="fm-chave" data-cor="marca">Quando a dívida acaba</span>
+      </figcaption>
+    </figure>
+
+    <div class="fm-versus">
+      <div class="fm-coluna" id="am-col-prazo">
+        <h3>Reduzir o prazo <small>parcela continua igual</small></h3>
+        <span class="fm-selo" id="am-selo-prazo" hidden>economiza mais</span>
+        <div class="fm-linha"><span>Parcela</span><strong id="am-prazo-parcela">R$ 0</strong></div>
+        <div class="fm-linha"><span>Parcelas que faltam</span><strong id="am-prazo-n">0</strong></div>
+        <div class="fm-linha"><span>Some da sua vida</span><strong id="am-prazo-corte">0</strong></div>
+        <div class="fm-linha forte"><span>Juros que você evita</span><strong id="am-prazo-eco">R$ 0</strong></div>
+      </div>
+      <div class="fm-coluna" id="am-col-parcela">
+        <h3>Reduzir a parcela <small>prazo continua igual</small></h3>
+        <span class="fm-selo" id="am-selo-parcela" hidden>economiza mais</span>
+        <div class="fm-linha"><span>Nova parcela</span><strong id="am-parcela-nova">R$ 0</strong></div>
+        <div class="fm-linha"><span>Alívio por mês</span><strong id="am-parcela-alivio">R$ 0</strong></div>
+        <div class="fm-linha"><span>Parcelas que faltam</span><strong id="am-parcela-n">0</strong></div>
+        <div class="fm-linha forte"><span>Juros que você evita</span><strong id="am-parcela-eco">R$ 0</strong></div>
+      </div>
+    </div>
+
+    <div class="fm-reparticao">
+      <div class="fm-rep">
+        <span class="fm-rotulo">Parcela de hoje</span>
+        <strong class="fm-rep-valor" id="am-parcela-atual">R$ 0</strong>
+      </div>
+      <div class="fm-rep aviso">
+        <span class="fm-rotulo">Juros se não amortizar</span>
+        <strong class="fm-rep-valor" id="am-juros-sem">R$ 0</strong>
+      </div>
+    </div>
+
+    <details class="fm-tabela-wrap">
+      <summary>Ver o que cada real amortizado devolve</summary>
+      <div class="fm-tabela-scroll">
+        <table class="fm-tabela">
+          <thead><tr><th>Se amortizar</th><th>Reduzindo prazo</th><th>Reduzindo parcela</th><th>Diferença</th></tr></thead>
+          <tbody id="am-tbody"></tbody>
+        </table>
+      </div>
+    </details>
+  </div>
+</div>
+
+<script>
+  import { brl, $, tempoEmPalavras, campoDinheiro, campoDecimal, campoInteiro, contador, criarGrafico, token } from './ui.js';
+
+  const grafico = criarGrafico($('am-chart'));
+  const mostraEconomia = contador($('am-economia'), (v) => brl.format(v));
+
+  const lerSaldo = campoDinheiro('am-saldo', 'am-s-saldo', 200000, recalcular);
+  const lerParcelas = campoInteiro('am-parcelas', 'am-s-parcelas', 240, recalcular, 600);
+  const lerTaxa = campoDecimal('am-taxa', 'am-s-taxa', 10, recalcular, 60);
+  const lerValor = campoDinheiro('am-valor', 'am-s-valor', 20000, recalcular);
+
+  /** Parcela do sistema Price. */
+  function parcelaPrice(pv, i, n) {
+    if (n <= 0) return 0;
+    if (i <= 0) return pv / n;
+    return (pv * i) / (1 - Math.pow(1 + i, -n));
+  }
+
+  /** Quantas parcelas faltam se o saldo cair e a parcela ficar igual. */
+  function prazoRestante(pv, i, parcela) {
+    if (pv <= 0) return 0;
+    if (i <= 0) return Math.ceil(pv / parcela);
+    // Se a parcela não cobre nem os juros do mês, a dívida nunca acaba.
+    if (parcela <= pv * i) return Infinity;
+    return Math.ceil(-Math.log(1 - (pv * i) / parcela) / Math.log(1 + i));
+  }
+
+  /** Saldo devedor mês a mês, para o gráfico. */
+  function curvaSaldo(pv, i, parcela, limite) {
+    const pontos = [pv];
+    let s = pv;
+    for (let m = 1; m <= limite; m++) {
+      s = s * (1 + i) - parcela;
+      pontos.push(Math.max(0, s));
+      if (s <= 0) break;
+    }
+    while (pontos.length <= limite) pontos.push(0);
+    return pontos;
+  }
+
+  function recalcular() {
+    const saldo = lerSaldo();
+    const n = Math.max(1, lerParcelas());
+    const i = Math.pow(1 + lerTaxa() / 100, 1 / 12) - 1;
+    const amortizado = Math.min(lerValor(), saldo);
+
+    const parcela = parcelaPrice(saldo, i, n);
+    const jurosSem = parcela * n - saldo;
+
+    const novoSaldo = Math.max(0, saldo - amortizado);
+
+    // A: reduzir prazo (parcela igual)
+    const nPrazo = prazoRestante(novoSaldo, i, parcela);
+    const jurosPrazo = isFinite(nPrazo) ? (amortizado + parcela * nPrazo) - saldo : Infinity;
+    const ecoPrazo = isFinite(jurosPrazo) ? Math.max(0, jurosSem - jurosPrazo) : 0;
+
+    // B: reduzir parcela (prazo igual)
+    const novaParcela = parcelaPrice(novoSaldo, i, n);
+    const jurosParcela = (amortizado + novaParcela * n) - saldo;
+    const ecoParcela = Math.max(0, jurosSem - jurosParcela);
+
+    mostraEconomia(ecoPrazo);
+    $('am-parcela-atual').textContent = brl.format(parcela);
+    $('am-juros-sem').textContent = brl.format(Math.max(0, jurosSem));
+    $('am-eco-prazo').textContent = tempoEmPalavras(n);
+    $('am-eco-valor').textContent = saldo > 0 ? Math.round((amortizado / saldo) * 100) + '% do saldo' : '';
+
+    $('am-prazo-parcela').textContent = brl.format(parcela);
+    $('am-prazo-n').textContent = isFinite(nPrazo) ? nPrazo + ' meses' : '—';
+    $('am-prazo-corte').textContent = isFinite(nPrazo) ? tempoEmPalavras(n - nPrazo) : '—';
+    $('am-prazo-eco').textContent = brl.format(ecoPrazo);
+
+    $('am-parcela-nova').textContent = brl.format(novaParcela);
+    $('am-parcela-alivio').textContent = brl.format(Math.max(0, parcela - novaParcela));
+    $('am-parcela-n').textContent = n + ' meses';
+    $('am-parcela-eco').textContent = brl.format(ecoParcela);
+
+    const prazoGanha = ecoPrazo >= ecoParcela;
+    $('am-selo-prazo').hidden = !prazoGanha;
+    $('am-selo-parcela').hidden = prazoGanha;
+    $('am-col-prazo').classList.toggle('vence', prazoGanha);
+    $('am-col-parcela').classList.toggle('vence', !prazoGanha);
+
+    if (amortizado <= 0) {
+      $('am-nota').innerHTML = 'informe quanto pretende amortizar para ver a diferença.';
+      $('am-achado').hidden = true;
+    } else {
+      const devolve = amortizado > 0 ? (ecoPrazo / amortizado) : 0;
+      $('am-nota').innerHTML = 'amortizando <b>' + brl.format(amortizado) + '</b>. Cada real que você põe hoje evita <b>' +
+        devolve.toFixed(2).replace('.', ',') + '</b> de juros lá na frente.';
+
+      const diferenca = ecoPrazo - ecoParcela;
+      $('am-achado').hidden = diferenca <= 0;
+      if (diferenca > 0) {
+        const vezes = ecoParcela > 0 ? (ecoPrazo / ecoParcela) : 0;
+        $('am-achado-frase').innerHTML =
+          'O banco costuma oferecer primeiro a redução da <b>parcela</b>, porque alivia já. Mas reduzir o <b>prazo</b> economiza ' +
+          brl.format(diferenca) + ' a mais' + (vezes >= 1.5 ? ' — ' + vezes.toFixed(1).replace('.', ',') + '× mais juros evitados' : '') +
+          '. Você paga a mesma parcela e corta ' + (isFinite(nPrazo) ? tempoEmPalavras(n - nPrazo) : '') + ' do fim do contrato.';
+      }
+    }
+
+    // Tabela: o retorno de cada valor amortizado
+    const degraus = [0.25, 0.5, 1, 1.5, 2].map(f => Math.round(amortizado * f)).filter(v => v > 0 && v <= saldo);
+    const unicos = [...new Set(degraus)];
+    $('am-tbody').innerHTML = unicos.map(v => {
+      const ns = Math.max(0, saldo - v);
+      const np = prazoRestante(ns, i, parcela);
+      const jp = isFinite(np) ? (v + parcela * np) - saldo : Infinity;
+      const ep = isFinite(jp) ? Math.max(0, jurosSem - jp) : 0;
+      const pa = parcelaPrice(ns, i, n);
+      const ea = Math.max(0, jurosSem - ((v + pa * n) - saldo));
+      const marca = v === amortizado ? ' class="marcada"' : '';
+      return '<tr' + marca + '><td>' + brl.format(v) + '</td><td>' + brl.format(ep) + '</td><td>' + brl.format(ea) +
+        '</td><td>' + brl.format(Math.max(0, ep - ea)) + '</td></tr>';
+    }).join('');
+
+    // Gráfico: o saldo devedor caindo nos dois caminhos
+    const limite = Math.min(n, 480);
+    grafico.atualizar({
+      series: [
+        { dados: curvaSaldo(novoSaldo, i, parcela, limite), cor: '#3fb950' },
+        { dados: curvaSaldo(saldo, i, parcela, limite), cor: token('--text-tertiary', '#6e7681'), tracejada: true },
+      ],
+      areaEntre: null,
+      marca: (isFinite(nPrazo) && nPrazo > 0 && nPrazo < limite) ? { i: nPrazo, texto: 'dívida quitada' } : null,
+      formatar: (v) => brl.format(v),
+      rotuloPonto: (k) => 'mês ' + k,
+    });
+  }
+
+  recalcular();
+</script>

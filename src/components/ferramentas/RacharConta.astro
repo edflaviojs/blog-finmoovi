@@ -1,0 +1,198 @@
+---
+/**
+ * Calculadora de Rachar a Conta.
+ *
+ * O ACHADO é a briga real da mesa: quem não bebeu paga a bebida dos outros
+ * quando se divide tudo por igual. A calculadora separa a comida (de todos) da
+ * bebida (de quem bebeu) e diz, em reais, quanto quem não bebeu estaria a
+ * pagar a mais na divisão simples.
+ *
+ * E resolve o segundo problema, que é o das notas: quanto cada um põe na mesa
+ * arredondando para cima, e quanto sobra de troco.
+ */
+import '@/styles/ferramentas.css';
+---
+
+<div class="fm-grid">
+  <div class="fm-rail">
+    <div class="fm-ctrl">
+      <div class="fm-ctrl-top">
+        <label for="rc-total">Total da conta</label>
+        <div class="fm-campo"><span class="fm-fixo">R$</span><input id="rc-total" type="text" inputmode="numeric" autocomplete="off" /></div>
+      </div>
+      <input class="fm-range" id="rc-s-total" type="range" min="10" max="5000" step="10" aria-label="Total da conta" />
+    </div>
+
+    <div class="fm-ctrl">
+      <div class="fm-ctrl-top">
+        <label for="rc-pessoas">Quantas pessoas</label>
+        <div class="fm-campo"><input id="rc-pessoas" type="text" inputmode="numeric" autocomplete="off" /><span class="fm-fixo">na mesa</span></div>
+      </div>
+      <input class="fm-range" id="rc-s-pessoas" type="range" min="1" max="30" step="1" aria-label="Quantas pessoas" />
+    </div>
+
+    <div class="fm-ctrl">
+      <div class="fm-ctrl-top">
+        <label for="rc-bebidas">Quanto foi de bebida</label>
+        <div class="fm-campo"><span class="fm-fixo">R$</span><input id="rc-bebidas" type="text" inputmode="numeric" autocomplete="off" /></div>
+      </div>
+      <input class="fm-range" id="rc-s-bebidas" type="range" min="0" max="3000" step="10" aria-label="Valor das bebidas" />
+      <span class="fm-eco">deixe em zero para dividir tudo igual</span>
+    </div>
+
+    <div class="fm-ctrl">
+      <div class="fm-ctrl-top">
+        <label for="rc-beberam">Quantos beberam</label>
+        <div class="fm-campo"><input id="rc-beberam" type="text" inputmode="numeric" autocomplete="off" /><span class="fm-fixo">pessoas</span></div>
+      </div>
+      <input class="fm-range" id="rc-s-beberam" type="range" min="0" max="30" step="1" aria-label="Quantos beberam" />
+    </div>
+
+    <div class="fm-ctrl">
+      <div class="fm-ctrl-top">
+        <label for="rc-gorjeta">Gorjeta</label>
+        <div class="fm-campo"><input id="rc-gorjeta" type="text" inputmode="decimal" autocomplete="off" /><span class="fm-fixo">%</span></div>
+      </div>
+      <input class="fm-range" id="rc-s-gorjeta" type="range" min="0" max="20" step="1" aria-label="Gorjeta" />
+      <span class="fm-eco" id="rc-eco-gorjeta"></span>
+    </div>
+  </div>
+
+  <div class="fm-saida">
+    <div class="fm-heroi">
+      <span class="fm-rotulo" id="rc-rotulo">Cada um paga</span>
+      <strong class="fm-heroi-valor" id="rc-valor">R$ 0</strong>
+      <p class="fm-heroi-nota" id="rc-nota"></p>
+    </div>
+
+    <div class="fm-achado" id="rc-achado" hidden>
+      <span class="fm-achado-marca" aria-hidden="true"></span>
+      <div class="fm-achado-txt">
+        <span class="fm-rotulo">A conta que ninguém faz</span>
+        <p id="rc-achado-frase"></p>
+      </div>
+    </div>
+
+    <div class="fm-versus" id="rc-versus" hidden>
+      <div class="fm-coluna vence">
+        <h3>Quem bebeu <small>comida + bebida</small></h3>
+        <div class="fm-linha forte"><span>Paga cada um</span><strong id="rc-bebeu">R$ 0</strong></div>
+        <div class="fm-linha"><span>São</span><strong id="rc-qtd-bebeu">0</strong></div>
+      </div>
+      <div class="fm-coluna">
+        <h3>Quem não bebeu <small>só a comida</small></h3>
+        <div class="fm-linha forte"><span>Paga cada um</span><strong id="rc-nao-bebeu">R$ 0</strong></div>
+        <div class="fm-linha"><span>São</span><strong id="rc-qtd-nao">0</strong></div>
+      </div>
+    </div>
+
+    <div class="fm-reparticao tres">
+      <div class="fm-rep">
+        <span class="fm-rotulo">Conta + gorjeta</span>
+        <strong class="fm-rep-valor" id="rc-com-gorjeta">R$ 0</strong>
+      </div>
+      <div class="fm-rep">
+        <span class="fm-rotulo">Arredondando para cima</span>
+        <strong class="fm-rep-valor" id="rc-redondo">R$ 0</strong>
+      </div>
+      <div class="fm-rep bom">
+        <span class="fm-rotulo">Sobra de troco</span>
+        <strong class="fm-rep-valor" id="rc-troco">R$ 0</strong>
+      </div>
+    </div>
+
+    <details class="fm-tabela-wrap" open>
+      <summary>E se fossem outras quantidades de pessoas?</summary>
+      <div class="fm-tabela-scroll">
+        <table class="fm-tabela">
+          <thead><tr><th>Pessoas</th><th>Cada um paga</th><th>Cada um pondo nota redonda</th></tr></thead>
+          <tbody id="rc-tbody"></tbody>
+        </table>
+      </div>
+    </details>
+  </div>
+</div>
+
+<script>
+  import { brlCent, $, campoDinheiro, campoDecimal, campoInteiro, contador } from './ui.js';
+
+  const mostraValor = contador($('rc-valor'), (v) => brlCent.format(v));
+
+  const lerTotal = campoDinheiro('rc-total', 'rc-s-total', 300, recalcular);
+  const lerPessoas = campoInteiro('rc-pessoas', 'rc-s-pessoas', 4, recalcular, 200);
+  const lerBebidas = campoDinheiro('rc-bebidas', 'rc-s-bebidas', 120, recalcular);
+  const lerBeberam = campoInteiro('rc-beberam', 'rc-s-beberam', 2, recalcular, 200);
+  const lerGorjeta = campoDecimal('rc-gorjeta', 'rc-s-gorjeta', 10, recalcular, 30);
+
+  /** Arredonda para a nota de cima, em degraus de 5 reais. */
+  function paraNotaRedonda(v) {
+    return Math.ceil(v / 5) * 5;
+  }
+
+  function recalcular() {
+    const total = lerTotal();
+    const pessoas = Math.max(1, lerPessoas());
+    const gorjeta = lerGorjeta() / 100;
+    const bebidas = Math.min(lerBebidas(), total);
+    const beberam = Math.min(lerBeberam(), pessoas);
+
+    const comGorjeta = total * (1 + gorjeta);
+    $('rc-com-gorjeta').textContent = brlCent.format(comGorjeta);
+    $('rc-eco-gorjeta').textContent = gorjeta > 0 ? brlCent.format(total * gorjeta) + ' para o garçom' : 'sem gorjeta';
+
+    const divisaoSimples = comGorjeta / pessoas;
+
+    const separa = bebidas > 0 && beberam > 0 && beberam < pessoas;
+    $('rc-versus').hidden = !separa;
+
+    let valorPrincipal = divisaoSimples;
+
+    if (separa) {
+      const comida = (total - bebidas) * (1 + gorjeta);
+      const bebida = bebidas * (1 + gorjeta);
+      const porComida = comida / pessoas;
+      const porBebida = bebida / beberam;
+      const quemBebeu = porComida + porBebida;
+      const quemNao = porComida;
+
+      valorPrincipal = quemBebeu;
+      $('rc-rotulo').textContent = 'Quem bebeu paga';
+      $('rc-bebeu').textContent = brlCent.format(quemBebeu);
+      $('rc-nao-bebeu').textContent = brlCent.format(quemNao);
+      $('rc-qtd-bebeu').textContent = beberam + (beberam === 1 ? ' pessoa' : ' pessoas');
+      $('rc-qtd-nao').textContent = (pessoas - beberam) + ((pessoas - beberam) === 1 ? ' pessoa' : ' pessoas');
+
+      const aMais = divisaoSimples - quemNao;
+      $('rc-achado').hidden = aMais <= 0.01;
+      $('rc-achado-frase').innerHTML =
+        'Dividindo tudo por igual, cada um pagaria <b>' + brlCent.format(divisaoSimples) + '</b>. ' +
+        'Quem não bebeu estaria a pagar <b>' + brlCent.format(aMais) + '</b> da bebida dos outros — ' +
+        brlCent.format(aMais * (pessoas - beberam)) + ' no total da mesa.';
+
+      $('rc-nota').innerHTML = 'a comida foi dividida por ' + pessoas + ', e a bebida só por quem bebeu.';
+    } else {
+      $('rc-rotulo').textContent = 'Cada um paga';
+      $('rc-achado').hidden = true;
+      $('rc-nota').innerHTML = 'dividindo ' + brlCent.format(comGorjeta) + ' por ' + pessoas +
+        (pessoas === 1 ? ' pessoa' : ' pessoas') + (gorjeta > 0 ? ', já com ' + (gorjeta * 100).toFixed(0) + '% de gorjeta.' : ', sem gorjeta.');
+    }
+
+    mostraValor(valorPrincipal);
+
+    const redondo = paraNotaRedonda(valorPrincipal);
+    $('rc-redondo').textContent = brlCent.format(redondo);
+    const sobra = separa
+      ? (redondo * (beberam || pessoas)) - (valorPrincipal * (beberam || pessoas))
+      : (redondo * pessoas) - comGorjeta;
+    $('rc-troco').textContent = brlCent.format(Math.max(0, sobra));
+
+    const opcoes = [2, 3, 4, 5, 6, 8, 10].filter((v, k, a) => a.indexOf(v) === k);
+    $('rc-tbody').innerHTML = opcoes.map((p) => {
+      const v = comGorjeta / p;
+      const marca = p === pessoas ? ' class="marcada"' : '';
+      return '<tr' + marca + '><td>' + p + '</td><td>' + brlCent.format(v) + '</td><td>' + brlCent.format(paraNotaRedonda(v)) + '</td></tr>';
+    }).join('');
+  }
+
+  recalcular();
+</script>

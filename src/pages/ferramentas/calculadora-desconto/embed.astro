@@ -1,0 +1,20 @@
+---
+/** Versão embutível da Calculadora de Desconto. */
+import EmbedLayout from '@layouts/EmbedLayout.astro';
+import Desconto from '@components/ferramentas/Desconto.astro';
+import { config } from '../../../../site.config';
+
+const base = config.siteUrl.replace(/\/+$/, '');
+const urlPagina = `${base}/ferramentas/calculadora-desconto/`;
+---
+
+<EmbedLayout
+  title="Calculadora de Desconto"
+  description="Quanto você paga, quanto economiza, e por que dois descontos não somam."
+>
+  <h1 class="fm-embed-titulo">Calculadora de Desconto</h1>
+  <Desconto />
+  <p class="fm-credito">
+    <a href={urlPagina} target="_blank" rel="noopener">Calculadora de Desconto por FinMoovi</a>
+  </p>
+</EmbedLayout>

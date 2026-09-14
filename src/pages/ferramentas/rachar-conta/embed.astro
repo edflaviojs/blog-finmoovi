@@ -1,0 +1,20 @@
+---
+/** Versão embutível da calculadora de Rachar a Conta. */
+import EmbedLayout from '@layouts/EmbedLayout.astro';
+import RacharConta from '@components/ferramentas/RacharConta.astro';
+import { config } from '../../../../site.config';
+
+const base = config.siteUrl.replace(/\/+$/, '');
+const urlPagina = `${base}/ferramentas/rachar-conta/`;
+---
+
+<EmbedLayout
+  title="Rachar a Conta"
+  description="Divida a conta com gorjeta, sem quem não bebeu pagar a bebida dos outros."
+>
+  <h1 class="fm-embed-titulo">Rachar a Conta</h1>
+  <RacharConta />
+  <p class="fm-credito">
+    <a href={urlPagina} target="_blank" rel="noopener">Calculadora de Rachar a Conta por FinMoovi</a>
+  </p>
+</EmbedLayout>

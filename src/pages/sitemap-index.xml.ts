@@ -15,6 +15,30 @@ export const GET: APIRoute = async () => {
   const locales = ['pt', 'en', 'es'];
   const localePrefixes = { pt: '', en: '/en', es: '/es' };
 
+  /**
+   * As calculadoras entram sozinhas no sitemap (14/09/2026).
+   *
+   * Antes eram sete linhas escritas à mão aqui. Em 14/09 nasceram três
+   * calculadoras novas e NENHUMA entrou no mapa: ficariam invisíveis para o
+   * Google, em silêncio, até alguém reparar. É a família de defeito nº 1 da
+   * casa — uma lista velha a descrever uma estrutura que cresceu.
+   *
+   * O `import.meta.glob` lê a pasta no build. O `*` apanha só o primeiro nível,
+   * portanto as páginas de embed (`/ferramentas/<slug>/embed.astro`) ficam de
+   * fora — e é isso que se quer: elas são `noindex` e não devem competir com a
+   * página completa.
+   */
+  const ferramentas = Object.keys(import.meta.glob('./ferramentas/*.astro'))
+    .map((caminho) => caminho.replace('./ferramentas/', '').replace('.astro', ''))
+    .filter((slug) => slug !== 'index')
+    .sort()
+    .map((slug) => ({
+      url: `/ferramentas/${slug}`,
+      priority: '0.8',
+      changefreq: 'monthly',
+      lastmod: today,
+    }));
+
   const staticPages = [
     { path: '/', priority: '1.0', changefreq: 'daily' },
     { path: '/ferramentas', priority: '0.8', changefreq: 'weekly' },
@@ -29,13 +53,7 @@ export const GET: APIRoute = async () => {
     { url: '/como-sair-das-dividas', priority: '0.9', changefreq: 'monthly', lastmod: today },
     { url: '/guia-30-dias', priority: '0.8', changefreq: 'monthly', lastmod: today },
     { url: '/checklist-financeiro', priority: '0.8', changefreq: 'monthly', lastmod: today },
-    { url: '/ferramentas/calculadora-juros-compostos', priority: '0.8', changefreq: 'monthly', lastmod: today },
-    { url: '/ferramentas/calculadora-financiamento', priority: '0.8', changefreq: 'monthly', lastmod: today },
-    { url: '/ferramentas/calculadora-aposentadoria', priority: '0.8', changefreq: 'monthly', lastmod: today },
-    { url: '/ferramentas/calculadora-orcamento', priority: '0.8', changefreq: 'monthly', lastmod: today },
-    { url: '/ferramentas/conversor-moedas', priority: '0.8', changefreq: 'monthly', lastmod: today },
-    { url: '/ferramentas/simulador-investimento', priority: '0.8', changefreq: 'monthly', lastmod: today },
-    { url: '/ferramentas/calculadora-reserva', priority: '0.8', changefreq: 'monthly', lastmod: today },
+    ...ferramentas,
     { url: '/autor/ed-flavio', priority: '0.6', changefreq: 'weekly', lastmod: today },
     { url: '/en/author/ed-flavio', priority: '0.5', changefreq: 'weekly', lastmod: today },
     { url: '/es/autor/ed-flavio', priority: '0.5', changefreq: 'weekly', lastmod: today },
