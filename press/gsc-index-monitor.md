@@ -1,6 +1,6 @@
 # GSC — Monitor de Indexação
 
-Gerado em: 2026-09-13T13:06:03.326Z
+Gerado em: 2026-09-14T14:44:02.528Z
 Propriedade: https://blog.finmoovi.com/
 
 ## Resumo
@@ -30,9 +30,9 @@ Propriedade: https://blog.finmoovi.com/
 - `https://blog.finmoovi.com/posts/negociar-descontos-em-contas-fixas/` — Discovered - currently not indexed (desde 2026-08-12)
 - `https://blog.finmoovi.com/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas/` — Discovered - currently not indexed (desde 2026-07-30)
 - `https://blog.finmoovi.com/en/posts/en-real-estate-funds-for-beginners-complete-guide/` — Duplicate, Google chose different canonical than user (desde 2026-08-02)
-- `https://blog.finmoovi.com/glossario/planejamento-financeiro-planilha/` — Discovered - currently not indexed (desde 2026-08-15)
+- `https://blog.finmoovi.com/glossario/planejamento-financeiro-planilha/` — URL is unknown to Google (desde 2026-08-15)
 - `https://blog.finmoovi.com/en/glossario/en-financial-planning-spreadsheet/` — Discovered - currently not indexed (desde 2026-08-15)
 - `https://blog.finmoovi.com/en/glossario/en-financial-value/` — Discovered - currently not indexed (desde 2026-07-30)
 - `https://blog.finmoovi.com/en/glossario/en-lc/` — URL is unknown to Google (desde 2026-07-30)
-- `https://blog.finmoovi.com/es/glossario/es-lc/` — URL is unknown to Google (desde 2026-07-30)
+- `https://blog.finmoovi.com/es/glossario/es-lc/` — Discovered - currently not indexed (desde 2026-07-30)
 - `https://blog.finmoovi.com/es/glossario/es-planilla-de-planificacion-financiera/` — Discovered - currently not indexed (desde 2026-08-15)
