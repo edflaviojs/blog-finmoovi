@@ -1,7 +1,7 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-09-13T09:58:01.470Z
-**Posts:** 432 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 61
+**Gerado em:** 2026-09-14T10:19:13.196Z
+**Posts:** 438 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 63
 
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
@@ -88,6 +88,9 @@
 **en-etfs-what-they-are-and-how-to-invest-simply-and-profitably.md**
 - _, IMAB11) in 70/30 or 60/40 ratios, according to your profile._
 
+**en-finmoovi-cost-of-living-index-august-2026.md**
+- _In August 2026, the [cost of living](/en/glossario/en-cost-of-living) in Brazil fell 0,32 % according to the overall IPCA, indicating slight deflation for the month._
+
 **en-finmoovi-cost-of-living-index-july-2026.md**
 - _07 % according to the consumer price index (CPI), indicating a modest increase in consumer prices for the month._
 
@@ -155,6 +158,10 @@
 
 **estrategias-simples-para-cortar-o-consumo-de-agua-em-2026.md**
 - _Segundo a **OECD**, o consumo per capita de água doméstica tem tendência a crescer em áreas urbanas, o que pressiona tanto os bolsos quanto os ecossistemas._
+
+**indice-finmoovi-custo-de-vida-agosto-2026.md**
+- _Em agosto de 2026, o [custo de vida](/glossario/custo-de-vida) no Brasil recuou 0,32 % segundo o IPCA geral, indicando ligeira deflação no mês._
+- _Aluguéis e contas de energia mais baixos podem aliviar o orçamento, mas a tendência pode variar conforme a região._
 
 **indice-finmoovi-custo-de-vida-julho-2026.md**
 - _Em julho de 2026, o custo de vida subiu 0,07 % segundo o [IPCA](/glossario/ipca), indicando um aumento discreto nos preços ao consumidor no mês._
