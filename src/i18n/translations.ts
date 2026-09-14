@@ -92,6 +92,13 @@ export const translations: Record<Lang, Record<string, string>> = {
     'ferramentas.emergencia.desc': 'Calcule o valor ideal da sua reserva de emergência baseado nos seus gastos.',
     'ferramentas.cdb.title': 'Comparador de CDB',
     'ferramentas.cdb.desc': 'Compare rendimentos de CDBs com diferentes taxas e prazos.',
+    'ferramentas.financiamento.title': 'Calculadora de Financiamento (SAC × Price)',
+    'ferramentas.financiamento.desc': 'Compare os sistemas SAC e Price: veja parcelas e quanto paga de juros no financiamento.',
+    'ferramentas.aposentadoria.title': 'Calculadora de Aposentadoria',
+    'ferramentas.aposentadoria.desc': 'Descubra quanto precisa para se aposentar (regra dos 4%) e em quanto tempo chega lá.',
+    'ferramentas.badge.aberta': 'Disponível',
+    'ferramentas.badge.embreve': 'Em breve',
+    'ferramentas.aviso': 'As calculadoras são gratuitas e não pedem cadastro.',
 
     // Sobre
     'sobre.missao': 'Nossa Missão',
@@ -203,6 +210,13 @@ export const translations: Record<Lang, Record<string, string>> = {
     'ferramentas.emergencia.desc': 'Calculate the ideal amount for your emergency fund based on your expenses.',
     'ferramentas.cdb.title': 'CD Comparator',
     'ferramentas.cdb.desc': 'Compare returns from CDs with different rates and terms.',
+    'ferramentas.financiamento.title': 'Loan Calculator (SAC vs Price)',
+    'ferramentas.financiamento.desc': 'Compare the SAC and Price amortization systems used in Brazil: installments and total interest in each.',
+    'ferramentas.aposentadoria.title': 'Retirement Calculator',
+    'ferramentas.aposentadoria.desc': 'Find out how much you need to retire (the 4% rule) and how long it takes to get there.',
+    'ferramentas.badge.aberta': 'In Portuguese',
+    'ferramentas.badge.embreve': 'Coming soon',
+    'ferramentas.aviso': 'These calculators are free and need no signup. The interface is in Portuguese, but the math is the same in any language.',
 
     // Sobre
     'sobre.missao': 'Our Mission',
@@ -314,6 +328,13 @@ export const translations: Record<Lang, Record<string, string>> = {
     'ferramentas.emergencia.desc': 'Calcula el valor ideal de tu reserva de emergencia basado en tus gastos.',
     'ferramentas.cdb.title': 'Comparador de CDT',
     'ferramentas.cdb.desc': 'Compara rendimientos de CDTs con diferentes tasas y plazos.',
+    'ferramentas.financiamento.title': 'Calculadora de Financiación (SAC × Price)',
+    'ferramentas.financiamento.desc': 'Compara los sistemas SAC y Price usados en Brasil: cuotas y cuánto pagas de intereses en cada uno.',
+    'ferramentas.aposentadoria.title': 'Calculadora de Jubilación',
+    'ferramentas.aposentadoria.desc': 'Descubre cuánto necesitas para jubilarte (regla del 4%) y en cuánto tiempo llegas.',
+    'ferramentas.badge.aberta': 'En portugués',
+    'ferramentas.badge.embreve': 'Próximamente',
+    'ferramentas.aviso': 'Estas calculadoras son gratuitas y no piden registro. La interfaz está en portugués, pero los cálculos son iguales en cualquier idioma.',
 
     // Sobre
     'sobre.missao': 'Nuestra Misión',
