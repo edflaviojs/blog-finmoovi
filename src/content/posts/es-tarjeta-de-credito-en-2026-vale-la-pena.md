@@ -3,6 +3,7 @@ title: "Tarjeta de crédito en 2026: ¿vale la pena?"
 description: "Descubre si la tarjeta de crédito sigue siendo útil en 2026, evita trampas y conoce cómo FinMoovi mejora tu control financiero."
 tickerHeadline: "El secreto que hace que tu tarjeta valga"
 image: "/images/posts/cartao-de-credito-em-2026-vale-a-pena.webp"
+imageAlt: "Fondo azul oscuro con formas abstractas onduladas en tonos dorados y amarillos."
 category: "dicas"
 locale: "es"
 tags: ["tarjeta de crédito vale la pena 2026","finanzas personales","economía","dinero"]

@@ -4,6 +4,7 @@ definition: "What obligation is and how it shows up in your everyday money — e
 title: "obligation - Financial Glossary"
 description: "What obligation is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/obrigacao.webp"
+imageAlt: "Gold coins and a plant in glass jars on a dark podium with orange bars."
 category: "basico"
 tags: ["obligation", "glossary", "finance"]
 author: "FinMoovi"

@@ -4,6 +4,7 @@ definition: "O que é obrigação e como isso aparece no seu dia a dia — expli
 title: "obrigação - Glossário Financeiro"
 description: "O que é obrigação e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/obrigacao.webp"
+imageAlt: "Moedas douradas, barras e planta em pedestal escuro com iluminação roxa."
 category: "basico"
 tags: ["obrigação", "glossário", "finanças"]
 author: "FinMoovi"

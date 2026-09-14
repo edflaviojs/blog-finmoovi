@@ -2,6 +2,7 @@
 title: "Índice FinMoovi del Costo de Vida — Agosto/2026"
 description: "IPCA de agosto/2026 por grupo de gasto: índice general en -0,32% en el mes y 4,22% en 12 meses. Cambio de cierre y consejos para proteger tu bolsillo."
 image: "/images/posts/indice-finmoovi-custo-de-vida-agosto-2026.webp"
+imageAlt: "Dos tazas de café sobre escritorio de madera con portátil y monitor encendidos."
 category: "cotacoes"
 tags: ["costo de vida","ipca","inflación","cotizaciones","presupuesto"]
 author: "FinMoovi"

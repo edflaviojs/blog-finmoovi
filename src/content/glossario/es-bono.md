@@ -4,6 +4,7 @@ definition: "Qué es bono y cómo aparece en tu día a día — explicado de for
 title: "bono - Glosario Financiero"
 description: "Qué es bono y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/obrigacao.webp"
+imageAlt: "Monedas doradas, barras y planta verde sobre podio oscuro iluminado."
 category: "basico"
 tags: ["bono", "glosario", "finanzas"]
 author: "FinMoovi"

@@ -2,6 +2,7 @@
 title: "FinMoovi Cost of Living Index — August/2026"
 description: "IPCA for August/2026 by expense group: overall index at -0.32% in the month and 4.22% over 12 months. Month-close exchange rates and tips to protect your budget."
 image: "/images/posts/indice-finmoovi-custo-de-vida-agosto-2026.webp"
+imageAlt: "Laptop and monitor with colorful screens, two mugs on wooden desk, blurred plant background."
 category: "cotacoes"
 tags: ["cost of living","ipca","inflation","quotes","budget"]
 author: "FinMoovi"

@@ -3,6 +3,7 @@ title: "Credit Card in 2026: Is It Worth It?"
 description: "Find out if credit cards still make sense in 2026, learn the pitfalls, and see how FinMoovi can simplify your money management."
 tickerHeadline: "The secret to making your card work for "
 image: "/images/posts/cartao-de-credito-em-2026-vale-a-pena.webp"
+imageAlt: "Abstract blue and gold wavy ribbon on white background."
 category: "dicas"
 locale: "en"
 tags: ["credit card worth it 2026","personal finance","economy","money"]

@@ -3,6 +3,7 @@ title: "Cartão de crédito em 2026: vale a pena?"
 description: "Descubra se o cartão de crédito ainda compensa em 2026, conheça armadilhas e veja como o FinMoovi pode transformar seu controle financeiro."
 tickerHeadline: "O segredo que faz seu cartão valer"
 image: "/images/posts/cartao-de-credito-em-2026-vale-a-pena.webp"
+imageAlt: "Formas abstratas onduladas em azul escuro e dourado sobre fundo branco."
 category: "dicas"
 locale: "pt"
 tags: ["is credit card worth it 2026","finanças pessoais","economia","dinheiro"]
