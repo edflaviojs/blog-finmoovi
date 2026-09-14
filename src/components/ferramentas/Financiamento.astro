@@ -1,0 +1,223 @@
+---
+/**
+ * Calculadora de Financiamento — SAC × Price.
+ *
+ * O ACHADO desta: a parcela do SAC começa MAIS ALTA que a do Price e vai
+ * descendo até cruzar. Toda a gente repete "o SAC paga menos juros", mas
+ * ninguém diz em que mês o bolso começa a sentir isso. Aqui o cruzamento é
+ * calculado, dito por extenso e marcado no gráfico.
+ *
+ * O herói é o TOTAL DE JUROS e não a parcela, de propósito: a parcela é o que
+ * o banco mostra, os juros são o que o banco não mostra.
+ */
+import '@/styles/ferramentas.css';
+---
+
+<div class="fm-grid">
+  <div class="fm-rail">
+    <div class="fm-ctrl">
+      <div class="fm-ctrl-top">
+        <label for="fi-valor">Valor do bem</label>
+        <div class="fm-campo"><span class="fm-fixo">R$</span><input id="fi-valor" type="text" inputmode="numeric" autocomplete="off" /></div>
+      </div>
+      <input class="fm-range" id="fi-s-valor" type="range" min="10000" max="2000000" step="10000" aria-label="Valor do bem" />
+    </div>
+
+    <div class="fm-ctrl">
+      <div class="fm-ctrl-top">
+        <label for="fi-entrada">Entrada</label>
+        <div class="fm-campo"><span class="fm-fixo">R$</span><input id="fi-entrada" type="text" inputmode="numeric" autocomplete="off" /></div>
+      </div>
+      <input class="fm-range" id="fi-s-entrada" type="range" min="0" max="1000000" step="5000" aria-label="Entrada" />
+      <span class="fm-eco" id="fi-eco-entrada"></span>
+    </div>
+
+    <div class="fm-ctrl">
+      <div class="fm-ctrl-top">
+        <label for="fi-taxa">Taxa de juros</label>
+        <div class="fm-campo"><input id="fi-taxa" type="text" inputmode="decimal" autocomplete="off" /><span class="fm-fixo">% a.a.</span></div>
+      </div>
+      <input class="fm-range" id="fi-s-taxa" type="range" min="0" max="25" step="0.1" aria-label="Taxa de juros ao ano" />
+    </div>
+
+    <div class="fm-ctrl">
+      <div class="fm-ctrl-top">
+        <label for="fi-prazo">Prazo</label>
+        <div class="fm-campo"><input id="fi-prazo" type="text" inputmode="numeric" autocomplete="off" /><span class="fm-fixo">meses</span></div>
+      </div>
+      <input class="fm-range" id="fi-s-prazo" type="range" min="12" max="420" step="12" aria-label="Prazo em meses" />
+      <span class="fm-eco" id="fi-eco-prazo"></span>
+    </div>
+  </div>
+
+  <div class="fm-saida">
+    <div class="fm-heroi">
+      <span class="fm-rotulo">Só de juros, no SAC</span>
+      <strong class="fm-heroi-valor" id="fi-juros">R$ 0</strong>
+      <p class="fm-heroi-nota" id="fi-nota"></p>
+    </div>
+
+    <div class="fm-achado" id="fi-achado" hidden>
+      <span class="fm-achado-marca" aria-hidden="true"></span>
+      <div class="fm-achado-txt">
+        <span class="fm-rotulo">Quando o SAC fica mais leve</span>
+        <p id="fi-achado-frase"></p>
+      </div>
+    </div>
+
+    <figure class="fm-grafico">
+      <canvas id="fi-chart" role="img" aria-label="Valor da parcela mês a mês nos dois sistemas"></canvas>
+      <figcaption class="fm-legenda">
+        <span class="fm-chave" data-cor="verde">Parcela no SAC</span>
+        <span class="fm-chave" data-cor="roxo">Parcela no Price</span>
+        <span class="fm-chave" data-cor="marca">O mês em que se cruzam</span>
+      </figcaption>
+    </figure>
+
+    <div class="fm-versus">
+      <div class="fm-coluna" id="fi-col-sac">
+        <h3>SAC <small>parcela desce todo mês</small></h3>
+        <span class="fm-selo" id="fi-selo-sac" hidden>paga menos juros</span>
+        <div class="fm-linha"><span>1ª parcela</span><strong id="fi-sac-1">R$ 0</strong></div>
+        <div class="fm-linha"><span>Última parcela</span><strong id="fi-sac-n">R$ 0</strong></div>
+        <div class="fm-linha"><span>Total pago</span><strong id="fi-sac-total">R$ 0</strong></div>
+        <div class="fm-linha forte"><span>Total de juros</span><strong id="fi-sac-juros">R$ 0</strong></div>
+      </div>
+      <div class="fm-coluna" id="fi-col-price">
+        <h3>Price <small>parcela igual do início ao fim</small></h3>
+        <span class="fm-selo" id="fi-selo-price" hidden>paga menos juros</span>
+        <div class="fm-linha"><span>Parcela fixa</span><strong id="fi-price-1">R$ 0</strong></div>
+        <div class="fm-linha"><span>Última parcela</span><strong id="fi-price-n">R$ 0</strong></div>
+        <div class="fm-linha"><span>Total pago</span><strong id="fi-price-total">R$ 0</strong></div>
+        <div class="fm-linha forte"><span>Total de juros</span><strong id="fi-price-juros">R$ 0</strong></div>
+      </div>
+    </div>
+
+    <div class="fm-reparticao">
+      <div class="fm-rep">
+        <span class="fm-rotulo">Você financia</span>
+        <strong class="fm-rep-valor" id="fi-financiado">R$ 0</strong>
+      </div>
+      <div class="fm-rep aviso">
+        <span class="fm-rotulo">Economia escolhendo SAC</span>
+        <strong class="fm-rep-valor" id="fi-economia">R$ 0</strong>
+      </div>
+    </div>
+
+    <details class="fm-tabela-wrap">
+      <summary>Ver ano a ano</summary>
+      <div class="fm-tabela-scroll">
+        <table class="fm-tabela">
+          <thead><tr><th>Ano</th><th>Parcela SAC</th><th>Parcela Price</th><th>Falta pagar (SAC)</th></tr></thead>
+          <tbody id="fi-tbody"></tbody>
+        </table>
+      </div>
+    </details>
+  </div>
+</div>
+
+<script>
+  import { brl, $, tempoEmPalavras, campoDinheiro, campoDecimal, campoInteiro, contador, criarGrafico } from './ui.js';
+
+  const grafico = criarGrafico($('fi-chart'));
+  const mostraJuros = contador($('fi-juros'), (v) => brl.format(v));
+
+  const lerValor = campoDinheiro('fi-valor', 'fi-s-valor', 300000, recalcular);
+  const lerEntrada = campoDinheiro('fi-entrada', 'fi-s-entrada', 60000, recalcular);
+  const lerTaxa = campoDecimal('fi-taxa', 'fi-s-taxa', 10, recalcular, 60);
+  const lerPrazo = campoInteiro('fi-prazo', 'fi-s-prazo', 360, recalcular, 600);
+
+  function recalcular() {
+    const valor = lerValor();
+    const entrada = Math.min(lerEntrada(), valor);
+    const n = Math.max(1, lerPrazo());
+    // Taxa mensal equivalente à taxa anual efetiva — é assim que o banco faz.
+    const i = Math.pow(1 + lerTaxa() / 100, 1 / 12) - 1;
+    const pv = Math.max(valor - entrada, 0);
+
+    // SAC: amortização constante, juros sobre o saldo que ainda falta
+    const amort = pv / n;
+    const sac = [], saldos = [];
+    let saldo = pv, sacTotal = 0;
+    for (let m = 0; m < n; m++) {
+      const parcela = amort + saldo * i;
+      sac.push(parcela);
+      saldos.push(saldo);
+      sacTotal += parcela;
+      saldo -= amort;
+    }
+
+    // Price: parcela fixa
+    const pmt = i > 0 ? (pv * i) / (1 - Math.pow(1 + i, -n)) : pv / n;
+    const price = new Array(n).fill(pmt);
+    const priceTotal = pmt * n;
+
+    const sacJuros = sacTotal - pv;
+    const priceJuros = priceTotal - pv;
+    const economia = priceJuros - sacJuros;
+
+    mostraJuros(sacJuros);
+    $('fi-nota').innerHTML = 'em ' + tempoEmPalavras(n) + ', sobre <b>' + brl.format(pv) +
+      '</b> financiados. Você devolve ao banco ' + (pv > 0 ? (sacTotal / pv).toFixed(1).replace('.', ',') : '0') + '× o que pegou emprestado.';
+
+    $('fi-sac-1').textContent = brl.format(sac[0] || 0);
+    $('fi-sac-n').textContent = brl.format(sac[n - 1] || 0);
+    $('fi-sac-total').textContent = brl.format(sacTotal);
+    $('fi-sac-juros').textContent = brl.format(sacJuros);
+
+    $('fi-price-1').textContent = brl.format(pmt);
+    $('fi-price-n').textContent = brl.format(pmt);
+    $('fi-price-total').textContent = brl.format(priceTotal);
+    $('fi-price-juros').textContent = brl.format(priceJuros);
+
+    const sacGanha = sacJuros <= priceJuros;
+    $('fi-selo-sac').hidden = !sacGanha;
+    $('fi-selo-price').hidden = sacGanha;
+    $('fi-col-sac').classList.toggle('vence', sacGanha);
+    $('fi-col-price').classList.toggle('vence', !sacGanha);
+
+    $('fi-financiado').textContent = brl.format(pv);
+    $('fi-economia').textContent = brl.format(Math.max(0, economia));
+
+    // O cruzamento: a partir daqui a parcela do SAC é menor que a do Price
+    let cruza = null;
+    for (let m = 0; m < n; m++) { if (sac[m] <= pmt) { cruza = m + 1; break; } }
+
+    const caixa = $('fi-achado');
+    if (cruza && cruza > 1 && cruza < n) {
+      caixa.hidden = false;
+      $('fi-achado-frase').innerHTML =
+        'No começo a parcela do SAC é mais alta. A partir do <b>mês ' + cruza + '</b> (' + tempoEmPalavras(cruza) +
+        ') ela fica menor que a do Price, e daí até o fim você paga menos todo mês. No total, a diferença é de <b>' +
+        brl.format(Math.max(0, economia)) + '</b>.';
+    } else {
+      caixa.hidden = true;
+    }
+
+    $('fi-eco-entrada').textContent = valor > 0 ? Math.round((entrada / valor) * 100) + '% do valor' : '';
+    $('fi-eco-prazo').textContent = tempoEmPalavras(n);
+
+    let linhas = '';
+    const anos = Math.ceil(n / 12);
+    for (let a = 1; a <= anos; a++) {
+      const m = Math.min(a * 12, n) - 1;
+      const marca = (cruza && Math.ceil(cruza / 12) === a) ? ' class="marcada"' : '';
+      linhas += '<tr' + marca + '><td>' + a + '</td><td>' + brl.format(sac[m]) + '</td><td>' + brl.format(pmt) +
+        '</td><td>' + brl.format(Math.max(0, saldos[m] - amort)) + '</td></tr>';
+    }
+    $('fi-tbody').innerHTML = linhas;
+
+    grafico.atualizar({
+      series: [
+        { dados: sac, cor: '#3fb950' },
+        { dados: price, cor: '#bc8cff' },
+      ],
+      areaEntre: null,
+      marca: (cruza && cruza > 1 && cruza < n) ? { i: cruza - 1, texto: 'cruzamento' } : null,
+      formatar: (v) => brl.format(v),
+      rotuloPonto: (i) => 'parcela ' + (i + 1),
+    });
+  }
+
+  recalcular();
+</script>

@@ -1,0 +1,20 @@
+---
+/** Versão embutível da Calculadora de Financiamento (SAC × Price). */
+import EmbedLayout from '@layouts/EmbedLayout.astro';
+import Financiamento from '@components/ferramentas/Financiamento.astro';
+import { config } from '../../../../site.config';
+
+const base = config.siteUrl.replace(/\/+$/, '');
+const urlPagina = `${base}/ferramentas/calculadora-financiamento/`;
+---
+
+<EmbedLayout
+  title="Calculadora de Financiamento (SAC × Price)"
+  description="Compare SAC e Price: parcela, total pago e quanto você paga só de juros."
+>
+  <h1 class="fm-embed-titulo">Calculadora de Financiamento (SAC × Price)</h1>
+  <Financiamento />
+  <p class="fm-credito">
+    <a href={urlPagina} target="_blank" rel="noopener">Calculadora de Financiamento por FinMoovi</a>
+  </p>
+</EmbedLayout>

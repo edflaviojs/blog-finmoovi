@@ -1,0 +1,199 @@
+---
+/**
+ * Calculadora de Aposentadoria / Independência Financeira.
+ *
+ * O ACHADO desta: o mês em que o rendimento do próprio património passa a ser
+ * maior do que o aporte. É o dia em que o dinheiro começa a puxar mais do que
+ * você empurra — e chega MUITO antes da meta, o que costuma ser a surpresa boa
+ * de quem faz a conta pela primeira vez.
+ *
+ * Usa rentabilidade REAL (acima da inflação) de propósito: o resultado sai em
+ * poder de compra de hoje, sem a ilusão de milhão que a inflação fabrica.
+ */
+import '@/styles/ferramentas.css';
+---
+
+<div class="fm-grid">
+  <div class="fm-rail">
+    <div class="fm-ctrl">
+      <div class="fm-ctrl-top">
+        <label for="ap-renda">Renda mensal desejada</label>
+        <div class="fm-campo"><span class="fm-fixo">R$</span><input id="ap-renda" type="text" inputmode="numeric" autocomplete="off" /></div>
+      </div>
+      <input class="fm-range" id="ap-s-renda" type="range" min="500" max="30000" step="250" aria-label="Renda mensal desejada" />
+    </div>
+
+    <div class="fm-ctrl">
+      <div class="fm-ctrl-top">
+        <label for="ap-atual">Patrimônio atual</label>
+        <div class="fm-campo"><span class="fm-fixo">R$</span><input id="ap-atual" type="text" inputmode="numeric" autocomplete="off" /></div>
+      </div>
+      <input class="fm-range" id="ap-s-atual" type="range" min="0" max="1000000" step="5000" aria-label="Patrimônio atual" />
+    </div>
+
+    <div class="fm-ctrl">
+      <div class="fm-ctrl-top">
+        <label for="ap-aporte">Aporte mensal</label>
+        <div class="fm-campo"><span class="fm-fixo">R$</span><input id="ap-aporte" type="text" inputmode="numeric" autocomplete="off" /></div>
+      </div>
+      <input class="fm-range" id="ap-s-aporte" type="range" min="0" max="20000" step="100" aria-label="Aporte mensal" />
+    </div>
+
+    <div class="fm-ctrl">
+      <div class="fm-ctrl-top">
+        <label for="ap-rent">Rentabilidade real</label>
+        <div class="fm-campo"><input id="ap-rent" type="text" inputmode="decimal" autocomplete="off" /><span class="fm-fixo">% a.a.</span></div>
+      </div>
+      <input class="fm-range" id="ap-s-rent" type="range" min="0" max="12" step="0.25" aria-label="Rentabilidade real ao ano" />
+      <span class="fm-eco">acima da inflação</span>
+    </div>
+
+    <div class="fm-ctrl">
+      <div class="fm-ctrl-top">
+        <label for="ap-retirada">Taxa de retirada</label>
+        <div class="fm-campo"><input id="ap-retirada" type="text" inputmode="decimal" autocomplete="off" /><span class="fm-fixo">% a.a.</span></div>
+      </div>
+      <input class="fm-range" id="ap-s-retirada" type="range" min="2" max="8" step="0.25" aria-label="Taxa de retirada ao ano" />
+      <span class="fm-eco" id="ap-eco-regra"></span>
+    </div>
+  </div>
+
+  <div class="fm-saida">
+    <div class="fm-heroi">
+      <span class="fm-rotulo">Você precisa juntar</span>
+      <strong class="fm-heroi-valor" id="ap-alvo">R$ 0</strong>
+      <p class="fm-heroi-nota" id="ap-nota"></p>
+    </div>
+
+    <div class="fm-achado" id="ap-achado" hidden>
+      <span class="fm-achado-marca" aria-hidden="true"></span>
+      <div class="fm-achado-txt">
+        <span class="fm-rotulo">O ponto de virada</span>
+        <p id="ap-achado-frase"></p>
+      </div>
+    </div>
+
+    <figure class="fm-grafico">
+      <canvas id="ap-chart" role="img" aria-label="Crescimento do patrimônio até a meta"></canvas>
+      <figcaption class="fm-legenda">
+        <span class="fm-chave" data-cor="verde">Seu patrimônio</span>
+        <span class="fm-chave" data-cor="cinza">A meta</span>
+        <span class="fm-chave" data-cor="marca">O ponto de virada</span>
+      </figcaption>
+    </figure>
+
+    <div class="fm-reparticao tres">
+      <div class="fm-rep">
+        <span class="fm-rotulo">Tempo até lá</span>
+        <strong class="fm-rep-valor" id="ap-tempo">—</strong>
+      </div>
+      <div class="fm-rep">
+        <span class="fm-rotulo">Sai do seu bolso</span>
+        <strong class="fm-rep-valor" id="ap-aportado">R$ 0</strong>
+      </div>
+      <div class="fm-rep bom">
+        <span class="fm-rotulo">Vem dos juros</span>
+        <strong class="fm-rep-valor" id="ap-rendimento">R$ 0</strong>
+      </div>
+    </div>
+
+    <details class="fm-tabela-wrap">
+      <summary>Ver ano a ano</summary>
+      <div class="fm-tabela-scroll">
+        <table class="fm-tabela">
+          <thead><tr><th>Ano</th><th>Aportado</th><th>Rendimento</th><th>Patrimônio</th></tr></thead>
+          <tbody id="ap-tbody"></tbody>
+        </table>
+      </div>
+    </details>
+  </div>
+</div>
+
+<script>
+  import { brl, $, tempoEmPalavras, campoDinheiro, campoDecimal, contador, criarGrafico, token } from './ui.js';
+
+  const grafico = criarGrafico($('ap-chart'));
+  const mostraAlvo = contador($('ap-alvo'), (v) => brl.format(v));
+  const TETO_MESES = 12 * 60; // 60 anos: além disto a conta deixa de dizer algo útil
+
+  const lerRenda = campoDinheiro('ap-renda', 'ap-s-renda', 5000, recalcular);
+  const lerAtual = campoDinheiro('ap-atual', 'ap-s-atual', 20000, recalcular);
+  const lerAporte = campoDinheiro('ap-aporte', 'ap-s-aporte', 1000, recalcular);
+  const lerRent = campoDecimal('ap-rent', 'ap-s-rent', 4, recalcular, 30);
+  const lerRetirada = campoDecimal('ap-retirada', 'ap-s-retirada', 4, recalcular, 20);
+
+  function recalcular() {
+    const renda = lerRenda(), atual = lerAtual(), aporte = lerAporte();
+    const retirada = Math.max(0.5, lerRetirada()) / 100;
+    const i = Math.pow(1 + lerRent() / 100, 1 / 12) - 1;
+
+    const alvo = (renda * 12) / retirada;
+    mostraAlvo(alvo);
+
+    const multiplo = Math.round(1 / retirada);
+    $('ap-eco-regra').textContent = multiplo + '× o gasto do ano';
+
+    // Caminhada mês a mês até a meta
+    const patrimonio = [atual];
+    let saldo = atual, meses = 0, virada = null;
+    while (saldo < alvo && meses < TETO_MESES) {
+      const rendimentoDoMes = saldo * i;
+      if (virada === null && aporte > 0 && rendimentoDoMes > aporte) virada = meses + 1;
+      saldo = saldo + rendimentoDoMes + aporte;
+      meses++;
+      patrimonio.push(saldo);
+    }
+
+    const chegou = saldo >= alvo;
+    const aportado = atual + aporte * meses;
+    const rendimento = saldo - aportado;
+
+    $('ap-tempo').textContent = chegou ? tempoEmPalavras(meses) : 'mais de 60 anos';
+    $('ap-aportado').textContent = brl.format(aportado);
+    $('ap-rendimento').textContent = brl.format(Math.max(0, rendimento));
+
+    if (chegou) {
+      const parte = saldo > 0 ? Math.round((rendimento / saldo) * 100) : 0;
+      $('ap-nota').innerHTML = 'para tirar <b>' + brl.format(renda) + '</b> por mês para sempre, retirando ' +
+        lerRetirada().toFixed(2).replace('.', ',') + '% ao ano. Nesse caminho, <b>' + parte + '%</b> do patrimônio veio dos juros.';
+    } else {
+      $('ap-nota').innerHTML = 'com este aporte, a meta não chega em 60 anos. Aumente o aporte, a rentabilidade, ou aceite uma renda menor.';
+    }
+
+    const caixa = $('ap-achado');
+    if (virada && chegou) {
+      caixa.hidden = false;
+      $('ap-achado-frase').innerHTML =
+        'A partir do <b>mês ' + virada + '</b> (' + tempoEmPalavras(virada) + '), o seu dinheiro rende mais num mês do que os ' +
+        brl.format(aporte) + ' que você deposita. Isso acontece muito antes da meta: falta ainda ' +
+        tempoEmPalavras(Math.max(0, meses - virada)) + ' para chegar lá.';
+    } else {
+      caixa.hidden = true;
+    }
+
+    let linhas = '';
+    const anos = Math.max(1, Math.ceil(meses / 12));
+    for (let a = 1; a <= anos; a++) {
+      const m = Math.min(a * 12, patrimonio.length - 1);
+      const pat = patrimonio[m];
+      const ap = atual + aporte * m;
+      const marca = (virada && Math.ceil(virada / 12) === a) ? ' class="marcada"' : '';
+      linhas += '<tr' + marca + '><td>' + a + '</td><td>' + brl.format(ap) + '</td><td>' + brl.format(Math.max(0, pat - ap)) +
+        '</td><td>' + brl.format(pat) + '</td></tr>';
+    }
+    $('ap-tbody').innerHTML = linhas;
+
+    grafico.atualizar({
+      series: [
+        { dados: patrimonio, cor: '#3fb950' },
+        { dados: new Array(patrimonio.length).fill(alvo), cor: token('--text-tertiary', '#6e7681'), tracejada: true },
+      ],
+      areaEntre: null,
+      minEixo: alvo * 1.05,
+      marca: virada ? { i: virada, texto: 'ponto de virada' } : null,
+      formatar: (v) => brl.format(v),
+    });
+  }
+
+  recalcular();
+</script>

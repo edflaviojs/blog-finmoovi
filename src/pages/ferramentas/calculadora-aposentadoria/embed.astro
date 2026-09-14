@@ -1,0 +1,20 @@
+---
+/** Versão embutível da Calculadora de Aposentadoria. */
+import EmbedLayout from '@layouts/EmbedLayout.astro';
+import Aposentadoria from '@components/ferramentas/Aposentadoria.astro';
+import { config } from '../../../../site.config';
+
+const base = config.siteUrl.replace(/\/+$/, '');
+const urlPagina = `${base}/ferramentas/calculadora-aposentadoria/`;
+---
+
+<EmbedLayout
+  title="Calculadora de Aposentadoria"
+  description="Quanto você precisa para viver de renda e em quanto tempo chega lá."
+>
+  <h1 class="fm-embed-titulo">Calculadora de Aposentadoria</h1>
+  <Aposentadoria />
+  <p class="fm-credito">
+    <a href={urlPagina} target="_blank" rel="noopener">Calculadora de Aposentadoria por FinMoovi</a>
+  </p>
+</EmbedLayout>
