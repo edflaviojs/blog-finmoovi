@@ -1312,5 +1312,23 @@
     ],
     "veredito": "1. **O LOOP — 9/10**  \nPrimeiro e último quadro mostram praticamente a mesma frase, **“Anos tentando, descobri isso”**, no mesmo estilo e posição. Para um loop, está muito bem preparado.\n\n2. **A FAIXA DE BAIXO — 6/10**  \nHá textos na região inferior, principalmente **“E aí, comecei” (12,3s)** e os textos menores dos demais quadros. Podem ficar parcialmente cobertos pela interface do Shorts/Reels.\n\n3. **TEXTO POR CIMA DE TEXTO — 8/10**  \nNão há sobreposição grave. Os textos parecem organizados, mas alguns trechos pequenos próximos à parte inferior ficam visualmente apertados.\n\n4. **LEGIBILIDADE — 8/10**  \nOs textos principais são grandes, fortes e têm ótimo contraste. Os textos menores na parte inferior são mais difíceis de ler rapidamente no celular.\n\n5. **TELA VIVA OU VAZIA? — 7/10**  \nOs quadros **2,5s, 4,9s e 14,8s** têm bastante espaço vazio. O elemento central pequeno não ocupa área suficiente para manter a tela visualmente forte.\n\n6. **COERÊNCIA — 9/10**  \nTodos os quadros têm identidade visual consistente, mesma paleta, tipografia e estrutura. A sequência também parece contar uma história: tentativa → descoberta → resultado → descoberta do objeto.\n\n7. **TESTE CENTRAL — 7/10**  \nAinda parece um pouco mais **“slides animados” do que vídeo profissional**, principalmente nos quadros com muito espaço vazio e um único elemento central pequeno.\n\n**NOTA GERAL: 8/10**  \n**PROBLEMA 1: áreas vazias demais nos quadros 2,5s, 4,9s e 14,8s**  \n**PROBLEMA 2: texto na faixa inferior, especialmente em 12,3s**  \n**PROBLEMA 3: alguns quadros parecem slides por falta de elementos visuais maiores**  \n**PRIMEIRA COISA A MUDAR: preencher os quadros intermediários com elementos visuais maiores e manter todo texto importante acima da zona inferior de interface.**",
     "quando": "2026-09-14T10:06:29.702Z"
+  },
+  {
+    "slug": "loop-emprestar-pra-parente-depois-de-anos",
+    "formato": "loop16",
+    "nota": 7,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      2.5,
+      5.1,
+      7.6,
+      10.1,
+      12.6,
+      15.2,
+      17.6
+    ],
+    "veredito": "1. **O LOOP — 9/10**  \nO primeiro e o último quadro mostram **“Meu irmão pediu dinheiro”** no mesmo lugar e com a mesma composição. Para um loop, está muito bem preparado. A pequena diferença de enquadramento/estado gráfico não parece problemática.\n\n2. **A FAIXA DE BAIXO — 6/10**  \nAs legendas ficam muito perto da região inferior em vários quadros, especialmente **5, 6, 7 e 8**. No celular, podem competir com os elementos da interface.\n\n3. **TEXTO POR CIMA DE TEXTO — 9/10**  \nNão vejo frases claramente sobrepostas nem palavras cortadas. Os textos estão bem separados. O quadro 7 tem **“dinheiro precisa ficar”**, mas não há sobreposição.\n\n4. **LEGIBILIDADE — 8/10**  \nOs textos principais são grandes, fortes e com bom contraste. Algumas palavras menores, como **“de anos”, “do mês” e “precisa ficar”**, perdem um pouco de força em tela pequena.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — 5/10**  \nHá **muito espaço vazio na metade inferior** praticamente em todos os quadros. Isso faz a composição parecer subaproveitada.\n\n6. **COERÊNCIA — 8/10**  \nOs quadros claramente pertencem ao mesmo vídeo: mesma identidade visual, cores, tipografia e elementos gráficos. A sequência também conta uma pequena história: pedido → descoberta → falta de dinheiro → contas → empréstimo.\n\n7. **TESTE CENTRAL — 5/10**  \n**Parece mais uma sequência de slides animáveis do que um vídeo profissional**, porque quase toda a informação está concentrada em cards e diagramas estáticos, com bastante área vazia.\n\n**NOTA GERAL: 7/10**  \n**PROBLEMA 1: Muito espaço vazio na metade inferior, principalmente nos quadros 1–4 e 6–8.**  \n**PROBLEMA 2: Legendas muito próximas da faixa inferior da interface, especialmente nos quadros 5–8.**  \n**PROBLEMA 3: A composição tem aparência de slides, principalmente pelos cards estáticos e pela pouca informação visual ocupando a tela.**  \n**PRIMEIRA COISA A MUDAR: Subir e ampliar a área de conteúdo/ação para preencher melhor a tela vertical, mantendo as legendas fora da zona inferior da interface.**",
+    "quando": "2026-09-14T10:10:52.104Z"
   }
 ]
