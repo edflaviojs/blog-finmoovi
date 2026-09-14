@@ -1,0 +1,20 @@
+---
+/** Versão embutível da Calculadora de Orçamento 50-30-20. */
+import EmbedLayout from '@layouts/EmbedLayout.astro';
+import Orcamento from '@components/ferramentas/Orcamento.astro';
+import { config } from '../../../../site.config';
+
+const base = config.siteUrl.replace(/\/+$/, '');
+const urlPagina = `${base}/ferramentas/calculadora-orcamento/`;
+---
+
+<EmbedLayout
+  title="Calculadora de Orçamento 50-30-20"
+  description="Quanto pode ir para cada área do seu mês pela regra 50-30-20."
+>
+  <h1 class="fm-embed-titulo">Calculadora de Orçamento 50-30-20</h1>
+  <Orcamento />
+  <p class="fm-credito">
+    <a href={urlPagina} target="_blank" rel="noopener">Calculadora de Orçamento por FinMoovi</a>
+  </p>
+</EmbedLayout>

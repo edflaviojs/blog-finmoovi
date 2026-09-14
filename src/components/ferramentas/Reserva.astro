@@ -1,0 +1,202 @@
+---
+/**
+ * Calculadora de Reserva de Emergência.
+ *
+ * O ACHADO desta não é um valor, é uma frase: "hoje você aguenta X meses sem
+ * receber nada". Reserva medida em REAIS não diz nada a ninguém; medida em
+ * MESES DE SOSSEGO diz tudo — e é o número que faz a pessoa agir.
+ *
+ * Os meses recomendados mudam com o vínculo de trabalho, porque um servidor e
+ * um autónomo não correm o mesmo risco.
+ */
+import '@/styles/ferramentas.css';
+---
+
+<div class="fm-grid">
+  <div class="fm-rail">
+    <div class="fm-ctrl">
+      <div class="fm-ctrl-top">
+        <label for="re-gastos">Gastos essenciais por mês</label>
+        <div class="fm-campo"><span class="fm-fixo">R$</span><input id="re-gastos" type="text" inputmode="numeric" autocomplete="off" /></div>
+      </div>
+      <input class="fm-range" id="re-s-gastos" type="range" min="500" max="30000" step="100" aria-label="Gastos essenciais por mês" />
+      <span class="fm-eco">só o que não dá para cortar</span>
+    </div>
+
+    <div class="fm-ctrl">
+      <div class="fm-ctrl-top">
+        <label for="re-perfil">Como você recebe</label>
+        <div class="fm-campo">
+          <select id="re-perfil">
+            <option value="clt">CLT (carteira assinada)</option>
+            <option value="autonomo">Autônomo / freelancer</option>
+            <option value="empreendedor">Empreendedor</option>
+            <option value="servidor">Servidor público</option>
+          </select>
+        </div>
+      </div>
+      <span class="fm-eco" id="re-eco-perfil"></span>
+    </div>
+
+    <div class="fm-ctrl">
+      <div class="fm-ctrl-top">
+        <label for="re-tem">Já tem guardado</label>
+        <div class="fm-campo"><span class="fm-fixo">R$</span><input id="re-tem" type="text" inputmode="numeric" autocomplete="off" /></div>
+      </div>
+      <input class="fm-range" id="re-s-tem" type="range" min="0" max="200000" step="500" aria-label="Já tem guardado" />
+    </div>
+
+    <div class="fm-ctrl">
+      <div class="fm-ctrl-top">
+        <label for="re-guarda">Consegue guardar por mês</label>
+        <div class="fm-campo"><span class="fm-fixo">R$</span><input id="re-guarda" type="text" inputmode="numeric" autocomplete="off" /></div>
+      </div>
+      <input class="fm-range" id="re-s-guarda" type="range" min="0" max="10000" step="50" aria-label="Consegue guardar por mês" />
+    </div>
+  </div>
+
+  <div class="fm-saida">
+    <div class="fm-heroi">
+      <span class="fm-rotulo">Sua reserva ideal</span>
+      <strong class="fm-heroi-valor" id="re-ideal">R$ 0</strong>
+      <p class="fm-heroi-nota" id="re-nota"></p>
+    </div>
+
+    <div class="fm-achado">
+      <span class="fm-achado-marca" aria-hidden="true"></span>
+      <div class="fm-achado-txt">
+        <span class="fm-rotulo">Onde você está hoje</span>
+        <p id="re-achado-frase"></p>
+      </div>
+    </div>
+
+    <figure class="fm-grafico">
+      <canvas id="re-chart" role="img" aria-label="Crescimento da reserva até a meta"></canvas>
+      <figcaption class="fm-legenda">
+        <span class="fm-chave" data-cor="verde">Sua reserva</span>
+        <span class="fm-chave" data-cor="cinza">A meta ideal</span>
+        <span class="fm-chave" data-cor="marca">Quando passa do mínimo</span>
+      </figcaption>
+    </figure>
+
+    <div class="fm-reparticao tres">
+      <div class="fm-rep">
+        <span class="fm-rotulo" id="re-rot-min">Mínimo</span>
+        <strong class="fm-rep-valor" id="re-min">R$ 0</strong>
+        <span class="fm-eco" id="re-min-prazo" style="align-self:flex-start"></span>
+      </div>
+      <div class="fm-rep bom">
+        <span class="fm-rotulo" id="re-rot-ideal">Ideal</span>
+        <strong class="fm-rep-valor" id="re-ideal2">R$ 0</strong>
+        <span class="fm-eco" id="re-ideal-prazo" style="align-self:flex-start"></span>
+      </div>
+      <div class="fm-rep">
+        <span class="fm-rotulo" id="re-rot-conf">Confortável</span>
+        <strong class="fm-rep-valor" id="re-conf">R$ 0</strong>
+        <span class="fm-eco" id="re-conf-prazo" style="align-self:flex-start"></span>
+      </div>
+    </div>
+
+    <details class="fm-tabela-wrap">
+      <summary>Onde guardar essa reserva</summary>
+      <div class="fm-tabela-scroll">
+        <table class="fm-tabela">
+          <thead><tr><th>Onde</th><th>Resgate</th><th>Por quê</th></tr></thead>
+          <tbody>
+            <tr><td>CDB de liquidez diária</td><td>no mesmo dia</td><td>rende perto de 100% do CDI</td></tr>
+            <tr><td>Tesouro Selic</td><td>D+1</td><td>risco do governo federal</td></tr>
+            <tr><td>Conta remunerada</td><td>imediato</td><td>simples, mas confira a taxa</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </details>
+  </div>
+</div>
+
+<script>
+  import { brl, $, tempoEmPalavras, campoDinheiro, contador, criarGrafico, token } from './ui.js';
+
+  // Quem tem renda mais imprevisível precisa de mais meses parados.
+  const PERFIS = {
+    clt:           { min: 3, ideal: 6,  conf: 9,  texto: 'com carteira assinada há aviso prévio e seguro-desemprego' },
+    autonomo:      { min: 6, ideal: 9,  conf: 12, texto: 'sem renda garantida, o colchão precisa ser maior' },
+    empreendedor:  { min: 6, ideal: 12, conf: 18, texto: 'a empresa pode precisar do seu caixa antes de você' },
+    servidor:      { min: 3, ideal: 4,  conf: 6,  texto: 'estabilidade permite uma reserva mais enxuta' },
+  };
+  const TETO = 600;
+
+  const grafico = criarGrafico($('re-chart'));
+  const mostraIdeal = contador($('re-ideal'), (v) => brl.format(v));
+
+  const lerGastos = campoDinheiro('re-gastos', 're-s-gastos', 3500, recalcular);
+  const lerTem = campoDinheiro('re-tem', 're-s-tem', 0, recalcular);
+  const lerGuarda = campoDinheiro('re-guarda', 're-s-guarda', 500, recalcular);
+  $('re-perfil').addEventListener('change', recalcular);
+
+  function mesesPara(alvo, tem, porMes) {
+    if (tem >= alvo) return 0;
+    if (porMes <= 0) return null;
+    return Math.ceil((alvo - tem) / porMes);
+  }
+
+  function prazoEmTexto(m) {
+    if (m === 0) return 'já alcançado';
+    if (m === null) return 'sem guardar, nunca';
+    return 'em ' + tempoEmPalavras(m);
+  }
+
+  function recalcular() {
+    const gastos = lerGastos(), tem = lerTem(), guarda = lerGuarda();
+    const p = PERFIS[$('re-perfil').value] || PERFIS.clt;
+
+    const vMin = gastos * p.min, vIdeal = gastos * p.ideal, vConf = gastos * p.conf;
+
+    mostraIdeal(vIdeal);
+    $('re-ideal2').textContent = brl.format(vIdeal);
+    $('re-min').textContent = brl.format(vMin);
+    $('re-conf').textContent = brl.format(vConf);
+    $('re-rot-min').textContent = p.min + ' meses · mínimo';
+    $('re-rot-ideal').textContent = p.ideal + ' meses · ideal';
+    $('re-rot-conf').textContent = p.conf + ' meses · confortável';
+    $('re-eco-perfil').textContent = p.texto;
+
+    $('re-nota').innerHTML = 'são <b>' + p.ideal + ' meses</b> de gastos essenciais parados, prontos para usar. ' +
+      'Não é dinheiro investido: é dinheiro que espera.';
+
+    // O número que importa: meses de sossego que você já tem
+    const mesesDeSossego = gastos > 0 ? tem / gastos : 0;
+    const frase = gastos <= 0
+      ? 'Informe seus gastos essenciais para ver por quantos meses você está protegido.'
+      : (tem <= 0
+        ? 'Hoje você está protegido por <b>0 meses</b>. Se a renda parar amanhã, o primeiro boleto já é um problema.'
+        : 'Hoje você aguenta <b>' + mesesDeSossego.toFixed(1).replace('.', ',') + ' meses</b> sem receber nada. ' +
+          (mesesDeSossego >= p.ideal
+            ? 'Já passou do ideal para o seu caso — daqui para a frente, o dinheiro pode ir para investir.'
+            : 'O ideal para o seu caso são ' + p.ideal + ' meses.'));
+    $('re-achado-frase').innerHTML = frase;
+
+    const mMin = mesesPara(vMin, tem, guarda);
+    const mIdeal = mesesPara(vIdeal, tem, guarda);
+    const mConf = mesesPara(vConf, tem, guarda);
+    $('re-min-prazo').textContent = prazoEmTexto(mMin);
+    $('re-ideal-prazo').textContent = prazoEmTexto(mIdeal);
+    $('re-conf-prazo').textContent = prazoEmTexto(mConf);
+
+    // Caminho até a meta ideal
+    const horizonte = Math.min(TETO, Math.max(12, (mIdeal === null ? 60 : mIdeal) + 6));
+    const caminho = [];
+    for (let m = 0; m <= horizonte; m++) caminho.push(tem + guarda * m);
+
+    grafico.atualizar({
+      series: [
+        { dados: caminho, cor: '#3fb950' },
+        { dados: new Array(caminho.length).fill(vIdeal), cor: token('--text-tertiary', '#6e7681'), tracejada: true },
+      ],
+      minEixo: vIdeal * 1.08,
+      marca: (mMin !== null && mMin > 0 && mMin <= horizonte) ? { i: mMin, texto: 'passa do mínimo' } : null,
+      formatar: (v) => brl.format(v),
+    });
+  }
+
+  recalcular();
+</script>

@@ -1,0 +1,231 @@
+---
+/**
+ * Conversor de Moedas — cotação de verdade, do mesmo sítio do ticker do blog.
+ *
+ * Esta é a única das sete que depende de rede. Duas decisões por causa disso:
+ *  1. o valor só aparece DEPOIS de haver cotação — número antigo com cara de
+ *     número novo é pior do que não mostrar nada;
+ *  2. se a rede falhar, diz que falhou e mostra a hora da última leitura, em
+ *     vez de ficar a rodar para sempre.
+ *
+ * A variação do dia vem no mesmo pedido que as cotações: é informação que já
+ * está paga e que ninguém estava a mostrar.
+ */
+import '@/styles/ferramentas.css';
+---
+
+<div class="fm-grid">
+  <div class="fm-rail">
+    <div class="fm-ctrl">
+      <div class="fm-ctrl-top">
+        <label for="cv-valor">Valor</label>
+        <div class="fm-campo"><input id="cv-valor" type="text" inputmode="numeric" autocomplete="off" /></div>
+      </div>
+    </div>
+
+    <div class="fm-ctrl">
+      <div class="fm-ctrl-top">
+        <label for="cv-de">De</label>
+        <div class="fm-campo">
+          <select id="cv-de">
+            <option value="BRL" selected>BRL · Real</option>
+            <option value="USD">USD · Dólar</option>
+            <option value="EUR">EUR · Euro</option>
+            <option value="GBP">GBP · Libra</option>
+            <option value="ARS">ARS · Peso argentino</option>
+            <option value="BTC">BTC · Bitcoin</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="fm-ctrl">
+      <div class="fm-ctrl-top">
+        <label for="cv-para">Para</label>
+        <div class="fm-campo">
+          <select id="cv-para">
+            <option value="BRL">BRL · Real</option>
+            <option value="USD" selected>USD · Dólar</option>
+            <option value="EUR">EUR · Euro</option>
+            <option value="GBP">GBP · Libra</option>
+            <option value="ARS">ARS · Peso argentino</option>
+            <option value="BTC">BTC · Bitcoin</option>
+          </select>
+        </div>
+      </div>
+      <button class="fm-inverter" id="cv-inverter" type="button">⇄ inverter as duas</button>
+    </div>
+  </div>
+
+  <div class="fm-saida">
+    <div class="fm-heroi">
+      <span class="fm-rotulo" id="cv-rotulo">Convertendo…</span>
+      <strong class="fm-heroi-valor" id="cv-resultado">—</strong>
+      <p class="fm-heroi-nota" id="cv-taxa">Buscando a cotação do momento…</p>
+    </div>
+
+    <div class="fm-achado" id="cv-achado" hidden>
+      <span class="fm-achado-marca" aria-hidden="true"></span>
+      <div class="fm-achado-txt">
+        <span class="fm-rotulo">Hoje</span>
+        <p id="cv-achado-frase"></p>
+      </div>
+    </div>
+
+    <div class="fm-cotacoes" id="cv-lista"></div>
+
+    <p class="fm-fonte" id="cv-fonte">Fonte: AwesomeAPI · taxa comercial, sem o spread que o seu banco cobra.</p>
+  </div>
+</div>
+
+<style>
+  .fm-inverter {
+    align-self: flex-start;
+    background: transparent;
+    border: 1px solid var(--border-default);
+    border-radius: 999px;
+    color: var(--text-secondary);
+    font: inherit;
+    font-size: 12px;
+    padding: 5px 12px;
+    cursor: pointer;
+    transition: border-color .15s, color .15s;
+  }
+  .fm-inverter:hover { border-color: var(--brand-cyan); color: var(--text-primary); }
+  .fm-inverter:focus-visible { outline: 2px solid var(--brand-cyan); outline-offset: 2px; }
+
+  .fm-cotacoes { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+  .fm-cotacao {
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-muted, #21262d);
+    border-radius: 10px;
+    padding: 10px 12px;
+    display: flex; flex-direction: column; gap: 2px;
+  }
+  .fm-cotacao-topo { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+  .fm-cotacao-sigla { font-family: var(--fm-mono); font-size: 11px; font-weight: 700; color: var(--text-secondary); letter-spacing: .06em; }
+  .fm-cotacao-var { font-family: var(--fm-mono); font-size: 11px; font-weight: 700; }
+  .fm-cotacao-var.sobe { color: #3fb950; }
+  .fm-cotacao-var.desce { color: #f85149; }
+  .fm-cotacao-valor { font-family: var(--fm-mono); font-size: 16px; font-weight: 700; color: var(--text-primary); font-variant-numeric: tabular-nums; letter-spacing: -.02em; }
+  .fm-cotacao-nome { font-size: 11px; color: var(--text-tertiary); }
+  .fm-fonte { margin: 0; font-size: 11px; color: var(--text-tertiary); }
+</style>
+
+<script>
+  import { $, inteiro } from './ui.js';
+
+  const MOEDAS = {
+    BRL: 'Real', USD: 'Dólar', EUR: 'Euro',
+    GBP: 'Libra', ARS: 'Peso argentino', BTC: 'Bitcoin',
+  };
+
+  let taxas = null;     // quanto vale 1 unidade da moeda em BRL
+  let variacao = {};
+  let valor = 1000;
+
+  const campo = $('cv-valor');
+  campo.value = inteiro.format(valor);
+  campo.addEventListener('input', () => {
+    const d = campo.value.replace(/\D/g, '');
+    valor = d ? parseInt(d, 10) : 0;
+    campo.value = inteiro.format(valor);
+    converter();
+  });
+
+  $('cv-de').addEventListener('change', converter);
+  $('cv-para').addEventListener('change', converter);
+  $('cv-inverter').addEventListener('click', () => {
+    const de = $('cv-de').value;
+    $('cv-de').value = $('cv-para').value;
+    $('cv-para').value = de;
+    converter();
+  });
+
+  function formatar(n, casas) {
+    return n.toLocaleString('pt-BR', { minimumFractionDigits: casas, maximumFractionDigits: casas });
+  }
+
+  function converter() {
+    if (!taxas) return;
+    const de = $('cv-de').value, para = $('cv-para').value;
+    if (!taxas[de] || !taxas[para]) return;
+
+    const emBRL = valor * taxas[de];
+    const resultado = emBRL / taxas[para];
+    const casas = resultado < 1 ? 6 : 2;
+
+    $('cv-rotulo').textContent = inteiro.format(valor) + ' ' + de + ' equivale a';
+    $('cv-resultado').textContent = formatar(resultado, casas) + ' ' + para;
+
+    const unitario = taxas[de] / taxas[para];
+    $('cv-taxa').innerHTML = '1 ' + de + ' = <b>' + formatar(unitario, unitario < 1 ? 6 : 4) + ' ' + para + '</b>';
+  }
+
+  function pintarLista() {
+    const siglas = ['USD', 'EUR', 'GBP', 'ARS', 'BTC'];
+    $('cv-lista').innerHTML = siglas.map((s) => {
+      if (!taxas || !taxas[s]) return '';
+      const v = taxas[s];
+      const pct = variacao[s];
+      const classe = pct == null ? '' : (pct >= 0 ? ' sobe' : ' desce');
+      const sinal = pct == null ? '' : (pct >= 0 ? '+' : '');
+      return '<div class="fm-cotacao">' +
+        '<div class="fm-cotacao-topo"><span class="fm-cotacao-sigla">' + s + '</span>' +
+        (pct == null ? '' : '<span class="fm-cotacao-var' + classe + '">' + sinal + pct.toFixed(2).replace('.', ',') + '%</span>') +
+        '</div>' +
+        '<span class="fm-cotacao-valor">R$ ' + formatar(v, s === 'BTC' ? 0 : 4) + '</span>' +
+        '<span class="fm-cotacao-nome">' + MOEDAS[s] + '</span>' +
+        '</div>';
+    }).join('');
+  }
+
+  function contarAltas() {
+    const pares = Object.entries(variacao).filter(([, v]) => v != null);
+    if (!pares.length) return;
+    const sobem = pares.filter(([, v]) => v > 0).map(([k]) => k);
+    const descem = pares.filter(([, v]) => v < 0).map(([k]) => k);
+    const maior = pares.slice().sort((a, b) => Math.abs(b[1]) - Math.abs(a[1]))[0];
+
+    $('cv-achado').hidden = false;
+    $('cv-achado-frase').innerHTML =
+      'Contra o real, <b>' + sobem.length + '</b> ' + (sobem.length === 1 ? 'moeda subiu' : 'moedas subiram') +
+      ' e <b>' + descem.length + '</b> ' + (descem.length === 1 ? 'caiu' : 'caíram') +
+      '. O maior movimento é o ' + MOEDAS[maior[0]].toLowerCase() + ', com <b>' +
+      (maior[1] >= 0 ? '+' : '') + maior[1].toFixed(2).replace('.', ',') + '%</b>.';
+  }
+
+  async function buscar() {
+    try {
+      const res = await fetch('/api/moedas?pairs=USD-BRL,EUR-BRL,GBP-BRL,ARS-BRL,BTC-BRL');
+      if (!res.ok) throw new Error('resposta ' + res.status);
+      const dados = await res.json();
+
+      const novo = { BRL: 1 };
+      const pares = { USD: 'USDBRL', EUR: 'EURBRL', GBP: 'GBPBRL', ARS: 'ARSBRL', BTC: 'BTCBRL' };
+      for (const [sigla, chave] of Object.entries(pares)) {
+        if (dados[chave] && dados[chave].bid) {
+          novo[sigla] = parseFloat(dados[chave].bid);
+          const p = parseFloat(dados[chave].pctChange);
+          variacao[sigla] = isNaN(p) ? null : p;
+        }
+      }
+      taxas = novo;
+
+      pintarLista();
+      contarAltas();
+      converter();
+      $('cv-fonte').textContent = 'Fonte: AwesomeAPI · lido às ' +
+        new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' }) +
+        ' · taxa comercial, sem o spread que o seu banco cobra.';
+    } catch (e) {
+      // Fail-loud: sem cotação não se mostra número nenhum.
+      $('cv-rotulo').textContent = 'Sem cotação';
+      $('cv-resultado').textContent = '—';
+      $('cv-taxa').textContent = 'Não consegui ler a cotação agora (' + e.message + '). Atualize a página daqui a pouco.';
+      $('cv-fonte').textContent = 'Fonte: AwesomeAPI · a última tentativa falhou.';
+    }
+  }
+
+  buscar();
+</script>

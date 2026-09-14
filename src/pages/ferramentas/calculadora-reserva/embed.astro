@@ -1,0 +1,20 @@
+---
+/** Versão embutível da Calculadora de Reserva de Emergência. */
+import EmbedLayout from '@layouts/EmbedLayout.astro';
+import Reserva from '@components/ferramentas/Reserva.astro';
+import { config } from '../../../../site.config';
+
+const base = config.siteUrl.replace(/\/+$/, '');
+const urlPagina = `${base}/ferramentas/calculadora-reserva/`;
+---
+
+<EmbedLayout
+  title="Calculadora de Reserva de Emergência"
+  description="Quanto guardar e por quantos meses você já está protegido."
+>
+  <h1 class="fm-embed-titulo">Calculadora de Reserva de Emergência</h1>
+  <Reserva />
+  <p class="fm-credito">
+    <a href={urlPagina} target="_blank" rel="noopener">Calculadora de Reserva de Emergência por FinMoovi</a>
+  </p>
+</EmbedLayout>

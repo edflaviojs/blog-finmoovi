@@ -1,0 +1,190 @@
+---
+/**
+ * Simulador de Investimento — a conta ao contrário.
+ *
+ * As outras perguntam "quanto rende?". Esta pergunta "quanto preciso pôr?", que
+ * é a pergunta de quem tem um objetivo e não sabe por onde começar.
+ *
+ * O ACHADO é o preço da pressa: esperar mais alguns anos derruba o aporte
+ * mensal muito mais do que as pessoas imaginam, porque o tempo faz o trabalho
+ * que o bolso teria de fazer.
+ */
+import '@/styles/ferramentas.css';
+---
+
+<div class="fm-grid">
+  <div class="fm-rail">
+    <div class="fm-ctrl">
+      <div class="fm-ctrl-top">
+        <label for="si-objetivo">Seu objetivo</label>
+        <div class="fm-campo"><span class="fm-fixo">R$</span><input id="si-objetivo" type="text" inputmode="numeric" autocomplete="off" /></div>
+      </div>
+      <input class="fm-range" id="si-s-objetivo" type="range" min="1000" max="2000000" step="1000" aria-label="Objetivo" />
+    </div>
+
+    <div class="fm-ctrl">
+      <div class="fm-ctrl-top">
+        <label for="si-inicial">Já tem hoje</label>
+        <div class="fm-campo"><span class="fm-fixo">R$</span><input id="si-inicial" type="text" inputmode="numeric" autocomplete="off" /></div>
+      </div>
+      <input class="fm-range" id="si-s-inicial" type="range" min="0" max="500000" step="1000" aria-label="Valor inicial" />
+    </div>
+
+    <div class="fm-ctrl">
+      <div class="fm-ctrl-top">
+        <label for="si-taxa">Rendimento</label>
+        <div class="fm-campo"><input id="si-taxa" type="text" inputmode="decimal" autocomplete="off" /><span class="fm-fixo">% a.m.</span></div>
+      </div>
+      <input class="fm-range" id="si-s-taxa" type="range" min="0" max="2" step="0.05" aria-label="Rendimento ao mês" />
+      <span class="fm-eco" id="si-eco-taxa"></span>
+    </div>
+
+    <div class="fm-ctrl">
+      <div class="fm-ctrl-top">
+        <label for="si-prazo">Prazo</label>
+        <div class="fm-campo"><input id="si-prazo" type="text" inputmode="numeric" autocomplete="off" /><span class="fm-fixo">anos</span></div>
+      </div>
+      <input class="fm-range" id="si-s-prazo" type="range" min="1" max="40" step="1" aria-label="Prazo em anos" />
+    </div>
+  </div>
+
+  <div class="fm-saida">
+    <div class="fm-heroi">
+      <span class="fm-rotulo">Você precisa investir</span>
+      <strong class="fm-heroi-valor" id="si-aporte">R$ 0</strong>
+      <p class="fm-heroi-nota" id="si-nota"></p>
+    </div>
+
+    <div class="fm-achado" id="si-achado" hidden>
+      <span class="fm-achado-marca" aria-hidden="true"></span>
+      <div class="fm-achado-txt">
+        <span class="fm-rotulo">O preço da pressa</span>
+        <p id="si-achado-frase"></p>
+      </div>
+    </div>
+
+    <figure class="fm-grafico">
+      <canvas id="si-chart" role="img" aria-label="Caminho até o objetivo"></canvas>
+      <figcaption class="fm-legenda">
+        <span class="fm-chave" data-cor="verde">Seu dinheiro</span>
+        <span class="fm-chave" data-cor="cinza">O objetivo</span>
+        <span class="fm-chave" data-cor="area">A diferença são os juros</span>
+      </figcaption>
+    </figure>
+
+    <div class="fm-reparticao">
+      <div class="fm-rep">
+        <span class="fm-rotulo">Sai do seu bolso</span>
+        <strong class="fm-rep-valor" id="si-bolso">R$ 0</strong>
+      </div>
+      <div class="fm-rep bom">
+        <span class="fm-rotulo">Vem dos juros</span>
+        <strong class="fm-rep-valor" id="si-juros">R$ 0</strong>
+      </div>
+    </div>
+
+    <details class="fm-tabela-wrap" open>
+      <summary>E se o prazo fosse outro?</summary>
+      <div class="fm-tabela-scroll">
+        <table class="fm-tabela">
+          <thead><tr><th>Prazo</th><th>Aporte por mês</th><th>Do bolso</th><th>Dos juros</th></tr></thead>
+          <tbody id="si-tbody"></tbody>
+        </table>
+      </div>
+    </details>
+  </div>
+</div>
+
+<script>
+  import { brl, $, campoDinheiro, campoDecimal, campoInteiro, contador, criarGrafico, token } from './ui.js';
+
+  const grafico = criarGrafico($('si-chart'));
+  const mostraAporte = contador($('si-aporte'), (v) => brl.format(v));
+
+  const lerObjetivo = campoDinheiro('si-objetivo', 'si-s-objetivo', 100000, recalcular);
+  const lerInicial = campoDinheiro('si-inicial', 'si-s-inicial', 0, recalcular);
+  const lerTaxa = campoDecimal('si-taxa', 'si-s-taxa', 1, recalcular, 10);
+  const lerPrazo = campoInteiro('si-prazo', 'si-s-prazo', 5, recalcular, 60);
+
+  /** Quanto tem de entrar por mês para chegar ao objetivo. */
+  function aporteNecessario(objetivo, inicial, i, meses) {
+    if (meses <= 0) return 0;
+    if (i === 0) return Math.max(0, (objetivo - inicial) / meses);
+    const inicialNoFim = inicial * Math.pow(1 + i, meses);
+    const falta = objetivo - inicialNoFim;
+    if (falta <= 0) return 0;
+    return falta / ((Math.pow(1 + i, meses) - 1) / i);
+  }
+
+  function recalcular() {
+    const objetivo = lerObjetivo(), inicial = lerInicial();
+    const i = lerTaxa() / 100, anos = Math.max(1, lerPrazo()), meses = anos * 12;
+
+    const aporte = aporteNecessario(objetivo, inicial, i, meses);
+    const doBolso = inicial + aporte * meses;
+    const dosJuros = Math.max(0, objetivo - doBolso);
+
+    mostraAporte(aporte);
+    $('si-bolso').textContent = brl.format(doBolso);
+    $('si-juros').textContent = brl.format(dosJuros);
+
+    const faixa = lerTaxa();
+    $('si-eco-taxa').textContent = faixa <= 0.7 ? 'perfil conservador' : (faixa <= 1.05 ? 'perfil moderado' : 'perfil arrojado');
+
+    if (aporte <= 0) {
+      $('si-nota').innerHTML = 'nada: o que você já tem hoje chega ao objetivo em ' + anos + (anos === 1 ? ' ano' : ' anos') + ' só com os juros.';
+    } else {
+      const parte = objetivo > 0 ? Math.round((dosJuros / objetivo) * 100) : 0;
+      $('si-nota').innerHTML = 'por mês, durante ' + anos + (anos === 1 ? ' ano' : ' anos') + ', para chegar a <b>' +
+        brl.format(objetivo) + '</b>. Os juros fazem <b>' + parte + '%</b> do trabalho.';
+    }
+
+    // O preço da pressa: o mesmo objetivo com mais tempo
+    const maisAnos = anos + 3;
+    const aporteMais = aporteNecessario(objetivo, inicial, i, maisAnos * 12);
+    const caixa = $('si-achado');
+    if (aporte > 0 && aporteMais < aporte) {
+      caixa.hidden = false;
+      const queda = Math.round((1 - aporteMais / aporte) * 100);
+      $('si-achado-frase').innerHTML =
+        'Com <b>' + maisAnos + ' anos</b> em vez de ' + anos + ', o aporte cai para <b>' + brl.format(aporteMais) +
+        '</b> por mês — <b>' + queda + '% menos</b> todo mês, pelo mesmo objetivo. O tempo faz o trabalho que o bolso teria de fazer.';
+    } else {
+      caixa.hidden = true;
+    }
+
+    // Caminho mês a mês
+    const comJuros = [inicial], semJuros = [inicial];
+    let saldo = inicial;
+    for (let m = 1; m <= meses; m++) {
+      saldo = saldo * (1 + i) + aporte;
+      comJuros.push(saldo);
+      semJuros.push(inicial + aporte * m);
+    }
+
+    const prazos = [Math.max(1, anos - 3), Math.max(1, anos - 1), anos, anos + 3, anos + 5]
+      .filter((v, k, arr) => arr.indexOf(v) === k);
+    $('si-tbody').innerHTML = prazos.map((a) => {
+      const m = a * 12;
+      const ap = aporteNecessario(objetivo, inicial, i, m);
+      const bolso = inicial + ap * m;
+      const marca = a === anos ? ' class="marcada"' : '';
+      return '<tr' + marca + '><td>' + a + (a === 1 ? ' ano' : ' anos') + '</td><td>' + brl.format(ap) +
+        '</td><td>' + brl.format(bolso) + '</td><td>' + brl.format(Math.max(0, objetivo - bolso)) + '</td></tr>';
+    }).join('');
+
+    grafico.atualizar({
+      series: [
+        { dados: comJuros, cor: '#3fb950' },
+        { dados: semJuros, cor: token('--text-tertiary', '#6e7681'), tracejada: true },
+      ],
+      areaEntre: [0, 1],
+      corArea: 'rgba(63,185,80,.13)',
+      minEixo: objetivo * 1.03,
+      marca: null,
+      formatar: (v) => brl.format(v),
+    });
+  }
+
+  recalcular();
+</script>

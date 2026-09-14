@@ -1,0 +1,20 @@
+---
+/** Versão embutível do Simulador de Investimento. */
+import EmbedLayout from '@layouts/EmbedLayout.astro';
+import SimuladorInvestimento from '@components/ferramentas/SimuladorInvestimento.astro';
+import { config } from '../../../../site.config';
+
+const base = config.siteUrl.replace(/\/+$/, '');
+const urlPagina = `${base}/ferramentas/simulador-investimento/`;
+---
+
+<EmbedLayout
+  title="Simulador de Investimento"
+  description="Quanto você precisa investir por mês para alcançar o seu objetivo."
+>
+  <h1 class="fm-embed-titulo">Simulador de Investimento</h1>
+  <SimuladorInvestimento />
+  <p class="fm-credito">
+    <a href={urlPagina} target="_blank" rel="noopener">Simulador de Investimento por FinMoovi</a>
+  </p>
+</EmbedLayout>

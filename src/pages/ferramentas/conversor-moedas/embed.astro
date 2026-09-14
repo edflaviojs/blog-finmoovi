@@ -1,0 +1,26 @@
+---
+/**
+ * Versão embutível do Conversor de Moedas.
+ *
+ * Esta é a única que faz pedido de rede depois de carregar. O pedido sai para
+ * `/api/moedas` do próprio blog — dentro do iframe, a origem é a nossa, por
+ * isso funciona na página de qualquer portal sem precisar de nada do lado dele.
+ */
+import EmbedLayout from '@layouts/EmbedLayout.astro';
+import ConversorMoedas from '@components/ferramentas/ConversorMoedas.astro';
+import { config } from '../../../../site.config';
+
+const base = config.siteUrl.replace(/\/+$/, '');
+const urlPagina = `${base}/ferramentas/conversor-moedas/`;
+---
+
+<EmbedLayout
+  title="Conversor de Moedas"
+  description="Converta entre real, dólar, euro e outras moedas com cotação do momento."
+>
+  <h1 class="fm-embed-titulo">Conversor de Moedas</h1>
+  <ConversorMoedas />
+  <p class="fm-credito">
+    <a href={urlPagina} target="_blank" rel="noopener">Conversor de Moedas por FinMoovi</a>
+  </p>
+</EmbedLayout>

@@ -1,0 +1,145 @@
+---
+/**
+ * Calculadora de Orçamento 50-30-20.
+ *
+ * O herói é a fatia dos 20% e não a renda: a divisão toda existe por causa
+ * dela, e é a única das três que ninguém separa sozinho.
+ *
+ * O ACHADO liga esta calculadora à dos juros compostos — mostra no que aqueles
+ * 20% se transformam em 10 anos. A taxa usada é DITA na frase, porque número
+ * de rendimento sem a taxa ao lado é promessa, não conta.
+ */
+import '@/styles/ferramentas.css';
+---
+
+<div class="fm-grid">
+  <div class="fm-rail">
+    <div class="fm-ctrl">
+      <div class="fm-ctrl-top">
+        <label for="or-renda">Renda líquida mensal</label>
+        <div class="fm-campo"><span class="fm-fixo">R$</span><input id="or-renda" type="text" inputmode="numeric" autocomplete="off" /></div>
+      </div>
+      <input class="fm-range" id="or-s-renda" type="range" min="500" max="30000" step="100" aria-label="Renda líquida mensal" />
+      <span class="fm-eco">o que cai na conta</span>
+    </div>
+
+    <div class="fm-ctrl">
+      <div class="fm-ctrl-top">
+        <label for="or-gasto">Gasto com necessidades hoje</label>
+        <div class="fm-campo"><span class="fm-fixo">R$</span><input id="or-gasto" type="text" inputmode="numeric" autocomplete="off" /></div>
+      </div>
+      <input class="fm-range" id="or-s-gasto" type="range" min="0" max="30000" step="100" aria-label="Gasto com necessidades hoje" />
+      <span class="fm-eco">aluguel, contas, comida, transporte</span>
+    </div>
+  </div>
+
+  <div class="fm-saida">
+    <div class="fm-heroi">
+      <span class="fm-rotulo">Guarde todo mês</span>
+      <strong class="fm-heroi-valor" id="or-guardar">R$ 0</strong>
+      <p class="fm-heroi-nota" id="or-nota"></p>
+    </div>
+
+    <div class="fm-achado" id="or-achado" hidden>
+      <span class="fm-achado-marca" aria-hidden="true"></span>
+      <div class="fm-achado-txt">
+        <span class="fm-rotulo" id="or-achado-titulo">No que isso vira</span>
+        <p id="or-achado-frase"></p>
+      </div>
+    </div>
+
+    <div class="fm-reparticao tres">
+      <div class="fm-rep" id="or-card-nec">
+        <span class="fm-rotulo">50% · Necessidades</span>
+        <strong class="fm-rep-valor" id="or-nec">R$ 0</strong>
+        <span class="fm-eco" id="or-nec-eco" style="align-self:flex-start"></span>
+      </div>
+      <div class="fm-rep">
+        <span class="fm-rotulo">30% · Desejos</span>
+        <strong class="fm-rep-valor" id="or-des">R$ 0</strong>
+        <span class="fm-eco" style="align-self:flex-start">lazer, compras, assinaturas</span>
+      </div>
+      <div class="fm-rep bom">
+        <span class="fm-rotulo">20% · Para você</span>
+        <strong class="fm-rep-valor" id="or-met">R$ 0</strong>
+        <span class="fm-eco" style="align-self:flex-start">reserva, investir, quitar dívida</span>
+      </div>
+    </div>
+
+    <div class="fm-barra" aria-hidden="true">
+      <span class="parte-a" style="width:50%"></span>
+      <span style="width:30%;background:#bc8cff"></span>
+      <span class="parte-b" style="width:20%"></span>
+    </div>
+
+    <details class="fm-tabela-wrap">
+      <summary>Ver o ano inteiro</summary>
+      <div class="fm-tabela-scroll">
+        <table class="fm-tabela">
+          <thead><tr><th>Período</th><th>Necessidades</th><th>Desejos</th><th>Para você</th></tr></thead>
+          <tbody id="or-tbody"></tbody>
+        </table>
+      </div>
+    </details>
+  </div>
+</div>
+
+<script>
+  import { brl, $, campoDinheiro, contador } from './ui.js';
+
+  // Taxa de referência da frase do achado. Fica aqui, visível, e aparece
+  // escrita no texto: rendimento sem taxa ao lado é promessa, não conta.
+  const TAXA_REF = 0.01;
+  const ANOS_REF = 10;
+
+  const mostraGuardar = contador($('or-guardar'), (v) => brl.format(v));
+  const lerRenda = campoDinheiro('or-renda', 'or-s-renda', 5000, recalcular);
+  const lerGasto = campoDinheiro('or-gasto', 'or-s-gasto', 2800, recalcular);
+
+  function recalcular() {
+    const renda = lerRenda(), gasto = lerGasto();
+    const nec = renda * 0.5, des = renda * 0.3, met = renda * 0.2;
+
+    mostraGuardar(met);
+    $('or-nec').textContent = brl.format(nec);
+    $('or-des').textContent = brl.format(des);
+    $('or-met').textContent = brl.format(met);
+
+    const sobra = nec - gasto;
+    const card = $('or-card-nec');
+    card.classList.toggle('aviso', sobra < 0);
+    $('or-nec-eco').textContent = renda > 0
+      ? (sobra >= 0
+          ? 'sobram ' + brl.format(sobra) + ' dentro do limite'
+          : 'você passa ' + brl.format(-sobra) + ' do limite')
+      : '';
+
+    if (renda <= 0) {
+      $('or-nota').textContent = '';
+      $('or-achado').hidden = true;
+      $('or-tbody').innerHTML = '';
+      return;
+    }
+
+    const pctGasto = Math.round((gasto / renda) * 100);
+    $('or-nota').innerHTML = sobra >= 0
+      ? 'são 20% de ' + brl.format(renda) + '. Hoje suas necessidades levam <b>' + pctGasto + '%</b> da renda — está dentro dos 50%.'
+      : 'são 20% de ' + brl.format(renda) + '. Mas hoje suas necessidades levam <b>' + pctGasto + '%</b> da renda, e a regra pede no máximo 50%.';
+
+    // No que os 20% se transformam
+    const meses = ANOS_REF * 12;
+    const futuro = met * ((Math.pow(1 + TAXA_REF, meses) - 1) / TAXA_REF);
+    const doBolso = met * meses;
+    $('or-achado').hidden = met <= 0;
+    $('or-achado-frase').innerHTML =
+      'Guardando <b>' + brl.format(met) + '</b> por mês a 1% ao mês, em ' + ANOS_REF + ' anos você tem <b>' +
+      brl.format(futuro) + '</b> — dos quais ' + brl.format(futuro - doBolso) + ' vieram dos juros, não do seu bolso.';
+
+    const periodos = [['1 mês', 1], ['3 meses', 3], ['6 meses', 6], ['1 ano', 12]];
+    $('or-tbody').innerHTML = periodos.map(([rotulo, n]) =>
+      '<tr><td>' + rotulo + '</td><td>' + brl.format(nec * n) + '</td><td>' + brl.format(des * n) + '</td><td>' + brl.format(met * n) + '</td></tr>'
+    ).join('');
+  }
+
+  recalcular();
+</script>

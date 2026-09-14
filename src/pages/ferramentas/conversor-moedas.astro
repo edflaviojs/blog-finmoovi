@@ -1,13 +1,12 @@
 ---
 import BaseLayout from '@layouts/BaseLayout.astro';
-import EmbedLayout from '@layouts/EmbedLayout.astro';
 import Header from '@components/header/Header.astro';
 import Footer from '@components/footer/Footer.astro';
 import InlineAppCTA from '@components/banners/InlineAppCTA.astro';
 import SchemaBreadcrumb from '@components/seo/SchemaBreadcrumb.astro';
+import ConversorMoedas from '@components/ferramentas/ConversorMoedas.astro';
+import CodigoEmbed from '@components/ferramentas/CodigoEmbed.astro';
 import { canonicalPath } from '@/utils/url';
-
-const isEmbed = Astro.url.searchParams.get('embed') === 'true';
 
 const breadcrumbItems = [
   { name: 'Início', url: '/' },
@@ -21,285 +20,89 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Qual a cotação do dólar hoje?",
-      "acceptedAnswer": { "@type": "Answer", "text": "A cotação do dólar varia em tempo real. Use nosso conversor acima para ver o valor atualizado do dólar em relação ao real, euro e outras moedas." }
+      "name": "De onde vêm as cotações?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Da AwesomeAPI, a mesma fonte do ticker no topo do blog. O valor mostrado é a taxa comercial, que é a referência do mercado." }
     },
     {
       "@type": "Question",
-      "name": "Como converter real para dólar?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Selecione BRL como moeda de origem, USD como destino, digite o valor e o conversor calcula automaticamente com a cotação atual." }
+      "name": "Por que o valor do banco é diferente?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Porque bancos e casas de câmbio aplicam spread e tarifas sobre a taxa comercial, além do IOF quando aplicável. A taxa comercial serve como referência para comparar propostas, não como o valor final da operação." }
     },
     {
       "@type": "Question",
-      "name": "As cotações são atualizadas em tempo real?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Sim, utilizamos a API do ExchangeRate que atualiza as cotações diariamente com base nas taxas do mercado internacional." }
+      "name": "De quanto em quanto tempo a cotação é atualizada?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A cada vez que a página é aberta. Em dia útil reflete o mercado no momento; no fim de semana mostra o fechamento da sexta-feira." }
+    },
+    {
+      "@type": "Question",
+      "name": "Posso usar essa taxa para transferência internacional?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Como referência, sim. O valor final depende do spread e das tarifas do serviço que você usar, por isso compare a proposta recebida com a taxa comercial mostrada aqui." }
     }
   ]
 };
-
-const Layout = isEmbed ? EmbedLayout : BaseLayout;
-const layoutProps = isEmbed
-  ? { title: 'Conversor de Moedas' }
-  : {
-      title: 'Conversor de Moedas Online Grátis - Cotação em Tempo Real',
-      description: 'Converta entre Real, Dólar, Euro e outras moedas com cotação atualizada. Conversor grátis com taxas em tempo real.',
-      keywords: ['conversor de moedas', 'dólar hoje', 'euro hoje', 'cotação dólar', 'câmbio', 'converter real para dólar']
-    };
 ---
 
-<Layout {...layoutProps}>
-  {!isEmbed && <SchemaBreadcrumb items={breadcrumbItems} />}
-  {!isEmbed && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
-  {!isEmbed && <Header />}
+<BaseLayout
+  title="Conversor de Moedas Online Grátis - Cotação em Tempo Real"
+  description="Converta entre real, dólar, euro e outras moedas com cotação atualizada e a variação do dia. Grátis, sem cadastro."
+  keywords={['conversor de moedas', 'cotação do dólar', 'dólar hoje', 'euro hoje', 'converter real em dólar', 'câmbio']}
+>
+  <SchemaBreadcrumb items={breadcrumbItems} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <Header />
 
   <main class="tool-page" data-pagefind-body>
     <div class="container">
-      {!isEmbed && (
-        <header class="tool-header">
-          <nav class="tool-breadcrumb">
-            <a href="/">Início</a> → <a href={canonicalPath('/ferramentas')}>Ferramentas</a> → <span>Conversor de Moedas</span>
-          </nav>
-          <h1>Conversor de Moedas</h1>
-          <p class="tool-subtitle">Converta valores entre moedas com cotação atualizada em tempo real.</p>
-        </header>
-      )}
+      <header class="tool-header">
+        <nav class="tool-breadcrumb">
+          <a href="/">Início</a> → <a href={canonicalPath('/ferramentas')}>Ferramentas</a> → <span>Conversor de Moedas</span>
+        </nav>
+        <span class="fm-formula">taxa comercial · sem o spread do banco</span>
+        <h1>Conversor de Moedas</h1>
+        <p class="tool-subtitle">Converta com a cotação do momento e veja quanto cada moeda andou hoje contra o real.</p>
+      </header>
 
-      <div class="converter-layout">
-        <div class="converter-card">
-          <div class="converter-row">
-            <div class="converter-input-group">
-              <label for="amount">Valor</label>
-              <input type="number" id="amount" value="1000" min="0" step="1" />
-            </div>
-            <div class="converter-input-group">
-              <label for="from-currency">De</label>
-              <select id="from-currency">
-                <option value="BRL" selected>BRL - Real</option>
-                <option value="USD">USD - Dólar</option>
-                <option value="EUR">EUR - Euro</option>
-                <option value="GBP">GBP - Libra</option>
-                <option value="ARS">ARS - Peso Arg.</option>
-                <option value="BTC">BTC - Bitcoin</option>
-              </select>
-            </div>
-            <button class="swap-btn" id="swap-btn" title="Inverter">⇄</button>
-            <div class="converter-input-group">
-              <label for="to-currency">Para</label>
-              <select id="to-currency">
-                <option value="BRL">BRL - Real</option>
-                <option value="USD" selected>USD - Dólar</option>
-                <option value="EUR">EUR - Euro</option>
-                <option value="GBP">GBP - Libra</option>
-                <option value="ARS">ARS - Peso Arg.</option>
-                <option value="BTC">BTC - Bitcoin</option>
-              </select>
-            </div>
-          </div>
+      <ConversorMoedas />
 
-          <div class="converter-result" id="result">
-            <div class="result-main" id="result-main">---</div>
-            <div class="result-rate" id="result-rate">Carregando cotação...</div>
-            <div class="result-updated" id="result-updated"></div>
-          </div>
-        </div>
+      <InlineAppCTA variant="full" locale="pt" />
 
-        <div class="rates-table" id="rates-table">
-          <h3>Cotações do Dia (base: BRL)</h3>
-          <div class="rates-grid" id="rates-grid">
-            <div class="rate-loading">Carregando...</div>
-          </div>
-        </div>
-      </div>
+      <section class="tool-faq">
+        <h2>Perguntas Frequentes</h2>
+        <details>
+          <summary>De onde vêm as cotações?</summary>
+          <p>Da <strong>AwesomeAPI</strong>, a mesma fonte do ticker no topo do blog. O valor é a <strong>taxa comercial</strong>, a referência do mercado.</p>
+        </details>
+        <details>
+          <summary>Por que o valor do meu banco é diferente?</summary>
+          <p>Porque bancos e casas de câmbio somam <strong>spread</strong>, tarifas e IOF sobre a taxa comercial. Use o valor daqui para comparar propostas, não como preço final.</p>
+        </details>
+        <details>
+          <summary>De quanto em quanto tempo atualiza?</summary>
+          <p>A cada vez que você abre a página. Em dia útil reflete o mercado no momento; no fim de semana mostra o fechamento de sexta.</p>
+        </details>
+        <details>
+          <summary>Serve para transferência internacional?</summary>
+          <p>Como <strong>referência</strong>. O valor final depende do spread e das tarifas do serviço — compare a proposta recebida com a taxa mostrada aqui.</p>
+        </details>
+      </section>
 
-      {!isEmbed && <InlineAppCTA variant="full" locale="pt" />}
-
-      {!isEmbed && (
-        <section class="tool-faq">
-          <h2>Perguntas Frequentes</h2>
-          <details>
-            <summary>De onde vêm as cotações?</summary>
-            <p>As cotações são obtidas da AwesomeAPI (mesma fonte do ticker no topo do blog) e refletem a taxa comercial em tempo real. Para operações bancárias, consulte seu banco — o spread pode variar.</p>
-          </details>
-          <details>
-            <summary>Com que frequência as cotações são atualizadas?</summary>
-            <p>As cotações são atualizadas a cada consulta. Em dias úteis, refletem o mercado em tempo real. Em fins de semana, mostram o fechamento da sexta-feira.</p>
-          </details>
-          <details>
-            <summary>Posso usar esse valor para transferências internacionais?</summary>
-            <p>Este conversor mostra a taxa comercial como referência. Bancos e serviços de remessa aplicam spreads e taxas adicionais. Use como base para comparação.</p>
-          </details>
-        </section>
-      )}
+      <CodigoEmbed titulo="Conversor de Moedas" slug="conversor-moedas" altura={720} />
     </div>
   </main>
 
-  {!isEmbed && <Footer />}
-</Layout>
-
-<script>
-  let rates = {};
-
-  async function fetchRates() {
-    try {
-      // Proxy same-origin (Cloudflare Function) — dados da AwesomeAPI, sem CORS
-      const res = await fetch('/api/moedas?pairs=USD-BRL,EUR-BRL,GBP-BRL,ARS-BRL,BTC-BRL');
-      if (!res.ok) throw new Error('API error');
-      const data = await res.json();
-
-      // AwesomeAPI retorna cotações em relação ao BRL (quanto 1 USD vale em BRL, etc.)
-      rates.BRL = 1;
-      if (data.USDBRL) rates.USD = 1 / parseFloat(data.USDBRL.bid);
-      if (data.EURBRL) rates.EUR = 1 / parseFloat(data.EURBRL.bid);
-      if (data.GBPBRL) rates.GBP = 1 / parseFloat(data.GBPBRL.bid);
-      if (data.ARSBRL) rates.ARS = 1 / parseFloat(data.ARSBRL.bid);
-      if (data.BTCBRL) rates.BTC = 1 / parseFloat(data.BTCBRL.bid);
-
-      updateRatesTable();
-      convert();
-      document.getElementById('result-updated').textContent =
-        'Fonte: AwesomeAPI · Atualizado: ' + new Date().toLocaleString('pt-BR');
-    } catch (e) {
-      document.getElementById('result-rate').textContent = 'Erro ao carregar cotações. Tente novamente.';
-    }
-  }
-
-  function formatNumber(num, decimals = 2) {
-    if (num > 0.01) {
-      const [int, dec] = num.toFixed(decimals).split('.');
-      return int.replace(/\B(?=(\d{3})+(?!\d))/g, '.') + ',' + dec;
-    }
-    return num.toFixed(6).replace('.', ',');
-  }
-
-  function convert() {
-    const amount = parseFloat(document.getElementById('amount').value) || 0;
-    const from = document.getElementById('from-currency').value;
-    const to = document.getElementById('to-currency').value;
-
-    if (!rates[from] || !rates[to]) return;
-
-    const inBRL = amount / rates[from];
-    const result = inBRL * rates[to];
-
-    document.getElementById('result-main').textContent =
-      `${formatNumber(amount)} ${from} = ${formatNumber(result)} ${to}`;
-    document.getElementById('result-rate').textContent =
-      `1 ${from} = ${formatNumber(rates[to] / rates[from])} ${to}`;
-  }
-
-  function updateRatesTable() {
-    const currencies = ['USD', 'EUR', 'GBP', 'ARS', 'BTC'];
-    const grid = document.getElementById('rates-grid');
-    grid.innerHTML = currencies.map(c => {
-      const rate = rates[c] ? (1 / rates[c]).toFixed(c === 'BTC' ? 0 : 4) : '---';
-      const labels = { USD: 'Dólar', EUR: 'Euro', GBP: 'Libra', ARS: 'Peso Arg.', BTC: 'Bitcoin' };
-      return `<div class="rate-item">
-        <span class="rate-currency">${c}</span>
-        <span class="rate-name">${labels[c]}</span>
-        <span class="rate-value">R$ ${rate}</span>
-      </div>`;
-    }).join('');
-  }
-
-  document.getElementById('amount').addEventListener('input', convert);
-  document.getElementById('from-currency').addEventListener('change', convert);
-  document.getElementById('to-currency').addEventListener('change', convert);
-  document.getElementById('swap-btn').addEventListener('click', function() {
-    const from = document.getElementById('from-currency');
-    const to = document.getElementById('to-currency');
-    const temp = from.value;
-    from.value = to.value;
-    to.value = temp;
-    convert();
-  });
-
-  fetchRates();
-</script>
+  <Footer />
+</BaseLayout>
 
 <style>
   .tool-page { padding: 2rem 0 4rem; }
   .tool-header { margin-bottom: 2rem; }
   .tool-breadcrumb { font-size: 0.8rem; color: var(--text-tertiary); margin-bottom: 1rem; }
   .tool-breadcrumb a { color: var(--text-link); text-decoration: none; }
-  .tool-header h1 { color: var(--text-primary); font-size: 2rem; margin-bottom: 0.5rem; }
+  .tool-header h1 { color: var(--text-primary); font-size: 2rem; margin-bottom: 0.5rem; letter-spacing: -0.025em; }
   .tool-subtitle { color: var(--text-secondary); font-size: 1rem; }
-
-  .converter-layout { display: grid; gap: 1.5rem; margin-bottom: 2rem; }
-  .converter-card {
-    background: var(--bg-secondary);
-    border: 1px solid var(--border-default);
-    border-radius: 12px;
-    padding: 1.5rem;
-  }
-  .converter-row {
-    display: flex;
-    gap: 1rem;
-    align-items: end;
-    flex-wrap: wrap;
-  }
-  .converter-input-group { flex: 1; min-width: 120px; display: flex; flex-direction: column; gap: 0.3rem; }
-  .converter-input-group label { color: var(--text-secondary); font-size: 0.8rem; font-weight: 500; }
-  .converter-input-group input, .converter-input-group select {
-    background: var(--bg-tertiary);
-    border: 1px solid var(--border-default);
-    border-radius: 8px;
-    padding: 0.7rem;
-    color: var(--text-primary);
-    font-size: 1rem;
-  }
-  .converter-input-group input:focus, .converter-input-group select:focus { outline: none; border-color: var(--accent-primary); }
-  .swap-btn {
-    background: var(--bg-tertiary);
-    border: 1px solid var(--border-default);
-    border-radius: 8px;
-    padding: 0.7rem 1rem;
-    color: var(--text-primary);
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: background 0.2s;
-  }
-  .swap-btn:hover { background: var(--bg-tertiary); }
-
-  .converter-result {
-    margin-top: 1.5rem;
-    padding: 1.2rem;
-    background: var(--bg-tertiary);
-    border-radius: 8px;
-    text-align: center;
-  }
-  .result-main { font-size: 1.4rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.3rem; }
-  .result-rate { font-size: 0.85rem; color: var(--text-secondary); }
-  .result-updated { font-size: 0.7rem; color: var(--text-tertiary); margin-top: 0.5rem; }
-
-  .rates-table {
-    background: var(--bg-secondary);
-    border: 1px solid var(--border-default);
-    border-radius: 12px;
-    padding: 1.5rem;
-  }
-  .rates-table h3 { color: var(--text-primary); font-size: 1rem; margin-bottom: 1rem; }
-  .rates-grid { display: grid; gap: 0.5rem; }
-  .rate-item {
-    display: grid;
-    grid-template-columns: 50px 1fr auto;
-    gap: 0.5rem;
-    align-items: center;
-    padding: 0.6rem 0;
-    border-bottom: 1px solid var(--border-muted);
-  }
-  .rate-currency { font-weight: 700; color: var(--text-primary); font-size: 0.85rem; }
-  .rate-name { color: var(--text-secondary); font-size: 0.8rem; }
-  .rate-value { color: #3fb950; font-weight: 600; font-size: 0.9rem; text-align: right; }
-  .rate-loading { color: var(--text-tertiary); font-size: 0.85rem; }
-
   .tool-faq { margin-top: 2rem; }
   .tool-faq h2 { color: var(--text-primary); font-size: 1.4rem; margin-bottom: 1rem; }
   .tool-faq details { background: var(--bg-secondary); border: 1px solid var(--border-default); border-radius: 8px; margin-bottom: 0.5rem; padding: 1rem; }
   .tool-faq summary { color: var(--text-primary); font-weight: 600; cursor: pointer; font-size: 0.95rem; }
   .tool-faq details p { color: var(--text-secondary); margin-top: 0.75rem; line-height: 1.6; font-size: 0.9rem; }
-
-  @media (max-width: 640px) {
-    .converter-row { flex-direction: column; }
-    .swap-btn { align-self: center; }
-  }
 </style>
