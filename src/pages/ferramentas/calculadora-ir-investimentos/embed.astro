@@ -1,0 +1,20 @@
+---
+/** Versão embutível da Calculadora de IR sobre Investimentos. */
+import EmbedLayout from '@layouts/EmbedLayout.astro';
+import IrInvestimentos from '@components/ferramentas/IrInvestimentos.astro';
+import { config } from '../../../../site.config';
+
+const base = config.siteUrl.replace(/\/+$/, '');
+const urlPagina = `${base}/ferramentas/calculadora-ir-investimentos/`;
+---
+
+<EmbedLayout
+  title="Calculadora de IR sobre Investimentos"
+  description="Quanto sobra do rendimento depois do imposto, e quando a alíquota cai."
+>
+  <h1 class="fm-embed-titulo">Calculadora de IR sobre Investimentos</h1>
+  <IrInvestimentos />
+  <p class="fm-credito">
+    <a href={urlPagina} target="_blank" rel="noopener">Calculadora de IR sobre Investimentos por FinMoovi</a>
+  </p>
+</EmbedLayout>

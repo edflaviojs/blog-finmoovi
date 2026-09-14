@@ -1,0 +1,259 @@
+---
+/**
+ * Calculadora de IR sobre Investimentos (renda fixa).
+ *
+ * AS ALÍQUOTAS NÃO FORAM ESCRITAS DE MEMÓRIA. Vêm do Art. 1º da Lei nº 11.033,
+ * de 21/12/2004, lido no planalto.gov.br em 14/09/2026:
+ *   I  — 22,5% em aplicações com prazo de até 180 dias
+ *   II — 20%   de 181 a 360 dias
+ *   III— 17,5% de 361 a 720 dias
+ *   IV — 15%   acima de 720 dias
+ *
+ * A página da lei traz "(Vide Medida Provisória nº 1.303, de 2025)". Essa MP
+ * propunha mudar a tributação das aplicações financeiras — e foi verificada:
+ * está marcada como "Vigência encerrada", ou seja, caducou sem ser convertida
+ * em lei. A tabela regressiva continua em vigor.
+ *
+ * O QUE ESTA CALCULADORA NÃO FAZ, e diz que não faz: IOF. Resgates com menos de
+ * 30 dias pagam IOF sobre o rendimento, numa tabela própria. Preferimos avisar
+ * alto a devolver um número que parece líquido e não é.
+ *
+ * O ACHADO é o dia em que a alíquota CAI. É a informação mais acionável do
+ * tema — "espere mais 47 dias e leve R$ X a mais" — e não conheço calculadora
+ * brasileira que a mostre.
+ */
+import '@/styles/ferramentas.css';
+---
+
+<div class="fm-grid">
+  <div class="fm-rail">
+    <div class="fm-ctrl">
+      <div class="fm-ctrl-top">
+        <label for="ir-valor">Quanto você investiu</label>
+        <div class="fm-campo"><span class="fm-fixo">R$</span><input id="ir-valor" type="text" inputmode="numeric" autocomplete="off" /></div>
+      </div>
+      <input class="fm-range" id="ir-s-valor" type="range" min="100" max="500000" step="100" aria-label="Valor investido" />
+    </div>
+
+    <div class="fm-ctrl">
+      <div class="fm-ctrl-top">
+        <label for="ir-taxa">Rendimento</label>
+        <div class="fm-campo"><input id="ir-taxa" type="text" inputmode="decimal" autocomplete="off" /><span class="fm-fixo">% a.a.</span></div>
+      </div>
+      <input class="fm-range" id="ir-s-taxa" type="range" min="0" max="25" step="0.25" aria-label="Rendimento ao ano" />
+      <span class="fm-eco">taxa contratada do CDB, Tesouro, LCI…</span>
+    </div>
+
+    <div class="fm-ctrl">
+      <div class="fm-ctrl-top">
+        <label for="ir-dias">Tempo aplicado</label>
+        <div class="fm-campo"><input id="ir-dias" type="text" inputmode="numeric" autocomplete="off" /><span class="fm-fixo">dias</span></div>
+      </div>
+      <input class="fm-range" id="ir-s-dias" type="range" min="1" max="1460" step="1" aria-label="Tempo aplicado em dias" />
+      <span class="fm-eco" id="ir-eco-dias"></span>
+    </div>
+
+    <div class="fm-ctrl">
+      <div class="fm-ctrl-top">
+        <label for="ir-isento">É isento de IR?</label>
+        <div class="fm-campo">
+          <select id="ir-isento">
+            <option value="nao">Não · CDB, Tesouro, CRI…</option>
+            <option value="sim">Sim · LCI, LCA, poupança</option>
+          </select>
+        </div>
+      </div>
+      <span class="fm-eco">LCI e LCA não pagam IR para pessoa física</span>
+    </div>
+  </div>
+
+  <div class="fm-saida">
+    <div class="fm-heroi">
+      <span class="fm-rotulo">Você recebe, já sem imposto</span>
+      <strong class="fm-heroi-valor" id="ir-liquido">R$ 0</strong>
+      <p class="fm-heroi-nota" id="ir-nota"></p>
+    </div>
+
+    <div class="fm-achado" id="ir-achado" hidden>
+      <span class="fm-achado-marca" aria-hidden="true"></span>
+      <div class="fm-achado-txt">
+        <span class="fm-rotulo">O dia em que o imposto cai</span>
+        <p id="ir-achado-frase"></p>
+      </div>
+    </div>
+
+    <div class="fm-achado" id="ir-iof" hidden style="background:rgba(248,81,73,.09);border-color:rgba(248,81,73,.3)">
+      <span class="fm-achado-marca" aria-hidden="true" style="background:#f85149;box-shadow:0 0 0 4px rgba(248,81,73,.18)"></span>
+      <div class="fm-achado-txt">
+        <span class="fm-rotulo">Atenção: falta o IOF</span>
+        <p>Resgates com <b>menos de 30 dias</b> também pagam IOF sobre o rendimento, numa tabela própria que esta calculadora <b>não inclui</b>. O valor acima está otimista — o que cai na conta será menor.</p>
+      </div>
+    </div>
+
+    <figure class="fm-grafico">
+      <canvas id="ir-chart" role="img" aria-label="Quanto você receberia resgatando em cada dia"></canvas>
+      <figcaption class="fm-legenda">
+        <span class="fm-chave" data-cor="verde">Líquido se resgatar nesse dia</span>
+        <span class="fm-chave" data-cor="cinza">Se não pagasse imposto</span>
+        <span class="fm-chave" data-cor="marca">Quando a alíquota cai</span>
+      </figcaption>
+    </figure>
+
+    <div class="fm-reparticao tres">
+      <div class="fm-rep">
+        <span class="fm-rotulo">Rendeu no período</span>
+        <strong class="fm-rep-valor" id="ir-bruto">R$ 0</strong>
+      </div>
+      <div class="fm-rep aviso">
+        <span class="fm-rotulo">Imposto <span id="ir-aliquota">—</span></span>
+        <strong class="fm-rep-valor" id="ir-imposto">R$ 0</strong>
+      </div>
+      <div class="fm-rep bom">
+        <span class="fm-rotulo">Sobrou de lucro</span>
+        <strong class="fm-rep-valor" id="ir-lucro">R$ 0</strong>
+      </div>
+    </div>
+
+    <details class="fm-tabela-wrap" open>
+      <summary>A tabela regressiva, e o que você levaria em cada faixa</summary>
+      <div class="fm-tabela-scroll">
+        <table class="fm-tabela">
+          <thead><tr><th>Prazo</th><th>Alíquota</th><th>Imposto</th><th>Você recebe</th></tr></thead>
+          <tbody id="ir-tbody"></tbody>
+        </table>
+      </div>
+      <p class="fm-fonte-lei">
+        Alíquotas do Art. 1º da <a href="https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l11033.htm" target="_blank" rel="noopener">Lei nº 11.033/2004</a>.
+        O imposto incide só sobre o rendimento, nunca sobre o valor investido.
+      </p>
+    </details>
+  </div>
+</div>
+
+<style>
+  .fm-fonte-lei { margin: 10px 0 0; font-size: 11px; color: var(--text-tertiary); line-height: 1.5; }
+  .fm-fonte-lei a { color: var(--text-secondary); }
+</style>
+
+<script>
+  import { brl, $, campoDinheiro, campoDecimal, campoInteiro, contador, criarGrafico, token } from './ui.js';
+
+  /**
+   * Lei nº 11.033/2004, Art. 1º — lida no planalto.gov.br em 14/09/2026.
+   * A MP 1.303/2025, que propunha mudar isto, está com vigência encerrada.
+   */
+  const TABELA = [
+    { ate: 180, aliq: 0.225, rotulo: 'até 180 dias' },
+    { ate: 360, aliq: 0.20, rotulo: 'de 181 a 360 dias' },
+    { ate: 720, aliq: 0.175, rotulo: 'de 361 a 720 dias' },
+    { ate: Infinity, aliq: 0.15, rotulo: 'acima de 720 dias' },
+  ];
+  const DEGRAUS = [181, 361, 721];
+
+  const grafico = criarGrafico($('ir-chart'));
+  const mostraLiquido = contador($('ir-liquido'), (v) => brl.format(v));
+
+  const lerValor = campoDinheiro('ir-valor', 'ir-s-valor', 10000, recalcular);
+  const lerTaxa = campoDecimal('ir-taxa', 'ir-s-taxa', 12, recalcular, 60);
+  const lerDias = campoInteiro('ir-dias', 'ir-s-dias', 200, recalcular, 3650);
+  $('ir-isento').addEventListener('change', recalcular);
+
+  const aliquotaDe = (dias) => TABELA.find((f) => dias <= f.ate).aliq;
+  const pct = (a) => (a * 100).toFixed(a * 100 % 1 === 0 ? 0 : 1).replace('.', ',') + '%';
+
+  /** Rendimento bruto de `dias` corridos a uma taxa anual efetiva. */
+  function bruto(valor, taxaAno, dias) {
+    return valor * (Math.pow(1 + taxaAno / 100, dias / 365) - 1);
+  }
+
+  function emPalavras(dias) {
+    if (dias < 30) return dias + (dias === 1 ? ' dia' : ' dias');
+    if (dias < 365) return Math.round(dias / 30) + ' meses';
+    const anos = dias / 365;
+    return anos.toFixed(anos % 1 === 0 ? 0 : 1).replace('.', ',') + (anos < 2 ? ' ano' : ' anos');
+  }
+
+  function recalcular() {
+    const valor = lerValor(), taxa = lerTaxa(), dias = Math.max(1, lerDias());
+    const isento = $('ir-isento').value === 'sim';
+
+    const rendeu = bruto(valor, taxa, dias);
+    const aliq = isento ? 0 : aliquotaDe(dias);
+    const imposto = rendeu * aliq;
+    const liquido = valor + rendeu - imposto;
+
+    mostraLiquido(liquido);
+    $('ir-bruto').textContent = brl.format(rendeu);
+    $('ir-imposto').textContent = brl.format(imposto);
+    $('ir-lucro').textContent = brl.format(rendeu - imposto);
+    $('ir-aliquota').textContent = isento ? '(isento)' : 'de ' + pct(aliq);
+    $('ir-eco-dias').textContent = emPalavras(dias);
+
+    if (isento) {
+      $('ir-nota').innerHTML = 'sobre <b>' + brl.format(valor) + '</b> em ' + emPalavras(dias) +
+        '. LCI, LCA e poupança <b>não pagam IR</b> para pessoa física — tudo o que rendeu é seu.';
+    } else {
+      const mordida = rendeu > 0 ? Math.round((imposto / rendeu) * 100) : 0;
+      $('ir-nota').innerHTML = 'sobre <b>' + brl.format(valor) + '</b> em ' + emPalavras(dias) +
+        '. O imposto levou <b>' + mordida + '%</b> do que rendeu — e nada do que você investiu.';
+    }
+
+    // O aviso do IOF: silêncio aqui seria devolver um número otimista
+    $('ir-iof').hidden = dias >= 30 || rendeu <= 0;
+
+    // O achado: o próximo degrau da tabela
+    const proximo = DEGRAUS.find((d) => d > dias);
+    const caixa = $('ir-achado');
+    if (!isento && proximo && rendeu > 0) {
+      const novaAliq = aliquotaDe(proximo);
+      const rendeuDepois = bruto(valor, taxa, proximo);
+      const liquidoDepois = valor + rendeuDepois - rendeuDepois * novaAliq;
+      const ganho = liquidoDepois - liquido;
+      const faltam = proximo - dias;
+      caixa.hidden = false;
+      $('ir-achado-frase').innerHTML =
+        'Esperando mais <b>' + faltam + (faltam === 1 ? ' dia' : ' dias') + '</b> (até o dia ' + proximo +
+        '), a alíquota cai de ' + pct(aliq) + ' para <b>' + pct(novaAliq) + '</b> e você levaria <b>' +
+        brl.format(liquidoDepois) + '</b> — ' + brl.format(ganho) + ' a mais. ' +
+        'O imposto conta <b>dias corridos</b> desde a aplicação.';
+    } else {
+      caixa.hidden = true;
+    }
+
+    // Tabela: o mesmo dinheiro em cada faixa
+    $('ir-tbody').innerHTML = TABELA.map((f, k) => {
+      const diaRef = k === 0 ? 180 : (k === 1 ? 360 : (k === 2 ? 720 : 1080));
+      const r = bruto(valor, taxa, diaRef);
+      const imp = isento ? 0 : r * f.aliq;
+      const marca = (!isento && f.aliq === aliq) ? ' class="marcada"' : '';
+      return '<tr' + marca + '><td>' + f.rotulo + '</td><td>' + (isento ? 'isento' : pct(f.aliq)) +
+        '</td><td>' + brl.format(imp) + '</td><td>' + brl.format(valor + r - imp) + '</td></tr>';
+    }).join('');
+
+    // Gráfico: o líquido em cada dia — repare nos saltos quando a alíquota cai
+    const limite = Math.min(dias > 60 ? dias : 120, 1460);
+    const passo = Math.max(1, Math.round(limite / 240));
+    const comIR = [], semIR = [];
+    for (let d = 0; d <= limite; d += passo) {
+      const r = bruto(valor, taxa, d);
+      const a = isento ? 0 : aliquotaDe(Math.max(1, d));
+      comIR.push(valor + r - r * a);
+      semIR.push(valor + r);
+    }
+
+    const degrauNoGrafico = DEGRAUS.filter((d) => d <= limite).pop();
+    grafico.atualizar({
+      series: [
+        { dados: comIR, cor: '#3fb950' },
+        { dados: semIR, cor: token('--text-tertiary', '#6e7681'), tracejada: true },
+      ],
+      areaEntre: null,
+      eixoMeses: false,
+      marca: (!isento && degrauNoGrafico) ? { i: Math.round(degrauNoGrafico / passo), texto: 'alíquota cai' } : null,
+      formatar: (v) => brl.format(v),
+      rotuloPonto: (k) => 'dia ' + (k * passo),
+    });
+  }
+
+  recalcular();
+</script>

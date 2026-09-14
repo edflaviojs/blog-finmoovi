@@ -1,0 +1,118 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Header from '@components/header/Header.astro';
+import Footer from '@components/footer/Footer.astro';
+import InlineAppCTA from '@components/banners/InlineAppCTA.astro';
+import SchemaBreadcrumb from '@components/seo/SchemaBreadcrumb.astro';
+import IrInvestimentos from '@components/ferramentas/IrInvestimentos.astro';
+import CodigoEmbed from '@components/ferramentas/CodigoEmbed.astro';
+import { canonicalPath } from '@/utils/url';
+
+const breadcrumbItems = [
+  { name: 'Início', url: '/' },
+  { name: 'Ferramentas', url: '/ferramentas' },
+  { name: 'Calculadora de IR sobre Investimentos', url: '/ferramentas/calculadora-ir-investimentos' }
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Qual é a tabela regressiva do Imposto de Renda sobre investimentos?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Conforme o Art. 1º da Lei nº 11.033 de 2004: 22,5% em aplicações de até 180 dias; 20% de 181 a 360 dias; 17,5% de 361 a 720 dias; e 15% acima de 720 dias. A alíquota cai conforme o tempo que o dinheiro fica aplicado." }
+    },
+    {
+      "@type": "Question",
+      "name": "O Imposto de Renda incide sobre o valor investido ou sobre o rendimento?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Apenas sobre o rendimento. O valor que você aplicou não é tributado: ele volta inteiro. Por isso o imposto nunca faz você receber menos do que investiu." }
+    },
+    {
+      "@type": "Question",
+      "name": "Quais investimentos são isentos de Imposto de Renda?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Para pessoa física, LCI, LCA e a poupança são isentas de Imposto de Renda. CDB, Tesouro Direto, CRI, CRA e fundos de renda fixa seguem a tabela regressiva." }
+    },
+    {
+      "@type": "Question",
+      "name": "Vale a pena esperar a alíquota cair antes de resgatar?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Quando faltam poucos dias para o próximo degrau da tabela, quase sempre sim: além de render mais alguns dias, a alíquota cai sobre todo o rendimento acumulado. A calculadora mostra o dia exato da mudança e quanto isso representa em reais." }
+    },
+    {
+      "@type": "Question",
+      "name": "Além do Imposto de Renda, existe outra cobrança?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sim. Resgates com menos de 30 dias de aplicação pagam IOF sobre o rendimento, numa tabela própria e decrescente que zera no trigésimo dia. Essa calculadora não inclui o IOF e avisa quando o prazo informado é menor que 30 dias." }
+    }
+  ]
+};
+---
+
+<BaseLayout
+  title="Calculadora de IR sobre Investimentos: Tabela Regressiva"
+  description="Descubra quanto sobra do seu rendimento depois do Imposto de Renda, veja a tabela regressiva e o dia exato em que a alíquota cai."
+  keywords={['calculadora ir investimentos', 'tabela regressiva ir', 'imposto de renda cdb', 'quanto rende cdb líquido', 'ir tesouro direto', 'alíquota 22,5%']}
+>
+  <SchemaBreadcrumb items={breadcrumbItems} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <Header />
+
+  <main class="tool-page" data-pagefind-body>
+    <div class="container">
+      <header class="tool-header">
+        <nav class="tool-breadcrumb">
+          <a href="/">Início</a> → <a href={canonicalPath('/ferramentas')}>Ferramentas</a> → <span>IR sobre Investimentos</span>
+        </nav>
+        <span class="fm-formula">22,5% → 20% → 17,5% → 15% · quanto mais tempo, menos imposto</span>
+        <h1>Calculadora de IR sobre Investimentos</h1>
+        <p class="tool-subtitle">Quanto sobra do seu rendimento depois do imposto — e em que dia a alíquota cai.</p>
+      </header>
+
+      <IrInvestimentos />
+
+      <InlineAppCTA variant="full" locale="pt" />
+
+      <section class="tool-faq">
+        <h2>Perguntas Frequentes</h2>
+        <details>
+          <summary>Qual é a tabela regressiva?</summary>
+          <p><strong>22,5%</strong> até 180 dias · <strong>20%</strong> de 181 a 360 · <strong>17,5%</strong> de 361 a 720 · <strong>15%</strong> acima de 720. Está no Art. 1º da <a href="https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l11033.htm" target="_blank" rel="noopener">Lei nº 11.033/2004</a>, e o prazo conta em <strong>dias corridos</strong> desde a aplicação.</p>
+        </details>
+        <details>
+          <summary>O imposto incide sobre o quê?</summary>
+          <p><strong>Só sobre o rendimento.</strong> O que você aplicou volta inteiro — por isso o imposto nunca faz você receber menos do que investiu.</p>
+        </details>
+        <details>
+          <summary>Quais investimentos são isentos?</summary>
+          <p>Para pessoa física: <strong>LCI, LCA e poupança</strong>. CDB, Tesouro Direto, CRI, CRA e fundos de renda fixa seguem a tabela regressiva. A calculadora tem um seletor para os dois casos.</p>
+        </details>
+        <details>
+          <summary>Vale a pena esperar a alíquota cair?</summary>
+          <p>Quando faltam poucos dias, quase sempre sim: a alíquota menor vale para <strong>todo o rendimento acumulado</strong>, não só para os dias novos. A calculadora mostra o dia exato e o valor em reais.</p>
+        </details>
+        <details>
+          <summary>Existe outra cobrança além do IR?</summary>
+          <p>Sim: <strong>IOF</strong> em resgates com menos de 30 dias, sobre o rendimento, numa tabela decrescente que zera no 30º dia. <strong>Esta calculadora não inclui o IOF</strong> e avisa em vermelho quando o prazo é menor que 30 dias.</p>
+        </details>
+      </section>
+
+      <CodigoEmbed titulo="Calculadora de IR sobre Investimentos" slug="calculadora-ir-investimentos" altura={960} />
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .tool-page { padding: 2rem 0 4rem; }
+  .tool-header { margin-bottom: 2rem; }
+  .tool-breadcrumb { font-size: 0.8rem; color: var(--text-tertiary); margin-bottom: 1rem; }
+  .tool-breadcrumb a { color: var(--text-link); text-decoration: none; }
+  .tool-header h1 { color: var(--text-primary); font-size: 2rem; margin-bottom: 0.5rem; letter-spacing: -0.025em; }
+  .tool-subtitle { color: var(--text-secondary); font-size: 1rem; }
+  .tool-faq { margin-top: 2rem; }
+  .tool-faq h2 { color: var(--text-primary); font-size: 1.4rem; margin-bottom: 1rem; }
+  .tool-faq details { background: var(--bg-secondary); border: 1px solid var(--border-default); border-radius: 8px; margin-bottom: 0.5rem; padding: 1rem; }
+  .tool-faq summary { color: var(--text-primary); font-weight: 600; cursor: pointer; font-size: 0.95rem; }
+  .tool-faq details p { color: var(--text-secondary); margin-top: 0.75rem; line-height: 1.6; font-size: 0.9rem; }
+  .tool-faq details a { color: var(--text-link); }
+</style>
