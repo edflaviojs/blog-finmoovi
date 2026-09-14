@@ -4719,6 +4719,36 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-09-13"
+    },
+    "cartao-de-credito-em-2026-vale-a-pena.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-14"
+    },
+    "indice-finmoovi-custo-de-vida-agosto-2026.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-14"
+    },
+    "obrigacao-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-14"
+    },
+    "obrigacao-inline-2.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-14"
+    },
+    "obrigacao-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-14"
+    },
+    "obrigacao.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-14"
     }
   },
   "corrigidas": {
@@ -5355,6 +5385,6 @@
       "motivo": "tem texto escrito (\"14.5M ADDS\")"
     }
   },
-  "totalAcervo": 944,
-  "ultimaCorrida": "2026-09-13"
+  "totalAcervo": 950,
+  "ultimaCorrida": "2026-09-14"
 }
