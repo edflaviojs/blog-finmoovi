@@ -1,0 +1,117 @@
+{
+  "slug": "loop-emprestar-pra-parente-depois-de-anos",
+  "formato": "loop16",
+  "term": "Emprestar dinheiro pra parente",
+  "category": "vida",
+  "keyword": "EMPRESTAR",
+  "situacao": "emprestar-pra-parente",
+  "gancho": "depois-de-anos",
+  "ganchoFamilia": "depois de anos",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "corda-bamba",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Depois de anos tentando, descobri isso. Meu irmão pediu dinheiro.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "tentando",
+          "visual": {
+            "type": "statement",
+            "text": "Meu irmão pediu dinheiro"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "descobri",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "corda-bamba"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu emprestei, ele prometeu devolver no fim do mês, mas apertou.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "emprestei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "corda-bamba"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "prometeu",
+          "visual": {
+            "type": "statement",
+            "text": "O dinheiro fez falta"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então comecei a guardar primeiro o dinheiro das contas em casa.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "comecei",
+          "visual": {
+            "type": "statement",
+            "text": "As contas vêm primeiro"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "guardar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "corda-bamba"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "E descobri. Meu dinheiro precisa ficar comigo antes de emprestar.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "descobri",
+          "visual": {
+            "type": "statement",
+            "text": "Meu dinheiro fica comigo"
+          }
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Meu irmão pediu dinheiro"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
