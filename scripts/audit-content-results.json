@@ -1,5 +1,43 @@
 [
   {
+    "file": "en-finmoovi-cost-of-living-index-august-2026.md",
+    "dir": "posts",
+    "severity": 3,
+    "issues": {
+      "currency": 6,
+      "brInstitutions": [
+        "IBGE"
+      ],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "IPCA"
+      ],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-indice-finmoovi-costo-de-vida-agosto-2026.md",
+    "dir": "posts",
+    "severity": 3,
+    "issues": {
+      "currency": 6,
+      "brInstitutions": [
+        "IBGE"
+      ],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "IPCA"
+      ],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-fgc-guarantee.md",
     "dir": "glossario",
     "severity": 2,
@@ -1028,6 +1066,21 @@
     }
   },
   {
+    "file": "en-credit-card-in-2026-is-it-worth-it.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-credit-card-statement.md",
     "dir": "glossario",
     "severity": 0,
@@ -1538,6 +1591,21 @@
     }
   },
   {
+    "file": "en-financial-market.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-financial-option.md",
     "dir": "glossario",
     "severity": 0,
@@ -1928,6 +1996,21 @@
     }
   },
   {
+    "file": "en-how-to-build-a-simple-cash-flow-spreadsheet-in-excel-and.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-how-to-build-your-2026-savings-table-and-keep-spending-in.md",
     "dir": "posts",
     "severity": 0,
@@ -2139,6 +2222,21 @@
   },
   {
     "file": "en-how-to-manage-personal-finance-volatility-in-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-how-to-master-your-expenses-and-find-peace-in-2026.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -2633,21 +2731,6 @@
     }
   },
   {
-    "file": "en-know-your-customer.md",
-    "dir": "glossario",
-    "severity": 0,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": []
-    }
-  },
-  {
     "file": "en-kyc.md",
     "dir": "glossario",
     "severity": 0,
@@ -2888,7 +2971,37 @@
     }
   },
   {
+    "file": "en-negotiation.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-net-worth.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-obligation.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -4508,6 +4621,21 @@
     }
   },
   {
+    "file": "es-bono.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-bull-market-e-bear-market.md",
     "dir": "glossario",
     "severity": 0,
@@ -4808,6 +4936,21 @@
     }
   },
   {
+    "file": "es-como-crear-un-flujo-de-caja-sencillo-en-excel-y-lograr.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-como-crear-un-plan-financiero-que-realmente-funciona-en-2026.md",
     "dir": "posts",
     "severity": 0,
@@ -4914,6 +5057,21 @@
   },
   {
     "file": "es-como-domar-los-gastos-y-ganar-tranquilidad-en-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-como-dominar-tus-gastos-y-lograr-tranquilidad-en-2026.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -5335,21 +5493,6 @@
   {
     "file": "es-como-usar-pagos-anticipados-a-tu-favor-en-2026.md",
     "dir": "posts",
-    "severity": 0,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": []
-    }
-  },
-  {
-    "file": "es-conoce-a-tu-cliente.md",
-    "dir": "glossario",
     "severity": 0,
     "issues": {
       "currency": 0,
@@ -6623,6 +6766,21 @@
     }
   },
   {
+    "file": "es-mercado-financiero.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-meta-financiera.md",
     "dir": "glossario",
     "severity": 0,
@@ -6685,6 +6843,21 @@
   {
     "file": "es-montando-cartera-diversificada-con-r-500.md",
     "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-negociacion.md",
+    "dir": "glossario",
     "severity": 0,
     "issues": {
       "currency": 0,
@@ -7494,6 +7667,21 @@
   },
   {
     "file": "es-tambien-tienes-dificultad-para-organizar-tus-finanzas.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-tarjeta-de-credito-en-2026-vale-la-pena.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
