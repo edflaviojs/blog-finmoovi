@@ -230,10 +230,19 @@ async function main() {
   console.log('\n✅ Tudo o que o repo tem esta no ar.');
 
   if (ENSAIO) {
-    console.log('\n🧪 ENSAIO pedido a mao: o blog esta BEM, mas vou falhar de proposito');
-    console.log('   para provar que o aviso por e-mail chega. Nao ha nada partido.');
+    // Marca o laudo como treino e sai VERDE. O passo do aviso corre na mesma
+    // (a condicao dele inclui o ensaio), mas a corrida nao fica vermelha.
+    //
+    // Porque verde: um ensaio que falha o job deixa marca vermelha no
+    // historico e dispara tambem o e-mail automatico do GitHub ("All jobs have
+    // failed"), que nao sabe distinguir treino de avaria. Daqui a um mes, a
+    // olhar para tras, esse vermelho passaria por uma paragem real — e foi
+    // exatamente a leitura do historico que permitiu descobrir a paragem de
+    // 09/09. Nao se suja o registo para testar o alarme.
+    console.log('\n🧪 ENSAIO pedido a mao: o blog esta BEM.');
+    console.log('   A corrida fica VERDE; o aviso por e-mail sai na mesma, marcado como ensaio.');
     gravarLaudo({ estado: 'ok', ensaio: true, analisados, emFalta: [], aCaminho: aCaminho.map(a => a.rel) });
-    process.exit(1);
+    process.exit(0);
   }
 
   gravarLaudo({ estado: 'ok', analisados, emFalta: [], aCaminho: aCaminho.map(a => a.rel) });

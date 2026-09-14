@@ -85,8 +85,11 @@ jobs:
       # deixa de ser aviso. E corre tambem quando o job rebenta ANTES do vigia —
       # nesse caso o script manda "nao consegui medir", porque silencio foi
       # exatamente o defeito que se veio consertar.
-      - name: Avisar por e-mail (so quando ha algo fora do ar)
-        if: failure()
+      # Corre quando ha avaria a serio (failure) OU quando foi pedido um ensaio
+      # — nesse caso o vigia sai verde de proposito, para nao sujar o historico
+      # nem disparar o e-mail automatico do GitHub, que nao sabe que foi treino.
+      - name: Avisar por e-mail (avaria a serio ou ensaio pedido a mao)
+        if: failure() || github.event.inputs.ensaio == 'true'
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           DIGEST_TO: ${{ vars.DIGEST_TO || 'finmoovi@gmail.com' }}
