@@ -21,14 +21,28 @@
  * MESMA mensagem. Só o corpo cru da resposta separa as quatro.
  */
 
+/**
+ * O PROMPT DO ROBÔ, PALAVRA POR PALAVRA.
+ *
+ * ⚠️ NA 1ª VERSÃO DESTE FICHEIRO EU ENCURTEI-O — e deixei de fora precisamente a
+ * linha que PROÍBE abrir a meta com "Descubra". As cinco respostas bem-sucedidas
+ * abriram todas com "Descubra", e eu quase concluí que o modelo desobedece à
+ * proibição. Nunca lha tinha enviado. Um teste com prompt aproximado mede o
+ * modelo a responder a OUTRA pergunta.
+ *
+ * Mantido em sincronia com `gsc-otimizar-ctr.js`. Se o prompt de lá mudar, este
+ * muda no mesmo commit — senão o diagnóstico volta a medir outra coisa.
+ */
+const LANG_PT = 'português do Brasil';
 const PROMPT_REAL =
-  'Você é editor de SEO. Reescreva o TÍTULO e a META DESCRIÇÃO de um artigo para ' +
-  'AUMENTAR o CTR na busca do Google, em português do Brasil.\n' +
-  'Busca principal que traz esta página: "como reduzir gastos mensais"\n' +
-  'Título atual: "Como organizar suas despesas mensais com facilidade e segurança"\n\n' +
-  'REGRAS: mantenha o MESMO tema; título com 50–60 caracteres; meta com 150–160 ' +
-  'caracteres. Não use aspas.\n\n' +
-  'Formato EXATO:\n---TITULO---\n[título]\n---META---\n[meta]';
+  `Você é editor de SEO. Reescreva o TÍTULO e a META DESCRIÇÃO de um artigo para AUMENTAR o CTR na busca do Google, em ${LANG_PT}.\n` +
+  `Busca principal que traz esta página: "como reduzir gastos mensais"\nTítulo atual: "Como organizar suas despesas mensais com facilidade e segurança"\n\n` +
+  `REGRAS: mantenha o MESMO tema/assunto (não invente novo); título com 50–60 caracteres, keyword no início, atraente e honesto (sem clickbait falso, sem inventar números/estatísticas); meta com 150–160 caracteres, clara e com chamada para ação suave. Não use aspas.\n` +
+  `PROIBIDO abrir a meta com "Descubra", "Aprenda", "Saiba" ou "Entenda" — são aberturas vazias e já estão em metade do blog. A meta tem de dizer o que o leitor leva dali: a coisa concreta que o artigo entrega (quantos passos, qual a conta, o que muda). Se o artigo tiver um número, use ESSE número; se não tiver, não invente nenhum.\n\n` +
+  `Formato EXATO:\n---TITULO---\n[título]\n---META---\n[meta]`;
+
+/** A trava de verdade do robô, copiada de `gsc-otimizar-ctr.js`. */
+const ABERTURA_VAZIA = /^\s*(descubr|aprend|saib|entend|conhe[çc]|veja como|discover|learn how|find out|understand|conoce|aprende|descubre)/i;
 
 /** O controle FALSO: se ISTO também vier vazio, a causa não é o orçamento. */
 const PROMPT_TRIVIAL = 'Responda apenas com a palavra: funcionando';
@@ -95,11 +109,34 @@ async function umaCorrida(prov, prompt, maxTokens, etiqueta, extra = {}) {
     const raciocinioFichas = d.usage.completion_tokens_details?.reasoning_tokens;
     if (raciocinioFichas !== undefined) console.log(`     fichas SÓ de raciocínio  ${raciocinioFichas}`);
   }
-  if (conteudo) console.log(`     tem o formato ---TITULO---? ${/---TITULO---/.test(conteudo) ? 'SIM' : 'NÃO'}`);
-  if (conteudo) console.log(`     primeiros 120 car. ...... ${JSON.stringify(conteudo.slice(0, 120))}`);
   if (!conteudo && campoRaciocinio) {
     console.log(`     ↳ o modelo FALOU (${raciocinio.length} car. de raciocínio) mas não escreveu resposta.`);
+    return;
   }
+  if (!conteudo) return;
+
+  // ── O QUE IMPORTA: o ROBÔ teria aceitado isto? ──────────────────────────────
+  // Ter texto não é ter entrega. Na corrida real de 15/09 o robô recebeu texto da
+  // rede de segurança e rejeitou-o em 5 páginas. Medir só "veio conteúdo" responde
+  // à pergunta errada — as travas do robô é que decidem se a página muda.
+  const mt = conteudo.match(/---TITULO---\s*([\s\S]*?)(?=---META---|$)/);
+  const mm = conteudo.match(/---META---\s*([\s\S]*?)$/);
+  const titulo = mt ? mt[1].trim().replace(/\s+/g, ' ') : '';
+  const meta = mm ? mm[1].trim().replace(/\s+/g, ' ') : '';
+
+  const okFormato = Boolean(mt && mm);
+  const okTitulo = titulo.length >= 20 && titulo.length <= 65;
+  const okMeta = meta.length >= 80 && meta.length <= 165;
+  const okAbertura = meta ? !ABERTURA_VAZIA.test(meta) : false;
+  const passa = okFormato && okTitulo && okMeta && okAbertura;
+
+  console.log(`     formato ---TITULO---/---META--- ... ${okFormato ? 'OK' : 'FALTA'}`);
+  console.log(`     título ${titulo.length} car. (20–65) ......... ${okTitulo ? 'OK' : 'REPROVA'}`);
+  console.log(`     meta ${meta.length} car. (80–165) .......... ${okMeta ? 'OK' : 'REPROVA'}`);
+  console.log(`     abertura da meta .................. ${okAbertura ? 'OK' : `REPROVA — abre com "${meta.split(' ')[0]}"`}`);
+  console.log(`     >>> O ROBÔ TERIA ACEITADO? ....... ${passa ? '✅ SIM' : '❌ NÃO'}`);
+  console.log(`     título .... ${JSON.stringify(titulo)}`);
+  console.log(`     meta ...... ${JSON.stringify(meta.slice(0, 170))}`);
 }
 
 async function main() {
@@ -118,13 +155,19 @@ async function main() {
     // 3. CONTROLE FALSO: pergunta trivial e orçamento pequeno. Se isto vier vazio,
     //    a causa NÃO é o orçamento nem o raciocínio — é chave, modelo ou conta.
     await umaCorrida(p, PROMPT_TRIVIAL, 400, 'C) CONTROLE — pergunta trivial, 400 fichas');
-    // 4. A CURA CANDIDATA. Na 1ª corrida (15/09) o A veio vazio nos dois e o B só
-    //    salvou o Groq: a Cerebras gastou 1997 das 2000 fichas a raciocinar e ficou
-    //    outra vez truncada. Subir o orçamento trata o sintoma e paga raciocínio a
-    //    peso. O `reasoning_effort` do gpt-oss corta o raciocínio na origem —
-    //    escrever um título de 60 caracteres não precisa de 5.660 de pensamento.
-    await umaCorrida(p, PROMPT_REAL, 400, 'D) CURA — prompt real, 400 fichas + reasoning_effort:low', { reasoning_effort: 'low' });
-    await umaCorrida(p, PROMPT_REAL, 1000, 'E) CURA — prompt real, 1000 fichas + reasoning_effort:low', { reasoning_effort: 'low' });
+    // 4. A CURA CANDIDATA, REPETIDA 3×.
+    //
+    //    Na 2ª corrida o `reasoning_effort:low` com 400 fichas salvou a Cerebras
+    //    (27 fichas de raciocínio) e NÃO salvou o Groq (398 — vazio outra vez),
+    //    mas com 1000 fichas o Groq gastou 30. Mesmos parâmetros, resultados
+    //    diferentes: há VARIAÇÃO, e com temperatura 0.7 o raciocínio também varia.
+    //    Uma corrida verde não prova cura — por isso 3× cada.
+    for (const n of [1, 2, 3]) {
+      await umaCorrida(p, PROMPT_REAL, 400, `D${n}) CURA — 400 fichas + reasoning_effort:low`, { reasoning_effort: 'low' });
+    }
+    for (const n of [1, 2, 3]) {
+      await umaCorrida(p, PROMPT_REAL, 1000, `E${n}) CURA — 1000 fichas + reasoning_effort:low`, { reasoning_effort: 'low' });
+    }
     console.log('');
   }
 
