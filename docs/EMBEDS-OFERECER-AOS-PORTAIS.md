@@ -152,11 +152,14 @@ Tudo aqui foi **medido**, não suposto. O que não deu para medir está dito com
 
 | Portal | Estado | Por onde |
 |---|---|---|
-| financeone.com.br | e-mail enviado 14/09 — **sem resposta** | `contato@financeone.com.br`, a/c **Tamires Silva** |
-| bmcnews.com.br | e-mail enviado 14/09 — **sem resposta** | `contato@bmcnews.com.br`, a/c **Renata Nunes** |
-| acionista.com.br | formulário de articulista enviado 14/09 — **sem resposta** | `/publique-no-portal/`, coluna Articulistas |
-| **ecommercebrasil.com.br** | ✅ **PORTA ACHADA — e-mail enviado 15/09** | `contato@ecommercebrasil.com.br` |
-| **toroinvestimentos.com.br** | 🟡 pergunta de encaminhamento enviada 15/09 | `ajuda@toroinvestimentos.com.br` (SAC) |
+| financeone.com.br | e-mail enviado 14/09 — **sem resposta** (prazo 19/09) | `contato@financeone.com.br`, a/c **Tamires Silva** |
+| bmcnews.com.br | e-mail enviado 14/09 — **sem resposta** (prazo 19/09) | `contato@bmcnews.com.br`, a/c **Renata Nunes** |
+| acionista.com.br | 💰 **RESPONDEU: é PAGO, R$ 390/artigo.** Não pagar | resposta curta enviada a perguntar se articulista é outro caminho |
+| **toroinvestimentos.com.br** | ❌ **MORTO — canal de e-mail desativado pelo Santander** | só WhatsApp (11) 4000-1580 |
+| **ecommercebrasil.com.br** | e-mail enviado 15/09 (prazo 22/09) | `contato@ecommercebrasil.com.br` |
+| **bemparana.com.br** | e-mail enviado 15/09 — **jornal, dá link follow** | `economia@bemparana.com.br` |
+| **jornaldebrasilia.com.br** | e-mail enviado 15/09 — **jornal, dá link follow** | **Lindauro Gomes**, `lindauro.gomes@grupojbr.com` |
+| **meliuz.com.br** | e-mail enviado 15/09 — **blog dá link follow, tema perfeito** | `marketing@meliuz.com.br` (existe; `conteudo@` e `blog@` não) |
 | suno.com.br | 🔴 **DESCARTADO** — tem 11 calculadoras próprias | ver abaixo |
 | genialinvestimentos.com.br | 🔴 **DESCARTADO** — é corretora, não portal | ver abaixo |
 | guiadoinvestidor.com.br | 🔴 SEM PORTA — não insistir | ver abaixo |
@@ -596,6 +599,63 @@ com TRÊS backlinks.** Ver [[blog-o-que-trava-sao-os-backlinks]].
 **O ritmo que fecha a meta:** 1 a 2 e-mails bem pesquisados por dia → 20 a 30 em três
 semanas → 2 a 5 links, a 5–15% de resposta. **O gargalo deixou de ser descobrir alvos;
 passou a ser o ritmo de escrita.**
+
+---
+
+## 📨 AS DUAS PRIMEIRAS RESPOSTAS (15/09, mesmo dia) — e as duas ensinam
+
+**Boa notícia de fundo:** respostas em menos de 24h significam que os e-mails **chegam e
+são lidos** — não estão a cair em spam. O conteúdo das duas, porém, fecha portas.
+
+### ❌ TORO — canal de e-mail DESATIVADO. O alvo nº1 está encerrado.
+
+Resposta automática, assunto *"Canal Desativado: Saiba como falar com a Santander Corretora"*:
+
+> *"Informamos que o e-mail `ajuda@toroinvestimentos.com.br` e `ajuda@santandercorretora.com.br`
+> foi descontinuado e não está mais disponível."*
+
+Sobra **só WhatsApp (11) 4000-1580**. Confirma, da boca deles, o que os três testes já
+diziam: o Toro virou Santander Corretora e **não existe canal de e-mail nenhum**.
+**Não voltar a tentar por e-mail.** Se algum dia houver caminho, é pelo LinkedIn de
+quem escreve — e o LinkedIn devolve HTTP 999 a robô, logo tem de ser o Ed.
+
+### 💰 ACIONISTA — é PAGO. E a anotação de 14/09 estava errada.
+
+Este documento e [[portais-primeira-rodada-14-09]] afirmavam: *"É de graça, não é
+publieditorial (conferido: sem preço na página)"*. A resposta real é uma **tabela de preços**:
+
+| | |
+|---|---|
+| 1 artigo, categoria Financeiros | **R$ 390,00** |
+| pacote de 3 artigos | **R$ 1.000,00** |
+| links dofollow | **máximo 2** |
+| etiqueta obrigatória no post | **"Post Patrocinado"** |
+| pagamento | **antecipado**, antes de publicar |
+| *"Links em nossos artigos"* | **Não** — não acrescentam link a artigo já publicado |
+| restrição | *"somente empresas licenciadas no Brasil"* para Financeiros |
+
+🔴 **A LIÇÃO: "não havia preço na página" e "é grátis" são conclusões DIFERENTES.**
+Ausência de preço é ausência de informação, não prova de gratuidade. Família de
+[[teste-que-diz-sim-a-tudo]] — a fonte calou-se e eu li silêncio como resposta.
+
+🔴 **RECOMENDADO AO ED: NÃO PAGAR.** Eles vendem **link dofollow dentro de post marcado
+como patrocinado** — a definição de *esquema de links* do Google. Hoje o blog tem **zero
+ações manuais** nas duas propriedades (medido em 07/09, ver
+[[blog-o-que-trava-sao-os-backlinks]]); comprar link dofollow é a via mais rápida de
+perder isso. E a restrição *"empresas licenciadas no Brasil"* provavelmente exclui o Ed,
+que não tem empresa no Brasil.
+
+⚠️ **O QUE ISTO REFRAMA:** o Mobills tem **45 links do acionista**. Como o portal VENDE
+links, é bem possível que os tenha **comprado**. Não há prova — mas parte do que se
+estava a tentar copiar pode não ter sido conquistado. **Reforça a decisão da quarta
+rodada:** o caminho é jornal que dá link de graça no texto, não portal que vende
+publipost.
+
+**Enviada uma resposta curta** (`RESPOSTA-ACIONISTA.txt`) a perguntar se a candidatura a
+**articulista** é caminho diferente do publipost — a página `/publique-no-portal/` convida
+articulistas com estas palavras: *"venha fazer parte do time de articulistas do Portal"*.
+Sem negociar preço: negociar seria aceitar a conversa comercial. Com saída honrosa
+oferecida, porque **um "não" rápido vale mais que um talvez que nunca chega**.
 
 ---
 
