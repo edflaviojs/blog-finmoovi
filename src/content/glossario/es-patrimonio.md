@@ -28,21 +28,17 @@ Cuando revisas tu cuenta bancaria y ves que el saldo apenas cubre el alquiler o 
 
 ![¿Qué es el patrimonio?](/images/glossario/patrimonio-inline-1.webp)
 
-
-
 ## Errores comunes al medir tu patrimonio
   
 - **Olvidar los activos pequeños:** Un teléfono, una bicicleta o incluso el saldo de una cuenta de ahorros de pocos dólares se suman al total.  
 - **No considerar las deudas ocultas:** Los intereses de tarjetas de crédito, los pagos pendientes de préstamos estudiantiles o los cargos por servicios pueden pasar desapercibidos.  
-- **Usar valores fijos:** Comparar tu patrimonio con una moneda específica (por ejemplo, “tengo 10 000 R$”) no ayuda a quien vive en un entorno multimoneda o con ingresos variables.
+- **Usar valores fijos:** Comparar tu patrimonio con una moneda específica (por ejemplo, “tengo 1.800 €”) no ayuda a quien vive en un entorno multimoneda o con ingresos variables.
 
 ## Cómo FinMoovi te ayuda a controlar tu patrimonio
   
 FinMoovi es el compañero que te recuerda que el patrimonio no es solo un número, sino una herramienta para tomar decisiones. La app ofrece:
 
 ![Errores comunes al medir tu patrimonio](/images/glossario/patrimonio-inline-3.webp)
-
-
 
 - **Captura inteligente:** Puedes tomar una foto del recibo o dictar el gasto con tu voz; la app lo reconoce y lo clasifica automáticamente.  
 - **Multimoneda:** Funciona con diferentes monedas (USD, EUR, etc.) y convierte al instante para que veas el impacto real en tu bolsillo.  

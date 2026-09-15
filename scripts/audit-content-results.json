@@ -1,40 +1,27 @@
 [
   {
-    "file": "en-finmoovi-cost-of-living-index-august-2026.md",
+    "file": "en-quotes-week-2-september-2026.md",
     "dir": "posts",
     "severity": 3,
     "issues": {
-      "currency": 6,
-      "brInstitutions": [
-        "IBGE"
+      "currency": 8,
+      "brInstitutions": [],
+      "brProducts": [
+        "CDB",
+        "Selic"
       ],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
+      "geoRefs": [
+        "brasileiras"
+      ],
+      "ptWordsCount": 6,
       "brBrands": [],
-      "brAcronyms": [
-        "IPCA"
-      ],
-      "ptLeftovers": []
-    }
-  },
-  {
-    "file": "es-indice-finmoovi-costo-de-vida-agosto-2026.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 6,
-      "brInstitutions": [
-        "IBGE"
-      ],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [
-        "IPCA"
-      ],
-      "ptLeftovers": []
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "ações",
+        "dívidas",
+        "poupança",
+        "investimentos"
+      ]
     }
   },
   {
@@ -70,6 +57,24 @@
         "LCI",
         "LCA"
       ],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-cotizaciones-semana-2-septiembre-2026.md",
+    "dir": "posts",
+    "severity": 2,
+    "issues": {
+      "currency": 4,
+      "brInstitutions": [],
+      "brProducts": [
+        "CDB",
+        "Selic"
+      ],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
       "ptLeftovers": []
     }
   },
@@ -411,6 +416,21 @@
       "brProducts": [
         "CDB"
       ],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-patrimonio.md",
+    "dir": "glossario",
+    "severity": 1,
+    "issues": {
+      "currency": 1,
+      "brInstitutions": [],
+      "brProducts": [],
       "geoRefs": [],
       "ptWordsCount": 0,
       "brBrands": [],
@@ -1726,6 +1746,21 @@
     }
   },
   {
+    "file": "en-finmoovi-cost-of-living-index-august-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-finmoovi-cost-of-living-index-july-2026.md",
     "dir": "posts",
     "severity": 0,
@@ -1893,6 +1928,21 @@
   {
     "file": "en-hedge.md",
     "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-how-freelancers-can-organize-their-finances-in-2026.md",
+    "dir": "posts",
     "severity": 0,
     "issues": {
       "currency": 0,
@@ -3076,6 +3126,21 @@
     }
   },
   {
+    "file": "en-patrimonio.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-personal-budget.md",
     "dir": "glossario",
     "severity": 0,
@@ -3887,6 +3952,21 @@
   },
   {
     "file": "en-understand-price-amortization-and-optimize-your-finances-in.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-understand-your-credit-card-statement-and-take-control-of.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -5161,6 +5241,21 @@
     }
   },
   {
+    "file": "es-como-los-freelancers-pueden-organizar-sus-finanzas-en-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-como-manejar-la-volatilidad-en-tus-finanzas-personales-en.md",
     "dir": "posts",
     "severity": 0,
@@ -5986,6 +6081,21 @@
     }
   },
   {
+    "file": "es-entiende-la-factura-de-la-tarjeta-y-toma-el-control-de-tu.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-estrategias-simples-para-ahorrar-dia-a-dia-en-2026.md",
     "dir": "posts",
     "severity": 0,
@@ -6453,6 +6563,21 @@
   {
     "file": "es-independencia-financiera.md",
     "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-indice-finmoovi-costo-de-vida-agosto-2026.md",
+    "dir": "posts",
     "severity": 0,
     "issues": {
       "currency": 0,
