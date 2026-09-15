@@ -1,0 +1,212 @@
+{
+  "slug": "lista-de-compras-do-mes",
+  "term": "lista de compras do mês",
+  "category": "basico",
+  "keyword": "compras",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você chega no mercado e *gasta mais* do que queria, sempre?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ralo",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você chega no mercado e gasta mais do que queria, sempre? A lista de compras é o que evita isso. Seu dinheiro ir embora no impulso.",
+      "durationSec": 10,
+      "shots": [
+        {
+          "anchor": "gasta",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "lista",
+          "visual": {
+            "type": "statement",
+            "text": "Lista antes. Impulso depois."
+          }
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "icon",
+            "icon": "money"
+          },
+          "sfx": "coin"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Esse impulso aparece na correria. Você esquece o que já tem, pega promoção sem precisar e só lembra da compra quando aperta.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "impulso",
+          "visual": {
+            "type": "statement",
+            "text": "O impulso aparece na pressa"
+          }
+        },
+        {
+          "anchor": "promoção",
+          "visual": {
+            "type": "statement",
+            "text": "Promoção não é economia"
+          },
+          "sfx": "alert"
+        },
+        {
+          "anchor": "aperta",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "E quando você junta comida, higiene, roupa e presentes, aquele gasto pequeno pode virar quase o valor de um aluguel.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "comida",
+          "visual": {
+            "type": "list",
+            "text": "Comida • higiene • roupa"
+          }
+        },
+        {
+          "anchor": "gasto",
+          "visual": {
+            "type": "number",
+            "text": "R$ 1.500"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "aluguel",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Pra ver isso no dia a dia, eu joguei as compras no FinMoovi e ele foi me mostrando cada gasto da lista do mês.",
+      "durationSec": 9.2,
+      "shots": [
+        {
+          "anchor": "joguei",
+          "visual": {
+            "type": "app",
+            "app": "compras",
+            "note": "Lista de compras do mês com categorias e valores"
+          },
+          "sfx": "click"
+        },
+        {
+          "anchor": "mostrando",
+          "visual": {
+            "type": "chart",
+            "text": "Gastos por categoria"
+          }
+        },
+        {
+          "anchor": "lista",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          },
+          "sfx": "thud"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer acompanhar o seu? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "acompanhar",
+          "visual": {
+            "type": "statement",
+            "text": "Veja para onde seu dinheiro vai"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "number",
+            "text": "7 dias grátis"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Pra gastar menos, saiba o que vai comprar antes de sair. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "menos",
+          "visual": {
+            "type": "statement",
+            "text": "Planeje antes de sair"
+          }
+        },
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "icon",
+            "icon": "shield"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "outros",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Teste por sete dias grátis",
+    "target": "app"
+  },
+  "totalDurationSec": 46.1
+}
