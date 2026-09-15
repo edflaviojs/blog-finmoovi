@@ -1,6 +1,6 @@
 ---
 title: "Economize no supermercado com dicas práticas"
-description: "Aprenda a economizar no supermercado em 2026 com dicas reais e eficazes, baixe o app para começar a planejar suas compras e reduzir gastos agora mesmo"
+description: "Economize no supermercado com dicas simples e eficazes para reduzir suas despesas mensais e melhorar sua gestão financeira, confira agora e comece a economizar!"
 tickerHeadline: "O truque que reduz sua conta no mercado"
 image: "/images/posts/como-economizar-no-supermercado-em-2026-dicas-reais.webp"
 imageAlt: "Formas abstratas douradas e azuis flutuando sobre fundo branco e azul claro."
@@ -9,13 +9,13 @@ locale: "pt"
 tags: ["como economizar dinheiro no supermercado","finanças pessoais","economia","dinheiro"]
 author: "FinMoovi"
 publishedAt: 2026-07-23
-updatedAt: "2026-09-08"
+updatedAt: "2026-09-15"
 readingTime: 4
 featured: true
 translationKey: "como-economizar-no-supermercado-em-2026-dicas-reais"
 seo:
   metaTitle: "Economize no supermercado com dicas práticas"
-  metaDescription: "Aprenda a economizar no supermercado em 2026 com dicas reais e eficazes, baixe o app para começar a planejar suas compras e reduzir gastos agora mesmo"
+  metaDescription: "Economize no supermercado com dicas simples e eficazes para reduzir suas despesas mensais e melhorar sua gestão financeira, confira agora e comece a economizar!"
   keywords: ["como economizar dinheiro no supermercado","finanças pessoais","economia","dinheiro"]
 ---
 
