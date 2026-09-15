@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-15T15:18:07.332Z",
+  "updatedAt": "2026-09-15T22:02:56.334Z",
   "sourceCursor": 1,
   "entries": [
     {
@@ -2091,6 +2091,14 @@
       "source": "gsc-gap",
       "status": "pending",
       "addedAt": "2026-09-14T13:27:29.761Z"
+    },
+    {
+      "keyword": "calculadora sac price",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-09-15T22:02:55.545Z"
     }
   ]
 }
