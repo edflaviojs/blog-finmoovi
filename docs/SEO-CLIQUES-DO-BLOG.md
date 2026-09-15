@@ -214,19 +214,122 @@ Astro emite o nome da classe no CSS de **todas** as páginas, e eu estava a cont
 
 ---
 
-## O que fazer a seguir
+# Noite de 15/09 → 16/09: o robô corria e não entregava
 
-1. **Esperar a terça.** O robô de CTR corre com a régua nova e vai apanhar a página
-   das 1.161 impressões pela primeira vez. **Medir o CTR dessa busca 2 a 3 semanas
-   depois** — é o teste da hipótese da promessa vazia.
-2. **Decidir os temas.** É a decisão mais cara em aberto. Escrever para as calculadoras
-   que têm procura e não têm conteúdo — a de juros compostos tem 2 posts e disputa
-   90.500 buscas/mês.
-3. **Pôr volume na fila de palavras-chave.** Só entra palavra com número ao lado:
-   do Search Console, do autocompletar, ou confirmada no Semrush. Quem não tem
-   número, não entra.
-4. **Os CTAs dizem *"Usado por milhares de pessoas"*** nos três idiomas. É a mesma
-   família do *"+2.400 pessoas"* que saiu do `finmoovi.com` em 15/09 — número de prova
-   social sem prova. **Decisão do Ed.**
-5. **25 descrições usam bloco YAML `>-`** (multilinha). Família de
-   `blog-parou-3-dias-yaml-dobrado`. Por verificar.
+O plano era esperar a terça. **A terça era o mesmo dia** — e a corrida das 12:27
+usou a régua VELHA, porque o conserto só entrou às 18:24. Seis horas de diferença.
+Disparada à mão às 21:42, a régua nova apanhou a página das 1.161 impressões pela
+primeira vez… e o robô pulou **22 das 23** candidatas.
+
+## 🔴 A página do documento estava ERRADA
+
+| | |
+|---|---|
+| este documento dizia | `como-reduzir-gastos-fixos-mensais-de-forma-eficaz` |
+| **é** | **`como-organizar-suas-despesas-mensais-com-facilidade-e`** |
+
+A página foi **assumida por parecença de nome** e nunca conferida. Confirmada agora
+por três caminhos: o digest, a canibalização (código não tocado) e a corrida real do
+otimizador, que a põe em 1º da fila.
+
+**A razão de ninguém saber:** o digest pedia ao GSC as 10 mil linhas de `query+page`
+e **só usava a página na canibalização** — as outras três categorias gravavam a busca
+e deitavam a página fora. Consertado: o relatório grava agora a página de cada busca.
+É a mesma família de defeito de duas réguas, terceira vez no mesmo dia.
+
+## O que estava errado no snippet — e não era o "Descubra"
+
+```
+a pessoa digita:  como REDUZIR gastos mensais
+o título dizia :  Como ORGANIZAR suas despesas mensais
+```
+
+Medido palavra a palavra: **"reduzir" não aparecia no título nem na descrição.** Ela
+quer gastar menos; a página oferecia montar planilha. A descrição tinha 173
+caracteres (o Google corta em ~160) e abria com "Descubra".
+
+O artigo **tem** a seção *"Reduza seus gastos sem sofrimento"* — na linha 104 de 114.
+
+**Reescrito à mão** para `Como reduzir gastos mensais: 3 cortes e a planilha certa`
++ descrição de 155 caracteres com os 3 cortes, as 24 horas, as 7 categorias e os 5
+minutos — **cada número conferido dentro do artigo antes de entrar**. Descartei
+"3 cliques" porque o artigo escreve *"três cliques"* e o teste reprovou.
+
+⚠️ Muda também o H1 e o cartão das listas: `PostLayout.astro:111` lê o mesmo
+`seo.metaTitle`. Aprovado pelo Ed com prévia.
+
+**O relógio da medição começa em 15/09/2026. Medir por volta de 06/10.**
+
+## 🔴 Por que o robô não entregava: 400 fichas
+
+A Cerebras e o Groq correm `gpt-oss-120b`, que **raciocina antes de escrever** — e o
+raciocínio gasta do mesmo `max_tokens`. O robô pedia 400, o segundo valor mais baixo
+dos 27 robôs. Medido no workflow `diagnostico-provedores-texto`, com o prompt real:
+
+| | resultado |
+|---|---|
+| 400 fichas | **397 gastas a pensar → `content` VAZIO** |
+| 400 + `reasoning_effort:low` | 1 em 3 entregou |
+| 1000 + `reasoning_effort:low` | **2 em 3 passaram todas as travas** |
+
+**O controle que prova que não era a chave:** mesma chave, mesmas 400 fichas, pergunta
+*"responda: funcionando"* → respondeu em 11 caracteres, nos dois provedores.
+
+Entrou `reasoning_effort:low` (opt-in, só para `gpt-oss`) + 1500 fichas. Resultado:
+**5 páginas em vez de 1, zero "resposta vazia".**
+
+⚠️ **Eu encurtei o prompt na 1ª versão do diagnóstico** e deixei de fora a linha que
+proíbe "Descubra". As cinco respostas abriram todas com "Descubra" e quase escrevi que
+o modelo desobedece a uma proibição que nunca lhe enviei.
+
+## 🔴 E então a IA inventou uma data
+
+Fui ler as 5 páginas que ele entregou. Duas não podiam ficar no ar.
+
+A página das cotações **da semana de 07/09/2026** recebeu:
+
+> *"Confira a cotação do dólar em reais para **27/09/2026**, veja a variação da semana
+> passada e **a projeção**."*
+
+Data no **futuro**, ausente do artigo, e uma projeção que o artigo não faz. Título
+passou a *"Cotação dólar hoje setembro 2026: preço atual"* num retrato fixo de uma
+semana. **Desfeito.**
+
+A outra: `"cdb 120% cdi liquidez diária 2026: supera a poupança?"` — minúscula e colada
+de palavras-chave. ✅ **O 120% NÃO foi inventado** (o artigo diz *"90% a 120% do CDI"*);
+a minha primeira medição acusou invenção por procurar `"120% cdi"` literal quando o
+artigo escreve `"120% DO CDI"`. **Desfeito pela frase, não pelo número.**
+
+### As travas que entraram (com o prompt, no mesmo commit)
+
+| trava | porquê |
+|---|---|
+| `numerosFabricados` — **uma régua, dois clientes** | o repo **já** tinha anti-fabricação… só dentro de `buildSafeSection`. Uma **seção** nova não podia inventar número; o **título** e a **meta** podiam. Extraída e agora chamada pelos dois. Passa a apanhar DATAS |
+| normalizar o espaço invisível | a 1ª versão só trocava U+202F por espaço e dava **falso alarme** em `120 %`. Falso alarme repetido é o caminho mais curto para alguém desligar a trava |
+| `RETRATO_DE_DATA` | cotações e índice de custo de vida saem por **estrutura**: a trava de números apanha a data inventada mas não apanha a palavra *"hoje"* — nela não há número |
+| título em minúscula | rejeitado |
+| **quarentena de 21 dias** | o robô reescrevia a mesma página semana após semana — `como-economizar-no-supermercado` em **08/09 E 15/09**. Um título precisa de 2 a 3 semanas para o GSC responder. Registo em `.github/data/ctr-otimizadas.json`, no mesmo commit das páginas |
+
+8 casos testados, **3 deles controles falsos que têm de reprovar** (valor em reais,
+percentagem e ano inventados de propósito). Os 8 passaram.
+
+## O que ficou ABERTO (por ordem de tamanho)
+
+1. 🔴 **O glossário é invisível ao robô de CTR.** `pageUrlToFile` só procura em
+   `src/content/posts/`; os 120 verbetes vivem noutra coleção. **10 das 23
+   oportunidades eram do glossário** e nenhuma pode ser consertada.
+2. 🔴 **O schema não segue o título.** `auto-schema.js:220` faz
+   `if (hadBlock && !force) continue` — pula quem já tem bloco, e o workflow diário
+   corre sem `--force`. Varridos os 276 posts com bloco: **123 batem, 1 divergia**
+   (criada por mim, já consertada), 152 sem campo para comparar. Não é um problema de
+   cem páginas; é uma **porta aberta**.
+3. ⏳ **Medir o CTR de "como reduzir gastos mensais"** por volta de **06/10/2026**.
+4. **Decidir os temas** — a decisão mais cara, e **não começada**. 87 dos 151 posts
+   caem na calculadora de orçamento; a de juros compostos disputa 90.500 buscas/mês,
+   está na posição 73 e tem **2** posts.
+5. **Pôr volume na fila de palavras-chave** — **não começado**. 211 entradas, zero com
+   volume.
+6. **Os CTAs dizem *"Usado por milhares de pessoas"*** nos três idiomas — mesma família
+   do *"+2.400 pessoas"*. **Decisão do Ed, não tocado.**
+7. **25 descrições usam bloco YAML `>-`** — família de `blog-parou-3-dias-yaml-dobrado`.
+   **Por verificar, não tocado.**
