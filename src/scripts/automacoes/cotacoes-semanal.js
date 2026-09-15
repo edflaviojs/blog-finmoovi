@@ -7,6 +7,7 @@ import { config } from '../../../site.config.ts';
 
 import { generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
 import { getTickerRates } from '../apis/exchange-rate.js';
+import { getSelic, getIpca12m, pt as bcbPt } from '../apis/bcb.js';
 import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
@@ -14,7 +15,86 @@ import { execSync } from 'child_process';
 const POSTS_DIR = join(process.cwd(), 'src', 'content', 'posts');
 const IMAGES_DIR = join(process.cwd(), 'public', 'images', 'posts');
 
-async function generatePost(locale, rates, weekStart, today, weekNum, dateStr, imagePath) {
+/**
+ * Números que aparecem ao lado de "Selic" e NÃO são a taxa — são a regra.
+ *
+ * `0,5` e `70` são a fórmula da poupança (0,5% ao mês, ou 70% da Selic);
+ * `8,5` é o limiar entre as duas; `0,10` é a distância habitual do CDI à Selic;
+ * `100` é "100% da Selic". Sem esta lista a trava reprovaria texto correto —
+ * e régua grossa demais inventa defeito.
+ */
+const NUMEROS_DE_REGRA = new Set(['0,5', '0,50', '70', '70,0', '8,5', '8,50', '0,1', '0,10', '100']);
+
+/**
+ * Lê as percentagens que o texto atribui a um indicador e devolve as que não
+ * batem com o valor oficial.
+ *
+ * ⚠️ O `[  ]` NÃO É ZELO. Em 15/09/2026 o modelo escreveu `13,75` seguido
+ * de um ESPAÇO ESTREITO INVISÍVEL (U+202F) antes do `%`, e por causa disso a
+ * primeira varredura encontrou 3 posts errados quando eram 6. Qualquer busca de
+ * número neste repositório tem de aceitar os dois espaços invisíveis, senão mede
+ * menos do que parece medir.
+ *
+ * @param {string} texto - o markdown gerado
+ * @param {{selic: {valor:number}|null, ipca: {valor:number}|null}} indicadores
+ * @returns {string[]} descrições dos desvios; vazio = texto limpo
+ */
+function conferirIndicadores(texto, indicadores) {
+  const erros = [];
+  const alvos = [
+    { nome: 'Selic', rotulo: /Selic/i, oficial: indicadores?.selic?.valor },
+    { nome: 'IPCA', rotulo: /IPCA|infla[çc][ãa]o/i, oficial: indicadores?.ipca?.valor },
+  ];
+
+  for (const alvo of alvos) {
+    if (typeof alvo.oficial !== 'number') continue;
+    const esperado = bcbPt(alvo.oficial);
+
+    // Uma percentagem até 60 caracteres depois do nome do indicador.
+    //
+    // O `\b` à frente do número NÃO é decoração: sem ele, "100% da Selic" era
+    // lido como "00%" e a trava reprovava uma frase correta. Régua grossa demais
+    // inventa defeito — e um medidor que se engana manda refazer trabalho bom.
+    const re = new RegExp(`${alvo.rotulo.source}[^.\\n]{0,60}?\\b(\\d{1,2}(?:[,.]\\d{1,2})?)\\s*[\\u202F\\u00A0 ]*%`, 'gi');
+    for (const m of texto.matchAll(re)) {
+      const bruto = m[1].replace('.', ',');
+      if (NUMEROS_DE_REGRA.has(bruto)) continue;
+      // Aceita 14, 14,0 e 14,00 como o mesmo número.
+      if (Number(bruto.replace(',', '.')) === alvo.oficial) continue;
+      erros.push(`${alvo.nome} escrita como ${bruto}% — o Banco Central diz ${esperado}%`);
+    }
+  }
+
+  // Afirmar uma decisão do Copom é inventar um facto que nenhuma API nos deu.
+  //
+  // ⚠️ A PRIMEIRA VERSÃO DESTA LINHA SÓ APANHAVA O PASSADO (`reduziu a Selic`) e
+  // DEIXAVA PASSAR A FRASE QUE CAUSOU TODO O PROBLEMA: *"o Copom decidiu REDUZIR
+  // a Selic"* — infinitivo, não passado. Uma trava só vale depois de ser testada
+  // contra o texto real que ela devia ter apanhado.
+  // A busca é por FRASE, e não pelo texto todo, e o nome do indicador pode vir
+  // antes OU depois da palavra do movimento. A primeira versão exigia a ordem
+  // "cortou a Selic" e por isso deixava passar *"Selic em foco: corte de 0,5 %"*,
+  // que é o título real do post que inventou o corte.
+  //
+  // `alta` e `baixa` ficam de fora de propósito: são adjetivos comuns ("a Selic
+  // alta mantém a renda fixa atrativa") e reprovariam texto correto.
+  const movimento = /\b(reduzi(?:u|r)|cort(?:ou|ar|e)|elev(?:ou|ar)|aument(?:ou|ar|o)|sub(?:iu|ir)|redução|queda)\b/i;
+  for (const frase of texto.split(/[.\n]/)) {
+    if (/Selic/i.test(frase) && movimento.test(frase)) {
+      erros.push('o texto afirma um movimento da Selic (corte/aumento) que nenhum dado sustenta');
+      break;
+    }
+  }
+
+  return [...new Set(erros)];
+}
+
+/**
+ * @param {{selic: {valor:number,data:string}|null, ipca: {valor:number,data:string}|null}} indicadores
+ *   Indicadores lidos do Banco Central. Quando um deles é `null`, o pedido
+ *   correspondente sai do prompt — ver o bloco de regras mais abaixo.
+ */
+async function generatePost(locale, rates, weekStart, today, weekNum, dateStr, imagePath, indicadores) {
   const monthNames = {
     pt: ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'],
     en: ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'],
@@ -41,17 +121,82 @@ async function generatePost(locale, rates, weekStart, today, weekNum, dateStr, i
     es: ["cotizaciones", "dólar", "euro", "mercado financiero", "selic"]
   };
 
+  // ── OS NÚMEROS ENTRAM NO PROMPT, OU A SECÇÃO NÃO EXISTE ────────────────────
+  //
+  // Até 15/09/2026 este prompt mandava "Comentário sobre a Selic" e NÃO dava a
+  // Selic. O modelo obedecia e inventava um valor — todas as semanas, nos três
+  // idiomas. O pior caso publicado afirmava um corte do Copom que nunca houve
+  // ("reduziu de 11,25% para 10,75%", quando a taxa estava em 14,00% parada).
+  //
+  // Duas mudanças, e a segunda é a que importa:
+  //   1. a Selic e o IPCA vêm do Banco Central e são INJETADOS aqui;
+  //   2. quando o Banco Central não responde, o item desaparece do pedido.
+  //      Sem dado, não se pede comentário — porque pedir comentário sem dado é
+  //      exatamente o que produziu a mentira.
+  //
+  // As REGRAS abaixo são texto fixo e nunca são cortadas. E não trazem nenhum
+  // número de exemplo de propósito: neste repositório, todo exemplo escrito num
+  // prompt acaba copiado à letra pelo modelo.
+  const temSelic = Boolean(indicadores?.selic);
+  const temIpca = Boolean(indicadores?.ipca);
+
+  const linhasIndicadores = {
+    pt: [
+      temSelic ? `- Selic (meta do Copom): ${bcbPt(indicadores.selic.valor)}% ao ano, dado de ${indicadores.selic.data}` : null,
+      temIpca ? `- IPCA acumulado em 12 meses: ${bcbPt(indicadores.ipca.valor)}%, dado de ${indicadores.ipca.data}` : null,
+    ].filter(Boolean).join('\n'),
+    en: [
+      temSelic ? `- Selic (Copom target rate): ${bcbPt(indicadores.selic.valor)}% per year, as of ${indicadores.selic.data}` : null,
+      temIpca ? `- IPCA, 12-month accumulated: ${bcbPt(indicadores.ipca.valor)}%, as of ${indicadores.ipca.data}` : null,
+    ].filter(Boolean).join('\n'),
+    es: [
+      temSelic ? `- Selic (meta del Copom): ${bcbPt(indicadores.selic.valor)}% anual, dato del ${indicadores.selic.data}` : null,
+      temIpca ? `- IPCA acumulado en 12 meses: ${bcbPt(indicadores.ipca.valor)}%, dato del ${indicadores.ipca.data}` : null,
+    ].filter(Boolean).join('\n'),
+  };
+
+  const itemSelic = {
+    pt: temSelic ? '\n2. Comentário sobre a Selic e impacto nos investimentos' : '',
+    en: temSelic ? '\n2. Comment on Selic and impact on investments' : '',
+    es: temSelic ? '\n2. Comentario sobre la Selic e impacto en las inversiones' : '',
+  };
+
+  const regras = {
+    pt: `
+REGRAS OBRIGATÓRIAS SOBRE NÚMEROS — o texto é reprovado se forem quebradas:
+- Só pode escrever um número de indicador económico (Selic, IPCA, juros de banco central) se ele estiver na lista "Dados desta semana" acima. Copie-o exatamente como está.
+- É proibido inventar, estimar, arredondar ou atualizar qualquer desses números.
+- É proibido afirmar que houve reunião, decisão, corte ou aumento de juros. Os dados acima dizem qual é a taxa, não dizem o que aconteceu numa reunião.
+- Se faltar um dado de que precisaria, escreva o texto sem ele. Não preencha o buraco.
+- Em "o que esperar", fale de cenários e do que observar. É proibido prever um valor.`,
+    en: `
+MANDATORY RULES ABOUT NUMBERS — the text is rejected if these are broken:
+- You may only write an economic indicator figure (Selic, IPCA, central bank rates) if it appears in the "Data for this week" list above. Copy it exactly as given.
+- You must not invent, estimate, round or update any of those figures.
+- You must not claim that a meeting, decision, rate cut or rate hike happened. The data above states the rate, not what happened at any meeting.
+- If a figure you would need is missing, write the text without it. Do not fill the gap.
+- In "what to expect", discuss scenarios and what to watch. Forecasting a specific figure is forbidden.`,
+    es: `
+REGLAS OBLIGATORIAS SOBRE NÚMEROS — el texto se rechaza si se incumplen:
+- Solo puede escribir una cifra de indicador económico (Selic, IPCA, tipos de un banco central) si aparece en la lista "Datos de esta semana" de arriba. Cópiela exactamente.
+- Está prohibido inventar, estimar, redondear o actualizar cualquiera de esas cifras.
+- Está prohibido afirmar que hubo una reunión, decisión, recorte o subida de tipos. Los datos de arriba dicen cuál es la tasa, no lo que ocurrió en una reunión.
+- Si falta un dato que necesitaría, escriba el texto sin él. No rellene el hueco.
+- En "qué esperar", hable de escenarios y de qué observar. Está prohibido pronosticar una cifra.`,
+  };
+
   const prompts = {
     pt: `
 Escreva um resumo semanal do mercado financeiro brasileiro para a semana de ${weekStart.toLocaleDateString('pt-BR')} a ${today.toLocaleDateString('pt-BR')}.
 
-Dados atuais:
+Dados desta semana (os ÚNICOS números que pode afirmar):
 - USD/BRL: R$ ${rates.USDBRL}
 - EUR/BRL: R$ ${rates.EURBRL}
+${linhasIndicadores.pt}
+${regras.pt}
 
 Inclua:
-1. Resumo do dólar e euro (tendência da semana)
-2. Comentário sobre a Selic e impacto nos investimentos
+1. Resumo do dólar e euro (tendência da semana)${itemSelic.pt}
 3. Dica prática para o investidor pessoa física
 4. O que esperar para a próxima semana
 
@@ -61,13 +206,14 @@ Mencione que o ${config.app.name} ajuda a acompanhar investimentos em múltiplas
     en: `
 Write a weekly summary of the Brazilian financial market for the week of ${weekStart.toLocaleDateString('en-US')} to ${today.toLocaleDateString('en-US')}.
 
-Current data:
+Data for this week (the ONLY figures you may state):
 - USD/BRL: R$ ${rates.USDBRL}
 - EUR/BRL: R$ ${rates.EURBRL}
+${linhasIndicadores.en}
+${regras.en}
 
 Include:
-1. Summary of dollar and euro (weekly trend)
-2. Comment on Selic and impact on investments
+1. Summary of dollar and euro (weekly trend)${itemSelic.en}
 3. Practical tip for individual investors
 4. What to expect for next week
 
@@ -77,13 +223,14 @@ Mention that ${config.app.name} helps track investments in multiple currencies.
     es: `
 Escriba un resumen semanal del mercado financiero brasileño para la semana del ${weekStart.toLocaleDateString('es-ES')} al ${today.toLocaleDateString('es-ES')}.
 
-Datos actuales:
+Datos de esta semana (las ÚNICAS cifras que puede afirmar):
 - USD/BRL: R$ ${rates.USDBRL}
 - EUR/BRL: R$ ${rates.EURBRL}
+${linhasIndicadores.es}
+${regras.es}
 
 Incluya:
-1. Resumen del dólar y euro (tendencia de la semana)
-2. Comentario sobre la Selic e impacto en las inversiones
+1. Resumen del dólar y euro (tendencia de la semana)${itemSelic.es}
 3. Consejo práctico para el inversor individual
 4. Qué esperar para la próxima semana
 
@@ -92,7 +239,28 @@ Mencione que ${config.app.name} ayuda a seguir inversiones en múltiples monedas
 `
   };
 
-  const content = await generateText(prompts[locale], { maxTokens: 2000, temperature: 0.6 });
+  // ── A TRAVA: o que sair tem de bater com o Banco Central ───────────────────
+  //
+  // O prompt acima ORDENA copiar o número; esta trava PUNE quem não copiar. As
+  // duas vivem neste mesmo ficheiro de propósito — a família de defeito nº1 desta
+  // casa é prompt e validador em sítios diferentes, a mandar coisas opostas.
+  //
+  // Repara uma vez e só depois desiste: `generateText` é caro, e um único
+  // deslize do modelo não justifica ficar sem o post da semana. Se falhar as
+  // duas, ABORTA — publicar um número de juros inventado é pior que não publicar.
+  let content = null;
+  for (let tentativa = 1; tentativa <= 2; tentativa++) {
+    content = await generateText(prompts[locale], { maxTokens: 2000, temperature: 0.6 });
+    const erros = conferirIndicadores(content, indicadores);
+    if (erros.length === 0) break;
+
+    console.warn(`::warning::[${locale}] tentativa ${tentativa}: ${erros.join(' | ')}`);
+    if (tentativa === 2) {
+      throw new Error(
+        `[${locale}] o texto afirma indicador que não bate com o Banco Central: ${erros.join(' | ')}`
+      );
+    }
+  }
   const title = titles[locale];
 
   // Tabela determinística com os valores + linha de fonte datada (citável por
@@ -223,6 +391,16 @@ async function main() {
     const rates = await getTickerRates();
     console.log(`💱 USD/BRL: ${rates.USDBRL} | EUR/BRL: ${rates.EURBRL}`);
 
+    // Indicadores oficiais. Se o Banco Central não responder, seguem `null` e a
+    // secção correspondente sai do pedido — a semana fica sem comentário de
+    // Selic, que é infinitamente melhor que uma Selic inventada.
+    const [selic, ipca] = await Promise.all([getSelic(), getIpca12m()]);
+    const indicadores = { selic, ipca };
+    console.log(
+      `🏦 Selic: ${selic ? `${bcbPt(selic.valor)}% (${selic.data})` : 'indisponível — secção removida'}` +
+      ` | IPCA 12m: ${ipca ? `${bcbPt(ipca.valor)}% (${ipca.data})` : 'indisponível'}`
+    );
+
     // Generate cover image (SVG local, shared across all 3 locales)
     console.log('🖼️ Gerando imagem de capa...');
     const imageSlug = `cotacoes-semana-${new Date().toISOString().split('T')[0]}`;
@@ -238,7 +416,7 @@ async function main() {
 
     for (const locale of locales) {
       console.log(`📄 Gerando post em ${locale}...`);
-      const { slug, frontmatter } = await generatePost(locale, rates, weekStart, today, weekNum, dateStr, imagePath);
+      const { slug, frontmatter } = await generatePost(locale, rates, weekStart, today, weekNum, dateStr, imagePath, indicadores);
 
       const postPath = join(POSTS_DIR, `${slug}.md`);
       if (!existsSync(POSTS_DIR)) {
