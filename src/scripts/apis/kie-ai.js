@@ -177,6 +177,19 @@ export async function generateText(prompt, options = {}) {
     model,             // override opcional — aplicado apenas ao provedor primário
     retries = 2,       // tentativas por provedor em caso de 429
     pago = null,       // 'escritor' | 'leitor' — opt-in dos modelos pagos (ver provedoresPagos)
+    // ── 'low' | 'medium' | 'high' — quanto o modelo pensa ANTES de responder ──
+    //
+    // OPT-IN, e a razão é não estragar os outros robôs. A Cerebras e o Groq
+    // correm `gpt-oss-120b`, que raciocina antes de escrever, e o raciocínio
+    // GASTA DO MESMO `max_tokens` da resposta. Medido em 15/09/2026 com o prompt
+    // real do `gsc-otimizar-ctr` (que pede 400 fichas): 397 das 400 fichas foram
+    // para o raciocínio, `finish_reason: "length"` e `message.content` VAZIO —
+    // que é o "resposta vazia" que pulou 5 páginas por corrida.
+    //
+    // ⚠️ Deixar isto ligado por omissão poria os 27 robôs a pensar menos, e há
+    // quem PRECISE de pensar: escrever um post de 1.500 palavras não é escolher
+    // um título de 60 caracteres. Quem quer o corte, pede-o.
+    esforcoRaciocinio = null,
   } = options;
 
   const providers = getTextProviders();
@@ -259,6 +272,13 @@ export async function generateText(prompt, options = {}) {
             ],
             max_tokens: maxTokens,
             temperature,
+            // Só vai no corpo quando o chamador o pediu E o modelo o entende.
+            // Mandá-lo a um modelo que não raciocina (o llama do Cloudflare) é
+            // arriscar um 400 por parâmetro desconhecido, e a rede de segurança
+            // é justamente quem não pode falhar.
+            ...(esforcoRaciocinio && /gpt-oss/i.test(useModel)
+              ? { reasoning_effort: esforcoRaciocinio }
+              : {}),
           };
         response = await fetch(provider.url, {
           method: 'POST',
