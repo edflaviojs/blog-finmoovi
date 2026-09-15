@@ -4749,6 +4749,81 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-09-14"
+    },
+    "como-freelancers-podem-organizar-as-financas-em-2026-2.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-15"
+    },
+    "como-freelancers-podem-organizar-as-financas-em-2026-4.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-15"
+    },
+    "como-freelancers-podem-organizar-as-financas-em-2026-6.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-15"
+    },
+    "como-freelancers-podem-organizar-as-financas-em-2026.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-15"
+    },
+    "cotacoes-semana-2-setembro-2026-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-15"
+    },
+    "cotacoes-semana-2-setembro-2026-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-15"
+    },
+    "cotacoes-semana-2026-09-14.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-15"
+    },
+    "en-quotes-week-2-september-2026-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-15"
+    },
+    "en-quotes-week-2-september-2026-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-15"
+    },
+    "entenda-a-fatura-do-cartao-e-tome-o-controle-do-seu-dinheiro.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-15"
+    },
+    "es-cotizaciones-semana-2-septiembre-2026-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-15"
+    },
+    "es-cotizaciones-semana-2-septiembre-2026-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-15"
+    },
+    "patrimonio-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-15"
+    },
+    "patrimonio-inline-3.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"TAX\")",
+      "em": "2026-09-15"
+    },
+    "patrimonio.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-15"
     }
   },
   "corrigidas": {
@@ -5383,8 +5458,12 @@
     "zero-coupon-inline-1.webp": {
       "em": "2026-09-13",
       "motivo": "tem texto escrito (\"14.5M ADDS\")"
+    },
+    "patrimonio-inline-3.webp": {
+      "em": "2026-09-15",
+      "motivo": "tem texto escrito (\"TAX\")"
     }
   },
-  "totalAcervo": 950,
-  "ultimaCorrida": "2026-09-14"
+  "totalAcervo": 965,
+  "ultimaCorrida": "2026-09-15"
 }
