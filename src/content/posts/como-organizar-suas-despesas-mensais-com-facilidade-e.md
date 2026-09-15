@@ -1,6 +1,6 @@
 ---
-title: "Como organizar suas despesas mensais com facilidade e segurança"
-description: "Descubra passo a passo como criar e usar uma planilha de gastos mensal, substitua a bagunça por clareza e ainda aproveite o FinMoovi para automatizar tudo em poucos minutos."
+title: "Como reduzir gastos mensais: 3 cortes e a planilha certa"
+description: "Cancele assinaturas esquecidas, espere 24 horas antes de comprar e leve almoço de casa. Depois separe os gastos em 7 categorias e revise 5 minutos por dia."
 tickerHeadline: "Sua conta no controle em minutos"
 image: "/images/posts/como-organizar-suas-despesas-mensais-com-facilidade-e.webp"
 imageAlt: "Forma abstrata amarela e azul sobre fundo gradiente escuro e branco."
@@ -9,14 +9,14 @@ locale: "pt"
 tags: ["planilha de gastos","controle de despesas","orçamento mensal","app financeiro","FinMoovi","automação de finanças","categorias de gasto","planilha de gastos mensal"]
 author: "FinMoovi"
 publishedAt: 2026-08-10
-updatedAt: "2026-09-09"
+updatedAt: "2026-09-15"
 readingTime: 6
 featured: false
 translationKey: "como-organizar-suas-despesas-mensais-com-facilidade-e"
 scope: "universal"
 seo:
-  metaTitle: "Como organizar suas despesas mensais com facilidade e segurança"
-  metaDescription: "Descubra passo a passo como criar e usar uma planilha de gastos mensal, substitua a bagunça por clareza e ainda aproveite o FinMoovi para automatizar tudo em poucos minutos."
+  metaTitle: "Como reduzir gastos mensais: 3 cortes e a planilha certa"
+  metaDescription: "Cancele assinaturas esquecidas, espere 24 horas antes de comprar e leve almoço de casa. Depois separe os gastos em 7 categorias e revise 5 minutos por dia."
   keywords: ["planilha de gastos","controle de despesas","orçamento mensal","app financeiro","FinMoovi","automação de finanças","categorias de gasto","planilha de gastos mensal"]
 ---
 
