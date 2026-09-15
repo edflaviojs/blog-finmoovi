@@ -24,6 +24,19 @@ const GOOD_POS_MAX = 10;    // "boa posição"
 const CTR_RATIO_FLAG = 0.6; // CTR abaixo de 60% do esperado = candidata
 const MAX_PER_RUN = 5;      // cap de páginas otimizadas por execução
 
+/**
+ * Aberturas de meta descrição que não prometem nada.
+ *
+ * Medido em 15/09/2026 nas 151 descrições em português do blog: 60 começam com
+ * "Descubra" e 22 com "Aprenda a" — **82, mais de metade**. E 107 de 151 não têm
+ * um único número. Na posição 8 compete-se com sete resultados acima; quem não diz
+ * nada concreto não ganha o clique, e o blog teve **3.262 impressões e ZERO
+ * cliques** em 28 dias.
+ *
+ * Vale para os três idiomas porque o robô também reescreve `en` e `es`.
+ */
+const ABERTURA_VAZIA = /^\s*(descubr|aprend|saib|entend|conhe[çc]|veja como|discover|learn how|find out|understand|conoce|aprende|descubre)/i;
+
 const LANG = { pt: 'português do Brasil', en: 'inglês', es: 'espanhol' };
 
 function expectedCtr(position) {
@@ -58,11 +71,57 @@ async function main() {
   const rows = await querySearchAnalytics({ ...period, dimensions: ['page'], rowLimit: 5000 });
   if (!rows.length) { console.log('   Sem impressões ainda (GSC magro). Nada a fazer (exit 0).'); return; }
 
-  const candidates = rows
-    .filter(r => r.impressions >= IMP_MIN && r.position <= GOOD_POS_MAX && r.ctr < expectedCtr(r.position) * CTR_RATIO_FLAG)
-    .sort((a, b) => b.impressions - a.impressions);
+  // ── DUAS RÉGUAS PARA A MESMA COISA — o defeito consertado em 15/09/2026 ──────
+  //
+  // Até aqui a elegibilidade era decidida SÓ pela média da PÁGINA (`position <=
+  // GOOD_POS_MAX`). Mas uma página tem dezenas de buscas, e as ruins puxam a média
+  // para baixo. Resultado medido no relatório de oportunidades do próprio repo:
+  //
+  //     "como reduzir gastos mensais" — 1.161 impressões, POSIÇÃO 8, ZERO cliques
+  //
+  // Essa busca sozinha era **36% de todas as impressões do blog** (3.262 em 28
+  // dias, 0 cliques no total). E a página que a serve NUNCA foi candidata, porque
+  // a média dela nunca chegou a 10. **A maior oportunidade do blog era invisível
+  // para a ferramenta construída para a consertar.**
+  //
+  // É a família de defeito nº1 desta casa: o relatório de oportunidades mede por
+  // BUSCA e o otimizador media por PÁGINA. Mesma pergunta, réguas diferentes — e a
+  // diferença só aparece em produção.
+  //
+  // A regra passa a ser a UNIÃO: entra quem qualifica pela média da página (o que
+  // já entrava, ninguém perde) OU quem tem PELO MENOS UMA busca em boa posição com
+  // CTR muito abaixo do esperado.
+  const pares = await querySearchAnalytics({ ...period, dimensions: ['page', 'query'], rowLimit: 25000 });
 
-  console.log(`   ${candidates.length} página(s) com CTR baixo. Cap: ${MAX_PER_RUN}.`);
+  /** page → a melhor busca-oportunidade dessa página (a de mais impressões). */
+  const oportunidadePorPagina = new Map();
+  for (const r of pares) {
+    const [page, query] = r.keys;
+    if (r.impressions < IMP_MIN) continue;
+    if (r.position > GOOD_POS_MAX) continue;
+    if (r.ctr >= expectedCtr(r.position) * CTR_RATIO_FLAG) continue;
+    const atual = oportunidadePorPagina.get(page);
+    if (!atual || r.impressions > atual.impressions) {
+      oportunidadePorPagina.set(page, { query, impressions: r.impressions, position: r.position });
+    }
+  }
+
+  const candidates = rows
+    .map(r => {
+      const page = r.keys[0];
+      const porBusca = oportunidadePorPagina.get(page) || null;
+      const porPagina = r.impressions >= IMP_MIN
+        && r.position <= GOOD_POS_MAX
+        && r.ctr < expectedCtr(r.position) * CTR_RATIO_FLAG;
+      // Ordena pelo tamanho da oportunidade, que é o das impressões da BUSCA
+      // quando ela existe — é ela que justifica o trabalho, não o total da página.
+      return { ...r, porBusca, elegivel: porPagina || Boolean(porBusca), peso: porBusca ? porBusca.impressions : r.impressions };
+    })
+    .filter(c => c.elegivel)
+    .sort((a, b) => b.peso - a.peso);
+
+  const porBuscaSo = candidates.filter(c => c.porBusca && !(c.impressions >= IMP_MIN && c.position <= GOOD_POS_MAX)).length;
+  console.log(`   ${candidates.length} página(s) com CTR baixo (${porBuscaSo} só visíveis pela régua nova). Cap: ${MAX_PER_RUN}.`);
 
   const editedFiles = [];   // caminhos relativos p/ commit
   const editedNames = [];   // filenames p/ rollback
@@ -78,14 +137,25 @@ async function main() {
     if (!split) { skipped++; continue; }
     const locale = file.startsWith('en-') ? 'en' : file.startsWith('es-') ? 'es' : 'pt';
     const oldTitle = getScalar(split.fm, 'title') || '';
-    const query = (await topQueryForPage(period, cand.keys[0])) || oldTitle;
+    // A busca que JUSTIFICA a reescrita é a da oportunidade — a que está em boa
+    // posição e não recebe clique. Só quando não há oportunidade identificada é
+    // que se vai buscar a de mais impressões (e aí custa um pedido extra à API).
+    const query = cand.porBusca?.query || (await topQueryForPage(period, cand.keys[0])) || oldTitle;
 
     let ai;
     try {
       ai = await generateText(
         `Você é editor de SEO. Reescreva o TÍTULO e a META DESCRIÇÃO de um artigo para AUMENTAR o CTR na busca do Google, em ${LANG[locale]}.\n` +
         `Busca principal que traz esta página: "${query}"\nTítulo atual: "${oldTitle}"\n\n` +
-        `REGRAS: mantenha o MESMO tema/assunto (não invente novo); título com 50–60 caracteres, keyword no início, atraente e honesto (sem clickbait falso, sem inventar números/estatísticas); meta com 150–160 caracteres, clara e com chamada para ação suave. Não use aspas.\n\n` +
+        `REGRAS: mantenha o MESMO tema/assunto (não invente novo); título com 50–60 caracteres, keyword no início, atraente e honesto (sem clickbait falso, sem inventar números/estatísticas); meta com 150–160 caracteres, clara e com chamada para ação suave. Não use aspas.\n` +
+        // Medido em 15/09/2026 nas 151 descrições em português: 60 começam com
+        // "Descubra", 22 com "Aprenda a" — 54% abrem com um verbo que não promete
+        // nada — e 107 de 151 não têm um único número. Na posição 8 compete-se com
+        // sete resultados acima, e quem não diz nada concreto não ganha o clique.
+        // ⚠️ Isto NÃO é licença para inventar: a regra acima continua a valer, e em
+        // 15/09 este blog publicou uma Selic falsa por ter pedido comentário sem dar
+        // o dado. O número tem de estar NO ARTIGO.
+        `PROIBIDO abrir a meta com "Descubra", "Aprenda", "Saiba" ou "Entenda" — são aberturas vazias e já estão em metade do blog. A meta tem de dizer o que o leitor leva dali: a coisa concreta que o artigo entrega (quantos passos, qual a conta, o que muda). Se o artigo tiver um número, use ESSE número; se não tiver, não invente nenhum.\n\n` +
         `Formato EXATO:\n---TITULO---\n[título]\n---META---\n[meta]`,
         { maxTokens: 400, temperature: 0.7 },
       );
@@ -99,6 +169,14 @@ async function main() {
     const vd = validateDescription(meta);
     if (!vt.ok) { console.log(`   ⏭️ ${file}: título rejeitado (${vt.reason})`); skipped++; continue; }
     if (!vd.ok) { console.log(`   ⏭️ ${file}: meta rejeitada (${vd.reason})`); skipped++; continue; }
+    // A trava que corresponde à regra escrita no prompt acima. Prompt sem
+    // validador é meia trava: o modelo recai no molde que já viu 82 vezes no
+    // blog. Barrar aqui não abre buraco de conteúdo — a página continua
+    // candidata na corrida da semana seguinte.
+    if (ABERTURA_VAZIA.test(meta)) {
+      console.log(`   ⏭️ ${file}: meta rejeitada (abre com verbo vazio — "${meta.split(' ')[0]}")`);
+      skipped++; continue;
+    }
 
     const today = new Date().toISOString().split('T')[0];
     const { changed } = writePatched(file, split, {
