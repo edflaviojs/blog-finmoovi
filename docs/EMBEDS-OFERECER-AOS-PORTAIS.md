@@ -1,10 +1,16 @@
 # Oferecer os embeds aos portais de finanças
 
-> **Estado: 3 PORTAIS ABORDADOS em 14/09/2026, nenhuma resposta ainda.**
+> **Estado em 15/09/2026: 3 portais abordados, ZERO respostas (dia 1 de 5).
+> Os 3 alvos que faltavam medir foram medidos e os 3 saíram da lista.**
 > Escrito em 14/09/2026, no dia em que os embeds foram construídos, e atualizado
-> no mesmo dia com o que a primeira rodada de abordagens ensinou.
+> em 15/09 com a segunda rodada.
 > **O estado real de cada portal está na tabela "Onde cada portal está", mais abaixo.
-> Ler ANTES de abordar qualquer um — dois deles não têm porta de entrada.**
+> Ler ANTES de abordar qualquer um — cinco deles não têm porta de entrada.**
+>
+> 🔴 **Ler antes de tudo a secção "A SEGUNDA RODADA DESMENTE O EMBED" (15/09).**
+> O Toro — o prémio de 238 links — **não embute calculadora nenhuma**. Cita com
+> link normal no texto. O mecanismo que este documento inteiro assume não é o
+> mecanismo que produziu os 238 links.
 
 ---
 
@@ -140,19 +146,139 @@ programar, e o leitor dele fica mais tempo na página.
 
 ---
 
-## Onde cada portal está (14/09/2026)
+## Onde cada portal está (atualizado 15/09/2026)
 
 Tudo aqui foi **medido**, não suposto. O que não deu para medir está dito como tal.
 
 | Portal | Estado | Por onde |
 |---|---|---|
-| financeone.com.br | **e-mail enviado** — calculadora de amortização | `contato@financeone.com.br`, a/c **Tamires Silva** |
-| bmcnews.com.br | **e-mail enviado** — calculadora de IR | `contato@bmcnews.com.br`, a/c **Renata Nunes** |
-| acionista.com.br | **formulário enviado** — candidatura a **articulista** | `/publique-no-portal/`, coluna Articulistas |
-| guiadoinvestidor.com.br | 🔴 **SEM PORTA** — não insistir | ver abaixo |
-| creditas.com | 🔴 **SEM PORTA** — descartado | ver abaixo |
-| toroinvestimentos.com.br | não abordado — guardado para depois de uma resposta | — |
-| suno, genial, ecommercebrasil | não abordados | — |
+| financeone.com.br | e-mail enviado 14/09 — **sem resposta** | `contato@financeone.com.br`, a/c **Tamires Silva** |
+| bmcnews.com.br | e-mail enviado 14/09 — **sem resposta** | `contato@bmcnews.com.br`, a/c **Renata Nunes** |
+| acionista.com.br | formulário de articulista enviado 14/09 — **sem resposta** | `/publique-no-portal/`, coluna Articulistas |
+| **toroinvestimentos.com.br** | 🟡 **O ALVO Nº1, e o encaixe é enorme — falta a porta** | ver "A segunda rodada desmente o embed" |
+| **ecommercebrasil.com.br** | 🟡 **encaixe perfeito, porta por achar** | só Instagram e LinkedIn |
+| suno.com.br | 🔴 **DESCARTADO** — tem 11 calculadoras próprias | ver abaixo |
+| genialinvestimentos.com.br | 🔴 **DESCARTADO** — é corretora, não portal | ver abaixo |
+| guiadoinvestidor.com.br | 🔴 SEM PORTA — não insistir | ver abaixo |
+| creditas.com | 🔴 SEM PORTA — descartado | ver abaixo |
+
+**Prazo dos três primeiros: até 19/09.** Sem resposta, a segunda tentativa vai pelo
+LinkedIn das pessoas — **Tamires Silva** está em `financeone.com.br/time-financeone`;
+a **Renata Nunes** assina o artigo do bmcnews.
+
+---
+
+## 🔴 A SEGUNDA RODADA DESMENTE O EMBED (15/09/2026)
+
+**O Toro não embute calculadora nenhuma. Cita, com link normal no texto.**
+
+Lido no artigo `blog.toroinvestimentos.com.br/educacao-financeira/corrigir-valor-pela-inflacao/`
+(assinado *"Equipe Toro"*, atualizado 08/09/2025), com estas palavras:
+
+> *"A principal e melhor delas é a **Calculadora de correção pelo IPCA da Mobills**"*
+
+É um **link de saída dentro do texto**, acompanhado de uma fotografia do ecrã da
+ferramenta. **Não é iframe.** No mesmo artigo eles mandam o leitor também para o
+IBGE e para a Calculadora do Cidadão do Banco Central.
+
+**O que isto significa, e é desconfortável:** este documento inteiro foi construído
+em cima do iframe, e o iframe é exatamente a forma que **não** dá backlink — daí a
+ginástica da linha de crédito por fora. **O mecanismo que produziu os 238 links do
+Mobills é mais simples: ser citado como "a melhor" num artigo de listagem.** Esse
+link conta inteiro, sem truque nenhum.
+
+Os embeds não foram trabalho perdido — servem aos portais pequenos, que preferem
+manter o leitor na página. Mas **para o alvo nº1 o caminho é ser citado, não ser
+embutido**, e isso muda o que se oferece: em vez de *"aqui está o código para colar"*,
+é *"falta esta calculadora na vossa lista"*.
+
+### A brecha no Toro é enorme — 8 das nossas 11 não existem lá
+
+O blog do Toro tem **17 calculadoras** (secção `/calculadoras/`, contadas uma a uma):
+álcool ou gasolina, consumo de combustível, correção pela inflação (IPCA/IGP-M),
+correção pela Selic, correção pelo CDI, juros compostos, porcentagem, primeiro
+milhão, rendimento da poupança, contador de dias, décimo terceiro, férias, rescisão,
+ponto de equilíbrio, preço médio de ações, risco e retorno, tamanho de posição.
+
+**Não têm nenhuma de:** amortização · financiamento · IR sobre investimentos ·
+desconto · reserva de emergência · conversor de moedas · orçamento · rachar a conta.
+
+São **8 das nossas 11**. Eles colecionam calculadoras e citam as de fora — inclusive
+as do IBGE e do Banco Central.
+
+⚠️ **Por confirmar:** não foi possível apurar se as 17 são construídas pelo Toro ou
+embutidas de terceiros. A página não diz e o site devolve `403` a quase tudo o que
+não seja a home.
+
+### 🔴 O problema dos dois melhores alvos: nenhum publica e-mail
+
+| | Toro | E-Commerce Brasil |
+|---|---|---|
+| e-mail publicado | **nenhum** | **nenhum** |
+| autor dos artigos | *"Equipe Toro"* (genérico) | pessoas com nome |
+| o que sobra | WhatsApp, SAC, ouvidoria | Instagram `@ecommerce_br`, LinkedIn |
+
+No E-Commerce Brasil foram testados **24 endereços** (`/contato`, `/sobre`, `/anuncie`,
+`/colunistas`, `/seja-um-colunista`, `/imprensa`, `/atendimento`, `/expediente`, o
+site antigo `www2.…` e mais): todos `404` ou sem e-mail. Procurado também `mailto:` e
+e-mail ofuscado da Cloudflare no HTML servido — **zero ocorrências**.
+
+**Achar estas duas portas é o trabalho de maior retorno que existe agora.**
+
+### O E-Commerce Brasil: o melhor encaixe de conteúdo encontrado até hoje
+
+Artigo lido: *"Promoções e descontos: o que realmente atrai o consumidor?"*, de
+**Pedro Henrique Sobral** (Gerente de Marketing na Tray), 21/04/2025. Dá **três
+exemplos de preço e não calcula nenhum**:
+
+| o que o artigo mostra | o que ele não diz |
+|---|---|
+| *"Preço normal: R$ 199,90 / Hoje: R$ 99,90"* | que são 50% |
+| *"compre 2 e leve o 3º grátis"* | que são ~33% |
+| *"relógio por R$ 799,00, antes R$ 1.499,00"* | que são 46,7% |
+
+É exatamente o buraco da `calculadora-desconto`. O portal publica ~2.500 textos por
+ano e tem 600-700 mil visitas/mês.
+
+⚠️ **Risco não confirmado:** os colunistas parecem ser executivos de empresas do
+setor, e o portal mantém uma lista longa de empresas *mantenedoras* que o patrocinam.
+**Pode ser clube fechado ou pago.** Não foi verificado — não afirmar que é grátis.
+
+### O padrão que apareceu: PORTAL tem porta, EMPRESA não tem
+
+| tem porta de entrada | não tem |
+|---|---|
+| financeone, bmcnews, acionista (portais de conteúdo) | creditas, genial, suno (empresas) |
+
+Empresa regulada publica SAC, ouvidoria e assessoria de imprensa terceirizada — canais
+onde uma proposta editorial morre. **Antes de gastar tempo a mapear um alvo, perguntar
+primeiro: isto é um portal que vive de conteúdo, ou uma empresa que tem um blog?**
+
+### 🔴 suno.com.br — DESCARTADO: já tem 11 calculadoras próprias
+
+Secção `/ferramentas/`, contadas: juros compostos, juros simples, aposentadoria,
+investindo na aposentadoria, PGBL vs VGBL, património ideal, primeiro milhão,
+objetivos financeiros, reserva de emergência, capacidade de endividamento, PIX vs
+parcelar. **Portal que já construiu as suas não vai colocar a nossa.**
+
+Única brecha: **não têm calculadora de IR sobre investimentos**. Não chega para
+justificar a abordagem.
+
+E-mail de imprensa, decifrado do ofuscador da Cloudflare no rodapé:
+`imprensa@sunoresearch.com.br` — **registado, mas não recomendado**: assessoria de
+imprensa de corretora não coloca ferramenta de terceiro.
+
+### 🔴 genialinvestimentos.com.br — DESCARTADO: é corretora, e bloqueia robôs
+
+O domínio existe (Akamai), mas a ligação **nunca completa** a partir da linha de
+comando: `000` com 20s de espera, com cabeçalhos completos de navegador. Família do
+`acionista.com.br` — **tudo o que se souber tem de vir de fotografia do Ed**.
+
+Pelo que se apurou por fora: tem `/imprensa/` e `/ouvidoria/`, SAC, suporte em
+Zendesk, e a **assessoria de imprensa é feita por agência terceirizada** (Máquina
+Cohn & Wolfe). É o caso da Creditas outra vez: empresa, não portal.
+
+---
 
 ### 🔴 guiadoinvestidor.com.br — o canal de contato está MORTO
 
@@ -241,34 +367,66 @@ ela não há backlink.
 
 ---
 
-## O que fazer a seguir (a partir de 15/09/2026)
+## O que fazer a seguir (a partir de 16/09/2026)
 
-1. **Esperar resposta dos três.** Prazo honesto: 5 dias. Sem resposta até 19/09, a segunda
-   tentativa vai pelo LinkedIn das pessoas — **Tamires Silva** está em
-   `financeone.com.br/time-financeone`; a **Renata Nunes** assina o artigo do bmcnews.
-2. **Se o acionista responder pedindo o artigo, há que escrever o artigo.** As duas pautas
-   propostas foram: *o dia em que o imposto cai* (a alíquota de 22,5% a 15%) e *o ponto de
+1. **ACHAR A PORTA DO TORO E DA E-COMMERCE BRASIL.** É o trabalho de maior retorno que
+   existe. Os dois melhores alvos são os dois sem e-mail publicado. Caminhos por tentar,
+   nenhum ainda tentado: LinkedIn de quem escreve (procurar por trás de *"Equipe Toro"*
+   pessoas reais — redator, editor de conteúdo, SEO); Instagram `@ecommerce_br`; o
+   formulário *Trabalhe Conosco* do E-Commerce Brasil como último recurso; endereços
+   comuns (`redacao@`, `conteudo@`, `pauta@`) **testados no servidor de e-mail antes de
+   enviar seja o que for**.
+2. **Esperar resposta dos três até 19/09.** Não mandar segundo e-mail antes disso — queima
+   o contato. A partir de 19/09, LinkedIn da Tamires Silva e da Renata Nunes.
+3. **Se o acionista responder pedindo o artigo, escrever o artigo.** As duas pautas
+   propostas: *o dia em que o imposto cai* (a alíquota de 22,5% a 15%) e *o ponto de
    virada dos juros compostos*. Em ambas a calculadora entra dentro do texto.
-3. **Só depois, o toroinvestimentos.com.br** — o prêmio (238 links ao Mobills), a ir com um
-   caso na mão. Antes de escrever, procurar no site deles uma página de articulistas ou de
-   colaboradores, como a do acionista.
-4. **Alvos por medir:** suno.com.br, genialinvestimentos.com.br, ecommercebrasil.com.br.
-   Para cada um, a mesma receita: achar a porta (contato, articulistas, anuncie), ler um
-   artigo real onde falte a conta, escolher a calculadora por esse artigo.
+4. **Quando a porta do Toro aparecer, o que se oferece MUDOU.** Não é o código do embed.
+   É: *"a vossa lista de calculadoras não tem amortização / IR sobre investimentos /
+   desconto — a nossa faz X, e o artigo de vocês sobre Y ficaria completo com ela."*
+   Antes de escrever, ler um artigo deles onde falte essa conta, como se fez sempre.
+5. **Alvos novos por descobrir.** A lista deste documento veio do Backlink Gap contra o
+   Mobills em 07/09 e está esgotada: dos 9, ficaram 2 vivos. Repetir o Backlink Gap contra
+   `investidor10.com.br` e `idinheiro.com.br` para tirar nomes novos — apareceram nas
+   buscas de 15/09 e ambos mantêm calculadoras.
 
 **A receita que funcionou, em quatro passos:**
 achar a porta → ler um artigo real deles → ver o que falta nesse artigo →
 oferecer a calculadora que tapa exatamente esse buraco, citando o artigo pelo nome.
 
+**O que a segunda rodada acrescenta à receita:** antes do passo 1, perguntar
+*"isto é um portal de conteúdo ou uma empresa com blog?"* — empresa não tem porta.
+E no passo 4, verificar **se o portal embute ou cita**: o Toro cita, e a quem cita
+oferece-se um argumento diferente do código de embed.
+
 ---
 
 ## Pendências relacionadas
 
-- **mate.tools:** falta submeter o conversor de moedas (6ª de 6). Bateu o limite
-  diário em 14/09. Ver a caixa "Know a tool that belongs on this list?" no pé de
-  `mate.tools/currency-calculator`.
+- ✅ **mate.tools: FECHADO em 15/09 — 6 de 6.** O conversor de moedas entrou pela caixa
+  "Know a tool that belongs on this list?" em `mate.tools/currency-calculator`, com a
+  resposta *"Thanks! We will review it before it goes live."* Fica à revisão manual deles.
 - **AlternativeTo:** o app está na fila gratuita, ainda não aprovado. Quando sair,
   adicionar o FinMoovi como alternativa nas páginas dos concorrentes (botão
-  "+ Add Alternatives") e pedir o selo **Verificado** no webcatalog.io.
+  "+ Add Alternatives").
+- 🔴 **webcatalog.io RECUSOU em 15/09.** Motivo dado, uma palavra: *"Untrustworthy"*.
+  Não publicam critérios (procurado, não encontrado) — qualquer causa é hipótese. O que
+  **foi medido** no `finmoovi.com`: tem Privacidade, Termos, Cookies e Aviso Legal; **não
+  tem página "Sobre"**; não publica nome de empresa nem morada (só *"Feito com ❤️ em
+  Portugal"*); o e-mail está ofuscado pela Cloudflare; e o cadastro foi feito com
+  **`app.finmoovi.com`**, que serve uma casca vazia a quem não tem conta.
+  **Antes de reenviar:** criar a página "Sobre" e submeter `finmoovi.com`, não o app.
+- ✅ **O "+2.400 pessoas" saiu do site em 15/09.** O Ed confirmou que o número nunca foi
+  real. Estava no topo e na chamada final do `finmoovi.com`, nas 3 línguas. Removido,
+  publicado e **medido no ar**: 0 ocorrências. Saiu também o link morto *"Depoimentos"*
+  do rodapé. **Isto conta para esta estratégia:** o editor de um portal abre o site antes
+  de decidir publicar, e número inventado num site de dinheiro é o sinal de desconfiança
+  mais visível que há. Os depoimentos fictícios já tinham sido retirados em 23/07/2026.
+- ⏭️ **A página "Sobre" continua por fazer.** É o buraco que sobra: quem está por trás do
+  FinMoovi. O nome **já está no site** — o Aviso Legal e a Política de Privacidade dizem
+  *"Ed Flávio (pessoa singular) — Portugal"*, com e-mail de contato. Não há empresa
+  aberta; há **atividade aberta em Portugal** (confirmado pelo Ed em 15/09).
+  ⚠️ Achado por tratar: o Aviso Legal diz Portugal mas a lei aplicável que cita é
+  **brasileira**. Não mexer sem decidir com o Ed.
 - **IR do salário (IRRF):** descartado por decisão do Ed em 14/09. Não reabrir sem
   ele pedir.
