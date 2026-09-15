@@ -1,0 +1,248 @@
+---
+/**
+ * Ferramenta Relacionada — liga o verbete do glossário à calculadora que faz a conta.
+ *
+ * POR QUE ISTO EXISTE (15/09/2026): medido no repositório, **100 dos 119 verbetes
+ * em português não apontavam para calculadora nenhuma** (e 96 dos 150 posts). E as
+ * duas CTAs que cada verbete já tinha (`CTAVariado`) mandam o leitor para fora, para
+ * `app.finmoovi.com`.
+ *
+ * O problema que isso cria: **o glossário é a parte do blog que recebe visita, e as
+ * calculadoras são o ativo** — só a de juros compostos disputa 141 mil buscas/mês. As
+ * páginas que recebem gente não mandavam ninguém para as páginas que importam. Era
+ * força interna a ser deitada fora, e é a única melhoria de SEO desta lista que não
+ * depende de link de ninguém de fora.
+ *
+ * ⚠️ TERMO SEM LIGAÇÃO HONESTA NÃO GANHA LINK. O mapa abaixo é escrito à mão, e
+ * quem não está nele não renderiza nada. Ligar `wall-street` a uma calculadora de
+ * orçamento só para encher o número seria enfeite — e movimento que não conta nada
+ * não conta.
+ *
+ * ⚠️ SÓ EM PORTUGUÊS. As calculadoras existem apenas em `/ferramentas/` (PT); as
+ * versões `en`/`es` do glossário não recebem este bloco porque não há para onde
+ * mandar. Se um dia houver, acrescentar o idioma aqui e nas páginas correspondentes.
+ */
+
+interface Props {
+  /** Slug do verbete, ex.: `juros-compostos`. */
+  slug: string;
+}
+
+const { slug } = Astro.props;
+
+/** As 11 calculadoras, com o nome e a promessa que cada uma cumpre. */
+const FERRAMENTAS = {
+  'calculadora-juros-compostos': {
+    nome: 'Calculadora de Juros Compostos',
+    promessa: 'veja o mês exato em que os juros passam a render mais que o seu aporte',
+  },
+  'calculadora-financiamento': {
+    nome: 'Calculadora de Financiamento',
+    promessa: 'compare SAC e Price e veja o mês em que uma parcela cruza a outra',
+  },
+  'simulador-amortizacao': {
+    nome: 'Simulador de Amortização',
+    promessa: 'reduzir prazo ou reduzir parcela? Veja a diferença em reais',
+  },
+  'calculadora-aposentadoria': {
+    nome: 'Calculadora de Aposentadoria',
+    promessa: 'descubra quanto precisa juntar e quando o patrimônio passa a render sozinho',
+  },
+  'calculadora-reserva': {
+    nome: 'Calculadora de Reserva de Emergência',
+    promessa: 'quantos meses você aguenta hoje sem receber nada',
+  },
+  'simulador-investimento': {
+    nome: 'Simulador de Investimento',
+    promessa: 'veja o preço da pressa: quanto 3 anos a mais mudam o aporte necessário',
+  },
+  'calculadora-ir-investimentos': {
+    nome: 'Calculadora de IR sobre Investimentos',
+    promessa: 'o dia em que a alíquota cai de 22,5% para 15%, e quanto sobra líquido',
+  },
+  'calculadora-orcamento': {
+    nome: 'Calculadora de Orçamento',
+    promessa: 'descubra se você passou dos 50% com o essencial',
+  },
+  'conversor-moedas': {
+    nome: 'Conversor de Moedas',
+    promessa: 'converta com a cotação do dia e veja a variação',
+  },
+} as const;
+
+/**
+ * Verbete → calculadora. Escrito à mão, um a um.
+ *
+ * Critério: a calculadora tem de responder a pergunta que leva alguém a procurar
+ * aquele termo. Quem procura "saldo devedor" quer saber quanto ainda deve e o que
+ * acontece se amortizar — daí o simulador de amortização, e não o de juros.
+ */
+const MAPA: Record<string, keyof typeof FERRAMENTAS> = {
+  // Juros e o valor do dinheiro no tempo
+  'juros': 'calculadora-juros-compostos',
+  'juros-compostos': 'calculadora-juros-compostos',
+  'juros-simples': 'calculadora-juros-compostos',
+  'valor-presente': 'calculadora-juros-compostos',
+  'zero-coupon': 'calculadora-juros-compostos',
+  'fluxo-de-caixa-descontado': 'calculadora-juros-compostos',
+
+  // Dívida que se paga em parcelas
+  'financiamento': 'calculadora-financiamento',
+  'hipoteca': 'calculadora-financiamento',
+  'tabela-sac': 'calculadora-financiamento',
+  'tabela-sac-vs-price': 'calculadora-financiamento',
+  'emprestimo': 'calculadora-financiamento',
+  'consorcio': 'calculadora-financiamento',
+  'quota-de-consorcio': 'calculadora-financiamento',
+  'parcelamento': 'calculadora-financiamento',
+  'cheque-especial': 'calculadora-financiamento',
+  'juros-abusivos': 'calculadora-financiamento',
+  'usura': 'calculadora-financiamento',
+  'spread-bancario': 'calculadora-financiamento',
+
+  // Dívida que se quer encurtar
+  'divida': 'simulador-amortizacao',
+  'saldo-devedor': 'simulador-amortizacao',
+  'amortizacao': 'simulador-amortizacao',
+  'quitacao-antecipada': 'simulador-amortizacao',
+
+  // Longo prazo
+  'previdencia-privada': 'calculadora-aposentadoria',
+  'independencia-financeira': 'calculadora-aposentadoria',
+  'patrimonio': 'calculadora-aposentadoria',
+  'patrimonio-liquido': 'calculadora-aposentadoria',
+
+  // O colchão
+  'reserva-de-emergencia': 'calculadora-reserva',
+  'urgencia-financeira': 'calculadora-reserva',
+  'zona-de-conforto-financeira': 'calculadora-reserva',
+  'garantia-fgc': 'calculadora-reserva',
+
+  // Onde pôr o dinheiro
+  'investimento': 'simulador-investimento',
+  'aplicacao-financeira': 'simulador-investimento',
+  'meta-financeira': 'simulador-investimento',
+  'diversificacao': 'simulador-investimento',
+  'fundo-de-investimento': 'simulador-investimento',
+  'tesouro-direto': 'simulador-investimento',
+  'poupanca': 'simulador-investimento',
+  'selic': 'simulador-investimento',
+  'cdi': 'simulador-investimento',
+  'acoes': 'simulador-investimento',
+  'bolsa-de-valores': 'simulador-investimento',
+  'etf': 'simulador-investimento',
+  'fundos-imobiliarios': 'simulador-investimento',
+  'renda-variavel': 'simulador-investimento',
+  'liquidez': 'simulador-investimento',
+
+  // O que o imposto leva
+  'imposto-de-renda': 'calculadora-ir-investimentos',
+  'come-cotas': 'calculadora-ir-investimentos',
+  'ganho-de-capital': 'calculadora-ir-investimentos',
+  'iof': 'calculadora-ir-investimentos',
+  'renda-fixa': 'calculadora-ir-investimentos',
+  'cdb': 'calculadora-ir-investimentos',
+  'lc': 'calculadora-ir-investimentos',
+  'lca': 'calculadora-ir-investimentos',
+  'lci-e-lca': 'calculadora-ir-investimentos',
+  'debentures': 'calculadora-ir-investimentos',
+
+  // O dinheiro do mês
+  'orcamento-pessoal': 'calculadora-orcamento',
+  'planejamento-financeiro': 'calculadora-orcamento',
+  'planejamento-financeiro-familiar': 'calculadora-orcamento',
+  'planejamento-financeiro-pessoal': 'calculadora-orcamento',
+  'planejamento-financeiro-planilha': 'calculadora-orcamento',
+  'controle-de-gastos': 'calculadora-orcamento',
+  'controle-de-gastos-whatsapp': 'calculadora-orcamento',
+  'categoria-de-despesa': 'calculadora-orcamento',
+  'categoria-de-despesas-pessoais': 'calculadora-orcamento',
+  'categoria-de-despesas-empresa': 'calculadora-orcamento',
+  'gasto-fixo': 'calculadora-orcamento',
+  'gasto-variavel': 'calculadora-orcamento',
+  'gasto-fixo-e-variavel': 'calculadora-orcamento',
+  'despesa-recorrente': 'calculadora-orcamento',
+  'fluxo-de-caixa': 'calculadora-orcamento',
+  'fluxo-de-caixa-excel': 'calculadora-orcamento',
+  'teto-de-gastos': 'calculadora-orcamento',
+  'custo-de-vida': 'calculadora-orcamento',
+  'custo-de-vida-na-espanha': 'calculadora-orcamento',
+  'custo-de-vida-no-paraguai': 'calculadora-orcamento',
+  'renda-mensal': 'calculadora-orcamento',
+  'educacao-financeira': 'calculadora-orcamento',
+  'lista-de-compras': 'calculadora-orcamento',
+  'lista-de-compras-completa': 'calculadora-orcamento',
+  'lista-de-compras-do-mes': 'calculadora-orcamento',
+  'lista-de-compras-supermercado': 'calculadora-orcamento',
+
+  // Moeda
+  'cambio': 'conversor-moedas',
+  'moeda': 'conversor-moedas',
+};
+
+const chave = MAPA[slug];
+const ferramenta = chave ? FERRAMENTAS[chave] : null;
+---
+
+{ferramenta && (
+  <aside class="ferramenta-rel">
+    <span class="ferramenta-rel-eyebrow">Faça a conta</span>
+    <p class="ferramenta-rel-texto">
+      <a href={`/ferramentas/${chave}/`} class="ferramenta-rel-link">{ferramenta.nome}</a>
+      {' — '}{ferramenta.promessa}. Grátis, sem cadastro.
+    </p>
+  </aside>
+)}
+
+<style>
+  /* Aparte editorial, no mesmo tom do CTAVariado — mas a apontar para DENTRO. */
+  .ferramenta-rel {
+    margin: var(--space-8) 0;
+    padding: 1rem 1.25rem 1.05rem 1.35rem;
+    position: relative;
+    border-radius: 0 10px 10px 0;
+    background: linear-gradient(90deg,
+      color-mix(in srgb, var(--brand-cyan) 7%, transparent),
+      transparent 62%);
+  }
+
+  .ferramenta-rel::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 3px;
+    border-radius: 3px;
+    background: var(--brand-cyan);
+  }
+
+  .ferramenta-rel-eyebrow {
+    display: block;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    margin-bottom: 0.4rem;
+  }
+
+  .ferramenta-rel-texto {
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+    line-height: var(--leading-relaxed);
+    margin: 0;
+  }
+
+  .ferramenta-rel-link {
+    color: var(--text-link);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color var(--transition-fast);
+  }
+
+  .ferramenta-rel-link:hover {
+    border-bottom-color: currentColor;
+  }
+</style>

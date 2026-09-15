@@ -4,6 +4,7 @@ import { imgSrcset } from '@/utils/responsive-image';
 import Header from '@components/header/Header.astro';
 import Footer from '@components/footer/Footer.astro';
 import CTAVariado from '@components/glossario/CTAVariado.astro';
+import FerramentaRelacionada from '@components/glossario/FerramentaRelacionada.astro';
 import Comentarios from '@components/shared/Comentarios.astro';
 import Sidebar from '@components/sidebar/Sidebar.astro';
 import SchemaBreadcrumb from '@components/seo/SchemaBreadcrumb.astro';
@@ -113,6 +114,14 @@ const schemaBreadcrumbItems = [
         <div class="glossario-post-content post-content">
           <Content />
         </div>
+
+        <!--
+          Ferramenta relacionada — o link para DENTRO, logo a seguir à explicação e
+          ANTES da CTA que manda para fora. Quem acabou de entender o termo é quem
+          mais quer fazer a conta; depois do botão do app, já saiu da página.
+          Renderiza nada quando o verbete não tem calculadora honesta a que ligar.
+        -->
+        <FerramentaRelacionada slug={term.slug} />
 
         <!-- CTA 2 (final) -->
         <CTAVariado seed={term.slug.length + 5} />
