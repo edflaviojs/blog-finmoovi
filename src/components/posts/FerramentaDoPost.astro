@@ -1,0 +1,103 @@
+---
+/**
+ * Ferramenta do Post — liga o artigo à calculadora que faz a conta de que ele fala.
+ *
+ * É o irmão de `glossario/FerramentaRelacionada.astro`, e existe pela mesma razão:
+ * medido em 15/09/2026, **96 dos 150 posts em português (64%) não apontavam para
+ * calculadora nenhuma**, enquanto as calculadoras são o ativo do blog.
+ *
+ * ⚠️ A DIFERENÇA PARA O DO GLOSSÁRIO. Lá o mapa é escrito à mão, verbete a verbete,
+ * porque são 119 e não mudam. Aqui são 150 e nascem 3 por semana de robôs — um mapa
+ * à mão ficaria desatualizado na semana seguinte. Por isso a escolha é por PALAVRA
+ * no título, com as regras em `utils/ferramentas.ts`, ordenadas do específico para
+ * o genérico.
+ *
+ * ⚠️ NENHUMA PALAVRA BATE = NENHUM LINK. É o comportamento certo, não uma falha.
+ *
+ * ⚠️ SÓ EM PORTUGUÊS: as calculadoras existem apenas em `/ferramentas/`.
+ */
+import { FERRAMENTAS, escolherFerramenta } from '@/utils/ferramentas';
+
+interface Props {
+  /** Título do post — é o sinal mais forte do que ele trata. */
+  title?: string;
+  /** Slug, que muitas vezes carrega a palavra-chave. */
+  slug?: string;
+  /** Categoria e etiquetas, como reforço quando o título é vago. */
+  category?: string;
+  keywords?: string[];
+  /** `pt`, `en` ou `es`. Fora de `pt` não renderiza nada. */
+  locale?: string;
+}
+
+const { title = '', slug = '', category = '', keywords = [], locale = 'pt' } = Astro.props;
+
+// O slug entra com os hífenes trocados por espaços, senão "saldo-devedor" nunca
+// casaria com a regra que procura "saldo devedor".
+const texto = [title, slug.replace(/-/g, ' '), category, ...keywords].join(' ');
+const chave = locale === 'pt' ? escolherFerramenta(texto) : null;
+const ferramenta = chave ? FERRAMENTAS[chave] : null;
+---
+
+{ferramenta && (
+  <aside class="ferramenta-post">
+    <span class="ferramenta-post-eyebrow">Faça a conta</span>
+    <p class="ferramenta-post-texto">
+      <a href={`/ferramentas/${chave}/`} class="ferramenta-post-link">{ferramenta.nome}</a>
+      {' — '}{ferramenta.promessa}. Grátis, sem cadastro.
+    </p>
+  </aside>
+)}
+
+<style>
+  /* Mesmo desenho do bloco do glossário: aparte editorial, a apontar para DENTRO. */
+  .ferramenta-post {
+    margin: var(--space-8) 0;
+    padding: 1rem 1.25rem 1.05rem 1.35rem;
+    position: relative;
+    border-radius: 0 10px 10px 0;
+    background: linear-gradient(90deg,
+      color-mix(in srgb, var(--brand-cyan) 7%, transparent),
+      transparent 62%);
+  }
+
+  .ferramenta-post::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 3px;
+    border-radius: 3px;
+    background: var(--brand-cyan);
+  }
+
+  .ferramenta-post-eyebrow {
+    display: block;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    margin-bottom: 0.4rem;
+  }
+
+  .ferramenta-post-texto {
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+    line-height: var(--leading-relaxed);
+    margin: 0;
+  }
+
+  .ferramenta-post-link {
+    color: var(--text-link);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color var(--transition-fast);
+  }
+
+  .ferramenta-post-link:hover {
+    border-bottom-color: currentColor;
+  }
+</style>

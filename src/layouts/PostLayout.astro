@@ -16,6 +16,7 @@ import NewsletterPopup from '@components/shared/NewsletterPopup.astro';
 import Comentarios from '@components/shared/Comentarios.astro';
 import ArticleRating from '@components/shared/ArticleRating.astro';
 import RelatedPosts from '@components/posts/RelatedPosts.astro';
+import FerramentaDoPost from '@components/posts/FerramentaDoPost.astro';
 import PreferredSourceCTA from '@components/shared/PreferredSourceCTA.astro';
 import AdSlot from '@components/home/AdSlot.astro';
 import { resolveAuthor, authorHref } from '@/data/authors';
@@ -143,7 +144,16 @@ const schemaBreadcrumbItems = [
             <p class="post-invest-disclaimer" data-pagefind-ignore>{investDisclaimer}</p>
           )}
 
+          <!--
+            Ferramenta do post — o link para DENTRO, logo a seguir ao artigo e
+            ANTES das CTAs que mandam para fora. Quem acabou de ler sobre o
+            assunto e quem mais quer fazer a conta. Renderiza nada quando nenhuma
+            calculadora serve o tema, e nada fora do portugues.
+          -->
+          <FerramentaDoPost title={title} slug={slug} category={category} keywords={keywords} locale={locale} />
+
           <PostInlineCTAs locale={locale} />
+
 
           <!-- Banner promo do meio do artigo: nasce aqui (fora do conteúdo,
                invisível) e o script move para depois do parágrafo do meio em

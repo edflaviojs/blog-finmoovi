@@ -30,45 +30,8 @@ interface Props {
 
 const { slug } = Astro.props;
 
-/** As 11 calculadoras, com o nome e a promessa que cada uma cumpre. */
-const FERRAMENTAS = {
-  'calculadora-juros-compostos': {
-    nome: 'Calculadora de Juros Compostos',
-    promessa: 'veja o mês exato em que os juros passam a render mais que o seu aporte',
-  },
-  'calculadora-financiamento': {
-    nome: 'Calculadora de Financiamento',
-    promessa: 'compare SAC e Price e veja o mês em que uma parcela cruza a outra',
-  },
-  'simulador-amortizacao': {
-    nome: 'Simulador de Amortização',
-    promessa: 'reduzir prazo ou reduzir parcela? Veja a diferença em reais',
-  },
-  'calculadora-aposentadoria': {
-    nome: 'Calculadora de Aposentadoria',
-    promessa: 'descubra quanto precisa juntar e quando o patrimônio passa a render sozinho',
-  },
-  'calculadora-reserva': {
-    nome: 'Calculadora de Reserva de Emergência',
-    promessa: 'quantos meses você aguenta hoje sem receber nada',
-  },
-  'simulador-investimento': {
-    nome: 'Simulador de Investimento',
-    promessa: 'veja o preço da pressa: quanto 3 anos a mais mudam o aporte necessário',
-  },
-  'calculadora-ir-investimentos': {
-    nome: 'Calculadora de IR sobre Investimentos',
-    promessa: 'o dia em que a alíquota cai de 22,5% para 15%, e quanto sobra líquido',
-  },
-  'calculadora-orcamento': {
-    nome: 'Calculadora de Orçamento',
-    promessa: 'descubra se você passou dos 50% com o essencial',
-  },
-  'conversor-moedas': {
-    nome: 'Conversor de Moedas',
-    promessa: 'converta com a cotação do dia e veja a variação',
-  },
-} as const;
+import { FERRAMENTAS, type FerramentaSlug } from '@/utils/ferramentas';
+
 
 /**
  * Verbete → calculadora. Escrito à mão, um a um.
@@ -77,7 +40,7 @@ const FERRAMENTAS = {
  * aquele termo. Quem procura "saldo devedor" quer saber quanto ainda deve e o que
  * acontece se amortizar — daí o simulador de amortização, e não o de juros.
  */
-const MAPA: Record<string, keyof typeof FERRAMENTAS> = {
+const MAPA: Record<string, FerramentaSlug> = {
   // Juros e o valor do dinheiro no tempo
   'juros': 'calculadora-juros-compostos',
   'juros-compostos': 'calculadora-juros-compostos',
