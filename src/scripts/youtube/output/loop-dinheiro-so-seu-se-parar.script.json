@@ -1,0 +1,117 @@
+{
+  "slug": "loop-dinheiro-so-seu-se-parar",
+  "formato": "loop16",
+  "term": "Um dinheiro só seu",
+  "category": "vida",
+  "keyword": "SEU",
+  "situacao": "dinheiro-so-seu",
+  "gancho": "se-parar",
+  "ganchoFamilia": "e se parar",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "cofre",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "O que acontece se você parar de pedir dinheiro ao outro?",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "acontece",
+          "visual": {
+            "type": "statement",
+            "text": "Parar de pedir dinheiro"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "parar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "cofre"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Comigo aconteceu mês passado. Eu queria comprar pão e pedi.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "Comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "cofre"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "Eu precisei pedir"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Percebi que guardar meu dinheiro me deixou mais tranquilo em casa.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "Percebi",
+          "visual": {
+            "type": "statement",
+            "text": "Meu dinheiro, minha calma"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "guardar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "cofre"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Então, se você parar de pedir, eu paro de pedir.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "parar",
+          "visual": {
+            "type": "statement",
+            "text": "Parar de pedir"
+          }
+        },
+        {
+          "anchor": "pedir",
+          "visual": {
+            "type": "statement",
+            "text": "Parar de pedir dinheiro"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
