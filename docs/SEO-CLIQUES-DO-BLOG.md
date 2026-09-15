@@ -91,10 +91,39 @@ correspondente entra no mesmo commit**, porque prompt sem validador é meia trav
 
 ## O que se descobriu da produção de conteúdo
 
-### Não são 402 posts. São 150 em português.
+### Não são 402 posts. São 151 em português.
 
-O resto é o mesmo conteúdo traduzido para EN e ES. Glossário: **119 em PT**, não 357.
-**150 posts em quase um ano é pouco** — e o problema não é o volume, é a pontaria.
+O resto é o mesmo conteúdo traduzido para EN e ES. Recontado em 15/09 por três
+caminhos que fecham no mesmo número — arquivos na pasta, prefixo do nome e campo
+`locale` do frontmatter:
+
+| | PT | EN | ES | total |
+|---|---|---|---|---|
+| posts | **151** | 151 | 151 | 453 |
+| glossário | **120** | 120 | 120 | 360 |
+
+**151 posts em quase um ano é pouco** — e o problema não é o volume, é a pontaria.
+
+⚠️ **Correção de duas contas deste documento** (mediu-se 150 posts e 119 verbetes na
+primeira passagem; os certos são **151** e **120**).
+
+#### ✅ O "PT=132" da trava de i18n NÃO é defeito — mede outra coisa
+
+A trava imprime `📊 Posts: PT=132` e isto assusta quem leu 151 aqui. **As duas contas
+estão certas.** A trava só conta o que ela consegue emparelhar nos três idiomas
+(`validar-i18n.js:118` — `pairedPosts`), e deixa de fora de propósito os posts
+marcados `scope: br-only`, que não têm irmão em EN/ES:
+
+```
+151 posts em PT  −  19 marcados br-only  =  132
+```
+
+Os 19 são conteúdo que só faz sentido no Brasil: as cotações semanais, `pix-vs-ted`,
+`tesouro-direto-para-iniciantes`, `cdb-vs-tesouro-selic`, o índice de custo de vida.
+A conta fecha na casa das unidades, por dois caminhos independentes.
+
+**Não "consertar" isto.** Igualar os números faria a trava exigir tradução de conteúdo
+que não deve ser traduzido.
 
 ### A escolha de palavra-chave não tem dado nenhum por trás
 
