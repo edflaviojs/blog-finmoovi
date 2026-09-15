@@ -51,12 +51,13 @@ function provedores() {
   return out;
 }
 
-async function umaCorrida(prov, prompt, maxTokens, etiqueta) {
+async function umaCorrida(prov, prompt, maxTokens, etiqueta, extra = {}) {
   const corpo = {
     model: prov.modelo,
     messages: [{ role: 'user', content: prompt }],
     max_tokens: maxTokens,
     temperature: 0.7,
+    ...extra,
   };
   let r;
   try {
@@ -117,6 +118,13 @@ async function main() {
     // 3. CONTROLE FALSO: pergunta trivial e orçamento pequeno. Se isto vier vazio,
     //    a causa NÃO é o orçamento nem o raciocínio — é chave, modelo ou conta.
     await umaCorrida(p, PROMPT_TRIVIAL, 400, 'C) CONTROLE — pergunta trivial, 400 fichas');
+    // 4. A CURA CANDIDATA. Na 1ª corrida (15/09) o A veio vazio nos dois e o B só
+    //    salvou o Groq: a Cerebras gastou 1997 das 2000 fichas a raciocinar e ficou
+    //    outra vez truncada. Subir o orçamento trata o sintoma e paga raciocínio a
+    //    peso. O `reasoning_effort` do gpt-oss corta o raciocínio na origem —
+    //    escrever um título de 60 caracteres não precisa de 5.660 de pensamento.
+    await umaCorrida(p, PROMPT_REAL, 400, 'D) CURA — prompt real, 400 fichas + reasoning_effort:low', { reasoning_effort: 'low' });
+    await umaCorrida(p, PROMPT_REAL, 1000, 'E) CURA — prompt real, 1000 fichas + reasoning_effort:low', { reasoning_effort: 'low' });
     console.log('');
   }
 
@@ -124,6 +132,8 @@ async function main() {
   console.log('  A vazio + B com texto  -> o orçamento de 400 fichas é a causa.');
   console.log('  A vazio + B vazio + C com texto -> o modelo raciocina demais para este prompt.');
   console.log('  C vazio também -> não é orçamento: é chave, modelo retirado ou conta.');
+  console.log('  D com texto -> a cura é cortar o raciocínio, e nem precisa de mais fichas.');
+  console.log('  D vazio + E com texto -> precisa das duas coisas: cortar E dar mais folga.');
 }
 
 main().catch(e => { console.error('❌ diagnóstico:', e.message); process.exit(1); });
