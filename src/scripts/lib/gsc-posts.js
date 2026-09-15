@@ -191,6 +191,58 @@ export function sanitizeLine(s) {
 const wordCount = t => (String(t).trim().match(/\S+/g) || []).length;
 /** Detecta números financeiros (R$, %, ano) — usado para bloquear fabricação. */
 const FINANCIAL_NUM_RE = /(R\$\s?\d|US\$\s?\d|€\s?\d|\d+([.,]\d+)?\s?%|\b(19|20)\d{2}\b)/;
+/** Datas completas (27/09/2026, 27-09-2026, 2026-09-27). */
+const DATA_RE = /\b(\d{1,2}[/-]\d{1,2}[/-]\d{2,4}|\d{4}-\d{2}-\d{2})\b/;
+
+/**
+ * Espaços que o olho não vê e a busca não casa.
+ *
+ * O blog tem números escritos com ESPAÇO ESTREITO SEM QUEBRA (U+202F) entre o
+ * valor e o `%` — `120 %` parece `120%` e não casa numa comparação literal.
+ * Sem esta normalização a trava dá falso alarme em número que EXISTE no artigo,
+ * e falso alarme repetido é o caminho mais curto para alguém desligar a trava.
+ */
+const normaliza = s => String(s)
+  .replace(/[\u202F\u00A0\u2007\u2009]/g, ' ')   // espacos exoticos -> espaco normal
+  .replace(/\s+/g, ' ')
+  // ⚠️ E AGORA TIRAR O ESPACO DE VEZ, entre o numero e o `%` e entre o simbolo
+  // de moeda e o numero. Trocar U+202F por um espaco comum NAO resolve: o artigo
+  // continua a dizer `120 %` e a meta `120%`, e a comparacao literal falha do
+  // mesmo jeito. A 1a versao desta funcao fazia so a troca e deu FALSO ALARME no
+  // teste — o 120% existia no artigo e a trava dizia que era inventado. Falso
+  // alarme repetido e o caminho mais curto para alguem desligar a trava.
+  .replace(/(\d)\s+%/g, '$1%')
+  .replace(/(R\$|US\$|€)\s+(\d)/g, '$1$2');
+
+/**
+ * Números e datas presentes em `texto` que NÃO existem em `corpoOriginal`.
+ *
+ * ⚠️ UMA RÉGUA, DOIS CLIENTES. Até 15/09/2026 esta verificação existia só dentro
+ * de `buildSafeSection` — ou seja, uma seção nova de artigo não podia inventar um
+ * número, mas o TÍTULO e a META podiam. E foi o que aconteceu: o `gsc-otimizar-ctr`
+ * reescreveu a página das cotações da semana de **07/09/2026** e anunciou na meta
+ * *"a cotação do dólar para **27/09/2026** … e a projeção"* — uma data no futuro,
+ * que não está no artigo, e uma projeção que o artigo não faz. É a família de
+ * defeito nº1 desta casa: a mesma pergunta com duas réguas em ficheiros
+ * diferentes. Agora é esta função, e os dois chamam-na.
+ *
+ * O ANO foi deliberadamente deixado de fora da comparação de datas: "2026" aparece
+ * em quase todos os títulos deste blog e já é coberto pelo FINANCIAL_NUM_RE.
+ */
+export function numerosFabricados(texto, corpoOriginal) {
+  const alvo = normaliza(corpoOriginal);
+  const t = normaliza(texto);
+  const achados = [
+    ...(t.match(new RegExp(FINANCIAL_NUM_RE, 'g')) || []),
+    ...(t.match(new RegExp(DATA_RE, 'g')) || []),
+  ];
+  const fora = [];
+  for (const n of achados) {
+    const limpo = n.trim();
+    if (!alvo.includes(limpo) && !fora.includes(limpo)) fora.push(limpo);
+  }
+  return fora;
+}
 
 /** Título válido? 20–65 chars, não vazio, e mantém ≥1 token do tema original. */
 export function validateTitle(newTitle, oldTitle) {
@@ -226,11 +278,12 @@ export function buildSafeSection(heading, text, originalBody) {
   if (wc < 80 || wc > 320) return { ok: false, reason: `corpo com ${wc} palavras (fora de 80–320)` };
 
   // Anti-fabricação: números financeiros na seção nova precisam já existir no post.
-  const newNums = clean.match(new RegExp(FINANCIAL_NUM_RE, 'g')) || [];
-  for (const n of newNums) {
-    if (!originalBody.includes(n.trim())) {
-      return { ok: false, reason: `número financeiro potencialmente fabricado: "${n.trim()}"` };
-    }
+  // Passa pela régua única (ver `numerosFabricados`) — que também apanha datas e
+  // já normaliza o espaço invisível. Mais apertada que antes nas datas, mais
+  // tolerante nos falsos alarmes de `120 %`.
+  const fabricados = numerosFabricados(clean, originalBody);
+  if (fabricados.length) {
+    return { ok: false, reason: `número financeiro potencialmente fabricado: "${fabricados[0]}"` };
   }
   return { ok: true, section: `## ${h}\n\n${clean}\n` };
 }

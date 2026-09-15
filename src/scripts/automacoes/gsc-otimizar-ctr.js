@@ -15,7 +15,7 @@ import { join, dirname } from 'path';
 import {
   hasGscCredentials, querySearchAnalytics, GSC_SITE_URL, dateRange,
   pageUrlToFile, readRaw, getScalar, writePatched, splitPeriods,
-  validateTitle, validateDescription, sanitizeLine,
+  validateTitle, validateDescription, sanitizeLine, numerosFabricados,
   i18nGatePasses, revertFiles, commitFiles, DRY_RUN,
 } from '../lib/gsc-posts.js';
 import { splitFrontmatter } from '../lib/i18n-sync.js';
@@ -52,6 +52,19 @@ const LANG = { pt: 'português do Brasil', en: 'inglês', es: 'espanhol' };
 //
 // 21 dias porque é o topo da janela de medição. Antes disso não há o que ler.
 const QUARENTENA_DIAS = 21;
+
+// ── PÁGINAS QUE SÃO RETRATO DE UMA DATA — não se generaliza o título delas ────
+//
+// As cotações semanais e o índice de custo de vida são fotografias de um dia:
+// trazem o dólar, o euro e a Selic daquela semana, vindos da API. Um título
+// genérico como *"Cotação dólar hoje setembro 2026: preço atual"* promete o dado
+// de hoje numa página que guarda o de 07/09 — e foi exatamente o que a IA
+// escreveu na corrida 35033379302, em 15/09/2026.
+//
+// A trava anti-fabricação apanha a data inventada, mas não apanha a palavra
+// "hoje": nela não há número nenhum. Por isso estas páginas ficam fora por
+// estrutura, e não por sorte da trava.
+const RETRATO_DE_DATA = /^(en-|es-)?(cotacoes-|quotes-|indice-finmoovi-|finmoovi-cost-of-living|indice-finmoovi-custo)/i;
 const REGISTO = join(process.cwd(), '.github', 'data', 'ctr-otimizadas.json');
 
 function lerRegisto() {
@@ -168,6 +181,11 @@ async function main() {
     const file = pageUrlToFile(cand.keys[0]);
     if (!file) { console.log(`   ⏭️ sem arquivo p/ ${cand.keys[0]}`); skipped++; continue; }
 
+    if (RETRATO_DE_DATA.test(file)) {
+      console.log(`   ⏭️ ${file}: retrato de uma data — título não pode ser generalizado`);
+      skipped++; continue;
+    }
+
     const dias = diasDesde(registo, file, hoje);
     if (dias !== null && dias < QUARENTENA_DIAS) {
       console.log(`   ⏭️ ${file}: em quarentena — reescrita há ${dias} dia(s), faltam ${QUARENTENA_DIAS - dias} para se poder medir`);
@@ -203,7 +221,12 @@ async function main() {
         // ⚠️ Isto NÃO é licença para inventar: a regra acima continua a valer, e em
         // 15/09 este blog publicou uma Selic falsa por ter pedido comentário sem dar
         // o dado. O número tem de estar NO ARTIGO.
-        `PROIBIDO abrir a meta com "Descubra", "Aprenda", "Saiba" ou "Entenda" — são aberturas vazias e já estão em metade do blog. A meta tem de dizer o que o leitor leva dali: a coisa concreta que o artigo entrega (quantos passos, qual a conta, o que muda). Se o artigo tiver um número, use ESSE número; se não tiver, não invente nenhum.\n\n` +
+        `PROIBIDO abrir a meta com "Descubra", "Aprenda", "Saiba" ou "Entenda" — são aberturas vazias e já estão em metade do blog. A meta tem de dizer o que o leitor leva dali: a coisa concreta que o artigo entrega (quantos passos, qual a conta, o que muda). Se o artigo tiver um número, use ESSE número; se não tiver, não invente nenhum.\n` +
+        // A regra da DATA é nova e nasceu de um caso real (ver a trava
+        // `numerosFabricados` mais abaixo): o modelo pôs "27/09/2026" e "a
+        // projeção" num artigo de 07/09/2026 que não projeta nada. Dizer isto
+        // no prompto é metade; a outra metade é a trava, e entra no mesmo commit.
+        `PROIBIDO escrever qualquer DATA, cotação ou previsão que não esteja no artigo. Nunca escreva "hoje", "agora" nem "preço atual" — esta página pode ser um retrato de uma semana específica, e prometer o dado de hoje é mentir ao leitor. Escreva o título com inicial MAIÚSCULA e como uma frase que uma pessoa diria, não como uma lista de palavras-chave colada.\n\n` +
         `Formato EXATO:\n---TITULO---\n[título]\n---META---\n[meta]`,
         // ── 400 FICHAS ERA A CAUSA DE "resposta vazia" ────────────────────────
         //
@@ -241,6 +264,31 @@ async function main() {
     // candidata na corrida da semana seguinte.
     if (ABERTURA_VAZIA.test(meta)) {
       console.log(`   ⏭️ ${file}: meta rejeitada (abre com verbo vazio — "${meta.split(' ')[0]}")`);
+      skipped++; continue;
+    }
+    // ── ANTI-FABRICAÇÃO — a trava que faltava a este robô ─────────────────────
+    //
+    // O prompt sempre disse "se não tiver número, não invente nenhum". Não havia
+    // validador, e prompt sem validador é meia trava. Medido na corrida
+    // 35033379302 (15/09/2026): a página das cotações da semana de **07/09/2026**
+    // saiu com a meta *"a cotação do dólar para 27/09/2026 … e a projeção"* — data
+    // no futuro, ausente do artigo, e uma projeção que o artigo não faz. Numa
+    // página de câmbio isso é dizer ao leitor um preço que ninguém mediu.
+    //
+    // A régua é a MESMA que já guardava as seções novas (`numerosFabricados`),
+    // não uma segunda escrita aqui.
+    const corpoOriginal = split.body || raw;
+    const fabricados = numerosFabricados(`${vt.value} ${vd.value}`, corpoOriginal);
+    if (fabricados.length) {
+      console.log(`   ⏭️ ${file}: rejeitada — número/data que não está no artigo: "${fabricados.join('", "')}"`);
+      skipped++; continue;
+    }
+    // Título em minúscula é o modelo a tratar o título como saco de palavras-chave.
+    // Medido na mesma corrida: `"cdb 120% cdi liquidez diária 2026: supera a
+    // poupança?"` — o número era verdadeiro, a frase é que não é frase. Rejeitar
+    // não perde a página: sem marca no registo, ela volta na corrida seguinte.
+    if (/^[a-zà-ÿ]/.test(vt.value)) {
+      console.log(`   ⏭️ ${file}: título rejeitado (começa em minúscula — "${vt.value.slice(0, 40)}...")`);
       skipped++; continue;
     }
 

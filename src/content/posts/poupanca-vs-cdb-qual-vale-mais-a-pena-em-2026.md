@@ -1,6 +1,6 @@
 ---
-title: "cdb 120% cdi liquidez diária 2026: supera a poupança?"
-description: "Veja passo a passo como comparar a rentabilidade do CDB 120% CDI com liquidez diária versus a poupança até setembro de 2026 e descubra qual rende mais."
+title: "Poupança vs CDB: qual vale mais a pena em 2026?"
+description: "Descubra se a poupança ou o CDB rende mais para seu dinheiro em 2026 e como usar o FinMoovi para decidir."
 tickerHeadline: "Qual rende mais: poupança ou CDB?"
 image: "/images/posts/poupanca-vs-cdb-qual-vale-mais-a-pena-em-2026.webp"
 imageAlt: "Moedas, calculadora e caderno marrom sobre superfície branca com ramos verdes."
@@ -9,14 +9,13 @@ locale: "pt"
 tags: ["poupança","CDB","investimentos","finmoovi","comparação financeira","rendimento 2026","escolha de investimento","poupança vs cdb","onde guardar dinheiro"]
 author: "FinMoovi"
 publishedAt: 2026-08-21
-updatedAt: "2026-09-15"
 readingTime: 7
 featured: false
 translationKey: "poupanca-vs-cdb-qual-vale-mais-a-pena-em-2026"
 scope: "universal"
 seo:
-  metaTitle: "cdb 120% cdi liquidez diária 2026: supera a poupança?"
-  metaDescription: "Veja passo a passo como comparar a rentabilidade do CDB 120% CDI com liquidez diária versus a poupança até setembro de 2026 e descubra qual rende mais."
+  metaTitle: "Poupança vs CDB: qual vale mais a pena em 2026?"
+  metaDescription: "Descubra se a poupança ou o CDB rende mais para seu dinheiro em 2026 e como usar o FinMoovi para decidir."
   keywords: ["poupança","CDB","investimentos","finmoovi","comparação financeira","rendimento 2026","escolha de investimento","poupança vs cdb","onde guardar dinheiro"]
 ---
 

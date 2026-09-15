@@ -1,21 +1,20 @@
 ---
-title: "Cotação dólar hoje setembro 2026 USD/BRL: preço atual"
-description: "Confira a cotação do dólar em reais para 27/09/2026, veja a variação da semana passada e a projeção. Acesse agora e compare outras moedas de forma fácil."
+title: "Resumo Semanal: Dólar a R$ 5.12 — Semana 1 de setembro"
+description: "Resumo semanal do mercado financeiro: dólar, euro, Selic e dicas para investidores. Semana 1 de setembro 2026."
 image: "/images/posts/cotacoes-semana-2026-09-07.webp"
 imageAlt: "Notebook e monitor com gráficos, caneca branca e bloco de notas em mesa de escritório."
 category: "cotacoes"
 tags: ["cotações","dólar","euro","mercado financeiro","selic"]
 author: "FinMoovi"
 publishedAt: 2026-09-07
-updatedAt: "2026-09-15"
 readingTime: 3
 featured: false
 locale: "pt"
 translationKey: "cotacoes-semana-1-setembro-2026"
 scope: "br-only"
 seo:
-  metaTitle: "Cotação dólar hoje setembro 2026 USD/BRL: preço atual"
-  metaDescription: "Confira a cotação do dólar em reais para 27/09/2026, veja a variação da semana passada e a projeção. Acesse agora e compare outras moedas de forma fácil."
+  metaTitle: "Cotações Semana 1 setembro 2026: Dólar R$ 5.12"
+  metaDescription: "Resumo semanal: dólar a R$ 5.12, euro a R$ 5.95. Análise e dicas para investidores."
   keywords: ["cotação dólar hoje", "cotação euro", "resumo mercado financeiro", "selic"]
 ---
 
