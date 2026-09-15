@@ -497,6 +497,108 @@ não `app.finmoovi.com`.
 
 ---
 
+## 🔬 A QUARTA RODADA — O QUE FOI MEDIDO SOBRE ONDE O LINK VALE (15/09, noite)
+
+Dois testes mudaram a prioridade de tudo. **Os dois desmentem coisas escritas neste
+documento e na memória.**
+
+### ❌ DIRETÓRIO DE APP É `nofollow` — a anotação de 07/09 estava errada
+
+A memória [[como-o-mobills-tem-238-links]] dizia dos diretórios: *"São links follow,
+grátis e legítimos"*. **Isso nunca tinha sido medido.** Foi agora, no SaaSHub, nas
+fichas do Notion, do Slack e do **Mobills**:
+
+```
+href="https://www.notion.com/"   rel="nofollow"
+href="https://slack.com/"        rel="nofollow"
+→ 50+ links de saída por página, TODOS nofollow
+```
+
+**Valor de SEO: zero.** É o normal do setor — diretório não quer verter força para
+fora. **Consequência:** os 4 cadastros já feitos (AlternativeTo, mate.tools,
+sitelike.org, webcatalog) valem muito menos do que se supunha. Não são perda total
+(visibilidade, tráfego de referência), mas **não resolvem o problema do link**.
+
+⚠️ Por medir, um a um, antes de gastar tempo em cadastro novo: AlternativeTo
+(bloqueia robô, `403`), Softpedia, IndieHackers, Findstack.
+
+### ✅ JORNAL DÁ LINK QUE CONTA
+
+Mesmo teste, em matéria real de cada um:
+
+| site | link externo |
+|---|---|
+| bemparana.com.br | **sem `nofollow`** → conta |
+| jornaldebrasilia.com.br | **sem `nofollow`** → conta |
+
+**É o oposto do diretório.** Um link no texto de um jornal vale mais que trinta
+cadastros. Isto promove a veia dos jornais de plano B a **plano principal**.
+
+### 🚪 A PORTA DO JORNAL: o EXPEDIENTE, com e-mail POR EDITORIA
+
+O `bemparana.com.br/expediente/` publica:
+
+```
+economia@ · politica@ · cidades@ · cultura@ · esportes@ · opiniao@ · comercial@
+```
+
+**Escrever para `economia@` é escrever a quem decide a pauta de economia.** Nenhum
+banco e nenhuma corretora tem isto; jornal tem, porque é a prática da profissão.
+O `jornaldebrasilia.com.br/expediente/` vai mais longe e publica **pessoas com nome**:
+**Lindauro Gomes** (Editor-Chefe da redação ONLINE — é a online que dá link),
+Tamires Rodrigues (Editora), Ricardo Nobre (impresso, não serve).
+
+### ⚠️ MAS A VEIA NÃO ESCALA COMO EU DISSE
+
+Varri **20 jornais brasileiros** adivinhando domínios (`/expediente`, `/contato`,
+`/fale-conosco`…). **Achei 1** — `redacao@gazetadopovo.com.br`. Os grandes (Estado de
+Minas, O Povo, Correio Braziliense, A Tarde, Folha PE) **não entregam o expediente a
+robô**: são aplicações JavaScript ou bloqueiam.
+
+Os dois que funcionaram funcionaram porque **o Semrush deu o nome** e porque são
+WordPress simples. **Adivinhar domínio não é método.**
+
+### 📊 O SALDO DE 35 DOMÍNIOS TESTADOS EM 15/09
+
+| resultado | quem |
+|---|---|
+| ✅ porta editorial | bemparana (`economia@`), jornaldebrasilia (Lindauro), ecommercebrasil (`contato@` no site VELHO), gazetadopovo (`redacao@`) |
+| ✅ porta aberta, tema distante | **clickpetroleoegas.com.br** — AS 49, **11 M visitas/mês**, e a página `/equipe` diz *"Sugestão de pauta? Manda no `brunotelesredator@gmail.com`"*. É portal de petróleo/gás/vagas. ⚠️ **não foi possível provar que dão link follow** |
+| 🟡 porta minúscula | gazetabrasilia.com.br (`jadson.barbosa@gmail.com`, uma pessoa só, **976 visitas/mês**) |
+| ❌ sem porta para robô | atarde, tnh1, digitei, elaele, zigg, workana, doutormultas, enotas, meupositivo |
+| ❌ agência de imprensa | **alura.com.br** → `alura@agenciamaquina.com` (a MESMA agência do Genial). Proposta editorial morre em agência |
+| ❌ só SAC/assessoria | broadcast.com.br (Estadão), comunique-se (só `cobranca@`, `compras@`, `faturamento@` da Knewin) |
+| ❌ empresa, não portal | rodobens, sofisadireto, pagbank, alelo, remessaonline, infinitepay, embracon, meliuz, mitrade |
+
+**Taxa real: cerca de 1 porta editorial em cada 4 domínios testados.**
+
+### 🔎 O Backlink Gap chegou ao fim do que dá
+
+990 candidatos, 100 vistos (ordenados por *Matches*, que é o sinal forte — os 890
+restantes têm menos correspondências). **O filtro de categoria NÃO EXISTE** neste
+plano: em *Advanced filters* só há `Country (by IP)` e `Zones (by TLD)`. O filtro de
+país **foi aplicado e não limpou nada** — `amazonaws.com`, `beehiiv.com`, `vsw.jp` e
+`aau.edu.et` continuaram na lista, porque IP de servidor não diz nacionalidade do site.
+
+**A coluna do `blog.finmoovi.com` é ZERO nas 100 linhas.** Cem sites apontam para os
+concorrentes e nenhum aponta para o blog. É o diagnóstico inteiro numa coluna só.
+
+### 🎯 A META DE "CENTENAS" — a conta honesta
+
+**Não dá para plantar centenas nesta qualidade, e não é preciso.** O que faz os
+e-mails de 15/09 funcionarem é citar a matéria pelo nome e mostrar a conta que faltou;
+isso custa ~15 minutos de leitura por e-mail. **Texto genérico multiplicado vira spam
+e queima o domínio `finmoovi.com` para sempre.**
+
+E o alvo não exige centenas: **`obinvest.org` está em 4º lugar numa busca de 90.500/mês
+com TRÊS backlinks.** Ver [[blog-o-que-trava-sao-os-backlinks]].
+
+**O ritmo que fecha a meta:** 1 a 2 e-mails bem pesquisados por dia → 20 a 30 em três
+semanas → 2 a 5 links, a 5–15% de resposta. **O gargalo deixou de ser descobrir alvos;
+passou a ser o ritmo de escrita.**
+
+---
+
 ## O que fazer a seguir (a partir de 16/09/2026)
 
 1. ✅ **FEITO — as duas portas.** O E-Commerce Brasil tem e-mail e já o recebeu; o Toro
@@ -518,10 +620,22 @@ não `app.finmoovi.com`.
    É: *"a vossa lista de calculadoras não tem amortização / IR sobre investimentos /
    desconto — a nossa faz X, e o artigo de vocês sobre Y ficaria completo com ela."*
    Antes de escrever, ler um artigo deles onde falte essa conta, como se fez sempre.
-5. **Alvos novos por descobrir.** A lista deste documento veio do Backlink Gap contra o
-   Mobills em 07/09 e está esgotada: dos 9, ficaram 2 vivos. Repetir o Backlink Gap contra
-   `investidor10.com.br` e `idinheiro.com.br` para tirar nomes novos — apareceram nas
-   buscas de 15/09 e ambos mantêm calculadoras.
+5. ✅ **FEITO — o Backlink Gap contra `investidor10` + `idinheiro` + `organizze`.** Deu a
+   veia dos jornais e está esgotado; ver "A quarta rodada". **Não repetir o Gap** — o
+   gargalo agora é escrever, não descobrir.
+
+6. **AS DUAS PORTAS POR USAR, e as duas estão prontas para escrever:**
+   - **clickpetroleoegas.com.br** → `brunotelesredator@gmail.com`. Eles PEDEM sugestão de
+     pauta, por escrito. 11 M visitas/mês. O encaixe honesto: público de offshore, setor
+     de demissão cíclica → **calculadora de reserva de emergência** (*"hoje você aguenta X
+     meses sem receber nada"*). ⚠️ Tema distante de finanças pessoais e **follow não
+     provado** — medir antes de investir tempo.
+   - **gazetabrasilia.com.br** → `jadson.barbosa@gmail.com`. Uma pessoa só toca o site:
+     fácil dizer sim, mas 976 visitas/mês. Link fraco, esforço baixo.
+
+7. **A regra nova antes de qualquer cadastro ou abordagem: MEDIR SE O SITE DÁ FOLLOW.**
+   Abrir uma página real e procurar `rel="nofollow"` nos links de saída. Foi isto que
+   desmascarou o SaaSHub e confirmou os jornais. Custa 30 segundos e evita semanas.
 
 **A receita que funcionou, em quatro passos:**
 achar a porta → ler um artigo real deles → ver o que falta nesse artigo →
