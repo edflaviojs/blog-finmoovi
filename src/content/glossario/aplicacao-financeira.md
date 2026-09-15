@@ -61,7 +61,7 @@ Nenhum investimento é 100% livre de risco. Conhecer os principais perigos ajuda
 Imagine que você ganha R$4.500 por mês e consegue reservar 10% (R$450) para investir. Veja como diferentes aplicações podem transformar esse valor ao longo de 2 anos:  
 
 - **CDB com taxa de 110% do CDI (aprox. 6,5% a.a.):** R$450 mensais aplicados renderiam cerca de R$12.200 ao final de 24 meses.  
-- **Tesouro Selic (rendimento próximo à taxa Selic, 13,75% a.a.):** O mesmo aporte resultaria em aproximadamente R$12.800, com alta segurança.  
+- **Tesouro Selic (rendimento próximo à taxa Selic vigente):** O mesmo aporte resultaria em aproximadamente R$12.800, com alta segurança.  
 - **Fundo de renda fixa com taxa de 8% a.a.:** O montante seria cerca de R$11.900, oferecendo boa liquidez e gestão profissional.  
 
 Se o salário fosse R$7.200 e a reserva fosse 15% (R$1.080), os números sobem proporcionalmente, mostrando como a disciplina de aplicar regularmente pode gerar um “dinheiro extra” significativo para a viagem dos sonhos ou a entrada de um imóvel.

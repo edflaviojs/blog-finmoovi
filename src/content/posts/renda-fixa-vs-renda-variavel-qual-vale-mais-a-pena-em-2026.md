@@ -35,7 +35,7 @@ A renda fixa engloba investimentos nos quais a remuneração ([juros](/glossario
 | Produto | Onde encontrar | Taxa média 2024‑2025* | Características |
 |---------|----------------|-----------------------|-----------------|
 | [CDB](/glossario/cdb) (Certificado de Depósito Bancário) | Bancos comerciais | 108 % do [CDI](/glossario/cdi) (aprox. 13,2% a.a.) | Garantia do FGC até R$ 250 mil por instituição |
-| Tesouro Direto – Selic | Governo Federal | 12,8 % a.a. (Tesouro Selic 2026) | Liquidez diária, risco soberano baixo |
+| Tesouro Direto – Selic | Governo Federal | 100% da Selic (ver [taxa atual no Banco Central](https://www.bcb.gov.br/controleinflacao/taxaselic)) | Liquidez diária, risco soberano baixo |
 | LCIs/LCAs (Letras de Crédito Imobiliário/Agrícola) | Bancos, corretoras | 107 % do CDI (≈ 13 % a.a.) | Isento de IR, FGC protege |
 | Debêntures de empresas | Corretoras | 9 %‑12 % a.a. (dependendo rating) | Risco de crédito da empresa emissora |
 
@@ -101,7 +101,7 @@ Na prática, ao comprar uma ação, você se torna sócio da empresa. Seu ganho 
 | **Implicação tributária** | IR regressivo (15 %‑22,5 %) ou isento (LCI/LCA) | IR de 15 % (ações) ou 20 % (demais) |
 | **Complexidade de gestão** | Simples (apenas escolher o título) | Mais complexa (análise de mercado) |
 | **Adequado para** | Conservadores, curto/médio prazo, reserva de emergência | Agressivos, médio/longo prazo, busca de crescimento |
-| **Exemplo de produto** | Tesouro Selic 2026 (12,8 % a.a.) | BOVA11 ETF (Ibovespa) – 15 % a.a. |
+| **Exemplo de produto** | Tesouro Selic 2026 (100% da Selic) | BOVA11 ETF (Ibovespa) – retorno variável |
 
 ![Tabela comparativa](/images/posts/renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026-4.webp)
 

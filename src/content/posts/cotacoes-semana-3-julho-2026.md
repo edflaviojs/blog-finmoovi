@@ -63,7 +63,7 @@ A diferença entre dólar e euro ficou praticamente a mesma (cerca de R$ 0,73)
 
 ## 2. Selic e Impacto nos Investimentos  
 
-A taxa Selic permanece em **13,75 % ao ano**, a mesma da última reunião do Copom. O Comitê optou por manter a taxa, sinalizando que ainda há “cautela” até ver mais consistência na inflação. Para o investidor pessoa física, isso significa:
+A taxa Selic permanece em **14,25 % ao ano**, a mesma da última reunião do Copom. O Comitê optou por manter a taxa, sinalizando que ainda há “cautela” até ver mais consistência na inflação. Para o investidor pessoa física, isso significa:
 
 ![2. Selic e Impacto nos Investimentos  ](/images/posts/cotacoes-semana-3-julho-2026-inline-3.webp)
 

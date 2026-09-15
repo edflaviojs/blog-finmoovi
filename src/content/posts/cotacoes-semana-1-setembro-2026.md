@@ -35,17 +35,17 @@ A semana foi marcada por oscilações moderadas nas moedas estrangeiras e por um
 
 - **Euro** – O EUR/BRL ficou em R$ 5,95, também sem grandes variações. A pressão veio da zona euro, onde a decisão do BCE de manter a taxa de juros em 4,25 % gerou um leve enfraquecimento do euro. No Brasil, a notícia de que a Selic seria reduzida já na próxima reunião ajudou a conter a alta da moeda. Em resumo: tanto o dólar quanto o euro mostraram resistência, mas a tendência é de leve desvalorização caso a política monetária americana continue mais agressiva.
 
-### Selic em foco: corte de 0,5 % e o que isso muda nos seus investimentos
+### Selic em 14,00% e o que a taxa parada muda nos seus investimentos
 
-Na reunião de política monetária da semana, o Copom decidiu reduzir a Selic de 11,25 % para **10,75 %** – a primeira baixa do ano. O objetivo oficial foi “aliviar a pressão sobre a atividade econômica”. O que isso significa na prática?
+O Copom não se reuniu nesta semana e a Selic seguiu em **14,00 % ao ano**, patamar definido em agosto de 2026. Juros altos parados por mais tempo mudam o cálculo de quem investe. O que isso significa na prática?
 
-- **[Renda fixa](/glossario/renda-fixa)** – Títulos como [Tesouro Selic](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) e CDBs de curto prazo perderam um pouco de atratividade, já que a taxa de retorno caiu. Contudo, ainda são opções seguras para quem quer [liquidez](/glossario/liquidez) e proteção contra a inflação. Se você já tem esses papéis, pode considerar “trocar” parte deles por fundos de [crédito](/glossario/credito) de médio prazo, que costumam render um pouco mais quando a taxa básica diminui.
+- **[Renda fixa](/glossario/renda-fixa)** – Títulos como [Tesouro Selic](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) e CDBs de curto prazo seguem atrativos, porque acompanham de perto a taxa básica. São opções seguras para quem quer [liquidez](/glossario/liquidez) e proteção contra a inflação. Se você já tem esses papéis, pode considerar “trocar” parte deles por fundos de [crédito](/glossario/credito) de médio prazo, que costumam render um pouco mais quando a taxa básica diminui.
 
-- **[Renda variável](/glossario/renda-variavel)** – A queda da Selic costuma beneficiar ações de consumo e varejo, porque o crédito fica mais barato. Na bolsa, o Ibovespa subiu 1,2 % no acumulado da semana, puxado por empresas de varejo e de serviços. Se você tem um perfil mais arrojado, pode ser a hora de reforçar posições em setores que se beneficiam de juros mais baixos.
+- **[Renda variável](/glossario/renda-variavel)** – Juros altos por mais tempo encarecem o crédito das empresas e costumam pesar sobre ações de consumo e varejo, que dependem de financiamento. Se você tem um perfil mais arrojado, pode ser a hora de reforçar posições em setores que se beneficiam de juros mais baixos.
 
 ### Dica prática para quem investe a partir de casa
 
-**Rebalanceie sua carteira a cada 6 meses**. Muitas vezes deixamos investimentos “dormindo” em um único tipo de ativo. Use a redução da Selic como gatilho para revisar a alocação:  
+**Rebalanceie sua carteira a cada 6 meses**. Muitas vezes deixamos investimentos “dormindo” em um único tipo de ativo. Use a revisão semestral como gatilho para rever a alocação:  
 1. Verifique o percentual que está em renda fixa vs. renda variável.  
 2. Se a parte fixa estiver acima de 70 % e você tem tolerância a risco, migre até 5‑10 % para fundos de crédito ou ações de setores beneficiados pelos juros baixos.  
 3. Não esqueça de manter uma [reserva de emergência](/ferramentas/calculadora-reserva) em um ativo de alta liquidez, como Tesouro Selic ou um CDB de liquidação diária.

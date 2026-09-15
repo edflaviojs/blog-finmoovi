@@ -64,7 +64,7 @@ Mesmo sendo mais seguro que ações, a renda fixa não está livre de riscos. É
 Vamos colocar a teoria no dia a dia usando salários típicos:
 
 - **Cenário 1 – Salário R$4.500:** João decide aplicar 10 % do salário (R$450) em um CDB com rendimento de 110 % do CDI (aprox. 6,5% ao ano). Em 12 meses, ele receberá cerca de R$480, já que o juros compõe R$30.
-- **Cenário 2 – Salário R$6.200:** Maria investe R$620 em um Tesouro Selic (rendimento atrelado à taxa Selic, 13,75% ao ano). Após um ano, seu saldo será aproximadamente R$700, considerando a taxa atual.
+- **Cenário 2 – Salário R$6.200:** Maria investe R$620 em um Tesouro Selic (rendimento atrelado à taxa Selic vigente). Após um ano, seu saldo será aproximadamente R$700, considerando a taxa atual.
 - **Cenário 3 – Salário R$8.000:** Carlos compra uma LCI de 95 % do CDI, isenta de [imposto de renda](/glossario/imposto-de-renda), com prazo de 24 meses. Ele coloca R$800 por mês (R$9.600 ao todo) e, ao final, terá cerca de R$10.500, já que a isenção de IR aumenta o retorno líquido.
 
 **Dica prática:** Se o seu objetivo é montar uma [reserva de emergência](/glossario/reserva-de-emergencia), prefira títulos com liquidez diária, como o Tesouro Selic ou CDBs que permitam resgate a qualquer momento.

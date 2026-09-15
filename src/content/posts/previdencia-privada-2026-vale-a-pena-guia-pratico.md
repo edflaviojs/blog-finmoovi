@@ -108,7 +108,7 @@ Esses números assumem que você **não faz nenhum resgate** antes da aposentado
 |--------|------------------------------|----------|--------|------------|
 | **Previdência (PGBL/VGBL)** | 6% a 7% ao ano (dependendo do fundo) | Baixa – só resgate na aposentadoria ou em casos específicos | Taxas de admin 1,5‑2,5% | Planejamento de aposentadoria, benefício fiscal |
 | **CDB (Certificado de Depósito Bancário)** | 100% do CDI (aprox. 5,5% ao ano) | Média – resgate após 30 dias | Taxas quase nulas | Quem busca prazo curto a médio |
-| **Tesouro Selic** | 100% da taxa Selic (aprox. 5,75% ao ano) | Alta – resgate diário | Custos de custódia ~0,2% ao ano | Perfil conservador, reserva de emergência |
+| **Tesouro Selic** | 100% da taxa Selic (ver [taxa atual no Banco Central](https://www.bcb.gov.br/controleinflacao/taxaselic)) | Alta – resgate diário | Custos de custódia ~0,2% ao ano | Perfil conservador, reserva de emergência |
 
 A principal vantagem da previdência é o **benefício fiscal** (no caso do PGBL) e a possibilidade de transformar o saldo em renda mensal garantida. Porém, se a sua prioridade for **acesso rápido ao dinheiro**, o Tesouro Selic ou o CDB são mais adequados.
 

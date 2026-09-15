@@ -28,7 +28,7 @@ A poupança é a conta bancária mais conhecida no Brasil para guardar dinheiro 
 
 ## Como funciona
 
-Quando você coloca dinheiro na poupança, o banco calcula o rendimento com base na Taxa Referencial (TR) + 0,5 % ao mês, ou 70 % da taxa Selic quando ela está acima de 8,5 % ao ano. O cálculo é feito automaticamente e o crédito aparece na sua conta no dia do aniversário do depósito.
+Quando você coloca dinheiro na poupança, o banco calcula o rendimento por uma de duas regras, que dependem da Selic: quando a Selic está **acima de 8,5 % ao ano**, a poupança rende **0,5 % ao mês + TR**; quando está **igual ou abaixo de 8,5 %**, rende **70 % da Selic + TR**. O cálculo é feito automaticamente e o crédito aparece na sua conta no dia do aniversário do depósito.
 
 - **Depósito:** pode ser feito a qualquer momento, por transferência, DOC, TED ou até mesmo em caixa eletrônico.  
 - **Rendimento:** só é creditado a cada 30 dias, na data de aniversário da [aplicação](/glossario/aplicacao-financeira).  

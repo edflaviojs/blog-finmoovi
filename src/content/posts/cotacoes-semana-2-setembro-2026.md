@@ -33,7 +33,7 @@ Nesta semana o dólar terminou em **R$ 5,12**, praticamente estável em relaç
 
 
 
-Já o euro ficou em **R$ 5,94**, subindo 0,6 % ao longo da semana. O principal motor foi a decisão do Banco Central Europeu (BCE) de manter a taxa de juros em 4,0 % – a mesma de ontem – mas sinalizando que a política apertada poderia durar mais tempo. A notícia fez o euro ganhar força contra o real, que ainda sente o peso da alta dos preços de energia na Europa.
+Já o euro ficou em **R$ 5,94**, subindo 0,6 % ao longo da semana. O principal motor foi a decisão do Banco Central Europeu (BCE) de manter a taxa de juros inalterada, mas sinalizando que a política apertada poderia durar mais tempo. A notícia fez o euro ganhar força contra o real, que ainda sente o peso da alta dos preços de energia na Europa.
 
 **Tendência:** dólar está em zona de consolidação, enquanto o euro tende a se valorizar levemente. Para quem tem despesas ou investimentos em moedas estrangeiras, a dica é ficar de olho nos movimentos de curto prazo e não fazer grandes ajustes baseados apenas em um dia de [volatilidade](/glossario/volatilidade).
 
@@ -41,7 +41,7 @@ Já o euro ficou em **R$ 5,94**, subindo 0,6 % ao longo da semana. O princip
 
 ## Comentário sobre a Selic e impacto nos investimentos
 
-A taxa Selic foi mantida em **13,75 % ao ano** na reunião do Copom da última quinta‑feira. O Comitê justificou a decisão apontando que a inflação ainda está acima da meta (3,8 % em agosto) e que a política monetária precisa de “tempo suficiente” para fazer efeito. 
+A taxa Selic segue em **14,00 % ao ano**, patamar definido pelo Copom em agosto de 2026. O Comitê justificou a decisão apontando que a inflação ainda está acima da meta (4,22 % em agosto, IPCA acumulado em 12 meses) e que a política monetária precisa de “tempo suficiente” para fazer efeito. 
 
 **O que isso significa para você:**  
 

@@ -36,7 +36,7 @@ Em resumo: tanto o dólar quanto o euro mostraram leve desvalorização frente a
 
 ## [Selic](/glossario/selic) e o Impacto nos Investimentos  
 
-A [taxa](/glossario/taxa-financeira) Selic continuou em **13,75 % ao ano**, nível que se manteve após a última reunião do Copom. Essa taxa alta ainda é o principal “freio” da inflação, mas também encarece o crédito. Para quem tem dinheiro aplicado em renda fixa, isso traz duas consequências claras:
+A [taxa](/glossario/taxa-financeira) Selic continuou em **14,25 % ao ano**, nível que se manteve após a última reunião do Copom. Essa taxa alta ainda é o principal “freio” da inflação, mas também encarece o crédito. Para quem tem dinheiro aplicado em renda fixa, isso traz duas consequências claras:
 
 ![Selic e o Impacto nos Investimentos  ](/images/posts/cotacoes-semana-2-julho-2026-inline-3.webp)
 
