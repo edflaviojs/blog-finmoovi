@@ -77,8 +77,40 @@ function hasDedicatedPage(query, slugs) {
   return false;
 }
 
+/**
+ * query → páginas que a servem, da que mais impressões tem para a que menos.
+ *
+ * O relatório PEDE ao GSC as linhas `query + page` (10 mil delas) e até aqui só as
+ * usava para a canibalização — as três primeiras categorias gravavam a busca e
+ * **jogavam a página fora**. Consequência medida em 15/09/2026: a maior
+ * oportunidade do blog (*"como reduzir gastos mensais"*, 1.161 impressões, 36% de
+ * tudo, posição 8, zero cliques) esteve no relatório por semanas **sem que fosse
+ * possível saber que página consertar**. Chegou-se a assumir uma página por
+ * parecença de nome, e a corrida real do otimizador apontou outra.
+ *
+ * É a mesma família do defeito consertado no mesmo dia no `gsc-otimizar-ctr.js`:
+ * quem mede por BUSCA e quem conserta por PÁGINA não falavam a mesma língua. O dado
+ * já vinha na resposta; só não era guardado.
+ */
+function pagesByQuery(queryPageRows) {
+  const map = new Map();
+  for (const r of queryPageRows) {
+    const [query, page] = r.keys;
+    if (!map.has(query)) map.set(query, []);
+    map.get(query).push({ page, impressions: r.impressions, clicks: r.clicks, position: Number(r.position.toFixed(1)) });
+  }
+  for (const pages of map.values()) pages.sort((a, b) => b.impressions - a.impressions);
+  return map;
+}
+
+/** As páginas de uma busca, no teto de 3 — o suficiente para saber onde mexer. */
+function topPages(map, query) {
+  return (map.get(query) || []).slice(0, 3);
+}
+
 function analyze(queryRows, queryPageRows) {
   const slugs = getExistingPtSlugs();
+  const paginas = pagesByQuery(queryPageRows);
 
   // 1. Striking distance — posição 5–20 com impressões.
   const strikingDistance = queryRows
@@ -91,6 +123,7 @@ function analyze(queryRows, queryPageRows) {
       clicks: r.clicks,
       position: Number(r.position.toFixed(1)),
       ctr: Number((r.ctr * 100).toFixed(2)),
+      pages: topPages(paginas, r.keys[0]),
     }));
 
   // 2. CTR baixo — boa posição, CTR muito abaixo do esperado.
@@ -105,6 +138,7 @@ function analyze(queryRows, queryPageRows) {
       position: Number(r.position.toFixed(1)),
       ctr: Number((r.ctr * 100).toFixed(2)),
       expectedCtr: Number((expectedCtr(r.position) * 100).toFixed(2)),
+      pages: topPages(paginas, r.keys[0]),
     }));
 
   // 3. Lacunas — query com impressão sem página dedicada.
@@ -118,6 +152,10 @@ function analyze(queryRows, queryPageRows) {
       clicks: r.clicks,
       position: Number(r.position.toFixed(1)),
       suggestedSlug: slugifyTheme(r.keys[0]),
+      // Uma lacuna não tem página DEDICADA, mas costuma ter uma página a
+      // aparecer por acidente. Saber qual é muda a decisão: às vezes é melhor
+      // reforçar a que já aparece do que escrever um post novo.
+      pages: topPages(paginas, r.keys[0]),
     }));
 
   // 4. Canibalização por query — ≥2 páginas competindo pela mesma query.
@@ -141,6 +179,16 @@ function analyze(queryRows, queryPageRows) {
   return { strikingDistance, lowCtr, gaps, cannibalization };
 }
 
+/**
+ * O caminho da página que mais serve a busca, sem o domínio — é o que se precisa
+ * para achar o ficheiro. `—` quando o GSC não devolveu par busca+página.
+ */
+function paginaPrincipal(o) {
+  const p = o.pages?.[0]?.page;
+  if (!p) return '—';
+  return p.replace(/^https?:\/\/[^/]+/, '') || '/';
+}
+
 function buildReport({ period, totals, opportunities, hasData, generatedAt }) {
   let md = `# 🔎 GSC — Digest de Oportunidades (Fase 1)\n\n`;
   md += `**Propriedade:** ${GSC_SITE_URL}\n`;
@@ -156,20 +204,20 @@ function buildReport({ period, totals, opportunities, hasData, generatedAt }) {
 
   md += `## 1. 🎯 Striking distance (posição ${STRIKING_MIN_POS}–${STRIKING_MAX_POS} — perto da 1ª página)\n\n`;
   if (opportunities.strikingDistance.length) {
-    md += `| Query | Impr. | Cliques | Posição | CTR |\n|---|---|---|---|---|\n`;
-    for (const o of opportunities.strikingDistance) md += `| ${o.query} | ${o.impressions} | ${o.clicks} | ${o.position} | ${o.ctr}% |\n`;
+    md += `| Query | Impr. | Cliques | Posição | CTR | Página |\n|---|---|---|---|---|---|\n`;
+    for (const o of opportunities.strikingDistance) md += `| ${o.query} | ${o.impressions} | ${o.clicks} | ${o.position} | ${o.ctr}% | \`${paginaPrincipal(o)}\` |\n`;
   } else md += `_Nenhuma no período._\n`;
 
   md += `\n## 2. 📉 CTR baixo (boa posição, poucos cliques — reescrever title/meta na Fase 2)\n\n`;
   if (opportunities.lowCtr.length) {
-    md += `| Query | Impr. | Posição | CTR | CTR esperado |\n|---|---|---|---|---|\n`;
-    for (const o of opportunities.lowCtr) md += `| ${o.query} | ${o.impressions} | ${o.position} | ${o.ctr}% | ~${o.expectedCtr}% |\n`;
+    md += `| Query | Impr. | Posição | CTR | CTR esperado | Página |\n|---|---|---|---|---|---|\n`;
+    for (const o of opportunities.lowCtr) md += `| ${o.query} | ${o.impressions} | ${o.position} | ${o.ctr}% | ~${o.expectedCtr}% | \`${paginaPrincipal(o)}\` |\n`;
   } else md += `_Nenhuma no período._\n`;
 
   md += `\n## 3. 🕳️ Lacunas (busca com impressão SEM página dedicada — candidatas à Fase 3)\n\n`;
   if (opportunities.gaps.length) {
-    md += `| Query | Impr. | Posição | Slug sugerido |\n|---|---|---|---|\n`;
-    for (const o of opportunities.gaps) md += `| ${o.query} | ${o.impressions} | ${o.position} | \`${o.suggestedSlug}\` |\n`;
+    md += `| Query | Impr. | Posição | Slug sugerido | Página que já aparece |\n|---|---|---|---|---|\n`;
+    for (const o of opportunities.gaps) md += `| ${o.query} | ${o.impressions} | ${o.position} | \`${o.suggestedSlug}\` | \`${paginaPrincipal(o)}\` |\n`;
   } else md += `_Nenhuma no período._\n`;
 
   md += `\n## 4. 🔀 Canibalização por query (≥2 páginas na mesma busca — consolidar na Fase 2)\n\n`;
