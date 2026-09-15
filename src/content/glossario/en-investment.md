@@ -29,4 +29,4 @@ You’ve probably felt the sting of an unexpected expense – a broken fridge, a
 
 
 ## How investment works in simple terms
-When you [invest](/en/posts/en-invest-or-pay-off-debt-which-is-better-in-2026), you’re buying a piece of something that can increase in value. A stock is a tiny ownership slice of a company; a bond is a loan you give to a government or corporation that pays you interest; a mutual fund (or ETF) bundles many stocks together, spreading risk. The return you get
+When you [invest](/en/posts/en-invest-or-pay-off-debt-which-is-better-in-2026), you’re buying a piece of something that can increase in value. A stock is a tiny ownership slice of a company; a bond is a [loan](/en/glossario/en-loan) you give to a government or corporation that pays you interest; a mutual fund (or ETF) bundles many stocks together, spreading risk. The return you get

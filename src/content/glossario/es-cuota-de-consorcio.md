@@ -19,11 +19,11 @@ seo:
 
 ## ¿Te suena el problema de la cuota de consórcio?
   
-Imagina que cada mes recibes un recordatorio de la cuota de tu consorcio, pero entre la factura del móvil, el alquiler y la compra del supermercado, el pago se te escapa. Un día te das cuenta de que la cuota está atrasada, aparecen cargos extra y la tranquilidad se va por la ventana. Ese estrés es más común de lo que crees, y suele comenzar con una simple falta de organización.
+Imagina que cada mes recibes un recordatorio de la cuota de tu [consorcio](/es/glossario/es-consorcio), pero entre la factura del móvil, el [alquiler](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026) y la compra del supermercado, el pago se te escapa. Un día te das cuenta de que la cuota está atrasada, aparecen cargos extra y la tranquilidad se va por la ventana. Ese estrés es más común de lo que crees, y suele comenzar con una simple falta de organización.
 
 ## ¿Qué es una cuota de consórcio y cómo funciona?
   
-Una cuota de consórcio es el pago periódico que haces para participar en un grupo de compra colectiva. Cada mes aportas una parte del valor total del bien que deseas (un coche, una casa, etc.) y, al ser sorteado o al ofertar, recibes la carta de crédito para adquirirlo. La cuota incluye:
+Una cuota de consórcio es el pago periódico que haces para participar en un grupo de compra colectiva. Cada mes aportas una parte del valor total del bien que deseas (un coche, una casa, etc.) y, al ser sorteado o al ofertar, recibes la carta de [crédito](/es/glossario/es-credito) para adquirirlo. La cuota incluye:
 - El valor del bien dividido en partes iguales.
 - Un fondo de administración (para cubrir los costos del grupo).
 - Un seguro o garantía (opcional, según el contrato).
@@ -32,7 +32,7 @@ Una cuota de consórcio es el pago periódico que haces para participar en un gr
 
 
 
-En la práctica, la cuota funciona como cualquier otro gasto recurrente: se paga mensualmente y se registra en tu flujo de caja. Si la pierdes de vista, el grupo puede suspender tu participación y tú pierdes la oportunidad de ser contemplado.
+En la práctica, la cuota funciona como cualquier otro [gasto recurrente](/es/glossario/es-gasto-recurrente): se paga mensualmente y se registra en tu [flujo de caja](/es/glossario/es-flujo-de-caja). Si la pierdes de vista, el grupo puede suspender tu participación y tú pierdes la oportunidad de ser contemplado.
 
 ## Ventajas y riesgos de pagar la cuota a tiempo
   
@@ -59,7 +59,7 @@ FinMoovi es como ese amigo que siempre te recuerda lo que tienes que hacer, pero
 - **Planificación mensual y metas**: estableces una meta de “pago puntual” y la app te muestra el progreso día a día.
 - **Tarjetas de crédito y facturas**: enlazas tus tarjetas y la app sugiere la mejor forma de pagar la cuota sin generar intereses.
 - **Modo compras**: creas una lista de gastos del mes y ves el total en tiempo real, evitando que la cuota se quede fuera del cálculo.
-- **Recordatorios y alertas de saldo**: recibes notificaciones antes de la fecha límite y avisos si tu cuenta está por debajo del monto necesario.
+- **Recordatorios y [alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no) de saldo**: recibes notificaciones antes de la fecha límite y avisos si tu cuenta está por debajo del monto necesario.
 - **Offline / PWA / sincronización**: aunque pierdas la señal, puedes registrar la cuota y la información se sincroniza cuando vuelvas a estar conectado.
 
 ## Tips prácticos para no olvidar ni perder dinero

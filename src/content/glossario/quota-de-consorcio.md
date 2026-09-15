@@ -18,7 +18,7 @@ seo:
 ---
 
 ## O que é quota de consórcio  
-A maioria das pessoas sente aquele aperto no peito quando vê a conta de um consórcio chegando e percebe que ainda falta um pedaço para fechar a compra do carro ou da casa dos sonhos. A “quota de consórcio” é a parcela que você paga periodicamente para manter seu lugar no grupo que vai adquirir o bem. Cada quota representa a sua participação no fundo comum, e, ao longo dos meses, ela vai sendo abatida do valor total do bem até que você seja contemplado ou até que o grupo termine o ciclo.
+A maioria das pessoas sente aquele aperto no peito quando vê a conta de um [consórcio](/glossario/consorcio) chegando e percebe que ainda falta um pedaço para fechar a compra do carro ou da casa dos sonhos. A “quota de consórcio” é a parcela que você paga periodicamente para manter seu lugar no grupo que vai adquirir o bem. Cada quota representa a sua participação no fundo comum, e, ao longo dos meses, ela vai sendo abatida do valor total do bem até que você seja contemplado ou até que o grupo termine o ciclo.
 
 ## Como funciona na prática  
 Quando você entra num consórcio, o valor total do bem é dividido em várias quotas iguais. A cada mês, você paga a sua quota, que inclui a parte do bem mais uma taxa de administração. Se houver um lance ou sorteio, quem tem a melhor oferta ou a maior sorte leva o bem antes de terminar o plano. Enquanto isso, as demais quotas continuam sendo pagas até que todos os participantes recebam o bem ou encerrem o contrato.
@@ -27,15 +27,15 @@ Quando você entra num consórcio, o valor total do bem é dividido em várias q
 
 
 
-- **Valor da quota:** costuma ser algo como “cerca de um aluguel” por mês, dependendo do bem escolhido.  
+- **Valor da quota:** costuma ser algo como “cerca de um [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026)” por mês, dependendo do bem escolhido.  
 - **Taxa de administração:** um percentual que cobre os custos da administradora, semelhante a uma taxa de serviço.  
 - **Lance:** oferta de pagamento extra que pode acelerar a contemplação.  
 
 ## Vantagens e armadilhas  
-A principal vantagem é a disciplina financeira: ao pagar a quota todo mês, você cria um hábito de poupança forçada, sem precisar abrir mão de um investimento de risco. Além disso, não há juros compostos como nos financiamentos, o que pode representar economia a longo prazo. Por outro lado, a falta de pagamento pode gerar multas e até a exclusão do grupo, fazendo com que você perca todo o dinheiro já investido. Também é comum que as taxas de administração sejam pouco transparentes, o que pode elevar o custo total do bem.
+A principal vantagem é a disciplina financeira: ao pagar a quota todo mês, você cria um hábito de [poupança](/glossario/poupanca) forçada, sem precisar abrir mão de um [investimento](/glossario/investimento) de risco. Além disso, não há [juros compostos](/ferramentas/calculadora-juros-compostos) como nos financiamentos, o que pode representar economia a longo prazo. Por outro lado, a falta de pagamento pode gerar multas e até a exclusão do grupo, fazendo com que você perca todo o dinheiro já investido. Também é comum que as taxas de administração sejam pouco transparentes, o que pode elevar o custo total do bem.
 
 ## Como controlar a quota no dia a dia  
-Manter o controle das quotas pode ser tão simples quanto anotar o valor em um caderno, mas isso costuma gerar esquecimentos e erros de cálculo. Uma abordagem mais eficaz é usar um aplicativo que registre cada pagamento, avise sobre vencimentos e mostre o saldo acumulado. Quando a quota chega, basta abrir o app, registrar a despesa e deixar que ele faça a categorização automática. Assim, você tem uma visão clara de quanto já foi pago, quanto ainda falta e qual o impacto no seu fluxo de caixa.
+Manter o controle das quotas pode ser tão simples quanto anotar o valor em um caderno, mas isso costuma gerar esquecimentos e erros de cálculo. Uma abordagem mais eficaz é usar um aplicativo que registre cada pagamento, avise sobre vencimentos e mostre o saldo acumulado. Quando a quota chega, basta abrir o app, registrar a despesa e deixar que ele faça a categorização automática. Assim, você tem uma visão clara de quanto já foi pago, quanto ainda falta e qual o impacto no seu [fluxo de caixa](/glossario/fluxo-de-caixa).
 
 ![Vantagens e armadilhas  ](/images/glossario/quota-de-consorcio-inline-3.webp)
 
