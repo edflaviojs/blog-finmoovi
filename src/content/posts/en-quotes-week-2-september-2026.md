@@ -33,7 +33,7 @@ The past week saw moderate swings in the major currencies and renewed focus on t
 
 ## 1. Dollar and Euro: Weekly Trend  
 
-- **Dollar (USD/local): $1.02** – The local currency gained a little strength against the dollar. On Monday the rate was around $1.03 and gradually fell throughout the week to close at $1.02. The dip was driven by U.S. inflation data that came in slightly below expectations and a more “friendly” interest‑rate environment in the United States. For anyone with dollar‑denominated debt or who plans to buy imported goods, the good news is that the price became a bit cheaper.  
+- **Dollar (USD/local): $1.02** – The local currency gained a little strength against the dollar. On Monday the rate was around $1.03 and gradually fell throughout the week to close at $1.02. The dip was driven by U.S. [inflation](/en/glossario/en-inflation) data that came in slightly below expectations and a more “friendly” [interest](/en/glossario/en-interest)‑rate environment in the United States. For anyone with dollar‑denominated debt or who plans to buy imported goods, the good news is that the price became a bit cheaper.  
 
 - **Euro (EUR/local): $1.19** – The euro also slipped, but at a slower pace. It started the week near $1.20 and ended at $1.19. The smaller move reflects the fact that the eurozone is still dealing with higher inflation pressures, keeping the euro more expensive than the dollar. If you hold funds that buy European assets, the return may be a touch lower because of the currency’s depreciation.  
 
@@ -47,15 +47,15 @@ The basic interest rate – the central bank base rate – remained at **13.75% 
 
 **Impact on investments:**  
 
-- **Fixed income:** Instruments like [government bonds](/en/posts/en-tesouro-direto-for-beginners) and certificates of deposit (CDs) that pay close to the central bank base rate remain attractive for those seeking safety. They earn almost “at the same speed” as the rate, so the stability of the base rate guarantees predictable returns.  
-- **Equities:** A stable rate helps reduce volatility in the stock market, especially for consumer and retail companies that usually enjoy lower financing costs when the base rate doesn’t rise.  
+- **[Fixed income](/en/glossario/en-fixed-income):** Instruments like [government bonds](/en/posts/en-tesouro-direto-for-beginners) and certificates of deposit (CDs) that pay close to the central bank base rate remain attractive for those seeking safety. They earn almost “at the same speed” as the rate, so the stability of the base rate guarantees predictable returns.  
+- **Equities:** A stable rate helps reduce [volatility](/en/glossario/en-volatility) in the stock market, especially for consumer and retail companies that usually enjoy lower [financing](/en/glossario/en-financing) costs when the base rate doesn’t rise.  
 - **Exchange rate:** When the base rate is high, the local currency tends to appreciate because it attracts foreign capital seeking yield. Since the rate stayed steady, the local currency may lose a bit of strength – which explains the modest drop in the dollar and euro.  
 
 ## 3. Practical Tip for Individual Investors  
 
 **Use FinMoovi to monitor your assets in different currencies.**  
 
-If you have investments in stocks, international funds, or even a dollar‑denominated savings account, FinMoovi lets you track everything in one place, automatically converting to the currency you choose. This makes it easy to see real performance without doing the math manually.  
+If you have investments in stocks, international funds, or even a dollar‑denominated [savings](/en/glossario/en-savings) account, FinMoovi lets you track everything in one place, automatically converting to the currency you choose. This makes it easy to see real performance without doing the math manually.  
 
 Also, take advantage of the dollar’s dip to **re‑evaluate foreign‑currency debt**: if you have any loan or credit‑card balance denominated in a foreign currency, it’s worth paying down a bit now before the rate climbs again.  
 
