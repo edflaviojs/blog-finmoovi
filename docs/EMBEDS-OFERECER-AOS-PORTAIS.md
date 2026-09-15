@@ -155,8 +155,8 @@ Tudo aqui foi **medido**, não suposto. O que não deu para medir está dito com
 | financeone.com.br | e-mail enviado 14/09 — **sem resposta** | `contato@financeone.com.br`, a/c **Tamires Silva** |
 | bmcnews.com.br | e-mail enviado 14/09 — **sem resposta** | `contato@bmcnews.com.br`, a/c **Renata Nunes** |
 | acionista.com.br | formulário de articulista enviado 14/09 — **sem resposta** | `/publique-no-portal/`, coluna Articulistas |
-| **toroinvestimentos.com.br** | 🟡 **O ALVO Nº1, e o encaixe é enorme — falta a porta** | ver "A segunda rodada desmente o embed" |
-| **ecommercebrasil.com.br** | 🟡 **encaixe perfeito, porta por achar** | só Instagram e LinkedIn |
+| **ecommercebrasil.com.br** | ✅ **PORTA ACHADA — e-mail enviado 15/09** | `contato@ecommercebrasil.com.br` |
+| **toroinvestimentos.com.br** | 🟡 pergunta de encaminhamento enviada 15/09 | `ajuda@toroinvestimentos.com.br` (SAC) |
 | suno.com.br | 🔴 **DESCARTADO** — tem 11 calculadoras próprias | ver abaixo |
 | genialinvestimentos.com.br | 🔴 **DESCARTADO** — é corretora, não portal | ver abaixo |
 | guiadoinvestidor.com.br | 🔴 SEM PORTA — não insistir | ver abaixo |
@@ -367,17 +367,150 @@ ela não há backlink.
 
 ---
 
+## 🔓 A TERCEIRA RODADA — AS DUAS PORTAS (15/09/2026, à noite)
+
+Os dois melhores alvos eram os dois sem e-mail. Um foi resolvido; o outro foi
+**explicado**, e a explicação vale mais do que um endereço.
+
+### ✅ E-Commerce Brasil: a porta estava no SITE VELHO
+
+**`contato@ecommercebrasil.com.br`** — publicado como `mailto:` em
+`www2.ecommercebrasil.com.br/sobre/`.
+
+Por que os 24 endereços de 15/09 não a acharam: **foram todos testados no site
+novo**. Medido agora:
+
+| URL | resposta |
+|---|---|
+| `www.ecommercebrasil.com.br/sobre/` | **404** |
+| `www2.ecommercebrasil.com.br/sobre/` | **200, com `mailto:contato@ecommercebrasil.com.br`** |
+
+O mesmo endereço aparece no rodapé de todas as páginas do `www2`, inclusive nas
+que dão 404. **A lição: um portal com site antigo no ar tem duas superfícies de
+contato, e a velha costuma ser a que publica e-mail.**
+
+> **E-mail enviado em 15/09**, a/c Redação, com as três contas do artigo do
+> Pedro Henrique Sobral já feitas dentro do corpo (50% · 33% · 46,7%) e o
+> brinde de pauta *"30% + 20% não é 50%, é 44%"*. Ficheiro:
+> `EMAIL-ECOMMERCEBRASIL-REDACAO.txt`.
+
+### 🔴 O teste de SMTP que NÃO prova nada neste domínio — e quase me enganou
+
+A porta 25 sai desta máquina (confirmado contra `aspmx.l.google.com`). Testei
+seis destinatários em `ecommercebrasil.com.br`, que usa Google Workspace:
+
+```
+RCPT TO:<contato@…>            -> 250 OK
+RCPT TO:<redacao@…>            -> 250 OK
+RCPT TO:<pauta@…>              -> 250 OK
+RCPT TO:<imprensa@…>           -> 250 OK
+RCPT TO:<conteudo@…>           -> 250 OK
+RCPT TO:<zzz-nao-existe-9182@…> -> 250 OK   ← INVENTADO POR MIM
+```
+
+**O domínio aceita tudo (catch-all).** Sem o endereço de controlo eu teria
+afirmado ao Ed que `redacao@` existe — e seria mentira. **Regra: teste de
+existência de caixa de correio só vale com um endereço FALSO na mesma corrida.**
+Família de [[campo-com-lista-de-opcoes-nao-decide]]: a ferramenta responde
+"sim" a tudo e a resposta parece informação.
+
+### 🔴 O Toro é do SANTANDER — e é por isso que não tem porta
+
+Três medições, e as três dizem a mesma coisa:
+
+1. O MX de `toroinvestimentos.com.br` aponta para
+   **`mx1.santandergroup.c3s2.iphmx.com`** (filtro corporativo Cisco IronPort).
+2. `ajuda.toroinvestimentos.com.br` responde **301 para
+   `ajuda.santandercorretora.com.br`** — a migração de marca está a acontecer agora.
+3. O Santander concluiu a compra de **100% do Toro em dezembro de 2024**; a
+   corretora passou a chamar-se **Santander Corretora**.
+
+Os únicos e-mails publicados são `ajuda@` (SAC) e `ouvidoria@` (reclamações).
+**Não existe imprensa, redação, pauta nem parcerias.** O blog não tem página de
+contato nenhuma (lido o `page-sitemap.xml`: só `/`, `/all/`, `/nps-geral/`,
+`/nps-alice/`, `/indica-rf/`), e o autor é mesmo genérico — o HTML do artigo traz
+`<meta name="author" content="Equipe Toro">`. **Não há pessoa para procurar.**
+
+Isto confirma a regra da segunda rodada com a prova mais dura que apareceu:
+*portal tem porta, empresa não tem* — e o Toro deixou de ser corretora
+independente para ser **um banco**.
+
+### ✅ MAS a oportunidade continua VIVA — e isto é o achado do dia
+
+O artigo do Toro que cita a Mobills tem
+`"dateModified":"2025-09-08"`. **O Santander fechou a compra em dezembro de
+2024.** Ou seja: **nove meses depois de virar banco, o Toro continuou a citar um
+app de finanças pessoais de fora.** Ser do Santander não fecha a porta — só a
+esconde.
+
+**E o formato de e-mail deles é `nome.sobrenome@toroinvestimentos.com.br`.**
+Consequência prática: **basta UM nome** e temos o endereço exato, sem precisar de
+e-mail publicado nenhum.
+
+> **Enviado em 15/09 para `ajuda@`: um e-mail de três linhas que não vende nada**,
+> só pergunta *"quem cuida do blog de vocês?"*. Ficheiro:
+> `EMAIL-TORO-PERGUNTA-CURTA.txt`. O SAC não decide, mas sabe encaminhar; uma
+> proposta longa seria fechada como "não é atendimento".
+> ⚠️ **Isto é julgamento, não medição** — não há como provar como o SAC se comporta.
+>
+> O `ouvidoria@` ficou **fora**: é canal legal de reclamação com prazo obrigatório
+> de resposta. Usá-lo para pedir link é abusar do canal.
+
+### 🔒 O LinkedIn não é opção por linha de comando
+
+`br.linkedin.com` devolve **HTTP 999** a qualquer pedido automático. Nomes só
+saem de lá por busca externa (que já foi tentada, sem resultado para o Toro) ou
+por fotografia do Ed. **Família do `acionista.com.br`.**
+
+---
+
+## ✅ A PÁGINA "SOBRE" ENTROU (15/09/2026)
+
+O buraco que sobrava do webcatalog foi fechado. Está no repo do app,
+commit `0cba080`, em **três idiomas**: `/sobre` · `/about` · `/acerca`.
+
+**Por que isto pertence a este documento e não é assunto à parte:** a receita de
+quatro passos acaba sempre com um editor a abrir o `finmoovi.com` antes de
+decidir publicar a calculadora. Até hoje ele encontrava um site que não dizia
+quem o faz.
+
+O que a página diz, e tudo é verificável:
+
+- a história real: a planilha de Excel, Administração de Empresas + pós em
+  Gestão Financeira
+- **maio/2025 → agosto/2026: quinze meses de uso diário antes de cobrar de
+  alguém.** É o argumento mais forte da página
+- *"não existe empresa, não existe equipa, quem responde sou eu"* — há atividade
+  aberta em Portugal
+- as promessas sobre dados são **cópia fiel da Política de Privacidade**. Foi um
+  número inventado que saiu do site no mesmo dia da recusa; inventar noutra
+  página seria o pior dos mundos
+- o lugar da foto mostra as iniciais **EF**, não um rosto de banco de imagens
+
+⚠️ **Detalhe técnico que quase partiu o build:** `/en/sobre` era o caminho óbvio
+e é **proibido** — criaria `dist/en/`, que compete com `dist/en.html` e faria o
+Cloudflare Pages responder 308 em `/en`. O próprio `prerender.mjs` tem uma trava
+que aborta o build nesse caso. Daí três caminhos planos.
+
+**Falta ainda:** reenviar ao `webcatalog.io` — e desta vez com **`finmoovi.com`**,
+não `app.finmoovi.com`.
+
+---
+
 ## O que fazer a seguir (a partir de 16/09/2026)
 
-1. **ACHAR A PORTA DO TORO E DA E-COMMERCE BRASIL.** É o trabalho de maior retorno que
-   existe. Os dois melhores alvos são os dois sem e-mail publicado. Caminhos por tentar,
-   nenhum ainda tentado: LinkedIn de quem escreve (procurar por trás de *"Equipe Toro"*
-   pessoas reais — redator, editor de conteúdo, SEO); Instagram `@ecommerce_br`; o
-   formulário *Trabalhe Conosco* do E-Commerce Brasil como último recurso; endereços
-   comuns (`redacao@`, `conteudo@`, `pauta@`) **testados no servidor de e-mail antes de
-   enviar seja o que for**.
-2. **Esperar resposta dos três até 19/09.** Não mandar segundo e-mail antes disso — queima
-   o contato. A partir de 19/09, LinkedIn da Tamires Silva e da Renata Nunes.
+1. ✅ **FEITO — as duas portas.** O E-Commerce Brasil tem e-mail e já o recebeu; o Toro
+   recebeu a pergunta de encaminhamento. Ver "A terceira rodada" acima.
+   **O que fica a seguir nos dois:**
+   - **E-Commerce Brasil:** se `contato@` não responder até **22/09**, sobra o Instagram
+     `@ecommerce_br` (mensagem direta) e o formulário *Trabalhe Conosco*.
+     ⚠️ Continua **por confirmar** se os colunistas são clube fechado/pago.
+   - **Toro:** o que se espera do SAC é **um nome**, não um sim. Com um nome, o endereço
+     monta-se sozinho: `nome.sobrenome@toroinvestimentos.com.br`. **Aí sim** vai a
+     proposta — e ela não é o código do embed, é *"faltam 8 calculadoras na vossa lista"*.
+2. **Esperar resposta dos três de 14/09 até 19/09.** Não mandar segundo e-mail antes disso —
+   queima o contato. A partir de 19/09, LinkedIn da Tamires Silva e da Renata Nunes.
+   ⚠️ **O LinkedIn devolve HTTP 999 a robôs** — esse passo tem de ser do Ed.
 3. **Se o acionista responder pedindo o artigo, escrever o artigo.** As duas pautas
    propostas: *o dia em que o imposto cai* (a alíquota de 22,5% a 15%) e *o ponto de
    virada dos juros compostos*. Em ambas a calculadora entra dentro do texto.
