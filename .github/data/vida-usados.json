@@ -454,5 +454,11 @@
     "gancho": "se-parar",
     "turno": "manha",
     "em": "2026-09-15T09:32:46.627Z"
+  },
+  {
+    "situacao": "parcela-atrasada",
+    "gancho": "se-parar",
+    "turno": "noite",
+    "em": "2026-09-15T09:37:23.550Z"
   }
 ]

@@ -1,0 +1,117 @@
+{
+  "slug": "loop-parcela-atrasada-se-parar",
+  "formato": "loop16",
+  "term": "A parcela que atrasou",
+  "category": "vida",
+  "keyword": "ATRASO",
+  "situacao": "parcela-atrasada",
+  "gancho": "se-parar",
+  "ganchoFamilia": "e se parar",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "domino",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "O que acontece se você parar de pagar a parcela?",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "acontece",
+          "visual": {
+            "type": "statement",
+            "text": "Parcela atrasada"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "parar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "domino"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Comigo aconteceu. O boleto venceu sábado, e eu só vi segunda.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "Comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "domino"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "Boleto venceu no sábado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Eu fiquei calado, paguei depois, e hoje confiro antes do fim.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "fiquei",
+          "visual": {
+            "type": "statement",
+            "text": "Passei a conferir antes"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "calado",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "domino"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Quando você parar, a parcela atrasada derruba as outras contas.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "parar",
+          "visual": {
+            "type": "statement",
+            "text": "Uma conta derruba outras"
+          }
+        },
+        {
+          "anchor": "parcela",
+          "visual": {
+            "type": "statement",
+            "text": "Parcela atrasada"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
