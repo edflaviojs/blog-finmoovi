@@ -20,7 +20,7 @@ seo:
 
 ## O que é lista de compras  
 
-A lista de compras é aquele papel (ou nota no celular) que você leva ao supermercado, feira ou padaria. Ela nasce da necessidade de não esquecer nada, mas rapidamente pode virar um convite ao gasto impulsivo: ao ver um produto que não estava na lista, você pensa “só mais um” e o carrinho cresce. Quando a lista inclui itens que você nem usa ou compra em excesso, o impacto no orçamento pode ser tão grande quanto pagar um aluguel extra por mês.
+A lista de compras é aquele papel (ou nota no celular) que você leva ao supermercado, feira ou padaria. Ela nasce da necessidade de não esquecer nada, mas rapidamente pode virar um convite ao gasto impulsivo: ao ver um produto que não estava na lista, você pensa “só mais um” e o carrinho cresce. Quando a lista inclui itens que você nem usa ou compra em excesso, o impacto no orçamento pode ser tão grande quanto pagar um [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026) extra por mês.
 
 ![O que é lista de compras  ](/images/glossario/lista-de-compras-inline-1.webp)
 
@@ -28,7 +28,7 @@ A lista de compras é aquele papel (ou nota no celular) que você leva ao superm
 
 ## Por que a lista de compras pode virar vilã das finanças  
 
-Quando a lista não está alinhada ao seu planejamento financeiro, ela gera duas armadilhas principais:  
+Quando a lista não está alinhada ao seu [planejamento financeiro](/glossario/planejamento-financeiro), ela gera duas armadilhas principais:  
 
 - **Compras não planejadas:** itens em promoção que parecem “uma boa oportunidade”, mas que não estavam no seu plano de consumo.  
 - **Acúmulo de despesas:** ao somar tudo ao final da compra, o total pode ultrapassar o limite que você teria para outras contas, como a fatura do cartão ou a reserva para emergências.  
@@ -37,7 +37,7 @@ Essas situações são comuns porque a maioria das pessoas não tem um controle 
 
 ## Como transformar a lista em aliada financeira  
 
-A chave está em conectar a lista ao seu fluxo de caixa, ou seja, ao registro de todas as entradas e saídas de dinheiro. Quando cada item da lista tem um valor associado e esse valor é comparado automaticamente com o que ainda cabe no seu orçamento mensal, a decisão de compra se torna mais consciente.  
+A chave está em conectar a lista ao seu [fluxo de caixa](/glossario/fluxo-de-caixa), ou seja, ao registro de todas as entradas e saídas de dinheiro. Quando cada item da lista tem um valor associado e esse valor é comparado automaticamente com o que ainda cabe no seu orçamento mensal, a decisão de compra se torna mais consciente.  
 
 ![Como transformar a lista em aliada financeira  ](/images/glossario/lista-de-compras-inline-3.webp)
 
@@ -45,7 +45,7 @@ A chave está em conectar a lista ao seu fluxo de caixa, ou seja, ao registro de
 
 - **Capture o preço na hora:** ao tirar uma foto da nota fiscal ou usar a voz para dizer “leite, 2 unidades, preço de um café por dia”, o aplicativo reconhece o valor e já o inclui na soma.  
 - **Categorização automática:** o sistema entende que “leite” pertence à categoria “alimentação”, facilitando relatórios posteriores.  
-- **Multimoeda:** se você viaja ou faz compras em diferentes moedas, o app converte tudo para a mesma base, permitindo comparar gastos em dólares, euros ou a moeda local sem confusão.  
+- **Multimoeda:** se você viaja ou faz compras em diferentes moedas, o app converte tudo para a mesma base, permitindo comparar gastos em dólares, euros ou a [moeda](/glossario/moeda) local sem confusão.  
 
 Com esses recursos, a lista deixa de ser um simples papel e passa a ser um painel de controle que avisa quando você está perto de estourar o limite.
 
@@ -57,7 +57,7 @@ Além disso, o app oferece:
 
 - **Fluxo de caixa e relatórios:** visualização clara de quanto entra e sai, com gráficos que mostram a evolução ao longo dos meses.  
 - **Planejamento mensal e metas:** defina quanto quer gastar em cada categoria e receba alertas quando estiver próximo do teto.  
-- **Cartões de crédito e fatura:** integre suas contas para que as compras feitas com cartão já apareçam no seu planejamento, evitando surpresas na data de vencimento.  
+- **Cartões de [crédito](/glossario/credito) e fatura:** integre suas contas para que as compras feitas com cartão já apareçam no seu planejamento, evitando surpresas na data de vencimento.  
 - **Lembretes e alertas de saldo:** notificações que avisam quando o saldo da conta corrente está baixo ou quando uma compra ultrapassa o limite definido.  
 - **Modo offline / PWA:** funciona mesmo sem internet, sincronizando tudo assim que você se reconecta.  
 
@@ -71,7 +71,7 @@ Tudo isso funciona como um amigo que entende de finanças e está sempre ao seu 
 
 **Dica prática:** se costuma fazer compras em diferentes moedas, habilite a conversão multimoeda. Assim, ao comprar um produto em euros durante uma viagem, o valor já aparecerá convertido para a moeda que você usa no seu planejamento, evitando surpresas ao fechar a fatura do cartão.  
 
-Além das dicas acima, mantenha a lista sempre atualizada: ao perceber que um item está em promoção, registre o preço imediatamente; se mudar de ideia, risque o item antes de finalizar a compra. Essa disciplina simples já reduz em até 30 % os gastos impulsivos.
+Além das [dicas](/posts/7-erros-financeiros-iniciante) acima, mantenha a lista sempre atualizada: ao perceber que um item está em promoção, registre o preço imediatamente; se mudar de ideia, risque o item antes de finalizar a compra. Essa disciplina simples já reduz em até 30 % os gastos impulsivos.
 
 ## Comece hoje  
 

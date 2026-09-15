@@ -20,7 +20,7 @@ seo:
 
 ## O que é hipoteca  
 
-A hipoteca é um empréstimo de longo prazo que você usa para comprar um imóvel. Em vez de pagar tudo de uma vez, o banco libera o dinheiro e você devolve em parcelas mensais, como se fosse um aluguel que vai para o seu próprio bolso. Enquanto as parcelas não acabam, o imóvel fica como garantia: se você parar de pagar, o credor pode tomar o bem. Pense na hipoteca como um “compromisso de compra parcelada” que envolve seu futuro financeiro.
+A hipoteca é um [empréstimo](/glossario/emprestimo) de longo prazo que você usa para comprar um imóvel. Em vez de pagar tudo de uma vez, o banco libera o dinheiro e você devolve em parcelas mensais, como se fosse um aluguel que vai para o seu próprio bolso. Enquanto as parcelas não acabam, o imóvel fica como garantia: se você parar de pagar, o credor pode tomar o bem. Pense na hipoteca como um “compromisso de compra parcelada” que envolve seu futuro financeiro.
 
 ![O que é hipoteca  ](/images/glossario/hipoteca-inline-1.webp)
 
@@ -34,7 +34,7 @@ A hipoteca inclui:
 
 - **Principal** – o valor que você realmente pegou emprestado.  
 - **Juros** – a taxa que o banco cobra por emprestar o dinheiro; funciona como “aluguel do dinheiro”.  
-- **Amortização** – a parte da parcela que reduz o principal.  
+- **[Amortização](/glossario/amortizacao)** – a parte da parcela que reduz o principal.  
 - **Taxas** – custos extras como avaliação, registro e seguros.  
 
 Esses componentes aparecem na sua fatura mensal, e entender cada um ajuda a evitar surpresas.
@@ -56,15 +56,15 @@ Ficar atento a esses detalhes evita que a hipoteca se torne um peso inesperado.
 
 ## Estratégias para pagar a hipoteca sem sufoco  
 
-Manter as finanças equilibradas enquanto paga a hipoteca exige disciplina. Aqui vão três dicas práticas que realmente funcionam:  
+Manter as finanças equilibradas enquanto paga a hipoteca exige disciplina. Aqui vão três [dicas](/posts/7-erros-financeiros-iniciante) práticas que realmente funcionam:  
 
 **Dica prática:** Reduza gastos supérfluos, como aquele café diário, e direcione a economia para amortizar o principal.  
 
-**Dica prática:** Se o seu contrato permite, faça pagamentos extras quando receber um bônus ou um aumento; isso diminui o saldo devedor e reduz os juros futuros.  
+**Dica prática:** Se o seu contrato permite, faça pagamentos extras quando receber um bônus ou um aumento; isso diminui o [saldo devedor](/glossario/saldo-devedor) e reduz os juros futuros.  
 
 **Dica prática:** Reavalie o prazo a cada ano. Se a sua renda aumentou, considere encurtar o prazo para pagar menos juros, mesmo que as parcelas fiquem um pouco maiores.  
 
-Além disso, mantenha uma reserva de emergência equivalente a três a seis meses de despesas, para não precisar usar a linha de crédito da hipoteca em caso de imprevistos.
+Além disso, mantenha uma [reserva de emergência](/ferramentas/calculadora-reserva) equivalente a três a seis meses de despesas, para não precisar usar a linha de crédito da hipoteca em caso de imprevistos.
 
 ## Como o FinMoovi pode ajudar no controle da hipoteca  
 
@@ -72,7 +72,7 @@ Gerenciar todas essas variáveis pode ser confuso, mas o app FinMoovi traz ferra
 
 - **Captura inteligente**: tire foto da nota da parcela ou grave a voz dizendo “paguei a hipoteca”; o app reconhece o valor e já classifica a despesa.  
 - **Multimoeda**: se você tem renda em diferentes moedas (por exemplo, dólares ou euros), o FinMoovi converte tudo automaticamente, facilitando o acompanhamento.  
-- **Fluxo de caixa e relatórios**: veja em um painel como a hipoteca impacta seu saldo mensal, com gráficos que mostram a evolução do principal e dos juros.  
+- **[Fluxo de caixa](/glossario/fluxo-de-caixa) e relatórios**: veja em um painel como a hipoteca impacta seu saldo mensal, com gráficos que mostram a evolução do principal e dos juros.  
 - **Planejamento mensal e metas**: defina metas de amortização extra e o app avisa quando você está no caminho certo.  
 - **Cartões de crédito e fatura**: integre suas faturas ao app; assim, quando usar o cartão para pagar a parcela, o valor já aparece na categoria “hipoteca”.  
 - **Modo compras**: crie uma lista de itens que deseja comprar para a casa e veja o total em tempo real, evitando comprometer o orçamento da hipoteca.  

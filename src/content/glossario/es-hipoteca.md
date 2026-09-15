@@ -20,7 +20,7 @@ seo:
 
 ## ¿Te suena el ruido de la cuenta al final del mes?
   
-Imagina que acabas de recibir la factura del alquiler y, de repente, notas que el gasto de la hipoteca se ha convertido en una sombra que te persigue cada día. Ese peso extra en tu presupuesto te hace dudar si realmente vale la pena vivir en tu propio hogar. La sensación de que el dinero se escapa entre los dedos es real, y es el punto de partida para entender qué es una hipoteca y cómo no dejar que te controle.
+Imagina que acabas de recibir la factura del [alquiler](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026) y, de repente, notas que el gasto de la hipoteca se ha convertido en una sombra que te persigue cada día. Ese peso extra en tu presupuesto te hace dudar si realmente vale la pena vivir en tu propio hogar. La sensación de que el dinero se escapa entre los dedos es real, y es el punto de partida para entender qué es una hipoteca y cómo no dejar que te controle.
 
 ## Qué es una hipoteca
   
@@ -36,7 +36,7 @@ Cuando firmas el contrato, acuerdas un plazo que suele ir de 15 a 30 años. Cada
 
 - **Plazo:** tiempo total para pagar el préstamo.  
 - **Tasa de interés:** porcentaje que el banco cobra por prestar el dinero.  
-- **Amortización:** proceso de ir reduciendo la deuda con cada pago.  
+- **[Amortización](/es/glossario/es-amortizacion):** proceso de ir reduciendo la deuda con cada pago.  
 
 ![Cómo funciona una hipoteca](/images/glossario/hipoteca-inline-3.webp)
 
@@ -52,7 +52,7 @@ Muchos compradores se enfocan solo en la cuota mensual y olvidan los gastos adic
 - **Comisiones de apertura:** un cargo único que el banco cobra al iniciar el préstamo.  
 - **Mantenimiento y reparaciones:** gastos que siguen siendo tuyos, aunque la casa sea tuya.  
 
-**Consejo práctico:** revisa el desglose total del préstamo antes de firmar; suma todos los cargos y compáralos con el costo de un alquiler similar para saber si la inversión vale la pena.
+**Consejo práctico:** revisa el desglose total del préstamo antes de firmar; suma todos los cargos y compáralos con el costo de un alquiler similar para saber si la [inversión](/es/glossario/es-inversion) vale la pena.
 
 ## Herramientas para manejar tu hipoteca
   
@@ -64,11 +64,11 @@ FinMoovi combina todas esas funciones en una sola experiencia. Cuando recibes el
 
 - **Captura inteligente:** foto o voz → reconocimiento automático.  
 - **Multimoneda:** visualiza tus pagos en la moneda que prefieras, útil si tienes ingresos en diferentes divisas.  
-- **Flujo de caja e informes:** ve cómo la cuota afecta tu presupuesto mensual y genera reportes claros.  
+- **[Flujo de caja](/es/glossario/es-flujo-de-caja) e informes:** ve cómo la cuota afecta tu presupuesto mensual y genera reportes claros.  
 - **Planificación mensual y metas:** establece una meta de “pagar la hipoteca antes de los 30 años” y sigue tu progreso.  
 - **Tarjetas de crédito y facturas:** sincroniza tus tarjetas para que los pagos de la hipoteca no se queden fuera del panorama financiero.  
 - **Modo compras:** crea una lista de gastos del hogar y ve el total en tiempo real, evitando sorpresas al final del mes.  
-- **Recordatorios y alertas:** recibe notificaciones de saldo bajo o de fechas de pago próximas.  
+- **Recordatorios y [alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no):** recibe notificaciones de saldo bajo o de fechas de pago próximas.  
 - **Offline / PWA / sincronización:** funciona sin conexión y guarda todo en la nube para que nunca pierdas datos.  
 
 Con FinMoovi, la hipoteca deja de ser una sombra y pasa a ser una pieza más de tu tablero financiero, visible y bajo control.
@@ -79,7 +79,7 @@ Con FinMoovi, la hipoteca deja de ser una sombra y pasa a ser una pieza más de 
 - **Consejo práctico:** revisa mensualmente el informe de flujo de caja; si la cuota consume más del 30 % de tus ingresos, busca opciones de refinanciamiento.  
 - **Consejo práctico:** usa la función de metas para fijar un objetivo de “pago extra” cada año; incluso una pequeña suma adicional acelera la amortización y reduce intereses.  
 
-Aplicar estos hábitos te permite transformar la hipoteca de una carga a una herramienta de construcción de patrimonio.
+Aplicar estos hábitos te permite transformar la hipoteca de una carga a una herramienta de construcción de [patrimonio](/es/glossario/es-patrimonio).
 
 ## Empieza hoy
   

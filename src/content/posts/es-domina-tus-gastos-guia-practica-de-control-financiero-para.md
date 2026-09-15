@@ -25,7 +25,7 @@ seo:
   keywords: ["control de gastos","finanzas personales","presupuesto","ahorro","FinMoovi","gestión de dinero","metas financieras"]
 ---
 
-Imagina la escena: llegas a casa después de un día entero de trabajo, abres la factura de la luz y ves un importe que parece el alquiler completo. Al mismo tiempo, la notificación del móvil avisa que la factura de la tarjeta de crédito ya superó el límite de un café al día durante un mes. El corazón se acelera, la ansiedad aparece y sientes que el dinero “desaparece” sin saber a dónde fue. Ese es el punto de partida para entender **cómo controlar tus gastos**: al registrar cada gasto, categorizarlo y ajustar hábitos, recuperas la visión y la tranquilidad sobre tu dinero.
+Imagina la escena: llegas a casa después de un día entero de trabajo, abres la factura de la luz y ves un importe que parece el [alquiler](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026) completo. Al mismo tiempo, la notificación del móvil avisa que la [factura de la tarjeta](/es/glossario/es-factura-de-la-tarjeta) de crédito ya superó el límite de un café al día durante un mes. El corazón se acelera, la ansiedad aparece y sientes que el dinero “desaparece” sin saber a dónde fue. Ese es el punto de partida para entender **cómo controlar tus gastos**: al registrar cada gasto, categorizarlo y ajustar hábitos, recuperas la visión y la tranquilidad sobre tu dinero.
 
 ## Por qué controlar los gastos es esencial  
 
@@ -33,14 +33,14 @@ Imagina la escena: llegas a casa después de un día entero de trabajo, abres la
 1. **Entrada** – salario, trabajos freelance o ingresos extra.  
 2. **Gastos fijos** – alquiler, facturas, transporte.  
 3. **Gastos variables** – supermercado, ocio, compras impulsivas.  
-4. **Ahorro e inversión** – lo que sobra se destina a la seguridad y al futuro.  
+4. **Ahorro e [inversión](/es/glossario/es-inversion)** – lo que sobra se destina a la seguridad y al futuro.  
 
-Cuando la etapa 3 se convierte en un “agujero negro”, el ciclo se rompe y el ahorro nunca se forma. El control de gastos devuelve el orden, permitiendo que cada euro tenga un propósito claro.
+Cuando la etapa 3 se convierte en un “agujero negro”, el ciclo se rompe y el ahorro nunca se forma. El [control de gastos](/es/glossario/es-control-de-gastos) devuelve el orden, permitiendo que cada euro tenga un propósito claro.
 
 ### Beneficios tangibles  
 - **Tranquilidad mental**: saber exactamente dónde está el dinero evita sustos al abrir la cuenta.  
 - **Mayor poder de compra**: al eliminar desperdicios, ganas margen para proyectos más grandes, como un viaje o la compra de un bien duradero.  
-- **Facilidad para invertir**: con los gastos bajo control, resulta sencillo dirigir recursos a bonos del gobierno, acciones o **certificados de depósito**, según tu perfil.  
+- **Facilidad para invertir**: con los gastos bajo control, resulta sencillo dirigir recursos a bonos del gobierno, [acciones](/es/glossario/es-acciones) o **[certificados de depósito](/es/posts/es-ahorro-vs-certificados-de-deposito-que-vale-mas-la-pena-en)**, según tu perfil.  
 
 ## Estrategias prácticas para poner el control en acción  
 
@@ -65,11 +65,11 @@ Dedica 10 minutos, dos veces por semana, para abrir el informe de FinMoovi, anal
 Si recibes en diferentes monedas (por ejemplo, freelance pagado en dólares y salario en euros), activa la funcionalidad multimoneda de FinMoovi. Convierte automáticamente los valores a una base única, evitando confusiones y permitiendo comparaciones precisas.
 
 ### 7. Automatiza recordatorios de pago  
-Olvidar facturas genera intereses y multas que erosionan tu presupuesto. Configura recordatorios de saldo en la app: te avisa cuando el vencimiento está próximo y muestra el impacto en tu flujo de caja, ayudándote a priorizar pagos.
+Olvidar facturas genera intereses y multas que erosionan tu presupuesto. Configura recordatorios de saldo en la app: te avisa cuando el vencimiento está próximo y muestra el impacto en tu [flujo de caja](/es/glossario/es-flujo-de-caja), ayudándote a priorizar pagos.
 
 ## Herramientas externas que complementan el control  
 
-- **Investopedia – Budgeting Basics**: ofrece conceptos sólidos sobre planificación financiera que puedes adaptar a tu día a día.  
+- **Investopedia – Budgeting Basics**: ofrece conceptos sólidos sobre [planificación financiera](/es/glossario/es-planificacion-financiera) que puedes adaptar a tu día a día.  
 - **OECD – Consumer Spending Trends**: brinda datos globales sobre patrones de consumo, útiles para entender si tus gastos están por encima o por debajo de la media internacional.  
 
 ## 30 días para transformar tu hábito de gasto  
@@ -109,3 +109,4 @@ Aproximadamente 10 minutos, dos veces por semana, bastan para revisar informes, 
 
 ### ¿El control de gastos ayuda a invertir más?  
 Claro. Cuando los gastos son visibles y controlados, el dinero que antes “desaparecía” puede dirigirse a fondos de emergencia y a inversiones a largo plazo.
+<!-- SCHEMA_AUTO:{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cómo iniciar el control de gastos sin complicaciones?","acceptedAnswer":{"@type":"Answer","text":"Comienza registrando todo en FinMoovi usando la captura por foto o voz. Luego, categoriza los gastos en tres grupos principales (necesidades, deseos e inversiones) y ajusta lo que esté fuera de equilibrio."}},{"@type":"Question","name":"¿Es posible controlar los gastos cuando se tiene ingreso en varias monedas?","acceptedAnswer":{"@type":"Answer","text":"Sí. Activa la función multimoneda de FinMoovi; convierte automáticamente los valores a una moneda base, permitiendo comparar y planificar sin confusión."}},{"@type":"Question","name":"¿Cuánto tiempo debo dedicar semanalmente al control de gastos?","acceptedAnswer":{"@type":"Answer","text":"Aproximadamente 10 minutos, dos veces por semana, bastan para revisar informes, analizar categorías y hacer los ajustes necesarios."}},{"@type":"Question","name":"¿El control de gastos ayuda a invertir más?","acceptedAnswer":{"@type":"Answer","text":"Claro. Cuando los gastos son visibles y controlados, el dinero que antes “desaparecía” puede dirigirse a fondos de emergencia y a inversiones a largo plazo."}}]} -->

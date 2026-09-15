@@ -20,7 +20,7 @@ seo:
 
 ## The everyday pain of installment purchases
 
-Ever bought a new sofa, a laptop, or a vacation package and felt that “one‑time” price was actually a series of hidden monthly bills? You look at your bank statement, see a big debit, and then, weeks later, another one appears, and another. Before you know it, the money you thought was free for groceries or a night out is already earmarked for payments you forgot you had. That surprise hit to your cash flow is the classic pain of installment buying.
+Ever bought a new sofa, a laptop, or a vacation package and felt that “one‑time” price was actually a series of hidden monthly bills? You look at your bank statement, see a big debit, and then, weeks later, another one appears, and another. Before you know it, the money you thought was free for groceries or a night out is already earmarked for payments you forgot you had. That surprise hit to your [cash flow](/en/glossario/en-cash-flow) is the classic pain of installment buying.
 
 ![The everyday pain of installment purchases](/images/glossario/parcelamento-inline-1.webp)
 
@@ -46,7 +46,7 @@ Because each installment is a promise to pay, it should sit alongside your regul
 
 ## Using FinMoovi to keep installments under control
 
-Imagine a personal finance app that not only tracks your regular bills but also knows exactly when each installment is due—without you having to type anything. FinMoovi does that through its **smart capture** feature: you snap a photo of a receipt or speak the details, and the app instantly categorizes the expense, identifies any installment plan, and slots the future payments into the correct months. 
+Imagine a [personal finance](/en/posts/en-30-day-rule-for-purchases) app that not only tracks your regular bills but also knows exactly when each installment is due—without you having to type anything. FinMoovi does that through its **smart capture** feature: you snap a photo of a receipt or speak the details, and the app instantly categorizes the expense, identifies any installment plan, and slots the future payments into the correct months. 
 
 Because FinMoovi works in multiple currencies, you can buy a gadget priced in euros while living on a salary paid in dollars, and the app will still spread the installments across the right months in your cash‑flow calendar. It even says, in plain language, that it “distributes the installments over the appropriate months in your cash flow, so none of them catch you off guard.” This automatic scheduling removes the guesswork and prevents surprise deductions.
 
@@ -54,8 +54,8 @@ Beyond smart capture, FinMoovi offers:
 
 - **Multi‑currency support** so exchange‑rate fluctuations don’t throw off your budgeting
 - Real‑time cash‑flow reports that show every incoming and outgoing amount, including future installments
-- Monthly planning tools where you set savings goals and see how each installment fits
-- Credit‑card integration that pulls bill dates and balances, merging them with installment schedules
+- Monthly [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) tools where you set [savings](/en/glossario/en-savings) goals and see how each installment fits
+- [Credit](/en/glossario/en-credit)‑card integration that pulls bill dates and balances, merging them with installment schedules
 - Shopping mode with a list feature that tallies the total cost as you add items, instantly showing any new installment you’d create
 - Reminders and balance alerts that ping you before a payment is due
 - Offline access via a progressive web app (PWA) that syncs when you’re back online
@@ -68,7 +68,7 @@ All of these pieces work together to give you a clear picture of where your mone
 
 **Practical tip:** Use FinMoovi’s cash‑flow view to line up installment dates with your payday. If a payment falls right after a low‑income week, consider shifting the due date (many merchants allow a few days’ flexibility) or setting aside a small buffer in the app’s “reserve” category.
 
-**Practical tip:** Treat every installment like a mini‑loan: assign it a “interest” cost in your budgeting sheet, even if the merchant says “0 %.” This mental accounting reveals the true cost of spreading payments over time and discourages impulse buys.
+**Practical tip:** Treat every installment like a mini‑loan: assign it a “[interest](/en/glossario/en-interest)” cost in your budgeting sheet, even if the merchant says “0 %.” This mental accounting reveals the true cost of spreading payments over time and discourages impulse buys.
 
 Additional habits that reinforce these tips:
 

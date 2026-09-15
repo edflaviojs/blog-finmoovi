@@ -20,7 +20,7 @@ seo:
 
 ## ¿Te suena el dolor de una cuota que se dispara sin aviso?
 
-Imagina que acabas de pagar el alquiler, la luz y el súper, y al revisar tu estado de cuenta ves que la cuota de tu préstamo subió tanto que ya no alcanza para comprar el café de la mañana. Ese salto inesperado suele ser señal de **intereses abusivos**, esos cargos que superan lo que debería costar el dinero que pediste prestado. No es solo una molestia; es un agujero que se abre en tu presupuesto y que, si no lo controlas, puede arrastrarte a una espiral de deudas.
+Imagina que acabas de pagar el [alquiler](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026), la luz y el súper, y al revisar tu estado de cuenta ves que la cuota de tu [préstamo](/es/glossario/es-prestamo) subió tanto que ya no alcanza para comprar el café de la mañana. Ese salto inesperado suele ser señal de **intereses abusivos**, esos cargos que superan lo que debería costar el dinero que pediste prestado. No es solo una molestia; es un agujero que se abre en tu presupuesto y que, si no lo controlas, puede arrastrarte a una espiral de deudas.
 
 ![¿Te suena el dolor de una cuota que se dispara sin aviso?](/images/glossario/juros-abusivos-inline-1.webp)
 
@@ -48,7 +48,7 @@ Detectar estos intereses antes de que te atrapen es cuestión de prestar atenci�
 
 ## El impacto real en tu flujo de caja
 
-Cuando los intereses son abusivos, el dinero que deberías destinar a tus metas (vacaciones, ahorro para emergencias, inversión) se desvía a pagar más de lo necesario. Un ejemplo típico: si tu salario cubre el alquiler, la comida y el transporte, y de repente una parte importante se va en intereses, tendrás que recortar en otras áreas o pedir más crédito, lo que empeora la situación.
+Cuando los intereses son abusivos, el dinero que deberías destinar a tus metas ([vacaciones](/es/posts/es-5-consejos-para-reorganizar-tus-finanzas-en-vacaciones), ahorro para emergencias, [inversión](/es/glossario/es-inversion)) se desvía a pagar más de lo necesario. Un ejemplo típico: si tu salario cubre el alquiler, la comida y el transporte, y de repente una parte importante se va en intereses, tendrás que recortar en otras áreas o pedir más crédito, lo que empeora la situación.
 
 ## Cómo usar la tecnología para combatirlos
 
@@ -56,10 +56,10 @@ Aquí es donde una herramienta como **FinMoovi** se vuelve tu mejor aliada. No s
 
 - **Captura inteligente:** toma una foto del recibo o graba la voz al leer el contrato; FinMoovi extrae los datos y los categoriza automáticamente, sin que tengas que escribir nada.
 - **Multimoneda:** si manejas diferentes monedas (por ejemplo, dólares para viajes y euros para compras online), la app convierte todo a una referencia única, evitando sorpresas por tipos de cambio.
-- **Flujo de caja e informes:** visualiza en tiempo real cuánto dinero entra y sale, con gráficos que resaltan los gastos que generan intereses.
+- **[Flujo de caja](/es/glossario/es-flujo-de-caja) e informes:** visualiza en tiempo real cuánto dinero entra y sale, con gráficos que resaltan los gastos que generan intereses.
 - **Planificación mensual y metas:** fija objetivos (como “no pagar más del 30 % de mi ingreso en deudas”) y la app te avisa cuando te acercas al límite.
 - **Tarjetas de crédito y facturas:** importa tus movimientos y la app detecta cargos recurrentes con tasas altas, señalándote alternativas más baratas.
-- **Modo compras:** crea una lista de lo que necesitas y ve el total en tiempo real; si un artículo implica financiamiento, la app muestra el costo total con intereses.
+- **Modo compras:** crea una lista de lo que necesitas y ve el total en tiempo real; si un artículo implica [financiamiento](/es/glossario/es-financiamiento), la app muestra el costo total con intereses.
 - **Recordatorios y alertas de saldo:** recibe notificaciones cuando tu saldo está bajo o cuando una cuota está próxima, evitando cargos por mora.
 - **Offline / PWA / sincronización:** aunque no tengas internet, puedes seguir registrando gastos; al volver a conectarte, todo se actualiza automáticamente.
 

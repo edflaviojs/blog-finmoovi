@@ -28,7 +28,7 @@ Você já percebeu que, ao abrir a conta no seu banco, aparece um título chamad
 
 ## Como funciona a LCA na prática  
 
-Quando você adquire uma LCA, o banco utiliza o valor captado para conceder crédito a produtores rurais. Em troca, ele paga a você uma remuneração que pode ser composta por taxa fixa, taxa pós‑fixada (atrelada a um índice como o CDI) ou ainda uma combinação das duas. A principal vantagem é que a LCA **é isenta de imposto de renda** para pessoas físicas, o que significa que o rendimento chega integralmente ao seu bolso. Além disso, a aplicação tem prazo determinado – geralmente de 6 a 36 meses – e, ao final desse período, o principal e os juros são devolvidos.
+Quando você adquire uma LCA, o banco utiliza o valor captado para conceder crédito a produtores rurais. Em troca, ele paga a você uma remuneração que pode ser composta por taxa fixa, taxa pós‑fixada (atrelada a um índice como o CDI) ou ainda uma combinação das duas. A principal vantagem é que a LCA **é isenta de [imposto de renda](/glossario/imposto-de-renda)** para pessoas físicas, o que significa que o rendimento chega integralmente ao seu bolso. Além disso, a aplicação tem prazo determinado – geralmente de 6 a 36 meses – e, ao final desse período, o principal e os juros são devolvidos.
 
 - **Prazo:** tempo que o dinheiro fica “preso” até o vencimento (ex.: 12 meses).  
 - **Rentabilidade:** pode ser fixa (ex.: 7% ao ano) ou atrelada a um índice (ex.: CDI + 2%).  
@@ -36,14 +36,14 @@ Quando você adquire uma LCA, o banco utiliza o valor captado para conceder cré
 
 ## Vantagens e cuidados ao investir em LCA  
 
-A isenção de imposto de renda costuma ser o ponto de destaque, mas há outros benefícios que tornam a LCA atraente:
+A isenção de imposto de renda costuma ser o ponto de destaque, mas há outros [benefícios](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) que tornam a LCA atraente:
 
 ![Vantagens e cuidados ao investir em LCA  ](/images/glossario/lca-inline-3.webp)
 
 
 
 - **Segurança:** o título tem garantia do Fundo Garantidor de Créditos (FGC) até o limite estabelecido, como acontece com a poupança.  
-- **Diversificação:** ao incluir LCA na carteira, você reduz a exposição a ativos mais voláteis, como ações.  
+- **[Diversificação](/glossario/diversificacao):** ao incluir LCA na carteira, você reduz a exposição a ativos mais voláteis, como ações.  
 - **Liquidez programada:** embora não seja um investimento de “saque imediato”, alguns bancos permitem resgates antecipados com pequeno custo.
 
 Por outro lado, é preciso ficar atento a alguns detalhes:
@@ -64,15 +64,15 @@ Ao analisar a taxa nominal, a isenção de IR e o prazo, você consegue montar u
 
 ## Como usar o FinMoovi para acompanhar sua LCA  
 
-Imagine que você acabou de comprar uma LCA e quer ter certeza de que tudo está sob controle. O app FinMoovi torna esse acompanhamento simples e intuitivo, integrando várias funcionalidades que evitam surpresas no seu fluxo de caixa.
+Imagine que você acabou de comprar uma LCA e quer ter certeza de que tudo está sob controle. O app FinMoovi torna esse acompanhamento simples e intuitivo, integrando várias funcionalidades que evitam surpresas no seu [fluxo de caixa](/glossario/fluxo-de-caixa).
 
 - **Captura inteligente:** tire uma foto da nota de compra da LCA ou grave a voz explicando o investimento; o app reconhece automaticamente os dados (valor, prazo, taxa) e os categoriza como “Investimento – LCA”.  
 - **Multimoeda:** se você tem contas em diferentes moedas (real, dólar, euro), o FinMoovi converte os valores usando a cotação do dia, permitindo comparar rendimentos em termos reais.  
-- **Fluxo de caixa e relatórios:** a aplicação aparece no seu fluxo de caixa como entrada futura; os relatórios mensais mostram o impacto da LCA no seu patrimônio líquido.  
+- **Fluxo de caixa e relatórios:** a aplicação aparece no seu fluxo de caixa como entrada futura; os relatórios mensais mostram o impacto da LCA no seu [patrimônio líquido](/glossario/patrimonio-liquido).  
 - **Planejamento mensal / metas:** defina metas de rentabilidade (ex.: “gerar o equivalente a dois aluguéis por mês”) e veja como a LCA contribui para alcançá‑las.  
 - **Cartões de crédito / fatura:** ao pagar a compra da LCA com cartão, o app registra a despesa e avisa quando a fatura chegar, evitando juros inesperados.  
 - **Modo compras:** crie uma lista de investimentos desejados; o total em tempo real indica quanto ainda cabe no seu orçamento mensal.  
-- **Lembretes / alertas de saldo:** receba notificações quando faltar poucos dias para o vencimento ou quando o saldo da conta ficar próximo ao limite definido.  
+- **Lembretes / [alertas](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto) de saldo:** receba notificações quando faltar poucos dias para o vencimento ou quando o saldo da conta ficar próximo ao limite definido.  
 - **Offline / PWA / sincronização:** mesmo sem internet, você pode registrar a compra; ao reconectar, tudo se sincroniza automaticamente.
 
 ## Dicas práticas  

@@ -38,7 +38,7 @@ El margen de ganancia es cuánto sobra de cada euro que entra. Si una empresa fa
 |--|-------|--------|
 | Facturación | €9.000 | - |
 | Costo de la ropa | €3.600 | Bruta: 60 % |
-| Gastos (alquiler, salarios) | €3.600 | Operacional: 20 % |
+| Gastos ([alquiler](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026), salarios) | €3.600 | Operacional: 20 % |
 | Impuestos | €900 | Líquida: 10 % |
 | **Ganancia neta** | **€900** | |
 

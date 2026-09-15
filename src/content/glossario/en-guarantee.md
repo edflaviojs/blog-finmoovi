@@ -22,7 +22,7 @@ seo:
 A guarantee is a promise—usually from a seller, a bank, or a contract—that you’ll receive what was agreed, or that you’ll be compensated if something goes wrong. Think of it as a safety net: if you buy a sofa and it arrives with a broken leg, the guarantee obliges the store to fix or replace it without extra cost. In finance, guarantees appear as loan collateral, credit‑card protection, or insurance clauses that shield you from unexpected losses.
 
 ## Why guarantees matter in everyday life
-Most of us assume that money will stay where it is, but life loves surprises: a car breakdown, a sudden medical bill, or a faulty appliance. Without a guarantee, you’d have to dip into savings or take a high‑interest loan to cover the gap. Guarantees keep your cash flow stable, letting you plan the next month’s rent, groceries, or that weekend getaway without panic.
+Most of us assume that money will stay where it is, but life loves surprises: a car breakdown, a sudden medical bill, or a faulty appliance. Without a guarantee, you’d have to dip into savings or take a high‑[interest](/en/glossario/en-interest) loan to cover the gap. Guarantees keep your [cash flow](/en/glossario/en-cash-flow) stable, letting you plan the next month’s rent, groceries, or that weekend getaway without panic.
 
 ![What is a guarantee](/images/glossario/garantia-inline-1.webp)
 
@@ -53,7 +53,7 @@ When you add a guarantee, FinMoovi automatically:
 - Shows the **expiry date** and sends a reminder a week before it lapses.
 - Links the guarantee to the related expense (e.g., the sofa purchase) so you can see the protected amount at a glance.
 - Converts the value into your preferred currency, useful if you bought a laptop while traveling abroad.
-- Updates your **cash‑flow report**, indicating how much of your net worth is currently under guarantee protection.
+- Updates your **cash‑flow report**, indicating how much of your [net worth](/en/glossario/en-net-worth) is currently under guarantee protection.
 
 Because the app works offline and syncs when you’re back online, you can capture a warranty card at a hardware store without Wi‑Fi, and the data will appear on all your devices later.
 
@@ -68,8 +68,8 @@ Because the app works offline and syncs when you’re back online, you can captu
 Guarantees aren’t just paperwork; they’re a component of your overall financial health. By treating them like any other budget line, you can:
 
 - **Allocate a “safety buffer”** equal to the total guaranteed amount, so you know exactly how much is protected versus exposed.
-- **Plan for renewal**: If a guarantee expires in six months, schedule the expense in your monthly planning view, ensuring you have the cash ready.
-- **Leverage multi‑currency support**: For guarantees bought abroad (e.g., a travel insurance policy in euros), FinMoovi converts the value to your base currency, letting you compare it with local options.
+- **Plan for renewal**: If a guarantee expires in six months, schedule the expense in your monthly [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) view, ensuring you have the cash ready.
+- **[Leverage](/en/glossario/en-leverage) [multi‑currency](/en/posts/en-digital-bank-vs-major-bank-which-is-worth-it-in-2026) support**: For guarantees bought abroad (e.g., a travel insurance policy in euros), FinMoovi converts the value to your base currency, letting you compare it with local options.
 
 ## Start today
 Spend the next five minutes in FinMoovi to lock in your first guarantee:

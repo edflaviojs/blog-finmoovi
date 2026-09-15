@@ -27,14 +27,14 @@ You’ve probably stared at your bank app after a weekend of coffee, groceries, 
 
 
 - Salary arrives, then disappears into a stream of small purchases.
-- Credit‑card bills pop up, and you’re not sure which expenses they really represent.
+- [Credit](/en/glossario/en-credit)‑card bills pop up, and you’re not sure which expenses they really represent.
 - You hear about “the market” on the news, but it feels distant and irrelevant to your daily life.
 
-These frustrations keep you from planning, from feeling secure, and from making the most of every hard‑earned dollar.
+These frustrations keep you from [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips), from feeling secure, and from making the most of every hard‑earned dollar.
 
 ## What the financial market really is
 
-The financial market is simply the place where people buy, sell, and trade money‑related assets—think of it as a giant, invisible marketplace where savings, loans, stocks, bonds, and currencies meet. It’s not a mysterious wall of charts; it’s the system that lets your savings earn interest, lets companies raise money to grow, and lets you exchange one currency for another when you travel or shop online.
+The financial market is simply the place where people buy, sell, and trade money‑related assets—think of it as a giant, invisible marketplace where [savings](/en/glossario/en-savings), loans, stocks, bonds, and currencies meet. It’s not a mysterious wall of charts; it’s the system that lets your savings earn [interest](/en/glossario/en-interest), lets companies raise money to grow, and lets you exchange one currency for another when you travel or shop online.
 
 Key components you’ll encounter:
 
@@ -47,7 +47,7 @@ Understanding these pieces helps you see why a “good” interest rate on a sav
 
 ## How FinMoovi turns the market into a personal ally
 
-FinMoovi bridges the gap between the abstract world of the financial market and your pocket. Its **smart capture** feature lets you snap a photo of a receipt or speak the amount, and the app instantly categorizes the expense—no manual entry required. This single feature unlocks a cascade of benefits that keep you connected to the market without drowning in data.
+FinMoovi bridges the gap between the abstract world of the financial market and your pocket. Its **smart capture** feature lets you snap a photo of a receipt or speak the amount, and the app instantly categorizes the expense—no manual entry required. This single feature unlocks a cascade of [benefits](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026) that keep you connected to the market without drowning in data.
 
 ![How FinMoovi turns the market into a personal ally](/images/glossario/mercado-financeiro-inline-3.webp)
 
@@ -74,7 +74,7 @@ A few disciplined habits, reinforced by FinMoovi’s tools, can make the financi
 
 Additional habits to consider:
 
-- Schedule a 10‑minute “market check” each month to see how interest rates or inflation might affect your savings plan.
+- Schedule a 10‑minute “market check” each month to see how interest rates or [inflation](/en/glossario/en-inflation) might affect your savings plan.
 - Use the shopping mode list for big purchases; compare the total against your monthly goal before you commit.
 - Enable balance alerts for both your checking account and any credit‑card balances, so you’re warned before fees bite.
 

@@ -57,7 +57,7 @@ Os mecanismos que fazem a governança sair do discurso:
 
 Na [bolsa de valores](/glossario/bolsa-de-valores) brasileira as empresas se distribuem por segmentos de listagem com exigências crescentes de governança. O **Novo Mercado** é o mais rigoroso: só ações com direito a voto e tag along de 100%. Abaixo dele vêm o Nível 2, o Nível 1 e o segmento tradicional, com menos garantias para o minoritário.
 
-Isso não é garantia de lucro — empresa com boa governança também cai de preço. É garantia de **regra clara**, o que é coisa diferente.
+Isso não é [garantia](/glossario/garantia) de lucro — empresa com boa governança também cai de preço. É garantia de **regra clara**, o que é coisa diferente.
 
 ## Antes de comprar uma ação
 

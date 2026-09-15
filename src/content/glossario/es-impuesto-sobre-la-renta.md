@@ -20,7 +20,7 @@ seo:
 
 ## Qué es
 
-El impuesto sobre la renta es un cargo que los gobiernos aplican al dinero que usted gana — un salario, una pensión, el alquiler que recibe, los [intereses](/es/glossario/es-interes) o el trabajo que hace por su cuenta. Casi todos los países tienen uno, y la idea de fondo es la misma en todas partes: cuanto más gana, mayor es la parte con la que contribuye.
+El impuesto sobre la renta es un cargo que los gobiernos aplican al dinero que usted gana — un salario, una pensión, el [alquiler](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026) que recibe, los [intereses](/es/glossario/es-interes) o el trabajo que hace por su cuenta. Casi todos los países tienen uno, y la idea de fondo es la misma en todas partes: cuanto más gana, mayor es la parte con la que contribuye.
 
 Lo que cambia de un país a otro es el detalle — dónde está el mínimo exento, cuántos tramos hay, qué gastos se pueden deducir y cuándo vence la declaración. Esos números los fija la autoridad fiscal de cada país y suelen cambiar cada año, así que conviene consultar siempre las reglas vigentes donde usted vive.
 

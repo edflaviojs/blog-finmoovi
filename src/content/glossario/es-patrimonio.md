@@ -20,11 +20,11 @@ seo:
 
 ## ¿Qué es el patrimonio?
   
-El patrimonio es el conjunto de todos tus bienes (dinero en efectivo, cuentas bancarias, inversiones, propiedades) menos tus deudas (préstamos, tarjetas de crédito). En otras palabras, es la diferencia entre lo que posees y lo que debes. Si alguna vez has sentido que tus ingresos no alcanzan para cubrir los gastos, probablemente estés mirando tu patrimonio sin saberlo: un saldo negativo significa que tus deudas superan tus activos, mientras que un saldo positivo indica que tienes un colchón financiero.
+El patrimonio es el conjunto de todos tus bienes (dinero en efectivo, cuentas bancarias, inversiones, propiedades) menos tus deudas (préstamos, tarjetas de [crédito](/es/glossario/es-credito)). En otras palabras, es la diferencia entre lo que posees y lo que debes. Si alguna vez has sentido que tus ingresos no alcanzan para cubrir los gastos, probablemente estés mirando tu patrimonio sin saberlo: un saldo negativo significa que tus deudas superan tus activos, mientras que un saldo positivo indica que tienes un colchón financiero.
 
 ## Por qué el patrimonio importa en tu vida cotidiana
   
-Cuando revisas tu cuenta bancaria y ves que el saldo apenas cubre el alquiler o el precio de un café al día, es fácil pensar que el problema son los ingresos. Pero el patrimonio te muestra la foto completa: tal vez tienes una laptop que ya no usas, una suscripción que pagas sin necesidad, o una tarjeta de crédito con intereses altos que está erosionando tu capacidad de ahorro. Entender tu patrimonio te permite identificar qué activos puedes potenciar y qué deudas debes atacar primero.
+Cuando revisas tu cuenta bancaria y ves que el saldo apenas cubre el [alquiler](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026) o el precio de un café al día, es fácil pensar que el problema son los ingresos. Pero el patrimonio te muestra la foto completa: tal vez tienes una laptop que ya no usas, una suscripción que pagas sin necesidad, o una tarjeta de crédito con intereses altos que está erosionando tu capacidad de [ahorro](/es/glossario/es-ahorro). Entender tu patrimonio te permite identificar qué activos puedes potenciar y qué deudas debes atacar primero.
 
 ![¿Qué es el patrimonio?](/images/glossario/patrimonio-inline-1.webp)
 
@@ -42,9 +42,9 @@ FinMoovi es el compañero que te recuerda que el patrimonio no es solo un númer
 
 - **Captura inteligente:** Puedes tomar una foto del recibo o dictar el gasto con tu voz; la app lo reconoce y lo clasifica automáticamente.  
 - **Multimoneda:** Funciona con diferentes monedas (USD, EUR, etc.) y convierte al instante para que veas el impacto real en tu bolsillo.  
-- **Flujo de caja e informes:** Visualiza entradas y salidas en gráficos claros y genera reportes mensuales sin complicaciones.  
-- **Planificación mensual y metas:** Define cuánto quieres ahorrar para un viaje o para una emergencia y la app te muestra el progreso día a día.  
-- **Tarjetas de crédito y facturas:** Vincula tus tarjetas y recibe alertas de vencimiento, evitando intereses inesperados.  
+- **[Flujo de caja](/es/glossario/es-flujo-de-caja) e informes:** Visualiza entradas y salidas en gráficos claros y genera reportes mensuales sin complicaciones.  
+- **Planificación mensual y metas:** Define cuánto quieres [ahorrar](/es/posts/es-ahorra-en-la-farmacia-sin-sacrificios-guia-practica-2026) para un viaje o para una emergencia y la app te muestra el progreso día a día.  
+- **Tarjetas de crédito y facturas:** Vincula tus tarjetas y recibe [alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no) de vencimiento, evitando intereses inesperados.  
 - **Modo compras:** Crea listas de la compra y ve el total en tiempo real mientras vas al supermercado.  
 - **Recordatorios y alertas de saldo:** Recibe notificaciones cuando tu saldo se acerque al límite o cuando una factura esté próxima a vencer.  
 - **Offline / PWA / sincronización:** Funciona sin conexión y guarda tus datos en la nube para que siempre tengas acceso, incluso desde otro dispositivo.

@@ -33,8 +33,8 @@ En términos simples, la negociación es el proceso de decidir cómo y cuándo m
 ## Por qué la negociación te afecta a ti  
 
 - **Decisiones de gasto:** Cada compra que haces es una mini‑negociación entre lo que quieres ahora y lo que podrás pagar después.  
-- **Deudas y créditos:** Elegir pagar la tarjeta de crédito antes que el préstamo personal cambia la cantidad de intereses que pagas.  
-- **Inversiones:** Cambiar de una cuenta de ahorros a un fondo de inversión implica negociar riesgo y retorno.  
+- **Deudas y créditos:** Elegir pagar la tarjeta de crédito antes que el [préstamo](/es/glossario/es-prestamo) personal cambia la cantidad de intereses que pagas.  
+- **Inversiones:** Cambiar de una cuenta de ahorros a un [fondo de inversión](/es/glossario/es-fondo-de-inversion) implica negociar riesgo y retorno.  
 
 ![Por qué la negociación te afecta a ti  ](/images/glossario/negociacao-inline-3.webp)
 
@@ -48,9 +48,9 @@ FinMoovi actúa como ese amigo que siempre tiene la respuesta correcta cuando te
 
 - **Captura inteligente:** Con una foto del recibo o un mensaje de voz, la app reconoce el gasto y lo clasifica sin que tengas que escribir nada.  
 - **Categorización automática:** El algoritmo asigna cada gasto a categorías como “Alimentación”, “Transporte” o “Entretenimiento”, para que veas de un vistazo dónde se va tu dinero.  
-- **Multimoneda:** Puedes registrar gastos en cualquier moneda (por ejemplo, euros en vacaciones o dólares en compras online) y la app los convierte al tipo de cambio actual, manteniendo todo en una sola vista.  
-- **Flujo de caja e informes:** Visualiza ingresos y egresos en tiempo real; los gráficos te muestran si estás gastando más de lo que ingresas.  
-- **Planificación mensual y metas:** Define cuánto quieres ahorrar para un viaje o para un fondo de emergencia y la app te avisa cuando te acercas al límite.  
+- **Multimoneda:** Puedes registrar gastos en cualquier moneda (por ejemplo, euros en [vacaciones](/es/posts/es-5-consejos-para-reorganizar-tus-finanzas-en-vacaciones) o dólares en compras online) y la app los convierte al tipo de cambio actual, manteniendo todo en una sola vista.  
+- **[Flujo de caja](/es/glossario/es-flujo-de-caja) e informes:** Visualiza ingresos y egresos en tiempo real; los gráficos te muestran si estás gastando más de lo que ingresas.  
+- **Planificación mensual y metas:** Define cuánto quieres [ahorrar](/es/posts/es-ahorra-en-la-farmacia-sin-sacrificios-guia-practica-2026) para un viaje o para un [fondo de emergencia](/es/glossario/es-fondo-de-emergencia) y la app te avisa cuando te acercas al límite.  
 - **Tarjetas de crédito y facturas:** Vincula tus tarjetas y la app descarga los movimientos, mostrándote el saldo pendiente y la fecha de corte.  
 - **Modo compras:** Crea una lista de la compra; mientras vas marcando artículos, la app muestra el total acumulado en tiempo real, evitando sorpresas al llegar a la caja.  
 - **Recordatorios y alertas de saldo:** Recibe notificaciones cuando el saldo caiga bajo un umbral que tú determines.  

@@ -41,7 +41,7 @@ Para montar o seu patrimônio, basta listar tudo que você possui e tudo que dev
 - **Bens e direitos**: dinheiro em conta, investimentos, imóveis, veículos, objetos de valor (como joias ou eletrônicos), direitos a receber (como salários atrasados).  
 - **Obrigações**: empréstimos, financiamentos, saldo de cartão de crédito, contas a pagar, impostos pendentes.  
 
-Depois, subtraia o total das obrigações do total dos bens. O resultado pode ser positivo (patrimônio líquido) ou negativo (déficit). Lembre‑se de atualizar esses números periodicamente, pois valores como o preço de um imóvel ou o saldo de um investimento mudam com o tempo.
+Depois, subtraia o total das obrigações do total dos bens. O resultado pode ser positivo ([patrimônio líquido](/glossario/patrimonio-liquido)) ou negativo (déficit). Lembre‑se de atualizar esses números periodicamente, pois valores como o preço de um imóvel ou o saldo de um [investimento](/glossario/investimento) mudam com o tempo.
 
 ## Erros comuns ao medir patrimônio  
 
@@ -55,7 +55,7 @@ Aqui entra o FinMoovi, o app que funciona como um assistente financeiro pessoal.
 
 - **Captura inteligente**: tire uma foto da nota fiscal ou grave a voz ao pagar uma conta; o app reconhece o valor e categoriza automaticamente (ex.: “alimentação”, “transporte”).  
 - **Multimoeda**: registre despesas e receitas em diferentes moedas (BRL, USD, EUR) e o FinMoovi converte tudo em tempo real, mantendo o cálculo do patrimônio sempre preciso.  
-- **Fluxo de caixa e relatórios**: visualize entradas e saídas em gráficos claros, identifique onde está gastando mais e veja a evolução do seu patrimônio ao longo dos meses.  
+- **[Fluxo de caixa](/glossario/fluxo-de-caixa) e relatórios**: visualize entradas e saídas em gráficos claros, identifique onde está gastando mais e veja a evolução do seu patrimônio ao longo dos meses.  
 - **Planejamento mensal e metas**: defina metas como “economizar o equivalente a dois aluguéis” e acompanhe o progresso com alertas de saldo.  
 - **Cartões de crédito e fatura**: sincronize suas faturas; o app mostra o gasto real versus o limite, evitando surpresas na data de pagamento.  
 - **Modo compras**: crie listas de supermercado; o FinMoovi soma os itens em tempo real, avisando quando o total ultrapassa o orçamento definido.  
@@ -66,12 +66,12 @@ Aqui entra o FinMoovi, o app que funciona como um assistente financeiro pessoal.
 
 **Dica prática:** registre todas as despesas, mesmo as pequenas, usando a captura inteligente do FinMoovi. Uma foto da nota de um café diário pode revelar quanto você gasta em um mês e onde cortar.  
 
-**Dica prática:** estabeleça uma meta de reserva de emergência equivalente a “três aluguéis” e crie um alerta mensal no app para garantir que está contribuindo regularmente.  
+**Dica prática:** estabeleça uma meta de [reserva de emergência](/ferramentas/calculadora-reserva) equivalente a “três aluguéis” e crie um alerta mensal no app para garantir que está contribuindo regularmente.  
 
-**Dica prática:** revise suas obrigações a cada trimestre e renegocie dívidas com juros altos; o FinMoovi permite comparar o custo total de cada empréstimo em diferentes moedas, facilitando a escolha da melhor opção.  
+**Dica prática:** revise suas obrigações a cada trimestre e renegocie dívidas com juros altos; o FinMoovi permite comparar o custo total de cada [empréstimo](/glossario/emprestimo) em diferentes moedas, facilitando a escolha da melhor opção.  
 
 Além disso, mantenha a disciplina de atualizar seu patrimônio pelo menos uma vez por mês. Use a visualização de relatórios para identificar padrões de consumo e ajustar seu planejamento. Se perceber que o gasto com “lazer” está consumindo mais do que o “preço de um café por dia”, reduza esse item ou encontre alternativas mais baratas.
 
 ## Comece hoje  
 
-Reserve cinco minutos agora: abra o FinMoovi, tire uma foto da última nota fiscal que você tem na mão e deixe o app categorizar automaticamente. Em seguida, vá até a seção “Patrimônio” e adicione suas principais dívidas (por exemplo, o saldo do cartão de crédito). Por fim, defina uma meta simples, como “economizar o equivalente a um aluguel” nos próximos 30 dias. Esse pequeno passo já coloca você no caminho de entender e controlar seu patrimônio de forma prática e sem complicação.
+Reserve cinco minutos agora: abra o FinMoovi, tire uma foto da última nota fiscal que você tem na mão e deixe o app categorizar automaticamente. Em seguida, vá até a seção “Patrimônio” e adicione suas principais dívidas (por exemplo, o saldo do cartão de crédito). Por fim, defina uma meta simples, como “economizar o equivalente a um [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026)” nos próximos 30 dias. Esse pequeno passo já coloca você no caminho de entender e controlar seu patrimônio de forma prática e sem complicação.

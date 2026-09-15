@@ -20,7 +20,7 @@ seo:
 
 ## The moment you realize your paycheck is missing a chunk
 
-You just got the salary slip, but the net amount is lower than you expected. The thought that “where did that extra money go?” instantly triggers anxiety, especially when you have rent, groceries, and a small emergency fund to think about. That missing piece is often the FGTS – a mandatory deposit made by your employer into a government‑backed account that you can’t touch every month, but that becomes a safety net when you change jobs or need a lump‑sum in certain situations.
+You just got the salary slip, but the net amount is lower than you expected. The thought that “where did that extra money go?” instantly triggers anxiety, especially when you have rent, groceries, and a small [emergency fund](/en/glossario/en-emergency-fund) to think about. That missing piece is often the FGTS – a mandatory deposit made by your employer into a government‑backed account that you can’t touch every month, but that becomes a safety net when you change jobs or need a lump‑sum in certain situations.
 
 ![The moment you realize your paycheck is missing a chunk](/images/glossario/fgts-inline-1.webp)
 
@@ -28,7 +28,7 @@ You just got the salary slip, but the net amount is lower than you expected. The
 
 ## What FGTS actually is
 
-FGTS stands for the Severance Fund, a compulsory savings mechanism that aims to protect workers in case of dismissal without cause, serious illness, or the purchase of a home. Each month, the employer deposits an amount equivalent to a percentage of your salary into a separate account that earns a modest interest rate. The money stays there, growing slowly, and you can only withdraw under specific legal conditions.
+FGTS stands for the Severance Fund, a compulsory [savings](/en/glossario/en-savings) mechanism that aims to protect workers in case of dismissal without cause, serious illness, or the purchase of a home. Each month, the employer deposits an amount equivalent to a percentage of your salary into a separate account that earns a modest [interest](/en/glossario/en-interest) rate. The money stays there, growing slowly, and you can only withdraw under specific legal conditions.
 
 - **Who contributes?** Your employer, automatically.
 - **How much?** Typically a fixed percentage of your gross salary.
@@ -45,7 +45,7 @@ Many people treat FGTS as a “set‑and‑forget” item, which leads to avoida
 
 
 - **Ignoring the balance:** Not checking the account regularly means you miss errors or missed deposits.
-- **Confusing it with a salary component:** Assuming the amount will appear in your monthly cash flow can cause budgeting mishaps.
+- **Confusing it with a salary component:** Assuming the amount will appear in your monthly [cash flow](/en/glossario/en-cash-flow) can cause [budgeting](/en/posts/en-financial-peace-of-mind-with-a-2026-app-for-everyday-life) mishaps.
 - **Delaying withdrawals when allowed:** Waiting too long after a qualifying event can reduce the buying power because the interest compounds slowly.
 
 These oversights are easy to avoid if you have a simple way to monitor the account without digging through paperwork.
@@ -58,7 +58,7 @@ When you snap a picture of your latest FGTS statement, FinMoovi:
 
 1. Recognizes the amount, date, and employer name using optical character recognition (OCR).
 2. Tags the entry as “FGTS contribution” and places it in a separate savings bucket.
-3. Updates your monthly reports automatically, showing how the fund is growing relative to your salary.
+3. Updates your monthly [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end) automatically, showing how the fund is growing relative to your salary.
 
 Because the capture is automatic, you always know whether your employer made the correct deposit, and you get instant alerts if something is missing. This real‑time visibility makes it easier to plan withdrawals when the legal windows open.
 

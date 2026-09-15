@@ -28,7 +28,7 @@ You’ve probably felt that knot in the stomach when you glance at your bank sta
 
 ## What is a monthly lifetime income?
 
-A monthly lifetime income is a stream of money that you receive every month for the rest of your life, regardless of market fluctuations or how long you actually live. Think of it as turning a pile of savings into a reliable paycheck that never stops. The key is that the amount stays roughly the same month after month, covering your essential expenses and leaving a little room for leisure.
+A monthly lifetime income is a stream of money that you receive every month for the rest of your life, regardless of market fluctuations or how long you actually live. Think of it as turning a pile of [savings](/en/glossario/en-savings) into a reliable paycheck that never stops. The key is that the amount stays roughly the same month after month, covering your essential expenses and leaving a little room for leisure.
 
 ## How the math works
 
@@ -39,7 +39,7 @@ To generate a monthly lifetime income you need three ingredients:
 
 
 - **Capital** – the total amount you have saved or invested.  
-- **Yield** – the percentage return the investment produces each year ([interest](/en/glossario/en-interest), [dividends](/en/glossario/en-dividends), or rental income).  
+- **Yield** – the percentage return the [investment](/en/glossario/en-investment) produces each year ([interest](/en/glossario/en-interest), [dividends](/en/glossario/en-dividends), or rental income).  
 - **Longevity factor** – an adjustment that ensures the money lasts as long as you do, often based on life‑expectancy tables.
 
 The basic formula looks like this:  

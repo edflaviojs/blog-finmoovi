@@ -13,7 +13,7 @@ readingTime: 2
 
 ## ¿Qué es Volatilidad?
 
-La volatilidad es la intensidad con la que el precio de una inversión sube y baja. Un activo volátil puede subir un 5 % en un día y caer un 3 % al día siguiente. Cuanto mayor es la volatilidad, mayor el riesgo — pero también mayor el potencial de ganancia.
+La volatilidad es la intensidad con la que el precio de una [inversión](/es/glossario/es-inversion) sube y baja. Un activo volátil puede subir un 5 % en un día y caer un 3 % al día siguiente. Cuanto mayor es la volatilidad, mayor el riesgo — pero también mayor el potencial de ganancia.
 
 ## Ejemplos de volatilidad
 

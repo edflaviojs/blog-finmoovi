@@ -31,7 +31,7 @@ You’ve probably walked out of the supermarket with a cart full of items, only 
 - Missing out on bulk discounts because you didn’t know you needed a larger quantity
 - Forgetting to use a loyalty card, losing a potential rebate
 
-These hidden costs pile up month after month, making it harder to meet larger goals like saving for a vacation or paying off a loan. The simple act of writing down what you truly need can be the first line of defense against those leaks.
+These hidden costs pile up month after month, making it harder to meet larger goals like saving for a vacation or paying off a [loan](/en/glossario/en-loan). The simple act of writing down what you truly need can be the first line of defense against those leaks.
 
 ## What a shopping list actually is
 
@@ -49,8 +49,8 @@ FinMoovi also offers a **smart capture** feature: snap a photo of a receipt or d
 
 Other handy tools include:
 
-- Monthly planning and goal tracking that lets you allocate a specific amount for groceries each month
-- Integration with credit‑card statements, so purchases made with a card appear automatically in the app
+- Monthly [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) and goal tracking that lets you allocate a specific amount for groceries each month
+- Integration with [credit](/en/glossario/en-credit)‑card statements, so purchases made with a card appear automatically in the app
 - Reminders and balance alerts that warn you when you’re approaching your grocery budget limit
 - Offline mode and progressive web app (PWA) support, ensuring your list works even without internet and syncs later
 
@@ -68,8 +68,8 @@ By applying these tips, you’ll notice fewer stray purchases and a clearer pict
 
 ## Using the app for long‑term financial health
 
-Beyond the immediate grocery trip, FinMoovi helps you build a habit of tracking every expense, turning short‑term discipline into long‑term wealth. The app’s cash‑flow reports aggregate data from shopping trips, bills, and other purchases, showing you the proportion of income that goes to necessities versus discretionary spending. With multi‑currency support, you can compare the cost of buying a locally produced loaf of bread versus an imported specialty item, making more informed choices about where to allocate your money.
+Beyond the immediate grocery trip, FinMoovi helps you build a habit of tracking every expense, turning short‑term discipline into long‑term wealth. The app’s cash‑flow reports aggregate data from shopping trips, bills, and other purchases, showing you the proportion of income that goes to necessities versus discretionary spending. With [multi‑currency](/en/posts/en-digital-bank-vs-major-bank-which-is-worth-it-in-2026) support, you can compare the cost of buying a locally produced loaf of bread versus an imported specialty item, making more informed choices about where to allocate your money.
 
-Monthly planning tools let you set a grocery budget that aligns with larger goals, such as saving for a down‑payment or paying off debt. When you consistently stay within that budget, the app highlights the surplus that can be redirected to your savings jar. Credit‑card integration ensures that any points or rewards earned from grocery purchases are automatically captured, adding another layer of value without extra effort.
+Monthly planning tools let you set a grocery budget that aligns with larger goals, such as saving for a down‑payment or paying off [debt](/en/glossario/en-debt). When you consistently stay within that budget, the app highlights the surplus that can be redirected to your [savings](/en/glossario/en-savings) jar. Credit‑card integration ensures that any points or rewards earned from grocery purchases are automatically captured, adding another layer of value without extra effort.
 
 Reminders and balance alerts act as a safety net, nudging you when you’re close to overspending. Even if you lose internet connectivity while shopping, the offline mode keeps your list functional, and once you’re back online, everything syncs seamlessly, preserving the

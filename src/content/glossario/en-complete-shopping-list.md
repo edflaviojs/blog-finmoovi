@@ -34,7 +34,7 @@ You’ve probably stood in the supermarket aisle, juggling a half‑written note
 
 ## What a complete shopping list really is
 
-A complete shopping list is more than a scribble of a few items. It’s a structured, up‑to‑date inventory of everything you need for the week or month, categorized by type, priority, and budget. When it’s truly complete, you can walk into any store, glance at your phone, and know exactly what to pick, how much it should cost, and whether it fits your financial plan.
+A complete [shopping list](/en/glossario/en-shopping-list) is more than a scribble of a few items. It’s a structured, up‑to‑date inventory of everything you need for the week or month, categorized by type, priority, and budget. When it’s truly complete, you can walk into any store, glance at your phone, and know exactly what to pick, how much it should cost, and whether it fits your financial plan.
 
 - **Categories** (e.g., fresh produce, pantry, cleaning)
 - **Quantities** (how many units or weight you need)
@@ -53,22 +53,22 @@ When your list is incomplete, you’re forced to make on‑the‑spot decisions.
 - Impulse purchases that add up to the price of a daily coffee each
 - Duplicate buys that waste money and fridge space
 - Missing items that require a second trip, costing you time and transport
-- Untracked spending that throws off your monthly cash flow
+- Untracked spending that throws off your monthly [cash flow](/en/glossario/en-cash-flow)
 - Forgetting to use loyalty cards or coupons because you’re distracted
 
 ## FinMoovi’s smart capture turns a list into a financial ally
 
-FinMoovi solves the chaos with its **smart capture** feature. Simply snap a photo of a receipt or speak the items you need, and the app instantly extracts each product, assigns it to the right category, and updates your list. The automatic categorization means you never have to manually type “milk” under “dairy” again. Everything is stored in one place, ready for the next shopping trip.
+FinMoovi solves the chaos with its **smart capture** feature. Simply snap a photo of a receipt or speak the items you need, and the app instantly extracts each product, assigns it to the right category, and updates your list. The [automatic categorization](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end) means you never have to manually type “milk” under “dairy” again. Everything is stored in one place, ready for the next shopping trip.
 
 - Photo or voice input eliminates manual entry
 - AI‑driven categorization groups items correctly every time
 - Real‑time sync keeps your list identical on phone, tablet, or desktop
-- Historical receipts become a searchable archive for future budgeting
+- Historical receipts become a searchable archive for future [budgeting](/en/posts/en-financial-peace-of-mind-with-a-2026-app-for-everyday-life)
 - Alerts you when an item you often buy spikes in price
 
 ## Seeing the whole picture: multi‑currency cash flow and reports
 
-FinMoovi doesn’t stop at the receipt. It tracks spending in any currency—whether you’re buying groceries locally, ordering online from abroad, or using a travel card. The cash‑flow dashboard shows you how much you’ve spent this week, month, or year, and compares it to your income and savings goals. Reports break down expenses by category, letting you spot where you’re overspending.
+FinMoovi doesn’t stop at the receipt. It tracks spending in any currency—whether you’re buying groceries locally, ordering online from abroad, or using a travel card. The cash‑flow dashboard shows you how much you’ve spent this week, month, or year, and compares it to your income and [savings](/en/glossario/en-savings) goals. Reports break down expenses by category, letting you spot where you’re overspending.
 
 - Supports all major currencies without manual conversion
 - Visual cash‑flow charts highlight trends at a glance
@@ -78,7 +78,7 @@ FinMoovi doesn’t stop at the receipt. It tracks spending in any currency—whe
 
 ## Planning ahead: monthly goals and credit‑card integration
 
-When you link your credit cards, FinMoovi pulls the pending and posted transactions into the same view as your shopping list. This integration lets you see the true impact of each grocery run on your monthly budget. You can set a goal like “spend no more than the price of a weekly coffee on snacks” and the app will warn you when you’re close to the limit.
+When you link your [credit](/en/glossario/en-credit) cards, FinMoovi pulls the pending and posted transactions into the same view as your shopping list. This integration lets you see the true impact of each grocery run on your monthly budget. You can set a goal like “spend no more than the price of a weekly coffee on snacks” and the app will warn you when you’re close to the limit.
 
 - Credit‑card feed shows real‑time balance after each purchase
 - Goal‑setting tools let you define caps for categories or overall spend

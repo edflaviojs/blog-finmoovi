@@ -19,7 +19,7 @@ seo:
 ---
 
 ## El problema que todos vivimos al ir al supermercado
-Ir al supermercado con la idea de comprar solo lo necesario y volver con el bolso lleno de dinero extra es una escena familiar. Te encuentras frente al carrito, el precio de un café al día parece razonable y, de repente, la cuenta supera el costo de un alquiler. Ese desbordamiento ocurre porque la lista de compras, aunque escrita, no habla con tu presupuesto ni con tus metas financieras.
+Ir al supermercado con la idea de comprar solo lo necesario y volver con el bolso lleno de dinero extra es una escena familiar. Te encuentras frente al carrito, el precio de un café al día parece razonable y, de repente, la cuenta supera el costo de un [alquiler](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026). Ese desbordamiento ocurre porque la lista de compras, aunque escrita, no habla con tu presupuesto ni con tus metas financieras.
 
 ## Qué es una lista de compras y por qué suele romperse
 Una lista de compras es simplemente un registro de los productos que planeas adquirir. En teoría, debería ser tu brújula, pero en la práctica se vuelve un papel sin conexión a tus finanzas. Los motivos más comunes son:
@@ -32,13 +32,13 @@ Una lista de compras es simplemente un registro de los productos que planeas adq
 - No actualizar la lista cuando encuentras una oferta inesperada.
 - No saber cuánto gastas en cada categoría (lácteos, limpieza, ocio) y perder el control del total.
 
-Al no estar vinculada a tu flujo de caja, la lista se convierte en una excusa para gastar sin medida.
+Al no estar vinculada a tu [flujo de caja](/es/glossario/es-flujo-de-caja), la lista se convierte en una excusa para gastar sin medida.
 
 ## Cómo FinMoovi transforma la lista en tu aliada financiera
 Imagina que, al abrir la app, tomas una foto del recibo o dictas los ítems que vas a comprar. FinMoovi reconoce cada producto, lo clasifica automáticamente (alimentación, transporte, ocio) y muestra el subtotal en tiempo real. Además, la app trabaja en cualquier moneda, así que puedes comparar el gasto con el precio de un café al día sin complicaciones. Cuando el total se acerca al límite que estableciste, recibes una alerta y puedes decidir si eliminar o sustituir un artículo antes de pasar la caja.
 
 ## Funciones clave que hacen la diferencia
-FinMoovi no es solo una lista; es un centro de control financiero que incluye:
+FinMoovi no es solo una lista; es un centro de [control financiero](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no) que incluye:
 
 ![Cómo FinMoovi transforma la lista en tu aliada financiera](/images/glossario/lista-de-compras-inline-3.webp)
 
@@ -46,10 +46,10 @@ FinMoovi no es solo una lista; es un centro de control financiero que incluye:
 
 - Captura inteligente: foto del recibo o reconocimiento por voz para añadir ítems al instante.  
 - Categorización automática: cada producto se asigna a una categoría sin que tengas que hacerlo manualmente.  
-- Multimoneda: maneja BRL, USD, EUR y cualquier otra, ajustando los valores al tipo de cambio del día.  
+- Multimoneda: maneja BRL, USD, EUR y cualquier otra, ajustando los valores al tipo de [cambio](/es/glossario/es-cambio) del día.  
 - Flujo de caja e informes: visualiza ingresos y egresos en gráficos claros, detectando patrones de gasto.  
-- Planificación mensual y metas: define cuánto quieres ahorrar cada mes y sigue tu progreso.  
-- Tarjetas de crédito y facturación: sincroniza tus tarjetas para que los gastos aparezcan al instante.  
+- Planificación mensual y metas: define cuánto quieres [ahorrar](/es/posts/es-ahorra-en-la-farmacia-sin-sacrificios-guia-practica-2026) cada mes y sigue tu progreso.  
+- Tarjetas de [crédito](/es/glossario/es-credito) y facturación: sincroniza tus tarjetas para que los gastos aparezcan al instante.  
 - Modo compras: lista + total en tiempo real, con alertas que evitan que superes el presupuesto.  
 - Recordatorios y alertas de saldo: notificaciones cuando el saldo de tu cuenta está bajo.  
 - Offline / PWA / sincronización: funciona sin conexión y guarda los datos en la nube para acceder desde cualquier dispositivo.

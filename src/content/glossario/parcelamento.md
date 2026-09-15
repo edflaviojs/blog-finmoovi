@@ -28,11 +28,11 @@ Você já entrou numa loja, viu aquele eletrodoméstico que faz a diferença nas
 
 ## O que realmente significa parcelar uma compra
 
-Parcelar é dividir o valor total de uma despesa em partes menores, pagas em períodos regulares – geralmente mensais. Cada parcela inclui uma fração do valor original e, em muitos casos, um pequeno acréscimo chamado juros, que representa o custo de “emprestar” o dinheiro ao vendedor ou à instituição financeira. Quando você aceita o parcelamento, está basicamente assinando um compromisso de pagamento futuro, que vai aparecer no seu extrato de cartão de crédito ou na sua conta bancária a cada ciclo.
+Parcelar é dividir o valor total de uma despesa em partes menores, pagas em períodos regulares – geralmente mensais. Cada parcela inclui uma fração do valor original e, em muitos casos, um pequeno acréscimo chamado [juros](/glossario/juros), que representa o custo de “emprestar” o dinheiro ao vendedor ou à instituição financeira. Quando você aceita o parcelamento, está basicamente assinando um compromisso de pagamento futuro, que vai aparecer no seu extrato de cartão de [crédito](/glossario/credito) ou na sua conta bancária a cada ciclo.
 
 ## Como as parcelas impactam o seu fluxo de caixa
 
-O fluxo de caixa é a entrada e saída de dinheiro ao longo do tempo. Quando você adiciona parcelas, elas passam a ser despesas recorrentes que competem com outras contas fixas, como aluguel, contas de luz ou alimentação. Se não houver um controle, as parcelas podem se acumular e gerar um “efeito bola de neve”. Veja alguns pontos críticos:
+O [fluxo de caixa](/glossario/fluxo-de-caixa) é a entrada e saída de dinheiro ao longo do tempo. Quando você adiciona parcelas, elas passam a ser despesas recorrentes que competem com outras contas fixas, como aluguel, contas de luz ou alimentação. Se não houver um controle, as parcelas podem se acumular e gerar um “efeito bola de neve”. Veja alguns pontos críticos:
 
 ![Como as parcelas impactam o seu fluxo de caixa](/images/glossario/parcelamento-inline-3.webp)
 
@@ -52,7 +52,7 @@ Manter as parcelas sob controle exige planejamento simples, mas eficaz. Algumas 
 
 ## Como usar a tecnologia a seu favor
 
-Hoje, aplicativos de finanças pessoais já fazem grande parte do trabalho pesado. O FinMoovi, por exemplo, oferece recursos que transformam a gestão de parcelas em algo quase automático:
+Hoje, [aplicativos](/posts/5-alternativas-ao-mobills-em-2026) de [finanças pessoais](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar) já fazem grande parte do trabalho pesado. O FinMoovi, por exemplo, oferece recursos que transformam a gestão de parcelas em algo quase automático:
 
 - **Captura inteligente:** Tire foto da nota ou grave a voz ao pagar; o app reconhece o valor e a data, categorizando tudo sem esforço.
 - **Multimoeda:** Se você recebe ou gasta em diferentes moedas (real, dólar, euro), o app converte tudo em tempo real, mantendo o controle unificado.
@@ -67,7 +67,7 @@ Hoje, aplicativos de finanças pessoais já fazem grande parte do trabalho pesad
 
 **Dica prática:** Ao receber a primeira fatura, anote imediatamente a data de vencimento e o valor da parcela no FinMoovi; isso cria um registro que já aparece nos relatórios mensais.  
 
-**Dica prática:** Use a funcionalidade de multimoeda para converter gastos em viagens ou compras online; assim você evita surpresas ao ver o valor em sua moeda local.  
+**Dica prática:** Use a funcionalidade de multimoeda para converter gastos em viagens ou compras online; assim você evita surpresas ao ver o valor em sua [moeda](/glossario/moeda) local.  
 
 **Dica prática:** Defina um alerta de “saldo crítico” equivalente a cerca de duas vezes o valor de um café por dia; quando o saldo cair abaixo desse limite, o app sugere reduzir ou renegociar parcelas.
 

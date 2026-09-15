@@ -25,7 +25,7 @@ seo:
   keywords: ["budgeting","expense tracking","personal finance","money management","savings","FinMoovi","budgeting app"]
 ---
 
-Imagine this: you get home after a full day of work, open the electricity bill and see a charge that looks like an entire month’s rent. At the same moment, a phone notification tells you that your credit‑card bill has already exceeded the cost of a daily coffee for a whole month. Your heart races, anxiety spikes, and you feel the money “vanish” without knowing where it went.  
+Imagine this: you get home after a full day of work, open the electricity bill and see a charge that looks like an entire month’s rent. At the same moment, a phone notification tells you that your [credit](/en/glossario/en-credit)‑card bill has already exceeded the cost of a daily coffee for a whole month. Your heart races, anxiety spikes, and you feel the money “vanish” without knowing where it went.  
 
 That’s the starting point for learning **how to control your spending**: by recording every expense, categorizing it, and tweaking habits, you regain clarity and peace of mind about your money.
 
@@ -35,7 +35,7 @@ That’s the starting point for learning **how to control your spending**: by re
 1. **Income** – salary, freelance work, or side‑hustles.  
 2. **Fixed expenses** – rent, utilities, transportation.  
 3. **Variable expenses** – groceries, entertainment, impulse buys.  
-4. **Savings & investments** – what’s left goes to an emergency fund or long‑term goals.
+4. **[Savings](/en/glossario/en-savings) & investments** – what’s left goes to an [emergency fund](/en/glossario/en-emergency-fund) or long‑term goals.
 
 When step 3 turns into a “black hole,” the cycle breaks and the savings never materialize. Keeping expenses in check restores order, giving every dollar a clear purpose.
 
@@ -64,14 +64,14 @@ Reserve the first **$100** (or roughly a minimum‑wage amount) of the month for
 Set aside 10 minutes, twice a week, to open FinMoovi’s report, analyze the categories that grew the most, and make tweaks. For example, if delivery orders are rising, plan to cook at home twice a week. Small changes add up to big results.
 
 ### 6. Use multi‑currency to your advantage  
-If you earn in different currencies (e.g., freelance paid in dollars and a salary in euros), enable FinMoovi’s **multi‑currency** feature. It automatically converts everything to a single base currency, avoiding confusion and allowing precise comparisons.
+If you earn in different currencies (e.g., freelance paid in dollars and a salary in euros), enable FinMoovi’s **[multi‑currency](/en/posts/en-digital-bank-vs-major-bank-which-is-worth-it-in-2026)** feature. It automatically converts everything to a single base currency, avoiding confusion and allowing precise comparisons.
 
 ### 7. Automate payment reminders  
-Forgotten bills bring interest and fees that eat into your budget. Set up balance reminders in the app: it alerts you when a due date is near and shows the impact on your cash flow, helping you prioritize payments.
+Forgotten bills bring [interest](/en/glossario/en-interest) and fees that eat into your budget. Set up balance reminders in the app: it alerts you when a due date is near and shows the impact on your [cash flow](/en/glossario/en-cash-flow), helping you prioritize payments.
 
 ## External tools that complement your control
 
-- **Investopedia – Budgeting Basics**: solid concepts on financial planning you can adapt to daily life.  
+- **Investopedia – Budgeting Basics**: solid concepts on [financial planning](/en/glossario/en-financial-planning) you can adapt to daily life.  
 - **OECD – Consumer Spending Trends**: global data on consumption patterns, useful to see if your spending is above or below international averages.
 
 ## 30‑day plan to transform your spending habit
@@ -101,7 +101,7 @@ Controlling your spending doesn’t have to be a burden; it can be the path to t
 ## Frequently asked questions
 
 ### How can I start tracking expenses without complications?  
-Begin by recording everything in FinMoovi using photo or voice capture. Then group expenses into three main buckets (needs, wants, investments) and adjust any imbalance.
+Begin by recording everything in FinMoovi using photo or [voice capture](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end). Then group expenses into three main buckets (needs, wants, investments) and adjust any imbalance.
 
 ### Can I control spending with income in multiple currencies?  
 Yes. Turn on FinMoovi’s multi‑currency feature; it converts all amounts to a single base currency, letting you compare and plan without confusion.
@@ -111,3 +111,4 @@ About 10 minutes, twice a week, is enough to review reports, analyze categories,
 
 ### Does expense control help me invest more?  
 Absolutely. When expenses are visible and managed, the money that previously “disappeared” can be redirected to an emergency fund and long‑term investments.
+<!-- SCHEMA_AUTO:{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How can I start tracking expenses without complications?","acceptedAnswer":{"@type":"Answer","text":"Begin by recording everything in FinMoovi using photo or voice capture. Then group expenses into three main buckets (needs, wants, investments) and adjust any imbalance."}},{"@type":"Question","name":"Can I control spending with income in multiple currencies?","acceptedAnswer":{"@type":"Answer","text":"Yes. Turn on FinMoovi’s multi‑currency feature; it converts all amounts to a single base currency, letting you compare and plan without confusion."}},{"@type":"Question","name":"How much time should I dedicate each week to expense control?","acceptedAnswer":{"@type":"Answer","text":"About 10 minutes, twice a week, is enough to review reports, analyze categories, and make necessary adjustments."}},{"@type":"Question","name":"Does expense control help me invest more?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. When expenses are visible and managed, the money that previously “disappeared” can be redirected to an emergency fund and long‑term investments."}}]} -->

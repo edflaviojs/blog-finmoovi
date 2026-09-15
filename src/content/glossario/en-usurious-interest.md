@@ -20,7 +20,7 @@ seo:
 
 ## The hidden cost that hurts your wallet
 
-You’ve just taken a personal loan to cover an unexpected expense—maybe a car repair or a medical bill. The first few months feel manageable, but when the statement arrives, the interest portion looks like the price of a daily coffee multiplied by the number of months you’ve been paying. You start wondering why the debt is growing faster than you expected, and the frustration turns into a feeling that the system is set against you.  
+You’ve just taken a personal loan to cover an unexpected expense—maybe a car repair or a medical bill. The first few months feel manageable, but when the statement arrives, the [interest](/en/glossario/en-interest) portion looks like the price of a daily coffee multiplied by the number of months you’ve been paying. You start wondering why the debt is growing faster than you expected, and the frustration turns into a feeling that the system is set against you.  
 
 ![The hidden cost that hurts your wallet](/images/glossario/juros-abusivos-inline-1.webp)
 
@@ -32,7 +32,7 @@ You’ve just taken a personal loan to cover an unexpected expense—maybe a car
 
 ## What are "juros abusivos"
 
-“Juros abusivos” (usurious interest) refers to interest rates that far exceed what is considered fair or legal in the market. In plain terms, it’s the extra cost you pay when a lender charges you more than the normal price for borrowing money. The term can apply to loans, credit cards, financing agreements, and even payday loans. When the rate is abusive, the borrower ends up paying for the privilege of borrowing far more than the actual risk or cost of the loan. This practice erodes purchasing power and can trap people in a cycle of debt.
+“Juros abusivos” (usurious interest) refers to interest rates that far exceed what is considered fair or legal in the market. In plain terms, it’s the extra cost you pay when a lender charges you more than the normal price for borrowing money. The term can apply to loans, [credit](/en/glossario/en-credit) cards, [financing](/en/glossario/en-financing) agreements, and even payday loans. When the rate is abusive, the borrower ends up paying for the privilege of borrowing far more than the actual risk or cost of the loan. This practice erodes purchasing power and can trap people in a cycle of debt.
 
 ## Why they matter for everyday people
 
@@ -42,7 +42,7 @@ Even if you’re not a finance professional, abusive interest can have tangible 
 
 
 
-- **Budget distortion:** A larger portion of your monthly budget goes to interest, leaving less for groceries, rent, or savings.  
+- **Budget distortion:** A larger portion of your monthly budget goes to interest, leaving less for groceries, rent, or [savings](/en/glossario/en-savings).  
 - **Long‑term wealth loss:** Money spent on excessive interest could have been invested or saved, compounding over time.  
 - **Psychological stress:** Constantly seeing a growing debt balance creates anxiety and reduces confidence in managing money.  
 
@@ -54,9 +54,9 @@ FinMoovi’s **smart capture** feature turns a chaotic paper trail into a clear 
 
 Beyond smart capture, FinMoovi offers:
 
-- Multi‑currency support, so you can track loans in any currency without conversion headaches.  
+- [Multi‑currency](/en/posts/en-digital-bank-vs-major-bank-which-is-worth-it-in-2026) support, so you can track loans in any currency without conversion headaches.  
 - Cash‑flow reports that visualize where interest is eating into your budget.  
-- Monthly planning tools that let you set a goal to reduce interest‑heavy debt by a specific amount.  
+- Monthly [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) tools that let you set a goal to reduce interest‑heavy debt by a specific amount.  
 
 All these tools work together, but the instant insight from smart capture is the first line of defense against “juros abusivos.”
 

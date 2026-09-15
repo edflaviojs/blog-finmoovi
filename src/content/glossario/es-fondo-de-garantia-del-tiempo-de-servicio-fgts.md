@@ -20,7 +20,7 @@ seo:
 
 ## ¿Qué es el FGTS y por qué debería importarte?
  
-Imagina que cada mes, después de pagar el alquiler, la luz y el café del día, te queda poco margen para ahorrar. De repente, te enteras de que tienes un “colchón” que se ha ido acumulando sin que lo hayas notado, y que puedes usarlo cuando realmente lo necesites: para una emergencia médica, para comprar una casa o simplemente para reforzar tu fondo de emergencia. Ese colchón es el FGTS, un fondo de garantía que se forma automáticamente a lo largo de tu vida laboral.
+Imagina que cada mes, después de pagar el alquiler, la luz y el café del día, te queda poco margen para [ahorrar](/es/posts/es-ahorra-en-la-farmacia-sin-sacrificios-guia-practica-2026). De repente, te enteras de que tienes un “colchón” que se ha ido acumulando sin que lo hayas notado, y que puedes usarlo cuando realmente lo necesites: para una emergencia médica, para comprar una casa o simplemente para reforzar tu [fondo de emergencia](/es/glossario/es-fondo-de-emergencia). Ese colchón es el FGTS, un fondo de garantía que se forma automáticamente a lo largo de tu vida laboral.
 
 ## Cómo funciona el FGTS en la práctica
  
@@ -31,7 +31,7 @@ El FGTS se constituye con aportes periódicos que tu empleador deposita en una c
 
 
 - **Aporte mensual:** un porcentaje fijo del salario que se transfiere a la cuenta del FGTS.
-- **Rendimiento:** el fondo genera intereses y una actualización monetaria que lo protege de la inflación.
+- **Rendimiento:** el fondo genera intereses y una actualización monetaria que lo protege de la [inflación](/es/glossario/es-inflacion).
 - **Disponibilidad:** puedes retirar el saldo cuando se cumplen los requisitos legales o en situaciones de necesidad.
 
 ## Errores comunes y cómo evitarlos
@@ -48,12 +48,12 @@ Muchas personas desconocen que el FGTS está a su favor y lo dejan de lado. Aqu�
 
 ## Cómo FinMoovi te ayuda a gestionar tu FGTS
  
-FinMoovi es como ese amigo que siempre lleva la cuenta de todo y te avisa cuando algo importante pasa. La app incorpora varias funciones que hacen que el FGTS deje de ser un misterio y pase a ser una herramienta activa en tu planificación financiera.
+FinMoovi es como ese amigo que siempre lleva la cuenta de todo y te avisa cuando algo importante pasa. La app incorpora varias funciones que hacen que el FGTS deje de ser un misterio y pase a ser una herramienta activa en tu [planificación financiera](/es/glossario/es-planificacion-financiera).
 
 - **Captura inteligente:** basta una foto del recibo de pago o una nota de voz y la app registra automáticamente el aporte al FGTS, sin que tengas que escribir nada.
 - **Categorización automática:** el sistema reconoce que ese movimiento corresponde al FGTS y lo clasifica en la sección de “Ahorro obligatorio”.
 - **Multimoneda:** si trabajas o recibes ingresos en diferentes monedas, FinMoovi convierte los valores al tipo de cambio del día, manteniendo tu fondo actualizado sin que te compliques.
-- **Flujo de caja e informes:** visualiza cómo el FGTS impacta tu balance mensual, con gráficos que comparan el aporte con tus gastos habituales.
+- **[Flujo de caja](/es/glossario/es-flujo-de-caja) e informes:** visualiza cómo el FGTS impacta tu balance mensual, con gráficos que comparan el aporte con tus gastos habituales.
 - **Planificación mensual y metas:** define una meta de “Fondo de emergencia” y asigna una parte del FGTS a esa meta; la app te muestra el progreso en tiempo real.
 - **Tarjetas de crédito y facturación:** si usas una tarjeta vinculada a la cuenta, FinMoovi muestra el saldo disponible del FGTS como respaldo para pagos grandes.
 - **Modo compras:** crea una lista de lo que necesitas (por ejemplo, una reforma) y ve el total acumulado del FGTS en tiempo real, evitando sorpresas.
@@ -76,4 +76,4 @@ Además, considera estos hábitos:
 
 ## Empieza hoy
  
-Dedica cinco minutos a abrir FinMoovi, activar la captura inteligente y registrar tu último recibo de aporte al FGTS. En la sección “Ahorro obligatorio” verás el saldo actualizado y, con un solo toque, podrás fijar una meta de “Fondo de emergencia”. Esa pequeña acción te pondrá en camino de usar tu FGTS como una verdadera herramienta de seguridad financiera.
+Dedica cinco minutos a abrir FinMoovi, activar la captura inteligente y registrar tu último recibo de aporte al FGTS. En la sección “Ahorro obligatorio” verás el saldo actualizado y, con un solo toque, podrás fijar una meta de “Fondo de emergencia”. Esa pequeña acción te pondrá en camino de usar tu FGTS como una verdadera herramienta de [seguridad financiera](/es/posts/es-7-mejores-apps-de-control-financiero-2026-guia-completa-para).

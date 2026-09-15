@@ -20,7 +20,7 @@ seo:
 
 ## O que são obrigações?
 
-A maioria das pessoas sente aquele aperto no peito ao receber a primeira fatura do cartão ou ao ver um boleto que não estava nos planos. Esse desconforto nasce da falta de clareza sobre **o que realmente estamos devendo**. No mundo financeiro, a palavra “obrigação” é o termo técnico para tudo aquilo que você tem que pagar no futuro – seja um empréstimo, um financiamento, um cartão de crédito ou até mesmo um contrato de aluguel. Em termos simples, obrigação é um compromisso de entregar dinheiro ou um bem em uma data futura, de acordo com as condições que foram combinadas.
+A maioria das pessoas sente aquele aperto no peito ao receber a primeira fatura do cartão ou ao ver um boleto que não estava nos planos. Esse desconforto nasce da falta de clareza sobre **o que realmente estamos devendo**. No mundo financeiro, a palavra “obrigação” é o termo técnico para tudo aquilo que você tem que pagar no futuro – seja um [empréstimo](/glossario/emprestimo), um [financiamento](/glossario/financiamento), um [cartão de crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena) ou até mesmo um contrato de [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026). Em termos simples, obrigação é um compromisso de entregar dinheiro ou um bem em uma data futura, de acordo com as condições que foram combinadas.
 
 ![O que são obrigações?](/images/glossario/obrigacao-inline-1.webp)
 
@@ -28,7 +28,7 @@ A maioria das pessoas sente aquele aperto no peito ao receber a primeira fatura 
 
 ## Como as obrigações funcionam na prática
 
-Quando você assina um contrato, duas coisas ficam registradas: o valor total que será pago e o calendário de pagamentos. Cada parcela é uma “cobrança” que entra no seu fluxo de caixa, e o não cumprimento pode gerar juros, multas ou até a perda do bem financiado. Veja alguns exemplos do dia a dia:
+Quando você assina um contrato, duas coisas ficam registradas: o valor total que será pago e o calendário de pagamentos. Cada parcela é uma “cobrança” que entra no seu [fluxo de caixa](/glossario/fluxo-de-caixa), e o não cumprimento pode gerar juros, multas ou até a perda do bem financiado. Veja alguns exemplos do dia a dia:
 
 - **Financiamento de carro** – você paga um valor que corresponde a cerca de duas vezes o preço de um café por dia, durante alguns anos.
 - **Cartão de crédito** – a fatura pode chegar a equivaler a três aluguéis mensais, dependendo do seu consumo.
@@ -38,7 +38,7 @@ Essas obrigações entram no seu orçamento como despesas fixas ou variáveis, e
 
 ## Riscos e benefícios
 
-Entender as obrigações ajuda a equilibrar risco e benefício. Por um lado, assumir dívidas pode ser uma estratégia inteligente para adquirir bens que geram renda (como um imóvel para aluguel) ou para aproveitar oportunidades (como um investimento que rende mais que a taxa de juros da dívida). Por outro, o excesso de compromissos pode comprometer sua saúde financeira, levando a atrasos e ao acúmulo de juros.
+Entender as obrigações ajuda a equilibrar risco e benefício. Por um lado, assumir dívidas pode ser uma estratégia inteligente para adquirir bens que geram renda (como um imóvel para aluguel) ou para aproveitar oportunidades (como um [investimento](/glossario/investimento) que rende mais que a taxa de juros da dívida). Por outro, o excesso de compromissos pode comprometer sua saúde financeira, levando a atrasos e ao acúmulo de juros.
 
 ![Riscos e benefícios](/images/glossario/obrigacao-inline-3.webp)
 

@@ -35,7 +35,7 @@ Cuando compras una LCA, estás adquiriendo un documento que te otorga el derecho
 - **Ventaja fiscal:** los intereses percibidos están exentos de impuestos sobre la renta, lo que aumenta la rentabilidad neta.  
 - **Seguridad:** al estar respaldada por el gobierno, el riesgo de impago es bajo.  
 - **Liquidez limitada:** normalmente no puedes vender la LCA antes del vencimiento sin perder parte de la rentabilidad.  
-- **Riesgo de tasa:** si la inflación sube mucho, la rentabilidad fija puede quedar por debajo del costo de vida.  
+- **Riesgo de tasa:** si la [inflación](/es/glossario/es-inflacion) sube mucho, la rentabilidad fija puede quedar por debajo del [costo de vida](/es/glossario/es-costo-de-vida).  
 
 ![Ventajas y riesgos de la LCA  ](/images/glossario/lca-inline-3.webp)
 
@@ -43,15 +43,15 @@ Cuando compras una LCA, estás adquiriendo un documento que te otorga el derecho
 
 ## Cómo integrar la LCA en tu planificación financiera  
 
-1. **Define tu objetivo:** si buscas un ingreso extra para cubrir el gasto de un alquiler o para ahorrar el precio de un café al día durante un año, la LCA encaja bien.  
+1. **Define tu objetivo:** si buscas un ingreso extra para cubrir el gasto de un [alquiler](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026) o para [ahorrar](/es/posts/es-ahorra-en-la-farmacia-sin-sacrificios-guia-practica-2026) el precio de un café al día durante un año, la LCA encaja bien.  
 2. **Escoge el plazo:** los plazos cortos (6‑12 meses) son útiles para metas próximas; los más largos (24‑36 meses) sirven para proyectos a medio plazo.  
-3. **Distribuye el riesgo:** combina la LCA con otros instrumentos (cuentas de ahorro, fondos de inversión) para no depender de un solo tipo de activo.  
+3. **Distribuye el riesgo:** combina la LCA con otros instrumentos (cuentas de ahorro, fondos de [inversión](/es/glossario/es-inversion)) para no depender de un solo tipo de activo.  
 
 ## FinMoovi y la LCA: herramientas que facilitan el proceso  
 
 FinMoovi es el compañero que te ayuda a gestionar la LCA sin complicaciones. Con su **captura inteligente** puedes tomar una foto del comprobante de compra o dictar la información y el app la categoriza automáticamente como “Inversión – LCA”. La función **multimoneda** permite registrar la inversión en la moneda que prefieras, ya sea dólares, euros o cualquier otra, y ver su evolución en tiempo real.  
 
-El **flujo de caja e informes** te muestra cuánto dinero tienes disponible, cuánto está invertido en LCA y cuál es la rentabilidad esperada. Con la **planificación mensual / metas**, puedes asignar un objetivo (por ejemplo, “generar ingresos equivalentes al precio de un café al día”) y seguir el progreso mes a mes.  
+El **[flujo de caja](/es/glossario/es-flujo-de-caja) e informes** te muestra cuánto dinero tienes disponible, cuánto está invertido en LCA y cuál es la rentabilidad esperada. Con la **planificación mensual / metas**, puedes asignar un objetivo (por ejemplo, “generar ingresos equivalentes al precio de un café al día”) y seguir el progreso mes a mes.  
 
 Si usas tarjetas de crédito, FinMoovi sincroniza la factura y te avisa cuando el pago de la LCA se acerca, evitando sorpresas. El **modo compras** te permite crear una lista de inversiones y ver el total en tiempo real, ideal para comparar diferentes plazos y tasas. Además, los **recordatorios / alertas de saldo** te notifican cuando el capital está próximo a vencerse, para que decidas si reinviertes o retiras el dinero.  
 

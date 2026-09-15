@@ -47,7 +47,7 @@ Most people stumble over the same three mistakes when handling their monthly inc
 ## FinMoovi’s smart capture makes it easy
 FinMoovi solves these headaches with a single, intuitive feature: **[smart capture](/en/posts/en-how-to-never-miss-a-bill-payment-deadline-simple-5-minute)**. Snap a photo of a receipt, record a quick voice note, and the app instantly reads the amount, categorizes the expense, and syncs it with your income overview. No more manual entry, no more forgetting cash purchases. Because the app works offline and syncs later, you can capture a receipt on a subway or in a market without internet, and the data appears the moment you’re back online.
 
-The smart capture also supports multiple currencies, so whether you’re paid in dollars, euros, or any other unit, the app normalizes the values and shows you a unified cash‑flow report. This means you can see, at a glance, how a salary in one currency stacks up against a rent paid in another, without doing the conversion yourself.
+The [smart capture](/en/posts/en-how-freelancers-can-organize-their-finances-in-2026) also supports multiple currencies, so whether you’re paid in dollars, euros, or any other unit, the app normalizes the values and shows you a unified cash‑flow report. This means you can see, at a glance, how a salary in one currency stacks up against a rent paid in another, without doing the conversion yourself.
 
 ## Practical tips to master your monthly income
 Below are three actions you can start today, each highlighted in bold so they stand out on your to‑do list:

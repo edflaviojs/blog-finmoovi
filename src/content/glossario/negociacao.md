@@ -19,10 +19,10 @@ seo:
 ---
 
 ## O que significa negociação no seu bolso  
-A palavra “negociação” costuma aparecer quando você tenta reduzir a conta de luz, fechar um plano de celular ou dividir a conta do aluguel com os colegas. No fundo, negociar é simplesmente buscar um acordo que beneficie ambas as partes, trocando algo de valor por outro. Quando o assunto é dinheiro, isso pode envolver prazos, descontos, condições de pagamento ou até a forma como você controla seus gastos. Entender o que está em jogo ajuda a transformar aquela sensação de estar “preso” em uma oportunidade de melhorar seu fluxo de caixa.
+A palavra “negociação” costuma aparecer quando você tenta reduzir a conta de luz, fechar um plano de celular ou dividir a conta do [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026) com os colegas. No fundo, negociar é simplesmente buscar um acordo que beneficie ambas as partes, trocando algo de valor por outro. Quando o assunto é dinheiro, isso pode envolver prazos, descontos, condições de pagamento ou até a forma como você controla seus gastos. Entender o que está em jogo ajuda a transformar aquela sensação de estar “preso” em uma oportunidade de melhorar seu [fluxo de caixa](/glossario/fluxo-de-caixa).
 
 ## Por que a maioria das pessoas sente dificuldade ao negociar  
-A maioria das vezes a dor vem de três fatores: falta de informação, medo de perder algo e ausência de ferramentas que mostrem o impacto real das decisões. Imagine que você recebe a fatura do cartão de crédito e vê um valor que parece impossível de pagar. Sem saber exatamente quanto cada compra contribuiu para aquele total, fica difícil argumentar com a operadora ou decidir onde cortar. Além disso, quando você tenta renegociar um empréstimo, não tem clareza sobre a taxa de juros real, o que pode levar a aceitar condições desfavoráveis. Essa falta de visibilidade cria um ciclo de ansiedade e decisões impulsivas.
+A maioria das vezes a dor vem de três fatores: falta de informação, medo de perder algo e ausência de ferramentas que mostrem o impacto real das decisões. Imagine que você recebe a fatura do cartão de [crédito](/glossario/credito) e vê um valor que parece impossível de pagar. Sem saber exatamente quanto cada compra contribuiu para aquele total, fica difícil argumentar com a operadora ou decidir onde cortar. Além disso, quando você tenta renegociar um [empréstimo](/glossario/emprestimo), não tem clareza sobre a taxa de juros real, o que pode levar a aceitar condições desfavoráveis. Essa falta de visibilidade cria um ciclo de ansiedade e decisões impulsivas.
 
 ![O que significa negociação no seu bolso  ](/images/glossario/negociacao-inline-1.webp)
 
@@ -61,10 +61,10 @@ Com esses recursos, a negociação deixa de ser um ato de adivinhação e passa 
 
 **Dica prática:** quando for fazer compras grandes (como eletrodomésticos ou móveis), crie uma lista no modo compras do app, adicione o preço estimado de cada item e acompanhe o total em tempo real. Se o valor ultrapassar o limite que você definiu como meta mensal, renegocie com o vendedor ou procure alternativas mais baratas.  
 
-Além dessas dicas, mantenha alguns hábitos simples:
+Além dessas [dicas](/posts/7-erros-financeiros-iniciante), mantenha alguns hábitos simples:
 
 - **Revise faturas semanalmente:** pequenos ajustes evitam surpresas no final do mês.  
-- **Negocie prazos de pagamento:** peça parcelamento sem juros ou descontos à vista; o app registra a proposta e o resultado para futuras comparações.  
+- **Negocie prazos de pagamento:** peça [parcelamento](/glossario/parcelamento) sem juros ou descontos à vista; o app registra a proposta e o resultado para futuras comparações.  
 - **Use alertas de saldo:** quando o limite estiver próximo, o app avisa, permitindo que você ajuste gastos antes que seja tarde demais.
 
 ## Como transformar a negociação em hábito constante  

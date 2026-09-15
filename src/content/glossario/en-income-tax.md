@@ -60,7 +60,7 @@ For a country, income tax is the main way public services get funded — schools
 ## Risks
 
 * **Missing the deadline.** Penalties are usually a percentage of the tax owed and grow the longer you wait. The date differs by country — it is the one thing most worth putting in your calendar.
-* **Leaving income out.** Freelance work, rent received and investment gains are the ones most often forgotten. Tax authorities increasingly cross-check what banks and employers report.
+* **Leaving income out.** Freelance work, rent received and [investment](/en/glossario/en-investment) gains are the ones most often forgotten. Tax authorities increasingly cross-check what banks and employers report.
 * **Losing the paperwork.** A deduction you cannot document is a deduction you cannot claim.
 
 **Practical tip:** Keep receipts as you go, not in the week before the deadline. A photo taken on the day you pay is enough — what you need is the record, not the paper.

@@ -30,12 +30,12 @@ You’ve probably stared at your bank statement and thought, “I’m putting mo
 
 
 ## What is LCA
-LCA stands for **Letter of Credit for Agribusiness**. It is a type of fixed‑income investment that funds credit operations in the agricultural sector. In plain terms, when you buy an LCA, you are lending money to a bank that, in turn, provides credit to farmers and agribusinesses. The bank pays you a predetermined interest rate, and the investment is usually backed by the credit‑linked assets of the agribusiness chain, which adds a layer of security.
+LCA stands for **Letter of Credit for Agribusiness**. It is a type of fixed‑income [investment](/en/glossario/en-investment) that funds credit operations in the agricultural sector. In plain terms, when you buy an LCA, you are lending money to a bank that, in turn, provides credit to farmers and agribusinesses. The bank pays you a predetermined interest rate, and the investment is usually backed by the credit‑linked assets of the agribusiness chain, which adds a layer of security.
 
 ## How LCA generates returns
 The return on an LCA works like a traditional bond: you receive a fixed interest rate that is paid periodically (monthly, quarterly, or at maturity). The key differences are:
 
-- **Tax exemption** – The interest earned is often exempt from income tax, meaning the amount you see on your statement is the amount you actually keep.  
+- **Tax exemption** – The interest earned is often exempt from [income tax](/en/glossario/en-income-tax), meaning the amount you see on your statement is the amount you actually keep.  
 - **Credit‑linked backing** – The underlying credit is tied to agricultural production, which historically shows steady demand and low default rates.  
 - **Liquidity options** – Some LCAs allow you to redeem before maturity, though you might lose a small portion of the accrued interest.
 
@@ -47,8 +47,8 @@ Because the interest is fixed, you can predict exactly how much your money will 
 
 ## Benefits you’ll actually notice
 - **Higher net yield** – Thanks to tax exemption, the effective return can be comparable to a higher‑interest savings account without the tax bite.  
-- **Low volatility** – The investment is not tied to stock market swings, so its value remains stable, which is comforting for risk‑averse savers.  
-- **Diversification** – Adding an LCA to a portfolio that already contains stocks, real estate, or other bonds spreads risk across different sectors.  
+- **Low [volatility](/en/glossario/en-volatility)** – The investment is not tied to stock market swings, so its value remains stable, which is comforting for risk‑averse savers.  
+- **[Diversification](/en/glossario/en-diversification)** – Adding an LCA to a portfolio that already contains stocks, real estate, or other bonds spreads risk across different sectors.  
 
 ## Risks you should keep in mind
 - **Credit risk** – If the agribusiness borrower defaults, the bank may struggle to repay you, though this risk is mitigated by the bank’s own credit rating.  
@@ -66,10 +66,10 @@ If you are looking for a safe, predictable way to grow savings without the heada
 Keeping track of an LCA can feel like another line item you’ll forget among bills, receipts, and credit‑card statements. That’s where FinMoovi’s **smart capture** feature shines. Simply snap a photo of the LCA purchase receipt—or dictate the key details—and the app automatically categorizes the investment under “Fixed‑Income – LCA.” From there, FinMoovi syncs the data across all your devices, showing you:
 
 - Real‑time balance updates, so you always know how much of your “coffee‑budget” is tied up in the LCA.  
-- Automatic monthly reports that break down earned interest, tax savings, and projected growth.  
+- Automatic monthly [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end) that break down earned interest, tax savings, and projected growth.  
 - Alerts when the investment is approaching its maturity date, prompting you to decide whether to roll it over or withdraw.  
 
-All of this happens without you manually entering numbers, freeing up mental space for the things that matter—like planning that weekend getaway or budgeting for home improvements.
+All of this happens without you manually entering numbers, freeing up mental space for the things that matter—like [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) that weekend getaway or budgeting for home improvements.
 
 ## Practical tips to get the most out of LCA
 **Practical tip:** Start with an amount equivalent to about one month’s rent. This size is large enough to generate noticeable interest yet small enough to keep liquidity concerns manageable.  

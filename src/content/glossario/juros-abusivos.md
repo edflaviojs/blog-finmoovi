@@ -38,7 +38,7 @@ Quando você vê um número de parcelas que parece impossível de pagar com o sa
 
 ## Impacto real no seu bolso  
 
-Juros abusivos podem transformar uma dívida de “cerca de um aluguel” em algo equivalente a “três cafés por dia” ao longo de alguns meses. O efeito acumulado faz com que a dívida cresça exponencialmente, comprometendo a parte que deveria ir para a poupança ou para a realização de um objetivo, como a viagem dos sonhos. Além do peso financeiro, há o custo emocional: ansiedade, noites mal dormidas e a sensação de estar sempre “no vermelho”.  
+Juros abusivos podem transformar uma dívida de “cerca de um [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026)” em algo equivalente a “três cafés por dia” ao longo de alguns meses. O efeito acumulado faz com que a dívida cresça exponencialmente, comprometendo a parte que deveria ir para a poupança ou para a realização de um objetivo, como a viagem dos sonhos. Além do peso financeiro, há o custo emocional: ansiedade, noites mal dormidas e a sensação de estar sempre “no vermelho”.  
 
 ![Impacto real no seu bolso  ](/images/glossario/juros-abusivos-inline-3.webp)
 
@@ -48,7 +48,7 @@ Juros abusivos podem transformar uma dívida de “cerca de um aluguel” em alg
 
 **Dica prática:** antes de fechar qualquer contrato, peça a taxa efetiva anual (TEA) e compare com a média do mercado.  
 
-**Dica prática:** use a regra dos 30 dias – se a parcela ultrapassar 30% da sua renda mensal, renegocie ou procure outra oferta.  
+**Dica prática:** use a regra dos 30 dias – se a parcela ultrapassar 30% da sua [renda mensal](/glossario/renda-mensal), renegocie ou procure outra oferta.  
 
 **Dica prática:** mantenha um registro de todas as despesas e receitas; quanto mais você souber para onde vai seu dinheiro, mais fácil será detectar cobranças fora do padrão.  
 
@@ -65,12 +65,12 @@ O FinMoovi funciona como aquele amigo que sempre tem um lembrete na manga. Quand
 ## Ferramentas do FinMoovi que combatem juros abusivos  
 
 - **Captura inteligente:** foto da nota ou comando de voz → registro automático.  
-- **Categorização automática:** o app reconhece se a despesa é “empréstimo”, “cartão de crédito” ou “parcelamento”.  
+- **Categorização automática:** o app reconhece se a despesa é “empréstimo”, “[cartão de crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena)” ou “[parcelamento](/glossario/parcelamento)”.  
 - **Multimoeda:** suporte a diferentes moedas (BRL, USD, EUR), ideal para quem viaja ou faz compras internacionais.  
-- **Fluxo de caixa e relatórios:** visualiza entradas e saídas em gráficos simples, destacando a parcela de juros.  
+- **[Fluxo de caixa](/glossario/fluxo-de-caixa) e relatórios:** visualiza entradas e saídas em gráficos simples, destacando a parcela de juros.  
 - **Planejamento mensal e metas:** define quanto quer economizar e o app avisa quando os juros comprometem a meta.  
 - **Cartões de crédito e fatura:** integra faturas automaticamente, mostrando o custo total dos juros.  
-- **Modo compras:** cria lista de compras com total em tempo real, evitando surpresas na conta.  
+- **Modo compras:** cria [lista de compras](/glossario/lista-de-compras) com total em tempo real, evitando surpresas na conta.  
 - **Lembretes e alertas de saldo:** notifica quando o saldo está próximo do limite ou quando a parcela está alta.  
 - **Offline / PWA / sincronização:** funciona sem internet e salva tudo na nuvem, garantindo acesso em qualquer dispositivo.  
 

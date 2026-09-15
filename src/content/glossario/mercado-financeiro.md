@@ -42,23 +42,23 @@ O mercado financeiro tem alguns “blocos” que funcionam como peças de um tab
 - **Renda fixa** – títulos que pagam juros definidos, como títulos públicos ou debêntures. São usados por quem quer segurança e previsibilidade.
 - **Câmbio** – a troca de moedas (por exemplo, de dólar para euro). Afeta quem viaja ou compra produtos importados.
 - **Derivativos** – contratos que derivam seu valor de outro ativo (como opções ou futuros). São ferramentas de proteção ou especulação.
-- **Fundos de investimento** – “piscinas” de dinheiro administradas por gestores que aplicam em diferentes ativos, facilitando a diversificação.
+- **Fundos de [investimento](/glossario/investimento)** – “piscinas” de dinheiro administradas por gestores que aplicam em diferentes ativos, facilitando a [diversificação](/glossario/diversificacao).
 
-Cada peça tem seu risco e retorno, e todas interagem entre si. Por exemplo, quando a taxa de juros sobe, as ações tendem a cair porque o custo de financiamento das empresas aumenta.  
+Cada peça tem seu risco e retorno, e todas interagem entre si. Por exemplo, quando a taxa de juros sobe, as ações tendem a cair porque o custo de [financiamento](/glossario/financiamento) das empresas aumenta.  
 
 ## Como o mercado financeiro pode mudar seu orçamento
 
 Quando você entende como esses blocos funcionam, pode ajustar seu orçamento de forma mais inteligente:
 
-- **Custo do crédito** – Se a taxa de juros do mercado está alta, adie compras parceladas e renegocie dívidas para evitar pagar “um aluguel” a mais em juros.
+- **Custo do crédito** – Se a taxa de juros do mercado está alta, adie compras parceladas e renegocie dívidas para evitar pagar “um [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026)” a mais em juros.
 - **Rendimento da poupança** – Quando a inflação supera o rendimento da poupança, procure alternativas como títulos de renda fixa que pagam “um café por dia” a mais.
 - **Planejamento de viagens** – Se a cotação do euro está baixa, aproveite para comprar passagens ou reservar hotéis, pois isso reduz o “custo de um jantar” da viagem.
 
-Ao observar esses sinais, você consegue antecipar gastos e buscar oportunidades que alinhem seu fluxo de caixa com as condições do mercado.  
+Ao observar esses sinais, você consegue antecipar gastos e buscar oportunidades que alinhem seu [fluxo de caixa](/glossario/fluxo-de-caixa) com as condições do mercado.  
 
 ## Ferramentas que simplificam o acompanhamento
 
-Manter o olho no mercado pode parecer complicado, mas aplicativos modernos trazem tudo ao alcance da mão. O FinMoovi, por exemplo, oferece funcionalidades que transformam a gestão financeira em algo tão simples quanto tirar uma foto:
+Manter o olho no mercado pode parecer complicado, mas aplicativos modernos trazem tudo ao alcance da mão. O FinMoovi, por exemplo, oferece funcionalidades que transformam a [gestão financeira](/posts/5-alternativas-ao-mobills-em-2026) em algo tão simples quanto tirar uma foto:
 
 - **Captura inteligente** – Tire uma foto da nota fiscal ou use a voz para registrar a despesa; o app reconhece o valor e a categoria automaticamente.
 - **Multimoeda** – Controle gastos em diferentes moedas (BRL, USD, EUR) sem precisar fazer conversões manuais; o app atualiza as taxas em tempo real.

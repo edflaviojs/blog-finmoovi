@@ -26,4 +26,4 @@ You just received your salary, paid the rent that costs about one month’s rent
 
 
 ## What an obligation really means
-In plain language, an obligation is any promise you’ve made to pay money in the future. It can be a contract, a loan, a subscription, or even a promise to yourself to set aside a certain amount each month. The key
+In plain language, an obligation is any promise you’ve made to pay money in the future. It can be a contract, a [loan](/en/glossario/en-loan), a subscription, or even a promise to yourself to set aside a certain amount each month. The key

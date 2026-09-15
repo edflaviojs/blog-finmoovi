@@ -36,7 +36,7 @@ Cuando solicitas un préstamo, la entidad evalúa si puedes devolverlo, libera e
 
 ## Lo que se suele olvidar
 
-La cuota no es un evento único: es un costo fijo que se come una parte de cada mes hasta que el préstamo termina. Vista sola parece pequeña; junto al alquiler, la comida y el [crédito](/es/glossario/es-credito) puede dejar el mes más ajustado de lo que esperabas. Ahí es donde ver el panorama completo importa más que la tasa del titular.
+La cuota no es un evento único: es un costo fijo que se come una parte de cada mes hasta que el préstamo termina. Vista sola parece pequeña; junto al [alquiler](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026), la comida y el [crédito](/es/glossario/es-credito) puede dejar el mes más ajustado de lo que esperabas. Ahí es donde ver el panorama completo importa más que la tasa del titular.
 
 ## En FinMoovi
 

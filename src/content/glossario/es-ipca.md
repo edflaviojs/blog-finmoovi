@@ -19,7 +19,7 @@ El IPCA (Índice Nacional de Preços ao Consumidor Amplo) es el termómetro ofic
 
 El IPCA sigue los precios de una "cesta" de productos y servicios que consumen las familias:
 - Alimentación (arroz, frijoles, carne)
-- Vivienda (alquiler, energía, agua)
+- Vivienda ([alquiler](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026), energía, agua)
 - Transporte (gasolina, autobús)
 - Salud (plan de salud, medicamentos)
 - Educación (mensualidad escolar)

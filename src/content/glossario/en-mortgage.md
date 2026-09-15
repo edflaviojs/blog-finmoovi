@@ -20,7 +20,7 @@ seo:
 
 ## The everyday struggle with buying a home
 
-Imagine you’re scrolling through listings, dreaming of a place where you can finally hang that picture you’ve been saving for. The price tag looks like a mountain, and the first question that pops up is: “How on earth am I going to afford this?” You start calculating: a down‑payment the size of a few months’ rent, monthly installments that feel like a second mortgage on your paycheck, and the fear that any unexpected expense could tip the balance.  
+Imagine you’re scrolling through listings, dreaming of a place where you can finally hang that picture you’ve been saving for. The price tag looks like a mountain, and the first question that pops up is: “How on earth am I going to afford this?” You start calculating: a down‑payment the size of a few months’ rent, monthly [installments](/en/glossario/en-installments) that feel like a second mortgage on your paycheck, and the fear that any unexpected expense could tip the balance.  
 
 ![The everyday struggle with buying a home](/images/glossario/hipoteca-inline-1.webp)
 
@@ -39,23 +39,23 @@ A mortgage is a loan specifically designed to buy real estate. The property itse
 - **Principal** – the amount you actually borrow.  
 - **Interest** – the fee the lender charges for using their money, expressed as a percentage of the principal.  
 - **Term** – the total time you have to repay, often 15 to 30 years.  
-- **Amortization** – the schedule that shows how each payment is split between interest and principal.  
+- **[Amortization](/en/glossario/en-amortization)** – the schedule that shows how each payment is split between interest and principal.  
 
 Because the loan stretches over decades, each payment is relatively small, but the total interest paid can be substantial. Understanding these components helps you see where your money is going and how to plan for it.
 
 ## How a mortgage impacts your cash flow
 
-When you add a mortgage payment to your monthly budget, it reshapes the way cash moves in and out of your account. The payment becomes a fixed expense, reducing the amount you have left for discretionary spending, savings, or emergencies.  
+When you add a mortgage payment to your monthly budget, it reshapes the way cash moves in and out of your account. The payment becomes a [fixed expense](/en/glossario/en-fixed-expense), reducing the amount you have left for discretionary spending, savings, or emergencies.  
 
 ![How a mortgage impacts your cash flow](/images/glossario/hipoteca-inline-3.webp)
 
 
 
-- **Fixed cost** – you know the exact amount each month, which aids planning but also limits flexibility.  
+- **Fixed cost** – you know the exact amount each month, which aids [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) but also limits flexibility.  
 - **Variable cost** – interest rates can change if you have a variable‑rate loan, causing the payment to rise or fall.  
 - **Opportunity cost** – money tied up in mortgage payments can’t be used for other investments or experiences.  
 
-If you don’t track these flows, you might miss early warning signs, like a growing gap between income and expenses, which can lead to missed payments and credit damage. That’s where a personal finance app can become a lifesaver.
+If you don’t track these flows, you might miss early warning signs, like a growing gap between income and expenses, which can lead to missed payments and credit damage. That’s where a [personal finance](/en/posts/en-30-day-rule-for-purchases) app can become a lifesaver.
 
 ## Using FinMoovi to keep the mortgage under control
 
@@ -77,7 +77,7 @@ All of this happens offline, too—so even if you’re on a construction site wi
 
 Additional habits that reinforce these tips:
 
-- Keep a **shopping list** in the app when you’re buying home‑related items; the real‑time total helps you avoid overspending and stay within the budget you set for maintenance.  
+- Keep a **[shopping list](/en/glossario/en-shopping-list)** in the app when you’re buying home‑related items; the real‑time total helps you avoid overspending and stay within the budget you set for maintenance.  
 - Enable **balance alerts** so you get a gentle ping when your account falls below the mortgage buffer, prompting you to pause discretionary spending.  
 - Periodically **categorize “home” expenses** (utilities, insurance, repairs) to see the true cost of ownership beyond the loan payment.  
 

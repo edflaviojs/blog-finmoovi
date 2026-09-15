@@ -37,7 +37,7 @@ The process typically follows these steps:
 - **Request the installment** – you log into the tax portal, select the “parcelamento” option, and choose the number of months.
 - **Confirm the schedule** – the system shows you the exact amount per month and the due date.
 - **Pay each installment** – you can set up an automatic debit or pay manually; the amount is deducted on the agreed day.
-- **Monitor the balance** – the portal updates the remaining balance after each payment, so you always know how many installments are left.
+- **Monitor the balance** – the portal updates the remaining balance after each payment, so you always know how many [installments](/en/glossario/en-installments) are left.
 
 ## Common pitfalls and how to avoid them
 Even a simple plan can trip you up if you’re not careful. The most frequent mistakes are:
@@ -75,4 +75,4 @@ Beyond these three, remember to:
 - Celebrate each successful payment; a small win keeps motivation high.
 
 ## Start today
-Open FinMoovi, tap the **Smart Capture** button, and take a quick photo of your latest tax notice. The app will auto‑fill the installment details, add them to your cash‑flow view, and
+Open FinMoovi, tap the **[Smart Capture](/en/posts/en-how-freelancers-can-organize-their-finances-in-2026)** button, and take a quick photo of your latest tax notice. The app will auto‑fill the installment details, add them to your cash‑flow view, and

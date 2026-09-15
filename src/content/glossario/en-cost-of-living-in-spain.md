@@ -20,7 +20,7 @@ seo:
 
 ## Feeling the pinch in Spain
 
-You’ve just landed in Madrid, Barcelona, or a smaller town, and the first thing you notice is how quickly the everyday expenses add up. A cup of coffee that used to cost a few coins now feels like a small investment, the rent you pay each month is roughly the same as a year’s worth of groceries, and the occasional night out suddenly looks like a budget breach. This feeling of “where does all my money go?” is the exact pain point that many newcomers and long‑term residents experience when trying to understand the real [cost of living](/en/glossario/en-cost-of-living) in Spain.
+You’ve just landed in Madrid, Barcelona, or a smaller town, and the first thing you notice is how quickly the everyday expenses add up. A cup of coffee that used to cost a few coins now feels like a small [investment](/en/glossario/en-investment), the rent you pay each month is roughly the same as a year’s worth of groceries, and the occasional night out suddenly looks like a budget breach. This feeling of “where does all my money go?” is the exact pain point that many newcomers and long‑term residents experience when trying to understand the real [cost of living](/en/glossario/en-cost-of-living) in Spain.
 
 ![Feeling the pinch in Spain](/images/glossario/custo-de-vida-na-espanha-inline-1.webp)
 
@@ -28,7 +28,7 @@ You’ve just landed in Madrid, Barcelona, or a smaller town, and the first thin
 
 ## What “cost of living” really means
 
-The term “cost of living” is a shorthand for the total amount of money you need to maintain a certain lifestyle in a specific place. It includes everything you spend on basics—housing, food, transport, health, and leisure—plus the occasional surprise like a rainy‑day repair. In Spain, the balance between these categories can shift dramatically from one city to another, and from a shared apartment to a solo studio. Understanding each component helps you see where you can cut back and where you might need to allocate a bit more.
+The term “cost of living” is a shorthand for the total amount of money you need to maintain a certain lifestyle in a specific place. It includes everything you spend on basics—[housing](/en/posts/en-rent-vs-mortgage-which-is-worth-it-in-2026), food, transport, health, and leisure—plus the occasional surprise like a rainy‑day repair. In Spain, the balance between these categories can shift dramatically from one city to another, and from a shared apartment to a solo studio. Understanding each component helps you see where you can cut back and where you might need to allocate a bit more.
 
 ## Main expenses you’ll face
 

@@ -13,7 +13,7 @@ readingTime: 2
 
 ## What is Financing?
 
-Financing is when a bank lends you [money](/en/posts/en-30-day-rule-for-purchases) to buy something of high value (house, car, etc.) and you pay it back in installments over the years. The purchased asset serves as collateral — if you stop paying, the bank can take it.
+Financing is when a bank lends you [money](/en/posts/en-30-day-rule-for-purchases) to buy something of high value (house, car, etc.) and you pay it back in [installments](/en/glossario/en-installments) over the years. The purchased asset serves as collateral — if you stop paying, the bank can take it.
 
 ## Common Types
 

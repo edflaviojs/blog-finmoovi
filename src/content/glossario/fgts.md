@@ -20,7 +20,7 @@ seo:
 
 ## O que é o FGTS  
 
-O Fundo de Garantia por Tempo de Serviço (FGTS) funciona como uma poupança compulsória que o empregador deposita todo mês, equivalente a um percentual do salário. Esse dinheiro fica guardado em uma conta vinculada ao trabalhador e só pode ser sacado em situações previstas por lei, como demissão sem justa causa, compra da casa própria ou aposentadoria. Pense no FGTS como um “colchão” que cresce lentamente, quase como se fosse um aluguel que você paga para o futuro, mas que só pode ser usado quando realmente precisar.
+O Fundo de Garantia por Tempo de Serviço (FGTS) funciona como uma poupança compulsória que o empregador deposita todo mês, equivalente a um percentual do salário. Esse dinheiro fica guardado em uma conta vinculada ao trabalhador e só pode ser sacado em situações previstas por lei, como demissão sem justa causa, compra da casa própria ou aposentadoria. Pense no FGTS como um “colchão” que cresce lentamente, quase como se fosse um [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026) que você paga para o futuro, mas que só pode ser usado quando realmente precisar.
 
 ![O que é o FGTS  ](/images/glossario/fgts-inline-1.webp)
 
@@ -32,7 +32,7 @@ Todo mês o empregador faz um depósito automático, que costuma ser cerca de um
 
 ## Por que o FGTS importa para o seu bolso  
 
-- **Segurança**: funciona como uma reserva de emergência que não pode ser mexida livremente, evitando gastos impulsivos.  
+- **Segurança**: funciona como uma [reserva de emergência](/ferramentas/calculadora-reserva) que não pode ser mexida livremente, evitando gastos impulsivos.  
 - **Planejamento**: ao saber que tem esse recurso, dá para organizar metas de longo prazo, como a compra da casa própria ou a aposentadoria.  
 - **Benefício trabalhista**: ao ser demitido sem justa causa, o trabalhador recebe o saldo acumulado mais uma multa de 40 % sobre o total, o que pode representar o equivalente a alguns meses de aluguel.  
 
@@ -46,13 +46,13 @@ Esses pontos mostram que o FGTS não é apenas um detalhe burocrático; ele pode
 
 1. **Acompanhe o saldo**: verifique periodicamente o extrato para confirmar se os depósitos estão corretos.  
 2. **Calcule o potencial de saque**: use uma planilha ou um app para projetar quanto você teria disponível em 5, 10 ou 15 anos, considerando a correção monetária.  
-3. **Planeje a compra da casa**: se o objetivo for adquirir um imóvel, o FGTS pode ser usado como parte do pagamento ou para amortizar o financiamento, reduzindo o valor das parcelas.  
+3. **Planeje a compra da casa**: se o objetivo for adquirir um imóvel, o FGTS pode ser usado como parte do pagamento ou para amortizar o [financiamento](/glossario/financiamento), reduzindo o valor das parcelas.  
 
-Essas ações transformam o FGTS de um recurso “escondido” em uma ferramenta ativa de planejamento financeiro.
+Essas ações transformam o FGTS de um recurso “escondido” em uma ferramenta ativa de [planejamento financeiro](/glossario/planejamento-financeiro).
 
 ## FinMoovi e o FGTS  
 
-Se você ainda não tem um jeito fácil de monitorar tudo isso, o FinMoovi chega como um amigo que entende de finanças. A captura inteligente permite tirar foto da sua nota de pagamento ou gravar a voz dizendo “FGTS” e o app reconhece automaticamente o depósito, categorizando‑o como “Reserva de Emergência”. A multimoeda (BRL/USD/EUR) garante que quem ganha em outra moeda também veja o equivalente ao seu FGTS, facilitando o planejamento internacional. O fluxo de caixa mostra o impacto do depósito mensal no seu orçamento, enquanto os relatórios mensais destacam o crescimento do fundo ao longo do tempo.  
+Se você ainda não tem um jeito fácil de monitorar tudo isso, o FinMoovi chega como um amigo que entende de finanças. A captura inteligente permite tirar foto da sua nota de pagamento ou gravar a voz dizendo “FGTS” e o app reconhece automaticamente o depósito, categorizando‑o como “[Reserva de Emergência](/glossario/reserva-de-emergencia)”. A multimoeda (BRL/USD/EUR) garante que quem ganha em outra moeda também veja o equivalente ao seu FGTS, facilitando o planejamento internacional. O [fluxo de caixa](/glossario/fluxo-de-caixa) mostra o impacto do depósito mensal no seu orçamento, enquanto os relatórios mensais destacam o crescimento do fundo ao longo do tempo.  
 
 Além disso, o modo compras permite criar uma lista de itens que você pretende adquirir com o FGTS, como a entrada de um imóvel, e o total é atualizado em tempo real. Lembretes de saldo avisam quando o valor atinge um patamar que pode ser usado, e a sincronização offline garante que você veja os números mesmo sem internet.
 

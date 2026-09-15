@@ -20,7 +20,7 @@ seo:
 
 ## El dolor de las cuotas inesperadas
 
-Te ha pasado que, al abrir la cuenta bancaria, ves que un gasto grande se ha convertido en varias cuotas y, de repente, el saldo que tenías para la compra del supermercado o el pago del alquiler se ha evaporado. Esa sensación de “¿dónde se fue mi dinero?” es típica cuando el parcelamiento no está bien planificado y termina chocando con otras obligaciones mensuales.
+Te ha pasado que, al abrir la cuenta bancaria, ves que un gasto grande se ha convertido en varias cuotas y, de repente, el saldo que tenías para la compra del supermercado o el pago del [alquiler](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026) se ha evaporado. Esa sensación de “¿dónde se fue mi dinero?” es típica cuando el parcelamiento no está bien planificado y termina chocando con otras obligaciones mensuales.
 
 ![El dolor de las cuotas inesperadas](/images/glossario/parcelamento-inline-1.webp)
 
@@ -28,7 +28,7 @@ Te ha pasado que, al abrir la cuenta bancaria, ves que un gasto grande se ha con
 
 ## ¿Qué es el parcelamento?
 
-El parcelamento es la posibilidad de dividir un pago grande en varias partes más pequeñas, que se van cobrando en fechas distintas. En vez de pagar todo de una vez, la deuda se reparte en cuotas mensuales, quincenales o según el acuerdo con el vendedor. Es como comprar una bicicleta y pagarla en diez meses, en lugar de desembolsar el precio completo al día de la compra. Cada cuota incluye una parte del capital y, a veces, un pequeño interés o cargo administrativo.
+El parcelamento es la posibilidad de dividir un pago grande en varias partes más pequeñas, que se van cobrando en fechas distintas. En vez de pagar todo de una vez, la [deuda](/es/glossario/es-deuda) se reparte en cuotas mensuales, quincenales o según el acuerdo con el vendedor. Es como comprar una bicicleta y pagarla en diez meses, en lugar de desembolsar el precio completo al día de la compra. Cada cuota incluye una parte del capital y, a veces, un pequeño [interés](/es/glossario/es-interes) o cargo administrativo.
 
 ## Ventajas y riesgos del parcelamento
 
@@ -43,7 +43,7 @@ El parcelamento puede ser una herramienta útil, pero también tiene su lado osc
 
 
 - **Riesgos**  
-  - Las cuotas pueden acumularse y sobrecargar tu flujo de caja si no las distribuyes bien.  
+  - Las cuotas pueden acumularse y sobrecargar tu [flujo de caja](/es/glossario/es-flujo-de-caja) si no las distribuyes bien.  
   - Los intereses ocultos pueden elevar el costo total del producto.  
   - Olvidar una fecha de pago genera cargos moratorios y afecta tu score crediticio.
 
@@ -56,7 +56,7 @@ Para que el parcelamento no se convierta en una trampa, es clave tener claridad 
 
 ## FinMoovi al rescate del parcelamento
 
-Aquí es donde FinMoovi hace la diferencia. Con su captura inteligente, basta una foto del recibo o una nota de voz y la app categoriza automáticamente la compra y crea el calendario de cuotas. Gracias a la funcionalidad multimoneda, puedes ver el impacto de una cuota en dólares, euros o la moneda que uses, sin tener que hacer conversiones manuales. El flujo de caja y los informes te muestran, en tiempo real, cuánto dinero queda disponible después de descontar cada cuota, y la planificación mensual te ayuda a fijar metas de ahorro mientras cumples con tus pagos. Además, FinMoovi reparte las cuotas en los meses correctos dentro de tu flujo de caja, de modo que ninguna te sorprende. El modo compras te permite armar una lista, ver el total en tiempo real y decidir si conviene parcelar o pagar al contado. Los recordatorios y alertas de saldo te avisan con antelación si una cuota está a punto de quedar sin fondos, y la versión offline/PWA garantiza que siempre tendrás acceso a tus datos, incluso sin conexión.
+Aquí es donde FinMoovi hace la diferencia. Con su captura inteligente, basta una foto del recibo o una nota de voz y la app categoriza automáticamente la compra y crea el calendario de cuotas. Gracias a la funcionalidad multimoneda, puedes ver el impacto de una cuota en dólares, euros o la moneda que uses, sin tener que hacer conversiones manuales. El flujo de caja y los informes te muestran, en tiempo real, cuánto dinero queda disponible después de descontar cada cuota, y la planificación mensual te ayuda a fijar metas de [ahorro](/es/glossario/es-ahorro) mientras cumples con tus pagos. Además, FinMoovi reparte las cuotas en los meses correctos dentro de tu flujo de caja, de modo que ninguna te sorprende. El modo compras te permite armar una lista, ver el total en tiempo real y decidir si conviene parcelar o pagar al contado. Los recordatorios y [alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no) de saldo te avisan con antelación si una cuota está a punto de quedar sin fondos, y la versión offline/PWA garantiza que siempre tendrás acceso a tus datos, incluso sin conexión.
 
 ## Consejos prácticos para manejar tus cuotas
 
