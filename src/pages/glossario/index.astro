@@ -5,6 +5,7 @@ import Footer from '@components/footer/Footer.astro';
 import CTAVariado from '@components/glossario/CTAVariado.astro';
 import { getCollection } from 'astro:content';
 import { canonicalPath } from '@/utils/url';
+import { perguntaDoTermo } from '@/utils/glossario-pergunta';
 
 const glossario = await getCollection('glossario', ({ data }) => data.locale === 'pt');
 const sorted = glossario.sort((a, b) => a.data.term.localeCompare(b.data.term, 'pt-BR'));
@@ -21,7 +22,7 @@ const faqSchema = {
   "@type": "FAQPage",
   "mainEntity": sorted.map(term => ({
     "@type": "Question",
-    "name": `O que é ${term.data.term}?`,
+    "name": perguntaDoTermo(term.data.term),
     "acceptedAnswer": {
       "@type": "Answer",
       "text": term.data.definition

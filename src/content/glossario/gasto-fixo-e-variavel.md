@@ -1,5 +1,5 @@
 ---
-term: "gasto fixo e variavel"
+term: "gasto fixo e variável"
 definition: "O que é gasto fixo e variavel e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 title: "gasto fixo e variavel - Glossário Financeiro"
 description: "O que é gasto fixo e variavel e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."

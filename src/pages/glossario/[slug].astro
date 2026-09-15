@@ -11,6 +11,7 @@ import SchemaBreadcrumb from '@components/seo/SchemaBreadcrumb.astro';
 import { getCollection } from 'astro:content';
 import { config } from '../../../site.config';
 import { canonicalPath } from '@/utils/url';
+import { perguntaDoTermo } from '@/utils/glossario-pergunta';
 
 export async function getStaticPaths() {
   const glossario = await getCollection('glossario', ({ data }) => data.locale === 'pt');
@@ -41,7 +42,7 @@ const faqSchema = {
   "@type": "FAQPage",
   "mainEntity": [{
     "@type": "Question",
-    "name": `O que é ${term.data.term}?`,
+    "name": perguntaDoTermo(term.data.term),
     "acceptedAnswer": {
       "@type": "Answer",
       "text": term.data.definition
@@ -72,7 +73,7 @@ const schemaBreadcrumbItems = [
 ---
 
 <BaseLayout
-  title={`O que é ${term.data.term}? Entenda de forma simples`}
+  title={`${perguntaDoTermo(term.data.term)} Entenda de forma simples`}
   description={term.data.definition}
   keywords={[term.data.term.toLowerCase(), `o que é ${term.data.term.toLowerCase()}`, 'glossário financeiro', 'educação financeira']}
   alternates={alternates}
@@ -96,7 +97,7 @@ const schemaBreadcrumbItems = [
         <!-- Header -->
         <header class="glossario-post-header">
           <span class="glossario-post-category">{term.data.category}</span>
-          <h1 class="glossario-post-title">O que é {term.data.term}?</h1>
+          <h1 class="glossario-post-title">{perguntaDoTermo(term.data.term)}</h1>
           <p class="glossario-post-definition">{term.data.definition}</p>
         </header>
 
@@ -133,7 +134,7 @@ const schemaBreadcrumbItems = [
             <div class="related-grid">
               {relatedTerms.map(rt => (
                 <a href={canonicalPath(`/glossario/${rt.slug}`)} class="related-card">
-                  <span class="related-question">O que é {rt.data.term}?</span>
+                  <span class="related-question">{perguntaDoTermo(rt.data.term)}</span>
                   <p class="related-def">{rt.data.definition.substring(0, 100)}...</p>
                 </a>
               ))}
