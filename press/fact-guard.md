@@ -1,7 +1,7 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-09-14T10:19:13.196Z
-**Posts:** 438 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 63
+**Gerado em:** 2026-09-15T09:45:58.407Z
+**Posts:** 447 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 63
 
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
@@ -88,9 +88,6 @@
 **en-etfs-what-they-are-and-how-to-invest-simply-and-profitably.md**
 - _, IMAB11) in 70/30 or 60/40 ratios, according to your profile._
 
-**en-finmoovi-cost-of-living-index-august-2026.md**
-- _In August 2026, the [cost of living](/en/glossario/en-cost-of-living) in Brazil fell 0,32 % according to the overall IPCA, indicating slight deflation for the month._
-
 **en-finmoovi-cost-of-living-index-july-2026.md**
 - _07 % according to the consumer price index (CPI), indicating a modest increase in consumer prices for the month._
 
@@ -133,6 +130,9 @@
 **entenda-a-amortizacao-price-e-otimize-suas-financas-em-2026.md**
 - _Conforme o saldo vai diminuindo, a parcela passa a amortizar mais do principal._
 - _A PRICE tem parcelas fixas ao longo de todo o contrato, enquanto a SAC tem parcelas que diminuem conforme o saldo devedor é amortizado, resultando em pagamentos maiores no início e menores depois._
+
+**entenda-a-fatura-do-cartao-e-tome-o-controle-do-seu-dinheiro.md**
+- _A fatura oferece opções que variam de acordo com o banco emissor, mas as duas mais comuns são:_
 
 **entenda-o-saldo-pendente-e-como-regularizar-suas-contas.md**
 - _Clique em “Pagar agora” – o app abre a opção de pagamento via transferência, boleto ou PIX, conforme a sua preferência._
