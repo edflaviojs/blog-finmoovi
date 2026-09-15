@@ -3,6 +3,7 @@ title: "Como freelancers podem organizar as finanças em 2026"
 description: "Descubra um método prático para freelancers controlarem receitas, despesas e metas, usando um app que simplifica tudo em poucos minutos por dia."
 tickerHeadline: "O truque que salva seu caixa"
 image: "/images/posts/como-freelancers-podem-organizar-as-financas-em-2026.webp"
+imageAlt: "Um calendário de couro, uma calculadora e moedas, folhas de plantas, em fundo branco."
 category: "orcamento"
 locale: "pt"
 tags: ["freelancer","finanças pessoais","controle de gastos","organização financeira","app financeiro","metas mensais","captura inteligente","how do freelancers organize finances"]

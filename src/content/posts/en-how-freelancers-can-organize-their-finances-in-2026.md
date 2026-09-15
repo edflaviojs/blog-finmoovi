@@ -3,6 +3,7 @@ title: "How freelancers can organize their finances in 2026"
 description: "Learn a simple method for freelancers to track income, expenses and goals with an app that takes just minutes each day."
 tickerHeadline: "The trick that saves your cash"
 image: "/images/posts/como-freelancers-podem-organizar-as-financas-em-2026.webp"
+imageAlt: "A brown leather journal, a calculator, and coins on a white marble surface."
 category: "orcamento"
 locale: "en"
 tags: ["freelancer","personal finance","expense tracking","financial organization","finance app","monthly goals","smart capture","how freelancers organize finances"]

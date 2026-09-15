@@ -4,6 +4,7 @@ definition: "What Patrimônio is and how it shows up in your everyday money — 
 title: "Patrimônio - Financial Glossary"
 description: "What Patrimônio is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/patrimonio.webp"
+imageAlt: "A glass vase with coins and a plant, a safe, and a bar graph with gold coins."
 category: "basico"
 tags: ["Patrimônio", "glossary", "finance"]
 author: "FinMoovi"

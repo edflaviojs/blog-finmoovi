@@ -3,6 +3,7 @@ title: "Understand Your Credit Card Statement and Take Control of Your Money in 
 description: "Learn what a credit‑card statement is, how it works, and how FinMoovi can help you organize expenses in just minutes."
 tickerHeadline: "The statement that can change your walle"
 image: "/images/posts/entenda-a-fatura-do-cartao-e-tome-o-controle-do-seu-dinheiro.webp"
+imageAlt: "A laptop and two monitors on a desk, with a mug and plant nearby."
 category: "dicas"
 locale: "en"
 tags: ["credit card statement","personal finance","budgeting","money management","FinMoovi"]

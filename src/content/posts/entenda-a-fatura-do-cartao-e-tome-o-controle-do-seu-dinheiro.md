@@ -3,6 +3,7 @@ title: "Entenda a fatura do cartão e tome o controle do seu dinheiro em 2026"
 description: "Descubra, de forma prática, o que é a fatura do cartão, como ela funciona e como usar o FinMoovi para organizar suas despesas em poucos minutos."
 tickerHeadline: "A fatura que pode mudar seu bolso"
 image: "/images/posts/entenda-a-fatura-do-cartao-e-tome-o-controle-do-seu-dinheiro.webp"
+imageAlt: "Computador, laptop, tela colorida, mesas, plantas, prateleiras, objetos brancos, luz natural."
 category: "dicas"
 locale: "pt"
 tags: ["o que é fatura","finanças pessoais","economia","dinheiro"]

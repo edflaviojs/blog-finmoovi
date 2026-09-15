@@ -3,6 +3,7 @@ title: "Entiende la factura de la tarjeta y toma el control de tu dinero en 2026
 description: "Descubre, de forma práctica, qué es la factura de la tarjeta, cómo funciona y cómo usar FinMoovi para organizar tus gastos en pocos minutos."
 tickerHeadline: "La factura que puede cambiar tu bolsillo"
 image: "/images/posts/entenda-a-fatura-do-cartao-e-tome-o-controle-do-seu-dinheiro.webp"
+imageAlt: "Un escritorio con un ordenador portátil y dos monitores, una taza de café y un libro."
 category: "dicas"
 locale: "es"
 tags: ["qué es factura","finanzas personales","economía","dinero"]

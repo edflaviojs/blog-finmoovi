@@ -4,6 +4,7 @@ definition: "Qué es patrimonio y cómo aparece en tu día a día — explicado 
 title: "patrimonio - Glosario Financiero"
 description: "Qué es patrimonio y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/patrimonio.webp"
+imageAlt: "Una imagen de un fondo de inversión con un gráfico de crecimiento, un cofre y monedas."
 category: "basico"
 tags: ["patrimonio", "glosario", "finanzas"]
 author: "FinMoovi"
