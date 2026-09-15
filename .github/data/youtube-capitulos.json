@@ -1795,8 +1795,150 @@
           "titulo": "Questão 10"
         }
       ]
+    },
+    {
+      "videoId": "E21PZA5m47E",
+      "title": "FINANÇAS PESSOAIS sem PLANILHAS e SEM CULPA - Live do Bastter",
+      "channel": "Bastter.com",
+      "duracaoSeg": 3995,
+      "idioma": "pt",
+      "viewsPerDay": 644,
+      "vistoEm": "2026-09-15",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "Introdução"
+        },
+        {
+          "seg": 58,
+          "titulo": "Finanças pessoais"
+        },
+        {
+          "seg": 162,
+          "titulo": "Sobre gastar"
+        },
+        {
+          "seg": 575,
+          "titulo": "Pequenos gastos"
+        },
+        {
+          "seg": 723,
+          "titulo": "Atitudes inúteis"
+        },
+        {
+          "seg": 865,
+          "titulo": "O verdadeiro inimigo"
+        },
+        {
+          "seg": 1030,
+          "titulo": "Inflação e padrão de vida"
+        },
+        {
+          "seg": 1205,
+          "titulo": "Comprar para outros"
+        },
+        {
+          "seg": 1263,
+          "titulo": "Desequilíbrio financeiro"
+        },
+        {
+          "seg": 1430,
+          "titulo": "As dívidas"
+        },
+        {
+          "seg": 1572,
+          "titulo": "Equilíbrio e planilhas"
+        },
+        {
+          "seg": 1963,
+          "titulo": "Função do dinheiro"
+        },
+        {
+          "seg": 2079,
+          "titulo": "Função do patrimônio"
+        },
+        {
+          "seg": 2129,
+          "titulo": "E o carro?"
+        },
+        {
+          "seg": 2210,
+          "titulo": "Perguntas"
+        }
+      ]
+    },
+    {
+      "videoId": "eQvPNZXLvD4",
+      "title": "Quanto CUSTA Viajar para a China? Roteiro Completo e Gastos Reais",
+      "channel": "Ingrid Miranda",
+      "duracaoSeg": 2024,
+      "idioma": "pt",
+      "viewsPerDay": 205,
+      "vistoEm": "2026-09-15",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "Oi, meu povo!"
+        },
+        {
+          "seg": 3,
+          "titulo": "Roteiro de Viagem na China"
+        },
+        {
+          "seg": 87,
+          "titulo": "Roteiro de 5 dias em Pequim"
+        },
+        {
+          "seg": 362,
+          "titulo": "Muralha da China Simatai em Gubei"
+        },
+        {
+          "seg": 418,
+          "titulo": "Roteiro de 6 dias em Xangai"
+        },
+        {
+          "seg": 580,
+          "titulo": "Gastos de duas semanas na China"
+        },
+        {
+          "seg": 588,
+          "titulo": "Passagens aéreas e de trem"
+        },
+        {
+          "seg": 704,
+          "titulo": "Planilha com gastos, roteiros e hotéis"
+        },
+        {
+          "seg": 736,
+          "titulo": "Quanto custa hospedagem na China"
+        },
+        {
+          "seg": 843,
+          "titulo": "Custo de transportes na China"
+        },
+        {
+          "seg": 1078,
+          "titulo": "Gastos com alimentação"
+        },
+        {
+          "seg": 1342,
+          "titulo": "Todas as atrações que visitamos na China"
+        },
+        {
+          "seg": 1601,
+          "titulo": "Gastos com compras pela China"
+        },
+        {
+          "seg": 1847,
+          "titulo": "Quanto custou passar duas semanas na China"
+        },
+        {
+          "seg": 2020,
+          "titulo": "Tchau!"
+        }
+      ]
     }
   ],
-  "atualizadoEm": "2026-09-14T09:23:48.219Z",
-  "total": 33
+  "atualizadoEm": "2026-09-15T09:04:22.284Z",
+  "total": 35
 }
