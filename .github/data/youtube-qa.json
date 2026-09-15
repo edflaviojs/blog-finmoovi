@@ -1330,5 +1330,23 @@
     ],
     "veredito": "1. **O LOOP — 9/10**  \nO primeiro e o último quadro mostram **“Meu irmão pediu dinheiro”** no mesmo lugar e com a mesma composição. Para um loop, está muito bem preparado. A pequena diferença de enquadramento/estado gráfico não parece problemática.\n\n2. **A FAIXA DE BAIXO — 6/10**  \nAs legendas ficam muito perto da região inferior em vários quadros, especialmente **5, 6, 7 e 8**. No celular, podem competir com os elementos da interface.\n\n3. **TEXTO POR CIMA DE TEXTO — 9/10**  \nNão vejo frases claramente sobrepostas nem palavras cortadas. Os textos estão bem separados. O quadro 7 tem **“dinheiro precisa ficar”**, mas não há sobreposição.\n\n4. **LEGIBILIDADE — 8/10**  \nOs textos principais são grandes, fortes e com bom contraste. Algumas palavras menores, como **“de anos”, “do mês” e “precisa ficar”**, perdem um pouco de força em tela pequena.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — 5/10**  \nHá **muito espaço vazio na metade inferior** praticamente em todos os quadros. Isso faz a composição parecer subaproveitada.\n\n6. **COERÊNCIA — 8/10**  \nOs quadros claramente pertencem ao mesmo vídeo: mesma identidade visual, cores, tipografia e elementos gráficos. A sequência também conta uma pequena história: pedido → descoberta → falta de dinheiro → contas → empréstimo.\n\n7. **TESTE CENTRAL — 5/10**  \n**Parece mais uma sequência de slides animáveis do que um vídeo profissional**, porque quase toda a informação está concentrada em cards e diagramas estáticos, com bastante área vazia.\n\n**NOTA GERAL: 7/10**  \n**PROBLEMA 1: Muito espaço vazio na metade inferior, principalmente nos quadros 1–4 e 6–8.**  \n**PROBLEMA 2: Legendas muito próximas da faixa inferior da interface, especialmente nos quadros 5–8.**  \n**PROBLEMA 3: A composição tem aparência de slides, principalmente pelos cards estáticos e pela pouca informação visual ocupando a tela.**  \n**PRIMEIRA COISA A MUDAR: Subir e ampliar a área de conteúdo/ação para preencher melhor a tela vertical, mantendo as legendas fora da zona inferior da interface.**",
     "quando": "2026-09-14T10:10:52.104Z"
+  },
+  {
+    "slug": "loop-dinheiro-so-seu-se-parar",
+    "formato": "loop16",
+    "nota": 6.5,
+    "leitor": "gpt-5-2",
+    "fotogramas": [
+      0.1,
+      2.1,
+      4.2,
+      6.4,
+      8.5,
+      10.6,
+      12.7,
+      14.8
+    ],
+    "veredito": "1. **O LOOP — 7/10**  \nO primeiro e o último quadro repetem **“Parar de pedir dinheiro”**, então a ideia de loop funciona. Porém, o texto menor muda: no primeiro aparece **“o que acontece”** e no último **“pedir.”**. Essa diferença denuncia a reinicialização.\n\n2. **A FAIXA DE BAIXO — 6/10**  \nHá textos importantes muito baixos, principalmente nos quadros **5, 6 e 8**. No celular, essa região pode ficar parcialmente coberta pelos elementos da interface.\n\n3. **TEXTO POR CIMA DE TEXTO — 8/10**  \nNão vejo sobreposição grave entre frases. Os destaques coloridos nas legendas funcionam bem. Também não há palavras claramente cortadas pela borda.\n\n4. **LEGIBILIDADE — 8/10**  \nOs títulos grandes têm ótimo tamanho e contraste. As legendas menores ainda são legíveis, mas poderiam subir um pouco e ganhar mais destaque.\n\n5. **A TELA ESTÁ VIVA OU VAZIA? — 5/10**  \nEsse é um dos principais problemas. Vários quadros deixam **uma área enorme vazia na metade inferior**, especialmente os quadros 1, 2, 3, 4, 7 e 8. Visualmente parece que falta conteúdo.\n\n6. **COERÊNCIA — 8/10**  \nA identidade visual é muito consistente: mesmo fundo, tipografia, cores e elementos gráficos. A sequência também sugere uma história, embora alguns quadros pareçam repetitivos.\n\n7. **TESTE CENTRAL — 6/10**  \n**Ainda parece mais uma sequência de slides animados do que um vídeo profissional**, porque muitos quadros têm apenas um título central sobre um fundo praticamente parado.\n\nNOTA GERAL: 6.5\nPROBLEMA 1: A grande área vazia em vários quadros, especialmente 1–4 e 7–8\nPROBLEMA 2: As legendas ficam baixas demais, principalmente no quadro 5/10.6s\nPROBLEMA 3: O loop é perceptível porque o texto inferior do primeiro e último quadro é diferente\nPRIMEIRA COISA A MUDAR: Preencher melhor a tela com elementos visuais e subir todas as legendas para uma área segura do celular.",
+    "quando": "2026-09-15T09:36:13.151Z"
   }
 ]
