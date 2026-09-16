@@ -850,12 +850,77 @@ que sobreviveu à fusão de hoje.
 > refeitas**. Foi por isto que ficou escrito *"não renomear mais slugs"* — agora
 > tem preço medido: **5 páginas invisíveis** durante meses.
 
+## 7. A 2ª maior oportunidade do blog — e o código a vazar para a tela
+
+O `strikingDistance` do digest já listava isto há semanas e ninguém tinha aberto.
+⚠️ **Eu próprio li o campo errado na primeira tentativa** (`x.page`, que não
+existe; o certo é `x.pages`, uma lista) e quase fui pedir uma corrida nova ao
+GSC para buscar um dado que já estava no ficheiro. **Terceira vez no mesmo dia em
+que a busca é que estava estreita, não o facto ausente.**
+
+| pos | aparições | cliques | busca | página |
+|---|---|---|---|---|
+| 8 | 1.161 | 0 | como reduzir gastos mensais | a página vencedora |
+| **10,2** | **206** | **0** | **como organizar as finanças pessoais** | **`/como-organizar-financas/`** |
+| 9,7 | 20 | 0 | is credit card worth it 2026 | post EN |
+
+**A segunda não é post nem verbete: é uma página solta.** Por isso escapava a
+todos os robôs de conteúdo — eles varrem `posts` e `glossario`.
+
+### 🔴 Antes do SEO, um defeito à vista
+
+Ao ler a página apareceu isto, no ar, para quem visita:
+
+```
+"Começar com o $FinMoovi (7 dias grátis)"        ← cifrão colado na marca
+"Milhares de pessoas já usam o $FinMoovi"
+página Sobre (en/es): "$contato@finmoovi.com"
+```
+
+E pior: na **página Sobre em inglês e espanhol** o link de contacto apontava
+literalmente para `mailto:${config.email.replyTo}` — **clicar não abria e-mail
+nenhum.** A página Sobre existe porque um diretório recusou o site por
+*"Untrustworthy"*; dois dos três idiomas tinham o contacto morto.
+
+**Duas causas ao mesmo tempo, e a segunda é silenciosa:**
+
+| onde | o que acontece |
+|---|---|
+| markup do Astro | `{expr}` já é avaliado — o `$` à frente **sobra à vista** |
+| string de aspas | `${expr}` **não interpola**: fica o texto do código |
+
+O segundo caso cai dentro do **JSON-LD**: o Google lia *"use um app como o
+${config.app.name}"*. Não dá erro, não fica vermelho, só sai errado.
+
+**Eram 6 páginas**, não uma: `como-organizar-financas`, `como-sair-das-dividas`,
+`orcamento-pessoal`, `guia-30-dias`, `app`, `en/sobre`, `es/sobre`. Medido no
+**HTML construído**, não na fonte: antes 5 páginas com `${config…}` e 4 com
+`$FinMoovi`; depois **zero e zero no site inteiro**, com controle falso nas duas
+corridas e 14 blocos JSON-LD válidos.
+
+### Depois disso, o snippet
+
+| | |
+|---|---|
+| antes | Como Organizar Finanças Pessoais - Guia Completo 2026 (69 car.) · *"**Aprenda como** organizar suas finanças pessoais do zero…"* |
+| agora | Como organizar as finanças pessoais em 5 passos (63) · *"Os 5 passos na ordem certa: mapear 30 dias de gastos, aplicar o 50-30-20, montar a reserva de 3 a 6 meses, quitar as dívidas caras e só então investir."* |
+
+É o defeito que este documento já tinha nomeado: **82 das 151 descrições abrem
+com "Descubra"/"Aprenda a" e 107 não têm um único número.** E *"guia"* e
+*"completo"* estão literalmente na lista de palavras que a trava de canibalização
+desta casa trata como ruído.
+
+**Conferido que não promete a mais:** as cinco coisas da descrição — 30 dias,
+50-30-20, 3 a 6 meses, cheque especial, investir — foram todas encontradas no
+HTML construído. O controle falso (*"cashback"*) não aparece.
+
 ---
 
 ## O que fica ABERTO depois de hoje
 
-1. ⏳ **Medir o CTR por volta de 06/10** — agora são **quatro** páginas
-   (as três de gastos mensais + guardar dinheiro). Contar com a AI Overview.
+1. ⏳ **Medir o CTR por volta de 06/10** — agora são **cinco** páginas (as três
+   de gastos mensais, guardar dinheiro e `/como-organizar-financas/`). Contar com
+   a AI Overview.
 2. 🔴 **O glossário precisa de decisão, não de conserto.** Continua igual.
 3. ✅ **O par do Dia das Crianças está fundido** (secção 5). Em aberto fica o
    **buraco do `slug-aposentado` para `/posts/`**: só o glossário o chama, e
@@ -874,3 +939,9 @@ que sobreviveu à fusão de hoje.
 6. **28 descrições usam bloco YAML `>-`** — 25 antigas + 3 convertidas hoje pelo
    robô das capas.
 7. **O ponto cego dos 80 caracteres** no `slugifyTheme`.
+
+8. 🔴 **A página Sobre mostra dois e-mails diferentes:** `finmoovi@gmail.com` em
+   português e `contato@finmoovi.com` em inglês e espanhol. **Decisão do Ed.**
+9. **As páginas soltas não são varridas por robô nenhum.** Os robôs de conteúdo
+   olham `posts` e `glossario`; as 22 páginas em `src/pages` ficam de fora — e é
+   lá que estava a 2ª maior oportunidade e o código vazado.
