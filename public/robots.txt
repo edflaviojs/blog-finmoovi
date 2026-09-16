@@ -5,6 +5,12 @@ Allow: /
 # rastreio num desvio que nunca dá em página. (Regra mais específica vence o
 # `Allow: /` acima.)
 Disallow: /status/
+# /api/ são as 10 funções que o site chama pelo navegador (cotações, moedas,
+# comentários, newsletter). Não são páginas: respondem 404 a um GET simples. O
+# Google andou a rastreá-las e a registá-las como "não encontrado" — apareceu no
+# relatório de cobertura de 16/09/2026. Bloquear aqui não afeta o site: robots.txt
+# só fala com rastreadores, e as chamadas do navegador continuam iguais.
+Disallow: /api/
 
 Sitemap: https://blog.finmoovi.com/sitemap-index.xml
 Sitemap: https://blog.finmoovi.com/sitemap-news.xml
