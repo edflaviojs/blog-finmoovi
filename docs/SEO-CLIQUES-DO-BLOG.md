@@ -333,3 +333,267 @@ percentagem e ano inventados de propósito). Os 8 passaram.
    do *"+2.400 pessoas"*. **Decisão do Ed, não tocado.**
 7. **25 descrições usam bloco YAML `>-`** — família de `blog-parou-3-dias-yaml-dobrado`.
    **Por verificar, não tocado.**
+
+---
+
+# 16/09/2026: o blog não tem um problema de tema. Tem uma página.
+
+> A pergunta do dia era a COISA 2 — *decidir os temas*, com número e não com
+> palpite. A medição respondeu outra coisa, e a resposta muda a pergunta.
+
+## A medição que faltava: 16 meses, não 28 dias
+
+Entrou o `gsc-temas.js` (só à mão, `gsc-temas.yml`, não commita nada — escreve no
+log da corrida para não disputar o repo com os robôs). Ele responde por **TEMA**,
+onde o digest existente responde por **BUSCA**, e olha o histórico todo que o GSC
+guarda em vez dos últimos 28 dias.
+
+Dois controles falsos correm na mesma execução e derrubam a corrida se passarem:
+um tema com palavras absurdas, que não pode capturar nada, e uma busca inventada
+pedida ao GSC, que tem de voltar vazia.
+
+**2025-05-21 → 2026-09-13: 2.397 buscas · 10.815 impressões · 1 clique.**
+
+### O blog é mais visto em INGLÊS do que em português
+
+O idioma sai do caminho da página (`/en/`, `/es/`) — um facto do site — e não de
+adivinhar a língua da busca. "etf" e "pix" não têm idioma nenhum.
+
+| idioma | impressões | % | cliques |
+|---|---|---|---|
+| **en** | 4.666 | **43,0%** | 0 |
+| pt | 3.517 | 32,4% | 0 |
+| es | 2.677 | 24,7% | **1** |
+
+⚠️ A primeira corrida classificou só em português e deixou **60,4% das
+impressões** por classificar. Não era cauda longa dispersa: eram as buscas EN/ES
+que as páginas `/en/` e `/es/` já servem (*financing* 465, *investment fund* 341,
+*financiamiento* 171). **Um dicionário só em português dava a tabela ao
+contrário** — punha orçamento em primeiro e escondia que investimentos, somando
+os três idiomas, é maior.
+
+### Que parte do blog recebe a procura — e em que posição
+
+| parte | impressões | % | páginas | posição média | chega ao top 10 |
+|---|---|---|---|---|---|
+| **glossário** | 7.126 | 65,6% | 301 | **69,1** | 70 (**1,0%**) |
+| **posts** | 2.661 | 24,5% | 92 | 39,5 | 1.262 (**47,4%**) |
+| **ferramentas** | 837 | 7,7% | 8 | **80,9** | 1 (0,1%) |
+| outras | 236 | 2,2% | 5 | 15,9 | 0 |
+
+Sem a posição, o número engana ao contrário: **7 mil impressões na página 8 e 7
+mil na primeira página são o mesmo número e coisas opostas.**
+
+> **O glossário é dois terços de tudo e está na página 7. As calculadoras estão
+> na página 8.** Os posts são um quarto do volume e quase metade deles chega à
+> primeira página.
+
+### 🔴 87% da força do blog vem de UMA página
+
+| impressões no top 10 | % | página |
+|---|---|---|
+| **1.162** | **87,2%** | `/posts/como-organizar-suas-despesas-mensais-com-facilidade-e/` |
+| 27 | 2,0% | `/en/posts/en-credit-card-vs-debit-card…` |
+| 25 | 1,9% | `/es/glossario/es-gasto-recurrente/` |
+| 18 | 1,4% | `/en/posts/en-5-alternatives-to-mobills-in-2026/` |
+
+**Tirando essa página, o blog inteiro — ~480 páginas em três idiomas — apareceu
+na primeira página do Google 171 vezes em um ano e quatro meses.**
+
+A média de uma secção pode ser boa por causa de uma única página: *"o blog tem um
+ativo"* e *"o blog tem UMA página"* produzem a mesma média e decisões opostas, e a
+diferença só aparece listando as páginas.
+
+### Demanda × oferta, por tema
+
+| tema | impressões | % | posição média | posts | pt/en/es | gloss/posts/ferram |
+|---|---|---|---|---|---|---|
+| investimentos | 4.031 | 37,3% | 73,2 | 21 | 694/2534/810 | 2959/936/143 |
+| orçamento | 1.922 | 17,8% | **25,5** | 57 | 1507/149/284 | 474/**1250**/0 |
+| financiamento | 1.601 | 14,8% | 59,9 | **6** | 167/978/458 | **1496**/34/73 |
+| juros compostos | 488 | 4,5% | 85,6 | **1** | 483/0/5 | 17/0/**471** |
+
+**Juros compostos: a procura vai toda para a CALCULADORA, não para posts.** O
+tema que se queria atacar com artigos não se ataca com artigos.
+
+---
+
+## O que o Semrush respondeu — e o que ele desmentiu
+
+Print de `keywordoverview?db=br&q=como+reduzir+gastos+mensais`:
+
+| | |
+|---|---|
+| volume Brasil | **40.500/mês** |
+| volume global | 97.300 (BR 40.500 · FR 14.800 · **UK 14.800** · ES 12.100 · **CA 4.400**) |
+| dificuldade | **43% — "Possible"** |
+| intenção | Informational · CPC R$ 1,03 · densidade 0,03 |
+
+### A busca é ganhável sem backlinks — e isso derruba o diagnóstico da véspera
+
+| pos | site | Page AS | domínios | backlinks | **buscas que a URL ganha** |
+|---|---|---|---|---|---|
+| 1 | itaú | 28 | 58 | 104 | 47 |
+| 3 | serasa | 17 | **3** | 6 | 11 |
+| 5 | vivaprev | **2** | 14 | 18 | **1** |
+| 8 | serasa | 16 | **2** | **2** | **90** |
+| 9 | blu365 | 6 | **1** | **1** | 16 |
+| — | **FinMoovi** | — | 0 | 0 | **2** |
+
+**Estava escrito aqui que nada ranqueia por falta de autoridade. É falso.** A
+página na posição 9 tem UM link. O blog ranqueia bem quando a busca não exige
+autoridade — e os temas escolhidos (juros compostos, KD 69) eram os que exigem.
+
+> **A régua certa não é volume. É volume × dificuldade × valor do clique.**
+
+### A coluna que ninguém tinha lido: CPC
+
+| busca | CPC | volume |
+|---|---|---|
+| **guardar dinheiro / guarda dinheiro** | **R$ 2,63** | 3.200 |
+| gastos mensais | R$ 1,81 | 720 |
+| gastos mensais planilha (**intenção COMERCIAL**) | R$ 1,71 | 590 |
+| como reduzir gastos mensais | R$ 1,03 | 40.500 |
+| **como economizar dinheiro** | **R$ 0,36** | **74.000** |
+
+"Como economizar dinheiro" tem 74 mil buscas e o clique quase não vale nada.
+"Guardar dinheiro" tem 3.200 e vale **sete vezes mais por clique**.
+
+### ⚠️ O Google já responde a pergunta na própria tela
+
+O SERP tem **AI Overview**, *People also ask*, *Video carousel*, *Reviews* e
+*Sitelinks*. O documento listava isto como hipótese não confirmada. **Está
+confirmado.**
+
+> **Isto muda o que esperar da medição de 06/10.** A conta *"posição 8 deveria
+> dar ~37 cliques"* vale para uma tela limpa. Se der 5 em vez de 37, **não é o
+> título que falhou** — é a tela. Registado agora para não se tirar a conclusão
+> errada dentro de três semanas.
+
+### ⚠️ Números do Keyword Magic que NÃO foram usados
+
+A lista devolve, dentro do banco do Brasil, buscas em francês (301.000),
+italiano (74.000) e alemão (60.500). Trezentas mil buscas em francês no Brasil
+não se sustenta. **Não conferido, não usado.**
+
+E o topo da semente "gastos" no Brasil é quase todo **serviço do governo** —
+abono salarial 201.000, PIS 110.000, FGTS 60.500, Desenrola, FIES, limpa nome.
+Volume enorme, público errado: quem digita "consultar PIS" não quer um app de
+finanças.
+
+---
+
+## O que foi feito
+
+### A mesma página, nos três idiomas, com o mesmo defeito
+
+| idioma | antes | agora | busca |
+|---|---|---|---|
+| pt | Como organizar suas despesas mensais | Como reduzir gastos mensais: 3 cortes e a planilha certa | 40.500 (15/09) |
+| **es** | Cómo **organizar** tus gastos mensuales | Cómo **reducir** gastos mensuales: 7 categorías y 5 minutos al día | **246.000** |
+| **en** | How to **Organize** Your Monthly Expenses | How to **Reduce** Monthly Expenses: 7 Categories, 5 Minutes | ~19.200 (UK+CA) |
+
+O espanhol e o inglês são traduções literais do título português — e por isso
+herdaram o defeito dele. **Cada idioma precisa da palavra que aquela gente
+digita.**
+
+⚠️ **O artigo espanhol não tem a secção *"Reduza seus gastos sem sofrimento"* que
+o português tem.** O título promete um pouco mais do que o texto entrega — menos
+do que prometia antes, mas ainda assim. O conserto completo é traduzir a secção.
+**Não feito.**
+
+⚠️ **O `24 hours` do artigo inglês tem um U+202F no meio — espaço invisível.** A
+verificação procurou `"24 hours"` com espaço normal, não encontrou, e ia levar a
+tirar da descrição um número que existe.
+
+### 🔴 A reescrita de 15/09 criou uma canibalização
+
+`como-reduzir-gastos-fixos-mensais-de-forma-eficaz` **já se chamava** "Como
+Reduzir Gastos Fixos Mensais", e a página das 1.161 impressões foi retitulada
+para "Como reduzir gastos mensais". Dois posts, a mesma busca.
+
+O post dos gastos fixos passa a dizer o que de facto ensina — **negociar**
+aluguel, internet, seguro e assinaturas, que são as suas próprias secções. A
+frase disputada sai do título e fica só na página que já ranqueia.
+
+**E a descrição genérica que este documento citou como sendo da página das 1.161
+impressões — *"Aprenda a reduzir gastos fixos… Descubra…"* — é do OUTRO post.**
+O documento misturou os dois.
+
+### O artigo dos gastos fixos tinha a conta errada
+
+A tabela soma **R$ 3.450 → R$ 2.950 = R$ 500/mês**. O texto afirmava **R$ 530**,
+e daí **R$ 6.360/ano** em vez de R$ 6.000. Corrigido, e a frase passa a mostrar a
+conta inteira para um erro destes ficar à vista.
+
+### 🔴 As três travas de canibalização não funcionavam
+
+| trava | o que fazia | medido | agora |
+|---|---|---|---|
+| `seo-guard.isThemeCovered` (11 geradores) | exigia **3 palavras iguais** | tema de 2 palavras **nunca** dispara; 100 das 212 entradas da fila (47%) têm <3 palavras; apanhava **8** | `need = min(3, tamanho)` → apanha **39** |
+| `validar-i18n` (CI) | compara o **nome do ficheiro** | o nome nunca muda, o **título** muda — por slug acusa **0** pares em 136 posts | passa a comparar slug+título: **3** pares, todos reais. **AVISO**, não erro |
+| `keyword-queue` (fila) | semelhança só para 3+ tokens | **0** das 212 apanhadas | 2 tokens entram pela contagem de partilhados (não pelo Jaccard): **17**, entre elas SEIS entradas para "economizar água" |
+
+O aviso do CI entra como aviso e não como erro de propósito: **já nasce com 3
+casos por resolver, e uma trava que deixa o CI vermelho no primeiro dia acaba
+desligada — e com ela para de publicar o blog inteiro.**
+
+O corte da fila fica em 2 tokens e não em 1 porque com 1 mediu-se falso alarme
+real: *"juros o que é"* era recusada por causa de *"calculadora juros
+compostos"*, que é outro tema.
+
+Tudo testado com as **funções reais**, não com cópias da regra, e com controles
+nos dois sentidos — o que tem de bloquear e o que tem de passar.
+
+---
+
+## A lista de temas (conferida um a um contra os 151 posts)
+
+Variações agrupadas: **"guardar dinheiro", "como guardar dinheiro", "guarda
+dinheiro" são UMA página, não três.**
+
+### Arrumar o que já existe
+
+| o quê | busca | volume | KD | CPC |
+|---|---|---|---|---|
+| título do post de guardar dinheiro | guardar/juntar dinheiro (6 variações) | ~11.500 | 23–36 | **R$ 2,63** |
+| título da planilha de gastos | planilha de gastos | 9.900 | 46 | R$ 1,35 |
+
+### Escrever novo — livres de verdade
+
+| busca | volume | KD | CPC |
+|---|---|---|---|
+| **planner financeiro** | 3.600 | **21** | R$ 1,35 |
+| **estou devendo para o banco e não tenho como pagar** | 1.000 | **22** | R$ 1,09 |
+| dívida de cartão de crédito que caduca | 720 | **29** | R$ 0,41 |
+| dívida de cartão de crédito (grupo) | ~3.300 | 34–36 | R$ 1,30 |
+
+### Não escrever
+
+- **orçamento pessoal** (1.300) — já existe `como-criar-orcamento-pessoal`
+- **gastos mensais** (720) — é a página vencedora, já serve
+- **como economizar dinheiro** (74.000) — KD 49 **e** CPC R$ 0,36
+
+**O grupo mais fácil de todos é DÍVIDAS (KD médio 33%) — e o blog tem 2 posts.**
+
+---
+
+## O que fica ABERTO
+
+1. ⏳ **Medir o CTR** por volta de **06/10** — as três páginas (pt/en/es) e a
+   colisão desfeita. Contar com a AI Overview a comer o clique.
+2. 🔴 **O glossário precisa de decisão, não de conserto.** 301 páginas, 66% das
+   aparições, posição 69, **1% chega ao top 10**. Consertar títulos na página 7
+   não traz clique: todo o glossário junto vale 120 impressões em posição
+   decente, contra 1.162 de uma única página. **Ligar o robô de CTR ao glossário
+   continua certo, mas não é prioridade** — ao contrário do que este documento
+   dizia.
+3. 🔴 **3 pares de canibalização por título por resolver** (Dia das Crianças,
+   Excel, e o resíduo de slug do par de hoje). Enquanto existirem, o aviso do CI
+   não pode ser promovido a erro.
+4. **A secção de cortes do artigo espanhol** por traduzir.
+5. **Os CTAs dizem *"Usado por milhares de pessoas"*** nos três idiomas — mesma
+   família do *"+2.400"*. **Decisão do Ed, não tocado.**
+6. **25 descrições usam bloco YAML `>-`** — por verificar, não tocado.
+7. **As calculadoras estão mortas no Google** (posição 81, uma impressão no top
+   10 em 16 meses). São **isca de link**, não conteúdo de SEO. Usá-las assim.
