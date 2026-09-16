@@ -1,0 +1,216 @@
+{
+  "slug": "viral-8NjZOK5WC5Q",
+  "term": "Dinheiro saindo agora",
+  "category": "mindset",
+  "keyword": "Dinheiro",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Quanto *dinheiro sai da sua conta* todo mês por causa de uma dívida?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "bola-de-ferro",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Quanto dinheiro sai da sua conta todo mês por causa de uma dívida? Às vezes são cento e cinquenta reais que você nem percebe mais.",
+      "durationSec": 9.6,
+      "shots": [
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro saindo sem perceber"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "dívida",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-de-ferro"
+          }
+        },
+        {
+          "anchor": "cento",
+          "visual": {
+            "type": "number",
+            "text": "R$ 150"
+          },
+          "sfx": "coin"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Você paga a parcela, paga outra conta, compra comida e segue o mês. Quando vê, aquele valor já saiu de novo.",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "paga",
+          "visual": {
+            "type": "statement",
+            "text": "O mês vai passando"
+          }
+        },
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          },
+          "sfx": "click"
+        },
+        {
+          "anchor": "valor",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-de-ferro"
+          },
+          "sfx": "thud"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "E esse cento e cinquenta vira trezentos quando duas parcelas ficam juntas. No ano, são três mil e seiscentos reais saindo da sua conta.",
+      "durationSec": 9.2,
+      "shots": [
+        {
+          "anchor": "cinquenta",
+          "visual": {
+            "type": "number",
+            "text": "R$ 150"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "trezentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 300"
+          }
+        },
+        {
+          "anchor": "três",
+          "visual": {
+            "type": "number",
+            "text": "R$ 3.600"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei minhas contas no FinMoovi e ele me mostrou as parcelas todas juntas na tela. Ficou fácil ver quanto saía todo mês.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Dashboard do FinMoovi mostrando as contas e parcelas organizadas"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "todas",
+          "visual": {
+            "type": "app",
+            "app": "fluxo",
+            "note": "Tela de fluxo mostrando as parcelas concentradas no mês"
+          }
+        },
+        {
+          "anchor": "quanto",
+          "visual": {
+            "type": "statement",
+            "text": "Agora dá para enxergar"
+          },
+          "sfx": "ding"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu também? Procura FinMoovi. São sete dias grátis para organizar suas contas.",
+      "durationSec": 5.8,
+      "shots": [
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "statement",
+            "text": "Veja onde seu dinheiro vai"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "number",
+            "text": "7 dias grátis"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "contas",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Se o dinheiro sai todo mês e você não acompanha, a dívida manda no seu salário. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro sai todo mês"
+          }
+        },
+        {
+          "anchor": "dívida",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-de-ferro"
+          }
+        },
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "statement",
+            "text": "Sem controle, ele desaparece"
+          },
+          "sfx": "boom"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Organize suas contas em 7 dias",
+    "target": "app"
+  },
+  "totalDurationSec": 50.3
+}
