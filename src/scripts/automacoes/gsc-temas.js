@@ -186,12 +186,24 @@ async function main() {
   // parece medido sem o ser.
   const paginasPorTema = new Map();
   const porIdioma = new Map();
+  const porSecao = new Map();
   for (const r of linhasQueryPage) {
     const caminho = r.keys[1].replace(/^https?:\/\/[^/]+/, '');
     const idioma = caminho.startsWith('/en/') ? 'en' : caminho.startsWith('/es/') ? 'es' : 'pt';
+    // Qual PARTE do blog recebe a impressão. Muda a decisão: se a procura cai no
+    // glossário, a resposta é mexer no glossário — escrever mais posts não
+    // atende quem procura a definição de uma palavra.
+    const secao = /\/glossario\//.test(caminho) ? 'glossario'
+      : /\/posts?\//.test(caminho) ? 'posts'
+      : /\/ferramentas\//.test(caminho) ? 'ferramentas'
+      : 'outras';
     if (!porIdioma.has(idioma)) porIdioma.set(idioma, { imp: 0, cliques: 0 });
     porIdioma.get(idioma).imp += r.impressions || 0;
     porIdioma.get(idioma).cliques += r.clicks || 0;
+    if (!porSecao.has(secao)) porSecao.set(secao, { imp: 0, cliques: 0, paginas: new Set() });
+    porSecao.get(secao).imp += r.impressions || 0;
+    porSecao.get(secao).cliques += r.clicks || 0;
+    porSecao.get(secao).paginas.add(caminho);
 
     const tema = classificar(r.keys[0]);
     if (!tema) continue;
@@ -201,6 +213,8 @@ async function main() {
     if (t) {
       t.porIdioma = t.porIdioma || { pt: 0, en: 0, es: 0 };
       t.porIdioma[idioma] += r.impressions || 0;
+      t.porSecao = t.porSecao || { glossario: 0, posts: 0, ferramentas: 0, outras: 0 };
+      t.porSecao[secao] += r.impressions || 0;
     }
   }
 
@@ -236,16 +250,23 @@ async function main() {
       paginas: (paginasPorTema.get(tema) || new Set()).size,
       posts: postsPorTema.get(tema) || 0,
       idiomas: t.porIdioma || { pt: 0, en: 0, es: 0 },
+      secoes: t.porSecao || { glossario: 0, posts: 0, ferramentas: 0, outras: 0 },
       topBusca: t.topBusca,
     }))
     .sort((a, b) => b.imp - a.imp);
 
+  console.log('QUE PARTE DO BLOG RECEBE A PROCURA');
+  for (const [secao, v] of [...porSecao.entries()].sort((a, b) => b[1].imp - a[1].imp)) {
+    console.log(`${secao} | ${v.imp} impressões (${((v.imp / somaQP) * 100).toFixed(1)}%) | ${v.cliques} cliques | ${v.paginas.size} páginas`);
+  }
+  console.log('');
+
   console.log('DEMANDA (o que o Google já me mostra)  ×  OFERTA (o que eu escrevi)');
-  console.log('tema | impressões | %total | cliques | buscas | posição média | páginas minhas | POSTS | pt/en/es | maior busca');
+  console.log('tema | impressões | %total | cliques | buscas | posição média | páginas | POSTS | pt/en/es | gloss/posts/ferram | maior busca');
   for (const l of linhas) {
     const pct = impTotal ? ((l.imp / impTotal) * 100).toFixed(1) : '0';
-    const i = l.idiomas;
-    console.log(`${l.tema} | ${l.imp} | ${pct}% | ${l.cliques} | ${l.buscas} | ${l.pos.toFixed(1)} | ${l.paginas} | ${l.posts} | ${i.pt}/${i.en}/${i.es} | ${l.topBusca}`);
+    const i = l.idiomas, s = l.secoes;
+    console.log(`${l.tema} | ${l.imp} | ${pct}% | ${l.cliques} | ${l.buscas} | ${l.pos.toFixed(1)} | ${l.paginas} | ${l.posts} | ${i.pt}/${i.en}/${i.es} | ${s.glossario}/${s.posts}/${s.ferramentas} | ${l.topBusca}`);
   }
 
   const semDemanda = [...postsPorTema.entries()].filter(([tema]) => !porTema.has(tema));
