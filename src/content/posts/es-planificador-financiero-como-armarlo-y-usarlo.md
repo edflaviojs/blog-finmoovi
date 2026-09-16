@@ -32,7 +32,7 @@ La mayoría de los planificadores muere en la tercera semana. No por falta de ga
 
 ## Qué hace un planificador financiero, y qué no
 
-**Sí hace:** muestra el mes entero en una página, revela patrones que el extracto esconde y convierte "tengo que ahorrar" en un número con fecha.
+**Sí hace:** muestra el mes entero en una página, revela patrones que el extracto esconde y convierte "tengo que [ahorrar](/es/posts/es-ahorra-en-la-farmacia-sin-sacrificios-guia-practica-2026)" en un número con fecha.
 
 **No hace:** no aumenta tus ingresos, no paga una cuenta solo y no toma la decisión difícil por ti. Un planificador bien llevado no arregla un mes en que los gastos fijos superan los ingresos, pero te lo muestra el día 5 en lugar del día 28.
 
@@ -45,7 +45,7 @@ Más páginas que estas se vuelven adorno. Menos dejan un hueco.
 | Página | Qué va en ella | Cada cuánto la tocas |
 |---|---|---|
 | **Vista del mes** | Ingreso previsto, gastos fijos, cuánto queda | Una vez, al empezar |
-| **Gastos fijos** | Vivienda, transporte, servicios, suscripciones | Una vez, y se revisa cada 3 meses |
+| **Gastos fijos** | [Vivienda](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026), transporte, servicios, suscripciones | Una vez, y se revisa cada 3 meses |
 | **Gastos variables** | Súper, ocio, imprevistos | A diario o cada semana |
 | **Metas** | Cada objetivo con monto y fecha | Una vez, y se sigue cada semana |
 | **[Fondo de emergencia](/es/glossario/es-fondo-de-emergencia)** | Solo entradas y salidas del fondo | Cuando lo toques |
@@ -69,7 +69,7 @@ Lo que realmente entra en la cuenta, ya sin descuentos. Un planificador armado s
 
 ### 4. Calcula lo que sobra y dale un destino
 
-Ingreso neto menos gastos fijos. Lo que quede es tu límite de gasto variable más lo que puedas ahorrar. Si no decides el reparto ahora, lo decide el mes, y suele decidirlo a favor del gasto.
+Ingreso neto menos gastos fijos. Lo que quede es tu límite de [gasto variable](/es/glossario/es-gasto-variable) más lo que puedas ahorrar. Si no decides el reparto ahora, lo decide el mes, y suele decidirlo a favor del gasto.
 
 ### 5. Agenda los dos momentos de llenado
 

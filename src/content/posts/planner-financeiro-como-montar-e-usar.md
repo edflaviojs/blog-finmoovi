@@ -69,7 +69,7 @@ O valor que entra na conta, já sem descontos. Planner montado sobre a receita b
 
 ### 4. Calcule o que sobra e dê um destino a ele
 
-Receita líquida menos despesas fixas. O que restar é o seu limite de gasto variável somado ao que você consegue guardar. Se você não decidir a divisão agora, o mês decide por você — e costuma decidir a favor do gasto.
+Receita líquida menos despesas fixas. O que restar é o seu limite de [gasto variável](/glossario/gasto-variavel) somado ao que você consegue guardar. Se você não decidir a divisão agora, o mês decide por você — e costuma decidir a favor do gasto.
 
 ### 5. Marque na agenda os dois momentos de preenchimento
 

@@ -69,7 +69,7 @@ The amount that actually lands in your account, after deductions. A planner buil
 
 ### 4. Work out what's left and give it a job
 
-Net income minus fixed expenses. Whatever remains is your variable spending limit plus whatever you can save. If you don't split it now, the month will split it for you — usually in favor of spending.
+Net income minus fixed expenses. Whatever remains is your variable [spending limit](/en/glossario/en-spending-limit) plus whatever you can save. If you don't split it now, the month will split it for you — usually in favor of spending.
 
 ### 5. Put both filling-in slots in your calendar
 
@@ -85,7 +85,7 @@ One five-minute slot a week and one fifteen-minute slot at month end. A planner 
 
 Notice the split between **logging** and **categorizing**. People who try to do both at the moment of purchase quit fast, because picking a category at the checkout is tedious. Jotting it down takes a second; categorizing in a batch once a week takes five minutes and is almost enjoyable.
 
-This is exactly where an app beats paper. In FinMoovi, smart capture reads a photo of the receipt or a spoken sentence and already suggests the category, so the daily step disappears and only the weekly check remains.
+This is exactly where an app beats paper. In FinMoovi, [smart capture](/en/posts/en-how-freelancers-can-organize-their-finances-in-2026) reads a photo of the receipt or a spoken sentence and already suggests the category, so the daily step disappears and only the weekly check remains.
 
 > **5-minute micro-action:** open the app, snap your latest purchase, confirm the suggested category, and create one goal with an amount and a deadline. Your planner was just born already filled in.
 
@@ -115,7 +115,7 @@ If you've tried and stopped before, it was probably one of these four. Worth ide
 
 ## From planner to budget
 
-The planner is the notebook; the [personal budget](/en/posts/en-how-to-create-personal-budget) is the rule you write inside it. Once the six pages have been running for two months, you'll have enough data to stop estimating and start planning for real — including [cutting monthly expenses](/en/posts/en-how-to-organize-your-monthly-expenses-quickly-and-securely) based on what actually happened rather than what you imagine happens.
+The planner is the notebook; the [personal budget](/en/posts/en-how-to-create-personal-budget) is the rule you write inside it. Once the six pages have been running for two months, you'll have enough data to stop estimating and start [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) for real — including [cutting monthly expenses](/en/posts/en-how-to-organize-your-monthly-expenses-quickly-and-securely) based on what actually happened rather than what you imagine happens.
 
 ## Conclusion
 
