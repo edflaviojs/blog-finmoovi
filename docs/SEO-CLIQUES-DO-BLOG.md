@@ -780,6 +780,76 @@ Reescrita nos 3 idiomas.
 As 12 imagens do post que saiu ficam no repo: ninguém as referencia, e apagar
 binários não traz nada hoje.
 
+## 6. A barra no endereço NÃO era problema — mas a medição achou outro
+
+Hipótese: no dado do Google a mesma página aparecia duas vezes, com e sem barra
+final, dividindo as impressões. **Falso.** Medido com `curl`:
+
+| | |
+|---|---|
+| sem barra | **308** → mesma página, com barra |
+| com barra | 200 |
+| `<link rel=canonical>` | aponta para a versão **com** barra |
+| controle falso (URL inventada) | **404**, como devia |
+
+As 220 impressões do lado sem barra são **6%** e são histórico. **Riscado.**
+
+### 🔴 O que apareceu no lugar: 5 páginas que o Google recusa indexar
+
+O `gsc-index-status.json` diz porquê, com todas as letras: *"Duplicate, Google
+chose different canonical than user"*. E o endereço que ele escolheu é, nas
+cinco, o **antigo** — o que foi aposentado quando os slugs decepados foram
+arrumados.
+
+⚠️ **O mesmo ficheiro também tem uma armadilha:** *"0 de 854 URLs sem barra"*
+parece provar que o Google não indexou versões sem barra. **Não prova nada** — o
+verificador só inspeciona as URLs do sitemap, que já têm barra. É ausência da
+**pergunta**, não do facto. Mesma família do `SCHEMA_AUTO:{`.
+
+**Do nosso lado estava tudo certo**, conferido um a um: 301 do antigo para o
+novo, canonical certo, novo no sitemap, antigo fora do sitemap, nenhum link
+interno para origem de redirect.
+
+### A causa somos nós, e a prova não é o log
+
+Em julho de 2026 sindicámos estes posts para **Blogger, Pinterest, Raindrop,
+Flipboard, Mix e pingbacks** — **antes** de os slugs mudarem. Com **4 links
+dofollow no mundo inteiro**, estas cópias pesam na escolha do Google.
+
+> Buscada a página do Blogger que está no ar: linkava mesmo o endereço velho,
+> com o traço solto no fim. A busca por uma URL inventada na mesma página deu
+> **zero** — não era engano da busca.
+
+**69 cópias nossas lá fora apontavam para endereços mortos:** 9 no Blogger, 60 em
+Pinterest/bookmarks/pingbacks. Só o Blogger tem chave nossa **e** conteúdo
+editável.
+
+### O que foi feito
+
+`scripts/fix-blogger-links.js` + `blogger-consertar-links.yml` (só à mão, relata
+por omissão). Duas regras dentro dele:
+
+1. **O registo não é prova.** Vai buscar o conteúdo ao Blogger e só altera se
+   encontrar mesmo a URL velha lá dentro.
+2. **Relatar antes de escrever.**
+
+A primeira corrida em modo relatar apanhou o defeito que a regra 1 existe para
+apanhar: **2 das 10 entradas têm `bloggerId: "seeded-2026-07-12"`** — registo
+escrito à mão que nunca foi ao ar. Passaram a contar à parte em vez de pôr a
+corrida vermelha.
+
+**8 cópias reais reapontadas, 0 falhas.** Conferido nas páginas que estão no ar
+(não no log): as 5 verificadas linkam agora a URL nova, **com a barra final**, e
+os 5 destinos respondem **200 direto**, sem salto extra. O controle falso deu
+404.
+
+Bónus: a cópia do post do Dia das Crianças passou a apontar sozinha para a página
+que sobreviveu à fusão de hoje.
+
+> **A regra que fica:** quando um endereço muda, **as cópias lá fora têm de ser
+> refeitas**. Foi por isto que ficou escrito *"não renomear mais slugs"* — agora
+> tem preço medido: **5 páginas invisíveis** durante meses.
+
 ---
 
 ## O que fica ABERTO depois de hoje
