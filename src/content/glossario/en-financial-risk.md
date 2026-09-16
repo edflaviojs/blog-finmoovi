@@ -4,6 +4,7 @@ definition: "What financial risk is and how it shows up in your everyday money â
 title: "financial risk - Financial Glossary"
 description: "What financial risk is and how it shows up in your everyday money â€” explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/risco-financeiro.webp"
+imageAlt: "A bar graph with gold coins, a safe, and a plant in a glass jar."
 category: "basico"
 tags: ["financial risk", "glossary", "finance"]
 author: "FinMoovi"

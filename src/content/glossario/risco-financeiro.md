@@ -4,6 +4,7 @@ definition: "O que é risco financeiro e como isso aparece no seu dia a dia — 
 title: "risco financeiro - Glossário Financeiro"
 description: "O que é risco financeiro e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/risco-financeiro.webp"
+imageAlt: "Um gráfico de crescimento financeiro com um cofre, moedas, uma planta e um martelo."
 category: "basico"
 tags: ["risco financeiro", "glossário", "finanças"]
 author: "FinMoovi"

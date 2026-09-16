@@ -3,6 +3,7 @@ title: "Why You Still Forget Bill Due Dates and Pay Late in 2026"
 description: "Learn how FinMoovi’s smart alerts can stop late payments in minutes. Practical, hassle‑free solution."
 tickerHeadline: "The trick that stops late payments"
 image: "/images/posts/por-que-voce-ainda-esquece-a-data-de-vencimento-das-contas-e.webp"
+imageAlt: "A blue and gold graphic with a yellow arrow pointing upwards."
 category: "ferramentas"
 locale: "en"
 tags: ["forgetting due dates","smart alerts","FinMoovi","on‑time payment","bill management","voice reminder","OCR capture","alerts","bills to pay","due date","organization","personal finance"]

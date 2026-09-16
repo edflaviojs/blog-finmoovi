@@ -3,6 +3,7 @@ title: "¿Por qué sigues olvidando la fecha de vencimiento de tus facturas y pa
 description: "Descubre cómo eliminar los retrasos de pago con alertas inteligentes de FinMoovi. Solución práctica en pocos minutos."
 tickerHeadline: "El truco que evita retrasos"
 image: "/images/posts/por-que-voce-ainda-esquece-a-data-de-vencimento-das-contas-e.webp"
+imageAlt: "Una imagen de un fondo azul con un diseño dorado y una flecha apuntando hacia arriba."
 category: "ferramentas"
 locale: "es"
 tags: ["olvidar vencimiento","alertas inteligentes","FinMoovi","pago puntual","control de cuentas","recordatorio por voz","captura OCR","alertas","cuentas por pagar","vencimiento","organización","finmoovi","finanzas personales"]
