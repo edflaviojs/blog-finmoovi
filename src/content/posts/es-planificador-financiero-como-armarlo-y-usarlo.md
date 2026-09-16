@@ -1,29 +1,39 @@
 ---
-title: "Planificador financiero: cómo armarlo y usarlo cada mes"
-description: "Un planificador financiero solo funciona si cabe en tu semana real. Las 6 páginas esenciales, el armado en 20 minutos y la rutina que evita el abandono."
-tickerHeadline: "El cuaderno que manda en el mes"
-image: "/images/posts/planner-financeiro-como-montar-e-usar.webp"
-imageAlt: "Mujer sentada en una mesa al aire libre con tazas encima."
-category: "orcamento"
+title: 'Planificador financiero: cómo armarlo y usarlo cada mes'
+description: >-
+  Un planificador financiero solo funciona si cabe en tu semana real. Las 6
+  páginas esenciales, el armado en 20 minutos y la rutina que evita el abandono.
+tickerHeadline: El cuaderno que manda en el mes
+image: /images/posts/planner-financeiro-como-montar-e-usar.webp
+category: orcamento
 tags:
-  - "planificador financiero"
-  - "organización financiera"
-  - "presupuesto mensual"
-  - "metas financieras"
-  - "FinMoovi"
-author: "FinMoovi"
-publishedAt: 2026-09-16
+  - planificador financiero
+  - organización financiera
+  - presupuesto mensual
+  - metas financieras
+  - FinMoovi
+author: FinMoovi
+publishedAt: 2026-09-16T00:00:00.000Z
 readingTime: 7
-locale: "es"
-translationKey: "planner-financeiro-como-montar-e-usar"
-scope: "universal"
+locale: es
+translationKey: planner-financeiro-como-montar-e-usar
+scope: universal
 featured: false
 draft: false
 translate: true
 seo:
-  metaTitle: "Planificador financiero: cómo armarlo y usarlo cada mes"
-  metaDescription: "Un planificador financiero solo funciona si cabe en tu semana real. Las 6 páginas esenciales, el armado en 20 minutos y la rutina que evita el abandono."
-  keywords: ["planificador financiero","planificador financiero mensual","cómo hacer un planificador financiero","organización financiera","presupuesto mensual","FinMoovi"]
+  metaTitle: 'Planificador financiero: cómo armarlo y usarlo cada mes'
+  metaDescription: >-
+    Un planificador financiero solo funciona si cabe en tu semana real. Las 6
+    páginas esenciales, el armado en 20 minutos y la rutina que evita el
+    abandono.
+  keywords:
+    - planificador financiero
+    - planificador financiero mensual
+    - cómo hacer un planificador financiero
+    - organización financiera
+    - presupuesto mensual
+    - FinMoovi
 ---
 
 Un planificador financiero es el único lugar donde anotas cuánto entra, cuánto sale, cuánto queda y adónde va lo que sobra. Armarlo lleva unos veinte minutos. Lo que decide si va a durar no es lo bonitas que queden las páginas: es que la rutina de llenarlo quepa en tu semana real.

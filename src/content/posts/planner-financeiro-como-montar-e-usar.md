@@ -1,29 +1,40 @@
 ---
-title: "Planner financeiro: como montar e usar todo mês"
-description: "Um planner financeiro só funciona se couber na sua semana. Veja as 6 páginas essenciais, o passo a passo para montar em 20 minutos e a rotina que evita o abandono."
-tickerHeadline: "O caderno que decide o mês"
-image: "/images/posts/planner-financeiro-como-montar-e-usar.webp"
-imageAlt: "Mulher sentada a uma mesa ao ar livre, com xicaras sobre a mesa."
-category: "orcamento"
+title: 'Planner financeiro: como montar e usar todo mês'
+description: >-
+  Um planner financeiro só funciona se couber na sua semana. Veja as 6 páginas
+  essenciais, o passo a passo para montar em 20 minutos e a rotina que evita o
+  abandono.
+tickerHeadline: O caderno que decide o mês
+image: /images/posts/planner-financeiro-como-montar-e-usar.webp
+category: orcamento
 tags:
-  - "planner financeiro"
-  - "organização financeira"
-  - "orçamento mensal"
-  - "metas financeiras"
-  - "FinMoovi"
-author: "FinMoovi"
-publishedAt: 2026-09-16
+  - planner financeiro
+  - organização financeira
+  - orçamento mensal
+  - metas financeiras
+  - FinMoovi
+author: FinMoovi
+publishedAt: 2026-09-16T00:00:00.000Z
 readingTime: 7
-locale: "pt"
-translationKey: "planner-financeiro-como-montar-e-usar"
-scope: "universal"
+locale: pt
+translationKey: planner-financeiro-como-montar-e-usar
+scope: universal
 featured: false
 draft: false
 translate: true
 seo:
-  metaTitle: "Planner financeiro: como montar e usar todo mês"
-  metaDescription: "Um planner financeiro só funciona se couber na sua semana. Veja as 6 páginas essenciais, o passo a passo para montar em 20 minutos e a rotina que evita o abandono."
-  keywords: ["planner financeiro","planner financeiro mensal","como fazer um planner financeiro","organização financeira","orçamento mensal","FinMoovi"]
+  metaTitle: 'Planner financeiro: como montar e usar todo mês'
+  metaDescription: >-
+    Um planner financeiro só funciona se couber na sua semana. Veja as 6 páginas
+    essenciais, o passo a passo para montar em 20 minutos e a rotina que evita o
+    abandono.
+  keywords:
+    - planner financeiro
+    - planner financeiro mensal
+    - como fazer um planner financeiro
+    - organização financeira
+    - orçamento mensal
+    - FinMoovi
 ---
 
 Um planner financeiro é o lugar único onde você escreve quanto entra, quanto sai, quanto falta e para onde o que sobra está indo. Montar um leva cerca de vinte minutos. O que decide se ele vai durar não é o capricho das páginas — é a rotina de preenchimento caber na sua semana real.

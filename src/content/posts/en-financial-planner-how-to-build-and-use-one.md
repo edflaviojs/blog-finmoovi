@@ -1,29 +1,40 @@
 ---
-title: "Financial Planner: How to Build One and Use It Every Month"
-description: "A financial planner only works if it fits your actual week. Here are the 6 essential pages, a 20-minute setup, and the routine that stops you from abandoning it."
-tickerHeadline: "The notebook that runs the month"
-image: "/images/posts/planner-financeiro-como-montar-e-usar.webp"
-imageAlt: "Woman sitting at an outdoor table with cups on it."
-category: "orcamento"
+title: 'Financial Planner: How to Build One and Use It Every Month'
+description: >-
+  A financial planner only works if it fits your actual week. Here are the 6
+  essential pages, a 20-minute setup, and the routine that stops you from
+  abandoning it.
+tickerHeadline: The notebook that runs the month
+image: /images/posts/planner-financeiro-como-montar-e-usar.webp
+category: orcamento
 tags:
-  - "financial planner"
-  - "money organization"
-  - "monthly budget"
-  - "financial goals"
-  - "FinMoovi"
-author: "FinMoovi"
-publishedAt: 2026-09-16
+  - financial planner
+  - money organization
+  - monthly budget
+  - financial goals
+  - FinMoovi
+author: FinMoovi
+publishedAt: 2026-09-16T00:00:00.000Z
 readingTime: 7
-locale: "en"
-translationKey: "planner-financeiro-como-montar-e-usar"
-scope: "universal"
+locale: en
+translationKey: planner-financeiro-como-montar-e-usar
+scope: universal
 featured: false
 draft: false
 translate: true
 seo:
-  metaTitle: "Financial Planner: How to Build One and Use It Every Month"
-  metaDescription: "A financial planner only works if it fits your actual week. Here are the 6 essential pages, a 20-minute setup, and the routine that stops you from abandoning it."
-  keywords: ["financial planner","monthly financial planner","how to make a financial planner","money organization","monthly budget","FinMoovi"]
+  metaTitle: 'Financial Planner: How to Build One and Use It Every Month'
+  metaDescription: >-
+    A financial planner only works if it fits your actual week. Here are the 6
+    essential pages, a 20-minute setup, and the routine that stops you from
+    abandoning it.
+  keywords:
+    - financial planner
+    - monthly financial planner
+    - how to make a financial planner
+    - money organization
+    - monthly budget
+    - FinMoovi
 ---
 
 A financial planner is the single place where you write down what comes in, what goes out, what's left, and where the leftover is going. Setting one up takes about twenty minutes. What decides whether it survives isn't how pretty the pages are — it's whether the filling-in routine fits your real week.
