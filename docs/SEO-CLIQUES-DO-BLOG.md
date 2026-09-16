@@ -974,6 +974,52 @@ cliques nesses números **não prova** que o snippet estava a falhar — na posi
 o esperado seria ~1,5 clique. O que fica provado é outra coisa, e essa é grande:
 **o blog consegue chegar ao top 5, e conseguiu-o no glossário espanhol.**
 
+## 9. O relatório de cobertura do GSC: 38 dos 39 problemas já estavam resolvidos
+
+O Ed exportou as duas listas. **Quase tudo no quadro é lixo que o Google ainda
+não reconferiu.**
+
+| linha | páginas | veredito |
+|---|---|---|
+| Página com redirecionamento | **691** | ✅ normal e nosso, **de propósito** |
+| Erro de redirecionamento | 18 | ✅ já resolvidos — Google não voltou desde 17/08 |
+| Não encontrado (404) | 21 | ✅ 20 já limpos no site · **1 consertado** |
+| Cópia, canónica diferente | **19** | 🔴 **o único vivo** (tratado na secção 6) |
+| Rastreada / Detectada, não indexada | 13 + 8 | autoridade, não conteúdo |
+
+### ⚠️ O "Falha" dos 691 é ALARME FALSO — não validar essa linha
+
+São os **427 endereços aposentados**. Não devem ser indexados: é o resultado
+certo. Alguém pediu *"validar correção"* e o Google reconferiu, encontrou
+redirecionamento e marcou **Falha**. **Aquela validação nunca pode passar, porque
+não há defeito.** Medido: 854 regras, 427 origens, **0 correntes e 0 ciclos**, e
+os pedidos reais dão **1 salto → 200**. O sitemap tem **zero** origens de
+redirect.
+
+### Os 18 "erro de redirecionamento" estão limpos hoje
+
+Testados **os 18**, um a um: **1 salto, 200**, todos. Controle falso → 404. O
+último rastreamento do Google foi entre **21/07 e 17/08** — viu o problema quando
+existia e não voltou. **Nesta linha vale pedir validação**, ao contrário da outra.
+
+### Os 21 "404" — nenhum existe hoje, e a lista diz que defeito era
+
+| nº | o que era |
+|---|---|
+| 8 | caminho `/en/` com **slug em português** |
+| 3 | `/en/` **sem o prefixo `en-`** no slug |
+| 8 | verbetes de glossário que já não existem |
+| 1 | **`/api/cta-track`** — corrigido: `Disallow: /api/` no robots.txt |
+| 1 | 🔴 **markdown vazado para dentro da URL**: `cdb-vs-tesouro-[selic](/en/glossario/en-selic)-qual-e-melhor` |
+
+O último é um robô que montou um link com markdown cru dentro do slug. **Já não
+existe** — é para isto que o `link-guard` existe, e está verde. Mas a família de
+defeito é real e ficou registada.
+
+O `/api/` são 10 funções que o site chama pelo navegador; não são páginas e
+respondem 404 a um GET. Bloquear no robots.txt não afeta o site — robots.txt só
+fala com rastreadores.
+
 ---
 
 ## O que fica ABERTO depois de hoje
@@ -1008,3 +1054,10 @@ o esperado seria ~1,5 clique. O que fica provado é outra coisa, e essa é grand
 9. **As páginas soltas não são varridas por robô nenhum.** Os robôs de conteúdo
    olham `posts` e `glossario`; as 22 páginas em `src/pages` ficam de fora — e é
    lá que estava a 2ª maior oportunidade e o código vazado.
+
+10. ⏳ **No GSC:** pedir validação na linha *Erro de redirecionamento* (18) e
+    **NUNCA** na de *Página com redirecionamento* (691) — essa falha sempre, por
+    não haver defeito.
+11. 🔴 **19 páginas com canónica diferente da nossa** — é a única linha viva do
+    relatório de cobertura. O Blogger foi tratado; as 60 cópias em
+    Pinterest/bookmarks/pingbacks não têm como ser corrigidas.
