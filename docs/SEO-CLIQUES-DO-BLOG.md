@@ -630,7 +630,12 @@ ser resolvido primeiro.
 > Efeito colateral medido: `isThemeCovered("guardar dinheiro")` respondia
 > **COBERTO — pelo post do Dia das Crianças**. Os 11 geradores achavam que o tema
 > mais valioso da lista já estava escrito, por causa de um post sazonal de
-> presentes. Deixou de responder isso.
+> presentes.
+>
+> ❌ **Esteve escrito aqui que retitular resolvia isto. Não resolvia.** Medido
+> depois: continuava a responder COBERTO — já não pelo título, **pelo NOME DO
+> FICHEIRO**, que ainda dizia `guardar-dinheiro`. É a mesma lição da regra 5b,
+> aplicada a mim: **o nome nunca muda.** Só a fusão (secção 5) libertou o tema.
 
 ## 2. Os três pares — e o terceiro não era canibalização
 
@@ -727,6 +732,54 @@ a descrição foi escrita à mão **olhando o ficheiro**.
 dos 3 posts novos foram convertidas para bloco YAML `>-`. **As tais 25 descrições
 agora são 28** — e a conversão não foi decisão de ninguém, é o robô.
 
+## 5. A fusão do par do Dia das Crianças (autorizada pelo Ed)
+
+Os títulos deixaram de competir de manhã; os **corpos** continuavam a ser o mesmo
+artigo. Fundidos.
+
+| | |
+|---|---|
+| **fica** | `como-economizar-para-o-dia-das-criancas-ja-em-2026-7-passos` (21/08) |
+| **sai** | `7-passos-praticos-para-guardar-dinheiro-para-o-dia-das` (14/08) |
+
+**O que decidiu:** a URL do vencedor **contém a busca real**; a do outro dizia
+"guardar dinheiro para o dia das" — endereço a discordar do título novo. Os dois
+estavam **indexados** no GSC de 15/09, portanto isso não desempatava.
+
+**O que pesava contra:** o que sai tinha **11** links internos, o que fica tinha
+**3**. Mas link interno muda-se; URL não. Os 11 foram reapontados.
+
+**Nada de conteúdo se perdeu:** as duas secções que só o post que sai tinha —
+*regra das 24 horas* e *experiências no lugar do presente caro* — passaram para o
+vencedor, nos 3 idiomas, como bloco próprio (para não quebrar o "7 passos" do
+título).
+
+⚠️ E de caminho: a secção *"Por que isso funciona?"* do vencedor tinha **uma
+frase, sem fonte, atribuída à Investopedia** — já estava na lista do
+`press/fact-guard.md`. O inglês era pior: *"Research from Investopedia shows…"*.
+Reescrita nos 3 idiomas.
+
+### As provas, porque esta é a operação que parou o blog 5 dias em 09/09
+
+- **301 nas 6 linhas** (3 URLs × com e sem barra), como manda o cabeçalho do ficheiro.
+- **Os 11 links reapontados ANTES de apagar** — regra da casa: link interno aponta
+  para a URL FINAL, nunca para origem de redirect.
+- **A URL não pode voltar:** 5 títulos plausíveis do tema testados contra a trava
+  de canibalização — os 3 reais **bloqueiam**, os 2 controles falsos passam.
+- 🔴 **`slug-aposentado` só cobre `/glossario/`, não `/posts/`.** Medido: das
+  **157** origens `/posts/` do `_redirects`, a única que ainda era ficheiro vivo
+  era esta. Estender não daria falso alarme nenhum — mas só o glossário a chama,
+  por isso **fica registado como buraco**. Hoje quem tapa é a canibalização.
+- **Build do zero**, com o `dist/` apagado à mão primeiro (o `clean-dist` falha
+  nesta máquina por causa do acento no caminho, e o validador corria sobre lixo
+  velho — ver [[ambiente-fs-rmsync-acento]]): **52.876 links em 920 páginas**,
+  nenhum 404, nenhum a apontar para origem de redirect. Conferido no HTML
+  construído que as 2 secções chegaram aos 3 idiomas.
+- **PT=EN=ES=132.**
+
+As 12 imagens do post que saiu ficam no repo: ninguém as referencia, e apagar
+binários não traz nada hoje.
+
 ---
 
 ## O que fica ABERTO depois de hoje
@@ -734,8 +787,9 @@ agora são 28** — e a conversão não foi decisão de ninguém, é o robô.
 1. ⏳ **Medir o CTR por volta de 06/10** — agora são **quatro** páginas
    (as três de gastos mensais + guardar dinheiro). Contar com a AI Overview.
 2. 🔴 **O glossário precisa de decisão, não de conserto.** Continua igual.
-3. 🔴 **Os dois posts do Dia das Crianças ainda são o mesmo artigo.** Fundir é
-   apagar uma página — **decisão do Ed**.
+3. ✅ **O par do Dia das Crianças está fundido** (secção 5). Em aberto fica o
+   **buraco do `slug-aposentado` para `/posts/`**: só o glossário o chama, e
+   estendê-lo obriga a passar pelos 9 geradores.
 4. **A secção de cortes do artigo espanhol** por traduzir. Continua por fazer.
 5. **Os CTAs dizem "Usado por milhares de pessoas"** — decisão do Ed, não tocado.
 6. **28 descrições usam bloco YAML `>-`** — 25 antigas + 3 convertidas hoje pelo
