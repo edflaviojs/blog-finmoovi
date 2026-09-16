@@ -541,6 +541,68 @@
           "uma palavra em maiúsculas a marcar o tom"
         ]
       }
+    },
+    {
+      "id": "kw-financiamento-de-r-50-000",
+      "theme": "Financiamento de R$ 50.000",
+      "angle": "Eu comprei um carro com financiamento, veja como foi!",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "financiamento-de-carro",
+      "status": "pending",
+      "sourceKeyword": "como funciona financiamento de carro"
+    },
+    {
+      "id": "kw-financiamento-de-r-200k",
+      "theme": "Financiamento de R$ 200k",
+      "angle": "Vou mostrar como consigo uma casa com R$ 1.500/mês",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "financiamento-de-casas",
+      "status": "pending",
+      "sourceKeyword": "como funciona financiamento de casas"
+    },
+    {
+      "id": "kw-financiamento-de-moto-vale-a-pena",
+      "theme": "Financiamento de Moto: Vale a Pena?",
+      "angle": "Um exemplo prático de como funciona o financiamento de uma moto de R$ 15.000,00 e se é uma boa opção para o seu bolso",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "financiamento-de-moto",
+      "status": "pending",
+      "sourceKeyword": "como funciona financiamento de moto"
+    },
+    {
+      "id": "viral-cBc4G5OLRvE",
+      "theme": "Otimizando gastos",
+      "angle": "Perda em curso: mostrar como uma planilha pode ajudar a economizar dinheiro agora, mesmo em eventos como a Bienal",
+      "pillar": "ferramentas",
+      "source": "viral",
+      "glossaryRef": null,
+      "status": "pending",
+      "viralRef": {
+        "videoId": "cBc4G5OLRvE",
+        "title": "RataNews na Bienal: encontramos uma leitora que preparou uma planilha pra otimizar gastos no evento",
+        "estrutura": [
+          "título afirmativo simples, sem número nem pergunta"
+        ]
+      }
+    },
+    {
+      "id": "viral-8NjZOK5WC5Q",
+      "theme": "Dinheiro saindo agora",
+      "angle": "Perda em curso: mostrar o dinheiro a sair todo mês, como uma dívida pode afetar seu orçamento e como o FinMoovi pode ajudar a organizar suas finanças",
+      "pillar": "mindset",
+      "source": "viral",
+      "glossaryRef": null,
+      "status": "pending",
+      "viralRef": {
+        "videoId": "8NjZOK5WC5Q",
+        "title": "“Filho, Precisamos Conversar Sobre Uma Dívida…” #dívidas #educaçãofinanceira",
+        "estrutura": [
+          "título afirmativo simples, sem número nem pergunta"
+        ]
+      }
     }
   ]
 }
