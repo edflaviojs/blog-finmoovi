@@ -1937,8 +1937,43 @@
           "titulo": "Tchau!"
         }
       ]
+    },
+    {
+      "videoId": "9h4NtsPAVik",
+      "title": "Melhores CDB para investir pouco dinheiro (R$5.000)",
+      "channel": "Financeologia",
+      "duracaoSeg": 1340,
+      "idioma": "pt",
+      "viewsPerDay": 6245,
+      "vistoEm": "2026-09-16",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "Onde investir R$ 5.000 hoje?"
+        },
+        {
+          "seg": 75,
+          "titulo": "Definindo sua realidade financeira"
+        },
+        {
+          "seg": 131,
+          "titulo": "Curto, médio e longo prazo: entenda as diferenças"
+        },
+        {
+          "seg": 526,
+          "titulo": "Passo a passo: investindo no PagBank"
+        },
+        {
+          "seg": 711,
+          "titulo": "Investindo no Banco Sofisa: guia completo"
+        },
+        {
+          "seg": 1131,
+          "titulo": "Oportunidade no Banco BMG"
+        }
+      ]
     }
   ],
-  "atualizadoEm": "2026-09-15T09:04:22.284Z",
-  "total": 35
+  "atualizadoEm": "2026-09-16T08:56:39.895Z",
+  "total": 36
 }
