@@ -1,0 +1,117 @@
+{
+  "slug": "loop-aposentadoria-por-conta-nunca-faca",
+  "formato": "loop16",
+  "term": "Aposentadoria de quem é autônomo",
+  "category": "vida",
+  "keyword": "APOSENTADORIA",
+  "situacao": "aposentadoria-por-conta",
+  "gancho": "nunca-faca",
+  "ganchoFamilia": "nunca faça",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "ampulheta",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Nunca faça isso. Adie sua aposentadoria sem contribuir. Comigo aconteceu.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "aposentadoria",
+          "visual": {
+            "type": "statement",
+            "text": "Adiei minha aposentadoria"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "contribuir",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ampulheta"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Trabalhei por conta a vida toda e nunca paguei contribuição.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "Trabalhei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ampulheta"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "statement",
+            "text": "Nunca contribuí"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "E aí percebi. Quando parei, renda sumiu. Meus filhos seguraram contas.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "percebi",
+          "visual": {
+            "type": "statement",
+            "text": "Meus filhos seguraram contas"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "parei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ampulheta"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Então, nunca faça isso. Deixe aposentadoria sem contribuição. Depois, filhos pagam.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "Deixe",
+          "visual": {
+            "type": "statement",
+            "text": "Nunca deixe isso acontecer"
+          }
+        },
+        {
+          "anchor": "aposentadoria",
+          "visual": {
+            "type": "statement",
+            "text": "Adiei minha aposentadoria"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
