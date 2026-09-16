@@ -34,27 +34,35 @@ const POSTS_DIR = join(process.cwd(), 'src', 'content', 'posts');
  *
  * Os padrões são comparados contra o texto SEM ACENTO e em minúscula (ver
  * `normalizar`), por isso escrevem-se sem acento de propósito.
+ *
+ * ⚠️ CADA TEMA APANHA OS TRÊS IDIOMAS. A primeira versão só tinha português e
+ * deixou 60% das impressões por classificar — o blog publica em PT/EN/ES e a
+ * maior parte do que o Google lhe mostra NÃO é em português. Um dicionário só
+ * em português não estava errado por pouco: dava a tabela ao contrário.
  */
 const TEMAS = [
-  ['juros-compostos',   /juros? compost|juro compost|montante|capitaliza/],
-  ['financiamento',     /financiament|tabela sac|tabela price|amortiza|saldo devedor|consorcio|imovel|imoveis|carro|veiculo|habitacional|prestac/],
-  ['reserva-emergencia',/reserva de emerg|fundo de emerg|colchao financ/],
-  ['aposentadoria',     /aposent|inss|previdenc|independencia financeira|liberdade financeira/],
-  ['dividas',           /divida|endivid|negociar|serasa|nome sujo|nome limpo|spc|score|inadimpl|renegocia|atraso/],
-  ['cartao-credito',    /cartao|fatura|rotativo|limite do cart|milhas|cashback|anuidade/],
-  ['moedas-cotacao',    /dolar|euro|cambio|cotac|moeda|libra|peso argentin|bitcoin|cripto/],
-  ['impostos',          /imposto|declarac|irpf|leao|receita federal|tributa|isento/],
-  ['investimentos',     /investi|cdb|tesouro|selic|cdi|renda fixa|renda variavel|acoes|acao da bolsa|bolsa|fundo|dividendo|lci|lca|poupanca|rentabil|aplicac|corretora|b3|\betf\b|carteira/],
-  ['pix-bancos',        /\bpix\b|\bted\b|\bdoc\b|conta corrente|conta digital|banco digital|nubank|itau|bradesco|caixa economica|transferenc/],
-  ['renda-extra',       /renda extra|ganhar dinheiro|trabalho extra|freela|bico|vender|empreend|autonomo|mei\b/],
-  ['salario-renda',     /salario|renda mensal|holerite|13o|decimo terceiro|ferias|rescisao|fgts|piso|minimo/],
-  ['app-ferramenta',    /aplicativ|\bapp\b|planilha|mobills|organizze|guiabolso|finmoovi|excel|software|programa para/],
-  ['orcamento',         /orcament|50.?30.?20|gasto|despesa|economiz|poupar|controle financeiro|controlar|organizar as financ|organizar financ|planejamento financeiro|educacao financeira|financas pessoais|mesada|supermercado|lista de compras|custo de vida|corte|guardar dinheiro|juntar dinheiro|conta de luz|conta de agua|consumo de|energia|agua em casa|impulso|envelope|conta do dia|contas do dia|pagar as conta|pagar a conta|prazo das contas|saldo pendente|banho/],
+  ['juros-compostos',   /juros? compost|juro compost|montante|capitaliza|compound interest|interes compuesto/],
+  ['financiamento',     /financiament|tabela sac|tabela price|amortiza|saldo devedor|consorcio|imovel|imoveis|carro|veiculo|habitacional|prestac|financing|finance a|loan|mortgage|installment|outstanding balance|financiamiento|prestamo|hipoteca|saldo pendiente|pagos anticipados|cuota/],
+  ['reserva-emergencia',/reserva de emerg|fundo de emerg|colchao financ|emergency fund|fondo de emergencia/],
+  ['aposentadoria',     /aposent|inss|previdenc|independencia financeira|liberdade financeira|retirement|retire early|jubilacion|pension|financial independence/],
+  ['dividas',           /divida|endivid|negociar|serasa|nome sujo|nome limpo|spc|score|inadimpl|renegocia|atraso|\bdebt|deuda|credit score/],
+  ['cartao-credito',    /cartao|fatura|rotativo|limite do cart|milhas|cashback|anuidade|credit card|tarjeta de credito|invoice/],
+  ['moedas-cotacao',    /dolar|euro|cambio|cotac|moeda|libra|peso argentin|bitcoin|cripto|currency|foreign exchange|exchange rate|divisa|crypto/],
+  ['impostos',          /imposto|declarac|irpf|leao|receita federal|tributa|isento|income tax|\btax\b|taxes|impuesto/],
+  ['investimentos',     /investi|cdb|tesouro|selic|cdi|renda fixa|renda variavel|acoes|acao da bolsa|bolsa|fundo|dividendo|lci|lca|poupanca|rentabil|aplicac|corretora|b3|\betf\b|carteira|invest|fund|stock|shares|bond|debenture|volatil|dividend|portfolio|wealth management|yield|accion|acciones|renta fija|renta variable|cartera|\bmercado|treasury|savings account/],
+  // ⚠️ `\bmercado` com limite de palavra de propósito: sem ele, "supermercado"
+  // — que é orçamento doméstico — caía em investimentos. Apanhado por um caso
+  // de teste, não por leitura.
+  ['pix-bancos',        /\bpix\b|\bted\b|\bdoc\b|conta corrente|conta digital|banco digital|nubank|itau|bradesco|caixa economica|transferenc|wire transfer|checking account|cuenta corriente|transferencia/],
+  ['renda-extra',       /renda extra|ganhar dinheiro|trabalho extra|freela|bico|vender|empreend|autonomo|mei\b|side hustle|extra income|make money|freelanc|ingreso extra|emprend/],
+  ['salario-renda',     /salario|renda mensal|holerite|13o|decimo terceiro|ferias|rescisao|fgts|piso|minimo|salary|wage|monthly income|payroll|sueldo|nomina|ingreso mensual/],
+  ['app-ferramenta',    /aplicativ|\bapp\b|planilha|mobills|organizze|guiabolso|finmoovi|excel|software|programa para|spreadsheet|calculator|hoja de calculo|calculadora/],
+  ['orcamento',         /orcament|50.?30.?20|gasto|despesa|economiz|poupar|controle financeiro|controlar|organizar as financ|organizar financ|planejamento financeiro|educacao financeira|financas pessoais|mesada|supermercado|lista de compras|custo de vida|corte|guardar dinheiro|juntar dinheiro|conta de luz|conta de agua|consumo de|energia|agua em casa|impulso|envelope|conta do dia|contas do dia|pagar as conta|pagar a conta|prazo das contas|saldo pendente|banho|budget|expense|spending|save money|saving money|cash flow|cost of living|grocery|presupuesto|ahorrar|ahorro|flujo de caja|gastos|control de gastos/],
   // Último tema real: apanha quem fala de finanças pessoais sem entrar em
   // nenhum assunto concreto ("plano financeiro", "caos financeiro", "erros
   // financeiros"). Fica SEPARADO de `orcamento` de propósito — enfiá-lo lá
   // dentro inflaria o número que este relatório existe justamente para medir.
-  ['financas-geral',    /financeir|financas|dinheiro|caos|bagunca/],
+  ['financas-geral',    /financeir|financas|dinheiro|caos|bagunca|financial planning|personal finance|financial|finanzas|planificacion financiera|money/],
   ['zz-controle-falso', /xilofone quantico|zepelim de gelatina|hipopotamo de latao/],
 ];
 
@@ -170,13 +178,30 @@ async function main() {
     if (imp > t.topImp) { t.topImp = imp; t.topBusca = query; }
   }
 
-  // Páginas minhas por tema (pela URL que serve cada busca).
+  // Páginas minhas por tema, e impressões por IDIOMA.
+  //
+  // O idioma sai do CAMINHO da página (`/en/`, `/es/`), que é um facto do site,
+  // e não de adivinhar a língua da busca pelas palavras — uma busca como
+  // "etf" ou "pix" não tem idioma nenhum, e adivinhar produziria um número que
+  // parece medido sem o ser.
   const paginasPorTema = new Map();
+  const porIdioma = new Map();
   for (const r of linhasQueryPage) {
+    const caminho = r.keys[1].replace(/^https?:\/\/[^/]+/, '');
+    const idioma = caminho.startsWith('/en/') ? 'en' : caminho.startsWith('/es/') ? 'es' : 'pt';
+    if (!porIdioma.has(idioma)) porIdioma.set(idioma, { imp: 0, cliques: 0 });
+    porIdioma.get(idioma).imp += r.impressions || 0;
+    porIdioma.get(idioma).cliques += r.clicks || 0;
+
     const tema = classificar(r.keys[0]);
     if (!tema) continue;
     if (!paginasPorTema.has(tema)) paginasPorTema.set(tema, new Set());
     paginasPorTema.get(tema).add(r.keys[1]);
+    const t = porTema.get(tema);
+    if (t) {
+      t.porIdioma = t.porIdioma || { pt: 0, en: 0, es: 0 };
+      t.porIdioma[idioma] += r.impressions || 0;
+    }
   }
 
   const { contagem: postsPorTema, exemplos, total: totalPosts } = contarPostsPorTema();
@@ -195,6 +220,12 @@ async function main() {
   console.log(`TOTAIS · ${linhasQuery.length} buscas · ${impTotal} impressões · ${cliquesTotal} cliques`);
   console.log(`(a soma de busca+página dá ${somaQP} impressões — o GSC agrega diferente nas duas dimensões; a diferença é esperada, não é defeito)\n`);
 
+  console.log('IMPRESSÕES POR IDIOMA DA PÁGINA (o idioma vem do caminho da URL, não da língua da busca)');
+  for (const [idioma, v] of [...porIdioma.entries()].sort((a, b) => b[1].imp - a[1].imp)) {
+    console.log(`${idioma} | ${v.imp} impressões (${((v.imp / somaQP) * 100).toFixed(1)}%) | ${v.cliques} cliques`);
+  }
+  console.log('');
+
   const linhas = [...porTema.entries()]
     .map(([tema, t]) => ({
       tema,
@@ -204,15 +235,17 @@ async function main() {
       pos: t.imp ? (t.posSoma / t.imp) : 0,
       paginas: (paginasPorTema.get(tema) || new Set()).size,
       posts: postsPorTema.get(tema) || 0,
+      idiomas: t.porIdioma || { pt: 0, en: 0, es: 0 },
       topBusca: t.topBusca,
     }))
     .sort((a, b) => b.imp - a.imp);
 
   console.log('DEMANDA (o que o Google já me mostra)  ×  OFERTA (o que eu escrevi)');
-  console.log('tema | impressões | %total | cliques | buscas | posição média | páginas minhas | POSTS | maior busca');
+  console.log('tema | impressões | %total | cliques | buscas | posição média | páginas minhas | POSTS | pt/en/es | maior busca');
   for (const l of linhas) {
     const pct = impTotal ? ((l.imp / impTotal) * 100).toFixed(1) : '0';
-    console.log(`${l.tema} | ${l.imp} | ${pct}% | ${l.cliques} | ${l.buscas} | ${l.pos.toFixed(1)} | ${l.paginas} | ${l.posts} | ${l.topBusca}`);
+    const i = l.idiomas;
+    console.log(`${l.tema} | ${l.imp} | ${pct}% | ${l.cliques} | ${l.buscas} | ${l.pos.toFixed(1)} | ${l.paginas} | ${l.posts} | ${i.pt}/${i.en}/${i.es} | ${l.topBusca}`);
   }
 
   const semDemanda = [...postsPorTema.entries()].filter(([tema]) => !porTema.has(tema));
