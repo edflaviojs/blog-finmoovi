@@ -520,8 +520,24 @@ function htmlCapas(inv, hojeISO) {
   const ontemISO = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
   const paradoDesde = ultimo && ultimo !== hojeISO && ultimo !== ontemISO ? ultimo : null;
 
-  if (comProblema === 0 && vistas > 0 && faltamMedir === 0) {
-    return `${sectionTitle(titulo, 0)}${emptyLine(`Acervo inteiro auditado (${vistas} imagens) e nenhuma com letras. Limpeza concluída.`)}`;
+  // ✅ O QUE JÁ ESTÁ FEITO SAI DO E-MAIL — pedido do dono em 16/09/2026, ao ver a
+  // barra cheia ("159/159") pelo terceiro dia seguido: *"tem que criar uma regra,
+  // quando já tiver corrigido não mostre mais no e-mail"*. Uma barra a 100% todos
+  // os dias deixa de ser informação e passa a ser ruído — e o ruído treina a
+  // pessoa a saltar o e-mail inteiro, incluindo as secções que importam.
+  //
+  // A régua é a FILA, não a percentagem: se não há capa nenhuma à espera de
+  // conserto, não há nada para acompanhar. A secção volta sozinha no dia em que a
+  // varredura apanhar uma capa nova com letras — o robô continua a correr todas
+  // as noites, e o acervo cresce a cada post publicado.
+  //
+  // ⚠️ MENOS SE O ROBÔ PAROU. Calar a secção por «a fila está vazia» quando na
+  // verdade ninguém está a medir seria o defeito da corrida verde que não publica
+  // nada: o silêncio pareceria sucesso. Se o robô não avança há dois dias, a
+  // secção continua a aparecer — nem que seja só para dar o alarme.
+  if (naFila === 0 && vistas > 0) {
+    if (!paradoDesde) return '';
+    return `${sectionTitle(titulo, undefined, '#f85149')}<p style="color:#f85149;font-size:13px;margin:4px 0 0;">🚨 Nada na fila, mas o robô das capas não avança desde <strong>${esc(paradoDesde)}</strong> — normalmente é cota de IA esgotada. Ver as corridas de "Capas — varrer".</p>`;
   }
 
   const pct = denominador > 0 ? Math.round(100 * corrigidas / denominador) : 0;
@@ -813,7 +829,9 @@ async function main() {
   // 19/08/2026 e quer ver o "10/120" todos os dias, não ir procurar.
   try {
     const inv = JSON.parse(readFileSync(join(process.cwd(), 'data', 'capas-auditadas.json'), 'utf-8'));
-    sections.push(htmlCapas(inv, new Date().toISOString().split('T')[0]));
+    // Devolve '' quando não há nada por corrigir — nesse dia a secção não existe.
+    const secCapas = htmlCapas(inv, new Date().toISOString().split('T')[0]);
+    if (secCapas) sections.push(secCapas);
   } catch (err) {
     // Ficheiro ainda não existe (a primeira corrida do robô é 19/08 à noite) —
     // não é falha, é ausência, e a secção diz isso.

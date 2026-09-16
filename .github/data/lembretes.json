@@ -6,8 +6,10 @@
       "data": "2026-08-26",
       "titulo": "TikTok: cobrar resposta da auditoria",
       "texto": "O 3o pedido de auditoria do app multipost-finmoovi foi enviado em 19/08 e ficou 'In review'. Se ainda nao houve resposta, e hora de cobrar. ANTES de agir, conferir o estado no portal (pode ter mudado sem ninguem reparar) e medir se o site continua de pe — foi o site que reprovou as duas vezes anteriores. O suporte deles ja ignorou um pedido durante 6 dias, entao nao contar com esse canal.",
-      "feito": false,
-      "criadoEm": "2026-08-19"
+      "feito": true,
+      "criadoEm": "2026-08-19",
+      "fechadoEm": "2026-09-16",
+      "desfecho": "Fechado. O caminho do TikTok deixou de passar pela auditoria: a publicacao sai pelo ZERNIO (Postiz). Nao vale a pena continuar a cobrar um canal de suporte que ja ignorou um pedido durante 6 dias."
     }
   ]
 }
