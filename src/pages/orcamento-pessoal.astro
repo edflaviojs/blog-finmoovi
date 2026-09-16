@@ -28,7 +28,7 @@ const faqSchema = {
     {
       "@type": "Question",
       "name": "Qual app usar para controlar orçamento pessoal?",
-      "acceptedAnswer": { "@type": "Answer", "text": "O ${config.app.name} é um app com 7 dias grátis para testar que controla orçamento com suporte a múltiplas moedas (BRL, USD, EUR), funciona offline e usa IA para categorizar seus gastos automaticamente. Ideal para quem quer simplicidade sem perder funcionalidades." }
+      "acceptedAnswer": { "@type": "Answer", "text": `O ${config.app.name} é um app com 7 dias grátis para testar que controla orçamento com suporte a múltiplas moedas (BRL, USD, EUR), funciona offline e usa IA para categorizar seus gastos automaticamente. Ideal para quem quer simplicidade sem perder funcionalidades.` }
     },
     {
       "@type": "Question",
@@ -174,7 +174,7 @@ const faqSchema = {
           </details>
           <details>
             <summary>Qual app usar para controlar orçamento pessoal?</summary>
-            <p>O ${config.app.name} é um app com 7 dias grátis para testar que controla orçamento com suporte a múltiplas moedas (BRL, USD, EUR), funciona offline e usa IA para categorizar seus gastos automaticamente.</p>
+            <p>O {config.app.name} é um app com 7 dias grátis para testar que controla orçamento com suporte a múltiplas moedas (BRL, USD, EUR), funciona offline e usa IA para categorizar seus gastos automaticamente.</p>
           </details>
           <details>
             <summary>Como manter a disciplina no orçamento?</summary>
@@ -191,7 +191,7 @@ const faqSchema = {
     <section class="landing-section cta-section">
       <div class="container">
         <h2>Pronto para criar seu orçamento?</h2>
-        <p>O ${config.app.name} te ajuda a montar e acompanhar seu orçamento diariamente — com alertas, relatórios e IA.</p>
+        <p>O {config.app.name} te ajuda a montar e acompanhar seu orçamento diariamente — com alertas, relatórios e IA.</p>
         <a href={config.app.url} class="cta-primary large" target="_blank" rel="noopener">Experimentar Grátis — 7 dias</a>
         <span class="cta-note">Sem cartão de crédito. Cancele quando quiser.</span>
       </div>

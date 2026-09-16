@@ -33,7 +33,7 @@ const faqSchema = {
     {
       "@type": "Question",
       "name": "Como evitar voltar a se endividar?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Monte uma reserva de emergência (3-6 meses de gastos), use um app de controle financeiro como o ${config.app.name} para monitorar gastos em tempo real, e adote a regra: se não pode pagar à vista, não compre." }
+      "acceptedAnswer": { "@type": "Answer", "text": `Monte uma reserva de emergência (3-6 meses de gastos), use um app de controle financeiro como o ${config.app.name} para monitorar gastos em tempo real, e adote a regra: se não pode pagar à vista, não compre.` }
     }
   ]
 };
@@ -54,7 +54,7 @@ const faqSchema = {
         <h1>Como Sair das Dívidas: Plano de Ação Completo</h1>
         <p class="hero-subtitle">Você não é suas dívidas. Com método e disciplina, qualquer pessoa pode limpar o nome e reconstruir a vida financeira.</p>
         <div class="hero-cta-group">
-          <a href={config.app.url} class="cta-primary" target="_blank" rel="noopener">Controlar Gastos com ${config.app.name} (7 dias grátis)</a>
+          <a href={config.app.url} class="cta-primary" target="_blank" rel="noopener">Controlar Gastos com {config.app.name} (7 dias grátis)</a>
           <a href="#metodo" class="cta-secondary">Ver os 6 passos ↓</a>
         </div>
       </div>
@@ -194,7 +194,7 @@ const faqSchema = {
     <section class="landing-section cta-section">
       <div class="container">
         <h2>Comece a controlar hoje</h2>
-        <p>O primeiro passo para sair das dívidas é saber para onde vai cada real. O ${config.app.name} mostra isso em tempo real.</p>
+        <p>O primeiro passo para sair das dívidas é saber para onde vai cada real. O {config.app.name} mostra isso em tempo real.</p>
         <a href={config.app.url} class="cta-primary large" target="_blank" rel="noopener">Experimentar Grátis — 7 dias</a>
         <span class="cta-note">Sem cartão de crédito. Cancele quando quiser.</span>
       </div>
