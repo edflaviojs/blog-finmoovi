@@ -48,7 +48,7 @@ Cuando la etapa 3 se convierte en un “agujero negro”, el ciclo se rompe y el
 ### 1. Captura todo en tiempo real  
 La mayoría de las personas pierde el rastro de las pequeñas compras – ese snack, el billete de autobús o la suscripción a un servicio de streaming. Usa la **captura inteligente** de FinMoovi: toma una foto del ticket o di “gasto en café” y la app lo categoriza automáticamente. En pocos segundos, el gasto aparece en el informe diario, sin necesidad de teclear nada.
 
-![Estratégias práticas para colocar o controle em ação](/images/posts/domine-seus-gastos-guia-pratico-de-controle-financeiro-para-2.webp)
+![Estrategias prácticas para poner el control en acción](/images/posts/domine-seus-gastos-guia-pratico-de-controle-financeiro-para-2.webp)
 
 ### 2. Visualiza tu presupuesto por categorías  
 En lugar de una hoja de cálculo llena de números, crea un panel visual con colores distintos: morado para vivienda, verde para alimentación, azul para transporte, etc. FinMoovi genera gráficos de pastel que muestran, en tiempo real, la proporción de cada categoría. Esta visualización facilita identificar “grasas” que pueden ser recortadas.
@@ -83,7 +83,7 @@ Olvidar facturas genera intereses y multas que erosionan tu presupuesto. Configu
 | 15‑21 | Ejecuta el desafío de los primeros €90 | Prioridad en los gastos esenciales |
 | 22‑30 | Revisa semanalmente y ajusta | Consolidar hábitos de control |
 
-![30 dias para transformar seu hábito de gasto](/images/posts/domine-seus-gastos-guia-pratico-de-controle-financeiro-para-4.webp)
+![30 días para transformar tu hábito de gasto](/images/posts/domine-seus-gastos-guia-pratico-de-controle-financeiro-para-4.webp)
 
 Al final del mes tendrás una visión clara, podrás comparar con el inicio y notar la diferencia en el saldo disponible para ahorro o inversión.
 
@@ -95,7 +95,7 @@ Cuando llegas al punto de ansiedad descrito al inicio, basta con abrir FinMoovi,
 
 Controlar tus gastos no tiene por qué ser una carga; puede ser el camino hacia la libertad financiera que siempre has deseado. Con la captura inteligente, visualización clara y metas realistas, cada decisión de consumo se vuelve un paso consciente hacia la tranquilidad. Empieza hoy, registra la primera factura y siente la diferencia en los próximos días. Tu futuro financiero te lo agradecerá.
 
-![Conclusão motivacional](/images/posts/domine-seus-gastos-guia-pratico-de-controle-financeiro-para-6.webp)
+![Conclusión motivacional](/images/posts/domine-seus-gastos-guia-pratico-de-controle-financeiro-para-6.webp)
 
 ## Preguntas frecuentes  
 

@@ -1,30 +1,5 @@
 [
   {
-    "file": "en-quotes-week-2-september-2026.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 8,
-      "brInstitutions": [],
-      "brProducts": [
-        "CDB",
-        "Selic"
-      ],
-      "geoRefs": [
-        "brasileiras"
-      ],
-      "ptWordsCount": 6,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": [
-        "ações",
-        "dívidas",
-        "poupança",
-        "investimentos"
-      ]
-    }
-  },
-  {
     "file": "en-fgc-guarantee.md",
     "dir": "glossario",
     "severity": 2,
@@ -57,24 +32,6 @@
         "LCI",
         "LCA"
       ],
-      "ptLeftovers": []
-    }
-  },
-  {
-    "file": "es-cotizaciones-semana-2-septiembre-2026.md",
-    "dir": "posts",
-    "severity": 2,
-    "issues": {
-      "currency": 4,
-      "brInstitutions": [],
-      "brProducts": [
-        "CDB",
-        "Selic"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
       "ptLeftovers": []
     }
   },
@@ -373,6 +330,23 @@
     }
   },
   {
+    "file": "es-domina-tus-gastos-guia-practica-de-control-financiero-para.md",
+    "dir": "posts",
+    "severity": 1,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "ação"
+      ]
+    }
+  },
+  {
     "file": "es-indice-finmoovi-costo-de-vida-junio-2026.md",
     "dir": "posts",
     "severity": 1,
@@ -416,21 +390,6 @@
       "brProducts": [
         "CDB"
       ],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": []
-    }
-  },
-  {
-    "file": "es-patrimonio.md",
-    "dir": "glossario",
-    "severity": 1,
-    "issues": {
-      "currency": 1,
-      "brInstitutions": [],
-      "brProducts": [],
       "geoRefs": [],
       "ptWordsCount": 0,
       "brBrands": [],
@@ -592,21 +551,6 @@
   },
   {
     "file": "en-7-financial-mistakes-beginners.md",
-    "dir": "posts",
-    "severity": 0,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": []
-    }
-  },
-  {
-    "file": "en-7-practical-steps-to-save-money-for-children-s-day-2026.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -967,6 +911,21 @@
   },
   {
     "file": "en-compound-interest.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-consortium-quota.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -1642,6 +1601,21 @@
   },
   {
     "file": "en-financial-peace-of-mind-with-a-2026-app-for-everyday-life.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-financial-planner-how-to-build-and-use-one.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -2406,6 +2380,21 @@
     }
   },
   {
+    "file": "en-how-to-save-water-and-cut-your-bills.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-how-to-secure-financing-for-your-projects-without-headaches.md",
     "dir": "posts",
     "severity": 0,
@@ -2858,6 +2847,21 @@
   {
     "file": "en-loan.md",
     "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-master-your-spending-a-practical-guide-to-financial-control.md",
+    "dir": "posts",
     "severity": 0,
     "issues": {
       "currency": 0,
@@ -3382,6 +3386,21 @@
   },
   {
     "file": "en-quotes-week-1-september-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-quotes-week-2-september-2026.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -4431,21 +4450,6 @@
     }
   },
   {
-    "file": "es-7-pasos-practicos-para-ahorrar-dinero-para-el-dia-del-nino.md",
-    "dir": "posts",
-    "severity": 0,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": []
-    }
-  },
-  {
     "file": "es-acciones.md",
     "dir": "glossario",
     "severity": 0,
@@ -4883,6 +4887,21 @@
   {
     "file": "es-come-cotas.md",
     "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-como-ahorrar-agua-y-reducir-gastos-en-tu-dia-a-dia.md",
+    "dir": "posts",
     "severity": 0,
     "issues": {
       "currency": 0,
@@ -5766,6 +5785,21 @@
     }
   },
   {
+    "file": "es-cotizaciones-semana-2-septiembre-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-cotizaciones-semana-3-julio-2026.md",
     "dir": "posts",
     "severity": 0,
@@ -5842,6 +5876,21 @@
   },
   {
     "file": "es-credito.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-cuota-de-consorcio.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -7161,6 +7210,21 @@
     }
   },
   {
+    "file": "es-patrimonio.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-pension-privada.md",
     "dir": "glossario",
     "severity": 0,
@@ -7283,6 +7347,21 @@
   {
     "file": "es-planificacion-financiera.md",
     "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-planificador-financiero-como-armarlo-y-usarlo.md",
+    "dir": "posts",
     "severity": 0,
     "issues": {
       "currency": 0,
