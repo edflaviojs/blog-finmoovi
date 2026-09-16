@@ -53,7 +53,7 @@ Vamos considerar um exemplo prático:
 | Seguro de saúde | R$ 500,00 | R$ 450,00 (após negociação com a seguradora) |
 | Assinaturas de serviços | R$ 200,00 | R$ 100,00 (após cancelamento de assinaturas inúteis) |
 
-Com essas reduções, é possível economizar R$ 530,00 por mês, o que equivale a R$ 6.360,00 por ano.
+Somando a coluna da direita, a conta cai de R$ 3.450,00 para R$ 2.950,00: uma economia de R$ 500,00 por mês, o que equivale a R$ 6.000,00 por ano.
 
 ## Conclusão
 Reduzir os gastos fixos mensais é uma das principais estratégias para alcançar a estabilidade financeira. Com a ajuda de ferramentas como o FinMoovi, você pode criar um orçamento personalizado e gerenciar suas finanças de forma eficaz. Lembre-se de que a redução de gastos fixos é um processo contínuo e que requer atenção e disciplina. Teste o FinMoovi hoje mesmo e comece a economizar dinheiro! [Clique aqui para saber mais](link para o FinMoovi).
