@@ -115,6 +115,9 @@ async function getAccessToken(scope = SCOPE_READONLY) {
  * @param {string} opts.endDate    'YYYY-MM-DD'
  * @param {string[]} [opts.dimensions=['query']]  ex.: ['query'], ['page'], ['query','page']
  * @param {number} [opts.rowLimit=1000]  máx 25000 por request
+ * @param {number} [opts.startRow=0]  deslocamento p/ paginar além do rowLimit.
+ *   Sem ele, `rowLimit` vira um TETO SILENCIOSO: o chamador recebe as primeiras
+ *   N linhas e não tem como saber que havia mais.
  * @param {Array}  [opts.filters]  dimensionFilterGroups (formato da API)
  * @param {string} [opts.searchType='web']
  * @returns {Promise<Array>} linhas ({ keys, clicks, impressions, ctr, position }) — [] se vazio.
@@ -124,6 +127,7 @@ export async function querySearchAnalytics({
   endDate,
   dimensions = ['query'],
   rowLimit = 1000,
+  startRow = 0,
   filters,
   searchType = 'web',
 } = {}) {
@@ -131,7 +135,7 @@ export async function querySearchAnalytics({
   const site = encodeURIComponent(GSC_SITE_URL);
   const url = `https://searchconsole.googleapis.com/webmasters/v3/sites/${site}/searchAnalytics/query`;
 
-  const body = { startDate, endDate, dimensions, rowLimit, type: searchType };
+  const body = { startDate, endDate, dimensions, rowLimit, startRow, type: searchType };
   if (filters) body.dimensionFilterGroups = filters;
 
   const res = await fetch(url, {

@@ -1,0 +1,32 @@
+name: GSC - Demanda x Oferta por tema (manual)
+
+# Só à mão. Serve para DECIDIR sobre que temas escrever, e uma decisão dessas
+# não se toma toda semana. Não commita nada: escreve só no log da corrida, para
+# não disputar o repo com os robôs que publicam várias vezes por dia.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  gsc-temas:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Instalar dependências
+        run: npm ci
+
+      - name: Medir demanda x oferta por tema
+        env:
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+          GSC_SITE_URL: ${{ vars.GSC_SITE_URL || 'https://blog.finmoovi.com/' }}
+        run: node src/scripts/automacoes/gsc-temas.js
