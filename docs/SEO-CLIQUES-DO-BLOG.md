@@ -914,6 +914,66 @@ desta casa trata como ruído.
 50-30-20, 3 a 6 meses, cheque especial, investir — foram todas encontradas no
 HTML construído. O controle falso (*"cashback"*) não aparece.
 
+## 8. 🔴 A decisão do GLOSSÁRIO tem resposta, e ela estava medida há semanas
+
+Faltava abrir duas das quatro listas do digest (`lowCtr` e `gaps`). A resposta à
+COISA que estava marcada como *"decisão do Ed"* estava lá dentro.
+
+**Este documento dizia:** *"o glossário está na posição 69; consertar título lá
+não traz clique."* **A média diz isso. As páginas dizem outra coisa:**
+
+| página | posições nas buscas que serve |
+|---|---|
+| `/es/glossario/es-renta-mensual/` | **3,4 · 4,0 · 4,7 · 4,7** |
+| `/es/glossario/es-gasto-recurrente/` | 7,0 · 7,9 · 8,0 · 8,4 |
+
+> **A primeira está melhor posicionada do que a página famosa das 1.161
+> impressões, que está em 8.** São as duas páginas mais bem colocadas do blog
+> inteiro — e a média de 69 escondia-as.
+
+É a mesma armadilha de *"o blog tem um ativo"* × *"o blog tem UMA página"*: a
+média e a lista de páginas produzem **decisões opostas**, e a diferença só
+aparece listando.
+
+### A decisão, então, não é "arrumar 301 páginas"
+
+É **achar e alimentar as poucas que já ranqueiam**. Uma varredura em massa do
+glossário continua a não valer: 299 estão na página 7 e título melhor não move
+quem está em 69. O que vale é o inverso do que estava escrito — **o glossário não
+é um bloco morto, é um bloco morto com duas exceções muito boas.**
+
+### O que foi feito
+
+As duas tinham a **mesma descrição de fábrica**, saída de um molde:
+
+> *"Qué es &lt;termo&gt; y cómo aparece en tu día a día — explicado de forma
+> simple, con una manera práctica de seguirlo en FinMoovi."*
+
+Quem procura *"qué es renta mensual"* quer a definição. **O snippet dizia que ia
+explicar, em vez de explicar.** Passou a trazer a definição real, tirada do
+próprio corpo do verbete.
+
+⚠️ O campo `definition` alimenta **quatro** sítios: meta description, schema do
+termo, schema FAQ **e o parágrafo que o leitor vê no topo**. O texto foi escrito
+para funcionar como parágrafo, não só como snippet.
+
+### Por que nunca tinham sido arrumadas
+
+**O robô que existe exatamente para isto — `gsc-otimizar-ctr`, que reescreve
+título/meta de página com boa posição e CTR baixo — só olha `src/content/posts/`.
+O glossário está fora do alcance dele.**
+
+**E não o estendi, de propósito:** a biblioteca partilhada `gsc-posts.js` tem
+`posts` no caminho em cinco sítios e serve **quatro** automações que hoje
+funcionam. O ganho medido de a estender são **duas páginas**. Não se mexe numa
+trava que funciona para ganhar duas páginas — foram feitas à mão, que é o ganho
+inteiro, com risco zero.
+
+⚠️ **Honestidade sobre o tamanho:** são **15 e 23 impressões** em 28 dias. Zero
+cliques nesses números **não prova** que o snippet estava a falhar — na posição 4
+o esperado seria ~1,5 clique. O que fica provado é outra coisa, e essa é grande:
+**o blog consegue chegar ao top 5, e conseguiu-o no glossário espanhol.**
+
 ---
 
 ## O que fica ABERTO depois de hoje
@@ -921,7 +981,10 @@ HTML construído. O controle falso (*"cashback"*) não aparece.
 1. ⏳ **Medir o CTR por volta de 06/10** — agora são **cinco** páginas (as três
    de gastos mensais, guardar dinheiro e `/como-organizar-financas/`). Contar com
    a AI Overview.
-2. 🔴 **O glossário precisa de decisão, não de conserto.** Continua igual.
+2. ✅ **O glossário tem resposta (secção 8): não é varredura em massa, é achar e
+   alimentar as poucas que ranqueiam.** Fica aberto COMO as achar de forma
+   regular — hoje o robô de CTR não vê o glossário, e estendê-lo mexe numa
+   biblioteca que serve 4 automações.
 3. ✅ **O par do Dia das Crianças está fundido** (secção 5). Em aberto fica o
    **buraco do `slug-aposentado` para `/posts/`**: só o glossário o chama, e
    estendê-lo obriga a passar pelos 9 geradores.
