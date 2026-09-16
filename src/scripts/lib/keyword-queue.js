@@ -245,11 +245,25 @@ function keywordCoreTokens(keyword) {
   return coreTokens(slugifyTheme(keyword));
 }
 
-// REGRA (dedup por semelhança): keywords CURTAS (1-2 tokens de núcleo) passam
-// SÓ pelo dedup exato — senão "cdb" mataria "cdb ou tesouro" e vice-versa
-// (Jaccard entre conjuntos pequenos dispara fácil). A checagem de semelhança
-// só roda quando a keyword NOVA tem ≥ 3 tokens de núcleo.
+// REGRA (dedup por semelhança): keywords de 1 token passam SÓ pelo dedup exato
+// — senão "cdb" mataria "cdb ou tesouro" e vice-versa (Jaccard entre conjuntos
+// pequenos dispara fácil).
+//
+// ⚠️ Antes o corte era em 3 tokens e deixava as de DOIS de fora com as de uma.
+// Medido na fila real em 16/09/2026: 212 entradas, **zero** apanhadas. Com as de
+// dois tokens a entrar pela contagem de tokens partilhados (e NÃO pelo Jaccard,
+// que é o que dispara fácil), apanha 17 — todas legítimas, incluindo SEIS
+// entradas para o mesmo tema ("como economizar agua", "de economizar água",
+// "para economizar água", "sobre economizar água"…) e um par exatamente
+// invertido ("o que e juros de mora" × "juros de mora o que e").
+//
+// O corte fica em 2 e não em 1: com 1 token medi falso alarme real — "juros o
+// que é" era recusada por causa de "calculadora juros compostos", que é outro
+// tema. O `other.size <= 4` evita que uma keyword curta seja morta por uma
+// frase longa que apenas a contém.
 const SIMILARITY_MIN_TOKENS = 3;
+const CURTA_MIN_TOKENS = 2;
+const CURTA_MAX_TOKENS_OUTRO = 4;
 
 /**
  * Quase-duplicata = mesma semântica do seo-guard/validador: ≥ 3 tokens de
@@ -259,10 +273,14 @@ const SIMILARITY_MIN_TOKENS = 3;
  * e uma quase-duplicata delas também não deve voltar).
  */
 function isNearDuplicate(cand, existingSets) {
-  if (cand.size < SIMILARITY_MIN_TOKENS) return false; // curtas: só dedup exato
+  if (cand.size < CURTA_MIN_TOKENS) return false; // 1 token: só dedup exato
   for (const other of existingSets) {
     const shared = [...cand].filter(x => other.has(x)).length;
-    if (shared >= 3 || jaccardSim(cand, other) >= 0.7) return true;
+    if (cand.size >= SIMILARITY_MIN_TOKENS) {
+      if (shared >= 3 || jaccardSim(cand, other) >= 0.7) return true;
+    } else if (shared >= cand.size && other.size <= CURTA_MAX_TOKENS_OUTRO) {
+      return true;
+    }
   }
   return false;
 }

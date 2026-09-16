@@ -16,7 +16,7 @@
 
 import { readdirSync, readFileSync, existsSync } from 'fs';
 import { join } from 'path';
-import { SERIE_RE, coreTokens, jaccardSim } from '../lib/seo-guard.js';
+import { SERIE_RE, coreTokens, jaccardSim, slugifyTheme } from '../lib/seo-guard.js';
 import { looksWrongLanguage } from '../lib/lang-guard.js';
 import { config } from '../../../site.config.ts';
 
@@ -64,6 +64,10 @@ function main() {
     const fm = parseFrontmatter(content);
     return {
       file,
+      // O TÍTULO, e não só o nome do ficheiro: é ele que vai para o Google, e
+      // é ele que pode mudar depois de o post nascer (ver a trava de
+      // canibalização por título, mais abaixo).
+      title: fm.title || '',
       locale: fm.locale || getPostLocale(file),
       translationKey: fm.translationKey || null,
       publishedAt: fm.publishedAt || null,
@@ -161,6 +165,38 @@ function main() {
         errors.push(`❌ CANIBALIZAÇÃO: 2 posts PT competem pelo mesmo tema (${shared.join(', ')}):`);
         errors.push(`   - ${A.slug}`);
         errors.push(`   - ${B.slug}`);
+      }
+    }
+  }
+
+  // 5b. Canibalização pelo TÍTULO — AVISO, não bloqueante.
+  //
+  // A trava acima compara o NOME DO FICHEIRO. O nome nasce com o post e nunca
+  // muda; o título muda — e é o título que vai para o Google. Em 16/09/2026 dois
+  // posts ficaram a disputar "reduzir gastos mensais" porque um deles foi
+  // retitulado no dia anterior, e a trava de slug não viu nada: os dois nomes de
+  // ficheiro só partilhavam a palavra "mensais". Medido nos 136 posts PT: a
+  // regra por slug acusa 0 pares, a regra por slug+título acusa 3 — e os 3 são
+  // duplicações reais (dois posts do Dia das Crianças com o mesmo "7 passos",
+  // dois de Excel, e o par acima).
+  //
+  // Entra como AVISO de propósito. Já nasce com 3 casos por resolver, e uma
+  // trava nova que deixa o CI vermelho no primeiro dia acaba desligada por
+  // alguém — e com ela para de publicar o blog inteiro. Promover a erro quando
+  // os pares existentes estiverem resolvidos.
+  const ptTitulos = posts
+    .filter(p => p.locale === 'pt')
+    .map(p => {
+      const slug = p.file.replace(/\.md$/, '');
+      return { slug, title: p.title, core: new Set([...coreTokens(slug), ...coreTokens(slugifyTheme(p.title))]) };
+    })
+    .filter(p => !SERIE_RE.test(p.slug) && !SERIE_RE.test(slugifyTheme(p.title)));
+  for (let i = 0; i < ptTitulos.length; i++) {
+    for (let j = i + 1; j < ptTitulos.length; j++) {
+      const A = ptTitulos[i], B = ptTitulos[j];
+      const shared = [...A.core].filter(x => B.core.has(x));
+      if (shared.length >= 3 || jaccardSim(A.core, B.core) >= 0.7) {
+        warnings.push(`⚠️ Canibalização por TÍTULO (${shared.join(', ')}): "${A.title}" [${A.slug}] × "${B.title}" [${B.slug}]`);
       }
     }
   }

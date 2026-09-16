@@ -84,21 +84,37 @@ export function getExistingPtSlugs(postsDir = POSTS_DIR) {
 
 /**
  * O tema candidato canibaliza algum post PT já publicado?
- * Usa o MESMO critério do validador: núcleo de tokens compartilhado ≥ 3 OU
- * jaccard ≥ 0.7, ignorando séries periódicas (dos dois lados).
- * Retorna { covered, conflictSlug?, shared? }.
+ * Núcleo de tokens compartilhado ≥ `need` OU jaccard ≥ 0.7, ignorando séries
+ * periódicas (dos dois lados). Retorna { covered, conflictSlug?, shared? }.
+ *
+ * ⚠️ O `need` é `min(3, tamanho do tema)` e não 3 fixo. Com o 3 fixo, um tema
+ * de duas palavras NUNCA conseguia três palavras iguais — a trava era
+ * matematicamente impossível de disparar para ele, e passava sempre. Medido em
+ * 16/09/2026: **100 das 212 entradas da fila (47%) têm menos de 3 palavras no
+ * núcleo**, e a trava só apanhava 8 no total. Com a régua certa apanha 39 — as
+ * 31 novas são duplicações reais, do tipo "amortização", "amortização price" e
+ * "amortização o que é" a caírem todas no post de amortização que já existe.
+ *
+ * É a família de defeito nº 1 desta casa: um limiar pensado para títulos longos
+ * a correr sobre temas curtos. O `gsc-oportunidades.js` já tinha aprendido a
+ * mesma lição no sentido inverso (lá usa `min(2, …)` para não marcar head terms
+ * de uma palavra como lacuna).
+ *
+ * O jaccard ≥ 0.7 fica como está: é ele que apanha o caso em que o tema é longo
+ * mas quase idêntico a um slug existente.
  */
 export function isThemeCovered(theme, postsDir = POSTS_DIR) {
   const candSlug = slugifyTheme(theme);
   if (!candSlug || SERIE_RE.test(candSlug)) return { covered: false };
   const cand = coreTokens(candSlug);
   if (cand.size === 0) return { covered: false };
+  const need = Math.min(3, cand.size);
 
   for (const slug of getExistingPtSlugs(postsDir)) {
     if (SERIE_RE.test(slug)) continue;
     const core = coreTokens(slug);
     const shared = [...cand].filter(x => core.has(x));
-    if (shared.length >= 3 || jaccardSim(cand, core) >= 0.7) {
+    if (shared.length >= need || jaccardSim(cand, core) >= 0.7) {
       return { covered: true, conflictSlug: slug, shared };
     }
   }
