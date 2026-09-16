@@ -4,6 +4,7 @@ definition: "Qué es cuota de consórcio y cómo aparece en tu día a día — e
 title: "cuota de consórcio - Glosario Financiero"
 description: "Qué es cuota de consórcio y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/quota-de-consorcio.webp"
+imageAlt: "Una imagen de una jarra con monedas, una planta y un gráfico de crecimiento de monedas doradas."
 category: "basico"
 tags: ["cuota de consórcio", "glosario", "finanzas"]
 author: "FinMoovi"

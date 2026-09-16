@@ -3,6 +3,7 @@ title: "Domine seus gastos: guia prático de controle financeiro para 2026"
 description: "Aprenda a controlar seus gastos de forma simples, usando técnicas reais e o app FinMoovi para transformar despesas em tranquilidade."
 tickerHeadline: "O truque que freia gastos"
 image: "/images/posts/domine-seus-gastos-guia-pratico-de-controle-financeiro-para.webp"
+imageAlt: "Duas laptops, uma mesa de madeira, um monitor, um mouse, um teclado, um celular, um café e uma planta."
 category: "dicas"
 tags:
   - "controle de gastos"

@@ -4,6 +4,7 @@ definition: "What consortium quota is and how it shows up in your everyday money
 title: "consortium quota - Financial Glossary"
 description: "What consortium quota is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/quota-de-consorcio.webp"
+imageAlt: "A glass vase with coins and a plant, surrounded by gold coins and a black box."
 category: "basico"
 tags: ["consortium quota", "glossary", "finance"]
 author: "FinMoovi"

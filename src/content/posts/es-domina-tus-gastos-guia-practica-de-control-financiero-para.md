@@ -3,6 +3,7 @@ title: "Domina tus gastos: guía práctica de control financiero para 2026"
 description: "Aprende a registrar, categorizar y ajustar tus gastos con FinMoovi. En 30 días tendrás visión y tranquilidad financiera."
 tickerHeadline: "El truco que frena los gastos"
 image: "/images/posts/domine-seus-gastos-guia-pratico-de-controle-financeiro-para.webp"
+imageAlt: "Dos computadoras, una laptop y una pantalla, con fondo de escritorio y una taza de café."
 category: "dicas"
 tags:
   - "control de gastos"

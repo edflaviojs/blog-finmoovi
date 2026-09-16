@@ -3,6 +3,7 @@ title: "Cómo ahorrar agua y reducir gastos en tu día a día"
 description: "Descubre ajustes simples para consumir menos agua, bajar la factura y mejorar tus finanzas. Tips prácticos y una app que ayuda."
 tickerHeadline: "Agua que se escapa, dinero que se va"
 image: "/images/posts/como-economizar-agua-e-ainda-poupar-no-dia-a-dia.webp"
+imageAlt: "Una calculadora, una agenda, monedas y plantas sobre un fondo blanco y gris."
 category: "dicas"
 locale: "es"
 tags: ["ahorrar agua","finanzas personales","ahorro","consumo responsable","FinMoovi"]

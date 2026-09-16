@@ -3,6 +3,7 @@ title: "How to Save Water and Cut Your Bills"
 description: "Learn simple water‑saving habits that lower your utility bill and boost your finances. Practical tips plus a handy app."
 tickerHeadline: "Water leaks, money leaks"
 image: "/images/posts/como-economizar-agua-e-ainda-poupar-no-dia-a-dia.webp"
+imageAlt: "A brown leather journal, calculator, coins, and plant on a white marble surface."
 category: "dicas"
 locale: "en"
 tags: ["water savings","personal finance","budgeting","utility bills"]

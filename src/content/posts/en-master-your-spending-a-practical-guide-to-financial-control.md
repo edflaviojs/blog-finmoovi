@@ -3,6 +3,7 @@ title: "Master Your Spending: A Practical Guide to Financial Control for 2026"
 description: "Learn how to track, categorize, and curb expenses with simple daily steps and the FinMoovi app—boost savings in just 30 days."
 tickerHeadline: "The trick that slows spending"
 image: "/images/posts/domine-seus-gastos-guia-pratico-de-controle-financeiro-para.webp"
+imageAlt: "Two laptops, a mug, a phone, and a plant on a wooden desk."
 category: "dicas"
 tags:
   - "budgeting"

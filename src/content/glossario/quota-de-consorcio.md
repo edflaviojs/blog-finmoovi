@@ -4,6 +4,7 @@ definition: "O que é quota de consórcio e como isso aparece no seu dia a dia �
 title: "quota de consórcio - Glossário Financeiro"
 description: "O que é quota de consórcio e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/quota-de-consorcio.webp"
+imageAlt: "Um gráfico de crescimento de moedas de ouro, um vaso com moedas e uma planta."
 category: "basico"
 tags: ["quota de consórcio", "glossário", "finanças"]
 author: "FinMoovi"

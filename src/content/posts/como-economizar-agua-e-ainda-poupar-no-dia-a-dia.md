@@ -3,6 +3,7 @@ title: "Como economizar água e ainda poupar no dia a dia"
 description: "Descubra como pequenos ajustes no consumo de água podem gerar uma economia significativa e ainda melhorar sua saúde financeira. Dicas práticas e um app que ajuda."
 tickerHeadline: "Água que escorre, dinheiro que some"
 image: "/images/posts/como-economizar-agua-e-ainda-poupar-no-dia-a-dia.webp"
+imageAlt: "Uma imagem de uma mesa com um caderno, um calculador, moedas e plantas."
 category: "dicas"
 locale: "pt"
 tags: ["economizar agua","finanças pessoais","economia","dinheiro"]
