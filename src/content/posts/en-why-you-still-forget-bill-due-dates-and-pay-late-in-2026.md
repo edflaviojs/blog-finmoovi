@@ -22,12 +22,12 @@ seo:
 Do you keep forgetting when your bills are due and end up paying late in 2026? It’s easy to miss a deadline when you’re juggling a hectic routine, lost notifications, and no system that reminds you personally. The result? Late fees, extra stress, and a dent in your budget. The good news is that, with just a few clicks, FinMoovi creates alerts that reach you before you even realize a payment is coming up.
 
 ## The everyday pain of forgetting
-Picture a Monday morning: the alarm goes off, you’re already hunting for your car keys, the coffee is still steaming, and in the middle of the rush you get a “bill overdue” message from your internet provider. The payment is already late, a penalty has been applied, and the guilt hits hard. The same story repeats with water, electricity, mobile plans, and even credit‑card statements.
+Picture a Monday morning: the alarm goes off, you’re already hunting for your car keys, the coffee is still steaming, and in the middle of the rush you get a “bill overdue” message from your internet provider. The payment is already late, a penalty has been applied, and the guilt hits hard. The same story repeats with water, electricity, mobile plans, and even [credit](/en/glossario/en-credit)‑card statements.
 
 ## How FinMoovi turns forgetfulness into punctuality
-FinMoovi was built for people who don’t have time to stare at spreadsheets or write everything down on paper. The **Smart Alerts** feature lets you set personalized reminders for each bill. Choose when the notice should appear – a week before, three days, or even an hour before the due date. Notifications arrive as push messages on your phone and, if you prefer, as a voice message that the app reads out loud – perfect for when your hands are busy.
+FinMoovi was built for people who don’t have time to stare at spreadsheets or write everything down on paper. The **[Smart Alerts](/en/posts/en-forgot-to-pay-a-bill-how-to-fix-it-in-2026)** feature lets you set personalized reminders for each bill. Choose when the notice should appear – a week before, three days, or even an hour before the due date. Notifications arrive as push messages on your phone and, if you prefer, as a voice message that the app reads out loud – perfect for when your hands are busy.
 
-What if the bill isn’t already in the app? That’s where **Smart Capture** comes in: just point your camera at the invoice or say “add electricity bill” and the app extracts the date, amount, and provider via OCR or voice recognition. In under 30 seconds the bill is on your calendar, ready to trigger an alert.
+What if the bill isn’t already in the app? That’s where **[Smart Capture](/en/posts/en-how-freelancers-can-organize-their-finances-in-2026)** comes in: just point your camera at the invoice or say “add [electricity bill](/en/posts/en-how-to-cut-your-electricity-bill-and-gain-peace-of-mind)” and the app extracts the date, amount, and provider via OCR or voice recognition. In under 30 seconds the bill is on your calendar, ready to trigger an alert.
 
 ![How FinMoovi turns forgetfulness into punctuality](/images/posts/por-que-voce-ainda-esquece-a-data-de-vencimento-das-contas-e-2.webp)
 
@@ -61,7 +61,7 @@ Many people hesitate to look at their phone while driving or cooking. FinMoovi�
 - **Do a monthly review:** spend 10 minutes on the last Sunday of each month to confirm every bill has been captured.
 
 ## The mental peace that comes with control
-When you stop chasing late bills, you free up mental space for personal projects, study, or simply relaxing. FinMoovi isn’t just a finance app; it’s a partner that gives back time and tranquility. Speaking as a friend who recommends tools that actually work, I can say that after using the voice‑alert feature, my evenings are free of worry and my mornings are far more productive.
+When you stop chasing late bills, you free up mental space for personal projects, study, or simply relaxing. FinMoovi isn’t just a [finance](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using) app; it’s a partner that gives back time and tranquility. Speaking as a friend who recommends tools that actually work, I can say that after using the voice‑alert feature, my evenings are free of worry and my mornings are far more productive.
 
 ![Quick tips to supercharge your alerts](/images/posts/por-que-voce-ainda-esquece-a-data-de-vencimento-das-contas-e-6.webp)
 
@@ -79,4 +79,4 @@ Yes. FinMoovi uses internationally recognized OCR technology and encrypts the da
 Absolutely. The app supports multiple currencies (USD, EUR, etc.), letting you register bills and receive alerts in any currency without hassle.
 
 ### How long does it take to add a bill?
-With Smart Capture, less than 30 seconds. Just point the camera or speak the bill name and the app fills everything in automatically.
+With [Smart Capture](/en/posts/en-how-to-never-miss-a-bill-payment-deadline-simple-5-minute), less than 30 seconds. Just point the camera or speak the bill name and the app fills everything in automatically.

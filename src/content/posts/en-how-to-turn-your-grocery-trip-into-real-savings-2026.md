@@ -61,7 +61,7 @@ In addition, the **multicurrency** feature lets you record prices in different c
 
 ## Get started today
 
-Just open FinMoovi, select **Shopping Mode**, create your weekly meal list, and let the app do the rest. In under five minutes you’ll have a shopping plan that fits your budget and receive alerts to keep you on track. Try it now and feel the difference on your next grocery run.
+Just open FinMoovi, select **Shopping Mode**, create your weekly meal list, and let the app do the rest. In under five minutes you’ll have a shopping plan that fits your budget and receive [alerts](/en/posts/en-why-you-still-forget-bill-due-dates-and-pay-late-in-2026) to keep you on track. Try it now and feel the difference on your next grocery run.
 
 ---
 

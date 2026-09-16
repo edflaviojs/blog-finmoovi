@@ -38,7 +38,7 @@ Beyond the direct hit to your finances, excessive water use also hurts the envir
 These actions are easy to apply and don’t require big investments. The secret is consistency: daily small tweaks create a cumulative effect that shows up as lower bills and more financial peace of mind.
 
 ### Using technology to your advantage
-This is where **FinMoovi** comes in as a natural ally. The app lets you log water consumption almost automatically: just snap a photo of the bill or use [voice capture](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end), and it categorizes the expense under “Utilities – Water.” In a few clicks you can see monthly trends, spot consumption spikes, and receive personalized alerts when spending exceeds the average of the past three months.
+This is where **FinMoovi** comes in as a natural ally. The app lets you log water consumption almost automatically: just snap a photo of the bill or use [voice capture](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end), and it categorizes the expense under “Utilities – Water.” In a few clicks you can see monthly trends, spot consumption spikes, and receive personalized [alerts](/en/posts/en-why-you-still-forget-bill-due-dates-and-pay-late-in-2026) when spending exceeds the average of the past three months.
 
 **5‑minute micro‑action:** Open FinMoovi, tap “Add expense,” choose the “Water” category, snap a picture of your latest bill or dictate “water bill.” The app fills in the amount, date, and creates a trend chart. In under five minutes you’ll have a clear picture of what’s happening and can plan the next reduction.
 

@@ -53,7 +53,7 @@ These details are auto‑categorized (food, transport, entertainment, etc.) and 
    - Photograph the receipt.  
    - FinMoovi extracts the amount, date, and merchant, filling the fields automatically.  
 5. **Review the daily report** – in the “Cash Flow” menu, see a pie chart that shows the percentage spent in each category.  
-6. **Adjust your budget** – set monthly targets (e.g., “don’t spend more than the price of a coffee per day”) and get alerts when you’re close to the limit.
+6. **Adjust your budget** – set monthly targets (e.g., “don’t spend more than the price of a coffee per day”) and get [alerts](/en/posts/en-why-you-still-forget-bill-due-dates-and-pay-late-in-2026) when you’re close to the limit.
 
 ## Before vs. after: the real impact  
 

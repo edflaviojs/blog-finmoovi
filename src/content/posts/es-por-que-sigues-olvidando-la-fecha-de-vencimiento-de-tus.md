@@ -22,12 +22,12 @@ seo:
 ¿Te pasa que olvidas la fecha de vencimiento de tus facturas y terminas pagando con retraso en 2026? Eso ocurre porque la rutina agitada, las notificaciones perdidas y la falta de un sistema que te recuerde de forma personalizada te dejan vulnerable a recargos y al estrés de última hora. La buena noticia es que, con pocos clics, FinMoovi crea alertas que llegan antes de que te des cuenta de que la cuenta está próxima a vencer.
 
 ## El dolor del olvido en la vida cotidiana  
-Imagina una mañana de lunes: suena el despertador, ya estás buscando dónde dejaste la llave del coche, el café aún no se ha enfriado y, en medio del ajetreo, aparece el mensaje de “factura vencida” de tu proveedor de internet. La factura ya está atrasada, el recargo por mora ya se aplicó y, para colmo, la culpa te golpea fuerte. Este escenario se repite con facturas de agua, luz, plan de móvil e incluso con el extracto de la tarjeta de crédito.
+Imagina una mañana de lunes: suena el despertador, ya estás buscando dónde dejaste la llave del coche, el café aún no se ha enfriado y, en medio del ajetreo, aparece el mensaje de “factura vencida” de tu proveedor de internet. La factura ya está atrasada, el recargo por mora ya se aplicó y, para colmo, la culpa te golpea fuerte. Este escenario se repite con facturas de agua, luz, plan de móvil e incluso con el extracto de la tarjeta de [crédito](/es/glossario/es-credito).
 
 ## Cómo FinMoovi transforma el olvido en puntualidad  
-FinMoovi está pensado exactamente para quien no tiene tiempo de revisar hojas de cálculo o anotar todo en papel. La funcionalidad **Alertas Inteligentes** permite configurar recordatorios personalizados para cada cuenta. Tú eliges cuándo debe aparecer el aviso – puede ser una semana antes, tres días o incluso una hora antes del vencimiento. Las notificaciones llegan como push al móvil y, si lo prefieres, como mensaje de voz que la app reproduce, ideal para quien tiene las manos ocupadas.
+FinMoovi está pensado exactamente para quien no tiene tiempo de revisar hojas de cálculo o anotar todo en papel. La funcionalidad **[Alertas Inteligentes](/es/posts/es-olvidaste-pagar-una-factura-y-te-quedaste-sin-dinero-como)** permite configurar recordatorios personalizados para cada cuenta. Tú eliges cuándo debe aparecer el aviso – puede ser una semana antes, tres días o incluso una hora antes del vencimiento. Las notificaciones llegan como push al móvil y, si lo prefieres, como mensaje de voz que la app reproduce, ideal para quien tiene las manos ocupadas.
 
-¿Qué pasa si la cuenta aún no está registrada? Aquí entra **Smart Capture**: basta apuntar la cámara a la factura o decir “registrar cuenta de luz” y la app reconoce los datos vía OCR o reconocimiento de voz y completa automáticamente el importe, la fecha y la categoría. En menos de 30 segundos la cuenta ya está en tu calendario, lista para generar la alerta.
+¿Qué pasa si la cuenta aún no está registrada? Aquí entra **[Smart Capture](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no)**: basta apuntar la cámara a la factura o decir “registrar cuenta de luz” y la app reconoce los datos vía OCR o reconocimiento de voz y completa automáticamente el importe, la fecha y la categoría. En menos de 30 segundos la cuenta ya está en tu calendario, lista para generar la alerta.
 
 ![Cómo FinMoovi transforma el olvido en puntualidad](/images/posts/por-que-voce-ainda-esquece-a-data-de-vencimento-das-contas-e-2.webp)
 
@@ -77,7 +77,7 @@ La app guarda toda la información localmente y genera los alertatorios incluso 
 Sí. FinMoovi utiliza tecnología OCR reconocida internacionalmente y cifra los datos antes de almacenarlos, siguiendo estándares de seguridad similares a los de los bancos.  
 
 ### ¿Puedo usar FinMoovi para cuentas en otras monedas?  
-Claro. La app soporta multimoneda (USD, EUR, etc.), permitiendo registrar cuentas y recibir alertas en diferentes divisas sin complicaciones.  
+Claro. La app soporta [multimoneda](/es/posts/es-pierdes-el-control-de-los-gastos-cuando-viajas-usando) (USD, EUR, etc.), permitiendo registrar cuentas y recibir alertas en diferentes divisas sin complicaciones.  
 
 ### ¿Cuánto tiempo lleva registrar una cuenta?  
 Con Smart Capture, menos de 30 segundos. Solo apunta la cámara o di el nombre de la cuenta y la app completa todo automáticamente.
