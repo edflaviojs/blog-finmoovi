@@ -6,6 +6,7 @@ description: >-
   abandono.
 tickerHeadline: O caderno que decide o mês
 image: /images/posts/planner-financeiro-como-montar-e-usar.webp
+imageAlt: "Caderno de capa vermelha fechado, calculadora preta e moedas espalhadas sobre uma mesa clara."
 category: orcamento
 tags:
   - planner financeiro

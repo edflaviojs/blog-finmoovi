@@ -6,6 +6,7 @@ description: >-
   abandoning it.
 tickerHeadline: The notebook that runs the month
 image: /images/posts/planner-financeiro-como-montar-e-usar.webp
+imageAlt: "Closed red notebook, black calculator and scattered coins on a light table."
 category: orcamento
 tags:
   - financial planner

@@ -5,6 +5,7 @@ description: >-
   páginas esenciales, el armado en 20 minutos y la rutina que evita el abandono.
 tickerHeadline: El cuaderno que manda en el mes
 image: /images/posts/planner-financeiro-como-montar-e-usar.webp
+imageAlt: "Cuaderno de tapa roja cerrado, calculadora negra y monedas sobre una mesa clara."
 category: orcamento
 tags:
   - planificador financiero
