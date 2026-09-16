@@ -790,7 +790,16 @@ binários não traz nada hoje.
 3. ✅ **O par do Dia das Crianças está fundido** (secção 5). Em aberto fica o
    **buraco do `slug-aposentado` para `/posts/`**: só o glossário o chama, e
    estendê-lo obriga a passar pelos 9 geradores.
-4. **A secção de cortes do artigo espanhol** por traduzir. Continua por fazer.
+4. ✅ **Feito, e era maior do que estava escrito.** O documento dizia que faltava
+   a secção no **espanhol**; faltava nos **dois** — PT tinha 8 secções, EN e ES
+   tinham 6. As duas em falta são as que cumprem o título novo (*"Reduza seus
+   gastos sem sofrimento"* e *"Renegocie o que já paga"*): sem elas, EN/ES
+   prometiam **reduzir** e o corpo só ensinava a **organizar**. E o inglês é
+   **43%** das impressões. Escritas nos dois. Os três têm agora 8 secções.
+   ⚠️ Fica aberto nesta página: a lista nomeia **sete** categorias nos 3 idiomas
+   e a tabela logo abaixo tem **seis** linhas (falta "dívidas"), enquanto os
+   títulos EN/ES prometem "7 categorias". Não acrescentada — exigiria inventar os
+   valores das colunas.
 5. **Os CTAs dizem "Usado por milhares de pessoas"** — decisão do Ed, não tocado.
 6. **28 descrições usam bloco YAML `>-`** — 25 antigas + 3 convertidas hoje pelo
    robô das capas.
