@@ -1,6 +1,6 @@
 ---
-title: "Como Reduzir Gastos Fixos Mensais de Forma Eficaz"
-description: "Aprenda a reduzir gastos fixos mensais e economize dinheiro com dicas práticas e eficazes. Descubra como gerenciar suas finanças de forma inteligente."
+title: "Gastos fixos: como negociar aluguel, internet e seguro"
+description: "Cancele assinaturas paradas, peça revisão do plano de internet e negocie o aluguel e o seguro de saúde. O artigo mostra as cinco contas, uma a uma."
 image: "/images/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz.webp"
 imageAlt: "Placa de circuito impresso com componentes eletrônicos e iluminação colorida em azul e rosa."
 category: "dicas"
@@ -13,8 +13,8 @@ readingTime: 3
 featured: false
 translationKey: "como-reduzir-gastos-fixos-mensais-de-forma-eficaz"
 seo:
-  metaTitle: "Como Reduzir Gastos Fixos Mensais de Forma Eficaz"
-  metaDescription: "Aprenda a reduzir gastos fixos mensais e economize dinheiro com dicas práticas e eficazes. Descubra como gerenciar suas finanças de forma inteligente."
+  metaTitle: "Gastos fixos: como negociar aluguel, internet e seguro"
+  metaDescription: "Cancele assinaturas paradas, peça revisão do plano de internet e negocie o aluguel e o seguro de saúde. O artigo mostra as cinco contas, uma a uma."
   keywords: ["como reduzir gastos fixos mensais","finanças pessoais","economia","dinheiro"]
 ---
 
