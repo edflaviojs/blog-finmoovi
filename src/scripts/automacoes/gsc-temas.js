@@ -270,6 +270,29 @@ async function main() {
   }
   console.log('');
 
+  // Onde está, em concreto, a procura que tem hipótese de virar clique. A média
+  // de uma seção pode ser boa por causa de uma única página — e aí "o blog tem
+  // um ativo" e "o blog tem UMA página" são a mesma média com decisões opostas.
+  const top10PorPagina = new Map();
+  for (const r of linhasQueryPage) {
+    if ((r.position || 999) > 10) continue;
+    const caminho = r.keys[1].replace(/^https?:\/\/[^/]+/, '');
+    if (!top10PorPagina.has(caminho)) top10PorPagina.set(caminho, { imp: 0, cliques: 0, buscas: 0, topBusca: null, topImp: 0 });
+    const v = top10PorPagina.get(caminho);
+    v.imp += r.impressions || 0;
+    v.cliques += r.clicks || 0;
+    v.buscas++;
+    if ((r.impressions || 0) > v.topImp) { v.topImp = r.impressions || 0; v.topBusca = r.keys[0]; }
+  }
+  const top10 = [...top10PorPagina.entries()].sort((a, b) => b[1].imp - a[1].imp);
+  const impTop10 = top10.reduce((s, [, v]) => s + v.imp, 0);
+  console.log(`A PROCURA QUE CHEGA AO TOP 10: ${impTop10} impressões em ${top10.length} páginas`);
+  console.log('impressões | %do top10 | cliques | buscas | página | maior busca');
+  for (const [caminho, v] of top10.slice(0, 15)) {
+    console.log(`${v.imp} | ${((v.imp / impTop10) * 100).toFixed(1)}% | ${v.cliques} | ${v.buscas} | ${caminho} | ${v.topBusca}`);
+  }
+  console.log('');
+
   console.log('DEMANDA (o que o Google já me mostra)  ×  OFERTA (o que eu escrevi)');
   console.log('tema | impressões | %total | cliques | buscas | posição média | páginas | POSTS | pt/en/es | gloss/posts/ferram | maior busca');
   for (const l of linhas) {
