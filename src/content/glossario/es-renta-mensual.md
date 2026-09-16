@@ -1,8 +1,8 @@
 ---
 term: "renta mensual"
-definition: "Qué es renta mensual y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
+definition: "La renta mensual es el dinero que recibes con regularidad —sueldo, pensión o alquileres— ya descontados impuestos: lo que de verdad puedes gastar cada mes."
 title: "renta mensual - Glosario Financiero"
-description: "Qué es renta mensual y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
+description: "La renta mensual es el dinero que recibes con regularidad —sueldo, pensión o alquileres— ya descontados impuestos: lo que de verdad puedes gastar cada mes."
 image: "/images/glossario/renda-mensal.webp"
 imageAlt: "Monedas doradas, planta verde y balanza sobre base rosa, fondo azul oscuro."
 category: "basico"
@@ -14,7 +14,7 @@ locale: "es"
 translationKey: "glossario-renda-mensal"
 seo:
   metaTitle: "renta mensual - Glosario Financiero"
-  metaDescription: "Qué es renta mensual y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
+  metaDescription: "La renta mensual es el dinero que recibes con regularidad —sueldo, pensión o alquileres— ya descontados impuestos: lo que de verdad puedes gastar cada mes."
   keywords: ["renta mensual", "glosario", "finanzas"]
 ---
 

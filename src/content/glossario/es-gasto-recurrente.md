@@ -1,8 +1,8 @@
 ---
 term: "gasto recurrente"
-definition: "Qué es gasto recurrente y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
+definition: "Un gasto recurrente es el desembolso que se repite con periodicidad y con un importe parecido: alquiler, luz, internet o suscripciones."
 title: "gasto recurrente - Glosario Financiero"
-description: "Qué es gasto recurrente y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
+description: "Un gasto recurrente es el desembolso que se repite con periodicidad y con un importe parecido: alquiler, luz, internet o suscripciones."
 image: "/images/glossario/despesa-recorrente.webp"
 imageAlt: "Monedas doradas, frascos rosas y una flecha ascendente sobre fondo oscuro."
 category: "basico"
@@ -14,7 +14,7 @@ locale: "es"
 translationKey: "glossario-despesa-recorrente"
 seo:
   metaTitle: "gasto recurrente - Glosario Financiero"
-  metaDescription: "Qué es gasto recurrente y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
+  metaDescription: "Un gasto recurrente es el desembolso que se repite con periodicidad y con un importe parecido: alquiler, luz, internet o suscripciones."
   keywords: ["gasto recurrente", "glosario", "finanzas"]
 ---
 
