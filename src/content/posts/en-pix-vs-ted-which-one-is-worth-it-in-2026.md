@@ -9,7 +9,7 @@ locale: "en"
 tags: ["PIX","TED","bank transfer","banking fees","FinMoovi","2026","personal finance","pix vs ted"]
 author: "FinMoovi"
 publishedAt: 2026-07-24
-updatedAt: "2026-09-15"
+updatedAt: "2026-09-16"
 readingTime: 5
 featured: false
 translationKey: "pix-vs-ted-qual-vale-mais-a-pena-em-2026"
@@ -110,4 +110,15 @@ On the other hand, if you need the money instantly, even outside banking hours, 
 - Want instant delivery, any time of day? → Go with PIX.  
 
 In everyday life, most of us will use PIX for grocery splits, paying a friend, or settling a utility bill, while keeping TED for formal transactions like a down‑payment on a house or a business invoice. This split lets you enjoy speed without sacrificing security where it matters most.
+
+## TED vs PIX: Quick Answer
+
+Both TED and PIX let you move money between banks, but they work differently. TED is the older system that processes transfers only during business‑day windows, so a typical TED sent before the cut‑off arrives the next day. PIX, introduced a few years ago, runs 24 hours a day, seven days a week, and settles in seconds, even on weekends and holidays.  
+
+**Key points**  
+- **Speed** – PIX is instant; TED usually takes one business day.  
+- **Availability** – PIX works anytime; TED works only during banking hours.  
+- **Use case** – For everyday payments, bill splitting, or covering an unexpected expense, reach for PIX. Keep TED in mind only for occasional, large‑value transfers that your bank still requires.  
+
+In short, if you need money fast, PIX is the go‑to option; TED is a backup for specific, high‑value situations.
 
