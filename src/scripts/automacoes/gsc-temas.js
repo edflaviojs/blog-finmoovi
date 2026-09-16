@@ -200,10 +200,17 @@ async function main() {
     if (!porIdioma.has(idioma)) porIdioma.set(idioma, { imp: 0, cliques: 0 });
     porIdioma.get(idioma).imp += r.impressions || 0;
     porIdioma.get(idioma).cliques += r.clicks || 0;
-    if (!porSecao.has(secao)) porSecao.set(secao, { imp: 0, cliques: 0, paginas: new Set() });
-    porSecao.get(secao).imp += r.impressions || 0;
-    porSecao.get(secao).cliques += r.clicks || 0;
-    porSecao.get(secao).paginas.add(caminho);
+    if (!porSecao.has(secao)) porSecao.set(secao, { imp: 0, cliques: 0, paginas: new Set(), posSoma: 0, top10: 0, top20: 0 });
+    const sec = porSecao.get(secao);
+    sec.imp += r.impressions || 0;
+    sec.cliques += r.clicks || 0;
+    sec.paginas.add(caminho);
+    // Posição média ponderada pelas impressões, e quanto da procura chega em
+    // posição com hipótese real de clique. 7 mil impressões na página 8 e 7 mil
+    // na primeira página são o mesmo número e coisas opostas.
+    sec.posSoma += (r.position || 0) * (r.impressions || 0);
+    if ((r.position || 999) <= 10) sec.top10 += r.impressions || 0;
+    if ((r.position || 999) <= 20) sec.top20 += r.impressions || 0;
 
     const tema = classificar(r.keys[0]);
     if (!tema) continue;
@@ -255,9 +262,11 @@ async function main() {
     }))
     .sort((a, b) => b.imp - a.imp);
 
-  console.log('QUE PARTE DO BLOG RECEBE A PROCURA');
+  console.log('QUE PARTE DO BLOG RECEBE A PROCURA — e em que posição');
+  console.log('parte | impressões | %total | cliques | páginas | posição média | impr. no top 10 | impr. no top 20');
   for (const [secao, v] of [...porSecao.entries()].sort((a, b) => b[1].imp - a[1].imp)) {
-    console.log(`${secao} | ${v.imp} impressões (${((v.imp / somaQP) * 100).toFixed(1)}%) | ${v.cliques} cliques | ${v.paginas.size} páginas`);
+    const pos = v.imp ? (v.posSoma / v.imp).toFixed(1) : '—';
+    console.log(`${secao} | ${v.imp} | ${((v.imp / somaQP) * 100).toFixed(1)}% | ${v.cliques} | ${v.paginas.size} | ${pos} | ${v.top10} (${((v.top10 / v.imp) * 100).toFixed(1)}%) | ${v.top20} (${((v.top20 / v.imp) * 100).toFixed(1)}%)`);
   }
   console.log('');
 
