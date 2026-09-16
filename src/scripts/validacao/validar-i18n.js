@@ -169,34 +169,45 @@ function main() {
     }
   }
 
-  // 5b. Canibalização pelo TÍTULO — AVISO, não bloqueante.
+  // 5b. Canibalização pelo TÍTULO — ERRO, tal como a regra 5.
   //
-  // A trava acima compara o NOME DO FICHEIRO. O nome nasce com o post e nunca
-  // muda; o título muda — e é o título que vai para o Google. Em 16/09/2026 dois
-  // posts ficaram a disputar "reduzir gastos mensais" porque um deles foi
-  // retitulado no dia anterior, e a trava de slug não viu nada: os dois nomes de
-  // ficheiro só partilhavam a palavra "mensais". Medido nos 136 posts PT: a
-  // regra por slug acusa 0 pares, a regra por slug+título acusa 3 — e os 3 são
-  // duplicações reais (dois posts do Dia das Crianças com o mesmo "7 passos",
-  // dois de Excel, e o par acima).
+  // A regra 5 compara o NOME DO FICHEIRO. O nome nasce com o post e nunca muda;
+  // o título muda — e é o título que vai para o Google. Em 16/09/2026 dois posts
+  // ficaram a disputar "reduzir gastos mensais" porque um deles foi retitulado no
+  // dia anterior, e a trava de slug não viu nada: os dois nomes de ficheiro só
+  // partilhavam a palavra "mensais".
   //
-  // Entra como AVISO de propósito. Já nasce com 3 casos por resolver, e uma
-  // trava nova que deixa o CI vermelho no primeiro dia acaba desligada por
-  // alguém — e com ela para de publicar o blog inteiro. Promover a erro quando
-  // os pares existentes estiverem resolvidos.
+  // ⚠️ MEDE SÓ O TÍTULO, e não a união título+slug como na primeira versão.
+  // A união arrasta para sempre as palavras de um nome de ficheiro antigo: depois
+  // de 17/09/2026 os três pares ficaram todos com títulos distintos e a união
+  // continuava a acusá-los, porque `como-reduzir-gastos-fixos-mensais-...` ainda
+  // tem "reduzir gastos mensais" no NOME. Renomear o ficheiro não é opção (a
+  // renomeação de slugs custou meses de reindexação em 2026) e, sobretudo, não é
+  // preciso: colisão de slug com slug já é a regra 5, e essa já é erro. A união
+  // só produzia falso alarme — e um falso alarme numa trava que agora é erro
+  // pararia de publicar o blog inteiro.
+  //
+  // Passou a ERRO depois de resolvidos os 3 pares que existiam (dois posts do Dia
+  // das Crianças, dois de Excel, e o resíduo acima). Antes de promover, o guard de
+  // entrada dos geradores (`isThemeCovered`, em seo-guard.js) passou a medir os
+  // títulos publicados também — se o gate de saída medisse mais do que o guard de
+  // entrada, o post seria escrito, ilustrado, traduzido, commitado, e só então
+  // morreria no vermelho.
   const ptTitulos = posts
     .filter(p => p.locale === 'pt')
     .map(p => {
       const slug = p.file.replace(/\.md$/, '');
-      return { slug, title: p.title, core: new Set([...coreTokens(slug), ...coreTokens(slugifyTheme(p.title))]) };
+      return { slug, title: p.title, core: coreTokens(slugifyTheme(p.title)) };
     })
-    .filter(p => !SERIE_RE.test(p.slug) && !SERIE_RE.test(slugifyTheme(p.title)));
+    .filter(p => p.core.size > 0 && !SERIE_RE.test(slugifyTheme(p.title)));
   for (let i = 0; i < ptTitulos.length; i++) {
     for (let j = i + 1; j < ptTitulos.length; j++) {
       const A = ptTitulos[i], B = ptTitulos[j];
       const shared = [...A.core].filter(x => B.core.has(x));
       if (shared.length >= 3 || jaccardSim(A.core, B.core) >= 0.7) {
-        warnings.push(`⚠️ Canibalização por TÍTULO (${shared.join(', ')}): "${A.title}" [${A.slug}] × "${B.title}" [${B.slug}]`);
+        errors.push(`❌ CANIBALIZAÇÃO POR TÍTULO: 2 posts PT competem pela mesma busca (${shared.join(', ')}):`);
+        errors.push(`   - "${A.title}" [${A.slug}]`);
+        errors.push(`   - "${B.title}" [${B.slug}]`);
       }
     }
   }

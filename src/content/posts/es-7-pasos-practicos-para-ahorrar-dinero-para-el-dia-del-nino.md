@@ -1,5 +1,5 @@
 ---
-title: 7 pasos prácticos para ahorrar dinero para el Día del Niño 2026
+title: "Día del Niño: cómo gastar menos en regalos sin decepcionar"
 description: >-
   Descubre estrategias simples y un plan de 30 días para ahorrar antes del Día
   del Niño sin apretar el presupuesto.
@@ -24,7 +24,7 @@ featured: false
 translationKey: 7-passos-praticos-para-guardar-dinheiro-para-o-dia-das
 scope: universal
 seo:
-  metaTitle: 7 pasos prácticos para ahorrar dinero para el Día del Niño 2026
+  metaTitle: "Día del Niño: cómo gastar menos en regalos sin decepcionar"
   metaDescription: >-
     Descubre estrategias simples y un plan de 30 días para ahorrar antes del Día
     del Niño sin apretar el presupuesto.

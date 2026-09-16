@@ -472,7 +472,7 @@ async function main() {
   // ⚠️ Medir o TÍTULO, e não só o tema (isThemeCovered lá em cima): é o slug que o validador
   // olha no fim. Sem isto o post é escrito, ilustrado e traduzido para ser deitado fora pelo
   // gate. Ver seo-guard.js.
-  if (skipSeTituloCanibaliza(slug, 'post inteligente', POSTS_DIR)) return;
+  if (skipSeTituloCanibaliza(slug, 'post inteligente', POSTS_DIR, post.title)) return;
 
   // 4. Generate cover image (same system as normal posts)
   const imagePath = await generateCoverImage(post.title, slug, 'posts');

@@ -381,7 +381,7 @@ async function main() {
 
     // ⚠️ Medir o TÍTULO, e não só o tema: é o slug que o validador olha no fim. Sem isto o
     // post é escrito, ilustrado e traduzido para ser deitado fora pelo gate. Ver seo-guard.js.
-    if (skipSeTituloCanibaliza(slugPt, 'bofu', POSTS_DIR)) return;
+    if (skipSeTituloCanibaliza(slugPt, 'bofu', POSTS_DIR, title)) return;
 
     console.log(`✅ PT: ${title}`);
     const imagePath = await generateCoverImage(title, slugPt, 'posts');

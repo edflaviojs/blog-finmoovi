@@ -1,5 +1,5 @@
 ---
-title: "How to Build a Personal Finance Excel Template in 2026 for Peace of Mind"
+title: "Personal Finance Excel Template: How to Build One From Scratch"
 description: "Create a simple Excel template to track income, expenses, and savings, and integrate it with FinMoovi for effortless budgeting."
 tickerHeadline: "The template that simplifies your money"
 image: "/images/posts/como-criar-um-modelo-excel-para-financas-pessoais-em-2026-e.webp"
@@ -21,7 +21,7 @@ featured: false
 draft: false
 translate: true
 seo:
-  metaTitle: "How to Build a Personal Finance Excel Template in 2026 for Peace of Mind"
+  metaTitle: "Personal Finance Excel Template: How to Build One From Scratch"
   metaDescription: "Create a simple Excel template to track income, expenses, and savings, and integrate it with FinMoovi for effortless budgeting."
   keywords: ["personal finance","Excel budget template","financial tracking","budgeting app","FinMoovi","expense tracking","savings plan"]
 ---

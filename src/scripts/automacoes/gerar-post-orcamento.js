@@ -298,7 +298,7 @@ REGRAS DE FORMA (mantidas):
     // ⚠️ Medir o TÍTULO, e não só o tema: é o slug que o validador olha no fim. Sem isto o
     // post é escrito, ilustrado e traduzido para ser deitado fora pelo gate (foi o que
     // derrubou a corrida de 31/08/2026). O porquê todo em seo-guard.js.
-    if (skipSeTituloCanibaliza(slugPt, 'orçamento', POSTS_DIR)) return;
+    if (skipSeTituloCanibaliza(slugPt, 'orçamento', POSTS_DIR, title)) return;
 
     console.log(`✅ PT: ${title}`);
 

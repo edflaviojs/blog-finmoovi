@@ -191,7 +191,7 @@ async function main() {
   // ⚠️ O guard acima só apanha o nome IGUAL; este apanha o tema PARECIDO, que é o que o
   // validador mede no fim. Sem ele o post é escrito e traduzido para ser deitado fora pelo
   // gate. Ver seo-guard.js.
-  if (skipSeTituloCanibaliza(slug, 'sazonal mercados', POSTS_DIR)) return;
+  if (skipSeTituloCanibaliza(slug, 'sazonal mercados', POSTS_DIR, title)) return;
 
   const today = now.toISOString().split('T')[0];
   // A capa TEM de existir no disco antes de escrever os .md. O catch antigo era

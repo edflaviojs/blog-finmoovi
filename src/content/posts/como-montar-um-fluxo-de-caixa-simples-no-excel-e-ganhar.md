@@ -1,5 +1,5 @@
 ---
-title: "Como montar um fluxo de caixa simples no Excel e ganhar tranquilidade financeira em 2026"
+title: "Fluxo de caixa no Excel: modelo simples com saldo automático"
 description: "Aprenda a criar um fluxo de caixa no Excel passo a passo, usando exemplos do dia a dia e o app FinMoovi para automatizar tudo em poucos minutos."
 tickerHeadline: "Transforme a bagunça das contas em contr"
 image: "/images/posts/como-montar-um-fluxo-de-caixa-simples-no-excel-e-ganhar.webp"
@@ -14,7 +14,7 @@ featured: true
 translationKey: "como-montar-um-fluxo-de-caixa-simples-no-excel-e-ganhar"
 scope: "universal"
 seo:
-  metaTitle: "Como montar um fluxo de caixa simples no Excel e ganhar tranquilidade financeira em 2026"
+  metaTitle: "Fluxo de caixa no Excel: modelo simples com saldo automático"
   metaDescription: "Aprenda a criar um fluxo de caixa no Excel passo a passo, usando exemplos do dia a dia e o app FinMoovi para automatizar tudo em poucos minutos."
   keywords: ["ejemplo de flujo de caja en excel","finanças pessoais","economia","dinheiro"]
 ---

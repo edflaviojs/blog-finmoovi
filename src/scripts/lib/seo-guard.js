@@ -16,7 +16,7 @@
  * o guard pula aqui é exatamente o que o validador bloquearia depois.
  */
 
-import { readdirSync, existsSync, appendFileSync } from 'fs';
+import { readdirSync, readFileSync, existsSync, appendFileSync } from 'fs';
 import { join } from 'path';
 
 export const POSTS_DIR = join(process.cwd(), 'src', 'content', 'posts');
@@ -83,6 +83,43 @@ export function getExistingPtSlugs(postsDir = POSTS_DIR) {
 }
 
 /**
+ * Título (frontmatter) de cada post PT publicado, ao lado do seu slug.
+ *
+ * ⚠️ Lê o TÍTULO e não só o nome do ficheiro porque o gate do CI
+ * (`validacao/validar-i18n.js` §5b) passou a reprovar colisão de TÍTULO. Se o
+ * guard de entrada medisse menos do que o gate de saída, o post seria escrito,
+ * ilustrado, traduzido, commitado — e só então morreria no vermelho, que é
+ * exatamente a família de defeito descrita em `skipSeTituloCanibaliza`.
+ *
+ * O título pode vir em bloco YAML (`>-`, `>`, `|`): nesse caso o valor está na
+ * linha seguinte. Vinte e cinco ficheiros deste repo usam esse formato nas
+ * descrições, e um parser ingénuo devolvia ">-" como título — um "título" sem
+ * tokens, que faria a trava passar tudo em silêncio.
+ */
+export function getExistingPtPosts(postsDir = POSTS_DIR) {
+  if (!existsSync(postsDir)) return [];
+  return readdirSync(postsDir)
+    .filter(f => f.endsWith('.md') && !f.startsWith('en-') && !f.startsWith('es-'))
+    .map(f => {
+      const slug = f.replace(/\.md$/, '');
+      let title = '';
+      try {
+        const fm = readFileSync(join(postsDir, f), 'utf-8').match(/^---\r?\n([\s\S]*?)\r?\n---/);
+        if (fm) {
+          const linhas = fm[1].split(/\r?\n/);
+          const i = linhas.findIndex(l => /^title:/.test(l));
+          if (i >= 0) {
+            const bruto = linhas[i].replace(/^title:\s*/, '').trim();
+            title = /^[>|][-+]?$/.test(bruto) ? (linhas[i + 1] || '').trim() : bruto;
+            title = title.replace(/^["']|["']$/g, '');
+          }
+        }
+      } catch { /* ficheiro ilegível nunca derruba o gerador */ }
+      return { slug, title };
+    });
+}
+
+/**
  * O tema candidato canibaliza algum post PT já publicado?
  * Núcleo de tokens compartilhado ≥ `need` OU jaccard ≥ 0.7, ignorando séries
  * periódicas (dos dois lados). Retorna { covered, conflictSlug?, shared? }.
@@ -110,12 +147,20 @@ export function isThemeCovered(theme, postsDir = POSTS_DIR) {
   if (cand.size === 0) return { covered: false };
   const need = Math.min(3, cand.size);
 
-  for (const slug of getExistingPtSlugs(postsDir)) {
-    if (SERIE_RE.test(slug)) continue;
-    const core = coreTokens(slug);
-    const shared = [...cand].filter(x => core.has(x));
-    if (shared.length >= need || jaccardSim(cand, core) >= 0.7) {
-      return { covered: true, conflictSlug: slug, shared };
+  for (const { slug, title } of getExistingPtPosts(postsDir)) {
+    // O SLUG e o TÍTULO são medidos SEPARADAMENTE, nunca unidos num só conjunto.
+    // Unidos, as palavras de um nome de ficheiro antigo somam-se às do título
+    // novo e inventam colisões que já não existem — foi assim que os três pares
+    // de 16/09 continuaram acusados depois de retitulados.
+    const tituloSlug = title ? slugifyTheme(title) : '';
+    for (const alvo of [slug, tituloSlug]) {
+      if (!alvo || SERIE_RE.test(alvo)) continue;
+      const core = coreTokens(alvo);
+      if (core.size === 0) continue;
+      const shared = [...cand].filter(x => core.has(x));
+      if (shared.length >= need || jaccardSim(cand, core) >= 0.7) {
+        return { covered: true, conflictSlug: slug, conflictTitle: title, shared };
+      }
     }
   }
   return { covered: false };
@@ -164,13 +209,22 @@ export function warnSkip(theme, detail = '') {
  * (padrão `warnSkip`, para não repetir o modo de falha clássico do repo: o gerador que
  * não publica em silêncio).
  *
+ * ═══ POR QUE O SLUG SOZINHO TAMBÉM NÃO CHEGA ═══
+ * O slug é o título CORTADO aos 60 caracteres (`trimSlug`), e nesta casa quase todos os
+ * slugs estão cortados — as últimas palavras do título não existem nele. O gate do CI, esse,
+ * mede o TÍTULO inteiro. Resultado: uma colisão que depende de uma palavra da cauda passa
+ * aqui e reprova lá, que é precisamente o buraco que esta função existe para tapar. Por isso
+ * recebe o título e mede os dois.
+ *
  * @param   {string} slugPt   O slug JÁ criado a partir do título (o mesmo que vai ao disco).
  * @param   {string} rotulo   Nome do gerador, só para a mensagem ("dicas", "orçamento"...).
  * @param   {string} [postsDir]
+ * @param   {string} [tituloPt] O título inteiro, antes do corte. Sem ele mede-se só o slug.
  * @returns {boolean}         true = canibaliza, o gerador deve fazer `return` sem publicar.
  */
-export function skipSeTituloCanibaliza(slugPt, rotulo, postsDir = POSTS_DIR) {
-  const r = isThemeCovered(slugPt, postsDir);
+export function skipSeTituloCanibaliza(slugPt, rotulo, postsDir = POSTS_DIR, tituloPt = '') {
+  let r = isThemeCovered(slugPt, postsDir);
+  if (!r.covered && tituloPt) r = isThemeCovered(tituloPt, postsDir);
   if (!r.covered) return false;
   console.log(`⚠️ O TÍTULO gerado canibaliza um post já publicado — nada é escrito nem commitado.`);
   warnSkip(

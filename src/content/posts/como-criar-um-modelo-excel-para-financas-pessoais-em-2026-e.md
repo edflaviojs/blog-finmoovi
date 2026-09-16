@@ -1,5 +1,5 @@
 ---
-title: "Como criar um modelo Excel para finanças pessoais em 2026 e ganhar tranquilidade"
+title: "Modelo de planilha Excel para finanças pessoais: como montar do zero"
 description: "Aprenda a montar um template Excel de finanças pessoais, passo a passo, e descubra como o FinMoovi pode automatizar o registro em apenas 5 minutos."
 tickerHeadline: "O modelo que simplifica seu dinheiro"
 image: "/images/posts/como-criar-um-modelo-excel-para-financas-pessoais-em-2026-e.webp"
@@ -21,7 +21,7 @@ featured: false
 draft: false
 translate: true
 seo:
-  metaTitle: "Como criar um modelo Excel para finanças pessoais em 2026 e ganhar tranquilidade"
+  metaTitle: "Modelo de planilha Excel para finanças pessoais: como montar do zero"
   metaDescription: "Aprenda a montar um template Excel de finanças pessoais, passo a passo, e descubra como o FinMoovi pode automatizar o registro em apenas 5 minutos."
   keywords: ["template excel finanças pessoais","planilha de orçamento","controle de despesas","FinMoovi","captura inteligente","organização financeira"]
 ---

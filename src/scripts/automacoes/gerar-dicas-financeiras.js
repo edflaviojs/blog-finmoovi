@@ -356,7 +356,7 @@ Responda APENAS com o tema, em uma única linha, sem aspas e sem explicação.`,
     // de escrever. Medir aqui — antes da capa, das traduções e do commit — é o que evita o
     // post ser escrito para depois ser deitado fora. O porquê todo em seo-guard.js.
     // A keyword da fila não é marcada como usada e volta no próximo ciclo, como no gate acima.
-    if (skipSeTituloCanibaliza(slugPt, 'dicas', POSTS_DIR)) return;
+    if (skipSeTituloCanibaliza(slugPt, 'dicas', POSTS_DIR, title)) return;
 
     const today = new Date().toISOString().split('T')[0];
 

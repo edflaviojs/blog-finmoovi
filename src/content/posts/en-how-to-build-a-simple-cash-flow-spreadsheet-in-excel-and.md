@@ -1,5 +1,5 @@
 ---
-title: "How to Build a Simple Cash Flow Spreadsheet in Excel and Gain Financial Peace in 2026"
+title: "Cash Flow in Excel: A Simple Template With Automatic Balance"
 description: "Step‑by‑step guide to creating a cash‑flow spreadsheet in Excel, with everyday examples and the FinMoovi app for instant automation."
 tickerHeadline: "Turn messy bills into clear cash flow"
 image: "/images/posts/como-montar-um-fluxo-de-caixa-simples-no-excel-e-ganhar.webp"
@@ -14,7 +14,7 @@ featured: false
 translationKey: "como-montar-um-fluxo-de-caixa-simples-no-excel-e-ganhar"
 scope: "universal"
 seo:
-  metaTitle: "How to Build a Simple Cash Flow Spreadsheet in Excel and Gain Financial Peace in 2026"
+  metaTitle: "Cash Flow in Excel: A Simple Template With Automatic Balance"
   metaDescription: "Step‑by‑step guide to creating a cash‑flow spreadsheet in Excel, with everyday examples and the FinMoovi app for instant automation."
   keywords: ["cash flow spreadsheet","personal finance","budgeting","FinMoovi","Excel","expense tracking"]
 ---
