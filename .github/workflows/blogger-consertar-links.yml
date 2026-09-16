@@ -1,0 +1,54 @@
+name: Blogger — reapontar links para a URL final
+
+# SÓ À MÃO. Não tem horário, e é de propósito.
+#
+# PARA QUE SERVE: em julho de 2026 sindicámos posts para o Blogger e depois os
+# slugs mudaram. As cópias no Blogger ficaram a apontar para endereços que hoje
+# são só um 301 — e como o blog quase não tem links de fora, o Google passou a
+# preferir o endereço VELHO ao nosso. Resultado medido em 16/09/2026: cinco
+# páginas com "Duplicate, Google chose different canonical than user", todas
+# NÃO indexadas.
+#
+# COMEÇAR SEMPRE POR RELATAR (aplicar: false). O relatório vai buscar o conteúdo
+# real de cada post ao Blogger e mostra o antes e o depois sem escrever nada. O
+# registo local diz o que foi publicado, não o que está no ar hoje.
+on:
+  workflow_dispatch:
+    inputs:
+      aplicar:
+        description: 'Gravar no Blogger? (false = só relatar)'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+jobs:
+  consertar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Reapontar os links
+        env:
+          BLOGGER_CLIENT_ID: ${{ secrets.BLOGGER_CLIENT_ID }}
+          BLOGGER_CLIENT_SECRET: ${{ secrets.BLOGGER_CLIENT_SECRET }}
+          BLOGGER_REFRESH_TOKEN: ${{ secrets.BLOGGER_REFRESH_TOKEN }}
+          BLOGGER_BLOG_ID: ${{ secrets.BLOGGER_BLOG_ID }}
+        run: |
+          node scripts/fix-blogger-links.js ${{ inputs.aplicar && '--aplicar' || '' }}
