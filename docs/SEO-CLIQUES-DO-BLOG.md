@@ -1022,6 +1022,42 @@ fala com rastreadores.
 
 ---
 
+## 10. 🔴 O conserto da secção 3 parou o robô das Dicas — e o post do dia não saiu
+
+Às **13h50 UTC** o **Gerar Dicas Financeiras** falhou com
+`ReferenceError: title is not defined`. A causa é o commit `5761660` desta mesma
+manhã (secção 3): ele passou um 4º argumento `title` à `skipSeTituloCanibaliza` em
+**nove geradores de uma só vez**.
+
+Em oito deles a variável local chama-se mesmo `title`. Em
+`gerar-dicas-financeiras.js` chama-se **`post.title`** — e o robô só rebenta *depois*
+de já ter escrito o post: o log mostra `✅ Post PT gerado` e, na linha seguinte, o erro.
+O texto gerado foi deitado fora e o blog não publicou nada nesse ciclo.
+
+**A keyword não se perdeu:** o gate não marca a entrada como usada, por isso
+*"outstanding balance definition"* continuou pendente na fila e foi consumida na
+corrida de reparação.
+
+| verificação | resultado |
+|---|---|
+| geradores tocados pelo `5761660` | 9 |
+| com `title` realmente no escopo | 8 (bofu, comparação, inteligente, investimentos, orçamento, sazonal, sazonal-mercados, soluções) |
+| **partidos** | **1 — `gerar-dicas-financeiras.js`** |
+
+Conserto em `3b3480a` (`title` → `post.title`) e corrida manual **verde**: post
+publicado nos 3 idiomas (*"Entenda o que é saldo em aberto e como evitá-lo"*), com capa,
+imagens inline, glossário e validação i18n OK.
+
+> **A lição, e é a família de defeito nº1 da casa:** a mesma linha colada em N ficheiros
+> assume que a variável se chama igual em todos. `node --check` **não apanha** isto —
+> é erro de execução, não de sintaxe. Só a corrida a sério prova.
+
+**Falso alarme no mesmo e-mail:** o *Blogger — reapontar links* a vermelho às 13h01 era
+o **ensaio** (1 link falhado ⇒ saída 1). A corrida com `--aplicar`, 90 segundos depois,
+arrumou **8 de 8, 0 falhados**. Nada a fazer.
+
+---
+
 ## O que fica ABERTO depois de hoje
 
 1. ⏳ **Medir o CTR por volta de 06/10** — agora são **cinco** páginas (as três
