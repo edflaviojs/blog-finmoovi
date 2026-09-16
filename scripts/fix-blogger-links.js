@@ -128,9 +128,18 @@ async function main() {
 
   // Candidatos: o que o registo DIZ que pode estar errado. Ainda não é prova.
   const candidatos = [];
+  const semeados = [];
   for (const entrada of sincronizados) {
     const slug = String(entrada.file || '').replace(/\.md$/, '');
     if (!slug || !entrada.bloggerId) continue;
+    // Um id do Blogger é sempre numérico. O ficheiro tem entradas semeadas à mão
+    // (`seeded-2026-07-12`) que NUNCA foram publicadas — pedir uma delas à API dá
+    // 400 e faria a corrida ficar vermelha por um defeito que não é nosso. Não é
+    // falha: é registo que nunca correspondeu a nada no ar.
+    if (!/^\d+$/.test(String(entrada.bloggerId))) {
+      semeados.push({ slug, id: entrada.bloggerId });
+      continue;
+    }
     const caminhoAntigo = `/posts/${slug}`;
     const destino = aposentadas.get(caminhoAntigo);
     if (!destino) continue;
@@ -143,6 +152,10 @@ async function main() {
     });
   }
   console.log(`Candidatos pelo registo: ${candidatos.length}`);
+  if (semeados.length) {
+    console.log(`Registos semeados (id não numérico, nunca foram ao ar): ${semeados.length}`);
+    for (const s of semeados) console.log(`   ${s.slug}  [id: ${s.id}]`);
+  }
   if (!candidatos.length) { console.log('Nada a fazer.'); return; }
 
   let token;
