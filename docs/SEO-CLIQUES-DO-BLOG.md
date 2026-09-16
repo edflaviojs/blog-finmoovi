@@ -597,3 +597,147 @@ dinheiro" são UMA página, não três.**
 6. **25 descrições usam bloco YAML `>-`** — por verificar, não tocado.
 7. **As calculadoras estão mortas no Google** (posição 81, uma impressão no top
    10 em 16 meses). São **isca de link**, não conteúdo de SEO. Usá-las assim.
+
+---
+
+# 16/09/2026, parte 2: executar a lista — e o que a execução desmentiu
+
+> A manhã mediu e decidiu. Esta parte é fazer: o título de guardar dinheiro, os
+> três pares de canibalização e o primeiro post novo. **Nenhum endereço mudou.**
+
+## 1. O post de guardar dinheiro não dizia "como guardar dinheiro"
+
+É o clique mais caro da lista: **~11.500 buscas/mês, KD 23–36, CPC R$ 2,63** —
+sete vezes o CPC de "como economizar dinheiro", que tem 74.000 buscas.
+
+| | título |
+|---|---|
+| antes | A forma mais eficaz de guardar dinheiro em 2026: estratégia prática e automática (**79 car.**) |
+| pt | **Como guardar dinheiro: 4 passos para juntar todo mês** (51) |
+| en | How to Save Money Every Month: 4 Practical Steps (47) |
+| es | Cómo ahorrar dinero cada mes: 4 pasos prácticos (46) |
+
+A palavra-chave não faltava — **começava no caractere 24**, e o Google cortava o
+resto. O "juntar" entra para apanhar a segunda família de variações com a mesma
+página, que foi a lição da manhã: *uma página cobre as variações.*
+
+As três opções foram medidas contra os 151 posts PT com a função real, com
+controle falso na mesma corrida. **E a medição mudou a ordem do trabalho:** a
+opção escolhida COLIDIA, mas não com o que se esperava — com o post do **Dia das
+Crianças**, que tinha "guardar dinheiro" e "passos" no título. O par 1 teve de
+ser resolvido primeiro.
+
+> Efeito colateral medido: `isThemeCovered("guardar dinheiro")` respondia
+> **COBERTO — pelo post do Dia das Crianças**. Os 11 geradores achavam que o tema
+> mais valioso da lista já estava escrito, por causa de um post sazonal de
+> presentes. Deixou de responder isso.
+
+## 2. Os três pares — e o terceiro não era canibalização
+
+| par | o que era | o que ficou |
+|---|---|---|
+| Dia das Crianças | duplicata quase exata, os dois com "7 passos" | o de 14/08 passa a "gastar menos com presentes"; o de 21/08 fica com "como economizar para o Dia das Crianças" |
+| Excel | os dois acabavam em "e ganhar tranquilidade [financeira]" — era a **cauda** que os colava | "modelo de planilha Excel para finanças pessoais" × "fluxo de caixa no Excel com saldo automático" |
+| gastos mensais | **resíduo de slug** | a régua mudou, os ficheiros não |
+
+Nos **três idiomas**: EN e ES eram tradução literal e herdaram o mesmo defeito —
+os dois posts ingleses do Dia das Crianças chamavam-se *"7 Practical Steps to
+Save Money for Children's Day"* e *"How to Save for Children's Day: 7 Practical
+Steps"*.
+
+### O terceiro par: a união slug+título arrasta um nome de ficheiro para sempre
+
+Os títulos já estavam separados desde 15/09. O que ainda colidia era o **nome do
+ficheiro** `como-reduzir-gastos-fixos-mensais-...`, que continua a ter "reduzir
+gastos mensais" dentro — e a regra 5b media a **união** de slug + título.
+
+A regra passa a medir **só o título**. Colisão de slug com slug já é a regra 5,
+que já era erro. Renomear o ficheiro não é opção (a renomeação de slugs custou
+meses de reindexação este ano) e, medido, **nem era preciso**.
+
+⚠️ **A duplicação de CONTEÚDO do par do Dia das Crianças continua.** Os títulos
+já não competem, mas os dois corpos são quase o mesmo artigo (meta visual,
+captura automática, cofrinho digital, cashback, revisão). O conserto completo é
+fundir num só e redirecionar o outro — **é apagar uma página, decisão do Ed.**
+
+## 3. Promover o aviso a erro obrigou a consertar o guard de entrada
+
+O gate do CI corre **depois** de o gerador já ter escrito, ilustrado, traduzido e
+commitado o post. Um erro ali não é um aviso: **é o post perdido e o blog a parar
+de publicar.** Antes de promover:
+
+| | antes | agora |
+|---|---|---|
+| `isThemeCovered` | comparava só **nomes de ficheiro** | compara nome **e título**, separadamente (nunca unidos) |
+| `skipSeTituloCanibaliza` | recebia o **slug** | recebe também o **título inteiro** |
+
+O slug é o título **cortado aos 60 caracteres**, e quase todos os slugs desta
+casa estão cortados: uma colisão que dependesse de uma palavra da cauda passava
+no guard e reprovava no gate. Caso real construído e medido — passava, agora é
+apanhado; o controle falso do mesmo tamanho continua a passar.
+
+**Impacto medido na fila real (212 entradas): 39 → 42 bloqueadas, zero
+regressões.** As 3 novas são reais.
+
+⚠️ **Ponto cego que fica:** `slugifyTheme` corta aos **80** caracteres, portanto
+uma colisão que só aparecesse depois do caractere 80 do título é invisível ao
+guard **e** ao gate. Os dois concordam, ninguém fica vermelho, ninguém vê. **Um
+título dos 151 passa dos 80.** Não mexido.
+
+### E o título antigo ainda estava dentro do JSON
+
+Mudar o `title:` do frontmatter não chega: estes posts levam um bloco JSON-LD no
+fim (`SCHEMA_AUTO`) com o título outra vez, no campo `name` do HowTo. **Seis
+ficheiros ficaram a dizer uma coisa ao leitor e outra ao Google.**
+
+A primeira busca não os encontrou porque exigia `SCHEMA_AUTO:{` e metade dos
+blocos começa por `SCHEMA_AUTO:[` — um array. **A busca estreita respondeu "não
+há nenhum" e quase foi acreditada.** Os 276 blocos foram relidos como JSON depois
+da troca: 276 válidos. (O `validate-schema.js` lê o `dist/`, o build velho — não
+servia de prova para uma alteração feita agora nos markdown.)
+
+## 4. O post novo: planner financeiro
+
+3.600 buscas, **KD 21** — o mais fácil da lista. Conferido com a trava nova antes
+de escrever: livre, e o título escolhido não colide com nenhum dos 151.
+
+Escrito à mão nos três idiomas. O ângulo é o que falta nos artigos que já
+existem: não é a lista de páginas bonitas, é a **rotina** (1 min/dia, 5/semana,
+15/mês) e a separação entre **anotar** e **classificar**, que é onde a maioria
+desiste. Sem número inventado e sem valor em moeda fixa.
+
+Travas: `validar-i18n` com a canibalização já como **erro** (PT=EN=ES=**133**),
+slugs, link-guard (0 links inventados em 816 ficheiros), capas, e varredura de
+caracteres invisíveis nos 3 ficheiros.
+
+### A capa: o provedor grátis não serve, e a trava de letras provou-o
+
+Os dois provedores bons só têm chave no GitHub. Aqui só corre o Pollinations, e
+ele devolveu **duas vezes** uma imagem fora do tema (um casal numa floresta; uma
+mulher num parque) **com marca d'água**. Publicada assim, com o `imageAlt` a
+descrever a imagem que **está mesmo lá** — alt que mente é pior do que alt feio.
+
+O robô `capas-com-letras` mediu e **reprovou-a à primeira**, e a corrida seguinte
+refez com o Cloudflare Workers AI: caderno, calculadora e moedas. Uma chamada
+paga, autorizada. O robô apaga o `imageAlt` ao refazer, para o robô das
+descrições redescrever — mas esse corre 3x/dia e o post já estava no ar, por isso
+a descrição foi escrita à mão **olhando o ficheiro**.
+
+⚠️ O robô das capas reescreve o frontmatter inteiro ao commitar: as descrições
+dos 3 posts novos foram convertidas para bloco YAML `>-`. **As tais 25 descrições
+agora são 28** — e a conversão não foi decisão de ninguém, é o robô.
+
+---
+
+## O que fica ABERTO depois de hoje
+
+1. ⏳ **Medir o CTR por volta de 06/10** — agora são **quatro** páginas
+   (as três de gastos mensais + guardar dinheiro). Contar com a AI Overview.
+2. 🔴 **O glossário precisa de decisão, não de conserto.** Continua igual.
+3. 🔴 **Os dois posts do Dia das Crianças ainda são o mesmo artigo.** Fundir é
+   apagar uma página — **decisão do Ed**.
+4. **A secção de cortes do artigo espanhol** por traduzir. Continua por fazer.
+5. **Os CTAs dizem "Usado por milhares de pessoas"** — decisão do Ed, não tocado.
+6. **28 descrições usam bloco YAML `>-`** — 25 antigas + 3 convertidas hoje pelo
+   robô das capas.
+7. **O ponto cego dos 80 caracteres** no `slugifyTheme`.
