@@ -2118,5 +2118,85 @@
         "status": 200
       }
     }
+  },
+  {
+    "slug": "planner-financeiro-como-montar-e-usar",
+    "title": "Planner financeiro: como montar e usar todo mês",
+    "url": "https://blog.finmoovi.com/posts/planner-financeiro-como-montar-e-usar",
+    "submittedAt": "2026-09-16T12:42:58.693Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1855813530
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "como-economizar-agua-e-ainda-poupar-no-dia-a-dia",
+    "title": "Como economizar água e ainda poupar no dia a dia",
+    "url": "https://blog.finmoovi.com/posts/como-economizar-agua-e-ainda-poupar-no-dia-a-dia",
+    "submittedAt": "2026-09-16T12:42:59.737Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1855813534
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "domine-seus-gastos-guia-pratico-de-controle-financeiro-para",
+    "title": "Domine seus gastos: guia prático de controle financeiro para 2026",
+    "url": "https://blog.finmoovi.com/posts/domine-seus-gastos-guia-pratico-de-controle-financeiro-para",
+    "submittedAt": "2026-09-16T12:43:00.324Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1855813540
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "como-montar-um-fluxo-de-caixa-simples-no-excel-e-ganhar",
+    "title": "Fluxo de caixa no Excel: modelo simples com saldo automático",
+    "url": "https://blog.finmoovi.com/posts/como-montar-um-fluxo-de-caixa-simples-no-excel-e-ganhar",
+    "submittedAt": "2026-09-16T12:43:00.984Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1855813547
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
   }
 ]
