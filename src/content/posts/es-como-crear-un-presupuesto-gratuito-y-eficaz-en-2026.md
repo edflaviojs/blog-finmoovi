@@ -38,7 +38,7 @@ En lugar de crear decenas de categorías, agrupa tus gastos en bloques fáciles 
 - **Variables:** ocio, regalos, pequeños lujos.  
 - **Reserva:** [fondo de emergencia](/es/glossario/es-fondo-de-emergencia), metas a corto plazo.
 
-Con FinMoovi puedes fijar [metas mensuales](/es/posts/es-7-pasos-practicos-para-ahorrar-dinero-para-el-dia-del-nino) para cada bloque. Por ejemplo, “no gastar más que el precio de un café al día en ocio”. La app envía [alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no) cuando te acercas al límite, ayudándote a mantener el control sin esfuerzo.
+Con FinMoovi puedes fijar [metas mensuales](/es/posts/es-como-ahorrar-para-el-dia-del-nino-en-2026-7-pasos-practicos) para cada bloque. Por ejemplo, “no gastar más que el precio de un café al día en ocio”. La app envía [alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no) cuando te acercas al límite, ayudándote a mantener el control sin esfuerzo.
 
 ### Metas mensuales: el camino a la tranquilidad mental
 Definir metas no se trata de restricción, sino de dirección. Si tu meta es ahorrar “cerca de dos salarios mínimos” al final del mes, FinMoovi muestra el progreso en tiempo real. Cuando la meta se alcanza, sientes una recompensa psicológica que refuerza el hábito de ahorrar. Esta visualización constante genera tranquilidad, porque sabes exactamente dónde está tu dinero.

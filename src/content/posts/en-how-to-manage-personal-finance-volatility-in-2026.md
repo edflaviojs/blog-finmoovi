@@ -55,7 +55,7 @@ FinMoovi offers features that turn volatility into useful data:
 **Practical tip:** **Whenever an unexpected expense pops up, record it immediately using the photo feature.** This prevents it from disappearing from memory and generates an alert that helps balance the next period.
 
 ## Monthly Planning with Flexible Goals  
-Instead of a rigid budget, try setting **flexible targets**. Create a ceiling for volatile categories (e.g., “Entertainment” or “[Impulse purchases](/en/posts/en-7-practical-steps-to-save-money-for-children-s-day-2026)”) that can be adjusted as new expenses arise. In FinMoovi, you set the target and, as you log each spend, see in real time how much remains. If you exceed the limit, the app suggests [alternatives](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your): skip the next purchase, apply a coupon, or shift part of the amount to your emergency fund.
+Instead of a rigid budget, try setting **flexible targets**. Create a ceiling for volatile categories (e.g., “Entertainment” or “[Impulse purchases](/en/posts/en-how-to-save-for-children-s-day-in-2026-7-practical-steps)”) that can be adjusted as new expenses arise. In FinMoovi, you set the target and, as you log each spend, see in real time how much remains. If you exceed the limit, the app suggests [alternatives](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your): skip the next purchase, apply a coupon, or shift part of the amount to your emergency fund.
 
 This approach builds a “safety belt” that absorbs fluctuations without forcing you to cut everything at once. The secret lies in **constant visibility**—knowing exactly where your money is and how much you can still spend.
 

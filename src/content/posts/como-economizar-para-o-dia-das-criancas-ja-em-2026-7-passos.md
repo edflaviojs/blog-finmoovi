@@ -85,6 +85,14 @@ A disciplina financeira não é estática; ela precisa de revisões frequentes. 
 
 Esse pequeno ritual de 10 minutos mantém a motivação em alta e permite corrigir desvios antes que eles se tornem grandes problemas.
 
+### Duas ideias que cortam o gasto antes de ele acontecer
+
+Os sete passos acima organizam o dinheiro que você já decidiu gastar. Estas duas atuam antes disso.
+
+**A regra das 24 horas.** O impulso de comprar o brinquedo anunciado na TV ou no feed costuma ser o maior vilão. Em vez de comprar, anote a vontade na *Lista de compras* do app e espere um dia. Se ainda fizer sentido, o item entra na lista definitiva; se não, some sozinho. Escrever a vontade cria um pequeno custo psicológico que costuma frear a compra automática — e o app mostra quantas vezes você aplicou a regra, o que reforça o hábito.
+
+**Experiências no lugar do presente caro.** Um brinquedo de alta tecnologia pode ser trocado por um piquenique no parque, um dia de artes e artesanato em casa ou um “cupom de tempo”, em que o presente são algumas horas suas para brincar ou ensinar algo novo. A magia do dia continua; o custo não. Registre o valor estimado da alternativa no FinMoovi e compare com o que já está guardado: a diferença aparece como sobra para outras metas.
+
 ### Dicas rápidas (para imprimir ou salvar)
 
 1. **Meta visual:** crie um quadro com o objetivo (ex.: “Cofrinho Dia das Crianças = 1 aluguel”) e cole em um local visível.
@@ -95,7 +103,7 @@ Esse pequeno ritual de 10 minutos mantém a motivação em alta e permite corrig
 
 ### Por que isso funciona?
 
- Além disso, o hábito de definir metas claras está associado a maior taxa de sucesso na realização de objetivos financeiros, segundo a **Investopedia**.
+Porque troca uma decisão grande e difícil — “vou economizar” — por decisões pequenas e datadas, que cabem numa quinzena. A meta ganha número e prazo, o dinheiro sai da conta corrente antes de ser gasto, e a revisão de dez minutos mostra o desvio enquanto ele ainda é pequeno. Nenhum dos sete passos exige força de vontade no dia da compra, e é exatamente aí que a maioria dos planos falha.
 
 ### Conclusão
 

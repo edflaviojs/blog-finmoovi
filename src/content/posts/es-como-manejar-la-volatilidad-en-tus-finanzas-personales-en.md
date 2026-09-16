@@ -34,7 +34,7 @@ Aquí es donde **FinMoovi** entra de forma orgánica. Imagina abrir la app, usar
 Con este pequeño gesto conviertes un papel suelto en información accionable, empezando a domar la inestabilidad antes de que sorprenda a tu presupuesto.  
 
 ## Entendiendo la montaña rusa de los gastos  
-La volatilidad nace de la combinación de gastos fijos (como alquiler o plan de móvil) y variables (alimentación, ocio, imprevistos). Mientras los primeros son predecibles, los segundos pueden cambiar de un día para otro. Cuando la parte variable crece de forma súbita, el saldo del mes puede pasar de “sobrante” a “faltante”. Esta variación suele seguir un patrón: ocurre en cambios de estación, [vacaciones](/es/posts/es-5-consejos-para-reorganizar-tus-finanzas-en-vacaciones) o incluso durante promociones agresivas que incentivan [compras impulsivas](/es/posts/es-7-pasos-practicos-para-ahorrar-dinero-para-el-dia-del-nino).  
+La volatilidad nace de la combinación de gastos fijos (como alquiler o plan de móvil) y variables (alimentación, ocio, imprevistos). Mientras los primeros son predecibles, los segundos pueden cambiar de un día para otro. Cuando la parte variable crece de forma súbita, el saldo del mes puede pasar de “sobrante” a “faltante”. Esta variación suele seguir un patrón: ocurre en cambios de estación, [vacaciones](/es/posts/es-5-consejos-para-reorganizar-tus-finanzas-en-vacaciones) o incluso durante promociones agresivas que incentivan [compras impulsivas](/es/posts/es-como-ahorrar-para-el-dia-del-nino-en-2026-7-pasos-practicos).  
 
 ## Cómo la volatilidad afecta tu presupuesto  
 - **Desgaste del fondo de emergencia:** Los gastos inesperados consumen lo que debería ser tu “red de seguridad”.  

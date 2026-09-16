@@ -38,7 +38,7 @@ Em vez de criar dezenas de categorias, agrupe seus gastos em blocos fáceis de l
 - **Variáveis:** lazer, presentes, pequenos luxos.
 - **Reserva:** [fundo de emergência](/ferramentas/calculadora-reserva), metas de curto prazo.
 
-Com o FinMoovi, você pode definir [metas mensais](/posts/7-passos-praticos-para-guardar-dinheiro-para-o-dia-das) para cada bloco. Por exemplo, “não gastar mais que o preço de um café por dia em lazer”. O app envia [alertas](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto) quando você se aproxima do limite, ajudando a manter o controle sem esforço.
+Com o FinMoovi, você pode definir [metas mensais](/posts/como-economizar-para-o-dia-das-criancas-ja-em-2026-7-passos) para cada bloco. Por exemplo, “não gastar mais que o preço de um café por dia em lazer”. O app envia [alertas](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto) quando você se aproxima do limite, ajudando a manter o controle sem esforço.
 
 ### Metas mensais: o caminho para a paz mental
 Definir metas não é sobre restrição, mas sobre direcionamento. Se a sua meta é guardar “cerca de duas vezes o valor de um salário mínimo” ao final do mês, o FinMoovi mostra o progresso em tempo real. Quando a meta é atingida, você sente uma recompensa psicológica que reforça o hábito de economizar. Essa visualização constante gera tranquilidade, pois você sabe exatamente onde está seu dinheiro.

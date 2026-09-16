@@ -79,6 +79,14 @@ Financial discipline isn’t static; it needs frequent check‑ins. Set a remind
 
 This 10‑minute ritual keeps motivation high and lets you correct deviations before they become big problems.
 
+### Two ideas that cut the spending before it happens
+
+The seven steps above organize money you've already decided to spend. These two act earlier.
+
+**The 24-hour rule.** The urge to buy the toy advertised on TV or in your feed is usually the biggest villain. Instead of buying, log the urge in the app's *Shopping list* and wait a day. If it still makes sense, the item joins the final list; if not, it disappears on its own. Writing the urge down creates a small psychological cost that tends to stop the automatic purchase — and the app shows how many times you've applied the rule, which reinforces the habit.
+
+**Experiences instead of the expensive gift.** A high-tech toy can be swapped for a picnic in the park, an arts-and-crafts day at home, or a "time coupon", where the gift is a few hours of yours to play or teach something new. The magic of the day stays; the cost doesn't. Log the estimated value of the alternative in FinMoovi and compare it with what you've already saved: the difference shows up as spare room for other goals.
+
 ### Quick tips (print or save)
 
 1. **Visual goal:** create a board that says “Children’s Day Piggy Bank = 1 month’s rent” and place it where you’ll see it daily.  
@@ -89,7 +97,7 @@ This 10‑minute ritual keeps motivation high and lets you correct deviations be
 
 ### Why it works  
 
-Research from **Investopedia** shows that the habit of setting clear goals is linked to a higher success rate in achieving financial objectives.
+Because it swaps one big, hard decision — "I'm going to save" — for small, dated ones that fit inside a fortnight. The goal gets a number and a deadline, the money leaves the current account before it can be spent, and the ten-minute review shows the drift while it's still small. None of the seven steps demands willpower on the day of the purchase, and that is exactly where most plans fail.
 
 ### Conclusion  
 

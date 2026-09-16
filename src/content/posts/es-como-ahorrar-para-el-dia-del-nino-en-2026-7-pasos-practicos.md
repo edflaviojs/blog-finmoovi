@@ -79,6 +79,14 @@ La disciplina financiera no es estática; necesita revisiones frecuentes. Progra
 
 Este pequeño ritual de 10 minutos mantiene la motivación alta y permite corregir desviaciones antes de que se conviertan en problemas mayores.
 
+### Dos ideas que cortan el gasto antes de que ocurra
+
+Los siete pasos de arriba organizan el dinero que ya decidiste gastar. Estas dos actúan antes.
+
+**La regla de las 24 horas.** El impulso de comprar el juguete anunciado en la tele o en el feed suele ser el mayor villano. En vez de comprar, anota el antojo en la *Lista de compras* de la app y espera un día. Si todavía tiene sentido, el artículo entra en la lista definitiva; si no, desaparece solo. Escribir el antojo crea un pequeño costo psicológico que suele frenar la compra automática, y la app muestra cuántas veces aplicaste la regla, lo que refuerza el hábito.
+
+**Experiencias en lugar del regalo caro.** Un juguete de alta tecnología puede cambiarse por un picnic en el parque, un día de arte y manualidades en casa o un "cupón de tiempo", en que el regalo son algunas horas tuyas para jugar o enseñar algo nuevo. La magia del día sigue; el costo no. Registra el valor estimado de la alternativa en FinMoovi y compáralo con lo que ya tienes guardado: la diferencia aparece como margen para otras metas.
+
 ### Consejos rápidos (para imprimir o guardar)
 
 1. **Meta visual:** crea un cuadro con el objetivo (ej.: “Alcancía Día del Niño = 1 alquiler”) y pégalo en un lugar visible.  
@@ -89,7 +97,7 @@ Este pequeño ritual de 10 minutos mantiene la motivación alta y permite correg
 
 ### ¿Por qué funciona?
 
-Además, el hábito de definir metas claras está asociado a una mayor tasa de éxito en la consecución de objetivos financieros, según **Investopedia**.
+Porque cambia una decisión grande y difícil — "voy a ahorrar" — por decisiones pequeñas y con fecha, que caben en una quincena. La meta gana número y plazo, el dinero sale de la cuenta corriente antes de gastarse, y la revisión de diez minutos muestra la desviación mientras todavía es pequeña. Ninguno de los siete pasos exige fuerza de voluntad el día de la compra, y ahí es justo donde fallan la mayoría de los planes.
 
 ### Conclusión
 

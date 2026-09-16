@@ -34,7 +34,7 @@ Essa oscilação não é só um incômodo; ela é a **[volatilidade](/glossario/
 Com esse pequeno gesto, você transforma um papel solto em informação acionável, começando a domar a instabilidade antes que ela cause surpresa no seu orçamento.
 
 ## Entendendo a montanha‑russa dos gastos
-A volatilidade nasce da combinação de despesas fixas (como aluguel ou plano de celular) e variáveis (alimentação, lazer, imprevistos). Enquanto as primeiras são previsíveis, as segundas podem mudar de um dia para o outro. Quando a parcela variável cresce de forma súbita, o saldo do mês pode virar de “sobrando” para “faltando”. Essa variação tem um padrão: costuma acontecer em períodos de mudança de estação, [férias](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) ou até em momentos de promoções agressivas que incentivam [compras por impulso](/posts/7-passos-praticos-para-guardar-dinheiro-para-o-dia-das).
+A volatilidade nasce da combinação de despesas fixas (como aluguel ou plano de celular) e variáveis (alimentação, lazer, imprevistos). Enquanto as primeiras são previsíveis, as segundas podem mudar de um dia para o outro. Quando a parcela variável cresce de forma súbita, o saldo do mês pode virar de “sobrando” para “faltando”. Essa variação tem um padrão: costuma acontecer em períodos de mudança de estação, [férias](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) ou até em momentos de promoções agressivas que incentivam [compras por impulso](/posts/como-economizar-para-o-dia-das-criancas-ja-em-2026-7-passos).
 
 ## Como a volatilidade afeta seu orçamento
 - **Desgaste da [reserva de emergência](/glossario/reserva-de-emergencia):** Gastos inesperados consomem o que deveria ser a “rede de segurança”.
