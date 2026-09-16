@@ -4864,6 +4864,11 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-09-16"
+    },
+    "planner-financeiro-como-montar-e-usar.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"pollination.\")",
+      "em": "2026-09-16"
     }
   },
   "corrigidas": {
@@ -5504,6 +5509,6 @@
       "motivo": "tem texto escrito (\"TAX\")"
     }
   },
-  "totalAcervo": 973,
+  "totalAcervo": 974,
   "ultimaCorrida": "2026-09-16"
 }
