@@ -1,0 +1,117 @@
+{
+  "slug": "loop-cheque-especial-nunca-faca",
+  "formato": "loop16",
+  "term": "O cheque especial",
+  "category": "vida",
+  "keyword": "ESPECIAL",
+  "situacao": "cheque-especial",
+  "gancho": "nunca-faca",
+  "ganchoFamilia": "nunca faça",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "areia-movedica",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Nunca faça isso com o cheque especial. Eu vi minha conta vermelha ontem.",
+      "durationSec": 4.49,
+      "shots": [
+        {
+          "anchor": "cheque",
+          "visual": {
+            "type": "statement",
+            "text": "Cuidado com o vermelho"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "especial",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "areia-movedica"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Comigo aconteceu. O dinheiro acabou e eu continuei pagando tudo.",
+      "durationSec": 3.45,
+      "shots": [
+        {
+          "anchor": "Comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "areia-movedica"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "O dinheiro acabou"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Só que eu olhei meu aplicativo e vi onde estava afundando.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "olhei",
+          "visual": {
+            "type": "statement",
+            "text": "Eu vi onde afundava"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "aplicativo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "areia-movedica"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Desde então, eu nunca faço isso com o cheque especial.",
+      "durationSec": 3.45,
+      "shots": [
+        {
+          "anchor": "cheque",
+          "visual": {
+            "type": "statement",
+            "text": "Nunca faço isso"
+          }
+        },
+        {
+          "anchor": "especial",
+          "visual": {
+            "type": "statement",
+            "text": "Cuidado com o vermelho"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.19
+}
