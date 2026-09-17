@@ -1,0 +1,118 @@
+{
+  "slug": "loop-fatura-maior-ta-perdendo",
+  "formato": "loop16",
+  "term": "A fatura veio maior",
+  "category": "vida",
+  "keyword": "FATURA",
+  "valor": "R$ 1.900",
+  "situacao": "fatura-maior",
+  "gancho": "ta-perdendo",
+  "ganchoFamilia": "tá perdendo",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "bola-neve",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se você ainda faz contas de cabeça, tá perdendo dinheiro. Eu vi meu extrato ontem.",
+      "durationSec": 4.96,
+      "shots": [
+        {
+          "anchor": "contas",
+          "visual": {
+            "type": "statement",
+            "text": "Perdendo"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "cabeça",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-neve"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Quando vi, mil e novecentos reais tinham ido embora só nisso.",
+      "durationSec": 3.63,
+      "shots": [
+        {
+          "anchor": "novecentos",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-neve"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 1.900"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "E aí eu percebi que precisava mudar.",
+      "durationSec": 2.31,
+      "shots": [
+        {
+          "anchor": "percebi",
+          "visual": {
+            "type": "statement",
+            "text": "Mudou"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "precisava",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-neve"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Se você ainda faz contas de cabeça, tá perdendo dinheiro, perdendo tempo também.",
+      "durationSec": 4.3,
+      "shots": [
+        {
+          "anchor": "contas",
+          "visual": {
+            "type": "statement",
+            "text": "Perdendo"
+          }
+        },
+        {
+          "anchor": "cabeça",
+          "visual": {
+            "type": "statement",
+            "text": "Perdendo"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}

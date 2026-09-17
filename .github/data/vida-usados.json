@@ -484,5 +484,11 @@
     "gancho": "ta-perdendo",
     "turno": "manha",
     "em": "2026-09-17T09:34:54.773Z"
+  },
+  {
+    "situacao": "fatura-maior",
+    "gancho": "ta-perdendo",
+    "turno": "noite",
+    "em": "2026-09-17T09:38:05.626Z"
   }
 ]
