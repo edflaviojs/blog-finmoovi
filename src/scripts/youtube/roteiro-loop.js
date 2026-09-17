@@ -83,12 +83,72 @@ const MAX_CHARS_TELA = 28;
 const PROIBIDO_CTA = /\b(se\s+inscrev|inscreva|inscri[çc][ãa]o|link\s+na\s+(bio|descri)|comenta\s+a[íi]|comente|deixa\s+o\s+like|curte\s+a[íi]|compartilh|segue\s+o\s+canal|siga\s+o\s+canal|salva\s+esse)/i;
 
 /**
- * ⚠️ NENHUM NÚMERO. Em 07/08 o canal ficou SEM VÍDEO porque o tema trazia um valor em
- * dinheiro e as travas de número tornaram o roteiro impossível de escrever. Aqui o
- * vídeo conta uma história de casa; não faz conta nenhuma. O que não existe não
- * envenena — e de brinde some a classe inteira de "número inventado".
+ * ♦ 17/09/2026 — O NÚMERO VOLTOU, MAS JÁ VEM ESCOLHIDO.
+ *
+ * ═══ O QUE ESTAVA AQUI ANTES, E POR QUÊ ═══
+ * Até hoje esta constante proibia QUALQUER número: *"o vídeo conta uma história de
+ * casa; não faz conta nenhuma. O que não existe não envenena — e de brinde some a
+ * classe inteira de número inventado"*. Nasceu a 07/08, no dia em que o canal ficou sem
+ * vídeo porque as travas de número tornaram um roteiro impossível de escrever.
+ *
+ * ═══ POR QUE MUDA ═══
+ * 🔴 **MEDIDO a 17/09, nos 124 vídeos do canal:** metade da audiência sai ao **segundo
+ * 6**. Aos 3s ainda lá estão todos (92%–143%) — o gancho funciona. E a retenção manda
+ * nas visualizações: abaixo de 50% a mediana é 7 views; entre 100% e 199% é 26. **68 dos
+ * 115 vídeos com audiência estão abaixo de 50%.**
+ *
+ * O segundo 6 é a FALA 2 (fala 1 ≈ 3,6s, fala 2 vai daí aos ~7,6s). E varridos os 80
+ * roteiros deste formato, **80 em 80 não tinham um único número, valor ou dado**. Quem
+ * chega ao segundo 6 não recebeu nada, e sai. A proibição não era um detalhe: era o
+ * conteúdo.
+ *
+ * ⚠️ E a outra ponta da casa mandava o CONTRÁRIO — `lib/youtube-marketing.js:129`:
+ * *"OBRIGATÓRIO: um NÚMERO concreto ou DADO real"*. Duas regras opostas; ganhava a do
+ * formato que faz 73 dos 124 vídeos.
+ *
+ * ═══ COMO SE DEVOLVE O NÚMERO SEM DEVOLVER O PROBLEMA ═══
+ * **A IA não escolhe o número: recebe-o.** O valor vem de `temas-vida.js`, já escrito à
+ * mão para cada situação. É a mesma disciplina da metáfora (ver o topo deste ficheiro):
+ * *"inventar deixa de ser possível — não por o prompt pedir, mas por não haver caminho"*.
+ *
+ * E o medo de 07/08 fica coberto pelos dois lados: o número já vem pronto (escrever
+ * ficou mais FÁCIL, não mais difícil), e o plano B do workflow — três voltas, saltando
+ * de situação — continua intacto por cima disto.
  */
-const PROIBIDO_NUMERO = /[0-9]|R\$|%/;
+
+/** Qualquer algarismo, cifrão ou percentagem. Só o valor do dia escapa a isto. */
+const MARCA_DE_NUMERO = /[0-9]|R\$|%/;
+
+/**
+ * O valor do dia, nas duas formas que se lêem exactamente igual depois do
+ * `numerosPorExtenso`: "R$ 130" e "130 reais". Aceitar as duas poupa uma reprovação
+ * que não melhorava uma vírgula do vídeo.
+ */
+export function regexDoValor(valor) {
+  const num = String(valor || '').replace(/^\s*R\$\s*/i, '').trim();
+  if (!num) return null;
+  const esc = num.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return new RegExp(`(?:R\\$\\s*${esc}|${esc}\\s*reais)`, 'gi');
+}
+
+/**
+ * Procura um número que NÃO seja o do dia — é esta a trava que substitui a proibição
+ * antiga e mata a mesma classe de defeito ("número inventado").
+ *
+ * ⚠️ Os algarismos que já estão no TÍTULO da situação são autorizados: a situação
+ * `decimo-terceiro` chama-se *"O 13º antes que suma"*, e reprovar a fala por dizer "13º"
+ * seria um falso alarme contra a própria lista do dono.
+ */
+export function numeroNaoAutorizado(texto, situacao) {
+  let t = String(texto || '');
+  const re = regexDoValor(situacao && situacao.valor);
+  if (re) t = t.replace(re, ' ');
+  for (const n of String((situacao && situacao.titulo) || '').match(/\d+/g) || []) {
+    t = t.split(n).join(' ');
+  }
+  const m = t.match(MARCA_DE_NUMERO);
+  return m ? m[0] : null;
+}
 
 const PARADAS = new Set([
   'para', 'pela', 'pelo', 'como', 'mais', 'mas', 'que', 'com', 'uma', 'meu', 'minha', 'seu', 'sua',
@@ -142,17 +202,31 @@ O vídeo acaba DO NADA — sem despedida, sem conselho final, sem frase bonita.
 A ÚLTIMA fala tem de devolver quem ouve ao COMEÇO: ela repete a ideia da primeira fala por outro lado, de forma que, quando o vídeo reiniciar sozinho, a primeira frase faça sentido outra vez.
 Use pelo menos DUAS palavras que já apareceram na primeira fala.
 
+═══ O NÚMERO DE HOJE — OBRIGATÓRIO, E É ESTE ═══
+    ${situacao.valor}  —  ${situacao.valorDoQue}
+
+Ele tem de aparecer na SEGUNDA fala, escrito assim: "${situacao.valor}" (ou "${String(situacao.valor).replace(/^R\$\s*/, '')} reais" — tanto faz).
+
+⚠️ **NÃO INVENTE OUTRO NÚMERO. NÃO ARREDONDE. NÃO ACRESCENTE NENHUM OUTRO.** Nem preço, nem percentagem, nem prazo, nem "três vezes", nem "dois anos". Em todo o vídeo existe UM número, e é o de cima. Qualquer outro reprova o roteiro.
+
+**Por que na segunda fala:** é o segundo 6 do vídeo, e é onde metade das pessoas está a desistir. Elas saem porque até ali não receberam nada de concreto. Este número é o que elas vieram buscar — conte-o como quem conta o que lhe aconteceu, não como quem dá uma aula.
+    ✓ "Quando vi, ${situacao.valor} tinham ido embora só nisso."
+    ✗ "Estudos mostram que ${situacao.valor} é a média nacional." (isto é aula, e é mentira)
+
+⚠️ Ao contar as palavras, lembre-se de que este número é FALADO por extenso — "${situacao.valor}" vale umas 4 palavras, não 2.
+
 ═══ AS QUATRO FALAS ═══
 1. O GANCHO + a cena (o que você viu, onde, quando). ~10 palavras.
-2. O QUE ACONTECEU de verdade com você. ~11 palavras.
-3. A VIRADA — o que você percebeu, ou o que faz agora. ~11 palavras.
-4. O FECHO EM CÍRCULO, que devolve ao começo. ~12 palavras.
+2. **O NÚMERO** — o que aconteceu com você, com ${situacao.valor} lá dentro. ~12 palavras.
+3. A VIRADA — o que você percebeu, ou o que faz agora. ~10 palavras.
+4. O FECHO EM CÍRCULO, que devolve ao começo. ~11 palavras.
 
 ═══ A IMAGEM DO VÍDEO ═══
 A ilustração já está escolhida: **${situacao.metafora}** (${significado}). Não precisa dizer o nome dela nem descrever visual nenhum — só escreva a fala. Se a imagem couber naturalmente na sua história, melhor; se não couber, deixe estar.
 
 ═══ PROIBIDO (reprova o roteiro) ═══
-⛔ NENHUM número, nenhum valor em dinheiro, nenhuma percentagem. Nem "quinhentos reais", nem "dez por cento", nem "trinta dias". Conte a história sem contas.
+⛔ QUALQUER número que não seja "${situacao.valor}". Nem por extenso ("quinhentos reais", "dez por cento", "trinta dias", "dois anos"), nem em algarismo. UM número no vídeo, e é o de hoje.
+⛔ Dizer que o número é média, estatística, pesquisa ou "dado do Brasil". É o que aconteceu COM VOCÊ, e mais nada.
 ⛔ Nada de pedir inscrição, comentário, like ou partilha. Nada de "link na descrição". Nada de tela final.
 ⛔ Nada de "${BORDAO}" — esse bordão é do outro formato.
 ⛔ Nada de despedida ("é isso", "fica a dica", "espero ter ajudado").
@@ -162,7 +236,11 @@ ${VICIOS_ESSENCIAIS}
 ${O_QUE_PRESERVAR}
 
 ═══ O TEXTO DA TELA ═══
-Para cada fala, escreva também um texto CURTO que aparece grande na tela — no máximo ${MAX_CHARS_TELA} caracteres, sem número. Muita gente vê sem som: esse texto tem de contar a história sozinho.
+Para cada fala, escreva também um texto CURTO que aparece grande na tela — no máximo ${MAX_CHARS_TELA} caracteres. Muita gente vê sem som: esse texto tem de contar a história sozinho.
+
+⚠️ **A SEGUNDA TELA TEM DE TER "${situacao.valor}" ESCRITO NELA**, e quanto mais sozinho o número estiver, melhor — é ele que trava o dedo de quem passa sem som. As outras três telas não levam número nenhum.
+    ✓ "${situacao.valor} só nisso"
+    ✗ "eu gastei demais no mês" (o número sumiu, e era o que segurava)
 
 Devolva SÓ este JSON, sem mais nada:
 {
@@ -192,7 +270,14 @@ export function validarLoop(n, situacao, gancho) {
   if (telas.length !== N_FALAS) erros.push(`são ${N_FALAS} textos de tela, recebi ${telas.length}`);
 
   const tudo = falas.join(' ');
-  const palavras = palavrasDe(tudo).length;
+  /**
+   * ⚠️ **AS PALAVRAS CONTAM-SE COMO A VOZ AS DIZ, NÃO COMO ESTÃO ESCRITAS** — 17/09.
+   * "R$ 3.200" são 2 palavras no papel e CINCO na boca ("três mil e duzentos reais"),
+   * porque `montarRoteiro` passa a fala por `numerosPorExtenso` antes de a gravar.
+   * Contar sobre o cru subestimava a fala e punha o vídeo ~1s acima dos 16s — o mesmo
+   * erro que a SOBRECARGA_SEC aqui em cima já veio consertar uma vez.
+   */
+  const palavras = palavrasDe(numerosPorExtenso(tudo)).length;
 
   // 1. o tamanho — é o que faz caber em 16 segundos
   if (palavras < PALAVRAS_MIN) erros.push(`só ${palavras} palavras: o vídeo fica curto demais (alvo ${PALAVRAS_ALVO}, mínimo ${PALAVRAS_MIN})`);
@@ -219,17 +304,34 @@ export function validarLoop(n, situacao, gancho) {
   const cta = tudo.match(PROIBIDO_CTA);
   if (cta) erros.push(`"${cta[0]}" é chamada à ação e este formato não tem nenhuma`);
 
-  // 6. nada de número
-  const num = tudo.match(PROIBIDO_NUMERO);
-  if (num) erros.push(`"${num[0]}": este formato não leva número nenhum — conte a história sem contas`);
+  /**
+   * 6. O NÚMERO DO DIA — 17/09. São DUAS travas, e as duas são precisas:
+   *    (a) ele TEM de estar na 2ª fala — é o segundo 6, onde metade sai;
+   *    (b) nenhum OUTRO número pode existir — é o que herda a protecção da proibição
+   *        antiga contra "número inventado", sem herdar o vídeo vazio.
+   */
+  const reValor = regexDoValor(situacao.valor);
+  if (!reValor) {
+    erros.push(`a situação "${situacao.id}" não tem \`valor\` em temas-vida.js — sem número não há segundo 6`);
+  } else if (!falas[1].match(reValor)) { // `.match`, não `.test`: o regex tem flag `g` e `.test` guarda lastIndex
+    erros.push(`a 2ª fala não diz "${situacao.valor}" — é o número do dia (${situacao.valorDoQue}) e é ele que segura quem chega ao segundo 6`);
+  }
+
+  const intruso = numeroNaoAutorizado(tudo, situacao);
+  if (intruso) erros.push(`"${intruso}": o único número deste vídeo é "${situacao.valor}" — não invente nem acrescente outro`);
 
   // 7. o bordão é do outro formato
   if (nu(tudo).includes(nu(BORDAO).slice(0, 24))) erros.push('o bordão do canal não entra neste formato');
 
-  // 8. o texto da tela
+  // 8. o texto da tela — a 2ª leva o número grande, as outras não levam nenhum
   telas.forEach((t, i) => {
     if (t.length > MAX_CHARS_TELA) erros.push(`tela ${i + 1}: ${t.length} caracteres (máximo ${MAX_CHARS_TELA}) — "${t}"`);
-    if (PROIBIDO_NUMERO.test(t)) erros.push(`tela ${i + 1}: tem número, e este formato não leva`);
+    if (i === 1) {
+      if (!MARCA_DE_NUMERO.test(t)) erros.push(`tela 2: tem de mostrar "${situacao.valor}" — é o que trava o dedo de quem vê sem som`);
+      else if (numeroNaoAutorizado(t, situacao)) erros.push(`tela 2: o número tem de ser "${situacao.valor}" e mais nenhum — "${t}"`);
+    } else if (MARCA_DE_NUMERO.test(t)) {
+      erros.push(`tela ${i + 1}: só a 2ª tela leva número — "${t}"`);
+    }
   });
 
   // avisos (não reprovam)

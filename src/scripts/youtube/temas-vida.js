@@ -63,6 +63,7 @@ const NOTHING_TO_DO = 78;
  *             roteiro de virar conselho genérico: uma cena tem lugar, hora e gente.
  * `chave`   → a palavra que vai em MAIÚSCULAS no título (regra do dono, 06/08).
  * `metafora`→ qual das 32 ilustrações já desenhadas encena esta situação.
+ * `valor` + `valorDoQue` → ver abaixo. Desde 17/09.
  *
  * ⚠️ **A METÁFORA É ESCOLHIDA AQUI, À MÃO, E NÃO PELA IA.** Nos vídeos de 50s, cinco
  * dos últimos seis tiveram erro de âncora porque o modelo inventava a imagem. Com o
@@ -70,51 +71,78 @@ const NOTHING_TO_DO = 78;
  * e o significado sai do catálogo que já existe (`METAPHOR_MEANINGS` em
  * `lib/schema-short.js`) — não de gosto meu. Como as situações rodam em ordem, duas
  * seguidas nunca partilham a mesma imagem.
+ *
+ * ═══ ♦ 17/09/2026 — O VALOR, E POR QUE ELE NASCEU ═══
+ *
+ * 🔴 **MEDIDO:** metade da audiência sai ao SEGUNDO 6. Aos 3s ainda lá estão todos
+ * (92%–143%). O gancho funciona; o que vem a seguir é que não diz nada. E não dizia por
+ * ORDEM ESCRITA: `roteiro-loop.js` reprovava qualquer roteiro com um número. Varridos os
+ * 80 roteiros deste formato, **80 em 80 não tinham um único número, valor ou dado.**
+ *
+ * A proibição nasceu certa, a 07/08: o canal ficou sem vídeo porque as travas de número
+ * tornaram um roteiro impossível de escrever. O conserto matou o problema — e a
+ * substância com ele. Isto devolve a substância SEM devolver o problema.
+ *
+ * ⚠️ **A IA NUNCA ESCOLHE O NÚMERO. Ela recebe-o.** É a mesma disciplina da metáfora
+ * aqui em cima: não se pede ao modelo que não invente — tira-se-lhe o caminho de
+ * inventar. O `valor` é dado no pedido, é exigido à letra na 2ª fala, e QUALQUER outro
+ * algarismo no roteiro reprova. Some a classe inteira de "número inventado", que era
+ * exactamente o que a proibição de 07/08 protegia.
+ *
+ * ⚠️ **ESTES VALORES SÃO DA HISTÓRIA, NÃO SÃO ESTATÍSTICA.** "Paguei R$ 130 no botijão"
+ * é o narrador a contar o que lhe aconteceu — não é uma afirmação sobre o Brasil, não
+ * precisa de fonte e não pode ser lida como tal. Para número sobre o MUNDO (Selic, IPCA)
+ * existe `src/data/statistics.json`, que vem do Banco Central e do IBGE; nunca se
+ * escreve um desses à mão.
+ *
+ * 📋 **PENDENTE DE REVISÃO DO DONO.** Foram escolhidos plausíveis para uma família
+ * brasileira de classe média/baixa em 2026, mas quem vive o preço é ele. Um valor
+ * irreal não parte o robô — só faz o vídeo soar falso, que é o que se veio consertar.
  */
 export const SITUACOES = [
   // ── MANHÃ (9h) — planejar ───────────────────────────────────────────────────
-  { id: 'entrada-do-carro', turno: 'manha', titulo: 'Juntar a entrada do carro', chave: 'CARRO', metafora: 'escada', cena: 'o casal olhando o anúncio do carro usado e fazendo a conta da entrada' },
-  { id: 'reforma-banheiro', turno: 'manha', titulo: 'A reforma que sempre adia', chave: 'REFORMA', metafora: 'ampulheta', cena: 'o azulejo solto do banheiro que já está assim faz dois anos' },
-  { id: 'seguro-venceu', turno: 'manha', titulo: 'O seguro que venceu', chave: 'SEGURO', metafora: 'escudo', cena: 'a mensagem do corretor avisando que o seguro venceu ontem' },
-  { id: 'guardar-salario-curto', turno: 'manha', titulo: 'Guardar com salário curto', chave: 'GUARDAR', metafora: 'balde-furado', cena: 'o envelope onde sobrava dinheiro e agora não sobra' },
-  { id: 'escola-ano-que-vem', turno: 'manha', titulo: 'A escola do ano que vem', chave: 'ESCOLA', metafora: 'relogio', cena: 'a lista da matrícula chegando em novembro' },
-  { id: 'geladeira-nova', turno: 'manha', titulo: 'Trocar a geladeira', chave: 'GELADEIRA', metafora: 'ratoeira', cena: 'a geladeira velha fazendo barulho de madrugada' },
-  { id: 'primeiro-guardado', turno: 'manha', titulo: 'O primeiro dinheiro guardado', chave: 'GUARDADO', metafora: 'semente', cena: 'o casal fechando o mês com dinheiro sobrando pela primeira vez' },
-  { id: 'sair-do-aluguel', turno: 'manha', titulo: 'Sair do aluguel', chave: 'ALUGUEL', metafora: 'ralo', cena: 'o boleto do aluguel que sobe todo ano e nunca vira nada seu' },
-  { id: 'viagem-fim-de-ano', turno: 'manha', titulo: 'A viagem de fim de ano', chave: 'VIAGEM', metafora: 'cofre', cena: 'as crianças pedindo praia em dezembro e o bolso dizendo não' },
-  { id: 'decimo-terceiro', turno: 'manha', titulo: 'O 13º antes que suma', chave: '13º', metafora: 'fumaca', cena: 'o dinheiro do fim do ano caindo na conta e sumindo antes do carnaval' },
-  { id: 'reserva-emergencia', turno: 'manha', titulo: 'A reserva de emergência', chave: 'RESERVA', metafora: 'guarda-chuva', cena: 'o mês em que tudo quebrou junto e não tinha de onde tirar' },
-  { id: 'limpar-o-nome', turno: 'manha', titulo: 'Limpar o nome', chave: 'NOME', metafora: 'buraco', cena: 'a compra recusada na loja na frente dos outros' },
-  { id: 'trocar-divida-cara', turno: 'manha', titulo: 'Trocar dívida cara por barata', chave: 'DÍVIDA', metafora: 'balanca', cena: 'a pessoa pagando a dívida mais barata primeiro e a cara crescendo' },
-  { id: 'conta-so-das-contas', turno: 'manha', titulo: 'Uma conta só para as contas', chave: 'CONTA', metafora: 'bifurcacao', cena: 'o salário caindo tudo junto e sumindo tudo junto' },
-  { id: 'dividir-sem-brigar', turno: 'manha', titulo: 'Dividir as contas sem brigar', chave: 'CASAL', metafora: 'gangorra', cena: 'a discussão de domingo sobre quem pagou o quê' },
-  { id: 'plano-de-saude-subiu', turno: 'manha', titulo: 'O plano de saúde que subiu', chave: 'PLANO', metafora: 'bola-neve', cena: 'a carta do reajuste chegando no aniversário do contrato' },
-  { id: 'pagar-a-vista', turno: 'manha', titulo: 'Pagar à vista e pedir desconto', chave: 'DESCONTO', metafora: 'duas-portas', cena: 'a vergonha de perguntar quanto fica à vista' },
-  { id: 'vender-o-parado', turno: 'manha', titulo: 'Vender o que está parado', chave: 'VENDER', metafora: 'semente', cena: 'a garagem cheia de coisa que ninguém usa há anos' },
-  { id: 'dinheiro-so-seu', turno: 'manha', titulo: 'Um dinheiro só seu', chave: 'SEU', metafora: 'cofre', cena: 'ter que pedir para o outro toda vez que quer comprar algo pequeno' },
-  { id: 'aposentadoria-por-conta', turno: 'manha', titulo: 'Aposentadoria de quem é autônomo', chave: 'APOSENTADORIA', metafora: 'ampulheta', cena: 'quem trabalha por conta e nunca contribuiu com nada' },
+  { id: 'entrada-do-carro', turno: 'manha', titulo: 'Juntar a entrada do carro', chave: 'CARRO', metafora: 'escada', cena: 'o casal olhando o anúncio do carro usado e fazendo a conta da entrada', valor: 'R$ 8.000', valorDoQue: 'a entrada que o vendedor pediu no carro usado' },
+  { id: 'reforma-banheiro', turno: 'manha', titulo: 'A reforma que sempre adia', chave: 'REFORMA', metafora: 'ampulheta', cena: 'o azulejo solto do banheiro que já está assim faz dois anos', valor: 'R$ 1.400', valorDoQue: 'o orçamento do pedreiro para o azulejo solto' },
+  { id: 'seguro-venceu', turno: 'manha', titulo: 'O seguro que venceu', chave: 'SEGURO', metafora: 'escudo', cena: 'a mensagem do corretor avisando que o seguro venceu ontem', valor: 'R$ 2.300', valorDoQue: 'o conserto que eu paguei do bolso com o seguro vencido' },
+  { id: 'guardar-salario-curto', turno: 'manha', titulo: 'Guardar com salário curto', chave: 'GUARDAR', metafora: 'balde-furado', cena: 'o envelope onde sobrava dinheiro e agora não sobra', valor: 'R$ 50', valorDoQue: 'o pouco que eu consegui separar na primeira semana' },
+  { id: 'escola-ano-que-vem', turno: 'manha', titulo: 'A escola do ano que vem', chave: 'ESCOLA', metafora: 'relogio', cena: 'a lista da matrícula chegando em novembro', valor: 'R$ 900', valorDoQue: 'a matrícula que chegou em novembro' },
+  { id: 'geladeira-nova', turno: 'manha', titulo: 'Trocar a geladeira', chave: 'GELADEIRA', metafora: 'ratoeira', cena: 'a geladeira velha fazendo barulho de madrugada', valor: 'R$ 2.600', valorDoQue: 'a geladeira nova que eu acabei comprando às pressas' },
+  { id: 'primeiro-guardado', turno: 'manha', titulo: 'O primeiro dinheiro guardado', chave: 'GUARDADO', metafora: 'semente', cena: 'o casal fechando o mês com dinheiro sobrando pela primeira vez', valor: 'R$ 300', valorDoQue: 'o que sobrou no fim do mês pela primeira vez' },
+  { id: 'sair-do-aluguel', turno: 'manha', titulo: 'Sair do aluguel', chave: 'ALUGUEL', metafora: 'ralo', cena: 'o boleto do aluguel que sobe todo ano e nunca vira nada seu', valor: 'R$ 1.500', valorDoQue: 'o aluguel que eu pago todo mês e nunca volta' },
+  { id: 'viagem-fim-de-ano', turno: 'manha', titulo: 'A viagem de fim de ano', chave: 'VIAGEM', metafora: 'cofre', cena: 'as crianças pedindo praia em dezembro e o bolso dizendo não', valor: 'R$ 1.800', valorDoQue: 'o que a praia de dezembro custou para a família toda' },
+  { id: 'decimo-terceiro', turno: 'manha', titulo: 'O 13º antes que suma', chave: '13º', metafora: 'fumaca', cena: 'o dinheiro do fim do ano caindo na conta e sumindo antes do carnaval', valor: 'R$ 2.400', valorDoQue: 'o décimo terceiro que caiu na conta e sumiu' },
+  { id: 'reserva-emergencia', turno: 'manha', titulo: 'A reserva de emergência', chave: 'RESERVA', metafora: 'guarda-chuva', cena: 'o mês em que tudo quebrou junto e não tinha de onde tirar', valor: 'R$ 600', valorDoQue: 'o que eu passei a separar todo mês depois daquele susto' },
+  { id: 'limpar-o-nome', turno: 'manha', titulo: 'Limpar o nome', chave: 'NOME', metafora: 'buraco', cena: 'a compra recusada na loja na frente dos outros', valor: 'R$ 380', valorDoQue: 'a dívida velha que sujou o meu nome' },
+  { id: 'trocar-divida-cara', turno: 'manha', titulo: 'Trocar dívida cara por barata', chave: 'DÍVIDA', metafora: 'balanca', cena: 'a pessoa pagando a dívida mais barata primeiro e a cara crescendo', valor: 'R$ 4.000', valorDoQue: 'a dívida cara que eu deixei crescer enquanto pagava a barata' },
+  { id: 'conta-so-das-contas', turno: 'manha', titulo: 'Uma conta só para as contas', chave: 'CONTA', metafora: 'bifurcacao', cena: 'o salário caindo tudo junto e sumindo tudo junto', valor: 'R$ 2.100', valorDoQue: 'o que sai em boleto todo mês lá em casa' },
+  { id: 'dividir-sem-brigar', turno: 'manha', titulo: 'Dividir as contas sem brigar', chave: 'CASAL', metafora: 'gangorra', cena: 'a discussão de domingo sobre quem pagou o quê', valor: 'R$ 3.200', valorDoQue: 'o total das contas que a gente divide todo mês' },
+  { id: 'plano-de-saude-subiu', turno: 'manha', titulo: 'O plano de saúde que subiu', chave: 'PLANO', metafora: 'bola-neve', cena: 'a carta do reajuste chegando no aniversário do contrato', valor: 'R$ 240', valorDoQue: 'quanto o plano de saúde subiu de um mês para o outro' },
+  { id: 'pagar-a-vista', turno: 'manha', titulo: 'Pagar à vista e pedir desconto', chave: 'DESCONTO', metafora: 'duas-portas', cena: 'a vergonha de perguntar quanto fica à vista', valor: 'R$ 150', valorDoQue: 'o desconto que eu ganhei só por ter perguntado' },
+  { id: 'vender-o-parado', turno: 'manha', titulo: 'Vender o que está parado', chave: 'VENDER', metafora: 'semente', cena: 'a garagem cheia de coisa que ninguém usa há anos', valor: 'R$ 700', valorDoQue: 'o que eu tirei vendendo o que estava parado na garagem' },
+  { id: 'dinheiro-so-seu', turno: 'manha', titulo: 'Um dinheiro só seu', chave: 'SEU', metafora: 'cofre', cena: 'ter que pedir para o outro toda vez que quer comprar algo pequeno', valor: 'R$ 200', valorDoQue: 'o que eu passei a guardar como dinheiro só meu' },
+  { id: 'aposentadoria-por-conta', turno: 'manha', titulo: 'Aposentadoria de quem é autônomo', chave: 'APOSENTADORIA', metafora: 'ampulheta', cena: 'quem trabalha por conta e nunca contribuiu com nada', valor: 'R$ 180', valorDoQue: 'a contribuição por mês que eu nunca cheguei a pagar' },
 
   // ── NOITE (19h) — o aperto ──────────────────────────────────────────────────
-  { id: 'fatura-maior', turno: 'noite', titulo: 'A fatura veio maior', chave: 'FATURA', metafora: 'bola-neve', cena: 'abrir o aplicativo do banco e o valor da fatura não bater com a lembrança' },
-  { id: 'conta-de-luz', turno: 'noite', titulo: 'A conta de luz do verão', chave: 'LUZ', metafora: 'ralo', cena: 'a conta de janeiro chegando depois de um mês de ventilador ligado' },
-  { id: 'pagar-o-minimo', turno: 'noite', titulo: 'Pagar só o mínimo', chave: 'MÍNIMO', metafora: 'ratoeira', cena: 'o dedo hesitando entre pagar tudo e pagar o mínimo' },
-  { id: 'mercado-subindo', turno: 'noite', titulo: 'O mercado que sobe toda semana', chave: 'MERCADO', metafora: 'escada', cena: 'o mesmo carrinho de sempre custando mais do que no mês passado' },
-  { id: 'carro-quebrou', turno: 'noite', titulo: 'O carro quebrou no meio do mês', chave: 'CARRO', metafora: 'domino', cena: 'o carro parado na oficina no meio do mês' },
-  { id: 'dentista-das-criancas', turno: 'noite', titulo: 'O dentista das crianças', chave: 'DENTISTA', metafora: 'buraco', cena: 'o orçamento do aparelho na mão, sem saber de onde tirar' },
-  { id: 'emprestimo-por-telefone', turno: 'noite', titulo: 'O empréstimo que o banco ofereceu', chave: 'EMPRÉSTIMO', metafora: 'areia-movedica', cena: 'a ligação do banco oferecendo dinheiro fácil bem no fim do mês' },
-  { id: 'dez-vezes-sem-juros', turno: 'noite', titulo: 'O sem juros que virou rombo', chave: 'PARCELA', metafora: 'mochila-pedras', cena: 'a fatura do mês seguinte com um monte de parcelas diferentes dentro' },
-  { id: 'remedio-todo-mes', turno: 'noite', titulo: 'O remédio de todo mês', chave: 'REMÉDIO', metafora: 'balde-furado', cena: 'a receita contínua que não dá para adiar nem para negociar' },
-  { id: 'ipva-e-iptu', turno: 'noite', titulo: 'IPVA e IPTU de janeiro', chave: 'JANEIRO', metafora: 'avalanche', cena: 'os dois carnês chegando na mesma semana de janeiro' },
-  { id: 'material-escolar', turno: 'noite', titulo: 'O material escolar', chave: 'MATERIAL', metafora: 'mochila-pedras', cena: 'a lista da escola na papelaria e a calculadora do celular na mão' },
-  { id: 'gas-acabou', turno: 'noite', titulo: 'O gás que acabou', chave: 'GÁS', metafora: 'escorregao', cena: 'o gás acabando no meio do almoço de domingo' },
-  { id: 'aniversario-do-filho', turno: 'noite', titulo: 'Aniversário do filho', chave: 'ANIVERSÁRIO', metafora: 'bolha', cena: 'a festa que a criança pediu e o orçamento que não fecha' },
-  { id: 'presente-de-natal', turno: 'noite', titulo: 'O presente de Natal', chave: 'NATAL', metafora: 'fumaca', cena: 'dezembro chegando com a lista de presentes da família toda' },
-  { id: 'delivery-de-sexta', turno: 'noite', titulo: 'O delivery de toda sexta', chave: 'DELIVERY', metafora: 'ralo', cena: 'o cansaço da sexta-feira decidindo o jantar pelo aplicativo' },
-  { id: 'assinaturas-esquecidas', turno: 'noite', titulo: 'As assinaturas que ninguém cancela', chave: 'ASSINATURA', metafora: 'balde-furado', cena: 'a fatura com serviços que ninguém em casa abre há meses' },
-  { id: 'emprestar-pra-parente', turno: 'noite', titulo: 'Emprestar dinheiro pra parente', chave: 'EMPRESTAR', metafora: 'corda-bamba', cena: 'o parente pedindo emprestado e prometendo devolver no fim do mês' },
-  { id: 'parcela-atrasada', turno: 'noite', titulo: 'A parcela que atrasou', chave: 'ATRASO', metafora: 'domino', cena: 'o boleto vencido no sábado, quando o banco está fechado' },
-  { id: 'cheque-especial', turno: 'noite', titulo: 'O cheque especial', chave: 'ESPECIAL', metafora: 'areia-movedica', cena: 'a conta no vermelho que a pessoa nem percebeu que entrou' },
-  { id: 'saque-no-cartao', turno: 'noite', titulo: 'Sacar dinheiro no cartão', chave: 'SAQUE', metafora: 'ratoeira', cena: 'o caixa eletrônico tarde da noite e o cartão de crédito na mão' },
+  { id: 'fatura-maior', turno: 'noite', titulo: 'A fatura veio maior', chave: 'FATURA', metafora: 'bola-neve', cena: 'abrir o aplicativo do banco e o valor da fatura não bater com a lembrança', valor: 'R$ 1.900', valorDoQue: 'a fatura que veio maior do que eu lembrava' },
+  { id: 'conta-de-luz', turno: 'noite', titulo: 'A conta de luz do verão', chave: 'LUZ', metafora: 'ralo', cena: 'a conta de janeiro chegando depois de um mês de ventilador ligado', valor: 'R$ 420', valorDoQue: 'a conta de luz de janeiro' },
+  { id: 'pagar-o-minimo', turno: 'noite', titulo: 'Pagar só o mínimo', chave: 'MÍNIMO', metafora: 'ratoeira', cena: 'o dedo hesitando entre pagar tudo e pagar o mínimo', valor: 'R$ 90', valorDoQue: 'o mínimo que eu paguei e que virou bola de neve' },
+  { id: 'mercado-subindo', turno: 'noite', titulo: 'O mercado que sobe toda semana', chave: 'MERCADO', metafora: 'escada', cena: 'o mesmo carrinho de sempre custando mais do que no mês passado', valor: 'R$ 640', valorDoQue: 'o mesmo carrinho de sempre, agora' },
+  { id: 'carro-quebrou', turno: 'noite', titulo: 'O carro quebrou no meio do mês', chave: 'CARRO', metafora: 'domino', cena: 'o carro parado na oficina no meio do mês', valor: 'R$ 1.200', valorDoQue: 'o conserto que apareceu no meio do mês' },
+  { id: 'dentista-das-criancas', turno: 'noite', titulo: 'O dentista das crianças', chave: 'DENTISTA', metafora: 'buraco', cena: 'o orçamento do aparelho na mão, sem saber de onde tirar', valor: 'R$ 3.500', valorDoQue: 'o aparelho da minha filha' },
+  { id: 'emprestimo-por-telefone', turno: 'noite', titulo: 'O empréstimo que o banco ofereceu', chave: 'EMPRÉSTIMO', metafora: 'areia-movedica', cena: 'a ligação do banco oferecendo dinheiro fácil bem no fim do mês', valor: 'R$ 5.000', valorDoQue: 'o dinheiro fácil que o banco ofereceu por telefone' },
+  { id: 'dez-vezes-sem-juros', turno: 'noite', titulo: 'O sem juros que virou rombo', chave: 'PARCELA', metafora: 'mochila-pedras', cena: 'a fatura do mês seguinte com um monte de parcelas diferentes dentro', valor: 'R$ 780', valorDoQue: 'a soma das parcelas que caíram todas na mesma fatura' },
+  { id: 'remedio-todo-mes', turno: 'noite', titulo: 'O remédio de todo mês', chave: 'REMÉDIO', metafora: 'balde-furado', cena: 'a receita contínua que não dá para adiar nem para negociar', valor: 'R$ 260', valorDoQue: 'o remédio de uso contínuo, todo mês' },
+  { id: 'ipva-e-iptu', turno: 'noite', titulo: 'IPVA e IPTU de janeiro', chave: 'JANEIRO', metafora: 'avalanche', cena: 'os dois carnês chegando na mesma semana de janeiro', valor: 'R$ 1.600', valorDoQue: 'os dois carnês que chegaram na mesma semana' },
+  { id: 'material-escolar', turno: 'noite', titulo: 'O material escolar', chave: 'MATERIAL', metafora: 'mochila-pedras', cena: 'a lista da escola na papelaria e a calculadora do celular na mão', valor: 'R$ 550', valorDoQue: 'a lista da escola inteira na papelaria' },
+  { id: 'gas-acabou', turno: 'noite', titulo: 'O gás que acabou', chave: 'GÁS', metafora: 'escorregao', cena: 'o gás acabando no meio do almoço de domingo', valor: 'R$ 130', valorDoQue: 'o botijão que eu tive de comprar às pressas no domingo' },
+  { id: 'aniversario-do-filho', turno: 'noite', titulo: 'Aniversário do filho', chave: 'ANIVERSÁRIO', metafora: 'bolha', cena: 'a festa que a criança pediu e o orçamento que não fecha', valor: 'R$ 800', valorDoQue: 'a festa que o meu filho pediu' },
+  { id: 'presente-de-natal', turno: 'noite', titulo: 'O presente de Natal', chave: 'NATAL', metafora: 'fumaca', cena: 'dezembro chegando com a lista de presentes da família toda', valor: 'R$ 1.100', valorDoQue: 'a lista de presentes da família toda' },
+  { id: 'delivery-de-sexta', turno: 'noite', titulo: 'O delivery de toda sexta', chave: 'DELIVERY', metafora: 'ralo', cena: 'o cansaço da sexta-feira decidindo o jantar pelo aplicativo', valor: 'R$ 320', valorDoQue: 'o delivery de quatro sextas somado no mês' },
+  { id: 'assinaturas-esquecidas', turno: 'noite', titulo: 'As assinaturas que ninguém cancela', chave: 'ASSINATURA', metafora: 'balde-furado', cena: 'a fatura com serviços que ninguém em casa abre há meses', valor: 'R$ 95', valorDoQue: 'as assinaturas por mês que ninguém em casa abria' },
+  { id: 'emprestar-pra-parente', turno: 'noite', titulo: 'Emprestar dinheiro pra parente', chave: 'EMPRESTAR', metafora: 'corda-bamba', cena: 'o parente pedindo emprestado e prometendo devolver no fim do mês', valor: 'R$ 500', valorDoQue: 'o que eu emprestei e nunca voltou' },
+  { id: 'parcela-atrasada', turno: 'noite', titulo: 'A parcela que atrasou', chave: 'ATRASO', metafora: 'domino', cena: 'o boleto vencido no sábado, quando o banco está fechado', valor: 'R$ 45', valorDoQue: 'a multa do boleto que venceu no sábado' },
+  { id: 'cheque-especial', turno: 'noite', titulo: 'O cheque especial', chave: 'ESPECIAL', metafora: 'areia-movedica', cena: 'a conta no vermelho que a pessoa nem percebeu que entrou', valor: 'R$ 210', valorDoQue: 'os juros do vermelho que eu nem vi entrar' },
+  { id: 'saque-no-cartao', turno: 'noite', titulo: 'Sacar dinheiro no cartão', chave: 'SAQUE', metafora: 'ratoeira', cena: 'o caixa eletrônico tarde da noite e o cartão de crédito na mão', valor: 'R$ 60', valorDoQue: 'a taxa que me cobraram pelo saque no cartão' },
 ];
 
 /**
