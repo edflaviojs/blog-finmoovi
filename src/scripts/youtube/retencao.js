@@ -79,6 +79,27 @@ export const RETENCAO_MINIMA = 0.70;
  */
 export const VISUALIZACOES_MINIMAS = 10;
 
+/**
+ * ♦ 17/09/2026 — A MEDIANA, E POR QUE ELA SUBSTITUI A MÉDIA NO RANKING DOS GANCHOS.
+ *
+ * 🔴 **MEDIDO:** um Short de 16s deixado em loop deu **20.654%** de percentagem média
+ * com **5 visualizações** — uma pessoa deixou-o a repetir. Outro deu 5.232%. Na média,
+ * esses dois sozinhos punham o gancho "vocês viram" em **2996%** e o "começa assim" em
+ * **905%**, quando as medianas reais são **39%** e **57%**.
+ *
+ * ⚠️ Em Shorts a média NÃO SERVE para comparar ganchos: a métrica não tem tecto (o loop
+ * conta cada revisão) e um único vídeo esquecido a tocar decide o ranking inteiro. A
+ * mediana não se move com isso. É a mesma lição de [[regua-grossa-demais-inventa-defeito]].
+ *
+ * A média continua a valer para o RESUMO do canal, onde ninguém a usa para decidir nada.
+ */
+export function mediana(lista, f = (x) => x) {
+  const vals = (lista || []).map(f).filter((x) => Number.isFinite(x)).sort((a, b) => a - b);
+  if (!vals.length) return null;
+  const meio = Math.floor(vals.length / 2);
+  return vals.length % 2 ? vals[meio] : (vals[meio - 1] + vals[meio]) / 2;
+}
+
 export function avaliarRetencao(videos, { minimo = RETENCAO_MINIMA, minViews = VISUALIZACOES_MINIMAS } = {}) {
   const abaixo = [];
   const acima = [];
@@ -353,29 +374,53 @@ async function main() {
     }
   }
 
+  /**
+   * ⚠️ **O RANKING PASSA A SER GRAVADO, NÃO SÓ IMPRESSO — 17/09/2026.**
+   *
+   * Até hoje esta secção calculava qual gancho segura gente, escrevia-o no registo da
+   * corrida e **deitava-o fora**: o `payload` lá em baixo nunca o levava. Do outro lado,
+   * `temas-vida.js` escolhia o gancho seguinte por *"quem usou menos"* — nunca por *"quem
+   * segura gente"*. **O canal media há semanas e nunca agia sobre a medição:** um gancho
+   * com 22% de mediana saía tantas vezes como um de 107%.
+   *
+   * Agora sai em `ganchos[]` e é `escolherPenalizado()` (em `temas-vida.js`) que o lê.
+   * ⚠️ **`medianaRetencao` é o campo que decide** — a `media` fica ao lado só para se ver
+   * a diferença, e para quem abrir o ficheiro perceber por que não é ela a mandar.
+   */
+  let ranking = [];
   if (porGancho.size) {
     log('');
     log('══════════ QUAL GANCHO SEGURA GENTE ══════════');
-    const ranking = [...porGancho.entries()]
+    ranking = [...porGancho.entries()]
       .map(([familia, lista]) => {
         const comV = lista.filter((r) => (r.views || 0) > 0);
-        return { familia, n: lista.length, comAudiencia: comV.length, pc: media(comV, (r) => r.percentagemMedia) };
+        return {
+          familia,
+          n: lista.length,
+          comAudiencia: comV.length,
+          medianaRetencao: mediana(comV, (r) => r.percentagemMedia),
+          medianaViews: mediana(lista, (r) => r.views || 0),
+          media: media(comV, (r) => r.percentagemMedia),
+        };
       })
-      .sort((a, b) => (b.pc ?? -1) - (a.pc ?? -1));
+      .sort((a, b) => (b.medianaRetencao ?? -1) - (a.medianaRetencao ?? -1));
 
     for (const g of ranking) {
       const nota = g.comAudiencia === 0
         ? '(ainda sem audiência)'
         : (g.comAudiencia < 3 ? `(só ${g.comAudiencia} com audiência — ainda é cedo)` : '');
-      log(`${String(g.familia).padEnd(22)} ${pc(g.pc).padStart(5)}  ·  ${g.n} vídeo(s) ${nota}`);
+      // A média vai entre parênteses quando foge muito da mediana: é o sinal de que
+      // há um vídeo esquecido em loop a puxar o número, e evita o susto de quem lê.
+      const distorcida = g.media != null && g.medianaRetencao != null && g.media > g.medianaRetencao * 2;
+      log(`${String(g.familia).padEnd(22)} ${pc(g.medianaRetencao).padStart(5)}  ·  ${g.n} vídeo(s) ${nota}${distorcida ? `  ⚠️ média ${pc(g.media)}, distorcida por um loop` : ''}`);
     }
 
-    const maduros = ranking.filter((g) => g.comAudiencia >= 3 && g.pc != null);
+    const maduros = ranking.filter((g) => g.comAudiencia >= 3 && g.medianaRetencao != null);
     if (maduros.length >= 3) {
       const melhor = maduros[0];
       const pior = maduros[maduros.length - 1];
       log('');
-      log(`🏆 melhor: "${melhor.familia}" (${pc(melhor.pc)})   ·   🥀 pior: "${pior.familia}" (${pc(pior.pc)})`);
+      log(`🏆 melhor: "${melhor.familia}" (${pc(melhor.medianaRetencao)})   ·   🥀 pior: "${pior.familia}" (${pc(pior.medianaRetencao)})`);
     } else {
       log('');
       log('⏳ Ainda cedo para eleger o melhor gancho: é preciso pelo menos 3 vídeos COM audiência por gancho.');
@@ -406,7 +451,11 @@ async function main() {
     visualizacoesMinimas: VISUALIZACOES_MINIMAS,
     abaixo: veredito.abaixo.map((v) => ({ slug: v.slug, videoId: v.videoId, percentagemMedia: v.percentagemMedia, views: v.views })),
     julgados: veredito.abaixo.length + veredito.acima.length,
-  }, videos: resultados };
+  },
+  // ⚠️ É ISTO que `temas-vida.js` lê para decidir o gancho do vídeo seguinte. Antes de
+  // 17/09 este bloco não existia e a medição morria no registo da corrida.
+  ganchos: ranking,
+  videos: resultados };
   mkdirSync(dirname(OUT), { recursive: true });
   writeFileSync(OUT, `${JSON.stringify(payload, null, 2)}\n`, 'utf-8');
   log(`\n📝 Gravado em ${OUT}`);

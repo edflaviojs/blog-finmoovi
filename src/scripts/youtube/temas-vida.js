@@ -50,10 +50,23 @@
 
 import { readFileSync, writeFileSync, existsSync, mkdirSync, appendFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
+/**
+ * ⚠️ A régua dos 70% vem de `retencao.js` e NÃO se escreve outra vez aqui. Uma régua em
+ * dois sítios é a família de defeito nº1 desta casa: no dia em que alguém mudar o número
+ * e esquecer uma cópia, os dois lados passam a discordar em silêncio.
+ *
+ * ⚠️ Importar `retencao.js` é seguro e está provado: ele só corre a medição quando é
+ * chamado PELO NOME (a guarda `chamadoPeloNome`, no fim daquele ficheiro, existe
+ * exactamente porque uma prova de mesa já disparou a medição sem querer).
+ */
+import { RETENCAO_MINIMA } from './retencao.js';
 
 const ROOT = process.cwd();
 const ESTADO = join(ROOT, '.github', 'data', 'vida-usados.json');
 const NOTHING_TO_DO = 78;
+
+/** O que a última medição do canal apurou. Escrito por `retencao.js`. */
+const MEDICAO = join(ROOT, '.github', 'data', 'youtube-retencao.json');
 
 /**
  * AS 40 SITUAÇÕES — a lista que o dono leu e aprovou em 07/08/2026.
@@ -198,6 +211,69 @@ export function marcar({ situacao, gancho, turno = '', em = new Date().toISOStri
   return lista;
 }
 
+// ─── o peso da medição ────────────────────────────────────────────────────────
+
+/**
+ * ♦ 17/09/2026 — O GANCHO FRACO PASSA A SAIR MENOS. E **NUNCA A ZERO**.
+ *
+ * ═══ O QUE ESTAVA ERRADO ═══
+ * `retencao.js` media a retenção por gancho, imprimia-a e deitava-a fora. A escolha aqui
+ * em baixo rodava por "quem usou menos". **Medido a 17/09** (medianas, nunca médias):
+ * `ninguém fala` 107%, `tá perdendo` 79%, `faça isso` 75% … `não vai acreditar` 22%,
+ * `depois de anos` 0%. **E o de 22% saía tantas vezes como o de 107%.**
+ *
+ * ═══ POR QUE NÃO SE ELIMINA O PIOR ═══
+ * ⚠️ São 6 a 8 vídeos por gancho. **Isso é amostra fina**, e eliminar com esta evidência
+ * seria congelar a opinião de hoje para sempre — o defeito de [[regua-grossa-demais-inventa-defeito]]
+ * pelo outro lado. Por isso o gancho fraco não morre: ganha uma **dívida**, conta como se
+ * já tivesse saído mais vezes, e continua a sair. À medida que sai, a amostra cresce e a
+ * própria medição corrige-se. Quem estava mal julgado volta sozinho.
+ *
+ * ═══ AS DUAS SEGURANÇAS QUE NÃO SE NEGOCEIAM ═══
+ * ⚠️ **Sem ficheiro de medição, ou com amostra curta, o comportamento é EXACTAMENTE o de
+ * antes** — penalidade zero para todos. Uma regra nova que muda o robô sem dados seria
+ * palpite disfarçado de número.
+ * ⚠️ **Nunca lança.** Ficheiro ilegível, JSON partido, campo em falta: devolve vazio e o
+ * robô segue. Um relatório partido não pode ser a razão de o canal ficar sem vídeo.
+ */
+
+/** Abaixo disto o gancho começa a pagar dívida. É a régua do dono, vinda de `retencao.js`. */
+export const RETENCAO_ALVO = RETENCAO_MINIMA;
+/** Menos vídeos COM AUDIÊNCIA do que isto e o gancho não é julgado — é o mesmo corte que o relatório usa para eleger o melhor. */
+export const MIN_AUDIENCIA_PARA_JULGAR = 3;
+/** Cada 25 pontos percentuais abaixo da régua valem uma unidade de dívida. */
+const PASSO_DA_DIVIDA = 0.25;
+/** O tecto da dívida. É ele que garante que nenhum gancho é eliminado de facto. */
+export const DIVIDA_MAXIMA = 3;
+
+/**
+ * A dívida de cada gancho, por `familia` (é o campo que o roteiro grava e que o relatório
+ * usa — o slug é conveniência e muda; a família é o registo).
+ *
+ * @returns {Map<string, number>} família → dívida (0 a {@link DIVIDA_MAXIMA}). Vazio = sem medição.
+ */
+export function dividaDosGanchos(caminho = MEDICAO) {
+  const divida = new Map();
+  let medicao;
+  try {
+    if (!existsSync(caminho)) return divida;
+    medicao = JSON.parse(readFileSync(caminho, 'utf-8'));
+  } catch {
+    return divida; // relatório partido não trava o robô
+  }
+  const lista = Array.isArray(medicao && medicao.ganchos) ? medicao.ganchos : [];
+  for (const g of lista) {
+    const familia = g && g.familia;
+    const nota = g && g.medianaRetencao;
+    if (!familia || !Number.isFinite(nota)) continue;
+    if ((g.comAudiencia || 0) < MIN_AUDIENCIA_PARA_JULGAR) continue; // ainda é cedo
+    if (nota >= RETENCAO_ALVO) continue;                             // está bem, não deve nada
+    const paga = Math.min(DIVIDA_MAXIMA, Math.max(1, Math.round((RETENCAO_ALVO - nota) / PASSO_DA_DIVIDA)));
+    divida.set(familia, paga);
+  }
+  return divida;
+}
+
 // ─── escolha ──────────────────────────────────────────────────────────────────
 
 /**
@@ -205,8 +281,9 @@ export function marcar({ situacao, gancho, turno = '', em = new Date().toISOStri
  *
  * Regra, por ordem:
  *  1. A situação do turno **menos recentemente usada** (nunca usada ganha sempre).
- *  2. Dentro dela, o gancho **menos usado no canal inteiro** — é isto que mantém os
- *     10 ganchos com o mesmo número de vídeos e torna a medição justa.
+ *  2. Dentro dela, o gancho de menor **contagem efectiva** = quantas vezes já saiu
+ *     **mais a dívida** que a medição lhe deu (ver `dividaDosGanchos`). Sem medição a
+ *     dívida é zero e isto volta a ser o "menos usado no canal inteiro" de sempre.
  *  3. A combinação exacta (situação+gancho) nunca se repete.
  *  4. Desempate pela ordem de escrita da lista. Sem aleatório: o mesmo estado dá
  *     sempre a mesma resposta, e um vídeo mau é reproduzível.
@@ -241,14 +318,17 @@ export function escolher({ turno, excluir = [] } = {}) {
 
   const situacao = candidatas[0];
   const ganchosLivres = GANCHOS.filter((g) => !combinacaoUsada.has(`${situacao.id}|${g.id}`));
+  // A dívida lê-se UMA vez: dentro do `sort` seria um ficheiro aberto por comparação.
+  const divida = dividaDosGanchos();
+  const efectiva = (g) => (contagemDoGancho.get(g.id) || 0) + (divida.get(g.familia) || 0);
   ganchosLivres.sort((a, b) => {
-    const ca = contagemDoGancho.get(a.id) || 0;
-    const cb = contagemDoGancho.get(b.id) || 0;
+    const ca = efectiva(a);
+    const cb = efectiva(b);
     if (ca !== cb) return ca - cb;
     return GANCHOS.indexOf(a) - GANCHOS.indexOf(b);
   });
 
-  return { situacao, gancho: ganchosLivres[0] };
+  return { situacao, gancho: ganchosLivres[0], divida: divida.get(ganchosLivres[0].familia) || 0 };
 }
 
 /** Quantas combinações ainda existem (para o aviso de fila curta). */
@@ -326,6 +406,14 @@ if (executadoDireto) {
       console.error(`🕘 turno            : ${turno || '(qualquer)'}`);
       console.error(`🎬 situação         : ${escolha.situacao.titulo}`);
       console.error(`🪝 gancho           : ${escolha.gancho.molde}`);
+      // ⚠️ A dívida vai para o registo da corrida de propósito: sem ela, a escolha
+      // passaria a depender de um ficheiro de medição e ninguém saberia disso ao ler o log.
+      const divida = dividaDosGanchos();
+      if (divida.size) {
+        console.error(`📉 medição a pesar   : ${divida.size} gancho(s) com dívida${escolha.divida ? ` · este leva ${escolha.divida}` : ' · este não deve nada'}`);
+      } else {
+        console.error('📉 medição a pesar   : nenhuma (sem relatório de retenção, ou amostra ainda curta) — rodízio simples');
+      }
       console.error(`📦 combinações livres: ${restantes()}`);
     }
     if (process.env.GITHUB_OUTPUT) {
