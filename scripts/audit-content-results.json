@@ -330,23 +330,6 @@
     }
   },
   {
-    "file": "es-domina-tus-gastos-guia-practica-de-control-financiero-para.md",
-    "dir": "posts",
-    "severity": 1,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": [
-        "ação"
-      ]
-    }
-  },
-  {
     "file": "es-indice-finmoovi-costo-de-vida-junio-2026.md",
     "dir": "posts",
     "severity": 1,
@@ -1676,6 +1659,21 @@
   },
   {
     "file": "en-financial-planning.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-financial-risk.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -4015,6 +4013,21 @@
     }
   },
   {
+    "file": "en-understanding-outstanding-balance-and-how-to-avoid-it.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-usura.md",
     "dir": "glossario",
     "severity": 0,
@@ -4196,6 +4209,21 @@
   },
   {
     "file": "en-why-you-re-not-seeing-progress-in-your-savings.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-why-you-still-forget-bill-due-dates-and-pay-late-in-2026.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -6040,6 +6068,21 @@
     }
   },
   {
+    "file": "es-domina-tus-gastos-guia-practica-de-control-financiero-para.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-educacion-financiera-para-ninos.md",
     "dir": "posts",
     "severity": 0,
@@ -6131,6 +6174,21 @@
   },
   {
     "file": "es-entiende-la-factura-de-la-tarjeta-y-toma-el-control-de-tu.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-entiende-que-es-el-saldo-pendiente-y-como-evitarlo.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -7450,6 +7508,21 @@
     }
   },
   {
+    "file": "es-por-que-sigues-olvidando-la-fecha-de-vencimiento-de-tus.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-prestamo.md",
     "dir": "glossario",
     "severity": 0,
@@ -7722,6 +7795,21 @@
   {
     "file": "es-revisite-su-presupuesto.md",
     "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-riesgo-financiero.md",
+    "dir": "glossario",
     "severity": 0,
     "issues": {
       "currency": 0,
