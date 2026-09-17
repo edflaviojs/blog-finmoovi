@@ -1,4 +1,4 @@
-name: Multipost — Entregar o vídeo longo às 4 redes (domingo)
+name: Multipost — Entregar o vídeo longo às redes (domingo)
 
 # ♦ O QUARTO CARTEIRO — 10/08/2026, IMPLEMENTACAO26 §15 (ordem do dono).
 #
@@ -12,6 +12,11 @@ name: Multipost — Entregar o vídeo longo às 4 redes (domingo)
 # meio do ecrã, que é pior do que não entrar. Vai às quatro onde vídeo comprido e deitado
 # é normal: **Facebook, LinkedIn, Telegram e Bluesky** (este leva a capa e o link, porque
 # não publica vídeo). A lista vive em `FORMATOS`, em `entregar.js`, e não aqui.
+#
+# ⏸️ **DESDE 17/09/2026 SÃO TRÊS: o Telegram está EM PAUSA** por ordem do dono — ele não
+# está a usar o canal. A pausa vive em `REDES_EM_PAUSA`, em `entregar.js`, e vale para os
+# três formatos; religar é apagar uma linha lá. O carteiro escreve-o no registo de cada
+# corrida, para nunca parecer avaria.
 #
 # ═══ A HORA — depois da estreia, nunca antes ═══
 # O vídeo é produzido no sábado de madrugada e **estreia no YouTube ao domingo às 19h**.

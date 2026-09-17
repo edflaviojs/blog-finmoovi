@@ -939,6 +939,32 @@ export const REDE_DE_FORA = {
 };
 
 /**
+ * ⏸️ AS REDES EM PAUSA — 17/09/2026, ordem do dono: *"quero que pare o envio somente para o
+ * Telegram por enquanto"*.
+ *
+ * ═══ O QUE É UMA PAUSA, E PORQUE NÃO É O MESMO QUE `REDE_DE_FORA` ═══
+ * `REDE_DE_FORA` é uma porta fechada com uma razão permanente (o X cobra; o canal antigo do
+ * TikTok está reprovado) — e essas redes **não estão na tabela**. Uma PAUSA é diferente: a
+ * rede continua inteira em `REDES`, com o seu minuto, o seu limite, o seu texto e as suas
+ * provas de mesa. Só não recebe nada enquanto estiver escrita aqui.
+ *
+ * 🔑 **E é essa a diferença que interessa:** religar é apagar UMA linha deste objeto. Tirar
+ * o Telegram da tabela obrigaria a mexer nos minutos das outras, na cópia apertada para os
+ * 20 MB (`comprimirParaOTelegram`) e em nove provas — e religar seria reconstruir tudo isso
+ * de memória, que é onde este projeto já se enganou antes.
+ *
+ * ⚠️ **Quem manda é `redesDoFormato`**, que é por onde passam os três formatos. Um sítio só:
+ * ninguém precisa de se lembrar de filtrar isto outra vez.
+ *
+ * ⚠️ A CAIXA DE ENTRADA DO TELEGRAM NÃO SE TOCA. `redes/comentarios-redes.js` lê os
+ * comentários com outro bot e outro segredo (`TELEGRAM_LEITOR_TOKEN`); a ordem era parar de
+ * **enviar**, não parar de ler.
+ */
+export const REDES_EM_PAUSA = {
+  telegram: 'o dono não está a usar o canal e ainda não tem público lá (pausa de 17/09/2026 — apagar esta linha religa)',
+};
+
+/**
  * 🔑 OS TRÊS FORMATOS DO CANAL — 10/08/2026.
  *
  * ═══ O QUE ISTO VEIO ARRUMAR ═══
@@ -1050,10 +1076,12 @@ export function formatoDoRoteiro(roteiro) {
  * As redes que este formato recebe.
  * ⚠️ Filtra `REDES`, nunca constrói uma lista nova: assim os minutos, os limites e a
  * ordem continuam a vir de um sítio só, e o TikTok continua fora de todos.
+ * ⏸️ E as redes EM PAUSA caem aqui, antes de tudo — ver `REDES_EM_PAUSA`.
  */
 export function redesDoFormato(formato, redes = REDES) {
-  if (!formato?.redes) return redes;
-  return redes.filter((r) => formato.redes.includes(r.id));
+  const ligadas = redes.filter((r) => !REDES_EM_PAUSA[r.id]);
+  if (!formato?.redes) return ligadas;
+  return ligadas.filter((r) => formato.redes.includes(r.id));
 }
 
 /**
@@ -2000,6 +2028,14 @@ async function main() {
    * prometer resposta onde ninguém responde —, mas tem de ser DITO, senão parece avaria.
    */
   const redesDoDia = redesDoFormato(formato);
+  /**
+   * ⏸️ A PAUSA TEM DE APARECER NO REGISTO. Uma rede que deixa de receber em silêncio é
+   * indistinguível de uma rede avariada — e daqui a um mês ninguém se lembra de qual é qual.
+   */
+  for (const [id, porque] of Object.entries(REDES_EM_PAUSA)) {
+    const emPausa = REDES.find((r) => r.id === id);
+    if (emPausa) log(`⏸️ ${emPausa.nome} está EM PAUSA e não recebe nada: ${porque}`);
+  }
   /**
    * 🔴 E O FORMATO PODE DISPENSAR A TRAVA — mas só um, e só por um motivo.
    *

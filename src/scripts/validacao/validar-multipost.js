@@ -22,7 +22,7 @@ import { join } from 'path';
 import {
   corpoDoAgendamento, corpoDoStory, capaParaOInstagram, oQueVaiNoStory,
   duracaoDoMp4, primeiraLinha, STORY_MAX_SEG, MINUTOS_ATE_O_STORY,
-  REDES, REDE_DE_FORA, REDE_TIKTOK, midiasDaRede, opcoesDaRede, montarPedido, oQueFalta,
+  REDES, REDE_DE_FORA, REDE_TIKTOK, REDES_EM_PAUSA, midiasDaRede, opcoesDaRede, montarPedido, oQueFalta,
   encaixarNoLimite, cortarNaPalavra, MAX_TITULO_TIKTOK, falaPedeComentario,
   numerosEmAlgarismo, lerNumeral, topicosDoRoteiro, montarLegenda, ganchoDoRoteiro,
   linkDoVideo, topicosSemOProduto, comoLista, MAX_ETIQUETAS_LINKEDIN,
@@ -1055,14 +1055,39 @@ console.log('\n21. OS TRÊS FORMATOS — cada vídeo vai onde faz sentido, e só
    * Instagram, o Threads e o Pinterest são casas de vídeo EM PÉ e CURTO: lá ele entraria
    * como uma faixa fina no meio do ecrã, que é pior do que não entrar.
    */
+  /**
+   * ⏸️ A CONTA É FEITA A PARTIR DE `REDES_EM_PAUSA`, nunca escrita à mão. Com o Telegram em
+   * pausa (17/09) o longo vai a TRÊS; no dia em que a pausa acabar, esta prova volta a
+   * quatro sozinha — e nenhuma outra linha precisa de ser tocada.
+   */
+  const EM_PAUSA = Object.keys(REDES_EM_PAUSA);
   const doLongo = redesDoFormato(FORMATOS.longo).map((r) => r.id);
-  ok('🔴 o vídeo longo vai a QUATRO redes — as que aceitam vídeo deitado e comprido',
-    doLongo.join(',') === 'facebook,linkedin-page,telegram,bluesky', doLongo.join(','));
+  const longoNaTabela = FORMATOS.longo.redes.filter((id) => !EM_PAUSA.includes(id));
+  ok('🔴 o vídeo longo vai às redes que aceitam vídeo deitado e comprido, menos as em pausa',
+    doLongo.join(',') === longoNaTabela.join(','), doLongo.join(','));
   ok('🔴 e não vai ao Instagram, ao Threads nem ao Pinterest (vídeo em pé e curto)',
     !doLongo.includes('instagram') && !doLongo.includes('threads') && !doLongo.includes('pinterest'));
-  ok('os dois Shorts vão às sete, como sempre',
-    redesDoFormato(FORMATOS.curto).length === REDES.length
-    && redesDoFormato(FORMATOS.loop16).length === REDES.length);
+  ok('os dois Shorts vão a todas as que não estão em pausa',
+    redesDoFormato(FORMATOS.curto).length === REDES.length - EM_PAUSA.length
+    && redesDoFormato(FORMATOS.loop16).length === REDES.length - EM_PAUSA.length);
+
+  /**
+   * ⏸️ A PAUSA DO TELEGRAM — 17/09/2026, ordem do dono: *"pare o envio somente para o
+   * Telegram por enquanto"*.
+   *
+   * 🔴 **As duas metades têm de ser medidas juntas, e é esse o ponto desta prova:**
+   *   1. o Telegram **não recebe nada**, em formato nenhum — é o que foi pedido;
+   *   2. e continua **inteiro na tabela**, com o seu minuto e o seu texto — é o que torna
+   *      religar numa linha apagada em vez de uma reconstrução de memória.
+   * Se alguém "arrumar" isto tirando-o de `REDES`, a segunda cai e a primeira continua
+   * verde: parecia igual e não era.
+   */
+  ok('⏸️ o Telegram está em pausa e não recebe nada, em formato nenhum',
+    Object.values(FORMATOS).every((f) => !redesDoFormato(f).some((r) => r.id === 'telegram')));
+  ok('⏸️ mas continua na tabela, com o minuto e o texto dele — religar é apagar uma linha',
+    Boolean(REDES.find((r) => r.id === 'telegram')?.legenda) && Boolean(REDES_EM_PAUSA.telegram));
+  ok('⏸️ e está escrito PORQUÊ, não só que não recebe',
+    /não está a usar|público/i.test(REDES_EM_PAUSA.telegram));
   /**
    * ⚠️ O TIKTOK CONTINUA FORA DE TODOS. `redesDoFormato` FILTRA `REDES` em vez de
    * construir listas novas — se um dia alguém escrever a lista do longo à mão, é aqui
