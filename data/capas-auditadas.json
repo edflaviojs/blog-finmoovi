@@ -4869,6 +4869,46 @@
       "reprovada": true,
       "motivo": "tem texto escrito (\"pollination.\")",
       "em": "2026-09-16"
+    },
+    "entenda-o-que-e-saldo-em-aberto-e-como-evita-lo.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-17"
+    },
+    "por-que-voce-ainda-esquece-a-data-de-vencimento-das-contas-e-2.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-17"
+    },
+    "por-que-voce-ainda-esquece-a-data-de-vencimento-das-contas-e-4.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-17"
+    },
+    "por-que-voce-ainda-esquece-a-data-de-vencimento-das-contas-e-6.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-17"
+    },
+    "por-que-voce-ainda-esquece-a-data-de-vencimento-das-contas-e.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-17"
+    },
+    "risco-financeiro-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-17"
+    },
+    "risco-financeiro-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-17"
+    },
+    "risco-financeiro.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-17"
     }
   },
   "corrigidas": {
@@ -5513,6 +5553,6 @@
       "motivo": "tem texto escrito (\"pollination.\")"
     }
   },
-  "totalAcervo": 974,
-  "ultimaCorrida": "2026-09-16"
+  "totalAcervo": 982,
+  "ultimaCorrida": "2026-09-17"
 }
