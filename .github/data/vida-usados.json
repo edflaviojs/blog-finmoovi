@@ -472,5 +472,11 @@
     "gancho": "nunca-faca",
     "turno": "noite",
     "em": "2026-09-16T09:30:33.331Z"
+  },
+  {
+    "situacao": "saque-no-cartao",
+    "gancho": "voces-viram",
+    "turno": "noite",
+    "em": "2026-09-17T05:46:08.355Z"
   }
 ]

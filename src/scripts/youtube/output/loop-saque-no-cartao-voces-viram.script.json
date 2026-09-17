@@ -1,0 +1,117 @@
+{
+  "slug": "loop-saque-no-cartao-voces-viram",
+  "formato": "loop16",
+  "term": "Sacar dinheiro no cartão",
+  "category": "vida",
+  "keyword": "SAQUE",
+  "situacao": "saque-no-cartao",
+  "gancho": "voces-viram",
+  "ganchoFamilia": "vocês viram",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ratoeira",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Gente, vocês viram que sacar dinheiro no cartão é caro?",
+      "durationSec": 3.38,
+      "shots": [
+        {
+          "anchor": "vocês",
+          "visual": {
+            "type": "statement",
+            "text": "Saque caro"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "viram",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Comigo aconteceu, sessenta reais foram cobrados só nisso.",
+      "durationSec": 2.7,
+      "shots": [
+        {
+          "anchor": "Comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 60 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Agora eu confiro o extrato todo dia, pra não me pegar de surpresa.",
+      "durationSec": 4.39,
+      "shots": [
+        {
+          "anchor": "confiro",
+          "visual": {
+            "type": "statement",
+            "text": "Confira o extrato"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "extrato",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Gente, vocês viram que sacar dinheiro no cartão pode dar sessenta reais de surpresa?",
+      "durationSec": 4.73,
+      "shots": [
+        {
+          "anchor": "vocês",
+          "visual": {
+            "type": "statement",
+            "text": "Saque caro"
+          }
+        },
+        {
+          "anchor": "viram",
+          "visual": {
+            "type": "statement",
+            "text": "Saque caro"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
