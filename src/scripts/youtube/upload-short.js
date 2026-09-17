@@ -463,8 +463,36 @@ const TENTATIVAS_LLM = 2;
  * caminho. E uma descrição que acaba em letra, sem pontuação, acabou a meio de
  * uma frase que ninguém escreveu até ao fim.
  */
-function respostaCortada({ title, description, hashtagsRaw, tagsRaw }) {
+/** Só os algarismos — é assim que "R$ 1.400" e "R$ 1400" passam a ser a mesma coisa. */
+const soDigitos = (s) => String(s || '').replace(/\D/g, '');
+
+function respostaCortada({ title, description, hashtagsRaw, tagsRaw, valor }) {
   if (!title) return 'sem título';
+  /**
+   * ♦ 17/09/2026 — O TÍTULO TEM DE TRAZER O NÚMERO DO VÍDEO.
+   *
+   * 🔴 **MEDIDO nos 73 vídeos de 16s com audiência:** o título que promete um número
+   * retém **57%**; o que não promete, **37%**. Com views praticamente iguais (14 vs 15),
+   * a diferença não está em quem CLICA — está em quem FICA.
+   *
+   * ⚠️ E foi por pouco que não se estragou isto: a hipótese em cima da mesa era proibir
+   * o molde repetido ("X: 3 erros que…", 51 dos 133 títulos). **Os números disseram o
+   * contrário** — esse molde é o que melhor segura gente neste formato. O que ele tem de
+   * errado não é repetir-se: é prometer uma LISTA a um vídeo que conta UMA história, e
+   * uma promessa por cumprir é o que faz sair ao segundo 6.
+   *
+   * Desde hoje o vídeo TEM um número (na 2ª fala e na 2ª tela). O título passa a usar
+   * ESSE — promessa concreta e, pela primeira vez, cumprida. De brinde some a repetição,
+   * sem proibir nada: cada situação tem o seu valor.
+   *
+   * ⚠️ **REPROVA A TENTATIVA, NUNCA A PUBLICAÇÃO.** Esgotadas as tentativas, o
+   * `deterministicMeta` monta um título com o valor lá dentro e o vídeo sai à mesma.
+   * Um vídeo publicado com título imperfeito vale mais que um vídeo por publicar.
+   */
+  const numero = soDigitos(valor);
+  if (numero && !soDigitos(title).includes(numero)) {
+    return `título sem o número do vídeo ("${valor}") — é ele que segura quem clica`;
+  }
   /**
    * ⚠️ **O TETO DE PALAVRAS DO TÍTULO REJEITA E MANDA TENTAR OUTRA VEZ** — não corta.
    * Cortar às oito palavras deixaria o título a meio de uma ideia, e este projeto já
@@ -515,7 +543,18 @@ async function tryLlm(script) {
 
 FÓRMULAS DE TÍTULO (escolha a mais adequada ao tema e ADAPTE):
 ${patternHint}
+${script.valor ? `
+═══ O NÚMERO DO TÍTULO — OBRIGATÓRIO, E É ESTE ═══
+    ${script.valor}
 
+Ele TEM de aparecer no título, e o título tem de caber nas ${MAX_PALAVRAS_TITULO_SHORT} palavras COM ele lá dentro.
+
+⚠️ **É o mesmo número que a pessoa vai ouvir dentro do vídeo** — não invente outro, não arredonde. Medido no canal: o título que promete um número segura 57% da audiência; o que não promete, 37%. Mas isso só vale enquanto a promessa for VERDADE.
+⛔ **NÃO prometa uma lista** ("3 erros", "5 passos"): este vídeo conta UMA história, não enumera nada. Prometer lista e entregar história é o que faz a pessoa sair.
+    ✓ "${script.keyword}: ${script.valor} num domingo"
+    ✓ "Os ${script.valor} que ${String(script.term || '').toLowerCase()} me custou"
+    ✗ "${script.keyword}: 3 erros que custam ${script.valor}" (promete três erros que não existem)
+` : ''}
 Dados do roteiro:
 - Termo: ${script.term}
 - Palavra-chave: ${script.keyword}
@@ -542,7 +581,7 @@ Dados do roteiro:
         topicosRaw: grab('TOPICOS', ''),
       };
 
-      const defeito = respostaCortada(partes);
+      const defeito = respostaCortada({ ...partes, valor: script.valor });
       if (defeito) {
         log(`⚠️ Resposta do LLM veio incompleta (${defeito}) — tentativa ${tentativa}/${TENTATIVAS_LLM}.`);
         continue;
@@ -571,8 +610,17 @@ function deterministicMeta(script) {
    * e não pode ser ele a partir a regra que a IA é obrigada a cumprir. Com uma
    * palavra-chave comprida, o molde encolhe em vez de estourar.
    */
-  const molde = `${kw}: como funciona em 1 minuto`;
-  const title = molde.split(/\s+/).length <= MAX_PALAVRAS_TITULO_SHORT ? molde : `${kw}: em 1 minuto`;
+  /**
+   * ⚠️ **O PLANO B TAMBÉM LEVA O NÚMERO** — 17/09/2026. É ele que corre nos dias maus,
+   * e é justamente nesses dias que o título não pode ficar sem o que segura gente (57%
+   * contra 37%, medido). O molde é curto de propósito: com "R$ 3.200" lá dentro ainda
+   * sobram 6 das 8 palavras.
+   */
+  const moldes = script.valor
+    ? [`${kw}: ${script.valor} que somem`, `${kw}: ${script.valor}`]
+    : [`${kw}: como funciona em 1 minuto`, `${kw}: em 1 minuto`];
+  const title = moldes.find((m) => m.split(/\s+/).length <= MAX_PALAVRAS_TITULO_SHORT)
+    || moldes[moldes.length - 1];
   // ⚠️ `kw` e não `script.term`: nos temas editoriais o `term` é a FRASE do
   // tema inteira ("A inflação te rouba R$ 2 mil por ano — sem você perceber"),
   // e encaixada aqui dava "Entenda A inflação te rouba… de um jeito simples".
