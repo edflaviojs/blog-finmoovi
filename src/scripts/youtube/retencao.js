@@ -157,20 +157,39 @@ async function analytics(token, params) {
   return JSON.parse(text);
 }
 
-/** Duração real de cada vídeo (para traduzir percentagem em SEGUNDOS). */
+/**
+ * Duração real de cada vídeo (para traduzir percentagem em SEGUNDOS).
+ *
+ * ♦ 17/09/2026 — **passou a trazer também COMENTÁRIOS e GOSTOS**, e na mesma chamada.
+ *
+ * Por quê: a decisão de manter ou cortar o Short de 50s assenta numa frase do dono de
+ * 07/08 — *"o de 16s traz alcance; o de 50s traz gente a comentar, que é o motor do
+ * canal"*. **Isso nunca foi medido.** O relatório trazia views e retenção, e nenhum
+ * ficheiro deste repositório sabia quantos comentários cada vídeo tem.
+ *
+ * ⚠️ `statistics` vem na MESMA chamada de `contentDetails` — não custa um pedido a mais
+ * nem uma unidade de quota a mais. A única razão para não estar aqui desde o início é
+ * que ninguém precisou.
+ */
 async function fetchDurations(token, ids) {
   const out = {};
   for (let i = 0; i < ids.length; i += 50) {
     const lote = ids.slice(i, i + 50);
-    const url = `${VIDEOS_URL}?part=contentDetails,status&id=${lote.join(',')}`;
+    const url = `${VIDEOS_URL}?part=contentDetails,status,statistics&id=${lote.join(',')}`;
     const res = await fetch(url, { headers: { Authorization: `Bearer ${token}` } });
     if (!res.ok) continue; // duração é um extra: sem ela mostramos só percentagens
     const data = await res.json();
     for (const item of data.items || []) {
       const m = /^PT(?:(\d+)M)?(?:(\d+)S)?$/.exec(item?.contentDetails?.duration || '');
+      // ⚠️ `commentCount` não vem quando os comentários estão desligados — aí é null
+      // (não sabemos), que é diferente de 0 (sabemos que ninguém comentou).
+      const st = item?.statistics || {};
+      const num = (v) => (v == null ? null : Number(v));
       out[item.id] = {
         segundos: m ? (Number(m[1] || 0) * 60 + Number(m[2] || 0)) : null,
         privacidade: item?.status?.privacyStatus || '?',
+        comentarios: num(st.commentCount),
+        gostos: num(st.likeCount),
       };
     }
   }
@@ -276,6 +295,8 @@ async function main() {
       publicadoEm: String(v.uploadedAt || '').slice(0, 10),
       privacidade: meta[v.videoId]?.privacidade || '?',
       duracaoSeg: dur,
+      comentarios: meta[v.videoId]?.comentarios ?? null,
+      gostos: meta[v.videoId]?.gostos ?? null,
       ...(porVideo[v.videoId] || {}),
       curva,
       erro,
@@ -362,16 +383,39 @@ async function main() {
     }
   }
 
+  /**
+   * ♦ 17/09/2026 — ESTE QUADRO EXISTE PARA RESPONDER A UMA PERGUNTA CONCRETA:
+   * **vale a pena manter o Short de 50s?**
+   *
+   * A razão de ele existir é uma frase do dono (07/08): *"o de 16s traz alcance; o de
+   * 50s traz gente a comentar, que é o motor do canal"*. Nunca foi medida. Por isso o
+   * quadro deixou de mostrar só a percentagem assistida e passa a pôr lado a lado o que
+   * cada formato CUSTA e o que cada formato TRAZ — incluindo os comentários, que são a
+   * própria premissa da decisão.
+   *
+   * ⚠️ **MEDIANA, nunca média** — em Shorts um vídeo esquecido em loop dá 20.654% e
+   * decide sozinho qualquer média (ver `mediana()`, lá em cima).
+   */
   if (porFormato.size > 1) {
     log('');
-    log('══════════ POR FORMATO ══════════');
-    // ⚠️ Separados de propósito: um vídeo de 16s e um de 50s não se comparam, e a
-    // média dos dois juntos esconde os dois.
+    log('══════════ POR FORMATO — O QUE CADA UM TRAZ ══════════');
+    log('formato              | vídeos | views (soma) | mediana | retenção | comentários');
     for (const [formato, lista] of porFormato) {
       const nome = formato === 'loop16' ? 'Short de 16s (loop)' : 'Short de 50s';
       const comV = lista.filter((r) => (r.views || 0) > 0);
-      log(`${nome.padEnd(22)} ${lista.length} vídeo(s) · ${pc(media(comV, (r) => r.percentagemMedia))} assistido em média`);
+      const somaViews = lista.reduce((a, r) => a + (r.views || 0), 0);
+      const comCom = lista.filter((r) => Number.isFinite(r.comentarios));
+      const somaCom = comCom.reduce((a, r) => a + r.comentarios, 0);
+      log(
+        `${nome.padEnd(20)} | ${String(lista.length).padStart(6)} | ${String(somaViews).padStart(12)}`
+        + ` | ${String(mediana(lista, (r) => r.views || 0) ?? '—').padStart(7)}`
+        + ` | ${pc(mediana(comV, (r) => r.percentagemMedia)).padStart(8)}`
+        + ` | ${comCom.length ? `${somaCom} em ${comCom.length} vídeo(s)` : '— (sem dados)'}`,
+      );
     }
+    log('');
+    log('⚠️ O canal responde a si próprio em cada vídeo (o robô do "comenta FINMOOVI"),');
+    log('   por isso 1 comentário por vídeo é o CHÃO, não é audiência. O que conta é o que passa disso.');
   }
 
   /**
