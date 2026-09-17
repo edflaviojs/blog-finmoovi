@@ -3298,5 +3298,23 @@
     "target": "https://schema.org",
     "status": "no-endpoint",
     "sentAt": "2026-09-15T17:58:25.052Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/en-financial-planner-how-to-build-and-use-one/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-09-17T17:57:53.051Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/es-planificador-financiero-como-armarlo-y-usarlo/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-09-17T17:57:53.080Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/planner-financeiro-como-montar-e-usar/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-09-17T17:57:53.165Z"
   }
 ]
