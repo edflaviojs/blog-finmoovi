@@ -1,7 +1,7 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-09-16T09:39:50.689Z
-**Posts:** 453 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 63
+**Gerado em:** 2026-09-17T09:48:44.062Z
+**Posts:** 459 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 62
 
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
@@ -30,9 +30,6 @@
 **como-diversificar-com-ativos-de-renda-variavel-em-2026.md**
 - _Em termos simples, o ganho ou a perda varia de acordo com a valorização ou desvalorização dos ativos, o que traz a possibilidade de retornos superiores ao longo do tempo, mas também implica maior [vol_
 - _**Rebalanceie trimestralmente** – ajuste a proporção entre renda fixa e variável de acordo com seu conforto frente à volatilidade._
-
-**como-economizar-para-o-dia-das-criancas-ja-em-2026-7-passos.md**
-- _Além disso, o hábito de definir metas claras está associado a maior taxa de sucesso na realização de objetivos financeiros, segundo a **Investopedia**._
 
 **como-escolher-fundos-de-investimento-em-2026-e-dar-o.md**
 - _**Rebalanceamento semestral** – Ajuste a proporção entre fundos de acordo com a performance e seu objetivo._
