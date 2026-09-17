@@ -3,6 +3,7 @@ title: "Entiende qué es el saldo pendiente y cómo evitarlo"
 description: "Descubre qué significa saldo pendiente, cómo afecta tu bolsillo y cómo controlarlo fácilmente con FinMoovi en minutos."
 tickerHeadline: "El saldo que ni notas"
 image: "/images/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo.webp"
+imageAlt: "Una imagen de una mesa de escritorio con un ordenador portátil y una pantalla de monitores."
 category: "dicas"
 locale: "es"
 tags: ["definición de saldo pendiente","finanzas personales","economía","dinero"]

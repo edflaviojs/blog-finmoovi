@@ -3,6 +3,7 @@ title: "Entenda o que é saldo em aberto e como evitá‑lo"
 description: "Descubra o que significa saldo em aberto, como ele afeta seu bolso e veja um jeito prático de controlar tudo com o FinMoovi em poucos minutos."
 tickerHeadline: "O saldo que você nem percebe"
 image: "/images/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo.webp"
+imageAlt: "Uma imagem de uma mesa com um laptop e uma tela de computador em fundo."
 category: "dicas"
 locale: "pt"
 tags: ["outstanding balance definition","finanças pessoais","economia","dinheiro"]

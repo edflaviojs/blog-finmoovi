@@ -3,6 +3,7 @@ title: "Understanding Outstanding Balance and How to Avoid It"
 description: "Learn what an outstanding balance means, how it hits your wallet, and a quick way to keep it in check with FinMoovi in minutes."
 tickerHeadline: "The balance you don’t even notice"
 image: "/images/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo.webp"
+imageAlt: "A laptop with a colorful screen on a desk in an office setting."
 category: "dicas"
 locale: "en"
 tags: ["outstanding balance definition","personal finance","economy","money"]
