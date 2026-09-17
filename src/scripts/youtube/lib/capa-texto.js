@@ -99,8 +99,28 @@ export function textoDaCapa(roteiro) {
   const titulo = limpar(roteiro.term) || limpar(roteiro.keyword);
   const gancho = limpar(roteiro.intro?.frase);
 
-  // primeiro no título (escrito para o olho), depois na abertura
-  const achado = acharNumero(titulo) || acharNumero(gancho);
+  /**
+   * ♦ 17/09/2026 — O NÚMERO JÁ ESCOLHIDO GANHA AO QUE SE PROCURA NO TEXTO.
+   *
+   * 🔴 **MEDIDO:** 81 em 81 capas do formato de 16s saíram SEM número. Não por defeito
+   * desta função — ela procura no `term`, e o `term` deste formato é o título da
+   * situação ("O gás que acabou"), onde nunca houve algarismo nenhum. O plano B lá em
+   * baixo ("o título sobe para o lugar do número") deixou de ser a excepção e passou a
+   * ser a regra: **o plano A nunca correu.**
+   *
+   * Desde hoje o roteiro traz `valor` (o número do dia, escolhido à mão em
+   * `temas-vida.js`). Quando ele existe é ELE, porque é escolhido e não adivinhado —
+   * procurar no texto é o que se faz quando não se sabe.
+   *
+   * ⚠️ Vem sem `antes` nem `depois` de propósito: não foi extraído de uma frase, logo
+   * não há sobras para servirem de remate, e a regra lá em baixo cai sozinha no título
+   * — que é exactamente o que se quer ao lado de "R$ 130".
+   */
+  const escolhido = limpar(roteiro.valor);
+  const achado = escolhido
+    ? { numero: escolhido, antes: '', depois: '' }
+    // sem valor escolhido: procura-se no título (escrito para o olho) e depois na abertura
+    : (acharNumero(titulo) || acharNumero(gancho));
 
   const conta = (t) => aparar(t).split(/\s+/).filter(Boolean).length;
 

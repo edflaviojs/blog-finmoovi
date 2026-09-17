@@ -445,6 +445,19 @@ export function montarRoteiro(n, situacao, gancho, { jaPublicados = 0 } = {}) {
     term: situacao.titulo,
     category: 'vida',
     keyword: situacao.chave,
+    /**
+     * ♦ 17/09/2026 — O VALOR VAI NO ROTEIRO, e é a CAPA que o vem cá buscar.
+     *
+     * 🔴 **MEDIDO:** `capa-texto.js` desenha três linhas — assunto, NÚMERO EM GRANDE,
+     * consequência — e tem um plano B para quando não encontra número ("o título sobe
+     * para o lugar dele, para a capa não ficar oca"). Varridas as capas deste formato,
+     * **81 em 81 caíram no plano B.** O plano A nunca correu uma única vez, porque o
+     * número era procurado no `term` e o `term` deste formato nunca teve nenhum.
+     *
+     * É a mesma raiz do vazio do segundo 6, a sair pela outra ponta: sem número no
+     * roteiro, nem a fala nem a capa tinham o que mostrar.
+     */
+    valor: situacao.valor,
     situacao: situacao.id,
     gancho: gancho.id,
     ganchoFamilia: gancho.familia,

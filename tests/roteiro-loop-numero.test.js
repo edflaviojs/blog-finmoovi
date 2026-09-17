@@ -20,8 +20,9 @@
  */
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { validarLoop, regexDoValor, numeroNaoAutorizado } from '../src/scripts/youtube/roteiro-loop.js';
+import { validarLoop, regexDoValor, numeroNaoAutorizado, montarRoteiro } from '../src/scripts/youtube/roteiro-loop.js';
 import { SITUACOES, GANCHOS } from '../src/scripts/youtube/temas-vida.js';
+import { textoDaCapa } from '../src/scripts/youtube/lib/capa-texto.js';
 
 const situacao = SITUACOES.find((s) => s.id === 'gas-acabou');       // valor: R$ 130
 const gancho = GANCHOS.find((g) => g.id === 'nunca-faca');           // assinatura: /nunca fa[çc]a/i
@@ -147,4 +148,48 @@ test('o número conta as palavras que a voz diz, não as que estão escritas', (
   const noPapel = n.falas.join(' ').trim().split(/\s+/).length;
   assert.ok(v.palavras > noPapel,
     `a contagem (${v.palavras}) devia ser MAIOR que a do papel (${noPapel}) — senão o vídeo sai mais longo do que os 16s`);
+});
+
+// ─── a CAPA, que vinha oca 81 vezes em 81 ─────────────────────────────────────
+
+/**
+ * 🔴 **MEDIDO a 17/09:** `capa-texto.js` desenha assunto / NÚMERO EM GRANDE / consequência,
+ * e tem um plano B para quando não acha número. Nas 81 capas do formato de 16s, **81
+ * caíram no plano B** — o `term` deste formato é o título da situação e nunca teve
+ * algarismo nenhum. A capa do Reel no Instagram saía sempre sem o número.
+ */
+test('o roteiro leva o valor consigo — é assim que a capa lhe chega', () => {
+  const r = montarRoteiro(bom(), situacao, gancho);
+  assert.equal(r.valor, situacao.valor, 'sem isto a capa não tem onde ir buscar o número');
+});
+
+test('a capa do formato de 16s deixa de sair oca', () => {
+  const r = montarRoteiro(bom(), situacao, gancho);
+  const capa = textoDaCapa(r);
+  assert.equal(capa.numero, 'R$ 130', `o número gigante voltou a faltar: "${capa.numero}"`);
+  assert.ok(capa.remate && capa.remate.length > 3, 'a capa ficou sem a linha de baixo');
+  assert.equal(capa.tema, 'GÁS');
+});
+
+test('as 40 situações dão uma capa com número — nenhuma volta ao plano B', () => {
+  for (const s of SITUACOES) {
+    const capa = textoDaCapa({ term: s.titulo, keyword: s.chave, category: 'vida', valor: s.valor });
+    assert.ok(capa.numero, `${s.id}: capa sem número`);
+    assert.ok(capa.remate, `${s.id}: capa sem a linha de baixo`);
+  }
+});
+
+test('CONTROLO: sem `valor`, a capa continua a funcionar como sempre funcionou', () => {
+  // É o caso dos OUTROS formatos (o de 50s), que extraem o número da própria frase.
+  // Se este caso partir, parti 30 capas que estavam certas para consertar 81 erradas.
+  const antigo = { term: 'A inflação te rouba R$ 2 mil por ano', keyword: 'inflação', category: 'basico' };
+  const capa = textoDaCapa(antigo);
+  assert.equal(capa.numero, 'R$ 2 MIL');
+  assert.match(capa.remate, /por ano/);
+});
+
+test('CONTROLO: sem valor E sem número no texto, o plano B antigo continua de pé', () => {
+  const capa = textoDaCapa({ term: 'Como organizar as contas', keyword: 'contas', category: 'controle' });
+  assert.equal(capa.numero, '');
+  assert.equal(capa.remate, 'Como organizar as contas', 'a capa devia ficar com o título, não oca');
 });
