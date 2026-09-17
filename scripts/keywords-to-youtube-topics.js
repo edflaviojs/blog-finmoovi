@@ -21,13 +21,34 @@ const QUEUE_PATH = join(ROOT, '.github', 'data', 'keyword-queue.json');
 const TOPICS_PATH = join(ROOT, '.github', 'data', 'youtube-topics.json');
 const TRENDS_PATH = join(ROOT, '.github', 'data', 'youtube-trends.json');
 const PUBLISHED_PATH = join(ROOT, '.github', 'data', 'youtube-published.json');
-// Cap por execucao. DECISAO EDITORIAL do dono (27/07): 3, e nao os 8 do plano
-// original. Motivo: o cron consome ~7 temas/semana e o pick-next-short SEMPRE
-// prefere editorial sobre glossario (so cai no glossario quando a fila zera).
-// Com 8 virais/semana a fila nunca esvaziaria e o glossario nunca mais viraria
-// video. Com 3, as duas fontes convivem: o viral traz alcance, o glossario traz
-// o lastro de SEO e o vinculo com o blog. Mexer aqui muda o PERFIL do canal.
-const VIRAL_MAX_PER_RUN = 3;
+/**
+ * 🔴 DESLIGADO A 17/09/2026 — ORDEM DO DONO, COM O NUMERO NA MAO.
+ *
+ * O comentario que estava aqui avisava: *"mexer aqui muda o PERFIL do canal"*. Mudou —
+ * e para pior. MEDIDO nos videos ja publicados:
+ *
+ *   | de onde veio o tema            |  n | mediana views | retencao |
+ *   | explica um conceito (editorial)| 22 |             6 |   51%    |
+ *   | responde a uma busca (keyword) | 20 |            10 |   17%    |
+ *   | COPIA UM VIRAL                 | 16 |             5 |   11%    |
+ *
+ * 11% e o PIOR resultado de qualquer coisa que este canal produz, em qualquer formato
+ * (o Short de 16s retem 39%). E nao era uma experiencia parada: o ultimo saiu a 16/09.
+ *
+ * ⚠️ **POR QUE FALHA, e esta escrito no proprio ficheiro:** o filtro ja avisava que *"a
+ * FORMA de prender atencao atravessa idiomas, mas o ASSUNTO que faz um brasileiro parar
+ * o dedo e outro — e o assunto vem colado a forma, por mais que o prompt avise"*. Era
+ * verdade. Exemplo real que chegou a virar video: o espanhol *"Nunca seras rico si
+ * ignoras estas 5 reglas del dinero"* virou *"5 erros financeiros — como mudar seu
+ * mindset para alcancar a riqueza"*. Isso nao e o publico deste canal, que e *"familia
+ * brasileira de classe baixa e media que precisa controlar gastos"*.
+ *
+ * ⚠️ **ZERO, E NAO APAGADO.** Todo o caminho viral fica de pe: a colheita de tendencias,
+ * o filtro da marca, o teto de estrangeiros. Voltar atras e mudar este numero e mais
+ * nada. Apagar o codigo tornaria a decisao irreversivel sem o trabalho todo outra vez —
+ * e ela assenta em 16 videos, que e amostra pequena para ser definitiva.
+ */
+const VIRAL_MAX_PER_RUN = 0;
 
 // Cap das keywords, pela MESMA aritmetica do viral. Havia 39 keywords pending
 // quando isto foi escrito (27/07): sem cap, uma unica execucao despejaria 39
@@ -228,6 +249,16 @@ async function transformViralToTopic(video, generateText) {
 }
 
 async function importViralTopics({ topicsData, existingIds, existingThemeSlugs, generateText, dryRun }) {
+  /**
+   * ⚠️ A GUARDA VEM ANTES DE TUDO, e o sitio e escolhido a dedo. Com o cap a zero o
+   * `slice` ja sairia vazio mais abaixo — mas so depois de ler as tendencias, correr o
+   * filtro da marca e escrever no registo linhas sobre candidatos que nunca vao entrar.
+   * Um robo que diz "3 candidatos aprovados" e depois nao produz nada le-se como avaria.
+   */
+  if (VIRAL_MAX_PER_RUN <= 0) {
+    console.log('Caminho VIRAL desligado (VIRAL_MAX_PER_RUN=0) — retencao medida de 11%, a pior do canal. Ver o comentario no topo deste ficheiro.');
+    return 0;
+  }
   const trends = loadTrends();
   // ♦ 03/08/2026 — OS SHORTS VÊM PRIMEIRO.
   // Estamos a aprender a fazer SHORTS. Um titulo de video longo vende um
