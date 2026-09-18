@@ -2218,5 +2218,65 @@
         "status": 200
       }
     }
+  },
+  {
+    "slug": "como-planejar-as-compras-de-natal-com-antecedencia-e-evitar",
+    "title": "Como planejar as compras de Natal com antecedência e evitar o aperto no fim de 2026",
+    "url": "https://blog.finmoovi.com/posts/como-planejar-as-compras-de-natal-com-antecedencia-e-evitar",
+    "submittedAt": "2026-09-18T17:58:09.819Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1858709218
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "domine-seus-gastos-e-tenha-paz-financeira-real-em-2026",
+    "title": "Domine seus gastos e tenha paz financeira real em 2026",
+    "url": "https://blog.finmoovi.com/posts/domine-seus-gastos-e-tenha-paz-financeira-real-em-2026",
+    "submittedAt": "2026-09-18T17:58:10.725Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1858709221
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "entenda-o-que-e-saldo-em-aberto-e-como-evita-lo",
+    "title": "Entenda o que é saldo em aberto e como evitá‑lo",
+    "url": "https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo",
+    "submittedAt": "2026-09-18T17:58:11.572Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1858709227
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
   }
 ]
