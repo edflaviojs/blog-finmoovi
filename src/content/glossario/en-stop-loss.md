@@ -4,6 +4,7 @@ definition: "What stop loss is and how it shows up in your everyday money — ex
 title: "stop loss - Financial Glossary"
 description: "What stop loss is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/stop-loss.webp"
+imageAlt: "A glass jar filled with coins, surrounded by stacks of gold coins and a plant."
 category: "basico"
 tags: ["stop loss", "glossary", "finance"]
 author: "FinMoovi"

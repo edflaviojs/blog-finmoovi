@@ -4,6 +4,7 @@ definition: "O que é stop loss e como isso aparece no seu dia a dia — explica
 title: "stop loss - Glossário Financeiro"
 description: "O que é stop loss e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/stop-loss.webp"
+imageAlt: "Um gráfico de linha em amarelo sobre um fundo de cor violeta, com moedas e um vaso."
 category: "basico"
 tags: ["stop loss", "glossário", "finanças"]
 author: "FinMoovi"
