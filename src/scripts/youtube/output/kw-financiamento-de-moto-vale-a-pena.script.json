@@ -1,0 +1,209 @@
+{
+  "slug": "kw-financiamento-de-moto-vale-a-pena",
+  "term": "Financiamento de Moto: Vale a Pena?",
+  "category": "mindset",
+  "keyword": "Moto",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você acha que pode *pagar uma moto de quinze mil reais*?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "mochila-pedras",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você acha que pode pagar uma moto de quinze mil reais? Pois a parcela pode ser um peso maior do que você imagina.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "acha",
+          "visual": {
+            "type": "statement",
+            "text": "Pagar moto?"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "moto",
+          "visual": {
+            "type": "statement",
+            "text": "Quinze mil reais"
+          }
+        },
+        {
+          "anchor": "parcela",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          },
+          "sfx": "coin"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Sabe como é, mês vem, você paga o aluguel, a conta de luz, e ainda quer comprar aquela moto que você tanto deseja.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "você",
+          "visual": {
+            "type": "statement",
+            "text": "Aluguel e luz"
+          }
+        },
+        {
+          "anchor": "ainda",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          }
+        },
+        {
+          "anchor": "moto",
+          "visual": {
+            "type": "statement",
+            "text": "Desejo da moto"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Mas desejar a moto é uma coisa, e pagar setecentos reais por vinte e quatro vezes é outra, porque no final você vai pagar mais de dezesseis mil reais.",
+      "durationSec": 11.2,
+      "shots": [
+        {
+          "anchor": "pagar",
+          "visual": {
+            "type": "number",
+            "text": "R$ 700"
+          }
+        },
+        {
+          "anchor": "vezes",
+          "visual": {
+            "type": "statement",
+            "text": "24 parcelas"
+          }
+        },
+        {
+          "anchor": "mais",
+          "visual": {
+            "type": "number",
+            "text": "R$ 16.000"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei os números no FinMoovi e ele me mostrou que o total sai por dezesseis mil e oitocentos reais.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "números",
+          "visual": {
+            "type": "statement",
+            "text": "Veja o cálculo"
+          }
+        },
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "calculadora",
+            "note": "Resultado"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "oitocentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 16.800"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver quanto vai sair a sua? Procura o FinMoovi, são sete dias grátis.",
+      "durationSec": 5.4,
+      "shots": [
+        {
+          "anchor": "quanto",
+          "visual": {
+            "type": "statement",
+            "text": "Calcule agora"
+          }
+        },
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "icon",
+            "icon": "target"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Não, financiar quinze mil reais pesa no bolso, pense antes de fechar. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "financiar",
+          "visual": {
+            "type": "statement",
+            "text": "Cuidado"
+          }
+        },
+        {
+          "anchor": "bolso",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          },
+          "sfx": "alert"
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Seu dinheiro, sua vida"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Calcule seu financiamento agora",
+    "target": "app"
+  },
+  "totalDurationSec": 49.2
+}
