@@ -47,7 +47,7 @@ E o melhor: o [app FinMoovi](/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu
 1. Abra o app e toque em “[Captura Inteligente](/posts/como-garantir-financiamento-para-seus-projetos-sem-dor-de)”.
 2. Fotografe a última conta de água ou dicte “Conta de água”.
 3. Confirme a categoria sugerida (por exemplo, “Despesas fixas – Casa”).
-4. Veja o saldo restante para a semana e ajuste o limite de compras, se necessário.
+4. Veja o saldo restante para a semana e ajuste o limite de [compras](/posts/como-planejar-as-compras-de-natal-com-antecedencia-e-evitar), se necessário.
 
 Pronto! Você já deu o primeiro passo para manter o orçamento sob controle até a próxima sexta‑feira.
 

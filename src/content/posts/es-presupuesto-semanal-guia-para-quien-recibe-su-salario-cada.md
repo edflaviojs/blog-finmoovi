@@ -45,7 +45,7 @@ Y lo mejor: la app **FinMoovi** hace este ajuste de forma natural. Basta con tom
 1. Abre la app y toca **“[Captura Inteligente](/es/posts/es-como-conseguir-financiacion-para-tus-proyectos-sin)”**.  
 2. Fotografía la última factura de agua o dicta “Factura de agua”.  
 3. Confirma la categoría sugerida (por ejemplo, **“Gastos fijos – Hogar”**).  
-4. Observa el saldo restante para la semana y ajusta el límite de compras, si lo consideras necesario.  
+4. Observa el saldo restante para la semana y ajusta el límite de [compras](/es/posts/es-como-planificar-las-compras-de-navidad-con-antelacion-y), si lo consideras necesario.  
 
 ¡Listo! Ya diste el primer paso para mantener el presupuesto bajo control hasta el próximo viernes.
 

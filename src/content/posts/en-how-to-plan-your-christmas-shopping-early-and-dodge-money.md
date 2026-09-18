@@ -18,14 +18,14 @@ seo:
   keywords: ["Christmas","shopping planning","FinMoovi","visual budgeting","early purchases","expense control","gift list","holiday shopping"]
 ---
 
-Imagine this: it’s Monday, you’ve just opened your inbox and already have three relatives asking what you’re getting them for Christmas. At the same time, your credit‑card statement flashes red, reminding you that the monthly bill is still unpaid. Your head starts spinning, your heart races, and before you even think about lights and feasts, anxiety kicks in – the holiday season might end in the red.
+Imagine this: it’s Monday, you’ve just opened your inbox and already have three relatives asking what you’re getting them for Christmas. At the same time, your [credit](/en/glossario/en-credit)‑card statement flashes red, reminding you that the monthly bill is still unpaid. Your head starts spinning, your heart races, and before you even think about lights and feasts, anxiety kicks in – the holiday season might end in the red.
 
 That’s the exact pressure many people feel when they try to juggle end‑of‑year shopping with everyday bills. The solution? Turn the chaos into a simple, visual, and most importantly **practical** plan. The best part: you can start right now, in five minutes, using FinMoovi.
 
 ### 1. Set a spending “ceiling” before you buy anything  
 Before you sprint to the mall (or the web), decide how much you’re willing to spend in total. You don’t need a precise number; think in terms of “about two months’ rent” or “the equivalent of a modest salary”. This amount becomes your **ceiling**.
 
-1. **Open FinMoovi** → go to *Monthly Planning* → create a goal called “Christmas 2026” and set the ceiling you just defined.  
+1. **Open FinMoovi** → go to *Monthly [Planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips)* → create a goal called “Christmas 2026” and set the ceiling you just defined.  
 2. **Turn on the limit alert**: the app will ping you when the sum of the items you’ve added gets close to the ceiling.
 
 ### 2. Build a master list of gifts and events  
@@ -36,7 +36,7 @@ Most holiday expenses fall into two buckets: **gifts** and **events** (dinner, d
 | Gifts    | Toy, book, clothing | “A daily coffee” |
 | Events   | Dinner, tree, lights | “One month’s rent” |
 
-Use the app’s **Shopping Mode**: snap a photo of the list you already wrote on paper or type it in directly. The **smart capture** feature recognises each item, classifies it automatically, and adds up the total in real time. In under five minutes you’ll see the whole list on screen, already compared to your ceiling.
+Use the app’s **Shopping Mode**: snap a photo of the list you already wrote on paper or type it in directly. The **[smart capture](/en/posts/en-how-freelancers-can-organize-their-finances-in-2026)** feature recognises each item, classifies it automatically, and adds up the total in real time. In under five minutes you’ll see the whole list on screen, already compared to your ceiling.
 
 ### 3. Prioritise and trim – the 3 C technique  
 With the list ready, apply the 3 C rule:
@@ -48,7 +48,7 @@ With the list ready, apply the 3 C rule:
 Remove or downgrade items that don’t pass the 3 C test and watch the total drop instantly in FinMoovi. Every tweak triggers a new automatic calculation, making the impact on your ceiling crystal‑clear.
 
 ### 4. Spread the spending over the months  
-A common mistake is trying to buy everything at once, creating a spending spike that throws your cash flow off balance. FinMoovi lets you **stage** each item across the next two or three months:
+A common mistake is trying to buy everything at once, creating a spending spike that throws your [cash flow](/en/glossario/en-cash-flow) off balance. FinMoovi lets you **stage** each item across the next two or three months:
 
 1. Select the “watch” gift and choose “split over 2 months”.  
 2. The app creates two smaller entries in your cash‑flow view, keeping each month’s balance healthy.
@@ -58,7 +58,7 @@ That way you dodge the infamous “Christmas effect” of ending the year with n
 ### 5. Set promotion and payment‑date reminders  
 Retailers usually roll out discounts on specific dates (Black Friday, Cyber Monday, pre‑Christmas sales). Configure **promotion alerts** in FinMoovi:
 
-- **Black Friday reminder**: 30 days before, get a notification to review the list and flag items that can wait.  
+- **Black Friday [reminder](/en/posts/en-how-to-never-miss-a-bill-payment-deadline-simple-5-minute)**: 30 days before, get a notification to review the list and flag items that can wait.  
 - **Bill‑due alert**: 3 days before the credit‑card cut‑off, the app reminds you to pay the statement and free up credit for your planned purchases.
 
 These nudges keep you from last‑minute, impulse buys that tend to be pricier.
@@ -66,7 +66,7 @@ These nudges keep you from last‑minute, impulse buys that tend to be pricier.
 ### 6. Curb impulse at checkout  
 When you’re at the register or on the checkout page, FinMoovi shows a **quick summary**: “You’re already at 70 % of your Christmas ceiling.” That tiny psychological cue reduces the urge to add unnecessary items.
 
-The **list + real‑time total** feature also displays the running total as you scan each product. If you breach the limit, the app suggests cheaper alternatives or prompts you to drop lower‑priority items.
+The **list + real‑time total** feature also displays the running total as you scan each product. If you breach the limit, the app suggests cheaper [alternatives](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your) or prompts you to drop lower‑priority items.
 
 ### 7. Build an “emergency box” for surprises  
 Even with a solid plan, unexpected costs pop up: a gift that needs to be exchanged, a sudden price jump for the dinner, or a medical expense. Inside FinMoovi, create an **emergency reserve goal** equal to “one month of fixed expenses”.
@@ -87,7 +87,7 @@ This habit gives you a **clear view** of progress and eliminates last‑minute s
 If multiple family members are buying gifts for the same person, use FinMoovi’s **collaboration** feature. Send the list via link or message; each person can tick off what they’ve purchased, avoiding duplicate gifts and helping everyone stay within the collective ceiling.
 
 ### 10. Celebrate the win – the “first $100” saved  
-When the shopping period ends, compare the actual spend to your original ceiling. If you stayed below, celebrate! Log the achievement as “First $100 saved” and use that momentum for future goals, like a vacation or an investment.
+When the shopping period ends, compare the actual spend to your original ceiling. If you stayed below, celebrate! Log the achievement as “First $100 saved” and use that momentum for future [goals](/en/posts/en-why-my-savings-goals-aren-t-moving-forward), like a vacation or an [investment](/en/glossario/en-investment).
 
 ---
 
