@@ -4,6 +4,7 @@ definition: "What trading is and how it shows up in your everyday money — expl
 title: "trading - Financial Glossary"
 description: "What trading is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/trading.webp"
+imageAlt: "A dark blue background features a collection of gold coins, a clock, and a glass jar with a plant."
 category: "basico"
 tags: ["trading", "glossary", "finance"]
 author: "FinMoovi"

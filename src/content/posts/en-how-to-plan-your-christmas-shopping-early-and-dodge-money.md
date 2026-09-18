@@ -3,6 +3,7 @@ title: "How to Plan Your Christmas Shopping Early and Dodge Money Stress at the 
 description: "Learn in under 5 minutes how to organize gifts, parties and holiday expenses without surprise bills."
 tickerHeadline: "The trick that saves your Christmas"
 image: "/images/posts/como-planejar-as-compras-de-natal-com-antecedencia-e-evitar.webp"
+imageAlt: "A laptop on a desk with a colorful screen, a cup, and a plant in the background."
 category: "orcamento"
 locale: "en"
 tags: ["Christmas","shopping planning","FinMoovi","visual budgeting","early purchases","expense control","gift list","holiday shopping"]

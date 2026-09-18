@@ -4,6 +4,7 @@ definition: "Qué es trading y cómo aparece en tu día a día — explicado de 
 title: "trading - Glosario Financiero"
 description: "Qué es trading y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/trading.webp"
+imageAlt: "Una imagen de un reloj, monedas, una planta y otros objetos de ahorro en un fondo oscuro."
 category: "basico"
 tags: ["trading", "glosario", "finanzas"]
 author: "FinMoovi"

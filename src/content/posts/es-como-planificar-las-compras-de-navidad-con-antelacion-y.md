@@ -3,6 +3,7 @@ title: "Cómo planificar las compras de Navidad con antelación y evitar el apur
 description: "Descubre en menos de 5 min cómo organizar regalos, fiestas y gastos de Navidad sin sorpresas en tu bolsillo."
 tickerHeadline: "El truco que salva tu Navidad"
 image: "/images/posts/como-planejar-as-compras-de-natal-com-antecedencia-e-evitar.webp"
+imageAlt: "Una computadora portátil Mac, una taza de café, un escritorio y una ventana con luz natural."
 category: "orcamento"
 locale: "es"
 tags: ["Navidad","planificación de compras","FinMoovi","presupuesto visual","compras anticipadas","control de gastos","lista de regalos","compras"]

@@ -3,6 +3,7 @@ title: "Master Your Spending and Achieve Real Financial Peace in 2026"
 description: "Learn practical ways to control expenses with smart capture and monthly goals. Turn chaos into calm with FinMoovi."
 tickerHeadline: "The trick that simplifies your spending"
 image: "/images/posts/domine-seus-gastos-e-tenha-paz-financeira-real-em-2026.webp"
+imageAlt: "Laptop on desk with coffee mugs, colorful screen displaying financial data."
 category: "dicas"
 locale: "en"
 tags: ["expense control","personal finance","budgeting","money"]

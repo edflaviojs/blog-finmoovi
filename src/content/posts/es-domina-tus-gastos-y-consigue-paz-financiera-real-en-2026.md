@@ -3,6 +3,7 @@ title: "Domina tus gastos y consigue paz financiera real en 2026"
 description: "Descubre cómo controlar tus gastos de forma práctica, usando captura inteligente y metas mensuales. Transforma el caos en tranquilidad con FinMoovi."
 tickerHeadline: "El truco que simplifica tus gastos"
 image: "/images/posts/domine-seus-gastos-e-tenha-paz-financeira-real-em-2026.webp"
+imageAlt: "Una computadora portátil con pantalla colorida, dos tazas y un escritorio en un ambiente de oficina."
 category: "dicas"
 locale: "es"
 tags: ["control de gastos","finanzas personales","economía","dinero"]

@@ -3,6 +3,7 @@ title: "Como planejar as compras de Natal com antecedência e evitar o aperto no
 description: "Descubra, em menos de 5 min, como organizar presentes, festas e despesas de Natal sem surpresas no bolso."
 tickerHeadline: "O truque que salva seu Natal"
 image: "/images/posts/como-planejar-as-compras-de-natal-com-antecedencia-e-evitar.webp"
+imageAlt: "Computador, mesa, cadeira, planta, pote de canetas, copo, teclado, mouse, tela com fundo de cores vibrantes."
 category: "orcamento"
 locale: "pt"
 tags: ["Natal","planejamento de compras","FinMoovi","orçamento visual","compras antecipadas","controle de gastos","lista de presentes","natal","compras"]
