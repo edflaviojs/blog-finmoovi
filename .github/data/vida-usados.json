@@ -496,5 +496,11 @@
     "gancho": "e-serio-que",
     "turno": "manha",
     "em": "2026-09-18T09:06:59.714Z"
+  },
+  {
+    "situacao": "conta-de-luz",
+    "gancho": "e-serio-que",
+    "turno": "noite",
+    "em": "2026-09-18T09:10:28.778Z"
   }
 ]
