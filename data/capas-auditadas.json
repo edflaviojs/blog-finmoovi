@@ -4909,6 +4909,21 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-09-17"
+    },
+    "stop-loss-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-18"
+    },
+    "stop-loss-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-18"
+    },
+    "stop-loss.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-18"
     }
   },
   "corrigidas": {
@@ -5553,6 +5568,6 @@
       "motivo": "tem texto escrito (\"pollination.\")"
     }
   },
-  "totalAcervo": 982,
-  "ultimaCorrida": "2026-09-17"
+  "totalAcervo": 985,
+  "ultimaCorrida": "2026-09-18"
 }
