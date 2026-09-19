@@ -60,9 +60,15 @@
     ]
   },
   "divida-cartao-organize-suas": {
-    "estado": "reservado",
+    "videoId": "Caus4r5_V3I",
+    "uploadedAt": "2026-09-19T07:47:12.344Z",
     "publishAt": "2026-09-20T22:00:00.000Z",
-    "reservadoEm": "2026-09-19T07:21:11.289Z",
-    "corrida": "35428390098"
+    "titulo": "Dívida do cartão: organize suas contas sem vender nada",
+    "capitulos": 6,
+    "legendas": [
+      "pt",
+      "en",
+      "es"
+    ]
   }
 }

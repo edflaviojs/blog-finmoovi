@@ -147,7 +147,7 @@
         "sair do vermelho",
         "fatura do cartão"
       ],
-      "estado": "proposto",
+      "estado": "publicado",
       "viralRef": {
         "videoId": "qzgjvDTBykA",
         "title": "JOVEM CAI NO SERASA e dá dicas de EDUCAÇÃO FINANCEIRA | CORTES do CASTRINHO",
@@ -157,7 +157,9 @@
           "uma palavra em maiúsculas a marcar o tom"
         ]
       },
-      "propostoEm": "2026-09-11T08:25:27.286Z"
+      "propostoEm": "2026-09-11T08:25:27.286Z",
+      "publicadoEm": "2026-09-19T07:47:12.344Z",
+      "videoId": "Caus4r5_V3I"
     }
   ]
 }
