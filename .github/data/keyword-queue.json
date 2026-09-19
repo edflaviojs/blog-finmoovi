@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-18T14:40:41.805Z",
-  "sourceCursor": 1,
+  "updatedAt": "2026-09-19T12:46:56.600Z",
+  "sourceCursor": 2,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -2037,8 +2037,10 @@
       "category": null,
       "priority": 2,
       "source": "gsc-gap",
-      "status": "pending",
-      "addedAt": "2026-09-14T13:27:29.761Z"
+      "status": "used",
+      "addedAt": "2026-09-14T13:27:29.761Z",
+      "usedAt": "2026-09-19T12:46:56.600Z",
+      "usedBy": "gerar-dicas-financeiras"
     },
     {
       "keyword": "recurring fee definition",
