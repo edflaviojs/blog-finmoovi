@@ -76,6 +76,21 @@
       "promessa": "Vou te mostrar como encontrei seiscentos reais até dezembro sem cortar o café, o lazer ou criar renda extra",
       "em": "2026-09-12",
       "molde": "antes-depois"
+    },
+    {
+      "slug": "divida-cartao-organize-suas",
+      "cenarios": [
+        "a fatura do cartão",
+        "a conta de luz",
+        "as assinaturas esquecidas"
+      ],
+      "fio": "ralo",
+      "elenco": "um avô e um neto, duas gerações a olhar para o mesmo problema",
+      "funcaoDoApp": "multi-moeda",
+      "cena": "a máquina de lavar que parou no meio da semana",
+      "promessa": "Vou te mostrar como achar as assinaturas que você paga sem usar e cortar as maiores ainda hoje",
+      "em": "2026-09-19",
+      "molde": "o-cerco"
     }
   ]
 }
