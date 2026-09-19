@@ -380,72 +380,73 @@
       "Together.ai|imagem": 1,
       "kie.ai|visao": 0,
       "Groq|visao": 0
+    },
+    "2026-09-19": {
+      "groq|texto": 172919,
+      "Cloudflare Workers AI|visao": 46,
+      "together|voz": 1930,
+      "cloudflare|texto": 180540,
+      "Cloudflare Workers AI|imagem": 19,
+      "Together.ai|imagem": 1,
+      "manus|imagem": 0,
+      "cerebras|texto": 0,
+      "Groq|visao": 0
     }
   },
   "relatorio": {
-    "dia": "2026-09-18",
+    "dia": "2026-09-19",
     "horas": 24,
-    "geradoEm": "2026-09-18T09:38:43.994Z",
+    "geradoEm": "2026-09-19T09:25:34.200Z",
     "linhas": [
       {
-        "fornecedor": "cerebras",
+        "fornecedor": "groq",
         "tipo": "texto",
-        "chamadas": 23,
-        "recusas": 4,
-        "quanto": 46312,
+        "chamadas": 125,
+        "recusas": 24,
+        "quanto": 172919,
         "unidade": "fichas",
         "custo": null,
-        "salto": 0.7541179617804762
+        "salto": 50.78384728340676
       },
       {
         "fornecedor": "Cloudflare Workers AI",
         "tipo": "visao",
-        "chamadas": 21,
-        "recusas": 0,
-        "quanto": 21,
+        "chamadas": 46,
+        "recusas": 1,
+        "quanto": 46,
         "unidade": "unidades",
         "custo": null,
-        "salto": 0.44545454545454544
-      },
-      {
-        "fornecedor": "groq",
-        "tipo": "texto",
-        "chamadas": 16,
-        "recusas": 1,
-        "quanto": 5558,
-        "unidade": "fichas",
-        "custo": null,
-        "salto": 2.0682212850409325
+        "salto": 1.110344827586207
       },
       {
         "fornecedor": "together",
         "tipo": "voz",
-        "chamadas": 14,
-        "recusas": 0,
-        "quanto": 469,
+        "chamadas": 46,
+        "recusas": 3,
+        "quanto": 1930,
         "unidade": "unidades",
         "custo": null,
-        "salto": 0.5341685649202733
-      },
-      {
-        "fornecedor": "Cloudflare Workers AI",
-        "tipo": "imagem",
-        "chamadas": 11,
-        "recusas": 0,
-        "quanto": 11,
-        "unidade": "unidades",
-        "custo": null,
-        "salto": 0.5968992248062016
+        "salto": 2.202837110712539
       },
       {
         "fornecedor": "cloudflare",
         "tipo": "texto",
-        "chamadas": 8,
-        "recusas": 0,
-        "quanto": 30272,
+        "chamadas": 35,
+        "recusas": 11,
+        "quanto": 180540,
         "unidade": "fichas",
         "custo": null,
-        "salto": 6.273014557322696
+        "salto": 18.20877458396369
+      },
+      {
+        "fornecedor": "Cloudflare Workers AI",
+        "tipo": "imagem",
+        "chamadas": 19,
+        "recusas": 0,
+        "quanto": 19,
+        "unidade": "unidades",
+        "custo": null,
+        "salto": 1.08130081300813
       },
       {
         "fornecedor": "Together.ai",
@@ -458,10 +459,20 @@
         "salto": null
       },
       {
-        "fornecedor": "kie.ai",
-        "tipo": "visao",
+        "fornecedor": "manus",
+        "tipo": "imagem",
+        "chamadas": 1,
+        "recusas": 0,
+        "quanto": 0,
+        "unidade": "unidades",
+        "custo": null,
+        "salto": null
+      },
+      {
+        "fornecedor": "cerebras",
+        "tipo": "texto",
         "chamadas": 0,
-        "recusas": 2,
+        "recusas": 21,
         "quanto": 0,
         "unidade": "unidades",
         "custo": null,
@@ -471,7 +482,7 @@
         "fornecedor": "Groq",
         "tipo": "visao",
         "chamadas": 0,
-        "recusas": 3,
+        "recusas": 15,
         "quanto": 0,
         "unidade": "unidades",
         "custo": null,
@@ -479,19 +490,20 @@
       }
     ],
     "alarmes": [
+      "groq",
       "cloudflare"
     ],
     "custoTotal": 0,
     "semPreco": [
-      "cerebras",
-      "Cloudflare Workers AI",
       "groq",
+      "Cloudflare Workers AI",
       "together",
       "cloudflare",
       "Together.ai",
-      "kie.ai",
+      "manus",
+      "cerebras",
       "Groq"
     ]
   },
-  "atualizadoEm": "2026-09-18T09:38:43.994Z"
+  "atualizadoEm": "2026-09-19T09:25:34.200Z"
 }
