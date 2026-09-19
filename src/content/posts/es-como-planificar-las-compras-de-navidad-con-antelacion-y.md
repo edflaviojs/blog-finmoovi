@@ -1,22 +1,45 @@
 ---
-title: "Cómo planificar las compras de Navidad con antelación y evitar el apuro a finales de 2026"
-description: "Descubre en menos de 5 min cómo organizar regalos, fiestas y gastos de Navidad sin sorpresas en tu bolsillo."
-tickerHeadline: "El truco que salva tu Navidad"
-image: "/images/posts/como-planejar-as-compras-de-natal-com-antecedencia-e-evitar.webp"
-imageAlt: "Una computadora portátil Mac, una taza de café, un escritorio y una ventana con luz natural."
-category: "orcamento"
-locale: "es"
-tags: ["Navidad","planificación de compras","FinMoovi","presupuesto visual","compras anticipadas","control de gastos","lista de regalos","compras"]
-author: "FinMoovi"
-publishedAt: 2026-09-18
+title: >-
+  Cómo planificar las compras de Navidad con antelación y evitar el apuro a
+  finales de 2026
+description: >-
+  Descubre en menos de 5 min cómo organizar regalos, fiestas y gastos de Navidad
+  sin sorpresas en tu bolsillo.
+tickerHeadline: El truco que salva tu Navidad
+image: /images/posts/como-planejar-as-compras-de-natal-com-antecedencia-e-evitar.webp
+category: orcamento
+locale: es
+tags:
+  - Navidad
+  - planificación de compras
+  - FinMoovi
+  - presupuesto visual
+  - compras anticipadas
+  - control de gastos
+  - lista de regalos
+  - compras
+author: FinMoovi
+publishedAt: 2026-09-18T00:00:00.000Z
 readingTime: 6
 featured: false
-translationKey: "como-planejar-as-compras-de-natal-com-antecedencia-e-evitar"
-scope: "universal"
+translationKey: como-planejar-as-compras-de-natal-com-antecedencia-e-evitar
+scope: universal
 seo:
-  metaTitle: "Cómo planificar las compras de Navidad con antelación y evitar el apuro a finales de 2026"
-  metaDescription: "Descubre en menos de 5 min cómo organizar regalos, fiestas y gastos de Navidad sin sorpresas en tu bolsillo."
-  keywords: ["Navidad","planificación de compras","FinMoovi","presupuesto visual","compras anticipadas","control de gastos","lista de regalos","compras"]
+  metaTitle: >-
+    Cómo planificar las compras de Navidad con antelación y evitar el apuro a
+    finales de 2026
+  metaDescription: >-
+    Descubre en menos de 5 min cómo organizar regalos, fiestas y gastos de
+    Navidad sin sorpresas en tu bolsillo.
+  keywords:
+    - Navidad
+    - planificación de compras
+    - FinMoovi
+    - presupuesto visual
+    - compras anticipadas
+    - control de gastos
+    - lista de regalos
+    - compras
 ---
 
 Imagina la escena: es lunes, acabas de abrir el buzón y ya tienes tres mensajes de familiares preguntando qué vas a recibir de regalo. Al mismo tiempo, el extracto de la tarjeta de [crédito](/es/glossario/es-credito) parpadea en rojo, recordándote que la factura del mes aún no está pagada. La cabeza empieza a dar vueltas, el corazón se acelera y, antes de pensar en luces y cenas, ya sientes la ansiedad de que la Navidad termine en números rojos.

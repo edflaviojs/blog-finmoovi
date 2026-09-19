@@ -4924,6 +4924,41 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-09-18"
+    },
+    "como-planejar-as-compras-de-natal-com-antecedencia-e-evitar.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"Apple\")",
+      "em": "2026-09-19"
+    },
+    "domine-seus-gastos-e-tenha-paz-financeira-real-em-2026-2.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"Invest in your future.\")",
+      "em": "2026-09-19"
+    },
+    "domine-seus-gastos-e-tenha-paz-financeira-real-em-2026-4.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-19"
+    },
+    "domine-seus-gastos-e-tenha-paz-financeira-real-em-2026-6.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-19"
+    },
+    "trading-inline-1.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"Smile\")",
+      "em": "2026-09-19"
+    },
+    "trading-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-19"
+    },
+    "trading.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-19"
     }
   },
   "corrigidas": {
@@ -5566,8 +5601,20 @@
     "planner-financeiro-como-montar-e-usar.webp": {
       "em": "2026-09-16",
       "motivo": "tem texto escrito (\"pollination.\")"
+    },
+    "como-planejar-as-compras-de-natal-com-antecedencia-e-evitar.webp": {
+      "em": "2026-09-19",
+      "motivo": "tem texto escrito (\"Apple\")"
+    },
+    "domine-seus-gastos-e-tenha-paz-financeira-real-em-2026-2.webp": {
+      "em": "2026-09-19",
+      "motivo": "tem texto escrito (\"Invest in your future.\")"
+    },
+    "trading-inline-1.webp": {
+      "em": "2026-09-19",
+      "motivo": "tem texto escrito (\"Smile\")"
     }
   },
-  "totalAcervo": 985,
-  "ultimaCorrida": "2026-09-18"
+  "totalAcervo": 993,
+  "ultimaCorrida": "2026-09-19"
 }

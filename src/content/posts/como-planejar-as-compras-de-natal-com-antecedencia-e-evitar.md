@@ -1,22 +1,47 @@
 ---
-title: "Como planejar as compras de Natal com antecedência e evitar o aperto no fim de 2026"
-description: "Descubra, em menos de 5 min, como organizar presentes, festas e despesas de Natal sem surpresas no bolso."
-tickerHeadline: "O truque que salva seu Natal"
-image: "/images/posts/como-planejar-as-compras-de-natal-com-antecedencia-e-evitar.webp"
-imageAlt: "Computador, mesa, cadeira, planta, pote de canetas, copo, teclado, mouse, tela com fundo de cores vibrantes."
-category: "orcamento"
-locale: "pt"
-tags: ["Natal","planejamento de compras","FinMoovi","orçamento visual","compras antecipadas","controle de gastos","lista de presentes","natal","compras"]
-author: "FinMoovi"
-publishedAt: 2026-09-18
+title: >-
+  Como planejar as compras de Natal com antecedência e evitar o aperto no fim de
+  2026
+description: >-
+  Descubra, em menos de 5 min, como organizar presentes, festas e despesas de
+  Natal sem surpresas no bolso.
+tickerHeadline: O truque que salva seu Natal
+image: /images/posts/como-planejar-as-compras-de-natal-com-antecedencia-e-evitar.webp
+category: orcamento
+locale: pt
+tags:
+  - Natal
+  - planejamento de compras
+  - FinMoovi
+  - orçamento visual
+  - compras antecipadas
+  - controle de gastos
+  - lista de presentes
+  - natal
+  - compras
+author: FinMoovi
+publishedAt: 2026-09-18T00:00:00.000Z
 readingTime: 6
 featured: false
-translationKey: "como-planejar-as-compras-de-natal-com-antecedencia-e-evitar"
-scope: "universal"
+translationKey: como-planejar-as-compras-de-natal-com-antecedencia-e-evitar
+scope: universal
 seo:
-  metaTitle: "Como planejar as compras de Natal com antecedência e evitar o aperto no fim de 2026"
-  metaDescription: "Descubra, em menos de 5 min, como organizar presentes, festas e despesas de Natal sem surpresas no bolso."
-  keywords: ["Natal","planejamento de compras","FinMoovi","orçamento visual","compras antecipadas","controle de gastos","lista de presentes","natal","compras"]
+  metaTitle: >-
+    Como planejar as compras de Natal com antecedência e evitar o aperto no fim
+    de 2026
+  metaDescription: >-
+    Descubra, em menos de 5 min, como organizar presentes, festas e despesas de
+    Natal sem surpresas no bolso.
+  keywords:
+    - Natal
+    - planejamento de compras
+    - FinMoovi
+    - orçamento visual
+    - compras antecipadas
+    - controle de gastos
+    - lista de presentes
+    - natal
+    - compras
 ---
 
 Imagine a cena: é segunda‑feira, você acabou de abrir a caixa de entrada e já tem três mensagens de parentes perguntando o que vai ganhar de presente. Ao mesmo tempo, o extrato do cartão de [crédito](/glossario/credito) pisca em vermelho, lembrando que a fatura do mês ainda não foi paga. A cabeça começa a girar, o coração acelera e, antes mesmo de pensar nas luzes e nas ceias, já bate a ansiedade de que o Natal vai acabar no vermelho.
