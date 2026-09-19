@@ -1,0 +1,217 @@
+{
+  "slug": "kw-financiamento-de-r-50-000",
+  "term": "Financiamento de R$ 50.000",
+  "category": "mindset",
+  "keyword": "financiado",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você já viu que um carro de cinquenta mil, financiado, pode sair por *quase sessenta e três mil*?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ratoeira",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você já viu que um carro de cinquenta mil, financiado, pode sair por quase sessenta e três mil? Eu fiz a conta e foi exatamente isso.",
+      "durationSec": 10,
+      "shots": [
+        {
+          "anchor": "carro",
+          "visual": {
+            "type": "statement",
+            "text": "Carro de R$ 50k"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "quase",
+          "visual": {
+            "type": "number",
+            "text": "R$ 63.000"
+          }
+        },
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "icon",
+            "icon": "money"
+          },
+          "sfx": "coin"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu pensava que a parcela fosse só o preço do carro, mas todo mês o salário sumia sem eu perceber.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "pensava",
+          "visual": {
+            "type": "statement",
+            "text": "Pensava que a parcela era só o preço"
+          },
+          "sfx": "typewriter"
+        },
+        {
+          "anchor": "carro",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          }
+        },
+        {
+          "anchor": "sumia",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 1200,
+            "prefix": "R$"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Só percebi isso depois de somar as quarenta e oito parcelas e ver que deu sessenta e dois mil e quatrocentos reais.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "isso",
+          "visual": {
+            "type": "statement",
+            "text": "Depois de somar"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "quarenta",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 48,
+            "prefix": ""
+          }
+        },
+        {
+          "anchor": "dois",
+          "visual": {
+            "type": "number",
+            "text": "R$ 62.400"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu coloquei cinquenta mil e quarenta e oito parcelas no FinMoovi e ele me mostrou sessenta e dois mil e quatrocentos reais.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Cálculo total"
+          }
+        },
+        {
+          "anchor": "dois",
+          "visual": {
+            "type": "number",
+            "text": "R$ 62.400"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "statement",
+            "text": "Veja o total"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Esses números você vê no seu FinMoovi, teste grátis por sete dias.",
+      "durationSec": 4.6,
+      "shots": [
+        {
+          "anchor": "Esses",
+          "visual": {
+            "type": "statement",
+            "text": "Esses números"
+          },
+          "sfx": "alert"
+        },
+        {
+          "anchor": "teste",
+          "visual": {
+            "type": "icon",
+            "icon": "target"
+          }
+        },
+        {
+          "anchor": "dias",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Então, como eu falei, o carro sai por quase sessenta e três mil reais. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "como",
+          "visual": {
+            "type": "statement",
+            "text": "Como eu falei"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "sessenta",
+          "visual": {
+            "type": "number",
+            "text": "R$ 63.000"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "icon",
+            "icon": "money"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Teste grátis por 7 dias",
+    "target": "app"
+  },
+  "totalDurationSec": 47.4
+}
