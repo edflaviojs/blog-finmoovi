@@ -1,0 +1,635 @@
+{
+  "date": "2026-09-18",
+  "counts": {
+    "content": 9,
+    "videos": 3,
+    "pins": 3,
+    "failures": 0,
+    "runs": 49
+  },
+  "failures": [],
+  "content": [
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "en",
+      "slug": "en-trading",
+      "url": "https://blog.finmoovi.com/en/glossario/en-trading",
+      "title": "trading - Financial Glossary",
+      "description": "What trading is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi.",
+      "category": "basico",
+      "publishedAt": "2026-09-18"
+    },
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "es",
+      "slug": "es-trading",
+      "url": "https://blog.finmoovi.com/es/glossario/es-trading",
+      "title": "trading - Glosario Financiero",
+      "description": "Qué es trading y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi.",
+      "category": "basico",
+      "publishedAt": "2026-09-18"
+    },
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "pt",
+      "slug": "trading",
+      "url": "https://blog.finmoovi.com/glossario/trading",
+      "title": "trading - Glossário Financeiro",
+      "description": "O que é trading e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi.",
+      "category": "basico",
+      "publishedAt": "2026-09-18"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "pt",
+      "slug": "como-planejar-as-compras-de-natal-com-antecedencia-e-evitar",
+      "url": "https://blog.finmoovi.com/posts/como-planejar-as-compras-de-natal-com-antecedencia-e-evitar",
+      "title": ">-",
+      "description": ">-",
+      "category": "orcamento",
+      "publishedAt": "2026-09-18T00:00:00.000Z"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "en",
+      "slug": "en-how-to-plan-your-christmas-shopping-early-and-dodge-money",
+      "url": "https://blog.finmoovi.com/en/posts/en-how-to-plan-your-christmas-shopping-early-and-dodge-money",
+      "title": ">-",
+      "description": ">-",
+      "category": "orcamento",
+      "publishedAt": "2026-09-18T00:00:00.000Z"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "es",
+      "slug": "es-como-planificar-las-compras-de-navidad-con-antelacion-y",
+      "url": "https://blog.finmoovi.com/es/posts/es-como-planificar-las-compras-de-navidad-con-antelacion-y",
+      "title": ">-",
+      "description": ">-",
+      "category": "orcamento",
+      "publishedAt": "2026-09-18T00:00:00.000Z"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "es",
+      "slug": "es-domina-tus-gastos-y-consigue-paz-financiera-real-en-2026",
+      "url": "https://blog.finmoovi.com/es/posts/es-domina-tus-gastos-y-consigue-paz-financiera-real-en-2026",
+      "title": "Domina tus gastos y consigue paz financiera real en 2026",
+      "description": "Descubre cómo controlar tus gastos de forma práctica, usando captura inteligente y metas mensuales. Transforma el caos en tranquilidad con FinMoovi.",
+      "category": "dicas",
+      "publishedAt": "2026-09-18"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "pt",
+      "slug": "domine-seus-gastos-e-tenha-paz-financeira-real-em-2026",
+      "url": "https://blog.finmoovi.com/posts/domine-seus-gastos-e-tenha-paz-financeira-real-em-2026",
+      "title": "Domine seus gastos e tenha paz financeira real em 2026",
+      "description": "Descubra como controlar despesas de forma prática, usando captura inteligente e metas mensais. Transforme o caos em tranquilidade com FinMoovi.",
+      "category": "dicas",
+      "publishedAt": "2026-09-18"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "en",
+      "slug": "en-master-your-spending-and-achieve-real-financial-peace-in",
+      "url": "https://blog.finmoovi.com/en/posts/en-master-your-spending-and-achieve-real-financial-peace-in",
+      "title": "Master Your Spending and Achieve Real Financial Peace in 2026",
+      "description": "Learn practical ways to control expenses with smart capture and monthly goals. Turn chaos into calm with FinMoovi.",
+      "category": "dicas",
+      "publishedAt": "2026-09-18"
+    }
+  ],
+  "videos": [
+    {
+      "slug": "loop-reforma-banheiro-e-serio-que",
+      "videoId": "X-N6Fk6TykE",
+      "uploadedAt": "2026-09-18T13:09:16.284Z",
+      "title": "REFORMA: R$ 1.400 que somei sem notar",
+      "formato": "loop16",
+      "timeLisbon": "14:09"
+    },
+    {
+      "slug": "kw-financiamento-de-moto-vale-a-pena",
+      "videoId": "y_UG8M_4CXI",
+      "uploadedAt": "2026-09-18T15:31:42.320Z",
+      "title": "MOTO: 24 parcelas de R$ 700 valem?",
+      "formato": "short50",
+      "timeLisbon": "16:31"
+    },
+    {
+      "slug": "loop-fatura-maior-ta-perdendo",
+      "videoId": "Or34xzb57po",
+      "uploadedAt": "2026-09-18T21:12:56.190Z",
+      "title": "FATURA: R$ 1.900 que some na conta",
+      "formato": "loop16",
+      "publishAt": "2026-09-18T21:40:00.000Z",
+      "timeLisbon": "22:12"
+    }
+  ],
+  "pins": [
+    {
+      "slug": "como-planejar-as-compras-de-natal-com-antecedencia-e-evitar",
+      "title": "Como planejar as compras de Natal com antecedência e evitar o aperto no fim de 2026",
+      "pinId": "1105281933581320823",
+      "publishedAt": "2026-09-18T17:57:41.917Z",
+      "postUrl": "https://blog.finmoovi.com/posts/como-planejar-as-compras-de-natal-com-antecedencia-e-evitar",
+      "timeLisbon": "18:57"
+    },
+    {
+      "slug": "domine-seus-gastos-e-tenha-paz-financeira-real-em-2026",
+      "title": "Domine seus gastos e tenha paz financeira real em 2026",
+      "pinId": "1105281933581320827",
+      "publishedAt": "2026-09-18T17:57:44.640Z",
+      "postUrl": "https://blog.finmoovi.com/posts/domine-seus-gastos-e-tenha-paz-financeira-real-em-2026",
+      "timeLisbon": "18:57"
+    },
+    {
+      "slug": "entenda-o-que-e-saldo-em-aberto-e-como-evita-lo",
+      "title": "Entenda o que é saldo em aberto e como evitá‑lo",
+      "pinId": "1105281933581320834",
+      "publishedAt": "2026-09-18T17:57:48.997Z",
+      "postUrl": "https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo",
+      "timeLisbon": "18:57"
+    }
+  ],
+  "runsSummary": [
+    {
+      "name": "YouTube — Responder aos comentários (FINMOOVI)",
+      "count": 6,
+      "ok": 6,
+      "fail": 0,
+      "firstTimeLisbon": "01:31"
+    },
+    {
+      "name": "Capas — varrer (e refazer) as que têm letras ou estão borradas",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "01:42"
+    },
+    {
+      "name": "IndexNow (indexação instantânea Bing/Copilot)",
+      "count": 4,
+      "ok": 4,
+      "fail": 0,
+      "firstTimeLisbon": "03:26"
+    },
+    {
+      "name": "Redes — Caixa de entrada dos comentários (3× por dia)",
+      "count": 3,
+      "ok": 3,
+      "fail": 0,
+      "firstTimeLisbon": "06:43"
+    },
+    {
+      "name": "YouTube — Detetive de tendências (diário)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "09:36"
+    },
+    {
+      "name": "YouTube — Produzir Shorts de 16s em loop (2 por dia)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "10:06"
+    },
+    {
+      "name": "Sincronizar i18n (auto-corretor PT/EN/ES)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "10:19"
+    },
+    {
+      "name": "Fact Firewall (anti-alucinacao)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "10:21"
+    },
+    {
+      "name": "Consumo dos serviços pagos",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "10:38"
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "count": 2,
+      "ok": 2,
+      "fail": 0,
+      "firstTimeLisbon": "11:02"
+    },
+    {
+      "name": "Gerar ALT descritivo das imagens (IA de visão)",
+      "count": 2,
+      "ok": 2,
+      "fail": 0,
+      "firstTimeLisbon": "11:43"
+    },
+    {
+      "name": "YouTube — Renderizar Short (completo)",
+      "count": 2,
+      "ok": 2,
+      "fail": 0,
+      "firstTimeLisbon": "12:29"
+    },
+    {
+      "name": "Community Monitor",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "13:02"
+    },
+    {
+      "name": "GSC - Canibalizacao por query",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "13:07"
+    },
+    {
+      "name": "Sazonal Multimercado (timezone)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "13:24"
+    },
+    {
+      "name": "GSC - Monitor de Indexacao",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "13:25"
+    },
+    {
+      "name": "YouTube — Guarda do canal (diário)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "13:55"
+    },
+    {
+      "name": "Multipost — Vigia das redes (diário)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "13:59"
+    },
+    {
+      "name": "Fix i18n Content (Daily Batch)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "14:05"
+    },
+    {
+      "name": "YouTube — Publicar Shorts de 16s (9h e 19h BR)",
+      "count": 2,
+      "ok": 2,
+      "fail": 0,
+      "firstTimeLisbon": "14:08"
+    },
+    {
+      "name": "Gerar Dicas Financeiras",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "14:13"
+    },
+    {
+      "name": "Webmentions & Outreach",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "14:55"
+    },
+    {
+      "name": "Post Sazonal Semanal",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "15:04"
+    },
+    {
+      "name": "Glossário Diário Automático",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "15:40"
+    },
+    {
+      "name": "Multipost — Entregar os Shorts de 16s às 7 redes",
+      "count": 2,
+      "ok": 2,
+      "fail": 0,
+      "firstTimeLisbon": "15:42"
+    },
+    {
+      "name": "YouTube — Publicar Short (horário nobre)",
+      "count": 2,
+      "ok": 2,
+      "fail": 0,
+      "firstTimeLisbon": "16:31"
+    },
+    {
+      "name": "Post Comparação Semanal",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "16:53"
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "17:13"
+    },
+    {
+      "name": "Regenerar capas antigas do glossário (estilo 3D)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "17:39"
+    },
+    {
+      "name": "Sindicação Extra (Hashnode + Tumblr + Blogger)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "17:50"
+    },
+    {
+      "name": "Social Distribution (Pinterest + Bookmarks)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "18:57"
+    },
+    {
+      "name": "Multipost — Entregar o Short às 8 redes (a partir das 19h BR)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "19:31"
+    },
+    {
+      "name": "Vigia do ar (o site tem tudo o que o repo tem?)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "22:59"
+    }
+  ],
+  "emails": [
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "timeLisbon": "11:02"
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "timeLisbon": "12:46"
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "timeLisbon": "17:13"
+    }
+  ],
+  "pendencias": [
+    "Confirmar no painel do Railway qual repo alimenta app.finmoovi.com. Medido em 16/09/2026: o site responde 200, com os cabeçalhos x-railway-request-id e x-railway-edge: bcn1 — está mesmo no Railway —, e /api/status (o mesmo caminho de saúde que o railway.json deste repo declara) devolve {\"status\":\"ok\",\"version\":\"2.0.0\"}. Falta só o que nenhum teste de fora consegue ver: a que repo e ramo o projeto está ligado. Isso lê-se no painel, em 30 segundos.",
+    "Decidir qual conta é a PADRÃO desta máquina. O gh e o wrangler estão ambos em GOAPEXI; todo push para o FinMoovi exige gh auth switch --user edflaviojs e devolver a seguir. Se o FinMoovi é o trabalho principal daqui, vale inverter — mas parte o lado GOAPEXI. O wrangler continua por consertar: precisa de wrangler login com Finmoovi@gmail.com, que abre o navegador e tem de ser o Ed a correr.",
+    "Acompanhar a gaveta de idioma na 1ª semana (no ar desde 12/08/2026). Filtrar a tabela cta_clicks pelos variant que começam por lang-: quantos VIRAM contra quantos ACEITARAM, por idioma. Se quase ninguém aceitar, o problema é o texto ou o momento — não a ideia. Detalhe em docs/I18N-SYSTEM.md §12.",
+    "18/08/2026 — ESTUDO APIFY das transcrições (vídeo longo). Só a partir dessa data: o arquivo .github/data/youtube-capitulos.json precisa de ~2 semanas a acumular para haver 40-50 longos e se escolherem os MELHORES para transcrever. Passos: criar chave em console.apify.com/settings/integrations (permissões limitadas + validade 1 mês) → guardar como APIFY_TOKEN no cofre do GitHub (nunca no chat) → criar/configurar o actor de transcrições → 30-50 transcrições (~$0,25 do crédito grátis de $5/mês) → ler os primeiros 30s de cada. ⚠️ Estudo à mão, NUNCA dentro do robô diário. Detalhe completo: IMPLEMENTACAO20 §33.6",
+    "Google Cloud billing: criar perfil de pagamentos PORTUGAL (NIF + cartão PT) → destrava vozes TTS premium + trial $300",
+    "Escolher voz definitiva do canal (Antonio edge ↔ Piper faber alternando; premium depende do billing)",
+    "Pinterest: avaliar o 1º pin com descrição rica SEO (sexta 24/07 ~16h)",
+    "Upgrade Pinterest p/ cadência diária? Avaliar analytics ~07/08"
+  ],
+  "agenda": [
+    {
+      "name": "YouTube — Responder aos comentários (FINMOOVI)",
+      "times": [
+        "00:25",
+        "01:25",
+        "02:25",
+        "03:25",
+        "04:25",
+        "05:25",
+        "06:25",
+        "07:25",
+        "08:25",
+        "09:25",
+        "10:25",
+        "11:25",
+        "12:25",
+        "13:25",
+        "14:25",
+        "15:25",
+        "16:25",
+        "17:25",
+        "18:25",
+        "19:25",
+        "20:25",
+        "21:25",
+        "22:25",
+        "23:25"
+      ]
+    },
+    {
+      "name": "IndexNow (indexação instantânea Bing/Copilot)",
+      "times": [
+        "01:00",
+        "07:00",
+        "13:00",
+        "19:00"
+      ]
+    },
+    {
+      "name": "Redes — Caixa de entrada dos comentários (3× por dia)",
+      "times": [
+        "02:00",
+        "16:00",
+        "20:00"
+      ]
+    },
+    {
+      "name": "YouTube — Vídeo longo (semanal)",
+      "times": [
+        "03:00",
+        "13:00",
+        "19:00"
+      ]
+    },
+    {
+      "name": "YouTube — Detetive de tendências (diário)",
+      "times": [
+        "05:00"
+      ]
+    },
+    {
+      "name": "YouTube — Produzir Shorts de 16s em loop (2 por dia)",
+      "times": [
+        "05:30"
+      ]
+    },
+    {
+      "name": "Fact Firewall (anti-alucinacao)",
+      "times": [
+        "06:00"
+      ]
+    },
+    {
+      "name": "Sincronizar i18n (auto-corretor PT/EN/ES)",
+      "times": [
+        "06:00"
+      ]
+    },
+    {
+      "name": "Consumo dos serviços pagos",
+      "times": [
+        "06:10"
+      ]
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "times": [
+        "06:40",
+        "07:40"
+      ]
+    },
+    {
+      "name": "Brand Mention Monitor",
+      "times": [
+        "07:00"
+      ]
+    },
+    {
+      "name": "Gerar ALT descritivo das imagens (IA de visão)",
+      "times": [
+        "07:00",
+        "10:00",
+        "12:00"
+      ]
+    },
+    {
+      "name": "YouTube — Renderizar Short (completo)",
+      "times": [
+        "07:30",
+        "12:00"
+      ]
+    },
+    {
+      "name": "Community Monitor",
+      "times": [
+        "08:00"
+      ]
+    },
+    {
+      "name": "Glossário Financeiro",
+      "times": [
+        "08:00"
+      ]
+    },
+    {
+      "name": "GSC - Monitor de Indexacao",
+      "times": [
+        "09:00"
+      ]
+    },
+    {
+      "name": "Sazonal Multimercado (timezone)",
+      "times": [
+        "09:00"
+      ]
+    },
+    {
+      "name": "YouTube — Guarda do canal (diário)",
+      "times": [
+        "09:10"
+      ]
+    },
+    {
+      "name": "Multipost — Vigia das redes (diário)",
+      "times": [
+        "09:20"
+      ]
+    },
+    {
+      "name": "YouTube — Publicar Shorts de 16s (9h e 19h BR)",
+      "times": [
+        "09:40",
+        "19:40"
+      ]
+    },
+    {
+      "name": "Gerar Dicas Financeiras",
+      "times": [
+        "10:00"
+      ]
+    },
+    {
+      "name": "Glossário Diário Automático",
+      "times": [
+        "12:00"
+      ]
+    },
+    {
+      "name": "Multipost — Entregar os Shorts de 16s às 7 redes",
+      "times": [
+        "12:00",
+        "15:40"
+      ]
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "times": [
+        "13:00"
+      ]
+    },
+    {
+      "name": "YouTube — Publicar Short (horário nobre)",
+      "times": [
+        "13:00",
+        "21:00"
+      ]
+    },
+    {
+      "name": "Regenerar capas antigas do glossário (estilo 3D)",
+      "times": [
+        "13:30"
+      ]
+    },
+    {
+      "name": "Multipost — Entregar o Short às 8 redes (a partir das 19h BR)",
+      "times": [
+        "16:20"
+      ]
+    },
+    {
+      "name": "Vigia do ar (o site tem tudo o que o repo tem?)",
+      "times": [
+        "21:00"
+      ]
+    },
+    {
+      "name": "Capas — varrer (e refazer) as que têm letras ou estão borradas",
+      "times": [
+        "23:30"
+      ]
+    }
+  ]
+}
