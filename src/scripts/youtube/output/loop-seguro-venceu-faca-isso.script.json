@@ -1,0 +1,118 @@
+{
+  "slug": "loop-seguro-venceu-faca-isso",
+  "formato": "loop16",
+  "term": "O seguro que venceu",
+  "category": "vida",
+  "keyword": "SEGURO",
+  "valor": "R$ 2.300",
+  "situacao": "seguro-venceu",
+  "gancho": "faca-isso",
+  "ganchoFamilia": "faça isso",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "escudo",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se você quer economizar, faça isso. Eu recebi uma mensagem ontem.",
+      "durationSec": 4.64,
+      "shots": [
+        {
+          "anchor": "economizar",
+          "visual": {
+            "type": "statement",
+            "text": "Faça isso"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "recebi",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escudo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Quando vi, dois mil e trezentos reais tinham ido embora só nisso.",
+      "durationSec": 5.07,
+      "shots": [
+        {
+          "anchor": "trezentos",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escudo"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 2.300"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Só que agora eu confero tudo.",
+      "durationSec": 2.53,
+      "shots": [
+        {
+          "anchor": "confero",
+          "visual": {
+            "type": "statement",
+            "text": "Conferir"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "confero",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escudo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Faça isso se você quer economizar mais.",
+      "durationSec": 2.96,
+      "shots": [
+        {
+          "anchor": "economizar",
+          "visual": {
+            "type": "statement",
+            "text": "Faça isso"
+          }
+        },
+        {
+          "anchor": "economizar",
+          "visual": {
+            "type": "statement",
+            "text": "Faça isso"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
