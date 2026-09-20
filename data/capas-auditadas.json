@@ -4959,6 +4959,51 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-09-19"
+    },
+    "domine-seus-gastos-e-tenha-paz-financeira-real-em-2026.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"$0.00\")",
+      "em": "2026-09-20"
+    },
+    "parcelamento-inteligente-controle-seu-orcamento-em-2026-2.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-20"
+    },
+    "parcelamento-inteligente-controle-seu-orcamento-em-2026-4.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-20"
+    },
+    "parcelamento-inteligente-controle-seu-orcamento-em-2026-6.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-20"
+    },
+    "parcelamento-inteligente-controle-seu-orcamento-em-2026.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-20"
+    },
+    "unit-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-20"
+    },
+    "unit-inline-2.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-20"
+    },
+    "unit-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-20"
+    },
+    "unit.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-20"
     }
   },
   "corrigidas": {
@@ -5613,8 +5658,12 @@
     "trading-inline-1.webp": {
       "em": "2026-09-19",
       "motivo": "tem texto escrito (\"Smile\")"
+    },
+    "domine-seus-gastos-e-tenha-paz-financeira-real-em-2026.webp": {
+      "em": "2026-09-20",
+      "motivo": "tem texto escrito (\"$0.00\")"
     }
   },
-  "totalAcervo": 993,
-  "ultimaCorrida": "2026-09-19"
+  "totalAcervo": 1001,
+  "ultimaCorrida": "2026-09-20"
 }

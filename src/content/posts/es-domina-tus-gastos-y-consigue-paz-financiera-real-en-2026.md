@@ -1,22 +1,35 @@
 ---
-title: "Domina tus gastos y consigue paz financiera real en 2026"
-description: "Descubre cómo controlar tus gastos de forma práctica, usando captura inteligente y metas mensuales. Transforma el caos en tranquilidad con FinMoovi."
-tickerHeadline: "El truco que simplifica tus gastos"
-image: "/images/posts/domine-seus-gastos-e-tenha-paz-financeira-real-em-2026.webp"
-imageAlt: "Una computadora portátil con pantalla colorida, dos tazas y un escritorio en un ambiente de oficina."
-category: "dicas"
-locale: "es"
-tags: ["control de gastos","finanzas personales","economía","dinero"]
-author: "FinMoovi"
-publishedAt: 2026-09-18
+title: Domina tus gastos y consigue paz financiera real en 2026
+description: >-
+  Descubre cómo controlar tus gastos de forma práctica, usando captura
+  inteligente y metas mensuales. Transforma el caos en tranquilidad con
+  FinMoovi.
+tickerHeadline: El truco que simplifica tus gastos
+image: /images/posts/domine-seus-gastos-e-tenha-paz-financeira-real-em-2026.webp
+category: dicas
+locale: es
+tags:
+  - control de gastos
+  - finanzas personales
+  - economía
+  - dinero
+author: FinMoovi
+publishedAt: 2026-09-18T00:00:00.000Z
 readingTime: 5
 featured: false
-translationKey: "domine-seus-gastos-e-tenha-paz-financeira-real-em-2026"
-scope: "universal"
+translationKey: domine-seus-gastos-e-tenha-paz-financeira-real-em-2026
+scope: universal
 seo:
-  metaTitle: "Domina tus gastos y consigue paz financiera real en 2026"
-  metaDescription: "Descubre cómo controlar tus gastos de forma práctica, usando captura inteligente y metas mensuales. Transforma el caos en tranquilidad con FinMoovi."
-  keywords: ["control de gastos","finanzas personales","economía","dinero"]
+  metaTitle: Domina tus gastos y consigue paz financiera real en 2026
+  metaDescription: >-
+    Descubre cómo controlar tus gastos de forma práctica, usando captura
+    inteligente y metas mensuales. Transforma el caos en tranquilidad con
+    FinMoovi.
+  keywords:
+    - control de gastos
+    - finanzas personales
+    - economía
+    - dinero
 ---
 
 Imagina la escena: llegas a casa después de un día ajetreado, abres el cajón de papeles y te encuentras con recibos esparcidos, anotaciones borroneadas y la sensación de que el dinero desaparece antes de que puedas averiguar a dónde fue. La factura de luz llega a fin de mes, la tarjeta de [crédito](/es/glossario/es-credito) ya muestra un saldo que parece imposible de pagar y, para colmo, todavía tienes que acordarte de pagar la suscripción de ese servicio que casi no usas. Ese desorden acelera tu corazón y te da vueltas la cabeza – y todo porque no hay una forma sencilla de ver, en tiempo real, a dónde va cada centavo.

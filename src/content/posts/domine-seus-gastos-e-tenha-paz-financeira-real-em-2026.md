@@ -1,22 +1,34 @@
 ---
-title: "Domine seus gastos e tenha paz financeira real em 2026"
-description: "Descubra como controlar despesas de forma prática, usando captura inteligente e metas mensais. Transforme o caos em tranquilidade com FinMoovi."
-tickerHeadline: "O truque que simplifica seus gastos"
-image: "/images/posts/domine-seus-gastos-e-tenha-paz-financeira-real-em-2026.webp"
-imageAlt: "Computador com tela aberta mostrando planilha de gastos, dois copos de café e plantas no fundo."
-category: "dicas"
-locale: "pt"
-tags: ["expense control","finanças pessoais","economia","dinheiro"]
-author: "FinMoovi"
-publishedAt: 2026-09-18
+title: Domine seus gastos e tenha paz financeira real em 2026
+description: >-
+  Descubra como controlar despesas de forma prática, usando captura inteligente
+  e metas mensais. Transforme o caos em tranquilidade com FinMoovi.
+tickerHeadline: O truque que simplifica seus gastos
+image: /images/posts/domine-seus-gastos-e-tenha-paz-financeira-real-em-2026.webp
+category: dicas
+locale: pt
+tags:
+  - expense control
+  - finanças pessoais
+  - economia
+  - dinheiro
+author: FinMoovi
+publishedAt: 2026-09-18T00:00:00.000Z
 readingTime: 5
 featured: true
-translationKey: "domine-seus-gastos-e-tenha-paz-financeira-real-em-2026"
-scope: "universal"
+translationKey: domine-seus-gastos-e-tenha-paz-financeira-real-em-2026
+scope: universal
 seo:
-  metaTitle: "Domine seus gastos e tenha paz financeira real em 2026"
-  metaDescription: "Descubra como controlar despesas de forma prática, usando captura inteligente e metas mensais. Transforme o caos em tranquilidade com FinMoovi."
-  keywords: ["expense control","finanças pessoais","economia","dinheiro"]
+  metaTitle: Domine seus gastos e tenha paz financeira real em 2026
+  metaDescription: >-
+    Descubra como controlar despesas de forma prática, usando captura
+    inteligente e metas mensais. Transforme o caos em tranquilidade com
+    FinMoovi.
+  keywords:
+    - expense control
+    - finanças pessoais
+    - economia
+    - dinheiro
 ---
 
 Imagine a cena: você chega em casa depois de um dia corrido, abre a gaveta de papéis e se depara com recibos espalhados, anotações rasuradas e a sensação de que o dinheiro some antes mesmo de você perceber onde foi. A conta de luz está no fim do mês, o cartão de [crédito](/glossario/credito) já mostra um saldo que parece impossível de pagar e, para piorar, ainda falta lembrar de pagar a assinatura daquele serviço que você quase não usa. Essa bagunça faz seu coração acelerar e a cabeça girar – e tudo porque não há um jeito simples de ver, em tempo real, para onde cada centavo está indo.
