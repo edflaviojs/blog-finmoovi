@@ -7,6 +7,7 @@ description: >-
   Natal sem surpresas no bolso.
 tickerHeadline: O truque que salva seu Natal
 image: /images/posts/como-planejar-as-compras-de-natal-com-antecedencia-e-evitar.webp
+imageAlt: "Uma imagem de uma mesa com um caderno, calculadora, moedas e plantas."
 category: orcamento
 locale: pt
 tags:

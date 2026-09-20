@@ -5,6 +5,7 @@ description: >-
   e metas mensais. Transforme o caos em tranquilidade com FinMoovi.
 tickerHeadline: O truque que simplifica seus gastos
 image: /images/posts/domine-seus-gastos-e-tenha-paz-financeira-real-em-2026.webp
+imageAlt: "Tela de computador, computador, teclado, mouse, caneca, telefone, mesa, plantas, janelas, luz solar, cores vibrantes, fundo escuro."
 category: dicas
 locale: pt
 tags:

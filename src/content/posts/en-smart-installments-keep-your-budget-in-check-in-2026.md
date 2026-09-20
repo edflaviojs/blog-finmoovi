@@ -3,6 +3,7 @@ title: "Smart Installments: Keep Your Budget in Check in 2026"
 description: "Learn how to turn installment purchases into budget allies with practical tips and the FinMoovi app—organize everything in minutes."
 tickerHeadline: "Installments that don’t weigh you down"
 image: "/images/posts/parcelamento-inteligente-controle-seu-orcamento-em-2026.webp"
+imageAlt: "A man and woman sit at a table with a cell phone, notebook, and glass of beer."
 category: "dicas"
 locale: "en"
 tags: ["installments","personal finance","economy","money"]

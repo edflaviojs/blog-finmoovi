@@ -4,6 +4,7 @@ definition: "What unit is and how it shows up in your everyday money — explain
 title: "unit - Financial Glossary"
 description: "What unit is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/unit.webp"
+imageAlt: "A glass jar filled with gold coins, surrounded by stacks of gold coins."
 category: "basico"
 tags: ["unit", "glossary", "finance"]
 author: "FinMoovi"

@@ -7,6 +7,7 @@ description: >-
   without surprise bills.
 tickerHeadline: The trick that saves your Christmas
 image: /images/posts/como-planejar-as-compras-de-natal-com-antecedencia-e-evitar.webp
+imageAlt: "A brown leather journal, a calculator, and coins on a white marble surface."
 category: orcamento
 locale: en
 tags:

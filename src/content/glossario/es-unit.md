@@ -4,6 +4,7 @@ definition: "Qué es unit y cómo aparece en tu día a día — explicado de for
 title: "unit - Glosario Financiero"
 description: "Qué es unit y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/unit.webp"
+imageAlt: "Una imagen de una jarra llena de monedas doradas, con un árbol en un vaso de vidrio."
 category: "basico"
 tags: ["unit", "glosario", "finanzas"]
 author: "FinMoovi"

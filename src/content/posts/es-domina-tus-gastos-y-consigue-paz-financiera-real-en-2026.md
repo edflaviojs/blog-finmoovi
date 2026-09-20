@@ -6,6 +6,7 @@ description: >-
   FinMoovi.
 tickerHeadline: El truco que simplifica tus gastos
 image: /images/posts/domine-seus-gastos-e-tenha-paz-financeira-real-em-2026.webp
+imageAlt: "Un escritorio con un ordenador, una taza de café y una pantalla de fondo con colores brillantes."
 category: dicas
 locale: es
 tags:

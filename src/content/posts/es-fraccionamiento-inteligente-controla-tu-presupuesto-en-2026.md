@@ -3,6 +3,7 @@ title: "Fraccionamiento inteligente: controla tu presupuesto en 2026"
 description: "Descubre cómo convertir los pagos a plazos en aliados de tu presupuesto con consejos prácticos y la app FinMoovi en solo minutos."
 tickerHeadline: "Fraccionamiento que no pesa"
 image: "/images/posts/parcelamento-inteligente-controle-seu-orcamento-em-2026.webp"
+imageAlt: "Un hombre y una mujer sentados en una mesa, con un teléfono, un libro, y una bebida."
 category: "dicas"
 locale: "es"
 tags: ["fraccionamiento","finanzas personales","economía","dinero"]

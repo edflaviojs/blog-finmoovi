@@ -3,6 +3,7 @@ title: "Parcelamento inteligente: controle seu orçamento em 2026"
 description: "Descubra como transformar compras parceladas em aliadas do seu orçamento, com dicas práticas e o app FinMoovi para organizar tudo em poucos minutos."
 tickerHeadline: "Parcelamento que não pesa no bolso"
 image: "/images/posts/parcelamento-inteligente-controle-seu-orcamento-em-2026.webp"
+imageAlt: "Um homem e uma mulher sentados em uma mesa, com um telefone e um copo de cerveja."
 category: "dicas"
 locale: "pt"
 tags: ["installments","finanças pessoais","economia","dinheiro"]

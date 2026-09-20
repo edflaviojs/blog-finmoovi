@@ -7,6 +7,7 @@ description: >-
   sin sorpresas en tu bolsillo.
 tickerHeadline: El truco que salva tu Navidad
 image: /images/posts/como-planejar-as-compras-de-natal-com-antecedencia-e-evitar.webp
+imageAlt: "Una imagen de una calculadora, un cuaderno de cuero, monedas y una planta en un fondo blanco."
 category: orcamento
 locale: es
 tags:

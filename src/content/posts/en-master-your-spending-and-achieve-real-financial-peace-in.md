@@ -5,6 +5,7 @@ description: >-
   Turn chaos into calm with FinMoovi.
 tickerHeadline: The trick that simplifies your spending
 image: /images/posts/domine-seus-gastos-e-tenha-paz-financeira-real-em-2026.webp
+imageAlt: "A cluttered desk with a laptop, monitor, and coffee mug in a well-lit room."
 category: dicas
 locale: en
 tags:
