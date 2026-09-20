@@ -4,6 +4,7 @@ definition: "What Retail is and how it shows up in your everyday money — expla
 title: "Retail - Financial Glossary"
 description: "What Retail is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/varejo.webp"
+imageAlt: "A piggy bank, coins, and a plant in a glass jar on a table with a purple background."
 category: "basico"
 tags: ["Retail", "glossary", "finance"]
 author: "FinMoovi"

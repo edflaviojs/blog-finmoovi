@@ -4,6 +4,7 @@ definition: "Qué es venta al por menor y cómo aparece en tu día a día — ex
 title: "venta al por menor - Glosario Financiero"
 description: "Qué es venta al por menor y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/varejo.webp"
+imageAlt: "Una imagen de una mesa con monedas, una planta en un vaso y un cerdito de cerámica."
 category: "basico"
 tags: ["venta al por menor", "glosario", "finanzas"]
 author: "FinMoovi"

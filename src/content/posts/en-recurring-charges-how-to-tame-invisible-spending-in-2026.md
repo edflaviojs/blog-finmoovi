@@ -3,6 +3,7 @@ title: "Recurring Charges: How to Tame Invisible Spending in 2026"
 description: "Learn what recurring charges are, how they drain your budget, and use FinMoovi to spot and cut them effortlessly."
 tickerHeadline: "The spending you don’t even notice"
 image: "/images/posts/cobrancas-recorrentes-como-domar-o-gasto-invisivel-em-2026.webp"
+imageAlt: "A brown leather journal, calculator, coins, and plants on a white marble surface."
 category: "dicas"
 locale: "en"
 tags: ["recurring charges","personal finance","budgeting","subscription management","FinMoovi","money leaks","financial stress","emergency fund","savings goals"]

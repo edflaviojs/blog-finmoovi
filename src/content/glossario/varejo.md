@@ -4,6 +4,7 @@ definition: "O que é varejo e como isso aparece no seu dia a dia — explicado 
 title: "varejo - Glossário Financeiro"
 description: "O que é varejo e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/varejo.webp"
+imageAlt: "Um cenário de finanças pessoais com moedas, um porco, uma planta e gráficos em tons de rosa e azul."
 category: "basico"
 tags: ["varejo", "glossário", "finanças"]
 author: "FinMoovi"

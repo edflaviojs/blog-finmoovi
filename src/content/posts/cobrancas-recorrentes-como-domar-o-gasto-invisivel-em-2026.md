@@ -3,6 +3,7 @@ title: "Cobranças recorrentes: como domar o gasto invisível em 2026"
 description: "Descubra o que são cobranças recorrentes, como elas drenam seu orçamento e aprenda a usar o FinMoovi para identificar e cortar esses gastos sem esforço."
 tickerHeadline: "O gasto que você nem percebe"
 image: "/images/posts/cobrancas-recorrentes-como-domar-o-gasto-invisivel-em-2026.webp"
+imageAlt: "Imagem de uma mesa de escritório com um caderno, calculadora, moedas, plantas e gráficos financeiros."
 category: "dicas"
 locale: "pt"
 tags: ["recurring fee definition","finanças pessoais","economia","dinheiro"]

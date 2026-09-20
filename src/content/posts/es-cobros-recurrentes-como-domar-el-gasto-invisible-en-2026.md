@@ -3,6 +3,7 @@ title: "Cobros recurrentes: cómo domar el gasto invisible en 2026"
 description: "Descubre qué son los cobros recurrentes, cómo agotan tu presupuesto y aprende a usar FinMoovi para identificarlos y eliminarlos sin esfuerzo."
 tickerHeadline: "El gasto que ni notas"
 image: "/images/posts/cobrancas-recorrentes-como-domar-o-gasto-invisivel-em-2026.webp"
+imageAlt: "Un escritorio con un cuaderno, calculadora, monedas, plantas y un gráfico en un papel."
 category: "dicas"
 locale: "es"
 tags: ["definición de cobro recurrente","finanzas personales","economía","dinero"]
