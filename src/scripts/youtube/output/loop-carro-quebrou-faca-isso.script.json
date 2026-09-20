@@ -1,0 +1,118 @@
+{
+  "slug": "loop-carro-quebrou-faca-isso",
+  "formato": "loop16",
+  "term": "O carro quebrou no meio do mês",
+  "category": "vida",
+  "keyword": "CARRO",
+  "valor": "R$ 1.200",
+  "situacao": "carro-quebrou",
+  "gancho": "faca-isso",
+  "ganchoFamilia": "faça isso",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "domino",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se você quer economizar, faça isso. Eu tive um problema.",
+      "durationSec": 4.61,
+      "shots": [
+        {
+          "anchor": "economizar",
+          "visual": {
+            "type": "statement",
+            "text": "Economize"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "problema",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "domino"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "mil e duzentos reais tinham ido embora só nisso.",
+      "durationSec": 4.15,
+      "shots": [
+        {
+          "anchor": "duzentos",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "domino"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 1.200"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "E aí eu percebi que errado.",
+      "durationSec": 2.76,
+      "shots": [
+        {
+          "anchor": "percebi",
+          "visual": {
+            "type": "statement",
+            "text": "Errado"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "errado",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "domino"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Faça isso se quer economizar, não faça errinho.",
+      "durationSec": 3.68,
+      "shots": [
+        {
+          "anchor": "economizar",
+          "visual": {
+            "type": "statement",
+            "text": "Economize"
+          }
+        },
+        {
+          "anchor": "errinho",
+          "visual": {
+            "type": "statement",
+            "text": "Economize"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
