@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-19T14:01:06.927Z",
-  "sourceCursor": 1,
+  "updatedAt": "2026-09-20T13:19:06.981Z",
+  "sourceCursor": 2,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -2047,8 +2047,10 @@
       "category": null,
       "priority": 2,
       "source": "gsc-gap",
-      "status": "pending",
-      "addedAt": "2026-09-14T13:27:29.761Z"
+      "status": "used",
+      "addedAt": "2026-09-14T13:27:29.761Z",
+      "usedAt": "2026-09-20T13:19:06.981Z",
+      "usedBy": "gerar-dicas-financeiras"
     },
     {
       "keyword": "recurring payments financial planning",
