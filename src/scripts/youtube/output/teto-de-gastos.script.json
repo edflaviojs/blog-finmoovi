@@ -1,0 +1,213 @@
+{
+  "slug": "teto-de-gastos",
+  "term": "teto de gastos",
+  "category": "basico",
+  "keyword": "gastos",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "*Seu dinheiro some antes do fim do mês porque não tem um teto de gastos?*"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "buraco",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Seu dinheiro some antes do fim do mês porque não tem um teto de gastos? É isso, sem limite você gasta sem ver.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro some rápido"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "some",
+          "visual": {
+            "type": "icon",
+            "icon": "money"
+          }
+        },
+        {
+          "anchor": "teto",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          },
+          "sfx": "coin"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Quando o limite passa, o cartão, o boleto e até o lanche da esquina vão somando sem você perceber.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "Quando",
+          "visual": {
+            "type": "statement",
+            "text": "Quando o limite passa"
+          }
+        },
+        {
+          "anchor": "cartão",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          },
+          "sfx": "typewriter"
+        },
+        {
+          "anchor": "esquina",
+          "visual": {
+            "type": "icon",
+            "icon": "coins"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Esse lanche diário, que parece nada, vira quase duzentos reais quando o mês fecha.",
+      "durationSec": 5.4,
+      "shots": [
+        {
+          "anchor": "lanche",
+          "visual": {
+            "type": "statement",
+            "text": "Lanche diário"
+          }
+        },
+        {
+          "anchor": "nada",
+          "visual": {
+            "type": "number",
+            "text": "R$ 200"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "statement",
+            "text": "Quando o mês fecha"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu coloquei meus gastos no FinMoovi e ele mostrou que gastei duzentos e cinquenta reais, acima do que eu queria.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Visão geral"
+          }
+        },
+        {
+          "anchor": "cinquenta",
+          "visual": {
+            "type": "number",
+            "text": "R$ 250"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "acima",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          },
+          "sfx": "alert"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu número? Baixe o FinMoovi, experimente sete dias grátis e descubra seu teto de gastos.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "statement",
+            "text": "Quer ver seu número?"
+          }
+        },
+        {
+          "anchor": "experimente",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          }
+        },
+        {
+          "anchor": "gastos",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Fixe um teto de gastos e acompanhe o que sai. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 6.5,
+      "shots": [
+        {
+          "anchor": "Fixe",
+          "visual": {
+            "type": "statement",
+            "text": "Fixe seu teto"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "acompanhe",
+          "visual": {
+            "type": "icon",
+            "icon": "chart-down"
+          }
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro dos outros"
+          },
+          "sfx": "ding"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja seu teto de gastos",
+    "target": "app"
+  },
+  "totalDurationSec": 42.6
+}
