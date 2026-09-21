@@ -5004,6 +5004,41 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-09-20"
+    },
+    "cobrancas-recorrentes-como-domar-o-gasto-invisivel-em-2026-2.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-21"
+    },
+    "cobrancas-recorrentes-como-domar-o-gasto-invisivel-em-2026-4.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-21"
+    },
+    "cobrancas-recorrentes-como-domar-o-gasto-invisivel-em-2026-6.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-21"
+    },
+    "cobrancas-recorrentes-como-domar-o-gasto-invisivel-em-2026.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-21"
+    },
+    "varejo-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-21"
+    },
+    "varejo-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-21"
+    },
+    "varejo.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-21"
     }
   },
   "corrigidas": {
@@ -5664,6 +5699,6 @@
       "motivo": "tem texto escrito (\"$0.00\")"
     }
   },
-  "totalAcervo": 1001,
-  "ultimaCorrida": "2026-09-20"
+  "totalAcervo": 1008,
+  "ultimaCorrida": "2026-09-21"
 }
