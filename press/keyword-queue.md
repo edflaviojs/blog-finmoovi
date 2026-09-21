@@ -1,7 +1,7 @@
 # 🗂️ Fila de Keywords (Fase 3)
 
-**Atualizado em:** 2026-09-15T22:02:56.334Z
-**Totais:** 55 pendente(s) · 98 usada(s) · 59 pulada(s)
+**Atualizado em:** 2026-09-21T13:26:41.119Z
+**Totais:** 55 pendente(s) · 102 usada(s) · 59 pulada(s)
 
 ## ⏳ Pendentes por fonte
 
@@ -54,10 +54,6 @@
 
 ### Lacunas do GSC (prioridade 2) — 11
 
-- outstanding balance definition
-- expense control
-- installments
-- recurring fee definition
 - recurring payments financial planning
 - gastos recurrentes
 - parcelados
@@ -65,6 +61,10 @@
 - gasto recurrente
 - calculadora tabela price
 - calculadora sac price
+- hipoteca
+- tudo sobre investimentos
+- calculadora tabela sac
+- debenture
 
 ### Autocomplete (prioridade 3) — 0
 
@@ -74,16 +74,16 @@ _Nenhuma._
 
 | Keyword | Usada por | Em |
 |---|---|---|
+| recurring fee definition | gerar-dicas-financeiras | 2026-09-20 |
+| installments | gerar-dicas-financeiras | 2026-09-19 |
+| expense control | gerar-dicas-financeiras | 2026-09-18 |
+| outstanding balance definition | gerar-dicas-financeiras | 2026-09-16 |
 | control de gasto | gerar-post-inteligente | 2026-09-15 |
 | economizar agua | gerar-dicas-financeiras | 2026-09-15 |
 | how do freelancers organize finances | gerar-post-orcamento | 2026-09-14 |
 | o que é fatura | gerar-dicas-financeiras | 2026-09-14 |
 | is credit card worth it 2026 | gerar-dicas-financeiras | 2026-09-13 |
 | ejemplo de flujo de caja en excel | gerar-dicas-financeiras | 2026-09-12 |
-| control de gastos | gerar-dicas-financeiras | 2026-09-11 |
-| define outstanding balance | gerar-dicas-financeiras | 2026-09-10 |
-| de economizar água | gerar-post-investimentos | 2026-09-09 |
-| fundo fixo | gerar-dicas-financeiras | 2026-09-09 |
 
 ## ⏭️ Puladas (já cobertas)
 

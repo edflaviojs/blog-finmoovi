@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-20T14:21:55.685Z",
+  "updatedAt": "2026-09-21T13:26:41.119Z",
   "sourceCursor": 1,
   "entries": [
     {
@@ -2107,6 +2107,38 @@
       "source": "gsc-gap",
       "status": "pending",
       "addedAt": "2026-09-15T22:02:55.545Z"
+    },
+    {
+      "keyword": "hipoteca",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-09-21T13:26:40.477Z"
+    },
+    {
+      "keyword": "tudo sobre investimentos",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-09-21T13:26:40.478Z"
+    },
+    {
+      "keyword": "calculadora tabela sac",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-09-21T13:26:40.478Z"
+    },
+    {
+      "keyword": "debenture",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-09-21T13:26:40.478Z"
     }
   ]
 }
