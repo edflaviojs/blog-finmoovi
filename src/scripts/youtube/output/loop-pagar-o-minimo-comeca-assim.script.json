@@ -1,0 +1,118 @@
+{
+  "slug": "loop-pagar-o-minimo-comeca-assim",
+  "formato": "loop16",
+  "term": "Pagar só o mínimo",
+  "category": "vida",
+  "keyword": "MÍNIMO",
+  "valor": "R$ 90",
+  "situacao": "pagar-o-minimo",
+  "gancho": "comeca-assim",
+  "ganchoFamilia": "começa assim",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ratoeira",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Quer aprender a não pagar só o mínimo? Começa assim",
+      "durationSec": 4.11,
+      "shots": [
+        {
+          "anchor": "aprender",
+          "visual": {
+            "type": "statement",
+            "text": "Aprenda"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "pagar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu paguei noventa reais e não sabia onde foi",
+      "durationSec": 3.7,
+      "shots": [
+        {
+          "anchor": "paguei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "noventa",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 90"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Agora eu verifico tudo, não quero mais errar",
+      "durationSec": 3.29,
+      "shots": [
+        {
+          "anchor": "verifico",
+          "visual": {
+            "type": "statement",
+            "text": "Verifique"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "quero",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Pagar só o mínimo, não, começa assim, com noventa reais",
+      "durationSec": 4.11,
+      "shots": [
+        {
+          "anchor": "Pagar",
+          "visual": {
+            "type": "statement",
+            "text": "Não pague"
+          }
+        },
+        {
+          "anchor": "mínimo",
+          "visual": {
+            "type": "statement",
+            "text": "Aprenda"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.21
+}
