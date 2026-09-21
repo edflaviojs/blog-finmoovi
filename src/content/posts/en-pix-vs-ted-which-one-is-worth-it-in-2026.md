@@ -59,7 +59,7 @@ João sold his car for $9,000 and needed the money in his account. He chose a TE
 | **Operating hours**          | 24 h/7 days                                    | Business hours only (until 5 p.m.)           |
 | **Availability**             | All institutions that have adopted PIX       | Traditional banks and some fintechs          |
 | **Security**                 | Advanced encryption, key validation           | Central Bank payment network                 |
-| **Best for**                 | Small‑to‑medium transfers, recurring payments | Large amounts, business payments             |
+| **Best for**                 | Small‑to‑medium transfers, [recurring payments](/en/posts/en-how-to-organize-recurring-payments-and-gain-peace-of-mind-in) | Large amounts, business payments             |
 | **Additional fees**          | None for most accounts                        | Possible account‑maintenance fees            |
 
 ![Comparison table](/images/posts/pix-vs-ted-qual-vale-mais-a-pena-em-2026-4.webp)
