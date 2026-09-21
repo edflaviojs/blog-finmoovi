@@ -1,0 +1,209 @@
+{
+  "slug": "yahoo-finance",
+  "term": "yahoo finance",
+  "category": "basico",
+  "keyword": "finance",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Tá difícil achar o preço da ação na TV?"
+  },
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "montanha-russa",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Tá difícil achar o preço da ação na TV? O Yahoo Finance mostra tudo na hora.",
+      "durationSec": 6.2,
+      "shots": [
+        {
+          "anchor": "achar",
+          "visual": {
+            "type": "statement",
+            "text": "Encontre já"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "Yahoo",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          }
+        },
+        {
+          "anchor": "tudo",
+          "visual": {
+            "type": "statement",
+            "text": "Tudo ao vivo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Todo dia, no ônibus, a gente vê a ação da Petrobras subir e descer, e não sabe onde conferir.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "Todo",
+          "visual": {
+            "type": "statement",
+            "text": "No trajeto"
+          }
+        },
+        {
+          "anchor": "Petrobras",
+          "visual": {
+            "type": "icon",
+            "icon": "money"
+          }
+        },
+        {
+          "anchor": "onde",
+          "visual": {
+            "type": "statement",
+            "text": "Veja aqui"
+          },
+          "sfx": "ding"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Um erro de informação custa cinquenta reais por dia. No fim do mês isso vira mil e quinhentos reais perdidos.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "erro",
+          "visual": {
+            "type": "statement",
+            "text": "Cuidado"
+          }
+        },
+        {
+          "anchor": "cinquenta",
+          "visual": {
+            "type": "number",
+            "text": "R$ 50"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "quinhentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu entrei no Yahoo Finance, peguei o preço da PETRquatro e joguei no FinMoovi. Ele me mostrou mil reais a menos.",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "Yahoo",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Preço da PETR4"
+          }
+        },
+        {
+          "anchor": "joguei",
+          "visual": {
+            "type": "statement",
+            "text": "Valor exato"
+          },
+          "sfx": "typewriter"
+        },
+        {
+          "anchor": "mostrou",
+          "visual": {
+            "type": "statement",
+            "text": "Economia real"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu número? Procura o FinMoovi, tem sete dias grátis.",
+      "durationSec": 4.6,
+      "shots": [
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "statement",
+            "text": "Curioso?"
+          }
+        },
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "icon",
+            "icon": "target"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Yahoo Finance coloca tudo na sua mão, sem mistério. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 6.2,
+      "shots": [
+        {
+          "anchor": "Finance",
+          "visual": {
+            "type": "icon",
+            "icon": "shield"
+          }
+        },
+        {
+          "anchor": "mistério",
+          "visual": {
+            "type": "statement",
+            "text": "Sem mistério"
+          }
+        },
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "statement",
+            "text": "Controle total"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja seu número grátis",
+    "target": "app"
+  },
+  "totalDurationSec": 40.1
+}
