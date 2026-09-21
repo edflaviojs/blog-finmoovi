@@ -1972,8 +1972,102 @@
           "titulo": "Oportunidade no Banco BMG"
         }
       ]
+    },
+    {
+      "videoId": "B-f1sjU7uFU",
+      "title": "Investir R$ 100 por mês pode mudar sua vida?",
+      "channel": "Investidor Sardinha l Raul Sena",
+      "duracaoSeg": 1125,
+      "idioma": "pt",
+      "viewsPerDay": 80805,
+      "vistoEm": "2026-09-21",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "Vale a pena investir com pouco dinheiro?"
+        },
+        {
+          "seg": 53,
+          "titulo": "A mágica dos juros compostos"
+        },
+        {
+          "seg": 150,
+          "titulo": "O fator tempo nos investimentos"
+        },
+        {
+          "seg": 295,
+          "titulo": "Por que começar a investir?"
+        },
+        {
+          "seg": 385,
+          "titulo": "Como evitar erros nos investimentos?"
+        },
+        {
+          "seg": 467,
+          "titulo": "O preço de errar: evite perder dinheiro"
+        },
+        {
+          "seg": 605,
+          "titulo": "Empreender ou investir?"
+        },
+        {
+          "seg": 660,
+          "titulo": "Como chegar no primeiro milhão?"
+        },
+        {
+          "seg": 740,
+          "titulo": "O segredo de Warren Buffett"
+        },
+        {
+          "seg": 805,
+          "titulo": "Por que o brasileiro não investe?"
+        },
+        {
+          "seg": 865,
+          "titulo": "Como ter controle financeiro?"
+        },
+        {
+          "seg": 985,
+          "titulo": "Aprenda a investir melhor"
+        }
+      ]
+    },
+    {
+      "videoId": "BXTAuLDZkpo",
+      "title": "PLANILHA de ORGANIZAÇÃO FINANCEIRA (Atualizada)",
+      "channel": "Primo Pobre",
+      "duracaoSeg": 1651,
+      "idioma": "pt",
+      "viewsPerDay": 39445,
+      "vistoEm": "2026-09-21",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "ABERTURA"
+        },
+        {
+          "seg": 32,
+          "titulo": "COMO ORGANIZAR SUAS FINANÇAS"
+        },
+        {
+          "seg": 80,
+          "titulo": "VOCÊ É UMA PESSOA ORGANIZADA?"
+        },
+        {
+          "seg": 140,
+          "titulo": "PREENCHE A PLANILHA UMA VEZ"
+        },
+        {
+          "seg": 177,
+          "titulo": "PLANILHA DO PRIMO POBRE"
+        },
+        {
+          "seg": 1606,
+          "titulo": "FINALIZAÇÃO"
+        }
+      ]
     }
   ],
-  "atualizadoEm": "2026-09-20T08:55:17.981Z",
-  "total": 36
+  "atualizadoEm": "2026-09-21T09:26:18.851Z",
+  "total": 38
 }

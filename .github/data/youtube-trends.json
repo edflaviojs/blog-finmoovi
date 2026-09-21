@@ -1,43 +1,43 @@
 {
-  "generatedAt": "2026-09-20T08:55:17.982Z",
+  "generatedAt": "2026-09-21T09:26:18.852Z",
   "periodDays": 60,
-  "totalAnalyzed": 94,
+  "totalAnalyzed": 95,
   "contagem": {
     "shorts": 24,
-    "longos": 70,
+    "longos": 71,
     "naoPortugues": 16
   },
   "aggregate": {
     "topPattern": "statement",
-    "avgViewsPerDay": 3667,
+    "avgViewsPerDay": 3649,
     "titleStats": {
-      "percentWithNumber": 46,
+      "percentWithNumber": 44,
       "percentWithQuestion": 17,
       "avgWordCount": 11,
-      "avgCharCount": 68
+      "avgCharCount": 69
     },
     "pillarHeat": {
-      "investimento": 154369.85972787818,
-      "mindset": 106107.23101158053,
-      "controle": 62678.854965233455,
-      "ferramentas": 21588.276696905898
+      "investimento": 116124.04730775367,
+      "ferramentas": 59013.99568816594,
+      "mindset": 113604.45761479894,
+      "controle": 57943.04681045998
     },
     "sampleTitles": [
-      "Por que começar a investir com pouco dinheiro é uma ideia brilhante?",
+      "Investir R$ 100 por mês pode mudar sua vida?",
+      "PLANILHA de ORGANIZAÇÃO FINANCEIRA (Atualizada)",
       "8 REGRAS MINIMALISTAS DE FINANÇAS PARA TER ESTABILIDADE FINANCEIRA | Primo Pobre",
       "El secreto para no pelear por los gastos #amor #dinero #tips 🌝",
-      "my low consumption habits",
-      "o SEGREDO da EDUCAÇÃO FINANCEIRA que seus pais não te ensinaram"
+      "my low consumption habits"
     ]
   },
   "estudoDeCapitulos": {
     "fonte": "arquivo acumulado (.github/data/youtube-capitulos.json)",
-    "comCapitulos": 36,
+    "comCapitulos": 38,
     "mediaDeCapitulos": 11,
     "minDeCapitulos": 5,
     "maxDeCapitulos": 26,
-    "duracaoMediaDoPrimeiroSeg": 72,
-    "mediaSegundosPorCapitulo": 140,
+    "duracaoMediaDoPrimeiroSeg": 71,
+    "mediaSegundosPorCapitulo": 142,
     "aberturas": [
       "Introdução",
       "Introdução",
@@ -66,35 +66,131 @@
   "topVideos": [
     {
       "videoId": "B-f1sjU7uFU",
-      "title": "Por que começar a investir com pouco dinheiro é uma ideia brilhante?",
+      "title": "Investir R$ 100 por mês pode mudar sua vida?",
       "channel": "Investidor Sardinha l Raul Sena",
       "publishedAt": "2026-09-18T22:32:19Z",
-      "views": 168697,
-      "likes": 6068,
-      "viewsPerDay": 117755.24823826672,
-      "likeRatio": 0.035969815705080704,
+      "views": 198307,
+      "likes": 7098,
+      "viewsPerDay": 80804.90486010496,
+      "likeRatio": 0.03579298764037578,
       "duracaoSeg": 1125,
       "formato": "longo",
       "idioma": "pt",
-      "capitulos": null,
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "Vale a pena investir com pouco dinheiro?"
+        },
+        {
+          "seg": 53,
+          "titulo": "A mágica dos juros compostos"
+        },
+        {
+          "seg": 150,
+          "titulo": "O fator tempo nos investimentos"
+        },
+        {
+          "seg": 295,
+          "titulo": "Por que começar a investir?"
+        },
+        {
+          "seg": 385,
+          "titulo": "Como evitar erros nos investimentos?"
+        },
+        {
+          "seg": 467,
+          "titulo": "O preço de errar: evite perder dinheiro"
+        },
+        {
+          "seg": 605,
+          "titulo": "Empreender ou investir?"
+        },
+        {
+          "seg": 660,
+          "titulo": "Como chegar no primeiro milhão?"
+        },
+        {
+          "seg": 740,
+          "titulo": "O segredo de Warren Buffett"
+        },
+        {
+          "seg": 805,
+          "titulo": "Por que o brasileiro não investe?"
+        },
+        {
+          "seg": 865,
+          "titulo": "Como ter controle financeiro?"
+        },
+        {
+          "seg": 985,
+          "titulo": "Aprenda a investir melhor"
+        }
+      ],
       "titlePatterns": {
-        "hasNumber": false,
+        "hasNumber": true,
         "hasQuestion": true,
         "hasEmoji": false,
-        "wordCount": 12,
-        "charCount": 68
+        "wordCount": 9,
+        "charCount": 44
       },
       "pillar": "investimento"
+    },
+    {
+      "videoId": "BXTAuLDZkpo",
+      "title": "PLANILHA de ORGANIZAÇÃO FINANCEIRA (Atualizada)",
+      "channel": "Primo Pobre",
+      "publishedAt": "2026-09-10T21:00:06Z",
+      "views": 414893,
+      "likes": 10936,
+      "viewsPerDay": 39445.23126922776,
+      "likeRatio": 0.026358603302538246,
+      "duracaoSeg": 1651,
+      "formato": "longo",
+      "idioma": "pt",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "ABERTURA"
+        },
+        {
+          "seg": 32,
+          "titulo": "COMO ORGANIZAR SUAS FINANÇAS"
+        },
+        {
+          "seg": 80,
+          "titulo": "VOCÊ É UMA PESSOA ORGANIZADA?"
+        },
+        {
+          "seg": 140,
+          "titulo": "PREENCHE A PLANILHA UMA VEZ"
+        },
+        {
+          "seg": 177,
+          "titulo": "PLANILHA DO PRIMO POBRE"
+        },
+        {
+          "seg": 1606,
+          "titulo": "FINALIZAÇÃO"
+        }
+      ],
+      "titlePatterns": {
+        "hasNumber": false,
+        "hasQuestion": false,
+        "hasEmoji": false,
+        "wordCount": 5,
+        "charCount": 47
+      },
+      "pillar": "ferramentas"
     },
     {
       "videoId": "pd4Ot7IZXPA",
       "title": "8 REGRAS MINIMALISTAS DE FINANÇAS PARA TER ESTABILIDADE FINANCEIRA | Primo Pobre",
       "channel": "Mentalidade que Transforma",
       "publishedAt": "2026-09-09T15:00:14Z",
-      "views": 238821,
-      "likes": 4797,
-      "viewsPerDay": 22223.018366548073,
-      "likeRatio": 0.020086173326466266,
+      "views": 255266,
+      "likes": 5145,
+      "viewsPerDay": 21691.354135639504,
+      "likeRatio": 0.020155445691944874,
       "duracaoSeg": 2189,
       "formato": "longo",
       "idioma": "pt",
@@ -113,10 +209,10 @@
       "title": "El secreto para no pelear por los gastos #amor #dinero #tips 🌝",
       "channel": "Saúl Tijeras",
       "publishedAt": "2026-09-13T23:15:30Z",
-      "views": 137591,
-      "likes": 7746,
-      "viewsPerDay": 21489.825927448615,
-      "likeRatio": 0.05629728688649693,
+      "views": 148050,
+      "likes": 8205,
+      "viewsPerDay": 19941.674026982604,
+      "likeRatio": 0.05542046605876393,
       "duracaoSeg": 169,
       "formato": "short",
       "idioma": "es",
@@ -135,10 +231,10 @@
       "title": "my low consumption habits",
       "channel": "Lizzie Phan",
       "publishedAt": "2026-08-31T02:27:14Z",
-      "views": 353906,
-      "likes": 7490,
-      "viewsPerDay": 17460.057991381655,
-      "likeRatio": 0.02116381185964635,
+      "views": 368235,
+      "likes": 7820,
+      "viewsPerDay": 17295.33370699505,
+      "likeRatio": 0.021236438687251346,
       "duracaoSeg": 870,
       "formato": "longo",
       "idioma": "en",
@@ -153,36 +249,14 @@
       "pillar": "controle"
     },
     {
-      "videoId": "RYuE7fYAOm4",
-      "title": "o SEGREDO da EDUCAÇÃO FINANCEIRA que seus pais não te ensinaram",
-      "channel": "Edson Castro [Oficial]",
-      "publishedAt": "2026-09-14T15:00:37Z",
-      "views": 98039,
-      "likes": 2321,
-      "viewsPerDay": 17061.257859919748,
-      "likeRatio": 0.023674252083354583,
-      "duracaoSeg": 979,
-      "formato": "longo",
-      "idioma": "pt",
-      "capitulos": null,
-      "titlePatterns": {
-        "hasNumber": false,
-        "hasQuestion": false,
-        "hasEmoji": false,
-        "wordCount": 11,
-        "charCount": 63
-      },
-      "pillar": "mindset"
-    },
-    {
       "videoId": "Gwn8-yGP6ug",
       "title": "COMO ORGANIZAR SUAS FINANÇAS DE SETEMBRO A DEZEMBRO DE 2026",
       "channel": "Corts_podcast",
       "publishedAt": "2026-09-04T17:41:48Z",
-      "views": 265724,
-      "likes": 7367,
-      "viewsPerDay": 16996.15362954003,
-      "likeRatio": 0.027724255242281465,
+      "views": 270995,
+      "likes": 7491,
+      "viewsPerDay": 16270.21075952829,
+      "likeRatio": 0.02764257643129947,
       "duracaoSeg": 1003,
       "formato": "longo",
       "idioma": "pt",
@@ -197,14 +271,36 @@
       "pillar": "mindset"
     },
     {
+      "videoId": "RYuE7fYAOm4",
+      "title": "o SEGREDO da EDUCAÇÃO FINANCEIRA que seus pais não te ensinaram",
+      "channel": "Edson Castro [Oficial]",
+      "publishedAt": "2026-09-14T15:00:37Z",
+      "views": 100377,
+      "likes": 2379,
+      "viewsPerDay": 14831.483727877474,
+      "likeRatio": 0.023700648554947846,
+      "duracaoSeg": 979,
+      "formato": "longo",
+      "idioma": "pt",
+      "capitulos": null,
+      "titlePatterns": {
+        "hasNumber": false,
+        "hasQuestion": false,
+        "hasEmoji": false,
+        "wordCount": 11,
+        "charCount": 63
+      },
+      "pillar": "mindset"
+    },
+    {
       "videoId": "cBc4G5OLRvE",
       "title": "RataNews na Bienal: encontramos uma leitora que preparou uma planilha pra otimizar gastos no evento",
       "channel": "Livraria em Casa",
       "publishedAt": "2026-09-13T23:44:24Z",
-      "views": 105039,
-      "likes": 6797,
-      "viewsPerDay": 16457.165866238134,
-      "likeRatio": 0.06470929845105151,
+      "views": 108244,
+      "likes": 6994,
+      "viewsPerDay": 14619.453674741884,
+      "likeRatio": 0.06461328110565019,
       "duracaoSeg": 162,
       "formato": "short",
       "idioma": "pt",
@@ -219,14 +315,36 @@
       "pillar": "ferramentas"
     },
     {
+      "videoId": "xV2A3YN7r88",
+      "title": "COMO ORGANIZAR SUAS FINANÇAS DE OUTUBRO A DEZEMBRO DE 2026",
+      "channel": "Motiva Henrique ",
+      "publishedAt": "2026-09-17T08:00:27Z",
+      "views": 58254,
+      "likes": 1457,
+      "viewsPerDay": 14349.636358003769,
+      "likeRatio": 0.025011158032066466,
+      "duracaoSeg": 1375,
+      "formato": "longo",
+      "idioma": "pt",
+      "capitulos": null,
+      "titlePatterns": {
+        "hasNumber": true,
+        "hasQuestion": false,
+        "hasEmoji": false,
+        "wordCount": 10,
+        "charCount": 58
+      },
+      "pillar": "mindset"
+    },
+    {
       "videoId": "jxIC4Ton9-8",
       "title": "COMEÇAR COM POUCO NÃO FAZ DIFERENÇA?! 🤔💸 #shorts #investimentos",
       "channel": "Guilherme Agnello | Dividendista",
       "publishedAt": "2026-08-28T22:00:10Z",
-      "views": 195852,
-      "likes": 6791,
-      "viewsPerDay": 8722.003137714752,
-      "likeRatio": 0.034674141698833816,
+      "views": 196044,
+      "likes": 6807,
+      "viewsPerDay": 8350.658492069133,
+      "likeRatio": 0.034721797147579114,
       "duracaoSeg": 75,
       "formato": "short",
       "idioma": "pt",
@@ -245,10 +363,10 @@
       "title": "PAGAR NO PIX FAZ VOCÊ PERDER DINHEIRO! 💸🔥 #shorts #dinheiro #educaçãofinanceira",
       "channel": "Guilherme Agnello | Dividendista",
       "publishedAt": "2026-09-18T22:30:31Z",
-      "views": 10620,
-      "likes": 600,
-      "viewsPerDay": 7406.56415756762,
-      "likeRatio": 0.05649717514124294,
+      "views": 13171,
+      "likes": 728,
+      "viewsPerDay": 5364.090861220957,
+      "likeRatio": 0.05527294814364893,
       "duracaoSeg": 76,
       "formato": "short",
       "idioma": "pt",
@@ -267,10 +385,10 @@
       "title": "JOVEM CAI NO SERASA e dá dicas de EDUCAÇÃO FINANCEIRA | CORTES do CASTRINHO",
       "channel": "CORTES do CASTRINHO",
       "publishedAt": "2026-09-05T13:00:19Z",
-      "views": 81457,
-      "likes": 2359,
-      "viewsPerDay": 5492.7784105906,
-      "likeRatio": 0.028960064819475308,
+      "views": 81628,
+      "likes": 2368,
+      "viewsPerDay": 5149.585033279281,
+      "likeRatio": 0.029009653550252364,
       "duracaoSeg": 2142,
       "formato": "longo",
       "idioma": "pt",
@@ -289,10 +407,10 @@
       "title": "DESAFIO: Como Juntar R$100 MIL Começando com pouco [Funciona MESMO]",
       "channel": "Financeologia",
       "publishedAt": "2026-08-24T21:00:03Z",
-      "views": 135056,
-      "likes": 4237,
-      "viewsPerDay": 5097.091190993631,
-      "likeRatio": 0.031372171543655965,
+      "views": 137575,
+      "likes": 4293,
+      "viewsPerDay": 4999.4149961701005,
+      "likeRatio": 0.031204797383245504,
       "duracaoSeg": 1225,
       "formato": "longo",
       "idioma": "pt",
@@ -307,36 +425,14 @@
       "pillar": "investimento"
     },
     {
-      "videoId": "9DRR0IV-xr0",
-      "title": "ACTUALIZACIÓN sobre La NUEVA pensión en Venezuela 🇻🇪 NUEVO PAGO",
-      "channel": "Rafael Chapardi",
-      "publishedAt": "2026-09-17T21:32:16Z",
-      "views": 12216,
-      "likes": 424,
-      "viewsPerDay": 4937.151933299231,
-      "likeRatio": 0.03470857891290111,
-      "duracaoSeg": 303,
-      "formato": "longo",
-      "idioma": "es",
-      "capitulos": null,
-      "titlePatterns": {
-        "hasNumber": false,
-        "hasQuestion": false,
-        "hasEmoji": false,
-        "wordCount": 10,
-        "charCount": 65
-      },
-      "pillar": "controle"
-    },
-    {
       "videoId": "wCB96kN8Gcw",
       "title": "How to Build Financial Stability When Living Paycheck to Paycheck",
       "channel": "TODAY",
       "publishedAt": "2026-08-25T15:36:56Z",
-      "views": 122369,
-      "likes": 2585,
-      "viewsPerDay": 4757.541047434474,
-      "likeRatio": 0.02112463123830382,
+      "views": 122536,
+      "likes": 2587,
+      "viewsPerDay": 4582.05258339267,
+      "likeRatio": 0.021112162956192466,
       "duracaoSeg": 263,
       "formato": "longo",
       "idioma": "en",
@@ -355,10 +451,10 @@
       "title": "COMO SAIR DA POBREZA: AULA COMPLETA DE EDUCAÇÃO FINANCEIRA",
       "channel": "POP SHOW TV",
       "publishedAt": "2026-08-14T21:00:17Z",
-      "views": 159584,
-      "likes": 10294,
-      "viewsPerDay": 4372.5806453080895,
-      "likeRatio": 0.06450521355524363,
+      "views": 162936,
+      "likes": 10426,
+      "viewsPerDay": 4342.867996253291,
+      "likeRatio": 0.06398831443020572,
       "duracaoSeg": 2456,
       "formato": "longo",
       "idioma": "pt",
@@ -438,10 +534,10 @@
       "title": "Como eu montaria hoje uma carteira começando do zero!",
       "channel": "Bruno OM ",
       "publishedAt": "2026-08-21T22:00:08Z",
-      "views": 125905,
-      "likes": 7788,
-      "viewsPerDay": 4274.492803424249,
-      "likeRatio": 0.061856161391525354,
+      "views": 128740,
+      "likes": 7939,
+      "viewsPerDay": 4224.239024569048,
+      "likeRatio": 0.061666925586453314,
       "duracaoSeg": 1129,
       "formato": "longo",
       "idioma": "pt",
@@ -549,14 +645,36 @@
       "pillar": "investimento"
     },
     {
+      "videoId": "9DRR0IV-xr0",
+      "title": "ACTUALIZACIÓN sobre La NUEVA pensión en Venezuela 🇻🇪 NUEVO PAGO",
+      "channel": "Rafael Chapardi",
+      "publishedAt": "2026-09-17T21:32:16Z",
+      "views": 12811,
+      "likes": 440,
+      "viewsPerDay": 3664.640492381934,
+      "likeRatio": 0.034345484349387244,
+      "duracaoSeg": 303,
+      "formato": "longo",
+      "idioma": "es",
+      "capitulos": null,
+      "titlePatterns": {
+        "hasNumber": false,
+        "hasQuestion": false,
+        "hasEmoji": false,
+        "wordCount": 10,
+        "charCount": 65
+      },
+      "pillar": "controle"
+    },
+    {
       "videoId": "2aU3gDT-3Ng",
       "title": "Quer ter paz financeira? Faça isso.",
       "channel": "Bruno OM ",
       "publishedAt": "2026-09-07T15:00:05Z",
-      "views": 46961,
-      "likes": 2508,
-      "viewsPerDay": 3684.1795962152164,
-      "likeRatio": 0.05340601775941739,
+      "views": 47932,
+      "likes": 2550,
+      "viewsPerDay": 3481.354820754627,
+      "likeRatio": 0.053200367186848035,
       "duracaoSeg": 54,
       "formato": "short",
       "idioma": "pt",
@@ -575,10 +693,10 @@
       "title": "AULÃO PRÉ-PROVA OLITEF 2026 | Olimpíada do Tesouro Direto de Educação Financeira (@clubedosonhos)",
       "channel": "Medalhei Olimpíadas",
       "publishedAt": "2026-09-08T00:15:45Z",
-      "views": 40911,
-      "likes": 1798,
-      "viewsPerDay": 3309.7413773150224,
-      "likeRatio": 0.04394906015497055,
+      "views": 41031,
+      "likes": 1800,
+      "viewsPerDay": 3066.059514858471,
+      "likeRatio": 0.04386926957666155,
       "duracaoSeg": 7240,
       "formato": "longo",
       "idioma": "pt",
@@ -593,61 +711,14 @@
       "pillar": "mindset"
     },
     {
-      "videoId": "9h4NtsPAVik",
-      "title": "Melhores CDB para investir pouco dinheiro (R$5.000)",
-      "channel": "Financeologia",
-      "publishedAt": "2026-09-15T21:00:06Z",
-      "views": 14806,
-      "likes": 782,
-      "viewsPerDay": 3292.6760619571814,
-      "likeRatio": 0.05281642577333513,
-      "duracaoSeg": 1340,
-      "formato": "longo",
-      "idioma": "pt",
-      "capitulos": [
-        {
-          "seg": 0,
-          "titulo": "Onde investir R$ 5.000 hoje?"
-        },
-        {
-          "seg": 75,
-          "titulo": "Definindo sua realidade financeira"
-        },
-        {
-          "seg": 131,
-          "titulo": "Curto, médio e longo prazo: entenda as diferenças"
-        },
-        {
-          "seg": 526,
-          "titulo": "Passo a passo: investindo no PagBank"
-        },
-        {
-          "seg": 711,
-          "titulo": "Investindo no Banco Sofisa: guia completo"
-        },
-        {
-          "seg": 1131,
-          "titulo": "Oportunidade no Banco BMG"
-        }
-      ],
-      "titlePatterns": {
-        "hasNumber": true,
-        "hasQuestion": false,
-        "hasEmoji": false,
-        "wordCount": 7,
-        "charCount": 51
-      },
-      "pillar": "investimento"
-    },
-    {
       "videoId": "DmtZZgeK9rU",
       "title": "Investir depois dos 50 anos com pouco dinheiro: é possível ter resultados?",
       "channel": "Financeologia",
       "publishedAt": "2026-08-05T21:00:26Z",
-      "views": 131914,
-      "likes": 5889,
-      "viewsPerDay": 2899.4372457994727,
-      "likeRatio": 0.04464272177327653,
+      "views": 133848,
+      "likes": 5935,
+      "viewsPerDay": 2877.340684098049,
+      "likeRatio": 0.0443413424182655,
       "duracaoSeg": 1438,
       "formato": "longo",
       "idioma": "pt",
@@ -660,28 +731,6 @@
         "charCount": 74
       },
       "pillar": "investimento"
-    },
-    {
-      "videoId": "22i4HkGKBtE",
-      "title": "R$ 3.000 PODEM MUDAR SUA VIDA FINANCEIRA",
-      "channel": "Manual da Evolução",
-      "publishedAt": "2026-09-16T20:57:19Z",
-      "views": 9993,
-      "likes": 478,
-      "viewsPerDay": 2856.29724894469,
-      "likeRatio": 0.04783348343840688,
-      "duracaoSeg": 698,
-      "formato": "longo",
-      "idioma": "pt",
-      "capitulos": null,
-      "titlePatterns": {
-        "hasNumber": true,
-        "hasQuestion": false,
-        "hasEmoji": false,
-        "wordCount": 7,
-        "charCount": 40
-      },
-      "pillar": "mindset"
     }
   ],
   "topShorts": [
@@ -690,10 +739,10 @@
       "title": "El secreto para no pelear por los gastos #amor #dinero #tips 🌝",
       "channel": "Saúl Tijeras",
       "publishedAt": "2026-09-13T23:15:30Z",
-      "views": 137591,
-      "likes": 7746,
-      "viewsPerDay": 21489.825927448615,
-      "likeRatio": 0.05629728688649693,
+      "views": 148050,
+      "likes": 8205,
+      "viewsPerDay": 19941.674026982604,
+      "likeRatio": 0.05542046605876393,
       "duracaoSeg": 169,
       "formato": "short",
       "idioma": "es",
@@ -712,10 +761,10 @@
       "title": "RataNews na Bienal: encontramos uma leitora que preparou uma planilha pra otimizar gastos no evento",
       "channel": "Livraria em Casa",
       "publishedAt": "2026-09-13T23:44:24Z",
-      "views": 105039,
-      "likes": 6797,
-      "viewsPerDay": 16457.165866238134,
-      "likeRatio": 0.06470929845105151,
+      "views": 108244,
+      "likes": 6994,
+      "viewsPerDay": 14619.453674741884,
+      "likeRatio": 0.06461328110565019,
       "duracaoSeg": 162,
       "formato": "short",
       "idioma": "pt",
@@ -734,10 +783,10 @@
       "title": "COMEÇAR COM POUCO NÃO FAZ DIFERENÇA?! 🤔💸 #shorts #investimentos",
       "channel": "Guilherme Agnello | Dividendista",
       "publishedAt": "2026-08-28T22:00:10Z",
-      "views": 195852,
-      "likes": 6791,
-      "viewsPerDay": 8722.003137714752,
-      "likeRatio": 0.034674141698833816,
+      "views": 196044,
+      "likes": 6807,
+      "viewsPerDay": 8350.658492069133,
+      "likeRatio": 0.034721797147579114,
       "duracaoSeg": 75,
       "formato": "short",
       "idioma": "pt",
@@ -756,10 +805,10 @@
       "title": "PAGAR NO PIX FAZ VOCÊ PERDER DINHEIRO! 💸🔥 #shorts #dinheiro #educaçãofinanceira",
       "channel": "Guilherme Agnello | Dividendista",
       "publishedAt": "2026-09-18T22:30:31Z",
-      "views": 10620,
-      "likes": 600,
-      "viewsPerDay": 7406.56415756762,
-      "likeRatio": 0.05649717514124294,
+      "views": 13171,
+      "likes": 728,
+      "viewsPerDay": 5364.090861220957,
+      "likeRatio": 0.05527294814364893,
       "duracaoSeg": 76,
       "formato": "short",
       "idioma": "pt",
@@ -778,10 +827,10 @@
       "title": "Quer ter paz financeira? Faça isso.",
       "channel": "Bruno OM ",
       "publishedAt": "2026-09-07T15:00:05Z",
-      "views": 46961,
-      "likes": 2508,
-      "viewsPerDay": 3684.1795962152164,
-      "likeRatio": 0.05340601775941739,
+      "views": 47932,
+      "likes": 2550,
+      "viewsPerDay": 3481.354820754627,
+      "likeRatio": 0.053200367186848035,
       "duracaoSeg": 54,
       "formato": "short",
       "idioma": "pt",
@@ -800,10 +849,10 @@
       "title": "CÓDIGO poderoso para enriquecer #pablomarçal #educaçãofinanceira #prosperidade",
       "channel": "Códigos 459",
       "publishedAt": "2026-09-10T21:08:01Z",
-      "views": 25278,
-      "likes": 1800,
-      "viewsPerDay": 2663.3218272622626,
-      "likeRatio": 0.07120816520294328,
+      "views": 25594,
+      "likes": 1823,
+      "viewsPerDay": 2434.580570145874,
+      "likeRatio": 0.07122763147612722,
       "duracaoSeg": 151,
       "formato": "short",
       "idioma": "pt",
@@ -822,10 +871,10 @@
       "title": "Rating Common Insurance Advice From Instagram #personalfinance #money #insurance #health #advice",
       "channel": "Anshuman Sharma",
       "publishedAt": "2026-09-16T12:41:55Z",
-      "views": 8208,
-      "likes": 294,
-      "viewsPerDay": 2136.0539259495995,
-      "likeRatio": 0.035818713450292396,
+      "views": 9062,
+      "likes": 319,
+      "viewsPerDay": 1863.0222342128475,
+      "likeRatio": 0.03520194217612006,
       "duracaoSeg": 163,
       "formato": "short",
       "idioma": "en",
@@ -844,10 +893,10 @@
       "title": "Prosperidade sem organização? Ah, Me Poupe!",
       "channel": "Me Poupe!",
       "publishedAt": "2026-09-13T22:15:35Z",
-      "views": 10835,
-      "likes": 429,
-      "viewsPerDay": 1681.3481126411061,
-      "likeRatio": 0.03959390862944162,
+      "views": 11122,
+      "likes": 439,
+      "viewsPerDay": 1489.731978102003,
+      "likeRatio": 0.03947131810825391,
       "duracaoSeg": 19,
       "formato": "short",
       "idioma": "pt",
@@ -862,36 +911,14 @@
       "pillar": "mindset"
     },
     {
-      "videoId": "1RlaKRTmRe0",
-      "title": "ACTUALIZACIÓN sobre La NUEVA pensión en Venezuela 🇻🇪 PAGOS",
-      "channel": "Rafael Chapardi",
-      "publishedAt": "2026-09-17T21:15:18Z",
-      "views": 3465,
-      "likes": 80,
-      "viewsPerDay": 1393.7585440605026,
-      "likeRatio": 0.023088023088023088,
-      "duracaoSeg": 16,
-      "formato": "short",
-      "idioma": "es",
-      "capitulos": null,
-      "titlePatterns": {
-        "hasNumber": false,
-        "hasQuestion": false,
-        "hasEmoji": false,
-        "wordCount": 9,
-        "charCount": 60
-      },
-      "pillar": "controle"
-    },
-    {
       "videoId": "ifriZjZi9aM",
       "title": "Quem decidiu que educação financeira não é pra todo mundo?",
       "channel": "Me Poupe!",
       "publishedAt": "2026-09-04T22:15:37Z",
-      "views": 21097,
-      "likes": 1239,
-      "viewsPerDay": 1366.0135017198472,
-      "likeRatio": 0.058728729203204245,
+      "views": 21149,
+      "likes": 1243,
+      "viewsPerDay": 1284.4237804065363,
+      "likeRatio": 0.05877346446640503,
       "duracaoSeg": 61,
       "formato": "short",
       "idioma": "pt",
@@ -904,40 +931,158 @@
         "charCount": 58
       },
       "pillar": "mindset"
+    },
+    {
+      "videoId": "vODpxjGXuAY",
+      "title": "GASTOS INVISÍVEIS VÃO SUMIR COM SEU SALÁRIO! 👻💸 #shorts #finanças #educaçãofinanceira",
+      "channel": "Guilherme Agnello | Dividendista",
+      "publishedAt": "2026-08-11T21:20:26Z",
+      "views": 47811,
+      "likes": 1699,
+      "viewsPerDay": 1180.399863909199,
+      "likeRatio": 0.03553575537010312,
+      "duracaoSeg": 89,
+      "formato": "short",
+      "idioma": "pt",
+      "capitulos": null,
+      "titlePatterns": {
+        "hasNumber": false,
+        "hasQuestion": false,
+        "hasEmoji": false,
+        "wordCount": 11,
+        "charCount": 87
+      },
+      "pillar": "mindset"
     }
   ],
   "topLongos": [
     {
       "videoId": "B-f1sjU7uFU",
-      "title": "Por que começar a investir com pouco dinheiro é uma ideia brilhante?",
+      "title": "Investir R$ 100 por mês pode mudar sua vida?",
       "channel": "Investidor Sardinha l Raul Sena",
       "publishedAt": "2026-09-18T22:32:19Z",
-      "views": 168697,
-      "likes": 6068,
-      "viewsPerDay": 117755.24823826672,
-      "likeRatio": 0.035969815705080704,
+      "views": 198307,
+      "likes": 7098,
+      "viewsPerDay": 80804.90486010496,
+      "likeRatio": 0.03579298764037578,
       "duracaoSeg": 1125,
       "formato": "longo",
       "idioma": "pt",
-      "capitulos": null,
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "Vale a pena investir com pouco dinheiro?"
+        },
+        {
+          "seg": 53,
+          "titulo": "A mágica dos juros compostos"
+        },
+        {
+          "seg": 150,
+          "titulo": "O fator tempo nos investimentos"
+        },
+        {
+          "seg": 295,
+          "titulo": "Por que começar a investir?"
+        },
+        {
+          "seg": 385,
+          "titulo": "Como evitar erros nos investimentos?"
+        },
+        {
+          "seg": 467,
+          "titulo": "O preço de errar: evite perder dinheiro"
+        },
+        {
+          "seg": 605,
+          "titulo": "Empreender ou investir?"
+        },
+        {
+          "seg": 660,
+          "titulo": "Como chegar no primeiro milhão?"
+        },
+        {
+          "seg": 740,
+          "titulo": "O segredo de Warren Buffett"
+        },
+        {
+          "seg": 805,
+          "titulo": "Por que o brasileiro não investe?"
+        },
+        {
+          "seg": 865,
+          "titulo": "Como ter controle financeiro?"
+        },
+        {
+          "seg": 985,
+          "titulo": "Aprenda a investir melhor"
+        }
+      ],
       "titlePatterns": {
-        "hasNumber": false,
+        "hasNumber": true,
         "hasQuestion": true,
         "hasEmoji": false,
-        "wordCount": 12,
-        "charCount": 68
+        "wordCount": 9,
+        "charCount": 44
       },
       "pillar": "investimento"
+    },
+    {
+      "videoId": "BXTAuLDZkpo",
+      "title": "PLANILHA de ORGANIZAÇÃO FINANCEIRA (Atualizada)",
+      "channel": "Primo Pobre",
+      "publishedAt": "2026-09-10T21:00:06Z",
+      "views": 414893,
+      "likes": 10936,
+      "viewsPerDay": 39445.23126922776,
+      "likeRatio": 0.026358603302538246,
+      "duracaoSeg": 1651,
+      "formato": "longo",
+      "idioma": "pt",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "ABERTURA"
+        },
+        {
+          "seg": 32,
+          "titulo": "COMO ORGANIZAR SUAS FINANÇAS"
+        },
+        {
+          "seg": 80,
+          "titulo": "VOCÊ É UMA PESSOA ORGANIZADA?"
+        },
+        {
+          "seg": 140,
+          "titulo": "PREENCHE A PLANILHA UMA VEZ"
+        },
+        {
+          "seg": 177,
+          "titulo": "PLANILHA DO PRIMO POBRE"
+        },
+        {
+          "seg": 1606,
+          "titulo": "FINALIZAÇÃO"
+        }
+      ],
+      "titlePatterns": {
+        "hasNumber": false,
+        "hasQuestion": false,
+        "hasEmoji": false,
+        "wordCount": 5,
+        "charCount": 47
+      },
+      "pillar": "ferramentas"
     },
     {
       "videoId": "pd4Ot7IZXPA",
       "title": "8 REGRAS MINIMALISTAS DE FINANÇAS PARA TER ESTABILIDADE FINANCEIRA | Primo Pobre",
       "channel": "Mentalidade que Transforma",
       "publishedAt": "2026-09-09T15:00:14Z",
-      "views": 238821,
-      "likes": 4797,
-      "viewsPerDay": 22223.018366548073,
-      "likeRatio": 0.020086173326466266,
+      "views": 255266,
+      "likes": 5145,
+      "viewsPerDay": 21691.354135639504,
+      "likeRatio": 0.020155445691944874,
       "duracaoSeg": 2189,
       "formato": "longo",
       "idioma": "pt",
@@ -956,10 +1101,10 @@
       "title": "my low consumption habits",
       "channel": "Lizzie Phan",
       "publishedAt": "2026-08-31T02:27:14Z",
-      "views": 353906,
-      "likes": 7490,
-      "viewsPerDay": 17460.057991381655,
-      "likeRatio": 0.02116381185964635,
+      "views": 368235,
+      "likes": 7820,
+      "viewsPerDay": 17295.33370699505,
+      "likeRatio": 0.021236438687251346,
       "duracaoSeg": 870,
       "formato": "longo",
       "idioma": "en",
@@ -974,36 +1119,14 @@
       "pillar": "controle"
     },
     {
-      "videoId": "RYuE7fYAOm4",
-      "title": "o SEGREDO da EDUCAÇÃO FINANCEIRA que seus pais não te ensinaram",
-      "channel": "Edson Castro [Oficial]",
-      "publishedAt": "2026-09-14T15:00:37Z",
-      "views": 98039,
-      "likes": 2321,
-      "viewsPerDay": 17061.257859919748,
-      "likeRatio": 0.023674252083354583,
-      "duracaoSeg": 979,
-      "formato": "longo",
-      "idioma": "pt",
-      "capitulos": null,
-      "titlePatterns": {
-        "hasNumber": false,
-        "hasQuestion": false,
-        "hasEmoji": false,
-        "wordCount": 11,
-        "charCount": 63
-      },
-      "pillar": "mindset"
-    },
-    {
       "videoId": "Gwn8-yGP6ug",
       "title": "COMO ORGANIZAR SUAS FINANÇAS DE SETEMBRO A DEZEMBRO DE 2026",
       "channel": "Corts_podcast",
       "publishedAt": "2026-09-04T17:41:48Z",
-      "views": 265724,
-      "likes": 7367,
-      "viewsPerDay": 16996.15362954003,
-      "likeRatio": 0.027724255242281465,
+      "views": 270995,
+      "likes": 7491,
+      "viewsPerDay": 16270.21075952829,
+      "likeRatio": 0.02764257643129947,
       "duracaoSeg": 1003,
       "formato": "longo",
       "idioma": "pt",
@@ -1018,14 +1141,58 @@
       "pillar": "mindset"
     },
     {
+      "videoId": "RYuE7fYAOm4",
+      "title": "o SEGREDO da EDUCAÇÃO FINANCEIRA que seus pais não te ensinaram",
+      "channel": "Edson Castro [Oficial]",
+      "publishedAt": "2026-09-14T15:00:37Z",
+      "views": 100377,
+      "likes": 2379,
+      "viewsPerDay": 14831.483727877474,
+      "likeRatio": 0.023700648554947846,
+      "duracaoSeg": 979,
+      "formato": "longo",
+      "idioma": "pt",
+      "capitulos": null,
+      "titlePatterns": {
+        "hasNumber": false,
+        "hasQuestion": false,
+        "hasEmoji": false,
+        "wordCount": 11,
+        "charCount": 63
+      },
+      "pillar": "mindset"
+    },
+    {
+      "videoId": "xV2A3YN7r88",
+      "title": "COMO ORGANIZAR SUAS FINANÇAS DE OUTUBRO A DEZEMBRO DE 2026",
+      "channel": "Motiva Henrique ",
+      "publishedAt": "2026-09-17T08:00:27Z",
+      "views": 58254,
+      "likes": 1457,
+      "viewsPerDay": 14349.636358003769,
+      "likeRatio": 0.025011158032066466,
+      "duracaoSeg": 1375,
+      "formato": "longo",
+      "idioma": "pt",
+      "capitulos": null,
+      "titlePatterns": {
+        "hasNumber": true,
+        "hasQuestion": false,
+        "hasEmoji": false,
+        "wordCount": 10,
+        "charCount": 58
+      },
+      "pillar": "mindset"
+    },
+    {
       "videoId": "qzgjvDTBykA",
       "title": "JOVEM CAI NO SERASA e dá dicas de EDUCAÇÃO FINANCEIRA | CORTES do CASTRINHO",
       "channel": "CORTES do CASTRINHO",
       "publishedAt": "2026-09-05T13:00:19Z",
-      "views": 81457,
-      "likes": 2359,
-      "viewsPerDay": 5492.7784105906,
-      "likeRatio": 0.028960064819475308,
+      "views": 81628,
+      "likes": 2368,
+      "viewsPerDay": 5149.585033279281,
+      "likeRatio": 0.029009653550252364,
       "duracaoSeg": 2142,
       "formato": "longo",
       "idioma": "pt",
@@ -1044,10 +1211,10 @@
       "title": "DESAFIO: Como Juntar R$100 MIL Começando com pouco [Funciona MESMO]",
       "channel": "Financeologia",
       "publishedAt": "2026-08-24T21:00:03Z",
-      "views": 135056,
-      "likes": 4237,
-      "viewsPerDay": 5097.091190993631,
-      "likeRatio": 0.031372171543655965,
+      "views": 137575,
+      "likes": 4293,
+      "viewsPerDay": 4999.4149961701005,
+      "likeRatio": 0.031204797383245504,
       "duracaoSeg": 1225,
       "formato": "longo",
       "idioma": "pt",
@@ -1062,36 +1229,14 @@
       "pillar": "investimento"
     },
     {
-      "videoId": "9DRR0IV-xr0",
-      "title": "ACTUALIZACIÓN sobre La NUEVA pensión en Venezuela 🇻🇪 NUEVO PAGO",
-      "channel": "Rafael Chapardi",
-      "publishedAt": "2026-09-17T21:32:16Z",
-      "views": 12216,
-      "likes": 424,
-      "viewsPerDay": 4937.151933299231,
-      "likeRatio": 0.03470857891290111,
-      "duracaoSeg": 303,
-      "formato": "longo",
-      "idioma": "es",
-      "capitulos": null,
-      "titlePatterns": {
-        "hasNumber": false,
-        "hasQuestion": false,
-        "hasEmoji": false,
-        "wordCount": 10,
-        "charCount": 65
-      },
-      "pillar": "controle"
-    },
-    {
       "videoId": "wCB96kN8Gcw",
       "title": "How to Build Financial Stability When Living Paycheck to Paycheck",
       "channel": "TODAY",
       "publishedAt": "2026-08-25T15:36:56Z",
-      "views": 122369,
-      "likes": 2585,
-      "viewsPerDay": 4757.541047434474,
-      "likeRatio": 0.02112463123830382,
+      "views": 122536,
+      "likes": 2587,
+      "viewsPerDay": 4582.05258339267,
+      "likeRatio": 0.021112162956192466,
       "duracaoSeg": 263,
       "formato": "longo",
       "idioma": "en",
@@ -1104,89 +1249,6 @@
         "charCount": 65
       },
       "pillar": "controle"
-    },
-    {
-      "videoId": "jU-RIayJ-xk",
-      "title": "COMO SAIR DA POBREZA: AULA COMPLETA DE EDUCAÇÃO FINANCEIRA",
-      "channel": "POP SHOW TV",
-      "publishedAt": "2026-08-14T21:00:17Z",
-      "views": 159584,
-      "likes": 10294,
-      "viewsPerDay": 4372.5806453080895,
-      "likeRatio": 0.06450521355524363,
-      "duracaoSeg": 2456,
-      "formato": "longo",
-      "idioma": "pt",
-      "capitulos": [
-        {
-          "seg": 0,
-          "titulo": "ABERTURA"
-        },
-        {
-          "seg": 67,
-          "titulo": "PROBLEMAS FINANCEIROS"
-        },
-        {
-          "seg": 213,
-          "titulo": "O QUE É EDUCAÇÃO FINANCEIRA"
-        },
-        {
-          "seg": 379,
-          "titulo": "OS 7 PILARES DA EDUCAÇÃO FINANCEIRA"
-        },
-        {
-          "seg": 404,
-          "titulo": "VOCÊ PRECISA FICAR INDIGNADO"
-        },
-        {
-          "seg": 529,
-          "titulo": "ESTUDAR SOBRE EDUCAÇÃO FINANCEIRA"
-        },
-        {
-          "seg": 783,
-          "titulo": "COMO ORGANIZAR SUAS FINANÇAS"
-        },
-        {
-          "seg": 943,
-          "titulo": "COMO OTIMIZAR A SUA RENDA"
-        },
-        {
-          "seg": 1221,
-          "titulo": "MENTALIDADE DE RICO E DE POBRE"
-        },
-        {
-          "seg": 1371,
-          "titulo": "MONTAR UMA RESERVA DE EMERGÊNCIA"
-        },
-        {
-          "seg": 1541,
-          "titulo": "SEGURO DE VIDA DA AZOS"
-        },
-        {
-          "seg": 1671,
-          "titulo": "COMO ELIMINAR SUAS DÍVIDAS"
-        },
-        {
-          "seg": 1955,
-          "titulo": "IDENTIFIQUE E ELIMINE SEUS ERROS"
-        },
-        {
-          "seg": 2085,
-          "titulo": "COMO MULTIPLICAR SEU DINHEIRO"
-        },
-        {
-          "seg": 2360,
-          "titulo": "FINALIZAÇÃO"
-        }
-      ],
-      "titlePatterns": {
-        "hasNumber": false,
-        "hasQuestion": false,
-        "hasEmoji": false,
-        "wordCount": 9,
-        "charCount": 58
-      },
-      "pillar": "mindset"
     }
   ]
 }
