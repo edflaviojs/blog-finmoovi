@@ -1,13 +1,13 @@
 # GSC — Monitor de Indexação
 
-Gerado em: 2026-09-20T12:55:50.842Z
+Gerado em: 2026-09-21T14:55:45.309Z
 Propriedade: https://blog.finmoovi.com/
 
 ## Resumo
 
-- **801/890** URLs indexadas
-- **89** não indexadas
-- **0** com erro na inspeção
+- **810/896** URLs indexadas
+- **85** não indexadas
+- **1** com erro na inspeção
 - **14** página(s) de conteúdo fora do índice há ≥7 dias
 
 ## Sitemap
@@ -16,10 +16,10 @@ Propriedade: https://blog.finmoovi.com/
 
 ## Por motivo (não indexadas)
 
-- Crawled - currently not indexed: 7
-- Discovered - currently not indexed: 54
+- Crawled - currently not indexed: 10
+- Discovered - currently not indexed: 50
+- URL is unknown to Google: 20
 - Duplicate, Google chose different canonical than user: 5
-- URL is unknown to Google: 23
 
 ## Páginas de conteúdo há mais tempo fora do índice
 
@@ -34,6 +34,6 @@ Propriedade: https://blog.finmoovi.com/
 - `https://blog.finmoovi.com/glossario/planejamento-financeiro-planilha/` — Discovered - currently not indexed (desde 2026-08-15)
 - `https://blog.finmoovi.com/en/glossario/en-financial-planning-spreadsheet/` — Discovered - currently not indexed (desde 2026-08-15)
 - `https://blog.finmoovi.com/en/glossario/en-financial-value/` — Discovered - currently not indexed (desde 2026-07-30)
-- `https://blog.finmoovi.com/en/glossario/en-lc/` — Discovered - currently not indexed (desde 2026-07-30)
+- `https://blog.finmoovi.com/en/glossario/en-lc/` — URL is unknown to Google (desde 2026-07-30)
 - `https://blog.finmoovi.com/es/glossario/es-lc/` — Discovered - currently not indexed (desde 2026-07-30)
 - `https://blog.finmoovi.com/es/glossario/es-planilla-de-planificacion-financiera/` — URL is unknown to Google (desde 2026-08-15)
