@@ -31,7 +31,7 @@ When a whale makes a move—say, buying a large chunk of a cryptocurrency or dum
 
 ## Spotting a whale in your own money flow
 
-You don’t need a Wall Street analyst’s toolkit to notice whale‑like activity in your personal finances. Look for patterns that resemble a whale’s splash:
+You don’t need a [Wall Street](/en/glossario/en-wall-street) analyst’s toolkit to notice whale‑like activity in your personal finances. Look for patterns that resemble a whale’s splash:
 
 ![Spotting a whale in your own money flow](/images/glossario/whale-inline-3.webp)
 
@@ -39,7 +39,7 @@ You don’t need a Wall Street analyst’s toolkit to notice whale‑like activi
 
 - A single expense that dwarfs your usual monthly bills (e.g., buying a high‑end laptop that costs as much as three months of rent)
 - A sudden influx of cash from a side hustle or bonus that’s comparable to a quarterly salary
-- Repeated large transfers to a savings or investment account that suddenly jump from “a few hundred” to “several thousand”
+- Repeated large transfers to a savings or [investment](/en/glossario/en-investment) account that suddenly jump from “a few hundred” to “several thousand”
 
 When you see these signs, pause and ask: Is this a one‑off event, or does it signal a shift in my financial strategy? Recognizing the pattern early lets you decide whether to adjust your budget, re‑allocate investments, or simply celebrate a win.
 
@@ -49,9 +49,9 @@ FinMoovi makes the “whale‑watch” mindset easy with its **smart capture** f
 
 - **Instant visibility** – The moment you capture a large purchase, FinMoovi tags it as “major outflow” and shows it in a dedicated “Whale Alerts” section.
 - **Automatic categorization** – No need to guess whether that pricey camera belongs to “electronics” or “hobbies”; the AI does it for you, keeping your reports clean.
-- **Multi‑currency support** – Whether the big ticket is in dollars, euros, or any other currency, FinMoovi converts it to your home base, so you always see the real impact on your budget.
+- **[Multi‑currency](/en/posts/en-digital-bank-vs-major-bank-which-is-worth-it-in-2026) support** – Whether the big ticket is in dollars, euros, or any other currency, FinMoovi converts it to your home base, so you always see the real impact on your budget.
 
-By turning a bulky receipt into a clear data point, you can see how a single whale‑like transaction fits into your overall cash flow, adjust your monthly planning, and stay on track with your financial goals.
+By turning a bulky receipt into a clear data point, you can see how a single whale‑like transaction fits into your overall [cash flow](/en/glossario/en-cash-flow), adjust your monthly [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips), and stay on track with your financial goals.
 
 ## Practical tips to manage big moves wisely
 
@@ -63,7 +63,7 @@ By turning a bulky receipt into a clear data point, you can see how a single wha
 
 Additional habits that reinforce smart whale management:
 
-- Keep a buffer of at least one month’s rent in an emergency fund; this cushions any unexpected large outflow.
+- Keep a buffer of at least one month’s rent in an [emergency fund](/en/glossario/en-emergency-fund); this cushions any unexpected large outflow.
 - When a whale‑sized income arrives (bonus, freelance payout), allocate a fixed percentage to long‑term investments before you feel the urge to spend it all.
 - Review your cash‑flow report weekly; the visual graphs in FinMoovi make it easy to spot trends without digging through spreadsheets.
 

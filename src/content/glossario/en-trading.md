@@ -19,10 +19,10 @@ seo:
 ---
 
 ## What is trading?
-Imagine you’re scrolling through your phone, see a headline about a tech stock that just jumped 10 % and think, “If I buy now I’ll be set for the month’s rent.” That rush of excitement is the everyday pain point of many: the desire to turn a quick market move into extra cash, but without a clear roadmap. Trading is simply the act of buying and selling financial assets—stocks, currencies, commodities, or crypto—aiming to profit from price changes. It’s not magic; it’s a series of decisions based on information, timing, and risk management.  
+Imagine you’re scrolling through your phone, see a headline about a tech stock that just jumped 10 % and think, “If I buy now I’ll be set for the month’s rent.” That rush of excitement is the everyday pain point of many: the desire to turn a quick market move into extra cash, but without a clear roadmap. Trading is simply the act of buying and selling financial assets—[stocks](/en/glossario/en-stocks), currencies, commodities, or crypto—aiming to profit from price changes. It’s not magic; it’s a series of decisions based on information, timing, and risk management.  
 
 - **Stocks:** ownership slices of a company, you profit if the share price rises.  
-- **Forex (foreign exchange):** swapping one currency for another, earning from exchange‑rate swings.  
+- **Forex ([foreign exchange](/en/glossario/en-cambio)):** swapping one currency for another, earning from exchange‑rate swings.  
 - **Commodities:** trading physical goods like gold or oil through contracts.  
 - **Cryptocurrencies:** digital tokens whose value can swing wildly in minutes.
 
@@ -42,7 +42,7 @@ You’ve probably tried a few trades, felt the thrill, then watched the price tu
 Here’s where FinMoovi steps in, turning chaos into clarity with its **smart capture** feature. Instead of manually typing every trade, you snap a photo of the broker’s confirmation screen or dictate the details. The app reads the numbers, identifies the asset type, the amount, the currency, and automatically slots the transaction into the right category—“trading – stocks,” “trading – forex,” etc. All that data instantly appears in your cash‑flow dashboard, letting you see profit, loss, and fees at a glance, no matter if you’re dealing in dollars, euros, or any other currency.  
 
 - **Instant logging:** Photo or voice note → auto‑extraction → transaction saved.  
-- **Multi‑currency handling:** Values are stored in original currency and converted to your base for unified reporting.  
+- **[Multi‑currency](/en/posts/en-digital-bank-vs-major-bank-which-is-worth-it-in-2026) handling:** Values are stored in original currency and converted to your base for unified reporting.  
 - **Real‑time categorization:** No more “miscellaneous” line items; every trade is labeled correctly.  
 - **Sync across devices:** Works offline, then updates when you’re back online, so you never lose a receipt.
 
@@ -53,9 +53,9 @@ Here’s where FinMoovi steps in, turning chaos into clarity with its **smart ca
 ## Practical tips to trade smarter
 Even with the best tools, good habits make the difference. Below are three **Practical tip:** blocks you can start using today, each tied to a feature you already have in FinMoovi.  
 
-- **Practical tip:** *Set a trade‑budget limit.* Use the monthly planning module to allocate, say, the equivalent of two weeks’ groceries to speculative trades. The app will alert you when you’re close, preventing overspending.  
-- **Practical tip:** *Review your cash‑flow report weekly.* The automatic categorization means you can filter “trading” and see exactly how much you’ve earned or lost, helping you adjust strategies before emotions take over.  
-- **Practical tip:** *Leverage multi‑currency insights.* If you notice your forex trades consistently lose after conversion fees, the app’s currency breakdown will highlight that, prompting you to switch to a broker with lower spreads.
+- **Practical tip:** *Set a trade‑budget limit.* Use the monthly [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) module to allocate, say, the equivalent of two weeks’ groceries to speculative trades. The app will alert you when you’re close, preventing overspending.  
+- **Practical tip:** *Review your cash‑flow report weekly.* The [automatic categorization](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end) means you can filter “trading” and see exactly how much you’ve earned or lost, helping you adjust strategies before emotions take over.  
+- **Practical tip:** *[Leverage](/en/glossario/en-leverage) multi‑currency insights.* If you notice your forex trades consistently lose after conversion fees, the app’s currency breakdown will highlight that, prompting you to switch to a broker with lower spreads.
 
 ## Start today
 Open FinMoovi, tap the **Smart Capture** button, and record your most recent trade receipt (or speak the details). In the next five minutes you’ll have that transaction logged, categorized, and reflected in your cash‑flow overview—giving you instant visibility and a solid foundation for smarter decisions.

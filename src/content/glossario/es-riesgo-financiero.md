@@ -19,7 +19,7 @@ seo:
 ---
 
 ## ¿Qué es el riesgo financiero  
-El riesgo financiero es la posibilidad de que tus finanzas personales se vean afectadas por imprevistos: una factura inesperada, una caída en el valor de una inversión o un gasto mayor al que habías planeado. Cuando ese riesgo se materializa, tu bolsillo siente el golpe y puede ser difícil volver a equilibrar el presupuesto.  
+El riesgo financiero es la posibilidad de que tus [finanzas personales](/es/posts/es-5-alternativas-a-organizze-en-2026-opciones-para-administrar) se vean afectadas por imprevistos: una factura inesperada, una caída en el valor de una [inversión](/es/glossario/es-inversion) o un gasto mayor al que habías planeado. Cuando ese riesgo se materializa, tu bolsillo siente el golpe y puede ser difícil volver a equilibrar el presupuesto.  
 
 ## Cómo se manifiesta en la vida cotidiana  
 Imagina que llegas a fin de mes y descubres que el gasto de la luz subió tanto como el precio de un café al día durante todo el mes. O que una compra impulsiva de ropa, que parecía una buena idea, te deja sin dinero para pagar la próxima cuota del alquiler. Estos son ejemplos típicos de riesgo financiero: gastos que no estaban en tu plan y que reducen tu capacidad de ahorro o de invertir.  
@@ -31,8 +31,8 @@ Imagina que llegas a fin de mes y descubres que el gasto de la luz subió tanto 
 ## Herramientas para controlar el riesgo  
 - **Captura inteligente:** toma una foto del recibo o graba una nota de voz y la app lo categoriza automáticamente.  
 - **Multimoneda:** gestiona ingresos y gastos en diferentes divisas sin complicaciones.  
-- **Flujo de caja e informes:** visualiza en tiempo real cuánto entra y sale, con gráficos claros.  
-- **Planificación mensual y metas:** define cuánto quieres ahorrar o invertir y sigue tu progreso.  
+- **[Flujo de caja](/es/glossario/es-flujo-de-caja) e informes:** visualiza en tiempo real cuánto entra y sale, con gráficos claros.  
+- **Planificación mensual y metas:** define cuánto quieres [ahorrar](/es/posts/es-ahorra-en-la-farmacia-sin-sacrificios-guia-practica-2026) o invertir y sigue tu progreso.  
 - **Tarjetas de crédito y facturación:** registra cada compra y recibe alertas antes de que la factura se vuelva una sorpresa.  
 - **Modo compras:** crea listas, ve el total en tiempo real y evita sobrepasar tu presupuesto.  
 - **Recordatorios y alertas de saldo:** recibe notificaciones cuando tu saldo está bajo o cuando una cuenta está próxima a vencer.  
@@ -50,9 +50,9 @@ Al final del mes, el flujo de caja te muestra que el gasto de la luz representó
 ## Consejos prácticos para reducir el riesgo  
 **Consejo práctico:** Revisa tus gastos fijos cada dos semanas y clasifícalos en la app; así sabrás exactamente cuánto representa cada partida en tu presupuesto.  
 
-**Consejo práctico:** Usa la lista de compras del modo compras y verifica el total antes de pasar la caja; eso te ayuda a no exceder el límite que te has propuesto.  
+**Consejo práctico:** Usa la [lista de compras](/es/glossario/es-lista-de-compras) del modo compras y verifica el total antes de pasar la caja; eso te ayuda a no exceder el límite que te has propuesto.  
 
-**Consejo práctico:** Programa alertas de saldo bajo para que la app te avise cuando tu dinero disponible sea equivalente a “un alquiler”. Así podrás tomar decisiones a tiempo y evitar quedarte sin liquidez.  
+**Consejo práctico:** Programa alertas de saldo bajo para que la app te avise cuando tu dinero disponible sea equivalente a “un alquiler”. Así podrás tomar decisiones a tiempo y evitar quedarte sin [liquidez](/es/glossario/es-liquidez).  
 
 ## Empieza hoy  
 Dedica los próximos cinco minutos a abrir FinMoovi, captura una foto de cualquier recibo que tengas a mano (por ejemplo, la última factura de internet) y deja que la app lo categorice automáticamente. Verás al instante cómo ese gasto se refleja en tu flujo de caja y podrás ajustar tu planificación mensual en cuestión de segundos.

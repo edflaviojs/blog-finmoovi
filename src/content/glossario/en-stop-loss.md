@@ -48,18 +48,18 @@ Even though the concept is simple, many investors skip it because:
 - They lack a quick way to set the order without navigating complex broker screens.
 - They forget the level they wanted to protect once the price starts moving fast.
 
-The result? A portfolio that swings wildly, making budgeting for everyday expenses—like the price of a daily coffee or one month’s rent—harder than it needs to be.
+The result? A portfolio that swings wildly, making [budgeting](/en/posts/en-financial-peace-of-mind-with-a-2026-app-for-everyday-life) for everyday expenses—like the price of a daily coffee or one month’s rent—harder than it needs to be.
 
 ## How FinMoovi’s smart capture keeps your stop loss on track
 
-FinMoovi’s **smart capture** feature lets you snap a photo of a receipt, a bill, or even a quick voice note, and the app instantly categorizes the expense. When you link that purchase to an investment decision, the app can suggest a stop‑loss level based on the amount you just spent. Here’s how it works in practice:
+FinMoovi’s **[smart capture](/en/posts/en-how-freelancers-can-organize-their-finances-in-2026)** feature lets you snap a photo of a receipt, a bill, or even a quick voice note, and the app instantly categorizes the expense. When you link that purchase to an [investment](/en/glossario/en-investment) decision, the app can suggest a stop‑loss level based on the amount you just spent. Here’s how it works in practice:
 
 1. You buy a gadget for the price of a weekend outing and record the receipt with a photo.
 2. FinMoovi reads the amount, tags it as “discretionary spending,” and asks if you want to protect the money you just allocated.
 3. You set a stop‑loss at, say, 10 % below the current market price of the related stock.
 4. The app stores the level, monitors the market, and sends you a push notification the moment the price hits your threshold—so you don’t have to stare at charts all day.
 
-By tying a concrete, everyday expense to a financial safeguard, the smart capture turns an abstract concept into a tangible rule you can actually follow.
+By tying a concrete, everyday expense to a financial safeguard, the [smart capture](/en/posts/en-how-to-never-miss-a-bill-payment-deadline-simple-5-minute) turns an abstract concept into a tangible rule you can actually follow.
 
 ## Practical tips to make stop losses work for you
 
@@ -67,12 +67,12 @@ By tying a concrete, everyday expense to a financial safeguard, the smart captur
 
 **Practical tip:** *Combine a trailing stop with your smart‑capture alerts.* As the stock climbs, the trailing stop moves up automatically, locking in gains while still protecting the original purchase cost you recorded.
 
-**Practical tip:** *Review your stop‑loss levels monthly during your cash‑flow planning session.* Use FinMoovi’s cash‑flow report to see how much of your budget is tied up in investments and adjust the thresholds if your financial goals shift.
+**Practical tip:** *Review your stop‑loss levels monthly during your cash‑flow [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) session.* Use FinMoovi’s cash‑flow report to see how much of your budget is tied up in investments and adjust the thresholds if your financial goals shift.
 
 Additional habits that reinforce discipline:
 
 - Keep a **stop‑loss journal** in the app’s notes section, noting why you chose each level.
-- Use **balance alerts** to remind you when an asset approaches your stop‑loss zone.
+- Use **[balance alerts](/en/posts/en-how-to-organize-your-money-with-an-easy-to-use-app)** to remind you when an asset approaches your stop‑loss zone.
 - Test the feature in a **demo mode** before applying it to real money, so you get comfortable with the timing.
 
 ## When a stop loss can backfire

@@ -34,13 +34,13 @@ Quando você registra uma compra, o sistema conta quantas vezes aquele mesmo tip
 
 - **Unidade de consumo:** Cada vez que você compra um café, conta como 1 unit.  
 - **Unidade de receita:** Cada salário recebido conta como 1 unit, mesmo que o valor varie.  
-- **Unidade de investimento:** Cada aporte mensal em um fundo conta como 1 unit, permitindo comparar o retorno por aporte.  
+- **Unidade de [investimento](/glossario/investimento):** Cada [aporte mensal](/ferramentas/simulador-investimento) em um fundo conta como 1 unit, permitindo comparar o retorno por aporte.  
 
 Ao transformar valores em unidades, você consegue responder perguntas como: “Quantas vezes eu comi fora por mês?” ou “Quantas vezes eu paguei a academia?”. Essa visão ajuda a identificar padrões que o número bruto esconde.
 
 ## Aplicando a unit no seu dia a dia  
 
-Imagine que você gasta o equivalente ao preço de um café por dia em lanches rápidos. Se isso representa 30 unidades por mês, o impacto total pode ser comparado ao custo de um aluguel pequeno. Ao perceber a frequência, fica mais fácil decidir reduzir ou substituir esse hábito.  
+Imagine que você gasta o equivalente ao preço de um café por dia em lanches rápidos. Se isso representa 30 unidades por mês, o impacto total pode ser comparado ao custo de um [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026) pequeno. Ao perceber a frequência, fica mais fácil decidir reduzir ou substituir esse hábito.  
 
 ![Aplicando a unit no seu dia a dia  ](/images/glossario/unit-inline-3.webp)
 
@@ -61,9 +61,9 @@ O FinMoovi entende que a maioria das pessoas não tem tempo para digitar cada de
 - **Captura inteligente:** Tire uma foto da nota ou fale o valor que acabou de pagar. O app reconhece o texto (OCR) ou a voz e já cria a entrada.  
 - **Categorização automática:** O algoritmo identifica a categoria (alimentação, transporte) e atribui a unit correspondente sem que você precise escolher.  
 - **Multimoeda:** Se você paga em diferentes moedas (real, dólar, euro), o FinMoovi converte tudo para a moeda base que você definiu, mantendo a contagem de unidades coerente.  
-- **Fluxo de caixa e relatórios:** Visualize gráficos que mostram não só o total gasto, mas também a quantidade de unidades por categoria, facilitando a análise de frequência.  
+- **[Fluxo de caixa](/glossario/fluxo-de-caixa) e relatórios:** Visualize gráficos que mostram não só o total gasto, mas também a quantidade de unidades por categoria, facilitando a análise de frequência.  
 - **Planejamento mensal / metas:** Defina metas como “máximo de 10 units de delivery por mês”. O app avisa quando você está perto do limite.  
-- **Cartões de crédito / fatura:** Cada compra feita no cartão gera uma unit; o app agrupa tudo na fatura, mostrando quantas unidades foram consumidas em cada categoria.  
+- **Cartões de [crédito](/glossario/credito) / fatura:** Cada compra feita no cartão gera uma unit; o app agrupa tudo na fatura, mostrando quantas unidades foram consumidas em cada categoria.  
 - **Modo compras:** Crie listas de supermercado; o app soma o total em tempo real e indica quantas unidades de cada item você costuma comprar.  
 - **Lembretes / alertas de saldo:** Receba notificações quando o número de unidades de um gasto recorrente ultrapassar o esperado.  
 - **Offline / PWA / sincronização:** Mesmo sem internet, você registra unidades; ao reconectar, tudo se sincroniza automaticamente.  
@@ -76,7 +76,7 @@ O FinMoovi entende que a maioria das pessoas não tem tempo para digitar cada de
 
 **Dica prática:** Revise o relatório de unidades semanalmente. Se uma categoria tem mais de 20 units, considere renegociar ou substituir esse hábito por algo mais barato.  
 
-Além disso, aproveite a lista de compras do FinMoovi: ao adicionar itens, o app sugere a média de unidades que você costuma comprar, ajudando a evitar excessos.  
+Além disso, aproveite a [lista de compras](/glossario/lista-de-compras) do FinMoovi: ao adicionar itens, o app sugere a média de unidades que você costuma comprar, ajudando a evitar excessos.  
 
 ## Comece hoje  
 

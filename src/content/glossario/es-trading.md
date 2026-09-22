@@ -24,7 +24,7 @@ El trading es la actividad de comprar y vender activos financieros (acciones, di
 
 ## El dolor de la vida cotidiana: cuando el dinero desaparece sin que lo notes
   
-Imagina que al final del mes revisas tu cuenta y ves que ya no te alcanza para cubrir el alquiler, la luz y el café de la mañana. No sabes en qué se fue el dinero porque tus gastos están repartidos entre tarjetas, apps de delivery, suscripciones y alguna compra impulsiva. Esa sensación de “¡se me fue todo sin darme cuenta!” es el punto de partida para entender por qué el trading, bien manejado, puede ser una herramienta para controlar mejor tu flujo de caja y no para perderlo.
+Imagina que al final del mes revisas tu cuenta y ves que ya no te alcanza para cubrir el alquiler, la luz y el café de la mañana. No sabes en qué se fue el dinero porque tus gastos están repartidos entre tarjetas, apps de delivery, suscripciones y alguna compra impulsiva. Esa sensación de “¡se me fue todo sin darme cuenta!” es el punto de partida para entender por qué el trading, bien manejado, puede ser una herramienta para controlar mejor tu [flujo de caja](/es/glossario/es-flujo-de-caja) y no para perderlo.
 
 ![¿Qué es el trading y por qué te suena a ruido?](/images/glossario/trading-inline-1.webp)
 
@@ -44,11 +44,11 @@ Los precios cambian cada segundo por la interacción de millones de compradores 
 
 ## Riesgos y realidades: lo que la gente no cuenta
   
-- **Volatilidad**: los precios pueden moverse bruscamente, lo que implica que una posición que parece segura hoy puede volverse una pérdida mañana.  
-- **Apalancamiento**: algunos brokers permiten operar con dinero que no tienes (préstamo). Multiplica ganancias, pero también pérdidas, y puede dejarte con una deuda mayor que tu inversión inicial.  
+- **[Volatilidad](/es/glossario/es-volatilidad)**: los precios pueden moverse bruscamente, lo que implica que una posición que parece segura hoy puede volverse una pérdida mañana.  
+- **[Apalancamiento](/es/glossario/es-apalancamiento)**: algunos brokers permiten operar con dinero que no tienes (préstamo). Multiplica ganancias, pero también pérdidas, y puede dejarte con una deuda mayor que tu [inversión](/es/glossario/es-inversion) inicial.  
 - **Costos ocultos**: comisiones, spreads y tarifas de mantenimiento pueden erosionar tus ganancias si no los controlas.  
 
-En resumen, el trading no es una solución mágica para “hacer dinero rápido”. Requiere disciplina, educación y, sobre todo, un control estricto de tus finanzas personales.
+En resumen, el trading no es una solución mágica para “hacer dinero rápido”. Requiere disciplina, educación y, sobre todo, un control estricto de tus [finanzas personales](/es/posts/es-5-alternativas-a-organizze-en-2026-opciones-para-administrar).
 
 ## Herramientas que hacen el trading más manejable (FinMoovi)
   
@@ -79,4 +79,4 @@ Además, sigue estos hábitos:
 
 ## Empieza hoy
   
-Abre FinMoovi, dirígete a la sección “Objetivos” y crea una meta llamada “Fondo para trading”. Establece que quieres ahorrar el equivalente al precio de un café al día durante los próximos 30 días. Luego, usa la captura inteligente para registrar tu gasto de hoy (una compra rápida) y verifica que el saldo disponible sigue por encima del umbral que definiste. En menos de cinco minutos tendrás una visión clara de cuánto puedes invertir sin poner en riesgo tus gastos cotidianos.
+Abre FinMoovi, dirígete a la sección “Objetivos” y crea una meta llamada “Fondo para trading”. Establece que quieres [ahorrar](/es/posts/es-ahorra-en-la-farmacia-sin-sacrificios-guia-practica-2026) el equivalente al precio de un café al día durante los próximos 30 días. Luego, usa la captura inteligente para registrar tu gasto de hoy (una compra rápida) y verifica que el saldo disponible sigue por encima del umbral que definiste. En menos de cinco minutos tendrás una visión clara de cuánto puedes invertir sin poner en riesgo tus gastos cotidianos.

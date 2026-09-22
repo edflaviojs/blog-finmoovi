@@ -20,7 +20,7 @@ seo:
 
 ## O que é varejo e por que ele afeta seu bolso
 
-Imagine que você acabou de fazer a compra semanal: pão, frutas, um presente de aniversário e, de repente, percebe que o cartão está quase no limite. Essa sensação de “não deu conta” acontece porque o varejo — o conjunto de lojas, supermercados, farmácias e até os marketplaces online onde você compra — tem um impacto direto no seu fluxo de caixa. Varejo não é só um termo de economia; é a soma de todas as transações que você faz no dia a dia, desde o cafezinho que você paga na padaria até a assinatura de um serviço de streaming. Cada compra, por menor que pareça, entra na conta e pode mudar o equilíbrio entre o que entra e o que sai da sua conta.
+Imagine que você acabou de fazer a compra semanal: pão, frutas, um presente de aniversário e, de repente, percebe que o cartão está quase no limite. Essa sensação de “não deu conta” acontece porque o varejo — o conjunto de lojas, supermercados, farmácias e até os marketplaces online onde você compra — tem um impacto direto no seu [fluxo de caixa](/glossario/fluxo-de-caixa). Varejo não é só um termo de economia; é a soma de todas as transações que você faz no dia a dia, desde o cafezinho que você paga na padaria até a assinatura de um serviço de streaming. Cada compra, por menor que pareça, entra na conta e pode mudar o equilíbrio entre o que entra e o que sai da sua conta.
 
 ![O que é varejo e por que ele afeta seu bolso](/images/glossario/varejo-inline-1.webp)
 
@@ -32,10 +32,10 @@ Quando você entra numa loja, o que parece simples — escolher um produto e pag
 
 - **Preço de lista**: o valor anunciado, que pode mudar a cada promoção.
 - **Descontos e cupons**: reduções que exigem atenção para não perder oportunidades.
-- **Formas de pagamento**: parcelamento, crédito ou débito, cada um com custos diferentes.
+- **Formas de pagamento**: [parcelamento](/glossario/parcelamento), [crédito](/glossario/credito) ou débito, cada um com custos diferentes.
 - **Taxas e impostos**: às vezes invisíveis, mas que aumentam o valor final.
 
-Esses elementos são o que os economistas chamam de “custo total de propriedade” (CTP), ou seja, o preço real que você paga depois de considerar todos os acréscimos. Se você não acompanha esses detalhes, pode acabar gastando o equivalente a duas vezes o preço de um aluguel em itens que nem precisava.
+Esses elementos são o que os economistas chamam de “custo total de propriedade” (CTP), ou seja, o preço real que você paga depois de considerar todos os acréscimos. Se você não acompanha esses detalhes, pode acabar gastando o equivalente a duas vezes o preço de um [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026) em itens que nem precisava.
 
 ## Principais desafios ao lidar com compras no varejo
 
@@ -53,7 +53,7 @@ Esses problemas fazem com que o orçamento mensal se torne um quebra-cabeça, e 
 
 ## Como a captura inteligente do FinMoovi simplifica tudo
 
-É aqui que entra a **captura inteligente** do FinMoovi. Em vez de anotar tudo à mão, você tira uma foto da nota ou grava a voz dizendo “comprou 3 kg de arroz, 2 litros de leite”. O app reconhece automaticamente os itens, separa cada um em categorias (alimentação, casa, lazer) e ainda converte valores se a compra foi feita em outra moeda. Tudo isso acontece em segundos, sem precisar abrir planilhas ou fazer cálculos.
+É aqui que entra a **captura inteligente** do FinMoovi. Em vez de anotar tudo à mão, você tira uma foto da nota ou grava a voz dizendo “comprou 3 kg de arroz, 2 litros de leite”. O app reconhece automaticamente os itens, separa cada um em categorias (alimentação, casa, lazer) e ainda converte valores se a compra foi feita em outra [moeda](/glossario/moeda). Tudo isso acontece em segundos, sem precisar abrir planilhas ou fazer cálculos.
 
 Além da captura, o FinMoovi oferece:
 
@@ -65,7 +65,7 @@ Além da captura, o FinMoovi oferece:
 - **Lembretes e alertas de saldo**: notifica quando o saldo está baixo ou quando uma fatura vence.
 - **Offline / PWA / sincronização**: funciona sem internet e salva tudo na nuvem assim que você se reconecta.
 
-Com a captura inteligente, a dor de não saber exatamente quanto gastou desaparece. Você tem a prova visual da nota, a classificação automática e a conversão de moedas tudo em um único lugar.
+Com a captura inteligente, a dor de não saber exatamente quanto gastou desaparece. Você tem a prova visual da nota, a classificação automática e a [conversão de moedas](/ferramentas/conversor-moedas) tudo em um único lugar.
 
 ## Dicas práticas para dominar o varejo e economizar
 

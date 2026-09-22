@@ -20,7 +20,7 @@ seo:
 
 ## The everyday headache that many of us face
 
-You’ve just paid for a grocery run, a coffee, and a pair of shoes, and when you open your bank app you see a jumble of numbers you can’t match to the receipts in your kitchen drawer. A few weeks later the credit‑card statement arrives, and you’re scrambling to remember which purchase was for the new headphones and which one was for the family dinner. The uncertainty makes budgeting feel like guessing the weight of a suitcase without a scale.  
+You’ve just paid for a grocery run, a coffee, and a pair of shoes, and when you open your bank app you see a jumble of numbers you can’t match to the receipts in your kitchen drawer. A few weeks later the [credit](/en/glossario/en-credit)‑card statement arrives, and you’re scrambling to remember which purchase was for the new headphones and which one was for the family dinner. The uncertainty makes budgeting feel like guessing the weight of a suitcase without a scale.  
 
 ![The everyday headache that many of us face](/images/glossario/varejo-inline-1.webp)
 
@@ -32,19 +32,19 @@ You’ve just paid for a grocery run, a coffee, and a pair of shoes, and when yo
 
 ## What “retail” really means in finance  
 
-In plain language, “retail” (or “varejo”) refers to the sale of goods and services directly to the final consumer – the person buying a sandwich, a pair of sneakers, or a streaming subscription. It’s the opposite of wholesale, where businesses sell in bulk to other businesses. From a personal‑finance perspective, retail expenses are the day‑to‑day outflows that shape your cash flow, affect your savings rate, and determine whether you can meet larger goals like a down‑payment or a vacation.  
+In plain language, “retail” (or “varejo”) refers to the sale of goods and services directly to the final consumer – the person buying a sandwich, a pair of sneakers, or a streaming subscription. It’s the opposite of wholesale, where businesses sell in bulk to other businesses. From a personal‑finance perspective, retail expenses are the day‑to‑day outflows that shape your [cash flow](/en/glossario/en-cash-flow), affect your [savings](/en/glossario/en-savings) rate, and determine whether you can meet larger goals like a down‑payment or a vacation.  
 
 Because retail purchases happen frequently and in many categories, they are the hardest to track without a systematic approach. That’s where a tool that can capture each receipt instantly and sort it for you becomes a game‑changer.
 
 ## How FinMoovi’s smart capture changes the game  
 
-Imagine you finish your shopping, open the FinMoovi app, and snap a photo of the receipt. The app reads the text (optical character recognition) and instantly places each line item into the right bucket – “Food”, “Clothing”, “Entertainment”, etc. No manual entry, no hunting through emails, no guessing. The same works if you prefer to speak: a quick voice note saying “Coffee at the corner shop, 4 dollars” is logged the same way.  
+Imagine you finish your shopping, open the [FinMoovi app](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end), and snap a photo of the receipt. The app reads the text (optical character recognition) and instantly places each line item into the right bucket – “Food”, “Clothing”, “Entertainment”, etc. No manual entry, no hunting through emails, no guessing. The same works if you prefer to speak: a quick voice note saying “Coffee at the corner shop, 4 dollars” is logged the same way.  
 
 ![How FinMoovi’s smart capture changes the game  ](/images/glossario/varejo-inline-3.webp)
 
 
 
-Because FinMoovi works offline and syncs when you’re back online, you can capture receipts even when the Wi‑Fi is spotty, and the data is stored securely in the cloud. The multi‑currency engine means you can travel abroad, pay in euros or dollars, and still see everything in one unified dashboard.  
+Because FinMoovi works offline and syncs when you’re back online, you can capture receipts even when the Wi‑Fi is spotty, and the data is stored securely in the cloud. The [multi‑currency](/en/posts/en-digital-bank-vs-major-bank-which-is-worth-it-in-2026) engine means you can travel abroad, pay in euros or dollars, and still see everything in one unified dashboard.  
 
 The result is a clear picture of your retail spending, broken down by category, time period, and even by store. You can spot patterns (like that extra 10 % you spend on snacks after work) and act on them before they blow your budget.
 
@@ -60,7 +60,7 @@ Beyond the tips, here are three habits that reinforce disciplined retail spendin
 
 - Review the automatic categorization every Sunday. If a purchase landed in the wrong bucket, reassign it with a tap – the app learns from each correction.  
 - Schedule a monthly “cash‑flow report” in the app. It visualizes income versus retail outflows, highlighting where you saved compared to the previous month.  
-- Link your credit‑card bills to FinMoovi. The app matches each transaction to a receipt (or flags it if missing), so you never miss a charge that could trigger interest.  
+- Link your credit‑card bills to FinMoovi. The app matches each transaction to a receipt (or flags it if missing), so you never miss a charge that could trigger [interest](/en/glossario/en-interest).  
 
 By turning receipts into data, you transform chaotic spending into actionable insight. The more consistently you capture, the sharper the reports become, and the easier it is to stay within your self‑set limits.
 

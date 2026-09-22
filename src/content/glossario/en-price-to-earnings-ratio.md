@@ -22,7 +22,7 @@ The calculation of P/L is relatively simple. You divide the current stock price 
 Let's consider two examples to better understand how P/L works:
 
 - **Example 1:** A technology company has a stock price of $26 (approximately $40) and an earnings per share of $2.60 (approximately $4). The P/L would be 10 (26 / 2.60 = 10).
-- **Example 2:** A retail company has a stock price of $10.40 (approximately $16) and an earnings per share of $1.04 (approximately $1.60). The P/L would also be 10 (10.40 / 1.04 = 10).
+- **Example 2:** A [retail](/en/glossario/en-retail) company has a stock price of $10.40 (approximately $16) and an earnings per share of $1.04 (approximately $1.60). The P/L would also be 10 (10.40 / 1.04 = 10).
 
 ![Practical Examples](/images/glossario/en-p-l-preco-lucro-inline-3.webp)
 
