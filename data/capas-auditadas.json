@@ -5039,6 +5039,46 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-09-21"
+    },
+    "como-organizar-pagamentos-recorrentes-e-ganhar-tranquilidade-2.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-22"
+    },
+    "como-organizar-pagamentos-recorrentes-e-ganhar-tranquilidade-4.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"I'm sorry, I'm not able to identify the people in this image.\")",
+      "em": "2026-09-22"
+    },
+    "como-organizar-pagamentos-recorrentes-e-ganhar-tranquilidade-6.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-22"
+    },
+    "como-organizar-pagamentos-recorrentes-e-ganhar-tranquilidade.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-22"
+    },
+    "whale-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-22"
+    },
+    "whale-inline-2.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-22"
+    },
+    "whale-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-22"
+    },
+    "whale.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-22"
     }
   },
   "corrigidas": {
@@ -5697,8 +5737,12 @@
     "domine-seus-gastos-e-tenha-paz-financeira-real-em-2026.webp": {
       "em": "2026-09-20",
       "motivo": "tem texto escrito (\"$0.00\")"
+    },
+    "como-organizar-pagamentos-recorrentes-e-ganhar-tranquilidade-4.webp": {
+      "em": "2026-09-22",
+      "motivo": "tem texto escrito (\"I'm sorry, I'm not able to identify the people in this image.\")"
     }
   },
-  "totalAcervo": 1008,
-  "ultimaCorrida": "2026-09-21"
+  "totalAcervo": 1016,
+  "ultimaCorrida": "2026-09-22"
 }
