@@ -2288,6 +2288,21 @@
     }
   },
   {
+    "file": "en-how-to-organize-recurring-payments-and-gain-peace-of-mind-in.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-how-to-organize-your-money-with-an-easy-to-use-app.md",
     "dir": "posts",
     "severity": 0,
@@ -4283,6 +4298,21 @@
     }
   },
   {
+    "file": "en-whale.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-whatsapp-expense-control.md",
     "dir": "glossario",
     "severity": 0,
@@ -5469,6 +5499,21 @@
   },
   {
     "file": "es-como-montar-tu-primera-cartera-de-etfs-en-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-como-organizar-pagos-recurrentes-y-ganar-tranquilidad-en.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -8424,6 +8469,21 @@
   },
   {
     "file": "es-wealth-management.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-whale.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
