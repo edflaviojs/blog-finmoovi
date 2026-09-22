@@ -4,6 +4,7 @@ definition: "Qué es whale y cómo aparece en tu día a día — explicado de fo
 title: "whale - Glosario Financiero"
 description: "Qué es whale y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/whale.webp"
+imageAlt: "Un titán financiero, un balanzas de plata, monedas doradas y un frasco con una planta en su interior."
 category: "basico"
 tags: ["whale", "glosario", "finanzas"]
 author: "FinMoovi"

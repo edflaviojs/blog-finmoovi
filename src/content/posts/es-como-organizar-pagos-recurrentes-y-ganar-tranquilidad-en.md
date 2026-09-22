@@ -3,6 +3,7 @@ title: "Cómo organizar pagos recurrentes y ganar tranquilidad en 2026"
 description: "Descubre en menos de 5 minutos cómo controlar suscripciones y gastos automáticos con FinMoovi y evitar sorpresas al final del mes."
 tickerHeadline: "El detalle que drena tu presupuesto"
 image: "/images/posts/como-organizar-pagamentos-recorrentes-e-ganhar-tranquilidade.webp"
+imageAlt: "Un hombre y dos mujeres sentados en un sofá, revisando papeles y usando una computadora."
 category: "dicas"
 locale: "es"
 tags: ["pagos recurrentes","planificación financiera","finanzas personales","economía","dinero"]

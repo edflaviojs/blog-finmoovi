@@ -4,6 +4,7 @@ definition: "What whale is and how it shows up in your everyday money — explai
 title: "whale - Financial Glossary"
 description: "What whale is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/whale.webp"
+imageAlt: "A glass jar filled with coins and a plant, surrounded by gold coins and a scale."
 category: "basico"
 tags: ["whale", "glossary", "finance"]
 author: "FinMoovi"

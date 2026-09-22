@@ -3,6 +3,7 @@ title: "Como organizar pagamentos recorrentes e ganhar tranquilidade em 2026"
 description: "Descubra, em menos de 5 minutos, como controlar assinaturas e despesas automáticas usando o FinMoovi e evitar surpresas no fim do mês."
 tickerHeadline: "O detalhe que drena seu orçamento"
 image: "/images/posts/como-organizar-pagamentos-recorrentes-e-ganhar-tranquilidade.webp"
+imageAlt: "Três pessoas, um homem e duas mulheres, sentadas em um sofá, olhando para folhas de papel."
 category: "dicas"
 locale: "pt"
 tags: ["recurring payments financial planning","finanças pessoais","economia","dinheiro"]

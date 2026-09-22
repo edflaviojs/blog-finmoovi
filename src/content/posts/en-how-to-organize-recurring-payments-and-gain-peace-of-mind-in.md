@@ -3,6 +3,7 @@ title: "How to Organize Recurring Payments and Gain Peace of Mind in 2026"
 description: "Discover in under 5 minutes how to manage subscriptions and automatic expenses with FinMoovi and avoid end‑of‑month surprises."
 tickerHeadline: "The detail that drains your budget"
 image: "/images/posts/como-organizar-pagamentos-recorrentes-e-ganhar-tranquilidade.webp"
+imageAlt: "A man and woman sit on a couch, looking at papers together."
 category: "dicas"
 locale: "en"
 tags: ["recurring payments","financial planning","personal finance","economy","money"]
