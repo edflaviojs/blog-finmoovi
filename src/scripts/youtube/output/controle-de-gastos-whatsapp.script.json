@@ -1,0 +1,187 @@
+{
+  "slug": "controle-de-gastos-whatsapp",
+  "term": "controle de gastos whatsapp",
+  "category": "basico",
+  "keyword": "whatsapp",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Já viu *dinheiro sumir* no WhatsApp ao receber a conta do almoço?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "fumaca",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Já viu dinheiro sumir no WhatsApp ao receber a conta do almoço? É porque ninguém anota quem pagou",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "sumir",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro sumindo"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "icon",
+            "icon": "money"
+          }
+        },
+        {
+          "anchor": "anota",
+          "visual": {
+            "type": "number",
+            "text": "R$ 0"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Hoje chegou foto de uma conta de quarenta e cinco reais e, logo depois, outro amigo escreveu paguei trinta reais e nada mais",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "statement",
+            "text": "Conta de R$45"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "paguei",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          }
+        },
+        {
+          "anchor": "nada",
+          "visual": {
+            "type": "number",
+            "text": "R$ 0"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "No fim do mês, só essas mensagens dão R$375, quase o que duas contas de luz custam",
+      "durationSec": 6.5,
+      "shots": [
+        {
+          "anchor": "R$375",
+          "visual": {
+            "type": "number",
+            "text": "R$ 375"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "duas",
+          "visual": {
+            "type": "statement",
+            "text": "Duas contas de luz"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu coloquei tudo no FinMoovi e ele me mostrou que faltam cento e vinte reais para fechar o orçamento",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Visão geral do orçamento"
+          }
+        },
+        {
+          "anchor": "cento",
+          "visual": {
+            "type": "statement",
+            "text": "Faltam R$120"
+          }
+        },
+        {
+          "anchor": "para",
+          "visual": {
+            "type": "icon",
+            "icon": "growth"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver seu controle? Baixe o FinMoovi, tem sete dias grátis",
+      "durationSec": 4.2,
+      "shots": [
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "statement",
+            "text": "Controle fácil"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Controlar os gastos no WhatsApp impede o dinheiro de sumir sem você perceber. Dinheiro sem controle é dinheiro dos outros",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "gastos",
+          "visual": {
+            "type": "icon",
+            "icon": "chart-down"
+          }
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro dos outros"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Controle seus gastos no WhatsApp",
+    "target": "app"
+  },
+  "totalDurationSec": 41.4
+}
