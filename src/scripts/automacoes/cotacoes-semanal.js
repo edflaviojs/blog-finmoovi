@@ -43,7 +43,13 @@ function conferirIndicadores(texto, indicadores) {
   const erros = [];
   const alvos = [
     { nome: 'Selic', rotulo: /Selic/i, oficial: indicadores?.selic?.valor },
-    { nome: 'IPCA', rotulo: /IPCA|infla[çc][ãa]o/i, oficial: indicadores?.ipca?.valor },
+    // `Tesouro IPCA` é o nome de um título, não o índice. Sem o `(?<!Tesouro\s)`
+    // a frase correta *"60 % em renda fixa (CDBs, Tesouro IPCA) e 40 % em renda
+    // variável"* é lida como "IPCA … 40 %" e reprovada — foi o que a varredura
+    // de 22/09/2026 encontrou no post `cotacoes-semana-3-julho-2026`. Este
+    // falso positivo estava escondido: enquanto o ramo `IPCA` estava partido
+    // pela alternância (ver abaixo), ele nunca chegava a acusar nada.
+    { nome: 'IPCA', rotulo: /(?<!Tesouro\s)IPCA|infla[çc][ãa]o/i, oficial: indicadores?.ipca?.valor },
   ];
 
   for (const alvo of alvos) {
@@ -55,7 +61,20 @@ function conferirIndicadores(texto, indicadores) {
     // O `\b` à frente do número NÃO é decoração: sem ele, "100% da Selic" era
     // lido como "00%" e a trava reprovava uma frase correta. Régua grossa demais
     // inventa defeito — e um medidor que se engana manda refazer trabalho bom.
-    const re = new RegExp(`${alvo.rotulo.source}[^.\\n]{0,60}?\\b(\\d{1,2}(?:[,.]\\d{1,2})?)\\s*[\\u202F\\u00A0 ]*%`, 'gi');
+    //
+    // 🔴 O `(?:…)` À VOLTA DO RÓTULO TAMBÉM NÃO É ZELO — foi o que partiu esta
+    // automação em 21/09/2026 com `Cannot read properties of undefined (reading
+    // 'replace')`. O rótulo do IPCA é uma ALTERNÂNCIA (`IPCA|inflação`) e, colada
+    // sem parênteses, o `|` abraçava a expressão inteira: o padrão passava a ser
+    // "a palavra IPCA sozinha" OU "inflação seguida de percentagem". Quando o
+    // modelo escrevia `IPCA`, casava o primeiro ramo, não havia grupo 1, e o
+    // `m[1].replace` logo abaixo estourava.
+    //
+    // Duas consequências, e a segunda é pior que a falha: a trava do IPCA só
+    // funcionava quando o texto dizia "inflação" — pela palavra `IPCA`, que é a
+    // mais provável, ela nunca chegou a comparar nada. Metade da proteção não
+    // existia, em silêncio.
+    const re = new RegExp(`(?:${alvo.rotulo.source})[^.\\n]{0,60}?\\b(\\d{1,2}(?:[,.]\\d{1,2})?)\\s*[\\u202F\\u00A0 ]*%`, 'gi');
     for (const m of texto.matchAll(re)) {
       const bruto = m[1].replace('.', ',');
       if (NUMEROS_DE_REGRA.has(bruto)) continue;
