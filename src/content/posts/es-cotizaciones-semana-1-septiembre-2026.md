@@ -41,7 +41,7 @@ En resumen, tanto el dólar como el euro mostraron una ligera tendencia alcista 
 
 ## [tasa base del banco central](/es/glossario/es-selic) y su impacto en tus inversiones
 
-La **tasa base del banco central** se mantuvo estable en **13,75 %** durante la semana, después de la decisión del **comité de política monetaria** de la semana anterior. Esta tasa alta sigue siendo el principal motor de los rendimientos de los **bonos del gobierno** y de los fondos de [renta fija](/es/glossario/es-renta-fija). Para los inversores individuales, esto significa:
+La **tasa base del banco central** se mantuvo en **14,00 %** durante la semana, sin cambios desde agosto. El **comité de política monetaria** no se reunió en este periodo. Esta tasa alta sigue siendo el principal motor de los rendimientos de los **bonos del gobierno** y de los fondos de [renta fija](/es/glossario/es-renta-fija). Para los inversores individuales, esto significa:
 
 ![Selic y su impacto en tus inversiones](/images/posts/es-cotizaciones-semana-1-septiembre-2026-inline-3.webp)
 

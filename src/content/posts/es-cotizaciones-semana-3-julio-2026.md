@@ -32,7 +32,7 @@ seo:
 
 ## Resumen del dólar y el euro (13 – 20 julio 2026)
 
-Esta semana la **moneda local** mostró una ligera recuperación frente a las dos monedas más importantes. El **dólar** se mantuvo en torno a **€ 0,92**, una caída de 0,3 % respecto al lunes, mientras que el **euro** quedó en **€ 1,05**, bajando 0,5 % en el mismo período. La presión bajista vino principalmente de dos factores: la publicación de datos de [inflación](/es/glossario/es-inflacion) más suaves en EE. UU. y la expectativa de que la Reserva Federal mantenga la política monetaria estable. La noticia más relevante fue la decisión de la autoridad monetaria de **mantener la [tasa base del banco central](/es/glossario/es-selic) en 13,75 %**, lo que quitó un posible impulso alcista a la moneda local.
+Esta semana la **moneda local** mostró una ligera recuperación frente a las dos monedas más importantes. El **dólar** se mantuvo en torno a **€ 0,92**, una caída de 0,3 % respecto al lunes, mientras que el **euro** quedó en **€ 1,05**, bajando 0,5 % en el mismo período. La presión bajista vino principalmente de dos factores: la publicación de datos de [inflación](/es/glossario/es-inflacion) más suaves en EE. UU. y la expectativa de que la Reserva Federal mantenga la política monetaria estable. La noticia más relevante fue la decisión de la autoridad monetaria de **mantener la [tasa base del banco central](/es/glossario/es-selic) en 14,25 %**, lo que quitó un posible impulso alcista a la moneda local.
 
 ![Resumen del dólar y el euro (13 – 20 julio 2026)](/images/posts/es-cotizaciones-semana-3-julio-2026-inline-1.webp)
 
@@ -42,9 +42,9 @@ En la práctica, si tenés una cuenta en dólares para pagar la universidad de t
 
 ## Comentario sobre la tasa base del banco central y su impacto en las inversiones
 
-La **tasa base del banco central** es la tasa de referencia que el banco central utiliza para controlar la inflación. Al quedarse en **13,75 %**, la autoridad envía la señal de que no ve necesidad de subirla para frenar los precios. ¿Qué significa esto para vos, inversor individual?
+La **tasa base del banco central** es la tasa de referencia que el banco central utiliza para controlar la inflación. Al quedarse en **14,25 %**, la autoridad envía la señal de que no ve necesidad de subirla para frenar los precios. ¿Qué significa esto para vos, inversor individual?
 
-1. **Renta fija:** Los bonos del gobierno y los **certificados de depósito** que ya estaban atados a la tasa base del banco central siguen ofreciendo rendimientos similares. Si tenés un [certificados de depósito](/es/glossario/es-cdb) a 100 % de la tasa base del banco central, tu ganancia será de aproximadamente **13,75 % anual**, lo que sigue siendo atractivo frente a la inflación (que se espera que cierre el año en torno al 4 %).  
+1. **Renta fija:** Los bonos del gobierno y los **certificados de depósito** que ya estaban atados a la tasa base del banco central siguen ofreciendo rendimientos similares. Si tenés un [certificados de depósito](/es/glossario/es-cdb) a 100 % de la tasa base del banco central, tu ganancia será de aproximadamente **14,25 % anual**, lo que sigue siendo atractivo frente a la inflación (que se espera que cierre el año en torno al 4 %).  
 2. **Acciones y fondos:** Un entorno de tasas estables favorece a las empresas con deuda alta, porque sus costos de [financiamiento](/es/glossario/es-financiamiento) no aumentan. Los sectores de consumo y energía mostraron una ligera recuperación, pero sigue habiendo [volatilidad](/es/glossario/es-volatilidad) por la incertidumbre global.  
 3. **Inversiones en el exterior:** Con la moneda local fortaleciendo frente al dólar y al euro, los activos internacionales ([ETF](/es/glossario/es-etf) de EE. UU., acciones europeas) se vuelven un poco más caros para los residentes. Sin embargo, la diversificación sigue siendo clave para protegerse de cualquier sacudida local.
 

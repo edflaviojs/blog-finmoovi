@@ -27,13 +27,13 @@ seo:
 
 ## Resumo da semana (31/08 a 07/09/2026)
 
-A semana foi marcada por oscilações moderadas nas moedas estrangeiras e por um recorte na taxa Selic que já começa a mudar o ritmo dos investimentos. Vamos ao que realmente importa para quem tem dinheiro guardado ou investido.
+A semana foi marcada por oscilações moderadas nas moedas estrangeiras e pela Selic parada em 14,00 % ao ano, patamar que continua a ditar o ritmo dos investimentos. Vamos ao que realmente importa para quem tem dinheiro guardado ou investido.
 
 ### Dólar e euro: como ficaram a R$ 5,12 e R$ 5,95?
 
 - **Dólar** – O par USD/BRL terminou a semana em R$ 5,12, praticamente estável em relação à segunda‑feira. Depois de uma alta de 2 % na quinta‑feira, impulsionada por dados de [inflação](/glossario/inflacao) dos EUA que vieram acima do esperado, a moeda recuou na sexta‑feira com a divulgação de um relatório de emprego mais fraco. Para o investidor brasileiro, isso significa que o custo de produtos importados não mudou muito, mas a [volatilidade](/glossario/volatilidade) ainda pode abrir oportunidades de compra em momentos de “cairzinho”.
 
-- **Euro** – O EUR/BRL ficou em R$ 5,95, também sem grandes variações. A pressão veio da zona euro, onde a decisão do BCE de manter a taxa de juros em 4,25 % gerou um leve enfraquecimento do euro. No Brasil, a notícia de que a Selic seria reduzida já na próxima reunião ajudou a conter a alta da moeda. Em resumo: tanto o dólar quanto o euro mostraram resistência, mas a tendência é de leve desvalorização caso a política monetária americana continue mais agressiva.
+- **Euro** – O EUR/BRL ficou em R$ 5,95, também sem grandes variações. A pressão veio da zona euro, onde a decisão do BCE de manter a taxa de juros em 4,25 % gerou um leve enfraquecimento do euro. No Brasil, o patamar elevado da Selic ajudou a conter a alta da moeda. Em resumo: tanto o dólar quanto o euro mostraram resistência, mas a tendência é de leve desvalorização caso a política monetária americana continue mais agressiva.
 
 ### Selic em 14,00% e o que a taxa parada muda nos seus investimentos
 
@@ -56,13 +56,13 @@ Essa prática simples ajuda a proteger seu patrimônio contra a inflação e ain
 
 - **Política externa**: O calendário econômico dos EUA traz a divulgação do PIB do terceiro trimestre. Se o crescimento continuar acima do esperado, o dólar pode ganhar novo impulso. Já o euro pode sofrer mais pressão caso o BCE decida mudar a postura.
 
-- **Brasil**: O próximo encontro do Copom está marcado para 19/09. Os analistas já apontam para mais um corte de 0,25 % ou, no mínimo, manutenção da taxa. Caso a Selic caia novamente, espere um aumento gradual nas ações de consumo e um leve recuo nos títulos de curto prazo.
+- **Brasil**: a próxima decisão do Copom é o que mais pesa no calendário. Não há como antecipar o resultado — o que dá para fazer é observar. Se a taxa básica ceder, as ações de consumo tendem a reagir melhor e os títulos de curto prazo rendem menos; se ficar parada, a renda fixa segue como está.
 
 - **Mercado de moedas**: Fique de olho nas cotações do dólar e do euro, especialmente se você tem despesas em moeda estrangeira ou pretende fazer viagens internacionais. Pequenas variações podem impactar o custo da sua próxima compra de passagens ou de eletrônicos importados.
 
 > **Dica extra:** Use o app **FinMoovi** para acompanhar em tempo real a variação do dólar, euro e dos seus investimentos. Ele permite monitorar múltiplas moedas e ainda envia alertas quando há oportunidades de compra ou venda. É como ter um assistente financeiro no bolso, sem complicação.
 
-Com a Selic em baixa e as moedas estáveis, a semana foi de “respiração” para o mercado. Aproveite para ajustar sua carteira, manter a disciplina e ficar atento às próximas movimentações. Boa semana de investimentos!
+Com a Selic parada e as moedas estáveis, a semana foi de “respiração” para o mercado. Aproveite para ajustar sua carteira, manter a disciplina e ficar atento às próximas movimentações. Boa semana de investimentos!
 
 
 ---

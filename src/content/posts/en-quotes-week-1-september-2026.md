@@ -27,7 +27,7 @@ seo:
 
 ## Week Summary (Aug 31 – Sep 7)
 
-The past week was a “break‑even point” for those who follow the stock market and the [currency](/en/glossario/en-moeda). The local currency managed to hold the dollar’s rise, while the euro slipped a bit. The [central bank base rate](/en/glossario/en-selic) stayed stable at 13.75 % per year, but market conversation revolved around possible cuts in the near future. For those with cash saved or invested, this means some opportunities and some cautions.  
+The past week was a “break‑even point” for those who follow the stock market and the [currency](/en/glossario/en-moeda). The local currency managed to hold the dollar’s rise, while the euro slipped a bit. The [central bank base rate](/en/glossario/en-selic) stayed at 14.00 % per year, unchanged since August. For those with cash saved or invested, this means some opportunities and some cautions.  
 
 ![Week Summary (Aug 31 – Sep 7)](/images/posts/en-quotes-week-1-september-2026-inline-1.webp)
 
@@ -45,7 +45,7 @@ The past week was a “break‑even point” for those who follow the stock mark
 
 ## Central Bank Base Rate and Its Effect on Investments
 
-The basic interest rate – the central bank base rate – stayed at **13.75 % per year**. The central bank decided to wait for more indicators before starting to cut. This stance creates two clear effects:
+The basic interest rate – the central bank base rate – stayed at **14.00 % per year**, unchanged since August. No rate-setting meeting took place during the week. This stance creates two clear effects:
 
 ![Central bank base rate and its effect on investments](/images/posts/en-quotes-week-1-september-2026-inline-3.webp)
 
@@ -65,7 +65,7 @@ The basic interest rate – the central bank base rate – stayed at **13.75 %
 
 ## What’s Coming Next Week
 
-- **Expectation of a cut to the central bank base rate:** Analysts already point to a possible 0.5 % to 1 % cut in the next two months, should inflation stay within target. If this happens, fixed‑income securities tend to lose a bit of attractiveness, while stocks may get a boost.
+- **The next rate decision:** there is no way to know the outcome in advance, and no figure here is a forecast. What can be said is the mechanics: if the rate falls, fixed‑income securities tend to lose a bit of attractiveness, while stocks may get a boost; if it stays put, fixed income carries on as it is.
 
 - **Dollar and Euro:** The dollar could face downward pressure if U.S. employment data comes in weaker than expected. The euro may react to any fiscal stimulus news in the eurozone. Keep an eye on monetary policy announcements and consumer‑spending indicators.
 
