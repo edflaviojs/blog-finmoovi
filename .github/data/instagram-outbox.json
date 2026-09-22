@@ -1,11 +1,5 @@
 [
   {
-    "fileSlug": "teto-de-gastos",
-    "runId": "35508358370",
-    "producedAt": "2026-09-20T11:46:36.417Z",
-    "artifact": "short-teto-de-gastos"
-  },
-  {
     "fileSlug": "yahoo-finance",
     "runId": "35627846602",
     "producedAt": "2026-09-21T17:02:42.967Z",
