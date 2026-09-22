@@ -1,11 +1,11 @@
 {
-  "medidoEm": "2026-09-21T14:42:19.589Z",
+  "medidoEm": "2026-09-22T21:52:56.637Z",
   "resumo": {
-    "videosMedidos": 144,
-    "comAudiencia": 132,
+    "videosMedidos": 148,
+    "comAudiencia": 134,
     "comCurva": 8,
-    "viewsTotais": 3330,
-    "percentagemMediaDoCanal": 3.0442999999999993,
+    "viewsTotais": 3384,
+    "percentagemMediaDoCanal": 3.003050746268656,
     "metadeSaiAosSegundos": 10.375,
     "ficamAte3s": 1.1016374999999998,
     "ficamAte50pc": 0.40308749999999993,
@@ -44,6 +44,18 @@
         "videoId": "Iq3IoeU72T8",
         "percentagemMedia": 0,
         "views": 25
+      },
+      {
+        "slug": "loop-entrada-do-carro-ta-perdendo",
+        "videoId": "VNKnIOhiEPs",
+        "percentagemMedia": 0,
+        "views": 13
+      },
+      {
+        "slug": "kw-financiamento-de-r-200k",
+        "videoId": "ikMgK4rnawU",
+        "percentagemMedia": 0,
+        "views": 10
       },
       {
         "slug": "erros-cartao-credito",
@@ -91,7 +103,7 @@
         "slug": "loop-dez-vezes-sem-juros-nao-vai-acreditar",
         "videoId": "FXFNufT1ko8",
         "percentagemMedia": 0.2529,
-        "views": 27
+        "views": 28
       },
       {
         "slug": "kw-perca-r-1-000-por-ano",
@@ -130,6 +142,12 @@
         "views": 40
       },
       {
+        "slug": "kw-financiamento-de-moto-vale-a-pena",
+        "videoId": "y_UG8M_4CXI",
+        "percentagemMedia": 0.3691,
+        "views": 35
+      },
+      {
         "slug": "loop-decimo-terceiro-nunca-faca",
         "videoId": "3o8ptbjjv3g",
         "percentagemMedia": 0.37060000000000004,
@@ -166,12 +184,6 @@
         "views": 12
       },
       {
-        "slug": "kw-financiamento-de-moto-vale-a-pena",
-        "videoId": "y_UG8M_4CXI",
-        "percentagemMedia": 0.4557,
-        "views": 17
-      },
-      {
         "slug": "kw-cartao-virtual-vale-a-pena",
         "videoId": "0W0Qlr71MyE",
         "percentagemMedia": 0.4559,
@@ -188,6 +200,12 @@
         "videoId": "jfhJ4HeEEJo",
         "percentagemMedia": 0.4779,
         "views": 13
+      },
+      {
+        "slug": "loop-saque-no-cartao-voces-viram",
+        "videoId": "Wbx9UY1K7wg",
+        "percentagemMedia": 0.499,
+        "views": 51
       },
       {
         "slug": "juros-compostos",
@@ -212,12 +230,6 @@
         "videoId": "Zh9RKJFPV0o",
         "percentagemMedia": 0.524,
         "views": 12
-      },
-      {
-        "slug": "loop-saque-no-cartao-voces-viram",
-        "videoId": "Wbx9UY1K7wg",
-        "percentagemMedia": 0.5555,
-        "views": 38
       },
       {
         "slug": "viral-4t_8St6xhPE",
@@ -274,31 +286,23 @@
         "views": 439
       }
     ],
-    "julgados": 68
+    "julgados": 70
   },
   "ganchos": [
     {
       "familia": "ninguém fala",
-      "n": 8,
+      "n": 9,
       "comAudiencia": 8,
       "medianaRetencao": 0.66565,
-      "medianaViews": 16,
+      "medianaViews": 12,
       "media": 0.7133625000000001
     },
     {
-      "familia": "faça isso",
-      "n": 10,
-      "comAudiencia": 8,
-      "medianaRetencao": 0.52875,
-      "medianaViews": 5.5,
-      "media": 0.617125
-    },
-    {
       "familia": "começa assim",
-      "n": 8,
+      "n": 9,
       "comAudiencia": 8,
       "medianaRetencao": 0.5077,
-      "medianaViews": 13.5,
+      "medianaViews": 12,
       "media": 9.572574999999999
     },
     {
@@ -306,16 +310,16 @@
       "n": 10,
       "comAudiencia": 10,
       "medianaRetencao": 0.49560000000000004,
-      "medianaViews": 11,
+      "medianaViews": 13,
       "media": 0.5311899999999999
     },
     {
       "familia": "vocês viram",
       "n": 8,
       "comAudiencia": 8,
-      "medianaRetencao": 0.4744,
+      "medianaRetencao": 0.44615,
       "medianaViews": 20.5,
-      "media": 26.2869125
+      "media": 26.27985
     },
     {
       "familia": "e se parar",
@@ -330,8 +334,16 @@
       "n": 9,
       "comAudiencia": 8,
       "medianaRetencao": 0.41625,
-      "medianaViews": 3,
+      "medianaViews": 4,
       "media": 0.6370625
+    },
+    {
+      "familia": "faça isso",
+      "n": 10,
+      "comAudiencia": 9,
+      "medianaRetencao": 0.3075,
+      "medianaViews": 5.5,
+      "media": 0.5485555555555556
     },
     {
       "familia": "nunca faça",
@@ -346,7 +358,7 @@
       "n": 7,
       "comAudiencia": 6,
       "medianaRetencao": 0.10779999999999999,
-      "medianaViews": 7,
+      "medianaViews": 8,
       "media": 0.24739999999999998
     },
     {
@@ -549,7 +561,7 @@
       "privacidade": "public",
       "duracaoSeg": 48,
       "comentarios": 1,
-      "gostos": 1,
+      "gostos": 2,
       "views": 22,
       "minutosTotais": 5,
       "duracaoMediaSeg": 24,
@@ -618,7 +630,7 @@
       "privacidade": "public",
       "duracaoSeg": 13,
       "comentarios": 1,
-      "gostos": 0,
+      "gostos": 1,
       "views": 439,
       "minutosTotais": 13,
       "duracaoMediaSeg": 8,
@@ -642,7 +654,7 @@
       "privacidade": "public",
       "duracaoSeg": 52,
       "comentarios": 1,
-      "gostos": 0,
+      "gostos": 1,
       "views": 16,
       "minutosTotais": 56,
       "duracaoMediaSeg": 671,
@@ -672,7 +684,7 @@
       "privacidade": "public",
       "duracaoSeg": 17,
       "comentarios": 1,
-      "gostos": 0,
+      "gostos": 1,
       "views": 9,
       "minutosTotais": 1,
       "duracaoMediaSeg": 16,
@@ -1470,7 +1482,7 @@
       "duracaoSeg": 15,
       "comentarios": 1,
       "gostos": 0,
-      "views": 7,
+      "views": 8,
       "minutosTotais": 0,
       "duracaoMediaSeg": 0,
       "percentagemMedia": 0,
@@ -1760,7 +1772,7 @@
       "duracaoMediaSeg": 9,
       "percentagemMedia": 0.5779,
       "curva": null,
-      "erro": "Analytics 500: {\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"Internal error encountered.\",\n    \"errors\": [\n      {\n        \"message\": \"Internal error encountered.\",\n        \"domain\": \"global\",\n        \"reason\": \"backendError\"\n      }\n    ],\n    \"status\": \"INTERNAL\"\n  }\n}\n"
+      "erro": "sem dados suficientes (audiência pequena de mais)"
     },
     {
       "slug": "loop-primeiro-guardado-nunca-faca",
@@ -1845,7 +1857,7 @@
       "duracaoSeg": 17,
       "comentarios": 1,
       "gostos": 0,
-      "views": 27,
+      "views": 28,
       "minutosTotais": 0,
       "duracaoMediaSeg": 4,
       "percentagemMedia": 0.2529,
@@ -2243,7 +2255,7 @@
       "duracaoMediaSeg": 374,
       "percentagemMedia": 22.011799999999997,
       "curva": null,
-      "erro": "sem dados suficientes (audiência pequena de mais)"
+      "erro": "Analytics 500: {\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"Internal error encountered.\",\n    \"errors\": [\n      {\n        \"message\": \"Internal error encountered.\",\n        \"domain\": \"global\",\n        \"reason\": \"backendError\"\n      }\n    ],\n    \"status\": \"INTERNAL\"\n  }\n}\n"
     },
     {
       "slug": "taxa-financeira",
@@ -2406,7 +2418,7 @@
       "duracaoSeg": 14,
       "comentarios": 1,
       "gostos": 0,
-      "views": 8,
+      "views": 13,
       "minutosTotais": 0,
       "duracaoMediaSeg": 0,
       "percentagemMedia": 0,
@@ -2421,7 +2433,7 @@
       "duracaoSeg": 53,
       "comentarios": 1,
       "gostos": 0,
-      "views": 5,
+      "views": 10,
       "minutosTotais": 0,
       "duracaoMediaSeg": 0,
       "percentagemMedia": 0,
@@ -2436,10 +2448,10 @@
       "duracaoSeg": 17,
       "comentarios": 1,
       "gostos": 0,
-      "views": 38,
+      "views": 51,
       "minutosTotais": 1,
-      "duracaoMediaSeg": 9,
-      "percentagemMedia": 0.5555,
+      "duracaoMediaSeg": 8,
+      "percentagemMedia": 0.499,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
     },
@@ -2451,7 +2463,7 @@
       "duracaoSeg": 13,
       "comentarios": 1,
       "gostos": 0,
-      "views": 2,
+      "views": 4,
       "minutosTotais": 0,
       "duracaoMediaSeg": 0,
       "percentagemMedia": 0,
@@ -2466,10 +2478,10 @@
       "duracaoSeg": 58,
       "comentarios": 1,
       "gostos": 1,
-      "views": 17,
-      "minutosTotais": 1,
-      "duracaoMediaSeg": 26,
-      "percentagemMedia": 0.4557,
+      "views": 35,
+      "minutosTotais": 2,
+      "duracaoMediaSeg": 21,
+      "percentagemMedia": 0.3691,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
     },
@@ -2481,7 +2493,7 @@
       "duracaoSeg": 18,
       "comentarios": 1,
       "gostos": 0,
-      "views": 1,
+      "views": 3,
       "minutosTotais": 0,
       "duracaoMediaSeg": 0,
       "percentagemMedia": 0,
@@ -2496,6 +2508,10 @@
       "duracaoSeg": 47,
       "comentarios": 1,
       "gostos": 0,
+      "views": 6,
+      "minutosTotais": 0,
+      "duracaoMediaSeg": 33,
+      "percentagemMedia": 0.7043,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
     },
@@ -2518,6 +2534,10 @@
       "duracaoSeg": 15,
       "comentarios": 1,
       "gostos": 0,
+      "views": 1,
+      "minutosTotais": 0,
+      "duracaoMediaSeg": 0,
+      "percentagemMedia": 0,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
     },
@@ -2538,6 +2558,50 @@
       "publicadoEm": "2026-09-20",
       "privacidade": "public",
       "duracaoSeg": 13,
+      "comentarios": 1,
+      "gostos": 0,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "loop-escola-ano-que-vem-ninguem-fala",
+      "videoId": "kDAkBAAlG3o",
+      "publicadoEm": "2026-09-21",
+      "privacidade": "public",
+      "duracaoSeg": 13,
+      "comentarios": 1,
+      "gostos": 0,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "yahoo-finance",
+      "videoId": "bqUQzKA88GQ",
+      "publicadoEm": "2026-09-21",
+      "privacidade": "public",
+      "duracaoSeg": 46,
+      "comentarios": 1,
+      "gostos": 0,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "loop-pagar-o-minimo-comeca-assim",
+      "videoId": "jN4k73LrO_k",
+      "publicadoEm": "2026-09-21",
+      "privacidade": "public",
+      "duracaoSeg": 15,
+      "comentarios": 1,
+      "gostos": 0,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "controle-de-gastos-whatsapp",
+      "videoId": "BbVPe__Xnrw",
+      "publicadoEm": "2026-09-22",
+      "privacidade": "public",
+      "duracaoSeg": 47,
       "comentarios": 1,
       "gostos": 0,
       "curva": null,
