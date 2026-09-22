@@ -95,11 +95,54 @@ function conferirIndicadores(texto, indicadores) {
   // "cortou a Selic" e por isso deixava passar *"Selic em foco: corte de 0,5 %"*,
   // que é o título real do post que inventou o corte.
   //
-  // `alta` e `baixa` ficam de fora de propósito: são adjetivos comuns ("a Selic
-  // alta mantém a renda fixa atrativa") e reprovariam texto correto.
-  const movimento = /\b(reduzi(?:u|r)|cort(?:ou|ar|e)|elev(?:ou|ar)|aument(?:ou|ar|o)|sub(?:iu|ir)|redução|queda)\b/i;
+  // `alta` e `baixa` ficam de fora da lista como adjetivos soltos: são comuns
+  // ("a Selic alta mantém a renda fixa atrativa") e reprovariam texto correto.
+  // `baixa` entra só na forma "em baixa", que é afirmação de movimento.
+  //
+  // ── A REVISÃO DE 22/09/2026: a régua acusava o inocente e deixava passar o réu
+  //
+  // A versão anterior perguntava só duas coisas — "a frase fala da Selic?" e
+  // "a frase tem uma palavra de movimento?" — e juntava as duas respostas ainda
+  // que se referissem a coisas diferentes. Medido nos 30 posts publicados:
+  //
+  //   FALSO POSITIVO  "a QUEDA do dólar … graças à taxa Selic ainda alta"
+  //                   (a queda é do dólar, a 60 caracteres de distância)
+  //   FALSO POSITIVO  "uma taxa Selic mais alta … pode AUMENTAR os rendimentos"
+  //                   (o que aumenta são os rendimentos, e é hipótese)
+  //   FALSO POSITIVO  "expectativa de novo AUMENTO da Selic" (expectativa ≠ facto)
+  //
+  // E o pior: no post que tinha o erro DE VERDADE — *"um recorte na taxa Selic"*
+  // e *"a Selic seria reduzida já na próxima reunião"* — nenhuma dessas duas
+  // frases era apanhada. `recorte` não estava na lista, e `reduzida` também não
+  // (só `reduziu`/`reduzir`). O post foi acusado por outra frase, inocente.
+  // **A régua dava o alarme certo pelo motivo errado.** Prima da lição de que
+  // régua grossa demais inventa defeito — e de que uma trava só vale depois de
+  // ser corrida contra o texto real que ela devia ter apanhado.
+  //
+  // Agora são três perguntas, nesta ordem:
+  //   1. o movimento está COLADO à Selic? (janela de 40 caracteres à volta dela)
+  //      — é isto que separa "a queda do dólar" de "a queda da Selic";
+  //   2. a frase afirma um FACTO CONSUMADO ou uma DECISÃO? então acusa, mesmo
+  //      que traga um "pode" mais à frente ("decidiu cortar a Selic, o que pode…");
+  //   3. senão, é HIPÓTESE ("pode", "caso", "expectativa")? então deixa passar.
+  // Fora destes casos, acusa — na dúvida, não publicar.
+  const JANELA = 40;
+  const MOVIMENTO = /\b(reduzi(?:u|r|ram|d[ao]s?)|cort(?:ou|ar|e|es|ad[ao]s?)|recortes?|elev(?:ou|ar|a[çc][ãa]o)|aument(?:ou|ar|o)|sub(?:iu|ir|ida)|redu[çc][ãa]o|queda|ca(?:iu|ir|ia)|baixou|em baixa)\b/i;
+  const CONSUMADO = /\b(reduziu|reduzid[ao]s?|cortou|cortad[ao]s?|elevou|elevad[ao]s?|aumentou|subiu|caiu|recuou|decidiu|anunciou|definiu|aprovou)\b/i;
+  const HIPOTESE = /\b(pode|podem|poder[áã]|poderia|dever[áã]|caso|se|expectativas?|espera(?:-se)?|esperad[ao]|tende[m]?|previs[ãa]o|proje[çc][ãa]o|cen[áa]rio|analistas)\b/i;
+
   for (const frase of texto.split(/[.\n]/)) {
-    if (/Selic/i.test(frase) && movimento.test(frase)) {
+    let acusar = false;
+    for (const hit of frase.matchAll(/Selic/gi)) {
+      const ini = Math.max(0, hit.index - JANELA);
+      const vizinhanca = frase.slice(ini, hit.index + 'Selic'.length + JANELA);
+      if (!MOVIMENTO.test(vizinhanca)) continue;          // 1. movimento é de outra coisa
+      if (CONSUMADO.test(frase)) { acusar = true; break; } // 2. facto ou decisão
+      if (HIPOTESE.test(frase)) continue;                  // 3. hipótese é permitida
+      acusar = true;
+      break;
+    }
+    if (acusar) {
       erros.push('o texto afirma um movimento da Selic (corte/aumento) que nenhum dado sustenta');
       break;
     }
