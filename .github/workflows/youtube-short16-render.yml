@@ -296,6 +296,21 @@ jobs:
       # 🔴 E tinha de ser ANTES do QA correr, nunca antes do commit lá em baixo: um
       # `reset --hard` depois do QA deitaria fora exactamente o que o QA acabou de
       # escrever. Foi o erro que a revisão apanhou no primeiro desenho deste conserto.
+      # ♦ 22/09/2026 — O SOM AO PADRÃO DO YOUTUBE (−14 LUFS).
+      #
+      # O Ed suspeitou de vídeos a sair SEM ÁUDIO. Medidos 24 MP4 e 8 faixas
+      # baixadas do próprio YouTube: **todos tinham som**. O defeito era outro e
+      # estava em 24 de 24 — **−20 LUFS, seis decibéis abaixo do padrão**. O
+      # YouTube baixa quem está acima de −14 e NÃO levanta quem está abaixo, por
+      # isso o vídeo anterior no feed tocava alto e o nosso tocava a meio.
+      #
+      # Corre DEPOIS do ffmpeg estar garantido e ANTES do QA — assim o robô que
+      # olha o vídeo olha o ficheiro final, não um que ainda vai mudar.
+      # Nunca derruba a corrida: se falhar, o vídeo segue com o som original.
+      - name: Pôr o som no padrão do YouTube
+        if: steps.turno.outputs.saltar != 'true' && steps.roteiro.outputs.saltar != 'true'
+        run: node src/scripts/youtube/lib/normalizar-audio.js "youtube-render/out/$FILE_SLUG.mp4"
+
       - name: Pegar o estado mais recente antes de o QA escrever
         if: steps.turno.outputs.saltar != 'true' && steps.roteiro.outputs.saltar != 'true'
         run: |

@@ -743,6 +743,24 @@ jobs:
           echo "MINUTOS_DO_RENDER=$MINUTOS" >> "$GITHUB_ENV"
           echo "⏱️  o vídeo levou $MINUTOS minutos a ser feito."
 
+      # ♦ 22/09/2026 — O SOM AO PADRÃO DO YOUTUBE (−14 LUFS).
+      #
+      # Medidos 24 MP4 e 8 faixas baixadas do próprio YouTube: todos com som,
+      # mas **−20 LUFS** nos Shorts e **−18,8** nos longos — abaixo dos ≈ −14 que
+      # o YouTube usa. Ele baixa quem está acima e NÃO levanta quem está abaixo.
+      #
+      # ⚠️ No longo o pico já vinha encostado a zero (−0,06 dBTP medido), por
+      # isso não basta somar ganho: o programa tenta margens de limitador
+      # crescentes e **só troca o ficheiro quando o pico final é negativo**. Sem
+      # isso, o longo saía a +2,95 dBTP, ou seja, a distorcer.
+      #
+      # Corre ANTES da contagem de fotogramas — assim os números lidos abaixo são
+      # os do ficheiro que vai mesmo ao ar. Nunca derruba: se falhar, o vídeo
+      # segue com o som original.
+      - name: Pôr o som no padrão do YouTube
+        if: steps.escolher.outputs.skip != 'true'
+        run: node src/scripts/youtube/lib/normalizar-audio.js "youtube-render/out/longo/$SLUG.mp4"
+
       # ⚠️ CONFERIR O RESULTADO, NUNCA O CÓDIGO DE SAÍDA — a regra desta casa. O render já
       # se confere a si próprio, mas quem lê isto quer o número à vista, e a MEDIÇÃO DO
       # TEMPO é a razão de ser desta primeira corrida.
