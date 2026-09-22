@@ -6,7 +6,7 @@ import { config } from '../../../site.config.ts';
  */
 
 import { generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
-import { getTickerRates } from '../apis/exchange-rate.js';
+import { getTickerRates, getWeekChange } from '../apis/exchange-rate.js';
 import { getSelic, getIpca12m, pt as bcbPt } from '../apis/bcb.js';
 import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
@@ -37,10 +37,22 @@ const NUMEROS_DE_REGRA = new Set(['0,5', '0,50', '70', '70,0', '8,5', '8,50', '0
  *
  * @param {string} texto - o markdown gerado
  * @param {{selic: {valor:number}|null, ipca: {valor:number}|null}} indicadores
+ * @param {{USDBRL:{variacao:number}, EURBRL:{variacao:number}}|null} [semana]
+ *   Variação real da semana. Quando não vem, a conferência de variação é
+ *   saltada — não se reprova um número por não se ter com o que o comparar.
  * @returns {string[]} descrições dos desvios; vazio = texto limpo
  */
-function conferirIndicadores(texto, indicadores) {
+function conferirIndicadores(texto, indicadores, semana) {
   const erros = [];
+
+  // Partir em frases SEM partir os números.
+  //
+  // ⚠️ Um `split(/[.\n]/)` ingénuo corta *"the Fed kept rates at 5.25 %"* em
+  // duas — `…at 5` e `25 % this month` — e então nenhuma das metades tem ao
+  // mesmo tempo o nome da instituição e a percentagem. A trava passava a olhar
+  // para pedaços que já não afirmavam nada. O ponto só separa frases quando
+  // **não** está entre dígitos.
+  const frases = (t) => t.split(/(?<!\d)\.(?!\d)|\n/);
   const alvos = [
     { nome: 'Selic', rotulo: /Selic/i, oficial: indicadores?.selic?.valor },
     // `Tesouro IPCA` é o nome de um título, não o índice. Sem o `(?<!Tesouro\s)`
@@ -131,7 +143,7 @@ function conferirIndicadores(texto, indicadores) {
   const CONSUMADO = /\b(reduziu|reduzid[ao]s?|cortou|cortad[ao]s?|elevou|elevad[ao]s?|aumentou|subiu|caiu|recuou|decidiu|anunciou|definiu|aprovou)\b/i;
   const HIPOTESE = /\b(pode|podem|poder[áã]|poderia|dever[áã]|caso|se|expectativas?|espera(?:-se)?|esperad[ao]|tende[m]?|previs[ãa]o|proje[çc][ãa]o|cen[áa]rio|analistas)\b/i;
 
-  for (const frase of texto.split(/[.\n]/)) {
+  for (const frase of frases(texto)) {
     let acusar = false;
     for (const hit of frase.matchAll(/Selic/gi)) {
       const ini = Math.max(0, hit.index - JANELA);
@@ -148,6 +160,65 @@ function conferirIndicadores(texto, indicadores) {
     }
   }
 
+  // ── VARIAÇÃO DA MOEDA: só a que foi medida ─────────────────────────────────
+  //
+  // A auditoria de 22/09/2026 encontrou **7 frases em 6 dos 30 posts** a dar
+  // uma percentagem de variação que ninguém tinha calculado: *"o dólar recuou
+  // 0,4 % ao longo da semana"*, *"alta de 2 % na quinta-feira"*, *"subió un
+  // 0,8 % en la semana"*. O robô recebia **um número por moeda — o de hoje**;
+  // não havia série nenhuma de onde tirar variação.
+  //
+  // Agora `getWeekChange()` dá a variação real, ela entra no prompt, e esta
+  // trava confere. A conferência é pelo **valor absoluto**: o texto escreve a
+  // direção por palavras ("recuou 0,4 %"), não com sinal.
+  //
+  // ⚠️ Exige palavra de variação NA MESMA FRASE, senão "migre 5-10 % para
+  // fundos" e "um CDB a 100 % do CDI" seriam reprovados — régua grossa demais
+  // inventa defeito.
+  if (semana?.USDBRL && semana?.EURBRL) {
+    const permitidas = [Math.abs(semana.USDBRL.variacao), Math.abs(semana.EURBRL.variacao)];
+    const MOEDA = /\b(d[óo]lar|dollar|d[óo]lares|euro|euros|USD|EUR|c[âa]mbio|exchange rate|tipo de cambio)\b/i;
+    // ⚠️ O fecho é `(?!\p{L})` e NÃO `\b`. `\b` é ASCII: entre o `ó` de
+    // "subió" e o espaço seguinte **não há fronteira de palavra**, porque o
+    // `ó` já não conta como caractere de palavra. Com `\b` no fim, a frase
+    // real *"El par USD/LOCAL subió un 0,8 % en la semana"* passava incólume —
+    // a trava ficava cega em espanhol e em metade do português.
+    const VARIOU = /\b(subi(?:u|r|ó)|caiu|cay[óo]|recuou|retreat|avan[çc]ou|ganhou|perdeu|alta de|queda de|baixa de|varia[çc][ãa]o de|valoriza|desvaloriza|rose|fell|dropped|jumped|baj[óo]|ca[íi]da de|subida de|alza de)(?!\p{L})/iu;
+    const PCT = /\b(\d{1,2}(?:[,.]\d{1,2})?)\s*[   ]*%/g;
+
+    for (const frase of frases(texto)) {
+      if (!MOEDA.test(frase) || !VARIOU.test(frase)) continue;
+      for (const m of frase.matchAll(PCT)) {
+        const valor = Number(m[1].replace(',', '.'));
+        if (NUMEROS_DE_REGRA.has(m[1].replace('.', ','))) continue;
+        if (permitidas.some((p) => Math.abs(p - valor) < 0.05)) continue;
+        erros.push(
+          `variação de moeda escrita como ${m[1]}% — a medida da semana é ` +
+          `${bcbPt(semana.USDBRL.variacao)}% (dólar) e ${bcbPt(semana.EURBRL.variacao)}% (euro)`
+        );
+      }
+    }
+  }
+
+  // ── NÚMERO DE INSTITUIÇÃO ESTRANGEIRA: não temos, logo não se escreve ──────
+  //
+  // 14 dos 30 posts citavam BCE ou Fed; dois deles com número —
+  // *"a decisão do BCE de manter a taxa de juros em 4,25 %"* e *"o Banco
+  // Central Europeu, que ainda mantém a taxa acima de 4 %"*. Nenhuma API deste
+  // robô traz taxa de banco central estrangeiro: o número só pode ter sido
+  // inventado.
+  //
+  // ⚠️ `Banco Central` sozinho é o NOSSO — e esse temos. Só entram aqui os
+  // nomes inequivocamente de fora.
+  const ESTRANGEIRO = /\b(BCE|ECB|Banco Central Europeu|European Central Bank|Banco Central Europeo|Federal Reserve|Reserva Federal|\bFed\b|FOMC|Bank of England|Banco de Inglaterra)\b/;
+  for (const frase of frases(texto)) {
+    if (!ESTRANGEIRO.test(frase)) continue;
+    const pct = frase.match(/\b\d{1,2}(?:[,.]\d{1,2})?\s*[   ]*%/);
+    if (!pct) continue;
+    erros.push(`o texto atribui ${pct[0].trim()} a um banco central estrangeiro — não temos esse dado`);
+    break;
+  }
+
   return [...new Set(erros)];
 }
 
@@ -156,7 +227,7 @@ function conferirIndicadores(texto, indicadores) {
  *   Indicadores lidos do Banco Central. Quando um deles é `null`, o pedido
  *   correspondente sai do prompt — ver o bloco de regras mais abaixo.
  */
-async function generatePost(locale, rates, weekStart, today, weekNum, dateStr, imagePath, indicadores) {
+async function generatePost(locale, rates, weekStart, today, weekNum, dateStr, imagePath, indicadores, semana) {
   const monthNames = {
     pt: ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'],
     en: ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'],
@@ -202,16 +273,29 @@ async function generatePost(locale, rates, weekStart, today, weekNum, dateStr, i
   const temSelic = Boolean(indicadores?.selic);
   const temIpca = Boolean(indicadores?.ipca);
 
+  // A variação da semana segue a MESMA regra dos indicadores: entra no pedido
+  // se existir, desaparece se não existir. Até 22/09/2026 ela não era dada e o
+  // modelo inventava-a — 7 frases do tipo "o dólar recuou 0,4 % ao longo da
+  // semana" em 6 dos 30 posts, todas sem dado nenhum por trás.
+  const temSemana = Boolean(semana?.USDBRL && semana?.EURBRL);
+  const sinal = (v) => (v > 0 ? '+' : '') + bcbPt(v);
+
   const linhasIndicadores = {
     pt: [
+      temSemana ? `- Variação do dólar na semana (desde ${semana.desde}): ${sinal(semana.USDBRL.variacao)}%` : null,
+      temSemana ? `- Variação do euro na semana (desde ${semana.desde}): ${sinal(semana.EURBRL.variacao)}%` : null,
       temSelic ? `- Selic (meta do Copom): ${bcbPt(indicadores.selic.valor)}% ao ano, dado de ${indicadores.selic.data}` : null,
       temIpca ? `- IPCA acumulado em 12 meses: ${bcbPt(indicadores.ipca.valor)}%, dado de ${indicadores.ipca.data}` : null,
     ].filter(Boolean).join('\n'),
     en: [
+      temSemana ? `- Dollar change over the week (since ${semana.desde}): ${sinal(semana.USDBRL.variacao)}%` : null,
+      temSemana ? `- Euro change over the week (since ${semana.desde}): ${sinal(semana.EURBRL.variacao)}%` : null,
       temSelic ? `- Selic (Copom target rate): ${bcbPt(indicadores.selic.valor)}% per year, as of ${indicadores.selic.data}` : null,
       temIpca ? `- IPCA, 12-month accumulated: ${bcbPt(indicadores.ipca.valor)}%, as of ${indicadores.ipca.data}` : null,
     ].filter(Boolean).join('\n'),
     es: [
+      temSemana ? `- Variación del dólar en la semana (desde ${semana.desde}): ${sinal(semana.USDBRL.variacao)}%` : null,
+      temSemana ? `- Variación del euro en la semana (desde ${semana.desde}): ${sinal(semana.EURBRL.variacao)}%` : null,
       temSelic ? `- Selic (meta del Copom): ${bcbPt(indicadores.selic.valor)}% anual, dato del ${indicadores.selic.data}` : null,
       temIpca ? `- IPCA acumulado en 12 meses: ${bcbPt(indicadores.ipca.valor)}%, dato del ${indicadores.ipca.data}` : null,
     ].filter(Boolean).join('\n'),
@@ -230,21 +314,27 @@ REGRAS OBRIGATÓRIAS SOBRE NÚMEROS — o texto é reprovado se forem quebradas:
 - É proibido inventar, estimar, arredondar ou atualizar qualquer desses números.
 - É proibido afirmar que houve reunião, decisão, corte ou aumento de juros. Os dados acima dizem qual é a taxa, não dizem o que aconteceu numa reunião.
 - Se faltar um dado de que precisaria, escreva o texto sem ele. Não preencha o buraco.
-- Em "o que esperar", fale de cenários e do que observar. É proibido prever um valor.`,
+- Em "o que esperar", fale de cenários e do que observar. É proibido prever um valor.
+- É proibido escrever qualquer percentagem de variação do dólar ou do euro que não esteja na lista acima. Não invente variação de um dia, de uma quinta-feira nem de uma abertura de segunda.
+- É proibido atribuir números a bancos centrais ou instituições de fora do Brasil (BCE, Reserva Federal/Fed, Banco de Inglaterra) e a indicadores estrangeiros (PIB, emprego, CPI). Não temos esses dados. Pode falar deles como assunto a observar, sem número e sem afirmar decisão.`,
     en: `
 MANDATORY RULES ABOUT NUMBERS — the text is rejected if these are broken:
 - You may only write an economic indicator figure (Selic, IPCA, central bank rates) if it appears in the "Data for this week" list above. Copy it exactly as given.
 - You must not invent, estimate, round or update any of those figures.
 - You must not claim that a meeting, decision, rate cut or rate hike happened. The data above states the rate, not what happened at any meeting.
 - If a figure you would need is missing, write the text without it. Do not fill the gap.
-- In "what to expect", discuss scenarios and what to watch. Forecasting a specific figure is forbidden.`,
+- In "what to expect", discuss scenarios and what to watch. Forecasting a specific figure is forbidden.
+- You must not write any percentage change for the dollar or the euro that is not in the list above. Do not invent a one-day move, a Thursday move or a Monday opening.
+- You must not attribute figures to central banks or institutions outside Brazil (ECB, Federal Reserve, Bank of England) or to foreign indicators (GDP, employment, CPI). We do not have that data. You may mention them as things to watch, with no figure and no claimed decision.`,
     es: `
 REGLAS OBLIGATORIAS SOBRE NÚMEROS — el texto se rechaza si se incumplen:
 - Solo puede escribir una cifra de indicador económico (Selic, IPCA, tipos de un banco central) si aparece en la lista "Datos de esta semana" de arriba. Cópiela exactamente.
 - Está prohibido inventar, estimar, redondear o actualizar cualquiera de esas cifras.
 - Está prohibido afirmar que hubo una reunión, decisión, recorte o subida de tipos. Los datos de arriba dicen cuál es la tasa, no lo que ocurrió en una reunión.
 - Si falta un dato que necesitaría, escriba el texto sin él. No rellene el hueco.
-- En "qué esperar", hable de escenarios y de qué observar. Está prohibido pronosticar una cifra.`,
+- En "qué esperar", hable de escenarios y de qué observar. Está prohibido pronosticar una cifra.
+- Está prohibido escribir cualquier porcentaje de variación del dólar o del euro que no esté en la lista de arriba. No invente una variación de un día, de un jueves ni de una apertura de lunes.
+- Está prohibido atribuir cifras a bancos centrales o instituciones fuera de Brasil (BCE, Reserva Federal/Fed, Banco de Inglaterra) ni a indicadores extranjeros (PIB, empleo, IPC). No tenemos esos datos. Puede mencionarlos como asunto a observar, sin cifra y sin afirmar una decisión.`,
   };
 
   const prompts = {
@@ -313,7 +403,7 @@ Mencione que ${config.app.name} ayuda a seguir inversiones en múltiples monedas
   let content = null;
   for (let tentativa = 1; tentativa <= 2; tentativa++) {
     content = await generateText(prompts[locale], { maxTokens: 2000, temperature: 0.6 });
-    const erros = conferirIndicadores(content, indicadores);
+    const erros = conferirIndicadores(content, indicadores, semana);
     if (erros.length === 0) break;
 
     console.warn(`::warning::[${locale}] tentativa ${tentativa}: ${erros.join(' | ')}`);
@@ -463,6 +553,15 @@ async function main() {
       ` | IPCA 12m: ${ipca ? `${bcbPt(ipca.valor)}% (${ipca.data})` : 'indisponível'}`
     );
 
+    // A variação da semana é DADO, não opinião — e até 22/09/2026 o modelo
+    // inventava-a porque ninguém lha dava. Ver `getWeekChange`.
+    const semana = await getWeekChange();
+    console.log(
+      semana
+        ? `📈 Semana (desde ${semana.desde}): USD ${bcbPt(semana.USDBRL.variacao)}% | EUR ${bcbPt(semana.EURBRL.variacao)}%`
+        : '📈 Variação semanal indisponível — sai do pedido'
+    );
+
     // Generate cover image (SVG local, shared across all 3 locales)
     console.log('🖼️ Gerando imagem de capa...');
     const imageSlug = `cotacoes-semana-${new Date().toISOString().split('T')[0]}`;
@@ -478,7 +577,7 @@ async function main() {
 
     for (const locale of locales) {
       console.log(`📄 Gerando post em ${locale}...`);
-      const { slug, frontmatter } = await generatePost(locale, rates, weekStart, today, weekNum, dateStr, imagePath, indicadores);
+      const { slug, frontmatter } = await generatePost(locale, rates, weekStart, today, weekNum, dateStr, imagePath, indicadores, semana);
 
       const postPath = join(POSTS_DIR, `${slug}.md`);
       if (!existsSync(POSTS_DIR)) {
