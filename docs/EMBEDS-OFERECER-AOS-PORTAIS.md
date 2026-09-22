@@ -1,9 +1,16 @@
 # Oferecer os embeds aos portais de finanças
 
-> **Estado em 15/09/2026: 3 portais abordados, ZERO respostas (dia 1 de 5).
-> Os 3 alvos que faltavam medir foram medidos e os 3 saíram da lista.**
+> **Estado em 22/09/2026: 7 portais abordados. A quinta rodada mediu as duas
+> portas que faltavam — uma dá follow e tem e-mail que PEDE pauta; a outra não
+> põe link externo nenhum e sai da lista.**
 > Escrito em 14/09/2026, no dia em que os embeds foram construídos, e atualizado
-> em 15/09 com a segunda rodada.
+> em 15/09 com a segunda rodada e em 22/09 com a quinta.
+> 🔴 **O número que manda neste documento: 6 e-mails enviados, ZERO respostas**
+> (confirmado pelo Ed em 22/09). Ler *"O NÚMERO MAIS IMPORTANTE DESTE DOCUMENTO"*
+> antes de escrever o próximo e-mail — **não repetir e-mail, e não aumentar o volume.**
+>
+> 🔴 **Ler também "A QUINTA RODADA" (22/09)** — o perfil do `clickpetroleoegas`
+> MUDOU e a calculadora que o plano mandava oferecer já não encaixa.
 > **O estado real de cada portal está na tabela "Onde cada portal está", mais abaixo.
 > Ler ANTES de abordar qualquer um — cinco deles não têm porta de entrada.**
 >
@@ -152,14 +159,16 @@ Tudo aqui foi **medido**, não suposto. O que não deu para medir está dito com
 
 | Portal | Estado | Por onde |
 |---|---|---|
-| financeone.com.br | e-mail enviado 14/09 — **sem resposta** (prazo 19/09) | `contato@financeone.com.br`, a/c **Tamires Silva** |
-| bmcnews.com.br | e-mail enviado 14/09 — **sem resposta** (prazo 19/09) | `contato@bmcnews.com.br`, a/c **Renata Nunes** |
+| financeone.com.br | 🔴 **PRAZO VENCIDO, sem resposta** (22/09) → LinkedIn da pessoa | `contato@financeone.com.br`, a/c **Tamires Silva** |
+| bmcnews.com.br | 🔴 **PRAZO VENCIDO, sem resposta** (22/09) → LinkedIn da pessoa | `contato@bmcnews.com.br`, a/c **Renata Nunes** |
 | acionista.com.br | 💰 **RESPONDEU: é PAGO, R$ 390/artigo.** Não pagar | resposta curta enviada a perguntar se articulista é outro caminho |
 | **toroinvestimentos.com.br** | ❌ **MORTO — canal de e-mail desativado pelo Santander** | só WhatsApp (11) 4000-1580 |
-| **ecommercebrasil.com.br** | e-mail enviado 15/09 (prazo 22/09) | `contato@ecommercebrasil.com.br` |
-| **bemparana.com.br** | e-mail enviado 15/09 — **jornal, dá link follow** | `economia@bemparana.com.br` |
-| **jornaldebrasilia.com.br** | e-mail enviado 15/09 — **jornal, dá link follow** | **Lindauro Gomes**, `lindauro.gomes@grupojbr.com` |
-| **meliuz.com.br** | e-mail enviado 15/09 — **blog dá link follow, tema perfeito** | `marketing@meliuz.com.br` (existe; `conteudo@` e `blog@` não) |
+| **ecommercebrasil.com.br** | 🔴 **PRAZO VENCIDO 22/09, sem resposta** → Instagram `@ecommerce_br` | `contato@ecommercebrasil.com.br` |
+| **bemparana.com.br** | 🔴 **sem resposta** (7 dias) — **jornal, dá link follow** | `economia@bemparana.com.br` |
+| **jornaldebrasilia.com.br** | 🔴 **sem resposta** (7 dias) — **jornal, dá link follow** | **Lindauro Gomes**, `lindauro.gomes@grupojbr.com` |
+| **meliuz.com.br** | 🔴 **sem resposta** (7 dias) — blog dá link follow, tema perfeito | `marketing@meliuz.com.br` (existe; `conteudo@` e `blog@` não) |
+| **clickpetroleoegas.com.br** | ✅ **FOLLOW CONFIRMADO 22/09** — e-mail escrito e entregue ao Ed | `informe@…` (pauta) + `brunotelesredator@gmail.com` |
+| **gazetabrasilia.com.br** | 🔴 **SAIU DA LISTA 22/09** — não põe link externo nenhum | ver "A quinta rodada" |
 | suno.com.br | 🔴 **DESCARTADO** — tem 11 calculadoras próprias | ver abaixo |
 | genialinvestimentos.com.br | 🔴 **DESCARTADO** — é corretora, não portal | ver abaixo |
 | guiadoinvestidor.com.br | 🔴 SEM PORTA — não insistir | ver abaixo |
@@ -708,6 +717,141 @@ oferece-se um argumento diferente do código de embed.
 
 ---
 
+## 🔬 A QUINTA RODADA — as duas portas por usar, medidas (22/09/2026)
+
+O ponto 6 de "O que fazer a seguir" mandava escrever a estas duas e avisava que
+o *follow* não estava provado em nenhuma. **Foi medido. Uma passou, a outra caiu.**
+
+### ✅ clickpetroleoegas.com.br DÁ FOLLOW — medido em 6 artigos
+
+Links de saída para terceiros, todos **sem `rel="nofollow"`**:
+
+```
+eb.mil.br/web/noticias/…            (sem rel)
+carnewschina.com/2026/09/21/…       rel="noopener"      ← noopener não é nofollow
+gov.br/anp/…/relatorio_….pdf        (sem rel)
+bravaenergia.com/noticias/…         (sem rel)
+roge.energy/programacao             (sem rel)
+```
+
+**Controle, e é o que dá valor à medição:** a página inteira tem **3** ocorrências
+de `nofollow` e o mesmo comando encontrou as três — são o link interno de
+`wp-login.php`. Logo o comando *sabe* achar `nofollow`; a ausência nos links de
+saída é ausência real, não falha de medição. Aplicação de [[teste-que-diz-sim-a-tudo]].
+
+⚠️ **Detalhe revelador:** vários links externos deles trazem `?utm_source=chatgpt.com`.
+Escrevem com apoio de IA e **colam as fontes com link**. É um portal que cita de
+bom grado — exatamente o comportamento que se procura.
+
+### 🔴 gazetabrasilia.com.br SAI DA LISTA — não linka para fora
+
+**8 artigos abertos, ZERO links de saída para terceiros.** Não é questão de
+`nofollow`: eles simplesmente não põem link externo. Portal que não linka não dá
+backlink por mais simpático que seja o dono. Somado às 976 visitas/mês, **não vale
+os 15 minutos de escrita.**
+
+### 🔴 O PERFIL DO CPG MUDOU — e a calculadora do plano já não serve
+
+O ponto 6 mandava oferecer a **reserva de emergência**, com o argumento
+*"público de offshore, setor de demissão cíclica"*. **Lidas as 38 matérias mais
+recentes (feed RSS): o portal já não é de petróleo e gás.** Publica notícia geral —
+carro elétrico chinês, BYD, Xiaomi, JBS, obras, militar, histórias virais. A busca
+interna deles por `demissoes`, `salario` e `reserva-de-emergencia` devolve **sempre
+a mesma lista de recentes**, o que confirma que o assunto não existe lá.
+
+**Família de [[regra-velha-a-correr-em-estrutura-nova]]:** o alvo mudou e o plano
+não. Se o e-mail tivesse sido escrito como o ponto 6 mandava, chegaria a falar de
+demissão a um portal que hoje escreve sobre SUV chinês.
+
+### 🎯 O buraco REAL, e é recorrente: eles dão o valor em dólar e nunca convertem
+
+Matéria medida: *"Petróleo cai pela 3ª sessão seguida … Brent fecha a US$ 103,87 e
+WTI de novembro recua para US$ 96,08"*.
+
+| | |
+|---|---|
+| ocorrências de `US$` na página | **85** |
+| ocorrências da palavra *reais* | **0** |
+
+E não é caso isolado no feed: *"Fabricante investe mais de US$ 4 bilhões"*,
+*"Bilionário comprou madeireira por US$ 22 milhões"*, *"reduzir até £15 por mês na
+conta"*. **O leitor brasileiro fica sempre sem a conta** — e o `conversor-moedas` é
+exatamente isso.
+
+**As contas foram feitas com cotação lida na AwesomeAPI em 22/09** (USD 5,1111 ·
+GBP 6,83935), não escritas de cabeça: Brent → R$ 530,89 · WTI → R$ 491,08 ·
+£15 → R$ 102,59. O conversor foi conferido no ar na mesma corrida: página **200**
+(93.559 bytes), embed **200** (24.419 bytes), com uma URL falsa a dar **404** como
+controle.
+
+### 🚪 A porta: são DUAS, e as duas pedem pauta por escrito
+
+| endereço | a frase deles |
+|---|---|
+| `informe@clickpetroleoegas.com.br` | */contato/*: *"Para sugestões de pauta, postar vagas de emprego ou publicidade, seguem os contatos logo abaixo"* |
+| `brunotelesredator@gmail.com` | */equipe/*: *"Sugestão de pauta? Manda no brunotelesredator@gmail.com"* — Bruno Teles, **7.000+ artigos** na rede deles |
+
+O e-mail foi para `informe@` **com cópia ao Bruno**: o primeiro é o canal oficial,
+o segundo é quem escreve. Ficheiro: **`EMAIL-CLICKPETROLEO-22-09.txt`**.
+
+> ✅ **ENVIADO PELO ED EM 22/09/2026.** É o **8º** contacto da campanha.
+
+### 🔴 O defeito que saiu para fora com este e-mail
+
+O `.txt` foi entregue **escrito sem acento nenhum** — *"Ola"*, *"cotacao"*,
+*"nao"*, *"pagina"* — e o Ed copiou e enviou assim. **Num e-mail cujo argumento
+inteiro é "eu sou sério, confira o que digo", a forma dizia o contrário do texto.**
+Não é um deslize interno: saiu para um portal e não volta atrás. O ficheiro na área
+de trabalho já foi reescrito com acentuação correta, para servir de modelo aos
+próximos. **Regra nova: texto que sai do computador do Ed vai em português
+correto; sem acento, só nome de ficheiro e comando.**
+
+---
+
+## 🔴 O NÚMERO MAIS IMPORTANTE DESTE DOCUMENTO: 6 e-mails, 0 respostas
+
+**Confirmado pelo Ed em 22/09/2026: nenhum dos seis respondeu.** Todos os prazos
+estão vencidos.
+
+| enviado | a quem | prazo | resposta |
+|---|---|---|---|
+| 14/09 | financeone.com.br (`contato@`, a/c Tamires Silva) | 19/09 | **nenhuma** |
+| 14/09 | bmcnews.com.br (`contato@`, a/c Renata Nunes) | 19/09 | **nenhuma** |
+| 15/09 | ecommercebrasil.com.br (`contato@`, site velho) | 22/09 | **nenhuma** |
+| 15/09 | bemparana.com.br (`economia@`) | — | **nenhuma** |
+| 15/09 | jornaldebrasilia.com.br (Lindauro Gomes) | — | **nenhuma** |
+| 15/09 | meliuz.com.br (`marketing@`) | — | **nenhuma** |
+
+⚠️ **Só responderam os dois que fecharam a porta** (Toro, com resposta automática
+de canal desativado; acionista, com tabela de preços) — e os dois responderam em
+**menos de 24 horas**. **Portanto os e-mails chegam.** O silêncio dos seis não é
+problema de entrega: é desinteresse, ou é não-lido.
+
+### O que este zero desmente, e é a linha que estava escrita aqui
+
+A quarta rodada calculava: *"1 a 2 e-mails por dia → 20 a 30 em três semanas →
+**2 a 5 links**, a 5–15% de resposta"*. **A taxa real medida é 0 em 6.** Com seis
+tentativas ainda não dá para dizer que a taxa verdadeira é zero — seis é amostra
+pequena, e uma resposta na sétima já daria 14%. **Mas dá para dizer que a conta
+otimista não se confirmou**, e planear em cima dela seria repetir o erro do
+*"é de graça"* do acionista: [[teste-que-diz-sim-a-tudo]].
+
+### O que muda a seguir
+
+1. **Segundo contacto, não segundo e-mail.** Repetir o mesmo e-mail ao mesmo
+   endereço não muda nada — se o primeiro não foi lido, o segundo também não é.
+   O caminho é **pessoa**: LinkedIn da **Tamires Silva** (financeone) e da
+   **Renata Nunes** (bmcnews); Instagram `@ecommerce_br`.
+   ⚠️ **O LinkedIn devolve HTTP 999 a robô — este passo é do Ed, obrigatoriamente.**
+2. **O jornal continua a ser a melhor aposta** (é quem dá follow), mas
+   `economia@` é uma caixa partilhada. Onde houver **nome de pessoa** — como o
+   Lindauro Gomes — a hipótese é maior.
+3. **Não aumentar o volume.** Mandar 30 e-mails com 0% de resposta não produz
+   links, produz reputação de spam no `finmoovi.com`. **Antes de escalar, é
+   preciso UM sim que mostre o que funciona.**
+
+---
+
 ## Pendências relacionadas
 
 - ✅ **mate.tools: FECHADO em 15/09 — 6 de 6.** O conversor de moedas entrou pela caixa
@@ -716,7 +860,18 @@ oferece-se um argumento diferente do código de embed.
 - **AlternativeTo:** o app está na fila gratuita, ainda não aprovado. Quando sair,
   adicionar o FinMoovi como alternativa nas páginas dos concorrentes (botão
   "+ Add Alternatives").
-- 🔴 **webcatalog.io RECUSOU em 15/09.** Motivo dado, uma palavra: *"Untrustworthy"*.
+- ✅ **webcatalog.io APROVOU em 22/09/2026 — o caso está fechado.** Ficha no ar em
+  `webcatalog.io/en/apps/finmoovi/` (medido: 200, 198.836 bytes; controle com URL
+  falsa dá 307). Foram **duas recusas** com a palavra *"Untrustworthy"*, um apelo
+  pelo formulário *General inquiry* e a resposta final de `support@webcatalog.io`:
+  *"confirmed the ownership and responsibility information provided on the website"*.
+  🔴 **MAS o link é `rel="noopener nofollow"`** — uma única ocorrência de `nofollow`
+  no HTML e é esta. **Não conta como backlink**, o que confirma outra vez a quarta
+  rodada. Medido na mesma corrida: `sitelike.org` também está publicado e também é
+  `nofollow`; o **AlternativeTo continua por medir** (`403` do Cloudflare deles,
+  igual a 14/09 — e `403` não é "não existe").
+- 🗄️ Histórico da recusa, para quem precisar do porquê: 🔴 **webcatalog.io recusou em
+  15/09.** Motivo dado, uma palavra: *"Untrustworthy"*.
   Não publicam critérios (procurado, não encontrado) — qualquer causa é hipótese. O que
   **foi medido** no `finmoovi.com`: tem Privacidade, Termos, Cookies e Aviso Legal; **não
   tem página "Sobre"**; não publica nome de empresa nem morada (só *"Feito com ❤️ em
@@ -729,7 +884,10 @@ oferece-se um argumento diferente do código de embed.
   do rodapé. **Isto conta para esta estratégia:** o editor de um portal abre o site antes
   de decidir publicar, e número inventado num site de dinheiro é o sinal de desconfiança
   mais visível que há. Os depoimentos fictícios já tinham sido retirados em 23/07/2026.
-- ⏭️ **A página "Sobre" continua por fazer.** É o buraco que sobra: quem está por trás do
+- ✅ **A página "Sobre" FOI FEITA em 15/09** e está no ar nos 3 idiomas (`/sobre` ·
+  `/about` · `/acerca`) — esta linha ficou por atualizar e contradizia a secção
+  "A PÁGINA SOBRE ENTROU" logo acima. O texto original, por memória histórica:
+  ⏭️ *"A página Sobre continua por fazer.* É o buraco que sobra: quem está por trás do
   FinMoovi. O nome **já está no site** — o Aviso Legal e a Política de Privacidade dizem
   *"Ed Flávio (pessoa singular) — Portugal"*, com e-mail de contato. Não há empresa
   aberta; há **atividade aberta em Portugal** (confirmado pelo Ed em 15/09).
