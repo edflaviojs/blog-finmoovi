@@ -37,7 +37,7 @@ La semana pasada estuvo marcada por movimientos moderados en las divisas y una n
 
 ## 1. Dólar y euro: ¿qué hizo la moneda extranjera?
 
-- **Dólar (USD/LOCAL = 0,92 €)**: La moneda local se mantuvo estable frente al dólar durante la mayor parte de la semana. Después de una caída de 0,4 % el lunes, el tipo de cambio volvió a subir ligeramente el viernes, cerrando prácticamente en el mismo nivel con el que empezó la semana. La estabilidad se debió a la combinación de datos de [inflación](/es/glossario/es-inflacion) local dentro del rango esperado y a la ausencia de grandes sorpresas en la agenda de la Reserva Federal de EE. UU.
+- **Dólar (USD/LOCAL = 0,92 €)**: La moneda local se mantuvo estable frente al dólar. En la semana el par subió un 0,34 %, una variación mínima: el tipo de cambio terminó prácticamente donde empezó.
 
 - **Euro (EUR/LOCAL = 1,07 €)**: El euro mostró una ligera depreciación, alrededor de 0,6 % en la semana. La razón principal fue la fortaleza del dólar frente al euro en los mercados internacionales, lo que hizo que la moneda local ganara un poco más contra la moneda europea. En términos prácticos, si tienes ahorros en euros, ahora valen un poco menos en la moneda local.
 

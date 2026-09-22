@@ -33,11 +33,11 @@ La última semana fue tranquila en los mercados, pero hubo movimientos que vale 
 
 ## Tendencia del dólar y del euro
 
-- **Dólar**: El par USD/LOCAL subió un 0,8 % en la semana. La subida se debió en parte a la publicación de datos de [inflación](/es/glossario/es-inflacion) de EE. UU. que mostraron una ligera aceleración, lo que hizo que los inversores buscaran refugio en la moneda americana. Además, el anuncio de la Reserva Federal de mantener su política restrictiva mantuvo la presión sobre la **moneda local**.
+- **Dólar**: El par USD/LOCAL bajó un 1,12 % en la semana. Es un movimiento pequeño, pero en sentido contrario al que muchos esperaban: la moneda local terminó la semana algo más fuerte.
 
-- **Euro**: El EUR/LOCAL ganó un 0,6 % frente a la moneda local. La zona euro vio una recuperación de la confianza después de la publicación de unas cifras de empleo mejores de lo esperado en Alemania. Sin embargo, la incertidumbre sobre la política monetaria del BCE mantuvo el euro en una posición algo volátil.
+- **Euro**: El EUR/LOCAL bajó un 1,00 % frente a la moneda local, casi lo mismo que el dólar. Cuando las dos monedas se mueven juntas, la explicación suele estar del lado de la moneda local, y no de cada una por separado.
 
-En resumen, tanto el dólar como el euro mostraron una ligera tendencia alcista frente a la **moneda local**, lo que implica que los productos importados y los viajes al exterior se vuelven un poco más costosos para las **personas**.
+En resumen, tanto el dólar como el euro cedieron ligeramente frente a la **moneda local**, lo que deja los productos importados y los viajes al exterior un poco menos costosos para las **personas**.
 
 ## [tasa base del banco central](/es/glossario/es-selic) y su impacto en tus inversiones
 
@@ -66,7 +66,7 @@ Este pequeño paso te da una capa de protección y te ayuda a no depender exclus
 - **Política externa**: La reunión del G20 podría generar nuevas expectativas sobre flujos de capital y, por ende, sobre el tipo de cambio. Mantente atento a los comunicados del **Ministerio de Hacienda**.
 - **Mercado de commodities**: Los precios del hierro y del petróleo seguirán influyendo en la balanza comercial y, indirectamente, en la fortaleza de la **moneda local**.
 
-En conclusión, la semana fue de ligeras subidas del dólar y el euro, la **tasa base del banco central** se mantiene alta y la mejor estrategia sigue siendo la [diversificación](/es/glossario/es-diversificacion) y el monitoreo constante. Usa herramientas como FinMoovi para mantener el control y tomar decisiones con la información más fresca y clara posible. ¡Nos vemos la próxima semana con más datos y recomendaciones!
+En conclusión, la semana fue de ligeras bajadas del dólar y el euro, la **tasa base del banco central** se mantiene alta y la mejor estrategia sigue siendo la [diversificación](/es/glossario/es-diversificacion) y el monitoreo constante. Usa herramientas como FinMoovi para mantener el control y tomar decisiones con la información más fresca y clara posible. ¡Nos vemos la próxima semana con más datos y recomendaciones!
 
 ---
 **¿Listo para seguir tus inversiones? [Prueba FinMoovi gratis por 7 días](https://finmoovi.com) — en 5 minutos tendrás una visión clara de a dónde va tu dinero.**

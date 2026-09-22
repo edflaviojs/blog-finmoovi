@@ -31,9 +31,9 @@ A semana foi marcada por oscilações moderadas nas moedas estrangeiras e pela S
 
 ### Dólar e euro: como ficaram a R$ 5,12 e R$ 5,95?
 
-- **Dólar** – O par USD/BRL terminou a semana em R$ 5,12, praticamente estável em relação à segunda‑feira. Depois de uma alta de 2 % na quinta‑feira, impulsionada por dados de [inflação](/glossario/inflacao) dos EUA que vieram acima do esperado, a moeda recuou na sexta‑feira com a divulgação de um relatório de emprego mais fraco. Para o investidor brasileiro, isso significa que o custo de produtos importados não mudou muito, mas a [volatilidade](/glossario/volatilidade) ainda pode abrir oportunidades de compra em momentos de “cairzinho”.
+- **Dólar** – O par USD/BRL terminou a semana em R$ 5,12, com recuo de 1,12 % em relação à semana anterior. Para o investidor brasileiro, isso significa que o custo de produtos importados não mudou muito, mas a [volatilidade](/glossario/volatilidade) ainda pode abrir oportunidades de compra em momentos de “cairzinho”.
 
-- **Euro** – O EUR/BRL ficou em R$ 5,95, também sem grandes variações. A pressão veio da zona euro, onde a decisão do BCE de manter a taxa de juros em 4,25 % gerou um leve enfraquecimento do euro. No Brasil, o patamar elevado da Selic ajudou a conter a alta da moeda. Em resumo: tanto o dólar quanto o euro mostraram resistência, mas a tendência é de leve desvalorização caso a política monetária americana continue mais agressiva.
+- **Euro** – O EUR/BRL ficou em R$ 5,95, com recuo de 1,00 % na semana — praticamente o mesmo movimento do dólar. No Brasil, o patamar elevado da Selic ajudou a conter a alta da moeda. Em resumo: tanto o dólar quanto o euro mostraram resistência, mas a tendência é de leve desvalorização caso a política monetária americana continue mais agressiva.
 
 ### Selic em 14,00% e o que a taxa parada muda nos seus investimentos
 

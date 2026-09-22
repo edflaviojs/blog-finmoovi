@@ -25,7 +25,7 @@ Hello, folks! It's time to do a weekly recap of the financial market. Let's go!
 
 ## Dollar and Euro: Weekly Trend
 
-This week, the US dollar closed at $1.03, while the euro reached $1.18. Compared to the previous week, the dollar rose about 0.5%, while the euro had a more modest change, increasing only 0.2%. This means that if you're planning to travel abroad or shop online in dollars or euros, it's important to watch exchange rates so you don't get caught off guard.
+This week, the US dollar closed at $1.03, while the euro reached $1.18. Compared to the previous week, the dollar rose 1.60 %, while the euro had a more modest change, increasing 0.24 %. This means that if you're planning to travel abroad or shop online in dollars or euros, it's important to watch exchange rates so you don't get caught off guard.
 
 ## [central bank base rate](/en/glossario/en-selic) and Impact on Investments
 

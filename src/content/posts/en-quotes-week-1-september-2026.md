@@ -35,7 +35,7 @@ The past week was a “break‑even point” for those who follow the stock mark
 
 ## Dollar and Euro: How They Behaved
 
-- **Dollar** – Closed the week at **$1.02**, almost unchanged from the start of Monday. After a 0.4 % jump on Monday, the exchange rate retreated in the following days, ending practically at the same level. The stability was driven by U.S. [inflation](/en/glossario/en-inflation) data that came in line with expectations and the Federal Reserve’s decision to keep [interest](/en/glossario/en-interest) rates high for a while longer. For people, this means imported products are still pricey, but there are no last‑minute surprises.
+- **Dollar** – Closed the week at **$1.02**, down 1.12 % from the previous week. It is a small move, but it is a move: the rate did not end where it started. For people, this means imported products are still pricey, but there are no last‑minute surprises.
 
 - **Euro** – Ended the week at **$1.19**, slightly below the $1.20 that marked the start of the week. The roughly 0.8 % drop was driven by a weakening eurozone after weaker‑than‑expected growth numbers were released. In practice, anyone with expenses in euros (travel, courses, or online purchases) feels a small relief, but still pays almost six local units for each euro.
 

@@ -27,9 +27,9 @@ The week was marked by swings in international markets and by the movement of th
 
 ## 1. Dollar and Euro – Weekly Trend
 
-- **Dollar (USD/BRL = $1.02)** – After closing the previous week at $1.02, the dollar rose gradually, gaining about 0.6 % to reach $1.02. The increase was driven by U.S. inflation data that came in higher than expected, and by the expectation that the Fed will keep interest rates high for longer. In practice, this means that if you usually buy imported products or travel abroad, your wallet will feel an extra pinch.
+- **Dollar (USD/BRL = $1.02)** – After closing the previous week at $1.02, the dollar barely moved, gaining 0.09 % over the period. That is close to flat: the week brought no real change for anyone holding the pair. In practice, this means that if you usually buy imported products or travel abroad, your wallet will feel an extra pinch.
 
-- **Euro (EUR/BRL = $1.17)** – The euro also rose, but at a more modest pace, advancing 0.3 % in the same period. The difference between the euro and dollar quotes is still around $0.14, indicating that the local currency is weaker against the European single [currency](/en/glossario/en-moeda). If you have a trip planned to Europe or are thinking of investing in [funds](/en/glossario/en-investment-fund) that buy assets there, it’s worth keeping an eye on it.
+- **Euro (EUR/BRL = $1.17)** – The euro went the other way, slipping 0.41 % in the same period. The difference between the euro and dollar quotes is still around $0.14, indicating that the local currency is weaker against the European single [currency](/en/glossario/en-moeda). If you have a trip planned to Europe or are thinking of investing in [funds](/en/glossario/en-investment-fund) that buy assets there, it’s worth keeping an eye on it.
 
 The good news is that volatility was not so aggressive; the pairs oscillated within narrow ranges, which brings a bit of peace of mind for those with investments tied to foreign currencies.
 
@@ -58,7 +58,7 @@ I usually recommend **FinMoovi** as if it were a friend who understands finance.
 
 - **Investments:** With a stable central bank base rate, the search for fixed‑income alternatives with returns above the interbank rate should grow. There may also be opportunities in private credit funds, which usually benefit from higher rates.
 
-**Quick summary:** Dollar and euro rose, the central bank base rate stayed firm and your portfolio needs to adapt to high rates. Take advantage of tools like FinMoovi to monitor everything simply and keep diversifying to reduce risk. Have a good investment week!
+**Quick summary:** The dollar barely moved and the euro slipped, the central bank base rate stayed firm and your portfolio needs to adapt to high rates. Take advantage of tools like FinMoovi to monitor everything simply and keep diversifying to reduce risk. Have a good investment week!
 
 ---
 **Ready to track your investments? [Try FinMoovi free for 7 days](https://finMoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**

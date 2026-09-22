@@ -27,7 +27,7 @@ seo:
 
 ## Resumo do dólar e do euro (07/09 – 14/09/2026)
 
-Nesta semana o dólar terminou em **R$ 5,12**, praticamente estável em relação ao real. Após a alta de 2 % na abertura da segunda‑feira, a moeda norte‑americana recuou gradualmente, puxada por um recuo do índice S&P 500 e por dados de [inflação](/glossario/inflacao) dos EUA que mostraram uma desaceleração. O mercado reagiu com alívio, já que a expectativa de novos cortes na taxa de juros da Fed diminuiu.
+Nesta semana o dólar terminou em **R$ 5,12**, com alta de 0,34 % em relação ao fechamento anterior — variação pequena, que na prática deixa o câmbio onde estava.
 
 ![Resumo do dólar e do euro (07/09 – 14/09/2026)](/images/posts/cotacoes-semana-2-setembro-2026-inline-1.webp)
 

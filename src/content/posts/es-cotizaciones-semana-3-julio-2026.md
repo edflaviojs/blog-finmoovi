@@ -32,7 +32,7 @@ seo:
 
 ## Resumen del dólar y el euro (13 – 20 julio 2026)
 
-Esta semana la **moneda local** mostró una ligera recuperación frente a las dos monedas más importantes. El **dólar** se mantuvo en torno a **€ 0,92**, una caída de 0,3 % respecto al lunes, mientras que el **euro** quedó en **€ 1,05**, bajando 0,5 % en el mismo período. La presión bajista vino principalmente de dos factores: la publicación de datos de [inflación](/es/glossario/es-inflacion) más suaves en EE. UU. y la expectativa de que la Reserva Federal mantenga la política monetaria estable. La noticia más relevante fue la decisión de la autoridad monetaria de **mantener la [tasa base del banco central](/es/glossario/es-selic) en 14,25 %**, lo que quitó un posible impulso alcista a la moneda local.
+Esta semana la **moneda local** mostró una ligera recuperación frente a las dos monedas más importantes. El **dólar** se mantuvo en torno a **€ 0,92**, una caída de 0,83 % en la semana, mientras que el **euro** quedó en **€ 1,05**, bajando 0,58 % en el mismo período. Las dos monedas cedieron a la vez, lo que apunta a que la fuerza vino del lado de la moneda local. La noticia más relevante fue la decisión de la autoridad monetaria de **mantener la [tasa base del banco central](/es/glossario/es-selic) en 14,25 %**, lo que quitó un posible impulso alcista a la moneda local.
 
 ![Resumen del dólar y el euro (13 – 20 julio 2026)](/images/posts/es-cotizaciones-semana-3-julio-2026-inline-1.webp)
 
