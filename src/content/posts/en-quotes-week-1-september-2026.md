@@ -45,11 +45,11 @@ The past week was a “break‑even point” for those who follow the stock mark
 
 ## Central Bank Base Rate and Its Effect on Investments
 
-The basic interest rate – the central bank base rate – stayed at **14.00 % per year**, unchanged since August. No rate-setting meeting took place during the week. This stance creates two clear effects:
+The basic [interest](/en/glossario/en-interest) rate – the central bank base rate – stayed at **14.00 % per year**, unchanged since August. No rate-setting meeting took place during the week. This stance creates two clear effects:
 
 ![Central bank base rate and its effect on investments](/images/posts/en-quotes-week-1-september-2026-inline-3.webp)
 
-1. **[Fixed income](/en/glossario/en-fixed-income):** Instruments like [government bonds](/en/posts/en-tesouro-direto-for-beginners) continue to yield close to the official rate, still guaranteeing a “safe” return above inflation. For those with money saved in savings, moving to a [certificates of deposit (CDs)](/en/glossario/en-cdb) or government bonds yields much more.
+1. **[Fixed income](/en/glossario/en-fixed-income):** Instruments like [government bonds](/en/posts/en-tesouro-direto-for-beginners) continue to yield close to the official rate, still guaranteeing a “safe” return above [inflation](/en/glossario/en-inflation). For those with money saved in savings, moving to a [certificates of deposit (CDs)](/en/glossario/en-cdb) or government bonds yields much more.
 
 2. **[Variable income](/en/glossario/en-variable-income):** With the central bank base rate high, companies’ [financing](/en/glossario/en-financing) costs increase, which can slow profit growth and consequently stock performance. However, sectors that profit from interest rates – such as banks – still have good prospects.
 

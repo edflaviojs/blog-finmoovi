@@ -47,7 +47,7 @@ En resumen: **la moneda local se mantuvo firme** frente al dólar y ganó un poc
 
 ## 2. Tasa base del banco central y su impacto en tus inversiones
 
-La tasa base del banco central se mantuvo en **13,75 %** después de la decisión del comité de política monetaria el miércoles. La autoridad monetaria decidió no recortar la tasa, argumentando que la inflación todavía está por encima del objetivo del 3 %. ¿Qué significa esto para vos?
+La tasa base del banco central se mantuvo en **13,75 %** después de la decisión del comité de política monetaria el miércoles. La autoridad monetaria decidió no recortar la tasa, argumentando que la [inflación](/es/glossario/es-inflacion) todavía está por encima del objetivo del 3 %. ¿Qué significa esto para vos?
 
 ![2. Tasa base del banco central y su impacto en tus inversiones](/images/posts/es-cotizaciones-semana-2-septiembre-2026-inline-3.webp)
 

@@ -41,7 +41,7 @@ O Copom não se reuniu nesta semana e a Selic seguiu em **14,00 % ao ano**, pa
 
 - **[Renda fixa](/glossario/renda-fixa)** – Títulos como [Tesouro Selic](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) e CDBs de curto prazo seguem atrativos, porque acompanham de perto a taxa básica. São opções seguras para quem quer [liquidez](/glossario/liquidez) e proteção contra a inflação. Se você já tem esses papéis, pode considerar “trocar” parte deles por fundos de [crédito](/glossario/credito) de médio prazo, que costumam render um pouco mais quando a taxa básica diminui.
 
-- **[Renda variável](/glossario/renda-variavel)** – Juros altos por mais tempo encarecem o crédito das empresas e costumam pesar sobre ações de consumo e varejo, que dependem de financiamento. Se você tem um perfil mais arrojado, pode ser a hora de reforçar posições em setores que se beneficiam de juros mais baixos.
+- **[Renda variável](/glossario/renda-variavel)** – Juros altos por mais tempo encarecem o crédito das empresas e costumam pesar sobre ações de consumo e varejo, que dependem de [financiamento](/glossario/financiamento). Se você tem um perfil mais arrojado, pode ser a hora de reforçar posições em setores que se beneficiam de juros mais baixos.
 
 ### Dica prática para quem investe a partir de casa
 

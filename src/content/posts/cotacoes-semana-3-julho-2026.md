@@ -91,7 +91,7 @@ Fique de olho nesses indicadores; eles costumam mover o real mais que qualquer o
 
 ### FinMoovi: seu aliado nas múltiplas moedas  
 
-Gerenciar investimentos em diferentes moedas pode ser confuso, mas o **FinMoovi** simplifica tudo. Com ele você acompanha a cotação do dólar, euro e outras moedas em tempo real, além de visualizar a performance dos seus ativos em reais ou em moeda estrangeira. É como ter um assistente financeiro no bolso, pronto para te lembrar quando é hora de rebalancear ou de aproveitar uma oportunidade cambial.
+Gerenciar investimentos em diferentes moedas pode ser confuso, mas o **FinMoovi** simplifica tudo. Com ele você acompanha a [cotação do dólar](/ferramentas/conversor-moedas), euro e outras moedas em tempo real, além de visualizar a performance dos seus ativos em reais ou em moeda estrangeira. É como ter um assistente financeiro no bolso, pronto para te lembrar quando é hora de rebalancear ou de aproveitar uma oportunidade cambial.
 
 ---
 

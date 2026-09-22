@@ -41,7 +41,7 @@ Já o euro ficou em **R$ 5,94**, subindo 0,6 % ao longo da semana. O princip
 
 ## Comentário sobre a Selic e impacto nos investimentos
 
-A taxa Selic segue em **14,00 % ao ano**, patamar definido pelo Copom em agosto de 2026. O Comitê justificou a decisão apontando que a inflação ainda está acima da meta (4,22 % em agosto, IPCA acumulado em 12 meses) e que a política monetária precisa de “tempo suficiente” para fazer efeito. 
+A taxa Selic segue em **14,00 % ao ano**, patamar definido pelo Copom em agosto de 2026. O Comitê justificou a decisão apontando que a [inflação](/glossario/inflacao) ainda está acima da meta (4,22 % em agosto, IPCA acumulado em 12 meses) e que a política monetária precisa de “tempo suficiente” para fazer efeito. 
 
 **O que isso significa para você:**  
 

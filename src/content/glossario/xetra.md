@@ -19,7 +19,7 @@ seo:
 
 ## O que é Xetra e por que você já ouviu falar dela?
 
-A Xetra é a plataforma eletrônica de negociação da Bolsa de Frankfurt, onde ações, ETFs e outros ativos são comprados e vendidos em tempo real. Pense nela como o “mercado de pulgas digital” onde, em vez de barracas, há servidores que conectam compradores e vendedores 24 horas por dia. Quando você vê o preço de uma ação de uma empresa europeia subindo rapidamente na TV, provavelmente aquela cotação vem da Xetra. Ela garante que a transação seja feita de forma automática, sem precisar de um corretor na fila.
+A Xetra é a plataforma eletrônica de [negociação](/glossario/negociacao) da Bolsa de Frankfurt, onde ações, ETFs e outros ativos são comprados e vendidos em tempo real. Pense nela como o “mercado de pulgas digital” onde, em vez de barracas, há servidores que conectam compradores e vendedores 24 horas por dia. Quando você vê o preço de uma ação de uma empresa europeia subindo rapidamente na TV, provavelmente aquela cotação vem da Xetra. Ela garante que a transação seja feita de forma automática, sem precisar de um corretor na fila.
 
 ![O que é Xetra e por que você já ouviu falar dela?](/images/glossario/xetra-inline-1.webp)
 
@@ -45,15 +45,15 @@ A Xetra traz benefícios que vão além da velocidade. Primeiro, a transparênci
 
 ## Riscos e cuidados ao operar na Xetra
 
-Mesmo com todas essas vantagens, investir na Xetra exige atenção. A volatilidade pode ser alta, principalmente em momentos de notícias econômicas importantes, e como as ordens são executadas quase que instantaneamente, um pequeno deslize pode gerar perdas inesperadas. Além disso, a diferença entre o preço de compra e o de venda (spread) pode variar conforme o ativo e a hora do dia, afetando o custo total da operação. Por isso, é essencial monitorar os movimentos e ter estratégias de proteção, como o uso de ordens stop.
+Mesmo com todas essas vantagens, investir na Xetra exige atenção. A [volatilidade](/glossario/volatilidade) pode ser alta, principalmente em momentos de notícias econômicas importantes, e como as ordens são executadas quase que instantaneamente, um pequeno deslize pode gerar perdas inesperadas. Além disso, a diferença entre o preço de compra e o de venda (spread) pode variar conforme o ativo e a hora do dia, afetando o custo total da operação. Por isso, é essencial monitorar os movimentos e ter estratégias de proteção, como o uso de ordens stop.
 
 ## Como o FinMoovi pode ajudar a acompanhar investimentos na Xetra
 
 Aqui entra o FinMoovi, aquele app que funciona como um assistente financeiro pessoal. Enquanto a Xetra cuida da execução das suas ordens, o FinMoovi cuida de todo o resto, garantindo que você não perca o controle do seu dinheiro.
 
-- **Captura inteligente:** tire foto da nota fiscal ou grave a voz ao fazer um gasto e o app categoriza automaticamente, facilitando o acompanhamento de despesas que podem impactar seu orçamento de investimento.  
+- **Captura inteligente:** tire foto da nota fiscal ou grave a voz ao fazer um gasto e o app categoriza automaticamente, facilitando o acompanhamento de despesas que podem impactar seu orçamento de [investimento](/glossario/investimento).  
 - **Multimoeda:** registre ganhos e custos em diferentes moedas (por exemplo, euros de ações europeias e dólares de fundos americanos) sem precisar fazer conversões manuais.  
-- **Fluxo de caixa e relatórios:** visualize entradas e saídas em gráficos claros, ajudando a entender quanto você realmente tem disponível para investir na Xetra.  
+- **[Fluxo de caixa](/glossario/fluxo-de-caixa) e relatórios:** visualize entradas e saídas em gráficos claros, ajudando a entender quanto você realmente tem disponível para investir na Xetra.  
 - **Planejamento mensal e metas:** defina quanto quer aportar por mês e acompanhe o progresso, ajustando quando o mercado estiver mais favorável.  
 - **Cartões de crédito e fatura:** importe os gastos do cartão e veja o impacto nas suas reservas de investimento, evitando usar dinheiro que deveria ficar aplicado.  
 - **Modo compras:** crie listas de compras e veja o total em tempo real, garantindo que o dinheiro destinado ao consumo não atrapalhe sua estratégia de compra de ações.  
@@ -72,4 +72,4 @@ Além disso, mantenha sempre um registro das taxas de corretagem e dos spreads, 
 
 ## Comece hoje
 
-Abra o FinMoovi, vá até a seção de “Metas de Investimento”, crie uma meta chamada “Investir na Xetra” e defina um aporte mensal equivalente ao preço de um café por dia. Em seguida, ative o alerta de preço para a ação que você quer comprar e tire uma foto da última nota de compra de um item pequeno para que o app categorize automaticamente. Em menos de cinco minutos você já terá um plano prático, controle de despesas e um lembrete pronto para agir quando a oportunidade surgir. Boa jornada!
+Abra o FinMoovi, vá até a seção de “Metas de Investimento”, crie uma meta chamada “Investir na Xetra” e defina um [aporte mensal](/ferramentas/simulador-investimento) equivalente ao preço de um café por dia. Em seguida, ative o alerta de preço para a ação que você quer comprar e tire uma foto da última nota de compra de um item pequeno para que o app categorize automaticamente. Em menos de cinco minutos você já terá um plano prático, [controle de despesas](/posts/6-melhores-apps-financeiros-para-freelancers-guia-pratico) e um lembrete pronto para agir quando a oportunidade surgir. Boa jornada!
