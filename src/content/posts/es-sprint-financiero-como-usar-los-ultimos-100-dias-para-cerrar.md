@@ -1,6 +1,6 @@
 ---
-title: "Sprint financiero: Cómo usar los últimos 100 días para cerrar el año en positivo (2026)"
-description: "Descubre un plan práctico de 100 días para terminar el año en positivo, con consejos accionables y la app FinMoovi como aliado."
+title: "Sprint financiero: cierra el año positivo en 100 días"
+description: "Obtén una guía paso a paso para organizar tus finanzas en los últimos 100 días y cerrar el 2026 con superávit. Pon en práctica las claves ahora."
 tickerHeadline: "Los 100 días que cambian tu saldo"
 image: "/images/posts/sprint-financeiro-como-usar-os-ultimos-100-dias-para-fechar.webp"
 imageAlt: "Cartera marrón, calculadora, monedas euro y gráfico financiero sobre fondo blanco con hojas verdes."
@@ -9,13 +9,14 @@ locale: "es"
 tags: ["sprint financiero","cerrar el año en positivo","control de gastos","metas de caja","FinMoovi","planificación de fin de año","desafío de 30 días","metas financieras fin de año"]
 author: "FinMoovi"
 publishedAt: 2026-08-28
+updatedAt: "2026-09-22"
 readingTime: 7
 featured: false
 translationKey: "sprint-financeiro-como-usar-os-ultimos-100-dias-para-fechar"
 scope: "universal"
 seo:
-  metaTitle: "Sprint financiero: Cómo usar los últimos 100 días para cerrar el año en positivo (2026)"
-  metaDescription: "Descubre un plan práctico de 100 días para terminar el año en positivo, con consejos accionables y la app FinMoovi como aliado."
+  metaTitle: "Sprint financiero: cierra el año positivo en 100 días"
+  metaDescription: "Obtén una guía paso a paso para organizar tus finanzas en los últimos 100 días y cerrar el 2026 con superávit. Pon en práctica las claves ahora."
   keywords: ["sprint financiero","cerrar el año en positivo","control de gastos","metas de caja","FinMoovi","planificación de fin de año","desafío de 30 días","metas financieras fin de año"]
 ---
 
