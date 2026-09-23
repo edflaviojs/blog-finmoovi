@@ -4,6 +4,7 @@ definition: "What Xetra is and how it shows up in your everyday money — explai
 title: "Xetra - Financial Glossary"
 description: "What Xetra is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/xetra.webp"
+imageAlt: "A glass jar filled with gold coins, surrounded by stacks of coins and a plant."
 category: "basico"
 tags: ["Xetra", "glossary", "finance"]
 author: "FinMoovi"

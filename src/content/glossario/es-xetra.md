@@ -4,6 +4,7 @@ definition: "Qué es Xetra y cómo aparece en tu día a día — explicado de fo
 title: "Xetra - Glosario Financiero"
 description: "Qué es Xetra y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/xetra.webp"
+imageAlt: "Una imagen de una jarra llena de monedas doradas, con monedas y plantas alrededor."
 category: "basico"
 tags: ["Xetra", "glosario", "finanzas"]
 author: "FinMoovi"
