@@ -2338,5 +2338,25 @@
         "status": 200
       }
     }
+  },
+  {
+    "slug": "por-que-minha-planilha-de-controle-nunca-acompanha-meus",
+    "title": "Por que minha planilha de controle nunca acompanha meus gastos?",
+    "url": "https://blog.finmoovi.com/posts/por-que-minha-planilha-de-controle-nunca-acompanha-meus",
+    "submittedAt": "2026-09-23T18:44:30.347Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1863787421
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
   }
 ]
