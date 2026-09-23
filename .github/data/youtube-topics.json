@@ -637,6 +637,26 @@
       },
       "arquivadoEm": "2026-09-17",
       "arquivadoPorque": "caminho viral desligado: 11% de retencao medida em 16 videos, a pior do canal"
+    },
+    {
+      "id": "kw-financiamento-de-r-50-000-vale-a-pena",
+      "theme": "Financiamento de R$ 50.000, vale a pena?",
+      "angle": "Vamos simular um financiamento de veículo e descobrir se é uma boa escolha para você",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "financiamento-de-veiculo",
+      "status": "pending",
+      "sourceKeyword": "como funciona financiamento de veiculo"
+    },
+    {
+      "id": "kw-juros-de-mora-30-ao-mes",
+      "theme": "Juros de mora: 30% ao mês?",
+      "angle": "Descubra como evitar perder R$ 500 por mês",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "juros-de-mora",
+      "status": "pending",
+      "sourceKeyword": "juros de mora o que e"
     }
   ]
 }
