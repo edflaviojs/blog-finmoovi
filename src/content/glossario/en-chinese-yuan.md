@@ -4,6 +4,7 @@ definition: "What Chinese Yuan is and how it shows up in your everyday money —
 title: "Chinese Yuan - Financial Glossary"
 description: "What Chinese Yuan is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/yuan.webp"
+imageAlt: "A glass bowl filled with gold coins on a white platform, surrounded by stacks of gold coins."
 category: "basico"
 tags: ["Chinese Yuan", "glossary", "finance"]
 author: "FinMoovi"

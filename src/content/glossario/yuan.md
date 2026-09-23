@@ -4,6 +4,7 @@ definition: "O que é yuan e como isso aparece no seu dia a dia — explicado de
 title: "yuan - Glossário Financeiro"
 description: "O que é yuan e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/yuan.webp"
+imageAlt: "Imagem de um artigo de finanças pessoais sobre o yuan, com moedas e um vaso de água."
 category: "basico"
 tags: ["yuan", "glossário", "finanças"]
 author: "FinMoovi"

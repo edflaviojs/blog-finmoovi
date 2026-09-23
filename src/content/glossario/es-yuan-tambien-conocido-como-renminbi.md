@@ -4,6 +4,7 @@ definition: "Qué es Yuan (también conocido como Renminbi) y cómo aparece en t
 title: "Yuan (también conocido como Renminbi) - Glosario Financiero"
 description: "Qué es Yuan (también conocido como Renminbi) y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/yuan.webp"
+imageAlt: "Una imagen de una escena con monedas de oro, un vaso de vidrio y un gráfico de crecimiento."
 category: "basico"
 tags: ["Yuan (también conocido como Renminbi)", "glosario", "finanzas"]
 author: "FinMoovi"
