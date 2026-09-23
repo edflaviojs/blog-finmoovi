@@ -1,0 +1,175 @@
+{
+  "slug": "kw-juros-de-mora-30-ao-mes",
+  "term": "Juros de mora: 30% ao mês?",
+  "category": "mindset",
+  "keyword": "Juros",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você já viu quanto os *juros de mora* tiram do seu bolso todo mês?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "avalanche",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você já viu quanto os juros de mora tiram do seu bolso todo mês? Eu descobri que eram mais de quinhentos reais.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "juros",
+          "visual": {
+            "type": "statement",
+            "text": "Juros de mora drenam seu bolso"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "quinhentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Você nem sente, mas se atrasar um pagamento pode custar até quinhentos reais por mês.",
+      "durationSec": 5.8,
+      "shots": [
+        {
+          "anchor": "sente",
+          "visual": {
+            "type": "icon",
+            "icon": "money"
+          }
+        },
+        {
+          "anchor": "custar",
+          "visual": {
+            "type": "statement",
+            "text": "Custa até R$500"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Aí o que parecia pouco vira um monte, porque o juros volta todo mês.",
+      "durationSec": 5.4,
+      "shots": [
+        {
+          "anchor": "parecia",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 500,
+            "prefix": "R$"
+          }
+        },
+        {
+          "anchor": "porque",
+          "visual": {
+            "type": "statement",
+            "text": "Juros se acumulam"
+          },
+          "sfx": "whoosh"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu coloquei a conta no FinMoovi e ele me mostrou que eu perdia quinhentos reais por mês.",
+      "durationSec": 6.5,
+      "shots": [
+        {
+          "anchor": "coloquei",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Mostra dívida crescente"
+          }
+        },
+        {
+          "anchor": "mostrou",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          },
+          "sfx": "coin"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer descobrir se isso acontece com você? Baixe o FinMoovi, são sete dias grátis.",
+      "durationSec": 5.4,
+      "shots": [
+        {
+          "anchor": "descobrir",
+          "visual": {
+            "type": "statement",
+            "text": "Descubra agora"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "icon",
+            "icon": "target"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Perder quinhentos reais todo mês sai silencioso. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 5.4,
+      "shots": [
+        {
+          "anchor": "Perder",
+          "visual": {
+            "type": "statement",
+            "text": "Perder R$500 em silêncio"
+          }
+        },
+        {
+          "anchor": "silencioso",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Descubra seus juros ocultos",
+    "target": "app"
+  },
+  "totalDurationSec": 37
+}
