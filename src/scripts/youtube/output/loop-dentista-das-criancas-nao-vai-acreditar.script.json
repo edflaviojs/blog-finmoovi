@@ -1,0 +1,118 @@
+{
+  "slug": "loop-dentista-das-criancas-nao-vai-acreditar",
+  "formato": "loop16",
+  "term": "O dentista das crianças",
+  "category": "vida",
+  "keyword": "DENTISTA",
+  "valor": "R$ 3.500",
+  "situacao": "dentista-das-criancas",
+  "gancho": "nao-vai-acreditar",
+  "ganchoFamilia": "não vai acreditar",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "buraco",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você não vai acreditar, mas eu me peguei sem dinheiro.",
+      "durationSec": 3.45,
+      "shots": [
+        {
+          "anchor": "acreditar",
+          "visual": {
+            "type": "statement",
+            "text": "Sem dinheiro"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "peguei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Quando vi, três mil e quinhentos reais tinham ido embora só nisso.",
+      "durationSec": 4.15,
+      "shots": [
+        {
+          "anchor": "quinhentos",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 3.500 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Só que eu percebi que era o aparelho da minha filha.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "percebi",
+          "visual": {
+            "type": "statement",
+            "text": "Aparelho da filha"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "aparelho",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Você não vai acreditar, mas eu me peguei sem dinheiro novamente.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "acreditar",
+          "visual": {
+            "type": "statement",
+            "text": "Sem dinheiro"
+          }
+        },
+        {
+          "anchor": "peguei",
+          "visual": {
+            "type": "statement",
+            "text": "Sem dinheiro"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
