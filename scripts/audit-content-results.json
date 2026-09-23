@@ -4388,6 +4388,21 @@
     }
   },
   {
+    "file": "en-xetra.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-yahoo-finance.md",
     "dir": "glossario",
     "severity": 0,
@@ -8484,6 +8499,21 @@
   },
   {
     "file": "es-whale.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-xetra.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
