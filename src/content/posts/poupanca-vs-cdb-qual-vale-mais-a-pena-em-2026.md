@@ -9,7 +9,7 @@ locale: "pt"
 tags: ["poupança","CDB","investimentos","finmoovi","comparação financeira","rendimento 2026","escolha de investimento","poupança vs cdb","onde guardar dinheiro"]
 author: "FinMoovi"
 publishedAt: 2026-08-21
-updatedAt: "2026-09-22"
+updatedAt: "2026-09-23"
 readingTime: 7
 featured: false
 translationKey: "poupanca-vs-cdb-qual-vale-mais-a-pena-em-2026"
@@ -92,4 +92,17 @@ Sim, pela liquidez diária e isenção de IR, a poupança pode ser a camada mais
 
 ### Como o FinMoovi ajuda a monitorar meus investimentos?
 O app oferece captura inteligente de extratos, categorização automática, alertas de vencimento e projeções de rendimento, facilitando o acompanhamento tanto da poupança quanto do CDB em tempo real.
+
+## Liquidez diária do CDB 120% CDI em setembro 2026
+
+Se você está pensando em aplicar num CDB que paga 120 % do CDI e quer saber como funciona a liquidez diária em setembro de 2026, a resposta prática é simples: o título permite resgate a qualquer dia útil, mas o crédito na sua conta costuma aparecer no próximo dia útil após a solicitação.  
+
+Para evitar surpresas, siga estes passos antes de fechar a compra:
+
+1. Confirme no contrato ou na página do banco que a liquidez é realmente “diária” e não “diária com carência”.  
+2. Verifique o prazo de compensação – normalmente um dia útil, mas pode variar se houver feriados.  
+3. Teste a operação pedindo um extrato ou simulando um saque pequeno antes de aplicar um valor maior.  
+
+Lembre‑se de que, apesar de poder retirar a qualquer momento, o rendimento será calculado apenas até a data do saque. Se precisar do dinheiro imediatamente, escolha um CDB com essa característica de liquidez diária e acompanhe o extrato para garantir que o crédito chegou quando esperado.
+
 <!-- SCHEMA_AUTO:{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"O CDB sempre rende mais que a poupança?","acceptedAnswer":{"@type":"Answer","text":"Não necessariamente. O rendimento depende da taxa do CDI e do percentual contratado. Quando a Selic está muito baixa, a diferença pode ser menor, mas, em geral, o CDB tende a superar a poupança."}},{"@type":"Question","name":"Posso resgatar o dinheiro do CDB antes do vencimento?","acceptedAnswer":{"@type":"Answer","text":"Sim, mas resgates antecipados costumam reduzir o rendimento proporcional ao tempo restante e podem incorrer em penalidades ou perda de parte dos juros."}},{"@type":"Question","name":"A poupança ainda vale a pena para a reserva de emergência?","acceptedAnswer":{"@type":"Answer","text":"Sim, pela liquidez diária e isenção de IR, a poupança pode ser a camada mais acessível da reserva, especialmente se você ainda não tem um fundo de emergência consolidado."}},{"@type":"Question","name":"Como o FinMoovi ajuda a monitorar meus investimentos?","acceptedAnswer":{"@type":"Answer","text":"O app oferece captura inteligente de extratos, categorização automática, alertas de vencimento e projeções de rendimento, facilitando o acompanhamento tanto da poupança quanto do CDB em tempo real."}}]} -->
