@@ -5079,6 +5079,26 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-09-22"
+    },
+    "xetra-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-23"
+    },
+    "xetra-inline-2.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-23"
+    },
+    "xetra-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-23"
+    },
+    "xetra.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-23"
     }
   },
   "corrigidas": {
@@ -5743,6 +5763,6 @@
       "motivo": "tem texto escrito (\"I'm sorry, I'm not able to identify the people in this image.\")"
     }
   },
-  "totalAcervo": 1016,
-  "ultimaCorrida": "2026-09-22"
+  "totalAcervo": 1020,
+  "ultimaCorrida": "2026-09-23"
 }
