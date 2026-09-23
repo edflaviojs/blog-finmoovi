@@ -1,0 +1,118 @@
+{
+  "slug": "loop-guardar-salario-curto-voces-viram",
+  "formato": "loop16",
+  "term": "Guardar com salário curto",
+  "category": "vida",
+  "keyword": "GUARDAR",
+  "valor": "R$ 50",
+  "situacao": "guardar-salario-curto",
+  "gancho": "voces-viram",
+  "ganchoFamilia": "vocês viram",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "balde-furado",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Gente, vocês viram que não sobra dinheiro no envelope?",
+      "durationSec": 4.02,
+      "shots": [
+        {
+          "anchor": "vocês",
+          "visual": {
+            "type": "statement",
+            "text": "Envelope vazio"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "viram",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu consegui separar cinquenta reais na primeira semana",
+      "durationSec": 3.58,
+      "shots": [
+        {
+          "anchor": "consegui",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "separar",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 50 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "E aí eu percebi que estava gastando demais",
+      "durationSec": 3.58,
+      "shots": [
+        {
+          "anchor": "percebi",
+          "visual": {
+            "type": "statement",
+            "text": "Gastando demais"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "estava",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Agora não sobra dinheiro no envelope, gente, vocês viram?",
+      "durationSec": 4.02,
+      "shots": [
+        {
+          "anchor": "sobra",
+          "visual": {
+            "type": "statement",
+            "text": "Envelope vazio"
+          }
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Envelope vazio"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}

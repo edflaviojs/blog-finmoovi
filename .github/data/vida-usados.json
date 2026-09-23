@@ -526,5 +526,11 @@
     "gancho": "comeca-assim",
     "turno": "noite",
     "em": "2026-09-21T10:12:37.160Z"
+  },
+  {
+    "situacao": "guardar-salario-curto",
+    "gancho": "voces-viram",
+    "turno": "manha",
+    "em": "2026-09-23T09:25:20.428Z"
   }
 ]
