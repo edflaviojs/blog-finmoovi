@@ -848,6 +848,21 @@
     }
   },
   {
+    "file": "en-chinese-yuan.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-come-cotas.md",
     "dir": "glossario",
     "severity": 0,
@@ -4343,6 +4358,21 @@
     }
   },
   {
+    "file": "en-why-my-budget-spreadsheet-never-keeps-up-with-my-spending.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-why-my-savings-goals-aren-t-moving-forward.md",
     "dir": "posts",
     "severity": 0,
@@ -7718,6 +7748,21 @@
     }
   },
   {
+    "file": "es-por-que-mi-hoja-de-control-nunca-sigue-mis-gastos.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-por-que-mis-metas-de-ahorro-no-avanzan.md",
     "dir": "posts",
     "severity": 0,
@@ -8544,6 +8589,21 @@
   },
   {
     "file": "es-yield.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-yuan-tambien-conocido-como-renminbi.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
