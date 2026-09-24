@@ -19,7 +19,7 @@ seo:
   keywords: ["planilha de controle","captura por voz","FinMoovi","automação de despesas","fluxo de caixa","finanças pessoais","atualização automática","substituir planilha","app financeiro","controle de gastos","categorização automática","finmoovi"]
 ---
 
-Sua planilha de controle nunca se atualiza porque ainda depende de você abrir o Excel, digitar cada gasto e, depois, corrigir linhas que ficaram fora de ordem ou com valores errados – tudo isso enquanto tenta lembrar se já anotou aquele cafezinho de manhã. O resultado? horas perdidas, números que não batem e a sensação de estar sempre um passo atrás do seu dinheiro.
+Sua [planilha](/posts/migrando-da-planilha-para-um-app-financeiro) de controle nunca se atualiza porque ainda depende de você abrir o Excel, digitar cada gasto e, depois, corrigir linhas que ficaram fora de ordem ou com valores errados – tudo isso enquanto tenta lembrar se já anotou aquele cafezinho de manhã. O resultado? horas perdidas, números que não batem e a sensação de estar sempre um passo atrás do seu dinheiro.
 
 ## O peso da planilha manual no dia a dia
 
@@ -31,21 +31,21 @@ Esse ciclo de “abrir, digitar, corrigir” gera três problemas principais:
 2. **Erros de digitação** – Um “0” a mais ou a menos pode distorcer seu saldo, levando a decisões equivocadas, como cortar um gasto que na verdade está dentro do planejado.
 3. **Desmotivação** – Quando a ferramenta que deveria facilitar a vida se torna um fardo, a tendência é abandonar o controle e viver à mercê de surpresas no fim do mês.
 
-Segundo a *World Bank*, a adoção de tecnologias digitais de gestão financeira pode reduzir o tempo gasto em tarefas administrativas em até 30 % (World Bank, 2022). Ainda assim, muitas pessoas continuam presas ao método tradicional de planilhas.
+Segundo a *World Bank*, a adoção de tecnologias digitais de [gestão financeira](/posts/5-alternativas-ao-mobills-em-2026) pode reduzir o tempo gasto em tarefas administrativas em até 30 % (World Bank, 2022). Ainda assim, muitas pessoas continuam presas ao método tradicional de planilhas.
 
 ## Como a captura por voz do FinMoovi muda o jogo
 
-Imagine que você acabou de sair do supermercado, ainda segurando a sacola, e pensa: “Será que eu já anotei tudo?”. Em vez de abrir a planilha, você abre o FinMoovi no celular, aperta o ícone de microfone e diz, em voz alta, “gastei 45 reais no supermercado”. Em menos de um segundo, o app registra o valor, reconhece a categoria “Alimentação” e já inclui o gasto no seu fluxo de caixa diário. Tudo isso funciona offline, garantindo que seus dados fiquem seguros mesmo sem conexão.
+Imagine que você acabou de sair do supermercado, ainda segurando a sacola, e pensa: “Será que eu já anotei tudo?”. Em vez de abrir a planilha, você abre o FinMoovi no celular, aperta o ícone de microfone e diz, em voz alta, “gastei 45 reais no supermercado”. Em menos de um segundo, o app registra o valor, reconhece a categoria “Alimentação” e já inclui o gasto no seu [fluxo de caixa](/glossario/fluxo-de-caixa) diário. Tudo isso funciona offline, garantindo que seus dados fiquem seguros mesmo sem conexão.
 
 ![Como a captura por voz do FinMoovi muda o jogo](/images/posts/por-que-minha-planilha-de-controle-nunca-acompanha-meus-2.webp)
 
 
 
-A captura por voz tem três vantagens essenciais:
+A [captura por voz](/posts/ja-esqueceu-de-pagar-a-conta-e-ficou-na-mao-como-mudar-isso) tem três vantagens essenciais:
 
 - **Velocidade** – O registro acontece em tempo real, sem precisar digitar números ou selecionar menus.
 - **Precisão** – O algoritmo de reconhecimento de fala, treinado com milhares de exemplos de despesas, entende variações como “gastei cinquenta e cinco” ou “gastei 55”.
-- **Organização automática** – Cada gasto é categorizado e inserido nos relatórios de despesas mensais, permitindo visualizações instantâneas de onde seu dinheiro está indo.
+- **[Organização](/posts/por-que-voce-ainda-esquece-a-data-de-vencimento-das-contas-e) automática** – Cada gasto é categorizado e inserido nos [relatórios](/posts/por-que-meu-dinheiro-some-antes-do-salario-chegar) de despesas mensais, permitindo visualizações instantâneas de onde seu dinheiro está indo.
 
 ## Passo a passo: 5 minutos para transformar seu controle
 
@@ -75,11 +75,11 @@ Essas diferenças são percebidas já nas primeiras duas semanas de uso.
 
 ## Por que o FinMoovi funciona offline e ainda assim é seguro
 
-Muitos aplicativos de finanças exigem conexão constante, o que pode ser um problema em áreas com sinal fraco ou para quem se preocupa com privacidade. O FinMoovi foi desenvolvido como um Progressive Web App (PWA) que armazena os dados localmente, criptografa tudo antes de sincronizar com a nuvem quando houver conexão. Essa arquitetura garante:
+Muitos [aplicativos de finanças](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar) exigem conexão constante, o que pode ser um problema em áreas com sinal fraco ou para quem se preocupa com privacidade. O FinMoovi foi desenvolvido como um Progressive Web App (PWA) que armazena os dados localmente, criptografa tudo antes de sincronizar com a nuvem quando houver conexão. Essa arquitetura garante:
 
 - **Privacidade** – Seus gastos nunca são enviados sem sua autorização.
 - **Disponibilidade** – Mesmo em viagens ou em locais sem internet, você ainda pode registrar despesas.
-- **Sincronização inteligente** – Quando o celular volta ao ar, o app atualiza os relatórios e envia backups seguros para a nuvem.
+- **Sincronização inteligente** – Quando o celular volta ao ar, o app atualiza os [relatórios](/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) e envia backups seguros para a nuvem.
 
 ## Dicas para potencializar a captura por voz
 

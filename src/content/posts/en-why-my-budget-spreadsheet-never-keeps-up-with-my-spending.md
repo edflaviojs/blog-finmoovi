@@ -19,11 +19,11 @@ seo:
   keywords: ["budget spreadsheet","voice capture","FinMoovi","expense automation","cash flow","personal finance","automatic updates","replace spreadsheet","financial app","spending control","automatic categorization","finmoovi"]
 ---
 
-Your budget spreadsheet never updates because you still have to open Excel, type every expense, and then fix rows that are out of order or have wrong numbers – all while trying to remember if you already logged that morning coffee. The result? wasted hours, mismatched figures, and the feeling that you’re always a step behind your money.
+Your budget [spreadsheet](/en/posts/en-migrating-from-spreadsheets-to-a-financial-app) never updates because you still have to open [Excel](/en/posts/en-how-to-build-a-simple-cash-flow-spreadsheet-in-excel-and), type every expense, and then fix rows that are out of order or have wrong numbers – all while trying to remember if you already logged that morning coffee. The result? wasted hours, mismatched figures, and the feeling that you’re always a step behind your money.
 
 ## The hidden cost of a manual spreadsheet
 
-Most of us have been there: the month ends, you open the spreadsheet you’ve been using for years and notice dozens of missing rows, duplicate categories, and some expenses that never made it in. You scramble to recall every purchase from the past week – that quick snack, an unexpected cleaning‑supply run, a subscription that renewed without warning – and end up spending more time fixing the spreadsheet than actually saving money.
+Most of us have been there: the month ends, you open the spreadsheet you’ve been using for years and notice dozens of missing rows, duplicate categories, and some expenses that never made it in. You scramble to recall every purchase from the past week – that quick snack, an unexpected cleaning‑supply run, a subscription that renewed without warning – and end up spending more time fixing the spreadsheet than actually [saving](/en/posts/en-how-to-build-a-budget-that-actually-works-in-2026) money.
 
 That “open, type, fix” loop creates three main problems:
 
@@ -39,11 +39,11 @@ Picture this: you just left the grocery store, bag in hand, and wonder, “Did I
 
 ![How FinMoovi’s voice capture changes the game](/images/posts/por-que-minha-planilha-de-controle-nunca-acompanha-meus-2.webp)
 
-Voice capture brings three essential advantages:
+[Voice capture](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end) brings three essential advantages:
 
 - **Speed** – Entries happen in real time, no typing or menu navigation required.  
 - **Accuracy** – The speech‑recognition engine, trained on thousands of expense examples, understands variations like “I spent nine dollars” or “I spent $9.”  
-- **Automatic organization** – Every expense is categorized and fed into monthly reports, giving you instant insight into where your money goes.
+- **Automatic [organization](/en/posts/en-why-you-still-forget-bill-due-dates-and-pay-late-in-2026)** – Every expense is categorized and fed into monthly reports, giving you instant insight into where your money goes.
 
 ## Step‑by‑step: 5 minutes to transform your tracking
 
@@ -71,7 +71,7 @@ Most users notice these differences within the first two weeks.
 
 ## Why FinMoovi works offline and stays secure
 
-Many finance apps require a constant connection, which can be a problem in low‑signal areas or for privacy‑concerned users. FinMoovi is built as a Progressive Web App (PWA) that stores data locally, encrypts everything, and syncs to the cloud only when a connection is available. This architecture guarantees:
+Many [finance apps](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your) require a constant connection, which can be a problem in low‑signal areas or for privacy‑concerned users. FinMoovi is built as a Progressive Web App (PWA) that stores data locally, encrypts everything, and syncs to the cloud only when a connection is available. This architecture guarantees:
 
 - **Privacy** – Your expenses never leave the device without your consent.  
 - **Availability** – Even on trips or in places without internet, you can still log purchases.  
@@ -88,7 +88,7 @@ Many finance apps require a constant connection, which can be a problem in low�
 
 ## Data that backs automation
 
-An OECD report shows that digitizing personal financial processes can boost efficiency by up to 25 % and cut human error rates (OECD, 2023). Additionally, *Investopedia* notes that speech‑recognition technologies achieve over 95 % accuracy when trained on finance‑specific vocabularies (Investopedia, 2024). FinMoovi incorporates these best practices, delivering a practical, reliable solution for everyday users.
+An OECD report shows that digitizing personal financial processes can boost efficiency by up to 25 % and cut human error rates (OECD, 2023). Additionally, *Investopedia* notes that speech‑recognition technologies achieve over 95 % accuracy when trained on [finance](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using)‑specific vocabularies (Investopedia, 2024). FinMoovi incorporates these best practices, delivering a practical, reliable solution for everyday users.
 
 ## Start today
 
@@ -100,7 +100,7 @@ Try FinMoovi free for 7 days and feel the difference.
 **Does the app work without internet?**  
 Yes. FinMoovi stores everything locally and syncs securely when a connection is available.
 
-**Can voice capture understand different accents?**  
+**Can [voice capture](/en/posts/en-forgot-to-pay-a-bill-how-to-fix-it-in-2026) understand different accents?**  
 The algorithm has been trained on a variety of pronunciations in several languages, delivering high accuracy for most users.
 
 **Can I use FinMoovi with more than one currency?**  

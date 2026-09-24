@@ -31,7 +31,7 @@ La primera barrera suele ser la falta de claridad: ¿cuántas suscripciones tien
 
 ## Crea metas de control y alertas personalizadas  
 
-Con los pagos ya catalogados, el siguiente paso es establecer límites. En FinMoovi puedes fijar un techo mensual para cada categoría o para el total de gastos recurrentes. Cuando el valor previsto se acerque al límite, un recordatorio discreto aparece en pantalla, permitiéndote cancelar la suscripción o renegociar el plan antes de que el débito se procese.  
+Con los pagos ya catalogados, el siguiente paso es establecer límites. En FinMoovi puedes fijar un techo mensual para cada categoría o para el total de [gastos recurrentes](/es/posts/es-domina-tus-gastos-mensuales-y-evita-sorpresas-en-2026). Cuando el valor previsto se acerque al límite, un recordatorio discreto aparece en pantalla, permitiéndote cancelar la suscripción o renegociar el plan antes de que el débito se procese.  
 
 ![Crie metas de controle e alertas personalizados](/images/posts/como-organizar-pagamentos-recorrentes-e-ganhar-tranquilidade-2.webp)  
 

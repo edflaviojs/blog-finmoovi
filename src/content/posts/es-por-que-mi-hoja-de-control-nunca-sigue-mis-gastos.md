@@ -31,19 +31,19 @@ Este ciclo de “abrir, escribir, corregir” genera tres problemas principales:
 2. **Errores de escritura** – Un “0” de más o de menos puede distorsionar tu saldo, llevando a decisiones equivocadas, como recortar un gasto que en realidad está dentro del plan.  
 3. **Desmotivación** – Cuando la herramienta que debería facilitar la vida se vuelve una carga, la tendencia es abandonar el control y vivir a la merced de sorpresas al final del mes.
 
-Según el *World Bank*, la adopción de tecnologías digitales de gestión financiera puede reducir el tiempo dedicado a tareas administrativas en hasta un 30 % (World Bank, 2022). Aún así, muchas personas siguen atrapadas al método tradicional de hojas.
+Según el *World Bank*, la adopción de tecnologías digitales de [gestión financiera](/es/posts/es-5-alternativas-a-organizze-en-2026-opciones-para-administrar) puede reducir el tiempo dedicado a tareas administrativas en hasta un 30 % (World Bank, 2022). Aún así, muchas personas siguen atrapadas al método tradicional de hojas.
 
 ## Cómo la captura por voz de FinMoovi cambia el juego
 
-Imagina que acabas de salir del supermercado, aún con la bolsa en la mano, y piensas: “¿Ya anoté todo?”. En lugar de abrir la hoja, abres FinMoovi en el móvil, pulsas el ícono de micrófono y dices en voz alta, “gasté €8,10 en el supermercado”. En menos de un segundo, la app registra el valor, reconoce la categoría “Alimentación” y ya incluye el gasto en tu flujo de caja diario. Todo funciona offline, garantizando que tus datos queden seguros incluso sin conexión.
+Imagina que acabas de salir del supermercado, aún con la bolsa en la mano, y piensas: “¿Ya anoté todo?”. En lugar de abrir la hoja, abres FinMoovi en el móvil, pulsas el ícono de micrófono y dices en voz alta, “gasté €8,10 en el supermercado”. En menos de un segundo, la app registra el valor, reconoce la categoría “Alimentación” y ya incluye el gasto en tu [flujo de caja](/es/glossario/es-flujo-de-caja) diario. Todo funciona offline, garantizando que tus datos queden seguros incluso sin conexión.
 
 ![Cómo la captura por voz de FinMoovi cambia el juego](/images/posts/por-que-minha-planilha-de-controle-nunca-acompanha-meus-2.webp)
 
-La captura por voz tiene tres ventajas esenciales:
+La [captura por voz](/es/posts/es-olvidaste-pagar-una-factura-y-te-quedaste-sin-dinero-como) tiene tres ventajas esenciales:
 
 - **Velocidad** – El registro ocurre en tiempo real, sin necesidad de escribir números ni seleccionar menús.  
 - **Precisión** – El algoritmo de reconocimiento de habla, entrenado con miles de ejemplos de gastos, entiende variaciones como “gasté €9,90” o “gasté 55”.  
-- **Organización automática** – Cada gasto se categoriza e inserta en los informes mensuales, permitiendo visualizaciones instantáneas de a dónde va tu dinero.
+- **[Organización](/es/posts/es-por-que-sigues-olvidando-la-fecha-de-vencimiento-de-tus) automática** – Cada gasto se categoriza e inserta en los [informes](/es/posts/es-por-que-mi-dinero-desaparece-antes-de-que-llegue-el-salario) mensuales, permitiendo visualizaciones instantáneas de a dónde va tu dinero.
 
 ## Paso a paso: 5 minutos para transformar tu control
 
@@ -71,11 +71,11 @@ Estas diferencias se perciben ya en las primeras dos semanas de uso.
 
 ## Por qué FinMoovi funciona offline y sigue siendo seguro
 
-Muchos aplicativos financieros exigen conexión constante, lo que puede ser un problema en zonas con señal débil o para quien se preocupa por la privacidad. FinMoovi está desarrollado como una Progressive Web App (PWA) que almacena los datos localmente, los cifra antes de sincronizar con la nube cuando hay conexión. Esta arquitectura garantiza:
+Muchos [aplicativos financieros](/es/posts/es-tambien-olvidas-anotar-tus-gastos) exigen conexión constante, lo que puede ser un problema en zonas con señal débil o para quien se preocupa por la privacidad. FinMoovi está desarrollado como una Progressive Web App (PWA) que almacena los datos localmente, los cifra antes de sincronizar con la nube cuando hay conexión. Esta arquitectura garantiza:
 
 - **Privacidad** – Tus gastos nunca se envían sin tu autorización.  
 - **Disponibilidad** – Incluso en viajes o lugares sin internet, puedes registrar gastos.  
-- **Sincronización inteligente** – Cuando el móvil vuelve a estar en línea, la app actualiza los informes y envía copias de seguridad seguras a la nube.
+- **Sincronización inteligente** – Cuando el móvil vuelve a estar en línea, la app actualiza los [informes](/es/posts/es-tambien-te-quedas-sin-saber-a-donde-fue-tu-dinero-al-final) y envía copias de seguridad seguras a la nube.
 
 ## Consejos para potenciar la captura por voz
 
