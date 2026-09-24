@@ -52,27 +52,37 @@ function getTextProviders() {
     });
   }
 
-  // 3. NVIDIA NIM — o substituto mais parecido com a Cerebras (24/09/2026).
+  // 3. NVIDIA NIM — o substituto de CLASSE mais proxima da Cerebras (24/09/2026).
   //
-  //    Serve o MESMO modelo que a Cerebras servia e que o Groq serve hoje
-  //    (gpt-oss-120b), logo o texto que sai e da mesma familia — nao ha troca
-  //    de qualidade a meio da fila, que e o que fez o consumo QUADRUPLICAR
-  //    quando a Cerebras caiu (o plano B escrevia pior, as travas reprovavam,
-  //    e cada reprovacao mandava repetir).
+  //    O plano era servir o MESMO gpt-oss-120b, para nao haver troca de
+  //    qualidade a meio da fila — foi essa troca que fez o consumo QUADRUPLICAR
+  //    quando a Cerebras caiu (o plano B escrevia pior, as travas reprovavam, e
+  //    cada reprovacao mandava repetir). ⚠️ NAO DEU: a NVIDIA APOSENTOU o
+  //    `openai/gpt-oss-120b` ("This NIM Endpoint has been deprecated", visto em
+  //    24/09/2026). So sobrou o irmao pequeno, de 20B.
+  //
+  //    PERGUNTEI AO SERVIDOR em vez de adivinhar — `GET /v1/models` e publico e
+  //    respondeu 82 modelos vivos. O escolhido, `nemotron-3-super-120b-a12b`, e
+  //    o da classe mais parecida com o que a Cerebras dava (120B com 12B
+  //    activos; o gpt-oss-120b sao 117B com 5,1B activos).
+  //
+  //    E um efeito de borda FELIZ: este ficheiro so manda `reasoning_effort` a
+  //    modelos cujo nome case /gpt-oss/i. O nemotron nao casa, logo o parametro
+  //    nao vai — e morre o risco de um HTTP 400 por campo desconhecido.
   //
   //    Fala OpenAI, sem cartao, `integrate.api.nvidia.com/v1`.
   //
-  //    ⚠️ POR MEDIR, e so se mede com chave: este ficheiro so manda
-  //    `reasoning_effort` a modelos cujo nome case /gpt-oss/i — e este casa.
-  //    O Groq aceita o valor 'none'; se a NVIDIA o recusar com HTTP 400, a fila
-  //    passa ao seguinte e o fornecedor fica inutil nas chamadas COM raciocinio
-  //    (as outras seguem bem). Fica escrito para nao se procurar noutro sitio.
+  //    ⚠️ A FAMILIA DO DEFEITO: e o 5º modelo de camada gratuita a desaparecer
+  //    em semanas (llama-3.3-70b, FLUX.1-schnell, llama-4-scout, qwen3.6-27b, e
+  //    agora este). Quando este morrer, a lista viva pede-se ao servidor:
+  //      curl -s https://integrate.api.nvidia.com/v1/models
+  //    e troca-se por `NVIDIA_TEXT_MODEL`, sem tocar no codigo.
   if (process.env.NVIDIA_API_KEY) {
     providers.push({
       name: 'nvidia',
       url: 'https://integrate.api.nvidia.com/v1/chat/completions',
       apiKey: process.env.NVIDIA_API_KEY,
-      model: process.env.NVIDIA_TEXT_MODEL || 'openai/gpt-oss-120b',
+      model: process.env.NVIDIA_TEXT_MODEL || 'nvidia/nemotron-3-super-120b-a12b',
     });
   }
 
