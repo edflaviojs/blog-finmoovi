@@ -143,10 +143,21 @@ async function main() {
     process.exit(ok ? 0 : 1);
   }
 
+  /**
+   * `--so-texto` salta as imagens e a trava. É o espelho de `--so-imagem`, e
+   * existe pela MESMA razão: o roteador pára no primeiro que responde, portanto
+   * um fornecedor que esteja atrás na fila nunca é experimentado. O workflow
+   * corre este ficheiro mais uma vez com a chave de UM só fornecedor no
+   * ambiente — como cada arranque monta a lista de novo, esse fica a ser o
+   * primeiro e fica provado. Sem truques no código de produção.
+   */
+  const soTexto = process.argv.includes('--so-texto');
+
   const chaves = [
     ['CEREBRAS_API_KEY', 'cerebras'],
     ['GROQ_API_KEY', 'groq'],
     ['KIE_API_KEY', 'groq (chave alternativa)'],
+    ['GEMINI_API_KEY', 'gemini'],
     ['CLOUDFLARE_AI_TOKEN', 'cloudflare'],
   ];
   console.log('Chaves presentes nesta corrida:');
@@ -167,10 +178,14 @@ async function main() {
     console.log('   (a linha "Texto gerado via ..." acima diz QUEM respondeu)');
   } catch (erro) {
     console.log(`\n❌ NENHUM fornecedor de TEXTO respondeu.\n${erro.message}`);
-    await provaDaImagem();
-    await provaDaTravaDeLetras();
+    if (!soTexto) {
+      await provaDaImagem();
+      await provaDaTravaDeLetras();
+    }
     process.exit(1);
   }
+
+  if (soTexto) process.exit(0);
 
   // A fila das imagens corre mesmo quando a do texto correu bem: são independentes.
   const imagemOk = await provaDaImagem();

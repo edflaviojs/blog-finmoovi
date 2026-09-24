@@ -37,10 +37,24 @@ jobs:
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           KIE_API_KEY: ${{ secrets.KIE_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
           TOGETHER_API_KEY: ${{ secrets.TOGETHER_API_KEY }}
         run: node src/scripts/diagnostico/fornecedores-ia.js
+
+      # O GEMINI SOZINHO. Sem isto ele nunca seria experimentado: está atrás do
+      # Groq na fila de propósito (só acorda quando o Groq estoura os 200 mil do
+      # dia), e o roteador pára no primeiro que responde. Aqui as outras chaves
+      # ficam de fora e, como cada arranque monta a lista de novo, ele passa a
+      # ser o primeiro.
+      # `continue-on-error`: o Gemini é SOCORRO — se estiver em baixo, o
+      # diagnóstico tem de DIZER isso, não morrer e esconder o resto.
+      - name: O Gemini sozinho (o socorro dos dias de pico)
+        continue-on-error: true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node src/scripts/diagnostico/fornecedores-ia.js --so-texto
 
       # A Together SOZINHA. Sem isto ela nunca seria experimentada: o roteador
       # para no primeiro que responder, e a Cloudflare responde primeiro.
