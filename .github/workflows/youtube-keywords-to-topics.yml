@@ -36,6 +36,7 @@ jobs:
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
           # CLOUDFLARE_* (nao CF_*): sao estes os nomes que o kie-ai.js le. O
           # secret CF_AI_TOKEN nem existe neste repo, e CF_ACCOUNT_ID e do
           # Analytics — o fallback Cloudflare estava morto duas vezes.
