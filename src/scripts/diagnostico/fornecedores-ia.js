@@ -157,6 +157,7 @@ async function main() {
     ['CEREBRAS_API_KEY', 'cerebras'],
     ['GROQ_API_KEY', 'groq'],
     ['KIE_API_KEY', 'groq (chave alternativa)'],
+    ['NVIDIA_API_KEY', 'nvidia'],
     ['GEMINI_API_KEY', 'gemini'],
     ['CLOUDFLARE_AI_TOKEN', 'cloudflare'],
   ];

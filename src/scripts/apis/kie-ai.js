@@ -21,7 +21,7 @@ export { generateCoverImage, generateCoverImageSync, generateInlineImage };
 
 /**
  * Retorna a lista ordenada de provedores de texto habilitados.
- * Ordem = prioridade de fallback: Cerebras → Groq → Gemini → Cloudflare.
+ * Ordem = prioridade de fallback: Cerebras → Groq → NVIDIA → Gemini → Cloudflare.
  * Um provedor só entra na lista se suas credenciais existirem — assim,
  * adicionar/remover um secret ativa/desativa o provedor sem mudar código.
  */
@@ -52,7 +52,31 @@ function getTextProviders() {
     });
   }
 
-  // 3. Gemini — entra ANTES da Cloudflare de propósito (24/09/2026).
+  // 3. NVIDIA NIM — o substituto mais parecido com a Cerebras (24/09/2026).
+  //
+  //    Serve o MESMO modelo que a Cerebras servia e que o Groq serve hoje
+  //    (gpt-oss-120b), logo o texto que sai e da mesma familia — nao ha troca
+  //    de qualidade a meio da fila, que e o que fez o consumo QUADRUPLICAR
+  //    quando a Cerebras caiu (o plano B escrevia pior, as travas reprovavam,
+  //    e cada reprovacao mandava repetir).
+  //
+  //    Fala OpenAI, sem cartao, `integrate.api.nvidia.com/v1`.
+  //
+  //    ⚠️ POR MEDIR, e so se mede com chave: este ficheiro so manda
+  //    `reasoning_effort` a modelos cujo nome case /gpt-oss/i — e este casa.
+  //    O Groq aceita o valor 'none'; se a NVIDIA o recusar com HTTP 400, a fila
+  //    passa ao seguinte e o fornecedor fica inutil nas chamadas COM raciocinio
+  //    (as outras seguem bem). Fica escrito para nao se procurar noutro sitio.
+  if (process.env.NVIDIA_API_KEY) {
+    providers.push({
+      name: 'nvidia',
+      url: 'https://integrate.api.nvidia.com/v1/chat/completions',
+      apiKey: process.env.NVIDIA_API_KEY,
+      model: process.env.NVIDIA_TEXT_MODEL || 'openai/gpt-oss-120b',
+    });
+  }
+
+  // 4. Gemini — entra ANTES da Cloudflare de propósito (24/09/2026).
   //
   //    PORQUE EXISTE: a Cerebras deixou de responder a 19/09 (HTTP 402, e a
   //    camada gratuita permanente deles ACABOU — hoje é um teste de US$ 5 por
@@ -81,7 +105,7 @@ function getTextProviders() {
     });
   }
 
-  // 4. Cloudflare Workers AI — rede de segurança (credenciais já existentes)
+  // 5. Cloudflare Workers AI — rede de segurança (credenciais já existentes)
   //    sem tpmLimit: o teto do Cloudflare é neurons/dia, não tokens por requisição.
   if (process.env.CLOUDFLARE_ACCOUNT_ID && process.env.CLOUDFLARE_AI_TOKEN) {
     providers.push({
@@ -228,7 +252,7 @@ export async function generateText(prompt, options = {}) {
   if (pagos.length) providers.unshift(...pagos);
   const oPago = pagos.length > 0;
   if (providers.length === 0) {
-    throw new Error('Nenhum provedor de IA configurado (defina CEREBRAS_API_KEY, GROQ_API_KEY/KIE_API_KEY, GEMINI_API_KEY ou CLOUDFLARE_ACCOUNT_ID+CLOUDFLARE_AI_TOKEN).');
+    throw new Error('Nenhum provedor de IA configurado (defina CEREBRAS_API_KEY, GROQ_API_KEY/KIE_API_KEY, NVIDIA_API_KEY, GEMINI_API_KEY ou CLOUDFLARE_ACCOUNT_ID+CLOUDFLARE_AI_TOKEN).');
   }
 
   const errors = [];
