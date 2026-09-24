@@ -1,7 +1,7 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-09-23T09:43:26.371Z
-**Posts:** 474 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 62
+**Gerado em:** 2026-09-24T09:42:16.290Z
+**Posts:** 477 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 64
 
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
@@ -118,6 +118,9 @@
 **en-tired-of-manually-logging-every-expense-and-losing-track-of.md**
 - _According to the World Bank on financial inclusion, many people struggle with keeping accurate records, which often leads to impulsive decisions, like buying a wanted item instead of paying a forgotte_
 
+**en-why-my-budget-spreadsheet-never-keeps-up-with-my-spending.md**
+- _According to the *World Bank*, adopting digital financial‑management tools can cut administrative time by up to 30 % (World Bank, 2022)._
+
 **en-why-you-re-not-seeing-progress-in-your-savings.md**
 - _According to Investopedia, using **automated financial reports** boosts the likelihood of hitting [savings goals](/en/posts/en-how-to-save-for-children-s-day-in-2026-7-practical-steps) by up to 35 % c_
 
@@ -177,6 +180,9 @@
 
 **planilha-de-gastos-quando-ela-deixa-de-funcionar.md**
 - _Elas oferecem flexibilidade, são gratuitas e podem ser customizadas de acordo com as suas necessidades._
+
+**por-que-minha-planilha-de-controle-nunca-acompanha-meus.md**
+- _Segundo a *World Bank*, a adoção de tecnologias digitais de gestão financeira pode reduzir o tempo gasto em tarefas administrativas em até 30 % (World Bank, 2022)._
 
 **por-que-minhas-metas-de-poupanca-nao-avancam.md**
 - _As metas de [poupança](/glossario/poupanca) ficam no papel porque não há um acompanhamento em tempo real que mostre o progresso e ajuste o ritmo conforme os gastos cotidianos, fazendo com que a motiva_
