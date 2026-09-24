@@ -431,68 +431,89 @@
       "cerebras|texto": 0,
       "kie.ai|visao": 0,
       "Groq|visao": 0
+    },
+    "2026-09-24": {
+      "groq|texto": 57482,
+      "Cloudflare Workers AI|visao": 30,
+      "together|voz": 431,
+      "Cloudflare Workers AI|imagem": 14,
+      "cloudflare|texto": 32573,
+      "Together.ai|imagem": 1,
+      "cerebras|texto": 0,
+      "kie.ai|visao": 0,
+      "Groq|visao": 0
     }
   },
   "relatorio": {
-    "dia": "2026-09-23",
+    "dia": "2026-09-24",
     "horas": 24,
-    "geradoEm": "2026-09-23T09:54:02.712Z",
+    "geradoEm": "2026-09-24T09:55:06.129Z",
     "linhas": [
       {
         "fornecedor": "groq",
         "tipo": "texto",
-        "chamadas": 40,
-        "recusas": 5,
-        "quanto": 70384,
+        "chamadas": 41,
+        "recusas": 1,
+        "quanto": 57482,
         "unidade": "fichas",
         "custo": null,
-        "salto": 0.9680764734199848
+        "salto": 0.6984144065957908
       },
       {
         "fornecedor": "Cloudflare Workers AI",
         "tipo": "visao",
-        "chamadas": 22,
+        "chamadas": 30,
         "recusas": 0,
-        "quanto": 22,
+        "quanto": 30,
         "unidade": "unidades",
         "custo": null,
-        "salto": 0.608695652173913
-      },
-      {
-        "fornecedor": "cloudflare",
-        "tipo": "texto",
-        "chamadas": 17,
-        "recusas": 0,
-        "quanto": 59094,
-        "unidade": "fichas",
-        "custo": null,
-        "salto": 0.9073815315839001
+        "salto": 0.871369294605809
       },
       {
         "fornecedor": "together",
         "tipo": "voz",
-        "chamadas": 13,
+        "chamadas": 14,
         "recusas": 0,
-        "quanto": 422,
+        "quanto": 431,
         "unidade": "unidades",
         "custo": null,
-        "salto": 0.5984602917341978
+        "salto": 0.6281490734957319
       },
       {
         "fornecedor": "Cloudflare Workers AI",
         "tipo": "imagem",
-        "chamadas": 10,
+        "chamadas": 14,
         "recusas": 0,
-        "quanto": 10,
+        "quanto": 14,
         "unidade": "unidades",
         "custo": null,
-        "salto": 0.603448275862069
+        "salto": 0.875
+      },
+      {
+        "fornecedor": "cloudflare",
+        "tipo": "texto",
+        "chamadas": 12,
+        "recusas": 0,
+        "quanto": 32573,
+        "unidade": "fichas",
+        "custo": null,
+        "salto": 0.44487781083849565
+      },
+      {
+        "fornecedor": "Together.ai",
+        "tipo": "imagem",
+        "chamadas": 1,
+        "recusas": 0,
+        "quanto": 1,
+        "unidade": "unidades",
+        "custo": null,
+        "salto": 1
       },
       {
         "fornecedor": "cerebras",
         "tipo": "texto",
         "chamadas": 0,
-        "recusas": 13,
+        "recusas": 14,
         "quanto": 0,
         "unidade": "unidades",
         "custo": null,
@@ -506,7 +527,7 @@
         "quanto": 0,
         "unidade": "unidades",
         "custo": null,
-        "salto": 0
+        "salto": null
       },
       {
         "fornecedor": "Groq",
@@ -524,12 +545,13 @@
     "semPreco": [
       "groq",
       "Cloudflare Workers AI",
-      "cloudflare",
       "together",
+      "cloudflare",
+      "Together.ai",
       "cerebras",
       "kie.ai",
       "Groq"
     ]
   },
-  "atualizadoEm": "2026-09-23T09:54:02.712Z"
+  "atualizadoEm": "2026-09-24T09:55:06.129Z"
 }
