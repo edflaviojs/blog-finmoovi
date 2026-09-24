@@ -1,0 +1,118 @@
+{
+  "slug": "loop-geladeira-nova-se-parar",
+  "formato": "loop16",
+  "term": "Trocar a geladeira",
+  "category": "vida",
+  "keyword": "GELADEIRA",
+  "valor": "R$ 2.600",
+  "situacao": "geladeira-nova",
+  "gancho": "se-parar",
+  "ganchoFamilia": "e se parar",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ratoeira",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "O que acontece se você parar de dormir?",
+      "durationSec": 2.7,
+      "shots": [
+        {
+          "anchor": "acontece",
+          "visual": {
+            "type": "statement",
+            "text": "Parar?"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "parar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu acordei de madrugada com a geladeira fazendo barulho, dois mil e seiscentos reais",
+      "durationSec": 4.73,
+      "shots": [
+        {
+          "anchor": "acordei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "madrugada",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 2.600"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "E aí eu percebi que não podia mais adiar",
+      "durationSec": 3.04,
+      "shots": [
+        {
+          "anchor": "percebi",
+          "visual": {
+            "type": "statement",
+            "text": "Não adiar"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "podia",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "E parar de dormir é o que acontece se você não pode mais parar",
+      "durationSec": 4.73,
+      "shots": [
+        {
+          "anchor": "parar",
+          "visual": {
+            "type": "statement",
+            "text": "Parar?"
+          }
+        },
+        {
+          "anchor": "dormir",
+          "visual": {
+            "type": "statement",
+            "text": "Parar?"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}

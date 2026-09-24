@@ -538,5 +538,11 @@
     "gancho": "nao-vai-acreditar",
     "turno": "noite",
     "em": "2026-09-23T09:32:41.293Z"
+  },
+  {
+    "situacao": "geladeira-nova",
+    "gancho": "se-parar",
+    "turno": "manha",
+    "em": "2026-09-24T09:26:15.388Z"
   }
 ]
