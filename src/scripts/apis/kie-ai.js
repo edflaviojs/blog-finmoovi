@@ -66,9 +66,12 @@ function getTextProviders() {
   //    o da classe mais parecida com o que a Cerebras dava (120B com 12B
   //    activos; o gpt-oss-120b sao 117B com 5,1B activos).
   //
-  //    E um efeito de borda FELIZ: este ficheiro so manda `reasoning_effort` a
-  //    modelos cujo nome case /gpt-oss/i. O nemotron nao casa, logo o parametro
-  //    nao vai — e morre o risco de um HTTP 400 por campo desconhecido.
+  //    ⚠️ EU CHAMEI A ISTO "efeito de borda FELIZ" e estava ERRADO — corrigido
+  //    no mesmo dia, depois de medir. O raciocinio dele NAO vem desligado: vem
+  //    no MAXIMO quando ninguem lhe diz nada, e custa ~6x fichas por texto.
+  //    A regra do `reasoning_effort` (mais abaixo, no corpo do pedido) passou a
+  //    incluir o nemotron e a mandar-lhe 'none' por omissao. Nao mandar o campo
+  //    nao era "seguro": era pagar 6x em silencio.
   //
   //    Fala OpenAI, sem cartao, `integrate.api.nvidia.com/v1`.
   //
@@ -335,13 +338,37 @@ export async function generateText(prompt, options = {}) {
             ],
             max_tokens: maxTokens,
             temperature,
-            // Só vai no corpo quando o chamador o pediu E o modelo o entende.
-            // Mandá-lo a um modelo que não raciocina (o llama do Cloudflare) é
-            // arriscar um 400 por parâmetro desconhecido, e a rede de segurança
-            // é justamente quem não pode falhar.
-            ...(esforcoRaciocinio && /gpt-oss/i.test(useModel)
-              ? { reasoning_effort: esforcoRaciocinio }
-              : {}),
+            // Só vai no corpo quando o modelo o entende. Mandá-lo a um modelo
+            // que não raciocina (o llama do Cloudflare) é arriscar um 400 por
+            // parâmetro desconhecido, e a rede de segurança é justamente quem
+            // não pode falhar.
+            //
+            // 🔴 O NEMOTRON LEVA 'none' POR OMISSÃO, e é MEDIÇÃO (24/09/2026).
+            // Ele raciocina no máximo quando ninguém lhe diz nada, e isso sai
+            // caro: a MESMA tarefa, medida na API real,
+            //    sem dizer nada → 385 fichas de saída (1.339 chars de
+            //                     raciocínio) para 56 palavras de texto;
+            //    com 'none'     → 106 fichas para 70 palavras.
+            // Num teste de escrita a sério (abertura de post, 140 palavras):
+            // 1.089 fichas contra 170 — **6,4x**. E o texto com 'none' não saiu
+            // pior: saiu MELHOR (o outro chegou a inventar o nome de um app).
+            //
+            // Isto importa porque o consumo JÁ é o problema desta casa: quando
+            // a Cerebras caiu, os dias de pico passaram de ~80 mil para ~350
+            // mil fichas. Pôr um fornecedor que gasta 6x por texto seria trocar
+            // uma avaria por outra.
+            //
+            // ⚠️ E só UM chamador em todo o projeto passa `esforcoRaciocinio`
+            // (o `gsc-otimizar-ctr.js`, com 'low'). Sem esta omissão, **todas
+            // as outras chamadas** ao nemotron raciocinariam ao máximo.
+            // Quem pedir um esforço continua a mandar no que pediu.
+            ...(() => {
+              const entende = /gpt-oss|nemotron/i.test(useModel);
+              if (!entende) return {};
+              const esforco = esforcoRaciocinio
+                || (/nemotron/i.test(useModel) ? 'none' : null);
+              return esforco ? { reasoning_effort: esforco } : {};
+            })(),
           };
         response = await fetch(provider.url, {
           method: 'POST',
