@@ -3,6 +3,7 @@ title: "Why My Budget Spreadsheet Never Keeps Up With My Spending"
 description: "Discover how FinMoovi’s voice capture eliminates manual spreadsheet updates and gives you real‑time financial control."
 tickerHeadline: "Spreadsheet stuck? Fix it now"
 image: "/images/posts/por-que-minha-planilha-de-controle-nunca-acompanha-meus.webp"
+imageAlt: "A group of four people sitting at a table with a laptop and tablet."
 category: "ferramentas"
 locale: "en"
 tags: ["budget spreadsheet","voice capture","FinMoovi","expense automation","cash flow","personal finance","automatic updates","replace spreadsheet","financial app","spending control","automatic categorization","finmoovi"]

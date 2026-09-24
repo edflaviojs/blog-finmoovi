@@ -3,6 +3,7 @@ title: "Por que minha planilha de controle nunca acompanha meus gastos?"
 description: "Descubra como a captura por voz do FinMoovi elimina a atualização manual da planilha e traz controle financeiro em tempo real."
 tickerHeadline: "Planilha travada? Resolva já"
 image: "/images/posts/por-que-minha-planilha-de-controle-nunca-acompanha-meus.webp"
+imageAlt: "Um grupo de pessoas sentadas em uma mesa, olhando para um tablet, com uma planilha aberta em uma mesa."
 category: "ferramentas"
 locale: "pt"
 tags: ["planilha de controle","captura por voz","FinMoovi","automação de despesas","fluxo de caixa","finanças pessoais","atualização automática","substituir planilha","app financeiro","controle de gastos","categorização automática","finmoovi"]

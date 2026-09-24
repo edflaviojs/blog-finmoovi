@@ -3,6 +3,7 @@ title: "¿Por qué mi hoja de control nunca sigue mis gastos?"
 description: "Descubre cómo la captura por voz de FinMoovi elimina la actualización manual y brinda control financiero en tiempo real."
 tickerHeadline: "¿Hoja bloqueada? Resuelve ya"
 image: "/images/posts/por-que-minha-planilha-de-controle-nunca-acompanha-meus.webp"
+imageAlt: "Una imagen de un hombre y una mujer sentados con una mujer más joven, todos sonríen y miran una tableta."
 category: "ferramentas"
 locale: "es"
 tags: ["hoja de control","captura por voz","FinMoovi","automatización de gastos","flujo de caja","finanzas personales","actualización automática","reemplazar hoja","app financiero","control de gastos","categorización automática","finmoovi"]
