@@ -1,0 +1,118 @@
+{
+  "slug": "loop-mercado-subindo-se-parar",
+  "formato": "loop16",
+  "term": "O mercado que sobe toda semana",
+  "category": "vida",
+  "keyword": "MERCADO",
+  "valor": "R$ 640",
+  "situacao": "mercado-subindo",
+  "gancho": "se-parar",
+  "ganchoFamilia": "e se parar",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "escada",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "O que acontece se você parar de gastar?",
+      "durationSec": 2.97,
+      "shots": [
+        {
+          "anchor": "acontece",
+          "visual": {
+            "type": "statement",
+            "text": "Gastar"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "parar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escada"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Comigo aconteceu isso. Seiscentos e quarenta reais tinham ido embora só nisso",
+      "durationSec": 4.45,
+      "shots": [
+        {
+          "anchor": "Comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escada"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 640"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "E aí eu percebi que era hora de fazer diferente",
+      "durationSec": 3.71,
+      "shots": [
+        {
+          "anchor": "percebi",
+          "visual": {
+            "type": "statement",
+            "text": "Mudar"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "diferente",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escada"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "O que acontece se você parar de gastar demais, como eu?",
+      "durationSec": 4.08,
+      "shots": [
+        {
+          "anchor": "acontece",
+          "visual": {
+            "type": "statement",
+            "text": "Parar"
+          }
+        },
+        {
+          "anchor": "parar",
+          "visual": {
+            "type": "statement",
+            "text": "Gastar"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.21
+}
