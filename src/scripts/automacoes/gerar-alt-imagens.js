@@ -56,10 +56,13 @@ const VISION = [
     url: 'https://api.groq.com/openai/v1/chat/completions',
     apiKey: process.env.GROQ_API_KEY,
     // llama-4-scout foi aposentado pelo Groq em 17/06/2026 (respondia 404 e
-    // derrubava o job inteiro no circuit breaker). qwen3.6-27b e o substituto
-    // oficial e o unico modelo de visao do Groq hoje.
-    model: process.env.GROQ_VISION_MODEL || 'qwen/qwen3.6-27b',
-    // qwen3.6 raciocina por padrao e o <think> sai DENTRO do content — com
+    // derrubava o job inteiro no circuit breaker). O qwen3.6-27b que o
+    // substituiu foi aposentado TAMBEM — e desta vez ninguem viu, porque a
+    // Cloudflare apanhava a seguir e a corrida acabava VERDE. Medido em
+    // 24/09/2026: 404 em TODAS as chamadas de 19 a 24/09. O unico modelo de
+    // visao do Groq hoje e o qwen3.8-27b (console.groq.com/docs/vision).
+    model: process.env.GROQ_VISION_MODEL || 'qwen/qwen3.8-27b',
+    // qwen3.8 raciocina por padrao e o <think> sai DENTRO do content — com
     // max_tokens 80 o raciocinio consome a cota toda e o alt vira o rascunho
     // do modelo. 'none' entrega so a resposta final.
     extraBody: { reasoning_effort: 'none' },

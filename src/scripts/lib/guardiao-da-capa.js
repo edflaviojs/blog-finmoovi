@@ -156,8 +156,8 @@ function fornecedores() {
       enabled: !!process.env.GROQ_API_KEY,
       url: 'https://api.groq.com/openai/v1/chat/completions',
       apiKey: process.env.GROQ_API_KEY,
-      model: process.env.GROQ_VISION_MODEL || 'qwen/qwen3.6-27b',
-      // qwen3.6 raciocina por omissão e o <think> sai dentro do content.
+      model: process.env.GROQ_VISION_MODEL || 'qwen/qwen3.8-27b',
+      // qwen3.8 raciocina por omissão e o <think> sai dentro do content.
       extraBody: { reasoning_effort: 'none' },
       formato: 'openai',
     },
