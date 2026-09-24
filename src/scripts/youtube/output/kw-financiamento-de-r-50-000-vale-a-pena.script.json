@@ -1,0 +1,170 @@
+{
+  "slug": "kw-financiamento-de-r-50-000-vale-a-pena",
+  "term": "Financiamento de R$ 50.000, vale a pena?",
+  "category": "mindset",
+  "keyword": "Financiamento",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você sabia que um financiamento de cinquenta mil reais pode ser um *pesadelo*?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "areia-movedica",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você sabia que um financiamento de cinquenta mil reais pode ser um pesadelo? É que nem um buraco que você não vê.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "sabia",
+          "visual": {
+            "type": "statement",
+            "text": "Cuidado com o financiamento"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "pesadelo",
+          "visual": {
+            "type": "number",
+            "text": "R$ 70.000"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "A gente sempre precisa de um carro, mas não sabe como vai pagar. E aí você começa a pagar e não tem mais dinheiro para nada.",
+      "durationSec": 10,
+      "shots": [
+        {
+          "anchor": "precisa",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          },
+          "sfx": "alert"
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Sem reserva financeira"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Eu somei as parcelas e deu um valor que me assustou. Mais de setenta mil reais no final!",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "somei",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 50000,
+            "prefix": "R$"
+          }
+        },
+        {
+          "anchor": "setenta",
+          "visual": {
+            "type": "statement",
+            "text": "Mais de R$70 mil"
+          },
+          "sfx": "whoosh"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu usei o FinMoovi para fazer a conta e ele me mostrou como o valor pode crescer. É tipo uma areia movediça, você afunda sem querer.",
+      "durationSec": 10,
+      "shots": [
+        {
+          "anchor": "usei",
+          "visual": {
+            "type": "app",
+            "app": "calculadora",
+            "note": "tela de cálculo"
+          }
+        },
+        {
+          "anchor": "areia",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "areia-movedica"
+          },
+          "sfx": "slide"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver se o seu financiamento está fazendo a mesma coisa? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 6.5,
+      "shots": [
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "statement",
+            "text": "Teste grátis 7 dias"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Financiamento de cinquenta mil reais não é brincadeira. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 5.8,
+      "shots": [
+        {
+          "anchor": "Financiamento",
+          "visual": {
+            "type": "statement",
+            "text": "Cuidado com o crédito"
+          },
+          "sfx": "alert"
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "number",
+            "text": "R$ 0 controle"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja se seu financiamento afunda",
+    "target": "app"
+  },
+  "totalDurationSec": 47.7
+}
