@@ -556,5 +556,11 @@
     "gancho": "ninguem-fala",
     "turno": "manha",
     "em": "2026-09-25T09:46:42.971Z"
+  },
+  {
+    "situacao": "dez-vezes-sem-juros",
+    "gancho": "ninguem-fala",
+    "turno": "noite",
+    "em": "2026-09-25T09:50:17.717Z"
   }
 ]

@@ -1,0 +1,118 @@
+{
+  "slug": "loop-dez-vezes-sem-juros-ninguem-fala",
+  "formato": "loop16",
+  "term": "O sem juros que virou rombo",
+  "category": "vida",
+  "keyword": "PARCELA",
+  "valor": "R$ 780",
+  "situacao": "dez-vezes-sem-juros",
+  "gancho": "ninguem-fala",
+  "ganchoFamilia": "ninguém fala",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "mochila-pedras",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Ninguém fala isso sobre fatura, mas é real",
+      "durationSec": 3.68,
+      "shots": [
+        {
+          "anchor": "Ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "Fatura"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "fatura",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Comigo aconteceu no mês passado, setecentos e oitenta reais",
+      "durationSec": 4.15,
+      "shots": [
+        {
+          "anchor": "Comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 780"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "E aí eu percebi que precisava mudar",
+      "durationSec": 3.22,
+      "shots": [
+        {
+          "anchor": "percebi",
+          "visual": {
+            "type": "statement",
+            "text": "Mudança"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "precisava",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Agora vejo que é real, como a minha fatura",
+      "durationSec": 4.15,
+      "shots": [
+        {
+          "anchor": "fatura",
+          "visual": {
+            "type": "statement",
+            "text": "Real"
+          }
+        },
+        {
+          "anchor": "fatura",
+          "visual": {
+            "type": "statement",
+            "text": "Fatura"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
