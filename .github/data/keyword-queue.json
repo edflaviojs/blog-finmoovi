@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-24T15:31:26.154Z",
-  "sourceCursor": 1,
+  "updatedAt": "2026-09-25T14:18:38.926Z",
+  "sourceCursor": 2,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -2077,8 +2077,10 @@
       "category": null,
       "priority": 2,
       "source": "gsc-gap",
-      "status": "pending",
-      "addedAt": "2026-09-14T13:27:29.761Z"
+      "status": "used",
+      "addedAt": "2026-09-14T13:27:29.761Z",
+      "usedAt": "2026-09-25T14:18:38.926Z",
+      "usedBy": "gerar-dicas-financeiras"
     },
     {
       "keyword": "google finance alternative",
