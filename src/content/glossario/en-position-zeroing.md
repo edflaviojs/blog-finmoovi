@@ -19,55 +19,55 @@ seo:
 ---
 
 ## The moment you realize your money is stuck  
-You acabou de pagar a conta de luz, o aluguel e ainda tem aquele cafezinho diário que custa quase o mesmo que um lanche rápido. Quando abre o extrato do cartão de crédito, vê que ainda tem um saldo “pendente” de compras feitas há semanas, mas que ainda não apareceram na fatura. O medo de que aquele dinheiro “desapareça” ou que você acabe pagando juros porque não conseguiu fechar a conta é real. Essa sensação de ter recursos “presos” sem saber como liberá‑los é o ponto de partida para entender a zeragem de posição.
+You just paid the electricity bill, the rent, and still have that daily coffee that costs almost as much as a quick snack. When you open your credit card statement, you see there’s still a “pending” balance from purchases made weeks ago, but they haven’t shown up on the bill yet. The fear that this money will “disappear” or that you’ll end up paying interest because you couldn’t close the account is real. This feeling of having funds “trapped” without knowing how to free them is the starting point for understanding position zeroing.
 
-## What is “zeragem de posição”?  
-A expressão vem do mundo dos investimentos, mas vale para qualquer conta que registre entradas e saídas: **zeragem de posição** significa fechar ou equilibrar completamente um registro financeiro, de modo que o saldo volte a zero. Em termos simples, é como limpar a lousa depois de fazer as contas: você registra tudo que entrou, tudo que saiu e, ao final, garante que não ficou nenhum valor “solto”. Quando a posição está zerada, você sabe exatamente quanto ainda tem disponível para a próxima rodada de gastos ou investimentos.
+## What is “position zeroing”?  
+The term comes from the world of investing, but it applies to any account that tracks inflows and outflows: **position zeroing** means completely closing or balancing a financial record so the balance returns to zero. In simple terms, it’s like wiping the slate clean after doing the math: you record everything that came in, everything that went out, and at the end, you ensure no value is left “loose.” When the position is zeroed, you know exactly how much you still have available for the next round of spending or investing.
 
 ![The moment you realize your money is stuck  ](/images/glossario/zeragem-de-posicao-inline-1.webp)
 
 
 
 ## Why it matters for everyday budgeting  
-- **Evita juros inesperados** – Se um débito fica aberto por muito tempo, ele pode gerar encargos.  
-- **Facilita o controle de metas** – Quando todas as contas estão zeradas, fica mais fácil comparar o que sobrou com o objetivo de economizar, por exemplo, o equivalente a duas semanas de aluguel.  
-- **Reduz o estresse** – Saber que não há “surpresas” no próximo ciclo de pagamento traz tranquilidade.  
+- **Avoids unexpected interest** – If a debit stays open too long, it can generate charges.  
+- **Makes goal tracking easier** – When all accounts are zeroed, it’s easier to compare what’s left with your savings goal, for example, the equivalent of two weeks’ rent.  
+- **Reduces stress** – Knowing there are no “surprises” in the next payment cycle brings peace of mind.  
 
-Esses benefícios vão muito além de quem negocia ações; eles ajudam quem paga contas, faz compras no supermercado ou controla o dinheiro de um pequeno negócio.
+These benefits go far beyond those who trade stocks; they help anyone paying bills, grocery shopping, or managing money for a small business.
 
 ![Why it matters for everyday budgeting  ](/images/glossario/zeragem-de-posicao-inline-3.webp)
 
 
 
 ## How FinMoovi’s smart capture makes zeroing easy  
-Imagine que, ao chegar em casa, você tira uma foto do recibo da compra do mercado ou grava uma mensagem de voz dizendo “gastei 30 dólares no supermercado”. O recurso de **smart capture** do FinMoovi reconhece automaticamente o valor, a data e a categoria (alimentação, transporte, lazer etc.) e já registra tudo no seu fluxo de caixa. Não há mais a necessidade de abrir a planilha, digitar números e depois tentar lembrar onde cada gasto se encaixa. O app faz a **zeragem de posição** em tempo real:
+Imagine that, when you get home, you take a photo of your grocery receipt or record a voice note saying “I spent 30 dollars at the supermarket.” FinMoovi’s **smart capture** feature automatically recognizes the amount, date, and category (food, transportation, leisure, etc.) and logs everything into your cash flow. No more opening a spreadsheet, typing numbers, and then trying to remember where each expense fits. The app performs **position zeroing** in real time:
 
-- Ao registrar a despesa, ele subtrai o valor do saldo da categoria correspondente.  
-- Se a categoria ficar negativa, o app avisa que há um “déficit” e sugere ajustes.  
-- Quando todas as entradas e saídas de um período se equilibram, o app mostra um ícone verde indicando que a posição está zerada.
+- When you record an expense, it subtracts the amount from the corresponding category’s balance.  
+- If the category goes negative, the app alerts you to a “deficit” and suggests adjustments.  
+- When all inflows and outflows for a period balance out, the app shows a green icon indicating the position is zeroed.
 
-Esse processo elimina a etapa manual de “fechar a conta” no final do mês, porque a própria ferramenta já está fazendo isso a cada registro.
+This process eliminates the manual step of “closing the books” at month-end, because the tool does it continuously with every entry.
 
 ## Practical steps to keep your positions at zero  
-**Practical tip:** Sempre capture o comprovante logo após a compra. Uma foto ou voz leva menos de 10 segundos e garante que o gasto seja contabilizado imediatamente.  
+**Practical tip:** Always capture the receipt right after purchase. A photo or voice note takes less than 10 seconds and ensures the expense is recorded immediately.  
 
-**Practical tip:** Revise o resumo diário do app antes de dormir. Se alguma categoria ainda estiver positiva, pense se há alguma despesa que ainda não registrou (como um pagamento de assinatura que ainda não chegou ao extrato).  
+**Practical tip:** Review the app’s daily summary before bed. If any category still shows a positive balance, consider whether there’s an expense you haven’t logged yet (like a subscription payment that hasn’t appeared on your statement).  
 
-**Practical tip:** Use a visualização de “fluxo de caixa” para identificar picos de gasto. Quando o gráfico mostra um salto inesperado, abra o detalhe e verifique se a posição daquela categoria foi zerada.  
+**Practical tip:** Use the “cash flow” view to spot spending spikes. When the graph shows an unexpected jump, open the details and check whether that category’s position was zeroed.  
 
-Além desses hábitos, siga esta checklist semanal:
+In addition to these habits, follow this weekly checklist:
 
-- Capture todos os recibos (foto ou voz).  
-- Verifique se o app categorizou corretamente; ajuste se necessário.  
-- Confirme que o saldo de cada categoria está próximo de zero.  
-- Planeje a próxima semana com base no que ainda está “aberto”.  
+- Capture all receipts (photo or voice).  
+- Verify the app categorized correctly; adjust if needed.  
+- Confirm each category’s balance is close to zero.  
+- Plan next week based on what’s still “open.”  
 
-Ao transformar a zeragem de posição em um ritual simples, você cria um ciclo de feedback positivo: menos erros, menos juros e mais dinheiro disponível para o que realmente importa.
+By turning position zeroing into a simple ritual, you create a positive feedback loop: fewer errors, less interest, and more money available for what truly matters.
 
 ## Start today  
-1. Abra o FinMoovi e toque no botão “Captura Inteligente”.  
-2. Tire uma foto do último recibo que ainda não está registrado (pode ser o da padaria).  
-3. Confirme a categoria sugerida pelo app e salve.  
-4. Observe o ícone verde aparecer ao lado da categoria, indicando que a posição está zerada.  
+1. Open FinMoovi and tap the “Smart Capture” button.  
+2. Take a photo of the last receipt that isn’t recorded yet (it could be from the bakery).  
+3. Confirm the category suggested by the app and save.  
+4. Watch the green icon appear next to the category, indicating the position is zeroed.  
 
-Em menos de cinco minutos você já deu o primeiro passo para eliminar aqueles valores “presos” e ganhar controle total sobre seu dinheiro. Boa jornada!
+In under five minutes, you’ve taken the first step to eliminate those “trapped” amounts and gain full control over your money. Happy journey!

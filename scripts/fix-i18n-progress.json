@@ -403,6 +403,10 @@
     "tentativas": 3,
     "ultimaSeveridade": 1
   },
+  "en-position-zeroing.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
   "en-poupanca.md": {
     "tentativas": 1,
     "ultimaSeveridade": null

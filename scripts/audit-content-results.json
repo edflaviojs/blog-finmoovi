@@ -1,5 +1,24 @@
 [
   {
+    "file": "en-position-zeroing.md",
+    "dir": "glossario",
+    "severity": 3,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 7,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "ações",
+        "investimentos",
+        "valor"
+      ]
+    }
+  },
+  {
     "file": "en-fgc-guarantee.md",
     "dir": "glossario",
     "severity": 2,
@@ -1778,6 +1797,21 @@
     }
   },
   {
+    "file": "en-finmoovi-vs-manual-tracking-which-is-better-for-your-money.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-finmoovi-vs-mobills-which-to-choose-in-2026.md",
     "dir": "posts",
     "severity": 0,
@@ -2890,6 +2924,21 @@
   {
     "file": "en-loan.md",
     "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-master-your-monthly-expenses-and-avoid-surprises-in-2026.md",
+    "dir": "posts",
     "severity": 0,
     "issues": {
       "currency": 0,
@@ -5108,6 +5157,21 @@
     }
   },
   {
+    "file": "es-cierre-de-posicion.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-cobros-recurrentes-como-domar-el-gasto-invisible-en-2026.md",
     "dir": "posts",
     "severity": 0,
@@ -6323,6 +6387,21 @@
     }
   },
   {
+    "file": "es-domina-tus-gastos-mensuales-y-evita-sorpresas-en-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-domina-tus-gastos-y-consigue-paz-financiera-real-en-2026.md",
     "dir": "posts",
     "severity": 0,
@@ -6550,6 +6629,21 @@
   {
     "file": "es-financiamiento.md",
     "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-finmoovi-vs-mis-ahorros-cual-vale-mas.md",
+    "dir": "posts",
     "severity": 0,
     "issues": {
       "currency": 0,
