@@ -2358,5 +2358,65 @@
         "status": 200
       }
     }
+  },
+  {
+    "slug": "como-controlar-compras-parceladas-e-ainda-poupar-no-fim-do",
+    "title": "Como controlar compras parceladas e ainda poupar no fim do mês",
+    "url": "https://blog.finmoovi.com/posts/como-controlar-compras-parceladas-e-ainda-poupar-no-fim-do",
+    "submittedAt": "2026-09-25T19:03:23.576Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1865745664
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "domine-suas-despesas-mensais-e-evite-surpresas-em-2026",
+    "title": "Domine suas despesas mensais e evite surpresas em 2026",
+    "url": "https://blog.finmoovi.com/posts/domine-suas-despesas-mensais-e-evite-surpresas-em-2026",
+    "submittedAt": "2026-09-25T19:03:24.014Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1865745668
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "finmoovi-vs-minhas-economias-qual-vale-mais",
+    "title": "FinMoovi vs Minhas Economias: Qual Vale Mais?",
+    "url": "https://blog.finmoovi.com/posts/finmoovi-vs-minhas-economias-qual-vale-mais",
+    "submittedAt": "2026-09-25T19:03:24.442Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1865745672
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
   }
 ]
