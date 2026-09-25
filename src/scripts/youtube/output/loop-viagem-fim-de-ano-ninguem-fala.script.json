@@ -1,0 +1,118 @@
+{
+  "slug": "loop-viagem-fim-de-ano-ninguem-fala",
+  "formato": "loop16",
+  "term": "A viagem de fim de ano",
+  "category": "vida",
+  "keyword": "VIAGEM",
+  "valor": "R$ 1.800",
+  "situacao": "viagem-fim-de-ano",
+  "gancho": "ninguem-fala",
+  "ganchoFamilia": "ninguém fala",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "cofre",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Ninguém fala isso sobre viagem de fim de ano, mas é real",
+      "durationSec": 4.56,
+      "shots": [
+        {
+          "anchor": "Ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "Viagem de fim de ano"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "viagem",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "cofre"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Comigo aconteceu. Mil e oitocentos reais sumiram só com a praia",
+      "durationSec": 4.18,
+      "shots": [
+        {
+          "anchor": "Comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "cofre"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 1.800"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Agora eu guardo um pouco todo mês no cofre",
+      "durationSec": 3.42,
+      "shots": [
+        {
+          "anchor": "guardo",
+          "visual": {
+            "type": "statement",
+            "text": "Guardo no cofre todo mês"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "cofre",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "cofre"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Ninguém fala isso sobre viagem, mas é real",
+      "durationSec": 3.04,
+      "shots": [
+        {
+          "anchor": "Ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "Viagem de fim de ano"
+          }
+        },
+        {
+          "anchor": "viagem",
+          "visual": {
+            "type": "statement",
+            "text": "Viagem de fim de ano"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
