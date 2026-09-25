@@ -1,0 +1,201 @@
+{
+  "slug": "gasto-fixo-e-variavel",
+  "term": "gasto fixo e variável",
+  "category": "basico",
+  "keyword": "variável",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Seu *dinheiro some* sem você perceber?"
+  },
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "balanca",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Seu dinheiro some sem você perceber? É porque o fixo e o variável se misturam.",
+      "durationSec": 5.8,
+      "shots": [
+        {
+          "anchor": "some",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro some?"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "fixo",
+          "visual": {
+            "type": "icon",
+            "icon": "coins"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Aluguel, luz, internet… esses valores não mudam. Já o mercado, o lanche e o Uber mudam todo mês.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "Aluguel",
+          "visual": {
+            "type": "statement",
+            "text": "Aluguel, luz, internet"
+          }
+        },
+        {
+          "anchor": "mercado",
+          "visual": {
+            "type": "icon",
+            "icon": "growth"
+          }
+        },
+        {
+          "anchor": "Uber",
+          "visual": {
+            "type": "number",
+            "text": "R$ 200"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Se você não separar, o gasto que muda engana. Cem real de lanche por semana vira quatrocentos no mês e você nem sente.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "gasto",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 400,
+            "prefix": "R$"
+          }
+        },
+        {
+          "anchor": "vira",
+          "visual": {
+            "type": "statement",
+            "text": "Quatrocentos no mês"
+          }
+        },
+        {
+          "anchor": "sente",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "No FinMoovi eu coloquei os fixos em azul e os variáveis em vermelho. Aí apareceu quatrocentos e cinquenta reais de variável.",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "fixos em azul, variáveis em vermelho"
+          }
+        },
+        {
+          "anchor": "variáveis",
+          "visual": {
+            "type": "statement",
+            "text": "Fixos em azul"
+          }
+        },
+        {
+          "anchor": "quatrocentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 450"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer saber o que é fixo e o que é variável na sua conta? Baixe o FinMoovi, tem sete dias grátis.",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "saber",
+          "visual": {
+            "type": "statement",
+            "text": "Descubra seus gastos"
+          }
+        },
+        {
+          "anchor": "Baixe",
+          "visual": {
+            "type": "icon",
+            "icon": "target"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Quando você controla o fixo e o variável, o dinheiro não desaparece. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "controla",
+          "visual": {
+            "type": "statement",
+            "text": "Controle seus gastos"
+          }
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "number",
+            "text": "R$ 0"
+          }
+        },
+        {
+          "anchor": "outros",
+          "visual": {
+            "type": "icon",
+            "icon": "shield"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Descubra seus gastos agora",
+    "target": "app"
+  },
+  "totalDurationSec": 45
+}
