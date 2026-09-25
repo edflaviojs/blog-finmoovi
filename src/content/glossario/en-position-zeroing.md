@@ -4,6 +4,7 @@ definition: "What position zeroing is and how it shows up in your everyday money
 title: "position zeroing - Financial Glossary"
 description: "What position zeroing is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/zeragem-de-posicao.webp"
+imageAlt: "Gold coins, bar chart, and growing plants on dark background."
 category: "basico"
 tags: ["position zeroing", "glossary", "finance"]
 author: "FinMoovi"

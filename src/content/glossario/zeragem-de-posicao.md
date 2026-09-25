@@ -4,6 +4,7 @@ definition: "O que é zeragem de posição e como isso aparece no seu dia a dia 
 title: "zeragem de posição - Glossário Financeiro"
 description: "O que é zeragem de posição e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/zeragem-de-posicao.webp"
+imageAlt: "Moedas douradas, gráfico de barras e plantas verdes sobre fundo escuro."
 category: "basico"
 tags: ["zeragem de posição", "glossário", "finanças"]
 author: "FinMoovi"

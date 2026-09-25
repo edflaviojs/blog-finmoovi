@@ -3,6 +3,7 @@ title: "Master Your Monthly Expenses and Avoid Surprises in 2026"
 description: "Learn how to spot and control recurring costs, use FinMoovi, and secure financial peace in 2026—no hassle."
 tickerHeadline: "The hidden cost draining your wallet"
 image: "/images/posts/domine-suas-despesas-mensais-e-evite-surpresas-em-2026.webp"
+imageAlt: "Three smiling adults reviewing financial documents and a laptop at a table."
 category: "dicas"
 locale: "en"
 tags: ["recurring expenses","personal finance","budgeting","money management"]

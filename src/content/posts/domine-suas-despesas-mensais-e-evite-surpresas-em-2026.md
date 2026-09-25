@@ -3,6 +3,7 @@ title: "Domine suas despesas mensais e evite surpresas em 2026"
 description: "Descubra como identificar e controlar gastos recorrentes, usar o FinMoovi e garantir tranquilidade financeira em 2026 sem complicação."
 tickerHeadline: "O detalhe que drena seu bolso"
 image: "/images/posts/domine-suas-despesas-mensais-e-evite-surpresas-em-2026.webp"
+imageAlt: "Três pessoas sorrindo analisam documentos financeiros e laptop em mesa clara."
 category: "dicas"
 locale: "pt"
 tags: ["gastos recurrentes","finanças pessoais","economia","dinheiro"]

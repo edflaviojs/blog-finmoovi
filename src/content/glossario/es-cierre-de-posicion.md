@@ -4,6 +4,7 @@ definition: "Qué es cierre de posición y cómo aparece en tu día a día — e
 title: "cierre de posición - Glosario Financiero"
 description: "Qué es cierre de posición y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/zeragem-de-posicao.webp"
+imageAlt: "Pilas de monedas doradas, gráfico de barras, planta verde y balanza sobre fondo oscuro."
 category: "basico"
 tags: ["cierre de posición", "glosario", "finanzas"]
 author: "FinMoovi"

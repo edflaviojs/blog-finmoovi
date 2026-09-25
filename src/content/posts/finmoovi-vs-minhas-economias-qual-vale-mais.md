@@ -3,6 +3,7 @@ title: "FinMoovi vs Minhas Economias: Qual Vale Mais?"
 description: "Descubra se o app FinMoovi supera o método tradicional de anotar despesas, analisando preço, recursos, segurança e usabilidade."
 tickerHeadline: "O duelo que salva seu bolso"
 image: "/images/posts/finmoovi-vs-minhas-economias-qual-vale-mais.webp"
+imageAlt: "Notebook, monitor, caneca e plantas em mesa de escritório iluminada por luz quente."
 category: "ferramentas"
 locale: "pt"
 tags: ["FinMoovi","controle de despesas","orçamento pessoal","apps financeiros","comparação de ferramentas","gestão de finanças","finmoovi vs minhas economias","app controle dinheiro","minhas economias ou finmoovi"]
