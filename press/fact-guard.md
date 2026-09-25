@@ -1,7 +1,7 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-09-24T09:42:16.290Z
-**Posts:** 477 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 64
+**Gerado em:** 2026-09-25T09:59:29.427Z
+**Posts:** 483 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 64
 
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
@@ -182,7 +182,7 @@
 - _Elas oferecem flexibilidade, são gratuitas e podem ser customizadas de acordo com as suas necessidades._
 
 **por-que-minha-planilha-de-controle-nunca-acompanha-meus.md**
-- _Segundo a *World Bank*, a adoção de tecnologias digitais de gestão financeira pode reduzir o tempo gasto em tarefas administrativas em até 30 % (World Bank, 2022)._
+- _Segundo a *World Bank*, a adoção de tecnologias digitais de [gestão financeira](/posts/5-alternativas-ao-mobills-em-2026) pode reduzir o tempo gasto em tarefas administrativas em até 30 % (World Bank,_
 
 **por-que-minhas-metas-de-poupanca-nao-avancam.md**
 - _As metas de [poupança](/glossario/poupanca) ficam no papel porque não há um acompanhamento em tempo real que mostre o progresso e ajuste o ritmo conforme os gastos cotidianos, fazendo com que a motiva_
