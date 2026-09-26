@@ -91,6 +91,21 @@
       "promessa": "Vou te mostrar como achar as assinaturas que você paga sem usar e cortar as maiores ainda hoje",
       "em": "2026-09-19",
       "molde": "o-cerco"
+    },
+    {
+      "slug": "juros-cartao-quanto-voce",
+      "cenarios": [
+        "a fatura do cartão",
+        "o boleto",
+        "a conta de luz"
+      ],
+      "fio": "bola-neve",
+      "elenco": "dois irmãos, com o mesmo começo e escolhas diferentes",
+      "funcaoDoApp": "sincronizacao",
+      "cena": "o dentista que apareceu como emergência",
+      "promessa": "Vou te mostrar quanto você perde por mês com juros do cartão sem nem perceber",
+      "em": "2026-09-26",
+      "molde": "o-detalhe"
     }
   ]
 }
