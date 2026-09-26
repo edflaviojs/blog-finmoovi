@@ -83,3 +83,14 @@ jobs:
           TOGETHER_API_KEY: ${{ secrets.TOGETHER_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: node src/scripts/diagnostico/fornecedores-ia.js --so-imagem
+      # O SALDO DA CONTA QUE PAGA OS ROTEIROS.
+      # Existe porque em 18/09/2026 o saldo chegou a zero e ninguém soube
+      # durante 9 dias: o kie.ai não dá erro quando não há crédito — devolve
+      # "resposta vazia", a fila cai nos gratuitos, e a corrida segue. Só se viu
+      # pela qualidade a cair (reprovações do roteiro de 0% para 93%).
+      # `continue-on-error`: saber o saldo é informação, não é condição de vida.
+      - name: Quanto resta na conta paga (kie.ai)
+        continue-on-error: true
+        env:
+          KIE_AI_KEY: ${{ secrets.KIE_AI_KEY }}
+        run: node src/scripts/diagnostico/saldo-kie.js
