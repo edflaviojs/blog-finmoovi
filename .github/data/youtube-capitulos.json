@@ -2066,8 +2066,138 @@
           "titulo": "FINALIZAÇÃO"
         }
       ]
+    },
+    {
+      "videoId": "vt5WfGC_6gE",
+      "title": "Cómo Invertir en la Bolsa para Principiantes (Guía Completa 2026)",
+      "channel": "Andres Garza",
+      "duracaoSeg": 2709,
+      "idioma": "es",
+      "viewsPerDay": 1866,
+      "vistoEm": "2026-09-26",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "Introducción"
+        },
+        {
+          "seg": 59,
+          "titulo": "¿Qué es un Broker?"
+        },
+        {
+          "seg": 84,
+          "titulo": "¿Cómo Revisar las Regulaciones de un Broker?"
+        },
+        {
+          "seg": 205,
+          "titulo": "Abrir Cuenta en Interactive Brokers"
+        },
+        {
+          "seg": 856,
+          "titulo": "Depositar Dinero en Interactive Brokers"
+        },
+        {
+          "seg": 1177,
+          "titulo": "Tutorial Plataforma Interactive Brokers"
+        },
+        {
+          "seg": 1330,
+          "titulo": "Comprar Acciones en Interactive Brokers"
+        },
+        {
+          "seg": 1724,
+          "titulo": "Vender Acciones en Interactive Brokers"
+        },
+        {
+          "seg": 1928,
+          "titulo": "Retirar Dinero en Interactive Brokers"
+        }
+      ]
+    },
+    {
+      "videoId": "9ncCVdyE428",
+      "title": "10 Conceitos Financeiros Que Ninguém Te Ensinou (E Estão Custando Sua Liberdade)",
+      "channel": "Nexus Finanças",
+      "duracaoSeg": 1560,
+      "idioma": "pt",
+      "viewsPerDay": 327,
+      "vistoEm": "2026-09-26",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "Por que a escola não nos ensina sobre dinheiro?"
+        },
+        {
+          "seg": 118,
+          "titulo": "Renda vs. Riqueza: O que realmente importa"
+        },
+        {
+          "seg": 176,
+          "titulo": "O perigo da falsa estabilidade financeira"
+        },
+        {
+          "seg": 241,
+          "titulo": "Inflação: O vazamento invisível no seu bolso"
+        },
+        {
+          "seg": 342,
+          "titulo": "Juros Compostos: A força que multiplica (ou divide)"
+        },
+        {
+          "seg": 413,
+          "titulo": "Por que o começo parece tão lento?"
+        },
+        {
+          "seg": 507,
+          "titulo": "O dia em que o imprevisto acontece"
+        },
+        {
+          "seg": 595,
+          "titulo": "Reserva de Emergência: Comprando a sua paz"
+        },
+        {
+          "seg": 732,
+          "titulo": "Dívidas que aceleram vs. Dívidas que atrasam"
+        },
+        {
+          "seg": 828,
+          "titulo": "Ativos e Passivos: Onde você coloca seu dinheiro?"
+        },
+        {
+          "seg": 905,
+          "titulo": "O risco de ter apenas uma perna na mesa (Diversificação)"
+        },
+        {
+          "seg": 997,
+          "titulo": "Orçamento: O GPS para os seus grandes objetivos"
+        },
+        {
+          "seg": 1100,
+          "titulo": "O método simples para dividir sua renda"
+        },
+        {
+          "seg": 1172,
+          "titulo": "Poupar não é o mesmo que investir"
+        },
+        {
+          "seg": 1265,
+          "titulo": "O maior patrimônio está na sua cabeça"
+        },
+        {
+          "seg": 1342,
+          "titulo": "O conceito final: Conhecimento sem ação é zero"
+        },
+        {
+          "seg": 1431,
+          "titulo": "Pequenas decisões, grandes transformações"
+        },
+        {
+          "seg": 1484,
+          "titulo": "O convite para a sua liberdade financeira"
+        }
+      ]
     }
   ],
-  "atualizadoEm": "2026-09-25T09:12:53.826Z",
-  "total": 38
+  "atualizadoEm": "2026-09-26T08:56:20.543Z",
+  "total": 40
 }
