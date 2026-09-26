@@ -160,6 +160,32 @@
       "propostoEm": "2026-09-11T08:25:27.286Z",
       "publicadoEm": "2026-09-19T07:47:12.344Z",
       "videoId": "Caus4r5_V3I"
+    },
+    {
+      "slug": "juros-cartao-quanto-voce",
+      "titulo": "Juros do cartão: quanto você perde por mês sem nem perceber",
+      "tema": "Quanto você perde por mês com juros do cartão sem nem perceber",
+      "angulo": "Mostro como, mesmo pagando a fatura mínima, você está perdendo R$ 180 por mês só em juros do cartão — dinheiro que some sem você ver. Com um exemplo real de R$ 5.000 de dívida a 13,5% ao mês, mostro quanto isso pesa no orçamento de quem ganha entre R$ 2.000 e R$ 6.000. No final, você vai saber exatamente quanto está perdendo e como parar esse vazamento usando só o que já tem: seu salário atual e o app FinMoovi para ver o número claro.",
+      "glossario": "juros-compostos",
+      "palavrasChave": [
+        "juros do cartão",
+        "perda mensal",
+        "fatura mínima",
+        "dívido cartão",
+        "controle de gastos",
+        "FinMoovi app"
+      ],
+      "estado": "proposto",
+      "viralRef": {
+        "videoId": "RYuE7fYAOm4",
+        "title": "o SEGREDO da EDUCAÇÃO FINANCEIRA que seus pais não te ensinaram",
+        "views": 106393,
+        "viewsPerDay": 9889,
+        "estrutura": [
+          "uma palavra em maiúsculas a marcar o tom"
+        ]
+      },
+      "propostoEm": "2026-09-25T09:12:53.826Z"
     }
   ]
 }
