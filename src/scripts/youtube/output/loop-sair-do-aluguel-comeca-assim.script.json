@@ -1,0 +1,118 @@
+{
+  "slug": "loop-sair-do-aluguel-comeca-assim",
+  "formato": "loop16",
+  "term": "Sair do aluguel",
+  "category": "vida",
+  "keyword": "ALUGUEL",
+  "valor": "R$ 1.500",
+  "situacao": "sair-do-aluguel",
+  "gancho": "comeca-assim",
+  "ganchoFamilia": "começa assim",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ralo",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Quer aprender a sair do aluguel? Começa assim",
+      "durationSec": 2.97,
+      "shots": [
+        {
+          "anchor": "aprender",
+          "visual": {
+            "type": "statement",
+            "text": "Sair do aluguel?"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "aluguel",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Aqui na minha casa o boleto do aluguel é mil e quinhentos reais todo mês",
+      "durationSec": 5.56,
+      "shots": [
+        {
+          "anchor": "boleto",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "aluguel",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 1.500"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Percebi que nada fica meu, todo mês o dinheiro some",
+      "durationSec": 3.71,
+      "shots": [
+        {
+          "anchor": "Percebi",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro some todo mês"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Quer aprender a sair do aluguel? Começa assim",
+      "durationSec": 2.97,
+      "shots": [
+        {
+          "anchor": "aprender",
+          "visual": {
+            "type": "statement",
+            "text": "Sair do aluguel?"
+          }
+        },
+        {
+          "anchor": "aluguel",
+          "visual": {
+            "type": "statement",
+            "text": "Sair do aluguel?"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.21
+}
