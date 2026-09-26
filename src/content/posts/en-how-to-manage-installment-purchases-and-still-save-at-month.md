@@ -3,6 +3,7 @@ title: "How to Manage Installment Purchases and Still Save at Month‑End"
 description: "Learn to avoid installment traps, organize your bills, and use FinMoovi to keep your budget on track without stress."
 tickerHeadline: "Installments Made Easy"
 image: "/images/posts/como-controlar-compras-parceladas-e-ainda-poupar-no-fim-do.webp"
+imageAlt: "Smiling couple at a desk with a laptop, smartphone, and coffee mug."
 category: "dicas"
 locale: "en"
 tags: ["installments","personal finance","budgeting","money"]

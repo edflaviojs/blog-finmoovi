@@ -4,6 +4,7 @@ definition: "Qué es activo financiero y cómo aparece en tu día a día — exp
 title: "activo financiero - Glosario Financiero"
 description: "Qué es activo financiero y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/ativo-financeiro.webp"
+imageAlt: "Monedas doradas, caja fuerte, flecha ascendente y planta en un frasco sobre fondo oscuro."
 category: "basico"
 tags: ["activo financiero", "glosario", "finanzas"]
 author: "FinMoovi"

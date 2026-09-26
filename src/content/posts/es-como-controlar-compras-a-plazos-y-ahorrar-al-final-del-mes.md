@@ -3,6 +3,7 @@ title: "Cómo controlar compras a plazos y ahorrar al final del mes"
 description: "Aprende a evitar la trampa de los pagos a plazos, organizar tus cuentas y usar FinMoovi para mantener tu presupuesto sin apuros."
 tickerHeadline: "Pagos a plazos sin estrés"
 image: "/images/posts/como-controlar-compras-parceladas-e-ainda-poupar-no-fim-do.webp"
+imageAlt: "Pareja sonriente en sofá, mirando un teléfono móvil y un portátil en mesa."
 category: "dicas"
 locale: "es"
 tags: ["pagos a plazos","finanzas personales","ahorro","dinero"]

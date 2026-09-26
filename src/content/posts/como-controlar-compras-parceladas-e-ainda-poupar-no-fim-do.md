@@ -3,6 +3,7 @@ title: "Como controlar compras parceladas e ainda poupar no fim do mês"
 description: "Descubra como evitar a armadilha dos parcelamentos, organizar as contas e usar o FinMoovi para manter o orçamento em dia sem apertos."
 tickerHeadline: "Parcelado sem dor de cabeça"
 image: "/images/posts/como-controlar-compras-parceladas-e-ainda-poupar-no-fim-do.webp"
+imageAlt: "Casal sorridente olhando celular, com laptop e caneca sobre mesa de madeira."
 category: "dicas"
 locale: "pt"
 tags: ["parcelados","finanças pessoais","economia","dinheiro"]

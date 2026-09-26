@@ -4,6 +4,7 @@ definition: "What financial asset is and how it shows up in your everyday money 
 title: "financial asset - Financial Glossary"
 description: "What financial asset is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/ativo-financeiro.webp"
+imageAlt: "Gold coins, safe, upward arrow, and jar with plant on dark background."
 category: "basico"
 tags: ["financial asset", "glossary", "finance"]
 author: "FinMoovi"
