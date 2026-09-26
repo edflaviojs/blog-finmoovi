@@ -7,26 +7,30 @@
  * só que o roteiro passa a ser escrito por quem escreve pior. As reprovações
  * do robô dos Shorts saltaram de zero para 93%.
  *
- * A causa era saldo a zero. E **este projeto gastava dinheiro sem nunca olhar
- * para o saldo**: varrido o repositório, não havia uma única chamada à conta.
- * Família de [[backup-do-app-perdia-o-cartao]] — a avaria silenciosa dura o
- * tempo que se levar a ir ver.
+ * A causa era saldo a zero (medido: **-0,54 créditos**). E **este projeto
+ * gastava dinheiro sem nunca olhar para o saldo**: varrido o repositório, não
+ * havia uma única chamada à conta. Família de [[backup-do-app-perdia-o-cartao]]
+ * — a avaria silenciosa dura o tempo que se levar a ir ver.
  *
  * Não escreve nada, não publica nada: só pergunta e conta.
  *
- * Uso:  node src/scripts/diagnostico/saldo-kie.js
+ * Serve dois donos, e por isso exporta `lerSaldoKie()`:
+ *   · o `diagnostico-ia.yml`, à mão, quando se quer saber já;
+ *   · o `relatorio-gastos.js`, todos os dias, para o saldo entrar no e-mail
+ *     das 7h — que é o único sítio onde o dono ia olhar sem ter de lembrar-se.
+ *
+ * Uso à mão:  node src/scripts/diagnostico/saldo-kie.js
  * Sai 0 se conseguiu ler o saldo; 1 se não conseguiu (ou se não há chave).
  */
-
-const CHAVE = process.env.KIE_AI_KEY;
 
 /**
  * As portas candidatas, por ordem.
  *
  * ⚠️ NÃO INVENTAR A PORTA. A primeira está registada como a certa desde
- * 02/08/2026; as outras são tentativas honestas para o caso de eles a terem
- * mudado — o que já aconteceu com metade dos fornecedores desta casa. Cada uma
- * diz o que respondeu, para o registo servir de prova e não de palpite.
+ * 02/08/2026 e foi reconfirmada a 26/09; as outras são tentativas honestas para
+ * o caso de eles a mudarem — o que já aconteceu com metade dos fornecedores
+ * desta casa. Cada uma diz o que respondeu, para o registo servir de prova e
+ * não de palpite.
  */
 const PORTAS = [
   'https://api.kie.ai/api/v1/chat/credit',
@@ -35,7 +39,15 @@ const PORTAS = [
 ];
 
 /** 1 crédito = US$ 0,005 — medido em 02/08/2026 contra a fatura real, ao cêntimo. */
-const DOLAR_POR_CREDITO = 0.005;
+export const DOLAR_POR_CREDITO = 0.005;
+
+/**
+ * O ritmo real da casa, para traduzir o saldo em DIAS.
+ * ~3,4 créditos por vídeo (escritor + leitor + repetições), medido em 02/08.
+ * 3 vídeos por dia: 16s de manhã, 16s à noite, e o de 50s.
+ */
+export const CREDITOS_POR_VIDEO = 3.4;
+export const VIDEOS_POR_DIA = 3;
 
 /**
  * O saldo pode vir em sítios diferentes do corpo conforme a versão da API.
@@ -57,72 +69,89 @@ function extrairSaldo(corpo) {
   return null;
 }
 
-async function main() {
-  console.log('💰 Saldo da conta que paga os roteiros (kie.ai)\n');
+/**
+ * Pergunta o saldo à conta.
+ *
+ * ⚠️ NUNCA LANÇA. Quem o chama é, entre outros, o relatório diário — e um
+ * e-mail que deixa de sair por causa de uma consulta de saldo é uma avaria
+ * pior do que a que se queria evitar.
+ *
+ * @returns {Promise<{ok: boolean, saldo?: number, dolares?: number,
+ *   dias?: number, porta?: string, motivo?: string, tentativas?: string[]}>}
+ */
+export async function lerSaldoKie(chave = process.env.KIE_AI_KEY) {
+  // ⚠️ A chave certa é KIE_AI_KEY. A KIE_API_KEY existe em ~25 workflows e
+  // aponta para o GROQ — usá-la aqui mandaria a chave do Groq à porta errada.
+  if (!chave) return { ok: false, motivo: 'sem KIE_AI_KEY no ambiente' };
 
-  if (!CHAVE) {
-    // ⚠️ A chave certa é KIE_AI_KEY. A KIE_API_KEY existe em ~25 workflows e
-    // aponta para o GROQ — usá-la aqui mandaria a chave do Groq à porta errada.
-    console.log('❌ Não há KIE_AI_KEY neste ambiente — nada a medir.');
-    console.log('   (Atenção: KIE_API_KEY é OUTRA coisa; essa é do Groq.)');
-    process.exit(1);
-  }
-
+  const tentativas = [];
   for (const porta of PORTAS) {
     let r, texto;
     try {
       r = await fetch(porta, {
         method: 'GET',
-        headers: { Authorization: `Bearer ${CHAVE}`, 'Content-Type': 'application/json' },
+        headers: { Authorization: `Bearer ${chave}`, 'Content-Type': 'application/json' },
       });
       texto = await r.text();
     } catch (err) {
-      console.log(`   ✗ ${porta} — erro de rede (${err.message})`);
+      tentativas.push(`${porta} — erro de rede (${err.message})`);
       continue;
     }
-
     if (!r.ok) {
-      console.log(`   ✗ ${porta} — HTTP ${r.status}: ${texto.slice(0, 120)}`);
+      tentativas.push(`${porta} — HTTP ${r.status}: ${texto.slice(0, 120)}`);
       continue;
     }
-
     let corpo;
     try { corpo = JSON.parse(texto); } catch { corpo = texto; }
     const saldo = extrairSaldo(corpo);
-
     if (saldo === null) {
-      // Respondeu 200 mas não se achou número: mostrar o corpo CRU, porque é
+      // Respondeu 200 mas não se achou número: guardar o corpo CRU, porque é
       // isso que permite corrigir o leitor da próxima vez.
-      console.log(`   ⚠️ ${porta} — respondeu 200 mas não achei o saldo no corpo:`);
-      console.log(`      ${texto.slice(0, 300)}`);
+      tentativas.push(`${porta} — 200 sem saldo reconhecível: ${texto.slice(0, 200)}`);
       continue;
     }
+    return {
+      ok: true,
+      saldo,
+      dolares: saldo * DOLAR_POR_CREDITO,
+      dias: saldo / (CREDITOS_POR_VIDEO * VIDEOS_POR_DIA),
+      porta,
+      tentativas,
+    };
+  }
+  return { ok: false, motivo: 'nenhuma porta conhecida devolveu o saldo', tentativas };
+}
 
-    const dolares = saldo * DOLAR_POR_CREDITO;
-    console.log(`✅ porta: ${porta}`);
-    console.log(`\n   SALDO: ${saldo} créditos  ≈  US$ ${dolares.toFixed(2)}`);
-    console.log(`   (1 crédito = US$ ${DOLAR_POR_CREDITO} — medido contra a fatura real em 02/08/2026)`);
+/**
+ * Uma linha de texto pronta a entrar num relatório.
+ * **Não diz só o número: diz para quantos DIAS dá.** Saldo é um número;
+ * "três dias" é uma decisão.
+ */
+export function linhaDoSaldo(s) {
+  if (!s || !s.ok) return `💳 Saldo kie.ai: não foi possível ler (${s?.motivo || 'motivo desconhecido'}).`;
+  const base = `💳 Saldo kie.ai: ${s.saldo.toFixed(2)} créditos (US$ ${s.dolares.toFixed(2)}) — dá para ~${s.dias.toFixed(1)} dia(s)`;
+  if (s.saldo <= 0) return `${base}\n   🔴 A ZERO: o escritor devolve "resposta vazia" e os roteiros caem nos gratuitos, que escrevem pior.`;
+  if (s.dias < 3) return `${base}\n   ⚠️ Menos de 3 dias de folga — carregar antes que caia em silêncio.`;
+  return base;
+}
 
-    // A régua que interessa ao dono não é o número: é "dá para quantos dias?".
-    // Um vídeo curto custa ~3,4 créditos (escritor + leitor + repetições),
-    // medido em 02/08. São 3 vídeos por dia (16s de manhã, 16s à noite, 50s).
-    const porVideo = 3.4;
-    const videosPorDia = 3;
-    const dias = saldo / (porVideo * videosPorDia);
-    console.log(`\n   Ao ritmo de ${videosPorDia} vídeos/dia a ~${porVideo} créditos cada,`);
-    console.log(`   isto dá para ~${dias.toFixed(1)} dia(s).`);
-    if (saldo <= 0) {
-      console.log('\n🔴 SALDO A ZERO. É por isto que o escritor devolve "resposta vazia"');
-      console.log('   e os roteiros caem nos fornecedores gratuitos, que escrevem pior.');
-    } else if (dias < 3) {
-      console.log('\n⚠️ Menos de 3 dias de folga — carregar antes que caia em silêncio.');
-    }
+async function main() {
+  console.log('💰 Saldo da conta que paga os roteiros (kie.ai)\n');
+  const s = await lerSaldoKie();
+  for (const t of s.tentativas || []) console.log(`   ✗ ${t}`);
+  if (s.ok) {
+    console.log(`✅ porta: ${s.porta}\n`);
+    console.log(`   ${linhaDoSaldo(s)}`);
+    console.log(`\n   (1 crédito = US$ ${DOLAR_POR_CREDITO}, medido contra a fatura real em 02/08/2026;`);
+    console.log(`    ritmo de ${VIDEOS_POR_DIA} vídeos/dia a ~${CREDITOS_POR_VIDEO} créditos cada.)`);
     process.exit(0);
   }
-
-  console.log('\n❌ Nenhuma das portas conhecidas devolveu o saldo.');
-  console.log('   As respostas de cada uma estão acima — é por aí que se corrige.');
+  console.log(`\n❌ ${s.motivo}.`);
+  if (s.tentativas?.length) console.log('   As respostas de cada porta estão acima — é por aí que se corrige.');
   process.exit(1);
 }
 
-main();
+// Só corre quando é este o ficheiro lançado — o relatório diário importa-o.
+if (process.argv[1] && process.argv[1].replace(/\\/g, '/').endsWith('saldo-kie.js')) {
+  main().catch((e) => { console.error(`💥 ${e.message}`); process.exit(1); });
+}

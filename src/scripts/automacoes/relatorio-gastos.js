@@ -33,6 +33,7 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { MARCA } from '../lib/medidor.js';
+import { lerSaldoKie, linhaDoSaldo } from '../diagnostico/saldo-kie.js';
 
 const RAIZ = process.cwd();
 const HISTORICO = join(RAIZ, '.github', 'data', 'gastos-diarios.json');
@@ -192,7 +193,12 @@ export function salto(hojeUnidades, historicoDoServico) {
 function chaveDoDia(d = new Date()) { return d.toISOString().split('T')[0]; }
 
 /** Monta o texto e o HTML. Exportado para o digest das 7h reutilizar. */
-export function montarRelatorio(totais, historico, precos) {
+/**
+ * @param {object} [saldo] resultado de `lerSaldoKie()`. Opcional de propósito:
+ *   esta função é pura e síncrona, e há de continuar a sê-lo. Quem vai à rede
+ *   é o `main()`; aqui só se formata o que ele trouxe.
+ */
+export function montarRelatorio(totais, historico, precos, saldo = null) {
   const hoje = chaveDoDia();
   const dias = Object.keys(historico.dias || {}).filter((d) => d !== hoje).sort().slice(-DIAS_DE_MEDIA);
 
@@ -232,7 +238,19 @@ export function montarRelatorio(totais, historico, precos) {
     texto.push(`ℹ️ Sem preço configurado: ${semPreco.join(', ')} — preencha .github/data/precos-ia.json para ver em dinheiro.`);
   }
 
-  return { linhas, alarmes, custoTotal, semPreco, texto: texto.join('\n') };
+  // O SALDO, e é a lição de 26/09/2026: o consumo sozinho NÃO avisa que a conta
+  // acabou. Em 18/09 o saldo chegou a zero, o kie.ai passou a devolver "resposta
+  // vazia" (sem erro nenhum), os roteiros caíram nos gratuitos e as reprovações
+  // do robô dos Shorts foram de 0% para 93%. Durou NOVE DIAS. E o consumo, nessa
+  // altura, mostrava ZERO todos os dias — o que parece óptimo e era o alarme.
+  // Um gasto de zero pode ser "não se gastou" ou "não se PODE gastar": só o
+  // saldo separa os dois.
+  if (saldo) {
+    texto.push('');
+    texto.push(linhaDoSaldo(saldo));
+  }
+
+  return { linhas, alarmes, custoTotal, semPreco, saldo, texto: texto.join('\n') };
 }
 
 /** Guarda o dia no histórico (um só escritor — sem disputa de git). */
@@ -258,6 +276,13 @@ function gravarHistorico(historico, totais, rel) {
     alarmes: (rel.alarmes || []).map((a) => a.fornecedor),
     custoTotal: rel.custoTotal,
     semPreco: rel.semPreco,
+    // O saldo viaja com o apuramento para o digest das 7h o mostrar sem ter de
+    // ir outra vez à rede. Fica `null` se não se conseguiu ler — e o digest diz
+    // isso, em vez de mostrar um número que não mediu.
+    saldo: rel.saldo && rel.saldo.ok
+      ? { saldo: rel.saldo.saldo, dolares: rel.saldo.dolares, dias: rel.saldo.dias }
+      : null,
+    saldoMotivo: rel.saldo && !rel.saldo.ok ? rel.saldo.motivo : null,
   };
   // 90 dias chegam para ver tendência e mantêm o ficheiro pequeno.
   const chaves = Object.keys(historico.dias).sort();
@@ -284,7 +309,10 @@ async function main() {
   const totais = somar(linhas);
   const historico = lerJson(HISTORICO, { dias: {} });
   const precos = lerJson(PRECOS, {});
-  const rel = montarRelatorio(totais, historico, precos);
+  // Uma chamada só, e NUNCA lança (ver `lerSaldoKie`): um e-mail que deixasse
+  // de sair por causa de uma consulta de saldo seria avaria pior que a evitada.
+  const saldo = await lerSaldoKie();
+  const rel = montarRelatorio(totais, historico, precos, saldo);
   console.log(rel.texto);
 
   if (GRAVAR) {

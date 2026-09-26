@@ -48,6 +48,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
+          # A chave da conta PAGA, para o relatorio poder dizer quanto resta.
+          # Sem ela o saldo sai como "nao foi possivel ler" -- que e a verdade, e
+          # melhor do que um numero inventado.
+          KIE_AI_KEY: ${{ secrets.KIE_AI_KEY }}
         run: |
           HORAS="${{ github.event.inputs.horas }}"
           if [ -n "$HORAS" ]; then

@@ -446,8 +446,12 @@ function htmlGastos(rel, hojeISO) {
   if (rel.dia !== hojeISO) {
     return `${sectionTitle(titulo, undefined, '#d29922')}<p style="color:#d29922;font-size:13px;margin:4px 0 0;">⚠️ O último apuramento é de ${esc(rel.dia)}, não de hoje — o robô de consumo não correu. Número antigo não é mostrado de propósito.</p>`;
   }
+  // 🔴 O SALDO ENTRA AQUI TAMBÉM, e é o ramo que mais importa.
+  // "Nenhuma chamada" é ambíguo: pode ser um dia calmo, ou pode ser a conta
+  // esgotada — foi exactamente isto que aconteceu de 18 a 26/09/2026. Mostrar
+  // "nenhuma chamada" sozinho, nesse dia, seria dar por sossego o alarme.
   if (!rel.linhas || !rel.linhas.length) {
-    return `${sectionTitle(titulo, 0)}${emptyLine('Nenhuma chamada a serviço pago nas últimas 24h.')}`;
+    return `${sectionTitle(titulo, 0)}${emptyLine('Nenhuma chamada a serviço pago nas últimas 24h.')}${htmlSaldoKie(rel)}`;
   }
 
   const rows = rel.linhas.map((l) => {
@@ -474,7 +478,40 @@ function htmlGastos(rel, hojeISO) {
     ? `<p style="color:#8b949e;font-size:12px;margin:8px 0 0;">Sem preço configurado: ${esc(rel.semPreco.join(', '))}. Preencha <code>.github/data/precos-ia.json</code> para ver em dinheiro. A comparação com a média funciona sem isso.</p>`
     : '';
 
-  return `${sectionTitle(titulo, rel.linhas.length, '#d29922')}<table style="width:100%;border-collapse:collapse;">${rows}</table>${alarme}${aviso}`;
+  return `${sectionTitle(titulo, rel.linhas.length, '#d29922')}<table style="width:100%;border-collapse:collapse;">${rows}</table>${alarme}${aviso}${htmlSaldoKie(rel)}`;
+}
+
+/**
+ * 💳 O SALDO DA CONTA PAGA — nasceu de 26/09/2026.
+ *
+ * O consumo sozinho NÃO avisa que a conta acabou. Em 18/09 o saldo chegou a
+ * zero, o kie.ai passou a devolver "resposta vazia" **sem erro nenhum**, os
+ * roteiros caíram nos fornecedores gratuitos e as reprovações do robô dos
+ * Shorts foram de 0% para 93%. Durou **nove dias**.
+ *
+ * 🔴 E o mais traiçoeiro: nesses nove dias a tabela de consumo mostrava **zero**
+ * para o serviço pago — o que **parece óptimo e era o alarme**. Um gasto de zero
+ * pode ser "não se gastou" ou "não se PODE gastar". Só o saldo separa os dois,
+ * e é por isso que esta linha vive colada à tabela de consumo e não noutra
+ * secção.
+ *
+ * ⚠️ Se não se conseguiu ler o saldo, DIZ isso — nunca mostra um número que não
+ * mediu. É a mesma regra do apuramento velho, logo acima.
+ */
+function htmlSaldoKie(rel) {
+  if (!rel.saldo) {
+    const porque = rel.saldoMotivo ? ` (${esc(rel.saldoMotivo)})` : '';
+    return `<p style="color:#8b949e;font-size:12px;margin:10px 0 0;">💳 Saldo do kie.ai: não foi possível ler${porque}.</p>`;
+  }
+  const { saldo, dolares, dias } = rel.saldo;
+  const vermelho = saldo <= 0;
+  const amarelo = !vermelho && dias < 3;
+  const cor = vermelho ? '#f85149' : amarelo ? '#d29922' : '#8b949e';
+  const numeros = `<strong>${Number(saldo).toFixed(2)} créditos</strong> (US$ ${Number(dolares).toFixed(2)}) — dá para ~${Number(dias).toFixed(1)} dia(s)`;
+  const recado = vermelho
+    ? ' 🔴 <strong>A ZERO.</strong> O escritor devolve resposta vazia e os roteiros caem nos gratuitos, que escrevem pior.'
+    : amarelo ? ' ⚠️ Menos de 3 dias de folga — carregar antes que caia em silêncio.' : '';
+  return `<p style="color:${cor};font-size:13px;margin:10px 0 0;">💳 Saldo do kie.ai: ${numeros}.${recado}</p>`;
 }
 
 /**
