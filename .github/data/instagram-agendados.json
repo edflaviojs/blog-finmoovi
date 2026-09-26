@@ -17062,5 +17062,114 @@
         "publicaEmBR": "27/09 às 10h31"
       }
     }
+  },
+  "kw-financiamento-de-r-50-000-vale-a-pena": {
+    "midias": {
+      "video": {
+        "id": "2e69f625-c1b7-45d9-990f-d0f57fc25c85",
+        "name": "HtxYArm2sf.mp4",
+        "originalName": null,
+        "path": "https://media.help4desk.com/HtxYArm2sf.mp4",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capa": {
+        "id": "a1caaebf-134e-40df-b77f-05f8652e9073",
+        "name": "MfkmMSjvWY.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/MfkmMSjvWY.jpeg",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capaLarga": {
+        "id": "ad735352-1852-4609-b662-c5d661468759",
+        "name": "ngNtbLu0Ei.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/ngNtbLu0Ei.jpeg",
+        "thumbnail": null,
+        "alt": null
+      }
+    },
+    "publicaEm": "2026-09-26T22:00:00.000Z",
+    "publicaEmBR": "26/09 às 19h00",
+    "agendadoEm": "2026-09-26T18:38:11.447Z",
+    "atualizadoEm": "2026-09-26T18:38:14.707Z",
+    "redes": {
+      "instagram": {
+        "postId": "cmuiqg2kl0009rx9594rousz3",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-09-26T22:00:00.000Z",
+        "publicaEmBR": "26/09 às 19h00",
+        "midia": "o vídeo",
+        "caracteres": 743,
+        "limite": 2200
+      },
+      "zernio-tiktok": {
+        "postId": "cmuiqg2x5000arx95hsospivs",
+        "canal": "finmoovi",
+        "publicaEm": "2026-09-26T22:12:00.000Z",
+        "publicaEmBR": "26/09 às 19h12",
+        "midia": "o vídeo",
+        "caracteres": 273,
+        "limite": 2200
+      },
+      "facebook": {
+        "postId": "cmuiqg3ao000brx95exleb921",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-09-26T22:26:00.000Z",
+        "publicaEmBR": "26/09 às 19h26",
+        "midia": "o vídeo",
+        "caracteres": 513,
+        "limite": 63206
+      },
+      "linkedin-page": {
+        "postId": "cmuiqg3me000crx95d190xf2e",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-09-26T22:43:00.000Z",
+        "publicaEmBR": "26/09 às 19h43",
+        "midia": "o vídeo",
+        "caracteres": 519,
+        "limite": 3000
+      },
+      "threads": {
+        "postId": "cmuiqg3y2000drx95mrwprcm9",
+        "canal": "finmoovi",
+        "publicaEm": "2026-09-26T22:58:00.000Z",
+        "publicaEmBR": "26/09 às 19h58",
+        "midia": "o vídeo",
+        "caracteres": 131,
+        "limite": 500
+      },
+      "pinterest": {
+        "postId": "cmuiqg4l8000erx9569939kid",
+        "canal": "finmoovi",
+        "publicaEm": "2026-09-26T23:31:00.000Z",
+        "publicaEmBR": "26/09 às 20h31",
+        "midia": "vídeo primeiro, capa depois — a ordem que o Pinterest exige",
+        "caracteres": 496,
+        "limite": 500
+      },
+      "bluesky": {
+        "postId": "cmuiqg4w2000frx95xt5b7vxx",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-09-26T23:47:00.000Z",
+        "publicaEmBR": "26/09 às 20h47",
+        "midia": "vai a capa DEITADA (o Bluesky não publica vídeo, e a em pé ficaria cortada no feed)",
+        "caracteres": 88,
+        "limite": 300
+      },
+      "instagram-story": {
+        "postId": "cmuiqg53r000grx95bruykazz",
+        "tipo": "vídeo",
+        "publicaEm": "2026-09-26T22:05:00.000Z",
+        "publicaEmBR": "26/09 às 19h05"
+      },
+      "facebook-story": {
+        "postId": "cmuiqg57z000hrx955xdznzr1",
+        "tipo": "vídeo",
+        "publicaEm": "2026-09-26T22:31:00.000Z",
+        "publicaEmBR": "26/09 às 19h31"
+      }
+    }
   }
 }
