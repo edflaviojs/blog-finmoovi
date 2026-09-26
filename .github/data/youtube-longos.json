@@ -175,7 +175,7 @@
         "controle de gastos",
         "FinMoovi app"
       ],
-      "estado": "proposto",
+      "estado": "publicado",
       "viralRef": {
         "videoId": "RYuE7fYAOm4",
         "title": "o SEGREDO da EDUCAÇÃO FINANCEIRA que seus pais não te ensinaram",
@@ -185,7 +185,9 @@
           "uma palavra em maiúsculas a marcar o tom"
         ]
       },
-      "propostoEm": "2026-09-25T09:12:53.826Z"
+      "propostoEm": "2026-09-25T09:12:53.826Z",
+      "publicadoEm": "2026-09-26T07:53:39.362Z",
+      "videoId": "kaYpyawVJcU"
     }
   ]
 }

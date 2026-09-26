@@ -72,9 +72,15 @@
     ]
   },
   "juros-cartao-quanto-voce": {
-    "estado": "reservado",
+    "videoId": "kaYpyawVJcU",
+    "uploadedAt": "2026-09-26T07:53:39.362Z",
     "publishAt": "2026-09-27T22:00:00.000Z",
-    "reservadoEm": "2026-09-26T07:27:26.364Z",
-    "corrida": "36225895331"
+    "titulo": "Juros do cartão: quanto você perde por mês sem nem perceber",
+    "capitulos": 6,
+    "legendas": [
+      "pt",
+      "en",
+      "es"
+    ]
   }
 }
