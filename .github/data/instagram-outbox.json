@@ -10,5 +10,11 @@
     "runId": "36132442203",
     "producedAt": "2026-09-25T12:12:26.791Z",
     "artifact": "short-gasto-fixo-e-variavel"
+  },
+  {
+    "fileSlug": "lista-de-compras-completa",
+    "runId": "36250004996",
+    "producedAt": "2026-09-26T15:12:31.565Z",
+    "artifact": "short-lista-de-compras-completa"
   }
 ]
