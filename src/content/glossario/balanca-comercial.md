@@ -4,6 +4,7 @@ definition: "O que é balança comercial e como isso aparece no seu dia a dia �
 title: "balança comercial - Glossário Financeiro"
 description: "O que é balança comercial e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/balanca-comercial.webp"
+imageAlt: "Moedas douradas, barras e vaso com planta sobre fundo escuro."
 category: "basico"
 tags: ["balança comercial", "glossário", "finanças"]
 author: "FinMoovi"

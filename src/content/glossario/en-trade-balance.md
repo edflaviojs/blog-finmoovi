@@ -4,6 +4,7 @@ definition: "What Trade Balance is and how it shows up in your everyday money â€
 title: "Trade Balance - Financial Glossary"
 description: "What Trade Balance is and how it shows up in your everyday money â€” explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/balanca-comercial.webp"
+imageAlt: "Gold coins in glass jars and bar chart blocks on dark background."
 category: "basico"
 tags: ["Trade Balance", "glossary", "finance"]
 author: "FinMoovi"
