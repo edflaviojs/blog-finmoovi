@@ -1,0 +1,206 @@
+{
+  "slug": "lista-de-compras-completa",
+  "term": "lista de compras completa",
+  "category": "basico",
+  "keyword": "completa",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você faz lista de compras completa toda semana?"
+  },
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "semaforo",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você faz lista de compras completa toda semana? Eu fazia só pão e leite e no final do mês faltava quinhentos reais.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "lista",
+          "visual": {
+            "type": "statement",
+            "text": "Lista completa"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "toda",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "semaforo"
+          }
+        },
+        {
+          "anchor": "faltava",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          },
+          "sfx": "ding"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Esquecia o açúcar, comprava duas vezes o mesmo sabonete e no caixa a conta sempre subia mais do que eu esperava.",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "açúcar",
+          "visual": {
+            "type": "statement",
+            "text": "Esqueci o açúcar"
+          }
+        },
+        {
+          "anchor": "sabonete",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          },
+          "sfx": "alert"
+        },
+        {
+          "anchor": "mais",
+          "visual": {
+            "type": "statement",
+            "text": "Conta no alto"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Comecei a anotar tudo com preço e quantidade e vi que estava gastando quase oitocentos reais por mês só no mercado.",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "Comecei",
+          "visual": {
+            "type": "app",
+            "app": "compras",
+            "note": "Tela com lista de itens e preços"
+          }
+        },
+        {
+          "anchor": "quantidade",
+          "visual": {
+            "type": "statement",
+            "text": "Anotei tudo"
+          }
+        },
+        {
+          "anchor": "quase",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 800,
+            "prefix": "R$"
+          },
+          "sfx": "typewriter"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "No FinMoovi eu marquei cada item por categoria e ele mostrou onde eu podia cortar sem sentir falta.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Gráfico de gastos por categoria"
+          }
+        },
+        {
+          "anchor": "mostrou",
+          "visual": {
+            "type": "statement",
+            "text": "Cortei sem sentir"
+          }
+        },
+        {
+          "anchor": "cortar",
+          "visual": {
+            "type": "icon",
+            "icon": "chart-down"
+          },
+          "sfx": "slide"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu gasto real de mercado? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 5.4,
+      "shots": [
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "statement",
+            "text": "Veja seu gasto real"
+          }
+        },
+        {
+          "anchor": "Procura",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Lista de compras completa é dinheiro que não some no meio do mês. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "Lista",
+          "visual": {
+            "type": "statement",
+            "text": "Lista completa"
+          }
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "semaforo"
+          }
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro no bolso"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Teste grátis 7 dias",
+    "target": "app"
+  },
+  "totalDurationSec": 44.7
+}
