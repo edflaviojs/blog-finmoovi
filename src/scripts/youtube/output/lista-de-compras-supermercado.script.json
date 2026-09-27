@@ -1,0 +1,195 @@
+{
+  "slug": "lista-de-compras-supermercado",
+  "term": "lista de compras supermercado",
+  "category": "basico",
+  "keyword": "lista",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Já saiu do mercado com a *sacola cheia* e o bolso vazio?"
+  },
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "bola-neve",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Já saiu do mercado com a sacola cheia e o bolso vazio? É porque a lista virou convite ao impulso.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "mercado",
+          "visual": {
+            "type": "statement",
+            "text": "Mercado cheio?"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "bolso",
+          "visual": {
+            "type": "icon",
+            "icon": "money"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Você vai pensando só em arroz, feijão, carne e leite. Mas volta com biscoito, chocolate em pó e até um pacote de lenço que nem lembrava que precisava.",
+      "durationSec": 10.8,
+      "shots": [
+        {
+          "anchor": "arroz",
+          "visual": {
+            "type": "statement",
+            "text": "Arroz na lista"
+          }
+        },
+        {
+          "anchor": "biscoito",
+          "visual": {
+            "type": "icon",
+            "icon": "coins"
+          }
+        },
+        {
+          "anchor": "lembrava",
+          "visual": {
+            "type": "statement",
+            "text": "Esquecido?"
+          },
+          "sfx": "pop"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Um ‘só mais um’ pode virar trezentos reais no mês sem você perceber. É dinheiro que some sem você notar.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "mais",
+          "visual": {
+            "type": "statement",
+            "text": "Só mais um"
+          }
+        },
+        {
+          "anchor": "trezentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 300"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu anotei no FinMoovi tudo que comprei fora da lista. No fim do mês ele mostrou exatamente onde o dinheiro escapou.",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Visão geral das compras"
+          },
+          "sfx": "typewriter"
+        },
+        {
+          "anchor": "mostrou",
+          "visual": {
+            "type": "statement",
+            "text": "Compras fora da lista"
+          }
+        },
+        {
+          "anchor": "onde",
+          "visual": {
+            "type": "chart",
+            "text": "Escapou R$ 200"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu? É só abrir o FinMoovi, tem sete dias grátis.",
+      "durationSec": 5,
+      "shots": [
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "statement",
+            "text": "Quer ver?"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Lista sem controle é dinheiro que some. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 5.4,
+      "shots": [
+        {
+          "anchor": "Lista",
+          "visual": {
+            "type": "statement",
+            "text": "Lista sem controle"
+          }
+        },
+        {
+          "anchor": "some",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          }
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro dos outros"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja onde seu dinheiro escapa",
+    "target": "app"
+  },
+  "totalDurationSec": 44.7
+}
