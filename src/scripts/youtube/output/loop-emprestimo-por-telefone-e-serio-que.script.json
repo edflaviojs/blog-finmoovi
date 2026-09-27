@@ -1,0 +1,118 @@
+{
+  "slug": "loop-emprestimo-por-telefone-e-serio-que",
+  "formato": "loop16",
+  "term": "O empréstimo que o banco ofereceu",
+  "category": "vida",
+  "keyword": "EMPRÉSTIMO",
+  "valor": "R$ 5.000",
+  "situacao": "emprestimo-por-telefone",
+  "gancho": "e-serio-que",
+  "ganchoFamilia": "é sério que",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "areia-movedica",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "É sério que ninguém está falando de empréstimo?",
+      "durationSec": 3.04,
+      "shots": [
+        {
+          "anchor": "sério",
+          "visual": {
+            "type": "statement",
+            "text": "ninguém fala de empréstimo?"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "ninguém",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "areia-movedica"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Atendi o banco, me ofereceram cinco mil reais e eu aceitei sem pensar.",
+      "durationSec": 4.94,
+      "shots": [
+        {
+          "anchor": "Atendi",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "areia-movedica"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "banco",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 5.000"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "No mês seguinte, as contas não fecharam e eu fiquei pior.",
+      "durationSec": 4.18,
+      "shots": [
+        {
+          "anchor": "seguinte",
+          "visual": {
+            "type": "statement",
+            "text": "conta não fechou"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "contas",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "areia-movedica"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "É sério que ninguém está falando de empréstimo?",
+      "durationSec": 3.04,
+      "shots": [
+        {
+          "anchor": "sério",
+          "visual": {
+            "type": "statement",
+            "text": "ninguém fala de empréstimo?"
+          }
+        },
+        {
+          "anchor": "ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "ninguém fala de empréstimo?"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
