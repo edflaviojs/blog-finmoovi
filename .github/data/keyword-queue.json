@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-26T14:46:40.641Z",
-  "sourceCursor": 1,
+  "updatedAt": "2026-09-27T14:25:46.018Z",
+  "sourceCursor": 2,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -2087,8 +2087,10 @@
       "category": null,
       "priority": 2,
       "source": "gsc-gap",
-      "status": "pending",
-      "addedAt": "2026-09-14T13:27:29.761Z"
+      "status": "used",
+      "addedAt": "2026-09-14T13:27:29.761Z",
+      "usedAt": "2026-09-27T14:25:46.018Z",
+      "usedBy": "gerar-dicas-financeiras"
     },
     {
       "keyword": "gasto recurrente",
