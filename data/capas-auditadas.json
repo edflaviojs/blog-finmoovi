@@ -5209,6 +5209,21 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-09-26"
+    },
+    "balanca-comercial-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-27"
+    },
+    "balanca-comercial-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-27"
+    },
+    "balanca-comercial.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-27"
     }
   },
   "corrigidas": {
@@ -5873,6 +5888,6 @@
       "motivo": "tem texto escrito (\"I'm sorry, I'm not able to identify the people in this image.\")"
     }
   },
-  "totalAcervo": 1042,
-  "ultimaCorrida": "2026-09-26"
+  "totalAcervo": 1045,
+  "ultimaCorrida": "2026-09-27"
 }
