@@ -1,0 +1,210 @@
+{
+  "slug": "valor-presente",
+  "term": "Valor Presente",
+  "category": "mercado",
+  "keyword": "Valor",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você sabe *quanto vale hoje* um dinheiro que você vai receber daqui a um ano?"
+  },
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "semente",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você sabe quanto vale hoje um dinheiro que você vai receber daqui a um ano? É menos que você imagina.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "Você",
+          "visual": {
+            "type": "statement",
+            "text": "Valor futuro?"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "vale",
+          "visual": {
+            "type": "number",
+            "text": "R$ 1.000"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "você",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "A gente não pensa nisso, mas é tipo plantar uma semente. Você coloca um valor hoje e ele pode crescer.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "pensa",
+          "visual": {
+            "type": "statement",
+            "text": "Plantando hoje"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "semente",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "semente"
+          }
+        },
+        {
+          "anchor": "valor",
+          "visual": {
+            "type": "statement",
+            "text": "Crescimento futuro"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Mas se você receber mil reais daqui a um ano, é como se fosse receber setecentos e oitenta e três reais hoje.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "receber",
+          "visual": {
+            "type": "statement",
+            "text": "Mil reais amanhã"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "como",
+          "visual": {
+            "type": "number",
+            "text": "R$ 783"
+          }
+        },
+        {
+          "anchor": "oitenta",
+          "visual": {
+            "type": "statement",
+            "text": "Valor presente"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu usei o FinMoovi para calcular e ele me mostrou que o valor presente é menor do que o valor futuro.",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "calculadora",
+            "note": "Tela de cálculo"
+          },
+          "sfx": "typewriter"
+        },
+        {
+          "anchor": "valor",
+          "visual": {
+            "type": "statement",
+            "text": "Valor presente menor"
+          }
+        },
+        {
+          "anchor": "menor",
+          "visual": {
+            "type": "number",
+            "text": "R$ 783"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "statement",
+            "text": "Quer ver o seu?"
+          }
+        },
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "statement",
+            "text": "Procura FinMoovi"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Dinheiro hoje vale mais que dinheiro amanhã. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 5.4,
+      "shots": [
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro hoje vale mais"
+          }
+        },
+        {
+          "anchor": "mais",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro amanhã?"
+          }
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Controle seu dinheiro"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Teste grátis 7 dias",
+    "target": "app"
+  },
+  "totalDurationSec": 41.2
+}
