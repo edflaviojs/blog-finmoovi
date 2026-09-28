@@ -1,24 +1,5 @@
 [
   {
-    "file": "en-position-zeroing.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 7,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": [
-        "ações",
-        "investimentos",
-        "valor"
-      ]
-    }
-  },
-  {
     "file": "en-fgc-guarantee.md",
     "dir": "glossario",
     "severity": 2,
@@ -1212,6 +1193,21 @@
     }
   },
   {
+    "file": "en-discover-a-practical-alternative-to-google-finance-for-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-discover-how-to-take-control-of-your-money-with-free-apps.md",
     "dir": "posts",
     "severity": 0,
@@ -1453,6 +1449,21 @@
   },
   {
     "file": "en-fgts-severance-fund.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-financial-asset.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -2278,6 +2289,21 @@
   },
   {
     "file": "en-how-to-lighten-your-loan-burden-in-2026-with-smart.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-how-to-manage-installment-purchases-and-still-save-at-month.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -3327,6 +3353,21 @@
     }
   },
   {
+    "file": "en-position-zeroing.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-present-value.md",
     "dir": "glossario",
     "severity": 0,
@@ -4122,6 +4163,21 @@
     }
   },
   {
+    "file": "en-trade-balance.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-trading.md",
     "dir": "glossario",
     "severity": 0,
@@ -4467,6 +4523,21 @@
     }
   },
   {
+    "file": "en-working-capital.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-xetra.md",
     "dir": "glossario",
     "severity": 0,
@@ -4737,6 +4808,21 @@
     }
   },
   {
+    "file": "es-activo-financiero.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-ahorra-en-la-farmacia-sin-sacrificios-guia-practica-2026.md",
     "dir": "posts",
     "severity": 0,
@@ -4947,6 +5033,21 @@
     }
   },
   {
+    "file": "es-balanza-comercial.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-bolsa-de-valores.md",
     "dir": "glossario",
     "severity": 0,
@@ -5039,6 +5140,21 @@
   {
     "file": "es-cansado-de-anotar-cada-gasto-a-mano-y-perder-la-nocion-de-tu.md",
     "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-capital-de-giro.md",
+    "dir": "glossario",
     "severity": 0,
     "issues": {
       "currency": 0,
@@ -5263,6 +5379,21 @@
   },
   {
     "file": "es-como-conseguir-financiacion-para-tus-proyectos-sin.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-como-controlar-compras-a-plazos-y-ahorrar-al-final-del-mes.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -6253,6 +6384,21 @@
   },
   {
     "file": "es-descubre-como-controlar-tu-dinero-con-apps-gratuitas.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-descubre-una-alternativa-a-google-finance-para-2026.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
