@@ -1,0 +1,118 @@
+{
+  "slug": "loop-primeiro-guardado-voces-viram",
+  "formato": "loop16",
+  "term": "O primeiro dinheiro guardado",
+  "category": "vida",
+  "keyword": "GUARDADO",
+  "valor": "R$ 300",
+  "situacao": "primeiro-guardado",
+  "gancho": "voces-viram",
+  "ganchoFamilia": "vocês viram",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "semente",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Gente, vocês viram que eu finalmente consegui guardar algo?",
+      "durationSec": 3.26,
+      "shots": [
+        {
+          "anchor": "vocês",
+          "visual": {
+            "type": "statement",
+            "text": "Guardando pela primeira vez"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "viram",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "semente"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "No fim do mês, trezentos reais sobraram na conta, pela primeira vez.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "trezentos",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "semente"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 300"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Não foi sorte, foi anotar tudo, mesmo o pão e o ônibus.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "sorte",
+          "visual": {
+            "type": "statement",
+            "text": "Anotei até o pão"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "anotar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "semente"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Gente, vocês viram que eu finalmente consegui guardar algo?",
+      "durationSec": 3.26,
+      "shots": [
+        {
+          "anchor": "vocês",
+          "visual": {
+            "type": "statement",
+            "text": "Guardando pela primeira vez"
+          }
+        },
+        {
+          "anchor": "viram",
+          "visual": {
+            "type": "statement",
+            "text": "Guardando pela primeira vez"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
