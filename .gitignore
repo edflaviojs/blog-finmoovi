@@ -30,17 +30,15 @@ app-capture/
 # Preview local do Relatório do Dia (--dry-run) — nunca commitar
 digest-preview.html
 
-# artefactos do video longo (guiao, caderno e descricao gerados) — o codigo e que e versionado
-src/scripts/youtube/output/*.longo.json
+# artefactos do video longo (caderno e descricao gerados) — o codigo e que e versionado
 src/scripts/youtube/output/*.caderno.json
 src/scripts/youtube/output/*.descricao.txt
-# ⚠️ EXCEPCAO, e ha uma razao: o guiao do video JA APROVADO tem de estar aqui, senao o
-# robo na nuvem (e um clone limpo) nao consegue refazer este video sem voltar a pagar a
-# IA que o escreveu — e a corrida de MEDICAO deixaria de ser comparavel com o que ja
-# saiu. E o mesmo argumento que ja poe as imagens da Manus no repositorio.
-# Sao 9 KB de texto. Quando o robo escrever os seus proprios guioes todas as semanas,
-# esta linha deixa de ser precisa.
-!src/scripts/youtube/output/sair-do-vermelho.longo.json
+# ⚠️ O .longo.json DEIXOU DE SER IGNORADO — 28/09/2026, e a razao e a mesma que ja
+# valia so para o piloto: "senao o robo na nuvem (e um clone limpo) nao consegue refazer
+# este video sem voltar a pagar a IA que o escreveu". Agora isso vale toda semana, nao so
+# para o sair-do-vermelho — a Etapa 1 (segunda) escreve o guiao e comita-o; a Etapa 2
+# (terca, um clone NOVO) precisa de o encontrar aqui para nao reescrever (e pagar) o que
+# a segunda ja fez. Ver a nota de `qualReservadoSozinha` em upload-longo.js.
 youtube-render/out/
 
 # As imagens da Manus vem em PNG de 4-6 MB. O que o video usa e a versao a 1920x1080

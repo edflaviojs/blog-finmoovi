@@ -773,9 +773,18 @@ console.log('\n5. O ROBÔ DIÁRIO NÃO É TOCADO');
     /concurrency:/.test(fluxo) && linhaDoGrupo.includes('youtube-longo-') && !linhaDoGrupo.includes('youtube-short'),
     `o grupo é "${linhaDoGrupo.trim()}"`,
   );
+  /**
+   * ⚠️ ERA UM SÁBADO SÓ; DESDE 28/09/2026 SÃO DUAS ETAPAS, DOIS DIAS — ver a nota
+   * "QUANDO SE LIGAR" no cabeçalho do workflow. A hora (02:00 universais, fora da
+   * hora de ponta do GitHub) continua a mesma; o que mudou é o dia de cada etapa.
+   */
   ok(
-    'o relógio dispara ao SÁBADO de madrugada (fora da hora de ponta do GitHub)',
-    /cron:\s*'0 2 \* \* 6'/.test(fluxo),
+    'o relógio da Etapa 1 dispara à SEGUNDA de madrugada (fora da hora de ponta do GitHub)',
+    /cron:\s*'0 2 \* \* 1'/.test(fluxo),
+  );
+  ok(
+    'e o da Etapa 2 dispara à TERÇA, no mesmo horário',
+    /cron:\s*'0 2 \* \* 2'/.test(fluxo),
   );
 
   /**
@@ -921,9 +930,17 @@ console.log('\n5. O ROBÔ DIÁRIO NÃO É TOCADO');
     /capa-manus\.js/.test(fluxo),
     'ver `acharCapa` em upload-longo.js: sem capa ele sobe à mesma e o YouTube escolhe um fotograma sozinho',
   );
+  /**
+   * ⚠️ 28/09/2026 — o commit da capa deixou de ser o mesmo das fotografias (ver a
+   * nota "FIM DA ETAPA 1" no workflow): as fotografias comitam-se no fim da Etapa 1,
+   * ANTES de a capa sequer existir; a capa ganhou o seu próprio commit pequeno,
+   * "Guardar a capa", logo a seguir a ser desenhada. A regra continua a mesma —
+   * nunca desenhar e deixar na máquina da nuvem sem guardar — só o nome do passo
+   * de destino mudou.
+   */
   ok(
     'e a capa é feita ANTES do commit que guarda a pasta das imagens (senão fica na máquina da nuvem)',
-    fluxo.indexOf('capa-manus.js') < fluxo.indexOf('Guardar o caderno de cenas'),
+    fluxo.indexOf('capa-manus.js') < fluxo.indexOf('Guardar a capa'),
   );
 }
 

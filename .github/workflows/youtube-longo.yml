@@ -19,15 +19,43 @@ name: YouTube — Vídeo longo (semanal)
 #      desiste em silêncio. É por isso que a corrida de sábado 08 não vai fazer nada, e a
 #      de sábado 15 vai. Ver `estreiaOcupada` em `upload-longo.js`.
 #
-# ═══ QUANDO SE LIGAR: SÁBADO, PRIVADO, COM A ESTREIA MARCADA ═══
-# O relógio a usar é `0 2 * * 6` — sábado às 02:00 universais (23h00 de sexta no Brasil).
+# ═══ QUANDO SE LIGAR: DUAS ETAPAS, DOIS DIAS — 28/09/2026 ═══
+#
+# ═══ POR QUE DEIXOU DE SER UM DIA SÓ ═══
+# A Manus (quem desenha as fotografias e a capa) renova **300 créditos por dia, e NÃO
+# acumula** — o que não se gasta hoje não fica guardado para amanhã. Uma semana deste
+# vídeo pede 4 imagens (3 fotografias + 1 capa) a 99 créditos cada = **396**. Numa corrida
+# só, **falta quase uma imagem inteira TODA semana** — foi assim que ficou sem imagem
+# nenhuma em 24/08 e 29/08 (as duas contas mortas na mesma semana) e por isso a segunda
+# conta (`MANUS_API_KEY_2`) existia. Espalhando por dois dias, os 300 créditos de CADA
+# dia chegam com folga: 3 fotografias (297) num dia, a capa (99) sozinha no outro.
+#
+# ═══ ETAPA 1 (SEGUNDA) — o conteúdo ═══
+# Escolhe o vídeo da semana, escreve o guião, gera as 3 fotografias. Pára aí — sem capa,
+# sem voz, sem render, sem subir nada. Guarda tudo no repositório (o guião TAMBÉM passa a
+# ficar guardado a partir de agora — ver a nota no `.gitignore`).
+#
+# ═══ ETAPA 2 (TERÇA) — a capa e o vídeo ═══
+# Encontra o que a Etapa 1 preparou (pelo `--qual-reservado`, nunca pelo `pick-next-longo`
+# — ver a nota em `qualReservadoSozinha`), gera SÓ a capa, e segue com tudo o resto: voz,
+# legendas, descrição, render, subida. Sobe privado com a estreia de domingo marcada.
+#
+# ═══ ⚠️ A REDE DE SEGURANÇA: SE A SEGUNDA FALHAR, A TERÇA FAZ TUDO ═══
+# A pergunta que decide se uma corrida faz "só conteúdo" ou "capa + vídeo" é o DIA, não um
+# interruptor que alguém tem de lembrar de desligar. E a pergunta que decide se o conteúdo
+# ainda falta fazer é um FICHEIRO (o guião já existe?), não o dia. Nas terças-feiras em que
+# não há guião nenhum à espera (a segunda não correu, ou falhou), a corrida de terça faz a
+# Etapa 1 inteira ali mesmo, e segue direto para a Etapa 2 — exactamente o comportamento de
+# um dia só que já existia. O vídeo nunca deixa de sair por causa desta mudança; o pior
+# cenário é voltar a ser como era antes dela.
+#
 # ⚠️ **A hora foi escolhida, não sorteada:** o relógio do GitHub neste repositório já
 # atrasou **112 minutos** (medido — memória `blog-workflows-infra`), e a carga concentra-se
 # entre as 05:00 e as 12:00 universais, onde estão 50 agendamentos. Às 02:00 não está lá
-# quase ninguém, e sobram ~20 horas de folga até à estreia.
+# quase ninguém.
 #
 # E o atraso do relógio deixa de importar, porque **quem garante o segundo exato é o
-# YouTube**: o vídeo sobe privado com a estreia marcada. O dono tem um dia inteiro para o
+# YouTube**: o vídeo sobe privado com a estreia marcada. O dono tem dias de folga para o
 # ver no Studio antes de ir ao ar. Ver o cabeçalho de `upload-longo.js`.
 #
 # ═══ ⚠️ NADA AQUI TOCA NO ROBÔ DIÁRIO ═══
@@ -56,32 +84,32 @@ on:
         type: boolean
         required: false
         default: false
+      so_conteudo:
+        description: 'Forçar a Etapa 1 (guião + fotografias, sem capa nem vídeo). Vazio = decide pelo dia da semana.'
+        type: boolean
+        required: false
+        default: false
   schedule:
     # ✅ LIGADO EM 05/08/2026, por ordem do dono, depois de a corrida na nuvem ter sido
     # medida: 36 minutos do princípio ao fim, dos quais 14 a fazer o vídeo.
-    # Sábado às 02:00 universais = sexta às 23h00 no Brasil.
-    - cron: '0 2 * * 6'
     #
-    # 🔴 AS DUAS REPESCAGENS — 09/08/2026, e existem por uma razão medida.
+    # 🔴 DUAS ETAPAS, TRÊS TENTATIVAS CADA — 28/09/2026. A mesma razão das repescagens
+    # de 09/08 (uma corrida por dia significa que qualquer tropeção custa o dia inteiro),
+    # só que agora aplicada aos DOIS dias. As horas repetem o desenho já medido: 02:00
+    # universais é onde quase ninguém mais está agendado (memória `blog-workflows-infra`).
     #
-    # A PRIMEIRA corrida automática deste robô, sábado 08/08, **falhou**. Não havia
-    # segunda oportunidade: o canal ficou sem vídeo longo ao domingo e o dono só
-    # descobriu ao abrir o Studio no dia seguinte. Uma corrida por semana significa que
-    # qualquer tropeção — a IA, a cota, uma pane do GitHub — custa a semana inteira.
+    # ═══ ETAPA 1 — SEGUNDA ═══
+    - cron: '0 2 * * 1'    # segunda 23h00 de domingo no Brasil
+    - cron: '0 12 * * 1'   # segunda 09h00 no Brasil — 1ª repescagem
+    - cron: '0 18 * * 1'   # segunda 15h00 no Brasil — última oportunidade da Etapa 1
     #
-    # ⚠️ **NÃO É PRECISA LÓGICA NENHUMA NOVA, e é isso que as torna seguras.** O passo
-    # "Conferir que o domingo da estreia está livre" já pergunta ao YouTube antes de
-    # gastar um cêntimo: se a corrida da sexta correu bem, o domingo tem dono e a
-    # repescagem desiste em silêncio (código 78, sucesso). Só trabalha se não houver
-    # vídeo — que é exactamente a definição de repescagem.
-    #
+    # ═══ ETAPA 2 — TERÇA ═══
     # ⚠️ **AS HORAS FORAM ESCOLHIDAS PELA MARGEM ATÉ À ESTREIA**, que é às 22:00
-    # universais de domingo. O vídeo leva ~56 min a fazer, e o relógio do GitHub neste
-    # repositório já atrasou 112 min (memória `blog-workflows-infra`). Às 12:00 sobram
-    # 34 horas; às 18:00 sobram 28. A última ainda acaba com folga de horas, não de
-    # minutos — pôr a última às 20:00 seria apostar em que nada atrasa.
-    - cron: '0 12 * * 6'   # sábado 09h00 no Brasil — 1ª repescagem
-    - cron: '0 18 * * 6'   # sábado 15h00 no Brasil — última oportunidade
+    # universais de domingo — ainda sobra a semana quase inteira, bem mais folga do que
+    # o desenho de um dia só já tinha.
+    - cron: '0 2 * * 2'    # terça 23h00 de segunda no Brasil
+    - cron: '0 12 * * 2'   # terça 09h00 no Brasil — 1ª repescagem
+    - cron: '0 18 * * 2'   # terça 15h00 no Brasil — última oportunidade da Etapa 2
 
 permissions:
   contents: write
@@ -172,6 +200,24 @@ jobs:
       - name: Instalar dependências (blog)
         run: npm ci
 
+      # ⚠️ QUE ETAPA É HOJE — 28/09/2026. Decide pelo DIA (nunca por um interruptor que
+      # alguém tem de lembrar de desligar): segunda é só conteúdo; qualquer outro dia
+      # segue para a capa e o vídeo. O disparo à mão pode forçar `so_conteudo`, para
+      # testar a Etapa 1 sozinha sem esperar por segunda-feira.
+      - name: Que etapa é hoje (conteúdo, ou capa + vídeo)
+        id: dia
+        run: |
+          if [ "${{ github.event.inputs.so_conteudo }}" = "true" ]; then
+            echo "so_conteudo=true" >> "$GITHUB_OUTPUT"
+            echo "🎬 Etapa 1 forçada pelo disparo à mão: só conteúdo (guião + fotografias)."
+          elif [ "$(date -u +%u)" = "1" ]; then
+            echo "so_conteudo=true" >> "$GITHUB_OUTPUT"
+            echo "🎬 Segunda-feira: Etapa 1 — só conteúdo (guião + fotografias)."
+          else
+            echo "so_conteudo=false" >> "$GITHUB_OUTPUT"
+            echo "🎬 Etapa 2 — capa e vídeo (e, se faltar, também o conteúdo, tudo nesta corrida)."
+          fi
+
       # ⚠️ **UM DIA, UM VÍDEO** — e esta pergunta vem ANTES de tudo o que custa.
       #
       # Fazer o vídeo leva 36 minutos e uma corrida de IA. Descobrir no fim que o domingo
@@ -238,6 +284,17 @@ jobs:
             exit 0
           fi
           SLUG="${{ github.event.inputs.slug }}"
+          # ⚠️ PRIMEIRO PERGUNTA-SE O QUE JÁ ESTÁ RESERVADO — 28/09/2026. `pick-next-longo`
+          # NUNCA serve para achar o vídeo da Etapa 1: ele salta de propósito qualquer tema
+          # com reserva válida (é assim que evita repeti-lo), e isso é exactamente o
+          # vídeo que a Etapa 1 já reservou. Perguntar a ele aqui devolveria um vídeo
+          # DIFERENTE a disputar o mesmo domingo. Ver `qualReservadoSozinha`.
+          if [ -z "$SLUG" ]; then
+            SLUG="$(node src/scripts/youtube/upload-longo.js --qual-reservado)"
+            if [ -n "$SLUG" ]; then
+              echo "📌 já havia reserva para este domingo: \"$SLUG\" (de uma corrida anterior)."
+            fi
+          fi
           if [ -z "$SLUG" ]; then
             # ⚠️ Fila vazia devolve 78 e isso é SUCESSO, não avaria. Mesmo rito do Short.
             set +e
@@ -260,6 +317,26 @@ jobs:
           echo "🎬 vídeo da semana: $SLUG"
           echo "SLUG=$SLUG" >> "$GITHUB_ENV"
           echo "skip=false" >> "$GITHUB_OUTPUT"
+
+      # ⚠️ A ETAPA 1 JÁ FOI FEITA PARA ESTE VÍDEO? — 28/09/2026.
+      #
+      # A prova é o FICHEIRO (o guião), nunca um interruptor — regra da casa. O guião
+      # deixou de ser ignorado pelo `.gitignore`: se ele já está aqui depois do checkout,
+      # foi uma corrida anterior (a segunda-feira, normalmente) que o escreveu e o
+      # comitou, e as fotografias que vieram com ele. Não se escreve nem se paga de novo.
+      # Se NÃO está aqui, falta tudo — e é aqui que a Etapa 2 aprende que tem de fazer a
+      # Etapa 1 inteira antes de seguir (a rede de segurança do cabeçalho deste ficheiro).
+      - name: Ver se a Etapa 1 (guião + fotografias) já foi feita
+        id: conteudo
+        if: steps.escolher.outputs.skip != 'true'
+        run: |
+          if [ -f "src/scripts/youtube/output/$SLUG.longo.json" ]; then
+            echo "pronto=true" >> "$GITHUB_OUTPUT"
+            echo "♻️  o guião de \"$SLUG\" já existe — a Etapa 1 já correu para este vídeo."
+          else
+            echo "pronto=false" >> "$GITHUB_OUTPUT"
+            echo "📭 ainda não há guião para \"$SLUG\" — falta fazer a Etapa 1."
+          fi
 
       # ⚠️ A FILA TEM DE FICAR GUARDADA MESMO QUE O RESTO FALHE.
       # Se os temas novos não forem gravados aqui, a corrida seguinte volta a lê-los dos
@@ -330,7 +407,7 @@ jobs:
       # ⚠️ **Nada marca o tema como reprovado.** O `--saltar` vale só nesta corrida; na
       # semana seguinte ele volta a ser o primeiro da fila.
       - name: Escrever o guião e montar as cenas (e trocar de tema se um travar)
-        if: steps.escolher.outputs.skip != 'true'
+        if: steps.escolher.outputs.skip != 'true' && steps.conteudo.outputs.pronto != 'true'
         env:
           KIE_AI_KEY: ${{ secrets.KIE_AI_KEY }}
           KIE_AI_KEY_LONGO: ${{ secrets.KIE_AI_KEY_LONGO }}
@@ -456,7 +533,7 @@ jobs:
       # que é exatamente o que acontece hoje. Um robô que fica vermelho por causa de uma
       # coisa que ainda não foi ligada ensina toda a gente a ignorar os avisos.
       - name: As fotografias (só se houver chave da Manus)
-        if: steps.escolher.outputs.skip != 'true'
+        if: steps.escolher.outputs.skip != 'true' && steps.conteudo.outputs.pronto != 'true'
         env:
           MANUS_API_KEY: ${{ secrets.MANUS_API_KEY }}
           # ═══ 🔴 A SEGUNDA CONTA DA MANUS — 10/08/2026, ordem do dono ═══
@@ -533,7 +610,7 @@ jobs:
       # 🔴 **NUNCA MATA A CORRIDA.** Sem chave, sem resposta, ou com resposta estragada, o
       # vídeo sai com as pistas escritas à mão. Menos desenhos > vídeo nenhum.
       - name: Os desenhos de cada cena (o leitor escolhe pelo significado)
-        if: steps.escolher.outputs.skip != 'true'
+        if: steps.escolher.outputs.skip != 'true' && steps.conteudo.outputs.pronto != 'true'
         env:
           KIE_AI_KEY: ${{ secrets.KIE_AI_KEY }}
           KIE_AI_KEY_LONGO: ${{ secrets.KIE_AI_KEY_LONGO }}
@@ -551,6 +628,53 @@ jobs:
           # ⚠️ CONFERIR O RESULTADO, NUNCA O CÓDIGO DE SAÍDA. É esta linha que diz, em
           # texto, quanto do vídeo ficou em letra na tela — o número da queixa do dono.
           node -e "const p=require('./youtube-render/public/roteiro/'+process.argv[1]+'.json');const c=p.scenes.reduce((a,s)=>{const k=(s.visual&&s.visual.tipo)||'?';a[k]=(a[k]||0)+1;return a;},{});const tot=p.scenes.length;console.log('🎨 '+(c.ilustracao||0)+' ilustrações · '+(c.palavras||0)+'/'+tot+' cenas só com letra ('+Math.round((c.palavras||0)/tot*100)+'%)');" "$SLUG"
+
+      # ── FIM DA ETAPA 1: GUARDAR O GUIÃO, AS CENAS, AS FOTOGRAFIAS E O BANCO ────
+      #
+      # 🔴 O CADERNO DE CENAS TEM DE SAIR DAQUI GRAVADO — 09/08/2026.
+      # O `roteiro-longo.js` escreve `.github/data/longo-cenarios.json` a cada vídeo — é
+      # ele que impede o vídeo seguinte de contar a mesma cena. Sem `git add`, a máquina
+      # da nuvem é deitada fora no fim da corrida e o caderno morre lá dentro.
+      #
+      # ⚠️ **E DESDE 28/09/2026, O GUIÃO TAMBÉM VAI NESTE COMMIT** — é o que faz a Etapa 2,
+      # num clone NOVO num dia diferente, encontrar o que esta corrida escreveu em vez de
+      # pagar a IA outra vez pelo mesmo texto (ver a nota no `.gitignore`). E vai também o
+      # catálogo dos desenhos (`ilustracoes-do-longo.json`) — sem ele a Etapa 2 remontaria
+      # o vídeo sem os desenhos que este passo acabou de escolher.
+      #
+      # ⚠️ **UM COMMIT SÓ, e é de propósito.** Dois passos a empurrar são duas corridas a
+      # disputar o mesmo ramo, e já se perderam 19 ficheiros nesta casa por causa disso
+      # (memória `blog-deploy-parado-por-link-do-robo`).
+      - name: Guardar o guião, as cenas, as fotografias e o banco (fim da Etapa 1)
+        if: steps.escolher.outputs.skip != 'true' && steps.conteudo.outputs.pronto != 'true'
+        run: |
+          # ═══ A RESERVA DO TEMA QUE REALMENTE GANHOU — 25/08/2026 ═══
+          # O passo lá de cima reserva o PRIMEIRO tema da fila, mas o passo do guião pode
+          # trocar de tema pelo caminho — e aí a reserva ficava no tema errado.
+          node src/scripts/youtube/upload-longo.js --reservar --slug="$SLUG" || \
+            echo "::warning::não deu para reservar \"$SLUG\" — a Etapa 2 volta a tentar."
+          git config user.name "FinMoovi Bot"
+          git config user.email "bot@finmoovi.com"
+          git add .github/data/longo-cenarios.json .github/data/fotos-do-longo.json \
+                  .github/data/ilustracoes-do-longo.json .github/data/banco-de-imagens.json \
+                  .github/data/youtube-longos-published.json youtube-render/public/manus \
+                  "src/scripts/youtube/output/$SLUG.longo.json" || true
+          if git diff --staged --quiet; then
+            echo "Sem novidades para guardar."
+          else
+            git commit -m "chore: etapa 1 do video longo $SLUG (guiao, fotografias e reserva) [skip ci]"
+            bash .github/scripts/empurrar.sh
+          fi
+
+      # ── ETAPA 2 COMEÇA AQUI ─────────────────────────────────────────────────
+      # ⚠️ SÓ RECONSTRÓI SE ESTÁ A ENTRAR DIRETO NA ETAPA 2 — se a Etapa 1 correu nesta
+      # MESMA corrida (`pronto` era `false`), o guião já está montado em disco, refazê-lo
+      # seria trabalho a dobrar. Só quando `pronto` já vinha `true` (a Etapa 1 correu
+      # noutro dia, num clone que já não existe) é que falta remontar a partir do que foi
+      # guardado — e é de graça, determinista, sem pagar IA nenhuma outra vez.
+      - name: Remontar o vídeo (a Etapa 1 já tinha corrido noutro dia)
+        if: steps.escolher.outputs.skip != 'true' && steps.dia.outputs.so_conteudo != 'true' && steps.conteudo.outputs.pronto == 'true'
+        run: node src/scripts/youtube/montar-longo.js --slug="$SLUG"
 
       # ── 1-d. A CAPA ───────────────────────────────────────────────────────────
       #
@@ -600,7 +724,7 @@ jobs:
       # as capas do blog todos os dias) e o texto é escrito por nós com o `sharp`. Ver
       # `src/scripts/youtube/lib/capa-cloudflare.js`.
       - name: A capa do YouTube (Manus, e a Cloudflare como plano B)
-        if: steps.escolher.outputs.skip != 'true'
+        if: steps.escolher.outputs.skip != 'true' && steps.dia.outputs.so_conteudo != 'true'
         env:
           MANUS_API_KEY: ${{ secrets.MANUS_API_KEY }}
           # ⚠️ A conta de reserva — ver a nota no passo das fotografias. Tem de estar
@@ -643,48 +767,20 @@ jobs:
             echo "::warning::NENHUMA capa foi desenhada nesta corrida — nem pela Manus, nem pelo plano B. Se houver um ficheiro antigo na pasta, o vídeo sobe com a miniatura da semana passada."
           fi
 
-      # 🔴 O CADERNO DE CENAS TEM DE SAIR DAQUI GRAVADO — 09/08/2026.
-      #
-      # ═══ O DEFEITO, MEDIDO ═══
-      # O `roteiro-longo.js` escreve `.github/data/longo-cenarios.json` a cada vídeo — é
-      # ele que impede o vídeo seguinte de contar a mesma cena. **Nenhum passo deste
-      # robô lhe fazia `git add`.** A máquina da nuvem é deitada fora no fim da corrida,
-      # portanto o caderno morria lá dentro e, na semana seguinte, o robô lia a versão
-      # velha. A trava anti-repetição existia e **nunca aprendia nada**.
-      #
-      # ⚠️ **É O MESMO PASSO DAS FOTOGRAFIAS DE PROPÓSITO.** Dois passos que gravam no
-      # repositório com o mesmo `empurrar.sh` são duas corridas a disputar o mesmo ramo,
-      # e já se perderam 19 ficheiros nesta casa por causa disso (memória
-      # `blog-deploy-parado-por-link-do-robo`). Um commit só, uma disputa só.
-      #
-      # ⚠️ **E CORRE MESMO SEM CHAVE DA MANUS**, que é o caso em que não há fotografia
-      # nenhuma — mas há SEMPRE caderno de cenas para gravar.
-      - name: Guardar o caderno de cenas, as fotografias e o banco
-        if: steps.escolher.outputs.skip != 'true'
+      # ⚠️ GUARDAR SÓ A CAPA — 28/09/2026. As cenas, fotografias, banco e o guião já
+      # ficaram gravados no fim da Etapa 1; este commit é pequeno de propósito, só a
+      # imagem nova que este passo pode ter desenhado. Corre mesmo sem capa nenhuma (o
+      # `git diff --staged --quiet` não encontra nada para gravar, e segue em frente).
+      - name: Guardar a capa
+        if: steps.escolher.outputs.skip != 'true' && steps.dia.outputs.so_conteudo != 'true'
         run: |
-          # ═══ 🔴 A RESERVA DO TEMA QUE REALMENTE GANHOU — 25/08/2026 ═══
-          #
-          # O passo lá de cima reserva o PRIMEIRO tema da fila. Mas o passo do guião pode
-          # trocar de tema pelo caminho (ordem do dono, 09/08: *"se existe algum bloqueio
-          # ele pula para o próximo tema… mas nunca parar e não gerar o vídeo"*) — e aí a
-          # reserva ficava no tema errado, com o tema certo por marcar.
-          #
-          # ⚠️ **Isto NÃO é um empurrão novo.** Vai no commit que já existe, e o sítio foi
-          # escolhido: estamos a ~10 minutos de corrida e o render, que é o que custa 40,
-          # ainda não começou. Dois passos a empurrar são duas corridas a disputar o mesmo
-          # ramo, e já se perderam 19 ficheiros nesta casa por causa disso.
-          #
-          # ⚠️ E ela não apaga a primeira: o tema que travou fica reservado esta semana e
-          # **volta à fila sozinho** quando o domingo passar (`reservaAindaVale`).
-          node src/scripts/youtube/upload-longo.js --reservar --slug="$SLUG" || \
-            echo "::warning::não deu para reservar \"$SLUG\" — o caderno é escrito no fim na mesma."
           git config user.name "FinMoovi Bot"
           git config user.email "bot@finmoovi.com"
-          git add .github/data/longo-cenarios.json .github/data/fotos-do-longo.json .github/data/banco-de-imagens.json .github/data/youtube-longos-published.json youtube-render/public/manus || true
+          git add .github/data/longo-cenarios.json .github/data/youtube-longos-published.json youtube-render/public/manus || true
           if git diff --staged --quiet; then
             echo "Sem novidades para guardar."
           else
-            git commit -m "chore: cenas, fotografias e reserva do video longo $SLUG [skip ci]"
+            git commit -m "chore: capa do video longo $SLUG [skip ci]"
             bash .github/scripts/empurrar.sh
           fi
 
@@ -692,7 +788,7 @@ jobs:
       # ⚠️ O tratamento de som da voz liga-se sozinho pelo FORMATO do guião (longo), e o
       # Short nunca o apanha por acidente. Ver §43.1.
       - name: A voz, e os tempos medidos palavra a palavra
-        if: steps.escolher.outputs.skip != 'true'
+        if: steps.escolher.outputs.skip != 'true' && steps.dia.outputs.so_conteudo != 'true'
         env:
           TOGETHER_TTS_API_KEY: ${{ secrets.TOGETHER_TTS_API_KEY }}
         run: node src/scripts/youtube/tts-short.js --slug="$SLUG"
@@ -702,7 +798,7 @@ jobs:
       # neste vídeo — a linha do tempo é outra (respiro, transições, cartões de capítulo).
       # Está tudo medido no cabeçalho de `srt-longo.js`.
       - name: As legendas (pt/en/es)
-        if: steps.escolher.outputs.skip != 'true'
+        if: steps.escolher.outputs.skip != 'true' && steps.dia.outputs.so_conteudo != 'true'
         env:
           KIE_AI_KEY: ${{ secrets.KIE_AI_KEY }}
           KIE_AI_KEY_LONGO: ${{ secrets.KIE_AI_KEY_LONGO }}
@@ -719,7 +815,7 @@ jobs:
       # escritos a partir do guião. Sem as chaves, isto **não falha** — sai o texto de
       # reserva, em silêncio, todas as semanas. É o pior modo de falha desta casa.
       - name: A descrição, com os capítulos cronometrados sobre a voz real
-        if: steps.escolher.outputs.skip != 'true'
+        if: steps.escolher.outputs.skip != 'true' && steps.dia.outputs.so_conteudo != 'true'
         env:
           KIE_AI_KEY: ${{ secrets.KIE_AI_KEY }}
           KIE_AI_KEY_LONGO: ${{ secrets.KIE_AI_KEY_LONGO }}
@@ -731,7 +827,7 @@ jobs:
         run: node src/scripts/youtube/descricao-longo.js --slug="$SLUG"
 
       - name: Instalar dependências (render)
-        if: steps.escolher.outputs.skip != 'true'
+        if: steps.escolher.outputs.skip != 'true' && steps.dia.outputs.so_conteudo != 'true'
         working-directory: youtube-render
         run: npm ci
 
@@ -742,7 +838,7 @@ jobs:
       # de buracos. O `--concurrency=2` já vive lá dentro.
       - name: Fazer o vídeo (~10 mil fotogramas)
         id: render
-        if: steps.escolher.outputs.skip != 'true'
+        if: steps.escolher.outputs.skip != 'true' && steps.dia.outputs.so_conteudo != 'true'
         working-directory: youtube-render
         run: |
           set -euo pipefail
@@ -768,14 +864,14 @@ jobs:
       # os do ficheiro que vai mesmo ao ar. Nunca derruba: se falhar, o vídeo
       # segue com o som original.
       - name: Pôr o som no padrão do YouTube
-        if: steps.escolher.outputs.skip != 'true'
+        if: steps.escolher.outputs.skip != 'true' && steps.dia.outputs.so_conteudo != 'true'
         run: node src/scripts/youtube/lib/normalizar-audio.js "youtube-render/out/longo/$SLUG.mp4"
 
       # ⚠️ CONFERIR O RESULTADO, NUNCA O CÓDIGO DE SAÍDA — a regra desta casa. O render já
       # se confere a si próprio, mas quem lê isto quer o número à vista, e a MEDIÇÃO DO
       # TEMPO é a razão de ser desta primeira corrida.
       - name: O que saiu, em números
-        if: steps.escolher.outputs.skip != 'true'
+        if: steps.escolher.outputs.skip != 'true' && steps.dia.outputs.so_conteudo != 'true'
         run: |
           set -euo pipefail
           MP4="youtube-render/out/longo/$SLUG.mp4"
@@ -799,7 +895,7 @@ jobs:
           echo "✅ $FOTOGRAMAS fotogramas · $SEGUNDOS s · $TAMANHO · $MINUTOS_DO_RENDER min a fazer"
 
       - name: Guardar o vídeo, as legendas e a descrição
-        if: steps.escolher.outputs.skip != 'true'
+        if: steps.escolher.outputs.skip != 'true' && steps.dia.outputs.so_conteudo != 'true'
         uses: actions/upload-artifact@v4
         with:
           name: longo-${{ env.SLUG }}
@@ -836,7 +932,7 @@ jobs:
       # e o próprio programa confirma com o YouTube que a marcação ficou lá, porque um
       # vídeo que fica privado para sempre não se queixa a ninguém.
       - name: Subir ao YouTube (privado, com estreia marcada)
-        if: steps.escolher.outputs.skip != 'true' && (github.event_name == 'schedule' || github.event.inputs.publicar == 'true')
+        if: steps.escolher.outputs.skip != 'true' && steps.dia.outputs.so_conteudo != 'true' && (github.event_name == 'schedule' || github.event.inputs.publicar == 'true')
         env:
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
           YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
@@ -866,7 +962,7 @@ jobs:
       # DOMINGO, não hoje: o vídeo é produzido no sábado de madrugada e estreia no
       # domingo às 19h — as redes vêm depois da estreia, nunca antes.
       - name: Guardar no caderno do vídeo longo e pôr na fila das redes
-        if: steps.escolher.outputs.skip != 'true' && (github.event_name == 'schedule' || github.event.inputs.publicar == 'true')
+        if: steps.escolher.outputs.skip != 'true' && steps.dia.outputs.so_conteudo != 'true' && (github.event_name == 'schedule' || github.event.inputs.publicar == 'true')
         run: |
           node src/scripts/youtube/outbox.js enqueue \
             --file-slug="$SLUG" --run-id="${{ github.run_id }}" \
@@ -898,7 +994,7 @@ jobs:
       # ⚠️ **NÃO OLHA PARA `capa-*.jpg`**, e é essa a diferença que fecha o defeito: um
       # ficheiro antigo na pasta responderia que sim. Olha para o recibo desta corrida.
       - name: 🔔 Houve capa nova neste vídeo?
-        if: steps.escolher.outputs.skip != 'true'
+        if: steps.escolher.outputs.skip != 'true' && steps.dia.outputs.so_conteudo != 'true'
         run: |
           if [ "${CAPA_DE_HOJE:-nao}" = "sim" ]; then
             echo "✅ este vídeo foi para o ar com uma capa desenhada hoje."

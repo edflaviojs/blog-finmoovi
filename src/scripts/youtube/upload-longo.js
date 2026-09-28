@@ -925,9 +925,31 @@ async function reservarSozinha() {
   log('   A partir de agora nenhuma outra corrida escolhe este tema nem este domingo.');
 }
 
+/**
+ * ⚠️ **PARA A ETAPA 2 (terça) ENCONTRAR O VÍDEO QUE A ETAPA 1 (segunda) PREPAROU** —
+ * 28/09/2026, split de crédito da Manus (ver `fotos-longo.js`).
+ *
+ * `pick-next-longo.js` NÃO serve para isto: ele salta de propósito qualquer tema com
+ * reserva válida (`reservaAindaVale`), porque para ELE uma reserva significa "já
+ * tomado, escolhe outro". Chamá-lo na terça devolveria um vídeo DIFERENTE do que a
+ * segunda escreveu — dois vídeos a disputar o mesmo domingo, a mesma falha de 15/08
+ * que a reserva foi inventada para impedir.
+ *
+ * A pergunta certa não é "qual é o próximo da fila" — é "o que já está reservado para
+ * o próximo domingo, sem vídeo ainda". `reservasDoDia` já responde a isso. Imprime o
+ * slug (e nada mais) se houver um; imprime vazio se não houver — a terça lê isto e,
+ * vazio, cai sozinha no caminho de fazer tudo, exatamente como faz hoje.
+ */
+async function qualReservadoSozinha() {
+  const estreia = proximoDomingo();
+  const [slug] = reservasDoDia(estreia, lerCaderno());
+  if (slug) console.log(slug);
+}
+
 async function principal() {
   if (args['conferir-estreia']) { await conferirEstreiaSozinha(); return; }
   if (args.reservar) { await reservarSozinha(); return; }
+  if (args['qual-reservado']) { await qualReservadoSozinha(); return; }
   log(`\n=== YouTube · vídeo longo "${SLUG}"${ENSAIO ? ' (ENSAIO — nada é enviado)' : ''} ===`);
 
   // ── o que tem de existir ──
