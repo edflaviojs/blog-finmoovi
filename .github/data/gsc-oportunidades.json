@@ -1,29 +1,29 @@
 {
-  "generatedAt": "2026-09-21T13:26:40.403Z",
+  "generatedAt": "2026-09-28T14:40:07.524Z",
   "siteUrl": "https://blog.finmoovi.com/",
   "period": {
-    "startDate": "2026-08-24",
-    "endDate": "2026-09-21"
+    "startDate": "2026-08-31",
+    "endDate": "2026-09-28"
   },
   "hasData": true,
   "totals": {
-    "queries": 556,
-    "pages": 127,
-    "impressions": 3045,
+    "queries": 498,
+    "pages": 117,
+    "impressions": 2940,
     "clicks": 0
   },
   "opportunities": {
     "strikingDistance": [
       {
         "query": "como reduzir gastos mensais",
-        "impressions": 1161,
+        "impressions": 1162,
         "clicks": 0,
         "position": 8,
         "ctr": 0,
         "pages": [
           {
             "page": "https://blog.finmoovi.com/posts/como-organizar-suas-despesas-mensais-com-facilidade-e/",
-            "impressions": 1161,
+            "impressions": 1162,
             "clicks": 0,
             "position": 8
           }
@@ -46,14 +46,29 @@
       },
       {
         "query": "is credit card worth it 2026",
-        "impressions": 18,
+        "impressions": 17,
         "clicks": 0,
         "position": 9.5,
         "ctr": 0,
         "pages": [
           {
             "page": "https://blog.finmoovi.com/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026/",
-            "impressions": 18,
+            "impressions": 17,
+            "clicks": 0,
+            "position": 9.5
+          }
+        ]
+      },
+      {
+        "query": "o que significa saldo pendente",
+        "impressions": 15,
+        "clicks": 0,
+        "position": 9.5,
+        "ctr": 0,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/posts/entenda-o-saldo-pendente-e-como-regularizar-suas-contas/",
+            "impressions": 15,
             "clicks": 0,
             "position": 9.5
           }
@@ -90,17 +105,32 @@
         ]
       },
       {
-        "query": "o que significa saldo pendente",
-        "impressions": 11,
+        "query": "o que é saldo pendente",
+        "impressions": 9,
         "clicks": 0,
-        "position": 9.3,
+        "position": 10.3,
         "ctr": 0,
         "pages": [
           {
             "page": "https://blog.finmoovi.com/posts/entenda-o-saldo-pendente-e-como-regularizar-suas-contas/",
-            "impressions": 11,
+            "impressions": 9,
             "clicks": 0,
-            "position": 9.3
+            "position": 10.3
+          }
+        ]
+      },
+      {
+        "query": "ted pix",
+        "impressions": 8,
+        "clicks": 0,
+        "position": 6.3,
+        "ctr": 0,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/en/posts/en-pix-vs-ted-which-one-is-worth-it-in-2026/",
+            "impressions": 8,
+            "clicks": 0,
+            "position": 6.3
           }
         ]
       },
@@ -135,21 +165,6 @@
         ]
       },
       {
-        "query": "ted pix",
-        "impressions": 6,
-        "clicks": 0,
-        "position": 5.2,
-        "ctr": 0,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/en/posts/en-pix-vs-ted-which-one-is-worth-it-in-2026/",
-            "impressions": 6,
-            "clicks": 0,
-            "position": 5.2
-          }
-        ]
-      },
-      {
         "query": "que son gastos recurrentes",
         "impressions": 5,
         "clicks": 0,
@@ -161,6 +176,27 @@
             "impressions": 5,
             "clicks": 0,
             "position": 7
+          }
+        ]
+      },
+      {
+        "query": "saldo em aberto",
+        "impressions": 5,
+        "clicks": 0,
+        "position": 8.2,
+        "ctr": 0,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/",
+            "impressions": 3,
+            "clicks": 0,
+            "position": 8.3
+          },
+          {
+            "page": "https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 8
           }
         ]
       },
@@ -180,17 +216,38 @@
         ]
       },
       {
-        "query": "o que é saldo pendente",
+        "query": "finmoovi technologia",
         "impressions": 4,
         "clicks": 0,
-        "position": 10.5,
+        "position": 11.3,
         "ctr": 0,
         "pages": [
           {
-            "page": "https://blog.finmoovi.com/posts/entenda-o-saldo-pendente-e-como-regularizar-suas-contas/",
+            "page": "https://blog.finmoovi.com/en/posts/en-how-to-cut-water-bills-effortlessly-in-2026/",
             "impressions": 4,
             "clicks": 0,
-            "position": 10.5
+            "position": 11.3
+          }
+        ]
+      },
+      {
+        "query": "o que significa valor em aberto",
+        "impressions": 4,
+        "clicks": 0,
+        "position": 8,
+        "ctr": 0,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 7.5
+          },
+          {
+            "page": "https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 8.5
           }
         ]
       },
@@ -206,21 +263,6 @@
             "impressions": 4,
             "clicks": 0,
             "position": 8
-          }
-        ]
-      },
-      {
-        "query": "cost of living july 2026",
-        "impressions": 3,
-        "clicks": 0,
-        "position": 7.3,
-        "ctr": 0,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/en/posts/en-finmoovi-cost-of-living-index-july-2026/",
-            "impressions": 3,
-            "clicks": 0,
-            "position": 7.3
           }
         ]
       },
@@ -243,7 +285,7 @@
     "lowCtr": [
       {
         "query": "como reduzir gastos mensais",
-        "impressions": 1161,
+        "impressions": 1162,
         "clicks": 0,
         "position": 8,
         "ctr": 0,
@@ -251,7 +293,7 @@
         "pages": [
           {
             "page": "https://blog.finmoovi.com/posts/como-organizar-suas-despesas-mensais-com-facilidade-e/",
-            "impressions": 1161,
+            "impressions": 1162,
             "clicks": 0,
             "position": 8
           }
@@ -259,15 +301,31 @@
       },
       {
         "query": "is credit card worth it 2026",
-        "impressions": 18,
+        "impressions": 17,
+        "clicks": 0,
+        "position": 9.5,
+        "ctr": 0,
+        "expectedCtr": 2.8,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026/",
+            "impressions": 17,
+            "clicks": 0,
+            "position": 9.5
+          }
+        ]
+      },
+      {
+        "query": "o que significa saldo pendente",
+        "impressions": 15,
         "clicks": 0,
         "position": 9.5,
         "ctr": 0,
         "expectedCtr": 2.5,
         "pages": [
           {
-            "page": "https://blog.finmoovi.com/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026/",
-            "impressions": 18,
+            "page": "https://blog.finmoovi.com/posts/entenda-o-saldo-pendente-e-como-regularizar-suas-contas/",
+            "impressions": 15,
             "clicks": 0,
             "position": 9.5
           }
@@ -290,18 +348,18 @@
         ]
       },
       {
-        "query": "o que significa saldo pendente",
-        "impressions": 11,
+        "query": "ted pix",
+        "impressions": 8,
         "clicks": 0,
-        "position": 9.3,
+        "position": 6.3,
         "ctr": 0,
-        "expectedCtr": 2.8,
+        "expectedCtr": 5,
         "pages": [
           {
-            "page": "https://blog.finmoovi.com/posts/entenda-o-saldo-pendente-e-como-regularizar-suas-contas/",
-            "impressions": 11,
+            "page": "https://blog.finmoovi.com/en/posts/en-pix-vs-ted-which-one-is-worth-it-in-2026/",
+            "impressions": 8,
             "clicks": 0,
-            "position": 9.3
+            "position": 6.3
           }
         ]
       },
@@ -325,15 +383,15 @@
         "query": "mobills alternative",
         "impressions": 7,
         "clicks": 0,
-        "position": 4,
+        "position": 4.6,
         "ctr": 0,
-        "expectedCtr": 8,
+        "expectedCtr": 6,
         "pages": [
           {
             "page": "https://blog.finmoovi.com/en/posts/en-5-alternatives-to-mobills-in-2026/",
             "impressions": 7,
             "clicks": 0,
-            "position": 4
+            "position": 4.6
           }
         ]
       },
@@ -350,22 +408,6 @@
             "impressions": 6,
             "clicks": 0,
             "position": 5.7
-          }
-        ]
-      },
-      {
-        "query": "ted pix",
-        "impressions": 6,
-        "clicks": 0,
-        "position": 5.2,
-        "ctr": 0,
-        "expectedCtr": 6,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/en/posts/en-pix-vs-ted-which-one-is-worth-it-in-2026/",
-            "impressions": 6,
-            "clicks": 0,
-            "position": 5.2
           }
         ]
       },
@@ -402,6 +444,28 @@
         ]
       },
       {
+        "query": "saldo em aberto",
+        "impressions": 5,
+        "clicks": 0,
+        "position": 8.2,
+        "ctr": 0,
+        "expectedCtr": 3.2,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/",
+            "impressions": 3,
+            "clicks": 0,
+            "position": 8.3
+          },
+          {
+            "page": "https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 8
+          }
+        ]
+      },
+      {
         "query": "%cdb 120% cdi liquidez diária setembro 2026",
         "impressions": 4,
         "clicks": 0,
@@ -414,6 +478,28 @@
             "impressions": 4,
             "clicks": 0,
             "position": 6.3
+          }
+        ]
+      },
+      {
+        "query": "o que significa valor em aberto",
+        "impressions": 4,
+        "clicks": 0,
+        "position": 8,
+        "ctr": 0,
+        "expectedCtr": 3.2,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 7.5
+          },
+          {
+            "page": "https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 8.5
           }
         ]
       },
@@ -466,22 +552,6 @@
         ]
       },
       {
-        "query": "cost of living july 2026",
-        "impressions": 3,
-        "clicks": 0,
-        "position": 7.3,
-        "ctr": 0,
-        "expectedCtr": 4,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/en/posts/en-finmoovi-cost-of-living-index-july-2026/",
-            "impressions": 3,
-            "clicks": 0,
-            "position": 7.3
-          }
-        ]
-      },
-      {
         "query": "que es la renta mensual",
         "impressions": 3,
         "clicks": 0,
@@ -508,6 +578,28 @@
           {
             "page": "https://blog.finmoovi.com/es/glossario/es-renta-mensual/",
             "impressions": 3,
+            "clicks": 0,
+            "position": 4
+          }
+        ]
+      },
+      {
+        "query": "saldo em aberto o que significa",
+        "impressions": 3,
+        "clicks": 0,
+        "position": 4,
+        "ctr": 0,
+        "expectedCtr": 8,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 4
+          },
+          {
+            "page": "https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo",
+            "impressions": 1,
             "clicks": 0,
             "position": 4
           }
@@ -558,68 +650,38 @@
         ]
       },
       {
-        "query": "debentures",
-        "impressions": 31,
+        "query": "parcelados",
+        "impressions": 34,
         "clicks": 0,
-        "position": 90.9,
-        "suggestedSlug": "debentures",
+        "position": 72.8,
+        "suggestedSlug": "parcelados",
         "pages": [
           {
-            "page": "https://blog.finmoovi.com/en/glossario/en-debentures",
-            "impressions": 31,
+            "page": "https://blog.finmoovi.com/glossario/parcelamento/",
+            "impressions": 34,
             "clicks": 0,
-            "position": 90.9
+            "position": 72.8
           }
         ]
       },
       {
         "query": "installments",
-        "impressions": 26,
+        "impressions": 29,
         "clicks": 0,
-        "position": 65.8,
+        "position": 66.4,
         "suggestedSlug": "installments",
         "pages": [
           {
             "page": "https://blog.finmoovi.com/en/glossario/en-installments/",
-            "impressions": 25,
+            "impressions": 28,
             "clicks": 0,
-            "position": 66.4
+            "position": 67
           },
           {
             "page": "https://blog.finmoovi.com/en/glossario/en-installments",
             "impressions": 1,
             "clicks": 0,
             "position": 50
-          }
-        ]
-      },
-      {
-        "query": "parcelados",
-        "impressions": 26,
-        "clicks": 0,
-        "position": 71.8,
-        "suggestedSlug": "parcelados",
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/glossario/parcelamento/",
-            "impressions": 26,
-            "clicks": 0,
-            "position": 71.8
-          }
-        ]
-      },
-      {
-        "query": "que es un mercado yahoo",
-        "impressions": 26,
-        "clicks": 0,
-        "position": 55.6,
-        "suggestedSlug": "que-es-un-mercado-yahoo",
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/es/glossario/es-yahoo-finance/",
-            "impressions": 26,
-            "clicks": 0,
-            "position": 55.6
           }
         ]
       },
@@ -645,6 +707,21 @@
         ]
       },
       {
+        "query": "hipoteca",
+        "impressions": 23,
+        "clicks": 0,
+        "position": 91.7,
+        "suggestedSlug": "hipoteca",
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/glossario/hipoteca/",
+            "impressions": 23,
+            "clicks": 0,
+            "position": 91.7
+          }
+        ]
+      },
+      {
         "query": "control de gastos",
         "impressions": 18,
         "clicks": 0,
@@ -660,47 +737,32 @@
         ]
       },
       {
-        "query": "hipoteca",
-        "impressions": 18,
-        "clicks": 0,
-        "position": 90,
-        "suggestedSlug": "hipoteca",
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/glossario/hipoteca/",
-            "impressions": 18,
-            "clicks": 0,
-            "position": 90
-          }
-        ]
-      },
-      {
         "query": "is credit card worth it 2026",
-        "impressions": 18,
+        "impressions": 17,
         "clicks": 0,
         "position": 9.5,
         "suggestedSlug": "is-credit-card-worth-it-2026",
         "pages": [
           {
             "page": "https://blog.finmoovi.com/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026/",
-            "impressions": 18,
+            "impressions": 17,
             "clicks": 0,
             "position": 9.5
           }
         ]
       },
       {
-        "query": "what is debenture",
-        "impressions": 18,
+        "query": "que es un mercado yahoo",
+        "impressions": 15,
         "clicks": 0,
-        "position": 88.7,
-        "suggestedSlug": "what-is-debenture",
+        "position": 55.7,
+        "suggestedSlug": "que-es-un-mercado-yahoo",
         "pages": [
           {
-            "page": "https://blog.finmoovi.com/en/glossario/en-debentures",
-            "impressions": 18,
+            "page": "https://blog.finmoovi.com/es/glossario/es-yahoo-finance/",
+            "impressions": 15,
             "clicks": 0,
-            "position": 88.7
+            "position": 55.7
           }
         ]
       },
@@ -735,6 +797,36 @@
         ]
       },
       {
+        "query": "what is mortgage",
+        "impressions": 14,
+        "clicks": 0,
+        "position": 37.8,
+        "suggestedSlug": "what-is-mortgage",
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/en/glossario/en-mortgage/",
+            "impressions": 14,
+            "clicks": 0,
+            "position": 37.8
+          }
+        ]
+      },
+      {
+        "query": "debentures",
+        "impressions": 13,
+        "clicks": 0,
+        "position": 89.6,
+        "suggestedSlug": "debentures",
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/en/glossario/en-debentures",
+            "impressions": 13,
+            "clicks": 0,
+            "position": 89.6
+          }
+        ]
+      },
+      {
         "query": "gasto recurrente",
         "impressions": 13,
         "clicks": 0,
@@ -765,6 +857,21 @@
         ]
       },
       {
+        "query": "tudo sobre investimentos",
+        "impressions": 13,
+        "clicks": 0,
+        "position": 74.4,
+        "suggestedSlug": "tudo-sobre-investimentos",
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/glossario/investimento/",
+            "impressions": 13,
+            "clicks": 0,
+            "position": 74.4
+          }
+        ]
+      },
+      {
         "query": "recurring payments financial planning",
         "impressions": 12,
         "clicks": 0,
@@ -776,36 +883,6 @@
             "impressions": 12,
             "clicks": 0,
             "position": 74.3
-          }
-        ]
-      },
-      {
-        "query": "tudo sobre investimentos",
-        "impressions": 12,
-        "clicks": 0,
-        "position": 73.4,
-        "suggestedSlug": "tudo-sobre-investimentos",
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/glossario/investimento/",
-            "impressions": 12,
-            "clicks": 0,
-            "position": 73.4
-          }
-        ]
-      },
-      {
-        "query": "what is mortgage",
-        "impressions": 12,
-        "clicks": 0,
-        "position": 37.2,
-        "suggestedSlug": "what-is-mortgage",
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/en/glossario/en-mortgage/",
-            "impressions": 12,
-            "clicks": 0,
-            "position": 37.2
           }
         ]
       },
@@ -826,76 +903,46 @@
       },
       {
         "query": "calculadora tabela price",
-        "impressions": 9,
+        "impressions": 8,
         "clicks": 0,
-        "position": 88,
+        "position": 88.8,
         "suggestedSlug": "calculadora-tabela-price",
         "pages": [
           {
             "page": "https://blog.finmoovi.com/ferramentas/calculadora-financiamento/",
-            "impressions": 9,
+            "impressions": 8,
             "clicks": 0,
-            "position": 88
+            "position": 88.8
           }
         ]
       },
       {
-        "query": "google finance alternative",
-        "impressions": 9,
+        "query": "mortgage",
+        "impressions": 8,
         "clicks": 0,
-        "position": 67.9,
-        "suggestedSlug": "google-finance-alternative",
+        "position": 77,
+        "suggestedSlug": "mortgage",
         "pages": [
           {
-            "page": "https://blog.finmoovi.com/en/posts/en-7-alternatives-to-google-sheets-for-finance-updated-guide/",
-            "impressions": 9,
+            "page": "https://blog.finmoovi.com/en/glossario/en-mortgage/",
+            "impressions": 8,
             "clicks": 0,
-            "position": 67.9
+            "position": 77
           }
         ]
       },
       {
-        "query": "calculadora sac price",
-        "impressions": 7,
+        "query": "what is debenture",
+        "impressions": 8,
         "clicks": 0,
-        "position": 61.1,
-        "suggestedSlug": "calculadora-sac-price",
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/ferramentas/calculadora-financiamento/",
-            "impressions": 7,
-            "clicks": 0,
-            "position": 61.1
-          }
-        ]
-      },
-      {
-        "query": "calculadora tabela sac",
-        "impressions": 7,
-        "clicks": 0,
-        "position": 81.9,
-        "suggestedSlug": "calculadora-tabela-sac",
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/ferramentas/calculadora-financiamento/",
-            "impressions": 7,
-            "clicks": 0,
-            "position": 81.9
-          }
-        ]
-      },
-      {
-        "query": "debenture",
-        "impressions": 7,
-        "clicks": 0,
-        "position": 96,
-        "suggestedSlug": "debenture",
+        "position": 88.5,
+        "suggestedSlug": "what-is-debenture",
         "pages": [
           {
             "page": "https://blog.finmoovi.com/en/glossario/en-debentures",
-            "impressions": 7,
+            "impressions": 8,
             "clicks": 0,
-            "position": 96
+            "position": 88.5
           }
         ]
       },
@@ -911,6 +958,51 @@
             "impressions": 7,
             "clicks": 0,
             "position": 69.3
+          }
+        ]
+      },
+      {
+        "query": "gastos recurrentes definicion",
+        "impressions": 7,
+        "clicks": 0,
+        "position": 7.9,
+        "suggestedSlug": "gastos-recurrentes-definicion",
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-gasto-recurrente/",
+            "impressions": 7,
+            "clicks": 0,
+            "position": 7.9
+          }
+        ]
+      },
+      {
+        "query": "mobills alternative",
+        "impressions": 7,
+        "clicks": 0,
+        "position": 4.6,
+        "suggestedSlug": "mobills-alternative",
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/en/posts/en-5-alternatives-to-mobills-in-2026/",
+            "impressions": 7,
+            "clicks": 0,
+            "position": 4.6
+          }
+        ]
+      },
+      {
+        "query": "calculadora sac price",
+        "impressions": 6,
+        "clicks": 0,
+        "position": 52.2,
+        "suggestedSlug": "calculadora-sac-price",
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/ferramentas/calculadora-financiamento/",
+            "impressions": 6,
+            "clicks": 0,
+            "position": 52.2
           }
         ]
       }
@@ -971,20 +1063,38 @@
         ]
       },
       {
-        "query": "fundo fixo",
+        "query": "saldo em aberto",
+        "totalImpressions": 5,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/",
+            "impressions": 3,
+            "clicks": 0,
+            "position": 8.3
+          },
+          {
+            "page": "https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 8
+          }
+        ]
+      },
+      {
+        "query": "o que significa valor em aberto",
         "totalImpressions": 4,
         "pages": [
           {
-            "page": "https://blog.finmoovi.com/glossario/gasto-fixo-de-uma-empresa/",
+            "page": "https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo",
             "impressions": 2,
             "clicks": 0,
-            "position": 72.5
+            "position": 7.5
           },
           {
-            "page": "https://blog.finmoovi.com/glossario/gasto-fixo/",
+            "page": "https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/",
             "impressions": 2,
             "clicks": 0,
-            "position": 63
+            "position": 8.5
           }
         ]
       }

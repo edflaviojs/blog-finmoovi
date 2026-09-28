@@ -1,7 +1,7 @@
 # 🗂️ Fila de Keywords (Fase 3)
 
-**Atualizado em:** 2026-09-21T13:26:41.119Z
-**Totais:** 55 pendente(s) · 102 usada(s) · 59 pulada(s)
+**Atualizado em:** 2026-09-28T14:40:08.186Z
+**Totais:** 54 pendente(s) · 106 usada(s) · 59 pulada(s)
 
 ## ⏳ Pendentes por fonte
 
@@ -52,12 +52,8 @@
 - o que levar para comer na praia para economizar
 - por que é importante economizar energia elétrica
 
-### Lacunas do GSC (prioridade 2) — 11
+### Lacunas do GSC (prioridade 2) — 10
 
-- recurring payments financial planning
-- gastos recurrentes
-- parcelados
-- google finance alternative
 - gasto recurrente
 - calculadora tabela price
 - calculadora sac price
@@ -65,6 +61,9 @@
 - tudo sobre investimentos
 - calculadora tabela sac
 - debenture
+- mortgage
+- gastos recurrentes definicion
+- mobills alternative
 
 ### Autocomplete (prioridade 3) — 0
 
@@ -74,16 +73,16 @@ _Nenhuma._
 
 | Keyword | Usada por | Em |
 |---|---|---|
+| google finance alternative | gerar-dicas-financeiras | 2026-09-27 |
+| parcelados | gerar-dicas-financeiras | 2026-09-25 |
+| gastos recurrentes | gerar-dicas-financeiras | 2026-09-24 |
+| recurring payments financial planning | gerar-dicas-financeiras | 2026-09-21 |
 | recurring fee definition | gerar-dicas-financeiras | 2026-09-20 |
 | installments | gerar-dicas-financeiras | 2026-09-19 |
 | expense control | gerar-dicas-financeiras | 2026-09-18 |
 | outstanding balance definition | gerar-dicas-financeiras | 2026-09-16 |
 | control de gasto | gerar-post-inteligente | 2026-09-15 |
 | economizar agua | gerar-dicas-financeiras | 2026-09-15 |
-| how do freelancers organize finances | gerar-post-orcamento | 2026-09-14 |
-| o que é fatura | gerar-dicas-financeiras | 2026-09-14 |
-| is credit card worth it 2026 | gerar-dicas-financeiras | 2026-09-13 |
-| ejemplo de flujo de caja en excel | gerar-dicas-financeiras | 2026-09-12 |
 
 ## ⏭️ Puladas (já cobertas)
 

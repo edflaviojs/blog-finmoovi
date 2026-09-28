@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T15:24:24.900Z",
+  "updatedAt": "2026-09-28T14:40:08.186Z",
   "sourceCursor": 1,
   "entries": [
     {
@@ -2147,6 +2147,30 @@
       "source": "gsc-gap",
       "status": "pending",
       "addedAt": "2026-09-21T13:26:40.478Z"
+    },
+    {
+      "keyword": "mortgage",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-09-28T14:40:07.601Z"
+    },
+    {
+      "keyword": "gastos recurrentes definicion",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-09-28T14:40:07.601Z"
+    },
+    {
+      "keyword": "mobills alternative",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-09-28T14:40:07.602Z"
     }
   ]
 }
