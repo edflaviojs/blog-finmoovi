@@ -2196,8 +2196,98 @@
           "titulo": "O convite para a sua liberdade financeira"
         }
       ]
+    },
+    {
+      "videoId": "VscrdjlqPpE",
+      "title": "FAÇA ISSO TODA VEZ QUE SEU PAGAMENTO CAIR NA CONTA",
+      "channel": "FAVELADO INVESTIDOR",
+      "duracaoSeg": 1044,
+      "idioma": "pt",
+      "viewsPerDay": 4754,
+      "vistoEm": "2026-09-28",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "Como organizar o salário para guardar dinheiro"
+        },
+        {
+          "seg": 65,
+          "titulo": "Quem é Murilo Duarte, o Favelado Investidor"
+        },
+        {
+          "seg": 79,
+          "titulo": "Diferença entre ativo e passivo"
+        },
+        {
+          "seg": 259,
+          "titulo": "Como dividir o salário em fatias antes de gastar"
+        },
+        {
+          "seg": 326,
+          "titulo": "Como guardar dinheiro para liberdade financeira"
+        },
+        {
+          "seg": 377,
+          "titulo": "Como montar reserva de emergência"
+        },
+        {
+          "seg": 436,
+          "titulo": "Como organizar os gastos essenciais"
+        },
+        {
+          "seg": 498,
+          "titulo": "Quanto gastar com lazer no orçamento"
+        },
+        {
+          "seg": 555,
+          "titulo": "Como investir em educação financeira"
+        },
+        {
+          "seg": 709,
+          "titulo": "Por que a maioria das pessoas não consegue guardar dinheiro"
+        },
+        {
+          "seg": 789,
+          "titulo": "Juros compostos na prática: exemplo real"
+        },
+        {
+          "seg": 966,
+          "titulo": "Resumo: como guardar dinheiro todo mês"
+        }
+      ]
+    },
+    {
+      "videoId": "DX1le8N-rP0",
+      "title": "Carteira de investimentos: comece hoje com pouco dinheiro!",
+      "channel": "Alberto Pompeu ",
+      "duracaoSeg": 864,
+      "idioma": "pt",
+      "viewsPerDay": 2333,
+      "vistoEm": "2026-09-28",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "O custo real para começar a investir"
+        },
+        {
+          "seg": 150,
+          "titulo": "Quebrando o mito da falta de dinheiro"
+        },
+        {
+          "seg": 239,
+          "titulo": "Os quatro pilares de uma carteira equilibrada"
+        },
+        {
+          "seg": 351,
+          "titulo": "O poder dos juros compostos na prática"
+        },
+        {
+          "seg": 652,
+          "titulo": "Montando a carteira na prática pelo celular"
+        }
+      ]
     }
   ],
-  "atualizadoEm": "2026-09-27T09:39:57.270Z",
-  "total": 40
+  "atualizadoEm": "2026-09-28T10:19:08.301Z",
+  "total": 42
 }
