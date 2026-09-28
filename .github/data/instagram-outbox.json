@@ -10,5 +10,11 @@
     "runId": "36318307646",
     "producedAt": "2026-09-27T12:24:04.534Z",
     "artifact": "short-lista-de-compras-supermercado"
+  },
+  {
+    "fileSlug": "valor-presente",
+    "runId": "36434321111",
+    "producedAt": "2026-09-28T14:22:10.750Z",
+    "artifact": "short-valor-presente"
   }
 ]
