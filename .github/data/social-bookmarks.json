@@ -2418,5 +2418,45 @@
         "status": 200
       }
     }
+  },
+  {
+    "slug": "cotacoes-semana-4-setembro-2026",
+    "title": "Resumo Semanal: Dólar a R$ 5.19 — Semana 4 de setembro",
+    "url": "https://blog.finmoovi.com/posts/cotacoes-semana-4-setembro-2026",
+    "submittedAt": "2026-09-28T20:56:02.886Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1869245869
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "descubra-uma-alternativa-ao-google-finance-para-2026",
+    "title": "Descubra uma alternativa ao Google Finance para 2026",
+    "url": "https://blog.finmoovi.com/posts/descubra-uma-alternativa-ao-google-finance-para-2026",
+    "submittedAt": "2026-09-28T20:56:03.698Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1869245872
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
   }
 ]
