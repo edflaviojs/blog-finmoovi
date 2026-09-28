@@ -362,11 +362,28 @@ export async function generateText(prompt, options = {}) {
             // (o `gsc-otimizar-ctr.js`, com 'low'). Sem esta omissão, **todas
             // as outras chamadas** ao nemotron raciocinariam ao máximo.
             // Quem pedir um esforço continua a mandar no que pediu.
+            //
+            // 🔴 O GPT-OSS (Cerebras e Groq) LEVA 'low' POR OMISSÃO — MEDIDO
+            // 28/09/2026, com o `diagnostico-provedores-texto.yml` ao vivo,
+            // no mesmo dia em que a Cerebras morreu de vez (HTTP 402 em 100%
+            // das chamadas) e o Groq passou a levar toda a carga sozinho.
+            // Sem reasoning_effort, um pedido de 400 fichas devolvia "resposta
+            // vazia" — o modelo gastava as 400 inteiras "pensando" (398 fichas
+            // de raciocínio) e não sobrava nada para escrever. Era exactamente
+            // o silêncio que o Short de 16s vinha sofrendo há 3 dias.
+            // Com 'low' e ainda 400 fichas, CONTINUAVA vazio (o corte sozinho
+            // não bastava); só com 'low' + mais espaço de resposta (1000+
+            // fichas) é que o texto saiu — e o `roteiro-loop.js` já pede 1200,
+            // então esta omissão passa a bastar para ele sem tocar mais nada.
+            // Por isso aqui não é só "ligar o corte": é o PAR (corte + espaço)
+            // que sana o silêncio, e o espaço cada chamador já decide sozinho
+            // via `maxTokens`.
             ...(() => {
               const entende = /gpt-oss|nemotron/i.test(useModel);
               if (!entende) return {};
               const esforco = esforcoRaciocinio
-                || (/nemotron/i.test(useModel) ? 'none' : null);
+                || (/nemotron/i.test(useModel) ? 'none'
+                  : /gpt-oss/i.test(useModel) ? 'low' : null);
               return esforco ? { reasoning_effort: esforco } : {};
             })(),
           };
