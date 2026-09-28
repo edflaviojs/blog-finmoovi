@@ -17,7 +17,7 @@ seo:
   keywords: ["cotação dólar hoje", "cotação euro", "resumo mercado financeiro", "selic"]
 ---
 
-| Moeda | Cotação |
+| [Moeda](/glossario/moeda) | Cotação |
 | --- | --- |
 | Dólar (USD/BRL) | R$ 5.19 |
 | Euro (EUR/BRL) | R$ 5.91 |
