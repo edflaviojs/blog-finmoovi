@@ -492,7 +492,7 @@ export async function gerarLoop(situacao, gancho, { tentativas = 4 } = {}) {
       ? `\n\n⚠️ A versão anterior foi REPROVADA. Corrija exactamente isto e devolva o JSON outra vez:\n${[...new Set(exigencias)].join('\n')}`
       : '';
 
-    const bruto = await generateText(base + corretivo, { maxTokens: 1200, temperature: 0.8, pago: 'escritor' });
+    const bruto = await generateText(base + corretivo, { maxTokens: 1200, temperature: 0.8, pago: 'escritor', servico: 'short16' });
 
     let n;
     try {

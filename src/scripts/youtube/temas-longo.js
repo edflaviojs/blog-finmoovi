@@ -389,7 +389,7 @@ export async function proporTemas({ quantos = QUANTOS_POR_CORRIDA, ensaio = fals
          */
         cru = await generateText(
           montarPedido(v, listaGlossario, caudasUsadas) + corretivo,
-          { maxTokens: 900, temperature: 0.7, pago: 'escritor' },
+          { maxTokens: 900, temperature: 0.7, pago: 'escritor', servico: 'longo' },
         );
       } catch (err) {
         log(`   ⚠️ a IA não respondeu (${err.message.split('\n')[0]})`);

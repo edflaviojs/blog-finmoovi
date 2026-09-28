@@ -521,7 +521,7 @@ export async function gerarCoreografia(t, narrativa, { tentativas = 4 } = {}) {
     // baixo (ver `provedorPago` em apis/kie-ai.js). É a terceira e última chamada do
     // vídeo: ~0,4 cêntimos. Ela decide ONDE cada imagem entra e em que palavra — o
     // texto pode estar perfeito e o vídeo continuar sem sentido se isto falhar.
-    const bruto = await generateText(corretivo ? `${base}\n\n${corretivo}` : base, { maxTokens: 4000, temperature: 0.6, pago: 'escritor' });
+    const bruto = await generateText(corretivo ? `${base}\n\n${corretivo}` : base, { maxTokens: 4000, temperature: 0.6, pago: 'escritor', servico: 'short50' });
 
     let plano;
     try {

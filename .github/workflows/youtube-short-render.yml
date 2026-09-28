@@ -215,6 +215,7 @@ jobs:
           # sem ela o escritor/leitor caem nos gratuitos e o texto sai pior que o
           # padrão aprovado. É opt-in só aqui — os 27 robôs do blog continuam grátis.
           KIE_AI_KEY: ${{ secrets.KIE_AI_KEY }}
+          KIE_AI_KEY_SHORT50: ${{ secrets.KIE_AI_KEY_SHORT50 }}
         run: |
           TENTADOS=""
           VENCEDOR=""

@@ -222,6 +222,7 @@ jobs:
         id: escolher
         env:
           KIE_AI_KEY: ${{ secrets.KIE_AI_KEY }}
+          KIE_AI_KEY_LONGO: ${{ secrets.KIE_AI_KEY_LONGO }}
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
@@ -332,6 +333,7 @@ jobs:
         if: steps.escolher.outputs.skip != 'true'
         env:
           KIE_AI_KEY: ${{ secrets.KIE_AI_KEY }}
+          KIE_AI_KEY_LONGO: ${{ secrets.KIE_AI_KEY_LONGO }}
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
@@ -534,6 +536,7 @@ jobs:
         if: steps.escolher.outputs.skip != 'true'
         env:
           KIE_AI_KEY: ${{ secrets.KIE_AI_KEY }}
+          KIE_AI_KEY_LONGO: ${{ secrets.KIE_AI_KEY_LONGO }}
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
@@ -702,6 +705,7 @@ jobs:
         if: steps.escolher.outputs.skip != 'true'
         env:
           KIE_AI_KEY: ${{ secrets.KIE_AI_KEY }}
+          KIE_AI_KEY_LONGO: ${{ secrets.KIE_AI_KEY_LONGO }}
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
@@ -718,6 +722,7 @@ jobs:
         if: steps.escolher.outputs.skip != 'true'
         env:
           KIE_AI_KEY: ${{ secrets.KIE_AI_KEY }}
+          KIE_AI_KEY_LONGO: ${{ secrets.KIE_AI_KEY_LONGO }}
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
@@ -840,6 +845,7 @@ jobs:
           # pré-visualização em disco. Sem estas chaves o vídeo subia com o texto de
           # reserva todas as semanas, e a corrida acabava a verde. Ver o aviso do passo 4.
           KIE_AI_KEY: ${{ secrets.KIE_AI_KEY }}
+          KIE_AI_KEY_LONGO: ${{ secrets.KIE_AI_KEY_LONGO }}
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}

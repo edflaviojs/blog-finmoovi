@@ -383,7 +383,7 @@ ${capitulos}
   for (let tentativa = 1; tentativa <= TENTATIVAS_LLM; tentativa++) {
     try {
       const out = await generateText(prompt, {
-        maxTokens: ORCAMENTO_RESPOSTA, temperature: 0.6, ...(pago ? { pago: 'leitor' } : {}),
+        maxTokens: ORCAMENTO_RESPOSTA, temperature: 0.6, ...(pago ? { pago: 'leitor', servico: 'longo' } : {}),
       });
       const apanhar = (tag, seguinte) => {
         const re = new RegExp(`---${tag}---\\s*([\\s\\S]*?)(?=---(?:${seguinte})---|$)`);

@@ -160,7 +160,7 @@ const PAGO = Boolean(args.pago);
 async function traduzir(texto, lingua) {
   const pedido = `Traduza para ${ETIQUETA[lingua]} o trecho de narração abaixo. É a legenda de um vídeo de finanças pessoais de cerca de seis minutos, narrado na primeira pessoa, em tom coloquial e direto — não é um anúncio nem um texto formal. Mantenha o tom e o comprimento aproximado. Responda APENAS com a tradução, sem aspas nem comentários.\n\n${texto}`;
   const saida = await generateText(pedido, {
-    maxTokens: 500, temperature: 0.3, ...(PAGO ? { pago: 'leitor' } : {}),
+    maxTokens: 500, temperature: 0.3, ...(PAGO ? { pago: 'leitor', servico: 'longo' } : {}),
   });
   return String(saida || '').trim().replace(/^["']|["']$/g, '');
 }

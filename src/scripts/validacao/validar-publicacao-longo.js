@@ -2043,7 +2043,7 @@ console.log('\n🔤 O LEITOR DE TEXTO — e a ordem que poupa créditos\n');
   // ── as legendas pagas são opt-in ──
   const srt = readFileSync(join(RAIZ, 'src', 'scripts', 'youtube', 'srt-longo.js'), 'utf-8');
   ok('a tradução paga é OPT-IN — sem `--pago`, nada muda na nuvem',
-    /const PAGO = Boolean\(args\.pago\)/.test(srt) && /PAGO \? \{ pago: 'leitor' \} : \{\}/.test(srt));
+    /const PAGO = Boolean\(args\.pago\)/.test(srt) && /PAGO \? \{ pago: 'leitor', servico: 'longo' \} : \{\}/.test(srt));
   ok('e a descrição tem a mesma opção, pela mesma razão',
     /pago = false/.test(readFileSync(join(RAIZ, 'src', 'scripts', 'youtube', 'descricao-longo.js'), 'utf-8')));
 

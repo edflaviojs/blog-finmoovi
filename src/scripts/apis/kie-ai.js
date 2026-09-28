@@ -153,6 +153,16 @@ function getTextProviders() {
  *
  * As duas famílias falam LÍNGUAS diferentes (o kie revende cada uma ao dono original),
  * daí o campo `formato`. A chave é a mesma para as duas.
+ *
+ * 🔴 UMA CHAVE POR PRODUTO — 28/09/2026, pedido do dono depois da conta pessoal
+ * ficar negativa em silêncio (ver `saldo-kie.js`). Antes, os 3 vídeos (Short 16s,
+ * Short 50s, vídeo longo) bebiam da MESMA `KIE_AI_KEY` — um produto sozinho podia
+ * secar o crédito dos outros dois sem ninguém saber QUAL foi. Agora cada `servico`
+ * tem a sua própria chave (`KIE_AI_KEY_SHORT16`, `KIE_AI_KEY_SHORT50`,
+ * `KIE_AI_KEY_LONGO`), com teto próprio no painel do kie.ai — um produto pirado só
+ * gasta até o teto DELE. Quem não passar `servico` (ou cuja chave específica não
+ * estiver configurada) cai na `KIE_AI_KEY` velha, de propósito: nada quebra
+ * enquanto as 3 novas não existirem em todos os workflows.
  */
 /**
  * ♦ O LEITOR GANHOU SUBSTITUTOS (03/08/2026, ordem do dono) — e a causa foi vivida
@@ -172,8 +182,9 @@ function getTextProviders() {
  * O ESCRITOR continua um só (gpt-5-2, decisão medida em §25.6 — o Sonnet estourava
  * o tamanho 5 vezes em 5); a rede gratuita continua por baixo, como sempre.
  */
-function provedoresPagos(papel) {
-  const chave = process.env.KIE_AI_KEY;
+function provedoresPagos(papel, servico) {
+  const chaveDoServico = servico && process.env[`KIE_AI_KEY_${String(servico).toUpperCase()}`];
+  const chave = chaveDoServico || process.env.KIE_AI_KEY;
   if (!chave || !papel) return [];
   if (papel === 'leitor') {
     return [
@@ -243,6 +254,11 @@ export async function generateText(prompt, options = {}) {
     model,             // override opcional — aplicado apenas ao provedor primário
     retries = 2,       // tentativas por provedor em caso de 429
     pago = null,       // 'escritor' | 'leitor' — opt-in dos modelos pagos (ver provedoresPagos)
+    // 'short16' | 'short50' | 'longo' — qual produto está a pagar, para escolher
+    // a chave DELE (KIE_AI_KEY_<SERVICO>) em vez da KIE_AI_KEY partilhada. Sem
+    // efeito se `pago` não estiver definido. Ver a nota de 28/09 em cima de
+    // `provedoresPagos`.
+    servico = null,
     // ── 'low' | 'medium' | 'high' — quanto o modelo pensa ANTES de responder ──
     //
     // OPT-IN, e a razão é não estragar os outros robôs. A Cerebras e o Groq
@@ -261,7 +277,7 @@ export async function generateText(prompt, options = {}) {
   const providers = getTextProviders();
   // Os pagos entram à FRENTE (na ordem da fila), e os gratuitos ficam como rede
   // por baixo: se todos falharem, o vídeo sai à mesma com um gratuito.
-  const pagos = provedoresPagos(pago);
+  const pagos = provedoresPagos(pago, servico);
   if (pagos.length) providers.unshift(...pagos);
   const oPago = pagos.length > 0;
   if (providers.length === 0) {

@@ -214,7 +214,7 @@ export async function polirBloco(texto, contexto, validar, { tentativas = 2, lim
 
     let bruto;
     try {
-      bruto = await generateText(prompt, { maxTokens: 1500, temperature: 0.7, pago: 'leitor' });
+      bruto = await generateText(prompt, { maxTokens: 1500, temperature: 0.7, pago: 'leitor', servico: 'longo' });
     } catch (err) {
       ultimoMotivo = `a chamada ao polidor falhou (${err.message})`;
       continue;
@@ -273,7 +273,7 @@ export async function polirCapitulo(capitulo, contexto, validar, { tentativas = 
       // `pago: 'leitor'` = a fila claude-sonnet-5 → gemini-3-pro → gpt-5-2. Quem relê
       // não deve ser da família de quem escreveu (o escritor é o gpt-5-2), e por isso
       // o Gemini vem antes dele. Ver `provedoresPagos` em apis/kie-ai.js.
-      bruto = await generateText(prompt, { maxTokens: 2000, temperature: 0.7, pago: 'leitor' });
+      bruto = await generateText(prompt, { maxTokens: 2000, temperature: 0.7, pago: 'leitor', servico: 'longo' });
     } catch (err) {
       ultimoMotivo = `a chamada ao polidor falhou (${err.message})`;
       continue;

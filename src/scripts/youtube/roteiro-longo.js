@@ -1077,7 +1077,7 @@ async function gerarBloco({ nome, prompt, validar, tema, tentativas = 5, campos 
     // `pago: 'escritor'` = gpt-5-2 pelo kie.ai, com os gratuitos como rede por baixo.
     // O modelo BARATO escreve os blocos; o caro só relê (§26.3 L3 — com texto dez
     // vezes maior, isso deixa de ser elegância e passa a ser orçamento).
-    const bruto = await generateText(texto, { maxTokens: 3000, temperature: 0.75, pago: 'escritor' });
+    const bruto = await generateText(texto, { maxTokens: 3000, temperature: 0.75, pago: 'escritor', servico: 'longo' });
 
     let obj;
     try {
@@ -1240,7 +1240,7 @@ export async function gerarMapa(t, { proibidas = [], tentativas = 3, cenarios = 
   for (let i = 1; i <= tentativas; i++) {
     if (i > 1) await dormir(8000);
     const bruto = await generateText(corretivo ? `${prompt}\n\n${corretivo}` : prompt, {
-      maxTokens: 2000, temperature: 0.7, pago: 'escritor',
+      maxTokens: 2000, temperature: 0.7, pago: 'escritor', servico: 'longo',
     });
     let mapa;
     try {
@@ -1797,7 +1797,7 @@ async function costurar(roteiro, temaTexto, conferir = () => ({ ok: true, erros:
 
   let resposta;
   try {
-    const bruto = await generateText(buildPromptCosturas(juncoes), { maxTokens: 1500, temperature: 0.6, pago: 'leitor' });
+    const bruto = await generateText(buildPromptCosturas(juncoes), { maxTokens: 1500, temperature: 0.6, pago: 'leitor', servico: 'longo' });
     resposta = extrairJson(bruto);
   } catch (err) {
     console.log(`   ⚠️ as costuras não correram (${err.message}) — o roteiro segue como está`);

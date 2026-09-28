@@ -1493,7 +1493,7 @@ export async function gerarNarrativa(t, { tentativas = 4, proibidas = [], frases
     const prompt = corretivo ? `${base}\n\n${corretivo}` : base;
     // `pago: 'escritor'` = gpt-5-2 pelo kie.ai, com os três gratuitos como rede por
     // baixo. Ver `provedorPago` em apis/kie-ai.js para porque é este e não o Sonnet.
-    const bruto = await generateText(prompt, { maxTokens: 4000, temperature: 0.7, pago: 'escritor' });
+    const bruto = await generateText(prompt, { maxTokens: 4000, temperature: 0.7, pago: 'escritor', servico: 'short50' });
     let n;
     try {
       n = extrairJson(bruto);

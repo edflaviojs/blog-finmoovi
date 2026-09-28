@@ -196,7 +196,7 @@ async function principal() {
      * noutra chamada. Junto, ele vê a lista inteira e distribui.
      * `pago: 'leitor'` porque é exactamente isso que ele é.
      */
-    const bruto = await generateText(pedido, { maxTokens: 2500, temperature: 0.3, pago: 'leitor' });
+    const bruto = await generateText(pedido, { maxTokens: 2500, temperature: 0.3, pago: 'leitor', servico: 'longo' });
     escolhas = lerResposta(bruto);
   } catch (err) {
     log(`⚠️ o leitor não respondeu (${err.message}) — o vídeo sai com as pistas escritas à mão.`);

@@ -88,6 +88,7 @@ jobs:
         if: steps.turno.outputs.saltar != 'true'
         env:
           KIE_AI_KEY: ${{ secrets.KIE_AI_KEY }}
+          KIE_AI_KEY_SHORT16: ${{ secrets.KIE_AI_KEY_SHORT16 }}
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
@@ -323,6 +324,7 @@ jobs:
         if: steps.turno.outputs.saltar != 'true' && steps.roteiro.outputs.saltar != 'true'
         env:
           KIE_AI_KEY: ${{ secrets.KIE_AI_KEY }}
+          KIE_AI_KEY_SHORT16: ${{ secrets.KIE_AI_KEY_SHORT16 }}
         run: |
           node src/scripts/youtube/qa-visual.js \
             --slug="$FILE_SLUG" \
