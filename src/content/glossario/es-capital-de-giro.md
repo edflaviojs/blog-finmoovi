@@ -4,6 +4,7 @@ definition: "Qué es capital de giro y cómo aparece en tu día a día — expli
 title: "capital de giro - Glosario Financiero"
 description: "Qué es capital de giro y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/capital-de-giro.webp"
+imageAlt: "Monedas apiladas, reloj, balanza dorada y planta en frasco sobre fondo oscuro."
 category: "basico"
 tags: ["capital de giro", "glosario", "finanzas"]
 author: "FinMoovi"

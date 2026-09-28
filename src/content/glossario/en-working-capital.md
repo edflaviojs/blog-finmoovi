@@ -4,6 +4,7 @@ definition: "What working capital is and how it shows up in your everyday money 
 title: "working capital - Financial Glossary"
 description: "What working capital is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/capital-de-giro.webp"
+imageAlt: "Gold coins, scales, clock, and plant in a glass jar on a dark background."
 category: "basico"
 tags: ["working capital", "glossary", "finance"]
 author: "FinMoovi"

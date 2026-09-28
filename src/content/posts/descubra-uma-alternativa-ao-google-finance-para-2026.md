@@ -3,6 +3,7 @@ title: "Descubra uma alternativa ao Google Finance para 2026"
 description: "Encontre uma ferramenta prática e visual para acompanhar investimentos e despesas, substituindo o Google Finance com recursos que facilitam o dia a dia."
 tickerHeadline: "A solução que falta ao Google Finance"
 image: "/images/posts/descubra-uma-alternativa-ao-google-finance-para-2026.webp"
+imageAlt: "Notebook e monitores com telas coloridas e uma caneca sobre mesa de madeira."
 category: "dicas"
 locale: "pt"
 tags: ["google finance alternative","finanças pessoais","economia","dinheiro"]
