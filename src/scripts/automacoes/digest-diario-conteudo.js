@@ -20,6 +20,7 @@ import { config } from '../../../site.config.ts';
 import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync, unlinkSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
+import { proximoDomingo, ocupacaoNoCaderno, emPortugues } from '../youtube/upload-longo.js';
 
 const DRY_RUN = process.argv.includes('--dry-run');
 const RESEND_API_KEY = process.env.RESEND_API_KEY;
@@ -515,6 +516,53 @@ function htmlSaldoKie(rel) {
 }
 
 /**
+ * 🎬 O GUARDA DO VÍDEO LONGO — 28/09/2026, pedido do dono no dia em que a
+ * produção passou a rodar em DUAS etapas, em DOIS DIAS (segunda escreve o
+ * guião e as fotos; terça faz a capa e o vídeo — ver o cabeçalho de
+ * `youtube-longo.yml`).
+ *
+ * ⚠️ **DIVIDIR EM DOIS DIAS ABRIU UM DIA A MAIS ONDE A COISA PODE FICAR PELA
+ * METADE EM SILÊNCIO.** É a mesma família de defeito que já custou seis
+ * "domingos sem vídeo" documentados nesta casa (05, 09, 15, 22, 24 e 29/08) —
+ * cada um só descoberto abrindo o Studio. Este guarda lê o mesmo caderno que
+ * o robô usa (`reservasDoDia`/`ocupacaoNoCaderno`), pergunta pelo PRÓXIMO
+ * domingo, e muda de cor sozinho:
+ *   🟢 já tem vídeo agendado — nada a fazer.
+ *   ⚪ ainda dentro da janela normal (hoje é domingo, segunda ou terça) — cedo
+ *      para alarmar, a Etapa 1 ou a Etapa 2 ainda podem correr hoje.
+ *   🟡 passou terça, há uma RESERVA sem vídeo — a Etapa 1 correu, a Etapa 2
+ *      não terminou. Vale a pena olhar antes de virar vermelho.
+ *   🔴 passou terça e não há NADA — nem reserva, nem vídeo. É o alarme que
+ *      substitui "abrir o Studio para descobrir".
+ */
+function htmlVideoLongo() {
+  let estreia, ocupacao;
+  try {
+    estreia = proximoDomingo();
+    ocupacao = ocupacaoNoCaderno(estreia);
+  } catch (err) {
+    return `<p style="color:#8b949e;font-size:12px;margin:10px 0 0;">🎬 Vídeo longo: não foi possível ler o caderno (${esc(err.message)}).</p>`;
+  }
+  const comVideo = ocupacao.find((o) => o.temVideo);
+  const dataFmt = emPortugues(estreia);
+  if (comVideo) {
+    return `<p style="color:#8b949e;font-size:13px;margin:10px 0 0;">🎬 Vídeo longo: ✅ ${esc(dataFmt)} já tem vídeo agendado ("${esc(comVideo.slug)}").</p>`;
+  }
+  // 0=domingo … 6=sábado. A janela normal das duas etapas é domingo→segunda→terça.
+  const diaDaSemana = new Date().getUTCDay();
+  const dentroDaJanela = diaDaSemana <= 2; // domingo, segunda ou terça
+  const reservado = ocupacao[0];
+  if (dentroDaJanela) {
+    const nota = reservado ? ` (já reservado: "${esc(reservado.slug)}")` : '';
+    return `<p style="color:#8b949e;font-size:12px;margin:10px 0 0;">🎬 Vídeo longo: ainda dentro do prazo normal (Etapa 1 segunda, Etapa 2 terça) para ${esc(dataFmt)}${nota}.</p>`;
+  }
+  if (reservado) {
+    return `<p style="color:#d29922;font-size:13px;margin:10px 0 0;">🎬 Vídeo longo: ⚠️ "${esc(reservado.slug)}" está reservado para ${esc(dataFmt)} mas ainda SEM vídeo — a Etapa 1 correu, a Etapa 2 (capa + render + subida) não terminou. Vale a pena olhar as corridas de terça.</p>`;
+  }
+  return `<p style="color:#f85149;font-size:13px;margin:10px 0 0;">🎬 Vídeo longo: 🔴 NADA preparado ainda para ${esc(dataFmt)} — nem guião reservado, nem vídeo. As duas etapas (segunda e terça) já deviam ter corrido.</p>`;
+}
+
+/**
  * 🖼️ A LIMPEZA DAS CAPAS — pedido do dono em 19/08/2026, textual: *"quero que me
  * envie no email diario a progressao... tipo assim capas refeitas 10 falta 120,
  * portanto estamos em 10/120"*.
@@ -860,6 +908,16 @@ async function main() {
   } catch (err) {
     // Ficheiro ainda não existe (primeiros dias) — não é falha, é ausência.
     sections.push(htmlGastos(null, new Date().toISOString().split('T')[0]));
+  }
+
+  // 1-ter-2. O guarda do vídeo longo (perto do topo: é o que substitui "abrir
+  // o Studio pra descobrir que o domingo ficou sem vídeo" — ver o cabeçalho
+  // de `htmlVideoLongo`). Nunca lança: uma seção que falha vira aviso, não
+  // derruba o e-mail inteiro.
+  try {
+    sections.push(htmlVideoLongo());
+  } catch (err) {
+    sections.push(warnBlock('🎬 Vídeo longo', err.message));
   }
 
   // 1-quater. A limpeza das capas com letras — o dono pediu a progressão em
