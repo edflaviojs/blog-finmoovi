@@ -1,0 +1,220 @@
+{
+  "slug": "opcao-financeira",
+  "term": "opção financeira",
+  "category": "basico",
+  "keyword": "financeira",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você sabe o que é uma *opção financeira*, ou tem vergonha de perguntar?"
+  },
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "corda-bamba",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você sabe o que é uma opção financeira, ou tem vergonha de perguntar? Vou te explicar sem complicação.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "opção",
+          "visual": {
+            "type": "statement",
+            "text": "Opção financeira sem complicação"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "vergonha",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          }
+        },
+        {
+          "anchor": "explicar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "corda-bamba"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Aí funciona assim. Você escolhe uma ação, uma call ou uma put, um preço e uma data. Depois paga pelo direito.",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "escolhe",
+          "visual": {
+            "type": "statement",
+            "text": "Você escolhe os termos"
+          },
+          "sfx": "click"
+        },
+        {
+          "anchor": "call",
+          "visual": {
+            "type": "statement",
+            "text": "Call ou put"
+          }
+        },
+        {
+          "anchor": "Depois",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "corda-bamba"
+          },
+          "sfx": "whoosh"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Esse direito vale quando o mercado muda. Com a call, você compra pelo preço combinado. Com a put, você vende por ele.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "mercado",
+          "visual": {
+            "type": "chart",
+            "text": "Mercado em movimento"
+          },
+          "sfx": "alert"
+        },
+        {
+          "anchor": "call",
+          "visual": {
+            "type": "statement",
+            "text": "Call: comprar pelo combinado"
+          }
+        },
+        {
+          "anchor": "você",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "corda-bamba"
+          },
+          "sfx": "thud"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Peguei esses dados e conferi no FinMoovi o nome da opção, o preço combinado e a data de vencimento.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Tela do FinMoovi com dados da opção em destaque"
+          }
+        },
+        {
+          "anchor": "combinado",
+          "visual": {
+            "type": "statement",
+            "text": "Nome e preço combinado"
+          },
+          "sfx": "keyboard"
+        },
+        {
+          "anchor": "data",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "corda-bamba"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Com a sua opção, fica mais fácil acompanhar. Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 5.4,
+      "shots": [
+        {
+          "anchor": "fácil",
+          "visual": {
+            "type": "statement",
+            "text": "Acompanhe sem se perder"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "number",
+            "text": "7 dias grátis"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Então, opção pode proteger uma compra ou venda, mas você pode perder o valor pago. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "proteger",
+          "visual": {
+            "type": "statement",
+            "text": "Proteção também tem custo"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "perder",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          }
+        },
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "corda-bamba"
+          }
+        },
+        {
+          "anchor": "outros",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro sem controle some"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Entenda suas opções financeiras",
+    "target": "app"
+  },
+  "totalDurationSec": 44.7
+}
