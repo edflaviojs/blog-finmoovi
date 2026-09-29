@@ -1,0 +1,679 @@
+{
+  "date": "2026-09-28",
+  "counts": {
+    "content": 6,
+    "videos": 2,
+    "pins": 2,
+    "failures": 2,
+    "runs": 49
+  },
+  "failures": [
+    {
+      "name": "YouTube — Produzir Shorts de 16s em loop (2 por dia)",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/36413686161",
+      "timeLisbon": "12:06"
+    },
+    {
+      "name": "Multipost — Vigia das redes (diário)",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/36453580674",
+      "timeLisbon": "17:47"
+    }
+  ],
+  "content": [
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "en",
+      "slug": "en-derivatives",
+      "url": "https://blog.finmoovi.com/en/glossario/en-derivatives",
+      "title": "derivatives - Financial Glossary",
+      "description": "What derivatives is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi.",
+      "category": "basico",
+      "publishedAt": "2026-09-28"
+    },
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "es",
+      "slug": "es-derivativos",
+      "url": "https://blog.finmoovi.com/es/glossario/es-derivativos",
+      "title": "derivativos - Glosario Financiero",
+      "description": "Qué es derivativos y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi.",
+      "category": "basico",
+      "publishedAt": "2026-09-28"
+    },
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "pt",
+      "slug": "derivativos",
+      "url": "https://blog.finmoovi.com/glossario/derivativos",
+      "title": "derivativos - Glossário Financeiro",
+      "description": "O que é derivativos e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi.",
+      "category": "basico",
+      "publishedAt": "2026-09-28"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "es",
+      "slug": "es-cotizaciones-semana-4-septiembre-2026",
+      "url": "https://blog.finmoovi.com/es/posts/es-cotizaciones-semana-4-septiembre-2026",
+      "title": "Resumen Semanal: Dólar a R$ 5.19 — Semana 4 de septiembre",
+      "description": "Resumen semanal del mercado financiero: dólar, euro, Selic y consejos para inversores. Semana 4 de septiembre 2026.",
+      "category": "cotacoes",
+      "publishedAt": "2026-09-28"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "pt",
+      "slug": "cotacoes-semana-4-setembro-2026",
+      "url": "https://blog.finmoovi.com/posts/cotacoes-semana-4-setembro-2026",
+      "title": "Resumo Semanal: Dólar a R$ 5.19 — Semana 4 de setembro",
+      "description": "Resumo semanal do mercado financeiro: dólar, euro, Selic e dicas para investidores. Semana 4 de setembro 2026.",
+      "category": "cotacoes",
+      "publishedAt": "2026-09-28"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "en",
+      "slug": "en-quotes-week-4-september-2026",
+      "url": "https://blog.finmoovi.com/en/posts/en-quotes-week-4-september-2026",
+      "title": "Weekly Summary: Dollar at R$ 5.19 — Week 4 of september",
+      "description": "Weekly financial market summary: dollar, euro, Selic and tips for investors. Week 4 of september 2026.",
+      "category": "cotacoes",
+      "publishedAt": "2026-09-28"
+    }
+  ],
+  "videos": [
+    {
+      "slug": "loop-primeiro-guardado-voces-viram",
+      "videoId": "h_JymS9qRlA",
+      "uploadedAt": "2026-09-28T17:00:04.747Z",
+      "title": "GUARDADO: R$ 300 no fim do mês",
+      "formato": "loop16",
+      "timeLisbon": "18:00"
+    },
+    {
+      "slug": "valor-presente",
+      "videoId": "oay7rBGNbyQ",
+      "uploadedAt": "2026-09-28T19:01:09.766Z",
+      "title": "VALOR presente: vale R$ 1.000 em 12 meses",
+      "formato": "short50",
+      "timeLisbon": "20:01"
+    }
+  ],
+  "pins": [
+    {
+      "slug": "cotacoes-semana-4-setembro-2026",
+      "title": "Resumo Semanal: Dólar a R$ 5.19 — Semana 4 de setembro",
+      "pinId": "1105281933582201342",
+      "publishedAt": "2026-09-28T20:55:37.733Z",
+      "postUrl": "https://blog.finmoovi.com/posts/cotacoes-semana-4-setembro-2026",
+      "timeLisbon": "21:55"
+    },
+    {
+      "slug": "descubra-uma-alternativa-ao-google-finance-para-2026",
+      "title": "Descubra uma alternativa ao Google Finance para 2026",
+      "pinId": "1105281933582201343",
+      "publishedAt": "2026-09-28T20:55:39.446Z",
+      "postUrl": "https://blog.finmoovi.com/posts/descubra-uma-alternativa-ao-google-finance-para-2026",
+      "timeLisbon": "21:55"
+    }
+  ],
+  "runsSummary": [
+    {
+      "name": "Multipost — Entregar o vídeo longo às redes (domingo)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "00:43"
+    },
+    {
+      "name": "YouTube — Responder aos comentários (FINMOOVI)",
+      "count": 4,
+      "ok": 4,
+      "fail": 0,
+      "firstTimeLisbon": "02:02"
+    },
+    {
+      "name": "Capas — varrer (e refazer) as que têm letras ou estão borradas",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "02:04"
+    },
+    {
+      "name": "IndexNow (indexação instantânea Bing/Copilot)",
+      "count": 3,
+      "ok": 3,
+      "fail": 0,
+      "firstTimeLisbon": "03:47"
+    },
+    {
+      "name": "Redes — Caixa de entrada dos comentários (3× por dia)",
+      "count": 2,
+      "ok": 2,
+      "fail": 0,
+      "firstTimeLisbon": "07:34"
+    },
+    {
+      "name": "YouTube — Detetive de tendências (diário)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "11:18"
+    },
+    {
+      "name": "YouTube — Produzir Shorts de 16s em loop (2 por dia)",
+      "count": 1,
+      "ok": 0,
+      "fail": 1,
+      "firstTimeLisbon": "12:06"
+    },
+    {
+      "name": "Sweep de Traduções (lang-guard)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "12:20"
+    },
+    {
+      "name": "Sincronizar i18n (auto-corretor PT/EN/ES)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "12:21"
+    },
+    {
+      "name": "Fact Firewall (anti-alucinacao)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "12:25"
+    },
+    {
+      "name": "Consumo dos serviços pagos",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "12:37"
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "count": 2,
+      "ok": 2,
+      "fail": 0,
+      "firstTimeLisbon": "12:58"
+    },
+    {
+      "name": "Diagnostico - Provedores de texto",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "13:20"
+    },
+    {
+      "name": "Gerar ALT descritivo das imagens (IA de visão)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "14:09"
+    },
+    {
+      "name": "YouTube — Renderizar Short (completo)",
+      "count": 2,
+      "ok": 2,
+      "fail": 0,
+      "firstTimeLisbon": "15:13"
+    },
+    {
+      "name": "GSC - Digest de Oportunidades",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "15:39"
+    },
+    {
+      "name": "Community Monitor",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "15:55"
+    },
+    {
+      "name": "Diagnóstico — quem responde no motor de IA",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "15:57"
+    },
+    {
+      "name": "Sazonal Multimercado (timezone)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "17:07"
+    },
+    {
+      "name": "Atualizar Estatísticas",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "17:08"
+    },
+    {
+      "name": "GSC - Monitor de Indexacao",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "17:09"
+    },
+    {
+      "name": "Gerar Arte Sazonal (candidatos p/ aprovação)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "17:13"
+    },
+    {
+      "name": "YouTube — Medir retenção dos Shorts",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "17:15"
+    },
+    {
+      "name": "YouTube — Guarda do canal (diário)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "17:43"
+    },
+    {
+      "name": "Multipost — Vigia das redes (diário)",
+      "count": 1,
+      "ok": 0,
+      "fail": 1,
+      "firstTimeLisbon": "17:47"
+    },
+    {
+      "name": "Fix i18n Content (Daily Batch)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "17:55"
+    },
+    {
+      "name": "YouTube — Publicar Shorts de 16s (9h e 19h BR)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "17:59"
+    },
+    {
+      "name": "Gerar Dicas Financeiras",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "18:08"
+    },
+    {
+      "name": "Cotações Semanal",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "19:01"
+    },
+    {
+      "name": "Detect BR-only Posts (Weekly)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "19:03"
+    },
+    {
+      "name": "Glossário Diário Automático",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "19:16"
+    },
+    {
+      "name": "Multipost — Entregar os Shorts de 16s às 7 redes",
+      "count": 2,
+      "ok": 2,
+      "fail": 0,
+      "firstTimeLisbon": "19:18"
+    },
+    {
+      "name": "Relatório Semanal de Analytics",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "19:24"
+    },
+    {
+      "name": "YouTube — Publicar Short (horário nobre)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "20:00"
+    },
+    {
+      "name": "Post Orçamento Semanal",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "20:29"
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "20:31"
+    },
+    {
+      "name": "Regenerar capas antigas do glossário (estilo 3D)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "20:47"
+    },
+    {
+      "name": "Newsletter Digest Semanal",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "20:58"
+    },
+    {
+      "name": "Social Distribution (Pinterest + Bookmarks)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "21:55"
+    },
+    {
+      "name": "Multipost — Entregar o Short às 8 redes (a partir das 19h BR)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "22:14"
+    }
+  ],
+  "emails": [
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "timeLisbon": "12:58"
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "timeLisbon": "15:25"
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "timeLisbon": "20:31"
+    },
+    {
+      "name": "Newsletter Digest Semanal",
+      "timeLisbon": "20:58"
+    }
+  ],
+  "pendencias": [
+    "Confirmar no painel do Railway qual repo alimenta app.finmoovi.com. Medido em 16/09/2026: o site responde 200, com os cabeçalhos x-railway-request-id e x-railway-edge: bcn1 — está mesmo no Railway —, e /api/status (o mesmo caminho de saúde que o railway.json deste repo declara) devolve {\"status\":\"ok\",\"version\":\"2.0.0\"}. Falta só o que nenhum teste de fora consegue ver: a que repo e ramo o projeto está ligado. Isso lê-se no painel, em 30 segundos.",
+    "Decidir qual conta é a PADRÃO desta máquina. O gh e o wrangler estão ambos em GOAPEXI; todo push para o FinMoovi exige gh auth switch --user edflaviojs e devolver a seguir. Se o FinMoovi é o trabalho principal daqui, vale inverter — mas parte o lado GOAPEXI. O wrangler continua por consertar: precisa de wrangler login com Finmoovi@gmail.com, que abre o navegador e tem de ser o Ed a correr.",
+    "Acompanhar a gaveta de idioma na 1ª semana (no ar desde 12/08/2026). Filtrar a tabela cta_clicks pelos variant que começam por lang-: quantos VIRAM contra quantos ACEITARAM, por idioma. Se quase ninguém aceitar, o problema é o texto ou o momento — não a ideia. Detalhe em docs/I18N-SYSTEM.md §12.",
+    "18/08/2026 — ESTUDO APIFY das transcrições (vídeo longo). Só a partir dessa data: o arquivo .github/data/youtube-capitulos.json precisa de ~2 semanas a acumular para haver 40-50 longos e se escolherem os MELHORES para transcrever. Passos: criar chave em console.apify.com/settings/integrations (permissões limitadas + validade 1 mês) → guardar como APIFY_TOKEN no cofre do GitHub (nunca no chat) → criar/configurar o actor de transcrições → 30-50 transcrições (~$0,25 do crédito grátis de $5/mês) → ler os primeiros 30s de cada. ⚠️ Estudo à mão, NUNCA dentro do robô diário. Detalhe completo: IMPLEMENTACAO20 §33.6",
+    "Google Cloud billing: criar perfil de pagamentos PORTUGAL (NIF + cartão PT) → destrava vozes TTS premium + trial $300",
+    "Escolher voz definitiva do canal (Antonio edge ↔ Piper faber alternando; premium depende do billing)",
+    "Pinterest: avaliar o 1º pin com descrição rica SEO (sexta 24/07 ~16h)",
+    "Upgrade Pinterest p/ cadência diária? Avaliar analytics ~07/08"
+  ],
+  "agenda": [
+    {
+      "name": "YouTube — Responder aos comentários (FINMOOVI)",
+      "times": [
+        "00:25",
+        "01:25",
+        "02:25",
+        "03:25",
+        "04:25",
+        "05:25",
+        "06:25",
+        "07:25",
+        "08:25",
+        "09:25",
+        "10:25",
+        "11:25",
+        "12:25",
+        "13:25",
+        "14:25",
+        "15:25",
+        "16:25",
+        "17:25",
+        "18:25",
+        "19:25",
+        "20:25",
+        "21:25",
+        "22:25",
+        "23:25"
+      ]
+    },
+    {
+      "name": "IndexNow (indexação instantânea Bing/Copilot)",
+      "times": [
+        "01:00",
+        "07:00",
+        "13:00",
+        "19:00"
+      ]
+    },
+    {
+      "name": "Redes — Caixa de entrada dos comentários (3× por dia)",
+      "times": [
+        "02:00",
+        "16:00",
+        "20:00"
+      ]
+    },
+    {
+      "name": "YouTube — Vídeo longo (semanal)",
+      "times": [
+        "03:00",
+        "13:00",
+        "19:00"
+      ]
+    },
+    {
+      "name": "YouTube — Detetive de tendências (diário)",
+      "times": [
+        "05:00"
+      ]
+    },
+    {
+      "name": "YouTube — Produzir Shorts de 16s em loop (2 por dia)",
+      "times": [
+        "05:30"
+      ]
+    },
+    {
+      "name": "Fact Firewall (anti-alucinacao)",
+      "times": [
+        "06:00"
+      ]
+    },
+    {
+      "name": "Sincronizar i18n (auto-corretor PT/EN/ES)",
+      "times": [
+        "06:00"
+      ]
+    },
+    {
+      "name": "Consumo dos serviços pagos",
+      "times": [
+        "06:10"
+      ]
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "times": [
+        "06:40",
+        "07:40"
+      ]
+    },
+    {
+      "name": "Gerar ALT descritivo das imagens (IA de visão)",
+      "times": [
+        "07:00",
+        "10:00",
+        "12:00"
+      ]
+    },
+    {
+      "name": "YouTube — Renderizar Short (completo)",
+      "times": [
+        "07:30",
+        "12:00"
+      ]
+    },
+    {
+      "name": "Community Monitor",
+      "times": [
+        "08:00"
+      ]
+    },
+    {
+      "name": "Glossário Financeiro",
+      "times": [
+        "08:00"
+      ]
+    },
+    {
+      "name": "GSC - Otimizar CTR (titulo/meta)",
+      "times": [
+        "08:00"
+      ]
+    },
+    {
+      "name": "GSC - Monitor de Indexacao",
+      "times": [
+        "09:00"
+      ]
+    },
+    {
+      "name": "Sazonal Multimercado (timezone)",
+      "times": [
+        "09:00"
+      ]
+    },
+    {
+      "name": "YouTube — Guarda do canal (diário)",
+      "times": [
+        "09:10"
+      ]
+    },
+    {
+      "name": "Multipost — Vigia das redes (diário)",
+      "times": [
+        "09:20"
+      ]
+    },
+    {
+      "name": "Fix i18n Content (Daily Batch)",
+      "times": [
+        "09:30"
+      ]
+    },
+    {
+      "name": "YouTube — Publicar Shorts de 16s (9h e 19h BR)",
+      "times": [
+        "09:40",
+        "19:40"
+      ]
+    },
+    {
+      "name": "Gerar Dicas Financeiras",
+      "times": [
+        "10:00"
+      ]
+    },
+    {
+      "name": "SEO Monitor Semanal",
+      "times": [
+        "10:00"
+      ]
+    },
+    {
+      "name": "Gerar Post Inteligente (Analytics-driven)",
+      "times": [
+        "11:00"
+      ]
+    },
+    {
+      "name": "Glossário Diário Automático",
+      "times": [
+        "12:00"
+      ]
+    },
+    {
+      "name": "Multipost — Entregar os Shorts de 16s às 7 redes",
+      "times": [
+        "12:00",
+        "15:40"
+      ]
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "times": [
+        "13:00"
+      ]
+    },
+    {
+      "name": "YouTube — Publicar Short (horário nobre)",
+      "times": [
+        "13:00",
+        "21:00"
+      ]
+    },
+    {
+      "name": "Regenerar capas antigas do glossário (estilo 3D)",
+      "times": [
+        "13:30"
+      ]
+    },
+    {
+      "name": "Sindicação Extra (Hashnode + Tumblr + Blogger)",
+      "times": [
+        "14:00"
+      ]
+    },
+    {
+      "name": "Syndicate Content & Send Pingbacks",
+      "times": [
+        "15:00"
+      ]
+    },
+    {
+      "name": "Multipost — Entregar o Short às 8 redes (a partir das 19h BR)",
+      "times": [
+        "16:20"
+      ]
+    },
+    {
+      "name": "Vigia do ar (o site tem tudo o que o repo tem?)",
+      "times": [
+        "21:00"
+      ]
+    },
+    {
+      "name": "Capas — varrer (e refazer) as que têm letras ou estão borradas",
+      "times": [
+        "23:30"
+      ]
+    }
+  ]
+}
