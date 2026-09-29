@@ -1,5 +1,29 @@
 [
   {
+    "file": "en-quotes-week-4-september-2026.md",
+    "dir": "posts",
+    "severity": 3,
+    "issues": {
+      "currency": 6,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [
+        "no Brasil"
+      ],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "IPCA"
+      ],
+      "ptLeftovers": [
+        "ações",
+        "dívidas",
+        "reais",
+        "investimentos"
+      ]
+    }
+  },
+  {
     "file": "en-fgc-guarantee.md",
     "dir": "glossario",
     "severity": 2,
@@ -31,6 +55,23 @@
       "brAcronyms": [
         "LCI",
         "LCA"
+      ],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-cotizaciones-semana-4-septiembre-2026.md",
+    "dir": "posts",
+    "severity": 2,
+    "issues": {
+      "currency": 4,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "IPCA"
       ],
       "ptLeftovers": []
     }
@@ -1134,6 +1175,21 @@
   },
   {
     "file": "en-debt.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-derivatives.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -6369,6 +6425,21 @@
   },
   {
     "file": "es-debentures.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-derivativos.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
