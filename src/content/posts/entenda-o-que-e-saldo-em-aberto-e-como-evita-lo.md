@@ -1,6 +1,6 @@
 ---
-title: "Entenda o que é saldo em aberto e como evitá‑lo"
-description: "Descubra o que significa saldo em aberto, como ele afeta seu bolso e veja um jeito prático de controlar tudo com o FinMoovi em poucos minutos."
+title: "O que significa valor em aberto e como evitar dívidas"
+description: "Confira 5 passos práticos para identificar o valor em aberto na sua conta e eliminar cobranças indesejadas, recuperando seu controle financeiro."
 tickerHeadline: "O saldo que você nem percebe"
 image: "/images/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo.webp"
 imageAlt: "Uma imagem de uma mesa com um laptop e uma tela de computador em fundo."
@@ -9,13 +9,14 @@ locale: "pt"
 tags: ["outstanding balance definition","finanças pessoais","economia","dinheiro"]
 author: "FinMoovi"
 publishedAt: 2026-09-16
+updatedAt: "2026-09-29"
 readingTime: 5
 featured: true
 translationKey: "entenda-o-que-e-saldo-em-aberto-e-como-evita-lo"
 scope: "universal"
 seo:
-  metaTitle: "Entenda o que é saldo em aberto e como evitá‑lo"
-  metaDescription: "Descubra o que significa saldo em aberto, como ele afeta seu bolso e veja um jeito prático de controlar tudo com o FinMoovi em poucos minutos."
+  metaTitle: "O que significa valor em aberto e como evitar dívidas"
+  metaDescription: "Confira 5 passos práticos para identificar o valor em aberto na sua conta e eliminar cobranças indesejadas, recuperando seu controle financeiro."
   keywords: ["outstanding balance definition","finanças pessoais","economia","dinheiro"]
 ---
 
