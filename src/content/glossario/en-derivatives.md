@@ -4,6 +4,7 @@ definition: "What derivatives is and how it shows up in your everyday money — 
 title: "derivatives - Financial Glossary"
 description: "What derivatives is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/derivativos.webp"
+imageAlt: "Gold coins, orange bar chart, and glass jars with plants on dark surface."
 category: "basico"
 tags: ["derivatives", "glossary", "finance"]
 author: "FinMoovi"

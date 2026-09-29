@@ -2,6 +2,7 @@
 title: "Resumo Semanal: Dólar a R$ 5.19 — Semana 4 de setembro"
 description: "Resumo semanal do mercado financeiro: dólar, euro, Selic e dicas para investidores. Semana 4 de setembro 2026."
 image: "/images/posts/cotacoes-semana-2026-09-28.webp"
+imageAlt: "Casal sorridente consultando documentos financeiros em ambiente com plantas."
 category: "cotacoes"
 tags: ["cotações","dólar","euro","mercado financeiro","selic"]
 author: "FinMoovi"

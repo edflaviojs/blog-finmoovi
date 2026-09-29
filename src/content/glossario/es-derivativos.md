@@ -4,6 +4,7 @@ definition: "Qué es derivativos y cómo aparece en tu día a día — explicado
 title: "derivativos - Glosario Financiero"
 description: "Qué es derivativos y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/derivativos.webp"
+imageAlt: "Pilas de monedas doradas, gráfico de barras ascendente y plantas en frascos de vidrio."
 category: "basico"
 tags: ["derivativos", "glosario", "finanzas"]
 author: "FinMoovi"
