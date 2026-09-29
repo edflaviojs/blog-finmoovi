@@ -5259,6 +5259,36 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-09-28"
+    },
+    "cotacoes-semana-2026-09-28.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-29"
+    },
+    "cotacoes-semana-4-setembro-2026-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-29"
+    },
+    "cotacoes-semana-4-setembro-2026-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-29"
+    },
+    "derivativos-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-29"
+    },
+    "derivativos-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-29"
+    },
+    "derivativos.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-29"
     }
   },
   "corrigidas": {
@@ -5923,6 +5953,6 @@
       "motivo": "tem texto escrito (\"I'm sorry, I'm not able to identify the people in this image.\")"
     }
   },
-  "totalAcervo": 1052,
-  "ultimaCorrida": "2026-09-28"
+  "totalAcervo": 1058,
+  "ultimaCorrida": "2026-09-29"
 }
