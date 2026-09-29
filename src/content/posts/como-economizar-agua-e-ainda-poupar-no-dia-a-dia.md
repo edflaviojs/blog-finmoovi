@@ -29,7 +29,7 @@ A maioria das famílias tem hábitos que, embora pareçam inofensivos, são verd
 Além do impacto direto nas finanças, o consumo exagerado de água também tem consequências ambientais. Cada litro que desperdiçamos representa energia para tratamento e transporte, contribuindo para a pressão sobre os recursos hídricos globais. Portanto, controlar o uso da água é um ato que beneficia tanto a carteira quanto o planeta.
 
 ### Estratégias simples para reduzir o consumo
-- **Instale aeradores nas torneiras**: eles reduzem o fluxo sem comprometer a pressão, trazendo economia imediata.
+- **Instale aeradores nas torneiras**: eles reduzem o fluxo sem comprometer a pressão, trazendo [economia](/glossario/economia) imediata.
 - **Reaproveite água da chuva** para regar plantas ou lavar o carro, diminuindo a necessidade de água tratada.
 - **Lave roupas com carga completa** e prefira ciclos curtos; isso reduz o tempo de operação da máquina.
 - **Feche a torneira enquanto ensaboa** pratos ou escova os dentes; um minuto de pausa pode significar dezenas de litros economizados.

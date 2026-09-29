@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="transparent"/>
+  <rect x="30" y="30" width="1140" height="570" rx="20" fill="rgba(128,128,128,0.06)" stroke="rgba(128,128,128,0.15)" stroke-width="1"/>
+  <defs>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+    <linearGradient id="areaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+  </defs>
+  
+  <circle cx="1020" cy="94.5" r="90.47224070876837" fill="#8B5CF6" opacity="0.03"/>
+  <circle cx="180" cy="504" r="51.93136118585244" fill="#EC4899" opacity="0.04"/>
+  <rect x="160" y="181.62157541140914" width="60" height="338.37842458859086" rx="4" fill="url(#barGrad)" opacity="0.76"/>
+  <rect x="250" y="211.08783959411085" width="60" height="308.91216040588915" rx="4" fill="url(#barGrad)" opacity="0.71"/>
+  <rect x="340" y="356.1950096487999" width="60" height="163.8049903512001" rx="4" fill="url(#barGrad)" opacity="0.70"/>
+  <rect x="430" y="187.78505661524832" width="60" height="332.2149433847517" rx="4" fill="url(#barGrad)" opacity="0.93"/>
+  <rect x="520" y="265.4405149258673" width="60" height="254.55948507413268" rx="4" fill="url(#barGrad)" opacity="1.00"/>
+  <rect x="610" y="351.14815580658615" width="60" height="168.85184419341385" rx="4" fill="url(#barGrad)" opacity="0.72"/>
+  <rect x="700" y="425.2957295253873" width="60" height="94.70427047461271" rx="4" fill="url(#barGrad)" opacity="0.86"/>
+  <rect x="790" y="345.39484289474785" width="60" height="174.60515710525215" rx="4" fill="url(#barGrad)" opacity="0.63"/>
+</svg>

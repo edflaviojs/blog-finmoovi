@@ -30,7 +30,7 @@ A maioria dos contratos tem cláusulas de renovação automática que aumentam o
 Muitos provedores oferecem pacotes de internet fixa + celular com desconto. Se você já tem fibra em casa, veja se a operadora tem um combo “fibra + celular” que reduz o valor total. Por exemplo, um combo pode sair por R$129, enquanto os dois serviços separados chegam a R$159. Avalie a velocidade da internet e a cobertura do celular antes de fechar.
 
 ## Negocie com a operadora
-Ligar para o SAC e pedir um reajuste pode gerar uma economia de 10 % a 20 %. Fale de forma clara, mencione que está analisando outras opções e que quer manter a conta abaixo de certo valor (ex.: R$120). Muitas vezes o atendente tem autonomia para aplicar um desconto imediato ou migrar para um plano mais enxuto.
+Ligar para o SAC e pedir um reajuste pode gerar uma [economia](/glossario/economia) de 10 % a 20 %. Fale de forma clara, mencione que está analisando outras opções e que quer manter a conta abaixo de certo valor (ex.: R$120). Muitas vezes o atendente tem autonomia para aplicar um desconto imediato ou migrar para um plano mais enxuto.
 
 ![Aproveite pacotes de dados](/images/posts/como-economizar-no-plano-de-celular-e-internet-em-2026-2.webp)
 
