@@ -10,5 +10,11 @@
     "runId": "36434321111",
     "producedAt": "2026-09-28T14:22:10.750Z",
     "artifact": "short-valor-presente"
+  },
+  {
+    "fileSlug": "opcao-financeira",
+    "runId": "36572941915",
+    "producedAt": "2026-09-29T13:18:28.649Z",
+    "artifact": "short-opcao-financeira"
   }
 ]
