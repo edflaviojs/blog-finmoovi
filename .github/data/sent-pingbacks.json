@@ -3454,5 +3454,23 @@
     "target": "https://www.investopedia.com",
     "status": "no-endpoint",
     "sentAt": "2026-09-24T18:15:38.258Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/descubra-uma-alternativa-ao-google-finance-para-2026/",
+    "target": "https://www.investopedia.com/personal-finance-apps-5115205",
+    "status": "no-endpoint",
+    "sentAt": "2026-09-29T19:09:14.347Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/en-discover-a-practical-alternative-to-google-finance-for-2026/",
+    "target": "https://www.investopedia.com/personal-finance-apps-5115205",
+    "status": "no-endpoint",
+    "sentAt": "2026-09-29T19:09:14.444Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/es-descubre-una-alternativa-a-google-finance-para-2026/",
+    "target": "https://www.investopedia.com/personal-finance-apps-5115205",
+    "status": "no-endpoint",
+    "sentAt": "2026-09-29T19:09:14.524Z"
   }
 ]
