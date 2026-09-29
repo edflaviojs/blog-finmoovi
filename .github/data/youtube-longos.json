@@ -188,6 +188,59 @@
       "propostoEm": "2026-09-25T09:12:53.826Z",
       "publicadoEm": "2026-09-26T07:53:39.362Z",
       "videoId": "kaYpyawVJcU"
+    },
+    {
+      "slug": "pequenos-gastos-como-recuperar",
+      "titulo": "Pequenos gastos: como recuperar R$ 240 sem cortar o lazer",
+      "tema": "Como encontrar dinheiro perdido nos pequenos gastos do mês",
+      "angulo": "Eu mostro como pequenos gastos do dia a dia podem consumir uma parte do salário sem que a gente perceba, usando o cenário de quem ganha R$ 3.000 por mês e gasta R$ 8 por dia em compras pequenas. Faço as contas para revelar quanto isso representa em um mês e em um ano, e mostro como reorganizar esse dinheiro sem abrir mão de tudo o que dá prazer.",
+      "glossario": "categoria-de-despesas-pessoais",
+      "palavrasChave": [
+        "pequenos gastos mensais",
+        "controle de despesas pessoais",
+        "como economizar dinheiro",
+        "salário não sobra",
+        "organização financeira mensal"
+      ],
+      "estado": "proposto",
+      "viralRef": {
+        "videoId": "B-f1sjU7uFU",
+        "title": "Investir R$ 100 por mês pode mudar sua vida?",
+        "views": 330306,
+        "viewsPerDay": 34803,
+        "estrutura": [
+          "número concreto no título (\"100\")",
+          "pergunta dirigida a quem assiste",
+          "fala directamente com \"você\""
+        ]
+      },
+      "propostoEm": "2026-09-28T10:19:08.303Z"
+    },
+    {
+      "slug": "economizar-300-por-mes",
+      "titulo": "Economizar R$ 300 por mês sem cortar o essencial",
+      "tema": "Como encontrar R$ 300 esquecidos no orçamento sem cortar o essencial",
+      "angulo": "A dor é chegar ao fim do mês ganhando R$ 3.500 e não saber onde foram parar R$ 300. Eu mostro, com contas reais, como reorganizei um orçamento de R$ 3.500 para liberar R$ 300 por mês sem cortar aluguel, alimentação ou lazer, e no fim deixo um método simples para repetir a conta. O FinMoovi aparece uma vez para somar as despesas e mostrar onde o dinheiro estava escapando.",
+      "glossario": "controle-de-gastos",
+      "palavrasChave": [
+        "como economizar dinheiro",
+        "economizar R$ 300",
+        "controle de gastos",
+        "organizar orçamento mensal",
+        "sobrar dinheiro no mês"
+      ],
+      "estado": "proposto",
+      "viralRef": {
+        "videoId": "xV2A3YN7r88",
+        "title": "COMO ORGANIZAR SUAS FINANÇAS DE OUTUBRO A DEZEMBRO DE 2026",
+        "views": 148483,
+        "viewsPerDay": 13381,
+        "estrutura": [
+          "número concreto no título (\"2026\")",
+          "uma palavra em maiúsculas a marcar o tom"
+        ]
+      },
+      "propostoEm": "2026-09-28T10:19:08.303Z"
     }
   ]
 }

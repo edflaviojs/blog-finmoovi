@@ -82,5 +82,11 @@
       "en",
       "es"
     ]
+  },
+  "pequenos-gastos-como-recuperar": {
+    "estado": "reservado",
+    "publishAt": "2026-10-04T22:00:00.000Z",
+    "reservadoEm": "2026-09-29T07:57:23.610Z",
+    "corrida": "36539633911"
   }
 }
