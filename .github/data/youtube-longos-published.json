@@ -84,9 +84,15 @@
     ]
   },
   "pequenos-gastos-como-recuperar": {
-    "estado": "reservado",
+    "videoId": "4CfTKUgyAcE",
+    "uploadedAt": "2026-09-29T10:12:55.549Z",
     "publishAt": "2026-10-04T22:00:00.000Z",
-    "reservadoEm": "2026-09-29T09:38:00.998Z",
-    "corrida": "36539633911"
+    "titulo": "Pequenos gastos: como recuperar R$ 240 sem cortar o lazer",
+    "capitulos": 6,
+    "legendas": [
+      "pt",
+      "en",
+      "es"
+    ]
   }
 }

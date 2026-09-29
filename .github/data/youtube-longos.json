@@ -202,7 +202,7 @@
         "salário não sobra",
         "organização financeira mensal"
       ],
-      "estado": "proposto",
+      "estado": "publicado",
       "viralRef": {
         "videoId": "B-f1sjU7uFU",
         "title": "Investir R$ 100 por mês pode mudar sua vida?",
@@ -214,7 +214,9 @@
           "fala directamente com \"você\""
         ]
       },
-      "propostoEm": "2026-09-28T10:19:08.303Z"
+      "propostoEm": "2026-09-28T10:19:08.303Z",
+      "publicadoEm": "2026-09-29T10:12:55.550Z",
+      "videoId": "4CfTKUgyAcE"
     },
     {
       "slug": "economizar-300-por-mes",
