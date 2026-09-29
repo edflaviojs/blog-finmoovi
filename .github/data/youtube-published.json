@@ -1028,5 +1028,11 @@
     "uploadedAt": "2026-09-28T19:01:09.766Z",
     "title": "VALOR presente: vale R$ 1.000 em 12 meses",
     "formato": "short50"
+  },
+  "loop-reserva-emergencia-nunca-faca": {
+    "videoId": "HKMKNY9qiJg",
+    "uploadedAt": "2026-09-29T15:04:51.580Z",
+    "title": "RESERVA: R$ 600 que sumiram na conta",
+    "formato": "loop16"
   }
 }
