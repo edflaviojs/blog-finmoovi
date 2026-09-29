@@ -1,0 +1,118 @@
+{
+  "slug": "loop-reserva-emergencia-nunca-faca",
+  "formato": "loop16",
+  "term": "A reserva de emergência",
+  "category": "vida",
+  "keyword": "RESERVA",
+  "valor": "R$ 600",
+  "situacao": "reserva-emergencia",
+  "gancho": "nunca-faca",
+  "ganchoFamilia": "nunca faça",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "guarda-chuva",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Nunca faça de novo, eu deixei a conta cair ontem.",
+      "durationSec": 3.71,
+      "shots": [
+        {
+          "anchor": "deixei",
+          "visual": {
+            "type": "statement",
+            "text": "Nunca faça de novo"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "guarda-chuva"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Quando vi, seiscentos reais sumiram na conta de luz e mercado.",
+      "durationSec": 4.08,
+      "shots": [
+        {
+          "anchor": "seiscentos",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "guarda-chuva"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 600 sumiram"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então percebi que precisava guardar um guarda-chuva de emergência.",
+      "durationSec": 3.34,
+      "shots": [
+        {
+          "anchor": "percebi",
+          "visual": {
+            "type": "statement",
+            "text": "Guarda-chuva de emergência"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "precisava",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "guarda-chuva"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Nunca faça de novo, eu aprendi com a chuva e cuidado.",
+      "durationSec": 4.08,
+      "shots": [
+        {
+          "anchor": "aprendi",
+          "visual": {
+            "type": "statement",
+            "text": "Nunca faça de novo"
+          }
+        },
+        {
+          "anchor": "chuva",
+          "visual": {
+            "type": "statement",
+            "text": "Nunca faça de novo"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.21
+}

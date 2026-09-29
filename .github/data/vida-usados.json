@@ -580,5 +580,11 @@
     "gancho": "voces-viram",
     "turno": "manha",
     "em": "2026-09-28T11:07:11.640Z"
+  },
+  {
+    "situacao": "reserva-emergencia",
+    "gancho": "nunca-faca",
+    "turno": "manha",
+    "em": "2026-09-29T10:50:44.549Z"
   }
 ]
