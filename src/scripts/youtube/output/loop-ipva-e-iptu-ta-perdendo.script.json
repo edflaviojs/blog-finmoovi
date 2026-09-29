@@ -1,0 +1,118 @@
+{
+  "slug": "loop-ipva-e-iptu-ta-perdendo",
+  "formato": "loop16",
+  "term": "IPVA e IPTU de janeiro",
+  "category": "vida",
+  "keyword": "JANEIRO",
+  "valor": "R$ 1.600",
+  "situacao": "ipva-e-iptu",
+  "gancho": "ta-perdendo",
+  "ganchoFamilia": "tá perdendo",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "avalanche",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se você ainda faz isso, tá perdendo dinheiro.",
+      "durationSec": 2.9,
+      "shots": [
+        {
+          "anchor": "perdendo",
+          "visual": {
+            "type": "statement",
+            "text": "Faz isso, perde dinheiro"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "avalanche"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Comigo aconteceu. Janeiro chegou, e mil e seiscentos reais foram embora nos carnês.",
+      "durationSec": 4.7,
+      "shots": [
+        {
+          "anchor": "Comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "avalanche"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 1.600 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Eu olhei meu aplicativo, respirei, e comecei a separar dinheiro.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "olhei",
+          "visual": {
+            "type": "statement",
+            "text": "Eu me preparei antes"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "aplicativo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "avalanche"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Meu dinheiro foi embora. Então, você tá perdendo dinheiro sem preparo.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Perde dinheiro sem preparo"
+          }
+        },
+        {
+          "anchor": "embora",
+          "visual": {
+            "type": "statement",
+            "text": "Faz isso, perde dinheiro"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
