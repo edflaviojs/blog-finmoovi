@@ -103,6 +103,64 @@
         "cena": "54",
         "figura": "ralo"
       }
+    ],
+    "pequenos-gastos-como-recuperar": [
+      {
+        "cena": "1",
+        "figura": "fumaca"
+      },
+      {
+        "cena": "9",
+        "figura": "balde-furado"
+      },
+      {
+        "cena": "10",
+        "figura": "cofre"
+      },
+      {
+        "cena": "13",
+        "figura": "castelo-cartas"
+      },
+      {
+        "cena": "17",
+        "figura": "ralo"
+      },
+      {
+        "cena": "23",
+        "figura": "bola-neve"
+      },
+      {
+        "cena": "28",
+        "figura": "balanca"
+      },
+      {
+        "cena": "31",
+        "figura": "semaforo"
+      },
+      {
+        "cena": "32",
+        "figura": "guarda-chuva"
+      },
+      {
+        "cena": "40",
+        "figura": "corda-bamba"
+      },
+      {
+        "cena": "47",
+        "figura": "escorregao"
+      },
+      {
+        "cena": "52",
+        "figura": "bifurcacao"
+      },
+      {
+        "cena": "54",
+        "figura": "domino"
+      },
+      {
+        "cena": "55",
+        "figura": "ratoeira"
+      }
     ]
   }
 }

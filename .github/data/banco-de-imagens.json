@@ -43,6 +43,28 @@
       "usadoEm": [
         "onde-o-salario-some"
       ]
+    },
+    {
+      "ficheiro": "manus/pequenos-gastos-como-recuperar/susto.jpg",
+      "significado": "o susto de olhar a conta",
+      "tipo": "foto",
+      "pistas": [
+        "voce ja parou pra somar quanto"
+      ],
+      "usadoEm": [
+        "pequenos-gastos-como-recuperar"
+      ]
+    },
+    {
+      "ficheiro": "manus/pequenos-gastos-como-recuperar/virada.jpg",
+      "significado": "a saída que se abre",
+      "tipo": "foto",
+      "pistas": [
+        "eu peguei um papel e escrevi"
+      ],
+      "usadoEm": [
+        "pequenos-gastos-como-recuperar"
+      ]
     }
   ],
   "recusadas": [

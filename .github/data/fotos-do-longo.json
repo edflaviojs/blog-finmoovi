@@ -27,6 +27,24 @@
         "movimento": "aproxima-lento",
         "pista": "eu sentei com a minha avo"
       }
+    ],
+    "pequenos-gastos-como-recuperar": [
+      {
+        "ficheiro": "manus/pequenos-gastos-como-recuperar/susto.jpg",
+        "nome": "o susto de olhar a conta",
+        "significado": "o susto de olhar a conta",
+        "tipo": "foto",
+        "movimento": "aproxima",
+        "pista": "voce ja parou pra somar quanto"
+      },
+      {
+        "ficheiro": "manus/pequenos-gastos-como-recuperar/virada.jpg",
+        "nome": "a saída que se abre",
+        "significado": "a saída que se abre",
+        "tipo": "foto",
+        "movimento": "aproxima-lento",
+        "pista": "eu peguei um papel e escrevi"
+      }
     ]
   }
 }

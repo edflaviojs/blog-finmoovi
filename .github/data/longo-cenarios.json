@@ -106,6 +106,18 @@
       "promessa": "Vou te mostrar quanto você perde por mês com juros do cartão sem nem perceber",
       "em": "2026-09-26",
       "molde": "o-detalhe"
+    },
+    {
+      "slug": "pequenos-gastos-como-recuperar",
+      "cenarios": [
+        "o mercado"
+      ],
+      "fio": "escorregao",
+      "elenco": "uma mãe de família, que faz a conta da casa e sabe de cor o que falta",
+      "funcaoDoApp": "relatorios",
+      "cena": "o churrasco de fim de semana que junta a família toda",
+      "promessa": "Vou te mostrar como enxergar os pequenos gastos do churrasco e reorganizar esse dinheiro sem abrir mão de tudo que você gosta",
+      "em": "2026-09-29"
     }
   ]
 }
