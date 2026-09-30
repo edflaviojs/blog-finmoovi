@@ -195,6 +195,43 @@ ${ASSINATURA_DO_CANAL}
 ${REGRAS_FIXAS}`;
 }
 
+/**
+ * ═══ 🎭 TESTE: ROSTO + EMOÇÃO NA CAPA — 30/09/2026, ordem do dono ═══
+ *
+ * A regra do canal desde 04/08 é NENHUMA PESSOA na capa (ver o comentário de
+ * `CENA_DA_CAPA`, no `lib/capas-do-longo.js`) — decisão tomada de propósito, para o
+ * ecossistema ficar anónimo. O dono quer TESTAR se quebrar essa regra, com um rosto
+ * real e extremamente emotivo, aumenta o clique.
+ *
+ * ⚠️ **Não entra no rodízio dos 6 MOLDES.** É um pedido manual, à parte (`--teste=rosto`
+ * em `main`) — só vira padrão se o dono decidir depois de ver o resultado. Por isso não
+ * usa `REGRAS_FIXAS`: aquele bloco PROÍBE rosto ("no human figures, no faces"), que é
+ * exactamente a regra que este teste existe para desafiar.
+ *
+ * Composição pedida por ele: rosto em close extremo à ESQUERDA, expressão extremamente
+ * emotiva (surpresa, choro, desespero); à DIREITA, no máximo 3 palavras que resumem o
+ * vídeo. Minimalista, poucos elementos, realista — NUNCA 3D/Pixar.
+ */
+const EMOCOES_DO_ROSTO = {
+  desespero: 'raw despair — eyebrows pulled up and together, mouth open in a silent gasp, eyes wide and glassy, one hand pressed against the chest',
+  choro: 'the exact instant tears well up and start to fall — eyes red and wet, brow crumpled, mouth trembling, unmistakably about to cry',
+  surpresa: 'total shock — eyebrows shot up, eyes wide open, mouth open in a frozen gasp, head pulled slightly back as if just hit by the news',
+};
+
+export function promptDaCapaComRosto({ palavras, emocao = 'desespero' }) {
+  const descricao = EMOCOES_DO_ROSTO[emocao] || EMOCOES_DO_ROSTO.desespero;
+  return `An ultra-photorealistic YouTube thumbnail, 16:9 aspect ratio, 1280x720 pixels minimum, shot like a real DSLR portrait — NOT a 3D render, NOT an illustration, NOT a cartoon, NOT a Pixar-style character. Minimalist: only two halves, nothing else in the frame, extreme contrast, designed to stop a thumb mid-scroll on a phone.
+
+LEFT HALF (about 55% of the frame): an extreme close-up of a real adult Brazilian person's face, filling the frame from forehead to chin, lit by one hard light from the front-left with a deep shadow falling across the right side of the face. Skin, pores and imperfections fully visible — hyper-detailed, believable, human, no beauty filter, no plastic skin. Expression: ${descricao}. The person looks slightly off-camera to the right, as if staring in disbelief at something just out of frame — a phone screen, a bill, an envelope.
+
+A thin, sharp vertical line of pure white light divides the two halves.
+
+RIGHT HALF (about 45% of the frame): solid background in the channel's near-black blue (${PALETA.fundo}). Centered, in massive bold heavy condensed sans-serif, ALL CAPS, pure white, reading EXACTLY these words, on separate lines if needed to fit: "${palavras}"
+
+BRAND MARK — small and unobtrusive, in the bottom-right corner only: the word "FinMoovi" in a modern bold sans-serif, "Fin" in white and "Moovi" filled with a gradient from cyan (${PALETA.ciano}) to magenta (${PALETA.magenta}).
+
+STRICT RULES — this MUST look like a real, unstaged photograph of one real human face: no 3D render, no video-game look, no illustration or cartoon style anywhere in the image, no beauty filter. No text anywhere in the image except the words specified above and the brand mark. No other logos, no watermark, no signature, no placeholder text. Every Portuguese word must be spelled EXACTLY as written, with the accents shown. Extreme contrast, punchy, readable at 300 pixels wide on a phone. Generate the image and ATTACH the final PNG file to your reply. Do not ask me any questions — if something is ambiguous, choose the most realistic, most emotionally raw option.`;
+}
 
 /** AS IMAGENS DO MEIO DO VÍDEO — as três que o dono aprovou, cada uma presa a uma cena. */
 function promptsDasImagens({ rotativoAoMes }) {
@@ -379,6 +416,48 @@ async function main() {
     if (!cabem) console.log('   ⚠️ hoje NÃO dá para nenhuma — a renovação diária ainda não caiu.');
     if (lidos.length === 1) console.log('   ℹ️ só há uma conta ligada. Para ter reserva, ponha MANUS_API_KEY_2 no .env.local.');
     console.log('');
+    return;
+  }
+
+  /**
+   * ═══ --teste=rosto — TESTE MANUAL, FORA DO RODÍZIO — 30/09/2026 ═══
+   * Ver o comentário grande em `promptDaCapaComRosto`, acima. Fica FORA do fluxo normal
+   * de propósito: não lê roteiro nem caderno de nenhum vídeo, não mexe no molde/caderno
+   * dos vídeos de verdade, e grava numa pasta à parte (`_teste-rosto`) para nunca ser
+   * confundida com a capa real de nenhum vídeo — `upload-longo.js` procura por slug, e
+   * `_teste-rosto` não é slug de vídeo nenhum.
+   * Uso:
+   *   node --env-file=.env.local src/scripts/youtube/capa-manus.js --teste=rosto \
+   *     --palavras="SÓ ISSO SOBROU" --emocao=desespero
+   *   (emocao: desespero | choro | surpresa — default desespero)
+   */
+  if (args.teste === 'rosto') {
+    const palavras = args.palavras && args.palavras !== true ? String(args.palavras) : '';
+    if (!palavras) throw new Error('--teste=rosto precisa de --palavras="ATÉ 3 PALAVRAS"');
+    const emocao = args.emocao && args.emocao !== true ? String(args.emocao) : 'desespero';
+    const destinoTeste = join(RAIZ, 'youtube-render', 'public', 'manus', '_teste-rosto');
+    mkdirSync(destinoTeste, { recursive: true });
+    console.log(`\n🎭 TESTE — rosto + emoção "${emocao}", palavras: "${palavras}"`);
+    const r = await pedirAgente(promptDaCapaComRosto({ palavras, emocao }), {
+      titulo: `FinMoovi · teste-rosto · ${emocao}`,
+      aoAndar: (m) => console.log(`   ${m}`),
+    });
+    const imagens = r.anexos.filter((a) => a.type === 'image' || /^image\//.test(a.content_type || ''));
+    if (!imagens.length) {
+      console.log(`   ❌ voltou sem imagem. O agente disse: ${String(r.texto).slice(0, 160)}`);
+      return;
+    }
+    let versao = 1;
+    let base = `teste-rosto-${emocao}`;
+    while (existsSync(join(destinoTeste, `${base}.jpg`)) || existsSync(join(destinoTeste, `${base}.png`))) {
+      versao += 1;
+      base = `teste-rosto-${emocao}-v${versao}`;
+    }
+    const im = imagens[0];
+    const ext = (im.filename || '').split('.').pop() || 'png';
+    const bytes = await descarregar(im.url, join(destinoTeste, `${base}.${ext}`), fs);
+    console.log(`   ✅ ${base}.${ext} (${Math.round(bytes / 1024)} KB)`);
+    console.log(`   📁 ${destinoTeste}\n`);
     return;
   }
 
