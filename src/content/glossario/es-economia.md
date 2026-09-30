@@ -4,6 +4,7 @@ definition: "Qué es economía y cómo aparece en tu día a día — explicado d
 title: "economía - Glosario Financiero"
 description: "Qué es economía y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/economia.webp"
+imageAlt: "Monedas doradas apiladas, planta verde en frasco y balanza sobre base metálica."
 category: "basico"
 tags: ["economía", "glosario", "finanzas"]
 author: "FinMoovi"

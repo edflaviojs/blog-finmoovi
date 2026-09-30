@@ -4,6 +4,7 @@ definition: "What economy is and how it shows up in your everyday money — expl
 title: "economy - Financial Glossary"
 description: "What economy is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/economia.webp"
+imageAlt: "Stacked copper coins with green sprouts, glass jar, and balance scale on dark background."
 category: "basico"
 tags: ["economy", "glossary", "finance"]
 author: "FinMoovi"
