@@ -1,0 +1,249 @@
+{
+  "slug": "kw-quando-voce-gasta-r-2-000-e-investe-r-500-o-que-acontece",
+  "term": "Quando você gasta R$2.000 e investe R$500: o que acontece?",
+  "category": "mindset",
+  "keyword": "acontece",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Se você gasta *dois mil reais* por mês e guarda quinhentos, o que acontece lá na frente?"
+  },
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "bifurcacao",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se você gasta dois mil reais por mês e guarda quinhentos, o que acontece lá na frente? Em cinco anos, você juntou trinta mil reais.",
+      "durationSec": 9.6,
+      "shots": [
+        {
+          "anchor": "gasta",
+          "visual": {
+            "type": "number",
+            "text": "R$ 2.000"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "guarda",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          }
+        },
+        {
+          "anchor": "cinco",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bifurcacao"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "trinta",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 30 mil acumulados"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Tirar esse dinheiro do salário todo mês não é fácil. Os dois mil vão embora com mercado, contas e gasolina.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "Tirar",
+          "visual": {
+            "type": "statement",
+            "text": "Guardar todo mês pesa"
+          }
+        },
+        {
+          "anchor": "dois",
+          "visual": {
+            "type": "number",
+            "text": "R$ 2.000"
+          },
+          "sfx": "slide"
+        },
+        {
+          "anchor": "mercado",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          }
+        },
+        {
+          "anchor": "gasolina",
+          "visual": {
+            "type": "statement",
+            "text": "Mercado, contas e gasolina"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Só que, nesses cinco anos, os gastos somam cento e vinte mil reais. E os quinhentos viram trinta mil.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "cinco",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bifurcacao"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "cento",
+          "visual": {
+            "type": "number",
+            "text": "R$ 120.000"
+          }
+        },
+        {
+          "anchor": "quinhentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          }
+        },
+        {
+          "anchor": "trinta",
+          "visual": {
+            "type": "statement",
+            "text": "Viraram R$ 30 mil"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Pra tirar a prova, eu joguei os quinhentos no FinMoovi e ele me mostrou a conta. Na tela, o dinheiro guardado bateu os trinta mil reais.",
+      "durationSec": 10,
+      "shots": [
+        {
+          "anchor": "tirar",
+          "visual": {
+            "type": "statement",
+            "text": "Vamos conferir a conta"
+          }
+        },
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "calculadora",
+            "note": "Simulação com aporte mensal de R$ 500 e resultado acumulado"
+          },
+          "sfx": "click"
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "number",
+            "text": "R$ 30.000"
+          },
+          "sfx": "ding"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu? Procura o FinMoovi. São sete dias grátis.",
+      "durationSec": 4.2,
+      "shots": [
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          }
+        },
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "statement",
+            "text": "Veja sua própria conta"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Olha o que muda. Uma parte do salário paga o hoje, e a outra fica pro amanhã. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 9.2,
+      "shots": [
+        {
+          "anchor": "Olha",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bifurcacao"
+          }
+        },
+        {
+          "anchor": "parte",
+          "visual": {
+            "type": "statement",
+            "text": "Hoje ou amanhã?"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "outra",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bifurcacao"
+          }
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro precisa de direção"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja quanto seu dinheiro pode virar",
+    "target": "app"
+  },
+  "totalDurationSec": 48
+}
