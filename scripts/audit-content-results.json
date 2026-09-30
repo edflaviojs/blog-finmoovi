@@ -1,25 +1,19 @@
 [
   {
-    "file": "en-quotes-week-4-september-2026.md",
-    "dir": "posts",
+    "file": "en-economy.md",
+    "dir": "glossario",
     "severity": 3,
     "issues": {
-      "currency": 6,
+      "currency": 0,
       "brInstitutions": [],
       "brProducts": [],
-      "geoRefs": [
-        "no Brasil"
-      ],
-      "ptWordsCount": 0,
+      "geoRefs": [],
+      "ptWordsCount": 5,
       "brBrands": [],
-      "brAcronyms": [
-        "IPCA"
-      ],
+      "brAcronyms": [],
       "ptLeftovers": [
-        "ações",
-        "dívidas",
-        "reais",
-        "investimentos"
+        "ação",
+        "valor"
       ]
     }
   },
@@ -55,23 +49,6 @@
       "brAcronyms": [
         "LCI",
         "LCA"
-      ],
-      "ptLeftovers": []
-    }
-  },
-  {
-    "file": "es-cotizaciones-semana-4-septiembre-2026.md",
-    "dir": "posts",
-    "severity": 2,
-    "issues": {
-      "currency": 4,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [
-        "IPCA"
       ],
       "ptLeftovers": []
     }
@@ -3634,6 +3611,21 @@
     }
   },
   {
+    "file": "en-quotes-week-4-september-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-real-estate-funds-reits.md",
     "dir": "glossario",
     "severity": 0,
@@ -6379,6 +6371,21 @@
     }
   },
   {
+    "file": "es-cotizaciones-semana-4-septiembre-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-cotizaciones-semana-5-junio-2026.md",
     "dir": "posts",
     "severity": 0,
@@ -6621,6 +6628,21 @@
   {
     "file": "es-domina-tus-gastos-y-consigue-paz-financiera-real-en-2026.md",
     "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-economia.md",
+    "dir": "glossario",
     "severity": 0,
     "issues": {
       "currency": 0,
