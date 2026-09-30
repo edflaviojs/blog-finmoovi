@@ -62,7 +62,7 @@ Muchos usuarios evitan abrir el móvil mientras conducen o cocinan. La notificac
 - **Revisa mensualmente:** dedica 10 min el último domingo para confirmar que todas las cuentas fueron capturadas.
 
 ## La paz mental que llega con el control  
-Cuando dejas de correr detrás de facturas atrasadas, ganas espacio mental para enfocarte en proyectos personales, estudios o simplemente relajarte. FinMoovi no es solo una aplicación de finanzas; es un aliado que devuelve tiempo y tranquilidad. Como amigo que recomienda un servicio que realmente funciona, puedo decir que, después de usar los recordatorios por voz, mis noches quedaron libres de preocupación y mis mañanas, más productivas.
+Cuando dejas de correr detrás de facturas atrasadas, ganas espacio mental para enfocarte en proyectos personales, estudios o simplemente relajarte. FinMoovi no es solo una aplicación de [finanzas](/es/glossario/es-finanzas); es un aliado que devuelve tiempo y tranquilidad. Como amigo que recomienda un servicio que realmente funciona, puedo decir que, después de usar los recordatorios por voz, mis noches quedaron libres de preocupación y mis mañanas, más productivas.
 
 ![Consejos rápidos para potenciar las alertas](/images/posts/por-que-voce-ainda-esquece-a-data-de-vencimento-das-contas-e-6.webp)
 

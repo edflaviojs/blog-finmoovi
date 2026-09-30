@@ -26,7 +26,7 @@ Essa sensação de surpresa – abrir a conta e ver números que não correspond
 ### Por que a água escapa do nosso bolso
 A maioria das famílias tem hábitos que, embora pareçam inofensivos, são verdadeiros “vazamentos”. Deixar a torneira aberta ao ensaboar a louça, usar a máquina de lavar roupas com carga incompleta ou tomar banhos longos são práticas que multiplicam o consumo. Quando o gasto não é registrado, ele se torna invisível, e a conta de água reflete esse consumo acumulado como um peso inesperado no [orçamento mensal](/posts/como-organizar-suas-despesas-mensais-com-facilidade-e).
 
-Além do impacto direto nas finanças, o consumo exagerado de água também tem consequências ambientais. Cada litro que desperdiçamos representa energia para tratamento e transporte, contribuindo para a pressão sobre os recursos hídricos globais. Portanto, controlar o uso da água é um ato que beneficia tanto a carteira quanto o planeta.
+Além do impacto direto nas [finanças](/glossario/financas), o consumo exagerado de água também tem consequências ambientais. Cada litro que desperdiçamos representa energia para tratamento e transporte, contribuindo para a pressão sobre os recursos hídricos globais. Portanto, controlar o uso da água é um ato que beneficia tanto a carteira quanto o planeta.
 
 ### Estratégias simples para reduzir o consumo
 - **Instale aeradores nas torneiras**: eles reduzem o fluxo sem comprometer a pressão, trazendo [economia](/glossario/economia) imediata.

@@ -88,7 +88,7 @@ Muchos [aplicativos financieros](/es/posts/es-tambien-olvidas-anotar-tus-gastos)
 
 ## Datos que refuerzan la elección de la automatización
 
-Un informe de la *OECD* indica que la digitalización de procesos financieros personales puede aumentar la eficiencia en hasta un 25 % y reducir la incidencia de errores humanos (OECD, 2023). Además, *Investopedia* destaca que las tecnologías de reconocimiento de habla tienen una tasa de precisión superior al 95 % cuando se entrenan con vocabulario específico de finanzas (Investopedia, 2024). FinMoovi incorpora estas mejores prácticas, ofreciendo al usuario final una solución práctica y confiable.
+Un informe de la *OECD* indica que la digitalización de procesos financieros personales puede aumentar la eficiencia en hasta un 25 % y reducir la incidencia de errores humanos (OECD, 2023). Además, *Investopedia* destaca que las tecnologías de reconocimiento de habla tienen una tasa de precisión superior al 95 % cuando se entrenan con vocabulario específico de [finanzas](/es/glossario/es-finanzas) (Investopedia, 2024). FinMoovi incorpora estas mejores prácticas, ofreciendo al usuario final una solución práctica y confiable.
 
 ## Comienza hoy mismo
 
