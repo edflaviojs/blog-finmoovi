@@ -1,0 +1,118 @@
+{
+  "slug": "loop-remedio-todo-mes-comeca-assim",
+  "formato": "loop16",
+  "term": "O remédio de todo mês",
+  "category": "vida",
+  "keyword": "REMÉDIO",
+  "valor": "R$ 260",
+  "situacao": "remedio-todo-mes",
+  "gancho": "comeca-assim",
+  "ganchoFamilia": "começa assim",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "balde-furado",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Quer aprender a cuidar do remédio? Começa assim.",
+      "durationSec": 3.12,
+      "shots": [
+        {
+          "anchor": "aprender",
+          "visual": {
+            "type": "statement",
+            "text": "Começa assim"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "cuidar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "No mês passado, receita custou R$ 260, e eu senti aperto.",
+      "durationSec": 4.29,
+      "shots": [
+        {
+          "anchor": "passado",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "receita",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 260 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Aí separei o dinheiro do remédio no meu aplicativo, caladinho.",
+      "durationSec": 3.9,
+      "shots": [
+        {
+          "anchor": "separei",
+          "visual": {
+            "type": "statement",
+            "text": "Separei o remédio"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Então começo pelo remédio. Quer aprender a cuidar do remédio?",
+      "durationSec": 3.9,
+      "shots": [
+        {
+          "anchor": "começo",
+          "visual": {
+            "type": "statement",
+            "text": "Começo pelo remédio"
+          }
+        },
+        {
+          "anchor": "remédio",
+          "visual": {
+            "type": "statement",
+            "text": "Começa assim"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.21
+}
