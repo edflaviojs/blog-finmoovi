@@ -657,6 +657,36 @@
       "glossaryRef": "juros-de-mora",
       "status": "pending",
       "sourceKeyword": "juros de mora o que e"
+    },
+    {
+      "id": "kw-5-erros-ao-financiar-seu-casa-minha-vida",
+      "theme": "5 erros ao financiar seu Casa Minha Vida",
+      "angle": "Lista rápida de 5 erros comuns que as pessoas cometem ao fechar o financiamento do Casa Minha Vida, com exemplos de valores reais (ex.: perder R$15.000 de subsídio ou pagar R$200 a mais na parcela).",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "financiamento-casa-minha-vida",
+      "status": "pending",
+      "sourceKeyword": "como funciona minha casa minha vida financiamento"
+    },
+    {
+      "id": "kw-quando-voce-gasta-r-2-000-e-investe-r-500-o-que-acontece",
+      "theme": "Quando você gasta R$2.000 e investe R$500: o que acontece?",
+      "angle": "Mostra, em menos de 1 minuto, como o consumo de R$2.000 mensais e um investimento de R$500 afetam sua renda futura, usando números reais e um cálculo rápido de juros compostos para comparar o que fica no bolso hoje vs o que pode render em 5 anos. O vídeo simula a situação, destaca o trade‑off e provoca o espectador a repensar onde está alocando seu dinheiro.",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "relacao-consumo-investimento",
+      "status": "pending",
+      "sourceKeyword": "no contexto da economia a relacao entre consumo investimento"
+    },
+    {
+      "id": "kw-5-erros-que-te-fazem-achar-que-financas-sao-so-numeros",
+      "theme": "5 erros que te fazem achar que finanças são só números",
+      "angle": "Mostra situações do dia a dia – como confundir gasto com investimento, achar que salário cobre tudo, ignorar pequenas despesas, não separar contas e achar que planilha resolve tudo – e revela como corrigir cada erro com exemplos reais (ex.: R$ 150 de lanche vira R$ 1.800 ao ano).",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "financeiro",
+      "status": "pending",
+      "sourceKeyword": "o que e financeiro"
     }
   ]
 }
