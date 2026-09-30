@@ -1,0 +1,118 @@
+{
+  "slug": "loop-decimo-terceiro-comeca-assim",
+  "formato": "loop16",
+  "term": "O 13º antes que suma",
+  "category": "vida",
+  "keyword": "13º",
+  "valor": "R$ 2.400",
+  "situacao": "decimo-terceiro",
+  "gancho": "comeca-assim",
+  "ganchoFamilia": "começa assim",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "fumaca",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Quer aprender a guardar seu dinheiro? Começa assim.",
+      "durationSec": 2.9,
+      "shots": [
+        {
+          "anchor": "aprender",
+          "visual": {
+            "type": "statement",
+            "text": "Guardar meu dinheiro"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "guardar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Quando meu décimo terceiro caiu, dois mil e quatrocentos reais sumiram no mercado e nas contas.",
+      "durationSec": 5.79,
+      "shots": [
+        {
+          "anchor": "décimo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "terceiro",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 2.400 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Aí eu vi que precisava separar o dinheiro antes de pagar.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "precisava",
+          "visual": {
+            "type": "statement",
+            "text": "Separei antes de pagar"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "separar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Então, guardar meu dinheiro começa sempre assim.",
+      "durationSec": 2.53,
+      "shots": [
+        {
+          "anchor": "guardar",
+          "visual": {
+            "type": "statement",
+            "text": "Guardar começa assim"
+          }
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Guardar meu dinheiro"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
