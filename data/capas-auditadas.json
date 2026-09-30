@@ -5289,6 +5289,21 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-09-29"
+    },
+    "economia-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-30"
+    },
+    "economia-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-30"
+    },
+    "economia.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-09-30"
     }
   },
   "corrigidas": {
@@ -5953,6 +5968,6 @@
       "motivo": "tem texto escrito (\"I'm sorry, I'm not able to identify the people in this image.\")"
     }
   },
-  "totalAcervo": 1058,
-  "ultimaCorrida": "2026-09-29"
+  "totalAcervo": 1061,
+  "ultimaCorrida": "2026-09-30"
 }
