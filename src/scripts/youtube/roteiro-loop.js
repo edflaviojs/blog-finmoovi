@@ -66,7 +66,13 @@ const PALAVRAS_POR_SEGUNDO = 2.76;
 const SOBRECARGA_SEC = 0.80;
 const PALAVRAS_ALVO = Math.round((DURACAO_ALVO_SEC - SOBRECARGA_SEC) * PALAVRAS_POR_SEGUNDO); // 42
 const PALAVRAS_MIN = 32;
-const PALAVRAS_MAX = 46;
+/**
+ * ♦ 30/09/2026 — APERTADO, ordem do dono: nunca passar de 16-17s de verdade.
+ * Em 46 palavras (16,67s de fala + 0,80s de sobrecarga ≈ 17,5s), e a produção já
+ * mostrou vídeos de até 20s no ar — a régua de palavras sozinha não travava o alvo.
+ * Em 44 palavras isso cai para ≈16,7s, bem mais perto do que foi pedido.
+ */
+const PALAVRAS_MAX = 44;
 
 /** Quatro falas = quatro batidas visuais em 16s, uma a cada ~4s. */
 const N_FALAS = 4;

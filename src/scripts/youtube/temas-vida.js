@@ -10,9 +10,9 @@
  *
  * A saída não é uma fila maior: é uma MATRIZ.
  *
- *     40 situações da vida  ×  10 ganchos  =  400 vídeos diferentes
+ *     40 situações da vida  ×  11 ganchos  =  440 vídeos diferentes
  *
- * A 2 por dia isso dá mais de seis meses, e cresce só de acrescentar uma linha aqui
+ * A 2 por dia isso dá mais de sete meses, e cresce só de acrescentar uma linha aqui
  * — sem IA, sem custo, sem tocar em nada do que já corre.
  *
  * ═══ O QUE MANDA NO CONTEÚDO ═══
@@ -182,6 +182,15 @@ export const GANCHOS = [
   { id: 'voces-viram', familia: 'vocês viram', molde: 'Gente, vocês viram que [X]…', assinatura: /voc[êe]s viram/i },
   { id: 'e-serio-que', familia: 'é sério que', molde: 'É sério que ninguém está falando de [X]?', assinatura: /[ée] s[ée]rio que/i },
   { id: 'nao-vai-acreditar', familia: 'não vai acreditar', molde: 'Você não vai acreditar, mas…', assinatura: /n[ãa]o vai acreditar/i },
+  /**
+   * ♦ 30/09/2026 — O 11º GANCHO, ordem do dono.
+   *
+   * Os 10 de cima são comando ou provocação ("Nunca faça X", "Tá perdendo Y"); nenhum
+   * é confissão pura. O mais perto disso, "depois de anos", é hoje o PIOR dos 10 em
+   * retenção medida (mediana 0%, amostra de 8) — então isto entra como TESTE, não como
+   * substituição, e roda no mesmo rodízio e na mesma medição que os outros 10.
+   */
+  { id: 'aconteceu-comigo', familia: 'aconteceu comigo', molde: 'Isso aconteceu comigo semana passada', assinatura: /aconteceu comigo/i },
 ];
 
 // ─── estado ───────────────────────────────────────────────────────────────────
