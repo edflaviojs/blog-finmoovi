@@ -165,11 +165,14 @@ RESPONDA APENAS COM UM JSON, sem comentarios e sem blocos de codigo:
 
 REGRAS DO TITULO (e o que mais decide se alguem clica):
 - entre ${MIN_TITULO} e ${MAX_TITULO} caracteres;
-- a PALAVRA-CHAVE do assunto vem A FRENTE, porque e por ela que se procura;
-- a seguir, a OBJECAO REMOVIDA — aquilo que a pessoa teme ter de fazer e nao vai ter ("sem apertar mais o mes", "sem cortar o cafezinho", "sem ganhar mais");
+- a PALAVRA-CHAVE do assunto fica NO INICIO do titulo — ou logo depois de UMA palavra curta antes dela, tipo "como" ("Como os juros do cartão…") — porque e por ela que se procura;
+- 🔴 ORDEM DO DONO (30/09/2026): NUNCA separe a palavra-chave do resto com dois-pontos (":"). O titulo e UMA FRASE SO, corrida, do inicio ao fim — sem essa pausa no meio.
+  ✗ ERRADO (o estilo antigo, agora proibido): "Juros do cartão: como evitar".
+  ✓ CERTO: "Juros do cartão como evitar" ou "Como os juros do cartão podem te fazer gastar mais no fim do mês".
+- a frase termina na OBJECAO REMOVIDA — aquilo que a pessoa teme ter de fazer e nao vai ter ("sem apertar mais o mes", "sem cortar o cafezinho", "sem ganhar mais");
 - em portugues do Brasil, sem emojis, SEM PALAVRAS TODAS EM MAIUSCULAS;
 - nao pode prometer enriquecer, nem dizer "segredo", "ninguem te conta", "o que os bancos escondem";
-- EXEMPLO DO PADRAO ACEITE (de outro assunto): "Dívida do cartão: como sair do vermelho sem apertar mais o mês".
+- EXEMPLO DO PADRAO ACEITE (de outro assunto): "Como sair do vermelho da dívida do cartão sem apertar mais o mês".
   🔴 COPIE A FORMA DESSE EXEMPLO, NUNCA AS PALAVRAS. A objecao do seu titulo TEM DE SER OUTRA — nao escreva "sem apertar mais o mes". Escreva a objecao que ESTE assunto levanta: "sem cortar o cafezinho", "sem ganhar mais", "sem vender nada", "sem depender de sorte", "com o salario que voce ja tem". Um titulo que acaba como o exemplo e recusado por codigo.${caudasProibidas.length ? `\n  🔴 E NAO PODE ACABAR COMO NENHUM DESTES, que ja estao na fila do canal: ${caudasProibidas.map((c) => `"…${c}"`).join(', ')}.` : ''}
 
 SE o titulo viral for sobre uma pessoa com nome, uma empresa, uma aposta, ou nao for sobre o dinheiro de quem assiste, responda {"foraDoTema": true}.
@@ -204,8 +207,13 @@ const TITULOS_PROIBIDOS = [
  * resposta que serve.
  */
 /**
- * A CAUDA DE UM TÍTULO — a objeção removida, que é a parte depois dos dois pontos.
- * *"Dívida do cartão: **como sair do vermelho sem apertar mais o mês**"*.
+ * A CAUDA DE UM TÍTULO — a objeção removida, que costumava ser a parte depois dos dois
+ * pontos: *"Dívida do cartão: **como sair do vermelho sem apertar mais o mês**"*.
+ *
+ * ⚠️ Desde 30/09/2026 o título não leva mais ":" (é uma frase corrida) — sem ele, esta
+ * função devolve o TÍTULO INTEIRO como cauda. A comparação de repetição (`caudasBatem`)
+ * continua a valer: como a objeção segue no FIM da frase, as últimas palavras ainda são
+ * o que decide se dois títulos terminam parecido.
  */
 export function caudaDoTitulo(titulo) {
   const t = String(titulo || '');
@@ -223,8 +231,13 @@ export function caudaDoTitulo(titulo) {
  *
  * > **O exemplo ensina a FORMA e o modelo copia as PALAVRAS.** Dois vídeos seguidos na
  * > lista do canal a acabar na mesma frase não parecem um padrão: parecem um defeito.
+ *
+ * ⚠️ 30/09/2026 — o exemplo perdeu os dois-pontos (ordem do dono: título agora é frase
+ * corrida, sem essa pausa). `caudaDoTitulo` continua a mesma: sem ":" no título, ela usa
+ * a frase INTEIRA como cauda — e como a objeção ("sem apertar mais o mês") continua no
+ * FIM da frase, a mesma âncora de comparação de sempre não muda, só o que vem antes dela.
  */
-const CAUDA_DO_EXEMPLO = caudaDoTitulo('Dívida do cartão: como sair do vermelho sem apertar mais o mês');
+const CAUDA_DO_EXEMPLO = caudaDoTitulo('Como sair do vermelho da dívida do cartão sem apertar mais o mês');
 
 /**
  * Duas caudas dizem o mesmo — e são precisas DUAS réguas, porque a primeira sozinha
