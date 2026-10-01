@@ -53,6 +53,13 @@ import { fileURLToPath, pathToFileURL } from 'url';
  * É a §42.5 noutro sítio: *o script correu, disse quase-✅, e não fez o trabalho.*
  */
 import { execFileSync } from 'child_process';
+/**
+ * ⚠️ `generateText` é o MESMO transporte de texto que `roteiro-loop.js`/`roteiro-longo.js`
+ * já usam (Cerebras → Groq → Cloudflare) — só para o estilo stickman (30/09/2026), que
+ * precisa de 4 campos curtos (emoção, rosto, metáfora, texto) por vídeo. Antes desta
+ * mudança, este ficheiro só falava com a Manus (a imagem) — nunca com um texto-IA.
+ */
+import { generateText } from '../apis/kie-ai.js';
 import {
   pedirAgente, descarregar, CUSTO_POR_IMAGEM, custoPorImagem, quantasCabem, saldos, cabemAoTodo,
 } from './lib/manus-client.js';
@@ -231,6 +238,125 @@ RIGHT HALF (about 45% of the frame): solid background in the channel's near-blac
 BRAND MARK — small and unobtrusive, in the bottom-right corner only: the word "FinMoovi" in a modern bold sans-serif, "Fin" in white and "Moovi" filled with a gradient from cyan (${PALETA.ciano}) to magenta (${PALETA.magenta}).
 
 STRICT RULES — this MUST look like a real, unstaged photograph of one real human face: no 3D render, no video-game look, no illustration or cartoon style anywhere in the image, no beauty filter. No text anywhere in the image except the words specified above and the brand mark. No other logos, no watermark, no signature, no placeholder text. Every Portuguese word must be spelled EXACTLY as written, with the accents shown. Extreme contrast, punchy, readable at 300 pixels wide on a phone. Generate the image and ATTACH the final PNG file to your reply. Do not ask me any questions — if something is ambiguous, choose the most realistic, most emotionally raw option.`;
+}
+
+/**
+ * ═══ 🎨 O PADRÃO STICKMAN — NOVO PADRÃO DA CAPA, ordem do dono (30/09/2026) ═══
+ *
+ * Substitui o teste de rosto realista (`promptDaCapaComRosto`, acima) como o padrão
+ * usado a partir de agora. Boneco-palito (stickman) de traço branco grosso, olhando
+ * para uma ilustração monstruosa que DEVORA o assunto do vídeo, com o texto (vilão +
+ * ação, 2 linhas) dentro da própria ilustração.
+ *
+ * ⚠️ **O TEMPLATE É FIXO — SÓ 4 CAMPOS VARIAM**, e são eles que contam a história de
+ * cada vídeo: a emoção, a descrição facial do boneco, a metáfora visual (o que está
+ * sendo devorado) e o texto de 2 linhas. É a mesma disciplina do `CENA_DA_CAPA` (a
+ * metáfora já escolhida pelo código, nunca inventada à toa) — só que aqui os 4 campos
+ * nascem do ASSUNTO deste vídeo específico (ex.: "cartão de crédito"), não de um
+ * catálogo fixo de 32 metáforas financeiras abstratas.
+ */
+export function promptDaCapaStickman({ emocao, descricaoFacial, metaforaVisual, linha1, linha2 }) {
+  return `YouTube thumbnail, 16:9, 1280x720, motion graphics stickman style, ultra high contrast, designed to stop scroll on phone.
+
+LEFT HALF 55%: motion graphics STICK FIGURE MAN — minimalist stickman, thick bold white outline, circle head, simple line body, modern flat motion design. The stickman is in EXTREME close-up, head large filling frame from forehead to chin, looking to the RIGHT side directly at the illustration on the right half. Expression is ${emocao} — ${descricaoFacial}. Background near-black blue ${PALETA.fundo} with subtle abstract motion shapes in cyan ${PALETA.ciano} and magenta ${PALETA.magenta}.
+
+Thin sharp vertical pure white light line dividing halves.
+
+RIGHT HALF 45%: solid background near-black blue ${PALETA.fundo}. Dominating the right half, a huge illustration of ${metaforaVisual}. Illustration style is bold white line art with magenta ${PALETA.magenta} and cyan ${PALETA.ciano} blood/drip accents, interior dark void. Inside the cavity of the illustration, centered, text reads exactly in massive bold heavy condensed sans-serif ALL CAPS pure white:
+${linha1}
+${linha2}
+Text is INSIDE the illustration, integrated as part of it, being swallowed/devoured/crushed by it. Text must be fully readable.
+
+BRAND MARK bottom-right corner only: "FinMoovi" in modern bold sans-serif, "Fin" in white and "Moovi" filled with gradient from cyan ${PALETA.ciano} to magenta ${PALETA.magenta}, small and unobtrusive.
+
+No other text, no other logos, extreme contrast, readable at 300px wide, stickman looking at illustration.`;
+}
+
+/**
+ * O PEDIDO QUE PREENCHE OS 4 CAMPOS — é o "dicionário" que o dono escreveu, traduzido
+ * em instrução para a IA de texto (NUNCA para a IA de imagem, que só recebe o resultado
+ * já pronto em `promptDaCapaStickman`).
+ */
+function pedidoCamposStickman({ titulo, tema, promessa }) {
+  return `Você escreve o "dicionário" de uma capa de YouTube no estilo stickman do canal FinMoovi (educação financeira, Brasil).
+
+TÍTULO DO VÍDEO: "${titulo}"
+TEMA: "${tema || ''}"
+PROMESSA DO VÍDEO: "${promessa || ''}"
+
+Preencha 4 campos. Os 3 primeiros em INGLÊS (é a língua que a IA de imagem entende melhor); o texto da capa é em PORTUGUÊS.
+
+1. "emocao": a emoção principal que a capa tem que causar, 1 a 3 palavras em inglês. Exemplos: dívida → "despair"; golpe → "shock"; investimento que deu ruim → "anger".
+2. "descricaoFacial": como essa emoção aparece num rosto de boneco-palito (sobrancelhas, boca, olhos), uma frase curta em inglês. Exemplos: despair → "eyebrows pulled up together, mouth open in a silent gasp, eyes watery"; shock → "eyebrows raised high, mouth wide open round, eyes bulging".
+3. "metaforaVisual": o que está sendo DEVORADO ou ESMAGADO por uma ilustração ameaçadora (boca monstruosa, carimbo, etc.), representando o ASSUNTO deste vídeo — não um conceito abstrato. Frase curta em inglês. Exemplos: tema "juros" → "a monstrous open mouth with sharp fangs swallowing a percentage symbol"; tema "cartão de crédito" → "a monstrous mouth swallowing a credit card with bite marks"; tema "nome sujo" → "a giant stamp crushing a dirty name document inside a monstrous mouth".
+4. "linha1" e "linha2": o texto que aparece DENTRO da ilustração, em PORTUGUÊS, TUDO MAIÚSCULO, sempre 2 linhas. Linha 1 é o "vilão" (1 a 2 palavras). Linha 2 é a "ação/consequência" (2 a 3 palavras). Exemplos: "CARTÃO" / "TE AFUNDA"; "NOME SUJO" / "TE PRENDE"; "GOLPE" / "DO PIX".
+
+Responda SÓ com JSON, sem comentário nenhum nem bloco de código:
+{"emocao": "...", "descricaoFacial": "...", "metaforaVisual": "...", "linha1": "...", "linha2": "..."}`;
+}
+
+/** As checagens duras dos 4 campos — o texto da capa é a única parte que o dono vai LER
+ *  sem precisar olhar a imagem, então é a única que vale a pena travar por regra. */
+export function validarCamposStickman(c) {
+  const erros = [];
+  if (!c || typeof c !== 'object') return ['a resposta não é um objeto'];
+  if (!String(c.emocao || '').trim()) erros.push('sem "emocao"');
+  if (!String(c.descricaoFacial || '').trim()) erros.push('sem "descricaoFacial"');
+  if (!String(c.metaforaVisual || '').trim()) erros.push('sem "metaforaVisual"');
+  const l1 = String(c.linha1 || '').trim();
+  const l2 = String(c.linha2 || '').trim();
+  if (!l1) erros.push('sem "linha1"');
+  if (!l2) erros.push('sem "linha2"');
+  if (l1) {
+    const n = l1.split(/\s+/).filter(Boolean).length;
+    if (n > 2) erros.push(`"linha1" tem ${n} palavras (máximo 2): "${l1}"`);
+    if (l1.toLocaleUpperCase('pt-BR') !== l1) erros.push(`"linha1" não está em maiúsculas: "${l1}"`);
+  }
+  if (l2) {
+    const n = l2.split(/\s+/).filter(Boolean).length;
+    if (n > 3) erros.push(`"linha2" tem ${n} palavras (máximo 3): "${l2}"`);
+    if (l2.toLocaleUpperCase('pt-BR') !== l2) erros.push(`"linha2" não está em maiúsculas: "${l2}"`);
+  }
+  return erros;
+}
+
+/**
+ * Pede os 4 campos à IA de texto, com repetição corretiva — o mesmo desenho do
+ * `gerarLoop` em `roteiro-loop.js`: a IA erra, o código aponta exatamente o quê, e ela
+ * tenta de novo com a correção na mão.
+ *
+ * ⚠️ **Quem chama TEM de ter um plano B** (ver o uso em `main`, mais abaixo): esta
+ * função pode lançar depois de esgotar as tentativas, e uma capa não pode deixar de
+ * sair só porque o texto-IA teve um dia ruim — essa é a regra que já vale para tudo
+ * nesta corrida ("nunca para e não gera errado").
+ */
+export async function camposDaCapaStickman({ titulo, tema, promessa }, { tentativas = 3 } = {}) {
+  const base = pedidoCamposStickman({ titulo, tema, promessa });
+  let ultimoErro = 'sem tentativas';
+  for (let i = 1; i <= tentativas; i++) {
+    const pedido = i === 1
+      ? base
+      : `${base}\n\n⚠️ A resposta anterior foi recusada: ${ultimoErro}. Corrija e responda só o JSON.`;
+    let bruto;
+    try {
+      bruto = await generateText(pedido, { maxTokens: 500, temperature: 0.7 });
+    } catch (err) {
+      ultimoErro = err.message;
+      continue;
+    }
+    let campos;
+    try {
+      const m = String(bruto).match(/\{[\s\S]*\}/);
+      campos = m ? JSON.parse(m[0]) : null;
+    } catch (err) {
+      ultimoErro = `JSON inválido (${err.message})`;
+      continue;
+    }
+    const erros = validarCamposStickman(campos);
+    if (!erros.length) return campos;
+    ultimoErro = erros.join('; ');
+  }
+  throw new Error(`não deu para preencher os campos do stickman após ${tentativas} tentativas: ${ultimoErro}`);
 }
 
 /** AS IMAGENS DO MEIO DO VÍDEO — as três que o dono aprovou, cada uma presa a uma cena. */
@@ -664,11 +790,36 @@ async function main() {
     cenaDaCapa = cena;
     console.log(`   🎭 metáfora do vídeo: ${fio || '(nenhuma — vai a cena de reserva)'}`);
     console.log(`   🖼️  molde: ${molde.nome}`);
-    trabalhos.push({
-      ficheiro: `capa-${molde.nome}`,
-      onde: `a miniatura do YouTube (molde "${molde.nome}", metáfora "${fio || 'reserva'}")`,
-      prompt: promptDaCapa({ titulo, selo, molde, cena }),
-    });
+
+    /**
+     * ═══ 🎨 O PADRÃO STICKMAN PASSA A SER O PADRÃO, ordem do dono (30/09/2026) ═══
+     * Tenta primeiro o estilo novo. Se a IA de texto que preenche os 4 campos falhar
+     * (ver `camposDaCapaStickman`), cai no sistema antigo de 6 moldes — a MESMA regra
+     * de sempre nesta corrida: uma peça nova não pode ser a razão de o vídeo ficar sem
+     * capa. `selo: null` no job do stickman porque esse estilo não mostra número
+     * nenhum (ver a nota em `conferirSelo`) — sem isso, uma capa stickman perfeita
+     * seria recusada por não dizer um número que nunca teve a intenção de mostrar.
+     */
+    let jobDaCapa;
+    try {
+      const campos = await camposDaCapaStickman({ titulo, tema: roteiro.tema, promessa: roteiro.promessa });
+      console.log(`   🤸 stickman: emoção "${campos.emocao}" · devorando "${campos.metaforaVisual}" · texto "${campos.linha1} / ${campos.linha2}"`);
+      jobDaCapa = {
+        ficheiro: 'capa-stickman',
+        onde: `a miniatura do YouTube (padrão stickman, devorando "${campos.metaforaVisual}")`,
+        prompt: promptDaCapaStickman(campos),
+        selo: null,
+      };
+    } catch (err) {
+      console.log(`   ⚠️ o padrão stickman falhou (${err.message.split('\n')[0]}) — caindo no molde antigo "${molde.nome}".`);
+      jobDaCapa = {
+        ficheiro: `capa-${molde.nome}`,
+        onde: `a miniatura do YouTube (molde "${molde.nome}", metáfora "${fio || 'reserva'}")`,
+        prompt: promptDaCapa({ titulo, selo, molde, cena }),
+        selo,
+      };
+    }
+    trabalhos.push(jobDaCapa);
   }
   if (so !== 'capa') {
     const juro = ficha?.taxas?.rotativoAoMes;
@@ -713,15 +864,24 @@ async function main() {
    * ⚠️ **E ISTO NÃO CONFERE SE A CAPA É BONITA.** Isso é gosto, e gosto mede-se com o
    * dono a olhar. O que se mede aqui é VERDADE: o número que lá está é o do vídeo.
    */
-  const conferirSelo = (caminhoJpg) => {
-    if (!selo) return { ok: true, porque: 'esta capa não leva selo de número' };
+  /**
+   * ⚠️ **`seloDoJob`, e não a variável `selo` direto — 30/09/2026.** O padrão stickman
+   * não mostra número nenhum (o dono não pediu); se esta função continuasse a olhar
+   * sempre o `selo` do vídeo (que pode existir mesmo quando a capa é stickman), uma
+   * capa stickman PERFEITA seria recusada por "não dizer o número" — um número que o
+   * próprio desenho nunca teve a intenção de mostrar. Cada job diz o seu próprio selo
+   * (ou `null`, que salta a checagem); o parâmetro por omissão mantém o comportamento
+   * de sempre para quem não passar nada.
+   */
+  const conferirSelo = (caminhoJpg, seloDoJob = selo) => {
+    if (!seloDoJob) return { ok: true, porque: 'esta capa não leva selo de número' };
     if (!haLeitor()) return { ok: true, porque: '⚠️ não há leitor de texto nesta máquina — ninguém conferiu o número' };
     let lido;
     try { lido = lerTextoDaImagem(caminhoJpg).legiveis.join(' '); } catch (err) { return { ok: true, porque: `⚠️ o leitor falhou (${err.message}) — ninguém conferiu` }; }
     // O número inteiro, sem separadores — é assim que o OCR o costuma devolver.
-    const alvo = String(Math.trunc(Number(selo.valor)));
+    const alvo = String(Math.trunc(Number(seloDoJob.valor)));
     if (lido.replace(/[.\s]/g, '').includes(alvo)) return { ok: true, porque: `conferido: a capa diz ${alvo}` };
-    return { ok: false, porque: `o selo devia dizer R$ ${alvo} ${selo.rotulo} e leu-se: ${lido.slice(0, 120)}` };
+    return { ok: false, porque: `o selo devia dizer R$ ${alvo} ${seloDoJob.rotulo} e leu-se: ${lido.slice(0, 120)}` };
   };
 
   /** Quantos pedidos foram mesmo pagos — é o divisor da conta do custo real, lá em baixo.
@@ -819,16 +979,25 @@ async function main() {
              * conferir coisa nenhuma — e é um erro que esta casa já cometeu.
              */
             if (ehCapa) {
-              const v = conferirSelo(paraOVideo);
+              const v = conferirSelo(paraOVideo, Object.hasOwn(t, 'selo') ? t.selo : selo);
               if (v.ok) {
                 console.log(`         ${v.porque.startsWith('⚠️') ? v.porque : `✅ ${v.porque}`}`);
                 /**
                  * ⚠️ O molde só se dá por gasto quando a capa FICA — é o mesmo princípio
                  * do caderno de cenas: guarda-se depois de a coisa existir, senão o
                  * caderno passa a dizer que saiu um molde que ninguém chegou a ver.
+                 *
+                 * ⚠️ **A capa stickman NÃO regista molde nenhum** (30/09/2026) — ela não
+                 * usa nenhum dos 6 moldes antigos, e marcar `molde.nome` como "gasto"
+                 * aqui mentiria no caderno: diria que um enquadramento saiu quando quem
+                 * saiu foi outro, inteiramente diferente.
                  */
-                capaDeHoje = { ficheiro: `${base}.jpg`, molde: molde.nome, quem: 'Manus' };
-                if (guardarMolde(slug, molde.nome)) console.log(`         📓 molde "${molde.nome}" guardado — os próximos vídeos vão evitá-lo`);
+                if (t.ficheiro === 'capa-stickman') {
+                  capaDeHoje = { ficheiro: `${base}.jpg`, molde: 'stickman', quem: 'Manus' };
+                } else {
+                  capaDeHoje = { ficheiro: `${base}.jpg`, molde: molde.nome, quem: 'Manus' };
+                  if (guardarMolde(slug, molde.nome)) console.log(`         📓 molde "${molde.nome}" guardado — os próximos vídeos vão evitá-lo`);
+                }
               } else {
                 console.log(`         ❌ RECUSADA — ${v.porque}`);
                 console.log('            Uma miniatura é a primeira coisa que se vê do canal; um número que o vídeo não diz fica lá para sempre.');
