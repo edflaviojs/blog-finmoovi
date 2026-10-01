@@ -1,7 +1,7 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-09-30T10:53:29.145Z
-**Posts:** 492 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 64
+**Gerado em:** 2026-10-01T11:21:06.859Z
+**Posts:** 495 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 66
 
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
@@ -42,6 +42,9 @@
 
 **como-montar-um-orcamento-que-realmente-funciona-em-2026.md**
 - _Ajuste conforme a realidade._
+
+**como-saber-se-sua-meta-de-economia-esta-realmente-avancando.md**
+- _Segundo a *World Bank*, a maioria das famílias que não tem um acompanhamento visual claro dos seus objetivos financeiros tende a postergar investimentos de médio prazo em até 30 %._
 
 **consorcio-vs-financiamento-qual-vale-mais-a-pena-em-2026.md**
 - _As taxas de juros variam bastante, mas em 2026 a média global de juros para crédito ao consumo gira em torno de 12 % a 18 % ao ano, segundo dados da World Bank._
@@ -96,6 +99,9 @@
 
 **en-how-to-diversify-with-variable-income-assets-in-2026.md**
 - _**Rebalance quarterly** – adjust the mix between fixed and variable income according to how comfortable you are with volatility._
+
+**en-how-to-know-if-your-savings-goal-is-actually-moving-forward.md**
+- _According to the *World Bank*, families that don’t have a clear visual way to follow their financial goals postpone medium‑term investments by up to 30 %._
 
 **en-private-pension-vs-investing-on-your-own-which-is-worth-it.md**
 - _These plans are offered by financial institutions and insurance companies, and can be customized according to the investor's needs and objectives._
