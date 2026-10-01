@@ -9,6 +9,7 @@ locale: "en"
 tags: ["savings","CD","investments","FinMoovi","financial comparison","2026 returns","investment choice","savings vs CD","where to keep money"]
 author: "FinMoovi"
 publishedAt: 2026-08-21
+updatedAt: "2026-10-01"
 readingTime: 7
 featured: false
 translationKey: "poupanca-vs-cdb-qual-vale-mais-a-pena-em-2026"
@@ -89,4 +90,13 @@ Yes. Daily liquidity and tax‑free status make a savings account a convenient f
 
 ### How does FinMoovi help me track my investments?  
 The app offers smart capture of statements, [automatic categorization](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end), maturity alerts, and return projections, making it easy to monitor both savings accounts and CDs in real time.
+
+## What’s New in 2026: Regulatory Tweaks & Digital‑Bank Options
+
+Since the original post, the Federal Reserve’s “flexible‑term” rule has taken effect, giving banks a little more leeway to set CD rates that reflect short‑term market moves. In practice, this means you’ll see a few more “step‑up” CDs that automatically raise the rate after six months, without you having to roll over the whole balance.  
+
+At the same time, many online‑only banks have launched high‑yield savings accounts that lock in the same rate you’d get on a short‑term CD, but keep the money liquid. If you’re comfortable with a modest “early‑withdrawal” fee, these accounts can be a handy bridge between a regular savings account and a traditional CD.  
+
+Finally, a new rule requires banks to disclose any “early‑withdrawal” penalties more clearly on their websites. Before you sign, scroll down to the fine‑print, compare the penalty with the extra interest you’d earn, and decide if the trade‑off makes sense for your cash‑flow needs. This extra transparency helps you avoid surprises and choose the product that truly fits your short‑term goals.
+
 <!-- SCHEMA_AUTO:{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do CDs always beat savings accounts?","acceptedAnswer":{"@type":"Answer","text":"Not necessarily. Returns depend on the interbank rate and the percentage you lock in. When the base rate is very low, the gap can shrink, but generally CDs tend to outperform savings accounts."}},{"@type":"Question","name":"Can I withdraw money from a CD before it matures?","acceptedAnswer":{"@type":"Answer","text":"Yes, but early withdrawals usually reduce the return proportionally to the remaining time and may incur penalties or loss of some interest."}},{"@type":"Question","name":"Is a savings account still worthwhile for an emergency fund?","acceptedAnswer":{"@type":"Answer","text":"Yes. Daily liquidity and tax‑free status make a savings account a convenient first layer of an emergency reserve, especially if you haven’t built a fully funded safety net yet."}},{"@type":"Question","name":"How does FinMoovi help me track my investments?","acceptedAnswer":{"@type":"Answer","text":"The app offers smart capture of statements, automatic categorization, maturity alerts, and return projections, making it easy to monitor both savings accounts and CDs in real time."}}]} -->

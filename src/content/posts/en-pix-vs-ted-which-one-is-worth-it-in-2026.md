@@ -9,7 +9,7 @@ locale: "en"
 tags: ["PIX","TED","bank transfer","banking fees","FinMoovi","2026","personal finance","pix vs ted"]
 author: "FinMoovi"
 publishedAt: 2026-07-24
-updatedAt: "2026-09-30"
+updatedAt: "2026-10-01"
 readingTime: 5
 featured: false
 translationKey: "pix-vs-ted-qual-vale-mais-a-pena-em-2026"
@@ -131,4 +131,12 @@ PIX works instantly, 24/7, even on weekends and holidays. As soon as you hit “
 TED, on the other hand, processes during banking hours on business days. It’s still fast—usually within the same day—but you might wait a few hours or, if you initiate it after the cut‑off time, until the next business day. The advantage of TED is that many banks allow you to schedule transfers for a later date and handle higher limits without extra steps.
 
 So, when you need it now, go with PIX. If you’re okay with a short wait and prefer the traditional route, TED does the job. Both are safe; just pick the one that matches your timing needs.
+
+## 2026 Update: New Limits and Real‑World Tips
+
+Both TED and PIX have had their limits nudged upward this year, meaning you can move larger sums without hitting a wall. In practice, that translates to fewer split‑transactions for everyday purchases like a weekend getaway or a home‑renovation material haul.  
+
+A quick tip: if you’re sending money to a friend who needs it instantly—say, to cover a surprise birthday gift—PIX still wins on speed, arriving in seconds. For larger, scheduled payments such as a monthly rent or a supplier invoice, TED’s slightly longer processing time is offset by its built‑in confirmation step, giving you a clear receipt you can reference later.  
+
+Another practical tweak: many banks now let you set a default transfer method in their apps. Choose PIX for anything under the new personal limit and switch to TED for amounts that exceed it. This way you avoid manual toggling and keep your cash flow smooth without extra hassle.
 
