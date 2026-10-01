@@ -1,0 +1,118 @@
+{
+  "slug": "loop-limpar-o-nome-aconteceu-comigo",
+  "formato": "loop16",
+  "term": "Limpar o nome",
+  "category": "vida",
+  "keyword": "NOME",
+  "valor": "R$ 380",
+  "situacao": "limpar-o-nome",
+  "gancho": "aconteceu-comigo",
+  "ganchoFamilia": "aconteceu comigo",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "buraco",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Isso aconteceu comigo semana passada",
+      "durationSec": 1.81,
+      "shots": [
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "Meu nome travou"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Na loja, trezentos e oitenta reais de dívida velha travaram meu nome",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "trezentos",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "oitenta",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 380"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Eu fui atrás, limpei meu nome e consegui comprar tranquilo mesmo depois",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "atrás",
+          "visual": {
+            "type": "statement",
+            "text": "Limpei meu nome"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "limpei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "E aí, eu entendi. Isso aconteceu comigo, e eu nunca esqueci aquela vergonha",
+      "durationSec": 4.7,
+      "shots": [
+        {
+          "anchor": "entendi",
+          "visual": {
+            "type": "statement",
+            "text": "Isso aconteceu comigo"
+          }
+        },
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "Meu nome travou"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.19
+}
