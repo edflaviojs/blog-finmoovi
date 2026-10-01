@@ -1,4 +1,4 @@
-import { AbsoluteFill, Composition, staticFile } from 'remotion';
+import { AbsoluteFill, Composition, OffthreadVideo, staticFile } from 'remotion';
 import { Background, TelaBordao, TelaBordaoAtor, BORDAO_FRAMES, BORDAO_OVERLAP_FRAMES } from './scenes';
 import { Test } from './Test';
 import { StickmanPiloto, STICKMAN_PILOTO_FRAMES, STICKMAN_PILOTO_FPS } from './Stickman';
@@ -15,6 +15,34 @@ const TelaBordaoAtorPreview = () => (
   <AbsoluteFill>
     <Background />
     <TelaBordaoAtor />
+  </AbsoluteFill>
+);
+
+/**
+ * ♦ TESTE DE ENCAIXE DO BONECO GERADO POR IA (01/10/2026).
+ *
+ * O Ed gerou 8 vídeos do boneco (fundo preto puro) direto na Manus, fora do nosso
+ * robô — a qualidade ficou muito mais perto da capa do que a versão calculada por
+ * código (`Stickman.tsx`). Este é o teste de "funciona de verdade dentro de um
+ * vídeo nosso?": o fundo REAL do canal (`Background`, de `scenes.tsx` — violeta
+ * com faixa diagonal e textura, NUNCA preto liso) por baixo, e o vídeo do boneco
+ * por cima com `mixBlendMode: 'screen'`.
+ *
+ * ⚠️ **POR QUE "screen" FUNCIONA SEM RECORTAR NADA**: o modo "screen" combina duas
+ * imagens deixando o PRETO invisível (matematicamente, preto não soma nada) e só o
+ * branco/claro aparece por cima. Como o vídeo foi gerado em preto PURO (#000000,
+ * medido com `ffmpeg signalstats`: 0 a 3 de 255), o fundo dele some sozinho — não
+ * precisa de recorte manual nem de um vídeo com transparência de verdade.
+ */
+const StickmanVideoTeste = () => (
+  <AbsoluteFill>
+    <Background />
+    <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center' }}>
+      <OffthreadVideo
+        src={staticFile('manus/_teste-boneco/1-carregar-peso.mp4')}
+        style={{ width: 650, mixBlendMode: 'screen' }}
+      />
+    </AbsoluteFill>
   </AbsoluteFill>
 );
 import { Short, ShortScript, ShortTiming, totalFrames, totalFramesFrom, sceneDurationsSec, introFramesFor, SIGNATURE_FRAMES } from './Short';
@@ -772,6 +800,17 @@ export const RemotionRoot: React.FC = () => {
         component={StickmanPiloto}
         durationInFrames={STICKMAN_PILOTO_FRAMES}
         fps={STICKMAN_PILOTO_FPS}
+        width={1080}
+        height={1920}
+      />
+      {/* ♦ Teste de encaixe do boneco gerado por IA (Manus) sobre o fundo REAL do
+          canal — ver o comentário em `StickmanVideoTeste`, acima. 4s a 30fps = 120
+          frames, o mesmo tamanho do clipe gerado (4,01s a 24fps). */}
+      <Composition
+        id="StickmanVideoTeste"
+        component={StickmanVideoTeste}
+        durationInFrames={120}
+        fps={FPS}
         width={1080}
         height={1920}
       />
