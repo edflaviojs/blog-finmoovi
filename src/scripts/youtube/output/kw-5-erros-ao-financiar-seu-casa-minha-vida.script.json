@@ -1,0 +1,220 @@
+{
+  "slug": "kw-5-erros-ao-financiar-seu-casa-minha-vida",
+  "term": "5 erros ao financiar seu Casa Minha Vida",
+  "category": "mindset",
+  "keyword": "financiamento",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você pode *perder quinze mil reais* por um erro no seu Casa Minha Vida?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "mochila-pedras",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você pode perder quinze mil reais por um erro no seu Casa Minha Vida? Pode, se fechar o financiamento sem conferir tudo.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "perder",
+          "visual": {
+            "type": "number",
+            "text": "R$ 15.000"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "erro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          }
+        },
+        {
+          "anchor": "conferir",
+          "visual": {
+            "type": "statement",
+            "text": "Confira tudo antes de fechar"
+          },
+          "sfx": "alert"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Na correria, muita gente assina sem olhar o desconto do governo, escolhe uma parcela apertada e aceita a primeira proposta.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "assina",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          }
+        },
+        {
+          "anchor": "desconto",
+          "visual": {
+            "type": "statement",
+            "text": "Desconto pode fazer diferença"
+          }
+        },
+        {
+          "anchor": "apertada",
+          "visual": {
+            "type": "number",
+            "text": "Parcela apertada"
+          },
+          "sfx": "thud"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "E aí aparecem cinco erros. Não conferir o desconto do governo, escolher parcela alta, ignorar custos da compra, não comparar propostas e assinar sem entender as condições. Um deles pode deixar duzentos reais a mais saindo da sua conta todo mês.",
+      "durationSec": 15.8,
+      "shots": [
+        {
+          "anchor": "cinco",
+          "visual": {
+            "type": "number",
+            "text": "5 erros"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "custos",
+          "visual": {
+            "type": "statement",
+            "text": "Custos também entram na conta"
+          }
+        },
+        {
+          "anchor": "condições",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          }
+        },
+        {
+          "anchor": "duzentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 200"
+          },
+          "sfx": "coin"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Essa parcela eu conferi no FinMoovi, e ele me mostrou a parcela e os custos que eu precisava olhar.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "Essa",
+          "visual": {
+            "type": "app",
+            "app": "calculadora",
+            "note": "Simulação da parcela com custos destacados"
+          }
+        },
+        {
+          "anchor": "mostrou",
+          "visual": {
+            "type": "app",
+            "app": "balanco",
+            "note": "Resumo da parcela e dos custos envolvidos"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "olhar",
+          "visual": {
+            "type": "statement",
+            "text": "Veja além da parcela"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver os seus? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "statement",
+            "text": "Veja quanto você paga"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "number",
+            "text": "7 dias grátis"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Então, antes de fechar, confira o que você vai perder e o que vai pagar. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "antes",
+          "visual": {
+            "type": "statement",
+            "text": "Confira antes de fechar"
+          }
+        },
+        {
+          "anchor": "pagar",
+          "visual": {
+            "type": "statement",
+            "text": "Saiba exatamente quanto paga"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "outros",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Confira antes de financiar",
+    "target": "app"
+  },
+  "totalDurationSec": 51.6
+}
