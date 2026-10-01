@@ -932,7 +932,36 @@ export const FundoAbstrato: React.FC<{ variante: number; frames: number }> = ({ 
  * Por isso aqui nada está parado: o número entra em profundidade e roda, a barra
  * cresce, o título aparece palavra a palavra e o fundo abre-se. E leva som.
  */
-export const CARTAO_CAPITULO_FRAMES = 78; // 2,6s — o respiro, com a música a segurar
+/**
+ * ═══ 🔴 78 → 150 EM 01/10/2026, E O NÚMERO SAIU DE UM CRONÓMETRO ═══
+ *
+ * O dono, a ver o vídeo do churrasco: *"essas telas passam extremamente rápidas e não
+ * dá tempo de se ler… a pessoa não consegue ler e nem acompanhar o raciocínio"*.
+ *
+ * ⚠️ **Está medido, e é pior do que parece.** Com 78 fotogramas (2,60s), o título de
+ * um capítulo esteve legível por inteiro durante **0,73 segundos**:
+ *   · 0 → 10   o título ainda não começou (só o número e o "PASSO N");
+ *   · 10 → 46  constrói-se palavra a palavra (`10 + i*3`, mais ~12 da mola);
+ *   · 46 → 68  **a única janela em que a frase inteira está no ecrã**;
+ *   · 68 → 78  `sai` apaga-a.
+ * Ler nove palavras com calma pede ~3 segundos. 0,73 está QUATRO VEZES abaixo.
+ *
+ * ⚠️ **150 é a soma das três parcelas, não um palpite:** 46 a construir + 94 a ficar
+ * quieto (3,1s de leitura) + 10 a sair. A janela legível passa de 0,73s para 3,1s.
+ *
+ * ⚠️ **E o silêncio é de propósito.** Esta cena não tem narração — a música segura-a.
+ * Era exactamente o que o dono pediu: *"deve se ter um respiro na fala… e demora-se um
+ * pouco mais essa tela ao ponto de uma pessoa conseguir ler a frase inteira"*.
+ *
+ * 🔴 **ESTE NÚMERO VIVE EM QUATRO FICHEIROS.** Mudar aqui e esquecer um dos outros
+ * deixa a prova de mesa VERDE e põe os capítulos da descrição do YouTube a apontar
+ * para o minuto errado:
+ *   1. este                                            3. `src/scripts/youtube/srt-longo.js`
+ *   2. `youtube-render/scripts/render-longo.mjs`       4. `src/scripts/youtube/descricao-longo.js` (lá chama-se `CARTAO_CAPITULO_SEG`)
+ * Até hoje a prova só comparava o 2 com o 3 — **este ficheiro, que é quem o render usa
+ * de verdade, não era conferido por ninguém.** Corrigido em `validar-publicacao-longo.js`.
+ */
+export const CARTAO_CAPITULO_FRAMES = 150; // 5,0s — 1,5s a montar, 3,1s a ler, 0,3s a sair
 
 export const CartaoDeCapitulo: React.FC<{ numero: number; titulo: string; frames?: number }> = ({ numero, titulo, frames = CARTAO_CAPITULO_FRAMES }) => {
   const frame = useCurrentFrame();

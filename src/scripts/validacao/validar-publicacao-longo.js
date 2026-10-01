@@ -1063,9 +1063,35 @@ console.log('\n5-b. AS PARTES GUARDADAS SABEM DE QUE VÍDEO SÃO');
       const espelhadas = [
         ['RESPIRO_SEC', numeroDe(codigo, 'RESPIRO_SEC'), { 'Long.tsx': numeroDe(doLong, 'RESPIRO_SEC'), 'srt-longo.js': numeroDe(doSrt, 'RESPIRO_SEC'), 'descricao-longo.js': numeroDe(doDesc, 'RESPIRO_SEC') }],
         ['VOZ_ENTRA_FRAMES', numeroDe(codigo, 'VOZ_ENTRA_FRAMES'), { 'Long.tsx': numeroDe(doLong, 'VOZ_ENTRA_FRAMES'), 'srt-longo.js': numeroDe(doSrt, 'VOZ_ENTRA_FRAMES') }],
-        ['SIGNATURE_FRAMES', numeroDe(codigo, 'SIGNATURE_FRAMES'), { 'Long.tsx': numeroDe(doLong, 'SIGNATURE_FRAMES') }],
-        ['TELA_FINAL_FRAMES', numeroDe(codigo, 'TELA_FINAL_FRAMES'), { 'longo/telas.tsx': numeroDe(doTelas, 'TELA_FINAL_FRAMES') }],
-        ['CARTAO_CAPITULO_FRAMES', numeroDe(codigo, 'CARTAO_CAPITULO_FRAMES'), { 'srt-longo.js': numeroDe(doSrt, 'CARTAO_CAPITULO_FRAMES') }],
+        /**
+         * ⚠️ 01/10/2026 — `srt-longo.js` entrou nestas duas linhas no MESMO dia em que
+         * passou a declarar as constantes (precisa delas para a conta do chão de 8
+         * minutos). Declarar um número que já vive noutro ficheiro sem o pôr debaixo
+         * desta trava é a família de defeito nº1 desta casa, e o custo seria mudo: a
+         * previsão da duração ficaria a mentir sem ninguém dar por isso.
+         */
+        ['SIGNATURE_FRAMES', numeroDe(codigo, 'SIGNATURE_FRAMES'), { 'Long.tsx': numeroDe(doLong, 'SIGNATURE_FRAMES'), 'srt-longo.js': numeroDe(doSrt, 'SIGNATURE_FRAMES') }],
+        ['TELA_FINAL_FRAMES', numeroDe(codigo, 'TELA_FINAL_FRAMES'), { 'longo/telas.tsx': numeroDe(doTelas, 'TELA_FINAL_FRAMES'), 'srt-longo.js': numeroDe(doSrt, 'TELA_FINAL_FRAMES') }],
+        /**
+         * 🔴 ESTA LINHA VIGIAVA DOIS DOS QUATRO — 01/10/2026.
+         *
+         * `CARTAO_CAPITULO_FRAMES` vive em QUATRO ficheiros, e esta prova só comparava
+         * o `render-longo.mjs` com o `srt-longo.js`. Faltavam os dois que mais contam:
+         *  · **`longo/telas.tsx`**, que é quem o render usa DE VERDADE — mudar lá e em
+         *    mais lado nenhum deixava esta prova VERDE com o vídeo já noutro tempo;
+         *  · **`descricao-longo.js`**, onde a constante tem outro nome
+         *    (`CARTAO_CAPITULO_SEG = 150 / 30`) e por isso escapava à busca. O
+         *    `numeroDe` lê o NUMERADOR dessa divisão, que é o número de fotogramas —
+         *    é por isso que ela continua escrita como `150 / 30` e não como `5`.
+         *
+         * Sem estes dois, os capítulos da descrição do YouTube passam a apontar para o
+         * minuto errado e **ninguém se queixa**: o vídeo sai, o YouTube aceita.
+         */
+        ['CARTAO_CAPITULO_FRAMES', numeroDe(codigo, 'CARTAO_CAPITULO_FRAMES'), {
+          'srt-longo.js': numeroDe(doSrt, 'CARTAO_CAPITULO_FRAMES'),
+          'longo/telas.tsx': numeroDe(doTelas, 'CARTAO_CAPITULO_FRAMES'),
+          'descricao-longo.js (CARTAO_CAPITULO_SEG)': numeroDe(doDesc, 'CARTAO_CAPITULO_SEG'),
+        }],
       ];
       for (const [nome, noRender, irmaos] of espelhadas) {
         const diferentes = Object.entries(irmaos).filter(([, v]) => v !== null && v !== noRender);

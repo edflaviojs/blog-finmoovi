@@ -47,7 +47,7 @@ export function buildPromptLeitorCapitulo(capitulo, { titulo, promessa, posicao,
   const contagem = presentes.map((p) => capitulo[p]).join(' ').trim().split(/\s+/).filter(Boolean).length;
   const partes = presentes.map((p) => `[${p.toUpperCase()}]\n${capitulo[p]}`).join('\n\n');
 
-  return `Você é o EDITOR de um canal brasileiro de finanças. Alguém já escreveu o capítulo ${posicao} de ${total} de um vídeo de seis minutos. O seu trabalho NÃO é reescrever a história — é fazer com que ela soe como UMA PESSOA FALANDO.
+  return `Você é o EDITOR de um canal brasileiro de finanças. Alguém já escreveu o capítulo ${posicao} de ${total} de um vídeo de oito minutos. O seu trabalho NÃO é reescrever a história — é fazer com que ela soe como UMA PESSOA FALANDO.
 
 QUEM FALA, E COM QUEM: ${PERSONA}
 
@@ -76,6 +76,16 @@ ${temDemo
     : '3. ⛔ O APP NÃO APARECE NESTE CAPÍTULO. **É proibido escrever a palavra FinMoovi aqui** — a demonstração é de outro capítulo, e se você a acrescentar a sua versão é recusada.'}
 4. FECHAR deixando uma ponta no ar, para o capítulo seguinte a agarrar. Sem prometer nada que não seja deste vídeo.
 5. Frases curtas, sujeito e verbo. Metáfora quase não existe — no máximo UMA comparação, com coisa que a pessoa já conhece.
+
+════════ 🔴 A LEITURA DOS TRINTA SEGUNDOS — faça-a antes de devolver ════════
+Ordem do dono, 01/10/2026: *"os próximos 30 segundos teriam que produzir um impacto tal que esse telespectador tenha um motivo para assistir os próximos 30 segundos, e assim temos que caminhar até o final do vídeo"*.
+
+**Corte o DESENVOLVIMENTO em pedaços de ~80 palavras** (que são ~30 segundos de fala) e, em cada pedaço, responda a si mesmo: **o que é que aterrou aqui que ainda não se sabia?**
+   · Conta como novo: um **número**, uma **consequência**, uma **pergunta** que abre, uma **viragem**.
+   · NÃO conta: a mesma coisa por outras palavras, um adjetivo, uma frase de ligação, o número que já tinha sido dito.
+
+⚠️ **Se um pedaço não trouxer nada novo, o seu trabalho NÃO é inventar informação** — você está proibido de criar factos. O que você faz é **apertar**: tire as frases mortas desse pedaço e deixe o concreto que já existe mais perto. Um pedaço vazio quase sempre é um pedaço esticado.
+⚠️ E diga no campo "mexi" **quais pedaços estavam vazios** — mesmo que você só os tenha apertado. É isso que mostra onde o texto original estava a dar voltas.
 
 ════════ OS VÍCIOS A CAÇAR ════════
 ${VICIOS}
@@ -150,7 +160,7 @@ const REGRAS_DO_BLOCO = {
 };
 
 export function buildPromptLeitorBloco(texto, { papel, promessa, tema }) {
-  return `Você é o EDITOR de um canal brasileiro de finanças. Alguém já escreveu este pedaço de um vídeo de seis minutos. O seu trabalho NÃO é reescrever a ideia — é fazer com que ela soe como UMA PESSOA FALANDO.
+  return `Você é o EDITOR de um canal brasileiro de finanças. Alguém já escreveu este pedaço de um vídeo de oito minutos. O seu trabalho NÃO é reescrever a ideia — é fazer com que ela soe como UMA PESSOA FALANDO.
 
 QUEM FALA, E COM QUEM: ${PERSONA}
 

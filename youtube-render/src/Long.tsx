@@ -728,6 +728,29 @@ const CenaLonga: React.FC<{
   const comLegenda = !v || v.tipo !== 'palavras';
 
   /**
+   * 🔴 A PALAVRA-FANTASMA SAIU TAMBÉM DAS CENAS DE `frase` — 01/10/2026.
+   *
+   * O dono apontou a tela da promessa: *"não dá tempo de se ler… a pessoa não consegue
+   * ler e nem acompanhar o raciocínio"*. Fui medir à espera de encontrar falta de tempo
+   * e **o tempo não era o problema**: a frase fica montada ao fotograma 64 (2,1s) numa
+   * cena de 9,4s — **7,3 segundos** com tudo escrito.
+   *
+   * ⚠️ **O que lá estava era ruído por cima do que ele tentava ler.** No fotograma 450
+   * vê-se a palavra REORGANIZAR, gigante, desenhada exactamente POR TRÁS da frase.
+   *
+   * ⚠️ **E o argumento para a tirar já estava escrito a seis linhas daqui**, para as
+   * cenas de `palavras`: *"ali as palavras ditas SÃO a imagem, e pôr outra palavra
+   * gigante por trás é texto por cima de texto"*. A família `frase` é isso mesmo — uma
+   * frase grande no meio do ecrã. A regra estava certa; faltava-lhe um caso.
+   *
+   * ⚠️ **Separado do `comLegenda` de propósito.** A cena de `frase` CONTINUA a levar a
+   * legenda karaokê em baixo (ali o texto do meio e o falado não são o mesmo); o que
+   * sai é só o fantasma de trás. Juntar as duas decisões numa variável só faria a
+   * legenda desaparecer de caminho, sem ninguém pedir.
+   */
+  const comFantasma = comLegenda && v?.tipo !== 'frase';
+
+  /**
    * ♦ A CENA REAGE AO QUE CHEGA — 08/08/2026, regra do dono: *"quando algo chega, algo
    * tem que reagir; o objeto bate e a cena responde. Movimento sem consequência é
    * enfeite"*.
@@ -775,11 +798,11 @@ const CenaLonga: React.FC<{
       {/* ⚠️ A PALAVRA DE FUNDO DESTA CENA — vem ANTES do conteúdo no JSX porque tem de
           ficar POR TRÁS dele. Muda a cada cena, e é isso que o dono pediu: *"tem que
           ser dinâmica e ter a ver com o que se diz no momento"*.
-          ⚠️ **MENOS nas cenas de `palavras`**, e é o mesmo motivo pelo qual essas cenas
-          também não levam legenda: ali as palavras ditas SÃO a imagem, e pôr outra
-          palavra gigante por trás é texto por cima de texto — o defeito que o robô de
-          QA procura de propósito. Visto no fotograma antes de ficar assim. */}
-      {comLegenda ? <PalavraFantasma palavra={palavraDaCena(cena.narration)} formato="deitado" /> : null}
+          ⚠️ **MENOS nas cenas de `palavras` E DE `frase`** (ver `comFantasma`, acima):
+          nas duas há um bloco de texto grande no meio do ecrã, e pôr outra palavra
+          gigante por trás é texto por cima de texto — o defeito que o robô de QA
+          procura de propósito. Visto no fotograma antes de ficar assim, nas duas. */}
+      {comFantasma ? <PalavraFantasma palavra={palavraDaCena(cena.narration)} formato="deitado" /> : null}
       <AbsoluteFill style={{
         opacity: entra,
         transform: `translateX(${balanca}px) scale(${reaccao * respira})`,

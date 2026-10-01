@@ -36,14 +36,24 @@ const RAIZ = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
 import {
   validarMapa, validarAbertura, validarCapitulo, validarChamada, validarFecho, validarLongo,
   contarPalavras, ORCAMENTO, MAX_PALAVRAS_TITULO, PARTES_DO_CAPITULO, valoresEmDinheiro, nomeDePessoa, ehTituloGenerico,
-  consertarMapa, tipoDoValor, TIPOS_DE_VALOR, TIPO_POR_OMISSAO,
+  consertarMapa, tipoDoValor, TIPOS_DE_VALOR, TIPO_POR_OMISSAO, NUM_CAPITULOS,
 } from '../youtube/lib/schema-longo.js';
 import {
   EXEMPLO_DE_MAPA, EXEMPLO_DE_ABERTURA, EXEMPLO_DE_CAPITULO, EXEMPLO_DE_FECHO,
   EXEMPLO_DE_CHAMADA, EXEMPLO_PARA_COMPARAR, EXEMPLO_DE_DEMONSTRACAO,
   buildPromptMapa, buildPromptAbertura, buildPromptCapitulo, buildPromptChamada, buildPromptFecho,
+  numeroReveladoPor, blocoDaAncora,
 } from '../youtube/roteiro-longo.js';
-import { BORDAO } from '../youtube/lib/schema-short.js';
+// ⚠️ A CONTA DA DURAÇÃO VEM DA PRODUÇÃO, nunca recopiada aqui — é a mesma que escreve os
+//    capítulos da descrição e corta o render. Ver a nota em `imagens-longo.js`: uma cópia
+//    mais grosseira já reprovou cenas boas nesta mesma prova.
+import {
+  duracaoDoVideoSec, CHAO_DO_VIDEO_SEC, iniciosDasCenas, SIGNATURE_FRAMES, TELA_FINAL_FRAMES,
+} from '../youtube/srt-longo.js';
+// ⚠️ `longestSharedWordRun` é a MESMA régua das seis palavras que o validador usa para
+//    acusar cópia. Medir a prova #9 com um `includes()` à parte era garantir que um dia
+//    as duas divergiam e a prova deixava de medir o que diz medir.
+import { BORDAO, longestSharedWordRun } from '../youtube/lib/schema-short.js';
 // ⚠️ A ASSINATURA DO ECRÃ VEM DA PRODUÇÃO. Ver a nota em `lib/imagens-longo.js`: havia
 //    aqui uma cópia mais grosseira, as duas divergiram, e a prova reprovava cenas boas.
 import { assinaturaDoEcra } from '../youtube/lib/imagens-longo.js';
@@ -125,6 +135,14 @@ console.log('   (é a prova que impede a 16ª ocorrência de prompt-contra-valid
  * travas novas (o número-espinha, a lista fechada de valores, quem demonstra o app)
  * não estariam a ser testadas de todo — passariam por não ter dados.
  */
+/**
+ * ♦ O ÍNDICE (base 0) do ato que leva a demonstração — **tirado do mapa-exemplo, nunca
+ * escrito à mão.** Estava cravado a `1` em quatro provas, de quando o app vivia no
+ * capítulo 2; mudá-lo no mapa deixava as provas a medir outro capítulo e a reprovar
+ * sem razão nenhuma.
+ */
+const I_DEMO = EXEMPLO_DE_MAPA.capituloDaDemonstracao - 1;
+
 const planoDoExemplo = (i) => ({
   ...EXEMPLO_DE_MAPA.capitulos[i],
   numeroEspinha: EXEMPLO_DE_MAPA.numeroEspinha,
@@ -148,8 +166,14 @@ const planoDoExemplo = (i) => ({
    * capítulo 2 saiu com 243 numa corrida a sério. A cura foi dar-lhe orçamento próprio;
    * a prova agora mede as quatro partes inteiras, como elas vão ao ar.
    */
+  /**
+   * ⚠️ 01/10/2026: o índice era **1** à mão, de quando a demonstração vivia no capítulo 2.
+   * Ela mudou-se para o último ato (A VIRADA — o app é a ferramenta, e por isso vive no
+   * ato em que o narrador age) e esta prova passou a medir o capítulo errado. Agora sai
+   * do mapa-exemplo, que é quem decide: uma conta, um sítio.
+   */
   const ato2 = { ...EXEMPLO_DE_CAPITULO, demonstracao: EXEMPLO_DE_DEMONSTRACAO };
-  const v2 = validarCapitulo(ato2, 1, { plano: planoDoExemplo(1) });
+  const v2 = validarCapitulo(ato2, I_DEMO, { plano: planoDoExemplo(I_DEMO) });
   ok('a demonstração-exemplo passa no ato que a leva', passa(v2), porque(v2));
 }
 {
@@ -505,14 +529,14 @@ reprova(
 );
 reprova(
   'capítulo: é o da demonstração e não a escreveu',
-  validarCapitulo({ ...EXEMPLO_DE_CAPITULO }, 1, { plano: planoDoExemplo(1) }),
+  validarCapitulo({ ...EXEMPLO_DE_CAPITULO }, I_DEMO, { plano: planoDoExemplo(I_DEMO) }),
   'falta a parte "demonstracao"',
 );
 reprova(
   'capítulo: a demonstração não nomeia o app',
   validarCapitulo(
     { ...EXEMPLO_DE_CAPITULO, demonstracao: EXEMPLO_DE_DEMONSTRACAO.replace(/FinMoovi/g, 'aplicativo') },
-    1, { plano: planoDoExemplo(1) },
+    I_DEMO, { plano: planoDoExemplo(I_DEMO) },
   ),
   'não diz FinMoovi',
 );
@@ -694,6 +718,25 @@ console.log('   (a prova nasceu de uma falha REAL: a trava punia "moedinha" e o 
     mapa: buildPromptMapa(tema, []),
     abertura: buildPromptAbertura(tema, EXEMPLO_DE_MAPA, []),
     capitulo: buildPromptCapitulo(tema, EXEMPLO_DE_MAPA, 0, ''),
+    /**
+     * ⚠️ O ATO DO MEIO TEM UM PEDIDO DIFERENTE, e até 01/10/2026 ninguém o media.
+     * O bloco que manda lembrar a aposta só existe quando o índice é 1 — com o pedido
+     * do ato 0, qualquer regra escrita lá dentro passava despercebida a esta prova.
+     */
+    capituloDoMeio: buildPromptCapitulo(tema, EXEMPLO_DE_MAPA, 1, ''),
+    /**
+     * ⚠️ E O PEDIDO COM ÂNCORA É UM TERCEIRO, que também ninguém media até 01/10/2026.
+     * O bloco que diz *"estas são as palavras exatas com que o ato anterior terminou"* só
+     * existe quando há um ato anterior — e foi lá dentro que entrou a regra que proíbe
+     * copiá-las, depois de um capítulo ter aberto com 21 palavras idênticas às do
+     * anterior. Sem esta entrada, essa regra podia desaparecer sem nenhuma prova acusar.
+     */
+    capituloComAncora: buildPromptCapitulo(tema, EXEMPLO_DE_MAPA, 1, blocoDaAncora({
+      paragrafoAnterior: 'E a conta não fechava.',
+      deQuem: 'o capítulo 1',
+      numerosUsados: [39],
+      jaDito: ['E a conta não fechava.'],
+    })),
     chamada: buildPromptChamada(tema, EXEMPLO_DE_MAPA, ''),
     fecho: buildPromptFecho(tema, EXEMPLO_DE_MAPA, ''),
   };
@@ -717,7 +760,10 @@ console.log('   (a prova nasceu de uma falha REAL: a trava punia "moedinha" e o 
     ['o fecho não cita fonte', ['fecho'], /NÃO CITA FONTE/],
     ['não prometer o próximo vídeo', ['fecho', 'mapa'], /pr[óo]ximo v[íi]deo/i],
     // 🔴 Virou-se ao contrário em 08/08/2026 — ver a prova da abertura, mais acima.
-    ['a 1ª frase não pode ser comprida e vaga', ['abertura'], /comprida e vaga/],
+    // ⚠️ 01/10/2026: era `/comprida e vaga/`. A regra da 1ª frase deixou de ser "não seja
+    //    vaga" e passou a ser "seja uma acusação com número" — o defeito que ela evitava
+    //    agora é impossível por construção, e a agulha mudou para o que se exige hoje.
+    ['a 1ª frase é um corte que serve para as redes', ['abertura'], /corte que vai sozinho para as redes/],
     ['fale como se fala na cozinha', ['abertura'], /COMO SE FALA NESTE CANAL/],
     ['ninguém tem nome neste canal', ['abertura', 'capitulo', 'fecho'], /NINGUÉM TEM NOME NESTE CANAL/],
     ['ninguém é "um deles" antes de ser apresentado', ['abertura'], /antes de dizer o que fazem/],
@@ -727,12 +773,38 @@ console.log('   (a prova nasceu de uma falha REAL: a trava punia "moedinha" e o 
     // Ver `EXEMPLO_DE_CHAMADA` e `FORMATOS.longo.chamadaRespondidaAMao`.
     // ⚠️ NÃO alargar isto aos Shorts: eles são 21 por semana.
     ['a chamada diz FINMOOVI', ['chamada'], /FINMOOVI/],
-    ['e pede mesmo o COMENTÁRIO, que é o que este bloco faz', ['chamada'], /Peça o COMENT[ÁA]RIO/],
+    // ⚠️ 01/10/2026: era `/Peça o COMENTÁRIO/`. A chamada deixou de ser um pedido seco e
+    //    passou a pedir que a pessoa CONTE a história dela — a agulha seguiu a ordem nova.
+    ['e pede mesmo o COMENTÁRIO, que é o que este bloco faz', ['chamada'], /PEÇA QUE ESCREVA NOS COMENTÁRIOS/],
     ['o capítulo abre com pergunta', ['capitulo'], /PERGUNTA que dói/],
     ['a demonstração nomeia o app', ['capitulo'], /FinMoovi/],
     ['trata por "você", nunca por "o senhor"', ['capitulo', 'abertura', 'fecho', 'chamada', 'mapa'], /NUNCA por "o senhor"/],
-    ['a abertura não gasta os números da história', ['abertura'], /NÃO GASTA OS NÚMEROS DA HISTÓRIA/],
-    ['os três atos têm nome e papel', ['capitulo', 'mapa'], /O SUSTO[\s\S]*A ARMADILHA[\s\S]*A VIRADA/],
+    ['a abertura gasta UM número, e é o do ano', ['abertura'], /gasta UM, e é o do ANO/],
+    ['a 1ª frase é uma acusação com número', ['abertura'], /ACUSAÇÃO COM UM NÚMERO/],
+    ['a 2ª frase assume a dívida ("vou te provar")', ['abertura'], /vou te provar isso/],
+    ['a abertura é proibida de contar a solução', ['abertura'], /NÃO CONTE A SOLUÇÃO AQUI/],
+    ['a promessa do mapa é uma aposta, não um resumo', ['mapa'], /A PROMESSA É UMA APOSTA/],
+    ['o desenvolvimento tem de aterrar algo novo a cada ~30s', ['capitulo'], /A CADA ~80 PALAVRAS TEM DE ATERRAR UMA COISA NOVA/],
+    ['o re-gancho atira uma pergunta a quem vê', ['capitulo'], /ATIRA UMA PERGUNTA A QUEM ESTÁ A VER/],
+    /**
+     * As três que nasceram da leitura do dono ao primeiro roteiro novo (01/10/2026).
+     * Cada uma guarda uma queixa dele, com as palavras dele no pedido.
+     */
+    ['a pergunta não pode mandar fazer conta na hora', ['capitulo'], /NUNCA mande fazer uma conta, somar, pegar o extrato/],
+    ['as parcelas só se listam uma vez no vídeo', ['capituloDoMeio'], /AS PARCELAS SÓ SE LISTAM UMA VEZ NO VÍDEO INTEIRO/],
+    ['o ato não pode reescrever o anterior por outras palavras', ['capituloDoMeio'], /NÃO REESCREVA O ATO ANTERIOR POR OUTRAS PALAVRAS/],
+    ['a âncora proíbe copiar a frase do ato anterior', ['capituloComAncora'], /E MUITO MENOS COPIAR A FRASE ACIMA/],
+    ['a chamada pergunta pela história da pessoa, nas duas pontas', ['chamada'], /se ela conseguiu resolver ou se ainda está presa nisso/],
+    ['e a chamada também não manda fazer conta na hora', ['chamada'], /nunca pelo que ela teria de \*\*calcular\*\*/],
+    ['o ato do meio lembra a APOSTA, não a solução', ['capituloDoMeio'], /lembra A APOSTA que foi feita no primeiro segundo/],
+    ['e proíbe entregar a solução no meio', ['capituloDoMeio'], /isso é a SOLUÇÃO, e entregá-la aqui faz o resto do vídeo repetir-se/],
+    /**
+     * ⚠️ 01/10/2026 — `O PREÇO` entrou NO MEIO, e a agulha antiga não dava por isso.
+     * `/O SUSTO[\s\S]*A ARMADILHA[\s\S]*A VIRADA/` continuaria a passar com três atos no
+     * prompt, porque `[\s\S]*` aceita qualquer coisa pelo meio — incluindo nada. Uma
+     * prova que passa antes e depois da mudança não está a medir a mudança.
+     */
+    ['os quatro atos têm nome e papel', ['capitulo', 'mapa'], /O SUSTO[\s\S]*A ARMADILHA[\s\S]*O PREÇO[\s\S]*A VIRADA/],
   ];
 
   for (const [nome, onde, agulha] of alinhamento) {
@@ -931,7 +1003,9 @@ console.log('   (a 1ª prova apanha a montagem a PERDER parágrafos do guião, e
     promessa: EXEMPLO_DE_MAPA.promessa,
     fioCondutor: EXEMPLO_DE_MAPA.fioCondutor,
     abertura: EXEMPLO_DE_ABERTURA,
-    capitulos: [1, 2, 3].map((n) => ({
+    // ⚠️ 01/10/2026: era `[1, 2, 3]` à mão. Com o 4º ato, o vídeo de prova ficava com
+    //    três capítulos e o app — que agora vive no 4 — não aparecia em cena nenhuma.
+    capitulos: Array.from({ length: NUM_CAPITULOS }, (_, i) => i + 1).map((n) => ({
       ...EXEMPLO_DE_CAPITULO,
       titulo: EXEMPLO_DE_MAPA.capitulos[n - 1].titulo,
       ...(n === EXEMPLO_DE_MAPA.capituloDaDemonstracao ? { demonstracao: EXEMPLO_DE_DEMONSTRACAO } : {}),
@@ -972,6 +1046,36 @@ console.log('   (a 1ª prova apanha a montagem a PERDER parágrafos do guião, e
       .filter((n) => Number.isFinite(n) && !dic.has(n));
   });
   ok('nenhum número no ecrã está fora da lista de valores do mapa', foraDaLista.length === 0, foraDaLista.join(', '));
+
+  /**
+   * ═══ 🔴 (c-bis) O CHÃO DE OITO MINUTOS — 01/10/2026 ═══
+   *
+   * Ordem do dono: *"que o vídeo nunca fique abaixo dos 8 minutos"*. Até hoje **nada no
+   * caminho media a duração contra um alvo** — um vídeo de seis minutos saía, era
+   * publicado, e ninguém sabia.
+   *
+   * ⚠️ **A trava é a 2ª linha, não a 1ª.** A lição do caso falso de hoje: uma prova que
+   * corre sobre o material bom passa com e sem o conserto. O que guarda isto é o caso
+   * MAU construído à mão — um plano curto tem de ficar abaixo do chão. A 1ª linha é um
+   * retrato: diz que o orçamento novo, de facto, dá oito minutos.
+   */
+  const planoDeProva = { scenes: cenas.map((c) => ({ ...c })) };
+  ok(
+    `(retrato) o vídeo de prova passa o chão de ${CHAO_DO_VIDEO_SEC / 60} minutos`,
+    duracaoDoVideoSec(planoDeProva, null) >= CHAO_DO_VIDEO_SEC,
+    `deu ${Math.floor(duracaoDoVideoSec(planoDeProva, null) / 60)}:${String(Math.round(duracaoDoVideoSec(planoDeProva, null) % 60)).padStart(2, '0')}`,
+  );
+  ok(
+    '🔒 A TRAVA: um plano curto NÃO passa o chão de 8 minutos',
+    duracaoDoVideoSec({ scenes: cenas.slice(0, 4).map((c) => ({ ...c })) }, null) < CHAO_DO_VIDEO_SEC,
+  );
+  ok(
+    'e a conta da duração é a MESMA que desenha os capítulos (importada, não copiada)',
+    Math.abs(
+      duracaoDoVideoSec(planoDeProva, null)
+      - (iniciosDasCenas(planoDeProva, null).fimDoConteudo + (SIGNATURE_FRAMES + TELA_FINAL_FRAMES) / 30),
+    ) < 0.001,
+  );
 
   // (d) o app aparece num capítulo só, e é o que o mapa escolheu
   const capsComApp = [...new Set(cenas.filter((c) => c.visual?.tipo === 'app').map((c) => c.capitulo))];
@@ -1039,7 +1143,9 @@ console.log('   (a 1ª prova apanha a montagem a PERDER parágrafos do guião, e
   //     parafraseada. Provado com o caso REAL que motivou a régua.
   ok(
     'reconhece a promessa mesmo com palavras à frente',
-    cenaDizFraseDeclarada('Neste vídeo, eu vou te mostrar como achar as assinaturas que você paga sem usar e cortar as maiores ainda hoje.', EXEMPLO_DE_MAPA.promessa),
+    // ⚠️ 01/10/2026: a frase de prova acompanhou a promessa, que passou de resumo a
+    //    APOSTA. O que esta prova mede é a régua das seis palavras, não o texto em si.
+    cenaDizFraseDeclarada('Olha, você paga mais de dois mil reais por ano por coisas que não usa, e eu vou te provar isso.', EXEMPLO_DE_MAPA.promessa),
   );
   ok(
     'NÃO reconhece uma frase só parecida (senão o ecrã promete o que a voz não diz)',
@@ -1177,14 +1283,121 @@ console.log('\nO QUE O LONGO APRENDEU COM O SHORT DE 16s');
   ok('#7 o mapa pede um número NOVO por ato', /oNumeroDoAto/.test(pMapa));
   ok('e o formato do JSON tem o campo nos três capítulos', (pMapa.match(/oNumeroDoAto/g) || []).length >= 4);
   ok(
-    'e o mapa-exemplo traz os três, diferentes',
-    new Set((EXEMPLO_DE_MAPA.capitulos || []).map((c) => c.oNumeroDoAto).filter(Boolean)).size === 3,
+    `e o mapa-exemplo traz os ${NUM_CAPITULOS}, diferentes`,
+    new Set((EXEMPLO_DE_MAPA.capitulos || []).map((c) => c.oNumeroDoAto).filter(Boolean)).size === NUM_CAPITULOS,
     (EXEMPLO_DE_MAPA.capitulos || []).map((c) => c.oNumeroDoAto).join(' · '),
   );
   ok(
     'e cada um deles está na lista de valores do mapa (não se inventa dinheiro)',
     (EXEMPLO_DE_MAPA.capitulos || []).every((c) => !c.oNumeroDoAto
       || (EXEMPLO_DE_MAPA.valores || []).some((v) => v.nome === c.oNumeroDoAto)),
+  );
+
+  /**
+   * ═══ 🔴 #8 — O NÚMERO-ESPINHA NUNCA ENTRA NOS "JÁ GASTOS" (01/10/2026) ═══
+   *
+   * Até hoje o gerador mandava para essa lista **todos** os valores permitidos do mapa,
+   * e o número-espinha é um deles. A partir do ato 2, o mesmo pedido mandava dizê-lo
+   * ("o computador confere") e proibia-o na linha de baixo. O modelo obedece à ordem que
+   * o valida e paga a outra **repetindo a ideia por outras palavras** — a queixa exacta
+   * do dono. Esta prova existe para que isso não possa voltar em silêncio.
+   */
+  const reveladosDosAtos = (EXEMPLO_DE_MAPA.capitulos || [])
+    .map((c) => numeroReveladoPor(EXEMPLO_DE_MAPA, c));
+  /**
+   * 🔴 **ESTA É A PROVA QUE GUARDA O CONSERTO, e as outras duas não são.**
+   *
+   * Medido ao correr o caso falso (apagar a guarda e ver o que fica vermelho): das três
+   * linhas desta secção, **só esta** acusou. As outras duas passam com a guarda e sem
+   * ela, porque no mapa-exemplo nenhum ato tem o número-espinha como `oNumeroDoAto` —
+   * o caso que a guarda existe para apanhar **nunca acontece no exemplo**.
+   *
+   * É a regra da casa escrita ao vivo (`teste-que-diz-sim-a-tudo`): uma prova que corre
+   * sobre o material bom não mede uma guarda; é preciso **construir o caso mau à mão**.
+   * As outras duas ficam — documentam o invariante —, mas com o nome certo, para que
+   * ninguém as confunda com a trava.
+   */
+  ok(
+    '#8 🔒 A TRAVA: um ato cujo número É o espinha devolve nada, em vez de o gastar',
+    numeroReveladoPor(
+      { ...EXEMPLO_DE_MAPA, valores: [{ nome: 'o fio', valor: EXEMPLO_DE_MAPA.numeroEspinha, tipo: 'sai' }] },
+      { oNumeroDoAto: 'o fio' },
+    ) === null,
+  );
+  ok(
+    '(retrato, não trava) no mapa-exemplo o espinha não cai nos "já gastos"',
+    !reveladosDosAtos.includes(Number(EXEMPLO_DE_MAPA.numeroEspinha)),
+    `revelados: ${reveladosDosAtos.join(', ')} · espinha: ${EXEMPLO_DE_MAPA.numeroEspinha}`,
+  );
+  ok(
+    '(retrato) os outros atos continuam a gastar o número que revelaram',
+    reveladosDosAtos.filter((v) => v !== null).length === NUM_CAPITULOS,
+    `gastos: ${reveladosDosAtos.filter((v) => v !== null).join(', ')}`,
+  );
+  /**
+   * 🔒 A SEGUNDA TRAVA: se alguém voltar a mandar a lista TODA para "já gastos" (que era
+   * o defeito), um ato sem `oNumeroDoAto` passaria a gastar seja o que for. Aqui o caso
+   * mau está construído à mão: sem número nomeado, não se gasta nada.
+   */
+  ok(
+    '#8b 🔒 um ato sem número nomeado não gasta número nenhum',
+    numeroReveladoPor(EXEMPLO_DE_MAPA, { oNumeroDoAto: null }) === null
+      && numeroReveladoPor(EXEMPLO_DE_MAPA, { oNumeroDoAto: 'um nome que não existe' }) === null,
+  );
+  /**
+   * ═══ 🔒 #9 — O QUE O PEDIDO ORDENA NÃO PODE ESTAR NO TEXTO ANTI-CÓPIA ═══
+   *
+   * Nasceu de uma corrida a sério (01/10/2026, tema `economizar-300-por-mes`), e não de
+   * bom senso. O pedido da abertura ORDENA a frase *"e eu vou te provar isso"*. Ela
+   * estava TAMBÉM no exemplo — logo em `EXEMPLO_PARA_COMPARAR` — e o modelo ficou entre
+   * a ordem e a proibição: **obedecer era ser reprovado por copiar**.
+   *
+   * O preço, contado no log: **4 chamadas à IA deitadas fora**, uma na abertura e três
+   * seguidas no capítulo 2, todas com *"copiou o exemplo — «e eu vou te provar isso»"*.
+   *
+   * ⚠️ A cura não é tirar a aposta do exemplo: é **dizê-la por outras palavras lá**, e
+   * deixar a frase canónica só no pedido, que não entra na comparação. Esta prova mede
+   * exactamente isso — e mede com a MESMA função que o validador usa, não com um
+   * `includes()` à parte, senão mais cedo ou mais tarde as duas divergiam.
+   */
+  /**
+   * ⚠️ **ERAM UMA SÓ, E ISSO CUSTOU UM ROTEIRO** — 01/10/2026, segunda ocorrência no
+   * mesmo dia. Esta prova nasceu a vigiar apenas a frase da abertura. Horas depois o
+   * FECHO morreu por exactamente o mesmo motivo (*"copiou o exemplo — «eu disse no
+   * começo que isso dava mais de»"*), porque **consertei uma ocorrência e não procurei
+   * as irmãs**. A lista existe para que a próxima frase canónica entre aqui no dia em
+   * que for escrita no pedido.
+   */
+  /**
+   * ⚠️ **O QUE ENTRA AQUI É O MIOLO DA FRASE, SEM O VALOR** — e isso não é descuido.
+   * A 1ª versão desta lista pôs a frase do fecho inteira, *"…dava mais de mil reais por
+   * ano"*, e a prova ficou vermelha por um motivo falso: *"mais de mil reais por ano"*
+   * também está na abertura-exemplo, porque é **o número daquela história**. Num vídeo a
+   * sério os valores são outros e a cadeia parte-se no número — a colisão só existia
+   * entre dois exemplos meus.
+   * O que tem mesmo de ficar fora do texto comparado é a **construção** que o pedido
+   * dita; o valor é da história, e repetir-se é o trabalho dele.
+   */
+  const FRASES_CANONICAS = [
+    ['abertura — a aposta', 'e eu vou te provar isso'],
+    ['fecho — o pagamento da aposta', 'eu disse no começo que isso dava'],
+  ];
+  for (const [onde, frase] of FRASES_CANONICAS) {
+    const partilhado = longestSharedWordRun(frase, EXEMPLO_PARA_COMPARAR, 6);
+    ok(
+      `#9 🔒 a frase que o pedido ORDENA (${onde}) não está no texto anti-cópia`,
+      partilhado.length === 0,
+      `partilhado: "${partilhado.join(' ')}"`,
+    );
+  }
+  ok(
+    '(controlo) e a régua ACUSA quando a frase lá está',
+    longestSharedWordRun(FRASES_CANONICAS[0][1], `bla bla ${FRASES_CANONICAS[0][1]} bla`, 6).length > 0
+      && longestSharedWordRun(FRASES_CANONICAS[1][1], `bla ${FRASES_CANONICAS[1][1]} bla`, 6).length > 0,
+  );
+  ok(
+    'e a âncora avisa que o espinha não está nessa lista',
+    /O número-espinha deste vídeo NÃO está nesta lista/.test(buildPromptCapitulo({ tema: 'x' }, EXEMPLO_DE_MAPA, 1, '⛔ **OS NÚMEROS QUE OS ATOS ANTERIORES JÁ REVELARAM — não volte a revelá-los:** 39.\n   ⚠️ **O número-espinha deste vídeo NÃO está nesta lista e tem de ser dito aqui.**')),
   );
 }
 

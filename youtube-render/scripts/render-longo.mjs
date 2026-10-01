@@ -80,7 +80,9 @@ const TELA_FINAL_FRAMES = 300;
 // congestionado, não dá tempo de ler nada"*). Ele ocupa estes fotogramas ANTES da cena
 // que abre o capítulo — e é por isso que este número tem de estar aqui também, senão os
 // cortes por capítulo caem 2,6 segundos ao lado.
-const CARTAO_CAPITULO_FRAMES = 78;
+// ⚠️ 01/10/2026: 78 → 150. Com 78 o título do capítulo ficava legível por inteiro
+// durante 0,73s (medido). Ver a nota longa em `src/longo/telas.tsx`, que é a fonte.
+const CARTAO_CAPITULO_FRAMES = 150;
 
 const slug = String(args.slug && args.slug !== true ? args.slug : 'sair-do-vermelho');
 const plano = JSON.parse(readFileSync(join(RAIZ, 'public', 'roteiro', `${slug}.json`), 'utf-8'));

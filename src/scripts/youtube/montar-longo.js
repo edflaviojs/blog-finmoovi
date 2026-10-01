@@ -33,6 +33,9 @@ import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { PARTES_POSSIVEIS } from './lib/schema-longo.js';
 import { dirigirImagens, conferirImagens, consertarImagens } from './lib/imagens-longo.js';
+// ⚠️ A CONTA DA DURAÇÃO VEM DE LÁ, NUNCA COPIADA: é a mesma linha do tempo que escreve
+//    os capítulos da descrição e que corta o render em partes. Ver `duracaoDoVideoSec`.
+import { duracaoDoVideoSec, CHAO_DO_VIDEO_SEC } from './srt-longo.js';
 
 const AQUI = dirname(fileURLToPath(import.meta.url));
 const OUTPUT_DIR = join(AQUI, 'output');
@@ -357,6 +360,41 @@ if (process.argv[1] && process.argv[1].replace(/\\/g, '/').endsWith('youtube/mon
     palavras,
   };
   writeFileSync(join(ROTEIRO_DIR, `${slug}.json`), JSON.stringify(plano, null, 2), 'utf-8');
+
+  /**
+   * ═══ 🔴 O CHÃO DE OITO MINUTOS — 01/10/2026 ═══
+   *
+   * Ordem do dono: *"vamos montar plano pra que o vídeo nunca fique abaixo dos 8
+   * minutos, o que é bom, e resolve esse nosso problema de querer fazer tudo muito
+   * corrido"*.
+   *
+   * ⚠️ **Até hoje nada no caminho media isto.** Um vídeo de seis minutos era montado,
+   * tinha voz, era renderizado durante meia hora e publicado — e o número da duração só
+   * aparecia depois, no ficheiro final. O chão tem de ser conhecido AQUI, que é o último
+   * sítio onde consertá-lo ainda é barato.
+   *
+   * ⚠️ **A conta é importada de `srt-longo.js`, não recopiada** — é a mesma que desenha
+   * os capítulos da descrição e corta o render em partes. Uma segunda cópia da linha do
+   * tempo seria a família de defeito nº1 desta casa pela enésima vez.
+   *
+   * ⚠️ **ISTO AVISA, NÃO TRAVA — e é uma decisão, não um esquecimento.** Fazer o
+   * montador sair com erro aqui é fazer a semana ficar SEM VÍDEO, e este repositório já
+   * tem semanas assim por travas novas a reprovar em cascata. Quem quiser o travão de
+   * verdade corre com `--exigir-chao`, e aí a corrida morre em vez de publicar curto.
+   */
+  const previsto = duracaoDoVideoSec(plano, null);
+  const mmss = (s) => `${Math.floor(s / 60)}:${String(Math.round(s % 60)).padStart(2, '0')}`;
+  const chaoOk = previsto >= CHAO_DO_VIDEO_SEC;
+  console.log(`\n⏱️  duração prevista do vídeo: ${mmss(previsto)} (chão: ${mmss(CHAO_DO_VIDEO_SEC)}) ${chaoOk ? '✅' : '❌'}`);
+  if (!chaoOk) {
+    const faltam = Math.ceil((CHAO_DO_VIDEO_SEC - previsto) * 2.6);
+    console.log(`   ⚠️  ESTE VÍDEO FICA ABAIXO DO CHÃO. Faltam ~${faltam} palavras de fala.`);
+    console.log('      Não é para encher: é sinal de que um ato entregou menos do que devia.');
+    if (args['exigir-chao']) {
+      console.log('   ❌ --exigir-chao ligado: a corrida para aqui.');
+      process.exit(1);
+    }
+  }
 
   console.log(`\n💾 voz:  ${join(OUTPUT_DIR, `${slug}.script.json`)}`);
   console.log(`💾 plano: ${join(ROTEIRO_DIR, `${slug}.json`)}`);

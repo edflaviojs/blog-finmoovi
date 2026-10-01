@@ -57,8 +57,14 @@ const VOZ_ENTRA_SEG = 27 / 30;
 //    Se um dia estes dois números divergirem, os capítulos desta descrição passam a
 //    apontar para o sítio errado — e o YouTube não se queixa.
 const RESPIRO_SEC = 0.21;
-/** ⚠️ ESPELHADO de `CARTAO_CAPITULO_FRAMES` (78 fotogramas) em `longo/telas.tsx`. */
-const CARTAO_CAPITULO_SEG = 78 / 30;
+/**
+ * ⚠️ ESPELHADO de `CARTAO_CAPITULO_FRAMES` (150 fotogramas) em `longo/telas.tsx`.
+ * 01/10/2026: 78 → 150 (o título ficava legível 0,73s). Ver a nota longa lá.
+ * ⚠️ **Escrito como `150 / 30` de propósito**, e não como `5`: a prova de mesa lê o
+ * NUMERADOR desta linha e compara-o com os outros três ficheiros. Reduzir isto a um
+ * número de segundos tira-o de debaixo da trava.
+ */
+const CARTAO_CAPITULO_SEG = 150 / 30;
 
 /**
  * 🔴 A REGRA DO YOUTUBE QUE MAIS FÁCIL SE PARTE: **nenhum capítulo com menos de 10

@@ -65,7 +65,39 @@ export const PARTE_DEMO = 'demonstracao';
 /** Tudo o que pode existir num capítulo, pela ordem em que é falado. */
 export const PARTES_POSSIVEIS = ['pergunta', 'desenvolvimento', 'demonstracao', 'regancho'];
 
-export const NUM_CAPITULOS = 3;
+/**
+ * ═══ 🔴 TRÊS → QUATRO EM 01/10/2026, E A RAZÃO NÃO É A DURAÇÃO ═══
+ *
+ * O dono, depois de ver o vídeo do churrasco: *"a história não tem uma sequência e
+ * progressão gostosa de assistir. Me parece que já entregamos tudo até bem antes do
+ * meio e depois ficamos repetindo o que falamos antes mas de formas diferentes, e no
+ * final fazemos um fechamento extremamente rápido. Isso tem impactado o canal não
+ * deslanchar."*
+ *
+ * ═══ ESTÁ MEDIDO, COM O RELÓGIO ═══
+ * No roteiro `pequenos-gastos-como-recuperar` (6:49): a promessa entrega a solução aos
+ * **00:14**; o número da história só aterra em **01:33** — depois da resposta; a solução
+ * chega aos **03:09** e é repetida em **04:12** e em **06:22**. Metade do vídeo é
+ * repetição, e a causa é de desenho: **faltava um ato entre a ARMADILHA e a VIRADA.**
+ * Com três atos salta-se do *"por que acontece"* direto para o *"o que eu fiz"*, e tudo
+ * o que resta depois disso é repetir.
+ *
+ * O ato que faltava é **O PREÇO** — quanto custa continuar assim um ano. Ver
+ * `MOVIMENTOS`, logo abaixo.
+ *
+ * ═══ E POR QUE UM CAPÍTULO A MAIS, E NÃO CAPÍTULOS MAIORES ═══
+ * Está medido neste ficheiro (ver `ORCAMENTO.capituloComDemo`): quando se pede ao
+ * modelo um bloco maior **ele não conta palavras** — sete tentativas deram 297, 306,
+ * 310, 320, 339, 348 contra um pedido de 215-285, e *"«CORTE 35 palavras» foi
+ * respondido com um texto MAIOR"*. Houve semanas sem vídeo por causa disso.
+ * **Um capítulo A MAIS pede-lhe mais um bloco do tamanho que ele já escreve bem** — não
+ * provoca o modo de falha, contorna-o.
+ *
+ * ⚠️ E de caminho resolve o chão dos 8 minutos que o dono pediu no mesmo dia: +1
+ * capítulo (190-265 palavras) +1 cartão de capítulo (5s) = **+78 a +107 segundos**.
+ * O plano inteiro em `docs/VIDEO-LONGO-NOVA-NARRATIVA.md`.
+ */
+export const NUM_CAPITULOS = 4;
 
 /**
  * A velocidade da voz é a MEDIDA do pipeline, não um palpite: 2,6 palavras/s saíram
@@ -84,6 +116,38 @@ export const PALAVRAS_POR_SEGUNDO = 2.6;
  * Somando os alvos: ~880 palavras ≈ 5min39 de fala + respiros ≈ 6 minutos.
  * O dono fechou ~6 min (~800 palavras); só cresce para 8-10 DEPOIS de haver
  * retenção medida.
+ */
+/**
+ * ═══ 🔴 OS MÍNIMOS SUBIRAM EM 01/10/2026 — E SÓ OS MÍNIMOS ═══
+ *
+ * Ordem do dono: *"vamos montar plano pra que o vídeo nunca fique abaixo dos 8 minutos,
+ * o que é bom, e resolve esse nosso problema de querer fazer tudo muito corrido"*.
+ *
+ * ⚠️ **O achado que obrigou a isto: o vídeo não chegava aos 8 minutos NEM NO MÁXIMO.**
+ * A fórmula da duração (`docs/VIDEO-LONGO-CHAO-DE-8-MINUTOS.md`, conferida contra o
+ * render real) é `13,2 + 5 × capítulos + 0,396 × palavras`. Com 3 capítulos:
+ *   · tudo no mínimo (807 palavras) → **5,80 min** ← o chão real, não os "~6 min"
+ *   · o churrasco, que é o real (993) → 7,03 min
+ *   · **tudo no máximo (1125) → 7,90 min** ← nem no melhor caso passava
+ * Mexer só nos mínimos não resolvia nada: **o tecto também estava abaixo do alvo.**
+ *
+ * ⚠️ **É o MÍNIMO que faz um chão ser um chão.** Com 4 capítulos e os mínimos antigos o
+ * pior caso ainda dava 7,14 min. Com estes (90 + 225×3 + 260 + 22 + 100):
+ *   · mínimo **1147** palavras → **8,12 min** ✅   · máximo 1390 → 9,73 min
+ *
+ * ⚠️ **OS MÁXIMOS NÃO MEXEM, e é deliberado.** Já estão calibrados à força em cima do
+ * que o modelo escreve de facto (ver as notas de 08/08, abaixo); subi-los convidaria o
+ * vídeo a passar dos 10 minutos e a dobrar o custo do render.
+ *
+ * ⚠️ **E subir mínimos é o movimento SEGURO justamente porque o modelo escreve a mais.**
+ * Nenhuma das sete medições do capítulo da demonstração ficou abaixo de 297 palavras com
+ * um mínimo pedido de 215. Mínimo maior é pedir-lhe o que ele já faz.
+ *
+ * 🔴 **A ABERTURA NÃO MEXE, e isso é uma trava contra mim mesmo.** A 1ª versão desta
+ * mudança pôs 110-120 e deixou **dez palavras de folga**. Este ficheiro está cheio de
+ * notas de blocos reprovados por 2 a 5 palavras — uma janela de dez seria a 21ª
+ * ocorrência do mesmo defeito, escrita de propósito. Os 30 de folga ficam como estavam,
+ * e o chão sai dos capítulos, que são quatro.
  */
 export const ORCAMENTO = {
   abertura: { min: 90, max: 120 },
@@ -104,7 +168,8 @@ export const ORCAMENTO = {
    * com este orçamento (o 1 e o 3). No pior caso o vídeo cresce ~19s — de 6min27 para
    * ~6min46, dentro dos ~6 minutos com folga que o dono fechou.
    */
-  capitulo: { min: 190, max: 265 },
+  /** ⚠️ min 190 → 225 em 01/10/2026 (o chão dos 8 min). O max não mexe — ver a nota acima. */
+  capitulo: { min: 225, max: 265 },
   /**
    * ⚠️ O ATO QUE LEVA A DEMONSTRAÇÃO TEM ORÇAMENTO PRÓPRIO — e a 19ª ocorrência do
    * defeito nº1 desta casa mora aqui, medida na 1ª corrida do modelo novo.
@@ -132,9 +197,34 @@ export const ORCAMENTO = {
    * **~13 segundos a mais** neste capítulo, num vídeo que saiu com 5min40. Continua
    * dentro dos ~6 minutos que o dono fechou.
    */
-  capituloComDemo: { min: 230, max: 320 },
-  chamada: { min: 22, max: 40 },
-  fecho: { min: 85, max: 115 },
+  /** ⚠️ min 230 → 260 em 01/10/2026 (o chão dos 8 min). O max não mexe — ver a nota acima. */
+  capituloComDemo: { min: 260, max: 320 },
+  /**
+   * 🔴 22-40 → 45-70 em 01/10/2026, e o motivo é o TRABALHO que ela passou a ter.
+   *
+   * O dono, a ler o primeiro roteiro novo: *"a questão do engajamento e de pedir alguma
+   * interação tem que ser feita de forma extremamente inteligente… Queremos muito saber
+   * se você já [o problema do vídeo] e se você conseguiu corrigir isso. Deixe aqui nos
+   * comentários também como você conseguiu passar por essas dificuldades, ou se ainda
+   * passa por esses problemas."*
+   *
+   * ⚠️ **E a razão dele não é simpatia, é estratégia:** *"se caso a pessoa responder «eu
+   * não consigo fazer isso», aí depois é uma porta aberta pra responder, ensinar e
+   * oferecer o app"*. A chamada deixa de ser um pedido e passa a ser o princípio de uma
+   * conversa — e isso não cabe em dez segundos.
+   *
+   * ⚠️ 45-70 palavras são ~17-27 segundos. Continua a ser o bloco mais curto do vídeo.
+   */
+  chamada: { min: 45, max: 70 },
+  /**
+   * 🔴 85-115 → 100-130 em 01/10/2026, e não é só pelo chão dos 8 minutos.
+   *
+   * O dono: *"no final fazemos um fechamento extremamente rápido e o vídeo acaba"*. E o
+   * trabalho do fecho AUMENTOU: além de responder à promessa, ele passa a **pagar a
+   * prova** e a entregar o insight grande (ver `docs/VIDEO-LONGO-NOVA-NARRATIVA.md`).
+   * Quarenta segundos para isso tudo era pouco; 100-130 palavras dão ~50s.
+   */
+  fecho: { min: 100, max: 130 },
 };
 
 /**
@@ -153,21 +243,56 @@ export const ORCAMENTO = {
  * não sabia e que explica por que o problema não se resolve sozinho. É aí que mora o
  * "um único ensinamento" que o dono pediu.
  */
+/**
+ * ═══ ♦ O CAMPO `ensinamento` É NOVO (01/10/2026) ═══
+ * Pedido do dono: *"a pessoa tem que assistir o vídeo e tirar vários insights pequenos,
+ * mas um insight maior que seria o tema proposto"*. Os insights pequenos são estes — um
+ * por ato, e tem de caber numa linha. O grande continua a ser o `respostaDaPromessa`.
+ */
 export const MOVIMENTOS = [
   {
     nome: 'O SUSTO',
     faz: 'o número aparece. O narrador conta como o descobriu, e quem ouve sente o baque com ele.',
     proibido: 'explicar a causa — isso é do ato 2. Aqui só se DESCOBRE.',
+    ensinamento: 'o tamanho real do problema é maior do que a pessoa imaginava — e dá para medir numa folha de papel.',
   },
   {
     nome: 'A ARMADILHA',
     faz: 'o ENSINAMENTO do vídeo: o mecanismo que a pessoa não conhece e que faz o problema continuar mesmo quando ela se esforça. É a parte que ela vai repetir a alguém.',
     proibido: 'voltar a descobrir o número — ele já foi descoberto no ato 1. Aqui ele já se sabe, e o que é novo é POR QUE ele não desaparece.',
+    ensinamento: 'por que o esforço sozinho não resolve — a peça que a pessoa não estava a ver.',
+  },
+  /**
+   * ═══ 🔴 O ATO NOVO — 01/10/2026 ═══
+   *
+   * Entra em TERCEIRO lugar, não no fim, e é essa posição que faz o trabalho: sem ele
+   * salta-se do *"por que acontece"* (ato 2) direto para o *"o que eu fiz"* (ato 4), a
+   * história acaba ao minuto 3 e o resto do vídeo repete-se. Medido — ver `NUM_CAPITULOS`.
+   *
+   * ⚠️ **É O ATO QUE MULTIPLICA, E SÓ ISSO.** O ato 1 descobre o número do mês; este
+   * pega nesse mesmo número e mostra o que ele vira num ano, e o que esse dinheiro ERA
+   * — uma coisa que a pessoa reconheça, não um número solto.
+   *
+   * ⚠️ **Dar solução aqui é matar o ato 4** — é exactamente o defeito que este ato veio
+   * consertar, repetido um andar acima.
+   */
+  {
+    nome: 'O PREÇO',
+    /**
+     * ⚠️ **Os exemplos aqui NÃO podem nomear uma das cenas do catálogo da capa.** A 1ª
+     * versão dizia *"uma viagem"* e a prova de mesa apanhou-a: há uma trava que impede o
+     * pedido de dar como bom exemplo uma cena que o caderno daquele vídeo proibiu. O
+     * exemplo pesa mais do que a proibição — e aqui pesaria contra uma proibição nossa.
+     */
+    faz: 'a ESCALA: o mesmo número do ato 1 multiplicado pelo ano, e o que esse dinheiro era — uma coisa que a pessoa reconheça (um mês inteiro do que entra em casa, a reserva que ela nunca consegue juntar, o conserto que ficou por fazer).',
+    proibido: 'dar qualquer saída, conselho ou solução — isso é do ato 4. Aqui só se MULTIPLICA, e dói.',
+    ensinamento: 'o que parece pequeno por mês é grande por ano — e tem nome: é a coisa que ela deixou de ter.',
   },
   {
     nome: 'A VIRADA',
     faz: 'o que o narrador fez de diferente depois de perceber a armadilha, e o que mudou no mês seguinte.',
     proibido: 'prometer que é fácil, ou repetir a descoberta. Aqui já se AGE.',
+    ensinamento: 'o primeiro movimento que muda a conta — e ele é pequeno e cabe em um dia.',
   },
 ];
 
@@ -604,7 +729,7 @@ export function validarMapa(mapa) {
   // 3. OS CAPÍTULOS
   const caps = Array.isArray(mapa.capitulos) ? mapa.capitulos : [];
   if (caps.length !== NUM_CAPITULOS) {
-    erros.push(`precisa de ${NUM_CAPITULOS} capítulos (veio ${caps.length}) — é a forma que os dados reais mandam para 6 minutos`);
+    erros.push(`precisa de ${NUM_CAPITULOS} capítulos (veio ${caps.length}) — é a forma que a história pede: susto, armadilha, preço e virada`);
   }
 
   const titulosVistos = [];
@@ -681,7 +806,7 @@ export function validarMapa(mapa) {
 
   const espinha = Number(mapa.numeroEspinha);
   if (!Number.isFinite(espinha) || espinha < 10) {
-    erros.push(`sem "numeroEspinha" válido — é O número do vídeo, o que os três atos têm de dizer (veio ${JSON.stringify(mapa.numeroEspinha)})`);
+    erros.push(`sem "numeroEspinha" válido — é O número do vídeo, o que os ${NUM_CAPITULOS} atos têm de dizer (veio ${JSON.stringify(mapa.numeroEspinha)})`);
   } else if (numeros.length && !numeros.some((v) => Math.abs(v - espinha) <= 0.001)) {
     erros.push(`o "numeroEspinha" (${espinha}) não está na lista de valores — ele é um deles, não um número à parte`);
   }
@@ -1148,6 +1273,50 @@ export function validarAbertura(fala, { promessa = '', exemploParaComparar = '' 
     );
   }
 
+  /**
+   * ═══ 🔴 A ACUSAÇÃO E A APOSTA — 01/10/2026 ═══
+   *
+   * Ordem do dono: *"tem que começar os 5 primeiros segundos pensando como se fosse um
+   * corte viral: você joga no lixo mais de Mil Reais por ano e eu vou te provar isso"*.
+   *
+   * ⚠️ **ISTO TINHA DE SER MEDIDO, e não só pedido.** A regra da casa
+   * (`prompt-versus-validador`): uma ordem que vive só no pedido é uma ordem que o
+   * modelo cumpre nas primeiras corridas e deixa de cumprir sem ninguém dar por isso.
+   * Aqui há duas coisas que SÃO mensuráveis — se a 1ª frase traz um número, e se a
+   * dívida está assumida em algum sítio da abertura.
+   *
+   * ⚠️ **O resto é julgamento e fica no pedido:** se a acusação dói, se o número é o
+   * certo, se aquilo daria um corte viral. Isso mede-se com o segundo leitor, nunca com
+   * uma expressão regular.
+   *
+   * ⚠️ **São AVISOS e não erros, de propósito.** O gerador reescreve o bloco a cada
+   * erro, e esta casa já perdeu semanas de vídeo com travas novas a reprovar em
+   * cascata (ver as notas do `ORCAMENTO`). Passam a erro depois de um mês de corridas
+   * reais a mostrar que o modelo as cumpre — não antes.
+   */
+  /**
+   * ⚠️ **"DIA DEZ" NÃO É DINHEIRO, e a 1ª versão desta trava achava que era.** Ela
+   * perguntava só `valoresEmDinheiro(capa).length` — e a abertura antiga, que começava
+   * *"a conta de luz da minha mãe chega todo dia dez"*, **passava**: o extractor devolve
+   * `[10]` para uma data. Uma trava que aprova exactamente o caso que ela existe para
+   * reprovar não é trava nenhuma (`teste-que-diz-sim-a-tudo`), e só se viu por correr o
+   * caso falso de controlo em vez de confiar na leitura do código.
+   *
+   * Agora exige as duas coisas juntas: **um valor E a palavra que o torna dinheiro**.
+   */
+  const temMoeda = /\b(reais|real|r\$)\b/i.test(semAcento(capa));
+  if (!temMoeda || !valoresEmDinheiro(capa).length) {
+    avisos.push(
+      `abertura: a 1ª frase não tem um valor em dinheiro ("${capa.slice(0, 50)}…"). Ela é o corte que vai sozinho para as redes — `
+      + `uma acusação com o valor do ANO prende, uma pergunta genérica não.`,
+    );
+  }
+  if (!/\b(vou te provar|te provo|vou provar|prova disso|provar isso)\b/i.test(semAcento(txt).replace(/[^\w\s]/g, ' '))) {
+    avisos.push(
+      'abertura: ninguém assume a dívida ("e eu vou te provar isso"). É ela que segura quem está a ver até ao ato que paga a conta do ano.',
+    );
+  }
+
   // A pergunta continua obrigatória em algum sítio da abertura — pode ser a 1ª frase.
   if (!frases.some((f) => /\?[!…]*$/.test(f))) {
     erros.push('abertura: não há nenhuma pergunta. É ela que faz quem está a ver querer a resposta — pode ser a 1ª frase ou vir logo a seguir à cena.');
@@ -1249,7 +1418,7 @@ export function validarCapitulo(cap, indice, { plano = {}, exemploParaComparar =
     erros.push(
       `${onde}: o número deste vídeo é ${espinha} e ele NÃO é dito neste ato. `
       + `Dinheiro ouvido aqui: ${dinheiroDito.length ? dinheiroDito.join(', ') : 'nenhum'}. `
-      + 'Os três atos falam do MESMO dinheiro, visto de ângulos diferentes — é isso que faz o vídeo ter uma ideia só.',
+      + `Os ${NUM_CAPITULOS} atos falam do MESMO dinheiro, visto de ângulos diferentes — é isso que faz o vídeo ter uma ideia só.`,
     );
   }
 
@@ -1378,7 +1547,7 @@ export function validarFecho(fala, { promessa = '', exemploParaComparar = '' } =
   if (intruso) {
     erros.push(
       `fecho: fala de "${intruso[0]}" — o fecho é a RESPOSTA à promessa mais a assinatura. `
-      + 'O app teve os três capítulos e o pedido teve a chamada; repetir aqui rouba o lugar da resposta.',
+      + `O app teve os ${NUM_CAPITULOS} capítulos e o pedido teve a chamada; repetir aqui rouba o lugar da resposta.`,
     );
   }
 

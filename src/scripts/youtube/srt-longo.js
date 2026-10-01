@@ -84,8 +84,11 @@ export const VOZ_ENTRA_FRAMES = 27;
  * da voz e **ninguém se queixa** — o vídeo sai, o YouTube aceita, e só se vê a ver.
  */
 export const RESPIRO_SEC = 0.21;
-/** ⚠️ ESPELHADO de `CARTAO_CAPITULO_FRAMES` em `youtube-render/src/longo/telas.tsx`. */
-export const CARTAO_CAPITULO_FRAMES = 78;
+/**
+ * ⚠️ ESPELHADO de `CARTAO_CAPITULO_FRAMES` em `youtube-render/src/longo/telas.tsx`.
+ * 01/10/2026: 78 → 150 (o título ficava legível 0,73s). Ver a nota longa lá.
+ */
+export const CARTAO_CAPITULO_FRAMES = 150;
 
 const args = Object.fromEntries(
   process.argv.slice(2).filter((a) => a.startsWith('--')).map((a) => {
@@ -122,6 +125,40 @@ export function iniciosDasCenas(plano, timing) {
     acc += frames[i];
   });
   return { inicios, fimDoConteudo: (VOZ_ENTRA_FRAMES + acc) / FPS };
+}
+
+/**
+ * ═══ 🔴 O CHÃO DE OITO MINUTOS — 01/10/2026 ═══
+ *
+ * Ordem do dono: *"vamos montar plano pra que o vídeo nunca fique abaixo dos 8 minutos,
+ * o que é bom, e resolve esse nosso problema de querer fazer tudo muito corrido"*.
+ *
+ * ⚠️ **Até hoje NADA no pipeline media a duração final contra um alvo.** Um vídeo de
+ * seis minutos saía, era publicado, e ninguém sabia — o mesmo modo de falha do resto da
+ * casa: *o verde não prova nada*. Esta é a conta, num sítio só, para quem quiser medir.
+ */
+export const CHAO_DO_VIDEO_SEC = 8 * 60;
+
+/**
+ * ⚠️ ESPELHADOS de `SIGNATURE_FRAMES` (Long.tsx) e `TELA_FINAL_FRAMES` (longo/telas.tsx).
+ * Eles já são comparados entre o render e os irmãos pela prova
+ * `validar-publicacao-longo.js`; este ficheiro entrou nessa lista no mesmo dia em que
+ * passou a declará-los — uma cópia fora da trava seria a 22ª ocorrência do defeito nº1.
+ */
+export const SIGNATURE_FRAMES = 75;
+export const TELA_FINAL_FRAMES = 300;
+
+/**
+ * A DURAÇÃO DO VÍDEO INTEIRO, em segundos — a mesma conta de `longTotalFrames` em
+ * `Long.tsx`, construída por cima de `iniciosDasCenas` em vez de recopiada.
+ *
+ * ⚠️ **Sem `timing` isto é uma PREVISÃO**, feita com a duração autoral de cada cena
+ * (palavras ÷ 2,6). Com a voz já gerada passa a ser a medida real. É de propósito que
+ * serve os dois: o chão tem de ser conhecido ANTES de se gastar meia hora de render.
+ */
+export function duracaoDoVideoSec(plano, timing = null) {
+  const { fimDoConteudo } = iniciosDasCenas(plano, timing);
+  return fimDoConteudo + (SIGNATURE_FRAMES + TELA_FINAL_FRAMES) / FPS;
 }
 
 /**

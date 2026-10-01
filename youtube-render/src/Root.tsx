@@ -33,13 +33,19 @@ const TelaBordaoAtorPreview = () => (
  * branco/claro aparece por cima. Como o vídeo foi gerado em preto PURO (#000000,
  * medido com `ffmpeg signalstats`: 0 a 3 de 255), o fundo dele some sozinho — não
  * precisa de recorte manual nem de um vídeo com transparência de verdade.
+ *
+ * ⚠️ **O `ficheiro` passou a ser um props em 01/10/2026** — e não por arrumação: os 7
+ * clipes que o dono criou (26 a 32) têm COR a sério (banana amarela, carteira cinza,
+ * linhas rosa), e o "screen" só foi provado em preto-e-branco puro. Com o ficheiro
+ * cravado no código não havia como ver o segundo caso sem reescrever o ficheiro —
+ * e um teste que só sabe dizer "sim" ao caso que já passou não é teste nenhum.
  */
-const StickmanVideoTeste = () => (
+const StickmanVideoTeste: React.FC<{ ficheiro?: string }> = ({ ficheiro }) => (
   <AbsoluteFill>
     <Background />
     <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center' }}>
       <OffthreadVideo
-        src={staticFile('manus/_teste-boneco/1-carregar-peso.mp4')}
+        src={staticFile(`manus/_teste-boneco/${ficheiro || '1-carregar-peso.mp4'}`)}
         style={{ width: 650, mixBlendMode: 'screen' }}
       />
     </AbsoluteFill>
@@ -813,6 +819,7 @@ export const RemotionRoot: React.FC = () => {
         fps={FPS}
         width={1080}
         height={1920}
+        defaultProps={{ ficheiro: '1-carregar-peso.mp4' }}
       />
 
       {/* ♦ 05/08/2026 — AS CAPAS FOTOGRAFIA (IMPL20 §52).

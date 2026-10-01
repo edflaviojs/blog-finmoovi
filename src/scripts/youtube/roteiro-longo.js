@@ -46,7 +46,7 @@ import { polirCapitulo, polirBloco } from './lib/leitor-longo.js';
 import {
   ORCAMENTO, MOVIMENTOS, PARTES_DO_CAPITULO, PARTES_POSSIVEIS, NUM_CAPITULOS, MAX_PALAVRAS_TITULO, PALAVRAS_POR_SEGUNDO,
   validarMapa, validarAbertura, validarCapitulo, validarChamada, validarFecho, validarLongo,
-  contarPalavras, frasesDe, falaCorrida, consertarMapa,
+  contarPalavras, frasesDe, falaCorrida, consertarMapa, valoresEmDinheiro,
 } from './lib/schema-longo.js';
 /**
  * ⚠️ IMPORTADO DO SHORT DE PROPÓSITO, E NÃO COPIADO.
@@ -167,7 +167,13 @@ export function lerTemaLongo() {
  * dinheiro, visto de ângulos diferentes.
  */
 export const EXEMPLO_DE_MAPA = {
-  promessa: 'Vou te mostrar como achar as assinaturas que você paga sem usar e cortar as maiores ainda hoje',
+  /**
+   * ⚠️ 01/10/2026 — a promessa passou de RESPOSTA a APOSTA. A versão antiga era *"vou te
+   * mostrar como achar as assinaturas e cortar as maiores ainda hoje"*: o fim do vídeo,
+   * dito no primeiro terço do primeiro minuto. Ver `EXEMPLO_DE_ABERTURA`.
+   */
+  /** ⚠️ A aposta por outras palavras — esta linha entra na comparação anti-cópia. Ver a nota em `EXEMPLO_DE_ABERTURA`. */
+  promessa: 'Você paga mais de dois mil reais por ano por coisas que não usa, e eu provo isso com o seu extrato',
   fioCondutor: 'ralo',
   numeroEspinha: 189,
   /**
@@ -189,6 +195,21 @@ export const EXEMPLO_DE_MAPA = {
     { nome: 'a academia parada', valor: 90, tipo: 'sai' },
     { nome: 'o jogo do celular', valor: 60, tipo: 'sai' },
     { nome: 'o que sai da conta todo mês sem ninguém ver', valor: 189, tipo: 'sai' },
+    /**
+     * ♦ O VALOR DO ANO — entrou em 01/10/2026 com o ato novo (O PREÇO).
+     *
+     * ⚠️ **Tem de estar AQUI, e não só no texto do ato.** A lista de `valores` é fechada:
+     * há uma trava que confere que todo o dinheiro dito no vídeo está nela. Um número que
+     * o ato 3 invente e que não esteja nesta lista é reprovado — e o exemplo é quem ensina
+     * ao modelo que este valor existe.
+     *
+     * ⚠️ **`saldo` e não `sai`, e é a regra deste ficheiro aplicada à letra:** `sai` é
+     * dinheiro que vai embora TODO MÊS, e isto é um total de doze meses. Posto como `sai`,
+     * a tela de Fluxo mostraria 2.268 a sair contra 2.400 que entram — uma mentira no
+     * ecrã. *"Na dúvida, escreva saldo: errar para saldo faz uma tela não aparecer; errar
+     * para entra põe uma mentira no ecrã."*
+     */
+    { nome: 'o que isso deu em doze meses', valor: 2268, tipo: 'saldo' },
   ],
   somas: [
     { de: ['o streaming que ninguém abria', 'a academia parada', 'o jogo do celular'], da: 'o que sai da conta todo mês sem ninguém ver' },
@@ -211,19 +232,45 @@ export const EXEMPLO_DE_MAPA = {
    * o EXEMPLO deixa de o ter preenchido — porque um exemplo preenchido é uma ordem.
    */
   contaDoCartao: null,
-  capituloDaDemonstracao: 2,
+  /**
+   * ⚠️ 2 → 4 em 01/10/2026, com o ato novo. Com quatro atos, o 2 é A ARMADILHA — o
+   * ensinamento do vídeo — e meter o app no meio dele é interromper a lição com um
+   * anúncio. O app é a FERRAMENTA, logo vive no ato em que o narrador AGE: A VIRADA.
+   * Continua a cumprir a regra que já estava escrita — *"mostrar o problema antes da
+   * ferramenta"* —, agora com três atos de problema à frente em vez de um.
+   */
+  capituloDaDemonstracao: 4,
+  /**
+   * ═══ 🔴 QUATRO CAPÍTULOS AQUI PORQUE O EXEMPLO É QUEM ENSINA — 01/10/2026 ═══
+   *
+   * É a quarta vez que este ficheiro aprende a mesma coisa: **o exemplo pesa mais do que
+   * a proibição** (ver as notas do `tipo` e do `contaDoCartao`, acima). Pedir quatro atos
+   * na regra e mostrar três no exemplo daria três atos, e o defeito seria invisível até
+   * alguém contar os capítulos do vídeo pronto.
+   *
+   * ⚠️ **E o ato 2 teve de ser REESCRITO, não empurrado.** Ele dizia *"o tempo: os mesmos
+   * cento e oitenta e nove multiplicados pelos meses que já passaram"* — isso é O PREÇO,
+   * que agora é o ato 3. Deixá-lo como estava poria o mesmo trabalho em dois atos, que é
+   * exactamente o defeito que o 4º ato veio consertar.
+   */
   capitulos: [
     {
       titulo: 'A noite em que eu li o extrato linha por linha',
       oQueAcrescenta: 'o susto: de onde vêm os cento e oitenta e nove reais, item a item',
-      oQueFicaEmAberto: 'há quanto tempo é que aquilo já saía sem ninguém ver',
+      oQueFicaEmAberto: 'por que é que nenhuma delas chamou a atenção antes',
       oNumeroDoAto: 'o streaming que ninguém abria',
     },
     {
-      titulo: 'O que aparece quando você põe tudo no mesmo lugar',
-      oQueAcrescenta: 'o tempo: os mesmos cento e oitenta e nove reais multiplicados pelos meses que já passaram',
-      oQueFicaEmAberto: 'quais delas dá mesmo para cortar sem falta nenhuma',
+      titulo: 'Por que uma cobrança pequena nunca entra na sua conta de cabeça',
+      oQueAcrescenta: 'o mecanismo: cada uma é pequena e automática, e a cabeça só guarda a maior — o conjunto nunca é somado',
+      oQueFicaEmAberto: 'quanto é que esse conjunto já custou até hoje',
       oNumeroDoAto: 'a academia parada',
+    },
+    {
+      titulo: 'O que esses cento e oitenta e nove reais viraram em um ano',
+      oQueAcrescenta: 'a escala: os mesmos cento e oitenta e nove por mês deram dois mil duzentos e sessenta e oito em doze meses — quase um mês inteiro do que entra em casa',
+      oQueFicaEmAberto: 'quais delas dá mesmo para cortar sem falta nenhuma',
+      oNumeroDoAto: 'o que isso deu em doze meses',
     },
     {
       titulo: 'Cancelar sem perder o que a casa usa',
@@ -232,7 +279,11 @@ export const EXEMPLO_DE_MAPA = {
       oNumeroDoAto: 'o jogo do celular',
     },
   ],
-  respostaDaPromessa: 'As assinaturas esquecidas saem da conta no dia em que você as vê escritas num sítio só',
+  /**
+   * ⚠️ 01/10/2026 — reescrita com a promessa. Ela tem de falar da MESMA coisa que foi
+   * prometida (há uma trava que confere), e a promessa passou a ser a aposta do ano.
+   */
+  respostaDaPromessa: 'Os dois mil reais por ano que você paga sem usar saem da conta no dia em que você os vê escritos num sítio só',
   lacoAberto: 'e tem uma delas que volta a cobrar sozinha no ano seguinte sem avisar ninguém',
 };
 
@@ -258,17 +309,56 @@ export const EXEMPLO_DE_MAPA = {
  *   4. **Ninguém é "um deles" antes de ser apresentado.**
  *   5. **Volta-se à cena no fim** (isso faz-se no bloco do fecho, não aqui).
  */
+/**
+ * ═══ 🔴 REESCRITO EM 01/10/2026 — A ACUSAÇÃO ANTES DA CENA ═══
+ *
+ * Ordem do dono: *"tem que começar os 5 primeiros segundos pensando como se fosse um
+ * corte viral. Tipo assim: você joga no lixo mais de Mil Reais por ano e eu vou te
+ * provar isso!"*
+ *
+ * ⚠️ **ISTO NÃO APAGA A ORDEM DE 08/08** (*"abre pelo que se VÊ"*, acima). A acusação
+ * TAMBÉM é uma coisa que se vê — alguém a deitar dinheiro ao lixo — e tem número. O que
+ * mudou foi a ORDEM: a acusação primeiro, a cena do dia dez logo a seguir. As duas
+ * regras valem; a nova diz qual vem à frente.
+ *
+ * ⚠️ **E A PROMESSA DEIXOU DE SER A RESPOSTA.** A versão antiga dizia *"vou te mostrar
+ * onde a sua conta sobe e o que dá pra desligar hoje"* — isso é o fim do vídeo, dito aos
+ * catorze segundos. Medido no churrasco: a solução estava no ecrã em 00:14 e a história
+ * acabava ao minuto 3. Agora a promessa é a APOSTA, e o vídeo só a paga no ato 3.
+ */
 export const EXEMPLO_DE_ABERTURA = {
-  promessa: 'Vou te mostrar onde a sua conta de luz sobe sozinha e o que dá pra desligar hoje',
-  fala: 'A conta de luz da minha mãe chega todo dia dez. '
+  promessa: 'Você joga fora mais de mil reais por ano em luz, e dá pra provar isso',
+  /**
+   * ═══ 🔴 A APOSTA AQUI É DITA POR OUTRAS PALAVRAS, E ISSO É UMA TRAVA ═══
+   *
+   * A 1ª versão desta linha dizia **"E eu vou te provar isso antes do fim deste vídeo"**
+   * — a frase canónica, a mesma que o pedido manda escrever duas secções acima. Medido
+   * na 1ª corrida a sério (01/10/2026, tema `economizar-300-por-mes`): **quatro chamadas
+   * à IA deitadas fora**, uma na abertura e três seguidas no capítulo 2, todas com o
+   * mesmo veredito —
+   *   *"copiou o exemplo — «e eu vou te provar isso»"*.
+   *
+   * É a família de defeito nº1 desta casa outra vez, agora com os dois lados meus: o
+   * **pedido ORDENA** uma frase e o **validador anti-cópia PROÍBE** essa mesma frase, por
+   * ela estar aqui. O modelo não tinha saída: obedecer era ser reprovado.
+   *
+   * ⚠️ **A cura é pôr a aposta aqui noutras palavras, não tirar a aposta.** O exemplo
+   * mostra a FORMA (acusar com número, assumir a dívida); a frase canónica vive só no
+   * texto do pedido, que **não entra na comparação**. Ver `EXEMPLO_PARA_COMPARAR`.
+   *
+   * ⚠️ Vale para a `promessa` do `EXEMPLO_DE_MAPA` pela mesma razão: ela também entra na
+   * comparação.
+   */
+  fala: 'Você joga fora mais de mil reais por ano em luz. '
+    + 'E dá pra provar isso com uma conta de luz só. '
+    + 'A conta de luz da minha mãe chega todo dia dez. '
     + 'Três meses seguidos ela veio mais cara, e ninguém em casa comprou nada novo. '
     + 'Então o que mudou? '
     + 'Mudou o chuveiro, que nem passa vinte minutos ligado por dia e pesa mais do que parece. '
     + 'Fui olhar de perto e achei o banho demorado de manhã, a máquina de lavar rodando meio vazia, '
     + 'e uma lâmpada de área acesa a noite inteira. '
     + 'Cada uma parece pequena sozinha, e é por isso que ninguém repara. '
-    + 'Nos próximos minutos eu te mostro onde a sua conta de luz sobe sozinha, quanto isso deu na casa dela, '
-    + 'e o que dá pra desligar hoje sem ninguém reclamar.',
+    + 'Fica comigo que eu fecho essa conta do ano na sua frente.',
 };
 
 /**
@@ -331,9 +421,41 @@ export const EXEMPLO_DE_CAPITULO = {
     + 'Fui somando ali mesmo, na margem do papel, e deu cento e oitenta e nove reais. '
     + 'Por mês. Saindo enquanto eu dormia, sem ninguém pedir e sem ninguém olhar. '
     + 'E sabe o que doeu mais? Não foi o valor. Foi perceber que cada uma delas, sozinha, é pequena demais para eu ter reparado. '
-    + 'Ninguém me enganou. Fui eu que assinei as três, uma de cada vez, em meses diferentes, e nenhuma delas me pareceu cara no dia em que entrou.',
-  regancho: 'Só que se cento e oitenta e nove reais saem sem eu ver, a pergunta seguinte é feia. '
-    + 'Há quanto tempo é que isso já vinha acontecendo?',
+    + 'Ninguém me enganou. Fui eu que assinei as três, uma de cada vez, em meses diferentes, e nenhuma delas me pareceu cara no dia em que entrou. '
+    /**
+     * ♦ ESTAS LINHAS ENTRARAM EM 01/10/2026, e não foram enchimento.
+     *
+     * O mínimo do capítulo subiu de 190 para 225 palavras (o chão dos 8 minutos) e o
+     * exemplo ficou **abaixo da regra que ele próprio ensina** — 204. Um exemplo que não
+     * cabe no orçamento ensina ao modelo o tamanho errado, e esta casa já mediu três
+     * vezes que **o exemplo pesa mais do que a proibição**.
+     *
+     * ⚠️ O que se acrescentou é CENA, não adjetivos: o papel na mão, o que aquele
+     * dinheiro era. É o que o resto do pedido manda fazer — e um exemplo esticado com
+     * palavras vazias ensinaria exactamente o contrário.
+     *
+     * 🔴 **E NÃO REPETE O NÚMERO, de propósito.** A 1ª versão destas linhas dizia outra
+     * vez *"cento e oitenta e nove reais"* — e uma prova de mesa apanhou-a: há um caso
+     * falso de controlo que apaga o número do desenvolvimento e exige que o validador
+     * reprove. Com o número dito duas vezes, apagá-lo numa deixava-o na outra e **o
+     * controlo passava a aprovar um capítulo sem número.** Uma prova que deixa de
+     * reprovar o caso falso deixa de ser prova.
+     */
+    + 'Eu fiquei um tempo ali parado, com o papel na mão, olhando pra aquele número. '
+    + 'Dava a feira de uma semana lá em casa. '
+    + 'Dava o tênis do meu filho, que eu tinha falado que ficava pro mês que vem.',
+  /**
+   * ⚠️ 01/10/2026 — o re-gancho passou a ATIRAR UMA PERGUNTA A QUEM VÊ, e o exemplo tem
+   * de a mostrar: a regra sozinha não chega (é a quinta vez que este ficheiro aprende
+   * que o exemplo pesa mais do que a proibição).
+   *
+   * ⚠️ **São duas perguntas e isso é de propósito:** a primeira é a dúvida do narrador,
+   * que é a ponte para o ato seguinte; a última é a pergunta AO PÚBLICO. Só a segunda
+   * é que é nova — e é a última, porque é a que fica a ecoar.
+   */
+  regancho: 'Só que se cento e oitenta e nove reais saem sem eu ver, a pergunta seguinte é feia: '
+    + 'há quanto tempo isso já vinha acontecendo? '
+    + 'E você, quantas tem assinadas agora sem lembrar?',
 };
 
 /**
@@ -351,6 +473,34 @@ export const EXEMPLO_DE_FECHO = 'No fim das contas, a sua conta de luz não sobe
   + 'Ela sobe num banho mais demorado aqui, numa máquina meio vazia ali, numa lâmpada que ninguém apaga. '
   + 'Cada uma parece nada sozinha, e é exatamente por isso que ninguém mexe em nenhuma. '
   + 'No dia em que você vê o mês inteiro escrito num sítio só, aquilo deixa de ser azar e passa a ser escolha sua. '
+  /**
+   * ♦ ESTAS DUAS LINHAS ENTRARAM EM 01/10/2026, pelo mesmo motivo do capítulo-exemplo:
+   * o mínimo do fecho subiu de 85 para 100 palavras e o exemplo ficou com 94 — abaixo da
+   * regra que ele ensina.
+   *
+   * ⚠️ E o que entrou é o trabalho NOVO do fecho, não enchimento: **pagar a prova** (o
+   * número do ano, fechado) e deixar o ensinamento grande numa frase que se repete a um
+   * amigo. O dono: *"no final fazemos um fechamento extremamente rápido e o vídeo
+   * acaba"*. Ver `docs/VIDEO-LONGO-NOVA-NARRATIVA.md`.
+   */
+  /**
+   * ═══ 🔴 REESCRITO EM 01/10/2026 — PELO MESMO DEFEITO, NOUTRO SÍTIO ═══
+   *
+   * A 1ª versão destas duas linhas era **à letra** o que o pedido do fecho ORDENA dizer
+   * (*"eu disse no começo que isso dava mais de mil reais por ano. E deu."*). Resultado,
+   * medido na corrida do tema `economizar-300-por-mes`: o fecho foi **reprovado duas
+   * vezes seguidas por cópia** e o roteiro morreu sem fim.
+   *
+   * ⚠️ **E o pior é que eu já tinha consertado isto na ABERTURA, horas antes, e não
+   * varri o resto.** Consertar uma ocorrência e não procurar as irmãs é a assinatura do
+   * defeito nº1 desta casa. A prova `#9` passou a cobrir as DUAS frases canónicas, para
+   * a próxima ser apanhada por código em vez de por uma corrida perdida.
+   *
+   * A regra, agora escrita: **o que o pedido MANDA dizer, o exemplo diz por outras
+   * palavras.** O exemplo ensina a forma; a frase vive no pedido, que não é comparado.
+   */
+  + 'Lá no começo eu apostei mais de mil reais por ano nessa casa. E a conta fechou. '
+  + 'Ninguém precisou ganhar um real a mais para isso acontecer. '
   + 'E ainda tem a bandeira, que muda todo mês e que quase ninguém em casa sabe ler. '
   + `${BORDAO}`;
 
@@ -377,8 +527,19 @@ export const EXEMPLO_DE_FECHO = 'No fim das contas, a sua conta de luz não sobe
  * 🔴 **Se um dia o longo passar a ser mais do que um por semana, esta decisão cai.** É o
  * volume que a sustenta, não o gosto. Ver `FORMATOS.longo.chamadaRespondidaAMao`.
  */
-export const EXEMPLO_DE_CHAMADA = 'Quer ver quanto a sua casa está levando por mês nessas coisas pequenas? '
-  + 'Comenta FINMOOVI aqui embaixo que eu te mando o app com sete dias grátis, e você faz essa conta em dois toques.';
+/**
+ * ⚠️ REESCRITA EM 01/10/2026 — a versão antiga era *"quer ver quanto a sua casa está
+ * levando? Comenta FINMOOVI que eu te mando o app"*: um pedido, e nada mais. O dono
+ * mandou transformá-la no princípio de uma conversa, e disse porquê — quem responde
+ * *"eu não consigo"* é uma porta aberta para ser respondido, ensinado, e só então ouvir
+ * falar do app. Ver a nota do `ORCAMENTO.chamada`, que subiu de 40 para 70 palavras
+ * por causa disto.
+ */
+export const EXEMPLO_DE_CHAMADA = 'Antes de acabar, queria muito saber de você. '
+  + 'Já aconteceu de a sua conta de luz subir assim, sem ninguém comprar nada novo? '
+  + 'E você conseguiu virar esse jogo, ou ainda apanha disso todo mês? '
+  + 'Escreve nos comentários como foi aí na sua casa, que eu leio e respondo. '
+  + 'E se quiser ver o seu número, comenta FINMOOVI que eu te mando o app com sete dias grátis.';
 
 /**
  * O TEXTO CONTRA O QUAL SE MEDE A CÓPIA. Repare no que fica DE FORA:
@@ -456,13 +617,13 @@ const REGRAS_DE_FALA = `════════ COMO A FALA FLUI ════�
  * que está a passar. Uma terceira personagem obrigaria a segurar mais uma história.
  */
 const OS_MOVIMENTOS = MOVIMENTOS
-  .map((m, i) => `   **ATO ${i + 1} — ${m.nome}:** ${m.faz}\n      ⛔ Neste ato é proibido ${m.proibido}`)
+  .map((m, i) => `   **ATO ${i + 1} — ${m.nome}:** ${m.faz}\n      ⛔ Neste ato é proibido ${m.proibido}\n      💡 O que ele deixa na cabeça de quem vê: ${m.ensinamento}`)
   .join('\n');
 
 const A_HISTORIA = `════════ A REGRA MAIOR DESTE VÍDEO: UMA HISTÓRIA SÓ ════════
-Este vídeo conta **UMA história, de UMA pessoa, com UM número**. Os três capítulos não são três assuntos — são três **atos da mesma história**, e o mesmo dinheiro aparece nos três.
+Este vídeo conta **UMA história, de UMA pessoa, com UM número**. Os ${NUM_CAPITULOS} capítulos não são ${NUM_CAPITULOS} assuntos — são ${NUM_CAPITULOS} **atos da mesma história**, e o mesmo dinheiro aparece em todos.
 
-🎬 **E OS TRÊS ATOS SÃO ESTES, POR ESTA ORDEM. Não são três descrições da mesma cena:**
+🎬 **E OS ${NUM_CAPITULOS} ATOS SÃO ESTES, POR ESTA ORDEM. Não são ${NUM_CAPITULOS} descrições da mesma cena:**
 ${OS_MOVIMENTOS}
 
 🔴 **O ATO 2 É O CORAÇÃO DO VÍDEO.** É lá que está o **único ensinamento** — a coisa que a pessoa não sabia e que explica por que o problema continua mesmo quando ela se esforça. Se o ato 2 só voltar a mostrar o número que o ato 1 já mostrou, o vídeo dá voltas e quem vê sai. **Já aconteceu neste canal: o ato 1 e o ato 2 saíram com a mesma cena, o mesmo papel na mão e a mesma soma.**
@@ -633,7 +794,7 @@ function buildPromptMapaBase(t, proibidas = [], blocoDeCenarios = '') {
   const ex = EXEMPLO_DE_MAPA;
   return `${CABECALHO}
 
-SUA TAREFA AGORA: **desenhar o MAPA de um vídeo de seis minutos.** Nenhuma linha do guião ainda — só o desenho.
+SUA TAREFA AGORA: **desenhar o MAPA de um vídeo de oito minutos.** Nenhuma linha do guião ainda — só o desenho.
 
 ${contexto(t)}
 ════════ A FORMA, QUE VEIO DE VÍDEOS REAIS ════════
@@ -641,13 +802,16 @@ Nós medimos 64 capítulos de sete vídeos longos de finanças brasileiros. O qu
 · quem prende NOMEIA a promessa logo no início; quem não prende chama ao primeiro capítulo "Introdução";
 · cada capítulo dos bons entrega UMA coisa e o título já diz qual;
 · os fechos bons deixam uma ponta no ar, não uma despedida.
-Para seis minutos são **${NUM_CAPITULOS} capítulos**, e não mais.
+Para oito minutos são **${NUM_CAPITULOS} capítulos**, e não mais.
 
 ${A_HISTORIA}
 ${blocoDeCenarios}
 ════════ O QUE VOCÊ TEM DE DECIDIR ════════
-1. **A PROMESSA** — uma frase só, entre 5 e 25 palavras, dizendo o que a pessoa leva daqui. NÃO é pergunta. É o que o vídeo ENTREGA.
-2. 🔴 **O NÚMERO-ESPINHA** (\`numeroEspinha\`) — **UM número de dinheiro para o vídeo INTEIRO**. É o número da história, e os três atos são obrigados a dizê-lo. O computador confere nos três.
+1. 🔴 **A PROMESSA É UMA APOSTA, não um resumo** — uma frase só, entre 5 e 25 palavras, com **o número do ANO** e a dívida *"e eu vou te provar isso"*. NÃO é pergunta.
+   · ✓ *"Você paga mais de dois mil reais por ano por coisas que não usa, e eu vou te provar isso."*
+   · ✗ *"Vou te mostrar como achar as assinaturas e cortar as maiores ainda hoje."* — isso é o FIM do vídeo. Dito no primeiro minuto, não sobra história para os oito.
+   · ⚠️ Quem ouve a aposta fica para ver se ela se cumpre. Quem ouve a resposta já não precisa de ficar.
+2. 🔴 **O NÚMERO-ESPINHA** (\`numeroEspinha\`) — **UM número de dinheiro para o vídeo INTEIRO**. É o número da história, e os ${NUM_CAPITULOS} atos são obrigados a dizê-lo. O computador confere em todos.
 3. 🔴 **A LISTA DE VALORES** (\`valores\`) — **TODO o dinheiro que este vídeo pode dizer**, cada um com um nome do dia a dia. Nada fora desta lista pode ser falado em nenhum capítulo, e o computador confere. O número-espinha é um destes valores.
    · 🔴 **\`tipo\` — o que este dinheiro É**, uma destas três palavras, e mais nenhuma:
      · **\`"entra"\`** — dinheiro que CHEGA à pessoa.
@@ -662,20 +826,21 @@ ${blocoDeCenarios}
 4. 🧮 **contaDoCartao** — o NOME (da lista de valores) da conta que é uma **fatura de cartão de crédito**. Se a história não tiver nenhuma, escreva null.
    ⚠️ **Isto não é um detalhe.** É sobre essa conta, e só sobre ela, que o computador calcula os juros REAIS do cartão com as taxas do Banco Central. Apontar o dinheiro devido a um amigo como se fosse cartão seria dizer que o amigo cobra juros de banco.
    💡 **A história fica muito mais forte se uma das contas for do cartão** — é aí que estão os juros que ninguém entende, e é isso que o ato 2 vai poder ensinar.
-5. **capituloDaDemonstracao** — 1, 2 ou 3. **O app aparece num capítulo SÓ**, com peso. Nos outros o nome dele nem é dito. (O costume dos vídeos que prendem: mostrar o problema antes da ferramenta.)
-6. **${NUM_CAPITULOS} CAPÍTULOS**, e são três ATOS da mesma história:
+5. **capituloDaDemonstracao** — de 1 a ${NUM_CAPITULOS}. **O app aparece num capítulo SÓ**, com peso. Nos outros o nome dele nem é dito. (O costume dos vídeos que prendem: mostrar o problema antes da ferramenta — por isso ele vive no ato em que o narrador AGE, e não no meio do ensinamento.)
+6. **${NUM_CAPITULOS} CAPÍTULOS**, e são ${NUM_CAPITULOS} ATOS da mesma história:
    · **titulo** — no máximo ${MAX_PALAVRAS_TITULO} palavras, e ele PROMETE o que o ato entrega. ⛔ Proibido "Introdução", "Conclusão", "Parte 1", "Resumo".
    · **oQueAcrescenta** — o facto NOVO que este ato traz sobre o MESMO dinheiro. Se um ato não acrescenta nada, o vídeo dá voltas.
    · **oQueFicaEmAberto** — a ponta que este ato deixa no ar para o seguinte agarrar.
    · 🔴 **oNumeroDoAto** — o NOME (da lista de valores) do dinheiro que ESTE ato traz de novo.
-     ⚠️ **Um por ato, e os três DIFERENTES.** Ordem do dono, 10/08/2026: *"um número diferente por capítulo. Hoje o vídeo gira em torno de um número só. Três números — um por ato — dão três motivos para ficar."*
-     ⚠️ **Isto NÃO substitui o número-espinha**: ele continua a atravessar os três atos e a ser dito nos três. O que se acrescenta é o número que só este ato revela — a peça nova que faz valer a pena ficar até aqui.
-     ✅ Exemplo: espinha *"o total que sai todo mês"*; ato 1 revela *"o streaming que ninguém abria"*, ato 2 *"quanto isso deu em doze meses"*, ato 3 *"o que sobra depois de cortar"*.
+     ⚠️ **Um por ato, e TODOS DIFERENTES.** Ordem do dono, 10/08/2026: *"um número diferente por capítulo. Hoje o vídeo gira em torno de um número só. Um número por ato dá um motivo por ato para ficar."*
+     ⚠️ **Isto NÃO substitui o número-espinha**: ele continua a atravessar os ${NUM_CAPITULOS} atos e a ser dito em todos. O que se acrescenta é o número que só este ato revela — a peça nova que faz valer a pena ficar até aqui.
+     ✅ Exemplo: espinha *"o total que sai todo mês"*; ato 1 revela *"o streaming que ninguém abria"*, ato 2 *"a academia parada"*, ato 3 *"quanto isso deu em doze meses"*, ato 4 *"o que sobra depois de cortar"*.
+     🔴 **O número do ato 3 é obrigatoriamente o do ANO** — é esse ato que multiplica. Ponha-o na lista de valores como \`"saldo"\`: ele é um total de doze meses, não dinheiro que sai todo mês, e pô-lo como \`"sai"\` faria a tela do app mostrar um ano a sair contra um mês a entrar.
 7. **respostaDaPromessa** — a lição do fim, que responde ao que a promessa prometeu. Tem de falar da MESMA coisa.
 8. **lacoAberto** — a provocação final, DENTRO deste tema. ⛔ Proibido prometer "no próximo vídeo" ou "semana que vem": não há fila de vídeos, e prometer o que não existe é mentira.
 9. **fioCondutor** — a imagem da capa, uma destas: ${menuDeImagens(proibidas)}.
 
-⛔ **O ERRO QUE MATOU O PRIMEIRO VÍDEO DESTE CANAL, para não o repetir:** os três capítulos tinham números diferentes e acabaram a contar histórias de **três pessoas diferentes** — no primeiro a dívida eram quatrocentos e cinquenta, no segundo mil duzentos e oitenta, no terceiro trezentos. Quem via sentia que o vídeo dava voltas. É por isso que agora há um número só.
+⛔ **O ERRO QUE MATOU O PRIMEIRO VÍDEO DESTE CANAL, para não o repetir:** os capítulos tinham números diferentes e acabaram a contar histórias de **pessoas diferentes** — no primeiro a dívida eram quatrocentos e cinquenta, no segundo mil duzentos e oitenta, no terceiro trezentos. Quem via sentia que o vídeo dava voltas. É por isso que agora há um número só.
 
 ${REGRAS_DE_NUMERO}
 
@@ -684,7 +849,7 @@ ${REGRAS_DE_NUMERO}
 
 ${JSON.stringify(ex, null, 2)}
 
-Repare no que este exemplo faz: **UM número (cento e oitenta e nove) atravessa os três atos**; a lista de valores fecha tudo o que se pode dizer em dinheiro; a soma bate certo; cada ato acrescenta uma coisa nova sobre o MESMO dinheiro (de onde vem · há quanto tempo · o que sai hoje); o app tem um ato só; e o fim responde à promessa falando da mesma coisa.
+Repare no que este exemplo faz: **UM número (cento e oitenta e nove) atravessa os ${NUM_CAPITULOS} atos**; a lista de valores fecha tudo o que se pode dizer em dinheiro; a soma bate certo; **cada ato acrescenta uma coisa nova sobre o MESMO dinheiro, e nenhum repete o trabalho do anterior** (de onde vem · por que ninguém vê · quanto deu num ano · o que sai hoje); o app tem um ato só, e é o último; e o fim responde à promessa falando da mesma coisa.
 
 Responda APENAS com JSON válido, sem markdown, exatamente com estes campos:
 {
@@ -712,7 +877,7 @@ Responda APENAS com JSON válido, sem markdown, exatamente com estes campos:
  * letra, mais aquilo que já foi gasto e não pode voltar. Sem isto, cada chamada
  * escreve um vídeo diferente do anterior e ninguém percebe o resultado.
  */
-function blocoDaAncora({ paragrafoAnterior, deQuem, numerosUsados, comparacoesUsadas, jaDito }) {
+export function blocoDaAncora({ paragrafoAnterior, deQuem, numerosUsados, comparacoesUsadas, jaDito }) {
   const partes = [];
   if (paragrafoAnterior) {
     partes.push(`════════ A ÂNCORA — O QUE ACABOU DE SER DITO ════════
@@ -723,16 +888,24 @@ Estas são as palavras EXATAS com que ${deQuem} terminou. A sua primeira frase t
 ⛔ **RETOMAR NÃO É ECOAR.** Não abra repetindo a última palavra como pergunta solta.
    ✗ "…faz a dívida crescer." → "Crescer assim? No FinMoovi…"
    ✓ "…faz a dívida crescer." → "E é aí que ela cresce sem você ver…"
-Toda abertura é uma FRASE INTEIRA, com sujeito e verbo.`);
+Toda abertura é uma FRASE INTEIRA, com sujeito e verbo.
+🔴 **E MUITO MENOS COPIAR A FRASE ACIMA.** Medido em 01/10/2026: um capítulo abriu com
+**vinte e uma palavras idênticas** ao fim do anterior, e o dono apanhou-o à primeira
+leitura — *"mostra praticamente a mesma coisa quase que uma atrás da outra, isso fica
+feio demais"*. **A âncora existe para você saber ONDE a conversa ficou, não para a
+repetir.** Se a frase acima tinha uma pergunta, a sua primeira frase **RESPONDE-A ou
+avança** — nunca a faz outra vez por outras palavras.`);
   }
   if (numerosUsados && numerosUsados.length) {
-    partes.push(`⛔ **NÚMEROS JÁ GASTOS neste vídeo — não os repita:** ${numerosUsados.join(', ')}.`);
+    partes.push(`⛔ **OS NÚMEROS QUE OS ATOS ANTERIORES JÁ REVELARAM — não volte a revelá-los:** ${numerosUsados.join(', ')}.
+   ⚠️ **O número-espinha deste vídeo NÃO está nesta lista e tem de ser dito aqui.** O que não volta é a REVELAÇÃO que já foi feita; o fio do vídeo volta sempre.`);
   }
   if (comparacoesUsadas && comparacoesUsadas.length) {
     partes.push(`⛔ **COMPARAÇÕES JÁ GASTAS neste vídeo — não volte a elas:** ${comparacoesUsadas.join(' · ')}.`);
   }
   if (jaDito && jaDito.length) {
-    partes.push(`⛔ **JÁ FOI DITO neste vídeo (não repita nem parafraseie):**\n${jaDito.map((f) => `   · "${f}"`).join('\n')}`);
+    partes.push(`⛔ **JÁ FOI DITO neste vídeo (não repita nem parafraseie):**\n${jaDito.map((f) => `   · "${f}"`).join('\n')}
+   🔴 **O QUE NÃO PODE VOLTAR É A IDEIA, NÃO O NÚMERO.** Dizer o mesmo valor outra vez é obrigatório quando ele é o fio do vídeo; o que não pode é **recontar a mesma ideia com outras palavras**. Se o que você ia escrever cabe numa destas linhas, ele já foi entregue — e o seu ato tem de trazer outra coisa.`);
   }
   return partes.join('\n\n');
 }
@@ -740,7 +913,7 @@ Toda abertura é uma FRASE INTEIRA, com sujeito e verbo.`);
 export function buildPromptAbertura(t, mapa, proibidas = []) {
   return `${CABECALHO}
 
-SUA TAREFA AGORA: escrever **SÓ A ABERTURA** de um vídeo de seis minutos. Nem os capítulos, nem o fim. Só os primeiros trinta e cinco segundos.
+SUA TAREFA AGORA: escrever **SÓ A ABERTURA** de um vídeo de oito minutos. Nem os capítulos, nem o fim. Só os primeiros trinta e cinco segundos.
 
 ${contexto(t)}
 ════════ O MAPA JÁ DECIDIDO (não o discuta, cumpra-o) ════════
@@ -748,14 +921,19 @@ A PROMESSA DESTE VÍDEO: "${mapa.promessa}"
 Os capítulos que vêm a seguir: ${mapa.capitulos.map((c, i) => `${i + 1}) ${c.titulo}`).join(' · ')}
 
 ════════ O QUE A ABERTURA TEM DE FAZER, POR ESTA ORDEM ════════
-1. 🔴 **A 1ª FRASE É A CAPA e aparece ESCRITA na tela enquanto você a diz.** No máximo ${MAX_PALAVRAS_CAPA_LONGO} palavras — e quanto menos, melhor. O computador confere o tamanho.
-   · 🔴 **A CAPA DURA O TEMPO DE ELA SER DITA.** Cada palavra a mais aqui é meio segundo a mais até a primeira ideia entrar, e é aí que se perde quem chegou.
-   · **Pode ser uma cena ou pode ser uma pergunta — o que ela NÃO pode ser é comprida e vaga.** Uma pergunta de dezoito palavras cheia de "de que forma" e "considerando que" não prende ninguém.
-   · **Comece pelo que se VÊ.** ✓ *"O ônibus das cinco da manhã, outra vez."* ✓ *"A conta de luz chegou de novo no dia dez."* ✓ *"Por que o dinheiro some antes do dia vinte?"*
+1. 🔴 **A 1ª FRASE É UMA ACUSAÇÃO COM UM NÚMERO, e o número é o do ANO.** Ela aparece ESCRITA na tela enquanto você a diz, e tem no máximo ${MAX_PALAVRAS_CAPA_LONGO} palavras — o computador confere o tamanho.
+   · 🔴 **Pense nela como um corte que vai sozinho para as redes.** Se essa frase, sozinha, não faz alguém querer o segundo seguinte, ela não serve.
+   · ✓ *"Você joga fora mais de mil reais por ano em luz."* ✓ *"Você paga dois mil reais por ano por coisas que não usa."*
+   · ✗ *"O seu dinheiro some antes do fim do mês?"* — serve para qualquer vídeo do mundo, não tem número, e não acusa ninguém de nada.
+   · 🔴 **O número é SEMPRE o do ano, nunca o do mês.** O do mês é a descoberta do ato 1 e dizê-lo aqui queima o ato 1.
    · ⛔ **Ninguém pode ser "um deles", "ele", "os dois" nesta frase.** Diga QUEM são antes de dizer o que fazem. Um vídeo que começa a apontar para quem ainda não existe começou no meio, e quem está vendo sai. O computador confere.
-2. **A PERGUNTA EXISTE, e é CURTA.** Pode ser a 1ª frase ou vir logo a seguir. ✗ "Você sabia?" (serve para qualquer vídeo do mundo) — a dor tem de estar DENTRO dela.
-3. **A RESPOSTA VEM COLADA, na frase seguinte.** Pergunta pendurada é proibida neste canal. E a resposta não repete a pergunta — responde direto, seco.
-4. **A PROMESSA DITA COM TODAS AS LETRAS**, ainda dentro da abertura.
+2. 🔴 **A 2ª FRASE É A APOSTA: "e eu vou te provar isso."** Curta, seca, nessas palavras ou noutras suas.
+   · ⚠️ **É uma DÍVIDA que você está a assumir**, e o vídeo só a paga no ato 3, quando a conta do ano fecha. É ela que faz a pessoa ficar até lá.
+3. **DEPOIS vem a CENA que torna aquilo verdade** — o que se VÊ: o dia em que a conta chega, o papel em cima da mesa, a fila da farmácia.
+4. **A PERGUNTA EXISTE, e é CURTA.** Vem a seguir à cena. ✗ "Você sabia?" (serve para qualquer vídeo do mundo) — a dor tem de estar DENTRO dela.
+5. **A RESPOSTA VEM COLADA, na frase seguinte.** Pergunta pendurada é proibida neste canal. E a resposta não repete a pergunta — responde direto, seco.
+6. **A PROMESSA DITA COM TODAS AS LETRAS**, ainda dentro da abertura — e ela é a aposta outra vez, não um resumo do que o vídeo ensina.
+   ⛔ **NÃO CONTE A SOLUÇÃO AQUI.** Dizer *"vou te mostrar como separar o dinheiro antes de gastar"* é contar o fim do vídeo aos catorze segundos — foi exactamente a queixa do dono, medida no relógio. A abertura diz **o tamanho do problema** e **que você vai provar**; o COMO é dos atos 2 a 4.
 
 ════════ 🔴 COMO SE FALA NESTE CANAL — leia isto duas vezes ════════
 Ordem do dono, 08/08/2026: *"eu quero que o texto seja mais leve, mais simples, mais do dia a dia, coisas assim"*.
@@ -767,7 +945,7 @@ Ordem do dono, 08/08/2026: *"eu quero que o texto seja mais leve, mais simples, 
 · **FALE COMO SE FALA NA COZINHA**, não como se escreve num banco. Diga *"o dinheiro some"*, não *"há uma evasão de recursos"*.
 · **NÚMEROS REDONDOS E DO TAMANHO DA VIDA DAS PESSOAS.** Trezentos reais é dinheiro; "um percentual relevante do orçamento" não é nada.
 · ⛔ **Nada de palavra de reunião**: otimizar, mitigar, alavancar, estratégico, mindset, jornada, conscientização.
-⛔ **A ABERTURA NÃO GASTA OS NÚMEROS DA HISTÓRIA.** As parcelas e a soma são a DESCOBERTA do ato 1 — dizê-las aqui deixa o ato 1 sem susto nenhum. Na abertura cabem o problema, a dor e a promessa; os valores ficam para lá. É o que os vídeos longos que prendem fazem, e os que não prendem não fazem. Diga o que a pessoa vai levar daqui.
+⛔ **A ABERTURA NÃO GASTA OS NÚMEROS DA HISTÓRIA — gasta UM, e é o do ANO.** As parcelas e a soma do MÊS são a DESCOBERTA do ato 1; dizê-las aqui deixa o ato 1 sem susto nenhum. O número do ANO é outra coisa: é a ACUSAÇÃO que abre o vídeo, e só o ato 3 a prova. Fora esse, nenhum valor aparece aqui.
 ⛔ Não peça NADA (comentário, inscrição, curtir, link). Isso acontece uma vez só, muito mais à frente.
 ⛔ Não diga o bordão do canal. Ele é a assinatura e vive na última frase do vídeo.
 ⛔ Não diga "Introdução", nem "hoje vamos falar sobre", nem "sem mais delongas".
@@ -812,7 +990,7 @@ export function buildPromptCapitulo(t, mapa, indice, ancora) {
 
   return `${CABECALHO}
 
-SUA TAREFA AGORA: escrever **SÓ O ATO ${indice + 1} de ${NUM_CAPITULOS}** de um vídeo de seis minutos. Nem o que veio antes, nem o que vem depois.
+SUA TAREFA AGORA: escrever **SÓ O ATO ${indice + 1} de ${NUM_CAPITULOS}** de um vídeo de oito minutos. Nem o que veio antes, nem o que vem depois.
 
 ${contexto(t)}
 ${A_HISTORIA}
@@ -820,11 +998,13 @@ ${A_HISTORIA}
 ════════ O MAPA JÁ DECIDIDO (não o discuta, cumpra-o) ════════
 A PROMESSA DO VÍDEO: "${mapa.promessa}"
 **ESTE ato chama-se: "${plano.titulo}"**
-   · 🔴 **O NÚMERO DESTE VÍDEO É ${mapa.numeroEspinha}, e ele TEM de ser dito neste ato**, por extenso. É o mesmo número dos outros dois atos — é isso que faz o vídeo ter uma ideia só. O computador confere.
+   · 🔴 **O NÚMERO DESTE VÍDEO É ${mapa.numeroEspinha}, e ele TEM de ser dito neste ato**, por extenso. É o mesmo número dos outros atos — é isso que faz o vídeo ter uma ideia só. O computador confere.
    · 🔴 **TODO o dinheiro que você pode dizer é este, e mais nenhum:** ${valores}.
      Um valor que não esteja nesta lista é de outra história, e o computador reprova.${somas ? `\n   · **A conta que tem de bater:** ${somas}. Se disser as parcelas, diga o total, para quem ouve somar junto.` : ''}
    · **ESTE é o ATO ${indice + 1} — ${MOVIMENTOS[indice].nome}:** ${MOVIMENTOS[indice].faz}
      ⛔ **Aqui é PROIBIDO ${MOVIMENTOS[indice].proibido}**
+     🔴 **O QUE ESTE ATO TEM DE DEIXAR NA CABEÇA DE QUEM VÊ:** ${MOVIMENTOS[indice].ensinamento}
+     ⚠️ É **um** ensinamento, não três. Quem vê o vídeo inteiro leva ${NUM_CAPITULOS} destes pequenos e UM grande no fim — se este ato tentar entregar o do ato seguinte, sobra repetição para o resto do vídeo.
    · **O que ESTE ato acrescenta à história:** ${plano.oQueAcrescenta}${ficha && indice === 1 ? `
 
 🧮 ════════ A CONTA JÁ ESTÁ FEITA — E É ESTE O ENSINAMENTO DO VÍDEO ════════
@@ -835,25 +1015,52 @@ ${ficha.texto}
 🔴 **É ISTO que o ato da ARMADILHA tem de ensinar**, contado como história, na primeira pessoa: o que acontece a quem paga só o mínimo da fatura. Escolha os números que fazem doer e diga-os por extenso — **não despeje a tabela toda**, que ninguém guarda cinco valores de cabeça. Dois ou três chegam, e o mais forte costuma ser **quanto se paga a mais no fim**.
 ⛔ **NÃO diga percentagens nem taxas.** O que a pessoa entende é o REAL, não o "por cento". Diga "de mil e vinte viraram mil cento e oitenta e três num mês", nunca "dezasseis por cento ao mês".
 ⛔ **NÃO diga que a dívida rola para sempre no rotativo.** Não rola: desde 2017 o banco é OBRIGADO a parcelar depois de um mês, e é isso que a conta acima já leva em conta. Assustar com uma coisa que a lei proíbe é perder a credibilidade de vez.` : ''}${indice > 0 ? `
-   · ⛔ **O ato anterior JÁ ENTREGOU isto, e não se repete:** ${mapa.capitulos[indice - 1].oQueAcrescenta}` : ''}
+   · ⛔ **O ato anterior JÁ ENTREGOU isto, e não se repete:** ${mapa.capitulos[indice - 1].oQueAcrescenta}
+   · 🔴 **AS PARCELAS SÓ SE LISTAM UMA VEZ NO VÍDEO INTEIRO, e foi no ato que as descobriu.** Ordem do dono, 01/10/2026: *"repete os valores várias vezes, isso torna-se cansativo e parece que está com enrolação"*.
+     Aqui já se sabe quanto é cada uma. **Fale do TOTAL** (*"aqueles trezentos reais"*), ou do que ele VIRA, ou do que ele custou. Voltar a dizer *"cento e vinte do lanche, oitenta da passagem, cem do café"* é contar outra vez a cena do ato 1 — e quem está a ver percebe na hora que o vídeo parou de andar.
+   · 🔴 **E NÃO REESCREVA O ATO ANTERIOR POR OUTRAS PALAVRAS.** O dono, a ler o primeiro roteiro: *"no capítulo 2 ainda fala praticamente a mesma coisa do capítulo 1 mas com outras palavras, isso fica feio e aqui já vamos ter fuga, pois parece estar com enrolação"*. Se o que você ia escrever pudesse estar no ato anterior sem ninguém dar por falta, **ele não é deste ato**.` : ''}
    · **E deixa no ar:** ${plano.oQueFicaEmAberto}
 ${seguinte ? `O ato seguinte chama-se "${seguinte.titulo}" — o seu re-gancho aponta para lá SEM dizer o nome dele.` : 'Este é o último ato. O re-gancho entrega a conversa ao fim do vídeo.'}${indice === 1 ? `
 
 ════════ ⏱️ ESTE É O ATO DO MEIO — E TEM UMA TAREFA A MAIS ════════
-🔴 **UMA frase deste ato lembra o que a pessoa vai levar daqui**, e ela é: *"${mapa.promessa}"*.
+🔴 **UMA frase deste ato lembra A APOSTA que foi feita no primeiro segundo**, e ela é: *"${mapa.promessa}"*.
 
-Ordem do dono, 10/08/2026: *"a promessa repetida no meio. Aos 3 minutos, lembrar em uma frase o que a pessoa vai levar. Vídeo longo perde gente no meio, não no começo."*
+Ordem do dono, 10/08/2026: *"a promessa repetida no meio. Lembrar em uma frase o que a pessoa vai levar. Vídeo longo perde gente no meio, não no começo."*
 
-⚠️ **NÃO é repetir a frase da abertura com as mesmas palavras** — isso lê-se como o vídeo a andar para trás. É dizê-la POR OUTRAS PALAVRAS, no meio da história, como quem se lembra em voz alta: *"e é por isto que eu queria te mostrar isto hoje"*, *"guarda esse número, que no fim ele volta"*.
-⚠️ **UMA frase, e no meio do parágrafo.** Um parágrafo inteiro a lembrar a promessa é o vídeo a parar para se explicar.
-⛔ **Não prometa nada NOVO.** É a MESMA promessa, dita de outra maneira. Prometer coisa nova aqui é dívida que o ato 3 não consegue pagar.` : ''}
+🔴 **E em 01/10/2026 mudou O QUE se repete, não o facto de se repetir.** A promessa deixou de ser a resposta do vídeo e passou a ser uma dívida (*"e eu vou te provar isso"*). Logo o que se lembra aqui é **a dívida por pagar**, nunca a solução.
+   ✓ *"E eu ainda te devo aquela conta do ano que eu prometi lá no começo — ela vem já a seguir."*
+   ✓ *"Guarda esse número, que no fim ele volta multiplicado."*
+   ✗ *"E é por isso que eu quero te mostrar como separar o dinheiro antes de gastar."* — isso é a SOLUÇÃO, e entregá-la aqui faz o resto do vídeo repetir-se.
+
+⚠️ **NÃO é repetir a frase da abertura com as mesmas palavras** — isso lê-se como o vídeo a andar para trás. É dizê-la por outras palavras, no meio da história, como quem se lembra em voz alta.
+⚠️ **UMA frase, e no meio do parágrafo.** Um parágrafo inteiro a lembrar a aposta é o vídeo a parar para se explicar.
+⛔ **Não prometa nada NOVO.** É a MESMA dívida, dita de outra maneira. Prometer coisa nova aqui é dívida que o fim não consegue pagar.` : ''}
 
 ${ancora ? `${ancora}\n` : ''}
 ════════ AS PARTES DESTE ATO ════════
 1. **pergunta** (~4s) — abre com uma PERGUNTA que dói, terminada em "?", e responde-lhe já na frase seguinte.
 2. **desenvolvimento** (~50s) — a história a andar, na primeira pessoa, com detalhes concretos e pequenos. É AQUI que o dinheiro deste vídeo aparece e **ganha um sentido novo**. Termine na tensão, não conforte.
+   🔴 **E A CADA ~80 PALAVRAS TEM DE ATERRAR UMA COISA NOVA.** Ordem do dono, 01/10/2026: *"os próximos 30 segundos teriam que produzir um impacto tal que esse telespectador tenha um motivo para assistir os próximos 30 segundos, e assim temos que caminhar até o final do vídeo"*.
+     · Oitenta palavras são ~30 segundos de fala. **Leia o seu desenvolvimento em pedaços de oitenta palavras e pergunte, em cada um: o que é que aterrou aqui que ainda não se sabia?**
+     · O que conta como coisa nova: **um número**, uma **consequência** (o que aquilo causou), uma **pergunta** que abre, ou uma **viragem** (o contrário do que se esperava).
+     · O que NÃO conta: dizer a mesma coisa com outras palavras, um adjetivo, uma frase de ligação, repetir o número que já foi dito.
+     · ⚠️ **Se um pedaço de oitenta palavras não traz nada novo, ele não está a desenvolver — está a encher**, e é aí que a pessoa sai.
 ${blocoDaDemo}
 ${temDemo ? '4' : '3'}. **regancho** (~10s) — deixa a ponta no ar para o ato seguinte. Uma ou duas frases, sem prometer nada de fora deste vídeo.
+   🔴 **E ATIRA UMA PERGUNTA A QUEM ESTÁ A VER — mas uma que ela JÁ SABE RESPONDER.**
+     · É sobre uma coisa que ela **já viveu**. Responde-se de memória, em meio segundo, sem fazer nada e sem parar o vídeo.
+     · 🔴 **E CADA ATO PERGUNTA POR UM MOMENTO DIFERENTE — nunca a mesma pergunta com outra roupa.** Medido na corrida de 01/10/2026: os quatro atos acabaram em *"E você, já te aconteceu…"*, *"E você, já te aconteceu…"*, *"E você, já sentiu…"*, *"E você, já sentiu…"*. Quatro versões da mesma pergunta. **Lido em sequência, isso é um tique — e um tique lê-se como enrolação, que é a queixa que estas perguntas vieram resolver.**
+       ⛔ **Não comece duas perguntas do vídeo da mesma maneira.** Se o ato anterior abriu com *"E você, já…"*, o seu abre de outro jeito.
+       ✓ *"Quando foi a última vez que você olhou o extrato linha por linha?"*
+       ✓ *"Isso aí em cima parece a sua casa?"*
+       ✓ *"Aposto que você conhece alguém assim. Ou é você mesmo?"*
+       ✓ *"Já te aconteceu de o salário sumir e você não saber dizer para onde foi?"*
+       ✓ *"Quantos meses você acha que isso já vem acontecendo aí?"*
+     · ⚠️ **Pergunte pelo que ESTE ato acabou de mostrar**, não pelo tema do vídeo em geral — é isso que faz cada uma ser diferente sem ninguém ter de forçar.
+     · ⛔ **NUNCA mande fazer uma conta, somar, pegar o extrato, nem responder com um número.** Ordem do dono, 01/10/2026, a ver o primeiro roteiro: *"você acha mesmo que dá tempo de uma pessoa que está assistindo um vídeo fazer a conta e ainda responder «ah, o meu deu tanto»? A audiência percebe isso na hora."*
+       ✗ *"Faz essa conta aí do teu mês. Deu quanto?"*  ✗ *"Soma tudo e vê quanto dá."*  ✗ *"Qual é o valor que aparece hoje no seu papel?"*
+     · ⛔ E não pede comentário, inscrição, curtir nem link — isso é UMA vez, no bloco da chamada, e o computador confere.
+     · ⚠️ **UMA pergunta ao público, e é a ÚLTIMA frase do ato** — é a que fica a ecoar. A dúvida do narrador que faz a ponte para o ato seguinte é outra coisa e pode vir antes; duas perguntas AO PÚBLICO no mesmo re-gancho anulam-se, e a pessoa não responde a nenhuma.
 
 ⚠️ **TAMANHO: tudo somado, entre ${(temDemo ? ORCAMENTO.capituloComDemo : ORCAMENTO.capitulo).min} e ${(temDemo ? ORCAMENTO.capituloComDemo : ORCAMENTO.capitulo).max} palavras.** Conte antes de responder.
 ⛔ **NÃO PEÇA NADA** — nem comentário, nem inscrição, nem curtir, nem link. Isso acontece UMA vez no vídeo, e não é aqui.
@@ -895,11 +1102,15 @@ ${contexto(t)}
 A PROMESSA DO VÍDEO: "${mapa.promessa}"
 
 ${ancora ? `${ancora}\n` : ''}
-════════ O QUE A CHAMADA TEM DE FAZER ════════
-A pessoa acabou de ver um número que a assustou — e ela quer o DELA. Isso é tudo.
-· Pergunte se ela quer ver o número dela.
-· Peça o COMENTÁRIO com a palavra FINMOOVI, prometendo o que você manda em troca.
-· Molde a adaptar: "quer ver o SEU? comenta FINMOOVI aqui que eu te mando."
+════════ O QUE A CHAMADA TEM DE FAZER, POR ESTA ORDEM ════════
+🔴 **ISTO MUDOU EM 01/10/2026** — ordem do dono: *"a questão do engajamento e de pedir alguma interação tem que ser feita de forma extremamente inteligente"*. A chamada deixou de ser um pedido e passou a ser **o princípio de uma conversa**.
+
+1. **PERGUNTE PELA HISTÓRIA DELA, com todas as letras.** Sobre o problema DESTE vídeo, e nas duas pontas: se já lhe aconteceu, **e se ela conseguiu resolver ou se ainda está presa nisso**.
+   ✓ *"Eu queria muito saber de você: já aconteceu de o dinheiro sumir assim? E você conseguiu virar esse jogo, ou ainda apanha disso todo mês?"*
+   ⚠️ **As duas pontas são de propósito.** Quem responde *"eu não consigo"* abre a porta para ser respondido, ensinado — e é aí que o app faz sentido. Uma pergunta só de sucesso fecha essa porta.
+2. **PEÇA QUE ESCREVA NOS COMENTÁRIOS como foi** — e diga que você lê. É o único bloco do vídeo onde se pede, e tem de soar a pessoa a falar com pessoa, não a locutor a recitar.
+3. **E SÓ ENTÃO o FINMOOVI**, colado à troca: o que ela comenta, o que você manda.
+⛔ **Nada de pergunta que obrigue a fazer uma conta na hora.** O dono: *"você acha mesmo que dá tempo de uma pessoa que está assistindo um vídeo fazer a conta e ainda responder «ah, o meu deu tanto»? A audiência percebe isso na hora."* Pergunte pelo que ela **viveu**, nunca pelo que ela teria de **calcular**.
 ⛔ Não conte história nova. Não repita nada do que já foi dito. Não diga o bordão do canal.
 ⛔ Não mande clicar em link nem dizer "o link está aqui embaixo": este vídeo também sai no Instagram, onde o endereço escrito não é clicável, e a pessoa ia procurar um link que não existe.
 ⚠️ **TAMANHO: entre ${ORCAMENTO.chamada.min} e ${ORCAMENTO.chamada.max} palavras.** É um recado, não um capítulo.
@@ -926,11 +1137,14 @@ ${mapa.lacoAberto ? `A PONTA QUE FICA NO AR: ${mapa.lacoAberto}` : ''}
 
 ${ancora ? `${ancora}\n` : ''}
 ════════ O QUE O FIM TEM DE FAZER, POR ESTA ORDEM ════════
-1. **RESPONDER, com todas as letras, ao que a abertura prometeu.** É a lição do vídeo, curta e dura, do tipo que se repete a um amigo. Tem de falar da MESMA coisa que foi prometida — o computador confere.
-2. **DEIXAR UMA PONTA NO AR**, dentro deste mesmo tema. Uma coisa que ficou por dizer e que dá vontade de saber.
-3. **ASSINAR.** A ÚLTIMA frase do vídeo é o bordão do canal, à letra, sem mudar uma palavra: "${BORDAO}"
+1. 🔴 **PAGAR A DÍVIDA DO PRIMEIRO SEGUNDO.** Lá atrás você disse *"e eu vou te provar isso"*, com um número de ano. Aqui fecha-se a conta e diz-se, com todas as letras, que ela bateu: *"eu disse no começo que isso dava mais de mil reais por ano. E deu."*
+   ⚠️ **É isto que faz o vídeo inteiro valer a pena ter sido visto.** Um fim que não paga a aposta deixa quem ficou oito minutos sem o único motivo por que ficou.
+2. **RESPONDER, com todas as letras, ao que a abertura prometeu.** É a lição do vídeo, curta e dura, do tipo que se repete a um amigo. Tem de falar da MESMA coisa que foi prometida — o computador confere.
+   ⛔ **E não é recontar os passos.** O "como se faz" foi dos atos 2 a ${NUM_CAPITULOS}; repeti-lo aqui é a terceira vez que o vídeo diz a mesma coisa, e foi a queixa exacta do dono. Aqui cabe o que FICA, não o que se faz.
+3. **DEIXAR UMA PONTA NO AR**, dentro deste mesmo tema. Uma coisa que ficou por dizer e que dá vontade de saber.
+4. **ASSINAR.** A ÚLTIMA frase do vídeo é o bordão do canal, à letra, sem mudar uma palavra: "${BORDAO}"
 
-⛔ **O FIM NÃO CITA FONTE NENHUMA.** Nada de app, FinMoovi, blog, comentário, link, canal ou inscrição. O app teve os três capítulos, o pedido teve a chamada. Aqui só cabe a resposta e a assinatura. O computador confere.
+⛔ **O FIM NÃO CITA FONTE NENHUMA.** Nada de app, FinMoovi, blog, comentário, link, canal ou inscrição. O app teve o capítulo dele, o pedido teve a chamada. Aqui só cabe a resposta e a assinatura. O computador confere.
 ⛔ **NÃO TERMINE COM OUTRA PERGUNTA.** O fim é quem responde.
 ⛔ **NÃO PROMETA UM PRÓXIMO VÍDEO** ("no próximo", "semana que vem"). Não há fila travada, e prometer o que não existe é mentira.
 ⛔ Sem "tchau", sem "até a próxima", sem "obrigado".
@@ -1345,6 +1559,31 @@ const falaDoCapitulo = (c) => PARTES_POSSIVEIS.map((p) => String((c && c[p]) || 
  * porque é pedido em cinco sítios (escrita, polimento, costura, conserto, relatório).
  * Escrito à mão nesses cinco, um dia divergiam, e a divergência seria invisível.
  */
+/**
+ * ♦ O NÚMERO QUE ESTE ATO REVELA — e **exportado de propósito, para ser medido**.
+ *
+ * Isto viveu como uma linha solta dentro do gerador e era, na prática, o contrário do
+ * que devia: `numerosUsados.push(...plano.valoresPermitidos)` mandava para a lista de
+ * "já gastos" **a lista inteira do que o capítulo PODIA dizer**, incluindo o
+ * número-espinha — que o mesmo pedido obriga a dizer em todos os atos. Prompt contra
+ * validador, no mesmo parágrafo.
+ *
+ * Numa função própria, a prova de mesa consegue fazer a única pergunta que importa:
+ * **o número-espinha pode cair aqui dentro?** A resposta tem de ser sempre não.
+ *
+ * @returns o valor revelado por este ato, ou `null` se não há nenhum ou se ele é o
+ *          número-espinha (que nunca se "gasta" — é o fio do vídeo).
+ */
+export function numeroReveladoPor(mapa, plano) {
+  const nome = plano && plano.oNumeroDoAto;
+  if (!nome) return null;
+  const achado = (mapa.valores || []).find((v) => v && v.nome === nome);
+  const valor = Number(achado && achado.valor);
+  if (!Number.isFinite(valor)) return null;
+  if (valor === Number(mapa.numeroEspinha)) return null;
+  return valor;
+}
+
 const planoDoCapitulo = (mapa, i) => ({
   ...(mapa.capitulos[i] || {}),
   numeroEspinha: mapa.numeroEspinha,
@@ -1513,7 +1752,27 @@ export async function gerarLongo(t, { proibidas = [], polir = true, slug = 'long
     }
     capitulos.push(completo);
 
-    numerosUsados.push(...(plano.valoresPermitidos || []));
+    /**
+     * ═══ 🔴 ISTO MANDAVA PROIBIR O NÚMERO QUE É OBRIGATÓRIO — 01/10/2026 ═══
+     *
+     * Estava `numerosUsados.push(...plano.valoresPermitidos)` — e `valoresPermitidos` é
+     * a lista do que o capítulo PODE dizer, a lista inteira do mapa. Resultado: a partir
+     * do ato 2, o mesmo pedido dizia as duas coisas ao mesmo tempo:
+     *   · *"O NÚMERO DESTE VÍDEO É 189, e ele TEM de ser dito neste ato. O computador confere."*
+     *   · *"NÚMEROS JÁ GASTOS neste vídeo — não os repita: 2400, 39, 90, 60, **189**…"*
+     *
+     * É a família de defeito que este repositório mais documenta — o **prompt contra o
+     * validador** — e a conta é feia: posto entre uma ordem e a sua proibição, o modelo
+     * obedece à que o valida (diz o número) e paga a outra **repetindo a IDEIA por
+     * outras palavras**. Que é exactamente a queixa do dono: *"ficamos repetindo o que
+     * falamos antes mas de formas diferentes"*.
+     *
+     * ⚠️ **O que "já gasto" quer dizer de verdade** é o número NOVO que cada ato revelou
+     * — o `oNumeroDoAto`, que o mapa manda ser diferente em cada um. Não a lista toda, e
+     * **nunca o número-espinha**, que é o fio que atravessa o vídeo e tem de voltar.
+     */
+    const revelado = numeroReveladoPor(mapa, plano);
+    if (revelado !== null) numerosUsados.push(revelado);
     /**
      * ⚠️ O QUE VAI PARA O "JÁ FOI DITO" — três frases por capítulo, e cada uma foi
      * escolhida por ter REPETIDO na 2ª corrida real:
@@ -1523,10 +1782,58 @@ export async function gerarLongo(t, { proibidas = [], polir = true, slug = 'long
      *    igual nos capítulos 1 e 2).
      * Mandar só a pergunta era mandar um terço do problema.
      */
+    /**
+     * ═══ 🔴 E FALTAVAM AS FRASES QUE CARREGAM A IDEIA — 01/10/2026 ═══
+     *
+     * Estas três apanham a MOLDURA do capítulo (como abre, como fecha, como demonstra)
+     * e nenhuma apanha o MIOLO — e o miolo é onde a solução vive. Medido no vídeo do
+     * churrasco: a solução foi dita aos **03:09**, repetida em **04:12** e outra vez em
+     * **06:22**, sempre no meio do desenvolvimento, que é precisamente o sítio que esta
+     * lista nunca via. A máquina existia e trabalhava com a parte que não repetia.
+     *
+     * ⚠️ **O critério é "a frase tem dinheiro".** Numa história de finanças, a frase que
+     * carrega a ideia é quase sempre a que tem um valor — é ela que o ato seguinte
+     * reconta por outras palavras. Não é um palpite: é o que se vê nas três repetições
+     * acima, todas com os trezentos ou os cento e vinte lá dentro.
+     *
+     * ⚠️ **Teto de quatro por capítulo**, e as últimas, não as primeiras: num capítulo
+     * com muitos valores isto encheria a âncora de linhas e afogava o que importa — e um
+     * pedido que diz tudo não diz nada. As últimas porque é no fim do desenvolvimento
+     * que a ideia já está formada.
+     *
+     * ⚠️ **Não entra em conflito com o número-espinha ser obrigatório:** o que se proíbe
+     * é repetir a FRASE, não o número. Está dito com todas as letras no cabeçalho do
+     * bloco (ver `blocoDaAncora`), porque uma proibição que se lê como "não diga o
+     * número" seria a mesma contradição que acabou de se consertar acima.
+     */
+    const comDinheiro = frasesDe(completo.desenvolvimento)
+      .filter((f) => valoresEmDinheiro(f).length)
+      .slice(-4);
+
+    /**
+     * ═══ 🔴 E O RE-GANCHO FALTAVA — medido na 1ª corrida a sério, 01/10/2026 ═══
+     *
+     * O dono, a ler o roteiro `economizar-300-por-mes`: *"aqui no gancho para o próximo
+     * diz «e você, já fez essa conta do que está escapando aí agora?» e aí na pergunta
+     * que abre o capítulo 2 mostra praticamente a mesma coisa quase que uma atrás da
+     * outra. Isso fica feio demais!"*
+     *
+     * Medido com a régua das seis palavras: o capítulo 2 abriu com **21 palavras
+     * IDÊNTICAS** ao fim do capítulo 1.
+     *
+     * ⚠️ **E a causa é de desenho, não do modelo.** O re-gancho é entregue ao ato
+     * seguinte como ÂNCORA — *"estas são as palavras exatas com que o capítulo anterior
+     * terminou, a sua primeira frase tem de agarrar isto"* — e **não estava em lado
+     * nenhum da lista do que não se repete**. Dizer-lhe "agarra isto" sem lhe dizer "e
+     * não o repitas" é pedir o eco. A regra `RETOMAR NÃO É ECOAR` já existia na âncora e
+     * não chegou: faltava a frase estar na lista.
+     */
     jaDito.push(
       frasesDe(completo.pergunta)[0],
       frasesDe(completo.demonstracao || '')[0],
       frasesDe(completo.desenvolvimento).slice(-1)[0],
+      ...comDinheiro,
+      ...frasesDe(completo.regancho || ''),
     );
     anterior = falaDoCapitulo(completo);
     deQuem = `o capítulo ${i + 1}`;
