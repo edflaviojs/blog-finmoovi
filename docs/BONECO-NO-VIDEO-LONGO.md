@@ -1,5 +1,22 @@
 # O BONECO NO VÍDEO LONGO — plano de integração
 
+> ## 📍 ONDE ISTO FICOU — 01/10/2026, fim do dia
+>
+> **A Fase 0 está fechada.** O `screen` foi testado nos coloridos e **segura a
+> cor**; o dono viu o nº30 (texto inglês inventado nos 3 primeiros segundos) e
+> mandou usar assim mesmo — **a biblioteca é de 32**. E os **32 clipes estão no
+> git e EMPURRADOS** (commit `cac71744`, 36,5 MB), conferidos no servidor: **o
+> robô já os vê.**
+>
+> **⬜ NADA DO CÓDIGO DO BONECO FOI ESCRITO.** O que existe continua a ser só a
+> composição de teste `StickmanVideoTeste` no `Root.tsx`. O próximo passo é a
+> **Fase 1** da secção 7 — a tabela dos 32 com significado, e o componente
+> `Boneco` (boneco de um lado, palavras do outro).
+>
+> ⚠️ **Antes de começar, reler a secção 2:** os clipes são **verticais** (720×1280)
+> num vídeo **deitado**, e **acabam antes da cena** (4s contra ~6,8s). As duas
+> coisas decidem o desenho inteiro.
+
 **Escrito em 01/10/2026.** Nada deste plano foi executado ainda: é o desenho de
 como a biblioteca de 32 movimentos gerados na Manus deixa de ser uma composição
 de teste solta (`StickmanVideoTeste` em `Root.tsx`) e passa a ser uma **família

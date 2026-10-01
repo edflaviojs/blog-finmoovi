@@ -1,5 +1,42 @@
 # A NOVA NARRATIVA DO VÍDEO LONGO — plano
 
+> ## 📍 ONDE ISTO FICOU — 01/10/2026, fim do dia
+>
+> **Os 5 passos estão FEITOS e NO AR** (commit `1e650681`). Conferido no
+> servidor: `NUM_CAPITULOS = 4` · `O PREÇO` nos movimentos ·
+> `CARTAO_CAPITULO_FRAMES = 150` · `CHAO_DO_VIDEO_SEC = 8*60`.
+> **200 provas verdes · 0 vermelhas** (eram 175 antes de hoje).
+>
+> ### 🔴 O QUE AINDA NÃO FOI PROVADO
+> **Nenhum vídeo do robô foi feito com isto.** Tudo o que está medido aqui saiu
+> de uma geração à mão, numa máquina que só tem o Gemini. **A corrida de sexta é
+> a primeira prova a sério** — e o que lá se tem de olhar é se o escritor
+> gratuito aguenta o orçamento maior: nesta corrida ele precisou de 3 a 5
+> tentativas em dois capítulos, e o limite é 5.
+>
+> ### ⬜ AS TRÊS DECISÕES QUE FICARAM COM O DONO
+> 1. **Repor os créditos do kie.ai** (~US$ 5-10). O escritor pago está morto
+>    desde 18/09 (saldo −0,54). O roteiro novo é **mais exigente** e quem o
+>    escreve hoje é o fornecedor fraco. **É a recomendação nº1.**
+> 2. **Ligar o travão dos 8 minutos** (`montar-longo --exigir-chao`). Hoje só
+>    avisa. Recomendado esperar 2-3 vídeos — ligar cedo é semana sem vídeo.
+> 3. **Libertar a palavra "comentários" no meio dos capítulos?** Hoje só no
+>    bloco da chamada. Recomendado **não** — ver
+>    `engajamento-pergunta-vivida-nunca-tarefa` na memória.
+>
+> ### ⚠️ DOIS DEFEITOS CONHECIDOS, por consertar
+> - **As quatro perguntas ao público saíram todas com a mesma abertura**
+>   (*"E você, já te aconteceu…"* ×2, *"E você, já sentiu…"* ×2) — porque os dois
+>   exemplos do pedido começavam ambos assim. **O pedido já foi corrigido** (5
+>   formatos diferentes + a proibição), mas **isso só se vê na próxima geração**.
+> - **As parcelas repetem-se entre o ato 1 e o 2.** A regra está escrita e o
+>   modelo não obedeceu — **regra de pedido não segura isto**; se voltar a
+>   incomodar, tem de virar trava de código.
+>
+> ### 📄 O roteiro gerado hoje
+> `ROTEIRO-PARA-O-ED-LER.md`, na raiz. **Não versionado de propósito** — é um
+> teste, não um vídeo da fila. Veredito do dono: *"melhorou muito sim"*.
+
 **Escrito em 01/10/2026**, depois de o dono ver o vídeo do churrasco e dizer:
 *"a história não tem uma sequência e progressão gostosa de assistir. Me parece
 que já entregamos tudo até bem antes do meio e depois ficamos repetindo o que
