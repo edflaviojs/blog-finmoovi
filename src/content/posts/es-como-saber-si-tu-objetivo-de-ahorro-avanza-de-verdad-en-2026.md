@@ -3,6 +3,7 @@ title: "¿Cómo saber si tu objetivo de ahorro avanza de verdad en 2026?"
 description: "Descubre cómo seguir visualmente tus metas de ahorro y evitar sentir que no avanzas, con la ayuda de FinMoovi."
 tickerHeadline: "El objetivo que desaparece del bolsillo"
 image: "/images/posts/como-saber-se-sua-meta-de-economia-esta-realmente-avancando.webp"
+imageAlt: "Portátil, monitores, tazas y plantas sobre escritorio de madera."
 category: "ferramentas"
 locale: "es"
 tags: ["metas de ahorro","seguimiento visual","FinMoovi","control financiero","smart capture","planificación de metas","progreso","objetivo","finanzas personales"]

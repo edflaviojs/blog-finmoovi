@@ -4,6 +4,7 @@ definition: "O que é finanças e como isso aparece no seu dia a dia — explica
 title: "finanças - Glossário Financeiro"
 description: "O que é finanças e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/financas.webp"
+imageAlt: "Moedas douradas empilhadas e plantas verdes crescendo em frascos de vidro."
 category: "basico"
 tags: ["finanças", "glossário", "finanças"]
 author: "FinMoovi"

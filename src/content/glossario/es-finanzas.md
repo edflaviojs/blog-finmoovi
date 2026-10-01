@@ -4,6 +4,7 @@ definition: "Qué es finanzas y cómo aparece en tu día a día — explicado de
 title: "finanzas - Glosario Financiero"
 description: "Qué es finanzas y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/financas.webp"
+imageAlt: "Monedas doradas apiladas y en frascos con plantas verdes sobre fondo oscuro."
 category: "basico"
 tags: ["finanzas", "glosario", "finanzas"]
 author: "FinMoovi"

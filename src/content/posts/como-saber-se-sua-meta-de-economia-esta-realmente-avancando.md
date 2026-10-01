@@ -3,6 +3,7 @@ title: "Como saber se sua meta de economia está realmente avançando em 2026?"
 description: "Descubra como acompanhar visualmente suas metas de poupança e evitar a sensação de estar parado, usando o app FinMoovi."
 tickerHeadline: "A meta que some no bolso"
 image: "/images/posts/como-saber-se-sua-meta-de-economia-esta-realmente-avancando.webp"
+imageAlt: "Notebook, monitores, xícaras de café e caderno sobre mesa de madeira."
 category: "ferramentas"
 locale: "pt"
 tags: ["metas de economia","acompanhamento visual","FinMoovi","controle financeiro","smart capture","planejamento de metas","metas","progresso","acompanhamento","objetivo","finmoovi","finanças pessoais"]

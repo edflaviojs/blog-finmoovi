@@ -3,6 +3,7 @@ title: "How to Know If Your Savings Goal Is Actually Moving Forward in 2026?"
 description: "Learn how to track your savings goals visually with FinMoovi and stop feeling stuck."
 tickerHeadline: "The goal that disappears from your walle"
 image: "/images/posts/como-saber-se-sua-meta-de-economia-esta-realmente-avancando.webp"
+imageAlt: "Laptop, monitor, coffee cup, and notebook on a wooden desk."
 category: "ferramentas"
 locale: "en"
 tags: ["savings goals","visual tracking","FinMoovi","personal finance","Smart Capture","goal planning","progress","monitoring","objective","finmoovi","personal finance tips"]

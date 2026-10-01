@@ -4,6 +4,7 @@ definition: "What finance is and how it shows up in your everyday money — expl
 title: "finance - Financial Glossary"
 description: "What finance is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/financas.webp"
+imageAlt: "Gold coins and glass jars with green plants on a dark purple background."
 category: "basico"
 tags: ["finance", "glossary", "finance"]
 author: "FinMoovi"
