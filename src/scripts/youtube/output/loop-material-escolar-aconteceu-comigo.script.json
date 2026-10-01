@@ -1,0 +1,118 @@
+{
+  "slug": "loop-material-escolar-aconteceu-comigo",
+  "formato": "loop16",
+  "term": "O material escolar",
+  "category": "vida",
+  "keyword": "MATERIAL",
+  "valor": "R$ 550",
+  "situacao": "material-escolar",
+  "gancho": "aconteceu-comigo",
+  "ganchoFamilia": "aconteceu comigo",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "mochila-pedras",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Isso aconteceu comigo semana passada. Eu estava na papelaria com a lista da escola.",
+      "durationSec": 5.07,
+      "shots": [
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "Lista da escola"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Quando somei tudo, quinhentos e cinquenta reais foram embora só no material.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "somei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "quinhentos",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 550 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Calma, eu comecei a separar só o que cabia.",
+      "durationSec": 3.26,
+      "shots": [
+        {
+          "anchor": "Calma",
+          "visual": {
+            "type": "statement",
+            "text": "Separei o que cabia"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "comecei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "E isso aconteceu comigo na papelaria também.",
+      "durationSec": 2.53,
+      "shots": [
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "Aconteceu comigo"
+          }
+        },
+        {
+          "anchor": "comigo",
+          "visual": {
+            "type": "statement",
+            "text": "Lista da escola"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}

@@ -610,5 +610,11 @@
     "gancho": "aconteceu-comigo",
     "turno": "manha",
     "em": "2026-10-01T11:05:30.751Z"
+  },
+  {
+    "situacao": "material-escolar",
+    "gancho": "aconteceu-comigo",
+    "turno": "noite",
+    "em": "2026-10-01T11:09:12.496Z"
   }
 ]
