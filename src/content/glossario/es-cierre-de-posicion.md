@@ -20,7 +20,7 @@ seo:
 
 ## ¿Te ha pasado que al final del mes no sabes por qué tu cuenta quedó tan baja?
 
-Te levantas, revisas el saldo y sientes que algo se escapó. Sabes que gastaste en la compra del supermercado, en la luz y en el café de la mañana, pero el número sigue sin cuadrar. Lo peor es que, sin darte cuenta, mantienes una inversión abierta que está perdiendo valor y no sabes cómo cerrarla. Esa sensación de “¿dónde se fue mi dinero?” es el punto de partida para entender el **cierre de posición**, un concepto que puede salvarte de sorpresas desagradables.
+Te levantas, revisas el saldo y sientes que algo se escapó. Sabes que gastaste en la compra del supermercado, en la luz y en el café de la mañana, pero el número sigue sin cuadrar. Lo peor es que, sin darte cuenta, mantienes una [inversión](/es/glossario/es-inversion) abierta que está perdiendo valor y no sabes cómo cerrarla. Esa sensación de “¿dónde se fue mi dinero?” es el punto de partida para entender el **cierre de posición**, un concepto que puede salvarte de sorpresas desagradables.
 
 ![¿Te ha pasado que al final del mes no sabes por qué tu cuenta quedó tan baja?](/images/glossario/zeragem-de-posicao-inline-1.webp)
 
@@ -28,12 +28,12 @@ Te levantas, revisas el saldo y sientes que algo se escapó. Sabes que gastaste 
 
 ## ¿Qué es el cierre de posición?
 
-El cierre de posición es simplemente dejar de tener exposición a un activo financiero. Imagina que compras acciones de una empresa; mientras las mantengas, tu patrimonio sube o baja según el mercado. Cuando decides vender todas esas acciones y quedas sin ninguna, has “zerado” o cerrado la posición. En otras palabras, pasas de tener una apuesta abierta a estar neutro, sin riesgo de que el precio siga moviéndose en contra tuya. No es un término exclusivo de traders profesionales; cualquier persona que invierta, use criptomonedas o incluso tenga una deuda en una tarjeta de crédito está, en algún momento, frente a la decisión de cerrar una posición.
+El cierre de posición es simplemente dejar de tener exposición a un [activo financiero](/es/glossario/es-activo-financiero). Imagina que compras acciones de una empresa; mientras las mantengas, tu [patrimonio](/es/glossario/es-patrimonio) sube o baja según el mercado. Cuando decides vender todas esas acciones y quedas sin ninguna, has “zerado” o cerrado la posición. En otras palabras, pasas de tener una apuesta abierta a estar neutro, sin riesgo de que el precio siga moviéndose en contra tuya. No es un término exclusivo de traders profesionales; cualquier persona que invierta, use criptomonedas o incluso tenga una deuda en una tarjeta de crédito está, en algún momento, frente a la decisión de cerrar una posición.
 
 ## Por qué el cierre de posición importa en tu día a día
 
 - **Control de riesgos:** Al cerrar una posición evitas que una caída inesperada del mercado te deje sin liquidez para tus gastos cotidianos.
-- **Claridad en el presupuesto:** Cuando sabes que no tienes inversiones “flotando”, puedes planificar mejor tus gastos mensuales, como el alquiler o el precio de un café al día.
+- **Claridad en el presupuesto:** Cuando sabes que no tienes inversiones “flotando”, puedes planificar mejor tus gastos mensuales, como el [alquiler](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026) o el precio de un café al día.
 - **Facilidad para reinvertir:** Liberar el capital te permite destinarlo a nuevas oportunidades o a metas específicas, como un viaje o la compra de un electrodoméstico.
 
 ![Por qué el cierre de posición importa en tu día a día](/images/glossario/zeragem-de-posicao-inline-3.webp)
@@ -48,8 +48,8 @@ FinMoovi no es solo otro gestor de finanzas; es como ese amigo que siempre tiene
 
 - **Captura inteligente:** Con la cámara del móvil o la voz, puedes registrar un recibo o una operación de inversión al instante; la app lo reconoce y lo categoriza automáticamente.
 - **Multimoneda:** Ya sea que manejes dólares, euros o cualquier otra divisa, FinMoovi convierte todo a tu moneda base para que veas el panorama completo.
-- **Flujo de caja e informes:** Visualiza entradas y salidas en tiempo real, con gráficos que te muestran si estás cerca de “cero” en alguna inversión.
-- **Planificación mensual y metas:** Define cuánto quieres ahorrar para el próximo mes y la app te avisa cuando una posición abierta amenaza esa meta.
+- **[Flujo de caja](/es/glossario/es-flujo-de-caja) e informes:** Visualiza entradas y salidas en tiempo real, con gráficos que te muestran si estás cerca de “cero” en alguna inversión.
+- **Planificación mensual y metas:** Define cuánto quieres [ahorrar](/es/posts/es-ahorra-en-la-farmacia-sin-sacrificios-guia-practica-2026) para el próximo mes y la app te avisa cuando una posición abierta amenaza esa meta.
 - **Tarjetas de crédito y facturas:** Vincula tus tarjetas; la app detecta automáticamente los gastos y te muestra el saldo disponible para decidir si es momento de cerrar una posición.
 - **Modo compras:** Crea listas, ve el total en tiempo real y evita comprar de más, lo que te ayuda a mantener suficiente efectivo para cerrar inversiones.
 - **Recordatorios y alertas de saldo:** Recibe notificaciones cuando el valor de una posición cae un X % o cuando el saldo de tu cuenta está por debajo del nivel que necesitas para cubrir gastos fijos.

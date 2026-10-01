@@ -12,6 +12,7 @@ tags:
   - "amor"
 author: "FinMoovi"
 publishedAt: 2026-06-07
+updatedAt: 2026-10-01
 locale: "pt"
 translationKey: "dia-dos-namorados-economico"
 featured: false

@@ -8,6 +8,7 @@ locale: "pt"
 tags: ["orçamento","salário mínimo","finanças pessoais","gerenciamento financeiro","economia","planejamento","orçamento salário mínimo","economizar ganhando pouco","controle gastos"]
 author: "FinMoovi"
 publishedAt: 2026-06-22
+updatedAt: 2026-10-01
 readingTime: 3
 featured: false
 translationKey: "orcamento-com-salario-minimo-dicas-praticas"

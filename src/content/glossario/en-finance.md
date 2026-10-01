@@ -32,7 +32,7 @@ In plain language, finance is the way you earn, spend, save, and plan your money
 
 ## How FinMoovi turns chaos into clarity
 
-FinMoovi is the friend‑like app that steps in exactly where the mess starts: the moment you get a receipt or hear a voice note about a purchase. Its **smart capture** feature lets you snap a photo of any receipt or speak the amount, and the app instantly reads the numbers and places the expense in the right category—no manual typing required. This single action gives you a real‑time picture of your cash flow without the headache of spreadsheets.
+FinMoovi is the friend‑like app that steps in exactly where the mess starts: the moment you get a receipt or hear a voice note about a purchase. Its **smart capture** feature lets you snap a photo of any receipt or speak the amount, and the app instantly reads the numbers and places the expense in the right category—no manual typing required. This single action gives you a real‑time picture of your [cash flow](/en/glossario/en-cash-flow) without the headache of spreadsheets.
 
 ![How FinMoovi turns chaos into clarity](/images/glossario/financas-inline-3.webp)
 
@@ -40,15 +40,15 @@ FinMoovi is the friend‑like app that steps in exactly where the mess starts: t
 
 ## Multi‑currency without the headache
 
-If you travel, shop online, or get paid in different currencies, you’ll notice that converting amounts manually is a pain. FinMoovi handles **multi‑currency** automatically. Whether the expense is in dollars, euros, or any other money, the app translates it into your base currency using up‑to‑date exchange rates, so you always see the true impact on your budget.
+If you travel, shop online, or get paid in different currencies, you’ll notice that converting amounts manually is a pain. FinMoovi handles **[multi‑currency](/en/posts/en-digital-bank-vs-major-bank-which-is-worth-it-in-2026)** automatically. Whether the expense is in dollars, euros, or any other money, the app translates it into your base currency using up‑to‑date exchange rates, so you always see the true impact on your budget.
 
 ## Cash flow reports that actually speak to you
 
-Instead of vague charts, FinMoovi offers clear, bite‑size reports:
+Instead of vague charts, FinMoovi offers clear, bite‑size [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end):
 
 - **Daily snapshot:** Shows today’s total spending versus income.
 - **Weekly trend:** Highlights categories where you’re overspending.
-- **Monthly summary:** Gives a quick view of savings, debt payments, and discretionary spend.
+- **Monthly summary:** Gives a quick view of [savings](/en/glossario/en-savings), debt payments, and discretionary spend.
 
 These reports are generated automatically from the data captured by smart capture, so you never have to dig through piles of paper.
 
@@ -64,13 +64,13 @@ When you approach a limit, the app sends a gentle nudge, helping you stay on tra
 
 ## Credit cards, bills, and the dreaded “just‑pay‑it‑later” trap
 
-Many of us rely on credit cards, but forgetting due dates leads to interest charges. FinMoovi syncs with your cards and bills, pulling due dates and amounts into a single view. You’ll see:
+Many of us rely on credit cards, but forgetting due dates leads to [interest](/en/glossario/en-interest) charges. FinMoovi syncs with your cards and bills, pulling due dates and amounts into a single view. You’ll see:
 
 - Upcoming payment dates.
 - The exact amount you need to pay to avoid interest.
 - A comparison of what you’ve already spent versus your credit limit.
 
-This way, you never miss a payment and you keep your credit score healthy.
+This way, you never miss a payment and you keep your [credit score](/en/glossario/en-credit-score) healthy.
 
 ## Shopping mode: your pocket‑list that adds up in real time
 

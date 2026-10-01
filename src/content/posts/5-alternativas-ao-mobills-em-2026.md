@@ -8,6 +8,7 @@ locale: "pt"
 tags: ["Mobills","FinMoovi","gestão financeira","aplicativos","economia","orçamento","alternativa mobills","app controle financeiro","substituir mobills","melhor que mobills"]
 author: "FinMoovi"
 publishedAt: 2026-06-25
+updatedAt: 2026-10-01
 readingTime: 4
 featured: false
 translationKey: "5-alternativas-ao-mobills-em-2026"

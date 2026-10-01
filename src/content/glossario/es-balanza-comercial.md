@@ -20,7 +20,7 @@ seo:
 
 ## El dolor que sientes al ver tus finanzas desordenadas
 
-Te levantas, revisas la cuenta del banco y el saldo parece desaparecer cada vez que pagas la luz, el alquiler o el café del día. No sabes si estás gastando más de lo que ingresas, y la sensación de incertidumbre te quita el sueño. Ese desorden financiero es como una balanza que siempre se inclina hacia el lado negativo, y sin una herramienta que te muestre qué pesa más, el desequilibrio sigue creciendo.
+Te levantas, revisas la cuenta del banco y el saldo parece desaparecer cada vez que pagas la luz, el [alquiler](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026) o el café del día. No sabes si estás gastando más de lo que ingresas, y la sensación de incertidumbre te quita el sueño. Ese desorden financiero es como una balanza que siempre se inclina hacia el lado negativo, y sin una herramienta que te muestre qué pesa más, el desequilibrio sigue creciendo.
 
 ![El dolor que sientes al ver tus finanzas desordenadas](/images/glossario/balanca-comercial-inline-1.webp)
 
@@ -48,7 +48,7 @@ Imagina que cada mes recibes el equivalente al precio de dos alquileres en ingre
 - **Ingresos estables:** salario mensual, bonos, ingresos extra.
 - **Gastos fijos:** alquiler, servicios, seguros.
 - **Gastos variables:** comida, ocio, compras impulsivas.
-- **Ahorro o déficit:** la diferencia que determina si tu balanza está equilibrada.
+- **[Ahorro](/es/glossario/es-ahorro) o déficit:** la diferencia que determina si tu balanza está equilibrada.
 
 Al visualizar estos componentes, puedes identificar rápidamente dónde está el desequilibrio y actuar antes de que el déficit se convierta en una carga pesada.
 
@@ -57,10 +57,10 @@ Al visualizar estos componentes, puedes identificar rápidamente dónde está el
 Aquí es donde entra FinMoovi, como ese amigo que siempre tiene la solución práctica a mano. La app combina varias funciones que hacen que tu balanza comercial personal sea fácil de monitorizar y ajustar.
 
 - **Captura inteligente:** tomas una foto del recibo o dictas el gasto con la voz; la app lo reconoce y lo categoriza automáticamente.
-- **Multimoneda:** puedes registrar ingresos y gastos en diferentes monedas (por ejemplo, dólares de un trabajo freelance y euros de una venta en línea) y la app los convierte al tipo de cambio que tú elijas.
-- **Flujo de caja e informes:** visualizas en tiempo real cuánto entra y sale, con gráficos que muestran tu balanza mensual.
-- **Planificación mensual y metas:** estableces un objetivo de superávit (por ejemplo, ahorrar el equivalente a un alquiler) y la app te avisa si te estás desviando.
-- **Tarjetas de crédito y facturas:** sincronizas tus tarjetas y la app muestra el total a pagar, evitando sorpresas al final del mes.
+- **Multimoneda:** puedes registrar ingresos y gastos en diferentes monedas (por ejemplo, dólares de un trabajo freelance y euros de una venta en línea) y la app los convierte al tipo de [cambio](/es/glossario/es-cambio) que tú elijas.
+- **[Flujo de caja](/es/glossario/es-flujo-de-caja) e informes:** visualizas en tiempo real cuánto entra y sale, con gráficos que muestran tu balanza mensual.
+- **Planificación mensual y metas:** estableces un objetivo de superávit (por ejemplo, [ahorrar](/es/posts/es-ahorra-en-la-farmacia-sin-sacrificios-guia-practica-2026) el equivalente a un alquiler) y la app te avisa si te estás desviando.
+- **Tarjetas de [crédito](/es/glossario/es-credito) y facturas:** sincronizas tus tarjetas y la app muestra el total a pagar, evitando sorpresas al final del mes.
 - **Modo compras:** creas una lista de la compra, la app suma los precios en tiempo real y te avisa si el total supera tu presupuesto.
 - **Recordatorios y alertas de saldo:** recibes notificaciones cuando el saldo baja de un umbral que tú defines.
 - **Offline / PWA / sincronización:** puedes registrar gastos sin conexión y la información se actualiza cuando vuelvas a estar online.

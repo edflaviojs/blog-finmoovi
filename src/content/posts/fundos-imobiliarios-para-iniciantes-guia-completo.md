@@ -8,6 +8,7 @@ locale: "pt"
 tags: ["fundos imobiliários","investimento imobiliário","renda passiva","investir em imóveis","FIIs","fundos imobiliários iniciante","fii como investir","renda passiva fii"]
 author: "FinMoovi"
 publishedAt: 2026-07-01
+updatedAt: 2026-10-01
 readingTime: 4
 featured: false
 translationKey: "fundos-imobiliarios-para-iniciantes-guia-completo"

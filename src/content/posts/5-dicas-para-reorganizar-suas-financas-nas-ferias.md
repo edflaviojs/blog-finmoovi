@@ -8,6 +8,7 @@ locale: "pt"
 tags: ["finanças pessoais","férias","reorganização financeira","orçamento","economia","organizar finanças férias","planejamento financeiro meio do ano"]
 author: "FinMoovi"
 publishedAt: 2026-06-19
+updatedAt: 2026-10-01
 readingTime: 3
 featured: false
 translationKey: "5-dicas-para-reorganizar-suas-financas-nas-ferias"

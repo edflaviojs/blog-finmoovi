@@ -33,7 +33,7 @@ The trade balance (or *balança comercial*) is a simple accounting sheet for a w
 - **Exports** – goods and services sold to other nations (the money coming in).  
 - **Imports** – goods and services bought from abroad (the money going out).  
 
-If exports > imports, the country has a **trade surplus**; if imports > exports, it runs a **trade deficit**. A surplus can strengthen the local currency, making foreign products cheaper, while a deficit can do the opposite. Think of it as the nation’s “shopping list”: the more you buy from abroad without selling enough of your own stuff, the higher the bill you have to pay.
+If exports > imports, the country has a **trade surplus**; if imports > exports, it runs a **trade deficit**. A surplus can strengthen the local currency, making foreign products cheaper, while a deficit can do the opposite. Think of it as the nation’s “[shopping list](/en/glossario/en-shopping-list)”: the more you buy from abroad without selling enough of your own stuff, the higher the bill you have to pay.
 
 ## Why the trade balance matters for your everyday budget
 
@@ -61,12 +61,12 @@ By visualizing how much of your money flows to imported items, you get a persona
 
 ### Other handy FinMoovi tools that complement smart capture
 
-- **Multi‑currency support** – Track expenses in any currency (USD, EUR, etc.) and see the conversion impact.  
+- **[Multi‑currency](/en/posts/en-digital-bank-vs-major-bank-which-is-worth-it-in-2026) support** – Track expenses in any currency (USD, EUR, etc.) and see the conversion impact.  
 - **Cash‑flow reports** – Visual graphs of income vs. outflow, highlighting imported vs. domestic categories.  
-- **Monthly planning & goals** – Set a target to keep imported spending below a certain percentage of your total budget.  
-- **Credit‑card & bill integration** – Sync statements automatically, so you never miss a purchase.  
+- **Monthly [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) & goals** – Set a target to keep imported spending below a certain percentage of your total budget.  
+- **[Credit](/en/glossario/en-credit)‑card & bill integration** – Sync statements automatically, so you never miss a purchase.  
 - **Shopping mode** – Create a list, watch the total update in real time, and avoid surprise imports at checkout.  
-- **Reminders & balance alerts** – Get notified when your imported‑spending limit is close.  
+- **Reminders & balance alerts** – Get notified when your imported‑[spending limit](/en/glossario/en-spending-limit) is close.  
 - **Offline/PWA sync** – Capture receipts without internet; the data syncs later.
 
 ## Practical tips to keep the trade‑balance effect in check
@@ -82,7 +82,7 @@ By visualizing how much of your money flows to imported items, you get a persona
 - **Capture every receipt** – Even the tiny coffee receipt matters; the app’s AI will sort it for you.  
 - **Review the “Imported vs. Domestic” chart weekly** – Spot trends before they become costly habits.  
 - **Adjust your budget** – If imported spending exceeds your comfort zone, reallocate funds to local options or wait for sales.  
-- **Leverage multi‑currency tracking** – When traveling, see how exchange‑rate swings affect your overall spend.  
+- **[Leverage](/en/glossario/en-leverage) multi‑currency tracking** – When traveling, see how exchange‑rate swings affect your overall spend.  
 - **Use alerts wisely** – Enable balance alerts for imported categories to stay informed in real time.
 
 By treating your personal expenses like a mini‑trade ledger, you become aware of the macro forces that shape prices. The more you know, the better you can protect your wallet from unexpected hikes.

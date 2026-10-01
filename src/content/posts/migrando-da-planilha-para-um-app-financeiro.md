@@ -8,6 +8,7 @@ locale: "pt"
 tags: ["app financeiro","planilha","finanças pessoais","organização financeira","FinMoovi","Mobills","Organizze","migrar planilha app","começar usar app finanças","sair da planilha"]
 author: "FinMoovi"
 publishedAt: 2026-06-14
+updatedAt: 2026-10-01
 readingTime: 4
 featured: false
 translationKey: "migrando-da-planilha-para-um-app-financeiro"

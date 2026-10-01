@@ -8,6 +8,7 @@ locale: "pt"
 tags: ["como negociar descontos em contas fixas","finanças pessoais","economia","dinheiro"]
 author: "FinMoovi"
 publishedAt: 2026-07-03
+updatedAt: 2026-10-01
 readingTime: 3
 featured: true
 translationKey: "negociar-descontos-em-contas-fixas"

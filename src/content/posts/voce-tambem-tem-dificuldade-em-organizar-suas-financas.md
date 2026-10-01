@@ -16,7 +16,8 @@ tags:
   - aplicativos de finanças
   - finmoovi
 author: FinMoovi
-publishedAt: 2026-06-10T00:00:00.000Z
+publishedAt: 2026-06-10
+updatedAt: 2026-10-01T00:00:00.000Z
 readingTime: 4
 featured: false
 translationKey: voce-tambem-tem-dificuldade-em-organizar-suas-financas

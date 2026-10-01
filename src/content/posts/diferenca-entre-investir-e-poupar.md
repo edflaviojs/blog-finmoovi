@@ -8,6 +8,7 @@ locale: "pt"
 tags: ["diferença entre investir e poupar","finanças pessoais","economia","dinheiro"]
 author: "FinMoovi"
 publishedAt: 2026-06-22
+updatedAt: 2026-10-01
 readingTime: 4
 featured: true
 translationKey: "diferenca-entre-investir-e-poupar"

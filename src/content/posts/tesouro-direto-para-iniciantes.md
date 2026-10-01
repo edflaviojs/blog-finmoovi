@@ -8,6 +8,7 @@ locale: "pt"
 tags: ["Tesouro Direto","investimento","renda fixa","títulos públicos","financeira pessoal","economia","tesouro direto iniciante","como investir tesouro direto","tesouro selic"]
 author: "FinMoovi"
 publishedAt: 2026-06-14
+updatedAt: 2026-10-01
 readingTime: 3
 featured: false
 translationKey: "tesouro-direto-para-iniciantes"

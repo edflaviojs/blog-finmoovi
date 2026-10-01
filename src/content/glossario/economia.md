@@ -20,7 +20,7 @@ seo:
 
 ## O que é “economia” na prática  
 
-Você já percebeu que, no fim do mês, o dinheiro parece desaparecer como se fosse mágica? A sensação de que o salário entrou, mas as contas já estavam lá, é comum. Essa frustração nasce da falta de **economia**, que não é só guardar moedas no cofrinho, mas entender como o seu dinheiro entra, sai e pode ser direcionado para o que realmente importa. Em termos simples, economia é a arte de fazer o que você tem render mais, sem precisar ganhar mais. É controlar o fluxo de caixa pessoal – a diferença entre o que entra (receitas) e o que sai (despesas) – e usar essa informação para tomar decisões conscientes.
+Você já percebeu que, no fim do mês, o dinheiro parece desaparecer como se fosse mágica? A sensação de que o salário entrou, mas as contas já estavam lá, é comum. Essa frustração nasce da falta de **economia**, que não é só guardar moedas no cofrinho, mas entender como o seu dinheiro entra, sai e pode ser direcionado para o que realmente importa. Em termos simples, economia é a arte de fazer o que você tem render mais, sem precisar ganhar mais. É controlar o [fluxo de caixa](/glossario/fluxo-de-caixa) pessoal – a diferença entre o que entra (receitas) e o que sai (despesas) – e usar essa informação para tomar decisões conscientes.
 
 ![O que é “economia” na prática  ](/images/glossario/economia-inline-1.webp)
 
@@ -32,7 +32,7 @@ Você já percebeu que, no fim do mês, o dinheiro parece desaparecer como se fo
 - **Objetivos adiados**: aquela viagem dos sonhos ou a compra de um imóvel ficam cada vez mais distantes.  
 - **Estresse financeiro**: a preocupação constante com o saldo da conta gera ansiedade e pode até prejudicar a saúde.  
 
-Esses problemas surgem porque, sem um registro claro das entradas e saídas, você acaba gastando “no automático”, como quando compra um café por dia sem perceber que isso equivale ao preço de um aluguel ao longo de um ano.
+Esses problemas surgem porque, sem um registro claro das entradas e saídas, você acaba gastando “no automático”, como quando compra um café por dia sem perceber que isso equivale ao preço de um [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026) ao longo de um ano.
 
 ## O conceito de economia explicado com um exemplo real  
 
@@ -42,7 +42,7 @@ Imagine que você ganha o equivalente a quatro aluguéis por mês. Se gastar met
 
 
 
-A **economia** entra aqui como um filtro: você registra cada gasto, categoriza (alimentação, transporte, lazer etc.) e vê exatamente onde o dinheiro está indo. Assim, consegue cortar o que é supérfluo e redirecionar a sobra para metas como uma reserva de emergência ou a compra de um bem maior.
+A **economia** entra aqui como um filtro: você registra cada gasto, categoriza (alimentação, transporte, lazer etc.) e vê exatamente onde o dinheiro está indo. Assim, consegue cortar o que é supérfluo e redirecionar a sobra para metas como uma [reserva de emergência](/ferramentas/calculadora-reserva) ou a compra de um bem maior.
 
 ## Como o FinMoovi ajuda a colocar a economia em prática  
 
@@ -94,8 +94,8 @@ A **economia** entra aqui como um filtro: você registra cada gasto, categoriza 
 
 ## Estratégias avançadas de economia pessoal  
 
-- **Reserva de emergência**: Comece guardando o equivalente a três a seis aluguéis. Use a funcionalidade de metas do FinMoovi para criar um objetivo “Reserva de Emergência” e acompanhe o progresso mensalmente.  
-- **Investimento automático**: Quando a meta de reserva estiver atingida, configure o app para transferir automaticamente um percentual da renda para um fundo de investimento ou poupança.  
+- **[Reserva de emergência](/glossario/reserva-de-emergencia)**: Comece guardando o equivalente a três a seis aluguéis. Use a funcionalidade de metas do FinMoovi para criar um objetivo “Reserva de Emergência” e acompanhe o progresso mensalmente.  
+- **[Investimento](/glossario/investimento) automático**: Quando a meta de reserva estiver atingida, configure o app para transferir automaticamente um percentual da renda para um [fundo de investimento](/glossario/fundo-de-investimento) ou poupança.  
 - **Revisão de assinaturas**: Liste todas as assinaturas (streaming, academia, revistas) no FinMoovi. Avalie o custo-benefício e cancele as que não são usadas regularmente.  
 
 ## Como a economia se conecta ao seu futuro  

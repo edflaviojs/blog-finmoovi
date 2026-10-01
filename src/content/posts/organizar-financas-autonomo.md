@@ -8,6 +8,7 @@ locale: "pt"
 tags: ["como organizar finanças sendo autônomo","finanças pessoais","economia","dinheiro"]
 author: "FinMoovi"
 publishedAt: 2026-06-06
+updatedAt: 2026-10-01
 readingTime: 4
 featured: true
 translationKey: "organizar-financas-autonomo"

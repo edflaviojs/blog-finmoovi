@@ -27,19 +27,19 @@ You’ve just received your monthly salary – enough to cover the rent, the gro
 
 
 - Stocks – a share of ownership in a company  
-- Bonds – a loan you give to a government or corporation, earning interest  
+- Bonds – a loan you give to a government or corporation, earning [interest](/en/glossario/en-interest)  
 - Mutual funds or ETFs – pooled money that buys a basket of assets for you  
 - Cash equivalents – short‑term deposits, money‑market funds, or foreign‑currency balances  
-- Real‑estate investment trusts (REITs) – shares that represent ownership in property portfolios  
+- Real‑estate [investment](/en/glossario/en-investment) trusts (REITs) – shares that represent ownership in property portfolios  
 
 Financial assets are any resources that generate income or can be converted into cash with minimal loss. They differ from physical assets like a car or furniture, which usually depreciate. Understanding this distinction helps you see where your money can work for you instead of just sitting idle.
 
 ## Why you should care about financial assets
 
-If you treat every dollar as the same, you’ll miss opportunities to make your money grow. A financial asset can earn interest, dividends, or capital gains, turning a modest monthly surplus into a sizable nest egg over years. Ignoring them means you might keep paying rent while a portion of your savings could be earning a return equivalent to the price of a daily coffee each month.
+If you treat every dollar as the same, you’ll miss opportunities to make your money grow. A financial asset can earn interest, [dividends](/en/glossario/en-dividends), or capital gains, turning a modest monthly surplus into a sizable nest egg over years. Ignoring them means you might keep paying rent while a portion of your savings could be earning a return equivalent to the price of a daily coffee each month.
 
 - **Build wealth:** Even a small investment in a diversified fund can compound, turning a few hundred dollars today into several thousand in a decade.  
-- **Protect against inflation:** Cash loses buying power over time; assets like stocks or inflation‑linked bonds preserve value.  
+- **Protect against [inflation](/en/glossario/en-inflation):** Cash loses buying power over time; assets like stocks or inflation‑linked bonds preserve value.  
 - **Increase financial flexibility:** Having liquid assets (easily turned into cash) lets you handle emergencies without resorting to high‑interest credit cards.
 
 ## Common misconceptions
@@ -58,11 +58,11 @@ Here’s where FinMoovi makes the whole picture crystal clear. Imagine you just 
 2. Classifies the purchase as “Household – Appliances” without you lifting a finger.  
 3. Updates your cash‑flow report, showing how much of your liquid financial assets were used.
 
-Because the receipt is captured in real time, you never lose track of where your money went, and you can see at a glance how each transaction affects your overall asset allocation. The automatic categorization also feeds into the monthly planning screen, where you set goals like “save the equivalent of three months’ rent in a high‑yield savings account.” FinMoovi then alerts you if a purchase pushes you away from that target, giving you a chance to adjust before the next bill arrives.
+Because the receipt is captured in real time, you never lose track of where your money went, and you can see at a glance how each transaction affects your overall asset allocation. The automatic categorization also feeds into the monthly [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) screen, where you set goals like “save the equivalent of three months’ rent in a high‑yield savings account.” FinMoovi then alerts you if a purchase pushes you away from that target, giving you a chance to adjust before the next bill arrives.
 
 ## Practical tips to make the most of your financial assets
 
-**Practical tip:** Set a “minimum asset balance” equal to the cost of one month’s rent and keep it in a high‑interest cash‑equivalent account. This buffer protects you from unexpected expenses while still earning more than a regular checking account.
+**Practical tip:** Set a “minimum asset balance” equal to the cost of one month’s rent and keep it in a high‑interest cash‑equivalent account. This buffer protects you from unexpected expenses while still earning more than a regular [checking account](/en/posts/en-digital-bank-vs-major-bank-which-is-worth-it-in-2026).
 
 **Practical tip:** Whenever you receive a dividend or interest payment, use FinMoovi’s “auto‑reinvest” toggle to automatically move that money into a diversified fund. You’ll benefit from compounding without the temptation to spend it on a spontaneous treat.
 

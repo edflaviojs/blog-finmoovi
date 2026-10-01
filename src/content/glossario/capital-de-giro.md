@@ -20,7 +20,7 @@ seo:
 
 ## O que é capital de giro  
 
-Capital de giro é o dinheiro que a sua empresa (ou o seu pequeno negócio) tem disponível para pagar as contas do dia a dia: compra de matéria‑prima, salários, contas de luz, aluguel, impostos que vencem a cada mês. Em termos simples, é a diferença entre o que você tem a receber (contas a receber, estoque que ainda não foi vendido) e o que você tem a pagar (fornecedores, despesas operacionais). Quando essa diferença é positiva, o negócio consegue “andar” sem precisar de empréstimos de última hora; quando é negativa, surgem os temidos apertos de caixa.
+Capital de giro é o dinheiro que a sua empresa (ou o seu pequeno negócio) tem disponível para pagar as contas do dia a dia: compra de matéria‑prima, salários, contas de luz, [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026), impostos que vencem a cada mês. Em termos simples, é a diferença entre o que você tem a receber (contas a receber, estoque que ainda não foi vendido) e o que você tem a pagar (fornecedores, despesas operacionais). Quando essa diferença é positiva, o negócio consegue “andar” sem precisar de empréstimos de última hora; quando é negativa, surgem os temidos apertos de caixa.
 
 ![O que é capital de giro  ](/images/glossario/capital-de-giro-inline-1.webp)
 
@@ -54,7 +54,7 @@ A diferença entre a soma das entradas e a soma das saídas é o seu capital de 
 Quando o capital de giro está apertado, as consequências aparecem nas situações cotidianas:  
 
 - Você deixa de comprar matéria‑prima a tempo e perde vendas.  
-- Precisa recorrer a crédito de cartão ou empréstimo com juros altos.  
+- Precisa recorrer a [crédito](/glossario/credito) de cartão ou [empréstimo](/glossario/emprestimo) com juros altos.  
 - O estresse aumenta, e decisões importantes são tomadas às pressas.  
 
 Esses problemas afetam não só a saúde financeira da empresa, mas também a tranquilidade pessoal do empreendedor.
@@ -65,10 +65,10 @@ Imagine que, ao receber uma nota fiscal, você tira uma foto ou grava a voz desc
 
 - **Captura inteligente + categorização automática** elimina a necessidade de digitar cada despesa.  
 - **Multimoeda** permite acompanhar receitas e despesas em diferentes moedas sem conversão manual.  
-- **Fluxo de caixa e relatórios** mostram, em gráficos claros, a diferença entre entradas e saídas, indicando se o capital de giro está positivo ou negativo.  
+- **[Fluxo de caixa](/glossario/fluxo-de-caixa) e relatórios** mostram, em gráficos claros, a diferença entre entradas e saídas, indicando se o capital de giro está positivo ou negativo.  
 - **Planejamento mensal / metas** ajuda a definir quanto você quer manter como reserva de giro e acompanha o progresso.  
 - **Cartões de crédito / fatura** são importados automaticamente, evitando surpresas na data de vencimento.  
-- **Modo compras (lista + total em tempo real)** permite montar a lista de compras de estoque e ver, a cada item adicionado, o impacto no seu caixa.  
+- **Modo compras (lista + total em tempo real)** permite montar a [lista de compras](/glossario/lista-de-compras) de estoque e ver, a cada item adicionado, o impacto no seu caixa.  
 - **Lembretes / alertas de saldo** avisam quando o saldo está próximo do limite crítico.  
 - **Offline / PWA / sincronização** garante que, mesmo sem internet, você continue registrando tudo e, ao reconectar, os dados são atualizados.
 
@@ -84,7 +84,7 @@ Com esses recursos, o capital de giro deixa de ser um “monstro invisível” e
 
 Além dessas três, vale lembrar de:  
 
-- Manter um fundo de emergência equivalente a, no mínimo, duas vezes o valor de um aluguel.  
+- Manter um [fundo de emergência](/ferramentas/calculadora-reserva) equivalente a, no mínimo, duas vezes o valor de um aluguel.  
 - Automatizar pagamentos recorrentes para evitar multas e juros.  
 - Revisar mensalmente o relatório de fluxo de caixa e ajustar metas de reserva de giro.
 

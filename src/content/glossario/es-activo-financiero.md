@@ -20,7 +20,7 @@ seo:
 
 ## El problema de no saber a dónde va tu dinero
 
-¿Te ha pasado que al final del mes te quedas mirando el saldo y no sabes por qué ya no alcanza para el alquiler, la luz o ese café que tomas a diario? La sensación de “el dinero se me escapa” es más común de lo que crees, y suele aparecer cuando no distinguimos entre lo que simplemente gastamos y lo que realmente poseemos como inversión o reserva. Sin esa claridad, cualquier intento de planificar se vuelve un tiro al aire.
+¿Te ha pasado que al final del mes te quedas mirando el saldo y no sabes por qué ya no alcanza para el [alquiler](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026), la luz o ese café que tomas a diario? La sensación de “el dinero se me escapa” es más común de lo que crees, y suele aparecer cuando no distinguimos entre lo que simplemente gastamos y lo que realmente poseemos como [inversión](/es/glossario/es-inversion) o reserva. Sin esa claridad, cualquier intento de planificar se vuelve un tiro al aire.
 
 ![El problema de no saber a dónde va tu dinero](/images/glossario/ativo-financeiro-inline-1.webp)
 
@@ -28,7 +28,7 @@ seo:
 
 - No sabes cuánto tienes guardado en una cuenta de ahorros porque lo confundes con el dinero que usas para la compra del supermercado.  
 - Ignoras que una parte de tu sueldo se está convirtiendo en un fondo de pensión, pero lo ves como gasto corriente.  
-- Te sorprende la factura de la tarjeta de crédito porque no recuerdas qué compras la activaron.
+- Te sorprende la [factura de la tarjeta](/es/glossario/es-factura-de-la-tarjeta) de crédito porque no recuerdas qué compras la activaron.
 
 ## ¿Qué es un activo financiero?
 
@@ -52,8 +52,8 @@ FinMoovi actúa como ese amigo que siempre lleva la cuenta y te avisa antes de q
 
 - **Captura inteligente**: apuntas con la cámara o grabas tu voz y la app reconoce el gasto o ingreso, lo categoriza automáticamente y lo asigna al activo correspondiente.  
 - **Multimoneda**: puedes registrar ingresos en dólares, euros o la moneda que uses habitualmente y ver todo convertido a una referencia única, ideal si recibes pagos del extranjero.  
-- **Flujo de caja e informes**: visualizas en tiempo real cuánto entra, cuánto sale y cuál es el saldo de cada activo, con gráficos que se actualizan al instante.  
-- **Planificación mensual y metas**: estableces objetivos (por ejemplo, “ahorrar el equivalente a dos alquileres”) y la app te muestra el progreso día a día.  
+- **[Flujo de caja](/es/glossario/es-flujo-de-caja) e informes**: visualizas en tiempo real cuánto entra, cuánto sale y cuál es el saldo de cada activo, con gráficos que se actualizan al instante.  
+- **Planificación mensual y metas**: estableces objetivos (por ejemplo, “[ahorrar](/es/posts/es-ahorra-en-la-farmacia-sin-sacrificios-guia-practica-2026) el equivalente a dos alquileres”) y la app te muestra el progreso día a día.  
 - **Tarjetas de crédito y facturas**: sincronizas tus tarjetas y la app te muestra el saldo, la fecha de corte y el monto a pagar, evitando sorpresas.  
 - **Modo compras**: creas una lista de lo que necesitas, la app suma los precios en tiempo real y te avisa si el total supera el límite que definiste para esa compra.  
 - **Recordatorios y alertas de saldo**: recibes notificaciones cuando un activo está por debajo de un umbral o cuando una factura está próxima a vencer.  
@@ -72,7 +72,7 @@ Aprovechar tus activos no es cuestión de magia, sino de hábitos simples que pu
 Además, ten en cuenta estos hábitos complementarios:
 
 - Revisa el informe de flujo de caja cada domingo; identifica qué activo está generando más ingresos y cuál está consumiendo recursos sin aportar valor.  
-- Diversifica: no pongas todo tu dinero en una sola cuenta de ahorro; reparte entre al menos dos tipos de activos (por ejemplo, una cuenta de ahorro y un fondo de inversión).  
+- Diversifica: no pongas todo tu dinero en una sola cuenta de ahorro; reparte entre al menos dos tipos de activos (por ejemplo, una cuenta de ahorro y un [fondo de inversión](/es/glossario/es-fondo-de-inversion)).  
 - Aprovecha la función multimoneda si recibes pagos en diferentes divisas; evita perder dinero en conversiones innecesarias.
 
 ## Preguntas frecuentes

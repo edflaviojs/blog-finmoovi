@@ -13,7 +13,8 @@ tags:
   - mercado financeiro
   - selic
 author: FinMoovi
-publishedAt: 2026-06-29T00:00:00.000Z
+publishedAt: 2026-06-29
+updatedAt: 2026-10-01T00:00:00.000Z
 readingTime: 3
 featured: false
 locale: pt

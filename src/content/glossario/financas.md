@@ -30,10 +30,10 @@ Finanças, em termos simples, são o conjunto de decisões que você toma sobre 
 
 ## Como funciona o fluxo de caixa pessoal  
 
-O fluxo de caixa é a ferramenta básica das finanças. Ele registra tudo que entra (salário, renda extra, devolução de compras) e tudo que sai (contas, supermercado, lazer). Quando o “entrada” supera a “saída”, você tem superavit; quando o contrário, déficit.  
+O [fluxo de caixa](/glossario/fluxo-de-caixa) é a ferramenta básica das finanças. Ele registra tudo que entra (salário, renda extra, devolução de compras) e tudo que sai (contas, supermercado, lazer). Quando o “entrada” supera a “saída”, você tem superavit; quando o contrário, déficit.  
 
-- **Entrada:** salário, freelance, juros de investimentos, devoluções.  
-- **Saída:** aluguel, contas de água/luz, alimentação, transporte, lazer, dívidas.  
+- **Entrada:** salário, freelance, [juros](/glossario/juros) de investimentos, devoluções.  
+- **Saída:** [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026), contas de água/luz, alimentação, transporte, lazer, dívidas.  
 
 Ao observar esse balanço, você identifica onde está gastando mais do que deveria e onde pode cortar. Por exemplo, se perceber que gasta o equivalente a duas vezes o preço de um café por dia em delivery, já tem um ponto de ajuste.
 
@@ -49,17 +49,17 @@ A captura inteligente do **FinMoovi** facilita esse passo: basta tirar uma foto 
 
 ## Multimoeda: quando o dinheiro cruza fronteiras  
 
-Se você recebe parte da renda em outra moeda ou faz compras internacionais, o controle pode ficar confuso. O FinMoovi aceita BRL, USD e EUR, convertendo tudo automaticamente para a moeda que você escolher como referência. Assim, o gasto de um voo em dólares aparece ao lado da conta de luz em reais, sem precisar de planilha extra.
+Se você recebe parte da renda em outra [moeda](/glossario/moeda) ou faz compras internacionais, o controle pode ficar confuso. O FinMoovi aceita BRL, USD e EUR, convertendo tudo automaticamente para a moeda que você escolher como referência. Assim, o gasto de um voo em dólares aparece ao lado da conta de luz em reais, sem precisar de planilha extra.
 
 ## Planejamento mensal e metas realistas  
 
-Definir metas (como “economizar o equivalente a três aluguéis em seis meses”) dá direção ao seu fluxo de caixa. O FinMoovi permite criar metas mensais, acompanhar o progresso e receber alertas quando está perto de ultrapassar o limite.  
+Definir metas (como “economizar o equivalente a três aluguéis em seis meses”) dá direção ao seu fluxo de caixa. O FinMoovi permite criar metas mensais, acompanhar o progresso e receber [alertas](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto) quando está perto de ultrapassar o limite.  
 
 **Dica prática:** estabeleça uma meta de “corte de gastos supérfluos” de 10 % do seu total de despesas e veja o impacto no saldo ao final do mês.
 
 ## Cartões de crédito e faturas: domando o vilão  
 
-Muitos perdem o controle porque não acompanham a fatura do cartão. O FinMoovi importa automaticamente as transações, categoriza e mostra o total em tempo real. Você ainda pode criar uma “lista de compras” dentro do app; ao adicionar itens, o total vai subindo e avisa quando chegar perto do limite que você definiu.  
+Muitos perdem o controle porque não acompanham a fatura do cartão. O FinMoovi importa automaticamente as transações, categoriza e mostra o total em tempo real. Você ainda pode criar uma “[lista de compras](/glossario/lista-de-compras)” dentro do app; ao adicionar itens, o total vai subindo e avisa quando chegar perto do limite que você definiu.  
 
 **Dica prática:** pague a fatura integralmente até a data de vencimento para evitar juros, e use o alerta de saldo do FinMoovi para não esquecer.
 

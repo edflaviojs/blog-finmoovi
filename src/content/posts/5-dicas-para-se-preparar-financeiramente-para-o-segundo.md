@@ -8,6 +8,7 @@ locale: "pt"
 tags: ["finanças pessoais","segundo semestre","planejamento financeiro","economia","gastos","segundo semestre financeiro","revisão metas financeiras"]
 author: "FinMoovi"
 publishedAt: 2026-07-03
+updatedAt: 2026-10-01
 readingTime: 4
 featured: false
 translationKey: "5-dicas-para-se-preparar-financeiramente-para-o-segundo"

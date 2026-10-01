@@ -18,7 +18,8 @@ tags:
   - como dividir salário
   - método orçamento
 author: FinMoovi
-publishedAt: 2026-06-14T00:00:00.000Z
+publishedAt: 2026-06-14
+updatedAt: 2026-10-01T00:00:00.000Z
 updatedAt: "2026-09-24"
 readingTime: 3
 featured: false

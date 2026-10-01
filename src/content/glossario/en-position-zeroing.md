@@ -19,7 +19,7 @@ seo:
 ---
 
 ## The moment you realize your money is stuck  
-You just paid the electricity bill, the rent, and still have that daily coffee that costs almost as much as a quick snack. When you open your credit card statement, you see there’s still a “pending” balance from purchases made weeks ago, but they haven’t shown up on the bill yet. The fear that this money will “disappear” or that you’ll end up paying interest because you couldn’t close the account is real. This feeling of having funds “trapped” without knowing how to free them is the starting point for understanding position zeroing.
+You just paid the electricity bill, the rent, and still have that daily coffee that costs almost as much as a quick snack. When you open your [credit card statement](/en/glossario/en-credit-card-statement), you see there’s still a “pending” balance from purchases made weeks ago, but they haven’t shown up on the bill yet. The fear that this money will “disappear” or that you’ll end up paying [interest](/en/glossario/en-interest) because you couldn’t close the account is real. This feeling of having funds “trapped” without knowing how to free them is the starting point for understanding position zeroing.
 
 ## What is “position zeroing”?  
 The term comes from the world of investing, but it applies to any account that tracks inflows and outflows: **position zeroing** means completely closing or balancing a financial record so the balance returns to zero. In simple terms, it’s like wiping the slate clean after doing the math: you record everything that came in, everything that went out, and at the end, you ensure no value is left “loose.” When the position is zeroed, you know exactly how much you still have available for the next round of spending or investing.
@@ -30,17 +30,17 @@ The term comes from the world of investing, but it applies to any account that t
 
 ## Why it matters for everyday budgeting  
 - **Avoids unexpected interest** – If a debit stays open too long, it can generate charges.  
-- **Makes goal tracking easier** – When all accounts are zeroed, it’s easier to compare what’s left with your savings goal, for example, the equivalent of two weeks’ rent.  
+- **Makes goal tracking easier** – When all accounts are zeroed, it’s easier to compare what’s left with your [savings](/en/glossario/en-savings) goal, for example, the equivalent of two weeks’ rent.  
 - **Reduces stress** – Knowing there are no “surprises” in the next payment cycle brings peace of mind.  
 
-These benefits go far beyond those who trade stocks; they help anyone paying bills, grocery shopping, or managing money for a small business.
+These [benefits](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026) go far beyond those who trade stocks; they help anyone paying bills, grocery shopping, or managing money for a small business.
 
 ![Why it matters for everyday budgeting  ](/images/glossario/zeragem-de-posicao-inline-3.webp)
 
 
 
 ## How FinMoovi’s smart capture makes zeroing easy  
-Imagine that, when you get home, you take a photo of your grocery receipt or record a voice note saying “I spent 30 dollars at the supermarket.” FinMoovi’s **smart capture** feature automatically recognizes the amount, date, and category (food, transportation, leisure, etc.) and logs everything into your cash flow. No more opening a spreadsheet, typing numbers, and then trying to remember where each expense fits. The app performs **position zeroing** in real time:
+Imagine that, when you get home, you take a photo of your grocery receipt or record a voice note saying “I spent 30 dollars at the supermarket.” FinMoovi’s **[smart capture](/en/posts/en-how-freelancers-can-organize-their-finances-in-2026)** feature automatically recognizes the amount, date, and category (food, transportation, leisure, etc.) and logs everything into your [cash flow](/en/glossario/en-cash-flow). No more opening a spreadsheet, typing numbers, and then trying to remember where each expense fits. The app performs **position zeroing** in real time:
 
 - When you record an expense, it subtracts the amount from the corresponding category’s balance.  
 - If the category goes negative, the app alerts you to a “deficit” and suggests adjustments.  

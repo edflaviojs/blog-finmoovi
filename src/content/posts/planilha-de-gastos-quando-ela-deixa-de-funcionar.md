@@ -8,6 +8,7 @@ locale: "pt"
 tags: ["planilha de gastos","finanças pessoais","app de finanças","gestão de gastos","orçamento","planilha gastos grátis","limitações planilha","planilha vs app quando trocar"]
 author: "FinMoovi"
 publishedAt: 2026-06-18
+updatedAt: 2026-10-01
 readingTime: 4
 featured: false
 translationKey: "planilha-de-gastos-quando-ela-deixa-de-funcionar"

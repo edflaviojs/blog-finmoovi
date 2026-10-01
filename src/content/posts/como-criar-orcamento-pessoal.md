@@ -7,7 +7,7 @@ category: "orcamento"
 tags: ["orçamento", "finanças pessoais", "planejamento financeiro", "controle de gastos"]
 author: "FinMoovi"
 publishedAt: 2026-05-19
-updatedAt: 2026-07-01
+updatedAt: 2026-10-01
 readingTime: 7
 featured: true
 locale: "pt"

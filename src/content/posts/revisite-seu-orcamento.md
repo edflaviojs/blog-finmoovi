@@ -11,7 +11,8 @@ tags:
   - gestão de dinheiro
   - meio do ano
 author: FinMoovi
-publishedAt: 2026-06-30T00:00:00.000Z
+publishedAt: 2026-06-30
+updatedAt: 2026-10-01T00:00:00.000Z
 locale: pt
 translationKey: revisite-seu-orcamento
 featured: false

@@ -20,7 +20,7 @@ seo:
 
 ## O que é balança comercial e por que você sente o impacto no bolso  
 
-Imagine que você acabou de fazer a compra do supermercado e, ao fechar a conta, percebe que o preço do arroz subiu quase o mesmo valor de um aluguel. Essa sensação de “por que tudo está mais caro?” tem uma explicação macro: a balança comercial do país. A balança comercial é o registro das trocas de bens entre um país e o resto do mundo – tudo o que entra (importações) e tudo o que sai (exportações). Quando o país compra mais do que vende, o saldo fica negativo, o que pode pressionar a moeda e, consequentemente, elevar os preços dos produtos importados. Se o país vende mais do que compra, o saldo fica positivo, fortalecendo a moeda e ajudando a conter a alta de preços. Esse conceito pode parecer distante, mas ele está por trás da variação do preço daquele café que você toma todo dia.
+Imagine que você acabou de fazer a compra do supermercado e, ao fechar a conta, percebe que o preço do arroz subiu quase o mesmo valor de um [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026). Essa sensação de “por que tudo está mais caro?” tem uma explicação macro: a balança comercial do país. A balança comercial é o registro das trocas de bens entre um país e o resto do mundo – tudo o que entra (importações) e tudo o que sai (exportações). Quando o país compra mais do que vende, o saldo fica negativo, o que pode pressionar a moeda e, consequentemente, elevar os preços dos produtos importados. Se o país vende mais do que compra, o saldo fica positivo, fortalecendo a moeda e ajudando a conter a alta de preços. Esse conceito pode parecer distante, mas ele está por trás da variação do preço daquele café que você toma todo dia.
 
 ![O que é balança comercial e por que você sente o impacto no bolso  ](/images/glossario/balanca-comercial-inline-1.webp)
 
@@ -55,7 +55,7 @@ Entender esses termos ajuda a perceber por que, quando o saldo está negativo, o
 
 **Dica prática:** acompanhe a cotação da moeda em relação ao seu gasto mensal. Quando a moeda está mais cara, priorize itens que não dependem de importação, como alimentos da estação ou roupas produzidas nacionalmente.  
 
-**Dica prática:** use um app de finanças que registre suas despesas em várias moedas e ofereça alertas de variação de preço. Assim, você percebe rapidamente quando um gasto recorrente está ficando mais caro e pode ajustar o orçamento antes que o impacto se torne significativo.
+**Dica prática:** use um app de [finanças](/glossario/financas) que registre suas despesas em várias moedas e ofereça [alertas](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto) de variação de preço. Assim, você percebe rapidamente quando um gasto recorrente está ficando mais caro e pode ajustar o orçamento antes que o impacto se torne significativo.
 
 ## Como o FinMoovi te ajuda a entender e planejar diante da balança comercial  
 
@@ -63,9 +63,9 @@ O FinMoovi chega como aquele amigo que entende de finanças e ainda tem a tecnol
 
 - **Captura inteligente:** tire uma foto da nota fiscal ou grave a voz descrevendo a compra; o app reconhece automaticamente o valor, a categoria e a moeda, economizando tempo e evitando erros de digitação.  
 - **Multimoeda:** registre despesas em diferentes moedas (por exemplo, dólares ao comprar um gadget online) e veja tudo convertido para a moeda que você usa no orçamento, facilitando a comparação de custos.  
-- **Fluxo de caixa e relatórios:** visualize, em gráficos simples, quanto você gasta com itens importados versus produtos locais, identificando rapidamente a parcela que está mais vulnerável à variação cambial.  
-- **Planejamento mensal e metas:** defina metas de economia para categorias sensíveis à balança comercial, como eletrônicos ou viagens internacionais, e acompanhe o progresso ao longo do mês.  
-- **Cartões de crédito e fatura:** importe automaticamente as faturas dos cartões; o app categoriza cada compra e avisa quando o gasto ultrapassa o limite que você estabeleceu para itens importados.  
+- **[Fluxo de caixa](/glossario/fluxo-de-caixa) e relatórios:** visualize, em gráficos simples, quanto você gasta com itens importados versus produtos locais, identificando rapidamente a parcela que está mais vulnerável à variação cambial.  
+- **Planejamento mensal e metas:** defina metas de [economia](/glossario/economia) para categorias sensíveis à balança comercial, como eletrônicos ou viagens internacionais, e acompanhe o progresso ao longo do mês.  
+- **Cartões de [crédito](/glossario/credito) e fatura:** importe automaticamente as faturas dos cartões; o app categoriza cada compra e avisa quando o gasto ultrapassa o limite que você estabeleceu para itens importados.  
 - **Modo compras:** crie listas de supermercado com total em tempo real; o app avisa se o preço total está acima da média dos últimos meses, indicando possível efeito da desvalorização da moeda.  
 - **Lembretes e alertas de saldo:** receba notificações quando o saldo da conta ficar próximo ao limite definido, evitando surpresas desagradáveis ao final do mês.  
 - **Offline / PWA / sincronização:** mesmo sem internet, você pode registrar despesas; ao reconectar, tudo se sincroniza automaticamente, garantindo que seus dados estejam sempre atualizados.  

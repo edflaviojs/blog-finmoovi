@@ -44,9 +44,9 @@ Imagine you run a small online shop selling handmade candles. One week you recei
 
 
 
-- Borrow from friends or a high‑interest loan  
-- Cancel the order and lose a good profit margin  
-- Use a credit card and pay interest later  
+- Borrow from friends or a high‑[interest](/en/glossario/en-interest) loan  
+- Cancel the order and lose a good [profit margin](/en/glossario/en-profit-margin)  
+- Use a [credit card](/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026) and pay interest later  
 
 The same pattern appears for freelancers, gig workers, or anyone with irregular income streams.
 
@@ -57,7 +57,7 @@ FinMoovi solves this problem with a single, intuitive feature: **smart capture**
 The magic lies in the automation:
 
 - No manual entry – the AI reads the numbers and assigns the right category.  
-- Multi‑currency support – whether you’re paid in dollars, euros, or any other currency, the app converts it to your base view.  
+- [Multi‑currency](/en/posts/en-digital-bank-vs-major-bank-which-is-worth-it-in-2026) support – whether you’re paid in dollars, euros, or any other currency, the app converts it to your base view.  
 - Instant alerts – if a new expense pushes your working‑capital ratio below a safe threshold, you get a push notification.
 
 With this visibility, you can decide early whether to postpone a purchase, negotiate longer payment terms, or tap a short‑term credit line before the cash crunch hits.
@@ -72,10 +72,10 @@ With this visibility, you can decide early whether to postpone a purchase, negot
 
 Additional actions you can take right now:
 
-- Review the last month’s “cash out” report and identify any recurring expense that can be reduced.  
+- Review the last month’s “cash out” report and identify any [recurring expense](/en/glossario/en-recurring-expense) that can be reduced.  
 - Set a monthly working‑capital target equal to at least two weeks of your average outflows.  
 - Use the app’s “forecast” feature to simulate the impact of a new purchase before you commit.
 
 ## Start today
 
-Open FinMoovi, tap the **Smart Capture** button, and take a photo of the receipt you just got for your grocery run. In less than a minute the app will log the amount, categorize it as “food,” and update your working‑capital gauge. Check the gauge – if it’s dipping below your comfort zone, set a quick reminder to review upcoming bills. That five‑minute action gives you instant visibility and a concrete step toward a healthier cash flow.
+Open FinMoovi, tap the **Smart Capture** button, and take a photo of the receipt you just got for your grocery run. In less than a minute the app will log the amount, categorize it as “food,” and update your working‑capital gauge. Check the gauge – if it’s dipping below your comfort zone, set a quick reminder to review upcoming bills. That five‑minute action gives you instant visibility and a concrete step toward a healthier [cash flow](/en/glossario/en-cash-flow).

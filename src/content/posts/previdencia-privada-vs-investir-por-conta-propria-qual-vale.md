@@ -8,6 +8,7 @@ locale: "pt"
 tags: ["Previdência privada","Investir por conta própria","Planejamento financeiro","Finanças pessoais","Investimentos","previdência privada vale a pena","pgbl vs vgbl","aposentadoria investir sozinho"]
 author: "FinMoovi"
 publishedAt: 2026-06-13
+updatedAt: 2026-10-01
 readingTime: 4
 featured: false
 translationKey: "previdencia-privada-vs-investir-por-conta-propria-qual-vale"

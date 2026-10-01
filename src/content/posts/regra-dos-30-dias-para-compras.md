@@ -8,6 +8,7 @@ locale: "pt"
 tags: ["como usar a regra dos 30 dias para compras","finanças pessoais","economia","dinheiro"]
 author: "FinMoovi"
 publishedAt: 2026-06-04
+updatedAt: 2026-10-01
 readingTime: 3
 featured: true
 translationKey: "regra-dos-30-dias-para-compras"

@@ -8,6 +8,7 @@ locale: "pt"
 tags: ["como criar uma reserva de emergência","finanças pessoais","economia","dinheiro"]
 author: "FinMoovi"
 publishedAt: 2026-07-01
+updatedAt: 2026-10-01
 readingTime: 3
 featured: true
 translationKey: "como-criar-uma-reserva-de-emergencia"

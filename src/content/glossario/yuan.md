@@ -20,7 +20,7 @@ seo:
 
 ## Por que o yuan aparece na sua vida financeira  
 
-Você já recebeu um e‑mail de um fornecedor chinês pedindo pagamento em “CNY” e ficou na dúvida se precisava converter o valor ou se poderia usar o mesmo número que aparece na fatura? Essa situação é mais comum do que parece, principalmente quando fazemos compras online, recebemos remessas ou investimos em ativos internacionais. O incômodo de não entender a moeda, de temer taxas inesperadas e de perder o controle do orçamento pode gerar ansiedade e decisões precipitadas.  
+Você já recebeu um e‑mail de um fornecedor chinês pedindo pagamento em “CNY” e ficou na dúvida se precisava converter o valor ou se poderia usar o mesmo número que aparece na fatura? Essa situação é mais comum do que parece, principalmente quando fazemos compras online, recebemos remessas ou investimos em ativos internacionais. O incômodo de não entender a [moeda](/glossario/moeda), de temer taxas inesperadas e de perder o controle do orçamento pode gerar ansiedade e decisões precipitadas.  
 
 ![Por que o yuan aparece na sua vida financeira  ](/images/glossario/yuan-inline-1.webp)
 
@@ -46,9 +46,9 @@ Mesmo que você não tenha negócios com a China, o yuan pode aparecer de forma 
 
 - **Compras em marketplaces internacionais** – produtos eletrônicos ou roupas que custam “¥300”.  
 - **Viagens** – ao planejar uma visita a Pequim, você precisará de yuan para transportes e alimentação.  
-- **Investimentos** – fundos ou ações listadas em bolsas chinesas são cotados em yuan.  
+- **Investimentos** – fundos ou [ações](/glossario/acoes) listadas em bolsas chinesas são cotados em yuan.  
 
-Se você paga um café por dia, imagine que o custo de um jantar em um restaurante local na China pode equivaler a “cerca de um aluguel” em yuan. Sem controle, esses gastos podem “vazar” do seu caixa e atrapalhar metas como economizar para a viagem dos sonhos ou pagar a fatura do cartão.  
+Se você paga um café por dia, imagine que o custo de um jantar em um restaurante local na China pode equivaler a “cerca de um [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026)” em yuan. Sem controle, esses gastos podem “vazar” do seu caixa e atrapalhar metas como economizar para a viagem dos sonhos ou pagar a fatura do cartão.  
 
 ## Ferramentas para lidar com o yuan: FinMoovi  
 
@@ -57,11 +57,11 @@ Se você paga um café por dia, imagine que o custo de um jantar em um restauran
 - **Captura inteligente** – tire foto da nota fiscal ou grave a voz ao dizer “paguei ¥200” que o app reconhece o valor e a moeda automaticamente.  
 - **Categorização automática** – o sistema classifica a despesa (ex.: “eletrônicos”, “viagem”) sem que você precise escolher manualmente.  
 - **Multimoeda (BRL/USD/EUR/CNY)** – todas as transações ficam registradas na moeda original e, simultaneamente, em sua moeda de referência, usando a cotação do dia.  
-- **Fluxo de caixa e relatórios** – visualize entradas e saídas em yuan ao lado das demais, identificando rapidamente onde o dinheiro está sendo gasto.  
+- **[Fluxo de caixa](/glossario/fluxo-de-caixa) e relatórios** – visualize entradas e saídas em yuan ao lado das demais, identificando rapidamente onde o dinheiro está sendo gasto.  
 - **Planejamento mensal / metas** – defina um limite de gasto em yuan para compras internacionais e acompanhe o progresso.  
-- **Cartões de crédito / fatura** – importe a fatura que contém compras em yuan e veja o valor convertido, evitando surpresas na hora de pagar.  
+- **Cartões de [crédito](/glossario/credito) / fatura** – importe a fatura que contém compras em yuan e veja o valor convertido, evitando surpresas na hora de pagar.  
 - **Modo compras (lista + total em tempo real)** – adicione itens em yuan a uma lista de supermercado e o app mostra o total convertido ao vivo.  
-- **Lembretes / alertas de saldo** – receba notificação quando o saldo em yuan ficar próximo do limite definido.  
+- **Lembretes / [alertas](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto) de saldo** – receba notificação quando o saldo em yuan ficar próximo do limite definido.  
 - **Offline / PWA / sincronização** – use o app mesmo sem internet; os dados são sincronizados quando a conexão volta, garantindo que nada se perca.  
 
 Com essas funções, o yuan deixa de ser um “monstro desconhecido” e passa a ser apenas mais um número controlado no seu painel financeiro.  

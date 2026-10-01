@@ -13,7 +13,8 @@ tags:
   - economia
   - dinheiro
 author: FinMoovi
-publishedAt: 2026-06-24T00:00:00.000Z
+publishedAt: 2026-06-24
+updatedAt: 2026-10-01T00:00:00.000Z
 readingTime: 3
 featured: true
 translationKey: planejamento-financeiro-para-autonomos

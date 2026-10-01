@@ -20,7 +20,7 @@ seo:
 
 ## ¿Por qué siempre parece que el dinero se escapa?
 
-Te levantas, pagas el alquiler, compras el desayuno y, al final del día, la cuenta del banco muestra menos de lo que esperabas. Ese vacío en la cuenta es la señal de que tu **economía personal** no está bajo control. No se trata de que ganes poco, sino de que no sabes a dónde va cada peso, euro o dólar. Cuando no tienes claridad, cualquier gasto inesperado—una reparación del coche, una visita al médico o una oferta irresistible en línea—se vuelve una crisis.
+Te levantas, pagas el [alquiler](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026), compras el desayuno y, al final del día, la cuenta del banco muestra menos de lo que esperabas. Ese vacío en la cuenta es la señal de que tu **economía personal** no está bajo control. No se trata de que ganes poco, sino de que no sabes a dónde va cada peso, euro o dólar. Cuando no tienes claridad, cualquier gasto inesperado—una reparación del coche, una visita al médico o una oferta irresistible en línea—se vuelve una crisis.
 
 ![¿Por qué siempre parece que el dinero se escapa?](/images/glossario/economia-inline-1.svg)
 
@@ -32,7 +32,7 @@ La economía personal es simplemente la forma en que manejas tus ingresos, gasto
 
 - **Ingresos:** todo lo que recibes (salario, freelance, rentas).
 - **Gastos:** todo lo que pagas (vivienda, comida, ocio).
-- **Ahorro/inversión:** la parte que guardas o haces crecer.
+- **Ahorro/[inversión](/es/glossario/es-inversion):** la parte que guardas o haces crecer.
 
 ## El problema de la visión fragmentada
 
@@ -44,7 +44,7 @@ Muchos intentan llevar la economía personal con notas en el móvil, hojas de c�
 
 - Duplicar gastos porque no recuerdas lo que ya pagaste.
 - No saber cuánto puedes gastar en ocio sin romper tu presupuesto.
-- Sufrir sorpresas cuando la tarjeta de crédito llega con una factura del tamaño de una pizza.
+- Sufrir sorpresas cuando la tarjeta de [crédito](/es/glossario/es-credito) llega con una factura del tamaño de una pizza.
 
 ## Cómo FinMoovi te devuelve el control
 
@@ -55,8 +55,8 @@ Imagina que, al terminar de pagar el recibo de luz, simplemente tomas una foto c
 - **Captura inteligente:** foto o voz del recibo → datos estructurados sin esfuerzo.
 - **Categorización automática:** asigna cada gasto a una categoría predefinida (comida, transporte, ocio, etc.).
 - **Multimoneda:** maneja ingresos y gastos en diferentes monedas sin complicaciones.
-- **Flujo de caja e informes:** muestra en tiempo real cuánto entra, sale y qué queda disponible.
-- **Planificación mensual y metas:** define cuánto quieres ahorrar para un viaje o para un fondo de emergencia.
+- **[Flujo de caja](/es/glossario/es-flujo-de-caja) e informes:** muestra en tiempo real cuánto entra, sale y qué queda disponible.
+- **Planificación mensual y metas:** define cuánto quieres [ahorrar](/es/posts/es-ahorra-en-la-farmacia-sin-sacrificios-guia-practica-2026) para un viaje o para un [fondo de emergencia](/es/glossario/es-fondo-de-emergencia).
 - **Tarjetas de crédito y facturas:** sincroniza tus tarjetas, muestra el saldo y la fecha de vencimiento.
 - **Modo compras:** crea listas, ve el total en tiempo real y evita sobrepasar el presupuesto.
 - **Recordatorios y alertas:** notificaciones cuando el saldo está bajo o una factura está próxima a vencer.

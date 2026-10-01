@@ -28,7 +28,7 @@ Imagine que você tem um carro que usa combustível que pode subir de preço a q
 
 ## Como os derivativos funcionam na prática
 
-Para entender melhor, vamos usar um exemplo cotidiano: você costuma comprar um café por dia, gastando o equivalente a “um aluguel” ao longo do mês. Se o preço do café subir 20 % de repente, seu gasto mensal vai aumentar consideravelmente. Um contrato de derivativo, chamado de **futuro**, permite que você “trave” o preço do café hoje, pagando o mesmo valor todo mês, independentemente da alta. Da mesma forma, um **opção** dá o direito (mas não a obrigação) de comprar ou vender o ativo a um preço pré‑definido, como se fosse um cupom de desconto que você pode usar ou não, dependendo do cenário.
+Para entender melhor, vamos usar um exemplo cotidiano: você costuma comprar um café por dia, gastando o equivalente a “um [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026)” ao longo do mês. Se o preço do café subir 20 % de repente, seu gasto mensal vai aumentar consideravelmente. Um contrato de derivativo, chamado de **futuro**, permite que você “trave” o preço do café hoje, pagando o mesmo valor todo mês, independentemente da alta. Da mesma forma, um **opção** dá o direito (mas não a obrigação) de comprar ou vender o ativo a um preço pré‑definido, como se fosse um cupom de desconto que você pode usar ou não, dependendo do cenário.
 
 Outros tipos comuns são:
 
@@ -40,7 +40,7 @@ Esses instrumentos são usados por empresas para proteger custos (hedge) e por i
 
 ## Por que os derivativos podem aparecer no seu dia a dia
 
-Mesmo que você não trabalhe no mercado financeiro, os efeitos dos derivativos chegam até a sua conta bancária. Quando você paga um plano de celular em outra moeda, a operadora pode estar usando **contratos de swap** para garantir que o preço que você paga não suba demais. Se você tem um cartão de crédito internacional, a fatura pode ser ajustada por **opções de câmbio** que a instituição financeira adquiriu para se proteger das variações do dólar ou euro. Em resumo, os derivativos ajudam a estabilizar preços que, de outra forma, poderiam mudar de forma brusca e afetar seu orçamento.
+Mesmo que você não trabalhe no [mercado financeiro](/glossario/mercado-financeiro), os efeitos dos derivativos chegam até a sua conta bancária. Quando você paga um plano de celular em outra moeda, a operadora pode estar usando **contratos de swap** para garantir que o preço que você paga não suba demais. Se você tem um [cartão de crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena) internacional, a fatura pode ser ajustada por **opções de câmbio** que a instituição financeira adquiriu para se proteger das variações do dólar ou euro. Em resumo, os derivativos ajudam a estabilizar preços que, de outra forma, poderiam mudar de forma brusca e afetar seu orçamento.
 
 ![Por que os derivativos podem aparecer no seu dia a dia](/images/glossario/derivativos-inline-3.webp)
 
@@ -94,9 +94,9 @@ O FinMoovi ajuda a monitorar esses custos, exibindo em seus relatórios o valor 
 
 ## Quando vale a pena contratar um derivativo
 
-- **Proteção de renda fixa:** Se você tem uma renda mensal que depende de um contrato em moeda estrangeira, um swap pode garantir que o valor recebido não diminua.
-- **Compra de bens de alto valor:** Planejando comprar um carro ou uma casa, um contrato futuro de taxa de juros pode travar a taxa de financiamento.
-- **Empreendedores:** Quem compra matéria‑prima (ex.: café, soja) pode usar futuros para garantir o preço de compra e evitar surpresas no fluxo de caixa.
+- **Proteção de renda fixa:** Se você tem uma [renda mensal](/glossario/renda-mensal) que depende de um contrato em moeda estrangeira, um swap pode garantir que o valor recebido não diminua.
+- **Compra de bens de alto valor:** Planejando comprar um carro ou uma casa, um contrato futuro de taxa de juros pode travar a taxa de [financiamento](/glossario/financiamento).
+- **Empreendedores:** Quem compra matéria‑prima (ex.: café, soja) pode usar futuros para garantir o preço de compra e evitar surpresas no [fluxo de caixa](/glossario/fluxo-de-caixa).
 
 ## Como começar a usar derivativos sem complicação
 

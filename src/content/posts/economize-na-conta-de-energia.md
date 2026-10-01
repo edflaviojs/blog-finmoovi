@@ -8,6 +8,7 @@ locale: "pt"
 tags: ["como economizar na conta de energia","finanças pessoais","economia","dinheiro"]
 author: "FinMoovi"
 publishedAt: 2026-06-05
+updatedAt: 2026-10-01
 readingTime: 3
 featured: true
 translationKey: "economize-na-conta-de-energia"

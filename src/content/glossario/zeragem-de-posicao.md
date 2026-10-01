@@ -20,7 +20,7 @@ seo:
 
 ## O que é zeragem de posição
 
-A “zeragem de posição” é o momento em que você fecha todas as contas que ainda têm saldo aberto – seja no cartão de crédito, no empréstimo ou até nas contas de serviços. Em termos simples, é deixar o seu nome “em branco” nos extratos, sem dívidas pendentes. Quando a posição está zerada, você sabe exatamente quanto pode gastar sem risco de juros ou multas inesperadas.
+A “zeragem de posição” é o momento em que você fecha todas as contas que ainda têm saldo aberto – seja no cartão de [crédito](/glossario/credito), no [empréstimo](/glossario/emprestimo) ou até nas contas de serviços. Em termos simples, é deixar o seu nome “em branco” nos extratos, sem dívidas pendentes. Quando a posição está zerada, você sabe exatamente quanto pode gastar sem risco de [juros](/glossario/juros) ou multas inesperadas.
 
 ![O que é zeragem de posição](/images/glossario/zeragem-de-posicao-inline-1.webp)
 
@@ -28,7 +28,7 @@ A “zeragem de posição” é o momento em que você fecha todas as contas que
 
 ## Por que a gente sente a dor de não zerar
 
-Imagine que, ao final do mês, você abre a fatura do cartão e vê um número que parece maior que o preço de um aluguel. A sensação de “não sei onde foi tudo isso” gera ansiedade, atrapalha o planejamento e pode levar a decisões impulsivas, como cortar gastos essenciais ou recorrer a empréstimos caros. Essa dor é comum porque a maioria das pessoas não tem um registro claro de cada compra, nem um panorama de como as despesas se acumulam ao longo do tempo.
+Imagine que, ao final do mês, você abre a fatura do cartão e vê um número que parece maior que o preço de um [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026). A sensação de “não sei onde foi tudo isso” gera ansiedade, atrapalha o planejamento e pode levar a decisões impulsivas, como cortar gastos essenciais ou recorrer a empréstimos caros. Essa dor é comum porque a maioria das pessoas não tem um registro claro de cada compra, nem um panorama de como as despesas se acumulam ao longo do tempo.
 
 ## Como funciona na prática
 
@@ -57,7 +57,7 @@ Só assim você consegue “zerar” a posição, ou seja, garantir que não há
 - **Captura inteligente**: tire uma foto da nota fiscal ou grave a voz descrevendo a compra; o app reconhece o valor e a categoria sem que você precise digitar nada.
 - **Categorização automática**: usando inteligência artificial, o FinMoovi coloca cada gasto na pasta correta (alimentação, transporte, lazer etc.) assim que a nota é capturada.
 - **Multimoeda**: se você paga em diferentes moedas (por exemplo, dólares em viagens ou euros em compras online), o app converte tudo para a moeda que você escolher, facilitando a visualização do total.
-- **Fluxo de caixa e relatórios**: gráficos simples mostram a entrada e saída de dinheiro ao longo do mês, ajudando a perceber onde está o “vazamento”.
+- **[Fluxo de caixa](/glossario/fluxo-de-caixa) e relatórios**: gráficos simples mostram a entrada e saída de dinheiro ao longo do mês, ajudando a perceber onde está o “vazamento”.
 - **Planejamento mensal / metas**: você define um limite para cada categoria e o app avisa quando está próximo de ultrapassar.
 - **Cartões de crédito / fatura**: sincroniza automaticamente as faturas, exibindo o saldo atual e o valor que ainda será cobrado.
 - **Modo compras (lista + total em tempo real)**: crie uma lista de supermercado e veja o total acumulado enquanto adiciona itens, evitando surpresas na hora de pagar.
@@ -79,7 +79,7 @@ Além disso, siga estes passos rápidos:
 - Compare o total com o limite de segurança que você definiu.
 - Se houver diferença, ajuste as categorias ou planeje pagamentos adicionais.
 
-Com a visualização clara que o FinMoovi oferece, você pode cortar gastos supérfluos (como aquele lanche extra que custa o preço de um café por dia) e direcionar o dinheiro para metas mais importantes, como uma reserva de emergência ou a viagem dos sonhos.
+Com a visualização clara que o FinMoovi oferece, você pode cortar gastos supérfluos (como aquele lanche extra que custa o preço de um café por dia) e direcionar o dinheiro para metas mais importantes, como uma [reserva de emergência](/ferramentas/calculadora-reserva) ou a viagem dos sonhos.
 
 ## Comece hoje
 

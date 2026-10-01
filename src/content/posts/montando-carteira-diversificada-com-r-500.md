@@ -8,6 +8,7 @@ locale: "pt"
 tags: ["investimento","carteira diversificada","R$500","riscos","gerenciamento financeiro","rendimento","diversificar investimentos","investir 500 reais"]
 author: "FinMoovi"
 publishedAt: 2026-06-17
+updatedAt: 2026-10-01
 readingTime: 3
 featured: false
 translationKey: "montando-carteira-diversificada-com-r-500"

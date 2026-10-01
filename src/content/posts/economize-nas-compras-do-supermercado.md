@@ -8,6 +8,7 @@ locale: "pt"
 tags: ["como economizar nas compras do supermercado","finanças pessoais","economia","dinheiro"]
 author: "FinMoovi"
 publishedAt: 2026-06-19
+updatedAt: 2026-10-01
 readingTime: 3
 featured: true
 translationKey: "economize-nas-compras-do-supermercado"

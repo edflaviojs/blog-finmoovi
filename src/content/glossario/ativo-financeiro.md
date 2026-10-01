@@ -28,7 +28,7 @@ Um ativo financeiro é tudo aquilo que você possui e que pode ser convertido em
 
 ## Por que isso importa no seu dia a dia  
 
-A maioria das pessoas sente que o dinheiro “some” no fim do mês, mas não percebe que parte desse desaparecimento está ligada à forma como os ativos são administrados. Se você tem um investimento que rende juros, mas não acompanha o saldo, pode acabar gastando o que poderia estar rendendo. Ou então, tem um cartão de crédito com limite que nunca foi usado de forma estratégica, perdendo a oportunidade de melhorar seu score e conseguir melhores condições de crédito. Entender o que são seus ativos financeiros ajuda a transformar esses recursos em verdadeiros aliados na hora de pagar as contas, montar uma reserva ou planejar a viagem dos sonhos.
+A maioria das pessoas sente que o dinheiro “some” no fim do mês, mas não percebe que parte desse desaparecimento está ligada à forma como os ativos são administrados. Se você tem um [investimento](/glossario/investimento) que rende juros, mas não acompanha o saldo, pode acabar gastando o que poderia estar rendendo. Ou então, tem um [cartão de crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena) com limite que nunca foi usado de forma estratégica, perdendo a oportunidade de melhorar seu score e conseguir melhores condições de crédito. Entender o que são seus ativos financeiros ajuda a transformar esses recursos em verdadeiros aliados na hora de pagar as contas, montar uma reserva ou planejar a viagem dos sonhos.
 
 ## Como identificar seus ativos  
 
@@ -39,7 +39,7 @@ Comece listando tudo que gera renda ou pode ser convertido em dinheiro sem preci
 
 
 - **Contas bancárias** (corrente, poupança, conta digital) – dinheiro que entra e sai diariamente.  
-- **Investimentos** (CDB, Tesouro Direto, fundos, ações) – aplicam seu dinheiro e devolvem com juros ou valorização.  
+- **Investimentos** (CDB, [Tesouro Direto](/glossario/tesouro-direto), fundos, ações) – aplicam seu dinheiro e devolvem com juros ou valorização.  
 - **Cartões pré‑pagos e vales** – saldo que pode ser usado como dinheiro, mas que costuma expirar se não for usado.  
 - **Créditos e recompensas** (cashback, pontos de programa de fidelidade) – valores que podem ser trocados por produtos ou descontos.  
 - **Créditos de terceiros** (empréstimos recebidos, adiantamentos) – dinheiro que entra e que você precisa devolver, mas que ainda está disponível para uso.
@@ -48,7 +48,7 @@ Comece listando tudo que gera renda ou pode ser convertido em dinheiro sem preci
 
 - **Não registrar movimentações** – Quando você paga um boleto direto no celular e não anota, o saldo do seu ativo pode ficar “fantasma”.  
 - **Misturar moedas** – Se você tem dinheiro guardado em dólares para a viagem e não acompanha a cotação, pode acabar subestimando ou superestimando o valor real.  
-- **Esquecer a liquidez** – Investir todo o dinheiro em um fundo de longo prazo pode ser ótimo, mas se você não tem reserva de emergência, pode precisar vender em baixa e perder dinheiro.
+- **Esquecer a liquidez** – Investir todo o dinheiro em um fundo de longo prazo pode ser ótimo, mas se você não tem [reserva de emergência](/ferramentas/calculadora-reserva), pode precisar vender em baixa e perder dinheiro.
 
 ## Como o FinMoovi facilita a gestão de ativos  
 
@@ -56,7 +56,7 @@ Imagine que, ao receber um recibo de compra, você tira uma foto ou grava a voz 
 
 Além da captura inteligente, o FinMoovi oferece:
 
-- **Fluxo de caixa e relatórios** – gráficos que mostram a entrada e saída de cada ativo ao longo do mês, ajudando a visualizar onde o dinheiro está realmente indo.  
+- **[Fluxo de caixa](/glossario/fluxo-de-caixa) e relatórios** – gráficos que mostram a entrada e saída de cada ativo ao longo do mês, ajudando a visualizar onde o dinheiro está realmente indo.  
 - **Planejamento mensal e metas** – você define quanto quer economizar ou investir e o app avisa quando está próximo ou distante da meta.  
 - **Cartões de crédito e fatura** – integração que traz o extrato automaticamente, calcula o gasto real e avisa sobre o pagamento mínimo.  
 - **Modo compras** – cria listas de supermercado, adiciona itens e mostra o total em tempo real, evitando surpresas na hora de pagar.  
@@ -65,7 +65,7 @@ Além da captura inteligente, o FinMoovi oferece:
 
 ## Dicas práticas para maximizar seus ativos  
 
-**Dica prática:** ao receber um salário, destine imediatamente 30 % para um ativo de reserva de emergência (pode ser uma conta de alta liquidez). Assim, você evita usar o dinheiro para despesas impulsivas.  
+**Dica prática:** ao receber um salário, destine imediatamente 30 % para um ativo de [reserva de emergência](/glossario/reserva-de-emergencia) (pode ser uma conta de alta liquidez). Assim, você evita usar o dinheiro para despesas impulsivas.  
 
 **Dica prática:** use a captura inteligente do FinMoovi para registrar cada gasto pequeno (um café por dia, por exemplo). No fim do mês, você verá quanto esses pequenos valores impactam seu ativo de poupança.  
 

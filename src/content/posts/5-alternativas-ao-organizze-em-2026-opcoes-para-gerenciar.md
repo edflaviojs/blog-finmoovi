@@ -8,6 +8,7 @@ locale: "pt"
 tags: ["Organizze","alternativas","finanças pessoais","gestão financeira","aplicativos de finanças","FinMoovi","alternativa organizze","app finanças pessoais","organizze alternativa","app como organizze"]
 author: "FinMoovi"
 publishedAt: 2026-07-02
+updatedAt: 2026-10-01
 readingTime: 5
 featured: false
 translationKey: "5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar"

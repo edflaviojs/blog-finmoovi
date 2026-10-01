@@ -8,6 +8,7 @@ locale: "pt"
 tags: ["como economizar na conta do mercado toda semana","finanças pessoais","economia","dinheiro"]
 author: "FinMoovi"
 publishedAt: 2026-06-07
+updatedAt: 2026-10-01
 readingTime: 3
 featured: true
 translationKey: "economize-na-conta-do-mercado"

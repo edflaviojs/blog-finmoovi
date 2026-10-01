@@ -138,5 +138,5 @@ Both TED and PIX have had their limits nudged upward this year, meaning you can 
 
 A quick tip: if you’re sending money to a friend who needs it instantly—say, to cover a surprise birthday gift—PIX still wins on speed, arriving in seconds. For larger, scheduled payments such as a monthly rent or a supplier invoice, TED’s slightly longer processing time is offset by its built‑in confirmation step, giving you a clear receipt you can reference later.  
 
-Another practical tweak: many banks now let you set a default transfer method in their apps. Choose PIX for anything under the new personal limit and switch to TED for amounts that exceed it. This way you avoid manual toggling and keep your cash flow smooth without extra hassle.
+Another practical tweak: many banks now let you set a default transfer method in their apps. Choose PIX for anything under the new personal limit and switch to TED for amounts that exceed it. This way you avoid manual toggling and keep your [cash flow](/en/glossario/en-cash-flow) smooth without extra hassle.
 

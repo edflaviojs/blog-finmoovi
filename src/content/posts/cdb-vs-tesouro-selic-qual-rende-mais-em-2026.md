@@ -8,6 +8,7 @@ locale: "pt"
 tags: ["CDB","Tesouro Selic","investimentos","renda fixa","riscos","benefícios","cdb vs tesouro selic","qual rende mais","renda fixa comparação"]
 author: "FinMoovi"
 publishedAt: 2026-06-24
+updatedAt: 2026-10-01
 readingTime: 4
 featured: false
 translationKey: "cdb-vs-tesouro-selic-qual-rende-mais-em-2026"

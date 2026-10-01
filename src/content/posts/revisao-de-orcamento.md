@@ -13,7 +13,8 @@ tags:
   - economia
   - investimentos
 author: FinMoovi
-publishedAt: 2026-06-23T00:00:00.000Z
+publishedAt: 2026-06-23
+updatedAt: 2026-10-01T00:00:00.000Z
 locale: pt
 translationKey: revisao-de-orcamento
 featured: false
