@@ -298,7 +298,8 @@ Preencha 4 campos. Os 3 primeiros em INGLÊS (é a língua que a IA de imagem en
 2. "descricaoFacial": como essa emoção aparece num rosto de boneco-palito (sobrancelhas, boca, olhos), uma frase curta em inglês. Exemplos: despair → "eyebrows pulled up together, mouth open in a silent gasp, eyes watery"; shock → "eyebrows raised high, mouth wide open round, eyes bulging".
 3. "metaforaVisual": uma ilustração de ALTO IMPACTO EMOCIONAL que representa o ASSUNTO deste vídeo de um jeito concreto — nunca um conceito abstrato. Frase curta em inglês.
    🔴 PROIBIDO usar boca, dentes, presas, mordida ou "engolir/devorar" — EXCETO se o próprio TÍTULO tiver um trocadilho literal com "comer" (como em "Juros Te Come"). Fora esse caso específico, boca está banida: já virou repetição, não variedade.
-   VARIE sempre o TIPO de cena — nunca repita a mesma ideia do vídeo anterior. Use, por exemplo: uma explosão/bomba de dinheiro, um vazamento (torneira ou balde furado pingando moedas), destruição (uma parede ou cofre desabando), uma nota de dinheiro rasgada ao meio ou em chamas, uma carteira vazia e aberta, uma pilha de boletos/faturas vencidas se acumulando, um buraco negro sugando notas, uma mão apertando algo até quebrar, ou uma COMPARAÇÃO visual (de um lado uma montanha de dinheiro, do outro uma única moedinha solitária).
+   🔴 PROIBIDA também "carteira vazando/rachada pingando moedas" (wallet leaking/cracked) — EXCETO se o próprio TÍTULO tiver o trocadilho literal com "vazamento/vaza/vazar". Virou o novo "boca": em 4 vídeos de temas diferentes ("salário some", "gastos invisíveis", "juros do cartão", "pequenos gastos") a IA caiu nela 4 vezes seguidas por ser o jeito mais fácil de desenhar "dinheiro sumindo aos poucos" — fora esse caso a carteira vazando está banida.
+   VARIE sempre o TIPO de cena — nunca repita a mesma ideia do vídeo anterior. Use, por exemplo: uma explosão/bomba de dinheiro, destruição (uma parede ou cofre desabando), uma nota de dinheiro rasgada ao meio ou em chamas, uma pilha de boletos/faturas vencidas se acumulando, um buraco negro sugando notas, uma mão apertando algo até quebrar, formigas carregando moedas uma a uma, uma montanha de moedinhas minúsculas ao lado de um boneco pequeno, correntes/cadeado prendendo um objeto, ou uma COMPARAÇÃO visual (de um lado uma montanha de dinheiro, do outro uma única moedinha solitária).
    Exemplos: tema "juros do cartão" (sem trocadilho) → "a stack of banknotes exploding like a bomb, bills flying apart in a shockwave"; tema "cartão de crédito" → "a credit card being torn violently in half, sparks flying from the crack"; tema "nome sujo" → "a giant red stamp slamming down and crushing a document flat, ink splattering outward"; tema "gasto invisível" → "a bucket full of coins with a hole in the bottom, coins pouring out onto the floor in a growing puddle"; tema "diferença de salário" → "a dramatic scale: one side piled impossibly high with banknotes, the other side holding a single lonely coin"; tema "juros te come" (tem o trocadilho) → "a monstrous open mouth with sharp fangs swallowing a percentage symbol" (aqui pode, porque o título pede).
 4. "linha1" e "linha2": o texto que aparece integrado na cena, em PORTUGUÊS, TUDO MAIÚSCULO, sempre 2 linhas. Linha 1 é o "vilão" (1 a 2 palavras). Linha 2 é a "ação/consequência" (2 a 3 palavras). Exemplos: "CARTÃO" / "TE AFUNDA"; "NOME SUJO" / "TE PRENDE"; "GOLPE" / "DO PIX".
 
@@ -315,6 +316,16 @@ Responda SÓ com JSON, sem comentário nenhum nem bloco de código:
 const PALAVRAS_DE_BOCA = /\bmouths?\b|\bfangs?\b|\bteeth\b|\bbit(e|ten|ing)\b|\bswallow\w*\b|\bdevour\w*\b|\bjaws?\b/i;
 const TROCADILHO_DE_COMER = /\bcome\b|\bcomer\b|\bcomendo\b|\bcomeu\b/i;
 
+/**
+ * ♦ 01/10/2026 — "CARTEIRA VAZANDO" VIROU O NOVO "BOCA". Medido na hora: pedida a capa
+ * de 4 temas diferentes de dinheiro-sumindo-aos-poucos, a IA devolveu carteira vazando
+ * em todos os 4 (até eu banir explicitamente no pedido). Mesma receita do `PALAVRAS_DE_BOCA`:
+ * trava de código, não só pedido — e a mesma exceção de trocadilho, agora com "vazamento".
+ */
+const PALAVRAS_DE_VAZAMENTO = /\bwallet\b/i;
+const PALAVRAS_DE_VAZAR = /\bleak\w*|\bcrack(ed)?\b|\bhole\b|\bpour\w*|\bdrip\w*|\btorn\b/i;
+const TROCADILHO_DE_VAZAMENTO = /\bvazament\w*|\bvaz(a|ar|ando|ou)\b/i;
+
 /** As checagens duras dos 4 campos — o texto da capa é a única parte que o dono vai LER
  *  sem precisar olhar a imagem, então é a única que vale a pena travar por regra.
  *  `contexto` é o título/tema do vídeo — só ele diz se a boca está liberada ou não. */
@@ -326,7 +337,10 @@ export function validarCamposStickman(c, { contexto = '' } = {}) {
   if (!String(c.metaforaVisual || '').trim()) erros.push('sem "metaforaVisual"');
   const metafora = String(c.metaforaVisual || '');
   if (metafora && PALAVRAS_DE_BOCA.test(metafora) && !TROCADILHO_DE_COMER.test(contexto)) {
-    erros.push(`"metaforaVisual" usa boca/presas/mordida/engolir ("${metafora}"), mas o título não tem o trocadilho com "come" — fora desse caso a boca está banida (ordem do dono); escolha outro tipo de cena (explosão, vazamento, destruição, dinheiro rasgado, carteira vazia, boletos empilhados, comparação visual)`);
+    erros.push(`"metaforaVisual" usa boca/presas/mordida/engolir ("${metafora}"), mas o título não tem o trocadilho com "come" — fora desse caso a boca está banida (ordem do dono); escolha outro tipo de cena (explosão, destruição, dinheiro rasgado, boletos empilhados, formigas carregando moedas, correntes/cadeado, comparação visual)`);
+  }
+  if (metafora && PALAVRAS_DE_VAZAMENTO.test(metafora) && PALAVRAS_DE_VAZAR.test(metafora) && !TROCADILHO_DE_VAZAMENTO.test(contexto)) {
+    erros.push(`"metaforaVisual" usa carteira vazando/rachada ("${metafora}"), mas o título não tem o trocadilho com "vazamento" — virou repetição (4 vídeos seguidos usaram essa ideia); escolha outro tipo de cena (explosão, destruição, dinheiro rasgado, boletos empilhados, formigas carregando moedas, montanha de moedinhas, correntes/cadeado, comparação visual)`);
   }
   const l1 = String(c.linha1 || '').trim();
   const l2 = String(c.linha2 || '').trim();
