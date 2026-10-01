@@ -1,23 +1,5 @@
 [
   {
-    "file": "en-economy.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 5,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": [
-        "ação",
-        "valor"
-      ]
-    }
-  },
-  {
     "file": "en-fgc-guarantee.md",
     "dir": "glossario",
     "severity": 2,
@@ -1361,6 +1343,21 @@
     }
   },
   {
+    "file": "en-economy.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-emergency-fund.md",
     "dir": "glossario",
     "severity": 0,
@@ -1482,6 +1479,21 @@
   },
   {
     "file": "en-fgts-severance-fund.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-finance.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -2307,6 +2319,21 @@
   },
   {
     "file": "en-how-to-keep-daily-expenses-under-control-and-avoid-surprises.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-how-to-know-if-your-savings-goal-is-actually-moving-forward.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -5996,6 +6023,21 @@
     }
   },
   {
+    "file": "es-como-saber-si-tu-objetivo-de-ahorro-avanza-de-verdad-en-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-como-transformar-el-caos-financiero-en-control-con-la.md",
     "dir": "posts",
     "severity": 0,
@@ -6867,6 +6909,21 @@
   },
   {
     "file": "es-financiamiento.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-finanzas.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
