@@ -36,14 +36,22 @@ import { BRAND } from './theme';
 // ⚠️ 01/10/2026 — DOBRADAS depois do 1º render: o boneco saiu minúsculo (≈15% da
 // altura do palco). Conferido com `remotion still` e visto de verdade — não é
 // gosto, é medida: um boneco pequeno não serve de prévia de nada.
-const HEAD_R = 60;
-const NECK = 28;
+//
+// ⚠️ 01/10/2026 — 2ª rodada: o dono comparou com o boneco da CAPA (gerado por IA
+// de imagem) e achou o do vídeo pobre perto dele — com razão: um é ilustrado, o
+// outro é calculado por código, e por padrão o calculado sai mais simples. Esta
+// rodada aproxima o visual (cabeça maior, tipo "desenho animado"; juntas
+// arredondadas; rosto mais expressivo; brilho neon) — sem gerar nada por IA, que
+// era a condição pra isto continuar de graça em todo vídeo futuro.
+const HEAD_R = 92; // era 60 — cabeça grande ("cabeção" de desenho animado, não proporção humana real)
+const NECK = 20;
 const TORSO_LEN = 190;
 const UPPER_ARM = 116;
 const FOREARM = 104;
 const UPPER_LEG = 136;
 const LOWER_LEG = 124;
-const STROKE = 26;
+const STROKE = 30; // era 26
+const JOINT_R = STROKE / 2 + 5; // as bolinhas que arredondam ombro/cotovelo/quadril/joelho
 const CANVAS_CX = 540; // centro horizontal do palco vertical (1080 de largura)
 const CANVAS_GROUND_Y = 1300; // onde o "chão" fica no palco (1920 de altura)
 
@@ -267,14 +275,39 @@ export const Stickman: React.FC<{ pose: Pose; heldObject?: boolean }> = ({ pose,
   const linha = (a: Pt, b: Pt, key: string) => (
     <line key={key} x1={a.x} y1={a.y} x2={b.x} y2={b.y} stroke="#ffffff" strokeWidth={STROKE} strokeLinecap="round" />
   );
+  /** Uma bolinha branca na junta — some a emenda entre dois segmentos e dá o
+   *  acabamento "liso" que o traço fino não tinha (comparado com a capa). */
+  const junta = (p: Pt, key: string) => <circle key={key} cx={p.x} cy={p.y} r={JOINT_R} fill="#ffffff" />;
 
   return (
     <svg viewBox="0 0 1080 1920" width="100%" height="100%" style={{ position: 'absolute', inset: 0 }}>
+      {/* ⚠️ 01/10/2026 — BRILHO NEON, pedido do dono ao comparar com a capa. Um filtro
+          de desfoque por trás do mesmo desenho branco, na cor da marca — sem gerar
+          nada por IA, é só CSS/SVG, continua de graça. */}
+      <defs>
+        <filter id="stickman-glow" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="14" result="blur" />
+          <feColorMatrix
+            in="blur"
+            type="matrix"
+            values="0 0 0 0 0.133   0 0 0 0 0.827   0 0 0 0 0.933  0 0 0 0.75 0"
+            result="glowCyan"
+          />
+          <feMerge>
+            <feMergeNode in="glowCyan" />
+            <feMergeNode in="SourceGraphic" />
+          </feMerge>
+        </filter>
+      </defs>
+      <g filter="url(#stickman-glow)">
       {/* pernas atrás do tronco */}
       {linha(hip, kneeLR, 'perna-esq-cima')}
       {linha(kneeLR, footLR, 'perna-esq-baixo')}
       {linha(hip, kneeRR, 'perna-dir-cima')}
       {linha(kneeRR, footRR, 'perna-dir-baixo')}
+      {junta(hip, 'junta-quadril')}
+      {junta(kneeLR, 'junta-joelho-esq')}
+      {junta(kneeRR, 'junta-joelho-dir')}
       {/* tronco */}
       {linha(hip, shoulderR_, 'tronco')}
       {/* braços */}
@@ -282,6 +315,9 @@ export const Stickman: React.FC<{ pose: Pose; heldObject?: boolean }> = ({ pose,
       {linha(elbowLR, handLR, 'braco-esq-baixo')}
       {linha(shoulderR_, elbowRR, 'braco-dir-cima')}
       {linha(elbowRR, handRR, 'braco-dir-baixo')}
+      {junta(shoulderR_, 'junta-ombro')}
+      {junta(elbowLR, 'junta-cotovelo-esq')}
+      {junta(elbowRR, 'junta-cotovelo-dir')}
       {/* o peso carregado — um saco de tamanho fixo, centrado no meio das duas mãos.
           ⚠️ 01/10/2026: tinha o tamanho calculado pela DISTÂNCIA entre as mãos — e
           de perfil os dois braços quase se sobrepõem (mesmo gesto, visto de lado),
@@ -290,10 +326,13 @@ export const Stickman: React.FC<{ pose: Pose; heldObject?: boolean }> = ({ pose,
       {heldObject && (() => {
         const meio = { x: (handLR.x + handRR.x) / 2, y: (handLR.y + handRR.y) / 2 };
         const w = 150; const h = 130;
+        // ⚠️ 01/10/2026: estava a subir 30% da altura a partir da mão e foi parar
+        // atrás da cabeça (cabeça ficou maior nesta rodada). O saco pendura DAS
+        // mãos pra baixo — por isso o topo dele fica quase no nível da mão, não acima.
         return (
           <rect
             x={meio.x - w / 2}
-            y={meio.y - h * 0.3}
+            y={meio.y - h * 0.12}
             width={w}
             height={h}
             rx={18}
@@ -303,37 +342,50 @@ export const Stickman: React.FC<{ pose: Pose; heldObject?: boolean }> = ({ pose,
           />
         );
       })()}
-      {/* cabeça + rosto */}
+      {/* cabeça — dentro do brilho, igual ao resto do corpo */}
       <circle cx={headCenterR.x} cy={headCenterR.y} r={HEAD_R} fill="none" stroke="#ffffff" strokeWidth={STROKE} />
+      </g>
+      {/* rosto — FORA do brilho de propósito: é a parte que precisa ficar nítida
+          pra ler a expressão; desfocada, a emoção se perde. */}
       <Rosto center={headCenterR} face={pose.face} bodyRotation={pose.bodyRotation} />
     </svg>
   );
 };
 
-/** O rosto — sobrancelhas, olhos e boca, simples, dentro da cabeça. */
+/**
+ * O rosto — sobrancelhas, olhos e boca, dentro da cabeça.
+ * ⚠️ 01/10/2026 — Tudo escalado por `HEAD_R` (não mais em pixels fixos), porque a
+ * cabeça dobrou de tamanho nesta rodada (visual mais "desenho animado", pedido do
+ * dono ao comparar com a capa). Sobrancelhas e boca também ficaram mais grossas e
+ * com mais amplitude — rosto fino demais não lê emoção numa tela de celular.
+ */
 const Rosto: React.FC<{ center: Pt; face: Pose['face']; bodyRotation: number }> = ({ center, face, bodyRotation }) => {
-  const eyeOffsetX = 11;
-  const eyeY = center.y - 4;
-  const eyeR = 5 * face.eyeOpen;
-  const browY = eyeY - 13;
-  const browTilt = face.browAngle / 3; // graus visuais, suavizado
-  const mouthY = center.y + 13;
-  const mouthW = 16;
-  const mouthCurveY = face.mouthCurve * 10;
+  const s = HEAD_R / 60; // fator de escala (a conta velha foi feita pra cabeça de 60)
+  const eyeOffsetX = 24 * s;
+  const eyeY = center.y - 6 * s;
+  const eyeR = Math.max(3 * s, 9 * s * face.eyeOpen);
+  const browY = eyeY - 26 * s;
+  const browHalf = 15 * s;
+  const browTilt = face.browAngle * 0.7 * s; // mais inclinação que antes — expressão mais forte
+  const browStroke = 9 * s;
+  const mouthY = center.y + 28 * s;
+  const mouthW = 30 * s;
+  const mouthCurveY = face.mouthCurve * 20 * s;
+  const mouthStroke = 8 * s;
 
   return (
     <g transform={`rotate(${bodyRotation}, ${center.x}, ${center.y})`}>
       {/* sobrancelhas */}
-      <line x1={center.x - eyeOffsetX - 7} y1={browY + browTilt} x2={center.x - eyeOffsetX + 7} y2={browY - browTilt} stroke="#ffffff" strokeWidth={4} strokeLinecap="round" />
-      <line x1={center.x + eyeOffsetX - 7} y1={browY - browTilt} x2={center.x + eyeOffsetX + 7} y2={browY + browTilt} stroke="#ffffff" strokeWidth={4} strokeLinecap="round" />
+      <line x1={center.x - eyeOffsetX - browHalf} y1={browY + browTilt} x2={center.x - eyeOffsetX + browHalf} y2={browY - browTilt} stroke="#ffffff" strokeWidth={browStroke} strokeLinecap="round" />
+      <line x1={center.x + eyeOffsetX - browHalf} y1={browY - browTilt} x2={center.x + eyeOffsetX + browHalf} y2={browY + browTilt} stroke="#ffffff" strokeWidth={browStroke} strokeLinecap="round" />
       {/* olhos */}
-      <circle cx={center.x - eyeOffsetX} cy={eyeY} r={Math.max(1.5, eyeR)} fill="#ffffff" />
-      <circle cx={center.x + eyeOffsetX} cy={eyeY} r={Math.max(1.5, eyeR)} fill="#ffffff" />
+      <circle cx={center.x - eyeOffsetX} cy={eyeY} r={eyeR} fill="#ffffff" />
+      <circle cx={center.x + eyeOffsetX} cy={eyeY} r={eyeR} fill="#ffffff" />
       {/* boca — uma curva simples (sorriso ou tristeza) */}
       <path
         d={`M ${center.x - mouthW} ${mouthY} Q ${center.x} ${mouthY + mouthCurveY} ${center.x + mouthW} ${mouthY}`}
         stroke="#ffffff"
-        strokeWidth={4}
+        strokeWidth={mouthStroke}
         fill="none"
         strokeLinecap="round"
       />
