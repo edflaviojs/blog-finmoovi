@@ -1,6 +1,7 @@
 import { AbsoluteFill, Composition, staticFile } from 'remotion';
 import { Background, TelaBordao, TelaBordaoAtor, BORDAO_FRAMES, BORDAO_OVERLAP_FRAMES } from './scenes';
 import { Test } from './Test';
+import { StickmanPiloto, STICKMAN_PILOTO_FRAMES, STICKMAN_PILOTO_FPS } from './Stickman';
 
 // ♦ Pré-visualização isolada da TELA DO BORDÃO (03/08/2026) — para o dono aprovar
 // a assinatura sem renderizar um vídeo inteiro.
@@ -757,6 +758,20 @@ export const RemotionRoot: React.FC = () => {
         component={Test}
         durationInFrames={90}
         fps={FPS}
+        width={1080}
+        height={1920}
+      />
+      {/* ♦ O BONECO-PALITO — piloto dos 3 primeiros movimentos (01/10/2026, ordem do
+          dono). Composição isolada, do mesmo jeito que "Test" e "Galeria": pra ver
+          sem gastar um render do vídeo inteiro, e dar feedback com o frame exato
+          antes de este personagem entrar em qualquer vídeo de verdade. Ver o
+          cabeçalho de Stickman.tsx — a geometria e os ângulos são uma 1ª tentativa,
+          nunca vista a render, à espera do "directing" do dono. */}
+      <Composition
+        id="StickmanPiloto"
+        component={StickmanPiloto}
+        durationInFrames={STICKMAN_PILOTO_FRAMES}
+        fps={STICKMAN_PILOTO_FPS}
         width={1080}
         height={1920}
       />
