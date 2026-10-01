@@ -14,4 +14,27 @@ assets/
 VIDEOS-BROLL/
 *.mp4
 *.mov
+# ═══ 🔴 A EXCEÇÃO: A BIBLIOTECA DO BONECO (01/10/2026) ═══
+# Os 32 clipes de movimento do boneco-palito, gerados uma vez na Manus. São ~37 MB e
+# entram no git DE PROPÓSITO, contra a regra de cima — ordem do dono, depois de lhe
+# mostrar o custo.
+#
+# ⚠️ POR QUE A REGRA NÃO SERVE AQUI: `*.mp4` existe para manter FORA os ARTEFACTOS —
+# o b-roll que se regenera, o render de cada semana, o áudio do TTS. Isto é o
+# contrário: é MATÉRIA-PRIMA permanente, feita uma vez, que não se regenera sem
+# pagar a IA outra vez. É o mesmo estatuto das fotografias da Manus (`manus/*.jpg`),
+# que já são versionadas pela mesma razão.
+#
+# 🔴 E SEM ISTO O ROBÔ RENDERIZA CENAS VAZIAS, EM SILÊNCIO. O workflow clona o repo e
+# renderiza lá dentro; um ficheiro que só existe na máquina do dono não chega lá, e
+# o `OffthreadVideo` não falha — desenha nada. O vídeo sai, o build fica verde, e só
+# se vê a olhar o fotograma. É o modo de falha nº1 desta casa.
+#
+# ⚠️ A exceção é SÓ os `.mp4` desta pasta. Os `imag*.png` que vieram junto são
+# material extra que o dono mandou desconsiderar, e as capturas de `_frames/` são da
+# conferência de 01/10 — nenhum dos dois entra.
+!public/manus/_teste-boneco/*.mp4
+# ⚠️ As capturas da conferência de 01/10 ficam de fora à mão: são `.jpg`, e `.jpg` não
+#    está na regra de cima — sem esta linha entravam 32 ficheiros sem ninguém pedir.
+public/manus/_teste-boneco/_frames/
 roteiro/
