@@ -1,11 +1,11 @@
 {
-  "medidoEm": "2026-09-28T16:16:55.716Z",
+  "medidoEm": "2026-10-01T04:13:42.252Z",
   "resumo": {
-    "videosMedidos": 161,
-    "comAudiencia": 149,
+    "videosMedidos": 169,
+    "comAudiencia": 154,
     "comCurva": 8,
-    "viewsTotais": 3467,
-    "percentagemMediaDoCanal": 2.7224469798657718,
+    "viewsTotais": 3529,
+    "percentagemMediaDoCanal": 2.6474129870129866,
     "metadeSaiAosSegundos": 10.375,
     "ficamAte3s": 1.1016374999999998,
     "ficamAte50pc": 0.40308749999999993,
@@ -211,7 +211,7 @@
         "slug": "loop-saque-no-cartao-voces-viram",
         "videoId": "Wbx9UY1K7wg",
         "percentagemMedia": 0.499,
-        "views": 56
+        "views": 57
       },
       {
         "slug": "juros-compostos",
@@ -298,63 +298,63 @@
         "views": 439
       }
     ],
-    "julgados": 72
+    "julgados": 74
   },
   "ganchos": [
     {
       "familia": "ninguém fala",
       "n": 11,
-      "comAudiencia": 10,
-      "medianaRetencao": 0.66565,
-      "medianaViews": 9,
-      "media": 0.7199300000000001
+      "comAudiencia": 11,
+      "medianaRetencao": 0.6313,
+      "medianaViews": 10,
+      "media": 0.6544818181818183
     },
     {
       "familia": "começa assim",
-      "n": 10,
-      "comAudiencia": 9,
-      "medianaRetencao": 0.5747,
-      "medianaViews": 11.5,
-      "media": 8.603299999999999
+      "n": 12,
+      "comAudiencia": 10,
+      "medianaRetencao": 0.5763,
+      "medianaViews": 10,
+      "media": 7.80547
     },
     {
       "familia": "tá perdendo",
-      "n": 10,
-      "comAudiencia": 10,
-      "medianaRetencao": 0.49560000000000004,
-      "medianaViews": 13.5,
-      "media": 0.5311899999999999
-    },
-    {
-      "familia": "e se parar",
       "n": 11,
       "comAudiencia": 10,
-      "medianaRetencao": 0.41675,
-      "medianaViews": 9,
-      "media": 0.47058
-    },
-    {
-      "familia": "vocês viram",
-      "n": 9,
-      "comAudiencia": 9,
-      "medianaRetencao": 0.3933,
-      "medianaViews": 18,
-      "media": 23.392455555555554
+      "medianaRetencao": 0.49560000000000004,
+      "medianaViews": 13,
+      "media": 0.5311899999999999
     },
     {
       "familia": "é sério que",
       "n": 10,
+      "comAudiencia": 10,
+      "medianaRetencao": 0.41625,
+      "medianaViews": 10.5,
+      "media": 0.61394
+    },
+    {
+      "familia": "vocês viram",
+      "n": 10,
       "comAudiencia": 9,
-      "medianaRetencao": 0.3763,
-      "medianaViews": 3.5,
-      "media": 0.5662777777777778
+      "medianaRetencao": 0.3933,
+      "medianaViews": 13,
+      "media": 23.392455555555554
+    },
+    {
+      "familia": "e se parar",
+      "n": 11,
+      "comAudiencia": 11,
+      "medianaRetencao": 0.3874,
+      "medianaViews": 9,
+      "media": 0.4278
     },
     {
       "familia": "nunca faça",
-      "n": 9,
+      "n": 10,
       "comAudiencia": 8,
       "medianaRetencao": 0.37195,
-      "medianaViews": 5,
+      "medianaViews": 4.5,
       "media": 0.45640000000000003
     },
     {
@@ -2464,7 +2464,7 @@
       "duracaoSeg": 17,
       "comentarios": 1,
       "gostos": 0,
-      "views": 56,
+      "views": 57,
       "minutosTotais": 1,
       "duracaoMediaSeg": 8,
       "percentagemMedia": 0.499,
@@ -2674,10 +2674,10 @@
       "duracaoSeg": 42,
       "comentarios": 1,
       "gostos": 0,
-      "views": 2,
+      "views": 3,
       "minutosTotais": 0,
-      "duracaoMediaSeg": 0,
-      "percentagemMedia": 0,
+      "duracaoMediaSeg": 16,
+      "percentagemMedia": 0.38909999999999995,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
     },
@@ -2734,6 +2734,10 @@
       "duracaoSeg": 16,
       "comentarios": 1,
       "gostos": 0,
+      "views": 2,
+      "minutosTotais": 0,
+      "duracaoMediaSeg": 0,
+      "percentagemMedia": 0,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
     },
@@ -2745,6 +2749,10 @@
       "duracaoSeg": 15,
       "comentarios": 1,
       "gostos": 0,
+      "views": 4,
+      "minutosTotais": 0,
+      "duracaoMediaSeg": 0,
+      "percentagemMedia": 0,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
     },
@@ -2771,7 +2779,7 @@
       "duracaoSeg": 13,
       "comentarios": 1,
       "gostos": 0,
-      "views": 2,
+      "views": 10,
       "minutosTotais": 0,
       "duracaoMediaSeg": 14,
       "percentagemMedia": 1.1462,
@@ -2786,6 +2794,10 @@
       "duracaoSeg": 16,
       "comentarios": 1,
       "gostos": 0,
+      "views": 7,
+      "minutosTotais": 0,
+      "duracaoMediaSeg": 10,
+      "percentagemMedia": 0.625,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
     },
@@ -2808,6 +2820,10 @@
       "duracaoSeg": 50,
       "comentarios": 1,
       "gostos": 0,
+      "views": 1,
+      "minutosTotais": 0,
+      "duracaoMediaSeg": 0,
+      "percentagemMedia": 0,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
     },
@@ -2817,6 +2833,98 @@
       "publicadoEm": "2026-09-27",
       "privacidade": "public",
       "duracaoSeg": 14,
+      "comentarios": 1,
+      "gostos": 0,
+      "views": 38,
+      "minutosTotais": 2,
+      "duracaoMediaSeg": 14,
+      "percentagemMedia": 1.0429000000000002,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "loop-primeiro-guardado-voces-viram",
+      "videoId": "h_JymS9qRlA",
+      "publicadoEm": "2026-09-28",
+      "privacidade": "public",
+      "duracaoSeg": 17,
+      "comentarios": 1,
+      "gostos": 0,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "valor-presente",
+      "videoId": "oay7rBGNbyQ",
+      "publicadoEm": "2026-09-28",
+      "privacidade": "public",
+      "duracaoSeg": 45,
+      "comentarios": 1,
+      "gostos": 0,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "loop-reserva-emergencia-nunca-faca",
+      "videoId": "HKMKNY9qiJg",
+      "publicadoEm": "2026-09-29",
+      "privacidade": "public",
+      "duracaoSeg": 15,
+      "comentarios": 1,
+      "gostos": 0,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "opcao-financeira",
+      "videoId": "8miOg8K0Tw8",
+      "publicadoEm": "2026-09-29",
+      "privacidade": "public",
+      "duracaoSeg": 54,
+      "comentarios": 1,
+      "gostos": 0,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "loop-ipva-e-iptu-ta-perdendo",
+      "videoId": "_DH3-cY7f-w",
+      "publicadoEm": "2026-09-29",
+      "privacidade": "public",
+      "duracaoSeg": 20,
+      "comentarios": 1,
+      "gostos": 0,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "loop-decimo-terceiro-comeca-assim",
+      "videoId": "t149yUuDbxw",
+      "publicadoEm": "2026-09-30",
+      "privacidade": "public",
+      "duracaoSeg": 17,
+      "comentarios": 1,
+      "gostos": 0,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "kw-quando-voce-gasta-r-2-000-e-investe-r-500-o-que-acontece",
+      "videoId": "hJQe7SwAbs8",
+      "publicadoEm": "2026-09-30",
+      "privacidade": "public",
+      "duracaoSeg": 54,
+      "comentarios": 1,
+      "gostos": 0,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "loop-remedio-todo-mes-comeca-assim",
+      "videoId": "K2wiFfPFXZ8",
+      "publicadoEm": "2026-09-30",
+      "privacidade": "public",
+      "duracaoSeg": 19,
       "comentarios": 1,
       "gostos": 0,
       "curva": null,
