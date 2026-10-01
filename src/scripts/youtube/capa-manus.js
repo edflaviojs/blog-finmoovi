@@ -245,15 +245,23 @@ STRICT RULES — this MUST look like a real, unstaged photograph of one real hum
  *
  * Substitui o teste de rosto realista (`promptDaCapaComRosto`, acima) como o padrão
  * usado a partir de agora. Boneco-palito (stickman) de traço branco grosso, olhando
- * para uma ilustração monstruosa que DEVORA o assunto do vídeo, com o texto (vilão +
- * ação, 2 linhas) dentro da própria ilustração.
+ * para uma ilustração de alto impacto emocional que representa o assunto do vídeo,
+ * com o texto (vilão + ação, 2 linhas) integrado na própria cena.
+ *
+ * ⚠️ **"BOCA" FOI BANIDA DO PADRÃO — correção do dono, no mesmo dia.** A 1ª versão
+ * pedia "o que está sendo DEVORADO por uma ilustração ameaçadora (boca monstruosa…)",
+ * e medido em 3 temas de teste, 2 de 3 vieram boca. O "Juros Te Come" original só
+ * funcionou porque "come" é trocadilho literal com o título — fora esse caso, boca é
+ * repetição, não variedade. Agora o pedido lista um leque de cenas bem diferentes
+ * entre si (explosão, vazamento, destruição, dinheiro rasgado, carteira vazia, boletos
+ * empilhados, comparação visual) e PROÍBE boca/mordida fora do trocadilho literal.
  *
  * ⚠️ **O TEMPLATE É FIXO — SÓ 4 CAMPOS VARIAM**, e são eles que contam a história de
- * cada vídeo: a emoção, a descrição facial do boneco, a metáfora visual (o que está
- * sendo devorado) e o texto de 2 linhas. É a mesma disciplina do `CENA_DA_CAPA` (a
- * metáfora já escolhida pelo código, nunca inventada à toa) — só que aqui os 4 campos
- * nascem do ASSUNTO deste vídeo específico (ex.: "cartão de crédito"), não de um
- * catálogo fixo de 32 metáforas financeiras abstratas.
+ * cada vídeo: a emoção, a descrição facial do boneco, a ilustração (que muda de TIPO a
+ * cada vídeo, não só de detalhe) e o texto de 2 linhas. É a mesma disciplina do
+ * `CENA_DA_CAPA` (a metáfora já escolhida pelo código, nunca inventada à toa) — só que
+ * aqui os 4 campos nascem do ASSUNTO deste vídeo específico (ex.: "cartão de
+ * crédito"), não de um catálogo fixo de 32 metáforas financeiras abstratas.
  */
 export function promptDaCapaStickman({ emocao, descricaoFacial, metaforaVisual, linha1, linha2 }) {
   return `YouTube thumbnail, 16:9, 1280x720, motion graphics stickman style, ultra high contrast, designed to stop scroll on phone.
@@ -262,10 +270,10 @@ LEFT HALF 55%: motion graphics STICK FIGURE MAN — minimalist stickman, thick b
 
 Thin sharp vertical pure white light line dividing halves.
 
-RIGHT HALF 45%: solid background near-black blue ${PALETA.fundo}. Dominating the right half, a huge illustration of ${metaforaVisual}. Illustration style is bold white line art with magenta ${PALETA.magenta} and cyan ${PALETA.ciano} blood/drip accents, interior dark void. Inside the cavity of the illustration, centered, text reads exactly in massive bold heavy condensed sans-serif ALL CAPS pure white:
+RIGHT HALF 45%: solid background near-black blue ${PALETA.fundo}. Dominating the right half, a huge dramatic illustration showing: ${metaforaVisual}. Illustration style is bold white line art with glowing cyan ${PALETA.ciano} and magenta ${PALETA.magenta} accent highlights, high emotional impact, dynamic motion lines. In massive bold heavy condensed sans-serif ALL CAPS pure white, the text reads exactly:
 ${linha1}
 ${linha2}
-Text is INSIDE the illustration, integrated as part of it, being swallowed/devoured/crushed by it. Text must be fully readable.
+The text is woven naturally INTO the scene — printed on a torn bill, carved into a wall, floating among flying debris, stamped on a document, written across the empty wallet, or wherever fits THIS illustration — never just pasted on top of it. Text must be fully readable.
 
 BRAND MARK bottom-right corner only: "FinMoovi" in modern bold sans-serif, "Fin" in white and "Moovi" filled with gradient from cyan ${PALETA.ciano} to magenta ${PALETA.magenta}, small and unobtrusive.
 
@@ -288,21 +296,38 @@ Preencha 4 campos. Os 3 primeiros em INGLÊS (é a língua que a IA de imagem en
 
 1. "emocao": a emoção principal que a capa tem que causar, 1 a 3 palavras em inglês. Exemplos: dívida → "despair"; golpe → "shock"; investimento que deu ruim → "anger".
 2. "descricaoFacial": como essa emoção aparece num rosto de boneco-palito (sobrancelhas, boca, olhos), uma frase curta em inglês. Exemplos: despair → "eyebrows pulled up together, mouth open in a silent gasp, eyes watery"; shock → "eyebrows raised high, mouth wide open round, eyes bulging".
-3. "metaforaVisual": o que está sendo DEVORADO ou ESMAGADO por uma ilustração ameaçadora (boca monstruosa, carimbo, etc.), representando o ASSUNTO deste vídeo — não um conceito abstrato. Frase curta em inglês. Exemplos: tema "juros" → "a monstrous open mouth with sharp fangs swallowing a percentage symbol"; tema "cartão de crédito" → "a monstrous mouth swallowing a credit card with bite marks"; tema "nome sujo" → "a giant stamp crushing a dirty name document inside a monstrous mouth".
-4. "linha1" e "linha2": o texto que aparece DENTRO da ilustração, em PORTUGUÊS, TUDO MAIÚSCULO, sempre 2 linhas. Linha 1 é o "vilão" (1 a 2 palavras). Linha 2 é a "ação/consequência" (2 a 3 palavras). Exemplos: "CARTÃO" / "TE AFUNDA"; "NOME SUJO" / "TE PRENDE"; "GOLPE" / "DO PIX".
+3. "metaforaVisual": uma ilustração de ALTO IMPACTO EMOCIONAL que representa o ASSUNTO deste vídeo de um jeito concreto — nunca um conceito abstrato. Frase curta em inglês.
+   🔴 PROIBIDO usar boca, dentes, presas, mordida ou "engolir/devorar" — EXCETO se o próprio TÍTULO tiver um trocadilho literal com "comer" (como em "Juros Te Come"). Fora esse caso específico, boca está banida: já virou repetição, não variedade.
+   VARIE sempre o TIPO de cena — nunca repita a mesma ideia do vídeo anterior. Use, por exemplo: uma explosão/bomba de dinheiro, um vazamento (torneira ou balde furado pingando moedas), destruição (uma parede ou cofre desabando), uma nota de dinheiro rasgada ao meio ou em chamas, uma carteira vazia e aberta, uma pilha de boletos/faturas vencidas se acumulando, um buraco negro sugando notas, uma mão apertando algo até quebrar, ou uma COMPARAÇÃO visual (de um lado uma montanha de dinheiro, do outro uma única moedinha solitária).
+   Exemplos: tema "juros do cartão" (sem trocadilho) → "a stack of banknotes exploding like a bomb, bills flying apart in a shockwave"; tema "cartão de crédito" → "a credit card being torn violently in half, sparks flying from the crack"; tema "nome sujo" → "a giant red stamp slamming down and crushing a document flat, ink splattering outward"; tema "gasto invisível" → "a bucket full of coins with a hole in the bottom, coins pouring out onto the floor in a growing puddle"; tema "diferença de salário" → "a dramatic scale: one side piled impossibly high with banknotes, the other side holding a single lonely coin"; tema "juros te come" (tem o trocadilho) → "a monstrous open mouth with sharp fangs swallowing a percentage symbol" (aqui pode, porque o título pede).
+4. "linha1" e "linha2": o texto que aparece integrado na cena, em PORTUGUÊS, TUDO MAIÚSCULO, sempre 2 linhas. Linha 1 é o "vilão" (1 a 2 palavras). Linha 2 é a "ação/consequência" (2 a 3 palavras). Exemplos: "CARTÃO" / "TE AFUNDA"; "NOME SUJO" / "TE PRENDE"; "GOLPE" / "DO PIX".
 
 Responda SÓ com JSON, sem comentário nenhum nem bloco de código:
 {"emocao": "...", "descricaoFacial": "...", "metaforaVisual": "...", "linha1": "...", "linha2": "..."}`;
 }
 
+/**
+ * Boca só é permitida quando o TÍTULO do vídeo tem o trocadilho literal com "comer" —
+ * é a exceção que o dono abriu ("Juros Te Come"). Fora disso, é regra, não gosto: o
+ * prompt já pede para variar, mas [[prompt-versus-validador]] é a lição desta casa —
+ * o que só é pedido e nunca punido, um dia deixa de acontecer.
+ */
+const PALAVRAS_DE_BOCA = /\bmouths?\b|\bfangs?\b|\bteeth\b|\bbit(e|ten|ing)\b|\bswallow\w*\b|\bdevour\w*\b|\bjaws?\b/i;
+const TROCADILHO_DE_COMER = /\bcome\b|\bcomer\b|\bcomendo\b|\bcomeu\b/i;
+
 /** As checagens duras dos 4 campos — o texto da capa é a única parte que o dono vai LER
- *  sem precisar olhar a imagem, então é a única que vale a pena travar por regra. */
-export function validarCamposStickman(c) {
+ *  sem precisar olhar a imagem, então é a única que vale a pena travar por regra.
+ *  `contexto` é o título/tema do vídeo — só ele diz se a boca está liberada ou não. */
+export function validarCamposStickman(c, { contexto = '' } = {}) {
   const erros = [];
   if (!c || typeof c !== 'object') return ['a resposta não é um objeto'];
   if (!String(c.emocao || '').trim()) erros.push('sem "emocao"');
   if (!String(c.descricaoFacial || '').trim()) erros.push('sem "descricaoFacial"');
   if (!String(c.metaforaVisual || '').trim()) erros.push('sem "metaforaVisual"');
+  const metafora = String(c.metaforaVisual || '');
+  if (metafora && PALAVRAS_DE_BOCA.test(metafora) && !TROCADILHO_DE_COMER.test(contexto)) {
+    erros.push(`"metaforaVisual" usa boca/presas/mordida/engolir ("${metafora}"), mas o título não tem o trocadilho com "come" — fora desse caso a boca está banida (ordem do dono); escolha outro tipo de cena (explosão, vazamento, destruição, dinheiro rasgado, carteira vazia, boletos empilhados, comparação visual)`);
+  }
   const l1 = String(c.linha1 || '').trim();
   const l2 = String(c.linha2 || '').trim();
   if (!l1) erros.push('sem "linha1"');
@@ -352,7 +377,7 @@ export async function camposDaCapaStickman({ titulo, tema, promessa }, { tentati
       ultimoErro = `JSON inválido (${err.message})`;
       continue;
     }
-    const erros = validarCamposStickman(campos);
+    const erros = validarCamposStickman(campos, { contexto: `${titulo} ${tema || ''}` });
     if (!erros.length) return campos;
     ultimoErro = erros.join('; ');
   }
