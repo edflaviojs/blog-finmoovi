@@ -4,6 +4,7 @@ definition: "What giro is and how it shows up in your everyday money — explain
 title: "giro - Financial Glossary"
 description: "What giro is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/giro.webp"
+imageAlt: "Stacks of gold coins and a glass jar with a green sprout on a dark background."
 category: "basico"
 tags: ["giro", "glossary", "finance"]
 author: "FinMoovi"

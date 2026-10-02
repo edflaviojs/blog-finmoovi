@@ -4,6 +4,7 @@ definition: "O que é giro e como isso aparece no seu dia a dia — explicado de
 title: "giro - Glossário Financeiro"
 description: "O que é giro e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/giro.webp"
+imageAlt: "Moedas douradas empilhadas, barras de ouro e planta verde em pote sobre fundo escuro."
 category: "basico"
 tags: ["giro", "glossário", "finanças"]
 author: "FinMoovi"
