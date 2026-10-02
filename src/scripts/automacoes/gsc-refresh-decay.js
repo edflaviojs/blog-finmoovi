@@ -15,6 +15,7 @@ import {
   pageUrlToFile, readRaw, getScalar, writePatched,
   buildSafeSection, appendSection, sanitizeLine,
   i18nGatePasses, revertFiles, commitFiles, DRY_RUN,
+  filtrarCandidatasReais,
 } from '../lib/gsc-posts.js';
 import { splitFrontmatter } from '../lib/i18n-sync.js';
 import { generateText } from '../apis/kie-ai.js';
@@ -47,16 +48,35 @@ async function main() {
   const [recentM, olderM] = await Promise.all([metricsByPage(recent), metricsByPage(older)]);
   if (!olderM.size) { console.log('   Sem histórico ainda (GSC magro). Nada a fazer (exit 0).'); return; }
 
-  const candidates = [];
+  const brutas = [];
   for (const [url, o] of olderM) {
     if (o.impressions < IMP_MIN) continue;
     const r = recentM.get(url) || { clicks: 0, impressions: 0, position: 100 };
     const clickDecay = o.clicks > 0 && r.clicks < o.clicks * CLICK_DROP_RATIO;
     const posDecay = r.position - o.position >= POS_DROP_MIN;
-    if (clickDecay || posDecay) candidates.push({ url, older: o, recent: r });
+    if (clickDecay || posDecay) brutas.push({ url, older: o, recent: r });
   }
-  candidates.sort((a, b) => b.older.impressions - a.older.impressions);
-  console.log(`   ${candidates.length} página(s) em decaimento. Cap: ${MAX_PER_RUN}.`);
+  brutas.sort((a, b) => b.older.impressions - a.older.impressions);
+  console.log(`   ${brutas.length} página(s) em decaimento pelos números GLOBAIS.`);
+
+  /**
+   * ♦ 02/10/2026 — FILTRO DE REALIDADE (conserto nº2, ordem do dono).
+   *
+   * 🔴 **Aqui o fantasma entra pela porta ao contrário, e é pior.** Este robô
+   * procura páginas que PERDERAM aparições de uma janela para a outra. Um pico de
+   * robôs que acabou é, por definição, uma queda enorme — portanto a página do
+   * fantasma não só entrava, como entrava **no topo da lista**, por ter sido a de
+   * mais impressões do blog.
+   *
+   * Ou seja: um pico de tráfego artificial que passou fazia este robô escrever uma
+   * secção nova, feita por IA, num artigo que nunca teve problema nenhum.
+   *
+   * ⚠️ Aqui o filtro serve só de CORTE. A posição não é sobreposta de propósito:
+   * o que este robô compara são duas janelas de tempo (`older` contra `recent`),
+   * não uma posição única — trocar o número por baixo mudaria o que ele mede.
+   */
+  const candidates = await filtrarCandidatasReais(brutas, recent, { limite: 12, rotulo: 'páginas' });
+  console.log(`   ${candidates.length} página(s) em decaimento REAL. Cap: ${MAX_PER_RUN}.`);
 
   const editedFiles = [], editedNames = [];
   let done = 0, skipped = 0;

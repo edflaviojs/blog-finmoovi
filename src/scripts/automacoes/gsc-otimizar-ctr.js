@@ -17,6 +17,7 @@ import {
   pageUrlToFile, readRaw, getScalar, writePatched, splitPeriods,
   validateTitle, validateDescription, sanitizeLine, numerosFabricados,
   i18nGatePasses, revertFiles, commitFiles, DRY_RUN,
+  filtrarCandidatasReais,
 } from '../lib/gsc-posts.js';
 import { splitFrontmatter } from '../lib/i18n-sync.js';
 import { generateText } from '../apis/kie-ai.js';
@@ -153,7 +154,7 @@ async function main() {
     }
   }
 
-  const candidates = rows
+  const brutas = rows
     .map(r => {
       const page = r.keys[0];
       const porBusca = oportunidadePorPagina.get(page) || null;
@@ -167,8 +168,39 @@ async function main() {
     .filter(c => c.elegivel)
     .sort((a, b) => b.peso - a.peso);
 
-  const porBuscaSo = candidates.filter(c => c.porBusca && !(c.impressions >= IMP_MIN && c.position <= GOOD_POS_MAX)).length;
-  console.log(`   ${candidates.length} página(s) com CTR baixo (${porBuscaSo} só visíveis pela régua nova). Cap: ${MAX_PER_RUN}.`);
+  const porBuscaSo = brutas.filter(c => c.porBusca && !(c.impressions >= IMP_MIN && c.position <= GOOD_POS_MAX)).length;
+  console.log(`   ${brutas.length} página(s) com CTR baixo pelos números GLOBAIS (${porBuscaSo} só visíveis pela régua da busca).`);
+
+  /**
+   * ♦ 02/10/2026 — FILTRO DE REALIDADE (conserto nº2, ordem do dono).
+   *
+   * 🔴 **É este robô que a história condena.** A página que ele foi feito para
+   * consertar — *«como reduzir gastos mensais»*, 1.164 aparições, posição 8, zero
+   * cliques — tinha as aparições vindas de **França, Alemanha, Marrocos e Argélia,
+   * 1.163 em computador contra 1 em telemóvel, num artigo em português**, num pico
+   * de sete dias que acabou **antes** de alguém mexer no título. No Brasil, a
+   * página real estava na **posição 84**.
+   *
+   * Toda a premissa deste robô é *"boa posição + poucos cliques = título fraco"*.
+   * Se a boa posição não é no mercado da página, **não há nada para consertar no
+   * título** — e reescrevê-lo gasta IA, mexe num artigo provado e ainda arranca a
+   * quarentena de 21 dias por nada.
+   *
+   * Por isso, depois de medir a realidade, exige-se boa posição NO MERCADO. É a
+   * mesma régua de antes; o que mudou é que agora ela olha para o número certo.
+   */
+  const reais = await filtrarCandidatasReais(brutas, period, { limite: 12, rotulo: 'páginas' });
+  const candidates = reais
+    .filter(c => {
+      const pos = c.realidade?.posicaoNoMercado;
+      if (pos == null) return true; // filtro desligado: comporta-se como antes
+      if (pos <= GOOD_POS_MAX) return true;
+      console.log(`      ⏭️ ${String(c.keys[0]).replace(GSC_SITE_URL, '/')} — posição ${pos.toFixed(0)} no mercado (a global dizia ${c.posicaoGlobal?.toFixed(0)}): não é problema de título`);
+      return false;
+    })
+    .sort((a, b) => b.peso - a.peso);
+
+  console.log(`   ${candidates.length} página(s) com CTR baixo E boa posição NO MERCADO. Cap: ${MAX_PER_RUN}.`);
 
   const editedFiles = [];   // caminhos relativos p/ commit
   const editedNames = [];   // filenames p/ rollback

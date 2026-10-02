@@ -18,6 +18,7 @@ import {
   pageUrlToFile, readRaw, getScalar, writePatched,
   buildSafeSection, appendSection, sanitizeLine,
   i18nGatePasses, revertFiles, commitFiles, DRY_RUN,
+  filtrarCandidatasReais,
 } from '../lib/gsc-posts.js';
 import { splitFrontmatter } from '../lib/i18n-sync.js';
 import { generateText } from '../apis/kie-ai.js';
@@ -51,10 +52,31 @@ async function main() {
   const rows = await querySearchAnalytics({ ...period, dimensions: ['page'], rowLimit: 5000 });
   if (!rows.length) { console.log('   Sem impressões ainda (GSC magro). Nada a fazer (exit 0).'); return; }
 
-  const candidates = rows
+  const brutas = rows
     .filter(r => r.impressions >= IMP_MIN && r.position >= MIN_POS && r.position <= MAX_POS)
     .sort((a, b) => b.impressions - a.impressions);
-  console.log(`   ${candidates.length} página(s) em striking distance. Cap: ${MAX_PER_RUN}.`);
+  console.log(`   ${brutas.length} página(s) em striking distance pela posição GLOBAL.`);
+
+  /**
+   * ♦ 02/10/2026 — FILTRO DE REALIDADE (conserto nº2, ordem do dono).
+   *
+   * 🔴 Este robô escreve uma secção NOVA, feita por IA, dentro de um artigo que
+   * já existe — é a edição mais intrusiva de toda a FASE 2. E até hoje escolhia a
+   * página por posição e impressões GLOBAIS, que foi exactamente o critério que
+   * fez a casa perseguir um fantasma: 1.161 aparições de França e Alemanha, em
+   * computador, num artigo em português, num pico que já tinha acabado.
+   *
+   * Agora a posição que decide é a do MERCADO da página. Ver `avaliarRealidade`.
+   *
+   * ⚠️ Volta a filtrar pela janela de posição DEPOIS do filtro: a posição mudou
+   * (de global para a do mercado) e uma página que entrava com 8 pode agora valer
+   * 84. Sem este segundo passe, o filtro corrigia o número e ninguém o usava.
+   */
+  const reais = await filtrarCandidatasReais(brutas, period, { limite: 12, rotulo: 'páginas' });
+  const candidates = reais
+    .filter(r => r.position >= MIN_POS && r.position <= MAX_POS)
+    .sort((a, b) => b.impressions - a.impressions);
+  console.log(`   ${candidates.length} página(s) ainda em striking distance NO MERCADO. Cap: ${MAX_PER_RUN}.`);
 
   const editedFiles = [], editedNames = [];
   let done = 0, skipped = 0;
