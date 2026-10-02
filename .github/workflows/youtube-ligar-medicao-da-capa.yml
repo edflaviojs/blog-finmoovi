@@ -1,0 +1,52 @@
+name: YouTube — ligar a medição da capa (à mão, uma vez)
+
+# ♦ 02/10/2026 — O CONSERTO Nº1, pedido pelo dono.
+#
+# 🔴 O número que decide o canal nunca foi medido: quanta gente VÊ a capa e quanta
+# CLICA. Medido nos dados do Studio, os vídeos longos aparecem 7.305 e 3.854 vezes
+# e são clicados 0,41% e 0,36% das vezes — contra 5,5% de média do ramo.
+#
+# ⚠️ A impressão de capa não vem da API que o canal já usa. Vem da REPORTING API,
+# que funciona por "trabalhos": cria-se UM trabalho e o Google passa a despejar um
+# ficheiro por dia. Este workflow cria esse trabalho.
+#
+# ⏳ CORRER UMA VEZ E ESPERAR. O primeiro ficheiro pode levar ATÉ 48 HORAS. Ele traz
+# também os ~30 dias ANTERIORES, por isso quando chegar já vem com história. Depois
+# disto, quem lê e compara com a régua é o robô de segunda ("Medir retenção dos
+# Shorts") — este nunca mais precisa de ser corrido.
+#
+# ✅ NÃO precisa de segredo novo: usa as mesmas três chaves do YouTube que já
+# correm no CI. O relatório de alcance não é de dinheiro, por isso o escopo de
+# leitura de analítica que o refresh token já tem é suficiente.
+#
+# 100% LEITURA do desempenho. O único recurso que cria é o trabalho de recolha —
+# não publica, não altera e não apaga nada no canal.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: youtube-ligar-medicao-da-capa
+  cancel-in-progress: false
+
+jobs:
+  ligar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+
+      # Sem `npm ci`: o script usa só o Node puro (fetch nativo).
+      - name: Criar o trabalho de recolha e mostrar o estado
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: node src/scripts/apis/youtube-reporting.js --criar-trabalho

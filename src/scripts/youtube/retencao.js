@@ -29,6 +29,7 @@
 
 import { readFileSync, writeFileSync, existsSync, mkdirSync, appendFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
+import { relatorioDeCapas } from '../apis/youtube-reporting.js';
 
 const ROOT = process.cwd();
 const TRACKING = join(ROOT, '.github', 'data', 'youtube-published.json');
@@ -490,6 +491,84 @@ async function main() {
   }
   log(avisoLinhas.join('\n').replace(/\*\*/g, ''));
 
+  /**
+   * ── O CLIQUE NA CAPA (02/10/2026) ────────────────────────────────────────────
+   *
+   * 🔴 **O número que decide o canal não era medido por ninguém até hoje.** Este
+   * ficheiro media com todo o cuidado o que acontece DEPOIS do clique — retenção,
+   * curva, ganchos — e **não media o clique**. Medido nos dados do Studio: os
+   * longos aparecem 7.305 e 3.854 vezes e são clicados **0,41%** e **0,36%** das
+   * vezes, contra uma média de ramo de **5,5%**. É aí que o canal está a travar.
+   *
+   * ⚠️ Vem de OUTRA API (a Reporting), por isso está num ficheiro próprio: a
+   * Analytics API que o resto deste robô usa **não tem** impressão de capa, e a
+   * métrica dela com nome parecido é impressão de ANÚNCIO. Ver o cabeçalho de
+   * `src/scripts/apis/youtube-reporting.js`.
+   *
+   * ⚠️ **ESTA SECÇÃO NUNCA PARTE A MEDIÇÃO QUE JÁ FUNCIONAVA.** Se a Reporting API
+   * falhar, se o trabalho ainda não existir, ou se o Google ainda não tiver
+   * despejado ficheiro, dizemos isso e seguimos. A retenção dos Shorts é
+   * independente disto.
+   */
+  let capas = { estado: 'nao-medido' };
+  const capasLinhas = [];
+  try {
+    capas = await relatorioDeCapas({ dias: 28, token });
+  } catch (e) {
+    capas = { estado: 'erro', erro: e.message };
+  }
+
+  log('');
+  log('══════════ O CLIQUE NA CAPA ══════════');
+  if (capas.estado === 'sem-trabalho') {
+    capasLinhas.push('🔴 **Ninguém está a recolher as impressões de capa.** O trabalho da Reporting API ainda não foi criado.');
+    capasLinhas.push('   Correr UMA VEZ: Actions → «YouTube — ligar a medição da capa (à mão)».');
+  } else if (capas.estado === 'sem-ficheiros') {
+    capasLinhas.push(`⏳ **A medição da capa está ligada** (desde ${String(capas.criadoEm).slice(0, 10)}) mas o Google ainda não despejou ficheiro.`);
+    capasLinhas.push('   É normal até 48h depois de ligar. Não há número para mostrar — e inventar um seria pior.');
+  } else if (capas.estado === 'ok') {
+    const pcCtr = (v) => (v == null ? '—' : `${(v * 100).toFixed(2)}%`);
+    capasLinhas.push(`Janela: ${capas.dias} dia(s) · escala do CTR: ${capas.escala.nome}`);
+    capasLinhas.push(`**Canal: ${capas.totais.impressoes} impressões de capa · CTR ${pcCtr(capas.totais.ctr)}**`);
+    capasLinhas.push('');
+    capasLinhas.push('| vídeo | formato | impressões | CTR | régua |');
+    capasLinhas.push('|---|---|---|---|---|');
+
+    /**
+     * ⚠️ **A RÉGUA SÓ SE APLICA A QUEM TEM GENTE SUFICIENTE.** Com 50 impressões
+     * não se distingue 1% de 4% — e um aviso que dispara em tudo é um aviso que
+     * ninguém lê, lição que esta casa já pagou duas vezes.
+     *
+     * 300 impressões é o mínimo; a régua é **4%** (o chão do saudável em qualquer
+     * ramo, fonte: guia de CTR do `claude-youtube`), e a média do nosso ramo
+     * (Finanças/Negócios) é 5,5%. Usamos o 4% para não acusar ninguém à toa.
+     *
+     * ⚠️ E só vale para vídeo LONGO. **Em Short a capa não conta** — o vídeo toca
+     * sozinho no fio, ninguém escolhe pela imagem. Julgar um Short por CTR de capa
+     * seria inventar defeito.
+     */
+    const IMPRESSOES_MINIMAS = 300;
+    const CTR_MINIMO = 0.04;
+    const julgados = [];
+    for (const v of capas.videos.slice(0, 12)) {
+      let veredito = '';
+      if (v.formato === 'short') veredito = '— (capa não conta em Short)';
+      else if (v.impressoes < IMPRESSOES_MINIMAS) veredito = `⏳ cedo (< ${IMPRESSOES_MINIMAS} imp.)`;
+      else if (v.ctr == null) veredito = '—';
+      else if (v.ctr < CTR_MINIMO) { veredito = `🔴 abaixo de ${CTR_MINIMO * 100}%`; julgados.push(v); }
+      else veredito = '✅';
+      capasLinhas.push(`| ${(v.titulo || v.id).slice(0, 50)} | ${v.formato || '?'} | ${v.impressoes} | ${pcCtr(v.ctr)} | ${veredito} |`);
+    }
+    if (julgados.length) {
+      capasLinhas.push('');
+      capasLinhas.push(`🔴 **${julgados.length} vídeo(s) longo(s) com gente a ver a capa e quase ninguém a clicar.** Trocar capa e título é o trabalho de maior efeito no canal agora.`);
+    }
+  } else if (capas.estado === 'erro') {
+    capasLinhas.push(`⚠️ Não deu para medir a capa desta vez: ${capas.erro}`);
+    capasLinhas.push('   A retenção acima não é afectada por isto.');
+  }
+  log(capasLinhas.join('\n').replace(/\*\*/g, ''));
+
   const payload = { medidoEm: new Date().toISOString(), resumo, aviso: {
     minimo: RETENCAO_MINIMA,
     visualizacoesMinimas: VISUALIZACOES_MINIMAS,
@@ -499,6 +578,24 @@ async function main() {
   // ⚠️ É ISTO que `temas-vida.js` lê para decidir o gancho do vídeo seguinte. Antes de
   // 17/09 este bloco não existia e a medição morria no registo da corrida.
   ganchos: ranking,
+  // ⚠️ 02/10/2026 — o clique na capa fica GRAVADO, não só impresso. A lição de
+  // 17/09 foi exactamente esta: durante semanas o ranking dos ganchos era
+  // calculado, escrito no registo da corrida e deitado fora. Guardado aqui, dá
+  // para comparar o CTR de hoje com o de dentro de um mês — que é a única forma
+  // de saber se trocar a capa funcionou.
+  capas: capas.estado === 'ok'
+    ? {
+      estado: 'ok',
+      janela: capas.janela,
+      dias: capas.dias,
+      escala: capas.escala.nome,
+      totais: capas.totais,
+      videos: capas.videos.map((v) => ({
+        id: v.id, titulo: v.titulo || null, formato: v.formato || null,
+        impressoes: v.impressoes, ctr: v.ctr,
+      })),
+    }
+    : capas,
   videos: resultados };
   mkdirSync(dirname(OUT), { recursive: true });
   writeFileSync(OUT, `${JSON.stringify(payload, null, 2)}\n`, 'utf-8');
@@ -509,7 +606,10 @@ async function main() {
       `## 📉 Retenção dos Shorts\n\n${avisoLinhas.join('\n')}\n\n${linhas.join('\n')}\n\n` +
       (resumo.comCurva
         ? `**Início (100% = visto 1×, acima disso = revisto):** ${pc(resumo.ficamAte3s)} · **a meio:** ${pc(resumo.ficamAte50pc)} · **no fim:** ${pc(resumo.ficamAteAoFim)} · **metade sai aos:** ${resumo.metadeSaiAosSegundos == null ? '—' : `${Math.round(resumo.metadeSaiAosSegundos)}s`}\n`
-        : `⚠️ Sem curva: audiência pequena de mais.\n`));
+        : `⚠️ Sem curva: audiência pequena de mais.\n`)
+      // O clique na capa vai no MESMO resumo, logo abaixo: é o número de maior
+      // efeito no canal hoje e não pode ficar escondido no registo da corrida.
+      + `\n## 🖼️ O clique na capa\n\n${capasLinhas.join('\n')}\n`);
   }
 }
 
