@@ -18860,5 +18860,114 @@
         "publicaEmBR": "03/10 às 14h31"
       }
     }
+  },
+  "kw-quando-voce-gasta-r-2-000-e-investe-r-500-o-que-acontece": {
+    "midias": {
+      "video": {
+        "id": "6e0a46ce-c296-4365-a3a7-bfcdefe1149d",
+        "name": "4f7SBfJmCl.mp4",
+        "originalName": null,
+        "path": "https://media.help4desk.com/4f7SBfJmCl.mp4",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capa": {
+        "id": "d9454eaf-91ee-4dc7-aa35-003fab8d2d69",
+        "name": "mmJycBxhjF.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/mmJycBxhjF.jpeg",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capaLarga": {
+        "id": "7391a41b-e27c-43e8-9287-4fd3cecf6553",
+        "name": "rRBI99TULE.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/rRBI99TULE.jpeg",
+        "thumbnail": null,
+        "alt": null
+      }
+    },
+    "publicaEm": "2026-10-02T22:00:00.000Z",
+    "publicaEmBR": "02/10 às 19h00",
+    "agendadoEm": "2026-10-02T19:58:51.536Z",
+    "atualizadoEm": "2026-10-02T19:58:54.788Z",
+    "redes": {
+      "instagram": {
+        "postId": "cmurdyx7k004drx951bl4hsw8",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-02T22:00:00.000Z",
+        "publicaEmBR": "02/10 às 19h00",
+        "midia": "o vídeo",
+        "caracteres": 745,
+        "limite": 2200
+      },
+      "zernio-tiktok": {
+        "postId": "cmurdyxjm004erx95rz4hllvr",
+        "canal": "finmoovi",
+        "publicaEm": "2026-10-02T22:12:00.000Z",
+        "publicaEmBR": "02/10 às 19h12",
+        "midia": "o vídeo",
+        "caracteres": 275,
+        "limite": 2200
+      },
+      "facebook": {
+        "postId": "cmurdyxwr004frx956b72wllo",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-02T22:26:00.000Z",
+        "publicaEmBR": "02/10 às 19h26",
+        "midia": "o vídeo",
+        "caracteres": 515,
+        "limite": 63206
+      },
+      "linkedin-page": {
+        "postId": "cmurdyy7l004grx95ip5csrht",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-02T22:43:00.000Z",
+        "publicaEmBR": "02/10 às 19h43",
+        "midia": "o vídeo",
+        "caracteres": 517,
+        "limite": 3000
+      },
+      "threads": {
+        "postId": "cmurdyyi2004hrx95lvk73msd",
+        "canal": "finmoovi",
+        "publicaEm": "2026-10-02T22:58:00.000Z",
+        "publicaEmBR": "02/10 às 19h58",
+        "midia": "o vídeo",
+        "caracteres": 138,
+        "limite": 500
+      },
+      "pinterest": {
+        "postId": "cmurdyz6m004irx95oltmzf1y",
+        "canal": "finmoovi",
+        "publicaEm": "2026-10-02T23:31:00.000Z",
+        "publicaEmBR": "02/10 às 20h31",
+        "midia": "vídeo primeiro, capa depois — a ordem que o Pinterest exige",
+        "caracteres": 476,
+        "limite": 500
+      },
+      "bluesky": {
+        "postId": "cmurdyzh3004jrx95of1i3wrg",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-02T23:47:00.000Z",
+        "publicaEmBR": "02/10 às 20h47",
+        "midia": "vai a capa DEITADA (o Bluesky não publica vídeo, e a em pé ficaria cortada no feed)",
+        "caracteres": 95,
+        "limite": 300
+      },
+      "instagram-story": {
+        "postId": "cmurdyzq2004krx955bs97yru",
+        "tipo": "vídeo",
+        "publicaEm": "2026-10-02T22:05:00.000Z",
+        "publicaEmBR": "02/10 às 19h05"
+      },
+      "facebook-story": {
+        "postId": "cmurdyzuo004lrx95wuadd8n0",
+        "tipo": "vídeo",
+        "publicaEm": "2026-10-02T22:31:00.000Z",
+        "publicaEmBR": "02/10 às 19h31"
+      }
+    }
   }
 }
