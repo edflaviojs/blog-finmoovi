@@ -1,0 +1,38 @@
+# Raio-X das aparições — SÓ À MÃO, só leitura.
+#
+# Responde a uma pergunta: o blog aparece ~2.800 vezes por mês na busca e recebe
+# ZERO cliques, com a página principal na posição 8 e o título já corrigido.
+# Zero cliques na posição 8 não é normal — isto mede de onde vêm essas aparições
+# (país, aparelho, tipo de resultado) antes de se gastar mais energia em links.
+#
+# Não escreve ficheiro, não faz commit, não empurra nada. O resultado fica no
+# registo da corrida. Sem agendamento de propósito: é uma pergunta, não um robô.
+name: GSC — Raio-X das aparições (à mão)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  raio-x:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Instalar dependências
+        run: npm ci
+
+      - name: Raio-X
+        env:
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+          GSC_SITE_URL: ${{ vars.GSC_SITE_URL || 'https://blog.finmoovi.com/' }}
+        run: node src/scripts/automacoes/gsc-raio-x-aparicoes.js
