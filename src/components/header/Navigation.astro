@@ -24,10 +24,16 @@ const categorias = navCategorias.map(c => ({
 }));
 
 // Ferramentas e Glossário têm índice en/es; Estudos só existe em pt.
+// Por isso Estudos SAI do menu fora do português: a pill aparecia escrita
+// "Estudos" numa página inglesa — não há chave `nav.estudos` para traduzir —
+// e quem clicasse caía num texto português sem aviso. É o mesmo contrato que
+// o rodapé já aplicava às páginas-guia, que também só existem em pt.
 const fixedItems = [
   { label: 'Ferramentas', key: 'nav.ferramentas', href: canonicalPath(`${prefix}/ferramentas`) },
   { label: 'Glossário', key: 'nav.glossario', href: canonicalPath(`${prefix}/glossario`) },
-  { label: 'Estudos', key: 'nav.estudos', href: canonicalPath('/estudos') },
+  ...(locale === 'pt'
+    ? [{ label: 'Estudos', key: 'nav.estudos', href: canonicalPath('/estudos') }]
+    : []),
 ];
 
 const isActive = (href: string) =>

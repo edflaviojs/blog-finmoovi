@@ -51,9 +51,12 @@ const footerLinks = {
     })),
     { label: tr('footer.link.glossario', 'Glossário'), href: canonicalPath(`${prefix}/glossario`), i18n: 'footer.link.glossario' },
     { label: tr('footer.link.ferramentas', 'Ferramentas'), href: canonicalPath(`${prefix}/ferramentas`), i18n: 'footer.link.ferramentas' },
-    // Estudos só existe em pt (mesmo contrato do Navigation): o rótulo traduz,
-    // o destino continua a ser a página portuguesa.
-    { label: tr('footer.link.estudos', 'Estudos'), href: canonicalPath('/estudos'), i18n: 'footer.link.estudos' },
+    // Estudos só existe em pt, por isso só entra em pt — mesmo contrato das
+    // páginas-guia aqui em cima. Traduzir só o rótulo seria pior: prometia
+    // "Studies" em inglês e entregava um texto português.
+    ...(locale === 'pt'
+      ? [{ label: 'Estudos', href: canonicalPath('/estudos'), i18n: 'footer.link.estudos' as string | undefined }]
+      : []),
     { label: tr('nav.sobre', 'Sobre'), href: canonicalPath(`${prefix}/sobre`), i18n: 'nav.sobre' },
     ...guias,
   ],

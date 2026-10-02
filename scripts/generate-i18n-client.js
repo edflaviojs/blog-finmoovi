@@ -2,6 +2,17 @@
  * Generate public/scripts/i18n.js from src/i18n/translations.ts
  * This creates the client-side i18n file with brand-specific values
  * Run: node --import tsx scripts/generate-i18n-client.js
+ *
+ * ⚠️ A LINHA DE CIMA ESTÁ DESACTUALIZADA (02/10/2026): este ficheiro NÃO lê o
+ * `src/i18n/translations.ts`. A tabela aqui em baixo é uma cópia à mão, com 36
+ * chaves que lá não existem — menu, rodapé, avaliação do artigo, categorias.
+ *
+ * 👉 É ESTA que manda em tudo o que leva `data-i18n`, e é daqui que o
+ * `Footer.astro` lê para desenhar o rodapé no idioma da página. Quem mexer numa
+ * frase do menu ou do rodapé mexe AQUI e corre `npm run generate`.
+ *
+ * O `src/i18n/translations.ts` ainda serve seis páginas (/en|/es de ferramentas,
+ * glossario e sobre) através do seu `t()` — não é código morto, não apagar.
  */
 
 import { config } from '../site.config.ts';
@@ -152,7 +163,8 @@ export const translations = {
     'footer.link.privacidade': 'Privacy',
     'footer.link.termos': 'Terms of Use',
     'footer.link.cookies': 'Cookies',
-    'footer.link.estudos': 'Studies',
+    // Sem 'footer.link.estudos': fora do português esse link não existe —
+    // /estudos só tem versão portuguesa.
     'footer.link.preferencias': 'Privacy and cookies',
     'glossario.title': 'Glossary',
     'glossario.desc': 'Terms explained simply. Click the question to see the answer.',
@@ -235,7 +247,7 @@ export const translations = {
     'footer.link.privacidade': 'Privacidad',
     'footer.link.termos': 'Términos de Uso',
     'footer.link.cookies': 'Cookies',
-    'footer.link.estudos': 'Estudios',
+    // Sem 'footer.link.estudos': ver o comentário no bloco inglês.
     'footer.link.preferencias': 'Privacidad y cookies',
     'glossario.title': 'Glosario',
     'glossario.desc': 'Términos explicados de forma simple. Haz clic en la pregunta para ver la respuesta.',

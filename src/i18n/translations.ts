@@ -1,4 +1,17 @@
 // Traduções do Blog — Geradas dinamicamente via site.config.ts
+//
+// ⚠️ ATENÇÃO — ESTE FICHEIRO NÃO MANDA NO SITE TODO (02/10/2026)
+// Há DUAS tabelas de tradução neste repositório e elas não conversam:
+//
+//   • ESTA — lida pelo `t()` aqui em baixo. Serve SEIS páginas, e só essas:
+//     /en|/es de ferramentas, glossario e sobre.
+//   • `scripts/generate-i18n-client.js` — cópia à mão, com 36 chaves que aqui
+//     não existem. É a que produz `public/scripts/i18n.js` e governa o menu,
+//     o rodapé e tudo o que leva `data-i18n`.
+//
+// Mexer numa frase de menu ou de rodapé AQUI não muda nada no site: é preciso
+// mexer na outra e correr `npm run generate`. Juntar as duas é trabalho a
+// sério (36 chaves × 3 idiomas) e ainda não foi feito.
 import { config } from '../../site.config';
 
 export type Lang = 'pt' | 'en' | 'es';
