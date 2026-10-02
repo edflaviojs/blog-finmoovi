@@ -27,7 +27,11 @@ function main() {
 
     // Extract publishedAt and updatedAt
     const publishedMatch = content.match(/publishedAt:\s*(\d{4}-\d{2}-\d{2})/);
-    const updatedMatch = content.match(/updatedAt:\s*(\d{4}-\d{2}-\d{2})/);
+    // As aspas são opcionais de propósito: o gsc-refresh-decay grava
+    // `updatedAt: "2026-09-24"` (YAML válido) e, sem aceitar aspas aqui, este
+    // robô não via o campo, caía no ramo do "else" e INSERIA um segundo
+    // updatedAt — frontmatter com chave repetida derruba o build inteiro.
+    const updatedMatch = content.match(/updatedAt:\s*["']?(\d{4}-\d{2}-\d{2})/);
 
     if (!publishedMatch) continue;
 
@@ -39,7 +43,7 @@ function main() {
     // Add or update the updatedAt field
     let newContent;
     if (updatedMatch) {
-      newContent = content.replace(/updatedAt:\s*\d{4}-\d{2}-\d{2}/, `updatedAt: ${todayStr}`);
+      newContent = content.replace(/updatedAt:\s*["']?\d{4}-\d{2}-\d{2}["']?/, `updatedAt: ${todayStr}`);
     } else {
       // Insert updatedAt after publishedAt
       newContent = content.replace(
@@ -62,7 +66,7 @@ function main() {
           const localeContent = readFileSync(localePath, 'utf-8');
           let newLocaleContent;
           if (localeContent.includes('updatedAt:')) {
-            newLocaleContent = localeContent.replace(/updatedAt:\s*\d{4}-\d{2}-\d{2}/, `updatedAt: ${todayStr}`);
+            newLocaleContent = localeContent.replace(/updatedAt:\s*["']?\d{4}-\d{2}-\d{2}["']?/, `updatedAt: ${todayStr}`);
           } else {
             newLocaleContent = localeContent.replace(
               /(publishedAt:\s*\d{4}-\d{2}-\d{2})/,
