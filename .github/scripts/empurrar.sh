@@ -50,6 +50,25 @@
 RAMO="${GITHUB_REF_NAME:-main}"
 TENTATIVAS=3
 
+# ═══ O TERCEIRO ALÇAPÃO — a ficha torta (02/10/2026) ═══
+# Este script sempre protegeu o trabalho de se PERDER. Não protegia o blog de
+# ser DERRUBADO: um `.md` com a ficha estragada passa por aqui sem queixa, o
+# `astro build` morre do outro lado e o Cloudflare deixa de publicar o site
+# inteiro — não só o ficheiro em causa.
+#
+# Aconteceu duas vezes: 22/08 (linha dobrada, 3 dias parado) e 01/10
+# (`updatedAt` escrito duas vezes, 16 horas parado). Nas duas, quem deu o
+# alarme foi o vigia do ar, de madrugada, com o estrago já feito.
+#
+# A conferência só olha os `.md` desta leva e usa o MESMO leitor do build.
+# Quando não há conteúdo na leva — a maioria das corridas — sai em silêncio.
+if ! node "$(dirname "$0")/conferir-fichas.mjs" "$RAMO"; then
+  echo "❌ empurrão TRAVADO: há ficha de texto que o build não consegue ler."
+  echo "   Preferiu-se perder o trabalho desta corrida a parar o blog todo."
+  echo "   O robô volta a correr e escreve outra vez; o site parado de noite não se recupera."
+  exit 1
+fi
+
 for tentativa in $(seq 1 "$TENTATIVAS"); do
   # `git push` sem nada para empurrar devolve 0 ("Everything up-to-date"), por
   # isso não é preciso perguntar antes se há commits — perguntar era o que a
