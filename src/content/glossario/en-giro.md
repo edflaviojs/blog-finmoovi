@@ -17,92 +17,92 @@ seo:
   keywords: ["giro", "glossary", "finance"]
 ---
 
-## O que acontece quando o dinheiro parece desaparecer
+## What happens when money seems to disappear
 
-Você já chegou ao fim do mês e percebeu que o saldo da conta bancária sumiu como mágica? A conta de luz, o cartão de crédito e aquele café diário já consumiram tudo, e ainda falta dinheiro para a compra de supermercado. Essa sensação de “onde foi o meu dinheiro?” é o que chamamos de **giro**: a velocidade com que o dinheiro entra e sai da sua vida. Quando o giro está descontrolado, você perde a noção dos gastos, não consegue planejar o futuro e acaba recorrendo a empréstimos ou cartões de crédito com juros altos.
+Have you ever reached the end of the month and noticed that your bank balance vanished as if by magic? The electricity bill, the credit card and that daily coffee have already eaten everything, and there is still not enough left for the grocery run. That “where did my money go?” feeling is what we call **giro**: the speed at which money comes into and goes out of your life. When giro runs unchecked, you lose track of your spending, you cannot plan ahead, and you end up falling back on loans or high-interest credit cards.
 
-![O que acontece quando o dinheiro parece desaparecer](/images/glossario/giro-inline-1.webp)
-
-
-
-## Como o giro funciona na prática
-
-O giro não é nada mais que o fluxo de caixa pessoal – a diferença entre tudo que entra (salário, renda extra, devoluções) e tudo que sai (contas, compras, lazer). Se o fluxo de entrada for menor que o de saída, o giro fica negativo e você começa a viver no vermelho. Se for maior, você tem margem para poupar, investir ou realizar metas.
-
-- **Entrada:** salário, freelance, venda de objetos usados, devolução de impostos.
-- **Saída:** contas fixas (água, luz, internet), despesas variáveis (alimentação, transporte), pagamentos de cartão, lazer.
-- **Resultado:** saldo final do período, que indica se o giro foi positivo ou negativo.
-
-Entender esse movimento é o primeiro passo para colocar a vida financeira nos trilhos. Mas, na prática, acompanhar cada centavo pode ser um pesadelo, principalmente quando você recebe em moedas diferentes ou paga em dinheiro.
-
-## FinMoovi: a ferramenta que transforma o giro em aliado
-
-Imagine ter um amigo que, ao tirar uma foto do recibo do supermercado, já sabe em que categoria aquele gasto se encaixa, converte o valor para a sua [moeda](/en/glossario/en-moeda) principal e ainda avisa se você está perto de ultrapassar o limite que definiu para o mês. Esse amigo se chama **FinMoovi**, e ele resolve o problema do giro com três recursos que mudam o jogo:
-
-![FinMoovi: a ferramenta que transforma o giro em aliado](/images/glossario/giro-inline-3.webp)
+![What happens when money seems to disappear](/images/glossario/giro-inline-1.webp)
 
 
 
-1. **Captura inteligente** – tire uma foto ou use a voz para registrar o gasto; o app reconhece o valor, a data e a loja, e já coloca na categoria correta (alimentação, transporte, lazer etc.).
-2. **Multi‑moeda** – se você recebe parte do salário em dólares, outra parte em euros ou ainda ganha em criptomoedas, o FinMoovi converte tudo para a moeda que você escolheu como referência, facilitando a visualização do giro total.
-3. **Relatórios de fluxo de caixa** – gráficos simples mostram a entrada, saída e o saldo ao longo do mês, ajudando a identificar onde o dinheiro “escapa”.
+## How giro works in practice
 
-Com esses recursos, o giro deixa de ser um monstro invisível e passa a ser um painel de controle que você entende em poucos cliques.
+Giro is nothing more than personal cash flow — the difference between everything that comes in (salary, side income, refunds) and everything that goes out (bills, purchases, leisure). If the inflow is smaller than the outflow, giro turns negative and you start living in the red. If it is larger, you have room to save, invest or reach your goals.
 
-## Como usar o FinMoovi para dominar o seu giro
+- **Inflow:** salary, freelance work, selling used items, tax refunds.
+- **Outflow:** fixed bills (water, electricity, internet), variable expenses (food, transport), card payments, leisure.
+- **Result:** the closing balance for the period, which tells you whether giro was positive or negative.
 
-### 1. Capture tudo, sem esforço
+Understanding this movement is the first step to getting your financial life back on track. In practice, though, following every cent can be a nightmare — especially when you earn in different currencies or pay in cash.
 
-- Abra o app e escolha “Nova despesa”.
-- Fotografe o recibo ou dite “paguei 30 dólares no supermercado”.
-- O FinMoovi reconhece o valor, a moeda e sugere a categoria “Alimentação”. Você confirma ou ajusta.
+## FinMoovi: the tool that turns giro into an ally
 
-**Practical tip:** **Sempre registre o gasto no momento em que ele acontece**; assim você evita esquecer pequenos valores que, somados, podem virar um buraco no orçamento.
+Imagine having a friend who, the moment you photograph a supermarket receipt, already knows which category that expense belongs to, converts the amount into your main [currency](/en/glossario/en-moeda) and even warns you when you are close to the limit you set for the month. That friend is called **FinMoovi**, and it tackles giro with three features that change the game:
 
-### 2. Converta e compare em tempo real
+![FinMoovi: the tool that turns giro into an ally](/images/glossario/giro-inline-3.webp)
 
-Ao registrar um gasto em outra moeda, o app usa a cotação do dia e mostra o equivalente na sua moeda base. Isso permite comparar, por exemplo, se o preço de um café na Europa está realmente mais caro que o da sua cidade.
 
-**Practical tip:** **Defina um limite mensal para cada categoria** (ex.: “não gastar mais que o preço de duas semanas de aluguel em lazer”). O FinMoovi avisa quando você está próximo do teto.
 
-### 3. Analise o fluxo com relatórios claros
+1. **Smart capture** – take a photo or use your voice to log the expense; the app recognises the amount, the date and the store, and files it under the right category (food, transport, leisure and so on).
+2. **Multi-currency** – if part of your salary comes in dollars, another part in euros, or you even earn in crypto, FinMoovi converts everything into the currency you chose as your reference, making your total giro easy to read.
+3. **Cash flow reports** – simple charts show money in, money out and your balance across the month, helping you spot where the money “leaks”.
 
-No painel “Fluxo de Caixa”, você vê:
+With these features, giro stops being an invisible monster and becomes a dashboard you can understand in a few taps.
 
-- **Entradas:** total de salários, freelances, devoluções.
-- **Saídas:** soma de todas as despesas, divididas por categoria.
-- **Saldo:** diferença entre entrada e saída, indicando se o giro está positivo ou negativo.
+## How to use FinMoovi to master your giro
 
-Os gráficos de barras e linhas são coloridos e fáceis de interpretar, sem precisar de termos complicados como “EBITDA” ou “margem bruta”.
+### 1. Capture everything, effortlessly
 
-**Practical tip:** **Reserve 10 % do saldo positivo para uma reserva de emergência**; o app pode criar automaticamente uma meta “Fundo de Emergência” e transferir o valor todo mês.
+- Open the app and choose “New expense”.
+- Photograph the receipt or say out loud “I paid 30 dollars at the supermarket”.
+- FinMoovi recognises the amount and the currency, and suggests the “Food” category. You confirm it or adjust it.
 
-### 4. Planeje metas e acompanhe o progresso
+**Practical tip:** **Always log the expense the moment it happens**; that way you avoid forgetting small amounts which, added together, can blow a hole in your budget.
 
-Quer comprar um sofá que custa cerca de três meses de aluguel? Crie a meta “Sofá novo” no FinMoovi, defina o valor e o prazo. O app calcula quanto você precisa guardar a cada mês e mostra o progresso em um medidor visual.
+### 2. Convert and compare in real time
 
-### 5. Use o modo compras para evitar surpresas
+When you log an expense in another currency, the app uses the day's exchange rate and shows the equivalent in your base currency. That lets you compare, for example, whether a coffee in Europe really costs more than one in your own city.
 
-Antes de ir ao supermercado, abra a lista de compras no app. Conforme você adiciona itens, o FinMoovi soma o preço estimado (com base em compras anteriores) e mostra o total em tempo real. Assim, você evita ultrapassar o orçamento que já definiu.
+**Practical tip:** **Set a monthly limit for each category** (e.g. “spend no more on leisure than the price of two weeks' rent”). FinMoovi warns you when you are approaching the ceiling.
 
-### 6. Receba lembretes e alertas de saldo
+### 3. Read the flow through clear reports
 
-Se o saldo da conta ficar abaixo de um valor que você considerou “mínimo de segurança” (por exemplo, o equivalente a duas semanas de despesas), o FinMoovi envia uma notificação. Também avisa quando uma fatura de cartão está prestes a vencer.
+In the “Cash Flow” panel you can see:
 
-### 7. Trabalhe offline e sincronize depois
+- **Inflows:** total salary, freelance work, refunds.
+- **Outflows:** the sum of every expense, broken down by category.
+- **Balance:** the difference between in and out, showing whether giro is positive or negative.
 
-Mesmo sem internet, você pode registrar despesas. Quando se conectar novamente, o app sincroniza tudo com a nuvem, garantindo que seus dados estejam seguros e acessíveis em qualquer dispositivo.
+The bar and line charts are colourful and easy to read, with no need for complicated terms like “EBITDA” or “gross margin”.
 
-## Dicas extras para manter o giro sob controle
+**Practical tip:** **Set aside 10% of any positive balance for an emergency fund**; the app can automatically create an “Emergency Fund” goal and move the money across every month.
 
-- **Faça um “check‑in” semanal:** reserve 15 minutos para revisar o painel de fluxo e ajustar categorias se necessário.
-- **Agrupe despesas recorrentes:** crie categorias como “Assinaturas” ou “Transporte” para visualizar rapidamente o peso dessas contas fixas.
-- **Negocie ou troque serviços:** se a conta de internet está consumindo grande parte do giro, procure um plano mais barato ou combine com vizinhos para dividir o custo.
+### 4. Plan goals and follow your progress
+
+Want to buy a sofa that costs around three months' rent? Create the “New sofa” goal in FinMoovi, set the amount and the deadline. The app works out how much you need to put aside each month and shows your progress on a visual gauge.
+
+### 5. Use shopping mode to avoid surprises
+
+Before heading to the supermarket, open the shopping list in the app. As you add items, FinMoovi adds up the estimated price (based on previous purchases) and shows the running total. That way you avoid going over the budget you already set.
+
+### 6. Get reminders and balance alerts
+
+If your account balance drops below an amount you consider a “safety minimum” (for example, the equivalent of two weeks of expenses), FinMoovi sends you a notification. It also warns you when a card bill is about to fall due.
+
+### 7. Work offline and sync later
+
+Even with no internet, you can still log expenses. Once you are back online, the app syncs everything to the cloud, keeping your data safe and available on any device.
+
+## Extra tips to keep giro under control
+
+- **Do a weekly check-in:** set aside 15 minutes to review the cash flow panel and adjust categories if needed.
+- **Group recurring expenses:** create categories such as “Subscriptions” or “Transport” to see at a glance how much weight those fixed bills carry.
+- **Negotiate or switch services:** if the internet bill is eating a large share of your giro, look for a cheaper plan or team up with neighbours to split the cost.
 
 ## Start today
 
-1. Abra o FinMoovi e toque em “Nova despesa”.
-2. Fotografe o último recibo que você tem em mãos (pode ser o da padaria).
-3. Confirme a categoria sugerida e veja instantaneamente como esse gasto impacta o seu giro mensal.
+1. Open FinMoovi and tap “New expense”.
+2. Photograph the last receipt you have to hand (the bakery one will do).
+3. Confirm the suggested category and see instantly how that expense moves your monthly giro.
 
-Em apenas cinco minutos você já terá um registro real do seu fluxo de caixa e um alerta caso esteja perto do limite que definiu. Agora é só continuar registrando os próximos gastos e deixar o FinMoovi fazer o resto. Boa jornada rumo a um giro saudável!
+In just five minutes you will already have a real record of your cash flow and an alert if you are close to the limit you set. From there, just keep logging the next expenses and let FinMoovi do the rest. Enjoy the journey to a healthy giro!
