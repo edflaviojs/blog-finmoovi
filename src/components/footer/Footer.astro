@@ -5,6 +5,7 @@ import { categoryLabel, type Locale } from '@/utils/home-data';
 import { canonicalPath } from '@/utils/url';
 import CookieNotice from '../shared/CookieNotice.astro';
 import BackToTop from '../shared/BackToTop.astro';
+import { translations } from '../../../scripts/generate-i18n-client.js';
 
 const currentYear = new Date().getFullYear();
 const { brand } = config;
@@ -21,6 +22,14 @@ let locale: Locale = 'pt';
 if (currentPath === '/en' || currentPath.startsWith('/en/')) locale = 'en';
 else if (currentPath === '/es' || currentPath.startsWith('/es/')) locale = 'es';
 const prefix = locale === 'pt' ? '' : `/${locale}`;
+
+// O rodapé saía SEMPRE em português no HTML e só virava inglês/espanhol depois,
+// quando o /scripts/i18n.js corria no navegador. Quem não executa JavaScript —
+// os robôs de indexação à cabeça — recebia um rodapé português numa página /en.
+// Agora o texto já sai traduzido daqui; o data-i18n fica como rede de segurança
+// e aplica exatamente a mesma frase, porque a tabela é a mesma.
+const tr = (key: string | undefined, fallback: string): string =>
+  (key && translations[locale]?.[key]) || fallback;
 
 // Páginas-guia: só existem em pt. Entram no rodapé porque de outro modo ficam
 // numa ilha fechada — só se ligavam umas às outras (checklist e guia-30-dias
@@ -40,24 +49,25 @@ const footerLinks = {
       href: canonicalPath(`${prefix}/categorias/${c.slug}`),
       i18n: undefined as string | undefined,
     })),
-    { label: 'Glossário', href: canonicalPath(`${prefix}/glossario`), i18n: 'footer.link.glossario' },
-    { label: 'Ferramentas', href: canonicalPath(`${prefix}/ferramentas`), i18n: 'footer.link.ferramentas' },
-    // Estudos só existe em pt (mesmo contrato do Navigation).
-    { label: 'Estudos', href: canonicalPath('/estudos'), i18n: 'footer.link.estudos' },
-    { label: 'Sobre', href: canonicalPath(`${prefix}/sobre`), i18n: 'nav.sobre' },
+    { label: tr('footer.link.glossario', 'Glossário'), href: canonicalPath(`${prefix}/glossario`), i18n: 'footer.link.glossario' },
+    { label: tr('footer.link.ferramentas', 'Ferramentas'), href: canonicalPath(`${prefix}/ferramentas`), i18n: 'footer.link.ferramentas' },
+    // Estudos só existe em pt (mesmo contrato do Navigation): o rótulo traduz,
+    // o destino continua a ser a página portuguesa.
+    { label: tr('footer.link.estudos', 'Estudos'), href: canonicalPath('/estudos'), i18n: 'footer.link.estudos' },
+    { label: tr('nav.sobre', 'Sobre'), href: canonicalPath(`${prefix}/sobre`), i18n: 'nav.sobre' },
     ...guias,
   ],
   app: [
     // canonicalPath preserva a âncora: '/app#precos' vira '/app/#precos'.
-    { label: `Baixar ${config.app.name}`, href: canonicalPath('/app'), i18n: 'footer.link.baixar' },
-    { label: 'Funcionalidades', href: canonicalPath('/app#funcionalidades'), i18n: 'footer.link.funcionalidades' },
-    { label: 'Preços', href: canonicalPath('/app#precos'), i18n: 'footer.link.precos' },
-    { label: 'Suporte', href: canonicalPath('/app#suporte'), i18n: 'footer.link.suporte' },
+    { label: tr('footer.link.baixar', `Baixar ${config.app.name}`), href: canonicalPath('/app'), i18n: 'footer.link.baixar' },
+    { label: tr('footer.link.funcionalidades', 'Funcionalidades'), href: canonicalPath('/app#funcionalidades'), i18n: 'footer.link.funcionalidades' },
+    { label: tr('footer.link.precos', 'Preços'), href: canonicalPath('/app#precos'), i18n: 'footer.link.precos' },
+    { label: tr('footer.link.suporte', 'Suporte'), href: canonicalPath('/app#suporte'), i18n: 'footer.link.suporte' },
   ],
   legal: [
-    { label: 'Privacidade', href: canonicalPath('/privacidade'), i18n: 'footer.link.privacidade' },
-    { label: 'Termos de Uso', href: canonicalPath('/termos'), i18n: 'footer.link.termos' },
-    { label: 'Cookies', href: canonicalPath('/cookies'), i18n: 'footer.link.cookies' },
+    { label: tr('footer.link.privacidade', 'Privacidade'), href: canonicalPath('/privacidade'), i18n: 'footer.link.privacidade' },
+    { label: tr('footer.link.termos', 'Termos de Uso'), href: canonicalPath('/termos'), i18n: 'footer.link.termos' },
+    { label: tr('footer.link.cookies', 'Cookies'), href: canonicalPath('/cookies'), i18n: 'footer.link.cookies' },
   ]
 };
 
@@ -94,14 +104,14 @@ const socials = [
           <span class="logo-text">{brand.name}<span class="logo-blog">{brand.blogSuffix}</span></span>
         </a>
         <p class="footer-description" data-i18n="footer.desc">
-          {config.siteDescription.pt}
+          {tr('footer.desc', config.siteDescription.pt)}
         </p>
       </div>
 
       <div class="footer-section">
         <!-- p, não heading: títulos decorativos do rodapé quebravam a ordem
              h2→h4 apontada pelo Lighthouse (heading-order) -->
-        <p class="footer-title" data-i18n="footer.blog">Blog</p>
+        <p class="footer-title" data-i18n="footer.blog">{tr('footer.blog', 'Blog')}</p>
         <ul class="footer-list">
           {footerLinks.blog.map(link => (
             <li><a href={link.href} data-i18n={link.i18n}>{link.label}</a></li>
@@ -110,7 +120,7 @@ const socials = [
       </div>
 
       <div class="footer-section">
-        <p class="footer-title" data-i18n="footer.app">App</p>
+        <p class="footer-title" data-i18n="footer.app">{tr('footer.app', 'App')}</p>
         <ul class="footer-list">
           {footerLinks.app.map(link => (
             <li><a href={link.href} data-i18n={link.i18n}>{link.label}</a></li>
@@ -119,7 +129,7 @@ const socials = [
       </div>
 
       <div class="footer-section">
-        <p class="footer-title" data-i18n="footer.legal">Legal</p>
+        <p class="footer-title" data-i18n="footer.legal">{tr('footer.legal', 'Legal')}</p>
         <ul class="footer-list">
           {footerLinks.legal.map(link => (
             <li><a href={link.href} data-i18n={link.i18n}>{link.label}</a></li>
@@ -131,7 +141,7 @@ const socials = [
             sempre — e o aviso passava a ser uma porta de sentido único.
             O clique é apanhado pelo CookieNotice, que volta a mostrar o aviso.
           */}
-          <li><a href={canonicalPath('/cookies')} data-abrir-privacidade data-i18n="footer.link.preferencias">Privacidade e cookies</a></li>
+          <li><a href={canonicalPath('/cookies')} data-abrir-privacidade data-i18n="footer.link.preferencias">{tr('footer.link.preferencias', 'Privacidade e cookies')}</a></li>
         </ul>
       </div>
     </div>
@@ -147,9 +157,9 @@ const socials = [
     </div>
 
     <div class="footer-bottom">
-      <p data-i18n="footer.copyright">&copy; {currentYear} {brand.name}. Todos os direitos reservados.</p>
+      <p data-i18n="footer.copyright">{tr('footer.copyright', `© ${currentYear} ${brand.name}. Todos os direitos reservados.`)}</p>
       <p class="footer-disclaimer" data-i18n="footer.disclaimer">
-        O conteúdo deste blog é educativo e não constitui recomendação de investimento.
+        {tr('footer.disclaimer', 'O conteúdo deste blog é educativo e não constitui recomendação de investimento.')}
       </p>
     </div>
   </div>

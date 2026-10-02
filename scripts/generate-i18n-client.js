@@ -12,7 +12,10 @@ const appUrl = config.app.url;
 const niche = config.content.niche;
 const year = new Date().getFullYear();
 
-const translations = {
+// Exportado para o Footer.astro poder desenhar o rodapé já no idioma da página,
+// em vez de mandar português e deixar o navegador trocar depois. Uma tabela só:
+// o que sai no HTML e o que o script do cliente aplica não podem divergir.
+export const translations = {
   pt: {
     'nav.inicio': 'Início',
     'nav.home': 'Início',
@@ -64,6 +67,10 @@ const translations = {
     'footer.link.privacidade': 'Privacidade',
     'footer.link.termos': 'Termos de Uso',
     'footer.link.cookies': 'Cookies',
+    // Estas duas faltavam no cliente: ficavam em português no rodapé de /en e
+    // /es, as únicas linhas que o leitor via na língua errada.
+    'footer.link.estudos': 'Estudos',
+    'footer.link.preferencias': 'Privacidade e cookies',
     'glossario.title': 'Glossário',
     'glossario.desc': 'Termos explicados de forma simples. Clique na pergunta para ver a resposta.',
     'glossario.oQueE': 'O que é',
@@ -145,6 +152,8 @@ const translations = {
     'footer.link.privacidade': 'Privacy',
     'footer.link.termos': 'Terms of Use',
     'footer.link.cookies': 'Cookies',
+    'footer.link.estudos': 'Studies',
+    'footer.link.preferencias': 'Privacy and cookies',
     'glossario.title': 'Glossary',
     'glossario.desc': 'Terms explained simply. Click the question to see the answer.',
     'glossario.oQueE': 'What is',
@@ -226,6 +235,8 @@ const translations = {
     'footer.link.privacidade': 'Privacidad',
     'footer.link.termos': 'Términos de Uso',
     'footer.link.cookies': 'Cookies',
+    'footer.link.estudos': 'Estudios',
+    'footer.link.preferencias': 'Privacidad y cookies',
     'glossario.title': 'Glosario',
     'glossario.desc': 'Términos explicados de forma simple. Haz clic en la pregunta para ver la respuesta.',
     'glossario.oQueE': 'Qué es',
@@ -298,6 +309,12 @@ const translations = ${JSON.stringify(translations, null, 2)};
 })();
 `;
 
-const outputPath = join(process.cwd(), 'public', 'scripts', 'i18n.js');
-writeFileSync(outputPath, output, 'utf-8');
-console.log('✅ Gerado: public/scripts/i18n.js');
+// Só escreve o ficheiro quando este script é CHAMADO (npm run generate).
+// Sem esta guarda, o Footer.astro — que agora importa a tabela daqui — passaria
+// a reescrever public/scripts/i18n.js a cada build, como efeito secundário.
+const chamadoDiretamente = (process.argv[1] || '').endsWith('generate-i18n-client.js');
+if (chamadoDiretamente) {
+  const outputPath = join(process.cwd(), 'public', 'scripts', 'i18n.js');
+  writeFileSync(outputPath, output, 'utf-8');
+  console.log('✅ Gerado: public/scripts/i18n.js');
+}
