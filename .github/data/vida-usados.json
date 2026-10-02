@@ -616,5 +616,11 @@
     "gancho": "aconteceu-comigo",
     "turno": "noite",
     "em": "2026-10-01T11:09:12.496Z"
+  },
+  {
+    "situacao": "conta-so-das-contas",
+    "gancho": "aconteceu-comigo",
+    "turno": "manha",
+    "em": "2026-10-02T10:41:21.858Z"
   }
 ]

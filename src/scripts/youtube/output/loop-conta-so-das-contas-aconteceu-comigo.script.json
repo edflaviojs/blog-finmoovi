@@ -1,0 +1,118 @@
+{
+  "slug": "loop-conta-so-das-contas-aconteceu-comigo",
+  "formato": "loop16",
+  "term": "Uma conta só para as contas",
+  "category": "vida",
+  "keyword": "CONTA",
+  "valor": "R$ 2.100",
+  "situacao": "conta-so-das-contas",
+  "gancho": "aconteceu-comigo",
+  "ganchoFamilia": "aconteceu comigo",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "bifurcacao",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Isso aconteceu comigo semana passada. Vi meu salário sumir todo.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "Meu salário sumiu todo"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bifurcacao"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Quando paguei, dois mil e cem reais foram embora nas contas.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "paguei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bifurcacao"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 2.100"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então comecei a separar meu salário só para as contas.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "comecei",
+          "visual": {
+            "type": "statement",
+            "text": "Separei o salário"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "separar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bifurcacao"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "E foi assim que isso aconteceu comigo semana passada, de novo.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "Aconteceu comigo"
+          }
+        },
+        {
+          "anchor": "comigo",
+          "visual": {
+            "type": "statement",
+            "text": "Meu salário sumiu todo"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
