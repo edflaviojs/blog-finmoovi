@@ -622,5 +622,11 @@
     "gancho": "aconteceu-comigo",
     "turno": "manha",
     "em": "2026-10-02T10:41:21.858Z"
+  },
+  {
+    "situacao": "gas-acabou",
+    "gancho": "aconteceu-comigo",
+    "turno": "noite",
+    "em": "2026-10-02T10:43:41.846Z"
   }
 ]

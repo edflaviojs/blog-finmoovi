@@ -1,0 +1,118 @@
+{
+  "slug": "loop-gas-acabou-aconteceu-comigo",
+  "formato": "loop16",
+  "term": "O gás que acabou",
+  "category": "vida",
+  "keyword": "GÁS",
+  "valor": "R$ 130",
+  "situacao": "gas-acabou",
+  "gancho": "aconteceu-comigo",
+  "ganchoFamilia": "aconteceu comigo",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "escorregao",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Isso aconteceu comigo semana passada. O gás acabou no almoço.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "O gás acabou no almoço"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escorregao"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "No domingo, comprei botijão. Cento e trinta reais saíram do meu bolso.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "domingo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escorregao"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "comprei",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 130"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então, eu olho o gás antes de começar o almoço.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "começar",
+          "visual": {
+            "type": "statement",
+            "text": "Olho o gás antes"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "almoço",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escorregao"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Isso aconteceu comigo, e o gás acabando me pega desprevenido.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "Aconteceu comigo"
+          }
+        },
+        {
+          "anchor": "comigo",
+          "visual": {
+            "type": "statement",
+            "text": "O gás acabou no almoço"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
