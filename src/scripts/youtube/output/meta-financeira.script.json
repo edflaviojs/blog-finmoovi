@@ -1,0 +1,232 @@
+{
+  "slug": "meta-financeira",
+  "term": "Meta Financeira",
+  "category": "basico",
+  "keyword": "Financeira",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você *sabe quanto precisa guardar* pra bater a sua meta financeira de dez mil reais?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "bola-de-ferro",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você sabe quanto precisa guardar pra bater a sua meta financeira de dez mil reais? Quando você bota valor e prazo, ela deixa de ficar solta.",
+      "durationSec": 10,
+      "shots": [
+        {
+          "anchor": "quanto",
+          "visual": {
+            "type": "number",
+            "text": "R$ 10.000"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "meta",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-de-ferro"
+          }
+        },
+        {
+          "anchor": "valor",
+          "visual": {
+            "type": "statement",
+            "text": "Dê valor à sua meta"
+          }
+        },
+        {
+          "anchor": "prazo",
+          "visual": {
+            "type": "icon",
+            "icon": "clock"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "E eu sei que, no dia a dia, a gente recebe o salário, paga as contas e vai deixando isso pra depois.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "salário",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          }
+        },
+        {
+          "anchor": "contas",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-de-ferro"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "depois",
+          "visual": {
+            "type": "statement",
+            "text": "Depois vira nunca"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Só que esse depois vai passando, e os dez mil continuam longe. Quando você anota a meta, já sabe certinho onde precisa chegar.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "passando",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-de-ferro"
+          }
+        },
+        {
+          "anchor": "longe",
+          "visual": {
+            "type": "number",
+            "text": "R$ 10.000"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "anota",
+          "visual": {
+            "type": "statement",
+            "text": "Meta escrita. Caminho claro."
+          }
+        },
+        {
+          "anchor": "chegar",
+          "visual": {
+            "type": "icon",
+            "icon": "target"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu coloquei a minha no FinMoovi, e ele me mostrou os dez mil reais lá na tela. Aí ficou fácil de acompanhar.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Dashboard do FinMoovi mostrando a meta financeira de R$ 10.000"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "number",
+            "text": "R$ 10.000"
+          }
+        },
+        {
+          "anchor": "ficou",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-de-ferro"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer colocar a sua também? Procura o FinMoovi. São sete dias grátis.",
+      "durationSec": 4.6,
+      "shots": [
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "statement",
+            "text": "Sua meta começa agora"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Uma meta financeira precisa de valor e de prazo pra sair da vontade e virar realidade. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "valor",
+          "visual": {
+            "type": "number",
+            "text": "VALOR"
+          }
+        },
+        {
+          "anchor": "prazo",
+          "visual": {
+            "type": "icon",
+            "icon": "clock"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "realidade",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-de-ferro"
+          }
+        },
+        {
+          "anchor": "outros",
+          "visual": {
+            "type": "statement",
+            "text": "Controle seu dinheiro"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Comece sua meta no FinMoovi",
+    "target": "app"
+  },
+  "totalDurationSec": 49.2
+}
