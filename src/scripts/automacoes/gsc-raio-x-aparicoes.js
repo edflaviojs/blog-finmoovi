@@ -86,6 +86,19 @@ for (const tipo of ['discover', 'googleNews', 'news', 'image', 'video']) {
 await tabela(`5. A busca "${BUSCA_CHAVE}" — por país`, { startDate: INICIO, endDate: FIM, dimensions: ['country'], rowLimit: 50, filters: filtroBusca });
 await tabela(`6. A busca "${BUSCA_CHAVE}" — por aparelho`, { startDate: INICIO, endDate: FIM, dimensions: ['device'], rowLimit: 10, filters: filtroBusca });
 
+// A FORMA NO TEMPO. Se as 1.164 aparições forem um PICO de poucos dias e não
+// procura contínua, falar em "oportunidade na posição 8" é falar de um fantasma.
+// Janela larga de propósito: 90 dias.
+await tabela(`6b. "${BUSCA_CHAVE}" — dia a dia (90 dias)`, {
+  startDate: '2026-07-01', endDate: FIM, dimensions: ['date'], rowLimit: 200, filters: filtroBusca,
+}, 100);
+
+// E o mesmo para o BRASIL, que é o mercado real — para ver a posição de verdade.
+await tabela('6c. Só o BRASIL — as 10 páginas com mais aparições', {
+  startDate: INICIO, endDate: FIM, dimensions: ['page'], rowLimit: 50,
+  filters: [{ filters: [{ dimension: 'country', operator: 'equals', expression: 'bra' }] }],
+});
+
 // ANTES x DEPOIS do conserto do título. Janelas de 14 dias cada, coladas ao dia
 // da mudança — comparar 28 dias contra 18 dias diria pouco.
 console.log('\n## 7. O conserto do título de 15/09 moveu alguma coisa?');
