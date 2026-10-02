@@ -1630,5 +1630,53 @@
     "target": "https://schema.org",
     "status": "no-endpoint",
     "sentAt": "2026-09-25T14:48:50.612Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/como-saber-se-sua-meta-de-economia-esta-realmente-avancando/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-10-02T15:59:27.467Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/descubra-uma-alternativa-ao-google-finance-para-2026/",
+    "target": "https://www.investopedia.com/personal-finance-apps-5115205",
+    "status": "no-endpoint",
+    "sentAt": "2026-10-02T15:59:27.516Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/descubra-uma-alternativa-ao-google-finance-para-2026/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-10-02T15:59:27.569Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/en-discover-a-practical-alternative-to-google-finance-for-2026/",
+    "target": "https://www.investopedia.com/personal-finance-apps-5115205",
+    "status": "no-endpoint",
+    "sentAt": "2026-10-02T15:59:27.587Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/en-how-to-know-if-your-savings-goal-is-actually-moving-forward/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-10-02T15:59:27.642Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/es-como-saber-si-tu-objetivo-de-ahorro-avanza-de-verdad-en-2026/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-10-02T15:59:27.660Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/es-descubre-una-alternativa-a-google-finance-para-2026/",
+    "target": "https://www.investopedia.com/personal-finance-apps-5115205",
+    "status": "no-endpoint",
+    "sentAt": "2026-10-02T15:59:27.677Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/es-descubre-una-alternativa-a-google-finance-para-2026/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-10-02T15:59:27.734Z"
   }
 ]
