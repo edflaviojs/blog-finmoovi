@@ -20,7 +20,6 @@ tags:
 author: FinMoovi
 publishedAt: 2026-06-14
 updatedAt: 2026-10-01T00:00:00.000Z
-updatedAt: "2026-09-24"
 readingTime: 3
 featured: false
 translationKey: metodo-50-30-20-para-orcamento
