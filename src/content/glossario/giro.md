@@ -19,13 +19,13 @@ seo:
 
 ## O que é “giro” e por que ele te deixa de cabeça quente  
 
-Você já percebeu que, no fim do mês, o dinheiro parece desaparecer como se fosse mágica? Você paga o aluguel, compra o supermercado, paga a conta de luz e, ainda assim, falta para fechar o cartão de crédito ou para aquela viagem que estava planejando. Essa sensação de “não sei onde foi” tem um nome simples: **giro**.  
+Você já percebeu que, no fim do mês, o dinheiro parece desaparecer como se fosse mágica? Você paga o [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026), compra o supermercado, paga a conta de luz e, ainda assim, falta para fechar o [cartão de crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena) ou para aquela viagem que estava planejando. Essa sensação de “não sei onde foi” tem um nome simples: **giro**.  
 
 ![O que é “giro” e por que ele te deixa de cabeça quente  ](/images/glossario/giro-inline-1.webp)
 
 
 
-No mundo das finanças pessoais, giro é a velocidade com que o dinheiro entra e sai da sua conta. Quanto mais rápido o dinheiro circula, mais fácil você tem de pagar as contas e ainda guardar um pouco. Quando o giro está lento, o dinheiro “fica parado” e você sente falta de caixa para imprevistos. Entender o seu giro é como descobrir quanto tempo leva para o seu carro acelerar de 0 a 100 – só que aqui o motor é o seu orçamento.
+No mundo das [finanças](/glossario/financas) pessoais, giro é a velocidade com que o dinheiro entra e sai da sua conta. Quanto mais rápido o dinheiro circula, mais fácil você tem de pagar as contas e ainda guardar um pouco. Quando o giro está lento, o dinheiro “fica parado” e você sente falta de caixa para imprevistos. Entender o seu giro é como descobrir quanto tempo leva para o seu carro acelerar de 0 a 100 – só que aqui o motor é o seu orçamento.
 
 ## Como medir o giro do seu dinheiro no dia a dia  
 
@@ -57,7 +57,7 @@ Um jeito prático de medir isso é dividir o total de despesas mensais pela soma
 
 ## FinMoovi: a ferramenta que coloca o giro no piloto automático  
 
-Imagine que, ao receber o salário, você tira uma foto da nota ou grava a voz dizendo “recebi salário”. O **FinMoovi** reconhece automaticamente o valor, a data e já classifica como “entrada – salário”. Em segundos, o app atualiza seu fluxo de caixa, mostra quanto desse dinheiro já foi destinado a despesas fixas, quanto está livre para variáveis e quanto está guardado para metas.
+Imagine que, ao receber o salário, você tira uma foto da nota ou grava a voz dizendo “recebi salário”. O **FinMoovi** reconhece automaticamente o valor, a data e já classifica como “entrada – salário”. Em segundos, o app atualiza seu [fluxo de caixa](/glossario/fluxo-de-caixa), mostra quanto desse dinheiro já foi destinado a despesas fixas, quanto está livre para variáveis e quanto está guardado para metas.
 
 ### Captura inteligente + categorização automática  
 
@@ -88,11 +88,11 @@ Ao registrar a compra com foto da nota, o FinMoovi já inclui o valor na fatura 
 
 ### Modo compras: lista + total em tempo real  
 
-Crie uma lista de compras antes de ir ao supermercado. Conforme você escaneia cada item, o app soma automaticamente, mostrando quanto ainda cabe no seu orçamento do dia.
+Crie uma [lista de compras](/glossario/lista-de-compras) antes de ir ao supermercado. Conforme você escaneia cada item, o app soma automaticamente, mostrando quanto ainda cabe no seu orçamento do dia.
 
 ### Lembretes e alertas de saldo  
 
-Receba notificações quando o saldo cair abaixo de “um aluguel” ou quando uma despesa recorrente estiver próxima do vencimento.
+Receba notificações quando o saldo cair abaixo de “um aluguel” ou quando uma [despesa recorrente](/glossario/despesa-recorrente) estiver próxima do vencimento.
 
 ### Offline, PWA e sincronização  
 

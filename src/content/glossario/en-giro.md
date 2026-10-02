@@ -37,7 +37,7 @@ Entender esse movimento é o primeiro passo para colocar a vida financeira nos t
 
 ## FinMoovi: a ferramenta que transforma o giro em aliado
 
-Imagine ter um amigo que, ao tirar uma foto do recibo do supermercado, já sabe em que categoria aquele gasto se encaixa, converte o valor para a sua moeda principal e ainda avisa se você está perto de ultrapassar o limite que definiu para o mês. Esse amigo se chama **FinMoovi**, e ele resolve o problema do giro com três recursos que mudam o jogo:
+Imagine ter um amigo que, ao tirar uma foto do recibo do supermercado, já sabe em que categoria aquele gasto se encaixa, converte o valor para a sua [moeda](/en/glossario/en-moeda) principal e ainda avisa se você está perto de ultrapassar o limite que definiu para o mês. Esse amigo se chama **FinMoovi**, e ele resolve o problema do giro com três recursos que mudam o jogo:
 
 ![FinMoovi: a ferramenta que transforma o giro em aliado](/images/glossario/giro-inline-3.webp)
 
