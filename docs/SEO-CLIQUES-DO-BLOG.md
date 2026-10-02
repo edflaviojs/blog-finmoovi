@@ -1,5 +1,38 @@
 # Por que o blog aparece e ninguém clica
 
+> # 🔴🔴 02/10/2026 — O TÍTULO DESTE DOCUMENTO ESTÁ ERRADO
+>
+> **Não é "aparece e ninguém clica". É NÃO APARECE.** Medido com o raio-X
+> (`npm`-free: workflow `gsc-raio-x-aparicoes.yml`, à mão, só leitura).
+> **Ler este bloco antes de agir em qualquer coisa escrita mais abaixo.**
+>
+> **1. As 1.161 aparições de "como reduzir gastos mensais" foram um pico de SETE
+> DIAS** — 04 a 10/09. Nos outros 83 dias dos 90 medidos: **3 aparições**.
+>
+> **2. E não eram de gente.** 1.163 em computador contra **1 em telemóvel**;
+> vindas de França (421), Alemanha (280), Marrocos (122), Argélia (103), Áustria
+> (94) e Bélgica (93) — numa busca **em português**, com o **Brasil fora do top
+> 10** e zero cliques em todas.
+>
+> **3. O pico acabou a 10/09 — CINCO DIAS ANTES de o título ser reescrito a
+> 15/09.** Logo o conserto de título descrito aqui **nunca teve o que mover**.
+> O trabalho está bem feito e deve ficar; só não era a alavanca. ⚠️ **E não vale
+> a pena "medir o CTR a 06/10"**, como ficou marcado: não há procura para medir.
+>
+> **4. O "ZERO cliques" era artefacto.** O digest mede por *query*, e o Google
+> esconde as buscas raras por privacidade — os cliques delas somem da conta.
+> Medido por **país**, a mesma janela dá **4.015 aparições e 8 cliques**.
+>
+> **5. O retrato real do Brasil, 28 dias:** calculadora de juros compostos 291
+> aparições na **posição 84**; financiamento **74**; glossário/investimento
+> **88**; simulador **71**. **Página 7 a 9 do Google.** Ninguém rola até lá.
+>
+> 👉 **Conclusão:** nenhum título salva a posição 84. A alavanca é a de
+> `EMBEDS-OFERECER-AOS-PORTAIS.md` — autoridade/links —, não o snippet.
+> Repetir o raio-X a qualquer momento: Actions → *GSC — Raio-X das aparições*.
+
+---
+
 > **Estado em 15/09/2026.** Varredura feita a pedido do Ed: *"sinto que estamos
 > produzindo muita coisa mas sem efeito"*. Tudo aqui foi **medido**; o que não deu
 > para medir está dito como tal.
