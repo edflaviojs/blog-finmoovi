@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-02T16:23:18.291Z",
+  "updatedAt": "2026-10-02T16:29:00.283Z",
   "sourceCursor": 1,
   "entries": [
     {
@@ -2171,6 +2171,30 @@
       "source": "gsc-gap",
       "status": "pending",
       "addedAt": "2026-09-28T14:40:07.602Z"
+    },
+    {
+      "keyword": "conversor de moedas online",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-10-02T16:28:59.539Z"
+    },
+    {
+      "keyword": "calcular juro composto",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-10-02T16:28:59.539Z"
+    },
+    {
+      "keyword": "simulador sac price",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-10-02T16:28:59.539Z"
     }
   ]
 }

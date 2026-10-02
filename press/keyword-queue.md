@@ -1,7 +1,7 @@
 # 🗂️ Fila de Keywords (Fase 3)
 
-**Atualizado em:** 2026-09-28T14:40:08.186Z
-**Totais:** 54 pendente(s) · 106 usada(s) · 59 pulada(s)
+**Atualizado em:** 2026-10-02T16:29:00.283Z
+**Totais:** 57 pendente(s) · 106 usada(s) · 59 pulada(s)
 
 ## ⏳ Pendentes por fonte
 
@@ -52,7 +52,7 @@
 - o que levar para comer na praia para economizar
 - por que é importante economizar energia elétrica
 
-### Lacunas do GSC (prioridade 2) — 10
+### Lacunas do GSC (prioridade 2) — 13
 
 - gasto recurrente
 - calculadora tabela price
@@ -64,6 +64,9 @@
 - mortgage
 - gastos recurrentes definicion
 - mobills alternative
+- conversor de moedas online
+- calcular juro composto
+- simulador sac price
 
 ### Autocomplete (prioridade 3) — 0
 
