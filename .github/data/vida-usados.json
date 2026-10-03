@@ -628,5 +628,11 @@
     "gancho": "aconteceu-comigo",
     "turno": "noite",
     "em": "2026-10-02T10:43:41.846Z"
+  },
+  {
+    "situacao": "trocar-divida-cara",
+    "gancho": "aconteceu-comigo",
+    "turno": "manha",
+    "em": "2026-10-03T09:58:17.602Z"
   }
 ]

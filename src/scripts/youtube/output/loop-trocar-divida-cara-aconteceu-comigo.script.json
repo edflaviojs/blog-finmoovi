@@ -1,0 +1,118 @@
+{
+  "slug": "loop-trocar-divida-cara-aconteceu-comigo",
+  "formato": "loop16",
+  "term": "Trocar dívida cara por barata",
+  "category": "vida",
+  "keyword": "DÍVIDA",
+  "valor": "R$ 4.000",
+  "situacao": "trocar-divida-cara",
+  "gancho": "aconteceu-comigo",
+  "ganchoFamilia": "aconteceu comigo",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "balanca",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Isso aconteceu comigo semana passada, quando paguei a dívida barata primeiro.",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "Paguei a dívida barata"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balanca"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Aí, quatro mil reais cresceram enquanto eu pagava a outra dívida.",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "quatro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balanca"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 4.000"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então parei de pagar a barata e cuidei da cara.",
+      "durationSec": 3.53,
+      "shots": [
+        {
+          "anchor": "parei",
+          "visual": {
+            "type": "statement",
+            "text": "Olhei a dívida cara"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "pagar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balanca"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "E foi assim. Quando aconteceu comigo, a dívida cara veio primeiro.",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "A dívida cara veio primeiro"
+          }
+        },
+        {
+          "anchor": "comigo",
+          "visual": {
+            "type": "statement",
+            "text": "Paguei a dívida barata"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
