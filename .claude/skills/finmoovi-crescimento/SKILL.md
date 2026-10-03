@@ -169,4 +169,22 @@ Esta skill é a **régua**; a dívida é a **lista**. São coisas diferentes e p
 estão em ficheiros diferentes. O irmão deste registo, do lado do aplicativo, é
 `backup-app-22052025/.claude/docs/DIVIDA-TECNICA.md`.
 
-**Status:** em uso desde 02/10/2026
+## O que mudou desde que esta skill foi escrita
+
+Em **02–03/10/2026** fecharam-se os **sete buracos** que o `MAPA-DOS-ROBOS.md`
+listava. O que isso muda para quem lê os números:
+
+| Agora acontece sozinho | Onde aparece |
+|---|---|
+| O clique na capa dos vídeos é medido | relatório de segunda, «O CLIQUE NA CAPA» |
+| Os longos são medidos, com régua própria (40%, não 70%) | mesmo relatório, por formato |
+| Os robôs de SEO já não agem sobre tráfego que não é nosso | corridas de ter/qua/qui |
+| O relatório de oportunidades separa procura real de fantasma | `press/gsc-oportunidades.md`, 4 selos |
+| Os números sem fonte chegam ao e-mail diário | e-mail das 7h, «🛡️ Números sem fonte» |
+| O raio-X mede sempre o mês certo | Actions, à mão, com campos |
+
+⚠️ **Isto não dispensa nada do que está escrito acima.** As travas protegem os
+robôs; a leitura continua a ser trabalho de quem olha — e as sete leis continuam a
+valer, **sobretudo a nº2**: dizer *«ainda não sei»* é uma resposta.
+
+**Status:** em uso desde 02/10/2026 · última revisão 03/10/2026
