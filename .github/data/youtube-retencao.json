@@ -1,5 +1,5 @@
 {
-  "medidoEm": "2026-10-03T07:04:21.442Z",
+  "medidoEm": "2026-10-03T07:07:34.273Z",
   "resumo": {
     "videosMedidos": 188,
     "comAudiencia": 173,
@@ -893,7 +893,7 @@
       "duracaoMediaSeg": 85,
       "percentagemMedia": 1.3161,
       "curva": null,
-      "erro": "Analytics 500: {\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"Internal error encountered.\",\n    \"errors\": [\n      {\n        \"message\": \"Internal error encountered.\",\n        \"domain\": \"global\",\n        \"reason\": \"backendError\"\n      }\n    ],\n    \"status\": \"INTERNAL\"\n  }\n}\n"
+      "erro": "sem dados suficientes (audiência pequena de mais)"
     },
     {
       "slug": "inflacao-rouba",
@@ -1337,7 +1337,7 @@
       "duracaoMediaSeg": 0,
       "percentagemMedia": 0,
       "curva": null,
-      "erro": "Analytics 500: {\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"Internal error encountered.\",\n    \"errors\": [\n      {\n        \"message\": \"Internal error encountered.\",\n        \"domain\": \"global\",\n        \"reason\": \"backendError\"\n      }\n    ],\n    \"status\": \"INTERNAL\"\n  }\n}\n"
+      "erro": "sem dados suficientes (audiência pequena de mais)"
     },
     {
       "slug": "loop-sair-do-aluguel-voces-viram",
@@ -2218,7 +2218,7 @@
       "duracaoMediaSeg": 4,
       "percentagemMedia": 0.2353,
       "curva": null,
-      "erro": "Analytics 500: {\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"Internal error encountered.\",\n    \"errors\": [\n      {\n        \"message\": \"Internal error encountered.\",\n        \"domain\": \"global\",\n        \"reason\": \"backendError\"\n      }\n    ],\n    \"status\": \"INTERNAL\"\n  }\n}\n"
+      "erro": "sem dados suficientes (audiência pequena de mais)"
     },
     {
       "slug": "loop-escola-ano-que-vem-depois-de-anos",
