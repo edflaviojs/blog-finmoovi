@@ -5344,6 +5344,21 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-10-02"
+    },
+    "holding-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-03"
+    },
+    "holding-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-03"
+    },
+    "holding.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-03"
     }
   },
   "corrigidas": {
@@ -6008,6 +6023,6 @@
       "motivo": "tem texto escrito (\"I'm sorry, I'm not able to identify the people in this image.\")"
     }
   },
-  "totalAcervo": 1069,
-  "ultimaCorrida": "2026-10-02"
+  "totalAcervo": 1072,
+  "ultimaCorrida": "2026-10-03"
 }
