@@ -1,7 +1,7 @@
 # 🗂️ Fila de Keywords (Fase 3)
 
-**Atualizado em:** 2026-10-02T16:29:00.283Z
-**Totais:** 57 pendente(s) · 106 usada(s) · 59 pulada(s)
+**Atualizado em:** 2026-10-03T07:24:14.902Z
+**Totais:** 59 pendente(s) · 106 usada(s) · 59 pulada(s)
 
 ## ⏳ Pendentes por fonte
 
@@ -52,7 +52,7 @@
 - o que levar para comer na praia para economizar
 - por que é importante economizar energia elétrica
 
-### Lacunas do GSC (prioridade 2) — 13
+### Lacunas do GSC (prioridade 2) — 15
 
 - gasto recurrente
 - calculadora tabela price
@@ -67,6 +67,8 @@
 - conversor de moedas online
 - calcular juro composto
 - simulador sac price
+- calculadora parcelamento price
+- calculo de juros composto online
 
 ### Autocomplete (prioridade 3) — 0
 

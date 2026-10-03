@@ -1,48 +1,64 @@
 {
-  "generatedAt": "2026-10-02T16:28:59.478Z",
+  "generatedAt": "2026-10-03T07:24:14.246Z",
   "siteUrl": "https://blog.finmoovi.com/",
   "period": {
-    "startDate": "2026-09-04",
-    "endDate": "2026-10-02"
+    "startDate": "2026-09-05",
+    "endDate": "2026-10-03"
   },
   "hasData": true,
   "totals": {
-    "queries": 471,
-    "pages": 118,
-    "impressions": 2804,
+    "queries": 449,
+    "pages": 110,
+    "impressions": 2399,
     "clicks": 0
   },
   "opportunities": {
     "strikingDistance": [
       {
         "query": "como reduzir gastos mensais",
-        "impressions": 1164,
+        "impressions": 946,
         "clicks": 0,
-        "position": 8,
+        "position": 7.7,
         "ctr": 0,
         "pages": [
           {
             "page": "https://blog.finmoovi.com/posts/como-organizar-suas-despesas-mensais-com-facilidade-e/",
-            "impressions": 1164,
+            "impressions": 946,
             "clicks": 0,
-            "position": 8
+            "position": 7.7
           }
-        ]
+        ],
+        "realidade": {
+          "ok": false,
+          "motivo": "só 0 aparições no mercado pt (mínimo 30)",
+          "posicaoNoMercado": null,
+          "impressoesNoMercado": 0,
+          "fracaoDoMercado": 0,
+          "fracaoMovel": 0
+        }
       },
       {
         "query": "como organizar as financas pessoais",
-        "impressions": 206,
+        "impressions": 112,
         "clicks": 0,
-        "position": 10.2,
+        "position": 10.1,
         "ctr": 0,
         "pages": [
           {
             "page": "https://blog.finmoovi.com/como-organizar-financas/",
-            "impressions": 206,
+            "impressions": 112,
             "clicks": 0,
-            "position": 10.2
+            "position": 10.1
           }
-        ]
+        ],
+        "realidade": {
+          "ok": false,
+          "motivo": "só 0 aparições no mercado pt (mínimo 30)",
+          "posicaoNoMercado": null,
+          "impressoesNoMercado": 0,
+          "fracaoDoMercado": 0,
+          "fracaoMovel": 0
+        }
       },
       {
         "query": "o que significa saldo pendente",
@@ -57,22 +73,38 @@
             "clicks": 0,
             "position": 9.6
           }
-        ]
+        ],
+        "realidade": {
+          "ok": false,
+          "motivo": "só 17 aparições no mercado pt (mínimo 30)",
+          "posicaoNoMercado": 9.7,
+          "impressoesNoMercado": 17,
+          "fracaoDoMercado": 94,
+          "fracaoMovel": 94
+        }
       },
       {
         "query": "is credit card worth it 2026",
-        "impressions": 16,
+        "impressions": 15,
         "clicks": 0,
-        "position": 9.4,
+        "position": 9.3,
         "ctr": 0,
         "pages": [
           {
             "page": "https://blog.finmoovi.com/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026/",
-            "impressions": 16,
+            "impressions": 15,
             "clicks": 0,
-            "position": 9.4
+            "position": 9.3
           }
-        ]
+        ],
+        "realidade": {
+          "ok": false,
+          "motivo": "só 0 aparições no mercado en (mínimo 30)",
+          "posicaoNoMercado": null,
+          "impressoesNoMercado": 0,
+          "fracaoDoMercado": 0,
+          "fracaoMovel": 0
+        }
       },
       {
         "query": "o que é saldo pendente",
@@ -87,7 +119,15 @@
             "clicks": 0,
             "position": 9.8
           }
-        ]
+        ],
+        "realidade": {
+          "ok": false,
+          "motivo": "só 13 aparições no mercado pt (mínimo 30)",
+          "posicaoNoMercado": 9.8,
+          "impressoesNoMercado": 13,
+          "fracaoDoMercado": 100,
+          "fracaoMovel": 100
+        }
       },
       {
         "query": "conversor de moedas online",
@@ -102,7 +142,15 @@
             "clicks": 0,
             "position": 11.6
           }
-        ]
+        ],
+        "realidade": {
+          "ok": false,
+          "motivo": "só 9 aparições no mercado pt (mínimo 30)",
+          "posicaoNoMercado": 11.6,
+          "impressoesNoMercado": 9,
+          "fracaoDoMercado": 100,
+          "fracaoMovel": 44
+        }
       },
       {
         "query": "gasto recurrente",
@@ -117,22 +165,38 @@
             "clicks": 0,
             "position": 7.7
           }
-        ]
+        ],
+        "realidade": {
+          "ok": false,
+          "motivo": "só 9 aparições no mercado es (mínimo 30)",
+          "posicaoNoMercado": 7.7,
+          "impressoesNoMercado": 9,
+          "fracaoDoMercado": 100,
+          "fracaoMovel": 33
+        }
       },
       {
         "query": "gastos recurrentes",
-        "impressions": 9,
+        "impressions": 8,
         "clicks": 0,
-        "position": 10.9,
+        "position": 11.5,
         "ctr": 0,
         "pages": [
           {
             "page": "https://blog.finmoovi.com/es/glossario/es-gasto-recurrente/",
-            "impressions": 9,
+            "impressions": 8,
             "clicks": 0,
-            "position": 10.9
+            "position": 11.5
           }
-        ]
+        ],
+        "realidade": {
+          "ok": false,
+          "motivo": "só 8 aparições no mercado es (mínimo 30)",
+          "posicaoNoMercado": 11.5,
+          "impressoesNoMercado": 8,
+          "fracaoDoMercado": 100,
+          "fracaoMovel": 38
+        }
       },
       {
         "query": "saldo em aberto",
@@ -153,7 +217,15 @@
             "clicks": 0,
             "position": 8
           }
-        ]
+        ],
+        "realidade": {
+          "ok": false,
+          "motivo": "só 7 aparições no mercado pt (mínimo 30)",
+          "posicaoNoMercado": 8.3,
+          "impressoesNoMercado": 7,
+          "fracaoDoMercado": 100,
+          "fracaoMovel": 71
+        }
       },
       {
         "query": "ted pix",
@@ -168,7 +240,15 @@
             "clicks": 0,
             "position": 6.7
           }
-        ]
+        ],
+        "realidade": {
+          "ok": false,
+          "motivo": "só 4 aparições no mercado en (mínimo 30)",
+          "posicaoNoMercado": 7.8,
+          "impressoesNoMercado": 4,
+          "fracaoDoMercado": 57,
+          "fracaoMovel": 50
+        }
       },
       {
         "query": "finmoovi technologia",
@@ -186,21 +266,6 @@
         ]
       },
       {
-        "query": "gasto recurrente definicion",
-        "impressions": 6,
-        "clicks": 0,
-        "position": 5.7,
-        "ctr": 0,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/es/glossario/es-gasto-recurrente/",
-            "impressions": 6,
-            "clicks": 0,
-            "position": 5.7
-          }
-        ]
-      },
-      {
         "query": "conversor de moeda online",
         "impressions": 5,
         "clicks": 0,
@@ -212,6 +277,21 @@
             "impressions": 5,
             "clicks": 0,
             "position": 16.4
+          }
+        ]
+      },
+      {
+        "query": "gasto recurrente definicion",
+        "impressions": 5,
+        "clicks": 0,
+        "position": 6,
+        "ctr": 0,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-gasto-recurrente/",
+            "impressions": 5,
+            "clicks": 0,
+            "position": 6
           }
         ]
       },
@@ -252,21 +332,6 @@
         ]
       },
       {
-        "query": "que son gastos recurrentes",
-        "impressions": 5,
-        "clicks": 0,
-        "position": 7,
-        "ctr": 0,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/es/glossario/es-gasto-recurrente/",
-            "impressions": 5,
-            "clicks": 0,
-            "position": 7
-          }
-        ]
-      },
-      {
         "query": "%cdb 120% cdi liquidez diária setembro 2026",
         "impressions": 4,
         "clicks": 0,
@@ -282,17 +347,17 @@
         ]
       },
       {
-        "query": "lista de compras supermercado completa",
-        "impressions": 3,
+        "query": "que son gastos recurrentes",
+        "impressions": 4,
         "clicks": 0,
-        "position": 14,
+        "position": 7,
         "ctr": 0,
         "pages": [
           {
-            "page": "https://blog.finmoovi.com/glossario/lista-de-compras-supermercado/",
-            "impressions": 3,
+            "page": "https://blog.finmoovi.com/es/glossario/es-gasto-recurrente/",
+            "impressions": 4,
             "clicks": 0,
-            "position": 14
+            "position": 7
           }
         ]
       },
@@ -372,19 +437,27 @@
     "lowCtr": [
       {
         "query": "como reduzir gastos mensais",
-        "impressions": 1164,
+        "impressions": 946,
         "clicks": 0,
-        "position": 8,
+        "position": 7.7,
         "ctr": 0,
         "expectedCtr": 3.2,
         "pages": [
           {
             "page": "https://blog.finmoovi.com/posts/como-organizar-suas-despesas-mensais-com-facilidade-e/",
-            "impressions": 1164,
+            "impressions": 946,
             "clicks": 0,
-            "position": 8
+            "position": 7.7
           }
-        ]
+        ],
+        "realidade": {
+          "ok": false,
+          "motivo": "só 0 aparições no mercado pt (mínimo 30)",
+          "posicaoNoMercado": null,
+          "impressoesNoMercado": 0,
+          "fracaoDoMercado": 0,
+          "fracaoMovel": 0
+        }
       },
       {
         "query": "o que significa saldo pendente",
@@ -400,23 +473,39 @@
             "clicks": 0,
             "position": 9.6
           }
-        ]
+        ],
+        "realidade": {
+          "ok": false,
+          "motivo": "só 17 aparições no mercado pt (mínimo 30)",
+          "posicaoNoMercado": 9.7,
+          "impressoesNoMercado": 17,
+          "fracaoDoMercado": 94,
+          "fracaoMovel": 94
+        }
       },
       {
         "query": "is credit card worth it 2026",
-        "impressions": 16,
+        "impressions": 15,
         "clicks": 0,
-        "position": 9.4,
+        "position": 9.3,
         "ctr": 0,
         "expectedCtr": 2.8,
         "pages": [
           {
             "page": "https://blog.finmoovi.com/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026/",
-            "impressions": 16,
+            "impressions": 15,
             "clicks": 0,
-            "position": 9.4
+            "position": 9.3
           }
-        ]
+        ],
+        "realidade": {
+          "ok": false,
+          "motivo": "só 0 aparições no mercado en (mínimo 30)",
+          "posicaoNoMercado": null,
+          "impressoesNoMercado": 0,
+          "fracaoDoMercado": 0,
+          "fracaoMovel": 0
+        }
       },
       {
         "query": "o que é saldo pendente",
@@ -432,7 +521,15 @@
             "clicks": 0,
             "position": 9.8
           }
-        ]
+        ],
+        "realidade": {
+          "ok": false,
+          "motivo": "só 13 aparições no mercado pt (mínimo 30)",
+          "posicaoNoMercado": 9.8,
+          "impressoesNoMercado": 13,
+          "fracaoDoMercado": 100,
+          "fracaoMovel": 100
+        }
       },
       {
         "query": "gasto recurrente",
@@ -448,7 +545,15 @@
             "clicks": 0,
             "position": 7.7
           }
-        ]
+        ],
+        "realidade": {
+          "ok": false,
+          "motivo": "só 9 aparições no mercado es (mínimo 30)",
+          "posicaoNoMercado": 7.7,
+          "impressoesNoMercado": 9,
+          "fracaoDoMercado": 100,
+          "fracaoMovel": 33
+        }
       },
       {
         "query": "mobills alternative",
@@ -464,7 +569,15 @@
             "clicks": 0,
             "position": 4.6
           }
-        ]
+        ],
+        "realidade": {
+          "ok": false,
+          "motivo": "só 0 aparições no mercado en (mínimo 30)",
+          "posicaoNoMercado": null,
+          "impressoesNoMercado": 0,
+          "fracaoDoMercado": 0,
+          "fracaoMovel": 0
+        }
       },
       {
         "query": "saldo em aberto",
@@ -486,7 +599,15 @@
             "clicks": 0,
             "position": 8
           }
-        ]
+        ],
+        "realidade": {
+          "ok": false,
+          "motivo": "só 7 aparições no mercado pt (mínimo 30)",
+          "posicaoNoMercado": 8.3,
+          "impressoesNoMercado": 7,
+          "fracaoDoMercado": 100,
+          "fracaoMovel": 71
+        }
       },
       {
         "query": "saldo em aberto o que significa",
@@ -508,7 +629,15 @@
             "clicks": 0,
             "position": 4
           }
-        ]
+        ],
+        "realidade": {
+          "ok": false,
+          "motivo": "só 7 aparições no mercado pt (mínimo 30)",
+          "posicaoNoMercado": 4,
+          "impressoesNoMercado": 7,
+          "fracaoDoMercado": 100,
+          "fracaoMovel": 71
+        }
       },
       {
         "query": "ted pix",
@@ -524,23 +653,39 @@
             "clicks": 0,
             "position": 6.7
           }
-        ]
+        ],
+        "realidade": {
+          "ok": false,
+          "motivo": "só 4 aparições no mercado en (mínimo 30)",
+          "posicaoNoMercado": 7.8,
+          "impressoesNoMercado": 4,
+          "fracaoDoMercado": 57,
+          "fracaoMovel": 50
+        }
       },
       {
         "query": "gasto recurrente definicion",
-        "impressions": 6,
+        "impressions": 5,
         "clicks": 0,
-        "position": 5.7,
+        "position": 6,
         "ctr": 0,
         "expectedCtr": 5,
         "pages": [
           {
             "page": "https://blog.finmoovi.com/es/glossario/es-gasto-recurrente/",
-            "impressions": 6,
+            "impressions": 5,
             "clicks": 0,
-            "position": 5.7
+            "position": 6
           }
-        ]
+        ],
+        "realidade": {
+          "ok": false,
+          "motivo": "só 4 aparições no mercado es (mínimo 30)",
+          "posicaoNoMercado": 6.3,
+          "impressoesNoMercado": 4,
+          "fracaoDoMercado": 80,
+          "fracaoMovel": 50
+        }
       },
       {
         "query": "gastos recurrentes definicion",
@@ -577,22 +722,6 @@
             "impressions": 2,
             "clicks": 0,
             "position": 7.5
-          }
-        ]
-      },
-      {
-        "query": "que son gastos recurrentes",
-        "impressions": 5,
-        "clicks": 0,
-        "position": 7,
-        "ctr": 0,
-        "expectedCtr": 4,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/es/glossario/es-gasto-recurrente/",
-            "impressions": 5,
-            "clicks": 0,
-            "position": 7
           }
         ]
       },
@@ -635,18 +764,18 @@
         ]
       },
       {
-        "query": "que es renta mensual",
+        "query": "que son gastos recurrentes",
         "impressions": 4,
         "clicks": 0,
-        "position": 3.8,
+        "position": 7,
         "ctr": 0,
-        "expectedCtr": 8,
+        "expectedCtr": 4,
         "pages": [
           {
-            "page": "https://blog.finmoovi.com/es/glossario/es-renta-mensual/",
+            "page": "https://blog.finmoovi.com/es/glossario/es-gasto-recurrente/",
             "impressions": 4,
             "clicks": 0,
-            "position": 3.8
+            "position": 7
           }
         ]
       },
@@ -746,22 +875,16 @@
     "gaps": [
       {
         "query": "planificación financiera",
-        "impressions": 60,
+        "impressions": 47,
         "clicks": 0,
         "position": 56.3,
         "suggestedSlug": "planificacion-financiera",
         "pages": [
           {
             "page": "https://blog.finmoovi.com/es/glossario/es-planificacion-financiera",
-            "impressions": 51,
+            "impressions": 47,
             "clicks": 0,
             "position": 56.3
-          },
-          {
-            "page": "https://blog.finmoovi.com/es/glossario/es-planificacion-financiera/",
-            "impressions": 9,
-            "clicks": 0,
-            "position": 55.9
           }
         ]
       },
@@ -781,38 +904,17 @@
         ]
       },
       {
-        "query": "planificacion financiera",
-        "impressions": 31,
-        "clicks": 0,
-        "position": 57.8,
-        "suggestedSlug": "planificacion-financiera",
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/es/glossario/es-planificacion-financiera",
-            "impressions": 25,
-            "clicks": 0,
-            "position": 57.8
-          },
-          {
-            "page": "https://blog.finmoovi.com/es/glossario/es-planificacion-financiera/",
-            "impressions": 6,
-            "clicks": 0,
-            "position": 57.8
-          }
-        ]
-      },
-      {
         "query": "installments",
-        "impressions": 29,
+        "impressions": 28,
         "clicks": 0,
-        "position": 66.4,
+        "position": 66.8,
         "suggestedSlug": "installments",
         "pages": [
           {
             "page": "https://blog.finmoovi.com/en/glossario/en-installments/",
-            "impressions": 28,
+            "impressions": 27,
             "clicks": 0,
-            "position": 67
+            "position": 67.4
           },
           {
             "page": "https://blog.finmoovi.com/en/glossario/en-installments",
@@ -838,10 +940,31 @@
         ]
       },
       {
-        "query": "expense control",
-        "impressions": 25,
+        "query": "planificacion financiera",
+        "impressions": 24,
         "clicks": 0,
-        "position": 59.8,
+        "position": 57.8,
+        "suggestedSlug": "planificacion-financiera",
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-planificacion-financiera",
+            "impressions": 23,
+            "clicks": 0,
+            "position": 57.9
+          },
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-planificacion-financiera/",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 57
+          }
+        ]
+      },
+      {
+        "query": "expense control",
+        "impressions": 21,
+        "clicks": 0,
+        "position": 60.6,
         "suggestedSlug": "expense-control",
         "pages": [
           {
@@ -852,24 +975,24 @@
           },
           {
             "page": "https://blog.finmoovi.com/en/glossario/en-expense-control",
-            "impressions": 9,
+            "impressions": 5,
             "clicks": 0,
-            "position": 57.8
+            "position": 59.2
           }
         ]
       },
       {
         "query": "is credit card worth it 2026",
-        "impressions": 16,
+        "impressions": 15,
         "clicks": 0,
-        "position": 9.4,
+        "position": 9.3,
         "suggestedSlug": "is-credit-card-worth-it-2026",
         "pages": [
           {
             "page": "https://blog.finmoovi.com/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026/",
-            "impressions": 16,
+            "impressions": 15,
             "clicks": 0,
-            "position": 9.4
+            "position": 9.3
           }
         ]
       },
@@ -919,36 +1042,6 @@
         ]
       },
       {
-        "query": "que es un mercado yahoo",
-        "impressions": 10,
-        "clicks": 0,
-        "position": 56.1,
-        "suggestedSlug": "que-es-un-mercado-yahoo",
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/es/glossario/es-yahoo-finance/",
-            "impressions": 10,
-            "clicks": 0,
-            "position": 56.1
-          }
-        ]
-      },
-      {
-        "query": "recurring payments financial planning",
-        "impressions": 10,
-        "clicks": 0,
-        "position": 73.9,
-        "suggestedSlug": "recurring-payments-financial-planning",
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/en/glossario/en-recurring-expense/",
-            "impressions": 10,
-            "clicks": 0,
-            "position": 73.9
-          }
-        ]
-      },
-      {
         "query": "conversor de moedas online",
         "impressions": 9,
         "clicks": 0,
@@ -979,32 +1072,17 @@
         ]
       },
       {
-        "query": "gastos recurrentes",
+        "query": "que es un mercado yahoo",
         "impressions": 9,
         "clicks": 0,
-        "position": 10.9,
-        "suggestedSlug": "gastos-recurrentes",
+        "position": 56.2,
+        "suggestedSlug": "que-es-un-mercado-yahoo",
         "pages": [
           {
-            "page": "https://blog.finmoovi.com/es/glossario/es-gasto-recurrente/",
+            "page": "https://blog.finmoovi.com/es/glossario/es-yahoo-finance/",
             "impressions": 9,
             "clicks": 0,
-            "position": 10.9
-          }
-        ]
-      },
-      {
-        "query": "recurring fee definition",
-        "impressions": 9,
-        "clicks": 0,
-        "position": 54.1,
-        "suggestedSlug": "recurring-fee-definition",
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/en/glossario/en-recurring-expense/",
-            "impressions": 9,
-            "clicks": 0,
-            "position": 54.1
+            "position": 56.2
           }
         ]
       },
@@ -1039,6 +1117,21 @@
         ]
       },
       {
+        "query": "gastos recurrentes",
+        "impressions": 8,
+        "clicks": 0,
+        "position": 11.5,
+        "suggestedSlug": "gastos-recurrentes",
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-gasto-recurrente/",
+            "impressions": 8,
+            "clicks": 0,
+            "position": 11.5
+          }
+        ]
+      },
+      {
         "query": "mortgage",
         "impressions": 8,
         "clicks": 0,
@@ -1050,6 +1143,21 @@
             "impressions": 8,
             "clicks": 0,
             "position": 77
+          }
+        ]
+      },
+      {
+        "query": "recurring payments financial planning",
+        "impressions": 8,
+        "clicks": 0,
+        "position": 73.1,
+        "suggestedSlug": "recurring-payments-financial-planning",
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/en/glossario/en-recurring-expense/",
+            "impressions": 8,
+            "clicks": 0,
+            "position": 73.1
           }
         ]
       },
@@ -1075,21 +1183,6 @@
         ]
       },
       {
-        "query": "calculadora sac price",
-        "impressions": 7,
-        "clicks": 0,
-        "position": 53.3,
-        "suggestedSlug": "calculadora-sac-price",
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/ferramentas/calculadora-financiamento/",
-            "impressions": 7,
-            "clicks": 0,
-            "position": 53.3
-          }
-        ]
-      },
-      {
         "query": "calculadora tabela sac",
         "impressions": 7,
         "clicks": 0,
@@ -1101,21 +1194,6 @@
             "impressions": 7,
             "clicks": 0,
             "position": 74.1
-          }
-        ]
-      },
-      {
-        "query": "control de gasto",
-        "impressions": 7,
-        "clicks": 0,
-        "position": 48.6,
-        "suggestedSlug": "control-de-gasto",
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/es/glossario/es-control-de-gastos/",
-            "impressions": 7,
-            "clicks": 0,
-            "position": 48.6
           }
         ]
       },
@@ -1148,48 +1226,57 @@
             "position": 73.6
           }
         ]
+      },
+      {
+        "query": "calculadora parcelamento price",
+        "impressions": 6,
+        "clicks": 0,
+        "position": 78.7,
+        "suggestedSlug": "calculadora-parcelamento-price",
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/ferramentas/calculadora-financiamento/",
+            "impressions": 6,
+            "clicks": 0,
+            "position": 78.7
+          }
+        ]
+      },
+      {
+        "query": "calculadora sac price",
+        "impressions": 6,
+        "clicks": 0,
+        "position": 59.3,
+        "suggestedSlug": "calculadora-sac-price",
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/ferramentas/calculadora-financiamento/",
+            "impressions": 6,
+            "clicks": 0,
+            "position": 59.3
+          }
+        ]
+      },
+      {
+        "query": "calculo de juros composto online",
+        "impressions": 6,
+        "clicks": 0,
+        "position": 92.5,
+        "suggestedSlug": "calculo-de-juros-composto-online",
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/ferramentas/calculadora-juros-compostos/",
+            "impressions": 6,
+            "clicks": 0,
+            "position": 92.5
+          }
+        ]
       }
     ],
     "cannibalization": [
       {
-        "query": "planificación financiera",
-        "totalImpressions": 60,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/es/glossario/es-planificacion-financiera",
-            "impressions": 51,
-            "clicks": 0,
-            "position": 56.3
-          },
-          {
-            "page": "https://blog.finmoovi.com/es/glossario/es-planificacion-financiera/",
-            "impressions": 9,
-            "clicks": 0,
-            "position": 55.9
-          }
-        ]
-      },
-      {
-        "query": "planificacion financiera",
-        "totalImpressions": 31,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/es/glossario/es-planificacion-financiera",
-            "impressions": 25,
-            "clicks": 0,
-            "position": 57.8
-          },
-          {
-            "page": "https://blog.finmoovi.com/es/glossario/es-planificacion-financiera/",
-            "impressions": 6,
-            "clicks": 0,
-            "position": 57.8
-          }
-        ]
-      },
-      {
         "query": "expense control",
-        "totalImpressions": 25,
+        "totalImpressions": 21,
         "pages": [
           {
             "page": "https://blog.finmoovi.com/en/glossario/en-expense-control/",
@@ -1199,9 +1286,9 @@
           },
           {
             "page": "https://blog.finmoovi.com/en/glossario/en-expense-control",
-            "impressions": 9,
+            "impressions": 5,
             "clicks": 0,
-            "position": 57.8
+            "position": 59.2
           }
         ]
       },
