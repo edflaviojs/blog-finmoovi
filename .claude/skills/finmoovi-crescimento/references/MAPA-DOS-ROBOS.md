@@ -279,11 +279,11 @@ não.**
 | 2 | filtro de realidade | `lib/gsc-posts.js` + 3 robôs | ✅ **feito 02/10** — prova a valer na terça 07h UTC |
 | 3 | longos entram na medição de retenção | `src/scripts/youtube/retencao.js` | ✅ **feito 03/10** — e vêm do canal, não do registo |
 | 4 | régua por formato (70% é de Short; longo é 40%) | `src/scripts/youtube/retencao.js` | ✅ **feito 03/10**, junto com o 3 |
-| 5 | raio-x com datas calculadas | `automacoes/gsc-raio-x-aparicoes.js` | ⬜ **o único aberto** |
+| 5 | raio-x com datas calculadas | `automacoes/gsc-raio-x-aparicoes.js` | ✅ **feito 03/10** — janela calculada, alvo por parâmetro |
 | 6 | fact-guard afinado e no digest diário | `lib/fact-guard.js` + digest | ✅ **feito 03/10** — 66 → 16, e no e-mail |
 | 7 | relatório de segunda com a posição do mercado | `automacoes/gsc-oportunidades.js` | ✅ **feito 03/10** — 4 selos, provado a sério |
 
-> **Seis dos sete buracos estão fechados.** O que sobra do mapa e o que ficou
+> **Os sete buracos estão fechados.** O que sobra do mapa e o que ficou
 > adiado de propósito vivem agora em **`docs/DIVIDA.md`** — com o porquê e a data
 > de reavaliar de cada um.
 

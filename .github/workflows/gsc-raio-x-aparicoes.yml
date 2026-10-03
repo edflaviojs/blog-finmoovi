@@ -1,9 +1,13 @@
 # Raio-X das aparições — SÓ À MÃO, só leitura.
 #
-# Responde a uma pergunta: o blog aparece ~2.800 vezes por mês na busca e recebe
-# ZERO cliques, com a página principal na posição 8 e o título já corrigido.
-# Zero cliques na posição 8 não é normal — isto mede de onde vêm essas aparições
-# (país, aparelho, tipo de resultado) antes de se gastar mais energia em links.
+# De onde vêm as aparições de uma busca ou de uma página: país, aparelho, tipo de
+# resultado, e a FORMA NO TEMPO (pico de poucos dias ou procura contínua). Foi esta
+# ferramenta que provou, a 02/10/2026, que a «oportunidade na posição 8» eram robôs
+# de França e Alemanha numa página em português.
+#
+# ♦ 03/10/2026 — as datas deixaram de estar escritas no código. A janela calcula-se
+# sozinha e o alvo entra pelos campos abaixo. Sem preencher nada, ele investiga a
+# busca e a página com MAIS aparições do período.
 #
 # Não escreve ficheiro, não faz commit, não empurra nada. O resultado fica no
 # registo da corrida. Sem agendamento de propósito: é uma pergunta, não um robô.
@@ -11,6 +15,23 @@ name: GSC — Raio-X das aparições (à mão)
 
 on:
   workflow_dispatch:
+    inputs:
+      busca:
+        description: 'Busca a investigar. Vazio = a que mais apareceu no período.'
+        required: false
+        default: ''
+      pagina:
+        description: 'Página a investigar (ex.: /posts/algum-slug/). Vazio = a que mais apareceu.'
+        required: false
+        default: ''
+      dias:
+        description: 'Tamanho da janela, em dias (padrão 28).'
+        required: false
+        default: '28'
+      mudanca:
+        description: 'Comparar antes/depois de uma mudança (AAAA-MM-DD). Vazio = não compara.'
+        required: false
+        default: ''
 
 permissions:
   contents: read
@@ -35,4 +56,14 @@ jobs:
         env:
           GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
           GSC_SITE_URL: ${{ vars.GSC_SITE_URL || 'https://blog.finmoovi.com/' }}
+          # ⚠️ Os campos entram por VARIÁVEL DE AMBIENTE, nunca montados na linha de
+          # comando. Duas armadilhas evitadas de uma vez:
+          #   1. uma busca com espaços («como reduzir gastos mensais») viraria quatro
+          #      argumentos separados;
+          #   2. um `[ -n "$X" ] && ...` que termine em falso devolve código 1, e o
+          #      passo fica VERMELHO sem nada ter corrido mal.
+          RX_BUSCA: ${{ github.event.inputs.busca }}
+          RX_PAGINA: ${{ github.event.inputs.pagina }}
+          RX_DIAS: ${{ github.event.inputs.dias }}
+          RX_MUDANCA: ${{ github.event.inputs.mudanca }}
         run: node src/scripts/automacoes/gsc-raio-x-aparicoes.js

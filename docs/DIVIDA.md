@@ -18,27 +18,7 @@
 
 ## A. Dívida técnica
 
-### A1. 🟡 O raio-X das aparições tem as datas escritas à mão
-
-**Estado:** aberto · **Reavaliar:** na próxima vez que for preciso ler o mês
-
-`src/scripts/automacoes/gsc-raio-x-aparicoes.js` traz `FIM = '2026-09-29'`,
-`INICIO = '2026-09-02'`, e até a página e a busca investigadas estão fixas no
-código (`PAGINA_CHAVE`, `BUSCA_CHAVE`).
-
-**Correr hoje mede setembro.** Foi escrito para responder a uma pergunta de um dia
-— e respondeu: foi ele que provou que a «oportunidade na posição 8» era um pico de
-robôs. Mas **não é ainda uma rotina**.
-
-**Por que foi adiado:** é o nosso melhor instrumento e funciona. Mexer nele sem
-necessidade é risco sem ganho; ele só é usado à mão, por decisão.
-
-**Como fazer quando chegar a hora:** calcular a janela (últimos 28 dias menos os 3
-de atraso do Search Console) e receber página/busca por parâmetro do workflow.
-
----
-
-### A2. 🟡 O registo de vídeos publicados está incompleto — e mente no título
+### A1. 🟡 O registo de vídeos publicados está incompleto — e mente no título
 
 **Estado:** contornado, **não** consertado · **Reavaliar:** se outro robô voltar a
 confiar no registo
@@ -62,7 +42,7 @@ foram publicados, e só então decidir se o registo se enche ou se se deita fora
 
 ---
 
-### A3. 🟡 Duas tabelas de tradução que não conversam
+### A2. 🟡 Duas tabelas de tradução que não conversam
 
 **Estado:** aberto, com aviso escrito no código · **Reavaliar:** no próximo
 trabalho grande de tradução
@@ -75,7 +55,7 @@ arrumação; o risco é o blog parar.
 
 ---
 
-### A4. 🟡 Seis cópias do renovador de acesso ao YouTube
+### A3. 🟡 Seis cópias do renovador de acesso ao YouTube
 
 **Estado:** aberto, declarado no código · **Reavaliar:** quando for preciso mexer
 na autenticação do YouTube por outra razão
@@ -94,7 +74,7 @@ incluindo o que publica vídeo. Risco alto, ganho nenhum para quem lê os númer
 
 ---
 
-### A5. 🟡 De onde vem a audiência do canal não é medido
+### A4. 🟡 De onde vem a audiência do canal não é medido
 
 **Estado:** aberto · **Reavaliar:** depois de a medição da capa dar o primeiro
 resultado (ver B2)
@@ -170,8 +150,11 @@ Renata Nunes (bmcnews).
 - **03/10/2026** — criado a pedido do Ed, nos moldes do registo que o aplicativo já
   tinha. Entraram os itens que sobraram do levantamento dos 7 buracos dos robôs
   (02–03/10) e as pendências que viviam só nas conversas.
-- **03/10/2026** — **seis dos sete buracos fechados no mesmo dia**: medir o clique
+- **03/10/2026** — **os sete buracos do mapa fechados**: medir o clique
   na capa, filtro de realidade nos robôs, longos na medição, régua por formato,
-  o relatório que o dono lê, e o Fact Firewall afinado e no e-mail. **Nenhum deles
-  entrou aqui**, porque a regra deste ficheiro é que item resolvido não fica
-  marcado como feito — fica no histórico do git.
+  o relatório que o dono lê, o Fact Firewall afinado e no e-mail, e o raio-X com
+  as datas calculadas.
+
+  **O raio-X entrou neste ficheiro e saiu no mesmo dia** — e é assim que ele deve
+  funcionar: item resolvido não fica marcado como feito, sai e vai para o histórico
+  do git. Os outros seis nunca chegaram a entrar, pela mesma regra.
