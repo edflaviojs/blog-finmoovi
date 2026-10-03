@@ -2341,8 +2341,59 @@
           "titulo": "Vejam a playlist completa!"
         }
       ]
+    },
+    {
+      "videoId": "dIzj2kb9wy4",
+      "title": "How to Become a Morning Person | 6 Tips to Make Your Mornings Better That Actually Stick",
+      "channel": "Michela Allocca",
+      "duracaoSeg": 2713,
+      "idioma": "en",
+      "viewsPerDay": 701,
+      "vistoEm": "2026-10-03",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "The one weekend I slept in and how badly it threw off my whole day"
+        },
+        {
+          "seg": 240,
+          "titulo": "Why anyone can train themselves to become a morning person, no matter your chronotype"
+        },
+        {
+          "seg": 360,
+          "titulo": "The predictable cycle that kills every failed morning routine by Wednesday"
+        },
+        {
+          "seg": 540,
+          "titulo": "Finding your actual reason to get out of bed before you touch your alarm"
+        },
+        {
+          "seg": 900,
+          "titulo": "Why booking a morning workout removes the negotiation from getting up"
+        },
+        {
+          "seg": 1080,
+          "titulo": "Start smaller than you think: the small increment rule for moving your wake time"
+        },
+        {
+          "seg": 1320,
+          "titulo": "My morning starts the night before: building a real wind down routine"
+        },
+        {
+          "seg": 1500,
+          "titulo": "Revenge bedtime procrastination and why the nighttime scroll is nearly impossible to escape"
+        },
+        {
+          "seg": 1920,
+          "titulo": "Your morning brain isn't built for sharp decisions, and neither is an \"optimized\" routine"
+        },
+        {
+          "seg": 2280,
+          "titulo": "Giving your morning somewhere to go: the real motivation behind getting up early"
+        }
+      ]
     }
   ],
-  "atualizadoEm": "2026-10-02T10:10:11.535Z",
-  "total": 43
+  "atualizadoEm": "2026-10-03T09:32:12.280Z",
+  "total": 44
 }
