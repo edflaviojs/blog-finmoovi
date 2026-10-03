@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T07:24:14.246Z",
+  "generatedAt": "2026-10-03T07:28:24.754Z",
   "siteUrl": "https://blog.finmoovi.com/",
   "period": {
     "startDate": "2026-09-05",
@@ -30,7 +30,7 @@
         ],
         "realidade": {
           "ok": false,
-          "motivo": "só 0 aparições no mercado pt (mínimo 30)",
+          "motivo": "946 aparições, mas só 0% vêm do mercado pt — há procura, mas não é a nossa",
           "posicaoNoMercado": null,
           "impressoesNoMercado": 0,
           "fracaoDoMercado": 0,
@@ -53,7 +53,7 @@
         ],
         "realidade": {
           "ok": false,
-          "motivo": "só 0 aparições no mercado pt (mínimo 30)",
+          "motivo": "112 aparições, mas só 0% vêm do mercado pt — há procura, mas não é a nossa",
           "posicaoNoMercado": null,
           "impressoesNoMercado": 0,
           "fracaoDoMercado": 0,
@@ -76,7 +76,7 @@
         ],
         "realidade": {
           "ok": false,
-          "motivo": "só 17 aparições no mercado pt (mínimo 30)",
+          "motivo": "só 17 aparições no mercado pt (mínimo 30) — ainda não dá para dizer nada",
           "posicaoNoMercado": 9.7,
           "impressoesNoMercado": 17,
           "fracaoDoMercado": 94,
@@ -99,7 +99,7 @@
         ],
         "realidade": {
           "ok": false,
-          "motivo": "só 0 aparições no mercado en (mínimo 30)",
+          "motivo": "só 0 aparições no mercado en (mínimo 30) — ainda não dá para dizer nada",
           "posicaoNoMercado": null,
           "impressoesNoMercado": 0,
           "fracaoDoMercado": 0,
@@ -122,7 +122,7 @@
         ],
         "realidade": {
           "ok": false,
-          "motivo": "só 13 aparições no mercado pt (mínimo 30)",
+          "motivo": "só 13 aparições no mercado pt (mínimo 30) — ainda não dá para dizer nada",
           "posicaoNoMercado": 9.8,
           "impressoesNoMercado": 13,
           "fracaoDoMercado": 100,
@@ -145,7 +145,7 @@
         ],
         "realidade": {
           "ok": false,
-          "motivo": "só 9 aparições no mercado pt (mínimo 30)",
+          "motivo": "só 9 aparições no mercado pt (mínimo 30) — ainda não dá para dizer nada",
           "posicaoNoMercado": 11.6,
           "impressoesNoMercado": 9,
           "fracaoDoMercado": 100,
@@ -168,7 +168,7 @@
         ],
         "realidade": {
           "ok": false,
-          "motivo": "só 9 aparições no mercado es (mínimo 30)",
+          "motivo": "só 9 aparições no mercado es (mínimo 30) — ainda não dá para dizer nada",
           "posicaoNoMercado": 7.7,
           "impressoesNoMercado": 9,
           "fracaoDoMercado": 100,
@@ -191,7 +191,7 @@
         ],
         "realidade": {
           "ok": false,
-          "motivo": "só 8 aparições no mercado es (mínimo 30)",
+          "motivo": "só 8 aparições no mercado es (mínimo 30) — ainda não dá para dizer nada",
           "posicaoNoMercado": 11.5,
           "impressoesNoMercado": 8,
           "fracaoDoMercado": 100,
@@ -220,7 +220,7 @@
         ],
         "realidade": {
           "ok": false,
-          "motivo": "só 7 aparições no mercado pt (mínimo 30)",
+          "motivo": "só 7 aparições no mercado pt (mínimo 30) — ainda não dá para dizer nada",
           "posicaoNoMercado": 8.3,
           "impressoesNoMercado": 7,
           "fracaoDoMercado": 100,
@@ -243,7 +243,7 @@
         ],
         "realidade": {
           "ok": false,
-          "motivo": "só 4 aparições no mercado en (mínimo 30)",
+          "motivo": "só 4 aparições no mercado en (mínimo 30) — ainda não dá para dizer nada",
           "posicaoNoMercado": 7.8,
           "impressoesNoMercado": 4,
           "fracaoDoMercado": 57,
@@ -452,7 +452,7 @@
         ],
         "realidade": {
           "ok": false,
-          "motivo": "só 0 aparições no mercado pt (mínimo 30)",
+          "motivo": "946 aparições, mas só 0% vêm do mercado pt — há procura, mas não é a nossa",
           "posicaoNoMercado": null,
           "impressoesNoMercado": 0,
           "fracaoDoMercado": 0,
@@ -476,7 +476,7 @@
         ],
         "realidade": {
           "ok": false,
-          "motivo": "só 17 aparições no mercado pt (mínimo 30)",
+          "motivo": "só 17 aparições no mercado pt (mínimo 30) — ainda não dá para dizer nada",
           "posicaoNoMercado": 9.7,
           "impressoesNoMercado": 17,
           "fracaoDoMercado": 94,
@@ -500,7 +500,7 @@
         ],
         "realidade": {
           "ok": false,
-          "motivo": "só 0 aparições no mercado en (mínimo 30)",
+          "motivo": "só 0 aparições no mercado en (mínimo 30) — ainda não dá para dizer nada",
           "posicaoNoMercado": null,
           "impressoesNoMercado": 0,
           "fracaoDoMercado": 0,
@@ -524,7 +524,7 @@
         ],
         "realidade": {
           "ok": false,
-          "motivo": "só 13 aparições no mercado pt (mínimo 30)",
+          "motivo": "só 13 aparições no mercado pt (mínimo 30) — ainda não dá para dizer nada",
           "posicaoNoMercado": 9.8,
           "impressoesNoMercado": 13,
           "fracaoDoMercado": 100,
@@ -548,7 +548,7 @@
         ],
         "realidade": {
           "ok": false,
-          "motivo": "só 9 aparições no mercado es (mínimo 30)",
+          "motivo": "só 9 aparições no mercado es (mínimo 30) — ainda não dá para dizer nada",
           "posicaoNoMercado": 7.7,
           "impressoesNoMercado": 9,
           "fracaoDoMercado": 100,
@@ -572,7 +572,7 @@
         ],
         "realidade": {
           "ok": false,
-          "motivo": "só 0 aparições no mercado en (mínimo 30)",
+          "motivo": "só 0 aparições no mercado en (mínimo 30) — ainda não dá para dizer nada",
           "posicaoNoMercado": null,
           "impressoesNoMercado": 0,
           "fracaoDoMercado": 0,
@@ -602,7 +602,7 @@
         ],
         "realidade": {
           "ok": false,
-          "motivo": "só 7 aparições no mercado pt (mínimo 30)",
+          "motivo": "só 7 aparições no mercado pt (mínimo 30) — ainda não dá para dizer nada",
           "posicaoNoMercado": 8.3,
           "impressoesNoMercado": 7,
           "fracaoDoMercado": 100,
@@ -632,7 +632,7 @@
         ],
         "realidade": {
           "ok": false,
-          "motivo": "só 7 aparições no mercado pt (mínimo 30)",
+          "motivo": "só 7 aparições no mercado pt (mínimo 30) — ainda não dá para dizer nada",
           "posicaoNoMercado": 4,
           "impressoesNoMercado": 7,
           "fracaoDoMercado": 100,
@@ -656,7 +656,7 @@
         ],
         "realidade": {
           "ok": false,
-          "motivo": "só 4 aparições no mercado en (mínimo 30)",
+          "motivo": "só 4 aparições no mercado en (mínimo 30) — ainda não dá para dizer nada",
           "posicaoNoMercado": 7.8,
           "impressoesNoMercado": 4,
           "fracaoDoMercado": 57,
@@ -680,7 +680,7 @@
         ],
         "realidade": {
           "ok": false,
-          "motivo": "só 4 aparições no mercado es (mínimo 30)",
+          "motivo": "só 4 aparições no mercado es (mínimo 30) — ainda não dá para dizer nada",
           "posicaoNoMercado": 6.3,
           "impressoesNoMercado": 4,
           "fracaoDoMercado": 80,

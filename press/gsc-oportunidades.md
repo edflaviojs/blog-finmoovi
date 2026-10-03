@@ -2,12 +2,22 @@
 
 **Propriedade:** https://blog.finmoovi.com/
 **Período:** 2026-09-05 → 2026-10-03 (28 dias)
-**Gerado em:** 2026-10-03T07:24:14.246Z
+**Gerado em:** 2026-10-03T07:28:24.754Z
 
 **Totais no período:** 449 queries · 2399 impressões · 0 cliques
 
-> **Como ler:** ✅ = procura real, do nosso mercado · 🤖 = **não é oportunidade** (tráfego de fora, só computador, ou pico já passado) · · = não conferida.
-> A coluna **Posição NO MERCADO** é a que conta. 🔴 marca as que saltam 20 posições ou mais entre a global e a real — foi uma dessas (8 global, 84 no Brasil) que guiou o SEO de setembro para o lado errado.
+> **Como ler — cada marca pede uma coisa diferente:**
+>
+> | | O que é | O que fazer |
+> |---|---|---|
+> | ✅ | procura real, do nosso mercado | **mexer no título vale a pena** |
+> | ⏳ | ainda com pouca gente para dizer | **esperar** — não é defeito, é cedo |
+> | 📉 | aparece, mas lá atrás na busca | **é backlink, não título** |
+> | 🤖 | tráfego que não é o nosso público | **ignorar** |
+> | ⚠️ | não deu para conferir | tratar como não conferida |
+> | · | fora do teto de conferência | os números são os globais |
+>
+> A coluna **Posição NO MERCADO** é a que conta. 🔴 marca as que saltam 20 posições ou mais entre a global e a real — foi uma dessas (**8 global, 84 no Brasil**) que guiou o SEO de setembro para o lado errado.
 
 ## 1. 🎯 Striking distance (posição 5–20 — perto da 1ª página)
 
@@ -35,18 +45,6 @@
 | · | que es un gasto recurrente | 3 | 0 | 8.3 | — | 0% | `/es/glossario/es-gasto-recurrente/` |
 | · | que significa saldo pendiente | 3 | 0 | 9.7 | — | 0% | `/es/posts/es-entiende-que-es-el-saldo-pendiente-y-como-evitarlo` |
 
-**🤖 Por que estas não são oportunidade:**
-- **como reduzir gastos mensais** — só 0 aparições no mercado pt (mínimo 30)
-- **como organizar as financas pessoais** — só 0 aparições no mercado pt (mínimo 30)
-- **o que significa saldo pendente** — só 17 aparições no mercado pt (mínimo 30)
-- **is credit card worth it 2026** — só 0 aparições no mercado en (mínimo 30)
-- **o que é saldo pendente** — só 13 aparições no mercado pt (mínimo 30)
-- **conversor de moedas online** — só 9 aparições no mercado pt (mínimo 30)
-- **gasto recurrente** — só 9 aparições no mercado es (mínimo 30)
-- **gastos recurrentes** — só 8 aparições no mercado es (mínimo 30)
-- **saldo em aberto** — só 7 aparições no mercado pt (mínimo 30)
-- **ted pix** — só 4 aparições no mercado en (mínimo 30)
-
 _11 busca(s) abaixo do teto de 10 não foram conferidas — os números delas são os globais._
 
 ## 2. 📉 CTR baixo (boa posição, poucos cliques — reescrever title/meta na Fase 2)
@@ -73,18 +71,6 @@ _11 busca(s) abaixo do teto de 10 não foram conferidas — os números delas s�
 | · | que es saldo pendiente | 3 | 10 | — | 0% | ~2.5% | `/es/posts/es-entiende-que-es-el-saldo-pendiente-y-como-evitarlo/` |
 | · | que es un gasto recurrente | 3 | 8.3 | — | 0% | ~3.2% | `/es/glossario/es-gasto-recurrente/` |
 | · | que significa saldo pendiente | 3 | 9.7 | — | 0% | ~2.5% | `/es/posts/es-entiende-que-es-el-saldo-pendiente-y-como-evitarlo` |
-
-**🤖 Por que estas não são oportunidade:**
-- **como reduzir gastos mensais** — só 0 aparições no mercado pt (mínimo 30)
-- **o que significa saldo pendente** — só 17 aparições no mercado pt (mínimo 30)
-- **is credit card worth it 2026** — só 0 aparições no mercado en (mínimo 30)
-- **o que é saldo pendente** — só 13 aparições no mercado pt (mínimo 30)
-- **gasto recurrente** — só 9 aparições no mercado es (mínimo 30)
-- **mobills alternative** — só 0 aparições no mercado en (mínimo 30)
-- **saldo em aberto** — só 7 aparições no mercado pt (mínimo 30)
-- **saldo em aberto o que significa** — só 7 aparições no mercado pt (mínimo 30)
-- **ted pix** — só 4 aparições no mercado en (mínimo 30)
-- **gasto recurrente definicion** — só 4 aparições no mercado es (mínimo 30)
 
 _10 busca(s) abaixo do teto de 10 não foram conferidas — os números delas são os globais._
 
