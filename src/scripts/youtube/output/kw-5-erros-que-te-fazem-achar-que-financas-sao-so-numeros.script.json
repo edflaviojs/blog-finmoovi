@@ -1,0 +1,219 @@
+{
+  "slug": "kw-5-erros-que-te-fazem-achar-que-financas-sao-so-numeros",
+  "term": "5 erros que te fazem achar que finanças são só números",
+  "category": "mindset",
+  "keyword": "finanças",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "*Você sabe que cinco erros podem fazer você achar que finanças são só números?*"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ralo",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você sabe que cinco erros podem fazer você achar que finanças são só números? É que nem deixar dinheiro escapar pelo ralo.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "Você",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro escapa?"
+          }
+        },
+        {
+          "anchor": "cinco",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "ralo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "A gente trabalha, recebe, paga as contas e deixa o resto pra depois. E é aí que os erros começam.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "gente",
+          "visual": {
+            "type": "statement",
+            "text": "Rotina diária"
+          }
+        },
+        {
+          "anchor": "paga",
+          "visual": {
+            "type": "icon",
+            "icon": "money"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "deixa",
+          "visual": {
+            "type": "statement",
+            "text": "O resto?"
+          }
+        },
+        {
+          "anchor": "erros",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Eu descobri que um lanche de cento e cinquenta reais por mês pode virar mil e oitocentos reais por ano. É um valor que pode fazer diferença.",
+      "durationSec": 10.4,
+      "shots": [
+        {
+          "anchor": "descobri",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Resumo mensal"
+          },
+          "sfx": "typewriter"
+        },
+        {
+          "anchor": "cinquenta",
+          "visual": {
+            "type": "number",
+            "text": "R$ 150"
+          }
+        },
+        {
+          "anchor": "oitocentos",
+          "visual": {
+            "type": "statement",
+            "text": "Ano total"
+          },
+          "sfx": "coin"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu somei esses gastos no FinMoovi e ele me mostrou como esse valor pode crescer. É impressionante.",
+      "durationSec": 6.5,
+      "shots": [
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "extrato",
+            "note": "Gastos acumulados"
+          }
+        },
+        {
+          "anchor": "pode",
+          "visual": {
+            "type": "statement",
+            "text": "Cresce rápido"
+          },
+          "sfx": "boom"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver como os seus gastos podem crescer? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 5.4,
+      "shots": [
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "statement",
+            "text": "Veja seus gastos"
+          }
+        },
+        {
+          "anchor": "seus",
+          "visual": {
+            "type": "icon",
+            "icon": "growth"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Dinheiro sem controle é dinheiro dos outros. Não deixe os erros te fazerem perder dinheiro.",
+      "durationSec": 5.8,
+      "shots": [
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Sem controle"
+          }
+        },
+        {
+          "anchor": "outros",
+          "visual": {
+            "type": "icon",
+            "icon": "shield"
+          },
+          "sfx": "alert"
+        },
+        {
+          "anchor": "erros",
+          "visual": {
+            "type": "statement",
+            "text": "Te custam"
+          }
+        },
+        {
+          "anchor": "perder",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Controle seus gastos agora",
+    "target": "app"
+  },
+  "totalDurationSec": 44.3
+}
