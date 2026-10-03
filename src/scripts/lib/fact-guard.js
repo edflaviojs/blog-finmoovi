@@ -45,6 +45,59 @@ const STUDY_RE = /\b(estudos?|pesquisas?|levantamentos?|surveys?|study|studies|r
 const ATTR_RE = /\b(de acordo com|segundo (?:o|a|os|as|um|uma|dados|estudos?|pesquisas?)|conforme (?:o|a|os|as|um|uma|dados)|apontou|revelou|mostrou que|according to|based on a|seg[uu]n (?:un|una|el|la|datos|estudios?)|de acuerdo con)\b/i;
 // Porcentagem explicita (o formato classico da estatistica inventada).
 const PCT_RE = /\d+([.,]\d+)?\s*%/;
+
+/**
+ * ♦ 03/10/2026 — CONSERTO Nº6: A REGUA DAS FLAGS ERA GROSSA, E POR ISSO NINGUEM LIA.
+ *
+ * 🔴 O relatorio de 02/10 dizia: **495 posts · limpos: 0 · com flags: 66**. O
+ * detector funcionava, corria todos os dias as 05h, escrevia em press/fact-guard.md
+ * — **e nada acontecia**. Duas causas, e as duas importam:
+ *
+ *   1. o relatorio nao chegava a ninguem (ver o aviso no digest diario);
+ *   2. **a regua marcava frases que nao sao estatistica nenhuma.**
+ *
+ * O teste antigo era `ATTR_RE && !link && /[A-ZA-Y]/` — ou seja, "tem uma expressao
+ * de atribuicao" mais "tem uma letra maiuscula algures". Isso marcava:
+ *
+ *     "Ajuste o limite de acordo com a realidade da sua familia."
+ *     "Pode ser necessario pagar multa, de acordo com o contrato."
+ *
+ * Nenhuma das duas cita fonte nenhuma. **Quando metade de um aviso e ruido, o aviso
+ * inteiro deixa de ser lido** — e foi o que aconteceu durante meses.
+ *
+ * A regua nova exige as TRES coisas na mesma frase: atribuicao **+ instituicao
+ * nomeada + numero**. E o padrao exacto da estatistica inventada em conteudo de
+ * dinheiro, e e o que o Google avalia como confianca.
+ */
+const INSTITUICAO_RE = new RegExp(
+  '\\b('
+  // As que de facto aparecem no acervo deste blog, medidas em 03/10/2026.
+  + 'banco central( do brasil)?|bacen|bcb|ibge|serasa( experian)?|spc( brasil)?'
+  + '|febraban|anbima|fgv|ipea|dieese|fecom[ée]rcio|abecip|procon|idec'
+  + '|receita federal|tesouro( nacional| direto)?|cvm|b3|caixa econ[oô]mica|fgc'
+  + '|banco mundial|world bank|ocde|oecd|fmi|imf|onu|unesco|oms|who'
+  + '|investopedia|nerdwallet|statista|forbes|bloomberg|reuters'
+  + '|pwc|deloitte|kpmg|mckinsey|ey|accenture|gartner'
+  // Padrao generico: "Instituto/Fundacao/Universidade/Agencia + Nome proprio".
+  + '|(instituto|funda[çc][ãa]o|universidade|ag[êe]ncia|confedera[çc][ãa]o|federa[çc][ãa]o|associa[çc][ãa]o|sindicato|minist[ée]rio|secretaria)\\s+[A-ZÁÉÍÓÚÂÊÔÃÕÇ]'
+  + ')\\b', 'i',
+);
+
+/**
+ * Numero que, numa frase de atribuicao, e o que se esta a afirmar: percentagem,
+ * valor em dinheiro, ou quantidade grande.
+ *
+ * ⚠️ Nao entra qualquer digito. "de acordo com o artigo 5" nao e estatistica.
+ */
+const NUMERO_AFIRMADO_RE = /(\d+([.,]\d+)?\s*%|R\$\s?\d|US\$\s?\d|€\s?\d|\b\d+([.,]\d+)?\s*(mil|milh[õo]es|bilh[õo]es|milhares)\b)/i;
+
+/**
+ * Esta frase afirma um NUMERO atribuido a uma INSTITUICAO? (o padrao da
+ * estatistica inventada). Exportada para a prova de mesa poder medi-la sozinha.
+ */
+export function afirmaNumeroDeFonte(frase) {
+  return ATTR_RE.test(frase) && INSTITUICAO_RE.test(frase) && NUMERO_AFIRMADO_RE.test(frase);
+}
 // Placeholder de link mascarado (nao aparece em markdown nem colide com numeros).
 const PH_RE = /@@L(\d+)@@/g;
 
@@ -94,7 +147,9 @@ export function analyzeContent(body, { minKeepRatio = 0.6, minWords = 250 } = {}
     for (const s of sentences) {
       const isClaim = STUDY_RE.test(s) && (PCT_RE.test(s) || ATTR_RE.test(s));
       if (isClaim && !trustedIn(s)) { cuts.push(restore(s).trim()); continue; }          // CORTA
-      if (ATTR_RE.test(s) && !trustedIn(s) && /[A-ZA-Y]/.test(s)) flags.push(restore(s).trim()); // sinaliza
+      // ♦ 03/10/2026 — regua apertada: atribuicao + INSTITUICAO + NUMERO na mesma
+      // frase. Ver `afirmaNumeroDeFonte` e o porque la em cima.
+      if (afirmaNumeroDeFonte(s) && !trustedIn(s)) flags.push(restore(s).trim()); // sinaliza
       rebuilt.push(s);
     }
     kept.push(restore(rebuilt.join('')));

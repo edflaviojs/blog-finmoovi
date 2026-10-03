@@ -768,6 +768,78 @@ function htmlEmails(emailRuns) {
   return `${sectionTitle('📧 E-mails enviados', emailRuns.length, '#58a6ff')}<table style="width:100%;border-collapse:collapse;">${rows}</table>`;
 }
 
+/**
+ * ♦ 03/10/2026 — CONSERTO Nº6, SEGUNDA METADE: O FACT FIREWALL CHEGA AO E-MAIL.
+ *
+ * 🔴 O detector de número sem fonte corria **todos os dias às 05h**, escrevia o
+ * resultado em `press/fact-guard.md` — e **ninguém abria esse ficheiro**. O
+ * relatório de 02/10 dizia *«495 posts · limpos: 0 · com flags: 66»*: sessenta e
+ * seis textos sinalizados, **zero acções**, durante meses.
+ *
+ * E o que ele listava, pelo nome, eram exactamente os problemas que uma avaliação
+ * externa «descobriu» a 02/10 lendo o site — incluindo o artigo da água.
+ *
+ * Em finanças isto não é formalidade: número atribuído a uma instituição sem fonte
+ * é o que o Google avalia como falta de confiança. Por isso sobe para o e-mail que
+ * o dono já recebe, junto do resto que importa.
+ *
+ * ⚠️ **E avisa quando o próprio relatório está velho.** Um detector parado é
+ * indistinguível de um blog sem problemas — a diferença só se vê na data. É a mesma
+ * lição de «verde não prova entrega».
+ */
+function htmlFactGuard(hojeISO) {
+  const COR = '#f85149';
+  let md;
+  try {
+    md = readFileSync(join(process.cwd(), 'press', 'fact-guard.md'), 'utf-8');
+  } catch {
+    return `${sectionTitle('🛡️ Números sem fonte', undefined, '#d29922')}`
+      + emptyLine('O Fact Firewall ainda não escreveu relatório nenhum.');
+  }
+
+  const gerado = (md.match(/\*\*Gerado em:\*\*\s*(\S+)/) || [])[1] || null;
+  const flags = Number((md.match(/com flags:\s*(\d+)/) || [])[1] ?? NaN);
+  const limpos = Number((md.match(/limpos:\s*(\d+)/) || [])[1] ?? NaN);
+
+  // Quantos dias tem o relatório? Acima de 2, o detector provavelmente parou.
+  let idadeDias = null;
+  if (gerado) {
+    const t = Date.parse(gerado);
+    if (!Number.isNaN(t)) idadeDias = Math.floor((Date.parse(hojeISO) - t) / 86400000);
+  }
+
+  if (!Number.isFinite(flags)) {
+    return `${sectionTitle('🛡️ Números sem fonte', undefined, '#d29922')}`
+      + emptyLine('Relatório do Fact Firewall ilegível — conferir `press/fact-guard.md`.');
+  }
+
+  let html = sectionTitle('🛡️ Números sem fonte', flags, flags > 0 ? COR : '#3fb950');
+
+  if (idadeDias != null && idadeDias >= 2) {
+    html += `<p style="color:#d29922;font-size:13px;margin:4px 0 8px;">⚠️ <b>Este número tem ${idadeDias} dias.</b> O Fact Firewall corre todos os dias — se a data não avança, ele parou.</p>`;
+  }
+
+  if (flags === 0) {
+    html += emptyLine('Nenhum texto afirma número de instituição sem a fonte. 🎉');
+    return html;
+  }
+
+  // Os primeiros nomes, para a decisão não exigir abrir ficheiro nenhum.
+  const nomes = [...md.matchAll(/^\*\*(.+?\.md)\*\*$/gm)].map(m => m[1]).slice(0, 6);
+  const linhas = nomes.map(n => `
+    <tr><td style="padding:6px 0;border-bottom:1px solid #21262d;color:#c9d1d9;font-size:13px;">📄 ${esc(n)}</td></tr>`).join('');
+
+  html += `<p style="color:#c9d1d9;font-size:13px;margin:4px 0 8px;"><b>${flags}</b> texto(s) afirmam um número de instituição <b>sem link para a fonte</b>. Em conteúdo de dinheiro, isso é o que o Google lê como falta de confiança.</p>`;
+  if (linhas) html += `<table style="width:100%;border-collapse:collapse;">${linhas}</table>`;
+  if (nomes.length < flags) {
+    html += emptyLine(`… e mais ${flags - nomes.length}. Lista completa em <code>press/fact-guard.md</code>.`);
+  }
+  if (limpos === 0) {
+    html += `<p style="color:#8b949e;font-size:12px;margin:8px 0 0;">Nenhuma correcção automática foi aplicada: estas frases precisam da fonte <b>ou</b> de sair do texto — e isso é decisão de quem escreve.</p>`;
+  }
+  return html;
+}
+
 function htmlPendencias(pendencias) {
   if (pendencias.length === 0) {
     return `${sectionTitle('📋 Pendências', 0, '#d29922')}${emptyLine('Nenhuma pendência registrada. 🎉')}`;
@@ -918,6 +990,14 @@ async function main() {
     sections.push(htmlVideoLongo());
   } catch (err) {
     sections.push(warnBlock('🎬 Vídeo longo', err.message));
+  }
+
+  // 1-ter-3. Os números sem fonte (perto do topo: em conteúdo de dinheiro, é o
+  // que o Google lê como confiança — e o detector já existia e ninguém o lia).
+  try {
+    sections.push(htmlFactGuard(new Date().toISOString().split('T')[0]));
+  } catch (err) {
+    sections.push(warnBlock('🛡️ Números sem fonte', err.message));
   }
 
   // 1-quater. A limpeza das capas com letras — o dono pediu a progressão em
