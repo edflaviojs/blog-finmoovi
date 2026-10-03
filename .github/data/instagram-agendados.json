@@ -19187,5 +19187,114 @@
         "publicaEmBR": "04/10 às 14h31"
       }
     }
+  },
+  "kw-5-erros-ao-financiar-seu-casa-minha-vida": {
+    "midias": {
+      "video": {
+        "id": "2853be95-2c2f-4401-ac99-823261bd2be0",
+        "name": "j7lEiGoCFQ.mp4",
+        "originalName": null,
+        "path": "https://media.help4desk.com/j7lEiGoCFQ.mp4",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capa": {
+        "id": "daa46d22-e367-45ea-9111-42d58e4bc5b2",
+        "name": "A4kwwg4RCU.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/A4kwwg4RCU.jpeg",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capaLarga": {
+        "id": "09f466dc-394f-4268-ba1c-1cc176bdb1f4",
+        "name": "aLrYCWsOPV.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/aLrYCWsOPV.jpeg",
+        "thumbnail": null,
+        "alt": null
+      }
+    },
+    "publicaEm": "2026-10-03T22:00:00.000Z",
+    "publicaEmBR": "03/10 às 19h00",
+    "agendadoEm": "2026-10-03T18:42:17.303Z",
+    "atualizadoEm": "2026-10-03T18:42:20.441Z",
+    "redes": {
+      "instagram": {
+        "postId": "cmusqoayv0054rx95ftfx7qq6",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-03T22:00:00.000Z",
+        "publicaEmBR": "03/10 às 19h00",
+        "midia": "o vídeo",
+        "caracteres": 692,
+        "limite": 2200
+      },
+      "zernio-tiktok": {
+        "postId": "cmusqoba80055rx95r2ux1y0d",
+        "canal": "finmoovi",
+        "publicaEm": "2026-10-03T22:12:00.000Z",
+        "publicaEmBR": "03/10 às 19h12",
+        "midia": "o vídeo",
+        "caracteres": 269,
+        "limite": 2200
+      },
+      "facebook": {
+        "postId": "cmusqobmq0056rx95slxsb1ds",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-03T22:26:00.000Z",
+        "publicaEmBR": "03/10 às 19h26",
+        "midia": "o vídeo",
+        "caracteres": 462,
+        "limite": 63206
+      },
+      "linkedin-page": {
+        "postId": "cmusqobxu0057rx95svkjen31",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-03T22:43:00.000Z",
+        "publicaEmBR": "03/10 às 19h43",
+        "midia": "o vídeo",
+        "caracteres": 468,
+        "limite": 3000
+      },
+      "threads": {
+        "postId": "cmusqoc8k0058rx95v6x0aref",
+        "canal": "finmoovi",
+        "publicaEm": "2026-10-03T22:58:00.000Z",
+        "publicaEmBR": "03/10 às 19h58",
+        "midia": "o vídeo",
+        "caracteres": 127,
+        "limite": 500
+      },
+      "pinterest": {
+        "postId": "cmusqocuq0059rx95hweh6db7",
+        "canal": "finmoovi",
+        "publicaEm": "2026-10-03T23:31:00.000Z",
+        "publicaEmBR": "03/10 às 20h31",
+        "midia": "vídeo primeiro, capa depois — a ordem que o Pinterest exige",
+        "caracteres": 445,
+        "limite": 500
+      },
+      "bluesky": {
+        "postId": "cmusqod5d005arx955kz2ur4c",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-03T23:47:00.000Z",
+        "publicaEmBR": "03/10 às 20h47",
+        "midia": "vai a capa DEITADA (o Bluesky não publica vídeo, e a em pé ficaria cortada no feed)",
+        "caracteres": 84,
+        "limite": 300
+      },
+      "instagram-story": {
+        "postId": "cmusqoddr005brx95u8kasfze",
+        "tipo": "vídeo",
+        "publicaEm": "2026-10-03T22:05:00.000Z",
+        "publicaEmBR": "03/10 às 19h05"
+      },
+      "facebook-story": {
+        "postId": "cmusqodi2005crx95fig4ywiw",
+        "tipo": "vídeo",
+        "publicaEm": "2026-10-03T22:31:00.000Z",
+        "publicaEmBR": "03/10 às 19h31"
+      }
+    }
   }
 }
