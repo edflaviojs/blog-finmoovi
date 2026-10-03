@@ -242,11 +242,30 @@ async function conferirRealidade(lista, period, rotulo) {
   return { conferidas, porConferir };
 }
 
-/** A marca que vai na tabela: o que a busca é de verdade, em dois caracteres. */
+/**
+ * A marca que vai na tabela — e **cada uma pede uma acção diferente**.
+ *
+ * 🔴 **Isto nasceu de um erro meu, apanhado na primeira corrida a sério
+ * (03/10/2026, corrida 37106203626).** A primeira versão tinha dois selos, e
+ * carimbava *«não é oportunidade»* em buscas que apenas **ainda não têm gente
+ * suficiente** — *«o que significa saldo pendente»*, com 17 aparições no Brasil, é
+ * procura legítima e pequena. Chamar-lhe robô é **acusação falsa**, e é o mesmo
+ * defeito contra o qual esta trava foi escrita.
+ *
+ * *«Não sei»* e *«é falso»* são conclusões diferentes. Uma manda esperar, a outra
+ * manda ignorar — e uma terceira manda procurar backlinks em vez de mexer no
+ * título. Juntá-las num símbolo só devolve o relatório à mentira que ele existe
+ * para corrigir.
+ */
 function selo(o) {
   if (!o.realidade) return '·';
   if (o.realidade.ok) return '✅';
-  return '🤖';
+  switch (o.realidade.razao) {
+    case 'amostra': return '⏳';   // pouca gente ainda — esperar, não acusar
+    case 'posicao': return '📉';   // aparece, mas lá atrás — é backlink, não título
+    case 'erro': return '⚠️';     // não deu para conferir — e isso não é aprovação
+    default: return '🤖';          // mercado, aparelho ou pico: não é o nosso público
+  }
 }
 
 /**
@@ -269,18 +288,42 @@ function legendaDaRealidade(opportunities) {
     return '> ⚠️ **O filtro de realidade está DESLIGADO** (`GSC_FILTRO_REALIDADE=0`). Os números abaixo são os globais, sem conferência — foi assim que a casa perseguiu um fantasma durante três semanas em setembro.\n\n';
   }
   if (!conferidas) return '';
-  return `> **Como ler:** ✅ = procura real, do nosso mercado · 🤖 = **não é oportunidade** (tráfego de fora, só computador, ou pico já passado) · · = não conferida.\n`
-    + `> A coluna **Posição NO MERCADO** é a que conta. 🔴 marca as que saltam 20 posições ou mais entre a global e a real — foi uma dessas (8 global, 84 no Brasil) que guiou o SEO de setembro para o lado errado.\n\n`;
+  return '> **Como ler — cada marca pede uma coisa diferente:**\n'
+    + '>\n'
+    + '> | | O que é | O que fazer |\n'
+    + '> |---|---|---|\n'
+    + '> | ✅ | procura real, do nosso mercado | **mexer no título vale a pena** |\n'
+    + '> | ⏳ | ainda com pouca gente para dizer | **esperar** — não é defeito, é cedo |\n'
+    + '> | 📉 | aparece, mas lá atrás na busca | **é backlink, não título** |\n'
+    + '> | 🤖 | tráfego que não é o nosso público | **ignorar** |\n'
+    + '> | ⚠️ | não deu para conferir | tratar como não conferida |\n'
+    + '> | · | fora do teto de conferência | os números são os globais |\n'
+    + '>\n'
+    + '> A coluna **Posição NO MERCADO** é a que conta. 🔴 marca as que saltam 20 posições ou mais entre a global e a real — foi uma dessas (**8 global, 84 no Brasil**) que guiou o SEO de setembro para o lado errado.\n\n';
 }
 
 /** O porquê de cada 🤖, por baixo da tabela — um filtro que corta calado não serve. */
 function notasDaRealidade(lista) {
-  const falsas = lista.filter(o => o.realidade && !o.realidade.ok);
   const semConferir = lista.filter(o => !o.realidade).length;
   let md = '';
-  if (falsas.length) {
-    md += `\n**🤖 Por que estas não são oportunidade:**\n`;
-    for (const o of falsas) md += `- **${o.query}** — ${o.realidade.motivo}\n`;
+
+  // ⚠️ Separadas de propósito: juntar «é falso» com «ainda não sei» num bloco só
+  // era exactamente o defeito da primeira versão (ver `selo`).
+  const fantasmas = lista.filter(o => o.realidade && !o.realidade.ok
+    && ['mercado', 'aparelho', 'pico'].includes(o.realidade.razao));
+  const cedo = lista.filter(o => o.realidade?.razao === 'amostra');
+  const atras = lista.filter(o => o.realidade?.razao === 'posicao');
+
+  if (fantasmas.length) {
+    md += `\n**🤖 Não é oportunidade — o tráfego não é o nosso público:**\n`;
+    for (const o of fantasmas) md += `- **${o.query}** — ${o.realidade.motivo}\n`;
+  }
+  if (atras.length) {
+    md += `\n**📉 Aparece, mas lá atrás — trabalhar o título aqui não muda nada:**\n`;
+    for (const o of atras) md += `- **${o.query}** — ${o.realidade.motivo}\n`;
+  }
+  if (cedo.length) {
+    md += `\n**⏳ Ainda cedo para dizer (não é defeito):** ${cedo.map(o => `\`${o.query}\``).join(' · ')}\n`;
   }
   if (semConferir) {
     // Nunca cortar em silêncio: quem lê tem de saber que há linhas por conferir.

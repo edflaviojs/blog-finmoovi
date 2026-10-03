@@ -212,7 +212,7 @@ export async function avaliarRealidadeDe({ dimensao = 'page', valor, period, loc
     // ⚠️ Se a medição falhar, NÃO se deixa passar por omissão. Agir sobre número
     // que não se conseguiu conferir é exactamente o que este filtro existe para
     // impedir — e falhar a medir não é prova de que o tráfego é bom.
-    return { ok: false, motivo: `não deu para medir a realidade (${String(e.message).slice(0, 80)})`, erro: true };
+    return { ok: false, razao: 'erro', motivo: `não deu para medir a realidade (${String(e.message).slice(0, 80)})`, erro: true };
   }
 
   const doMercado = porPaisAparelho.filter((r) => mercados.includes(String(r.keys?.[0]).toLowerCase()));
@@ -234,17 +234,47 @@ export async function avaliarRealidadeDe({ dimensao = 'page', valor, period, loc
     fracaoMovel,
   };
 
-  if (mercado.impressoes < R.impressoesMinimasNoMercado) {
-    return { ...base, ok: false, motivo: `só ${mercado.impressoes} aparições no mercado ${idioma} (mínimo ${R.impressoesMinimasNoMercado})` };
+  /**
+   * ⚠️ **A ORDEM DESTES TESTES FOI CORRIGIDA A 03/10/2026, e a razão importa.**
+   *
+   * A primeira versão testava a amostra **antes** do mercado — e o resultado, na
+   * primeira corrida a sério, foi o relatório marcar como *«não é oportunidade»*
+   * buscas que apenas **não têm gente suficiente ainda**. *«o que significa saldo
+   * pendente»*, com 17 aparições no Brasil, é procura legítima e pequena; chamar-lhe
+   * robô é **acusação falsa**.
+   *
+   * 🔴 *«Não sei»* e *«é falso»* são conclusões diferentes e pedem ações opostas:
+   * uma manda esperar, a outra manda ignorar. Misturá-las é o mesmo erro que
+   * [[regua-grossa-demais-inventa-defeito]] — e eu cometi-o a escrever a trava
+   * contra ele.
+   *
+   * Por isso o campo `razao` existe, e por isso o teste do mercado vem primeiro:
+   * **só se chama fantasma a uma busca que TEM procura (≥100 aparições) e cuja
+   * procura não é nossa.** Com menos do que isso, a resposta é «ainda não sei».
+   */
+  if (tudo.impressoes >= R.impressoesParaJulgarPico && fracaoDoMercado < R.fracaoMinimaDoMercado) {
+    return {
+      ...base, ok: false, razao: 'mercado',
+      motivo: `${tudo.impressoes} aparições, mas só ${(fracaoDoMercado * 100).toFixed(0)}% vêm do mercado ${idioma} — há procura, mas não é a nossa`,
+    };
   }
-  if (fracaoDoMercado < R.fracaoMinimaDoMercado) {
-    return { ...base, ok: false, motivo: `só ${(fracaoDoMercado * 100).toFixed(0)}% das aparições vêm do mercado ${idioma}` };
+  if (mercado.impressoes < R.impressoesMinimasNoMercado) {
+    return {
+      ...base, ok: false, razao: 'amostra',
+      motivo: `só ${mercado.impressoes} aparições no mercado ${idioma} (mínimo ${R.impressoesMinimasNoMercado}) — ainda não dá para dizer nada`,
+    };
   }
   if (mercado.posicao != null && mercado.posicao > R.posicaoMaximaNoMercado) {
-    return { ...base, ok: false, motivo: `posição ${mercado.posicao.toFixed(0)} no mercado ${idioma} (a global dizia ${tudo.posicao?.toFixed(0)}) — o problema é não aparecer, não o CTR` };
+    return {
+      ...base, ok: false, razao: 'posicao',
+      motivo: `posição ${mercado.posicao.toFixed(0)} no mercado ${idioma} (a global dizia ${tudo.posicao?.toFixed(0)}) — o problema é não aparecer, não o CTR`,
+    };
   }
   if (mercado.impressoes >= R.impressoesParaJulgarAparelho && fracaoMovel < R.fracaoMinimaTelemovel) {
-    return { ...base, ok: false, motivo: `só ${(fracaoMovel * 100).toFixed(0)}% em telemóvel — assinatura de robô, não de gente` };
+    return {
+      ...base, ok: false, razao: 'aparelho',
+      motivo: `só ${(fracaoMovel * 100).toFixed(0)}% em telemóvel — assinatura de robô, não de gente`,
+    };
   }
 
   // ── Corte 1: a forma no tempo, em janela larga (90 dias) ──────────────────
@@ -255,7 +285,7 @@ export async function avaliarRealidadeDe({ dimensao = 'page', valor, period, loc
       ...noventa, dimensions: ['date'], rowLimit: 200, filters: filtroPagina,
     });
   } catch (e) {
-    return { ...base, ok: false, motivo: `não deu para medir a forma no tempo (${String(e.message).slice(0, 80)})`, erro: true };
+    return { ...base, ok: false, razao: 'erro', motivo: `não deu para medir a forma no tempo (${String(e.message).slice(0, 80)})`, erro: true };
   }
 
   const dias = porDia
@@ -286,11 +316,12 @@ export async function avaliarRealidadeDe({ dimensao = 'page', valor, period, loc
     return {
       ...forma,
       ok: false,
+      razao: 'pico',
       motivo: `pico já passado: ${(fracaoNoTopo * 100).toFixed(0)}% das aparições em ${Math.min(dias.length, 10)} dia(s) e só ${(fracaoRecente * 100).toFixed(0)}% nas últimas 2 semanas`,
     };
   }
 
-  return { ...forma, ok: true, motivo: 'passou os quatro cortes' };
+  return { ...forma, ok: true, razao: 'real', motivo: 'passou os quatro cortes' };
 }
 
 /**

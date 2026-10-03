@@ -48,7 +48,7 @@ test('lacunas e canibalização NÃO são conferidas — e o porquê está escri
 });
 
 test('o motivo de cada busca rejeitada vai no relatório — filtro que corta calado não serve', () => {
-  assert.match(FONTE, /Por que estas não são oportunidade/);
+  assert.match(FONTE, /Não é oportunidade/);
   assert.match(FONTE, /realidade\.motivo/);
 });
 
@@ -82,4 +82,50 @@ test('a legenda explica os selos — senão o símbolo não quer dizer nada', ()
   assert.match(FONTE, /Como ler/);
   assert.match(FONTE, /🤖/);
   assert.match(FONTE, /✅/);
+});
+
+/**
+ * 🔴 O DEFEITO QUE A PRIMEIRA CORRIDA A SÉRIO APANHOU — 03/10, corrida 37106203626.
+ *
+ * A primeira versão tinha DOIS selos e carimbava «não é oportunidade» em buscas que
+ * apenas ainda não têm gente: *«o que significa saldo pendente»*, com 17 aparições
+ * no Brasil, é procura legítima e pequena. **Acusação falsa** — e pelo mesmo defeito
+ * contra o qual esta trava foi escrita.
+ *
+ * «Não sei», «é falso» e «aparece lá atrás» pedem acções opostas: esperar, ignorar,
+ * e procurar backlinks. Um símbolo só para as três devolve o relatório à mentira.
+ */
+test('🔴 "ainda não sei" NÃO pode ser carimbado como "é falso"', () => {
+  assert.match(FONTE, /case 'amostra': return '⏳'/,
+    'pouca gente ainda = esperar, nunca acusar');
+  assert.match(FONTE, /case 'posicao': return '📉'/,
+    'aparecer lá atrás é problema de backlink, não de título');
+  assert.match(FONTE, /case 'erro': return '⚠️'/,
+    'falhar a conferir não é aprovação');
+});
+
+test('os motivos vão em blocos SEPARADOS, não num saco só', () => {
+  assert.match(FONTE, /Não é oportunidade — o tráfego não é o nosso público/);
+  assert.match(FONTE, /Aparece, mas lá atrás/);
+  assert.match(FONTE, /Ainda cedo para dizer \(não é defeito\)/);
+});
+
+/**
+ * ⚠️ CASO FALSO DE CONTROLO da régua nova: a mesma busca com números diferentes
+ * tem de dar vereditos diferentes. Sem isto, bastava um `return 'amostra'` sempre.
+ */
+test('🔴 fantasma e "ainda cedo" distinguem-se pelo VOLUME, não pelo gosto', () => {
+  const R = { impressoesParaJulgarPico: 100, fracaoMinimaDoMercado: 0.5, impressoesMinimasNoMercado: 30 };
+  const classifica = (totais, noMercado) => {
+    if (totais >= R.impressoesParaJulgarPico && (noMercado / totais) < R.fracaoMinimaDoMercado) return 'mercado';
+    if (noMercado < R.impressoesMinimasNoMercado) return 'amostra';
+    return 'ok';
+  };
+
+  // O caso real: 946 aparições, ZERO do Brasil → há procura, não é nossa.
+  assert.equal(classifica(946, 0), 'mercado');
+  // «o que significa saldo pendente»: 18 no total, 17 do Brasil → é cedo, não é robô.
+  assert.equal(classifica(18, 17), 'amostra');
+  // E uma busca saudável passa.
+  assert.equal(classifica(200, 180), 'ok');
 });
