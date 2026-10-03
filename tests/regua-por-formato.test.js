@@ -141,6 +141,27 @@ test('uma régua passada à mão ganha ao formato — é o que as provas de mesa
 
 // ── A mistura dos dois formatos na mesma lista ──────────────────────────────
 
+/**
+ * ⚠️ O DEFEITO QUE SÓ A CORRIDA A SÉRIO MOSTROU — 03/10/2026, corrida 37105043821.
+ *
+ * O relatório trouxe dois vídeos **duas vezes cada** e contou 13 longos onde o
+ * canal tem 11: a lista de envios do YouTube devolve o mesmo vídeo em páginas
+ * diferentes quando a playlist mexe entre pedidos.
+ *
+ * Um vídeo contado duas vezes **entra duas vezes na mediana e no aviso** — e
+ * ninguém repara a olhar para o relatório. Nenhuma prova de mesa apanharia isto,
+ * porque o defeito estava na forma como o YouTube pagina. Fica aqui a conta que
+ * prova a consequência, para ninguém tirar as duas trancas.
+ */
+test('🔴 um vídeo repetido ENVIESA o aviso — por isso há duas trancas', () => {
+  const unicos = [v('a', 0.20, 100, 'longo'), v('b', 0.80, 100, 'longo')];
+  const comRepetido = [...unicos, v('a', 0.20, 100, 'longo')];
+
+  assert.equal(avaliarRetencao(unicos).abaixo.length, 1);
+  assert.equal(avaliarRetencao(comRepetido).abaixo.length, 2,
+    'o mesmo vídeo mau apareceria DUAS vezes na lista de acusados');
+});
+
 test('🔴 numa lista misturada, cada vídeo é julgado pela SUA régua', () => {
   const misturado = [
     v('short-bom', 0.85, 100, 'short'),   // passa nos 70%

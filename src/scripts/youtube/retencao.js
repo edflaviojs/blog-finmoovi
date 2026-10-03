@@ -293,7 +293,18 @@ async function listarLongosDoCanal(token, registo = {}) {
   const playlist = canal?.items?.[0]?.contentDetails?.relatedPlaylists?.uploads;
   if (!playlist) throw new Error('O canal não devolveu a lista de envios.');
 
-  // 2. Todos os ids, de 50 em 50.
+  /**
+   * 2. Todos os ids, de 50 em 50.
+   *
+   * 🔴 **SEM REPETIDOS, e isto não é zelo — foi medido.** Na primeira corrida a
+   * valer (03/10, corrida 37105043821) o relatório trouxe
+   * `dono-dois-homens-mesma-idade-mesmo-trabalho` e `S94DvB7yTZM` **duas vezes
+   * cada**, e a contagem deu 13 longos quando o canal tem 11. A lista de envios do
+   * YouTube devolve o mesmo vídeo em páginas diferentes quando a playlist mexe
+   * entre pedidos — e um vídeo contado duas vezes entra duas vezes na mediana e no
+   * aviso. O `Set` fecha a porta de vez.
+   */
+  const vistos = new Set();
   const ids = [];
   let pagina = '';
   do {
@@ -304,7 +315,7 @@ async function listarLongosDoCanal(token, registo = {}) {
     const dados = await rp.json();
     for (const item of dados.items || []) {
       const id = item?.contentDetails?.videoId;
-      if (id) ids.push(id);
+      if (id && !vistos.has(id)) { vistos.add(id); ids.push(id); }
     }
     pagina = dados.nextPageToken || '';
   } while (pagina);
@@ -395,14 +406,24 @@ async function main() {
     log(`⚠️ Não deu para listar os longos: ${e.message} (os Shorts são medidos na mesma)`);
   }
 
-  // Um longo que também esteja no registo de Shorts não pode entrar duas vezes.
+  /**
+   * Um longo que também esteja no registo de Shorts não pode entrar duas vezes.
+   *
+   * ⚠️ O `jaTem` cresce a cada volta de propósito: é a segunda tranca contra o
+   * vídeo repetido que a corrida de 03/10 revelou. A primeira está no `Set` de
+   * `listarLongosDoCanal`; esta apanha qualquer repetido que venha por outro
+   * caminho — **um vídeo contado duas vezes entra duas vezes na mediana e no
+   * aviso**, e ninguém repara a olhar para o relatório.
+   */
   const jaTem = new Set(videos.map((v) => v.videoId));
   for (const l of longos) {
-    if (jaTem.has(l.videoId)) {
+    const existente = videos.find((x) => x.videoId === l.videoId);
+    if (existente) {
       // Estava marcado como Short por engano do registo: a duração real manda.
-      const v = videos.find((x) => x.videoId === l.videoId);
-      if (v) { v.formato = 'longo'; v.foraDoRegisto = false; }
-    } else {
+      existente.formato = 'longo';
+      existente.foraDoRegisto = false;
+    } else if (!jaTem.has(l.videoId)) {
+      jaTem.add(l.videoId);
       videos.push(l);
     }
   }
