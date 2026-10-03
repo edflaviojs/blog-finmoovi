@@ -4,6 +4,7 @@ definition: "Qué es holding y cómo aparece en tu día a día — explicado de 
 title: "holding - Glosario Financiero"
 description: "Qué es holding y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/holding.webp"
+imageAlt: "Monedas apiladas, gráfico de barras ascendente, plantas verdes y alcancía dorada sobre fondo azul oscuro."
 category: "basico"
 tags: ["holding", "glosario", "finanzas"]
 author: "FinMoovi"

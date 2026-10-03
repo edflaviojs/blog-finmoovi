@@ -4,6 +4,7 @@ definition: "What holding is and how it shows up in your everyday money — expl
 title: "holding - Financial Glossary"
 description: "What holding is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/holding.webp"
+imageAlt: "Gold coins, bars, piggy bank, and green sprouts on a dark blue background."
 category: "basico"
 tags: ["holding", "glossary", "finance"]
 author: "FinMoovi"
