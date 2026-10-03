@@ -1,15 +1,15 @@
 {
-  "medidoEm": "2026-10-01T04:13:42.252Z",
+  "medidoEm": "2026-10-03T07:04:21.442Z",
   "resumo": {
-    "videosMedidos": 169,
-    "comAudiencia": 154,
-    "comCurva": 8,
-    "viewsTotais": 3529,
-    "percentagemMediaDoCanal": 2.6474129870129866,
-    "metadeSaiAosSegundos": 10.375,
-    "ficamAte3s": 1.1016374999999998,
-    "ficamAte50pc": 0.40308749999999993,
-    "ficamAteAoFim": 0.21473750000000003
+    "videosMedidos": 188,
+    "comAudiencia": 173,
+    "comCurva": 16,
+    "viewsTotais": 3857,
+    "percentagemMediaDoCanal": 2.378850867052023,
+    "metadeSaiAosSegundos": 20,
+    "ficamAte3s": 1.0469374999999999,
+    "ficamAte50pc": 0.3306437499999999,
+    "ficamAteAoFim": 0.20143750000000002
   },
   "aviso": {
     "minimo": 0.7,
@@ -82,6 +82,12 @@
         "views": 19
       },
       {
+        "slug": "loop-ipva-e-iptu-ta-perdendo",
+        "videoId": "_DH3-cY7f-w",
+        "percentagemMedia": 0.21,
+        "views": 11
+      },
+      {
         "slug": "loop-trocar-divida-cara-nao-vai-acreditar",
         "videoId": "AeXiOzd_cNo",
         "percentagemMedia": 0.21559999999999999,
@@ -121,7 +127,7 @@
         "slug": "loop-geladeira-nova-se-parar",
         "videoId": "25abddJTGNM",
         "percentagemMedia": 0.29,
-        "views": 21
+        "views": 20
       },
       {
         "slug": "loop-primeiro-guardado-depois-de-anos",
@@ -298,7 +304,337 @@
         "views": 439
       }
     ],
-    "julgados": 74
+    "julgados": 75,
+    "semAudiencia": 100
+  },
+  "avisoPorFormato": {
+    "short": {
+      "minimo": 0.7,
+      "visualizacoesMinimas": 10,
+      "abaixo": [
+        {
+          "slug": "loop-presente-de-natal-comeca-assim",
+          "videoId": "s-rlTP43-Ls",
+          "percentagemMedia": 0,
+          "views": 15
+        },
+        {
+          "slug": "loop-seguro-venceu-ninguem-fala",
+          "videoId": "cexKFOlWnEY",
+          "percentagemMedia": 0,
+          "views": 21
+        },
+        {
+          "slug": "viral-RErIArKiZwg",
+          "videoId": "Z1jkDU8ys8E",
+          "percentagemMedia": 0,
+          "views": 11
+        },
+        {
+          "slug": "loop-escola-ano-que-vem-depois-de-anos",
+          "videoId": "JmQ_LLb5c48",
+          "percentagemMedia": 0,
+          "views": 20
+        },
+        {
+          "slug": "loop-dividir-sem-brigar-ta-perdendo",
+          "videoId": "Iq3IoeU72T8",
+          "percentagemMedia": 0,
+          "views": 25
+        },
+        {
+          "slug": "loop-entrada-do-carro-ta-perdendo",
+          "videoId": "VNKnIOhiEPs",
+          "percentagemMedia": 0,
+          "views": 14
+        },
+        {
+          "slug": "kw-financiamento-de-r-200k",
+          "videoId": "ikMgK4rnawU",
+          "percentagemMedia": 0,
+          "views": 10
+        },
+        {
+          "slug": "erros-cartao-credito",
+          "videoId": "Bm4HH3XQ7co",
+          "percentagemMedia": 0.08380000000000001,
+          "views": 56
+        },
+        {
+          "slug": "viral-byYCL8Tlwg8",
+          "videoId": "pwFjYuWMHHY",
+          "percentagemMedia": 0.1149,
+          "views": 14
+        },
+        {
+          "slug": "viral-jxIC4Ton9-8",
+          "videoId": "-UCqXL9Nwuo",
+          "percentagemMedia": 0.11939999999999999,
+          "views": 40
+        },
+        {
+          "slug": "kw-pagbank-vale-a-pena",
+          "videoId": "q6wghA85cMQ",
+          "percentagemMedia": 0.14859999999999998,
+          "views": 19
+        },
+        {
+          "slug": "loop-ipva-e-iptu-ta-perdendo",
+          "videoId": "_DH3-cY7f-w",
+          "percentagemMedia": 0.21,
+          "views": 11
+        },
+        {
+          "slug": "loop-trocar-divida-cara-nao-vai-acreditar",
+          "videoId": "AeXiOzd_cNo",
+          "percentagemMedia": 0.21559999999999999,
+          "views": 20
+        },
+        {
+          "slug": "loop-viagem-fim-de-ano-se-parar",
+          "videoId": "ygRFrW5Vr-0",
+          "percentagemMedia": 0.2216,
+          "views": 34
+        },
+        {
+          "slug": "kw-anuidade-alta",
+          "videoId": "L4Q9CaKBr4g",
+          "percentagemMedia": 0.24710000000000001,
+          "views": 66
+        },
+        {
+          "slug": "loop-dez-vezes-sem-juros-nao-vai-acreditar",
+          "videoId": "FXFNufT1ko8",
+          "percentagemMedia": 0.2529,
+          "views": 28
+        },
+        {
+          "slug": "kw-perca-r-1-000-por-ano",
+          "videoId": "ebHnXQhrDVU",
+          "percentagemMedia": 0.2555,
+          "views": 100
+        },
+        {
+          "slug": "kw-limite-no-nubank-ate-onde-vai",
+          "videoId": "3VEt_C3CeKM",
+          "percentagemMedia": 0.2633,
+          "views": 18
+        },
+        {
+          "slug": "loop-geladeira-nova-se-parar",
+          "videoId": "25abddJTGNM",
+          "percentagemMedia": 0.29,
+          "views": 20
+        },
+        {
+          "slug": "loop-primeiro-guardado-depois-de-anos",
+          "videoId": "p6RFQTzJ340",
+          "percentagemMedia": 0.2992,
+          "views": 253
+        },
+        {
+          "slug": "loop-reserva-emergencia-faca-isso",
+          "videoId": "-dnPYUrfMRc",
+          "percentagemMedia": 0.3075,
+          "views": 109
+        },
+        {
+          "slug": "kw-erro-ao-usar-amortizacao-price-r-200-mil-a-mais-no-financiam",
+          "videoId": "hP5qcbpdiVo",
+          "percentagemMedia": 0.3221,
+          "views": 16
+        },
+        {
+          "slug": "kw-financiamento-de-moto-vale-a-pena",
+          "videoId": "y_UG8M_4CXI",
+          "percentagemMedia": 0.3488,
+          "views": 41
+        },
+        {
+          "slug": "loop-dentista-das-criancas-voces-viram",
+          "videoId": "5CMkLi8Jtdc",
+          "percentagemMedia": 0.3679,
+          "views": 40
+        },
+        {
+          "slug": "loop-decimo-terceiro-nunca-faca",
+          "videoId": "3o8ptbjjv3g",
+          "percentagemMedia": 0.37060000000000004,
+          "views": 27
+        },
+        {
+          "slug": "loop-primeiro-guardado-nunca-faca",
+          "videoId": "20bcdnrHxg4",
+          "percentagemMedia": 0.37329999999999997,
+          "views": 14
+        },
+        {
+          "slug": "loop-geladeira-nova-comeca-assim",
+          "videoId": "UU8Yb6UXe-Y",
+          "percentagemMedia": 0.3784,
+          "views": 18
+        },
+        {
+          "slug": "loop-remedio-todo-mes-voces-viram",
+          "videoId": "vFz1F3VSQlk",
+          "percentagemMedia": 0.3933,
+          "views": 23
+        },
+        {
+          "slug": "loop-escola-ano-que-vem-comeca-assim",
+          "videoId": "D8Vys28oB7k",
+          "percentagemMedia": 0.4407,
+          "views": 11
+        },
+        {
+          "slug": "aplicacao-financeira",
+          "videoId": "JlIWqKb8Qv8",
+          "percentagemMedia": 0.4551,
+          "views": 12
+        },
+        {
+          "slug": "kw-cartao-virtual-vale-a-pena",
+          "videoId": "0W0Qlr71MyE",
+          "percentagemMedia": 0.4559,
+          "views": 51
+        },
+        {
+          "slug": "loop-material-escolar-e-serio-que",
+          "videoId": "qFWkhnbyNiU",
+          "percentagemMedia": 0.4562,
+          "views": 80
+        },
+        {
+          "slug": "regra-50-30-20-real",
+          "videoId": "jfhJ4HeEEJo",
+          "percentagemMedia": 0.4779,
+          "views": 13
+        },
+        {
+          "slug": "loop-saque-no-cartao-voces-viram",
+          "videoId": "Wbx9UY1K7wg",
+          "percentagemMedia": 0.499,
+          "views": 57
+        },
+        {
+          "slug": "juros-compostos",
+          "videoId": "KtnTi_fctWs",
+          "percentagemMedia": 0.5136999999999999,
+          "views": 15
+        },
+        {
+          "slug": "viral-viz--Cm53l0",
+          "videoId": "N9-kotGrm50",
+          "percentagemMedia": 0.5172,
+          "views": 22
+        },
+        {
+          "slug": "loop-ipva-e-iptu-nunca-faca",
+          "videoId": "fSjAOqhGD3E",
+          "percentagemMedia": 0.5173,
+          "views": 38
+        },
+        {
+          "slug": "cenario-3k-investir",
+          "videoId": "Zh9RKJFPV0o",
+          "percentagemMedia": 0.524,
+          "views": 12
+        },
+        {
+          "slug": "viral-4t_8St6xhPE",
+          "videoId": "NofbVRcGXpo",
+          "percentagemMedia": 0.5563,
+          "views": 11
+        },
+        {
+          "slug": "kw-financiamento-de-r-50-000",
+          "videoId": "iwMaA3Dqg6o",
+          "percentagemMedia": 0.5745,
+          "views": 12
+        },
+        {
+          "slug": "loop-dividir-sem-brigar-comeca-assim",
+          "videoId": "VbtDXoEDo6c",
+          "percentagemMedia": 0.5747,
+          "views": 17
+        },
+        {
+          "slug": "loop-carro-quebrou-comeca-assim",
+          "videoId": "25WE2FjnqR4",
+          "percentagemMedia": 0.5779,
+          "views": 12
+        },
+        {
+          "slug": "acoes",
+          "videoId": "s-2_o9PKpS0",
+          "percentagemMedia": 0.607,
+          "views": 29
+        },
+        {
+          "slug": "loop-trocar-divida-cara-ta-perdendo",
+          "videoId": "WAm6MZFTQwY",
+          "percentagemMedia": 0.6135,
+          "views": 14
+        },
+        {
+          "slug": "loop-plano-de-saude-subiu-ninguem-fala",
+          "videoId": "GVtEczdKfWs",
+          "percentagemMedia": 0.6313,
+          "views": 12
+        },
+        {
+          "slug": "kw-5-erros-que-aumentam-seu-saldo-devedor",
+          "videoId": "EX-IlDW7ZjA",
+          "percentagemMedia": 0.6473,
+          "views": 45
+        },
+        {
+          "slug": "loop-sair-do-aluguel-e-serio-que",
+          "videoId": "B-fuYEH5CfA",
+          "percentagemMedia": 0.6697,
+          "views": 63
+        },
+        {
+          "slug": "loop-reforma-banheiro-se-parar",
+          "videoId": "0xXemMB9l7g",
+          "percentagemMedia": 0.6806,
+          "views": 439
+        }
+      ],
+      "julgados": 75,
+      "semAudiencia": 100
+    },
+    "longo": {
+      "minimo": 0.4,
+      "visualizacoesMinimas": 50,
+      "abaixo": [
+        {
+          "slug": "dono-dois-homens-mesma-idade-mesmo-trabalho",
+          "videoId": "WaXL2ST00eE",
+          "percentagemMedia": 0.25429999999999997,
+          "views": 51
+        },
+        {
+          "slug": "dono-dois-homens-mesma-idade-mesmo-trabalho",
+          "videoId": "WaXL2ST00eE",
+          "percentagemMedia": 0.25429999999999997,
+          "views": 51
+        },
+        {
+          "slug": "vriak9lBI48",
+          "videoId": "vriak9lBI48",
+          "percentagemMedia": 0.2688,
+          "views": 60
+        }
+      ],
+      "julgados": 3,
+      "semAudiencia": 10
+    }
+  },
+  "longos": {
+    "medidos": 13,
+    "foraDoRegisto": 4,
+    "erro": null
   },
   "ganchos": [
     {
@@ -306,24 +642,24 @@
       "n": 11,
       "comAudiencia": 11,
       "medianaRetencao": 0.6313,
-      "medianaViews": 10,
+      "medianaViews": 11,
       "media": 0.6544818181818183
     },
     {
       "familia": "começa assim",
       "n": 12,
-      "comAudiencia": 10,
-      "medianaRetencao": 0.5763,
+      "comAudiencia": 12,
+      "medianaRetencao": 0.5206999999999999,
       "medianaViews": 10,
-      "media": 7.80547
+      "media": 6.504558333333333
     },
     {
-      "familia": "tá perdendo",
+      "familia": "e se parar",
       "n": 11,
-      "comAudiencia": 10,
-      "medianaRetencao": 0.49560000000000004,
-      "medianaViews": 13,
-      "media": 0.5311899999999999
+      "comAudiencia": 11,
+      "medianaRetencao": 0.4461,
+      "medianaViews": 9,
+      "media": 0.4834818181818182
     },
     {
       "familia": "é sério que",
@@ -331,7 +667,7 @@
       "comAudiencia": 10,
       "medianaRetencao": 0.41625,
       "medianaViews": 10.5,
-      "media": 0.61394
+      "media": 0.59169
     },
     {
       "familia": "vocês viram",
@@ -342,20 +678,20 @@
       "media": 23.392455555555554
     },
     {
-      "familia": "e se parar",
+      "familia": "tá perdendo",
       "n": 11,
       "comAudiencia": 11,
-      "medianaRetencao": 0.3874,
-      "medianaViews": 9,
-      "media": 0.4278
+      "medianaRetencao": 0.37770000000000004,
+      "medianaViews": 13,
+      "media": 0.501990909090909
     },
     {
       "familia": "nunca faça",
       "n": 10,
-      "comAudiencia": 8,
-      "medianaRetencao": 0.37195,
-      "medianaViews": 4.5,
-      "media": 0.45640000000000003
+      "comAudiencia": 9,
+      "medianaRetencao": 0.37329999999999997,
+      "medianaViews": 5,
+      "media": 0.46494444444444444
     },
     {
       "familia": "faça isso",
@@ -380,12 +716,28 @@
       "medianaRetencao": 0,
       "medianaViews": 6.5,
       "media": 0.21205714285714286
+    },
+    {
+      "familia": "aconteceu comigo",
+      "n": 4,
+      "comAudiencia": 0,
+      "medianaRetencao": null,
+      "medianaViews": 0,
+      "media": null
     }
   ],
+  "capas": {
+    "estado": "sem-ficheiros",
+    "criadoEm": "2026-10-03T06:49:32Z",
+    "videos": [],
+    "totais": null
+  },
   "videos": [
     {
       "slug": "juros-compostos",
       "videoId": "KtnTi_fctWs",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-07-21",
       "privacidade": "public",
       "duracaoSeg": 71,
@@ -401,6 +753,8 @@
     {
       "slug": "acoes",
       "videoId": "s-2_o9PKpS0",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-07-22",
       "privacidade": "public",
       "duracaoSeg": 49,
@@ -425,6 +779,8 @@
     {
       "slug": "alavancagem",
       "videoId": "HYm_vVfwTmM",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-07-23",
       "privacidade": "public",
       "duracaoSeg": 49,
@@ -440,6 +796,8 @@
     {
       "slug": "amortizacao",
       "videoId": "HUcFsJHCr7w",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-07-24",
       "privacidade": "public",
       "duracaoSeg": 60,
@@ -455,6 +813,8 @@
     {
       "slug": "aplicacao-financeira",
       "videoId": "JlIWqKb8Qv8",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-07-25",
       "privacidade": "public",
       "duracaoSeg": 44,
@@ -470,6 +830,8 @@
     {
       "slug": "divida-quitaria",
       "videoId": "baITWiOojyY",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-07-28",
       "privacidade": "public",
       "duracaoSeg": 57,
@@ -485,6 +847,8 @@
     {
       "slug": "nunca-faca-isso-dinheiro",
       "videoId": "u5YB-tUDhLo",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-07-29",
       "privacidade": "public",
       "duracaoSeg": 51,
@@ -500,6 +864,8 @@
     {
       "slug": "viral-xB7XJCP7LG8",
       "videoId": "srJhf0JPsKw",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-07-30",
       "privacidade": "public",
       "duracaoSeg": 41,
@@ -515,6 +881,8 @@
     {
       "slug": "tesouro-direto-100",
       "videoId": "SZSGAxqmmm0",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-07-31",
       "privacidade": "public",
       "duracaoSeg": 65,
@@ -525,11 +893,13 @@
       "duracaoMediaSeg": 85,
       "percentagemMedia": 1.3161,
       "curva": null,
-      "erro": "sem dados suficientes (audiência pequena de mais)"
+      "erro": "Analytics 500: {\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"Internal error encountered.\",\n    \"errors\": [\n      {\n        \"message\": \"Internal error encountered.\",\n        \"domain\": \"global\",\n        \"reason\": \"backendError\"\n      }\n    ],\n    \"status\": \"INTERNAL\"\n  }\n}\n"
     },
     {
       "slug": "inflacao-rouba",
       "videoId": "Skeq19QPBkE",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-03",
       "privacidade": "public",
       "duracaoSeg": 56,
@@ -545,6 +915,8 @@
     {
       "slug": "kw-erro-ao-usar-amortizacao-price-r-200-mil-a-mais-no-financiam",
       "videoId": "hP5qcbpdiVo",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-04",
       "privacidade": "public",
       "duracaoSeg": 50,
@@ -569,6 +941,8 @@
     {
       "slug": "viral-viz--Cm53l0",
       "videoId": "N9-kotGrm50",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-05",
       "privacidade": "public",
       "duracaoSeg": 48,
@@ -593,6 +967,8 @@
     {
       "slug": "kw-5-erros-que-aumentam-seu-saldo-devedor",
       "videoId": "EX-IlDW7ZjA",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-07",
       "privacidade": "public",
       "duracaoSeg": 45,
@@ -608,6 +984,8 @@
     {
       "slug": "loop-entrada-do-carro-faca-isso",
       "videoId": "_J4A3qljaB8",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-08",
       "privacidade": "public",
       "duracaoSeg": 15,
@@ -623,6 +1001,8 @@
     {
       "slug": "cenario-3k-investir",
       "videoId": "Zh9RKJFPV0o",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-08",
       "privacidade": "public",
       "duracaoSeg": 49,
@@ -638,6 +1018,8 @@
     {
       "slug": "loop-reforma-banheiro-se-parar",
       "videoId": "0xXemMB9l7g",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-09",
       "privacidade": "public",
       "duracaoSeg": 13,
@@ -662,6 +1044,8 @@
     {
       "slug": "viral-v4wRXpQuv-k",
       "videoId": "od_hwQcZlF8",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-09",
       "privacidade": "public",
       "duracaoSeg": 52,
@@ -677,6 +1061,8 @@
     {
       "slug": "loop-fatura-maior-se-parar",
       "videoId": "Hre36qRppdA",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-09",
       "privacidade": "public",
       "duracaoSeg": 17,
@@ -692,6 +1078,8 @@
     {
       "slug": "loop-seguro-venceu-ta-perdendo",
       "videoId": "vyZIMA8VVtA",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-10",
       "privacidade": "public",
       "duracaoSeg": 17,
@@ -707,6 +1095,8 @@
     {
       "slug": "kw-caixa-no-vermelho",
       "videoId": "9Yp_zkERQB0",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-10",
       "privacidade": "public",
       "duracaoSeg": 52,
@@ -722,6 +1112,8 @@
     {
       "slug": "loop-conta-de-luz-ta-perdendo",
       "videoId": "aT6_znWFnCs",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-10",
       "privacidade": "public",
       "duracaoSeg": 15,
@@ -737,6 +1129,8 @@
     {
       "slug": "loop-guardar-salario-curto-ninguem-fala",
       "videoId": "REOufRkw5kA",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-11",
       "privacidade": "public",
       "duracaoSeg": 17,
@@ -752,6 +1146,8 @@
     {
       "slug": "regra-50-30-20-real",
       "videoId": "jfhJ4HeEEJo",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-11",
       "privacidade": "public",
       "duracaoSeg": 49,
@@ -767,6 +1163,8 @@
     {
       "slug": "loop-pagar-o-minimo-ninguem-fala",
       "videoId": "5t0sZbhyf3c",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-11",
       "privacidade": "public",
       "duracaoSeg": 16,
@@ -782,6 +1180,8 @@
     {
       "slug": "loop-escola-ano-que-vem-comeca-assim",
       "videoId": "D8Vys28oB7k",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-12",
       "privacidade": "public",
       "duracaoSeg": 18,
@@ -797,6 +1197,8 @@
     {
       "slug": "viral-jc7rFQLtrJg",
       "videoId": "-C6z-4y6Dyg",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-12",
       "privacidade": "public",
       "duracaoSeg": 52,
@@ -812,6 +1214,8 @@
     {
       "slug": "loop-mercado-subindo-comeca-assim",
       "videoId": "jk3DBUW2UJs",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-12",
       "privacidade": "public",
       "duracaoSeg": 19,
@@ -827,6 +1231,8 @@
     {
       "slug": "loop-primeiro-guardado-depois-de-anos",
       "videoId": "p6RFQTzJ340",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-13",
       "privacidade": "public",
       "duracaoSeg": 19,
@@ -851,6 +1257,8 @@
     {
       "slug": "kw-5-erros-que-te-fazem-ultrapassar-o-limite-de-gastos",
       "videoId": "7ylwT3gq0tc",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-13",
       "privacidade": "public",
       "duracaoSeg": 55,
@@ -866,6 +1274,8 @@
     {
       "slug": "loop-carro-quebrou-depois-de-anos",
       "videoId": "IoOpntVp4Xc",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-13",
       "privacidade": "public",
       "duracaoSeg": 17,
@@ -881,6 +1291,8 @@
     {
       "slug": "loop-geladeira-nova-nunca-faca",
       "videoId": "6GYUhQFWBuA",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-14",
       "privacidade": "public",
       "duracaoSeg": 18,
@@ -896,6 +1308,8 @@
     {
       "slug": "viral-m97XJBm4IdI",
       "videoId": "QuIHgjEltac",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-14",
       "privacidade": "public",
       "duracaoSeg": 52,
@@ -911,6 +1325,8 @@
     {
       "slug": "loop-dentista-das-criancas-nunca-faca",
       "videoId": "G3LpOvAW7BI",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-14",
       "privacidade": "public",
       "duracaoSeg": 18,
@@ -921,11 +1337,13 @@
       "duracaoMediaSeg": 0,
       "percentagemMedia": 0,
       "curva": null,
-      "erro": "sem dados suficientes (audiência pequena de mais)"
+      "erro": "Analytics 500: {\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"Internal error encountered.\",\n    \"errors\": [\n      {\n        \"message\": \"Internal error encountered.\",\n        \"domain\": \"global\",\n        \"reason\": \"backendError\"\n      }\n    ],\n    \"status\": \"INTERNAL\"\n  }\n}\n"
     },
     {
       "slug": "loop-sair-do-aluguel-voces-viram",
       "videoId": "gDhESgoQRCM",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-15",
       "privacidade": "public",
       "duracaoSeg": 16,
@@ -941,6 +1359,8 @@
     {
       "slug": "viral-NvOAZbXe04Q",
       "videoId": "gA1XGOF7yuc",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-15",
       "privacidade": "public",
       "duracaoSeg": 60,
@@ -956,6 +1376,8 @@
     {
       "slug": "loop-emprestimo-por-telefone-voces-viram",
       "videoId": "wWDnmzAPB-A",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-15",
       "privacidade": "public",
       "duracaoSeg": 19,
@@ -971,6 +1393,8 @@
     {
       "slug": "loop-viagem-fim-de-ano-e-serio-que",
       "videoId": "mUkv1MUSMtU",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-16",
       "privacidade": "public",
       "duracaoSeg": 18,
@@ -986,6 +1410,8 @@
     {
       "slug": "kw-divida-de-r-10-000-no-fies-veja-como-amortizar",
       "videoId": "puZw9VLeO3g",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-16",
       "privacidade": "public",
       "duracaoSeg": 54,
@@ -1001,6 +1427,8 @@
     {
       "slug": "loop-dez-vezes-sem-juros-e-serio-que",
       "videoId": "ET3RQGjd7qc",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-16",
       "privacidade": "public",
       "duracaoSeg": 16,
@@ -1016,6 +1444,8 @@
     {
       "slug": "loop-decimo-terceiro-nao-vai-acreditar",
       "videoId": "NTJxayaV88s",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-17",
       "privacidade": "public",
       "duracaoSeg": 20,
@@ -1027,6 +1457,8 @@
     {
       "slug": "kw-despesas-fora-de-controle",
       "videoId": "XOCVmLuTxiI",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-17",
       "privacidade": "public",
       "duracaoSeg": 55,
@@ -1038,6 +1470,8 @@
     {
       "slug": "loop-ipva-e-iptu-nao-vai-acreditar",
       "videoId": "It07lW03rbY",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-17",
       "privacidade": "public",
       "duracaoSeg": 18,
@@ -1053,6 +1487,8 @@
     {
       "slug": "loop-reserva-emergencia-faca-isso",
       "videoId": "-dnPYUrfMRc",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-18",
       "privacidade": "public",
       "duracaoSeg": 20,
@@ -1068,6 +1504,8 @@
     {
       "slug": "poupanca-vs-cdb",
       "videoId": "T5WjFs_zbnw",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-18",
       "privacidade": "public",
       "duracaoSeg": 51,
@@ -1083,6 +1521,8 @@
     {
       "slug": "loop-remedio-todo-mes-faca-isso",
       "videoId": "Ee-6Sdchm6A",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-18",
       "privacidade": "public",
       "duracaoSeg": 16,
@@ -1098,6 +1538,8 @@
     {
       "slug": "loop-limpar-o-nome-se-parar",
       "videoId": "QcSTOMDvjmo",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-19",
       "privacidade": "public",
       "duracaoSeg": 17,
@@ -1113,6 +1555,8 @@
     {
       "slug": "kw-r-200-de-assinatura-o-que-vira-em-12-meses",
       "videoId": "Fz90EOZEjdQ",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-19",
       "privacidade": "public",
       "duracaoSeg": 54,
@@ -1128,6 +1572,8 @@
     {
       "slug": "loop-material-escolar-se-parar",
       "videoId": "b32W6oUkMNQ",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-19",
       "privacidade": "public",
       "duracaoSeg": 14,
@@ -1143,6 +1589,8 @@
     {
       "slug": "loop-trocar-divida-cara-ta-perdendo",
       "videoId": "WAm6MZFTQwY",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-20",
       "privacidade": "public",
       "duracaoSeg": 17,
@@ -1158,6 +1606,8 @@
     {
       "slug": "kw-custo-de-vida",
       "videoId": "KrVrkXRLm-4",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-20",
       "privacidade": "public",
       "duracaoSeg": 57,
@@ -1173,6 +1623,8 @@
     {
       "slug": "loop-gas-acabou-ta-perdendo",
       "videoId": "BCuSkTIkBLk",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-20",
       "privacidade": "public",
       "duracaoSeg": 16,
@@ -1188,6 +1640,8 @@
     {
       "slug": "loop-conta-so-das-contas-ninguem-fala",
       "videoId": "WzDA5pYhjRg",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-21",
       "privacidade": "public",
       "duracaoSeg": 16,
@@ -1203,6 +1657,8 @@
     {
       "slug": "100-reais-por-dia",
       "videoId": "NLWgdFG22RQ",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-21",
       "privacidade": "public",
       "duracaoSeg": 50,
@@ -1218,6 +1674,8 @@
     {
       "slug": "loop-aniversario-do-filho-ninguem-fala",
       "videoId": "hsUtCD2RudM",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-21",
       "privacidade": "public",
       "duracaoSeg": 13,
@@ -1233,6 +1691,8 @@
     {
       "slug": "loop-dividir-sem-brigar-comeca-assim",
       "videoId": "VbtDXoEDo6c",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-22",
       "privacidade": "public",
       "duracaoSeg": 18,
@@ -1248,6 +1708,8 @@
     {
       "slug": "kw-5-erros-que-te-impedem-de-poupar-r-1-000-por-mes",
       "videoId": "oJSXmhzVfLk",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-22",
       "privacidade": "public",
       "duracaoSeg": 49,
@@ -1263,6 +1725,8 @@
     {
       "slug": "loop-presente-de-natal-comeca-assim",
       "videoId": "s-rlTP43-Ls",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-22",
       "privacidade": "public",
       "duracaoSeg": 17,
@@ -1278,6 +1742,8 @@
     {
       "slug": "loop-plano-de-saude-subiu-depois-de-anos",
       "videoId": "BmMFc1Oktzw",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-23",
       "privacidade": "public",
       "duracaoSeg": 16,
@@ -1293,6 +1759,8 @@
     {
       "slug": "kw-5-erros-que-voce-pode-cometer-na-fatura-do-cartao",
       "videoId": "6YXcISESKdQ",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-23",
       "privacidade": "public",
       "duracaoSeg": 56,
@@ -1308,6 +1776,8 @@
     {
       "slug": "loop-delivery-de-sexta-depois-de-anos",
       "videoId": "32HdE6zxnVs",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-23",
       "privacidade": "public",
       "duracaoSeg": 17,
@@ -1319,6 +1789,8 @@
     {
       "slug": "loop-pagar-a-vista-nunca-faca",
       "videoId": "Xv9nPHYrbPg",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-24",
       "privacidade": "public",
       "duracaoSeg": 15,
@@ -1334,6 +1806,8 @@
     {
       "slug": "viral-4t_8St6xhPE",
       "videoId": "NofbVRcGXpo",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-24",
       "privacidade": "public",
       "duracaoSeg": 37,
@@ -1349,6 +1823,8 @@
     {
       "slug": "loop-assinaturas-esquecidas-nunca-faca",
       "videoId": "HFg0NNmx2xI",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-24",
       "privacidade": "public",
       "duracaoSeg": 18,
@@ -1364,6 +1840,8 @@
     {
       "slug": "loop-vender-o-parado-voces-viram",
       "videoId": "CnZJVyEFzNM",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-25",
       "privacidade": "public",
       "duracaoSeg": 17,
@@ -1379,6 +1857,8 @@
     {
       "slug": "kw-perca-r-1-000-por-ano",
       "videoId": "ebHnXQhrDVU",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-25",
       "privacidade": "public",
       "duracaoSeg": 52,
@@ -1403,6 +1883,8 @@
     {
       "slug": "loop-emprestar-pra-parente-voces-viram",
       "videoId": "gtclXX0YwFo",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-25",
       "privacidade": "public",
       "duracaoSeg": 20,
@@ -1418,6 +1900,8 @@
     {
       "slug": "loop-dinheiro-so-seu-e-serio-que",
       "videoId": "IobLNhpk_ho",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-26",
       "privacidade": "public",
       "duracaoSeg": 15,
@@ -1433,6 +1917,8 @@
     {
       "slug": "reserva-emergencia-quanto",
       "videoId": "EcW5jOxY2fY",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-26",
       "privacidade": "public",
       "duracaoSeg": 48,
@@ -1448,6 +1934,8 @@
     {
       "slug": "loop-parcela-atrasada-e-serio-que",
       "videoId": "9oKlmfCEo4E",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-26",
       "privacidade": "public",
       "duracaoSeg": 15,
@@ -1463,6 +1951,8 @@
     {
       "slug": "loop-aposentadoria-por-conta-nao-vai-acreditar",
       "videoId": "e0CAK0zsn3U",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-27",
       "privacidade": "public",
       "duracaoSeg": 15,
@@ -1478,6 +1968,8 @@
     {
       "slug": "kw-5-erros-na-lista-de-compras-que-te-custam-r-500-mes",
       "videoId": "xFt7udrvc2M",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-27",
       "privacidade": "public",
       "duracaoSeg": 51,
@@ -1493,6 +1985,8 @@
     {
       "slug": "loop-cheque-especial-nao-vai-acreditar",
       "videoId": "xwEMAMr27Ck",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-28",
       "privacidade": "public",
       "duracaoSeg": 15,
@@ -1508,6 +2002,8 @@
     {
       "slug": "kw-quanto-voce-precisa-ganhar-por-mes",
       "videoId": "8VEFRvZQP1k",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-28",
       "privacidade": "public",
       "duracaoSeg": 52,
@@ -1523,6 +2019,8 @@
     {
       "slug": "loop-entrada-do-carro-se-parar",
       "videoId": "Goxqvh0N2VQ",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-28",
       "privacidade": "public",
       "duracaoSeg": 16,
@@ -1538,6 +2036,8 @@
     {
       "slug": "kw-5-erros-ao-parcelar-compras-de-r-1-000",
       "videoId": "_U3_Kk6nMDc",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-28",
       "privacidade": "public",
       "duracaoSeg": 49,
@@ -1553,6 +2053,8 @@
     {
       "slug": "loop-saque-no-cartao-faca-isso",
       "videoId": "BNQNzCPifWw",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-29",
       "privacidade": "public",
       "duracaoSeg": 16,
@@ -1568,6 +2070,8 @@
     {
       "slug": "loop-reforma-banheiro-faca-isso",
       "videoId": "YW-RcVkGJ6o",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-29",
       "privacidade": "public",
       "duracaoSeg": 16,
@@ -1583,6 +2087,8 @@
     {
       "slug": "viral-JgAMCoztptU",
       "videoId": "G53os5k-gDY",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-29",
       "privacidade": "public",
       "duracaoSeg": 50,
@@ -1598,6 +2104,8 @@
     {
       "slug": "loop-fatura-maior-faca-isso",
       "videoId": "JM93ZIA_Upg",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-29",
       "privacidade": "public",
       "duracaoSeg": 16,
@@ -1613,6 +2121,8 @@
     {
       "slug": "loop-seguro-venceu-ninguem-fala",
       "videoId": "cexKFOlWnEY",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-30",
       "privacidade": "public",
       "duracaoSeg": 18,
@@ -1628,6 +2138,8 @@
     {
       "slug": "viral-M4IPngsT9BM",
       "videoId": "keM-b4qmlnM",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-30",
       "privacidade": "public",
       "duracaoSeg": 52,
@@ -1643,6 +2155,8 @@
     {
       "slug": "loop-conta-de-luz-ninguem-fala",
       "videoId": "yzQQ4y020hc",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-30",
       "privacidade": "public",
       "duracaoSeg": 14,
@@ -1658,6 +2172,8 @@
     {
       "slug": "loop-guardar-salario-curto-ta-perdendo",
       "videoId": "vDT0Oyx5jkw",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-31",
       "privacidade": "public",
       "duracaoSeg": 17,
@@ -1673,6 +2189,8 @@
     {
       "slug": "viral-RErIArKiZwg",
       "videoId": "Z1jkDU8ys8E",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-31",
       "privacidade": "public",
       "duracaoSeg": 53,
@@ -1688,6 +2206,8 @@
     {
       "slug": "loop-pagar-o-minimo-ta-perdendo",
       "videoId": "UYzhIJ4WlHM",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-08-31",
       "privacidade": "public",
       "duracaoSeg": 17,
@@ -1698,11 +2218,13 @@
       "duracaoMediaSeg": 4,
       "percentagemMedia": 0.2353,
       "curva": null,
-      "erro": "sem dados suficientes (audiência pequena de mais)"
+      "erro": "Analytics 500: {\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"Internal error encountered.\",\n    \"errors\": [\n      {\n        \"message\": \"Internal error encountered.\",\n        \"domain\": \"global\",\n        \"reason\": \"backendError\"\n      }\n    ],\n    \"status\": \"INTERNAL\"\n  }\n}\n"
     },
     {
       "slug": "loop-escola-ano-que-vem-depois-de-anos",
       "videoId": "JmQ_LLb5c48",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-01",
       "privacidade": "public",
       "duracaoSeg": 17,
@@ -1718,6 +2240,8 @@
     {
       "slug": "viral-eT8YV0tnWMI",
       "videoId": "S3l4q8439hA",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-01",
       "privacidade": "public",
       "duracaoSeg": 49,
@@ -1733,6 +2257,8 @@
     {
       "slug": "loop-mercado-subindo-depois-de-anos",
       "videoId": "11mXpjezPcg",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-01",
       "privacidade": "public",
       "duracaoSeg": 16,
@@ -1748,6 +2274,8 @@
     {
       "slug": "loop-geladeira-nova-comeca-assim",
       "videoId": "UU8Yb6UXe-Y",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-02",
       "privacidade": "public",
       "duracaoSeg": 17,
@@ -1763,6 +2291,8 @@
     {
       "slug": "viral-lW52zJdD308",
       "videoId": "m0AxwX5lEHs",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-02",
       "privacidade": "public",
       "duracaoSeg": 51,
@@ -1778,6 +2308,8 @@
     {
       "slug": "loop-carro-quebrou-comeca-assim",
       "videoId": "25WE2FjnqR4",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-02",
       "privacidade": "public",
       "duracaoSeg": 17,
@@ -1793,6 +2325,8 @@
     {
       "slug": "loop-primeiro-guardado-nunca-faca",
       "videoId": "20bcdnrHxg4",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-03",
       "privacidade": "public",
       "duracaoSeg": 15,
@@ -1808,6 +2342,8 @@
     {
       "slug": "viral-byYCL8Tlwg8",
       "videoId": "pwFjYuWMHHY",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-03",
       "privacidade": "public",
       "duracaoSeg": 47,
@@ -1823,6 +2359,8 @@
     {
       "slug": "loop-dentista-das-criancas-voces-viram",
       "videoId": "5CMkLi8Jtdc",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-03",
       "privacidade": "public",
       "duracaoSeg": 17,
@@ -1838,6 +2376,8 @@
     {
       "slug": "loop-sair-do-aluguel-e-serio-que",
       "videoId": "B-fuYEH5CfA",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-04",
       "privacidade": "public",
       "duracaoSeg": 15,
@@ -1853,6 +2393,8 @@
     {
       "slug": "viral-jxIC4Ton9-8",
       "videoId": "-UCqXL9Nwuo",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-04",
       "privacidade": "public",
       "duracaoSeg": 51,
@@ -1868,6 +2410,8 @@
     {
       "slug": "loop-dez-vezes-sem-juros-nao-vai-acreditar",
       "videoId": "FXFNufT1ko8",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-04",
       "privacidade": "public",
       "duracaoSeg": 17,
@@ -1883,6 +2427,8 @@
     {
       "slug": "loop-viagem-fim-de-ano-se-parar",
       "videoId": "ygRFrW5Vr-0",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-05",
       "privacidade": "public",
       "duracaoSeg": 17,
@@ -1898,6 +2444,8 @@
     {
       "slug": "loop-emprestimo-por-telefone-se-parar",
       "videoId": "oi2Mj-JCXA4",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-05",
       "privacidade": "public",
       "duracaoSeg": 18,
@@ -1913,6 +2461,8 @@
     {
       "slug": "erros-cartao-credito",
       "videoId": "Bm4HH3XQ7co",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-05",
       "privacidade": "public",
       "duracaoSeg": 54,
@@ -1928,6 +2478,8 @@
     {
       "slug": "loop-decimo-terceiro-nunca-faca",
       "videoId": "3o8ptbjjv3g",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-06",
       "privacidade": "public",
       "duracaoSeg": 17,
@@ -1943,6 +2495,8 @@
     {
       "slug": "kw-anuidade-alta",
       "videoId": "L4Q9CaKBr4g",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-06",
       "privacidade": "public",
       "duracaoSeg": 48,
@@ -1958,6 +2512,8 @@
     {
       "slug": "loop-ipva-e-iptu-nunca-faca",
       "videoId": "fSjAOqhGD3E",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-06",
       "privacidade": "public",
       "duracaoSeg": 15,
@@ -1973,6 +2529,8 @@
     {
       "slug": "loop-reserva-emergencia-voces-viram",
       "videoId": "Li-0BKBawOM",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-07",
       "privacidade": "public",
       "duracaoSeg": 16,
@@ -1988,6 +2546,8 @@
     {
       "slug": "kw-amortizacao-de-r-10-000",
       "videoId": "YtpWDwhEUCY",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-07",
       "privacidade": "public",
       "duracaoSeg": 51,
@@ -2003,6 +2563,8 @@
     {
       "slug": "loop-remedio-todo-mes-voces-viram",
       "videoId": "vFz1F3VSQlk",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-07",
       "privacidade": "public",
       "duracaoSeg": 15,
@@ -2018,6 +2580,8 @@
     {
       "slug": "loop-limpar-o-nome-e-serio-que",
       "videoId": "mUHszoUZLe8",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-08",
       "privacidade": "public",
       "duracaoSeg": 15,
@@ -2033,6 +2597,8 @@
     {
       "slug": "kw-pagbank-vale-a-pena",
       "videoId": "q6wghA85cMQ",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-08",
       "privacidade": "public",
       "duracaoSeg": 46,
@@ -2048,6 +2614,8 @@
     {
       "slug": "loop-material-escolar-e-serio-que",
       "videoId": "qFWkhnbyNiU",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-08",
       "privacidade": "public",
       "duracaoSeg": 16,
@@ -2072,6 +2640,8 @@
     {
       "slug": "loop-trocar-divida-cara-nao-vai-acreditar",
       "videoId": "AeXiOzd_cNo",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-09",
       "privacidade": "public",
       "duracaoSeg": 16,
@@ -2087,6 +2657,8 @@
     {
       "slug": "kw-cartao-virtual-vale-a-pena",
       "videoId": "0W0Qlr71MyE",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-09",
       "privacidade": "public",
       "duracaoSeg": 51,
@@ -2102,6 +2674,8 @@
     {
       "slug": "loop-gas-acabou-nao-vai-acreditar",
       "videoId": "qaClDlqmsJM",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-09",
       "privacidade": "public",
       "duracaoSeg": 17,
@@ -2126,6 +2700,8 @@
     {
       "slug": "loop-conta-so-das-contas-faca-isso",
       "videoId": "OtjykACoezU",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-10",
       "privacidade": "public",
       "duracaoSeg": 16,
@@ -2141,6 +2717,8 @@
     {
       "slug": "kw-transferencia-de-r-10-000",
       "videoId": "-kT7_2jFjBM",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-10",
       "privacidade": "public",
       "duracaoSeg": 49,
@@ -2156,6 +2734,8 @@
     {
       "slug": "loop-aniversario-do-filho-faca-isso",
       "videoId": "TMLFVgnn-Xs",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-10",
       "privacidade": "public",
       "duracaoSeg": 16,
@@ -2171,6 +2751,8 @@
     {
       "slug": "loop-dividir-sem-brigar-ta-perdendo",
       "videoId": "Iq3IoeU72T8",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-11",
       "privacidade": "public",
       "duracaoSeg": 16,
@@ -2186,6 +2768,8 @@
     {
       "slug": "kw-limite-no-nubank-ate-onde-vai",
       "videoId": "3VEt_C3CeKM",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-11",
       "privacidade": "public",
       "duracaoSeg": 52,
@@ -2201,6 +2785,8 @@
     {
       "slug": "loop-presente-de-natal-ta-perdendo",
       "videoId": "ape5oa93_Co",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-11",
       "privacidade": "public",
       "duracaoSeg": 15,
@@ -2216,6 +2802,8 @@
     {
       "slug": "loop-plano-de-saude-subiu-ninguem-fala",
       "videoId": "GVtEczdKfWs",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-12",
       "privacidade": "public",
       "duracaoSeg": 16,
@@ -2231,6 +2819,8 @@
     {
       "slug": "fundo-de-investimento",
       "videoId": "Im3azrcCrrc",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-12",
       "privacidade": "public",
       "duracaoSeg": 56,
@@ -2246,6 +2836,8 @@
     {
       "slug": "loop-delivery-de-sexta-ninguem-fala",
       "videoId": "o7o0bUYwUtM",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-12",
       "privacidade": "public",
       "duracaoSeg": 16,
@@ -2261,6 +2853,8 @@
     {
       "slug": "loop-pagar-a-vista-comeca-assim",
       "videoId": "HFp71A5xWhE",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-13",
       "privacidade": "public",
       "duracaoSeg": 17,
@@ -2276,6 +2870,8 @@
     {
       "slug": "taxa-financeira",
       "videoId": "GQB-ccOwKbQ",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-13",
       "privacidade": "public",
       "duracaoSeg": 60,
@@ -2287,6 +2883,8 @@
     {
       "slug": "loop-assinaturas-esquecidas-comeca-assim",
       "videoId": "BWEmDq5GjRc",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-13",
       "privacidade": "public",
       "duracaoSeg": 16,
@@ -2302,6 +2900,8 @@
     {
       "slug": "loop-vender-o-parado-depois-de-anos",
       "videoId": "IRUXAGs4_TM",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-14",
       "privacidade": "public",
       "duracaoSeg": 18,
@@ -2317,6 +2917,8 @@
     {
       "slug": "viral-my4eWdTXx40",
       "videoId": "5tPF0wxhSrw",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-14",
       "privacidade": "public",
       "duracaoSeg": 54,
@@ -2332,6 +2934,8 @@
     {
       "slug": "loop-emprestar-pra-parente-depois-de-anos",
       "videoId": "e-3UxOrBbxg",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-14",
       "privacidade": "public",
       "duracaoSeg": 18,
@@ -2347,6 +2951,8 @@
     {
       "slug": "loop-dinheiro-so-seu-se-parar",
       "videoId": "0PlTHRUTwtU",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-15",
       "privacidade": "public",
       "duracaoSeg": 15,
@@ -2362,6 +2968,8 @@
     {
       "slug": "lista-de-compras-do-mes",
       "videoId": "fGeb8g_kJEY",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-15",
       "privacidade": "public",
       "duracaoSeg": 51,
@@ -2377,6 +2985,8 @@
     {
       "slug": "loop-parcela-atrasada-se-parar",
       "videoId": "CmaD-ffDvwQ",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-15",
       "privacidade": "public",
       "duracaoSeg": 17,
@@ -2392,6 +3002,8 @@
     {
       "slug": "loop-aposentadoria-por-conta-nunca-faca",
       "videoId": "PE6lCl0Fn9o",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-16",
       "privacidade": "public",
       "duracaoSeg": 26,
@@ -2403,6 +3015,8 @@
     {
       "slug": "viral-8NjZOK5WC5Q",
       "videoId": "c85WGhxNYXc",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-16",
       "privacidade": "public",
       "duracaoSeg": 56,
@@ -2414,6 +3028,8 @@
     {
       "slug": "loop-cheque-especial-nunca-faca",
       "videoId": "yJwmPPvp7fk",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-16",
       "privacidade": "public",
       "duracaoSeg": 18,
@@ -2429,6 +3045,8 @@
     {
       "slug": "loop-entrada-do-carro-ta-perdendo",
       "videoId": "VNKnIOhiEPs",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-17",
       "privacidade": "public",
       "duracaoSeg": 14,
@@ -2444,6 +3062,8 @@
     {
       "slug": "kw-financiamento-de-r-200k",
       "videoId": "ikMgK4rnawU",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-17",
       "privacidade": "public",
       "duracaoSeg": 53,
@@ -2459,6 +3079,8 @@
     {
       "slug": "loop-saque-no-cartao-voces-viram",
       "videoId": "Wbx9UY1K7wg",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-17",
       "privacidade": "public",
       "duracaoSeg": 17,
@@ -2474,6 +3096,8 @@
     {
       "slug": "loop-reforma-banheiro-e-serio-que",
       "videoId": "X-N6Fk6TykE",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-18",
       "privacidade": "public",
       "duracaoSeg": 13,
@@ -2489,6 +3113,8 @@
     {
       "slug": "kw-financiamento-de-moto-vale-a-pena",
       "videoId": "y_UG8M_4CXI",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-18",
       "privacidade": "public",
       "duracaoSeg": 58,
@@ -2504,6 +3130,8 @@
     {
       "slug": "loop-fatura-maior-ta-perdendo",
       "videoId": "Or34xzb57po",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-18",
       "privacidade": "public",
       "duracaoSeg": 18,
@@ -2519,6 +3147,8 @@
     {
       "slug": "kw-financiamento-de-r-50-000",
       "videoId": "iwMaA3Dqg6o",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-19",
       "privacidade": "public",
       "duracaoSeg": 47,
@@ -2534,6 +3164,8 @@
     {
       "slug": "loop-conta-de-luz-e-serio-que",
       "videoId": "5oPhSeCeaFU",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-19",
       "privacidade": "public",
       "duracaoSeg": 12,
@@ -2549,6 +3181,8 @@
     {
       "slug": "loop-seguro-venceu-faca-isso",
       "videoId": "piRqE1rj9XI",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-20",
       "privacidade": "public",
       "duracaoSeg": 15,
@@ -2564,6 +3198,8 @@
     {
       "slug": "teto-de-gastos",
       "videoId": "v5brKJNaZsE",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-20",
       "privacidade": "public",
       "duracaoSeg": 46,
@@ -2579,6 +3215,8 @@
     {
       "slug": "loop-carro-quebrou-faca-isso",
       "videoId": "xOxmEZWUxrI",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-20",
       "privacidade": "public",
       "duracaoSeg": 13,
@@ -2594,6 +3232,8 @@
     {
       "slug": "loop-escola-ano-que-vem-ninguem-fala",
       "videoId": "kDAkBAAlG3o",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-21",
       "privacidade": "public",
       "duracaoSeg": 13,
@@ -2609,6 +3249,8 @@
     {
       "slug": "yahoo-finance",
       "videoId": "bqUQzKA88GQ",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-21",
       "privacidade": "public",
       "duracaoSeg": 46,
@@ -2624,6 +3266,8 @@
     {
       "slug": "loop-pagar-o-minimo-comeca-assim",
       "videoId": "jN4k73LrO_k",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-21",
       "privacidade": "public",
       "duracaoSeg": 15,
@@ -2639,6 +3283,8 @@
     {
       "slug": "controle-de-gastos-whatsapp",
       "videoId": "BbVPe__Xnrw",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-22",
       "privacidade": "public",
       "duracaoSeg": 47,
@@ -2654,6 +3300,8 @@
     {
       "slug": "loop-guardar-salario-curto-voces-viram",
       "videoId": "2TZT_K5k2qc",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-23",
       "privacidade": "public",
       "duracaoSeg": 15,
@@ -2669,6 +3317,8 @@
     {
       "slug": "kw-juros-de-mora-30-ao-mes",
       "videoId": "HDdImgkLUcY",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-23",
       "privacidade": "public",
       "duracaoSeg": 42,
@@ -2684,6 +3334,8 @@
     {
       "slug": "loop-dentista-das-criancas-nao-vai-acreditar",
       "videoId": "6qSfh5Tex2A",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-23",
       "privacidade": "public",
       "duracaoSeg": 15,
@@ -2699,12 +3351,14 @@
     {
       "slug": "loop-geladeira-nova-se-parar",
       "videoId": "25abddJTGNM",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-24",
       "privacidade": "public",
       "duracaoSeg": 15,
       "comentarios": 1,
       "gostos": 0,
-      "views": 21,
+      "views": 20,
       "minutosTotais": 0,
       "duracaoMediaSeg": 4,
       "percentagemMedia": 0.29,
@@ -2714,6 +3368,8 @@
     {
       "slug": "kw-financiamento-de-r-50-000-vale-a-pena",
       "videoId": "-PJ3SVAcx1U",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-24",
       "privacidade": "public",
       "duracaoSeg": 51,
@@ -2729,21 +3385,25 @@
     {
       "slug": "loop-mercado-subindo-se-parar",
       "videoId": "Z9Guyhls8Rc",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-24",
       "privacidade": "public",
       "duracaoSeg": 16,
       "comentarios": 1,
       "gostos": 0,
-      "views": 2,
+      "views": 3,
       "minutosTotais": 0,
-      "duracaoMediaSeg": 0,
-      "percentagemMedia": 0,
+      "duracaoMediaSeg": 9,
+      "percentagemMedia": 0.6125,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
     },
     {
       "slug": "loop-viagem-fim-de-ano-ninguem-fala",
       "videoId": "yB0JyVc_pGs",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-25",
       "privacidade": "public",
       "duracaoSeg": 15,
@@ -2759,6 +3419,8 @@
     {
       "slug": "gasto-fixo-e-variavel",
       "videoId": "KWrm2MYT2QU",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-25",
       "privacidade": "public",
       "duracaoSeg": 52,
@@ -2774,12 +3436,14 @@
     {
       "slug": "loop-dez-vezes-sem-juros-ninguem-fala",
       "videoId": "dcGHCd8AC50",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-25",
       "privacidade": "public",
       "duracaoSeg": 13,
       "comentarios": 1,
       "gostos": 0,
-      "views": 10,
+      "views": 11,
       "minutosTotais": 0,
       "duracaoMediaSeg": 14,
       "percentagemMedia": 1.1462,
@@ -2789,6 +3453,8 @@
     {
       "slug": "loop-sair-do-aluguel-comeca-assim",
       "videoId": "E0hLFXJeVn8",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-26",
       "privacidade": "public",
       "duracaoSeg": 16,
@@ -2804,6 +3470,8 @@
     {
       "slug": "lista-de-compras-completa",
       "videoId": "472kfSszgA0",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-26",
       "privacidade": "public",
       "duracaoSeg": 48,
@@ -2815,6 +3483,8 @@
     {
       "slug": "lista-de-compras-supermercado",
       "videoId": "E7zfIdP7ufE",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-27",
       "privacidade": "public",
       "duracaoSeg": 50,
@@ -2830,21 +3500,34 @@
     {
       "slug": "loop-emprestimo-por-telefone-e-serio-que",
       "videoId": "-WMQ2Eq5hic",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-27",
       "privacidade": "public",
       "duracaoSeg": 14,
       "comentarios": 1,
       "gostos": 0,
-      "views": 38,
-      "minutosTotais": 2,
-      "duracaoMediaSeg": 14,
-      "percentagemMedia": 1.0429000000000002,
-      "curva": null,
-      "erro": "sem dados suficientes (audiência pequena de mais)"
+      "views": 68,
+      "minutosTotais": 4,
+      "duracaoMediaSeg": 11,
+      "percentagemMedia": 0.8204,
+      "curva": {
+        "pontos": 100,
+        "aos3s": 1.05,
+        "aos25pc": 1,
+        "aos50pc": 0.75,
+        "aos75pc": 0.6,
+        "noFim": 0.65,
+        "metadeSaiEmRatio": 0.62,
+        "metadeSaiEmSegundos": 9
+      },
+      "erro": null
     },
     {
       "slug": "loop-primeiro-guardado-voces-viram",
       "videoId": "h_JymS9qRlA",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-28",
       "privacidade": "public",
       "duracaoSeg": 17,
@@ -2856,28 +3539,42 @@
     {
       "slug": "valor-presente",
       "videoId": "oay7rBGNbyQ",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-28",
       "privacidade": "public",
       "duracaoSeg": 45,
       "comentarios": 1,
       "gostos": 0,
+      "views": 1,
+      "minutosTotais": 0,
+      "duracaoMediaSeg": 0,
+      "percentagemMedia": 0,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
     },
     {
       "slug": "loop-reserva-emergencia-nunca-faca",
       "videoId": "HKMKNY9qiJg",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-29",
       "privacidade": "public",
       "duracaoSeg": 15,
       "comentarios": 1,
       "gostos": 0,
+      "views": 5,
+      "minutosTotais": 0,
+      "duracaoMediaSeg": 8,
+      "percentagemMedia": 0.5333,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
     },
     {
       "slug": "opcao-financeira",
       "videoId": "8miOg8K0Tw8",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-29",
       "privacidade": "public",
       "duracaoSeg": 54,
@@ -2889,18 +3586,103 @@
     {
       "slug": "loop-ipva-e-iptu-ta-perdendo",
       "videoId": "_DH3-cY7f-w",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-29",
       "privacidade": "public",
       "duracaoSeg": 20,
       "comentarios": 1,
       "gostos": 0,
+      "views": 11,
+      "minutosTotais": 0,
+      "duracaoMediaSeg": 4,
+      "percentagemMedia": 0.21,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
     },
     {
       "slug": "loop-decimo-terceiro-comeca-assim",
       "videoId": "t149yUuDbxw",
+      "formato": "short",
+      "foraDoRegisto": false,
       "publicadoEm": "2026-09-30",
+      "privacidade": "public",
+      "duracaoSeg": 17,
+      "comentarios": 1,
+      "gostos": 0,
+      "views": 3,
+      "minutosTotais": 0,
+      "duracaoMediaSeg": 0,
+      "percentagemMedia": 0,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "kw-quando-voce-gasta-r-2-000-e-investe-r-500-o-que-acontece",
+      "videoId": "hJQe7SwAbs8",
+      "formato": "short",
+      "foraDoRegisto": false,
+      "publicadoEm": "2026-09-30",
+      "privacidade": "public",
+      "duracaoSeg": 54,
+      "comentarios": 1,
+      "gostos": 0,
+      "views": 2,
+      "minutosTotais": 0,
+      "duracaoMediaSeg": 6,
+      "percentagemMedia": 0.1152,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "loop-remedio-todo-mes-comeca-assim",
+      "videoId": "K2wiFfPFXZ8",
+      "formato": "short",
+      "foraDoRegisto": false,
+      "publicadoEm": "2026-09-30",
+      "privacidade": "public",
+      "duracaoSeg": 19,
+      "comentarios": 1,
+      "gostos": 0,
+      "views": 1,
+      "minutosTotais": 0,
+      "duracaoMediaSeg": 0,
+      "percentagemMedia": 0,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "loop-limpar-o-nome-aconteceu-comigo",
+      "videoId": "bYGGYndvCKQ",
+      "formato": "short",
+      "foraDoRegisto": false,
+      "publicadoEm": "2026-10-01",
+      "privacidade": "public",
+      "duracaoSeg": 18,
+      "comentarios": 1,
+      "gostos": 0,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "kw-5-erros-ao-financiar-seu-casa-minha-vida",
+      "videoId": "xbV_DH3bl1M",
+      "formato": "short",
+      "foraDoRegisto": false,
+      "publicadoEm": "2026-10-01",
+      "privacidade": "public",
+      "duracaoSeg": 59,
+      "comentarios": 1,
+      "gostos": 0,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "loop-material-escolar-aconteceu-comigo",
+      "videoId": "-lGphaDR6v4",
+      "formato": "short",
+      "foraDoRegisto": false,
+      "publicadoEm": "2026-10-01",
       "privacidade": "public",
       "duracaoSeg": 17,
       "comentarios": 1,
@@ -2909,26 +3691,327 @@
       "erro": "sem dados suficientes (audiência pequena de mais)"
     },
     {
-      "slug": "kw-quando-voce-gasta-r-2-000-e-investe-r-500-o-que-acontece",
-      "videoId": "hJQe7SwAbs8",
-      "publicadoEm": "2026-09-30",
+      "slug": "loop-conta-so-das-contas-aconteceu-comigo",
+      "videoId": "2LWBI3vT0Iw",
+      "formato": "short",
+      "foraDoRegisto": false,
+      "publicadoEm": "2026-10-02",
       "privacidade": "public",
-      "duracaoSeg": 54,
+      "duracaoSeg": 17,
       "comentarios": 1,
       "gostos": 0,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
     },
     {
-      "slug": "loop-remedio-todo-mes-comeca-assim",
-      "videoId": "K2wiFfPFXZ8",
-      "publicadoEm": "2026-09-30",
+      "slug": "meta-financeira",
+      "videoId": "i2sJnzjsiV4",
+      "formato": "short",
+      "foraDoRegisto": false,
+      "publicadoEm": "2026-10-02",
       "privacidade": "public",
-      "duracaoSeg": 19,
+      "duracaoSeg": 53,
       "comentarios": 1,
       "gostos": 0,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "loop-gas-acabou-aconteceu-comigo",
+      "videoId": "CeFsV-HRMew",
+      "formato": "short",
+      "foraDoRegisto": false,
+      "publicadoEm": "2026-10-02",
+      "privacidade": "public",
+      "duracaoSeg": 18,
+      "comentarios": 1,
+      "gostos": 0,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "pequenos-gastos-como-recuperar",
+      "videoId": "4CfTKUgyAcE",
+      "formato": "longo",
+      "foraDoRegisto": false,
+      "publicadoEm": "2026-09-29",
+      "privacidade": "private",
+      "duracaoSeg": 370,
+      "comentarios": 0,
+      "gostos": 0,
+      "views": 3,
+      "minutosTotais": 7,
+      "duracaoMediaSeg": 156,
+      "percentagemMedia": 0.42200000000000004,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "juros-cartao-quanto-voce",
+      "videoId": "kaYpyawVJcU",
+      "formato": "longo",
+      "foraDoRegisto": false,
+      "publicadoEm": "2026-09-26",
+      "privacidade": "public",
+      "duracaoSeg": 324,
+      "comentarios": 1,
+      "gostos": 0,
+      "views": 2,
+      "minutosTotais": 0,
+      "duracaoMediaSeg": 8,
+      "percentagemMedia": 0.0268,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "divida-cartao-organize-suas",
+      "videoId": "Caus4r5_V3I",
+      "formato": "longo",
+      "foraDoRegisto": false,
+      "publicadoEm": "2026-09-19",
+      "privacidade": "public",
+      "duracaoSeg": 314,
+      "comentarios": 1,
+      "gostos": 1,
+      "views": 7,
+      "minutosTotais": 5,
+      "duracaoMediaSeg": 109,
+      "percentagemMedia": 0.3502,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "gastos-fim-ano-como",
+      "videoId": "yttsSbKZ8g8",
+      "formato": "longo",
+      "foraDoRegisto": false,
+      "publicadoEm": "2026-09-12",
+      "privacidade": "public",
+      "duracaoSeg": 396,
+      "comentarios": 1,
+      "gostos": 0,
+      "views": 3,
+      "minutosTotais": 0,
+      "duracaoMediaSeg": 8,
+      "percentagemMedia": 0.0213,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "compras-inteligentes-escolhas-com",
+      "videoId": "NC4Pi61FDPU",
+      "formato": "longo",
+      "foraDoRegisto": false,
+      "publicadoEm": "2026-09-05",
+      "privacidade": "public",
+      "duracaoSeg": 370,
+      "comentarios": 1,
+      "gostos": 0,
+      "views": 1,
+      "minutosTotais": 0,
+      "duracaoMediaSeg": 12,
+      "percentagemMedia": 0.0331,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "dono-dois-homens-mesma-idade-mesmo-trabalho",
+      "videoId": "WaXL2ST00eE",
+      "formato": "longo",
+      "foraDoRegisto": false,
+      "publicadoEm": "2026-08-24",
+      "privacidade": "public",
+      "duracaoSeg": 369,
+      "comentarios": 1,
+      "gostos": 0,
+      "views": 51,
+      "minutosTotais": 20,
+      "duracaoMediaSeg": 93,
+      "percentagemMedia": 0.25429999999999997,
+      "curva": {
+        "pontos": 100,
+        "aos3s": 1,
+        "aos25pc": 0.25,
+        "aos50pc": 0.16670000000000001,
+        "aos75pc": 0.16670000000000001,
+        "noFim": 0.16670000000000001,
+        "metadeSaiEmRatio": 0.09,
+        "metadeSaiEmSegundos": 33
+      },
+      "erro": null
+    },
+    {
+      "slug": "dono-dois-homens-mesma-idade-mesmo-trabalho",
+      "videoId": "WaXL2ST00eE",
+      "formato": "longo",
+      "foraDoRegisto": false,
+      "publicadoEm": "2026-08-24",
+      "privacidade": "public",
+      "duracaoSeg": 369,
+      "comentarios": 1,
+      "gostos": 0,
+      "views": 51,
+      "minutosTotais": 20,
+      "duracaoMediaSeg": 93,
+      "percentagemMedia": 0.25429999999999997,
+      "curva": {
+        "pontos": 100,
+        "aos3s": 1,
+        "aos25pc": 0.25,
+        "aos50pc": 0.16670000000000001,
+        "aos75pc": 0.16670000000000001,
+        "noFim": 0.16670000000000001,
+        "metadeSaiEmRatio": 0.09,
+        "metadeSaiEmSegundos": 33
+      },
+      "erro": null
+    },
+    {
+      "slug": "educacao-financeira-como-fazer",
+      "videoId": "AStHGn0_INc",
+      "formato": "longo",
+      "foraDoRegisto": false,
+      "publicadoEm": "2026-08-29",
+      "privacidade": "public",
+      "duracaoSeg": 384,
+      "comentarios": 1,
+      "gostos": 0,
+      "views": 3,
+      "minutosTotais": 1,
+      "duracaoMediaSeg": 36,
+      "percentagemMedia": 0.09380000000000001,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "mDoIJkUKYMg",
+      "videoId": "mDoIJkUKYMg",
+      "formato": "longo",
+      "foraDoRegisto": true,
+      "publicadoEm": "",
+      "privacidade": "public",
+      "duracaoSeg": 388,
+      "comentarios": 1,
+      "gostos": 3,
+      "views": 40,
+      "minutosTotais": 56,
+      "duracaoMediaSeg": 84,
+      "percentagemMedia": 0.2187,
+      "curva": {
+        "pontos": 100,
+        "aos3s": 0.975,
+        "aos25pc": 0.275,
+        "aos50pc": 0.175,
+        "aos75pc": 0.15,
+        "noFim": 0.1,
+        "metadeSaiEmRatio": 0.05,
+        "metadeSaiEmSegundos": 19
+      },
+      "erro": null
+    },
+    {
+      "slug": "S94DvB7yTZM",
+      "videoId": "S94DvB7yTZM",
+      "formato": "longo",
+      "foraDoRegisto": true,
+      "publicadoEm": "",
+      "privacidade": "public",
+      "duracaoSeg": 377,
+      "comentarios": 1,
+      "gostos": 0,
+      "views": 16,
+      "minutosTotais": 17,
+      "duracaoMediaSeg": 66,
+      "percentagemMedia": 0.1773,
+      "curva": {
+        "pontos": 100,
+        "aos3s": 1,
+        "aos25pc": 0.1875,
+        "aos50pc": 0.125,
+        "aos75pc": 0.125,
+        "noFim": 0.0625,
+        "metadeSaiEmRatio": 0.07,
+        "metadeSaiEmSegundos": 26
+      },
+      "erro": null
+    },
+    {
+      "slug": "S94DvB7yTZM",
+      "videoId": "S94DvB7yTZM",
+      "formato": "longo",
+      "foraDoRegisto": true,
+      "publicadoEm": "",
+      "privacidade": "public",
+      "duracaoSeg": 377,
+      "comentarios": 1,
+      "gostos": 0,
+      "views": 16,
+      "minutosTotais": 17,
+      "duracaoMediaSeg": 66,
+      "percentagemMedia": 0.1773,
+      "curva": {
+        "pontos": 100,
+        "aos3s": 1,
+        "aos25pc": 0.1875,
+        "aos50pc": 0.125,
+        "aos75pc": 0.125,
+        "noFim": 0.0625,
+        "metadeSaiEmRatio": 0.07,
+        "metadeSaiEmSegundos": 26
+      },
+      "erro": null
+    },
+    {
+      "slug": "vriak9lBI48",
+      "videoId": "vriak9lBI48",
+      "formato": "longo",
+      "foraDoRegisto": true,
+      "publicadoEm": "",
+      "privacidade": "public",
+      "duracaoSeg": 372,
+      "comentarios": 1,
+      "gostos": 2,
+      "views": 60,
+      "minutosTotais": 98,
+      "duracaoMediaSeg": 100,
+      "percentagemMedia": 0.2688,
+      "curva": {
+        "pontos": 100,
+        "aos3s": 0.9655,
+        "aos25pc": 0.3448,
+        "aos50pc": 0.2414,
+        "aos75pc": 0.1552,
+        "noFim": 0.0862,
+        "metadeSaiEmRatio": 0.08,
+        "metadeSaiEmSegundos": 30
+      },
+      "erro": null
+    },
+    {
+      "slug": "sair-do-vermelho",
+      "videoId": "1UzrcHT6kQQ",
+      "formato": "longo",
+      "foraDoRegisto": false,
+      "publicadoEm": "2026-08-05",
+      "privacidade": "public",
+      "duracaoSeg": 341,
+      "comentarios": 1,
+      "gostos": 2,
+      "views": 21,
+      "minutosTotais": 34,
+      "duracaoMediaSeg": 99,
+      "percentagemMedia": 0.2932,
+      "curva": {
+        "pontos": 100,
+        "aos3s": 0.9473999999999999,
+        "aos25pc": 0.31579999999999997,
+        "aos50pc": 0.31579999999999997,
+        "aos75pc": 0.21050000000000002,
+        "noFim": 0.21050000000000002,
+        "metadeSaiEmRatio": 0.18,
+        "metadeSaiEmSegundos": 61
+      },
+      "erro": null
     }
   ]
 }
