@@ -41,6 +41,12 @@ const OUTPUT_DIR = join(ROOT, 'src', 'scripts', 'youtube', 'output');
 const TOKEN_URL = 'https://oauth2.googleapis.com/token';
 const ANALYTICS_URL = 'https://youtubeanalytics.googleapis.com/v2/reports';
 const VIDEOS_URL = 'https://www.googleapis.com/youtube/v3/videos';
+const CHANNELS_URL = 'https://www.googleapis.com/youtube/v3/channels';
+const PLAYLIST_URL = 'https://www.googleapis.com/youtube/v3/playlistItems';
+// ♦ 03/10/2026 — o registo dos longos, que entra só para dar nome aos vídeos.
+const TRACKING_LONGOS = join(ROOT, '.github', 'data', 'youtube-longos-published.json');
+/** Fronteira Short/longo em segundos (limite do YouTube para Shorts desde out/2024). */
+const SHORT_MAX_SEG = 180;
 
 const args = Object.fromEntries(
   process.argv.slice(2).filter((a) => a.startsWith('--')).map((a) => {
@@ -81,6 +87,46 @@ export const RETENCAO_MINIMA = 0.70;
 export const VISUALIZACOES_MINIMAS = 10;
 
 /**
+ * ♦ 03/10/2026 — A RÉGUA DO VÍDEO LONGO. **Os 70% são de SHORT e não servem aqui.**
+ *
+ * 🔴 Até hoje `avaliarRetencao` aplicava 70% a tudo o que recebesse. Não dava erro
+ * porque **nenhum vídeo longo chegava a esta função** — eles nem eram medidos. No
+ * dia em que entrassem, os oito reprovavam todos, e nascia um alarme que dispara
+ * sempre, que é a lição que esta casa já pagou duas vezes.
+ *
+ * São coisas diferentes:
+ *   - **Short** repete em ciclo e dura 16s. Passar dos 100% é normal e é o melhor
+ *     sinal que existe. 70% é exigente mas alcançável — e foi ordem do dono.
+ *   - **Longo** tem 6 minutos e ninguém revê. A referência do ramo é **40%** (fica
+ *     à frente de 83% dos canais) e **50% multiplica por três** a probabilidade de
+ *     ser recomendado. Exigir 70% a um vídeo de 6 minutos é exigir o impossível.
+ */
+export const RETENCAO_MINIMA_LONGO = 0.40;
+
+/**
+ * ⚠️ **E O MÍNIMO DE AUDIÊNCIA TAMBÉM MUDA — este número é o que impede uma
+ * mentira confortável.**
+ *
+ * Os longos deste canal têm hoje **13 a 59 visualizações**. Com 13, uma única
+ * pessoa vale quase 8% do resultado; dois espectadores mexem a percentagem em
+ * quinze pontos. Dizer *"a retenção dos longos é 24%, logo a abertura está errada"*
+ * com essa base é **inventar defeito** — e foi exactamente o que uma avaliação
+ * externa fez em 02/10.
+ *
+ * 50 é o mínimo para a conta começar a valer. Hoje isso deixa quase todos os
+ * longos em *"ainda não sei"* — **e isso é a resposta certa**, não uma falha da
+ * medição. Quando o canal crescer, eles entram sozinhos.
+ */
+export const VISUALIZACOES_MINIMAS_LONGO = 50;
+
+/** A régua certa para o formato do vídeo. Sem formato conhecido, vale a de Short. */
+export function reguaDoFormato(formato) {
+  return formato === 'longo'
+    ? { minimo: RETENCAO_MINIMA_LONGO, minViews: VISUALIZACOES_MINIMAS_LONGO, nome: 'longo' }
+    : { minimo: RETENCAO_MINIMA, minViews: VISUALIZACOES_MINIMAS, nome: 'short' };
+}
+
+/**
  * ♦ 17/09/2026 — A MEDIANA, E POR QUE ELA SUBSTITUI A MÉDIA NO RANKING DOS GANCHOS.
  *
  * 🔴 **MEDIDO:** um Short de 16s deixado em loop deu **20.654%** de percentagem média
@@ -101,15 +147,29 @@ export function mediana(lista, f = (x) => x) {
   return vals.length % 2 ? vals[meio] : (vals[meio - 1] + vals[meio]) / 2;
 }
 
-export function avaliarRetencao(videos, { minimo = RETENCAO_MINIMA, minViews = VISUALIZACOES_MINIMAS } = {}) {
+/**
+ * ♦ 03/10/2026 — **a régua passou a sair do FORMATO do vídeo.**
+ *
+ * ⚠️ Os parâmetros `minimo`/`minViews` continuam a existir e a ter os valores de
+ * Short por omissão — `validar-metadados-short.js` e `temas-vida.js` dependem
+ * disso, e partir dois ficheiros provados para arrumar este seria o remédio pior
+ * que a doença. Quem **não** passa régua à mão e manda vídeos com
+ * `formato: 'longo'` passa a ser julgado pela régua do longo.
+ */
+export function avaliarRetencao(videos, { minimo = null, minViews = null } = {}) {
   const abaixo = [];
   const acima = [];
   const semAudiencia = [];
   for (const v of videos || []) {
+    // Régua à mão ganha sempre (é o caso das provas de mesa); senão, vem do formato.
+    const r = reguaDoFormato(v?.formato);
+    const alvo = minimo != null ? minimo : r.minimo;
+    const alvoViews = minViews != null ? minViews : r.minViews;
+
     const p = v?.percentagemMedia;
     if (typeof p !== 'number' || !Number.isFinite(p)) { semAudiencia.push(v); continue; }
-    if ((v.views || 0) < minViews) { semAudiencia.push(v); continue; }
-    (p < minimo ? abaixo : acima).push(v);
+    if ((v.views || 0) < alvoViews) { semAudiencia.push(v); continue; }
+    (p < alvo ? abaixo : acima).push(v);
   }
   // Do pior para o melhor: quem lê um aviso lê a primeira linha.
   abaixo.sort((a, b) => a.percentagemMedia - b.percentagemMedia);
@@ -197,6 +257,78 @@ async function fetchDurations(token, ids) {
   return out;
 }
 
+/**
+ * OS VÍDEOS LONGOS — e por que NÃO saem do ficheiro de registo.
+ *
+ * ♦ 03/10/2026, conserto nº3. A ideia inicial era simplesmente ler o segundo
+ * ficheiro de registo (`youtube-longos-published.json`, 8 vídeos). **Medido antes
+ * de escrever, e ainda bem:**
+ *
+ * | longo | está no registo? | impressões de capa |
+ * |---|---|---|
+ * | Mesmo salário por 30 anos | 🔴 **não** | **7.305** |
+ * | Dois homens, mesmo salário | 🔴 **não** | **3.765** |
+ * | Como meu amigo conseguiu aposentar | 🔴 **não** | **2.137** |
+ * | Dívida do cartão | sim | 3.854 |
+ * | Por que um amigo já aposentou | sim | 764 |
+ *
+ * 🔴 **Os três longos com MAIS gente a ver a capa não estão em registo nenhum** —
+ * 13.207 das 17.825 impressões. Ler o ficheiro teria medido 8 vídeos e perdido
+ * exactamente os que interessam, com ar de trabalho feito.
+ *
+ * ⚠️ Além disso o registo guarda o título **planeado**, não o publicado: para
+ * `WaXL2ST00eE` ele diz *"Mesmo salário por 30 anos…"* e no canal está *"Por que um
+ * amigo já aposentou…"*. Quem decide o que existe é o **canal**, não o ficheiro.
+ *
+ * Por isso a lista vem da lista de envios do próprio canal. O registo entra só
+ * para dar o `slug` a quem o tiver — é conveniência, não fonte de verdade.
+ */
+async function listarLongosDoCanal(token, registo = {}) {
+  // 1. A playlist onde o YouTube guarda tudo o que o canal publicou.
+  const rc = await fetch(`${CHANNELS_URL}?part=contentDetails&mine=true`, {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+  if (!rc.ok) throw new Error(`Não deu para ler o canal (${rc.status})`);
+  const canal = await rc.json();
+  const playlist = canal?.items?.[0]?.contentDetails?.relatedPlaylists?.uploads;
+  if (!playlist) throw new Error('O canal não devolveu a lista de envios.');
+
+  // 2. Todos os ids, de 50 em 50.
+  const ids = [];
+  let pagina = '';
+  do {
+    const url = `${PLAYLIST_URL}?part=contentDetails&maxResults=50&playlistId=${playlist}`
+      + (pagina ? `&pageToken=${pagina}` : '');
+    const rp = await fetch(url, { headers: { Authorization: `Bearer ${token}` } });
+    if (!rp.ok) break;
+    const dados = await rp.json();
+    for (const item of dados.items || []) {
+      const id = item?.contentDetails?.videoId;
+      if (id) ids.push(id);
+    }
+    pagina = dados.nextPageToken || '';
+  } while (pagina);
+
+  // 3. Duração e título reais, e fica só o que passa dos 3 minutos.
+  const ficha = await fetchDurations(token, ids);
+  const slugPorId = {};
+  for (const [slug, v] of Object.entries(registo)) if (v?.videoId) slugPorId[v.videoId] = slug;
+
+  const longos = [];
+  for (const id of ids) {
+    const f = ficha[id];
+    if (!f || !Number.isFinite(f.segundos) || f.segundos <= SHORT_MAX_SEG) continue;
+    longos.push({
+      slug: slugPorId[id] || id,
+      videoId: id,
+      formato: 'longo',
+      uploadedAt: registo[slugPorId[id]]?.uploadedAt || null,
+      foraDoRegisto: !slugPorId[id],
+    });
+  }
+  return longos;
+}
+
 /** Lê a curva e responde às perguntas que interessam ao vídeo longo. */
 function lerCurva(rows, duracaoSeg) {
   // rows: [ratio (0..1), audienceWatchRatio, ...] — 0 = início, 1 = fim.
@@ -234,17 +366,62 @@ async function main() {
   const tracking = JSON.parse(readFileSync(TRACKING, 'utf-8')) || {};
 
   let videos = Object.entries(tracking)
-    .map(([slug, v]) => ({ slug, ...v }))
+    .map(([slug, v]) => ({ slug, ...v, formato: 'short' }))
     .filter((v) => v.videoId)
     .sort((a, b) => String(a.uploadedAt).localeCompare(String(b.uploadedAt)));
+
+  const token = await getAccessToken();
+
+  /**
+   * ♦ 03/10/2026 — OS LONGOS ENTRAM NA MEDIÇÃO (conserto nº3).
+   *
+   * Vêm da lista de envios do canal, não do ficheiro de registo — ver
+   * `listarLongosDoCanal`. Se a leitura falhar, os Shorts continuam a ser medidos
+   * na mesma: **o conserto novo não pode levar abaixo a medição que já funcionava.**
+   */
+  let longos = [];
+  let erroLongos = null;
+  try {
+    const registoLongos = existsSync(TRACKING_LONGOS)
+      ? JSON.parse(readFileSync(TRACKING_LONGOS, 'utf-8')) || {}
+      : {};
+    longos = await listarLongosDoCanal(token, registoLongos);
+    const desconhecidos = longos.filter((v) => v.foraDoRegisto).length;
+    log(`🎬 ${longos.length} vídeo(s) longo(s) no canal`
+      + (desconhecidos ? ` — 🔴 ${desconhecidos} deles NÃO constam do registo de publicados` : '')
+      + '.');
+  } catch (e) {
+    erroLongos = e.message;
+    log(`⚠️ Não deu para listar os longos: ${e.message} (os Shorts são medidos na mesma)`);
+  }
+
+  // Um longo que também esteja no registo de Shorts não pode entrar duas vezes.
+  const jaTem = new Set(videos.map((v) => v.videoId));
+  for (const l of longos) {
+    if (jaTem.has(l.videoId)) {
+      // Estava marcado como Short por engano do registo: a duração real manda.
+      const v = videos.find((x) => x.videoId === l.videoId);
+      if (v) { v.formato = 'longo'; v.foraDoRegisto = false; }
+    } else {
+      videos.push(l);
+    }
+  }
+
   if (ONLY_VIDEO) videos = videos.filter((v) => v.videoId === ONLY_VIDEO);
   if (!videos.length) throw new Error('Nenhum vídeo para medir.');
 
-  const token = await getAccessToken();
-  log(`🔑 Acesso renovado. Medindo ${videos.length} vídeo(s).\n`);
+  const quantos = (f) => videos.filter((v) => v.formato === f).length;
+  log(`🔑 Acesso renovado. Medindo ${videos.length} vídeo(s) — ${quantos('short')} Short(s) e ${quantos('longo')} longo(s).\n`);
 
   const hoje = new Date().toISOString().slice(0, 10);
-  const primeiro = String(videos[0].uploadedAt || '').slice(0, 10) || '2026-01-01';
+  /**
+   * ⚠️ O início da janela é a data mais ANTIGA de todas, não a do primeiro da
+   * lista. Os longos vêm do canal e muitos não têm data no registo — se um deles
+   * ficasse à cabeça, a janela de medição começava hoje e **a Analytics devolvia
+   * zero para o canal inteiro**, sem dar erro nenhum.
+   */
+  const datas = videos.map((v) => String(v.uploadedAt || '').slice(0, 10)).filter((d) => /^\d{4}-\d{2}-\d{2}$/.test(d));
+  const primeiro = datas.length ? datas.sort()[0] : '2026-01-01';
 
   const meta = await fetchDurations(token, videos.map((v) => v.videoId));
 
@@ -293,6 +470,10 @@ async function main() {
     resultados.push({
       slug: v.slug,
       videoId: v.videoId,
+      // ⚠️ É este campo que escolhe a RÉGUA lá em baixo (70% para Short, 40% para
+      // longo). Sem ele, o vídeo é julgado como Short — ver `reguaDoFormato`.
+      formato: v.formato || 'short',
+      foraDoRegisto: Boolean(v.foraDoRegisto),
       publicadoEm: String(v.uploadedAt || '').slice(0, 10),
       privacidade: meta[v.videoId]?.privacidade || '?',
       duracaoSeg: dur,
@@ -306,10 +487,13 @@ async function main() {
 
   // ── Relatório humano ───────────────────────────────────────────────────────
   const linhas = [];
-  linhas.push('| vídeo | publicado | estado | views | % médio | metade sai aos | fim |');
-  linhas.push('|---|---|---|---|---|---|---|');
+  // ⚠️ 03/10 — a coluna do FORMATO entra porque sem ela a tabela mistura um Short
+  // de 16s com um vídeo de 6 minutos e os números ficam incomparáveis à vista.
+  linhas.push('| vídeo | formato | publicado | estado | views | % médio | metade sai aos | fim |');
+  linhas.push('|---|---|---|---|---|---|---|---|');
   for (const r of resultados) {
-    linhas.push(`| ${r.slug} | ${r.publicadoEm} | ${r.privacidade} | ${r.views ?? '—'} | ${pc(r.percentagemMedia)} | ${r.curva?.metadeSaiEmSegundos != null ? `${r.curva.metadeSaiEmSegundos}s` : '—'} | ${pc(r.curva?.noFim)} |`);
+    const fmt = r.formato === 'longo' ? (r.foraDoRegisto ? 'longo ⚠️' : 'longo') : 'short';
+    linhas.push(`| ${r.slug} | ${fmt} | ${r.publicadoEm || '—'} | ${r.privacidade} | ${r.views ?? '—'} | ${pc(r.percentagemMedia)} | ${r.curva?.metadeSaiEmSegundos != null ? `${r.curva.metadeSaiEmSegundos}s` : '—'} | ${pc(r.curva?.noFim)} |`);
   }
 
   const comCurva = resultados.filter((r) => r.curva);
@@ -368,6 +552,21 @@ async function main() {
   const porGancho = new Map();
   const porFormato = new Map();
   for (const r of resultados) {
+    /**
+     * ⚠️ 03/10/2026 — **o vídeo longo NÃO entra no ranking dos ganchos, e isto não
+     * é arrumação: é o que impede um estrago.**
+     *
+     * Os ganchos em rodízio são dos Shorts, e `temas-vida.js` lê este ranking para
+     * escolher o gancho do Short seguinte. Um longo sem roteiro de Short cairia no
+     * saco `short50` por omissão e passaria a pesar numa decisão que não é dele —
+     * com 6 minutos e 24% de retenção, puxava para baixo o gancho que lhe calhasse.
+     */
+    if (r.formato === 'longo') {
+      if (!porFormato.has('longo')) porFormato.set('longo', []);
+      porFormato.get('longo').push(r);
+      continue;
+    }
+
     let ficha = null;
     try {
       ficha = JSON.parse(readFileSync(join(OUTPUT_DIR, `${r.slug}.script.json`), 'utf-8'));
@@ -402,7 +601,8 @@ async function main() {
     log('══════════ POR FORMATO — O QUE CADA UM TRAZ ══════════');
     log('formato              | vídeos | views (soma) | mediana | retenção | comentários');
     for (const [formato, lista] of porFormato) {
-      const nome = formato === 'loop16' ? 'Short de 16s (loop)' : 'Short de 50s';
+      const nome = formato === 'loop16' ? 'Short de 16s (loop)'
+        : formato === 'longo' ? 'Vídeo longo' : 'Short de 50s';
       const comV = lista.filter((r) => (r.views || 0) > 0);
       const somaViews = lista.reduce((a, r) => a + (r.views || 0), 0);
       const comCom = lista.filter((r) => Number.isFinite(r.comentarios));
@@ -473,23 +673,53 @@ async function main() {
     }
   }
 
-  // ── O AVISO DOS 70% (ordem do dono, 06/08) ──
-  const veredito = avaliarRetencao(resultados);
+  /**
+   * ── O AVISO, AGORA COM UMA RÉGUA PARA CADA FORMATO ──────────────────────────
+   *
+   * ♦ 06/08/2026 os 70% foram ordem do dono, e continuam a valer **para os Shorts**.
+   * ♦ 03/10/2026 (conserto nº4) o vídeo longo passou a ser julgado pela régua dele:
+   * **40% de percentagem assistida e 50 visualizações** para a conta valer alguma
+   * coisa. Ver `reguaDoFormato` lá em cima, onde está o porquê de cada número.
+   *
+   * 🔴 **Isto tinha de vir no mesmo dia que a entrada dos longos (conserto nº3).**
+   * Medir os longos com a régua de Short faria os oito reprovarem de uma vez — um
+   * alarme que dispara sempre é um alarme que ninguém lê, e é das poucas coisas que
+   * esta casa já pagou duas vezes.
+   */
   const avisoLinhas = [];
+  const porRegua = [
+    { formato: 'short', titulo: 'SHORTS', r: reguaDoFormato('short') },
+    { formato: 'longo', titulo: 'VÍDEOS LONGOS', r: reguaDoFormato('longo') },
+  ];
+  const vereditos = {};
+
   log('');
-  log(`══════════ O AVISO DOS ${Math.round(RETENCAO_MINIMA * 100)}% ══════════`);
-  if (veredito.abaixo.length) {
-    avisoLinhas.push(`🔴 **${veredito.abaixo.length} vídeo(s) abaixo de ${Math.round(RETENCAO_MINIMA * 100)}%** — o ganho está mau, é preciso mudar alguma coisa:`);
-    for (const v of veredito.abaixo) avisoLinhas.push(`- ${pc(v.percentagemMedia)} · ${v.slug} (${v.views} visualizações) · https://youtu.be/${v.videoId}`);
-  } else if (veredito.acima.length) {
-    avisoLinhas.push(`✅ Nenhum vídeo com audiência abaixo de ${Math.round(RETENCAO_MINIMA * 100)}%. Os ${veredito.acima.length} medidos estão bem.`);
-  } else {
-    avisoLinhas.push(`⏳ **Ainda não dá para julgar ninguém.** Nenhum vídeo chegou às ${VISUALIZACOES_MINIMAS} visualizações — abaixo disso a percentagem é um acaso, não um sinal.`);
+  for (const { formato, titulo, r } of porRegua) {
+    const doFormato = resultados.filter((x) => (x.formato || 'short') === formato);
+    if (!doFormato.length) continue;
+    const v = avaliarRetencao(doFormato);
+    vereditos[formato] = v;
+
+    avisoLinhas.push(`### ${titulo} — régua: ${Math.round(r.minimo * 100)}% (mínimo ${r.minViews} visualizações)`);
+    if (v.abaixo.length) {
+      avisoLinhas.push(`🔴 **${v.abaixo.length} abaixo de ${Math.round(r.minimo * 100)}%** — é preciso mudar alguma coisa:`);
+      for (const x of v.abaixo) avisoLinhas.push(`- ${pc(x.percentagemMedia)} · ${x.slug} (${x.views} visualizações) · https://youtu.be/${x.videoId}`);
+    } else if (v.acima.length) {
+      avisoLinhas.push(`✅ Nenhum abaixo de ${Math.round(r.minimo * 100)}%. Os ${v.acima.length} com audiência estão bem.`);
+    } else {
+      avisoLinhas.push(`⏳ **Ainda não dá para julgar nenhum.** Nenhum chegou às ${r.minViews} visualizações — abaixo disso a percentagem é acaso, não sinal.`);
+    }
+    if (v.semAudiencia.length) {
+      avisoLinhas.push(`⏳ ${v.semAudiencia.length} ainda sem audiência suficiente (menos de ${r.minViews}) — não são julgados.`);
+    }
+    avisoLinhas.push('');
   }
-  if (veredito.semAudiencia.length) {
-    avisoLinhas.push(`⏳ ${veredito.semAudiencia.length} vídeo(s) ainda sem audiência suficiente (menos de ${VISUALIZACOES_MINIMAS} visualizações) — não são julgados.`);
-  }
-  log(avisoLinhas.join('\n').replace(/\*\*/g, ''));
+  log('══════════ O AVISO, POR FORMATO ══════════');
+  log(avisoLinhas.join('\n').replace(/\*\*/g, '').replace(/^### /gm, ''));
+
+  // Compatibilidade: o veredito "solto" continua a ser o dos Shorts, que é o que o
+  // payload sempre guardou e o que `temas-vida.js` espera encontrar.
+  const veredito = vereditos.short || { abaixo: [], acima: [], semAudiencia: [] };
 
   /**
    * ── O CLIQUE NA CAPA (02/10/2026) ────────────────────────────────────────────
@@ -569,11 +799,32 @@ async function main() {
   }
   log(capasLinhas.join('\n').replace(/\*\*/g, ''));
 
+  const resumoDoVeredito = (v) => ({
+    abaixo: (v?.abaixo || []).map((x) => ({ slug: x.slug, videoId: x.videoId, percentagemMedia: x.percentagemMedia, views: x.views })),
+    julgados: (v?.abaixo?.length || 0) + (v?.acima?.length || 0),
+    semAudiencia: v?.semAudiencia?.length || 0,
+  });
+
   const payload = { medidoEm: new Date().toISOString(), resumo, aviso: {
+    // ⚠️ Estes dois campos continuam a ser os do SHORT, com os mesmos nomes de
+    // sempre: é o que `temas-vida.js` e o validador dos metadados leem. O longo
+    // vive ao lado, em `avisoPorFormato`, para não mudar o significado do que já
+    // era lido — regra velha a correr em estrutura nova é o defeito nº1 da casa.
     minimo: RETENCAO_MINIMA,
     visualizacoesMinimas: VISUALIZACOES_MINIMAS,
-    abaixo: veredito.abaixo.map((v) => ({ slug: v.slug, videoId: v.videoId, percentagemMedia: v.percentagemMedia, views: v.views })),
-    julgados: veredito.abaixo.length + veredito.acima.length,
+    ...resumoDoVeredito(veredito),
+  },
+  // ♦ 03/10/2026 — conserto nº4: cada formato com a sua régua, e as duas gravadas.
+  avisoPorFormato: {
+    short: { minimo: RETENCAO_MINIMA, visualizacoesMinimas: VISUALIZACOES_MINIMAS, ...resumoDoVeredito(vereditos.short) },
+    longo: { minimo: RETENCAO_MINIMA_LONGO, visualizacoesMinimas: VISUALIZACOES_MINIMAS_LONGO, ...resumoDoVeredito(vereditos.longo) },
+  },
+  // ♦ 03/10/2026 — conserto nº3: quantos longos o canal tem e quantos o registo
+  // de publicados não conhecia (eram 3 dos 5 com mais gente a ver a capa).
+  longos: {
+    medidos: resultados.filter((r) => r.formato === 'longo').length,
+    foraDoRegisto: resultados.filter((r) => r.formato === 'longo' && r.foraDoRegisto).length,
+    erro: erroLongos,
   },
   // ⚠️ É ISTO que `temas-vida.js` lê para decidir o gancho do vídeo seguinte. Antes de
   // 17/09 este bloco não existia e a medição morria no registo da corrida.
@@ -603,7 +854,10 @@ async function main() {
 
   if (process.env.GITHUB_STEP_SUMMARY) {
     appendFileSync(process.env.GITHUB_STEP_SUMMARY,
-      `## 📉 Retenção dos Shorts\n\n${avisoLinhas.join('\n')}\n\n${linhas.join('\n')}\n\n` +
+      `## 📉 Retenção — Shorts e vídeos longos\n\n${avisoLinhas.join('\n')}\n\n${linhas.join('\n')}\n\n`
+      + (resultados.some((r) => r.foraDoRegisto)
+        ? `⚠️ Os marcados **longo ⚠️** não constam do registo de publicados — foram encontrados no próprio canal.\n\n`
+        : '') +
       (resumo.comCurva
         ? `**Início (100% = visto 1×, acima disso = revisto):** ${pc(resumo.ficamAte3s)} · **a meio:** ${pc(resumo.ficamAte50pc)} · **no fim:** ${pc(resumo.ficamAteAoFim)} · **metade sai aos:** ${resumo.metadeSaiAosSegundos == null ? '—' : `${Math.round(resumo.metadeSaiAosSegundos)}s`}\n`
         : `⚠️ Sem curva: audiência pequena de mais.\n`)

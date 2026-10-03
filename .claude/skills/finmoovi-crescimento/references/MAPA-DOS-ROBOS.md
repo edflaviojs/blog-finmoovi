@@ -108,33 +108,59 @@ contas e as réguas — onde vive a decisão. **A primeira corrida a valer é te
 07h UTC**, e ela imprime quantas páginas passaram e o motivo de cada rejeição.
 É essa leitura que diz se a régua está no ponto.
 
-## Buraco 3 — Os vídeos longos não são medidos por ninguém
+## ✅ Buracos 3 e 4 — CONSERTADOS a 03/10/2026, juntos
 
-`retencao.js` lê `.github/data/youtube-published.json`: **173 vídeos, todos Shorts**
-(104 de 16s, 56 de 50s, 13 antigos). Os longos estão noutro ficheiro,
-`youtube-longos-published.json` — **8 vídeos** — e quem o lê são cinco scripts de
-**produção, publicação e validação**. Nenhum mede desempenho.
+Tinham de vir no mesmo dia: medir os longos com a régua de Short faria os oito
+reprovarem de uma vez, e nascia um alarme que dispara sempre.
 
-E os longos são onde está o volume: os cinco longos visíveis nos dados somam
-**17.825 impressões de miniatura** contra algumas centenas dos Shorts.
+### 🔴 E o conserto nº3 ia sair pela metade
 
-**Conserto:** `retencao.js` passar a ler os dois ficheiros, **com réguas separadas**
-— ver buraco 4.
+O plano era «ler o segundo ficheiro de registo» (`youtube-longos-published.json`,
+8 vídeos). **Medido antes de escrever:**
 
-## Buraco 4 — A régua dos 70% é régua de Short
+| longo | no registo? | impressões de capa |
+|---|---|---|
+| Mesmo salário por 30 anos | 🔴 **não** | **7.305** |
+| Dois homens, mesmo salário | 🔴 **não** | **3.765** |
+| Como meu amigo conseguiu aposentar | 🔴 **não** | **2.137** |
+| Dívida do cartão | sim | 3.854 |
+| Por que um amigo já aposentou | sim | 764 |
 
-`avaliarRetencao()` aplica `RETENCAO_MINIMA = 0.70` a tudo o que recebe. Para um
-Short isso está certo e foi ordem do dono. **Para um vídeo longo, 70% de
-percentagem assistida é irreal** — a referência do nicho é 40%, e 50% já significa
-três vezes mais recomendação.
+**Os três longos com mais gente a ver a capa não constam de registo nenhum** —
+13.207 das 17.825 impressões. Ler o ficheiro teria medido 8 vídeos, perdido os que
+interessam, e tido ar de trabalho feito.
 
-Hoje não dá erro porque nenhum longo chega lá. No dia em que o buraco 3 for
-consertado, **todos os longos apareceriam como reprovados** — um alarme que dispara
-sempre, que é a lição que esta casa já pagou duas vezes.
+⚠️ O registo guarda ainda o título **planeado**, não o publicado: para
+`WaXL2ST00eE` diz *"Mesmo salário por 30 anos…"* e no canal está *"Por que um amigo
+já aposentou…"*.
 
-**Conserto:** a régua tem de vir do **formato** do vídeo, não ser uma constante
-única: Short 70% de percentagem assistida; longo 40% de percentagem assistida **e
-4% de CTR de miniatura**.
+> **Quem decide o que existe é o CANAL, não o ficheiro.** A lista passou a vir da
+> lista de envios do próprio canal (`listarLongosDoCanal`); o registo entra só para
+> dar nome a quem o tiver, e o relatório marca com **⚠️** os que ele não conhecia.
+
+### O que ficou feito
+
+| | |
+|---|---|
+| `RETENCAO_MINIMA_LONGO = 0.40` | referência do ramo; 50% multiplica por 3 a recomendação |
+| `VISUALIZACOES_MINIMAS_LONGO = 50` | com 13 visualizações, dois espectadores mexem 15 pontos |
+| `reguaDoFormato()` | a régua sai do formato; **sem formato, continua a de Short** |
+| `avaliarRetencao()` | julga cada vídeo pela régua dele; régua à mão continua a ganhar |
+| relatório | secção por formato, coluna «formato», e aviso separado para cada régua |
+| `youtube-retencao.json` | `avisoPorFormato` e `longos` novos, **sem mexer** nos campos que `temas-vida.js` já lia |
+
+⚠️ **O vídeo longo NÃO entra no ranking dos ganchos** — esse ranking é dos Shorts e
+é lido para escolher o gancho seguinte. Um longo de 6 minutos a pesar aí puxava
+para baixo o gancho que lhe calhasse.
+
+**Provas:** `tests/regua-por-formato.test.js` — 13. O mesmo 45% **passa num longo e
+reprova num Short**; com a régua de Short os cinco longos reais reprovavam todos;
+e o mínimo de 50 deixa quatro dos cinco longos de hoje em *"ainda não sei"*, que é
+a resposta certa.
+
+⚠️ Uma prova minha começou errada (afirmava que **nenhum** longo seria julgado) e
+falhou: o de 59 visualizações passa o mínimo. **O código estava certo e a
+expectativa errada** — ficou a verdade medida.
 
 ## Buraco 5 — O raio-x tem as datas escritas à mão
 
@@ -195,8 +221,8 @@ não.**
 |---|---|---|---|
 | 1 | medir o clique na capa | `apis/youtube-reporting.js` + `youtube/retencao.js` | ✅ **feito 02/10** — falta o Ed correr o workflow uma vez |
 | 2 | filtro de realidade | `lib/gsc-posts.js` + 3 robôs | ✅ **feito 02/10** — prova a valer na terça 07h UTC |
-| 3 | longos entram na medição de retenção | `src/scripts/youtube/retencao.js` | ⬜ aberto |
-| 4 | régua por formato (70% é de Short; longo é 40%) | `src/scripts/youtube/retencao.js` | ⬜ aberto — **tem de vir junto com o 3** |
+| 3 | longos entram na medição de retenção | `src/scripts/youtube/retencao.js` | ✅ **feito 03/10** — e vêm do canal, não do registo |
+| 4 | régua por formato (70% é de Short; longo é 40%) | `src/scripts/youtube/retencao.js` | ✅ **feito 03/10**, junto com o 3 |
 | 5 | raio-x com datas calculadas | `automacoes/gsc-raio-x-aparicoes.js` | ⬜ aberto |
 | 6 | fact-guard afinado e no digest diário | `lib/fact-guard.js` + digest | ⬜ aberto |
 | 7 | relatório de segunda com a posição do mercado | `automacoes/gsc-oportunidades.js` | ⬜ aberto (novo) |

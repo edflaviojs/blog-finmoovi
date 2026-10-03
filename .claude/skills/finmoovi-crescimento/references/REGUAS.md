@@ -84,6 +84,17 @@ abertura e o ritmo estão errados"* com essa base é inventar defeito
 (ver lei nº4 em `SKILL.md`). **Primeiro resolver o clique; a retenção remede-se
 quando houver audiência.**
 
+✅ **Isto está no código desde 03/10/2026** (`reguaDoFormato` em `retencao.js`):
+
+| Régua do LONGO | Valor | No código |
+|---|---|---|
+| Percentagem assistida mínima | **40%** | `RETENCAO_MINIMA_LONGO` |
+| Visualizações para a conta valer | **50** | `VISUALIZACOES_MINIMAS_LONGO` |
+| CTR de capa mínimo | **4%**, com ≥300 impressões | na secção «O CLIQUE NA CAPA» |
+
+Com o mínimo de 50, **quatro dos cinco longos de hoje ficam em *"ainda não sei"***
+— e essa é a resposta certa, não uma falha da medição.
+
 ---
 
 ## 3. YOUTUBE — SHORTS
@@ -94,6 +105,7 @@ quando houver audiência.**
 |---|---|---|
 | **Percentagem média assistida — régua da casa** | **70%** | ordem do dono, 06/08/2026 |
 | Mínimo de visualizações para julgar | **10** | medido: com 25 só 1 vídeo em 10 era julgado; um aviso que nunca fala é aviso nenhum |
+| ⚠️ **No código** | `RETENCAO_MINIMA` / `VISUALIZACOES_MINIMAS` | `src/scripts/youtube/retencao.js` — **não mexer**: `temas-vida.js` e `validar-metadados-short.js` dependem delas |
 | Como comparar ganchos | **mediana**, nunca média | medido 17/09: um Short em ciclo deu **20.654%** e sozinho decidia o ranking |
 | Mínimo de vídeos por gancho | **3 com audiência** | abaixo disso é sorte |
 | Completar o vídeo → promoção agressiva | 70%+ | playbook do `claude-youtube` |
