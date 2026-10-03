@@ -1,0 +1,118 @@
+{
+  "slug": "loop-aniversario-do-filho-aconteceu-comigo",
+  "formato": "loop16",
+  "term": "Aniversário do filho",
+  "category": "vida",
+  "keyword": "ANIVERSÁRIO",
+  "valor": "R$ 800",
+  "situacao": "aniversario-do-filho",
+  "gancho": "aconteceu-comigo",
+  "ganchoFamilia": "aconteceu comigo",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "bolha",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Isso aconteceu comigo semana passada, quando vi a festa lá.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "A festa do meu filho"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bolha"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Meu filho pediu festa, e eu vi oitocentos reais sumirem da conta.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "filho",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bolha"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "pediu",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 800"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "E aí percebi. Precisava olhar a conta antes da festa.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "percebi",
+          "visual": {
+            "type": "statement",
+            "text": "Olhei a conta"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "Precisava",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bolha"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Foi que isso aconteceu comigo, semana passada, diante daquela festa.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "Aconteceu comigo"
+          }
+        },
+        {
+          "anchor": "comigo",
+          "visual": {
+            "type": "statement",
+            "text": "A festa do meu filho"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
