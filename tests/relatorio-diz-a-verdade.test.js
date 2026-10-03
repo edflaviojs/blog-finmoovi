@@ -104,6 +104,23 @@ test('🔴 "ainda não sei" NÃO pode ser carimbado como "é falso"', () => {
     'falhar a conferir não é aprovação');
 });
 
+/**
+ * 🔴 O SEGUNDO ERRO DO MESMO CONSERTO, também apanhado só a olhar o resultado real.
+ *
+ * Pus os quatro selos, escrevi a legenda a prometer quatro estados… e **esqueci de
+ * copiar o campo `razao`** da biblioteca para o relatório. Resultado: a legenda
+ * nova por cima de uma tabela que continuava a carimbar 🤖 em tudo — **pior do que
+ * não ter os quatro estados**, porque passa a prometer o que não entrega.
+ *
+ * Olhar o ficheiro gerado, e não o commit, é o que apanha isto.
+ */
+test('🔴 o campo que ESCOLHE o selo é mesmo copiado para o relatório', () => {
+  assert.match(FONTE, /razao: r\.razao/,
+    'sem isto, os quatro selos viram um só e a legenda passa a mentir');
+  assert.match(FONTE, /razao: 'erro'/,
+    'o caminho de erro também precisa de razão, senão cai no selo errado');
+});
+
 test('os motivos vão em blocos SEPARADOS, não num saco só', () => {
   assert.match(FONTE, /Não é oportunidade — o tráfego não é o nosso público/);
   assert.match(FONTE, /Aparece, mas lá atrás/);

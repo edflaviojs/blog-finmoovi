@@ -224,6 +224,10 @@ async function conferirRealidade(lista, period, rotulo) {
       });
       o.realidade = {
         ok: r.ok,
+        // ⚠️ `razao` é o que escolhe o SELO. Esqueci-o na primeira versão e o
+        // relatório voltou a carimbar 🤖 em tudo, com a legenda nova por cima a
+        // prometer quatro estados — pior do que não ter os quatro.
+        razao: r.razao || null,
         motivo: r.motivo,
         posicaoNoMercado: r.posicaoNoMercado != null ? Number(r.posicaoNoMercado.toFixed(1)) : null,
         impressoesNoMercado: r.impressoesNoMercado ?? null,
@@ -233,7 +237,7 @@ async function conferirRealidade(lista, period, rotulo) {
       conferidas++;
     } catch (e) {
       // Falhar a conferir não é prova de que o número é bom — fica dito assim.
-      o.realidade = { ok: false, motivo: `não deu para conferir (${String(e.message).slice(0, 60)})` };
+      o.realidade = { ok: false, razao: 'erro', motivo: `não deu para conferir (${String(e.message).slice(0, 60)})` };
     }
   }
   const porConferir = Math.max(0, lista.length - conferidas);
