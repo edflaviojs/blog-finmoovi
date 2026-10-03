@@ -1,15 +1,15 @@
 {
-  "medidoEm": "2026-10-03T07:07:34.273Z",
+  "medidoEm": "2026-10-03T07:08:55.742Z",
   "resumo": {
-    "videosMedidos": 188,
-    "comAudiencia": 173,
-    "comCurva": 16,
-    "viewsTotais": 3857,
-    "percentagemMediaDoCanal": 2.378850867052023,
-    "metadeSaiAosSegundos": 20,
-    "ficamAte3s": 1.0469374999999999,
-    "ficamAte50pc": 0.3306437499999999,
-    "ficamAteAoFim": 0.20143750000000002
+    "videosMedidos": 186,
+    "comAudiencia": 171,
+    "comCurva": 14,
+    "viewsTotais": 3790,
+    "percentagemMediaDoCanal": 2.404149707602339,
+    "metadeSaiAosSegundos": 18.642857142857142,
+    "ficamAte3s": 1.053642857142857,
+    "ficamAte50pc": 0.35704285714285705,
+    "ficamAteAoFim": 0.21384285714285717
   },
   "aviso": {
     "minimo": 0.7,
@@ -615,25 +615,19 @@
           "views": 51
         },
         {
-          "slug": "dono-dois-homens-mesma-idade-mesmo-trabalho",
-          "videoId": "WaXL2ST00eE",
-          "percentagemMedia": 0.25429999999999997,
-          "views": 51
-        },
-        {
           "slug": "vriak9lBI48",
           "videoId": "vriak9lBI48",
           "percentagemMedia": 0.2688,
           "views": 60
         }
       ],
-      "julgados": 3,
-      "semAudiencia": 10
+      "julgados": 2,
+      "semAudiencia": 9
     }
   },
   "longos": {
-    "medidos": 13,
-    "foraDoRegisto": 4,
+    "medidos": 11,
+    "foraDoRegisto": 3,
     "erro": null
   },
   "ganchos": [
@@ -3841,32 +3835,6 @@
       "erro": null
     },
     {
-      "slug": "dono-dois-homens-mesma-idade-mesmo-trabalho",
-      "videoId": "WaXL2ST00eE",
-      "formato": "longo",
-      "foraDoRegisto": false,
-      "publicadoEm": "2026-08-24",
-      "privacidade": "public",
-      "duracaoSeg": 369,
-      "comentarios": 1,
-      "gostos": 0,
-      "views": 51,
-      "minutosTotais": 20,
-      "duracaoMediaSeg": 93,
-      "percentagemMedia": 0.25429999999999997,
-      "curva": {
-        "pontos": 100,
-        "aos3s": 1,
-        "aos25pc": 0.25,
-        "aos50pc": 0.16670000000000001,
-        "aos75pc": 0.16670000000000001,
-        "noFim": 0.16670000000000001,
-        "metadeSaiEmRatio": 0.09,
-        "metadeSaiEmSegundos": 33
-      },
-      "erro": null
-    },
-    {
       "slug": "educacao-financeira-como-fazer",
       "videoId": "AStHGn0_INc",
       "formato": "longo",
@@ -3906,32 +3874,6 @@
         "noFim": 0.1,
         "metadeSaiEmRatio": 0.05,
         "metadeSaiEmSegundos": 19
-      },
-      "erro": null
-    },
-    {
-      "slug": "S94DvB7yTZM",
-      "videoId": "S94DvB7yTZM",
-      "formato": "longo",
-      "foraDoRegisto": true,
-      "publicadoEm": "",
-      "privacidade": "public",
-      "duracaoSeg": 377,
-      "comentarios": 1,
-      "gostos": 0,
-      "views": 16,
-      "minutosTotais": 17,
-      "duracaoMediaSeg": 66,
-      "percentagemMedia": 0.1773,
-      "curva": {
-        "pontos": 100,
-        "aos3s": 1,
-        "aos25pc": 0.1875,
-        "aos50pc": 0.125,
-        "aos75pc": 0.125,
-        "noFim": 0.0625,
-        "metadeSaiEmRatio": 0.07,
-        "metadeSaiEmSegundos": 26
       },
       "erro": null
     },
