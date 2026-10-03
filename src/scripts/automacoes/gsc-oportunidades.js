@@ -22,6 +22,7 @@ import { writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join } from 'path';
 import { hasGscCredentials, querySearchAnalytics, GSC_SITE_URL } from '../apis/gsc.js';
 import { slugifyTheme, coreTokens, jaccardSim, getExistingPtSlugs } from '../lib/seo-guard.js';
+import { avaliarRealidadeDe, FILTRO_REALIDADE_LIGADO } from '../lib/gsc-posts.js';
 
 // ── Config / thresholds (baixos de propósito: GSC recém-ativado, dados magros) ──
 const LOOKBACK_DAYS = 28;
@@ -180,6 +181,115 @@ function analyze(queryRows, queryPageRows) {
 }
 
 /**
+ * ♦ 03/10/2026 — CONSERTO Nº7: O RELATÓRIO QUE O DONO LÊ DEIXA DE MENTIR.
+ *
+ * 🔴 **Foi deste ficheiro que saiu o maior engano da casa.** Durante três semanas
+ * ele anunciou, em letra bem grande:
+ *
+ *     "como reduzir gastos mensais" — 1.161 impressões, POSIÇÃO 8, ZERO cliques
+ *
+ * Isso guiou o SEO de setembro inteiro, e a 02/10 uma avaliação externa leu o
+ * mesmo número e repetiu a mesma conclusão. **A verdade medida:** 1.161 daquelas
+ * impressões aconteceram em sete dias, 1.163 em computador contra 1 em telemóvel,
+ * vindas de França, Alemanha, Marrocos e Argélia — numa busca em português, com o
+ * Brasil fora do top 10. **No Brasil, a página estava na posição 84.**
+ *
+ * A 02/10 os robôs que AGEM ganharam o filtro de realidade. Este, que não age mas
+ * é o que **o Ed lê**, continuou a mostrar o número global — ou seja: o código
+ * ficou curado e o papel continuou a enganar. É o que esta função conserta.
+ *
+ * ⚠️ **Teto de propósito:** cada busca conferida custa duas perguntas ao Google, e
+ * ninguém lê 25 linhas de um relatório. Conferem-se as `LIMITE_REALIDADE` com mais
+ * impressões de cada categoria — que são as que alguém olharia — e **o relatório
+ * diz quantas ficaram por conferir**. Cortar em silêncio é o que se está a corrigir.
+ */
+const LIMITE_REALIDADE = 10;
+
+/** O idioma da página que serve a busca — para saber qual é o mercado dela. */
+function idiomaDaBusca(o) {
+  const p = o.pages?.[0]?.page || '';
+  return p.includes('/en/') ? 'en' : p.includes('/es/') ? 'es' : 'pt';
+}
+
+async function conferirRealidade(lista, period, rotulo) {
+  if (!FILTRO_REALIDADE_LIGADO) {
+    console.log(`   ⚠️ Filtro de realidade DESLIGADO — ${rotulo} vai sem conferência.`);
+    return { conferidas: 0, porConferir: lista.length };
+  }
+  let conferidas = 0;
+  for (const o of lista.slice(0, LIMITE_REALIDADE)) {
+    try {
+      const r = await avaliarRealidadeDe({
+        dimensao: 'query', valor: o.query, period, locale: idiomaDaBusca(o),
+      });
+      o.realidade = {
+        ok: r.ok,
+        motivo: r.motivo,
+        posicaoNoMercado: r.posicaoNoMercado != null ? Number(r.posicaoNoMercado.toFixed(1)) : null,
+        impressoesNoMercado: r.impressoesNoMercado ?? null,
+        fracaoDoMercado: r.fracaoDoMercado != null ? Number((r.fracaoDoMercado * 100).toFixed(0)) : null,
+        fracaoMovel: r.fracaoMovel != null ? Number((r.fracaoMovel * 100).toFixed(0)) : null,
+      };
+      conferidas++;
+    } catch (e) {
+      // Falhar a conferir não é prova de que o número é bom — fica dito assim.
+      o.realidade = { ok: false, motivo: `não deu para conferir (${String(e.message).slice(0, 60)})` };
+    }
+  }
+  const porConferir = Math.max(0, lista.length - conferidas);
+  console.log(`   🔎 Realidade: ${conferidas} busca(s) de ${rotulo} conferida(s)`
+    + (porConferir ? `, ${porConferir} por conferir (teto de ${LIMITE_REALIDADE})` : ''));
+  return { conferidas, porConferir };
+}
+
+/** A marca que vai na tabela: o que a busca é de verdade, em dois caracteres. */
+function selo(o) {
+  if (!o.realidade) return '·';
+  if (o.realidade.ok) return '✅';
+  return '🤖';
+}
+
+/**
+ * A posição que **conta** — a do mercado da página. `—` quando não foi conferida.
+ *
+ * ⚠️ Nunca mostrar só esta nem só a global: é a DIFERENÇA entre as duas que conta
+ * a história. No caso que enganou a casa, era **8 global contra 84 no Brasil**.
+ */
+function posicaoReal(o) {
+  const p = o.realidade?.posicaoNoMercado;
+  if (p == null) return '—';
+  const salto = Math.abs(p - o.position) >= 20 ? ' 🔴' : '';
+  return `**${p}**${salto}`;
+}
+
+/** Explica os selos uma vez, no topo — e diz se o filtro está desligado. */
+function legendaDaRealidade(opportunities) {
+  const conferidas = [...opportunities.strikingDistance, ...opportunities.lowCtr].filter(o => o.realidade).length;
+  if (!FILTRO_REALIDADE_LIGADO) {
+    return '> ⚠️ **O filtro de realidade está DESLIGADO** (`GSC_FILTRO_REALIDADE=0`). Os números abaixo são os globais, sem conferência — foi assim que a casa perseguiu um fantasma durante três semanas em setembro.\n\n';
+  }
+  if (!conferidas) return '';
+  return `> **Como ler:** ✅ = procura real, do nosso mercado · 🤖 = **não é oportunidade** (tráfego de fora, só computador, ou pico já passado) · · = não conferida.\n`
+    + `> A coluna **Posição NO MERCADO** é a que conta. 🔴 marca as que saltam 20 posições ou mais entre a global e a real — foi uma dessas (8 global, 84 no Brasil) que guiou o SEO de setembro para o lado errado.\n\n`;
+}
+
+/** O porquê de cada 🤖, por baixo da tabela — um filtro que corta calado não serve. */
+function notasDaRealidade(lista) {
+  const falsas = lista.filter(o => o.realidade && !o.realidade.ok);
+  const semConferir = lista.filter(o => !o.realidade).length;
+  let md = '';
+  if (falsas.length) {
+    md += `\n**🤖 Por que estas não são oportunidade:**\n`;
+    for (const o of falsas) md += `- **${o.query}** — ${o.realidade.motivo}\n`;
+  }
+  if (semConferir) {
+    // Nunca cortar em silêncio: quem lê tem de saber que há linhas por conferir.
+    md += `\n_${semConferir} busca(s) abaixo do teto de ${LIMITE_REALIDADE} não foram conferidas — os números delas são os globais._\n`;
+  }
+  return md;
+}
+
+/**
  * O caminho da página que mais serve a busca, sem o domínio — é o que se precisa
  * para achar o ficheiro. `—` quando o GSC não devolveu par busca+página.
  */
@@ -202,16 +312,24 @@ function buildReport({ period, totals, opportunities, hasData, generatedAt }) {
 
   md += `**Totais no período:** ${totals.queries} queries · ${totals.impressions} impressões · ${totals.clicks} cliques\n\n`;
 
+  md += legendaDaRealidade(opportunities);
+
   md += `## 1. 🎯 Striking distance (posição ${STRIKING_MIN_POS}–${STRIKING_MAX_POS} — perto da 1ª página)\n\n`;
   if (opportunities.strikingDistance.length) {
-    md += `| Query | Impr. | Cliques | Posição | CTR | Página |\n|---|---|---|---|---|---|\n`;
-    for (const o of opportunities.strikingDistance) md += `| ${o.query} | ${o.impressions} | ${o.clicks} | ${o.position} | ${o.ctr}% | \`${paginaPrincipal(o)}\` |\n`;
+    md += `| | Query | Impr. | Cliques | Posição GLOBAL | **Posição NO MERCADO** | CTR | Página |\n|---|---|---|---|---|---|---|---|\n`;
+    for (const o of opportunities.strikingDistance) {
+      md += `| ${selo(o)} | ${o.query} | ${o.impressions} | ${o.clicks} | ${o.position} | ${posicaoReal(o)} | ${o.ctr}% | \`${paginaPrincipal(o)}\` |\n`;
+    }
+    md += notasDaRealidade(opportunities.strikingDistance);
   } else md += `_Nenhuma no período._\n`;
 
   md += `\n## 2. 📉 CTR baixo (boa posição, poucos cliques — reescrever title/meta na Fase 2)\n\n`;
   if (opportunities.lowCtr.length) {
-    md += `| Query | Impr. | Posição | CTR | CTR esperado | Página |\n|---|---|---|---|---|---|\n`;
-    for (const o of opportunities.lowCtr) md += `| ${o.query} | ${o.impressions} | ${o.position} | ${o.ctr}% | ~${o.expectedCtr}% | \`${paginaPrincipal(o)}\` |\n`;
+    md += `| | Query | Impr. | Posição GLOBAL | **Posição NO MERCADO** | CTR | CTR esperado | Página |\n|---|---|---|---|---|---|---|---|\n`;
+    for (const o of opportunities.lowCtr) {
+      md += `| ${selo(o)} | ${o.query} | ${o.impressions} | ${o.position} | ${posicaoReal(o)} | ${o.ctr}% | ~${o.expectedCtr}% | \`${paginaPrincipal(o)}\` |\n`;
+    }
+    md += notasDaRealidade(opportunities.lowCtr);
   } else md += `_Nenhuma no período._\n`;
 
   md += `\n## 3. 🕳️ Lacunas (busca com impressão SEM página dedicada — candidatas à Fase 3)\n\n`;
@@ -250,6 +368,23 @@ async function main() {
   const opportunities = hasData
     ? analyze(queryRows, queryPageRows)
     : { strikingDistance: [], lowCtr: [], gaps: [], cannibalization: [] };
+
+  /**
+   * ♦ 03/10/2026 — conserto nº7. Antes de o relatório sair, cada oportunidade é
+   * **conferida contra a realidade**: de que mercado vêm as impressões, em que
+   * aparelho, e se a procura ainda existe ou foi um pico que já passou.
+   *
+   * ⚠️ Só as duas categorias que afirmam «há aqui uma oportunidade de posição».
+   * As **lacunas** não entram porque a pergunta delas é outra — *não existe página
+   * para esta busca* — e isso é verdade venha o tráfego de onde vier. A
+   * **canibalização** também não: duas páginas a competir é um problema de
+   * estrutura do site, não de quem procura. Conferir tudo *«por consistência»*
+   * seria copiar a conclusão em vez do critério.
+   */
+  if (hasData) {
+    await conferirRealidade(opportunities.strikingDistance, period, 'striking distance');
+    await conferirRealidade(opportunities.lowCtr, period, 'CTR baixo');
+  }
 
   const totals = {
     queries: queryRows.length,

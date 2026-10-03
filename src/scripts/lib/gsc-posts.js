@@ -180,10 +180,27 @@ export function somarComPosicao(linhas) {
  * que quer dizer algo.
  */
 export async function avaliarRealidade(pageUrl, period, locale = null) {
-  const idioma = locale || localeDaUrl(pageUrl);
+  return avaliarRealidadeDe({ dimensao: 'page', valor: pageUrl, period, locale: locale || localeDaUrl(pageUrl) });
+}
+
+/**
+ * O mesmo filtro, mas sobre **qualquer** dimensão do Search Console — `page` ou
+ * `query`.
+ *
+ * ♦ 03/10/2026, conserto nº7. Os robôs que **agem** perguntam por página; o
+ * relatório que o Ed **lê** à segunda-feira é organizado por BUSCA. Era preciso
+ * responder à mesma pergunta nos dois formatos, e **a pergunta tem de ser a
+ * mesma** — ter duas réguas para a mesma coisa em ficheiros diferentes é a família
+ * de defeito nº1 desta casa. Por isso é uma função só, com a dimensão por fora.
+ *
+ * ⚠️ Para uma BUSCA não há URL de onde tirar o idioma. Quem chama tem de o dizer —
+ * e o relatório sabe-o, porque já guarda a página que serve cada busca.
+ */
+export async function avaliarRealidadeDe({ dimensao = 'page', valor, period, locale = 'pt' }) {
+  const idioma = locale;
   const mercados = MERCADOS[idioma] || MERCADOS.pt;
   const R = REGUAS_REALIDADE;
-  const filtroPagina = [{ filters: [{ dimension: 'page', operator: 'equals', expression: pageUrl }] }];
+  const filtroPagina = [{ filters: [{ dimension: dimensao, operator: 'equals', expression: valor }] }];
 
   // ── Cortes 2 e 3: aparelho e país, numa chamada só ────────────────────────
   let porPaisAparelho = [];

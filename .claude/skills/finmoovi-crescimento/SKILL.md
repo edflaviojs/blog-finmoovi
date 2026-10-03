@@ -157,6 +157,16 @@ Nasceram todas de erro pago, e cada uma anula um tipo de conclusão falsa.
 |---|---|
 | `references/FILTRO-DE-REALIDADE.md` | os quatro cortes que separam gente de robô, com os comandos |
 | `references/REGUAS.md` | todos os números de referência, com a origem de cada um |
-| `references/MAPA-DOS-ROBOS.md` | os 84 robôs, o que cada um mede, e os 5 buracos |
+| `references/MAPA-DOS-ROBOS.md` | os 84 robôs, o que cada um mede, e os buracos |
+
+## 📌 E o que está por fazer vive fora desta skill
+
+**`docs/DIVIDA.md`** — o que foi adiado de propósito, com o porquê e a data de
+reavaliar. **Ler antes de propor trabalho novo**, para não propor o que já foi
+decidido adiar (e para não repetir o que já se provou que não funciona).
+
+Esta skill é a **régua**; a dívida é a **lista**. São coisas diferentes e por isso
+estão em ficheiros diferentes. O irmão deste registo, do lado do aplicativo, é
+`backup-app-22052025/.claude/docs/DIVIDA-TECNICA.md`.
 
 **Status:** em uso desde 02/10/2026
