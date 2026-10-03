@@ -198,7 +198,63 @@ na mesma frase) e **mandar o resultado para o digest diário** que o Ed já rece
 
 ---
 
-## 🔴 Buraco 7 — o relatório de segunda ainda mostra os números globais
+## ✅ Buraco 6 — CONSERTADO a 03/10/2026
+
+Era: o detector corria todos os dias às 05h e **ninguém lia** — *«495 posts ·
+limpos: 0 · com flags: 66»*, zero acções durante meses.
+
+**Duas causas, as duas consertadas:**
+
+1. **A régua era grossa.** O teste era «tem expressão de atribuição» + «tem uma
+   maiúscula algures» — marcava *"Ajuste o limite de acordo com a realidade da sua
+   família"*. A régua nova exige **atribuição + instituição nomeada + número** na
+   mesma frase. **Medido no acervo: de 66 posts para 16** (20 frases), e as que
+   ficaram são todas estatística a sério (IBGE 64,1%, Banco Central 13,2%, OECD
+   30%, World Bank 30%).
+2. **O relatório não chegava a ninguém.** Subiu para o **e-mail diário**, perto do
+   topo, com os nomes dos ficheiros — e **avisa quando o próprio relatório está
+   velho**, porque um detector parado é indistinguível de um blog sem problemas.
+
+⚠️ O **corte** de frases (mais severo que a sinalização) **não foi tocado**: mexer
+nas duas réguas ao mesmo tempo tornaria impossível saber qual mudança fez o quê.
+
+**Provas:** `tests/fact-guard-regua.test.js` e `tests/fact-guard-no-email.test.js` —
+24, com os dois grupos tirados do acervo palavra por palavra (6 que **têm** de ser
+sinalizadas, 6 que **não podem**).
+
+---
+
+## ✅ Buraco 7 — CONSERTADO a 03/10/2026
+
+Era: o relatório que o Ed lê mostrava a **posição global**. Foi dele que saiu a
+frase que guiou o SEO de setembro para o lado errado e que uma avaliação externa
+repetiu a 02/10.
+
+**O que ficou:** `avaliarRealidadeDe()` passou a servir `page` **ou** `query` (uma
+função só — duas réguas para a mesma pergunta é o defeito nº1 da casa), e o
+relatório ganhou a coluna **Posição NO MERCADO** ao lado da global, com 🔴 quando
+saltam 20+ posições.
+
+🔴 **E a primeira corrida a sério apanhou um erro meu:** a versão inicial tinha dois
+selos e carimbava *«não é oportunidade»* em buscas que apenas **ainda não têm
+gente** — *«o que significa saldo pendente»*, com 17 aparições no Brasil, é procura
+legítima e pequena. *«Não sei»*, *«é falso»* e *«aparece lá atrás»* pedem acções
+opostas. São **quatro selos**, cada um com o que fazer:
+
+| | O que é | O que fazer |
+|---|---|---|
+| ✅ | procura real do nosso mercado | mexer no título vale a pena |
+| ⏳ | pouca gente ainda | esperar — não é defeito |
+| 📉 | aparece, mas lá atrás | é backlink, não título |
+| 🤖 | não é o nosso público | ignorar |
+
+**Resultado medido na corrida real:** só **2** buscas levam 🤖 — *«como reduzir
+gastos mensais»* (946 aparições, **0% do Brasil**) e *«como organizar as finanças
+pessoais»* (112, 0%). As outras oito passaram a ⏳.
+
+---
+
+## ~~Buraco 7 — o relatório de segunda ainda mostra os números globais~~ (resolvido acima)
 
 Achado a 02/10 **enquanto se fazia o conserto nº2**, e vale registar porque é
 barato e porque foi ele que enganou duas análises.
@@ -223,9 +279,13 @@ não.**
 | 2 | filtro de realidade | `lib/gsc-posts.js` + 3 robôs | ✅ **feito 02/10** — prova a valer na terça 07h UTC |
 | 3 | longos entram na medição de retenção | `src/scripts/youtube/retencao.js` | ✅ **feito 03/10** — e vêm do canal, não do registo |
 | 4 | régua por formato (70% é de Short; longo é 40%) | `src/scripts/youtube/retencao.js` | ✅ **feito 03/10**, junto com o 3 |
-| 5 | raio-x com datas calculadas | `automacoes/gsc-raio-x-aparicoes.js` | ⬜ aberto |
-| 6 | fact-guard afinado e no digest diário | `lib/fact-guard.js` + digest | ⬜ aberto |
-| 7 | relatório de segunda com a posição do mercado | `automacoes/gsc-oportunidades.js` | ⬜ aberto (novo) |
+| 5 | raio-x com datas calculadas | `automacoes/gsc-raio-x-aparicoes.js` | ⬜ **o único aberto** |
+| 6 | fact-guard afinado e no digest diário | `lib/fact-guard.js` + digest | ✅ **feito 03/10** — 66 → 16, e no e-mail |
+| 7 | relatório de segunda com a posição do mercado | `automacoes/gsc-oportunidades.js` | ✅ **feito 03/10** — 4 selos, provado a sério |
+
+> **Seis dos sete buracos estão fechados.** O que sobra do mapa e o que ficou
+> adiado de propósito vivem agora em **`docs/DIVIDA.md`** — com o porquê e a data
+> de reavaliar de cada um.
 
 ⚠️ **O conserto 1 cobre o CTR da capa, não as fontes de tráfego.** De onde vem a
 audiência (busca, feed, sugeridos) continua sem ser medido — está no mesmo

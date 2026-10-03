@@ -170,3 +170,8 @@ Renata Nunes (bmcnews).
 - **03/10/2026** — criado a pedido do Ed, nos moldes do registo que o aplicativo já
   tinha. Entraram os itens que sobraram do levantamento dos 7 buracos dos robôs
   (02–03/10) e as pendências que viviam só nas conversas.
+- **03/10/2026** — **seis dos sete buracos fechados no mesmo dia**: medir o clique
+  na capa, filtro de realidade nos robôs, longos na medição, régua por formato,
+  o relatório que o dono lê, e o Fact Firewall afinado e no e-mail. **Nenhum deles
+  entrou aqui**, porque a regra deste ficheiro é que item resolvido não fica
+  marcado como feito — fica no histórico do git.
