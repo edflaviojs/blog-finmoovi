@@ -640,5 +640,11 @@
     "gancho": "aconteceu-comigo",
     "turno": "noite",
     "em": "2026-10-03T10:00:58.239Z"
+  },
+  {
+    "situacao": "pagar-a-vista",
+    "gancho": "aconteceu-comigo",
+    "turno": "manha",
+    "em": "2026-10-04T10:44:59.424Z"
   }
 ]

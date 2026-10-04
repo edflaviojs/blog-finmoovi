@@ -1,0 +1,118 @@
+{
+  "slug": "loop-pagar-a-vista-aconteceu-comigo",
+  "formato": "loop16",
+  "term": "Pagar à vista e pedir desconto",
+  "category": "vida",
+  "keyword": "DESCONTO",
+  "valor": "R$ 150",
+  "situacao": "pagar-a-vista",
+  "gancho": "aconteceu-comigo",
+  "ganchoFamilia": "aconteceu comigo",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "duas-portas",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Isso aconteceu comigo semana passada, na conta da luz.",
+      "durationSec": 3.11,
+      "shots": [
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "Conta de luz sem desconto"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "duas-portas"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Perguntei o valor à vista e ganhei cento e cinquenta reais de desconto imediato.",
+      "durationSec": 4.84,
+      "shots": [
+        {
+          "anchor": "Perguntei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "duas-portas"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "valor",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 150 de desconto"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Agora sempre peço desconto, nunca mais deixo passar no cobrança.",
+      "durationSec": 3.45,
+      "shots": [
+        {
+          "anchor": "desconto",
+          "visual": {
+            "type": "statement",
+            "text": "Peço desconto sempre"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "deixo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "duas-portas"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Então, isso aconteceu comigo de novo, na próxima conta de mesma.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "Então, isso aconteceu comigo"
+          }
+        },
+        {
+          "anchor": "comigo",
+          "visual": {
+            "type": "statement",
+            "text": "Conta de luz sem desconto"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
