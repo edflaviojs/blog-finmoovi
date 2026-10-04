@@ -1,0 +1,118 @@
+{
+  "slug": "loop-delivery-de-sexta-aconteceu-comigo",
+  "formato": "loop16",
+  "term": "O delivery de toda sexta",
+  "category": "vida",
+  "keyword": "DELIVERY",
+  "valor": "R$ 320",
+  "situacao": "delivery-de-sexta",
+  "gancho": "aconteceu-comigo",
+  "ganchoFamilia": "aconteceu comigo",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ralo",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Isso aconteceu comigo semana passada, sexta, pedindo delivery de pizza.",
+      "durationSec": 3.45,
+      "shots": [
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "Entrega na sexta me pegou"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Quando a conta chegou, vi trezentos e vinte reais sumindo só no delivery todo.",
+      "durationSec": 4.84,
+      "shots": [
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "chegou",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 320 sumiu no delivery"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então parei de pedir, voltei a cozinhar em casa todos.",
+      "durationSec": 3.45,
+      "shots": [
+        {
+          "anchor": "parei",
+          "visual": {
+            "type": "statement",
+            "text": "Voltei a cozinhar em casa"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "pedir",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Isso aconteceu comigo semana passada, e ainda lembro do delivery.",
+      "durationSec": 3.45,
+      "shots": [
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "Ainda lembro do delivery"
+          }
+        },
+        {
+          "anchor": "comigo",
+          "visual": {
+            "type": "statement",
+            "text": "Entrega na sexta me pegou"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.19
+}
