@@ -5359,6 +5359,21 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-10-03"
+    },
+    "ibovespa-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-04"
+    },
+    "ibovespa-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-04"
+    },
+    "ibovespa.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-04"
     }
   },
   "corrigidas": {
@@ -6023,6 +6038,6 @@
       "motivo": "tem texto escrito (\"I'm sorry, I'm not able to identify the people in this image.\")"
     }
   },
-  "totalAcervo": 1072,
-  "ultimaCorrida": "2026-10-03"
+  "totalAcervo": 1075,
+  "ultimaCorrida": "2026-10-04"
 }
