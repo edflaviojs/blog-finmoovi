@@ -1,0 +1,202 @@
+{
+  "slug": "valor-financeiro",
+  "term": "valor financeiro",
+  "category": "basico",
+  "keyword": "valor",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você já parou pra pensar *quanto o seu dinheiro vale* só parado na conta?"
+  },
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "montanha-russa",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você já parou pra pensar quanto o seu dinheiro vale só parado na conta? Pode ser mais do que você imagina.",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "parou",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro parado?"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "icon",
+            "icon": "money"
+          }
+        },
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "statement",
+            "text": "Na conta?"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Deixa o salário cair, paga as contas e o que sobra fica lá. Todo mês igual. Ninguém me ensinou que isso tem valor.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "Deixa",
+          "visual": {
+            "type": "statement",
+            "text": "Salário chega"
+          }
+        },
+        {
+          "anchor": "paga",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          },
+          "sfx": "click"
+        },
+        {
+          "anchor": "fica",
+          "visual": {
+            "type": "statement",
+            "text": "Fica lá todo mês"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Mas se esse dinheiro ficar um ano inteiro sem render, ele perde força. Mil reais hoje podem valer bem menos daqui a doze meses.",
+      "durationSec": 9.2,
+      "shots": [
+        {
+          "anchor": "esse",
+          "visual": {
+            "type": "statement",
+            "text": "Um ano sem render"
+          }
+        },
+        {
+          "anchor": "render",
+          "visual": {
+            "type": "icon",
+            "icon": "growth"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "hoje",
+          "visual": {
+            "type": "number",
+            "text": "R$ 1.000"
+          }
+        },
+        {
+          "anchor": "daqui",
+          "visual": {
+            "type": "statement",
+            "text": "Perde poder"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu coloquei aqueles mil reais no FinMoovi pra ver. Ele mostrou que, só com inflação, o poder de compra caiu uns duzentos reais no ano.",
+      "durationSec": 9.6,
+      "shots": [
+        {
+          "anchor": "coloquei",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Visão geral"
+          }
+        },
+        {
+          "anchor": "mostrou",
+          "visual": {
+            "type": "statement",
+            "text": "Inflação corrói"
+          }
+        },
+        {
+          "anchor": "caiu",
+          "visual": {
+            "type": "number",
+            "text": "R$ 200"
+          },
+          "sfx": "coin"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer saber quanto o seu dinheiro parado tá perdendo? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 5.8,
+      "shots": [
+        {
+          "anchor": "saber",
+          "visual": {
+            "type": "statement",
+            "text": "Quanto perde?"
+          }
+        },
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 2.7,
+      "shots": [
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro sem controle"
+          }
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Teste 7 dias grátis agora",
+    "target": "app"
+  },
+  "totalDurationSec": 44.2
+}
