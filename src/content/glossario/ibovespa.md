@@ -4,6 +4,7 @@ definition: "O que é ibovespa e como isso aparece no seu dia a dia — explicad
 title: "ibovespa - Glossário Financeiro"
 description: "O que é ibovespa e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/ibovespa.webp"
+imageAlt: "Pilhas de moedas douradas, vasos de vidro com mudas e gráfico de barras rosa ascendente."
 category: "basico"
 tags: ["ibovespa", "glossário", "finanças"]
 author: "FinMoovi"

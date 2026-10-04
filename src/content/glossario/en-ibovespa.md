@@ -4,6 +4,7 @@ definition: "What Ibovespa is and how it shows up in your everyday money — exp
 title: "Ibovespa - Financial Glossary"
 description: "What Ibovespa is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/ibovespa.webp"
+imageAlt: "Gold coins in glass jars with sprouting plants, rising pink chart arrow, dark background."
 category: "basico"
 tags: ["Ibovespa", "glossary", "finance"]
 author: "FinMoovi"
