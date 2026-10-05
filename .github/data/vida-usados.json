@@ -652,5 +652,11 @@
     "gancho": "aconteceu-comigo",
     "turno": "noite",
     "em": "2026-10-04T10:48:26.047Z"
+  },
+  {
+    "situacao": "plano-de-saude-subiu",
+    "gancho": "aconteceu-comigo",
+    "turno": "manha",
+    "em": "2026-10-05T11:45:42.593Z"
   }
 ]

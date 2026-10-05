@@ -1,0 +1,118 @@
+{
+  "slug": "loop-plano-de-saude-subiu-aconteceu-comigo",
+  "formato": "loop16",
+  "term": "O plano de saúde que subiu",
+  "category": "vida",
+  "keyword": "PLANO",
+  "valor": "R$ 240",
+  "situacao": "plano-de-saude-subiu",
+  "gancho": "aconteceu-comigo",
+  "ganchoFamilia": "aconteceu comigo",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "bola-neve",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Isso aconteceu comigo semana passada",
+      "durationSec": 1.95,
+      "shots": [
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "Isso aconteceu comigo"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-neve"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Chegou a carta e vi que o plano subiu duzentos e quarenta reais do nada",
+      "durationSec": 5.85,
+      "shots": [
+        {
+          "anchor": "Chegou",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-neve"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "carta",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 240"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Falei com minha mulher, vimos onde dá pra cortar um pouco",
+      "durationSec": 4.29,
+      "shots": [
+        {
+          "anchor": "Falei",
+          "visual": {
+            "type": "statement",
+            "text": "Cortamos o extra"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "mulher",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-neve"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Isso aconteceu comigo, mais uma vez no mês",
+      "durationSec": 3.12,
+      "shots": [
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "Isso aconteceu comigo"
+          }
+        },
+        {
+          "anchor": "comigo",
+          "visual": {
+            "type": "statement",
+            "text": "Isso aconteceu comigo"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.21
+}
