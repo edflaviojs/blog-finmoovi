@@ -160,6 +160,23 @@
     }
   },
   {
+    "file": "en-ibovespa.md",
+    "dir": "glossario",
+    "severity": 1,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "Bovespa"
+      ],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-investments-for-the-second-half-practical-strategies-for.md",
     "dir": "posts",
     "severity": 1,
@@ -242,6 +259,23 @@
         "CVM"
       ],
       "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-real-interest-rate.md",
+    "dir": "glossario",
+    "severity": 1,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "reais"
+      ]
     }
   },
   {
@@ -2019,6 +2053,21 @@
   },
   {
     "file": "en-hedge.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-holding.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -7328,8 +7377,38 @@
     }
   },
   {
+    "file": "es-holding.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-horario-ideal-para-ducharse-y-ahorrar-energia-en-2026.md",
     "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-ibovespa.md",
+    "dir": "glossario",
     "severity": 0,
     "issues": {
       "currency": 0,
@@ -7539,6 +7618,21 @@
   },
   {
     "file": "es-ipca.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-juro-real.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {

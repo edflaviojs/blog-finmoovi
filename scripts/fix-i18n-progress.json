@@ -295,6 +295,10 @@
     "tentativas": 2,
     "ultimaSeveridade": 0
   },
+  "en-ibovespa.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 1
+  },
   "en-imposto-de-renda.md": {
     "tentativas": 1,
     "ultimaSeveridade": null
@@ -490,6 +494,10 @@
   "en-real-estate-funds-reits.md": {
     "tentativas": 1,
     "ultimaSeveridade": 0
+  },
+  "en-real-interest-rate.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 1
   },
   "en-reduce-fixed-expenses.md": {
     "tentativas": 1,
