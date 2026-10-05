@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-09-05T14:43:26.556Z",
+  "updatedAt": "2026-10-05T20:22:49.614Z",
   "endividamento": {
     "label": "Endividamento das famílias em relação à renda anual",
     "unit": "%",
     "seriesCode": 29037,
     "latest": {
-      "date": "2026-06-01",
-      "value": 49.75
+      "date": "2026-07-01",
+      "value": 49.86
     },
     "min": {
       "date": "2011-01-01",
@@ -755,11 +755,15 @@
       },
       {
         "date": "2026-05-01",
-        "value": 49.83
+        "value": 49.82
       },
       {
         "date": "2026-06-01",
-        "value": 49.75
+        "value": 49.65
+      },
+      {
+        "date": "2026-07-01",
+        "value": 49.86
       }
     ]
   },
@@ -768,8 +772,8 @@
     "unit": "%",
     "seriesCode": 29034,
     "latest": {
-      "date": "2026-06-01",
-      "value": 28.85
+      "date": "2026-07-01",
+      "value": 28.72
     },
     "series": [
       {
@@ -1510,11 +1514,15 @@
       },
       {
         "date": "2026-05-01",
-        "value": 28.49
+        "value": 28.47
       },
       {
         "date": "2026-06-01",
-        "value": 28.85
+        "value": 28.66
+      },
+      {
+        "date": "2026-07-01",
+        "value": 28.72
       }
     ]
   },
