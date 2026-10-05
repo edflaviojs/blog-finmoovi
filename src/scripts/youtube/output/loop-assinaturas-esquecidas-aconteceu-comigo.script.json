@@ -1,0 +1,118 @@
+{
+  "slug": "loop-assinaturas-esquecidas-aconteceu-comigo",
+  "formato": "loop16",
+  "term": "As assinaturas que ninguém cancela",
+  "category": "vida",
+  "keyword": "ASSINATURA",
+  "valor": "R$ 95",
+  "situacao": "assinaturas-esquecidas",
+  "gancho": "aconteceu-comigo",
+  "ganchoFamilia": "aconteceu comigo",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "balde-furado",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Isso aconteceu comigo semana passada",
+      "durationSec": 2,
+      "shots": [
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "Assinaturas que não uso"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Olha, vi na fatura. Noventa e cinco reais sumiram só em assinaturas que a gente nem usa",
+      "durationSec": 6.8,
+      "shots": [
+        {
+          "anchor": "fatura",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "Noventa",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 95"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Cansei de pagar por nada e cancelei tudo que estava parado",
+      "durationSec": 4.4,
+      "shots": [
+        {
+          "anchor": "Cansei",
+          "visual": {
+            "type": "statement",
+            "text": "Cancelei o que não uso"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "pagar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Isso aconteceu comigo semana passada",
+      "durationSec": 2,
+      "shots": [
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "Assinaturas que não uso"
+          }
+        },
+        {
+          "anchor": "comigo",
+          "visual": {
+            "type": "statement",
+            "text": "Assinaturas que não uso"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
