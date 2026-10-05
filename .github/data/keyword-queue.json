@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04T15:31:12.739Z",
+  "updatedAt": "2026-10-05T15:22:23.953Z",
   "sourceCursor": 1,
   "entries": [
     {
@@ -2211,6 +2211,46 @@
       "source": "gsc-gap",
       "status": "pending",
       "addedAt": "2026-10-03T07:24:14.321Z"
+    },
+    {
+      "keyword": "conversor de moeda online",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-10-05T15:22:23.246Z"
+    },
+    {
+      "keyword": "o que significa valor em aberto",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-10-05T15:22:23.246Z"
+    },
+    {
+      "keyword": "planilla flujo de caja",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-10-05T15:22:23.246Z"
+    },
+    {
+      "keyword": "finmoovi technologia",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-10-05T15:22:23.246Z"
+    },
+    {
+      "keyword": "activos financieros",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-10-05T15:22:23.246Z"
     }
   ]
 }

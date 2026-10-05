@@ -1,10 +1,10 @@
 # 🔎 GSC — Digest de Oportunidades (Fase 1)
 
 **Propriedade:** https://blog.finmoovi.com/
-**Período:** 2026-09-05 → 2026-10-03 (28 dias)
-**Gerado em:** 2026-10-03T07:29:56.383Z
+**Período:** 2026-09-07 → 2026-10-05 (28 dias)
+**Gerado em:** 2026-10-05T15:22:23.190Z
 
-**Totais no período:** 449 queries · 2399 impressões · 0 cliques
+**Totais no período:** 467 queries · 1995 impressões · 0 cliques
 
 > **Como ler — cada marca pede uma coisa diferente:**
 >
@@ -23,106 +23,108 @@
 
 | | Query | Impr. | Cliques | Posição GLOBAL | **Posição NO MERCADO** | CTR | Página |
 |---|---|---|---|---|---|---|---|
-| 🤖 | como reduzir gastos mensais | 946 | 0 | 7.7 | — | 0% | `/posts/como-organizar-suas-despesas-mensais-com-facilidade-e/` |
-| 🤖 | como organizar as financas pessoais | 112 | 0 | 10.1 | — | 0% | `/como-organizar-financas/` |
-| ⏳ | o que significa saldo pendente | 18 | 0 | 9.6 | **9.7** | 0% | `/posts/entenda-o-saldo-pendente-e-como-regularizar-suas-contas/` |
-| ⏳ | is credit card worth it 2026 | 15 | 0 | 9.3 | — | 0% | `/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026/` |
-| ⏳ | o que é saldo pendente | 13 | 0 | 9.8 | **9.8** | 0% | `/posts/entenda-o-saldo-pendente-e-como-regularizar-suas-contas/` |
-| ⏳ | conversor de moedas online | 9 | 0 | 11.6 | **11.6** | 0% | `/ferramentas/conversor-moedas/` |
+| 🤖 | como reduzir gastos mensais | 574 | 0 | 6.9 | — | 0% | `/posts/como-organizar-suas-despesas-mensais-com-facilidade-e/` |
+| ⏳ | como organizar as financas pessoais | 74 | 0 | 10.4 | — | 0% | `/como-organizar-financas/` |
+| ⏳ | o que significa saldo pendente | 25 | 0 | 9.6 | **9.7** | 0% | `/posts/entenda-o-saldo-pendente-e-como-regularizar-suas-contas/` |
+| ⏳ | o que é saldo pendente | 20 | 0 | 9.8 | **9.8** | 0% | `/posts/entenda-o-saldo-pendente-e-como-regularizar-suas-contas/` |
+| ⏳ | conversor de moeda online | 12 | 0 | 16.4 | **16.4** | 0% | `/ferramentas/conversor-moedas/` |
+| ⏳ | conversor de moedas online | 10 | 0 | 11.6 | **11.6** | 0% | `/ferramentas/conversor-moedas/` |
+| ⏳ | o que significa valor em aberto | 10 | 0 | 8.3 | **8.3** | 0% | `/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/` |
 | ⏳ | gasto recurrente | 9 | 0 | 7.7 | **7.7** | 0% | `/es/glossario/es-gasto-recurrente/` |
-| ⏳ | gastos recurrentes | 8 | 0 | 11.5 | **11.5** | 0% | `/es/glossario/es-gasto-recurrente/` |
-| ⏳ | saldo em aberto | 7 | 0 | 8.3 | **8.3** | 0% | `/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/` |
-| ⏳ | ted pix | 7 | 0 | 6.7 | **7.8** | 0% | `/en/posts/en-pix-vs-ted-which-one-is-worth-it-in-2026/` |
-| · | finmoovi technologia | 6 | 0 | 11.7 | — | 0% | `/en/posts/en-how-to-cut-water-bills-effortlessly-in-2026/` |
-| · | conversor de moeda online | 5 | 0 | 16.4 | — | 0% | `/ferramentas/conversor-moedas/` |
+| ⏳ | finmoovi technologia | 8 | 0 | 11.9 | **11.9** | 0% | `/en/posts/en-how-to-cut-water-bills-effortlessly-in-2026/` |
+| ⏳ | saldo em aberto | 8 | 0 | 8.3 | **8.3** | 0% | `/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/` |
+| · | is credit card worth it 2026 | 7 | 0 | 9 | — | 0% | `/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026/` |
+| · | o que quer dizer saldo pendente | 7 | 0 | 9.9 | — | 0% | `/posts/entenda-o-saldo-pendente-e-como-regularizar-suas-contas/` |
+| · | ted pix | 6 | 0 | 6.7 | — | 0% | `/en/posts/en-pix-vs-ted-which-one-is-worth-it-in-2026/` |
 | · | gasto recurrente definicion | 5 | 0 | 6 | — | 0% | `/es/glossario/es-gasto-recurrente/` |
-| · | gastos recurrentes definicion | 5 | 0 | 8.6 | — | 0% | `/es/glossario/es-gasto-recurrente/` |
-| · | o que significa valor em aberto | 5 | 0 | 8 | — | 0% | `/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/` |
+| · | gastos recurrentes | 5 | 0 | 9.6 | — | 0% | `/es/glossario/es-gasto-recurrente/` |
 | · | %cdb 120% cdi liquidez diária setembro 2026 | 4 | 0 | 6.3 | — | 0% | `/posts/poupanca-vs-cdb-qual-vale-mais-a-pena-em-2026/` |
-| · | que son gastos recurrentes | 4 | 0 | 7 | — | 0% | `/es/glossario/es-gasto-recurrente/` |
-| · | o que quer dizer saldo pendente | 3 | 0 | 10 | — | 0% | `/posts/entenda-o-saldo-pendente-e-como-regularizar-suas-contas/` |
+| · | gastos recurrentes definicion | 4 | 0 | 8.3 | — | 0% | `/es/glossario/es-gasto-recurrente/` |
+| · | valor em aberto significado | 4 | 0 | 5.8 | — | 0% | `/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/` |
+| · | parcelamento significado | 3 | 0 | 9.3 | — | 0% | `/glossario/parcelamento/` |
 | · | que es saldo pendiente | 3 | 0 | 10 | — | 0% | `/es/posts/es-entiende-que-es-el-saldo-pendiente-y-como-evitarlo/` |
-| · | que es un gasto recurrente | 3 | 0 | 8.3 | — | 0% | `/es/glossario/es-gasto-recurrente/` |
 | · | que significa saldo pendiente | 3 | 0 | 9.7 | — | 0% | `/es/posts/es-entiende-que-es-el-saldo-pendiente-y-como-evitarlo` |
+| · | que son gastos recurrentes | 3 | 0 | 7 | — | 0% | `/es/glossario/es-gasto-recurrente/` |
 
 **🤖 Não é oportunidade — o tráfego não é o nosso público:**
-- **como reduzir gastos mensais** — 946 aparições, mas só 0% vêm do mercado pt — há procura, mas não é a nossa
-- **como organizar as financas pessoais** — 112 aparições, mas só 0% vêm do mercado pt — há procura, mas não é a nossa
+- **como reduzir gastos mensais** — 574 aparições, mas só 0% vêm do mercado pt — há procura, mas não é a nossa
 
-**⏳ Ainda cedo para dizer (não é defeito):** `o que significa saldo pendente` · `is credit card worth it 2026` · `o que é saldo pendente` · `conversor de moedas online` · `gasto recurrente` · `gastos recurrentes` · `saldo em aberto` · `ted pix`
+**⏳ Ainda cedo para dizer (não é defeito):** `como organizar as financas pessoais` · `o que significa saldo pendente` · `o que é saldo pendente` · `conversor de moeda online` · `conversor de moedas online` · `o que significa valor em aberto` · `gasto recurrente` · `finmoovi technologia` · `saldo em aberto`
 
-_11 busca(s) abaixo do teto de 10 não foram conferidas — os números delas são os globais._
+_12 busca(s) abaixo do teto de 10 não foram conferidas — os números delas são os globais._
 
 ## 2. 📉 CTR baixo (boa posição, poucos cliques — reescrever title/meta na Fase 2)
 
 | | Query | Impr. | Posição GLOBAL | **Posição NO MERCADO** | CTR | CTR esperado | Página |
 |---|---|---|---|---|---|---|---|
-| 🤖 | como reduzir gastos mensais | 946 | 7.7 | — | 0% | ~3.2% | `/posts/como-organizar-suas-despesas-mensais-com-facilidade-e/` |
-| ⏳ | o que significa saldo pendente | 18 | 9.6 | **9.7** | 0% | ~2.5% | `/posts/entenda-o-saldo-pendente-e-como-regularizar-suas-contas/` |
-| ⏳ | is credit card worth it 2026 | 15 | 9.3 | — | 0% | ~2.8% | `/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026/` |
-| ⏳ | o que é saldo pendente | 13 | 9.8 | **9.8** | 0% | ~2.5% | `/posts/entenda-o-saldo-pendente-e-como-regularizar-suas-contas/` |
+| 🤖 | como reduzir gastos mensais | 574 | 6.9 | — | 0% | ~4% | `/posts/como-organizar-suas-despesas-mensais-com-facilidade-e/` |
+| ⏳ | o que significa saldo pendente | 25 | 9.6 | **9.7** | 0% | ~2.5% | `/posts/entenda-o-saldo-pendente-e-como-regularizar-suas-contas/` |
+| ⏳ | o que é saldo pendente | 20 | 9.8 | **9.8** | 0% | ~2.5% | `/posts/entenda-o-saldo-pendente-e-como-regularizar-suas-contas/` |
+| ⏳ | saldo em aberto o que significa | 11 | 3.8 | **3.8** | 0% | ~8% | `/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/` |
+| ⏳ | o que significa valor em aberto | 10 | 8.3 | **8.3** | 0% | ~3.2% | `/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/` |
 | ⏳ | gasto recurrente | 9 | 7.7 | **7.7** | 0% | ~3.2% | `/es/glossario/es-gasto-recurrente/` |
+| ⏳ | saldo em aberto | 8 | 8.3 | **8.3** | 0% | ~3.2% | `/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/` |
+| ⏳ | is credit card worth it 2026 | 7 | 9 | — | 0% | ~2.8% | `/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026/` |
 | ⏳ | mobills alternative | 7 | 4.6 | — | 0% | ~6% | `/en/posts/en-5-alternatives-to-mobills-in-2026/` |
-| ⏳ | saldo em aberto | 7 | 8.3 | **8.3** | 0% | ~3.2% | `/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/` |
-| ⏳ | saldo em aberto o que significa | 7 | 4 | **4** | 0% | ~8% | `/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/` |
-| ⏳ | ted pix | 7 | 6.7 | **7.8** | 0% | ~4% | `/en/posts/en-pix-vs-ted-which-one-is-worth-it-in-2026/` |
-| ⏳ | gasto recurrente definicion | 5 | 6 | **6.3** | 0% | ~5% | `/es/glossario/es-gasto-recurrente/` |
-| · | gastos recurrentes definicion | 5 | 8.6 | — | 0% | ~2.8% | `/es/glossario/es-gasto-recurrente/` |
-| · | o que significa valor em aberto | 5 | 8 | — | 0% | ~3.2% | `/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/` |
+| ⏳ | o que quer dizer saldo pendente | 7 | 9.9 | **9.9** | 0% | ~2.5% | `/posts/entenda-o-saldo-pendente-e-como-regularizar-suas-contas/` |
+| · | ted pix | 6 | 6.7 | — | 0% | ~4% | `/en/posts/en-pix-vs-ted-which-one-is-worth-it-in-2026/` |
+| · | gasto recurrente definicion | 5 | 6 | — | 0% | ~5% | `/es/glossario/es-gasto-recurrente/` |
+| · | gastos recurrentes | 5 | 9.6 | — | 0% | ~2.5% | `/es/glossario/es-gasto-recurrente/` |
 | · | %cdb 120% cdi liquidez diária setembro 2026 | 4 | 6.3 | — | 0% | ~5% | `/posts/poupanca-vs-cdb-qual-vale-mais-a-pena-em-2026/` |
 | · | %eur brl cotação setembro 2026 | 4 | 3.5 | — | 0% | ~8% | `/posts/cotacoes-semana-1-setembro-2026/` |
-| · | que son gastos recurrentes | 4 | 7 | — | 0% | ~4% | `/es/glossario/es-gasto-recurrente/` |
-| · | o que quer dizer saldo pendente | 3 | 10 | — | 0% | ~2.5% | `/posts/entenda-o-saldo-pendente-e-como-regularizar-suas-contas/` |
+| · | gastos recurrentes definicion | 4 | 8.3 | — | 0% | ~3.2% | `/es/glossario/es-gasto-recurrente/` |
+| · | valor em aberto significado | 4 | 5.8 | — | 0% | ~5% | `/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/` |
+| · | parcelamento significado | 3 | 9.3 | — | 0% | ~2.8% | `/glossario/parcelamento/` |
 | · | que es la renta mensual | 3 | 4.7 | — | 0% | ~6% | `/es/glossario/es-renta-mensual/` |
 | · | que es saldo pendiente | 3 | 10 | — | 0% | ~2.5% | `/es/posts/es-entiende-que-es-el-saldo-pendiente-y-como-evitarlo/` |
-| · | que es un gasto recurrente | 3 | 8.3 | — | 0% | ~3.2% | `/es/glossario/es-gasto-recurrente/` |
 | · | que significa saldo pendiente | 3 | 9.7 | — | 0% | ~2.5% | `/es/posts/es-entiende-que-es-el-saldo-pendiente-y-como-evitarlo` |
+| · | que son gastos recurrentes | 3 | 7 | — | 0% | ~4% | `/es/glossario/es-gasto-recurrente/` |
 
 **🤖 Não é oportunidade — o tráfego não é o nosso público:**
-- **como reduzir gastos mensais** — 946 aparições, mas só 0% vêm do mercado pt — há procura, mas não é a nossa
+- **como reduzir gastos mensais** — 574 aparições, mas só 0% vêm do mercado pt — há procura, mas não é a nossa
 
-**⏳ Ainda cedo para dizer (não é defeito):** `o que significa saldo pendente` · `is credit card worth it 2026` · `o que é saldo pendente` · `gasto recurrente` · `mobills alternative` · `saldo em aberto` · `saldo em aberto o que significa` · `ted pix` · `gasto recurrente definicion`
+**⏳ Ainda cedo para dizer (não é defeito):** `o que significa saldo pendente` · `o que é saldo pendente` · `saldo em aberto o que significa` · `o que significa valor em aberto` · `gasto recurrente` · `saldo em aberto` · `is credit card worth it 2026` · `mobills alternative` · `o que quer dizer saldo pendente`
 
-_10 busca(s) abaixo do teto de 10 não foram conferidas — os números delas são os globais._
+_12 busca(s) abaixo do teto de 10 não foram conferidas — os números delas são os globais._
 
 ## 3. 🕳️ Lacunas (busca com impressão SEM página dedicada — candidatas à Fase 3)
 
 | Query | Impr. | Posição | Slug sugerido | Página que já aparece |
 |---|---|---|---|---|
-| planificación financiera | 47 | 56.3 | `planificacion-financiera` | `/es/glossario/es-planificacion-financiera` |
-| parcelados | 37 | 72.8 | `parcelados` | `/glossario/parcelamento/` |
-| installments | 28 | 66.8 | `installments` | `/en/glossario/en-installments/` |
-| hipoteca | 26 | 92.3 | `hipoteca` | `/glossario/hipoteca/` |
-| planificacion financiera | 24 | 57.8 | `planificacion-financiera` | `/es/glossario/es-planificacion-financiera` |
-| expense control | 21 | 60.6 | `expense-control` | `/en/glossario/en-expense-control/` |
-| is credit card worth it 2026 | 15 | 9.3 | `is-credit-card-worth-it-2026` | `/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026/` |
-| what is installment | 15 | 73.3 | `what-is-installment` | `/en/glossario/en-installments/` |
+| parcelados | 42 | 72.7 | `parcelados` | `/glossario/parcelamento/` |
+| hipoteca | 32 | 92.7 | `hipoteca` | `/glossario/hipoteca/` |
+| installments | 24 | 67.4 | `installments` | `/en/glossario/en-installments/` |
+| tudo sobre investimentos | 18 | 73.2 | `tudo-sobre-investimentos` | `/glossario/investimento/` |
+| expense control | 16 | 61 | `expense-control` | `/en/glossario/en-expense-control/` |
+| what is installment | 14 | 73.6 | `what-is-installment` | `/en/glossario/en-installments/` |
 | what is mortgage | 14 | 37.8 | `what-is-mortgage` | `/en/glossario/en-mortgage/` |
-| tudo sobre investimentos | 13 | 74.4 | `tudo-sobre-investimentos` | `/glossario/investimento/` |
-| conversor de moedas online | 9 | 11.6 | `conversor-de-moedas-online` | `/ferramentas/conversor-moedas/` |
+| planificación financiera | 13 | 55.2 | `planificacion-financiera` | `/es/glossario/es-planificacion-financiera` |
+| conversor de moeda online | 12 | 16.4 | `conversor-de-moeda-online` | `/ferramentas/conversor-moedas/` |
+| conversor de moedas online | 10 | 11.6 | `conversor-de-moedas-online` | `/ferramentas/conversor-moedas/` |
+| o que significa valor em aberto | 10 | 8.3 | `o-que-significa-valor-em-aberto` | `/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/` |
+| planilla flujo de caja | 10 | 68.2 | `planilla-flujo-de-caja` | `/es/posts/es-como-crear-un-flujo-de-caja-sencillo-en-excel-y-lograr/` |
 | gasto recurrente | 9 | 7.7 | `gasto-recurrente` | `/es/glossario/es-gasto-recurrente/` |
-| que es un mercado yahoo | 9 | 56.2 | `que-es-un-mercado-yahoo` | `/es/glossario/es-yahoo-finance/` |
-| calculadora tabela price | 8 | 88.8 | `calculadora-tabela-price` | `/ferramentas/calculadora-financiamento/` |
-| calcular juro composto | 8 | 80.9 | `calcular-juro-composto` | `/ferramentas/calculadora-juros-compostos/` |
-| gastos recurrentes | 8 | 11.5 | `gastos-recurrentes` | `/es/glossario/es-gasto-recurrente/` |
+| planificacion financiera | 9 | 56 | `planificacion-financiera` | `/es/glossario/es-planificacion-financiera` |
+| que es un mercado yahoo | 9 | 55.8 | `que-es-un-mercado-yahoo` | `/es/glossario/es-yahoo-finance/` |
+| what is outstanding balance mean | 9 | 67.6 | `what-is-outstanding-balance-mean` | `/en/posts/en-understanding-outstanding-balance-and-how-to-avoid-it` |
+| finmoovi technologia | 8 | 11.9 | `finmoovi-technologia` | `/en/posts/en-how-to-cut-water-bills-effortlessly-in-2026/` |
 | mortgage | 8 | 77 | `mortgage` | `/en/glossario/en-mortgage/` |
-| recurring payments financial planning | 8 | 73.1 | `recurring-payments-financial-planning` | `/en/glossario/en-recurring-expense/` |
-| what is outstanding balance mean | 8 | 67.3 | `what-is-outstanding-balance-mean` | `/en/posts/en-understanding-outstanding-balance-and-how-to-avoid-it` |
-| calculadora tabela sac | 7 | 74.1 | `calculadora-tabela-sac` | `/ferramentas/calculadora-financiamento/` |
+| what does an outstanding balance mean | 8 | 59.9 | `what-does-an-outstanding-balance-mean` | `/en/posts/en-understanding-outstanding-balance-and-how-to-avoid-it` |
+| activos financieros | 7 | 92.7 | `activos-financieros` | `/es/glossario/es-activo-financiero/` |
+| is credit card worth it 2026 | 7 | 9 | `is-credit-card-worth-it-2026` | `/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026/` |
 | mobills alternative | 7 | 4.6 | `mobills-alternative` | `/en/posts/en-5-alternatives-to-mobills-in-2026/` |
-| simulador sac price | 7 | 73.6 | `simulador-sac-price` | `/ferramentas/calculadora-financiamento/` |
-| calculadora parcelamento price | 6 | 78.7 | `calculadora-parcelamento-price` | `/ferramentas/calculadora-financiamento/` |
-| calculadora sac price | 6 | 59.3 | `calculadora-sac-price` | `/ferramentas/calculadora-financiamento/` |
-| calculo de juros composto online | 6 | 92.5 | `calculo-de-juros-composto-online` | `/ferramentas/calculadora-juros-compostos/` |
+| calculadora tabela price | 6 | 88.8 | `calculadora-tabela-price` | `/ferramentas/calculadora-financiamento/` |
+| calculadora tabela sac | 6 | 72.8 | `calculadora-tabela-sac` | `/ferramentas/calculadora-financiamento/` |
+| calcular juro composto | 6 | 80.7 | `calcular-juro-composto` | `/ferramentas/calculadora-juros-compostos/` |
 
 ## 4. 🔀 Canibalização por query (≥2 páginas na mesma busca — consolidar na Fase 2)
 
-- **expense control** (21 impr.): https://blog.finmoovi.com/en/glossario/en-expense-control/ (16) · https://blog.finmoovi.com/en/glossario/en-expense-control (5)
-- **what is outstanding balance mean** (8 impr.): https://blog.finmoovi.com/en/posts/en-understanding-outstanding-balance-and-how-to-avoid-it (5) · https://blog.finmoovi.com/en/posts/en-understanding-outstanding-balance-and-how-to-avoid-it/ (3)
-- **saldo em aberto** (7 impr.): https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/ (5) · https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo (2)
-- **o que significa valor em aberto** (5 impr.): https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/ (3) · https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo (2)
-- **what does an outstanding balance mean** (5 impr.): https://blog.finmoovi.com/en/posts/en-understanding-outstanding-balance-and-how-to-avoid-it/ (3) · https://blog.finmoovi.com/en/posts/en-understanding-outstanding-balance-and-how-to-avoid-it (2)
+- **o que significa valor em aberto** (10 impr.): https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/ (8) · https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo (2)
+- **what is outstanding balance mean** (9 impr.): https://blog.finmoovi.com/en/posts/en-understanding-outstanding-balance-and-how-to-avoid-it (6) · https://blog.finmoovi.com/en/posts/en-understanding-outstanding-balance-and-how-to-avoid-it/ (3)
+- **saldo em aberto** (8 impr.): https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/ (6) · https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo (2)
+- **what does an outstanding balance mean** (8 impr.): https://blog.finmoovi.com/en/posts/en-understanding-outstanding-balance-and-how-to-avoid-it (5) · https://blog.finmoovi.com/en/posts/en-understanding-outstanding-balance-and-how-to-avoid-it/ (3)
 - **saldo pendiente** (4 impr.): https://blog.finmoovi.com/es/posts/es-entiende-el-saldo-pendiente-y-como-regularizar-tus-cuentas/ (2) · https://blog.finmoovi.com/es/posts/es-entiende-que-es-el-saldo-pendiente-y-como-evitarlo/ (2)
+- **what is outstanding balance** (4 impr.): https://blog.finmoovi.com/en/posts/en-understanding-outstanding-balance-and-how-to-avoid-it (2) · https://blog.finmoovi.com/en/posts/en-understanding-outstanding-balance-and-how-to-avoid-it/ (2)
 
 ---
 _CTR esperado é heurística de priorização, não dado do GSC. Gerado automaticamente pelo motor GSC (Fase 1)._
