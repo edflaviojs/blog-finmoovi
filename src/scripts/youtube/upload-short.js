@@ -123,25 +123,54 @@ const DRY_RUN = Boolean(args['dry-run']);
 const MARGEM_MINIMA_MIN = 15;
 
 /**
+ * ═══ 🔴 05/10/2026 — A HORA PASSOU? ENTÃO É AMANHÃ, À MESMA HORA ═══════════════════
+ *
+ * ⚠️ **A TRAVA DE CIMA DISPAROU TODOS OS DIAS DURANTE TRÊS SEMANAS.** Medido a 05/10:
+ * o cron do GitHub não atrasa 112 minutos, atrasa **3 a 8 horas** (a ronda das 12:00
+ * arrancava entre 15:05 e 17:46). Nenhum Short estreou à hora marcada de 15/09 a
+ * 05/10 — todos subiram públicos, atrasados, com a corrida a VERDE.
+ *
+ * Ordem do dono (05/10): *"gerar de madrugada e deixar ele como agendado"*. Como a
+ * própria madrugada também chega horas atrasada, o que resolve é **um dia de folga**:
+ * se a hora de hoje já não dá, o vídeo sobe privado e estreia **amanhã, à mesma hora**.
+ * Com isso o atraso do cron deixa de importar.
+ *
+ * ⚠️ **E NUNCA DOIS VÍDEOS NA MESMA HORA.** `ocupadas` são as estreias que o caderno
+ * já tem marcadas para este formato; se a hora escolhida já tem dono, anda-se mais um
+ * dia. Sem isto, um dia em que o cron chegasse a horas marcava o vídeo para hoje por
+ * cima do de ontem, e o dia seguinte ficava vazio.
+ *
+ * O dia de hoje, quando fica sem vídeo, é da repescagem (`outbox.js saiu-hoje`), que
+ * continua a subir PÚBLICO na hora — a rede de segurança não pode ter condições.
+ */
+const UM_DIA_MS = 24 * 3600 * 1000;
+
+/**
  * A hora marcada para este vídeo, ou `null` para subir público já.
  * @param {string} pedido `HH:MM` em hora universal (o relógio do cron), ou vazio.
  * @param {Date} agora
+ * @param {string[]} ocupadas estreias (ISO) já marcadas para este formato.
  */
-export function estreiaMarcada(pedido, agora = new Date()) {
+export function estreiaMarcada(pedido, agora = new Date(), ocupadas = []) {
   const m = /^(\d{1,2}):(\d{2})$/.exec(String(pedido || '').trim());
   if (!m) return { estreia: null, porque: 'sem --estreia: sobe público na hora, como sempre' };
   const alvo = new Date(agora);
   alvo.setUTCHours(Number(m[1]), Number(m[2]), 0, 0);
-  const minutos = (alvo.getTime() - agora.getTime()) / 60000;
-  if (minutos < MARGEM_MINIMA_MIN) {
-    return {
-      estreia: null,
-      porque: minutos < 0
-        ? `a hora marcada (${pedido}Z) JÁ PASSOU há ${Math.round(-minutos)} min — sobe público na hora, para não ficar por publicar`
-        : `faltam só ${Math.round(minutos)} min para as ${pedido}Z (mínimo ${MARGEM_MINIMA_MIN}) — sobe público na hora`,
-    };
+  const motivos = [];
+  if ((alvo.getTime() - agora.getTime()) / 60000 < MARGEM_MINIMA_MIN) {
+    alvo.setTime(alvo.getTime() + UM_DIA_MS);
+    motivos.push(`a hora de hoje (${pedido}Z) já não dá`);
   }
-  return { estreia: alvo, porque: `privado, com estreia marcada para as ${pedido}Z (${Math.round(minutos)} min de antecedência)` };
+  const tomadas = new Set((ocupadas || []).map((d) => new Date(d).getTime()).filter(Number.isFinite));
+  while (tomadas.has(alvo.getTime())) {
+    motivos.push(`${alvo.toISOString().slice(0, 10)} já tem vídeo marcado`);
+    alvo.setTime(alvo.getTime() + UM_DIA_MS);
+  }
+  const minutos = Math.round((alvo.getTime() - agora.getTime()) / 60000);
+  return {
+    estreia: alvo,
+    porque: `privado, com estreia marcada para ${alvo.toISOString().slice(0, 16).replace('T', ' ')}Z (${minutos} min de antecedência)${motivos.length ? ` — ${motivos.join('; ')}` : ''}`,
+  };
 }
 
 // ─── util ────────────────────────────────────────────────────────────────────
@@ -1021,7 +1050,13 @@ async function main() {
   // ⚠️ A DECISÃO DE AGENDAR É TOMADA AQUI, E DITA EM VOZ ALTA. Ver `estreiaMarcada`:
   //    quando a hora está em cima (ou já passou), ela devolve `null` e o vídeo sobe
   //    público na hora — a rede de segurança não pode ter condições.
-  const { estreia, porque } = estreiaMarcada(args.estreia === true ? '' : args.estreia);
+  //    ♦ 05/10/2026 — e a hora que já passou vai para AMANHÃ, nunca por cima de outra
+  //    estreia já marcada do mesmo formato (as do caderno).
+  const formato = script.formato || 'short50';
+  const ocupadas = Object.values(tracking)
+    .filter((v) => v && v.publishAt && (v.formato || 'short50') === formato)
+    .map((v) => v.publishAt);
+  const { estreia, porque } = estreiaMarcada(args.estreia === true ? '' : args.estreia, new Date(), ocupadas);
   log(`🕒 ${porque}`);
   const metadata = buildMetadata(raw, script, estreia);
 

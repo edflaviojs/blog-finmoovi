@@ -38,6 +38,11 @@ on:
     # atrasa — mediu-se até 112 minutos nesta casa. Com duas, um atraso grande deixava o
     # vídeo com minutos de antecedência ou com a hora já passada. Com três, mesmo no pior
     # atraso ainda sobra mais de uma hora.
+    #
+    # 🔴 05/10/2026 — ERRADO: medido o atraso real, é de 3 a 8 HORAS (esta ronda arrancava
+    # entre 15:05 e 17:46 UTC). Em três semanas NENHUM vídeo estreou às 12h. Agora, se a
+    # hora de hoje já não dá, o vídeo estreia AMANHÃ às 12h BR (`estreiaMarcada`), e a
+    # repescagem das 17h só age se HOJE não há vídeo no ar (conta a estreia, não o envio).
     - cron: '0 12 * * *'   # 09:00 BRT — envia; a estreia fica marcada para as 15:00 UTC
     # ♦ 07/08/2026 — A SEGUNDA RONDA (ordem do dono: *"não podemos correr o risco
     # de não ter vídeo postado no dia"*). Em 06/08 a entrega das 12h nunca chegou a
@@ -160,9 +165,9 @@ jobs:
       # Dar-lhe hora marcada seria empurrar o vídeo do dia para ainda mais tarde. **A rede
       # de segurança não pode ter condições.**
       #
-      # ⚠️ E a decisão de agendar tem a última palavra DENTRO do programa: se a hora já
-      # passou (o cron do GitHub atrasa), `estreiaMarcada` devolve "público na hora" e
-      # diz porquê. Ver o cabeçalho dela em `upload-short.js`.
+      # ⚠️ E a decisão de agendar tem a última palavra DENTRO do programa: desde 05/10, se
+      # a hora de hoje já passou, `estreiaMarcada` marca AMANHÃ à mesma hora (nunca por
+      # cima de outra estreia já marcada) e diz porquê. Ver o cabeçalho dela em `upload-short.js`.
       - name: Publicar no YouTube (privado, com estreia marcada)
         if: steps.fila.outputs.skip != 'true'
         env:
@@ -178,6 +183,9 @@ jobs:
         run: |
           ESTREIA=""
           if [ "${{ github.event.schedule }}" = "0 12 * * *" ]; then ESTREIA="--estreia=15:00"; fi
+          # ♦ 05/10/2026 — o disparo à mão passa a fazer o MESMO que a ronda das 12:00
+          # (era público na hora). Só a repescagem continua pública.
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then ESTREIA="--estreia=15:00"; fi
           node src/scripts/youtube/upload-short.js --slug="$FILE_SLUG" $ESTREIA
 
       - name: Tirar da fila e commitar tracking

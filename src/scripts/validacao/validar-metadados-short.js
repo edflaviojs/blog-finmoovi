@@ -387,6 +387,12 @@ console.log('\n9. A REPESCAGEM — a segunda ronda do carteiro');
   ok('tracking vazio conta como "não saiu"', jaSaiuVideoNoDia('2026-08-07', {}) === false);
   ok('e um registo sem data não engana a conta',
     jaSaiuVideoNoDia('2026-08-07', { c: { videoId: 'x' } }) === false);
+  // ♦ 05/10/2026 — conta o dia em que vai ao AR (publishAt), não o do envio.
+  const agendado = { d: { uploadedAt: '2026-10-05T16:00:00.000Z', publishAt: '2026-10-06T15:00:00.000Z' } };
+  ok('🔴 vídeo enviado hoje mas que só estreia amanhã NÃO serve o dia de hoje',
+    jaSaiuVideoNoDia('2026-10-05', agendado) === false);
+  ok('e serve o dia de amanhã — a repescagem de amanhã fica quieta',
+    jaSaiuVideoNoDia('2026-10-06', agendado) === true);
 }
 
 /**
@@ -668,12 +674,30 @@ console.log('\n📅 O ENVIO PRIVADO COM HORA MARCADA — e a trava que nunca dei
    * e o YouTube recusa um `publishAt` no passado. Sem isto, o vídeo ficava privado para
    * sempre com a corrida a VERDE.
    */
+  // ♦ 05/10/2026 — a hora que já passou deixou de ser "público na hora": é AMANHÃ, à
+  // mesma hora. O cron chega 3 a 8h atrasado e a regra antiga nunca deixou estrear nada.
   const jaPassou = estreiaMarcada('15:00', new Date('2026-08-12T15:20:00.000Z'));
-  ok('🔴 se a hora JÁ PASSOU, sobe público na hora (nunca fica por publicar)',
-    jaPassou.estreia === null && /JÁ PASSOU/.test(jaPassou.porque), jaPassou.porque);
+  ok('🔴 se a hora JÁ PASSOU, estreia AMANHÃ à mesma hora (nunca fica por publicar)',
+    jaPassou.estreia instanceof Date && jaPassou.estreia.toISOString() === '2026-08-13T15:00:00.000Z', jaPassou.porque);
   const emCima = estreiaMarcada('15:00', new Date('2026-08-12T14:55:00.000Z'));
   ok('e se faltam 5 minutos também (agendar aí não dá aviso nenhum ao YouTube)',
-    emCima.estreia === null, emCima.porque);
+    emCima.estreia && emCima.estreia.toISOString() === '2026-08-13T15:00:00.000Z', emCima.porque);
+  /**
+   * 🔴 NUNCA DUAS ESTREIAS NA MESMA HORA. Se o cron de amanhã chegar a horas, a hora de
+   * hoje dá — mas já tem o vídeo marcado ontem. Marcar por cima deixava o dia seguinte vazio.
+   */
+  const ocupado = estreiaMarcada('15:00', AGORA, ['2026-08-12T15:00:00.000Z']);
+  ok('🔴 hora de hoje já marcada por outro vídeo → anda para amanhã',
+    ocupado.estreia && ocupado.estreia.toISOString() === '2026-08-13T15:00:00.000Z', ocupado.porque);
+  const doisOcupados = estreiaMarcada('15:00', new Date('2026-08-12T16:00:00.000Z'), ['2026-08-13T15:00:00.000Z']);
+  ok('e se amanhã também já tem dono, vai para depois de amanhã',
+    doisOcupados.estreia && doisOcupados.estreia.toISOString() === '2026-08-14T15:00:00.000Z', doisOcupados.porque);
+  const outraHora = estreiaMarcada('11:40', AGORA, ['2026-08-12T21:40:00.000Z']);
+  ok('⚠️ controlo: a estreia da NOITE não ocupa a da manhã',
+    outraHora.estreia && outraHora.estreia.toISOString() === '2026-08-13T11:40:00.000Z' && !/já tem vídeo/.test(outraHora.porque), outraHora.porque);
+  const livre = estreiaMarcada('15:00', AGORA, ['2026-08-11T15:00:00.000Z']);
+  ok('⚠️ controlo: a estreia de ONTEM não empurra a de hoje',
+    livre.estreia && livre.estreia.toISOString() === '2026-08-12T15:00:00.000Z', livre.porque);
   /**
    * ⚠️ **MAS 40 MINUTOS AINDA SE AGENDA.** Quarenta minutos de aviso ao YouTube é melhor
    * do que nenhum — só se desiste quando a hora está mesmo em cima. Uma trava que

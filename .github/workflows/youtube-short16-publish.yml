@@ -151,8 +151,9 @@ jobs:
       # MAIÚSCULAS, três hashtags, etiquetas a encher os 500 caracteres. Nada disso
       # precisou de ser reescrito — o formato novo herda tudo.
       # ♦ 12/08/2026 — privado, com a estreia do turno marcada. Ver o cabeçalho dos crons.
-      # ⚠️ Se a hora já tiver passado (o cron do GitHub atrasa), `estreiaMarcada` manda-o
-      #    público na hora e diz porquê — nunca fica um vídeo por publicar.
+      # ⚠️ 05/10/2026 — se a hora de hoje já passou (o cron do GitHub chega 3 a 8h atrasado;
+      #    em três semanas nenhum 16s estreou à hora), `estreiaMarcada` marca AMANHÃ à mesma
+      #    hora, nunca por cima de outra estreia já marcada, e diz porquê.
       - name: Publicar no YouTube (privado, com estreia marcada)
         if: steps.fila.outputs.saltar != 'true'
         env:

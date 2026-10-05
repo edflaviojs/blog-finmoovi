@@ -100,10 +100,18 @@ export function listOutboxPending() {
  * alguém chamar isto sem argumento.
  * ⚠️ Registos anteriores a 07/08 não têm o campo `formato` — e eram TODOS de 50s,
  * por isso a ausência conta como `short50`.
+ *
+ * ♦ 05/10/2026 — CONTA O DIA EM QUE O VÍDEO VAI AO AR, NÃO O DIA EM QUE SUBIU.
+ * ⚠️ Desde hoje o vídeo da ronda principal sobe num dia e estreia no SEGUINTE (o cron
+ * do GitHub chega 3 a 8h atrasado — ver `estreiaMarcada` em `upload-short.js`). Pela
+ * data do envio, a repescagem achava que o dia de hoje estava servido pelo vídeo que
+ * só vai ao ar amanhã — e o dia ficava vazio em silêncio. Com `publishAt`, vale a
+ * estreia; sem ele (subiu público), vale o envio, como sempre.
  */
 export function jaSaiuVideoNoDia(diaUTC, tracking, formato = '') {
   return Object.values(tracking || {}).some((v) => {
-    if (String((v && v.uploadedAt) || '').slice(0, 10) !== diaUTC) return false;
+    const noAr = (v && (v.publishAt || v.uploadedAt)) || '';
+    if (String(noAr).slice(0, 10) !== diaUTC) return false;
     if (!formato) return true;
     return ((v && v.formato) || 'short50') === formato;
   });
