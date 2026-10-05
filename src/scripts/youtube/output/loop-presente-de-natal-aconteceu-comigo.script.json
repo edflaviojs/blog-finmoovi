@@ -1,0 +1,118 @@
+{
+  "slug": "loop-presente-de-natal-aconteceu-comigo",
+  "formato": "loop16",
+  "term": "O presente de Natal",
+  "category": "vida",
+  "keyword": "NATAL",
+  "valor": "R$ 1.100",
+  "situacao": "presente-de-natal",
+  "gancho": "aconteceu-comigo",
+  "ganchoFamilia": "aconteceu comigo",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "fumaca",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Isso aconteceu comigo semana passada",
+      "durationSec": 1.77,
+      "shots": [
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "Isso aconteceu comigo"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Quando vi, mil e cem reais evaporaram na conta de luz e mercado todo da família",
+      "durationSec": 5.66,
+      "shots": [
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "evaporaram",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 1.100 evaporou"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então percebi que tudo virou fumaça na minha cabeça do mesmo",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "percebi",
+          "visual": {
+            "type": "statement",
+            "text": "Tudo virou fumaça"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "virou",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Agora eu lembro. Isso aconteceu comigo semana passada, não esqueça mais",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "lembro",
+          "visual": {
+            "type": "statement",
+            "text": "isso aconteceu comigo"
+          }
+        },
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "Isso aconteceu comigo"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.21
+}
