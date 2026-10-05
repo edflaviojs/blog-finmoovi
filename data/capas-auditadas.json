@@ -5374,6 +5374,21 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-10-04"
+    },
+    "juro-real-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-05"
+    },
+    "juro-real-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-05"
+    },
+    "juro-real.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-05"
     }
   },
   "corrigidas": {
@@ -6038,6 +6053,6 @@
       "motivo": "tem texto escrito (\"I'm sorry, I'm not able to identify the people in this image.\")"
     }
   },
-  "totalAcervo": 1075,
-  "ultimaCorrida": "2026-10-04"
+  "totalAcervo": 1078,
+  "ultimaCorrida": "2026-10-05"
 }
