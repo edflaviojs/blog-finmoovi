@@ -1,0 +1,118 @@
+{
+  "slug": "loop-dinheiro-so-seu-aconteceu-comigo",
+  "formato": "loop16",
+  "term": "Um dinheiro só seu",
+  "category": "vida",
+  "keyword": "SEU",
+  "valor": "R$ 200",
+  "situacao": "dinheiro-so-seu",
+  "gancho": "aconteceu-comigo",
+  "ganchoFamilia": "aconteceu comigo",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "cofre",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Isso aconteceu comigo semana passada, quando vi o cofre vazio.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "Isso aconteceu comigo"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "cofre"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Descobri que duzentos reais tinham sumido, guardados como dinheiro só meu.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "Descobri",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "cofre"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "duzentos",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 200 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então percebi que preciso separar o que é meu depois.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "percebi",
+          "visual": {
+            "type": "statement",
+            "text": "Preciso separar o meu"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "preciso",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "cofre"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Se o cofre ficar vazio, lembra. Isso aconteceu comigo semana passada.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "cofre",
+          "visual": {
+            "type": "statement",
+            "text": "Se o cofre ficar vazio"
+          }
+        },
+        {
+          "anchor": "ficar",
+          "visual": {
+            "type": "statement",
+            "text": "Isso aconteceu comigo"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
