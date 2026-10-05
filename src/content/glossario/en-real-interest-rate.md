@@ -17,80 +17,80 @@ seo:
   keywords: ["real interest rate", "glossary", "finance"]
 ---
 
-## O que acontece quando a conta do seu salário não cobre tudo
+## What Happens When Your Salary Bill Doesn’t Cover Everything
 
-Você já chegou ao fim do mês e percebeu que o dinheiro que entrou não foi suficiente para pagar o aluguel, a conta de luz e ainda comprar aquele café que você costuma tomar todos os dias? A sensação de que o seu poder de compra está diminuindo, mesmo que o seu salário pareça estar “igual”, é mais comum do que você imagina. O que está acontecendo, na verdade, é que a inflação está corroendo o valor do que você ganha. Quando a gente fala em “juros reais”, estamos falando exatamente do que resta do seu dinheiro depois que a inflação foi descontada.
+Have you ever reached the end of the month and realized that the money that came in wasn’t enough to pay the rent, the electricity bill, and still buy that coffee you usually have every day? The feeling that your purchasing power is shrinking, even though your salary seems to stay “the same,” is more common than you think. What’s actually happening is that inflation is eroding the value of what you earn. When we talk about “real interest,” we’re talking exactly about what’s left of your money after inflation is taken out.
 
-![O que acontece quando a conta do seu salário não cobre tudo](/images/glossario/juro-real-inline-1.webp)
-
-
-
-## Entendendo o juro real sem complicação
-
-Juro real = taxa nominal (aquela que aparece no contrato, no cartão de crédito ou na poupança) menos a inflação (o aumento geral dos preços). Se o seu investimento rende 6 % ao ano, mas a inflação está em 4 %, o juro real é de 2 %. Esse número de 2 % mostra o quanto o seu poder de compra realmente aumentou.
-
-- **Taxa nominal**: a taxa anunciada, sem ajuste.
-- **Inflação**: a subida média dos preços de bens e serviços.
-- **Juro real**: o ganho efetivo depois de descontar a inflação.
-
-Se o juro real for negativo, significa que, apesar de você estar “ganhando” dinheiro, ele está valendo menos do que antes. É como se você estivesse pagando um aluguel invisível todo mês.
-
-## Por que isso importa no seu dia a dia
-
-Imagine que você tem um objetivo de juntar o equivalente a três meses de aluguel para uma emergência. Você decide guardar o dinheiro numa conta que paga 5 % ao ano. Se a inflação ficar em 6 %, seu juro real será -1 %. No papel, seu saldo cresce, mas na prática você está perdendo poder de compra e, ao final do período, precisará de mais dinheiro para cobrir o mesmo gasto.
-
-![Por que isso importa no seu dia a dia](/images/glossario/juro-real-inline-3.webp)
+![What Happens When Your Salary Bill Doesn’t Cover Everything](/images/glossario/juro-real-inline-1.webp)
 
 
 
-Esse cenário afeta:
+## Understanding Real Interest Without Complication
 
-- **Planejamento de metas**: metas de curto prazo (viagem, compra de eletrodoméstico) podem ficar mais caras.
-- **Investimentos**: aplicações que parecem boas podem, na verdade, estar “engolindo” seu dinheiro.
-- **Cartões de crédito**: a taxa de juros nominal pode ser alta, mas se a inflação subir ainda mais, o juro real pode ser ainda pior.
+Real interest = nominal rate (the one that appears in the contract, on the credit card, or in the savings account) minus inflation (the general rise in prices). If your investment yields 6 % per year, but inflation is at 4 %, the real interest is 2 %. That 2 % figure shows how much your purchasing power actually increased.
 
-## Como o FinMoovi te ajuda a enxergar o juro real na prática
+- **Nominal rate**: the advertised rate, without adjustment.  
+- **Inflation**: the average rise in prices of goods and services.  
+- **Real interest**: the effective gain after subtracting inflation.
 
-O aplicativo FinMoovi tem um recurso que faz a diferença: **captura inteligente**. Você tira uma foto do recibo da compra ou grava a voz dizendo “gastei 30 dólares no supermercado”. O app reconhece o valor, a data e a categoria (alimentação, transporte, lazer) e já coloca tudo no seu fluxo de caixa.
+If real interest is negative, it means that, even though you’re “earning” money, it’s worth less than before. It’s like paying an invisible rent every month.
 
-Além disso, o FinMoovi trabalha com **multimoeda**. Se você ganha em euros, gasta em dólares ou tem investimentos em reais, o app converte tudo usando a taxa de câmbio do dia e, o melhor, já traz a inflação do país correspondente. Assim, ao analisar a rentabilidade da sua conta poupança em dólares, o app mostra o juro real ao lado da taxa nominal, sem que você precise fazer contas separadas.
+## Why This Matters in Your Daily Life
 
-Com **relatórios de fluxo de caixa**, o FinMoovi agrupa todas as entradas e saídas, calcula a taxa de retorno real dos seus investimentos e destaca onde o juro real está negativo. Você vê, por exemplo, que a conta de poupança está rendendo 3 % ao ano, mas a inflação nos EUA está em 5 %, então seu juro real é -2 %. Essa informação aparece em um gráfico simples, fácil de entender.
+Imagine you have a goal of saving the equivalent of three months’ rent for an emergency. You decide to keep the money in an account that pays 5 % per year. If inflation ends up at 6 %, your real interest will be –1 %. On paper, your balance grows, but in practice you’re losing purchasing power and, at the end of the period, you’ll need more money to cover the same expense.
 
-## Dicas práticas para proteger seu dinheiro do efeito da inflação
+![Why This Matters in Your Daily Life](/images/glossario/juro-real-inline-3.webp)
 
-**Practical tip:** **Revise suas metas a cada três meses** e ajuste o valor‑alvo usando a inflação acumulada. Se você quer juntar o equivalente a três meses de aluguel, aumente o objetivo em X % (valor da inflação) a cada trimestre.
 
-**Practical tip:** **Diversifique em ativos que pagam juros reais positivos**, como títulos indexados à inflação ou fundos que investem em commodities. Esses produtos já trazem a correção inflacionária embutida.
 
-**Practical tip:** **Use o modo “shopping” do FinMoovi** para criar listas de compras e acompanhar o total em tempo real. Quando o total ultrapassar o limite que você definiu para o mês, o app envia um alerta, evitando gastos que possam comprometer sua margem de segurança.
+This scenario affects:
 
-## Como colocar a teoria em prática no seu cotidiano
+- **Goal planning**: short‑term goals (trip, appliance purchase) can become more expensive.  
+- **Investments**: products that look good may actually be “eating” your money.  
+- **Credit cards**: the nominal interest rate may be high, but if inflation rises even more, the real interest can be even worse.
 
-1. **Capture tudo** – Sempre que pagar algo, use a foto ou a voz no FinMoovi. Não deixe despesas “no vácuo”.
-2. **Cheque o relatório de juro real** – No final de cada mês, abra a aba “Investimentos”. O app mostra a taxa nominal, a inflação do país e o juro real ao lado.
-3. **Ajuste seu orçamento** – Se o juro real estiver negativo em alguma aplicação, considere mover esse dinheiro para outra que ofereça proteção contra a inflação.
-4. **Acompanhe metas** – Use a seção “Objetivos” para definir o valor que você quer alcançar (ex.: “Reserva de emergência = 3 meses de aluguel”). O app já inclui a correção inflacionária automática.
-5. **Ative alertas** – Configure lembretes de vencimento de contas e alertas de saldo baixo. O FinMoovi avisa quando seu fluxo de caixa está ficando apertado.
+## How FinMoovi Helps You See Real Interest in Practice
 
-## Por que o juro real é a bússola dos seus investimentos
+The FinMoovi app has a feature that makes a difference: **smart capture**. You take a photo of a receipt or record your voice saying “I spent $30 at the supermarket.” The app recognizes the amount, the date, and the category (food, transport, leisure) and instantly adds everything to your cash flow.
 
-Sem entender o juro real, você pode acabar “ganhando” dinheiro que, na prática, está perdendo valor. Pense no juro real como a bússola que indica se você está realmente avançando rumo ao seu objetivo ou se está andando em círculos. Quando a bússola aponta para “positivo”, você sabe que cada centavo guardado está aumentando seu poder de compra. Quando aponta para “negativo”, é hora de mudar a rota.
+In addition, FinMoovi works with **multicurrency**. If you earn in euros, spend in dollars, or have investments in reais, the app converts everything using the day’s exchange rate and, best of all, also brings in the inflation rate of the corresponding country. So, when you analyze the return of your dollar savings account, the app shows the real interest next to the nominal rate, without you having to do separate calculations.
 
-## Estratégias simples para melhorar seu juro real
+With **cash‑flow reports**, FinMoovi groups all inflows and outflows, calculates the real return rate of your investments, and highlights where real interest is negative. You’ll see, for example, that the savings account is yielding 3 % per year, but U.S. inflation is at 5 %, so your real interest is –2 %. This information appears in a simple, easy‑to‑understand chart.
 
-- **Reinvista os rendimentos**: ao invés de deixar o dinheiro parado, coloque os juros de volta na aplicação que tem juro real positivo.
-- **Negocie taxas**: em cartões de crédito, procure opções com menor taxa nominal; isso pode melhorar o juro real, especialmente se a inflação estiver alta.
-- **Aproveite oportunidades de renda extra**: o dinheiro extra pode ser direcionado imediatamente para investimentos que superam a inflação, aumentando seu juro real total.
+## Practical Tips to Protect Your Money from Inflation’s Effect
+
+**Practical tip:** **Review your goals every three months** and adjust the target amount using accumulated inflation. If you want to save the equivalent of three months’ rent, increase the goal by X % (the inflation rate) each quarter.
+
+**Practical tip:** **Diversify into assets that pay positive real interest**, such as inflation‑linked bonds or funds that invest in commodities. These products already embed inflation correction.
+
+**Practical tip:** **Use FinMoovi’s “shopping” mode** to create shopping lists and track the total in real time. When the total exceeds the limit you set for the month, the app sends an alert, preventing spending that could compromise your safety margin.
+
+## How to Put Theory into Practice in Your Everyday Life
+
+1. **Capture everything** – Whenever you pay for something, use the photo or voice feature in FinMoovi. Don’t leave expenses “in the void.”  
+2. **Check the real‑interest report** – At the end of each month, open the “Investments” tab. The app shows the nominal rate, the country’s inflation, and the real interest side by side.  
+3. **Adjust your budget** – If real interest is negative on any investment, consider moving that money to another that offers inflation protection.  
+4. **Track goals** – Use the “Goals” section to set the amount you want to reach (e.g., “Emergency fund = 3 months’ rent”). The app already includes automatic inflation adjustment.  
+5. **Enable alerts** – Set up bill‑due reminders and low‑balance alerts. FinMoovi notifies you when your cash flow is getting tight.
+
+## Why Real Interest Is the Compass of Your Investments
+
+Without understanding real interest, you can end up “earning” money that, in practice, is losing value. Think of real interest as the compass that tells you whether you’re truly moving toward your goal or just going in circles. When the compass points to “positive,” you know every saved cent is increasing your purchasing power. When it points to “negative,” it’s time to change course.
+
+## Simple Strategies to Improve Your Real Interest
+
+- **Reinvest earnings**: instead of letting the money sit idle, put the interest back into the investment that has positive real interest.  
+- **Negotiate rates**: with credit cards, look for options with lower nominal rates; this can improve real interest, especially when inflation is high.  
+- **Take advantage of extra‑income opportunities**: the extra money can be immediately directed to investments that outpace inflation, boosting your total real interest.
 
 ## Start today
 
-**Micro‑ação de 5 minutos no FinMoovi:**
+**5‑minute micro‑action in FinMoovi:**
 
-1. Abra o app e vá para a tela “Captura inteligente”.
-2. Tire uma foto do último recibo que você tem em mãos (pode ser o da compra de café da manhã).
-3. Confirme a categoria que o app sugeriu ou ajuste se necessário.
-4. Clique em “Adicionar ao objetivo” e escolha a meta “Reserva de emergência”.
-5. Toque em “Ver relatório de juro real” e veja, em poucos segundos, como aquele gasto impacta seu poder de compra.
+1. Open the app and go to the “Smart Capture” screen.  
+2. Take a photo of the latest receipt you have on hand (it could be the breakfast coffee receipt).  
+3. Confirm the category the app suggested or adjust it if needed.  
+4. Tap “Add to goal” and choose the goal “Emergency fund.”  
+5. Tap “View real‑interest report” and see, in a few seconds, how that expense impacts your purchasing power.
 
-Com esses passos, você já começa a monitorar o juro real das suas finanças e a usar o FinMoovi como aliado para manter seu dinheiro realmente rendendo. Boa jornada!
+With these steps, you’ll already start monitoring the real interest of your finances and using FinMoovi as an ally to keep your money truly earning. Safe journey!
