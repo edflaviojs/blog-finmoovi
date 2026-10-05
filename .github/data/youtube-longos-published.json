@@ -94,5 +94,11 @@
       "en",
       "es"
     ]
+  },
+  "economizar-300-por-mes": {
+    "estado": "reservado",
+    "publishAt": "2026-10-11T22:00:00.000Z",
+    "reservadoEm": "2026-10-05T08:50:13.440Z",
+    "corrida": "37285995571"
   }
 }
