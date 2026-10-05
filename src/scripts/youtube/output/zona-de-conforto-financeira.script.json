@@ -1,0 +1,203 @@
+{
+  "slug": "zona-de-conforto-financeira",
+  "term": "Zona de Conforto Financeira",
+  "category": "basico",
+  "keyword": "Financeira",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Tem dinheiro sobrando no fim do mês?"
+  },
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "cofre",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Tem dinheiro sobrando no fim do mês? Então isso pode ser sua zona de conforto financeira.",
+      "durationSec": 6.2,
+      "shots": [
+        {
+          "anchor": "sobrando",
+          "visual": {
+            "type": "statement",
+            "text": "sobrando no fim do mês"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "zona",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "cofre"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "É quando você gasta menos do que ganha, tem reserva pra emergência e não fica com medo do boleto.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "quando",
+          "visual": {
+            "type": "statement",
+            "text": "gasta menos do que ganha"
+          }
+        },
+        {
+          "anchor": "reserva",
+          "visual": {
+            "type": "statement",
+            "text": "reserva pra emergência"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "boleto",
+          "visual": {
+            "type": "statement",
+            "text": "sem medo do boleto"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Se você guarda pelo menos vinte por cento do salário e tem de seis a doze meses de despesas guardadas, já está na zona de conforto.",
+      "durationSec": 10,
+      "shots": [
+        {
+          "anchor": "guarda",
+          "visual": {
+            "type": "statement",
+            "text": "guarda pelo menos 20%"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "salário",
+          "visual": {
+            "type": "statement",
+            "text": "do salário"
+          }
+        },
+        {
+          "anchor": "está",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "cofre"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu coloquei meus gastos no FinMoovi e ele mostrou que eu podia guardar mais do que imaginava.",
+      "durationSec": 6.5,
+      "shots": [
+        {
+          "anchor": "coloquei",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "tela mostrando gastos e meta de economia"
+          },
+          "sfx": "typewriter"
+        },
+        {
+          "anchor": "mostrou",
+          "visual": {
+            "type": "statement",
+            "text": "mostrou que podia guardar mais"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver seu número? Abra o FinMoovi, tem sete dias grátis.",
+      "durationSec": 4.2,
+      "shots": [
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "statement",
+            "text": "Quer ver seu número?"
+          }
+        },
+        {
+          "anchor": "Abra",
+          "visual": {
+            "type": "statement",
+            "text": "Abra o FinMoovi"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Zona de conforto financeira é ter dinheiro sobrando e dormir tranquilo. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "Zona",
+          "visual": {
+            "type": "statement",
+            "text": "Zona de conforto financeira"
+          }
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "dinheiro sobrando"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "dormir",
+          "visual": {
+            "type": "statement",
+            "text": "dormir tranquilo"
+          }
+        },
+        {
+          "anchor": "outros",
+          "visual": {
+            "type": "statement",
+            "text": "dinheiro dos outros"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Quer ver seu número?",
+    "target": "app"
+  },
+  "totalDurationSec": 41.1
+}
