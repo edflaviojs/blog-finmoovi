@@ -19895,5 +19895,114 @@
         "publicaEmBR": "06/10 às 14h31"
       }
     }
+  },
+  "kw-5-erros-que-te-fazem-achar-que-financas-sao-so-numeros": {
+    "midias": {
+      "video": {
+        "id": "f1553bf7-cc3e-4c94-aba8-303a53d36e9e",
+        "name": "KQWEt3TDBT.mp4",
+        "originalName": null,
+        "path": "https://media.help4desk.com/KQWEt3TDBT.mp4",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capa": {
+        "id": "714e5194-6d37-400a-b52a-bb832d7c8a27",
+        "name": "7X6vlenuCk.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/7X6vlenuCk.jpeg",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capaLarga": {
+        "id": "74531dad-d76d-4f50-b6e5-39152477e405",
+        "name": "fvyjC01c1Q.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/fvyjC01c1Q.jpeg",
+        "thumbnail": null,
+        "alt": null
+      }
+    },
+    "publicaEm": "2026-10-06T22:00:00.000Z",
+    "publicaEmBR": "06/10 às 19h00",
+    "agendadoEm": "2026-10-05T22:03:11.962Z",
+    "atualizadoEm": "2026-10-05T22:03:16.277Z",
+    "redes": {
+      "instagram": {
+        "postId": "cmuvsqdnl006rrx95frj05akp",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-06T22:00:00.000Z",
+        "publicaEmBR": "06/10 às 19h00",
+        "midia": "o vídeo",
+        "caracteres": 733,
+        "limite": 2200
+      },
+      "zernio-tiktok": {
+        "postId": "cmuvsqe4s006srx95qwpo72xm",
+        "canal": "finmoovi",
+        "publicaEm": "2026-10-06T22:12:00.000Z",
+        "publicaEmBR": "06/10 às 19h12",
+        "midia": "o vídeo",
+        "caracteres": 279,
+        "limite": 2200
+      },
+      "facebook": {
+        "postId": "cmuvsqelq006trx95ig7eidef",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-06T22:26:00.000Z",
+        "publicaEmBR": "06/10 às 19h26",
+        "midia": "o vídeo",
+        "caracteres": 503,
+        "limite": 63206
+      },
+      "linkedin-page": {
+        "postId": "cmuvsqf0m006urx95jjpqe5c8",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-06T22:43:00.000Z",
+        "publicaEmBR": "06/10 às 19h43",
+        "midia": "o vídeo",
+        "caracteres": 420,
+        "limite": 3000
+      },
+      "threads": {
+        "postId": "cmuvsqfgr006vrx95p00swf67",
+        "canal": "finmoovi",
+        "publicaEm": "2026-10-06T22:58:00.000Z",
+        "publicaEmBR": "06/10 às 19h58",
+        "midia": "o vídeo",
+        "caracteres": 142,
+        "limite": 500
+      },
+      "pinterest": {
+        "postId": "cmuvsqg9j006wrx95ry8m6j3s",
+        "canal": "finmoovi",
+        "publicaEm": "2026-10-06T23:31:00.000Z",
+        "publicaEmBR": "06/10 às 20h31",
+        "midia": "vídeo primeiro, capa depois — a ordem que o Pinterest exige",
+        "caracteres": 468,
+        "limite": 500
+      },
+      "bluesky": {
+        "postId": "cmuvsqgp7006xrx951zx5gqgb",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-06T23:47:00.000Z",
+        "publicaEmBR": "06/10 às 20h47",
+        "midia": "vai a capa DEITADA (o Bluesky não publica vídeo, e a em pé ficaria cortada no feed)",
+        "caracteres": 99,
+        "limite": 300
+      },
+      "instagram-story": {
+        "postId": "cmuvsqgzr006yrx954oyafy4p",
+        "tipo": "vídeo",
+        "publicaEm": "2026-10-06T22:05:00.000Z",
+        "publicaEmBR": "06/10 às 19h05"
+      },
+      "facebook-story": {
+        "postId": "cmuvsqh5t006zrx95a03h0i0q",
+        "tipo": "vídeo",
+        "publicaEm": "2026-10-06T22:31:00.000Z",
+        "publicaEmBR": "06/10 às 19h31"
+      }
+    }
   }
 }
