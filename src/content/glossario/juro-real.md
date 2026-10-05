@@ -4,6 +4,7 @@ definition: "O que é juro real e como isso aparece no seu dia a dia — explica
 title: "juro real - Glossário Financeiro"
 description: "O que é juro real e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/juro-real.webp"
+imageAlt: "Pilhas de moedas douradas e potes de vidro com plantas verdes sobre fundo roxo."
 category: "basico"
 tags: ["juro real", "glossário", "finanças"]
 author: "FinMoovi"

@@ -4,6 +4,7 @@ definition: "What real interest rate is and how it shows up in your everyday mon
 title: "real interest rate - Financial Glossary"
 description: "What real interest rate is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/juro-real.webp"
+imageAlt: "Gold coin stacks and glass jars with green sprouts on purple background."
 category: "basico"
 tags: ["real interest rate", "glossary", "finance"]
 author: "FinMoovi"
