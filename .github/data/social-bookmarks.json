@@ -2478,5 +2478,25 @@
         "status": 200
       }
     }
+  },
+  {
+    "slug": "cotacoes-semana-1-outubro-2026",
+    "title": "Resumo Semanal: Dólar a R$ 5.22 — Semana 1 de outubro",
+    "url": "https://blog.finmoovi.com/posts/cotacoes-semana-1-outubro-2026",
+    "submittedAt": "2026-10-05T21:44:14.353Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1878114708
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
   }
 ]
