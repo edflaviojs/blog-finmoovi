@@ -65,6 +65,28 @@
       "usadoEm": [
         "pequenos-gastos-como-recuperar"
       ]
+    },
+    {
+      "ficheiro": "manus/economizar-300-por-mes/susto.jpg",
+      "significado": "o susto de olhar a conta",
+      "tipo": "foto",
+      "pistas": [
+        "voce ja viu o dinheiro sumir"
+      ],
+      "usadoEm": [
+        "economizar-300-por-mes"
+      ]
+    },
+    {
+      "ficheiro": "manus/economizar-300-por-mes/virada.jpg",
+      "significado": "a saída que se abre",
+      "tipo": "foto",
+      "pistas": [
+        "eu ganho tres mil e quinhentos reais todo mes"
+      ],
+      "usadoEm": [
+        "economizar-300-por-mes"
+      ]
     }
   ],
   "recusadas": [

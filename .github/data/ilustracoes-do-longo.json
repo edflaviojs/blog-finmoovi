@@ -161,6 +161,64 @@
         "cena": "55",
         "figura": "ratoeira"
       }
+    ],
+    "economizar-300-por-mes": [
+      {
+        "cena": "3",
+        "figura": "buraco"
+      },
+      {
+        "cena": "8",
+        "figura": "escorregao"
+      },
+      {
+        "cena": "10",
+        "figura": "bolha"
+      },
+      {
+        "cena": "12",
+        "figura": "bola-neve"
+      },
+      {
+        "cena": "15",
+        "figura": "domino"
+      },
+      {
+        "cena": "17",
+        "figura": "corda-bamba"
+      },
+      {
+        "cena": "19",
+        "figura": "areia-movedica"
+      },
+      {
+        "cena": "21",
+        "figura": "avalanche"
+      },
+      {
+        "cena": "22",
+        "figura": "ampulheta"
+      },
+      {
+        "cena": "24",
+        "figura": "ratoeira"
+      },
+      {
+        "cena": "26",
+        "figura": "castelo-cartas"
+      },
+      {
+        "cena": "27",
+        "figura": "escada"
+      },
+      {
+        "cena": "30",
+        "figura": "fumaca"
+      },
+      {
+        "cena": "33",
+        "figura": "ralo"
+      }
     ]
   }
 }

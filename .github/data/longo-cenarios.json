@@ -119,6 +119,22 @@
       "promessa": "Vou te mostrar como enxergar os pequenos gastos do churrasco e reorganizar esse dinheiro sem abrir mão de tudo que você gosta",
       "em": "2026-09-29",
       "molde": "a-revelacao"
+    },
+    {
+      "slug": "economizar-300-por-mes",
+      "cenarios": [
+        "a conta de luz",
+        "o mercado",
+        "o aluguel",
+        "as assinaturas esquecidas",
+        "a geladeira"
+      ],
+      "fio": "ampulheta",
+      "elenco": "duas irmãs, com o mesmo começo e escolhas diferentes",
+      "funcaoDoApp": "categorias",
+      "cena": "o primeiro emprego — o uniforme, a condução e o troco que não sobra",
+      "promessa": "Você deixa mais de três mil e seiscentos reais por ano escapando do orçamento, e eu vou te provar isso",
+      "em": "2026-10-05"
     }
   ]
 }

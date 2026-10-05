@@ -45,6 +45,24 @@
         "movimento": "aproxima-lento",
         "pista": "eu peguei um papel e escrevi"
       }
+    ],
+    "economizar-300-por-mes": [
+      {
+        "ficheiro": "manus/economizar-300-por-mes/susto.jpg",
+        "nome": "o susto de olhar a conta",
+        "significado": "o susto de olhar a conta",
+        "tipo": "foto",
+        "movimento": "aproxima",
+        "pista": "voce ja viu o dinheiro sumir"
+      },
+      {
+        "ficheiro": "manus/economizar-300-por-mes/virada.jpg",
+        "nome": "a saída que se abre",
+        "significado": "a saída que se abre",
+        "tipo": "foto",
+        "movimento": "aproxima-lento",
+        "pista": "eu ganho tres mil e quinhentos reais todo mes"
+      }
     ]
   }
 }
