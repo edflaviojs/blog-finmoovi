@@ -1,0 +1,118 @@
+{
+  "slug": "loop-emprestar-pra-parente-nunca-faca",
+  "formato": "loop16",
+  "term": "Emprestar dinheiro pra parente",
+  "category": "vida",
+  "keyword": "EMPRESTAR",
+  "valor": "R$ 500",
+  "situacao": "emprestar-pra-parente",
+  "gancho": "nunca-faca",
+  "ganchoFamilia": "nunca faça",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "corda-bamba",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Nunca faça empréstimo pra família sem combinar. Comigo aconteceu mês passado.",
+      "durationSec": 4.08,
+      "shots": [
+        {
+          "anchor": "empréstimo",
+          "visual": {
+            "type": "statement",
+            "text": "Empréstimo família"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "família",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "corda-bamba"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Emprestei quinhentos reais pro meu cunhado e ele someu sem pagar nada.",
+      "durationSec": 4.45,
+      "shots": [
+        {
+          "anchor": "Emprestei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "corda-bamba"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "quinhentos",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 500"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Aprendi a anotar tudo num caderninho na geladeira pra não esquecer.",
+      "durationSec": 4.08,
+      "shots": [
+        {
+          "anchor": "Aprendi",
+          "visual": {
+            "type": "statement",
+            "text": "Caderno geladeira"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "anotar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "corda-bamba"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Nunca faça empréstimo pra família sem combinar.",
+      "durationSec": 2.6,
+      "shots": [
+        {
+          "anchor": "empréstimo",
+          "visual": {
+            "type": "statement",
+            "text": "Nunca emprestar"
+          }
+        },
+        {
+          "anchor": "família",
+          "visual": {
+            "type": "statement",
+            "text": "Empréstimo família"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.21
+}
