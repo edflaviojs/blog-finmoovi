@@ -1,5 +1,29 @@
 [
   {
+    "file": "en-quotes-week-1-october-2026.md",
+    "dir": "posts",
+    "severity": 3,
+    "issues": {
+      "currency": 8,
+      "brInstitutions": [],
+      "brProducts": [
+        "CDB",
+        "Selic"
+      ],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "IPCA"
+      ],
+      "ptLeftovers": [
+        "ações",
+        "reais",
+        "investimentos"
+      ]
+    }
+  },
+  {
     "file": "en-fgc-guarantee.md",
     "dir": "glossario",
     "severity": 2,
@@ -31,6 +55,26 @@
       "brAcronyms": [
         "LCI",
         "LCA"
+      ],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-cotizaciones-semana-1-octubre-2026.md",
+    "dir": "posts",
+    "severity": 2,
+    "issues": {
+      "currency": 4,
+      "brInstitutions": [],
+      "brProducts": [
+        "CDB",
+        "Selic"
+      ],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "IPCA"
       ],
       "ptLeftovers": []
     }
@@ -2983,6 +3027,21 @@
   },
   {
     "file": "en-ipva-installment.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-key-performance-indicator.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -7438,6 +7497,21 @@
   },
   {
     "file": "es-independencia-financiera.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-indicador-clave-de-desempeno.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {

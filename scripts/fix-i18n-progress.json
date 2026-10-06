@@ -296,7 +296,7 @@
     "ultimaSeveridade": 0
   },
   "en-ibovespa.md": {
-    "tentativas": 1,
+    "tentativas": 2,
     "ultimaSeveridade": 1
   },
   "en-imposto-de-renda.md": {
@@ -471,6 +471,10 @@
     "tentativas": 1,
     "ultimaSeveridade": 0
   },
+  "en-quotes-week-1-october-2026.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
   "en-quotes-week-1-september-2026.md": {
     "tentativas": 1,
     "ultimaSeveridade": 0
@@ -496,7 +500,7 @@
     "ultimaSeveridade": 0
   },
   "en-real-interest-rate.md": {
-    "tentativas": 1,
+    "tentativas": 2,
     "ultimaSeveridade": 1
   },
   "en-reduce-fixed-expenses.md": {
@@ -808,6 +812,10 @@
     "ultimaSeveridade": 0
   },
   "es-cotizaciones-semana-1-junio-2026.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 0
+  },
+  "es-cotizaciones-semana-1-octubre-2026.md": {
     "tentativas": 1,
     "ultimaSeveridade": 0
   },

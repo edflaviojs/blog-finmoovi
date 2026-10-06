@@ -1,6 +1,6 @@
 ---
-title: "Weekly Summary: Dollar at R$ 5.22 — Week 1 of october"
-description: "Weekly financial market summary: dollar, euro, Selic and tips for investors. Week 1 of october 2026."
+title: "Weekly Summary: Dollar at title: .04 — Week 1 of October"
+description: "Weekly financial market summary: dollar, euro, central bank rate and tips for investors. Week 1 of October 2026."
 image: "/images/posts/cotacoes-semana-2026-10-05.webp"
 imageAlt: "Brown notebook, calculator, coins, and green branches on white marble."
 category: "cotacoes"
@@ -20,42 +20,40 @@ seo:
 
 | Currency | Rate |
 | --- | --- |
-| Dollar (USD/BRL) | R$ 5.22 |
-| Euro (EUR/BRL) | R$ 5.88 |
+| Dollar (USD/BRL) | $1.04 |
+| Euro (EUR/BRL) | $1.18 |
 
 *Source: AwesomeAPI — rates as of 10/5/2026*
 
-## Resumo da Semana no Mercado Financeiro Brasileiro (28/09/2026 a 05/10/2026)
+## Weekly Financial Market Summary (September 28 to October 5, 2026)
 
-### 1. Dólar e Euro: como se comportaram na semana?
+### 1. Dollar and Euro: how did they behave this week?
 
-Nesta semana o **dólar fechou em R$ 5,22** e o **euro em R$ 5,88**. Não há dados de variação intradiária ou de mudança percentual, então o foco fica em como esses preços se mantêm no cenário de alta de juros internos. O fato de ambas as moedas permanecerem em patamares estáveis indica que o mercado ainda está digerindo a alta taxa [Selic](/en/glossario/en-selic), que encarece o crédito local e atrai investidores em busca de rentabilidade em reais. Para quem tem gastos em [moeda](/en/glossario/en-moeda) estrangeira – viagem, compras online ou investimentos no exterior – a mensagem é de cautela: o custo de conversão continua elevado e, enquanto a taxa de juros permanecer alta, a pressão sobre o real tende a se manter.
+This week the **dollar closed at $1.04** and the **euro at $1.18**. There is no intraday variation or percentage change data, so the focus remains on how these prices hold in the context of rising domestic interest rates. The fact that both currencies remain at stable levels indicates that the market is still digesting the high [central bank base rate](/en/glossario/en-selic), which makes local credit more expensive and attracts investors seeking returns in local currency. For those with expenses in [foreign currency](/en/glossario/en-moeda) — travel, online shopping, or overseas investments — the message is caution: conversion costs remain high, and as long as the interest rate stays high, pressure on the local currency tends to persist.
 
-### 2. Selic e o impacto nos investimentos
+### 2. Central Bank Base Rate and its impact on investments
 
-A taxa básica de juros – **Selic 13,75% ao ano** – continua sendo o principal termômetro da política monetária brasileira. Um nível tão alto tem dois efeitos claros nos nossos investimentos:
+The benchmark interest rate — **central bank base rate at 13.75% per year** — continues to be the main gauge of Brazilian monetary policy. Such a high level has two clear effects on our investments:
 
-1. **Renda fixa atrativa** – Títulos públicos e CDBs que acompanham a Selic oferecem retornos acima da média histórica. Para quem busca segurança, esse é um bom momento de montar ou reforçar a carteira de renda fixa, especialmente em papéis com liquidez diária ou vencimentos curtos, que permitem aproveitar eventuais mudanças na taxa sem ficar preso a prazos longos.
+1. **Attractive fixed income** – Government bonds and CDs that track the central bank base rate offer returns above the historical average. For those seeking security, this is a good time to build or reinforce a fixed-income portfolio, especially in instruments with daily liquidity or short maturities, which allow taking advantage of potential rate changes without being locked into long terms.
 
-2. **Custo de oportunidade para renda variável** – O alto custo do dinheiro faz com que muitas empresas vejam seus custos de financiamento subir, o que pode pressionar os lucros e, consequentemente, as ações. Investidores que preferem o mercado de ações precisam estar atentos ao cenário de juros, escolhendo setores menos dependentes de crédito caro (como utilities ou consumo básico) ou buscando empresas com caixa forte.
+2. **Opportunity cost for variable income** – The high cost of money leads many companies to see their financing costs rise, which can pressure profits and, consequently, stocks. Investors who prefer the stock market need to stay alert to the interest rate environment, choosing sectors less dependent on expensive credit (such as utilities or basic consumption) or seeking companies with strong cash reserves.
 
-### 3. Dica prática para o investidor pessoa física
+### 3. Practical tip for the individual investor
 
-**Use um app de acompanhamento de múltiplas moedas**. Se você tem investimentos em dólares, euros ou outros ativos no exterior, ou ainda planeja fazer compras internacionais, vale a pena centralizar tudo em uma única ferramenta. O **FinMoovi** permite registrar suas posições em diferentes moedas, acompanhar a cotação em tempo real (como o dólar a R$ 5,22 e o euro a R$ 5,88) e ainda gerar alertas quando o preço ultrapassar o limite que você definiu. Assim, você evita surpresas na hora de converter recursos e consegue decidir o melhor momento para comprar ou vender, sempre com base nos seus objetivos e não em reações impulsivas ao mercado.
+**Use a multi-currency tracking app**. If you have investments in dollars, euros, or other foreign assets, or still plan to make international purchases, it’s worth centralizing everything in a single tool. **FinMoovi** allows you to record your positions in different currencies, track exchange rates in real time (like the dollar at $1.04 and the euro at $1.18), and still generate alerts when the price exceeds the limit you set. This way, you avoid surprises when converting funds and can decide the best moment to buy or sell, always based on your goals and not impulsive reactions to the market.
 
-### 4. O que observar na próxima semana?
+### 4. What to watch next week?
 
-- **Decisões de política externa** – Embora não possamos citar números, fique de olho nas reuniões do Federal Reserve, do Banco Central Europeu e do Banco da Inglaterra. Mudanças nas suas taxas podem influenciar o fluxo de capitais e, indiretamente, a cotação do real.
+- **Foreign policy decisions** – Although we cannot cite numbers, keep an eye on the meetings of the Federal Reserve, the European Central Bank, and the Bank of England. Changes in their rates can influence capital flows and, indirectly, the quotation of the local currency.
 
-- **Indicadores de inflação** – O IPCA acumulado em 12 meses está em **4,22%**. Qualquer dado que sinalize aceleração ou desaceleração da inflação pode mudar a percepção dos investidores sobre a necessidade de manter a Selic em patamares elevados.
+- **Inflation indicators** – The consumer price index accumulated over 12 months is at **4.22%**. Any data signaling acceleration or deceleration of inflation can shift investors’ perception of the need to keep the central bank base rate at elevated levels.
 
-- **Dados de atividade econômica doméstica** – Relatórios de produção industrial, vendas no varejo ou confiança do consumidor são úteis para entender se a economia está conseguindo crescer mesmo com juros altos. Um cenário de crescimento robusto pode aliviar a pressão sobre a taxa, enquanto fraqueza pode manter a Selic firme.
+- **Domestic economic activity data** – Reports on industrial production, retail sales, or consumer confidence are useful to understand whether the economy is managing to grow even with high interest rates. A scenario of robust growth could ease pressure on the rate, while weakness could keep the central bank base rate firm.
 
-- **Movimento cambial** – Continue acompanhando o dólar e o euro. Se houver volatilidade inesperada, o FinMoovi pode ser um aliado para reagir rapidamente, ajustando suas posições ou protegendo seu poder de compra.
+- **Currency movements** – Keep tracking the dollar and the euro. If unexpected volatility occurs, FinMoovi can be an ally to react quickly, adjusting your positions or protecting your purchasing power.
 
-Em resumo, a semana foi marcada por um dólar a R$ 5,22 e um euro a R$ 5,88, enquanto a Selic permanece em 13,75% ao ano, sustentando um ambiente de renda fixa atrativa e custos de crédito elevados. Use ferramentas como o FinMoovi para manter o controle das suas finanças em diferentes moedas e fique atento aos indicadores de inflação e às decisões de política monetária externa para se preparar para a próxima semana. Boa leitura e bons investimentos!
-
+In summary, the week was marked by a dollar at $1.04 and a euro at $1.18, while the central bank base rate remains at 13.75% per year, sustaining an environment of attractive fixed income and high credit costs. Use tools like FinMoovi to maintain control of your finances across different currencies and stay alert to inflation indicators and external monetary policy decisions to prepare for next week. Happy reading and happy investing!
 
 ---
 **Ready to track your investments? [Try FinMoovi free for 7 days](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**
-
