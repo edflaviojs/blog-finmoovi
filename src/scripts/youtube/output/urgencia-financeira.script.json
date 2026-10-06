@@ -1,0 +1,173 @@
+{
+  "slug": "urgencia-financeira",
+  "term": "Urgência Financeira",
+  "category": "basico",
+  "keyword": "Financeira",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "*Você já ficou sem dinheiro e precisou pagar a conta do médico na hora?*"
+  },
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "escudo",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você já ficou sem dinheiro e precisou pagar a conta do médico na hora? É o que chamamos de urgência financeira, aquela situação inesperada que pede grana na mesma hora.",
+      "durationSec": 11.5,
+      "shots": [
+        {
+          "anchor": "Você",
+          "visual": {
+            "type": "statement",
+            "text": "Sem grana?"
+          }
+        },
+        {
+          "anchor": "urgência",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escudo"
+          },
+          "sfx": "alert"
+        },
+        {
+          "anchor": "mesma",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "E aí, de repente o carro quebra, a geladeira faz barulho ou o chefe avisa a demissão.",
+      "durationSec": 6.5,
+      "shots": [
+        {
+          "anchor": "carro",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          }
+        },
+        {
+          "anchor": "chefe",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Sem reserva, você acaba usando o cheque especial, que pode virar quase mil reais de dívida em um mês.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "reserva",
+          "visual": {
+            "type": "statement",
+            "text": "Sem reserva"
+          }
+        },
+        {
+          "anchor": "cheque",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei essa conta no FinMoovi e ele mostrou que a dívida subiu para mil e trezentos reais.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "joguei",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "mostra dívida"
+          }
+        },
+        {
+          "anchor": "trezentos",
+          "visual": {
+            "type": "counter",
+            "from": 1000,
+            "to": 1300,
+            "prefix": "R$"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu cenário? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 4.2,
+      "shots": [
+        {
+          "anchor": "cenário",
+          "visual": {
+            "type": "statement",
+            "text": "Seu cenário"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Não tem reserva, a urgência te pega desprevenido. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 5.8,
+      "shots": [
+        {
+          "anchor": "urgência",
+          "visual": {
+            "type": "statement",
+            "text": "Urgência te pega"
+          }
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "icon",
+            "icon": "money"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja seu cenário agora",
+    "target": "app"
+  },
+  "totalDurationSec": 42.2
+}
