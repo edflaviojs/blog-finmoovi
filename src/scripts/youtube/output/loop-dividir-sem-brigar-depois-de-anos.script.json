@@ -1,0 +1,118 @@
+{
+  "slug": "loop-dividir-sem-brigar-depois-de-anos",
+  "formato": "loop16",
+  "term": "Dividir as contas sem brigar",
+  "category": "vida",
+  "keyword": "CASAL",
+  "valor": "R$ 3.200",
+  "situacao": "dividir-sem-brigar",
+  "gancho": "depois-de-anos",
+  "ganchoFamilia": "depois de anos",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "gangorra",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Depois de anos tentando, descobri isso",
+      "durationSec": 2.68,
+      "shots": [
+        {
+          "anchor": "tentando",
+          "visual": {
+            "type": "statement",
+            "text": "Depois de anos tentando"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "descobri",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "gangorra"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Na nossa casa, três mil e duzentos reais somam luz, mercado, escola e aluguel",
+      "durationSec": 6.26,
+      "shots": [
+        {
+          "anchor": "nossa",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "gangorra"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "duzentos",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 3.200"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Agora a gente anota tudo antes de pagar",
+      "durationSec": 3.58,
+      "shots": [
+        {
+          "anchor": "anota",
+          "visual": {
+            "type": "statement",
+            "text": "Anotamos antes de pagar"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "pagar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "gangorra"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Depois de anos tentando, descobri isso",
+      "durationSec": 2.68,
+      "shots": [
+        {
+          "anchor": "tentando",
+          "visual": {
+            "type": "statement",
+            "text": "Depois de anos tentando"
+          }
+        },
+        {
+          "anchor": "descobri",
+          "visual": {
+            "type": "statement",
+            "text": "Depois de anos tentando"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
