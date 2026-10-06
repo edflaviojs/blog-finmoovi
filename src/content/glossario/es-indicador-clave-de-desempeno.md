@@ -4,6 +4,7 @@ definition: "Qué es indicador clave de desempeño y cómo aparece en tu día a 
 title: "indicador clave de desempeño - Glosario Financiero"
 description: "Qué es indicador clave de desempeño y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/key-performance-indicator.webp"
+imageAlt: "Monedas apiladas, gráfico ascendente, alcancía y planta verde sobre fondo azul oscuro."
 category: "basico"
 tags: ["indicador clave de desempeño", "glosario", "finanzas"]
 author: "FinMoovi"

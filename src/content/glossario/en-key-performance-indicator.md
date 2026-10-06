@@ -4,6 +4,7 @@ definition: "What key performance indicator is and how it shows up in your every
 title: "key performance indicator - Financial Glossary"
 description: "What key performance indicator is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/key-performance-indicator.webp"
+imageAlt: "Stacks of gold coins, rising orange chart, and glass jar with plant."
 category: "basico"
 tags: ["key performance indicator", "glossary", "finance"]
 author: "FinMoovi"

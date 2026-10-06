@@ -2,6 +2,7 @@
 title: "Resumo Semanal: Dólar a R$ 5.22 — Semana 1 de outubro"
 description: "Resumo semanal do mercado financeiro: dólar, euro, Selic e dicas para investidores. Semana 1 de outubro 2026."
 image: "/images/posts/cotacoes-semana-2026-10-05.webp"
+imageAlt: "Caderno de couro marrom, calculadora, moedas e plantas verdes sobre superfície de mármore branco."
 category: "cotacoes"
 tags: ["cotações","dólar","euro","mercado financeiro","selic"]
 author: "FinMoovi"

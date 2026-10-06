@@ -4,6 +4,7 @@ definition: "O que é key performance indicator e como isso aparece no seu dia a
 title: "key performance indicator - Glossário Financeiro"
 description: "O que é key performance indicator e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/key-performance-indicator.webp"
+imageAlt: "Pilhas de moedas douradas, gráfico de barras laranja e vaso com planta verde."
 category: "basico"
 tags: ["key performance indicator", "glossário", "finanças"]
 author: "FinMoovi"
