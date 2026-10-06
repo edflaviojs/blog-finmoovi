@@ -115,7 +115,12 @@ jobs:
           # nasceu ontem por o canal ter ficado dois dias sem vídeo, nunca mais
           # disparava, em silêncio. Cada formato pergunta pelo SEU.
           if [ "${{ github.event.schedule }}" = "0 20 * * *" ]; then
-            if [ "$(node src/scripts/youtube/outbox.js saiu-hoje --formato=short50)" = "sim" ]; then
+            # ♦ 06/10/2026 — o DIA é o do cron (20:00 UTC), não o do relógio. Esta ronda
+            # chegou a arrancar à 01:03 UTC do dia SEGUINTE (atraso de 5h): perguntou por
+            # um dia que ainda não tinha vídeo e publicou um a mais. Recuar 6h devolve o
+            # dia certo para atrasos até às 06:00 UTC.
+            DIA="$(date -u -d '-6 hours' +%F)"
+            if [ "$(node src/scripts/youtube/outbox.js saiu-hoje --formato=short50 --dia="$DIA")" = "sim" ]; then
               echo "✅ o vídeo de hoje já foi entregue na ronda das 12h — a repescagem não faz nada."
               echo "skip=true" >> "$GITHUB_OUTPUT"
               exit 0
