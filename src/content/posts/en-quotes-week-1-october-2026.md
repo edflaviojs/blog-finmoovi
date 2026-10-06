@@ -35,9 +35,9 @@ This week the **dollar closed at $1.04** and the **euro at $1.18**. There is no 
 
 The benchmark interest rate — **central bank base rate at 13.75% per year** — continues to be the main gauge of Brazilian monetary policy. Such a high level has two clear effects on our investments:
 
-1. **Attractive fixed income** – Government bonds and CDs that track the central bank base rate offer returns above the historical average. For those seeking security, this is a good time to build or reinforce a fixed-income portfolio, especially in instruments with daily liquidity or short maturities, which allow taking advantage of potential rate changes without being locked into long terms.
+1. **Attractive [fixed income](/en/glossario/en-fixed-income)** – Government bonds and CDs that track the central bank base rate offer returns above the historical average. For those seeking security, this is a good time to build or reinforce a fixed-income portfolio, especially in instruments with daily [liquidity](/en/glossario/en-liquidity) or short maturities, which allow taking advantage of potential rate changes without being locked into long terms.
 
-2. **Opportunity cost for variable income** – The high cost of money leads many companies to see their financing costs rise, which can pressure profits and, consequently, stocks. Investors who prefer the stock market need to stay alert to the interest rate environment, choosing sectors less dependent on expensive credit (such as utilities or basic consumption) or seeking companies with strong cash reserves.
+2. **Opportunity cost for [variable income](/en/glossario/en-variable-income)** – The high cost of money leads many companies to see their [financing](/en/glossario/en-financing) costs rise, which can pressure profits and, consequently, stocks. Investors who prefer the stock market need to stay alert to the interest rate environment, choosing sectors less dependent on expensive credit (such as utilities or basic consumption) or seeking companies with strong cash reserves.
 
 ### 3. Practical tip for the individual investor
 
@@ -47,11 +47,11 @@ The benchmark interest rate — **central bank base rate at 13.75% per year** �
 
 - **Foreign policy decisions** – Although we cannot cite numbers, keep an eye on the meetings of the Federal Reserve, the European Central Bank, and the Bank of England. Changes in their rates can influence capital flows and, indirectly, the quotation of the local currency.
 
-- **Inflation indicators** – The consumer price index accumulated over 12 months is at **4.22%**. Any data signaling acceleration or deceleration of inflation can shift investors’ perception of the need to keep the central bank base rate at elevated levels.
+- **[Inflation](/en/glossario/en-inflation) indicators** – The consumer price index accumulated over 12 months is at **4.22%**. Any data signaling acceleration or deceleration of inflation can shift investors’ perception of the need to keep the central bank base rate at elevated levels.
 
 - **Domestic economic activity data** – Reports on industrial production, retail sales, or consumer confidence are useful to understand whether the economy is managing to grow even with high interest rates. A scenario of robust growth could ease pressure on the rate, while weakness could keep the central bank base rate firm.
 
-- **Currency movements** – Keep tracking the dollar and the euro. If unexpected volatility occurs, FinMoovi can be an ally to react quickly, adjusting your positions or protecting your purchasing power.
+- **Currency movements** – Keep tracking the dollar and the euro. If unexpected [volatility](/en/glossario/en-volatility) occurs, FinMoovi can be an ally to react quickly, adjusting your positions or protecting your purchasing power.
 
 In summary, the week was marked by a dollar at $1.04 and a euro at $1.18, while the central bank base rate remains at 13.75% per year, sustaining an environment of attractive fixed income and high credit costs. Use tools like FinMoovi to maintain control of your finances across different currencies and stay alert to inflation indicators and external monetary policy decisions to prepare for next week. Happy reading and happy investing!
 
