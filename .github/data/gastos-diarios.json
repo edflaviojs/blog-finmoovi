@@ -587,78 +587,99 @@
       "manus|imagem": 145,
       "cerebras|texto": 0,
       "kie.ai|visao": 0
+    },
+    "2026-10-06": {
+      "groq|texto": 135673,
+      "together|voz": 929,
+      "Cloudflare Workers AI|visao": 25,
+      "nvidia|texto": 101383,
+      "Cloudflare Workers AI|imagem": 11,
+      "Together.ai|imagem": 4,
+      "Groq|visao": 5684,
+      "cerebras|texto": 0,
+      "kie.ai|visao": 0
     }
   },
   "relatorio": {
-    "dia": "2026-10-05",
+    "dia": "2026-10-06",
     "horas": 24,
-    "geradoEm": "2026-10-05T12:12:45.796Z",
+    "geradoEm": "2026-10-06T11:58:16.731Z",
     "linhas": [
       {
         "fornecedor": "groq",
         "tipo": "texto",
-        "chamadas": 74,
-        "recusas": 31,
-        "quanto": 191340,
+        "chamadas": 91,
+        "recusas": 11,
+        "quanto": 135673,
         "unidade": "fichas",
         "custo": null,
-        "salto": 3.5410007693344863
-      },
-      {
-        "fornecedor": "nvidia",
-        "tipo": "texto",
-        "chamadas": 35,
-        "recusas": 0,
-        "quanto": 250813,
-        "unidade": "fichas",
-        "custo": null,
-        "salto": 12.361287715251697
-      },
-      {
-        "fornecedor": "Cloudflare Workers AI",
-        "tipo": "visao",
-        "chamadas": 18,
-        "recusas": 0,
-        "quanto": 18,
-        "unidade": "unidades",
-        "custo": null,
-        "salto": 0.7590361445783133
+        "salto": 1.9286409097832158
       },
       {
         "fornecedor": "together",
         "tipo": "voz",
-        "chamadas": 14,
+        "chamadas": 28,
         "recusas": 0,
-        "quanto": 482,
+        "quanto": 929,
         "unidade": "unidades",
         "custo": null,
-        "salto": 0.5532961626762873
+        "salto": 1.0497175141242938
+      },
+      {
+        "fornecedor": "Cloudflare Workers AI",
+        "tipo": "visao",
+        "chamadas": 25,
+        "recusas": 0,
+        "quanto": 25,
+        "unidade": "unidades",
+        "custo": null,
+        "salto": 1.1217948717948718
+      },
+      {
+        "fornecedor": "nvidia",
+        "tipo": "texto",
+        "chamadas": 19,
+        "recusas": 0,
+        "quanto": 101383,
+        "unidade": "fichas",
+        "custo": null,
+        "salto": 1.786560136463921
       },
       {
         "fornecedor": "Cloudflare Workers AI",
         "tipo": "imagem",
-        "chamadas": 12,
-        "recusas": 0,
-        "quanto": 12,
+        "chamadas": 11,
+        "recusas": 3,
+        "quanto": 11,
         "unidade": "unidades",
         "custo": null,
-        "salto": 0.9032258064516129
+        "salto": 0.8651685393258427
       },
       {
-        "fornecedor": "manus",
+        "fornecedor": "Together.ai",
         "tipo": "imagem",
-        "chamadas": 1,
+        "chamadas": 4,
         "recusas": 0,
-        "quanto": 145,
+        "quanto": 4,
         "unidade": "unidades",
         "custo": null,
-        "salto": null
+        "salto": 1.7777777777777777
+      },
+      {
+        "fornecedor": "Groq",
+        "tipo": "visao",
+        "chamadas": 3,
+        "recusas": 0,
+        "quanto": 5684,
+        "unidade": "fichas",
+        "custo": null,
+        "salto": 0.6386875667172313
       },
       {
         "fornecedor": "cerebras",
         "tipo": "texto",
         "chamadas": 0,
-        "recusas": 17,
+        "recusas": 29,
         "quanto": 0,
         "unidade": "unidades",
         "custo": null,
@@ -668,24 +689,22 @@
         "fornecedor": "kie.ai",
         "tipo": "visao",
         "chamadas": 0,
-        "recusas": 2,
+        "recusas": 4,
         "quanto": 0,
         "unidade": "unidades",
         "custo": null,
         "salto": null
       }
     ],
-    "alarmes": [
-      "groq",
-      "nvidia"
-    ],
+    "alarmes": [],
     "custoTotal": 0,
     "semPreco": [
       "groq",
-      "nvidia",
-      "Cloudflare Workers AI",
       "together",
-      "manus",
+      "Cloudflare Workers AI",
+      "nvidia",
+      "Together.ai",
+      "Groq",
       "cerebras",
       "kie.ai"
     ],
@@ -696,5 +715,5 @@
     },
     "saldoMotivo": null
   },
-  "atualizadoEm": "2026-10-05T12:12:45.796Z"
+  "atualizadoEm": "2026-10-06T11:58:16.731Z"
 }
