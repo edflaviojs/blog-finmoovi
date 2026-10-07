@@ -1,0 +1,118 @@
+{
+  "slug": "loop-cheque-especial-voces-viram",
+  "formato": "loop16",
+  "term": "O cheque especial",
+  "category": "vida",
+  "keyword": "ESPECIAL",
+  "valor": "R$ 210",
+  "situacao": "cheque-especial",
+  "gancho": "voces-viram",
+  "ganchoFamilia": "vocês viram",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "areia-movedica",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Gente, vocês viram que o cheque especial apareceu conta?",
+      "durationSec": 3.11,
+      "shots": [
+        {
+          "anchor": "vocês",
+          "visual": {
+            "type": "statement",
+            "text": "Cheque especial apareceu"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "viram",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "areia-movedica"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Quando olhei o extrato, duzentos e dez reais sumiram num piscar, sem eu perceber.",
+      "durationSec": 4.84,
+      "shots": [
+        {
+          "anchor": "olhei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "areia-movedica"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "extrato",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 210 sumiu"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então percebi que precisava fechar tudo antes do fim agora.",
+      "durationSec": 3.45,
+      "shots": [
+        {
+          "anchor": "percebi",
+          "visual": {
+            "type": "statement",
+            "text": "Preciso fechar tudo"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "precisava",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "areia-movedica"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Eu cuido, Gente, para o cheque especial não voltar nunca mais.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "cuido",
+          "visual": {
+            "type": "statement",
+            "text": "Cheque especial não volta"
+          }
+        },
+        {
+          "anchor": "cheque",
+          "visual": {
+            "type": "statement",
+            "text": "Cheque especial apareceu"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
