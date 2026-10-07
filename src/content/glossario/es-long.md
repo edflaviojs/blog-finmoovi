@@ -4,6 +4,7 @@ definition: "Qué es long y cómo aparece en tu día a día — explicado de for
 title: "long - Glosario Financiero"
 description: "Qué es long y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/long.webp"
+imageAlt: "Monedas doradas, barras naranjas y frascos de vidrio con planta sobre fondo degradado."
 category: "basico"
 tags: ["long", "glosario", "finanzas"]
 author: "FinMoovi"

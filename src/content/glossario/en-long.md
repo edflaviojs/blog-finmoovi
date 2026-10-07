@@ -4,6 +4,7 @@ definition: "What long is and how it shows up in your everyday money — explain
 title: "long - Financial Glossary"
 description: "What long is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/long.webp"
+imageAlt: "Gold coins, orange bars, and a growing plant in jars on a pedestal."
 category: "basico"
 tags: ["long", "glossary", "finance"]
 author: "FinMoovi"
