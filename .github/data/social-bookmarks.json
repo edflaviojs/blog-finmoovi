@@ -2498,5 +2498,45 @@
         "status": 200
       }
     }
+  },
+  {
+    "slug": "cansado-de-perder-horas-nas-planilhas-como-o-finmoovi",
+    "title": "Cansado de perder horas nas planilhas? Como o FinMoovi simplifica tudo em 2026",
+    "url": "https://blog.finmoovi.com/posts/cansado-de-perder-horas-nas-planilhas-como-o-finmoovi",
+    "submittedAt": "2026-10-07T20:19:38.988Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1880179578
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "como-identificar-e-cortar-gastos-recorrentes-que-drenam-seu",
+    "title": "Como identificar e cortar gastos recorrentes que drenam seu orçamento em 2026",
+    "url": "https://blog.finmoovi.com/posts/como-identificar-e-cortar-gastos-recorrentes-que-drenam-seu",
+    "submittedAt": "2026-10-07T20:19:39.739Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1880179582
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
   }
 ]
