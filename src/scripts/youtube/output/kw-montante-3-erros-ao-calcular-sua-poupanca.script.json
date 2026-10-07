@@ -1,0 +1,205 @@
+{
+  "slug": "kw-montante-3-erros-ao-calcular-sua-poupanca",
+  "term": "Montante: 3 erros ao calcular sua poupança",
+  "category": "mindset",
+  "keyword": "Montante",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você acha que *guardando mil reais* por cinco anos a gente chega a um bom montante?"
+  },
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "balanca",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você acha que guardando mil reais por cinco anos a gente chega a um bom montante? Na verdade, a maioria erra três vezes na conta e acaba com muito menos.",
+      "durationSec": 11.5,
+      "shots": [
+        {
+          "anchor": "acha",
+          "visual": {
+            "type": "statement",
+            "text": "A maioria erra"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "gente",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          }
+        },
+        {
+          "anchor": "erra",
+          "visual": {
+            "type": "statement",
+            "text": "Acaba com menos"
+          },
+          "sfx": "coin"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Você põe mil reais, esquece de somar o que vai ganhar no ano, ignora a inflação e conta só o que guardou.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "statement",
+            "text": "Esquece de somar"
+          },
+          "sfx": "typewriter"
+        },
+        {
+          "anchor": "ganhar",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          }
+        },
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "statement",
+            "text": "Só o que guardou"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Depois de cinco anos, o que parecia mil reais vira quase quatro mil reais.",
+      "durationSec": 5.4,
+      "shots": [
+        {
+          "anchor": "cinco",
+          "visual": {
+            "type": "statement",
+            "text": "Cinco anos depois"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "number",
+            "text": "R$ 4.000"
+          }
+        },
+        {
+          "anchor": "quatro",
+          "visual": {
+            "type": "icon",
+            "icon": "growth"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei na calculadora do FinMoovi e ele mostrou que o total ficou em três mil e novecentos reais.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "calculadora",
+          "visual": {
+            "type": "app",
+            "app": "calculadora",
+            "note": "Tela da calculadora FinMoovi"
+          },
+          "sfx": "click"
+        },
+        {
+          "anchor": "total",
+          "visual": {
+            "type": "statement",
+            "text": "Mostrou o total"
+          }
+        },
+        {
+          "anchor": "novecentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 3.900"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu número? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 4.2,
+      "shots": [
+        {
+          "anchor": "Procura",
+          "visual": {
+            "type": "statement",
+            "text": "Quer ver seu número?"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "A conta certa mostra que mil reais guardados por cinco anos não chegam ao que você pensa. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 9.2,
+      "shots": [
+        {
+          "anchor": "mostra",
+          "visual": {
+            "type": "statement",
+            "text": "A conta certa"
+          },
+          "sfx": "alert"
+        },
+        {
+          "anchor": "você",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro sem controle"
+          }
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "icon",
+            "icon": "shield"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Calcule seu futuro agora",
+    "target": "app"
+  },
+  "totalDurationSec": 46.1
+}
