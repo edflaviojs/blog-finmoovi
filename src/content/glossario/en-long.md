@@ -18,77 +18,77 @@ seo:
   keywords: ["long", "glossary", "finance"]
 ---
 
-## O que significa “long” no seu bolso
+## What does “long” mean for your wallet
 
-Você já ficou olhando a fatura do cartão e se perguntando se deveria manter aquele investimento por mais tempo ou vender agora? Essa dúvida nasce do conceito de **long**, que, em finanças, indica que você está mantendo um ativo por um período prolongado, esperando que ele valorize. Não é só para investidores profissionais; todo mundo que tem dinheiro guardado, seja numa conta poupança, num fundo ou até numa criptomoeda, pode estar “long” em algo. Quando você está “long”, aposta que o preço vai subir, ao contrário de “short”, que seria apostar na queda.
+Have you ever stared at your credit card bill and wondered whether you should hold onto that investment a bit longer or sell it now? This question comes from the concept of **long**, which in finance means you’re holding an asset for an extended period, expecting it to increase in value. It’s not just for professional investors; anyone with money saved — whether in a savings account, a fund, or even cryptocurrency — can be “long” on something. When you’re “long,” you’re betting the price will go up, unlike “short,” which means betting on a decline.
 
-![O que significa “long” no seu bolso](/images/glossario/long-inline-1.webp)
-
-
-
-## Por que o “long” pode ser confuso
-
-Muitos confundem “long” com “comprar e guardar”. Na prática, ser “long” envolve mais estratégia: escolher o prazo certo, entender a volatilidade (variações de preço) e saber quando o retorno compensa o risco. Se você compra uma ação e a deixa por cinco anos, está “long” por esse período. Mas se a ação despenca nos primeiros meses, você pode sentir que fez a escolha errada, mesmo que, a longo prazo, ela recupere e supere o preço de compra.
-
-## Como o FinMoovi ajuda a gerenciar seu “long”
-
-Imagine que você acabou de comprar um fundo de investimento que acompanha o dólar. Você tira a foto do comprovante com o app FinMoovi, e ele reconhece automaticamente o valor, a data e a moeda. Em poucos segundos, o investimento aparece na sua carteira como “long” em dólar, já categorizado como “investimento internacional”. O app ainda mostra:
-
-![Como o FinMoovi ajuda a gerenciar seu “long”](/images/glossario/long-inline-3.webp)
+![What “long” means for your wallet](/images/glossario/long-inline-1.webp)
 
 
 
-- **Conversão automática** para a sua moeda local, usando a cotação do dia, assim você vê o real impacto no seu orçamento.
-- **Relatórios de cash flow** que mostram quanto desse “long” está gerando de renda (dividendos, juros) versus quanto está apenas “preso” esperando valorização.
-- **Alertas de saldo** que avisam se o valor cair 10% abaixo da sua meta, ajudando a decidir se mantém ou vende.
+## Why “long” can be confusing
 
-Essas funções tiram a adivinhação do processo e deixam você no controle do seu “long” sem precisar abrir planilhas complicadas.
+Many people mix up “long” with simply “buy and hold.” In reality, being “long” involves more strategy: choosing the right time frame, understanding volatility (price swings), and knowing when the return justifies the risk. If you buy a stock and leave it for five years, you’re “long” for that period. But if the stock drops sharply in the first few months, you might feel you made the wrong call — even if, over the long term, it recovers and surpasses your purchase price.
 
-## Quando fazer um “long” faz sentido
+## How FinMoovi helps you manage your “long”
 
-- **Objetivos de longo prazo**: comprar a casa própria, financiar a educação dos filhos ou garantir uma aposentadoria confortável. Nesses casos, ativos como fundos de índice (que replicam o desempenho de um conjunto de ações) costumam ser mantidos “long” por 10 a 20 anos.
-- **Proteção contra inflação**: ativos que historicamente superam a inflação, como imóveis ou títulos atrelados a índices de preços, são bons candidatos a “long”.
-- **Renda passiva**: ações que pagam dividendos ou fundos imobiliários que distribuem aluguéis mensais. Mesmo que o preço oscile, o fluxo de caixa constante justifica o “long”.
+Imagine you just bought an investment fund that tracks the U.S. dollar. You snap a photo of the receipt with the FinMoovi app, and it automatically recognizes the amount, date, and currency. In seconds, the investment appears in your wallet as “long” in U.S. dollars, already categorized as an “international investment.” The app also shows:
 
-## Quando repensar o “long”
+![How FinMoovi helps you manage your “long”](/images/glossario/long-inline-3.webp)
 
-- **Mudança de objetivo**: se você decide que vai viajar ao redor do mundo em três anos, talvez precise liquidar parte dos investimentos “long” para ter liquidez.
-- **Aumento de risco**: se o ativo que você está “long” começa a apresentar alta volatilidade (por exemplo, criptomoedas), pode ser hora de reavaliar.
-- **Desempenho abaixo da meta**: se, após cinco anos, o investimento ainda não bateu a meta de retorno, vale analisar se há opções melhores.
 
-## 3 dicas práticas para quem está “long”
 
-**Practical tip:** Defina uma meta de retorno clara (ex.: 8% ao ano) e use o FinMoovi para acompanhar se o seu “long” está no caminho certo. O app gera gráficos mensais que mostram a diferença entre o retorno real e a meta.
+- **Automatic conversion** to your local currency using the day’s exchange rate, so you see the real impact on your budget.
+- **Monthly cash flow reports** that show how much of this “long” is generating income (dividends, interest) versus how much is just “tied up” waiting to appreciate.
+- **Balance alerts** that notify you if the value drops 10% below your target, helping you decide whether to hold or sell.
 
-**Practical tip:** Diversifique. Não coloque todo o dinheiro em um único “long”. Distribua entre ações, fundos, títulos e, se quiser, um pouquinho em cripto. O FinMoovi permite que você veja a porcentagem de cada categoria em tempo real.
+These features remove the guesswork and put you in control of your “long” without needing complicated spreadsheets.
 
-**Practical tip:** Revise anualmente. Reserve um dia, abra o relatório de cash flow do FinMoovi e veja se algum “long” está estagnado. Se estiver, considere realocar para um ativo com melhor perspectiva.
+## When does taking a “long” position make sense?
 
-## Como o “long” se encaixa no seu planejamento mensal
+- **Long-term goals**: buying a home, funding your children’s education, or securing a comfortable retirement. In these cases, assets like index funds (which track a basket of stocks) are often held “long” for 10 to 20 years.
+- **Inflation protection**: assets that historically outpace inflation, such as real estate or inflation-linked securities, are strong candidates for a “long” position.
+- **Passive income**: dividend-paying stocks or real estate funds that distribute monthly rent. Even if the price fluctuates, the steady cash flow justifies the “long” stance.
 
-Ao planejar o orçamento, a maioria das pessoas foca em despesas fixas (aluguel, contas) e variáveis (alimentação, lazer). O “long” costuma ficar de fora, mas ele consome parte do seu dinheiro disponível. No FinMoovi, você pode criar um objetivo mensal de aporte para o seu “long”. Por exemplo, se a sua renda líquida cobre cerca de três meses de aluguel, reserve 10% desse valor todo mês para investir em um fundo “long”. O app mostra:
+## When to reconsider your “long”
 
-- **Lista de compras**: ao fazer compras, o modo shopping permite que você adicione itens e veja o total em tempo real, ajudando a não ultrapassar o limite de gasto e ainda reservar o que sobrou para o investimento.
-- **Lembretes de aporte**: notificações que lembram de transferir o valor definido para a conta de investimento.
-- **Sincronização offline**: se estiver em viagem sem internet, ainda pode registrar a foto do recibo; o app sincroniza tudo quando você se reconecta.
+- **Change in goals**: if you decide you want to travel around the world in three years, you may need to liquidate part of your “long” investments to free up cash.
+- **Increased risk**: if the asset you’re “long” starts showing high volatility (for example, cryptocurrencies), it might be time to reassess.
+- **Underperformance vs. goal**: if, after five years, the investment still hasn’t met your return target, it’s worth evaluating whether better options exist.
 
-## Multi-moeda: o “long” sem fronteiras
+## 3 practical tips for anyone who’s “long”
 
-Se você tem um “long” em dólares, euros ou até em moedas digitais, o FinMoovi converte tudo para a sua moeda base, mas mantém a visualização original. Assim, você vê que seu fundo em euros está “long” e acompanha a variação cambial. Isso evita surpresas quando a taxa de câmbio muda e ajuda a decidir se vale a pena manter o investimento ou trocar por outra moeda.
+**Practical tip:** Set a clear return goal (e.g., 8% per year) and use FinMoovi to track whether your “long” is on track. The app generates monthly charts showing the gap between actual return and your goal.
 
-## Ferramentas de relatório que simplificam o “long”
+**Practical tip:** Diversify. Don’t put all your money into a single “long.” Spread it across stocks, funds, bonds, and, if you like, a small amount in crypto. FinMoovi lets you see the percentage of each category in real time.
 
-- **Cash flow mensal**: mostra entradas (rendimentos) e saídas (taxas, impostos) relacionadas ao seu “long”.
-- **Comparativo de performance**: coloca seu “long” lado a lado com benchmarks (índices de mercado) para ver se está superando ou ficando atrás.
-- **Projeção de metas**: calcula quanto tempo levará para alcançar o objetivo de retorno, considerando aportes futuros.
+**Practical tip:** Review annually. Set aside a day, open your FinMoovi cash flow report, and check if any “long” position has stalled. If so, consider reallocating to an asset with better prospects.
 
-## Estratégias avançadas para quem quer ir além
+## How “long” fits into your monthly budget
 
-Mesmo sendo um texto para quem está começando, vale mencionar duas táticas que podem melhorar o resultado do seu “long”:
+When planning your budget, most people focus on fixed expenses (rent, bills) and variable ones (food, entertainment). “Long” often gets overlooked, but it uses part of your available money. In FinMoovi, you can set a monthly contribution goal for your “long.” For example, if your net income covers about three months of rent, you might allocate 10% of that each month to invest in a “long” fund. The app shows:
 
-1. **Dollar-cost averaging (DCA)** – aporte fixo periódico, independentemente do preço. Assim, você compra mais quando o preço está baixo e menos quando está alto, suavizando a volatilidade.
-2. **Rebalanceamento** – a cada 12 meses, ajuste a proporção dos seus “longs” para manter a alocação desejada (ex.: 60% ações, 30% títulos, 10% cripto). O FinMoovi pode sugerir o rebalanceamento com base nos relatórios.
+- **Shopping list**: when you shop, the shopping mode lets you add items and see the total in real time, helping you stay within spending limits and still set aside what’s left for investing.
+- **Contribution reminders**: notifications that prompt you to transfer the set amount to your investment account.
+- **Offline sync**: if you’re traveling without internet, you can still snap a photo of the receipt; the app syncs everything once you’re back online.
+
+## Multi-currency: “long” without borders
+
+If you hold a “long” in U.S. dollars, euros, or even digital currencies, FinMoovi converts everything to your base currency for reporting, but keeps the original view. So you see that your euro-denominated fund is “long” and track its exchange rate movement. This avoids surprises when exchange rates shift and helps you decide whether to hold the investment or switch to another currency.
+
+## Reporting tools that simplify “long”
+
+- **Monthly cash flow**: shows inflows (earnings) and outflows (fees, taxes) tied to your “long.”
+- **Performance comparison**: places your “long” side by side with benchmarks (market indexes) to see if you’re outperforming or lagging.
+- **Goal projection**: calculates how long it will take to reach your return goal, factoring in future contributions.
+
+## Advanced strategies for those who want to go further
+
+Even though this guide is for beginners, two tactics can improve your “long” results:
+
+1. **Dollar-cost averaging (DCA)** – making fixed, regular contributions regardless of price. This way, you buy more when prices are low and less when they’re high, smoothing out volatility.
+2. **Rebalancing** – once a year, adjust the mix of your “long” holdings to maintain your target allocation (e.g., 60% stocks, 30% bonds, 10% crypto). FinMoovi can suggest rebalancing based on your reports.
 
 ## Start today
 
-**Micro‑action (5 minutos):** Abra o FinMoovi, vá em “Adicionar investimento”, tire a foto do último comprovante de compra de um fundo ou ação, confirme a categoria “long” e defina um aporte mensal de 10% da sua renda. Pronto, seu “long” já está registrado, categorizado e pronto para gerar relatórios.
+**Micro-action (5 minutes):** Open FinMoovi, go to “Add Investment,” snap a photo of your latest receipt for a fund or stock purchase, confirm the category as “long,” and set a monthly contribution of 10% of your income. Done — your “long” is now recorded, categorized, and ready to generate reports.
