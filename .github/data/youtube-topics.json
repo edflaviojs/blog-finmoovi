@@ -687,6 +687,36 @@
       "glossaryRef": "financeiro",
       "status": "pending",
       "sourceKeyword": "o que e financeiro"
+    },
+    {
+      "id": "kw-5-erros-que-te-fazem-achar-que-financas-sao-complicadas",
+      "theme": "5 erros que te fazem achar que finanças são complicadas",
+      "angle": "Mostra situações do dia a dia (como pagar R$1200 de aluguel, R$200 de celular, R$150 de streaming) e aponta 5 crenças equivocadas que fazem a gente pensar que finanças são um bicho de sete cabeças, revelando como simplificar tudo em segundos",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "financas",
+      "status": "pending",
+      "sourceKeyword": "o que e finanças"
+    },
+    {
+      "id": "kw-por-que-sua-empresa-paga-menos-ir-com-jcp",
+      "theme": "Por que sua empresa paga menos IR com JCP?",
+      "angle": "Mostrar, em 45 s, como uma empresa reduz o imposto usando JCP, comparando o pagamento de dividendos (R$10.000) com JCP (R$10.000 × 8% = R$800 de dedução) e o impacto no caixa, usando números reais para deixar claro o benefício prático.",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "juros-sobre-capital-proprio",
+      "status": "pending",
+      "sourceKeyword": "o que e juros sobre capital proprio"
+    },
+    {
+      "id": "kw-montante-3-erros-ao-calcular-sua-poupanca",
+      "theme": "Montante: 3 erros ao calcular sua poupança",
+      "angle": "Mostra rapidamente 3 falhas comuns ao estimar o total que você vai acumular, usando exemplos como R$1.000 investidos a 8% ao ano por 5 anos versus 10% ao ano, e revela como corrigir cada erro em poucos segundos",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "montante",
+      "status": "pending",
+      "sourceKeyword": "o que e montante"
     }
   ]
 }
