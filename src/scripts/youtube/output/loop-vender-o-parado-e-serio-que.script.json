@@ -1,0 +1,118 @@
+{
+  "slug": "loop-vender-o-parado-e-serio-que",
+  "formato": "loop16",
+  "term": "Vender o que está parado",
+  "category": "vida",
+  "keyword": "VENDER",
+  "valor": "R$ 700",
+  "situacao": "vender-o-parado",
+  "gancho": "e-serio-que",
+  "ganchoFamilia": "é sério que",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "semente",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "É sério que ninguém está falando de garagem cheia?",
+      "durationSec": 3.26,
+      "shots": [
+        {
+          "anchor": "sério",
+          "visual": {
+            "type": "statement",
+            "text": "Fala de garagem cheia?"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "ninguém",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "semente"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu vendi umas tralhas e arrecadei setecentos reais em um dia mesmo.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "vendi",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "semente"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "tralhas",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 700 na conta"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "A gente percebeu que aquilo que ocupa espaço vira dinheiro.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "percebeu",
+          "visual": {
+            "type": "statement",
+            "text": "Espaço vira dinheiro"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "aquilo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "semente"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Então, garagem cheia pode virar grana, né, pra vocês também aqui?",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "garagem",
+          "visual": {
+            "type": "statement",
+            "text": "Garagem cheia vira grana"
+          }
+        },
+        {
+          "anchor": "cheia",
+          "visual": {
+            "type": "statement",
+            "text": "Fala de garagem cheia?"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
