@@ -172,7 +172,7 @@
         "figura": "ralo"
       },
       {
-        "cena": "17",
+        "cena": "18",
         "figura": "semaforo"
       },
       {
@@ -184,16 +184,8 @@
         "figura": "areia-movedica"
       },
       {
-        "cena": "29",
-        "figura": "balde-furado"
-      },
-      {
         "cena": "33",
         "figura": "bola-neve"
-      },
-      {
-        "cena": "49",
-        "figura": "boia"
       },
       {
         "cena": "63",

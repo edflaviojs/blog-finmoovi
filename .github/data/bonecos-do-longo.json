@@ -1,0 +1,39 @@
+{
+  "_leia_isto": "Qual boneco (lib/bonecos-do-longo.js) entra em qual cena de cada vídeo longo. Escrito pelo leitor bonecos-longo.js ou à mão; o montador só lê.",
+  "videos": {
+    "economizar-300-por-mes": [
+      {
+        "cena": "8",
+        "boneco": "ombros"
+      },
+      {
+        "cena": "16",
+        "boneco": "puxar-cabelo"
+      },
+      {
+        "cena": "28",
+        "boneco": "bracos-cruzados"
+      },
+      {
+        "cena": "30",
+        "boneco": "facepalm"
+      },
+      {
+        "cena": "36",
+        "boneco": "bocejar"
+      },
+      {
+        "cena": "44",
+        "boneco": "levantar"
+      },
+      {
+        "cena": "50",
+        "boneco": "super-heroi"
+      },
+      {
+        "cena": "61",
+        "boneco": "suspiro-alivio"
+      }
+    ]
+  }
+}
