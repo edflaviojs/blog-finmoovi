@@ -1412,6 +1412,13 @@ export function dirigirImagens(cenas, mapa = {}, slug = null) {
  * na demonstração do app, que tem a sua própria tela.
  */
 export const RAZAO_DO_AVISO_NO_CAPITULO = 0.6;
+/** "por que eu não conseguia…" → "Por que eu não conseguia…!" — maiúscula e pontuação (pedido do dono). */
+export function fraseDoAviso(texto) {
+  const t = String(texto || '').trim().replace(/\s+/g, ' ');
+  if (!t) return t;
+  const comMaiuscula = t.charAt(0).toLocaleUpperCase('pt-BR') + t.slice(1);
+  return /[.!?…]$/.test(comMaiuscula) ? comMaiuscula : `${comMaiuscula}!`;
+}
 export function avisosDoMeio(cenas, mapa = {}) {
   const saida = cenas.map((c) => ({ ...c, pausaDepois: null }));
   const caps = mapa.capitulos || [];
@@ -1423,7 +1430,10 @@ export function avisosDoMeio(cenas, mapa = {}) {
       .filter(({ c }) => Number(c.capitulo) === i + 1 && c.parte === 'desenvolvimento');
     if (doCapitulo.length < 3) return;
     const alvo = doCapitulo[Math.min(doCapitulo.length - 2, Math.floor(doCapitulo.length * RAZAO_DO_AVISO_NO_CAPITULO))];
-    saida[alvo.j].pausaDepois = { texto, etiquetaTexto: 'daqui a pouco', variante: 'gancho', frames: framesDaPausa(texto) };
+    // 🔴 O DESENHO DO DONO (08/10/2026): etiqueta de ALERTA "DAQUI A POUCO VOU TE CONTAR:" e a
+    // frase por baixo a começar em maiúscula e a acabar com pontuação (`fraseDoAviso`).
+    const frase = fraseDoAviso(texto);
+    saida[alvo.j].pausaDepois = { texto: frase, etiquetaTexto: 'Daqui a pouco vou te contar:', variante: 'aviso', frames: framesDaPausa(`daqui a pouco vou te contar ${frase}`) };
   });
   return saida;
 }

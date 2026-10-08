@@ -96,6 +96,13 @@
     ]
   },
   "economizar-300-por-mes": {
+    "estado": "reservado",
+    "publishAt": "2026-10-11T22:00:00.000Z",
+    "reservadoEm": "2026-10-08T11:05:14.532Z",
+    "corrida": null,
+    "refeito": "08/10 — versão 2 (a versão 1 está em economizar-300-por-mes__versao-1)"
+  },
+  "economizar-300-por-mes__versao-1": {
     "videoId": "CaVE9iO-om8",
     "uploadedAt": "2026-10-08T09:53:39.648Z",
     "publishAt": "2026-10-11T22:00:00.000Z",
@@ -105,6 +112,7 @@
       "pt",
       "en",
       "es"
-    ]
+    ],
+    "nota": "versão 1 — fica até o dono escolher entre esta e a versão 2 (08/10)"
   }
 }

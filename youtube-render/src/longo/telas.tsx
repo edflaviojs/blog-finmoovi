@@ -520,7 +520,10 @@ export const CartaoDeFrase: React.FC<{ texto: string; etiquetaTexto?: string; va
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const entra = spring({ frame, fps, config: { damping: 17, mass: 0.7 } });
-  const aoLado = variante === 'gancho';
+  // ♦ 'aviso' (08/10/2026) é o "DAQUI A POUCO VOU TE CONTAR:" a meio do capítulo — mesmo
+  // lugar do gancho (à esquerda), com a etiqueta de ALERTA em vez da etiqueta discreta.
+  const aviso = variante === 'aviso';
+  const aoLado = variante === 'gancho' || aviso;
   const chamada = variante === 'chamada';
 
   // ⚠️ A LETRA ENCOLHE COM O COMPRIMENTO. As frases declaradas do guião vão dos 16 aos
@@ -583,7 +586,31 @@ export const CartaoDeFrase: React.FC<{ texto: string; etiquetaTexto?: string; va
         borderLeft: aoLado ? `10px solid ${BRAND.violet}` : 'none',
         paddingLeft: aoLado ? 44 : 0,
       }}>
-        {etiquetaTexto ? (
+        {/* 🔴 A ETIQUETA DE ALERTA — 08/10/2026, desenho do dono: *"aparece o 'Daqui a Pouco'
+            no topo da tela tipo com letra de alerta e em vermelho… DAQUI A POUCO VOU TE
+            CONTAR: algo que chame bem a atenção"*. Maiúsculas, vermelho, um triângulo de
+            aviso e um pulso a cada segundo — o olho tem de ir lá antes de ler a frase. */}
+        {aviso && etiquetaTexto ? (
+          <div style={{
+            display: 'inline-flex', alignItems: 'center', gap: 18, marginBottom: 30,
+            padding: '12px 28px 12px 20px', borderRadius: 14,
+            background: 'rgba(239,68,68,0.14)', border: '3px solid #ef4444',
+            boxShadow: `0 0 ${24 + 22 * Math.abs(Math.sin(frame / 9))}px rgba(239,68,68,0.55)`,
+            opacity: interpolate(frame, [0, 8], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }),
+            transform: `scale(${interpolate(spring({ frame, fps, config: { damping: 9, mass: 0.5 } }), [0, 1], [1.25, 1]) * (1 + 0.025 * Math.abs(Math.sin(frame / 9)))})`,
+            transformOrigin: 'left center',
+          }}>
+            <svg width={52} height={46} viewBox="0 0 52 46">
+              <path d="M26 3 L49 43 L3 43 Z" fill="#ef4444" stroke="#fff" strokeWidth={3} strokeLinejoin="round" />
+              <rect x={23.5} y={15} width={5} height={15} rx={2} fill="#fff" />
+              <circle cx={26} cy={36} r={3} fill="#fff" />
+            </svg>
+            <span style={{
+              fontFamily: DISPLAY, fontWeight: 900, fontSize: 50, letterSpacing: 3,
+              color: '#ef4444', textTransform: 'uppercase', textShadow: '0 0 18px rgba(239,68,68,0.6)',
+            }}>{etiquetaTexto}</span>
+          </div>
+        ) : etiquetaTexto ? (
           <div style={{
             fontFamily: BODY, fontWeight: 800, fontSize: 30, letterSpacing: 4,
             color: BRAND.cyan, textTransform: 'uppercase', marginBottom: 22,
