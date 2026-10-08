@@ -1,0 +1,174 @@
+{
+  "slug": "kw-5-erros-que-te-fazem-achar-que-financas-sao-complicadas",
+  "term": "5 erros que te fazem achar que finanças são complicadas",
+  "category": "mindset",
+  "keyword": "finanças",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "*Você acha que finanças são difíceis porque sempre esbarra em cinco erros?*"
+  },
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "bolha",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você acha que finanças são difíceis porque sempre esbarra em cinco erros? Na verdade, mudar a forma de olhar resolve tudo",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "Você",
+          "visual": {
+            "type": "statement",
+            "text": "Finanças difíceis?"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "porque",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          }
+        },
+        {
+          "anchor": "erros",
+          "visual": {
+            "type": "statement",
+            "text": "Cinco erros"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Você paga mil e duzentos de aluguel, duzentos de celular e cento e cinquenta de streaming e ainda sente que o dinheiro some",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "paga",
+          "visual": {
+            "type": "statement",
+            "text": "Aluguel + celular"
+          }
+        },
+        {
+          "anchor": "cinquenta",
+          "visual": {
+            "type": "number",
+            "text": "R$ 150"
+          },
+          "sfx": "coin"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Só esses três já dão mil quinhentos e cinquenta, mas no fim do mês tudo chega a quase cinco mil",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "três",
+          "visual": {
+            "type": "statement",
+            "text": "Três gastos"
+          }
+        },
+        {
+          "anchor": "chega",
+          "visual": {
+            "type": "number",
+            "text": "R$ 5.550"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei esses números no FinMoovi e ele mostrou que faltam três mil quatrocentos e cinquenta para fechar o orçamento",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "joguei",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Resumo mensal"
+          }
+        },
+        {
+          "anchor": "três",
+          "visual": {
+            "type": "statement",
+            "text": "Faltam R$ 3.450"
+          },
+          "sfx": "alert"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu saldo real? Procure FinMoovi, são sete dias grátis",
+      "durationSec": 4.6,
+      "shots": [
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "statement",
+            "text": "Quer saldo real?"
+          }
+        },
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Finanças não são complicadas, basta evitar esses cinco erros Dinheiro sem controle é dinheiro dos outros",
+      "durationSec": 6.2,
+      "shots": [
+        {
+          "anchor": "Finanças",
+          "visual": {
+            "type": "statement",
+            "text": "Finanças simples"
+          }
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "icon",
+            "icon": "shield"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja seu saldo real agora",
+    "target": "app"
+  },
+  "totalDurationSec": 43.1
+}
