@@ -194,6 +194,20 @@ function getTextProviders() {
  * `insistir` e, se falhar, a fila segue para os grátis de sempre.
  * ⚠️ A chave pré-paga ("...ItTw", projeto finmoovi-youtube) NUNCA vai para o segredo.
  */
+/**
+ * 🔴 CONGESTIONADO = ESPERAR E TENTAR DE NOVO — 08/10/2026, regra do dono: *"quando
+ * acontecer isso ele espera alguns minutinhos e tenta novamente!"*. O 503 "high demand"
+ * do Gemini grátis passa em minutos; saltar logo para o seguinte (2s, como os outros
+ * 5xx) entregava o texto ao modelo mais fraco por um engasgo de um minuto.
+ * ⚠️ E O TETO, que é o que impede isto de virar horas: o guião faz dezenas de pedidos;
+ * se cada um esperasse 9 minutos, a corrida não acabava. Esgotadas as esperas, o Gemini
+ * DESCANSA `DESCANSO_DO_CONGESTIONADO_MIN` (os pedidos seguintes passam-lhe à frente) e
+ * depois volta a ser tentado.
+ */
+const ESPERAS_NO_CONGESTIONAMENTO_SEG = [120, 180, 240];
+const DESCANSO_DO_CONGESTIONADO_MIN = 15;
+const congestionadoAte = new Map();
+
 function geminiGratisParaOPapel() {
   if (!process.env.GEMINI_API_KEY) return [];
   return [{
@@ -202,7 +216,8 @@ function geminiGratisParaOPapel() {
     apiKey: process.env.GEMINI_API_KEY,
     model: process.env.GEMINI_ESCRITOR_MODEL || 'gemini-3.8-flash',
     formato: 'openai',
-    insistir: 3,
+    insistir: ESPERAS_NO_CONGESTIONAMENTO_SEG.length + 1,
+    esperasNoCongestionamento: ESPERAS_NO_CONGESTIONAMENTO_SEG,
   }];
 }
 
@@ -324,6 +339,12 @@ export async function generateText(prompt, options = {}) {
     // de uma corrida. Medido em 18/08/2026: o Cerebras devolveu HTTP 402 em
     // TODAS as chamadas de todas as corridas, uma por cada texto gerado, só
     // para cair no Groq a seguir. Ver contaFechada() mais abaixo.
+    if ((congestionadoAte.get(provider.name) || 0) > Date.now()) {
+      const faltam = Math.ceil((congestionadoAte.get(provider.name) - Date.now()) / 60000);
+      errors.push(`${provider.name}: a descansar do congestionamento (mais ${faltam} min)`);
+      console.log(`⏭️ ${provider.name}: congestionado há pouco — descansa mais ${faltam} min, segue o próximo.`);
+      continue;
+    }
     if (contasFechadas.has(provider.name)) {
       errors.push(`${provider.name}: pulado — já recusou por conta/chave nesta corrida`);
       console.log(`⏭️ ${provider.name}: pulado — já recusou por conta/chave nesta corrida.`);
@@ -487,7 +508,18 @@ export async function generateText(prompt, options = {}) {
       // Avaria do fornecedor (5xx): retentar o MESMO, e depressa. Só para quem declara
       // `insistir` — ou seja, hoje só o pago. Nos gratuitos um 5xx continua a saltar
       // para o seguinte, que é o que sempre fez.
-      if (provider.insistir && response.status >= 500 && attempt < maxTentativas) {
+      // 🔴 Congestionado (503): espera MINUTOS e tenta o mesmo — ver `ESPERAS_NO_CONGESTIONAMENTO_SEG`.
+      if (provider.esperasNoCongestionamento && response.status === 503) {
+        const espera = provider.esperasNoCongestionamento[attempt - 1];
+        if (espera && attempt < maxTentativas) {
+          console.log(`⏳ ${provider.name}: congestionado (503). Espero ${Math.round(espera / 60)} min e tento de novo (${attempt}/${provider.esperasNoCongestionamento.length}).`);
+          await new Promise(r => setTimeout(r, espera * 1000));
+          continue;
+        }
+        congestionadoAte.set(provider.name, Date.now() + DESCANSO_DO_CONGESTIONADO_MIN * 60000);
+        console.log(`😴 ${provider.name}: continua congestionado depois de esperar — descansa ${DESCANSO_DO_CONGESTIONADO_MIN} min.`);
+      }
+      if (provider.insistir && response.status >= 500 && !(provider.esperasNoCongestionamento && response.status === 503) && attempt < maxTentativas) {
         console.log(`🔁 ${provider.name}: avaria do fornecedor (HTTP ${response.status}). Tentativa ${attempt}/${maxTentativas} — falhas não custam créditos.`);
         await new Promise(r => setTimeout(r, 2000));
         continue;
