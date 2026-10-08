@@ -1,7 +1,7 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-10-07T11:30:42.757Z
-**Posts:** 498 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 16
+**Gerado em:** 2026-10-08T11:46:08.316Z
+**Posts:** 504 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 18
 
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
@@ -18,6 +18,9 @@
 
 **como-cortar-gastos-com-agua-sem-esforco-em-2026.md**
 - _Segundo a Organização para a Cooperação e Desenvolvimento Econômico (OECD), famílias que adotam práticas simples de economia de água podem reduzir a conta em até 30 % OECD._
+
+**como-identificar-e-cortar-gastos-recorrentes-que-drenam-seu.md**
+- _Segundo a OECD, famílias que monitoram regularmente suas despesas têm até 15 % mais chances de atingir metas de [reserva de emergência](/ferramentas/calculadora-reserva)._
 
 **como-saber-se-sua-meta-de-economia-esta-realmente-avancando.md**
 - _Segundo a *World Bank*, a maioria das famílias que não tem um acompanhamento visual claro dos seus objetivos financeiros tende a postergar investimentos de médio prazo em até 30 %._
@@ -36,6 +39,9 @@
 
 **en-how-to-know-if-your-savings-goal-is-actually-moving-forward.md**
 - _According to the *World Bank*, families that don’t have a clear visual way to follow their financial goals postpone medium‑term investments by up to 30 %._
+
+**en-how-to-spot-and-cut-recurring-expenses-that-drain-your.md**
+- _According to the OECD, families that regularly track their spending are up to 15 % more likely to hit emergency‑fund goals._
 
 **en-why-my-budget-spreadsheet-never-keeps-up-with-my-spending.md**
 - _According to the *World Bank*, adopting digital financial‑management tools can cut administrative time by up to 30 % (World Bank, 2022)._
