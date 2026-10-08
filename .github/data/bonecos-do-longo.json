@@ -3,12 +3,28 @@
   "videos": {
     "economizar-300-por-mes": [
       {
+        "cena": "6",
+        "boneco": "pensando"
+      },
+      {
         "cena": "8",
         "boneco": "ombros"
       },
       {
+        "cena": "11",
+        "boneco": "contar-moedas"
+      },
+      {
+        "cena": "13",
+        "boneco": "rasgar-papel"
+      },
+      {
         "cena": "16",
         "boneco": "puxar-cabelo"
+      },
+      {
+        "cena": "26",
+        "boneco": "escorregar-banana"
       },
       {
         "cena": "28",
@@ -19,12 +35,28 @@
         "boneco": "facepalm"
       },
       {
+        "cena": "34",
+        "boneco": "susto"
+      },
+      {
         "cena": "36",
         "boneco": "bocejar"
       },
       {
+        "cena": "39",
+        "boneco": "relogio"
+      },
+      {
         "cena": "44",
         "boneco": "levantar"
+      },
+      {
+        "cena": "46",
+        "boneco": "apontar"
+      },
+      {
+        "cena": "48",
+        "boneco": "ideia"
       },
       {
         "cena": "50",

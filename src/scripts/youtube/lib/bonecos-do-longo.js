@@ -76,5 +76,9 @@ export function bonecoCabeNaCena(boneco, cena, ultimoAto) {
   return ['gancho', 'consequencia'].includes(boneco.estagio) || ['pensando', 'facepalm'].includes(boneco.id);
 }
 
-/** Quantos bonecos num vídeo — o plano (§6): troca-se metade das ilustrações por gente a mexer-se. */
-export const TETO_DE_BONECOS = 8;
+/**
+ * Quantos bonecos num vídeo. O plano (§6) começou com 8; 🔴 **8 → 16 em 08/10/2026**, o
+ * dono a ver o primeiro vídeo com eles: *"Achei que você está usando poucos bonecos!"*.
+ * A ilustração desceu para 6 (ver `TETO_DE_ILUSTRACOES`) — disputam o mesmo espaço.
+ */
+export const TETO_DE_BONECOS = 16;

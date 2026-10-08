@@ -740,7 +740,8 @@ const ILUSTRACOES = [
  * os dois transformava o vídeo num desenho animado. O total de cenas com desenho fica
  * igual; metade passa a ter gente a mexer-se. Plano em `docs/BONECO-NO-VIDEO-LONGO.md` §6.
  */
-export const TETO_DE_ILUSTRACOES = 8;
+// 🔴 8 → 6 no MESMO dia, quando os bonecos subiram para 16 (o dono pediu mais bonecos).
+export const TETO_DE_ILUSTRACOES = 6;
 const INTERVALO_DA_ILUSTRACAO = 2;
 
 /**
@@ -1329,22 +1330,14 @@ export function dirigirImagens(cenas, mapa = {}, slug = null) {
       return { ...c, visual: { tipo: 'broll', comp: pedida.comp, brollFrames: pedida.frames, valores: valoresDoBroll(pedida, mapa), etiqueta } };
     }
 
-    // 8. O RE-GANCHO — o que fica em aberto está escrito no mapa, capítulo a capítulo.
-    // ⚠️ `primeiraDoBloco` pela MESMA razao da chamada.
-    // 🔴 08/10/2026 — o cartão "o que vem a seguir" deixou de entrar POR CIMA da pergunta
-    //    ao público (dois textos diferentes ao mesmo tempo). A cena fica com as palavras
-    //    ditas, e o cartão vai para DEPOIS dela, sem voz, com o tempo de ler — ver
-    //    `pausaDepois` em `Long.tsx` e `framesDaPausa`.
-    if (c.parte === 'regancho' && c.capitulo && primeiraDoBloco.has(indice)) {
-      const aberto = mapa.capitulos?.[c.capitulo - 1]?.oQueFicaEmAberto;
-      if (aberto) {
-        return {
-          ...c,
-          visual: { tipo: 'palavras', etiqueta },
-          pausaDepois: { texto: aberto, etiquetaTexto: 'o que vem a seguir', variante: 'gancho', frames: framesDaPausa(aberto) },
-        };
-      }
-    }
+    // 8. ~~O RE-GANCHO com o cartão "o que vem a seguir"~~ — 08/10/2026, duas mudanças:
+    //    1ª (de manhã): o cartão deixou de entrar POR CIMA da pergunta e foi para DEPOIS
+    //       dela, sem voz;
+    //    2ª (à tarde), o dono a ver o vídeo: *"a próxima cena é essa [PASSO 2], ou seja é
+    //       quase a mesma informação! Você tem que encontrar e encaixar essa tela em outro
+    //       momento!"* — o cartão de capítulo vinha logo a seguir e repetia a ideia.
+    //    Agora o aviso vai para o MEIO do capítulo (ver `avisosDoMeio`), e o re-gancho
+    //    fica com as palavras ditas, como qualquer pergunta.
 
     // 9. O CAVALO DE CARGA — as palavras ditas, grandes, como imagem.
     return { ...c, visual: { tipo: 'palavras', etiqueta } };
@@ -1402,7 +1395,37 @@ export function dirigirImagens(cenas, mapa = {}, slug = null) {
       : c;
   });
 
-  return numerarVariantes(equilibrar(dirigida, { fio, mapa }));
+  return avisosDoMeio(numerarVariantes(equilibrar(dirigida, { fio, mapa })), mapa);
+}
+
+/**
+ * 🔴 O AVISO "DAQUI A POUCO" NO MEIO DE CADA CAPÍTULO — 08/10/2026, ordem do dono (ver a
+ * nota no passo 8 de `dirigirImagens`).
+ *
+ * O que fica em aberto em cada ato (`oQueFicaEmAberto` do mapa) é uma PROMESSA do que vem
+ * a seguir. Encostado ao cartão do capítulo seguinte, repetia-o; a meio do capítulo, é
+ * a ponta no ar que segura quem está a ver até lá — o mesmo trabalho do re-gancho, a
+ * outra altura. Sem voz e com o tempo de ler (`framesDaPausa`), como já estava.
+ *
+ * ⚠️ ONDE: depois da cena do desenvolvimento que fica a ~60% do capítulo — longe do
+ * cartão de abertura (que acabou de passar) e do próximo (que ainda vem longe). Nunca
+ * na demonstração do app, que tem a sua própria tela.
+ */
+export const RAZAO_DO_AVISO_NO_CAPITULO = 0.6;
+export function avisosDoMeio(cenas, mapa = {}) {
+  const saida = cenas.map((c) => ({ ...c, pausaDepois: null }));
+  const caps = mapa.capitulos || [];
+  caps.forEach((cap, i) => {
+    const texto = String(cap?.oQueFicaEmAberto || '').trim();
+    if (!texto) return;
+    const doCapitulo = saida
+      .map((c, j) => ({ c, j }))
+      .filter(({ c }) => Number(c.capitulo) === i + 1 && c.parte === 'desenvolvimento');
+    if (doCapitulo.length < 3) return;
+    const alvo = doCapitulo[Math.min(doCapitulo.length - 2, Math.floor(doCapitulo.length * RAZAO_DO_AVISO_NO_CAPITULO))];
+    saida[alvo.j].pausaDepois = { texto, etiquetaTexto: 'daqui a pouco', variante: 'gancho', frames: framesDaPausa(texto) };
+  });
+  return saida;
 }
 
 /**

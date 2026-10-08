@@ -168,10 +168,6 @@
         "figura": "buraco"
       },
       {
-        "cena": "5",
-        "figura": "ralo"
-      },
-      {
         "cena": "18",
         "figura": "semaforo"
       },
@@ -180,11 +176,7 @@
         "figura": "ratoeira"
       },
       {
-        "cena": "26",
-        "figura": "areia-movedica"
-      },
-      {
-        "cena": "33",
+        "cena": "32",
         "figura": "bola-neve"
       },
       {
