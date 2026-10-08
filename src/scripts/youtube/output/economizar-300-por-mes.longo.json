@@ -1,39 +1,39 @@
 {
   "tema": "Como encontrar R$ 300 esquecidos no orçamento sem cortar o essencial",
-  "angulo": "A dor é chegar ao fim do mês ganhando R$ 3.500 e não saber onde foram parar R$ 300. Eu mostro, com contas reais, como reorganizei um orçamento de R$ 3.500 para liberar R$ 300 por mês sem cortar aluguel, alimentação ou lazer, e no fim deixo um método simples para repetir a conta. O FinMoovi aparece uma vez para somar as despesas e mostrar onde o dinheiro estava escapando.",
+  "angulo": "A dor é ganhar R$ 3.500, ter as contas fechando no papel e ainda assim faltar R$ 300 todo fim de mês. Eu conto o susto, a armadilha dos gastos pequenos, o preço de um ano inteiro e como achei os R$ 300 registrando cada gasto na hora, sem cortar o essencial.",
   "promessa": "Você deixa mais de três mil e seiscentos reais por ano escapando do orçamento, e eu vou te provar isso",
   "fioCondutor": "ampulheta",
-  "lacoAberto": "e se você parar de anotar, esses trezentos reais por mês voltam a sair sem você nem perceber",
-  "abertura": "Em 2023, você deixa escapar quase três mil reais. E eu vou te provar isso. Hoje eu mostro a conta de luz que chegou na minha caixa de correio, o celular vibrando com a notificação do banco, e o papel com o extrato aberto na mesa da cozinha. É naquele momento que eu percebi o buraco no bolso. Você já chegou ao fim do mês e não tinha dinheiro pra pagar o aluguel? O dinheiro sumiu porque você nunca registrou os pequenos gastos do dia a dia. EU VOU PROVAR COMO LIBERAR TREZENTOS REAIS POR MÊS SEM CORTAR O ESSENCIAL.",
+  "lacoAberto": "e se você parar de registrar, esses trezentos reais por mês voltam a sair sem você perceber",
+  "abertura": "Você deixa mais de três mil e seiscentos reais escaparem por ano. E eu vou te provar isso. Abre o seu extrato do mês passado: um monte de linhas pequenas, e nenhuma assustadora. Então por que o dinheiro não chega até o fim do mês? Não é dinheiro roubado, nem conta atrasada, nem uma compra grande de que você se arrepende. É um dinheiro que sai calado, todo santo mês, e que você nunca vê sair. Eu sei disso porque aconteceu comigo. As minhas contas fechavam no papel, e mesmo assim, todo fim de mês, alguma coisa não batia. Hoje eu vou te contar como eu descobri onde estava esse dinheiro, e quanto ele me custava de verdade.",
   "capitulos": [
     {
-      "pergunta": "Você já viu o dinheiro sumir do seu bolso sem saber onde foi?",
-      "desenvolvimento": "Eu ganho três mil e quinhentos reais todo mês. Pago aluguel, conta de luz, mercado, transporte e ainda sobra um pouco para sair com os amigos. Mas toda vez que chegava ao fim do mês, faltavam trezentos reais. Eu jurava que não tinha gastado nada a mais. Até que um dia, cansado de ficar no vermelho, peguei um caderno e comecei a anotar tudo, mesmo o menor valor. Um café aqui, um lanche ali, aquela recarga de celular que eu esqueci de anotar. Fui somando aos poucos, linha por linha, e quando cheguei ao fim da semana, dei com o número. Trezentos reais. Era exatamente o que estava faltando. Não era uma conta grande, era o somatório de coisas que eu nem lembrava de ter pago. Fiquei parado, olhando aquelas linhas no papel, pensando como algo tão pequeno todo dia virou um buraco tão grande no meu orçamento.",
-      "regancho": "E você, já parou pra pensar o que está saindo do seu bolso sem você ver?",
-      "titulo": "O mês em que eu somei o que saiu e não bateu"
+      "titulo": "O mês em que faltaram trezentos reais e eu não sabia por quê",
+      "pergunta": "Já te aconteceu de olhar o saldo no fim do mês e não entender para onde o dinheiro foi?",
+      "desenvolvimento": "Era uma sexta-feira de chuva. Eu voltava do trabalho, parado no trânsito, quando o celular vibrou com o aviso do banco: saldo baixo. E ainda faltava uma semana para o salário cair. Eu ganho três mil e quinhentos reais por mês. No papel, a minha conta fechava: aluguel, luz, mercado, transporte, e ainda sobrava um pouco para sair no fim de semana. Pelo menos era isso que eu achava. Na prática, todo fim de mês faltavam trezentos reais. Todo mês, o mesmo buraco. No começo eu achei que era azar. Culpei o mercado, a conta de luz, até o preço da gasolina. Mas quando eu olhava essas contas, elas estavam iguais às do mês anterior. E o mais estranho é que eu não lembrava de nenhuma compra grande. Não teve viagem, não teve celular novo, não teve nada. Eu chegava em casa, abria o aplicativo do banco e ia descendo o extrato, linha por linha, procurando o culpado. E não achava. Cada linha parecia normal. Nenhuma delas, sozinha, explicava trezentos reais. Foi aí que eu senti um frio na barriga. Se eu não sabia para onde ia o meu próprio dinheiro, quem é que estava cuidando dele?",
+      "regancho": "E você, sabe dizer agora, sem olhar, quanto saiu da sua conta no mês passado?"
     },
     {
-      "pergunta": "Sabe quando você tenta cortar o supérfluo, mas no fim do mês ainda faltam trezentos reais e você não vê onde foi?",
-      "desenvolvimento": "Eu achava que era falta de vontade, que se eu segurasse um pouco mais o dinheiro ia sobrar. Mas toda vez que eu tentava controlar, no fim do mês aquilo ali ainda estava faltando. Foi quando eu parei pra olhar cada gasto, mesmo o miúdo, que vi o que estava acontecendo. Não era um erro grande, era um aqui, outro ali. Vinte reais de um app que eu nem usava mais, cinquenta de um lanche rápido na caminho do trabalho, oitenta de uma ida ao cinema que eu tinha esquecido de cancelar. Cada um parecia nada, mas junto eles fecharam aquele buraco de trezentos reais. E o pior não era o valor, era eu achar que estava fazendo algo e nada mudar.",
-      "regancho": "E você, já sentiu que tá se esforçando pra controlar o dinheiro, mas o buraco continua do mesmo tamanho?",
-      "titulo": "Por que pequenos gastos somados viram um buraco no orçamento"
+      "titulo": "Por que os gastos pequenos não aparecem quando você procura",
+      "pergunta": "Sabe aquele gasto tão pequeno que você nem chama de gasto?",
+      "desenvolvimento": "Era exatamente aí que estava a armadilha. Eu procurava um vilão grande, e o dinheiro saía em pedacinhos. O café com pão de queijo perto do trabalho. O lanche da tarde, quando batia a fome. A água e o salgado no caminho de volta. Nenhum desses eu anotava, porque nenhum parecia dinheiro de verdade. Mais tarde, quando eu finalmente fiz a conta, descobri que só o que eu gastava com lanche e café na rua dava cento e vinte reais por mês. E sabe por que eu não via? Porque a cabeça da gente não soma o que é pequeno. Um gasto grande dói na hora. A gente sente, lembra, e às vezes até se arrepende. Um gasto pequeno passa batido. Ele entra no cartão por aproximação, sem senha, sem pensar, e no dia seguinte já foi esquecido. E tinha mais uma coisa: eu me achava controlado. Eu não comprava roupa por impulso, não parcelava nada. Eu me sentia a pessoa mais cuidadosa do mundo, enquanto o dinheiro escorria pelas beiradas. Era como uma torneira pingando: você não escuta, mas a conta chega. E era assim que os trezentos reais sumiam todo mês, sem fazer barulho. O problema nunca foi gastar demais de uma vez. Era gastar pouco, muitas vezes, sem ver.",
+      "regancho": "Qual é o gasto pequeno que você faz quase todo dia e nunca anota?"
     },
     {
-      "pergunta": "E você, já sentiu que tá se esforçando pra controlar o dinheiro, mas o buraco continua do mesmo tamanho?",
-      "desenvolvimento": "Eu ganho três mil e quinhentos reais todo mês. Mas toda vez que chegava ao fim do mês, faltavam trezentos reais. Eu já tinha tentado cortar o que dava, tinha até parado de pedir lanche na rua, mas no mês seguinte o buraco tava lá do mesmo tamanho. Foi ai que eu sentei com um caderno na mão e comecei a anotar tudo. Um real aqui, dois ali. Um café de sete reais todo dia. Um delivery de vinte e cinco que eu nem lembrava de ter pedido. Uma assinatura de dez reais que eu tinha esquecido de cancelar. Fui somando linha por linha, na frente da TV, e deu exatamente trezentos reais. Não era um golpe, não era sorte ruim. Era eu gastando sem ver. E o pior? Aqueles trezentos reais por mês, em doze meses, viraram três mil e seiscentos reais. Quase o que eu ganho num mês inteiro. Dinheiro que poderia ter pago o conserto da geladeira que tava adiando, ou entrado na reserva que eu nunca conseguia juntar. Era um mês do meu salário desaparecendo, e eu nem tinha percebido.",
-      "regancho": "E você, já parou pra pensar o que três mil e seiscentos reais poderiam ter feito pela sua vida se você tivesse visto antes?",
-      "titulo": "O que trezentos reais por mês viraram em um ano inteiro"
+      "titulo": "Quanto trezentos reais por mês custam em um ano inteiro",
+      "pergunta": "Já parou para pensar no que acontece quando um buraco pequeno fica aberto o ano todo?",
+      "desenvolvimento": "Um dia, por curiosidade, eu peguei a calculadora do celular e fiz uma conta simples. Trezentos reais por mês, vezes doze meses. O resultado me deixou parado olhando para a tela: três mil e seiscentos reais por ano. Eu fiz a conta de novo, achando que tinha errado. Não tinha. Isso é mais do que tudo o que eu ganho num mês inteiro de trabalho. Pensa comigo: é como se, todo ano, eu trabalhasse um mês inteiro sem receber, e o salário desse mês sumisse em cafés, lanches e coisas que eu nem lembro. Com esse dinheiro, eu teria trocado a geladeira velha, que vivia dando problema, sem parcelar. Ou teria começado a reserva de emergência que eu sempre deixava para depois. Ou simplesmente teria chegado ao fim do ano sem aquele aperto de sempre. E o pior não era o valor de um ano só. Era perceber que isso vinha acontecendo havia anos, sem eu notar. Cada ano que passava era mais um salário inteiro indo embora, calado. E ninguém tinha me roubado nada. Fui eu mesmo, um café de cada vez. Foi a primeira vez que eu entendi que o problema não era quanto eu ganhava. Era o que eu deixava sair sem ver.",
+      "regancho": "Se esse dinheiro voltasse para o seu bolso amanhã, o que você faria com ele primeiro?"
     },
     {
-      "pergunta": "Sabe quando você tenta anotar tudo, mas no fim do mês ainda falta dinheiro e você não vê onde foi?",
-      "desenvolvimento": "Eu comecei a pegar o celular toda vez que gastava. Se era um pão na padaria, eu falava em voz alta. 'pão, oito reais'. Se era o ônibus, dizia. 'passagem, quatro e cinquenta'. Anotava assim, bem rápido, só o valor e o que foi. Depois de uma semana, eu tinha um papel cheio de rabiscos. Fui juntando tudo. Cento e vinte do lanche, cento e cinquenta da condução, e o troco que não sobrava no final do mês, que eram trinta reais. Dei conta de que aqueles trezentos reais todo mês não eram um erro só, eram pequenos vazamentos que eu nem sentia acontecer. Cada um parecia pouco, mas junto eles fechavam o buraco no meu orçamento. E o pior era que eu já tentava controlar, mas como não via onde o dinheiro ia, eu corria atrás do erro errado.",
-      "demonstracao": "Foi aí que abri o FinMoovi e comecei a falar as despesas no app. Ele ouvia e já colocava na categoria certa. Alimentação, transporte, lazer. Depois de dez dias, olhei o relatório e vi na tela uma linha que dizia 'outros gastos recorrentes' com o valor de trezentos reais escrito em baixo. Foi a primeira vez que eu vi o dinheiro que estava escapando, não porque eu somei à mão, mas porque o app mostrou sozinho, agrupado, algo que eu nem sabia que existia.",
-      "regancho": "E você, já viu um número aparecer na tela do app e pensar. 'ah, então era isso que estava faltando'?",
-      "titulo": "Como comecei a anotar e vi onde o dinheiro estava escapando"
+      "titulo": "Como eu achei os trezentos reais, um passo de cada vez",
+      "pergunta": "E se a saída não fosse cortar tudo, mas só enxergar o que está saindo?",
+      "desenvolvimento": "Foi isso que eu resolvi fazer. Eu não cortei o aluguel, não deixei de comer bem, não parei de sair com os amigos. Eu só decidi atravessar o problema um passo de cada vez, gasto por gasto. A regra era uma só: gastou, registrou na hora, ali mesmo, pelo celular. Pagou o café, registra. Pediu comida, registra. Sem caderno, sem papel, sem deixar para depois. Nos primeiros dias parecia bobagem. Mas foi o único jeito de parar de confiar na memória, que já tinha me enganado tantas vezes. E o mais importante: eu não estava me proibindo de nada. Só estava olhando. No terceiro dia, aquilo já era automático. E no fim da primeira semana, eu já não precisava lembrar de nada: o celular lembrava por mim.",
+      "demonstracao": "Para isso eu usei o FinMoovi. Eu falava o gasto em voz alta, por exemplo, café na padaria, e ele já registrava na categoria certa. No fim do mês, eu abri o relatório, e estava tudo junto num lugar só. Lanches e cafezinhos na rua: cento e vinte reais. Os pedidos de entrega: cento e dez reais. E as assinaturas esquecidas, de aplicativos que eu nem abria mais: setenta reais. Eu jurava que quase não pedia comida, mas estava ali, pedido por pedido, com data e hora. E duas daquelas assinaturas eu nem lembrava que ainda pagava. Somando tudo, trezentos reais. O buraco inteiro, agora com nome e sobrenome.",
+      "regancho": "Você teria coragem de registrar tudo o que gasta durante só uma semana?"
     }
   ],
-  "chamada": "Antes de terminar, me conta. Já percebeu o dinheiro sumindo sem saber onde foi? Você conseguiu mudar isso ou ainda sente esse aperto todo mês? Escreva nos comentários o que aconteceu, eu leio e respondo. Se quiser ver seu número, comente FINMOOVI que eu envio o app com sete dias grátis.",
-  "fecho": "Então, aquele número que apareceu na tela mostrou de vez que os trezentos reais que sumiam todo mês estavam realmente lá, só precisavam ser vistos. Eu tinha dito no início que isso representava mais de mil reais ao longo de um ano. E aconteceu exatamente assim. Agora você já sabe que basta registrar cada gasto e analisar as categorias para recuperar esse dinheiro sem cortar aluguel, comida ou lazer. Falando nisso, imagine o que você poderia fazer se conseguisse identificar ainda mais pequenos vazamentos que ainda não aparecem no seu extrato. Com esse hábito, você transforma cada centavo perdido em oportunidade de melhorar a vida. Dinheiro sem controle é dinheiro dos outros.",
+  "chamada": "Antes de eu te contar o que mudou depois disso, me conta uma coisa aqui nos comentários: qual é o gasto pequeno que mais pesa no seu mês? Eu leio e respondo todos. E se você quiser descobrir o seu número, comenta FINMOOVI que eu te mando o aplicativo com sete dias grátis.",
+  "fecho": "Lembra que eu disse no começo que você deixa mais de três mil e seiscentos reais por ano escapando do orçamento? Agora você viu a conta inteira: trezentos reais por mês, vezes doze, dá exatamente isso. E eu não precisei cortar nada que importava. Continuei pagando o aluguel, comendo bem e saindo no fim de semana. A única coisa que mudou foi que eu passei a enxergar o meu dinheiro. Hoje, quando o celular vibra com o aviso do banco, eu não sinto mais aquele frio na barriga, porque eu sei para onde cada real está indo. E isso vale para você também: o primeiro passo não é ganhar mais, é enxergar o que já está saindo. Afinal, dinheiro sem controle é dinheiro dos outros, você entendeu?",
   "mapa": {
     "promessa": "Você deixa mais de três mil e seiscentos reais por ano escapando do orçamento, e eu vou te provar isso",
     "fioCondutor": "ampulheta",
@@ -45,7 +45,7 @@
         "tipo": "entra"
       },
       {
-        "nome": "o que sai do orçamento todo mês",
+        "nome": "o que sumia do orçamento todo mês",
         "valor": 300,
         "tipo": "sai"
       },
@@ -55,57 +55,57 @@
         "tipo": "saldo"
       },
       {
-        "nome": "o uniforme do primeiro emprego",
+        "nome": "os lanches e cafés na rua",
         "valor": 120,
         "tipo": "sai"
       },
       {
-        "nome": "a condução do dia a dia",
-        "valor": 150,
+        "nome": "os pedidos de entrega",
+        "valor": 110,
         "tipo": "sai"
       },
       {
-        "nome": "o troco que não sobra no final do mês",
-        "valor": 30,
+        "nome": "as assinaturas esquecidas",
+        "valor": 70,
         "tipo": "sai"
       }
     ],
     "somas": [
       {
         "de": [
-          "o uniforme do primeiro emprego",
-          "a condução do dia a dia",
-          "o troco que não sobra no final do mês"
+          "os lanches e cafés na rua",
+          "os pedidos de entrega",
+          "as assinaturas esquecidas"
         ],
-        "da": "o que sai do orçamento todo mês"
+        "da": "o que sumia do orçamento todo mês"
       }
     ],
     "contaDoCartao": null,
     "capituloDaDemonstracao": 4,
     "capitulos": [
       {
-        "titulo": "O mês em que eu somei o que saiu e não bateu",
-        "oQueAcrescenta": "o susto: descobri que trezentos reais estavam saindo todo mês sem eu ver onde",
-        "oQueFicaEmAberto": "como é que algo tão claro passou despercebido tanto tempo",
-        "oNumeroDoAto": "o uniforme do primeiro emprego"
+        "titulo": "O mês em que faltaram trezentos reais e eu não sabia por quê",
+        "oQueAcrescenta": "o susto: todo mês faltavam trezentos reais e eu não achava o culpado no extrato",
+        "oQueFicaEmAberto": "por que eu não conseguia achar esse dinheiro no extrato",
+        "oNumeroDoAto": "o que sumia do orçamento todo mês"
       },
       {
-        "titulo": "Por que pequenos gastos somados viram um buraco no orçamento",
-        "oQueAcrescenta": "a armadilha: cada gasto é pequeno e parece normal, mas junto eles pesam e a gente não soma na cabeça",
-        "oQueFicaEmAberto": "quanto isso já está custando ao longo do tempo",
-        "oNumeroDoAto": "a condução do dia a dia"
+        "titulo": "Por que os gastos pequenos não aparecem quando você procura",
+        "oQueAcrescenta": "a armadilha: o gasto pequeno não dói, não se anota e não se soma de cabeça",
+        "oQueFicaEmAberto": "quanto esse vazamento pequeno custa em um ano inteiro",
+        "oNumeroDoAto": "os lanches e cafés na rua"
       },
       {
-        "titulo": "O que trezentos reais por mês viraram em um ano inteiro",
-        "oQueAcrescenta": "o preço: trezentos por mês deram três mil e seiscentos em doze meses — quase o que eu ganho em um mês inteiro",
-        "oQueFicaEmAberto": "o que eu poderia ter feito com esse dinheiro se tivesse visto antes",
+        "titulo": "Quanto trezentos reais por mês custam em um ano inteiro",
+        "oQueAcrescenta": "o preço: trezentos por mês viram três mil e seiscentos por ano, mais do que um salário inteiro",
+        "oQueFicaEmAberto": "como eu achei os trezentos reais sem cortar o essencial",
         "oNumeroDoAto": "o que isso deu em doze meses"
       },
       {
-        "titulo": "Como comecei a anotar e vi onde o dinheiro estava escapando",
-        "oQueAcrescenta": "a virada: comecei a registrar cada gasto na hora e usei o app para ver as categorias e descobrir o que realmente estava saindo",
-        "oQueFicaEmAberto": "o primeiro passo que qualquer um pode dar hoje para parar a fuga",
-        "oNumeroDoAto": "o troco que não sobra no final do mês"
+        "titulo": "Como eu achei os trezentos reais, um passo de cada vez",
+        "oQueAcrescenta": "a virada: registrar cada gasto na hora e ver tudo agrupado por categoria",
+        "oQueFicaEmAberto": "o que mudou depois que eu passei a enxergar o meu dinheiro",
+        "oNumeroDoAto": "as assinaturas esquecidas"
       }
     ],
     "respostaDaPromessa": "Os três mil e seiscentos reais por ano que você deixa escapar aparecem no app assim que você começa a ver as categorias de gasto",
@@ -119,7 +119,8 @@
     "cena": "o primeiro emprego — o uniforme, a condução e o troco que não sobra",
     "fichaDeDivida": null
   },
-  "palavras": 1094,
-  "segundosDeFala": 421,
-  "geradoEm": "2026-10-05T09:03:40.345Z"
+  "palavras": 1268,
+  "segundosDeFala": 488,
+  "geradoEm": "2026-10-08T08:02:24.352Z",
+  "escritoAMao": "08/10/2026 — reescrito à mão depois de o Ed apontar 13 defeitos no vídeo escrito pelos modelos grátis"
 }

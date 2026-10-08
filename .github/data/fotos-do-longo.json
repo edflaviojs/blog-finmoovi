@@ -49,11 +49,11 @@
     "economizar-300-por-mes": [
       {
         "ficheiro": "manus/economizar-300-por-mes/susto.jpg",
-        "nome": "o susto de olhar a conta",
-        "significado": "o susto de olhar a conta",
+        "nome": "a volta para casa na chuva",
+        "significado": "parado no trânsito quando o banco avisa saldo baixo",
         "tipo": "foto",
         "movimento": "aproxima",
-        "pista": "voce ja viu o dinheiro sumir"
+        "pista": "parado no transito"
       },
       {
         "ficheiro": "manus/economizar-300-por-mes/virada.jpg",
@@ -61,7 +61,7 @@
         "significado": "a saída que se abre",
         "tipo": "foto",
         "movimento": "aproxima-lento",
-        "pista": "eu ganho tres mil e quinhentos reais todo mes"
+        "pista": "um passo de cada vez"
       }
     ]
   }
