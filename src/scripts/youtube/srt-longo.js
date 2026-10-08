@@ -123,6 +123,8 @@ export function iniciosDasCenas(plano, timing) {
     if (c.abreCapitulo && c.capitulo) acc += CARTAO_CAPITULO_FRAMES;
     inicios.push((VOZ_ENTRA_FRAMES + acc) / FPS);
     acc += frames[i];
+    // ⚠️ A TELA SEM VOZ DEPOIS DA CENA (08/10/2026) — mesma conta de `linhaDoTempo`.
+    acc += Math.max(0, Math.round(Number(c.pausaDepois?.frames) || 0));
   });
   return { inicios, fimDoConteudo: (VOZ_ENTRA_FRAMES + acc) / FPS };
 }

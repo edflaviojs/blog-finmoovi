@@ -104,8 +104,10 @@ const duracoes = plano.scenes.map((c, i) => {
 const frames = duracoes.map((d) => Math.max(1, Math.round(d * FPS)));
 // ⚠️ A MESMA CONTA DO `linhaDoTempo` em src/Long.tsx: o cartão de capítulo ocupa lugar
 // próprio na linha do tempo, antes da cena que abre o capítulo.
+// ⚠️ E A TELA SEM VOZ DEPOIS DA CENA (`pausaDepois`, 08/10/2026) também ocupa lugar seu.
 const inicios = [];
 const cartoes = [];
+let conteudo = 0;
 {
   let acc = 0;
   plano.scenes.forEach((c, i) => {
@@ -114,9 +116,10 @@ const cartoes = [];
     if (temCartao) acc += CARTAO_CAPITULO_FRAMES;
     inicios.push(acc);
     acc += frames[i];
+    acc += Math.max(0, Math.round(Number(c.pausaDepois?.frames) || 0));
   });
+  conteudo = acc;
 }
-const conteudo = inicios.length ? inicios[inicios.length - 1] + frames[frames.length - 1] : 0;
 const total = VOZ_ENTRA_FRAMES + conteudo + SIGNATURE_FRAMES + TELA_FINAL_FRAMES;
 
 // ── os cortes: nos limites de capítulo, que agora começam no CARTÃO ──────────

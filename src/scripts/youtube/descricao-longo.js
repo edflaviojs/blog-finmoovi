@@ -237,6 +237,8 @@ export function tempoDosCapitulos(plano, timing, opts = {}) {
     }
     const dur = medido(cena.id) || cena.durationSec;
     t += dur + (i < plano.scenes.length - 1 ? RESPIRO_SEC : 0);
+    // ⚠️ A TELA SEM VOZ DEPOIS DA CENA (08/10/2026) — mesma conta de `linhaDoTempo`.
+    t += Math.max(0, Math.round(Number(cena.pausaDepois?.frames) || 0)) / 30;
   });
 
   brutas.sort((a, b) => a.seg - b.seg);

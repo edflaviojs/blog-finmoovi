@@ -229,6 +229,49 @@ export function brollDoVideo(mapa) {
 }
 
 /**
+ * 🔴 **AS TELAS DO APP NÃO ENTRAM ANTES DO CAPÍTULO DO APP — 08/10/2026.**
+ *
+ * No vídeo de 11/10 a captura do FinMoovi apareceu no ato do PREÇO, a meio de *"ninguém
+ * tinha me roubado nada"*, um capítulo inteiro antes de o app existir na história. O
+ * dono: *"os b-rolls não estão entrando corretamente condizente com o que é dito"*.
+ * O app tem UM momento no vídeo (ver `validarLongo`), e a imagem tem de o respeitar.
+ */
+const BROLL_DO_APP = new Set(['SmartCapture3DLong', 'SmartCaptureVozLong']);
+
+export function brollDaCena(cena, mapa) {
+  const doApp = Number(mapa?.capituloDaDemonstracao) || 0;
+  const jaChegouAoApp = !doApp
+    || ['demonstracao', 'chamada', 'fecho'].includes(cena?.parte)
+    || Number(cena?.capitulo) >= doApp;
+  return brollDoVideo(mapa).filter((b) => jaChegouAoApp || !BROLL_DO_APP.has(b.comp));
+}
+
+/**
+ * 🔴 **SÓ A TELA QUE A FALA PEDE, OU NENHUMA — 08/10/2026.** O `escolherBroll` cai no
+ * rodízio quando nenhuma tela é pedida, e foi assim que um gráfico de barras entrou em
+ * *"é um dinheiro que sai calado"* e uma rosca em *"hoje eu vou te contar"*. A regra da
+ * própria casa (ver `equilibrar`) diz que trocar uma imagem certa por uma errada só
+ * para haver variedade é o defeito, não a cura. Devolve `null` quando nada é pedido.
+ */
+export function brollPedidoPelaFala(texto, permitidas, usos = {}) {
+  const pedidas = permitidas.filter((b) => b.pista.test(semAcento(String(texto || ''))));
+  return pedidas.length ? escolherBroll(texto, pedidas, usos) : null;
+}
+
+/**
+ * 🔴 **QUANTO TEMPO FICA A TELA DE TEXTO SEM VOZ — 08/10/2026.** O dono: *"o tempo dessa
+ * tela já falei que tem que ser mais tempo pra dar tempo de se ler"*. A conta é a do
+ * cartão de capítulo (ver `CARTAO_CAPITULO_FRAMES`): ~1,5s a montar palavra a palavra,
+ * a leitura com calma (2,5 palavras por segundo) e um respiro antes de sair — nunca
+ * menos de 4 segundos. Em fotogramas, a 30 por segundo.
+ */
+export function framesDaPausa(texto) {
+  const palavras = String(texto || '').trim().split(/\s+/).filter(Boolean).length;
+  const seg = Math.max(4, 1.5 + palavras / 2.5 + 0.8);
+  return Math.round(seg * 30);
+}
+
+/**
  * ⚠️ **NENHUMA TELA MAIS DO QUE DUAS VEZES, e o número é a conta.** São 6 cenas de b-roll
  * e 3 telas disponíveis num vídeo sem cartão: 2 cada dá exactamente 6.
  * ⚠️ **12/08: com a rosca do Balanço são 4** numa história que declare uma soma — e aí o
@@ -1213,33 +1256,42 @@ export function dirigirImagens(cenas, mapa = {}, slug = null) {
       return { ...c, visual: { tipo: 'metafora', fio, estagio: lugaresDaMetafora.get(indice), etiqueta } };
     }
 
-    // 6. UMA FRASE QUE O GUIÃO JÁ DECLARA e que esta cena está mesmo a dizer — a
-    //    promessa, a resposta da promessa, o laço aberto. É o pedido do dono de usar
-    //    mais os cartões, sem inventar uma linha de texto que ninguém reviu.
-    for (const [chave, etiquetaTexto] of DECLARADAS_NO_MAPA) {
-      const frase = mapa[chave];
-      if (frase && cenaDizFraseDeclarada(c.narration, frase)) {
-        return { ...c, visual: { tipo: 'frase', texto: frase, etiquetaTexto, variante: chave, etiqueta } };
-      }
-    }
+    // 6. ~~UMA FRASE QUE O GUIÃO JÁ DECLARA~~ — DESLIGADA em 08/10/2026.
+    //    🔴 O cartão mostrava a frase DECLARADA (a promessa inteira) enquanto a voz dizia a
+    //    frase DA CENA, que só partilhava seis palavras com ela. O dono, a ver o vídeo de
+    //    11/10: *"aparece essa tela com texto grande e ainda a narração de uma outra coisa.
+    //    não dá pra prestar atenção no que se diz e nem ler o que o texto diz"*. Sem este
+    //    cartão a cena cai nas palavras DITAS, que por construção são o que a voz diz.
+    //    `DECLARADAS_NO_MAPA` e `cenaDizFraseDeclarada` ficam — a conferência ainda os usa.
 
     // 7. O B-ROLL DO APP — só onde a narração fala de juntar tudo num sítio, e no
     //    máximo três vezes no vídeo inteiro.
-    // ⚠️ `escolherBroll` — a tela que a FALA pede, e só depois o rodízio. E `brollDoVideo`
-    //    tira as que a história não comporta. Ver a nota em `BROLL_PERMITIDO`.
-    const podeUsar = brollDoVideo(mapa);
-    if (podeUsar.length && PISTA_TUDO_JUNTO.test(texto) && brollUsado < TETO_DE_BROLL) {
-      const escolha = escolherBroll(texto, podeUsar, usosDoBroll);
-      usosDoBroll[escolha.comp] = (usosDoBroll[escolha.comp] || 0) + 1;
+    // ⚠️ `brollPedidoPelaFala` — só a tela que a FALA pede (08/10/2026: antes caía no
+    //    rodízio quando nenhuma pedia). E `brollDaCena` tira as que a história não comporta
+    //    e as do app antes do capítulo do app. Ver a nota em `BROLL_PERMITIDO`.
+    const podeUsar = brollDaCena(c, mapa);
+    const pedida = podeUsar.length && PISTA_TUDO_JUNTO.test(texto) ? brollPedidoPelaFala(texto, podeUsar, usosDoBroll) : null;
+    if (pedida && brollUsado < TETO_DE_BROLL) {
+      usosDoBroll[pedida.comp] = (usosDoBroll[pedida.comp] || 0) + 1;
       brollUsado++;
-      return { ...c, visual: { tipo: 'broll', comp: escolha.comp, brollFrames: escolha.frames, valores: valoresDoBroll(escolha, mapa), etiqueta } };
+      return { ...c, visual: { tipo: 'broll', comp: pedida.comp, brollFrames: pedida.frames, valores: valoresDoBroll(pedida, mapa), etiqueta } };
     }
 
     // 8. O RE-GANCHO — o que fica em aberto está escrito no mapa, capítulo a capítulo.
     // ⚠️ `primeiraDoBloco` pela MESMA razao da chamada.
+    // 🔴 08/10/2026 — o cartão "o que vem a seguir" deixou de entrar POR CIMA da pergunta
+    //    ao público (dois textos diferentes ao mesmo tempo). A cena fica com as palavras
+    //    ditas, e o cartão vai para DEPOIS dela, sem voz, com o tempo de ler — ver
+    //    `pausaDepois` em `Long.tsx` e `framesDaPausa`.
     if (c.parte === 'regancho' && c.capitulo && primeiraDoBloco.has(indice)) {
       const aberto = mapa.capitulos?.[c.capitulo - 1]?.oQueFicaEmAberto;
-      if (aberto) return { ...c, visual: { tipo: 'frase', texto: aberto, etiquetaTexto: 'o que vem a seguir', variante: 'gancho', etiqueta } };
+      if (aberto) {
+        return {
+          ...c,
+          visual: { tipo: 'palavras', etiqueta },
+          pausaDepois: { texto: aberto, etiquetaTexto: 'o que vem a seguir', variante: 'gancho', frames: framesDaPausa(aberto) },
+        };
+      }
     }
 
     // 9. O CAVALO DE CARGA — as palavras ditas, grandes, como imagem.
@@ -1325,14 +1377,17 @@ export function equilibrar(cenas, { fio = null, mapa = null } = {}) {
       estagio += 1;
       ultimaMetafora = i - 1;
       meio.visual = { ...meio.visual, tipo: 'metafora', fio: fioReal, estagio };
-    } else if (brollDoVideo(mapa).length && brollUsado < TETO_DE_BROLL) {
-      // ⚠️ Aqui a cena foi escolhida por ser a terceira igual seguida, e o texto dela pode
-      //    não pedir tela nenhuma — mas a `pista` continua a mandar quando pede, e a tela
-      //    que a história não comporta continua fora. Ver `BROLL_PERMITIDO`.
-      const escolha = escolherBroll(meio.narration, brollDoVideo(mapa), usosDoBroll);
-      usosDoBroll[escolha.comp] = (usosDoBroll[escolha.comp] || 0) + 1;
-      brollUsado++;
-      meio.visual = { ...meio.visual, tipo: 'broll', comp: escolha.comp, brollFrames: escolha.frames, valores: valoresDoBroll(escolha, mapa) };
+    } else if (brollUsado < TETO_DE_BROLL) {
+      // 🔴 08/10/2026 — só entra se a FALA da cena pedir a tela (`brollPedidoPelaFala`).
+      //    Antes, uma cena escolhida por ser "a terceira igual seguida" levava uma tela
+      //    qualquer do rodízio, e o dono apanhou isso no vídeo de 11/10. Sem pedido, a
+      //    cena fica como está e a passagem dos três desenhos das palavras trata dela.
+      const escolha = brollPedidoPelaFala(meio.narration, brollDaCena(meio, mapa), usosDoBroll);
+      if (escolha) {
+        usosDoBroll[escolha.comp] = (usosDoBroll[escolha.comp] || 0) + 1;
+        brollUsado++;
+        meio.visual = { ...meio.visual, tipo: 'broll', comp: escolha.comp, brollFrames: escolha.frames, valores: valoresDoBroll(escolha, mapa) };
+      }
     }
     // Se os dois orçamentos acabaram, a cena FICA como está. Trocar uma imagem certa
     // por uma errada só para haver variedade é o defeito, não a cura — e a família

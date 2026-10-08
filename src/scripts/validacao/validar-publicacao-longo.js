@@ -1005,9 +1005,16 @@ console.log('\n5-b. AS PARTES GUARDADAS SABEM DE QUE VÍDEO SÃO');
         /papeisDasCenas/.test(longTsxTexto) && /papel === 'ganho'/.test(impactoTexto),
         'sem isto, metade dos socos sai com a cor errada por construção',
       );
+      // 🔴 08/10/2026 — era "o ato 3", cravado. Com QUATRO atos o 3 é o PREÇO (problema),
+      // e a prova obrigava o soco verde em cima de "faltavam trezentos reais" (visto pelo
+      // dono aos 3:03). Agora exige o ÚLTIMO ato, e recusa o número cravado de volta.
       ok(
-        'e o ato 3, a demonstração, a chamada e o fim são sempre GANHO (verde)',
-        /parte === 'demonstracao'[\s\S]{0,120}'ganho'/.test(longTsxTexto) && /capitulo\) >= 3/.test(longTsxTexto),
+        'e o ÚLTIMO ato (a virada), a demonstração, a chamada e o fim são sempre GANHO (verde)',
+        /parte === 'demonstracao'[\s\S]{0,120}'ganho'/.test(longTsxTexto)
+          && /ultimoAto = Math\.max\(/.test(longTsxTexto)
+          && /capitulo\) >= ultimoAto/.test(longTsxTexto)
+          && !/capitulo\) >= 3\)/.test(longTsxTexto),
+        'com 4 atos, "o 3" é o preço — pintá-lo de verde é o soco a contradizer a fala',
       );
       const frameDoSoco = Number((longTsxTexto.match(/SOCO_DA_COR_NA_ABERTURA\s*=\s*(\d+)/) || [])[1]);
       ok(

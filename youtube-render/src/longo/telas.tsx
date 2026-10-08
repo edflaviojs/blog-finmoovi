@@ -632,7 +632,15 @@ export const CartaoDeFrase: React.FC<{ texto: string; etiquetaTexto?: string; va
                  * lado. Fica dentro da folga com margem — e é por isso que 35% (o valor
                  * antigo) não cabia de maneira nenhuma, fosse com que técnica fosse.
                  */
-                transform: `translateY(${interpolate(pop, [0, 1], [22, 0]) - onda * 6}px) scale(${1 + onda * 0.1})`,
+                /**
+                 * 🔴 **10% → 3% em 08/10/2026 — a conta de cima estava errada.** O que a
+                 * escala gasta não é 10% do TAMANHO DA LETRA: é 10% da LARGURA DA PALAVRA.
+                 * "conseguia" a 82px mede ~420px e cresce 42px — 21 de cada lado, o espaço
+                 * inteiro (0,26 × 82 = 21px); com a vizinha também a crescer, encostam. O
+                 * dono viu: *"passoudespercebido"*, e no ensaio de 08/10 *"acharessedinheirono"*.
+                 * A 3%, a palavra mais comprida destes cartões (~600px) gasta 9px por lado.
+                 */
+                transform: `translateY(${interpolate(pop, [0, 1], [22, 0]) - onda * 6}px) scale(${1 + onda * 0.03})`,
                 ...(chamada ? gradientText : {}),
                 ...(chamada
                   ? { filter: `drop-shadow(0 0 ${44 + onda * 26}px rgba(139,92,246,${0.55 + onda * 0.25}))` }

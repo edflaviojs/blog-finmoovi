@@ -804,6 +804,32 @@ jobs:
           TOGETHER_TTS_API_KEY: ${{ secrets.TOGETHER_TTS_API_KEY }}
         run: node src/scripts/youtube/tts-short.js --slug="$SLUG"
 
+      # 🔴 O CHÃO DOS 8 MINUTOS, MEDIDO NA VOZ GRAVADA — 08/10/2026, ordem do dono: *"liga"*.
+      # Até aqui o chão só AVISAVA, e com uma PREVISÃO (palavras ÷ 2,6): o vídeo de 11/10
+      # previa 7:45 e saiu com 7:06, porque a voz fala mais depressa do que a conta. Agora
+      # mede-se com o `timing.json` que a voz acabou de escrever — a mesma conta que corta o
+      # render (`duracaoDoVideoSec`) — e um vídeo curto NÃO sobe: a corrida falha, o GitHub
+      # avisa por e-mail, e nada vai ao ar curto. Fica antes do render de propósito: medir
+      # depois seria gastar meia hora a fazer um vídeo que não pode sair.
+      - name: O chão dos 8 minutos (medido na voz gravada)
+        if: steps.escolher.outputs.skip != 'true' && steps.dia.outputs.so_conteudo != 'true'
+        run: |
+          node --input-type=module -e "
+            import { readFileSync } from 'node:fs';
+            import { duracaoDoVideoSec, CHAO_DO_VIDEO_SEC } from './src/scripts/youtube/srt-longo.js';
+            const slug = process.env.SLUG;
+            const plano = JSON.parse(readFileSync('youtube-render/public/roteiro/' + slug + '.json', 'utf-8'));
+            const timing = JSON.parse(readFileSync('youtube-render/public/audio/' + slug + '/timing.json', 'utf-8'));
+            const seg = duracaoDoVideoSec(plano, timing);
+            const mmss = (s) => Math.floor(s / 60) + ':' + String(Math.round(s % 60)).padStart(2, '0');
+            console.log('⏱️  duração MEDIDA na voz: ' + mmss(seg) + ' (chão: ' + mmss(CHAO_DO_VIDEO_SEC) + ')');
+            if (seg < CHAO_DO_VIDEO_SEC) {
+              console.log('::error::o vídeo ficaria com ' + mmss(seg) + ', abaixo do chão de 8 minutos. Não sobe curto: o guião precisa de mais história.');
+              process.exit(1);
+            }
+            console.log('✅ passa o chão.');
+          "
+
       # ── 3. AS LEGENDAS ───────────────────────────────────────────────────────
       # ⚠️ O gerador é PRÓPRIO do longo. O do Short punha a legenda até 7,13 s adiantada
       # neste vídeo — a linha do tempo é outra (respiro, transições, cartões de capítulo).

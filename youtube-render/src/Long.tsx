@@ -121,6 +121,15 @@ export type LongScene = {
   capitulo?: number | null;
   tituloCapitulo?: string;
   abreCapitulo?: boolean;
+  /**
+   * 🔴 A TELA DE TEXTO SEM VOZ, DEPOIS DA CENA — 08/10/2026, ordem do dono: *"quando tiver
+   * tela com texto desse jeito a tela tem que ter mais tempo e na minha visão sem
+   * narração"*. O cartão "o que vem a seguir" entrava POR CIMA da pergunta ao público:
+   * dois textos diferentes ao mesmo tempo, e ninguém lia nenhum. Agora ocupa lugar
+   * PRÓPRIO na linha do tempo, como o cartão de capítulo, com os fotogramas já contados
+   * no montador (o tempo de ler aquela frase). Ver `linhaDoTempo`.
+   */
+  pausaDepois?: { texto: string; etiquetaTexto?: string; variante?: string; frames: number } | null;
 };
 
 export type LongScript = {
@@ -215,6 +224,7 @@ export const linhaDoTempo = (script: LongScript, timing: LongTiming, fps: number
   const frames = longFramesFrom(durationsSec(script, timing), fps);
   const cartoes: number[] = [];   // fotograma em que o cartão de capítulo começa (-1 = não há)
   const inicios: number[] = [];   // fotograma em que a cena começa
+  const pausas: number[] = [];    // fotograma em que a tela sem voz começa (-1 = não há)
   let acc = 0;
   script.scenes.forEach((cena, i) => {
     const temCartao = Boolean(cena.abreCapitulo && cena.capitulo);
@@ -222,8 +232,13 @@ export const linhaDoTempo = (script: LongScript, timing: LongTiming, fps: number
     if (temCartao) acc += CARTAO_CAPITULO_FRAMES;
     inicios.push(acc);
     acc += frames[i];
+    // ⚠️ ESPELHADO em render-longo.mjs, srt-longo.js e descricao-longo.js — os quatro
+    // leem o MESMO `pausaDepois.frames` do guião, nenhum recalcula. Ver `LongScene`.
+    const pausa = Math.max(0, Math.round(Number(cena.pausaDepois?.frames) || 0));
+    pausas.push(pausa > 0 ? acc : -1);
+    acc += pausa;
   });
-  return { frames, inicios, cartoes, conteudo: acc };
+  return { frames, inicios, cartoes, pausas, conteudo: acc };
 };
 
 /**
@@ -846,7 +861,7 @@ export const GUIAO_DE_RESERVA: LongScript = {
 
 export const Long: React.FC<{ script?: LongScript; timing?: LongTiming; slug?: string }> = ({ script = GUIAO_DE_RESERVA, timing = null }) => {
   const { fps } = useVideoConfig();
-  const { frames, inicios, cartoes, conteudo } = linhaDoTempo(script, timing, fps);
+  const { frames, inicios, cartoes, pausas, conteudo } = linhaDoTempo(script, timing, fps);
   // as marcas do trilho apontam para o CARTÃO, que é onde o capítulo começa de facto
   const marcasDeCapitulo = cartoes.filter((v) => v >= 0);
 
@@ -902,9 +917,17 @@ export const Long: React.FC<{ script?: LongScript; timing?: LongTiming; slug?: s
    * ⚠️ **Nada aqui pergunta a uma IA se a frase é positiva.** Pedir isso seria trocar uma
    * verdade que já está no guião por um palpite — e é a regra da casa não o fazer.
    */
+  /**
+   * 🔴 **O ATO DA VIRADA É O ÚLTIMO, não "o 3" — 08/10/2026.** Desde 01/10 o guião tem
+   * QUATRO atos (susto · armadilha · PREÇO · virada), e o 3 passou a ser o preço, que é
+   * problema. O número cravado pintava-o de verde: o dono viu, aos 3:03, um clarão verde
+   * com seta para cima em cima de *"faltavam trezentos reais"*. Agora é o último capítulo
+   * do guião, seja ele qual for — a régua anda com a estrutura.
+   */
+  const ultimoAto = Math.max(0, ...script.scenes.map((c) => Number(c.capitulo) || 0));
   const papeisDasCenas = script.scenes.map((c): 'problema' | 'ganho' => {
     if (c.parte === 'demonstracao' || c.parte === 'chamada' || c.parte === 'fecho') return 'ganho';
-    if (Number(c.capitulo) >= 3) return 'ganho';
+    if (ultimoAto > 0 && Number(c.capitulo) >= ultimoAto) return 'ganho';
     return 'problema';
   });
   const socos = socosDoVideoLongo(inicios, conteudo, fps, familiasDasCenas, papeisDasCenas);
@@ -953,6 +976,20 @@ export const Long: React.FC<{ script?: LongScript; timing?: LongTiming; slug?: s
             <CartaoDeCapitulo numero={cena.capitulo || 0} titulo={cena.tituloCapitulo || ''} />
             <SomDoMomento ficheiro={SOM.deslize} volume={0.3} />
             <SomDoMomento ficheiro={SOM.brilho} atraso={12} volume={0.22} />
+          </Sequence>
+        ) : null))}
+
+        {/* 🔴 A TELA DE TEXTO SEM VOZ — 08/10/2026. Ver `pausaDepois` em `LongScene`: a
+            frase grande fica sozinha no ecrã, o tempo de a ler, sem narração por cima. */}
+        {script.scenes.map((cena, i) => (pausas[i] >= 0 && cena.pausaDepois ? (
+          <Sequence key={`pausa${i}`} from={pausas[i]} durationInFrames={cena.pausaDepois.frames}>
+            <CartaoDeFrase
+              texto={cena.pausaDepois.texto}
+              etiquetaTexto={cena.pausaDepois.etiquetaTexto}
+              variante={cena.pausaDepois.variante}
+              frames={cena.pausaDepois.frames}
+            />
+            <SomDoMomento ficheiro={SOM.deslize} volume={0.25} />
           </Sequence>
         ) : null))}
 
