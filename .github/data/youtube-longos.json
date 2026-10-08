@@ -231,7 +231,7 @@
         "organizar orçamento mensal",
         "sobrar dinheiro no mês"
       ],
-      "estado": "proposto",
+      "estado": "publicado",
       "viralRef": {
         "videoId": "xV2A3YN7r88",
         "title": "COMO ORGANIZAR SUAS FINANÇAS DE OUTUBRO A DEZEMBRO DE 2026",
@@ -242,7 +242,9 @@
           "uma palavra em maiúsculas a marcar o tom"
         ]
       },
-      "propostoEm": "2026-09-28T10:19:08.303Z"
+      "propostoEm": "2026-09-28T10:19:08.303Z",
+      "publicadoEm": "2026-10-08T09:53:39.649Z",
+      "videoId": "CaVE9iO-om8"
     }
   ]
 }

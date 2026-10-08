@@ -96,10 +96,15 @@
     ]
   },
   "economizar-300-por-mes": {
-    "estado": "reservado",
+    "videoId": "CaVE9iO-om8",
+    "uploadedAt": "2026-10-08T09:53:39.648Z",
     "publishAt": "2026-10-11T22:00:00.000Z",
-    "reservadoEm": "2026-10-08T09:20:07.608Z",
-    "corrida": "37755845236",
-    "refeito": "08/10/2026 — o vídeo wrwwdfXtMoo foi APAGADO pelo dono (guião dos modelos grátis); este tema volta a ser feito com o guião reescrito"
+    "titulo": "Economizar R$ 300 por mês sem cortar o essencial",
+    "capitulos": 7,
+    "legendas": [
+      "pt",
+      "en",
+      "es"
+    ]
   }
 }
