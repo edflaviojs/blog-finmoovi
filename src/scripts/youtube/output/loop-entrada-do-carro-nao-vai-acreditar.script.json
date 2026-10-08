@@ -1,0 +1,118 @@
+{
+  "slug": "loop-entrada-do-carro-nao-vai-acreditar",
+  "formato": "loop16",
+  "term": "Juntar a entrada do carro",
+  "category": "vida",
+  "keyword": "CARRO",
+  "valor": "R$ 8.000",
+  "situacao": "entrada-do-carro",
+  "gancho": "nao-vai-acreditar",
+  "ganchoFamilia": "não vai acreditar",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "escada",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você não vai acreditar, mas eu vi entrada",
+      "durationSec": 3.68,
+      "shots": [
+        {
+          "anchor": "acreditar",
+          "visual": {
+            "type": "statement",
+            "text": "Você não vai acreditar"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "entrada",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escada"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Quando vi, oito mil reais tinham ido embora só nisso",
+      "durationSec": 4.61,
+      "shots": [
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escada"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "tinham",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 8.000 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Parei, respirei e comecei a juntar devagar",
+      "durationSec": 3.22,
+      "shots": [
+        {
+          "anchor": "Parei",
+          "visual": {
+            "type": "statement",
+            "text": "Parei e comecei a juntar"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "respirei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escada"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Você não vai acreditar, mas eu vi entrada",
+      "durationSec": 3.68,
+      "shots": [
+        {
+          "anchor": "acreditar",
+          "visual": {
+            "type": "statement",
+            "text": "Você não vai acreditar"
+          }
+        },
+        {
+          "anchor": "entrada",
+          "visual": {
+            "type": "statement",
+            "text": "Você não vai acreditar"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.19
+}

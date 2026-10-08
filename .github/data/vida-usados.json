@@ -700,5 +700,11 @@
     "gancho": "voces-viram",
     "turno": "noite",
     "em": "2026-10-07T11:17:31.062Z"
+  },
+  {
+    "situacao": "entrada-do-carro",
+    "gancho": "nao-vai-acreditar",
+    "turno": "manha",
+    "em": "2026-10-08T11:33:05.659Z"
   }
 ]
