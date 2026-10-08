@@ -182,7 +182,36 @@ function getTextProviders() {
  * O ESCRITOR continua um só (gpt-5-2, decisão medida em §25.6 — o Sonnet estourava
  * o tamanho 5 vezes em 5); a rede gratuita continua por baixo, como sempre.
  */
+/**
+ * 🔴 O GEMINI FLASH GRÁTIS LOGO A SEGUIR AOS PAGOS — 08/10/2026, pedido do dono: *"não tem
+ * como vermos a free do Gemini do google?"*. Medido nesse dia: o kie.ai ficou SEM SALDO
+ * (claude-sonnet-5 "Credits insufficient" ×15, gpt-5-2 "resposta vazia" ×46) e o guião do
+ * longo de 11/10 foi escrito pelo nemotron/gpt-oss — saiu com "Em 2023" e contradições.
+ *
+ * Perguntado ao servidor com a chave do projeto "FinMoovi Blog" (NÍVEL GRATUITO, sem
+ * cartão — não há como cobrar): os Pro dão 429 (cota zero no grátis); os Flash respondem.
+ * O mais novo é o `gemini-3.8-flash`. ⚠️ Às vezes devolve 503 "high demand" — por isso
+ * `insistir` e, se falhar, a fila segue para os grátis de sempre.
+ * ⚠️ A chave pré-paga ("...ItTw", projeto finmoovi-youtube) NUNCA vai para o segredo.
+ */
+function geminiGratisParaOPapel() {
+  if (!process.env.GEMINI_API_KEY) return [];
+  return [{
+    name: 'gemini-gratis',
+    url: 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions',
+    apiKey: process.env.GEMINI_API_KEY,
+    model: process.env.GEMINI_ESCRITOR_MODEL || 'gemini-3.8-flash',
+    formato: 'openai',
+    insistir: 3,
+  }];
+}
+
 function provedoresPagos(papel, servico) {
+  if (!papel) return [];
+  return [...provedoresDoKie(papel, servico), ...geminiGratisParaOPapel()];
+}
+
+function provedoresDoKie(papel, servico) {
   const chaveDoServico = servico && process.env[`KIE_AI_KEY_${String(servico).toUpperCase()}`];
   const chave = chaveDoServico || process.env.KIE_AI_KEY;
   if (!chave || !papel) return [];
