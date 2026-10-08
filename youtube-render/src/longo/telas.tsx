@@ -575,13 +575,35 @@ export const CartaoDeFrase: React.FC<{ texto: string; etiquetaTexto?: string; va
   return (
     <AbsoluteFill style={{ overflow: 'hidden' }}>
       <FundoAbstrato variante={aoLado ? 1 : 2} frames={frames} />
+      {/* ♦ O BONECO DO AVISO — 08/10/2026, ordem do dono: *"nessa tela queria que colocasse o
+          boneco novo que criei… no canto inferior direito"* e *"em todas essas telas daqui a
+          pouco vai ser esse boneco"*. Ele pensa (a cabeça muda de cor) e acaba a apontar com o
+          FinMoovi num balão — 10s, e a tela dura ~9s, por isso nunca recomeça. O preto sai
+          pelo mesmo filtro de brilho do `Boneco` (o `screen` não serve dentro de uma cena). */}
+      {aviso ? (
+        <>
+          <svg width={0} height={0} style={{ position: 'absolute' }}>
+            <filter id="aviso-sem-preto" colorInterpolationFilters="sRGB">
+              <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  1.2 2.4 0.4 0 -0.06" />
+            </filter>
+          </svg>
+          <div style={{
+            position: 'absolute', right: 60, bottom: 30, width: 450, height: 800,
+            opacity: interpolate(frame, [4, 16], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }),
+            transform: `translateY(${interpolate(spring({ frame: frame - 4, fps, config: { damping: 16, mass: 0.7 } }), [0, 1], [60, 0])}px)`,
+          }}>
+            <OffthreadVideo src={staticFile(BONECO_DO_AVISO)} muted style={{ width: 450, height: 800, filter: 'url(#aviso-sem-preto)' }} />
+          </div>
+        </>
+      ) : null}
       <AbsoluteFill style={{
         justifyContent: 'center', alignItems: aoLado ? 'flex-start' : 'center',
         padding: `0 ${aoLado ? 120 : 190}px ${FUNDO_LIVRE}px ${aoLado ? 120 : 190}px`,
         transform: `scale(${aproxima})`,
       }}>
       <div style={{
-        maxWidth: 1500, textAlign: aoLado ? 'left' : 'center',
+        // ⚠️ no aviso a frase estreita para não encostar no boneco do canto (ver abaixo)
+        maxWidth: aviso ? 1180 : 1500, textAlign: aoLado ? 'left' : 'center',
         opacity: entra, transform: `translateY(${interpolate(entra, [0, 1], [40, 0])}px)`,
         borderLeft: aoLado ? `10px solid ${BRAND.violet}` : 'none',
         paddingLeft: aoLado ? 44 : 0,
@@ -606,7 +628,7 @@ export const CartaoDeFrase: React.FC<{ texto: string; etiquetaTexto?: string; va
               <circle cx={26} cy={36} r={3} fill="#fff" />
             </svg>
             <span style={{
-              fontFamily: DISPLAY, fontWeight: 900, fontSize: 50, letterSpacing: 3,
+              fontFamily: DISPLAY, fontWeight: 900, fontSize: 46, letterSpacing: 3, whiteSpace: 'nowrap',
               color: '#ef4444', textTransform: 'uppercase', textShadow: '0 0 18px rgba(239,68,68,0.6)',
             }}>{etiquetaTexto}</span>
           </div>
@@ -1110,6 +1132,8 @@ const MOLDURA = { largura: 1180, altura: 620 };
  * ⚠️ E nunca é ampliado até o corpo tocar a borda: em plano fechado vê-se o retângulo.
  */
 const BONECO_ALTURA = 900;
+/** ♦ O boneco das telas "DAQUI A POUCO" (gerado pelo dono, 08/10/2026). */
+export const BONECO_DO_AVISO = 'manus/_teste-boneco/33-daqui-a-pouco-pensando.mp4';
 export const Boneco: React.FC<{
   ficheiro: string; segundos?: number; ciclo?: boolean; frames: number;
   narration: string; words?: PalavraDita[]; pular?: number;

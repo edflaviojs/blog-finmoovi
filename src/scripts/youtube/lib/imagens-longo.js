@@ -1412,6 +1412,12 @@ export function dirigirImagens(cenas, mapa = {}, slug = null) {
  * na demonstração do app, que tem a sua própria tela.
  */
 export const RAZAO_DO_AVISO_NO_CAPITULO = 0.6;
+/**
+ * ♦ O aviso dura PELO MENOS o boneco dele (`BONECO_DO_AVISO` em `longo/telas.tsx`, 10s a 24fps):
+ * o clipe acaba a apontar com o FinMoovi num balão, e uma tela mais curta cortava o fim
+ * — que é a melhor parte. 10,2s = 306 fotogramas a 30fps.
+ */
+export const FRAMES_DO_BONECO_DO_AVISO = 306;
 /** "por que eu não conseguia…" → "Por que eu não conseguia…!" — maiúscula e pontuação (pedido do dono). */
 export function fraseDoAviso(texto) {
   const t = String(texto || '').trim().replace(/\s+/g, ' ');
@@ -1433,7 +1439,7 @@ export function avisosDoMeio(cenas, mapa = {}) {
     // 🔴 O DESENHO DO DONO (08/10/2026): etiqueta de ALERTA "DAQUI A POUCO VOU TE CONTAR:" e a
     // frase por baixo a começar em maiúscula e a acabar com pontuação (`fraseDoAviso`).
     const frase = fraseDoAviso(texto);
-    saida[alvo.j].pausaDepois = { texto: frase, etiquetaTexto: 'Daqui a pouco vou te contar:', variante: 'aviso', frames: framesDaPausa(`daqui a pouco vou te contar ${frase}`) };
+    saida[alvo.j].pausaDepois = { texto: frase, etiquetaTexto: 'Daqui a pouco vou te contar:', variante: 'aviso', frames: Math.max(FRAMES_DO_BONECO_DO_AVISO, framesDaPausa(`daqui a pouco vou te contar ${frase}`)) };
   });
   return saida;
 }
