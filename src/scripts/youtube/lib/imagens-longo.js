@@ -49,6 +49,7 @@
 import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { valoresEmDinheiro, CHAMADA_NO_ECRA, CHAMADA_ETIQUETA_ECRA, tipoDoValor } from './schema-longo.js';
+import { BONECO_POR_ID, PASTA_DOS_BONECOS, TETO_DE_BONECOS, bonecoCabeNaCena } from './bonecos-do-longo.js';
 
 /** Sem acentos e em minúsculas — para as pistas abaixo casarem com fala real. */
 const semAcento = (t) => String(t || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
@@ -734,7 +735,12 @@ const ILUSTRACOES = [
  * Escrevê-lo lá outra vez seria a mesma constante em dois ficheiros — a família de defeito
  * nº1 desta casa (o respiro em §67.7 vivia em QUATRO). Muda-se aqui, muda em todo o lado.
  */
-export const TETO_DE_ILUSTRACOES = 14;
+/**
+ * 🔴 14 → 8 em 08/10/2026 — os BONECOS entraram (até 8) e disputam o mesmo espaço: somar
+ * os dois transformava o vídeo num desenho animado. O total de cenas com desenho fica
+ * igual; metade passa a ter gente a mexer-se. Plano em `docs/BONECO-NO-VIDEO-LONGO.md` §6.
+ */
+export const TETO_DE_ILUSTRACOES = 8;
 const INTERVALO_DA_ILUSTRACAO = 2;
 
 /**
@@ -856,6 +862,51 @@ export function escolherLugaresDaFoto(cenas, ocupados = new Set(), slug = null, 
     escolhidos.push(i);
     lugares.set(i, achada);
   });
+  return lugares;
+}
+
+/**
+ * ♦ ONDE ENTRA CADA BONECO — 08/10/2026. Lê as escolhas gravadas em
+ * `.github/data/bonecos-do-longo.json` (pelo leitor `bonecos-longo.js`, ou à mão), e
+ * aplica as guardas do plano: só bonecos do catálogo, nunca o mesmo duas vezes, nunca dois
+ * a menos de 2 cenas, nunca em cena já ocupada, nunca contra o momento da história
+ * (`bonecoCabeNaCena`) e no máximo `TETO_DE_BONECOS`.
+ * ⚠️ Sem ficheiro, ou slug que não passou pelo escolhedor, devolve VAZIO — a mesma trava
+ * das fotografias: melhor sem boneco do que um boneco escolhido para outro guião.
+ */
+export function bonecosDoCatalogo(slug, catalogoDeMesa = null) {
+  if (!slug) return [];
+  try {
+    let catalogo = catalogoDeMesa;
+    if (!catalogo) {
+      const p = join(process.cwd(), '.github', 'data', 'bonecos-do-longo.json');
+      if (!existsSync(p)) return [];
+      catalogo = JSON.parse(readFileSync(p, 'utf-8'));
+    }
+    const doVideo = catalogo?.videos?.[slug];
+    return Array.isArray(doVideo) ? doVideo.filter((e) => e && e.cena != null && e.boneco) : [];
+  } catch (err) {
+    console.log(`⚠️ não deu para ler o catálogo dos bonecos (${err.message}) — este vídeo sai sem eles.`);
+    return [];
+  }
+}
+
+export function escolherLugaresDoBoneco(cenas, ocupados = new Set(), slug = null, catalogoDeMesa = null) {
+  const lugares = new Map();
+  const escolhas = bonecosDoCatalogo(slug, catalogoDeMesa);
+  if (!escolhas.length) return lugares;
+  const ultimoAto = Math.max(0, ...cenas.map((c) => Number(c.capitulo) || 0));
+  const usados = new Set();
+  for (const e of escolhas) {
+    if (lugares.size >= TETO_DE_BONECOS) break;
+    const i = cenas.findIndex((c) => String(c.id) === String(e.cena));
+    const b = BONECO_POR_ID.get(String(e.boneco));
+    if (i < 0 || !b || ocupados.has(i) || usados.has(b.id)) continue;
+    if (!bonecoCabeNaCena(b, cenas[i], ultimoAto)) continue;
+    if ([...lugares.keys()].some((j) => Math.abs(i - j) < 2)) continue;
+    usados.add(b.id);
+    lugares.set(i, b);
+  }
   return lugares;
 }
 
@@ -1129,6 +1180,7 @@ export const assinaturaDoEcra = (v = {}) => {
     case 'ilustracao': return `ilustracao/${v.figura}`;
     case 'metafora': return `metafora/${v.fio}/${v.estagio}`;
     case 'foto': return `foto/${v.ficheiro}`;
+    case 'boneco': return `boneco/${v.figura}`;
     default: return String(v.tipo);
   }
 };
@@ -1320,16 +1372,30 @@ export function dirigirImagens(cenas, mapa = {}, slug = null) {
   for (const i of lugaresDaFoto.keys()) ocupados.add(i);
 
   /**
+   * ♦ A 2ª PASSAGEM E TRÊS QUARTOS — OS BONECOS (08/10/2026). Entram antes das ilustrações
+   * porque disputam o MESMO espaço (ver `TETO_DE_BONECOS` e o plano §6): o boneco é gente
+   * a mexer-se, a família que mais pontua; a ilustração fica com o que sobrar.
+   */
+  const lugaresDoBoneco = escolherLugaresDoBoneco(cenas, ocupados, slug);
+  for (const i of lugaresDoBoneco.keys()) ocupados.add(i);
+  // ⚠️ A ilustração guarda distância do boneco pela mesma razão que guarda da fotografia.
+  const imagensGrandes = new Map([...lugaresDaFoto, ...lugaresDoBoneco]);
+
+  /**
    * A 3ª PASSAGEM — as ilustrações entram no que ainda sobrou, e guardam distância das
    * fotografias pela mesma razão que já guardavam da metáfora: duas imagens grandes
    * coladas lêem-se como "agora o vídeo é de imagens", em vez de duas coisas diferentes.
    */
-  const lugaresDaIlustracao = escolherLugaresDaIlustracao(cenas, lugaresDaMetafora, fio, ocupados, lugaresDaFoto, ilustracoesDoCatalogo(slug));
+  const lugaresDaIlustracao = escolherLugaresDaIlustracao(cenas, lugaresDaMetafora, fio, ocupados, imagensGrandes, ilustracoesDoCatalogo(slug));
 
   const dirigida = primeiraPassagem.map((c, i) => {
     if (lugaresDaFoto.has(i)) {
       const f = lugaresDaFoto.get(i);
       return { ...c, visual: { tipo: 'foto', ficheiro: f.ficheiro, nome: f.nome, movimento: f.movimento, etiqueta: c.visual.etiqueta } };
+    }
+    if (lugaresDoBoneco.has(i)) {
+      const b = lugaresDoBoneco.get(i);
+      return { ...c, visual: { tipo: 'boneco', ficheiro: `${PASTA_DOS_BONECOS}/${b.ficheiro}`, figura: b.id, segundos: b.segundos, ciclo: b.ciclo, etiqueta: c.visual.etiqueta } };
     }
     return lugaresDaIlustracao.has(i)
       ? { ...c, visual: { tipo: 'ilustracao', figura: lugaresDaIlustracao.get(i), etiqueta: c.visual.etiqueta } }

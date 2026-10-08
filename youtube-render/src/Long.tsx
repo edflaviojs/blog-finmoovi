@@ -48,7 +48,7 @@ import {
 // ── as telas que nascem do texto (04/08/2026) ────────────────────────────────
 import {
   Etiqueta, CartaoDeNumero, CartaoDaConta, TelaDoApp, CartaoDeFrase, Metafora, PalavrasNaTela,
-  CartaoDeCapitulo, CARTAO_CAPITULO_FRAMES, Ilustracao, Foto, MaoQueClica, momentoDoClique,
+  CartaoDeCapitulo, CARTAO_CAPITULO_FRAMES, Ilustracao, Foto, Boneco, MaoQueClica, momentoDoClique,
   atrasoDaUltimaLinha, IconesDaCena, TelaFinal, TELA_FINAL_FRAMES,
 } from './longo/telas';
 import type { LinhaDaConta } from './longo/telas';
@@ -83,7 +83,10 @@ const BROLL: Record<string, React.FC> = {
  * valores do guião. Esta composição não inventa nem calcula nenhum.
  */
 export type LongVisual = {
-  tipo: 'numero' | 'conta' | 'app' | 'frase' | 'metafora' | 'ilustracao' | 'foto' | 'palavras' | 'broll';
+  tipo: 'numero' | 'conta' | 'app' | 'frase' | 'metafora' | 'ilustracao' | 'foto' | 'palavras' | 'broll' | 'boneco';
+  /** ♦ boneco (08/10/2026): duração do clipe e se recomeça ou congela — ver `Boneco`. */
+  segundos?: number;
+  ciclo?: boolean;
   /** qual das 32 metáforas animadas do render do Short entra nesta cena */
   figura?: string;
   /** a fotografia (caminho dentro de `public/`) e o passeio que ela faz */
@@ -652,6 +655,8 @@ const SomDaFamilia: React.FC<{ visual?: LongVisual; frames: number }> = ({ visua
     case 'ilustracao':
     // a fotografia entra com o mesmo deslize das outras imagens grandes
     case 'foto':
+    // ♦ e o boneco também (08/10/2026) — é uma imagem grande que entra de lado
+    case 'boneco':
       return <SomDoMomento ficheiro={SOM.deslize} volume={0.22} />;
     /**
      * ═══ 🔴 AS DUAS FAMÍLIAS QUE ENTRAVAM EM SILÊNCIO — 10/08/2026 ═══
@@ -729,6 +734,7 @@ const CenaLonga: React.FC<{
       case 'metafora': return <Metafora fio={v.fio} estagio={v.estagio} frames={frames} />;
       case 'ilustracao': return <Ilustracao figura={v.figura || ''} frames={frames} />;
       case 'foto': return <Foto ficheiro={v.ficheiro || ''} movimento={v.movimento} frames={frames} />;
+      case 'boneco': return <Boneco ficheiro={v.ficheiro || ''} segundos={v.segundos} ciclo={v.ciclo} frames={frames} narration={cena.narration} words={palavras} pular={pular} />;
       case 'broll': return <CenaDeBroll comp={v.comp} brollFrames={v.brollFrames} valores={v.valores} />;
       default: return <PalavrasNaTela narration={cena.narration} frames={frames} words={palavras} variante={Number(v.variante ?? 0)} pular={pular} />;
     }
@@ -740,7 +746,8 @@ const CenaLonga: React.FC<{
    * a legenda punha o mesmo texto duas vezes no mesmo fotograma — que é o primo do
    * defeito §34.3-6, em que a legenda transparecia por baixo da capa.
    */
-  const comLegenda = !v || v.tipo !== 'palavras';
+  // ♦ o boneco traz as palavras ditas ao lado dele (08/10/2026) — mesma razão.
+  const comLegenda = !v || (v.tipo !== 'palavras' && v.tipo !== 'boneco');
 
   /**
    * 🔴 A PALAVRA-FANTASMA SAIU TAMBÉM DAS CENAS DE `frase` — 01/10/2026.

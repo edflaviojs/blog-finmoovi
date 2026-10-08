@@ -21,7 +21,7 @@
  */
 
 import React from 'react';
-import { AbsoluteFill, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
+import { AbsoluteFill, Freeze, interpolate, Loop, OffthreadVideo, spring, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
 import { BRAND, DISPLAY, BODY, gradientText } from '../theme';
 import { panel, Pop3D } from '../broll/card3d-kit';
 import { HeroCard } from '../CreditCards3D';
@@ -1064,6 +1064,68 @@ export const CartaoDeCapitulo: React.FC<{ numero: number; titulo: string; frames
  */
 const ESCALA_DA_ILUSTRACAO = 1.06;
 const MOLDURA = { largura: 1180, altura: 620 };
+
+/**
+ * ♦ O BONECO — 08/10/2026, ordem do dono: *"Já quero que trabalhe nos bonecos novos!"*
+ *
+ * Os 32 movimentos da Manus (catálogo em `src/scripts/youtube/lib/bonecos-do-longo.js`).
+ * O desenho segue o plano (`docs/BONECO-NO-VIDEO-LONGO.md` §2), e as duas restrições
+ * medidas decidem tudo:
+ *  · **são VERTICAIS (720×1280) num vídeo DEITADO** — esticado não vira figura, vira
+ *    fundo. Por isso é o boneco de UM LADO e as palavras ditas do OUTRO, a forma do
+ *    `AtorLateral`, a família que mais pontua;
+ *  · **acabam ANTES da cena** (4s contra ~6,8s). Os cíclicos recomeçam (`Loop`); os que
+ *    têm fim (cair, comemorar) CONGELAM no último fotograma — recomeçar uma queda lê-se
+ *    como defeito. Por cima vai uma aproximação lenta, para nada ficar parado.
+ *
+ * ⚠️ O fundo do clipe é preto puro (0–3 de 255, medido) e sai por um filtro de brilho
+ * (`#boneco-sem-preto`) — o `screen` do teste de 01/10 NÃO serve aqui, ver no corpo.
+ * ⚠️ E nunca é ampliado até o corpo tocar a borda: em plano fechado vê-se o retângulo.
+ */
+const BONECO_ALTURA = 900;
+export const Boneco: React.FC<{
+  ficheiro: string; segundos?: number; ciclo?: boolean; frames: number;
+  narration: string; words?: PalavraDita[]; pular?: number;
+}> = ({ ficheiro, segundos = 4, ciclo = false, frames, narration, words, pular = 0 }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const entra = spring({ frame, fps, config: { damping: 18, mass: 0.8 } });
+  const aproxima = interpolate(frame, [0, Math.max(1, frames)], [1, 1.06]);
+  const doClipe = Math.max(1, Math.floor(segundos * fps) - 2);
+  const largura = Math.round(BONECO_ALTURA * (720 / 1280));
+  const video = <OffthreadVideo src={staticFile(ficheiro)} muted style={{ width: largura, height: BONECO_ALTURA, filter: 'url(#boneco-sem-preto)' }} />;
+  const clipe = ciclo
+    ? <Loop durationInFrames={doClipe}>{video}</Loop>
+    : <Freeze frame={doClipe - 1} active={frame >= doClipe - 1}>{video}</Freeze>;
+  return (
+    <AbsoluteFill style={{ overflow: 'hidden' }}>
+      <FundoAbstrato variante={1} frames={frames} />
+      {/* 🔴 O PRETO SAI PELO BRILHO, NÃO PELO `screen` — 08/10/2026, visto no primeiro
+          ensaio: dentro do vídeo cada cena é uma camada isolada (a reacção dá-lhe um
+          `transform`), e o `screen` misturava o clipe com uma camada VAZIA — ficava um
+          retângulo preto. O teste de 01/10 passou porque lá o boneco estava direto sobre o
+          fundo. Aqui o próprio clipe ganha transparência pelo brilho: preto (0–3 de 255,
+          medido) vira transparente, o traço branco fica opaco, e a cor dos 7 coloridos fica. */}
+      <svg width={0} height={0} style={{ position: 'absolute' }}>
+        <filter id="boneco-sem-preto" colorInterpolationFilters="sRGB">
+          <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  1.2 2.4 0.4 0 -0.06" />
+        </filter>
+      </svg>
+      <div style={{
+        position: 'absolute', left: 110, top: (1080 - BONECO_ALTURA) / 2 - 50,
+        width: largura, height: BONECO_ALTURA,
+        opacity: entra,
+        transform: `translateX(${interpolate(entra, [0, 1], [-60, 0])}px) scale(${aproxima})`,
+        transformOrigin: 'bottom center',
+      }}>
+        {clipe}
+      </div>
+      <div style={{ position: 'absolute', left: 110 + largura, right: 0, top: 0, bottom: 0 }}>
+        <PalavrasNaTela narration={narration} frames={frames} words={words} variante={1} pular={pular} />
+      </div>
+    </AbsoluteFill>
+  );
+};
 
 export const Ilustracao: React.FC<{ figura: string; frames: number }> = ({ figura, frames }) => {
   const frame = useCurrentFrame();
