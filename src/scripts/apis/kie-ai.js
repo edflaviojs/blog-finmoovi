@@ -208,17 +208,35 @@ const ESPERAS_NO_CONGESTIONAMENTO_SEG = [120, 180, 240];
 const DESCANSO_DO_CONGESTIONADO_MIN = 15;
 const congestionadoAte = new Map();
 
+/**
+ * 🔴 VÁRIOS FLASH, NÃO UM — 08/10/2026, medido no ensaio do guião da semana seguinte: à
+ * tarde o 3.8 e o 3.7 deram 503 durante MAIS de 9 minutos seguidos, enquanto o 3.5 e o 3
+ * respondiam em 2–3 segundos. O congestionamento é POR MODELO. Por isso cada um é tentado
+ * na hora (503 → o próximo, sem esperar) e só quando TODOS estão cheios é que se espera
+ * os minutos da regra do dono — e aí no último, com as esperas.
+ * ⚠️ Os nomes foram perguntados ao servidor com a chave gratuita (`/v1beta/models`); os
+ * Pro dão 429 (cota zero no nível gratuito) e o 2.5-flash dá 404.
+ */
+const GEMINI_FLASH_GRATIS = ['gemini-3.8-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview', 'gemini-3.7-flash'];
+
 function geminiGratisParaOPapel() {
   if (!process.env.GEMINI_API_KEY) return [];
-  return [{
-    name: 'gemini-gratis',
+  const base = {
     url: 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions',
     apiKey: process.env.GEMINI_API_KEY,
-    model: process.env.GEMINI_ESCRITOR_MODEL || 'gemini-3.8-flash',
     formato: 'openai',
+  };
+  const modelos = process.env.GEMINI_ESCRITOR_MODEL ? [process.env.GEMINI_ESCRITOR_MODEL] : GEMINI_FLASH_GRATIS;
+  const rapidos = modelos.map((model) => ({ ...base, name: `gemini-gratis/${model}`, model }));
+  // O último volta ao primeiro da lista, agora COM as esperas (2, 3 e 4 minutos).
+  const comEspera = {
+    ...base,
+    name: 'gemini-gratis/espera',
+    model: modelos[0],
     insistir: ESPERAS_NO_CONGESTIONAMENTO_SEG.length + 1,
     esperasNoCongestionamento: ESPERAS_NO_CONGESTIONAMENTO_SEG,
-  }];
+  };
+  return [...rapidos, comEspera];
 }
 
 function provedoresPagos(papel, servico) {
@@ -444,11 +462,16 @@ export async function generateText(prompt, options = {}) {
             // Por isso aqui não é só "ligar o corte": é o PAR (corte + espaço)
             // que sana o silêncio, e o espaço cada chamador já decide sozinho
             // via `maxTokens`.
+            // 🔴 E O GEMINI FLASH LEVA 'none' — MEDIDO 08/10/2026 no ensaio do guião:
+            // sem o campo, o 3.5-flash e o 3-flash gastavam ~2900 de 3000 fichas a
+            // "pensar" e devolviam 31–82 palavras de um pedido de 230 (finish_reason
+            // "length") — JSON cortado, 5 tentativas, guião nenhum. Com 'low' igual.
+            // Com 'none': 214 e 230 palavras, "stop". O lite nunca pensou; fica igual.
             ...(() => {
-              const entende = /gpt-oss|nemotron/i.test(useModel);
+              const entende = /gpt-oss|nemotron|gemini/i.test(useModel);
               if (!entende) return {};
               const esforco = esforcoRaciocinio
-                || (/nemotron/i.test(useModel) ? 'none'
+                || (/nemotron|gemini/i.test(useModel) ? 'none'
                   : /gpt-oss/i.test(useModel) ? 'low' : null);
               return esforco ? { reasoning_effort: esforco } : {};
             })(),
