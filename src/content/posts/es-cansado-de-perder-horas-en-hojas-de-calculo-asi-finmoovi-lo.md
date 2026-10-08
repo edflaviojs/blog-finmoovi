@@ -3,6 +3,7 @@ title: "¿Cansado de perder horas en hojas de cálculo? Así FinMoovi lo simplif
 description: "Descubre cómo FinMoovi elimina el trabajo manual de las hojas de cálculo con captura por voz y OCR, todo offline y seguro."
 tickerHeadline: "La hoja que se actualiza sola"
 image: "/images/posts/cansado-de-perder-horas-nas-planilhas-como-o-finmoovi.webp"
+imageAlt: "Agenda marrón, calculadora, monedas y plantas verdes sobre fondo blanco."
 category: "ferramentas"
 locale: "es"
 tags: ["FinMoovi","captura inteligente","control de gastos","hojas de cálculo financieras","automatización de finanzas","informes IA","modo offline","sustituir hoja de cálculo","app financiero","organización financiera","finanzas personales"]

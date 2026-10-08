@@ -4,6 +4,7 @@ definition: "What margin of guarantee is and how it shows up in your everyday mo
 title: "margin of guarantee - Financial Glossary"
 description: "What margin of guarantee is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/margem-de-garantia.webp"
+imageAlt: "Gold coin stacks, glass jars with plants, and a speaker on a dark surface."
 category: "basico"
 tags: ["margin of guarantee", "glossary", "finance"]
 author: "FinMoovi"

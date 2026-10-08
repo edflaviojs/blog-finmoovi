@@ -3,6 +3,7 @@ title: "Tired of Losing Hours to Spreadsheets? How FinMoovi Simplifies Everythin
 description: "Discover how FinMoovi eliminates manual spreadsheet work with voice and OCR capture — all offline and secure."
 tickerHeadline: "The spreadsheet that disappears on its o"
 image: "/images/posts/cansado-de-perder-horas-nas-planilhas-como-o-finmoovi.webp"
+imageAlt: "Tan leather notebook, black calculator, scattered coins, and green plant on white surface."
 category: "ferramentas"
 locale: "en"
 tags: ["FinMoovi","smart capture","expense tracking","financial spreadsheets","finance automation","AI reports","offline mode","replace spreadsheet","finance app","financial organization","personal finance"]

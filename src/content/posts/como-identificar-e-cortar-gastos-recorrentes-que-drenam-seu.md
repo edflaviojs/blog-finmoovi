@@ -3,6 +3,7 @@ title: "Como identificar e cortar gastos recorrentes que drenam seu orçamento e
 description: "Descubra como mapear despesas automáticas, evitar surpresas e usar o FinMoovi para ganhar controle financeiro em poucos minutos."
 tickerHeadline: "O gasto que suga seu salário"
 image: "/images/posts/como-identificar-e-cortar-gastos-recorrentes-que-drenam-seu.webp"
+imageAlt: "Caderneta marrom, calculadora e moedas sobre superfície branca com plantas verdes."
 category: "investimentos"
 locale: "pt"
 tags: ["gastos recorrentes","despesas automáticas","controle de contas","FinMoovi","orçamento pessoal","economia doméstica","alertas financeiros","gasto recurrente"]

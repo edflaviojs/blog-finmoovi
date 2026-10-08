@@ -3,6 +3,7 @@ title: "How to Spot and Cut Recurring Expenses That Drain Your Budget in 2026"
 description: "Learn to map automatic bills, avoid surprises, and use FinMoovi to regain financial control in minutes."
 tickerHeadline: "The expense that sucks your paycheck"
 image: "/images/posts/como-identificar-e-cortar-gastos-recorrentes-que-drenam-seu.webp"
+imageAlt: "Brown notebook, calculator, and coins on white marble with green plant stems."
 category: "investimentos"
 locale: "en"
 tags: ["recurring expenses","automatic bills","account control","FinMoovi","personal budget","household savings","financial alerts","recurring spend"]

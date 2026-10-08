@@ -3,6 +3,7 @@ title: "Cómo identificar y eliminar los gastos recurrentes que agotan tu presup
 description: "Aprende a mapear gastos automáticos, evitar sorpresas y usar FinMoovi para controlar tus finanzas en minutos."
 tickerHeadline: "El gasto que chupa tu salario"
 image: "/images/posts/como-identificar-e-cortar-gastos-recorrentes-que-drenam-seu.webp"
+imageAlt: "Cartera marrón, calculadora, monedas y plantas verdes sobre superficie de mármol blanco."
 category: "investimentos"
 locale: "es"
 tags: ["gastos recurrentes","gastos automáticos","control de cuentas","FinMoovi","presupuesto personal","economía doméstica","alertas financieras","gasto recurrente"]

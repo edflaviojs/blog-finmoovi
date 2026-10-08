@@ -4,6 +4,7 @@ definition: "O que é margem de garantia e como isso aparece no seu dia a dia �
 title: "margem de garantia - Glossário Financeiro"
 description: "O que é margem de garantia e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/margem-de-garantia.webp"
+imageAlt: "Pilhas de moedas douradas, vaso de vidro com planta e caixas de som sobre fundo escuro."
 category: "basico"
 tags: ["margem de garantia", "glossário", "finanças"]
 author: "FinMoovi"

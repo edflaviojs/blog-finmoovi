@@ -3,6 +3,7 @@ title: "Cansado de perder horas nas planilhas? Como o FinMoovi simplifica tudo e
 description: "Descubra como o FinMoovi elimina o trabalho manual das planilhas com captura por voz e OCR, tudo offline e seguro."
 tickerHeadline: "A planilha que some sozinha"
 image: "/images/posts/cansado-de-perder-horas-nas-planilhas-como-o-finmoovi.webp"
+imageAlt: "Caderno marrom, calculadora, moedas e plantas verdes sobre superfície branca."
 category: "ferramentas"
 locale: "pt"
 tags: ["FinMoovi","captura inteligente","controle de gastos","planilhas financeiras","automação de finanças","relatórios IA","modo offline","substituir planilha","app financeiro","organização financeira","finmoovi","finanças pessoais"]
