@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-07T17:34:09.716Z",
-  "sourceCursor": 1,
+  "updatedAt": "2026-10-08T15:57:55.915Z",
+  "sourceCursor": 2,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -2107,8 +2107,10 @@
       "category": null,
       "priority": 2,
       "source": "gsc-gap",
-      "status": "pending",
-      "addedAt": "2026-09-14T13:27:29.761Z"
+      "status": "used",
+      "addedAt": "2026-09-14T13:27:29.761Z",
+      "usedAt": "2026-10-08T15:57:55.915Z",
+      "usedBy": "gerar-dicas-financeiras"
     },
     {
       "keyword": "calculadora sac price",

@@ -70,7 +70,7 @@ Just open FinMoovi, select **Shopping Mode**, create your weekly meal list, and 
 The app pulls price data from large supermarket chains and updates the figures daily. When you add an item, it shows the current average, allowing quick comparisons.
 
 ### Can I use FinMoovi without an internet connection?
-Yes. Offline mode saves your list locally and syncs automatically when you reconnect, updating prices in the background.
+Yes. [Offline mode](/en/posts/en-tired-of-losing-hours-to-spreadsheets-how-finmoovi) saves your list locally and syncs automatically when you reconnect, updating prices in the background.
 
 ![Frequently asked questions](/images/posts/como-transformar-a-ida-ao-supermercado-em-economia-real-2026-6.webp)
 

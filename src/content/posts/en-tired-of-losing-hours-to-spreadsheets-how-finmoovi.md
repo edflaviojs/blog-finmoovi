@@ -19,7 +19,7 @@ seo:
   keywords: ["FinMoovi","smart capture","expense tracking","financial spreadsheets","finance automation","AI reports","offline mode","replace spreadsheet","finance app","financial organization","personal finance"]
 ---
 
-Many of us have spent a weekend trying to log every purchase, utility bill, and unexpected expense in a spreadsheet that never seems to balance. You open Excel, type a number, fix an error, return to real life, and when it’s time to close the sheet, you realize you forgot that last-minute snack or that the water bill hasn’t been entered. The result? Wasted hours, outdated spreadsheets, and the feeling that your money is slipping through your fingers.
+Many of us have spent a weekend trying to log every purchase, utility bill, and unexpected expense in a spreadsheet that never seems to balance. You open [Excel](/en/posts/en-how-to-build-a-simple-cash-flow-spreadsheet-in-excel-and), type a number, fix an error, return to real life, and when it’s time to close the sheet, you realize you forgot that last-minute snack or that the water bill hasn’t been entered. The result? Wasted hours, outdated spreadsheets, and the feeling that your money is slipping through your fingers.
 
 ### The burden of manual spreadsheets
 
@@ -31,7 +31,7 @@ The truth is most people still use spreadsheets because they believe it’s the 
 
 ### How FinMoovi changes the game
 
-Picture this: you’re at the supermarket checkout, the cashier hands you the receipt, and instead of scribbling the amount on paper or opening an app, you simply say out loud: “Expense of $89.50 at the grocery store.” FinMoovi, using its **Smart Capture** technology, recognizes your speech, converts it to text, identifies the “Groceries” category, and logs the expense in your cash flow — no screen tapping needed, no internet required — everything happens offline, and your data stays encrypted on your own device.
+Picture this: you’re at the supermarket checkout, the cashier hands you the receipt, and instead of scribbling the amount on paper or opening an app, you simply say out loud: “Expense of $89.50 at the grocery store.” FinMoovi, using its **Smart Capture** technology, recognizes your speech, converts it to text, identifies the “Groceries” category, and logs the expense in your [cash flow](/en/glossario/en-cash-flow) — no screen tapping needed, no internet required — everything happens offline, and your data stays encrypted on your own device.
 
 Back home, the electricity bill is still on the kitchen counter. You open the camera, point it at the bill, and the app, via OCR, automatically extracts the amount, due date, and “Utilities” category. In under 10 seconds, the bill appears in your weekly report, ready to view on FinMoovi’s intelligent dashboard powered by AI.
 
@@ -55,13 +55,13 @@ Back home, the electricity bill is still on the kitchen counter. You open the ca
 
 ### Why automation matters for peace of mind
 
-Having financial control doesn’t have to mean anxiety. When information is entered automatically, you eliminate the internal nag of remembering every expense. FinMoovi still sends gentle reminders — for example, it alerts you when your water bill is nearing its due date or when your grocery spending exceeds the monthly average. These alerts are subtle but effective, stopping small oversizes from turning into big debt.
+Having [financial control](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end) doesn’t have to mean anxiety. When information is entered automatically, you eliminate the internal nag of remembering every expense. FinMoovi still sends gentle [reminders](/en/posts/en-forgot-to-pay-a-bill-how-to-fix-it-in-2026) — for example, it alerts you when your water bill is nearing its due date or when your grocery spending exceeds the monthly average. These alerts are subtle but effective, stopping small oversizes from turning into big [debt](/en/glossario/en-debt).
 
 Plus, the offline mode ensures you can keep recording even while traveling or in areas with weak signal. When the connection returns, the app syncs with the cloud (if you choose) and keeps your history secure.
 
 ### Data that backs it up
 
-- **Investopedia** states that automating personal finance can reduce time spent on financial management by up to 80% ([source](https://www.investopedia.com)).
+- **Investopedia** states that automating personal [finance](/en/glossario/en-finance) can reduce time spent on [financial management](/en/posts/en-5-alternatives-to-mobills-in-2026) by up to 80% ([source](https://www.investopedia.com)).
 - **OECD** highlights that digitizing household financial processes increases record accuracy by about 70% (source).
 
 ### Quick tips to start the 30-day challenge
@@ -69,7 +69,7 @@ Plus, the offline mode ensures you can keep recording even while traveling or in
 1. **Use Smart Capture for every purchase** — even your morning coffee.
 2. **Scan every bill** as soon as you receive it.
 3. **Set aside 10 minutes at the end of each day** to review the “Today” panel.
-4. **Adjust monthly goals** in the app to know how much you can spend on leisure without blowing your budget.
+4. **Adjust [monthly goals](/en/posts/en-how-freelancers-can-organize-their-finances-in-2026)** in the app to know how much you can spend on leisure without blowing your budget.
 
 By month’s end, you’ll have a complete, gap-free history and be able to compare actual spending against your goals — all in just a few clicks.
 

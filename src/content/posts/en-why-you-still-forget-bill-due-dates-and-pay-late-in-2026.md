@@ -46,7 +46,7 @@ Spending those five minutes now means you won’t get unpleasant surprises in yo
 | Situation | Before FinMoovi | After FinMoovi |
 |-----------|----------------|----------------|
 | **Time spent** | 15 min each week reviewing spreadsheets and emails | 5 min entering bills and letting the app do the work |
-| **Late fees** | About two penalties per quarter (roughly $200) | Zero fees, payments always on time |
+| **Late fees** | About two penalties per quarter (roughly $200) | Zero fees, [payments](/en/posts/en-how-to-use-the-price-table-to-plan-your-payments-in-2026) always on time |
 | **Stress** | Guilt when late notifications arrive | Peace of mind, focus on other priorities |
 | **Visibility** | Bills scattered across papers and different apps | Single dashboard, clear view of upcoming dates |
 

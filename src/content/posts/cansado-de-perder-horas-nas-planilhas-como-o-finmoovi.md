@@ -23,7 +23,7 @@ Muitos de nós já passamos aquele fim de semana tentando colocar cada compra, c
 
 ### O peso da planilha manual
 
-A verdade é que a maioria das pessoas ainda usa planilhas porque acreditam que é a única forma de ter “visão” das finanças. Mas esse método tem três problemas gritantes:
+A verdade é que a maioria das pessoas ainda usa planilhas porque acreditam que é a única forma de ter “visão” das [finanças](/glossario/financas). Mas esse método tem três problemas gritantes:
 
 1. **Tempo consumido** – Cada inserção pode levar de 30 segundos a dois minutos. Multiplique isso por dezenas de transações no mês e você tem dezenas de horas “presas” a um teclado.
 2. **Propensão a erros** – Um dígito trocado, uma categoria esquecida ou um valor copiado errado pode distorcer todo o panorama, levando a decisões equivocadas.
@@ -31,7 +31,7 @@ A verdade é que a maioria das pessoas ainda usa planilhas porque acreditam que 
 
 ### Como o FinMoovi muda o jogo
 
-Imagine a cena: você está no caixa do supermercado, a atendente entrega o comprovante e, ao invés de anotar o valor num papel ou abrir um app, você simplesmente diz em voz alta: “Gasto de 89,50 no mercado”. O FinMoovi, usando sua tecnologia **Smart Capture**, reconhece a fala, converte em texto, identifica a categoria “Supermercado” e já registra a despesa no seu fluxo de caixa. Não é preciso tocar na tela, não há necessidade de conexão com a internet – tudo acontece offline e os dados ficam criptografados no seu próprio aparelho.
+Imagine a cena: você está no caixa do supermercado, a atendente entrega o comprovante e, ao invés de anotar o valor num papel ou abrir um app, você simplesmente diz em voz alta: “Gasto de 89,50 no mercado”. O FinMoovi, usando sua tecnologia **[Smart Capture](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto)**, reconhece a fala, converte em texto, identifica a categoria “Supermercado” e já registra a despesa no seu [fluxo de caixa](/glossario/fluxo-de-caixa). Não é preciso tocar na tela, não há necessidade de conexão com a internet – tudo acontece offline e os dados ficam criptografados no seu próprio aparelho.
 
 Chegando em casa, a conta de luz ainda está na mesa da cozinha. Você abre a câmera, aponta para a nota fiscal e o app, por meio de OCR, extrai automaticamente o valor, a data de vencimento e a categoria “Energia”. Em menos de 10 segundos, a conta está no seu relatório semanal, pronta para ser visualizada no dashboard inteligente que o FinMoovi gera com IA.
 
@@ -61,7 +61,7 @@ Além disso, o modo offline garante que, mesmo em viagens ou em áreas com sinal
 
 ### Dados que dão respaldo
 
-- **Investopedia** aponta que a automação de finanças pessoais pode reduzir o tempo gasto em gestão financeira em até 80 % ([fonte](https://www.investopedia.com)).
+- **Investopedia** aponta que a automação de [finanças pessoais](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar) pode reduzir o tempo gasto em [gestão financeira](/posts/5-alternativas-ao-mobills-em-2026) em até 80 % ([fonte](https://www.investopedia.com)).
 - **OECD** destaca que a digitalização de processos financeiros domésticos aumenta a precisão dos registros em cerca de 70 % (fonte).
 
 ### Dicas rápidas para iniciar o desafio de 30 dias
@@ -69,7 +69,7 @@ Além disso, o modo offline garante que, mesmo em viagens ou em áreas com sinal
 1. **Use o Smart Capture em todas as compras** – até mesmo o café da manhã.
 2. **Escaneie todas as contas** assim que as receber.
 3. **Reserve 10 minutos ao final de cada dia** para conferir o painel “Hoje”.
-4. **Ajuste metas mensais** no app para saber quanto pode gastar em lazer sem sair do orçamento.
+4. **Ajuste [metas mensais](/posts/como-freelancers-podem-organizar-as-financas-em-2026)** no app para saber quanto pode gastar em lazer sem sair do orçamento.
 
 Ao final do mês, você terá um histórico completo, sem lacunas, e poderá comparar o gasto real com a meta estabelecida, tudo em poucos cliques.
 
@@ -81,7 +81,7 @@ O app utiliza um modelo de reconhecimento de voz e OCR que roda localmente no di
 Sim. O FinMoovi usa criptografia de nível militar (AES‑256) para proteger cada registro. Além disso, o acesso ao app pode ser protegido por PIN, impressão digital ou reconhecimento facial.
 
 ### Posso usar o FinMoovi em diferentes moedas?
-Claro. O app suporta múltiplas moedas (por exemplo, real, dólar, euro) e converte automaticamente quando você adiciona transações em outra moeda, usando taxas de câmbio atualizadas.
+Claro. O app suporta múltiplas moedas (por exemplo, real, dólar, euro) e converte automaticamente quando você adiciona transações em outra [moeda](/glossario/moeda), usando taxas de [câmbio](/glossario/cambio) atualizadas.
 
 ### O que acontece se eu esquecer de falar a despesa no momento da compra?
 Você pode registrar a despesa depois, usando a função “Adicionar manualmente” ou simplesmente tirar uma foto do comprovante; o OCR ainda extrairá as informações corretas.

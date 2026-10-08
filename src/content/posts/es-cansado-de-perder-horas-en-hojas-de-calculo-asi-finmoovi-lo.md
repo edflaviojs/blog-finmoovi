@@ -23,7 +23,7 @@ Muchos de nosotros ya hemos pasado un fin de semana intentando registrar cada co
 
 ### El peso de la hoja manual
 
-La verdad es que la mayoría de las personas sigue usando hojas porque creen que es la única forma de tener “visión” de sus finanzas. Pero ese método tiene tres problemas evidentes:
+La verdad es que la mayoría de las personas sigue usando hojas porque creen que es la única forma de tener “visión” de sus [finanzas](/es/glossario/es-finanzas). Pero ese método tiene tres problemas evidentes:
 
 1. **Tiempo consumido** – Cada registro puede llevar de 30 segundos a dos minutos. Multiplica eso por decenas de transacciones al mes y tendrás decenas de horas “atrapadas” al teclado.  
 2. **Propensión a errores** – Un dígito equivocado, una categoría olvidada o un valor copiado mal pueden distorsionar todo el panorama, llevando a decisiones equivocadas.  
@@ -31,7 +31,7 @@ La verdad es que la mayoría de las personas sigue usando hojas porque creen que
 
 ### Cómo FinMoovi cambia el juego
 
-Imagina la escena: estás en la caja del supermercado, la cajera entrega el ticket y, en lugar de anotar el valor en papel o abrir una app, simplemente dices en voz alta: “Gasto de 89,50 en el mercado”. FinMoovi, usando su tecnología **Smart Capture**, reconoce la voz, la convierte en texto, identifica la categoría “Supermercado” y ya registra el gasto en tu flujo de caja. No necesitas tocar la pantalla, no requiere conexión a internet – todo ocurre offline y los datos quedan cifrados en tu propio dispositivo.
+Imagina la escena: estás en la caja del supermercado, la cajera entrega el ticket y, en lugar de anotar el valor en papel o abrir una app, simplemente dices en voz alta: “Gasto de 89,50 en el mercado”. FinMoovi, usando su tecnología **[Smart Capture](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no)**, reconoce la voz, la convierte en texto, identifica la categoría “Supermercado” y ya registra el gasto en tu [flujo de caja](/es/glossario/es-flujo-de-caja). No necesitas tocar la pantalla, no requiere conexión a internet – todo ocurre offline y los datos quedan cifrados en tu propio dispositivo.
 
 Al llegar a casa, la factura de luz está sobre la mesa de la cocina. Abres la cámara, apuntas al documento y la app, mediante OCR, extrae automáticamente el importe, la fecha de vencimiento y la categoría “Energía”. En menos de 10 segundos, la factura está en tu informe semanal, lista para ser visualizada en el panel inteligente que FinMoovi genera con IA.
 
@@ -55,13 +55,13 @@ Al llegar a casa, la factura de luz está sobre la mesa de la cocina. Abres la c
 
 ### Por qué la automatización importa para la tranquilidad mental
 
-Tener control financiero no tiene que ser sinónimo de ansiedad. Cuando la información se ingresa automáticamente, eliminas la “auto‑presión” de recordar cada gasto. FinMoovi también envía recordatorios sutiles – por ejemplo, avisa cuando la factura de agua está próxima a vencer o cuando el gasto en el supermercado supera la media mensual. Estos avisos son discretos, pero eficaces para impedir que pequeños excesos se conviertan en grandes deudas.
+Tener [control financiero](/es/posts/es-como-saber-si-tu-objetivo-de-ahorro-avanza-de-verdad-en-2026) no tiene que ser sinónimo de ansiedad. Cuando la información se ingresa automáticamente, eliminas la “auto‑presión” de recordar cada gasto. FinMoovi también envía recordatorios sutiles – por ejemplo, avisa cuando la factura de agua está próxima a vencer o cuando el gasto en el supermercado supera la media mensual. Estos avisos son discretos, pero eficaces para impedir que pequeños excesos se conviertan en grandes deudas.
 
 Además, el modo offline garantiza que, incluso en viajes o zonas con señal débil, sigas registrando todo. Cuando la conexión vuelve, la app sincroniza con la nube (si lo deseas) y mantiene el historial seguro.
 
 ### Datos que respaldan
 
-- **Investopedia** señala que la automatización de finanzas personales puede reducir el tiempo dedicado a la gestión financiera hasta en un 80 % ([fuente](https://www.investopedia.com)).  
+- **Investopedia** señala que la automatización de [finanzas personales](/es/posts/es-5-alternativas-a-organizze-en-2026-opciones-para-administrar) puede reducir el tiempo dedicado a la [gestión financiera](/es/posts/es-5-alternativas-al-mobills-en-2026) hasta en un 80 % ([fuente](https://www.investopedia.com)).  
 - **OECD** destaca que la digitalización de procesos financieros domésticos aumenta la precisión de los registros en alrededor del 70 % (fuente).
 
 ### Tips rápidos para iniciar el reto de 30 días
@@ -69,7 +69,7 @@ Además, el modo offline garantiza que, incluso en viajes o zonas con señal dé
 1. **Usa Smart Capture en todas tus compras** – incluso en el café de la mañana.  
 2. **Escanea todas las facturas** en cuanto las recibas.  
 3. **Reserva 10 minutos al final de cada día** para revisar el panel “Hoy”.  
-4. **Ajusta metas mensuales** en la app para saber cuánto puedes gastar en ocio sin salir del presupuesto.
+4. **Ajusta [metas mensuales](/es/posts/es-como-los-freelancers-pueden-organizar-sus-finanzas-en-2026)** en la app para saber cuánto puedes gastar en ocio sin salir del presupuesto.
 
 Al final del mes tendrás un historial completo, sin lagunas, y podrás comparar el gasto real con la meta establecida, todo con unos pocos clics.
 
@@ -82,7 +82,7 @@ La app utiliza un modelo de reconocimiento de voz y OCR que se ejecuta localment
 Sí. FinMoovi emplea cifrado de nivel militar (AES‑256) para proteger cada registro. Además, el acceso a la app puede protegerse con PIN, huella dactilar o reconocimiento facial.
 
 **¿Puedo usar FinMoovi con diferentes monedas?**  
-Claro. La app soporta múltiples monedas (por ejemplo, euro, dólar, libra) y convierte automáticamente cuando añades transacciones en otra divisa, usando tipos de cambio actualizados.
+Claro. La app soporta múltiples monedas (por ejemplo, euro, dólar, libra) y convierte automáticamente cuando añades transacciones en otra divisa, usando tipos de [cambio](/es/glossario/es-cambio) actualizados.
 
 **¿Qué pasa si olvido registrar el gasto en el momento de la compra?**  
 Puedes ingresarlo después usando la función “Agregar manualmente” o simplemente tomar una foto del comprobante; el OCR seguirá extrayendo la información correcta.
