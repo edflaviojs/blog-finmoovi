@@ -240,9 +240,20 @@ jobs:
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
           YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        # 🔴 **NA ETAPA 2 A RESERVA DA SEGUNDA NÃO PODE OCUPAR O DOMINGO CONTRA SI PRÓPRIA —
+        # 08/10/2026.** Sem `--slug`, a conferência contava a reserva que a Etapa 1 fez para
+        # ESTE vídeo como se fosse de outro: "o domingo já tem dono", e a terça desistia em
+        # 45 segundos, a verde. Foi assim em 06/10 (`economizar-300-por-mes`), a 1ª semana
+        # em que as duas etapas correram de verdade. Na segunda não há reserva própria
+        # ainda, por isso a pergunta só se faz na Etapa 2.
         run: |
+          RESERVADO=""
+          if [ "${{ steps.dia.outputs.so_conteudo }}" != "true" ]; then
+            RESERVADO="$(node src/scripts/youtube/upload-longo.js --qual-reservado)"
+            if [ -n "$RESERVADO" ]; then echo "📌 a reserva de \"$RESERVADO\" é deste vídeo — não conta contra ele."; fi
+          fi
           set +e
-          node src/scripts/youtube/upload-longo.js --conferir-estreia
+          node src/scripts/youtube/upload-longo.js --conferir-estreia ${RESERVADO:+--slug=$RESERVADO}
           CODE=$?
           set -e
           if [ "$CODE" = "78" ]; then
