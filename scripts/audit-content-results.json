@@ -1,5 +1,24 @@
 [
   {
+    "file": "en-margin-of-guarantee.md",
+    "dir": "glossario",
+    "severity": 3,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 5,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "dívidas",
+        "investimentos",
+        "valor"
+      ]
+    }
+  },
+  {
     "file": "en-fgc-guarantee.md",
     "dir": "glossario",
     "severity": 2,
@@ -33,27 +52,6 @@
         "LCA"
       ],
       "ptLeftovers": []
-    }
-  },
-  {
-    "file": "en-long.md",
-    "dir": "glossario",
-    "severity": 2,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": [
-        "ações",
-        "ação",
-        "poupança",
-        "investimentos",
-        "valor"
-      ]
     }
   },
   {
@@ -2658,6 +2656,21 @@
     }
   },
   {
+    "file": "en-how-to-spot-and-cut-recurring-expenses-that-drain-your.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-how-to-stop-outstanding-balances-from-sabotaging-your-budget.md",
     "dir": "posts",
     "severity": 0,
@@ -3109,6 +3122,21 @@
   },
   {
     "file": "en-loan.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-long.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -4338,6 +4366,21 @@
     }
   },
   {
+    "file": "en-tired-of-losing-hours-to-spreadsheets-how-finmoovi.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-tired-of-manually-logging-every-expense-and-losing-track-of.md",
     "dir": "posts",
     "severity": 0,
@@ -5343,6 +5386,21 @@
     }
   },
   {
+    "file": "es-cansado-de-perder-horas-en-hojas-de-calculo-asi-finmoovi-lo.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-capital-de-giro.md",
     "dir": "glossario",
     "severity": 0,
@@ -5869,6 +5927,21 @@
   },
   {
     "file": "es-como-evitar-que-el-saldo-pendiente-arruine-tu-presupuesto-en.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-como-identificar-y-eliminar-los-gastos-recurrentes-que.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -7864,6 +7937,21 @@
   },
   {
     "file": "es-margen-de-ganancia.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-margen-de-garantia.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {

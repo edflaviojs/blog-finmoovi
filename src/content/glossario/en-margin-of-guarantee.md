@@ -18,79 +18,79 @@ seo:
   keywords: ["margin of guarantee", "glossary", "finance"]
 ---
 
-## O que é margem de garantia
+## What is margin of guarantee
 
-Imagine que você quer comprar um celular novo, mas ainda não tem o dinheiro todo na conta. Você pensa em usar o cartão de crédito, mas a fatura já está quase no limite. Uma solução que aparece nas conversas de amigos é “usar a margem de garantia”: você deixa um bem (como um carro ou um imóvel) como segurança e o banco libera um crédito proporcional ao valor desse bem. Essa reserva, chamada margem de garantia, funciona como um colchão que permite que você acesse recursos sem precisar vender nada imediatamente.
+Imagine you want to buy a new phone, but you don’t have all the money in your account yet. You think about using your credit card, but the bill is already near its limit. A solution that comes up in conversations with friends is “using the margin of guarantee”: you leave an asset (like a car or property) as security, and the bank releases credit proportional to the value of that asset. This reserve, called margin of guarantee, works like a cushion that lets you access funds without having to sell anything right away.
 
-![O que é margem de garantia](/images/glossario/margem-de-garantia-inline-1.webp)
-
-
-
-A margem de garantia não é um empréstimo tradicional. Ela não gera juros enquanto o bem fica “travado”. O que acontece é que a instituição financeira calcula um percentual do valor de mercado do bem (geralmente entre 30 % e 70 %) e disponibiliza esse montante como limite de crédito. Se você usar parte desse limite, o banco pode, a qualquer momento, vender o bem para cobrir o que deve, caso você não pague. Enquanto isso, o bem continua na sua posse, e você pode usá‑lo normalmente.
-
-## Como a margem de garantia funciona na prática
-
-- **Escolha do bem:** pode ser um carro, um imóvel, um título de investimento ou até mesmo um saldo em conta corrente que você decide “travar”.
-- **Avaliação:** a instituição faz uma avaliação rápida (às vezes automática) para definir o valor de mercado.
-- **Definição do percentual:** a partir desse valor, determina‑se quanto pode ser liberado. Por exemplo, se seu carro vale 20 mil e o banco aceita 50 %, você tem 10 mil de margem.
-- **Uso do crédito:** o limite aparece como se fosse um cartão de crédito ou uma conta corrente. Você pode pagar contas, fazer compras ou transferir para a conta principal.
-- **Reembolso:** ao pagar o que usou, o limite volta a ficar disponível. Se decidir liberar o bem, basta solicitar a devolução da margem e o bem sai da garantia.
-
-Esse mecanismo é muito útil para quem tem ativos, mas prefere não vendê‑los ou não quer comprometer o fluxo de caixa com um empréstimo tradicional, que costuma ter juros mais altos e burocracia maior.
-
-## Vantagens e cuidados
-
-- **Juros menores ou inexistentes:** enquanto o bem está como garantia, o banco costuma cobrar apenas taxas de manutenção, não juros sobre o valor liberado.
-- **Flexibilidade:** o limite pode ser usado como quiser, sem precisar de aprovação a cada compra.
-- **Risco controlado:** se você não pagar, o bem pode ser leiloado, mas isso só acontece em último caso.
-
-![Vantagens e cuidados](/images/glossario/margem-de-garantia-inline-3.webp)
+![What is margin of guarantee](/images/glossario/margem-de-garantia-inline-1.webp)
 
 
 
-Por outro lado, é preciso ficar atento a:
+Margin of guarantee is not a traditional loan. It doesn’t generate interest while the asset is “locked.” What happens is that the financial institution calculates a percentage of the market value of the asset (usually between 30% and 70%) and makes that amount available as a credit limit. If you use part of that limit, the bank can, at any time, sell the asset to cover what you owe, if you don’t pay. Meanwhile, the asset remains in your possession, and you can use it normally.
 
-- **Desvalorização do bem:** se o carro ou imóvel perder valor, o banco pode reduzir o limite ou exigir mais garantia.
-- **Custos de avaliação:** algumas instituições cobram uma taxa única para avaliar o bem.
-- **Limite de uso:** nem todas as despesas podem ser pagas com a margem (por exemplo, alguns tipos de investimento podem ser restritos).
+## How margin of guarantee works in practice
 
-## Como o FinMoovi ajuda a gerenciar sua margem de garantia
+- **Asset selection:** it can be a car, property, an investment title, or even a checking account balance you decide to “lock.”
+- **Evaluation:** the institution makes a quick evaluation (sometimes automatic) to determine the market value.
+- **Percentage definition:** based on that value, it determines how much can be released. For example, if your car is worth $20,000 and the bank accepts 50%, you have $10,000 of margin.
+- **Credit use:** the limit appears as if it were a credit card or a checking account. You can pay bills, make purchases, or transfer to your main account.
+- **Repayment:** when you pay back what you used, the limit becomes available again. If you decide to release the asset, you just request the return of the margin and the asset is removed from the guarantee.
 
-Gerenciar um limite que depende de ativos pode ser confuso, principalmente quando você tem várias contas, cartões e metas financeiras. O FinMoovi traz tudo isso para a palma da mão, e um recurso que faz a diferença é o **smart capture**: basta tirar uma foto do contrato de garantia ou gravar a voz dizendo “coloquei meu carro como margem” que o app reconhece automaticamente o valor, o percentual liberado e já categoriza como “Margem de Garantia”. Assim, você nunca perde de vista quanto está disponível e quanto já foi usado.
+This mechanism is very useful for people who have assets but prefer not to sell them or don’t want to strain cash flow with a traditional loan, which often has higher interest and more bureaucracy.
 
-Além disso, o FinMoovi oferece:
+## Advantages and precautions
 
-- **Multi‑currency:** se você tem ativos em diferentes moedas (por exemplo, um carro avaliado em dólares ou um imóvel em euros), o app converte tudo para a sua moeda base, permitindo comparar limites de forma clara.
-- **Fluxo de caixa e relatórios:** veja em tempo real quanto da sua margem está comprometida, quanto ainda pode ser usado e como isso impacta seu saldo geral.
-- **Planejamento mensal e metas:** inclua a margem de garantia como fonte de recursos nos seus planos de pagamento de dívidas ou na meta de comprar aquele eletrodoméstico.
-- **Cartões e faturas:** o limite da margem aparece como uma “linha de crédito” nos seus cartões, facilitando o controle de gastos.
-- **Modo compras:** crie listas de compras, adicione itens e veja o total em tempo real, já descontando o que está disponível na margem.
-- **Alertas e lembretes:** receba notificações quando o limite cair abaixo de um percentual que você definiu, ou quando houver risco de desvalorização do bem.
-- **Offline/PWA:** mesmo sem internet, você pode registrar novas despesas ou consultar o limite; na próxima conexão tudo sincroniza.
+- **Lower or no interest:** while the asset is held as guarantee, the bank usually charges only maintenance fees, not interest on the released amount.
+- **Flexibility:** the limit can be used as you wish, without needing approval for each purchase.
+- **Controlled risk:** if you don’t pay, the asset may be auctioned, but this only happens as a last resort.
 
-## Três dicas práticas para usar a margem de garantia com segurança
+![Advantages and precautions](/images/glossario/margem-de-garantia-inline-3.webp)
 
-**Practical tip:** **Mantenha um registro fotográfico atualizado** do bem usado como garantia. Assim, se precisar renegociar ou provar o valor, você tem tudo à mão no FinMoovi.
 
-**Practical tip:** **Defina um alerta de 30 % de uso** no app. Quando o limite cair para 30 % do total, o FinMoovi avisa, evitando que você chegue perto do ponto de risco de perda do bem.
 
-**Practical tip:** **Combine a margem com um fundo de emergência**. Use a margem apenas para despesas planejadas (como reformas ou compra de equipamentos) e mantenha um pequeno caixa separado para imprevistos, assim o bem não fica em risco por emergências inesperadas.
+On the other hand, you need to watch out for:
 
-## Quando vale a pena escolher margem de garantia
+- **Asset depreciation:** if the car or property loses value, the bank may reduce the limit or ask for more guarantee.
+- **Evaluation costs:** some institutions charge a one-time fee to evaluate the asset.
+- **Usage limits:** not all expenses can be paid with the margin (for example, some types of investment may be restricted).
 
-- **Você tem ativos valiosos e não quer vendê‑los agora:** a margem permite transformar patrimônio em dinheiro sem perder a posse.
-- **Precisa de crédito rápido:** a avaliação costuma ser instantânea, principalmente em plataformas digitais.
-- **Quer evitar juros altos:** como a margem costuma ter custos menores, ela pode ser mais barata que um empréstimo pessoal.
-- **Planeja projetos de médio prazo:** se a necessidade de dinheiro é de alguns meses a um ano, a margem oferece flexibilidade sem comprometer o fluxo de caixa.
+## How FinMoovi helps you manage your margin of guarantee
 
-## Como montar um plano de uso inteligente
+Managing a limit that depends on assets can be confusing, especially when you have multiple accounts, cards, and financial goals. FinMoovi brings all of this to the palm of your hand, and a feature that makes a difference is **smart capture**: just take a photo of the guarantee contract or record your voice saying “I put my car up as margin” and the app automatically recognizes the value, the released percentage, and already categorizes it as “Margin of Guarantee.” This way, you never lose sight of how much is available and how much has already been used.
 
-1. **Liste seus bens disponíveis** (carro, imóvel, investimentos). Use o smart capture do FinMoovi para registrar cada um com foto e valor estimado.
-2. **Calcule o percentual que cada instituição aceita** e some os limites possíveis. Isso dá uma visão clara do “potencial de crédito”.
-3. **Defina metas de uso**: por exemplo, “usar até 40 % da margem para reformar a cozinha”. Marque essa meta no app.
-4. **Acompanhe o consumo**: a cada gasto, o FinMoovi atualiza automaticamente o saldo da margem e mostra o impacto nas suas metas.
-5. **Revise periodicamente**: a cada três meses, faça uma nova avaliação dos bens e ajuste o limite se necessário.
+Additionally, FinMoovi offers:
+
+- **Multi‑currency:** if you have assets in different currencies (for example, a car valued in dollars or a property in euros), the app converts everything to your base currency, allowing clear comparison of limits.
+- **Cash flow and reports:** see in real time how much of your margin is committed, how much is still available, and how this impacts your overall balance.
+- **Monthly planning and goals:** include the margin of guarantee as a funding source in your debt repayment plans or in the goal of buying that appliance.
+- **Cards and statements:** the margin limit appears as a “credit line” on your cards, making spending easier to track.
+- **Shopping mode:** create shopping lists, add items, and see the total in real time, already subtracting what’s available in the margin.
+- **Alerts and reminders:** get notified when the limit drops below a percentage you set, or when there’s a risk of asset depreciation.
+- **Offline/PWA:** even without internet, you can record new expenses or check the limit; on the next connection, everything syncs.
+
+## Three practical tips for using margin of guarantee safely
+
+**Practical tip:** **Keep an updated photo record** of the asset used as guarantee. That way, if you need to renegotiate or prove the value, you have everything at hand in FinMoovi.
+
+**Practical tip:** **Set a 30% usage alert** in the app. When the limit drops to 30% of the total, FinMoovi warns you, helping you avoid getting close to the risk point of losing the asset.
+
+**Practical tip:** **Combine the margin with an emergency fund.** Use the margin only for planned expenses (like renovations or equipment purchases) and keep a small separate cash reserve for surprises, so the asset isn’t put at risk by unexpected events.
+
+## When is it worth choosing margin of guarantee
+
+- **You have valuable assets and don’t want to sell them now:** the margin lets you turn wealth into cash without losing possession.
+- **You need quick credit:** the evaluation is often instant, especially on digital platforms.
+- **You want to avoid high interest:** since the margin usually has lower costs, it can be cheaper than a personal loan.
+- **You’re planning medium-term projects:** if the need for money is a few months to a year, the margin offers flexibility without hurting cash flow.
+
+## How to build a smart usage plan
+
+1. **List your available assets** (car, property, investments). Use FinMoovi’s smart capture to register each one with a photo and estimated value.
+2. **Calculate the percentage each institution accepts** and add up the possible limits. This gives you a clear view of your “credit potential.”
+3. **Define usage goals:** for example, “use up to 40% of the margin to remodel the kitchen.” Mark that goal in the app.
+4. **Track usage:** with every expense, FinMoovi automatically updates the margin balance and shows the impact on your goals.
+5. **Review periodically:** every three months, do a new evaluation of the assets and adjust the limit if needed.
 
 ## Start today
 
-**Micro‑action (5 min):** Abra o FinMoovi, vá até a seção “Margem de Garantia” e use o smart capture para tirar uma foto do documento do seu carro (ou outro bem). O app vai reconhecer o valor, sugerir o percentual de liberação e já criar a categoria “Margem de Garantia”. Em menos de cinco minutos, você terá o seu limite visível e pronto para usar nas próximas compras.
+**Micro‑action (5 min):** Open FinMoovi, go to the “Margin of Guarantee” section, and use smart capture to take a photo of your car’s document (or another asset). The app will recognize the value, suggest the release percentage, and already create the “Margin of Guarantee” category. In less than five minutes, you’ll have your limit visible and ready to use for upcoming purchases.
