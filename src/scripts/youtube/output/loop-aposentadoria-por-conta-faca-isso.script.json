@@ -1,0 +1,118 @@
+{
+  "slug": "loop-aposentadoria-por-conta-faca-isso",
+  "formato": "loop16",
+  "term": "Aposentadoria de quem é autônomo",
+  "category": "vida",
+  "keyword": "APOSENTADORIA",
+  "valor": "R$ 180",
+  "situacao": "aposentadoria-por-conta",
+  "gancho": "faca-isso",
+  "ganchoFamilia": "faça isso",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "ampulheta",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se você quer garantir sua aposentadoria, FAÇA ISSO agora.",
+      "durationSec": 3.11,
+      "shots": [
+        {
+          "anchor": "garantir",
+          "visual": {
+            "type": "statement",
+            "text": "Garanta sua aposentadoria"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "aposentadoria",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ampulheta"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Quando vi, cento e oitenta reais sumiram da minha conta, eu não paguei nada.",
+      "durationSec": 4.84,
+      "shots": [
+        {
+          "anchor": "cento",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ampulheta"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "oitenta",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 180 sumiram"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então percebi que adiar o pagamento me deixou sem nada.",
+      "durationSec": 3.45,
+      "shots": [
+        {
+          "anchor": "percebi",
+          "visual": {
+            "type": "statement",
+            "text": "Adiar pagamento = nada"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "adiar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ampulheta"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Se você quer garantir sua aposentadoria, FAÇA ISSO e não perca.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "garantir",
+          "visual": {
+            "type": "statement",
+            "text": "FAÇA ISSO e não perca"
+          }
+        },
+        {
+          "anchor": "aposentadoria",
+          "visual": {
+            "type": "statement",
+            "text": "Garanta sua aposentadoria"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
