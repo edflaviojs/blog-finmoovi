@@ -712,5 +712,11 @@
     "gancho": "faca-isso",
     "turno": "manha",
     "em": "2026-10-09T11:26:23.912Z"
+  },
+  {
+    "situacao": "parcela-atrasada",
+    "gancho": "faca-isso",
+    "turno": "noite",
+    "em": "2026-10-09T11:29:36.666Z"
   }
 ]

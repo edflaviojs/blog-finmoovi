@@ -1,0 +1,118 @@
+{
+  "slug": "loop-parcela-atrasada-faca-isso",
+  "formato": "loop16",
+  "term": "A parcela que atrasou",
+  "category": "vida",
+  "keyword": "ATRASO",
+  "valor": "R$ 45",
+  "situacao": "parcela-atrasada",
+  "gancho": "faca-isso",
+  "ganchoFamilia": "faça isso",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "domino",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se você quer pagar boleto, FAÇA ISSO",
+      "durationSec": 3.13,
+      "shots": [
+        {
+          "anchor": "pagar",
+          "visual": {
+            "type": "statement",
+            "text": "Pagar boleto FAÇA ISSO"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "boleto",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "domino"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Comigo foi no mês passado, quarenta e cinco reais de multa",
+      "durationSec": 4.92,
+      "shots": [
+        {
+          "anchor": "Comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "domino"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "passado",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 45"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Agora eu pago na sexta, antes do banco fechar",
+      "durationSec": 4.02,
+      "shots": [
+        {
+          "anchor": "sexta",
+          "visual": {
+            "type": "statement",
+            "text": "Pago na sexta"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "banco",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "domino"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Se você quer pagar boleto, faça isso",
+      "durationSec": 3.13,
+      "shots": [
+        {
+          "anchor": "pagar",
+          "visual": {
+            "type": "statement",
+            "text": "FAÇA ISSO boleto"
+          }
+        },
+        {
+          "anchor": "boleto",
+          "visual": {
+            "type": "statement",
+            "text": "Pagar boleto FAÇA ISSO"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
