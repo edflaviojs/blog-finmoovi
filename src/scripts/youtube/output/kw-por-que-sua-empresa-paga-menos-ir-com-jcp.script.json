@@ -1,0 +1,208 @@
+{
+  "slug": "kw-por-que-sua-empresa-paga-menos-ir-com-jcp",
+  "term": "Por que sua empresa paga menos IR com JCP?",
+  "category": "mindset",
+  "keyword": "empresa",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você sabia que sua empresa pode *pagar menos imposto* usando JCP ao invés de dividendos?"
+  },
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "foguete",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você sabia que sua empresa pode pagar menos imposto usando JCP ao invés de dividendos? É isso mesmo, ao pagar JCP o lucro tributável diminui",
+      "durationSec": 9.6,
+      "shots": [
+        {
+          "anchor": "sabia",
+          "visual": {
+            "type": "statement",
+            "text": "Pagar menos imposto"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "pagar",
+          "visual": {
+            "type": "statement",
+            "text": "JCP reduz lucro"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Hoje a sua empresa paga dividendos de dez mil reais e vê quase todo esse valor desaparecer no IR",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "Hoje",
+          "visual": {
+            "type": "statement",
+            "text": "Dividendo R$10k"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "dividendos",
+          "visual": {
+            "type": "number",
+            "text": "R$10.000"
+          }
+        },
+        {
+          "anchor": "todo",
+          "visual": {
+            "type": "statement",
+            "text": "IR come quase tudo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Mas se a mesma empresa usar JCP o IR cai oito reais a menos e sobra mais dinheiro no caixa",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "mesma",
+          "visual": {
+            "type": "statement",
+            "text": "Use JCP"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "usar",
+          "visual": {
+            "type": "number",
+            "text": "R$8"
+          }
+        },
+        {
+          "anchor": "menos",
+          "visual": {
+            "type": "statement",
+            "text": "Mais caixa"
+          }
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro extra"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei isso na calculadora do FinMoovi e ele me mostrou oito reais a mais no caixa",
+      "durationSec": 6.5,
+      "shots": [
+        {
+          "anchor": "joguei",
+          "visual": {
+            "type": "app",
+            "app": "calculadora",
+            "note": "mostra cálculo"
+          }
+        },
+        {
+          "anchor": "mostrou",
+          "visual": {
+            "type": "statement",
+            "text": "Resultado: +R$8"
+          }
+        },
+        {
+          "anchor": "oito",
+          "visual": {
+            "type": "number",
+            "text": "R$8"
+          }
+        },
+        {
+          "anchor": "mais",
+          "visual": {
+            "type": "statement",
+            "text": "No caixa"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu? Procure o FinMoovi, são sete dias grátis",
+      "durationSec": 4.2,
+      "shots": [
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "statement",
+            "text": "Veja seu cálculo"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Usar JCP faz a empresa pagar menos imposto. Dinheiro sem controle é dinheiro dos outros",
+      "durationSec": 5.8,
+      "shots": [
+        {
+          "anchor": "Usar",
+          "visual": {
+            "type": "statement",
+            "text": "JCP reduz imposto"
+          }
+        },
+        {
+          "anchor": "menos",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro não controla"
+          }
+        },
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "statement",
+            "text": "É dos outros"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja seu cálculo grátis",
+    "target": "app"
+  },
+  "totalDurationSec": 41.1
+}
