@@ -1,24 +1,5 @@
 [
   {
-    "file": "en-margin-of-guarantee.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 5,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": [
-        "dívidas",
-        "investimentos",
-        "valor"
-      ]
-    }
-  },
-  {
     "file": "en-fgc-guarantee.md",
     "dir": "glossario",
     "severity": 2,
@@ -2461,6 +2442,21 @@
     }
   },
   {
+    "file": "en-how-to-manage-multi-currency-expenses-with-an-app-in-5.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-how-to-manage-personal-finance-volatility-in-2026.md",
     "dir": "posts",
     "severity": 0,
@@ -2851,6 +2847,21 @@
     }
   },
   {
+    "file": "en-how-to-use-the-price-table-to-plan-your-payments-in-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-ideal-air-conditioner-temperature-to-save-energy.md",
     "dir": "posts",
     "severity": 0,
@@ -3137,6 +3148,21 @@
   },
   {
     "file": "en-long.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-margin-of-guarantee.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -3632,6 +3658,21 @@
   },
   {
     "file": "en-profit-margin.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-promissory-note.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -5656,6 +5697,21 @@
     }
   },
   {
+    "file": "es-como-controlar-gastos-en-varias-monedas-con-una-app-en-5.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-como-controlar-tu-flujo-de-caja-personal-en-2026.md",
     "dir": "posts",
     "severity": 0,
@@ -6332,6 +6388,21 @@
   },
   {
     "file": "es-como-usar-la-calculadora-de-interes-compuesto-en-2026-y.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-como-usar-la-tabla-price-para-planificar-tus-cuotas-en-2026.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -8133,6 +8204,21 @@
   {
     "file": "es-organizar-finanzas-pareja.md",
     "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-pagare.md",
+    "dir": "glossario",
     "severity": 0,
     "issues": {
       "currency": 0,
