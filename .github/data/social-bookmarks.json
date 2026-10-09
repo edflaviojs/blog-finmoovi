@@ -2538,5 +2538,45 @@
         "status": 200
       }
     }
+  },
+  {
+    "slug": "como-controlar-gastos-em-varias-moedas-com-um-app-em-5",
+    "title": "Como controlar gastos em várias moedas com um app em 5 minutos",
+    "url": "https://blog.finmoovi.com/posts/como-controlar-gastos-em-varias-moedas-com-um-app-em-5",
+    "submittedAt": "2026-10-09T19:54:37.150Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1882431660
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "como-usar-a-tabela-price-para-planejar-suas-parcelas-em-2026",
+    "title": "Como usar a tabela Price para planejar suas parcelas em 2026",
+    "url": "https://blog.finmoovi.com/posts/como-usar-a-tabela-price-para-planejar-suas-parcelas-em-2026",
+    "submittedAt": "2026-10-09T19:54:38.077Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1882431666
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
   }
 ]
