@@ -3,6 +3,7 @@ title: "How to Use the Price Table to Plan Your Payments in 2026"
 description: "Learn in plain language how the Price table works and how FinMoovi makes payment simulations easy."
 tickerHeadline: "The formula that simplifies your install"
 image: "/images/posts/como-usar-a-tabela-price-para-planejar-suas-parcelas-em-2026.webp"
+imageAlt: "Brown notebook, calculator, coins, and green sprig on a white marble surface."
 category: "dicas"
 locale: "en"
 tags: ["price table calculator","personal finance","budgeting","payments","FinMoovi"]

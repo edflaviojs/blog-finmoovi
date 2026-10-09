@@ -3,6 +3,7 @@ title: "How to Manage Multi‑Currency Expenses with an App in 5 Minutes"
 description: "Learn to track spending in different currencies with a simple app—real examples and a 5‑minute setup guide."
 tickerHeadline: "Multi‑currency Made Easy"
 image: "/images/posts/como-controlar-gastos-em-varias-moedas-com-um-app-em-5.webp"
+imageAlt: "Laptop with colorful abstract wallpaper on desk beside black coffee mug and monitors."
 category: "ferramentas"
 locale: "en"
 tags: ["multi‑currency expense tracking","personal finance app","international expense management","FinMoovi","budgeting in different currencies","multi‑currency app","dollar euro expense control","foreign currency spending"]

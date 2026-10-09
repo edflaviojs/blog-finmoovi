@@ -3,6 +3,7 @@ title: "Cómo usar la tabla Price para planificar tus cuotas en 2026"
 description: "Descubre, en lenguaje sencillo, cómo funciona la tabla Price y cómo FinMoovi te ayuda a simular cuotas sin complicaciones."
 tickerHeadline: "La fórmula que simplifica tus pagos"
 image: "/images/posts/como-usar-a-tabela-price-para-planejar-suas-parcelas-em-2026.webp"
+imageAlt: "Cuaderno marrón, calculadora y monedas sobre superficie blanca con rama verde."
 category: "dicas"
 locale: "es"
 tags: ["calculadora tabla price","finanzas personales","economía","dinero"]

@@ -4,6 +4,7 @@ definition: "Qué es pagaré y cómo aparece en tu día a día — explicado de 
 title: "pagaré - Glosario Financiero"
 description: "Qué es pagaré y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/nota-promissoria.webp"
+imageAlt: "Monedas doradas en frascos de vidrio, gráfico de barras ascendente y planta verde sobre fondo oscuro."
 category: "basico"
 tags: ["pagaré", "glosario", "finanzas"]
 author: "FinMoovi"

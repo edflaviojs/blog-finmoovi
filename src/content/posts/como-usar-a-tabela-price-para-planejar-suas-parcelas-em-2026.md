@@ -3,6 +3,7 @@ title: "Como usar a tabela Price para planejar suas parcelas em 2026"
 description: "Descubra, em linguagem simples, como a tabela Price funciona e como o FinMoovi ajuda a simular parcelas sem complicação."
 tickerHeadline: "A fórmula que simplifica suas prestações"
 image: "/images/posts/como-usar-a-tabela-price-para-planejar-suas-parcelas-em-2026.webp"
+imageAlt: "Caderno marrom, calculadora, moedas e planta verde sobre superfície branca."
 category: "dicas"
 locale: "pt"
 tags: ["calculadora tabela price","finanças pessoais","economia","dinheiro"]

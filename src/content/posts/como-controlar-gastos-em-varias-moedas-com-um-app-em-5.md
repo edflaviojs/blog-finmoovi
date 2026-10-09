@@ -3,6 +3,7 @@ title: "Como controlar gastos em várias moedas com um app em 5 minutos"
 description: "Descubra como gerenciar despesas em diferentes moedas usando um app prático, com exemplos reais e dicas de 5 minutos para começar agora."
 tickerHeadline: "Multimoeda sem dor de cabeça"
 image: "/images/posts/como-controlar-gastos-em-varias-moedas-com-um-app-em-5.webp"
+imageAlt: "Notebook aberto, monitores azuis, caneca preta e plantas sobre mesa de escritório."
 category: "ferramentas"
 locale: "pt"
 tags: ["controle de gastos multimoeda","app finanças pessoais","gestão de despesas internacionais","finmoovi","orçamento em moedas diferentes","app multi moeda","controle dólar euro real","gastos moeda estrangeira"]

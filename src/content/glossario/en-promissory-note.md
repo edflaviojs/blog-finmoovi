@@ -4,6 +4,7 @@ definition: "What promissory note is and how it shows up in your everyday money 
 title: "promissory note - Financial Glossary"
 description: "What promissory note is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/nota-promissoria.webp"
+imageAlt: "Gold coins in glass jars, rising yellow bar chart, and green plant on podium."
 category: "basico"
 tags: ["promissory note", "glossary", "finance"]
 author: "FinMoovi"
