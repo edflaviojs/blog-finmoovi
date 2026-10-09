@@ -2392,8 +2392,43 @@
           "titulo": "Giving your morning somewhere to go: the real motivation behind getting up early"
         }
       ]
+    },
+    {
+      "videoId": "hgTxZBowHmQ",
+      "title": "É Possível Investir Em Imobiliário Com Pouco Dinheiro? (Realidade Portuguesa)",
+      "channel": "Gonçalo Malheiro",
+      "duracaoSeg": 1079,
+      "idioma": "pt",
+      "viewsPerDay": 3152,
+      "vistoEm": "2026-10-09",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "O Problema"
+        },
+        {
+          "seg": 75,
+          "titulo": "A Decathlon"
+        },
+        {
+          "seg": 192,
+          "titulo": "O Que É Um REIT?"
+        },
+        {
+          "seg": 303,
+          "titulo": "Os REITs em Portugal"
+        },
+        {
+          "seg": 410,
+          "titulo": "O Crescimento de Cada Setor"
+        },
+        {
+          "seg": 674,
+          "titulo": "Como Investir em REITs?"
+        }
+      ]
     }
   ],
-  "atualizadoEm": "2026-10-08T11:02:42.541Z",
-  "total": 44
+  "atualizadoEm": "2026-10-09T11:01:50.078Z",
+  "total": 45
 }
