@@ -4,6 +4,7 @@ definition: "What open interest is and how it shows up in your everyday money â€
 title: "open interest - Financial Glossary"
 description: "What open interest is and how it shows up in your everyday money â€” explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/open-interest.webp"
+imageAlt: "Ascending gold coin stacks, peach bars, coin jar with plant, dark background."
 category: "basico"
 tags: ["open interest", "glossary", "finance"]
 author: "FinMoovi"

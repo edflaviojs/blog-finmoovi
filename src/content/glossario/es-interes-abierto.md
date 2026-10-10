@@ -4,6 +4,7 @@ definition: "Qué es interés abierto y cómo aparece en tu día a día — expl
 title: "interés abierto - Glosario Financiero"
 description: "Qué es interés abierto y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/open-interest.webp"
+imageAlt: "Monedas doradas, barras ascendentes y planta verde en frasco sobre fondo degradado azul y magenta."
 category: "basico"
 tags: ["interés abierto", "glosario", "finanzas"]
 author: "FinMoovi"

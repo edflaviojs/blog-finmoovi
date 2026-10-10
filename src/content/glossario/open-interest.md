@@ -4,6 +4,7 @@ definition: "O que é open interest e como isso aparece no seu dia a dia — exp
 title: "open interest - Glossário Financeiro"
 description: "O que é open interest e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/open-interest.webp"
+imageAlt: "Pilhas de moedas douradas, barras corais e pote com planta verde sobre fundo escuro."
 category: "basico"
 tags: ["open interest", "glossário", "finanças"]
 author: "FinMoovi"
