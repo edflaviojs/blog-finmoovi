@@ -1,0 +1,118 @@
+{
+  "slug": "loop-fatura-maior-ninguem-fala",
+  "formato": "loop16",
+  "term": "A fatura veio maior",
+  "category": "vida",
+  "keyword": "FATURA",
+  "valor": "R$ 1.900",
+  "situacao": "fatura-maior",
+  "gancho": "ninguem-fala",
+  "ganchoFamilia": "ninguém fala",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "bola-neve",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Ninguém fala isso fatura, mas é real eu vi.",
+      "durationSec": 3.11,
+      "shots": [
+        {
+          "anchor": "Ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "Ninguém fala isso fatura"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "fatura",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-neve"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Quando cheguei ao app, mil e novecentos reais apareceram sem eu lembrar naquela noite.",
+      "durationSec": 4.84,
+      "shots": [
+        {
+          "anchor": "cheguei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-neve"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "novecentos",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 1.900"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então percebi que o gasto virou bola‑neve, eu parei imediatamente.",
+      "durationSec": 3.45,
+      "shots": [
+        {
+          "anchor": "percebi",
+          "visual": {
+            "type": "statement",
+            "text": "Gasto virou bola‑neve"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "gasto",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-neve"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Agora lembro. Ninguém fala isso sobre fatura, mas é real novo.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "lembro",
+          "visual": {
+            "type": "statement",
+            "text": "Mas é real eu vi"
+          }
+        },
+        {
+          "anchor": "Ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "Ninguém fala isso fatura"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}

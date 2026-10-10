@@ -724,5 +724,11 @@
     "gancho": "se-parar",
     "turno": "manha",
     "em": "2026-10-10T10:46:39.287Z"
+  },
+  {
+    "situacao": "fatura-maior",
+    "gancho": "ninguem-fala",
+    "turno": "noite",
+    "em": "2026-10-10T10:49:45.754Z"
   }
 ]
