@@ -4,6 +4,7 @@ definition: "What health plan is and how it shows up in your everyday money — 
 title: "health plan - Financial Glossary"
 description: "What health plan is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/plano-de-saude.webp"
+imageAlt: "Gold coin stacks, rising arrow, and jar of coins with green plant on dark blue background."
 category: "basico"
 tags: ["health plan", "glossary", "finance"]
 author: "FinMoovi"

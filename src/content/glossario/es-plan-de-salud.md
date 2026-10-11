@@ -4,6 +4,7 @@ definition: "Qué es plan de salud y cómo aparece en tu día a día — explica
 title: "plan de salud - Glosario Financiero"
 description: "Qué es plan de salud y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/plano-de-saude.webp"
+imageAlt: "Monedas doradas, frasco con planta y gráfico ascendente sobre fondo azul oscuro."
 category: "basico"
 tags: ["plan de salud", "glosario", "finanzas"]
 author: "FinMoovi"
