@@ -1,0 +1,118 @@
+{
+  "slug": "loop-saque-no-cartao-ta-perdendo",
+  "formato": "loop16",
+  "term": "Sacar dinheiro no cartão",
+  "category": "vida",
+  "keyword": "SAQUE",
+  "valor": "R$ 60",
+  "situacao": "saque-no-cartao",
+  "gancho": "ta-perdendo",
+  "ganchoFamilia": "tá perdendo",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ratoeira",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se você ainda faz saque à noite, tá perdendo tempo.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "saque",
+          "visual": {
+            "type": "statement",
+            "text": "Saque à noite = perda"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "noite",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu fui ao caixa tarde, paguei sessenta reais e o dinheiro sumiu.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "caixa",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "tarde",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 60 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Agora eu uso o app, vejo tudo antes de sacar.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "sacar",
+          "visual": {
+            "type": "statement",
+            "text": "Uso o app antes"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "sacar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Se você ainda faz saque à noite, tá perdendo tempo.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "saque",
+          "visual": {
+            "type": "statement",
+            "text": "Saque à noite = perda"
+          }
+        },
+        {
+          "anchor": "noite",
+          "visual": {
+            "type": "statement",
+            "text": "Saque à noite = perda"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}

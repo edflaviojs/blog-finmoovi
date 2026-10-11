@@ -736,5 +736,11 @@
     "gancho": "depois-de-anos",
     "turno": "manha",
     "em": "2026-10-11T10:59:26.436Z"
+  },
+  {
+    "situacao": "saque-no-cartao",
+    "gancho": "ta-perdendo",
+    "turno": "noite",
+    "em": "2026-10-11T11:02:00.798Z"
   }
 ]
