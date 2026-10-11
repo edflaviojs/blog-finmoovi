@@ -730,5 +730,11 @@
     "gancho": "ninguem-fala",
     "turno": "noite",
     "em": "2026-10-10T10:49:45.754Z"
+  },
+  {
+    "situacao": "seguro-venceu",
+    "gancho": "depois-de-anos",
+    "turno": "manha",
+    "em": "2026-10-11T10:59:26.436Z"
   }
 ]
