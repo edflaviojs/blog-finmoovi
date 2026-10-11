@@ -5529,6 +5529,21 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-10-10"
+    },
+    "plano-de-saude-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-11"
+    },
+    "plano-de-saude-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-11"
+    },
+    "plano-de-saude.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-11"
     }
   },
   "corrigidas": {
@@ -6193,6 +6208,6 @@
       "motivo": "tem texto escrito (\"I'm sorry, I'm not able to identify the people in this image.\")"
     }
   },
-  "totalAcervo": 1106,
-  "ultimaCorrida": "2026-10-10"
+  "totalAcervo": 1109,
+  "ultimaCorrida": "2026-10-11"
 }
