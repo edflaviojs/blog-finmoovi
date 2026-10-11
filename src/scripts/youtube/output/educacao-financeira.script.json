@@ -1,0 +1,206 @@
+{
+  "slug": "educacao-financeira",
+  "term": "Educação Financeira",
+  "category": "basico",
+  "keyword": "Financeira",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "*Você sabia que muita gente não entende o dinheiro e acaba gastando mais do que ganha?*"
+  },
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "semente",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você sabia que muita gente não entende o dinheiro e acaba gastando mais do que ganha? A educação financeira simples resolve isso.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "Você",
+          "visual": {
+            "type": "statement",
+            "text": "Você não está só"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro na mão"
+          }
+        },
+        {
+          "anchor": "ganha",
+          "visual": {
+            "type": "statement",
+            "text": "Ganhe controle"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Todo dia, ao pagar luz, mercado ou ônibus, o dinheiro some e você nunca aprendeu a separar o essencial.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "pagar",
+          "visual": {
+            "type": "statement",
+            "text": "Pagar contas"
+          },
+          "sfx": "click"
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro some"
+          }
+        },
+        {
+          "anchor": "nunca",
+          "visual": {
+            "type": "statement",
+            "text": "Nunca aprendeu"
+          },
+          "sfx": "typewriter"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Se gastou trezentos reais em lanches este mês, ao fim do ano vira três mil reais que poderiam ficar guardados.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "trezentos",
+          "visual": {
+            "type": "statement",
+            "text": "Gastou 300"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "este",
+          "visual": {
+            "type": "statement",
+            "text": "Este mês"
+          }
+        },
+        {
+          "anchor": "poderiam",
+          "visual": {
+            "type": "statement",
+            "text": "Três mil"
+          },
+          "sfx": "ding"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei trezentos reais no FinMoovi e ele mostrou que, guardando, chegaria a três mil reais em um ano.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "joguei",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Visão geral"
+          }
+        },
+        {
+          "anchor": "mostrou",
+          "visual": {
+            "type": "statement",
+            "text": "Mostrou crescimento"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "guardando",
+          "visual": {
+            "type": "statement",
+            "text": "Guardando"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "statement",
+            "text": "Quer ver?"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Educação financeira simples faz você controlar o dinheiro e evitar gastar mais do que ganha. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "Educação",
+          "visual": {
+            "type": "statement",
+            "text": "Educação simples"
+          }
+        },
+        {
+          "anchor": "controlar",
+          "visual": {
+            "type": "statement",
+            "text": "Controlar dinheiro"
+          },
+          "sfx": "alert"
+        },
+        {
+          "anchor": "mais",
+          "visual": {
+            "type": "statement",
+            "text": "Evite gastar mais"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Teste grátis 7 dias",
+    "target": "app"
+  },
+  "totalDurationSec": 43.1
+}
