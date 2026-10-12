@@ -2052,6 +2052,21 @@
     }
   },
   {
+    "file": "en-health-plan.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-hedge.md",
     "dir": "glossario",
     "severity": 0,
@@ -2862,6 +2877,21 @@
     }
   },
   {
+    "file": "en-how-to-use-the-sac-or-price-calculator-to-organize-your-loan.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-ideal-air-conditioner-temperature-to-save-energy.md",
     "dir": "posts",
     "severity": 0,
@@ -3103,6 +3133,21 @@
   },
   {
     "file": "en-leverage.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-liquidity-ratio.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -3403,6 +3448,21 @@
   },
   {
     "file": "en-obligation.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-open-interest.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -5592,6 +5652,21 @@
     }
   },
   {
+    "file": "es-coeficiente-de-liquidez.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-come-cotas.md",
     "dir": "glossario",
     "severity": 0,
@@ -6388,6 +6463,21 @@
   },
   {
     "file": "es-como-usar-la-calculadora-de-interes-compuesto-en-2026-y.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-como-usar-la-calculadora-sac-o-price-para-organizar-tu.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -7722,6 +7812,21 @@
     }
   },
   {
+    "file": "es-interes-abierto.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-interes-compuesto.md",
     "dir": "glossario",
     "severity": 0,
@@ -8383,6 +8488,21 @@
   },
   {
     "file": "es-pix.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-plan-de-salud.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
