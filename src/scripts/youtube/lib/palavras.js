@@ -103,6 +103,23 @@ export const MAX_PALAVRAS_CAPA_LONGO = 12;
  */
 const singularizar = (s) => s.replace(/oes$/, 'ao').replace(/aes$/, 'ao').replace(/aos$/, 'ao').replace(/s$/, '');
 
+/**
+ * 🔴 A 3ª PORTA — O VERBO CONJUGADO (12/10/2026).
+ *
+ * MEDIDO: de 10 a 12/10 o Short não saiu em 3 corridas seguidas, e 6 das tentativas
+ * reprovadas tinham UM erro só: "nem o gancho nem a empatia dizem alguma palavra do
+ * tema". O tema era "Gaste menos, poupe R$ 500" e a fala dizia, à letra, *"deu pra
+ * GASTAR menos, POUPAR quinhentos reais"*. O assunto estava lá — a trava é que não via:
+ * "gaste"↔"gastar" têm 4 letras de prefixo comum, e a 2ª porta pede 6. Com verbos
+ * curtos no imperativo (a forma de quase todo o título editorial) nunca chega a 6.
+ *
+ * A porta: tira-se a terminação do verbo/nome ("ar", "e", "ei", "ou", "ando"…) e os dois
+ * radicais têm de ser IGUAIS e ter pelo menos 4 letras. Continua estreita:
+ * "cartas"↔"cartão" segue sem casar ("cart" ≠ "carta"). Falso positivo assumido e de dano
+ * baixo: "conta"↔"conto".
+ */
+const radical = (s) => singularizar(s).replace(/(ando|endo|indo|amos|emos|imos|ar|er|ir|ei|ou|am|em|[aeio])$/, '');
+
 export function keywordFalada(termo, falaDoGancho) {
   const gancho = semAcento(falaDoGancho);
   // ⚠️ Os tokens ORIGINAIS (com acento) andam lado a lado com os normalizados:
@@ -123,6 +140,8 @@ export function keywordFalada(termo, falaDoGancho) {
       let p = 0;
       while (p < f.length && p < alvo.length && f[p] === alvo[p]) p++;
       if (p >= 6) return original.toLocaleLowerCase('pt-BR'); // radical comum ("parcela" ↔ "parcelamento")
+      const r = radical(alvo);
+      if (r.length >= 4 && radical(f) === r) return original.toLocaleLowerCase('pt-BR'); // verbo ("gaste" ↔ "gastar")
     }
   }
   return null;

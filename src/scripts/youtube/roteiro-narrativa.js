@@ -1345,7 +1345,19 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
   }
 
   // brinde inexistente (ver BRINDES_PROIBIDOS)
-  const brinde = falaToda.match(BRINDES_PROIBIDOS);
+  // 🔴 12/10/2026 — QUANDO A PALAVRA É O PRÓPRIO TEMA, dizê-la não é prometê-la. O tema
+  // "planejamento financeiro planilha" morreu 3 dias seguidos aqui: a trava do tema exige
+  // dizer o assunto e esta proibia "planilha" em qualquer sítio — impossível de cumprir.
+  // Nesse caso só reprova a frase que OFERECE a coisa (baixar, link, grátis, mandar…).
+  const OFERTA = /\b(baix\w*|link|descri\w*|gr[aá]t\w*|receb\w*|peg\w*|ganh\w*|mand\w*|envi\w*|libera\w*|acess\w*)\b/i;
+  const brindeDoTema = (temaTermo.match(new RegExp(BRINDES_PROIBIDOS.source, 'gi')) || []).map((w) => w.toLowerCase());
+  const brinde = falaToda.split(/(?<=[.!?…])\s+/)
+    .map((frase) => {
+      const m = frase.match(BRINDES_PROIBIDOS);
+      if (!m) return null;
+      return brindeDoTema.includes(m[0].toLowerCase()) && !OFERTA.test(frase) ? null : m;
+    })
+    .find(Boolean);
   if (brinde) {
     erros.push(`a fala promete "${brinde[0]}", que NÃO EXISTE — só é permitido oferecer o app FinMoovi (teste de sete dias grátis) ou a calculadora do blog`);
   }

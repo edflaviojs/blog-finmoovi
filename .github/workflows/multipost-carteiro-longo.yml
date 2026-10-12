@@ -155,6 +155,44 @@ jobs:
             || echo "::warning::sem capa da Manus — o Bluesky fica de fora deste."
           echo "🎞️ $(du -h "youtube-render/out/longo/$FILE_SLUG.mp4" | cut -f1) prontos para entrega."
 
+      # 🔴 12/10/2026 — O SERVIDOR CORTA O ENVIO AOS 60 SEGUNDOS.
+      # Medido: 144, 153 e 167 MB subiram em 27–37s (~5 MB/s). O vídeo de 11/10
+      # (economizar-300-por-mes, 9 min) tinha 282 MB e o servidor fechou a porta EXATAMENTE
+      # 60s depois de começar ("499 Client Closed Request") — nenhuma rede recebeu nada.
+      # O vídeo cresceu com o chão de 8 min; vai continuar grande.
+      # A cura: uma cópia mais leve SÓ para as redes (o YouTube continua com o original).
+      # Facebook e LinkedIn recomprimem tudo o que recebem — a diferença não se vê lá.
+      # ⚠️ Não pode matar a corrida: sem ffmpeg, tenta-se com o original.
+      - name: Encolher o vídeo se passar do que o servidor aguenta em 60s
+        if: steps.fila.outputs.skip != 'true'
+        run: |
+          set -uo pipefail
+          F="youtube-render/out/longo/$FILE_SLUG.mp4"
+          LIMITE_MB=170   # o maior que já subiu foi 167 MB, em 32s
+          ALVO_MB=140
+          MB=$(( $(stat -c %s "$F") / 1000000 ))
+          if [ "$MB" -le "$LIMITE_MB" ]; then echo "✅ $MB MB — cabe, vai o original."; exit 0; fi
+          command -v ffmpeg >/dev/null || sudo timeout 300 apt-get install -y -qq ffmpeg || {
+            sudo timeout 300 apt-get update -qq || true
+            sudo timeout 600 apt-get install -y -qq ffmpeg || true
+          }
+          command -v ffmpeg >/dev/null || { echo "::warning::sem ffmpeg — vai o original de $MB MB (pode não subir)."; exit 0; }
+          DUR=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$F" | cut -d. -f1)
+          VKBPS=$(( ALVO_MB * 8000 / DUR - 128 ))
+          echo "📦 $MB MB, ${DUR}s — a encolher para ~$ALVO_MB MB (vídeo a ${VKBPS} kbps)."
+          if ffmpeg -y -v error -i "$F" -c:v libx264 -preset veryfast -b:v ${VKBPS}k -maxrate $((VKBPS * 3 / 2))k -bufsize $((VKBPS * 2))k \
+               -pix_fmt yuv420p -c:a aac -b:a 128k -movflags +faststart /tmp/leve.mp4; then
+            DUR2=$(ffprobe -v error -show_entries format=duration -of csv=p=0 /tmp/leve.mp4 | cut -d. -f1)
+            if [ "$DUR2" -ge $(( DUR - 1 )) ]; then
+              mv /tmp/leve.mp4 "$F"
+              echo "✅ agora $(( $(stat -c %s "$F") / 1000000 )) MB, ${DUR2}s."
+            else
+              echo "::warning::a cópia leve saiu com ${DUR2}s em vez de ${DUR}s — vai o original."
+            fi
+          else
+            echo "::warning::o ffmpeg falhou — vai o original de $MB MB (pode não subir)."
+          fi
+
       - name: Entregar ao Multipost e agendar
         if: steps.fila.outputs.skip != 'true'
         env:
