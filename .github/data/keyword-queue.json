@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-11T16:26:19.987Z",
+  "updatedAt": "2026-10-12T16:14:33.382Z",
   "sourceCursor": 1,
   "entries": [
     {
@@ -2257,6 +2257,78 @@
       "source": "gsc-gap",
       "status": "pending",
       "addedAt": "2026-10-05T15:22:23.246Z"
+    },
+    {
+      "keyword": "valor em aberto significado",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-10-12T16:14:32.787Z"
+    },
+    {
+      "keyword": "activos financiero",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-10-12T16:14:32.788Z"
+    },
+    {
+      "keyword": "ativos financeiros",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-10-12T16:14:32.788Z"
+    },
+    {
+      "keyword": "control de gastos en compras",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-10-12T16:14:32.788Z"
+    },
+    {
+      "keyword": "ativo financeiro",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-10-12T16:14:32.788Z"
+    },
+    {
+      "keyword": "etf",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-10-12T16:14:32.788Z"
+    },
+    {
+      "keyword": "activo financieros",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-10-12T16:14:32.788Z"
+    },
+    {
+      "keyword": "etf inversion",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-10-12T16:14:32.788Z"
+    },
+    {
+      "keyword": "financial assets",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-10-12T16:14:32.788Z"
     }
   ]
 }

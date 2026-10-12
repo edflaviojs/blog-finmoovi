@@ -1,7 +1,7 @@
 # 🗂️ Fila de Keywords (Fase 3)
 
-**Atualizado em:** 2026-10-05T15:22:23.953Z
-**Totais:** 64 pendente(s) · 106 usada(s) · 59 pulada(s)
+**Atualizado em:** 2026-10-12T16:14:33.382Z
+**Totais:** 70 pendente(s) · 109 usada(s) · 59 pulada(s)
 
 ## ⏳ Pendentes por fonte
 
@@ -52,11 +52,8 @@
 - o que levar para comer na praia para economizar
 - por que é importante economizar energia elétrica
 
-### Lacunas do GSC (prioridade 2) — 20
+### Lacunas do GSC (prioridade 2) — 26
 
-- gasto recurrente
-- calculadora tabela price
-- calculadora sac price
 - hipoteca
 - tudo sobre investimentos
 - calculadora tabela sac
@@ -74,6 +71,15 @@
 - planilla flujo de caja
 - finmoovi technologia
 - activos financieros
+- valor em aberto significado
+- activos financiero
+- ativos financeiros
+- control de gastos en compras
+- ativo financeiro
+- etf
+- activo financieros
+- etf inversion
+- financial assets
 
 ### Autocomplete (prioridade 3) — 0
 
@@ -83,6 +89,9 @@ _Nenhuma._
 
 | Keyword | Usada por | Em |
 |---|---|---|
+| calculadora sac price | gerar-dicas-financeiras | 2026-10-11 |
+| calculadora tabela price | gerar-dicas-financeiras | 2026-10-08 |
+| gasto recurrente | gerar-post-investimentos | 2026-10-07 |
 | google finance alternative | gerar-dicas-financeiras | 2026-09-27 |
 | parcelados | gerar-dicas-financeiras | 2026-09-25 |
 | gastos recurrentes | gerar-dicas-financeiras | 2026-09-24 |
@@ -90,9 +99,6 @@ _Nenhuma._
 | recurring fee definition | gerar-dicas-financeiras | 2026-09-20 |
 | installments | gerar-dicas-financeiras | 2026-09-19 |
 | expense control | gerar-dicas-financeiras | 2026-09-18 |
-| outstanding balance definition | gerar-dicas-financeiras | 2026-09-16 |
-| control de gasto | gerar-post-inteligente | 2026-09-15 |
-| economizar agua | gerar-dicas-financeiras | 2026-09-15 |
 
 ## ⏭️ Puladas (já cobertas)
 
