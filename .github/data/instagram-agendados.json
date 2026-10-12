@@ -22075,5 +22075,114 @@
         "publicaEmBR": "13/10 às 10h31"
       }
     }
+  },
+  "kw-por-que-sua-empresa-paga-menos-ir-com-jcp": {
+    "midias": {
+      "video": {
+        "id": "148c9d38-006a-4d46-a075-a589c3d42288",
+        "name": "YCDW8yBJX4.mp4",
+        "originalName": null,
+        "path": "https://media.help4desk.com/YCDW8yBJX4.mp4",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capa": {
+        "id": "c41e3bf4-ddb6-49c9-9b17-5c38c933a201",
+        "name": "aB1qnmZHbW.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/aB1qnmZHbW.jpeg",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capaLarga": {
+        "id": "1210e6e8-9501-463d-918b-ff7debf4439e",
+        "name": "gRrMKZmFXV.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/gRrMKZmFXV.jpeg",
+        "thumbnail": null,
+        "alt": null
+      }
+    },
+    "publicaEm": "2026-10-13T22:00:00.000Z",
+    "publicaEmBR": "13/10 às 19h00",
+    "agendadoEm": "2026-10-12T22:31:16.457Z",
+    "atualizadoEm": "2026-10-12T22:31:19.963Z",
+    "redes": {
+      "instagram": {
+        "postId": "cmv5ttg4f00burx956xu3ni7s",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-13T22:00:00.000Z",
+        "publicaEmBR": "13/10 às 19h00",
+        "midia": "o vídeo",
+        "caracteres": 744,
+        "limite": 2200
+      },
+      "zernio-tiktok": {
+        "postId": "cmv5ttghn00bvrx95t0qyussa",
+        "canal": "finmoovi",
+        "publicaEm": "2026-10-13T22:12:00.000Z",
+        "publicaEmBR": "13/10 às 19h12",
+        "midia": "o vídeo",
+        "caracteres": 287,
+        "limite": 2200
+      },
+      "facebook": {
+        "postId": "cmv5ttgw200bwrx95r4eq6mrj",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-13T22:26:00.000Z",
+        "publicaEmBR": "13/10 às 19h26",
+        "midia": "o vídeo",
+        "caracteres": 514,
+        "limite": 63206
+      },
+      "linkedin-page": {
+        "postId": "cmv5tth8b00bxrx95l9uop7ju",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-13T22:43:00.000Z",
+        "publicaEmBR": "13/10 às 19h43",
+        "midia": "o vídeo",
+        "caracteres": 432,
+        "limite": 3000
+      },
+      "threads": {
+        "postId": "cmv5tthke00byrx95y258krql",
+        "canal": "finmoovi",
+        "publicaEm": "2026-10-13T22:58:00.000Z",
+        "publicaEmBR": "13/10 às 19h58",
+        "midia": "o vídeo",
+        "caracteres": 151,
+        "limite": 500
+      },
+      "pinterest": {
+        "postId": "cmv5tti9z00bzrx95i9jm45u1",
+        "canal": "finmoovi",
+        "publicaEm": "2026-10-13T23:31:00.000Z",
+        "publicaEmBR": "13/10 às 20h31",
+        "midia": "vídeo primeiro, capa depois — a ordem que o Pinterest exige",
+        "caracteres": 491,
+        "limite": 500
+      },
+      "bluesky": {
+        "postId": "cmv5ttimg00c0rx95ogpa8rmi",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-13T23:47:00.000Z",
+        "publicaEmBR": "13/10 às 20h47",
+        "midia": "vai a capa DEITADA (o Bluesky não publica vídeo, e a em pé ficaria cortada no feed)",
+        "caracteres": 108,
+        "limite": 300
+      },
+      "instagram-story": {
+        "postId": "cmv5ttiue00c1rx95u62ei2el",
+        "tipo": "vídeo",
+        "publicaEm": "2026-10-13T22:05:00.000Z",
+        "publicaEmBR": "13/10 às 19h05"
+      },
+      "facebook-story": {
+        "postId": "cmv5ttizb00c2rx95kcrlrrfw",
+        "tipo": "vídeo",
+        "publicaEm": "2026-10-13T22:31:00.000Z",
+        "publicaEmBR": "13/10 às 19h31"
+      }
+    }
   }
 }
