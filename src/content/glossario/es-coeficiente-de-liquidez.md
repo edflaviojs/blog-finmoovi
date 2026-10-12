@@ -4,6 +4,7 @@ definition: "Qué es coeficiente de liquidez y cómo aparece en tu día a día �
 title: "coeficiente de liquidez - Glosario Financiero"
 description: "Qué es coeficiente de liquidez y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/quociente-de-liquidez.webp"
+imageAlt: "Pilas de monedas doradas, esfera de cristal y planta en frasco sobre fondo oscuro."
 category: "basico"
 tags: ["coeficiente de liquidez", "glosario", "finanzas"]
 author: "FinMoovi"

@@ -3,6 +3,7 @@ title: "How to Use the SAC or PRICE Calculator to Organize Your Loan in 2026"
 description: "Learn how the SAC and PRICE calculators can simplify loan management and boost your budgeting in just 5 minutes with FinMoovi."
 tickerHeadline: "The formula that eases your payment stre"
 image: "/images/posts/como-usar-a-calculadora-sac-ou-price-para-organizar-seu.webp"
+imageAlt: "Laptop, monitor, phone, and white mug on a wooden desk."
 category: "dicas"
 locale: "en"
 tags: ["SAC calculator","PRICE calculator","personal finance","budgeting","loan management","FinMoovi"]

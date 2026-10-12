@@ -4,6 +4,7 @@ definition: "What Liquidity Ratio is and how it shows up in your everyday money 
 title: "Liquidity Ratio - Financial Glossary"
 description: "What Liquidity Ratio is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/quociente-de-liquidez.webp"
+imageAlt: "Gold coin stacks, glass sphere, and plant-filled jar on dark surface."
 category: "basico"
 tags: ["Liquidity Ratio", "glossary", "finance"]
 author: "FinMoovi"

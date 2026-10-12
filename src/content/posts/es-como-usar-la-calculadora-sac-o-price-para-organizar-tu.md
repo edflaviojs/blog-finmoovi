@@ -3,6 +3,7 @@ title: "Cómo usar la calculadora SAC o PRICE para organizar tu préstamo en 202
 description: "Descubre con ejemplos cotidianos cómo la calculadora SAC y PRICE transforma la gestión de deudas y usa FinMoovi en 5 minutos."
 tickerHeadline: "La fórmula que alivia tus cuotas"
 image: "/images/posts/como-usar-a-calculadora-sac-ou-price-para-organizar-seu.webp"
+imageAlt: "Portátil, monitor, taza blanca y planta sobre escritorio de madera."
 category: "dicas"
 locale: "es"
 tags: ["calculadora sac price","finanzas personales","economía","dinero"]

@@ -4,6 +4,7 @@ definition: "O que é quociente de liquidez e como isso aparece no seu dia a dia
 title: "quociente de liquidez - Glossário Financeiro"
 description: "O que é quociente de liquidez e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/quociente-de-liquidez.webp"
+imageAlt: "Pilhas de moedas douradas, orbe de cristal e pote com planta sobre fundo escuro."
 category: "basico"
 tags: ["quociente de liquidez", "glossário", "finanças"]
 author: "FinMoovi"
