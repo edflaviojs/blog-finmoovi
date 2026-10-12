@@ -106,5 +106,11 @@
       "en",
       "es"
     ]
+  },
+  "organizar-salario-mes-dia": {
+    "estado": "reservado",
+    "publishAt": "2026-10-18T22:00:00.000Z",
+    "reservadoEm": "2026-10-12T09:02:40.501Z",
+    "corrida": "38227164326"
   }
 }

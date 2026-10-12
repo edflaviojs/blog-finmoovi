@@ -245,6 +245,57 @@
       "propostoEm": "2026-09-28T10:19:08.303Z",
       "publicadoEm": "2026-10-08T11:49:22.946Z",
       "videoId": "dFIeWkBgRgo"
+    },
+    {
+      "slug": "organizar-salario-mes-dia",
+      "titulo": "Organizar o salário do mês no dia do pagamento sem ficar sem dinheiro",
+      "tema": "A divisão exata do salário logo no dia do pagamento para não zerar a conta",
+      "angulo": "Quem ganha R$ 3.500 costuma pagar os boletos soltos e ver a conta zerada no dia 15 sem entender onde errou. Mostro a regra prática de dividir o dinheiro em três partes no mesmo minuto em que o salário cai. No fim, a pessoa aprende a blindar os gastos essenciais e guardar R$ 350 sem passar aperto.",
+      "glossario": "controle-de-gastos",
+      "palavrasChave": [
+        "organizar o salario",
+        "como organizar o salario",
+        "dividir o salario no mes",
+        "fazer o dinheiro render",
+        "controle de gastos do salario"
+      ],
+      "estado": "proposto",
+      "viralRef": {
+        "videoId": "VscrdjlqPpE",
+        "title": "FAÇA ISSO TODA VEZ QUE SEU PAGAMENTO CAIR NA CONTA",
+        "views": 248887,
+        "viewsPerDay": 4402,
+        "estrutura": [
+          "fala directamente com \"você\"",
+          "uma palavra em maiúsculas a marcar o tom"
+        ]
+      },
+      "propostoEm": "2026-10-11T10:26:51.720Z"
+    },
+    {
+      "slug": "como-juntar-mil-reais",
+      "titulo": "Como juntar 10 mil reais de reserva sem precisar de um segundo emprego",
+      "tema": "Método prático para acumular 10 mil reais guardando pouco por mês",
+      "angulo": "Eu mostro como saí da frustração de ver o dinheiro sumir e montei um plano real para juntar R$ 10.000,00. Uso o exemplo de quem ganha R$ 3.500,00 e consegue separar R$ 250,00 mensais ajustando gastos invisíveis. No final, o espectador terá uma tabela de prazos e valores para começar hoje.",
+      "glossario": "educacao-financeira",
+      "palavrasChave": [
+        "como juntar dinheiro",
+        "reserva de emergencia",
+        "guardar dinheiro ganhando pouco",
+        "planejamento financeiro pessoal"
+      ],
+      "estado": "proposto",
+      "viralRef": {
+        "videoId": "2TJdIeszZXw",
+        "title": "DESAFIO: Como Juntar R$100 MIL Começando com pouco [Funciona MESMO]",
+        "views": 179406,
+        "viewsPerDay": 3772,
+        "estrutura": [
+          "número concreto no título (\"100 MIL\")",
+          "uma palavra em maiúsculas a marcar o tom"
+        ]
+      },
+      "propostoEm": "2026-10-11T10:26:51.720Z"
     }
   ]
 }
