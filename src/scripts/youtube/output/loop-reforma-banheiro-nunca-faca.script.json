@@ -1,0 +1,118 @@
+{
+  "slug": "loop-reforma-banheiro-nunca-faca",
+  "formato": "loop16",
+  "term": "A reforma que sempre adia",
+  "category": "vida",
+  "keyword": "REFORMA",
+  "valor": "R$ 1.400",
+  "situacao": "reforma-banheiro",
+  "gancho": "nunca-faca",
+  "ganchoFamilia": "nunca faça",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "ampulheta",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Nunca faça isso com conta. Eu vi o azulejo solto.",
+      "durationSec": 3.53,
+      "shots": [
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "statement",
+            "text": "Nunca faça isso com a conta"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "azulejo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ampulheta"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Quando chamei o pedreiro, mil e quatrocentos reais sumiram na primeira visita da obra.",
+      "durationSec": 4.95,
+      "shots": [
+        {
+          "anchor": "chamei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ampulheta"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "pedreiro",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 1.400 sumiram"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então percebi que adiar custa mais que eu imaginava realmente.",
+      "durationSec": 3.53,
+      "shots": [
+        {
+          "anchor": "percebi",
+          "visual": {
+            "type": "statement",
+            "text": "Então percebi o custo"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "adiar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ampulheta"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Nunca faça isso com conta, não deixe o azulejo.",
+      "durationSec": 3.18,
+      "shots": [
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "statement",
+            "text": "Nunca faça isso com a conta"
+          }
+        },
+        {
+          "anchor": "deixe",
+          "visual": {
+            "type": "statement",
+            "text": "Nunca faça isso com a conta"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.19
+}

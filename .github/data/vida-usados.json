@@ -742,5 +742,11 @@
     "gancho": "ta-perdendo",
     "turno": "noite",
     "em": "2026-10-11T11:02:00.798Z"
+  },
+  {
+    "situacao": "reforma-banheiro",
+    "gancho": "nunca-faca",
+    "turno": "manha",
+    "em": "2026-10-12T12:16:43.722Z"
   }
 ]
