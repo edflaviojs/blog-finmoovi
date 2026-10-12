@@ -63,6 +63,16 @@
         "movimento": "aproxima-lento",
         "pista": "um passo de cada vez"
       }
+    ],
+    "organizar-salario-mes-dia": [
+      {
+        "ficheiro": "manus/organizar-salario-mes-dia/susto.jpg",
+        "nome": "o susto de olhar a conta",
+        "significado": "o susto de olhar a conta",
+        "tipo": "foto",
+        "movimento": "aproxima",
+        "pista": "voce ja passou por aquela surpresa"
+      }
     ]
   }
 }

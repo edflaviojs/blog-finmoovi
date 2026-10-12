@@ -66,6 +66,72 @@
         "cena": "61",
         "boneco": "suspiro-alivio"
       }
+    ],
+    "organizar-salario-mes-dia": [
+      {
+        "cena": "1",
+        "boneco": "carregar-peso"
+      },
+      {
+        "cena": "3",
+        "boneco": "ombros"
+      },
+      {
+        "cena": "11",
+        "boneco": "susto"
+      },
+      {
+        "cena": "14",
+        "boneco": "contar-moedas"
+      },
+      {
+        "cena": "15",
+        "boneco": "sentar-derrotado"
+      },
+      {
+        "cena": "16",
+        "boneco": "pesadelo-dividas"
+      },
+      {
+        "cena": "20",
+        "boneco": "nervoso-dividas-pc"
+      },
+      {
+        "cena": "24",
+        "boneco": "escorregar-banana"
+      },
+      {
+        "cena": "30",
+        "boneco": "morder-unhas"
+      },
+      {
+        "cena": "39",
+        "boneco": "relogio"
+      },
+      {
+        "cena": "43",
+        "boneco": "puxar-cabelo"
+      },
+      {
+        "cena": "45",
+        "boneco": "ideia"
+      },
+      {
+        "cena": "50",
+        "boneco": "abracar-cofrinho"
+      },
+      {
+        "cena": "54",
+        "boneco": "proteger"
+      },
+      {
+        "cena": "66",
+        "boneco": "facepalm"
+      },
+      {
+        "cena": "68",
+        "boneco": "suspiro-alivio"
+      }
     ]
   }
 }

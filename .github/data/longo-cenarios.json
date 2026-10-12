@@ -135,6 +135,21 @@
       "cena": "o primeiro emprego — o uniforme, a condução e o troco que não sobra",
       "promessa": "Você deixa mais de três mil e seiscentos reais por ano escapando do orçamento, e eu vou te provar isso",
       "em": "2026-10-05"
+    },
+    {
+      "slug": "organizar-salario-mes-dia",
+      "cenarios": [
+        "o boleto",
+        "o mercado",
+        "o salário que cai na conta",
+        "a obra em casa"
+      ],
+      "fio": "balde-furado",
+      "elenco": "um casal, que discute o mesmo dinheiro por dois pontos de vista diferentes",
+      "funcaoDoApp": "partilha",
+      "cena": "o chuveiro que queimou num sábado à noite",
+      "promessa": "Você joga fora mais de quatro mil reais por ano sem perceber, e eu vou te provar isso agora",
+      "em": "2026-10-12"
     }
   ]
 }

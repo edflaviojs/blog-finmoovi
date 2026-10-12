@@ -183,6 +183,32 @@
         "cena": "63",
         "figura": "escada"
       }
+    ],
+    "organizar-salario-mes-dia": [
+      {
+        "cena": "19",
+        "figura": "fumaca"
+      },
+      {
+        "cena": "21",
+        "figura": "ratoeira"
+      },
+      {
+        "cena": "31",
+        "figura": "balde-furado"
+      },
+      {
+        "cena": "42",
+        "figura": "buraco"
+      },
+      {
+        "cena": "52",
+        "figura": "escudo"
+      },
+      {
+        "cena": "67",
+        "figura": "bifurcacao"
+      }
     ]
   }
 }

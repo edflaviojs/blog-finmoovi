@@ -87,6 +87,17 @@
       "usadoEm": [
         "economizar-300-por-mes"
       ]
+    },
+    {
+      "ficheiro": "manus/organizar-salario-mes-dia/susto.jpg",
+      "significado": "o susto de olhar a conta",
+      "tipo": "foto",
+      "pistas": [
+        "voce ja passou por aquela surpresa"
+      ],
+      "usadoEm": [
+        "organizar-salario-mes-dia"
+      ]
     }
   ],
   "recusadas": [
@@ -129,6 +140,26 @@
         "sair-do-vermelho"
       ],
       "em": "2026-08-09"
+    },
+    {
+      "ficheiro": "manus/organizar-salario-mes-dia/numero.jpg",
+      "significado": null,
+      "tipo": "cartaz",
+      "motivo": "o cartaz não mostra o que devia (esperava 16% e a fonte). Leu-se: juro rotativo cartão Fonte Banco edito Brasil",
+      "recusadaEm": [
+        "organizar-salario-mes-dia"
+      ],
+      "em": "2026-10-12"
+    },
+    {
+      "ficheiro": "manus/organizar-salario-mes-dia/numero-t2.jpg",
+      "significado": null,
+      "tipo": "cartaz",
+      "motivo": "o cartaz não mostra o que devia (esperava 16% e a fonte). Leu-se: juro rotativo cartão",
+      "recusadaEm": [
+        "organizar-salario-mes-dia"
+      ],
+      "em": "2026-10-12"
     }
   ]
 }
