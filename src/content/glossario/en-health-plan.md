@@ -18,83 +18,79 @@ seo:
   keywords: ["health plan", "glossary", "finance"]
 ---
 
-## O que acontece quando a conta do plano de saúde chega inesperada
+## What Happens When the Health Plan Bill Arrives Unexpectedly
 
-Você acabou de abrir a conta do plano de saúde e o valor está quase o mesmo que o aluguel de um apartamento pequeno. O susto bateu, a planilha mensal ficou desequilibrada e você ainda tem que pagar a conta de luz, o supermercado e o carro. Essa situação é mais comum do que parece: muitas pessoas subestimam o custo recorrente de um plano de saúde e acabam gastando mais do que deveriam, sem perceber onde o dinheiro está escapando.
+You just opened the health plan bill and the amount is almost the same as the rent for a small apartment. The shock hit, the monthly spreadsheet got unbalanced and you still have to pay the electricity bill, groceries and the car. This situation is more common than it seems: many people underestimate the recurring cost of a health plan and end up spending more than they should, without noticing where the money is slipping away.
 
-![O que acontece quando a conta do plano de saúde chega inesperada](/images/glossario/plano-de-saude-inline-1.webp)
+![What Happens When the Health Plan Bill Arrives Unexpectedly](/images/glossario/plano-de-saude-inline-1.webp)
 
+This is where FinMoovi comes in. Imagine being able to take a photo of the health plan boleto as soon as it lands in your inbox or receive a voice payment notification and, in seconds, the app already classifies the expense as “Health – Plan”. Not only that, it converts the amount to the currency you use daily, shows how this expense fits into your cash flow and even warns you if the total is close to the limit you set for health expenses. All of this without having to open spreadsheets or write things down by hand.
 
+## How the Health Plan Works
 
-É aqui que entra o FinMoovi. Imagine poder tirar uma foto do boleto do plano de saúde assim que ele chega na sua caixa de entrada ou receber a notificação de pagamento por voz e, em segundos, o app já classifica o gasto como “Saúde – Plano”. Não só isso, ele converte o valor para a moeda que você usa no dia a dia, mostra como esse gasto se encaixa no seu fluxo de caixa e ainda avisa se o total está perto do limite que você definiu para despesas de saúde. Tudo isso sem precisar abrir planilhas ou anotar à mão.
+A health plan is a contract that guarantees access to medical services, appointments, exams and hospitalizations in exchange for a monthly fee. There are different types of coverage:
 
-## Como funciona o plano de saúde
+- **Individual or family plan** – contracted by an individual, usually priced close to a small rent.
+- **Collective plan by adhesion** – offered by unions or associations, usually cheaper, but has waiting‑period rules.
+- **Corporate plan** – paid by the employer, can include dependents and has broader coverage.
 
-Um plano de saúde é um contrato que garante acesso a serviços médicos, consultas, exames e internações mediante o pagamento de uma mensalidade. Existem diferentes tipos de cobertura:
+The monthly fee can vary according to age, region and level of coverage (outpatient, inpatient or both). In addition to the fee, extra costs may appear such as co‑participation (a charge per appointment or exam) and renewal fees.
 
-- **Plano individual ou familiar** – contratado por pessoa física, costuma ter preço próximo ao de um aluguel pequeno.
-- **Plano coletivo por adesão** – oferecido por sindicatos ou associações, costuma ser mais barato, mas tem regras de carência.
-- **Plano empresarial** – pago pela empresa, pode incluir dependentes e tem cobertura mais ampla.
+## Why the Cost Can Get Out of Control
 
-A mensalidade pode variar de acordo com a idade, a região e o nível de cobertura (ambulatorial, hospitalar ou ambos). Além da mensalidade, podem aparecer custos extras como coparticipação (uma taxa por consulta ou exame) e taxas de renovação.
+- **Annual adjustments** – operators usually raise the monthly fee based on medical inflation indexes, which can be far higher than general price increases.
+- **Co‑participation** – if you use the plan a lot, the service fees can add up to almost the same as the monthly fee.
+- **Limited coverage** – some plans don’t cover certain procedures, making you pay separately and confusing the final bill.
 
-## Por que o custo pode fugir do controle
+![Why the Cost Can Get Out of Control](/images/glossario/plano-de-saude-inline-3.webp)
 
-- **Ajustes anuais** – as operadoras costumam reajustar a mensalidade com base em índices de inflação médica, que podem ser bem superiores ao aumento geral de preços.
-- **Coparticipação** – se você usa muito o plano, as taxas por serviço podem somar quase o mesmo que a mensalidade.
-- **Cobertura limitada** – alguns planos não cobrem determinados procedimentos, fazendo você pagar à parte e confundindo a conta final.
+Without constant monitoring, these details go unnoticed and end up compromising the monthly budget.
 
-![Por que o custo pode fugir do controle](/images/glossario/plano-de-saude-inline-3.webp)
+## How FinMoovi Helps Keep the Health Plan Under Control
 
+- **Smart capture**: take a photo of the boleto or use the voice command “register health plan”. The app recognizes the text, extracts the amount and places it in the correct category.
+- **Multi‑currency**: if you receive the boleto in dollars, euros or another currency, FinMoovi converts it to the currency you use in your finances, using the day’s rate.
+- **Real‑time cash flow**: when you register the payment, the app updates your available balance and shows how the expense impacted your health budget.
+- **Monthly reports**: see charts that compare the evolution of your health‑plan spending over the months, identifying spikes and trends.
+- **Planning and goals**: set a monthly ceiling for “Health” and receive alerts when you’re close to exceeding it.
+- **Shopping mode**: when creating a family plan, add all dependents to a list and see the total before confirming the subscription.
+- **Balance reminders and alerts**: get notified when the due date is near or if your bank‑account balance falls below a limit you set.
+- **Offline and sync**: even without internet, capture works and, once reconnected, everything syncs automatically.
 
+## Practical Steps to Use the Health Plan Without Headaches
 
-Sem um acompanhamento constante, esses detalhes passam despercebidos e acabam comprometendo o orçamento mensal.
+**Practical tip:** **Always register the boleto as soon as it arrives**. Use the photo or voice; this prevents the amount from getting lost among emails or papers.
 
-## Como o FinMoovi ajuda a manter o plano de saúde sob controle
+**Practical tip:** **Set a monthly limit for health expenses**. In FinMoovi, create the goal “Health – Plan” equivalent to, for example, “the price of two meals out”. The app notifies you when you’re at 80 % of the limit.
 
-- **Captura inteligente**: tire uma foto do boleto ou use o comando de voz “registrar plano de saúde”. O app reconhece o texto, extrai o valor e já coloca na categoria correta.
-- **Multi‑moeda**: se você recebe o boleto em dólares, euros ou outra moeda, o FinMoovi converte para a moeda que você usa nas suas finanças, usando a taxa do dia.
-- **Fluxo de caixa em tempo real**: ao registrar o pagamento, o app atualiza seu saldo disponível e mostra como o gasto impactou o seu orçamento de saúde.
-- **Relatórios mensais**: veja gráficos que comparam a evolução da sua despesa com o plano de saúde ao longo dos meses, identificando picos e tendências.
-- **Planejamento e metas**: defina um teto mensal para “Saúde” e receba alertas quando estiver próximo de ultrapassar.
-- **Modo compras**: ao fazer um plano familiar, adicione todos os dependentes em uma lista e veja o total antes de confirmar a assinatura.
-- **Lembretes e alertas de saldo**: receba notificação quando a data de vencimento estiver próxima ou se o saldo da conta bancária ficar abaixo de um limite que você definiu.
-- **Offline e sincronização**: mesmo sem internet, a captura funciona e, ao reconectar, tudo se sincroniza automaticamente.
+**Practical tip:** **Review co‑participation every three months**. If you notice you’re paying a lot for appointments, consider switching to a plan with a higher monthly fee but lower co‑participation. FinMoovi’s spending report shows exactly how much you spent on co‑participation in recent months.
 
-## Passos práticos para usar o plano de saúde sem dor de cabeça
+## Strategies to Save Without Losing Coverage
 
-**Practical tip:** **Sempre registre o boleto assim que ele chegar**. Use a foto ou a voz; isso evita que o valor se perca no meio de e‑mails ou papéis.
+- **Negotiate adjustments**: when you receive the increase notice, contact the operator and ask for a discount or a move to a plan with a smaller adjustment.
+- **Use the accredited network**: appointments and exams at hospitals or clinics in the operator’s network are usually free or have reduced co‑participation.
+- **Take advantage of the family plan**: splitting the cost with a spouse and children can reduce the per‑person amount by up to 30 %.
+- **Combine with health insurance**: some insurances cover procedures that the plan does not, avoiding unexpected expenses.
 
-**Practical tip:** **Defina um limite mensal para despesas de saúde**. No FinMoovi, crie a meta “Saúde – Plano” equivalente a, por exemplo, “o preço de duas refeições fora”. O app avisa quando você está a 80 % do limite.
+## How to Integrate the Health Plan into Your Overall Financial Planning
 
-**Practical tip:** **Revise a coparticipação a cada três meses**. Se perceber que está pagando muito por consultas, considere mudar para um plano com mensalidade maior, mas coparticipação menor. O relatório de gastos do FinMoovi mostra exatamente quanto você gastou em coparticipação nos últimos meses.
+1. **Classify correctly** – in FinMoovi, the “Health – Plan” category is separate from “Health – Co‑participation”. This way you see how much you’re paying in monthly fees and how much you’re spending on services.
+2. **Compare with other expenses** – use the “Expenses by Category” report to see if health is consuming more than, for example, leisure or transportation.
+3. **Adjust goals** – if health is consuming more than planned, cut spending in another area (like dining out) to keep balance.
+4. **Plan the renewal** – add the contract renewal date to FinMoovi’s calendar; the app will send a reminder in advance so you can renegotiate or switch plans.
 
-## Estratégias para economizar sem perder cobertura
+## When to Switch Plans
 
-- **Negocie reajustes**: ao receber o aviso de aumento, entre em contato com a operadora e peça um desconto ou a migração para um plano com reajuste menor.
-- **Use a rede credenciada**: consultas e exames em hospitais ou clínicas da rede da operadora costumam ser gratuitos ou com coparticipação reduzida.
-- **Aproveite o plano familiar**: dividir o custo entre cônjuge e filhos pode reduzir o valor por pessoa em até 30 %.
-- **Combine com seguro de saúde**: alguns seguros cobrem procedimentos que o plano não cobre, evitando despesas inesperadas.
+- **Increase above 10 %**: if the annual adjustment is more than 10 % of your monthly income, it’s worth researching alternatives.
+- **Excessive co‑participation use**: if the sum of co‑participation fees exceeds 20 % of your monthly fee, consider a plan with broader coverage.
+- **Life changes**: marriage, children or moving to another city may require a plan with different coverage.
 
-## Como integrar o plano de saúde ao seu planejamento financeiro geral
+## Start Today
 
-1. **Classifique corretamente** – no FinMoovi, a categoria “Saúde – Plano” fica separada de “Saúde – Coparticipação”. Assim, você vê quanto está pagando de mensalidade e quanto está gastando com serviços.
-2. **Compare com outras despesas** – use o relatório de “Despesas por categoria” para ver se a saúde está consumindo mais do que, por exemplo, lazer ou transporte.
-3. **Ajuste metas** – se a saúde está consumindo mais que o planejado, reduza gastos em outra área (como jantar fora) para manter o equilíbrio.
-4. **Planeje a renovação** – adicione ao calendário do FinMoovi a data de renovação do contrato; o app enviará lembrete com antecedência para que você possa renegociar ou mudar de plano.
+1. Open FinMoovi and tap the “+ New transaction” button.
+2. Use the camera to photograph your health plan boleto or say “register health plan”.
+3. Confirm the “Health – Plan” category and set the monthly limit to “the price of two meals out”.
+4. Activate the due‑date reminder 3 days before.
+5. View the expense chart for the next 7 days and adjust other categories if needed.
 
-## Quando mudar de plano
-
-- **Aumento acima de 10 %**: se o reajuste anual for maior que 10 % da sua renda mensal, vale a pena pesquisar alternativas.
-- **Uso excessivo de coparticipação**: se a soma das taxas de coparticipação ultrapassar 20 % da sua mensalidade, considere um plano com cobertura mais ampla.
-- **Mudança de vida**: casamento, filhos ou mudança de cidade podem exigir um plano com cobertura diferente.
-
-## Start today
-
-1. Abra o FinMoovi e toque no botão “+ Nova transação”.
-2. Use a câmera para fotografar o boleto do seu plano de saúde ou diga “registrar plano de saúde”.
-3. Confirme a categoria “Saúde – Plano” e ajuste o limite mensal para “o preço de duas refeições fora”.
-4. Ative o lembrete de vencimento 3 dias antes.
-5. Veja o gráfico de despesas nos próximos 7 dias e ajuste outras categorias se necessário.
-
-Com esses cinco minutos, você já tem o plano de saúde sob controle e evita surpresas no próximo mês. Boa gestão!
+With these five minutes, you’ll have the health plan under control and avoid surprises next month. Happy managing!

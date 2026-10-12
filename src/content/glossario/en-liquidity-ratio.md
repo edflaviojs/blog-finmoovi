@@ -17,83 +17,83 @@ seo:
   keywords: ["Liquidity Ratio", "glossary", "finance"]
 ---
 
-## O que acontece quando a conta parece vazia?
+## What Happens When Your Account Looks Empty?
 
-Imagine que você acabou de pagar o aluguel, a conta de luz chegou e ainda tem aquele convite inesperado para jantar fora com os amigos. Quando você abre o extrato do banco, a única coisa que aparece é “saldo insuficiente”. O medo de não conseguir honrar um compromisso surge na hora, e a ansiedade bate forte. Esse desconforto é exatamente o que o **quociente de liquidez** tenta medir: a capacidade que você tem de transformar rapidamente o que está guardado em dinheiro para cobrir despesas imediatas.
+Imagine you’ve just paid the rent, the electricity bill arrived, and you still have that unexpected invitation to dine out with friends. When you open your bank statement, the only thing that shows up is “insufficient balance.” The fear of not being able to meet a commitment hits instantly, and anxiety spikes. This discomfort is exactly what the **liquidity ratio** tries to measure: your ability to quickly turn what you have saved into cash to cover immediate expenses.
 
-![O que acontece quando a conta parece vazia?](/images/glossario/quociente-de-liquidez-inline-1.webp)
-
-
-
-## Entendendo o quociente de liquidez
-
-O quociente de liquidez (ou índice de liquidez) é uma relação simples que compara o total de ativos líquidos – dinheiro em conta, aplicações que podem ser resgatadas em até 30 dias e até mesmo o saldo de cartões de crédito que ainda não foi usado – com as obrigações de curto prazo, como contas a pagar nos próximos 30 dias. A fórmula básica é:
-
-**Quociente de liquidez = Ativos líquidos ÷ Passivos de curto prazo**
-
-Se o resultado for 1,0, significa que você tem exatamente o suficiente para pagar tudo que vence nos próximos 30 dias. Um número acima de 1,0 indica folga; abaixo de 1,0, sinal de alerta.
-
-### Por que isso importa?
-
-- **Segurança financeira:** Um quociente saudável reduz o risco de precisar recorrer a empréstimos de última hora, que costumam ter juros altos.
-- **Tranquilidade mental:** Saber que você tem dinheiro suficiente para cobrir as contas evita o estresse diário.
-- **Facilidade para planejar:** Quando a base está sólida, fica mais fácil pensar em metas de médio e longo prazo, como uma viagem ou a compra de um carro.
-
-## Como o FinMoovi ajuda a monitorar seu quociente
-
-A gente sabe que calcular índices financeiros pode parecer coisa de especialista, mas o FinMoovi transforma tudo isso em um clique. O recurso que faz a diferença aqui é o **smart capture**: você tira uma foto do recibo ou grava a voz dizendo “paguei a conta de internet” e o app categoriza automaticamente a despesa, atualizando seu saldo em tempo real. Além disso, o FinMoovi trabalha em **multi‑currency**, então se você tem dinheiro guardado em dólares, euros ou outra moeda, tudo aparece convertido para o seu padrão de referência, facilitando o cálculo do quociente.
-
-![Como o FinMoovi ajuda a monitorar seu quociente](/images/glossario/quociente-de-liquidez-inline-3.webp)
+![What Happens When Your Account Looks Empty?](/images/glossario/quociente-de-liquidez-inline-1.webp)
 
 
 
-Com o **cash flow e reports**, o app gera relatórios semanais que mostram a relação entre ativos líquidos e passivos, já indicando se seu quociente está acima ou abaixo de 1,0. Você ainda pode definir **metas mensais** – por exemplo, “manter o quociente acima de 1,2” – e receber alertas quando o número começa a cair.
+## Understanding the Liquidity Ratio
 
-## Passo a passo para melhorar seu quociente
+The liquidity ratio (or liquidity index) is a simple relationship that compares total liquid assets – cash in account, investments that can be redeemed within 30 days, and even the unused balance on credit cards – with short‑term obligations, such as bills due in the next 30 days. The basic formula is:
 
-- **Revise suas categorias de gasto:** Use o smart capture para garantir que cada despesa esteja no lugar certo. Às vezes, um gasto “diversão” pode estar sendo registrado como “alimentação”, inflando o valor que você acha que tem disponível.
-- **Consolide ativos líquidos:** Se você tem dinheiro guardado em várias contas ou aplicações, traga tudo para um só lugar ou, pelo menos, registre tudo no FinMoovi. Assim, o cálculo do quociente será mais preciso.
-- **Negocie prazos de pagamento:** Quando possível, peça ao fornecedor para estender o vencimento de 15 para 30 dias. Isso diminui o passivo de curto prazo e eleva seu índice.
+**Liquidity ratio = Liquid assets ÷ Short‑term liabilities**
 
-**Practical tip:** **Mantenha um “buffer” de emergência equivalente a duas contas de luz**. Isso equivale a cerca de duas a três vezes o seu gasto mensal médio e garante que seu quociente nunca caia abaixo de 1,0 em situações inesperadas.
+If the result is 1.0, it means you have exactly enough to pay everything that matures in the next 30 days. A number above 1.0 indicates a cushion; below 1.0, a warning sign.
 
-**Practical tip:** **Use o modo shopping do FinMoovi** para criar listas de compras e ver o total em tempo real. Assim você evita comprar por impulso e mantém o saldo de caixa mais estável.
+### Why Does It Matter?
 
-**Practical tip:** **Ative as notificações de saldo baixo**. O app avisa quando seu dinheiro disponível está próximo do limite de despesas previstas, permitindo ajustes antes que o quociente sofra um choque.
+- **Financial security:** A healthy ratio reduces the risk of having to resort to last‑minute loans, which usually carry high interest.
+- **Peace of mind:** Knowing you have enough cash to cover the bills eliminates daily stress.
+- **Easier planning:** When the foundation is solid, it’s easier to think about medium‑ and long‑term goals, like a trip or buying a car.
 
-## Ferramentas do FinMoovi que facilitam o cálculo
+## How FinMoovi Helps You Monitor Your Ratio
 
-- **Smart capture (foto ou voz):** Registra despesas imediatamente, sem precisar digitar nada.
-- **Multi‑currency:** Converte automaticamente valores de diferentes moedas, essencial para quem tem renda ou investimentos no exterior.
-- **Cash flow e relatórios:** Visualiza entradas e saídas em gráficos simples, com destaque para o quociente de liquidez.
-- **Planejamento mensal e metas:** Define objetivos como “quociente acima de 1,3” e acompanha o progresso.
-- **Cartões de crédito e contas a pagar:** Integra faturas e vencimentos, garantindo que tudo seja considerado no cálculo.
-- **Modo offline/PWA:** Mesmo sem internet, você continua registrando despesas; a sincronização acontece quando a conexão volta.
-- **Alertas de saldo e lembretes:** Notificações proativas para evitar surpresas.
+We know calculating financial ratios can feel like a specialist’s job, but FinMoovi turns all of that into a single click. The feature that makes the difference here is **smart capture**: you snap a photo of a receipt or record a voice note saying “paid the internet bill,” and the app automatically categorizes the expense, updating your balance in real time. In addition, FinMoovi works in **multi‑currency**, so if you have money saved in dollars, euros, or another currency, everything appears converted to your reference standard, making the ratio calculation easier.
 
-## Exemplos práticos do dia a dia
+![How FinMoovi Helps Monitor Your Ratio](/images/glossario/quociente-de-liquidez-inline-3.webp)
 
-1. **Viagem curta:** Você planeja um fim de semana em outra cidade. O custo total (hospedagem, transporte, alimentação) equivale a três vezes o valor de um café diário. Ao registrar cada gasto no FinMoovi, o app mostra que seu quociente caiu de 1,5 para 0,9. O alerta de saldo baixo aparece, e você decide adiar a viagem até que o índice volte ao menos a 1,2.
 
-2. **Compra de eletrodoméstico:** Um refrigerador custa o equivalente a duas contas de luz. Você tem parte do dinheiro guardado em euros e parte em dólares. O FinMoovi converte tudo, soma aos seus ativos líquidos e indica que o quociente ainda está em 1,3, sinal verde para a compra.
 
-3. **Emergência médica:** Uma consulta inesperada custa o mesmo que um mês de aluguel. Como seu quociente estava em 1,4, você paga sem precisar recorrer a empréstimo. O app registra a despesa, recalcula o índice e avisa que agora está em 1,0, lembrando de repor o fundo de emergência.
+With **cash flow and reports**, the app generates weekly reports that show the relationship between liquid assets and liabilities, already indicating whether your ratio is above or below 1.0. You can also set **monthly goals** – for example, “keep the ratio above 1.2” – and receive alerts when the number starts to drop.
 
-## Como manter o quociente saudável a longo prazo
+## Step‑by‑Step Guide to Improve Your Ratio
 
-- **Revisite seu orçamento mensal** a cada 30 dias. O FinMoovi facilita isso com relatórios automáticos.
-- **Aumente gradualmente seus ativos líquidos**: destine 5 % da renda mensal para uma conta de alta liquidez (poupança, fundo de emergência).
-- **Evite dívidas de curto prazo**: se precisar usar o cartão de crédito, pague a fatura integralmente antes do vencimento para não transformar um ativo líquido em passivo.
-- **Diversifique moedas** se você recebe ou gasta em diferentes países; isso protege seu poder de compra e mantém o índice estável.
+- **Review your spending categories:** Use smart capture to make sure every expense is in the right place. Sometimes a “fun” expense might be logged as “food,” inflating the amount you think you have available.
+- **Consolidate liquid assets:** If you have cash spread across several accounts or investments, bring it all to one place or, at least, record everything in FinMoovi. This makes the ratio calculation more accurate.
+- **Negotiate payment terms:** When possible, ask the supplier to extend the due date from 15 to 30 days. This reduces short‑term liabilities and raises your ratio.
 
-## Start today
+**Practical tip:** **Keep an emergency “buffer” equivalent to two electricity bills.** That’s roughly two to three times your average monthly spending and ensures your ratio never falls below 1.0 in unexpected situations.
 
-**Micro‑ação de 5 minutos no FinMoovi:**
+**Practical tip:** **Use FinMoovi’s shopping mode** to create shopping lists and see the total in real time. This helps you avoid impulse buys and keeps your cash balance steadier.
 
-1. Abra o app e vá para a tela “Captura inteligente”.
-2. Tire uma foto de um recibo recente (pode ser a conta de luz ou um comprovante de pagamento).
-3. Confirme a categoria sugerida pelo app e salve.
-4. Na seção “Relatórios”, verifique o seu quociente de liquidez atualizado.
-5. Defina uma meta simples: “Manter o quociente acima de 1,2 nos próximos 30 dias”.
+**Practical tip:** **Enable low‑balance notifications.** The app warns you when your available cash is close to the limit of planned expenses, allowing adjustments before the ratio takes a hit.
 
-Com esses poucos cliques, você já tem uma visão clara da sua saúde financeira e um ponto de partida para melhorar seu quociente de liquidez. Boa jornada!
+## FinMoovi Tools That Make the Calculation Easy
+
+- **Smart capture (photo or voice):** Records expenses instantly, no typing needed.
+- **Multi‑currency:** Automatically converts values from different currencies, essential for those with income or investments abroad.
+- **Cash flow and reports:** Visualizes inflows and outflows in simple charts, highlighting the liquidity ratio.
+- **Monthly planning and goals:** Sets objectives like “ratio above 1.3” and tracks progress.
+- **Credit cards and bills payable:** Integrates statements and due dates, ensuring everything is considered in the calculation.
+- **Offline/PWA mode:** Even without internet, you keep logging expenses; synchronization happens when the connection returns.
+- **Balance alerts and reminders:** Proactive notifications to avoid surprises.
+
+## Everyday Practical Examples
+
+1. **Short trip:** You plan a weekend in another city. The total cost (accommodation, transport, food) equals three times the price of a daily coffee. After logging each expense in FinMoovi, the app shows your ratio dropped from 1.5 to 0.9. The low‑balance alert appears, and you decide to postpone the trip until the ratio climbs back to at least 1.2.
+
+2. **Appliance purchase:** A refrigerator costs the equivalent of two electricity bills. You have part of the money saved in euros and part in dollars. FinMoovi converts everything, adds it to your liquid assets, and indicates the ratio is still at 1.3 – green light for the purchase.
+
+3. **Medical emergency:** An unexpected consultation costs the same as one month’s rent. Since your ratio was at 1.4, you pay without needing a loan. The app logs the expense, recalculates the ratio and notifies you that it’s now 1.0, reminding you to replenish the emergency fund.
+
+## How to Keep a Healthy Ratio Over the Long Term
+
+- **Revisit your monthly budget** every 30 days. FinMoovi makes this easy with automatic reports.
+- **Gradually increase your liquid assets:** Allocate 5 % of monthly income to a high‑liquidity account (savings, emergency fund).
+- **Avoid short‑term debt:** If you need to use a credit card, pay the full statement before the due date to keep an asset liquid rather than turning it into a liability.
+- **Diversify currencies** if you earn or spend in different countries; this protects your purchasing power and keeps the ratio stable.
+
+## Start Today
+
+**5‑minute micro‑action in FinMoovi:**
+
+1. Open the app and go to the “Smart Capture” screen.
+2. Take a photo of a recent receipt (it could be the electricity bill or a payment proof).
+3. Confirm the category suggested by the app and save.
+4. In the “Reports” section, check your updated liquidity ratio.
+5. Set a simple goal: “Keep the ratio above 1.2 for the next 30 days.”
+
+With just a few clicks, you’ll have a clear view of your financial health and a starting point to improve your liquidity ratio. Happy journey!
