@@ -1,0 +1,188 @@
+{
+  "slug": "kw-gaste-menos-poupe-r-500",
+  "term": "Gaste menos, poupe R$ 500",
+  "category": "mindset",
+  "keyword": "gastando",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "*Você já chegou no fim do mês e o dinheiro acabou antes da conta de luz?*"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "buraco",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você já chegou no fim do mês e o dinheiro acabou antes da conta de luz? Tá gastando sem ver onde cada real vai.",
+      "durationSec": 9.2,
+      "shots": [
+        {
+          "anchor": "Você",
+          "visual": {
+            "type": "statement",
+            "text": "Fim do mês?"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "acabou",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "gastando",
+          "visual": {
+            "type": "icon",
+            "icon": "money"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Um café aqui, um lanche ali, um streaming que nem usa… no fim do mês some quinhentos reais que você nem lembrou que saiu.",
+      "durationSec": 9.2,
+      "shots": [
+        {
+          "anchor": "café",
+          "visual": {
+            "type": "statement",
+            "text": "Um café aqui"
+          },
+          "sfx": "click"
+        },
+        {
+          "anchor": "some",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          }
+        },
+        {
+          "anchor": "você",
+          "visual": {
+            "type": "icon",
+            "icon": "coins"
+          },
+          "sfx": "coin"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Se você cortar só esses pequenos desperdícios, no fim do ano sobra mais de seis mil reais no bolso.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "cortar",
+          "visual": {
+            "type": "statement",
+            "text": "Cortar pequenos"
+          },
+          "sfx": "typewriter"
+        },
+        {
+          "anchor": "sobra",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 6000,
+            "prefix": "R$"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu usei o FinMoovi pra marcar cada gasto, e ele mostrou onde eu tava jogando dinheiro fora todo mês.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Visão geral dos gastos"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "mostrou",
+          "visual": {
+            "type": "statement",
+            "text": "Mostrou onde jogava"
+          },
+          "sfx": "ding"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver onde o seu dinheiro some? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 5,
+      "shots": [
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "statement",
+            "text": "Quer ver?"
+          },
+          "sfx": "alert"
+        },
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Gaste menos, poupe quinhentos reais por mês. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 5.4,
+      "shots": [
+        {
+          "anchor": "Gaste",
+          "visual": {
+            "type": "statement",
+            "text": "Gaste menos, poupe"
+          }
+        },
+        {
+          "anchor": "quinhentos",
+          "visual": {
+            "type": "icon",
+            "icon": "shield"
+          },
+          "sfx": "thud"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja onde seu dinheiro some",
+    "target": "app"
+  },
+  "totalDurationSec": 43.4
+}
