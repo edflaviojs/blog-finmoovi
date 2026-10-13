@@ -1,5 +1,76 @@
 [
   {
+    "file": "en-quotes-week-2-october-2026.md",
+    "dir": "posts",
+    "severity": 3,
+    "issues": {
+      "currency": 6,
+      "brInstitutions": [],
+      "brProducts": [
+        "Tesouro Direto",
+        "CDB",
+        "CDI",
+        "Selic"
+      ],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "IPCA",
+        "LCI",
+        "LCA"
+      ],
+      "ptLeftovers": [
+        "ação",
+        "poupança",
+        "reais",
+        "investimentos",
+        "valor"
+      ]
+    }
+  },
+  {
+    "file": "en-reserva-de-valor.md",
+    "dir": "glossario",
+    "severity": 3,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [
+        "Tesouro Direto"
+      ],
+      "geoRefs": [],
+      "ptWordsCount": 5,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "ação",
+        "poupança"
+      ]
+    }
+  },
+  {
+    "file": "es-cotizaciones-semana-2-octubre-2026.md",
+    "dir": "posts",
+    "severity": 3,
+    "issues": {
+      "currency": 6,
+      "brInstitutions": [],
+      "brProducts": [
+        "Tesouro Direto",
+        "CDB",
+        "Selic"
+      ],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "IPCA"
+      ],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-fgc-guarantee.md",
     "dir": "glossario",
     "severity": 2,
@@ -2668,6 +2739,21 @@
   },
   {
     "file": "en-how-to-spot-and-cut-recurring-expenses-that-drain-your.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-how-to-start-investing-for-real-in-2026-a-practical-guide.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -6027,6 +6113,21 @@
     }
   },
   {
+    "file": "es-como-empezar-a-invertir-de-verdad-en-2026-guia-practica-para.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-como-evitar-compras-impulsivas-y-proteger-tu-bolsillo.md",
     "dir": "posts",
     "severity": 0,
@@ -8953,6 +9054,21 @@
   },
   {
     "file": "es-renta-variable.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-reserva-de-valor.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {

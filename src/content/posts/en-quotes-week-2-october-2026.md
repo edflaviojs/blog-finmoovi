@@ -1,6 +1,6 @@
 ---
-title: "Weekly Summary: Dollar at R$ 5.00 — Week 2 of october"
-description: "Weekly financial market summary: dollar, euro, Selic and tips for investors. Week 2 of october 2026."
+title: "Weekly Summary: Dollar at title: ,000 — Week 2 of October"
+description: "Weekly financial market summary: dollar, euro, central bank rate and tips for investors. Week 2 of October 2026."
 image: "/images/posts/cotacoes-semana-2026-10-12.webp"
 imageAlt: "Brown leather notebook, calculator, coins, and green plant on white marble."
 category: "cotacoes"
@@ -20,44 +20,43 @@ seo:
 
 | Currency | Rate |
 | --- | --- |
-| Dollar (USD/BRL) | R$ 5.00 |
-| Euro (EUR/BRL) | R$ 5.60 |
+| Dollar (USD/BRL) | $1,000 |
+| Euro (EUR/BRL) | $1,120 |
 
 *Source: AwesomeAPI — rates as of 10/12/2026*
 
-## Resumo da Semana no Mercado Financeiro Brasileiro (5 a 12 de outubro de 2026)
+## Weekly Financial Market Summary (October 5–12, 2026)
 
-### 1. Dólar e Euro – Como se comportaram?
+### 1. Dollar and Euro – How Did They Perform?
 
-Nesta semana o **dólar** ficou cotado em **R$ 5,00** e o **euro** em **R$ 5,60**. Não houve divulgação de variações diárias, então o melhor que podemos dizer é que ambos os pares mantiveram esses níveis ao longo dos últimos sete dias. Para quem tem gastos em [moeda](/en/glossario/en-moeda) estrangeira – seja viagem, compras online ou investimentos – o cenário foi de estabilidade, sem surpresas que exigissem ajustes imediatos.
+This week the **dollar** was quoted at **$1,000** and the **euro** at **$1,120**. No daily variations were reported, so the best we can say is that both pairs maintained these levels over the past seven days. For those with expenses in [foreign currency](/en/glossario/en-moeda) — whether travel, online shopping, or investments — the situation was one of stability, with no surprises requiring immediate adjustments.
 
-### 2. Selic e o impacto nos seus investimentos
+### 2. Central Bank Rate and Its Impact on Your Investments
 
-A taxa [Selic](/en/glossario/en-selic) continua em **13,75% ao ano**, conforme o último comunicado do Copom em 04/11/2026. Essa taxa alta ainda é o principal termômetro para a rentabilidade de investimentos de renda fixa, como CDBs, LCIs/LCAs e fundos de curto prazo. Quando a Selic está elevada, esses produtos tendem a oferecer retornos mais atrativos em relação a alternativas de menor risco.
+The [central bank base rate](/en/glossario/en-selic) remains at **13.75% per year**, according to the latest Copom statement on 04/11/2026. This high rate continues to be the main benchmark for the returns of fixed-income investments, such as certificates of deposit (CDs), tax-exempt bank notes, and short-term funds. When the central bank base rate is high, these products tend to offer more attractive returns compared to lower-risk alternatives.
 
-Para quem tem parte da carteira em **[Tesouro Direto](/en/glossario/en-tesouro-direto)**, a taxa Selic serve de referência para o [Tesouro Selic](/en/posts/en-tesouro-direto-for-beginners), que acompanha de perto essa taxa. Já os títulos prefixados e atrelados à inflação (Tesouro IPCA+) podem apresentar rendimento menor que a Selic, mas ainda são interessantes para quem busca proteção contra a alta de preços.
+For those with part of their portfolio in [government bonds](/en/glossario/en-tesouro-direto), the central bank base rate serves as a reference for the [government bond tracking the central bank rate](/en/posts/en-tesouro-direto-for-beginners), which closely follows this rate. Meanwhile, fixed-rate and inflation-linked government bonds (such as inflation-linked government bonds) may yield less than the central bank base rate, but they remain appealing for those seeking protection against rising prices.
 
-### 3. Dica prática para o investidor pessoa física
+### 3. Practical Tip for Individual Investors
 
-**Use o FinMoovi para monitorar suas posições em dólares e euros.** O app permite acompanhar em tempo real o valor dos seus investimentos em diferentes moedas, além de registrar compras, vendas e custos operacionais. Assim, você evita surpresas na hora de converter ou rebalancear a carteira.
+**Use FinMoovi to monitor your dollar and euro positions.** The app lets you track in real time the value of your investments in different currencies, as well as record purchases, sales, and operational costs. This way, you avoid surprises when converting or rebalancing your portfolio.
 
-Outra ação simples: **revisite a alocação de renda fixa**. Se a maior parte do seu [patrimônio](/en/glossario/en-patrimonio) está em poupança ou em produtos com rendimento abaixo da Selic, considere migrar para CDBs de bancos médios ou fundos de renda fixa que pagam próximo ao [CDI](/en/glossario/en-cdi). Essa mudança pode melhorar o retorno sem aumentar o risco.
+Another simple step: **review your fixed-income allocation**. If most of your [net worth](/en/glossario/en-patrimonio) is in savings or products yielding below the central bank base rate, consider shifting to CDs from mid-sized banks or fixed-income funds that pay close to the [interbank rate](/en/glossario/en-cdi). This change can improve returns without increasing risk.
 
-### 4. O que observar na próxima semana?
+### 4. What to Watch Next Week?
 
-- **Movimentos das moedas estrangeiras**: Embora a cotação atual seja estável, fique de olho em notícias de comércio exterior, balança de pagamentos ou eventos políticos que possam mexer no dólar ou no euro. Qualquer mudança brusca pode impactar quem tem despesas ou investimentos em moeda estrangeira.
+- **Foreign currency movements**: Although the current quote is stable, keep an eye on foreign trade news, balance of payments, or political events that could affect the dollar or euro. Any sharp shift may impact those with expenses or investments in foreign currency.
 
-- **Decisões de política monetária internacional**: Mesmo que não possamos citar números, as decisões do Federal Reserve, do Banco Central Europeu ou do Banco da Inglaterra costumam influenciar o humor do mercado global e, indiretamente, a demanda por reais.
+- **International monetary policy decisions**: Even if we can’t cite specific numbers, decisions by the Federal Reserve, the European Central Bank, or the Bank of England often influence global market sentiment and, indirectly, demand for the local currency.
 
-- **Indicadores de inflação**: O IPCA acumulado em 12 meses está em **4,58%**, segundo o dado de 01/09/2026. Embora não tenhamos novos números esta semana, a trajetória da inflação continua sendo um ponto de atenção para quem investe em títulos atrelados à variação de preços.
+- **Inflation indicators**: The 12-month accumulated consumer price index stands at **4.58%**, based on the 01/09/2026 data. Although we don’t have new figures this week, the inflation trend remains a key consideration for investors in inflation-linked securities.
 
-- **Calendário econômico**: Fique atento a lançamentos de dados como produção industrial, vendas no varejo e índices de confiança. Eles podem sinalizar pressões sobre a política monetária e, consequentemente, sobre a Selic no futuro.
+- **Economic calendar**: Watch for releases such as industrial output, retail sales, and confidence indices. These can signal pressures on monetary policy and, consequently, on the central bank base rate going forward.
 
 ---
 
-**Resumo rápido:** O dólar e o euro mantiveram-se estáveis em R$ 5,00 e R$ 5,60, respectivamente. A Selic segue em 13,75% ao ano, sustentando bons retornos em renda fixa. Use o FinMoovi para controlar suas posições em moedas estrangeiras e reavalie a alocação de renda fixa para aproveitar a taxa atual. Na próxima semana, acompanhe movimentos cambiais, decisões de bancos centrais externos e os indicadores de inflação para ajustar sua estratégia quando necessário. Boa semana de investimentos!
+**Quick Summary:** The dollar and euro remained stable at $1,000 and $1,120, respectively. The central bank base rate holds at 13.75% per year, supporting solid returns in fixed income. Use FinMoovi to track your foreign currency positions and reassess your fixed-income allocation to take advantage of the current rate. Next week, monitor foreign exchange moves, external central bank decisions, and inflation indicators to adjust your strategy as needed. Have a great week of investing!
 
 
 ---
 **Ready to track your investments? [Try FinMoovi free for 7 days](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**
-

@@ -18,77 +18,77 @@ seo:
   keywords: ["reserva de valor", "glossary", "finance"]
 ---
 
-## O que acontece quando o dinheiro perde força?
+## What happens when money loses strength?
 
-Você já percebeu que o preço do pão ou da passagem de ônibus parece subir a cada mês? Se você guarda o dinheiro na conta corrente, ele pode até ficar “seguro”, mas perde poder de compra. Quando chega a hora de pagar a conta de luz ou de fazer uma viagem, aquele valor que parecia suficiente no início já não cobre nem metade dos gastos. Essa sensação de que o dinheiro “encolhe” é o ponto de partida para entender a **reserva de valor** – a estratégia de proteger o seu patrimônio contra a desvalorização ao longo do tempo.
+Have you ever noticed that the price of bread or a bus ticket seems to go up every month? If you keep your money in a checking account, it may stay “safe,” but it loses purchasing power. When it’s time to pay the electricity bill or plan a trip, that amount that once seemed enough no longer covers even half the expenses. This feeling that money “shrinks” is the starting point for understanding **store of value** – the strategy of protecting your wealth from losing value over time.
 
-![O que acontece quando o dinheiro perde força?](/images/glossario/reserva-de-valor-inline-1.webp)
-
-
-
-## Reserva de valor: conceito descomplicado
-
-Reserva de valor é simplesmente um jeito de guardar dinheiro de forma que ele mantenha, ou até aumente, seu poder de compra no futuro. Não se trata de “esconder” o dinheiro, mas de escolher ativos que resistam à inflação, às oscilações de mercado e à perda de valor ao longo dos anos. Em termos práticos, é como escolher um cofre que não só protege o que está dentro, mas ainda acrescenta algo a mais.
-
-## Como o FinMoovi ajuda a construir sua reserva de valor
-
-Imagine que você acabou de receber o salário e quer separar uma parte para a reserva de valor. O FinMoovi entra em cena com um recurso que facilita tudo isso: **captura inteligente**. Ao tirar uma foto do comprovante de depósito ou gravar a voz dizendo “reservei 20% do salário”, o app reconhece o valor, categoriza automaticamente como “Reserva de Valor” e já o coloca em um dos produtos disponíveis dentro da própria plataforma.
-
-![Como o FinMoovi ajuda a construir sua reserva de valor](/images/glossario/reserva-de-valor-inline-3.webp)
+![What happens when money loses strength?](/images/glossario/reserva-de-valor-inline-1.webp)
 
 
 
-Além disso, o FinMoovi trabalha com **multi‑moeda**, permitindo que você aloque parte da reserva em dólares, euros ou outra moeda forte, sem precisar abrir contas diferentes. O fluxo de caixa e os relatórios mostram, em tempo real, quanto do seu dinheiro está protegido contra a inflação e quanto ainda está “parado” na conta corrente. Você ainda pode definir metas mensais, como “acumular o equivalente a três meses de aluguel em ativos de reserva”, e acompanhar o progresso com gráficos simples.
+## Store of value: concept made simple
 
-## Onde colocar a reserva de valor? Opções práticas
+A store of value is simply a way to keep money so that it maintains, or even increases, its purchasing power in the future. It’s not about “hiding” money, but choosing assets that resist inflation, market swings, and value loss over the years. In practice, it’s like choosing a safe that not only protects what’s inside but also adds something extra.
 
-- **Tesouro Direto atrelado à inflação** – títulos públicos que pagam a variação do custo de vida mais um juros fixo. São seguros e fáceis de acompanhar no app.
-- **Fundos de renda fixa de curto prazo** – investem em papéis de baixo risco e costumam render acima da conta corrente.
-- **Moedas fortes (USD, EUR)** – guardadas em contas digitais ou fundos cambiais, ajudam a neutralizar a desvalorização da moeda local.
-- **Commodities como ouro** – acessíveis via ETFs (fundos de índice) que replicam o preço do metal precioso.
-- **Criptomoedas estáveis (stablecoins)** – mantêm paridade com moedas fortes, oferecendo liquidez instantânea.
+## How FinMoovi helps you build your store of value
 
-## **Practical tip:** Defina um percentual fixo do salário para a reserva
+Imagine you just got your paycheck and want to set aside part of it for your store of value. FinMoovi steps in with a feature that makes this easy: **smart capture**. By taking a photo of a deposit receipt or recording your voice saying “I set aside 20% of my salary,” the app recognizes the amount, automatically categorizes it as “Store of Value,” and places it in one of the available products within the platform.
 
-Escolha, por exemplo, 15 % do seu rendimento líquido e programe a transferência automática logo após o pagamento. Assim, você não precisa lembrar de fazer a operação; o dinheiro já vai direto para o produto escolhido.
+![How FinMoovi helps you build your store of value](/images/glossario/reserva-de-valor-inline-3.webp)
 
-## **Practical tip:** Use a funcionalidade de metas mensais do FinMoovi
 
-Crie a meta “Reserva de valor equivalente a 3 meses de despesas”. O app mostrará o quanto ainda falta, enviará lembretes e ajustará a alocação se você receber um bônus ou ganhar um dinheiro extra.
 
-## **Practical tip:** Diversifique entre moedas e ativos
+Additionally, FinMoovi supports **multi-currency**, allowing you to allocate part of your store of value to dollars, euros, or another strong currency — without needing to open separate accounts. Cash flow and reports show in real time how much of your money is protected against inflation and how much is still “idle” in your checking account. You can also set monthly goals, like “accumulate the equivalent of three months’ rent in store-of-value assets,” and track progress with simple charts.
 
-Não coloque tudo em um único tipo de investimento. Se a inflação da sua moeda subir, a parte em dólares ou ouro compensa a perda. O FinMoovi permite ver a distribuição em porcentagem e rebalancear com poucos cliques.
+## Where to put your store of value? Practical options
 
-## Como evitar armadilhas comuns
+- **Inflation-linked government bonds** – public securities that pay the change in the cost of living plus a fixed interest. They’re safe and easy to track in the app.
+- **Short-term fixed-income funds** – invest in low-risk instruments and typically yield more than a checking account.
+- **Strong currencies (USD, EUR)** – held in digital accounts or currency funds, they help neutralize the local currency’s depreciation.
+- **Commodities like gold** – accessible via ETFs (index funds) that track the price of the precious metal.
+- **Stablecoins** – maintain parity with strong currencies, offering instant liquidity.
 
-Muitos acreditam que deixar o dinheiro na poupança já é suficiente. A poupança costuma render menos que a inflação, o que significa perda de poder de compra. Outro erro frequente é concentrar tudo em um único ativo, como só ouro, que pode ter alta volatilidade em períodos curtos. A chave é combinar segurança (títulos públicos), liquidez (fundos de curto prazo) e proteção contra a moeda (moedas fortes ou commodities).
+## **Practical tip:** Set a fixed percentage of your salary for store of value
 
-## O papel do planejamento financeiro
+Choose, for example, 15% of your net income and schedule an automatic transfer right after payday. That way, you don’t have to remember to do it — the money goes straight to your chosen product.
 
-Ter uma reserva de valor não é só escolher o investimento certo; é também saber quanto você realmente precisa. Comece calculando suas despesas mensais essenciais – aluguel, alimentação, transporte, contas de serviços. Multiplique esse valor por três a seis, dependendo do seu grau de segurança desejado. Esse número será a base da sua meta de reserva.
+## **Practical tip:** Use FinMoovi’s monthly goals feature
 
-## Ferramentas do FinMoovi que facilitam o acompanhamento
+Create the goal “Store of value equivalent to 3 months of expenses.” The app will show how much more you need, send reminders, and adjust allocation if you get a bonus or extra income.
 
-- **Relatórios de fluxo de caixa** – mostram entradas, saídas e quanto está sendo destinado à reserva.
-- **Alertas de saldo** – notificam quando o valor da reserva cai abaixo do limite que você definiu.
-- **Modo offline/PWA** – permite registrar despesas e capturas de recibos mesmo sem internet; tudo sincroniza quando você se reconecta.
-- **Shopping mode** – cria listas de compras e calcula o total em tempo real, ajudando a evitar gastos desnecessários que poderiam ser direcionados à reserva.
+## **Practical tip:** Diversify across currencies and assets
 
-## Quando revisar sua reserva de valor
+Don’t put everything in one type of investment. If inflation in your currency rises, the portion in dollars or gold can offset the loss. FinMoovi lets you see the allocation in percentages and rebalance with just a few clicks.
 
-- **A cada 6 meses** – verifique se a inflação acumulada está sendo superada pelos rendimentos dos seus ativos.
-- **Ao mudar de emprego ou receber aumento** – ajuste o percentual de reserva para refletir a nova realidade financeira.
-- **Quando houver grandes eventos** – casamento, compra de imóvel ou mudança de país, reavalie a necessidade de liquidez e a composição da reserva.
+## How to avoid common pitfalls
+
+Many believe keeping money in a savings account is enough. Savings often earn less than inflation, meaning a loss of purchasing power. Another frequent mistake is putting everything into a single asset, like only gold, which can be volatile in the short term. The key is combining safety (government bonds), liquidity (short-term funds), and currency protection (strong currencies or commodities).
+
+## The role of financial planning
+
+Having a store of value isn’t just about picking the right investment — it’s also about knowing how much you really need. Start by calculating your essential monthly expenses — rent, food, transport, utility bills. Multiply that by three to six, depending on your desired security level. That number becomes the baseline for your store-of-value goal.
+
+## FinMoovi tools that make tracking easier
+
+- **Cash flow reports** – show income, expenses, and how much is going toward your store of value.
+- **Balance alerts** – notify you when your store of value drops below the limit you set.
+- **Offline/PWA mode** – lets you record expenses and capture receipts even without internet; everything syncs when you reconnect.
+- **Shopping mode** – creates shopping lists and calculates totals in real time, helping avoid unnecessary spending that could have gone to your store of value.
+
+## When to review your store of value
+
+- **Every 6 months** – check if accumulated inflation is being beaten by returns on your assets.
+- **When changing jobs or getting a raise** – adjust your store-of-value percentage to reflect your new financial situation.
+- **During major life events** – marriage, buying a home, or moving countries, reassess liquidity needs and your store of value’s composition.
 
 ## Start today
 
-**Micro‑ação de 5 minutos no FinMoovi:**
+**5‑minute micro‑action in FinMoovi:**
 
-1. Abra o app e vá para a tela “Metas”.
-2. Crie uma nova meta chamada “Reserva de valor – 3 meses de despesas”.
-3. Defina o valor alvo como “equivalente a três vezes o seu gasto mensal médio”.
-4. Use a captura inteligente para registrar o próximo depósito (foto do comprovante ou voz).
-5. Selecione o produto “Tesouro Direto atrelado à inflação” ou “Conta em dólares” e confirme.
+1. Open the app and go to the “Goals” screen.
+2. Create a new goal called “Store of value – 3 months of expenses.”
+3. Set the target value as “equivalent to three times your average monthly spending.”
+4. Use smart capture to log the next deposit (photo of receipt or voice note).
+5. Select the product “Inflation-linked government bonds” or “USD account” and confirm.
 
-Em menos de cinco minutos você já terá iniciado a sua reserva de valor, com tudo registrado e monitorado automaticamente. Agora é só acompanhar o progresso e deixar o dinheiro trabalhar por você.
+In under five minutes, you’ll have started your store of value, with everything recorded and monitored automatically. Now just track the progress and let your money work for you.
