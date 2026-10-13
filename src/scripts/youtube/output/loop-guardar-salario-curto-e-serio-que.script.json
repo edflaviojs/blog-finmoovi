@@ -1,0 +1,118 @@
+{
+  "slug": "loop-guardar-salario-curto-e-serio-que",
+  "formato": "loop16",
+  "term": "Guardar com salário curto",
+  "category": "vida",
+  "keyword": "GUARDAR",
+  "valor": "R$ 50",
+  "situacao": "guardar-salario-curto",
+  "gancho": "e-serio-que",
+  "ganchoFamilia": "é sério que",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "balde-furado",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "É sério que ninguém está falando de envelope furado?",
+      "durationSec": 3.26,
+      "shots": [
+        {
+          "anchor": "sério",
+          "visual": {
+            "type": "statement",
+            "text": "Ninguém fala de envelope"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "ninguém",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu guardei cinquenta reais na primeira semana e o balde vazou logo.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "guardei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "cinquenta",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 50 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Então percebi que só encho e perco ao mesmo tempo.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "percebi",
+          "visual": {
+            "type": "statement",
+            "text": "Então percebi o vazamento"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "encho",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Agora vejo o envelope furado, e a gente tenta tapar simples.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "envelope",
+          "visual": {
+            "type": "statement",
+            "text": "Envelope furado, gente tenta"
+          }
+        },
+        {
+          "anchor": "furado",
+          "visual": {
+            "type": "statement",
+            "text": "Ninguém fala de envelope"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}

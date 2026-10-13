@@ -748,5 +748,11 @@
     "gancho": "nunca-faca",
     "turno": "manha",
     "em": "2026-10-12T12:16:43.722Z"
+  },
+  {
+    "situacao": "guardar-salario-curto",
+    "gancho": "e-serio-que",
+    "turno": "manha",
+    "em": "2026-10-13T12:01:36.683Z"
   }
 ]
