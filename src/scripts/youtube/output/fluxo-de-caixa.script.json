@@ -1,0 +1,203 @@
+{
+  "slug": "fluxo-de-caixa",
+  "term": "fluxo de caixa",
+  "category": "basico",
+  "keyword": "fluxo",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "*Você sabe por que o seu dinheiro some antes do fim do mês?*"
+  },
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "bola-neve",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você sabe por que o seu dinheiro some antes do fim do mês? É porque você não acompanha o seu fluxo de caixa.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "sabe",
+          "visual": {
+            "type": "statement",
+            "text": "Entenda o porquê"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "antes",
+          "visual": {
+            "type": "number",
+            "text": "R$ 0"
+          }
+        },
+        {
+          "anchor": "fluxo",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "No último salário você recebeu trezentos reais, pagou aluguel, conta de luz, gastou cem no mercado e cinquenta no ônibus.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "último",
+          "visual": {
+            "type": "statement",
+            "text": "Último salário"
+          }
+        },
+        {
+          "anchor": "recebeu",
+          "visual": {
+            "type": "icon",
+            "icon": "money"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "aluguel",
+          "visual": {
+            "type": "number",
+            "text": "R$ 300"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Somando tudo, você gastou quase novecentos reais, mas só recebeu trezentos. O resto, seiscentos, desapareceu sem você notar.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "Somando",
+          "visual": {
+            "type": "statement",
+            "text": "Somando tudo"
+          }
+        },
+        {
+          "anchor": "gastou",
+          "visual": {
+            "type": "number",
+            "text": "R$ 900"
+          }
+        },
+        {
+          "anchor": "seiscentos",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei esses números na calculadora do FinMoovi e ele mostrou que faltam seiscentos reais para fechar o caixa.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "joguei",
+          "visual": {
+            "type": "app",
+            "app": "calculadora",
+            "note": "Tela da calculadora com números"
+          }
+        },
+        {
+          "anchor": "mostrou",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 600,
+            "prefix": "R$"
+          },
+          "sfx": "typewriter"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "statement",
+            "text": "Quer ver o seu?"
+          }
+        },
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "icon",
+            "icon": "target"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Fluxo de caixa é só anotar o que entra e sai. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "Fluxo",
+          "visual": {
+            "type": "statement",
+            "text": "Fluxo de caixa"
+          }
+        },
+        {
+          "anchor": "anotar",
+          "visual": {
+            "type": "statement",
+            "text": "Anotar entradas e saídas"
+          }
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "icon",
+            "icon": "shield"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Controle seu dinheiro agora",
+    "target": "app"
+  },
+  "totalDurationSec": 41.4
+}
