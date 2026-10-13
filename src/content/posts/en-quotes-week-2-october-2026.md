@@ -55,7 +55,7 @@ Another simple step: **review your fixed-income allocation**. If most of your [n
 
 ---
 
-**Quick Summary:** The dollar and euro remained stable at $1,000 and $1,120, respectively. The central bank base rate holds at 13.75% per year, supporting solid returns in fixed income. Use FinMoovi to track your foreign currency positions and reassess your fixed-income allocation to take advantage of the current rate. Next week, monitor foreign exchange moves, external central bank decisions, and inflation indicators to adjust your strategy as needed. Have a great week of investing!
+**Quick Summary:** The dollar and euro remained stable at $1,000 and $1,120, respectively. The central bank base rate holds at 13.75% per year, supporting solid returns in [fixed income](/en/glossario/en-fixed-income). Use FinMoovi to track your foreign currency positions and reassess your fixed-income allocation to take advantage of the current rate. Next week, monitor [foreign exchange](/en/glossario/en-cambio) moves, external central bank decisions, and inflation indicators to adjust your strategy as needed. Have a great week of investing!
 
 
 ---
