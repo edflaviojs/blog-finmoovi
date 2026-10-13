@@ -3,6 +3,7 @@ title: "Como começar a investir de verdade em 2026: guia prático para quem que
 description: "Descubra, em linguagem simples, como dar os primeiros passos nos investimentos, organizar seu dinheiro e usar o FinMoovi para transformar a jornada financeira."
 tickerHeadline: "O passo que falta para seu dinheiro cres"
 image: "/images/posts/como-comecar-a-investir-de-verdade-em-2026-guia-pratico-para.webp"
+imageAlt: "Casal sorridente sentado em sofá bege usando um laptop, com planta verde ao fundo."
 category: "dicas"
 locale: "pt"
 tags: ["tudo sobre investimentos","finanças pessoais","economia","dinheiro"]

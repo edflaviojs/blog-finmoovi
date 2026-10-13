@@ -3,6 +3,7 @@ title: "How to Start Investing for Real in 2026: A Practical Guide for Growing Y
 description: "Learn simple steps to begin investing, organize your finances, and use FinMoovi to boost your financial journey."
 tickerHeadline: "The missing step for your money to grow"
 image: "/images/posts/como-comecar-a-investir-de-verdade-em-2026-guia-pratico-para.webp"
+imageAlt: "Smiling couple in blue shirts sitting on a sofa using a laptop."
 category: "dicas"
 locale: "en"
 tags: ["investing basics","personal finance","money management","financial planning","FinMoovi"]

@@ -4,6 +4,7 @@ definition: "What reserva de valor is and how it shows up in your everyday money
 title: "reserva de valor - Financial Glossary"
 description: "What reserva de valor is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/reserva-de-valor.webp"
+imageAlt: "Gold coins, pink arrow, and two glass jars with green plants on a dark background."
 category: "basico"
 tags: ["reserva de valor", "glossary", "finance"]
 author: "FinMoovi"

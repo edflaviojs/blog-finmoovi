@@ -2,6 +2,7 @@
 title: "Resumen Semanal: Dólar a R$ 5.00 — Semana 2 de octubre"
 description: "Resumen semanal del mercado financiero: dólar, euro, Selic y consejos para inversores. Semana 2 de octubre 2026."
 image: "/images/posts/cotacoes-semana-2026-10-12.webp"
+imageAlt: "Agenda marrón, calculadora, monedas y planta verde sobre superficie de mármol blanco."
 category: "cotacoes"
 tags: ["cotizaciones","dólar","euro","mercado financiero","selic"]
 author: "FinMoovi"

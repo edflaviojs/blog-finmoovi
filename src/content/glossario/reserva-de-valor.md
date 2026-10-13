@@ -4,6 +4,7 @@ definition: "O que é reserva de valor e como isso aparece no seu dia a dia — 
 title: "reserva de valor - Glossário Financeiro"
 description: "O que é reserva de valor e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/reserva-de-valor.webp"
+imageAlt: "Pilhas de moedas douradas, frascos com plantas verdes e gráfico rosa ascendente."
 category: "basico"
 tags: ["reserva de valor", "glossário", "finanças"]
 author: "FinMoovi"
