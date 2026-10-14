@@ -1223,7 +1223,12 @@ async function principal() {
     await escreverPrimeiroComentario(chave, video.id, texto);
     log('💬 primeiro comentário escrito — falta fixar à mão no Studio.');
   } catch (err) {
-    log(`⚠️ o primeiro comentário falhou (o vídeo já está em cima): ${err.message}`);
+    /* 14/10/2026 — MEDIDO: isto falha SEMPRE (403) desde 24/08, porque o YouTube não
+       aceita comentário em vídeo PRIVADO — e o longo sobe privado até à estreia. Não é
+       avaria: quem escreve o comentário é o `comentarios.js` (corre de hora a hora),
+       mal o vídeo fica público. Ex.: dFIeWkBgRgo estreou 11/10 22:00 UTC, comentado às
+       22:10 (run 38179380371). O aviso antigo levou a diagnosticar "permissão". */
+    log(`ℹ️ primeiro comentário: o YouTube não aceita em vídeo privado — o robô de comentários (de hora a hora) escreve-o logo após a estreia. (${err.message.slice(0, 60)})`);
   }
 
   /**
