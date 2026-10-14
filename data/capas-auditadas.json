@@ -5639,6 +5639,26 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-10-13"
+    },
+    "indice-finmoovi-custo-de-vida-setembro-2026.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-14"
+    },
+    "swaps-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-14"
+    },
+    "swaps-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-14"
+    },
+    "swaps.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-14"
     }
   },
   "corrigidas": {
@@ -6303,6 +6323,6 @@
       "motivo": "tem texto escrito (\"I'm sorry, I'm not able to identify the people in this image.\")"
     }
   },
-  "totalAcervo": 1128,
-  "ultimaCorrida": "2026-10-13"
+  "totalAcervo": 1132,
+  "ultimaCorrida": "2026-10-14"
 }
