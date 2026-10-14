@@ -110,6 +110,17 @@ on:
     - cron: '0 2 * * 2'    # terça 23h00 de segunda no Brasil
     - cron: '0 12 * * 2'   # terça 09h00 no Brasil — 1ª repescagem
     - cron: '0 18 * * 2'   # terça 15h00 no Brasil — última oportunidade da Etapa 2
+    #
+    # ═══ A REDE DE QUARTA — 14/10/2026, ordem do dono ("pode fazer") ═══
+    # Na semana de 13/10 as QUATRO corridas de terça morreram (voz da Microsoft com 403)
+    # e não havia mais nenhuma: o domingo 18/10 só se salvou por um disparo à mão na
+    # quarta. Esta corrida é essa mão, automática.
+    # ⚠️ Não pode fazer um SEGUNDO vídeo quando a terça deu certo — e não faz, PROVADO a
+    # 14/10 com o caderno real: `--qual-reservado` não devolve vídeo já subido (filtra
+    # `temVideo`), por isso `--conferir-estreia` vê o domingo OCUPADO e sai com 78
+    # ("nada a fazer", verde). Quarta é "outro dia" para `Que etapa é hoje` → Etapa 2;
+    # e se nem a segunda correu, faz as duas etapas (a mesma rede de sempre).
+    - cron: '0 2 * * 3'    # quarta 23h00 de terça no Brasil — a rede, se a terça falhou
 
 permissions:
   contents: write
