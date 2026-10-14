@@ -28,8 +28,8 @@
  *   node src/scripts/youtube/posts-semana.js              (escreve e envia o e-mail)
  */
 
-import { existsSync, readFileSync, writeFileSync } from 'node:fs';
-import { join } from 'node:path';
+import { existsSync, readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+import { join, dirname } from 'node:path';
 import { generateText } from '../apis/kie-ai.js';
 import { corrigirPromessa } from './lib/promessa-gratis.js';
 import { config } from '../../../site.config.ts';
@@ -41,6 +41,24 @@ const RESEND_API_KEY = process.env.RESEND_API_KEY;
 const PARA = process.env.DIGEST_TO || 'finmoovi@gmail.com';
 const ENSAIO = process.argv.includes('--ensaio');
 const SAIDA = process.env.POSTS_SAIDA || join(RAIZ, '.posts-semana.json');
+const SO_ESCREVER = process.argv.includes('--escrever');
+const SO_ENVIAR = process.argv.includes('--enviar');
+
+/**
+ * ♦ 14/10/2026 — A PÁGINA DE COPIAR COM UM CLIQUE, pedido do dono: *"teria como nesse
+ * email vir com aquela função de com só um clique eu conseguir copiar o texto"* — e,
+ * logo a seguir, *"entrar por esse /status é mais complicado pra mim, teria que vir no
+ * email mesmo"*.
+ *
+ * ⚠️ O Gmail apaga TODO o JavaScript de um e-mail — um botão "copiar" dentro da
+ * mensagem não pode funcionar, em cliente nenhum. Por isso o e-mail leva, no topo, um
+ * botão que abre esta página SEM LOGIN, onde cada texto tem o seu botão.
+ * Fica fora do Google por três lados: `<meta robots>`, `X-Robots-Tag` em `_headers` e
+ * `Disallow` em `robots.txt`. Não guarda nada secreto: são posts que vão ao ar.
+ * O e-mail só sai DEPOIS de a página nova estar no ar (ver `esperarPagina`).
+ */
+const PAGINA_ARQUIVO = join(RAIZ, 'public/posts-youtube/index.html');
+const PAGINA_URL = 'https://blog.finmoovi.com/posts-youtube/';
 
 const LIMITE_TEXTO = 500;     // o YouTube aceita mais; curto é o que se lê no feed
 const LIMITE_OPCAO = 65;      // limite do YouTube para cada opção de enquete
@@ -258,7 +276,7 @@ function textoFinal(p, i, anterior) {
   return t;
 }
 
-function montarEmail(posts, anterior, proximo, segunda) {
+function montarEmail(posts, anterior, proximo, segunda, paginaPronta = false) {
   const datas = PLANO.map((_, i) => { const d = new Date(segunda); d.setDate(segunda.getDate() + i); return d; });
   const caixas = posts.map((p, i) => {
     const plano = PLANO[i];
@@ -282,7 +300,11 @@ function montarEmail(posts, anterior, proximo, segunda) {
   const subject = `📣 Posts do YouTube da semana (${ddmm(datas[0])} a ${ddmm(datas[5])}) — prontos para agendar`;
   const html = `<!DOCTYPE html><html><body style="margin:0;padding:0;background:#0d1117;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
   <div style="max-width:640px;margin:0 auto;padding:32px 16px;">
-    <h1 style="color:#f0f6fc;font-size:20px;margin:0 0 8px;">Os 6 posts desta semana</h1>
+    <h1 style="color:#f0f6fc;font-size:20px;margin:0 0 16px;">Os 6 posts desta semana</h1>
+    ${paginaPronta
+    ? `<a href="${PAGINA_URL}" style="display:block;text-align:center;background:#58a6ff;color:#0d1117;font-size:17px;font-weight:700;text-decoration:none;border-radius:10px;padding:16px;margin:0 0 8px;">📋 Abrir a página de copiar com 1 clique</a>
+    <p style="color:#8b949e;font-size:12px;text-align:center;margin:0 0 24px;">Lá, cada texto, opção de enquete e prompt de imagem tem o seu botão "Copiar". Sem senha.</p>`
+    : '<p style="color:#d29922;font-size:13px;margin:0 0 24px;">⚠️ A página de copiar não ficou pronta a tempo — os textos estão todos aqui embaixo.</p>'}
     <p style="color:#8b949e;font-size:14px;line-height:1.6;margin:0 0 8px;">
       Sobre o vídeo de domingo: <strong style="color:#f0f6fc;">${escapar(anterior.titulo)}</strong>${proximo ? `<br>Sábado avisa o próximo: <strong style="color:#f0f6fc;">${escapar(proximo.titulo)}</strong>` : ''}
     </p>
@@ -293,6 +315,103 @@ function montarEmail(posts, anterior, proximo, segunda) {
     <p style="color:#484f58;font-size:11px;margin:24px 0 0;">Escrito por IA grátis. O YouTube não deixa robô publicar posts — por isso vem para você agendar.</p>
   </div></body></html>`;
   return { subject, html };
+}
+
+export function montarPagina(posts, anterior, proximo, segunda, geradoEm) {
+  const datas = PLANO.map((_, i) => { const d = new Date(segunda); d.setDate(segunda.getDate() + i); return d; });
+  let n = 0;
+  const bloco = (rotulo, texto, classe = '') => {
+    n += 1;
+    return `
+      <div class="bloco ${classe}">
+        <pre id="t${n}">${escapar(texto)}</pre>
+        <button type="button" data-copiar="t${n}" data-rotulo="${rotulo}">${rotulo}</button>
+      </div>`;
+  };
+  const cartoes = posts.map((p, i) => {
+    const plano = PLANO[i];
+    const enquete = plano.tipo === 'enquete';
+    const partes = [`<h2>${plano.dia.toUpperCase()} ${ddmm(datas[i])} <span>· 12h · ${enquete ? '📊 enquete' : '📝 texto'}</span></h2>`];
+    partes.push(bloco(enquete ? '📋 Copiar pergunta' : '📋 Copiar texto', textoFinal(p, i, anterior)));
+    if (enquete) {
+      partes.push('<p class="nota">Opções da enquete — uma em cada campo:</p>');
+      p.opcoes.forEach((o, k) => partes.push(bloco(`📋 Copiar opção ${k + 1}`, o, 'opcao')));
+    } else {
+      partes.push('<p class="nota img">🎨 Prompt da imagem — cole no ChatGPT ou no Gemini:</p>');
+      partes.push(bloco('🎨 Copiar prompt da imagem', promptDaImagem(p.cena), 'imagem'));
+    }
+    return `<section class="cartao">${partes.join('')}</section>`;
+  }).join('');
+
+  return `<!doctype html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Posts do YouTube — semana de ${ddmm(datas[0])}</title>
+<style>
+  :root { --fundo:#0d1117; --cartao:#161b22; --borda:#30363d; --texto:#f0f6fc; --suave:#8b949e; --azul:#58a6ff; --verde:#3fb950; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--fundo); color:var(--texto); font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; }
+  main { max-width:680px; margin:0 auto; padding:24px 16px 64px; }
+  h1 { font-size:22px; margin:0 0 6px; }
+  .sub { color:var(--suave); font-size:14px; line-height:1.6; margin:0 0 12px; }
+  .cartao { background:var(--cartao); border:1px solid var(--borda); border-radius:14px; padding:18px; margin:0 0 18px; }
+  h2 { color:var(--azul); font-size:15px; margin:0 0 12px; }
+  h2 span { color:var(--suave); font-weight:400; }
+  .bloco { margin:0 0 10px; }
+  pre { white-space:pre-wrap; word-break:break-word; font-family:inherit; font-size:15px; line-height:1.6; margin:0 0 8px; background:var(--fundo); border:1px solid var(--borda); border-radius:10px; padding:12px; }
+  .imagem pre { font-size:13px; color:#c9d1d9; border-style:dashed; border-color:var(--verde); }
+  .opcao pre { padding:8px 12px; }
+  .nota { color:var(--suave); font-size:12px; margin:14px 0 6px; }
+  .nota.img { color:var(--verde); font-weight:600; }
+  button { width:100%; min-height:48px; border:0; border-radius:10px; background:var(--azul); color:#0d1117; font-size:16px; font-weight:700; cursor:pointer; }
+  .imagem button { background:var(--verde); }
+  button.ok { background:#f0f6fc; }
+  .como { color:var(--suave); font-size:13px; line-height:1.6; margin:0 0 20px; }
+</style></head>
+<body><main>
+  <h1>📣 Os 6 posts desta semana</h1>
+  <p class="sub">Sobre o vídeo de domingo: <strong>${escapar(anterior.titulo)}</strong>${proximo ? `<br>Sábado avisa o próximo: <strong>${escapar(proximo.titulo)}</strong>` : ''}</p>
+  <p class="como"><strong>Como agendar:</strong> YouTube Studio → Criar → Criar post → colar → (enquete: botão Enquete) → seta ao lado de Publicar → Agendar.</p>
+  ${cartoes}
+  <p class="como">Atualizado em <span id="marca">${escapar(geradoEm)}</span></p>
+</main>
+<script>
+// A cópia "à antiga" (textarea + execCommand) PRIMEIRO, e é de propósito (14/10): é
+// síncrona, funciona no clique em todo o navegador e não fica à espera de permissão.
+// No ensaio com o Chrome, a navigator.clipboard ficou PENDURADA e o botão nunca
+// respondia. Ela só entra se a primeira disser que não copiou.
+document.addEventListener('click', function (e) {
+  var b = e.target.closest('[data-copiar]');
+  if (!b) return;
+  var t = document.getElementById(b.getAttribute('data-copiar')).textContent;
+  var a = document.createElement('textarea');
+  a.value = t; a.setAttribute('readonly', ''); a.style.position = 'fixed'; a.style.top = '-1000px';
+  document.body.appendChild(a); a.select(); a.setSelectionRange(0, t.length);
+  var ok = false;
+  try { ok = document.execCommand('copy'); } catch (_) { ok = false; }
+  a.remove();
+  if (!ok && navigator.clipboard) { navigator.clipboard.writeText(t).catch(function () {}); }
+  b.textContent = '✅ Copiado! Agora é só colar';
+  b.classList.add('ok');
+  setTimeout(function () { b.textContent = b.getAttribute('data-rotulo'); b.classList.remove('ok'); }, 2000);
+});
+</script>
+</body></html>
+`;
+}
+
+/** Espera o Cloudflare publicar a página NOVA (procura a marca desta corrida). */
+async function esperarPagina(geradoEm, { tentativas = 40, intervaloMs = 30000 } = {}) {
+  for (let i = 1; i <= tentativas; i++) {
+    try {
+      const r = await fetch(`${PAGINA_URL}?v=${Date.now()}`, { headers: { 'Cache-Control': 'no-cache' } });
+      if (r.ok && (await r.text()).includes(geradoEm)) return true;
+    } catch { /* rede — tenta outra vez */ }
+    console.log(`   ⏳ a página nova ainda não está no ar (${i}/${tentativas})…`);
+    await dormir(intervaloMs);
+  }
+  return false;
 }
 
 async function enviar({ subject, html }) {
@@ -332,18 +451,34 @@ async function main() {
     if (p.cena) console.log(`   🎨 ${p.cena}`);
     console.log('');
   });
-  writeFileSync(SAIDA, `${JSON.stringify({ geradoEm: agora.toISOString(), video: anterior.videoId, posts }, null, 2)}\n`);
+  const geradoEm = agora.toISOString();
+  const segunda = segundaDestaSemana(agora);
+  const resumo = (v) => (v ? { titulo: v.titulo, videoId: v.videoId } : null);
+  writeFileSync(SAIDA, `${JSON.stringify({ geradoEm, segunda: segunda.toISOString(), anterior: resumo(anterior), proximo: resumo(proximo), posts }, null, 2)}\n`);
+  mkdirSync(dirname(PAGINA_ARQUIVO), { recursive: true });
+  writeFileSync(PAGINA_ARQUIVO, montarPagina(posts, anterior, proximo, segunda, geradoEm));
+  console.log(`📄 página escrita: ${PAGINA_ARQUIVO}`);
 
-  const email = montarEmail(posts, anterior, proximo, segundaDestaSemana(agora));
   if (ENSAIO) {
-    console.log(`(ensaio — não enviei. Assunto seria: ${email.subject})`);
+    console.log(`(ensaio — não enviei. Assunto seria: ${montarEmail(posts, anterior, proximo, segunda).subject})`);
     return;
   }
+  if (SO_ESCREVER) return; // o workflow guarda a página, e só depois chama --enviar
+  await enviarDoArquivo();
+}
+
+/** Lê o que `--escrever` deixou, espera a página nova estar no ar, e manda o e-mail. */
+async function enviarDoArquivo() {
+  const d = JSON.parse(readFileSync(SAIDA, 'utf-8'));
+  console.log(`⏳ à espera de ${PAGINA_URL} com a marca ${d.geradoEm}…`);
+  const pronta = await esperarPagina(d.geradoEm);
+  console.log(pronta ? '✅ a página nova está no ar.' : '⚠️ a página não ficou pronta — o e-mail segue só com os textos.');
+  const email = montarEmail(d.posts, d.anterior, d.proximo, new Date(d.segunda), pronta);
   await enviar(email);
   console.log(`📧 enviado para ${PARA}: ${email.subject}`);
 }
 
 const executadoDireto = process.argv[1] && process.argv[1].replace(/\\/g, '/').endsWith('posts-semana.js');
 if (executadoDireto) {
-  main().catch((e) => { console.error(`❌ ${e.message}`); process.exit(1); });
+  (SO_ENVIAR ? enviarDoArquivo() : main()).catch((e) => { console.error(`❌ ${e.message}`); process.exit(1); });
 }
