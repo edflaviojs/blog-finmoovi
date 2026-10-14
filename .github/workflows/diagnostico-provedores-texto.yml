@@ -28,3 +28,18 @@ jobs:
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
           KIE_API_KEY: ${{ secrets.KIE_API_KEY }}
         run: node src/scripts/diagnostico/provedores-de-texto.js
+
+      # 14/10/2026 — A PROVA DA MISTRAL (a reserva grátis). 1) os modelos que a conta vê,
+      # perguntados ao servidor; 2) o ESCRITOR REAL do Short de 16s com a Mistral como
+      # ÚNICA IA (sem nenhuma outra chave) — passar nas travas é a prova.
+      - name: Instalar dependências (para o escritor do Short)
+        run: npm ci
+      - name: Mistral — modelos e o roteiro real do Short de 16s
+        env:
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+        run: |
+          curl -s -H "Authorization: Bearer $MISTRAL_API_KEY" https://api.mistral.ai/v1/models             | node -e "let d='';process.stdin.on('data',c=>d+=c).on('end',()=>{try{const j=JSON.parse(d);console.log((j.data||[]).map(m=>m.id).filter(i=>/latest/.test(i)).join(' '))}catch(e){console.log('RESPOSTA:',d.slice(0,300))}})"
+          for M in mistral-medium-latest mistral-small-latest; do
+            echo "━━━ $M ━━━"
+            MISTRAL_TEXT_MODEL="$M" node src/scripts/youtube/roteiro-loop.js --situacao=reforma-banheiro --gancho=faca-isso || echo "❌ $M não passou"
+          done
