@@ -8,7 +8,7 @@
 > **Regra:** item sem *porquê* e sem *quando reavaliar* não entra. Item
 > resolvido **sai daqui** (vai para o histórico do git), não fica marcado como feito.
 
-**Criado em:** 2026-10-03 · **Última atualização:** 2026-10-03
+**Criado em:** 2026-10-03 · **Última atualização:** 2026-10-14
 
 > Irmão deste ficheiro, do lado do aplicativo:
 > `backup-app-22052025/.claude/docs/DIVIDA-TECNICA.md`.
@@ -91,6 +91,27 @@ baixo pode ser capa fraca **ou** o YouTube a mostrar o vídeo a quem não intere
 
 ---
 
+### A5. 🟡 O guarda das capas tem UM olho só que funciona
+
+**Estado:** aberto, sem dano até hoje · **Reavaliar:** no dia em que aparecer
+`publicada SEM a trava de letras` no registo de um robô de capas
+
+Medido a 14/10/2026 em 7 dias de corridas: o guarda (`lib/guardiao-da-capa.js`)
+**vê e recusa** — barrou "PERSONAL FINANCE", "$100", "Goals"… — e as capas que ele
+marca "proeminente" mas aprova **não têm letras** (6 abertas e vistas, 0 com texto:
+é a 2ª leitura a corrigir a triagem barulhenta, de propósito). Mas quem responde é
+**sempre** a Cloudflare. A reserva é o Groq (`qwen/qwen3.8-27b`), **nunca testado**
+— e o Groq já aposentou um modelo de visão em silêncio (24/09). O Gemini não recebe
+chave na varredura.
+
+**Por que foi adiado:** não falhou uma única vez; pôr outro olho é gastar para
+prevenir o que ainda não aconteceu.
+
+**Como fazer quando chegar a hora:** o Claude (crédito de API do plano Max, ver B4)
+como olho de reserva custa centavos por mês — capas são poucas.
+
+---
+
 ## B. Provas marcadas no tempo — nada a fazer até à data
 
 ### B1. ⏳ O filtro de realidade nunca correu contra o Search Console a sério
@@ -123,6 +144,22 @@ travas postas a 02/10 são postas à prova a sério.
 
 ---
 
+### B4. ⏳ A 1ª semana do Claude a escrever os robôs
+
+**Data:** até **21/10/2026** · **O que olhar:** linhas `::medidor::{"f":"claude"…}`
+nas corridas do longo, do Short de 16s e dos posts
+
+Desde 14/10 (`82992729`) o Claude Sonnet 5.5 escreve primeiro, pago pelo crédito de
+API do plano Max (US$ 100/mês; a organização **não tem cartão** — sem crédito, recusa,
+não cobra). Ensaio medido: 2 chamadas dos posts = **US$ 0,035**. A estimativa para o
+mês é US$ 5–10. Conferir o gasto real e se os roteiros passam mais à primeira.
+
+Também a provar nesta janela: **a tentativa de quarta do longo** (`a3088fd2`) — só
+corre a sério numa semana em que a terça falhe; numa semana boa tem de sair "nada a
+fazer" em verde, sem segundo vídeo.
+
+---
+
 ## C. Só o Ed pode fazer
 
 ### C1. 🔴 Contacto por pessoa no LinkedIn — o gargalo do blog
@@ -145,6 +182,21 @@ Renata Nunes (bmcnews).
 
 ---
 
+### C3. 🟡 O limite de gasto da API do Claude está em US$ 5/mês
+
+**Reavaliar:** quando B4 der o gasto real
+
+Posto pelo Ed a 14/10 no Console (organização inteira). A estimativa dos robôs é
+US$ 5–10/mês, logo o limite deve cortar antes do fim do mês — e aí os robôs voltam
+sozinhos à IA grátis (não quebra nada). Como não há cartão na organização, subir o
+limite não arrisca dinheiro. Sugestão dada: espaço de trabalho **FinMoovi** com
+US$ 15, e um espaço por projeto.
+
+**De arrumação, sem pressa:** o segredo `MISTRAL_API_KEY` ficou no cofre sem uso — o
+plano Free da Mistral não liberta a chave (14/10). Pode ser apagado.
+
+---
+
 ## Como este ficheiro foi usado
 
 - **03/10/2026** — criado a pedido do Ed, nos moldes do registo que o aplicativo já
@@ -158,3 +210,9 @@ Renata Nunes (bmcnews).
   **O raio-X entrou neste ficheiro e saiu no mesmo dia** — e é assim que ele deve
   funcionar: item resolvido não fica marcado como feito, sai e vai para o histórico
   do git. Os outros seis nunca chegaram a entrar, pela mesma regra.
+- **14/10/2026** — entraram A5 (guarda das capas com um olho só), B4 (1ª semana do
+  Claude nos robôs + tentativa de quarta do longo) e C3 (limite de US$ 5 da API e o
+  segredo da Mistral sem uso). Resolvidos no mesmo dia e por isso **não** entraram:
+  voz da Microsoft com 403 (`c3d9e12d`), Short da noite sem Gemini (`f56d8156`),
+  vídeo de 18/10 subido à mão, posts semanais por e-mail, primeiro comentário (já
+  funcionava pelo robô de hora a hora).
