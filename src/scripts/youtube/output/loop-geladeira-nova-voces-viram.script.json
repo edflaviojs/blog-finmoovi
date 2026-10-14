@@ -1,0 +1,118 @@
+{
+  "slug": "loop-geladeira-nova-voces-viram",
+  "formato": "loop16",
+  "term": "Trocar a geladeira",
+  "category": "vida",
+  "keyword": "GELADEIRA",
+  "valor": "R$ 2.600",
+  "situacao": "geladeira-nova",
+  "gancho": "voces-viram",
+  "ganchoFamilia": "vocês viram",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ratoeira",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Gente, vocês viram que geladeira velha avisa antes de pifar?",
+      "durationSec": 3.45,
+      "shots": [
+        {
+          "anchor": "vocês",
+          "visual": {
+            "type": "statement",
+            "text": "GELADEIRA VELHA AVISA?"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "viram",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "A minha roncava de madrugada e eu gastei dois mil e seiscentos reais no desespero.",
+      "durationSec": 5.18,
+      "shots": [
+        {
+          "anchor": "roncava",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "madrugada",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 2.600 NO DESESPERO"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Caí feito um pato na ratoeira do parcelado.",
+      "durationSec": 2.76,
+      "shots": [
+        {
+          "anchor": "feito",
+          "visual": {
+            "type": "statement",
+            "text": "CAÍ NA RATOEIRA"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "ratoeira",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Por isso pergunto se vocês viram o barulho que ela faz.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "pergunto",
+          "visual": {
+            "type": "statement",
+            "text": "VOCÊS VIRAM O AVISO?"
+          }
+        },
+        {
+          "anchor": "vocês",
+          "visual": {
+            "type": "statement",
+            "text": "GELADEIRA VELHA AVISA?"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.19
+}
