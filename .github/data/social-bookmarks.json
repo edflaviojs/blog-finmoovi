@@ -2638,5 +2638,45 @@
         "status": 200
       }
     }
+  },
+  {
+    "slug": "por-que-minha-conta-some-no-fim-do-mes-e-eu-nao-sei-o-que",
+    "title": "Por que minha conta some no fim do mês e eu não sei o que aconteceu?",
+    "url": "https://blog.finmoovi.com/posts/por-que-minha-conta-some-no-fim-do-mes-e-eu-nao-sei-o-que",
+    "submittedAt": "2026-10-14T19:04:13.589Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1889826523
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "indice-finmoovi-custo-de-vida-setembro-2026",
+    "title": "Índice FinMoovi do Custo de Vida — Setembro/2026",
+    "url": "https://blog.finmoovi.com/posts/indice-finmoovi-custo-de-vida-setembro-2026",
+    "submittedAt": "2026-10-14T19:04:14.653Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1889826529
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
   }
 ]
