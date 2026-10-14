@@ -4,6 +4,7 @@ definition: "O que é swaps e como isso aparece no seu dia a dia — explicado d
 title: "swaps - Glossário Financeiro"
 description: "O que é swaps e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/swaps.webp"
+imageAlt: "Pilhas de moedas douradas e vasos de vidro com plantas verdes sobre fundo escuro."
 category: "basico"
 tags: ["swaps", "glossário", "finanças"]
 author: "FinMoovi"

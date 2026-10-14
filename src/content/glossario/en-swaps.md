@@ -4,6 +4,7 @@ definition: "What swaps is and how it shows up in your everyday money — explai
 title: "swaps - Financial Glossary"
 description: "What swaps is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/swaps.webp"
+imageAlt: "Gold coin stacks and glass jars with green plants on a purple surface."
 category: "basico"
 tags: ["swaps", "glossary", "finance"]
 author: "FinMoovi"

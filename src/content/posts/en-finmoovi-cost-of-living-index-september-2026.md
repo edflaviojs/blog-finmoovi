@@ -2,6 +2,7 @@
 title: "FinMoovi Cost of Living Index — September/2026"
 description: "IPCA for September/2026 by expense group: overall index at 0.82% in the month and 4.58% over 12 months. Month-close exchange rates and tips to protect your budget."
 image: "/images/posts/indice-finmoovi-custo-de-vida-setembro-2026.webp"
+imageAlt: "Smiling couple in blue shirts viewing a white smartphone together."
 category: "cotacoes"
 tags: ["cost of living","ipca","inflation","quotes","budget"]
 author: "FinMoovi"

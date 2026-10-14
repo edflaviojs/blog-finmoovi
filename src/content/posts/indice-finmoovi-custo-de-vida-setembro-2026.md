@@ -2,6 +2,7 @@
 title: "Índice FinMoovi do Custo de Vida — Setembro/2026"
 description: "IPCA de setembro/2026 por grupo de despesa: índice geral em 0,82% no mês e 4,58% em 12 meses. Câmbio de fechamento e dicas para proteger o bolso."
 image: "/images/posts/indice-finmoovi-custo-de-vida-setembro-2026.webp"
+imageAlt: "Casal sorridente em camisas azuis, olhando para um smartphone branco."
 category: "cotacoes"
 tags: ["custo de vida","ipca","inflação","cotações","orçamento"]
 author: "FinMoovi"
