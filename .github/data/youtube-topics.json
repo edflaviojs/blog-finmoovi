@@ -717,6 +717,36 @@
       "glossaryRef": "montante",
       "status": "pending",
       "sourceKeyword": "o que e montante"
+    },
+    {
+      "id": "kw-quando-a-taxa-te-faz-perder-r-200-no-cartao",
+      "theme": "Quando a taxa te faz perder R$200 no cartão",
+      "angle": "Mostro uma compra de R$2.000 no cartão e comparo o impacto de uma taxa de 2% vs 5%, revelando como escolher o melhor cartão e evitar perder quase R$200 sem perceber",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "taxa",
+      "status": "pending",
+      "sourceKeyword": "o que e taxa"
+    },
+    {
+      "id": "kw-por-que-aparece-cred-juros-r-12-no-seu-extrato",
+      "theme": "Por que aparece \"Cred Juros\" R$12 no seu extrato?",
+      "angle": "Mostro um caso cotidiano: João vê um crédito de juros de R$12 no extrato da Caixa e pensa que é dinheiro extra. Em 30 segundos explico que esse valor é a devolução de juros que ele pagou em um empréstimo ou fatura, como conferir no app da Caixa e evitar surpresas. Uso números reais e um passo a passo rápido para ele entender o que está acontecendo sem entrar em teoria.",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "cred-juros",
+      "status": "pending",
+      "sourceKeyword": "o que significa cred juros no extrato da caixa"
+    },
+    {
+      "id": "kw-quanto-custa-investir-r-1-000-veja-a-taxa-real",
+      "theme": "Quanto custa investir R$1.000? Veja a taxa real",
+      "angle": "Simulo a aplicação de R$1.000 em duas corretoras diferentes, mostro a taxa cobrada na prática (ex.: 0,5% ao mês vs 0,2% ao mês) e revelo quanto isso tira do seu rendimento em 12 meses, usando números reais para o espectador perceber o impacto.",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "taxa-de-investimento",
+      "status": "pending",
+      "sourceKeyword": "taxa de investimento"
     }
   ]
 }
