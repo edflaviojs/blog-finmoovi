@@ -1,0 +1,72 @@
+name: YouTube — Posts da semana (e-mail de segunda)
+
+# 14/10/2026 — pedido do dono: *"é possível criarmos algum workflow para automatizarmos
+# os posts do youtube?"* → *"Sim quero na segunda!"*
+#
+# A API do YouTube NÃO cria posts (só vídeos, comentários, legendas). Por isso o robô
+# ESCREVE os seis posts da semana (segunda a sábado) à volta do vídeo de domingo e manda
+# por e-mail; o dono cola e AGENDA no Studio. Ver o cabeçalho de `posts-semana.js`.
+#
+# 💶 SÓ IA GRÁTIS, de propósito: este workflow NÃO recebe nenhuma chave do kie.ai nem da
+# Cerebras. O `pago: 'escritor'` do script cai direto no Gemini Flash grátis e, depois,
+# na fila gratuita (Groq, NVIDIA, Cloudflare). Não há caminho para uma cobrança.
+
+on:
+  workflow_dispatch:
+    inputs:
+      ensaio:
+        description: 'Ensaio: escreve e mostra no registo, NÃO envia o e-mail'
+        type: boolean
+        required: false
+        default: false
+  schedule:
+    # Segunda 06:17 UTC = 07:17 em Lisboa (verão) / 03:17 no Brasil. Fora do minuto :00
+    # (menos atraso do relógio do GitHub, que já chegou a 112 min neste repositório) e
+    # depois da estreia de domingo (22:00 UTC), para o vídeo de ontem já ser público.
+    - cron: '17 6 * * 1'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: youtube-posts-semana
+  cancel-in-progress: false
+
+jobs:
+  escrever:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Instalar dependências
+        run: npm ci
+
+      - name: Escrever os 6 posts e mandar por e-mail
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          DIGEST_TO: ${{ vars.DIGEST_TO || 'finmoovi@gmail.com' }}
+        run: |
+          if [ "${{ github.event.inputs.ensaio }}" = "true" ]; then
+            node src/scripts/youtube/posts-semana.js --ensaio
+          else
+            node src/scripts/youtube/posts-semana.js
+          fi
+
+      - name: Guardar os posts (para conferir depois)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: posts-semana
+          path: .posts-semana.json
+          if-no-files-found: ignore
