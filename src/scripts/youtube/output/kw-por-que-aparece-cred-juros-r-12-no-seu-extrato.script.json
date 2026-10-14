@@ -1,0 +1,223 @@
+{
+  "slug": "kw-por-que-aparece-cred-juros-r-12-no-seu-extrato",
+  "term": "Por que aparece \"Cred Juros\" R$12 no seu extrato?",
+  "category": "mindset",
+  "keyword": "extrato",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Tá vendo *Cred* Juros doze reais no extrato e acha que é dinheiro a mais?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "mochila-pedras",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Tá vendo Cred Juros doze reais no extrato e acha que é dinheiro a mais? Na verdade é a devolução dos juros que você já pagou",
+      "durationSec": 10,
+      "shots": [
+        {
+          "anchor": "Cred",
+          "visual": {
+            "type": "statement",
+            "text": "Cred"
+          }
+        },
+        {
+          "anchor": "Juros",
+          "visual": {
+            "type": "statement",
+            "text": "Juros"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "doze",
+          "visual": {
+            "type": "statement",
+            "text": "doze reais"
+          }
+        },
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "statement",
+            "text": "extrato"
+          },
+          "sfx": "typewriter"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "O João olhou o extrato da Caixa, viu o crédito de doze reais e não soube de onde veio",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "João",
+          "visual": {
+            "type": "statement",
+            "text": "João"
+          }
+        },
+        {
+          "anchor": "extrato",
+          "visual": {
+            "type": "statement",
+            "text": "extrato"
+          }
+        },
+        {
+          "anchor": "crédito",
+          "visual": {
+            "type": "statement",
+            "text": "crédito"
+          }
+        },
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "statement",
+            "text": "doze reais"
+          },
+          "sfx": "coin"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Doze reais parece pouco, mas é a soma dos juros que ele pagou em duas faturas anteriores",
+      "durationSec": 6.5,
+      "shots": [
+        {
+          "anchor": "Doze",
+          "visual": {
+            "type": "statement",
+            "text": "Doze"
+          }
+        },
+        {
+          "anchor": "soma",
+          "visual": {
+            "type": "statement",
+            "text": "soma"
+          }
+        },
+        {
+          "anchor": "faturas",
+          "visual": {
+            "type": "statement",
+            "text": "faturas"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu abri o FinMoovi, procurei a linha Cred Juros e ele mostrou exatamente aqueles doze reais",
+      "durationSec": 6.2,
+      "shots": [
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "extrato",
+            "note": "linha Cred Juros com R$12"
+          }
+        },
+        {
+          "anchor": "mostrou",
+          "visual": {
+            "type": "statement",
+            "text": "linha"
+          }
+        },
+        {
+          "anchor": "exatamente",
+          "visual": {
+            "type": "statement",
+            "text": "mostrou"
+          },
+          "sfx": "ding"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu? Abra o FinMoovi, são sete dias grátis",
+      "durationSec": 4.2,
+      "shots": [
+        {
+          "anchor": "Abra",
+          "visual": {
+            "type": "statement",
+            "text": "Abra"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "statement",
+            "text": "sete dias"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "É devolução de juros que você já pagou, não dinheiro extra. Dinheiro sem controle é dinheiro dos outros",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "devolução",
+          "visual": {
+            "type": "statement",
+            "text": "devolução"
+          }
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "dinheiro"
+          }
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "outros"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja seu crédito de juros agora",
+    "target": "app"
+  },
+  "totalDurationSec": 41.1
+}
