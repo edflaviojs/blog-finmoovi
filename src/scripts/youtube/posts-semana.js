@@ -44,7 +44,8 @@ const SAIDA = process.env.POSTS_SAIDA || join(RAIZ, '.posts-semana.json');
 
 const LIMITE_TEXTO = 500;     // o YouTube aceita mais; curto é o que se lê no feed
 const LIMITE_OPCAO = 65;      // limite do YouTube para cada opção de enquete
-const PROIBIDO_TAREFA = /\b(calcul\w*|fa[çc]a a conta|faz a conta|fa[çc]a as contas|some\b|soma\b|anot\w+|pegue o extrato|abra o extrato|confira (o|a|seu|sua))/i;
+// ⚠️ "some" SOZINHO NÃO: é também o verbo SUMIR ("onde o seu dinheiro some?") — 14/10, apanhado no ensaio.
+const PROIBIDO_TAREFA = /\b(calcul\w*|fa[çc]a a conta|faz a conta|fa[çc]a as contas|somar|som[ae] (tudo|os|as|esses|essas)\b|anot\w+|pegue o extrato|abra o extrato|confira (o|a|seu|sua))/i;
 
 // ─── o que aconteceu e o que vem ──────────────────────────────────────────────
 
@@ -99,6 +100,23 @@ function ddmm(d) {
 
 // ─── o pedido à IA ────────────────────────────────────────────────────────────
 
+/**
+ * ♦ 14/10/2026 — O PROMPT DA IMAGEM DE CADA POST, pedido do dono: *"no email dos posts
+ * tem como vc inserir um prompt pra eu gerar uma imagem adequada para aquele post?"*
+ *
+ * 🔴 **A IA SÓ DESCREVE A CENA; O ESTILO E A PROIBIÇÃO DE LETRAS SÃO DO CÓDIGO.** Lição
+ * de 18/08 (capas do blog): pôr o TÍTULO dentro do pedido de imagem fazia o gerador
+ * desenhar letras tortas e borrões. Por isso o texto do post nunca entra aqui, e a
+ * trava `CENA_COM_LETRAS` recusa a cena que peça palavra, placa, número ou ecrã.
+ * As enquetes não levam imagem: o YouTube não deixa juntar imagem a uma enquete de texto.
+ */
+const ESTILO_DA_IMAGEM = 'Ilustração plana e simples, quadrada (1:1), no estilo boneco-palito (stickman): personagem de traço preto grosso, cabeça redonda, expressão bem clara no rosto. Fundo de uma cor lisa e clara, poucos objetos, cores vivas. IMPORTANTE: a imagem NÃO tem nenhuma letra, palavra, número, placa, etiqueta de preço nem tela com texto.';
+const CENA_COM_LETRAS = /(escrit|texto|letreiro|placa|palavra|frase|legenda|t[ií]tulo|n[uú]mero|etiqueta|cartaz|r\$|\d|logo|marca)/i;
+
+export function promptDaImagem(cena) {
+  return `${String(cena).trim()}\n\n${ESTILO_DA_IMAGEM}`;
+}
+
 const PLANO = [
   { dia: 'segunda', tipo: 'texto', papel: 'O VÍDEO DE ONTEM. Conte em 2–3 frases o problema que o vídeo resolve, na voz de quem já passou por isso, e termine convidando a assistir. NÃO escreva link (o link é colocado depois, automaticamente).' },
   { dia: 'terça', tipo: 'enquete', papel: 'ENQUETE sobre o tema do vídeo — uma situação do dia a dia em que a pessoa se reconhece. 3 ou 4 opções curtas, todas plausíveis, nenhuma "certa".' },
@@ -127,17 +145,22 @@ ${PLANO.map((p, i) => `${i + 1}. ${p.dia.toUpperCase()} (${p.tipo}) — ${p.pape
 ⛔ Dizer que o app FinMoovi é "grátis", "de graça" ou "gratuito". Se falar do app, é "7 dias grátis". (Nem é preciso falar do app.)
 ⛔ Qualquer número que não esteja nos textos dos vídeos acima. Não invente valores, percentagens nem estatísticas.
 ⛔ Escrever links ou endereços. Os links são colocados depois.
+═══ A IMAGEM DOS POSTS DE TEXTO (segunda, quarta, quinta e sábado) ═══
+Em cada post de TEXTO, escreva também "cena": 1 ou 2 frases a descrever UMA imagem para o post — o que o boneco-palito está fazendo, onde, e com que objeto do dia a dia (carteira vazia, sacola de mercado, boleto na mão, chuveiro, geladeira…). Mostre a emoção do momento.
+⛔ A cena NÃO pode ter nenhuma palavra, número, valor, placa, etiqueta, cartaz, logotipo nem tela com texto — geradores de imagem desenham letras tortas. Conte tudo pela cena e pela expressão do rosto.
+As enquetes NÃO levam "cena".
+
 ⛔ Mais de ${LIMITE_TEXTO} caracteres por texto. Cada opção de enquete com no máximo ${LIMITE_OPCAO} caracteres.
 
 Devolva SÓ este JSON, sem mais nada:
 {
   "posts": [
-    { "dia": "segunda", "texto": "..." },
+    { "dia": "segunda", "texto": "...", "cena": "..." },
     { "dia": "terça", "texto": "a pergunta da enquete", "opcoes": ["...", "...", "..."] },
-    { "dia": "quarta", "texto": "..." },
-    { "dia": "quinta", "texto": "..." },
+    { "dia": "quarta", "texto": "...", "cena": "..." },
+    { "dia": "quinta", "texto": "...", "cena": "..." },
     { "dia": "sexta", "texto": "a pergunta da enquete", "opcoes": ["...", "...", "..."] },
-    { "dia": "sábado", "texto": "..." }
+    { "dia": "sábado", "texto": "...", "cena": "..." }
   ]
 }`;
 }
@@ -165,6 +188,14 @@ export function validarPosts(n, numerosPermitidos) {
     if (promessa.mudou || (promessa.sobras && promessa.sobras.length)) erros.push(`${rot}: o app não é grátis — diga "7 dias grátis" ou não fale de preço`);
     for (const num of tudo.match(/\d+(?:[.,]\d+)?/g) || []) {
       if (!numerosPermitidos.has(num)) erros.push(`${rot}: o número "${num}" não está no vídeo — não invente números`);
+    }
+
+    if (plano.tipo === 'texto') {
+      const cena = String(p.cena || '').trim();
+      if (cena.length < 30) erros.push(`${rot}: falta a "cena" da imagem (1 ou 2 frases, o que o boneco faz e onde)`);
+      else if (cena.length > 400) erros.push(`${rot}: a cena tem ${cena.length} caracteres (máximo 400)`);
+      const letra = cena.match(CENA_COM_LETRAS);
+      if (letra) erros.push(`${rot}: a cena pede "${letra[0]}" — a imagem não pode ter letras, números nem placas; conte pela cena e pela expressão`);
     }
 
     if (plano.tipo === 'enquete') {
@@ -232,13 +263,19 @@ function montarEmail(posts, anterior, proximo, segunda) {
   const caixas = posts.map((p, i) => {
     const plano = PLANO[i];
     const enquete = plano.tipo === 'enquete';
+    const imagem = enquete
+      ? `
+        <p style="color:#484f58;font-size:12px;margin:12px 0 0;">🎨 Enquete não leva imagem — o YouTube não deixa juntar as duas.</p>`
+      : `
+        <p style="color:#3fb950;font-size:12px;font-weight:600;margin:16px 0 4px;">🎨 PROMPT DA IMAGEM — cole no ChatGPT ou no Gemini:</p>
+        <pre style="white-space:pre-wrap;font-family:inherit;background:#0d1117;border:1px dashed #3fb950;border-radius:6px;padding:10px 12px;color:#c9d1d9;font-size:13px;line-height:1.5;margin:0;">${escapar(promptDaImagem(p.cena))}</pre>`;
     const opcoes = enquete ? `
         <p style="color:#8b949e;font-size:12px;margin:12px 0 4px;">OPÇÕES DA ENQUETE (uma em cada campo):</p>
         ${p.opcoes.map((o) => `<div style="background:#0d1117;border:1px solid #30363d;border-radius:6px;padding:8px 12px;margin:4px 0;color:#f0f6fc;font-size:14px;">${escapar(o)}</div>`).join('')}` : '';
     return `
       <div style="background:#161b22;border:1px solid #30363d;border-radius:12px;padding:20px;margin:0 0 16px;">
         <p style="color:#58a6ff;font-size:13px;font-weight:600;margin:0 0 8px;">${plano.dia.toUpperCase()} ${ddmm(datas[i])} · agendar para as 12h · ${enquete ? '📊 ENQUETE' : '📝 TEXTO'}</p>
-        <pre style="white-space:pre-wrap;font-family:inherit;color:#f0f6fc;font-size:15px;line-height:1.6;margin:0;">${escapar(textoFinal(p, i, anterior))}</pre>${opcoes}
+        <pre style="white-space:pre-wrap;font-family:inherit;color:#f0f6fc;font-size:15px;line-height:1.6;margin:0;">${escapar(textoFinal(p, i, anterior))}</pre>${opcoes}${imagem}
       </div>`;
   }).join('');
 
@@ -292,6 +329,7 @@ async function main() {
     console.log(`── ${PLANO[i].dia.toUpperCase()} (${PLANO[i].tipo}) ──`);
     console.log(textoFinal(p, i, anterior));
     if (p.opcoes) p.opcoes.forEach((o) => console.log(`   ◻ ${o}`));
+    if (p.cena) console.log(`   🎨 ${p.cena}`);
     console.log('');
   });
   writeFileSync(SAIDA, `${JSON.stringify({ geradoEm: agora.toISOString(), video: anterior.videoId, posts }, null, 2)}\n`);
