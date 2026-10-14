@@ -8,7 +8,6 @@ on:
 
 permissions:
   contents: read
-  models: read
 
 jobs:
   diagnostico:
@@ -29,19 +28,3 @@ jobs:
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
           KIE_API_KEY: ${{ secrets.KIE_API_KEY }}
         run: node src/scripts/diagnostico/provedores-de-texto.js
-
-      # 14/10/2026 — A PROVA DO GITHUB MODELS. Nesta máquina do dono `models.github.ai`
-      # responde "OK" a tudo (até chave falsa), por isso a prova só vale aqui dentro.
-      # 1) o catálogo, perguntado ao servidor; 2) o ESCRITOR REAL do Short de 16s com o
-      # GitHub como ÚNICA IA (sem nenhuma outra chave) — passar nas travas é a prova.
-      - name: Instalar dependências (para o escritor do Short)
-        run: npm ci
-      - name: GitHub Models — catálogo e o roteiro real do Short de 16s
-        env:
-          GITHUB_MODELS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          curl -s -H "Authorization: Bearer $GITHUB_MODELS_TOKEN" https://models.github.ai/catalog/models             | node -e "let d='';process.stdin.on('data',c=>d+=c).on('end',()=>{const a=JSON.parse(d);console.log(a.length+' modelos');for(const m of a)console.log(' ',m.id,'['+m.rate_limit_tier+']')})"
-          for M in openai/gpt-4.1 openai/gpt-4.1-mini; do
-            echo "━━━ $M ━━━"
-            GITHUB_MODELS_MODEL="$M" node src/scripts/youtube/roteiro-loop.js --situacao=reforma-banheiro --gancho=faca-isso || echo "❌ $M não passou"
-          done

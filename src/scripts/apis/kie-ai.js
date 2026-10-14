@@ -40,26 +40,6 @@ function getTextProviders() {
     });
   }
 
-  // 1b. GitHub Models — a reserva GRÁTIS pedida pelo dono a 14/10/2026 (*"pode ligar"*).
-  //     A chave é o próprio GITHUB_TOKEN da corrida (o workflow precisa de
-  //     `permissions: models: read`) — não há conta nova nem cartão. Só entra nos
-  //     workflows que passam GITHUB_MODELS_TOKEN; os outros 27 robôs nem o vêem.
-  //     Fica ANTES do Groq de propósito: em 12 e 13/10 o Groq reprovou 12 roteiros em
-  //     12 nas travas do Short de 16s. Com a fila paga à frente (kie → Gemini grátis),
-  //     só chega aqui quando esses já falharam.
-  //     ⚠️ Nesta máquina `models.github.ai` responde "OK" a QUALQUER pedido (até chave
-  //     falsa) — a prova só vale corrida dentro do GitHub.
-  if (process.env.GITHUB_MODELS_TOKEN) {
-    providers.push({
-      name: 'github',
-      url: 'https://models.github.ai/inference/chat/completions',
-      apiKey: process.env.GITHUB_MODELS_TOKEN,
-      model: process.env.GITHUB_MODELS_MODEL || 'openai/gpt-4.1',
-      // O plano grátis corta pedidos acima de 8000 fichas de entrada.
-      tpmLimit: 8000,
-    });
-  }
-
   // 2. Groq — substituto oficial do llama-3.3-70b (desligado em 16/08/2026)
   const groqKey = process.env.GROQ_API_KEY || process.env.KIE_API_KEY;
   if (groqKey) {
