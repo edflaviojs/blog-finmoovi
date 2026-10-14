@@ -40,23 +40,6 @@ function getTextProviders() {
     });
   }
 
-  // 1b. Mistral — a reserva GRÁTIS pedida pelo dono a 14/10/2026 (plano "Experiment":
-  //     conta com verificação por celular, SEM cartão — não há como cobrar). Segredo
-  //     MISTRAL_API_KEY. Só entra nos workflows que o passam (hoje: o Short de 16s).
-  //     Fica ANTES do Groq: em 12 e 13/10 o Groq reprovou 12 roteiros em 12 nas travas.
-  //     Com a fila paga à frente (kie → Gemini grátis), só chega aqui quando esses falham.
-  //     ⚠️ No plano grátis a Mistral pode usar o texto para treinar modelos — são
-  //     roteiros que vão ao ar, nada privado. (A 1ª escolha era o GitHub Models, que o
-  //     GitHub DESLIGOU a 30/07/2026 — ver o revert d0ff08b3.)
-  if (process.env.MISTRAL_API_KEY) {
-    providers.push({
-      name: 'mistral',
-      url: 'https://api.mistral.ai/v1/chat/completions',
-      apiKey: process.env.MISTRAL_API_KEY,
-      model: process.env.MISTRAL_TEXT_MODEL || 'mistral-medium-latest',
-    });
-  }
-
   // 2. Groq — substituto oficial do llama-3.3-70b (desligado em 16/08/2026)
   const groqKey = process.env.GROQ_API_KEY || process.env.KIE_API_KEY;
   if (groqKey) {
