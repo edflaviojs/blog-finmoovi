@@ -259,7 +259,7 @@
         "fazer o dinheiro render",
         "controle de gastos do salario"
       ],
-      "estado": "proposto",
+      "estado": "publicado",
       "viralRef": {
         "videoId": "VscrdjlqPpE",
         "title": "FAÇA ISSO TODA VEZ QUE SEU PAGAMENTO CAIR NA CONTA",
@@ -270,7 +270,9 @@
           "uma palavra em maiúsculas a marcar o tom"
         ]
       },
-      "propostoEm": "2026-10-11T10:26:51.720Z"
+      "propostoEm": "2026-10-11T10:26:51.720Z",
+      "publicadoEm": "2026-10-14T08:28:15.276Z",
+      "videoId": "7Yxwf2-D0y8"
     },
     {
       "slug": "como-juntar-mil-reais",

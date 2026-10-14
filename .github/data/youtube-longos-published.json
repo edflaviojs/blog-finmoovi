@@ -108,9 +108,15 @@
     ]
   },
   "organizar-salario-mes-dia": {
-    "estado": "reservado",
+    "videoId": "7Yxwf2-D0y8",
+    "uploadedAt": "2026-10-14T08:28:15.275Z",
     "publishAt": "2026-10-18T22:00:00.000Z",
-    "reservadoEm": "2026-10-14T07:39:35.127Z",
-    "corrida": "38529680295"
+    "titulo": "Organizar o salário do mês no dia do pagamento sem ficar sem dinheiro",
+    "capitulos": 7,
+    "legendas": [
+      "pt",
+      "en",
+      "es"
+    ]
   }
 }
