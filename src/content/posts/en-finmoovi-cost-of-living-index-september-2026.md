@@ -39,15 +39,15 @@ In September 2026 the [cost of living](/en/glossario/en-cost-of-living) rose 0
 
 | Currency | Month close |
 | --- | --- |
-| Dollar (USD/BRL) | R$ 4.99 |
-| Euro (EUR/BRL) | R$ 5.57 |
+| Dollar (USD/BRL) | $1.00 |
+| Euro (EUR/BRL) | $1.12 |
 
 *Sources: IPCA/IBGE (change by expense group) and AwesomeAPI month-close exchange rates. Editorial index produced by FinMoovi.*
 
 ## Highlights of the month
 
 ### Housing leads the increase  
-With a 2.31 % rise for the month, the housing sector was the biggest gainer, making rents, condo fees and energy bills more expensive, which means less money for leisure or [savings](/en/glossario/en-savings) in the Brazilian household.  
+With a 2.31 % rise for the month, the housing sector was the biggest gainer, making rents, condo fees and energy bills more expensive, which means less money for leisure or [savings](/en/glossario/en-savings) in the household.  
 
 ### Health and personal care records the smallest rise  
 A variation of only 0.08 % in health shows that medicines and appointments stayed almost stable, easing one of the most critical items for the family budget.

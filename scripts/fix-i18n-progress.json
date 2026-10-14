@@ -251,6 +251,10 @@
     "tentativas": 1,
     "ultimaSeveridade": 0
   },
+  "en-finmoovi-cost-of-living-index-september-2026.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 2
+  },
   "en-fixed-income-vs-variable-income-which-is-worth-it-in-2026.md": {
     "tentativas": 1,
     "ultimaSeveridade": 0
@@ -994,6 +998,10 @@
   "es-indice-finmoovi-costo-de-vida-junio-2026.md": {
     "tentativas": 3,
     "ultimaSeveridade": 1
+  },
+  "es-indice-finmoovi-costo-de-vida-septiembre-2026.md": {
+    "tentativas": 1,
+    "ultimaSeveridade": 2
   },
   "es-inflacion.md": {
     "tentativas": 3,

@@ -1,76 +1,5 @@
 [
   {
-    "file": "en-quotes-week-2-october-2026.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 6,
-      "brInstitutions": [],
-      "brProducts": [
-        "Tesouro Direto",
-        "CDB",
-        "CDI",
-        "Selic"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [
-        "IPCA",
-        "LCI",
-        "LCA"
-      ],
-      "ptLeftovers": [
-        "ação",
-        "poupança",
-        "reais",
-        "investimentos",
-        "valor"
-      ]
-    }
-  },
-  {
-    "file": "en-reserva-de-valor.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [],
-      "brProducts": [
-        "Tesouro Direto"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 5,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": [
-        "ação",
-        "poupança"
-      ]
-    }
-  },
-  {
-    "file": "es-cotizaciones-semana-2-octubre-2026.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 6,
-      "brInstitutions": [],
-      "brProducts": [
-        "Tesouro Direto",
-        "CDB",
-        "Selic"
-      ],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [
-        "IPCA"
-      ],
-      "ptLeftovers": []
-    }
-  },
-  {
     "file": "en-fgc-guarantee.md",
     "dir": "glossario",
     "severity": 2,
@@ -84,6 +13,25 @@
       "brAcronyms": [
         "LCI",
         "LCA"
+      ],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-finmoovi-cost-of-living-index-september-2026.md",
+    "dir": "posts",
+    "severity": 2,
+    "issues": {
+      "currency": 2,
+      "brInstitutions": [
+        "IBGE"
+      ],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "IPCA"
       ],
       "ptLeftovers": []
     }
@@ -140,6 +88,25 @@
       "brAcronyms": [
         "LCI",
         "LCA"
+      ],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-indice-finmoovi-costo-de-vida-septiembre-2026.md",
+    "dir": "posts",
+    "severity": 2,
+    "issues": {
+      "currency": 2,
+      "brInstitutions": [
+        "IBGE"
+      ],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "IPCA"
       ],
       "ptLeftovers": []
     }
@@ -3938,6 +3905,21 @@
     }
   },
   {
+    "file": "en-quotes-week-2-october-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-quotes-week-2-september-2026.md",
     "dir": "posts",
     "severity": 0,
@@ -4045,6 +4027,21 @@
   {
     "file": "en-rent-vs-mortgage-which-is-worth-it-in-2026.md",
     "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-reserva-de-valor.md",
+    "dir": "glossario",
     "severity": 0,
     "issues": {
       "currency": 0,
@@ -4464,6 +4461,21 @@
   },
   {
     "file": "en-stop-loss.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-swaps.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -6789,6 +6801,21 @@
   },
   {
     "file": "es-cotizaciones-semana-2-julio-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-cotizaciones-semana-2-octubre-2026.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -9204,6 +9231,21 @@
   },
   {
     "file": "es-stop-loss.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-swaps.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {

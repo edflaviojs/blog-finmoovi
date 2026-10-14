@@ -39,15 +39,15 @@ En septiembre de 2026 el [costo de vida](/es/glossario/es-costo-de-vida) subió 
 
 | Moneda | Cierre del mes |
 | --- | --- |
-| Dólar (USD/BRL) | R$ 4.99 |
-| Euro (EUR/BRL) | R$ 5.57 |
+| Dólar (USD/BRL) | €180 |
+| Euro (EUR/BRL) | €162 |
 
 *Fuentes: IPCA/IBGE (variación por grupo de gasto) y cotizaciones AwesomeAPI de cierre del mes. Índice editorial producido por FinMoovi.*
 
 ## Destacados del mes
 
 ### La vivienda lidera el alza  
-Con un 2,31 % de aumento en el mes, el sector de vivienda fue el que más subió, encareciendo alquileres, cuotas de condominio y facturas de energía, lo que significa menos dinero para ocio o [ahorro](/es/glossario/es-ahorro) en el bolsillo de los brasileños.  
+Con un 2,31 % de aumento en el mes, el sector de vivienda fue el que más subió, encareciendo alquileres, cuotas de condominio y facturas de energía, lo que significa menos dinero para ocio o [ahorro](/es/glossario/es-ahorro) en el bolsillo de las personas.  
 
 ### Salud y cuidado personal registra la menor alza  
 La variación de solo 0,08 % en salud indica que los medicamentos y consultas se mantuvieron casi estables, aliviando uno de los ítems más críticos del presupuesto familiar.
