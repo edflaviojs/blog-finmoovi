@@ -488,15 +488,32 @@ function extrairJson(bruto) {
 
 const dormir = (ms) => new Promise((r) => setTimeout(r, ms));
 
-export async function gerarLoop(situacao, gancho, { tentativas = 4 } = {}) {
+/**
+ * 🔴 CONSERTAR A VERSÃO ANTERIOR, NÃO ESCREVER OUTRA DO ZERO — 14/10/2026.
+ *
+ * **MEDIDO** no turno da noite de 13/10 (12 tentativas, 12 reprovadas): quase todas
+ * as reprovações eram UMA coisa pequena — "tela 4: 39 caracteres (máximo 28)", "só 1
+ * marca de primeira pessoa", "46 palavras (máximo 44)". Mas o corretivo pedia o vídeo
+ * INTEIRO de novo, a 0.8 de temperatura: o modelo consertava a tela 4 e partia outra
+ * coisa que antes passava. E a lista de exigências ACUMULAVA erros de versões já
+ * descartadas — o modelo recebia ordens sobre um texto que não tinha à frente.
+ *
+ * Agora o corretivo leva a versão reprovada e SÓ os erros dela, e pede para mexer
+ * apenas no que está errado. As travas continuam as mesmas: nada passa mais fácil, só
+ * se deixa de deitar fora o que já estava bom.
+ */
+export async function gerarLoop(situacao, gancho, { tentativas = 6 } = {}) {
   const base = buildPromptLoop(situacao, gancho);
-  const exigencias = [];
+  let anterior = null;
+  let exigencias = [];
 
   for (let i = 1; i <= tentativas; i++) {
     if (i > 1) await dormir(20000); // o mesmo respiro do gerador de 50s (token bucket)
-    const corretivo = exigencias.length
-      ? `\n\n⚠️ A versão anterior foi REPROVADA. Corrija exactamente isto e devolva o JSON outra vez:\n${[...new Set(exigencias)].join('\n')}`
-      : '';
+    const corretivo = !exigencias.length
+      ? ''
+      : anterior
+        ? `\n\n⚠️ A versão abaixo foi REPROVADA:\n${JSON.stringify(anterior, null, 2)}\n\nCorrija SÓ isto, e deixe igual tudo o que não está nesta lista:\n${exigencias.join('\n')}\n\nDevolva o JSON completo, já corrigido.`
+        : `\n\n⚠️ A versão anterior foi REPROVADA. Corrija exactamente isto e devolva o JSON outra vez:\n${exigencias.join('\n')}`;
 
     const bruto = await generateText(base + corretivo, { maxTokens: 1200, temperature: 0.8, pago: 'escritor', servico: 'short16' });
 
@@ -504,14 +521,17 @@ export async function gerarLoop(situacao, gancho, { tentativas = 4 } = {}) {
     try {
       n = extrairJson(bruto);
     } catch (err) {
-      exigencias.push(`- devolva JSON válido (${err.message})`);
+      // Mantém-se a última versão boa para consertar — o JSON partido não serve de base.
+      exigencias = [...exigencias, `- devolva JSON válido (${err.message})`];
+      console.log(`  ⚠ tentativa ${i}/${tentativas} reprovada: JSON inválido (${err.message})`);
       continue;
     }
 
     const v = validarLoop(n, situacao, gancho);
     if (v.ok) return { narrativa: n, avisos: v.avisos, palavras: v.palavras, tentativa: i };
 
-    for (const e of v.erros) exigencias.push(`- ${e}`);
+    anterior = n;
+    exigencias = v.erros.map((e) => `- ${e}`);
     console.log(`  ⚠ tentativa ${i}/${tentativas} reprovada: ${v.erros.join(' | ')}`);
   }
 
