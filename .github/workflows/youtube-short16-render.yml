@@ -32,6 +32,8 @@ on:
 
 permissions:
   contents: write
+  # 14/10/2026 — deixa o GITHUB_TOKEN falar com o GitHub Models (a reserva grátis do roteiro).
+  models: read
 
 concurrency:
   group: youtube-short16-producao
@@ -97,6 +99,8 @@ jobs:
           # turno da noite morreu a 12 e 13/10 com Cerebras 402 + kie vazio, a escrever
           # só pelo groq, que reprovava nas travas 12 vezes em 12.
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          # A reserva grátis do GitHub (pedida pelo dono a 14/10) — ver `kie-ai.js`, item 1b.
+          GITHUB_MODELS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
         run: |
