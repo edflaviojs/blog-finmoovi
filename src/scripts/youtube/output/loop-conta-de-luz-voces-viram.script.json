@@ -1,0 +1,118 @@
+{
+  "slug": "loop-conta-de-luz-voces-viram",
+  "formato": "loop16",
+  "term": "A conta de luz do verão",
+  "category": "vida",
+  "keyword": "LUZ",
+  "valor": "R$ 420",
+  "situacao": "conta-de-luz",
+  "gancho": "voces-viram",
+  "ganchoFamilia": "vocês viram",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ralo",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Gente, vocês viram que a conta de luz subiu?",
+      "durationSec": 3.26,
+      "shots": [
+        {
+          "anchor": "vocês",
+          "visual": {
+            "type": "statement",
+            "text": "A conta de luz subiu?"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "viram",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "A minha veio quatrocentos e vinte reais e eu quase caí para trás.",
+      "durationSec": 4.7,
+      "shots": [
+        {
+          "anchor": "quatrocentos",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "vinte",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 420 de conta!"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "A gente lá em casa deixou o dinheiro escorrer pelo ralo.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "deixou",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro pelo ralo"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Assustei quando vi que a conta de luz subiu.",
+      "durationSec": 3.26,
+      "shots": [
+        {
+          "anchor": "Assustei",
+          "visual": {
+            "type": "statement",
+            "text": "A conta de luz subiu"
+          }
+        },
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "statement",
+            "text": "A conta de luz subiu?"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
