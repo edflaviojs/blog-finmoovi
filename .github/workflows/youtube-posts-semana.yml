@@ -7,9 +7,10 @@ name: YouTube — Posts da semana (e-mail de segunda)
 # ESCREVE os seis posts da semana (segunda a sábado) à volta do vídeo de domingo e manda
 # por e-mail; o dono cola e AGENDA no Studio. Ver o cabeçalho de `posts-semana.js`.
 #
-# 💶 SÓ IA GRÁTIS, de propósito: este workflow NÃO recebe nenhuma chave do kie.ai nem da
-# Cerebras. O `pago: 'escritor'` do script cai direto no Gemini Flash grátis e, depois,
-# na fila gratuita (Groq, NVIDIA, Cloudflare). Não há caminho para uma cobrança.
+# 💶 SEM CAMINHO PARA COBRANÇA: este workflow NÃO recebe chave do kie.ai nem da Cerebras.
+# Desde 14/10 escreve primeiro o Claude (Sonnet 5.5), pago pelo CRÉDITO mensal do plano Max
+# — a organização da API não tem cartão, por isso sem crédito ele recusa, não cobra. Depois
+# vem o Gemini Flash grátis e a fila gratuita (Groq, NVIDIA, Cloudflare).
 
 on:
   workflow_dispatch:
@@ -52,6 +53,8 @@ jobs:
       - name: Escrever os 6 posts e a página de copiar
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          # 14/10 — o Claude (Sonnet 5.5), crédito do plano Max — ver `escreverComClaude` em kie-ai.js
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

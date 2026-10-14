@@ -309,6 +309,68 @@ function contaFechada(status) {
  * o mesmo; em erro/queda ou 429 esgotado, cai para o próximo provedor. Só lança
  * exceção se TODOS falharem. Mesma assinatura/retorno de antes (string).
  */
+/**
+ * ♦ 14/10/2026 — O CLAUDE (Sonnet 5.5) À FRENTE DA FILA DOS QUE ESCREVEM.
+ *
+ * O dono tem US$ 100/mês de crédito de API que vêm com o plano Max (*"será q tem algo
+ * aqui q dariamos pra usar?"* → *"podemos usar o sonnet mesmo"*). A chave vive num
+ * espaço de trabalho PRÓPRIO do FinMoovi no Console, e a organização **não tem cartão
+ * cadastrado**: quando o crédito ou o limite de gasto acabam, a API recusa — não cobra.
+ *
+ * Só entra para quem pede `pago:` (os escritores e leitores que já usavam o kie.ai, que
+ * está sem saldo) e só nos workflows que passam `ANTHROPIC_API_KEY`. Se falhar por
+ * qualquer motivo, a fila de sempre continua por baixo (kie → Gemini grátis → …).
+ * Chamado pelo SDK oficial (`@anthropic-ai/sdk`), como manda a casa da Anthropic.
+ */
+const MODELO_CLAUDE = process.env.CLAUDE_TEXT_MODEL || 'claude-sonnet-5-5';
+let claudeFechado = false; // conta sem crédito/limite → não insistir nesta corrida
+
+async function escreverComClaude(prompt) {
+  if (claudeFechado || !process.env.ANTHROPIC_API_KEY) return null;
+  const { default: Anthropic } = await import('@anthropic-ai/sdk');
+  const client = new Anthropic();
+  try {
+    const r = await client.beta.messages.create({
+      model: MODELO_CLAUDE,
+      // A margem é para o raciocínio (conta no mesmo teto). Só se paga o que é gerado.
+      max_tokens: 16000,
+      system: config.ai.personality,
+      messages: [{ role: 'user', content: prompt }],
+      thinking: { type: 'adaptive' },
+      output_config: { effort: 'medium' },
+      // Se o Sonnet recusar por política, o próprio servidor tenta outro modelo.
+      betas: ['server-side-fallback-2026-07-01'],
+      fallbacks: 'default',
+    });
+    medir({ fornecedor: 'claude', tipo: 'texto', modelo: r.model || MODELO_CLAUDE, entrada: r.usage?.input_tokens, saida: r.usage?.output_tokens });
+    if (r.stop_reason === 'refusal') {
+      console.log(`⚠️ claude recusou (${r.stop_details?.category || 'sem categoria'}) — segue a fila de sempre.`);
+      return null;
+    }
+    if (r.stop_reason === 'max_tokens') {
+      console.log('⚠️ claude: resposta cortada no teto — segue a fila de sempre.');
+      return null;
+    }
+    const texto = r.content.filter((b) => b.type === 'text').map((b) => b.text).join('');
+    if (!texto) {
+      console.log('⚠️ claude: resposta vazia — segue a fila de sempre.');
+      return null;
+    }
+    console.log(`🤖 Texto gerado via claude — ${r.model || MODELO_CLAUDE} (primário)`);
+    return texto;
+  } catch (err) {
+    medir({ fornecedor: 'claude', tipo: 'texto', modelo: MODELO_CLAUDE, falhou: true });
+    // 401/403 (chave), 400 de crédito, 429 do limite de gasto: não muda nesta corrida.
+    if (err instanceof Anthropic.AuthenticationError || err instanceof Anthropic.PermissionDeniedError
+      || err instanceof Anthropic.BadRequestError || err instanceof Anthropic.RateLimitError) {
+      claudeFechado = true;
+    }
+    const estado = err instanceof Anthropic.APIError ? `HTTP ${err.status}` : 'rede';
+    console.log(`⚠️ claude falhou (${estado}: ${String(err.message).slice(0, 160)}) — segue a fila de sempre.`);
+    return null;
+  }
+}
+
 export async function generateText(prompt, options = {}) {
   const {
     maxTokens = 4000,
@@ -335,6 +397,12 @@ export async function generateText(prompt, options = {}) {
     // um título de 60 caracteres. Quem quer o corte, pede-o.
     esforcoRaciocinio = null,
   } = options;
+
+  // O Claude primeiro (ver `escreverComClaude`); qualquer falha cai na fila de sempre.
+  if (pago) {
+    const doClaude = await escreverComClaude(prompt);
+    if (doClaude) return doClaude;
+  }
 
   const providers = getTextProviders();
   // Os pagos entram à FRENTE (na ordem da fila), e os gratuitos ficam como rede

@@ -21,8 +21,9 @@
  *   · O link é o CÓDIGO que põe, nunca a IA — não há link inventado.
  *   · Nenhum número que não esteja no vídeo — a IA não inventa valores.
  *
- * Só usa IA GRÁTIS: o workflow não passa nenhuma chave do kie.ai, por isso
- * `pago: 'escritor'` cai direto no Gemini Flash grátis e, depois, na fila gratuita.
+ * Sem caminho para cobrança: o workflow não passa chave do kie.ai. Desde 14/10 escreve
+ * primeiro o Claude (crédito do plano Max, organização sem cartão); depois o Gemini Flash
+ * grátis e a fila gratuita.
  *
  *   node src/scripts/youtube/posts-semana.js --ensaio     (escreve e mostra, não envia)
  *   node src/scripts/youtube/posts-semana.js              (escreve e envia o e-mail)
@@ -312,7 +313,7 @@ function montarEmail(posts, anterior, proximo, segunda, paginaPronta = false) {
       <strong style="color:#f0f6fc;">Como agendar:</strong> YouTube Studio → <strong>Criar</strong> → <strong>Criar post</strong> → colar o texto → (enquete: botão <strong>Enquete</strong>) → seta ao lado de Publicar → <strong>Agendar</strong>.
     </p>
     ${caixas}
-    <p style="color:#484f58;font-size:11px;margin:24px 0 0;">Escrito por IA grátis. O YouTube não deixa robô publicar posts — por isso vem para você agendar.</p>
+    <p style="color:#484f58;font-size:11px;margin:24px 0 0;">Escrito por IA. O YouTube não deixa robô publicar posts — por isso vem para você agendar.</p>
   </div></body></html>`;
   return { subject, html };
 }

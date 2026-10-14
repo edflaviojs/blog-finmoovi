@@ -291,6 +291,8 @@ jobs:
         env:
           KIE_AI_KEY: ${{ secrets.KIE_AI_KEY }}
           KIE_AI_KEY_LONGO: ${{ secrets.KIE_AI_KEY_LONGO }}
+          # 14/10 — o Claude (Sonnet 5.5), crédito do plano Max — ver `escreverComClaude` em kie-ai.js
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
@@ -434,6 +436,8 @@ jobs:
         env:
           KIE_AI_KEY: ${{ secrets.KIE_AI_KEY }}
           KIE_AI_KEY_LONGO: ${{ secrets.KIE_AI_KEY_LONGO }}
+          # 14/10 — o Claude (Sonnet 5.5), crédito do plano Max — ver `escreverComClaude` em kie-ai.js
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
@@ -638,6 +642,8 @@ jobs:
         env:
           KIE_AI_KEY: ${{ secrets.KIE_AI_KEY }}
           KIE_AI_KEY_LONGO: ${{ secrets.KIE_AI_KEY_LONGO }}
+          # 14/10 — o Claude (Sonnet 5.5), crédito do plano Max — ver `escreverComClaude` em kie-ai.js
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
@@ -859,6 +865,8 @@ jobs:
         env:
           KIE_AI_KEY: ${{ secrets.KIE_AI_KEY }}
           KIE_AI_KEY_LONGO: ${{ secrets.KIE_AI_KEY_LONGO }}
+          # 14/10 — o Claude (Sonnet 5.5), crédito do plano Max — ver `escreverComClaude` em kie-ai.js
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
@@ -877,6 +885,8 @@ jobs:
         env:
           KIE_AI_KEY: ${{ secrets.KIE_AI_KEY }}
           KIE_AI_KEY_LONGO: ${{ secrets.KIE_AI_KEY_LONGO }}
+          # 14/10 — o Claude (Sonnet 5.5), crédito do plano Max — ver `escreverComClaude` em kie-ai.js
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
@@ -1001,6 +1011,8 @@ jobs:
           # reserva todas as semanas, e a corrida acabava a verde. Ver o aviso do passo 4.
           KIE_AI_KEY: ${{ secrets.KIE_AI_KEY }}
           KIE_AI_KEY_LONGO: ${{ secrets.KIE_AI_KEY_LONGO }}
+          # 14/10 — o Claude (Sonnet 5.5), crédito do plano Max — ver `escreverComClaude` em kie-ai.js
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
