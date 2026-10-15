@@ -18,6 +18,15 @@
 
 ## A. Dívida técnica
 
+### A0. ⏭️ Newsletter — 3 itens para 16/10 de manhã (Ed: «QUERO FAZER TUDO ISSO»)
+
+**Contexto:** a 15/10 a newsletter foi fechada à chave pública (commit 080add89, `db/newsletter-fase-s.sql`).
+Ficaram 3 coisas, detalhadas no app em `backup-app-22052025/.claude/docs/DIVIDA-TECNICA.md` (secção 0-PRIMEIRO):
+1. `welcome-sequence.js` filtra `status=eq.active` (coluna não existe) → nunca manda nada, e termina VERDE.
+2. A RPC de inscrição aceita o código de cancelamento de quem chama → precisa de `SUPABASE_SERVICE_KEY` nas Pages.
+3. Links antigos de cancelar (sem `&t=`) deixaram de funcionar — 1 assinante.
+
+
 ### A1. 🟡 O registo de vídeos publicados está incompleto — e mente no título
 
 **Estado:** contornado, **não** consertado · **Reavaliar:** se outro robô voltar a
