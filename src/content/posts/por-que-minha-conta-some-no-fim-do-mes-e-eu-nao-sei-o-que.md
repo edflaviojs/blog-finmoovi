@@ -23,23 +23,23 @@ Quando o último dia do mês chega e o saldo da conta parece ter sido engolido p
 
 ## A dor de não saber onde o dinheiro foi
 
-A vida moderna está cheia de microtransações que, isoladas, parecem insignificantes: um café rápido na esquina, aquele aplicativo de streaming que renova a assinatura automaticamente, a taxa de conversão ao comprar um souvenir em dólares durante a viagem. Quando esses valores se acumulam, o impacto no orçamento pode ser tão grande quanto o de uma conta de aluguel.
+A vida moderna está cheia de microtransações que, isoladas, parecem insignificantes: um café rápido na esquina, aquele aplicativo de streaming que renova a assinatura automaticamente, a taxa de conversão ao comprar um souvenir em dólares durante a viagem. Quando esses valores se acumulam, o impacto no orçamento pode ser tão grande quanto o de uma conta de [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026).
 
 Imagine a Maria, que ganha o equivalente a um salário mínimo e tem como prioridade pagar as contas fixas – aluguel, energia, água e o plano de celular. Ela costuma anotar algumas despesas em um bloco de notas, mas a maioria das compras acontece “no automático”: um clique no app de delivery, um pagamento em dólares ao comprar um presente online, ou ainda o débito de uma assinatura que ela esqueceu de cancelar. No fim do mês, o saldo da conta está quase vazio e Maria não consegue identificar o culpado. O estresse aumenta, a sensação de falta de controle gera ansiedade e, muitas vezes, ela acaba cortando gastos essenciais por medo de ficar sem dinheiro.
 
 ## Como o FinMoovi transforma o caos em clareza
 
-É aqui que entra o FinMoovi, um aplicativo que combina captura inteligente (foto da nota fiscal ou gravação de voz) com IA avançada para categorizar automaticamente cada transação. Ao abrir o app, Maria grava rapidamente uma nota de voz dizendo “comprei um livro em euros na loja X” ou tira uma foto da nota do restaurante. Em segundos, o FinMoovi reconhece o texto, converte o valor para a moeda local usando taxas de câmbio em tempo real e atribui a categoria correta – “Educação” ou “Alimentação fora de casa”.
+É aqui que entra o FinMoovi, um aplicativo que combina [captura inteligente](/posts/cansado-de-perder-horas-nas-planilhas-como-o-finmoovi) (foto da nota fiscal ou gravação de voz) com IA avançada para categorizar automaticamente cada transação. Ao abrir o app, Maria grava rapidamente uma nota de voz dizendo “comprei um livro em euros na loja X” ou tira uma foto da nota do restaurante. Em segundos, o FinMoovi reconhece o texto, converte o valor para a [moeda](/glossario/moeda) local usando taxas de [câmbio](/glossario/cambio) em tempo real e atribui a categoria correta – “Educação” ou “Alimentação fora de casa”.
 
 ![Como o FinMoovi transforma o caos em clareza](/images/posts/por-que-minha-conta-some-no-fim-do-mes-e-eu-nao-sei-o-que-2.webp)
 
 
 
-O relatório inteligente, disponível na aba de fluxo de caixa, agrupa tudo em categorias visuais: alimentação, transporte, lazer, assinaturas, etc. Cada categoria aparece como um bloco colorido, permitindo que Maria veja, de relance, que 15 % do seu dinheiro foi consumido por assinaturas recorrentes e que 10 % saiu em compras internacionais. O recurso multimoeda elimina a confusão de converter valores manualmente, trazendo tudo para um único painel.
+O relatório inteligente, disponível na aba de [fluxo de caixa](/glossario/fluxo-de-caixa), agrupa tudo em categorias visuais: alimentação, transporte, lazer, assinaturas, etc. Cada categoria aparece como um bloco colorido, permitindo que Maria veja, de relance, que 15 % do seu dinheiro foi consumido por assinaturas recorrentes e que 10 % saiu em compras internacionais. O recurso multimoeda elimina a confusão de converter valores manualmente, trazendo tudo para um único painel.
 
 ## Passo a passo: 5 minutos dentro do FinMoovi para acabar com o mistério
 
-1. **Abra o app e vá para “Captura Inteligente”.**
+1. **Abra o app e vá para “[Captura Inteligente](/posts/como-freelancers-podem-organizar-as-financas-em-2026)”.**
 2. **Grave uma nota de voz ou tire foto da nota fiscal** – por exemplo, “paguei a conta de luz de 80 unidades”.
 3. **Aguarde o processamento (menos de 5 segundos).** O algoritmo reconhece o texto, identifica a moeda e classifica a despesa.
 4. **Confira o relatório na tela “Visão Mensal”.** As categorias aparecem em forma de gráfico de pizza, facilitando a visualização.
@@ -55,7 +55,7 @@ Em menos de cinco minutos, Maria tem a resposta exata de onde cada centavo foi g
 | **Tempo gasto em controle** | Horas em planilhas, anotações manuais e conferência de extratos. | 5 minutos por mês para revisão completa. |
 | **Surpresas no saldo** | Frequentes “bocas de caixa” no fim do mês. | Redução de despesas inesperadas em até 30 % (dados da própria plataforma). |
 | **Estresse financeiro** | Alto, sensação de descontrole. | Baixo, confiança ao ver onde o dinheiro está indo. |
-| **Ajustes de orçamento** | Reativo, muitas vezes tarde demais. | Proativo, com alertas de limite e recomendações automáticas. |
+| **Ajustes de orçamento** | Reativo, muitas vezes tarde demais. | Proativo, com [alertas](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto) de limite e recomendações automáticas. |
 
 ![Antes vs. depois: o impacto real da categorização automática](/images/posts/por-que-minha-conta-some-no-fim-do-mes-e-eu-nao-sei-o-que-4.webp)
 
@@ -63,7 +63,7 @@ Em menos de cinco minutos, Maria tem a resposta exata de onde cada centavo foi g
 
 ## Dados que confirmam a necessidade de um controle mais preciso
 
-Segundo a OECD, famílias que utilizam ferramentas de rastreamento automático de despesas têm, em média, 20 % a mais de margem de poupança ao final do ano. Já a [Investopedia](https://www.investopedia.com) destaca que a falta de visibilidade sobre gastos recorrentes é a principal causa de endividamento inesperado em economias avançadas. Esses números reforçam que a tecnologia de categorização automática, como a oferecida pelo FinMoovi, não é apenas um luxo, mas um elemento essencial para a saúde financeira.
+Segundo a OECD, famílias que utilizam ferramentas de rastreamento automático de despesas têm, em média, 20 % a mais de margem de [poupança](/glossario/poupanca) ao final do ano. Já a [Investopedia](https://www.investopedia.com) destaca que a falta de visibilidade sobre gastos recorrentes é a principal causa de endividamento inesperado em economias avançadas. Esses números reforçam que a tecnologia de categorização automática, como a oferecida pelo FinMoovi, não é apenas um luxo, mas um elemento essencial para a saúde financeira.
 
 ## Dicas práticas para manter a paz mental com o FinMoovi
 

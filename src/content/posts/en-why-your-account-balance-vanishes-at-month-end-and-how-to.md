@@ -29,16 +29,16 @@ Picture Alex, who earns a modest $2,000 – $5,000 per month and prioritizes
 
 ## How FinMoovi turns chaos into clarity  
 
-Enter FinMoovi, an app that blends smart capture (photo of a receipt or voice note) with advanced AI to automatically categorize every transaction. When Alex opens the app, a quick voice note like “bought a book in euros at store X” or a photo of a restaurant receipt is all that’s needed. Within seconds FinMoovi reads the text, converts the amount to the local currency using real‑time exchange rates, and assigns the right category – “Education” or “Dining Out”.
+Enter FinMoovi, an app that blends [smart capture](/en/posts/en-how-freelancers-can-organize-their-finances-in-2026) (photo of a receipt or voice note) with advanced AI to automatically categorize every transaction. When Alex opens the app, a quick voice note like “bought a book in euros at store X” or a photo of a restaurant receipt is all that’s needed. Within seconds FinMoovi reads the text, converts the amount to the local currency using real‑time exchange rates, and assigns the right category – “Education” or “Dining Out”.
 
 ![How FinMoovi turns chaos into clarity](/images/posts/por-que-minha-conta-some-no-fim-do-mes-e-eu-nao-sei-o-que-2.webp)
 
-The smart report, found under the cash‑flow tab, groups everything into visual categories: food, transport, entertainment, subscriptions, etc. Each category appears as a colored block, letting Alex instantly see that 15 % of the money went to recurring subscriptions and 10 % to international purchases. The multi‑currency feature removes the hassle of manual conversions, bringing everything onto a single dashboard.
+The smart report, found under the cash‑flow tab, groups everything into visual categories: food, transport, entertainment, subscriptions, etc. Each category appears as a colored block, letting Alex instantly see that 15 % of the money went to recurring subscriptions and 10 % to international purchases. The [multi‑currency](/en/posts/en-digital-bank-vs-major-bank-which-is-worth-it-in-2026) feature removes the hassle of manual conversions, bringing everything onto a single dashboard.
 
 ## 5‑minute walkthrough to end the mystery  
 
 1. **Open the app and go to “Smart Capture”.**  
-2. **Record a voice note or snap a receipt photo** – e.g., “paid the electricity bill of $80”.  
+2. **Record a voice note or snap a receipt photo** – e.g., “paid the [electricity bill](/en/posts/en-how-to-cut-your-electricity-bill-and-gain-peace-of-mind) of $80”.  
 3. **Wait for processing (under 5 seconds).** The algorithm reads the text, detects the currency, and classifies the expense.  
 4. **Check the “Monthly View” report.** Categories show up as a pie chart for quick visual insight.  
 5. **Adjust your budget:** slide the bar for any category that’s overspending and set a limit for next month.
@@ -59,11 +59,11 @@ In less than five minutes Alex knows exactly where every cent went and can make 
 
 ## Numbers that prove precise tracking matters  
 
-According to the OECD, households that use automatic expense‑tracking tools save on average 20 % more of their income by year‑end. And [Investopedia](https://www.investopedia.com) notes that lack of visibility into recurring costs is the leading cause of unexpected debt in advanced economies. These figures underline that automatic categorization, like FinMoovi offers, isn’t a luxury—it’s essential for financial health.
+According to the OECD, households that use automatic expense‑tracking tools save on average 20 % more of their income by year‑end. And [Investopedia](https://www.investopedia.com) notes that lack of visibility into recurring costs is the leading cause of unexpected [debt](/en/glossario/en-debt) in advanced economies. These figures underline that [automatic categorization](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end), like FinMoovi offers, isn’t a luxury—it’s essential for financial health.
 
 ## Practical tips for peace of mind with FinMoovi  
 
-- **Use voice capture on the go.** No typing needed; just say “paid the car insurance in dollars”.  
+- **Use [voice capture](/en/posts/en-forgot-to-pay-a-bill-how-to-fix-it-in-2026) on the go.** No typing needed; just say “paid the car insurance in dollars”.  
 - **Review the report weekly.** A 10‑minute habit each week stops hidden expenses from piling up.  
 - **Set category limit alerts.** The app notifies you when you’re close to the ceiling you defined.  
 - **Take advantage of offline mode.** FinMoovi stores notes locally and syncs when you’re back online.
@@ -72,12 +72,12 @@ According to the OECD, households that use automatic expense‑tracking tools sa
 
 ## Why automatic categorization makes a difference  
 
-FinMoovi’s AI learns from each capture. If you repeatedly log “grocery shopping”, the algorithm recognizes that pattern belongs to the “Food” category and will auto‑assign it in the future. This cuts manual effort and eliminates human error. The multi‑currency integration also ensures that overseas purchases don’t get lost in a sea of numbers, bringing everything into a single financial “point of view”.
+FinMoovi’s AI learns from each capture. If you repeatedly log “grocery shopping”, the algorithm recognizes that pattern belongs to the “Food” category and will auto‑assign it in the future. This cuts manual effort and eliminates human error. The [multi‑currency](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using) integration also ensures that overseas purchases don’t get lost in a sea of numbers, bringing everything into a single financial “point of view”.
 
 ## Get started now: 5 minutes that change your month  
 
 1. Download FinMoovi (available for Android, iOS, and as a PWA).  
-2. Create an account in a few taps – no long forms.  
+2. Create an account in a few taps – no [long](/en/glossario/en-long) forms.  
 3. Record your first voice note for breakfast or snap the latest receipt.  
 4. Watch the expense appear instantly in the report.  
 5. Set a limit for the “Entertainment” category and let the app warn you when you’re near it.
