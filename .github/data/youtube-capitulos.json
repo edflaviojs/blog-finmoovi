@@ -2470,8 +2470,71 @@
           "titulo": "Veja: playlist da Carteira da Aurora"
         }
       ]
+    },
+    {
+      "videoId": "KNrCu-foXDA",
+      "title": "Seu Salário Cai e Some no Cheque Especial? Veja Como Sair",
+      "channel": "Dívida Zero -  Professor Cae Galvão",
+      "duracaoSeg": 1107,
+      "idioma": "pt",
+      "viewsPerDay": 160,
+      "vistoEm": "2026-10-15",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "Quando o salário cai e some"
+        },
+        {
+          "seg": 55,
+          "titulo": "Quanto custa viver no cheque especial"
+        },
+        {
+          "seg": 152,
+          "titulo": "O ciclo que mantém a conta no vermelho"
+        },
+        {
+          "seg": 230,
+          "titulo": "O que você vai aprender"
+        },
+        {
+          "seg": 289,
+          "titulo": "Caso real: dívida quitada com desconto"
+        },
+        {
+          "seg": 339,
+          "titulo": "Aula gratuita: Seu Salário de Volta"
+        },
+        {
+          "seg": 385,
+          "titulo": "Primeiro passo: isolamento bancário"
+        },
+        {
+          "seg": 472,
+          "titulo": "Organize suas finanças antes de negociar"
+        },
+        {
+          "seg": 616,
+          "titulo": "Como calcular o valor da dívida"
+        },
+        {
+          "seg": 678,
+          "titulo": "Estratégia para negociar com o banco"
+        },
+        {
+          "seg": 774,
+          "titulo": "Como fazer propostas e conseguir descontos"
+        },
+        {
+          "seg": 846,
+          "titulo": "Quitação, negativação e cartório"
+        },
+        {
+          "seg": 942,
+          "titulo": "Perguntas frequentes sobre cheque especial"
+        }
+      ]
     }
   ],
-  "atualizadoEm": "2026-10-14T09:09:15.634Z",
-  "total": 46
+  "atualizadoEm": "2026-10-15T08:42:15.394Z",
+  "total": 47
 }
