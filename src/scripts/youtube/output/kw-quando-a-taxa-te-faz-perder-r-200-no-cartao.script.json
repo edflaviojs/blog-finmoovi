@@ -1,0 +1,197 @@
+{
+  "slug": "kw-quando-a-taxa-te-faz-perder-r-200-no-cartao",
+  "term": "Quando a taxa te faz perder R$200 no cartão",
+  "category": "mindset",
+  "keyword": "perder",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você *sabia* que uma compra de dois mil reais no cartão pode fazer você perder quase duzentos reais?"
+  },
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "duas-portas",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você sabia que uma compra de dois mil reais no cartão pode fazer você perder quase duzentos reais? É a taxa que cobra sem você perceber.",
+      "durationSec": 10,
+      "shots": [
+        {
+          "anchor": "sabia",
+          "visual": {
+            "type": "statement",
+            "text": "Taxa invisível"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "number",
+            "text": "R$ 200"
+          }
+        },
+        {
+          "anchor": "você",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Você fez a compra, parcelou em quatro vezes, pagou a primeira parcela e ficou sem saber o que vem depois.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "Você",
+          "visual": {
+            "type": "statement",
+            "text": "Compra feita"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "quatro",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 4,
+            "prefix": "x"
+          }
+        },
+        {
+          "anchor": "ficou",
+          "visual": {
+            "type": "statement",
+            "text": "O que vem?"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "No final das quatro parcelas, a fatura ficou em dois mil cento e noventa e nove reais, quase duzentos a mais.",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "quatro",
+          "visual": {
+            "type": "statement",
+            "text": "Quatro parcelas"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "dois",
+          "visual": {
+            "type": "number",
+            "text": "R$ 2.199"
+          }
+        },
+        {
+          "anchor": "quase",
+          "visual": {
+            "type": "icon",
+            "icon": "money"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei esses números no FinMoovi e ele mostrou a diferença de cento e noventa e oito reais.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "joguei",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Calculando"
+          }
+        },
+        {
+          "anchor": "mostrou",
+          "visual": {
+            "type": "statement",
+            "text": "Diferença R$ 198"
+          },
+          "sfx": "typewriter"
+        },
+        {
+          "anchor": "oito",
+          "visual": {
+            "type": "icon",
+            "icon": "chart-down"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu cálculo? Procure o FinMoovi, são sete dias grátis.",
+      "durationSec": 4.6,
+      "shots": [
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "statement",
+            "text": "Veja seu cálculo"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 2.7,
+      "shots": [
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Controle já"
+          }
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "icon",
+            "icon": "shield"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Calcule sua taxa agora",
+    "target": "app"
+  },
+  "totalDurationSec": 40
+}
