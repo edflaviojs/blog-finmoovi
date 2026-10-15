@@ -772,5 +772,11 @@
     "gancho": "nao-vai-acreditar",
     "turno": "manha",
     "em": "2026-10-15T09:17:23.479Z"
+  },
+  {
+    "situacao": "carro-quebrou",
+    "gancho": "nao-vai-acreditar",
+    "turno": "noite",
+    "em": "2026-10-15T09:20:01.855Z"
   }
 ]

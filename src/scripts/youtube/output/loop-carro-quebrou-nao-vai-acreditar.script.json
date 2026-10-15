@@ -1,0 +1,118 @@
+{
+  "slug": "loop-carro-quebrou-nao-vai-acreditar",
+  "formato": "loop16",
+  "term": "O carro quebrou no meio do mês",
+  "category": "vida",
+  "keyword": "CARRO",
+  "valor": "R$ 1.200",
+  "situacao": "carro-quebrou",
+  "gancho": "nao-vai-acreditar",
+  "ganchoFamilia": "não vai acreditar",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "domino",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você não vai acreditar, mas meu carro quebrou no meio do mês.",
+      "durationSec": 4.24,
+      "shots": [
+        {
+          "anchor": "acreditar",
+          "visual": {
+            "type": "statement",
+            "text": "Carro quebrou no meio do mês"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "carro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "domino"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Olha, o mecânico falou mil e duzentos reais Quase caí sentado.",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "mecânico",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "domino"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "falou",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 1.200"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "E aí o mercado atrasou, depois a luz, igual dominó.",
+      "durationSec": 3.53,
+      "shots": [
+        {
+          "anchor": "mercado",
+          "visual": {
+            "type": "statement",
+            "text": "Uma conta derrubou a outra"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "atrasou",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "domino"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "O carro parado no meio do mês? Comigo foi assim.",
+      "durationSec": 3.53,
+      "shots": [
+        {
+          "anchor": "carro",
+          "visual": {
+            "type": "statement",
+            "text": "Carro parado na oficina"
+          }
+        },
+        {
+          "anchor": "parado",
+          "visual": {
+            "type": "statement",
+            "text": "Carro quebrou no meio do mês"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.19
+}
