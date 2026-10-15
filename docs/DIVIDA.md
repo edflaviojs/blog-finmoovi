@@ -182,15 +182,14 @@ Renata Nunes (bmcnews).
 
 ---
 
-### C3. 🟡 O limite de gasto da API do Claude está em US$ 5/mês
+### C3. 🟡 O limite de gasto da API do Claude está em US$ 15/mês
 
 **Reavaliar:** quando B4 der o gasto real
 
-Posto pelo Ed a 14/10 no Console (organização inteira). A estimativa dos robôs é
-US$ 5–10/mês, logo o limite deve cortar antes do fim do mês — e aí os robôs voltam
-sozinhos à IA grátis (não quebra nada). Como não há cartão na organização, subir o
-limite não arrisca dinheiro. Sugestão dada: espaço de trabalho **FinMoovi** com
-US$ 15, e um espaço por projeto.
+Posto pelo Ed a 14/10 no Console: **US$ 15/mês** (corrigido pelo Ed a 15/10 — aqui
+estava US$ 5 por engano meu). A estimativa dos robôs é US$ 5–10/mês, logo deve
+chegar ao fim do mês; se cortar, os robôs voltam sozinhos à IA grátis (não quebra
+nada). Como não há cartão na organização, o limite não arrisca dinheiro.
 
 **De arrumação, sem pressa:** o segredo `MISTRAL_API_KEY` ficou no cofre sem uso — o
 plano Free da Mistral não liberta a chave (14/10). Pode ser apagado.
@@ -211,7 +210,7 @@ plano Free da Mistral não liberta a chave (14/10). Pode ser apagado.
   funcionar: item resolvido não fica marcado como feito, sai e vai para o histórico
   do git. Os outros seis nunca chegaram a entrar, pela mesma regra.
 - **14/10/2026** — entraram A5 (guarda das capas com um olho só), B4 (1ª semana do
-  Claude nos robôs + tentativa de quarta do longo) e C3 (limite de US$ 5 da API e o
+  Claude nos robôs + tentativa de quarta do longo) e C3 (limite de US$ 15 da API e o
   segredo da Mistral sem uso). Resolvidos no mesmo dia e por isso **não** entraram:
   voz da Microsoft com 403 (`c3d9e12d`), Short da noite sem Gemini (`f56d8156`),
   vídeo de 18/10 subido à mão, posts semanais por e-mail, primeiro comentário (já
