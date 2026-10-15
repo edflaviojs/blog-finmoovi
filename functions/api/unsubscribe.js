@@ -12,23 +12,31 @@ export async function onRequestGet(context) {
     });
   }
 
+  // Fase S (15/10/2026): cancelar exige o código secreto que vai no link do e-mail
+  // (antes bastava o endereço: qualquer pessoa cancelava a inscrição de qualquer outra).
+  const token = (url.searchParams.get('t') || '').trim();
   const supabaseUrl = env.SUPABASE_URL;
   const supabaseKey = env.SUPABASE_ANON_KEY;
+  let cancelado = false;
 
-  if (supabaseUrl && supabaseKey) {
-    await fetch(
-      `${supabaseUrl}/rest/v1/newsletter_subscribers?email=eq.${encodeURIComponent(email)}`,
-      {
-        method: 'PATCH',
-        headers: {
-          'apikey': supabaseKey,
-          'Authorization': `Bearer ${supabaseKey}`,
-          'Content-Type': 'application/json',
-          'Prefer': 'return=minimal'
-        },
-        body: JSON.stringify({ active: false, unsubscribed_at: new Date().toISOString() })
-      }
-    );
+  if (supabaseUrl && supabaseKey && /^[0-9a-f-]{36}$/i.test(token)) {
+    const res = await fetch(`${supabaseUrl}/rest/v1/rpc/fm_newsletter_cancelar`, {
+      method: 'POST',
+      headers: {
+        'apikey': supabaseKey,
+        'Authorization': `Bearer ${supabaseKey}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ p_email: email, p_token: token })
+    });
+    cancelado = res.ok && (await res.json().catch(() => false)) === true;
+  }
+
+  if (!cancelado) {
+    return new Response(`<html><body style="background:#0d1117;color:#f0f6fc;font-family:sans-serif;display:flex;align-items:center;justify-content:center;height:100vh;"><div style="text-align:center;max-width:420px;padding:16px;"><h1>Link inválido ou já usado</h1><p style="color:#8b949e;">Use o link de cancelamento do e-mail mais recente da Newsletter ${siteConfig.brandName}, ou responda a esse e-mail pedindo o cancelamento.</p><a href="${siteConfig.siteUrl}" style="color:#58a6ff;margin-top:16px;display:inline-block;">Voltar ao blog</a></div></body></html>`, {
+      status: 400,
+      headers: { 'Content-Type': 'text/html' }
+    });
   }
 
   return new Response(`<html><body style="background:#0d1117;color:#f0f6fc;font-family:sans-serif;display:flex;align-items:center;justify-content:center;height:100vh;"><div style="text-align:center;"><h1 style="color:#3fb950;">Inscrição cancelada</h1><p style="color:#8b949e;">Você não receberá mais emails da Newsletter ${siteConfig.brandName}.</p><a href="${siteConfig.siteUrl}" style="color:#58a6ff;margin-top:16px;display:inline-block;">Voltar ao blog</a></div></body></html>`, {

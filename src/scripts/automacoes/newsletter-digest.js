@@ -9,7 +9,12 @@ import { readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
 
 const SUPABASE_URL = process.env.SUPABASE_URL;
-const SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY;
+// Fase S (15/10/2026): a chave pública já não lê a tabela de assinantes — só a do servidor.
+const SUPABASE_KEY = process.env.SUPABASE_SERVICE_KEY;
+// Fase S (15/10/2026): o repositório é PÚBLICO — os registros das corridas também.
+// Nunca escrever o e-mail inteiro neles.
+const mascarar = (e) => String(e || '').replace(/^(.{0,2}).*(@.*)$/, '$1***$2');
+
 const RESEND_API_KEY = process.env.RESEND_API_KEY;
 const POSTS_DIR = join(process.cwd(), 'src', 'content', 'posts');
 const GLOSSARIO_DIR = join(process.cwd(), 'src', 'content', 'glossario');
@@ -60,7 +65,7 @@ function getPostsFromLastWeek(dir, locale) {
   return posts.sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
 }
 
-function buildDigestHTML(posts, glossaryPosts, lang, email) {
+function buildDigestHTML(posts, glossaryPosts, lang, email, unsubToken = null) {
   const texts = {
     pt: {
       subject: `Resumo Semanal ${config.brand.name}`,
@@ -139,7 +144,7 @@ function buildDigestHTML(posts, glossaryPosts, lang, email) {
         <a href="${config.siteUrl}${basePath}" style="display:inline-block;padding:12px 32px;background:var(--brand-gradient);color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:8px;">Ver tudo no blog</a>
       </div>
       <p style="color:#6e7681;font-size:11px;text-align:center;margin-top:24px;">
-        ${t.unsub} <a href="${config.siteUrl}/api/unsubscribe?email=${encodeURIComponent(email)}" style="color:#58a6ff;">${t.unsubLink}</a>
+        ${t.unsub} <a href="${config.siteUrl}/api/unsubscribe?email=${encodeURIComponent(email)}${unsubToken ? `&t=${unsubToken}` : ''}" style="color:#58a6ff;">${t.unsubLink}</a>
       </p>
     </div>
   </div>
@@ -150,11 +155,11 @@ function buildDigestHTML(posts, glossaryPosts, lang, email) {
 
 async function getSubscribers() {
   const res = await fetch(
-    `${SUPABASE_URL}/rest/v1/newsletter_subscribers?active=eq.true&select=email,lang`,
+    `${SUPABASE_URL}/rest/v1/newsletter_subscribers?active=eq.true&select=email,lang,unsub_token`,
     {
       headers: {
-        'apikey': SUPABASE_ANON_KEY,
-        'Authorization': `Bearer ${SUPABASE_ANON_KEY}`
+        'apikey': SUPABASE_KEY,
+        'Authorization': `Bearer ${SUPABASE_KEY}`
       }
     }
   );
@@ -183,8 +188,8 @@ async function sendEmail(to, subject, html) {
 async function main() {
   console.log('📬 Gerando digest semanal da newsletter...');
 
-  if (!SUPABASE_URL || !SUPABASE_ANON_KEY || !RESEND_API_KEY) {
-    console.error('❌ Variáveis de ambiente faltando (SUPABASE_URL, SUPABASE_ANON_KEY, RESEND_API_KEY)');
+  if (!SUPABASE_URL || !SUPABASE_KEY || !RESEND_API_KEY) {
+    console.error('❌ Variáveis de ambiente faltando (SUPABASE_URL, SUPABASE_SERVICE_KEY, RESEND_API_KEY)');
     process.exit(1);
   }
 
@@ -219,7 +224,7 @@ async function main() {
 
   for (const sub of subscribers) {
     const lang = sub.lang || 'pt';
-    const digest = buildDigestHTML(postsByLocale[lang] || [], glossaryByLocale[lang] || [], lang, sub.email);
+    const digest = buildDigestHTML(postsByLocale[lang] || [], glossaryByLocale[lang] || [], lang, sub.email, sub.unsub_token);
 
     if (!digest) {
       skipped++;
@@ -229,9 +234,9 @@ async function main() {
     const ok = await sendEmail(sub.email, digest.subject, digest.html);
     if (ok) {
       sent++;
-      console.log(`✅ Enviado para ${sub.email} (${lang})`);
+      console.log(`✅ Enviado para ${mascarar(sub.email)} (${lang})`);
     } else {
-      console.log(`❌ Falha ao enviar para ${sub.email}`);
+      console.log(`❌ Falha ao enviar para ${mascarar(sub.email)}`);
     }
 
     // Rate limit: 2 emails/segundo (Resend free tier)

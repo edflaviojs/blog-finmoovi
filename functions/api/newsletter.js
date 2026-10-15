@@ -48,60 +48,32 @@ export async function onRequestPost(context) {
       es: 'Al suscribirte aceptas nuestra Política de Privacidad.',
     }[lang] || 'Ao se inscrever, você aceita nossa Política de Privacidade.';
 
+    // O código de cancelamento é criado AQUI e vai no link do e-mail de boas-vindas;
+    // o banco só o grava se a inscrição for nova ou reativada (ver db/newsletter-fase-s.sql).
+    const unsubToken = crypto.randomUUID();
     if (supabaseUrl && supabaseKey) {
-      const checkRes = await fetch(
-        `${supabaseUrl}/rest/v1/newsletter_subscribers?email=eq.${encodeURIComponent(email)}&select=id,active`,
-        { headers: { 'apikey': supabaseKey, 'Authorization': `Bearer ${supabaseKey}` } }
-      );
-      const existing = await checkRes.json();
-
-      if (existing.length > 0) {
-        if (!existing[0].active) {
-          // Quem tinha cancelado e volta está a dar um consentimento NOVO — a prova
-          // do anterior não serve para este. Mesmo cuidado do INSERT: se a base ainda
-          // não tem as colunas da prova, reativa-se à mesma (ver o comentário abaixo).
-          const alvo = `${supabaseUrl}/rest/v1/newsletter_subscribers?email=eq.${encodeURIComponent(email)}`;
-          const cabecalhos = {
-            'apikey': supabaseKey,
-            'Authorization': `Bearer ${supabaseKey}`,
-            'Content-Type': 'application/json',
-            'Prefer': 'return=minimal'
-          };
-          const reativar = (corpo) => fetch(alvo, { method: 'PATCH', headers: cabecalhos, body: JSON.stringify(corpo) });
-          const base = { active: true, unsubscribed_at: null, lang, source };
-          const res = await reativar({ ...base, consent_at: consentAt, consent_text: consentText });
-          if (!res.ok) await reativar(base);
-        }
-      } else {
-        const cabecalhos = {
+      /**
+       * Fase S (15/10/2026): a chave pública já não lê nem altera a tabela — antes
+       * qualquer pessoa conseguia ler todos os e-mails e cancelar quem quisesse.
+       * Agora só chama a função fechada do banco, que inscreve (ou reativa quem
+       * tinha cancelado, com consentimento NOVO) e não devolve nenhum e-mail.
+       * Ver db/newsletter-fase-s.sql.
+       */
+      const res = await fetch(`${supabaseUrl}/rest/v1/rpc/fm_newsletter_inscrever`, {
+        method: 'POST',
+        headers: {
           'apikey': supabaseKey,
           'Authorization': `Bearer ${supabaseKey}`,
-          'Content-Type': 'application/json',
-          'Prefer': 'return=minimal'
-        };
-        const gravar = (corpo) => fetch(
-          `${supabaseUrl}/rest/v1/newsletter_subscribers`,
-          { method: 'POST', headers: cabecalhos, body: JSON.stringify(corpo) }
-        );
-
-        /**
-         * ⚠️ **A INSCRIÇÃO NUNCA PODE PARTIR-SE POR CAUSA DA PROVA.**
-         * As colunas `consent_at` e `consent_text` só existem depois de alguém as
-         * criar na base de dados; enquanto não existirem, o PostgREST devolve 400 e
-         * **deitava fora a inscrição inteira** — trocaríamos um defeito legal por um
-         * defeito pior, que é perder o leitor sem ninguém dar por isso.
-         * Por isso: tenta-se COM a prova e, se a base ainda não a conhece, grava-se
-         * SEM ela. Quando as colunas existirem, isto passa a gravar sozinho.
-         *
-         * SQL para as criar (correr uma vez no Supabase):
-         *   alter table newsletter_subscribers
-         *     add column if not exists consent_at   timestamptz,
-         *     add column if not exists consent_text text;
-         */
-        const res = await gravar({ email, lang, source, consent_at: consentAt, consent_text: consentText });
-        if (!res.ok) {
-          await gravar({ email, lang, source });
-        }
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ p_email: email, p_lang: lang, p_source: source, p_consent_text: consentText, p_token: unsubToken })
+      });
+      if (!res.ok) {
+        console.error('newsletter: inscrição recusada pelo banco', res.status);
+        return new Response(JSON.stringify({ error: 'Erro interno. Tente novamente.' }), {
+          status: 500,
+          headers: corsHeaders
+        });
       }
     }
 
@@ -110,8 +82,8 @@ export async function onRequestPost(context) {
     if (resendKey) {
       const isLeadMagnet = source === 'guia-30-dias' || source === 'checklist-financeiro';
       const emailContent = isLeadMagnet
-        ? getLeadMagnetEmailHTML(email, lang, source)
-        : getWelcomeEmailHTML(email, lang);
+        ? getLeadMagnetEmailHTML(email, lang, source, unsubToken)
+        : getWelcomeEmailHTML(email, lang, unsubToken);
       const subject = isLeadMagnet
         ? getLeadMagnetSubject(lang, source)
         : (lang === 'en' ? `Welcome to ${siteConfig.brandName} Newsletter!` :
@@ -176,7 +148,7 @@ function logoHeaderHTML() {
       </div>`;
 }
 
-function getWelcomeEmailHTML(email, lang = 'pt') {
+function getWelcomeEmailHTML(email, lang = 'pt', unsubToken = null) {
   const brand = siteConfig.brandName;
   const niche = siteConfig.niche || { pt: 'finanças pessoais', en: 'personal finance', es: 'finanzas personales' };
   const texts = {
@@ -225,7 +197,7 @@ function getWelcomeEmailHTML(email, lang = 'pt') {
       </div>
       <a href="${siteConfig.appUrl}" style="display:inline-block;padding:12px 32px;background:linear-gradient(135deg,${siteConfig.colors.gradientStart},${siteConfig.colors.gradientEnd});color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:8px;">${t.cta}</a>
       <p style="color:#6e7681;font-size:12px;margin-top:24px;">
-        ${t.unsub} <a href="${siteConfig.siteUrl}/api/unsubscribe?email=${encodeURIComponent(email)}" style="color:#58a6ff;">${t.unsubLink}</a>
+        ${t.unsub} <a href="${siteConfig.siteUrl}/api/unsubscribe?email=${encodeURIComponent(email)}${unsubToken ? `&t=${unsubToken}` : ''}" style="color:#58a6ff;">${t.unsubLink}</a>
       </p>
     </div>
   </div>
@@ -249,7 +221,7 @@ function getLeadMagnetSubject(lang, source) {
   return (subjects[source] && subjects[source][lang]) || subjects[source]?.pt || 'Seu material gratuito ${siteConfig.brandName}';
 }
 
-function getLeadMagnetEmailHTML(email, lang, source) {
+function getLeadMagnetEmailHTML(email, lang, source, unsubToken = null) {
   const content = {
     'guia-30-dias': {
       pt: {
@@ -370,7 +342,7 @@ function getLeadMagnetEmailHTML(email, lang, source) {
         <a href="${siteConfig.appUrl}" style="display:inline-block;padding:12px 32px;background:linear-gradient(135deg,${siteConfig.colors.gradientStart},${siteConfig.colors.gradientEnd});color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:8px;">${c.cta}</a>
       </div>
       <p style="color:#6e7681;font-size:11px;margin-top:24px;text-align:center;">
-        <a href="${siteConfig.siteUrl}/api/unsubscribe?email=${encodeURIComponent(email)}" style="color:#58a6ff;">Cancelar inscrição</a>
+        <a href="${siteConfig.siteUrl}/api/unsubscribe?email=${encodeURIComponent(email)}${unsubToken ? `&t=${unsubToken}` : ''}" style="color:#58a6ff;">Cancelar inscrição</a>
       </p>
     </div>
   </div>

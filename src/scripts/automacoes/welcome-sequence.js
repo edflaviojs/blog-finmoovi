@@ -11,7 +11,12 @@ import { config } from '../../../site.config.ts';
  */
 
 const SUPABASE_URL = process.env.SUPABASE_URL;
-const SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY;
+// Fase S (15/10/2026): a chave pública já não lê a tabela de assinantes — só a do servidor.
+const SUPABASE_KEY = process.env.SUPABASE_SERVICE_KEY;
+// Fase S (15/10/2026): o repositório é PÚBLICO — os registros das corridas também.
+// Nunca escrever o e-mail inteiro neles.
+const mascarar = (e) => String(e || '').replace(/^(.{0,2}).*(@.*)$/, '$1***$2');
+
 const RESEND_API_KEY = process.env.RESEND_API_KEY;
 
 // Logo oficial FinMoovi (PNG hospedado no blog) — padrão único de cabeçalho dos emails
@@ -96,8 +101,8 @@ const SEQUENCES = {
 async function getSubscribers() {
   const res = await fetch(`${SUPABASE_URL}/rest/v1/newsletter_subscribers?select=id,email,created_at,welcome_step&status=eq.active&order=created_at.desc`, {
     headers: {
-      'apikey': SUPABASE_ANON_KEY,
-      'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+      'apikey': SUPABASE_KEY,
+      'Authorization': `Bearer ${SUPABASE_KEY}`,
     }
   });
   if (!res.ok) throw new Error(`Supabase error: ${res.status}`);
@@ -108,8 +113,8 @@ async function updateWelcomeStep(subscriberId, step) {
   await fetch(`${SUPABASE_URL}/rest/v1/newsletter_subscribers?id=eq.${subscriberId}`, {
     method: 'PATCH',
     headers: {
-      'apikey': SUPABASE_ANON_KEY,
-      'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+      'apikey': SUPABASE_KEY,
+      'Authorization': `Bearer ${SUPABASE_KEY}`,
       'Content-Type': 'application/json',
       'Prefer': 'return=minimal',
     },
@@ -141,8 +146,8 @@ async function sendEmail(to, subject, html) {
 async function main() {
   console.log('📧 Sequência de boas-vindas...\n');
 
-  if (!SUPABASE_URL || !SUPABASE_ANON_KEY || !RESEND_API_KEY) {
-    console.error('❌ Faltam variáveis: SUPABASE_URL, SUPABASE_ANON_KEY, RESEND_API_KEY');
+  if (!SUPABASE_URL || !SUPABASE_KEY || !RESEND_API_KEY) {
+    console.error('❌ Faltam variáveis: SUPABASE_URL, SUPABASE_SERVICE_KEY, RESEND_API_KEY');
     process.exit(1);
   }
 
@@ -173,13 +178,13 @@ async function main() {
     for (const email of sequence) {
       if (email.day > currentStep && daysSinceSignup >= email.day) {
         try {
-          console.log(`📨 ${sub.email} — Dia ${email.day}: ${email.subject}`);
+          console.log(`📨 ${mascarar(sub.email)} — Dia ${email.day}: ${email.subject}`);
           await sendEmail(sub.email, email.subject, email.html);
           await updateWelcomeStep(sub.id, email.day);
           sent++;
           await new Promise(r => setTimeout(r, 1000)); // Rate limit
         } catch (error) {
-          console.warn(`⚠️ Falha para ${sub.email}: ${error.message}`);
+          console.warn(`⚠️ Falha para ${mascarar(sub.email)}: ${error.message}`);
         }
         break; // Only one email per subscriber per run
       }
