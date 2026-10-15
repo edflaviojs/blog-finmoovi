@@ -3,6 +3,7 @@ title: "Why Your Account Balance Vanishes at Month‑End and How to Stop It"
 description: "Learn to spot hidden expenses and regain control with FinMoovi’s automatic categorization."
 tickerHeadline: "The mystery of the disappearing balance"
 image: "/images/posts/por-que-minha-conta-some-no-fim-do-mes-e-eu-nao-sei-o-que.webp"
+imageAlt: "Yellow abstract shapes on a dark blue background."
 category: "ferramentas"
 locale: "en"
 tags: ["vanishing account","automatic categorization","expense control","FinMoovi","personal cash flow","multi‑currency","smart report","categorize spending","financial tracking","smart capture","personal finance"]

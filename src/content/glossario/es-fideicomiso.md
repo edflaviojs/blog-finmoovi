@@ -4,6 +4,7 @@ definition: "Qué es fideicomiso y cómo aparece en tu día a día — explicado
 title: "fideicomiso - Glosario Financiero"
 description: "Qué es fideicomiso y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/trust.webp"
+imageAlt: "Monedas doradas, cerdo hucha, balanza y gráfico de crecimiento ascendente sobre fondo oscuro."
 category: "basico"
 tags: ["fideicomiso", "glosario", "finanzas"]
 author: "FinMoovi"

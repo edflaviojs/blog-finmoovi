@@ -4,6 +4,7 @@ definition: "What trust is and how it shows up in your everyday money — explai
 title: "trust - Financial Glossary"
 description: "What trust is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/trust.webp"
+imageAlt: "Gold coins, clock, plant, and scales arranged with an upward arrow on a dark background."
 category: "basico"
 tags: ["trust", "glossary", "finance"]
 author: "FinMoovi"

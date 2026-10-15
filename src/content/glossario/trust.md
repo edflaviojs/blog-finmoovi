@@ -4,6 +4,7 @@ definition: "O que é trust e como isso aparece no seu dia a dia — explicado d
 title: "trust - Glossário Financeiro"
 description: "O que é trust e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/trust.webp"
+imageAlt: "Pilhas de moedas douradas, gráfico de crescimento, cofrinho e balança sobre fundo escuro."
 category: "basico"
 tags: ["trust", "glossário", "finanças"]
 author: "FinMoovi"

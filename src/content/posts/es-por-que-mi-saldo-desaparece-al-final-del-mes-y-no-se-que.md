@@ -3,6 +3,7 @@ title: "¿Por qué mi saldo desaparece al final del mes y no sé qué pasó?"
 description: "Descubre cómo detectar gastos invisibles y recuperar el control financiero con la categorización automática de FinMoovi."
 tickerHeadline: "El misterio del saldo que se esfuma"
 image: "/images/posts/por-que-minha-conta-some-no-fim-do-mes-e-eu-nao-sei-o-que.webp"
+imageAlt: "Formas onduladas amarillas sobre fondo azul marino oscuro."
 category: "ferramentas"
 locale: "es"
 tags: ["cuenta desapareciendo","categorización automática","control de gastos","finmoovi","flujo de caja personal","multimoneda","informe inteligente","categorizar gastos","informes","control financiero","smart capture","finanzas personales"]

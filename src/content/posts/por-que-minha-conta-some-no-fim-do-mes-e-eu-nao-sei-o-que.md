@@ -3,6 +3,7 @@ title: "Por que minha conta some no fim do mês e eu não sei o que aconteceu?"
 description: "Descubra como identificar gastos invisíveis e recuperar o controle financeiro com a categorização automática do FinMoovi."
 tickerHeadline: "O mistério do saldo que some"
 image: "/images/posts/por-que-minha-conta-some-no-fim-do-mes-e-eu-nao-sei-o-que.webp"
+imageAlt: "Formas abstratas amarelas sobre fundo azul-escuro."
 category: "ferramentas"
 locale: "pt"
 tags: ["conta desaparecendo","categorização automática","controle de gastos","finmoovi","fluxo de caixa pessoal","multimoeda","relatório inteligente","categorizar gastos","relatórios","controle financeiro","smart capture","multi-moeda","finanças pessoais"]
