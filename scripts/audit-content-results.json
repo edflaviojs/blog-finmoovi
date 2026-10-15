@@ -22,7 +22,7 @@
     "dir": "posts",
     "severity": 2,
     "issues": {
-      "currency": 2,
+      "currency": 0,
       "brInstitutions": [
         "IBGE"
       ],
@@ -97,7 +97,7 @@
     "dir": "posts",
     "severity": 2,
     "issues": {
-      "currency": 2,
+      "currency": 0,
       "brInstitutions": [
         "IBGE"
       ],
@@ -4625,6 +4625,21 @@
     }
   },
   {
+    "file": "en-trust.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-understand-outstanding-balance-and-how-to-clear-your.md",
     "dir": "posts",
     "severity": 0,
@@ -4941,6 +4956,21 @@
   },
   {
     "file": "en-why-you-still-forget-bill-due-dates-and-pay-late-in-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-why-your-account-balance-vanishes-at-month-end-and-how-to.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -7400,6 +7430,21 @@
     }
   },
   {
+    "file": "es-fideicomiso.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-financiamiento.md",
     "dir": "glossario",
     "severity": 0,
@@ -8781,6 +8826,21 @@
   },
   {
     "file": "es-por-que-mi-hoja-de-control-nunca-sigue-mis-gastos.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-por-que-mi-saldo-desaparece-al-final-del-mes-y-no-se-que.md",
     "dir": "posts",
     "severity": 0,
     "issues": {

@@ -1,6 +1,6 @@
 ---
 title: "FinMoovi Cost of Living Index — September/2026"
-description: "IPCA for September/2026 by expense group: overall index at 0.82% in the month and 4.58% over 12 months. Month-close exchange rates and tips to protect your budget."
+description: "CPI for September/2026 by expense group: overall index at 0.82% monthly and 4.58% yearly. Exchange rates and budget protection tips."
 image: "/images/posts/indice-finmoovi-custo-de-vida-setembro-2026.webp"
 imageAlt: "Smiling couple in blue shirts viewing a white smartphone together."
 category: "cotacoes"
@@ -18,13 +18,13 @@ seo:
   keywords: ["ipca september 2026","cost of living index brazil","inflation by expense group","dollar closing rate"]
 ---
 
-In September 2026 the [cost of living](/en/glossario/en-cost-of-living) rose 0.82 % according to the overall IPCA, reflecting a price increase accumulated over the last 12 months of 4.58 %. This rise, although it looks small, already weighs on the monthly [family budget](/en/posts/en-how-to-gift-on-father-s-day-without-spending-much-7-budget).
+In September 2026 the [cost of living](/en/glossario/en-cost-of-living) rose 0.82 % according to the overall consumer price index, reflecting a price increase accumulated over the last 12 months of 4.58 %. This rise, although it looks small, already weighs on the monthly [family budget](/en/posts/en-how-to-gift-on-father-s-day-without-spending-much-7-budget).
 
-## IPCA for September by expense group
+## CPI for September by expense group
 
 | Expense group | Monthly change | 12-month accumulated |
 | --- | --- | --- |
-| Overall index (IPCA) | 0.82% | 4.58% |
+| Overall index (CPI) | 0.82% | 4.58% |
 | Food and beverages | 0.83% | 4.66% |
 | Housing | 2.31% | 4.22% |
 | Household articles | 0.27% | 2.08% |
@@ -42,7 +42,7 @@ In September 2026 the [cost of living](/en/glossario/en-cost-of-living) rose 0
 | Dollar (USD/BRL) | $1.00 |
 | Euro (EUR/BRL) | $1.12 |
 
-*Sources: IPCA/IBGE (change by expense group) and AwesomeAPI month-close exchange rates. Editorial index produced by FinMoovi.*
+*Sources: CPI/national statistics office (change by expense group) and AwesomeAPI month-close exchange rates. Editorial index produced by FinMoovi.*
 
 ## Highlights of the month
 
@@ -54,15 +54,15 @@ A variation of only 0.08 % in health shows that medicines and appointments sta
 
 ## How to protect yourself
 
-- Review your monthly plan using the [Calculadora de Orçamento](/ferramentas/calculadora-orcamento/) and adjust categories that have gone up, such as housing.  
-- Reassess your emergency reserve with the [Calculadora de Reserva de Emergência](/ferramentas/calculadora-reserva/) to ensure sufficient coverage.  
-- If you need to buy imported products, check the current dollar and euro rates on the [Conversor de Moedas](/ferramentas/conversor-moedas/).  
-- Consider allocating part of your savings to investments that outpace [inflation](/en/glossario/en-inflation) with the [Simulador de Investimento](/ferramentas/simulador-investimento/).
+- Review your monthly plan using the [Budget Calculator](/ferramentas/calculadora-orcamento/) and adjust categories that have gone up, such as housing.  
+- Reassess your emergency reserve with the [Emergency Reserve Calculator](/ferramentas/calculadora-reserva/) to ensure sufficient coverage.  
+- If you need to buy imported products, check the current dollar and euro rates on the [Currency Converter](/ferramentas/conversor-moedas/).  
+- Consider allocating part of your savings to investments that outpace [inflation](/en/glossario/en-inflation) with the [Investment Simulator](/ferramentas/simulador-investimento/).
 
 ## Frequently Asked Questions
 
-### How much did the overall IPCA rise in September 2026?  
-The overall index (IPCA) recorded a rise of 0.82 % for the month.  
+### How much did the overall CPI rise in September 2026?  
+The overall index (CPI) recorded a rise of 0.82 % for the month.  
 
 ### Which category had the biggest increase?  
 Housing was the biggest gainer, with a 2.31 % rise in September.  
