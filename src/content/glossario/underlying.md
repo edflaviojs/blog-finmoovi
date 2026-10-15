@@ -4,6 +4,7 @@ definition: "O que é underlying e como isso aparece no seu dia a dia — explic
 title: "underlying - Glossário Financeiro"
 description: "O que é underlying e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/underlying.webp"
+imageAlt: "Piggy bank rosa, pilhas de moedas douradas, vaso com planta e barras amarelas sobre base cinza."
 category: "basico"
 tags: ["underlying", "glossário", "finanças"]
 author: "FinMoovi"

@@ -3,6 +3,7 @@ title: "Smart Capture: registre gastos por voz em segundos e ganhe tempo"
 description: "Descubra como a captura por voz transforma o registro de despesas, economizando minutos diários e trazendo mais tranquilidade ao seu orçamento."
 tickerHeadline: "A voz que salva seu dinheiro"
 image: "/images/posts/smart-capture-registre-gastos-por-voz-em-segundos-e-ganhe.webp"
+imageAlt: "Casal sorridente usa tablet e documentos em ambiente interno com tons quentes."
 category: "ferramentas"
 locale: "pt"
 tags: ["captura por voz","registro de despesas","FinMoovi","controle financeiro","automação de gastos","organização financeira","tecnologia de finanças","controle gastos voz","app financeiro por voz","registrar despesa voz"]

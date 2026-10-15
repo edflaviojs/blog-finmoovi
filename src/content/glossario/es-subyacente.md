@@ -4,6 +4,7 @@ definition: "Qué es subyacente y cómo aparece en tu día a día — explicado 
 title: "subyacente - Glosario Financiero"
 description: "Qué es subyacente y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/underlying.webp"
+imageAlt: "Monedas doradas, cerdito rosa en esfera, planta verde y barras de gráfico sobre fondo oscuro."
 category: "basico"
 tags: ["subyacente", "glosario", "finanzas"]
 author: "FinMoovi"

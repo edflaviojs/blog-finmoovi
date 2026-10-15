@@ -4,6 +4,7 @@ definition: "What underlying is and how it shows up in your everyday money — e
 title: "underlying - Financial Glossary"
 description: "What underlying is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/underlying.webp"
+imageAlt: "Pink piggy bank in glass sphere, gold coins, plant, and yellow bars on dark background."
 category: "basico"
 tags: ["underlying", "glossary", "finance"]
 author: "FinMoovi"

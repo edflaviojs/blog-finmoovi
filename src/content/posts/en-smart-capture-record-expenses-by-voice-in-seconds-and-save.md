@@ -3,6 +3,7 @@ title: "Smart Capture: Record Expenses by Voice in Seconds and Save Time"
 description: "Discover how voice capture streamlines expense logging, saving minutes daily and giving you peace of mind about your budget."
 tickerHeadline: "Voice that saves your money"
 image: "/images/posts/smart-capture-registre-gastos-por-voz-em-segundos-e-ganhe.webp"
+imageAlt: "Smiling couple with glasses using silver laptop and papers at table."
 category: "ferramentas"
 locale: "en"
 tags: ["voice capture","expense logging","FinMoovi","financial control","expense automation","financial organization","finance technology","voice expense tracking","voice finance app","record expense by voice"]
