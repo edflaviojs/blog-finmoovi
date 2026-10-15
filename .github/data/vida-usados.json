@@ -766,5 +766,11 @@
     "gancho": "voces-viram",
     "turno": "noite",
     "em": "2026-10-14T09:42:11.614Z"
+  },
+  {
+    "situacao": "viagem-fim-de-ano",
+    "gancho": "nao-vai-acreditar",
+    "turno": "manha",
+    "em": "2026-10-15T09:17:23.479Z"
   }
 ]
