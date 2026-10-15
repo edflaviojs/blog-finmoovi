@@ -1,7 +1,7 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-10-14T09:54:57.462Z
-**Posts:** 522 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 18
+**Gerado em:** 2026-10-15T09:36:06.489Z
+**Posts:** 525 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 20
 
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
@@ -49,11 +49,17 @@
 **en-why-you-re-not-seeing-progress-in-your-savings.md**
 - _According to Investopedia, using **automated financial reports** boosts the likelihood of hitting [savings goals](/en/posts/en-how-to-save-for-children-s-day-in-2026-7-practical-steps) by up to 35 % c_
 
+**en-why-your-account-balance-vanishes-at-month-end-and-how-to.md**
+- _According to the OECD, households that use automatic expense‑tracking tools save on average 20 % more of their income by year‑end._
+
 **indice-finmoovi-custo-de-vida-junho-2026.md**
 - _Em junho de 2026, o custo de vida subiu 0,16 % segundo o IPCA geral divulgado pelo IBGE, indicando um aumento modesto nos preços ao consumidor naquele mês._
 
 **ja-esqueceu-de-pagar-a-conta-e-ficou-na-mao-como-mudar-isso.md**
 - _Ela não era a única: segundo a OECD, mais de 30 % dos consumidores relatam ter perdido prazos de pagamento pelo menos uma vez no último ano[^1]._
+
+**por-que-minha-conta-some-no-fim-do-mes-e-eu-nao-sei-o-que.md**
+- _Segundo a OECD, famílias que utilizam ferramentas de rastreamento automático de despesas têm, em média, 20 % a mais de margem de poupança ao final do ano._
 
 **por-que-minha-planilha-de-controle-nunca-acompanha-meus.md**
 - _Segundo a *World Bank*, a adoção de tecnologias digitais de [gestão financeira](/posts/5-alternativas-ao-mobills-em-2026) pode reduzir o tempo gasto em tarefas administrativas em até 30 % (World Bank,_
