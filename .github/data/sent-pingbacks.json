@@ -3574,5 +3574,23 @@
     "target": "https://www.investopedia.com",
     "status": "no-endpoint",
     "sentAt": "2026-10-08T19:41:33.651Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/en-why-your-account-balance-vanishes-at-month-end-and-how-to/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-10-15T18:02:53.317Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/es-por-que-mi-saldo-desaparece-al-final-del-mes-y-no-se-que/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-10-15T18:02:53.418Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/por-que-minha-conta-some-no-fim-do-mes-e-eu-nao-sei-o-que/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-10-15T18:02:53.507Z"
   }
 ]
