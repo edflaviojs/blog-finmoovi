@@ -5659,6 +5659,41 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-10-14"
+    },
+    "por-que-minha-conta-some-no-fim-do-mes-e-eu-nao-sei-o-que-2.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-15"
+    },
+    "por-que-minha-conta-some-no-fim-do-mes-e-eu-nao-sei-o-que-4.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-15"
+    },
+    "por-que-minha-conta-some-no-fim-do-mes-e-eu-nao-sei-o-que-6.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-15"
+    },
+    "por-que-minha-conta-some-no-fim-do-mes-e-eu-nao-sei-o-que.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-15"
+    },
+    "trust-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-15"
+    },
+    "trust-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-15"
+    },
+    "trust.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-15"
     }
   },
   "corrigidas": {
@@ -6323,6 +6358,6 @@
       "motivo": "tem texto escrito (\"I'm sorry, I'm not able to identify the people in this image.\")"
     }
   },
-  "totalAcervo": 1132,
-  "ultimaCorrida": "2026-10-14"
+  "totalAcervo": 1139,
+  "ultimaCorrida": "2026-10-15"
 }
