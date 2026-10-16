@@ -14,6 +14,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { SITUACOES } from './situacoes.mjs'
+import { PALAVRAS_OBJETO, PALAVRAS_EVENTO } from './palavras.mjs'
 
 const aqui = path.dirname(fileURLToPath(import.meta.url))
 const raiz = path.join(aqui, '..')
@@ -105,6 +106,41 @@ const estados = [
 ]
 const metafora = (m3 || m1)?.visual.metaphor || roteiro.fioCondutor
 
+// ── OBJETOS (16/10, pedido do Ed: "quando se fala em carro… aparecer realmente um carro andando") ──
+// Nas cenas 1, 3 e 4, a 1.ª palavra que chama um objeto abre o cartão numa JANELA para a cena.
+// Na cena 2 manda o valor. Os eventos (quebra, atraso, "caí") mudam o objeto ou disparam efeitos.
+const achar = (c, lista) => c.palavras.filter((p) => lista.includes(norm(p.w)))
+function objetosDa(c) {
+  const out = []
+  for (const p of c.palavras) for (const [obj, lista] of Object.entries(PALAVRAS_OBJETO)) if (lista.includes(norm(p.w)) && !out.some((o) => o.nome === obj)) out.push({ nome: obj, t: p.t })
+  return out
+}
+const fx = []
+const janela = (c) => {
+  const objs = objetosDa(c); if (!objs.length) return null
+  const quebra = achar(c, PALAVRAS_EVENTO.quebra)[0]
+  return { id: 'janela', t: objs[0].t - 0.12, objetos: objs, quebra: quebra ? quebra.t : null }
+}
+const j1 = janela(c1), j3 = janela(c3), j4 = janela(c4)
+if (j1) estados.splice(1, 1, j1) // o objeto da cena 1 entra no lugar da metáfora de apresentação
+if (j3) {
+  // a metáfora em ação vem DEPOIS do objeto: quando a voz diz o nome dela, ou 1,8 s depois da janela
+  const nomeDita = c3.palavras.find((p) => norm(p.w).startsWith(norm(metafora).slice(0, 4)))
+  const iMeta = estados.findIndex((e) => e.id === 'meta' && e.modo === 'acao')
+  estados[iMeta].t = Math.max(j3.t + 1.8, nomeDita ? nomeDita.t - 0.1 : estados[iMeta].t)
+  estados.splice(iMeta, 0, j3)
+}
+if (j4) {
+  const iAl = estados.findIndex((e) => e.id === 'alerta')
+  j4.t = Math.max(c4.inicio + 0.05, j4.t)
+  estados[iAl].t = Math.min(Math.max(estados[iAl].t, j4.t + 1.4), estados[0].t - 0.8)
+  estados.splice(iAl, 0, j4)
+}
+for (const j of [j1, j3, j4].filter(Boolean)) if (j.quebra !== null && j.objetos.some((o) => o.nome === 'carro')) fx.push({ tipo: 'faiscas', t: j.quebra }, { tipo: 'fumaca', t: j.quebra, janela: j.t })
+for (const c of [c1, c2, c3, c4]) for (const p of achar(c, PALAVRAS_EVENTO.atraso)) fx.push({ tipo: 'papeis', t: p.t })
+for (const p of achar(c2, PALAVRAS_EVENTO.tomba)) fx.push({ tipo: 'tomba', t: p.t })
+fx.push({ tipo: 'moedas', t: aterra })
+
 // ── o fundo: uma cor por mudança importante; a paleta segue o clima ──
 const PALETAS = {
   alerta: ['#FFC72C', '#FF5A4E', '#FF4FA0', '#22D3EE', '#5B8CFF', '#FF5A4E'],
@@ -112,7 +148,8 @@ const PALETAS = {
   leve: ['#22D3EE', '#A3E635', '#FFC72C', '#FF4FA0', '#A78BFA', '#22D3EE'],
 }
 const paleta = PALETAS[roteiro.music?.clima] || PALETAS.alerta
-const inundacoes = [estados[0].t, estados[1].t, aterra, estados[3].t, estados[4].t, estados[5].t].map((t, i) => ({ t, cor: paleta[i] }))
+const inundacoes = [estados[0].t, estados[1].t, aterra, ...estados.slice(3).map((e) => e.t)].map((t, i) => ({ t, cor: paleta[i % paleta.length] }))
+  .filter((x, i, arr) => i < 2 || x.t - arr[i - 1].t > 0.8) // duas inundações coladas cansam: fica a primeira
 
 // ── as manchetes: cada "statement" do roteiro, com as palavras de impacto a acender quando a voz as diz ──
 const CORES = ['#FDE047', '#22D3EE', '#FF4FA0', '#FF5A4E', '#A3E635']
@@ -152,7 +189,7 @@ manchetes.forEach((m) => { m.entra ??= m.t })
 for (let i = manchetes.length - 1; i > 0; i--) if (manchetes[i].sai - manchetes[i].entra < 1.0) { manchetes[i - 1].sai = manchetes[i].sai; manchetes.splice(i, 1) }
 
 // ── o cursor: os mesmos alvos, mas o ritmo decide quantos visita, a que velocidade, e quantos cliques ──
-const ALVO = { notif: [180, 40], meta: [150, 150], valor: [-120, 160], extrato: [40, 60], alerta: [120, 30] }
+const ALVO = { notif: [180, 40], janela: [200, 160], meta: [150, 150], valor: [-120, 160], extrato: [40, 60], alerta: [120, 30] }
 const DESCANSO = [330, 470]
 const PERFIL = {
   agitado: { visitas: [0, 1, 2, 3, 4, 5], cliques: [0, 2, 3], vel: 2.3, passeio: true },
@@ -177,7 +214,7 @@ const plano = {
   slug, ritmo, batida: B, batidas: BATIDAS, duracao: DUR,
   rotulo, icone, valor: roteiro.valor, metafora, aterra,
   cenas: cenas.map((c) => ({ inicio: c.inicio, audio: c.audio, palavras: c.palavras })),
-  estados, inundacoes, manchetes, cursor,
+  estados, inundacoes, manchetes, cursor, fx,
   musica: { ficheiro: ficheiroMusica, inicio: grelha.inicio },
 }
 const trab = path.join(aqui, 'trabalho', slug)

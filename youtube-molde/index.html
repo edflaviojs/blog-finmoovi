@@ -15,7 +15,7 @@
   html, body { margin: 0; background: #0d1117; }
   body.preview { display: grid; place-items: center; min-height: 100vh; }
   body.preview #stage { transform: scale(var(--fit, 0.45)); transform-origin: center; }
-  #stage { position: relative; width: 1080px; height: 1920px; overflow: hidden; font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; color: #0d1117; font-feature-settings: 'tnum' 1; }
+  #stage { position: relative; width: 1080px; height: 1920px; overflow: hidden; font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; color: #0d1117; font-feature-settings: 'tnum' 1; perspective: 1800px; }
   .abs { position: absolute; }
   #wipe { position: absolute; border-radius: 50%; }
   .deco { position: absolute; }
@@ -64,6 +64,7 @@
         <div class="abs sub" style="left:176px;top:36px;font-size:30px;font-weight:600">FinMoovi · agora</div>
         <div class="abs" id="notifTxt" style="left:176px;top:80px;font-size:40px;font-weight:800;letter-spacing:-0.5px;white-space:nowrap"></div>
       </div>
+      <div class="layer" id="L-janela" data-w="900" data-h="560"><svg id="janelaSvg" class="abs" style="left:0;top:0" width="900" height="560" viewBox="0 0 900 560"></svg></div>
       <div class="layer" id="L-meta" data-w="720" data-h="560"><svg id="metaSvg" class="abs" style="left:80px;top:0" width="560" height="560"></svg></div>
       <div class="layer" id="L-valor" data-w="900" data-h="470">
         <div class="abs icone" style="left:48px;top:48px;width:96px;height:96px;border-radius:28px;background:#fde04722;display:grid;place-items:center"></div>
@@ -84,6 +85,7 @@
       </div>
     </div>
     <div id="coins"></div>
+    <svg id="fxSvg" class="abs" style="left:0;top:0;overflow:visible" width="1" height="1"></svg>
   </div>
 
   <div id="cap"><div id="capBox"></div></div>
@@ -91,6 +93,7 @@
 </div>
 
 <script src="metaforas.js"></script>
+<script src="objetos.js"></script>
 <script src="icones.js"></script>
 <script>
 // ═══ MOLAS ═══
@@ -126,9 +129,10 @@ function visStyle(el, vis, blurMax = 10) { el.style.opacity = clamp(vis).toFixed
 const $ = (id) => document.getElementById(id)
 
 // ═══ TAMANHOS DAS TELAS ═══
-const TAM = { notif: [880, 176, 88], meta: [720, 560, 70], valor: [900, 470, 56], extrato: [900, 640, 56], alerta: [660, 240, 120] }
-const BG = { notif: CARD, meta: CARD, valor: CARD, extrato: CARD, alerta: '#FFFFFF' }
+const TAM = { janela: [900, 560, 48], notif: [880, 176, 88], meta: [720, 560, 70], valor: [900, 470, 56], extrato: [900, 640, 56], alerta: [660, 240, 120] }
+const BG = { janela: CARD, notif: CARD, meta: CARD, valor: CARD, extrato: CARD, alerta: '#FFFFFF' }
 
+let tomba = () => 0
 let T = {}, STATES, shapeW, shapeH, shapeR, cam, layerVis, cursorX, cursorY, cursorPress, shapePress, heads, coinsSpec
 function montar(plano) {
   PL = plano; D = plano.duracao
@@ -173,6 +177,8 @@ function montar(plano) {
   // moedas da ação (só no ralo e no cofre tem moedas próprias; no ralo giram para o centro)
   coinsSpec = plano.metafora === 'ralo' ? Array.from({ length: 12 }, (_, i) => ({ x: -320 + (i * 97) % 640, y: -260 + (i % 3) * 90, t0: meta2.t + 0.03 * i, a0: i * 2.4 })) : []
   coinsSpec.forEach(() => { const c = document.createElement('div'); c.className = 'coin'; c.textContent = 'R$'; $('coins').appendChild(c) })
+  const tombos = (plano.fx || []).filter((f) => f.tipo === 'tomba')
+  tomba = tombos.length ? track(tombos.flatMap((f) => [[f.t - 0.05, 1, { f: 2.4, z: 0.5 }], [f.t + 0.55, 0, { f: 2.4, z: 0.5 }]])) : () => 0
   T = { meta2: meta2.t, aterra: plano.aterra, alerta: STATES.find((s) => s.id === 'alerta').t, valor: STATES.find((s) => s.id === 'valor').t, volta: STATES[0].t }
 }
 
@@ -192,7 +198,8 @@ function caption(t) {
 function seek(tIn) {
   const t = ((tIn % D) + D) % D
   const c = cam(t)
-  $('world').style.transform = `scale(${c.toFixed(5)})`
+  const tb = tomba(t)
+  $('world').style.transform = `scale(${c.toFixed(5)}) rotateX(${(32 * tb).toFixed(3)}deg) translateY(${(-40 * tb).toFixed(2)}px)`
 
   // fundo
   const IN = PL.inundacoes.map((x) => ({ t: x.t, color: x.cor }))
@@ -228,6 +235,36 @@ function seek(tIn) {
     const lw = TAM[id][0], lh = TAM[id][1]
     Object.assign(el.style, { width: lw + 'px', height: lh + 'px', left: (w - lw) / 2 + 'px', top: (h - lh) / 2 + 'px', transform: `scale(${lerp(0.96, 1, clamp(vis))})` })
   }
+  // janela: o cenário do 1.º objeto e os objetos, cada um no seu tempo
+  const janelas = STATES.filter((s) => s.id === 'janela')
+  if (janelas.length) {
+    const jt = janelas[latest(janelas, t)], aj = since(t, jt.t)
+    const q = jt.quebra !== null && jt.quebra !== undefined ? since(t, jt.quebra) : null
+    const quebrou = q !== null && q < aj
+    const nomeCen = CENARIO_DE[jt.objetos[0].nome] || 'rua'
+    const anda = quebrou ? 0 : aj * 300
+    let svg = CENARIO[nomeCen](aj, anda)
+    for (const o of jt.objetos) { const ao = since(t, o.t); if (ao <= aj + 0.01 && OBJ[o.nome]) svg += OBJ[o.nome](ao, { quebra: quebrou ? q : null }) }
+    $('janelaSvg').innerHTML = svg
+  }
+  // efeitos que saem da janela (sem corte)
+  let fxs = ''
+  for (const f of PL.fx || []) {
+    const a = since(t, f.t)
+    if (f.tipo === 'papeis' && a < 1.6) fxs += FX.papeis(a)
+    if (f.tipo === 'moedas' && a < 1.2) fxs += FX.moedas(a)
+    if (f.tipo === 'faiscas' || f.tipo === 'fumaca') {
+      const jt = janelas.find((j) => Math.abs(j.quebra - f.t) < 0.01); if (!jt) continue
+      const fim = STATES[(STATES.indexOf(jt) + 1) % STATES.length].t
+      const vivo = inWindow(t, f.t, fim + 0.8), sumir = clamp(1 - (since(t, fim) < 0.8 ? since(t, fim) / 0.8 : 0))
+      if (!vivo) continue
+      const [cx, cy] = capoDoCarro(since(f.t, jt.objetos[0].t))
+      const origem = [cx - 450, cy - 280]
+      fxs += f.tipo === 'faiscas' ? FX.faiscas(a, origem) : `<g opacity="${inWindow(t, f.t, fim) ? 1 : sumir}">${FX.fumaca(a, origem)}</g>`
+    }
+  }
+  $('fxSvg').innerHTML = fxs
+
   // metáfora: o estado "meta" mais recente diz o modo
   const metas = STATES.filter((s) => s.id === 'meta'), mi = latest(metas, t), mt = metas[mi]
   $('metaSvg').innerHTML = (METAFORAS[PL.metafora] || ((a, m) => metaforaPadrao(a, m, PL.metafora)))(since(t, mt.t), mt.modo)
@@ -293,6 +330,8 @@ function cues() {
     ...(PL.metafora === 'cofre' ? [0, 1, 2, 3].map((i) => ({ t: T.meta2 + 0.6 + 0.22 * i, kind: 'coin' })).concat([{ t: T.meta2 + 1.6, kind: 'click' }]) : []),
     ...(PL.metafora === 'ampulheta' ? [{ t: T.meta2 + 0.1, kind: 'whoosh' }] : []),
     ...(PL.metafora === 'ralo' ? [{ t: T.meta2 + 0.5, kind: 'gurgle' }] : []),
+    ...(PL.fx || []).flatMap((f) => f.tipo === 'faiscas' ? [{ t: f.t, kind: 'thud' }] : f.tipo === 'fumaca' ? [{ t: f.t + 0.1, kind: 'whoosh' }] : f.tipo === 'papeis' ? [0, 0.15, 0.3].map((d) => ({ t: f.t + d, kind: 'swish' })) : f.tipo === 'moedas' ? [0, 0.08, 0.16, 0.24].map((d) => ({ t: f.t + d, kind: 'coin' })) : f.tipo === 'tomba' ? [{ t: f.t, kind: 'whoosh' }] : []),
+    ...STATES.filter((s) => s.id === 'janela').flatMap((j) => j.objetos.map((o) => ({ t: o.t + 0.05, kind: o.nome === 'carro' ? 'rise' : o.nome === 'lampada' ? 'click' : 'tick' }))),
   ]
   return L.map((x) => ({ ...x, t: ((x.t % D) + D) % D }))
 }
