@@ -18,17 +18,14 @@
 
 ## A. Dívida técnica
 
-### A0. ⏭️ Newsletter — 3 itens para 16/10 de manhã (Ed: «QUERO FAZER TUDO ISSO»)
+### A0. ⏳ Newsletter — feito a 16/10, falta MEDIR o 1º envio do robô de boas-vindas
 
-**Contexto:** a 15/10 a newsletter foi fechada à chave pública (commit 080add89, `db/newsletter-fase-s.sql`).
-Ficaram 3 coisas, detalhadas no app em `backup-app-22052025/.claude/docs/DIVIDA-TECNICA.md` (secção 0-PRIMEIRO):
-1. `welcome-sequence.js` filtra `status=eq.active` (coluna não existe) → nunca manda nada, e termina VERDE.
-   ⚠️ provavelmente já feito — conferir `f2714095` ("robo de boas-vindas volta a funcionar") antes de começar.
-2. A RPC de inscrição aceita o código de cancelamento de quem chama → precisa de `SUPABASE_SERVICE_KEY` nas Pages.
-   ⚠️ o código ficou pronto em `ddcb130f` ("inscricao pronta para a chave do servidor"); conferir se a chave já está nas Pages.
-3. Links antigos de cancelar (sem `&t=`) deixaram de funcionar — 1 assinante.
-   (Os 3 itens são da frente da newsletter, de outro terminal — ver `f8691521` "PARTE 3 corrida e provada".)
-
+**Feito e provado a 16/10:** robô corrigido (`f2714095`: colunas certas, pt/en/es, link de cancelar,
+erro = vermelho); inscrição pela chave do servidor + PARTE 3 do SQL (`ddcb130f`; blog 200, chave pública 401).
+**Por medir:** a 1ª corrida real de «Welcome Email Sequence» (o cron das 12 UTC chega horas atrasado; a 16/10
+às 16:25 UTC ainda não tinha corrido). Prova: corrida verde + `newsletter_subscribers.welcome_step = 7` no
+único assinante (en). Esse e-mail leva o link NOVO de cancelar — é ele que resolve os links antigos sem `&t=`.
+**Reavaliar:** 17/10. Se `welcome_step` continuar vazio → abrir o log da corrida.
 
 ### A1. 🟡 O registo de vídeos publicados está incompleto — e mente no título
 
