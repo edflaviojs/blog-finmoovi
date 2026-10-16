@@ -23274,5 +23274,114 @@
         "publicaEmBR": "17/10 às 14h31"
       }
     }
+  },
+  "kw-por-que-aparece-cred-juros-r-12-no-seu-extrato": {
+    "midias": {
+      "video": {
+        "id": "db2812de-bca6-48b6-8db0-4f258d9d2350",
+        "name": "fPd4IdndVa.mp4",
+        "originalName": null,
+        "path": "https://media.help4desk.com/fPd4IdndVa.mp4",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capa": {
+        "id": "1ed1d53d-8cc3-4957-84d2-3f9b52a29dba",
+        "name": "XIlE6aGk2i.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/XIlE6aGk2i.jpeg",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capaLarga": {
+        "id": "7d3ba270-cab5-415b-9867-a37cc540f251",
+        "name": "9xVWKlmf3o.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/9xVWKlmf3o.jpeg",
+        "thumbnail": null,
+        "alt": null
+      }
+    },
+    "publicaEm": "2026-10-16T22:00:00.000Z",
+    "publicaEmBR": "16/10 às 19h00",
+    "agendadoEm": "2026-10-16T18:50:15.847Z",
+    "atualizadoEm": "2026-10-16T18:50:19.234Z",
+    "redes": {
+      "instagram": {
+        "postId": "cmvbbomtz00elrx95aa67x5xk",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-16T22:00:00.000Z",
+        "publicaEmBR": "16/10 às 19h00",
+        "midia": "o vídeo",
+        "caracteres": 820,
+        "limite": 2200
+      },
+      "zernio-tiktok": {
+        "postId": "cmvbbon7600emrx95xh092euf",
+        "canal": "finmoovi",
+        "publicaEm": "2026-10-16T22:12:00.000Z",
+        "publicaEmBR": "16/10 às 19h12",
+        "midia": "o vídeo",
+        "caracteres": 267,
+        "limite": 2200
+      },
+      "facebook": {
+        "postId": "cmvbbonl800enrx95y9a1gtc7",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-16T22:26:00.000Z",
+        "publicaEmBR": "16/10 às 19h26",
+        "midia": "o vídeo",
+        "caracteres": 590,
+        "limite": 63206
+      },
+      "linkedin-page": {
+        "postId": "cmvbbonw100eorx95z348v20l",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-16T22:43:00.000Z",
+        "publicaEmBR": "16/10 às 19h43",
+        "midia": "o vídeo",
+        "caracteres": 509,
+        "limite": 3000
+      },
+      "threads": {
+        "postId": "cmvbboo7c00eprx95ua7blcp4",
+        "canal": "finmoovi",
+        "publicaEm": "2026-10-16T22:58:00.000Z",
+        "publicaEmBR": "16/10 às 19h58",
+        "midia": "o vídeo",
+        "caracteres": 131,
+        "limite": 500
+      },
+      "pinterest": {
+        "postId": "cmvbbootm00eqrx95bb59nies",
+        "canal": "finmoovi",
+        "publicaEm": "2026-10-16T23:31:00.000Z",
+        "publicaEmBR": "16/10 às 20h31",
+        "midia": "vídeo primeiro, capa depois — a ordem que o Pinterest exige",
+        "caracteres": 466,
+        "limite": 500
+      },
+      "bluesky": {
+        "postId": "cmvbbop9700errx95frafzxal",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-16T23:47:00.000Z",
+        "publicaEmBR": "16/10 às 20h47",
+        "midia": "vai a capa DEITADA (o Bluesky não publica vídeo, e a em pé ficaria cortada no feed)",
+        "caracteres": 88,
+        "limite": 300
+      },
+      "instagram-story": {
+        "postId": "cmvbbophe00esrx953721tm54",
+        "tipo": "vídeo",
+        "publicaEm": "2026-10-16T22:05:00.000Z",
+        "publicaEmBR": "16/10 às 19h05"
+      },
+      "facebook-story": {
+        "postId": "cmvbboplf00etrx95bubtonqw",
+        "tipo": "vídeo",
+        "publicaEm": "2026-10-16T22:31:00.000Z",
+        "publicaEmBR": "16/10 às 19h31"
+      }
+    }
   }
 }
