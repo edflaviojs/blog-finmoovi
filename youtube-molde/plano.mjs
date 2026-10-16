@@ -31,7 +31,29 @@ const B = grelha.batida
 
 // ── o ritmo do cursor: pelo clima do roteiro, a não ser que venha pedido ──
 const RITMO_DO_CLIMA = { alerta: 'agitado', serio: 'moderado', leve: 'calmo' }
-const ritmo = arg('ritmo') || RITMO_DO_CLIMA[roteiro.music?.clima] || 'moderado'
+// RODÍZIO (ordem do Ed, 16/10: "não é todo vídeo que fica legal ter o mouse toda hora assim rápido"):
+// nunca o mesmo ritmo TRÊS vezes seguidas. Sem guardar estado nenhum: repassa-se a ordem dos Shorts de
+// 16s já publicados (youtube-published.json) com a mesma regra, e o deste vídeo sai no fim da fila.
+const TROCA = { agitado: ['moderado', 'sem'], moderado: ['calmo', 'agitado'], calmo: ['moderado', 'sem'], sem: ['moderado'] }
+function escolher(clima, antes) {
+  const base = RITMO_DO_CLIMA[clima] || 'moderado'
+  const [a, b] = antes.slice(-2)
+  if (a === base && b === base) return TROCA[base].find((r) => r !== b) || 'moderado'
+  return base
+}
+function ritmoComRodizio() {
+  let pub = {}
+  try { pub = JSON.parse(fs.readFileSync(path.join(raiz, '.github', 'data', 'youtube-published.json'), 'utf8')) } catch { /* sem histórico: só o clima */ }
+  const fila = Object.entries(pub).filter(([s, v]) => v?.formato === 'loop16' && s !== slug).sort((x, y) => String(x[1].uploadedAt).localeCompare(String(y[1].uploadedAt))).slice(-12)
+  const antes = []
+  for (const [s] of fila) {
+    try { antes.push(escolher(JSON.parse(fs.readFileSync(path.join(raiz, 'src', 'scripts', 'youtube', 'output', `${s}.script.json`), 'utf8')).music?.clima, antes)) } catch { /* roteiro já não existe: salta */ }
+  }
+  return { ritmo: escolher(roteiro.music?.clima, antes), antes }
+}
+const rod = arg('ritmo') ? null : ritmoComRodizio()
+const ritmo = arg('ritmo') || rod.ritmo
+if (rod) console.log(`ritmo: ${ritmo} (clima ${roteiro.music?.clima}; os anteriores: ${rod.antes.slice(-4).join(', ') || '—'})`)
 
 if (!SITUACOES[roteiro.situacao]) console.warn(`⚠️ situação sem nome curto em situacoes.mjs: ${roteiro.situacao} — uso o título do roteiro`)
 const [rotulo, icone] = SITUACOES[roteiro.situacao] || [roteiro.term, 'nota']

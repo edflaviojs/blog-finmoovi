@@ -20,4 +20,10 @@ const trab = path.join(aqui, 'trabalho', slug)
 fs.mkdirSync(path.dirname(path.resolve(saida)), { recursive: true })
 execFileSync('ffmpeg', ['-v', 'error', '-y', '-i', path.join(trab, 'video-mudo.mp4'), '-i', path.join(trab, 'mix.wav'), '-c:v', 'copy', '-c:a', 'aac', '-b:a', '256k', '-shortest', '-movflags', '+faststart', path.resolve(saida)], { stdio: 'inherit' })
 console.log(`✅ molde: ${saida} em ${((Date.now() - t0) / 1000).toFixed(0)} s`)
-try { node('conferencia.mjs') } catch (e) { console.log('⚠️ a conferência não correu:', e.message) } // nunca derruba o vídeo
+try {
+  node('conferencia.mjs')
+  // o que a conferência achar aparece como AVISO na página do robô (amarelo), sem parar nada
+  const rel = JSON.parse(fs.readFileSync(path.join(trab, 'conferencia.json'), 'utf8'))
+  for (const d of rel.defeitos) console.log(`::warning title=molde — conferência::${d.t.toFixed(2)} s — ${d.problema}`)
+  for (const e of rel.errosNaPagina) console.log(`::warning title=molde — erro na página::${e}`)
+} catch (e) { console.log('::warning title=molde::a conferência não correu:', e.message) } // nunca derruba o vídeo

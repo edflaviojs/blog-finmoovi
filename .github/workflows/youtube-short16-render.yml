@@ -395,6 +395,8 @@ jobs:
             youtube-render/out/capa-${{ env.FILE_SLUG }}*.jpg
             youtube-render/out/qa-${{ env.FILE_SLUG }}.jpg
             youtube-render/public/audio/${{ env.FILE_SLUG }}/*.srt
+            youtube-molde/trabalho/${{ env.FILE_SLUG }}/conferencia.json
+            youtube-molde/trabalho/${{ env.FILE_SLUG }}/folha.png
           if-no-files-found: error
 
       # ♦ UMA FILA POR TURNO — e é o que impede o carteiro das 9h de entregar o vídeo

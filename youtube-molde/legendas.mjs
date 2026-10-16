@@ -5,7 +5,8 @@
 // Aqui não se refaz a conta do Remotion (depende de intro, transições e respiro): usa-se o que é certo.
 //   PT — as palavras da legenda são as palavras do roteiro, e o plano sabe o instante de cada uma.
 //   EN/ES — estica-se o tempo pela mesma régua (onde começava cada legenda PT → onde começa agora).
-// Os originais ficam ao lado, com o sufixo .remotion.srt.
+// Os originais ficam guardados em youtube-molde/trabalho/<slug>/srt-remotion/ — NUNCA ao lado: o robô
+// sobe para o YouTube todos os .srt da pasta, e uma cópia ali seria lida como mais uma língua.
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -47,7 +48,8 @@ const novoTempo = (t) => {
   const [a, A] = regua[regua.length - 1]; return A + (t - a)
 }
 for (const f of ficheiros) {
-  const orig = path.join(dir, f), copia = orig.replace(/\.srt$/, '.remotion.srt')
+  const guarda = path.join(aqui, 'trabalho', slug, 'srt-remotion'); fs.mkdirSync(guarda, { recursive: true })
+  const orig = path.join(dir, f), copia = path.join(guarda, f)
   if (!fs.existsSync(copia)) fs.copyFileSync(orig, copia)
   const cues = f === fPt ? novoPt : ler(copia).map((c) => ({ ...c, ini: novoTempo(c.ini), fim: novoTempo(c.fim) }))
   escrever(orig, cues)
