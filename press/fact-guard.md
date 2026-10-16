@@ -1,7 +1,7 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-10-15T09:36:06.489Z
-**Posts:** 525 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 20
+**Gerado em:** 2026-10-16T09:28:47.199Z
+**Posts:** 528 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 20
 
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
@@ -59,7 +59,7 @@
 - _Ela não era a única: segundo a OECD, mais de 30 % dos consumidores relatam ter perdido prazos de pagamento pelo menos uma vez no último ano[^1]._
 
 **por-que-minha-conta-some-no-fim-do-mes-e-eu-nao-sei-o-que.md**
-- _Segundo a OECD, famílias que utilizam ferramentas de rastreamento automático de despesas têm, em média, 20 % a mais de margem de poupança ao final do ano._
+- _Segundo a OECD, famílias que utilizam ferramentas de rastreamento automático de despesas têm, em média, 20 % a mais de margem de [poupança](/glossario/poupanca) ao final do ano._
 
 **por-que-minha-planilha-de-controle-nunca-acompanha-meus.md**
 - _Segundo a *World Bank*, a adoção de tecnologias digitais de [gestão financeira](/posts/5-alternativas-ao-mobills-em-2026) pode reduzir o tempo gasto em tarefas administrativas em até 30 % (World Bank,_
