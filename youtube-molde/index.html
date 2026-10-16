@@ -291,7 +291,8 @@ function seek(tIn) {
     if (f.tipo === 'faiscas' || f.tipo === 'fumaca') {
       const jt = janelas.find((j) => Math.abs(j.quebra - f.t) < 0.01); if (!jt) continue
       const fim = STATES[(STATES.indexOf(jt) + 1) % STATES.length].t
-      const vivo = inWindow(t, f.t, fim + 0.8), sumir = clamp(1 - (since(t, fim) < 0.8 ? since(t, fim) / 0.8 : 0))
+      // a fumaça some em 0,4 s depois de a janela fechar (com 0,8 s ficava por cima do cartão seguinte)
+      const vivo = inWindow(t, f.t, fim + 0.4), sumir = clamp(1 - (since(t, fim) < 0.4 ? since(t, fim) / 0.4 : 0))
       if (!vivo) continue
       const [cx, cy] = capoDoCarro(since(f.t, jt.objetos[0].t))
       const origem = [cx - 450, cy - 280]
