@@ -1,0 +1,173 @@
+{
+  "slug": "kw-quanto-custa-investir-r-1-000-veja-a-taxa-real",
+  "term": "Quanto custa investir R$1.000? Veja a taxa real",
+  "category": "mindset",
+  "keyword": "investir",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "*Você acha que investir mil reais não custa nada?*"
+  },
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "semaforo",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você acha que investir mil reais não custa nada? As corretoras cobram uma taxa que pode comer boa parte do seu ganho.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "Você",
+          "visual": {
+            "type": "statement",
+            "text": "Investir tem custo"
+          }
+        },
+        {
+          "anchor": "acha",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "semaforo"
+          },
+          "sfx": "whoosh"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Você põe mil reais na conta, vê a tela do app e acha que tá certo, mas esquece a cobrança.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "Você",
+          "visual": {
+            "type": "statement",
+            "text": "Veja a tela"
+          }
+        },
+        {
+          "anchor": "tela",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          },
+          "sfx": "alert"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "A taxa de cinco reais por mês virou sessenta reais ao fim de um ano, quase o que você ganhou.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "taxa",
+          "visual": {
+            "type": "statement",
+            "text": "Taxa acumulada"
+          }
+        },
+        {
+          "anchor": "sessenta",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "semaforo"
+          },
+          "sfx": "coin"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu coloquei os números no FinMoovi e ele mostrou que a outra corretora cobraria só vinte e quatro reais.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "coloquei",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Comparativo de taxas"
+          }
+        },
+        {
+          "anchor": "mostrou",
+          "visual": {
+            "type": "statement",
+            "text": "Outra corretora"
+          }
+        },
+        {
+          "anchor": "corretora",
+          "visual": {
+            "type": "icon",
+            "icon": "trophy"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu? Procura o FinMoovi. Tem sete dias grátis.",
+      "durationSec": 4.2,
+      "shots": [
+        {
+          "anchor": "Procura",
+          "visual": {
+            "type": "statement",
+            "text": "Teste grátis"
+          }
+        },
+        {
+          "anchor": "dias",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Investir mil reais não sai de graça, a taxa come quase tudo. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "Investir",
+          "visual": {
+            "type": "statement",
+            "text": "Cuidado com taxa"
+          }
+        },
+        {
+          "anchor": "taxa",
+          "visual": {
+            "type": "icon",
+            "icon": "shield"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja sua taxa agora",
+    "target": "app"
+  },
+  "totalDurationSec": 42.7
+}
