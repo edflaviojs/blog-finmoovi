@@ -2678,5 +2678,45 @@
         "status": 200
       }
     }
+  },
+  {
+    "slug": "guia-definitivo-da-black-friday-2026-como-comprar-sem",
+    "title": "Guia definitivo da Black Friday 2026: como comprar sem estourar o orçamento",
+    "url": "https://blog.finmoovi.com/posts/guia-definitivo-da-black-friday-2026-como-comprar-sem",
+    "submittedAt": "2026-10-16T18:31:39.716Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1891900015
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "smart-capture-registre-gastos-por-voz-em-segundos-e-ganhe",
+    "title": "Smart Capture: registre gastos por voz em segundos e ganhe tempo",
+    "url": "https://blog.finmoovi.com/posts/smart-capture-registre-gastos-por-voz-em-segundos-e-ganhe",
+    "submittedAt": "2026-10-16T18:31:40.479Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1891900022
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
   }
 ]
