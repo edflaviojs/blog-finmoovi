@@ -778,5 +778,11 @@
     "gancho": "nao-vai-acreditar",
     "turno": "noite",
     "em": "2026-10-15T09:20:01.855Z"
+  },
+  {
+    "situacao": "sair-do-aluguel",
+    "gancho": "aconteceu-comigo",
+    "turno": "manha",
+    "em": "2026-10-16T09:11:05.605Z"
   }
 ]

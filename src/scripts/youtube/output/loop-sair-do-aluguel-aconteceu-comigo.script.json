@@ -1,0 +1,118 @@
+{
+  "slug": "loop-sair-do-aluguel-aconteceu-comigo",
+  "formato": "loop16",
+  "term": "Sair do aluguel",
+  "category": "vida",
+  "keyword": "ALUGUEL",
+  "valor": "R$ 1.500",
+  "situacao": "sair-do-aluguel",
+  "gancho": "aconteceu-comigo",
+  "ganchoFamilia": "aconteceu comigo",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ralo",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Isso aconteceu comigo semana passada. Peguei o recibo do aluguel.",
+      "durationSec": 3.71,
+      "shots": [
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "Aconteceu comigo"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Olha, mil e quinhentos reais saem todo mês e escorrem no ralo.",
+      "durationSec": 4.45,
+      "shots": [
+        {
+          "anchor": "quinhentos",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 1.500"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Aí eu parei. Tanto dinheiro, e nada é meu.",
+      "durationSec": 3.34,
+      "shots": [
+        {
+          "anchor": "parei",
+          "visual": {
+            "type": "statement",
+            "text": "E nada é meu"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "Tanto",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Hoje ainda vejo aquele recibo do aluguel, daquela semana passada.",
+      "durationSec": 3.71,
+      "shots": [
+        {
+          "anchor": "recibo",
+          "visual": {
+            "type": "statement",
+            "text": "O recibo, o ralo"
+          }
+        },
+        {
+          "anchor": "aluguel",
+          "visual": {
+            "type": "statement",
+            "text": "Aconteceu comigo"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.21
+}
