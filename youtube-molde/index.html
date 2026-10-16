@@ -41,6 +41,7 @@
 <body>
 <div id="stage">
   <div id="wipe"></div>
+  <svg id="fundoSvg" class="abs" style="left:0;top:0" width="1080" height="1920" viewBox="0 0 1080 1920"></svg>
   <div class="deco" id="decoRing" style="width:900px;height:900px;border-radius:50%;box-sizing:border-box;border:130px solid rgba(255,255,255,0.16)"></div>
   <div class="deco" id="decoSquare" style="width:600px;height:600px;border-radius:150px;background:rgba(13,17,23,0.07)"></div>
   <div class="deco" id="decoDot" style="width:150px;height:150px;border-radius:50%;background:rgba(255,255,255,0.24)"></div>
@@ -99,6 +100,8 @@
 <script src="objetos-vida.js"></script>
 <script src="objetos-acoes.js"></script>
 <script src="objetos-extra.js"></script>
+<script src="fundos.js"></script>
+<script src="boneco.js"></script>
 <script src="icones.js"></script>
 <script>
 // ═══ MOLAS ═══
@@ -216,6 +219,19 @@ function seek(tIn) {
   $('stage').style.background = IN[prev].color
   const rad = 2400 * S(since(t, IN[wi].t), 1.1, 1)
   Object.assign($('wipe').style, { left: 540 - rad + 'px', top: 950 - rad + 'px', width: 2 * rad + 'px', height: 2 * rad + 'px', background: IN[wi].color })
+  // o cenário no fundo (item 3): a silhueta do lugar da janela mais recente, por cima da cor
+  {
+    const js = STATES.filter((x) => x.id === 'janela')
+    let fundo = ''
+    if (js.length) {
+      const i = latest(js, t), atual = js[i], anterior = js[(i - 1 + js.length) % js.length]
+      const nome = (j) => FUNDO_DO_CENARIO[CENARIO_DE[j.objetos[0].nome] || 'rua'] || 'cidade'
+      const entra = clamp(since(t, atual.t) / 0.6)
+      if (entra < 1 && nome(anterior) !== nome(atual)) fundo += `<g opacity="${(1 - entra).toFixed(3)}">${FUNDOS[nome(anterior)](t, D)}</g>`
+      fundo += `<g opacity="${(nome(anterior) === nome(atual) ? 1 : entra).toFixed(3)}">${FUNDOS[nome(atual)](t, D)}</g>`
+    } else fundo = FUNDOS.cidade(t, D)
+    $('fundoSvg').innerHTML = fundo
+  }
   const ph = (t / D) * Math.PI * 2
   $('decoRing').style.transform = `translate(${-380 + 50 * Math.sin(ph)}px, ${1180 + 40 * Math.cos(ph)}px)`
   $('decoSquare').style.transform = `translate(${700 + 40 * Math.cos(ph)}px, ${-120 + 50 * Math.sin(ph)}px) rotate(${(t / D) * 90 + 14}deg)`
@@ -254,6 +270,12 @@ function seek(tIn) {
     const anda = quebrou ? 0 : aj * 300
     let svg = CENARIO[nomeCen](aj, anda)
     for (const o of jt.objetos) { const ao = since(t, o.t); if (ao <= aj + 0.01 && OBJ[o.nome]) svg += OBJ[o.nome](ao, { quebra: quebrou ? q : null }) }
+    // o boneco contracena (item 4): reage aos efeitos que caem dentro desta janela
+    if (!SEM_BONECO.has(jt.objetos[0].nome)) {
+      const fim = STATES[(STATES.indexOf(jt) + 1) % STATES.length].t
+      const ev = (tipo) => { const f = (PL.fx || []).find((x) => x.tipo === tipo && inWindow(x.t, jt.t, fim)); return f && inWindow(t, f.t, fim + 0.5) ? since(t, f.t) : null }
+      svg += bonecoNaJanela(aj, { quebra: quebrou ? q : null, atraso: ev('papeis'), festa: ev('confete'), susto: ev('raios') })
+    }
     $('janelaSvg').innerHTML = svg
   }
   // efeitos que saem da janela (sem corte)
