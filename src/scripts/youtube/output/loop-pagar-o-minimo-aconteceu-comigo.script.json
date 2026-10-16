@@ -1,0 +1,118 @@
+{
+  "slug": "loop-pagar-o-minimo-aconteceu-comigo",
+  "formato": "loop16",
+  "term": "Pagar só o mínimo",
+  "category": "vida",
+  "keyword": "MÍNIMO",
+  "valor": "R$ 90",
+  "situacao": "pagar-o-minimo",
+  "gancho": "aconteceu-comigo",
+  "ganchoFamilia": "aconteceu comigo",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ratoeira",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Isso aconteceu comigo semana passada. Pagar tudo ou o mínimo?",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "Dedo parado no app"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Paguei o mínimo. Esses noventa reais viraram uma bola de neve.",
+      "durationSec": 4.18,
+      "shots": [
+        {
+          "anchor": "Paguei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "mínimo",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 90 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Olha, achei que aliviava. A conta voltou maior.",
+      "durationSec": 3.04,
+      "shots": [
+        {
+          "anchor": "achei",
+          "visual": {
+            "type": "statement",
+            "text": "A conta voltou maior"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "aliviava",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Então, quando o dedo hesitar. Comigo, pagar tudo ou o mínimo?",
+      "durationSec": 4.18,
+      "shots": [
+        {
+          "anchor": "hesitar",
+          "visual": {
+            "type": "statement",
+            "text": "Tudo ou só o mínimo?"
+          }
+        },
+        {
+          "anchor": "Comigo",
+          "visual": {
+            "type": "statement",
+            "text": "Dedo parado no app"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}

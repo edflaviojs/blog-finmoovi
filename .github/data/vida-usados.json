@@ -784,5 +784,11 @@
     "gancho": "aconteceu-comigo",
     "turno": "manha",
     "em": "2026-10-16T09:11:05.605Z"
+  },
+  {
+    "situacao": "pagar-o-minimo",
+    "gancho": "aconteceu-comigo",
+    "turno": "noite",
+    "em": "2026-10-16T09:14:20.369Z"
   }
 ]
