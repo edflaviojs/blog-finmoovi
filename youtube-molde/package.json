@@ -1,0 +1,13 @@
+{
+  "name": "youtube-molde",
+  "private": true,
+  "type": "module",
+  "description": "O molde dos Shorts: um cartão do app que nunca corta, desenhado a partir do tempo (seek). Sem Remotion.",
+  "scripts": {
+    "fazer": "node fazer.mjs",
+    "galeria": "node galeria.mjs"
+  },
+  "dependencies": {
+    "playwright": "1.58.2"
+  }
+}

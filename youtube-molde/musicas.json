@@ -1,0 +1,17 @@
+{
+ "bg-rock.mp3": {
+  "batida": 0.465261,
+  "bpm": 128.96,
+  "inicio": 53.0281
+ },
+ "bg-serio.mp3": {
+  "batida": 0.5,
+  "bpm": 120.0,
+  "inicio": 26.4966
+ },
+ "bg-leve.mp3": {
+  "batida": 0.531114,
+  "bpm": 112.97,
+  "inicio": 6.1015
+ }
+}

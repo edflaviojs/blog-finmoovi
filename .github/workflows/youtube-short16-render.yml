@@ -251,8 +251,26 @@ jobs:
 
       # ⚠️ Short16, NÃO Short. São duas composições separadas de propósito: a de 50s
       # publica todos os dias e não pode partilhar destino com um formato novo.
+      # 🎬 O MOLDE NOVO (youtube-molde/) — fase 2 do plano do estilo novo, 16/10/2026.
+      # ⛔ DESLIGADO até a fase 3: só corre se a variável do repositório MOLDE_NOVO for "sim"
+      # (Settings → Secrets and variables → Actions → Variables). Sem ela, nada muda.
+      # Ligado: faz o Short no molde e grava-o no MESMO sítio do Remotion, e acerta as legendas
+      # ao tempo dele. Se falhar (continue-on-error), o passo do Remotion logo abaixo corre como
+      # sempre — o Remotion é o estepe, e o vídeo do dia sai de qualquer maneira.
+      - name: Fazer o Short no molde novo (desligado até a fase 3)
+        id: molde
+        if: vars.MOLDE_NOVO == 'sim' && steps.turno.outputs.saltar != 'true' && steps.roteiro.outputs.saltar != 'true'
+        continue-on-error: true
+        timeout-minutes: 25
+        run: |
+          set -euo pipefail
+          command -v ffmpeg >/dev/null || sudo timeout 300 apt-get install -y -qq ffmpeg || { sudo timeout 300 apt-get update -qq; sudo timeout 600 apt-get install -y -qq ffmpeg; }
+          (cd youtube-molde && npm ci && npx playwright install --with-deps chromium)
+          node youtube-molde/fazer.mjs --slug="$FILE_SLUG" --saida="youtube-render/out/$FILE_SLUG.mp4"
+          node youtube-molde/legendas.mjs --slug="$FILE_SLUG"
+
       - name: Renderizar o Short de 16s
-        if: steps.turno.outputs.saltar != 'true' && steps.roteiro.outputs.saltar != 'true'
+        if: steps.turno.outputs.saltar != 'true' && steps.roteiro.outputs.saltar != 'true' && steps.molde.outcome != 'success'
         working-directory: youtube-render
         run: npx remotion render src/index.ts Short16 "out/$FILE_SLUG.mp4" --props="{\"slug\":\"$FILE_SLUG\"}" --crf=16 --jpeg-quality=95
 

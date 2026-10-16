@@ -1,0 +1,93 @@
+name: YouTube — Testar o molde novo (só à mão, não publica nada)
+
+# ═══ O QUE ISTO É ═══
+# A Fase 2 do plano do estilo novo (16/10/2026, ordem do Ed: "sim siga").
+# Faz UM Short no molde novo (youtube-molde/), na nuvem, a partir de um roteiro que já existe,
+# e guarda o vídeo, a folha de fotos e o relatório da conferência como artefato.
+# NÃO publica, NÃO põe na fila, NÃO faz commit. Serve para medir quanto tempo o molde leva
+# na máquina do GitHub e se a conferência automática se porta bem lá.
+#
+# ⚠️ CUSTO ZERO DE PROPÓSITO: o passo da voz corre SEM a chave do Whisper pago
+# (TOGETHER_TTS_API_KEY vazia). O tts-short.js usa então o medidor que tiver à mão, e no pior
+# caso reparte o tempo das palavras pelo tamanho — chega para um teste de máquina.
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: 'roteiro já existente em src/scripts/youtube/output (sem .script.json)'
+        required: true
+        default: 'loop-carro-quebrou-nao-vai-acreditar'
+      ritmo:
+        description: 'agitado | moderado | calmo | sem — vazio escolhe pelo clima do roteiro'
+        required: false
+        default: ''
+
+permissions:
+  contents: read
+
+concurrency:
+  group: youtube-molde-teste
+  cancel-in-progress: false
+
+jobs:
+  testar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      SLUG: ${{ inputs.slug }}
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Instalar dependências (raiz)
+        run: npm ci
+
+      - name: O roteiro existe?
+        run: test -f "src/scripts/youtube/output/$SLUG.script.json" || { echo "::error::não há roteiro $SLUG"; exit 1; }
+
+      - name: Garantir o ffmpeg
+        run: |
+          set -uo pipefail
+          command -v ffmpeg >/dev/null || sudo timeout 300 apt-get install -y -qq ffmpeg || { sudo timeout 300 apt-get update -qq; sudo timeout 600 apt-get install -y -qq ffmpeg; }
+          ffmpeg -version | head -1
+
+      - name: Voz das cenas (sem Whisper pago)
+        env:
+          TOGETHER_TTS_API_KEY: ''
+        run: node src/scripts/youtube/tts-short.js --slug="$SLUG"
+
+      - name: Instalar o molde (navegador sem janela)
+        working-directory: youtube-molde
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+
+      - name: Fazer o Short no molde (e medir o tempo)
+        run: |
+          INICIO=$(date +%s)
+          node youtube-molde/fazer.mjs --slug="$SLUG" --saida="youtube-molde/trabalho/$SLUG/final.mp4" ${{ inputs.ritmo && format('--ritmo={0}', inputs.ritmo) || '' }}
+          echo "### ⏱️ molde: $(( $(date +%s) - INICIO )) s para o Short $SLUG" >> "$GITHUB_STEP_SUMMARY"
+          nproc | xargs -I{} echo "núcleos da máquina: {}" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Relatório da conferência
+        if: always()
+        run: |
+          F="youtube-molde/trabalho/$SLUG/conferencia.json"
+          [ -f "$F" ] && { echo '```json'; cat "$F"; echo '```'; } >> "$GITHUB_STEP_SUMMARY" || echo "sem relatório" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Guardar o vídeo, a folha e o relatório
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: molde-${{ inputs.slug }}
+          retention-days: 14
+          path: |
+            youtube-molde/trabalho/${{ inputs.slug }}/final.mp4
+            youtube-molde/trabalho/${{ inputs.slug }}/folha.png
+            youtube-molde/trabalho/${{ inputs.slug }}/conferencia.json
+            youtube-molde/trabalho/${{ inputs.slug }}/plano.json
