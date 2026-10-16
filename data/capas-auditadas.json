@@ -5694,6 +5694,41 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-10-15"
+    },
+    "smart-capture-registre-gastos-por-voz-em-segundos-e-ganhe-2.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-16"
+    },
+    "smart-capture-registre-gastos-por-voz-em-segundos-e-ganhe-4.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-16"
+    },
+    "smart-capture-registre-gastos-por-voz-em-segundos-e-ganhe-6.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-16"
+    },
+    "smart-capture-registre-gastos-por-voz-em-segundos-e-ganhe.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-16"
+    },
+    "underlying-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-16"
+    },
+    "underlying-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-16"
+    },
+    "underlying.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-16"
     }
   },
   "corrigidas": {
@@ -6358,6 +6393,6 @@
       "motivo": "tem texto escrito (\"I'm sorry, I'm not able to identify the people in this image.\")"
     }
   },
-  "totalAcervo": 1139,
-  "ultimaCorrida": "2026-10-15"
+  "totalAcervo": 1146,
+  "ultimaCorrida": "2026-10-16"
 }
