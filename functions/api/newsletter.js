@@ -50,8 +50,17 @@ export async function onRequestPost(context) {
 
     // O código de cancelamento é criado AQUI e vai no link do e-mail de boas-vindas;
     // o banco só o grava se a inscrição for nova ou reativada (ver db/newsletter-fase-s.sql).
-    const unsubToken = crypto.randomUUID();
-    if (supabaseUrl && supabaseKey) {
+    let unsubToken = crypto.randomUUID();
+    /**
+     * 16/10/2026: com a chave do SERVIDOR, a inscrição deixa de passar pela chave pública
+     * (que vai ser proibida de chamar a função — ver PARTE 3 do db/newsletter-fase-s.sql) e o
+     * código do e-mail passa a ser LIDO do banco. Assim: ninguém de fora escolhe o código de
+     * um e-mail novo, e quem já era assinante recebe o link que funciona.
+     * Sem a chave do servidor nas variáveis das Pages, segue como antes.
+     */
+    const serviceKey = env.SUPABASE_SERVICE_KEY;
+    const rpcKey = serviceKey || supabaseKey;
+    if (supabaseUrl && rpcKey) {
       /**
        * Fase S (15/10/2026): a chave pública já não lê nem altera a tabela — antes
        * qualquer pessoa conseguia ler todos os e-mails e cancelar quem quisesse.
@@ -62,8 +71,8 @@ export async function onRequestPost(context) {
       const res = await fetch(`${supabaseUrl}/rest/v1/rpc/fm_newsletter_inscrever`, {
         method: 'POST',
         headers: {
-          'apikey': supabaseKey,
-          'Authorization': `Bearer ${supabaseKey}`,
+          'apikey': rpcKey,
+          'Authorization': `Bearer ${rpcKey}`,
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({ p_email: email, p_lang: lang, p_source: source, p_consent_text: consentText, p_token: unsubToken })
@@ -74,6 +83,16 @@ export async function onRequestPost(context) {
           status: 500,
           headers: corsHeaders
         });
+      }
+
+      if (serviceKey) {
+        const lookup = await fetch(
+          `${supabaseUrl}/rest/v1/newsletter_subscribers?select=unsub_token&active=eq.true&email=eq.${encodeURIComponent(email)}`,
+          { headers: { 'apikey': serviceKey, 'Authorization': `Bearer ${serviceKey}` } }
+        );
+        const rows = lookup.ok ? await lookup.json().catch(() => []) : [];
+        if (rows[0]?.unsub_token) unsubToken = rows[0].unsub_token;
+        else console.error('newsletter: código de cancelamento não lido do banco', lookup.status);
       }
     }
 

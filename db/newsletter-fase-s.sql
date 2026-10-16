@@ -84,6 +84,18 @@ commit;
 -- revoke truncate, references, trigger on public.newsletter_subscribers from anon, authenticated;
 -- commit;
 --
+-- ── PARTE 3 (16/10/2026) — SÓ DEPOIS de SUPABASE_SERVICE_KEY nas variáveis das Pages do blog
+--    e de um deploy do blog com functions/api/newsletter.js lendo essa chave ──
+-- A chave pública deixa de poder inscrever: quem chamava a função escolhia o código de
+-- cancelamento de um e-mail novo (inscrevia um terceiro e cancelava-o depois).
+-- begin;
+-- revoke execute on function public.fm_newsletter_inscrever(text, text, text, text, uuid) from anon, authenticated;
+-- grant execute on function public.fm_newsletter_inscrever(text, text, text, text, uuid) to service_role;
+-- notify pgrst, 'reload schema';
+-- commit;
+-- Desfazer a PARTE 3 (emergência):
+--   grant execute on function public.fm_newsletter_inscrever(text, text, text, text, uuid) to anon, authenticated;
+--
 -- Desfazer a PARTE 2 (emergência):
 --   create policy "Allow public insert" on public.newsletter_subscribers for insert to public with check (true);
 --   create policy "Allow public select by email" on public.newsletter_subscribers for select to public using (true);
