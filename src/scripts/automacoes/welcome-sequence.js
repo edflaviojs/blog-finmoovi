@@ -1,13 +1,18 @@
 import { config } from '../../../site.config.ts';
 /**
  * Email de Boas-Vindas Segmentado
- * Envia sequência automática para novos subscribers:
- * - Dia 0: Boas-vindas + link para guia
- * - Dia 3: Top 3 posts mais lidos
+ * Envia sequência automática para novos subscribers, no idioma de cada um (pt/en/es):
+ * - Dia 3: 3 posts para começar
  * - Dia 7: Como o ${config.app.name} ajuda (CTA forte)
+ *
+ * O e-mail do Dia 0 NÃO é daqui: sai na hora da inscrição, por functions/api/newsletter.js.
  *
  * Executa diariamente via GitHub Actions às 9h BRT
  * Verifica na tabela newsletter_subscribers quem precisa receber cada etapa
+ *
+ * 16/10/2026 — o robô estava MORTO desde sempre: pedia as colunas `status` e `created_at`,
+ * que não existem (são `active` e `subscribed_at`). O banco respondia erro, o robô dizia
+ * "tabela inacessível" e terminava VERDE. Agora erro de banco termina VERMELHO.
  */
 
 const SUPABASE_URL = process.env.SUPABASE_URL;
@@ -28,89 +33,168 @@ const logoHeader = `
         </a>
       </div>`;
 
-const SEQUENCES = {
-  pt: [
-    {
-      day: 0,
-      subject: '🎁 Bem-vindo! Seu guia de 30 dias está aqui',
-      html: `
-<div style="font-family:'Inter',sans-serif;max-width:600px;margin:0 auto;color:#e6edf3;">
-  <div style="background:linear-gradient(135deg,${config.brand.colors.ctaGradientStart},${config.brand.colors.ctaGradientEnd});padding:3px;border-radius:12px;">
-    <div style="background:#0d1117;padding:32px;border-radius:10px;">
-      ${logoHeader}
-      <h1 style="color:#fff;font-size:24px;margin:0 0 16px;">Bem-vindo ao ${config.brand.name} ${config.brand.blogSuffix}! 🎉</h1>
-      <p style="color:#8b949e;line-height:1.7;">Estamos felizes em ter você aqui. A partir de agora, você vai receber dicas práticas de finanças pessoais toda semana.</p>
-      <p style="color:#8b949e;line-height:1.7;">Para começar, preparamos algo especial:</p>
-      <a href="${config.siteUrl}/guia-30-dias" style="display:inline-block;padding:14px 28px;background:linear-gradient(135deg,${config.brand.colors.ctaGradientStart},${config.brand.colors.ctaGradientEnd});color:#fff;text-decoration:none;border-radius:9999px;font-weight:600;margin:16px 0;">📖 Acessar Guia de 30 Dias</a>
-      <p style="color:#8b949e;font-size:14px;margin-top:24px;">Nos próximos dias, vou te enviar mais conteúdos exclusivos. Fique de olho!</p>
-      <p style="color:#8b949e;font-size:14px;">— Equipe ${config.brand.name}</p>
-    </div>
-  </div>
-</div>`
+const gradient = `linear-gradient(135deg,${config.brand.colors.ctaGradientStart},${config.brand.colors.ctaGradientEnd})`;
+const siteHost = config.siteUrl.replace('https://', '');
+
+// Textos por idioma. Os links dos posts foram conferidos no ar a 16/10/2026 (todos 200).
+const TEXTS = {
+  pt: {
+    home: `${config.siteUrl}/`,
+    day3: {
+      subject: '📊 3 posts para começar a organizar o seu dinheiro',
+      title: 'Por onde começar? 🔥',
+      intro: 'Separei 3 posts para você dar o primeiro passo:',
+      posts: [
+        ['/posts/como-criar-orcamento-pessoal/', 'Como criar um orçamento pessoal em 5 passos'],
+        ['/posts/metodo-50-30-20-para-orcamento/', 'Método 50-30-20: guia completo'],
+        ['/posts/como-criar-uma-reserva-de-emergencia/', 'Como montar uma reserva de emergência'],
+      ],
+      button: 'Ver todos os posts →',
     },
-    {
-      day: 3,
-      subject: '📊 Os 3 posts mais lidos da semana',
-      html: `
-<div style="font-family:'Inter',sans-serif;max-width:600px;margin:0 auto;color:#e6edf3;">
-  <div style="background:#0d1117;padding:32px;border-radius:12px;border:1px solid #30363d;">
-    ${logoHeader}
-    <h1 style="color:#fff;font-size:22px;margin:0 0 16px;">Os posts que todo mundo está lendo 🔥</h1>
-    <p style="color:#8b949e;line-height:1.7;">Separei os 3 posts mais acessados para você não perder nada:</p>
-    <div style="margin:20px 0;">
-      <div style="padding:12px;background:#161b22;border-radius:8px;margin-bottom:8px;">
-        <a href="${config.siteUrl}/posts/como-criar-orcamento-pessoal" style="color:#58a6ff;text-decoration:none;font-weight:600;">1. Como criar um orçamento pessoal em 5 passos</a>
-      </div>
-      <div style="padding:12px;background:#161b22;border-radius:8px;margin-bottom:8px;">
-        <a href="${config.siteUrl}/posts/regra-50-30-20-guia-completo" style="color:#58a6ff;text-decoration:none;font-weight:600;">2. Regra 50-30-20: guia completo</a>
-      </div>
-      <div style="padding:12px;background:#161b22;border-radius:8px;margin-bottom:8px;">
-        <a href="${config.siteUrl}/posts/como-montar-reserva-emergencia" style="color:#58a6ff;text-decoration:none;font-weight:600;">3. Como montar uma reserva de emergência</a>
-      </div>
-    </div>
-    <a href="${config.siteUrl}" style="display:inline-block;padding:12px 24px;background:linear-gradient(135deg,${config.brand.colors.ctaGradientStart},${config.brand.colors.ctaGradientEnd});color:#fff;text-decoration:none;border-radius:9999px;font-weight:600;">Ver todos os posts →</a>
-  </div>
-</div>`
-    },
-    {
-      day: 7,
+    day7: {
       subject: '🚀 Controle suas finanças em 5 segundos (literalmente)',
-      html: `
-<div style="font-family:'Inter',sans-serif;max-width:600px;margin:0 auto;color:#e6edf3;">
-  <div style="background:#0d1117;padding:32px;border-radius:12px;border:1px solid #30363d;">
-    ${logoHeader}
-    <h1 style="color:#fff;font-size:22px;margin:0 0 16px;">Já tentou controlar gastos e desistiu? 🤔</h1>
-    <p style="color:#8b949e;line-height:1.7;">Eu sei como é. Planilhas são chatas. Apps complicados cansam. Mas e se você pudesse apenas <strong style="color:#fff;">FALAR</strong> seus gastos?</p>
-    <p style="color:#8b949e;line-height:1.7;">Com o <strong style="color:#fff;">${config.brand.name}</strong>, é exatamente assim:</p>
-    <ul style="color:#8b949e;line-height:2;">
-      <li>🎙️ <strong style="color:#fff;">Voz:</strong> "Almoço 35 reais" → registrado</li>
-      <li>📸 <strong style="color:#fff;">Foto:</strong> Tire foto do cupom → lido automaticamente</li>
-      <li>⌨️ <strong style="color:#fff;">Texto:</strong> Digite "uber 23,50" → categorizado</li>
-      <li>💱 <strong style="color:#fff;">Multi-moeda:</strong> BRL, USD, EUR → consolidado</li>
-      <li>📴 <strong style="color:#fff;">Offline:</strong> Funciona sem internet</li>
-    </ul>
-    <p style="color:#8b949e;line-height:1.7;">7 dias grátis. Sem cartão de crédito. Cancele quando quiser.</p>
-    <a href="${config.app.url}" style="display:inline-block;padding:14px 32px;background:linear-gradient(135deg,${config.brand.colors.ctaGradientStart},${config.brand.colors.ctaGradientEnd});color:#fff;text-decoration:none;border-radius:9999px;font-weight:700;font-size:16px;margin:16px 0;">${config.app.ctaText.pt} →</a>
-    <p style="color:#484f58;font-size:12px;margin-top:24px;">Você recebeu este email porque se inscreveu no ${config.siteUrl.replace('https://','')}</p>
-  </div>
-</div>`
-    }
-  ]
+      title: 'Já tentou controlar gastos e desistiu? 🤔',
+      p1: 'Eu sei como é. Planilhas são chatas. Apps complicados cansam. Mas e se você pudesse apenas <strong style="color:#fff;">FALAR</strong> seus gastos?',
+      p2: `Com o <strong style="color:#fff;">${config.brand.name}</strong>, é exatamente assim:`,
+      items: [
+        ['🎙️', 'Voz:', '"Almoço 35 reais" → registrado'],
+        ['📸', 'Foto:', 'Tire foto do cupom → lido automaticamente'],
+        ['⌨️', 'Texto:', 'Digite "uber 23,50" → categorizado'],
+        ['💱', 'Multi-moeda:', 'BRL, USD, EUR → consolidado'],
+        ['📴', 'Offline:', 'Funciona sem internet'],
+      ],
+      p3: '7 dias grátis. Sem cartão de crédito. Cancele quando quiser.',
+    },
+    reason: `Você recebeu este e-mail porque se inscreveu em ${siteHost}.`,
+    unsub: 'Cancelar inscrição',
+  },
+  en: {
+    home: `${config.siteUrl}/en/`,
+    day3: {
+      subject: '📊 3 posts to start organizing your money',
+      title: 'Where to start? 🔥',
+      intro: 'Here are 3 posts to help you take the first step:',
+      posts: [
+        ['/en/posts/en-how-to-create-personal-budget/', 'How to create a personal budget in 5 steps'],
+        ['/en/posts/en-the-50-30-20-method-for-budgeting/', 'The 50-30-20 method: complete guide'],
+        ['/en/posts/en-creating-an-emergency-fund/', 'How to build an emergency fund'],
+      ],
+      button: 'See all posts →',
+    },
+    day7: {
+      subject: '🚀 Track your finances in 5 seconds (literally)',
+      title: 'Ever tried tracking your spending and gave up? 🤔',
+      p1: 'I know how it is. Spreadsheets are boring. Complicated apps wear you out. But what if you could just <strong style="color:#fff;">SAY</strong> your expenses?',
+      p2: `With <strong style="color:#fff;">${config.brand.name}</strong>, that is exactly how it works:`,
+      items: [
+        ['🎙️', 'Voice:', '"Lunch 35 dollars" → saved'],
+        ['📸', 'Photo:', 'Snap the receipt → read automatically'],
+        ['⌨️', 'Text:', 'Type "uber 23.50" → categorized'],
+        ['💱', 'Multi-currency:', 'BRL, USD, EUR → consolidated'],
+        ['📴', 'Offline:', 'Works without internet'],
+      ],
+      p3: '7 days free. No credit card. Cancel anytime.',
+    },
+    reason: `You received this e-mail because you subscribed at ${siteHost}.`,
+    unsub: 'Unsubscribe',
+  },
+  es: {
+    home: `${config.siteUrl}/es/`,
+    day3: {
+      subject: '📊 3 posts para empezar a organizar tu dinero',
+      title: '¿Por dónde empezar? 🔥',
+      intro: 'Te separé 3 posts para dar el primer paso:',
+      posts: [
+        ['/es/posts/es-como-crear-un-presupuesto-personal-en-5-pasos-simples/', 'Cómo crear un presupuesto personal en 5 pasos'],
+        ['/es/posts/es-metodo-50-30-20-para-presupuesto/', 'Método 50-30-20: guía completa'],
+        ['/es/posts/es-como-crear-una-reserva-de-emergencia/', 'Cómo crear una reserva de emergencia'],
+      ],
+      button: 'Ver todos los posts →',
+    },
+    day7: {
+      subject: '🚀 Controla tus finanzas en 5 segundos (literalmente)',
+      title: '¿Ya intentaste controlar tus gastos y te rendiste? 🤔',
+      p1: 'Sé cómo es. Las hojas de cálculo aburren. Las apps complicadas cansan. ¿Y si pudieras simplemente <strong style="color:#fff;">DECIR</strong> tus gastos?',
+      p2: `Con <strong style="color:#fff;">${config.brand.name}</strong>, es exactamente así:`,
+      items: [
+        ['🎙️', 'Voz:', '"Almuerzo 35 reales" → registrado'],
+        ['📸', 'Foto:', 'Saca una foto del ticket → leído automáticamente'],
+        ['⌨️', 'Texto:', 'Escribe "uber 23,50" → categorizado'],
+        ['💱', 'Multi-moneda:', 'BRL, USD, EUR → consolidado'],
+        ['📴', 'Offline:', 'Funciona sin internet'],
+      ],
+      p3: '7 días gratis. Sin tarjeta de crédito. Cancela cuando quieras.',
+    },
+    reason: `Recibiste este e-mail porque te suscribiste en ${siteHost}.`,
+    unsub: 'Cancelar suscripción',
+  },
 };
 
+// Rodapé com o link de cancelar — o mesmo formato do e-mail de boas-vindas (código secreto em &t=).
+function footer(t, sub) {
+  const link = `${config.siteUrl}/api/unsubscribe?email=${encodeURIComponent(sub.email)}&t=${sub.unsub_token}`;
+  return `<p style="color:#484f58;font-size:12px;margin-top:24px;">${t.reason} <a href="${link}" style="color:#58a6ff;">${t.unsub}</a></p>`;
+}
+
+function day3Html(t, sub) {
+  const d = t.day3;
+  const posts = d.posts.map(([path, label], i) => `
+      <div style="padding:12px;background:#161b22;border-radius:8px;margin-bottom:8px;">
+        <a href="${config.siteUrl}${path}" style="color:#58a6ff;text-decoration:none;font-weight:600;">${i + 1}. ${label}</a>
+      </div>`).join('');
+  return `
+<div style="font-family:'Inter',sans-serif;max-width:600px;margin:0 auto;color:#e6edf3;">
+  <div style="background:#0d1117;padding:32px;border-radius:12px;border:1px solid #30363d;">
+    ${logoHeader}
+    <h1 style="color:#fff;font-size:22px;margin:0 0 16px;">${d.title}</h1>
+    <p style="color:#8b949e;line-height:1.7;">${d.intro}</p>
+    <div style="margin:20px 0;">${posts}
+    </div>
+    <a href="${t.home}" style="display:inline-block;padding:12px 24px;background:${gradient};color:#fff;text-decoration:none;border-radius:9999px;font-weight:600;">${d.button}</a>
+    ${footer(t, sub)}
+  </div>
+</div>`;
+}
+
+function day7Html(t, sub, lang) {
+  const d = t.day7;
+  const items = d.items.map(([icon, label, text]) =>
+    `<li>${icon} <strong style="color:#fff;">${label}</strong> ${text}</li>`).join('\n      ');
+  return `
+<div style="font-family:'Inter',sans-serif;max-width:600px;margin:0 auto;color:#e6edf3;">
+  <div style="background:#0d1117;padding:32px;border-radius:12px;border:1px solid #30363d;">
+    ${logoHeader}
+    <h1 style="color:#fff;font-size:22px;margin:0 0 16px;">${d.title}</h1>
+    <p style="color:#8b949e;line-height:1.7;">${d.p1}</p>
+    <p style="color:#8b949e;line-height:1.7;">${d.p2}</p>
+    <ul style="color:#8b949e;line-height:2;">
+      ${items}
+    </ul>
+    <p style="color:#8b949e;line-height:1.7;">${d.p3}</p>
+    <a href="${config.app.url}" style="display:inline-block;padding:14px 32px;background:${gradient};color:#fff;text-decoration:none;border-radius:9999px;font-weight:700;font-size:16px;margin:16px 0;">${config.app.ctaText[lang]} →</a>
+    ${footer(t, sub)}
+  </div>
+</div>`;
+}
+
+const SEQUENCE = [
+  { day: 3, subject: (t) => t.day3.subject, html: (t, sub) => day3Html(t, sub) },
+  { day: 7, subject: (t) => t.day7.subject, html: (t, sub, lang) => day7Html(t, sub, lang) },
+];
+
 async function getSubscribers() {
-  const res = await fetch(`${SUPABASE_URL}/rest/v1/newsletter_subscribers?select=id,email,created_at,welcome_step&status=eq.active&order=created_at.desc`, {
+  const res = await fetch(`${SUPABASE_URL}/rest/v1/newsletter_subscribers?select=id,email,lang,subscribed_at,welcome_step,unsub_token&active=eq.true&order=subscribed_at.desc`, {
     headers: {
       'apikey': SUPABASE_KEY,
       'Authorization': `Bearer ${SUPABASE_KEY}`,
     }
   });
-  if (!res.ok) throw new Error(`Supabase error: ${res.status}`);
+  if (!res.ok) throw new Error(`Supabase error: ${res.status} ${await res.text()}`);
   return res.json();
 }
 
 async function updateWelcomeStep(subscriberId, step) {
-  await fetch(`${SUPABASE_URL}/rest/v1/newsletter_subscribers?id=eq.${subscriberId}`, {
+  const res = await fetch(`${SUPABASE_URL}/rest/v1/newsletter_subscribers?id=eq.${subscriberId}`, {
     method: 'PATCH',
     headers: {
       'apikey': SUPABASE_KEY,
@@ -120,6 +204,8 @@ async function updateWelcomeStep(subscriberId, step) {
     },
     body: JSON.stringify({ welcome_step: step })
   });
+  // Sem gravar o passo, o mesmo e-mail sairia de novo amanhã — por isso falha alto.
+  if (!res.ok) throw new Error(`Supabase PATCH error: ${res.status}`);
 }
 
 async function sendEmail(to, subject, html) {
@@ -131,6 +217,7 @@ async function sendEmail(to, subject, html) {
     },
     body: JSON.stringify({
       from: config.email.from,
+      reply_to: config.email.replyTo,
       to: [to],
       subject,
       html,
@@ -151,47 +238,47 @@ async function main() {
     process.exit(1);
   }
 
-  let subscribers;
-  try {
-    subscribers = await getSubscribers();
-  } catch (error) {
-    console.warn(`⚠️ Não foi possível buscar subscribers: ${error.message}`);
-    console.log('📊 0 emails de boas-vindas enviados (tabela inacessível ou vazia)');
-    process.exit(0);
-  }
+  // Erro do banco termina VERMELHO: foi o "verde com erro" que escondeu o robô morto por meses.
+  const subscribers = await getSubscribers();
 
   if (!subscribers || subscribers.length === 0) {
     console.log('📊 0 emails de boas-vindas enviados (nenhum subscriber ativo)');
-    process.exit(0);
+    return;
   }
 
   const now = new Date();
   let sent = 0;
+  let failed = 0;
 
   for (const sub of subscribers) {
-    const createdAt = new Date(sub.created_at);
-    const daysSinceSignup = Math.floor((now - createdAt) / 86400000);
+    const daysSinceSignup = Math.floor((now - new Date(sub.subscribed_at)) / 86400000);
     const currentStep = sub.welcome_step ?? -1;
+    const lang = TEXTS[sub.lang] ? sub.lang : 'pt';
+    const t = TEXTS[lang];
 
-    // Find next email to send
-    const sequence = SEQUENCES.pt; // TODO: detect lang from subscriber
-    for (const email of sequence) {
-      if (email.day > currentStep && daysSinceSignup >= email.day) {
-        try {
-          console.log(`📨 ${mascarar(sub.email)} — Dia ${email.day}: ${email.subject}`);
-          await sendEmail(sub.email, email.subject, email.html);
-          await updateWelcomeStep(sub.id, email.day);
-          sent++;
-          await new Promise(r => setTimeout(r, 1000)); // Rate limit
-        } catch (error) {
-          console.warn(`⚠️ Falha para ${mascarar(sub.email)}: ${error.message}`);
-        }
-        break; // Only one email per subscriber per run
-      }
+    // Só o e-mail MAIS RECENTE que já venceu: quem entrou há 3 semanas recebe só o do Dia 7,
+    // e não a sequência inteira em dias seguidos.
+    const email = [...SEQUENCE].reverse().find(e => e.day > currentStep && daysSinceSignup >= e.day);
+    if (!email) continue;
+
+    try {
+      const subject = email.subject(t);
+      console.log(`📨 ${mascarar(sub.email)} [${lang}] — Dia ${email.day}: ${subject}`);
+      await sendEmail(sub.email, subject, email.html(t, sub, lang));
+      await updateWelcomeStep(sub.id, email.day);
+      sent++;
+      await new Promise(r => setTimeout(r, 1000)); // Rate limit
+    } catch (error) {
+      failed++;
+      console.warn(`⚠️ Falha para ${mascarar(sub.email)}: ${error.message}`);
     }
   }
 
-  console.log(`\n📊 ${sent} emails de boas-vindas enviados`);
+  console.log(`\n📊 ${sent} emails de boas-vindas enviados${failed ? `, ${failed} falharam` : ''}`);
+  if (failed) process.exit(1);
 }
 
-main();
+main().catch((error) => {
+  console.error(`❌ ${error.message}`);
+  process.exit(1);
+});
