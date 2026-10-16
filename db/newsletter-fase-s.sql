@@ -84,7 +84,7 @@ commit;
 -- revoke truncate, references, trigger on public.newsletter_subscribers from anon, authenticated;
 -- commit;
 --
--- ── PARTE 3 (16/10/2026) — SÓ DEPOIS de SUPABASE_SERVICE_KEY nas variáveis das Pages do blog
+-- ── PARTE 3 (16/10/2026) — ✅ CORRIDA a 16/10 09:2x Lisboa e provada (blog 200; chave pública 401).
 --    e de um deploy do blog com functions/api/newsletter.js lendo essa chave ──
 -- A chave pública deixa de poder inscrever: quem chamava a função escolhia o código de
 -- cancelamento de um e-mail novo (inscrevia um terceiro e cancelava-o depois).
