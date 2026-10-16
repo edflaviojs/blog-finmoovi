@@ -3,6 +3,7 @@ title: "Guía definitiva de Black Friday 2026: compra sin romper tu presupuesto"
 description: "Aprende paso a paso a aprovechar Black Friday 2026 sin comprometer tus finanzas y usa FinMoovi para controlarlo todo."
 tickerHeadline: "El truco que salva tu bolsillo"
 image: "/images/posts/guia-definitivo-da-black-friday-2026-como-comprar-sem.webp"
+imageAlt: "Portátil y monitor con fondos coloridos sobre escritorio de madera con taza y planta."
 category: "orcamento"
 locale: "es"
 tags: ["Black Friday","control de gastos","FinMoovi","compras inteligentes","planificación financiera","compras impulsivas","ofertas","ahorro"]

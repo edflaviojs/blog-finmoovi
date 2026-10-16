@@ -4,6 +4,7 @@ definition: "O que é valuation e como isso aparece no seu dia a dia — explica
 title: "valuation - Glossário Financeiro"
 description: "O que é valuation e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/valuation.webp"
+imageAlt: "Pilhas de moedas douradas e vaso de vidro com planta verde sobre fundo azul e rosa."
 category: "basico"
 tags: ["valuation", "glossário", "finanças"]
 author: "FinMoovi"

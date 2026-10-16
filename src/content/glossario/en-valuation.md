@@ -4,6 +4,7 @@ definition: "What valuation is and how it shows up in your everyday money — ex
 title: "valuation - Financial Glossary"
 description: "What valuation is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/valuation.webp"
+imageAlt: "Gold coin stacks beside a glass jar holding a green plant sprout."
 category: "basico"
 tags: ["valuation", "glossary", "finance"]
 author: "FinMoovi"

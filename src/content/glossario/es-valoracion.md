@@ -4,6 +4,7 @@ definition: "Qué es valoración y cómo aparece en tu día a día — explicado
 title: "valoración - Glosario Financiero"
 description: "Qué es valoración y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/valuation.webp"
+imageAlt: "Monedas doradas apiladas junto a un frasco de vidrio con semillas y una planta verde."
 category: "basico"
 tags: ["valoración", "glosario", "finanzas"]
 author: "FinMoovi"

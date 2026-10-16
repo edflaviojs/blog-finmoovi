@@ -3,6 +3,7 @@ title: "The Ultimate Black Friday 2026 Guide: Shop Smart Without Breaking Your B
 description: "Step‑by‑step tips to enjoy Black Friday 2026 while keeping your finances healthy. Use FinMoovi to stay in control."
 tickerHeadline: "The trick that saves your wallet"
 image: "/images/posts/guia-definitivo-da-black-friday-2026-como-comprar-sem.webp"
+imageAlt: "Laptop and monitor with colorful screens on desk, next to dark mug and plant."
 category: "orcamento"
 locale: "en"
 tags: ["Black Friday","spending control","FinMoovi","smart shopping","financial planning","impulse buying","deals","budget management"]
