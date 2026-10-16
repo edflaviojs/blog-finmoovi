@@ -1,0 +1,27 @@
+<!doctype html>
+<!-- GALERIA DOS OBJETOS — cada objeto no seu cenário, chegando (0,5 s) e em ação (1,6 s). Conferir antes de entrar num vídeo. -->
+<html><head><meta charset="utf-8"><title>galeria dos objetos</title>
+<style>
+@font-face { font-family: 'Unbounded'; src: url(fonts/unbounded.woff2) format('woff2'); font-weight: 200 900; }
+body { margin: 0; background: #FFC72C; font-family: 'Unbounded'; }
+#g { display: grid; grid-template-columns: repeat(10, 390px); gap: 12px; padding: 12px; width: max-content; }
+.c { width: 390px; height: 270px; background: #161b22; border-radius: 22px; position: relative; overflow: hidden; }
+.c svg { position: absolute; left: 0; top: 0; }
+.c b { position: absolute; left: 0; right: 0; bottom: 0; padding: 6px; text-align: center; color: #f0f6fc; background: rgba(13,17,23,.75); font-size: 14px; }
+</style></head><body><div id="g"></div>
+<script>
+function S(t, f, z) { if (t <= 0) return 0; const w = 2 * Math.PI * f; if (z >= 1) return 1 - Math.exp(-w * t) * (1 + w * t); const wd = w * Math.sqrt(1 - z * z); return 1 - Math.exp(-z * w * t) * (Math.cos(wd * t) + (z * w / wd) * Math.sin(wd * t)) }
+function pulse(t, f) { if (t <= 0) return 0; const x = 2 * Math.PI * f * t; return x * Math.exp(1 - x) }
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x)), lerp = (a, b, p) => a + (b - a) * p
+</script>
+<script src="metaforas.js"></script><script src="objetos.js"></script><script src="objetos-dinheiro.js"></script><script src="objetos-casa.js"></script><script src="objetos-vida.js"></script><script src="objetos-acoes.js"></script><script src="objetos-extra.js"></script>
+<script>
+const g = document.getElementById('g')
+for (const [nome, f] of Object.entries(OBJ)) for (const a of [0.5, 1.6]) {
+  const d = document.createElement('div'); d.className = 'c'
+  const cen = CENARIO[CENARIO_DE[nome] || 'rua']
+  d.innerHTML = `<svg width="390" height="243" viewBox="0 0 900 560">${cen(a, a * 300)}${f(a, { quebra: nome === 'carro' && a > 1 ? 0.6 : null })}</svg><b>${nome} · ${a}s</b>`
+  g.appendChild(d)
+}
+window.__PRONTO__ = true
+</script></body></html>

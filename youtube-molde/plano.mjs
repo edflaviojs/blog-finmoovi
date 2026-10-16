@@ -110,10 +110,12 @@ const metafora = (m3 || m1)?.visual.metaphor || roteiro.fioCondutor
 // Nas cenas 1, 3 e 4, a 1.ª palavra que chama um objeto abre o cartão numa JANELA para a cena.
 // Na cena 2 manda o valor. Os eventos (quebra, atraso, "caí") mudam o objeto ou disparam efeitos.
 const achar = (c, lista) => c.palavras.filter((p) => lista.includes(norm(p.w)))
+// até 2 objetos por janela: os mais concretos (peso 3 > 2 > 1), e o dinheiro genérico só se não houver mais nada
 function objetosDa(c) {
-  const out = []
-  for (const p of c.palavras) for (const [obj, lista] of Object.entries(PALAVRAS_OBJETO)) if (lista.includes(norm(p.w)) && !out.some((o) => o.nome === obj)) out.push({ nome: obj, t: p.t })
-  return out
+  const achados = []
+  for (const p of c.palavras) for (const [obj, [peso, ...lista]] of Object.entries(PALAVRAS_OBJETO)) if (lista.includes(norm(p.w)) && !achados.some((o) => o.nome === obj)) achados.push({ nome: obj, t: p.t, peso })
+  const melhores = achados.filter((o) => o.peso > 1).length ? achados.filter((o) => o.peso > 1) : achados
+  return melhores.sort((x, y) => y.peso - x.peso || x.t - y.t).slice(0, 2).sort((x, y) => x.t - y.t).map(({ nome, t }) => ({ nome, t }))
 }
 const fx = []
 const janela = (c) => {
@@ -124,21 +126,35 @@ const janela = (c) => {
 const j1 = janela(c1), j3 = janela(c3), j4 = janela(c4)
 if (j1) estados.splice(1, 1, j1) // o objeto da cena 1 entra no lugar da metáfora de apresentação
 if (j3) {
+  // o extrato que só ficaria um instante antes da janela sai: a janela toma o lugar dele
+  const iEx = estados.findIndex((e) => e.id === 'extrato')
+  if (iEx >= 0 && j3.t - estados[iEx].t < 1.0) { j3.t = Math.min(j3.t, estados[iEx].t); estados.splice(iEx, 1) }
   // a metáfora em ação vem DEPOIS do objeto: quando a voz diz o nome dela, ou 1,8 s depois da janela
   const nomeDita = c3.palavras.find((p) => norm(p.w).startsWith(norm(metafora).slice(0, 4)))
   const iMeta = estados.findIndex((e) => e.id === 'meta' && e.modo === 'acao')
   estados[iMeta].t = Math.max(j3.t + 1.8, nomeDita ? nomeDita.t - 0.1 : estados[iMeta].t)
   estados.splice(iMeta, 0, j3)
 }
-if (j4) {
+if (j4) j4.t = Math.max(c4.inicio + 0.05, j4.t)
+// a janela do fecho só entra se couber: 1,4 s para ela e 0,8 s para o alerta antes da notificação final
+if (j4 && j4.t + 1.4 + 0.8 <= estados[0].t) {
   const iAl = estados.findIndex((e) => e.id === 'alerta')
-  j4.t = Math.max(c4.inicio + 0.05, j4.t)
-  estados[iAl].t = Math.min(Math.max(estados[iAl].t, j4.t + 1.4), estados[0].t - 0.8)
+  estados[iAl].t = Math.max(estados[iAl].t, j4.t + 1.4)
   estados.splice(iAl, 0, j4)
 }
-for (const j of [j1, j3, j4].filter(Boolean)) if (j.quebra !== null && j.objetos.some((o) => o.nome === 'carro')) fx.push({ tipo: 'faiscas', t: j.quebra }, { tipo: 'fumaca', t: j.quebra, janela: j.t })
+// nenhuma tela fica menos de 0,9 s no ecrã: a que não couber sai (a notificação, o valor e o alerta ficam sempre)
+for (let i = estados.length - 1; i >= 1; i--) {
+  const prox = i + 1 < estados.length ? estados[i + 1].t : estados[0].t
+  if (prox - estados[i].t < 0.9 && !['valor', 'alerta'].includes(estados[i].id)) estados.splice(i, 1)
+}
+for (const j of estados.filter((e) => e.id === 'janela')) if (j.quebra !== null && j.objetos.some((o) => o.nome === 'carro')) fx.push({ tipo: 'faiscas', t: j.quebra }, { tipo: 'fumaca', t: j.quebra, janela: j.t })
 for (const c of [c1, c2, c3, c4]) for (const p of achar(c, PALAVRAS_EVENTO.atraso)) fx.push({ tipo: 'papeis', t: p.t })
 for (const p of achar(c2, PALAVRAS_EVENTO.tomba)) fx.push({ tipo: 'tomba', t: p.t })
+for (const c of [c1, c2, c3, c4]) {
+  for (const p of achar(c, PALAVRAS_EVENTO.festa)) fx.push({ tipo: 'confete', t: p.t })
+  for (const p of achar(c, PALAVRAS_EVENTO.susto)) fx.push({ tipo: 'raios', t: p.t })
+  for (const p of achar(c, PALAVRAS_EVENTO.voa)) fx.push({ tipo: 'notas', t: p.t })
+}
 fx.push({ tipo: 'moedas', t: aterra })
 
 // ── o fundo: uma cor por mudança importante; a paleta segue o clima ──

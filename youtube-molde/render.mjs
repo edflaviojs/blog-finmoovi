@@ -27,7 +27,8 @@ async function abrir(nav) {
   await pg.addInitScript((pl) => { window.__RENDER__ = true; window.__PLANO__ = pl }, plano)
   pg.on('pageerror', (e) => errosDaPagina.push(e.message))
   await pg.goto(pathToFileURL(path.join(aqui, 'index.html')).href)
-  await pg.waitForFunction(() => window.__PRONTO__ === true, null, { timeout: 30000 })
+  // erro na página = parar já, com a mensagem (em vez de esperar 30 s pelo "pronto" que nunca vem)
+  await pg.waitForFunction(() => window.__PRONTO__ === true, null, { timeout: 30000 }).catch((e) => { throw new Error(errosDaPagina.length ? 'erro na página: ' + errosDaPagina.join(' | ') : e.message) })
   return pg
 }
 const fotografar = async (pg, t, ficheiro) => {

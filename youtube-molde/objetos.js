@@ -7,6 +7,15 @@
 // (o centro do cartão é 0,0), sem corte — é isso que deixa a fumaça escapar por cima do cartão.
 // Precisa de S, clamp, lerp, pulse (da página) e de moeda() (de metaforas.js).
 const OW = '#f0f6fc', OK = '#0d1117'
+// ajudantes do catálogo: todo objeto ENTRA com uma mola (sobe do chão e cresce com uma passadinha)
+// e depois RESPIRA (um balanço leve), para nunca ficar parado. O desenho de cada um é feito à volta de 0,0.
+const entra = (a, f = 2.2, z = 0.6) => clamp(S(a, f, z), 0, 1.12)
+function pop(a, cx, cy, desenho, { f = 2.2, z = 0.6, respira = 1 } = {}) {
+  const e = entra(a, f, z), sobe = (1 - Math.min(1, e)) * 140, r = respira * Math.sin(a * 2.2) * 4
+  return `<g transform="translate(${cx} ${(cy + sobe + r).toFixed(1)}) scale(${e.toFixed(3)})">${desenho}</g>`
+}
+const OY = '#FDE047', OR = '#FF5A4E', OC = '#22D3EE', OV = '#A78BFA', OG = '#4ade80', OO = '#FF8A3D', OP = '#FF4FA0', OGr = '#8b949e', ODk = '#30363d'
+const txt = (x, y, t, tam = 28, cor = OK, peso = 800) => `<text x="${x}" y="${y}" text-anchor="middle" font-family="Unbounded" font-weight="${peso}" font-size="${tam}" fill="${cor}">${t}</text>`
 
 const CENARIO = {
   rua(a, anda = 0) {

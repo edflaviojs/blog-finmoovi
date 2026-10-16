@@ -94,6 +94,11 @@
 
 <script src="metaforas.js"></script>
 <script src="objetos.js"></script>
+<script src="objetos-dinheiro.js"></script>
+<script src="objetos-casa.js"></script>
+<script src="objetos-vida.js"></script>
+<script src="objetos-acoes.js"></script>
+<script src="objetos-extra.js"></script>
 <script src="icones.js"></script>
 <script>
 // ═══ MOLAS ═══
@@ -139,10 +144,13 @@ function montar(plano) {
   STATES = plano.estados.map((e) => ({ ...e, w: TAM[e.id][0], h: TAM[e.id][1], r: TAM[e.id][2], bg: BG[e.id] }))
   shapeW = track(STATES.map((s) => [s.t, s.w])); shapeH = track(STATES.map((s) => [s.t, s.h])); shapeR = track(STATES.map((s) => [s.t, s.r]))
   const meta2 = STATES.find((s) => s.id === 'meta' && s.modo === 'acao')
-  cam = track([...STATES.map((s) => [s.t, 1]), [plano.aterra - 0.02, 1.1, { f: 2.2, z: 0.6 }], [plano.aterra + 1.0, 1.0], [meta2.t, 1.08], [meta2.t + 1.6, 1.0]], SPR.cam)
+  // ⚠️ qualquer tela pode faltar (o plano tira as que não cabem): nada aqui pode contar com o extrato ou a metáfora
+  cam = track([...STATES.map((s) => [s.t, 1]), [plano.aterra - 0.02, 1.1, { f: 2.2, z: 0.6 }], [plano.aterra + 1.0, 1.0], ...(meta2 ? [[meta2.t, 1.08], [meta2.t + 1.6, 1.0]] : [])], SPR.cam)
   // cada estado tem a sua camada; a mesma camada pode servir dois estados
   layerVis = {}
   STATES.forEach((s, i) => { const nx = STATES[(i + 1) % STATES.length].t; (layerVis[s.id] ||= []).push(track([[s.t + 0.12, 1, SPR.enter], [nx - 0.04, 0, SPR.exit]])) })
+  // camada de uma tela que NÃO está no plano fica escondida para sempre (senão aparecia por baixo de tudo)
+  document.querySelectorAll('.layer').forEach((el) => { if (!layerVis[el.id.slice(2)]) { el.style.visibility = 'hidden'; el.style.opacity = '0' } })
   // cursor
   const ck = plano.cursor.chaves, vel = { f: plano.cursor.vel, z: 1 }
   cursorX = track(ck.map(([t, x]) => [t, x]), vel); cursorY = track(ck.map(([t, , y]) => [t, y]), vel)
@@ -175,11 +183,12 @@ function montar(plano) {
     return { el, m, words: [...el.children] }
   })
   // moedas da ação (só no ralo e no cofre tem moedas próprias; no ralo giram para o centro)
-  coinsSpec = plano.metafora === 'ralo' ? Array.from({ length: 12 }, (_, i) => ({ x: -320 + (i * 97) % 640, y: -260 + (i % 3) * 90, t0: meta2.t + 0.03 * i, a0: i * 2.4 })) : []
+  coinsSpec = plano.metafora === 'ralo' && meta2 ? Array.from({ length: 12 }, (_, i) => ({ x: -320 + (i * 97) % 640, y: -260 + (i % 3) * 90, t0: meta2.t + 0.03 * i, a0: i * 2.4 })) : []
   coinsSpec.forEach(() => { const c = document.createElement('div'); c.className = 'coin'; c.textContent = 'R$'; $('coins').appendChild(c) })
   const tombos = (plano.fx || []).filter((f) => f.tipo === 'tomba')
   tomba = tombos.length ? track(tombos.flatMap((f) => [[f.t - 0.05, 1, { f: 2.4, z: 0.5 }], [f.t + 0.55, 0, { f: 2.4, z: 0.5 }]])) : () => 0
-  T = { meta2: meta2.t, aterra: plano.aterra, alerta: STATES.find((s) => s.id === 'alerta').t, valor: STATES.find((s) => s.id === 'valor').t, volta: STATES[0].t }
+  const extrato = STATES.find((s) => s.id === 'extrato')
+  T = { meta2: meta2 ? meta2.t : null, extrato: extrato ? extrato.t : null, aterra: plano.aterra, alerta: STATES.find((s) => s.id === 'alerta').t, valor: STATES.find((s) => s.id === 'valor').t, volta: STATES[0].t }
 }
 
 // legenda: a frase falada; se for comprida, metade de cada vez
@@ -253,6 +262,10 @@ function seek(tIn) {
     const a = since(t, f.t)
     if (f.tipo === 'papeis' && a < 1.6) fxs += FX.papeis(a)
     if (f.tipo === 'moedas' && a < 1.2) fxs += FX.moedas(a)
+    if (f.tipo === 'confete' && a < 2) fxs += FX.confete(a)
+    if (f.tipo === 'raios' && a < 0.8) fxs += FX.raios(a)
+    if (f.tipo === 'notas' && a < 1.6) fxs += FX.notas(a)
+    if (f.tipo === 'brilho' && a < 1.6) fxs += FX.brilho(a)
     if (f.tipo === 'faiscas' || f.tipo === 'fumaca') {
       const jt = janelas.find((j) => Math.abs(j.quebra - f.t) < 0.01); if (!jt) continue
       const fim = STATES[(STATES.indexOf(jt) + 1) % STATES.length].t
@@ -266,8 +279,8 @@ function seek(tIn) {
   $('fxSvg').innerHTML = fxs
 
   // metáfora: o estado "meta" mais recente diz o modo
-  const metas = STATES.filter((s) => s.id === 'meta'), mi = latest(metas, t), mt = metas[mi]
-  $('metaSvg').innerHTML = (METAFORAS[PL.metafora] || ((a, m) => metaforaPadrao(a, m, PL.metafora)))(since(t, mt.t), mt.modo)
+  const metas = STATES.filter((s) => s.id === 'meta'), mt = metas.length ? metas[latest(metas, t)] : null
+  if (mt) $('metaSvg').innerHTML = (METAFORAS[PL.metafora] || ((a, m) => metaforaPadrao(a, m, PL.metafora)))(since(t, mt.t), mt.modo)
 
   // valor: rola e aterra em cima do número dito
   const num = parseInt(PL.valor.replace(/\D/g, ''), 10)
@@ -277,7 +290,7 @@ function seek(tIn) {
   $('amount').style.transform = `scale(${(1 + 0.12 * slam).toFixed(4)})`
   $('amount').style.color = mixHex('#f0f6fc', '#ff7a6e', clamp(slam * 2))
   // extrato: a linha da despesa acende
-  const xa = since(t, STATES.find((s) => s.id === 'extrato').t)
+  const xa = T.extrato === null ? 99 : since(t, T.extrato)
   $('xreal').style.borderColor = `rgba(255,90,78,${clamp((xa - 0.4) * 3) * 0.9})`
   $('xreal').style.transform = `scale(${1 + 0.03 * (xa < 1.2 ? pulse(xa - 0.4, 3) : 0)})`
 
@@ -325,12 +338,12 @@ function cues() {
     ...PL.cursor.cliques.map((t) => ({ t, kind: 'click' })),
     ...STATES.map((s) => ({ t: s.t, kind: 'swish' })),
     { t: T.aterra, kind: 'thud' }, { t: T.alerta, kind: 'boom' },
-    { t: STATES.find((s) => s.id === 'extrato').t + 0.4, kind: 'tick' },
-    ...(PL.metafora === 'domino' ? [0, 1, 2, 3, 4].map((i) => ({ t: T.meta2 + 0.35 + 0.13 * i, kind: 'tick' })) : []),
-    ...(PL.metafora === 'cofre' ? [0, 1, 2, 3].map((i) => ({ t: T.meta2 + 0.6 + 0.22 * i, kind: 'coin' })).concat([{ t: T.meta2 + 1.6, kind: 'click' }]) : []),
-    ...(PL.metafora === 'ampulheta' ? [{ t: T.meta2 + 0.1, kind: 'whoosh' }] : []),
-    ...(PL.metafora === 'ralo' ? [{ t: T.meta2 + 0.5, kind: 'gurgle' }] : []),
-    ...(PL.fx || []).flatMap((f) => f.tipo === 'faiscas' ? [{ t: f.t, kind: 'thud' }] : f.tipo === 'fumaca' ? [{ t: f.t + 0.1, kind: 'whoosh' }] : f.tipo === 'papeis' ? [0, 0.15, 0.3].map((d) => ({ t: f.t + d, kind: 'swish' })) : f.tipo === 'moedas' ? [0, 0.08, 0.16, 0.24].map((d) => ({ t: f.t + d, kind: 'coin' })) : f.tipo === 'tomba' ? [{ t: f.t, kind: 'whoosh' }] : []),
+    ...(T.extrato === null ? [] : [{ t: T.extrato + 0.4, kind: 'tick' }]),
+    ...(T.meta2 === null ? [] : PL.metafora === 'domino' ? [0, 1, 2, 3, 4].map((i) => ({ t: T.meta2 + 0.35 + 0.13 * i, kind: 'tick' })) : []),
+    ...(T.meta2 === null ? [] : PL.metafora === 'cofre' ? [0, 1, 2, 3].map((i) => ({ t: T.meta2 + 0.6 + 0.22 * i, kind: 'coin' })).concat([{ t: T.meta2 + 1.6, kind: 'click' }]) : []),
+    ...(T.meta2 === null ? [] : PL.metafora === 'ampulheta' ? [{ t: T.meta2 + 0.1, kind: 'whoosh' }] : []),
+    ...(T.meta2 === null ? [] : PL.metafora === 'ralo' ? [{ t: T.meta2 + 0.5, kind: 'gurgle' }] : []),
+    ...(PL.fx || []).flatMap((f) => f.tipo === 'faiscas' ? [{ t: f.t, kind: 'thud' }] : f.tipo === 'fumaca' ? [{ t: f.t + 0.1, kind: 'whoosh' }] : f.tipo === 'papeis' ? [0, 0.15, 0.3].map((d) => ({ t: f.t + d, kind: 'swish' })) : f.tipo === 'moedas' ? [0, 0.08, 0.16, 0.24].map((d) => ({ t: f.t + d, kind: 'coin' })) : f.tipo === 'tomba' ? [{ t: f.t, kind: 'whoosh' }] : f.tipo === 'confete' ? [{ t: f.t, kind: 'ding' }] : f.tipo === 'raios' ? [{ t: f.t, kind: 'boom' }] : f.tipo === 'notas' ? [{ t: f.t, kind: 'whoosh' }] : []),
     ...STATES.filter((s) => s.id === 'janela').flatMap((j) => j.objetos.map((o) => ({ t: o.t + 0.05, kind: o.nome === 'carro' ? 'rise' : o.nome === 'lampada' ? 'click' : 'tick' }))),
   ]
   return L.map((x) => ({ ...x, t: ((x.t % D) + D) % D }))
