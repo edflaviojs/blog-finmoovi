@@ -22,12 +22,12 @@ seo:
 
 Imagine a cena: você acorda numa manhã fria, o celular vibra com notificações de descontos, a caixa de entrada está cheia de e‑mails de “última chance” e, antes de terminar o café, já está na fila virtual do site da sua loja favorita. O coração acelera, a ansiedade bate, e a primeira pergunta que surge é: “Será que eu realmente preciso disso?”.
 
-Esse aperto é a cara da Black Friday. A promessa de preços “mais baixos que o preço de um café por dia” atrai até o mais cauteloso, e a sensação de urgência costuma transformar desejo em compra impulsiva. O problema aparece quando a conta chega no fim do mês e o saldo está tão apertado quanto um aluguel pequeno, deixando a gente sem fôlego para as contas básicas.
+Esse aperto é a cara da Black Friday. A promessa de preços “mais baixos que o preço de um café por dia” atrai até o mais cauteloso, e a sensação de urgência costuma transformar desejo em compra impulsiva. O problema aparece quando a conta chega no fim do mês e o saldo está tão apertado quanto um [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026) pequeno, deixando a gente sem fôlego para as contas básicas.
 
 É aí que o **FinMoovi** entra de forma natural. Ao tirar foto da nota fiscal ou, ainda melhor, usar a captura por voz, o app registra o gasto na hora, categoriza automaticamente (eletrônicos, vestuário, casa…) e já mostra o impacto no seu orçamento mensal. Em menos de cinco minutos você tem uma visão clara do quanto aquela “oferta imperdível” realmente pesa no seu bolso.
 
 **Micro‑ação de 5 minutos no FinMoovi**
-1. Abra o app e toque em “Captura inteligente”.
+1. Abra o app e toque em “[Captura inteligente](/posts/cansado-de-perder-horas-nas-planilhas-como-o-finmoovi)”.
 2. Fotografe a nota da compra ou diga “Comprei TV 55 polegadas por 3 salários mínimos”.
 3. Confirme a categoria sugerida (eletrônicos).
 4. Veja instantaneamente o percentual que esse gasto representa do seu orçamento mensal.
@@ -89,7 +89,7 @@ Essa prática impede que um gasto “invisível” drene seu orçamento nos mese
 Com a globalização, muitas lojas oferecem descontos em dólares ou euros, especialmente em eletrônicos e softwares. Se você costuma comprar fora do país, a **funcionalidade multimoeda** do FinMoovi facilita a comparação.
 
 ### Como usar a multimoeda a seu favor
-1. Ao registrar a compra, escolha a moeda original (ex.: USD).
+1. Ao registrar a compra, escolha a [moeda](/glossario/moeda) original (ex.: USD).
 2. O app converte automaticamente para a sua moeda de referência usando a cotação do dia.
 3. Veja o custo real em termos de “salários mínimos” ou “aluguel pequeno”.
 
@@ -106,12 +106,12 @@ A festa de descontos termina, mas a avaliação dos resultados deve continuar. R
 
 
 ### Checklist de revisão no FinMoovi
-- **Relatório de fluxo de caixa** – veja a variação entre o orçamento planejado e o real.
+- **Relatório de [fluxo de caixa](/glossario/fluxo-de-caixa)** – veja a variação entre o orçamento planejado e o real.
 - **Categorização automática** – confirme se todas as despesas foram alocadas corretamente.
 - **Meta atingida?** – se ultrapassou, identifique o ponto de falha (ex.: falta de alerta, compra por impulso).
 - **Ajuste futuro** – aumente ou diminua o limite para a próxima Black Friday com base nos aprendizados.
 
-Essa rotina de revisão transforma a Black Friday de um risco financeiro em uma oportunidade de aprendizado constante.
+Essa rotina de revisão transforma a Black Friday de um [risco financeiro](/glossario/risco-financeiro) em uma oportunidade de aprendizado constante.
 
 ---
 
@@ -119,8 +119,8 @@ Essa rotina de revisão transforma a Black Friday de um risco financeiro em uma 
 
 1. **Defina um teto de gasto em “unidades de salário” antes de começar.**
 2. **Monte sua lista no modo Compras e acompanhe o total em tempo real.**
-3. **Use a captura inteligente para registrar cada compra imediatamente.**
-4. **Ative alertas de saldo e de renovação de assinaturas.**
+3. **Use a [captura inteligente](/posts/como-freelancers-podem-organizar-as-financas-em-2026) para registrar cada compra imediatamente.**
+4. **Ative [alertas](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto) de saldo e de renovação de assinaturas.**
 5. **Converta preços internacionais com a função multimoeda.**
 6. **Revise o relatório de fluxo de caixa nos dias seguintes à campanha.**
 7. **Ajuste sua meta para a próxima edição com base nos resultados reais.**
@@ -132,7 +132,7 @@ Essa rotina de revisão transforma a Black Friday de um risco financeiro em uma 
 - **Captura inteligente**: foto ou voz, a nota entra no app na hora.
 - **Categorização automática**: economiza tempo e evita erros de classificação.
 - **Modo Compras**: lista, total em tempo real e comparação com metas.
-- **Alertas de saldo**: avisos personalizados antes de ultrapassar o limite.
+- **[Alertas de saldo](/posts/como-organizar-seu-dinheiro-com-um-app-facil-de-usar)**: avisos personalizados antes de ultrapassar o limite.
 - **Multimoeda**: converte preços internacionais para a sua realidade.
 - **Relatórios de fluxo de caixa**: visão clara do impacto das compras no seu orçamento.
 

@@ -24,7 +24,7 @@ Picture this: you wake up on a chilly morning, your phone buzzes with discount a
 
 That pressure is the hallmark of Black Friday. Promises of prices “lower than a daily coffee” lure even the most cautious shoppers, and the sense of urgency often turns desire into impulse buying. The problem shows up when the month ends and your balance is as tight as a modest rent payment, leaving you breathless for the basic bills.  
 
-That’s where **FinMoovi** slips in naturally. Snap a photo of the receipt—or even better, use the voice capture—and the app logs the expense instantly, categorizes it automatically (electronics, clothing, home, etc.) and shows the impact on your monthly budget. In under five minutes you get a clear picture of how much that “can’t‑miss deal” really weighs on your wallet.  
+That’s where **FinMoovi** slips in naturally. Snap a photo of the receipt—or even better, use the [voice capture](/en/posts/en-forgot-to-pay-a-bill-how-to-fix-it-in-2026)—and the app logs the expense instantly, categorizes it automatically (electronics, clothing, home, etc.) and shows the impact on your monthly budget. In under five minutes you get a clear picture of how much that “can’t‑miss deal” really weighs on your wallet.  
 
 ### 5‑minute micro‑action in FinMoovi  
 1. Open the app and tap **Smart Capture**.  
@@ -38,7 +38,7 @@ Done! You now have the info you need to decide whether it’s worth it or if you
 
 ## 1. Plan before you click: set a spending target  
 
-The first Black Friday trap is impulse buying. To dodge it, set a spending limit **before** you start browsing. It doesn’t have to be an exact number; think of something like “up to the cost of a modest rent” or “no more than twice the amount of a minimum wage”.  
+The first Black Friday trap is impulse buying. To dodge it, set a [spending limit](/en/glossario/en-spending-limit) **before** you start browsing. It doesn’t have to be an exact number; think of something like “up to the cost of a modest rent” or “no more than twice the amount of a [minimum wage](/en/posts/en-budgeting-with-minimum-wage-practical-tips)”.  
 
 ![Plan before you click: set a spending target](/images/posts/guia-definitivo-da-black-friday-2026-como-comprar-sem-2.webp)  
 
@@ -53,7 +53,7 @@ With the goal visible on your dashboard, every click carries extra weight: “Do
 
 ## 2. Use the “Shopping List” mode  
 
-Many of us still jot things down on paper or a notes app, but nothing beats the convenience of **Shopping List mode** in FinMoovi. It lets you build a wish list, add an estimated price for each item, and as you add products the app tallies the total in real time.  
+Many of us still jot things down on paper or a notes app, but nothing beats the convenience of **[Shopping List](/en/glossario/en-shopping-list) mode** in FinMoovi. It lets you build a wish list, add an estimated price for each item, and as you add products the app tallies the total in real time.  
 
 ### Step‑by‑step to build your smart list  
 1. Open FinMoovi and go to **Shopping List**.  
@@ -82,7 +82,7 @@ This habit stops an “invisible” expense from draining your budget in the mon
 
 ## 4. Leverage the multi‑currency feature for international deals  
 
-With globalization, many retailers list discounts in dollars or euros, especially for electronics and software. If you shop abroad, FinMoovi’s **multi‑currency** function makes comparison painless.  
+With globalization, many retailers list discounts in dollars or euros, especially for electronics and software. If you shop abroad, FinMoovi’s **[multi‑currency](/en/posts/en-digital-bank-vs-major-bank-which-is-worth-it-in-2026)** function makes comparison painless.  
 
 ### Using multi‑currency to your advantage  
 1. When logging the purchase, select the original currency (e.g., USD).  
@@ -101,11 +101,11 @@ The discount frenzy ends, but the review should continue. Set aside a day in the
 
 ### FinMoovi review checklist  
 - **Cash‑flow report** – compare planned vs. actual spending.  
-- **Automatic categorization** – verify every expense landed in the right bucket.  
+- **[Automatic categorization](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end)** – verify every expense landed in the right bucket.  
 - **Goal met?** – if you overspent, pinpoint the failure point (e.g., missing alert, impulse buy).  
 - **Future adjustment** – raise or lower the limit for next Black Friday based on what you learned.  
 
-This review routine turns Black Friday from a financial risk into a continuous learning opportunity.  
+This review routine turns Black Friday from a [financial risk](/en/glossario/en-financial-risk) into a continuous learning opportunity.  
 
 ---  
 
@@ -115,7 +115,7 @@ This review routine turns Black Friday from a financial risk into a continuous l
 2. Build your list in Shopping List mode and watch the total in real time.  
 3. Use Smart Capture to log each purchase instantly.  
 4. Turn on balance and subscription‑renewal alerts.  
-5. Convert international prices with the multi‑currency tool.  
+5. Convert international prices with the [multi‑currency](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using) tool.  
 6. Review the cash‑flow report in the days after the event.  
 7. Adjust your goal for the next edition based on real results.  
 

@@ -22,12 +22,12 @@ seo:
 
 Imagina la escena: te levantas en una mañana fría, el móvil vibra con notificaciones de descuentos, la bandeja de entrada está llena de correos de “última oportunidad” y, antes de terminar el café, ya estás en la fila virtual de tu tienda favorita. El corazón late más rápido, la ansiedad golpea, y la primera pregunta que surge es: “¿Realmente necesito esto?”.  
 
-Ese apretón es la cara de Black Friday. La promesa de precios “más bajos que un café al día” atrae hasta al más cauteloso, y la sensación de urgencia suele convertir el deseo en compra impulsiva. El problema aparece cuando la cuenta llega a fin de mes y el saldo está tan ajustado como un alquiler pequeño, dejándote sin aliento para cubrir los gastos básicos.  
+Ese apretón es la cara de Black Friday. La promesa de precios “más bajos que un café al día” atrae hasta al más cauteloso, y la sensación de urgencia suele convertir el deseo en compra impulsiva. El problema aparece cuando la cuenta llega a fin de mes y el saldo está tan ajustado como un [alquiler](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026) pequeño, dejándote sin aliento para cubrir los gastos básicos.  
 
-Es aquí donde **FinMoovi** entra de forma natural. Al tomar foto de la factura o, mejor aún, usar la captura por voz, la app registra el gasto al instante, lo categoriza automáticamente (electrónica, ropa, hogar…) y muestra el impacto en tu presupuesto mensual. En menos de cinco minutos tienes una visión clara de cuánto pesa esa “oferta imperdible” en tu bolsillo.  
+Es aquí donde **FinMoovi** entra de forma natural. Al tomar foto de la factura o, mejor aún, usar la [captura por voz](/es/posts/es-captura-inteligente-por-voz-registra-tus-gastos-en-segundos), la app registra el gasto al instante, lo categoriza automáticamente (electrónica, ropa, hogar…) y muestra el impacto en tu presupuesto mensual. En menos de cinco minutos tienes una visión clara de cuánto pesa esa “oferta imperdible” en tu bolsillo.  
 
 ### Micro‑acción de 5 minutos en FinMoovi  
-1. Abre la app y toca “Captura inteligente”.  
+1. Abre la app y toca “[Captura inteligente](/es/posts/es-cansado-de-perder-horas-en-hojas-de-calculo-asi-finmoovi-lo)”.  
 2. Fotografía la factura o di “Compré TV de 55 pulgadas por €900”.  
 3. Confirma la categoría sugerida (electrónica).  
 4. Ve al instante el porcentaje que ese gasto representa de tu presupuesto mensual.  
@@ -100,12 +100,12 @@ La fiesta de descuentos termina, pero la evaluación de resultados debe continua
 ![5. Post‑Black Friday: analiza el impacto y ajusta el próximo ciclo](/images/posts/guia-definitivo-da-black-friday-2026-como-comprar-sem-6.webp)  
 
 ### Checklist de revisión en FinMoovi  
-- **Informe de flujo de caja** – compara la variación entre el presupuesto planificado y el real.  
+- **Informe de [flujo de caja](/es/glossario/es-flujo-de-caja)** – compara la variación entre el presupuesto planificado y el real.  
 - **Categorización automática** – confirma que todos los gastos fueron asignados correctamente.  
 - **¿Meta alcanzada?** – si la superaste, identifica el punto de falla (p. ej.: falta de alerta, compra impulsiva).  
 - **Ajuste futuro** – aumenta o disminuye el límite para la próxima Black Friday según lo aprendido.  
 
-Esta rutina transforma Black Friday de un riesgo financiero en una oportunidad de aprendizaje continuo.  
+Esta rutina transforma Black Friday de un [riesgo financiero](/es/glossario/es-riesgo-financiero) en una oportunidad de aprendizaje continuo.  
 
 ---  
 
@@ -113,8 +113,8 @@ Esta rutina transforma Black Friday de un riesgo financiero en una oportunidad d
 
 1. Define un techo de gasto en “unidades de salario” antes de comenzar.  
 2. Crea tu lista en modo Compras y sigue el total en tiempo real.  
-3. Usa la captura inteligente para registrar cada compra al instante.  
-4. Activa alertas de saldo y de renovación de suscripciones.  
+3. Usa la [captura inteligente](/es/posts/es-como-los-freelancers-pueden-organizar-sus-finanzas-en-2026) para registrar cada compra al instante.  
+4. Activa [alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no) de saldo y de renovación de suscripciones.  
 5. Convierte precios internacionales con la función multimoneda.  
 6. Revisa el informe de flujo de caja en los días posteriores a la campaña.  
 7. Ajusta tu meta para la próxima edición según los resultados reales.  
@@ -136,7 +136,7 @@ Con estas herramientas conviertes la ansiedad de Black Friday en control y tranq
 
 ## Conclusión  
 
-Black Friday puede ser una oportunidad para ahorrar, pero solo si entras preparada, con metas claras y herramientas que hagan el seguimiento en tiempo real. FinMoovi ofrece todo eso de forma sencilla, como un amigo que te recuerda no gastar más del equivalente a dos salarios mínimos en un solo día de compras.  
+Black Friday puede ser una oportunidad para [ahorrar](/es/posts/es-ahorra-en-la-farmacia-sin-sacrificios-guia-practica-2026), pero solo si entras preparada, con metas claras y herramientas que hagan el seguimiento en tiempo real. FinMoovi ofrece todo eso de forma sencilla, como un amigo que te recuerda no gastar más del equivalente a dos salarios mínimos en un solo día de compras.  
 
 **Usa FinMoovi para controlar tus gastos y no llevarte sorpresas al final del mes.**  
 
