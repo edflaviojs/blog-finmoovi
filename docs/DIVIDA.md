@@ -8,7 +8,7 @@
 > **Regra:** item sem *porquê* e sem *quando reavaliar* não entra. Item
 > resolvido **sai daqui** (vai para o histórico do git), não fica marcado como feito.
 
-**Criado em:** 2026-10-03 · **Última atualização:** 2026-10-14
+**Criado em:** 2026-10-03 · **Última atualização:** 2026-10-16
 
 > Irmão deste ficheiro, do lado do aplicativo:
 > `backup-app-22052025/.claude/docs/DIVIDA-TECNICA.md`.
@@ -23,8 +23,11 @@
 **Contexto:** a 15/10 a newsletter foi fechada à chave pública (commit 080add89, `db/newsletter-fase-s.sql`).
 Ficaram 3 coisas, detalhadas no app em `backup-app-22052025/.claude/docs/DIVIDA-TECNICA.md` (secção 0-PRIMEIRO):
 1. `welcome-sequence.js` filtra `status=eq.active` (coluna não existe) → nunca manda nada, e termina VERDE.
+   ⚠️ provavelmente já feito — conferir `f2714095` ("robo de boas-vindas volta a funcionar") antes de começar.
 2. A RPC de inscrição aceita o código de cancelamento de quem chama → precisa de `SUPABASE_SERVICE_KEY` nas Pages.
+   ⚠️ o código ficou pronto em `ddcb130f` ("inscricao pronta para a chave do servidor"); conferir se a chave já está nas Pages.
 3. Links antigos de cancelar (sem `&t=`) deixaram de funcionar — 1 assinante.
+   (Os 3 itens são da frente da newsletter, de outro terminal — ver `f8691521` "PARTE 3 corrida e provada".)
 
 
 ### A1. 🟡 O registo de vídeos publicados está incompleto — e mente no título
@@ -119,14 +122,42 @@ prevenir o que ainda não aconteceu.
 **Como fazer quando chegar a hora:** o Claude (crédito de API do plano Max, ver B4)
 como olho de reserva custa centavos por mês — capas são poucas.
 
+### A6. 🟢 O molde novo dos Shorts — o que ficou para depois (16/10/2026)
+
+**Contexto:** desde 16/10 o Short de 16s é feito no molde novo (`youtube-molde/`, sem Remotion), ligado pela
+variável `MOLDE_NOVO=sim` do repositório. O Remotion ficou de **estepe** (corre se o molde falhar).
+Documento da frente: `docs/MOLDE-NOVO-DOS-SHORTS.md`.
+
+Ficou adiado, de propósito:
+1. **O vídeo longo no estilo novo** (fase 5 do plano). O piloto de 38 s foi aprovado pelo Ed, mas o robô do
+   longo continua no Remotion. **Porquê:** é uma frente grande (16:9, 8 min, render repartido).
+   **Reavaliar:** depois de uma semana do molde nos Shorts sem tropeços.
+2. **O Short de 50 s** (composição `Short` do Remotion) ainda não passou para o molde. **Porquê:** o molde só
+   conhece o formato de 4 cenas do Short de 16s. **Reavaliar:** junto com o item 1.
+3. **Retirar o Remotion dos Shorts de 16s.** **Porquê:** é o estepe. **Reavaliar:** depois de 2 semanas sem o
+   molde falhar (o log diz se o passo do Remotion correu).
+4. **Afinar objetos fracos do catálogo** (tesoura, emprestar, caixa-eletrônico, fogão: desenho simples).
+   **Porquê:** funcionam, só são menos bonitos. **Reavaliar:** quando o Ed apontar algum num vídeo.
+
 ---
 
 ## B. Provas marcadas no tempo — nada a fazer até à data
+
+### B5. ⏳ A 1.ª corrida real do molde novo, com tudo
+
+**Quando:** a próxima corrida do `youtube-short16-render.yml` (agendada 04:30 UTC de **17/10/2026**; costuma
+arrancar com horas de atraso).
+
+**O que ler:** o passo "Fazer o Short no molde novo" **verde** e o "Renderizar o Short de 16s" **saltado**; o
+tempo do passo (na nuvem deu 6–7 min); os avisos amarelos da conferência; as legendas EN/ES no YouTube (acertadas
+pelo `legendas.mjs`); a capa. Se o molde falhou, o Remotion fez o vídeo — ler o porquê no log.
 
 ### B1. ⏳ O filtro de realidade nunca correu contra o Search Console a sério
 
 **Quando:** **terça-feira, 07h UTC** (a primeira corrida do `gsc-otimizar-ctr` com
 a trava posta a 02/10).
+
+⚠️ (16/10) as terças de 07/10 e 14/10 já passaram — conferir o log dessas corridas antes de considerar isto aberto.
 
 O que foi provado foram as **contas e as réguas** (9 provas de mesa, incluindo três
 casos de controlo legítimos). A cadeia completa não dá para provar daqui: as
@@ -143,6 +174,8 @@ ambos são impressos. Se o filtro cortar tudo, a régua está grossa e afrouxa-s
 Trabalho criado a 03/10 (`ef3f8783-87b9-4bcf-9e25-f3febc18fbe6`). A Reporting API
 leva **até 48h** a despejar o primeiro ficheiro, e traz os ~30 dias anteriores.
 Enquanto não houver ficheiro, o relatório diz *"à espera"* — não inventa número.
+
+⚠️ (16/10) a data já passou — conferir se o relatório já traz o número antes de considerar isto aberto.
 
 ### B3. ⏳ A prova das travas da ficha, no robô da manutenção mensal
 
@@ -224,3 +257,6 @@ plano Free da Mistral não liberta a chave (14/10). Pode ser apagado.
   voz da Microsoft com 403 (`c3d9e12d`), Short da noite sem Gemini (`f56d8156`),
   vídeo de 18/10 subido à mão, posts semanais por e-mail, primeiro comentário (já
   funcionava pelo robô de hora a hora).
+- **16/10/2026** — entraram A6 (o que ficou para depois no molde novo dos Shorts) e B5 (a 1.ª corrida real
+  dele, a 17/10). Marcados como *provavelmente feitos, conferir*: A0 itens 1 e 2 (newsletter, outro terminal),
+  B1 e B2 (datas já passadas).
