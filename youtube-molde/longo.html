@@ -161,6 +161,7 @@
 <script src="objetos-extra.js"></script>
 <script src="fundos.js"></script>
 <script src="icones.js"></script>
+<script src="rosto.js"></script>
 <script>
 // ═══ MOLAS ═══
 function S(t, f, z) {
@@ -201,12 +202,7 @@ const f1 = (x) => x.toFixed(1)
 // ═══ TAMANHOS DAS TELAS ═══ [largura, altura, raio, fundo]
 const TAM = { numero: [900, 460, 56, CARD], meta: [620, 600, 70, CARD], foto: [1040, 600, 40, CARD], app: [820, 640, 56, CARD], broll: [900, 600, 56, CARD], conta: [880, 700, 34, '#FFF8E7'], lista: [880, 660, 30, '#FFFDF5'], janela: [1000, 600, 48, CARD], frase: [1100, 420, 56, CARD], chamada: [960, 360, 56, CARD], nada: [620, 600, 70, CARD] }
 
-let PL, D, ST, shapeW, shapeH, shapeR, cardOn, layerVis, cam, heads, poseTracks, bonecoX, closeK, curX, curY, curVis, curPress, telasDe, SOBRE, EMO
-function alvoDoCursor(v) {
-  if (v.alvo === 'item') return [-372, -330 + 150 + v.item * 82 + 30]
-  if (v.alvo === 'botao') return [90, 330 - 78]
-  return ({ app: [120, 120], broll: [140, 80], conta: [260, 200], chamada: [320, 100] })[v.alvo] || [0, 0]
-}
+let PL, D, ST, shapeW, shapeH, shapeR, cardOn, layerVis, cam, heads, poseTracks, bonecoX, closeK, curPress, telasDe, SOBRE, EMO
 function montar(plano) {
   PL = plano; D = plano.duracao
   ST = plano.estados.map((e) => ({ ...e, w: TAM[e.id][0], h: TAM[e.id][1], r: TAM[e.id][2], bg: TAM[e.id][3] }))
@@ -234,12 +230,10 @@ function montar(plano) {
   bonecoX = track([[-1, -260], [0.3, 330, SPR.anda], ...P.map(([t, , onde]) => [t, onde === 'centro' || onde === 'close' ? 760 : 330, SPR.anda])], SPR.anda)
   closeK = track([[-1, 0], ...P.map(([t, , onde]) => [t + (onde === 'close' ? 0.2 : 0), onde === 'close' ? 1 : 0, SPR.close])], SPR.close)
   EMO = (PL.emocoes || []).map(([t, nome]) => ({ t, nome }))
-  // o cursor: entra, vai ao alvo devagar, clica, sai
+  // o cursor: o clique é uma mola curta; o caminho e o gesto são calculados em cursorEm(t)
   const v = PL.cursor.visitas
-  curX = track([[-1, 520], ...v.flatMap((x) => [[x.entra, x.alvo === 'item' && x.item > 0 ? alvoDoCursor({ ...x, item: x.item - 1 })[0] : 520, SPR.calmo], [x.entra + 0.05, alvoDoCursor(x)[0], x.alvo === 'item' ? SPR.snap : SPR.calmo], [x.sai, x.alvo === 'item' && x.item + 1 < x.n ? alvoDoCursor(x)[0] : 520, SPR.calmo]])], SPR.calmo)
-  curY = track([[-1, 420], ...v.flatMap((x) => [[x.entra, x.alvo === 'item' && x.item > 0 ? alvoDoCursor({ ...x, item: x.item - 1 })[1] : 420, SPR.calmo], [x.entra + 0.05, alvoDoCursor(x)[1], x.alvo === 'item' ? SPR.snap : SPR.calmo], [x.sai, x.alvo === 'item' && x.item + 1 < x.n ? alvoDoCursor(x)[1] : 420, SPR.calmo]])], SPR.calmo)
-  curVis = track([[-1, 0], ...v.flatMap((x) => [[x.entra - 0.1, 1, SPR.enter], [x.sai + (x.alvo === 'item' && x.item + 1 < x.n ? 0.4 : 0), 0, SPR.exit]])])
-  curPress = v.length ? track([[-1, 0], ...v.flatMap((x) => [[x.clique - 0.07, 1, SPR.press], [x.clique + 0.06, 0, SPR.enter]])]) : () => 0
+  const cl = v.filter((x) => x.clique)
+  curPress = cl.length ? track([[-1, 0], ...cl.flatMap((x) => [[x.clique - 0.07, 1, SPR.press], [x.clique + 0.06, 0, SPR.enter]])]) : () => 0
   // a folha da lista: pautas fixas
   $('pautas').innerHTML = Array.from({ length: 7 }, (_, i) => `<div class="abs" style="left:0;right:0;top:${150 + i * 82 + 66}px;height:2px;background:#cfe0f5"></div>`).join('')
   SOBRE = PL.sobreposicoes
@@ -272,74 +266,6 @@ const POSES = {
 }
 const seg = (o, a, l) => ({ x: o.x + l * Math.sin(a * Math.PI / 180), y: o.y + l * Math.cos(a * Math.PI / 180) })
 
-// O ROSTO E O QUE SAI DELE — cada emoção acrescenta coisas que se veem (lágrimas, fumo, gotas, bochechas…).
-// k = quanto a emoção já entrou (0 a 1); a = segundos desde que entrou; fala = a voz está a falar agora.
-function rosto(hc, p, emo, k, a, t, fala, olhaCima = 0) {
-  const s = HEAD_R / 60, ex = 22 * s, cx = hc.x + 8 * s, cy = hc.y
-  let ey = cy - 6 * s - 6 * s * olhaCima, brow = p.brow, mouth = p.mouth, eye = p.eye, open = p.open
-  let corCara = '#fff', extra = '', olhos = null, sobrancelhas = null, frente = ''
-  const pisca = (t % 4.3) < 0.12 ? 0.1 : 1
-  // as bochechas rosadas: sempre um pouco (é o que o faz "fofinho")
-  let bochecha = 0.28
-  if (emo === 'triste') {
-    brow = lerp(brow, 26, k); mouth = lerp(mouth, -0.9, k) + Math.sin(t * 22) * 0.06 * k; eye = lerp(eye, 1.05, k)
-    // duas lágrimas de cada lado, a escorrer e a pingar
-    for (const lado of [-1, 1]) for (let i = 0; i < 2; i++) {
-      const fase = ((a * 0.9 + i * 0.5 + (lado > 0 ? 0.25 : 0)) % 1)
-      const x = cx + lado * ex + lado * 4 * s, y = ey + 12 * s + fase * 70 * s
-      extra += `<path d="M ${f1(x)} ${f1(y - 9 * s)} Q ${f1(x + 7 * s)} ${f1(y + 4 * s)} ${f1(x)} ${f1(y + 7 * s)} Q ${f1(x - 7 * s)} ${f1(y + 4 * s)} ${f1(x)} ${f1(y - 9 * s)} Z" fill="#5BC8FF" opacity="${f1(k * (1 - fase * 0.6))}"/>`
-    }
-  } else if (emo === 'nervoso') {
-    brow = lerp(brow, -22, k); mouth = lerp(mouth, -0.6, k)
-    corCara = mixHex('#ffffff', '#ff7b6b', clamp(k * (0.6 + 0.4 * clamp(a / 2))))
-    // a cabeça a ferver: fumo a subir em sopros
-    for (let i = 0; i < 3; i++) {
-      const fase = (a * 0.8 + i / 3) % 1, x = hc.x + (i - 1) * 40 * s + Math.sin(fase * 6 + i) * 8 * s, y = cy - HEAD_R - 10 * s - fase * 90 * s
-      extra += `<circle cx="${f1(x)}" cy="${f1(y)}" r="${f1((10 + fase * 18) * s)}" fill="#e6edf3" opacity="${f1(k * (1 - fase) * 0.9)}"/>`
-    }
-    extra += `<g stroke="#ff5a4e" stroke-width="${f1(4 * s)}" stroke-linecap="round" opacity="${f1(k)}"><path d="M ${f1(hc.x + 34 * s)} ${f1(cy - 40 * s)} l ${f1(10 * s)} ${f1(-6 * s)} m ${f1(-4 * s)} ${f1(-6 * s)} l ${f1(6 * s)} ${f1(10 * s)}"/></g>`
-  } else if (emo === 'susto') {
-    eye = lerp(eye, 1.8, k); brow = lerp(brow, 26, k); open = Math.max(open, k)
-    for (let i = 0; i < 5; i++) { const ang = -150 + i * 30, r1 = HEAD_R + 14 * s, r2 = HEAD_R + (30 + 6 * Math.sin(t * 20 + i)) * s; const A = ang * Math.PI / 180; extra += `<line x1="${f1(hc.x + r1 * Math.cos(A))}" y1="${f1(cy + r1 * Math.sin(A))}" x2="${f1(hc.x + r2 * Math.cos(A))}" y2="${f1(cy + r2 * Math.sin(A))}" stroke="${INK}" stroke-width="${f1(5 * s)}" stroke-linecap="round" opacity="${f1(k)}"/>` }
-  } else if (emo === 'feliz' || emo === 'curioso') {
-    mouth = lerp(mouth, 1.1, k); bochecha = lerp(0.28, 0.8, k)
-    if (emo === 'feliz') olhos = (er) => [-1, 1].map((l) => `<path d="M ${f1(cx + l * ex - 10 * s)} ${f1(ey + 3 * s)} Q ${f1(cx + l * ex)} ${f1(ey - 10 * s)} ${f1(cx + l * ex + 10 * s)} ${f1(ey + 3 * s)}" stroke="${INK}" stroke-width="${f1(6 * s)}" fill="none" stroke-linecap="round"/>`).join('')
-    for (let i = 0; i < 3; i++) { const fase = (a * 0.7 + i / 3) % 1, x = hc.x + (i - 1) * 70 * s, y = cy - HEAD_R - 20 * s - fase * 50 * s; extra += `<path d="M ${f1(x)} ${f1(y - 10 * s)} L ${f1(x + 3 * s)} ${f1(y - 3 * s)} L ${f1(x + 10 * s)} ${f1(y)} L ${f1(x + 3 * s)} ${f1(y + 3 * s)} L ${f1(x)} ${f1(y + 10 * s)} L ${f1(x - 3 * s)} ${f1(y + 3 * s)} L ${f1(x - 10 * s)} ${f1(y)} L ${f1(x - 3 * s)} ${f1(y - 3 * s)} Z" fill="#FDE047" opacity="${f1(k * Math.sin(fase * Math.PI))}"/>` }
-  } else if (emo === 'pensativo' || emo === 'perplexo') {
-    brow = lerp(brow, 12, k); mouth = lerp(mouth, -0.15, k); ey -= 6 * s * k
-    if (emo === 'perplexo') {
-      sobrancelhas = `<line x1="${f1(cx - ex - 14 * s)}" y1="${f1(ey - 22 * s)}" x2="${f1(cx - ex + 14 * s)}" y2="${f1(ey - 22 * s)}" stroke="${INK}" stroke-width="${f1(8 * s)}" stroke-linecap="round"/><line x1="${f1(cx + ex - 14 * s)}" y1="${f1(ey - 34 * s)}" x2="${f1(cx + ex + 14 * s)}" y2="${f1(ey - 26 * s)}" stroke="${INK}" stroke-width="${f1(8 * s)}" stroke-linecap="round"/>`
-      const pula = Math.abs(Math.sin(a * 3)) * 10 * s
-      extra += `<text x="${f1(hc.x + 70 * s)}" y="${f1(cy - HEAD_R - 10 * s - pula)}" font-family="Unbounded" font-weight="900" font-size="${f1(46 * s)}" fill="${INK}" opacity="${f1(k)}">?</text><text x="${f1(hc.x + 104 * s)}" y="${f1(cy - HEAD_R + 14 * s - pula * 0.6)}" font-family="Unbounded" font-weight="900" font-size="${f1(30 * s)}" fill="${INK}" opacity="${f1(k * 0.8)}">?</text>`
-    }
-  } else if (emo === 'vergonha') {
-    bochecha = lerp(0.28, 1, k); mouth = lerp(mouth, 0.15, k) + Math.sin(t * 9) * 0.1 * k; ey += 4 * s * k; brow = lerp(brow, 16, k)
-    extra += `<path d="M ${f1(hc.x - 48 * s)} ${f1(cy - 30 * s)} q ${f1(-6 * s)} ${f1(12 * s)} 0 ${f1(16 * s)} q ${f1(6 * s)} ${f1(-4 * s)} 0 ${f1(-16 * s)}" fill="#5BC8FF" opacity="${f1(k)}"/>`
-  } else if (emo === 'sono') {
-    olhos = () => [-1, 1].map((l) => `<line x1="${f1(cx + l * ex - 10 * s)}" y1="${f1(ey + 2 * s)}" x2="${f1(cx + l * ex + 10 * s)}" y2="${f1(ey + 2 * s)}" stroke="${INK}" stroke-width="${f1(6 * s)}" stroke-linecap="round"/>`).join('')
-    open = Math.max(open, 0.5 * k * (0.5 + 0.5 * Math.sin(t * 1.4)))
-    for (let i = 0; i < 3; i++) { const fase = (a * 0.45 + i / 3) % 1; extra += `<text x="${f1(hc.x + (50 + fase * 60) * s)}" y="${f1(cy - HEAD_R - fase * 80 * s)}" font-family="Unbounded" font-weight="900" font-size="${f1((22 + i * 6) * s)}" fill="${INK}" opacity="${f1(k * Math.sin(fase * Math.PI))}">z</text>` }
-  } else if (emo === 'suor') {
-    brow = lerp(brow, 20, k); mouth = lerp(mouth, -0.35, k)
-    const fase = (a * 0.6) % 1, x = hc.x - 46 * s, y = cy - 36 * s + fase * 40 * s
-    extra += `<path d="M ${f1(x)} ${f1(y - 12 * s)} Q ${f1(x + 9 * s)} ${f1(y + 4 * s)} ${f1(x)} ${f1(y + 9 * s)} Q ${f1(x - 9 * s)} ${f1(y + 4 * s)} ${f1(x)} ${f1(y - 12 * s)} Z" fill="#5BC8FF" opacity="${f1(k * (1 - fase * 0.5))}"/>`
-  } else if (emo === 'dinheiro') {
-    mouth = lerp(mouth, 1.0, k)
-    olhos = () => [-1, 1].map((l) => `<text x="${f1(cx + l * ex)}" y="${f1(ey + 11 * s)}" text-anchor="middle" font-family="Unbounded" font-weight="900" font-size="${f1(30 * s * (1 + 0.15 * Math.sin(t * 8)))}" fill="#16a34a" opacity="${f1(Math.max(0.15, k))}">$</text>`).join('')
-  }
-  // a boca mexe enquanto ele fala (menos quando a emoção manda na boca)
-  if (fala && !['susto', 'sono', 'triste'].includes(emo)) open = Math.max(open, 0.32 + 0.3 * Math.abs(Math.sin(t * 13)) - 0.32 * Math.abs(Math.sin(t * 5.3)))
-  const er = Math.max(2.5 * s, 8 * s * eye * pisca), by = ey - 24 * s, bt = brow * 0.6 * s, mw = 24 * s, my = cy + 26 * s
-  const boca = open > 0.3
-    ? `<ellipse cx="${f1(cx)}" cy="${f1(my)}" rx="${f1(10 * s)}" ry="${f1(13 * s * open)}" fill="${INK}"/>`
-    : `<path d="M ${f1(cx - mw)} ${f1(my)} Q ${f1(cx)} ${f1(my + mouth * 20 * s)} ${f1(cx + mw)} ${f1(my)}" stroke="${INK}" stroke-width="${f1(7 * s)}" fill="none" stroke-linecap="round"/>`
-  return `
-    <circle cx="${f1(hc.x)}" cy="${f1(cy)}" r="${HEAD_R}" fill="${corCara}" stroke="${INK}" stroke-width="${STK}"/>
-    ${[-1, 1].map((l) => `<ellipse cx="${f1(cx + l * (ex + 14 * s))}" cy="${f1(cy + 14 * s)}" rx="${f1(13 * s)}" ry="${f1(8 * s)}" fill="#ff8fa3" opacity="${f1(bochecha)}"/>`).join('')}
-    ${sobrancelhas ?? `<line x1="${f1(cx - ex - 14 * s)}" y1="${f1(by + bt)}" x2="${f1(cx - ex + 14 * s)}" y2="${f1(by - bt)}" stroke="${INK}" stroke-width="${f1(8 * s)}" stroke-linecap="round"/><line x1="${f1(cx + ex - 14 * s)}" y1="${f1(by - bt)}" x2="${f1(cx + ex + 14 * s)}" y2="${f1(by + bt)}" stroke="${INK}" stroke-width="${f1(8 * s)}" stroke-linecap="round"/>`}
-    ${olhos ? olhos(er) : `<circle cx="${f1(cx - ex)}" cy="${f1(ey)}" r="${f1(er)}" fill="${INK}"/><circle cx="${f1(cx + ex)}" cy="${f1(ey)}" r="${f1(er)}" fill="${INK}"/>${eye > 1.4 ? `<circle cx="${f1(cx - ex + 3 * s)}" cy="${f1(ey - 3 * s)}" r="${f1(3 * s)}" fill="#fff"/><circle cx="${f1(cx + ex + 3 * s)}" cy="${f1(ey - 3 * s)}" r="${f1(3 * s)}" fill="#fff"/>` : ''}`}
-    ${boca}${extra}${frente}`
-}
 
 // o boneco inteiro (corpo + rosto), em qualquer lugar e tamanho: o do palco e o pequeno do aviso
 function bonecoSVG(p, x0, chao, emo, k, a, t, fala, andar = 0, olhaCima = 0) {
@@ -422,10 +348,10 @@ function momentoDoPalco(t, cab) {
   const cur = ST[Math.max(0, ultimo(ST, t))]
   if (e && cur === e && t >= e.depois) {
     const a = t - e.depois
-    if (e.momento === 'pensamento') bal = balao(cab.cabeca, 1300, 380, 520, 360, a, simbolo(e.pensa, 1300, 380, a), cab.Z)
+    if (e.momento === 'pensamento') bal = balao(cab.cabeca, 1320, 600, 500, 300, a, simbolo(e.pensa, 1320, 600, a), cab.Z)
     if (e.momento === 'solto' && e.solto && OBJ[e.solto.nome]) {
       const k = clamp(S(a, 2.2, 0.65), 0, 1.1), bob = Math.sin(a * 2.2) * 10
-      solto = `<ellipse cx="1260" cy="900" rx="${f1(300 * k)}" ry="26" fill="rgba(13,17,23,0.16)"/><g transform="translate(${f1(1260 - 450 * 1.25 * k)} ${f1(560 - 280 * 1.25 * k + bob)}) scale(${(1.25 * k).toFixed(4)})">${OBJ[e.solto.nome](a + 0.8, {})}</g>`
+      solto = `<ellipse cx="1260" cy="920" rx="${f1(280 * k)}" ry="24" fill="rgba(13,17,23,0.16)"/><g transform="translate(${f1(1260 - 450 * 1.15 * k)} ${f1(610 - 280 * 1.15 * k + bob)}) scale(${(1.15 * k).toFixed(4)})">${OBJ[e.solto.nome](a + 0.8, {})}</g>`
     }
   }
   $('soltoSvg').innerHTML = solto
@@ -445,10 +371,11 @@ function telaNumero(e, t) {
   $('numValor').style.color = mixHex('#f0f6fc', cor, clamp(u * 1.4))
   $('numValor').style.transform = `scale(${(1 + 0.1 * slam).toFixed(4)})`
 }
-function linhaHtml(top, nome, valor, cor, aceso, extra = '') {
-  return `<div class="row" style="top:${top}px;height:84px;border-color:${aceso ? 'rgba(255,90,78,0.9)' : 'transparent'};${extra}"><div class="abs" style="left:24px;top:22px;font-size:30px;font-weight:700;white-space:nowrap;max-width:470px;overflow:hidden;text-overflow:ellipsis">${esc(nome)}</div><div class="abs disp" style="right:24px;top:20px;font-size:32px;font-weight:800;color:${cor};white-space:nowrap">${valor}</div></div>`
+function linhaHtml(top, nome, valor, cor, aceso, extra = '', cheia = 0) {
+  return `<div class="row" style="top:${top}px;height:84px;border-color:${aceso || cheia > 0 ? 'rgba(255,90,78,0.95)' : 'transparent'};background:${cheia > 0 ? mixHex('#0d1117', '#c0262d', cheia) : '#0d1117'};transform:scale(${(1 + 0.04 * (cheia > 0 && cheia < 1 ? Math.sin(cheia * Math.PI) : 0)).toFixed(3)});${extra}"><div class="abs" style="left:24px;top:22px;font-size:30px;font-weight:700;white-space:nowrap;max-width:470px;overflow:hidden;text-overflow:ellipsis">${esc(nome)}</div><div class="abs disp" style="right:24px;top:20px;font-size:32px;font-weight:800;color:${cor};white-space:nowrap">${valor}</div></div>`
 }
-const listaDoMapa = () => (PL.valoresDoMapa || []).filter((v) => v.tipo === 'sai')
+const maiuscula = (x) => x.charAt(0).toUpperCase() + x.slice(1)
+const listaDoMapa = () => (PL.valoresDoMapa || []).filter((v) => v.tipo === 'sai').map((v) => ({ ...v, nome: maiuscula(v.nome.replace(/^(o|a|os|as) /i, '')) }))
 function telaApp(e, t) {
   const a = t - e.t, itens = listaDoMapa()
   const passo = ((e.passo - 1) % 5) + 1
@@ -459,8 +386,9 @@ function telaApp(e, t) {
       <div class="abs" style="left:40px;right:40px;top:250px;height:84px;border-radius:42px;background:#22d3ee;color:#0d1117;text-align:center;font-family:Unbounded;font-weight:900;font-size:30px;line-height:84px;transform:scale(${(1 - 0.05 * clamp(curPress(t))).toFixed(3)})">Registrar</div>`
   } else if (passo === 2 || passo === 3) {
     titulo = 'Extrato'; sub = 'este mês'
-    const alvo = itens.findIndex((v) => v.valor === e.valor)
-    corpo = itens.slice(0, 5).map((v, i) => linhaHtml(i * 96, v.nome.replace(/^(o|a|os|as) /i, ''), '− ' + reais(v.valor), '#ff7a6e', i === alvo && a > 0.8, `opacity:${clamp((a - 0.15 * i) * 3).toFixed(2)}`)).join('')
+    const alvo = e.linha ?? itens.findIndex((v) => v.valor === e.valor)
+    const cheia = e.clicaLinha ? clamp((t - e.clicaLinha) / 0.3) : 0
+    corpo = itens.slice(0, 5).map((v, i) => linhaHtml(i * 96, v.nome.replace(/^(o|a|os|as) /i, ''), '− ' + reais(v.valor), i === alvo && cheia > 0.5 ? '#fff' : '#ff7a6e', false, `opacity:${clamp((a - 0.15 * i) * 3).toFixed(2)}`, i === alvo ? cheia : 0)).join('')
   } else if (passo === 4) {
     titulo = 'Somado no mês'; sub = 'tudo o que saiu sem você ver'
     const total = itens.reduce((s, v) => s + v.valor, 0) || e.valor
@@ -507,10 +435,10 @@ function telaConta(e, t) {
 // a folha de caderno: o item escreve-se letra a letra quando a voz o diz; o cursor clica na caixinha, o ✓
 // verde aparece e a linha fica circulada a verde; no fim, o botão "Tudo conferido ✓" é carregado
 function telaLista(e, t) {
-  const cliques = PL.cursor.visitas.filter((v) => v.alvo === 'item')
+  const cliques = PL.cursor.visitas.filter((v) => v.gesto === 'marca')
   $('listaRows').innerHTML = e.itens.map((it, i) => {
     const escreve = clamp((t - it.t + 0.1) / 0.45), letras = Math.ceil(it.texto.length * escreve)
-    const clique = (cliques.find((v) => Math.abs(v.entra - it.t - 0.1) < 0.01) || { clique: it.t + 0.5 }).clique
+    const clique = (cliques.find((v) => Math.abs(v.entra - it.t + 0.12) < 0.01) || { clique: it.t + 0.22 }).clique
     const ok = clamp(S(t - clique, 3.2, 0.6), 0, 1.15), circ = clamp((t - clique - 0.1) / 0.45)
     const y = 150 + i * 82
     return `<div class="abs" style="left:120px;top:${y}px;width:700px;height:66px;opacity:${escreve > 0 ? 1 : 0}">
@@ -534,6 +462,45 @@ function telaJanela(e, t) {
   let svg = CENARIO[nomeCen](aj, quebrou ? 0 : aj * 300)
   for (const o of e.objetos) { const ao = t - o.t; if (ao >= -0.01 && OBJ[o.nome]) svg += OBJ[o.nome](Math.max(0, ao), { quebra: quebrou ? q : null }) }
   $('janelaSvg').innerHTML = svg
+}
+
+// ═══ O CURSOR COMO QUEM EXPLICA ═══ chega em CURVA (nunca a direito), faz o gesto à volta do que importa
+// — dá a volta (circula), passa por baixo (sublinha), bate duas vezes (aponta), ou vai à caixinha (marca) —,
+// clica quando é para clicar, e sai em curva. Coordenadas a partir do meio do cartão.
+const suave = (u) => u * u * (3 - 2 * u)
+function curva(a, b, u, lado) {
+  const mx = (a[0] + b[0]) / 2, my = (a[1] + b[1]) / 2, dx = b[0] - a[0], dy = b[1] - a[1], L = Math.hypot(dx, dy) || 1
+  const cx = mx - (dy / L) * L * 0.35 * lado, cy = my + (dx / L) * L * 0.35 * lado
+  const k = 1 - u
+  return [k * k * a[0] + 2 * k * u * cx + u * u * b[0], k * k * a[1] + 2 * k * u * cy + u * u * b[1]]
+}
+function cursorEm(t) {
+  const V = PL.cursor.visitas
+  const i = ultimo(V, t, (v) => v.entra - 0.15)
+  if (i < 0) return null
+  const v = V[i]
+  if (t > v.sai + 0.7) return null
+  const lado = i % 2 ? 1 : -1
+  const de = v.seguido && i > 0 ? [V[i - 1].x, V[i - 1].y] : [v.x + 420, v.y + 330]
+  const chega = v.entra + (v.gesto === 'marca' ? 0.28 : 0.75)
+  const alvo = [v.x, v.y]
+  let pos
+  if (t < chega) pos = curva(de, alvo, suave(clamp((t - v.entra) / (chega - v.entra))), lado)
+  else {
+    const g = t - chega, ate = v.clique || v.sai
+    // o gesto vai desvanecendo até ao clique, para o clique cair EXATAMENTE no alvo
+    const k = v.clique ? clamp((v.clique - t) / 0.3) : 1
+    let dx = 0, dy = 0
+    if (v.gesto === 'circula') { const rx = Math.min(150, (v.larg || 240) / 3.2), ry = 34, w = Math.PI * 2 / 1.1; dx = rx * Math.sin(w * g); dy = -ry * (1 - Math.cos(w * g)) * 0.9 }
+    else if (v.gesto === 'sublinha') { const L = (v.larg || 400) / 2, u = (g % 2.2) / 2.2; dx = -L + 2 * L * suave(u < 0.5 ? u * 2 : 2 - u * 2); dy = 40 + Math.sin(u * Math.PI * 4) * 4 }
+    else if (v.gesto === 'aponta') { dx = Math.sin(g * 9) * 14 * Math.exp(-g * 0.8); dy = Math.abs(Math.sin(g * 9)) * -10 * Math.exp(-g * 0.8) }
+    pos = [alvo[0] + dx * (t < ate ? k : 0), alvo[1] + dy * (t < ate ? k : 0)]
+    // depois do clique: um toque de "aí está", e no fim sai em curva
+    if (v.clique && t >= v.clique && t < v.sai) { const a2 = t - v.clique; pos = [alvo[0] + 6 * Math.sin(a2 * 6) * Math.exp(-a2 * 2), alvo[1]] }
+    if (t >= v.sai) { const prox = V[i + 1]; if (!(prox && prox.seguido)) pos = curva(alvo, [v.x + 380, v.y + 300], suave(clamp((t - v.sai) / 0.7)), -lado) }
+  }
+  const vis = clamp((t - v.entra + 0.15) / 0.2) * (t > v.sai && !(V[i + 1]?.seguido) ? clamp(1 - (t - v.sai) / 0.5) : 1)
+  return { x: pos[0], y: pos[1], vis }
 }
 
 // ═══ AS TELAS POR CIMA ═══ entram com uma onda de cor e saem a deslizar
@@ -675,9 +642,14 @@ function seek(tIn) {
   momentoDoPalco(t, cab)
   caption(t)
 
-  const cv = clamp(curVis(t)), cr = $('cursor')
-  cr.style.opacity = cv; cr.style.visibility = cv < 0.01 ? 'hidden' : 'visible'
-  cr.style.transform = `translate(${(1220 + curX(t) - 7).toFixed(2)}px, ${(590 + curY(t) - 4).toFixed(2)}px) scale(${1 - 0.16 * clamp(curPress(t))})`
+  const cp = cursorEm(t), cr = $('cursor')
+  if (!cp || cp.vis < 0.01 || on < 0.3) cr.style.visibility = 'hidden'
+  else {
+    cr.style.visibility = 'visible'; cr.style.opacity = cp.vis.toFixed(3)
+    // o cursor está no mundo do cartão: segue a escala da câmara
+    const z = c * lerp(0.6, 1, Math.min(1, on))
+    cr.style.transform = `translate(${(1220 + cp.x * z - 7).toFixed(2)}px, ${(590 + cp.y * z - 4).toFixed(2)}px) scale(${1 - 0.16 * clamp(curPress(t))})`
+  }
 
   sobreposicao(t)
 }
@@ -688,8 +660,8 @@ function cues() {
   ST.filter((s) => s.id === 'numero').forEach((s) => L.push({ t: s.aterra, kind: 'thud' }))
   ST.filter((s) => s.id === 'nada' && s.depois).forEach((s) => L.push({ t: s.depois, kind: s.momento === 'pensamento' ? 'rise' : s.momento === 'close' ? 'whoosh' : 'swish' }))
   ;(PL.fx || []).forEach((f) => { if (f.tipo === 'moedas') [0, 0.08, 0.16, 0.24].forEach((d) => L.push({ t: f.t + d, kind: 'coin' })); if (f.tipo === 'confete' || f.tipo === 'brilho') L.push({ t: f.t, kind: 'ding' }); if (f.tipo === 'raios') L.push({ t: f.t, kind: 'boom' }); if (f.tipo === 'papeis') L.push({ t: f.t, kind: 'swish' }) })
-  PL.cursor.visitas.forEach((v) => L.push({ t: v.clique, kind: 'click' }))
-  PL.cursor.visitas.filter((v) => v.alvo === 'item').forEach((v) => L.push({ t: v.clique + 0.08, kind: 'tick' }))
+  PL.cursor.visitas.filter((v) => v.clique).forEach((v) => L.push({ t: v.clique, kind: 'click' }))
+  PL.cursor.visitas.filter((v) => v.gesto === 'marca').forEach((v) => L.push({ t: v.clique + 0.08, kind: 'tick' }))
   ST.filter((s) => s.id === 'lista').forEach((s) => L.push({ t: s.botao + 0.05, kind: 'ding' }))
   ST.filter((s) => s.id === 'janela').forEach((j) => j.objetos.forEach((o) => L.push({ t: o.t + 0.05, kind: o.nome === 'carro' ? 'rise' : 'tick' })))
   SOBRE.forEach((o) => { if (o.tipo === 'capitulo') L.push({ t: o.t, kind: 'whoosh' }, { t: o.t + 0.4, kind: 'ding' }); if (o.tipo === 'pausa') L.push({ t: o.t, kind: 'whoosh' }, { t: o.t + 0.6, kind: 'rise' }); if (o.tipo === 'bordao' || o.tipo === 'assinatura') L.push({ t: o.t, kind: 'rise' }) })

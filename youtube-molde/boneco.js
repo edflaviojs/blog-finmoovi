@@ -15,7 +15,7 @@ const BPOSES = {
 const misturaPose = (a, b, p) => Object.fromEntries(Object.keys(a).map((k) => [k, a[k] + (b[k] - a[k]) * p]))
 const segB = (o, ang, l) => ({ x: o.x + l * Math.sin(ang * Math.PI / 180), y: o.y + l * Math.cos(ang * Math.PI / 180) })
 
-function bonecoNaJanela(aj, ev = {}) {
+function bonecoNaJanela(aj, ev = {}, emo = null) {
   // a pose sai do evento mais recente; cada troca de pose é uma mola
   // primeiro aponta para o objeto; os EVENTOS mandam sempre por cima disso, pela ordem em que acontecem
   const eventos = ['quebra', 'atraso', 'festa', 'susto'].filter((k) => ev[k] !== null && ev[k] !== undefined).map((k) => [{ quebra: 'susto', atraso: 'coca', festa: 'festa', susto: 'susto' }[k], aj - ev[k]]).sort((x, y) => x[1] - y[1])
@@ -36,6 +36,10 @@ function bonecoNaJanela(aj, ev = {}) {
   const L = (a, b) => `<line x1="${a.x.toFixed(1)}" y1="${a.y.toFixed(1)}" x2="${b.x.toFixed(1)}" y2="${b.y.toFixed(1)}"/>`
   const s = HEAD / 60, ex = 22 * s, ey = hc.y - 6 * s, cx = hc.x + 8 * s, er = Math.max(2.5 * s, 8 * s * pose.eye), by = ey - 24 * s, bt = pose.brow * 0.6 * s, my = hc.y + 26 * s
   const boca = pose.open > 0.3 ? `<ellipse cx="${cx}" cy="${my}" rx="${10 * s}" ry="${13 * s * pose.open}" fill="${BK}"/>` : `<path d="M ${cx - 24 * s} ${my} Q ${cx} ${my + pose.mouth * 20 * s} ${cx + 24 * s} ${my}" stroke="${BK}" stroke-width="${7 * s}" fill="none" stroke-linecap="round"/>`
+  // 17/10: com emoção (rosto.js), a cara é a mesma do vídeo longo — chora, ferve, cora, dorme…
+  if (emo && typeof rosto === 'function') return `<g><ellipse cx="${x0.toFixed(1)}" cy="${chao + 4}" rx="70" ry="10" fill="rgba(0,0,0,0.2)"/>
+    <g stroke="${BK}" stroke-width="${STK}" stroke-linecap="round">${L(hip, kL)}${L(kL, fL)}${L(hip, kR)}${L(kR, fR)}${L(hip, sh)}${L(sh, eL)}${L(eL, mL)}${L(sh, eR)}${L(eR, mR)}</g>
+    ${rosto(hc, pose, emo.nome, emo.k, emo.a, emo.t, emo.fala, 0, HEAD, STK)}</g>`
   return `<g><ellipse cx="${x0.toFixed(1)}" cy="${chao + 4}" rx="70" ry="10" fill="rgba(0,0,0,0.2)"/>
     <g stroke="${BK}" stroke-width="${STK}" stroke-linecap="round">${L(hip, kL)}${L(kL, fL)}${L(hip, kR)}${L(kR, fR)}${L(hip, sh)}${L(sh, eL)}${L(eL, mL)}${L(sh, eR)}${L(eR, mR)}</g>
     <circle cx="${hc.x.toFixed(1)}" cy="${hc.y.toFixed(1)}" r="${HEAD.toFixed(1)}" fill="#fff" stroke="${BK}" stroke-width="${STK}"/>

@@ -19,6 +19,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { PALAVRAS_OBJETO, PALAVRAS_EVENTO } from './palavras.mjs'
+import { escolherEmocao } from './emocoes.mjs'
 import { iniciosDasCenas, duracaoDoVideoSec, VOZ_ENTRA_FRAMES, RESPIRO_SEC, CARTAO_CAPITULO_FRAMES, SIGNATURE_FRAMES, TELA_FINAL_FRAMES } from '../src/scripts/youtube/srt-longo.js'
 import { BORDAO } from '../src/scripts/youtube/lib/schema-short.js'
 
@@ -108,25 +109,9 @@ const curto = (rotulo) => { const r = String(rotulo || '').replace(/^(o|a|os|as)
 
 // ── A EMOÇÃO DE CADA CENA (17/10, o Ed: "ele tem que passar um sentimento… o público tem que achar ele
 // fofinho, como um amiguinho de verdade"). Sai das palavras da frase; nunca a mesma duas vezes seguidas. ──
-const EMOCOES = [
-  ['triste', ['faltou', 'faltava', 'faltavam', 'falta', 'perdi', 'perdeu', 'divida', 'dividas', 'chorar', 'chorei', 'triste', 'sozinho', 'apertado', 'apertou', 'sumiu', 'sumia', 'vazio', 'acabou', 'negativo', 'vermelho']],
-  ['nervoso', ['raiva', 'nervoso', 'juros', 'multa', 'cobranca', 'cobrou', 'cobra', 'cobram', 'atrasada', 'atrasou', 'atraso', 'caro', 'absurdo', 'irritado', 'estresse', 'briga', 'culpado']],
-  ['susto', ['susto', 'assustei', 'assustadora', 'choque', 'vibrou', 'inacreditavel', 'assustou', 'gritou', 'escaparem', 'escapando', 'tremi']],
-  ['feliz', ['sobrou', 'sobra', 'sobrava', 'consegui', 'guardei', 'guardar', 'alivio', 'tranquilo', 'feliz', 'livre', 'liberdade', 'aposentar', 'aposenta', 'economizei', 'reserva', 'mudou', 'paz', 'leve']],
-  ['pensativo', ['pensei', 'pensava', 'achava', 'achei', 'entender', 'entendi', 'descobrir', 'descobri', 'procurar', 'procurava', 'procurando', 'sera', 'duvida', 'ideia', 'perguntei', 'pergunta', 'lembrava', 'lembrar', 'imaginei']],
-  ['vergonha', ['vergonha', 'culpa', 'culpei', 'arrependo', 'arrependi', 'esqueci', 'esquecidas', 'esquecida', 'admitir', 'confesso']],
-  ['sono', ['rotina', 'repetia', 'repete', 'cansado', 'cansei', 'chato', 'devagar']],
-  ['suor', ['conta', 'contas', 'boleto', 'boletos', 'fatura', 'pagar', 'paguei', 'pagava', 'parcela', 'parcelas', 'aluguel', 'cartao']],
-  ['dinheiro', ['dinheiro', 'salario', 'ganho', 'ganhar', 'investir', 'rendeu', 'rende', 'lucro', 'pix']],
-]
 function emocaoDa(c, tela, antes) {
-  const ws = c.palavras.map((p) => norm(p.w))
   if (tela?.id === 'numero') return tela.tom === 'sai' ? (antes === 'susto' ? 'triste' : 'susto') : (antes === 'dinheiro' ? 'feliz' : 'dinheiro')
-  // "dinheiro" está em quase toda frase deste canal: vale metade, e só ganha quando não há mais nada
-  const nota = EMOCOES.map(([nome, lista]) => [nome, ws.filter((w) => lista.includes(w)).length * (nome === 'dinheiro' ? 0.5 : 1)]).filter(([, n]) => n > 0).sort((a, b) => b[1] - a[1])
-  const escolha = nota.find(([nome]) => nome !== antes)
-  if (escolha) return escolha[0]
-  return antes === 'fala' ? 'neutra' : 'fala'
+  return escolherEmocao(c.palavras.map((p) => norm(p.w)), antes)
 }
 // a pose do corpo que combina com cada emoção
 const POSE_DA_EMOCAO = { triste: 'desanimado', nervoso: 'desespero', susto: 'choque', feliz: 'festa', pensativo: 'queixo', vergonha: 'nuca', sono: 'ombros', suor: 'coca', dinheiro: 'mostra', perplexo: 'ombros', curioso: 'queixo', fala: 'mostra', neutra: 'neutra' }
@@ -342,21 +327,49 @@ cenas.forEach((c, k) => {
   if (cor !== inundacoes[inundacoes.length - 1].cor) inundacoes.push({ t, cor })
 })
 
-// ── o cursor, CALMO: só aparece nas telas do app, do extrato e da chamada, e clica uma vez ──
+// ── O CURSOR COMO QUEM EXPLICA (17/10, o Ed: "ao usar o mouse ele teria que se movimentar como alguém
+// ensinando mesmo… não movimentos somente retos… mover pra onde queremos mais atenção… e ser útil quando é
+// pra clicar, pra selecionar"). Cada visita diz ONDE (x, y a partir do meio do cartão), o GESTO à volta do alvo
+// (circula, sublinha, aponta, marca) e se CLICA. O caminho em curva e o gesto são desenhados na página. ──
 const cursor = { visitas: [] }
+const visita = (v) => cursor.visitas.push(v)
+let nNumero = 0
 for (const e of estados) {
-  // a lista: o cursor marca cada item quando a voz o diz, e no fim clica no botão
-  if (e.id === 'lista') {
-    const c = cenas[e.cena]
-    e.itens.forEach((it, k) => cursor.visitas.push({ entra: it.t + 0.1, clique: it.t + 0.5, sai: it.t + 0.85, alvo: 'item', item: k, n: e.itens.length }))
-    e.botao = Math.min(c.fim - 0.4, e.itens[e.itens.length - 1].t + 1.2)
-    cursor.visitas.push({ entra: e.botao - 0.5, clique: e.botao, sai: Math.min(c.fim, e.botao + 0.6), alvo: 'botao', n: e.itens.length })
-    continue
-  }
-  if (!['app', 'broll', 'conta', 'chamada'].includes(e.id)) continue
   const c = cenas[e.cena]
-  cursor.visitas.push({ entra: e.t + 0.6, clique: Math.min(c.fim - 0.6, e.t + 2.2), sai: c.fim - 0.2, alvo: e.id })
+  if (!c) continue
+  if (e.id === 'lista') {
+    // marca cada item quando a voz o diz, e no fim clica no botão
+    e.itens.forEach((it, k) => visita({ entra: it.t - 0.12, clique: it.t + 0.22, sai: it.t + 0.45, x: -372, y: -330 + 150 + k * 82 + 30, gesto: 'marca', seguido: k > 0 }))
+    e.botao = Math.min(c.fim - 0.4, e.itens[e.itens.length - 1].t + 1.2)
+    visita({ entra: e.botao - 0.7, clique: e.botao, sai: Math.min(c.fim, e.botao + 0.7), x: 40, y: 250, gesto: 'aponta', seguido: true })
+  } else if (e.id === 'app') {
+    const passo = ((e.passo - 1) % 5) + 1
+    const itens = valoresDoMapa.filter((v) => v.tipo === 'sai')
+    if (passo === 1 || !itens.length) visita({ entra: e.t + 0.8, clique: Math.min(c.fim - 0.6, e.t + 2.6), sai: c.fim - 0.2, x: 0, y: 112, gesto: 'circula', larg: 360 })
+    else if (passo <= 3) {
+      // a linha de que a voz fala: o cursor dá a volta, clica, e a linha fica TODA vermelha
+      const i = Math.max(0, itens.slice(0, 5).findIndex((v) => v.valor === e.valor))
+      const quandoDiz = quandoNumero(c)
+      e.linha = i
+      e.clicaLinha = Math.min(c.fim - 0.5, Math.max(e.t + 1.6, quandoDiz))
+      visita({ entra: e.t + 0.6, clique: e.clicaLinha, sai: c.fim - 0.2, x: 140, y: -320 + 140 + i * 96 + 42, gesto: 'circula', larg: 560 })
+    } else visita({ entra: e.t + 0.7, clique: null, sai: c.fim - 0.2, x: -170, y: passo === 4 ? -150 : -120, gesto: 'sublinha', larg: 520 })
+  } else if (e.id === 'broll') {
+    const v = e.valores || {}
+    const y = v.fluxo ? 125 : v.cartoes ? -95 : -300 + 140 + 42
+    visita({ entra: e.t + 0.8, clique: v.fluxo || v.cartoes ? null : e.t + 2.4, sai: c.fim - 0.2, x: v.fluxo ? -60 : 0, y, gesto: v.fluxo || v.cartoes ? 'sublinha' : 'circula', larg: 600 })
+  } else if (e.id === 'conta' && e.linhas.length) {
+    const k = Math.max(0, e.linhas.findIndex((l) => l.forte))
+    const quandoAparece = e.t + 0.3 + k * e.passo
+    visita({ entra: quandoAparece - 0.5, clique: null, sai: c.fim - 0.2, x: 0, y: -350 + 136 + k * 76 + 40, gesto: 'sublinha', larg: 700 })
+  } else if (e.id === 'chamada') {
+    visita({ entra: e.t + 1.2, clique: Math.min(c.fim - 0.5, e.t + 2.8), sai: c.fim - 0.2, x: 317, y: 98, gesto: 'aponta' })
+  } else if (e.id === 'numero' && nNumero++ % 2 === 1) {
+    // um número sim, outro não: o cursor sublinha o valor quando ele aterra (sem clicar)
+    visita({ entra: e.aterra - 0.6, clique: null, sai: Math.min(c.fim - 0.2, e.aterra + 1.8), x: -180, y: 108, gesto: 'sublinha', larg: 540 })
+  }
 }
+cursor.visitas = cursor.visitas.filter((v) => v.sai - v.entra > 0.5).sort((a, b) => a.entra - b.entra)
 
 // ── a música: a calma, sempre (o longo respira mais do que o Short) ──
 const musicas = JSON.parse(fs.readFileSync(path.join(aqui, 'musicas.json'), 'utf8'))

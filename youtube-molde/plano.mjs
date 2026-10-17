@@ -15,6 +15,7 @@ import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { SITUACOES } from './situacoes.mjs'
 import { PALAVRAS_OBJETO, PALAVRAS_EVENTO } from './palavras.mjs'
+import { escolherEmocao } from './emocoes.mjs'
 
 const aqui = path.dirname(fileURLToPath(import.meta.url))
 const raiz = path.join(aqui, '..')
@@ -266,11 +267,15 @@ cursor.chaves.sort((a, b) => a[0] - b[0])
 // agitado: o cursor está sempre lá. Nos outros, só aparece perto de cada visita.
 cursor.janelas = ritmo === 'agitado' ? [[-1, DUR + 1]] : PERFIL.visitas.map((iv) => { const e = estados[(iv + 1) % estados.length]; return [e.t - (PERFIL.vel > 2 ? 1.6 : 2.4), e.t + 1.4] })
 
+// a emoção de cada cena (17/10, pedido do Ed): o boneco da janela muda de cara com o que a voz diz
+const emocoes = []
+{ let antes = null; for (const c of cenas) { const e = escolherEmocao(c.palavras.map((p) => norm(p.w)), antes); antes = e; emocoes.push([+(c.inicio + 0.1).toFixed(3), e]) } }
+
 const plano = {
   slug, ritmo, batida: B, batidas: BATIDAS, duracao: DUR,
   rotulo, icone, valor: roteiro.valor || valorDoTexto(), metafora, aterra,
   cenas: cenas.map((c) => ({ inicio: c.inicio, audio: c.audio, palavras: c.palavras })),
-  estados, inundacoes, manchetes, cursor, fx,
+  estados, inundacoes, manchetes, cursor, fx, emocoes,
   musica: { ficheiro: ficheiroMusica, inicio: grelha.inicio },
 }
 const trab = path.join(aqui, 'trabalho', slug)

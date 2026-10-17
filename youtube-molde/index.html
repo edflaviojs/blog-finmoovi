@@ -103,6 +103,7 @@
 <script src="fundos.js"></script>
 <script src="boneco.js"></script>
 <script src="icones.js"></script>
+<script src="rosto.js"></script>
 <script>
 // ═══ MOLAS ═══
 function S(t, f, z) {
@@ -274,7 +275,11 @@ function seek(tIn) {
     if (!SEM_BONECO.has(jt.objetos[0].nome)) {
       const fim = STATES[(STATES.indexOf(jt) + 1) % STATES.length].t
       const ev = (tipo) => { const f = (PL.fx || []).find((x) => x.tipo === tipo && inWindow(x.t, jt.t, fim)); return f && inWindow(t, f.t, fim + 0.5) ? since(t, f.t) : null }
-      svg += bonecoNaJanela(aj, { quebra: quebrou ? q : null, atraso: ev('papeis'), festa: ev('confete'), susto: ev('raios') })
+      // a emoção da cena em que a janela está (a mais recente que já começou)
+      const E = PL.emocoes || [], ie = E.reduce((b, x, k) => (x[0] <= t ? k : b), -1), em = ie >= 0 ? E[ie] : null
+      const fala = PL.cenas.some((cn) => t >= cn.inicio && cn.palavras.length && t < cn.palavras[cn.palavras.length - 1].t + 0.3)
+      const emo = em ? { nome: em[1], k: clamp((t - em[0]) / 0.35), a: t - em[0], t, fala } : null
+      svg += bonecoNaJanela(aj, { quebra: quebrou ? q : null, atraso: ev('papeis'), festa: ev('confete'), susto: ev('raios') }, emo)
     }
     $('janelaSvg').innerHTML = svg
   }
@@ -315,6 +320,14 @@ function seek(tIn) {
   // extrato: a linha da despesa acende
   const xa = T.extrato === null ? 99 : since(t, T.extrato)
   $('xreal').style.borderColor = `rgba(255,90,78,${clamp((xa - 0.4) * 3) * 0.9})`
+  {
+    const iEx = STATES.findIndex((s) => s.id === 'extrato'), fimEx = iEx >= 0 ? STATES[(iEx + 1) % STATES.length].t : null
+    // o clique que abre o extrato (pode cair um instante antes dele) pinta a linha meio segundo depois
+    const cl = iEx >= 0 ? PL.cursor.cliques.find((c) => inWindow(c, T.extrato - 0.35, fimEx)) : undefined
+    const pinta = cl === undefined ? null : Math.max(cl, T.extrato + 0.6) % D
+    const cheia = pinta !== null && inWindow(t, pinta, fimEx) ? clamp(since(t, pinta) / 0.3) : 0
+    $('xreal').style.background = cheia > 0 ? mixHex('#0d1117', '#c0262d', cheia) : '#0d1117'
+  }
   $('xreal').style.transform = `scale(${1 + 0.03 * (xa < 1.2 ? pulse(xa - 0.4, 3) : 0)})`
 
   // moedas do ralo
@@ -352,7 +365,18 @@ function seek(tIn) {
   const cv = jan.reduce((m, [a, b]) => Math.max(m, clamp((t - a) * 3) * clamp((b - t) * 3)), 0)
   const cur = $('cursor')
   cur.style.opacity = cv
-  cur.style.transform = `translate(${(540 + cursorX(t) * c - 8).toFixed(2)}px, ${(950 + cursorY(t) * c - 5).toFixed(2)}px) scale(${1 - 0.16 * clamp(cursorPress(t))})`
+  // 17/10, o Ed: "toda vez que o cursor aparece ele tem que fazer movimentos como se fosse uma explicação de
+  // uma pessoa, e não movimentos somente retos". O caminho dobra para o lado (como a mão faz), e antes de cada
+  // clique o cursor dá uma volta em espiral à volta do alvo e assenta exatamente nele.
+  let cx = cursorX(t), cy = cursorY(t)
+  const vx = (cursorX(t + 0.02) - cursorX(t - 0.02)) / 0.04, vy = (cursorY(t + 0.02) - cursorY(t - 0.02)) / 0.04
+  const vel = Math.hypot(vx, vy), dobra = Math.min(90, vel * 0.08) / (vel || 1)
+  cx += -vy * dobra; cy += vx * dobra
+  for (const cl of PL.cursor.cliques) {
+    const d = since(cl, t) // segundos até ao clique
+    if (d > 0 && d < 0.85) { const u = d / 0.85, ang = u * Math.PI * 2 * 1.2; cx += 48 * u * Math.cos(ang); cy += 30 * u * Math.sin(ang) }
+  }
+  cur.style.transform = `translate(${(540 + cx * c - 8).toFixed(2)}px, ${(950 + cy * c - 5).toFixed(2)}px) scale(${1 - 0.16 * clamp(cursorPress(t))})`
 }
 
 function cues() {
