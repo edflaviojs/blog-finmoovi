@@ -1,5 +1,6 @@
-// AS MANCHETES DO VÍDEO LONGO — 1 a 3 palavras de cada cena, as que mais batem, escolhidas por uma IA GRÁTIS
-// (a mesma fila do robô: Cerebras → Groq → NVIDIA → Gemini → Cloudflare; custo $0).
+// AS MANCHETES DO VÍDEO LONGO — 1 a 3 palavras de cada cena, as que mais batem.
+// 17/10, o Ed autorizou ("4 - pode"): escreve o SONNET (o mesmo escritor do roteiro, ~US$ 0,02 por vídeo, do crédito
+// de API do Max). Se ele falhar, cai na fila grátis (no passo do molde só há o Gemini e a Cloudflare).
 //   node youtube-molde/manchetes-longo.mjs --slug=<slug>   → youtube-molde/trabalho/<slug>/manchetes.json
 // ⚠️ A IA NÃO ESCREVE NADA SEU: cada manchete tem de ser um pedaço SEGUIDO da própria frase, com as mesmas
 // palavras pela mesma ordem. A que não for é deitada fora, e essa cena fica com a regra automática do plano.
@@ -27,7 +28,7 @@ ${frases}`
 
 const ok = {}
 try {
-  const resposta = await generateText(pedido, { maxTokens: 6000, temperature: 0.3, esforcoRaciocinio: 'low' })
+  const resposta = await generateText(pedido, { maxTokens: 6000, temperature: 0.3, esforcoRaciocinio: 'low', pago: 'leitor', servico: 'longo' })
   const texto = typeof resposta === 'string' ? resposta : resposta?.text || ''
   const json = JSON.parse(texto.slice(texto.indexOf('{'), texto.lastIndexOf('}') + 1))
   // cada cena guarda uma LISTA (1 ou 2 manchetes), pela ordem da fala

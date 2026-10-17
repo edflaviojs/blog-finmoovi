@@ -916,9 +916,10 @@ jobs:
         if: vars.MOLDE_LONGO == 'sim' && steps.escolher.outputs.skip != 'true' && steps.dia.outputs.so_conteudo != 'true'
         continue-on-error: true
         timeout-minutes: 120
-        # 17/10: só o Gemini (e a Cloudflare de reserva), ambos grátis: medido, o Gemini acerta 63 de 64
-        # manchetes e o gpt-oss do Groq só 12 — a fila normal punha o Groq à frente.
+        # 17/10: as manchetes escreve-as o Sonnet (autorizado pelo Ed, ~US$ 0,02/vídeo); se falhar, só o Gemini
+        # (e a Cloudflare de reserva), grátis — medido: o Gemini acerta 63 de 64, o gpt-oss do Groq só 12.
         env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}

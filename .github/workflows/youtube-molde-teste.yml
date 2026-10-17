@@ -78,9 +78,10 @@ jobs:
           npx playwright install --with-deps chromium
 
       - name: Fazer o Short no molde (e medir o tempo)
-        # 17/10: só o Gemini (e a Cloudflare de reserva), ambos grátis: medido, o Gemini acerta 63 de 64
-        # manchetes e o gpt-oss do Groq só 12 — a fila normal punha o Groq à frente.
+        # 17/10: as manchetes escreve-as o Sonnet (autorizado pelo Ed, ~US$ 0,02/vídeo); se falhar, só o Gemini
+        # (e a Cloudflare de reserva), grátis — medido: o Gemini acerta 63 de 64, o gpt-oss do Groq só 12.
         env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           # só as IAs GRÁTIS (as manchetes do longo); nenhuma chave paga entra aqui
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
