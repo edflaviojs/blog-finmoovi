@@ -205,7 +205,7 @@ function manchete(c, tela) {
     const jan = ws.slice(a, a + n), ultima = jan[n - 1]
     if (jan.slice(0, -1).some((w) => /[.!?;:,]$/.test(w))) continue // não atravessa uma vírgula ou um ponto
     if (pesa(jan[0]) === 0 && !/^(nao|nunca|sem|nem)$/.test(norm(jan[0]))) continue
-    if (pesa(ultima) === 0) continue
+    if (pesa(ultima) === 0 || norm(ultima).length < 4) continue // nunca acaba em "sem", "nem", "não"
     const txt = jan.map(limpo).join(' ')
     if (txt.length > 22) continue
     const nota = jan.reduce((s, w) => s + pesa(w), 0) + (n === 2 ? 3 : n === 3 ? 4 : 0)
