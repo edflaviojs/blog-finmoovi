@@ -20,7 +20,8 @@ Para CADA frase, escolha a MANCHETE: de 1 a 3 palavras SEGUIDAS, copiadas da pr�
 que resumam o que a frase tem de mais forte (o susto, o número, a coisa concreta, a virada).
 A manchete aparece em letras enormes no ecrã enquanto a frase é dita, por isso tem de fazer sentido sozinha.
 Nunca comece nem acabe a manchete com palavra de ligação (de, que, e, o, a, para, porque, eu, você...).
-Responda SÓ com JSON, assim: {"1": "palavras", "2": "palavras", ...}
+Frase com MAIS de 14 palavras leva DUAS manchetes, uma da primeira metade e outra da segunda, pela ordem em que são ditas.
+Responda SÓ com JSON, assim: {"1": ["palavras"], "2": ["palavras da 1.ª metade", "palavras da 2.ª metade"], ...}
 
 ${frases}`
 
@@ -29,12 +30,15 @@ try {
   const resposta = await generateText(pedido, { maxTokens: 6000, temperature: 0.3, esforcoRaciocinio: 'low' })
   const texto = typeof resposta === 'string' ? resposta : resposta?.text || ''
   const json = JSON.parse(texto.slice(texto.indexOf('{'), texto.lastIndexOf('}') + 1))
+  // cada cena guarda uma LISTA (1 ou 2 manchetes), pela ordem da fala
   for (const c of roteiro.scenes) {
-    const m = String(json[c.id] || '').trim()
-    const mw = m.split(/\s+/).map(norm).filter(Boolean)
     const fw = c.narration.split(/\s+/).map(norm)
-    const cabe = mw.length >= 1 && mw.length <= 3 && fw.some((_, k) => mw.every((w, j) => fw[k + j] === w))
-    if (cabe && m.length <= 24) ok[c.id] = m.replace(/[.,;:!?…]+$/g, '')
+    const lista = (Array.isArray(json[c.id]) ? json[c.id] : [json[c.id]]).map((m) => String(m || '').trim()).filter(Boolean)
+    const boas = lista.filter((m) => {
+      const mw = m.split(/\s+/).map(norm).filter(Boolean)
+      return m.length <= 24 && mw.length >= 1 && mw.length <= 3 && fw.some((_, k) => mw.every((w, j) => fw[k + j] === w))
+    }).map((m) => m.replace(/[.,;:!?…]+$/g, ''))
+    if (boas.length) ok[c.id] = boas.slice(0, 2)
   }
   console.log(`manchetes: ${Object.keys(ok).length} de ${roteiro.scenes.length} cenas aceites (as outras ficam com a regra automática)`)
 } catch (e) {

@@ -3,7 +3,10 @@
   O MOLDE DO VÍDEO LONGO — deitado (1920×1080). Desenha qualquer plano.json feito por plano-longo.mjs.
   O mesmo estilo do Short e do piloto "Economizar R$ 300": a cor do fundo muda por capítulo, uma manchete
   com a palavra de impacto a acender, o boneco sempre em cena, e UM cartão que nunca corta — ele muda de
-  forma para cada tela (número, desenho, fotografia, app, extrato, objeto, frase).
+  forma para cada tela (número, desenho, fotografia, app, extrato, lista, objeto, frase).
+  17/10 (2.ª volta, pedidos do Ed): o boneco com EMOÇÕES (chora, ferve, pensa, cora, dorme, olhos de cifrão),
+  o close no rosto, o balão de pensamento, o desenho solto sem fundo preto, a folha de caderno com o cursor
+  a marcar, o aviso "daqui a pouco" como pensamento do boneco, e a tela final na medida dos quadros do YouTube.
   Cada quadro é função pura do tempo: seek(t). O render injeta o plano em window.__PLANO__.
   Prévia: abrir com ?plano=trabalho/<slug>/plano.json&t=<segundos> num servidor local.
 -->
@@ -53,7 +56,10 @@
   </div>
   <div id="heads"></div>
 
+  <!-- o desenho SOLTO (sem cartão, sem fundo preto) e o balão de pensamento do palco -->
+  <svg id="soltoSvg" class="abs" style="left:0;top:0" width="1920" height="1080"></svg>
   <svg id="boneco" class="abs" style="left:0;top:0" width="1920" height="1080"></svg>
+  <svg id="balaoSvg" class="abs" style="left:0;top:0" width="1920" height="1080"></svg>
 
   <div id="world">
     <div id="shape">
@@ -81,6 +87,17 @@
         <div class="abs" style="left:44px;top:82px;font-size:24px;font-weight:600;color:#6b6250">no papel, linha a linha</div>
         <div id="contaRows"></div>
       </div>
+      <!-- a folha de caderno: cada item escrito quando a voz o diz, o cursor marca, o botão no fim -->
+      <div class="layer" id="L-lista" style="color:#0d1117">
+        <svg class="abs" style="left:0;top:0" width="880" height="660">
+          <line x1="96" y1="0" x2="96" y2="660" stroke="#ff8a8a" stroke-width="3"/>
+          
+        </svg>
+        <div id="pautas"></div>
+        <div class="abs disp" style="left:120px;top:34px;font-size:36px;font-weight:800">A minha lista</div>
+        <div id="listaRows"></div>
+        <div class="abs disp" id="listaBotao" style="left:0;right:0;bottom:36px;margin:0 auto;width:420px;height:84px;border-radius:42px;background:#16a34a;color:#fff;text-align:center;font-size:32px;font-weight:900;line-height:84px">Tudo conferido ✓</div>
+      </div>
       <div class="layer" id="L-janela"><svg id="janelaSvg" class="abs" style="left:50px;top:20px" width="900" height="560" viewBox="0 0 900 560"></svg></div>
       <div class="layer" id="L-frase">
         <div class="abs sub" id="fraseEtq" style="left:56px;right:56px;top:46px;font-size:30px;font-weight:700;text-align:center"></div>
@@ -102,15 +119,17 @@
   <div id="cap"><div id="capBox"></div></div>
 
   <!-- as telas por cima de tudo -->
-  <div class="over" id="O-capa"><div class="abs" id="capaFundo" style="left:0;top:0;width:1920px;height:1080px;background:#0d1117"></div>
+  <div class="over" id="O-capa"><div class="abs" style="left:0;top:0;width:1920px;height:1080px;background:#0d1117"></div>
     <div class="abs disp" id="capaTxt" style="left:160px;right:160px;top:240px;height:600px;display:flex;flex-wrap:wrap;align-content:center;justify-content:center;text-align:center;font-size:92px;font-weight:900;line-height:118px;letter-spacing:-3px;color:#f0f6fc"></div></div>
   <div class="over" id="O-capitulo"><div class="abs" id="capFundo" style="border-radius:50%"></div>
     <div class="abs disp" id="capNumGrande" style="right:90px;top:40px;font-size:640px;font-weight:900;line-height:1;color:rgba(13,17,23,0.08)"></div>
     <div class="abs disp" id="capEtq" style="left:160px;top:300px;height:72px;padding:0 30px;border-radius:36px;background:#0d1117;color:#f0f6fc;font-size:32px;font-weight:800;line-height:72px"></div>
     <div class="abs disp" id="capTitulo" style="left:160px;right:260px;top:410px;font-size:84px;font-weight:900;line-height:104px;letter-spacing:-2.5px;color:#0d1117"></div></div>
-  <div class="over" id="O-pausa"><div class="abs" style="left:0;top:0;width:1920px;height:1080px;background:#0d1117"></div>
-    <div class="abs disp" id="pausaEtq" style="left:0;right:0;top:300px;text-align:center"><span style="display:inline-block;height:68px;padding:0 30px;border-radius:34px;background:#fde047;color:#0d1117;font-size:30px;font-weight:800;line-height:68px" id="pausaEtqTxt"></span></div>
-    <div class="abs disp" id="pausaTxt" style="left:180px;right:180px;top:410px;text-align:center;font-size:76px;font-weight:900;line-height:96px;letter-spacing:-2px;color:#f0f6fc"></div></div>
+  <!-- o aviso "daqui a pouco": a frase é um pensamento do boneco -->
+  <div class="over" id="O-pausa"><div class="abs" id="pausaFundo" style="left:0;top:0;width:1920px;height:1080px"></div>
+    <svg id="pausaSvg" class="abs" style="left:0;top:0" width="1920" height="1080"></svg>
+    <div class="abs disp" id="pausaTxt" style="left:760px;width:900px;top:250px;height:330px;display:flex;align-items:center;justify-content:center;text-align:center;font-size:58px;font-weight:900;line-height:72px;letter-spacing:-1.5px;color:#0d1117"></div>
+    <div class="abs" id="pausaEtq" style="left:760px;width:900px;top:790px;text-align:center"><span style="display:inline-block;height:72px;padding:0 34px;border-radius:36px;background:#0d1117;color:#fde047;font-family:Unbounded;font-size:32px;font-weight:800;line-height:72px" id="pausaEtqTxt"></span></div></div>
   <div class="over" id="O-bordao"><div class="abs" style="left:0;top:0;width:1920px;height:1080px;background:#fde047"></div>
     <div class="abs disp" id="bordaoTxt" style="left:200px;right:200px;top:300px;height:480px;display:flex;align-items:center;justify-content:center;text-align:center;font-size:96px;font-weight:900;line-height:120px;letter-spacing:-3px;color:#0d1117"></div></div>
   <div class="over" id="O-assinatura"><div class="abs" style="left:0;top:0;width:1920px;height:1080px;background:#0d1117"></div>
@@ -119,12 +138,16 @@
       <div class="disp" style="font-weight:800;font-size:130px;letter-spacing:-3px;line-height:1"><span style="color:#f0f6fc">Fin</span><span class="grad">Moovi</span></div>
     </div>
     <div class="abs sub" style="left:0;right:0;top:600px;text-align:center;font-size:36px;font-weight:700">o seu dinheiro, à vista</div></div>
+  <!-- 🔴 17/10: os dois lugares têm a MEDIDA dos quadros do YouTube (medida no print do editor do Ed):
+       vídeo/playlist 623×351 em (1109,173); botão de inscrever, círculo de 299 com centro em (1405,771).
+       O desenho fica 6 px à volta, para o quadro do YouTube cair exatamente dentro. -->
   <div class="over" id="O-final"><div class="abs" style="left:0;top:0;width:1920px;height:1080px;background:#0d1117"></div>
     <div class="abs disp" style="left:115px;top:238px;width:800px;font-size:110px;font-weight:900;line-height:120px;letter-spacing:-4px;color:#f0f6fc">Continue<br />por aqui</div>
-    <div class="abs" style="left:115px;top:520px;width:800px;font-size:40px;font-weight:600;line-height:54px;color:#c9d1d9">Assista à playlist ao lado e <span style="color:#22d3ee;font-weight:800">se inscreva</span> pra não perder o de domingo.</div>
-    <div class="abs" style="left:115px;top:700px;width:800px;font-size:30px;font-weight:700;color:#8b949e">app.finmoovi.com · 7 dias grátis, sem instalar</div>
-    <div class="abs" style="left:1037px;top:151px;width:730px;height:410px;border-radius:28px;border:4px dashed #30363d;box-sizing:border-box;display:grid;place-items:center;text-align:center;color:#8b949e;font-size:34px;font-weight:800;letter-spacing:3px">▶&nbsp; A PLAYLIST<br />DO CANAL</div>
-    <div class="abs" style="left:1219px;top:605px;width:355px;height:355px;border-radius:50%;border:4px dashed #30363d;box-sizing:border-box;display:grid;place-items:center;color:#8b949e;font-size:30px;font-weight:800;letter-spacing:3px">INSCREVA-SE</div></div>
+    <div class="abs" style="left:115px;top:520px;width:820px;font-size:40px;font-weight:600;line-height:54px;color:#c9d1d9">Escolha o próximo aí do lado e <span style="color:#22d3ee;font-weight:800">se inscreva</span> pra não perder o de domingo.</div>
+    <div class="abs" style="left:115px;top:700px;width:820px;font-size:30px;font-weight:700;color:#8b949e">app.finmoovi.com · 7 dias grátis, sem instalar</div>
+    <div class="abs" id="slotVideo" style="left:1103px;top:167px;width:635px;height:363px;border-radius:18px;border:4px dashed #3d444d;box-sizing:border-box"></div>
+    <div class="abs" id="slotInscreva" style="left:1249px;top:615px;width:312px;height:312px;border-radius:50%;border:4px dashed #3d444d;box-sizing:border-box"></div>
+    <svg class="abs" id="setaFinal" style="left:1030px;top:735px" width="70" height="70" viewBox="0 0 70 70"><path d="M14 10 L60 35 L14 60 Z" fill="#22d3ee"/></svg></div>
 
   <svg id="cursor" viewBox="0 0 34 34"><path d="M4 2.5 L4 26.5 L10.2 20.6 L14.3 30 L18.6 28.1 L14.6 19 L23 19 Z" fill="#0d1117" stroke="#fff" stroke-width="2" stroke-linejoin="round"/></svg>
 </div>
@@ -150,7 +173,7 @@ function S(t, f, z) {
 function pulse(t, f) { if (t <= 0) return 0; const x = 2 * Math.PI * f * t; return x * Math.exp(1 - x) }
 const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x))
 const lerp = (a, b, p) => a + (b - a) * p
-const SPR = { shape: { f: 1.4, z: 0.85 }, enter: { f: 2.8, z: 1 }, exit: { f: 7, z: 1 }, press: { f: 9, z: 1 }, snap: { f: 2.6, z: 0.65 }, word: { f: 2.8, z: 0.75 }, pose: { f: 1.6, z: 0.75 }, cam: { f: 0.35, z: 1 }, calmo: { f: 0.8, z: 1 }, anda: { f: 0.6, z: 1 } }
+const SPR = { shape: { f: 1.4, z: 0.85 }, enter: { f: 2.8, z: 1 }, exit: { f: 7, z: 1 }, press: { f: 9, z: 1 }, snap: { f: 2.6, z: 0.65 }, word: { f: 2.8, z: 0.75 }, pose: { f: 1.6, z: 0.75 }, cam: { f: 0.35, z: 1 }, calmo: { f: 0.8, z: 1 }, anda: { f: 0.6, z: 1 }, close: { f: 0.9, z: 1 } }
 const INK = '#0d1117', CARD = '#161b22'
 // O vídeo longo NÃO dá a volta (não é loop): um valor = o primeiro + uma mola por mudança.
 // Uma mola que já assentou conta inteira sem se calcular (são centenas de chaves em 8 minutos).
@@ -167,17 +190,23 @@ function track(keys, def = SPR.shape) {
   }
 }
 // o último da lista que já começou (as listas vêm por ordem de tempo)
-function ultimo(list, t) { let lo = 0, hi = list.length - 1, b = -1; while (lo <= hi) { const m = (lo + hi) >> 1; if (list[m].t <= t) { b = m; lo = m + 1 } else hi = m - 1 } return b }
+function ultimo(list, t, chave = (x) => x.t) { let lo = 0, hi = list.length - 1, b = -1; while (lo <= hi) { const m = (lo + hi) >> 1; if (chave(list[m]) <= t) { b = m; lo = m + 1 } else hi = m - 1 } return b }
 function mixHex(a, b, p) { const A = [1, 3, 5].map((i) => parseInt(a.slice(i, i + 2), 16)), Bc = [1, 3, 5].map((i) => parseInt(b.slice(i, i + 2), 16)); return `rgb(${A.map((x, i) => Math.round(lerp(x, Bc[i], clamp(p)))).join(',')})` }
 function visStyle(el, vis, blurMax = 10) { el.style.opacity = clamp(vis).toFixed(4); const b = (1 - clamp(vis)) * blurMax; el.style.filter = b > 0.05 ? `blur(${b.toFixed(2)}px)` : 'none'; el.style.visibility = vis < 0.002 ? 'hidden' : 'visible' }
 const $ = (id) => document.getElementById(id)
 const reais = (n) => 'R$ ' + Math.round(n).toLocaleString('pt-BR')
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;')
+const f1 = (x) => x.toFixed(1)
 
 // ═══ TAMANHOS DAS TELAS ═══ [largura, altura, raio, fundo]
-const TAM = { numero: [900, 460, 56, CARD], meta: [620, 600, 70, CARD], foto: [1040, 600, 40, CARD], app: [820, 640, 56, CARD], broll: [900, 600, 56, CARD], conta: [880, 700, 34, '#FFF8E7'], janela: [1000, 600, 48, CARD], frase: [1100, 420, 56, CARD], chamada: [960, 360, 56, CARD], nada: [620, 600, 70, CARD] }
+const TAM = { numero: [900, 460, 56, CARD], meta: [620, 600, 70, CARD], foto: [1040, 600, 40, CARD], app: [820, 640, 56, CARD], broll: [900, 600, 56, CARD], conta: [880, 700, 34, '#FFF8E7'], lista: [880, 660, 30, '#FFFDF5'], janela: [1000, 600, 48, CARD], frase: [1100, 420, 56, CARD], chamada: [960, 360, 56, CARD], nada: [620, 600, 70, CARD] }
 
-let PL, D, ST, shapeW, shapeH, shapeR, cardOn, layerVis, cam, heads, poseTracks, bonecoX, curX, curY, curVis, curPress, telasDe, SOBRE
+let PL, D, ST, shapeW, shapeH, shapeR, cardOn, layerVis, cam, heads, poseTracks, bonecoX, closeK, curX, curY, curVis, curPress, telasDe, SOBRE, EMO
+function alvoDoCursor(v) {
+  if (v.alvo === 'item') return [-372, -330 + 150 + v.item * 82 + 30]
+  if (v.alvo === 'botao') return [90, 330 - 78]
+  return ({ app: [120, 120], broll: [140, 80], conta: [260, 200], chamada: [320, 100] })[v.alvo] || [0, 0]
+}
 function montar(plano) {
   PL = plano; D = plano.duracao
   ST = plano.estados.map((e) => ({ ...e, w: TAM[e.id][0], h: TAM[e.id][1], r: TAM[e.id][2], bg: TAM[e.id][3] }))
@@ -190,10 +219,7 @@ function montar(plano) {
   ST.forEach((s, i) => { if (s.id === 'nada') return; const nx = i + 1 < ST.length ? ST[i + 1].t : D + 1; (layerVis[s.id] ||= []).push(track([[-1, 0], [s.t + 0.12, 1, SPR.enter], [nx - 0.04, 0, SPR.exit]])) })
   document.querySelectorAll('.layer').forEach((el) => { if (!layerVis[el.id.slice(2)]) { el.style.visibility = 'hidden'; el.style.opacity = '0' } })
   telasDe = {}; ST.forEach((s) => (telasDe[s.id] ||= []).push(s))
-  // a câmara aproxima devagar dentro de cada cena (o longo respira)
   cam = track([[0, 1], ...PL.cenas.flatMap((c) => [[c.inicio, 1, { f: 2, z: 1 }], [c.inicio + 0.3, 1.04, SPR.cam]])], SPR.cam)
-  // a fotografia: só uma imagem de cada vez no ecrã, e já carregada antes do PRONTO
-  // manchetes
   heads = PL.manchetes.map((m) => {
     const el = document.createElement('div'); el.className = 'head'
     el.innerHTML = m.palavras.map((w) => `<span class="w">${esc(w)}</span>`).join('')
@@ -202,76 +228,208 @@ function montar(plano) {
     while ((el.scrollWidth > 1760 || el.scrollHeight > 150) && fs > 56) { fs -= 6; el.style.fontSize = fs + 'px' }
     return { el, m, words: [...el.children] }
   })
-  // o boneco: a pose e o lugar (ao lado do cartão, ou no meio do palco)
+  // o boneco: a pose, o lugar (ao lado do cartão, no meio do palco, ou em close no rosto) e a emoção
   const P = PL.poses.length ? PL.poses : [[0, 'neutra', 'lado']]
   poseTracks = Object.fromEntries(Object.keys(POSES.neutra).map((k) => [k, track([[-1, POSES.neutra[k]], ...P.map(([t, n]) => [t, (POSES[n] || POSES.neutra)[k]])], SPR.pose)]))
-  bonecoX = track([[-1, -260], [0.3, 330, SPR.anda], ...P.map(([t, , onde]) => [t, onde === 'centro' ? 760 : 330, SPR.anda])], SPR.anda)
-  // o cursor calmo: entra, vai ao alvo devagar, clica uma vez, sai
+  bonecoX = track([[-1, -260], [0.3, 330, SPR.anda], ...P.map(([t, , onde]) => [t, onde === 'centro' || onde === 'close' ? 760 : 330, SPR.anda])], SPR.anda)
+  closeK = track([[-1, 0], ...P.map(([t, , onde]) => [t + (onde === 'close' ? 0.2 : 0), onde === 'close' ? 1 : 0, SPR.close])], SPR.close)
+  EMO = (PL.emocoes || []).map(([t, nome]) => ({ t, nome }))
+  // o cursor: entra, vai ao alvo devagar, clica, sai
   const v = PL.cursor.visitas
-  const ALVO = { app: [120, 120], broll: [140, 80], conta: [260, 200], chamada: [320, 100] }
-  curX = track([[-1, 520], ...v.flatMap((x) => [[x.entra, 520, SPR.calmo], [x.entra + 0.2, ALVO[x.alvo][0], SPR.calmo], [x.sai, 520, SPR.calmo]])], SPR.calmo)
-  curY = track([[-1, 420], ...v.flatMap((x) => [[x.entra, 420, SPR.calmo], [x.entra + 0.2, ALVO[x.alvo][1], SPR.calmo], [x.sai, 420, SPR.calmo]])], SPR.calmo)
-  curVis = track([[-1, 0], ...v.flatMap((x) => [[x.entra, 1, SPR.enter], [x.sai, 0, SPR.exit]])])
+  curX = track([[-1, 520], ...v.flatMap((x) => [[x.entra, x.alvo === 'item' && x.item > 0 ? alvoDoCursor({ ...x, item: x.item - 1 })[0] : 520, SPR.calmo], [x.entra + 0.05, alvoDoCursor(x)[0], x.alvo === 'item' ? SPR.snap : SPR.calmo], [x.sai, x.alvo === 'item' && x.item + 1 < x.n ? alvoDoCursor(x)[0] : 520, SPR.calmo]])], SPR.calmo)
+  curY = track([[-1, 420], ...v.flatMap((x) => [[x.entra, x.alvo === 'item' && x.item > 0 ? alvoDoCursor({ ...x, item: x.item - 1 })[1] : 420, SPR.calmo], [x.entra + 0.05, alvoDoCursor(x)[1], x.alvo === 'item' ? SPR.snap : SPR.calmo], [x.sai, x.alvo === 'item' && x.item + 1 < x.n ? alvoDoCursor(x)[1] : 420, SPR.calmo]])], SPR.calmo)
+  curVis = track([[-1, 0], ...v.flatMap((x) => [[x.entra - 0.1, 1, SPR.enter], [x.sai + (x.alvo === 'item' && x.item + 1 < x.n ? 0.4 : 0), 0, SPR.exit]])])
   curPress = v.length ? track([[-1, 0], ...v.flatMap((x) => [[x.clique - 0.07, 1, SPR.press], [x.clique + 0.06, 0, SPR.enter]])]) : () => 0
-  // as telas por cima
+  // a folha da lista: pautas fixas
+  $('pautas').innerHTML = Array.from({ length: 7 }, (_, i) => `<div class="abs" style="left:0;right:0;top:${150 + i * 82 + 66}px;height:2px;background:#cfe0f5"></div>`).join('')
   SOBRE = PL.sobreposicoes
   const capa = SOBRE.find((o) => o.tipo === 'capa')
-  if (capa) $('capaTxt').innerHTML = capa.texto.split(/\s+/).map((w) => `<span class="cw" style="display:inline-block;margin:0 12px;padding:0 10px;border-radius:18px">${esc(w)}</span>`).join('')
+  if (capa) $('capaTxt').innerHTML = capa.texto.split(/\s+/).map((w) => `<span style="display:inline-block;margin:0 12px;padding:0 10px;border-radius:18px">${esc(w)}</span>`).join('')
   $('bordaoTxt').textContent = (SOBRE.find((o) => o.tipo === 'bordao') || {}).texto || ''
 }
 
 // ═══ O BONECO ═══ o esqueleto do Stickman.tsx; 0° = para baixo, sentido horário; olha para a direita (+x)
 const HEAD_R = 66, NECK = 14, TORSO = 136, UA = 84, FA = 76, UL = 98, LL = 92, STK = 20, GROUND = 930
 const POSES = {
-  neutra: { lean: 0, head: 0, sL: 18, eL: 8, sR: -6, eR: -8, hL: 10, kL: 0, hR: -10, kR: 0, brow: 0, mouth: 0.2, eye: 1, open: 0 },
-  choque: { lean: -10, head: -10, sL: -128, eL: -35, sR: 128, eR: 35, hL: -4, kL: 12, hR: -24, kR: 6, brow: 22, mouth: 0, eye: 1.5, open: 1 },
-  apontar: { lean: 6, head: -4, sL: 14, eL: 10, sR: 98, eR: -6, hL: 12, kL: 0, hR: -8, kR: 0, brow: 6, mouth: 0.7, eye: 1, open: 0 },
-  queixo: { lean: 4, head: 10, sL: 40, eL: 80, sR: 35, eR: 128, hL: 10, kL: 0, hR: -10, kR: 0, brow: 14, mouth: -0.1, eye: 0.85, open: 0 },
-  ombros: { lean: 0, head: -8, sL: -62, eL: -70, sR: 62, eR: 70, hL: 8, kL: 0, hR: -8, kR: 0, brow: 16, mouth: -0.4, eye: 1.1, open: 0 },
-  coca: { lean: 6, head: 12, sL: 18, eL: 8, sR: 165, eR: 75, hL: 10, kL: 0, hR: -10, kR: 0, brow: 20, mouth: -0.7, eye: 0.9, open: 0 },
-  peito: { lean: 2, head: 6, sL: 18, eL: 8, sR: 30, eR: 135, hL: 10, kL: 0, hR: -10, kR: 0, brow: 10, mouth: -0.35, eye: 0.9, open: 0 },
-  mostra: { lean: 2, head: -2, sL: -50, eL: -40, sR: 60, eR: 45, hL: 10, kL: 0, hR: -10, kR: 0, brow: 8, mouth: 0.5, eye: 1, open: 0 },
-  desespero: { lean: -4, head: 8, sL: -160, eL: -95, sR: 160, eR: 95, hL: 6, kL: 4, hR: -8, kR: 4, brow: 24, mouth: -0.8, eye: 1.3, open: 0.6 },
-  cruzados: { lean: -2, head: -6, sL: 30, eL: 120, sR: -30, eR: -120, hL: 12, kL: 0, hR: -12, kR: 0, brow: -8, mouth: -0.3, eye: 0.9, open: 0 },
-  facepalm: { lean: 8, head: 16, sL: 18, eL: 8, sR: 150, eR: 110, hL: 10, kL: 0, hR: -10, kR: 0, brow: 18, mouth: -0.6, eye: 0.3, open: 0 },
-  ideia: { lean: 2, head: -10, sL: 18, eL: 8, sR: 150, eR: 20, hL: 10, kL: 0, hR: -10, kR: 0, brow: 4, mouth: 0.9, eye: 1.2, open: 0 },
-  heroi: { lean: -4, head: -8, sL: -40, eL: -110, sR: 40, eR: 110, hL: 16, kL: 0, hR: -16, kR: 0, brow: -4, mouth: 0.9, eye: 1, open: 0 },
-  festa: { lean: -4, head: -8, sL: -150, eL: -20, sR: 150, eR: 20, hL: 14, kL: 10, hR: -14, kR: 10, brow: 10, mouth: 1, eye: 1.1, open: 0 },
-  relogio: { lean: 0, head: 14, sL: 18, eL: 8, sR: 60, eR: 120, hL: 10, kL: 0, hR: -10, kR: 0, brow: 16, mouth: -0.2, eye: 1, open: 0 },
+  neutra: { lean: 0, head: 0, sL: 18, eL: 8, sR: -6, eR: -8, hL: 10, kL: 0, hR: -10, kR: 0, brow: 0, mouth: 0.2, eye: 1, open: 0, sit: 0 },
+  choque: { lean: -10, head: -10, sL: -128, eL: -35, sR: 128, eR: 35, hL: -4, kL: 12, hR: -24, kR: 6, brow: 22, mouth: 0, eye: 1.5, open: 1, sit: 0 },
+  apontar: { lean: 6, head: -4, sL: 14, eL: 10, sR: 98, eR: -6, hL: 12, kL: 0, hR: -8, kR: 0, brow: 6, mouth: 0.7, eye: 1, open: 0, sit: 0 },
+  queixo: { lean: 4, head: 10, sL: 40, eL: 80, sR: 35, eR: 128, hL: 10, kL: 0, hR: -10, kR: 0, brow: 14, mouth: -0.1, eye: 0.85, open: 0, sit: 0 },
+  ombros: { lean: 0, head: -8, sL: -62, eL: -70, sR: 62, eR: 70, hL: 8, kL: 0, hR: -8, kR: 0, brow: 16, mouth: -0.4, eye: 1.1, open: 0, sit: 0 },
+  coca: { lean: 6, head: 12, sL: 18, eL: 8, sR: 165, eR: 75, hL: 10, kL: 0, hR: -10, kR: 0, brow: 20, mouth: -0.7, eye: 0.9, open: 0, sit: 0 },
+  peito: { lean: 2, head: 6, sL: 18, eL: 8, sR: 30, eR: 135, hL: 10, kL: 0, hR: -10, kR: 0, brow: 10, mouth: -0.35, eye: 0.9, open: 0, sit: 0 },
+  mostra: { lean: 2, head: -2, sL: -50, eL: -40, sR: 60, eR: 45, hL: 10, kL: 0, hR: -10, kR: 0, brow: 8, mouth: 0.5, eye: 1, open: 0, sit: 0 },
+  desespero: { lean: -4, head: 8, sL: -160, eL: -95, sR: 160, eR: 95, hL: 6, kL: 4, hR: -8, kR: 4, brow: 24, mouth: -0.8, eye: 1.3, open: 0.6, sit: 0 },
+  cruzados: { lean: -2, head: -6, sL: 30, eL: 120, sR: -30, eR: -120, hL: 12, kL: 0, hR: -12, kR: 0, brow: -8, mouth: -0.3, eye: 0.9, open: 0, sit: 0 },
+  facepalm: { lean: 8, head: 16, sL: 18, eL: 8, sR: 150, eR: 110, hL: 10, kL: 0, hR: -10, kR: 0, brow: 18, mouth: -0.6, eye: 0.3, open: 0, sit: 0 },
+  ideia: { lean: 2, head: -10, sL: 18, eL: 8, sR: 150, eR: 20, hL: 10, kL: 0, hR: -10, kR: 0, brow: 4, mouth: 0.9, eye: 1.2, open: 0, sit: 0 },
+  heroi: { lean: -4, head: -8, sL: -40, eL: -110, sR: 40, eR: 110, hL: 16, kL: 0, hR: -16, kR: 0, brow: -4, mouth: 0.9, eye: 1, open: 0, sit: 0 },
+  festa: { lean: -4, head: -8, sL: -150, eL: -20, sR: 150, eR: 20, hL: 14, kL: 10, hR: -14, kR: 10, brow: 10, mouth: 1, eye: 1.1, open: 0, sit: 0 },
+  relogio: { lean: 0, head: 14, sL: 18, eL: 8, sR: 60, eR: 120, hL: 10, kL: 0, hR: -10, kR: 0, brow: 16, mouth: -0.2, eye: 1, open: 0, sit: 0 },
+  desanimado: { lean: 10, head: 22, sL: 6, eL: 4, sR: -4, eR: -4, hL: 8, kL: 0, hR: -8, kR: 0, brow: 20, mouth: -0.8, eye: 0.8, open: 0, sit: 0 },
+  nuca: { lean: 4, head: 14, sL: 18, eL: 8, sR: 170, eR: 100, hL: 10, kL: 0, hR: -10, kR: 0, brow: 14, mouth: 0.3, eye: 0.7, open: 0, sit: 0 },
+  sentado: { lean: 12, head: 18, sL: 40, eL: 30, sR: 30, eR: 40, hL: 88, kL: -88, hR: 80, kR: -80, brow: 18, mouth: -0.6, eye: 0.8, open: 0, sit: 1 },
 }
 const seg = (o, a, l) => ({ x: o.x + l * Math.sin(a * Math.PI / 180), y: o.y + l * Math.cos(a * Math.PI / 180) })
-function desenharBoneco(t) {
-  const p = Object.fromEntries(Object.entries(poseTracks).map(([k, f]) => [k, f(t)]))
-  const x0 = bonecoX(t)
-  const vel = Math.abs(bonecoX(t + 0.02) - bonecoX(t - 0.02)) / 0.04
-  const andar = clamp(vel / 260), fase = x0 * 0.045
-  // fala com o corpo: um balanço pequeno enquanto a voz está a falar
-  const falando = PL.cenas.some((c) => t >= c.inicio && t < c.fim - 0.2) ? 1 : 0
-  const bob = Math.sin(t * 2.4) * 3 + Math.abs(Math.sin(fase)) * 10 * andar
-  const gesto = falando * Math.sin(t * 3.1) * 6
-  const hip = { x: x0, y: GROUND - UL - LL + bob }
+
+// O ROSTO E O QUE SAI DELE — cada emoção acrescenta coisas que se veem (lágrimas, fumo, gotas, bochechas…).
+// k = quanto a emoção já entrou (0 a 1); a = segundos desde que entrou; fala = a voz está a falar agora.
+function rosto(hc, p, emo, k, a, t, fala, olhaCima = 0) {
+  const s = HEAD_R / 60, ex = 22 * s, cx = hc.x + 8 * s, cy = hc.y
+  let ey = cy - 6 * s - 6 * s * olhaCima, brow = p.brow, mouth = p.mouth, eye = p.eye, open = p.open
+  let corCara = '#fff', extra = '', olhos = null, sobrancelhas = null, frente = ''
+  const pisca = (t % 4.3) < 0.12 ? 0.1 : 1
+  // as bochechas rosadas: sempre um pouco (é o que o faz "fofinho")
+  let bochecha = 0.28
+  if (emo === 'triste') {
+    brow = lerp(brow, 26, k); mouth = lerp(mouth, -0.9, k) + Math.sin(t * 22) * 0.06 * k; eye = lerp(eye, 1.05, k)
+    // duas lágrimas de cada lado, a escorrer e a pingar
+    for (const lado of [-1, 1]) for (let i = 0; i < 2; i++) {
+      const fase = ((a * 0.9 + i * 0.5 + (lado > 0 ? 0.25 : 0)) % 1)
+      const x = cx + lado * ex + lado * 4 * s, y = ey + 12 * s + fase * 70 * s
+      extra += `<path d="M ${f1(x)} ${f1(y - 9 * s)} Q ${f1(x + 7 * s)} ${f1(y + 4 * s)} ${f1(x)} ${f1(y + 7 * s)} Q ${f1(x - 7 * s)} ${f1(y + 4 * s)} ${f1(x)} ${f1(y - 9 * s)} Z" fill="#5BC8FF" opacity="${f1(k * (1 - fase * 0.6))}"/>`
+    }
+  } else if (emo === 'nervoso') {
+    brow = lerp(brow, -22, k); mouth = lerp(mouth, -0.6, k)
+    corCara = mixHex('#ffffff', '#ff7b6b', clamp(k * (0.6 + 0.4 * clamp(a / 2))))
+    // a cabeça a ferver: fumo a subir em sopros
+    for (let i = 0; i < 3; i++) {
+      const fase = (a * 0.8 + i / 3) % 1, x = hc.x + (i - 1) * 40 * s + Math.sin(fase * 6 + i) * 8 * s, y = cy - HEAD_R - 10 * s - fase * 90 * s
+      extra += `<circle cx="${f1(x)}" cy="${f1(y)}" r="${f1((10 + fase * 18) * s)}" fill="#e6edf3" opacity="${f1(k * (1 - fase) * 0.9)}"/>`
+    }
+    extra += `<g stroke="#ff5a4e" stroke-width="${f1(4 * s)}" stroke-linecap="round" opacity="${f1(k)}"><path d="M ${f1(hc.x + 34 * s)} ${f1(cy - 40 * s)} l ${f1(10 * s)} ${f1(-6 * s)} m ${f1(-4 * s)} ${f1(-6 * s)} l ${f1(6 * s)} ${f1(10 * s)}"/></g>`
+  } else if (emo === 'susto') {
+    eye = lerp(eye, 1.8, k); brow = lerp(brow, 26, k); open = Math.max(open, k)
+    for (let i = 0; i < 5; i++) { const ang = -150 + i * 30, r1 = HEAD_R + 14 * s, r2 = HEAD_R + (30 + 6 * Math.sin(t * 20 + i)) * s; const A = ang * Math.PI / 180; extra += `<line x1="${f1(hc.x + r1 * Math.cos(A))}" y1="${f1(cy + r1 * Math.sin(A))}" x2="${f1(hc.x + r2 * Math.cos(A))}" y2="${f1(cy + r2 * Math.sin(A))}" stroke="${INK}" stroke-width="${f1(5 * s)}" stroke-linecap="round" opacity="${f1(k)}"/>` }
+  } else if (emo === 'feliz' || emo === 'curioso') {
+    mouth = lerp(mouth, 1.1, k); bochecha = lerp(0.28, 0.8, k)
+    if (emo === 'feliz') olhos = (er) => [-1, 1].map((l) => `<path d="M ${f1(cx + l * ex - 10 * s)} ${f1(ey + 3 * s)} Q ${f1(cx + l * ex)} ${f1(ey - 10 * s)} ${f1(cx + l * ex + 10 * s)} ${f1(ey + 3 * s)}" stroke="${INK}" stroke-width="${f1(6 * s)}" fill="none" stroke-linecap="round"/>`).join('')
+    for (let i = 0; i < 3; i++) { const fase = (a * 0.7 + i / 3) % 1, x = hc.x + (i - 1) * 70 * s, y = cy - HEAD_R - 20 * s - fase * 50 * s; extra += `<path d="M ${f1(x)} ${f1(y - 10 * s)} L ${f1(x + 3 * s)} ${f1(y - 3 * s)} L ${f1(x + 10 * s)} ${f1(y)} L ${f1(x + 3 * s)} ${f1(y + 3 * s)} L ${f1(x)} ${f1(y + 10 * s)} L ${f1(x - 3 * s)} ${f1(y + 3 * s)} L ${f1(x - 10 * s)} ${f1(y)} L ${f1(x - 3 * s)} ${f1(y - 3 * s)} Z" fill="#FDE047" opacity="${f1(k * Math.sin(fase * Math.PI))}"/>` }
+  } else if (emo === 'pensativo' || emo === 'perplexo') {
+    brow = lerp(brow, 12, k); mouth = lerp(mouth, -0.15, k); ey -= 6 * s * k
+    if (emo === 'perplexo') {
+      sobrancelhas = `<line x1="${f1(cx - ex - 14 * s)}" y1="${f1(ey - 22 * s)}" x2="${f1(cx - ex + 14 * s)}" y2="${f1(ey - 22 * s)}" stroke="${INK}" stroke-width="${f1(8 * s)}" stroke-linecap="round"/><line x1="${f1(cx + ex - 14 * s)}" y1="${f1(ey - 34 * s)}" x2="${f1(cx + ex + 14 * s)}" y2="${f1(ey - 26 * s)}" stroke="${INK}" stroke-width="${f1(8 * s)}" stroke-linecap="round"/>`
+      const pula = Math.abs(Math.sin(a * 3)) * 10 * s
+      extra += `<text x="${f1(hc.x + 70 * s)}" y="${f1(cy - HEAD_R - 10 * s - pula)}" font-family="Unbounded" font-weight="900" font-size="${f1(46 * s)}" fill="${INK}" opacity="${f1(k)}">?</text><text x="${f1(hc.x + 104 * s)}" y="${f1(cy - HEAD_R + 14 * s - pula * 0.6)}" font-family="Unbounded" font-weight="900" font-size="${f1(30 * s)}" fill="${INK}" opacity="${f1(k * 0.8)}">?</text>`
+    }
+  } else if (emo === 'vergonha') {
+    bochecha = lerp(0.28, 1, k); mouth = lerp(mouth, 0.15, k) + Math.sin(t * 9) * 0.1 * k; ey += 4 * s * k; brow = lerp(brow, 16, k)
+    extra += `<path d="M ${f1(hc.x - 48 * s)} ${f1(cy - 30 * s)} q ${f1(-6 * s)} ${f1(12 * s)} 0 ${f1(16 * s)} q ${f1(6 * s)} ${f1(-4 * s)} 0 ${f1(-16 * s)}" fill="#5BC8FF" opacity="${f1(k)}"/>`
+  } else if (emo === 'sono') {
+    olhos = () => [-1, 1].map((l) => `<line x1="${f1(cx + l * ex - 10 * s)}" y1="${f1(ey + 2 * s)}" x2="${f1(cx + l * ex + 10 * s)}" y2="${f1(ey + 2 * s)}" stroke="${INK}" stroke-width="${f1(6 * s)}" stroke-linecap="round"/>`).join('')
+    open = Math.max(open, 0.5 * k * (0.5 + 0.5 * Math.sin(t * 1.4)))
+    for (let i = 0; i < 3; i++) { const fase = (a * 0.45 + i / 3) % 1; extra += `<text x="${f1(hc.x + (50 + fase * 60) * s)}" y="${f1(cy - HEAD_R - fase * 80 * s)}" font-family="Unbounded" font-weight="900" font-size="${f1((22 + i * 6) * s)}" fill="${INK}" opacity="${f1(k * Math.sin(fase * Math.PI))}">z</text>` }
+  } else if (emo === 'suor') {
+    brow = lerp(brow, 20, k); mouth = lerp(mouth, -0.35, k)
+    const fase = (a * 0.6) % 1, x = hc.x - 46 * s, y = cy - 36 * s + fase * 40 * s
+    extra += `<path d="M ${f1(x)} ${f1(y - 12 * s)} Q ${f1(x + 9 * s)} ${f1(y + 4 * s)} ${f1(x)} ${f1(y + 9 * s)} Q ${f1(x - 9 * s)} ${f1(y + 4 * s)} ${f1(x)} ${f1(y - 12 * s)} Z" fill="#5BC8FF" opacity="${f1(k * (1 - fase * 0.5))}"/>`
+  } else if (emo === 'dinheiro') {
+    mouth = lerp(mouth, 1.0, k)
+    olhos = () => [-1, 1].map((l) => `<text x="${f1(cx + l * ex)}" y="${f1(ey + 11 * s)}" text-anchor="middle" font-family="Unbounded" font-weight="900" font-size="${f1(30 * s * (1 + 0.15 * Math.sin(t * 8)))}" fill="#16a34a" opacity="${f1(Math.max(0.15, k))}">$</text>`).join('')
+  }
+  // a boca mexe enquanto ele fala (menos quando a emoção manda na boca)
+  if (fala && !['susto', 'sono', 'triste'].includes(emo)) open = Math.max(open, 0.32 + 0.3 * Math.abs(Math.sin(t * 13)) - 0.32 * Math.abs(Math.sin(t * 5.3)))
+  const er = Math.max(2.5 * s, 8 * s * eye * pisca), by = ey - 24 * s, bt = brow * 0.6 * s, mw = 24 * s, my = cy + 26 * s
+  const boca = open > 0.3
+    ? `<ellipse cx="${f1(cx)}" cy="${f1(my)}" rx="${f1(10 * s)}" ry="${f1(13 * s * open)}" fill="${INK}"/>`
+    : `<path d="M ${f1(cx - mw)} ${f1(my)} Q ${f1(cx)} ${f1(my + mouth * 20 * s)} ${f1(cx + mw)} ${f1(my)}" stroke="${INK}" stroke-width="${f1(7 * s)}" fill="none" stroke-linecap="round"/>`
+  return `
+    <circle cx="${f1(hc.x)}" cy="${f1(cy)}" r="${HEAD_R}" fill="${corCara}" stroke="${INK}" stroke-width="${STK}"/>
+    ${[-1, 1].map((l) => `<ellipse cx="${f1(cx + l * (ex + 14 * s))}" cy="${f1(cy + 14 * s)}" rx="${f1(13 * s)}" ry="${f1(8 * s)}" fill="#ff8fa3" opacity="${f1(bochecha)}"/>`).join('')}
+    ${sobrancelhas ?? `<line x1="${f1(cx - ex - 14 * s)}" y1="${f1(by + bt)}" x2="${f1(cx - ex + 14 * s)}" y2="${f1(by - bt)}" stroke="${INK}" stroke-width="${f1(8 * s)}" stroke-linecap="round"/><line x1="${f1(cx + ex - 14 * s)}" y1="${f1(by - bt)}" x2="${f1(cx + ex + 14 * s)}" y2="${f1(by + bt)}" stroke="${INK}" stroke-width="${f1(8 * s)}" stroke-linecap="round"/>`}
+    ${olhos ? olhos(er) : `<circle cx="${f1(cx - ex)}" cy="${f1(ey)}" r="${f1(er)}" fill="${INK}"/><circle cx="${f1(cx + ex)}" cy="${f1(ey)}" r="${f1(er)}" fill="${INK}"/>${eye > 1.4 ? `<circle cx="${f1(cx - ex + 3 * s)}" cy="${f1(ey - 3 * s)}" r="${f1(3 * s)}" fill="#fff"/><circle cx="${f1(cx + ex + 3 * s)}" cy="${f1(ey - 3 * s)}" r="${f1(3 * s)}" fill="#fff"/>` : ''}`}
+    ${boca}${extra}${frente}`
+}
+
+// o boneco inteiro (corpo + rosto), em qualquer lugar e tamanho: o do palco e o pequeno do aviso
+function bonecoSVG(p, x0, chao, emo, k, a, t, fala, andar = 0, olhaCima = 0) {
+  const fase = x0 * 0.045
+  const bob = Math.sin(t * 2.4) * 3 + Math.abs(Math.sin(fase)) * 10 * andar + (emo === 'feliz' ? -Math.abs(Math.sin(t * 7)) * 26 * k : 0) + (emo === 'nervoso' ? Math.sin(t * 40) * 2 * k : 0)
+  const gesto = fala ? Math.sin(t * 3.1) * 6 : 0
+  const hip = { x: x0, y: chao - UL - LL + bob + p.sit * (UL - 10) }
   const hL = p.hL + Math.sin(fase) * 28 * andar, hR = p.hR - Math.sin(fase) * 28 * andar
   const sL = p.sL - Math.sin(fase) * 20 * andar + gesto, sR = p.sR + Math.sin(fase) * 20 * andar - gesto
   const sh = seg(hip, 180 + p.lean, TORSO), nk = seg(sh, 180 + p.lean + p.head, NECK), hc = seg(nk, 180 + p.lean + p.head, HEAD_R)
   const eL = seg(sh, sL, UA), hdL = seg(eL, sL + p.eL, FA), eR = seg(sh, sR, UA), hdR = seg(eR, sR + p.eR, FA)
   const kL = seg(hip, hL, UL), fL = seg(kL, hL + p.kL, LL), kR = seg(hip, hR, UL), fR = seg(kR, hR + p.kR, LL)
-  const L = (a, b) => `<line x1="${a.x.toFixed(1)}" y1="${a.y.toFixed(1)}" x2="${b.x.toFixed(1)}" y2="${b.y.toFixed(1)}"/>`
-  const J = (q) => `<circle cx="${q.x.toFixed(1)}" cy="${q.y.toFixed(1)}" r="${STK / 2 + 3}" fill="${INK}"/>`
-  const pisca = (t % 4.3) < 0.12 ? 0.1 : 1
-  const s = HEAD_R / 60, ex = 22 * s, ey = hc.y - 6 * s, cx = hc.x + 8 * s
-  const er = Math.max(2.5 * s, 8 * s * p.eye * pisca), by = ey - 24 * s, bt = p.brow * 0.6 * s, mw = 24 * s, my = hc.y + 26 * s
-  const boca = p.open > 0.3
-    ? `<ellipse cx="${cx}" cy="${my}" rx="${10 * s}" ry="${(13 * s * p.open).toFixed(1)}" fill="${INK}"/>`
-    : `<path d="M ${cx - mw} ${my} Q ${cx} ${my + p.mouth * 20 * s} ${cx + mw} ${my}" stroke="${INK}" stroke-width="${7 * s}" fill="none" stroke-linecap="round"/>`
-  $('boneco').innerHTML = `
-    <ellipse cx="${x0}" cy="${GROUND + 6}" rx="110" ry="15" fill="rgba(13,17,23,0.18)"/>
+  const L = (q, r) => `<line x1="${f1(q.x)}" y1="${f1(q.y)}" x2="${f1(r.x)}" y2="${f1(r.y)}"/>`
+  const J = (q) => `<circle cx="${f1(q.x)}" cy="${f1(q.y)}" r="${STK / 2 + 3}" fill="${INK}"/>`
+  // sentado: um caixote por baixo
+  const banco = p.sit > 0.3 ? `<rect x="${f1(x0 - 70)}" y="${f1(chao - 96)}" width="140" height="96" rx="12" fill="#8a5a2b" opacity="${f1(clamp((p.sit - 0.3) * 2))}"/><rect x="${f1(x0 - 70)}" y="${f1(chao - 96)}" width="140" height="18" rx="9" fill="#a8743f" opacity="${f1(clamp((p.sit - 0.3) * 2))}"/>` : ''
+  return {
+    svg: `${banco}<ellipse cx="${f1(x0)}" cy="${chao + 6}" rx="110" ry="15" fill="rgba(13,17,23,0.18)"/>
     <g stroke="${INK}" stroke-width="${STK}" stroke-linecap="round">${L(hip, kL)}${L(kL, fL)}${L(hip, kR)}${L(kR, fR)}${L(hip, sh)}${L(sh, eL)}${L(eL, hdL)}${L(sh, eR)}${L(eR, hdR)}</g>
-    ${[hip, kL, kR, sh, eL, eR].map(J).join('')}
-    <circle cx="${hc.x}" cy="${hc.y}" r="${HEAD_R}" fill="#fff" stroke="${INK}" stroke-width="${STK}"/>
-    <line x1="${cx - ex - 14 * s}" y1="${by + bt}" x2="${cx - ex + 14 * s}" y2="${by - bt}" stroke="${INK}" stroke-width="${8 * s}" stroke-linecap="round"/>
-    <line x1="${cx + ex - 14 * s}" y1="${by - bt}" x2="${cx + ex + 14 * s}" y2="${by + bt}" stroke="${INK}" stroke-width="${8 * s}" stroke-linecap="round"/>
-    <circle cx="${cx - ex}" cy="${ey}" r="${er}" fill="${INK}"/><circle cx="${cx + ex}" cy="${ey}" r="${er}" fill="${INK}"/>
-    ${boca}`
+    ${[hip, kL, kR, sh, eL, eR].map(J).join('')}${rosto(hc, p, emo, k, a, t, fala, olhaCima)}`,
+    cabeca: hc,
+  }
+}
+
+const falando = (t) => PL.cenas.some((c) => t >= c.inicio && t < c.fim - 0.25)
+function emocaoEm(t) { const i = ultimo(EMO, t); if (i < 0) return { nome: 'neutra', k: 0, a: 0 }; const e = EMO[i]; return { nome: e.nome, k: clamp((t - e.t) / 0.35), a: t - e.t } }
+function desenharBoneco(t) {
+  const p = Object.fromEntries(Object.entries(poseTracks).map(([k, f]) => [k, f(t)]))
+  const x0 = bonecoX(t)
+  const andar = clamp(Math.abs(bonecoX(t + 0.02) - bonecoX(t - 0.02)) / 0.04 / 260)
+  const em = emocaoEm(t)
+  const b = bonecoSVG(p, x0, GROUND, em.nome, em.k, em.a, t, falando(t), andar)
+  // CLOSE: a câmara vai ao rosto (2,6×), e a cabeça fica no meio do ecrã
+  const ck = clamp(closeK(t)), Z = lerp(1, 2.6, ck)
+  const hx = lerp(b.cabeca.x, 960, ck), hy = lerp(b.cabeca.y, 560, ck)
+  $('boneco').innerHTML = `<g transform="translate(${f1(hx - b.cabeca.x * Z)} ${f1(hy - b.cabeca.y * Z)}) scale(${Z.toFixed(4)})">${b.svg}</g>`
+  return { cabeca: { x: hx, y: hy }, Z }
+}
+
+// ═══ OS MOMENTOS DO PALCO (cenas sem tela) ═══
+// o balão de pensamento sai da cabeça; dentro, o símbolo do que ele sente
+function simbolo(nome, cx, cy, a) {
+  const b = 1 + 0.06 * Math.sin(a * 4)
+  const T = (txt, cor = INK, tam = 150) => `<text x="${cx}" y="${cy + tam * 0.36}" text-anchor="middle" font-family="Unbounded" font-weight="900" font-size="${f1(tam * b)}" fill="${cor}">${txt}</text>`
+  switch (nome) {
+    case 'interrogacao': return T('?', '#5B8CFF')
+    case 'exclamacao': return T('!', '#FF5A4E')
+    case 'reticencias': return T('…', INK, 130)
+    case 'zzz': return T('Zzz', '#A78BFA', 90)
+    case 'coracao': return `<path transform="translate(${cx} ${cy}) scale(${f1(3.4 * b)})" d="M0 12 C -18 -2 -12 -18 0 -8 C 12 -18 18 -2 0 12 Z" fill="#FF4FA0"/>`
+    case 'raio': return `<path transform="translate(${cx - 30} ${cy - 70}) scale(${f1(1.4 * b)})" d="M30 0 L0 55 L24 55 L12 100 L52 38 L28 38 L42 0 Z" fill="#FDE047" stroke="${INK}" stroke-width="4" stroke-linejoin="round"/>`
+    case 'nuvem': { let gotas = ''; for (let i = 0; i < 4; i++) { const f = (a * 1.2 + i / 4) % 1; gotas += `<line x1="${cx - 45 + i * 30}" y1="${f1(cy + 30 + f * 50)}" x2="${cx - 50 + i * 30}" y2="${f1(cy + 46 + f * 50)}" stroke="#5BC8FF" stroke-width="7" stroke-linecap="round" opacity="${f1(1 - f)}"/>` } return `<g fill="#8b949e"><circle cx="${cx - 40}" cy="${cy}" r="34"/><circle cx="${cx}" cy="${cy - 20}" r="42"/><circle cx="${cx + 42}" cy="${cy}" r="32"/><rect x="${cx - 70}" y="${cy}" width="140" height="32" rx="16"/></g>${gotas}` }
+    case 'documento': return `<g transform="translate(${cx - 55} ${cy - 70})"><rect width="110" height="140" rx="12" fill="#fff" stroke="${INK}" stroke-width="6"/><line x1="20" y1="35" x2="90" y2="35" stroke="${INK}" stroke-width="6"/><line x1="20" y1="60" x2="90" y2="60" stroke="${INK}" stroke-width="6"/><line x1="20" y1="85" x2="70" y2="85" stroke="${INK}" stroke-width="6"/><text x="55" y="128" text-anchor="middle" font-family="Unbounded" font-weight="900" font-size="26" fill="#FF5A4E">R$</text></g>`
+    case 'moeda': return `<g transform="translate(${cx} ${cy}) scale(${f1(b)})"><circle r="70" fill="#FDE047" stroke="#d4a800" stroke-width="8"/><text y="24" text-anchor="middle" font-family="Unbounded" font-weight="900" font-size="66" fill="#8a6a00">R$</text></g>`
+    default: return T('?', '#5B8CFF')
+  }
+}
+function balao(cabeca, cx, cy, w, h, a, conteudo, Z = 1) {
+  // as três bolinhas que sobem da cabeça até ao balão, uma de cada vez; depois o balão abre
+  let s = ''
+  for (let i = 0; i < 3; i++) {
+    const k = clamp(S(a - 0.12 * i, 3, 0.6), 0, 1.2), x = lerp(cabeca.x + 50 * Z, cx - w * 0.36, (i + 1) / 4), y = lerp(cabeca.y - 70 * Z, cy + h * 0.42, (i + 1) / 4)
+    s += `<circle cx="${f1(x)}" cy="${f1(y)}" r="${f1((10 + i * 7) * k)}" fill="#fff" stroke="${INK}" stroke-width="5"/>`
+  }
+  const k = clamp(S(a - 0.4, 2.4, 0.6), 0, 1.15)
+  if (k > 0.01) {
+    const rx = w / 2 * k, ry = h / 2 * k
+    // uma nuvem: elipse grande e bolhas à volta
+    let bolhas = ''
+    for (let i = 0; i < 10; i++) { const ang = (i / 10) * Math.PI * 2; bolhas += `<circle cx="${f1(cx + Math.cos(ang) * rx * 0.86)}" cy="${f1(cy + Math.sin(ang) * ry * 0.82)}" r="${f1(Math.min(rx, ry) * 0.36)}"/>` }
+    s += `<g fill="#fff" stroke="${INK}" stroke-width="6">${bolhas}</g><g fill="#fff">${bolhas}<ellipse cx="${cx}" cy="${cy}" rx="${f1(rx * 0.95)}" ry="${f1(ry * 0.9)}"/></g>`
+    if (conteudo) s += `<g opacity="${f1(clamp((k - 0.6) * 3))}">${conteudo}</g>`
+  }
+  return s
+}
+function momentoDoPalco(t, cab) {
+  let solto = '', bal = ''
+  const nadas = telasDe.nada || []
+  const i = ultimo(nadas, t), e = i >= 0 ? nadas[i] : null
+  const cur = ST[Math.max(0, ultimo(ST, t))]
+  if (e && cur === e && t >= e.depois) {
+    const a = t - e.depois
+    if (e.momento === 'pensamento') bal = balao(cab.cabeca, 1300, 380, 520, 360, a, simbolo(e.pensa, 1300, 380, a), cab.Z)
+    if (e.momento === 'solto' && e.solto && OBJ[e.solto.nome]) {
+      const k = clamp(S(a, 2.2, 0.65), 0, 1.1), bob = Math.sin(a * 2.2) * 10
+      solto = `<ellipse cx="1260" cy="900" rx="${f1(300 * k)}" ry="26" fill="rgba(13,17,23,0.16)"/><g transform="translate(${f1(1260 - 450 * 1.25 * k)} ${f1(560 - 280 * 1.25 * k + bob)}) scale(${(1.25 * k).toFixed(4)})">${OBJ[e.solto.nome](a + 0.8, {})}</g>`
+    }
+  }
+  $('soltoSvg').innerHTML = solto
+  $('balaoSvg').innerHTML = bal
 }
 
 // ═══ O CONTEÚDO DE CADA TELA ═══
@@ -346,6 +504,28 @@ function telaConta(e, t) {
     return `<div class="abs" style="left:44px;right:44px;top:${136 + i * 76}px;height:66px;border-bottom:2px dashed #d8cfb8;opacity:${on.toFixed(2)};transform:translateX(${((1 - on) * 30).toFixed(1)}px)"><div class="abs" style="left:0;top:14px;font-size:30px;font-weight:${l.forte ? 900 : 700}">${esc(l.rotulo)}</div><div class="abs disp" style="right:0;top:12px;font-size:32px;font-weight:${l.forte ? 900 : 800};color:${TONS[l.tom] || INK}">${reais(l.valor)}</div></div>`
   }).join('')
 }
+// a folha de caderno: o item escreve-se letra a letra quando a voz o diz; o cursor clica na caixinha, o ✓
+// verde aparece e a linha fica circulada a verde; no fim, o botão "Tudo conferido ✓" é carregado
+function telaLista(e, t) {
+  const cliques = PL.cursor.visitas.filter((v) => v.alvo === 'item')
+  $('listaRows').innerHTML = e.itens.map((it, i) => {
+    const escreve = clamp((t - it.t + 0.1) / 0.45), letras = Math.ceil(it.texto.length * escreve)
+    const clique = (cliques.find((v) => Math.abs(v.entra - it.t - 0.1) < 0.01) || { clique: it.t + 0.5 }).clique
+    const ok = clamp(S(t - clique, 3.2, 0.6), 0, 1.15), circ = clamp((t - clique - 0.1) / 0.45)
+    const y = 150 + i * 82
+    return `<div class="abs" style="left:120px;top:${y}px;width:700px;height:66px;opacity:${escreve > 0 ? 1 : 0}">
+      <div class="abs" style="left:0;top:10px;width:46px;height:46px;border-radius:10px;border:4px solid ${ok > 0.05 ? '#16a34a' : '#8b949e'};box-sizing:border-box;background:${ok > 0.05 ? '#dcfce7' : '#fff'}"></div>
+      <svg class="abs" style="left:4px;top:8px" width="46" height="46" viewBox="0 0 46 46"><path d="M9 24 L19 34 L38 11" fill="none" stroke="#16a34a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="${(1 - clamp(ok)).toFixed(3)}"/></svg>
+      <div class="abs" style="left:72px;top:6px;font-size:40px;font-weight:700;font-family:'Inter';white-space:nowrap;color:${ok > 0.5 ? '#166534' : INK}">${esc(it.texto.slice(0, letras))}</div>
+      <svg class="abs" style="left:56px;top:-6px;overflow:visible" width="640" height="78"><rect x="0" y="0" width="${Math.min(620, 40 + it.texto.length * 23)}" height="78" rx="39" fill="none" stroke="#16a34a" stroke-width="5" pathLength="1" stroke-dasharray="1" stroke-dashoffset="${(1 - circ).toFixed(3)}" opacity="${circ > 0 ? 0.85 : 0}"/></svg>
+    </div>`
+  }).join('')
+  const b = $('listaBotao'), bk = clamp(S(t - (e.botao - 0.6), 2.6, 0.6), 0, 1.1), carregou = t >= e.botao
+  b.style.opacity = clamp(bk * 1.5).toFixed(2)
+  b.style.transform = `scale(${(lerp(0.7, 1, Math.min(1, bk)) * (1 - 0.06 * clamp(curPress(t)))).toFixed(3)})`
+  b.style.background = carregou ? '#16a34a' : '#22c55e'
+  b.textContent = carregou ? 'Conferido ✓' : 'Tudo conferido?'
+}
 function telaJanela(e, t) {
   const aj = t - e.t
   const q = e.quebra !== null && e.quebra !== undefined ? t - e.quebra : null
@@ -367,9 +547,8 @@ function sobreposicao(t) {
   el.style.clipPath = `circle(${(2300 * entra).toFixed(0)}px at 1220px 590px)`
   el.style.transform = `translateY(${(-1100 * fora).toFixed(1)}px)`
   if (o.tipo === 'capa') {
-    // as palavras da pergunta acendem quando a voz as diz
     const ditas = PL.cenas[0]?.palavras || []
-    ;[...$('capaTxt').children].forEach((w, k) => { const d = ditas[k]; const on = d && t >= d.t; w.style.background = on ? '#fde047' : 'transparent'; w.style.color = on ? INK : (d ? '#f0f6fc' : '#f0f6fc'); w.style.opacity = d && t < d.t ? 0.45 : 1 })
+    ;[...$('capaTxt').children].forEach((w, k) => { const d = ditas[k]; const on = d && t >= d.t; w.style.background = on ? '#fde047' : 'transparent'; w.style.color = on ? INK : '#f0f6fc'; w.style.opacity = d && t < d.t ? 0.45 : 1 })
   } else if (o.tipo === 'capitulo') {
     const cor = corEm(o.fim + 0.01)
     Object.assign($('capFundo').style, { left: 1220 - 2400 + 'px', top: 590 - 2400 + 'px', width: '4800px', height: '4800px', background: cor })
@@ -380,28 +559,40 @@ function sobreposicao(t) {
     $('capTitulo').style.transform = `translateY(${((1 - k) * 60).toFixed(1)}px)`; $('capTitulo').style.opacity = clamp(k * 1.5)
     $('capEtq').style.transform = `scale(${clamp(S(a - 0.1, 3, 0.6), 0, 1.2).toFixed(3)})`
   } else if (o.tipo === 'pausa') {
+    // 17/10, o Ed: "o boneco num tamanho pequeno com essa emoção… e dele sai esse pensamento… e nesse caso
+    // sairia o Daqui a pouco vou te contar". Fundo na cor do capítulo, o boneco a olhar para cima, a frase
+    // DENTRO do balão de pensamento; a etiqueta aparece depois de a frase estar inteira.
+    $('pausaFundo').style.background = corEm(o.t)
+    const pz = { ...POSES[o.emocao === 'pensativo' ? 'queixo' : o.emocao === 'curioso' ? 'ideia' : 'ombros'] }
+    const b = bonecoSVG(pz, 0, 0, o.emocao === 'curioso' ? 'curioso' : o.emocao, clamp(a / 0.4), a, t, false, 0, 1)
+    const ESC = 0.78, X = 420, Y = 1000
+    const cab = { x: X + b.cabeca.x * ESC, y: Y + b.cabeca.y * ESC }
+    $('pausaSvg').innerHTML = `<g transform="translate(${X} ${Y}) scale(${ESC})">${b.svg}</g>` + balao(cab, 1210, 430, 1040, 520, a - 0.2, '', ESC)
+    const ws = String(o.texto).split(/\s+/), dur = Math.max(1.2, Math.min(2.4, ws.length * 0.16))
+    $('pausaTxt').innerHTML = `<div>${ws.map((w, k) => `<span style="opacity:${clamp((a - 0.75 - (k / ws.length) * dur) * 5).toFixed(2)}">${esc(w)}</span>`).join(' ')}</div>`
     $('pausaEtqTxt').textContent = o.etiqueta || ''
-    const ws = String(o.texto).split(/\s+/)
-    $('pausaTxt').innerHTML = ws.map((w, k) => `<span style="opacity:${clamp((a - 0.3 - k * 0.12) * 4).toFixed(2)}">${esc(w)}</span>`).join(' ')
+    const ek = clamp(S(a - 0.85 - dur, 2.8, 0.55), 0, 1.15)
+    $('pausaEtq').style.opacity = clamp(ek * 1.5).toFixed(2)
+    $('pausaEtq').style.transform = `translateY(${((1 - Math.min(1, ek)) * 40).toFixed(1)}px) scale(${lerp(0.8, 1, Math.min(1, ek)).toFixed(3)})`
   } else if (o.tipo === 'bordao') {
     $('bordaoTxt').style.transform = `scale(${lerp(0.94, 1, clamp(S(a, 2, 0.8))).toFixed(4)})`
   } else if (o.tipo === 'assinatura') {
     $('assLogo').style.transform = `scale(${lerp(0.8, 1, clamp(S(a, 2.2, 0.6), 0, 1.1)).toFixed(4)})`
+  } else if (o.tipo === 'final') {
+    $('setaFinal').style.transform = `translateX(${(Math.sin(a * 4) * 10).toFixed(1)}px)`
   }
   return o
 }
 
-// a cor do fundo num instante
 function corEm(t) { const i = ultimo(PL.inundacoes, t); return PL.inundacoes[Math.max(0, i)].cor }
 
-// legenda: a frase falada, metade de cada vez se for comprida
+// legenda: a frase falada, em pedaços de no máximo 9 palavras
 function caption(t) {
   const box = $('capBox')
   let c = -1
   PL.cenas.forEach((cn, i) => { const ws = cn.palavras; if (ws.length && t >= cn.inicio - 0.05 && t < ws[ws.length - 1].t + 0.9) c = i })
   if (c < 0) { box.style.visibility = 'hidden'; return }
   let ws = PL.cenas[c].palavras
-  // pedaços de no máximo 9 palavras: no ecrã deitado cabem mais do que no Short
   if (ws.length > 9) { const n = Math.ceil(ws.length / 9), tam = Math.ceil(ws.length / n); let k = 0; while (k + 1 < n && t >= ws[(k + 1) * tam].t - 0.05) k++; ws = ws.slice(k * tam, (k + 1) * tam) }
   box.style.visibility = 'visible'
   const html = ws.map((x, i) => { const nx = i + 1 < ws.length ? ws[i + 1].t : x.t + 0.6; const on = t >= x.t && t < nx, said = t >= x.t; return `<span class="cw" style="color:${on ? INK : said ? '#f0f6fc' : 'rgba(240,246,252,0.38)'};background:${on ? '#fde047' : 'transparent'}">${esc(x.w)}</span>` }).join(' ')
@@ -410,7 +601,6 @@ function caption(t) {
 
 function seek(tIn) {
   const t = clamp(tIn, 0, D - 0.001)
-  // fundo: a cor nova abre em círculo a partir do cartão
   const IN = PL.inundacoes, wi = Math.max(0, ultimo(IN, t))
   $('stage').style.background = IN[Math.max(0, wi - 1)].cor
   const rad = 2400 * S(t - IN[wi].t, 1.1, 1)
@@ -444,15 +634,14 @@ function seek(tIn) {
     else if (id === 'app') telaApp(e, t)
     else if (id === 'broll') telaBroll(e, t)
     else if (id === 'conta') telaConta(e, t)
+    else if (id === 'lista') telaLista(e, t)
     else if (id === 'janela') telaJanela(e, t)
     else if (id === 'frase') { $('fraseEtq').textContent = e.etiqueta || ''; $('fraseTxt').textContent = e.texto }
     else if (id === 'chamada') { const a = t - e.t, ws = String(e.texto || 'Comenta FINMOOVI').split(''); $('chamTxt').textContent = ws.slice(0, Math.floor(clamp((a - 0.4) / 1.2) * ws.length)).join(''); $('chamEtq').textContent = e.etiqueta || ''; $('chamBotao').style.transform = `scale(${(1 - 0.08 * clamp(curPress(t))).toFixed(3)})` }
   }
-  // a etiqueta do valor, colada ao canto do cartão
   const etq = $('etq')
   if (cur.etiqueta && on > 0.5) { etq.style.visibility = 'visible'; etq.textContent = `${cur.etiqueta.valor} · ${cur.etiqueta.rotulo}`; const k = clamp(S(t - cur.t - 0.6, 2.6, 0.7), 0, 1.1); etq.style.left = 1220 - w / 2 + 'px'; etq.style.top = 590 + h / 2 - 30 + 'px'; etq.style.transform = `scale(${k.toFixed(3)})`; etq.style.transformOrigin = '0 50%' } else etq.style.visibility = 'hidden'
 
-  // efeitos
   let fxs = ''
   for (const f of PL.fx || []) {
     const a = t - f.t; if (a < 0) continue
@@ -464,7 +653,6 @@ function seek(tIn) {
   }
   $('fxSvg').innerHTML = fxs
 
-  // manchetes
   heads.forEach(({ el, m, words }) => {
     const ativo = t >= m.entra && t < m.sai, aIn = t - m.entra, aOut = t - m.sai
     if (!ativo && (aIn < 0 || aOut > 0.5)) { el.style.visibility = 'hidden'; return }
@@ -483,15 +671,14 @@ function seek(tIn) {
     })
   })
 
-  desenharBoneco(t)
+  const cab = desenharBoneco(t)
+  momentoDoPalco(t, cab)
   caption(t)
 
-  // cursor
   const cv = clamp(curVis(t)), cr = $('cursor')
   cr.style.opacity = cv; cr.style.visibility = cv < 0.01 ? 'hidden' : 'visible'
   cr.style.transform = `translate(${(1220 + curX(t) - 7).toFixed(2)}px, ${(590 + curY(t) - 4).toFixed(2)}px) scale(${1 - 0.16 * clamp(curPress(t))})`
 
-  // por cima de tudo: capa, capítulo, telas sem voz, bordão, assinatura, tela final
   sobreposicao(t)
 }
 
@@ -499,15 +686,17 @@ function cues() {
   const L = []
   ST.forEach((s, i) => { if (i > 0 && s.id !== 'nada') L.push({ t: s.t, kind: 'swish' }) })
   ST.filter((s) => s.id === 'numero').forEach((s) => L.push({ t: s.aterra, kind: 'thud' }))
+  ST.filter((s) => s.id === 'nada' && s.depois).forEach((s) => L.push({ t: s.depois, kind: s.momento === 'pensamento' ? 'rise' : s.momento === 'close' ? 'whoosh' : 'swish' }))
   ;(PL.fx || []).forEach((f) => { if (f.tipo === 'moedas') [0, 0.08, 0.16, 0.24].forEach((d) => L.push({ t: f.t + d, kind: 'coin' })); if (f.tipo === 'confete' || f.tipo === 'brilho') L.push({ t: f.t, kind: 'ding' }); if (f.tipo === 'raios') L.push({ t: f.t, kind: 'boom' }); if (f.tipo === 'papeis') L.push({ t: f.t, kind: 'swish' }) })
   PL.cursor.visitas.forEach((v) => L.push({ t: v.clique, kind: 'click' }))
+  PL.cursor.visitas.filter((v) => v.alvo === 'item').forEach((v) => L.push({ t: v.clique + 0.08, kind: 'tick' }))
+  ST.filter((s) => s.id === 'lista').forEach((s) => L.push({ t: s.botao + 0.05, kind: 'ding' }))
   ST.filter((s) => s.id === 'janela').forEach((j) => j.objetos.forEach((o) => L.push({ t: o.t + 0.05, kind: o.nome === 'carro' ? 'rise' : 'tick' })))
-  SOBRE.forEach((o) => { if (o.tipo === 'capitulo') L.push({ t: o.t, kind: 'whoosh' }, { t: o.t + 0.4, kind: 'ding' }); if (o.tipo === 'pausa') L.push({ t: o.t, kind: 'whoosh' }); if (o.tipo === 'bordao' || o.tipo === 'assinatura') L.push({ t: o.t, kind: 'rise' }) })
+  SOBRE.forEach((o) => { if (o.tipo === 'capitulo') L.push({ t: o.t, kind: 'whoosh' }, { t: o.t + 0.4, kind: 'ding' }); if (o.tipo === 'pausa') L.push({ t: o.t, kind: 'whoosh' }, { t: o.t + 0.6, kind: 'rise' }); if (o.tipo === 'bordao' || o.tipo === 'assinatura') L.push({ t: o.t, kind: 'rise' }) })
   return L.filter((x) => x.t >= 0 && x.t < D)
 }
 
 window.seek = seek
-// a CONFERÊNCIA pergunta à página onde está cada coisa visível (coordenadas do ecrã de 1920×1080)
 window.__medir__ = () => {
   const st = $('stage').getBoundingClientRect(), k = 1920 / st.width
   const caixa = (el) => { const r = el.getBoundingClientRect(); return { x: (r.left - st.left) * k, y: (r.top - st.top) * k, w: r.width * k, h: r.height * k } }
@@ -526,7 +715,6 @@ window.__medir__ = () => {
 window.configure = () => {}
 window.timeline = () => ({ beat: PL.batida, beats: Math.ceil(D / PL.batida), duration: D, phrases: PL.cenas.map((c) => c.inicio), cues: cues() })
 
-// as fotografias entram como dados já lidos (o render abre a página como ficheiro, e a pasta é outra)
 const FOTOS = {}
 async function iniciar() {
   let plano = window.__PLANO__
@@ -537,7 +725,7 @@ async function iniciar() {
     const src = (window.__FOTOS__ || {})[e.ficheiro] || `../youtube-render/public/${e.ficheiro}`
     await new Promise((ok) => { const im = new Image(); im.onload = () => { FOTOS[e.ficheiro] = src; ok() }; im.onerror = () => ok(); im.src = src })
   }
-  // fotografia que não carregou: a tela vira desenho do fio do vídeo, nunca um buraco
+  // fotografia que não carregou: a tela vira desenho, nunca um buraco
   plano.estados.forEach((e) => { if (e.id === 'foto' && !FOTOS[e.ficheiro]) { e.id = 'meta'; e.figura = 'semente'; e.acao = false; e.viraAcao = 1e9 } })
   montar(plano)
   window.__PRONTO__ = true

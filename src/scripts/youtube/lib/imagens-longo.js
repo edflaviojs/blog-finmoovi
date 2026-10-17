@@ -1418,6 +1418,10 @@ export const RAZAO_DO_AVISO_NO_CAPITULO = 0.6;
  * — que é a melhor parte. 10,2s = 306 fotogramas a 30fps.
  */
 export const FRAMES_DO_BONECO_DO_AVISO = 306;
+// 🔴 17/10/2026, o dono: "precisa diminuir um pouquinho o tempo de tela dela". O aviso deixou de esperar
+// pelo clipe do boneco (10,2 s): dura o tempo de ler a FRASE (framesDaPausa, ~7 s). No molde novo o boneco
+// é desenhado para caber nesse tempo; no Remotion (o estepe) o clipe é cortado antes do fim — aceite.
+// A etiqueta "Daqui a pouco vou te contar" não conta para a leitura: é sempre a mesma e lê-se de relance.
 /** "por que eu não conseguia…" → "Por que eu não conseguia…!" — maiúscula e pontuação (pedido do dono). */
 export function fraseDoAviso(texto) {
   const t = String(texto || '').trim().replace(/\s+/g, ' ');
@@ -1439,7 +1443,7 @@ export function avisosDoMeio(cenas, mapa = {}) {
     // 🔴 O DESENHO DO DONO (08/10/2026): etiqueta de ALERTA "DAQUI A POUCO VOU TE CONTAR:" e a
     // frase por baixo a começar em maiúscula e a acabar com pontuação (`fraseDoAviso`).
     const frase = fraseDoAviso(texto);
-    saida[alvo.j].pausaDepois = { texto: frase, etiquetaTexto: 'Daqui a pouco vou te contar:', variante: 'aviso', frames: Math.max(FRAMES_DO_BONECO_DO_AVISO, framesDaPausa(`daqui a pouco vou te contar ${frase}`)) };
+    saida[alvo.j].pausaDepois = { texto: frase, etiquetaTexto: 'Daqui a pouco vou te contar:', variante: 'aviso', frames: framesDaPausa(frase) };
   });
   return saida;
 }
