@@ -4,6 +4,7 @@ definition: "What warrant is and how it shows up in your everyday money — expl
 title: "warrant - Financial Glossary"
 description: "What warrant is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/warrant.webp"
+imageAlt: "Stacks of gold coins, green bar chart, upward arrow, and plant on purple background."
 category: "basico"
 tags: ["warrant", "glossary", "finance"]
 author: "FinMoovi"

@@ -4,6 +4,7 @@ definition: "O que é warrant e como isso aparece no seu dia a dia — explicado
 title: "warrant - Glossário Financeiro"
 description: "O que é warrant e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/warrant.webp"
+imageAlt: "Pilhas de moedas douradas, gráfico verde ascendente e planta sobre fundo roxo."
 category: "basico"
 tags: ["warrant", "glossário", "finanças"]
 author: "FinMoovi"
