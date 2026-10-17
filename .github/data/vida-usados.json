@@ -790,5 +790,11 @@
     "gancho": "aconteceu-comigo",
     "turno": "noite",
     "em": "2026-10-16T09:14:20.369Z"
+  },
+  {
+    "situacao": "primeiro-guardado",
+    "gancho": "se-parar",
+    "turno": "manha",
+    "em": "2026-10-17T08:42:54.695Z"
   }
 ]
