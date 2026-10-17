@@ -1,0 +1,118 @@
+{
+  "slug": "loop-dentista-das-criancas-se-parar",
+  "formato": "loop16",
+  "term": "O dentista das crianças",
+  "category": "vida",
+  "keyword": "DENTISTA",
+  "valor": "R$ 3.500",
+  "situacao": "dentista-das-criancas",
+  "gancho": "se-parar",
+  "ganchoFamilia": "e se parar",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "buraco",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "O que acontece se você parar de pagar o dentista? Orçamento na mão.",
+      "durationSec": 4.6,
+      "shots": [
+        {
+          "anchor": "acontece",
+          "visual": {
+            "type": "statement",
+            "text": "Orçamento do dentista na mão"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "parar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "O aparelho da minha filha custa três mil e quinhentos reais",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "aparelho",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "filha",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 3.500"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Aí a gente sentou e olhou cada gasto.",
+      "durationSec": 2.83,
+      "shots": [
+        {
+          "anchor": "sentou",
+          "visual": {
+            "type": "statement",
+            "text": "Sentamos e olhamos tudo"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "olhou",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Se eu parar de olhar, o buraco do dentista cava fundo.",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "parar",
+          "visual": {
+            "type": "statement",
+            "text": "Parar de olhar cava o buraco"
+          }
+        },
+        {
+          "anchor": "olhar",
+          "visual": {
+            "type": "statement",
+            "text": "Orçamento do dentista na mão"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.21
+}
