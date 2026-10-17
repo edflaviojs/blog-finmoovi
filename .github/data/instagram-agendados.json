@@ -23492,5 +23492,114 @@
         "publicaEmBR": "18/10 às 10h31"
       }
     }
+  },
+  "kw-quando-a-taxa-te-faz-perder-r-200-no-cartao": {
+    "midias": {
+      "video": {
+        "id": "b9ca21d1-a7f4-46ed-aa05-6890df3c2c6d",
+        "name": "RjUS1cTxWh.mp4",
+        "originalName": null,
+        "path": "https://media.help4desk.com/RjUS1cTxWh.mp4",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capa": {
+        "id": "979cc1c1-465f-4a66-b279-3d0eaf38f419",
+        "name": "XMgjDaKiyX.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/XMgjDaKiyX.jpeg",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capaLarga": {
+        "id": "06ae6b3a-d2b2-4b49-98b9-8deb4ffc1a55",
+        "name": "FQATCa7gGZ.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/FQATCa7gGZ.jpeg",
+        "thumbnail": null,
+        "alt": null
+      }
+    },
+    "publicaEm": "2026-10-17T22:00:00.000Z",
+    "publicaEmBR": "17/10 às 19h00",
+    "agendadoEm": "2026-10-17T17:52:44.756Z",
+    "atualizadoEm": "2026-10-17T17:52:49.826Z",
+    "redes": {
+      "instagram": {
+        "postId": "cmvcp2ilf00f3rx95xuz7fizs",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-17T22:00:00.000Z",
+        "publicaEmBR": "17/10 às 19h00",
+        "midia": "o vídeo",
+        "caracteres": 713,
+        "limite": 2200
+      },
+      "zernio-tiktok": {
+        "postId": "cmvcp2j4s00f4rx952aw6iae6",
+        "canal": "finmoovi",
+        "publicaEm": "2026-10-17T22:12:00.000Z",
+        "publicaEmBR": "17/10 às 19h12",
+        "midia": "o vídeo",
+        "caracteres": 284,
+        "limite": 2200
+      },
+      "facebook": {
+        "postId": "cmvcp2jnv00f5rx95zm7u63az",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-17T22:26:00.000Z",
+        "publicaEmBR": "17/10 às 19h26",
+        "midia": "o vídeo",
+        "caracteres": 483,
+        "limite": 63206
+      },
+      "linkedin-page": {
+        "postId": "cmvcp2k3s00f6rx9509kvjk6y",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-17T22:43:00.000Z",
+        "publicaEmBR": "17/10 às 19h43",
+        "midia": "o vídeo",
+        "caracteres": 489,
+        "limite": 3000
+      },
+      "threads": {
+        "postId": "cmvcp2km800f7rx95xzzcl8dx",
+        "canal": "finmoovi",
+        "publicaEm": "2026-10-17T22:58:00.000Z",
+        "publicaEmBR": "17/10 às 19h58",
+        "midia": "o vídeo",
+        "caracteres": 149,
+        "limite": 500
+      },
+      "pinterest": {
+        "postId": "cmvcp2lke00f8rx95sei1rel2",
+        "canal": "finmoovi",
+        "publicaEm": "2026-10-17T23:31:00.000Z",
+        "publicaEmBR": "17/10 às 20h31",
+        "midia": "vídeo primeiro, capa depois — a ordem que o Pinterest exige",
+        "caracteres": 463,
+        "limite": 500
+      },
+      "bluesky": {
+        "postId": "cmvcp2m1700f9rx951z5l2atj",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-17T23:47:00.000Z",
+        "publicaEmBR": "17/10 às 20h47",
+        "midia": "vai a capa DEITADA (o Bluesky não publica vídeo, e a em pé ficaria cortada no feed)",
+        "caracteres": 106,
+        "limite": 300
+      },
+      "instagram-story": {
+        "postId": "cmvcp2mhl00farx95tyyyti7v",
+        "tipo": "vídeo",
+        "publicaEm": "2026-10-17T22:05:00.000Z",
+        "publicaEmBR": "17/10 às 19h05"
+      },
+      "facebook-story": {
+        "postId": "cmvcp2mo700fbrx95fbh18ggs",
+        "tipo": "vídeo",
+        "publicaEm": "2026-10-17T22:31:00.000Z",
+        "publicaEmBR": "17/10 às 19h31"
+      }
+    }
   }
 }
