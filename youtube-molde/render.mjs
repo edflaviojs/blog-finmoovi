@@ -15,7 +15,9 @@ const arg = (k, d) => process.argv.find((a) => a.startsWith(`--${k}=`))?.split('
 const slug = arg('slug'), modo = arg('modo', 'video')
 const trab = path.join(aqui, 'trabalho', slug)
 const plano = JSON.parse(fs.readFileSync(path.join(trab, 'plano.json'), 'utf8'))
-const QPS = Number(arg('qps', 60)), SUB = Number(arg('sub', 4)), TRAB = Number(process.env.WORKERS || 4)
+const QPS = Number(arg('qps', plano.qps || 60)), SUB = Number(arg('sub', plano.sub || 4)), TRAB = Number(process.env.WORKERS || 4)
+// o Short é em pé (1080×1920, index.html); o vídeo longo é deitado (1920×1080, longo.html) — o plano diz qual
+const LARG = plano.largura || 1080, ALT = plano.altura || 1920, PAGINA = plano.pagina || 'index.html'
 
 const correr = (cmd, args) => new Promise((ok, falha) => {
   const p = spawn(cmd, args, { stdio: ['ignore', 'inherit', 'inherit'] })
@@ -23,10 +25,10 @@ const correr = (cmd, args) => new Promise((ok, falha) => {
 })
 const errosDaPagina = []
 async function abrir(nav) {
-  const pg = await nav.newPage({ viewport: { width: 1080, height: 1920 }, deviceScaleFactor: 1 })
+  const pg = await nav.newPage({ viewport: { width: LARG, height: ALT }, deviceScaleFactor: 1 })
   await pg.addInitScript((pl) => { window.__RENDER__ = true; window.__PLANO__ = pl }, plano)
   pg.on('pageerror', (e) => errosDaPagina.push(e.message))
-  await pg.goto(pathToFileURL(path.join(aqui, 'index.html')).href)
+  await pg.goto(pathToFileURL(path.join(aqui, PAGINA)).href)
   // erro na página = parar já, com a mensagem (em vez de esperar 30 s pelo "pronto" que nunca vem)
   await pg.waitForFunction(() => window.__PRONTO__ === true, null, { timeout: 30000 }).catch((e) => { throw new Error(errosDaPagina.length ? 'erro na página: ' + errosDaPagina.join(' | ') : e.message) })
   return pg
@@ -48,6 +50,36 @@ if (modo === 'foto') {
   const n = Math.round(tl.beats * 2)
   for (let i = 0; i < n; i++) await fotografar(p0, (i + 0.6) * 0.5 * tl.beat, path.join(dir, `${String(i).padStart(3, '0')}.png`))
   console.log(`batidas: ${n} fotos em ${dir}`)
+} else if (plano.formato === 'longo') {
+  // O VÍDEO LONGO NÃO CABE NO DISCO EM FOTOS SOLTAS (~30 mil fotos de 1920×1080). Cada página faz UM pedaço
+  // seguido do filme e manda as fotos direto para o seu próprio ffmpeg (que já faz a média das subfotos);
+  // no fim os pedaços colam-se sem voltar a codificar. Os cortes caem sempre entre dois quadros inteiros.
+  const quadros = Math.round(tl.duration * QPS)
+  const paginas = [p0, ...(await Promise.all(Array.from({ length: TRAB - 1 }, () => abrir(nav))))]
+  const inicio = Date.now(); let feitos = 0
+  const tam = Math.ceil(quadros / TRAB)
+  const pedacos = paginas.map((_, w) => [w * tam, Math.min(quadros, (w + 1) * tam)]).filter(([a, b]) => b > a)
+  await Promise.all(pedacos.map(async ([a, b], w) => {
+    const saida = path.join(trab, `pedaco-${w}.mp4`)
+    const ff = spawn('ffmpeg', ['-v', 'error', '-y', '-f', 'image2pipe', '-framerate', String(QPS * SUB), '-c:v', 'mjpeg', '-i', '-',
+      '-vf', `tmix=frames=${SUB},select='eq(mod(n\\,${SUB})\\,${SUB - 1})',setpts=N/(${QPS}*TB)`,
+      '-frames:v', String(b - a), '-r', String(QPS), '-c:v', 'libx264', '-preset', 'medium', '-crf', '18', '-pix_fmt', 'yuv420p', saida], { stdio: ['pipe', 'inherit', 'inherit'] })
+    const fim = new Promise((ok, falha) => ff.on('exit', (c) => (c === 0 ? ok() : falha(new Error(`ffmpeg do pedaço ${w} saiu com ${c}`)))))
+    const pg = paginas[w]
+    for (let i = a * SUB; i < b * SUB; i++) {
+      await pg.evaluate((tt) => window.seek(tt), (i - (SUB - 1) / 2) / (QPS * SUB))
+      const buf = await pg.screenshot({ type: 'jpeg', quality: 92, clip: { x: 0, y: 0, width: LARG, height: ALT } })
+      if (!ff.stdin.write(buf)) await new Promise((ok) => ff.stdin.once('drain', ok))
+      if (++feitos % 1500 === 0) console.log(`  ${feitos}/${quadros * SUB} fotos (${((Date.now() - inicio) / 1000).toFixed(0)} s)`)
+    }
+    ff.stdin.end()
+    await fim
+  }))
+  const lista = path.join(trab, 'pedacos.txt')
+  fs.writeFileSync(lista, pedacos.map((_, w) => `file 'pedaco-${w}.mp4'`).join('\n'))
+  await correr('ffmpeg', ['-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', lista, '-c', 'copy', path.join(trab, 'video-mudo.mp4')])
+  pedacos.forEach((_, w) => fs.rmSync(path.join(trab, `pedaco-${w}.mp4`), { force: true }))
+  console.log(`video longo: ${quadros} quadros em ${((Date.now() - inicio) / 1000).toFixed(0)} s (${TRAB} pedaços)`)
 } else {
   const dir = path.join(trab, 'quadros'); fs.rmSync(dir, { recursive: true, force: true }); fs.mkdirSync(dir, { recursive: true })
   const quadros = Math.round(tl.duration * QPS), total = quadros * SUB

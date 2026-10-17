@@ -52,20 +52,40 @@ const PICO = Object.fromEntries(Object.entries(SONS).map(([k, x]) => { let m = 0
 
 // ── a mistura ──
 const mix = new Float32Array(N * 2)
-const musica = ler(path.join(raiz, 'youtube-render', 'public', 'music', plano.musica.ficheiro), ['-ss', plano.musica.inicio.toFixed(4), '-t', (tl.duration + 0.1).toFixed(4)])
+const ficheiroMusica = path.join(raiz, 'youtube-render', 'public', 'music', plano.musica.ficheiro)
+let musica
+if (plano.musica.laco) {
+  // O VÍDEO LONGO (8 min) é mais comprido do que a faixa (75 s, com o fim já a desvanecer gravado).
+  // Usam-se os primeiros 72 s e as passagens sobrepõem-se 3 s com desvanecimento cruzado — a mesma
+  // "costura cruzada" do Remotion, para a música nunca morrer e voltar de repente.
+  const USAVEL = 72, CRUZA = 3
+  const bloco = ler(ficheiroMusica, ['-t', String(USAVEL)]), nb = bloco.length / 2, nc = amostras(CRUZA), passo = nb - nc
+  musica = new Float32Array(N * 2)
+  for (let ini = 0; ini < N; ini += passo) {
+    for (let i = 0; i < nb && ini + i < N; i++) {
+      const g = ini > 0 && i < nc ? i / nc : 1, h = i >= nb - nc ? (nb - i) / nc : 1
+      musica[2 * (ini + i)] += bloco[2 * i] * g * h; musica[2 * (ini + i) + 1] += bloco[2 * i + 1] * g * h
+    }
+  }
+} else musica = ler(ficheiroMusica, ['-ss', plano.musica.inicio.toFixed(4), '-t', (tl.duration + 0.1).toFixed(4)])
 const fade = amostras(0.004)
 for (let i = 0; i < N && 2 * i + 1 < musica.length; i++) {
   const g = VOLUME_MUSICA * Math.min(1, i / fade, (N - i) / fade)
   mix[2 * i] += musica[2 * i] * g; mix[2 * i + 1] += musica[2 * i + 1] * g
 }
 plano.cenas.forEach((c) => {
+  if (!c.audio) return
   const voz = ler(path.join(raiz, 'youtube-render', 'public', c.audio)), a = amostras(c.inicio)
   for (let i = 0; i < voz.length / 2 && a + i < N; i++) { mix[2 * (a + i)] += voz[2 * i]; mix[2 * (a + i) + 1] += voz[2 * i + 1] }
 })
 for (const cue of tl.cues) {
   const x = SONS[cue.kind]; if (!x) continue
   const ini = amostras(cue.t) - PICO[cue.kind]
-  for (let i = 0; i < x.length; i++) { const j = (((ini + i) % N) + N) % N; mix[2 * j] += x[i]; mix[2 * j + 1] += x[i] } // dá a volta: o loop não tem costura
+  for (let i = 0; i < x.length; i++) {
+    let j = ini + i
+    if (plano.formato === 'longo') { if (j < 0 || j >= N) continue } else j = ((j % N) + N) % N // o Short dá a volta: o loop não tem costura
+    mix[2 * j] += x[i]; mix[2 * j + 1] += x[i]
+  }
 }
 
 const cru = path.join(trab, 'mix-cru.f32')

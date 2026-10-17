@@ -15,20 +15,22 @@ const slug = process.argv.find((a) => a.startsWith('--slug='))?.split('=')[1]
 const trab = path.join(aqui, 'trabalho', slug)
 const plano = JSON.parse(fs.readFileSync(path.join(trab, 'plano.json'), 'utf8'))
 const nav = await chromium.launch()
-const pg = await nav.newPage({ viewport: { width: 1080, height: 1920 } })
+const LARG = plano.largura || 1080, ALT = plano.altura || 1920
+const pg = await nav.newPage({ viewport: { width: LARG, height: ALT } })
 const erros = []
 pg.on('pageerror', (e) => erros.push(e.message))
 await pg.addInitScript((pl) => { window.__RENDER__ = true; window.__PLANO__ = pl }, plano)
-await pg.goto(pathToFileURL(path.join(aqui, 'index.html')).href)
+await pg.goto(pathToFileURL(path.join(aqui, plano.pagina || 'index.html')).href)
 await pg.waitForFunction(() => window.__PRONTO__ === true, null, { timeout: 30000 })
 // PROVA DE CONTROLO: CONTROLE_FALSO=1 estraga o vídeo de propósito (manchetes por cima do cartão e uma
 // palavra para fora do ecrã). Uma conferência que não acusa isto não serve para nada.
 if (process.env.CONTROLE_FALSO) await pg.addStyleTag({ content: '.head { top: 640px !important } .head .w:first-child { margin-left: -500px !important }' })
 
 const cruza = (a, b, folga = 6) => a && b && a.x + folga < b.x + b.w && b.x + folga < a.x + a.w && a.y + folga < b.y + b.h && b.y + folga < a.y + a.h
-const fora = (a) => a.x < 20 || a.x + a.w > 1060 || a.y < 0 || a.y + a.h > 1920
+const fora = (a) => a.x < 20 || a.x + a.w > LARG - 20 || a.y < 0 || a.y + a.h > ALT
 const fotos = path.join(trab, 'conferencia'); fs.rmSync(fotos, { recursive: true, force: true }); fs.mkdirSync(fotos, { recursive: true })
-const passo = plano.batida / 2, n = Math.floor(plano.duracao / passo)
+// no longo mede-se a cada 1,5 s (são 8 minutos); no Short, a cada meia batida
+const passo = plano.formato === 'longo' ? 1.5 : plano.batida / 2, n = Math.floor(plano.duracao / passo)
 const achados = []
 for (let i = 0; i < n; i++) {
   const t = (i + 0.5) * passo
@@ -39,17 +41,18 @@ for (let i = 0; i < n; i++) {
     if (cruza(w, m.cartao)) aqui2.push(`manchete "${w.txt}" encosta no cartão`)
     if (fora(w)) aqui2.push(`manchete "${w.txt}" sai do ecrã`)
   }
-  if (cruza(m.legenda, m.cartao)) aqui2.push('legenda encosta no cartão')
+  if (m.cartao && cruza(m.legenda, m.cartao)) aqui2.push('legenda encosta no cartão')
   if (m.legenda && fora(m.legenda)) aqui2.push('legenda sai do ecrã')
-  for (const d of m.dentro) if (d.x < m.cartao.x - 4 || d.x + d.w > m.cartao.x + m.cartao.w + 4) aqui2.push(`texto "${d.txt}" vaza do cartão (${d.tela})`)
+  for (const d of m.dentro) if (m.cartao && d.x < m.cartao.x - 4 || d.x + d.w > m.cartao.x + m.cartao.w + 4) aqui2.push(`texto "${d.txt}" vaza do cartão (${d.tela})`)
   achados.push({ t: +t.toFixed(2), problemas: [...new Set(aqui2)] })
-  if (i % 2 === 0) await pg.locator('#stage').screenshot({ path: path.join(fotos, `${String(i / 2).padStart(3, '0')}.png`) })
+  const cada = plano.formato === 'longo' ? 8 : 2
+  if (i % cada === 0) await pg.locator('#stage').screenshot({ path: path.join(fotos, `${String(i / cada).padStart(3, '0')}.png`) })
 }
 await nav.close()
 // só fica o que se repete em duas medidas seguidas
 const defeitos = []
 achados.forEach((a, i) => a.problemas.forEach((p) => { if (achados[i + 1]?.problemas.includes(p) && !defeitos.some((d) => d.problema === p && Math.abs(d.t - a.t) < 1)) defeitos.push({ t: a.t, problema: p }) }))
-execFileSync('ffmpeg', ['-v', 'error', '-y', '-framerate', '1', '-i', path.join(fotos, '%03d.png'), '-vf', 'scale=216:384,tile=10x4', '-frames:v', '1', path.join(trab, 'folha.png')])
+execFileSync('ffmpeg', ['-v', 'error', '-y', '-framerate', '1', '-i', path.join(fotos, '%03d.png'), '-vf', plano.formato === 'longo' ? 'scale=384:216,tile=8x6' : 'scale=216:384,tile=10x4', '-frames:v', '1', path.join(trab, 'folha.png')])
 const rel = { slug, ritmo: plano.ritmo, duracao: +plano.duracao.toFixed(2), medidas: achados.length, errosNaPagina: erros, defeitos, aprovado: defeitos.length === 0 && erros.length === 0 }
 fs.writeFileSync(path.join(trab, 'conferencia.json'), JSON.stringify(rel, null, 1))
 console.log(rel.aprovado ? `conferência: OK (${achados.length} medidas)` : `conferência: ${defeitos.length} defeito(s) e ${erros.length} erro(s) de página`)

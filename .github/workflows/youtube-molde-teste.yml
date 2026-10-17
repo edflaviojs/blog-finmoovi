@@ -22,6 +22,10 @@ on:
         description: 'agitado | moderado | calmo | sem — vazio escolhe pelo clima do roteiro'
         required: false
         default: ''
+      formato:
+        description: 'curto (Short, em pé) | longo (vídeo longo, deitado — o slug tem de ter <slug>.longo.json)'
+        required: false
+        default: 'curto'
 
 permissions:
   contents: read
@@ -33,7 +37,7 @@ concurrency:
 jobs:
   testar:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 150
     env:
       SLUG: ${{ inputs.slug }}
     steps:
@@ -48,7 +52,13 @@ jobs:
         run: npm ci
 
       - name: O roteiro existe?
+        if: inputs.formato != 'longo'
         run: test -f "src/scripts/youtube/output/$SLUG.script.json" || { echo "::error::não há roteiro $SLUG"; exit 1; }
+
+      # o longo: as cenas e a escolha de imagem de cada uma saem do guião guardado (de graça, sem IA)
+      - name: Montar as cenas do vídeo longo
+        if: inputs.formato == 'longo'
+        run: node src/scripts/youtube/montar-longo.js --slug="$SLUG"
 
       - name: Garantir o ffmpeg
         run: |
@@ -68,9 +78,17 @@ jobs:
           npx playwright install --with-deps chromium
 
       - name: Fazer o Short no molde (e medir o tempo)
+        env:
+          # só as IAs GRÁTIS (as manchetes do longo); nenhuma chave paga entra aqui
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
         run: |
           INICIO=$(date +%s)
-          node youtube-molde/fazer.mjs --slug="$SLUG" --saida="youtube-molde/trabalho/$SLUG/final.mp4" ${{ inputs.ritmo && format('--ritmo={0}', inputs.ritmo) || '' }}
+          node youtube-molde/fazer.mjs --slug="$SLUG" --saida="youtube-molde/trabalho/$SLUG/final.mp4" ${{ inputs.ritmo && format('--ritmo={0}', inputs.ritmo) || '' }} ${{ inputs.formato == 'longo' && '--formato=longo' || '' }}
           echo "### ⏱️ molde: $(( $(date +%s) - INICIO )) s para o Short $SLUG" >> "$GITHUB_STEP_SUMMARY"
           nproc | xargs -I{} echo "núcleos da máquina: {}" >> "$GITHUB_STEP_SUMMARY"
 

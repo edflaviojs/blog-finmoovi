@@ -1,5 +1,5 @@
 // UM COMANDO: plano → desenho → som → vídeo final → conferência.
-//   node youtube-molde/fazer.mjs --slug=<slug> --saida=<caminho.mp4> [--ritmo=...]
+//   node youtube-molde/fazer.mjs --slug=<slug> --saida=<caminho.mp4> [--ritmo=...] [--formato=longo]
 // Precisa do que o robô já fez antes: o roteiro e o passo da voz (timing.json + áudios das cenas).
 // Sai com código ≠ 0 se não conseguir fazer o vídeo — é o sinal para o robô usar o Remotion nesse dia.
 import { execFileSync } from 'node:child_process'
@@ -13,7 +13,11 @@ const slug = arg('slug'), saida = arg('saida'), ritmo = arg('ritmo')
 if (!slug || !saida) { console.error('uso: node youtube-molde/fazer.mjs --slug=<slug> --saida=<mp4> [--ritmo=...]'); process.exit(2) }
 const node = (script, ...a) => execFileSync(process.execPath, [path.join(aqui, script), `--slug=${slug}`, ...a], { stdio: 'inherit' })
 const t0 = Date.now()
-node('plano.mjs', ...(ritmo ? [`--ritmo=${ritmo}`] : []))
+// o vídeo longo (deitado): primeiro as manchetes (IA grátis; se falhar, o plano tem a regra dele), depois o plano
+if (arg('formato') === 'longo') {
+  try { node('manchetes-longo.mjs') } catch { console.log('manchetes: não correu — o plano usa a regra automática') }
+  node('plano-longo.mjs')
+} else node('plano.mjs', ...(ritmo ? [`--ritmo=${ritmo}`] : []))
 node('render.mjs', '--modo=video')
 node('mixar.mjs')
 const trab = path.join(aqui, 'trabalho', slug)
