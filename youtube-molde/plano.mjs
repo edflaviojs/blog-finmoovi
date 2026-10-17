@@ -56,8 +56,11 @@ const rod = arg('ritmo') ? null : ritmoComRodizio()
 const ritmo = arg('ritmo') || rod.ritmo
 if (rod) console.log(`ritmo: ${ritmo} (clima ${roteiro.music?.clima}; os anteriores: ${rod.antes.slice(-4).join(', ') || '—'})`)
 
-if (!SITUACOES[roteiro.situacao]) console.warn(`⚠️ situação sem nome curto em situacoes.mjs: ${roteiro.situacao} — uso o título do roteiro`)
-const [rotulo, icone] = SITUACOES[roteiro.situacao] || [roteiro.term, 'nota']
+// O Short de 50 s (youtube-short-render.yml, os "kw-") não tem situação: o nome curto é a 1.ª manchete do gancho
+// ("Investir tem custo"), que já vem curta; o título inteiro não cabe na notificação.
+const manchete1 = roteiro.scenes[0]?.shots?.find((s) => s.visual?.type === 'statement')?.visual.text
+if (roteiro.situacao && !SITUACOES[roteiro.situacao]) console.warn(`⚠️ situação sem nome curto em situacoes.mjs: ${roteiro.situacao} — uso o título do roteiro`)
+const [rotulo, icone] = SITUACOES[roteiro.situacao] || [roteiro.situacao ? roteiro.term : (manchete1 && manchete1.length <= 22 ? manchete1 : roteiro.keyword || roteiro.term), 'nota']
 
 // ── as cenas caem em batidas: a próxima começa na 1ª batida depois de a voz anterior acabar + 0,35 s ──
 const norm = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]/g, '')
@@ -74,7 +77,7 @@ timing.scenes.forEach((sc, i) => {
   })
   inicio = Math.ceil((t0 + fimFala + 0.35) / B) * B
 })
-if (cenas.length < 4) throw new Error(`o molde espera 4 cenas (gancho, 2 batidas, fecho); este roteiro tem ${cenas.length}`)
+if (cenas.length < 4) throw new Error(`o molde espera pelo menos 4 cenas (gancho, 2 batidas, fecho); este roteiro tem ${cenas.length}`)
 const ultima = cenas[cenas.length - 1]
 const BATIDAS = Math.ceil((ultima.fimFala + 0.9) / B)
 const DUR = BATIDAS * B
@@ -91,9 +94,38 @@ function quandoNumero(cena) {
   return w ? w.t : cena.inicio + 0.8
 }
 
+// O valor do cartão. O Short de 16 s traz no roteiro ("R$ 300"); o de 50 s não: procura-se "R$ 1.000" no título e nas
+// manchetes, e depois o número DITO antes de "reais" na voz ("mil reais", "duzentos e cinquenta reais").
+function valorDoTexto() {
+  const fmt = (n) => 'R$ ' + n.toLocaleString('pt-BR')
+  for (const txt of [roteiro.term, ...roteiro.scenes.flatMap((s) => (s.shots || []).map((x) => x.visual?.text))]) {
+    const m = String(txt || '').match(/R\$\s?(\d{1,3}(?:\.\d{3})+|\d+)/)
+    if (m) return fmt(+m[1].replace(/\./g, ''))
+  }
+  const U = { um: 1, uma: 1, dois: 2, duas: 2, tres: 3, quatro: 4, cinco: 5, seis: 6, sete: 7, oito: 8, nove: 9, dez: 10, onze: 11, doze: 12, treze: 13, quatorze: 14, catorze: 14, quinze: 15, dezesseis: 16, dezessete: 17, dezoito: 18, dezenove: 19, vinte: 20, trinta: 30, quarenta: 40, cinquenta: 50, sessenta: 60, setenta: 70, oitenta: 80, noventa: 90, cem: 100, cento: 100, duzentos: 200, trezentos: 300, quatrocentos: 400, quinhentos: 500, seiscentos: 600, setecentos: 700, oitocentos: 800, novecentos: 900 }
+  for (const sc of roteiro.scenes) {
+    const ws = String(sc.narration || '').split(/\s+/).map(norm)
+    const i = ws.indexOf('reais'); if (i < 1) continue
+    const ehNum = (w) => w === 'e' || w === 'mil' || /^\d+$/.test(w) || U[w] !== undefined
+    let k = i; while (k > 0 && ehNum(ws[k - 1])) k--
+    let total = 0, parte = 0, achou = false
+    for (const w of ws.slice(k, i)) {
+      if (w === 'e') continue
+      achou = true
+      if (w === 'mil') { total += (parte || 1) * 1000; parte = 0 } else parte += /^\d+$/.test(w) ? +w : U[w]
+    }
+    if (achou) return fmt(total + parte)
+  }
+  return 'R$ 0'
+}
+
 // ── o cartão do app: a sequência de telas ──
 const metaforaDe = (c) => c.shots.find((s) => s.visual?.type === 'metaphor')
-const [c1, c2, c3, c4] = cenas
+// 4 cenas (Short de 16 s): gancho, valor, virada, fecho. Mais cenas (o de 50 s tem 6: gancho, 3 batidas, convite, volta):
+// as 3 primeiras fazem o mesmo papel, o convite (penúltima) é o fecho, e as do meio e a última ganham telas próprias abaixo.
+const [c1, c2, c3] = cenas
+const c4 = cenas.length > 4 ? cenas[cenas.length - 2] : cenas[3]
+const extras = cenas.length > 4 ? [...cenas.slice(3, -2), cenas[cenas.length - 1]] : []
 const m1 = metaforaDe(c1), m3 = metaforaDe(c3) || metaforaDe(c2)
 const aterra = quandoNumero(c2)
 const estados = [
@@ -136,6 +168,14 @@ if (j3) {
   estados.splice(iMeta, 0, j3)
 }
 if (j4) j4.t = Math.max(c4.inicio + 0.05, j4.t)
+// as cenas a mais (só no Short longo): cada uma abre a janela do seu objeto; sem objeto, a do meio volta ao extrato
+// e a última mostra a metáfora outra vez — para o cartão não ficar 15 s parado no mesmo ecrã
+for (const c of extras) {
+  const j = janela(c)
+  const e = j ? { ...j, t: Math.max(c.inicio + 0.05, j.t) } : c === cenas[cenas.length - 1] ? { id: 'meta', modo: 'acao', t: c.inicio + 0.4 } : { id: 'extrato', t: c.inicio + 0.05 }
+  const iDepois = estados.findIndex((x, k) => k > 0 && x.t > e.t)
+  estados.splice(iDepois < 0 ? estados.length : iDepois, 0, e)
+}
 // a janela do fecho só entra se couber: 1,4 s para ela e 0,8 s para o alerta antes da notificação final
 if (j4 && j4.t + 1.4 + 0.8 <= estados[0].t) {
   const iAl = estados.findIndex((e) => e.id === 'alerta')
@@ -148,9 +188,9 @@ for (let i = estados.length - 1; i >= 1; i--) {
   if (prox - estados[i].t < 0.9 && !['valor', 'alerta'].includes(estados[i].id)) estados.splice(i, 1)
 }
 for (const j of estados.filter((e) => e.id === 'janela')) if (j.quebra !== null && j.objetos.some((o) => o.nome === 'carro')) fx.push({ tipo: 'faiscas', t: j.quebra }, { tipo: 'fumaca', t: j.quebra, janela: j.t })
-for (const c of [c1, c2, c3, c4]) for (const p of achar(c, PALAVRAS_EVENTO.atraso)) fx.push({ tipo: 'papeis', t: p.t })
+for (const c of cenas) for (const p of achar(c, PALAVRAS_EVENTO.atraso)) fx.push({ tipo: 'papeis', t: p.t })
 for (const p of achar(c2, PALAVRAS_EVENTO.tomba)) fx.push({ tipo: 'tomba', t: p.t })
-for (const c of [c1, c2, c3, c4]) {
+for (const c of cenas) {
   for (const p of achar(c, PALAVRAS_EVENTO.festa)) fx.push({ tipo: 'confete', t: p.t })
   for (const p of achar(c, PALAVRAS_EVENTO.susto)) fx.push({ tipo: 'raios', t: p.t })
   for (const p of achar(c, PALAVRAS_EVENTO.voa)) fx.push({ tipo: 'notas', t: p.t })
@@ -228,7 +268,7 @@ cursor.janelas = ritmo === 'agitado' ? [[-1, DUR + 1]] : PERFIL.visitas.map((iv)
 
 const plano = {
   slug, ritmo, batida: B, batidas: BATIDAS, duracao: DUR,
-  rotulo, icone, valor: roteiro.valor, metafora, aterra,
+  rotulo, icone, valor: roteiro.valor || valorDoTexto(), metafora, aterra,
   cenas: cenas.map((c) => ({ inicio: c.inicio, audio: c.audio, palavras: c.palavras })),
   estados, inundacoes, manchetes, cursor, fx,
   musica: { ficheiro: ficheiroMusica, inicio: grelha.inicio },
