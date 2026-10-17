@@ -1,0 +1,190 @@
+{
+  "slug": "planejamento-financeiro-planilha",
+  "term": "planejamento financeiro planilha",
+  "category": "basico",
+  "keyword": "planejamento",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você já sentiu que o *dinheiro some* no final do mês?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ralo",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você já sentiu que o dinheiro some no final do mês? Tipo some mesmo, sem você ver onde foi? Isso acontece quando não tem um planejamento financeiro planilha.",
+      "durationSec": 10.8,
+      "shots": [
+        {
+          "anchor": "Você",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro escapa"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "final",
+          "visual": {
+            "type": "icon",
+            "icon": "money"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Conta de luz, mercado, aquele lanche rápido, o cartão que chega cheio de surpresa. Tudo some aos poucos e no fim você fica se perguntando. Onde foi meu dinheiro?",
+      "durationSec": 11.2,
+      "shots": [
+        {
+          "anchor": "Conta",
+          "visual": {
+            "type": "statement",
+            "text": "Conta de luz"
+          }
+        },
+        {
+          "anchor": "cartão",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          }
+        },
+        {
+          "anchor": "Tudo",
+          "visual": {
+            "type": "statement",
+            "text": "Onde foi?"
+          },
+          "sfx": "pop"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Quando você começa a anotar tudo, mesmo que seja num caderno, vê o padrão. Cinquenta aqui, vinte ali, e no mês some quinhentos reais sem você perceber.",
+      "durationSec": 10.4,
+      "shots": [
+        {
+          "anchor": "Quando",
+          "visual": {
+            "type": "statement",
+            "text": "Comece a anotar"
+          }
+        },
+        {
+          "anchor": "some",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "quinhentos",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 500,
+            "prefix": "R$"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "No FinMoovi eu coloquei cada gasto, mesmo o pequeno, e ele mostrou onde cada real estava indo. Foi aí que vi o desperdício.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Visão geral"
+          }
+        },
+        {
+          "anchor": "mostrou",
+          "visual": {
+            "type": "statement",
+            "text": "Mostrou gastos"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver onde seu dinheiro tá indo? Procura FinMoovi. São sete dias grátis para você testar.",
+      "durationSec": 6.2,
+      "shots": [
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "statement",
+            "text": "Quer saber?"
+          }
+        },
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "icon",
+            "icon": "target"
+          }
+        },
+        {
+          "anchor": "testar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 2.7,
+      "shots": [
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro sem controle"
+          }
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          },
+          "sfx": "thud"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Teste sua planilha grátis",
+    "target": "app"
+  },
+  "totalDurationSec": 50.1
+}
