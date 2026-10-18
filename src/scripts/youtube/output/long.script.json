@@ -1,0 +1,200 @@
+{
+  "slug": "long",
+  "term": "long",
+  "category": "basico",
+  "keyword": "long",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "*Você acha que comprar ação e esperar o preço subir é só pra especialista?*"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "avalanche",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você acha que comprar ação e esperar o preço subir é só pra especialista? Na verdade, isso é ficar long. Comprar e esperar valorizar.",
+      "durationSec": 9.2,
+      "shots": [
+        {
+          "anchor": "acha",
+          "visual": {
+            "type": "statement",
+            "text": "Comprar e esperar"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "esperar",
+          "visual": {
+            "type": "icon",
+            "icon": "growth"
+          }
+        },
+        {
+          "anchor": "verdade",
+          "visual": {
+            "type": "number",
+            "text": "R$ 1.000"
+          },
+          "sfx": "coin"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Você vê a bolsa no noticiário, mas nunca sabe se vale colocar cem reais.",
+      "durationSec": 5.4,
+      "shots": [
+        {
+          "anchor": "Você",
+          "visual": {
+            "type": "statement",
+            "text": "Bolsa no noticiário"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "nunca",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Se você comprar hoje, em cinco anos aquele cem reais pode virar quase mil, só pela alta do mercado.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "comprar",
+          "visual": {
+            "type": "statement",
+            "text": "Investimento cresce"
+          },
+          "sfx": "slide"
+        },
+        {
+          "anchor": "aquele",
+          "visual": {
+            "type": "counter",
+            "from": 100,
+            "to": 1000,
+            "prefix": "R$"
+          }
+        },
+        {
+          "anchor": "pela",
+          "visual": {
+            "type": "icon",
+            "icon": "growth"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei isso no FinMoovi e ele mostrou que o total chega a novecentos e noventa e nove reais.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "joguei",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Resultado"
+          },
+          "sfx": "typewriter"
+        },
+        {
+          "anchor": "total",
+          "visual": {
+            "type": "statement",
+            "text": "Total: R$ 999"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu número? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 4.2,
+      "shots": [
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "statement",
+            "text": "Seu número?"
+          },
+          "sfx": "alert"
+        },
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "icon",
+            "icon": "money"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Ficar long é só comprar barato e esperar subir, sem mistério. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "long",
+          "visual": {
+            "type": "statement",
+            "text": "Comprar barato"
+          }
+        },
+        {
+          "anchor": "esperar",
+          "visual": {
+            "type": "icon",
+            "icon": "clock"
+          }
+        },
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro dos outros"
+          },
+          "sfx": "thud"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja seu futuro investindo",
+    "target": "app"
+  },
+  "totalDurationSec": 40.3
+}
