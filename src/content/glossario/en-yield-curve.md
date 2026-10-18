@@ -4,6 +4,7 @@ definition: "What Yield Curve is and how it shows up in your everyday money — 
 title: "Yield Curve - Financial Glossary"
 description: "What Yield Curve is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/yield-curve.webp"
+imageAlt: "Gold coin stacks and glass jars with green sprouts on purple background."
 category: "basico"
 tags: ["Yield Curve", "glossary", "finance"]
 author: "FinMoovi"

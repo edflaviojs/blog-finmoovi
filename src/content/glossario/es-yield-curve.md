@@ -4,6 +4,7 @@ definition: "Qué es yield curve y cómo aparece en tu día a día — explicado
 title: "yield curve - Glosario Financiero"
 description: "Qué es yield curve y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/yield-curve.webp"
+imageAlt: "Pila de monedas doradas y plantas verdes en frascos sobre fondo morado."
 category: "basico"
 tags: ["yield curve", "glosario", "finanzas"]
 author: "FinMoovi"
