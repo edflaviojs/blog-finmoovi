@@ -2533,8 +2533,202 @@
           "titulo": "Perguntas frequentes sobre cheque especial"
         }
       ]
+    },
+    {
+      "videoId": "v9zGTliMOXI",
+      "title": "FAÇA ISSO NO 5° DIA ÚTIL E MUDE DE VIDA EM 30 DIAS",
+      "channel": "Motiva Henrique ",
+      "duracaoSeg": 1412,
+      "idioma": "pt",
+      "viewsPerDay": 3096,
+      "vistoEm": "2026-10-18",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "Por que você trabalha o mês todo e não sobra nada?"
+        },
+        {
+          "seg": 55,
+          "titulo": "O erro de 70% dos brasileiros com o salário"
+        },
+        {
+          "seg": 135,
+          "titulo": "A armadilha silenciosa do cartão de crédito"
+        },
+        {
+          "seg": 170,
+          "titulo": "Os 3 motivos reais para você querer ter dinheiro"
+        },
+        {
+          "seg": 228,
+          "titulo": "Quem gasta tudo o que ganha nunca vai enriquecer"
+        },
+        {
+          "seg": 307,
+          "titulo": "A verdade sobre renda extra e sair das dívidas"
+        },
+        {
+          "seg": 365,
+          "titulo": "Como quebrar o ciclo de trabalhar só para pagar contas"
+        },
+        {
+          "seg": 431,
+          "titulo": "A rotina real de quem precisa mudar de vida"
+        },
+        {
+          "seg": 546,
+          "titulo": "O segredo para viver em paz com pouco dinheiro"
+        },
+        {
+          "seg": 669,
+          "titulo": "Liberdade financeira vs. Ostentação"
+        },
+        {
+          "seg": 767,
+          "titulo": "Como começar a investir em apenas uma semana"
+        },
+        {
+          "seg": 905,
+          "titulo": "O mito de que investimento é só para rico"
+        },
+        {
+          "seg": 975,
+          "titulo": "Cuidado: CDB e a ilusão da segurança total"
+        },
+        {
+          "seg": 1089,
+          "titulo": "A mentalidade que mantém você na pobreza"
+        },
+        {
+          "seg": 1204,
+          "titulo": "O primeiro passo para juntar seus primeiros R$ 5.000"
+        },
+        {
+          "seg": 1362,
+          "titulo": "Onde colocar sua verdadeira confiança financeira"
+        }
+      ]
+    },
+    {
+      "videoId": "jLvnRwCZicg",
+      "title": "Aprenda a criar uma Planilha de Controle Financeiro Automática no Excel",
+      "channel": "Hashtag Treinamentos",
+      "duracaoSeg": 1931,
+      "idioma": "en",
+      "viewsPerDay": 329,
+      "vistoEm": "2026-10-18",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "Introdução"
+        },
+        {
+          "seg": 33,
+          "titulo": "O que você vai aprender nesta aula"
+        },
+        {
+          "seg": 68,
+          "titulo": "Por que o registro é a parte mais importante"
+        },
+        {
+          "seg": 101,
+          "titulo": "Estrutura do registro financeiro"
+        },
+        {
+          "seg": 136,
+          "titulo": "Campos essenciais: data, tipo, conta, categoria e subcategoria"
+        },
+        {
+          "seg": 271,
+          "titulo": "Campo de descrição e valor"
+        },
+        {
+          "seg": 304,
+          "titulo": "Criando a aba de cadastros"
+        },
+        {
+          "seg": 372,
+          "titulo": "Cadastrando tipos e contas com validação de dados"
+        },
+        {
+          "seg": 440,
+          "titulo": "Criando listas suspensas com validação de dados"
+        },
+        {
+          "seg": 507,
+          "titulo": "Cadastrando categorias de receita e despesa"
+        },
+        {
+          "seg": 607,
+          "titulo": "Criando intervalos nomeados para as categorias"
+        },
+        {
+          "seg": 712,
+          "titulo": "Criando intervalos nomeados para as subcategorias"
+        },
+        {
+          "seg": 810,
+          "titulo": "Usando a função INDIRETO na validação de dados"
+        },
+        {
+          "seg": 844,
+          "titulo": "Testando as listas suspensas dinâmicas"
+        },
+        {
+          "seg": 880,
+          "titulo": "Cadastrando subcategorias de despesa"
+        },
+        {
+          "seg": 1018,
+          "titulo": "Nomeando os intervalos de subcategorias"
+        },
+        {
+          "seg": 1055,
+          "titulo": "Aplicando a função INDIRETO nas subcategorias"
+        },
+        {
+          "seg": 1122,
+          "titulo": "Testando e corrigindo os cadastros"
+        },
+        {
+          "seg": 1154,
+          "titulo": "Formatando o registro como tabela"
+        },
+        {
+          "seg": 1257,
+          "titulo": "Criando a coluna de valor financeiro com função SE"
+        },
+        {
+          "seg": 1391,
+          "titulo": "Criando a coluna de saldo acumulado"
+        },
+        {
+          "seg": 1492,
+          "titulo": "Criando a aba de análises com tabelas dinâmicas"
+        },
+        {
+          "seg": 1559,
+          "titulo": "Analisando valor financeiro por mês"
+        },
+        {
+          "seg": 1623,
+          "titulo": "Criando tabelas por categoria, subcategoria e conta"
+        },
+        {
+          "seg": 1655,
+          "titulo": "Gerando gráficos dinâmicos de linha, colunas e pizza"
+        },
+        {
+          "seg": 1754,
+          "titulo": "Limpando e organizando o painel de análises"
+        },
+        {
+          "seg": 1821,
+          "titulo": "Conclusão"
+        }
+      ]
     }
   ],
-  "atualizadoEm": "2026-10-17T08:08:52.945Z",
-  "total": 47
+  "atualizadoEm": "2026-10-18T08:25:40.170Z",
+  "total": 49
 }
