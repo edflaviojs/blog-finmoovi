@@ -10,5 +10,11 @@
     "runId": "39026928054",
     "producedAt": "2026-10-17T11:18:56.489Z",
     "artifact": "short-planejamento-financeiro-planilha"
+  },
+  {
+    "fileSlug": "long",
+    "runId": "39123166792",
+    "producedAt": "2026-10-18T11:48:29.913Z",
+    "artifact": "short-long"
   }
 ]
