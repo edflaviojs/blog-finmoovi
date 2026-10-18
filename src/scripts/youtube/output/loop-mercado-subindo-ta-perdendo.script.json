@@ -1,0 +1,118 @@
+{
+  "slug": "loop-mercado-subindo-ta-perdendo",
+  "formato": "loop16",
+  "term": "O mercado que sobe toda semana",
+  "category": "vida",
+  "keyword": "MERCADO",
+  "valor": "R$ 640",
+  "situacao": "mercado-subindo",
+  "gancho": "ta-perdendo",
+  "ganchoFamilia": "tá perdendo",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "escada",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se você ainda faz o mercado sem olhar o preço, tá perdendo dinheiro.",
+      "durationSec": 4.7,
+      "shots": [
+        {
+          "anchor": "mercado",
+          "visual": {
+            "type": "statement",
+            "text": "Mercado sem olhar preço?"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "olhar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escada"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu fechei o mesmo carrinho de sempre. Deu seiscentos e quarenta reais",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "fechei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escada"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "carrinho",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 640 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Aí eu fui trocando marca, degrau por degrau.",
+      "durationSec": 2.9,
+      "shots": [
+        {
+          "anchor": "trocando",
+          "visual": {
+            "type": "statement",
+            "text": "Um degrau de cada vez"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "marca",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escada"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Mercado sem olhar o preço é dinheiro indo embora.",
+      "durationSec": 3.26,
+      "shots": [
+        {
+          "anchor": "Mercado",
+          "visual": {
+            "type": "statement",
+            "text": "Olhar o preço salva o mês"
+          }
+        },
+        {
+          "anchor": "olhar",
+          "visual": {
+            "type": "statement",
+            "text": "Mercado sem olhar preço?"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}

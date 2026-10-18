@@ -808,5 +808,11 @@
     "gancho": "ta-perdendo",
     "turno": "manha",
     "em": "2026-10-18T08:59:31.110Z"
+  },
+  {
+    "situacao": "mercado-subindo",
+    "gancho": "ta-perdendo",
+    "turno": "noite",
+    "em": "2026-10-18T09:09:13.614Z"
   }
 ]
