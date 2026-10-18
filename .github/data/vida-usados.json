@@ -802,5 +802,11 @@
     "gancho": "se-parar",
     "turno": "noite",
     "em": "2026-10-17T08:49:44.639Z"
+  },
+  {
+    "situacao": "reserva-emergencia",
+    "gancho": "ta-perdendo",
+    "turno": "manha",
+    "em": "2026-10-18T08:59:31.110Z"
   }
 ]

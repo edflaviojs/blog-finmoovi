@@ -1,0 +1,118 @@
+{
+  "slug": "loop-reserva-emergencia-ta-perdendo",
+  "formato": "loop16",
+  "term": "A reserva de emergência",
+  "category": "vida",
+  "keyword": "RESERVA",
+  "valor": "R$ 600",
+  "situacao": "reserva-emergencia",
+  "gancho": "ta-perdendo",
+  "ganchoFamilia": "tá perdendo",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "guarda-chuva",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se você ainda faz conta sem reserva, tá perdendo sono. Comigo aconteceu.",
+      "durationSec": 4.45,
+      "shots": [
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "statement",
+            "text": "Sem reserva, sem sono"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "reserva",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "guarda-chuva"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Luz, mercado e escola vieram juntos. Faltou seiscentos reais",
+      "durationSec": 3.34,
+      "shots": [
+        {
+          "anchor": "mercado",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "guarda-chuva"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "escola",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 600 faltaram"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Agora separo esse dinheirinho todo mês, caladinho, pro meu guarda-chuva.",
+      "durationSec": 3.71,
+      "shots": [
+        {
+          "anchor": "separo",
+          "visual": {
+            "type": "statement",
+            "text": "Agora separo todo mês"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "dinheirinho",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "guarda-chuva"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Sem reserva, a conta chega e você perde o sono.",
+      "durationSec": 3.71,
+      "shots": [
+        {
+          "anchor": "reserva",
+          "visual": {
+            "type": "statement",
+            "text": "Sem reserva, sem sono"
+          }
+        },
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "statement",
+            "text": "Sem reserva, sem sono"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.21
+}
