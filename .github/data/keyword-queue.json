@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-18T14:11:05.029Z",
+  "updatedAt": "2026-10-19T14:08:30.336Z",
   "sourceCursor": 1,
   "entries": [
     {
@@ -2332,6 +2332,30 @@
       "source": "gsc-gap",
       "status": "pending",
       "addedAt": "2026-10-12T16:14:32.788Z"
+    },
+    {
+      "keyword": "trading",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-10-19T14:08:29.913Z"
+    },
+    {
+      "keyword": "risco financeiro",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-10-19T14:08:29.913Z"
+    },
+    {
+      "keyword": "calculadora de investimento com aporte mensal",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-10-19T14:08:29.913Z"
     }
   ]
 }

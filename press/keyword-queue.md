@@ -1,7 +1,7 @@
 # 🗂️ Fila de Keywords (Fase 3)
 
-**Atualizado em:** 2026-10-12T16:14:33.382Z
-**Totais:** 70 pendente(s) · 109 usada(s) · 59 pulada(s)
+**Atualizado em:** 2026-10-19T14:08:30.336Z
+**Totais:** 71 pendente(s) · 110 usada(s) · 60 pulada(s)
 
 ## ⏳ Pendentes por fonte
 
@@ -52,10 +52,8 @@
 - o que levar para comer na praia para economizar
 - por que é importante economizar energia elétrica
 
-### Lacunas do GSC (prioridade 2) — 26
+### Lacunas do GSC (prioridade 2) — 27
 
-- hipoteca
-- tudo sobre investimentos
 - calculadora tabela sac
 - debenture
 - mortgage
@@ -80,6 +78,9 @@
 - activo financieros
 - etf inversion
 - financial assets
+- trading
+- risco financeiro
+- calculadora de investimento com aporte mensal
 
 ### Autocomplete (prioridade 3) — 0
 
@@ -89,6 +90,7 @@ _Nenhuma._
 
 | Keyword | Usada por | Em |
 |---|---|---|
+| tudo sobre investimentos | gerar-dicas-financeiras | 2026-10-12 |
 | calculadora sac price | gerar-dicas-financeiras | 2026-10-11 |
 | calculadora tabela price | gerar-dicas-financeiras | 2026-10-08 |
 | gasto recurrente | gerar-post-investimentos | 2026-10-07 |
@@ -98,7 +100,6 @@ _Nenhuma._
 | recurring payments financial planning | gerar-dicas-financeiras | 2026-09-21 |
 | recurring fee definition | gerar-dicas-financeiras | 2026-09-20 |
 | installments | gerar-dicas-financeiras | 2026-09-19 |
-| expense control | gerar-dicas-financeiras | 2026-09-18 |
 
 ## ⏭️ Puladas (já cobertas)
 
@@ -161,6 +162,7 @@ _Nenhuma._
 - o que e poupar (verbete-ja-existe)
 - o que é economizar (variacao-duplicada)
 - debentures (coberto-glossario)
+- hipoteca (coberto-glossario)
 
 ---
 _Gerado automaticamente por keyword-queue-sync.js (Fase 3). Fontes: data/keywords-manuais.csv · lacunas do GSC · Google Autocomplete._
