@@ -5779,6 +5779,21 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-10-18"
+    },
+    "yield-curve-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-19"
+    },
+    "yield-curve-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-19"
+    },
+    "yield-curve.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-19"
     }
   },
   "corrigidas": {
@@ -6443,6 +6458,6 @@
       "motivo": "tem texto escrito (\"I'm sorry, I'm not able to identify the people in this image.\")"
     }
   },
-  "totalAcervo": 1156,
-  "ultimaCorrida": "2026-10-18"
+  "totalAcervo": 1159,
+  "ultimaCorrida": "2026-10-19"
 }
