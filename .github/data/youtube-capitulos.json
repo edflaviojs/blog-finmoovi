@@ -2727,8 +2727,87 @@
           "titulo": "Conclusão"
         }
       ]
+    },
+    {
+      "videoId": "QhDX-BhJSnY",
+      "title": "10 coisas que não valem mais a pena gastar o seu dinheiro",
+      "channel": "Investidor Sardinha l Raul Sena",
+      "duracaoSeg": 2012,
+      "idioma": "pt",
+      "viewsPerDay": 37463,
+      "vistoEm": "2026-10-19",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "10 coisas que não valem a pena mais comprar"
+        },
+        {
+          "seg": 48,
+          "titulo": "Assinaturas desnecessárias"
+        },
+        {
+          "seg": 156,
+          "titulo": "Vale a pena ter casa de praia?"
+        },
+        {
+          "seg": 280,
+          "titulo": "O melhor ETF para viver de renda"
+        },
+        {
+          "seg": 400,
+          "titulo": "Como planejar uma viagem?"
+        },
+        {
+          "seg": 510,
+          "titulo": "Cuidado com seus custos fixos"
+        },
+        {
+          "seg": 628,
+          "titulo": "A fraude da gasolina aditivada"
+        },
+        {
+          "seg": 750,
+          "titulo": "Vale a pena comprar remédios genéricos?"
+        },
+        {
+          "seg": 905,
+          "titulo": "Exemplos de remédios genéricos"
+        },
+        {
+          "seg": 1061,
+          "titulo": "Vale a pena comprar celular novo?"
+        },
+        {
+          "seg": 1140,
+          "titulo": "iFood é furada? Os riscos dos deliverys"
+        },
+        {
+          "seg": 1310,
+          "titulo": "Como economizar dinheiro com roupas?"
+        },
+        {
+          "seg": 1471,
+          "titulo": "Os riscos de comprar no TikTok Shop"
+        },
+        {
+          "seg": 1557,
+          "titulo": "O streaming fragmentado"
+        },
+        {
+          "seg": 1697,
+          "titulo": "Não compre muitos jogos"
+        },
+        {
+          "seg": 1761,
+          "titulo": "O segredo das finanças pessoais"
+        },
+        {
+          "seg": 1915,
+          "titulo": "Perguntas e respostas"
+        }
+      ]
     }
   ],
-  "atualizadoEm": "2026-10-18T08:25:40.170Z",
-  "total": 49
+  "atualizadoEm": "2026-10-19T09:26:35.802Z",
+  "total": 50
 }
