@@ -1,0 +1,118 @@
+{
+  "slug": "loop-decimo-terceiro-ninguem-fala",
+  "formato": "loop16",
+  "term": "O 13º antes que suma",
+  "category": "vida",
+  "keyword": "13º",
+  "valor": "R$ 2.400",
+  "situacao": "decimo-terceiro",
+  "gancho": "ninguem-fala",
+  "ganchoFamilia": "ninguém fala",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "fumaca",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Ninguém fala isso sobre o décimo terceiro, mas é real.",
+      "durationSec": 3.53,
+      "shots": [
+        {
+          "anchor": "Ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "Ninguém fala disso"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "décimo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Olha, caíram dois mil e quatrocentos reais e, quando vi, tinha virado fumaça.",
+      "durationSec": 4.6,
+      "shots": [
+        {
+          "anchor": "caíram",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "quatrocentos",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 2.400 viraram fumaça"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Foi só mercadinho, parcelinha, e eu sem anotar nada.",
+      "durationSec": 3.18,
+      "shots": [
+        {
+          "anchor": "mercadinho",
+          "visual": {
+            "type": "statement",
+            "text": "Um pouquinho de cada coisa"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "parcelinha",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Hoje o décimo terceiro cai, e eu não deixo sumir caladinho.",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "décimo",
+          "visual": {
+            "type": "statement",
+            "text": "Não deixo mais sumir"
+          }
+        },
+        {
+          "anchor": "terceiro",
+          "visual": {
+            "type": "statement",
+            "text": "Ninguém fala disso"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
