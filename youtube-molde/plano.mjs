@@ -128,7 +128,7 @@ const [c1, c2, c3] = cenas
 const c4 = cenas.length > 4 ? cenas[cenas.length - 2] : cenas[3]
 const extras = cenas.length > 4 ? [...cenas.slice(3, -2), cenas[cenas.length - 1]] : []
 const m1 = metaforaDe(c1), m3 = metaforaDe(c3) || metaforaDe(c2)
-const aterra = quandoNumero(c2)
+let aterra = quandoNumero(c2)
 const estados = [
   { id: 'notif', t: DUR - 3 * B },
   { id: 'meta', modo: 'apresenta', t: m1 ? quando(c1, m1.anchor) - 0.1 : c1.inicio + 1.6 },
@@ -198,6 +198,112 @@ for (const c of cenas) {
 }
 fx.push({ tipo: 'moedas', t: aterra })
 
+// ── O SHORT DE 50 s: AS TELAS QUE O ROTEIRO PEDE (19/10, o Ed: "tem fala que não confere com o que está sendo mostrado") ──
+// O roteiro já diz o que mostrar em cada frase (os "shots": a palavra e o desenho). O de 50 s passa a seguir isso, como o
+// vídeo longo segue o `visual` de cada cena: o número dito aparece no cartão, "joguei no FinMoovi" abre a tela do app
+// com o resultado, o convite mostra o FinMoovi e os 7 dias grátis. O de 16 s (4 cenas) fica como foi aprovado.
+const NUM = { um: 1, uma: 1, dois: 2, duas: 2, tres: 3, quatro: 4, cinco: 5, seis: 6, sete: 7, oito: 8, nove: 9, dez: 10, onze: 11, doze: 12, treze: 13, quatorze: 14, catorze: 14, quinze: 15, dezesseis: 16, dezessete: 17, dezoito: 18, dezenove: 19, vinte: 20, trinta: 30, quarenta: 40, cinquenta: 50, sessenta: 60, setenta: 70, oitenta: 80, noventa: 90, cem: 100, cento: 100, duzentos: 200, trezentos: 300, quatrocentos: 400, quinhentos: 500, seiscentos: 600, setecentos: 700, oitocentos: 800, novecentos: 900 }
+// os números que a voz diz numa cena ("dois mil e quatrocentos reais"): o valor, quando começa, quando acaba, e o que vem depois
+function numerosDitos(c) {
+  const ws = c.palavras, ehNum = (w) => w === 'mil' || /^\d+$/.test(w) || NUM[w] !== undefined, achados = []
+  for (let i = 0; i < ws.length; i++) {
+    if (!ehNum(norm(ws[i].w))) continue
+    let k = i, total = 0, parte = 0
+    while (k < ws.length && (ehNum(norm(ws[k].w)) || (norm(ws[k].w) === 'e' && k + 1 < ws.length && ehNum(norm(ws[k + 1].w))))) {
+      const w = norm(ws[k].w)
+      if (w === 'mil') { total += (parte || 1) * 1000; parte = 0 } else if (w !== 'e') parte += /^\d+$/.test(w) ? +w : NUM[w]
+      k++
+    }
+    const n = total + parte, reais = k < ws.length && norm(ws[k].w) === 'reais'
+    if (n >= 10) achados.push({ n, t: ws[i].t, fim: ws[k - 1].t, reais, depois: ws.slice(k + (reais ? 1 : 0), k + 5).map((x) => norm(x.w)).join(' ') })
+    i = k - 1
+  }
+  return achados
+}
+const numeroDe = (txt) => { const m = String(txt || '').match(/R\$\s?(\d{1,3}(?:\.\d{3})+|\d+)(?:,\d+)?(\s?mil)?/i); return m ? +m[1].replace(/\./g, '') * (m[2] ? 1000 : 1) : 0 }
+// "por mês", "no ano"… o que a voz diz logo depois do número vira a linha pequena do cartão
+function legendaDoValor(d, txt) {
+  const dep = (d?.depois || '') + ' ' + norm(String(txt || '').replace(/^[^/]*\//, 'por '))
+  if (/^(por|ao) ?mes/.test(dep) || /pormes/.test(dep)) return 'por mês'
+  if (/^(no|por|em um|num) ?ano/.test(dep) || /^em (doze|12) meses/.test(dep)) return 'em 12 meses'
+  return ''
+}
+// a cor do resultado: o que rende/sobra é verde; o que a taxa/cobrança leva é vermelho
+const tomDe = (c) => { const f = norm(roteiro.scenes[c.i]?.narration || ''); return /rend|sobr|econom|guard|tesouro|invest|poup|junt/.test(f) ? 'entra' : /cobr|taxa|perd|juros|divida|gast/.test(f) ? 'sai' : 'neutro' }
+// o ícone do roteiro → o objeto desenhado na janela
+const ICONE_OBJ = { warning: 'alerta', shield: 'cadeado', card: 'cartao', money: 'saco-dinheiro', coins: 'saco-dinheiro', wallet: 'carteira', question: 'duvida', target: 'alvo', clock: 'despertador', 'chart-down': 'grafico-desce', growth: 'grafico-sobe', piggy: 'cofrinho', trophy: 'trofeu', mind: 'ideia' }
+const papelDe = (c) => roteiro.scenes[c.i]?.role
+if (cenas.length > 4) {
+  const novas = []
+  const valorEm = (n, t, d, txt) => ({ id: 'valor', t: +t.toFixed(3), valor: n, aterra: +Math.max(t + 0.4, d ? d.fim + 0.25 : t + 0.7).toFixed(3), sub: legendaDoValor(d, txt) })
+  for (const c of cenas) {
+    const antes = novas.length, ditos = numerosDitos(c), papel = papelDe(c)
+    if (papel === 'cta') {
+      // o convite: o FinMoovi, os 7 dias grátis, e o cursor carrega no botão quando a voz diz "grátis"
+      const fimFala = c.palavras.length ? c.palavras[c.palavras.length - 1].t : c.inicio + 2
+      const gr = c.palavras.find((p) => /^(gratis|testar|teste|graca)$/.test(norm(p.w)))
+      const fr = String(roteiro.scenes[c.i]?.narration || '')
+      // "Esse resultado apareceu na tela. Quer ver o seu?": o resultado fica até ao convite começar a ser dito
+      const chama = c.palavras.find((p) => /^(quer|procura|procure|abra|abre|baixa|baixe|testa|teste|usa|use)$/.test(norm(p.w)))
+      novas.push({ id: 'convite', t: +Math.max(c.inicio + 0.05, chama ? chama.t - 0.15 : 0).toFixed(3), clique: +Math.max(c.inicio + 1.2, gr ? gr.t : fimFala).toFixed(3), dias: /(sete|7) dias/i.test(fr) ? 7 : 0 })
+      continue
+    }
+    const app = c.shots.find((s) => s.visual?.type === 'app')
+    if (app) {
+      // a tela do app: o número que o FinMoovi mostrou (o do roteiro, ou o último que a voz diz) aterra quando é dito
+      const sn = c.shots.find((s) => s.visual?.type === 'number' && numeroDe(s.visual.text)) || c.shots.find((s) => s.visual?.type === 'statement' && numeroDe(s.visual.text))
+      const n = sn ? numeroDe(sn.visual.text) : ditos.length ? ditos[ditos.length - 1].n : 0
+      const d = ditos.find((x) => x.n === n) || ditos[ditos.length - 1]
+      const t = c.inicio + 0.05 // o app abre logo no "joguei isso no FinMoovi"
+      const rot = c.shots.find((s) => s.visual?.type === 'statement')?.visual.text
+      novas.push({ id: 'app', t: +t.toFixed(3), valor: n, rotulo: rot || rotulo, aterra: +Math.max(t + 0.8, d ? d.fim + 0.25 : t + 1.4).toFixed(3), tom: tomDe(c), sub: legendaDoValor(d, '') })
+      continue
+    }
+    const temGrafico = c.shots.some((s) => s.visual?.type === 'chart')
+    for (const s of c.shots) {
+      const v = s.visual || {}, t = Math.max(c.inicio + 0.05, quando(c, s.anchor) - 0.12)
+      const n = v.type === 'counter' ? +v.to || 0 : v.type === 'number' || v.type === 'statement' ? numeroDe(v.text) : 0
+      if (n && !temGrafico) novas.push(valorEm(n, t, ditos.find((x) => x.n === n), v.text))
+      else if (v.type === 'chart') {
+        const nn = c.shots.map((x) => numeroDe(x.visual?.text) || (x.visual?.type === 'counter' ? +x.visual.to : 0)).find(Boolean) || (ditos.length ? Math.max(...ditos.map((x) => x.n)) : 0)
+        const d = ditos.find((x) => x.n === nn)
+        novas.push({ id: 'grafico', t: +t.toFixed(3), titulo: v.text || '', valor: nn, aterra: +Math.max(t + 1.0, d ? d.fim + 0.25 : t + 1.6).toFixed(3), tom: tomDe(c) })
+      } else if (v.type === 'formula') {
+        const m = String(v.text || '').match(/R\$\s?([\d.]+)\s*[x×*]\s*(\d+)\s*(.*)$/i)
+        novas.push({ id: 'conta', t: +t.toFixed(3), texto: v.text || '', ...(m ? { a: +m[1].replace(/\./g, ''), b: +m[2], unidade: m[3] || '' } : {}) })
+      } else if (v.type === 'list') novas.push({ id: 'extrato', t: +t.toFixed(3) })
+      else if (v.type === 'metaphor' && v.metaphor !== 'clique-link') novas.push({ id: 'meta', modo: 'acao', t: +t.toFixed(3), metafora: v.metaphor })
+      else if (v.type === 'icon' && ICONE_OBJ[v.icon]) novas.push({ id: 'janela', t: +t.toFixed(3), objetos: [{ nome: ICONE_OBJ[v.icon], t: +(t + 0.12).toFixed(3) }], quebra: null })
+    }
+    // o número em reais que a voz diz e nenhum desenho mostrou ("duzentos reais por mês podem virar dois mil e quatrocentos")
+    // (um valor que o vídeo já mostrou só volta no fecho, que recapitula, ou se a cena não tiver mais nada)
+    const vazia = novas.length === antes
+    for (const d of ditos) if (d.reais && !novas.slice(antes).some((e) => e.valor === d.n) && (papel === 'outro' || vazia || !novas.some((e) => e.valor === d.n))) novas.push(valorEm(d.n, d.t - 0.35, d, ''))
+    // nada pedido: o objeto que a voz chama (senão o boneco fica com o palco, mais abaixo)
+    if (novas.length === antes) { const j = janela(c); if (j) novas.push({ ...j, t: Math.max(c.inicio + 0.05, j.t) }) }
+  }
+  novas.sort((a, b) => a.t - b.t)
+  // o mesmo valor duas vezes seguidas fica um só; nenhuma tela fica menos de 0,9 s; nada encosta na notificação final
+  const igual = (a, b) => a.id === b.id && (a.id === 'valor' ? a.valor === b.valor : a.id === 'meta' ? a.metafora === b.metafora : a.id === 'janela' ? a.objetos[0].nome === b.objetos[0].nome : a.id === 'extrato')
+  for (let i = novas.length - 1; i >= 1; i--) if (igual(novas[i], novas[i - 1])) novas.splice(i, 1)
+  const notifT = DUR - 3 * B
+  while (novas.length && novas[novas.length - 1].t > notifT - 0.9) novas.pop()
+  // duas telas coladas: sai a menos importante (o número, o app e o convite ganham ao desenho)
+  const PESO = { convite: 3, app: 3, valor: 2, grafico: 2, conta: 2, extrato: 1, meta: 1, janela: 1 }
+  for (let i = novas.length - 1; i >= 0; i--) {
+    const prox = i + 1 < novas.length ? novas[i + 1].t : notifT
+    if (prox - novas[i].t >= 0.9) continue
+    if (i + 1 < novas.length && (PESO[novas[i + 1].id] || 0) < (PESO[novas[i].id] || 0)) { novas.splice(i + 1, 1); i++ } else if (!['convite', 'app'].includes(novas[i].id)) novas.splice(i, 1)
+  }
+  estados.splice(0, estados.length, { id: 'notif', t: notifT }, ...novas)
+  const v1 = novas.find((e) => e.id === 'valor' || e.id === 'app' || e.id === 'grafico')
+  aterra = v1 ? v1.aterra : aterra
+  // os efeitos das janelas antigas saem; o carro que quebra numa janela nova volta a soltar faíscas
+  for (let i = fx.length - 1; i >= 0; i--) if (['faiscas', 'fumaca', 'moedas'].includes(fx[i].tipo)) fx.splice(i, 1)
+  for (const j of novas.filter((e) => e.id === 'janela')) if (j.quebra !== null && j.objetos.some((o) => o.nome === 'carro')) fx.push({ tipo: 'faiscas', t: j.quebra }, { tipo: 'fumaca', t: j.quebra, janela: j.t })
+  for (const e of novas) if (e.id === 'valor' || e.id === 'app') fx.push({ tipo: e.tom === 'entra' ? 'brilho' : 'moedas', t: e.aterra })
+}
+
 // ── o fundo: uma cor por mudança importante; a paleta segue o clima ──
 const PALETAS = {
   alerta: ['#FFC72C', '#FF5A4E', '#FF4FA0', '#22D3EE', '#5B8CFF', '#FF5A4E'],
@@ -246,7 +352,7 @@ manchetes.forEach((m) => { m.entra ??= m.t })
 for (let i = manchetes.length - 1; i > 0; i--) if (manchetes[i].sai - manchetes[i].entra < 1.0) { manchetes[i - 1].sai = manchetes[i].sai; manchetes.splice(i, 1) }
 
 // ── o cursor: os mesmos alvos, mas o ritmo decide quantos visita, a que velocidade, e quantos cliques ──
-const ALVO = { notif: [180, 40], janela: [200, 160], meta: [150, 150], valor: [-120, 160], extrato: [40, 60], alerta: [120, 30] }
+const ALVO = { notif: [180, 40], janela: [200, 160], meta: [150, 150], valor: [-120, 160], extrato: [40, 60], alerta: [120, 30], app: [-140, 60], grafico: [220, 120], conta: [260, 40], convite: [0, 170] }
 const DESCANSO = [330, 470]
 const PERFIL = {
   agitado: { visitas: [0, 1, 2, 3, 4, 5], cliques: [0, 2, 3], vel: 2.3, passeio: true },
@@ -274,7 +380,16 @@ const emocoes = []
 // ── A LISTA E OS MOMENTOS DO PALCO (19/10, o Ed: levar para os Shorts o que o longo já tem) ──
 // Vem DEPOIS do cursor: as visitas dele contam as telas pela ordem, e estas não podem tomar o lugar delas.
 const fimDe = (e) => { const k = estados.indexOf(e); return k + 1 < estados.length ? estados[k + 1].t : estados[0].t + (k === 0 ? DUR : 0) }
-const FICA = new Set(['notif', 'valor', 'alerta'])
+const FICA = new Set(['notif', 'valor', 'alerta', 'app', 'convite'])
+// o convite: o cursor vai ao botão "Testar grátis" e carrega quando a voz diz "grátis"
+for (const e of estados.filter((x) => x.id === 'convite')) {
+  cursor.chaves = cursor.chaves.filter(([t]) => t < e.t + 0.2 || t > e.clique + 0.9)
+  cursor.cliques = cursor.cliques.filter((t) => t < e.t + 0.2 || t > e.clique + 0.9)
+  cursor.chaves.push([+(e.clique - 0.7).toFixed(3), 0, 170], [+(e.clique + 0.9).toFixed(3), ...DESCANSO])
+  cursor.cliques.push(e.clique)
+  if (ritmo !== 'agitado') cursor.janelas.push([e.clique - 1.4, e.clique + 1.2])
+  cursor.chaves.sort((a, b) => a[0] - b[0]); cursor.cliques.sort((a, b) => a - b)
+}
 // A LISTA: uma frase com 3 ou mais coisas seguidas ("o aluguel, a luz, o mercado") vira uma folha de caderno; o cursor
 // vai a cada caixinha quando a voz diz o item, e no fim carrega no botão. No Short cabem 4 itens.
 const ARTIGOS = new Set(['o', 'a', 'os', 'as', 'um', 'uma', 'meu', 'minha', 'meus', 'minhas', 'seu', 'sua'])
@@ -330,16 +445,18 @@ const emocaoEm = (t) => (emocoes.filter(([t0]) => t0 <= t).pop() || emocoes[0])[
 const todas = cenas.flatMap((c) => c.palavras)
 let ultimoMomento = null, nMomentos = 0
 for (const e of [...estados]) {
-  if (nMomentos >= 3 || e.id === 'notif' || e.id === 'lista') continue
+  // o boneco sozinho nunca tapa o resultado do app, a conta nem o convite (19/10)
+  if (nMomentos >= 3 || ['notif', 'lista', 'app', 'conta', 'convite'].includes(e.id)) continue
   const fim = fimDe(e)
   if (fim - e.t < 5.0) continue
-  const de = Math.max(e.t + 2.4, e.id === 'valor' ? aterra + 1.5 : 0), ate = fim - 2.2
+  const de = Math.max(e.t + 2.4, e.id === 'valor' ? (e.aterra ?? aterra) + 1.5 : 0), ate = fim - 2.2
   if (ate < de) continue
   // a 1.ª palavra de uma frase nova dentro da janela (a mais perto de 3,2 s antes do fim); senão, 3,2 s antes do fim
   const frases = todas.filter((p, k) => k > 0 && /[.!?…]$/.test(todas[k - 1].w) && p.t - 0.1 >= de && p.t - 0.1 <= ate).map((p) => p.t - 0.1)
   const corte = frases.length ? frases.sort((x, y) => Math.abs(x - (fim - 3.2)) - Math.abs(y - (fim - 3.2)))[0] : Math.min(ate, Math.max(de, fim - 3.2))
   const em = emocaoEm(corte + 0.2)
   const c = [...cenas].reverse().find((x) => x.inicio <= corte + 0.2) || cenas[0]
+  if (papelDe(c) === 'cta' || c.shots.some((s) => s.visual?.type === 'app')) continue
   // o desenho solto: um objeto que a frase chama e que não é o que já está no ecrã
   const jaNoEcra = new Set((e.objetos || []).map((o) => o.nome))
   const achado = c.palavras.filter((p) => p.t >= corte - 1).map((p) => Object.entries(PALAVRAS_OBJETO).find(([nome, [, ...l]]) => l.includes(norm(p.w)) && !jaNoEcra.has(nome))).find(Boolean)

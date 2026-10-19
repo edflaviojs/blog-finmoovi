@@ -70,7 +70,7 @@
       <div class="layer" id="L-valor" data-w="900" data-h="470">
         <div class="abs icone" style="left:48px;top:48px;width:96px;height:96px;border-radius:28px;background:#fde04722;display:grid;place-items:center"></div>
         <div class="abs rotulo" style="left:168px;top:52px;font-size:42px;font-weight:800;white-space:nowrap"></div>
-        <div class="abs sub" style="left:168px;top:104px;font-size:30px;font-weight:600">Nova despesa</div>
+        <div class="abs sub" id="valorSub" style="left:168px;top:104px;font-size:30px;font-weight:600">Nova despesa</div>
         <div class="abs sub" style="left:52px;top:200px;font-size:30px;font-weight:600">Valor</div>
         <div class="abs disp" id="amount" style="left:46px;top:236px;font-size:116px;font-weight:900;letter-spacing:-5px;line-height:150px;white-space:nowrap;transform-origin:0 50%"></div>
       </div>
@@ -91,6 +91,39 @@
         <div class="abs" style="left:34px;top:40px;width:160px;height:160px;border-radius:80px;background:#E5383B;color:#fff;text-align:center;font-family:'Unbounded';font-weight:900;font-size:110px;line-height:160px">!</div>
         <div class="abs disp alertaVal" style="left:226px;top:58px;font-size:74px;font-weight:900;letter-spacing:-3px;color:#E5383B;white-space:nowrap"></div>
         <div class="abs rotulo" style="left:230px;top:158px;font-size:30px;font-weight:700;color:#0d1117;opacity:0.7;white-space:nowrap"></div>
+      </div>
+      <!-- 19/10 — as telas que o roteiro do Short de 50 s pede (como o vídeo longo): o app com o resultado, o gráfico,
+           a conta no papel e o convite com os dias grátis -->
+      <div class="layer" id="L-app" data-w="900" data-h="560">
+        <div class="abs" style="left:40px;top:34px;width:84px;height:84px;border-radius:24px;background:#0d1117;border:2px solid #30363d;box-sizing:border-box;display:grid;place-items:center"><svg width="52" height="52" viewBox="0 0 40 40"><path d="M5 30L15 20L22 27L35 10" fill="none" stroke="url(#bg1)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="abs disp" style="left:146px;top:36px;font-size:42px;font-weight:800;letter-spacing:-0.5px"><span style="color:#f0f6fc">Fin</span><span class="grad">Moovi</span></div>
+        <div class="abs sub" style="left:146px;top:90px;font-size:28px;font-weight:600">o resultado</div>
+        <div class="abs" id="appRotulo" style="left:44px;right:44px;top:170px;font-size:36px;font-weight:700;color:#c9d1d9;white-space:nowrap;overflow:hidden;text-overflow:ellipsis"></div>
+        <div class="abs disp" id="appValor" style="left:40px;top:222px;font-size:120px;font-weight:900;letter-spacing:-5px;line-height:160px;white-space:nowrap;transform-origin:0 50%"></div>
+        <div class="abs sub" id="appSub" style="left:46px;top:388px;font-size:30px;font-weight:600"></div>
+        <div class="abs" style="left:44px;right:44px;top:460px;height:30px;border-radius:15px;background:#21262d"><div id="appBarra" style="height:30px;border-radius:15px;width:0"></div></div>
+      </div>
+      <div class="layer" id="L-grafico" data-w="900" data-h="600">
+        <div class="abs disp" id="grafTitulo" style="left:44px;right:44px;top:40px;font-size:38px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis"></div>
+        <div class="abs disp" id="grafValor" style="left:44px;top:96px;font-size:84px;font-weight:900;letter-spacing:-3px;white-space:nowrap"></div>
+        <div id="grafBarras" class="abs" style="left:44px;right:44px;top:224px;height:290px"></div>
+        <div class="abs sub" style="left:44px;top:530px;font-size:24px;font-weight:600">mês 1</div>
+        <div class="abs sub" style="right:44px;top:530px;font-size:24px;font-weight:600">mês 12</div>
+      </div>
+      <div class="layer" id="L-conta" data-w="900" data-h="420" style="color:#0d1117">
+        <div class="abs disp" style="left:48px;top:36px;font-size:36px;font-weight:800">A conta</div>
+        <div class="abs disp" id="contaLinha" style="left:48px;right:48px;top:118px;font-size:62px;font-weight:900;letter-spacing:-2px;white-space:nowrap"></div>
+        <div class="abs" id="contaRisco" style="left:48px;right:48px;top:226px;height:5px;border-radius:3px;background:#0d1117;transform-origin:0 50%"></div>
+        <div class="abs disp" id="contaRes" style="left:48px;top:258px;font-size:88px;font-weight:900;letter-spacing:-3px;color:#dc2626;white-space:nowrap"></div>
+      </div>
+      <div class="layer" id="L-convite" data-w="900" data-h="560">
+        <div class="abs" style="left:0;right:0;top:50px;display:flex;justify-content:center;align-items:center;gap:22px">
+          <div style="width:124px;height:124px;border-radius:36px;background:#0d1117;border:2px solid #30363d;box-sizing:border-box;display:grid;place-items:center"><svg width="80" height="80" viewBox="0 0 40 40"><path d="M5 30L15 20L22 27L35 10" fill="none" stroke="url(#bg1)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="disp" style="font-size:78px;font-weight:900;letter-spacing:-2px"><span style="color:#f0f6fc">Fin</span><span class="grad">Moovi</span></div>
+        </div>
+        <div class="abs disp" id="convDias" style="left:0;right:0;top:222px;text-align:center;font-size:64px;font-weight:900;color:#fde047"></div>
+        <div class="abs sub" style="left:0;right:0;top:314px;text-align:center;font-size:32px;font-weight:600">finmoovi.com</div>
+        <div class="abs disp" id="convBotao" style="left:0;right:0;top:390px;margin:0 auto;width:520px;height:110px;border-radius:55px;background:#22d3ee;color:#0d1117;text-align:center;font-size:42px;font-weight:900;line-height:110px">Testar grátis</div>
       </div>
     </div>
     <div id="coins"></div>
@@ -149,8 +182,8 @@ function visStyle(el, vis, blurMax = 10) { el.style.opacity = clamp(vis).toFixed
 const $ = (id) => document.getElementById(id)
 
 // ═══ TAMANHOS DAS TELAS ═══
-const TAM = { janela: [900, 560, 48], notif: [880, 176, 88], meta: [720, 560, 70], valor: [900, 470, 56], extrato: [900, 640, 56], alerta: [660, 240, 120], lista: [900, 600, 30] }
-const BG = { janela: CARD, notif: CARD, meta: CARD, valor: CARD, extrato: CARD, alerta: '#FFFFFF', lista: '#FFFDF5' }
+const TAM = { janela: [900, 560, 48], notif: [880, 176, 88], meta: [720, 560, 70], valor: [900, 470, 56], extrato: [900, 640, 56], alerta: [660, 240, 120], lista: [900, 600, 30], app: [900, 560, 56], grafico: [900, 600, 56], conta: [900, 420, 40], convite: [900, 560, 60] }
+const BG = { janela: CARD, notif: CARD, meta: CARD, valor: CARD, extrato: CARD, alerta: '#FFFFFF', lista: '#FFFDF5', app: CARD, grafico: CARD, conta: '#FFF8E7', convite: CARD }
 
 let tomba = () => 0
 let T = {}, STATES, shapeW, shapeH, shapeR, cam, layerVis, cursorX, cursorY, cursorPress, shapePress, heads, coinsSpec, cardOn
@@ -202,12 +235,14 @@ function montar(plano) {
     return { el, m, words: [...el.children] }
   })
   // moedas da ação (só no ralo e no cofre tem moedas próprias; no ralo giram para o centro)
-  coinsSpec = plano.metafora === 'ralo' && meta2 ? Array.from({ length: 12 }, (_, i) => ({ x: -320 + (i * 97) % 640, y: -260 + (i % 3) * 90, t0: meta2.t + 0.03 * i, a0: i * 2.4 })) : []
+  coinsSpec = meta2 && (meta2.metafora || plano.metafora) === 'ralo' ? Array.from({ length: 12 }, (_, i) => ({ x: -320 + (i * 97) % 640, y: -260 + (i % 3) * 90, t0: meta2.t + 0.03 * i, a0: i * 2.4 })) : []
   coinsSpec.forEach(() => { const c = document.createElement('div'); c.className = 'coin'; c.textContent = 'R$'; $('coins').appendChild(c) })
   const tombos = (plano.fx || []).filter((f) => f.tipo === 'tomba')
   tomba = tombos.length ? track(tombos.flatMap((f) => [[f.t - 0.05, 1, { f: 2.4, z: 0.5 }], [f.t + 0.55, 0, { f: 2.4, z: 0.5 }]])) : () => 0
   const extrato = STATES.find((s) => s.id === 'extrato')
-  T = { meta2: meta2 ? meta2.t : null, extrato: extrato ? extrato.t : null, aterra: plano.aterra, alerta: STATES.find((s) => s.id === 'alerta').t, valor: STATES.find((s) => s.id === 'valor').t, volta: STATES[0].t }
+  // (no Short de 50 s não há alerta, e há um cartão de valor para cada número dito)
+  const alerta = STATES.find((s) => s.id === 'alerta')
+  T = { meta2: meta2 ? meta2.t : null, metaNome: meta2 ? meta2.metafora || plano.metafora : plano.metafora, extrato: extrato ? extrato.t : null, aterra: plano.aterra, alerta: alerta ? alerta.t : null, volta: STATES[0].t }
 }
 
 // legenda: a frase falada; se for comprida, metade de cada vez
@@ -255,7 +290,7 @@ function seek(tIn) {
 
   // o cartão
   const w = shapeW(t), h = shapeH(t), r = Math.min(shapeR(t), w / 2, h / 2)
-  const aA = since(t, T.alerta), shake = aA < 0.6 ? Math.sin(aA * 70) * 16 * Math.exp(-aA * 7) : 0
+  const aA = T.alerta === null ? 99 : since(t, T.alerta), shake = aA < 0.6 ? Math.sin(aA * 70) * 16 * Math.exp(-aA * 7) : 0
   const slam = since(t, T.aterra) < 1 ? pulse(since(t, T.aterra), 4) : 0
   const DINGS = [0.02, 2 * PL.batida + 0.02]
   const ding = DINGS.reduce((m, d0) => Math.max(m, t >= d0 && t < d0 + 0.9 ? pulse(t - d0, 3.2) : 0), 0)
@@ -325,15 +360,68 @@ function seek(tIn) {
 
   // metáfora: o estado "meta" mais recente diz o modo
   const metas = STATES.filter((s) => s.id === 'meta'), mt = metas.length ? metas[latest(metas, t)] : null
-  if (mt) $('metaSvg').innerHTML = (METAFORAS[PL.metafora] || ((a, m) => metaforaPadrao(a, m, PL.metafora)))(since(t, mt.t), mt.modo)
+  const mNome = mt ? mt.metafora || PL.metafora : null
+  if (mt) $('metaSvg').innerHTML = (METAFORAS[mNome] || ((a, m) => metaforaPadrao(a, m, mNome)))(since(t, mt.t), mt.modo)
 
-  // valor: rola e aterra em cima do número dito
-  const num = parseInt(PL.valor.replace(/\D/g, ''), 10)
-  const u = clamp((since(t, T.valor) - 0.1) / Math.max(0.3, since(T.aterra, T.valor) - 0.1))
-  const v = Math.round(num * (1 - Math.pow(1 - u, 3)))
-  $('amount').textContent = 'R$ ' + v.toLocaleString('pt-BR')
-  $('amount').style.transform = `scale(${(1 + 0.12 * slam).toFixed(4)})`
-  $('amount').style.color = mixHex('#f0f6fc', '#ff7a6e', clamp(slam * 2))
+  // valor: rola e aterra em cima do número dito (no Short de 50 s cada cartão traz o seu número e a sua hora)
+  const valores = STATES.filter((s) => s.id === 'valor')
+  if (valores.length) {
+    const vs = valores[latest(valores, t)], num = vs.valor ?? parseInt(PL.valor.replace(/\D/g, ''), 10), at = vs.aterra ?? T.aterra
+    const u = clamp((since(t, vs.t) - 0.1) / Math.max(0.3, since(at, vs.t) - 0.1))
+    const sl = vs.aterra === undefined ? slam : since(t, at) < 1 ? pulse(since(t, at), 4) : 0
+    $('amount').textContent = 'R$ ' + Math.round(num * (1 - Math.pow(1 - u, 3))).toLocaleString('pt-BR')
+    $('amount').style.transform = `scale(${(1 + 0.12 * sl).toFixed(4)})`
+    $('amount').style.color = mixHex('#f0f6fc', '#ff7a6e', clamp(sl * 2))
+    $('valorSub').textContent = vs.valor === undefined ? 'Nova despesa' : vs.sub || ''
+  }
+
+  // a tela do app: o resultado que o FinMoovi mostrou aterra quando a voz o diz
+  const apps = STATES.filter((s) => s.id === 'app')
+  if (apps.length) {
+    const e = apps[latest(apps, t)], u = clamp((since(t, e.t) - 0.3) / Math.max(0.4, since(e.aterra, e.t) - 0.3)), k = 1 - Math.pow(1 - u, 3)
+    const cor = e.tom === 'entra' ? '#3fdc8f' : e.tom === 'sai' ? '#ff7a6e' : '#22d3ee'
+    const sl = since(t, e.aterra) < 1 ? pulse(since(t, e.aterra), 4) : 0
+    $('appRotulo').textContent = e.rotulo || ''
+    $('appValor').textContent = (e.tom === 'entra' ? '+ ' : e.tom === 'sai' ? '− ' : '') + 'R$ ' + Math.round(e.valor * k).toLocaleString('pt-BR')
+    $('appValor').style.color = mixHex('#f0f6fc', e.tom === 'neutro' ? '#f0f6fc' : cor, u)
+    $('appValor').style.transform = `scale(${(1 + 0.1 * sl).toFixed(4)})`
+    $('appSub').textContent = e.sub || ''
+    Object.assign($('appBarra').style, { width: (100 * k).toFixed(1) + '%', background: cor })
+  }
+  // o gráfico de 12 meses: as barras sobem uma a uma e o total conta até aterrar no número dito
+  const grafs = STATES.filter((s) => s.id === 'grafico')
+  if (grafs.length) {
+    const e = grafs[latest(grafs, t)], a = since(t, e.t), span = Math.max(0.8, since(e.aterra, e.t) - 0.2)
+    const cor = e.tom === 'entra' ? '#3fdc8f' : '#ff7a6e', k = 1 - Math.pow(1 - clamp((a - 0.2) / span), 3)
+    $('grafTitulo').textContent = e.titulo || ''
+    $('grafValor').textContent = e.valor ? 'R$ ' + Math.round(e.valor * k).toLocaleString('pt-BR') : ''
+    $('grafValor').style.color = cor
+    const larg = (812 - 11 * 12) / 12
+    $('grafBarras').innerHTML = Array.from({ length: 12 }, (_, i) => {
+      const g = clamp(S(a - 0.2 - (span * i) / 12, 2.6, 0.75), 0, 1.1), h = (290 * (i + 1)) / 12 * g
+      return `<div class="abs" style="left:${(i * (larg + 12)).toFixed(1)}px;bottom:0;width:${larg.toFixed(1)}px;height:${h.toFixed(1)}px;border-radius:12px 12px 4px 4px;background:${cor};opacity:${(0.55 + 0.45 * (i + 1) / 12).toFixed(2)}"></div>`
+    }).join('')
+  }
+  // a conta no papel: a linha escreve-se, o risco passa, e o resultado aparece
+  const contas = STATES.filter((s) => s.id === 'conta')
+  if (contas.length) {
+    const e = contas[latest(contas, t)], a = since(t, e.t)
+    const linha = e.a ? `R$ ${e.a.toLocaleString('pt-BR')} × ${e.b}${e.unidade ? ' ' + e.unidade : ''}` : e.texto || ''
+    $('contaLinha').textContent = linha.slice(0, Math.ceil(linha.length * clamp((a - 0.15) / 0.6)))
+    $('contaLinha').style.fontSize = (linha.length > 20 ? 48 : 62) + 'px'
+    $('contaRisco').style.transform = `scaleX(${clamp((a - 0.8) / 0.3).toFixed(3)})`
+    $('contaRes').textContent = e.a ? '= R$ ' + (e.a * e.b).toLocaleString('pt-BR') : ''
+    $('contaRes').style.opacity = clamp((a - 1.1) * 4).toFixed(3)
+  }
+  // o convite: o FinMoovi, os dias grátis, e o botão que o cursor carrega quando a voz diz "grátis"
+  const convs = STATES.filter((s) => s.id === 'convite')
+  if (convs.length) {
+    const e = convs[latest(convs, t)], cl = since(t, e.clique) < since(t, e.t), b = $('convBotao')
+    $('convDias').textContent = e.dias ? `${e.dias} dias grátis` : 'Teste grátis'
+    b.style.background = cl ? '#3fdc8f' : '#22d3ee'
+    b.textContent = cl ? 'Testar grátis ✓' : 'Testar grátis'
+    b.style.transform = `scale(${(1 - 0.06 * clamp(cursorPress(t)) + (cl && since(t, e.clique) < 1 ? 0.06 * pulse(since(t, e.clique), 3) : 0)).toFixed(3)})`
+  }
   // extrato: a linha da despesa acende
   const xa = T.extrato === null ? 99 : since(t, T.extrato)
   $('xreal').style.borderColor = `rgba(255,90,78,${clamp((xa - 0.4) * 3) * 0.9})`
@@ -439,12 +527,15 @@ function cues() {
     { t: 0.02, kind: 'ding' }, { t: 2 * PL.batida + 0.02, kind: 'ding' },
     ...PL.cursor.cliques.map((t) => ({ t, kind: 'click' })),
     ...STATES.map((s) => ({ t: s.t, kind: 'swish' })),
-    { t: T.aterra, kind: 'thud' }, { t: T.alerta, kind: 'boom' },
+    { t: T.aterra, kind: 'thud' }, ...(T.alerta === null ? [] : [{ t: T.alerta, kind: 'boom' }]),
+    ...STATES.filter((s) => s.id === 'valor' && s.aterra !== undefined && Math.abs(s.aterra - T.aterra) > 0.05).map((s) => ({ t: s.aterra, kind: 'thud' })),
+    ...STATES.filter((s) => s.id === 'app').map((s) => ({ t: s.aterra, kind: 'ding' })),
+    ...STATES.filter((s) => s.id === 'grafico').map((s) => ({ t: s.aterra, kind: 'coin' })),
     ...(T.extrato === null ? [] : [{ t: T.extrato + 0.4, kind: 'tick' }]),
-    ...(T.meta2 === null ? [] : PL.metafora === 'domino' ? [0, 1, 2, 3, 4].map((i) => ({ t: T.meta2 + 0.35 + 0.13 * i, kind: 'tick' })) : []),
-    ...(T.meta2 === null ? [] : PL.metafora === 'cofre' ? [0, 1, 2, 3].map((i) => ({ t: T.meta2 + 0.6 + 0.22 * i, kind: 'coin' })).concat([{ t: T.meta2 + 1.6, kind: 'click' }]) : []),
-    ...(T.meta2 === null ? [] : PL.metafora === 'ampulheta' ? [{ t: T.meta2 + 0.1, kind: 'whoosh' }] : []),
-    ...(T.meta2 === null ? [] : PL.metafora === 'ralo' ? [{ t: T.meta2 + 0.5, kind: 'gurgle' }] : []),
+    ...(T.meta2 === null ? [] : T.metaNome === 'domino' ? [0, 1, 2, 3, 4].map((i) => ({ t: T.meta2 + 0.35 + 0.13 * i, kind: 'tick' })) : []),
+    ...(T.meta2 === null ? [] : T.metaNome === 'cofre' ? [0, 1, 2, 3].map((i) => ({ t: T.meta2 + 0.6 + 0.22 * i, kind: 'coin' })).concat([{ t: T.meta2 + 1.6, kind: 'click' }]) : []),
+    ...(T.meta2 === null ? [] : T.metaNome === 'ampulheta' ? [{ t: T.meta2 + 0.1, kind: 'whoosh' }] : []),
+    ...(T.meta2 === null ? [] : T.metaNome === 'ralo' ? [{ t: T.meta2 + 0.5, kind: 'gurgle' }] : []),
     ...(PL.fx || []).flatMap((f) => f.tipo === 'faiscas' ? [{ t: f.t, kind: 'thud' }] : f.tipo === 'fumaca' ? [{ t: f.t + 0.1, kind: 'whoosh' }] : f.tipo === 'papeis' ? [0, 0.15, 0.3].map((d) => ({ t: f.t + d, kind: 'swish' })) : f.tipo === 'moedas' ? [0, 0.08, 0.16, 0.24].map((d) => ({ t: f.t + d, kind: 'coin' })) : f.tipo === 'tomba' ? [{ t: f.t, kind: 'whoosh' }] : f.tipo === 'confete' ? [{ t: f.t, kind: 'ding' }] : f.tipo === 'raios' ? [{ t: f.t, kind: 'boom' }] : f.tipo === 'notas' ? [{ t: f.t, kind: 'whoosh' }] : []),
     ...STATES.filter((s) => s.id === 'palco').map((s) => ({ t: s.t + 0.6, kind: s.momento === 'pensamento' ? 'rise' : s.momento === 'close' ? 'whoosh' : 'swish' })),
     ...STATES.filter((s) => s.id === 'lista').flatMap((s) => s.itens.map((it) => ({ t: it.t + 0.33, kind: 'tick' }))),
@@ -463,7 +554,7 @@ window.__medir__ = () => {
   const cartao = caixa($('shape'))
   const legenda = visivel($('capBox')) ? caixa($('capBox')) : null
   const dentro = []
-  for (const id of ['notif', 'valor', 'extrato', 'alerta']) {
+  for (const id of ['notif', 'valor', 'extrato', 'alerta', 'app', 'grafico', 'conta', 'convite']) {
     const L = $('L-' + id); if (!visivel(L)) continue
     L.querySelectorAll('div').forEach((el) => { if (el.children.length === 0 && el.textContent.trim() && visivel(el)) dentro.push({ tela: id, txt: el.textContent.trim().slice(0, 30), ...caixa(el) }) })
   }

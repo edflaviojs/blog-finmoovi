@@ -77,7 +77,8 @@ export const PALAVRAS_OBJETO = {
   'seta-sobe': [2, 'subiu', 'aumentou', 'aumento', 'reajuste', 'subindo'],
   'seta-desce': [2, 'baixou', 'economizei', 'reduzi'],
   tesoura: [2, 'cortar', 'cortei', 'corte', 'cancelei', 'cancelar'],
-  lixeira: [2, 'desperdicio', 'lixo', 'jogar', 'joguei'],
+  // 'joguei' saiu (19/10): no roteiro é "joguei isso no FinMoovi", e aparecia uma lata de lixo
+  lixeira: [2, 'desperdicio', 'lixo', 'jogar'],
   fogo: [2, 'queimar', 'queimei', 'fumaca', 'evaporou'],
   pensamento: [2, 'pensei', 'pensar', 'lembro', 'lembrei'],
   olho: [2, 'olhei', 'enxergar', 'percebi', 'reparei'],
