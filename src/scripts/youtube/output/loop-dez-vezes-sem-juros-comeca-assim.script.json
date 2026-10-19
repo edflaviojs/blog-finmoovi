@@ -1,0 +1,118 @@
+{
+  "slug": "loop-dez-vezes-sem-juros-comeca-assim",
+  "formato": "loop16",
+  "term": "O sem juros que virou rombo",
+  "category": "vida",
+  "keyword": "PARCELA",
+  "valor": "R$ 780",
+  "situacao": "dez-vezes-sem-juros",
+  "gancho": "comeca-assim",
+  "ganchoFamilia": "começa assim",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "mochila-pedras",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Quer aprender a ler a fatura? Começa assim. Comigo foi mês passado.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "aprender",
+          "visual": {
+            "type": "statement",
+            "text": "Fatura: comece assim"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "fatura",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Quando abri, setecentos e oitenta reais tinham sumido em parcelinha.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "setecentos",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "oitenta",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 780 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Eu achava que sem juros sumia. Voltou todo mês.",
+      "durationSec": 3.26,
+      "shots": [
+        {
+          "anchor": "achava",
+          "visual": {
+            "type": "statement",
+            "text": "Sem juros pesa todo mês"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "juros",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Então, antes de passar o cartão, abro a fatura. Começa assim.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "passar",
+          "visual": {
+            "type": "statement",
+            "text": "Abra a fatura primeiro"
+          }
+        },
+        {
+          "anchor": "cartão",
+          "visual": {
+            "type": "statement",
+            "text": "Fatura: comece assim"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
