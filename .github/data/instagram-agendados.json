@@ -23764,5 +23764,114 @@
         "publicaEmBR": "20/10 às 10h31"
       }
     }
+  },
+  "loop-dentista-das-criancas-se-parar": {
+    "midias": {
+      "video": {
+        "id": "59310c33-2b32-4e39-8599-4690f8167168",
+        "name": "xI8IRSmbmT.mp4",
+        "originalName": null,
+        "path": "https://media.help4desk.com/xI8IRSmbmT.mp4",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capa": {
+        "id": "8fffe1ce-2e05-46d0-9722-580e727e020b",
+        "name": "mB2nNPDLkJ.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/mB2nNPDLkJ.jpeg",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capaLarga": {
+        "id": "c3f2831c-5d8e-4b44-aee6-03f92850e32b",
+        "name": "fHwoPl3zUR.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/fHwoPl3zUR.jpeg",
+        "thumbnail": null,
+        "alt": null
+      }
+    },
+    "publicaEm": "2026-10-20T17:00:00.000Z",
+    "publicaEmBR": "20/10 às 14h00",
+    "agendadoEm": "2026-10-19T20:09:20.061Z",
+    "atualizadoEm": "2026-10-19T20:09:24.191Z",
+    "redes": {
+      "instagram": {
+        "postId": "cmvfotvh5000cnv9j0cdpgyt6",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-20T17:00:00.000Z",
+        "publicaEmBR": "20/10 às 14h00",
+        "midia": "o vídeo",
+        "caracteres": 635,
+        "limite": 2200
+      },
+      "zernio-tiktok": {
+        "postId": "cmvfotvvx000dnv9jfyjgx0k2",
+        "canal": "finmoovi",
+        "publicaEm": "2026-10-20T17:12:00.000Z",
+        "publicaEmBR": "20/10 às 14h12",
+        "midia": "o vídeo",
+        "caracteres": 246,
+        "limite": 2200
+      },
+      "facebook": {
+        "postId": "cmvfotwcm000env9jmizyd519",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-20T17:26:00.000Z",
+        "publicaEmBR": "20/10 às 14h26",
+        "midia": "o vídeo",
+        "caracteres": 405,
+        "limite": 63206
+      },
+      "linkedin-page": {
+        "postId": "cmvfotwqs000fnv9jpddlb0zo",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-20T17:43:00.000Z",
+        "publicaEmBR": "20/10 às 14h43",
+        "midia": "o vídeo",
+        "caracteres": 411,
+        "limite": 3000
+      },
+      "threads": {
+        "postId": "cmvfotx4m000gnv9j8wa2c2gk",
+        "canal": "finmoovi",
+        "publicaEm": "2026-10-20T17:58:00.000Z",
+        "publicaEmBR": "20/10 às 14h58",
+        "midia": "o vídeo",
+        "caracteres": 132,
+        "limite": 500
+      },
+      "pinterest": {
+        "postId": "cmvfotxzk000hnv9j2etjh2o0",
+        "canal": "finmoovi",
+        "publicaEm": "2026-10-20T18:31:00.000Z",
+        "publicaEmBR": "20/10 às 15h31",
+        "midia": "vídeo primeiro, capa depois — a ordem que o Pinterest exige",
+        "caracteres": 376,
+        "limite": 500
+      },
+      "bluesky": {
+        "postId": "cmvfotyef000inv9j8afz8kxj",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-20T18:47:00.000Z",
+        "publicaEmBR": "20/10 às 15h47",
+        "midia": "vai a capa DEITADA (o Bluesky não publica vídeo, e a em pé ficaria cortada no feed)",
+        "caracteres": 89,
+        "limite": 300
+      },
+      "instagram-story": {
+        "postId": "cmvfotyo6000jnv9jplyzwi3d",
+        "tipo": "vídeo",
+        "publicaEm": "2026-10-20T17:05:00.000Z",
+        "publicaEmBR": "20/10 às 14h05"
+      },
+      "facebook-story": {
+        "postId": "cmvfotytl000knv9jvvmcbcf4",
+        "tipo": "vídeo",
+        "publicaEm": "2026-10-20T17:31:00.000Z",
+        "publicaEmBR": "20/10 às 14h31"
+      }
+    }
   }
 }
