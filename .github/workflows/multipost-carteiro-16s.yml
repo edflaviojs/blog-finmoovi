@@ -147,6 +147,11 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           gh run download "$RUN_ID" --name "short-$FILE_SLUG" --dir youtube-render
+          # ⚠️ 19/10/2026 — desde o molde novo (16/10) o artefato leva TAMBÉM youtube-molde/…,
+          # e o upload-artifact passa a gravar a partir da RAIZ: o MP4 chega a
+          # youtube-render/youtube-render/out/ e o teste abaixo dava "MP4 não veio" (6 falhas
+          # de 17 a 18/10). Endireitar aqui serve os artefatos já na fila e os novos.
+          if [ -d youtube-render/youtube-render ]; then cp -a youtube-render/youtube-render/. youtube-render/ && rm -rf youtube-render/youtube-render; fi
           test -f "youtube-render/out/$FILE_SLUG.mp4" || { echo "❌ MP4 não veio no artefato"; ls -R youtube-render | head -30; exit 1; }
           # ⚠️ A capa em falta é AVISO, não paragem: sem ela o Pinterest e o Bluesky ficam
           # de fora (um exige duas mídias, o outro não publica vídeo) e as outras cinco
