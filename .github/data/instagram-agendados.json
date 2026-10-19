@@ -23873,5 +23873,114 @@
         "publicaEmBR": "20/10 às 14h31"
       }
     }
+  },
+  "kw-quanto-custa-investir-r-1-000-veja-a-taxa-real": {
+    "midias": {
+      "video": {
+        "id": "6671d79a-4e81-4e96-b107-68aaf3b1446e",
+        "name": "4gXvbwPz8O.mp4",
+        "originalName": null,
+        "path": "https://media.help4desk.com/4gXvbwPz8O.mp4",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capa": {
+        "id": "1cc7ed9c-efdc-4101-8428-d63868e7f6c4",
+        "name": "IDXm4Iv52Z.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/IDXm4Iv52Z.jpeg",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capaLarga": {
+        "id": "2dc8dd24-2f31-40a1-80e2-0e60cc4caaec",
+        "name": "5Ff4AiQ1AV.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/5Ff4AiQ1AV.jpeg",
+        "thumbnail": null,
+        "alt": null
+      }
+    },
+    "publicaEm": "2026-10-19T22:00:00.000Z",
+    "publicaEmBR": "19/10 às 19h00",
+    "agendadoEm": "2026-10-19T20:37:17.986Z",
+    "atualizadoEm": "2026-10-19T20:37:21.637Z",
+    "redes": {
+      "instagram": {
+        "postId": "cmvfptu7z000lnv9jbk7z7nc6",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-19T22:00:00.000Z",
+        "publicaEmBR": "19/10 às 19h00",
+        "midia": "o vídeo",
+        "caracteres": 714,
+        "limite": 2200
+      },
+      "zernio-tiktok": {
+        "postId": "cmvfptuk1000mnv9j363oqepi",
+        "canal": "finmoovi",
+        "publicaEm": "2026-10-19T22:12:00.000Z",
+        "publicaEmBR": "19/10 às 19h12",
+        "midia": "o vídeo",
+        "caracteres": 249,
+        "limite": 2200
+      },
+      "facebook": {
+        "postId": "cmvfptuxo000nnv9jffalzkyi",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-19T22:26:00.000Z",
+        "publicaEmBR": "19/10 às 19h26",
+        "midia": "o vídeo",
+        "caracteres": 484,
+        "limite": 63206
+      },
+      "linkedin-page": {
+        "postId": "cmvfptv9s000onv9jn1agk1tt",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-19T22:43:00.000Z",
+        "publicaEmBR": "19/10 às 19h43",
+        "midia": "o vídeo",
+        "caracteres": 487,
+        "limite": 3000
+      },
+      "threads": {
+        "postId": "cmvfptvmq000pnv9jbu2ryoja",
+        "canal": "finmoovi",
+        "publicaEm": "2026-10-19T22:58:00.000Z",
+        "publicaEmBR": "19/10 às 19h58",
+        "midia": "o vídeo",
+        "caracteres": 112,
+        "limite": 500
+      },
+      "pinterest": {
+        "postId": "cmvfptw9j000qnv9juaa1r7o4",
+        "canal": "finmoovi",
+        "publicaEm": "2026-10-19T23:31:00.000Z",
+        "publicaEmBR": "19/10 às 20h31",
+        "midia": "vídeo primeiro, capa depois — a ordem que o Pinterest exige",
+        "caracteres": 457,
+        "limite": 500
+      },
+      "bluesky": {
+        "postId": "cmvfptwqw000rnv9j5nhnyki2",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-19T23:47:00.000Z",
+        "publicaEmBR": "19/10 às 20h47",
+        "midia": "vai a capa DEITADA (o Bluesky não publica vídeo, e a em pé ficaria cortada no feed)",
+        "caracteres": 69,
+        "limite": 300
+      },
+      "instagram-story": {
+        "postId": "cmvfptx0w000snv9jwv0cka5l",
+        "tipo": "vídeo",
+        "publicaEm": "2026-10-19T22:05:00.000Z",
+        "publicaEmBR": "19/10 às 19h05"
+      },
+      "facebook-story": {
+        "postId": "cmvfptx5i000tnv9j4lkz8tv7",
+        "tipo": "vídeo",
+        "publicaEm": "2026-10-19T22:31:00.000Z",
+        "publicaEmBR": "19/10 às 19h31"
+      }
+    }
   }
 }
