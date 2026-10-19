@@ -4561,6 +4561,21 @@
     }
   },
   {
+    "file": "en-the-ultimate-black-friday-2026-guide-shop-smart-without.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-tips-for-controlling-credit-card-expenses.md",
     "dir": "posts",
     "severity": 0,
@@ -4786,6 +4801,21 @@
     }
   },
   {
+    "file": "en-valuation.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-variable-expense.md",
     "dir": "glossario",
     "severity": 0,
@@ -4847,6 +4877,21 @@
   },
   {
     "file": "en-wall-street.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-warrant.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -5042,6 +5087,21 @@
   },
   {
     "file": "en-yahoo-finance.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-yield-curve.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -7861,6 +7921,21 @@
     }
   },
   {
+    "file": "es-guia-definitiva-de-black-friday-2026-compra-sin-romper-tu.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-hedge.md",
     "dir": "glossario",
     "severity": 0,
@@ -9646,6 +9721,21 @@
     }
   },
   {
+    "file": "es-valoracion.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-venda-a-descoberto.md",
     "dir": "glossario",
     "severity": 0,
@@ -9706,6 +9796,21 @@
     }
   },
   {
+    "file": "es-warrant.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-wealth-management.md",
     "dir": "glossario",
     "severity": 0,
@@ -9752,6 +9857,21 @@
   },
   {
     "file": "es-yahoo-finance.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-yield-curve.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
