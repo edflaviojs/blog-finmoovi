@@ -1,0 +1,207 @@
+{
+  "slug": "planejamento-financeiro-pessoal",
+  "term": "planejamento financeiro pessoal",
+  "category": "basico",
+  "keyword": "planejamento",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "*Planejamento financeiro pessoal?*"
+  },
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "ampulheta",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Planejamento financeiro pessoal? Se o seu dinheiro some antes do fim do mês, é porque ainda não tem um.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "Planejamento",
+          "visual": {
+            "type": "statement",
+            "text": "Seu dinheiro some?"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "financeiro",
+          "visual": {
+            "type": "statement",
+            "text": "Ainda não tem um plano"
+          }
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Você tenta anotar tudo no caderno, mas esquece o café, o streaming e aquele lanche rápido. No final, o total não bate.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "tenta",
+          "visual": {
+            "type": "statement",
+            "text": "Anote tudo no caderno"
+          }
+        },
+        {
+          "anchor": "caderno",
+          "visual": {
+            "type": "icon",
+            "icon": "money"
+          }
+        },
+        {
+          "anchor": "aquele",
+          "visual": {
+            "type": "statement",
+            "text": "Total não bate"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Esses pequenos gastos esquecidos viram quase quinhentos reais por mês que você nem percebe que saiu.",
+      "durationSec": 6.2,
+      "shots": [
+        {
+          "anchor": "Esses",
+          "visual": {
+            "type": "statement",
+            "text": "Pequenos gastos"
+          }
+        },
+        {
+          "anchor": "viram",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "você",
+          "visual": {
+            "type": "statement",
+            "text": "Você nem percebe"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu coloquei cada gasto no FinMoovi e ele mostrou exatamente onde cada real foi gasto.",
+      "durationSec": 5.8,
+      "shots": [
+        {
+          "anchor": "coloquei",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Visão geral de gastos"
+          }
+        },
+        {
+          "anchor": "mostrou",
+          "visual": {
+            "type": "statement",
+            "text": "Cada real identificado"
+          }
+        },
+        {
+          "anchor": "exatamente",
+          "visual": {
+            "type": "icon",
+            "icon": "chart-down"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver seu dinheiro com clareza? Experimente o FinMoovi, são sete dias grátis para começar a controlar.",
+      "durationSec": 6.5,
+      "shots": [
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Veja seu dinheiro com clareza"
+          }
+        },
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "icon",
+            "icon": "target"
+          }
+        },
+        {
+          "anchor": "para",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Planejamento financeiro pessoal é saber para onde vai o seu dinheiro. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "pessoal",
+          "visual": {
+            "type": "statement",
+            "text": "Saber para onde vai"
+          }
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro sem controle"
+          }
+        },
+        {
+          "anchor": "outros",
+          "visual": {
+            "type": "statement",
+            "text": "É dinheiro dos outros"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Comece a controlar seu dinheiro",
+    "target": "app"
+  },
+  "totalDurationSec": 41.2
+}
