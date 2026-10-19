@@ -271,6 +271,90 @@ cursor.janelas = ritmo === 'agitado' ? [[-1, DUR + 1]] : PERFIL.visitas.map((iv)
 const emocoes = []
 { let antes = null; for (const c of cenas) { const e = escolherEmocao(c.palavras.map((p) => norm(p.w)), antes); antes = e; emocoes.push([+(c.inicio + 0.1).toFixed(3), e]) } }
 
+// ── A LISTA E OS MOMENTOS DO PALCO (19/10, o Ed: levar para os Shorts o que o longo já tem) ──
+// Vem DEPOIS do cursor: as visitas dele contam as telas pela ordem, e estas não podem tomar o lugar delas.
+const fimDe = (e) => { const k = estados.indexOf(e); return k + 1 < estados.length ? estados[k + 1].t : estados[0].t + (k === 0 ? DUR : 0) }
+const FICA = new Set(['notif', 'valor', 'alerta'])
+// A LISTA: uma frase com 3 ou mais coisas seguidas ("o aluguel, a luz, o mercado") vira uma folha de caderno; o cursor
+// vai a cada caixinha quando a voz diz o item, e no fim carrega no botão. No Short cabem 4 itens.
+const ARTIGOS = new Set(['o', 'a', 'os', 'as', 'um', 'uma', 'meu', 'minha', 'meus', 'minhas', 'seu', 'sua'])
+const NAO_E_ITEM = new Set(['voce', 'eu', 'ele', 'ela', 'nos', 'mesmo', 'mesma', 'todo', 'toda', 'todos', 'alguma', 'algum', 'so', 'ali', 'aqui', 'la', 'sabe', 'sei', 'que', 'quando', 'como', 'mas', 'porque', 'entao', 'depois', 'agora', 'sempre', 'nunca', 'ja', 'isso', 'tudo', 'nada', 'por', 'sem', 'com', 'para', 'pra', 'de', 'do', 'da', 'no', 'na', 'em', 'se', 'nao', 'teve', 'era', 'foi', 'tinha'])
+function listaDa(c) {
+  const partes = String(roteiro.scenes[c.i]?.narration || '').split(/,|\se\s(?=(?:o|a|os|as|um|uma|meu|minha|até)\s)/i).map((x) => x.trim()).filter(Boolean)
+  if (partes.length < 3) return null
+  const itens = []
+  partes.forEach((pt, k) => {
+    let ws = pt.replace(/[.!?;:…]+$/g, '').split(/\s+/)
+    if (k === 0) { const a = ws.map(norm).findLastIndex((w) => ARTIGOS.has(w)); ws = a >= 0 ? ws.slice(a) : ws.slice(-2) }
+    while (ws.length && /^(e|ate|nem|mais|tambem|ainda)$/.test(norm(ws[0]))) ws = ws.slice(1)
+    const bom = ws.length && ws.length <= 4 && !pt.includes(':') && !NAO_E_ITEM.has(norm(ws[0]))
+    itens.push(bom ? { ws, comArtigo: ARTIGOS.has(norm(ws[0])) } : null)
+    if (/[.!?…]$/.test(pt)) itens.push(null)
+  })
+  let melhor = [], atual = []
+  for (const it of itens) { if (it) { atual.push(it); if (atual.length > melhor.length) melhor = [...atual] } else atual = [] }
+  if (melhor.length < 3 || melhor.filter((x) => x.comArtigo || x.ws.length === 1).length < 2) return null
+  let depois = c.inicio - 0.01
+  return melhor.slice(0, 4).map(({ ws }) => {
+    const sem = ARTIGOS.has(norm(ws[0])) && ws.length > 1 ? ws.slice(1) : ws
+    const texto = sem.join(' ')
+    const t = quando(c, sem[0], depois); depois = t + 0.01
+    return { texto: texto.charAt(0).toUpperCase() + texto.slice(1), t: +t.toFixed(3) }
+  })
+}
+const LISTA_CX = -307, LISTA_Y0 = -147, LISTA_PASSO = 80, LISTA_BOTAO = 232 // a caixinha e o botão, a partir do meio do cartão
+for (const c of cenas.slice(1)) {
+  const itens = listaDa(c); if (!itens) continue
+  const ini = itens[0].t - 0.5, botao = +(itens[itens.length - 1].t + 0.9).toFixed(3)
+  // a folha não apaga o valor, o alerta nem a notificação; o que estiver no meio sai
+  if (estados.some((e) => FICA.has(e.id) && e.t > ini - 0.9 && e.t < botao + 1.0)) continue
+  for (let k = estados.length - 1; k >= 1; k--) if (estados[k].t > ini && estados[k].t < botao + 1.0) estados.splice(k, 1)
+  const iDepois = estados.findIndex((x, k) => k > 0 && x.t > ini)
+  estados.splice(iDepois < 0 ? estados.length : iDepois, 0, { id: 'lista', t: +ini.toFixed(3), itens, botao })
+  // o cursor: uma visita por item (chega, clica na caixinha), depois o botão; nada mais o puxa dali
+  cursor.chaves = cursor.chaves.filter(([t]) => t < ini - 0.6 || t > botao + 0.8)
+  cursor.cliques = cursor.cliques.filter((t) => t < ini - 0.6 || t > botao + 0.8)
+  itens.forEach((it, i) => { cursor.chaves.push([+(it.t - 0.35).toFixed(3), LISTA_CX, LISTA_Y0 + i * LISTA_PASSO]); cursor.cliques.push(+(it.t + 0.25).toFixed(3)) })
+  cursor.chaves.push([+(botao - 0.55).toFixed(3), 0, LISTA_BOTAO], [+(botao + 0.8).toFixed(3), ...DESCANSO])
+  cursor.cliques.push(botao)
+  if (ritmo !== 'agitado') cursor.janelas.push([ini - 0.4, botao + 1.0])
+  cursor.chaves.sort((a, b) => a[0] - b[0]); cursor.cliques.sort((a, b) => a - b)
+  console.log(`lista: ${itens.map((x) => x.texto).join(' · ')}`)
+}
+// OS MOMENTOS DO PALCO: uma tela que ficaria 5 s ou mais parada perde o fim para o boneco, grande e sozinho em cima da
+// cor — um close no rosto, um balão de pensamento, um desenho solto ao lado dele, ou ele sentado/aos pulos.
+// Corta numa frase nova quando dá (a imagem muda com a fala); nunca o mesmo momento duas vezes seguidas; até 3.
+const MOMENTO_DA_EMOCAO = { triste: ['close', 'cena'], nervoso: ['close', 'solto'], susto: ['close', 'solto'], feliz: ['cena', 'solto'], pensativo: ['pensamento', 'close'], vergonha: ['close', 'pensamento'], sono: ['cena', 'pensamento'], suor: ['solto', 'close'], dinheiro: ['solto', 'pensamento'], fala: ['solto', 'pensamento'], neutra: ['pensamento', 'solto'] }
+const PENSAMENTO_DA_EMOCAO = { triste: 'nuvem', nervoso: 'raio', susto: 'exclamacao', feliz: 'coracao', pensativo: 'interrogacao', vergonha: 'reticencias', sono: 'zzz', suor: 'documento', dinheiro: 'moeda', fala: 'interrogacao', neutra: 'reticencias' }
+const emocaoEm = (t) => (emocoes.filter(([t0]) => t0 <= t).pop() || emocoes[0])[1]
+const todas = cenas.flatMap((c) => c.palavras)
+let ultimoMomento = null, nMomentos = 0
+for (const e of [...estados]) {
+  if (nMomentos >= 3 || e.id === 'notif' || e.id === 'lista') continue
+  const fim = fimDe(e)
+  if (fim - e.t < 5.0) continue
+  const de = Math.max(e.t + 2.4, e.id === 'valor' ? aterra + 1.5 : 0), ate = fim - 2.2
+  if (ate < de) continue
+  // a 1.ª palavra de uma frase nova dentro da janela (a mais perto de 3,2 s antes do fim); senão, 3,2 s antes do fim
+  const frases = todas.filter((p, k) => k > 0 && /[.!?…]$/.test(todas[k - 1].w) && p.t - 0.1 >= de && p.t - 0.1 <= ate).map((p) => p.t - 0.1)
+  const corte = frases.length ? frases.sort((x, y) => Math.abs(x - (fim - 3.2)) - Math.abs(y - (fim - 3.2)))[0] : Math.min(ate, Math.max(de, fim - 3.2))
+  const em = emocaoEm(corte + 0.2)
+  const c = [...cenas].reverse().find((x) => x.inicio <= corte + 0.2) || cenas[0]
+  // o desenho solto: um objeto que a frase chama e que não é o que já está no ecrã
+  const jaNoEcra = new Set((e.objetos || []).map((o) => o.nome))
+  const achado = c.palavras.filter((p) => p.t >= corte - 1).map((p) => Object.entries(PALAVRAS_OBJETO).find(([nome, [, ...l]]) => l.includes(norm(p.w)) && !jaNoEcra.has(nome))).find(Boolean)
+  const opcoes = [...(MOMENTO_DA_EMOCAO[em] || []), 'close', 'pensamento', 'cena'].filter((m, i, a) => a.indexOf(m) === i && m !== ultimoMomento && (m !== 'solto' || achado))
+  const momento = opcoes[0] || 'close'
+  ultimoMomento = momento; nMomentos++
+  const palco = { id: 'palco', t: +corte.toFixed(3), momento, emocao: em }
+  if (momento === 'pensamento') palco.pensa = PENSAMENTO_DA_EMOCAO[em] || 'interrogacao'
+  if (momento === 'solto') palco.solto = achado[0]
+  estados.splice(estados.indexOf(e) + 1, 0, palco)
+  inundacoes.push({ t: palco.t, cor: paleta[(inundacoes.length + 1) % paleta.length] })
+  console.log(`palco: ${momento}${palco.solto ? ' (' + palco.solto + ')' : ''} às ${palco.t.toFixed(1)} s, ${em}, no lugar do fim de "${e.id}"`)
+}
+inundacoes.sort((a, b) => a.t - b.t)
+
 const plano = {
   slug, ritmo, batida: B, batidas: BATIDAS, duracao: DUR,
   rotulo, icone, valor: roteiro.valor || valorDoTexto(), metafora, aterra,
