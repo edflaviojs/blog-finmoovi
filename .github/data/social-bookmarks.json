@@ -2718,5 +2718,25 @@
         "status": 200
       }
     }
+  },
+  {
+    "slug": "cotacoes-semana-3-outubro-2026",
+    "title": "Resumo Semanal: Dólar a R$ 5.07 — Semana 3 de outubro",
+    "url": "https://blog.finmoovi.com/posts/cotacoes-semana-3-outubro-2026",
+    "submittedAt": "2026-10-19T20:18:06.141Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1894985872
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
   }
 ]
