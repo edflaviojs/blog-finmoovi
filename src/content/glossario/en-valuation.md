@@ -18,81 +18,77 @@ seo:
   keywords: ["valuation", "glossary", "finance"]
 ---
 
-## O que acontece quando você não sabe quanto algo realmente vale
+## What Happens When You Don’t Know How Much Something Is Really Worth
 
-Imagine que você acabou de vender um carro usado. Você acha que recebeu um preço justo, mas, na semana seguinte, descobre que alguém pagou quase o dobro por um modelo parecido. Ou então, você está pensando em investir em uma startup que parece promissora, mas não tem ideia se o valor que os fundadores estão pedindo faz sentido. Essa sensação de “e se eu estiver pagando demais ou vendendo barato?” é exatamente o que o conceito de **valuation** tenta resolver: descobrir o valor real de um ativo, seja ele um carro, uma empresa, um imóvel ou até mesmo um investimento em bolsa.
+Imagine you just sold a used car. You think you got a fair price, but the next week you discover someone paid almost double for a similar model. Or you’re thinking about investing in a startup that looks promising, but you have no idea if the valuation the founders are asking for makes sense. That feeling of “what if I’m overpaying or selling too cheap?” is exactly what the concept of **valuation** tries to solve: finding the real value of an asset, whether it’s a car, a company, a property, or even a stock market investment.
 
-![O que acontece quando você não sabe quanto algo realmente vale](/images/glossario/valuation-inline-1.webp)
+![What Happens When You Don’t Know How Much Something Is Really Worth](/images/glossario/valuation-inline-1.webp)
 
+Without a clear assessment, you can end up losing money, making decisions based on emotions, or simply feeling insecure about your financial choices. That’s where understanding valuation in a simple, practical way matters—no need to become an economist.
 
+## How Value Assessment Works
 
-Sem uma avaliação clara, você pode acabar perdendo dinheiro, tomar decisões baseadas em emoções ou simplesmente ficar inseguro nas suas escolhas financeiras. É aí que entra a importância de entender valuation de forma simples e prática, sem precisar virar um economista.
+Valuation, or value assessment, is the process of estimating how much something is worth today, taking into account factors such as:
 
-## Como funciona a avaliação de valor
+- **Future cash flow**: how much money the asset can generate in the future (e.g., rental income from a property or profit from a company).
+- **Market comparables**: prices of similar assets that have been traded recently (like used cars of the same make and model).
+- **Assets and liabilities**: everything the asset owns (goods, patents) and everything it owes (debts, obligations).
+- **Risk**: how likely the expected return is not to materialize (the higher the risk, the lower the present value).
 
-Valuation, ou avaliação de valor, é o processo de estimar quanto algo vale hoje, levando em conta fatores como:
+These elements are combined in formulas that, in practice, can be very simple or very complex, depending on what you’re evaluating. The key point is that valuation turns a vague idea (“I think it’s worth a lot”) into a concrete number, helping you make decisions.
 
-- **Fluxo de caixa futuro**: quanto dinheiro o ativo pode gerar no futuro (por exemplo, aluguel de um imóvel ou lucro de uma empresa).
-- **Comparáveis de mercado**: preços de ativos semelhantes que foram negociados recentemente (como carros usados com a mesma marca e modelo).
-- **Ativos e passivos**: tudo que o ativo possui (bens, patentes) e tudo que ele deve (dívidas, obrigações).
-- **Risco**: quanto é provável que o retorno esperado não se materialize (quanto maior o risco, menor o valor presente).
+## Why Most People Ignore Valuation
 
-Esses elementos são combinados em fórmulas que, na prática, podem ser bem simples ou muito complexas, dependendo do que você está avaliando. O ponto central é que valuation transforma uma ideia vaga (“acho que vale muito”) em um número concreto, ajudando na tomada de decisão.
+Most people avoid doing valuation because it seems complicated, requires numbers and spreadsheets, and often they don’t feel comfortable dealing with terms like “discount rate” or “net present value.” In addition, the lack of accessible tools makes us rely on the “seller’s eye” or friends’ guesses.
 
-## Por que a maioria das pessoas ignora valuation
+![Why Most People Ignore Valuation](/images/glossario/valuation-inline-3.webp)
 
-A maioria das pessoas evita fazer valuation porque parece complicado, requer números e planilhas, e muitas vezes não se sente confortável lidando com termos como “taxa de desconto” ou “valor presente líquido”. Além disso, a falta de ferramentas acessíveis faz com que a gente confie no “olho de quem vende” ou em palpites de amigos.
+But ignoring valuation can be costly. Buying a property for more than twice the monthly rent price, investing in stocks that look cheap but have hidden risk, or selling an asset for less than it could generate over the years are mistakes that can be avoided with a simple, practical assessment.
 
-![Por que a maioria das pessoas ignora valuation](/images/glossario/valuation-inline-3.webp)
+## How FinMoovi Can Make Your Valuation Easier
 
+Here comes **FinMoovi**, the app that acts like that friend who always has a ready‑made spreadsheet and also gets your lifestyle. One of the features that helps most with valuation is **smart capture**: you take a photo of a receipt, invoice, or even record your voice describing the asset you want to assess. The app automatically recognizes the type of asset, categorizes it, and pulls relevant information for the assessment.
 
+In addition, FinMoovi works in **multi‑currency**, so if you’re comparing the price of a car in Europe with a similar model in your country, the app converts everything into the same currency, making the comparison easier.
 
-Mas ignorar valuation pode custar caro. Comprar um imóvel por mais de duas vezes o preço de aluguel mensal, investir em ações que parecem baratas mas que têm risco oculto, ou ainda vender um bem por menos do que ele poderia render ao longo dos anos são erros que podem ser evitados com uma avaliação simples e prática.
+With **cash flow and reports**, you see how much that asset can generate over time, and with **monthly planning / goals** you can set buying or selling targets based on real values, not assumptions.
 
-## Como o FinMoovi pode facilitar seu valuation
+If you have credit cards or bills to pay, FinMoovi includes everything in **shopping mode**, showing the expense list and the total in real time, helping you understand whether that investment fits your budget.
 
-Aqui entra o **FinMoovi**, o app que age como aquele amigo que sempre tem a planilha pronta e ainda entende seu jeito de viver. Uma das funcionalidades que mais ajuda no valuation é o **smart capture**: você tira uma foto do recibo, da nota fiscal ou até grava a voz descrevendo o bem que quer avaliar. O app reconhece automaticamente o tipo de ativo, categoriza e já traz informações relevantes para a avaliação.
+Finally, **reminders / balance alerts** notify you when an asset’s market value changes significantly, and the **offline / PWA / sync** mode ensures you have access to the information even without internet.
 
-Além disso, o FinMoovi trabalha em **multi‑currency**, então se você está comparando o preço de um carro na Europa com o de um modelo similar no seu país, o app converte tudo na mesma moeda, facilitando a comparação.
+## Practical Step‑by‑Step to Do a Valuation with FinMoovi
 
-Com **cash flow e reports**, você vê quanto aquele bem pode gerar de renda ao longo do tempo, e com **monthly planning / goals** pode definir metas de compra ou venda baseadas em valores reais, não em suposições.
+1. **Capture the asset**: take a photo of the car, rental contract, or stock statement you want to evaluate. Smart capture recognizes the type of asset and fills in the basic fields.
+2. **Add comparables**: the app suggests prices of similar assets in your region or international markets, already converted to your currency.
+3. **Enter expected cash flow**: if it’s a property, input the monthly rent; if it’s a stock, the estimated dividend yield; if it’s a car, the maintenance cost and expected resale value.
+4. **Set the risk**: choose a risk level (low, medium, high) and the app applies the appropriate discount rate, bringing the future value back to present terms.
+5. **See the result**: FinMoovi generates a valuation number, shows the margin of safety, and recommends whether the current price is above or below the estimated value.
 
-Se você tem cartões de crédito ou contas a pagar, o FinMoovi inclui tudo no **shopping mode**, mostrando a lista de despesas e o total em tempo real, ajudando a entender se aquele investimento cabe no seu orçamento.
+## Three Practical Tips to Improve Your Valuation
 
-Por fim, **reminders / balance alerts** avisam quando o valor de mercado de um ativo muda significativamente, e o modo **offline / PWA / sync** garante que você tenha acesso às informações mesmo sem internet.
+**Practical tip:** Always use at least three different market comparables. This reduces the chance that an outlier price skews your assessment.
 
-## Passo a passo prático para fazer valuation com o FinMoovi
+**Practical tip:** Update the expected cash flow every six months. Changes in maintenance costs or interest rates can significantly alter the value.
 
-1. **Capture o ativo**: tire uma foto do carro, do contrato de aluguel ou do extrato da ação que quer avaliar. O smart capture reconhece o tipo de bem e preenche os campos básicos.
-2. **Adicione comparáveis**: o app sugere preços de ativos semelhantes na sua região ou em mercados internacionais, já convertidos para a sua moeda.
-3. **Insira fluxo de caixa esperado**: se for um imóvel, coloque o aluguel mensal; se for uma ação, a dividend yield estimada; se for um carro, o custo de manutenção e o valor de revenda esperado.
-4. **Defina o risco**: escolha um nível de risco (baixo, médio, alto) e o app aplica a taxa de desconto apropriada, reduzindo o valor futuro ao presente.
-5. **Veja o resultado**: o FinMoovi gera um número de valuation, mostra a margem de segurança e recomenda se o preço atual está acima ou abaixo do valor estimado.
+**Practical tip:** Combine valuation with cash‑flow goals. If the asset generates income, check whether the return covers your monthly expenses and still leaves a buffer for unexpected events.
 
-## Três dicas práticas para melhorar seu valuation
+## When Valuation Can Be Decisive
 
-**Practical tip:** Sempre use pelo menos três comparáveis de mercado diferentes. Isso reduz a chance de um preço atípico distorcer sua avaliação.
+- **Property purchase**: before signing a contract, knowing whether the price aligns with potential rental income can prevent you from paying more than market value.
+- **Startup investment**: when receiving an equity offer, valuation helps you understand if the stake is worth the capital you’ll invest.
+- **Selling personal assets**: when selling a car or electronic equipment, valuation ensures you don’t accept a price far below what the asset truly deserves.
 
-**Practical tip:** Atualize o fluxo de caixa esperado a cada seis meses. Mudanças nos custos de manutenção ou nas taxas de juros podem alterar significativamente o valor.
+## Common Mistakes and How to Avoid Them
 
-**Practical tip:** Combine valuation com metas de cash flow. Se o ativo gera renda, verifique se o retorno cobre seus gastos mensais e ainda deixa uma margem para imprevistos.
+- **Relying only on the list price**: the asking price may be inflated. Use real comparables and adjust for condition.
+- **Ignoring hidden costs**: maintenance, taxes, and fees can reduce the asset’s effective value. Include everything in the cash flow.
+- **Not considering risk**: an asset with a high risk of devaluation (e.g., obsolete technology) should have a lower valuation than a stable one.
 
-## Quando o valuation pode ser decisivo
+## Turning Valuation into a Habit
 
-- **Compra de imóvel**: antes de fechar um contrato, saber se o preço está alinhado com o valor de aluguel potencial pode evitar pagar mais que o valor de mercado.
-- **Investimento em startups**: ao receber uma proposta de participação, o valuation ajuda a entender se a participação vale o investimento de capital.
-- **Venda de ativos pessoais**: ao vender um carro ou um equipamento eletrônico, o valuation garante que você não aceite um preço muito abaixo do que o bem realmente vale.
+The best way to internalize the concept is to practice regularly. Set aside a few minutes each month to review the assets you own—properties, investments, vehicles—and do a quick valuation using FinMoovi. That way you create a clear picture of your net worth and can make safer decisions.
 
-## Erros comuns e como evitá‑los
+## Start Today
 
-- **Confiar só no preço de lista**: o preço de venda pode estar inflacionado. Use comparáveis reais e ajuste pelo estado de conservação.
-- **Ignorar custos ocultos**: manutenção, impostos e taxas podem reduzir o valor efetivo do ativo. Inclua tudo no fluxo de caixa.
-- **Não considerar risco**: um ativo com alto risco de desvalorização (por exemplo, tecnologia obsoleta) deve ter um valuation menor que um bem estável.
-
-## Como transformar valuation em hábito
-
-A melhor forma de internalizar o conceito é praticar regularmente. Reserve alguns minutos a cada mês para revisar os ativos que você possui – imóveis, investimentos, veículos – e faça um valuation rápido usando o FinMoovi. Assim, você cria um panorama claro do seu patrimônio e pode tomar decisões mais seguras.
-
-## Start today
-
-**Micro‑ação de 5 minutos:** Abra o FinMoovi, vá ao modo **smart capture**, tire uma foto do último recibo de compra de um bem que você possui (pode ser o carro, um eletrodoméstico ou até a última ação que comprou). O app vai categorizar, sugerir comparáveis e gerar um valuation preliminar. Salve o resultado e marque a tarefa “Revisar valuation em 30 dias”. Pronto, você já deu o primeiro passo para entender o valor real do que possui!
+**5‑minute micro‑action:** Open FinMoovi, go to **smart capture** mode, and take a photo of the latest purchase receipt for an asset you own (it could be the car, an appliance, or even the last stock you bought). The app will categorize it, suggest comparables, and generate a preliminary valuation. Save the result and tag the task “Review valuation in 30 days.” Done—you’ve taken the first step toward understanding the real value of what you own!

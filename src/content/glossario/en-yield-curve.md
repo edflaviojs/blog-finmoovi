@@ -18,89 +18,85 @@ seo:
   keywords: ["Yield Curve", "glossary", "finance"]
 ---
 
-## O que acontece quando o seu salário não cobre as contas?
+## What Happens When Your Salary Doesn’t Cover the Bills?
 
-Você chega ao fim do mês, conta o dinheiro que entrou e percebe que ainda falta um pedaço do seu orçamento para fechar as contas. A sensação de “não sei onde o dinheiro foi” bate forte, e você começa a se perguntar se há alguma forma de prever melhor esses vazamentos. A resposta está em entender como o mercado de juros funciona, e um dos indicadores mais úteis para isso é a **curva de rendimentos** (yield curve). 
+You reach the end of the month, count the money that came in and realize there’s still a piece of your budget missing to close the accounts. The feeling of “I don’t know where the money went” hits hard, and you start wondering if there’s a way to better predict those leaks. The answer lies in understanding how the interest market works, and one of the most useful indicators for that is the **yield curve**.
 
-![O que acontece quando o seu salário não cobre as contas?](/images/glossario/yield-curve-inline-1.webp)
+![What Happens When Your Salary Doesn’t Cover the Bills?](/images/glossario/yield-curve-inline-1.webp)
 
+The yield curve shows, in a single chart, how much investors receive when they lend money to the government or large companies for different periods – from 3 months up to 30 years. When the curve is “normal,” long‑term interest rates are higher than short‑term ones, indicating that the future is seen as riskier or that inflation may rise. When the curve inverts, short‑term rates are above long‑term rates, signaling that the market expects an economic slowdown or even a recession.
 
+Understanding this dynamic helps you decide when it’s more advantageous to invest your money in short‑ or long‑term securities, or even when to change your debt‑payment strategy. And the best part: the FinMoovi app brings all of this to the palm of your hand, without having to flip through pages of complicated reports.
 
-A curva de rendimentos mostra, em um único gráfico, quanto os investidores recebem ao emprestar dinheiro para o governo ou para grandes empresas por diferentes períodos – de 3 meses até 30 anos. Quando a curva está “normal”, os juros de longo prazo são maiores que os de curto prazo, indicando que o futuro é visto como mais arriscado ou que a inflação pode subir. Quando a curva se inverte, os juros de curto prazo ficam acima dos de longo prazo, sinalizando que o mercado espera uma desaceleração econômica ou até uma recessão. 
+## How the Yield Curve Works in Practice
 
-Entender essa dinâmica ajuda a decidir quando é mais vantajoso aplicar seu dinheiro em títulos de curto ou longo prazo, ou ainda quando mudar a estratégia de pagamento de dívidas. E o melhor: o app FinMoovi traz tudo isso para a palma da sua mão, sem precisar virar páginas de relatórios complicados.
+Imagine you have two investment options:
 
-## Como a curva de rendimentos funciona na prática
+- A security that pays 2 % per year and matures in 6 months.
+- A security that pays 5 % per year and matures in 5 years.
 
-Imagine que você tem duas opções de investimento:
+The difference between these percentages is exactly what the yield curve is showing. If the spread is large, the market is demanding a bigger “premium” for locking money up longer. If the spread is small or negative (inverted curve), the market is saying it doesn’t see much risk difference between short and long term.
 
-- Um título que paga 2 % ao ano e vence em 6 meses.
-- Um título que paga 5 % ao ano e vence em 5 anos.
+### Why Does This Matter for Your Wallet?
 
-A diferença entre esses percentuais é exatamente o que a curva de rendimentos está mostrando. Se a diferença for grande, o mercado está pedindo um “prêmio” maior para quem deixa o dinheiro preso por mais tempo. Se a diferença for pequena ou negativa (curva invertida), o mercado está dizendo que não vê muita diferença de risco entre curto e longo prazo.
+- **Goal planning** – If you plan to buy a car in two years, you can choose a medium‑term security that offers a better return than a savings account, yet still has enough liquidity.
+- **Debt management** – When the curve is inverted, short‑term loan rates tend to rise. This can be a signal to renegotiate debts before costs increase.
+- **Inflation protection** – In periods of an upward‑sloping curve, long‑term securities often include protection against price rises, helping preserve purchasing power.
 
-### Por que isso importa para o seu bolso?
+## FinMoovi and the Yield Curve: What the App Does for You
 
-- **Planejamento de metas** – Se você pretende comprar um carro em dois anos, pode escolher um título de médio prazo que ofereça um retorno melhor que a poupança, mas ainda assim tenha liquidez suficiente.
-- **Gestão de dívidas** – Quando a curva está invertida, os juros de empréstimos de curto prazo tendem a subir. Isso pode ser um sinal para renegociar dívidas antes que os custos aumentem.
-- **Proteção contra inflação** – Em períodos de curva ascendente, títulos de longo prazo costumam incluir proteção contra a alta de preços, ajudando a manter o poder de compra.
+FinMoovi is not just an expense tracker; it turns complex financial data into simple decisions. See how a specific feature – **smart capture** – connects the yield curve to your daily life:
 
-## FinMoovi e a curva de rendimentos: o que o app faz por você
+![FinMoovi and the Yield Curve: What the App Does for You](/images/glossario/yield-curve-inline-3.webp)
 
-FinMoovi não é só um rastreador de gastos; ele transforma dados financeiros complexos em decisões simples. Veja como um recurso específico – **captura inteligente** – conecta a curva de rendimentos ao seu dia a dia:
+1. **Bill photo** – You take a picture of your credit‑card bill or investment statement. The algorithm recognizes each line, identifies whether it’s an interest payment, a redemption, or a new contribution.
+2. **Automatic categorization** – The app classifies everything into “Short‑term investments,” “Long‑term securities,” “Fixed expenses,” etc., without you having to type anything.
+3. **Curve analysis** – Inside the “Reports” panel, FinMoovi shows the current yield curve (in USD, EUR or any other currency you choose) and compares it with your portfolio. You see, in real time, whether you’re paying more interest than you could be earning.
+4. **Adjustment suggestions** – If the curve indicates that 2‑year securities are offering a better return than 6‑month ones, the app recommends reallocating part of the money that’s “stuck” in short‑term investments.
 
-![FinMoovi e a curva de rendimentos: o que o app faz por você](/images/glossario/yield-curve-inline-3.webp)
+In addition, FinMoovi offers:
 
+- **Multi‑currency** – Track investments in dollars, euros or any other currency, ideal for those with income from different countries.
+- **Cash flow and reports** – Visualize inflows and outflows throughout the month, with charts showing how the yield curve impacts your balance.
+- **Monthly planning and goals** – Set objectives like “save the equivalent of two months’ rent” and see how choosing securities helps you reach it.
+- **Shopping mode** – Create shopping lists, see the total in real time and get alerts if spending exceeds the limit you set.
+- **Balance reminders and alerts** – Get notifications when the balance falls below a threshold or when the curve changes significantly.
+- **Offline/PWA** – Even without internet, the app saves your data and syncs everything as soon as you reconnect.
 
+## Three Practical Tips to Use the Yield Curve to Your Advantage
 
-1. **Foto da fatura** – Você tira uma foto da sua fatura de cartão ou do extrato de investimentos. O algoritmo reconhece cada linha, identifica se é um pagamento de juros, um resgate ou um novo aporte.
-2. **Categoria automática** – O app classifica tudo em “Investimentos de curto prazo”, “Títulos de longo prazo”, “Despesas fixas”, etc., sem que você precise digitar nada.
-3. **Análise de curva** – Dentro do painel “Relatórios”, FinMoovi traz a curva de rendimentos atual (em USD, EUR ou outra moeda que você escolher) e compara com o seu portfólio. Você vê, em tempo real, se está pagando mais juros do que poderia estar ganhando.
-4. **Sugestões de ajuste** – Se a curva indicar que os títulos de 2 anos estão oferecendo um retorno melhor que os de 6 meses, o app recomenda realocar parte do dinheiro que está “preso” em investimentos de curto prazo.
+**Practical tip:** *Track the curve each quarter.* Open FinMoovi, go to the “Investments” panel and see if the slope has changed. A flattening curve can be a signal to diversify between short and medium term.
 
-Além disso, o FinMoovi oferece:
+**Practical tip:** *Use smart capture to record every security purchase.* Instead of manually noting it, snap a photo of the receipt; the app categorizes it and already includes the expected yield in your plan.
 
-- **Multi‑moeda** – Você pode acompanhar investimentos em dólares, euros ou qualquer outra moeda, ideal para quem tem renda em diferentes países.
-- **Fluxo de caixa e relatórios** – Visualize entradas e saídas ao longo do mês, com gráficos que mostram como a curva de rendimentos impacta seu saldo.
-- **Planejamento mensal e metas** – Defina objetivos como “economizar o equivalente a duas mensalidades de aluguel” e veja como a escolha de títulos ajuda a alcançar isso.
-- **Modo compras** – Crie listas de compras, veja o total em tempo real e receba alertas se o gasto ultrapassar o limite que você definiu.
-- **Lembretes e alertas de saldo** – Receba notificações quando o saldo cair abaixo de um patamar ou quando a curva mudar de forma significativa.
-- **Offline/PWA** – Mesmo sem internet, o app salva seus dados e sincroniza tudo assim que você se reconecta.
+**Practical tip:** *Combine short‑term goals with short‑term securities.* If your goal is “pay for the vacation trip in 8 months,” choose a security that matures close to that date. The app will show the projected return and automatically adjust your cash flow.
 
-## Três dicas práticas para usar a curva de rendimentos a seu favor
+## How the Yield Curve Affects Everyday Decisions
 
-**Practical tip:** *Acompanhe a curva a cada trimestre.* Abra o FinMoovi, vá ao painel “Investimentos” e veja se a inclinação mudou. Uma curva que está se achatando pode ser um sinal para diversificar entre curto e médio prazo.
+- **Car financing** – When the curve is high, long‑term loan rates rise. If you see this signal in FinMoovi, you can postpone the purchase or negotiate a lower fixed rate.
+- **Rent renegotiation** – In periods of an inverted curve, banks tend to offer cheaper short‑term credit lines. This can be useful to cover an unexpected rent increase.
+- **Electronics purchase** – If the curve indicates that credit‑card rates are climbing, it’s worth waiting for cash‑price promotions or using a zero‑interest card.
 
-**Practical tip:** *Use a captura inteligente para registrar cada compra de título.* Em vez de anotar manualmente, tire a foto do comprovante; o app categoriza e já inclui o rendimento esperado no seu planejamento.
+## Why the Yield Curve Isn’t a Seven‑Headed Monster
 
-**Practical tip:** *Combine metas de curto prazo com títulos de curto prazo.* Se sua meta é “pagar a viagem de férias em 8 meses”, escolha um título que vença próximo a essa data. O app mostrará o retorno projetado e ajustará seu fluxo de caixa automaticamente.
+Many think that understanding the curve requires years of economics study. In reality, just remember three points:
 
-## Como a curva de rendimentos afeta decisões cotidianas
+1. **Normal curve** = long‑term rates > short‑term rates → growth expectation.
+2. **Inverted curve** = short‑term rates > long‑term rates → warning of possible recession.
+3. **Flat curve** = little difference between the two → indecisive market, high volatility.
 
-- **Financiamento de carro** – Quando a curva está alta, os juros de empréstimos de longo prazo sobem. Se você vê esse sinal no FinMoovi, pode adiar a compra ou negociar uma taxa fixa menor.
-- **Renegociação de aluguel** – Em períodos de curva invertida, os bancos tendem a oferecer linhas de crédito mais baratas a curto prazo. Isso pode ser útil para cobrir um aumento inesperado no aluguel.
-- **Compra de eletrônicos** – Se a curva indica que os juros de cartões de crédito estão subindo, vale a pena esperar por promoções à vista ou usar um cartão com taxa zero.
+With FinMoovi, these concepts appear as colored icons and simple alerts, without having to decipher complicated tables.
 
-## Por que a curva de rendimentos não é um bicho de sete cabeças
+## Start Using the Yield Curve Today
 
-Muitos pensam que entender a curva exige anos de estudo em economia. Na verdade, basta lembrar de três pontos:
-
-1. **Curva normal** = juros de longo prazo > juros de curto prazo → expectativa de crescimento.
-2. **Curva invertida** = juros de curto prazo > juros de longo prazo → alerta de possível recessão.
-3. **Curva plana** = pouca diferença entre os dois → mercado indeciso, volatilidade alta.
-
-Com o FinMoovi, esses conceitos aparecem como ícones coloridos e alertas simples, sem precisar decifrar tabelas complicadas.
-
-## Comece a usar a curva de rendimentos hoje mesmo
-
-A curva de rendimentos pode ser a bússola que faltava para organizar seu dinheiro de forma mais inteligente. Ao integrar esse indicador ao seu cotidiano com o FinMoovi, você transforma dados abstratos em ações concretas: ajustar investimentos, renegociar dívidas e planejar metas com mais segurança.
+The yield curve can be the compass you’ve been missing to organize your money more intelligently. By integrating this indicator into your daily life with FinMoovi, you turn abstract data into concrete actions: adjust investments, renegotiate debts and plan goals with greater confidence.
 
 ## Start today
 
-- Abra o FinMoovi e vá para “Captura Inteligente”.
-- Tire uma foto da última fatura do seu cartão ou do comprovante de compra de um título.
-- Toque em “Classificar automaticamente” e, em seguida, escolha a opção “Analisar curva de rendimentos”.
-- Defina uma meta simples, como “economizar o equivalente a duas mensalidades de aluguel nos próximos 6 meses”.
-- Salve e deixe o app enviar um lembrete amanhã para revisar o progresso.
+- Open FinMoovi and go to “Smart Capture.”
+- Take a photo of your latest credit‑card bill or the receipt of a security purchase.
+- Tap “Classify automatically” and then choose the option “Analyze yield curve.”
+- Set a simple goal, like “save the equivalent of two months’ rent in the next 6 months.”
+- Save and let the app send a reminder tomorrow to review progress.
 
-Em menos de cinco minutos você já terá a curva de rendimentos integrada ao seu planejamento financeiro. Agora é só acompanhar os alertas e deixar o FinMoovi fazer o trabalho pesado enquanto você foca no que realmente importa.
+In less than five minutes you’ll have the yield curve integrated into your financial planning. Now just follow the alerts and let FinMoovi do the heavy lifting while you focus on what really matters.
