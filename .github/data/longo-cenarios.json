@@ -150,6 +150,21 @@
       "cena": "o chuveiro que queimou num sábado à noite",
       "promessa": "Você joga fora mais de quatro mil reais por ano sem perceber, e eu vou te provar isso agora",
       "em": "2026-10-12"
+    },
+    {
+      "slug": "como-juntar-mil-reais",
+      "cenarios": [
+        "o domingo",
+        "a conta de luz",
+        "o carro",
+        "a escola das crianças"
+      ],
+      "fio": "fumaca",
+      "elenco": "uma família com filhos pequenos, onde cada gasto é uma escolha",
+      "funcaoDoApp": "balanco-mensal",
+      "cena": "a corrida de aplicativo que virou hábito de todos os dias",
+      "promessa": "Você gasta mais de três mil reais por ano em corridas de aplicativo sem perceber, e eu vou te provar isso",
+      "em": "2026-10-19"
     }
   ]
 }

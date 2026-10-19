@@ -73,6 +73,24 @@
         "movimento": "aproxima",
         "pista": "voce ja passou por aquela surpresa"
       }
+    ],
+    "como-juntar-mil-reais": [
+      {
+        "ficheiro": "manus/como-juntar-mil-reais/susto.jpg",
+        "nome": "o susto de olhar a conta",
+        "significado": "o susto de olhar a conta",
+        "tipo": "foto",
+        "movimento": "aproxima",
+        "pista": "voce sabe quanto vai de corrida"
+      },
+      {
+        "ficheiro": "manus/como-juntar-mil-reais/virada.jpg",
+        "nome": "a saída que se abre",
+        "significado": "a saída que se abre",
+        "tipo": "foto",
+        "movimento": "aproxima-lento",
+        "pista": "eu peguei a calculadora do celular"
+      }
     ]
   }
 }

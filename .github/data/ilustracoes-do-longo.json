@@ -209,6 +209,32 @@
         "cena": "67",
         "figura": "bifurcacao"
       }
+    ],
+    "como-juntar-mil-reais": [
+      {
+        "cena": "18",
+        "figura": "fumaca"
+      },
+      {
+        "cena": "23",
+        "figura": "balde-furado"
+      },
+      {
+        "cena": "30",
+        "figura": "bola-neve"
+      },
+      {
+        "cena": "36",
+        "figura": "guarda-chuva"
+      },
+      {
+        "cena": "54",
+        "figura": "ratoeira"
+      },
+      {
+        "cena": "42",
+        "figura": "bifurcacao"
+      }
     ]
   }
 }

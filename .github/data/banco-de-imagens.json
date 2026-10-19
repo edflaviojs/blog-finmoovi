@@ -98,6 +98,28 @@
       "usadoEm": [
         "organizar-salario-mes-dia"
       ]
+    },
+    {
+      "ficheiro": "manus/como-juntar-mil-reais/susto.jpg",
+      "significado": "o susto de olhar a conta",
+      "tipo": "foto",
+      "pistas": [
+        "voce sabe quanto vai de corrida"
+      ],
+      "usadoEm": [
+        "como-juntar-mil-reais"
+      ]
+    },
+    {
+      "ficheiro": "manus/como-juntar-mil-reais/virada.jpg",
+      "significado": "a saída que se abre",
+      "tipo": "foto",
+      "pistas": [
+        "eu peguei a calculadora do celular"
+      ],
+      "usadoEm": [
+        "como-juntar-mil-reais"
+      ]
     }
   ],
   "recusadas": [

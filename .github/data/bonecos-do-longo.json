@@ -132,6 +132,72 @@
         "cena": "68",
         "boneco": "suspiro-alivio"
       }
+    ],
+    "como-juntar-mil-reais": [
+      {
+        "cena": "2",
+        "boneco": "relogio"
+      },
+      {
+        "cena": "4",
+        "boneco": "susto"
+      },
+      {
+        "cena": "8",
+        "boneco": "contar-moedas"
+      },
+      {
+        "cena": "15",
+        "boneco": "ombros"
+      },
+      {
+        "cena": "16",
+        "boneco": "puxar-cabelo"
+      },
+      {
+        "cena": "19",
+        "boneco": "bracos-cruzados"
+      },
+      {
+        "cena": "22",
+        "boneco": "rasgar-papel"
+      },
+      {
+        "cena": "26",
+        "boneco": "bolsos-vazios"
+      },
+      {
+        "cena": "33",
+        "boneco": "bocejar"
+      },
+      {
+        "cena": "37",
+        "boneco": "carregar-peso"
+      },
+      {
+        "cena": "44",
+        "boneco": "pensando"
+      },
+      {
+        "cena": "46",
+        "boneco": "ideia"
+      },
+      {
+        "cena": "49",
+        "boneco": "abracar-cofrinho"
+      },
+      {
+        "cena": "50",
+        "boneco": "suspiro-alivio"
+      },
+      {
+        "cena": "60",
+        "boneco": "apontar"
+      },
+      {
+        "cena": "62",
+        "boneco": "super-heroi"
+      }
     ]
   }
 }
