@@ -1,0 +1,220 @@
+{
+  "slug": "custo-de-vida-no-paraguai",
+  "term": "custo de vida no paraguai",
+  "category": "basico",
+  "keyword": "paraguai",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "*Você acha que o Paraguai é barato?*"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "castelo-cartas",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você acha que o Paraguai é barato? Pois pense de novo.",
+      "durationSec": 4.2,
+      "shots": [
+        {
+          "anchor": "Você",
+          "visual": {
+            "type": "statement",
+            "text": "Surpresa?"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "Paraguai",
+          "visual": {
+            "type": "statement",
+            "text": "Paraguai?"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "Pois",
+          "visual": {
+            "type": "statement",
+            "text": "Pense de novo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu sei que parece, mas vamos ver os números. Aluguel de um apartamento. Quinhentos reais. Luz. Cento e cinquenta. Mercado. Duzentos. Ônibus. Cinquenta reais por mês.",
+      "durationSec": 10,
+      "shots": [
+        {
+          "anchor": "Aluguel",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "Cento",
+          "visual": {
+            "type": "number",
+            "text": "R$ 150"
+          }
+        },
+        {
+          "anchor": "Mercado",
+          "visual": {
+            "type": "number",
+            "text": "R$ 200"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "Ônibus",
+          "visual": {
+            "type": "number",
+            "text": "R$ 50"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Parece que tudo fica barato, né? Mas soma tudo e vê. Setecentos e cinquenta reais por mês. Quase o dobro do que você imaginava.",
+      "durationSec": 9.2,
+      "shots": [
+        {
+          "anchor": "Parece",
+          "visual": {
+            "type": "statement",
+            "text": "Tudo parece barato"
+          }
+        },
+        {
+          "anchor": "soma",
+          "visual": {
+            "type": "statement",
+            "text": "Mas soma tudo"
+          },
+          "sfx": "alert"
+        },
+        {
+          "anchor": "Setecentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 750"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu coloquei esses números no FinMoovi e ele mostrou que o gasto total é mesmo setecentos e cinquenta reais.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "coloquei",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Resumo mensal"
+          },
+          "sfx": "typewriter"
+        },
+        {
+          "anchor": "total",
+          "visual": {
+            "type": "statement",
+            "text": "Setecentos e cinquenta reais"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "setecentos",
+          "visual": {
+            "type": "statement",
+            "text": "Total confirmado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "statement",
+            "text": "Quer ver o seu?"
+          }
+        },
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "statement",
+            "text": "FinMoovi te ajuda"
+          }
+        },
+        {
+          "anchor": "dias",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "O custo de vida no Paraguai realmente pesa mais do que parece. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "custo",
+          "visual": {
+            "type": "statement",
+            "text": "Custo de vida pesa"
+          }
+        },
+        {
+          "anchor": "realmente",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          },
+          "sfx": "alert"
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro dos outros"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Teste seu custo de vida agora",
+    "target": "app"
+  },
+  "totalDurationSec": 41.8
+}
