@@ -1098,7 +1098,7 @@ jobs:
       # ⚠️ **NÃO OLHA PARA `capa-*.jpg`**, e é essa a diferença que fecha o defeito: um
       # ficheiro antigo na pasta responderia que sim. Olha para o recibo desta corrida.
       - name: 🔔 Houve capa nova neste vídeo?
-        if: steps.escolher.outputs.skip != 'true' && steps.dia.outputs.so_conteudo != 'true'
+        if: steps.escolher.outputs.skip != 'true' && steps.dia.outputs.so_conteudo != 'true' && github.event.inputs.capa_nova != 'false'
         run: |
           if [ "${CAPA_DE_HOJE:-nao}" = "sim" ]; then
             echo "✅ este vídeo foi para o ar com uma capa desenhada hoje."
