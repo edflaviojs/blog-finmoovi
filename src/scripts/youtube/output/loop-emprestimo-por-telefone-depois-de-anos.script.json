@@ -1,0 +1,118 @@
+{
+  "slug": "loop-emprestimo-por-telefone-depois-de-anos",
+  "formato": "loop16",
+  "term": "O empréstimo que o banco ofereceu",
+  "category": "vida",
+  "keyword": "EMPRÉSTIMO",
+  "valor": "R$ 5.000",
+  "situacao": "emprestimo-por-telefone",
+  "gancho": "depois-de-anos",
+  "ganchoFamilia": "depois de anos",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "areia-movedica",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Depois de anos tentando, descobri isso. O banco me ligou.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "tentando",
+          "visual": {
+            "type": "statement",
+            "text": "O banco ligou"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "descobri",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "areia-movedica"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Ofereceram cinco mil reais caladinho no telefone. Eu aceitei, e a conta apertou.",
+      "durationSec": 4.94,
+      "shots": [
+        {
+          "anchor": "Ofereceram",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "areia-movedica"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "cinco",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 5.000 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Olha, quanto mais eu pegava, mais afundava.",
+      "durationSec": 2.66,
+      "shots": [
+        {
+          "anchor": "quanto",
+          "visual": {
+            "type": "statement",
+            "text": "Mais pegava, mais afundava"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "pegava",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "areia-movedica"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Banco ligando no fim do mês? Descobri isso. Eu desligo.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "Banco",
+          "visual": {
+            "type": "statement",
+            "text": "Fim do mês: banco ligando"
+          }
+        },
+        {
+          "anchor": "ligando",
+          "visual": {
+            "type": "statement",
+            "text": "O banco ligou"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}

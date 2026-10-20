@@ -832,5 +832,11 @@
     "gancho": "depois-de-anos",
     "turno": "manha",
     "em": "2026-10-20T09:33:40.066Z"
+  },
+  {
+    "situacao": "emprestimo-por-telefone",
+    "gancho": "depois-de-anos",
+    "turno": "noite",
+    "em": "2026-10-20T09:40:40.438Z"
   }
 ]
