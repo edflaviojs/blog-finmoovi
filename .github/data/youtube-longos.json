@@ -286,7 +286,7 @@
         "guardar dinheiro ganhando pouco",
         "planejamento financeiro pessoal"
       ],
-      "estado": "proposto",
+      "estado": "publicado",
       "viralRef": {
         "videoId": "2TJdIeszZXw",
         "title": "DESAFIO: Como Juntar R$100 MIL Começando com pouco [Funciona MESMO]",
@@ -297,7 +297,9 @@
           "uma palavra em maiúsculas a marcar o tom"
         ]
       },
-      "propostoEm": "2026-10-11T10:26:51.720Z"
+      "propostoEm": "2026-10-11T10:26:51.720Z",
+      "publicadoEm": "2026-10-20T07:40:46.970Z",
+      "videoId": "h47KjHa_KqQ"
     }
   ]
 }
