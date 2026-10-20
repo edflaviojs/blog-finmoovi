@@ -120,10 +120,15 @@
     ]
   },
   "como-juntar-mil-reais": {
-    "estado": "reservado",
+    "videoId": "5HMn_ILgaeQ",
+    "uploadedAt": "2026-10-20T14:27:57.491Z",
     "publishAt": "2026-10-25T22:00:00.000Z",
-    "reservadoEm": "2026-10-20T14:01:54.457Z",
-    "apagadoAntes": "h47KjHa_KqQ",
-    "corrida": "39435497194"
+    "titulo": "Como juntar 10 mil reais de reserva sem precisar de um segundo emprego",
+    "capitulos": 7,
+    "legendas": [
+      "pt",
+      "en",
+      "es"
+    ]
   }
 }
