@@ -1,0 +1,25 @@
+name: Diagnóstico — o medidor de voz (Whisper) devolve palavras?
+
+# 20/10/2026: desde ~15/10 o Whisper da Together devolve ZERO palavras em todas as cenas.
+# Uma frase curta, três pedidos: menos de um centavo. Só à mão.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  sondar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - run: npm ci
+      - name: Perguntar ao Whisper
+        env:
+          TOGETHER_TTS_API_KEY: ${{ secrets.TOGETHER_TTS_API_KEY }}
+        run: node src/scripts/diagnostico/sonda-whisper.js
