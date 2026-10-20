@@ -5794,6 +5794,46 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-10-19"
+    },
+    "cotacoes-semana-2026-10-19.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-20"
+    },
+    "cotacoes-semana-3-outubro-2026-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-20"
+    },
+    "cotacoes-semana-3-outubro-2026-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-20"
+    },
+    "es-cotizaciones-semana-3-octubre-2026-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-20"
+    },
+    "es-cotizaciones-semana-3-octubre-2026-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-20"
+    },
+    "zona-do-euro-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-20"
+    },
+    "zona-do-euro-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-20"
+    },
+    "zona-do-euro.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-20"
     }
   },
   "corrigidas": {
@@ -6458,6 +6498,6 @@
       "motivo": "tem texto escrito (\"I'm sorry, I'm not able to identify the people in this image.\")"
     }
   },
-  "totalAcervo": 1159,
-  "ultimaCorrida": "2026-10-19"
+  "totalAcervo": 1167,
+  "ultimaCorrida": "2026-10-20"
 }
