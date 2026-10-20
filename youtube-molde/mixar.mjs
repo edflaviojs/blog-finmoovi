@@ -73,9 +73,16 @@ for (let i = 0; i < N && 2 * i + 1 < musica.length; i++) {
   const g = VOLUME_MUSICA * Math.min(1, i / fade, (N - i) / fade)
   mix[2 * i] += musica[2 * i] * g; mix[2 * i + 1] += musica[2 * i + 1] * g
 }
-plano.cenas.forEach((c) => {
+// ⚠️ 20/10/2026: uma voz mais comprida do que a cena ENTRA POR CIMA da seguinte (o Ed ouviu no longo
+// de 25/10 — a duração vinha do palpite do roteiro). Mede-se cada voz contra o começo da cena seguinte.
+const encavaladas = []
+plano.cenas.forEach((c, k) => {
   if (!c.audio) return
   const voz = ler(path.join(raiz, 'youtube-render', 'public', c.audio)), a = amostras(c.inicio)
+  const prox = plano.cenas.slice(k + 1).find((x) => x.audio)
+  let fimDaFala = voz.length - 1; while (fimDaFala > 0 && Math.abs(voz[fimDaFala]) < 0.01) fimDaFala-- // o silêncio do fim não conta
+  const sobra = prox ? fimDaFala / 2 / SR - (prox.inicio - c.inicio) : 0
+  if (sobra > 0.15) encavaladas.push(`cena ${k + 1} (+${sobra.toFixed(2)} s)`)
   for (let i = 0; i < voz.length / 2 && a + i < N; i++) { mix[2 * (a + i)] += voz[2 * i]; mix[2 * (a + i) + 1] += voz[2 * i + 1] }
 })
 for (const cue of tl.cues) {
@@ -92,4 +99,8 @@ const cru = path.join(trab, 'mix-cru.f32')
 fs.writeFileSync(cru, Buffer.from(mix.buffer))
 execFileSync('ffmpeg', ['-v', 'error', '-y', '-f', 'f32le', '-ar', String(SR), '-ac', '2', '-i', cru, '-af', 'loudnorm=I=-16:TP=-1.5:LRA=11', '-ar', String(SR), path.join(trab, 'mix.wav')])
 fs.rmSync(cru)
+if (encavaladas.length) {
+  console.error(`❌ VOZ POR CIMA DE VOZ em ${encavaladas.length} cena(s): ${encavaladas.join(', ')} — a duração medida da fala está errada (timing.json).`)
+  process.exit(1)
+}
 console.log(`som: ${plano.cenas.length} vozes + música + ${tl.cues.length} efeitos → mix.wav`)

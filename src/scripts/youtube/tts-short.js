@@ -585,7 +585,11 @@ async function synthesizeValidatedScene({ id, narration, wordCount, minDurationS
     // proporcional (o vídeo sai com sincronia aproximada, em vez de não sair).
     const ultimoFim = whisper.length ? Number(whisper[whisper.length - 1].end) : NaN;
     const medicaoOk = Number.isFinite(ultimoFim) && ultimoFim > 0;
-    if (whisperFalhou || (!medicaoOk && whisper.length)) {
+    // ⚠️ 20/10/2026: a LISTA VAZIA também cai aqui. O Whisper da Together passou a responder
+    // 200 sem palavras (desde ~15/10, todas as cenas "0 do Whisper") e o ramo de baixo usava
+    // então a duração ESCRITA no roteiro — a voz real é mais longa, e no vídeo longo de 25/10
+    // a frase seguinte entrava por cima da anterior (o Ed ouviu). Sem medição: mede-se o áudio.
+    if (whisperFalhou || !medicaoOk) {
       // Mede o ÁUDIO REAL antes de recorrer ao palpite do roteiro. Sem isto, a cena
       // ficava com a duração ESCRITA pelo modelo e tudo o que vinha depois deslocava.
       const real = medirDuracaoAudio(audio, ext);
@@ -593,7 +597,7 @@ async function synthesizeValidatedScene({ id, narration, wordCount, minDurationS
       const origem = real ? `duração REAL do áudio (${real}s)` : `duração do roteiro (${fallbackDurationSec}s — ffprobe indisponível)`;
       const motivo = whisperFalhou
         ? `Whisper indisponível (${whisperFalhou.message})`
-        : `Whisper devolveu ${whisper.length} palavra(s) SEM tempo válido`;
+        : whisper.length ? `Whisper devolveu ${whisper.length} palavra(s) SEM tempo válido` : 'Whisper devolveu ZERO palavras';
       console.log(`  ⚠ cena ${id}${logSuffix}: ${motivo} — usando a ${origem} e alinhamento proporcional.`);
       whisper = []; // sem tempos válidos: alignWords cai na distribuição por peso
       speechEnd = usada;
