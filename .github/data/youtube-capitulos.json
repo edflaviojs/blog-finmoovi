@@ -2806,8 +2806,67 @@
           "titulo": "Perguntas e respostas"
         }
       ]
+    },
+    {
+      "videoId": "QC3768TKTVk",
+      "title": "OS 3 MELHORES INVESTIMENTOS EM DÓLAR NOS EUA PARA FAZER AGORA! (Carteira da Fortuna #7)",
+      "channel": "FONTE DA FORTUNA - Alexandre Winkler",
+      "duracaoSeg": 1470,
+      "idioma": "pt",
+      "viewsPerDay": 3991,
+      "vistoEm": "2026-10-20",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "Outubro chegou: eleições e prêmio iBest"
+        },
+        {
+          "seg": 81,
+          "titulo": "Novo aporte: R$ 350 + dividendos + a carteira completa"
+        },
+        {
+          "seg": 242,
+          "titulo": "Por que dolarizar parte da carteira"
+        },
+        {
+          "seg": 469,
+          "titulo": "CDI x Ibovespa x bolsa americana: 20 anos de retorno"
+        },
+        {
+          "seg": 606,
+          "titulo": "Preciso dolarizar já, mesmo começando agora?"
+        },
+        {
+          "seg": 746,
+          "titulo": "Introdução aos 3 ETFs que vou comprar"
+        },
+        {
+          "seg": 777,
+          "titulo": "ETF 1: VOO (S&P 500)"
+        },
+        {
+          "seg": 952,
+          "titulo": "Como investir em dólar morando no Brasil"
+        },
+        {
+          "seg": 971,
+          "titulo": "ETF 2: SGOV (renda fixa em dólar)"
+        },
+        {
+          "seg": 1063,
+          "titulo": "ETF 3: GLDM (ouro)"
+        },
+        {
+          "seg": 1167,
+          "titulo": "Câmbio, IOF e spread: o custo real"
+        },
+        {
+          "seg": 1320,
+          "titulo": "Lançamento ao vivo e encerramento"
+        }
+      ]
     }
   ],
-  "atualizadoEm": "2026-10-19T09:26:35.802Z",
-  "total": 50
+  "atualizadoEm": "2026-10-20T09:00:53.691Z",
+  "total": 51
 }
