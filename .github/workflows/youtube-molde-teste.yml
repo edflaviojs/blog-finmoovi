@@ -69,6 +69,7 @@ jobs:
       - name: Voz das cenas (sem Whisper pago)
         env:
           TOGETHER_TTS_API_KEY: ''
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: node src/scripts/youtube/tts-short.js --slug="$SLUG"
 
       - name: Instalar o molde (navegador sem janela)

@@ -259,6 +259,22 @@ export async function synthesizeSpeech(text, { voices = VOICES, providerName, pr
  * @param {{ language?: string, ext?: string }} [opts]
  */
 export async function transcribeWords(audioBuffer, { language = 'pt', ext = 'mp3' } = {}) {
+  /**
+   * 🔴 20/10/2026 — O GROQ PRIMEIRO. Desde ~15/10 a Together responde 200 com o texto certo
+   * e `"words": []` (sondado: `diagnostico-whisper.yml`, nas três formas de pedido). Sem os
+   * tempos, cada cena ficava com a duração do PALPITE do roteiro e o longo de 25/10 saiu com
+   * falas por cima de falas. O Groq tem o mesmo Whisper, grátis, e devolve as palavras.
+   * A Together fica de reserva — se um dia voltar, volta a servir sem mexer aqui.
+   */
+  if (process.env.GROQ_API_KEY) {
+    try {
+      const doGroq = await transcreverNoGroq(audioBuffer, { language, ext });
+      if (doGroq.length) return doGroq;
+      console.log('  ⚠ Whisper do Groq devolveu zero palavras — a tentar a Together.');
+    } catch (err) {
+      console.log(`  ⚠ Whisper do Groq falhou (${err.message}) — a tentar a Together.`);
+    }
+  }
   const key = process.env.TOGETHER_TTS_API_KEY;
   if (!key) throw new Error('TOGETHER_TTS_API_KEY ausente (necessária p/ os timestamps do Whisper).');
 
@@ -286,6 +302,28 @@ export async function transcribeWords(audioBuffer, { language = 'pt', ext = 'mp3
   const data = await res.json();
   const words = data.words || (data.segments ? data.segments.flatMap((s) => s.words || []) : []);
   return words.map((w) => ({ word: w.word, start: w.start, end: w.end }));
+}
+
+async function transcreverNoGroq(audioBuffer, { language, ext }) {
+  const fd = new FormData();
+  fd.append('file', new Blob([audioBuffer]), `audio.${ext}`);
+  fd.append('model', 'whisper-large-v3-turbo');
+  fd.append('language', language);
+  fd.append('response_format', 'verbose_json');
+  fd.append('timestamp_granularities[]', 'word');
+  const res = await fetch('https://api.groq.com/openai/v1/audio/transcriptions', {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${process.env.GROQ_API_KEY}` },
+    body: fd,
+    signal: AbortSignal.timeout(120000),
+  });
+  if (!res.ok) {
+    medir({ fornecedor: 'groq', tipo: 'voz', modelo: 'whisper-large-v3-turbo', falhou: true });
+    throw new Error(`HTTP ${res.status}: ${(await res.text().catch(() => '')).slice(0, 200)}`);
+  }
+  medir({ fornecedor: 'groq', tipo: 'voz', modelo: 'whisper-large-v3-turbo', unidades: Math.max(1, Math.round(audioBuffer.length / 1024)) });
+  const data = await res.json();
+  return (data.words || []).map((w) => ({ word: w.word, start: w.start, end: w.end }));
 }
 
 // Auto-teste manual: `node src/scripts/youtube/lib/tts-client.js "frase" out`

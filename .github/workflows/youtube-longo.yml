@@ -834,6 +834,8 @@ jobs:
         if: steps.escolher.outputs.skip != 'true' && steps.dia.outputs.so_conteudo != 'true'
         env:
           TOGETHER_TTS_API_KEY: ${{ secrets.TOGETHER_TTS_API_KEY }}
+          # 20/10/2026: o medidor de voz é o Whisper do GROQ (grátis); a Together deixou de dar o tempo das palavras
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: node src/scripts/youtube/tts-short.js --slug="$SLUG"
 
       # 🔴 O CHÃO DOS 8 MINUTOS, MEDIDO NA VOZ GRAVADA — 08/10/2026, ordem do dono: *"liga"*.
