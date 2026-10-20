@@ -89,6 +89,12 @@ on:
         type: boolean
         required: false
         default: false
+      capa_nova:
+        # 20/10/2026: refazer um vídeo já agendado (falas por cima de falas) não deve pagar outra capa.
+        description: 'Desenhar uma capa NOVA (paga). Desligado = usa a capa que já está no repositório.'
+        type: boolean
+        required: false
+        default: true
   schedule:
     # ✅ LIGADO EM 05/08/2026, por ordem do dono, depois de a corrida na nuvem ter sido
     # medida: 36 minutos do princípio ao fim, dos quais 14 a fazer o vídeo.
@@ -761,7 +767,7 @@ jobs:
       # as capas do blog todos os dias) e o texto é escrito por nós com o `sharp`. Ver
       # `src/scripts/youtube/lib/capa-cloudflare.js`.
       - name: A capa do YouTube (Manus, e a Cloudflare como plano B)
-        if: steps.escolher.outputs.skip != 'true' && steps.dia.outputs.so_conteudo != 'true'
+        if: steps.escolher.outputs.skip != 'true' && steps.dia.outputs.so_conteudo != 'true' && github.event.inputs.capa_nova != 'false'
         env:
           MANUS_API_KEY: ${{ secrets.MANUS_API_KEY }}
           # ⚠️ A conta de reserva — ver a nota no passo das fotografias. Tem de estar

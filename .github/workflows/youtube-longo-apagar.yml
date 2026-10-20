@@ -1,0 +1,52 @@
+name: YouTube — Apagar vídeo longo agendado (só à mão)
+
+# 20/10/2026 — o YouTube não troca o ficheiro de um vídeo. Para refazer um longo já agendado
+# (o de 25/10 tinha falas por cima de falas), apaga-se o privado e a linha volta a reserva;
+# depois corre-se o "Vídeo longo (semanal)" com publicar=sim e capa_nova=não.
+# Só apaga vídeo PRIVADO e só se o identificador for igual ao do caderno.
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: 'nome curto do vídeo longo'
+        required: true
+      video:
+        description: 'identificador do vídeo no YouTube (tem de ser igual ao do caderno)'
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: youtube-longo-${{ inputs.slug }}
+  cancel-in-progress: false
+
+jobs:
+  apagar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - run: npm ci
+
+      - name: Apagar do YouTube e devolver à reserva
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: node src/scripts/youtube/apagar-longo.js --slug="${{ inputs.slug }}" --video="${{ inputs.video }}"
+
+      - name: Guardar o caderno
+        run: |
+          git config user.name "FinMoovi Bot"
+          git config user.email "bot@finmoovi.com"
+          git add .github/data/youtube-longos-published.json .github/data/youtube-longos.json
+          git commit -m "chore: video longo ${{ inputs.slug }} apagado para subir de novo [skip ci]"
+          bash .github/scripts/empurrar.sh
