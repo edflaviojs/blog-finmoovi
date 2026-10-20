@@ -216,6 +216,9 @@ jobs:
           # padrão aprovado. É opt-in só aqui — os 27 robôs do blog continuam grátis.
           KIE_AI_KEY: ${{ secrets.KIE_AI_KEY }}
           KIE_AI_KEY_SHORT50: ${{ secrets.KIE_AI_KEY_SHORT50 }}
+          # 20/10 — o Claude (Sonnet 5.5), crédito do plano Max — ver `escreverComClaude` em kie-ai.js.
+          # Faltava só aqui: o roteiro do Short 50s saía pelo Groq. Autorizado pelo Ed ("pode ligar").
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
           TENTADOS=""
           VENCEDOR=""
