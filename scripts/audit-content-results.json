@@ -1,5 +1,54 @@
 [
   {
+    "file": "en-quotes-week-3-october-2026.md",
+    "dir": "posts",
+    "severity": 3,
+    "issues": {
+      "currency": 4,
+      "brInstitutions": [],
+      "brProducts": [
+        "Tesouro Direto",
+        "CDB",
+        "Selic"
+      ],
+      "geoRefs": [
+        "no Brasil"
+      ],
+      "ptWordsCount": 5,
+      "brBrands": [],
+      "brAcronyms": [
+        "LCI",
+        "LCA"
+      ],
+      "ptLeftovers": [
+        "dívidas",
+        "poupança",
+        "reais",
+        "investimentos",
+        "valor"
+      ]
+    }
+  },
+  {
+    "file": "en-eurozone.md",
+    "dir": "glossario",
+    "severity": 2,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "ação",
+        "investimentos",
+        "valor"
+      ]
+    }
+  },
+  {
     "file": "en-fgc-guarantee.md",
     "dir": "glossario",
     "severity": 2,
@@ -32,6 +81,25 @@
         "LCI",
         "LCA"
       ],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-cotizaciones-semana-3-octubre-2026.md",
+    "dir": "posts",
+    "severity": 2,
+    "issues": {
+      "currency": 4,
+      "brInstitutions": [],
+      "brProducts": [
+        "Tesouro Direto",
+        "CDB",
+        "Selic"
+      ],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
       "ptLeftovers": []
     }
   },
@@ -9947,6 +10015,21 @@
   },
   {
     "file": "es-zona-de-confort-financiera.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-zona-euro.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
