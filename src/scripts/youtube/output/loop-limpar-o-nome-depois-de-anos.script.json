@@ -1,0 +1,118 @@
+{
+  "slug": "loop-limpar-o-nome-depois-de-anos",
+  "formato": "loop16",
+  "term": "Limpar o nome",
+  "category": "vida",
+  "keyword": "NOME",
+  "valor": "R$ 380",
+  "situacao": "limpar-o-nome",
+  "gancho": "depois-de-anos",
+  "ganchoFamilia": "depois de anos",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "buraco",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Depois de anos tentando, descobri isso. Comigo foi na loja.",
+      "durationSec": 3.53,
+      "shots": [
+        {
+          "anchor": "tentando",
+          "visual": {
+            "type": "statement",
+            "text": "Recusado na frente de todos"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "descobri",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "A moça recusou meu cartão. Trezentos e oitenta reais de dívida velha.",
+      "durationSec": 4.24,
+      "shots": [
+        {
+          "anchor": "recusou",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "cartão",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 380"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Paguei aquele atraso caladinho, e meu nome ficou limpo.",
+      "durationSec": 3.18,
+      "shots": [
+        {
+          "anchor": "Paguei",
+          "visual": {
+            "type": "statement",
+            "text": "Paguei e limpei meu nome"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "atraso",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Hoje eu confiro antes. Quem passa anos tentando descobre isso na loja.",
+      "durationSec": 4.24,
+      "shots": [
+        {
+          "anchor": "confiro",
+          "visual": {
+            "type": "statement",
+            "text": "Descobri isso na loja"
+          }
+        },
+        {
+          "anchor": "passa",
+          "visual": {
+            "type": "statement",
+            "text": "Recusado na frente de todos"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.19
+}

@@ -826,5 +826,11 @@
     "gancho": "comeca-assim",
     "turno": "noite",
     "em": "2026-10-19T10:17:11.196Z"
+  },
+  {
+    "situacao": "limpar-o-nome",
+    "gancho": "depois-de-anos",
+    "turno": "manha",
+    "em": "2026-10-20T09:33:40.066Z"
   }
 ]
