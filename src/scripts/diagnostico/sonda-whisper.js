@@ -8,7 +8,6 @@
 import { synthesizeSpeech } from '../youtube/lib/tts-client.js';
 
 const key = process.env.TOGETHER_TTS_API_KEY;
-if (!key) { console.error('falta TOGETHER_TTS_API_KEY'); process.exit(1); }
 const { audio, ext } = await synthesizeSpeech('Dinheiro sem controle é dinheiro dos outros.', { providerName: 'edge' });
 console.log(`áudio: ${audio.length} bytes .${ext}`);
 
@@ -17,6 +16,21 @@ const variantes = {
   'com []': (fd) => fd.append('timestamp_granularities[]', 'word'),
   'word + segment': (fd) => { fd.append('timestamp_granularities[]', 'word'); fd.append('timestamp_granularities[]', 'segment') },
 };
+// 20/10: a Together devolve "words": [] nas três formas. O Groq (grátis) tem o mesmo Whisper.
+if (process.env.GROQ_API_KEY) for (const modelo of ['whisper-large-v3-turbo', 'whisper-large-v3']) {
+  const fd = new FormData();
+  fd.append('file', new Blob([audio]), `audio.${ext}`);
+  fd.append('model', modelo);
+  fd.append('language', 'pt');
+  fd.append('response_format', 'verbose_json');
+  fd.append('timestamp_granularities[]', 'word');
+  const r = await fetch('https://api.groq.com/openai/v1/audio/transcriptions', { method: 'POST', headers: { Authorization: `Bearer ${process.env.GROQ_API_KEY}` }, body: fd });
+  const txt = await r.text();
+  console.log(`
+── GROQ ${modelo}: HTTP ${r.status}`);
+  console.log(txt.slice(0, 700));
+}
+if (!key || process.env.SO_GROQ) process.exit(0);
 for (const [nome, extra] of Object.entries(variantes)) {
   const fd = new FormData();
   fd.append('file', new Blob([audio]), `audio.${ext}`);
