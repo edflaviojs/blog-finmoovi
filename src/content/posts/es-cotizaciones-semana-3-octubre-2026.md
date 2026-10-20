@@ -2,6 +2,7 @@
 title: "Resumen Semanal: Dólar a R$ 5.07 — Semana 3 de octubre"
 description: "Resumen semanal del mercado financiero: dólar, euro, Selic y consejos para inversores. Semana 3 de octubre 2026."
 image: "/images/posts/cotacoes-semana-2026-10-19.webp"
+imageAlt: "Cuaderno de cuero marrón, calculadora, monedas y ramas verdes sobre fondo blanco."
 category: "cotacoes"
 tags: ["cotizaciones","dólar","euro","mercado financiero","selic"]
 author: "FinMoovi"

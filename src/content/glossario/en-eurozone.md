@@ -4,6 +4,7 @@ definition: "What Eurozone is and how it shows up in your everyday money — exp
 title: "Eurozone - Financial Glossary"
 description: "What Eurozone is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/zona-do-euro.webp"
+imageAlt: "Gold coins stacked on a scale and in a jar with a plant against a purple background."
 category: "basico"
 tags: ["Eurozone", "glossary", "finance"]
 author: "FinMoovi"

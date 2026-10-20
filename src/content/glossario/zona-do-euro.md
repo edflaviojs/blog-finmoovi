@@ -4,6 +4,7 @@ definition: "O que é zona do euro e como isso aparece no seu dia a dia — expl
 title: "zona do euro - Glossário Financeiro"
 description: "O que é zona do euro e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/zona-do-euro.webp"
+imageAlt: "Pilhas de moedas douradas e um pote de vidro com plantas, sobre fundo roxo."
 category: "basico"
 tags: ["zona do euro", "glossário", "finanças"]
 author: "FinMoovi"
