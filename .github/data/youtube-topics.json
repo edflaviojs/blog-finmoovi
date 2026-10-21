@@ -747,6 +747,36 @@
       "glossaryRef": "taxa-de-investimento",
       "status": "pending",
       "sourceKeyword": "taxa de investimento"
+    },
+    {
+      "id": "kw-5-truques-que-voce-erra-ao-tentar-economizar-r-200-por-mes",
+      "theme": "5 truques que você erra ao tentar economizar R$200 por mês",
+      "angle": "Mostra, em 45 segundos, 5 erros comuns que as pessoas cometem ao tentar guardar R$200 mensais e como corrigir cada um com exemplos práticos do dia a dia, como trocar café de $5 por $3, cortar assinatura e usar cupons",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "economia",
+      "status": "pending",
+      "sourceKeyword": "formas de economizar dinheiro"
+    },
+    {
+      "id": "kw-como-r-200-desaparecem-em-3-compras-do-dia-a-dia",
+      "theme": "Como R$200 desaparecem em 3 compras do dia a dia",
+      "angle": "Mostro, em 45 segundos, três situações reais (café, delivery e compra impulsiva) onde R$200 somam e somem, revelando o efeito acumulado de gastar sem pensar e dando um insight rápido de como evitar esse desperdício",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "gastar-dinheiro",
+      "status": "pending",
+      "sourceKeyword": "gastar dinheiro"
+    },
+    {
+      "id": "kw-corte-r-200-do-seu-cartao-em-30-dias",
+      "theme": "Corte R$200 do seu cartão em 30 dias",
+      "angle": "Mostro 3 erros comuns que fazem você gastar mais e, em 45 segundos, dou o passo a passo prático para eliminar R$200 da sua fatura, usando exemplos reais do dia a dia como café, streaming e transporte.",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "gastar-menos",
+      "status": "pending",
+      "sourceKeyword": "gastar menos"
     }
   ]
 }
