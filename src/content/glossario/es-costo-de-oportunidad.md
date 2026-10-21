@@ -4,6 +4,7 @@ definition: "Qué es costo de oportunidad y cómo aparece en tu día a día — 
 title: "costo de oportunidad - Glosario Financiero"
 description: "Qué es costo de oportunidad y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/custo-de-oportunidade.webp"
+imageAlt: "Pila de monedas doradas, vaso con monedas y planta bajo campana de vidrio."
 category: "basico"
 tags: ["costo de oportunidad", "glosario", "finanzas"]
 author: "FinMoovi"

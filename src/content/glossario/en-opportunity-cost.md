@@ -4,6 +4,7 @@ definition: "What Opportunity Cost is and how it shows up in your everyday money
 title: "Opportunity Cost - Financial Glossary"
 description: "What Opportunity Cost is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/custo-de-oportunidade.webp"
+imageAlt: "Gold coins, glass containers, and rising arrow on dark background."
 category: "basico"
 tags: ["Opportunity Cost", "glossary", "finance"]
 author: "FinMoovi"
