@@ -1,0 +1,118 @@
+{
+  "slug": "loop-conta-so-das-contas-nunca-faca",
+  "formato": "loop16",
+  "term": "Uma conta só para as contas",
+  "category": "vida",
+  "keyword": "CONTA",
+  "valor": "R$ 2.100",
+  "situacao": "conta-so-das-contas",
+  "gancho": "nunca-faca",
+  "ganchoFamilia": "nunca faça",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "bifurcacao",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Nunca faça isso com o salário. Comigo caiu tudo junto.",
+      "durationSec": 3.45,
+      "shots": [
+        {
+          "anchor": "salário",
+          "visual": {
+            "type": "statement",
+            "text": "Nunca faça isso"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "Comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bifurcacao"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Quando vi, dois mil e cem reais de boleto tinham saído sem eu sentir.",
+      "durationSec": 4.84,
+      "shots": [
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bifurcacao"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "boleto",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 2.100 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Olha, agora separo uma conta só para os boletos.",
+      "durationSec": 3.11,
+      "shots": [
+        {
+          "anchor": "separo",
+          "visual": {
+            "type": "statement",
+            "text": "Uma conta só pros boletos"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bifurcacao"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Então, o salário que cai junto some junto. Nunca faça isso.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "salário",
+          "visual": {
+            "type": "statement",
+            "text": "Cai junto, some junto"
+          }
+        },
+        {
+          "anchor": "junto",
+          "visual": {
+            "type": "statement",
+            "text": "Nunca faça isso"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
