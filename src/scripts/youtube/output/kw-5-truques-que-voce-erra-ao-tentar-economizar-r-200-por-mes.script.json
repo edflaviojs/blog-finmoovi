@@ -1,0 +1,208 @@
+{
+  "slug": "kw-5-truques-que-voce-erra-ao-tentar-economizar-r-200-por-mes",
+  "term": "5 truques que você erra ao tentar economizar R$200 por mês",
+  "category": "mindset",
+  "keyword": "tenta",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Sabe por que o seu *dinheiro some todo mês*, mesmo quando você tenta guardar duzentos reais?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "balde-furado",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Sabe por que o seu dinheiro some todo mês, mesmo quando você tenta guardar duzentos reais? São cinco errinhos do dia a dia.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "duzentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 200"
+          }
+        },
+        {
+          "anchor": "cinco",
+          "visual": {
+            "type": "statement",
+            "text": "5 errinhos invisíveis"
+          },
+          "sfx": "pop"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Ninguém te ensinou a evitar esses errinhos. Você corta tudo na segunda, e na sexta já tá gastando de novo.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "Ninguém",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          }
+        },
+        {
+          "anchor": "corta",
+          "visual": {
+            "type": "statement",
+            "text": "Segunda: corta tudo"
+          }
+        },
+        {
+          "anchor": "gastando",
+          "visual": {
+            "type": "icon",
+            "icon": "chart-down"
+          },
+          "sfx": "thud"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "E gasta de novo por causa dos cinco. Cortar tudo de uma vez. Esquecer assinatura que você não usa. Comprar com cupom o que nem precisava. Guardar só o que sobra. E não anotar nada.",
+      "durationSec": 13.5,
+      "shots": [
+        {
+          "anchor": "cinco",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "Cortar",
+          "visual": {
+            "type": "statement",
+            "text": "1. Cortar tudo"
+          }
+        },
+        {
+          "anchor": "assinatura",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          }
+        },
+        {
+          "anchor": "Guardar",
+          "visual": {
+            "type": "statement",
+            "text": "5. Sem anotar, sem controle"
+          },
+          "sfx": "alert"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei as minhas assinaturas no FinMoovi e ele me mostrou três paradas, trinta reais cada. Noventa reais por mês.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "minhas",
+          "visual": {
+            "type": "app",
+            "app": "compras",
+            "note": "assinaturas listadas com valores"
+          }
+        },
+        {
+          "anchor": "trinta",
+          "visual": {
+            "type": "number",
+            "text": "R$ 30 cada"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "Noventa",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 90,
+            "prefix": "R$"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver as suas? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Esses cinco errinhos comem seus duzentos reais sem você ver. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 6.5,
+      "shots": [
+        {
+          "anchor": "comem",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Sem controle, não é seu"
+          },
+          "sfx": "ding"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Descubra para onde seu dinheiro vai",
+    "target": "app"
+  },
+  "totalDurationSec": 48
+}
