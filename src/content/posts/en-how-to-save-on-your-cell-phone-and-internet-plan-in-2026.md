@@ -42,7 +42,7 @@ If [negotiation](/en/glossario/en-negotiation) doesn’t work, research competit
 ![Use smart Wi‑Fi](/images/posts/como-economizar-no-plano-de-celular-e-internet-em-2026-4.webp)
 
 ## Start Today
-Grab your latest bill, note what was actually used and choose the simplest action: adjust the plan, negotiate or switch provider. Each small step already reduces expense and puts money back in your pocket.
+Grab your latest bill, note what was actually used and choose the simplest action: adjust the plan, negotiate or switch provider. Each small step already reduces [expense](/en/glossario/en-expense) and puts money back in your pocket.
 
 ## Frequently Asked Questions
 ### How long does it take to change plans?

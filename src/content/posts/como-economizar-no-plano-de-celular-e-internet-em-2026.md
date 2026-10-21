@@ -47,7 +47,7 @@ Se a [negociação](/glossario/negociacao) não resultar, pesquise concorrentes.
 
 
 ## Comece hoje
-Pegue a sua última fatura, anote o que realmente foi usado e escolha a ação que parece mais simples: ajustar o plano, negociar ou mudar de operadora. Cada passo pequeno já reduz a despesa e devolve dinheiro ao seu bolso.
+Pegue a sua última fatura, anote o que realmente foi usado e escolha a ação que parece mais simples: ajustar o plano, negociar ou mudar de operadora. Cada passo pequeno já reduz a [despesa](/glossario/despesa) e devolve dinheiro ao seu bolso.
 
 ## Perguntas frequentes
 ### Quanto tempo leva para mudar de plano?
