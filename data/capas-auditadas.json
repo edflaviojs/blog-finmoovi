@@ -5834,6 +5834,21 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-10-20"
+    },
+    "custo-de-oportunidade-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-21"
+    },
+    "custo-de-oportunidade-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-21"
+    },
+    "custo-de-oportunidade.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-21"
     }
   },
   "corrigidas": {
@@ -6498,6 +6513,6 @@
       "motivo": "tem texto escrito (\"I'm sorry, I'm not able to identify the people in this image.\")"
     }
   },
-  "totalAcervo": 1167,
-  "ultimaCorrida": "2026-10-20"
+  "totalAcervo": 1170,
+  "ultimaCorrida": "2026-10-21"
 }
