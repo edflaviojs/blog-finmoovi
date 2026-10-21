@@ -1,5 +1,25 @@
 [
   {
+    "file": "en-opportunity-cost.md",
+    "dir": "glossario",
+    "severity": 3,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 6,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "dívidas",
+        "poupança",
+        "investimentos",
+        "valor"
+      ]
+    }
+  },
+  {
     "file": "en-quotes-week-3-october-2026.md",
     "dir": "posts",
     "severity": 3,
@@ -6895,6 +6915,21 @@
   },
   {
     "file": "es-control-de-gastos.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-costo-de-oportunidad.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
