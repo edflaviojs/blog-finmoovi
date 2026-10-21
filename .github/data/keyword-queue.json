@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-20T15:24:32.393Z",
-  "sourceCursor": 1,
+  "updatedAt": "2026-10-21T14:24:01.524Z",
+  "sourceCursor": 2,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -2146,8 +2146,10 @@
       "category": null,
       "priority": 2,
       "source": "gsc-gap",
-      "status": "pending",
-      "addedAt": "2026-09-21T13:26:40.478Z"
+      "status": "used",
+      "addedAt": "2026-09-21T13:26:40.478Z",
+      "usedAt": "2026-10-21T14:24:01.524Z",
+      "usedBy": "gerar-post-investimentos"
     },
     {
       "keyword": "debenture",
