@@ -2865,8 +2865,51 @@
           "titulo": "Lançamento ao vivo e encerramento"
         }
       ]
+    },
+    {
+      "videoId": "SaNSC2rMP7o",
+      "title": "5 NEGÓCIOS PARA COMEÇAR EM 2027 DE CASA E COM POUCO DINHEIRO!!",
+      "channel": "Gêmeos Investem",
+      "duracaoSeg": 1467,
+      "idioma": "pt",
+      "viewsPerDay": 20134,
+      "vistoEm": "2026-10-21",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "Introdução"
+        },
+        {
+          "seg": 73,
+          "titulo": "Furadas que você acredita"
+        },
+        {
+          "seg": 285,
+          "titulo": "Produzir conteúdo vai continuar funcionando"
+        },
+        {
+          "seg": 362,
+          "titulo": "Criando um App"
+        },
+        {
+          "seg": 811,
+          "titulo": "Desenvolvendo games do 0"
+        },
+        {
+          "seg": 1029,
+          "titulo": "Criador de conteúdo UGC"
+        },
+        {
+          "seg": 1190,
+          "titulo": "Criando um livro"
+        },
+        {
+          "seg": 1423,
+          "titulo": "Conclusão"
+        }
+      ]
     }
   ],
-  "atualizadoEm": "2026-10-20T09:00:53.691Z",
-  "total": 51
+  "atualizadoEm": "2026-10-21T08:59:22.924Z",
+  "total": 52
 }
