@@ -2738,5 +2738,45 @@
         "status": 200
       }
     }
+  },
+  {
+    "slug": "como-simplificar-o-registro-de-despesas-sem-abrir-planilhas",
+    "title": "Como simplificar o registro de despesas sem abrir planilhas em 2026?",
+    "url": "https://blog.finmoovi.com/posts/como-simplificar-o-registro-de-despesas-sem-abrir-planilhas",
+    "submittedAt": "2026-10-21T19:02:16.626Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1897179371
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "como-usar-a-tabela-sac-para-pagar-emprestimos-sem-dor-de",
+    "title": "Como usar a Tabela SAC para pagar empréstimos sem dor de cabeça em 2026",
+    "url": "https://blog.finmoovi.com/posts/como-usar-a-tabela-sac-para-pagar-emprestimos-sem-dor-de",
+    "submittedAt": "2026-10-21T19:02:17.160Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1897179376
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
   }
 ]
