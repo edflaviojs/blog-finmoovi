@@ -1589,6 +1589,21 @@
     }
   },
   {
+    "file": "en-expense.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-family-financial-planning.md",
     "dir": "glossario",
     "severity": 0,
@@ -2789,6 +2804,21 @@
     }
   },
   {
+    "file": "en-how-to-simplify-expense-tracking-without-spreadsheets-in.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-how-to-spot-and-cut-recurring-expenses-that-drain-your.md",
     "dir": "posts",
     "severity": 0,
@@ -3015,6 +3045,21 @@
   },
   {
     "file": "en-how-to-use-the-sac-or-price-calculator-to-organize-your-loan.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-how-to-use-the-sac-table-to-pay-loans-stress-free-in-2026.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -6689,6 +6734,21 @@
     }
   },
   {
+    "file": "es-como-simplificar-el-registro-de-gastos-sin-usar-hojas-de.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-como-transformar-el-caos-financiero-en-control-con-la.md",
     "dir": "posts",
     "severity": 0,
@@ -6825,6 +6885,21 @@
   },
   {
     "file": "es-como-usar-la-tabla-price-para-planificar-tus-cuotas-en-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-como-usar-la-tabla-sac-para-pagar-prestamos-sin.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -7935,6 +8010,21 @@
   },
   {
     "file": "es-gasto-variable.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-gasto.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
