@@ -25,15 +25,15 @@ seo:
 
 La mayoría de nosotros hemos vivido esto: llega fin de mes, la hoja está llena de filas, pero algunos campos siguen vacíos porque, en ese momento, la cabeza estaba ocupada para abrir el archivo. Tratas de recordar qué compraste la semana pasada, haces cuentas mentales, abres Excel, corriges fórmulas “rotas” y, al final, sientes que el control está más lejos que nunca.  
 
-- **Tiempo perdido**: estudios de la OCDE indican que los trabajadores dedican, en promedio, 12 minutos al día a tareas manuales de organización financiera.  
-- **Errores de cálculo**: un simple “=SUMA” mal colocado puede generar una diferencia del tamaño de un alquiler mensual.  
+- **Tiempo perdido**: estudios de la OCDE indican que los trabajadores dedican, en promedio, 12 minutos al día a tareas manuales de [organización financiera](/es/posts/es-como-los-freelancers-pueden-organizar-sus-finanzas-en-2026).  
+- **Errores de cálculo**: un simple “=SUMA” mal colocado puede generar una diferencia del tamaño de un [alquiler](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026) mensual.  
 - **Estrés**: la ansiedad de no saber si el saldo es correcto suele aparecer justo antes de pagar la tarjeta.  
 
 Estos problemas se agravan cuando estás siempre en movimiento – en el autobús, en la fila del banco o en la pausa del café. La hoja, que debería ser tu aliada, se vuelve un peso.
 
 ## Por qué la captura por voz de FinMoovi cambia el juego  
 
-FinMoovi fue pensado para quien ya no quiere abrir archivos para registrar cada gasto. Su **captura inteligente por voz** funciona offline, es decir, no dependes de conexión para hablar y que el gasto quede anotado. El algoritmo reconoce la frase, identifica el importe, la categoría y actualiza el flujo de caja en tiempo real.  
+FinMoovi fue pensado para quien ya no quiere abrir archivos para registrar cada [gasto](/es/glossario/es-gasto). Su **[captura inteligente](/es/posts/es-cansado-de-perder-horas-en-hojas-de-calculo-asi-finmoovi-lo) por voz** funciona offline, es decir, no dependes de conexión para hablar y que el gasto quede anotado. El algoritmo reconoce la frase, identifica el importe, la categoría y actualiza el [flujo de caja](/es/glossario/es-flujo-de-caja) en tiempo real.  
 
 ![Por qué la captura por voz de FinMoovi cambia el juego](/images/posts/como-simplificar-o-registro-de-despesas-sem-abrir-planilhas-2.webp)
 
@@ -42,7 +42,7 @@ FinMoovi fue pensado para quien ya no quiere abrir archivos para registrar cada 
 1. **Abre la app** – solo toca el ícono, nada de menús complicados.  
 2. **Habla** – “gasté €5 en un café” o “pagué €27 de alquiler”.  
 3. **Confirmación visual** – FinMoovi muestra el gasto ya categorizado (alimentación, vivienda, ocio).  
-4. **Informe instantáneo** – el panel de control muestra el saldo actualizado, gráficos de consumo y metas de ahorro.  
+4. **Informe instantáneo** – el panel de control muestra el saldo actualizado, gráficos de consumo y metas de [ahorro](/es/glossario/es-ahorro).  
 
 Todo ocurre en menos de 5 segundos, incluso si estás en el metro sin internet. Los datos quedan cifrados en el dispositivo y se sincronizan con la nube cuando haya conexión, garantizando seguridad y copia de seguridad automática.
 
@@ -50,7 +50,7 @@ Todo ocurre en menos de 5 segundos, incluso si estás en el metro sin internet
 
 María suele anotar todo en su móvil justo después de cada compra, pero la hoja que usa en su portátil siempre lleva varios días de retraso. Un día, al llegar a casa, se da cuenta de que la última semana de gastos aún no aparece en los gráficos. Siente ese nudo en el pecho, teme estar gastando más de lo planeado y necesita “arreglar” la hoja antes de cerrar el mes.  
 
-En lugar de abrir Excel, María abre FinMoovi, dice en voz alta: “gasté €8 en el supermercado”. La app registra la compra, la coloca en la categoría “alimentación” y actualiza el total mensual. En la misma pantalla, María ve que aún le queda margen para ahorrar el próximo fin de semana. En menos de 5 minutos, está tranquila, con todo actualizado y sin tocar fórmulas.  
+En lugar de abrir Excel, María abre FinMoovi, dice en voz alta: “gasté €8 en el supermercado”. La app registra la compra, la coloca en la categoría “alimentación” y actualiza el total mensual. En la misma pantalla, María ve que aún le queda margen para [ahorrar](/es/posts/es-ahorra-en-la-farmacia-sin-sacrificios-guia-practica-2026) el próximo fin de semana. En menos de 5 minutos, está tranquila, con todo actualizado y sin tocar fórmulas.  
 
 ### Paso a paso para replicarlo  
 
@@ -83,7 +83,7 @@ En lugar de abrir Excel, María abre FinMoovi, dice en voz alta: “gasté €8 
 
 ## Datos que respaldan la elección  
 
-Un informe del **World Bank** señala que la digitalización de procesos financieros personales puede reducir el tiempo dedicado a tareas administrativas hasta en un 30 %. Además, **Investopedia** destaca que la automatización del registro de gastos mejora la precisión de la información en torno al 25 %, facilitando decisiones más acertadas.  
+Un informe del **World Bank** señala que la digitalización de procesos financieros personales puede reducir el tiempo dedicado a tareas administrativas hasta en un 30 %. Además, **Investopedia** destaca que la automatización del [registro de gastos](/es/posts/es-captura-inteligente-por-voz-registra-tus-gastos-en-segundos) mejora la precisión de la información en torno al 25 %, facilitando decisiones más acertadas.  
 
 ![Datos que respaldan la elección](/images/posts/como-simplificar-o-registro-de-despesas-sem-abrir-planilhas-6.webp)
 

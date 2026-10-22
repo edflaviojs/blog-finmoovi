@@ -27,13 +27,13 @@ Most of us have been there: the month ends, the spreadsheet is packed with rows,
 
 - **Time lost**: OECD studies show workers spend, on average, 12 minutes a day on manual financial‑organization tasks.  
 - **Calculation errors**: a misplaced `=SUM` can create a discrepancy the size of a monthly rent payment.  
-- **Stress**: the anxiety of not knowing whether your balance is correct usually spikes right before you pay your credit‑card bill.  
+- **Stress**: the anxiety of not knowing whether your balance is correct usually spikes right before you pay your [credit](/en/glossario/en-credit)‑card bill.  
 
 These problems get even bigger when you’re constantly on the move – on the bus, waiting in line at a bank, or grabbing a coffee. The spreadsheet that should be your ally becomes a weight.
 
 ## Why FinMoovi’s Voice Capture Changes the Game  
 
-FinMoovi was built for people who are done opening files just to log every expense. Its **smart offline voice capture** means you don’t need an internet connection to speak and have the expense recorded. The algorithm recognizes the phrase, extracts the amount, the category, and updates your cash‑flow in real time.
+FinMoovi was built for people who are done opening files just to log every [expense](/en/glossario/en-expense). Its **smart offline [voice capture](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end)** means you don’t need an internet connection to speak and have the expense recorded. The algorithm recognizes the phrase, extracts the amount, the category, and updates your cash‑flow in real time.
 
 ![Why FinMoovi’s voice capture changes the game](/images/posts/como-simplificar-o-registro-de-despesas-sem-abrir-planilhas-2.webp)
 
@@ -42,7 +42,7 @@ FinMoovi was built for people who are done opening files just to log every expen
 1. **Open the app** – just tap the icon, no complicated menus.  
 2. **Speak** – “I spent $6 on a coffee” or “I paid $30 for rent”.  
 3. **Visual confirmation** – FinMoovi shows the expense already categorized (food, housing, leisure).  
-4. **Instant report** – the dashboard displays the updated balance, consumption charts, and savings goals.  
+4. **Instant report** – the dashboard displays the updated balance, consumption charts, and [savings](/en/glossario/en-savings) goals.  
 
 All of this happens in under 5 seconds, even if you’re on a subway with no internet. The data stays encrypted on your device and syncs to the cloud as soon as you’re online, guaranteeing security and automatic backup.
 
@@ -70,7 +70,7 @@ Instead of opening Excel, Maria launches FinMoovi and says out loud, “I spent 
 | Categorization error rate | 15 % (broken formulas) | < 2 % (AI corrects) |
 | Stress at month‑end | High (fear of surprises) | Low (real‑time reports) |
 | Need for internet | High (cloud spreadsheet) | Zero (offline) |
-| Data security | Vulnerable to file loss | Encryption + automatic backup |
+| [Data security](/en/posts/en-finmoovi-vs-mobills-which-to-choose-in-2026) | Vulnerable to file loss | Encryption + automatic backup |
 
 ![Before vs. After: the difference in numbers](/images/posts/como-simplificar-o-registro-de-despesas-sem-abrir-planilhas-4.webp)
 
@@ -79,7 +79,7 @@ Instead of opening Excel, Maria launches FinMoovi and says out loud, “I spent 
 1. **Speak clearly** – short, concise sentences work best.  
 2. **Use keywords** – “spent”, “paid”, “received” help the algorithm understand the action.  
 3. **Review weekly** – even though the app categorizes automatically, glance at the charts to fine‑tune any mismatches.  
-4. **Leverage goals** – set a monthly limit for each category; the app alerts you when you’re getting close.  
+4. **[Leverage](/en/glossario/en-leverage) goals** – set a monthly limit for each category; the app alerts you when you’re getting close.  
 
 ## Data That Reinforces the Choice  
 
@@ -96,10 +96,10 @@ The app temporarily stores recordings on your device, processes speech locally, 
 Yes. Voice recognition happens inside the app, and the data is encrypted before storage. No information is sent to third parties without your consent.  
 
 **Can I use FinMoovi with more than one currency?**  
-The tool supports multi‑currency, allowing you to log expenses in different currencies and automatically convert them to your chosen base currency.  
+The tool supports [multi‑currency](/en/posts/en-digital-bank-vs-major-bank-which-is-worth-it-in-2026), allowing you to log expenses in different currencies and automatically convert them to your chosen base currency.  
 
 **What if I mis‑speak the amount?**  
-FinMoovi shows the captured transaction before saving. Just say “correct” or tap the edit icon to adjust the amount or category.  
+FinMoovi shows the captured transaction before [saving](/en/posts/en-how-to-build-a-budget-that-actually-works-in-2026). Just say “correct” or tap the edit icon to adjust the amount or category.  
 
 ---
 

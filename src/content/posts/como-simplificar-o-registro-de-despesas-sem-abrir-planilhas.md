@@ -25,15 +25,15 @@ Você já gastou mais tempo tentando lembrar de abrir a planilha, digitar o valo
 
 A maioria de nós já passou pela situação: chega o fim do mês, a planilha está cheia de linhas, mas alguns campos ainda estão vazios porque, naquele momento, a cabeça estava ocupada demais para abrir o arquivo. Você tenta lembrar o que comprou na última semana, faz contas mentais, abre o Excel, corrige fórmulas que “quebraram” e, no final, sente que o controle está mais longe do que nunca.
 
-- **Tempo perdido**: estudos da OECD mostram que trabalhadores gastam, em média, 12 minutos por dia em tarefas de organização financeira manual.
-- **Erros de cálculo**: um simples “=SOMA” mal posicionado pode gerar uma diferença do tamanho de um aluguel mensal.
+- **Tempo perdido**: estudos da OECD mostram que trabalhadores gastam, em média, 12 minutos por dia em tarefas de [organização financeira](/posts/como-freelancers-podem-organizar-as-financas-em-2026) manual.
+- **Erros de cálculo**: um simples “=SOMA” mal posicionado pode gerar uma diferença do tamanho de um [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026) mensal.
 - **Stress**: a ansiedade de não saber se o saldo está correto costuma aparecer logo antes de pagar a fatura do cartão.
 
 Esses problemas são ainda maiores quando você está sempre em movimento – no ônibus, na fila do banco ou na pausa para o café. A planilha, que deveria ser sua aliada, vira um peso.
 
 ## Por que a captura por voz do FinMoovi muda o jogo
 
-O FinMoovi foi pensado exatamente para quem não quer mais abrir arquivos para registrar cada gasto. Sua **captura inteligente por voz** funciona offline, ou seja, você não depende de conexão para falar e ter a despesa anotada. O algoritmo reconhece a frase, identifica o valor, a categoria e atualiza o fluxo de caixa em tempo real.
+O FinMoovi foi pensado exatamente para quem não quer mais abrir arquivos para registrar cada gasto. Sua **[captura inteligente](/posts/cansado-de-perder-horas-nas-planilhas-como-o-finmoovi) por voz** funciona offline, ou seja, você não depende de conexão para falar e ter a [despesa](/glossario/despesa) anotada. O algoritmo reconhece a frase, identifica o valor, a categoria e atualiza o [fluxo de caixa](/glossario/fluxo-de-caixa) em tempo real.
 
 ![Por que a captura por voz do FinMoovi muda o jogo](/images/posts/como-simplificar-o-registro-de-despesas-sem-abrir-planilhas-2.webp)
 
@@ -44,7 +44,7 @@ O FinMoovi foi pensado exatamente para quem não quer mais abrir arquivos para r
 1. **Abra o app** – basta tocar no ícone, nada de menus complicados.
 2. **Fale** – “gastei 30 reais em um café” ou “paguei 150 reais de aluguel”.
 3. **Confirmação visual** – o FinMoovi exibe a despesa já categorizada (alimentação, moradia, lazer).
-4. **Relatório instantâneo** – o painel de controle mostra o saldo atualizado, gráficos de consumo e metas de economia.
+4. **Relatório instantâneo** – o painel de controle mostra o saldo atualizado, gráficos de consumo e [metas](/posts/como-saber-se-sua-meta-de-economia-esta-realmente-avancando) de [economia](/glossario/economia).
 
 Tudo isso acontece em menos de 5 segundos, mesmo que você esteja em um metrô sem internet. Os dados ficam criptografados no dispositivo e são sincronizados com a nuvem assim que houver conexão, garantindo segurança e backup automático.
 
@@ -101,7 +101,7 @@ O app armazena temporariamente as gravações no dispositivo, processa a fala lo
 Sim. O reconhecimento de voz acontece dentro do app e os dados são criptografados antes de serem armazenados. Nenhuma informação é enviada a terceiros sem sua autorização.
 
 ### Posso usar o FinMoovi em mais de uma moeda?
-A ferramenta aceita multimoeda, permitindo registrar gastos em diferentes moedas e converter automaticamente para a moeda base que você escolher.
+A ferramenta aceita multimoeda, permitindo registrar gastos em diferentes moedas e converter automaticamente para a [moeda](/glossario/moeda) base que você escolher.
 
 ### O que acontece se eu errar ao falar o valor?
 O app exibe a transação capturada antes de salvar. Basta dizer “corrigir” ou tocar no ícone de edição para ajustar o valor ou a categoria.
