@@ -9,6 +9,7 @@ import { generateGlossaryTerm } from './glossario-com-imagens.js';
 import { takeKeyword, markUsed, markSkipped, QUEUE_FILE, motivoDeMarca } from '../lib/keyword-queue.js';
 import { glossaryTermFromKeyword, keywordLooksLikeConcept } from '../lib/termo-guard.js';
 import { motivoDeSlugAposentado } from '../lib/slug-aposentado.js';
+import { palavrasPtNoSlug } from '../../../scripts/validate-slug-language.js';
 import { writeFileSync, readFileSync, mkdirSync, existsSync, unlinkSync } from 'fs';
 import { join, resolve } from 'path';
 import { fileURLToPath } from 'url';
@@ -366,6 +367,20 @@ ${p.content}
       ok: false,
       motivo: `a tradução não devolveu termo utilizável (o ficheiro sairia "${degenerado.filename}")`,
       razaoFila: 'traducao-sem-termo',
+    };
+  }
+
+  // Termo que a IA não traduziu: `es-despesa.md` passou em 21/10/2026 e a trava
+  // de slug do build (a mesma regra, aqui chamada) parou o blog inteiro 22h.
+  // Recusar aqui custa um verbete; deixar passar custa o site.
+  const slugPt = pendentes
+    .map(f => ({ nome: f.filename, pt: palavrasPtNoSlug(f.filename) }))
+    .find(f => f.pt.length > 0);
+  if (slugPt) {
+    return {
+      ok: false,
+      motivo: `a tradução deixou palavra portuguesa no nome "${slugPt.nome}" [${slugPt.pt.join(', ')}] — o build recusaria o site inteiro`,
+      razaoFila: 'traducao-com-slug-pt',
     };
   }
 

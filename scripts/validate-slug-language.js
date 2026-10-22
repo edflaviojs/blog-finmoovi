@@ -22,7 +22,8 @@
  */
 
 import { readdirSync, existsSync } from 'fs';
-import { join } from 'path';
+import { join, resolve } from 'path';
+import { fileURLToPath } from 'url';
 
 const CONTENT_DIRS = [
   join(process.cwd(), 'src', 'content', 'posts'),
@@ -139,4 +140,20 @@ function main() {
   process.exit(0);
 }
 
-main();
+/**
+ * A mesma regra, para um nome que AINDA não foi gravado. O robô do glossário
+ * pergunta isto antes de gravar: em 21/10/2026 gravou `es-despesa.md` e o
+ * build da Cloudflare ficou parado 22h com 6 páginas novas fora do ar.
+ * @param {string} fileName Nome do arquivo (ex: "es-despesa.md").
+ * @returns {string[]} Palavras PT no slug; vazio se o nome está limpo.
+ */
+export function palavrasPtNoSlug(fileName) {
+  if (!fileName.endsWith('.md') || !(fileName.startsWith('en-') || fileName.startsWith('es-'))) return [];
+  const { locale, tokens } = parseSlug(fileName);
+  if (BR_ONLY_ALLOWLIST.has(tokens.join('-'))) return [];
+  return findPtTokens(locale, tokens);
+}
+
+if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  main();
+}
