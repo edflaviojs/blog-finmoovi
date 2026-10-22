@@ -4,6 +4,7 @@ definition: "What expense is and how it shows up in your everyday money — expl
 title: "expense - Financial Glossary"
 description: "What expense is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/despesa.webp"
+imageAlt: "Gold coins, safe, and jar with plant beside rising orange chart."
 category: "basico"
 tags: ["expense", "glossary", "finance"]
 author: "FinMoovi"

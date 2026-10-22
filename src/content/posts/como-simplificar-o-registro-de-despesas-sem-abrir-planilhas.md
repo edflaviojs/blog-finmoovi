@@ -3,6 +3,7 @@ title: "Como simplificar o registro de despesas sem abrir planilhas em 2026?"
 description: "Descubra como eliminar horas gastas em planilhas e registrar gastos na hora, usando a captura por voz do FinMoovi."
 tickerHeadline: "O fim das planilhas eternas"
 image: "/images/posts/como-simplificar-o-registro-de-despesas-sem-abrir-planilhas.webp"
+imageAlt: "Casal sorridente em sofá bege, usando tablet e anotando despesas."
 category: "ferramentas"
 locale: "pt"
 tags: ["registro de despesas","captura por voz","FinMoovi","controle financeiro offline","automação de gastos","planilha desatualizada","substituir planilha","app financeiro","gestão de despesas","finmoovi","finanças pessoais"]

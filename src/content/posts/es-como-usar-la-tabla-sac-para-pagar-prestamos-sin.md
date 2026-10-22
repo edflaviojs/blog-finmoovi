@@ -3,6 +3,7 @@ title: "Cómo usar la tabla SAC para pagar préstamos sin complicaciones en 2026
 description: "Descubre cómo funciona la tabla SAC, simula pagos y usa FinMoovi para organizar tus cuotas de forma práctica y tranquila."
 tickerHeadline: "La fórmula que simplifica tus cuotas"
 image: "/images/posts/como-usar-a-tabela-sac-para-pagar-emprestimos-sem-dor-de.webp"
+imageAlt: "Tres personas sonríen mientras revisan un documento en un interior luminoso."
 category: "investimentos"
 locale: "es"
 tags: ["tabla SAC","cálculo de cuotas","amortización","préstamo","FinMoovi","planificación financiera","calculadora tabla SAC"]

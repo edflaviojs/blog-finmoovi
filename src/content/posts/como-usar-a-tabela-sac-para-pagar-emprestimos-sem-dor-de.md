@@ -3,6 +3,7 @@ title: "Como usar a Tabela SAC para pagar empréstimos sem dor de cabeça em 202
 description: "Descubra como a Tabela SAC funciona, simule pagamentos e use o FinMoovi para organizar suas parcelas de forma prática e tranquila."
 tickerHeadline: "A fórmula que simplifica suas prestações"
 image: "/images/posts/como-usar-a-tabela-sac-para-pagar-emprestimos-sem-dor-de.webp"
+imageAlt: "Três pessoas sorrindo, segurando documentos, em ambiente interno com plantas."
 category: "investimentos"
 locale: "pt"
 tags: ["tabela SAC","cálculo de parcelas","amortização","empréstimo","FinMoovi","planejamento financeiro","calculadora tabela sac"]

@@ -3,6 +3,7 @@ title: "Cómo simplificar el registro de gastos sin usar hojas de cálculo en 20
 description: "Descubre cómo eliminar horas en hojas de cálculo y registrar tus gastos al instante con la captura de voz de FinMoovi."
 tickerHeadline: "Adiós a las hojas de cálculo eternas"
 image: "/images/posts/como-simplificar-o-registro-de-despesas-sem-abrir-planilhas.webp"
+imageAlt: "Pareja sonriente en sofá beige usando una tableta plateada y escribiendo con bolígrafo."
 category: "ferramentas"
 locale: "es"
 tags: ["registro de gastos","captura por voz","FinMoivi","control financiero offline","automatización de gastos","hoja de cálculo desactualizada","sustituir hoja de cálculo","app financiera","gestión de gastos","finmoovi","finanzas personales"]

@@ -3,6 +3,7 @@ title: "How to Use the SAC Table to Pay Loans Stress‑Free in 2026"
 description: "Learn how the SAC amortization table works, simulate payments, and use FinMoovi to keep your loan installments organized and easy."
 tickerHeadline: "The formula that simplifies your install"
 image: "/images/posts/como-usar-a-tabela-sac-para-pagar-emprestimos-sem-dor-de.webp"
+imageAlt: "Three smiling people in neutral clothing review a white document together indoors."
 category: "investimentos"
 locale: "en"
 tags: ["SAC table","installment calculation","amortization","loan","FinMoovi","financial planning","SAC calculator"]

@@ -3,6 +3,7 @@ title: "How to Simplify Expense Tracking Without Spreadsheets in 2026?"
 description: "Learn to ditch spreadsheet hassles and log expenses instantly with FinMoovi’s voice capture – fast, offline, and secure."
 tickerHeadline: "Goodbye Endless Spreadsheets"
 image: "/images/posts/como-simplificar-o-registro-de-despesas-sem-abrir-planilhas.webp"
+imageAlt: "Couple on beige sofa viewing tablet, woman writing with pen, green plant nearby."
 category: "ferramentas"
 locale: "en"
 tags: ["expense tracking","voice capture","FinMoovi","offline finance","expense automation","replace spreadsheet","finance app","expense management","personal finance"]

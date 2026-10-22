@@ -4,6 +4,7 @@ definition: "Qué es despesa y cómo aparece en tu día a día — explicado de 
 title: "despesa - Glosario Financiero"
 description: "Qué es despesa y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/despesa.webp"
+imageAlt: "Pilas de monedas doradas, caja fuerte, gráfico ascendente y planta en frasco."
 category: "basico"
 tags: ["despesa", "glosario", "finanzas"]
 author: "FinMoovi"
