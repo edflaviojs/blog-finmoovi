@@ -1463,5 +1463,12 @@
     "title": "CARTÃO: corte r$200 em 30 dias",
     "formato": "short50",
     "publishAt": "2026-10-23T15:00:00.000Z"
+  },
+  "loop-emprestimo-por-telefone-depois-de-anos": {
+    "videoId": "c5EUmRJJpJA",
+    "uploadedAt": "2026-10-22T21:54:42.407Z",
+    "title": "EMPRÉSTIMO: R$ 5.000 que me afundou",
+    "formato": "loop16",
+    "publishAt": "2026-10-23T21:40:00.000Z"
   }
 }
