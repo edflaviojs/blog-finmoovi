@@ -1,0 +1,118 @@
+{
+  "slug": "loop-remedio-todo-mes-ninguem-fala",
+  "formato": "loop16",
+  "term": "O remédio de todo mês",
+  "category": "vida",
+  "keyword": "REMÉDIO",
+  "valor": "R$ 260",
+  "situacao": "remedio-todo-mes",
+  "gancho": "ninguem-fala",
+  "ganchoFamilia": "ninguém fala",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "balde-furado",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Ninguém fala isso sobre remédio, mas é real. Abri meu extrato ontem.",
+      "durationSec": 4.24,
+      "shots": [
+        {
+          "anchor": "Ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "Ninguém fala do remédio"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "remédio",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Vi que duzentos e sessenta reais tinham ido só no remédio.",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "duzentos",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "sessenta",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 260 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Olha, o furo do meu balde era esse. Agora separo primeiro.",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "balde",
+          "visual": {
+            "type": "statement",
+            "text": "Separo o remédio primeiro"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "separo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Ninguém fala, mas é real. O remédio sai antes.",
+      "durationSec": 3.18,
+      "shots": [
+        {
+          "anchor": "Ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "Ele sai antes de tudo"
+          }
+        },
+        {
+          "anchor": "remédio",
+          "visual": {
+            "type": "statement",
+            "text": "Ninguém fala do remédio"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}

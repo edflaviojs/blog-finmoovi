@@ -856,5 +856,11 @@
     "gancho": "faca-isso",
     "turno": "manha",
     "em": "2026-10-22T09:32:33.147Z"
+  },
+  {
+    "situacao": "remedio-todo-mes",
+    "gancho": "ninguem-fala",
+    "turno": "noite",
+    "em": "2026-10-22T09:42:31.356Z"
   }
 ]
