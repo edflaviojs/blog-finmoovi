@@ -3610,5 +3610,23 @@
     "target": "https://www.investopedia.com/articles/pf/08/create-budget.asp",
     "status": "no-endpoint",
     "sentAt": "2026-10-20T18:22:15.901Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/como-usar-debentures-para-dar-mais-tranquilidade-ao-seu/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-10-22T18:21:12.429Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/en-how-to-use-corporate-bonds-for-a-more-peaceful-wallet-in/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-10-22T18:21:12.512Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/es-como-usar-debentures-para-dar-mas-tranquilidad-a-tu-bolsillo/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-10-22T18:21:12.609Z"
   }
 ]
