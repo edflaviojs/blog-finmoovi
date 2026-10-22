@@ -1,0 +1,118 @@
+{
+  "slug": "loop-trocar-divida-cara-faca-isso",
+  "formato": "loop16",
+  "term": "Trocar dívida cara por barata",
+  "category": "vida",
+  "keyword": "DÍVIDA",
+  "valor": "R$ 4.000",
+  "situacao": "trocar-divida-cara",
+  "gancho": "faca-isso",
+  "ganchoFamilia": "faça isso",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "balanca",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se você quer sair do aperto, FAÇA ISSO. Comigo aconteceu, olha.",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "aperto",
+          "visual": {
+            "type": "statement",
+            "text": "Quer sair do aperto?"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "Comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balanca"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Pagava a pequena, e a cara crescendo. Já eram quatro mil reais",
+      "durationSec": 4.24,
+      "shots": [
+        {
+          "anchor": "Pagava",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balanca"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "pequena",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 4.000"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Aí pesei as duas. A cara tem que ir primeiro.",
+      "durationSec": 3.53,
+      "shots": [
+        {
+          "anchor": "pesei",
+          "visual": {
+            "type": "statement",
+            "text": "Pesei as duas dívidas"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "primeiro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balanca"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Hoje, pra sair do aperto, eu pago a cara primeiro.",
+      "durationSec": 3.53,
+      "shots": [
+        {
+          "anchor": "aperto",
+          "visual": {
+            "type": "statement",
+            "text": "A cara vai primeiro"
+          }
+        },
+        {
+          "anchor": "primeiro",
+          "visual": {
+            "type": "statement",
+            "text": "Quer sair do aperto?"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.19
+}
