@@ -17,82 +17,81 @@ seo:
   metaDescription: "What expense is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
   keywords: ["expense", "glossary", "finance"]
 ---
+## What happens when the electricity bill arrives out of nowhere
 
-## O que acontece quando a conta de luz chega inesperada
+You just opened the fridge, saw the light flicker, and realized the electricity bill came in almost twice as high as last month. That same day, the car needed a quick repair, and your credit card took a hit from an impulse buy — a gadget you don't even use. Stress kicks in, the feeling that money is slipping through your fingers grows, and suddenly you're asking yourself: "Where did all my money go?". That moment is what an **expense** looks like — everything that leaves your account, whether it's fixed (like rent) or variable (like dinner out). Understanding expenses is the first step to stop being caught off guard by them.
 
-Você acabou de abrir a geladeira, viu a luz piscando e percebeu que a conta de luz veio com um valor quase duas vezes maior que o mês passado. No mesmo dia, o carro precisou de um reparo rápido e o cartão de crédito disparou com uma compra impulsiva de um gadget que você nem usa. O estresse bate, a sensação de que o dinheiro está escapando das mãos aumenta e, de repente, você se pergunta: “Para onde foi todo o meu dinheiro?”. Essa situação é a cara da **despesa** – tudo aquilo que sai da sua conta, seja fixo (como aluguel) ou variável (como um jantar fora). Entender a despesa é o primeiro passo para parar de ser surpreendido por ela.
-
-![O que acontece quando a conta de luz chega inesperada](/images/glossario/despesa-inline-1.webp)
-
-
-
-## Definindo despesa de forma simples
-
-Despesa é qualquer gasto que você tem para manter seu padrão de vida ou alcançar algum objetivo. Não precisa ser um termo complicado; pense nela como “o que eu paguei”. Existem duas categorias principais:
-
-- **Despesas fixas:** pagamentos que acontecem todo mês e têm valores quase estáveis, como aluguel, plano de internet ou assinatura de streaming.
-- **Despesas variáveis:** gastos que mudam de acordo com o que você consome, como supermercado, combustível, lazer ou aquele presente de última hora.
-
-A diferença entre elas importa porque as fixas são mais fáceis de prever, enquanto as variáveis exigem controle maior para não estourarem seu orçamento.
-
-## Como a falta de controle de despesas afeta seu bolso
-
-Quando você não registra nem pensa nas despesas, duas coisas acontecem:
-
-![Como a falta de controle de despesas afeta seu bolso](/images/glossario/despesa-inline-3.webp)
+![What happens when the electricity bill arrives out of nowhere](/images/glossario/despesa-inline-1.webp)
 
 
 
-1. **Surpresas desagradáveis** – contas que chegam sem aviso, como a de energia ou de manutenção do carro.
-2. **Objetivos adiados** – aquela viagem dos sonhos ou a reserva de emergência ficam cada vez mais longe porque o dinheiro “some” em gastos não planejados.
+## Expense, defined simply
 
-Esses efeitos são cumulativos: um pequeno vazamento aqui, outro ali, e no fim do mês você tem menos dinheiro do que esperava, gerando ansiedade e decisões precipitadas, como recorrer a empréstimos com juros altos.
+An expense is any cost you take on to keep up your lifestyle or reach a goal. It doesn't need to be a complicated term; think of it as "what I paid". There are two main categories:
 
-## FinMoovi: a ferramenta que transforma a dor em solução
+- **Fixed expenses:** payments that happen every month with almost the same amount, like rent, your internet plan, or a streaming subscription.
+- **Variable expenses:** costs that change depending on what you consume, like groceries, fuel, entertainment, or that last-minute gift.
 
-Imagine ter um assistente que, ao tirar foto do recibo da conta de luz ou gravar a voz dizendo “gastei 30 dólares no supermercado”, registra tudo automaticamente, coloca a despesa na categoria correta e ainda converte o valor para a moeda que você usa no dia a dia. É exatamente isso que o **FinMoovi** faz com seu recurso de **smart capture**.
+The difference matters because fixed expenses are easier to predict, while variable ones need closer control so they don't blow up your budget.
 
-- **Captura inteligente:** tire uma foto ou fale o valor; o app reconhece o texto, identifica a loja ou serviço e classifica a despesa (ex.: “energia elétrica”, “supermercado”).
-- **Multi‑moeda:** se você viaja ou faz compras em diferentes moedas, o FinMoovi converte tudo para a sua moeda base, usando a cotação do dia.
-- **Fluxo de caixa e relatórios:** veja em tempo real quanto entrou e saiu, com gráficos que mostram a proporção de despesas fixas vs. variáveis.
-- **Planejamento mensal e metas:** defina quanto quer gastar em cada categoria e acompanhe o progresso.
-- **Cartões e contas:** sincronize cartões de crédito e contas bancárias; o app traz as faturas automaticamente.
-- **Modo compras:** crie listas, some os itens em tempo real e evite ultrapassar o limite que você estabeleceu.
-- **Alertas e lembretes:** receba notificações quando o saldo estiver baixo ou quando uma despesa ultrapassar o limite definido.
-- **Offline e PWA:** funciona mesmo sem internet; os dados são sincronizados quando a conexão volta.
+## How a lack of expense control hurts your wallet
 
-Com esses recursos, a despesa deixa de ser um monstro invisível e passa a ser um número que você vê, entende e controla.
+When you don't record or think about your expenses, two things happen:
 
-## Três dicas práticas para domar suas despesas
+![How a lack of expense control hurts your wallet](/images/glossario/despesa-inline-3.webp)
 
-**Practical tip:** **Registre tudo por 30 dias** – use o smart capture do FinMoovi para fotografar cada recibo ou anotar rapidamente via voz. No final do mês você terá um panorama completo e descobrirá onde o dinheiro está realmente indo.
 
-**Practical tip:** **Separe despesas fixas e variáveis em categorias distintas** – no app, crie duas pastas: “Fixas” e “Variáveis”. Isso ajuda a visualizar o que pode ser negociado (como mudar o plano de internet) e o que precisa de atenção (como reduzir o gasto com delivery).
 
-**Practical tip:** **Defina um limite mensal para cada categoria variável** – escolha um valor que represente, por exemplo, “o preço de duas refeições fora” para lazer ou “o custo de um tanque de gasolina”. Quando o limite for atingido, o FinMoovi envia um alerta, evitando surpresas na conta bancária.
+1. **Unpleasant surprises** — bills that show up without warning, like energy or car maintenance.
+2. **Postponed goals** — that dream trip or your emergency fund drifts further away because money "disappears" into unplanned spending.
 
-## Estratégias avançadas para quem já tem o básico sob controle
+These effects add up: a small leak here, another one there, and at the end of the month you have less money than you expected, which leads to anxiety and rushed decisions, like turning to high-interest loans.
 
-Se você já está acostumado a registrar despesas, pode levar o controle a outro nível:
+## FinMoovi: the tool that turns the pain into a solution
 
-- **Análise de tendência:** use os relatórios mensais para identificar padrões, como aumento de gasto em energia nos meses mais frios, e ajuste o consumo antecipadamente.
-- **Objetivo de economia automática:** configure o app para transferir automaticamente um percentual da sua renda para uma conta de reserva assim que o saldo cair abaixo de um patamar.
-- **Comparação de fornecedores:** ao registrar contas de serviços (internet, telefone), o FinMoovi permite comparar o custo médio nos últimos seis meses, facilitando a negociação ou troca de plano.
-- **Integração com metas de vida:** vincule metas como “viajar em 12 meses” ao orçamento de lazer; o app mostrará quanto precisa economizar a cada mês para alcançar o objetivo.
+Imagine having an assistant that, when you snap a photo of your electricity bill receipt or say out loud "I spent 30 dollars at the supermarket", records everything automatically, puts the expense in the right category, and even converts the amount to the currency you use day to day. That's exactly what **FinMoovi** does with its **smart capture** feature.
 
-## Como evitar os erros mais comuns ao lidar com despesas
+- **Smart capture:** take a photo or say the amount; the app reads the text, identifies the store or service, and classifies the expense (e.g., "electricity", "supermarket").
+- **Multi-currency:** if you travel or shop in different currencies, FinMoovi converts everything to your base currency using the day's rate.
+- **Cash flow and reports:** see in real time how much came in and went out, with charts showing the share of fixed vs. variable expenses.
+- **Monthly planning and goals:** set how much you want to spend in each category and track your progress.
+- **Cards and accounts:** keep your credit cards and bank accounts organized in one place, with each card's bill in view.
+- **Shopping mode:** build lists, add up items in real time, and avoid going over the limit you set.
+- **Alerts and reminders:** get notified when your balance is low or when an expense goes over the limit you set.
+- **Offline and PWA:** works even without internet; your data syncs when the connection comes back.
 
-- **Não confundir desejo com necessidade:** antes de comprar, pergunte se o item é essencial ou se pode ser adiado.
-- **Ignorar pequenos gastos:** aquele café diário pode parecer insignificante, mas acumulado ao longo de um mês equivale ao preço de um jantar especial.
-- **Não revisar periodicamente:** despesas mudam; revise suas categorias a cada trimestre para garantir que ainda fazem sentido.
-- **Depender só de memória:** a memória falha; registrar tudo no momento evita omissões e garante dados precisos.
+With these features, expenses stop being an invisible monster and become a number you can see, understand, and control.
+
+## Three practical tips to tame your expenses
+
+**Practical tip:** **Record everything for 30 days** — use FinMoovi's smart capture to photograph every receipt or log it quickly by voice. At the end of the month you'll have a complete picture and discover where your money is really going.
+
+**Practical tip:** **Split fixed and variable expenses into separate categories** — in the app, create two groups: "Fixed" and "Variable". This helps you see what can be negotiated (like switching your internet plan) and what needs attention (like cutting back on delivery).
+
+**Practical tip:** **Set a monthly limit for each variable category** — pick an amount that represents, for example, "the price of two meals out" for entertainment or "the cost of a full tank of gas". When the limit is reached, FinMoovi sends an alert, so your bank account has no surprises.
+
+## Advanced strategies for those who already have the basics under control
+
+If you're already used to recording expenses, you can take control to the next level:
+
+- **Trend analysis:** use the monthly reports to spot patterns, like higher energy spending in colder months, and adjust your consumption ahead of time.
+- **Savings goal:** set a goal for your emergency fund and see each month how much is left to reach it.
+- **Provider comparison:** when you record service bills (internet, phone), look back at what you paid over the last six months to make negotiating or switching plans easier.
+- **Link to life goals:** tie goals like "travel in 12 months" to your entertainment budget, and see how much you need to save each month to get there.
+
+## How to avoid the most common mistakes with expenses
+
+- **Confusing wants with needs:** before buying, ask whether the item is essential or can wait.
+- **Ignoring small costs:** that daily coffee may seem insignificant, but over a month it adds up to the price of a special dinner.
+- **Not reviewing regularly:** expenses change; review your categories every quarter to make sure they still make sense.
+- **Relying on memory alone:** memory fails; recording everything on the spot avoids omissions and keeps your data accurate.
 
 ## Start today
 
-1. Abra o FinMoovi e ative o **smart capture** nas configurações.  
-2. Tire foto do último recibo que você tem em mãos (pode ser a conta de luz ou o comprovante de supermercado).  
-3. Confirme a categoria sugerida pelo app e ajuste, se necessário.  
-4. Defina um limite mensal para a categoria “Variáveis” que corresponda ao preço de duas refeições fora.  
-5. Receba o primeiro alerta de limite nas próximas semanas e veja como o controle já está funcionando.
+1. Open FinMoovi and try **smart capture** on your next purchase.  
+2. Take a photo of the last receipt you have on hand (it could be the electricity bill or a supermarket receipt).  
+3. Confirm the category the app suggests and adjust it if needed.  
+4. Set a monthly limit for the "Variable" category that matches the price of two meals out.  
+5. Get your first limit alert in the coming weeks and see your control already at work.
 
-Em menos de cinco minutos você transforma a incerteza das despesas em informação clara e acionável. Agora é só seguir o fluxo e deixar o dinheiro trabalhar a seu favor.
+In less than five minutes you turn the uncertainty of your expenses into clear, actionable information. Now just keep the flow going and let your money work for you.
