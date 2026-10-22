@@ -1,0 +1,235 @@
+{
+  "slug": "kw-corte-r-200-do-seu-cartao-em-30-dias",
+  "term": "Corte R$200 do seu cartão em 30 dias",
+  "category": "mindset",
+  "keyword": "cartão",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Sabe onde estão os *duzentos reais* que dá pra cortar da sua fatura do cartão?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ratoeira",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Sabe onde estão os duzentos reais que dá pra cortar da sua fatura do cartão? Estão no café, na assinatura parada e na corrida de aplicativo.",
+      "durationSec": 10,
+      "shots": [
+        {
+          "anchor": "duzentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 200"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "cartão",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          }
+        },
+        {
+          "anchor": "café",
+          "visual": {
+            "type": "statement",
+            "text": "Café"
+          }
+        },
+        {
+          "anchor": "corrida",
+          "visual": {
+            "type": "statement",
+            "text": "Corrida de app"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Esses três passam batido, porque cada um parece pouquinho. Mas em trinta dias eles somam. Café na padaria, assinatura esquecida, carro de aplicativo com pressa.",
+      "durationSec": 9.6,
+      "shots": [
+        {
+          "anchor": "passam",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          },
+          "sfx": "click"
+        },
+        {
+          "anchor": "pouquinho",
+          "visual": {
+            "type": "statement",
+            "text": "Pouquinho que pesa"
+          }
+        },
+        {
+          "anchor": "somam",
+          "visual": {
+            "type": "icon",
+            "icon": "coins"
+          }
+        },
+        {
+          "anchor": "esquecida",
+          "visual": {
+            "type": "statement",
+            "text": "Pequenos gastos escondidos"
+          },
+          "sfx": "pop"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Olha só. Café de oito reais, vinte dias no mês, dá cento e sessenta. Só ele. E ainda faltam os outros dois.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "oito",
+          "visual": {
+            "type": "number",
+            "text": "R$ 8"
+          }
+        },
+        {
+          "anchor": "vinte",
+          "visual": {
+            "type": "statement",
+            "text": "20 dias no mês"
+          }
+        },
+        {
+          "anchor": "cento",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 160,
+            "prefix": "R$"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "faltam",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei a fatura no FinMoovi e ele marcou três linhas em vermelho. Padaria, assinatura que eu não abria, corrida de aplicativo.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "cartoes",
+            "note": "fatura com três linhas em vermelho"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "Padaria",
+          "visual": {
+            "type": "statement",
+            "text": "Assinatura que ninguém abre"
+          }
+        },
+        {
+          "anchor": "corrida",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver as linhas da sua fatura? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 5,
+      "shots": [
+        {
+          "anchor": "fatura",
+          "visual": {
+            "type": "statement",
+            "text": "Sua fatura, linha a linha"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "number",
+            "text": "7 dias grátis"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Os duzentos reais da sua fatura moram no que você paga sem ver. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "number",
+            "text": "R$ 200"
+          }
+        },
+        {
+          "anchor": "paga",
+          "visual": {
+            "type": "statement",
+            "text": "O que você paga sem ver"
+          }
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          },
+          "sfx": "thud"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja as linhas vermelhas da sua fatura",
+    "target": "app"
+  },
+  "totalDurationSec": 49.3
+}
