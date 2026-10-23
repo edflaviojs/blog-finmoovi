@@ -1,353 +1,392 @@
 {
-  "date": "2026-09-12",
+  "date": "2026-10-22",
   "counts": {
-    "content": 6,
+    "content": 9,
     "videos": 3,
     "pins": 0,
-    "failures": 2,
-    "runs": 48
+    "failures": 0,
+    "runs": 47
   },
-  "failures": [
-    {
-      "name": "Multipost — Vigia das redes (diário)",
-      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/34693032902",
-      "timeLisbon": "13:12"
-    },
-    {
-      "name": "Vigia do ar (o site tem tudo o que o repo tem?)",
-      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/34720834180",
-      "timeLisbon": "22:45"
-    }
-  ],
+  "failures": [],
   "content": [
     {
       "label": "Glossário",
       "route": "glossario",
-      "locale": "pt",
-      "slug": "negociacao",
-      "url": "https://blog.finmoovi.com/glossario/negociacao",
-      "title": "negociação - Glossário Financeiro",
-      "description": "O que é negociação e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi.",
+      "locale": "en",
+      "slug": "en-export",
+      "url": "https://blog.finmoovi.com/en/glossario/en-export",
+      "title": "Export - Financial Glossary",
+      "description": "What Export is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi.",
       "category": "basico",
-      "publishedAt": "2026-09-12"
+      "publishedAt": "2026-10-22"
+    },
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "pt",
+      "slug": "exportacao",
+      "url": "https://blog.finmoovi.com/glossario/exportacao",
+      "title": "exportação - Glossário Financeiro",
+      "description": "O que é exportação e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi.",
+      "category": "basico",
+      "publishedAt": "2026-10-22"
     },
     {
       "label": "Glossário",
       "route": "glossario",
       "locale": "es",
-      "slug": "es-negociacion",
-      "url": "https://blog.finmoovi.com/es/glossario/es-negociacion",
-      "title": "negociación - Glosario Financiero",
-      "description": "Qué es negociación y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi.",
+      "slug": "es-exportacion",
+      "url": "https://blog.finmoovi.com/es/glossario/es-exportacion",
+      "title": "exportación - Glosario Financiero",
+      "description": "Qué es exportación y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi.",
       "category": "basico",
-      "publishedAt": "2026-09-12"
-    },
-    {
-      "label": "Glossário",
-      "route": "glossario",
-      "locale": "en",
-      "slug": "en-negotiation",
-      "url": "https://blog.finmoovi.com/en/glossario/en-negotiation",
-      "title": "Negotiation - Financial Glossary",
-      "description": "What Negotiation is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi.",
-      "category": "basico",
-      "publishedAt": "2026-09-12"
+      "publishedAt": "2026-10-22"
     },
     {
       "label": "Posts",
       "route": "posts",
       "locale": "es",
-      "slug": "es-como-crear-un-flujo-de-caja-sencillo-en-excel-y-lograr",
-      "url": "https://blog.finmoovi.com/es/posts/es-como-crear-un-flujo-de-caja-sencillo-en-excel-y-lograr",
-      "title": "Cómo crear un flujo de caja sencillo en Excel y lograr tranquilidad financiera en 2026",
-      "description": "Aprende a crear un flujo de caja en Excel paso a paso, con ejemplos cotidianos y la app FinMoovi para automatizar todo en minutos.",
-      "category": "dicas",
-      "publishedAt": "2026-09-12"
+      "slug": "es-aplicacion-financiera-offline-por-que-es-esencial-en-2026",
+      "url": "https://blog.finmoovi.com/es/posts/es-aplicacion-financiera-offline-por-que-es-esencial-en-2026",
+      "title": "Aplicación financiera offline: Por qué es esencial en 2026",
+      "description": "Descubre por qué una app de finanzas que funciona sin internet es clave en 2026 y cómo simplifica tu día a día.",
+      "category": "ferramentas",
+      "publishedAt": "2026-10-22"
     },
     {
       "label": "Posts",
       "route": "posts",
       "locale": "pt",
-      "slug": "como-montar-um-fluxo-de-caixa-simples-no-excel-e-ganhar",
-      "url": "https://blog.finmoovi.com/posts/como-montar-um-fluxo-de-caixa-simples-no-excel-e-ganhar",
-      "title": "Como montar um fluxo de caixa simples no Excel e ganhar tranquilidade financeira em 2026",
-      "description": "Aprenda a criar um fluxo de caixa no Excel passo a passo, usando exemplos do dia a dia e o app FinMoovi para automatizar tudo em poucos minutos.",
+      "slug": "app-financeiro-offline-por-que-importa-em-2026",
+      "url": "https://blog.finmoovi.com/posts/app-financeiro-offline-por-que-importa-em-2026",
+      "title": "App Financeiro Offline: Por Que Importa em 2026",
+      "description": "Descubra por que ter um app de finanças que funciona sem internet é essencial em 2026 e como ele pode simplificar seu dia a dia.",
+      "category": "ferramentas",
+      "publishedAt": "2026-10-22"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "pt",
+      "slug": "como-usar-debentures-para-dar-mais-tranquilidade-ao-seu",
+      "url": "https://blog.finmoovi.com/posts/como-usar-debentures-para-dar-mais-tranquilidade-ao-seu",
+      "title": "Como usar debêntures para dar mais tranquilidade ao seu bolso em 2026",
+      "description": "Descubra, em linguagem simples, como as debêntures podem fortalecer seu planejamento financeiro e veja o FinMoovi em ação.",
       "category": "dicas",
-      "publishedAt": "2026-09-12"
+      "publishedAt": "2026-10-22"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "es",
+      "slug": "es-como-usar-debentures-para-dar-mas-tranquilidad-a-tu-bolsillo",
+      "url": "https://blog.finmoovi.com/es/posts/es-como-usar-debentures-para-dar-mas-tranquilidad-a-tu-bolsillo",
+      "title": "Cómo usar debentures para dar más tranquilidad a tu bolsillo en 2026",
+      "description": "Descubre, en lenguaje sencillo, cómo las debentures pueden reforzar tu planificación financiera y prueba FinMoovi.",
+      "category": "dicas",
+      "publishedAt": "2026-10-22"
     },
     {
       "label": "Posts",
       "route": "posts",
       "locale": "en",
-      "slug": "en-how-to-build-a-simple-cash-flow-spreadsheet-in-excel-and",
-      "url": "https://blog.finmoovi.com/en/posts/en-how-to-build-a-simple-cash-flow-spreadsheet-in-excel-and",
-      "title": "How to Build a Simple Cash Flow Spreadsheet in Excel and Gain Financial Peace in 2026",
-      "description": "Step‑by‑step guide to creating a cash‑flow spreadsheet in Excel, with everyday examples and the FinMoovi app for instant automation.",
+      "slug": "en-how-to-use-corporate-bonds-for-a-more-peaceful-wallet-in",
+      "url": "https://blog.finmoovi.com/en/posts/en-how-to-use-corporate-bonds-for-a-more-peaceful-wallet-in",
+      "title": "How to Use Corporate Bonds for a More Peaceful Wallet in 2026",
+      "description": "Learn in plain language how corporate bonds can strengthen your financial plan and see FinMoovi in action.",
       "category": "dicas",
-      "publishedAt": "2026-09-12"
+      "publishedAt": "2026-10-22"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "en",
+      "slug": "en-why-an-offline-finance-app-matters-in-2026",
+      "url": "https://blog.finmoovi.com/en/posts/en-why-an-offline-finance-app-matters-in-2026",
+      "title": "Why an Offline Finance App Matters in 2026",
+      "description": "Learn why an offline‑first finance app is essential in 2026 and how it can simplify your daily money management.",
+      "category": "ferramentas",
+      "publishedAt": "2026-10-22"
     }
   ],
   "videos": [
     {
-      "slug": "loop-plano-de-saude-subiu-ninguem-fala",
-      "videoId": "GVtEczdKfWs",
-      "uploadedAt": "2026-09-12T12:21:43.354Z",
-      "title": "PLANO de saúde: o aumento que ninguém conta",
+      "slug": "loop-decimo-terceiro-ninguem-fala",
+      "videoId": "QEmVTzMNatU",
+      "uploadedAt": "2026-10-22T14:05:39.006Z",
+      "title": "13º: R$ 2.400 evaporaram em compras",
       "formato": "loop16",
-      "timeLisbon": "13:21"
+      "publishAt": "2026-10-23T11:40:00.000Z",
+      "timeLisbon": "15:05"
     },
     {
-      "slug": "fundo-de-investimento",
-      "videoId": "Im3azrcCrrc",
-      "uploadedAt": "2026-09-12T14:42:41.140Z",
-      "title": "INVESTIMENTO: como funciona fundo em 1 minuto",
+      "slug": "kw-corte-r-200-do-seu-cartao-em-30-dias",
+      "videoId": "RhyT684V_LY",
+      "uploadedAt": "2026-10-22T16:22:29.468Z",
+      "title": "CARTÃO: corte r$200 em 30 dias",
       "formato": "short50",
-      "publishAt": "2026-09-12T15:00:00.000Z",
-      "timeLisbon": "15:42"
+      "publishAt": "2026-10-23T15:00:00.000Z",
+      "timeLisbon": "17:22"
     },
     {
-      "slug": "loop-delivery-de-sexta-ninguem-fala",
-      "videoId": "o7o0bUYwUtM",
-      "uploadedAt": "2026-09-12T20:55:14.313Z",
-      "title": "DELIVERY: Como cortar sexta sem culpa",
+      "slug": "loop-emprestimo-por-telefone-depois-de-anos",
+      "videoId": "c5EUmRJJpJA",
+      "uploadedAt": "2026-10-22T21:54:42.407Z",
+      "title": "EMPRÉSTIMO: R$ 5.000 que me afundou",
       "formato": "loop16",
-      "publishAt": "2026-09-12T21:40:00.000Z",
-      "timeLisbon": "21:55"
+      "publishAt": "2026-10-23T21:40:00.000Z",
+      "timeLisbon": "22:54"
     }
   ],
   "pins": [],
   "runsSummary": [
     {
-      "name": "YouTube — Responder aos comentários (FINMOOVI)",
-      "count": 7,
-      "ok": 7,
-      "fail": 0,
-      "firstTimeLisbon": "01:25"
-    },
-    {
       "name": "Capas — varrer (e refazer) as que têm letras ou estão borradas",
       "count": 1,
       "ok": 1,
       "fail": 0,
-      "firstTimeLisbon": "01:31"
+      "firstTimeLisbon": "01:50"
+    },
+    {
+      "name": "YouTube — Responder aos comentários (FINMOOVI)",
+      "count": 5,
+      "ok": 5,
+      "fail": 0,
+      "firstTimeLisbon": "02:39"
     },
     {
       "name": "IndexNow (indexação instantânea Bing/Copilot)",
       "count": 4,
       "ok": 4,
       "fail": 0,
-      "firstTimeLisbon": "03:21"
+      "firstTimeLisbon": "03:39"
     },
     {
       "name": "Redes — Caixa de entrada dos comentários (3× por dia)",
       "count": 3,
       "ok": 3,
       "fail": 0,
-      "firstTimeLisbon": "06:31"
-    },
-    {
-      "name": "YouTube — Vídeo longo (semanal)",
-      "count": 3,
-      "ok": 3,
-      "fail": 0,
-      "firstTimeLisbon": "07:56"
+      "firstTimeLisbon": "06:54"
     },
     {
       "name": "YouTube — Detetive de tendências (diário)",
       "count": 1,
       "ok": 1,
       "fail": 0,
-      "firstTimeLisbon": "09:13"
+      "firstTimeLisbon": "10:01"
     },
     {
       "name": "YouTube — Produzir Shorts de 16s em loop (2 por dia)",
       "count": 1,
       "ok": 1,
       "fail": 0,
-      "firstTimeLisbon": "09:43"
+      "firstTimeLisbon": "10:31"
     },
     {
       "name": "Sincronizar i18n (auto-corretor PT/EN/ES)",
       "count": 1,
       "ok": 1,
       "fail": 0,
-      "firstTimeLisbon": "09:57"
+      "firstTimeLisbon": "10:45"
     },
     {
       "name": "Fact Firewall (anti-alucinacao)",
       "count": 1,
       "ok": 1,
       "fail": 0,
-      "firstTimeLisbon": "10:00"
+      "firstTimeLisbon": "10:49"
     },
     {
       "name": "Consumo dos serviços pagos",
       "count": 1,
       "ok": 1,
       "fail": 0,
-      "firstTimeLisbon": "10:12"
+      "firstTimeLisbon": "11:03"
     },
     {
       "name": "Digest Diario de Conteudo (7h Lisboa)",
       "count": 2,
       "ok": 2,
       "fail": 0,
-      "firstTimeLisbon": "10:34"
+      "firstTimeLisbon": "11:38"
     },
     {
       "name": "Gerar ALT descritivo das imagens (IA de visão)",
-      "count": 2,
-      "ok": 2,
-      "fail": 0,
-      "firstTimeLisbon": "11:15"
-    },
-    {
-      "name": "Brand Mention Monitor",
       "count": 1,
       "ok": 1,
       "fail": 0,
-      "firstTimeLisbon": "11:35"
+      "firstTimeLisbon": "12:18"
     },
     {
       "name": "YouTube — Renderizar Short (completo)",
       "count": 2,
       "ok": 2,
       "fail": 0,
-      "firstTimeLisbon": "11:58"
+      "firstTimeLisbon": "13:07"
     },
     {
       "name": "Glossário Financeiro",
       "count": 1,
       "ok": 1,
       "fail": 0,
-      "firstTimeLisbon": "12:25"
+      "firstTimeLisbon": "13:44"
     },
     {
       "name": "Community Monitor",
       "count": 1,
       "ok": 1,
       "fail": 0,
-      "firstTimeLisbon": "12:26"
+      "firstTimeLisbon": "13:45"
+    },
+    {
+      "name": "GSC - Refresh de Conteudo (decay)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "13:49"
     },
     {
       "name": "Sazonal Multimercado (timezone)",
       "count": 1,
       "ok": 1,
       "fail": 0,
-      "firstTimeLisbon": "12:44"
+      "firstTimeLisbon": "14:14"
     },
     {
       "name": "GSC - Monitor de Indexacao",
       "count": 1,
       "ok": 1,
       "fail": 0,
-      "firstTimeLisbon": "12:45"
+      "firstTimeLisbon": "14:15"
+    },
+    {
+      "name": "i18n Gate (PR Check)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "14:18"
+    },
+    {
+      "name": "Vigia do ar (o site tem tudo o que o repo tem?)",
+      "count": 2,
+      "ok": 2,
+      "fail": 0,
+      "firstTimeLisbon": "14:32"
     },
     {
       "name": "YouTube — Guarda do canal (diário)",
       "count": 1,
       "ok": 1,
       "fail": 0,
-      "firstTimeLisbon": "13:07"
+      "firstTimeLisbon": "14:43"
     },
     {
       "name": "Multipost — Vigia das redes (diário)",
       "count": 1,
-      "ok": 0,
-      "fail": 1,
-      "firstTimeLisbon": "13:12"
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "14:51"
+    },
+    {
+      "name": "Fix i18n Content (Daily Batch)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "14:59"
     },
     {
       "name": "YouTube — Publicar Shorts de 16s (9h e 19h BR)",
       "count": 2,
       "ok": 2,
       "fail": 0,
-      "firstTimeLisbon": "13:21"
+      "firstTimeLisbon": "15:05"
     },
     {
       "name": "Gerar Dicas Financeiras",
       "count": 1,
       "ok": 1,
       "fail": 0,
-      "firstTimeLisbon": "13:29"
+      "firstTimeLisbon": "15:11"
+    },
+    {
+      "name": "Post BOFU (Ferramentas)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "15:45"
     },
     {
       "name": "Glossário Diário Automático",
       "count": 1,
       "ok": 1,
       "fail": 0,
-      "firstTimeLisbon": "14:46"
+      "firstTimeLisbon": "16:42"
     },
     {
       "name": "Multipost — Entregar os Shorts de 16s às 7 redes",
       "count": 2,
       "ok": 2,
       "fail": 0,
-      "firstTimeLisbon": "14:48"
+      "firstTimeLisbon": "16:44"
     },
     {
       "name": "YouTube — Publicar Short (horário nobre)",
       "count": 2,
       "ok": 2,
       "fail": 0,
-      "firstTimeLisbon": "15:42"
+      "firstTimeLisbon": "17:21"
     },
     {
       "name": "Welcome Email Sequence",
       "count": 1,
       "ok": 1,
       "fail": 0,
-      "firstTimeLisbon": "16:22"
+      "firstTimeLisbon": "17:59"
     },
     {
       "name": "Regenerar capas antigas do glossário (estilo 3D)",
       "count": 1,
       "ok": 1,
       "fail": 0,
-      "firstTimeLisbon": "16:45"
+      "firstTimeLisbon": "18:30"
+    },
+    {
+      "name": "Syndicate Content & Send Pingbacks",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "19:20"
     },
     {
       "name": "Multipost — Entregar o Short às 8 redes (a partir das 19h BR)",
       "count": 1,
       "ok": 1,
       "fail": 0,
-      "firstTimeLisbon": "18:44"
-    },
-    {
-      "name": "Vigia do ar (o site tem tudo o que o repo tem?)",
-      "count": 1,
-      "ok": 0,
-      "fail": 1,
-      "firstTimeLisbon": "22:45"
+      "firstTimeLisbon": "20:13"
     }
   ],
   "emails": [
     {
       "name": "Digest Diario de Conteudo (7h Lisboa)",
-      "timeLisbon": "10:34"
+      "timeLisbon": "11:38"
     },
     {
       "name": "Digest Diario de Conteudo (7h Lisboa)",
-      "timeLisbon": "12:13"
+      "timeLisbon": "13:21"
     },
     {
       "name": "Welcome Email Sequence",
-      "timeLisbon": "16:22"
+      "timeLisbon": "17:59"
     }
   ],
   "pendencias": [
-    "Acompanhar o VIGIA DO AR na 1ª semana (no ar desde 25/08/2026, vigia-do-ar.yml, 20:00 UTC = 17h BR). Ele lê o sitemap do site no ar e compara com o repo — é o único robô que mede o que está PUBLICADO. Nasceu porque o blog ficou 3 dias parado sem que nenhum dos ~80 workflows desse alarme. O que conferir: que ele fica verde nos dias normais. Se der vermelho a dizer «fora do ar há Xh» sem o site estar realmente parado, o culpado provável é a janela de graça de 6h ser curta de mais para o horário do deploy — sobe-se com VIGIA_GRACA_HORAS (input do workflow) em vez de desligar o vigia. Nunca o meter dentro do npm run build: um site fora do ar passaria a impedir a publicação do próprio conserto. Detalhe em docs/HISTORICO-IMPLEMENTACAO.md (2026-08-25) e docs/I18N-SYSTEM.md §5.",
-    "Acompanhar a limpeza das capas com letras (no ar desde 19/08/2026). O robô capas-com-letras.yml corre todas as noites às 22:30 UTC (19:30 BR) e refaz 10 capas por noite; a progressão vem na secção 🖼️ do próprio e-mail das 7h. O que conferir: que o número MEXE de um dia para o outro — se ficar parado, o e-mail avisa com a data do último avanço (normalmente é cota de IA esgotada). Medido em 19/08: 16 com texto real nas primeiras 92 de 751 imagens, estimativa de ~130 no total, e o denominador pode SUBIR à medida que se mede. Prazo estimado: ~13 dias para corrigir, ~19 para medir o acervo. Detalhe em docs/HISTORICO-IMPLEMENTACAO.md (2026-08-19).",
-    "Auditar as capas que o robô refizer. A IA de visão já produziu falsos alarmes (36 em 60 na primeira varredura, antes da regra da prova). O ficheiro data/capas-auditadas.json guarda, para cada capa refeita, a citação do texto que motivou a substituição — vale olhar de vez em quando se as substituições fazem sentido. Se aparecer capa boa refeita sem razão, o critério está frouxo e a régua tem de apertar.",
-    "Confirmar se o RAILWAY está ligado ao repo backup-app-22052025. Se estiver, empurrar uma alteração que só toca em landing/ faz o app ir a produção de graça (rebuild + reinício de app.finmoovi.com). Empurrado 2x em 12/08/2026 sem sinal de problema, mas nunca confirmado no painel do Railway.",
+    "Confirmar no painel do Railway qual repo alimenta app.finmoovi.com. Medido em 16/09/2026: o site responde 200, com os cabeçalhos x-railway-request-id e x-railway-edge: bcn1 — está mesmo no Railway —, e /api/status (o mesmo caminho de saúde que o railway.json deste repo declara) devolve {\"status\":\"ok\",\"version\":\"2.0.0\"}. Falta só o que nenhum teste de fora consegue ver: a que repo e ramo o projeto está ligado. Isso lê-se no painel, em 30 segundos.",
     "Decidir qual conta é a PADRÃO desta máquina. O gh e o wrangler estão ambos em GOAPEXI; todo push para o FinMoovi exige gh auth switch --user edflaviojs e devolver a seguir. Se o FinMoovi é o trabalho principal daqui, vale inverter — mas parte o lado GOAPEXI. O wrangler continua por consertar: precisa de wrangler login com Finmoovi@gmail.com, que abre o navegador e tem de ser o Ed a correr.",
     "Acompanhar a gaveta de idioma na 1ª semana (no ar desde 12/08/2026). Filtrar a tabela cta_clicks pelos variant que começam por lang-: quantos VIRAM contra quantos ACEITARAM, por idioma. Se quase ninguém aceitar, o problema é o texto ou o momento — não a ideia. Detalhe em docs/I18N-SYSTEM.md §12.",
     "18/08/2026 — ESTUDO APIFY das transcrições (vídeo longo). Só a partir dessa data: o arquivo .github/data/youtube-capitulos.json precisa de ~2 semanas a acumular para haver 40-50 longos e se escolherem os MELHORES para transcrever. Passos: criar chave em console.apify.com/settings/integrations (permissões limitadas + validade 1 mês) → guardar como APIFY_TOKEN no cofre do GitHub (nunca no chat) → criar/configurar o actor de transcrições → 30-50 transcrições (~$0,25 do crédito grátis de $5/mês) → ler os primeiros 30s de cada. ⚠️ Estudo à mão, NUNCA dentro do robô diário. Detalhe completo: IMPLEMENTACAO20 §33.6",
-    "~18/08/2026 — RE-MEDIR A RETENÇÃO (youtube-retencao.yml, disparo manual). A de 03/08 deu 97 visualizações em 10 vídeos: audiência pequena de mais para haver curva. Agora que os vídeos vão a público na hora, 10-14 dias dão sinal a sério. IMPLEMENTACAO20 §33.2",
     "Google Cloud billing: criar perfil de pagamentos PORTUGAL (NIF + cartão PT) → destrava vozes TTS premium + trial $300",
     "Escolher voz definitiva do canal (Antonio edge ↔ Piper faber alternando; premium depende do billing)",
     "Pinterest: avaliar o 1º pin com descrição rica SEO (sexta 24/07 ~16h)",
-    "Pinterest: renovar refresh token até 16/09 (lembrete automático via issue quando faltar ≤7d)",
     "Upgrade Pinterest p/ cadência diária? Avaliar analytics ~07/08"
   ],
   "agenda": [
@@ -395,12 +434,6 @@
         "02:00",
         "16:00",
         "20:00"
-      ]
-    },
-    {
-      "name": "Broken Link Building",
-      "times": [
-        "05:00"
       ]
     },
     {
@@ -462,6 +495,12 @@
       ]
     },
     {
+      "name": "GSC - Canibalizacao por query",
+      "times": [
+        "08:00"
+      ]
+    },
+    {
       "name": "GSC - Monitor de Indexacao",
       "times": [
         "09:00"
@@ -486,6 +525,12 @@
       ]
     },
     {
+      "name": "Fix i18n Content (Daily Batch)",
+      "times": [
+        "09:30"
+      ]
+    },
+    {
       "name": "YouTube — Publicar Shorts de 16s (9h e 19h BR)",
       "times": [
         "09:40",
@@ -499,9 +544,15 @@
       ]
     },
     {
-      "name": "Índice FinMoovi do Custo de Vida",
+      "name": "Post Sazonal Semanal",
       "times": [
-        "10:00"
+        "11:00"
+      ]
+    },
+    {
+      "name": "Webmentions & Outreach",
+      "times": [
+        "11:00"
       ]
     },
     {
@@ -515,6 +566,12 @@
       "times": [
         "12:00",
         "15:40"
+      ]
+    },
+    {
+      "name": "Post Comparação Semanal",
+      "times": [
+        "13:00"
       ]
     },
     {
@@ -537,6 +594,18 @@
       ]
     },
     {
+      "name": "Sindicação Extra (Hashnode + Tumblr + Blogger)",
+      "times": [
+        "14:00"
+      ]
+    },
+    {
+      "name": "Social Distribution (Pinterest + Bookmarks)",
+      "times": [
+        "16:00"
+      ]
+    },
+    {
       "name": "Multipost — Entregar o Short às 8 redes (a partir das 19h BR)",
       "times": [
         "16:20"
@@ -546,12 +615,6 @@
       "name": "Vigia do ar (o site tem tudo o que o repo tem?)",
       "times": [
         "21:00"
-      ]
-    },
-    {
-      "name": "Multipost — Entregar o vídeo longo às 4 redes (domingo)",
-      "times": [
-        "22:00"
       ]
     },
     {
