@@ -1,0 +1,217 @@
+{
+  "slug": "kw-como-r-200-desaparecem-em-3-compras-do-dia-a-dia",
+  "term": "Como R$200 desaparecem em 3 compras do dia a dia",
+  "category": "mindset",
+  "keyword": "compra",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Sabe pra onde foram *duzentos reais* do seu bolso esse mês?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "fumaca",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Sabe pra onde foram duzentos reais do seu bolso esse mês? Foram embora em três comprinhas, e você nem sentiu.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "duzentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 200"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "embora",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          }
+        },
+        {
+          "anchor": "três",
+          "visual": {
+            "type": "statement",
+            "text": "3 comprinhas"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Foi o café da tarde, o delivery de sexta e aquela compra que você fez só porque viu na tela.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "café",
+          "visual": {
+            "type": "icon",
+            "icon": "coins"
+          }
+        },
+        {
+          "anchor": "delivery",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "compra",
+          "visual": {
+            "type": "statement",
+            "text": "Compra por impulso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Uma por uma, nenhuma pesa. Mas eu somei o mês. Sessenta no café, noventa no delivery, cinquenta na compra. Deu duzentos reais.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "pesa",
+          "visual": {
+            "type": "statement",
+            "text": "Sozinhas, ninguém sente"
+          }
+        },
+        {
+          "anchor": "Sessenta",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 60,
+            "prefix": "R$"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "noventa",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 90,
+            "prefix": "R$"
+          }
+        },
+        {
+          "anchor": "duzentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 200"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei esses duzentos reais no FinMoovi, e ele me mostrou o delivery em primeiro, com noventa reais em vermelho.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "joguei",
+          "visual": {
+            "type": "app",
+            "app": "smartcapture",
+            "note": "Lançando os R$ 200 no FinMoovi"
+          }
+        },
+        {
+          "anchor": "delivery",
+          "visual": {
+            "type": "app",
+            "app": "compras",
+            "note": "Delivery em primeiro, R$ 90 em vermelho"
+          },
+          "sfx": "alert"
+        },
+        {
+          "anchor": "vermelho",
+          "visual": {
+            "type": "number",
+            "text": "R$ 90"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver os seus? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "O dinheiro foi pra café, delivery e compra por impulso, sem você ver. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          }
+        },
+        {
+          "anchor": "impulso",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          }
+        },
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "statement",
+            "text": "Controle é seu dinheiro"
+          },
+          "sfx": "thud"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Descubra pra onde vai seu dinheiro",
+    "target": "app"
+  },
+  "totalDurationSec": 43.1
+}
