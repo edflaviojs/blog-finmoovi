@@ -1604,6 +1604,21 @@
     }
   },
   {
+    "file": "en-export.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-family-financial-planning.md",
     "dir": "glossario",
     "severity": 0,
@@ -2955,6 +2970,21 @@
   },
   {
     "file": "en-how-to-use-cashback-wisely-and-multiply-your-income.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-how-to-use-corporate-bonds-for-a-more-peaceful-wallet-in.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -5099,6 +5129,21 @@
     }
   },
   {
+    "file": "en-why-an-offline-finance-app-matters-in-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-why-does-my-money-disappear-before-payday.md",
     "dir": "posts",
     "severity": 0,
@@ -5686,6 +5731,21 @@
   {
     "file": "es-apalancamiento.md",
     "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-aplicacion-financiera-offline-por-que-es-esencial-en-2026.md",
+    "dir": "posts",
     "severity": 0,
     "issues": {
       "currency": 0,
@@ -6809,6 +6869,21 @@
     }
   },
   {
+    "file": "es-como-usar-debentures-para-dar-mas-tranquilidad-a-tu-bolsillo.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-como-usar-el-cashback-de-forma-inteligente-y-multiplicar-tus.md",
     "dir": "posts",
     "severity": 0,
@@ -7681,6 +7756,21 @@
   {
     "file": "es-evite-compras-por-impulso.md",
     "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-exportacion.md",
+    "dir": "glossario",
     "severity": 0,
     "issues": {
       "currency": 0,
