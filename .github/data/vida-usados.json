@@ -868,5 +868,11 @@
     "gancho": "depois-de-anos",
     "turno": "manha",
     "em": "2026-10-23T09:29:24.072Z"
+  },
+  {
+    "situacao": "material-escolar",
+    "gancho": "comeca-assim",
+    "turno": "noite",
+    "em": "2026-10-23T09:39:45.916Z"
   }
 ]

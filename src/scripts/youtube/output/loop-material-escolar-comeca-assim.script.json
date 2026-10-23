@@ -1,0 +1,118 @@
+{
+  "slug": "loop-material-escolar-comeca-assim",
+  "formato": "loop16",
+  "term": "O material escolar",
+  "category": "vida",
+  "keyword": "MATERIAL",
+  "valor": "R$ 550",
+  "situacao": "material-escolar",
+  "gancho": "comeca-assim",
+  "ganchoFamilia": "começa assim",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "mochila-pedras",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Quer aprender a não se assustar na papelaria? Começa assim. Comigo foi ontem.",
+      "durationSec": 4.49,
+      "shots": [
+        {
+          "anchor": "aprender",
+          "visual": {
+            "type": "statement",
+            "text": "Lista da escola na mão"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "assustar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu somei na calculadora. Quando vi, quinhentos e cinquenta reais tinham ido embora.",
+      "durationSec": 4.49,
+      "shots": [
+        {
+          "anchor": "somei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "calculadora",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 550 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Parei, respirei e comprei só o que pediram.",
+      "durationSec": 2.76,
+      "shots": [
+        {
+          "anchor": "Parei",
+          "visual": {
+            "type": "statement",
+            "text": "Parei e respirei"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "respirei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Na papelaria, não se assustar começa assim. Calculadora na mão.",
+      "durationSec": 3.45,
+      "shots": [
+        {
+          "anchor": "papelaria",
+          "visual": {
+            "type": "statement",
+            "text": "Começa assim: sem susto"
+          }
+        },
+        {
+          "anchor": "assustar",
+          "visual": {
+            "type": "statement",
+            "text": "Lista da escola na mão"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.19
+}
