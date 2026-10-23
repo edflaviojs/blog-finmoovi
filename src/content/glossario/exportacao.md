@@ -4,6 +4,7 @@ definition: "O que é exportação e como isso aparece no seu dia a dia — expl
 title: "exportação - Glossário Financeiro"
 description: "O que é exportação e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/exportacao.webp"
+imageAlt: "Cofre azul, pilhas de moedas douradas, gráfico de barras e pote com planta."
 category: "basico"
 tags: ["exportação", "glossário", "finanças"]
 author: "FinMoovi"

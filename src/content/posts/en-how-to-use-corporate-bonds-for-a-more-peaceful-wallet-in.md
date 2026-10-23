@@ -3,6 +3,7 @@ title: "How to Use Corporate Bonds for a More Peaceful Wallet in 2026"
 description: "Learn in plain language how corporate bonds can strengthen your financial plan and see FinMoovi in action."
 tickerHeadline: "The investment that can change your day"
 image: "/images/posts/como-usar-debentures-para-dar-mais-tranquilidade-ao-seu.webp"
+imageAlt: "Two laptops with colorful abstract wallpapers and a dark coffee mug on a desk."
 category: "dicas"
 locale: "en"
 tags: ["corporate bonds","personal finance","economy","money"]

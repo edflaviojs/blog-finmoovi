@@ -3,6 +3,7 @@ title: "Como usar debêntures para dar mais tranquilidade ao seu bolso em 2026"
 description: "Descubra, em linguagem simples, como as debêntures podem fortalecer seu planejamento financeiro e veja o FinMoovi em ação."
 tickerHeadline: "O investimento que pode mudar seu dia a "
 image: "/images/posts/como-usar-debentures-para-dar-mais-tranquilidade-ao-seu.webp"
+imageAlt: "Notebooks com telas coloridas e uma caneca cinza sobre uma mesa."
 category: "dicas"
 locale: "pt"
 tags: ["debenture","finanças pessoais","economia","dinheiro"]

@@ -3,6 +3,7 @@ title: "Aplicación financiera offline: Por qué es esencial en 2026"
 description: "Descubre por qué una app de finanzas que funciona sin internet es clave en 2026 y cómo simplifica tu día a día."
 tickerHeadline: "Cuando se cae la red, tu bolsillo sigue"
 image: "/images/posts/app-financeiro-offline-por-que-importa-em-2026.webp"
+imageAlt: "Portátil con fondo colorido, taza gris y monitor en escritorio de madera."
 category: "ferramentas"
 locale: "es"
 tags: ["app financiera offline","control de gastos sin internet","FinMoovi","gestión de finanzas offline","tecnología PWA","planificación financiera sin conexión","seguridad de datos financieros","app offline segura","privacidad datos financieros","app sin internet"]

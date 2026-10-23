@@ -4,6 +4,7 @@ definition: "What Export is and how it shows up in your everyday money — expla
 title: "Export - Financial Glossary"
 description: "What Export is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/exportacao.webp"
+imageAlt: "Gold coins, blue vault, and rising chart on dark background."
 category: "basico"
 tags: ["Export", "glossary", "finance"]
 author: "FinMoovi"
