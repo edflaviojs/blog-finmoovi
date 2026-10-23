@@ -862,5 +862,11 @@
     "gancho": "ninguem-fala",
     "turno": "noite",
     "em": "2026-10-22T09:42:31.356Z"
+  },
+  {
+    "situacao": "pagar-a-vista",
+    "gancho": "depois-de-anos",
+    "turno": "manha",
+    "em": "2026-10-23T09:29:24.072Z"
   }
 ]
