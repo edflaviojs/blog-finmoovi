@@ -1,0 +1,118 @@
+{
+  "slug": "loop-gas-acabou-nunca-faca",
+  "formato": "loop16",
+  "term": "O gás que acabou",
+  "category": "vida",
+  "keyword": "GÁS",
+  "valor": "R$ 130",
+  "situacao": "gas-acabou",
+  "gancho": "nunca-faca",
+  "ganchoFamilia": "nunca faça",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "escorregao",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Nunca faça isso com o gás. Comigo acabou no almoço.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "Comigo",
+          "visual": {
+            "type": "statement",
+            "text": "O gás acabou no almoço"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "acabou",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escorregao"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu correndo atrás de botijão. Paguei cento e trinta reais na hora.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "correndo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escorregao"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "atrás",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 130 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Olha, o gás não avisa. Agora separo um dinheirinho.",
+      "durationSec": 3.26,
+      "shots": [
+        {
+          "anchor": "avisa",
+          "visual": {
+            "type": "statement",
+            "text": "Agora separo um pouquinho"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "separo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escorregao"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Então nunca faça isso com o gás. Deixar acabar no almoço.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "Deixar",
+          "visual": {
+            "type": "statement",
+            "text": "Nunca mais no almoço"
+          }
+        },
+        {
+          "anchor": "acabar",
+          "visual": {
+            "type": "statement",
+            "text": "O gás acabou no almoço"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}

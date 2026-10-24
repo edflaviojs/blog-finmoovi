@@ -880,5 +880,11 @@
     "gancho": "nunca-faca",
     "turno": "manha",
     "em": "2026-10-24T09:01:24.651Z"
+  },
+  {
+    "situacao": "gas-acabou",
+    "gancho": "nunca-faca",
+    "turno": "noite",
+    "em": "2026-10-24T09:11:37.984Z"
   }
 ]
