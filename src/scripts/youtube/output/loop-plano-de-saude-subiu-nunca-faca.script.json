@@ -1,0 +1,118 @@
+{
+  "slug": "loop-plano-de-saude-subiu-nunca-faca",
+  "formato": "loop16",
+  "term": "O plano de saúde que subiu",
+  "category": "vida",
+  "keyword": "PLANO",
+  "valor": "R$ 240",
+  "situacao": "plano-de-saude-subiu",
+  "gancho": "nunca-faca",
+  "ganchoFamilia": "nunca faça",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "bola-neve",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Nunca faça isso com a carta do plano. Comigo veio no aniversário.",
+      "durationSec": 4.24,
+      "shots": [
+        {
+          "anchor": "carta",
+          "visual": {
+            "type": "statement",
+            "text": "Nunca faça isso"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "plano",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-neve"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Abri o envelope. Meu plano subiu duzentos e quarenta reais",
+      "durationSec": 3.53,
+      "shots": [
+        {
+          "anchor": "envelope",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-neve"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "plano",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 240 só no plano"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "E olha, eu nem vi crescer, igual bola de neve.",
+      "durationSec": 3.53,
+      "shots": [
+        {
+          "anchor": "crescer",
+          "visual": {
+            "type": "statement",
+            "text": "Cresceu igual bola de neve"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "igual",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-neve"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Hoje abro a carta do plano na hora. Nunca faça isso.",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "carta",
+          "visual": {
+            "type": "statement",
+            "text": "Abra a carta na hora"
+          }
+        },
+        {
+          "anchor": "plano",
+          "visual": {
+            "type": "statement",
+            "text": "Nunca faça isso"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.19
+}
