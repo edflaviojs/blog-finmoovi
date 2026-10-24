@@ -25508,5 +25508,114 @@
         "publicaEmBR": "25/10 às 14h31"
       }
     }
+  },
+  "kw-5-truques-que-voce-erra-ao-tentar-economizar-r-200-por-mes": {
+    "midias": {
+      "video": {
+        "id": "326b1e48-1123-4e1d-8b9b-8ec688fd8246",
+        "name": "b1EodB91VY.mp4",
+        "originalName": null,
+        "path": "https://media.help4desk.com/b1EodB91VY.mp4",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capa": {
+        "id": "c274510b-2b36-4529-86fe-7a3f59a5b456",
+        "name": "YsArXMtnD2.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/YsArXMtnD2.jpeg",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capaLarga": {
+        "id": "7e6f2fae-269b-4438-b176-cedfdab1426a",
+        "name": "UNj5WKgXeR.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/UNj5WKgXeR.jpeg",
+        "thumbnail": null,
+        "alt": null
+      }
+    },
+    "publicaEm": "2026-10-24T22:00:00.000Z",
+    "publicaEmBR": "24/10 às 19h00",
+    "agendadoEm": "2026-10-24T18:11:58.728Z",
+    "atualizadoEm": "2026-10-24T18:12:03.089Z",
+    "redes": {
+      "instagram": {
+        "postId": "cmvmpu7ow004cnv9jk9fznrz6",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-24T22:00:00.000Z",
+        "publicaEmBR": "24/10 às 19h00",
+        "midia": "o vídeo",
+        "caracteres": 737,
+        "limite": 2200
+      },
+      "zernio-tiktok": {
+        "postId": "cmvmpu83f004dnv9j3xyjjuda",
+        "canal": "finmoovi",
+        "publicaEm": "2026-10-24T22:12:00.000Z",
+        "publicaEmBR": "24/10 às 19h12",
+        "midia": "o vídeo",
+        "caracteres": 281,
+        "limite": 2200
+      },
+      "facebook": {
+        "postId": "cmvmpu8k3004env9jyife61ky",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-24T22:26:00.000Z",
+        "publicaEmBR": "24/10 às 19h26",
+        "midia": "o vídeo",
+        "caracteres": 507,
+        "limite": 63206
+      },
+      "linkedin-page": {
+        "postId": "cmvmpu8xf004fnv9j7v0rz46m",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-24T22:43:00.000Z",
+        "publicaEmBR": "24/10 às 19h43",
+        "midia": "o vídeo",
+        "caracteres": 509,
+        "limite": 3000
+      },
+      "threads": {
+        "postId": "cmvmpu9b4004gnv9jv5t7fqy5",
+        "canal": "finmoovi",
+        "publicaEm": "2026-10-24T22:58:00.000Z",
+        "publicaEmBR": "24/10 às 19h58",
+        "midia": "o vídeo",
+        "caracteres": 147,
+        "limite": 500
+      },
+      "pinterest": {
+        "postId": "cmvmpua33004hnv9jyqvkxib0",
+        "canal": "finmoovi",
+        "publicaEm": "2026-10-24T23:31:00.000Z",
+        "publicaEmBR": "24/10 às 20h31",
+        "midia": "vídeo primeiro, capa depois — a ordem que o Pinterest exige",
+        "caracteres": 468,
+        "limite": 500
+      },
+      "bluesky": {
+        "postId": "cmvmpualb004inv9j1lhtlure",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-24T23:47:00.000Z",
+        "publicaEmBR": "24/10 às 20h47",
+        "midia": "vai a capa DEITADA (o Bluesky não publica vídeo, e a em pé ficaria cortada no feed)",
+        "caracteres": 104,
+        "limite": 300
+      },
+      "instagram-story": {
+        "postId": "cmvmpuayb004jnv9jvfpxy8ew",
+        "tipo": "vídeo",
+        "publicaEm": "2026-10-24T22:05:00.000Z",
+        "publicaEmBR": "24/10 às 19h05"
+      },
+      "facebook-story": {
+        "postId": "cmvmpub5w004knv9jn94ng2pw",
+        "tipo": "vídeo",
+        "publicaEm": "2026-10-24T22:31:00.000Z",
+        "publicaEmBR": "24/10 às 19h31"
+      }
+    }
   }
 }
