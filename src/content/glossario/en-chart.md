@@ -4,6 +4,7 @@ definition: "What chart is and how it shows up in your everyday money — explai
 title: "chart - Financial Glossary"
 description: "What chart is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/grafico.webp"
+imageAlt: "Gold coins, bar chart, and jar with green plant on dark background."
 category: "basico"
 tags: ["chart", "glossary", "finance"]
 author: "FinMoovi"

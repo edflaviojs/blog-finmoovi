@@ -4,6 +4,7 @@ definition: "O que é gráfico e como isso aparece no seu dia a dia — explicad
 title: "gráfico - Glossário Financeiro"
 description: "O que é gráfico e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/grafico.webp"
+imageAlt: "Moedas douradas, barras e vaso com planta sobre fundo roxo."
 category: "basico"
 tags: ["gráfico", "glossário", "finanças"]
 author: "FinMoovi"
