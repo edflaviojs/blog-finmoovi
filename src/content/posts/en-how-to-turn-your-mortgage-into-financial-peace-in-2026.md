@@ -3,6 +3,7 @@ title: "How to Turn Your Mortgage Into Financial Peace in 2026"
 description: "Learn simple steps to organize your home loan, avoid surprises, and use FinMoovi for total control of your expenses."
 tickerHeadline: "The trick that simplifies your mortgage"
 image: "/images/posts/como-transformar-o-financiamento-da-casa-em-tranquilidade.webp"
+imageAlt: "Brown leather notebook, two calculators, scattered coins, and green plant on white surface."
 category: "dicas"
 locale: "en"
 tags: ["mortgage","personal finance","budgeting","home loan","financial peace","FinMoovi"]

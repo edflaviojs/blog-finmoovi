@@ -3,6 +3,7 @@ title: "Cómo convertir la hipoteca de tu casa en tranquilidad financiera en 202
 description: "Descubre, en lenguaje sencillo, cómo organizar tu hipoteca, evitar sorpresas y usar FinMoovi para controlar tus gastos."
 tickerHeadline: "El truco que simplifica tu hipoteca"
 image: "/images/posts/como-transformar-o-financiamento-da-casa-em-tranquilidade.webp"
+imageAlt: "Cartera marrón, dos calculadoras, monedas esparcidas y plantas verdes sobre fondo blanco."
 category: "dicas"
 locale: "es"
 tags: ["hipoteca","finanzas personales","economía","dinero"]

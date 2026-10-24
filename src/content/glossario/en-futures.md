@@ -4,6 +4,7 @@ definition: "What futures is and how it shows up in your everyday money — expl
 title: "futures - Financial Glossary"
 description: "What futures is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/futuros.webp"
+imageAlt: "Gold coins stacked and in glass jars, one holding a green plant, on dark background."
 category: "basico"
 tags: ["futures", "glossary", "finance"]
 author: "FinMoovi"

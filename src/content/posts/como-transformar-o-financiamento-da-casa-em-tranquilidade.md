@@ -3,6 +3,7 @@ title: "Como transformar o financiamento da casa em tranquilidade financeira em 
 description: "Descubra, em linguagem simples, como organizar o financiamento imobiliário, evitar surpresas e usar o FinMoovi para ter controle total das suas despesas."
 tickerHeadline: "O truque que simplifica seu financiament"
 image: "/images/posts/como-transformar-o-financiamento-da-casa-em-tranquilidade.webp"
+imageAlt: "Caderno de couro marrom, calculadoras e moedas espalhadas sobre superfície branca."
 category: "dicas"
 locale: "pt"
 tags: ["mortgage","finanças pessoais","economia","dinheiro"]

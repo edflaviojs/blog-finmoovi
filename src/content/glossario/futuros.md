@@ -4,6 +4,7 @@ definition: "O que é futuros e como isso aparece no seu dia a dia — explicado
 title: "futuros - Glossário Financeiro"
 description: "O que é futuros e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/futuros.webp"
+imageAlt: "Pilhas de moedas douradas e frascos de vidro com plantas sobre fundo escuro."
 category: "basico"
 tags: ["futuros", "glossário", "finanças"]
 author: "FinMoovi"
