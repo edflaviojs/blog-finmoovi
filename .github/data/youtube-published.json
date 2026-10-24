@@ -1498,5 +1498,12 @@
     "title": "CONTA: R$ 2.100 perdidos ao misturar salário",
     "formato": "loop16",
     "publishAt": "2026-10-25T11:40:00.000Z"
+  },
+  "gasto-fixo": {
+    "videoId": "Y3J7psGxt-c",
+    "uploadedAt": "2026-10-24T15:07:32.605Z",
+    "title": "GASTO fixo: descubra quanto some do salário",
+    "formato": "short50",
+    "publishAt": "2026-10-25T15:00:00.000Z"
   }
 }
