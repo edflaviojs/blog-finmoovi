@@ -1,0 +1,213 @@
+{
+  "slug": "gasto-fixo",
+  "term": "gasto fixo",
+  "category": "basico",
+  "keyword": "gasto",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você sabe quanto do seu salário já tá gasto antes do mês começar?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "escorregao",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você sabe quanto do seu salário já tá gasto antes do mês começar? Mais da metade, e você nem percebe. É o gasto fixo, aquele que chega todo mês e não espera.",
+      "durationSec": 12.3,
+      "shots": [
+        {
+          "anchor": "quanto",
+          "visual": {
+            "type": "statement",
+            "text": "Quanto já está gasto?"
+          }
+        },
+        {
+          "anchor": "Mais",
+          "visual": {
+            "type": "number",
+            "text": "+ de 50%"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "fixo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escorregao"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Aluguel. Conta de luz. Internet. Aquela assinatura de filme que você nem abre. Todo mês elas voltam, e ninguém avisa.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "Aluguel",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          }
+        },
+        {
+          "anchor": "assinatura",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "voltam",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escorregao"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Eu somei as minhas. Aluguel de seiscentos, luz de cento e vinte, internet de oitenta, academia de cento e cinquenta, filme e série por cinquenta. Deu mil. Do meu salário de mil e quinhentos.",
+      "durationSec": 13.1,
+      "shots": [
+        {
+          "anchor": "Aluguel",
+          "visual": {
+            "type": "number",
+            "text": "R$ 600"
+          }
+        },
+        {
+          "anchor": "academia",
+          "visual": {
+            "type": "number",
+            "text": "R$ 150"
+          }
+        },
+        {
+          "anchor": "cinquenta",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 1000,
+            "prefix": "R$"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "quinhentos",
+          "visual": {
+            "type": "statement",
+            "text": "Do salário de R$ 1.500"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Joguei tudo no FinMoovi e ele separou o que se repete todo mês numa lista só. A academia que eu nunca ia ficou lá, em primeiro lugar.",
+      "durationSec": 10.4,
+      "shots": [
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "fluxo",
+            "note": "Lista dos gastos que se repetem todo mês"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "academia",
+          "visual": {
+            "type": "icon",
+            "icon": "target"
+          }
+        },
+        {
+          "anchor": "primeiro",
+          "visual": {
+            "type": "statement",
+            "text": "Academia: 1º lugar"
+          },
+          "sfx": "ding"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "statement",
+            "text": "Quer ver o seu?"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Aquele salário que acaba antes do mês já tinha dono. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 6.5,
+      "shots": [
+        {
+          "anchor": "acaba",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escorregao"
+          }
+        },
+        {
+          "anchor": "dono",
+          "visual": {
+            "type": "icon",
+            "icon": "shield"
+          }
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Controle é seu dinheiro"
+          },
+          "sfx": "thud"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Descubra quanto do seu salário já tem dono",
+    "target": "app"
+  },
+  "totalDurationSec": 53.8
+}
