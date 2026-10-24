@@ -1505,5 +1505,12 @@
     "title": "GASTO fixo: descubra quanto some do salário",
     "formato": "short50",
     "publishAt": "2026-10-25T15:00:00.000Z"
+  },
+  "loop-remedio-todo-mes-ninguem-fala": {
+    "videoId": "6C9VD4es4A4",
+    "uploadedAt": "2026-10-24T21:10:01.929Z",
+    "title": "REMÉDIO: R$ 260 que some todo mês",
+    "formato": "loop16",
+    "publishAt": "2026-10-25T21:40:00.000Z"
   }
 }
