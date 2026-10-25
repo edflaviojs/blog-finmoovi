@@ -1,0 +1,118 @@
+{
+  "slug": "loop-dinheiro-so-seu-voces-viram",
+  "formato": "loop16",
+  "term": "Um dinheiro só seu",
+  "category": "vida",
+  "keyword": "SEU",
+  "valor": "R$ 200",
+  "situacao": "dinheiro-so-seu",
+  "gancho": "voces-viram",
+  "ganchoFamilia": "vocês viram",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "cofre",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Gente, vocês viram que ter um dinheiro só seu é raro?",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "vocês",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro só seu?"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "viram",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "cofre"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Pra comprar bobagem eu pedia. Agora guardo duzentos reais só meus.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "comprar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "cofre"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "bobagem",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 200"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Parei de pedir licença pra comprar um pãozinho.",
+      "durationSec": 2.9,
+      "shots": [
+        {
+          "anchor": "Parei",
+          "visual": {
+            "type": "statement",
+            "text": "Parei de pedir licença"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "pedir",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "cofre"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Lá em casa, ter um dinheiro só seu é raro de ver?",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Cada um com o seu"
+          }
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro só seu?"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
