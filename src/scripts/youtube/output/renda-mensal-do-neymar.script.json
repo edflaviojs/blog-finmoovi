@@ -1,0 +1,228 @@
+{
+  "slug": "renda-mensal-do-neymar",
+  "term": "renda mensal do neymar",
+  "category": "basico",
+  "keyword": "neymar",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você já ficou olhando quanto o *Neymar ganha por mês*, com a sua conta no vermelho?"
+  },
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "balanca",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você já ficou olhando quanto o Neymar ganha por mês, com a sua conta no vermelho? Esse número não ajuda em nada. O que pesa de verdade é o seu.",
+      "durationSec": 11.5,
+      "shots": [
+        {
+          "anchor": "Neymar",
+          "visual": {
+            "type": "number",
+            "text": "R$ ???"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "vermelho",
+          "visual": {
+            "type": "icon",
+            "icon": "chart-down"
+          }
+        },
+        {
+          "anchor": "pesa",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balanca"
+          },
+          "sfx": "thud"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "O seu também mexe o tempo todo. O salário cai, o aluguel vai, o mercado vai, e no fim você nem sabe quanto entrou.",
+      "durationSec": 9.2,
+      "shots": [
+        {
+          "anchor": "mexe",
+          "visual": {
+            "type": "statement",
+            "text": "Sua renda não fica parada"
+          }
+        },
+        {
+          "anchor": "salário",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          }
+        },
+        {
+          "anchor": "mercado",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "quanto",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Renda mensal é tudo que entra na sua conta num mês. Salário, bico, aluguel. Eu somei o meu e achei que fosse dois mil. Tinha mais.",
+      "durationSec": 10,
+      "shots": [
+        {
+          "anchor": "Renda",
+          "visual": {
+            "type": "statement",
+            "text": "Renda mensal = tudo que entra"
+          }
+        },
+        {
+          "anchor": "Salário",
+          "visual": {
+            "type": "list",
+            "text": "Salário · Bico · Aluguel"
+          },
+          "sfx": "typewriter"
+        },
+        {
+          "anchor": "dois",
+          "visual": {
+            "type": "number",
+            "text": "R$ 2.000"
+          }
+        },
+        {
+          "anchor": "mais",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei tudo no FinMoovi e ele juntou cada entrada numa linha só. Deu quatro mil, porque eu tinha esquecido dos bicos.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "fluxo",
+            "note": "Todas as entradas somadas numa linha só"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "quatro",
+          "visual": {
+            "type": "counter",
+            "from": 2000,
+            "to": 4000,
+            "prefix": "R$"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "bicos",
+          "visual": {
+            "type": "statement",
+            "text": "Os bicos estavam fora"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver a sua renda do mês de verdade? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 5.8,
+      "shots": [
+        {
+          "anchor": "renda",
+          "visual": {
+            "type": "statement",
+            "text": "Sua renda real"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Quanto o Neymar ganha não paga a sua conta. Saber quanto entra no seu bolso paga. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "Neymar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balanca"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "entra",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          }
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Sem controle, não é seu"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Descubra sua renda real em 7 dias",
+    "target": "app"
+  },
+  "totalDurationSec": 53.8
+}
