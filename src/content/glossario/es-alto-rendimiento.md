@@ -4,6 +4,7 @@ definition: "Qué es alto rendimiento y cómo aparece en tu día a día — expl
 title: "alto rendimiento - Glosario Financiero"
 description: "Qué es alto rendimiento y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/high-yield.webp"
+imageAlt: "Monedas doradas apiladas y frascos con plantas verdes sobre fondo oscuro."
 category: "basico"
 tags: ["alto rendimiento", "glosario", "finanzas"]
 author: "FinMoovi"

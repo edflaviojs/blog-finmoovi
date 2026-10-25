@@ -4,6 +4,7 @@ definition: "What high yield is and how it shows up in your everyday money — e
 title: "high yield - Financial Glossary"
 description: "What high yield is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/high-yield.webp"
+imageAlt: "Stacks of gold coins and glass jars with green plants on a dark background."
 category: "basico"
 tags: ["high yield", "glossary", "finance"]
 author: "FinMoovi"
