@@ -1,0 +1,118 @@
+{
+  "slug": "loop-aniversario-do-filho-voces-viram",
+  "formato": "loop16",
+  "term": "Aniversário do filho",
+  "category": "vida",
+  "keyword": "ANIVERSÁRIO",
+  "valor": "R$ 800",
+  "situacao": "aniversario-do-filho",
+  "gancho": "voces-viram",
+  "ganchoFamilia": "vocês viram",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "bolha",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Gente, vocês viram que festa de criança estoura qualquer conta?",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "vocês",
+          "visual": {
+            "type": "statement",
+            "text": "Festa estoura a conta"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "viram",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bolha"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu disse sim pro meu filho. Oitocentos reais foram embora.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "disse",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bolha"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "filho",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 800 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Olha, a bolha estourou na hora que fui pagar a luz.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "bolha",
+          "visual": {
+            "type": "statement",
+            "text": "A bolha estourou"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "estourou",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bolha"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Então, antes da festa, vocês viram que a conta também estoura?",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "festa",
+          "visual": {
+            "type": "statement",
+            "text": "Vocês viram a conta?"
+          }
+        },
+        {
+          "anchor": "vocês",
+          "visual": {
+            "type": "statement",
+            "text": "Festa estoura a conta"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
