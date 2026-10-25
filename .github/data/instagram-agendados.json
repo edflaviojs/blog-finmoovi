@@ -25944,5 +25944,59 @@
         "publicaEmBR": "25/10 às 19h31"
       }
     }
+  },
+  "como-juntar-mil-reais": {
+    "midias": {
+      "video": {
+        "id": "325f427f-7d9b-46d2-b999-b2f8e8e2ce45",
+        "name": "2z6HAFq5IU.mp4",
+        "originalName": null,
+        "path": "https://media.help4desk.com/2z6HAFq5IU.mp4",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capa": null,
+      "capaLarga": {
+        "id": "de694824-6581-4cd5-b64e-d1a40e8e6e2f",
+        "name": "8HConZnjer.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/8HConZnjer.jpeg",
+        "thumbnail": null,
+        "alt": null
+      }
+    },
+    "publicaEm": "2026-10-26T23:00:00.000Z",
+    "publicaEmBR": "26/10 às 20h00",
+    "agendadoEm": "2026-10-25T23:07:29.657Z",
+    "atualizadoEm": "2026-10-25T23:07:30.760Z",
+    "redes": {
+      "facebook": {
+        "postId": "cmvofu3ll005cnv9jndmonxe8",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-26T23:26:00.000Z",
+        "publicaEmBR": "26/10 às 20h26",
+        "midia": "o vídeo",
+        "caracteres": 523,
+        "limite": 63206
+      },
+      "linkedin-page": {
+        "postId": "cmvofu42i005dnv9jyl2lby4d",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-26T23:43:00.000Z",
+        "publicaEmBR": "26/10 às 20h43",
+        "midia": "o vídeo",
+        "caracteres": 539,
+        "limite": 3000
+      },
+      "bluesky": {
+        "postId": "cmvofu4hy005env9j8b4s26j6",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-27T00:47:00.000Z",
+        "publicaEmBR": "26/10 às 21h47",
+        "midia": "vai a capa DEITADA (o Bluesky não publica vídeo, e a em pé ficaria cortada no feed)",
+        "caracteres": 130,
+        "limite": 300
+      }
+    }
   }
 }
