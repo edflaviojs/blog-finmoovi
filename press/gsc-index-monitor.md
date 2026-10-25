@@ -1,11 +1,11 @@
 # GSC — Monitor de Indexação
 
-Gerado em: 2026-10-24T12:34:35.435Z
+Gerado em: 2026-10-25T13:06:05.248Z
 Propriedade: https://blog.finmoovi.com/
 
 ## Resumo
 
-- **1001/1073** URLs indexadas
+- **1004/1076** URLs indexadas
 - **71** não indexadas
 - **1** com erro na inspeção
 - **38** página(s) de conteúdo fora do índice há ≥7 dias
@@ -16,10 +16,10 @@ Propriedade: https://blog.finmoovi.com/
 
 ## Por motivo (não indexadas)
 
-- Crawled - currently not indexed: 60
-- URL is unknown to Google: 5
+- Crawled - currently not indexed: 64
 - Duplicate, Google chose different canonical than user: 1
 - Discovered - currently not indexed: 5
+- URL is unknown to Google: 1
 
 ## Páginas de conteúdo há mais tempo fora do índice
 
@@ -27,7 +27,7 @@ Propriedade: https://blog.finmoovi.com/
 - `https://blog.finmoovi.com/es/glossario/` — Crawled - currently not indexed (desde 2026-09-19)
 - `https://blog.finmoovi.com/es/autor/ed-flavio/` — Crawled - currently not indexed (desde 2026-10-17)
 - `https://blog.finmoovi.com/posts/investimentos-para-o-segundo-semestre-estrategias-praticas/` — Duplicate, Google chose different canonical than user (desde 2026-08-07)
-- `https://blog.finmoovi.com/posts/negociar-descontos-em-contas-fixas/` — URL is unknown to Google (desde 2026-08-12)
+- `https://blog.finmoovi.com/posts/negociar-descontos-em-contas-fixas/` — Discovered - currently not indexed (desde 2026-08-12)
 - `https://blog.finmoovi.com/en/posts/en-5-tips-to-reorganize-your-finances-on-vacation/` — Crawled - currently not indexed (desde 2026-09-21)
 - `https://blog.finmoovi.com/en/posts/en-digital-envelope-technique-practical-guide-for-2026/` — Crawled - currently not indexed (desde 2026-10-03)
 - `https://blog.finmoovi.com/en/posts/en-finmoovi-cost-of-living-index-june-2026/` — Crawled - currently not indexed (desde 2026-09-27)
