@@ -18,77 +18,77 @@ seo:
   keywords: ["chart", "glossary", "finance"]
 ---
 
-## O que acontece quando você não entende o gráfico da sua conta
+## What Happens When You Don’t Understand Your Account’s Chart
 
-Você já abriu o extrato do banco e ficou encarando aquele monte de linhas, tentando descobrir se está gastando mais do que ganha? A sensação de não saber para onde foi o dinheiro do salário é comum: você vê o saldo cair, mas não tem um “mapa” que mostre claramente quais categorias estão drenando seu orçamento. Sem um gráfico que organize visualmente receitas e despesas, a gente acaba tomando decisões por impulso – como comprar aquele par de tênis porque ainda tem “dinheiro sobrando”, só para descobrir no fim do mês que a conta de luz já está no vermelho.
+Have you ever opened your bank statement and stared at that sea of lines, trying to figure out if you’re spending more than you earn? The feeling of not knowing where your paycheck went is common: you see the balance drop, but you don’t have a “map” that clearly shows which categories are draining your budget. Without a chart that visually organizes income and expenses, we end up making impulse decisions – like buying that pair of sneakers because there’s still “money left over,” only to discover at the end of the month that the electricity bill is already in the red.
 
-![O que acontece quando você não entende o gráfico da sua conta](/images/glossario/grafico-inline-1.webp)
-
-
-
-## Como o gráfico transforma números em clareza
-
-Um gráfico, ou chart, é simplesmente uma representação visual de dados numéricos. Em vez de ler uma lista de valores, você vê barras, linhas ou pizza que mostram, de forma instantânea, quanto você gastou em cada categoria, como alimentação, transporte ou lazer. Quando o gráfico está bem feito, ele responde perguntas como:
-
-- Quanto do meu salário vai para despesas fixas?
-- Em que mês eu estou gastando mais do que a média?
-- Qual categoria está crescendo mais rápido?
-
-Essas respostas surgem porque o gráfico converte números abstratos em imagens fáceis de interpretar. Por isso, ele é a ferramenta favorita de quem quer controlar o dinheiro sem virar um contador.
-
-## FinMoovi: o app que entrega o gráfico que você precisa
-
-Imagine abrir o FinMoovi e, em segundos, ter um gráfico de pizza que mostra a distribuição dos seus gastos do último mês. Tudo isso graças a um recurso que faz a diferença: **captura inteligente**. Você tira uma foto do recibo ou grava a voz dizendo “comprou café, 5 dólares”, e o app já categoriza automaticamente (alimentação, transporte, etc.). Não precisa digitar nada.
-
-![FinMoovi: o app que entrega o gráfico que você precisa](/images/glossario/grafico-inline-3.webp)
+![What Happens When You Don’t Understand Your Account’s Chart](/images/glossario/grafico-inline-1.webp)
 
 
 
-Além da captura inteligente, o FinMoovi traz outros recursos que dão suporte ao seu gráfico:
+## How the Chart Turns Numbers Into Clarity
 
-- **Multi‑moeda**: se você viaja ou faz compras em diferentes moedas (dólar, euro, etc.), o app converte tudo para a sua moeda base, mantendo o gráfico coerente.
-- **Fluxo de caixa e relatórios**: o gráfico se alimenta de um fluxo de caixa que mostra entradas (salário, renda extra) e saídas (contas, compras), permitindo comparar o que entra e o que sai.
-- **Planejamento mensal e metas**: defina um objetivo, como “economizar o equivalente a duas mensalidades de aluguel”, e veja no gráfico o progresso ao longo do tempo.
-- **Cartões de crédito e faturas**: o app traz os gastos do cartão direto para o gráfico, evitando surpresas na hora de pagar a fatura.
-- **Modo compras**: crie uma lista de itens, veja o total em tempo real no gráfico e evite ultrapassar o limite que você definiu.
-- **Alertas de saldo e lembretes**: se o saldo cair abaixo de um patamar, o app avisa e o gráfico se atualiza imediatamente.
-- **Offline / PWA / sync**: mesmo sem internet, você pode registrar despesas; quando conectar, tudo se sincroniza e o gráfico se atualiza.
+A chart is simply a visual representation of numeric data. Instead of reading a list of values, you see bars, lines, or a pie that instantly shows how much you spent in each category, such as food, transportation, or leisure. When the chart is well‑made, it answers questions like:
 
-## Como ler seu gráfico e tomar decisões rápidas
+- How much of my salary goes to fixed expenses?
+- In which month am I spending more than average?
+- Which category is growing the fastest?
 
-Quando você abre a tela de “Visão geral” no FinMoovi, o gráfico aparece logo no topo. Aqui vai um passo‑a‑passo para interpretar:
+These answers appear because the chart converts abstract numbers into easy‑to‑interpret images. That’s why it’s the favorite tool of anyone who wants to control their money without becoming an accountant.
 
-1. **Observe as cores** – Cada categoria tem uma cor fixa (por exemplo, verde para alimentação, azul para transporte). Isso ajuda a identificar rapidamente onde está o maior consumo.
-2. **Cheque o tamanho das fatias** – Uma fatia grande indica que aquela categoria está consumindo a maior parte do seu orçamento. Se a fatia de “lazer” está maior que a de “moradia”, algo está fora de ordem.
-3. **Compare com a média** – O app mostra a média dos últimos três meses ao lado do gráfico. Se a sua despesa atual está acima da média, é hora de rever.
-4. **Use o filtro de período** – Você pode mudar de “último mês” para “últimos 6 meses”. Isso ajuda a perceber tendências, como um aumento constante em contas de streaming.
+## FinMoovi: The App That Gives You the Chart You Need
 
-## Três dicas práticas para usar o gráfico a seu favor
+Imagine opening FinMoovi and, in seconds, having a pie chart that shows the distribution of your spending for the last month. All thanks to a feature that makes the difference: **smart capture**. You snap a photo of a receipt or record your voice saying “bought coffee, $5,” and the app automatically categorizes it (food, transportation, etc.). No typing required.
 
-**Practical tip:** Defina um limite visual. No FinMoovi, arraste a linha de “orçamento” no gráfico até o valor que você quer gastar em cada categoria. Quando a barra ultrapassar essa linha, o app envia um alerta.
+![FinMoovi: The App That Gives You the Chart You Need](/images/glossario/grafico-inline-3.webp)
 
-**Practical tip:** Revise o gráfico todo domingo. Reserve 10 minutos no fim de semana para olhar o gráfico da semana que passou e ajustar categorias que ficaram fora do planejado.
 
-**Practical tip:** Use o modo “comparar meses”. Se o gráfico mostrar que seu gasto com transporte subiu 30 % em relação ao mês anterior, investigue se foi por um aumento de combustível ou por viagens extras, e ajuste seu plano.
 
-## Como o gráfico ajuda em situações reais
+In addition to smart capture, FinMoovi offers other features that support your chart:
 
-- **Viagem internacional**: Você gastou 500 euros em alimentação e 300 euros em transporte. O gráfico converte tudo para a sua moeda base e mostra que 70 % do gasto foi alimentação, indicando que talvez seja hora de buscar opções de refeições mais econômicas.
-- **Compra de eletrodoméstico**: Ao registrar a nota fiscal com a captura inteligente, o gráfico coloca a despesa na categoria “casa”. Se essa categoria já está perto do limite, o app avisa antes que você adicione mais compras.
-- **Renda extra**: Recebeu um pagamento freelance de 1.200 dólares. O gráfico adiciona essa entrada como “renda extra”, aumentando o saldo geral e permitindo que você veja, visualmente, quanto pode destinar a uma meta de poupança.
+- **Multi‑currency**: if you travel or shop in different currencies (dollar, euro, etc.), the app converts everything to your base currency, keeping the chart consistent.
+- **Cash flow and reports**: the chart feeds off a cash‑flow view that shows inflows (salary, side income) and outflows (bills, purchases), allowing you to compare what comes in and what goes out.
+- **Monthly planning and goals**: set a target, like “save the equivalent of two months’ rent,” and watch the chart display progress over time.
+- **Credit cards and statements**: the app pulls card spending directly into the chart, avoiding surprises when it’s time to pay the bill.
+- **Shopping mode**: create a list of items, see the total update in real time on the chart, and avoid exceeding the limit you set.
+- **Balance alerts and reminders**: if the balance falls below a threshold, the app notifies you and the chart updates instantly.
+- **Offline / PWA / sync**: even without internet, you can log expenses; when you reconnect, everything syncs and the chart refreshes.
 
-## Por que o gráfico é melhor que planilhas
+## How to Read Your Chart and Make Quick Decisions
 
-Muitos ainda usam planilhas porque acham que são mais “precisas”. O problema é que planilhas exigem atualização manual, o que cria atrasos e erros. O gráfico do FinMoovi se atualiza em tempo real, graças à captura inteligente e à sincronização automática. Além disso, a visualização gráfica elimina a necessidade de interpretar linhas de números; basta olhar e entender.
+When you open the “Overview” screen in FinMoovi, the chart appears right at the top. Here’s a step‑by‑step guide to interpreting it:
 
-## Começando a usar o gráfico hoje mesmo
+1. **Look at the colors** – Each category has a fixed color (e.g., green for food, blue for transportation). This helps you quickly spot where the biggest consumption is.
+2. **Check the slice sizes** – A large slice means that category is taking up the biggest part of your budget. If the “leisure” slice is bigger than the “housing” slice, something is off.
+3. **Compare with the average** – The app shows the average of the last three months next to the chart. If your current expense is above the average, it’s time to review.
+4. **Use the period filter** – You can switch from “last month” to “last 6 months.” This helps you see trends, like a steady rise in streaming service bills.
 
-1. **Instale o FinMoovi** (é gratuito para baixar).
-2. **Faça o cadastro** e escolha sua moeda base.
-3. **Ative a captura inteligente** nas configurações.
-4. **Registre seu primeiro recibo** – tire uma foto da última compra ou fale “gasto 15 dólares em café”.
-5. **Acesse a tela “Visão geral”** e veja o gráfico aparecer automaticamente.
+## Three Practical Tips to Use the Chart to Your Advantage
+
+**Practical tip:** Set a visual limit. In FinMoovi, drag the “budget” line on the chart to the amount you want to spend in each category. When a bar crosses that line, the app sends an alert.
+
+**Practical tip:** Review the chart every Sunday. Reserve 10 minutes on the weekend to look at the past week’s chart and adjust categories that went off plan.
+
+**Practical tip:** Use the “compare months” mode. If the chart shows your transportation spending jumped 30 % compared to the previous month, investigate whether it was due to higher fuel costs or extra trips, and adjust your plan.
+
+## How the Chart Helps in Real‑World Situations
+
+- **International travel**: You spent €500 on food and €300 on transportation. The chart converts everything to your base currency and shows that 70 % of the spending was food, indicating it might be time to look for cheaper meal options.
+- **Appliance purchase**: When you log the receipt with smart capture, the chart places the expense in the “home” category. If that category is already near its limit, the app warns you before you add more purchases.
+- **Side income**: You received a freelance payment of $1,200. The chart adds this entry as “extra income,” boosting the overall balance and letting you see visually how much you can allocate to a savings goal.
+
+## Why the Chart Is Better Than Spreadsheets
+
+Many still use spreadsheets because they think they’re more “accurate.” The problem is spreadsheets require manual updates, which creates delays and errors. FinMoovi’s chart updates in real time, thanks to smart capture and automatic synchronization. Moreover, the graphical view eliminates the need to interpret rows of numbers; you just look and understand.
+
+## Getting Started with the Chart Today
+
+1. **Install FinMoovi** (it’s free to download).
+2. **Sign up** and choose your base currency.
+3. **Enable smart capture** in the settings.
+4. **Log your first receipt** – snap a photo of your latest purchase or say “spent $15 on coffee.”
+5. **Go to the “Overview” screen** and watch the chart appear automatically.
 
 ## Start today
 
-**Micro‑action de 5 minutos:** Abra o FinMoovi, vá em “Adicionar despesa”, use a câmera para fotografar o último recibo que você tem em casa (pode ser o da conta de luz ou do supermercado). Confirme a categoria que o app sugeriu e, em seguida, dê uma olhada rápida no gráfico que aparecerá na tela inicial. Esse pequeno passo já coloca você no controle visual do seu dinheiro e prepara o terreno para decisões mais inteligentes ao longo do mês.
+**5‑minute micro‑action:** Open FinMoovi, go to “Add expense,” use the camera to photograph the last receipt you have at home (it could be the electricity bill or the grocery receipt). Confirm the category the app suggested and then take a quick look at the chart that will appear on the home screen. This small step puts you in visual control of your money and sets the stage for smarter decisions throughout the month.
