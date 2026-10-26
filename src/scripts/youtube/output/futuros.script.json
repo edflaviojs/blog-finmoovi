@@ -1,0 +1,219 @@
+{
+  "slug": "futuros",
+  "term": "futuros",
+  "category": "basico",
+  "keyword": "futuros",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "O *preço da gasolina sobe* e você paga sem saber por quê?"
+  },
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "montanha-russa",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "O preço da gasolina sobe e você paga sem saber por quê? Tem gente que trava o preço de hoje antes de subir. Isso se chama futuros.",
+      "durationSec": 10.4,
+      "shots": [
+        {
+          "anchor": "preço",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "montanha-russa"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "paga",
+          "visual": {
+            "type": "statement",
+            "text": "Pagando sem entender"
+          }
+        },
+        {
+          "anchor": "trava",
+          "visual": {
+            "type": "icon",
+            "icon": "shield"
+          }
+        },
+        {
+          "anchor": "futuros",
+          "visual": {
+            "type": "statement",
+            "text": "FUTUROS"
+          },
+          "sfx": "boom"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Você abastece, olha a bomba e pensa. Semana passada tava mais barato. Ninguém te avisou que ia subir. Só te cobraram.",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "bomba",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          }
+        },
+        {
+          "anchor": "tava",
+          "visual": {
+            "type": "number",
+            "text": "R$ 5,00 → R$ 6,00"
+          }
+        },
+        {
+          "anchor": "Ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "Ninguém avisou"
+          },
+          "sfx": "alert"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Quem vende e quem compra café, dólar e petróleo combina o preço hoje, pra entregar lá na frente. E aí o susto some pra eles.",
+      "durationSec": 9.6,
+      "shots": [
+        {
+          "anchor": "café",
+          "visual": {
+            "type": "icon",
+            "icon": "coins"
+          }
+        },
+        {
+          "anchor": "combina",
+          "visual": {
+            "type": "statement",
+            "text": "Preço combinado hoje"
+          },
+          "sfx": "click"
+        },
+        {
+          "anchor": "susto",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "montanha-russa"
+          }
+        },
+        {
+          "anchor": "some",
+          "visual": {
+            "type": "icon",
+            "icon": "shield"
+          },
+          "sfx": "pop"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei meu gasto com gasolina no FinMoovi e ele me mostrou trezentos reais num mês e trezentos e cinquenta no outro.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "gasolina",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Gasto mensal com gasolina no FinMoovi"
+          }
+        },
+        {
+          "anchor": "trezentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 300"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "cinquenta",
+          "visual": {
+            "type": "number",
+            "text": "R$ 350"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "Procura",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          }
+        },
+        {
+          "anchor": "dias",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Futuros é combinar hoje o preço de amanhã pra não levar susto. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "combinar",
+          "visual": {
+            "type": "statement",
+            "text": "Combine hoje, sem susto"
+          }
+        },
+        {
+          "anchor": "amanhã",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "montanha-russa"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Sem controle, dinheiro alheio"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja seu gasto com gasolina",
+    "target": "app"
+  },
+  "totalDurationSec": 47.7
+}
