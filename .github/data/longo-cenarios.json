@@ -165,6 +165,21 @@
       "cena": "a corrida de aplicativo que virou hábito de todos os dias",
       "promessa": "Você gasta mais de três mil reais por ano em corridas de aplicativo sem perceber, e eu vou te provar isso",
       "em": "2026-10-19"
+    },
+    {
+      "slug": "gastos-escondidos-extrato-que",
+      "cenarios": [
+        "a fatura do cartão",
+        "a conta de luz",
+        "o mercado",
+        "o aluguel"
+      ],
+      "fio": "guarda-chuva",
+      "elenco": "um jovem no primeiro emprego, que ainda tem tudo pela frente",
+      "funcaoDoApp": "extrato",
+      "cena": "o cachorro que adoeceu de repente",
+      "promessa": "Você perde mais de quatro mil e quinhentos reais por ano em cobranças que nem vê, e eu vou te provar isso.",
+      "em": "2026-10-26"
     }
   ]
 }

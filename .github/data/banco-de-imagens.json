@@ -120,6 +120,28 @@
       "usadoEm": [
         "como-juntar-mil-reais"
       ]
+    },
+    {
+      "ficheiro": "manus/gastos-escondidos-extrato-que/susto.jpg",
+      "significado": "o susto de olhar a conta",
+      "tipo": "foto",
+      "pistas": [
+        "sabe onde eu fui procurar esse"
+      ],
+      "usadoEm": [
+        "gastos-escondidos-extrato-que"
+      ]
+    },
+    {
+      "ficheiro": "manus/gastos-escondidos-extrato-que/virada.jpg",
+      "significado": "a saída que se abre",
+      "tipo": "foto",
+      "pistas": [
+        "e conferi duas vezes porque achei"
+      ],
+      "usadoEm": [
+        "gastos-escondidos-extrato-que"
+      ]
     }
   ],
   "recusadas": [

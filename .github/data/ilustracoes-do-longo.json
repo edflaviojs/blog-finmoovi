@@ -235,6 +235,32 @@
         "cena": "42",
         "figura": "bifurcacao"
       }
+    ],
+    "gastos-escondidos-extrato-que": [
+      {
+        "cena": "4",
+        "figura": "ralo"
+      },
+      {
+        "cena": "20",
+        "figura": "bola-neve"
+      },
+      {
+        "cena": "22",
+        "figura": "fumaca"
+      },
+      {
+        "cena": "36",
+        "figura": "balanca"
+      },
+      {
+        "cena": "40",
+        "figura": "guarda-chuva"
+      },
+      {
+        "cena": "67",
+        "figura": "balde-furado"
+      }
     ]
   }
 }

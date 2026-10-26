@@ -198,6 +198,72 @@
         "cena": "62",
         "boneco": "super-heroi"
       }
+    ],
+    "gastos-escondidos-extrato-que": [
+      {
+        "cena": "1",
+        "boneco": "bolsos-vazios"
+      },
+      {
+        "cena": "3",
+        "boneco": "ombros"
+      },
+      {
+        "cena": "11",
+        "boneco": "contar-moedas"
+      },
+      {
+        "cena": "17",
+        "boneco": "susto"
+      },
+      {
+        "cena": "18",
+        "boneco": "bracos-cruzados"
+      },
+      {
+        "cena": "25",
+        "boneco": "pensando"
+      },
+      {
+        "cena": "28",
+        "boneco": "escorregar-banana"
+      },
+      {
+        "cena": "30",
+        "boneco": "relogio"
+      },
+      {
+        "cena": "37",
+        "boneco": "bravo-carteira-vazia"
+      },
+      {
+        "cena": "39",
+        "boneco": "carregar-peso"
+      },
+      {
+        "cena": "44",
+        "boneco": "sentar-derrotado"
+      },
+      {
+        "cena": "47",
+        "boneco": "apontar"
+      },
+      {
+        "cena": "49",
+        "boneco": "ideia"
+      },
+      {
+        "cena": "58",
+        "boneco": "puxar-cabelo"
+      },
+      {
+        "cena": "65",
+        "boneco": "suspiro-alivio"
+      },
+      {
+        "cena": "66",
+        "boneco": "super-heroi"
+      }
     ]
   }
 }
