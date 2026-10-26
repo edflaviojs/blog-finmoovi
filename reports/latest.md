@@ -1,6 +1,6 @@
 # 📊 Relatório Semanal — FinMoovi Blog
 
-**Período:** 2026-10-12 a 2026-10-19
+**Período:** 2026-10-19 a 2026-10-26
 **Total de Pageviews:** 0
 
 ## 🏆 Páginas Mais Visitadas
@@ -12,22 +12,33 @@
 
 | País | Views |
 |------|-------|
-| PT | 200 |
-| US | 60 |
-| CN | 50 |
-| ES | 20 |
-| RU | 10 |
-| FI | 10 |
+| US | 138 |
+| CN | 103 |
+| PT | 63 |
+| DE | 22 |
+| ES | 7 |
+| SE | 4 |
+| IE | 4 |
+| VN | 3 |
+| SG | 2 |
+| BR | 2 |
 
 ## 🔗 Fontes de Tráfego (Referrers)
 
 | Referrer | Views |
 |----------|-------|
+| (direto) | 283 |
+| app.finmoovi.com | 44 |
+| finmoovi-landing.pages.dev | 14 |
+| m.facebook.com | 6 |
+| finmoovi.com | 6 |
+| www.facebook.com | 4 |
+| www.google.com | 1 |
 
 ## 📝 Conteúdo Existente
 
-- **Total posts:** 534
-- **Por categoria:** ferramentas (25), dicas (92), orcamento (20), investimentos (23), cotacoes (18)
+- **Total posts:** 555
+- **Por categoria:** ferramentas (27), dicas (95), orcamento (20), investimentos (24), cotacoes (19)
 
 ## 💡 Sugestões de Conteúdo
 
@@ -40,4 +51,4 @@
   - "como sair do vermelho em 90 dias"
 
 ---
-*Gerado automaticamente em 2026-10-19T17:19:07.406Z*
+*Gerado automaticamente em 2026-10-26T17:07:05.227Z*
