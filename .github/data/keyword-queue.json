@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-26T13:41:23.051Z",
-  "sourceCursor": 1,
+  "updatedAt": "2026-10-26T15:37:35.385Z",
+  "sourceCursor": 2,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -2176,8 +2176,10 @@
       "category": null,
       "priority": 2,
       "source": "gsc-gap",
-      "status": "pending",
-      "addedAt": "2026-09-28T14:40:07.601Z"
+      "status": "used",
+      "addedAt": "2026-09-28T14:40:07.601Z",
+      "usedAt": "2026-10-26T15:37:35.385Z",
+      "usedBy": "gerar-dicas-financeiras"
     },
     {
       "keyword": "mobills alternative",

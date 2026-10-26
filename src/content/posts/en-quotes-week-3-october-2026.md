@@ -29,19 +29,19 @@ seo:
 
 ### 1. Dollar and Euro – How did they behave?
 
-This week the dollar was quoted at **R$ 5.07** and the euro at **R$ 5.69**. There were no news items that drastically changed these levels, which left the market a bit calmer after a few days of volatility in recent weeks. For those who follow the stock market or have expenses in foreign **[currency](/en/glossario/en-moeda)**, the stability of these prices brings relief: travel bills, online purchases or payments for international services remain predictable, without last‑minute surprises.
+This week the dollar was quoted at **R$ 5.07** and the euro at **R$ 5.69**. There were no news items that drastically changed these levels, which left the market a bit calmer after a few days of [volatility](/en/glossario/en-volatility) in recent weeks. For those who follow the stock market or have expenses in foreign **[currency](/en/glossario/en-moeda)**, the stability of these prices brings relief: travel bills, online purchases or payments for international services remain predictable, without last‑minute surprises.
 
 ### 2. Selic – 13.75% per year and the impact on investments
 
 The **Selic** rate remains at **13.75% per year**, according to the latest Copom statement. This level is still considered high historically, which has two practical consequences for investors:
 
-* **Attractive fixed income:** Government bonds and CDBs that track the Selic offer returns above the average of recent years. If you have money sitting in a savings account, it may be time to move it to these securities, which pay more and still have the guarantee of the Fundo Garantidor de Créditos (FGC) up to the allowed limit.
+* **Attractive [fixed income](/en/glossario/en-fixed-income):** Government bonds and CDBs that track the Selic offer returns above the average of recent years. If you have money sitting in a savings account, it may be time to move it to these securities, which pay more and still have the guarantee of the Fundo Garantidor de Créditos (FGC) up to the allowed limit.
 
 * **Cost of credit:** Loans, financing and credit cards remain expensive. Anyone thinking about taking out a car or home loan should carefully assess the impact of interest rates and, if possible, look for cash‑payment alternatives or renegotiate existing debts.
 
 ### 3. Practical tip for the individual investor
 
-**Use technology to your advantage.** Nowadays, **[wealth](/en/glossario/en-patrimonio)** management apps make life much easier for those who want to track investment performance and also control currency exposure. A suggestion I often give friends is to download **FinMoovi**. The app allows you to:
+**Use technology to your advantage.** Nowadays, **[wealth](/en/glossario/en-patrimonio)** management apps make life much easier for those who want to track [investment](/en/glossario/en-investment) performance and also control currency exposure. A suggestion I often give friends is to download **FinMoovi**. The app allows you to:
 
 * Check in real time the value of your holdings in reais, dollars or euros;
 * Receive alerts when a currency’s quote reaches a level you set;
@@ -61,7 +61,7 @@ Even without recent large swings, the dollar and euro remain sensitive to extern
 With a high Selic, securities linked to it stay in strong demand. Watch the supply of new CDBs, LCIs/LCAs and **[Tesouro Direto](/en/glossario/en-tesouro-direto)**. If demand rises, issuers may lower the offered rates, affecting expected returns.
 
 #### Diversification strategy  
-For those who still have most of their wealth in fixed income, consider allocating a small slice to assets that benefit from a high‑interest environment, such as private credit funds or debentures from solid companies. This diversification can improve profitability without greatly increasing risk.
+For those who still have most of their wealth in fixed income, consider allocating a small slice to assets that benefit from a high‑interest environment, such as private credit funds or [debentures](/en/glossario/en-debentures) from solid companies. This [diversification](/en/glossario/en-diversification) can improve profitability without greatly increasing risk.
 
 ---
 
