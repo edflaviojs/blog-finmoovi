@@ -1,15 +1,15 @@
 {
-  "medidoEm": "2026-10-19T15:09:44.154Z",
+  "medidoEm": "2026-10-26T14:43:06.181Z",
   "resumo": {
-    "videosMedidos": 231,
+    "videosMedidos": 252,
     "comAudiencia": 199,
-    "comCurva": 14,
-    "viewsTotais": 4291,
-    "percentagemMediaDoCanal": 2.1806291457286435,
-    "metadeSaiAosSegundos": 16.5,
-    "ficamAte3s": 1.05985,
-    "ficamAte50pc": 0.36500000000000005,
-    "ficamAteAoFim": 0.2167214285714286
+    "comCurva": 15,
+    "viewsTotais": 4372,
+    "percentagemMediaDoCanal": 2.183918592964824,
+    "metadeSaiAosSegundos": 17.133333333333333,
+    "ficamAte3s": 1.0536,
+    "ficamAte50pc": 0.35648666666666673,
+    "ficamAteAoFim": 0.20792000000000005
   },
   "aviso": {
     "minimo": 0.7,
@@ -70,6 +70,12 @@
         "views": 48
       },
       {
+        "slug": "kw-por-que-aparece-cred-juros-r-12-no-seu-extrato",
+        "videoId": "wUF7QxfG3eo",
+        "percentagemMedia": 0.1233,
+        "views": 10
+      },
+      {
         "slug": "kw-pagbank-vale-a-pena",
         "videoId": "q6wghA85cMQ",
         "percentagemMedia": 0.14859999999999998,
@@ -124,22 +130,22 @@
         "views": 16
       },
       {
-        "slug": "loop-geladeira-nova-se-parar",
-        "videoId": "25abddJTGNM",
-        "percentagemMedia": 0.29,
-        "views": 20
-      },
-      {
         "slug": "loop-reserva-emergencia-faca-isso",
         "videoId": "-dnPYUrfMRc",
         "percentagemMedia": 0.3075,
-        "views": 109
+        "views": 110
       },
       {
         "slug": "loop-primeiro-guardado-depois-de-anos",
         "videoId": "p6RFQTzJ340",
         "percentagemMedia": 0.309,
         "views": 254
+      },
+      {
+        "slug": "loop-primeiro-guardado-se-parar",
+        "videoId": "ZzyMe7K9Sqw",
+        "percentagemMedia": 0.31579999999999997,
+        "views": 10
       },
       {
         "slug": "kw-erro-ao-usar-amortizacao-price-r-200-mil-a-mais-no-financiam",
@@ -157,7 +163,7 @@
         "slug": "loop-viagem-fim-de-ano-nao-vai-acreditar",
         "videoId": "DxI_9buXgsc",
         "percentagemMedia": 0.3529,
-        "views": 24
+        "views": 25
       },
       {
         "slug": "loop-dentista-das-criancas-voces-viram",
@@ -184,12 +190,6 @@
         "views": 18
       },
       {
-        "slug": "loop-remedio-todo-mes-voces-viram",
-        "videoId": "vFz1F3VSQlk",
-        "percentagemMedia": 0.3933,
-        "views": 23
-      },
-      {
         "slug": "kw-financiamento-de-r-50-000",
         "videoId": "iwMaA3Dqg6o",
         "percentagemMedia": 0.3973,
@@ -202,10 +202,10 @@
         "views": 11
       },
       {
-        "slug": "aplicacao-financeira",
-        "videoId": "JlIWqKb8Qv8",
-        "percentagemMedia": 0.4551,
-        "views": 12
+        "slug": "loop-reserva-emergencia-ta-perdendo",
+        "videoId": "0ygPIS1pxYM",
+        "percentagemMedia": 0.4476,
+        "views": 117
       },
       {
         "slug": "kw-cartao-virtual-vale-a-pena",
@@ -325,7 +325,7 @@
         "slug": "loop-sair-do-aluguel-e-serio-que",
         "videoId": "B-fuYEH5CfA",
         "percentagemMedia": 0.6697,
-        "views": 63
+        "views": 64
       },
       {
         "slug": "loop-reforma-banheiro-se-parar",
@@ -335,7 +335,7 @@
       }
     ],
     "julgados": 87,
-    "semAudiencia": 131
+    "semAudiencia": 151
   },
   "avisoPorFormato": {
     "short": {
@@ -397,6 +397,12 @@
           "views": 48
         },
         {
+          "slug": "kw-por-que-aparece-cred-juros-r-12-no-seu-extrato",
+          "videoId": "wUF7QxfG3eo",
+          "percentagemMedia": 0.1233,
+          "views": 10
+        },
+        {
           "slug": "kw-pagbank-vale-a-pena",
           "videoId": "q6wghA85cMQ",
           "percentagemMedia": 0.14859999999999998,
@@ -451,22 +457,22 @@
           "views": 16
         },
         {
-          "slug": "loop-geladeira-nova-se-parar",
-          "videoId": "25abddJTGNM",
-          "percentagemMedia": 0.29,
-          "views": 20
-        },
-        {
           "slug": "loop-reserva-emergencia-faca-isso",
           "videoId": "-dnPYUrfMRc",
           "percentagemMedia": 0.3075,
-          "views": 109
+          "views": 110
         },
         {
           "slug": "loop-primeiro-guardado-depois-de-anos",
           "videoId": "p6RFQTzJ340",
           "percentagemMedia": 0.309,
           "views": 254
+        },
+        {
+          "slug": "loop-primeiro-guardado-se-parar",
+          "videoId": "ZzyMe7K9Sqw",
+          "percentagemMedia": 0.31579999999999997,
+          "views": 10
         },
         {
           "slug": "kw-erro-ao-usar-amortizacao-price-r-200-mil-a-mais-no-financiam",
@@ -484,7 +490,7 @@
           "slug": "loop-viagem-fim-de-ano-nao-vai-acreditar",
           "videoId": "DxI_9buXgsc",
           "percentagemMedia": 0.3529,
-          "views": 24
+          "views": 25
         },
         {
           "slug": "loop-dentista-das-criancas-voces-viram",
@@ -511,12 +517,6 @@
           "views": 18
         },
         {
-          "slug": "loop-remedio-todo-mes-voces-viram",
-          "videoId": "vFz1F3VSQlk",
-          "percentagemMedia": 0.3933,
-          "views": 23
-        },
-        {
           "slug": "kw-financiamento-de-r-50-000",
           "videoId": "iwMaA3Dqg6o",
           "percentagemMedia": 0.3973,
@@ -529,10 +529,10 @@
           "views": 11
         },
         {
-          "slug": "aplicacao-financeira",
-          "videoId": "JlIWqKb8Qv8",
-          "percentagemMedia": 0.4551,
-          "views": 12
+          "slug": "loop-reserva-emergencia-ta-perdendo",
+          "videoId": "0ygPIS1pxYM",
+          "percentagemMedia": 0.4476,
+          "views": 117
         },
         {
           "slug": "kw-cartao-virtual-vale-a-pena",
@@ -652,7 +652,7 @@
           "slug": "loop-sair-do-aluguel-e-serio-que",
           "videoId": "B-fuYEH5CfA",
           "percentagemMedia": 0.6697,
-          "views": 63
+          "views": 64
         },
         {
           "slug": "loop-reforma-banheiro-se-parar",
@@ -662,7 +662,7 @@
         }
       ],
       "julgados": 87,
-      "semAudiencia": 131
+      "semAudiencia": 151
     },
     "longo": {
       "minimo": 0.4,
@@ -677,16 +677,16 @@
         {
           "slug": "vriak9lBI48",
           "videoId": "vriak9lBI48",
-          "percentagemMedia": 0.2688,
-          "views": 60
+          "percentagemMedia": 0.2648,
+          "views": 61
         }
       ],
       "julgados": 2,
-      "semAudiencia": 11
+      "semAudiencia": 12
     }
   },
   "longos": {
-    "medidos": 13,
+    "medidos": 14,
     "foraDoRegisto": 3,
     "erro": null
   },
@@ -694,111 +694,118 @@
     {
       "familia": "aconteceu comigo",
       "n": 14,
-      "comAudiencia": 9,
-      "medianaRetencao": 0.9556,
-      "medianaViews": 2,
-      "media": 0.8650777777777778
-    },
-    {
-      "familia": "tá perdendo",
-      "n": 12,
-      "comAudiencia": 12,
-      "medianaRetencao": 0.6626500000000001,
-      "medianaViews": 12.5,
-      "media": 0.6026166666666667
+      "comAudiencia": 10,
+      "medianaRetencao": 0.9418,
+      "medianaViews": 4.5,
+      "media": 0.8318300000000001
     },
     {
       "familia": "é sério que",
-      "n": 12,
+      "n": 13,
       "comAudiencia": 12,
       "medianaRetencao": 0.6025499999999999,
-      "medianaViews": 18.5,
+      "medianaViews": 17,
       "media": 0.7850499999999999
     },
     {
-      "familia": "ninguém fala",
-      "n": 12,
+      "familia": "tá perdendo",
+      "n": 14,
       "comAudiencia": 12,
-      "medianaRetencao": 0.5292,
-      "medianaViews": 10,
-      "media": 0.5889833333333333
-    },
-    {
-      "familia": "começa assim",
-      "n": 12,
-      "comAudiencia": 12,
-      "medianaRetencao": 0.5206999999999999,
-      "medianaViews": 10,
-      "media": 6.523858333333333
+      "medianaRetencao": 0.5305500000000001,
+      "medianaViews": 12.5,
+      "media": 0.5594833333333332
     },
     {
       "familia": "e se parar",
-      "n": 12,
+      "n": 14,
       "comAudiencia": 12,
-      "medianaRetencao": 0.41675,
+      "medianaRetencao": 0.5293,
+      "medianaViews": 8.5,
+      "media": 0.5361583333333334
+    },
+    {
+      "familia": "começa assim",
+      "n": 14,
+      "comAudiencia": 13,
+      "medianaRetencao": 0.4667,
       "medianaViews": 9,
-      "media": 0.44974166666666665
+      "media": 6.022023076923077
     },
     {
       "familia": "vocês viram",
       "n": 13,
+      "comAudiencia": 10,
+      "medianaRetencao": 0.43345,
+      "medianaViews": 5,
+      "media": 21.070649999999997
+    },
+    {
+      "familia": "ninguém fala",
+      "n": 14,
       "comAudiencia": 13,
-      "medianaRetencao": 0.3933,
-      "medianaViews": 8,
-      "media": 16.305807692307692
+      "medianaRetencao": 0.42710000000000004,
+      "medianaViews": 8.5,
+      "media": 0.5436769230769231
     },
     {
       "familia": "nunca faça",
-      "n": 12,
+      "n": 13,
       "comAudiencia": 9,
       "medianaRetencao": 0.37329999999999997,
-      "medianaViews": 6,
+      "medianaViews": 5,
       "media": 0.4977777777777778
     },
     {
       "familia": "faça isso",
-      "n": 12,
+      "n": 13,
       "comAudiencia": 11,
       "medianaRetencao": 0.3075,
-      "medianaViews": 4.5,
+      "medianaViews": 4,
       "media": 0.5030727272727273
     },
     {
       "familia": "depois de anos",
-      "n": 10,
+      "n": 12,
       "comAudiencia": 9,
       "medianaRetencao": 0.1222,
-      "medianaViews": 7.5,
+      "medianaViews": 5.5,
       "media": 0.5703111111111111
     },
     {
       "familia": "não vai acreditar",
       "n": 11,
-      "comAudiencia": 9,
+      "comAudiencia": 10,
       "medianaRetencao": 0,
       "medianaViews": 5,
-      "media": 0.20414444444444443
+      "media": 0.18373
     }
   ],
   "capas": {
     "estado": "ok",
     "janela": {
-      "de": "2026-09-25T07:00:00Z",
-      "ate": "2026-10-18T07:00:00Z"
+      "de": "2026-10-04T07:00:00Z",
+      "ate": "2026-10-25T07:00:00Z"
     },
     "dias": 28,
     "escala": "fracção (ex.: 0,0086 = 0,86%)",
     "totais": {
-      "impressoes": 2647,
-      "ctr": 0.023800528900642236
+      "impressoes": 3547,
+      "ctr": 0.010431350436989005
     },
     "videos": [
       {
-        "id": "-WMQ2Eq5hic",
-        "titulo": "EMPRÉSTIMO: R$ 5.000 que me deixou no vermelho",
+        "id": "0ygPIS1pxYM",
+        "titulo": "RESERVA: R$ 600 que tirou meu sono",
         "formato": "short",
-        "impressoes": 299,
-        "ctr": 0.026755852842809364
+        "impressoes": 676,
+        "ctr": 0
+      },
+      {
+        "id": "7Yxwf2-D0y8",
+        "titulo": "Você joga fora R$ 4.000 por ano: pare de perder dinheiro agora",
+        "formato": "longo",
+        "impressoes": 518,
+        "ctr": 0.005791505791505791
       },
       {
         "id": "FsWBNQLQSbs",
@@ -808,199 +815,199 @@
         "ctr": 0.010101010101010102
       },
       {
-        "id": "-lGphaDR6v4",
-        "titulo": "Como eu Gastei R$ 550 no material escolar :(",
-        "formato": "short",
-        "impressoes": 109,
-        "ctr": 0.01834862385321101
-      },
-      {
-        "id": "LoeJxCAycYA",
-        "titulo": "ASSINATURA: R$ 95 que sumiram na fatura",
-        "formato": "short",
-        "impressoes": 100,
-        "ctr": 0.03
-      },
-      {
         "id": "NBQdETBAX4E",
         "titulo": "GELADEIRA: R$ 2.600 por culpa do ronco",
         "formato": "short",
-        "impressoes": 75,
-        "ctr": 0.013333333333333334
-      },
-      {
-        "id": "0vWjiFuTroY",
-        "titulo": "ANIVERSÁRIO R$ 800 que quase quebrei a conta",
-        "formato": "short",
-        "impressoes": 69,
-        "ctr": 0.028985507246376812
+        "impressoes": 135,
+        "ctr": 0.007407407407407408
       },
       {
         "id": "Mw1uWYgZOiY",
         "titulo": "FLUXO de caixa: descubra onde sumem R$600",
         "formato": "short",
-        "impressoes": 67,
-        "ctr": 0
-      },
-      {
-        "id": "ryJMWBzEqfY",
-        "titulo": "INDEPENDÊNCIA: descubra seu número em 7 dias",
-        "formato": "short",
-        "impressoes": 57,
+        "impressoes": 114,
         "ctr": 0
       },
       {
         "id": "rDYW-WK5-VA",
         "titulo": "SAQUE: R$ 60 perdidos ao sacar à noite",
         "formato": "short",
-        "impressoes": 52,
+        "impressoes": 110,
         "ctr": 0
       },
       {
-        "id": "y_UG8M_4CXI",
-        "titulo": "MOTO: 24 parcelas de R$ 700 valem?",
+        "id": "LoeJxCAycYA",
+        "titulo": "ASSINATURA: R$ 95 que sumiram na fatura",
         "formato": "short",
-        "impressoes": 50,
-        "ctr": 0
+        "impressoes": 103,
+        "ctr": 0.02912621359223301
       },
       {
-        "id": "CeFsV-HRMew",
-        "titulo": "GÁS R$ 130 no domingo sem aviso",
+        "id": "Ik1Z_4CDkJA",
+        "titulo": "GUARDAR R$ 50: o envelope furado",
         "formato": "short",
-        "impressoes": 50,
+        "impressoes": 80,
+        "ctr": 0.0125
+      },
+      {
+        "id": "ryJMWBzEqfY",
+        "titulo": "INDEPENDÊNCIA: descubra seu número em 7 dias",
+        "formato": "short",
+        "impressoes": 58,
         "ctr": 0
       },
       {
         "id": "ZjwwlidG5Xg",
         "titulo": "MONTANTE: 3 erros que reduzem sua poupança",
         "formato": "short",
-        "impressoes": 45,
+        "impressoes": 57,
         "ctr": 0
       },
       {
-        "id": "K2wiFfPFXZ8",
-        "titulo": "Como eu consegui separar R$ 260 do remédio todo mês usando um app simples",
+        "id": "c5EUmRJJpJA",
+        "titulo": "EMPRÉSTIMO: R$ 5.000 que me afundou",
         "formato": "short",
-        "impressoes": 43,
+        "impressoes": 48,
         "ctr": 0
       },
       {
         "id": "nN2hjqiR8ok",
         "titulo": "CASAL: R$ 3.200 dividindo contas sem briga",
         "formato": "short",
-        "impressoes": 42,
-        "ctr": 0.047619047619047616
+        "impressoes": 46,
+        "ctr": 0.043478260869565216
       },
       {
-        "id": "Ik1Z_4CDkJA",
-        "titulo": "GUARDAR R$ 50: o envelope furado",
+        "id": "X2duSbsCBCU",
+        "titulo": "PARAGUAI: custo de vida que surpreende",
         "formato": "short",
-        "impressoes": 39,
-        "ctr": 0.02564102564102564
-      },
-      {
-        "id": "xbV_DH3bl1M",
-        "titulo": "5 erros que custam R$15 mil ao Financiar sua CASA",
-        "formato": "short",
-        "impressoes": 38,
+        "impressoes": 43,
         "ctr": 0
       },
       {
-        "id": "HKMKNY9qiJg",
-        "titulo": "RESERVA: R$ 600 que sumiram na conta",
+        "id": "bTob_l7j9h4",
+        "titulo": "ALUGUEL R$ 1.500 que me fez mudar",
         "formato": "short",
-        "impressoes": 36,
-        "ctr": 0.05555555555555555
+        "impressoes": 43,
+        "ctr": 0
+      },
+      {
+        "id": "wUF7QxfG3eo",
+        "titulo": "EXTRATO: por que aparece cred juros 12",
+        "formato": "short",
+        "impressoes": 42,
+        "ctr": 0
       },
       {
         "id": "Heo2qpWt_Qg",
         "titulo": "SEU: R$ 200 que sumiram no cofre",
         "formato": "short",
-        "impressoes": 36,
+        "impressoes": 42,
         "ctr": 0
       },
       {
-        "id": "oay7rBGNbyQ",
-        "titulo": "VALOR presente: vale R$ 1.000 em 12 meses",
+        "id": "0vWjiFuTroY",
+        "titulo": "ANIVERSÁRIO R$ 800 que quase quebrei a conta",
         "formato": "short",
-        "impressoes": 33,
+        "impressoes": 41,
+        "ctr": 0.024390243902439025
+      },
+      {
+        "id": "y_UG8M_4CXI",
+        "titulo": "MOTO: 24 parcelas de R$ 700 valem?",
+        "formato": "short",
+        "impressoes": 38,
         "ctr": 0
-      },
-      {
-        "id": "E0hLFXJeVn8",
-        "titulo": "ALUGUEL R$ 1.500: como sair de vez",
-        "formato": "short",
-        "impressoes": 32,
-        "ctr": 0
-      },
-      {
-        "id": "KWrm2MYT2QU",
-        "titulo": "VARIÁVEL: entenda gastos fixos e variáveis",
-        "formato": "short",
-        "impressoes": 31,
-        "ctr": 0.03225806451612903
-      },
-      {
-        "id": "kaYpyawVJcU",
-        "titulo": "Juros do cartão: quanto você perde por mês sem nem perceber",
-        "formato": "longo",
-        "impressoes": 29,
-        "ctr": 0.10344827586206896
       },
       {
         "id": "fVNp2MlrW84",
         "titulo": "INDEPENDÊNCIA: quanto precisar para viver sem trabalhar",
         "formato": "short",
-        "impressoes": 29,
-        "ctr": 0.034482758620689655
+        "impressoes": 33,
+        "ctr": 0.030303030303030304
+      },
+      {
+        "id": "dFIeWkBgRgo",
+        "titulo": "Economizar R$ 300 por mês sem cortar o essencial",
+        "formato": "longo",
+        "impressoes": 31,
+        "ctr": 0.06451612903225806
+      },
+      {
+        "id": "DxI_9buXgsc",
+        "titulo": "VIAGEM: R$ 1.800 perdidos na praia de dezembro",
+        "formato": "short",
+        "impressoes": 30,
+        "ctr": 0
+      },
+      {
+        "id": "R0jeX6C9B7c",
+        "titulo": "DENTISTA: R$ 3.500 e o risco do atraso",
+        "formato": "short",
+        "impressoes": 27,
+        "ctr": 0.037037037037037035
+      },
+      {
+        "id": "UxqnL7-xI6o",
+        "titulo": "GASTANDO menos: 5 hábitos que economizam R$500",
+        "formato": "short",
+        "impressoes": 27,
+        "ctr": 0
+      },
+      {
+        "id": "CPxwJQqnLB4",
+        "titulo": "EMPRESA paga menos ir usando jcp",
+        "formato": "short",
+        "impressoes": 26,
+        "ctr": 0
       },
       {
         "id": "4CfTKUgyAcE",
         "titulo": "Pequenos gastos: como recuperar R$ 240 sem cortar o lazer",
         "formato": "longo",
-        "impressoes": 27,
+        "impressoes": 26,
+        "ctr": 0
+      },
+      {
+        "id": "GZFtzkrcZDA",
+        "titulo": "ATRASO: R$ 45 que eu paguei ontem",
+        "formato": "short",
+        "impressoes": 25,
+        "ctr": 0
+      },
+      {
+        "id": "C17RU8CK7GA",
+        "titulo": "CARRO: R$ 8.000 para a entrada",
+        "formato": "short",
+        "impressoes": 25,
         "ctr": 0
       },
       {
         "id": "lpzftbXWGPc",
         "titulo": "DELIVERY: R$ 320 no pedido de sexta",
         "formato": "short",
-        "impressoes": 27,
-        "ctr": 0.07407407407407407
-      },
-      {
-        "id": "Caus4r5_V3I",
-        "titulo": "Dívida do cartão: organize suas contas sem vender nada",
-        "formato": "longo",
-        "impressoes": 24,
-        "ctr": 0.125
-      },
-      {
-        "id": "dFIeWkBgRgo",
-        "titulo": "Economizar R$ 300 por mês sem cortar o essencial",
-        "formato": "longo",
         "impressoes": 24,
         "ctr": 0.041666666666666664
       },
       {
-        "id": "yttsSbKZ8g8",
-        "titulo": "Gastos do fim do ano: como sobrar R$ 600 sem cortar o cafezinho",
-        "formato": "longo",
-        "impressoes": 24,
-        "ctr": 0.041666666666666664
+        "id": "UKfLe3Ay_Hg",
+        "titulo": "APOSENTADORIA R$ 180 que perdi como autônomo",
+        "formato": "short",
+        "impressoes": 22,
+        "ctr": 0.09090909090909091
       },
       {
-        "id": "HDdImgkLUcY",
-        "titulo": "JUROS: 30% ao mês e R$ 500 perdidos",
+        "id": "YBrT4lbmGqk",
+        "titulo": "FINANCEIRA: como evitar urgência em 30 dias",
         "formato": "short",
-        "impressoes": 23,
-        "ctr": 0.043478260869565216
+        "impressoes": 22,
+        "ctr": 0
       },
       {
-        "id": "C17RU8CK7GA",
-        "titulo": "CARRO: R$ 8.000 para a entrada",
+        "id": "CeFsV-HRMew",
+        "titulo": "GÁS R$ 130 no domingo sem aviso",
         "formato": "short",
-        "impressoes": 21,
+        "impressoes": 22,
         "ctr": 0
       },
       {
@@ -1011,130 +1018,88 @@
         "ctr": 0
       },
       {
-        "id": "i2sJnzjsiV4",
-        "titulo": "10 mil em 12 meses",
+        "id": "-lGphaDR6v4",
+        "titulo": "Como eu Gastei R$ 550 no material escolar :(",
         "formato": "short",
         "impressoes": 21,
+        "ctr": 0.047619047619047616
+      },
+      {
+        "id": "RhyT684V_LY",
+        "titulo": "CARTÃO: corte r$200 em 30 dias",
+        "formato": "short",
+        "impressoes": 18,
         "ctr": 0
       },
       {
-        "id": "YBrT4lbmGqk",
-        "titulo": "FINANCEIRA: como evitar urgência em 30 dias",
+        "id": "PrCitJbL-w4",
+        "titulo": "MÍNIMO: R$ 90 que virou bola de neve",
         "formato": "short",
-        "impressoes": 20,
+        "impressoes": 18,
         "ctr": 0
       },
       {
-        "id": "2LWBI3vT0Iw",
-        "titulo": "R$ 2.100 desaparecem sem controle da minha CONTA",
+        "id": "qiYflPsF8Yo",
+        "titulo": "INVESTIR R$1000: descubra a taxa real",
         "formato": "short",
-        "impressoes": 20,
+        "impressoes": 16,
+        "ctr": 0
+      },
+      {
+        "id": "7259bLLmh5g",
+        "titulo": "ESCOLA: R$ 900 perdidos ao parar matrícula",
+        "formato": "short",
+        "impressoes": 15,
+        "ctr": 0.2
+      },
+      {
+        "id": "TwD5IHo3ZzE",
+        "titulo": "ESPECIAL: R$ 210 sumiram no cheque especial",
+        "formato": "short",
+        "impressoes": 15,
         "ctr": 0
       },
       {
         "id": "zBOQpSNsZWY",
         "titulo": "DESCONTO: R$ 150 na conta de luz",
         "formato": "short",
-        "impressoes": 20,
-        "ctr": 0.1
+        "impressoes": 15,
+        "ctr": 0.06666666666666667
       },
       {
-        "id": "BbVPe__Xnrw",
-        "titulo": "WHATSAPP: como evitar que o dinheiro desapareça",
+        "id": "K2wiFfPFXZ8",
+        "titulo": "Como eu consegui separar R$ 260 do remédio todo mês usando um app simples",
         "formato": "short",
-        "impressoes": 20,
+        "impressoes": 14,
         "ctr": 0
       },
       {
-        "id": "hJQe7SwAbs8",
-        "titulo": "O que ACONTECE quando você guarda 500 e gasta 2000",
+        "id": "HKMKNY9qiJg",
+        "titulo": "RESERVA: R$ 600 que sumiram na conta",
         "formato": "short",
-        "impressoes": 19,
-        "ctr": 0.05263157894736842
+        "impressoes": 14,
+        "ctr": 0.07142857142857142
       },
       {
-        "id": "8miOg8K0Tw8",
-        "titulo": "FINANCEIRA: entenda opções em 1 minuto",
+        "id": "xbV_DH3bl1M",
+        "titulo": "5 erros que custam R$15 mil ao Financiar sua CASA",
         "formato": "short",
-        "impressoes": 19,
+        "impressoes": 14,
         "ctr": 0
       },
       {
         "id": "npyr_Pa0RDc",
         "titulo": "VALOR do dinheiro parado: descubra a perda",
         "formato": "short",
-        "impressoes": 18,
+        "impressoes": 14,
         "ctr": 0
       },
       {
-        "id": "UKfLe3Ay_Hg",
-        "titulo": "APOSENTADORIA R$ 180 que perdi como autônomo",
-        "formato": "short",
-        "impressoes": 16,
-        "ctr": 0.125
-      },
-      {
-        "id": "UxqnL7-xI6o",
-        "titulo": "GASTANDO menos: 5 hábitos que economizam R$500",
-        "formato": "short",
-        "impressoes": 16,
-        "ctr": 0
-      },
-      {
-        "id": "GZFtzkrcZDA",
-        "titulo": "ATRASO: R$ 45 que eu paguei ontem",
-        "formato": "short",
-        "impressoes": 16,
-        "ctr": 0
-      },
-      {
-        "id": "jN4k73LrO_k",
-        "titulo": "MÍNIMO R$ 90 e o custo do mínimo",
-        "formato": "short",
-        "impressoes": 16,
-        "ctr": 0
-      },
-      {
-        "id": "Wbx9UY1K7wg",
-        "titulo": "SAQUE: quanto custa sacar no cartão?",
-        "formato": "short",
-        "impressoes": 16,
-        "ctr": 0
-      },
-      {
-        "id": "CPxwJQqnLB4",
-        "titulo": "EMPRESA paga menos ir usando jcp",
-        "formato": "short",
-        "impressoes": 15,
-        "ctr": 0
-      },
-      {
-        "id": "AStHGn0_INc",
-        "titulo": "Seu salário some todo mês? Você precisa ver isso agora #finmoovi #educacofinanceira",
-        "formato": "longo",
-        "impressoes": 15,
-        "ctr": 0.13333333333333333
-      },
-      {
-        "id": "h_JymS9qRlA",
-        "titulo": "GUARDADO: R$ 300 no fim do mês",
-        "formato": "short",
-        "impressoes": 15,
-        "ctr": 0
-      },
-      {
-        "id": "hsUtCD2RudM",
-        "titulo": "ANIVERSÁRIO: como organizar festa do filho gastando menos",
+        "id": "58nudOsL44s",
+        "titulo": "FINANCEIRA: 3 erros que custam R$ 3000",
         "formato": "short",
         "impressoes": 13,
-        "ctr": 0.07692307692307693
-      },
-      {
-        "id": "vriak9lBI48",
-        "titulo": "Dois homens, mesmo salário: por que só um se aposentou",
-        "formato": "longo",
-        "impressoes": 13,
-        "ctr": 0.07692307692307693
+        "ctr": 0
       },
       {
         "id": "Iq3IoeU72T8",
@@ -1144,168 +1109,133 @@
         "ctr": 0.07692307692307693
       },
       {
-        "id": "NC4Pi61FDPU",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 13,
-        "ctr": 0.07692307692307693
-      },
-      {
-        "id": "WaXL2ST00eE",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 13,
-        "ctr": 0.23076923076923078
-      },
-      {
-        "id": "mDoIJkUKYMg",
-        "titulo": null,
-        "formato": null,
+        "id": "i2sJnzjsiV4",
+        "titulo": "10 mil em 12 meses",
+        "formato": "short",
         "impressoes": 13,
         "ctr": 0
       },
       {
-        "id": "TwD5IHo3ZzE",
-        "titulo": null,
-        "formato": null,
+        "id": "NazngqtIS3A",
+        "titulo": "LONG: como transformar R$100 em R$1000",
+        "formato": "short",
         "impressoes": 12,
         "ctr": 0
       },
       {
-        "id": "-PJ3SVAcx1U",
-        "titulo": null,
-        "formato": null,
+        "id": "ywNjIT_LWBo",
+        "titulo": "CARRO: R$ 1.200 na conta por quebra",
+        "formato": "short",
         "impressoes": 12,
         "ctr": 0
       },
       {
-        "id": "yB0JyVc_pGs",
-        "titulo": null,
-        "formato": null,
+        "id": "srJhf0JPsKw",
+        "titulo": "5 erros financeiros que tiram R$ 800 do seu bolso todo mês #finmoovi #shorts",
+        "formato": "short",
         "impressoes": 12,
         "ctr": 0
       },
       {
-        "id": "DxI_9buXgsc",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 11,
+        "id": "HDdImgkLUcY",
+        "titulo": "JUROS: 30% ao mês e R$ 500 perdidos",
+        "formato": "short",
+        "impressoes": 12,
         "ctr": 0
       },
       {
-        "id": "wUF7QxfG3eo",
+        "id": "hsUtCD2RudM",
         "titulo": null,
         "formato": null,
-        "impressoes": 11,
-        "ctr": 0
+        "impressoes": 12,
+        "ctr": 0.08333333333333333
       },
       {
         "id": "HGS4NGVUQl4",
         "titulo": null,
         "formato": null,
-        "impressoes": 11,
+        "impressoes": 12,
         "ctr": 0
       },
       {
-        "id": "Li-0BKBawOM",
+        "id": "2LWBI3vT0Iw",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 12,
+        "ctr": 0
+      },
+      {
+        "id": "E0hLFXJeVn8",
         "titulo": null,
         "formato": null,
         "impressoes": 11,
-        "ctr": 0
-      },
-      {
-        "id": "OtjykACoezU",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 11,
-        "ctr": 0
-      },
-      {
-        "id": "Bm4HH3XQ7co",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 10,
-        "ctr": 0
-      },
-      {
-        "id": "58nudOsL44s",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 10,
         "ctr": 0
       },
       {
         "id": "iFFTSN0mezQ",
         "titulo": null,
         "formato": null,
-        "impressoes": 10,
+        "impressoes": 11,
         "ctr": 0
-      },
-      {
-        "id": "2TZT_K5k2qc",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 10,
-        "ctr": 0
-      },
-      {
-        "id": "S94DvB7yTZM",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 10,
-        "ctr": 0.1
       },
       {
         "id": "RcQENBspYqY",
         "titulo": null,
         "formato": null,
-        "impressoes": 9,
+        "impressoes": 10,
         "ctr": 0
       },
       {
-        "id": "FXFNufT1ko8",
+        "id": "VbtDXoEDo6c",
         "titulo": null,
         "formato": null,
         "impressoes": 9,
         "ctr": 0
       },
       {
-        "id": "E7zfIdP7ufE",
+        "id": "hJQe7SwAbs8",
         "titulo": null,
         "formato": null,
-        "impressoes": 8,
+        "impressoes": 9,
         "ctr": 0
       },
       {
-        "id": "srJhf0JPsKw",
+        "id": "od_hwQcZlF8",
         "titulo": null,
         "formato": null,
-        "impressoes": 8,
+        "impressoes": 9,
+        "ctr": 0
+      },
+      {
+        "id": "kaYpyawVJcU",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 9,
         "ctr": 0
       },
       {
         "id": "GVM_UsxghkQ",
         "titulo": null,
         "formato": null,
-        "impressoes": 8,
+        "impressoes": 9,
         "ctr": 0
       },
       {
-        "id": "bYGGYndvCKQ",
+        "id": "B-fuYEH5CfA",
         "titulo": null,
         "formato": null,
         "impressoes": 8,
         "ctr": 0
       },
       {
-        "id": "kDAkBAAlG3o",
+        "id": "NofbVRcGXpo",
         "titulo": null,
         "formato": null,
         "impressoes": 8,
         "ctr": 0
       },
       {
-        "id": "472kfSszgA0",
+        "id": "OtjykACoezU",
         "titulo": null,
         "formato": null,
         "impressoes": 8,
@@ -1315,18 +1245,25 @@
         "id": "e0CAK0zsn3U",
         "titulo": null,
         "formato": null,
-        "impressoes": 7,
+        "impressoes": 8,
         "ctr": 0
       },
       {
-        "id": "VbtDXoEDo6c",
+        "id": "Bm4HH3XQ7co",
         "titulo": null,
         "formato": null,
-        "impressoes": 7,
+        "impressoes": 8,
         "ctr": 0
       },
       {
-        "id": "7259bLLmh5g",
+        "id": "95AHmVN3esk",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 8,
+        "ctr": 0
+      },
+      {
+        "id": "KWrm2MYT2QU",
         "titulo": null,
         "formato": null,
         "impressoes": 7,
@@ -1340,126 +1277,77 @@
         "ctr": 0
       },
       {
-        "id": "NofbVRcGXpo",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 7,
-        "ctr": 0
-      },
-      {
-        "id": "dcGHCd8AC50",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 7,
-        "ctr": 0
-      },
-      {
-        "id": "7x1Re7xifD4",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 7,
-        "ctr": 0.2857142857142857
-      },
-      {
-        "id": "hC6rELdU-2w",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 7,
-        "ctr": 0
-      },
-      {
-        "id": "bTob_l7j9h4",
+        "id": "yvFjHyw8UDU",
         "titulo": null,
         "formato": null,
         "impressoes": 6,
         "ctr": 0
       },
       {
-        "id": "vDT0Oyx5jkw",
+        "id": "FXFNufT1ko8",
         "titulo": null,
         "formato": null,
         "impressoes": 6,
-        "ctr": 0
-      },
-      {
-        "id": "JmQ_LLb5c48",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 6,
-        "ctr": 0
-      },
-      {
-        "id": "fSjAOqhGD3E",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 6,
-        "ctr": 0
-      },
-      {
-        "id": "gtclXX0YwFo",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 6,
-        "ctr": 0
-      },
-      {
-        "id": "HFg0NNmx2xI",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 6,
-        "ctr": 0
-      },
-      {
-        "id": "IRUXAGs4_TM",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 6,
-        "ctr": 0
-      },
-      {
-        "id": "BCuSkTIkBLk",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 5,
-        "ctr": 0
-      },
-      {
-        "id": "B-fuYEH5CfA",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 5,
-        "ctr": 0
-      },
-      {
-        "id": "od_hwQcZlF8",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 5,
-        "ctr": 0
-      },
-      {
-        "id": "95AHmVN3esk",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 5,
         "ctr": 0
       },
       {
         "id": "qFWkhnbyNiU",
         "titulo": null,
         "formato": null,
-        "impressoes": 5,
+        "impressoes": 6,
         "ctr": 0
       },
       {
-        "id": "It07lW03rbY",
+        "id": "ape5oa93_Co",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 6,
+        "ctr": 0
+      },
+      {
+        "id": "PpSwyrVOoq4",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 6,
+        "ctr": 0
+      },
+      {
+        "id": "Li-0BKBawOM",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 6,
+        "ctr": 0
+      },
+      {
+        "id": "Wbx9UY1K7wg",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 6,
+        "ctr": 0
+      },
+      {
+        "id": "2lt_gow62xQ",
         "titulo": null,
         "formato": null,
         "impressoes": 5,
         "ctr": 0
       },
       {
-        "id": "REOufRkw5kA",
+        "id": "-kT7_2jFjBM",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 5,
+        "ctr": 0
+      },
+      {
+        "id": "2TZT_K5k2qc",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 5,
+        "ctr": 0
+      },
+      {
+        "id": "KCGmsIOOOC4",
         "titulo": null,
         "formato": null,
         "impressoes": 5,
@@ -1473,7 +1361,91 @@
         "ctr": 0
       },
       {
-        "id": "ygRFrW5Vr-0",
+        "id": "8VEFRvZQP1k",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 5,
+        "ctr": 0
+      },
+      {
+        "id": "32HdE6zxnVs",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 5,
+        "ctr": 0
+      },
+      {
+        "id": "EyTlgtP1r2M",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 5,
+        "ctr": 0
+      },
+      {
+        "id": "o7o0bUYwUtM",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 5,
+        "ctr": 0
+      },
+      {
+        "id": "AStHGn0_INc",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 5,
+        "ctr": 0.2
+      },
+      {
+        "id": "Caus4r5_V3I",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 5,
+        "ctr": 0
+      },
+      {
+        "id": "bYGGYndvCKQ",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 5,
+        "ctr": 0
+      },
+      {
+        "id": "t149yUuDbxw",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 5,
+        "ctr": 0
+      },
+      {
+        "id": "BCuSkTIkBLk",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 5,
+        "ctr": 0
+      },
+      {
+        "id": "vDT0Oyx5jkw",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 5,
+        "ctr": 0
+      },
+      {
+        "id": "fSjAOqhGD3E",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 5,
+        "ctr": 0
+      },
+      {
+        "id": "REOufRkw5kA",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 5,
+        "ctr": 0
+      },
+      {
+        "id": "h_JymS9qRlA",
         "titulo": null,
         "formato": null,
         "impressoes": 5,
@@ -1494,21 +1466,91 @@
         "ctr": 0.2
       },
       {
-        "id": "Z9Guyhls8Rc",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 5,
-        "ctr": 0
-      },
-      {
-        "id": "t149yUuDbxw",
+        "id": "p6RFQTzJ340",
         "titulo": null,
         "formato": null,
         "impressoes": 4,
         "ctr": 0
       },
       {
-        "id": "_J4A3qljaB8",
+        "id": "6qSfh5Tex2A",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 4,
+        "ctr": 0
+      },
+      {
+        "id": "WvmoFQ2zkQI",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 4,
+        "ctr": 0
+      },
+      {
+        "id": "gtclXX0YwFo",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 4,
+        "ctr": 0
+      },
+      {
+        "id": "NLWgdFG22RQ",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 4,
+        "ctr": 0
+      },
+      {
+        "id": "VNKnIOhiEPs",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 4,
+        "ctr": 0
+      },
+      {
+        "id": "kDAkBAAlG3o",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 4,
+        "ctr": 0
+      },
+      {
+        "id": "NC4Pi61FDPU",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 4,
+        "ctr": 0
+      },
+      {
+        "id": "mDoIJkUKYMg",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 4,
+        "ctr": 0
+      },
+      {
+        "id": "vriak9lBI48",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 4,
+        "ctr": 0.25
+      },
+      {
+        "id": "yttsSbKZ8g8",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 4,
+        "ctr": 0
+      },
+      {
+        "id": "0W0Qlr71MyE",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 4,
+        "ctr": 0
+      },
+      {
+        "id": "5t0sZbhyf3c",
         "titulo": null,
         "formato": null,
         "impressoes": 4,
@@ -1522,21 +1564,7 @@
         "ctr": 0
       },
       {
-        "id": "e-3UxOrBbxg",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 4,
-        "ctr": 0
-      },
-      {
-        "id": "SZSGAxqmmm0",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 4,
-        "ctr": 0.5
-      },
-      {
-        "id": "WAm6MZFTQwY",
+        "id": "ET3RQGjd7qc",
         "titulo": null,
         "formato": null,
         "impressoes": 4,
@@ -1550,49 +1578,42 @@
         "ctr": 0
       },
       {
-        "id": "1UzrcHT6kQQ",
+        "id": "HFg0NNmx2xI",
         "titulo": null,
         "formato": null,
         "impressoes": 4,
         "ctr": 0
       },
       {
-        "id": "IobLNhpk_ho",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 4,
-        "ctr": 0.5
-      },
-      {
-        "id": "_RdK4AS4Iso",
+        "id": "IRUXAGs4_TM",
         "titulo": null,
         "formato": null,
         "impressoes": 4,
         "ctr": 0
       },
       {
-        "id": "0W0Qlr71MyE",
+        "id": "7x1Re7xifD4",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 4,
+        "ctr": 0.25
+      },
+      {
+        "id": "DTzLpHu6F2k",
         "titulo": null,
         "formato": null,
         "impressoes": 3,
         "ctr": 0
       },
       {
-        "id": "5t0sZbhyf3c",
+        "id": "WAm6MZFTQwY",
         "titulo": null,
         "formato": null,
         "impressoes": 3,
         "ctr": 0
       },
       {
-        "id": "qiYflPsF8Yo",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 3,
-        "ctr": 0
-      },
-      {
-        "id": "PpSwyrVOoq4",
+        "id": "qaClDlqmsJM",
         "titulo": null,
         "formato": null,
         "impressoes": 3,
@@ -1606,14 +1627,98 @@
         "ctr": 0
       },
       {
-        "id": "N9-kotGrm50",
+        "id": "X-N6Fk6TykE",
         "titulo": null,
         "formato": null,
         "impressoes": 3,
         "ctr": 0
       },
       {
-        "id": "q6wghA85cMQ",
+        "id": "ZzyMe7K9Sqw",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 3,
+        "ctr": 0
+      },
+      {
+        "id": "oay7rBGNbyQ",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 3,
+        "ctr": 0
+      },
+      {
+        "id": "m-PKLosa9Pc",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 3,
+        "ctr": 0
+      },
+      {
+        "id": "CnZJVyEFzNM",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 3,
+        "ctr": 0
+      },
+      {
+        "id": "GVtEczdKfWs",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 3,
+        "ctr": 0
+      },
+      {
+        "id": "It07lW03rbY",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 3,
+        "ctr": 0
+      },
+      {
+        "id": "jN4k73LrO_k",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 3,
+        "ctr": 0
+      },
+      {
+        "id": "WaXL2ST00eE",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 3,
+        "ctr": 0
+      },
+      {
+        "id": "JmQ_LLb5c48",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 3,
+        "ctr": 0
+      },
+      {
+        "id": "_J4A3qljaB8",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 3,
+        "ctr": 0
+      },
+      {
+        "id": "iwMaA3Dqg6o",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 3,
+        "ctr": 0.3333333333333333
+      },
+      {
+        "id": "IoOpntVp4Xc",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 3,
+        "ctr": 0
+      },
+      {
+        "id": "e-3UxOrBbxg",
         "titulo": null,
         "formato": null,
         "impressoes": 3,
@@ -1627,20 +1732,6 @@
         "ctr": 0
       },
       {
-        "id": "X-N6Fk6TykE",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 3,
-        "ctr": 0
-      },
-      {
-        "id": "0xXemMB9l7g",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 3,
-        "ctr": 0.6666666666666666
-      },
-      {
         "id": "3VEt_C3CeKM",
         "titulo": null,
         "formato": null,
@@ -1648,98 +1739,91 @@
         "ctr": 0
       },
       {
-        "id": "5tPF0wxhSrw",
+        "id": "hC6rELdU-2w",
         "titulo": null,
         "formato": null,
         "impressoes": 3,
         "ctr": 0
       },
       {
-        "id": "VNKnIOhiEPs",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 3,
-        "ctr": 0
-      },
-      {
-        "id": "JlIWqKb8Qv8",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 3,
-        "ctr": 0
-      },
-      {
-        "id": "32HdE6zxnVs",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 3,
-        "ctr": 0
-      },
-      {
-        "id": "5oPhSeCeaFU",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 3,
-        "ctr": 0
-      },
-      {
-        "id": "puZw9VLeO3g",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 3,
-        "ctr": 0
-      },
-      {
-        "id": "AeXiOzd_cNo",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 3,
-        "ctr": 0
-      },
-      {
-        "id": "25abddJTGNM",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 3,
-        "ctr": 0
-      },
-      {
-        "id": "G53os5k-gDY",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 3,
-        "ctr": 0
-      },
-      {
-        "id": "PrCitJbL-w4",
+        "id": "YW-RcVkGJ6o",
         "titulo": null,
         "formato": null,
         "impressoes": 2,
         "ctr": 0
       },
       {
-        "id": "ape5oa93_Co",
+        "id": "ygRFrW5Vr-0",
         "titulo": null,
         "formato": null,
         "impressoes": 2,
         "ctr": 0
       },
       {
-        "id": "ywNjIT_LWBo",
+        "id": "-dnPYUrfMRc",
         "titulo": null,
         "formato": null,
         "impressoes": 2,
         "ctr": 0
       },
       {
-        "id": "ET3RQGjd7qc",
+        "id": "6nuk9s8g9UU",
         "titulo": null,
         "formato": null,
         "impressoes": 2,
         "ctr": 0
       },
       {
-        "id": "iwMaA3Dqg6o",
+        "id": "KtnTi_fctWs",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 2,
+        "ctr": 0
+      },
+      {
+        "id": "v5brKJNaZsE",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 2,
+        "ctr": 0
+      },
+      {
+        "id": "BWEmDq5GjRc",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 2,
+        "ctr": 0
+      },
+      {
+        "id": "q8igM7VJwzQ",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 2,
+        "ctr": 0
+      },
+      {
+        "id": "-PJ3SVAcx1U",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 2,
+        "ctr": 0
+      },
+      {
+        "id": "0PlTHRUTwtU",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 2,
+        "ctr": 0
+      },
+      {
+        "id": "N9-kotGrm50",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 2,
+        "ctr": 0
+      },
+      {
+        "id": "SZSGAxqmmm0",
         "titulo": null,
         "formato": null,
         "impressoes": 2,
@@ -1753,14 +1837,14 @@
         "ctr": 0
       },
       {
-        "id": "IoOpntVp4Xc",
+        "id": "0xXemMB9l7g",
         "titulo": null,
         "formato": null,
         "impressoes": 2,
-        "ctr": 0
+        "ctr": 0.5
       },
       {
-        "id": "b32W6oUkMNQ",
+        "id": "5tPF0wxhSrw",
         "titulo": null,
         "formato": null,
         "impressoes": 2,
@@ -1795,7 +1879,7 @@
         "ctr": 0
       },
       {
-        "id": "p6RFQTzJ340",
+        "id": "JlIWqKb8Qv8",
         "titulo": null,
         "formato": null,
         "impressoes": 2,
@@ -1809,84 +1893,133 @@
         "ctr": 0
       },
       {
-        "id": "-dnPYUrfMRc",
+        "id": "puZw9VLeO3g",
         "titulo": null,
         "formato": null,
         "impressoes": 2,
         "ctr": 0
       },
       {
-        "id": "ebHnXQhrDVU",
+        "id": "WGcNSMJ9rh0",
         "titulo": null,
         "formato": null,
-        "impressoes": 2,
+        "impressoes": 1,
         "ctr": 0
       },
       {
-        "id": "qaClDlqmsJM",
+        "id": "s-rlTP43-Ls",
         "titulo": null,
         "formato": null,
-        "impressoes": 2,
+        "impressoes": 1,
+        "ctr": 0
+      },
+      {
+        "id": "xOxmEZWUxrI",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 1,
         "ctr": 0
       },
       {
         "id": "yJwmPPvp7fk",
         "titulo": null,
         "formato": null,
-        "impressoes": 2,
+        "impressoes": 1,
         "ctr": 0
       },
       {
-        "id": "-kT7_2jFjBM",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 2,
-        "ctr": 0
-      },
-      {
-        "id": "gA1XGOF7yuc",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 2,
-        "ctr": 0
-      },
-      {
-        "id": "XOCVmLuTxiI",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 2,
-        "ctr": 0
-      },
-      {
-        "id": "6qSfh5Tex2A",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 2,
-        "ctr": 0
-      },
-      {
-        "id": "BWEmDq5GjRc",
+        "id": "5CMkLi8Jtdc",
         "titulo": null,
         "formato": null,
         "impressoes": 1,
         "ctr": 0
       },
       {
-        "id": "q8igM7VJwzQ",
+        "id": "6YXcISESKdQ",
         "titulo": null,
         "formato": null,
         "impressoes": 1,
         "ctr": 0
       },
       {
-        "id": "YW-RcVkGJ6o",
+        "id": "EcW5jOxY2fY",
         "titulo": null,
         "formato": null,
         "impressoes": 1,
         "ctr": 0
       },
       {
-        "id": "0PlTHRUTwtU",
+        "id": "Hre36qRppdA",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 1,
+        "ctr": 0
+      },
+      {
+        "id": "JM93ZIA_Upg",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 1,
+        "ctr": 0
+      },
+      {
+        "id": "_U3_Kk6nMDc",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 1,
+        "ctr": 0
+      },
+      {
+        "id": "L4Q9CaKBr4g",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 1,
+        "ctr": 0
+      },
+      {
+        "id": "xwEMAMr27Ck",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 1,
+        "ctr": 0
+      },
+      {
+        "id": "9oKlmfCEo4E",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 1,
+        "ctr": 0
+      },
+      {
+        "id": "AeXiOzd_cNo",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 1,
+        "ctr": 0
+      },
+      {
+        "id": "BmMFc1Oktzw",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 1,
+        "ctr": 0
+      },
+      {
+        "id": "1UzrcHT6kQQ",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 1,
+        "ctr": 0
+      },
+      {
+        "id": "S94DvB7yTZM",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 1,
+        "ctr": 0
+      },
+      {
+        "id": "E7zfIdP7ufE",
         "titulo": null,
         "formato": null,
         "impressoes": 1,
@@ -1894,6 +2027,13 @@
       },
       {
         "id": "UU8Yb6UXe-Y",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 1,
+        "ctr": 0
+      },
+      {
+        "id": "q6wghA85cMQ",
         "titulo": null,
         "formato": null,
         "impressoes": 1,
@@ -1921,14 +2061,14 @@
         "ctr": 0
       },
       {
-        "id": "S3l4q8439hA",
+        "id": "b32W6oUkMNQ",
         "titulo": null,
         "formato": null,
         "impressoes": 1,
         "ctr": 0
       },
       {
-        "id": "6nuk9s8g9UU",
+        "id": "S3l4q8439hA",
         "titulo": null,
         "formato": null,
         "impressoes": 1,
@@ -1942,6 +2082,20 @@
         "ctr": 0
       },
       {
+        "id": "5oPhSeCeaFU",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 1,
+        "ctr": 0
+      },
+      {
+        "id": "8miOg8K0Tw8",
+        "titulo": null,
+        "formato": null,
+        "impressoes": 1,
+        "ctr": 0
+      },
+      {
         "id": "Fz90EOZEjdQ",
         "titulo": null,
         "formato": null,
@@ -1949,112 +2103,28 @@
         "ctr": 0
       },
       {
-        "id": "CnZJVyEFzNM",
+        "id": "dcGHCd8AC50",
         "titulo": null,
         "formato": null,
         "impressoes": 1,
         "ctr": 0
       },
       {
-        "id": "EcW5jOxY2fY",
+        "id": "yB0JyVc_pGs",
         "titulo": null,
         "formato": null,
         "impressoes": 1,
         "ctr": 0
       },
       {
-        "id": "NTJxayaV88s",
+        "id": "-WMQ2Eq5hic",
         "titulo": null,
         "formato": null,
         "impressoes": 1,
         "ctr": 0
       },
       {
-        "id": "_DH3-cY7f-w",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 1,
-        "ctr": 0
-      },
-      {
-        "id": "m0AxwX5lEHs",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 1,
-        "ctr": 0
-      },
-      {
-        "id": "s-rlTP43-Ls",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 1,
-        "ctr": 0
-      },
-      {
-        "id": "v5brKJNaZsE",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 1,
-        "ctr": 0
-      },
-      {
-        "id": "vFz1F3VSQlk",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 1,
-        "ctr": 0
-      },
-      {
-        "id": "bqUQzKA88GQ",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 1,
-        "ctr": 0
-      },
-      {
-        "id": "BNQNzCPifWw",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 1,
-        "ctr": 0
-      },
-      {
-        "id": "BmMFc1Oktzw",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 1,
-        "ctr": 0
-      },
-      {
-        "id": "G3LpOvAW7BI",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 1,
-        "ctr": 0
-      },
-      {
-        "id": "baITWiOojyY",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 1,
-        "ctr": 0
-      },
-      {
-        "id": "Xv9nPHYrbPg",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 1,
-        "ctr": 0
-      },
-      {
-        "id": "Or34xzb57po",
-        "titulo": null,
-        "formato": null,
-        "impressoes": 1,
-        "ctr": 0
-      },
-      {
-        "id": "xOxmEZWUxrI",
+        "id": "ebHnXQhrDVU",
         "titulo": null,
         "formato": null,
         "impressoes": 1,
@@ -2150,10 +2220,6 @@
       "duracaoSeg": 44,
       "comentarios": 1,
       "gostos": 0,
-      "views": 12,
-      "minutosTotais": 1,
-      "duracaoMediaSeg": 20,
-      "percentagemMedia": 0.4551,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
     },
@@ -2586,10 +2652,6 @@
       "duracaoSeg": 55,
       "comentarios": 1,
       "gostos": 1,
-      "views": 4,
-      "minutosTotais": 0,
-      "duracaoMediaSeg": 5,
-      "percentagemMedia": 0.10039999999999999,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
     },
@@ -2816,7 +2878,7 @@
       "duracaoSeg": 20,
       "comentarios": 1,
       "gostos": 0,
-      "views": 109,
+      "views": 110,
       "minutosTotais": 1,
       "duracaoMediaSeg": 6,
       "percentagemMedia": 0.3075,
@@ -2884,10 +2946,6 @@
       "duracaoSeg": 54,
       "comentarios": 1,
       "gostos": 0,
-      "views": 1,
-      "minutosTotais": 0,
-      "duracaoMediaSeg": 0,
-      "percentagemMedia": 0,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
     },
@@ -3037,10 +3095,6 @@
       "duracaoSeg": 49,
       "comentarios": 1,
       "gostos": 0,
-      "views": 2,
-      "minutosTotais": 0,
-      "duracaoMediaSeg": 0,
-      "percentagemMedia": 0,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
     },
@@ -3586,10 +3640,6 @@
       "duracaoSeg": 16,
       "comentarios": 1,
       "gostos": 0,
-      "views": 4,
-      "minutosTotais": 0,
-      "duracaoMediaSeg": 0,
-      "percentagemMedia": 0,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
     },
@@ -3705,7 +3755,7 @@
       "duracaoSeg": 15,
       "comentarios": 1,
       "gostos": 0,
-      "views": 63,
+      "views": 64,
       "minutosTotais": 1,
       "duracaoMediaSeg": 10,
       "percentagemMedia": 0.6697,
@@ -3892,10 +3942,6 @@
       "duracaoSeg": 15,
       "comentarios": 1,
       "gostos": 0,
-      "views": 23,
-      "minutosTotais": 0,
-      "duracaoMediaSeg": 5,
-      "percentagemMedia": 0.3933,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
     },
@@ -4076,10 +4122,6 @@
       "duracaoSeg": 16,
       "comentarios": 1,
       "gostos": 0,
-      "views": 27,
-      "minutosTotais": 0,
-      "duracaoMediaSeg": 15,
-      "percentagemMedia": 0.9652,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
     },
@@ -4609,10 +4651,6 @@
       "duracaoSeg": 15,
       "comentarios": 1,
       "gostos": 0,
-      "views": 7,
-      "minutosTotais": 0,
-      "duracaoMediaSeg": 4,
-      "percentagemMedia": 0.2933,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
     },
@@ -4656,10 +4694,6 @@
       "duracaoSeg": 15,
       "comentarios": 1,
       "gostos": 0,
-      "views": 20,
-      "minutosTotais": 0,
-      "duracaoMediaSeg": 4,
-      "percentagemMedia": 0.29,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
     },
@@ -4775,10 +4809,6 @@
       "duracaoSeg": 48,
       "comentarios": 1,
       "gostos": 0,
-      "views": 1,
-      "minutosTotais": 0,
-      "duracaoMediaSeg": 31,
-      "percentagemMedia": 0.6457999999999999,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
     },
@@ -4835,10 +4865,6 @@
       "duracaoSeg": 17,
       "comentarios": 1,
       "gostos": 0,
-      "views": 1,
-      "minutosTotais": 0,
-      "duracaoMediaSeg": 9,
-      "percentagemMedia": 0.5824,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
     },
@@ -4933,7 +4959,7 @@
       "duracaoSeg": 54,
       "comentarios": 1,
       "gostos": 0,
-      "views": 6,
+      "views": 7,
       "minutosTotais": 0,
       "duracaoMediaSeg": 26,
       "percentagemMedia": 0.4863,
@@ -5018,10 +5044,6 @@
       "duracaoSeg": 17,
       "comentarios": 1,
       "gostos": 0,
-      "views": 2,
-      "minutosTotais": 0,
-      "duracaoMediaSeg": 16,
-      "percentagemMedia": 0.9882,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
     },
@@ -5298,7 +5320,7 @@
       "publicadoEm": "2026-10-07",
       "privacidade": "public",
       "duracaoSeg": 16,
-      "comentarios": 1,
+      "comentarios": 2,
       "gostos": 0,
       "views": 20,
       "minutosTotais": 0,
@@ -5347,7 +5369,7 @@
       "duracaoSeg": 13,
       "comentarios": 1,
       "gostos": 0,
-      "views": 3,
+      "views": 4,
       "minutosTotais": 0,
       "duracaoMediaSeg": 0,
       "percentagemMedia": 0,
@@ -5377,7 +5399,7 @@
       "duracaoSeg": 18,
       "comentarios": 1,
       "gostos": 0,
-      "views": 1,
+      "views": 2,
       "minutosTotais": 0,
       "duracaoMediaSeg": 0,
       "percentagemMedia": 0,
@@ -5441,10 +5463,6 @@
       "duracaoSeg": 15,
       "comentarios": 1,
       "gostos": 0,
-      "views": 4,
-      "minutosTotais": 0,
-      "duracaoMediaSeg": 1,
-      "percentagemMedia": 0.0667,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
     },
@@ -5505,7 +5523,7 @@
       "duracaoSeg": 15,
       "comentarios": 1,
       "gostos": 0,
-      "views": 12,
+      "views": 15,
       "minutosTotais": 0,
       "duracaoMediaSeg": 10,
       "percentagemMedia": 0.7118000000000001,
@@ -5556,12 +5574,12 @@
       "duracaoSeg": 13,
       "comentarios": 1,
       "gostos": 0,
-      "views": 31,
+      "views": 32,
       "minutosTotais": 1,
       "duracaoMediaSeg": 11,
       "percentagemMedia": 0.8498,
       "curva": null,
-      "erro": "Analytics 500: {\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"Internal error encountered.\",\n    \"errors\": [\n      {\n        \"message\": \"Internal error encountered.\",\n        \"domain\": \"global\",\n        \"reason\": \"backendError\"\n      }\n    ],\n    \"status\": \"INTERNAL\"\n  }\n}\n"
+      "erro": "sem dados suficientes (audiência pequena de mais)"
     },
     {
       "slug": "fluxo-de-caixa",
@@ -5590,7 +5608,7 @@
       "duracaoSeg": 15,
       "comentarios": 1,
       "gostos": 0,
-      "views": 41,
+      "views": 44,
       "minutosTotais": 1,
       "duracaoMediaSeg": 12,
       "percentagemMedia": 0.861,
@@ -5607,7 +5625,7 @@
       "duracaoSeg": 43,
       "comentarios": 1,
       "gostos": 0,
-      "views": 9,
+      "views": 10,
       "minutosTotais": 0,
       "duracaoMediaSeg": 5,
       "percentagemMedia": 0.1233,
@@ -5624,7 +5642,7 @@
       "duracaoSeg": 14,
       "comentarios": 1,
       "gostos": 0,
-      "views": 3,
+      "views": 4,
       "minutosTotais": 0,
       "duracaoMediaSeg": 0,
       "percentagemMedia": 0,
@@ -5641,7 +5659,7 @@
       "duracaoSeg": 17,
       "comentarios": 1,
       "gostos": 0,
-      "views": 24,
+      "views": 25,
       "minutosTotais": 0,
       "duracaoMediaSeg": 6,
       "percentagemMedia": 0.3529,
@@ -5658,6 +5676,10 @@
       "duracaoSeg": 48,
       "comentarios": 1,
       "gostos": 0,
+      "views": 1,
+      "minutosTotais": 0,
+      "duracaoMediaSeg": 15,
+      "percentagemMedia": 0.32439999999999997,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
     },
@@ -5671,6 +5693,10 @@
       "duracaoSeg": 17,
       "comentarios": 1,
       "gostos": 0,
+      "views": 1,
+      "minutosTotais": 0,
+      "duracaoMediaSeg": 0,
+      "percentagemMedia": 0,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
     },
@@ -5684,6 +5710,10 @@
       "duracaoSeg": 17,
       "comentarios": 1,
       "gostos": 0,
+      "views": 15,
+      "minutosTotais": 0,
+      "duracaoMediaSeg": 16,
+      "percentagemMedia": 0.9483,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
     },
@@ -5714,6 +5744,10 @@
       "duracaoSeg": 17,
       "comentarios": 1,
       "gostos": 0,
+      "views": 6,
+      "minutosTotais": 0,
+      "duracaoMediaSeg": 9,
+      "percentagemMedia": 0.5725,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
     },
@@ -5727,6 +5761,10 @@
       "duracaoSeg": 55,
       "comentarios": 1,
       "gostos": 0,
+      "views": 1,
+      "minutosTotais": 1,
+      "duracaoMediaSeg": 61,
+      "percentagemMedia": 1.1128,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
     },
@@ -5738,7 +5776,312 @@
       "publicadoEm": "2026-10-18",
       "privacidade": "public",
       "duracaoSeg": 45,
+      "comentarios": 1,
+      "gostos": 0,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "planejamento-financeiro-pessoal",
+      "videoId": "m-PKLosa9Pc",
+      "formato": "short",
+      "foraDoRegisto": false,
+      "publicadoEm": "2026-10-19",
+      "privacidade": "public",
+      "duracaoSeg": 46,
+      "comentarios": 1,
+      "gostos": 0,
+      "views": 1,
+      "minutosTotais": 0,
+      "duracaoMediaSeg": 59,
+      "percentagemMedia": 1.2831000000000001,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "loop-dentista-das-criancas-se-parar",
+      "videoId": "R0jeX6C9B7c",
+      "formato": "short",
+      "foraDoRegisto": false,
+      "publicadoEm": "2026-10-19",
+      "privacidade": "public",
+      "duracaoSeg": 19,
+      "comentarios": 1,
+      "gostos": 0,
+      "views": 5,
+      "minutosTotais": 1,
+      "duracaoMediaSeg": 20,
+      "percentagemMedia": 1.0779,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "loop-primeiro-guardado-se-parar",
+      "videoId": "ZzyMe7K9Sqw",
+      "formato": "short",
+      "foraDoRegisto": false,
+      "publicadoEm": "2026-10-20",
+      "privacidade": "public",
+      "duracaoSeg": 19,
+      "comentarios": 1,
+      "gostos": 0,
+      "views": 10,
+      "minutosTotais": 0,
+      "duracaoMediaSeg": 6,
+      "percentagemMedia": 0.31579999999999997,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "custo-de-vida-no-paraguai",
+      "videoId": "X2duSbsCBCU",
+      "formato": "short",
+      "foraDoRegisto": false,
+      "publicadoEm": "2026-10-20",
+      "privacidade": "public",
+      "duracaoSeg": 50,
+      "comentarios": 1,
+      "gostos": 0,
+      "views": 3,
+      "minutosTotais": 0,
+      "duracaoMediaSeg": 0,
+      "percentagemMedia": 0,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "loop-mercado-subindo-ta-perdendo",
+      "videoId": "WvmoFQ2zkQI",
+      "formato": "short",
+      "foraDoRegisto": false,
+      "publicadoEm": "2026-10-20",
+      "privacidade": "public",
+      "duracaoSeg": 19,
+      "comentarios": 1,
+      "gostos": 0,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "loop-reserva-emergencia-ta-perdendo",
+      "videoId": "0ygPIS1pxYM",
+      "formato": "short",
+      "foraDoRegisto": false,
+      "publicadoEm": "2026-10-21",
+      "privacidade": "public",
+      "duracaoSeg": 19,
+      "comentarios": 1,
+      "gostos": 0,
+      "views": 117,
+      "minutosTotais": 1,
+      "duracaoMediaSeg": 8,
+      "percentagemMedia": 0.4476,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "kw-5-truques-que-voce-erra-ao-tentar-economizar-r-200-por-mes",
+      "videoId": "yvFjHyw8UDU",
+      "formato": "short",
+      "foraDoRegisto": false,
+      "publicadoEm": "2026-10-21",
+      "privacidade": "public",
+      "duracaoSeg": 56,
+      "comentarios": 1,
+      "gostos": 0,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "loop-dez-vezes-sem-juros-comeca-assim",
+      "videoId": "KCGmsIOOOC4",
+      "formato": "short",
+      "foraDoRegisto": false,
+      "publicadoEm": "2026-10-21",
+      "privacidade": "public",
+      "duracaoSeg": 19,
+      "comentarios": 1,
+      "gostos": 0,
+      "views": 2,
+      "minutosTotais": 0,
+      "duracaoMediaSeg": 0,
+      "percentagemMedia": 0,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "loop-decimo-terceiro-ninguem-fala",
+      "videoId": "QEmVTzMNatU",
+      "formato": "short",
+      "foraDoRegisto": false,
+      "publicadoEm": "2026-10-22",
+      "privacidade": "public",
+      "duracaoSeg": 19,
+      "comentarios": 1,
+      "gostos": 0,
+      "views": 3,
+      "minutosTotais": 0,
+      "duracaoMediaSeg": 0,
+      "percentagemMedia": 0,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "kw-corte-r-200-do-seu-cartao-em-30-dias",
+      "videoId": "RhyT684V_LY",
+      "formato": "short",
+      "foraDoRegisto": false,
+      "publicadoEm": "2026-10-22",
+      "privacidade": "public",
+      "duracaoSeg": 57,
+      "comentarios": 1,
+      "gostos": 0,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "loop-emprestimo-por-telefone-depois-de-anos",
+      "videoId": "c5EUmRJJpJA",
+      "formato": "short",
+      "foraDoRegisto": false,
+      "publicadoEm": "2026-10-22",
+      "privacidade": "public",
+      "duracaoSeg": 19,
+      "comentarios": 1,
+      "gostos": 0,
+      "views": 1,
+      "minutosTotais": 0,
+      "duracaoMediaSeg": 0,
+      "percentagemMedia": 0,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "loop-limpar-o-nome-depois-de-anos",
+      "videoId": "WGcNSMJ9rh0",
+      "formato": "short",
+      "foraDoRegisto": false,
+      "publicadoEm": "2026-10-23",
+      "privacidade": "public",
+      "duracaoSeg": 19,
+      "comentarios": 1,
+      "gostos": 0,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "kw-como-r-200-desaparecem-em-3-compras-do-dia-a-dia",
+      "videoId": "DTzLpHu6F2k",
+      "formato": "short",
+      "foraDoRegisto": false,
+      "publicadoEm": "2026-10-23",
+      "privacidade": "public",
+      "duracaoSeg": 49,
+      "comentarios": 1,
+      "gostos": 0,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "loop-ipva-e-iptu-e-serio-que",
+      "videoId": "2lt_gow62xQ",
+      "formato": "short",
+      "foraDoRegisto": false,
+      "publicadoEm": "2026-10-23",
+      "privacidade": "public",
+      "duracaoSeg": 22,
+      "comentarios": 1,
+      "gostos": 0,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "loop-conta-so-das-contas-nunca-faca",
+      "videoId": "r0tUJMm96Bc",
+      "formato": "short",
+      "foraDoRegisto": false,
+      "publicadoEm": "2026-10-24",
+      "privacidade": "public",
+      "duracaoSeg": 21,
+      "comentarios": 1,
+      "gostos": 0,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "gasto-fixo",
+      "videoId": "Y3J7psGxt-c",
+      "formato": "short",
+      "foraDoRegisto": false,
+      "publicadoEm": "2026-10-24",
+      "privacidade": "public",
+      "duracaoSeg": 50,
+      "comentarios": 1,
+      "gostos": 0,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "loop-remedio-todo-mes-ninguem-fala",
+      "videoId": "6C9VD4es4A4",
+      "formato": "short",
+      "foraDoRegisto": false,
+      "publicadoEm": "2026-10-24",
+      "privacidade": "public",
+      "duracaoSeg": 21,
+      "comentarios": 1,
+      "gostos": 0,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "loop-trocar-divida-cara-faca-isso",
+      "videoId": "Ya838OB0Ntc",
+      "formato": "short",
+      "foraDoRegisto": false,
+      "publicadoEm": "2026-10-25",
+      "privacidade": "public",
+      "duracaoSeg": 21,
       "comentarios": 0,
+      "gostos": 0,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "renda-mensal-do-neymar",
+      "videoId": "YIkYK9-twR0",
+      "formato": "short",
+      "foraDoRegisto": false,
+      "publicadoEm": "2026-10-25",
+      "privacidade": "private",
+      "duracaoSeg": 45,
+      "comentarios": 0,
+      "gostos": 0,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "loop-material-escolar-comeca-assim",
+      "videoId": "PpRxWY5oeqo",
+      "formato": "short",
+      "foraDoRegisto": false,
+      "publicadoEm": "2026-10-25",
+      "privacidade": "private",
+      "duracaoSeg": 24,
+      "comentarios": 0,
+      "gostos": 0,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "como-juntar-mil-reais",
+      "videoId": "5HMn_ILgaeQ",
+      "formato": "longo",
+      "foraDoRegisto": false,
+      "publicadoEm": "2026-10-20",
+      "privacidade": "public",
+      "duracaoSeg": 576,
+      "comentarios": 1,
       "gostos": 0,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
@@ -5753,10 +6096,10 @@
       "duracaoSeg": 502,
       "comentarios": 2,
       "gostos": 1,
-      "views": 1,
-      "minutosTotais": 8,
-      "duracaoMediaSeg": 499,
-      "percentagemMedia": 0.9944,
+      "views": 8,
+      "minutosTotais": 17,
+      "duracaoMediaSeg": 176,
+      "percentagemMedia": 0.35100000000000003,
       "curva": null,
       "erro": "sem dados suficientes (audiência pequena de mais)"
     },
@@ -5959,12 +6302,21 @@
       "duracaoSeg": 372,
       "comentarios": 1,
       "gostos": 2,
-      "views": 60,
+      "views": 61,
       "minutosTotais": 98,
-      "duracaoMediaSeg": 100,
-      "percentagemMedia": 0.2688,
-      "curva": null,
-      "erro": "Analytics 500: {\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"Internal error encountered.\",\n    \"errors\": [\n      {\n        \"message\": \"Internal error encountered.\",\n        \"domain\": \"global\",\n        \"reason\": \"backendError\"\n      }\n    ],\n    \"status\": \"INTERNAL\"\n  }\n}\n"
+      "duracaoMediaSeg": 98,
+      "percentagemMedia": 0.2648,
+      "curva": {
+        "pontos": 100,
+        "aos3s": 0.9661,
+        "aos25pc": 0.33899999999999997,
+        "aos50pc": 0.2373,
+        "aos75pc": 0.1525,
+        "noFim": 0.08470000000000001,
+        "metadeSaiEmRatio": 0.07,
+        "metadeSaiEmSegundos": 26
+      },
+      "erro": null
     },
     {
       "slug": "sair-do-vermelho",
