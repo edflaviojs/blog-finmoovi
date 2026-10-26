@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25T14:36:41.480Z",
+  "updatedAt": "2026-10-26T13:41:23.051Z",
   "sourceCursor": 1,
   "entries": [
     {
@@ -2362,6 +2362,46 @@
       "source": "gsc-gap",
       "status": "pending",
       "addedAt": "2026-10-19T14:08:29.913Z"
+    },
+    {
+      "keyword": "xetra",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-10-26T13:41:22.489Z"
+    },
+    {
+      "keyword": "swaps",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-10-26T13:41:22.489Z"
+    },
+    {
+      "keyword": "financial risk",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-10-26T13:41:22.489Z"
+    },
+    {
+      "keyword": "investir na bolsa simulador",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-10-26T13:41:22.489Z"
+    },
+    {
+      "keyword": "patrimonio",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-10-26T13:41:22.489Z"
     }
   ]
 }

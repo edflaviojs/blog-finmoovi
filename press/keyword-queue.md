@@ -1,7 +1,7 @@
 # 🗂️ Fila de Keywords (Fase 3)
 
-**Atualizado em:** 2026-10-19T14:08:30.336Z
-**Totais:** 71 pendente(s) · 110 usada(s) · 60 pulada(s)
+**Atualizado em:** 2026-10-26T13:41:23.051Z
+**Totais:** 73 pendente(s) · 113 usada(s) · 60 pulada(s)
 
 ## ⏳ Pendentes por fonte
 
@@ -52,11 +52,8 @@
 - o que levar para comer na praia para economizar
 - por que é importante economizar energia elétrica
 
-### Lacunas do GSC (prioridade 2) — 27
+### Lacunas do GSC (prioridade 2) — 29
 
-- calculadora tabela sac
-- debenture
-- mortgage
 - gastos recurrentes definicion
 - mobills alternative
 - conversor de moedas online
@@ -81,6 +78,11 @@
 - trading
 - risco financeiro
 - calculadora de investimento com aporte mensal
+- xetra
+- swaps
+- financial risk
+- investir na bolsa simulador
+- patrimonio
 
 ### Autocomplete (prioridade 3) — 0
 
@@ -90,6 +92,9 @@ _Nenhuma._
 
 | Keyword | Usada por | Em |
 |---|---|---|
+| mortgage | gerar-dicas-financeiras | 2026-10-23 |
+| debenture | gerar-dicas-financeiras | 2026-10-22 |
+| calculadora tabela sac | gerar-post-investimentos | 2026-10-21 |
 | tudo sobre investimentos | gerar-dicas-financeiras | 2026-10-12 |
 | calculadora sac price | gerar-dicas-financeiras | 2026-10-11 |
 | calculadora tabela price | gerar-dicas-financeiras | 2026-10-08 |
@@ -97,9 +102,6 @@ _Nenhuma._
 | google finance alternative | gerar-dicas-financeiras | 2026-09-27 |
 | parcelados | gerar-dicas-financeiras | 2026-09-25 |
 | gastos recurrentes | gerar-dicas-financeiras | 2026-09-24 |
-| recurring payments financial planning | gerar-dicas-financeiras | 2026-09-21 |
-| recurring fee definition | gerar-dicas-financeiras | 2026-09-20 |
-| installments | gerar-dicas-financeiras | 2026-09-19 |
 
 ## ⏭️ Puladas (já cobertas)
 
