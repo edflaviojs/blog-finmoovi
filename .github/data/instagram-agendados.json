@@ -26216,5 +26216,114 @@
         "publicaEmBR": "27/10 às 14h31"
       }
     }
+  },
+  "kw-como-r-200-desaparecem-em-3-compras-do-dia-a-dia": {
+    "midias": {
+      "video": {
+        "id": "e8cb4036-9230-4bbe-bf28-31ea6b1233a2",
+        "name": "4N8IIwedZu.mp4",
+        "originalName": null,
+        "path": "https://media.help4desk.com/4N8IIwedZu.mp4",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capa": {
+        "id": "8c21e134-4758-460a-9171-7d452c913bf5",
+        "name": "mbTziXSrIs.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/mbTziXSrIs.jpeg",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capaLarga": {
+        "id": "22865ecd-5c2e-4f1b-996d-5d56f63bd4bd",
+        "name": "kbHXX5amWh.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/kbHXX5amWh.jpeg",
+        "thumbnail": null,
+        "alt": null
+      }
+    },
+    "publicaEm": "2026-10-26T22:00:00.000Z",
+    "publicaEmBR": "26/10 às 19h00",
+    "agendadoEm": "2026-10-26T20:47:17.818Z",
+    "atualizadoEm": "2026-10-26T20:47:22.431Z",
+    "redes": {
+      "instagram": {
+        "postId": "cmvpq9nn4005xnv9ju39hooq5",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-26T22:00:00.000Z",
+        "publicaEmBR": "26/10 às 19h00",
+        "midia": "o vídeo",
+        "caracteres": 700,
+        "limite": 2200
+      },
+      "zernio-tiktok": {
+        "postId": "cmvpq9o4a005ynv9j8azjspne",
+        "canal": "finmoovi",
+        "publicaEm": "2026-10-26T22:12:00.000Z",
+        "publicaEmBR": "26/10 às 19h12",
+        "midia": "o vídeo",
+        "caracteres": 249,
+        "limite": 2200
+      },
+      "facebook": {
+        "postId": "cmvpq9ond005znv9jybbyq7iv",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-26T22:26:00.000Z",
+        "publicaEmBR": "26/10 às 19h26",
+        "midia": "o vídeo",
+        "caracteres": 470,
+        "limite": 63206
+      },
+      "linkedin-page": {
+        "postId": "cmvpq9p3l0060nv9jnxn0ul0t",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-26T22:43:00.000Z",
+        "publicaEmBR": "26/10 às 19h43",
+        "midia": "o vídeo",
+        "caracteres": 472,
+        "limite": 3000
+      },
+      "threads": {
+        "postId": "cmvpq9pk00061nv9j8adr0ceo",
+        "canal": "finmoovi",
+        "publicaEm": "2026-10-26T22:58:00.000Z",
+        "publicaEmBR": "26/10 às 19h58",
+        "midia": "o vídeo",
+        "caracteres": 114,
+        "limite": 500
+      },
+      "pinterest": {
+        "postId": "cmvpq9qfa0062nv9j0069ctvb",
+        "canal": "finmoovi",
+        "publicaEm": "2026-10-26T23:31:00.000Z",
+        "publicaEmBR": "26/10 às 20h31",
+        "midia": "vídeo primeiro, capa depois — a ordem que o Pinterest exige",
+        "caracteres": 441,
+        "limite": 500
+      },
+      "bluesky": {
+        "postId": "cmvpq9qv90063nv9j4vkwq0pe",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-10-26T23:47:00.000Z",
+        "publicaEmBR": "26/10 às 20h47",
+        "midia": "vai a capa DEITADA (o Bluesky não publica vídeo, e a em pé ficaria cortada no feed)",
+        "caracteres": 71,
+        "limite": 300
+      },
+      "instagram-story": {
+        "postId": "cmvpq9r7t0064nv9jkekp0757",
+        "tipo": "vídeo",
+        "publicaEm": "2026-10-26T22:05:00.000Z",
+        "publicaEmBR": "26/10 às 19h05"
+      },
+      "facebook-story": {
+        "postId": "cmvpq9rdp0065nv9jvh9c56ks",
+        "tipo": "vídeo",
+        "publicaEm": "2026-10-26T22:31:00.000Z",
+        "publicaEmBR": "26/10 às 19h31"
+      }
+    }
   }
 }
