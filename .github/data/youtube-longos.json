@@ -300,6 +300,59 @@
       "propostoEm": "2026-10-11T10:26:51.720Z",
       "publicadoEm": "2026-10-20T14:27:57.492Z",
       "videoId": "5HMn_ILgaeQ"
+    },
+    {
+      "slug": "gastos-escondidos-extrato-que",
+      "titulo": "11 gastos escondidos no extrato que você corta e nem sente",
+      "tema": "11 gastos escondidos no extrato que você corta sem sentir falta",
+      "angulo": "A dor é chegar ao fim do mês sem saber para onde foi o dinheiro, mesmo ganhando entre 2 e 6 mil reais. Mostro, com um extrato de R$ 3.500 de salário, 11 cobranças pequenas que passam despercebidas (assinaturas esquecidas, tarifa do banco, seguro do celular, frete, delivery por impulso) e que juntas somam cerca de R$ 380 por mês, R$ 4.560 por ano. No fim, a pessoa leva uma lista para conferir o próprio extrato em 15 minutos e o valor que volta para o bolso.",
+      "glossario": "despesa-recorrente",
+      "palavrasChave": [
+        "gastos escondidos no extrato",
+        "assinaturas esquecidas no cartão",
+        "como economizar no mês",
+        "cortar gastos sem sofrer",
+        "despesas recorrentes"
+      ],
+      "estado": "proposto",
+      "viralRef": {
+        "videoId": "PMHSk0aX_Sw",
+        "title": "11 Luxos que NÃO Custam NADA e Fazem Você Parecer Rico",
+        "views": 448638,
+        "viewsPerDay": 21716,
+        "estrutura": [
+          "lista numerada (o número está no início e promete quantas coisas vêm)",
+          "fala directamente com \"você\"",
+          "uma palavra em maiúsculas a marcar o tom"
+        ]
+      },
+      "propostoEm": "2026-10-25T08:49:48.518Z"
+    },
+    {
+      "slug": "controle-gastos-passos-para",
+      "titulo": "Controle de gastos em 5 passos para sobrar dinheiro sem largar o lazer",
+      "tema": "5 passos de controle de gastos para o dinheiro sobrar no mês, de casa e sem investir nada",
+      "angulo": "A dor é ganhar R$ 3.500 por mês e chegar ao dia 25 sem saber para onde foi o dinheiro. O vídeo mostra, com contas feitas, como separar gasto fixo e variável em 5 passos e descobrir onde somem cerca de R$ 400 por mês (delivery, assinaturas esquecidas, compras pequenas). No fim, a pessoa leva um plano simples para fazer o dinheiro sobrar mantendo o lazer, e eu conto o que vivi quando passei a anotar tudo.",
+      "glossario": "controle-de-gastos",
+      "palavrasChave": [
+        "controle de gastos",
+        "como controlar gastos",
+        "dinheiro não sobra",
+        "gasto fixo e variável",
+        "organizar finanças pessoais"
+      ],
+      "estado": "proposto",
+      "viralRef": {
+        "videoId": "SaNSC2rMP7o",
+        "title": "5 NEGÓCIOS PARA COMEÇAR EM 2027 DE CASA E COM POUCO DINHEIRO!",
+        "views": 72853,
+        "viewsPerDay": 16485,
+        "estrutura": [
+          "lista numerada (o número está no início e promete quantas coisas vêm)",
+          "uma palavra em maiúsculas a marcar o tom"
+        ]
+      },
+      "propostoEm": "2026-10-25T08:49:48.518Z"
     }
   ]
 }

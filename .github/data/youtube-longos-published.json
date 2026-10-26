@@ -130,5 +130,11 @@
       "en",
       "es"
     ]
+  },
+  "gastos-escondidos-extrato-que": {
+    "estado": "reservado",
+    "publishAt": "2026-11-01T22:00:00.000Z",
+    "reservadoEm": "2026-10-26T07:42:44.086Z",
+    "corrida": "40287289891"
   }
 }
