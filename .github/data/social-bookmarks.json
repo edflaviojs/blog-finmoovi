@@ -2838,5 +2838,65 @@
         "status": 200
       }
     }
+  },
+  {
+    "slug": "cotacoes-semana-4-outubro-2026",
+    "title": "Resumo Semanal: Dólar a R$ 5.00 — Semana 4 de outubro",
+    "url": "https://blog.finmoovi.com/posts/cotacoes-semana-4-outubro-2026",
+    "submittedAt": "2026-10-26T20:13:59.521Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1903306575
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "descubra-um-app-simples-para-organizar-suas-financas-em-2026",
+    "title": "Descubra um app simples para organizar suas finanças em 2026",
+    "url": "https://blog.finmoovi.com/posts/descubra-um-app-simples-para-organizar-suas-financas-em-2026",
+    "submittedAt": "2026-10-26T20:14:00.543Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1903306583
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "gastos-recorrentes-entenda-e-controle-de-forma-simples-em",
+    "title": "Gastos recorrentes: entenda e controle de forma simples em 2026",
+    "url": "https://blog.finmoovi.com/posts/gastos-recorrentes-entenda-e-controle-de-forma-simples-em",
+    "submittedAt": "2026-10-26T20:14:01.170Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1903306588
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
   }
 ]
