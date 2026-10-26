@@ -1,0 +1,118 @@
+{
+  "slug": "loop-delivery-de-sexta-e-serio-que",
+  "formato": "loop16",
+  "term": "O delivery de toda sexta",
+  "category": "vida",
+  "keyword": "DELIVERY",
+  "valor": "R$ 320",
+  "situacao": "delivery-de-sexta",
+  "gancho": "e-serio-que",
+  "ganchoFamilia": "é sério que",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ralo",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "É sério que ninguém está falando de delivery? Comigo é sexta.",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "sério",
+          "visual": {
+            "type": "statement",
+            "text": "Ninguém fala do delivery?"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "ninguém",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Fechei o mês. Trezentos e vinte reais foram embora só nisso.",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "Fechei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "Trezentos",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 320 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Agora eu cozinho um macarrão e meu dinheiro fica em casa.",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "cozinho",
+          "visual": {
+            "type": "statement",
+            "text": "Hoje faço um macarrão"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "macarrão",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Ninguém fala, e o ralo era o delivery de sexta.",
+      "durationSec": 3.53,
+      "shots": [
+        {
+          "anchor": "Ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "Sexta, aplicativo aberto"
+          }
+        },
+        {
+          "anchor": "delivery",
+          "visual": {
+            "type": "statement",
+            "text": "Ninguém fala do delivery?"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
