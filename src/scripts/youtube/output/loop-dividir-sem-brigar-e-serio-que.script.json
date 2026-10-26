@@ -1,0 +1,118 @@
+{
+  "slug": "loop-dividir-sem-brigar-e-serio-que",
+  "formato": "loop16",
+  "term": "Dividir as contas sem brigar",
+  "category": "vida",
+  "keyword": "CASAL",
+  "valor": "R$ 3.200",
+  "situacao": "dividir-sem-brigar",
+  "gancho": "e-serio-que",
+  "ganchoFamilia": "é sério que",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "gangorra",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "É sério que ninguém está falando de brigar por conta? Comigo, domingo.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "sério",
+          "visual": {
+            "type": "statement",
+            "text": "Brigar por conta?"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "ninguém",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "gangorra"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eram três mil e duzentos reais de contas, e eu jurava ter pago mais.",
+      "durationSec": 5.07,
+      "shots": [
+        {
+          "anchor": "duzentos",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "gangorra"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 3.200 todo mês"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Olhei o caderninho, e a gangorra nunca para.",
+      "durationSec": 2.9,
+      "shots": [
+        {
+          "anchor": "Olhei",
+          "visual": {
+            "type": "statement",
+            "text": "Olhei o caderninho"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "caderninho",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "gangorra"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Hoje a gente senta, sem brigar por conta.",
+      "durationSec": 2.9,
+      "shots": [
+        {
+          "anchor": "senta",
+          "visual": {
+            "type": "statement",
+            "text": "Sem brigar por conta"
+          }
+        },
+        {
+          "anchor": "brigar",
+          "visual": {
+            "type": "statement",
+            "text": "Brigar por conta?"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.21
+}
