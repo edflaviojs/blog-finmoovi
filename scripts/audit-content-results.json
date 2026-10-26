@@ -1,74 +1,5 @@
 [
   {
-    "file": "en-opportunity-cost.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 6,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": [
-        "dívidas",
-        "poupança",
-        "investimentos",
-        "valor"
-      ]
-    }
-  },
-  {
-    "file": "en-quotes-week-3-october-2026.md",
-    "dir": "posts",
-    "severity": 3,
-    "issues": {
-      "currency": 4,
-      "brInstitutions": [],
-      "brProducts": [
-        "Tesouro Direto",
-        "CDB",
-        "Selic"
-      ],
-      "geoRefs": [
-        "no Brasil"
-      ],
-      "ptWordsCount": 5,
-      "brBrands": [],
-      "brAcronyms": [
-        "LCI",
-        "LCA"
-      ],
-      "ptLeftovers": [
-        "dívidas",
-        "poupança",
-        "reais",
-        "investimentos",
-        "valor"
-      ]
-    }
-  },
-  {
-    "file": "en-eurozone.md",
-    "dir": "glossario",
-    "severity": 2,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": [
-        "ação",
-        "investimentos",
-        "valor"
-      ]
-    }
-  },
-  {
     "file": "en-fgc-guarantee.md",
     "dir": "glossario",
     "severity": 2,
@@ -102,6 +33,30 @@
         "LCA"
       ],
       "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-quotes-week-3-october-2026.md",
+    "dir": "posts",
+    "severity": 2,
+    "issues": {
+      "currency": 4,
+      "brInstitutions": [],
+      "brProducts": [
+        "Tesouro Direto",
+        "CDB",
+        "Selic"
+      ],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "LCI",
+        "LCA"
+      ],
+      "ptLeftovers": [
+        "reais"
+      ]
     }
   },
   {
@@ -213,6 +168,23 @@
       ],
       "brAcronyms": [],
       "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-eurozone.md",
+    "dir": "glossario",
+    "severity": 1,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "reais"
+      ]
     }
   },
   {
@@ -975,6 +947,21 @@
   },
   {
     "file": "en-cdi.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-chart.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -2174,6 +2161,21 @@
     }
   },
   {
+    "file": "en-futures.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-giro.md",
     "dir": "glossario",
     "severity": 0,
@@ -2220,6 +2222,21 @@
   },
   {
     "file": "en-hedge.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-high-yield.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -2925,6 +2942,21 @@
   },
   {
     "file": "en-how-to-turn-your-grocery-trip-into-real-savings-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-how-to-turn-your-mortgage-into-financial-peace-in-2026.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -3675,6 +3707,21 @@
   },
   {
     "file": "en-open-interest.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-opportunity-cost.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -5714,6 +5761,21 @@
     }
   },
   {
+    "file": "es-alto-rendimiento.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-amortizacion.md",
     "dir": "glossario",
     "severity": 0,
@@ -6210,6 +6272,21 @@
   },
   {
     "file": "es-como-controlar-tu-flujo-de-caja-personal-en-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-como-convertir-la-hipoteca-de-tu-casa-en-tranquilidad.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -8024,6 +8101,21 @@
     }
   },
   {
+    "file": "es-futuros.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-ganancia-de-capital.md",
     "dir": "glossario",
     "severity": 0,
@@ -8160,6 +8252,21 @@
   },
   {
     "file": "es-gobernanza-corporativa.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-grafico.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
