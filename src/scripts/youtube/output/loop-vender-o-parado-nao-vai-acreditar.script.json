@@ -1,0 +1,118 @@
+{
+  "slug": "loop-vender-o-parado-nao-vai-acreditar",
+  "formato": "loop16",
+  "term": "Vender o que está parado",
+  "category": "vida",
+  "keyword": "VENDER",
+  "valor": "R$ 700",
+  "situacao": "vender-o-parado",
+  "gancho": "nao-vai-acreditar",
+  "ganchoFamilia": "não vai acreditar",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "semente",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você não vai acreditar, mas minha garagem estava cheia de coisa parada.",
+      "durationSec": 4.45,
+      "shots": [
+        {
+          "anchor": "acreditar",
+          "visual": {
+            "type": "statement",
+            "text": "Minha garagem cheia"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "garagem",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "semente"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Anunciei tudo e, quando vi, setecentos reais na minha conta.",
+      "durationSec": 3.71,
+      "shots": [
+        {
+          "anchor": "Anunciei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "semente"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "setecentos",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 700"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Olha, aquilo estava parado sem servir pra ninguém.",
+      "durationSec": 2.97,
+      "shots": [
+        {
+          "anchor": "aquilo",
+          "visual": {
+            "type": "statement",
+            "text": "Parado há anos"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "estava",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "semente"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Na garagem, eu só vejo dinheiro parado. Você não vai acreditar?",
+      "durationSec": 4.08,
+      "shots": [
+        {
+          "anchor": "garagem",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro parado na garagem"
+          }
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Minha garagem cheia"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.21
+}
