@@ -1,0 +1,207 @@
+{
+  "slug": "fgts",
+  "term": "fgts",
+  "category": "basico",
+  "keyword": "fgts",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "O senhor sabe quanto de *FGTS* o patrão já guardou pro senhor sem o senhor ver?"
+  },
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "cofre",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "O senhor sabe quanto de FGTS o patrão já guardou pro senhor sem o senhor ver? Pode ter um dinheirão parado lá, esquecido.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "FGTS",
+          "visual": {
+            "type": "statement",
+            "text": "Seu FGTS, sem você ver"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "guardou",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "cofre"
+          }
+        },
+        {
+          "anchor": "dinheirão",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          },
+          "sfx": "alert"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Todo mês ele deposita, caladinho. O senhor não pede, não assina, não vê. Aí troca de emprego e esquece.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "Todo",
+          "visual": {
+            "type": "statement",
+            "text": "Todo mês, em silêncio"
+          }
+        },
+        {
+          "anchor": "pede",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          }
+        },
+        {
+          "anchor": "troca",
+          "visual": {
+            "type": "statement",
+            "text": "Trocou de emprego? Esqueceu."
+          },
+          "sfx": "pop"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Só que esse dinheiro é seu. Tem gente que recebe duzentos reais por mês de depósito. Em seis meses, são mil e duzentos parados.",
+      "durationSec": 9.2,
+      "shots": [
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "É seu. De direito."
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "duzentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 200"
+          }
+        },
+        {
+          "anchor": "seis",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 1200,
+            "prefix": "R$"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "parados",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "cofre"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu fui conferir no FinMoovi. Anotei o saldo de cada emprego que tive e ele somou tudo numa linha só.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "conferir",
+          "visual": {
+            "type": "app",
+            "app": "balanco",
+            "note": "Saldos de cada emprego somados numa linha só"
+          },
+          "sfx": "typewriter"
+        },
+        {
+          "anchor": "somou",
+          "visual": {
+            "type": "statement",
+            "text": "Tudo somado em um lugar"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Quanto o patrão já guardou pro senhor? Mais do que o senhor imagina. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "guardou",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "cofre"
+          }
+        },
+        {
+          "anchor": "Mais",
+          "visual": {
+            "type": "statement",
+            "text": "Mais do que imagina"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "statement",
+            "text": "Sem controle, não é seu"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Descubra quanto você tem guardado",
+    "target": "app"
+  },
+  "totalDurationSec": 44.5
+}
