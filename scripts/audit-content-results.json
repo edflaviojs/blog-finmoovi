@@ -1,5 +1,79 @@
 [
   {
+    "file": "en-fixed-assets.md",
+    "dir": "glossario",
+    "severity": 3,
+    "issues": {
+      "currency": 1,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 7,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "valor"
+      ]
+    }
+  },
+  {
+    "file": "en-quotes-week-4-october-2026.md",
+    "dir": "posts",
+    "severity": 3,
+    "issues": {
+      "currency": 6,
+      "brInstitutions": [],
+      "brProducts": [
+        "CDB",
+        "CDI",
+        "Selic"
+      ],
+      "geoRefs": [
+        "no Brasil"
+      ],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "IPCA"
+      ],
+      "ptLeftovers": [
+        "dívidas",
+        "poupança",
+        "investimentos"
+      ]
+    }
+  },
+  {
+    "file": "es-cotizaciones-semana-4-octubre-2026.md",
+    "dir": "posts",
+    "severity": 3,
+    "issues": {
+      "currency": 6,
+      "brInstitutions": [],
+      "brProducts": [
+        "Tesouro Direto",
+        "CDB",
+        "Selic"
+      ],
+      "geoRefs": [
+        "no Brasil",
+        "brasileiro",
+        "no mercado brasileiro"
+      ],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "IPCA"
+      ],
+      "ptLeftovers": [
+        "ações",
+        "poupança",
+        "reais",
+        "investimentos"
+      ]
+    }
+  },
+  {
     "file": "en-fgc-guarantee.md",
     "dir": "glossario",
     "severity": 2,
@@ -1337,6 +1411,21 @@
   },
   {
     "file": "en-discover-a-practical-alternative-to-google-finance-for-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-discover-a-simple-app-to-organize-your-finances-in-2026.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -4203,6 +4292,21 @@
   {
     "file": "en-recurring-expense.md",
     "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-recurring-expenses-understand-and-manage-them-easily-in-2026.md",
+    "dir": "posts",
     "severity": 0,
     "issues": {
       "currency": 0,
@@ -7486,6 +7590,21 @@
     }
   },
   {
+    "file": "es-descubre-una-app-sencilla-para-organizar-tus-finanzas-en.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-deuda.md",
     "dir": "glossario",
     "severity": 0,
@@ -8221,6 +8340,21 @@
     }
   },
   {
+    "file": "es-gastos-recurrentes-como-identificarlos-y-controlarlos.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-gestion-inteligente-del-agua-en-casa-consejos-practicos-para.md",
     "dir": "posts",
     "severity": 0,
@@ -8477,6 +8611,21 @@
   },
   {
     "file": "es-inflacion.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-inmovilizado.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
