@@ -1,0 +1,118 @@
+{
+  "slug": "loop-presente-de-natal-nao-vai-acreditar",
+  "formato": "loop16",
+  "term": "O presente de Natal",
+  "category": "vida",
+  "keyword": "NATAL",
+  "valor": "R$ 1.100",
+  "situacao": "presente-de-natal",
+  "gancho": "nao-vai-acreditar",
+  "ganchoFamilia": "não vai acreditar",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "fumaca",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você não vai acreditar, mas aconteceu comigo no Natal passado.",
+      "durationSec": 3.45,
+      "shots": [
+        {
+          "anchor": "acreditar",
+          "visual": {
+            "type": "statement",
+            "text": "Natal passado, olha só"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Comprei presente pra família toda e mil e cem reais viraram fumaça.",
+      "durationSec": 4.15,
+      "shots": [
+        {
+          "anchor": "Comprei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "presente",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 1.100 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Agora eu anoto a lista antes de comprar qualquer coisa.",
+      "durationSec": 3.45,
+      "shots": [
+        {
+          "anchor": "anoto",
+          "visual": {
+            "type": "statement",
+            "text": "Sem lista, some tudo"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "lista",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Senão, o Natal chega e você não vai acreditar no que some.",
+      "durationSec": 4.15,
+      "shots": [
+        {
+          "anchor": "Senão",
+          "visual": {
+            "type": "statement",
+            "text": "Você não vai acreditar"
+          }
+        },
+        {
+          "anchor": "Natal",
+          "visual": {
+            "type": "statement",
+            "text": "Natal passado, olha só"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
