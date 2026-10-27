@@ -4,6 +4,7 @@ definition: "O que é imobilizado e como isso aparece no seu dia a dia — expli
 title: "imobilizado - Glossário Financeiro"
 description: "O que é imobilizado e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/imobilizado.webp"
+imageAlt: "Pilhas de moedas douradas, vaso de vidro com planta e seta vermelha ascendente."
 category: "basico"
 tags: ["imobilizado", "glossário", "finanças"]
 author: "FinMoovi"

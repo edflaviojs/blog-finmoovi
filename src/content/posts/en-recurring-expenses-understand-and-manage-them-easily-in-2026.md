@@ -3,6 +3,7 @@ title: "Recurring Expenses: Understand and Manage Them Easily in 2026"
 description: "Learn what recurring expenses are, how to spot them, and use FinMoovi to stop surprise charges draining your wallet."
 tickerHeadline: "The expense you don’t see"
 image: "/images/posts/gastos-recorrentes-entenda-e-controle-de-forma-simples-em.webp"
+imageAlt: "Abstract blue and white waves with an upward-pointing yellow arrow."
 category: "dicas"
 locale: "en"
 tags: ["recurring expenses","personal finance","budgeting","money management"]

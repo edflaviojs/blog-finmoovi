@@ -3,6 +3,7 @@ title: "Discover a Simple App to Organize Your Finances in 2026"
 description: "Find a practical alternative that simplifies expense tracking, offers automatic reports, and works offline."
 tickerHeadline: "The missing tool in your pocket"
 image: "/images/posts/descubra-um-app-simples-para-organizar-suas-financas-em-2026.webp"
+imageAlt: "Laptop with colorful abstract wallpaper, white mug, and monitor on a desk."
 category: "orcamento"
 locale: "en"
 tags: ["alternative to finance apps","personal finance app","expense tracking","monthly budgeting","personal finance","finance app alternative"]

@@ -3,6 +3,7 @@ title: "Descubra um app simples para organizar suas finanças em 2026"
 description: "Encontre uma alternativa prática ao Mobills que simplifica o controle de gastos, oferece relatórios automáticos e funciona offline."
 tickerHeadline: "A solução que faltava no seu bolso"
 image: "/images/posts/descubra-um-app-simples-para-organizar-suas-financas-em-2026.webp"
+imageAlt: "Notebook com tela colorida, caneca branca e monitor em mesa de escritório."
 category: "orcamento"
 locale: "pt"
 tags: ["alternativa ao Mobills","app financeiro","controle de gastos","planejamento mensal","finanças pessoais","mobills alternative"]

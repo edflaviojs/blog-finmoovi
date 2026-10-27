@@ -4,6 +4,7 @@ definition: "What Fixed assets is and how it shows up in your everyday money —
 title: "Fixed assets - Financial Glossary"
 description: "What Fixed assets is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/imobilizado.webp"
+imageAlt: "Gold coins, red arrow, and plant in glass jar on dark background."
 category: "basico"
 tags: ["Fixed assets", "glossary", "finance"]
 author: "FinMoovi"

@@ -3,6 +3,7 @@ title: "Descubre una app sencilla para organizar tus finanzas en 2026"
 description: "Una alternativa práctica al típico gestor de gastos: controla, recibe reportes automáticos y funciona sin conexión."
 tickerHeadline: "La solución que faltaba en tu bolsillo"
 image: "/images/posts/descubra-um-app-simples-para-organizar-suas-financas-em-2026.webp"
+imageAlt: "Portátil con fondo morado, taza blanca y escritorio con luz natural."
 category: "orcamento"
 locale: "es"
 tags: ["alternativa a apps de finanzas","app financiera","control de gastos","planificación mensual","finanzas personales","app de control de gastos"]

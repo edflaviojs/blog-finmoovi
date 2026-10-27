@@ -2,6 +2,7 @@
 title: "Weekly Summary: Dollar at R$ 5.00 — Week 4 of october"
 description: "Weekly financial market summary: dollar, euro, Selic and tips for investors. Week 4 of october 2026."
 image: "/images/posts/cotacoes-semana-2026-10-26.webp"
+imageAlt: "Laptop with colorful screen, coffee mug, and notebook on a desk."
 category: "cotacoes"
 tags: ["quotes","dollar","euro","financial market","selic"]
 author: "FinMoovi"

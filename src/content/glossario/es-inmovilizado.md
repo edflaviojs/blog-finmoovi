@@ -4,6 +4,7 @@ definition: "Qué es inmovilizado y cómo aparece en tu día a día — explicad
 title: "inmovilizado - Glosario Financiero"
 description: "Qué es inmovilizado y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/imobilizado.webp"
+imageAlt: "Monedas doradas, planta verde en frasco, balanza y flecha roja ascendente sobre fondo oscuro."
 category: "basico"
 tags: ["inmovilizado", "glosario", "finanzas"]
 author: "FinMoovi"

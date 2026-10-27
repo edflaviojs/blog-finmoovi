@@ -3,6 +3,7 @@ title: "Gastos recurrentes: cómo identificarlos y controlarlos fácilmente en 2
 description: "Descubre qué son los gastos recurrentes, cómo detectarlos y usar FinMoovi para evitar sorpresas en tu bolsillo."
 tickerHeadline: "El gasto que no ves"
 image: "/images/posts/gastos-recorrentes-entenda-e-controle-de-forma-simples-em.webp"
+imageAlt: "Ondas abstractas azules y blancas con una flecha amarilla ascendente sobre fondo claro."
 category: "dicas"
 locale: "es"
 tags: ["gastos recurrentes","finanzas personales","ahorro","control de gastos","FinMoovi"]

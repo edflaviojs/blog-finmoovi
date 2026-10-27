@@ -3,6 +3,7 @@ title: "Gastos recorrentes: entenda e controle de forma simples em 2026"
 description: "Descubra o que são gastos recorrentes, como identificá‑los e usar o FinMoovi para eliminar surpresas no bolso."
 tickerHeadline: "O gasto que você nem vê"
 image: "/images/posts/gastos-recorrentes-entenda-e-controle-de-forma-simples-em.webp"
+imageAlt: "Ondas abstratas em azul e branco com uma seta amarela ascendente sobre fundo claro."
 category: "dicas"
 locale: "pt"
 tags: ["gastos recurrentes definicion","finanças pessoais","economia","dinheiro"]
