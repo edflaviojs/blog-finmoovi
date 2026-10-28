@@ -132,9 +132,15 @@
     ]
   },
   "gastos-escondidos-extrato-que": {
-    "estado": "reservado",
+    "videoId": "mjORPpfeQzs",
+    "uploadedAt": "2026-10-28T10:00:51.839Z",
     "publishAt": "2026-11-01T22:00:00.000Z",
-    "reservadoEm": "2026-10-28T09:28:15.830Z",
-    "corrida": "40664395946"
+    "titulo": "11 gastos escondidos no extrato que você corta e nem sente",
+    "capitulos": 7,
+    "legendas": [
+      "pt",
+      "en",
+      "es"
+    ]
   }
 }

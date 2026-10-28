@@ -314,7 +314,7 @@
         "cortar gastos sem sofrer",
         "despesas recorrentes"
       ],
-      "estado": "proposto",
+      "estado": "publicado",
       "viralRef": {
         "videoId": "PMHSk0aX_Sw",
         "title": "11 Luxos que NÃO Custam NADA e Fazem Você Parecer Rico",
@@ -326,7 +326,9 @@
           "uma palavra em maiúsculas a marcar o tom"
         ]
       },
-      "propostoEm": "2026-10-25T08:49:48.518Z"
+      "propostoEm": "2026-10-25T08:49:48.518Z",
+      "publicadoEm": "2026-10-28T10:00:51.840Z",
+      "videoId": "mjORPpfeQzs"
     },
     {
       "slug": "controle-gastos-passos-para",
