@@ -4,6 +4,7 @@ definition: "Qué es interruptor de emergencia y cómo aparece en tu día a día
 title: "interruptor de emergencia - Glosario Financiero"
 description: "Qué es interruptor de emergencia y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/kill-switch.webp"
+imageAlt: "Monedas doradas, barras y frascos con plantas sobre fondo oscuro."
 category: "basico"
 tags: ["interruptor de emergencia", "glosario", "finanzas"]
 author: "FinMoovi"

@@ -4,6 +4,7 @@ definition: "What kill switch is and how it shows up in your everyday money — 
 title: "kill switch - Financial Glossary"
 description: "What kill switch is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/kill-switch.webp"
+imageAlt: "Gold coins, glass jars with plants, and yellow bars on a dark background."
 category: "basico"
 tags: ["kill switch", "glossary", "finance"]
 author: "FinMoovi"

@@ -4,6 +4,7 @@ definition: "O que é kill switch e como isso aparece no seu dia a dia — expli
 title: "kill switch - Glossário Financeiro"
 description: "O que é kill switch e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/kill-switch.webp"
+imageAlt: "Moedas douradas, potes de vidro com plantas e barras amarelas sobre plataforma escura."
 category: "basico"
 tags: ["kill switch", "glossário", "finanças"]
 author: "FinMoovi"
