@@ -8,7 +8,7 @@
 > **Regra:** item sem *porquê* e sem *quando reavaliar* não entra. Item
 > resolvido **sai daqui** (vai para o histórico do git), não fica marcado como feito.
 
-**Criado em:** 2026-10-03 · **Última atualização:** 2026-10-23
+**Criado em:** 2026-10-03 · **Última atualização:** 2026-10-28
 
 > Irmão deste ficheiro, do lado do aplicativo:
 > `backup-app-22052025/.claude/docs/DIVIDA-TECNICA.md`.
@@ -117,43 +117,14 @@ variável `MOLDE_NOVO=sim` do repositório. O Remotion ficou de **estepe** (corr
 Documento da frente: `docs/MOLDE-NOVO-DOS-SHORTS.md`.
 
 Ficou adiado, de propósito:
-1. **O vídeo longo no estilo novo** (fase 5 do plano). O piloto de 38 s foi aprovado pelo Ed, mas o robô do
-   longo continua no Remotion. **Porquê:** é uma frente grande (16:9, 8 min, render repartido).
-   **Reavaliar:** depois de uma semana do molde nos Shorts sem tropeços.
-2. **O Short de 50 s** (composição `Short` do Remotion) ainda não passou para o molde. **Porquê:** o molde só
-   conhece o formato de 4 cenas do Short de 16s. **Reavaliar:** junto com o item 1.
-3. **Retirar o Remotion dos Shorts de 16s.** **Porquê:** é o estepe. **Reavaliar:** depois de 2 semanas sem o
+1. **Retirar o Remotion dos Shorts de 16s.** **Porquê:** é o estepe. **Reavaliar:** depois de 2 semanas sem o
    molde falhar (o log diz se o passo do Remotion correu).
-4. **Afinar objetos fracos do catálogo** (tesoura, emprestar, caixa-eletrônico, fogão: desenho simples).
+2. **Afinar objetos fracos do catálogo** (tesoura, emprestar, caixa-eletrônico, fogão: desenho simples).
    **Porquê:** funcionam, só são menos bonitos. **Reavaliar:** quando o Ed apontar algum num vídeo.
 
 ---
 
 ## B. Provas marcadas no tempo, nada a fazer até à data
-
-### B5. ⏳ A 1.ª corrida real do molde novo, com tudo
-
-**Quando:** a próxima corrida do `youtube-short16-render.yml` (agendada 04:30 UTC de **17/10/2026**; costuma
-arrancar com horas de atraso).
-
-**O que ler:** o passo "Fazer o Short no molde novo" **verde** e o "Renderizar o Short de 16s" **saltado**; o
-tempo do passo (na nuvem deu 6-7 min); os avisos amarelos da conferência; as legendas EN/ES no YouTube (acertadas
-pelo `legendas.mjs`); a capa. Se o molde falhou, o Remotion fez o vídeo, ler o porquê no log.
-
-### B1. ⏳ O filtro de realidade nunca correu contra o Search Console a sério
-
-**Quando:** **terça-feira, 07h UTC** (a primeira corrida do `gsc-otimizar-ctr` com
-a trava posta a 02/10).
-
-⚠️ (16/10) as terças de 07/10 e 14/10 já passaram, conferir o log dessas corridas antes de considerar isto aberto.
-
-O que foi provado foram as **contas e as réguas** (9 provas de mesa, incluindo três
-casos de controlo legítimos). A cadeia completa não dá para provar daqui: as
-credenciais só existem na nuvem.
-
-**O que ler na corrida:** quantas páginas passaram e **o motivo de cada rejeição** , 
-ambos são impressos. Se o filtro cortar tudo, a régua está grossa e afrouxa-se;
-`GSC_FILTRO_REALIDADE=0` desliga sem reverter código.
 
 ### B2. ⏳ A medição da capa está à espera do Google
 
@@ -183,6 +154,8 @@ Desde 14/10 (`82992729`) o Claude Sonnet 5.5 escreve primeiro, pago pelo crédit
 API do plano Max (US$ 100/mês; a organização **não tem cartão**, sem crédito, recusa,
 não cobra). Ensaio medido: 2 chamadas dos posts = **US$ 0,035**. A estimativa para o
 mês é US$ 5-10. Conferir o gasto real e se os roteiros passam mais à primeira.
+
+⚠️ (28/10) provavelmente já feito: o medidor do longo de 28/10 mostra 1 chamada `claude`, e a tentativa de quarta disparou a sério a 28/10 (falhou pela voz, não pela tentativa). Conferir o gasto real antes de considerar aberto.
 
 Também a provar nesta janela: **a tentativa de quarta do longo** (`a3088fd2`), só
 corre a sério numa semana em que a terça falhe; numa semana boa tem de sair "nada a
@@ -248,3 +221,7 @@ plano Free da Mistral não liberta a chave (14/10). Pode ser apagado.
 - **16/10/2026**, entraram A6 (o que ficou para depois no molde novo dos Shorts) e B5 (a 1.ª corrida real
   dele, a 17/10). Marcados como *provavelmente feitos, conferir*: A0 itens 1 e 2 (newsletter, outro terminal),
   B1 e B2 (datas já passadas).
+- **28/10/2026**, saíram B5 (molde novo dos Shorts corre verde, Remotion saltado, corrida de 28/10), B1 (filtro de
+  realidade correu a 27/10: 2 de 12 páginas passaram) e os itens 1 e 2 da A6 (longo e Short de 50s já no molde novo).
+  B4 marcado como provavelmente feito. Resolvido no mesmo dia e por isso **não** entrou: voz da Microsoft com
+  `Unexpected server response: 200` (msedge-tts 2.1.1, `a9b538b2`); longo de 01/11 subido (`mjORPpfeQzs`).
