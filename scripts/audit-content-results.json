@@ -3420,6 +3420,21 @@
     }
   },
   {
+    "file": "en-kill-switch.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-kyc.md",
     "dir": "glossario",
     "severity": 0,
@@ -8701,6 +8716,21 @@
   },
   {
     "file": "es-intereses-abusivos.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-interruptor-de-emergencia.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
