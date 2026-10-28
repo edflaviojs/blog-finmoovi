@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-27T16:04:56.728Z",
-  "sourceCursor": 1,
+  "updatedAt": "2026-10-28T15:39:30.571Z",
+  "sourceCursor": 2,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -2196,8 +2196,10 @@
       "category": null,
       "priority": 2,
       "source": "gsc-gap",
-      "status": "pending",
-      "addedAt": "2026-10-02T16:28:59.539Z"
+      "status": "used",
+      "addedAt": "2026-10-02T16:28:59.539Z",
+      "usedAt": "2026-10-28T15:39:30.571Z",
+      "usedBy": "gerar-dicas-financeiras"
     },
     {
       "keyword": "calcular juro composto",
