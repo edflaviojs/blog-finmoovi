@@ -1,14 +1,14 @@
 # GSC — Monitor de Indexação
 
-Gerado em: 2026-10-27T13:59:01.334Z
+Gerado em: 2026-10-28T14:53:57.400Z
 Propriedade: https://blog.finmoovi.com/
 
 ## Resumo
 
-- **1000/1091** URLs indexadas
-- **90** não indexadas
-- **1** com erro na inspeção
-- **55** página(s) de conteúdo fora do índice há ≥7 dias
+- **996/1094** URLs indexadas
+- **98** não indexadas
+- **0** com erro na inspeção
+- **56** página(s) de conteúdo fora do índice há ≥7 dias
 
 ## Sitemap
 
@@ -16,16 +16,17 @@ Propriedade: https://blog.finmoovi.com/
 
 ## Por motivo (não indexadas)
 
-- Crawled - currently not indexed: 83
+- Crawled - currently not indexed: 88
 - Duplicate, Google chose different canonical than user: 1
-- Discovered - currently not indexed: 3
-- URL is unknown to Google: 3
+- Discovered - currently not indexed: 4
+- URL is unknown to Google: 5
 
 ## Páginas de conteúdo há mais tempo fora do índice
 
 - `https://blog.finmoovi.com/en/glossario/` — Crawled - currently not indexed (desde 2026-09-20)
 - `https://blog.finmoovi.com/es/glossario/` — Crawled - currently not indexed (desde 2026-09-19)
 - `https://blog.finmoovi.com/es/autor/ed-flavio/` — Crawled - currently not indexed (desde 2026-10-17)
+- `https://blog.finmoovi.com/en/categorias/orcamento/` — Crawled - currently not indexed (desde 2026-10-21)
 - `https://blog.finmoovi.com/posts/como-usar-credito-sem-sufocar-seu-orcamento-5-passos/` — Crawled - currently not indexed (desde 2026-10-20)
 - `https://blog.finmoovi.com/posts/investimentos-para-o-segundo-semestre-estrategias-praticas/` — Duplicate, Google chose different canonical than user (desde 2026-08-07)
 - `https://blog.finmoovi.com/posts/negociar-descontos-em-contas-fixas/` — Discovered - currently not indexed (desde 2026-08-12)
@@ -46,7 +47,7 @@ Propriedade: https://blog.finmoovi.com/
 - `https://blog.finmoovi.com/es/posts/es-7-maneras-de-ahorrar-en-el-regreso-a-clases-del-segundo/` — Crawled - currently not indexed (desde 2026-10-17)
 - `https://blog.finmoovi.com/es/posts/es-7-mejores-apps-de-control-financiero-2026-guia-completa-para/` — Crawled - currently not indexed (desde 2026-10-20)
 - `https://blog.finmoovi.com/es/posts/es-ahorrando-en-la-cuenta-del-mercado/` — Crawled - currently not indexed (desde 2026-10-13)
-- `https://blog.finmoovi.com/es/posts/es-como-controlar-gastos-en-varias-monedas-con-una-app-en-5/` — URL is unknown to Google (desde 2026-10-09)
+- `https://blog.finmoovi.com/es/posts/es-como-controlar-gastos-en-varias-monedas-con-una-app-en-5/` — Discovered - currently not indexed (desde 2026-10-09)
 - `https://blog.finmoovi.com/es/posts/es-como-organizar-tu-dinero-con-una-app-facil-de-usar/` — Crawled - currently not indexed (desde 2026-09-28)
 - `https://blog.finmoovi.com/es/posts/es-como-organizar-tus-gastos-mensuales-con-facilidad-y/` — Crawled - currently not indexed (desde 2026-10-19)
 - `https://blog.finmoovi.com/es/posts/es-como-usar-la-calculadora-de-interes-compuesto-en-2026-y/` — Crawled - currently not indexed (desde 2026-10-16)
@@ -68,8 +69,7 @@ Propriedade: https://blog.finmoovi.com/
 - `https://blog.finmoovi.com/en/glossario/en-overdraft/` — Crawled - currently not indexed (desde 2026-10-10)
 - `https://blog.finmoovi.com/en/glossario/en-price-to-earnings-ratio/` — Crawled - currently not indexed (desde 2026-10-15)
 - `https://blog.finmoovi.com/en/glossario/en-real-estate-funds-reits/` — Crawled - currently not indexed (desde 2026-10-20)
-- `https://blog.finmoovi.com/en/glossario/en-whatsapp-expense-control/` — Crawled - currently not indexed (desde 2026-10-20)
 - `https://blog.finmoovi.com/es/glossario/es-ahorro/` — Crawled - currently not indexed (desde 2026-10-19)
 - `https://blog.finmoovi.com/es/glossario/es-come-cotas/` — Crawled - currently not indexed (desde 2026-10-16)
 - `https://blog.finmoovi.com/es/glossario/es-etf/` — Crawled - currently not indexed (desde 2026-10-17)
-- `https://blog.finmoovi.com/es/glossario/es-gasto-variable/` — Crawled - currently not indexed (desde 2026-10-11)
+- `https://blog.finmoovi.com/es/glossario/es-flujo-de-caja-descontado/` — Crawled - currently not indexed (desde 2026-10-21)
