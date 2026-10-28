@@ -928,5 +928,11 @@
     "gancho": "aconteceu-comigo",
     "turno": "manha",
     "em": "2026-10-28T10:43:31.041Z"
+  },
+  {
+    "situacao": "assinaturas-esquecidas",
+    "gancho": "faca-isso",
+    "turno": "noite",
+    "em": "2026-10-28T10:51:56.241Z"
   }
 ]

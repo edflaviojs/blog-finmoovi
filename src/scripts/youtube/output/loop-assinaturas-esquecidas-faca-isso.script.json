@@ -1,0 +1,118 @@
+{
+  "slug": "loop-assinaturas-esquecidas-faca-isso",
+  "formato": "loop16",
+  "term": "As assinaturas que ninguém cancela",
+  "category": "vida",
+  "keyword": "ASSINATURA",
+  "valor": "R$ 95",
+  "situacao": "assinaturas-esquecidas",
+  "gancho": "faca-isso",
+  "ganchoFamilia": "faça isso",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "balde-furado",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se você quer salvar dinheiro, FAÇA ISSO. Eu abri a fatura.",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "salvar",
+          "visual": {
+            "type": "statement",
+            "text": "Abra a fatura"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Tinha serviço que ninguém lá em casa abria. Noventa e cinco reais por mês.",
+      "durationSec": 4.95,
+      "shots": [
+        {
+          "anchor": "Tinha",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "serviço",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 95 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Olha, eu cancelei tudo na hora.",
+      "durationSec": 2.12,
+      "shots": [
+        {
+          "anchor": "cancelei",
+          "visual": {
+            "type": "statement",
+            "text": "Cancelei na hora"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "cancelei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Agora eu abro a fatura, porque quem quer salvar dinheiro faz isso.",
+      "durationSec": 4.24,
+      "shots": [
+        {
+          "anchor": "fatura",
+          "visual": {
+            "type": "statement",
+            "text": "Abra a fatura"
+          }
+        },
+        {
+          "anchor": "salvar",
+          "visual": {
+            "type": "statement",
+            "text": "Abra a fatura"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
