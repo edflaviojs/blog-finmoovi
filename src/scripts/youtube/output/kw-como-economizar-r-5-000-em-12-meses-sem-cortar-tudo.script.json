@@ -1,0 +1,199 @@
+{
+  "slug": "kw-como-economizar-r-5-000-em-12-meses-sem-cortar-tudo",
+  "term": "Como economizar R$5.000 em 12 meses sem cortar tudo",
+  "category": "mindset",
+  "keyword": "tudo",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você acha que juntar *cinco mil reais* em um ano é largar tudo que você gosta?"
+  },
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "escada",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você acha que juntar cinco mil reais em um ano é largar tudo que você gosta? Bastam três coisinhas que cabem na sua rotina.",
+      "durationSec": 9.2,
+      "shots": [
+        {
+          "anchor": "cinco",
+          "visual": {
+            "type": "number",
+            "text": "R$ 5.000"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "largar",
+          "visual": {
+            "type": "statement",
+            "text": "Largar tudo?"
+          }
+        },
+        {
+          "anchor": "três",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escada"
+          },
+          "sfx": "whoosh"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Primeiro, trocar o café da padaria pelo de casa. Depois, o dinheiro de volta no mercado. E por último, guardar o troco do cartão.",
+      "durationSec": 9.2,
+      "shots": [
+        {
+          "anchor": "café",
+          "visual": {
+            "type": "statement",
+            "text": "1. Café de casa"
+          }
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "2. Dinheiro de volta"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "troco",
+          "visual": {
+            "type": "statement",
+            "text": "3. Troco guardado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Café a doze reais na rua, dois em casa. Dá dois mil e quatrocentos no ano. E ainda faltam duas.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "doze",
+          "visual": {
+            "type": "number",
+            "text": "R$ 12 × R$ 2"
+          }
+        },
+        {
+          "anchor": "quatrocentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 2.400"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "faltam",
+          "visual": {
+            "type": "statement",
+            "text": "Faltam duas coisinhas"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "As duas que faltavam eu coloquei no FinMoovi, junto com o café, e ele somou quatro mil e oitocentos reais pra mim.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "coloquei",
+          "visual": {
+            "type": "app",
+            "app": "balanco",
+            "note": "Café e as outras duas economias somadas no FinMoovi"
+          }
+        },
+        {
+          "anchor": "somou",
+          "visual": {
+            "type": "counter",
+            "from": 2400,
+            "to": 4800,
+            "prefix": "R$"
+          },
+          "sfx": "ding"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu total? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 4.2,
+      "shots": [
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Juntar quase cinco mil reais sem largar tudo dá, com três coisinhas. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "quase",
+          "visual": {
+            "type": "number",
+            "text": "R$ 4.800"
+          }
+        },
+        {
+          "anchor": "coisinhas",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escada"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "statement",
+            "text": "Sem controle, não é seu"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Descubra seu total em 12 meses",
+    "target": "app"
+  },
+  "totalDurationSec": 46.1
+}
