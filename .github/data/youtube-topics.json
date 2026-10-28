@@ -777,6 +777,36 @@
       "glossaryRef": "gastar-menos",
       "status": "pending",
       "sourceKeyword": "gastar menos"
+    },
+    {
+      "id": "kw-5-erros-que-te-impedem-de-guardar-r-1-000-por-mes",
+      "theme": "5 erros que te impedem de guardar R$1.000 por mês",
+      "angle": "Mostre, em situações do dia a dia, 5 hábitos comuns que sabotam a poupança e dê um jeito prático de mudar cada um, usando números reais (ex.: gasto extra de R$200 com café, R$150 em apps de streaming etc.) para que o espectador veja como pode guardar R$1.000 mensais sem precisar de planilha complexa.",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "guardar-dinheiro",
+      "status": "pending",
+      "sourceKeyword": "guardar dinheiro"
+    },
+    {
+      "id": "kw-como-economizar-r-5-000-em-12-meses-sem-cortar-tudo",
+      "theme": "Como economizar R$5.000 em 12 meses sem cortar tudo",
+      "angle": "Mostro, em 45 segundos, 3 sacadas simples do dia a dia – trocar café caro por um caseiro, usar o app de cashback nas compras de supermercado e guardar o troco digital – que juntas chegam a quase R$5 mil ao final de um ano, sem precisar mudar radicalmente a rotina.",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "juntar-dinheiro",
+      "status": "pending",
+      "sourceKeyword": "juntar dinheiro em um ano"
+    },
+    {
+      "id": "kw-corte-r-150-da-conta-de-luz-mudando-3-habitos",
+      "theme": "Corte R$150 da conta de luz mudando 3 hábitos",
+      "angle": "Mostro um caso real de família que gastava R$300 na luz e, ao trocar lâmpadas, ajustar o ar‑condicionado e desligar carregadores, economizou R$150 em um mês. Lista os 3 erros mais comuns e como corrigi‑los na prática, com números de bolso.",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "economia-de-energia",
+      "status": "pending",
+      "sourceKeyword": "meios de economizar energia"
     }
   ]
 }
