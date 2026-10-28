@@ -6084,6 +6084,21 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-10-27"
+    },
+    "kill-switch-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-28"
+    },
+    "kill-switch-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-28"
+    },
+    "kill-switch.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-28"
     }
   },
   "corrigidas": {
@@ -6748,6 +6763,6 @@
       "motivo": "tem texto escrito (\"I'm sorry, I'm not able to identify the people in this image.\")"
     }
   },
-  "totalAcervo": 1217,
-  "ultimaCorrida": "2026-10-27"
+  "totalAcervo": 1220,
+  "ultimaCorrida": "2026-10-28"
 }
