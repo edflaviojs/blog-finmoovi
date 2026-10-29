@@ -1,0 +1,215 @@
+{
+  "slug": "kw-5-erros-que-te-impedem-de-guardar-r-1-000-por-mes",
+  "term": "5 erros que te impedem de guardar R$1.000 por mês",
+  "category": "mindset",
+  "keyword": "guardar",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Por que o seu *dinheiro some* e você nunca consegue guardar mil reais por mês?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "buraco",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Por que o seu dinheiro some e você nunca consegue guardar mil reais por mês? São cinco errinhos, e você faz todos sem perceber.",
+      "durationSec": 9.2,
+      "shots": [
+        {
+          "anchor": "some",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "number",
+            "text": "R$ 1.000"
+          }
+        },
+        {
+          "anchor": "errinhos",
+          "visual": {
+            "type": "statement",
+            "text": "5 errinhos invisíveis"
+          },
+          "sfx": "pop"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "É o café na rua, o streaming que ninguém vê, a comida pelo aplicativo, a compra parcelada e guardar só o que sobrar.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "café",
+          "visual": {
+            "type": "icon",
+            "icon": "coins"
+          }
+        },
+        {
+          "anchor": "streaming",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          }
+        },
+        {
+          "anchor": "comida",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "sobrar",
+          "visual": {
+            "type": "statement",
+            "text": "Guardar o que sobra não funciona"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Olha os três primeiros. O café leva duzentos reais, o streaming cento e cinquenta, a comida trezentos e cinquenta. Dá setecentos.",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "café",
+          "visual": {
+            "type": "number",
+            "text": "R$ 200"
+          }
+        },
+        {
+          "anchor": "streaming",
+          "visual": {
+            "type": "number",
+            "text": "R$ 150"
+          }
+        },
+        {
+          "anchor": "comida",
+          "visual": {
+            "type": "number",
+            "text": "R$ 350"
+          }
+        },
+        {
+          "anchor": "setecentos",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 700,
+            "prefix": "R$"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei tudo no FinMoovi e ele juntou os três numa linha vermelha. Setecentos reais. Eu nem tinha reparado.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "tudo",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Gastos somados em uma linha vermelha: R$ 700"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "Setecentos",
+          "visual": {
+            "type": "statement",
+            "text": "Nem tinha reparado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Você não guarda mil reais porque cinco errinhos levam o dinheiro antes. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "errinhos",
+          "visual": {
+            "type": "statement",
+            "text": "5 errinhos levam tudo"
+          }
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Sem controle, não é seu"
+          },
+          "sfx": "boom"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja para onde vai seu dinheiro",
+    "target": "app"
+  },
+  "totalDurationSec": 44.5
+}
