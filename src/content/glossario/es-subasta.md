@@ -4,6 +4,7 @@ definition: "Qué es subasta y cómo aparece en tu día a día — explicado de 
 title: "subasta - Glosario Financiero"
 description: "Qué es subasta y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/leilao.webp"
+imageAlt: "Monedas doradas, plantas verdes y gráfico de barras ascendente sobre fondo púrpura."
 category: "basico"
 tags: ["subasta", "glosario", "finanzas"]
 author: "FinMoovi"

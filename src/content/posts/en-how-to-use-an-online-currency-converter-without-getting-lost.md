@@ -3,6 +3,7 @@ title: "How to Use an Online Currency Converter Without Getting Lost on Your 202
 description: "Learn in plain language how to pick and use an online currency converter, integrate it with FinMoovi, and keep international expenses stress‑free."
 tickerHeadline: "The tool that translates your money"
 image: "/images/posts/como-usar-um-conversor-de-moedas-online-e-nao-se-perder-nas.webp"
+imageAlt: "Yellow and blue abstract curved shapes on a gradient background."
 category: "dicas"
 locale: "en"
 tags: ["online currency converter","personal finance","budgeting","travel expenses","FinMoovi"]

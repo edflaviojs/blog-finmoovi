@@ -3,6 +3,7 @@ title: "How to Keep Your Expense Spreadsheet Up‑to‑Date Effortlessly in 2026
 description: "Learn how FinMoovi’s automatic capture keeps your spending sheet current without wasting time."
 tickerHeadline: "Spreadsheet always up‑to‑date?"
 image: "/images/posts/como-manter-sua-planilha-de-gastos-sempre-atualizada-sem.webp"
+imageAlt: "Abstract yellow curves and loops on a dark blue background."
 category: "ferramentas"
 locale: "en"
 tags: ["expense tracking","automatic capture","FinMoovi","spreadsheet update","personal finance","financial AI","expense management","replace spreadsheet","finance app","automate finances","finmoovi"]

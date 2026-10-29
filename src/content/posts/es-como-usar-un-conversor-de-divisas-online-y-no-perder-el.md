@@ -3,6 +3,7 @@ title: "Cómo usar un conversor de divisas online y no perder el control en tus 
 description: "Aprende a elegir y usar un conversor de divisas online integrado al FinMoovi para gestionar tus gastos internacionales sin estrés."
 tickerHeadline: "La herramienta que traduce tu dinero"
 image: "/images/posts/como-usar-um-conversor-de-moedas-online-e-nao-se-perder-nas.webp"
+imageAlt: "Formas abstractas en espiral de color azul y amarillo sobre fondo degradado."
 category: "dicas"
 locale: "es"
 tags: ["conversor de divisas online","finanzas personales","economía","dinero"]

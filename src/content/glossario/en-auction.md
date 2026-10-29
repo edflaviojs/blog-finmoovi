@@ -4,6 +4,7 @@ definition: "What Auction is and how it shows up in your everyday money — expl
 title: "Auction - Financial Glossary"
 description: "What Auction is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/leilao.webp"
+imageAlt: "Gold coins in glass domes with green plants and rising bar chart."
 category: "basico"
 tags: ["Auction", "glossary", "finance"]
 author: "FinMoovi"

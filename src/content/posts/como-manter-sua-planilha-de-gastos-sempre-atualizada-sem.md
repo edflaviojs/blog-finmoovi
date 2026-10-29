@@ -3,6 +3,7 @@ title: "Como manter sua planilha de gastos sempre atualizada sem esforço em 202
 description: "Descubra como a captura automática do FinMoovi mantém sua planilha de despesas sempre em dia, sem perder tempo."
 tickerHeadline: "Planilha sempre em dia?"
 image: "/images/posts/como-manter-sua-planilha-de-gastos-sempre-atualizada-sem.webp"
+imageAlt: "Curvas amarelas sobre fundo azul-escuro em gradiente, com área branca inferior."
 category: "ferramentas"
 locale: "pt"
 tags: ["controle de gastos","captura automática","FinMoovi","atualização de planilha","finanças pessoais","IA financeira","gestão de despesas","substituir planilha","app financeiro","automatizar finanças","finmoovi"]

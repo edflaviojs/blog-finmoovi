@@ -3,6 +3,7 @@ title: "Como usar um conversor de moedas online e não se perder nas viagens de 
 description: "Descubra, em linguagem simples, como escolher e usar um conversor de moedas online, integrando‑o ao FinMoovi para controlar gastos internacionais sem stress."
 tickerHeadline: "A ferramenta que traduce seu dinheiro"
 image: "/images/posts/como-usar-um-conversor-de-moedas-online-e-nao-se-perder-nas.webp"
+imageAlt: "Formas abstratas em espiral, amarelas e azuis, sobre fundo azul claro."
 category: "dicas"
 locale: "pt"
 tags: ["conversor de moedas online","finanças pessoais","economia","dinheiro"]

@@ -3,6 +3,7 @@ title: "Cómo mantener tu hoja de gastos siempre actualizada sin esfuerzo en 202
 description: "Descubre cómo la captura automática de FinMoovi mantiene tu hoja de gastos al día, sin perder tiempo."
 tickerHeadline: "¿Hoja siempre al día?"
 image: "/images/posts/como-manter-sua-planilha-de-gastos-sempre-atualizada-sem.webp"
+imageAlt: "Diseño abstracto con formas curvas amarillas sobre fondo degradado azul oscuro."
 category: "ferramentas"
 locale: "es"
 tags: ["control de gastos","captura automática","FinMoovi","actualización de hoja","finanzas personales","IA financiera","gestión de gastos","sustituir hoja","app financiero","automatizar finanzas","finmoovi"]
