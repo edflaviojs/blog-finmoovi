@@ -940,5 +940,11 @@
     "gancho": "se-parar",
     "turno": "manha",
     "em": "2026-10-29T11:01:17.551Z"
+  },
+  {
+    "situacao": "emprestar-pra-parente",
+    "gancho": "se-parar",
+    "turno": "noite",
+    "em": "2026-10-29T11:14:07.848Z"
   }
 ]

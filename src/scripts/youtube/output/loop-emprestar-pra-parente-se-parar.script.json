@@ -1,0 +1,118 @@
+{
+  "slug": "loop-emprestar-pra-parente-se-parar",
+  "formato": "loop16",
+  "term": "Emprestar dinheiro pra parente",
+  "category": "vida",
+  "keyword": "EMPRESTAR",
+  "valor": "R$ 500",
+  "situacao": "emprestar-pra-parente",
+  "gancho": "se-parar",
+  "ganchoFamilia": "e se parar",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "corda-bamba",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "O que acontece se você parar de dizer não pro parente?",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "acontece",
+          "visual": {
+            "type": "statement",
+            "text": "Parou de dizer não?"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "parar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "corda-bamba"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Meu primo prometeu pagar no fim do mês. Eu emprestei quinhentos reais e nunca voltaram.",
+      "durationSec": 5.18,
+      "shots": [
+        {
+          "anchor": "primo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "corda-bamba"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "prometeu",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 500"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Olha, o dinheiro sumiu, e o primo também.",
+      "durationSec": 2.76,
+      "shots": [
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Só empresto o que perco"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "sumiu",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "corda-bamba"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Hoje, quando pedem, penso. Parar de dizer não, pra quê?",
+      "durationSec": 3.45,
+      "shots": [
+        {
+          "anchor": "pedem",
+          "visual": {
+            "type": "statement",
+            "text": "E se eu disser sim?"
+          }
+        },
+        {
+          "anchor": "penso",
+          "visual": {
+            "type": "statement",
+            "text": "Parou de dizer não?"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.19
+}
