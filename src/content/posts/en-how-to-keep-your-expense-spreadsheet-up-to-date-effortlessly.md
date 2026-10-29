@@ -19,16 +19,16 @@ seo:
   keywords: ["expense tracking","automatic capture","FinMoovi","spreadsheet update","personal finance","financial AI","expense management","replace spreadsheet","finance app","automate finances","finmoovi"]
 ---
 
-Imagine this: you’ve just finished lunch, still savoring that great sandwich, and you open your expense spreadsheet only to see the last entry dated two weeks ago. You know that lunch should be there, but a busy day made you forget to log it. The result? An outdated sheet, reports that don’t match reality, and the feeling that your money is slipping through your fingers.
+Imagine this: you’ve just finished lunch, still savoring that great sandwich, and you open your [expense](/en/glossario/en-expense) spreadsheet only to see the last entry dated two weeks ago. You know that lunch should be there, but a busy day made you forget to log it. The result? An outdated sheet, [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end) that don’t match reality, and the feeling that your money is slipping through your fingers.
 
-That scenario is more common than you think. When your spreadsheet can’t keep up with reality, planning, cutting excesses, or even spotting that “invisible” expense that eats away at your budget becomes impossible.
+That scenario is more common than you think. When your spreadsheet can’t keep up with reality, [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips), cutting excesses, or even spotting that “invisible” expense that eats away at your budget becomes impossible.
 
 ### Why does the spreadsheet fall behind?
 - **Forgetfulness** – after a packed day, entering every purchase feels like a chore rather than a help.
 - **Lack of habit** – opening the sheet daily rarely becomes a solid routine.
 - **Complexity** – opening the file, typing the date, category, amount and saving can take a few minutes – time most people prefer to spend on something more enjoyable.
 
-These points create a vicious cycle: the more the sheet lags, the less trust you have in it, and the less motivation you have to use it.
+These points create a vicious cycle: the more the sheet lags, the less [trust](/en/glossario/en-trust) you have in it, and the less motivation you have to use it.
 
 ### FinMoovi steps in: automatic capture that does the work for you
 FinMoovi was built precisely to break that cycle. The **Smart Capture** feature lets you, right after lunch, open the app, snap a photo of the receipt or say “lunch entry” with a voice command. In seconds, the artificial intelligence reads the amount, the date and, based on learned patterns, classifies the expense as “Food – Restaurants.” Everything runs **offline**, so you don’t need a constant connection and your data stays private.
@@ -60,8 +60,8 @@ Based on these data points, the app suggests the most likely category. If you us
 
 ### Practical tips to turn the habit into a routine
 1. **Set a daily reminder** – FinMoovi can push an alert “Time to log lunch?” at 2 PM.  
-2. **Use the shopping list** – while grocery shopping, add items to “list” mode. When the receipt arrives, snap a photo and the app turns everything into expenses.  
-3. **Take advantage of multi‑currency mode** – traveling or buying online in another currency? Capture recognizes the foreign amount and converts it to your base budgeting currency.  
+2. **Use the [shopping list](/en/glossario/en-shopping-list)** – while grocery shopping, add items to “list” mode. When the receipt arrives, snap a photo and the app turns everything into expenses.  
+3. **Take advantage of [multi‑currency](/en/posts/en-digital-bank-vs-major-bank-which-is-worth-it-in-2026) mode** – traveling or buying online in another currency? Capture recognizes the foreign amount and converts it to your base [budgeting](/en/posts/en-financial-peace-of-mind-with-a-2026-app-for-everyday-life) currency.  
 4. **Review weekly** – block 10 minutes on Sunday to glance at the reports. You’ll quickly spot where you can trim unnecessary spending.
 
 ### Numbers that underline why constant updates matter
@@ -89,7 +89,7 @@ Yes. All capture and categorization features operate offline; syncing happens au
 The AI learns from your corrections. If an entry is mis‑tagged, just drag it to the right category and the model adjusts for the next recognition.
 
 **Can I track expenses in different currencies?**  
-Absolutely. Multi‑currency mode automatically detects the receipt’s currency and converts it to the base currency of your budget.
+Absolutely. [Multi‑currency](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using) mode automatically detects the receipt’s currency and converts it to the base currency of your budget.
 
 **Is it safe to store my financial data in the app?**  
 FinMoovi uses end‑to‑end encryption and stores data on servers certified to ISO 27001 standards, ensuring privacy and security.

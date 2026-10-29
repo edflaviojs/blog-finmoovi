@@ -19,7 +19,7 @@ seo:
   keywords: ["controle de gastos","captura automática","FinMoovi","atualização de planilha","finanças pessoais","IA financeira","gestão de despesas","substituir planilha","app financeiro","automatizar finanças","finmoovi"]
 ---
 
-Imagine a seguinte cena: você acabou de sair do almoço, ainda com a sensação de que o sanduíche estava ótimo, mas ao abrir a planilha de controle financeiro percebe que a última linha tem data de duas semanas atrás. Você sabe que aquele almoço deveria estar ali, mas a rotina corrida fez você esquecer de inserir o gasto. O resultado? Uma planilha desatualizada, relatórios que não refletem a realidade e a sensação de que seu dinheiro está escapando pelos dedos.
+Imagine a seguinte cena: você acabou de sair do almoço, ainda com a sensação de que o sanduíche estava ótimo, mas ao abrir a planilha de [controle financeiro](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto) percebe que a última linha tem data de duas semanas atrás. Você sabe que aquele almoço deveria estar ali, mas a rotina corrida fez você esquecer de inserir o gasto. O resultado? Uma [planilha desatualizada](/posts/como-simplificar-o-registro-de-despesas-sem-abrir-planilhas), relatórios que não refletem a realidade e a sensação de que seu dinheiro está escapando pelos dedos.
 
 Essa situação é mais comum do que parece. Quando a planilha não acompanha a realidade, fica impossível planejar, cortar excessos ou até mesmo identificar aquele gasto “invisível” que corrói o orçamento.
 
@@ -31,14 +31,14 @@ Essa situação é mais comum do que parece. Quando a planilha não acompanha a 
 Esses pontos criam um ciclo vicioso: quanto mais a planilha fica desatualizada, menos confiança você tem nela, e menos vontade de usá‑la.
 
 ### FinMoovi entra em cena: captura automática que faz o trabalho por você
-O FinMoovi foi pensado exatamente para quebrar esse ciclo. A funcionalidade de **captura inteligente** permite que, ao terminar o almoço, você abra o app, tire uma foto do comprovante ou diga “registro de almoço” por comando de voz. Em segundos, a inteligência artificial reconhece o valor, a data e, com base em padrões aprendidos, classifica a despesa como “Alimentação – Restaurantes”. Tudo isso acontece **offline**, então você não depende de conexão constante e ainda mantém a privacidade dos seus dados.
+O FinMoovi foi pensado exatamente para quebrar esse ciclo. A funcionalidade de **[captura inteligente](/posts/cansado-de-perder-horas-nas-planilhas-como-o-finmoovi)** permite que, ao terminar o almoço, você abra o app, tire uma foto do comprovante ou diga “registro de almoço” por comando de voz. Em segundos, a inteligência artificial reconhece o valor, a data e, com base em padrões aprendidos, classifica a [despesa](/glossario/despesa) como “Alimentação – Restaurantes”. Tudo isso acontece **offline**, então você não depende de conexão constante e ainda mantém a privacidade dos seus dados.
 
 #### Passo a passo de 5 minutos para registrar seu gasto
 1. **Abra o FinMoovi** (ou acesse pelo widget na tela inicial).
 2. **Capture o comprovante**: tire a foto ou fale “gasto de almoço”.
 3. **Confirme** (o app já preenche data, valor e categoria; basta tocar em “OK”).
 4. **Sincronize** (quando houver internet, o app atualiza seu backup na nuvem).
-5. **Veja o relatório**: a nova linha aparece imediatamente no seu fluxo de caixa.
+5. **Veja o relatório**: a nova linha aparece imediatamente no seu [fluxo de caixa](/glossario/fluxo-de-caixa).
 
 Em menos de 5 minutos você tem o gasto registrado, classificado e já refletido nos gráficos de consumo diário.
 
@@ -51,8 +51,8 @@ Em menos de 5 minutos você tem o gasto registrado, classificado e já refletido
 | **Estresse** | Sentimento de “vou perder o controle” | Tranquilidade ao ver tudo organizado automaticamente |
 
 ### Como a IA do FinMoovi categoriza suas despesas
-A tecnologia por trás da captura inteligente usa modelos de aprendizado de máquina treinados com milhões de notas fiscais e descrições de transações. Quando você envia a foto, o algoritmo extrai:
-- **Valor** (detecta números e símbolos de moeda);
+A tecnologia por trás da [captura inteligente](/posts/como-freelancers-podem-organizar-as-financas-em-2026) usa modelos de aprendizado de máquina treinados com milhões de notas fiscais e descrições de transações. Quando você envia a foto, o algoritmo extrai:
+- **Valor** (detecta números e símbolos de [moeda](/glossario/moeda));
 - **Data** (identifica padrões de data ou usa a hora do dispositivo);
 - **Descrição** (texto da nota ou voz reconhecida).
 
@@ -60,7 +60,7 @@ Com base nesses dados, o app sugere a categoria mais provável. Se você costuma
 
 ### Dicas práticas para transformar o hábito em rotina
 1. **Defina um lembrete diário**: o próprio FinMoovi pode disparar um alerta “Hora de registrar o almoço?” às 14h.
-2. **Use a lista de compras**: ao fazer mercado, adicione os itens ao modo “lista”. Quando a nota chegar, basta fotografar e o app converte tudo em despesas.
+2. **Use a [lista de compras](/glossario/lista-de-compras)**: ao fazer mercado, adicione os itens ao modo “lista”. Quando a nota chegar, basta fotografar e o app converte tudo em despesas.
 3. **Aproveite o modo multimoeda**: se você viaja ou faz compras online em outra moeda, a captura reconhece o valor e converte automaticamente para a moeda base do seu orçamento.
 4. **Revise semanalmente**: reserve 10 minutos no domingo para conferir os relatórios. Você verá rapidamente onde pode cortar gastos desnecessários.
 
