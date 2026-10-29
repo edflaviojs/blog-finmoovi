@@ -1,5 +1,22 @@
 [
   {
+    "file": "en-auction.md",
+    "dir": "glossario",
+    "severity": 3,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 5,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "valor"
+      ]
+    }
+  },
+  {
     "file": "en-fixed-assets.md",
     "dir": "glossario",
     "severity": 3,
@@ -2670,6 +2687,21 @@
     }
   },
   {
+    "file": "en-how-to-keep-your-expense-spreadsheet-up-to-date-effortlessly.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-how-to-know-if-your-savings-goal-is-actually-moving-forward.md",
     "dir": "posts",
     "severity": 0,
@@ -3076,6 +3108,21 @@
   },
   {
     "file": "en-how-to-use-a-compound-interest-calculator-in-2026-to-boost.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-how-to-use-an-online-currency-converter-without-getting-lost.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -6765,6 +6812,21 @@
     }
   },
   {
+    "file": "es-como-mantener-tu-hoja-de-gastos-siempre-actualizada-sin.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-como-montar-tu-primera-cartera-de-etfs-en-2026.md",
     "dir": "posts",
     "severity": 0,
@@ -7186,6 +7248,21 @@
   },
   {
     "file": "es-como-usar-pagos-anticipados-a-tu-favor-en-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-como-usar-un-conversor-de-divisas-online-y-no-perder-el.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -9976,6 +10053,21 @@
   },
   {
     "file": "es-stop-loss.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-subasta.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
