@@ -1,13 +1,13 @@
 # GSC — Monitor de Indexação
 
-Gerado em: 2026-10-28T14:53:57.400Z
+Gerado em: 2026-10-29T15:01:07.397Z
 Propriedade: https://blog.finmoovi.com/
 
 ## Resumo
 
-- **996/1094** URLs indexadas
-- **98** não indexadas
-- **0** com erro na inspeção
+- **981/1103** URLs indexadas
+- **119** não indexadas
+- **3** com erro na inspeção
 - **56** página(s) de conteúdo fora do índice há ≥7 dias
 
 ## Sitemap
@@ -16,10 +16,10 @@ Propriedade: https://blog.finmoovi.com/
 
 ## Por motivo (não indexadas)
 
-- Crawled - currently not indexed: 88
+- Crawled - currently not indexed: 110
 - Duplicate, Google chose different canonical than user: 1
-- Discovered - currently not indexed: 4
-- URL is unknown to Google: 5
+- Discovered - currently not indexed: 5
+- URL is unknown to Google: 3
 
 ## Páginas de conteúdo há mais tempo fora do índice
 
@@ -52,7 +52,7 @@ Propriedade: https://blog.finmoovi.com/
 - `https://blog.finmoovi.com/es/posts/es-como-organizar-tus-gastos-mensuales-con-facilidad-y/` — Crawled - currently not indexed (desde 2026-10-19)
 - `https://blog.finmoovi.com/es/posts/es-como-usar-la-calculadora-de-interes-compuesto-en-2026-y/` — Crawled - currently not indexed (desde 2026-10-16)
 - `https://blog.finmoovi.com/es/posts/es-consejos-para-controlar-gastos-en-la-tarjeta-de-credito/` — Crawled - currently not indexed (desde 2026-09-12)
-- `https://blog.finmoovi.com/es/posts/es-cotizaciones-semana-3-octubre-2026/` — URL is unknown to Google (desde 2026-10-20)
+- `https://blog.finmoovi.com/es/posts/es-cotizaciones-semana-3-octubre-2026/` — Discovered - currently not indexed (desde 2026-10-20)
 - `https://blog.finmoovi.com/es/posts/es-dia-de-los-enamorados-economico/` — Crawled - currently not indexed (desde 2026-10-16)
 - `https://blog.finmoovi.com/es/posts/es-entiende-la-tasa-interbancaria-y-su-impacto-en-tus/` — Crawled - currently not indexed (desde 2026-10-13)
 - `https://blog.finmoovi.com/es/posts/es-invertir-vs-pagar-deudas-que-conviene-mas-en-2026/` — Crawled - currently not indexed (desde 2026-10-11)
