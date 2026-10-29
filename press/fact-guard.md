@@ -1,7 +1,7 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-10-28T10:57:22.825Z
-**Posts:** 558 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 20
+**Gerado em:** 2026-10-29T11:17:26.125Z
+**Posts:** 564 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 22
 
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
@@ -22,6 +22,9 @@
 **como-identificar-e-cortar-gastos-recorrentes-que-drenam-seu.md**
 - _Segundo a OECD, famílias que monitoram regularmente suas despesas têm até 15 % mais chances de atingir metas de [reserva de emergência](/ferramentas/calculadora-reserva)._
 
+**como-manter-sua-planilha-de-gastos-sempre-atualizada-sem.md**
+- _- Segundo a Investopedia, **a falta de registro diário pode levar a desvios de até 30 %** entre o orçamento planejado e o gasto real._
+
 **como-saber-se-sua-meta-de-economia-esta-realmente-avancando.md**
 - _Segundo a *World Bank*, a maioria das famílias que não tem um acompanhamento visual claro dos seus objetivos financeiros tende a postergar investimentos de médio prazo em até 30 %._
 
@@ -36,6 +39,9 @@
 
 **en-how-to-cut-water-bills-effortlessly-in-2026.md**
 - _According to the Organisation for Economic Co‑operation and Development (OECD), families that adopt simple water‑[saving](/en/posts/en-how-to-build-a-budget-that-actually-works-in-2026) habits can tri_
+
+**en-how-to-keep-your-expense-spreadsheet-up-to-date-effortlessly.md**
+- _- According to Investopedia, **missing daily entries can cause up to a 30 % gap** between your planned budget and actual spending._
 
 **en-how-to-know-if-your-savings-goal-is-actually-moving-forward.md**
 - _According to the *World Bank*, families that don’t have a clear visual way to follow their financial goals postpone medium‑term investments by up to 30 %._
