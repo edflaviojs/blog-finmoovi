@@ -934,5 +934,11 @@
     "gancho": "faca-isso",
     "turno": "noite",
     "em": "2026-10-28T10:51:56.241Z"
+  },
+  {
+    "situacao": "aposentadoria-por-conta",
+    "gancho": "se-parar",
+    "turno": "manha",
+    "em": "2026-10-29T11:01:17.551Z"
   }
 ]

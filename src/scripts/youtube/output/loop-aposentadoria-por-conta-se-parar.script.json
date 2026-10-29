@@ -1,0 +1,118 @@
+{
+  "slug": "loop-aposentadoria-por-conta-se-parar",
+  "formato": "loop16",
+  "term": "Aposentadoria de quem é autônomo",
+  "category": "vida",
+  "keyword": "APOSENTADORIA",
+  "valor": "R$ 180",
+  "situacao": "aposentadoria-por-conta",
+  "gancho": "se-parar",
+  "ganchoFamilia": "e se parar",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "ampulheta",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "O que acontece se você parar de pagar o INSS? Comigo aconteceu.",
+      "durationSec": 4.24,
+      "shots": [
+        {
+          "anchor": "acontece",
+          "visual": {
+            "type": "statement",
+            "text": "Parou de pagar o INSS?"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "parar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ampulheta"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Fui me aposentar. Faltavam cento e oitenta reais por mês que nunca paguei.",
+      "durationSec": 4.6,
+      "shots": [
+        {
+          "anchor": "aposentar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ampulheta"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "Faltavam",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 180"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Deixei pra depois. A ampulheta não esperou.",
+      "durationSec": 2.47,
+      "shots": [
+        {
+          "anchor": "Deixei",
+          "visual": {
+            "type": "statement",
+            "text": "Deixei pra depois"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "ampulheta",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ampulheta"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Hoje eu pergunto. O que acontece se você parar de pagar?",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "pergunto",
+          "visual": {
+            "type": "statement",
+            "text": "E se você parar?"
+          }
+        },
+        {
+          "anchor": "acontece",
+          "visual": {
+            "type": "statement",
+            "text": "Parou de pagar o INSS?"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
