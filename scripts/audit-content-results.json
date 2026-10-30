@@ -797,6 +797,21 @@
     }
   },
   {
+    "file": "en-automatic-expense-categorization-with-ai-keep-your-finances.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-avoid-impulse-purchases.md",
     "dir": "posts",
     "severity": 0,
@@ -963,6 +978,21 @@
   },
   {
     "file": "en-capital-gain.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-capital-market.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -2658,6 +2688,21 @@
   },
   {
     "file": "en-how-to-gift-on-father-s-day-without-spending-much-7-budget.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-how-to-grow-your-money-effortlessly-in-2026.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -6227,6 +6272,21 @@
     }
   },
   {
+    "file": "es-categorizacion-automatica-de-gastos-con-ia-ordena-tus.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026.md",
     "dir": "posts",
     "severity": 0,
@@ -6738,6 +6798,21 @@
   },
   {
     "file": "es-como-evitar-que-el-saldo-pendiente-arruine-tu-presupuesto-en.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-como-hacer-que-tu-dinero-crezca-sin-esfuerzo-en-2026.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -9063,6 +9138,21 @@
   },
   {
     "file": "es-margen-de-garantia.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-mercado-de-capitales.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
