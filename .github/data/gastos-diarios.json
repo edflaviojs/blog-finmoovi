@@ -880,98 +880,89 @@
       "kie.ai|visao": 0,
       "nvidia|texto": 0,
       "Together.ai|imagem": 0
+    },
+    "2026-10-30": {
+      "groq|texto": 41202,
+      "Cloudflare Workers AI|visao": 23,
+      "claude|texto": 83850,
+      "groq|voz": 540,
+      "Cloudflare Workers AI|imagem": 14,
+      "Groq|visao": 17133,
+      "cerebras|texto": 0,
+      "kie.ai|visao": 0,
+      "nvidia|texto": 0
     }
   },
   "relatorio": {
-    "dia": "2026-10-29",
+    "dia": "2026-10-30",
     "horas": 24,
-    "geradoEm": "2026-10-29T11:28:03.475Z",
+    "geradoEm": "2026-10-30T11:19:54.060Z",
     "linhas": [
       {
         "fornecedor": "groq",
         "tipo": "texto",
-        "chamadas": 45,
+        "chamadas": 40,
         "recusas": 0,
-        "quanto": 50666,
+        "quanto": 41202,
         "unidade": "fichas",
         "custo": null,
-        "salto": 0.9732018395952012
+        "salto": 0.7972435068165987
       },
       {
         "fornecedor": "Cloudflare Workers AI",
         "tipo": "visao",
-        "chamadas": 33,
+        "chamadas": 23,
         "recusas": 0,
-        "quanto": 33,
+        "quanto": 23,
         "unidade": "unidades",
         "custo": null,
-        "salto": 1.115942028985507
-      },
-      {
-        "fornecedor": "Cloudflare Workers AI",
-        "tipo": "imagem",
-        "chamadas": 17,
-        "recusas": 1,
-        "quanto": 17,
-        "unidade": "unidades",
-        "custo": null,
-        "salto": 1.0530973451327434
+        "salto": 0.7892156862745098
       },
       {
         "fornecedor": "claude",
         "tipo": "texto",
         "chamadas": 15,
         "recusas": 0,
-        "quanto": 83415,
+        "quanto": 83850,
         "unidade": "fichas",
         "custo": null,
-        "salto": 0.7647780734935088
+        "salto": 0.7297749938144126
       },
       {
         "fornecedor": "groq",
         "tipo": "voz",
         "chamadas": 14,
         "recusas": 0,
-        "quanto": 544,
+        "quanto": 540,
         "unidade": "unidades",
         "custo": null,
-        "salto": 0.23007673252371458
+        "salto": 0.2286613030064727
+      },
+      {
+        "fornecedor": "Cloudflare Workers AI",
+        "tipo": "imagem",
+        "chamadas": 14,
+        "recusas": 0,
+        "quanto": 14,
+        "unidade": "unidades",
+        "custo": null,
+        "salto": 0.8990825688073395
       },
       {
         "fornecedor": "Groq",
         "tipo": "visao",
-        "chamadas": 3,
+        "chamadas": 9,
         "recusas": 0,
-        "quanto": 5681,
+        "quanto": 17133,
         "unidade": "fichas",
         "custo": null,
-        "salto": 0.3795218954939708
-      },
-      {
-        "fornecedor": "Pollinations.ai",
-        "tipo": "imagem",
-        "chamadas": 2,
-        "recusas": 3,
-        "quanto": 2,
-        "unidade": "unidades",
-        "custo": 0,
-        "salto": null
-      },
-      {
-        "fornecedor": "cloudflare",
-        "tipo": "texto",
-        "chamadas": 1,
-        "recusas": 0,
-        "quanto": 493,
-        "unidade": "fichas",
-        "custo": null,
-        "salto": null
+        "salto": 1.1446291574341103
       },
       {
         "fornecedor": "cerebras",
         "tipo": "texto",
         "chamadas": 0,
-        "recusas": 12,
+        "recusas": 10,
         "quanto": 0,
         "unidade": "unidades",
         "custo": null,
@@ -996,16 +987,6 @@
         "unidade": "unidades",
         "custo": null,
         "salto": null
-      },
-      {
-        "fornecedor": "Together.ai",
-        "tipo": "imagem",
-        "chamadas": 0,
-        "recusas": 3,
-        "quanto": 0,
-        "unidade": "unidades",
-        "custo": null,
-        "salto": 0
       }
     ],
     "alarmes": [],
@@ -1015,11 +996,9 @@
       "Cloudflare Workers AI",
       "claude",
       "Groq",
-      "cloudflare",
       "cerebras",
       "kie.ai",
-      "nvidia",
-      "Together.ai"
+      "nvidia"
     ],
     "saldo": {
       "saldo": -0.54,
@@ -1028,5 +1007,5 @@
     },
     "saldoMotivo": null
   },
-  "atualizadoEm": "2026-10-29T11:28:03.475Z"
+  "atualizadoEm": "2026-10-30T11:19:54.060Z"
 }
