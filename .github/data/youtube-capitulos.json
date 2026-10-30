@@ -3003,8 +3003,47 @@
           "titulo": "Resenha final e menção ao Neymar"
         }
       ]
+    },
+    {
+      "videoId": "ptyuU4fNL60",
+      "title": "Quanto investir em FIIs para receber R$ 5 MIL, R$ 10 MIL e R$ 20 MIL todo mês? (Plano prático)",
+      "channel": "FONTE DA FORTUNA - Alexandre Winkler",
+      "duracaoSeg": 1505,
+      "idioma": "pt",
+      "viewsPerDay": 3765,
+      "vistoEm": "2026-10-30",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "Introdução"
+        },
+        {
+          "seg": 198,
+          "titulo": "Quanto rende"
+        },
+        {
+          "seg": 400,
+          "titulo": "Carteira diversificada"
+        },
+        {
+          "seg": 540,
+          "titulo": "Como escolher um FII"
+        },
+        {
+          "seg": 788,
+          "titulo": "Aporte de R$ 200 por mês"
+        },
+        {
+          "seg": 1095,
+          "titulo": "Aporte de R$ 350 por mês"
+        },
+        {
+          "seg": 1178,
+          "titulo": "Aporte de R$ 500 por mês"
+        }
+      ]
     }
   ],
-  "atualizadoEm": "2026-10-29T10:34:57.580Z",
-  "total": 53
+  "atualizadoEm": "2026-10-30T10:36:19.737Z",
+  "total": 54
 }
