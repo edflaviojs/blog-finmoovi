@@ -1,8 +1,8 @@
 # 🔀 Canibalização por query (GSC) — propostas de consolidação
 
 **Propriedade:** https://blog.finmoovi.com/
-**Período:** 2026-09-25 → 2026-10-23
-**Gerado em:** 2026-10-23T12:29:51.280Z
+**Período:** 2026-10-02 → 2026-10-30
+**Gerado em:** 2026-10-30T13:55:18.705Z
 
 > A automação já adicionou links de consolidação (post mais fraco → mais forte) onde seguro. A CONSOLIDAÇÃO destrutiva (mesclar/redirecionar/apagar) é decisão sua — abaixo, as sugestões.
 
