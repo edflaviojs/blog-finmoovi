@@ -3,6 +3,7 @@ title: "Automatic Expense Categorization with AI: Keep Your Finances Organized E
 description: "Learn how AI can instantly sort your spending, saving you time and giving you clear insight into your budget."
 tickerHeadline: "AI That Gets Your Wallet"
 image: "/images/posts/categorizacao-automatica-de-gastos-com-ia-como-deixar-suas.webp"
+imageAlt: "Couple on couch reviewing documents and phone near laptop and plant."
 category: "ferramentas"
 locale: "en"
 tags: ["automatic categorization","AI personal finance","expense tracking","FinMoovi","expense organization","AI budgeting","smart spending app"]

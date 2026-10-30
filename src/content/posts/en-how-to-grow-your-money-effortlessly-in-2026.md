@@ -3,6 +3,7 @@ title: "How to Grow Your Money Effortlessly in 2026"
 description: "Learn practical ways to harness compound interest with the FinMoovi app in just minutes."
 tickerHeadline: "The trick that makes your balance soar"
 image: "/images/posts/como-fazer-seu-dinheiro-crescer-sem-esforco-em-2026.webp"
+imageAlt: "Two smiling women in sweaters sit on a beige sofa, one holding a tablet."
 category: "dicas"
 locale: "en"
 tags: ["compound interest calculator","personal finance","savings","money growth","FinMoovi"]

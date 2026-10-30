@@ -4,6 +4,7 @@ definition: "O que é mercado de capitais e como isso aparece no seu dia a dia �
 title: "mercado de capitais - Glossário Financeiro"
 description: "O que é mercado de capitais e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/mercado-de-capitais.webp"
+imageAlt: "Moedas douradas, porquinho de vidro, gráfico e planta verde sobre fundo escuro."
 category: "basico"
 tags: ["mercado de capitais", "glossário", "finanças"]
 author: "FinMoovi"

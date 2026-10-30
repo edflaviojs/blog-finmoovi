@@ -3,6 +3,7 @@ title: "Cómo hacer que tu dinero crezca sin esfuerzo en 2026"
 description: "Descubre, paso a paso, cómo usar los intereses compuestos y la app FinMoovi para potenciar tus finanzas en minutos."
 tickerHeadline: "El truco que dispara tu saldo"
 image: "/images/posts/como-fazer-seu-dinheiro-crescer-sem-esforco-em-2026.webp"
+imageAlt: "Dos mujeres sonríen en un sofá beige, una sostiene una tableta y una taza."
 category: "dicas"
 locale: "es"
 tags: ["calcular interés compuesto","finanzas personales","economía","dinero"]

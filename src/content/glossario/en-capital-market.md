@@ -4,6 +4,7 @@ definition: "What Capital market is and how it shows up in your everyday money â
 title: "Capital market - Financial Glossary"
 description: "What Capital market is and how it shows up in your everyday money â€” explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/mercado-de-capitais.webp"
+imageAlt: "Gold coins, piggy bank, and plant in jar on dark background."
 category: "basico"
 tags: ["Capital market", "glossary", "finance"]
 author: "FinMoovi"

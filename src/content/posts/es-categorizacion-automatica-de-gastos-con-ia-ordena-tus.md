@@ -3,6 +3,7 @@ title: "Categorización automática de gastos con IA: ordena tus finanzas sin es
 description: "Descubre cómo la IA clasifica tus gastos en segundos, ahorrándote tiempo y dándote claridad en tu presupuesto."
 tickerHeadline: "La IA que entiende tu bolsillo"
 image: "/images/posts/categorizacao-automatica-de-gastos-com-ia-como-deixar-suas.webp"
+imageAlt: "Pareja sonriente en sofá revisando papeles, teléfono y portátil."
 category: "ferramentas"
 locale: "es"
 tags: ["categorización automática","IA finanzas personales","control de gastos","FinMoovi","organización de gastos","categorizar gastos automático","IA finanzas personales","app inteligente gastos"]

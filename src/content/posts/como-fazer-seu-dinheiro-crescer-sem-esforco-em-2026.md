@@ -3,6 +3,7 @@ title: "Como fazer seu dinheiro crescer sem esforço em 2026"
 description: "Descubra, na prática, como usar juros compostos para potencializar suas finanças e aplicar a ferramenta FinMoovi em poucos minutos."
 tickerHeadline: "O truque que faz seu saldo disparar"
 image: "/images/posts/como-fazer-seu-dinheiro-crescer-sem-esforco-em-2026.webp"
+imageAlt: "Duas mulheres sorrindo em sofá bege, uma segurando tablet e outra uma caneca."
 category: "dicas"
 locale: "pt"
 tags: ["calcular juro composto","finanças pessoais","economia","dinheiro"]
