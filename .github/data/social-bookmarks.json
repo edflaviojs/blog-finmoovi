@@ -2938,5 +2938,45 @@
         "status": 200
       }
     }
+  },
+  {
+    "slug": "categorizacao-automatica-de-gastos-com-ia-como-deixar-suas",
+    "title": "Categorização automática de gastos com IA: como deixar suas finanças em ordem sem esforço",
+    "url": "https://blog.finmoovi.com/posts/categorizacao-automatica-de-gastos-com-ia-como-deixar-suas",
+    "submittedAt": "2026-10-30T19:47:14.154Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1908080682
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "como-fazer-seu-dinheiro-crescer-sem-esforco-em-2026",
+    "title": "Como fazer seu dinheiro crescer sem esforço em 2026",
+    "url": "https://blog.finmoovi.com/posts/como-fazer-seu-dinheiro-crescer-sem-esforco-em-2026",
+    "submittedAt": "2026-10-30T19:47:14.519Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1908080686
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
   }
 ]
