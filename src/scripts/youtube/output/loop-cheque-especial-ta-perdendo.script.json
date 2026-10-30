@@ -1,0 +1,118 @@
+{
+  "slug": "loop-cheque-especial-ta-perdendo",
+  "formato": "loop16",
+  "term": "O cheque especial",
+  "category": "vida",
+  "keyword": "ESPECIAL",
+  "valor": "R$ 210",
+  "situacao": "cheque-especial",
+  "gancho": "ta-perdendo",
+  "ganchoFamilia": "tá perdendo",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "areia-movedica",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se você ainda faz isso, tá perdendo dinheiro sem ver.",
+      "durationSec": 3.45,
+      "shots": [
+        {
+          "anchor": "perdendo",
+          "visual": {
+            "type": "statement",
+            "text": "Perdendo sem ver"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "areia-movedica"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Olha, duzentos e dez reais de juros tinham ido embora, caladinho.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "duzentos",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "areia-movedica"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 210"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Eu nem vi o vermelho entrar na minha conta. Hoje confiro toda semana.",
+      "durationSec": 4.49,
+      "shots": [
+        {
+          "anchor": "vermelho",
+          "visual": {
+            "type": "statement",
+            "text": "Nem vi entrar no vermelho"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "entrar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "areia-movedica"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Eu também fazia isso, e ia perdendo dinheiro sem ver.",
+      "durationSec": 3.45,
+      "shots": [
+        {
+          "anchor": "fazia",
+          "visual": {
+            "type": "statement",
+            "text": "Perdendo sem ver de novo"
+          }
+        },
+        {
+          "anchor": "perdendo",
+          "visual": {
+            "type": "statement",
+            "text": "Perdendo sem ver"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.19
+}
