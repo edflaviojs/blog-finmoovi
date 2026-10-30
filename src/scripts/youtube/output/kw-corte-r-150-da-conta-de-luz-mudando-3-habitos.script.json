@@ -1,0 +1,199 @@
+{
+  "slug": "kw-corte-r-150-da-conta-de-luz-mudando-3-habitos",
+  "term": "Corte R$150 da conta de luz mudando 3 hábitos",
+  "category": "mindset",
+  "keyword": "mudando",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você paga trezentos reais de luz e nem sabe que dá pra *cortar cento e cinquenta*?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "domino",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você paga trezentos reais de luz e nem sabe que dá pra cortar cento e cinquenta? Uma família cortou isso em um mês, só mudando três hábitos.",
+      "durationSec": 10.4,
+      "shots": [
+        {
+          "anchor": "trezentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 300"
+          }
+        },
+        {
+          "anchor": "cento",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 150,
+            "prefix": "R$"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "três",
+          "visual": {
+            "type": "statement",
+            "text": "Só 3 hábitos"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Os três hábitos eram bem comuns. Lâmpada antiga acesa o dia todo, ar-condicionado no mais gelado, carregador esquecido na tomada.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "Lâmpada",
+          "visual": {
+            "type": "icon",
+            "icon": "bulb"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "mais",
+          "visual": {
+            "type": "statement",
+            "text": "Gelado demais"
+          }
+        },
+        {
+          "anchor": "carregador",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Eles trocaram as lâmpadas, subiram a temperatura do ar e tiraram os carregadores da tomada. A conta de trezentos caiu pra cento e cinquenta. Em um mês.",
+      "durationSec": 10.4,
+      "shots": [
+        {
+          "anchor": "trocaram",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "domino"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "carregadores",
+          "visual": {
+            "type": "statement",
+            "text": "Pequeno hábito, grande efeito"
+          }
+        },
+        {
+          "anchor": "trezentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 300"
+          }
+        },
+        {
+          "anchor": "cento",
+          "visual": {
+            "type": "number",
+            "text": "R$ 150"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Na minha casa eu lancei a conta de luz no FinMoovi e ele marcou em vermelho o mês mais caro.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "casa",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Conta de luz lançada, mês mais caro marcado em vermelho"
+          }
+        },
+        {
+          "anchor": "vermelho",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          },
+          "sfx": "alert"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver a sua? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Dá sim pra cortar cento e cinquenta reais da luz mudando três hábitos. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "cinquenta",
+          "visual": {
+            "type": "number",
+            "text": "R$ 150"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "icon",
+            "icon": "shield"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja sua conta de luz no FinMoovi",
+    "target": "app"
+  },
+  "totalDurationSec": 47.7
+}
