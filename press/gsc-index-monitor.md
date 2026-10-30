@@ -1,14 +1,14 @@
 # GSC — Monitor de Indexação
 
-Gerado em: 2026-10-29T15:01:07.397Z
+Gerado em: 2026-10-30T14:56:25.185Z
 Propriedade: https://blog.finmoovi.com/
 
 ## Resumo
 
-- **981/1103** URLs indexadas
-- **119** não indexadas
+- **964/1112** URLs indexadas
+- **145** não indexadas
 - **3** com erro na inspeção
-- **56** página(s) de conteúdo fora do índice há ≥7 dias
+- **60** página(s) de conteúdo fora do índice há ≥7 dias
 
 ## Sitemap
 
@@ -16,10 +16,10 @@ Propriedade: https://blog.finmoovi.com/
 
 ## Por motivo (não indexadas)
 
-- Crawled - currently not indexed: 110
+- Crawled - currently not indexed: 130
 - Duplicate, Google chose different canonical than user: 1
-- Discovered - currently not indexed: 5
-- URL is unknown to Google: 3
+- Discovered - currently not indexed: 6
+- URL is unknown to Google: 8
 
 ## Páginas de conteúdo há mais tempo fora do índice
 
@@ -30,7 +30,9 @@ Propriedade: https://blog.finmoovi.com/
 - `https://blog.finmoovi.com/posts/como-usar-credito-sem-sufocar-seu-orcamento-5-passos/` — Crawled - currently not indexed (desde 2026-10-20)
 - `https://blog.finmoovi.com/posts/investimentos-para-o-segundo-semestre-estrategias-praticas/` — Duplicate, Google chose different canonical than user (desde 2026-08-07)
 - `https://blog.finmoovi.com/posts/negociar-descontos-em-contas-fixas/` — Discovered - currently not indexed (desde 2026-08-12)
+- `https://blog.finmoovi.com/posts/voce-tambem-esquece-de-anotar-seus-gastos/` — Crawled - currently not indexed (desde 2026-10-23)
 - `https://blog.finmoovi.com/en/posts/en-5-tips-to-reorganize-your-finances-on-vacation/` — Crawled - currently not indexed (desde 2026-09-21)
+- `https://blog.finmoovi.com/en/posts/en-creating-an-emergency-fund/` — Crawled - currently not indexed (desde 2026-10-23)
 - `https://blog.finmoovi.com/en/posts/en-digital-envelope-technique-practical-guide-for-2026/` — Crawled - currently not indexed (desde 2026-10-03)
 - `https://blog.finmoovi.com/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end/` — Crawled - currently not indexed (desde 2026-10-20)
 - `https://blog.finmoovi.com/en/posts/en-finmoovi-cost-of-living-index-june-2026/` — Crawled - currently not indexed (desde 2026-09-27)
@@ -62,14 +64,12 @@ Propriedade: https://blog.finmoovi.com/
 - `https://blog.finmoovi.com/es/posts/es-renta-fija-vs-renta-variable-que-vale-mas-la-pena-en-2026/` — Crawled - currently not indexed (desde 2026-10-15)
 - `https://blog.finmoovi.com/es/posts/es-tambien-tienes-dificultad-para-organizar-tus-finanzas/` — Crawled - currently not indexed (desde 2026-09-22)
 - `https://blog.finmoovi.com/glossario/educacao-financeira/` — Crawled - currently not indexed (desde 2026-10-20)
+- `https://blog.finmoovi.com/glossario/exportacao/` — Discovered - currently not indexed (desde 2026-10-23)
 - `https://blog.finmoovi.com/en/glossario/en-asset-quality/` — Crawled - currently not indexed (desde 2026-10-20)
+- `https://blog.finmoovi.com/en/glossario/en-cash-flow-excel/` — Crawled - currently not indexed (desde 2026-10-23)
 - `https://blog.finmoovi.com/en/glossario/en-credit-card-statement/` — Crawled - currently not indexed (desde 2026-10-20)
 - `https://blog.finmoovi.com/en/glossario/en-financial-investment/` — Crawled - currently not indexed (desde 2026-10-14)
 - `https://blog.finmoovi.com/en/glossario/en-interest/` — Crawled - currently not indexed (desde 2026-10-14)
 - `https://blog.finmoovi.com/en/glossario/en-overdraft/` — Crawled - currently not indexed (desde 2026-10-10)
 - `https://blog.finmoovi.com/en/glossario/en-price-to-earnings-ratio/` — Crawled - currently not indexed (desde 2026-10-15)
 - `https://blog.finmoovi.com/en/glossario/en-real-estate-funds-reits/` — Crawled - currently not indexed (desde 2026-10-20)
-- `https://blog.finmoovi.com/es/glossario/es-ahorro/` — Crawled - currently not indexed (desde 2026-10-19)
-- `https://blog.finmoovi.com/es/glossario/es-come-cotas/` — Crawled - currently not indexed (desde 2026-10-16)
-- `https://blog.finmoovi.com/es/glossario/es-etf/` — Crawled - currently not indexed (desde 2026-10-17)
-- `https://blog.finmoovi.com/es/glossario/es-flujo-de-caja-descontado/` — Crawled - currently not indexed (desde 2026-10-21)
