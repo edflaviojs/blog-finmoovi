@@ -964,5 +964,11 @@
     "gancho": "comeca-assim",
     "turno": "manha",
     "em": "2026-10-31T10:30:38.039Z"
+  },
+  {
+    "situacao": "parcela-atrasada",
+    "gancho": "ninguem-fala",
+    "turno": "noite",
+    "em": "2026-10-31T10:40:55.063Z"
   }
 ]

@@ -1,0 +1,118 @@
+{
+  "slug": "loop-parcela-atrasada-ninguem-fala",
+  "formato": "loop16",
+  "term": "A parcela que atrasou",
+  "category": "vida",
+  "keyword": "ATRASO",
+  "valor": "R$ 45",
+  "situacao": "parcela-atrasada",
+  "gancho": "ninguem-fala",
+  "ganchoFamilia": "ninguém fala",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "domino",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Ninguém fala isso sobre boleto atrasado, mas é real. Comigo foi sábado.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "Ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "Boleto atrasado, sábado"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "boleto",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "domino"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Quando vi, quarenta e cinco reais de multa tinham ido embora.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "quarenta",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "domino"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "cinco",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 45 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Aí caiu peça, caiu outra, e eu fiquei sem chão.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "outra",
+          "visual": {
+            "type": "statement",
+            "text": "Uma peça derruba a outra"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "fiquei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "domino"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Boleto atrasado no sábado, banco fechado. Comigo foi real.",
+      "durationSec": 3.26,
+      "shots": [
+        {
+          "anchor": "Boleto",
+          "visual": {
+            "type": "statement",
+            "text": "Sábado, banco fechado"
+          }
+        },
+        {
+          "anchor": "atrasado",
+          "visual": {
+            "type": "statement",
+            "text": "Boleto atrasado, sábado"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
