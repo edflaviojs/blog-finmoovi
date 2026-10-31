@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-30T16:50:30.664Z",
-  "sourceCursor": 1,
+  "updatedAt": "2026-10-31T14:54:54.423Z",
+  "sourceCursor": 2,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -2216,8 +2216,10 @@
       "category": null,
       "priority": 2,
       "source": "gsc-gap",
-      "status": "pending",
-      "addedAt": "2026-10-02T16:28:59.539Z"
+      "status": "used",
+      "addedAt": "2026-10-02T16:28:59.539Z",
+      "usedAt": "2026-10-31T14:54:54.423Z",
+      "usedBy": "gerar-dicas-financeiras"
     },
     {
       "keyword": "calculadora parcelamento price",
