@@ -6169,6 +6169,21 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-10-30"
+    },
+    "nfp-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-31"
+    },
+    "nfp-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-31"
+    },
+    "nfp.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-10-31"
     }
   },
   "corrigidas": {
@@ -6833,6 +6848,6 @@
       "motivo": "tem texto escrito (\"I'm sorry, I'm not able to identify the people in this image.\")"
     }
   },
-  "totalAcervo": 1234,
-  "ultimaCorrida": "2026-10-30"
+  "totalAcervo": 1237,
+  "ultimaCorrida": "2026-10-31"
 }
