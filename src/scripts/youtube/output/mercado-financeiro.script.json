@@ -1,0 +1,192 @@
+{
+  "slug": "mercado-financeiro",
+  "term": "mercado financeiro",
+  "category": "basico",
+  "keyword": "financeiro",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Sabe o que o *mercado financeiro* tem a ver com o seu dinheiro?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ralo",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Sabe o que o mercado financeiro tem a ver com o seu dinheiro? Tem tudo, mesmo sem o senhor nunca ter comprado nada lá.",
+      "durationSec": 9.2,
+      "shots": [
+        {
+          "anchor": "mercado",
+          "visual": {
+            "type": "statement",
+            "text": "Mercado financeiro"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          }
+        },
+        {
+          "anchor": "nunca",
+          "visual": {
+            "type": "statement",
+            "text": "Sem nunca ter comprado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Mercado financeiro é onde bancos, empresas e governo trocam dinheiro e emprestam um pro outro. Parece coisa de rico, só que o seu cartão e o seu empréstimo moram ali.",
+      "durationSec": 11.5,
+      "shots": [
+        {
+          "anchor": "bancos",
+          "visual": {
+            "type": "icon",
+            "icon": "bank"
+          }
+        },
+        {
+          "anchor": "Parece",
+          "visual": {
+            "type": "statement",
+            "text": "Parece coisa de rico"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "cartão",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Quando o juro sobe lá, a parcela sobe aqui. Eu paguei quarenta reais a mais por mês e nem percebi. Em um ano, quatrocentos e oitenta.",
+      "durationSec": 10,
+      "shots": [
+        {
+          "anchor": "juro",
+          "visual": {
+            "type": "icon",
+            "icon": "chart-down"
+          },
+          "sfx": "alert"
+        },
+        {
+          "anchor": "quarenta",
+          "visual": {
+            "type": "number",
+            "text": "+ R$ 40 por mês"
+          }
+        },
+        {
+          "anchor": "quatrocentos",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 480,
+            "prefix": "R$"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Aí eu lancei minhas parcelas no FinMoovi e ele pôs cada cobrança numa linha, com o valor de cada mês. Foi ali que eu vi a parcela subindo.",
+      "durationSec": 10.8,
+      "shots": [
+        {
+          "anchor": "parcelas",
+          "visual": {
+            "type": "app",
+            "app": "cartoes",
+            "note": "Cada parcela numa linha, com o valor de cada mês"
+          }
+        },
+        {
+          "anchor": "subindo",
+          "visual": {
+            "type": "statement",
+            "text": "A parcela subindo"
+          },
+          "sfx": "ding"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver as suas? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "number",
+            "text": "7 dias grátis"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Esse mercado mexe no seu bolso mesmo quando o senhor não olha pra ele. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "bolso",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          }
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Sem controle, dinheiro alheio"
+          },
+          "sfx": "thud"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja suas parcelas em um só lugar",
+    "target": "app"
+  },
+  "totalDurationSec": 53.4
+}
