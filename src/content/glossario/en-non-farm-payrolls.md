@@ -4,6 +4,7 @@ definition: "What Non-Farm Payrolls is and how it shows up in your everyday mone
 title: "Non-Farm Payrolls - Financial Glossary"
 description: "What Non-Farm Payrolls is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/nfp.webp"
+imageAlt: "Gold coins, crystal ball, and plant in jar on metallic platform."
 category: "basico"
 tags: ["Non-Farm Payrolls", "glossary", "finance"]
 author: "FinMoovi"

@@ -4,6 +4,7 @@ definition: "O que é nfp e como isso aparece no seu dia a dia — explicado de 
 title: "nfp - Glossário Financeiro"
 description: "O que é nfp e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/nfp.webp"
+imageAlt: "Pilhas de moedas douradas, bola de cristal e vaso com planta sobre fundo azul."
 category: "basico"
 tags: ["nfp", "glossário", "finanças"]
 author: "FinMoovi"
