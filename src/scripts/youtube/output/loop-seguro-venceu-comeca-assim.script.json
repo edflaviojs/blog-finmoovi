@@ -1,0 +1,118 @@
+{
+  "slug": "loop-seguro-venceu-comeca-assim",
+  "formato": "loop16",
+  "term": "O seguro que venceu",
+  "category": "vida",
+  "keyword": "SEGURO",
+  "valor": "R$ 2.300",
+  "situacao": "seguro-venceu",
+  "gancho": "comeca-assim",
+  "ganchoFamilia": "começa assim",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "escudo",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Quer aprender a ter sossego? Começa assim. Meu seguro venceu ontem.",
+      "durationSec": 4.08,
+      "shots": [
+        {
+          "anchor": "aprender",
+          "visual": {
+            "type": "statement",
+            "text": "O seguro venceu ontem"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "sossego",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escudo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Bati o carro. Paguei do bolso dois reais.300, seguro vencido.",
+      "durationSec": 3.71,
+      "shots": [
+        {
+          "anchor": "carro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escudo"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "Paguei",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 2.300 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Agora olha, boleto do seguro eu coloco no alarme.",
+      "durationSec": 3.34,
+      "shots": [
+        {
+          "anchor": "boleto",
+          "visual": {
+            "type": "statement",
+            "text": "Agora tem alarme"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "seguro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escudo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Quer ter sossego? Começa assim. Seguro em dia, nunca mais vencido.",
+      "durationSec": 4.08,
+      "shots": [
+        {
+          "anchor": "sossego",
+          "visual": {
+            "type": "statement",
+            "text": "Seguro em dia"
+          }
+        },
+        {
+          "anchor": "Começa",
+          "visual": {
+            "type": "statement",
+            "text": "O seguro venceu ontem"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.21
+}

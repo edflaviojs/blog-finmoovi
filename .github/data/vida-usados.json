@@ -958,5 +958,11 @@
     "gancho": "ta-perdendo",
     "turno": "noite",
     "em": "2026-10-30T11:09:41.196Z"
+  },
+  {
+    "situacao": "seguro-venceu",
+    "gancho": "comeca-assim",
+    "turno": "manha",
+    "em": "2026-10-31T10:30:38.039Z"
   }
 ]
