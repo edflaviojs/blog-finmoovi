@@ -1,0 +1,222 @@
+{
+  "slug": "mercado-de-capitais",
+  "term": "mercado de capitais",
+  "category": "basico",
+  "keyword": "capitais",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você sabe por que o seu *dinheiro guardado não anda*?"
+  },
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "ampulheta",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você sabe por que o seu dinheiro guardado não anda? Porque ele tá parado, enquanto tem empresa pedindo dinheiro emprestado e pagando um extra a quem empresta. Isso é o mercado de capitais.",
+      "durationSec": 12.7,
+      "shots": [
+        {
+          "anchor": "guardado",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ampulheta"
+          }
+        },
+        {
+          "anchor": "empresa",
+          "visual": {
+            "type": "icon",
+            "icon": "bank"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "extra",
+          "visual": {
+            "type": "statement",
+            "text": "Um extra pra quem empresta"
+          }
+        },
+        {
+          "anchor": "mercado",
+          "visual": {
+            "type": "statement",
+            "text": "Mercado de capitais"
+          },
+          "sfx": "boom"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu guardava duzentos reais por mês, caladinho, na conta. Todo mês. Achava que guardar já bastava.",
+      "durationSec": 6.2,
+      "shots": [
+        {
+          "anchor": "duzentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 200/mês"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "caladinho",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          }
+        },
+        {
+          "anchor": "Achava",
+          "visual": {
+            "type": "statement",
+            "text": "Guardar não basta"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "No fim de um ano, deu dois mil e quatrocentos reais. Parados, enquanto tinha empresa procurando dinheiro de gente como eu.",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "dois",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 2400,
+            "prefix": "R$"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "Parados",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ampulheta"
+          }
+        },
+        {
+          "anchor": "empresa",
+          "visual": {
+            "type": "icon",
+            "icon": "bank"
+          }
+        },
+        {
+          "anchor": "gente",
+          "visual": {
+            "type": "statement",
+            "text": "Gente como eu"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Aí eu joguei esse total no FinMoovi e ele juntou numa linha só tudo que tava parado. Dois mil e quatrocentos reais.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Total de R$ 2.400 reunido numa linha só"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "tudo",
+          "visual": {
+            "type": "statement",
+            "text": "Tudo numa linha só"
+          }
+        },
+        {
+          "anchor": "Dois",
+          "visual": {
+            "type": "number",
+            "text": "R$ 2.400"
+          },
+          "sfx": "sparkle"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver quanto o seu tá parado? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 5,
+      "shots": [
+        {
+          "anchor": "quanto",
+          "visual": {
+            "type": "statement",
+            "text": "Quanto está parado?"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Seu dinheiro guardado não anda porque ficou parado. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 5.8,
+      "shots": [
+        {
+          "anchor": "guardado",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ampulheta"
+          }
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Sem controle, não é seu"
+          },
+          "sfx": "thud"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Descubra quanto do seu dinheiro está parado",
+    "target": "app"
+  },
+  "totalDurationSec": 46.3
+}
