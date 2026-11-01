@@ -976,5 +976,11 @@
     "gancho": "depois-de-anos",
     "turno": "manha",
     "em": "2026-11-01T11:26:18.964Z"
+  },
+  {
+    "situacao": "fatura-maior",
+    "gancho": "depois-de-anos",
+    "turno": "noite",
+    "em": "2026-11-01T11:33:44.908Z"
   }
 ]
