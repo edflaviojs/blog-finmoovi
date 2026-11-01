@@ -3,6 +3,7 @@ title: "Como usar um simulador de empréstimo para planejar seu futuro financeir
 description: "Descubra, em linguagem simples, como um simulador SAC/PRICE pode ajudar a organizar suas finanças e evitar surpresas no pagamento de empréstimos."
 tickerHeadline: "A planilha que fala a sua língua"
 image: "/images/posts/como-usar-um-simulador-de-emprestimo-para-planejar-seu.webp"
+imageAlt: "Três pessoas sorrindo em sofá, segurando tablet, com planta ao fundo."
 category: "dicas"
 locale: "pt"
 tags: ["simulador sac price","finanças pessoais","economia","dinheiro"]

@@ -3,6 +3,7 @@ title: "How to Use a Loan Simulator to Plan Your Financial Future in 2026"
 description: "Learn in plain language how a SAC/PRICE loan simulator can help you organize finances and avoid payment surprises."
 tickerHeadline: "The spreadsheet that speaks your languag"
 image: "/images/posts/como-usar-um-simulador-de-emprestimo-para-planejar-seu.webp"
+imageAlt: "Three smiling adults on a couch view a tablet in a bright room."
 category: "dicas"
 locale: "en"
 tags: ["loan simulator","personal finance","budgeting","SAC","PRICE","amortization"]

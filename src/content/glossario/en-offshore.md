@@ -4,6 +4,7 @@ definition: "What offshore is and how it shows up in your everyday money — exp
 title: "offshore - Financial Glossary"
 description: "What offshore is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/offshore.webp"
+imageAlt: "Gold coins, orange growth chart, and a glass jar with a plant on a dark background."
 category: "basico"
 tags: ["offshore", "glossary", "finance"]
 author: "FinMoovi"

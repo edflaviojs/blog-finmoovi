@@ -4,6 +4,7 @@ definition: "Qué es offshore y cómo aparece en tu día a día — explicado de
 title: "offshore - Glosario Financiero"
 description: "Qué es offshore y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/offshore.webp"
+imageAlt: "Monedas doradas, gráfico ascendente naranja y planta en frasco sobre fondo oscuro."
 category: "basico"
 tags: ["offshore", "glosario", "finanzas"]
 author: "FinMoovi"
