@@ -1,0 +1,118 @@
+{
+  "slug": "loop-reforma-banheiro-depois-de-anos",
+  "formato": "loop16",
+  "term": "A reforma que sempre adia",
+  "category": "vida",
+  "keyword": "REFORMA",
+  "valor": "R$ 1.400",
+  "situacao": "reforma-banheiro",
+  "gancho": "depois-de-anos",
+  "ganchoFamilia": "depois de anos",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "ampulheta",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Depois de anos tentando, descobri isso. Comigo, foi o azulejo solto.",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "tentando",
+          "visual": {
+            "type": "statement",
+            "text": "Azulejo solto no banheiro"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "descobri",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ampulheta"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "O pedreiro pediu mil e quatrocentos reais Eu guardei o papel, deixei quieto.",
+      "durationSec": 4.6,
+      "shots": [
+        {
+          "anchor": "pedreiro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ampulheta"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "pediu",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 1.400 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Só que a água entrou na parede de casa.",
+      "durationSec": 3.18,
+      "shots": [
+        {
+          "anchor": "entrou",
+          "visual": {
+            "type": "statement",
+            "text": "A água entrou na parede"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "parede",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ampulheta"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Anos tentando adiar o azulejo solto, e descobri isso depois.",
+      "durationSec": 3.53,
+      "shots": [
+        {
+          "anchor": "tentando",
+          "visual": {
+            "type": "statement",
+            "text": "Adiar custou caro"
+          }
+        },
+        {
+          "anchor": "adiar",
+          "visual": {
+            "type": "statement",
+            "text": "Azulejo solto no banheiro"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
