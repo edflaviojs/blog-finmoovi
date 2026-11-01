@@ -9,6 +9,7 @@ locale: "pt"
 tags: ["black friday 2026","poupar dinheiro","finanças pessoais","FinMoovi","orçamento","consumo consciente","dicas de economia","poupar black friday","preparar black friday antecipado"]
 author: "FinMoovi"
 publishedAt: 2026-07-24
+updatedAt: 2026-11-01
 readingTime: 7
 featured: false
 translationKey: "5-passos-praticos-para-comecar-a-poupar-para-a-black-friday"

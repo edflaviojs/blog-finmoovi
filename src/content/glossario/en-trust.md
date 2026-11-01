@@ -26,7 +26,7 @@ Imagine you’re buying a house and you want to make sure the money you’ve sav
 
 
 
-A trust can hold anything from cash, stocks, and real‑estate to a vintage car or a collection of art. The key advantage is control: you decide who gets what, when, and under which circumstances. Unlike a will, which only takes effect after death and must go through probate (a public, often lengthy court process), a trust can distribute assets instantly, keep details private, and sometimes reduce taxes.
+A trust can hold anything from cash, [stocks](/en/glossario/en-stocks), and real‑estate to a vintage car or a collection of art. The key advantage is control: you decide who gets what, when, and under which circumstances. Unlike a will, which only takes effect after death and must go through probate (a public, often lengthy court process), a trust can distribute assets instantly, keep details private, and sometimes reduce taxes.
 
 ## Why People Usually Need a Trust
 
@@ -34,9 +34,9 @@ A trust can hold anything from cash, stocks, and real‑estate to a vintage car 
 - **Avoiding probate** – Assets move directly to beneficiaries without court delays.
 - **Managing disability** – If you become unable to handle finances, the trustee steps in automatically.
 - **Preserving family businesses** – A trust can keep ownership within the family while providing professional management.
-- **Charitable giving** – You can earmark a portion of your wealth for a cause you care about, with tax benefits.
+- **Charitable giving** – You can earmark a portion of your wealth for a cause you care about, with tax [benefits](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026).
 
-Most people think a trust is only for the ultra‑rich, but even a modest portfolio—say, the equivalent of a few months’ rent, a modest investment account, and a car—can benefit from the structure if you want clear rules for the future.
+Most people think a trust is only for the ultra‑rich, but even a modest portfolio—say, the equivalent of a few months’ rent, a modest [investment](/en/glossario/en-investment) account, and a car—can benefit from the structure if you want clear rules for the future.
 
 ## How FinMoovi Makes Setting Up and Managing a Trust Easy
 
@@ -46,10 +46,10 @@ You probably already use FinMoovi to track daily expenses, but the app does more
 
 
 
-- **Automatic categorization** – The moment you upload a property deed or a bank statement, FinMoovi tags it under “Trust Assets” without you lifting a finger.
-- **Multi‑currency support** – Whether your assets are in dollars, euros, or any other currency, the app converts them to a single view, so you always know the total value of the trust.
+- **[Automatic categorization](/en/posts/en-automatic-expense-categorization-with-ai-keep-your-finances)** – The moment you upload a property deed or a bank statement, FinMoovi tags it under “Trust Assets” without you lifting a finger.
+- **[Multi‑currency](/en/posts/en-digital-bank-vs-major-bank-which-is-worth-it-in-2026) support** – Whether your assets are in dollars, euros, or any other currency, the app converts them to a single view, so you always know the total value of the trust.
 - **Cash‑flow reports** – See inflows (new contributions) and outflows (distributions) in a clean graph, making it easy to explain the trust’s performance to family members or a future trustee.
-- **Monthly planning & goals** – Set a goal like “save the equivalent of three months’ rent for emergency trust funding” and watch FinMoovi nudge you each month.
+- **Monthly [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) & goals** – Set a goal like “save the equivalent of three months’ rent for emergency trust funding” and watch FinMoovi nudge you each month.
 - **Reminders & balance alerts** – Get notified when a beneficiary’s age milestone is approaching or when a distribution deadline is near.
 
 All of this happens offline too. If you’re at a property site with spotty internet, the Progressive Web App (PWA) stores the data locally and syncs later, so you never lose a receipt.

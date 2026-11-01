@@ -20,7 +20,7 @@ seo:
 
 ## What happens when money seems to disappear
 
-Have you ever reached the end of the month and noticed that your bank balance vanished as if by magic? The electricity bill, the credit card and that daily coffee have already eaten everything, and there is still not enough left for the grocery run. That “where did my money go?” feeling is what we call **giro**: the speed at which money comes into and goes out of your life. When giro runs unchecked, you lose track of your spending, you cannot plan ahead, and you end up falling back on loans or high-interest credit cards.
+Have you ever reached the end of the month and noticed that your bank balance vanished as if by magic? The electricity bill, the [credit card](/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026) and that daily coffee have already eaten everything, and there is still not enough left for the grocery run. That “where did my money go?” feeling is what we call **giro**: the speed at which money comes into and goes out of your life. When giro runs unchecked, you lose track of your spending, you cannot plan ahead, and you end up falling back on loans or high-[interest](/en/glossario/en-interest) credit cards.
 
 ![What happens when money seems to disappear](/images/glossario/giro-inline-1.webp)
 
@@ -28,7 +28,7 @@ Have you ever reached the end of the month and noticed that your bank balance va
 
 ## How giro works in practice
 
-Giro is nothing more than personal cash flow — the difference between everything that comes in (salary, side income, refunds) and everything that goes out (bills, purchases, leisure). If the inflow is smaller than the outflow, giro turns negative and you start living in the red. If it is larger, you have room to save, invest or reach your goals.
+Giro is nothing more than personal [cash flow](/en/glossario/en-cash-flow) — the difference between everything that comes in (salary, side income, refunds) and everything that goes out (bills, purchases, leisure). If the inflow is smaller than the outflow, giro turns negative and you start living in the red. If it is larger, you have room to save, invest or reach your goals.
 
 - **Inflow:** salary, freelance work, selling used items, tax refunds.
 - **Outflow:** fixed bills (water, electricity, internet), variable expenses (food, transport), card payments, leisure.
@@ -76,7 +76,7 @@ In the “Cash Flow” panel you can see:
 
 The bar and line charts are colourful and easy to read, with no need for complicated terms like “EBITDA” or “gross margin”.
 
-**Practical tip:** **Set aside 10% of any positive balance for an emergency fund**; the app can automatically create an “Emergency Fund” goal and move the money across every month.
+**Practical tip:** **Set aside 10% of any positive balance for an [emergency fund](/en/glossario/en-emergency-fund)**; the app can automatically create an “Emergency Fund” goal and move the money across every month.
 
 ### 4. Plan goals and follow your progress
 
@@ -84,7 +84,7 @@ Want to buy a sofa that costs around three months' rent? Create the “New sofa�
 
 ### 5. Use shopping mode to avoid surprises
 
-Before heading to the supermarket, open the shopping list in the app. As you add items, FinMoovi adds up the estimated price (based on previous purchases) and shows the running total. That way you avoid going over the budget you already set.
+Before heading to the supermarket, open the [shopping list](/en/glossario/en-shopping-list) in the app. As you add items, FinMoovi adds up the estimated price (based on previous purchases) and shows the running total. That way you avoid going over the budget you already set.
 
 ### 6. Get reminders and balance alerts
 

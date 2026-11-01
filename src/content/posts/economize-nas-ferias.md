@@ -11,7 +11,8 @@ tags:
   - planejamento financeiro
   - orçamento
 author: FinMoovi
-publishedAt: 2026-07-07T00:00:00.000Z
+publishedAt: 2026-07-07
+updatedAt: 2026-11-01T00:00:00.000Z
 locale: pt
 translationKey: economize-nas-ferias
 featured: false

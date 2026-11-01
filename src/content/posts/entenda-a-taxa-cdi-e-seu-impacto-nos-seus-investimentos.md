@@ -9,6 +9,7 @@ locale: "pt"
 tags: ["CDI","taxa interbancária","investimentos de renda fixa","rentabilidade","FinMoovi","o que é CDI e como ele afeta seus investimentos"]
 author: "FinMoovi"
 publishedAt: 2026-07-29
+updatedAt: 2026-11-01
 readingTime: 7
 featured: false
 translationKey: "entenda-a-taxa-cdi-e-seu-impacto-nos-seus-investimentos"

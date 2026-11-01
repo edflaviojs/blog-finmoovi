@@ -28,7 +28,7 @@ Imagine you just received your credit‑card statement and, looking at the list 
 
 ## How the Ibovespa works in practice
 
-The Ibovespa gathers the companies that have the highest trading volume and market representativeness. Each stock has a different weight in the calculation, according to its market value (how much the company is worth in total). When most of those companies post positive results, the index rises; if most post negative results, it falls. You don’t need to be a specialist to follow the index: just watch whether it’s up or down and relate that to your investment portfolio.
+The Ibovespa gathers the companies that have the highest trading volume and market representativeness. Each stock has a different weight in the calculation, according to its market value (how much the company is worth in total). When most of those companies post positive results, the index rises; if most post negative results, it falls. You don’t need to be a specialist to follow the index: just watch whether it’s up or down and relate that to your [investment](/en/glossario/en-investment) portfolio.
 
 - **Composition:** about 80 companies from varied sectors (energy, banks, retail, technology, etc.).
 - **Weight:** larger companies have more influence on the final result.
@@ -36,7 +36,7 @@ The Ibovespa gathers the companies that have the highest trading volume and mark
 
 ## Why the Ibovespa can change the way you manage your money
 
-If you usually keep money “under the mattress” or only leave it in a checking account, you miss the chance to make that resource work for you. A simple example: imagine you have the equivalent of three months’ rent saved. If you leave that amount in a checking account, it earns almost nothing. If you invest part of it in a fund that replicates the Ibovespa, historically the average annual return has been far higher than a savings account’s yield, even considering the fluctuations. Of course, there’s no guarantee of profit, but the idea is that, in the long run, the money has a better chance to grow.
+If you usually keep money “under the mattress” or only leave it in a checking account, you miss the chance to make that resource work for you. A simple example: imagine you have the equivalent of three months’ rent saved. If you leave that amount in a checking account, it earns almost nothing. If you invest part of it in a fund that replicates the Ibovespa, historically the average annual return has been far higher than a savings account’s yield, even considering the fluctuations. Of course, there’s no [guarantee](/en/glossario/en-guarantee) of profit, but the idea is that, in the long run, the money has a better chance to grow.
 
 ![Why the Ibovespa can change the way you manage your money](/images/glossario/ibovespa-inline-3.webp)
 
@@ -46,10 +46,10 @@ If you usually keep money “under the mattress” or only leave it in a checkin
 
 Most people think tracking stock indexes requires complicated spreadsheets or broker apps full of technical terms. FinMoovi simplifies all of that with features that fit into your daily life:
 
-- **Smart capture:** take a photo of your purchase receipt or use voice to record the expense. The app recognizes the amount, the category, and immediately adds it to your cash flow.
+- **Smart capture:** take a photo of your purchase receipt or use voice to record the expense. The app recognizes the amount, the category, and immediately adds it to your [cash flow](/en/glossario/en-cash-flow).
 - **Multi‑currency:** record expenses and investments in different currencies (dollar, euro, etc.) and see everything converted to your reference standard.
 - **Cash flow and reports:** view inflows and outflows in clear charts, including the performance of your investment in funds that follow the Ibovespa.
-- **Monthly planning / goals:** set how much you want to allocate to stock investing each month and track whether you’re meeting it.
+- **Monthly [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) / goals:** set how much you want to allocate to stock investing each month and track whether you’re meeting it.
 - **Cards and accounts:** import statements automatically and see the impact of purchases on your budget.
 - **Shopping mode:** create lists, see the total in real time and avoid exceeding the limit you set.
 - **Alerts and reminders:** get notifications when the balance is low or when the Ibovespa reaches a level you want to watch.
@@ -73,7 +73,7 @@ Most people think tracking stock indexes requires complicated spreadsheets or br
 
 ## When the Ibovespa may be less attractive
 
-The index isn’t always the best choice. During periods of high volatility (e.g., political crises or global economic downturns), the risk of loss can outweigh the potential gain. In those moments, FinMoovi lets you:
+The index isn’t always the best choice. During periods of high [volatility](/en/glossario/en-volatility) (e.g., political crises or global economic downturns), the risk of loss can outweigh the potential gain. In those moments, FinMoovi lets you:
 
 - **Turn off the automatic contribution goal** for a few weeks.
 - **Redirect the money** to more conservative investments, such as fixed‑income securities.
@@ -81,7 +81,7 @@ The index isn’t always the best choice. During periods of high volatility (e.g
 
 ## How to use FinMoovi to stay in control even offline
 
-Many finance apps require a constant connection, but life doesn’t always allow that. FinMoovi works as a Progressive Web App (PWA), which means you can:
+Many [finance apps](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your) require a constant connection, but life doesn’t always allow that. FinMoovi works as a Progressive Web App (PWA), which means you can:
 
 - **Log expenses offline** using the camera or voice.
 - **Check the investment history** and Ibovespa performance without needing mobile data.

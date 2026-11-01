@@ -20,7 +20,7 @@ seo:
 
 ## O que é uma nota promissória e por que você pode precisar dela  
 
-Imagine que você está prestes a comprar um eletrodoméstico caro, algo que custa cerca de um aluguel mensal, mas o vendedor não aceita parcelamento no cartão. Você tem o dinheiro na conta, mas prefere não desembolsar tudo de uma vez porque ainda tem outras contas a pagar. Nesse momento, surge a nota promissória: um documento escrito no qual você se compromete a pagar aquele valor em uma data futura, com ou sem juros, conforme o que foi acordado.  
+Imagine que você está prestes a comprar um eletrodoméstico caro, algo que custa cerca de um [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026) mensal, mas o vendedor não aceita [parcelamento](/glossario/parcelamento) no cartão. Você tem o dinheiro na conta, mas prefere não desembolsar tudo de uma vez porque ainda tem outras contas a pagar. Nesse momento, surge a nota promissória: um documento escrito no qual você se compromete a pagar aquele valor em uma data futura, com ou sem juros, conforme o que foi acordado.  
 
 ![O que é uma nota promissória e por que você pode precisar dela  ](/images/glossario/nota-promissoria-inline-1.webp)
 
@@ -43,7 +43,7 @@ Esses itens são obrigatórios por lei. Se faltar algum, a nota pode ser conside
 
 - **Negócios informais**: pequenos comerciantes que vendem a prazo sem usar sistemas bancários.  
 - **Empréstimos entre amigos ou familiares**: formaliza o acordo e evita mal-entendidos.  
-- **Compra de bens de alto valor**: quando o vendedor aceita a promessa como garantia.  
+- **Compra de bens de alto valor**: quando o vendedor aceita a promessa como [garantia](/glossario/garantia).  
 
 ![Quando usar a nota promissória pode ser vantajoso  ](/images/glossario/nota-promissoria-inline-3.webp)
 
@@ -67,7 +67,7 @@ Imagine que você acabou de receber uma nota promissória de um fornecedor que v
 - Data de vencimento  
 - Nome do beneficiário  
 
-Em poucos segundos, a informação já aparece categorizada como “Dívida a pagar – Fornecedor”. O FinMoovi ainda inclui a nota no seu fluxo de caixa, mostrando como aquele compromisso impacta o saldo futuro.  
+Em poucos segundos, a informação já aparece categorizada como “Dívida a pagar – Fornecedor”. O FinMoovi ainda inclui a nota no seu [fluxo de caixa](/glossario/fluxo-de-caixa), mostrando como aquele compromisso impacta o saldo futuro.  
 
 Além disso, o app gera relatórios mensais que destacam todas as notas promissórias que vencem nos próximos 30 dias, permitindo que você se programe. Se o valor for em outra moeda, o FinMoovi converte usando a cotação do dia, evitando surpresas com a variação cambial.  
 
@@ -81,9 +81,9 @@ Além disso, o app gera relatórios mensais que destacam todas as notas promiss�
 
 ## Integração com outras áreas do seu dinheiro  
 
-A nota promissória não vive isolada. Quando o vencimento chega, você pode pagar via transferência bancária, cartão de crédito (se o beneficiário aceitar) ou até mesmo em dinheiro. O FinMoovi permite registrar o pagamento de forma instantânea, vinculando a transação à nota original. Assim, seu histórico fica completo: emissão, vencimento, pagamento e saldo final.  
+A nota promissória não vive isolada. Quando o vencimento chega, você pode pagar via transferência bancária, cartão de [crédito](/glossario/credito) (se o beneficiário aceitar) ou até mesmo em dinheiro. O FinMoovi permite registrar o pagamento de forma instantânea, vinculando a transação à nota original. Assim, seu histórico fica completo: emissão, vencimento, pagamento e saldo final.  
 
-Se você tem cartões de crédito, o app também mostra a fatura consolidada, incluindo eventuais compras feitas com o cartão que foram usadas para quitar notas. Dessa forma, você tem uma visão única do seu fluxo de caixa, sem precisar abrir vários aplicativos.  
+Se você tem cartões de crédito, o app também mostra a fatura consolidada, incluindo eventuais compras feitas com o cartão que foram usadas para quitar notas. Dessa forma, você tem uma visão única do seu fluxo de caixa, sem precisar abrir vários [aplicativos](/posts/5-alternativas-ao-mobills-em-2026).  
 
 ## Como evitar a inadimplência e manter a credibilidade  
 

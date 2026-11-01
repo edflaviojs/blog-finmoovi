@@ -34,7 +34,7 @@ Esses contratos são usados por quem quer se proteger das oscilações (hedge) e
 
 ## Como funciona na prática: exemplo do dia a dia
 
-Imagine que você costuma gastar cerca de um aluguel por mês em combustível. Hoje, o litro está a 5 unidades de moeda, mas as notícias apontam que o preço pode subir 20 % nos próximos três meses. Você decide “travar” o preço hoje usando um contrato futuro de combustível (existe um futuro de diesel, por exemplo).  
+Imagine que você costuma gastar cerca de um [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026) por mês em combustível. Hoje, o litro está a 5 unidades de moeda, mas as notícias apontam que o preço pode subir 20 % nos próximos três meses. Você decide “travar” o preço hoje usando um contrato futuro de combustível (existe um futuro de diesel, por exemplo).  
 
 1. **Acordo:** Você compra um contrato futuro que fixa o preço do litro em 5 unidades para daqui a três meses.  
 2. **Cenário de alta:** Se o preço subir para 6 unidades, você ainda paga 5, economizando o equivalente a um almoço por dia.  
@@ -58,16 +58,16 @@ Essas características tornam os futuros instrumentos poderosos, mas também exi
 
 Gerenciar contratos futuros pode parecer complicado, mas com as ferramentas certas tudo fica mais simples. O FinMoovi traz uma série de funcionalidades que transformam a complexidade em clareza:
 
-- **Captura inteligente:** Tire foto da nota fiscal ou grave a voz ao fechar um contrato futuro. O app reconhece o valor, a data de vencimento e a moeda, categorizando tudo automaticamente.  
+- **[Captura inteligente](/posts/cansado-de-perder-horas-nas-planilhas-como-o-finmoovi):** Tire foto da nota fiscal ou grave a voz ao fechar um contrato futuro. O app reconhece o valor, a data de vencimento e a moeda, categorizando tudo automaticamente.  
 - **Multimoeda:** Controle contratos em diferentes moedas (BRL, USD, EUR) sem precisar fazer conversões manuais. O saldo de cada moeda aparece separado, e o app atualiza a taxa de câmbio em tempo real.  
-- **Fluxo de caixa e relatórios:** Veja como os futuros impactam seu caixa futuro. O relatório mostra a projeção de despesas/receitas considerando os preços fixados nos contratos.  
+- **[Fluxo de caixa](/glossario/fluxo-de-caixa) e relatórios:** Veja como os futuros impactam seu caixa futuro. O relatório mostra a projeção de despesas/receitas considerando os preços fixados nos contratos.  
 - **Planejamento mensal / metas:** Defina metas de gasto com combustível, energia ou importação e acompanhe se os futuros estão ajudando a manter o plano.  
 - **Cartões de crédito / fatura:** Integre as faturas ao app; assim, quando um futuro vencer, o pagamento pode ser programado automaticamente na fatura do cartão escolhido.  
 - **Modo compras:** Crie listas de compras de commodities (café, soja, petróleo) e veja o total em tempo real, já considerando os contratos futuros ativos.  
 - **Lembretes / alertas de saldo:** Receba notificações quando a margem de um contrato estiver perto de ser exigida ou quando o preço de mercado estiver muito distante do preço futuro.  
 - **Offline / PWA / sincronização:** Mesmo sem internet, você registra a operação; ao reconectar, tudo se sincroniza com a nuvem, garantindo que nada se perca.  
 
-Com esses recursos, você tem uma visão completa do que está acontecendo com seus contratos e como eles afetam seu orçamento pessoal ou empresarial.
+Com esses recursos, você tem uma visão completa do que está acontecendo com seus contratos e como eles afetam seu [orçamento pessoal](/glossario/orcamento-pessoal) ou empresarial.
 
 ## Dicas práticas para usar futuros sem dor de cabeça
 
@@ -83,13 +83,13 @@ Com esses recursos, você tem uma visão completa do que está acontecendo com s
 - **Risco de liquidez:** Alguns contratos têm poucos negociantes, o que pode dificultar a venda antes do vencimento.  
 - **Risco de margem:** Se o mercado se mover rapidamente, a bolsa pode exigir mais dinheiro (chamada de margem).  
 
-O FinMoovi ajuda a monitorar esses riscos com alertas de margem e relatórios de volatilidade, mas a decisão final sempre cabe a você.
+O FinMoovi ajuda a monitorar esses riscos com alertas de margem e relatórios de [volatilidade](/glossario/volatilidade), mas a decisão final sempre cabe a você.
 
 ## Quando vale a pena usar futuros
 
 - **Proteção de custos:** Se você tem despesas recorrentes que dependem de preços voláteis (combustível, energia, matéria‑prima).  
 - **Planejamento de viagens:** Quando a cotação de moedas pode impactar significativamente o orçamento da viagem.  
-- **Investimento especulativo:** Se você tem conhecimento de mercado e aceita o risco de perdas para buscar ganhos maiores.  
+- **[Investimento](/glossario/investimento) especulativo:** Se você tem conhecimento de mercado e aceita o risco de perdas para buscar ganhos maiores.  
 
 ## Comece hoje
 

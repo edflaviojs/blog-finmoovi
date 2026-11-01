@@ -20,7 +20,7 @@ seo:
 
 ## ¿Por qué siempre parece que el dinero se escapa?
 
-Te ha pasado que al final del mes revisas la cuenta y te preguntas “¿Dónde quedó todo?” Tal vez gastaste más de lo que pensabas en la compra del supermercado, en la suscripción que casi no usas o en ese viaje improvisado. La sensación de no tener control es frustrante y, a la larga, te impide ahorrar para metas importantes como comprar una casa o viajar al extranjero. La raíz del problema suele ser que no sabes **qué parte del mercado financiero está disponible para ti** y cómo aprovecharlo sin complicarte la vida.
+Te ha pasado que al final del mes revisas la cuenta y te preguntas “¿Dónde quedó todo?” Tal vez gastaste más de lo que pensabas en la compra del supermercado, en la suscripción que casi no usas o en ese viaje improvisado. La sensación de no tener control es frustrante y, a la larga, te impide [ahorrar](/es/posts/es-ahorra-en-la-farmacia-sin-sacrificios-guia-practica-2026) para metas importantes como comprar una casa o viajar al extranjero. La raíz del problema suele ser que no sabes **qué parte del [mercado financiero](/es/glossario/es-mercado-financiero) está disponible para ti** y cómo aprovecharlo sin complicarte la vida.
 
 ![¿Por qué siempre parece que el dinero se escapa?](/images/glossario/mercado-de-capitais-inline-1.webp)
 
@@ -32,7 +32,7 @@ El mercado de capitales es el espacio donde se compran y venden instrumentos fin
 
 - **Acciones:** partes de una empresa que puedes comprar; si la empresa crece, tu inversión también.
 - **Bonos:** préstamos que haces a una empresa o gobierno; te devuelven el capital más intereses.
-- **Fondos cotizados (ETF):** canastas de acciones o bonos que se negocian como una sola acción, facilitando la diversificación.
+- **Fondos cotizados (ETF):** canastas de acciones o bonos que se negocian como una sola acción, facilitando la [diversificación](/es/glossario/es-diversificacion).
 - **Instrumentos híbridos:** combinan características de acciones y bonos, como los bonos convertibles.
 
 Entender estos conceptos te permite decidir si quieres que tu dinero “trabaje” en la bolsa, en bonos del gobierno o en fondos que replican índices internacionales, sin necesidad de ser un experto.
@@ -45,9 +45,9 @@ Imagina que, después de una compra grande, tomas una foto del recibo con tu mó
 
 
 
-- **Captura inteligente:** foto o voz del recibo → categorización automática.
+- **[Captura inteligente](/es/posts/es-cansado-de-perder-horas-en-hojas-de-calculo-asi-finmoovi-lo):** foto o voz del recibo → categorización automática.
 - **Multimoneda:** BRL/USD/EUR y más, con conversión al instante.
-- **Flujo de caja e informes:** visualiza ingresos y egresos en gráficos claros.
+- **[Flujo de caja](/es/glossario/es-flujo-de-caja) e informes:** visualiza ingresos y egresos en gráficos claros.
 - **Planificación mensual y metas:** define cuánto quieres ahorrar para el fondo de emergencias o la jubilación.
 - **Tarjetas de crédito y facturas:** sincroniza tus tarjetas y recibe alertas de vencimiento.
 - **Modo compras:** crea listas, ve el total en tiempo real y evita sorpresas al pagar.
@@ -58,7 +58,7 @@ Con estos datos, FinMoovi te muestra, por ejemplo, que el 30 % de tu gasto men
 
 ## Tres consejos prácticos para empezar a invertir
 
-**Consejo práctico:** Destina al menos el equivalente al precio de un café al día a una cuenta de inversión automática. Configura FinMoovi para que, cada vez que tu saldo supere ese monto, transfiera la diferencia a un fondo de inversión de bajo costo.
+**Consejo práctico:** Destina al menos el equivalente al precio de un café al día a una cuenta de inversión automática. Configura FinMoovi para que, cada vez que tu saldo supere ese monto, transfiera la diferencia a un [fondo de inversión](/es/glossario/es-fondo-de-inversion) de bajo costo.
 
 **Consejo práctico:** Usa la función de “metas” para crear un objetivo de “inversión en acciones”. Establece un plazo de 12 meses y una cantidad mensual. La app te recordará cada vez que estés cerca de cumplirlo y te mostrará el rendimiento esperado según el tipo de activo que elijas.
 

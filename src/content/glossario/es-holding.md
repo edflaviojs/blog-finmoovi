@@ -24,17 +24,17 @@ Imagina que cada mes recibes varios recibos: la luz, el internet, la suscripció
 
 ## ¿Qué es un holding y por qué debería importarte?
   
-En finanzas, un *holding* es una entidad que posee acciones o participaciones de otras empresas. Piensa en él como una caja fuerte donde guardas diferentes inversiones bajo un mismo techo. No es un producto que vas a comprar en el supermercado, sino una estructura que permite agrupar activos para simplificar la gestión, reducir riesgos y aprovechar beneficios fiscales. En la vida cotidiana, el concepto se traduce en “tener todo bajo control”. Si logras “agrupar” tus gastos y recursos como lo haría un holding, tendrás una visión más clara y podrás tomar decisiones más inteligentes.
+En [finanzas](/es/glossario/es-finanzas), un *holding* es una entidad que posee [acciones](/es/glossario/es-acciones) o participaciones de otras empresas. Piensa en él como una caja fuerte donde guardas diferentes inversiones bajo un mismo techo. No es un producto que vas a comprar en el supermercado, sino una estructura que permite agrupar activos para simplificar la gestión, reducir riesgos y aprovechar beneficios fiscales. En la vida cotidiana, el concepto se traduce en “tener todo bajo control”. Si logras “agrupar” tus gastos y recursos como lo haría un holding, tendrás una visión más clara y podrás tomar decisiones más inteligentes.
 
 ![¿Te sientes atrapado entre varios gastos y no sabes a dónde va tu dinero?](/images/glossario/holding-inline-1.webp)
 
 
 
 ## Cómo FinMoovi te ayuda a crear tu propio holding personal
-  - **Captura inteligente:** toma una foto del recibo o graba una nota de voz y la app lo categoriza al instante.  
+  - **[Captura inteligente](/es/posts/es-cansado-de-perder-horas-en-hojas-de-calculo-asi-finmoovi-lo):** toma una foto del recibo o graba una nota de voz y la app lo categoriza al instante.  
   - **Multimoneda:** maneja diferentes monedas sin complicaciones, ideal si recibes ingresos en una y gastas en otra.  
-  - **Flujo de caja e informes:** visualiza entradas y salidas en tiempo real, como si fuera el balance de un holding.  
-  - **Planificación mensual y metas:** define cuánto quieres ahorrar para un viaje o para el fondo de emergencias y sigue el progreso.  
+  - **[Flujo de caja](/es/glossario/es-flujo-de-caja) e informes:** visualiza entradas y salidas en tiempo real, como si fuera el balance de un holding.  
+  - **Planificación mensual y metas:** define cuánto quieres [ahorrar](/es/posts/es-ahorra-en-la-farmacia-sin-sacrificios-guia-practica-2026) para un viaje o para el fondo de emergencias y sigue el progreso.  
   - **Tarjetas de crédito y facturas:** sincroniza tus tarjetas y ve el total de la factura antes de que llegue el corte.  
   - **Modo compras:** crea listas, ve el total acumulado en tiempo real y evita sorpresas al pagar.  
   - **Recordatorios y alertas de saldo:** recibe notificaciones cuando te acerques al límite que te has puesto.  
@@ -55,7 +55,7 @@ En finanzas, un *holding* es una entidad que posee acciones o participaciones de
 
   **Consejo práctico:** Configura alertas de saldo justo antes de que recibas tu próximo ingreso; así evitas gastar más de lo que realmente tienes disponible.  
 
-  **Consejo práctico:** Usa la función de metas mensuales para destinar automáticamente un porcentaje de cada ingreso a un “fondo de emergencia”; verás cómo se llena sin que tengas que mover dinero manualmente.
+  **Consejo práctico:** Usa la función de metas mensuales para destinar automáticamente un porcentaje de cada ingreso a un “[fondo de emergencia](/es/glossario/es-fondo-de-emergencia)”; verás cómo se llena sin que tengas que mover dinero manualmente.
 
 ## Paso a paso: montar tu holding financiero con FinMoovi
   1. **Registra tus fuentes de ingreso:** agrega tu salario, ingresos extra o cualquier otro flujo. La app los mostrará como “capital principal”.  

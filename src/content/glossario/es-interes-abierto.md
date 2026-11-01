@@ -20,7 +20,7 @@ seo:
 
 ## ¿Por qué te sientes perdido al ver esos números en tu pantalla de trading?
 
-Te has sentado frente a la pantalla, has abierto la app de tu bróker y ves una columna que dice “Open Interest”. No sabes si es bueno o malo, y cada vez que intentas preguntar a un amigo que entiende de mercados, te suelta términos como “contratos futuros” o “liquidez” que suenan a jerga de otro planeta. El resultado: sigues operando a ciegas, sin saber si el movimiento que ves es una señal real o simplemente ruido. Esa incertidumbre te quita la confianza y, peor aún, te hace dudar de cada decisión de inversión.
+Te has sentado frente a la pantalla, has abierto la app de tu bróker y ves una columna que dice “Open Interest”. No sabes si es bueno o malo, y cada vez que intentas preguntar a un amigo que entiende de mercados, te suelta términos como “contratos futuros” o “liquidez” que suenan a jerga de otro planeta. El resultado: sigues operando a ciegas, sin saber si el movimiento que ves es una señal real o simplemente ruido. Esa incertidumbre te quita la confianza y, peor aún, te hace dudar de cada decisión de [inversión](/es/glossario/es-inversion).
 
 ![¿Por qué te sientes perdido al ver esos números en tu pantalla de trading?](/images/glossario/open-interest-inline-1.webp)
 
@@ -57,10 +57,10 @@ Supongamos que estás siguiendo el precio del petróleo porque sabes que afecta 
 
 Aquí es donde entra FinMoovi, la app que actúa como tu asistente financiero personal. Imagina que, mientras revisas tus inversiones, la app captura automáticamente la información de tus operaciones y la clasifica sin que tengas que escribir nada.
 
-- **Captura inteligente:** toma una foto del recibo de tu bróker o graba la voz diciendo “compré 5 contratos de petróleo”. FinMoovi reconoce el tipo de activo, la cantidad y la fecha, y lo guarda en tu historial.
-- **Categorización automática:** el sistema identifica que esos contratos son futuros y asigna el interés abierto correspondiente, mostrándolo en un panel sencillo.
+- **[Captura inteligente](/es/posts/es-cansado-de-perder-horas-en-hojas-de-calculo-asi-finmoovi-lo):** toma una foto del recibo de tu bróker o graba la voz diciendo “compré 5 contratos de petróleo”. FinMoovi reconoce el tipo de activo, la cantidad y la fecha, y lo guarda en tu historial.
+- **[Categorización automática](/es/posts/es-categorizacion-automatica-de-gastos-con-ia-ordena-tus):** el sistema identifica que esos contratos son futuros y asigna el interés abierto correspondiente, mostrándolo en un panel sencillo.
 - **Multimoneda:** ya sea que operes en dólares, euros o cualquier otra divisa, la app convierte todo a una vista unificada para que no te pierdas en conversiones.
-- **Flujo de caja e informes:** visualiza cómo los cambios en el interés abierto afectan tu exposición y tu riesgo, todo en un informe mensual que puedes descargar.
+- **[Flujo de caja](/es/glossario/es-flujo-de-caja) e informes:** visualiza cómo los cambios en el interés abierto afectan tu exposición y tu riesgo, todo en un informe mensual que puedes descargar.
 - **Planificación mensual y metas:** fija una meta de exposición al futuro del petróleo y FinMoovi te avisa cuando el interés abierto supera el umbral que definiste.
 - **Tarjetas de crédito y facturación:** si usas tarjetas para financiar tus operaciones, la app agrupa esos gastos y los muestra junto a tus contratos.
 - **Modo compras:** crea una lista de los contratos que quieres abrir y ve el total en tiempo real antes de confirmar la operación.
@@ -73,7 +73,7 @@ Aquí es donde entra FinMoovi, la app que actúa como tu asistente financiero pe
 
 - **Seguimiento de tendencias:** si el interés abierto y el precio suben juntos durante al menos tres días consecutivos, considera mantener o aumentar tu posición.
 - **Detección de agotamiento:** cuando el precio sigue subiendo pero el interés abierto cae dos días seguidos, evalúa cerrar parte de la posición para proteger ganancias.
-- **Diversificación basada en interés abierto:** elige activos con intereses abiertos altos y estables para reducir la volatilidad de tu cartera.
+- **[Diversificación](/es/glossario/es-diversificacion) basada en interés abierto:** elige activos con intereses abiertos altos y estables para reducir la [volatilidad](/es/glossario/es-volatilidad) de tu cartera.
 
 ## Preguntas frecuentes
 

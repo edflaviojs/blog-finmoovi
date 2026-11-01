@@ -20,7 +20,7 @@ seo:
 
 ## What does “long” mean for your wallet
 
-Have you ever stared at your credit card bill and wondered whether you should hold onto that investment a bit longer or sell it now? This question comes from the concept of **long**, which in finance means you’re holding an asset for an extended period, expecting it to increase in value. It’s not just for professional investors; anyone with money saved — whether in a savings account, a fund, or even cryptocurrency — can be “long” on something. When you’re “long,” you’re betting the price will go up, unlike “short,” which means betting on a decline.
+Have you ever stared at your [credit card](/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026) bill and wondered whether you should hold onto that [investment](/en/glossario/en-investment) a bit longer or sell it now? This question comes from the concept of **long**, which in finance means you’re holding an asset for an extended period, expecting it to increase in value. It’s not just for professional investors; anyone with money saved — whether in a savings account, a fund, or even cryptocurrency — can be “long” on something. When you’re “long,” you’re betting the price will go up, unlike “short,” which means betting on a decline.
 
 ![What “long” means for your wallet](/images/glossario/long-inline-1.webp)
 
@@ -28,11 +28,11 @@ Have you ever stared at your credit card bill and wondered whether you should ho
 
 ## Why “long” can be confusing
 
-Many people mix up “long” with simply “buy and hold.” In reality, being “long” involves more strategy: choosing the right time frame, understanding volatility (price swings), and knowing when the return justifies the risk. If you buy a stock and leave it for five years, you’re “long” for that period. But if the stock drops sharply in the first few months, you might feel you made the wrong call — even if, over the long term, it recovers and surpasses your purchase price.
+Many people mix up “long” with simply “buy and hold.” In reality, being “long” involves more strategy: choosing the right time frame, understanding [volatility](/en/glossario/en-volatility) (price swings), and knowing when the return justifies the risk. If you buy a stock and leave it for five years, you’re “long” for that period. But if the stock drops sharply in the first few months, you might feel you made the wrong call — even if, over the long term, it recovers and surpasses your purchase price.
 
 ## How FinMoovi helps you manage your “long”
 
-Imagine you just bought an investment fund that tracks the U.S. dollar. You snap a photo of the receipt with the FinMoovi app, and it automatically recognizes the amount, date, and currency. In seconds, the investment appears in your wallet as “long” in U.S. dollars, already categorized as an “international investment.” The app also shows:
+Imagine you just bought an [investment fund](/en/glossario/en-investment-fund) that tracks the U.S. dollar. You snap a photo of the receipt with the FinMoovi app, and it automatically recognizes the amount, date, and currency. In seconds, the investment appears in your wallet as “long” in U.S. dollars, already categorized as an “international investment.” The app also shows:
 
 ![How FinMoovi helps you manage your “long”](/images/glossario/long-inline-3.webp)
 
@@ -66,9 +66,9 @@ These features remove the guesswork and put you in control of your “long” wi
 
 ## How “long” fits into your monthly budget
 
-When planning your budget, most people focus on fixed expenses (rent, bills) and variable ones (food, entertainment). “Long” often gets overlooked, but it uses part of your available money. In FinMoovi, you can set a monthly contribution goal for your “long.” For example, if your net income covers about three months of rent, you might allocate 10% of that each month to invest in a “long” fund. The app shows:
+When [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) your budget, most people focus on fixed expenses (rent, bills) and variable ones (food, entertainment). “Long” often gets overlooked, but it uses part of your available money. In FinMoovi, you can set a monthly contribution goal for your “long.” For example, if your net income covers about three months of rent, you might allocate 10% of that each month to invest in a “long” fund. The app shows:
 
-- **Shopping list**: when you shop, the shopping mode lets you add items and see the total in real time, helping you stay within spending limits and still set aside what’s left for investing.
+- **[Shopping list](/en/glossario/en-shopping-list)**: when you shop, the shopping mode lets you add items and see the total in real time, helping you stay within spending limits and still set aside what’s left for investing.
 - **Contribution reminders**: notifications that prompt you to transfer the set amount to your investment account.
 - **Offline sync**: if you’re traveling without internet, you can still snap a photo of the receipt; the app syncs everything once you’re back online.
 

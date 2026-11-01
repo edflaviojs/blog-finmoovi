@@ -30,7 +30,7 @@ Você já ficou em dúvida na hora de decidir se compra aquele tênis novo ou gu
 
 Custo de oportunidade é o que você abre mão ao escolher uma alternativa em vez de outra. Não se trata só de dinheiro, mas também de tempo, tranquilidade, energia ou qualquer recurso limitado. Por exemplo:
 
-- **Comprar um carro usado** por cerca de um aluguel mensal pode significar **não investir esse valor em um fundo de emergência** que poderia cobrir imprevistos.
+- **Comprar um carro usado** por cerca de um [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026) mensal pode significar **não investir esse valor em um fundo de emergência** que poderia cobrir imprevistos.
 - **Fazer um curso online** que custa o preço de um café por dia durante um mês pode significar **não sair para jantar com os amigos** nesse mesmo período.
 - **Aceitar um turno extra** que paga o equivalente a duas semanas de salário pode significar **perder duas noites de sono e tempo com a família**.
 
@@ -77,7 +77,7 @@ Se você recebe em dólares, paga contas em euros ou tem despesas em reais, o Fi
 
 ### Fluxo de caixa e relatórios
 
-Um painel simples mostra entradas, saídas e o saldo projetado para os próximos meses. Você consegue identificar rapidamente onde está “gastando o futuro” – por exemplo, um gasto recorrente que poderia ser redirecionado para uma reserva de emergência.
+Um painel simples mostra entradas, saídas e o saldo projetado para os próximos meses. Você consegue identificar rapidamente onde está “gastando o futuro” – por exemplo, um gasto recorrente que poderia ser redirecionado para uma [reserva de emergência](/ferramentas/calculadora-reserva).
 
 ### Planejamento mensal e metas
 
@@ -85,7 +85,7 @@ Defina metas como “economizar o equivalente a um aluguel por 3 meses”. O app
 
 ### Cartões de crédito e fatura
 
-Ao conectar seus cartões, o FinMoovi traz a fatura completa, calcula juros e mostra o custo real de parcelar compras. Assim, você vê o custo de oportunidade de usar crédito versus pagar à vista.
+Ao conectar seus cartões, o FinMoovi traz a fatura completa, calcula juros e mostra o custo real de parcelar compras. Assim, você vê o custo de oportunidade de usar [crédito](/glossario/credito) versus pagar à vista.
 
 ### Modo compras: lista + total em tempo real
 
@@ -101,7 +101,7 @@ Mesmo sem internet, você registra despesas e, ao reconectar, tudo se sincroniza
 
 ## Três dicas práticas para nunca mais perder o custo de oportunidade
 
-**Dica prática:** antes de qualquer compra acima de “um café por dia”, abra o FinMoovi, registre o valor e veja em que categoria ele cai. Pergunte a si mesmo: “Esse gasto me impede de alcançar minha meta de reserva de emergência?”
+**Dica prática:** antes de qualquer compra acima de “um café por dia”, abra o FinMoovi, registre o valor e veja em que categoria ele cai. Pergunte a si mesmo: “Esse gasto me impede de alcançar minha meta de [reserva de emergência](/glossario/reserva-de-emergencia)?”
 
 **Dica prática:** use a funcionalidade de metas para definir um objetivo de “economizar o equivalente a duas contas de luz por mês”. Quando o app sinalizar que você está próximo de ultrapassar, reavalie a necessidade da compra que está consumindo esse espaço.
 
@@ -109,7 +109,7 @@ Mesmo sem internet, você registra despesas e, ao reconectar, tudo se sincroniza
 
 ## Exemplos reais de custo de oportunidade no dia a dia
 
-- **Lazer vs. Investimento:** Você decide gastar o equivalente a duas refeições fora por mês em shows. O custo de oportunidade é o rendimento que esse dinheiro poderia gerar se fosse investido em um fundo que paga 5 % ao ano.
+- **Lazer vs. [Investimento](/glossario/investimento):** Você decide gastar o equivalente a duas refeições fora por mês em shows. O custo de oportunidade é o rendimento que esse dinheiro poderia gerar se fosse investido em um fundo que paga 5 % ao ano.
 - **Educação vs. Consumo:** Um curso de idiomas custa o mesmo que três meses de assinatura de streaming. O benefício de falar outra língua pode abrir oportunidades de trabalho melhor remunerado, superando o prazer momentâneo de maratonar séries.
 - **Saúde vs. Desconto:** Comprar um plano de academia com desconto de 30 % parece ótimo, mas o custo de oportunidade pode ser a falta de tempo para a família se o plano exigir deslocamento longo. Avalie se o ganho em saúde compensa a perda de tempo.
 
@@ -117,7 +117,7 @@ Mesmo sem internet, você registra despesas e, ao reconectar, tudo se sincroniza
 
 1. **Registre tudo:** Use a captura inteligente do FinMoovi para não deixar nenhum gasto “no vácuo”.
 2. **Revise semanalmente:** Dedique 10 minutos para olhar o relatório de categorias e identificar onde o custo de oportunidade está mais alto.
-3. **Ajuste metas:** Se perceber que está gastando muito em lazer, reduza a meta de economia ou troque o objetivo por algo mais realista.
+3. **Ajuste metas:** Se perceber que está gastando muito em lazer, reduza a meta de [economia](/glossario/economia) ou troque o objetivo por algo mais realista.
 
 Com disciplina e as ferramentas certas, o custo de oportunidade deixa de ser um conceito abstrato e passa a ser um guia prático para decisões mais inteligentes.
 

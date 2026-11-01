@@ -20,7 +20,7 @@ seo:
 
 ## ¿Por qué el dinero que guardas para tus hijos se siente tan incierto?
 
-Te pasa que cada vez que piensas en el futuro, ya sea la educación de tus hijos o la herencia que quieres dejar, sientes que el dinero se escapa entre los dedos. Un día te das cuenta de que el ahorro que tenías pensado para la universidad ya no alcanza, o que los gastos inesperados del día a día te obligan a tocar ese fondo. La incertidumbre nace porque no tienes una estructura clara que separe lo que es tu patrimonio personal de lo que deseas proteger para la próxima generación. Aquí es donde entra el **fideicomiso**, una herramienta que, aunque suene complicada, puede ser tan sencilla de usar como una aplicación de finanzas en tu móvil.
+Te pasa que cada vez que piensas en el futuro, ya sea la educación de tus hijos o la herencia que quieres dejar, sientes que el dinero se escapa entre los dedos. Un día te das cuenta de que el ahorro que tenías pensado para la universidad ya no alcanza, o que los gastos inesperados del día a día te obligan a tocar ese fondo. La incertidumbre nace porque no tienes una estructura clara que separe lo que es tu [patrimonio](/es/glossario/es-patrimonio) personal de lo que deseas proteger para la próxima generación. Aquí es donde entra el **fideicomiso**, una herramienta que, aunque suene complicada, puede ser tan sencilla de usar como una aplicación de [finanzas](/es/glossario/es-finanzas) en tu móvil.
 
 ![¿Por qué el dinero que guardas para tus hijos se siente tan incierto?](/images/glossario/trust-inline-1.webp)
 
@@ -49,13 +49,13 @@ El objetivo principal es proteger el patrimonio frente a imprevistos, evitar que
 
 ## Cómo FinMoovi te ayuda a crear y gestionar tu fideicomiso
 
-Imagina que ya tienes la idea de crear un fideicomiso, pero no sabes por dónde empezar ni cómo llevar el control de los movimientos. Aquí es donde la función de **captura inteligente** de FinMoovi hace la diferencia:
+Imagina que ya tienes la idea de crear un fideicomiso, pero no sabes por dónde empezar ni cómo llevar el control de los movimientos. Aquí es donde la función de **[captura inteligente](/es/posts/es-cansado-de-perder-horas-en-hojas-de-calculo-asi-finmoovi-lo)** de FinMoovi hace la diferencia:
 
 1. **Foto o voz del recibo:** tomas una foto del comprobante de la aportación al fideicomiso o dictas el monto, y la app lo reconoce y lo categoriza automáticamente como “Aporte al fideicomiso”.
 2. **Multimoneda:** si tus ingresos vienen en diferentes monedas (por ejemplo, parte en dólares y parte en euros), la app los convierte al tipo de cambio del día y los muestra en una sola vista, para que siempre sepas cuánto has acumulado en términos reales.
-3. **Flujo de caja e informes:** cada entrada y salida del fideicomiso aparece en un reporte visual que te muestra si vas por buen camino o si necesitas ajustar el aporte mensual.
-4. **Planificación mensual y metas:** defines una meta, como “tener el equivalente al precio de un alquiler mensual para la universidad en 5 años”, y la app te avisa cuánto debes aportar cada mes para lograrlo.
-5. **Tarjetas de crédito y facturación:** si decides usar una tarjeta vinculada al fideicomiso, la app registra automáticamente cada gasto y lo clasifica bajo la categoría que hayas creado.
+3. **[Flujo de caja](/es/glossario/es-flujo-de-caja) e informes:** cada entrada y salida del fideicomiso aparece en un reporte visual que te muestra si vas por buen camino o si necesitas ajustar el aporte mensual.
+4. **Planificación mensual y metas:** defines una meta, como “tener el equivalente al precio de un [alquiler](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026) mensual para la universidad en 5 años”, y la app te avisa cuánto debes aportar cada mes para lograrlo.
+5. **Tarjetas de [crédito](/es/glossario/es-credito) y facturación:** si decides usar una tarjeta vinculada al fideicomiso, la app registra automáticamente cada gasto y lo clasifica bajo la categoría que hayas creado.
 6. **Modo compras:** al hacer la lista de lo que necesitas para el futuro (libros, material escolar, etc.), la app muestra el total en tiempo real y te avisa si superas el presupuesto.
 7. **Recordatorios y alertas de saldo:** recibes notificaciones cuando el saldo baja de un umbral que tú mismo estableces, evitando sorpresas.
 8. **Offline / PWA / sincronización:** aunque estés sin internet, puedes seguir registrando aportes y gastos; la información se sincroniza cuando vuelvas a estar conectado.

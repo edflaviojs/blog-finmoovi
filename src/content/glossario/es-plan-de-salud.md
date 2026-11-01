@@ -20,7 +20,7 @@ seo:
 
 ## ¿Por qué el gasto en salud te quita el sueño?
 
-Si la última vez que fuiste al médico tuviste que pagar una factura que casi iguala el precio de un alquiler, sabes lo que se siente: la preocupación de que cualquier imprevisto pueda desbalancear tu presupuesto. Ese miedo aparece cada vez que piensas en una consulta, un examen o una receta, y termina afectando decisiones cotidianas, como comprar comida o ahorrar para unas vacaciones. El “plan de salud” es la herramienta que, bien gestionada, puede transformar esa ansiedad en tranquilidad.
+Si la última vez que fuiste al médico tuviste que pagar una factura que casi iguala el precio de un alquiler, sabes lo que se siente: la preocupación de que cualquier imprevisto pueda desbalancear tu presupuesto. Ese miedo aparece cada vez que piensas en una consulta, un examen o una receta, y termina afectando decisiones cotidianas, como comprar comida o [ahorrar](/es/posts/es-ahorra-en-la-farmacia-sin-sacrificios-guia-practica-2026) para unas [vacaciones](/es/posts/es-5-consejos-para-reorganizar-tus-finanzas-en-vacaciones). El “plan de salud” es la herramienta que, bien gestionada, puede transformar esa ansiedad en tranquilidad.
 
 ![¿Por qué el gasto en salud te quita el sueño?](/images/glossario/plano-de-saude-inline-1.webp)
 
@@ -28,7 +28,7 @@ Si la última vez que fuiste al médico tuviste que pagar una factura que casi i
 
 ## Qué es un plan de salud y cómo funciona
 
-Un plan de salud es un contrato con una entidad (una aseguradora o una cooperativa) que, a cambio de una cuota mensual, cubre total o parcialmente los gastos médicos que tengas. No es un ahorro, sino una forma de compartir riesgos: tú pagas una cantidad fija y, cuando necesitas atención, la entidad paga una parte o la totalidad del costo. La cobertura varía según el tipo de plan: algunos incluyen solo consultas y exámenes básicos, otros llegan a cubrir cirugías y medicamentos de alto costo. La clave está en entender qué está incluido y qué no, para evitar sorpresas.
+Un plan de salud es un contrato con una entidad (una aseguradora o una cooperativa) que, a cambio de una cuota mensual, cubre total o parcialmente los gastos médicos que tengas. No es un [ahorro](/es/glossario/es-ahorro), sino una forma de compartir riesgos: tú pagas una cantidad fija y, cuando necesitas atención, la entidad paga una parte o la totalidad del costo. La cobertura varía según el tipo de plan: algunos incluyen solo consultas y exámenes básicos, otros llegan a cubrir cirugías y medicamentos de alto costo. La clave está en entender qué está incluido y qué no, para evitar sorpresas.
 
 ## Los errores más comunes al contratar un plan de salud
 
@@ -46,9 +46,9 @@ FinMoovi es una app que actúa como tu asistente financiero personal y, entre su
 
 - **Captura inteligente:** toma una foto del recibo de la consulta o graba una nota de voz y la app lo categoriza automáticamente como “gasto en salud”. No necesitas abrir una hoja de cálculo ni escribir nada a mano.
 - **Multimoneda:** si viajas o pagas servicios en diferentes divisas, la app convierte todo a tu moneda base, manteniendo el control sin sorpresas de tipo de cambio.
-- **Flujo de caja e informes:** visualiza en tiempo real cuánto gastas en salud cada mes y compáralo con otros rubros como alimentación o transporte.
+- **[Flujo de caja](/es/glossario/es-flujo-de-caja) e informes:** visualiza en tiempo real cuánto gastas en salud cada mes y compáralo con otros rubros como alimentación o transporte.
 - **Planificación mensual y metas:** fija un objetivo de gasto en salud (por ejemplo, no más del 10 % de tu ingreso) y recibe alertas si te acercas al límite.
-- **Tarjetas de crédito y facturas:** enlaza tus tarjetas y la app extrae automáticamente los cargos de salud, evitando errores de registro.
+- **Tarjetas de [crédito](/es/glossario/es-credito) y facturas:** enlaza tus tarjetas y la app extrae automáticamente los cargos de salud, evitando errores de registro.
 - **Modo compras:** crea una lista de gastos previstos (consultas, exámenes, medicamentos) y ve el total en tiempo real antes de confirmar la compra.
 - **Recordatorios y alertas de saldo:** recibe notificaciones cuando el saldo de tu plan se agota o cuando se acerca la fecha de renovación.
 - **Offline / PWA / sincronización:** aunque no tengas conexión, puedes registrar gastos y la app los sincroniza cuando vuelvas a estar en línea.
@@ -71,7 +71,7 @@ FinMoovi es una app que actúa como tu asistente financiero personal y, entre su
 ## Cómo integrar tu plan de salud en la planificación financiera mensual
 
 - **Presupuesto:** asigna un porcentaje de tu ingreso a la cuota del plan y a los gastos médicos esperados. FinMoovi te muestra cuánto representa ese porcentaje en términos de “un café al día” o “un día de comida fuera”.
-- **Fondo de emergencia:** destina una pequeña parte de tus ahorros mensuales a un fondo específico para salud. Así, si surge un gasto no cubierto, no tendrás que tocar tu presupuesto de ocio o ahorro.
+- **[Fondo de emergencia](/es/glossario/es-fondo-de-emergencia):** destina una pequeña parte de tus ahorros mensuales a un fondo específico para salud. Así, si surge un gasto no cubierto, no tendrás que tocar tu presupuesto de ocio o ahorro.
 - **Revisión trimestral:** cada tres meses, abre el informe de FinMoovi, revisa los gastos reales y ajusta la cuota del plan o la meta de gasto si es necesario.
 
 ## Preguntas frecuentes que suelen surgir

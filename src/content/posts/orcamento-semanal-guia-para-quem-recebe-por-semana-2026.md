@@ -17,7 +17,8 @@ tags:
   - receita semanal
   - orçamento doméstico para quem recebe por semana
 author: FinMoovi
-publishedAt: 2026-07-27T00:00:00.000Z
+publishedAt: 2026-07-27
+updatedAt: 2026-11-01T00:00:00.000Z
 readingTime: 2
 featured: false
 translationKey: orcamento-semanal-guia-para-quem-recebe-por-semana-2026

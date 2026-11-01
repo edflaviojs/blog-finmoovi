@@ -33,10 +33,10 @@ FinMoovi makes that hidden engine visible. With its **smart capture** feature yo
 When you buy a cup of coffee abroad, the price you pay is converted from the local currency to yours at a certain exchange rate. That exchange rate is the underlying factor that determines how much you actually spent. The same principle applies to:
 
 - **Investments** – a mutual fund’s performance is tied to the underlying stocks or bonds it holds.
-- **Derivatives** – options and futures derive their value from an underlying asset like gold or a stock index.
+- **[Derivatives](/en/glossario/en-derivatives)** – options and futures derive their value from an underlying asset like gold or a stock index.
 - **Loans** – variable‑rate mortgages follow an underlying benchmark rate (e.g., LIBOR or a central‑bank rate).
 
-If the underlying shifts, your cash flow shifts with it. Ignoring it can lead to surprise fees, unexpected losses, or missed opportunities to lock in a better rate.
+If the underlying shifts, your [cash flow](/en/glossario/en-cash-flow) shifts with it. Ignoring it can lead to surprise fees, unexpected losses, or missed opportunities to lock in a better rate.
 
 ## How FinMoovi shines a light on the underlying
 
@@ -46,10 +46,10 @@ FinMoovi’s toolbox is built around making the invisible visible:
 
 
 
-- **Smart capture + automatic categorization** – Take a picture of a receipt from a foreign restaurant, and the app reads the amount, detects the currency, and tags the transaction with the current exchange rate (the underlying). No manual conversion needed.
+- **Smart capture + [automatic categorization](/en/posts/en-automatic-expense-categorization-with-ai-keep-your-finances)** – Take a picture of a receipt from a foreign restaurant, and the app reads the amount, detects the currency, and tags the transaction with the current exchange rate (the underlying). No manual conversion needed.
 - **Multi‑currency dashboard** – See all your expenses in one place, converted at the exact rate that applied at the moment of purchase. This prevents the “I thought it was cheaper” feeling later.
 - **Cash‑flow reports** – The app breaks down how much of your spending is driven by underlying changes (like a rising fuel price) versus your own habits.
-- **Monthly planning & goals** – Set a goal to keep currency‑conversion costs below the price of a weekly grocery run. FinMoovi alerts you when a transaction threatens that target.
+- **Monthly [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) & goals** – Set a goal to keep currency‑conversion costs below the price of a weekly grocery run. FinMoovi alerts you when a transaction threatens that target.
 - **Credit‑card & bill integration** – The app matches each card charge with the underlying rate that the issuer used, so you know whether a “no‑fee” purchase actually saved you anything.
 - **Shopping mode** – Add items to a list, and the app shows the real‑time total in your home currency, factoring in the current exchange rate for each foreign item.
 - **Reminders & balance alerts** – Get notified when an underlying rate moves more than a set percentage, so you can act before a bill spikes.
@@ -66,8 +66,8 @@ FinMoovi’s toolbox is built around making the invisible visible:
 ## Everyday scenarios where the underlying saves you money
 
 - **Online shopping abroad** – You add a gadget to your cart on a US site. FinMoovi’s shopping mode shows the total in your home currency, using the current USD‑to‑your‑currency rate. You see that the price is equivalent to three weeks of streaming subscriptions, not just a “good deal” as the site claims.
-- **Fuel price spikes** – Your car’s fuel expense jumps because oil prices (the underlying) rise. The cash‑flow report highlights this spike, letting you decide whether to car‑pool or switch to public transport for the month.
-- **Salary in a foreign currency** – If you earn in euros but live where the cost of living is measured in dollars, FinMoovi tracks the EUR‑USD underlying rate. You can plan your budget so that a 5 % dip in the euro doesn’t wipe out your rent‑payment cushion.
+- **Fuel price spikes** – Your car’s fuel [expense](/en/glossario/en-expense) jumps because oil prices (the underlying) rise. The cash‑flow report highlights this spike, letting you decide whether to car‑pool or switch to public transport for the month.
+- **Salary in a foreign currency** – If you earn in euros but live where the [cost of living](/en/glossario/en-cost-of-living) is measured in dollars, FinMoovi tracks the EUR‑USD underlying rate. You can plan your budget so that a 5 % dip in the euro doesn’t wipe out your rent‑payment cushion.
 
 ## Start today
 

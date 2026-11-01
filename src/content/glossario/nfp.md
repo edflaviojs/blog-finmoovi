@@ -20,13 +20,13 @@ seo:
 
 ## O que é NFP e por que você sente falta de controle
 
-Você já chegou ao fim do mês e percebeu que o dinheiro acabou antes mesmo de pagar a conta de luz? Ou então ficou sem saber se aquele gasto extra com a festa de aniversário foi realmente necessário? Essa sensação de “não sei para onde foi o meu dinheiro” tem um nome técnico: **NFP – Net Flow of Personal finance**, ou fluxo líquido das finanças pessoais. Em termos simples, NFP é a diferença entre tudo que entra (salário, renda extra, devoluções) e tudo que sai (contas, compras, juros). Quando o NFP está positivo, você tem sobra; quando está negativo, está gastando mais do que ganha.
+Você já chegou ao fim do mês e percebeu que o dinheiro acabou antes mesmo de pagar a conta de luz? Ou então ficou sem saber se aquele gasto extra com a festa de aniversário foi realmente necessário? Essa sensação de “não sei para onde foi o meu dinheiro” tem um nome técnico: **NFP – Net Flow of Personal finance**, ou fluxo líquido das [finanças](/glossario/financas) pessoais. Em termos simples, NFP é a diferença entre tudo que entra (salário, renda extra, devoluções) e tudo que sai (contas, compras, juros). Quando o NFP está positivo, você tem sobra; quando está negativo, está gastando mais do que ganha.
 
 ![O que é NFP e por que você sente falta de controle](/images/glossario/nfp-inline-1.webp)
 
 
 
-Imagine que seu salário equivale a “um aluguel” e que suas despesas mensais somam “um aluguel e meio”. Se o NFP for negativo, você vai precisar usar a reserva ou recorrer a crédito, o que pode gerar juros e mais dor de cabeça. Entender o NFP ajuda a visualizar exatamente onde está o desequilíbrio e, mais importante, como corrigi‑lo.
+Imagine que seu salário equivale a “um [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026)” e que suas despesas mensais somam “um aluguel e meio”. Se o NFP for negativo, você vai precisar usar a reserva ou recorrer a crédito, o que pode gerar juros e mais dor de cabeça. Entender o NFP ajuda a visualizar exatamente onde está o desequilíbrio e, mais importante, como corrigi‑lo.
 
 ## Como calcular o NFP na prática
 
@@ -59,7 +59,7 @@ O FinMoovi foi pensado exatamente para quem quer enxergar o NFP sem precisar ser
 - **Captura inteligente**: tire foto da nota ou fale o valor que acabou de pagar. O app reconhece o número e já preenche a despesa.
 - **Categorização automática**: usando IA, o FinMoovi classifica a compra (alimentação, transporte, lazer) sem que você precise escolher manualmente.
 - **Multimoeda**: se você recebe em dólares, euros ou outra moeda, o app converte tudo para a sua moeda base, permitindo comparar entradas e saídas sem confusão.
-- **Fluxo de caixa e relatórios**: gráficos simples mostram seu NFP ao longo do mês, destacando períodos positivos e negativos.
+- **[Fluxo de caixa](/glossario/fluxo-de-caixa) e relatórios**: gráficos simples mostram seu NFP ao longo do mês, destacando períodos positivos e negativos.
 - **Planejamento mensal / metas**: defina quanto quer economizar (por exemplo, “um aluguel” por 3 meses) e o app avisa quando está no caminho certo.
 - **Cartões de crédito / fatura**: registre cada compra no cartão e o FinMoovi avisa o valor total da fatura antes do vencimento.
 - **Modo compras**: crie listas de supermercado; o app soma tudo em tempo real, evitando “surpresas” no caixa.
@@ -77,7 +77,7 @@ O FinMoovi foi pensado exatamente para quem quer enxergar o NFP sem precisar ser
 ## Estratégias avançadas para manter o NFP positivo
 
 - **Revisão semanal**: reserve 15 minutos toda sexta‑feira para conferir o relatório de fluxo de caixa. Ajuste categorias que estejam fora da realidade.
-- **Negociação de contas fixas**: use o relatório de despesas para identificar serviços que podem ser trocados por opções mais baratas (internet, plano de celular).
+- **[Negociação](/glossario/negociacao) de contas fixas**: use o relatório de despesas para identificar serviços que podem ser trocados por opções mais baratas (internet, plano de celular).
 - **Automatização de entradas**: se você recebe renda recorrente (aluguel de imóvel, royalties), cadastre como “entrada automática” no FinMoovi para que o NFP seja atualizado sem esforço.
 - **Separar “gastos reais” de “gastos desejados”**: crie duas categorias distintas. O app permite filtrar e comparar, ajudando a cortar o supérfluo.
 
@@ -85,9 +85,9 @@ O FinMoovi foi pensado exatamente para quem quer enxergar o NFP sem precisar ser
 
 Além do NFP, você pode acompanhar:
 
-- **Reserva de emergência**: idealmente, 3 a 6 vezes o valor de um “aluguel”. Quando o NFP está positivo, direcione parte da sobra para esse fundo.
+- **[Reserva de emergência](/ferramentas/calculadora-reserva)**: idealmente, 3 a 6 vezes o valor de um “aluguel”. Quando o NFP está positivo, direcione parte da sobra para esse fundo.
 - **Índice de endividamento**: soma das dívidas dividida pela soma das entradas. Um NFP negativo costuma elevar esse índice.
-- **Taxa de poupança**: porcentagem da entrada que você realmente guarda. O FinMoovi calcula automaticamente a partir do seu NFP.
+- **Taxa de [poupança](/glossario/poupanca)**: porcentagem da entrada que você realmente guarda. O FinMoovi calcula automaticamente a partir do seu NFP.
 
 ## Erros comuns ao lidar com o NFP (e como evitá‑los)
 

@@ -26,7 +26,7 @@ Imagine you’re scrolling through your banking app and, out of nowhere, a fraud
 
 
 
-A kill switch is a built‑in safety mechanism that instantly disables a service, device, or account when suspicious activity is detected. Think of it as the emergency stop button on a treadmill: when something goes wrong, you hit the switch and everything stops before damage spreads. In finance, a kill switch can freeze a credit‑card, block a mobile‑payment app, or shut down a trading platform the moment fraud is suspected. The goal is simple—stop the loss before it grows.
+A kill switch is a built‑in safety mechanism that instantly disables a service, device, or account when suspicious activity is detected. Think of it as the emergency stop button on a treadmill: when something goes wrong, you hit the switch and everything stops before damage spreads. In [finance](/en/glossario/en-finance), a kill switch can freeze a credit‑card, block a mobile‑payment app, or shut down a [trading](/en/glossario/en-trading) platform the moment fraud is suspected. The goal is simple—stop the loss before it grows.
 
 ## How does a kill switch work in everyday finance?  
 
@@ -41,7 +41,7 @@ Because the process is automated, you don’t have to wait for a customer‑serv
 
 - **Limits financial damage** – Stopping a fraudulent charge after the first $10 can save you from losing the equivalent of a month’s rent.  
 - **Reduces stress** – Knowing there’s an automatic safety net lets you sleep better, especially when you travel or shop online.  
-- **Protects credit score** – Unpaid fraudulent debts can drag down your credit rating; a kill switch prevents those debts from ever appearing.  
+- **Protects [credit score](/en/glossario/en-credit-score)** – Unpaid fraudulent debts can drag down your credit rating; a kill switch prevents those debts from ever appearing.  
 - **Saves time** – No more endless phone calls and paperwork; the system handles the heavy lifting.
 
 ![Why you should care about a kill switch  ](/images/glossario/kill-switch-inline-3.webp)
@@ -53,7 +53,7 @@ Because the process is automated, you don’t have to wait for a customer‑serv
 FinMoovi doesn’t just freeze a card; it ties the kill switch to its **smart capture** feature, turning a potentially chaotic moment into a smooth, data‑driven solution.
 
 1. **Capture the receipt instantly** – Snap a photo of the suspicious receipt or speak the details into the app. FinMoovi’s AI reads the amount, merchant, and date.  
-2. **Automatic categorization** – The app places the transaction into the right bucket (e.g., “Dining out”) without you lifting a finger.  
+2. **[Automatic categorization](/en/posts/en-automatic-expense-categorization-with-ai-keep-your-finances)** – The app places the transaction into the right bucket (e.g., “Dining out”) without you lifting a finger.  
 3. **Multi‑currency awareness** – Whether the charge is in USD, EUR, or any other currency, FinMoovi converts it to your base currency for easy comparison.  
 4. **Cash‑flow impact** – The moment the kill switch triggers, the app updates your cash‑flow report, showing you exactly how much of your budget is at risk.  
 5. **Real‑time alerts** – You get a push notification with a photo of the receipt and a one‑tap option to confirm or block.  
@@ -66,7 +66,7 @@ Because everything is linked, you can see the suspicious purchase, decide instan
 
 **Practical tip:** Set a low‑value threshold (e.g., the price of a daily coffee) for automatic blocking. Small unauthorized charges often precede larger ones, so stopping them early can save you a lot.  
 
-**Practical tip:** Review the “Monthly Planning / Goals” section weekly. If the kill switch has frozen a card, the app will automatically adjust your budget, preventing you from overspending on other categories.  
+**Practical tip:** Review the “Monthly [Planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) / Goals” section weekly. If the kill switch has frozen a card, the app will automatically adjust your budget, preventing you from overspending on other categories.  
 
 ## How to set up the kill switch in FinMoovi  
 
@@ -85,7 +85,7 @@ You’re on a business trip abroad, buying a latte for about the price of a dail
 ## Benefits beyond fraud protection  
 
 - **Peace of mind while traveling** – Multi‑currency support means the kill switch works no matter where you are.  
-- **Better budgeting** – Automatic categorization keeps your expense reports tidy, so you can spot trends without manual spreadsheets.  
+- **Better budgeting** – Automatic categorization keeps your [expense](/en/glossario/en-expense) reports tidy, so you can spot trends without manual spreadsheets.  
 - **Offline safety** – FinMoovi’s PWA (Progressive Web App) stores a local copy of your recent transactions. If you lose internet, the kill switch still works based on the last synced data.  
 
 ## Common misconceptions  

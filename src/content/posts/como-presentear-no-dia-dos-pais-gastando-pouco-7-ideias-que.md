@@ -9,6 +9,7 @@ locale: "pt"
 tags: ["Dia dos Pais econômico","presentes baratos","ideias criativas","controle de gastos","FinMoovi","orçamento familiar","presente dia dos pais barato","dia dos pais econômico"]
 author: "FinMoovi"
 publishedAt: 2026-07-17
+updatedAt: 2026-11-01
 readingTime: 5
 featured: false
 translationKey: "como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que"

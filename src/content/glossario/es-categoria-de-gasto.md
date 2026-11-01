@@ -19,7 +19,7 @@ seo:
 ---
 
 ## ¿Te suena familiar la sensación de que el dinero desaparece?
-¿Alguna vez revisas tu cuenta y te preguntas cómo gastaste casi todo el sueldo, aunque no recuerdas haber hecho grandes compras? Esa incertidumbre es el dolor de no saber a qué categoría pertenece cada gasto. Sin una clasificación clara, el presupuesto se vuelve un juego de adivinanzas y los [objetivos](/es/posts/es-por-que-mis-metas-de-ahorro-no-avanzan) financieros se quedan en la lista de “algún día”.  
+¿Alguna vez revisas tu cuenta y te preguntas cómo gastaste casi todo el sueldo, aunque no recuerdas haber hecho grandes compras? Esa incertidumbre es el dolor de no saber a qué categoría pertenece cada [gasto](/es/glossario/es-gasto). Sin una clasificación clara, el presupuesto se vuelve un juego de adivinanzas y los [objetivos](/es/posts/es-por-que-mis-metas-de-ahorro-no-avanzan) financieros se quedan en la lista de “algún día”.  
 
 ## Qué es una categoría de gasto y cómo funciona
 Una categoría de gasto es simplemente un “cajón” donde guardas cada desembolso según su naturaleza: comida, transporte, ocio, [vivienda](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026), etc. Al asignar cada gasto a un cajón, puedes ver rápidamente cuánto estás destinando a cada área y detectar desequilibrios. No necesitas ser un contador; basta con que el nombre de la categoría tenga sentido para ti, como “café diario” o “suscripción de streaming”.  

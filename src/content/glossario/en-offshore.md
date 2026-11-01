@@ -20,7 +20,7 @@ seo:
 
 ## What is offshore?  
 
-Imagine you just received a bonus at work—enough to cover about one month’s rent or the price of a daily coffee for a whole year. You want to keep that money safe, grow it a bit, and maybe use it when you travel abroad. The first thought that pops up is: “Should I put it in my regular bank account?” Most people answer “yes,” but they often overlook a simple alternative that can protect the cash from local economic swings, offer more investment options, and even simplify tax reporting when you travel. That alternative is an **offshore account**—a bank or investment account opened in a country different from where you live.
+Imagine you just received a bonus at work—enough to cover about one month’s rent or the price of a daily coffee for a whole year. You want to keep that money safe, grow it a bit, and maybe use it when you travel abroad. The first thought that pops up is: “Should I put it in my regular bank account?” Most people answer “yes,” but they often overlook a simple alternative that can protect the cash from local economic swings, offer more [investment](/en/glossario/en-investment) options, and even simplify tax reporting when you travel. That alternative is an **offshore account**—a bank or investment account opened in a country different from where you live.
 
 ![What is offshore?  ](/images/glossario/offshore-inline-1.webp)
 
@@ -30,12 +30,12 @@ In plain language, “offshore” just means “outside your home country.” It
 
 ## Why people consider offshore accounts  
 
-- **Diversification** – Keeping money in different jurisdictions reduces the risk of one‑country economic trouble wiping out all your savings.  
+- **[Diversification](/en/glossario/en-diversification)** – Keeping money in different jurisdictions reduces the risk of one‑country economic trouble wiping out all your savings.  
 - **Currency flexibility** – If you travel a lot or earn in more than one currency, an offshore account lets you hold USD, EUR, or other money without constantly converting.  
 - **Privacy and stability** – Some offshore jurisdictions have strong banking secrecy laws and stable political environments, which can be reassuring during local unrest.  
 - **Access to global investments** – Certain funds, stocks, or bonds are only available to non‑residents of the country where they’re listed.
 
-All these benefits sound great, but the practical side can feel messy: you need to remember another login, track exchange rates, and file extra paperwork at tax time. That’s where a smart personal finance app like **FinMoovi** steps in, turning the offshore experience from a headache into a smooth routine.
+All these benefits sound great, but the practical side can feel messy: you need to remember another login, track exchange rates, and file extra paperwork at tax time. That’s where a smart [personal finance](/en/posts/en-30-day-rule-for-purchases) app like **FinMoovi** steps in, turning the offshore experience from a headache into a smooth routine.
 
 ## How FinMoovi makes offshore simple  
 
@@ -45,15 +45,15 @@ FinMoovi’s **smart capture** feature lets you snap a photo of any receipt, inv
 
 
 
-The **cash flow and reports** module consolidates every inflow and outflow, whether it originated from a local checking account or an offshore savings account. You can set **monthly planning / goals** like “save the equivalent of three months’ rent in euros” and watch the app track progress in real time. When a credit‑card bill arrives—whether issued by a local bank or an offshore provider—FinMoovi pulls the data, matches it with your captured receipts, and alerts you if something looks off.
+The **[cash flow](/en/glossario/en-cash-flow) and reports** module consolidates every inflow and outflow, whether it originated from a local checking account or an offshore savings account. You can set **monthly planning / goals** like “save the equivalent of three months’ rent in euros” and watch the app track progress in real time. When a credit‑card bill arrives—whether issued by a local bank or an offshore provider—FinMoovi pulls the data, matches it with your captured receipts, and alerts you if something looks off.
 
 If you’re out shopping, the **shopping mode** lets you create a list, add items by voice, and see the total in the currency you’ll actually pay, updating instantly if exchange rates shift. Finally, the **offline / PWA / sync** capability ensures you can still capture receipts on a plane or in a remote cabin; the data syncs automatically once you’re back online.
 
 ## Practical tips for using offshore accounts wisely  
 
-**Practical tip:** Keep at least 20 % of your emergency fund in an offshore account denominated in a stable currency. That way, if your local currency loses value, you still have buying power for essentials like food or medication.
+**Practical tip:** Keep at least 20 % of your [emergency fund](/en/glossario/en-emergency-fund) in an offshore account denominated in a stable currency. That way, if your local currency loses value, you still have buying power for essentials like food or medication.
 
-**Practical tip:** Use FinMoovi’s smart capture to record every foreign‑currency transaction within 24 hours. The app’s automatic categorization prevents you from forgetting small expenses that add up, like daily coffee purchases while traveling.
+**Practical tip:** Use FinMoovi’s smart capture to record every foreign‑currency transaction within 24 hours. The app’s [automatic categorization](/en/posts/en-automatic-expense-categorization-with-ai-keep-your-finances) prevents you from forgetting small expenses that add up, like daily coffee purchases while traveling.
 
 **Practical tip:** Set a monthly alert for exchange‑rate thresholds. If the USD drops below a level that makes buying a European vacation cheaper, FinMoovi will notify you, so you can move money at the optimal moment.
 

@@ -20,7 +20,7 @@ seo:
 
 ## What you’re probably feeling right now  
 
-You’ve been watching the price of a commodity—maybe oil, gold, or a stock index—bounce up and down for weeks. Every time the price moves, you wonder whether the market is just a few traders flipping positions or if there’s a deeper pool of participants behind the scenes. The uncertainty makes it hard to decide if you should jump in, stay out, or hedge your existing exposure. That uneasy feeling is common, especially when you hear terms like “open interest” tossed around on news feeds and wonder if it’s just another fancy jargon.
+You’ve been watching the price of a commodity—maybe oil, gold, or a stock index—bounce up and down for weeks. Every time the price moves, you wonder whether the market is just a few traders flipping positions or if there’s a deeper pool of participants behind the scenes. The uncertainty makes it hard to decide if you should jump in, stay out, or hedge your existing exposure. That uneasy feeling is common, especially when you hear terms like “open [interest](/en/glossario/en-interest)” tossed around on news feeds and wonder if it’s just another fancy jargon.
 
 ![What you’re probably feeling right now  ](/images/glossario/open-interest-inline-1.webp)
 
@@ -34,7 +34,7 @@ In other words, open interest tells you how many “live” bets are still out t
 
 ## Why open interest matters to everyday investors  
 
-- **Liquidity clue** – A high open interest usually means there are many participants, making it easier to enter or exit a position without moving the price too much.  
+- **[Liquidity](/en/glossario/en-liquidity) clue** – A high open interest usually means there are many participants, making it easier to enter or exit a position without moving the price too much.  
 - **Trend confirmation** – When price rises *and* open interest climbs, it suggests new money is joining the rally, reinforcing the trend. If price rises but open interest falls, the move may be driven by short‑term speculation.  
 - **Potential reversals** – A sudden drop in open interest after a prolonged up‑trend can signal that traders are closing positions, which often precedes a pullback.  
 
@@ -48,11 +48,11 @@ Understanding these signals helps you avoid buying into a price spike that’s a
 
 You probably don’t have hours to read market reports, but you do have a phone that can snap a photo of a receipt or record a quick voice note. FinMoovi’s **smart capture** feature lets you log every financial move—whether you buy a commodity ETF, trade a futures contract, or simply pay a bill—in seconds. The app then **automatically categorizes** the transaction, tags it with the relevant market (e.g., “oil futures”), and pulls live data on open interest from multiple exchanges.
 
-Because FinMoovi works in **multi‑currency mode**, you can see open interest for contracts priced in USD, EUR, or any other major currency, all side by side with your personal cash flow. The **cash‑flow and reports** dashboard shows you how much of your portfolio is tied up in high‑open‑interest positions versus low‑interest ones, letting you balance risk without digging through spreadsheets.
+Because FinMoovi works in **[multi‑currency](/en/posts/en-digital-bank-vs-major-bank-which-is-worth-it-in-2026) mode**, you can see open interest for contracts priced in USD, EUR, or any other major currency, all side by side with your personal [cash flow](/en/glossario/en-cash-flow). The **cash‑flow and reports** dashboard shows you how much of your portfolio is tied up in high‑open‑interest positions versus low‑interest ones, letting you balance risk without digging through spreadsheets.
 
-The **monthly planning / goals** module lets you set a target—say, “keep no more than 20 % of my portfolio in contracts with open interest below 5,000 units.” FinMoovi will alert you when you drift away from that goal, giving you a gentle nudge before a potential liquidity crunch.
+The **monthly [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) / goals** module lets you set a target—say, “keep no more than 20 % of my portfolio in contracts with open interest below 5,000 units.” FinMoovi will alert you when you drift away from that goal, giving you a gentle nudge before a potential liquidity crunch.
 
-If you’re juggling credit‑card bills, loan repayments, and a shopping list, the **shopping mode** (list + real‑time total) helps you stay on budget while you allocate spare cash to new positions. And the **reminders / balance alerts** keep you from missing settlement dates that could automatically close a contract and affect your open‑interest count.
+If you’re juggling credit‑card bills, loan repayments, and a [shopping list](/en/glossario/en-shopping-list), the **shopping mode** (list + real‑time total) helps you stay on budget while you allocate spare cash to new positions. And the **reminders / balance alerts** keep you from missing settlement dates that could automatically close a contract and affect your open‑interest count.
 
 All of this works **offline** and syncs later, so you can capture a receipt on a train or in a remote cabin, and still have the data ready when you’re back online.
 

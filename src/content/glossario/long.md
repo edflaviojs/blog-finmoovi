@@ -27,7 +27,7 @@ Se você já ouviu alguém dizer que vai “ficar long” em uma ação, pode es
 
 
 - Compra de ações, ETFs ou criptomoedas  
-- Investimento em fundos que acompanham índices (ex.: S&P 500)  
+- [Investimento](/glossario/investimento) em fundos que acompanham índices (ex.: S&P 500)  
 - Aplicação em commodities como ouro ou petróleo  
 
 ## Por que entender “long” pode mudar sua vida financeira  
@@ -36,7 +36,7 @@ Muitos evitam investir porque acham que é coisa de especialista. Na prática, a
 
 - **Segurança psicológica:** você não precisa se preocupar em “emprestar” ativos, como acontece no short.  
 - **Alinhamento com objetivos:** se seu objetivo é comprar a casa dos sonhos em cinco anos, manter posições long pode ser a base.  
-- **Facilidade de acompanhamento:** basta observar se o preço está subindo ou não, sem cálculos complexos de juros de empréstimo.  
+- **Facilidade de acompanhamento:** basta observar se o preço está subindo ou não, sem cálculos complexos de juros de [empréstimo](/glossario/emprestimo).  
 
 ## Como funciona na prática: do primeiro clique ao resultado  
 
@@ -46,8 +46,8 @@ Imagine que você recebe seu salário e decide reservar parte para investir. Voc
 
 
 
-- **Compra:** você paga o preço atual (ex.: o equivalente a duas vezes o valor de um aluguel).  
-- **Manutenção:** o ativo fica na sua carteira, gerando eventuais dividendos ou juros.  
+- **Compra:** você paga o preço atual (ex.: o equivalente a duas vezes o valor de um [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026)).  
+- **Manutenção:** o ativo fica na sua carteira, gerando eventuais [dividendos](/glossario/dividendos) ou juros.  
 - **Venda:** quando o preço subir o suficiente para cobrir custos e gerar lucro, você vende.  
 
 Se o preço cair, a posição ainda está “long”; você apenas aguarda a recuperação ou decide vender com prejuízo. O ponto crucial é que a expectativa inicial é de alta, não de queda.  
@@ -66,7 +66,7 @@ O FinMoovi foi pensado para quem quer investir sem complicação, mas ainda assi
 
 - **Captura inteligente:** tire foto da nota fiscal ou use a voz para registrar despesas; o app categoriza automaticamente, ajudando a saber quanto sobra para investir.  
 - **Multimoeda:** seu dinheiro pode estar em diferentes moedas (real, dólar, euro); o FinMoovi converte tudo em tempo real, facilitando a compra de ativos internacionais.  
-- **Fluxo de caixa e relatórios:** visualize entradas e saídas, veja o impacto das compras de ativos long no seu orçamento mensal.  
+- **[Fluxo de caixa](/glossario/fluxo-de-caixa) e relatórios:** visualize entradas e saídas, veja o impacto das compras de ativos long no seu orçamento mensal.  
 - **Planejamento mensal / metas:** defina a meta de investir, por exemplo, “equivalente a um café por dia”, e acompanhe o progresso.  
 - **Cartões de crédito / fatura:** controle os gastos que podem comprometer o dinheiro destinado ao investimento.  
 - **Modo compras:** crie lista de ativos que quer comprar, veja o total em tempo real e ajuste antes de confirmar.  
@@ -77,7 +77,7 @@ O FinMoovi foi pensado para quem quer investir sem complicação, mas ainda assi
 
 **Dica prática:** antes de comprar, verifique o histórico de preço nos últimos 12 meses; se o ativo já mostrou consistência de alta, a probabilidade de continuar subindo é maior.  
 
-**Dica prática:** reserve sempre um percentual fixo do seu orçamento (ex.: 10 % do que gastaria em um aluguel) para reinvestir os dividendos que receber. Isso cria um efeito de juros compostos sem esforço.  
+**Dica prática:** reserve sempre um percentual fixo do seu orçamento (ex.: 10 % do que gastaria em um aluguel) para reinvestir os dividendos que receber. Isso cria um efeito de [juros compostos](/ferramentas/calculadora-juros-compostos) sem esforço.  
 
 **Dica prática:** use a funcionalidade de metas do FinMoovi para definir um objetivo de valorização (ex.: “dobrar o valor investido em 5 anos”) e deixe o app enviar alertas quando estiver próximo de atingir ou precisar ajustar a estratégia.  
 

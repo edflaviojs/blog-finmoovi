@@ -20,7 +20,7 @@ seo:
 
 ## What happens when money loses strength?
 
-Have you ever noticed that the price of bread or a bus ticket seems to go up every month? If you keep your money in a checking account, it may stay “safe,” but it loses purchasing power. When it’s time to pay the electricity bill or plan a trip, that amount that once seemed enough no longer covers even half the expenses. This feeling that money “shrinks” is the starting point for understanding **store of value** – the strategy of protecting your wealth from losing value over time.
+Have you ever noticed that the price of bread or a bus ticket seems to go up every month? If you keep your money in a [checking account](/en/posts/en-digital-bank-vs-major-bank-which-is-worth-it-in-2026), it may stay “safe,” but it loses purchasing power. When it’s time to pay the electricity bill or plan a trip, that amount that once seemed enough no longer covers even half the expenses. This feeling that money “shrinks” is the starting point for understanding **store of value** – the strategy of protecting your wealth from losing value over time.
 
 ![What happens when money loses strength?](/images/glossario/reserva-de-valor-inline-1.webp)
 
@@ -28,7 +28,7 @@ Have you ever noticed that the price of bread or a bus ticket seems to go up eve
 
 ## Store of value: concept made simple
 
-A store of value is simply a way to keep money so that it maintains, or even increases, its purchasing power in the future. It’s not about “hiding” money, but choosing assets that resist inflation, market swings, and value loss over the years. In practice, it’s like choosing a safe that not only protects what’s inside but also adds something extra.
+A store of value is simply a way to keep money so that it maintains, or even increases, its purchasing power in the future. It’s not about “hiding” money, but choosing assets that resist [inflation](/en/glossario/en-inflation), market swings, and value loss over the years. In practice, it’s like choosing a safe that not only protects what’s inside but also adds something extra.
 
 ## How FinMoovi helps you build your store of value
 
@@ -38,11 +38,11 @@ Imagine you just got your paycheck and want to set aside part of it for your sto
 
 
 
-Additionally, FinMoovi supports **multi-currency**, allowing you to allocate part of your store of value to dollars, euros, or another strong currency — without needing to open separate accounts. Cash flow and reports show in real time how much of your money is protected against inflation and how much is still “idle” in your checking account. You can also set monthly goals, like “accumulate the equivalent of three months’ rent in store-of-value assets,” and track progress with simple charts.
+Additionally, FinMoovi supports **multi-currency**, allowing you to allocate part of your store of value to dollars, euros, or another strong currency — without needing to open separate accounts. [Cash flow](/en/glossario/en-cash-flow) and reports show in real time how much of your money is protected against inflation and how much is still “idle” in your checking account. You can also set monthly goals, like “accumulate the equivalent of three months’ rent in store-of-value assets,” and track progress with simple charts.
 
 ## Where to put your store of value? Practical options
 
-- **Inflation-linked government bonds** – public securities that pay the change in the cost of living plus a fixed interest. They’re safe and easy to track in the app.
+- **Inflation-linked government bonds** – public securities that pay the change in the [cost of living](/en/glossario/en-cost-of-living) plus a fixed interest. They’re safe and easy to track in the app.
 - **Short-term fixed-income funds** – invest in low-risk instruments and typically yield more than a checking account.
 - **Strong currencies (USD, EUR)** – held in digital accounts or currency funds, they help neutralize the local currency’s depreciation.
 - **Commodities like gold** – accessible via ETFs (index funds) that track the price of the precious metal.
@@ -58,7 +58,7 @@ Create the goal “Store of value equivalent to 3 months of expenses.” The app
 
 ## **Practical tip:** Diversify across currencies and assets
 
-Don’t put everything in one type of investment. If inflation in your currency rises, the portion in dollars or gold can offset the loss. FinMoovi lets you see the allocation in percentages and rebalance with just a few clicks.
+Don’t put everything in one type of [investment](/en/glossario/en-investment). If inflation in your currency rises, the portion in dollars or gold can offset the loss. FinMoovi lets you see the allocation in percentages and rebalance with just a few clicks.
 
 ## How to avoid common pitfalls
 
@@ -79,7 +79,7 @@ Having a store of value isn’t just about picking the right investment — it�
 
 - **Every 6 months** – check if accumulated inflation is being beaten by returns on your assets.
 - **When changing jobs or getting a raise** – adjust your store-of-value percentage to reflect your new financial situation.
-- **During major life events** – marriage, buying a home, or moving countries, reassess liquidity needs and your store of value’s composition.
+- **During major life events** – [marriage](/en/posts/en-budget-for-couples-dividing-expenses), buying a home, or moving countries, reassess liquidity needs and your store of value’s composition.
 
 ## Start today
 

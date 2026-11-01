@@ -9,6 +9,7 @@ locale: "pt"
 tags: ["alternativas planilha google","apps finanças 2026","FinMoovi review","controle de gastos","app financeiro offline","alternativa planilha google","controle gastos sem planilha","app financeiro vs planilha"]
 author: "FinMoovi"
 publishedAt: 2026-07-16
+updatedAt: 2026-11-01
 readingTime: 7
 featured: false
 translationKey: "7-alternativas-a-planilha-google-para-financas-guia"

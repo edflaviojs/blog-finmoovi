@@ -20,7 +20,7 @@ seo:
 
 ## ¿Por qué siempre pierdes el control de tus gastos?
 
-Te levantas, revisas tu cuenta y ves que el dinero se va como agua por el desagüe. No sabes en qué se gastó exactamente, y cada fin de mes te preguntas “¿dónde quedó el sueldo?”. Esa incertidumbre te genera estrés y te impide planear cosas importantes, como unas vacaciones o un fondo de emergencia. Lo que falta es una visión clara, y ahí es donde entra el **gráfico**: una representación visual que transforma números aburridos en imágenes fáciles de entender.
+Te levantas, revisas tu cuenta y ves que el dinero se va como agua por el desagüe. No sabes en qué se gastó exactamente, y cada fin de mes te preguntas “¿dónde quedó el sueldo?”. Esa incertidumbre te genera estrés y te impide planear cosas importantes, como unas [vacaciones](/es/posts/es-5-consejos-para-reorganizar-tus-finanzas-en-vacaciones) o un [fondo de emergencia](/es/glossario/es-fondo-de-emergencia). Lo que falta es una visión clara, y ahí es donde entra el **gráfico**: una representación visual que transforma números aburridos en imágenes fáciles de entender.
 
 ![¿Por qué siempre pierdes el control de tus gastos?](/images/glossario/grafico-inline-1.webp)
 
@@ -41,17 +41,17 @@ Imagina que cada vez que pagas una cuenta o haces una compra, tomas una foto del
 - Captura inteligente: foto o voz del recibo
 - Categorización automática: el app asigna la categoría correcta
 - Multimoneda: visualiza tus datos en cualquier divisa
-- Flujo de caja e informes: ve ingresos vs. gastos en tiempo real
-- Planificación mensual y metas: define cuánto quieres ahorrar y sigue tu progreso
+- [Flujo de caja](/es/glossario/es-flujo-de-caja) e informes: ve ingresos vs. gastos en tiempo real
+- Planificación mensual y metas: define cuánto quieres [ahorrar](/es/posts/es-ahorra-en-la-farmacia-sin-sacrificios-guia-practica-2026) y sigue tu progreso
 
 ## Ventajas de usar gráficos para tu salud financiera
 
 Los gráficos no son solo bonitos; son herramientas poderosas que te ayudan a tomar decisiones rápidas.
 
-**Consejo práctico:** revisa tu gráfico de gastos cada domingo; si una barra está mucho más alta que las demás, investiga ese gasto y decide si puedes reducirlo.
+**Consejo práctico:** revisa tu gráfico de gastos cada domingo; si una barra está mucho más alta que las demás, investiga ese [gasto](/es/glossario/es-gasto) y decide si puedes reducirlo.
 
 - Detectas rápidamente gastos fuera de lo normal.
-- Comparas meses anteriores y ves si tus esfuerzos de ahorro están funcionando.
+- Comparas meses anteriores y ves si tus esfuerzos de [ahorro](/es/glossario/es-ahorro) están funcionando.
 - Identificas categorías donde puedes recortar sin sacrificar tu calidad de vida.
 
 ## Cómo interpretar los diferentes tipos de gráficos

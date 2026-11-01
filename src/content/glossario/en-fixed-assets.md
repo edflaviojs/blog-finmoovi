@@ -20,7 +20,7 @@ seo:
 
 ## O que acontece quando você não sabe onde está o seu imobilizado  
 
-Você acabou de comprar um equipamento de escritório para a sua pequena empresa – um computador que custou cerca de o mesmo que duas mensalidades de aluguel. Alguns meses depois, ao fechar o balanço, percebe que não tem ideia de quanto esse bem ainda vale, nem como ele impacta o seu lucro. O mesmo problema aparece quando você tenta separar os móveis da sua loja, as máquinas de produção ou até o carro usado para entregas. Sem um controle claro, você pode acabar pagando imposto a mais, subestimando a necessidade de renovação ou, pior, perder oportunidades de crédito porque o seu patrimônio parece menor do que realmente é.
+Você acabou de comprar um equipamento de escritório para a sua pequena empresa – um computador que custou cerca de o mesmo que duas mensalidades de aluguel. Alguns meses depois, ao fechar o balanço, percebe que não tem ideia de quanto esse bem ainda vale, nem como ele impacta o seu lucro. O mesmo problema aparece quando você tenta separar os móveis da sua loja, as máquinas de produção ou até o carro usado para entregas. Sem um controle claro, você pode acabar pagando imposto a mais, subestimando a necessidade de renovação ou, pior, perder oportunidades de crédito porque o seu [patrimônio](/en/glossario/en-patrimonio) parece menor do que realmente é.
 
 ![O que acontece quando você não sabe onde está o seu imobilizado  ](/images/glossario/imobilizado-inline-1.webp)
 
@@ -39,9 +39,9 @@ Sem um registro organizado, você corre o risco de:
 
 O FinMoovi foi pensado para quem não tem tempo nem paciência para planilhas complicadas. Uma das funcionalidades que mais facilita a vida de quem precisa controlar o imobilizado é o **smart capture**: basta tirar uma foto do documento de compra (nota fiscal, contrato ou mesmo o manual do equipamento) ou gravar um áudio descrevendo o bem, que o app reconhece automaticamente as informações essenciais – data, valor, fornecedor e categoria. Em segundos, o ativo já aparece na sua lista de imobilizado, pronto para ser depreciado.
 
-Além disso, o FinMoovi trabalha em **multi‑currency**, então se você comprou um maquinário nos Estados Unidos, um software na Europa e um mobiliário local, tudo fica registrado na moeda original e convertido para a sua base de planejamento. Isso evita surpresas na hora de fechar o balanço, porque você vê o valor real de cada bem, independentemente da cotação do dia.
+Além disso, o FinMoovi trabalha em **[multi‑currency](/en/posts/en-digital-bank-vs-major-bank-which-is-worth-it-in-2026)**, então se você comprou um maquinário nos Estados Unidos, um software na Europa e um mobiliário local, tudo fica registrado na [moeda](/en/glossario/en-moeda) original e convertido para a sua base de planejamento. Isso evita surpresas na hora de fechar o balanço, porque você vê o valor real de cada bem, independentemente da cotação do dia.
 
-A ferramenta de **cash flow e reports** gera relatórios claros mostrando quanto do seu lucro está sendo “comido” pela depreciação, quanto ainda resta de valor residual e quais ativos precisam de manutenção. Você ainda pode criar metas de renovação, como “substituir o computador da equipe a cada 4 anos”, e o app te avisa quando o prazo está próximo.
+A ferramenta de **[cash flow](/en/glossario/en-cash-flow) e [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end)** gera relatórios claros mostrando quanto do seu lucro está sendo “comido” pela depreciação, quanto ainda resta de valor residual e quais ativos precisam de manutenção. Você ainda pode criar metas de renovação, como “substituir o computador da equipe a cada 4 anos”, e o app te avisa quando o prazo está próximo.
 
 ## Passo a passo para registrar um bem no FinMoovi  
 
@@ -74,7 +74,7 @@ Além disso, o app integra o imobilizado ao seu **planejamento mensal**. Ao defi
 
 - **Esquecer de registrar**: muitos empresários anotam o bem apenas no papel ou no e‑mail de compra e nunca o transferem para o sistema contábil. O FinMoovi elimina esse ponto fraco com a captura instantânea.  
 - **Usar o mesmo prazo para tudo**: móveis de escritório podem durar 10 anos, enquanto laptops só 3. Ajuste a vida útil de acordo com a realidade de cada categoria.  
-- **Não considerar a moeda**: se você compra equipamentos no exterior e não converte o valor, seu balanço pode ficar inflado ou subvalorizado. O recurso multi‑currency cuida disso automaticamente.  
+- **Não considerar a moeda**: se você compra equipamentos no exterior e não converte o valor, seu balanço pode ficar inflado ou subvalorizado. O recurso [multi‑currency](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using) cuida disso automaticamente.  
 - **Ignorar a depreciação fiscal**: deixar de aplicar a depreciação correta pode gerar pagamento de impostos maior do que o necessário. Use os relatórios do FinMoovi para gerar o cálculo exato e exportar para o seu contador.
 
 ## Por que o controle de imobilizado é essencial para pequenas empresas  

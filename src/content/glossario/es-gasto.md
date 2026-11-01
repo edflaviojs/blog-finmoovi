@@ -20,7 +20,7 @@ seo:
 
 ## ¿Qué es un gasto y por qué te preocupa
 
-Te levantas, revisas tu cuenta y ves que el dinero se va como agua por el desagüe: la luz, el internet, el café de la mañana y, de repente, ya no sabes dónde quedó el sueldo. Esa sensación de “¿a dónde se fue todo?” es la señal de que tus **gastos** no están bajo control. En finanzas personales, un gasto es cualquier salida de dinero que haces para cubrir una necesidad o un deseo. No importa si pagas la renta, compras una camiseta o pagas la suscripción al gimnasio; todos son gastos que impactan tu bolsillo.
+Te levantas, revisas tu cuenta y ves que el dinero se va como agua por el desagüe: la luz, el internet, el café de la mañana y, de repente, ya no sabes dónde quedó el sueldo. Esa sensación de “¿a dónde se fue todo?” es la señal de que tus **gastos** no están bajo control. En [finanzas](/es/glossario/es-finanzas) personales, un gasto es cualquier salida de dinero que haces para cubrir una necesidad o un deseo. No importa si pagas la renta, compras una camiseta o pagas la suscripción al gimnasio; todos son gastos que impactan tu bolsillo.
 
 ![¿Qué es un gasto y por qué te preocupa](/images/glossario/despesa-inline-1.webp)
 
@@ -28,7 +28,7 @@ Te levantas, revisas tu cuenta y ves que el dinero se va como agua por el desag�
 
 ## Tipos de gastos que aparecen en tu vida diaria
 
-- **Gastos fijos:** pagos que se repiten cada mes y cuyo monto casi no cambia (alquiler, servicios básicos, seguros).  
+- **Gastos fijos:** pagos que se repiten cada mes y cuyo monto casi no cambia ([alquiler](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026), servicios básicos, seguros).  
 - **Gastos variables:** gastos que pueden subir o bajar según tu consumo (comida fuera, gasolina, ropa).  
 - **Gastos ocasionales:** pagos que aparecen de vez en cuando, como la reparación del coche o el regalo de cumpleaños.  
 
@@ -48,7 +48,7 @@ Con estos pasos, cada salida de dinero queda registrada al instante, sin que ten
 
 ## Por qué el flujo de caja es tu mejor aliado
 
-El flujo de caja es simplemente la diferencia entre lo que entra (ingresos) y lo que sale (gastos). Cuando lo visualizas en un gráfico, ves de un vistazo si estás gastando más de lo que ganas. FinMoovi te muestra:
+El [flujo de caja](/es/glossario/es-flujo-de-caja) es simplemente la diferencia entre lo que entra (ingresos) y lo que sale (gastos). Cuando lo visualizas en un [gráfico](/es/glossario/es-grafico), ves de un vistazo si estás gastando más de lo que ganas. FinMoovi te muestra:
 
 - **Resumen semanal y mensual:** para que notes rápidamente si una categoría está fuera de control.  
 - **Informes detallados:** con filtros por tipo de gasto, periodo o moneda.  
@@ -58,13 +58,13 @@ Así, en lugar de adivinar, tomas decisiones basadas en datos reales.
 
 ## Planificación mensual y metas: el camino para reducir tus gastos
 
-Una vez que sabes a dónde va tu dinero, puedes planificar. FinMoovi te permite crear metas como “Ahorrar el equivalente a dos alquileres en seis meses” o “Reducir el gasto en comida fuera a la mitad”. Cada vez que registras un gasto, la app actualiza tu progreso automáticamente.
+Una vez que sabes a dónde va tu dinero, puedes planificar. FinMoovi te permite crear metas como “[Ahorrar](/es/posts/es-ahorra-en-la-farmacia-sin-sacrificios-guia-practica-2026) el equivalente a dos alquileres en seis meses” o “Reducir el gasto en comida fuera a la mitad”. Cada vez que registras un gasto, la app actualiza tu progreso automáticamente.
 
 **Consejo práctico:** establece un límite mensual para los gastos variables y revisa cada semana si vas por buen camino.  
 
 **Consejo práctico:** usa la función de “modo compras” para crear listas de lo que necesitas; la app suma el total en tiempo real y te avisa si superas tu presupuesto.  
 
-**Consejo práctico:** activa los recordatorios de pago de tarjetas de crédito; así evitas intereses que aumentan tus gastos sin que te des cuenta.
+**Consejo práctico:** activa los recordatorios de pago de tarjetas de [crédito](/es/glossario/es-credito); así evitas intereses que aumentan tus gastos sin que te des cuenta.
 
 ## Tarjetas de crédito y facturas: no dejes que te sorprendan
 

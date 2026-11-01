@@ -9,6 +9,7 @@ locale: "pt"
 tags: ["apps finanças 2026","controle de gastos","FinMoovi","comparação de apps","melhor app financeiro","orçamento pessoal","segurança financeira","melhor app finanças","app controle gastos","app financeiro 2026"]
 author: "FinMoovi"
 publishedAt: 2026-07-30
+updatedAt: 2026-11-01
 readingTime: 8
 featured: false
 translationKey: "7-melhores-apps-de-controle-financeiro-2026-guia-completo"

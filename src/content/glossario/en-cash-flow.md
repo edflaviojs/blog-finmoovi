@@ -28,7 +28,7 @@ Ever opened your wallet after a week of groceries, a coffee habit, and a few onl
 
 ## What cash flow really means
 
-Cash flow, in plain language, is simply the record of all the money that enters your pocket (or bank account) and all the money that leaves it over a given period – usually a month. Think of it as a river: the inflows are the tributaries (salary, freelance payments, refunds), and the outflows are the branches (rent, utilities, that daily coffee). When the river runs smoothly, you can see where the water is flowing and plan where to divert it. When it’s chaotic, you risk running dry before the next paycheck. Understanding cash flow means you can anticipate shortages, avoid surprise overdrafts, and make smarter spending decisions.
+Cash flow, in plain language, is simply the record of all the money that enters your pocket (or bank account) and all the money that leaves it over a given period – usually a month. Think of it as a river: the inflows are the tributaries (salary, freelance [payments](/en/posts/en-how-to-use-the-price-table-to-plan-your-payments-in-2026), refunds), and the outflows are the branches (rent, utilities, that daily coffee). When the river runs smoothly, you can see where the water is flowing and plan where to divert it. When it’s chaotic, you risk running dry before the next paycheck. Understanding cash flow means you can anticipate shortages, avoid surprise overdrafts, and make smarter spending decisions.
 
 ## How most people try to track cash flow (and why it fails)
 
@@ -40,4 +40,4 @@ Cash flow, in plain language, is simply the record of all the money that enters 
 
 
 
-These methods sound doable, but they quickly become a nightmare. Paper gets lost, spreadsheets demand discipline you don’t have after a long day, and bank statements give you a delayed view – you’re looking at
+These methods sound doable, but they quickly become a nightmare. Paper gets lost, spreadsheets demand discipline you don’t have after a [long](/en/glossario/en-long) day, and bank statements give you a delayed view – you’re looking at

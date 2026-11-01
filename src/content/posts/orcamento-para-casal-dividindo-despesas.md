@@ -8,6 +8,7 @@ locale: "pt"
 tags: ["orçamento casal","dividir despesas","finanças pessoais","casamento","economia","dividir despesas casal","finanças a dois"]
 author: "FinMoovi"
 publishedAt: 2026-07-06
+updatedAt: 2026-11-01
 readingTime: 3
 featured: false
 translationKey: "orcamento-para-casal-dividindo-despesas"

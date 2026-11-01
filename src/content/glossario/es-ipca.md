@@ -21,7 +21,7 @@ El IPCA sigue los precios de una "cesta" de productos y servicios que consumen l
 - Alimentación (arroz, frijoles, carne)
 - Vivienda ([alquiler](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026), energía, agua)
 - Transporte (gasolina, autobús)
-- Salud (plan de salud, medicamentos)
+- Salud ([plan de salud](/es/glossario/es-plan-de-salud), medicamentos)
 - Educación (mensualidad escolar)
 
 ## Por qué el IPCA importa para ti

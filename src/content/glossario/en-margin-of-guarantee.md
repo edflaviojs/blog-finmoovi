@@ -20,7 +20,7 @@ seo:
 
 ## What is margin of guarantee
 
-Imagine you want to buy a new phone, but you don’t have all the money in your account yet. You think about using your credit card, but the bill is already near its limit. A solution that comes up in conversations with friends is “using the margin of guarantee”: you leave an asset (like a car or property) as security, and the bank releases credit proportional to the value of that asset. This reserve, called margin of guarantee, works like a cushion that lets you access funds without having to sell anything right away.
+Imagine you want to buy a new phone, but you don’t have all the money in your account yet. You think about using your [credit card](/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026), but the bill is already near its limit. A solution that comes up in conversations with friends is “using the margin of [guarantee](/en/glossario/en-guarantee)”: you leave an asset (like a car or property) as security, and the bank releases credit proportional to the value of that asset. This reserve, called margin of guarantee, works like a cushion that lets you access funds without having to sell anything right away.
 
 ![What is margin of guarantee](/images/glossario/margem-de-garantia-inline-1.webp)
 
@@ -30,13 +30,13 @@ Margin of guarantee is not a traditional loan. It doesn’t generate interest wh
 
 ## How margin of guarantee works in practice
 
-- **Asset selection:** it can be a car, property, an investment title, or even a checking account balance you decide to “lock.”
+- **Asset selection:** it can be a car, property, an [investment](/en/glossario/en-investment) title, or even a checking account balance you decide to “lock.”
 - **Evaluation:** the institution makes a quick evaluation (sometimes automatic) to determine the market value.
 - **Percentage definition:** based on that value, it determines how much can be released. For example, if your car is worth $20,000 and the bank accepts 50%, you have $10,000 of margin.
 - **Credit use:** the limit appears as if it were a credit card or a checking account. You can pay bills, make purchases, or transfer to your main account.
 - **Repayment:** when you pay back what you used, the limit becomes available again. If you decide to release the asset, you just request the return of the margin and the asset is removed from the guarantee.
 
-This mechanism is very useful for people who have assets but prefer not to sell them or don’t want to strain cash flow with a traditional loan, which often has higher interest and more bureaucracy.
+This mechanism is very useful for people who have assets but prefer not to sell them or don’t want to strain [cash flow](/en/glossario/en-cash-flow) with a traditional loan, which often has higher interest and more bureaucracy.
 
 ## Advantages and precautions
 
@@ -62,7 +62,7 @@ Additionally, FinMoovi offers:
 
 - **Multi‑currency:** if you have assets in different currencies (for example, a car valued in dollars or a property in euros), the app converts everything to your base currency, allowing clear comparison of limits.
 - **Cash flow and reports:** see in real time how much of your margin is committed, how much is still available, and how this impacts your overall balance.
-- **Monthly planning and goals:** include the margin of guarantee as a funding source in your debt repayment plans or in the goal of buying that appliance.
+- **Monthly [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) and goals:** include the margin of guarantee as a funding source in your debt repayment plans or in the goal of buying that appliance.
 - **Cards and statements:** the margin limit appears as a “credit line” on your cards, making spending easier to track.
 - **Shopping mode:** create shopping lists, add items, and see the total in real time, already subtracting what’s available in the margin.
 - **Alerts and reminders:** get notified when the limit drops below a percentage you set, or when there’s a risk of asset depreciation.
@@ -74,7 +74,7 @@ Additionally, FinMoovi offers:
 
 **Practical tip:** **Set a 30% usage alert** in the app. When the limit drops to 30% of the total, FinMoovi warns you, helping you avoid getting close to the risk point of losing the asset.
 
-**Practical tip:** **Combine the margin with an emergency fund.** Use the margin only for planned expenses (like renovations or equipment purchases) and keep a small separate cash reserve for surprises, so the asset isn’t put at risk by unexpected events.
+**Practical tip:** **Combine the margin with an [emergency fund](/en/glossario/en-emergency-fund).** Use the margin only for planned expenses (like renovations or equipment purchases) and keep a small separate cash reserve for surprises, so the asset isn’t put at risk by unexpected events.
 
 ## When is it worth choosing margin of guarantee
 

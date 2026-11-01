@@ -20,7 +20,7 @@ seo:
 
 ## ¿Te ha pasado que de repente no sabes por qué tus gastos se disparan?
 
-Imagina que revisas tu cuenta y, de la noche a la mañana, el saldo se ha reducido tanto como el costo de varios cafés al día. No sabes si fue una compra impulsiva, una suscripción que se renovó sin que lo notaras, o simplemente un error del banco. Ese desconcierto es más común de lo que crees y suele generar ansiedad, porque sin claridad no puedes planificar tus finanzas.
+Imagina que revisas tu cuenta y, de la noche a la mañana, el saldo se ha reducido tanto como el costo de varios cafés al día. No sabes si fue una compra impulsiva, una suscripción que se renovó sin que lo notaras, o simplemente un error del banco. Ese desconcierto es más común de lo que crees y suele generar ansiedad, porque sin claridad no puedes planificar tus [finanzas](/es/glossario/es-finanzas).
 
 ![¿Te ha pasado que de repente no sabes por qué tus gastos se disparan?](/images/glossario/kill-switch-inline-1.webp)
 
@@ -32,7 +32,7 @@ El término “kill switch” proviene del inglés y literalmente significa “i
 
 En la práctica, un kill switch puede:
 
-- Bloquear temporalmente una tarjeta de crédito cuando se detecta un gasto fuera de lo habitual.
+- Bloquear temporalmente una tarjeta de [crédito](/es/glossario/es-credito) cuando se detecta un gasto fuera de lo habitual.
 - Suspender la transferencia automática de fondos si el saldo cae por debajo de un umbral crítico.
 - Desactivar una suscripción que está generando cargos recurrentes sin tu autorización.
 
@@ -48,12 +48,12 @@ Otro ejemplo: tienes una suscripción a una plataforma de streaming que se renue
 
 ## FinMoovi: la solución que incorpora un kill switch inteligente
 
-FinMoovi no es solo otra app de control de gastos; es tu aliado con un kill switch integrado que actúa de forma proactiva. Aquí tienes cómo funciona:
+FinMoovi no es solo otra app de [control de gastos](/es/glossario/es-control-de-gastos); es tu aliado con un kill switch integrado que actúa de forma proactiva. Aquí tienes cómo funciona:
 
 - **Captura inteligente:** Apuntas una foto del recibo o grabas la voz diciendo “pago de luz”. La app reconoce el gasto y lo categoriza sin que tengas que escribir nada.
 - **Multimoneda:** Puedes registrar gastos en diferentes monedas (por ejemplo, dólares, euros o la moneda local) y la app los convierte al valor equivalente de tu presupuesto.
-- **Flujo de caja e informes:** Visualizas en tiempo real cuánto entra y sale, con gráficos que te muestran tendencias semanales y mensuales.
-- **Planificación mensual y metas:** Estableces objetivos (como ahorrar el equivalente a un alquiler) y la app te avisa si te estás desviando.
+- **[Flujo de caja](/es/glossario/es-flujo-de-caja) e informes:** Visualizas en tiempo real cuánto entra y sale, con gráficos que te muestran tendencias semanales y mensuales.
+- **Planificación mensual y metas:** Estableces objetivos (como [ahorrar](/es/posts/es-ahorra-en-la-farmacia-sin-sacrificios-guia-practica-2026) el equivalente a un [alquiler](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026)) y la app te avisa si te estás desviando.
 - **Tarjetas de crédito y facturas:** Vinculas tus tarjetas y la app te muestra el resumen de la factura antes de que llegue, con alertas de vencimiento.
 - **Modo compras:** Creas una lista de la compra; la app suma los precios en tiempo real y te avisa cuando superas el presupuesto que definiste.
 - **Recordatorios y alertas de saldo:** Recibes notificaciones cuando tu saldo está bajo, evitando sorpresas desagradables.

@@ -30,12 +30,12 @@ Um gráfico, em termos simples, é um desenho que coloca dados (valores numéric
 
 ## Como os diferentes tipos de gráfico ajudam no dia a dia
 
-Quando você decide organizar suas finanças, alguns tipos de gráfico são mais úteis que outros:
+Quando você decide organizar suas [finanças](/glossario/financas), alguns tipos de gráfico são mais úteis que outros:
 
 - **Gráfico de barras**: mostra comparações entre categorias (ex.: quanto gastou em supermercado vs. gasolina). Ideal para identificar onde está o maior gasto.
 - **Gráfico de linhas**: conecta pontos ao longo do tempo (ex.: saldo da conta nos últimos 12 meses). Perfeito para perceber tendências de crescimento ou queda.
 - **Gráfico de pizza**: divide um círculo em “fatias” que representam partes de um todo (ex.: porcentagem de cada categoria no orçamento mensal). Ótimo para ter uma visão rápida da distribuição.
-- **Gráfico de área**: combina linhas e preenchimento, útil para visualizar a evolução do fluxo de caixa acumulado.
+- **Gráfico de área**: combina linhas e preenchimento, útil para visualizar a evolução do [fluxo de caixa](/glossario/fluxo-de-caixa) acumulado.
 
 Cada um tem seu propósito, mas todos compartilham a mesma missão: transformar números em imagens que falam por si.
 
@@ -55,17 +55,17 @@ Esses problemas fazem com que você desista de analisar seus gastos e volte a vi
 
 ## Como o FinMoovi transforma a visualização de gastos em algo simples e poderoso
 
-Imagine que, ao terminar o almoço, você tira uma foto da nota fiscal com o celular. O **FinMoovi** reconhece automaticamente cada item, atribui a categoria correta (alimentação, transporte, lazer) e converte o valor para a moeda que você escolher – tudo em segundos. Em seguida, o app gera gráficos dinâmicos que se atualizam em tempo real:
+Imagine que, ao terminar o almoço, você tira uma foto da nota fiscal com o celular. O **FinMoovi** reconhece automaticamente cada item, atribui a categoria correta (alimentação, transporte, lazer) e converte o valor para a [moeda](/glossario/moeda) que você escolher – tudo em segundos. Em seguida, o app gera gráficos dinâmicos que se atualizam em tempo real:
 
 - **Fluxo de caixa diário** em um gráfico de linhas, mostrando entradas e saídas.
 - **Distribuição de despesas** mensal em um gráfico de pizza, indicando exatamente quanto cada categoria representa.
-- **Comparativo de metas** com barras que mostram o planejado vs. o realizado.
+- **[Comparativo](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026) de metas** com barras que mostram o planejado vs. o realizado.
 
 Além disso, o FinMoovi oferece:
 
 - **Multimoeda** (BRL, USD, EUR) – ideal para quem tem renda ou despesas em diferentes países.
 - **Relatórios automáticos** que exportam PDFs com todos os gráficos prontos para impressão ou compartilhamento.
-- **Planejamento mensal** com metas personalizadas e alertas quando você está perto de ultrapassar o limite.
+- **[Planejamento mensal](/posts/como-organizar-seu-dinheiro-com-um-app-facil-de-usar)** com metas personalizadas e [alertas](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto) quando você está perto de ultrapassar o limite.
 - **Modo compras**: lista de itens que você adiciona enquanto faz compras; o app soma tudo em tempo real e mostra o total antes de fechar a conta.
 - **Lembretes de saldo** e notificações de fatura, evitando surpresas desagradáveis.
 - **Acesso offline** via PWA (Progressive Web App) – funciona mesmo sem internet e sincroniza tudo quando você se reconecta.

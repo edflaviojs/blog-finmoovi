@@ -28,7 +28,7 @@ You’ve just opened your banking app and saw a sudden dip in your checking bala
 
 ## The hidden player behind the headlines: Non-Farm Payrolls
 
-When you hear news about “NFP” on the evening news, it’s usually about the U.S. job market, not your personal budget. Non-Farm Payrolls (NFP) is a monthly report released by the U.S. Bureau of Labor Statistics that counts how many jobs were added or lost in the economy, excluding farm work, government, and nonprofit jobs. Economists watch it because it signals the health of the labor market, which influences interest rates, inflation, and ultimately the cost of borrowing money.
+When you hear news about “NFP” on the evening news, it’s usually about the U.S. job market, not your [personal budget](/en/glossario/en-personal-budget). Non-Farm Payrolls (NFP) is a monthly report released by the U.S. Bureau of Labor Statistics that counts how many jobs were added or lost in the economy, excluding farm work, government, and nonprofit jobs. Economists watch it because it signals the health of the labor market, which influences interest rates, inflation, and ultimately the cost of borrowing money.
 
 Even if you never travel to the United States, NFP matters to you. A strong NFP number often leads to higher interest rates, which can make credit card debt more expensive or affect the return on your savings. Conversely, a weak NFP can signal a slowdown, prompting central banks to lower rates and potentially boost consumer spending. Understanding NFP helps you anticipate changes in the cost of credit and the overall economic climate, giving you a better backdrop for personal financial decisions.
 
@@ -62,20 +62,20 @@ All these features work together to turn the abstract NFP numbers into concrete 
 ## Why you should care about NFP even if you don’t work in finance
 
 - **Loan costs:** Variable‑rate mortgages, car loans, and credit cards often adjust after central banks react to NFP data. Knowing the trend helps you anticipate higher payments.
-- **Investment returns:** Stock markets react to NFP; a strong report can boost equities, while a weak one may push investors toward bonds. Your portfolio’s performance can shift accordingly.
+- **[Investment](/en/glossario/en-investment) returns:** Stock markets react to NFP; a strong report can boost equities, while a weak one may push investors toward bonds. Your portfolio’s performance can shift accordingly.
 - **Job security:** While NFP focuses on the U.S., it’s a leading indicator of global economic health. A sustained decline can foreshadow hiring freezes, which may affect your industry indirectly.
 
-FinMoovi’s automatic categorization and cash‑flow analysis give you a real‑time dashboard that reflects these macro shifts, so you can act before the next bill arrives.
+FinMoovi’s [automatic categorization](/en/posts/en-automatic-expense-categorization-with-ai-keep-your-finances) and cash‑flow analysis give you a real‑time dashboard that reflects these macro shifts, so you can act before the next bill arrives.
 
 ## How to make the most of FinMoovi’s features today
 
 1. **Capture everything** – As soon as you get a receipt, snap a photo or speak the amount. The app’s AI reads the data and files it under “Bills,” “Shopping,” or “Entertainment” without you lifting a pen.
 2. **Review the weekly summary** – Every Sunday, FinMoovi sends a concise report: total income, total spend, and a highlight of any category that’s over budget. It also flags if a recent NFP release could affect your upcoming loan payments.
-3. **Adjust your goals** – If the NFP report suggests higher interest rates, tweak your “Emergency fund” goal to add a little more each month. The app will suggest a realistic amount based on your current cash flow.
+3. **Adjust your goals** – If the NFP report suggests higher interest rates, tweak your “[Emergency fund](/en/glossario/en-emergency-fund)” goal to add a little more each month. The app will suggest a realistic amount based on your current [cash flow](/en/glossario/en-cash-flow).
 4. **Set alerts** – Turn on “Balance below safety net” and “Upcoming bill due” notifications. You’ll get a gentle nudge before you’re caught off guard.
 5. **Explore shopping mode** – Before a big grocery run, create a list in the app. As you add items, watch the total stay within your planned budget, even if prices are in different currencies.
 
-By integrating these habits, you turn vague economic headlines into actionable personal finance steps.
+By integrating these habits, you turn vague economic headlines into actionable [personal finance](/en/posts/en-30-day-rule-for-purchases) steps.
 
 ## Start today
 

@@ -9,6 +9,7 @@ locale: "pt"
 tags: ["dinheiro desaparece","controle financeiro","app FinMoovi","categorização automática","OCR","captura por voz","relatórios de gastos","categorizar gastos","relatórios","visão financeira","controle de despesas","finmoovi","finanças pessoais"]
 author: "FinMoovi"
 publishedAt: 2026-07-23
+updatedAt: 2026-11-01
 readingTime: 6
 featured: false
 translationKey: "voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim"

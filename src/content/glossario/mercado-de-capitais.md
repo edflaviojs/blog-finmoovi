@@ -26,7 +26,7 @@ Você já percebeu que, apesar de guardar um pouco todo mês, parece que o dinhe
 
 
 
-Em termos simples, o mercado de capitais é o ambiente onde são negociados valores mobiliários – ações, debêntures, fundos imobiliários e outros instrumentos – que permitem que empresas captem recursos de quem tem dinheiro sobrando. Quem compra esses papéis está, na prática, emprestando ou investindo na empresa, esperando receber um retorno (dividendos, juros ou valorização).  
+Em termos simples, o mercado de capitais é o ambiente onde são negociados valores mobiliários – ações, debêntures, [fundos imobiliários](/glossario/fundos-imobiliarios) e outros instrumentos – que permitem que empresas captem recursos de quem tem dinheiro sobrando. Quem compra esses papéis está, na prática, emprestando ou investindo na empresa, esperando receber um retorno (dividendos, juros ou valorização).  
 
 ## Como funciona na prática: da empresa ao investidor  
 
@@ -46,16 +46,16 @@ Mesmo que você não pretenda virar trader profissional, entender esse universo 
 
 
 - **Diversificar a renda**: ao invés de deixar todo o dinheiro na conta corrente, aplicar parte em ações ou fundos pode gerar ganhos que superam a inflação.  
-- **Planejar metas de longo prazo**: investimentos em renda variável costumam ter retornos maiores que a poupança, facilitando a compra de um imóvel ou a aposentadoria.  
+- **Planejar metas de longo prazo**: investimentos em [renda variável](/glossario/renda-variavel) costumam ter retornos maiores que a poupança, facilitando a compra de um imóvel ou a aposentadoria.  
 - **Aproveitar oportunidades**: quando uma empresa lança um novo produto ou entra em um mercado, o valor de suas ações pode subir rapidamente, gerando lucro rápido para quem já está investido.  
 
 ## Como organizar suas finanças para começar a investir  
 
 Antes de colocar dinheiro no mercado de capitais, é essencial ter clareza sobre o que entra e sai da sua conta. É aqui que o **FinMoovi** entra como um aliado prático:  
 
-- **Captura inteligente**: tire foto da nota fiscal ou use a voz para registrar despesas; o app reconhece automaticamente a categoria (alimentação, transporte, lazer).  
+- **[Captura inteligente](/posts/cansado-de-perder-horas-nas-planilhas-como-o-finmoovi)**: tire foto da nota fiscal ou use a voz para registrar despesas; o app reconhece automaticamente a categoria (alimentação, transporte, lazer).  
 - **Multimoeda**: registre gastos em diferentes moedas (real, dólar, euro) sem precisar converter manualmente.  
-- **Fluxo de caixa e relatórios**: veja de forma visual quanto você ganha, gasta e economiza ao longo do mês.  
+- **[Fluxo de caixa](/glossario/fluxo-de-caixa) e relatórios**: veja de forma visual quanto você ganha, gasta e economiza ao longo do mês.  
 - **Planejamento mensal / metas**: defina objetivos (ex.: “economizar o equivalente a três aluguéis em 6 meses”) e acompanhe o progresso.  
 - **Cartões de crédito / fatura**: importe as faturas e veja o total em tempo real, evitando surpresas.  
 - **Modo compras**: crie listas de supermercado; o app soma tudo e avisa se o gasto ultrapassar o limite definido.  
@@ -66,14 +66,14 @@ Antes de colocar dinheiro no mercado de capitais, é essencial ter clareza sobre
 
 **Dica prática:** antes de comprar seu primeiro título, reserve um “fundo de reserva” equivalente a pelo menos um mês de despesas (como o preço de um café por dia). Isso garante que você não precise vender o investimento em um momento de necessidade.  
 
-**Dica prática:** comece investindo em fundos de índice (ETFs) que replicam um conjunto de ações. Eles oferecem diversificação automática e costumam ter taxas menores que fundos tradicionais.  
+**Dica prática:** comece investindo em fundos de índice (ETFs) que replicam um conjunto de ações. Eles oferecem [diversificação](/glossario/diversificacao) automática e costumam ter taxas menores que fundos tradicionais.  
 
 **Dica prática:** use a funcionalidade de metas do FinMoovi para definir um objetivo de investimento mensal (por exemplo, “destinar 15 % da renda ao mercado de capitais”). O app vai mostrar o quanto falta para alcançar a meta e sugerir ajustes.  
 
 ## Passos simples para iniciar sua jornada de investimento  
 
 1. **Mapeie suas finanças**: registre todas as receitas e despesas nos últimos 30 dias usando a captura inteligente do FinMoovi.  
-2. **Identifique o excedente**: veja quanto sobra depois de cobrir custos fixos e metas de poupança.  
+2. **Identifique o excedente**: veja quanto sobra depois de cobrir custos fixos e [metas de poupança](/posts/como-economizar-para-o-dia-das-criancas-ja-em-2026-7-passos).  
 3. **Defina a meta de investimento**: escolha um percentual realista (10‑20 % do excedente) e crie a meta no app.  
 4. **Abra uma conta em corretora**: escolha uma que ofereça taxa zero para compra de ETFs e que seja compatível com o seu perfil.  
 5. **Faça a primeira compra**: selecione um ETF de baixo custo, indique o valor que corresponde à sua meta e confirme a operação.  

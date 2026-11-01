@@ -9,6 +9,7 @@ locale: "pt"
 tags: ["controlar despesas pessoais","finanças pessoais","economia","dinheiro"]
 author: "FinMoovi"
 publishedAt: 2026-07-31
+updatedAt: 2026-11-01
 readingTime: 5
 featured: true
 translationKey: "como-domar-os-gastos-e-ganhar-tranquilidade-em-2026"

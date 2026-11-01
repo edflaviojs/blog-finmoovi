@@ -9,6 +9,7 @@ locale: "pt"
 tags: ["amortização price","finanças pessoais","economia","dinheiro"]
 author: "FinMoovi"
 publishedAt: 2026-07-29
+updatedAt: 2026-11-01
 readingTime: 5
 featured: true
 translationKey: "entenda-a-amortizacao-price-e-otimize-suas-financas-em-2026"

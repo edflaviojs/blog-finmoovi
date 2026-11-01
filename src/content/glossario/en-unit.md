@@ -20,7 +20,7 @@ seo:
 
 ## What a “unit” really means for you
 
-Imagine you just bought a coffee for the price of a daily latte, paid with cash, and later you try to remember how many such coffees you’ve spent on this month. You open your notebook, scribble “3 coffees”, but the next day you can’t tell if that’s three coffees, three lunches, or three rides on the subway. The missing link is a **unit** – a single, comparable piece of spending that lets you count anything: one coffee, one movie ticket, one kilometer driven. In [personal finance](/en/posts/en-30-day-rule-for-purchases), a unit is simply a way to break down money into repeatable chunks so you can see patterns, set limits, and make smarter choices.
+Imagine you just bought a coffee for the [price](/en/posts/en-how-to-use-a-loan-simulator-to-plan-your-financial-future-in) of a daily latte, paid with cash, and later you try to remember how many such coffees you’ve spent on this month. You open your notebook, scribble “3 coffees”, but the next day you can’t tell if that’s three coffees, three lunches, or three rides on the subway. The missing link is a **unit** – a single, comparable piece of spending that lets you count anything: one coffee, one movie ticket, one kilometer driven. In [personal finance](/en/posts/en-30-day-rule-for-purchases), a unit is simply a way to break down money into repeatable chunks so you can see patterns, set limits, and make smarter choices.
 
 ![What a “unit” really means for you](/images/glossario/unit-inline-1.webp)
 
@@ -37,4 +37,4 @@ When you think in units, you stop looking at a vague “$200 spent on food” an
 
 
 
-Units also help when you travel or shop in different currencies. One unit of “a meal” in Europe might cost €12, while the same unit in Asia could be $8. By converting each expense to a unit cost, you keep the
+Units also help when you travel or shop in different currencies. One unit of “a meal” in Europe might cost €12, while the same unit in Asia could be $8. By converting each [expense](/en/glossario/en-expense) to a unit cost, you keep the

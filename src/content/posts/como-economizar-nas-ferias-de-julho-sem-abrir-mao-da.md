@@ -12,6 +12,7 @@ tags:
   - "app FinMoovi"
 author: "FinMoovi"
 publishedAt: 2026-07-14
+updatedAt: 2026-11-01
 readingTime: 6
 locale: "pt"
 translationKey: "como-economizar-nas-ferias-de-julho-sem-abrir-mao-da"

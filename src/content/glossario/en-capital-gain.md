@@ -43,7 +43,7 @@ Capital gain is the profit you make when you sell something for more than you pa
 
 ## How to calculate?
 
-**Capital Gain = Selling Price - Purchase Price - [Costs](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide)**
+**Capital Gain = Selling [Price](/en/posts/en-how-to-use-a-loan-simulator-to-plan-your-financial-future-in) - Purchase Price - [Costs](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide)**
 
 Costs include: brokerage, fees, renovations (real estate), etc.
 

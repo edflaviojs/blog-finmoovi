@@ -45,7 +45,7 @@ Tudo isso acontece em poucos cliques, sem precisar sair de casa. O ponto crucial
 ### Riscos  
 - **Pressão do tempo**: o prazo curto pode levar a decisões precipitadas.  
 - **Condição do bem**: nem sempre há garantia de que o item esteja em perfeito estado; é preciso ler a descrição com atenção.  
-- **Custos adicionais**: taxas da plataforma, impostos e despesas de transporte podem reduzir a economia aparente.  
+- **Custos adicionais**: taxas da plataforma, impostos e despesas de transporte podem reduzir a [economia](/glossario/economia) aparente.  
 
 ![Vantagens e riscos de participar de leilões  ](/images/glossario/leilao-inline-3.webp)
 
@@ -54,25 +54,25 @@ Tudo isso acontece em poucos cliques, sem precisar sair de casa. O ponto crucial
 ## Dicas práticas para não errar no leilão  
 **Dica prática:** antes de dar o primeiro lance, pesquise o preço médio do bem em lojas ou sites de classificados. Isso cria um teto de gasto realista.  
 
-**Dica prática:** defina um limite máximo de lance e mantenha‑se firme. Use a funcionalidade de alerta de orçamento do seu app de finanças para ser avisado quando estiver próximo do limite.  
+**Dica prática:** defina um limite máximo de lance e mantenha‑se firme. Use a funcionalidade de alerta de orçamento do seu app de [finanças](/glossario/financas) para ser avisado quando estiver próximo do limite.  
 
 **Dica prática:** aproveite o recurso de foto de nota ou voz para registrar imediatamente o valor pago e a data da compra, facilitando o controle futuro.  
 
 ## Como o FinMoovi pode transformar sua experiência com leilões  
 O FinMoovi não é só um gerenciador de despesas; ele tem ferramentas que tornam a participação em leilões mais segura e organizada.  
 
-- **Captura inteligente**: ao ganhar um leilão, tire uma foto da nota fiscal ou grave um áudio descrevendo o bem. O app reconhece automaticamente o valor, a data e a categoria (ex.: “eletrodoméstico”).  
+- **[Captura inteligente](/posts/cansado-de-perder-horas-nas-planilhas-como-o-finmoovi)**: ao ganhar um leilão, tire uma foto da nota fiscal ou grave um áudio descrevendo o bem. O app reconhece automaticamente o valor, a data e a categoria (ex.: “eletrodoméstico”).  
 - **Multimoeda**: se o leilão for internacional, o FinMoovi converte o valor para a sua moeda principal, mantendo tudo em um único painel.  
-- **Fluxo de caixa e relatórios**: veja como a compra impacta seu orçamento mensal, com gráficos que mostram a proporção de gastos em “bens duráveis”.  
+- **[Fluxo de caixa](/glossario/fluxo-de-caixa) e relatórios**: veja como a compra impacta seu orçamento mensal, com gráficos que mostram a proporção de gastos em “bens duráveis”.  
 - **Planejamento mensal / metas**: crie uma meta de “economizar o equivalente a duas vezes o preço de um café por dia” para participar de leilões sem comprometer outras despesas.  
 - **Cartões de crédito / fatura**: registre a fatura do leilão e receba alertas de vencimento, evitando juros inesperados.  
-- **Modo compras**: adicione o item leiloado à sua lista de compras; o app soma o total em tempo real, mostrando quanto ainda cabe no seu orçamento.  
+- **Modo compras**: adicione o item leiloado à sua [lista de compras](/glossario/lista-de-compras); o app soma o total em tempo real, mostrando quanto ainda cabe no seu orçamento.  
 - **Lembretes / alertas de saldo**: receba notificações quando o saldo da conta vinculada ao leilão estiver baixo, evitando surpresas na hora do pagamento.  
 - **Offline / PWA / sincronização**: mesmo sem internet, você pode registrar o lance e a nota; ao reconectar, tudo se sincroniza automaticamente.  
 
 ## Estratégias para usar leilões como ferramenta de economia  
 1. **Planeje com antecedência**: defina quanto você pode destinar a compras de leilão a cada mês. Use o recurso de metas do FinMoovi para bloquear esse valor.  
-2. **Acompanhe lances em tempo real**: ative as notificações push para ser avisado quando alguém superar seu lance. Isso permite reagir rapidamente sem precisar ficar grudado na tela.  
+2. **Acompanhe lances em tempo real**: ative as [notificações push](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto) para ser avisado quando alguém superar seu lance. Isso permite reagir rapidamente sem precisar ficar grudado na tela.  
 3. **Analise o custo total**: inclua taxas, frete e possíveis reparos no cálculo. O FinMoovi pode somar esses custos automaticamente ao registrar a nota ou o áudio.  
 
 ## Quando vale a pena escolher leilão ao invés de compra tradicional  

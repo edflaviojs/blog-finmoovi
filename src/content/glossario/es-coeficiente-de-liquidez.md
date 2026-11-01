@@ -19,10 +19,10 @@ seo:
 ---
 
 ## ¿Por qué siempre te falta dinero al final del mes?
-Te levantas, pagas la renta, la luz, el internet y, de repente, el saldo de tu cuenta parece evaporarse. Te preguntas dónde se fue el dinero que tenías para la compra del supermercado o para ese café que te tomas cada mañana. La sensación de no saber si podrás cubrir un gasto inesperado, como una reparación del auto o una visita al médico, es más común de lo que crees. Lo que necesitas es una forma sencilla de medir cuán rápido puedes convertir lo que tienes en efectivo sin quedarte sin liquidez.
+Te levantas, pagas la renta, la luz, el internet y, de repente, el saldo de tu cuenta parece evaporarse. Te preguntas dónde se fue el dinero que tenías para la compra del supermercado o para ese café que te tomas cada mañana. La sensación de no saber si podrás cubrir un gasto inesperado, como una reparación del auto o una visita al médico, es más común de lo que crees. Lo que necesitas es una forma sencilla de medir cuán rápido puedes convertir lo que tienes en efectivo sin quedarte sin [liquidez](/es/glossario/es-liquidez).
 
 ## Qué es el coeficiente de liquidez y por qué importa
-El coeficiente de liquidez es una medida que indica la capacidad que tienes para pagar tus obligaciones de corto plazo usando solo tus activos más fáciles de convertir en efectivo. En palabras simples, te dice si, en caso de una emergencia, puedes cubrir tus cuentas sin tener que vender algo que no sea fácil de liquidar, como una casa o una inversión a largo plazo.
+El coeficiente de liquidez es una medida que indica la capacidad que tienes para pagar tus obligaciones de corto plazo usando solo tus activos más fáciles de convertir en efectivo. En palabras simples, te dice si, en caso de una emergencia, puedes cubrir tus cuentas sin tener que vender algo que no sea fácil de liquidar, como una casa o una [inversión](/es/glossario/es-inversion) a largo plazo.
 
 ![¿Por qué siempre te falta dinero al final del mes?](/images/glossario/quociente-de-liquidez-inline-1.webp)
 
@@ -52,20 +52,20 @@ Una vez que tengas esos números, la fórmula es sencilla:
 **Consejo práctico:** Evita usar tarjetas de crédito para compras que no puedas pagar al final del mes. Cada gasto pendiente aumenta tus pasivos a corto plazo y baja tu coeficiente.
 
 ## Cómo FinMoovi te ayuda a controlar tu liquidez en tiempo real
-Imagina que, en lugar de anotar a mano cada recibo, tomas una foto con tu teléfono y la app lo categoriza automáticamente. FinMoovi lo hace con su función de captura inteligente: basta con fotografiar o dictar el recibo y la aplicación lo clasifica (alimentación, transporte, ocio, etc.) sin que tengas que mover un dedo.
+Imagina que, en lugar de anotar a mano cada recibo, tomas una foto con tu teléfono y la app lo categoriza automáticamente. FinMoovi lo hace con su función de [captura inteligente](/es/posts/es-cansado-de-perder-horas-en-hojas-de-calculo-asi-finmoovi-lo): basta con fotografiar o dictar el recibo y la aplicación lo clasifica (alimentación, transporte, ocio, etc.) sin que tengas que mover un dedo.
 
 - **Multimoneda:** Si viajas o recibes ingresos en diferentes divisas, FinMoovi los muestra en una sola vista, convirtiéndolos al tipo de cambio del día. Así sabes exactamente cuánto tienes disponible sin sorpresas.
-- **Flujo de caja e informes:** La app genera un reporte visual de tus ingresos y egresos, resaltando cuánto de tu dinero está realmente disponible para emergencias.
+- **[Flujo de caja](/es/glossario/es-flujo-de-caja) e informes:** La app genera un reporte visual de tus ingresos y egresos, resaltando cuánto de tu dinero está realmente disponible para emergencias.
 - **Planificación mensual y metas:** Puedes fijar una meta de “coeficiente de liquidez ≥ 1,2” y FinMoovi te avisa cada vez que te alejas de ese objetivo.
 - **Tarjetas de crédito y facturación:** Vincula tus tarjetas y la app te muestra el saldo pendiente, la fecha de corte y el pago mínimo, ayudándote a no sobrepasar tu capacidad de pago.
 - **Modo compras:** Crea una lista de la compra y, mientras vas marcando productos, la app muestra el total en tiempo real, evitando que el gasto supere lo que tienes disponible.
-- **Recordatorios y alertas de saldo:** Recibes notificaciones cuando tu saldo cae bajo un umbral que tú defines, por ejemplo, “avísame si mi efectivo disponible es menor al equivalente de dos alquileres”.
+- **Recordatorios y [alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no) de saldo:** Recibes notificaciones cuando tu saldo cae bajo un umbral que tú defines, por ejemplo, “avísame si mi efectivo disponible es menor al equivalente de dos alquileres”.
 - **Offline / PWA / sincronización:** Incluso sin conexión, puedes seguir registrando gastos; cuando vuelvas a estar online, todo se sincroniza automáticamente.
 
 ## Paso a paso para calcular tu coeficiente con FinMoovi
 1. Abre la app y ve a la sección **“Activos”**. Allí verás el total de tus cuentas bancarias, fondos de emergencia y cualquier inversión que hayas vinculado.
 2. Dirígete a **“Pasivos”** y revisa las deudas con vencimiento próximo. FinMoovi ya las agrupa por fecha de pago.
-3. En la pestaña **“Indicadores”**, encontrarás el **coeficiente de liquidez** calculado al instante. Si está por debajo de 1, la app te sugiere acciones específicas (como crear una meta de ahorro o renegociar una deuda).
+3. En la pestaña **“Indicadores”**, encontrarás el **coeficiente de liquidez** calculado al instante. Si está por debajo de 1, la app te sugiere [acciones](/es/glossario/es-acciones) específicas (como crear una meta de ahorro o renegociar una deuda).
 4. Usa la función **“Meta mensual”** para establecer un objetivo de coeficiente y recibe alertas cada vez que te acercas o te alejas de él.
 
 ## Errores comunes y cómo evitarlos

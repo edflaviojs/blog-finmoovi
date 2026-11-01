@@ -33,7 +33,7 @@ The euro zone, or **Eurozone**, is a bloc of European countries that have adopte
 - **Exchange rate** – the price of one euro relative to your currency. It fluctuates every minute in the market.
 - **Spread** – the margin that banks and card operators add to the official rate. This is where the “surprise cost” usually appears.
 
-These two factors directly affect your purchasing power and the way you control cash flow. If you don’t track the exchange rate or don’t have an automatic record of expenses in euros, your monthly planning can backfire.
+These two factors directly affect your purchasing power and the way you control [cash flow](/en/glossario/en-cash-flow). If you don’t track the exchange rate or don’t have an automatic record of expenses in euros, your monthly [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) can backfire.
 
 ## How FinMoovi Turns This Chaos Into Clarity
 
@@ -55,7 +55,7 @@ FinMoovi accepts several currencies simultaneously (USD, EUR, your local currenc
 
 ### Cash flow, reports and monthly goals
 
-With the data already categorized, the app generates visual reports: pie charts that show how much of your budget was consumed by “Travel” versus “Food”. You can set goals, such as “don’t spend more than twice the cost of a typical dinner”, and receive alerts when you’re close to the limit.
+With the data already categorized, the app generates visual [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end): pie charts that show how much of your budget was consumed by “Travel” versus “Food”. You can set goals, such as “don’t spend more than twice the cost of a typical dinner”, and receive alerts when you’re close to the limit.
 
 ### Cards, accounts and shopping mode
 
@@ -65,20 +65,20 @@ With the data already categorized, the app generates visual reports: pie charts 
 ### Reminders, alerts and offline use
 
 - **Balance alerts** – notification when the account gets close to the limit.
-- **Payment reminders** – avoids interest and fees.
+- **Payment reminders** – avoids [interest](/en/glossario/en-interest) and fees.
 - **Offline mode** – works as a Progressive Web App (PWA); you can record expenses even without internet and, when you reconnect, everything syncs.
 
 ## Three Practical Tips to Avoid Being Caught Off Guard in the Euro Zone
 
 **Practical tip:** Always check the exchange rate in the app before finalizing a purchase. FinMoovi shows the official rate + your operator’s spread, so you know exactly how much you’re paying.
 
-**Practical tip:** Use the “shopping list” feature when planning a trip. Add items like “souvenir (30 euros)” or “museum entry (15 euros)”. The app adds everything up in real time, allowing you to adjust the itinerary if the total exceeds what you set aside.
+**Practical tip:** Use the “[shopping list](/en/glossario/en-shopping-list)” feature when planning a trip. Add items like “souvenir (30 euros)” or “museum entry (15 euros)”. The app adds everything up in real time, allowing you to adjust the itinerary if the total exceeds what you set aside.
 
 **Practical tip:** Set a “daily euro spending” alert. When the limit is reached, FinMoovi sends a notification, helping you control the budget without opening spreadsheets.
 
 ## Why the Euro Zone Matters for Your Wallet
 
-Even if you’ve never set foot in a European country, the euro zone influences the global economy. Many international transactions (imports, investments, business trips) are quoted in euros. Understanding how the currency works and having precise control over conversions prevents you from paying more than you should on online purchases, international service subscriptions, or even money transfers to family members.
+Even if you’ve never set foot in a European country, the euro zone influences the global [economy](/en/glossario/en-economy). Many international transactions (imports, investments, business trips) are quoted in euros. Understanding how the currency works and having precise control over conversions prevents you from paying more than you should on online purchases, international service subscriptions, or even money transfers to family members.
 
 Moreover, the euro zone usually has monetary policies different from those of the US or the United Kingdom. When the European Central Bank (ECB) decides to change interest rates, the exchange rate can react quickly, impacting the value of your euro‑denominated expenses. An app that tracks these variations in real time, like FinMoovi, turns a potential risk into useful information.
 

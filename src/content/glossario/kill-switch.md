@@ -20,13 +20,13 @@ seo:
 
 ## O que é um “kill switch” e por que você já deve se preocupar
 
-Um “kill switch” (ou “interruptor de emergência”) é um recurso que permite desligar ou bloquear instantaneamente o acesso a uma conta, aplicativo ou serviço quando algo suspeito acontece. Imagine que você recebeu um alerta de que alguém tentou usar seu cartão de crédito em um site desconhecido. Com um kill switch, você pode, num clique, impedir que aquela transação siga adiante, congelar o cartão ou bloquear o aplicativo que está sendo usado. É como ter um botão de pânico financeiro: ao apertá‑lo, tudo que poderia gerar prejuízo é imediatamente interrompido.
+Um “kill switch” (ou “interruptor de emergência”) é um recurso que permite desligar ou bloquear instantaneamente o acesso a uma conta, aplicativo ou serviço quando algo suspeito acontece. Imagine que você recebeu um alerta de que alguém tentou usar seu [cartão de crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena) em um site desconhecido. Com um kill switch, você pode, num clique, impedir que aquela transação siga adiante, congelar o cartão ou bloquear o aplicativo que está sendo usado. É como ter um botão de pânico financeiro: ao apertá‑lo, tudo que poderia gerar prejuízo é imediatamente interrompido.
 
 ![O que é um “kill switch” e por que você já deve se preocupar](/images/glossario/kill-switch-inline-1.webp)
 
 
 
-Esse mecanismo surgiu nos setores de tecnologia e segurança da informação, mas hoje está se espalhando para o mundo das finanças pessoais, porque a gente tem cada vez mais contas, cartões e apps conectados. Se você já perdeu tempo tentando cancelar uma compra fraudulenta ou ficou sem saber como parar um débito automático que não reconhece, sabe o quanto a falta de um “kill switch” pode ser frustrante e caro.
+Esse mecanismo surgiu nos setores de tecnologia e segurança da informação, mas hoje está se espalhando para o mundo das [finanças](/glossario/financas) pessoais, porque a gente tem cada vez mais contas, cartões e apps conectados. Se você já perdeu tempo tentando cancelar uma compra fraudulenta ou ficou sem saber como parar um débito automático que não reconhece, sabe o quanto a falta de um “kill switch” pode ser frustrante e caro.
 
 ## Como o kill switch funciona na prática
 
@@ -52,11 +52,11 @@ Em resumo, o kill switch funciona como aquele amigo que, ao ver você prestes a 
 
 ## Como o FinMoovi incorpora o kill switch e muito mais
 
-O FinMoovi não é só um app de controle de gastos; ele traz um conjunto de ferramentas que, juntas, formam um verdadeiro “cofre digital” para o seu dinheiro. Veja como ele usa o kill switch e outras funcionalidades que facilitam a vida:
+O FinMoovi não é só um app de [controle de gastos](/glossario/controle-de-gastos); ele traz um conjunto de ferramentas que, juntas, formam um verdadeiro “cofre digital” para o seu dinheiro. Veja como ele usa o kill switch e outras funcionalidades que facilitam a vida:
 
-- **Captura inteligente**: tire foto da nota fiscal ou grave a voz descrevendo o gasto; o app reconhece o valor e a categoria automaticamente.  
+- **[Captura inteligente](/posts/cansado-de-perder-horas-nas-planilhas-como-o-finmoovi)**: tire foto da nota fiscal ou grave a voz descrevendo o gasto; o app reconhece o valor e a categoria automaticamente.  
 - **Multimoeda**: registre despesas em diferentes moedas (real, dólar, euro) e veja tudo convertido em tempo real, ideal para quem viaja ou faz compras internacionais.  
-- **Fluxo de caixa e relatórios**: visualize entradas e saídas em gráficos claros, identifique onde o dinheiro está escapando.  
+- **[Fluxo de caixa](/glossario/fluxo-de-caixa) e relatórios**: visualize entradas e saídas em gráficos claros, identifique onde o dinheiro está escapando.  
 - **Planejamento mensal e metas**: defina quanto quer economizar por mês e acompanhe o progresso com alertas.  
 - **Cartões de crédito e fatura**: importe as faturas, veja o limite disponível e receba lembretes de pagamento.  
 - **Modo compras**: crie listas de supermercado, veja o total acumulado em tempo real e evite estourar o orçamento.  
@@ -75,7 +75,7 @@ O FinMoovi não é só um app de controle de gastos; ele traz um conjunto de fer
 
 ## Como o kill switch protege seu planejamento financeiro
 
-Imagine que você definiu a meta de economizar o equivalente a duas vezes o preço de um café por dia. Se, de repente, um pagamento automático de assinatura de streaming for cobrado duas vezes, isso pode comprometer sua meta. O kill switch age como um filtro: ele para a cobrança antes que ela apareça no seu extrato, permitindo que você mantenha o plano de economia intacto.
+Imagine que você definiu a meta de economizar o equivalente a duas vezes o preço de um café por dia. Se, de repente, um pagamento automático de assinatura de streaming for cobrado duas vezes, isso pode comprometer sua meta. O kill switch age como um filtro: ele para a cobrança antes que ela apareça no seu extrato, permitindo que você mantenha o plano de [economia](/glossario/economia) intacto.
 
 Além disso, o FinMoovi gera relatórios mensais que mostram o impacto de cada bloqueio. Você pode ver quantas vezes o kill switch foi acionado e quanto dinheiro foi “salvo”. Essa visualização ajuda a ajustar seu orçamento, reduzindo a dependência de serviços que geram cobranças inesperadas.
 

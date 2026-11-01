@@ -19,10 +19,10 @@ seo:
 ---
 
 ## O que é o Ibovespa e por que ele aparece na sua conversa sobre dinheiro  
-O Ibovespa é o principal índice da bolsa de valores do país. Ele reúne as ações das empresas mais negociadas e serve como termômetro da saúde do mercado acionário. Quando a gente ouve que o Ibovespa subiu 2 % num dia, isso significa que, em média, as ações das maiores companhias ficaram mais caras. Não é preciso ser especialista para entender que, se você tem dinheiro investido em ações, esse índice influencia diretamente o valor da sua carteira.
+O Ibovespa é o principal índice da [bolsa de valores](/glossario/bolsa-de-valores) do país. Ele reúne as ações das empresas mais negociadas e serve como termômetro da saúde do mercado acionário. Quando a gente ouve que o Ibovespa subiu 2 % num dia, isso significa que, em média, as ações das maiores companhias ficaram mais caras. Não é preciso ser especialista para entender que, se você tem dinheiro investido em ações, esse índice influencia diretamente o valor da sua carteira.
 
 ## Por que você sente que está perdendo dinheiro ao não entender o Ibovespa  
-Muita gente sente que está “no escuro” quando vê notícias sobre alta ou queda do Ibovespa e não sabe como isso afeta o seu bolso. Você pode estar guardando dinheiro para a viagem dos sonhos, para a entrada da casa própria ou simplesmente para ter uma reserva de emergência, e ainda assim não conseguir decidir se vale a pena comprar ações ou ficar com a poupança. Essa falta de clareza gera ansiedade e, muitas vezes, decisões baseadas em medo ou em boatos.
+Muita gente sente que está “no escuro” quando vê notícias sobre alta ou queda do Ibovespa e não sabe como isso afeta o seu bolso. Você pode estar guardando dinheiro para a viagem dos sonhos, para a entrada da casa própria ou simplesmente para ter uma [reserva de emergência](/ferramentas/calculadora-reserva), e ainda assim não conseguir decidir se vale a pena comprar ações ou ficar com a poupança. Essa falta de clareza gera ansiedade e, muitas vezes, decisões baseadas em medo ou em boatos.
 
 ![O que é o Ibovespa e por que ele aparece na sua conversa sobre dinheiro  ](/images/glossario/ibovespa-inline-1.webp)
 
@@ -44,14 +44,14 @@ Entender o movimento do índice ajuda a:
 
 - **Tomar decisões de investimento mais conscientes:** você sabe quando o mercado está caro ou barato.  
 - **Planejar o longo prazo:** se o índice tende a subir ao longo dos anos, investir regularmente pode gerar um “efeito bola de neve”.  
-- **Avaliar risco:** períodos de alta volatilidade (subidas e descidas bruscas) indicam que é preciso ter uma reserva de emergência maior.
+- **Avaliar risco:** períodos de alta volatilidade (subidas e descidas bruscas) indicam que é preciso ter uma [reserva de emergência](/glossario/reserva-de-emergencia) maior.
 
 ## Como o FinMoovi transforma o acompanhamento do Ibovespa em algo simples  
-Imagine que você acabou de receber o extrato da sua conta corrente e vê várias despesas: um aluguel, um café por dia, um plano de saúde. Você quer saber se tem espaço para investir no Ibovespa, mas não sabe por onde começar. O FinMoovi resolve isso em poucos passos:
+Imagine que você acabou de receber o extrato da sua conta corrente e vê várias despesas: um [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026), um café por dia, um [plano de saúde](/glossario/plano-de-saude). Você quer saber se tem espaço para investir no Ibovespa, mas não sabe por onde começar. O FinMoovi resolve isso em poucos passos:
 
 - **Captura inteligente:** tire uma foto da nota ou grave a voz dizendo “gastei 30 no supermercado”. O app reconhece o valor e a categoria automaticamente.  
 - **Multimoeda:** se você recebe parte do salário em outra moeda, o app converte tudo para a mesma base, facilitando a visualização do seu poder de compra.  
-- **Fluxo de caixa e relatórios:** veja, em gráficos claros, quanto entra e sai por mês, e compare com a variação do Ibovespa.  
+- **[Fluxo de caixa](/glossario/fluxo-de-caixa) e relatórios:** veja, em gráficos claros, quanto entra e sai por mês, e compare com a variação do Ibovespa.  
 - **Planejamento mensal / metas:** defina que quer investir o equivalente a “um aluguel” por mês no índice e o app avisa quando estiver próximo da meta.  
 - **Cartões de crédito / fatura:** registre as compras e o app avisa se o limite está perto de estourar, evitando juros que corroem seu potencial de investimento.  
 - **Modo compras:** crie listas de supermercado; o total aparece em tempo real, ajudando a não ultrapassar o orçamento.  

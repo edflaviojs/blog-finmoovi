@@ -8,6 +8,7 @@ locale: "pt"
 tags: ["viagem","controle de gastos","multi‑moeda","FinMoovi","finanças pessoais","orçamento viagem","app financeiro","multimoeda","viagens","financeiro","finmoovi"]
 author: "FinMoovi"
 publishedAt: 2026-07-15
+updatedAt: 2026-11-01
 readingTime: 6
 featured: false
 translationKey: "voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas"

@@ -21,7 +21,8 @@ tags:
   - pgbl ou vgbl
   - previdência ou investir
 author: FinMoovi
-publishedAt: 2026-07-22T00:00:00.000Z
+publishedAt: 2026-07-22
+updatedAt: 2026-11-01T00:00:00.000Z
 readingTime: 6
 featured: false
 translationKey: previdencia-privada-2026-vale-a-pena-guia-pratico

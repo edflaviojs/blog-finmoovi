@@ -9,6 +9,7 @@ locale: "pt"
 tags: ["investir","quitar dívidas","finanças pessoais","planejamento financeiro","FinMoovi","juros compostos","dívida boa","investir ou pagar dívida"]
 author: "FinMoovi"
 publishedAt: 2026-07-31
+updatedAt: 2026-11-01
 readingTime: 7
 featured: false
 translationKey: "investir-vs-quitar-dividas-qual-vale-mais-a-pena-em-2026"

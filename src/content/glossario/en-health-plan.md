@@ -24,7 +24,7 @@ You just opened the health plan bill and the amount is almost the same as the re
 
 ![What Happens When the Health Plan Bill Arrives Unexpectedly](/images/glossario/plano-de-saude-inline-1.webp)
 
-This is where FinMoovi comes in. Imagine being able to take a photo of the health plan boleto as soon as it lands in your inbox or receive a voice payment notification and, in seconds, the app already classifies the expense as “Health – Plan”. Not only that, it converts the amount to the currency you use daily, shows how this expense fits into your cash flow and even warns you if the total is close to the limit you set for health expenses. All of this without having to open spreadsheets or write things down by hand.
+This is where FinMoovi comes in. Imagine being able to take a photo of the health plan boleto as soon as it lands in your inbox or receive a voice payment notification and, in seconds, the app already classifies the [expense](/en/glossario/en-expense) as “Health – Plan”. Not only that, it converts the amount to the currency you use daily, shows how this expense fits into your [cash flow](/en/glossario/en-cash-flow) and even warns you if the total is close to the limit you set for health expenses. All of this without having to open spreadsheets or write things down by hand.
 
 ## How the Health Plan Works
 
@@ -38,7 +38,7 @@ The monthly fee can vary according to age, region and level of coverage (outpati
 
 ## Why the Cost Can Get Out of Control
 
-- **Annual adjustments** – operators usually raise the monthly fee based on medical inflation indexes, which can be far higher than general price increases.
+- **Annual adjustments** – operators usually raise the monthly fee based on medical [inflation](/en/glossario/en-inflation) indexes, which can be far higher than general price increases.
 - **Co‑participation** – if you use the plan a lot, the service fees can add up to almost the same as the monthly fee.
 - **Limited coverage** – some plans don’t cover certain procedures, making you pay separately and confusing the final bill.
 
@@ -81,9 +81,9 @@ Without constant monitoring, these details go unnoticed and end up compromising 
 
 ## When to Switch Plans
 
-- **Increase above 10 %**: if the annual adjustment is more than 10 % of your monthly income, it’s worth researching alternatives.
+- **Increase above 10 %**: if the annual adjustment is more than 10 % of your [monthly income](/en/glossario/en-monthly-income), it’s worth researching [alternatives](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your).
 - **Excessive co‑participation use**: if the sum of co‑participation fees exceeds 20 % of your monthly fee, consider a plan with broader coverage.
-- **Life changes**: marriage, children or moving to another city may require a plan with different coverage.
+- **Life changes**: [marriage](/en/posts/en-budget-for-couples-dividing-expenses), children or moving to another city may require a plan with different coverage.
 
 ## Start Today
 

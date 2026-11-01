@@ -9,6 +9,7 @@ locale: "pt"
 tags: ["poupar dinheiro dicas","finanças pessoais","economia","dinheiro"]
 author: "FinMoovi"
 publishedAt: 2026-07-26
+updatedAt: 2026-11-01
 readingTime: 4
 featured: true
 translationKey: "poupar-dinheiro-dicas-7-habitos-simples-para-2026"

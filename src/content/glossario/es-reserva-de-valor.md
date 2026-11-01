@@ -20,7 +20,7 @@ seo:
 
 ## ¿Por qué el dinero parece desaparecer cada mes?
 
-Te levantas, pagas la luz, el alquiler y el café de la mañana, y al final del mes te preguntas dónde se fue todo. No es que ganes menos, es que no tienes una forma clara de proteger lo que ganas contra la inflación y los imprevistos. Esa sensación de que el dinero “se escapa” es el punto de partida para entender la **reserva de valor**, el concepto que te ayuda a que tu poder de compra no se degrade con el tiempo.
+Te levantas, pagas la luz, el alquiler y el café de la mañana, y al final del mes te preguntas dónde se fue todo. No es que ganes menos, es que no tienes una forma clara de proteger lo que ganas contra la [inflación](/es/glossario/es-inflacion) y los imprevistos. Esa sensación de que el dinero “se escapa” es el punto de partida para entender la **reserva de valor**, el concepto que te ayuda a que tu poder de compra no se degrade con el tiempo.
 
 ![¿Por qué el dinero parece desaparecer cada mes?](/images/glossario/reserva-de-valor-inline-1.svg)
 
@@ -45,7 +45,7 @@ Si cumples con esos tres criterios, estás frente a una opción que puede servir
 ## Ejemplos cotidianos de reservas de valor
 
 - **Una cuenta de ahorros con intereses superiores al 3 % anual:** suficiente para que el precio de un alquiler no supere tu saldo.  
-- **Un fondo de inversión en bonos indexados a la inflación:** protege el poder de compra del sueldo.  
+- **Un [fondo de inversión](/es/glossario/es-fondo-de-inversion) en bonos indexados a la inflación:** protege el poder de compra del sueldo.  
 - **Una pequeña cantidad de oro físico guardado en casa:** el precio de un café al día no lo hace inaccesible, pero sí le da valor de refugio.  
 
 ## Por qué la mayoría de la gente falla
@@ -58,7 +58,7 @@ FinMoovi es como ese amigo que siempre tiene una hoja de cálculo lista, pero mu
 
 - **Captura inteligente:** Con una foto del recibo o un mensaje de voz, la app registra automáticamente el gasto y lo categoriza. Ya no tienes que anotar a mano cada compra de supermercado.  
 - **Multimoneda:** Puedes manejar tus finanzas en diferentes monedas (USD, EUR, etc.) sin preocuparte por conversiones manuales. Ideal si recibes ingresos en una moneda y gastas en otra.  
-- **Flujo de caja e informes:** Visualiza en tiempo real cuánto entra, sale y cuánto queda disponible para tu reserva.  
+- **[Flujo de caja](/es/glossario/es-flujo-de-caja) e informes:** Visualiza en tiempo real cuánto entra, sale y cuánto queda disponible para tu reserva.  
 - **Planificación mensual y metas:** Define una meta de “reserva de valor” equivalente a tres meses de alquiler y la app te muestra el progreso.  
 - **Tarjetas de crédito y facturación:** Vincula tus tarjetas y la app categoriza automáticamente cada compra, evitando sorpresas al cierre de mes.  
 - **Modo compras:** Crea listas de la compra y ve el total en tiempo real, evitando excedentes que drenen tu reserva.  
@@ -67,11 +67,11 @@ FinMoovi es como ese amigo que siempre tiene una hoja de cálculo lista, pero mu
 
 ## **Consejo práctico:** Define una meta concreta
 
-En vez de “quiero ahorrar”, pon un objetivo medible: “Reservar el equivalente a dos alquileres en los próximos seis meses”. FinMoovi te mostrará cuánto debes apartar cada semana y te enviará recordatorios.
+En vez de “quiero [ahorrar](/es/posts/es-ahorra-en-la-farmacia-sin-sacrificios-guia-practica-2026)”, pon un objetivo medible: “Reservar el equivalente a dos alquileres en los próximos seis meses”. FinMoovi te mostrará cuánto debes apartar cada semana y te enviará recordatorios.
 
 ## **Consejo práctico:** Automatiza la captura de gastos recurrentes
 
-Configura la captura inteligente para facturas de servicios (luz, internet). Cada vez que recibas el recibo, simplemente toma una foto y la app lo clasificará como gasto fijo, permitiéndote ver cuánto queda disponible para tu reserva.
+Configura la captura inteligente para facturas de servicios (luz, internet). Cada vez que recibas el recibo, simplemente toma una foto y la app lo clasificará como [gasto fijo](/es/glossario/es-gasto-fijo), permitiéndote ver cuánto queda disponible para tu reserva.
 
 ## **Consejo práctico:** Revisa tu informe mensual y ajusta la meta
 
@@ -87,7 +87,7 @@ Al final de cada mes, abre el informe de flujo de caja. Si notas que gastaste m�
 
 ## Beneficios de una reserva de valor bien gestionada
 
-- **Seguridad financiera:** En caso de una emergencia, tienes fondos que no se han devaluado.  
+- **[Seguridad financiera](/es/posts/es-7-mejores-apps-de-control-financiero-2026-guia-completa-para):** En caso de una emergencia, tienes fondos que no se han devaluado.  
 - **Tranquilidad mental:** Sabes que tu poder de compra está protegido contra la inflación.  
 - **Flexibilidad:** Puedes usar la reserva para inversiones mayores (casa, coche) sin comprometer tu día a día.  
 

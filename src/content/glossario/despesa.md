@@ -20,7 +20,7 @@ seo:
 
 ## O que é despesa e por que ela parece sempre escapar do controle  
 
-Você já chegou ao fim do mês e percebeu que o dinheiro acabou antes de pagar tudo que precisava? A culpa costuma cair sobre a “despesa inesperada”, mas, na verdade, a maioria das vezes a gente simplesmente não tem clareza do que está gastando. Despesa é todo o dinheiro que sai da sua conta para adquirir algo ou pagar um serviço – seja o aluguel, a conta de luz, aquele lanche rápido ou a assinatura de streaming. Não importa se o valor é grande ou pequeno; tudo conta no balanço final. Quando você entende exatamente onde cada centavo vai, fica muito mais fácil evitar surpresas desagradáveis.
+Você já chegou ao fim do mês e percebeu que o dinheiro acabou antes de pagar tudo que precisava? A culpa costuma cair sobre a “despesa inesperada”, mas, na verdade, a maioria das vezes a gente simplesmente não tem clareza do que está gastando. Despesa é todo o dinheiro que sai da sua conta para adquirir algo ou pagar um serviço – seja o [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026), a conta de luz, aquele lanche rápido ou a assinatura de streaming. Não importa se o valor é grande ou pequeno; tudo conta no balanço final. Quando você entende exatamente onde cada centavo vai, fica muito mais fácil evitar surpresas desagradáveis.
 
 ![O que é despesa e por que ela parece sempre escapar do controle  ](/images/glossario/despesa-inline-1.webp)
 
@@ -30,7 +30,7 @@ Você já chegou ao fim do mês e percebeu que o dinheiro acabou antes de pagar 
 
 Depois de perceber que o dinheiro some, o próximo passo é separar as despesas em categorias que façam sentido no seu dia a dia.  
 
-- **Despesas fixas:** pagamentos que acontecem todo mês com o mesmo valor ou quase o mesmo, como aluguel, plano de celular, internet ou financiamento.  
+- **Despesas fixas:** pagamentos que acontecem todo mês com o mesmo valor ou quase o mesmo, como aluguel, plano de celular, internet ou [financiamento](/glossario/financiamento).  
 - **Despesas variáveis:** custos que mudam de acordo com o consumo, como conta de energia, supermercado, combustível ou compras de roupa.  
 - **Despesas ocasionais:** gastos que aparecem de vez em quando, como manutenção do carro, presente de aniversário ou viagem de fim de semana.  
 
@@ -46,9 +46,9 @@ Muitos de nós anotamos só o que parece importante – a fatura do cartão, o a
 
 ## Como o FinMoovi transforma a captura de despesas em algo simples  
 
-Imagine que, ao receber a conta de luz, você tira uma foto com o celular e, em segundos, o app reconhece o valor, a data e já coloca a despesa na categoria “energia”. Ou que, ao pagar o supermercado, basta falar “gastei 150 na compra de alimentos” e o FinMoovi grava tudo automaticamente. Essa **captura inteligente** elimina a necessidade de anotar manualmente e garante que nenhuma despesa fique fora do radar.
+Imagine que, ao receber a conta de luz, você tira uma foto com o celular e, em segundos, o app reconhece o valor, a data e já coloca a despesa na categoria “energia”. Ou que, ao pagar o supermercado, basta falar “gastei 150 na compra de alimentos” e o FinMoovi grava tudo automaticamente. Essa **[captura inteligente](/posts/cansado-de-perder-horas-nas-planilhas-como-o-finmoovi)** elimina a necessidade de anotar manualmente e garante que nenhuma despesa fique fora do radar.
 
-Além disso, o FinMoovi trabalha em **multimoeda**, então se você paga um hotel em euros, faz um pagamento em dólares ou recebe salário em reais, tudo aparece na mesma tela, convertido na taxa que você escolher. O **fluxo de caixa** mostra, em tempo real, quanto entrou e saiu, enquanto os **relatórios** detalhados dão uma visão clara das suas despesas por categoria, período ou moeda.
+Além disso, o FinMoovi trabalha em **multimoeda**, então se você paga um hotel em euros, faz um pagamento em dólares ou recebe salário em reais, tudo aparece na mesma tela, convertido na taxa que você escolher. O **[fluxo de caixa](/glossario/fluxo-de-caixa)** mostra, em tempo real, quanto entrou e saiu, enquanto os **relatórios** detalhados dão uma visão clara das suas despesas por categoria, período ou moeda.
 
 ## Dicas práticas para controlar suas despesas hoje  
 
@@ -60,7 +60,7 @@ Além disso, o FinMoovi trabalha em **multimoeda**, então se você paga um hote
 
 ## Planejamento mensal e metas: o caminho para a tranquilidade financeira  
 
-Com as despesas já registradas, o próximo passo é montar um planejamento mensal. No FinMoovi, você pode criar um **orçamento** definindo quanto quer gastar em cada categoria. O app compara o que foi registrado com o que foi planejado e mostra, em gráficos simples, se você está dentro ou fora do limite. Quando a fatura do cartão de crédito chega, o FinMoovi traz o extrato completo, categoriza cada compra e avisa se o total está próximo do limite estabelecido.
+Com as despesas já registradas, o próximo passo é montar um planejamento mensal. No FinMoovi, você pode criar um **orçamento** definindo quanto quer gastar em cada categoria. O app compara o que foi registrado com o que foi planejado e mostra, em gráficos simples, se você está dentro ou fora do limite. Quando a fatura do cartão de [crédito](/glossario/credito) chega, o FinMoovi traz o extrato completo, categoriza cada compra e avisa se o total está próximo do limite estabelecido.
 
 ## Cartões de crédito e faturas: como evitar o efeito bola de neve  
 
@@ -76,7 +76,7 @@ A vida não para, e às vezes você fica sem internet. O FinMoovi funciona como 
 
 ## Como a visualização de relatórios ajuda a mudar hábitos  
 
-Os relatórios do FinMoovi são apresentados em gráficos de pizza, barras e linhas, tudo muito visual. Por exemplo, ao analisar o gráfico de “Despesas por categoria” de um mês, você pode perceber que gastou o equivalente a duas vezes o preço de um aluguel em restaurantes. Essa constatação pode ser o gatilho para reduzir esse tipo de gasto. O app também permite comparar períodos diferentes, mostrando a evolução dos seus hábitos financeiros.
+Os relatórios do FinMoovi são apresentados em gráficos de pizza, barras e linhas, tudo muito visual. Por exemplo, ao analisar o [gráfico](/glossario/grafico) de “Despesas por categoria” de um mês, você pode perceber que gastou o equivalente a duas vezes o preço de um aluguel em restaurantes. Essa constatação pode ser o gatilho para reduzir esse tipo de gasto. O app também permite comparar períodos diferentes, mostrando a evolução dos seus hábitos financeiros.
 
 ## Comece hoje  
 

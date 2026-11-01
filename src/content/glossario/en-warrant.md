@@ -26,7 +26,7 @@ Imagine you’re scrolling through a tech news site and see a headline: “Compa
 
 
 
-A warrant is basically a contract that gives you the **right, but not the obligation**, to buy (or sometimes sell) a specific asset—usually a stock—at a predetermined price, called the strike price, before a set expiration date. Think of it as a ticket to a concert: you pay a small amount now for the option to attend later at today’s price, even if the concert becomes sold out and the price skyrockets. If the concert never happens, you lose the ticket price, but you’re not forced to buy a seat you don’t want.
+A warrant is basically a contract that gives you the **right, but not the [obligation](/en/glossario/en-obligation)**, to buy (or sometimes sell) a specific asset—usually a stock—at a predetermined price, called the strike price, before a set expiration date. Think of it as a ticket to a concert: you pay a small amount now for the option to attend later at today’s price, even if the concert becomes sold out and the price skyrockets. If the concert never happens, you lose the ticket price, but you’re not forced to buy a seat you don’t want.
 
 ## How warrants differ from other investment tools
 
@@ -55,11 +55,11 @@ Let’s say you love a particular coffee brand that’s currently priced at the 
 Managing a warrant portfolio can feel like juggling receipts, spreadsheets, and random alerts. That’s where FinMoovi steps in, turning chaos into clarity with a few smart features:
 
 - **Smart capture:** Snap a photo of the warrant certificate or record a voice note when you receive a new issuance. FinMoovi reads the details and logs them automatically.
-- **Multi‑currency support:** Whether your warrant is denominated in USD, EUR, or any other currency, the app converts everything to your base view, so you always know the real impact on your net worth.
-- **Cash flow and reports:** See how much you’ve invested in warrants, the potential payoff, and how they fit into your overall cash flow.
-- **Monthly planning / goals:** Set a goal like “Allocate no more than the price of a weekly grocery bill to speculative assets” and let the app warn you when you’re about to exceed it.
+- **[Multi‑currency](/en/posts/en-digital-bank-vs-major-bank-which-is-worth-it-in-2026) support:** Whether your warrant is denominated in USD, EUR, or any other currency, the app converts everything to your base view, so you always know the real impact on your net worth.
+- **[Cash flow](/en/glossario/en-cash-flow) and reports:** See how much you’ve invested in warrants, the potential payoff, and how they fit into your overall cash flow.
+- **Monthly [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) / goals:** Set a goal like “Allocate no more than the price of a weekly grocery bill to speculative assets” and let the app warn you when you’re about to exceed it.
 - **Shopping mode:** When you’re buying a new gadget, add it to a list; FinMoovi shows the real‑time total, including any warrant‑related gains you could use as a budget buffer.
-- **Reminders & balance alerts:** Get notified when a warrant is about to expire or when the underlying stock hits your strike price.
+- **Reminders & balance alerts:** Get notified when a warrant is about to expire or when the [underlying](/en/glossario/en-underlying) stock hits your strike price.
 - **Offline / PWA / sync:** Capture a warrant receipt on a train with no internet, and the data syncs later without missing a beat.
 
 ## Practical tips for using warrants wisely
@@ -79,7 +79,7 @@ Managing a warrant portfolio can feel like juggling receipts, spreadsheets, and 
 ## When a warrant makes sense for you
 
 - **You have a clear thesis:** You truly believe the underlying asset will move significantly before the warrant expires.
-- **You can afford the premium:** The amount you pay for the warrant doesn’t jeopardize your emergency fund or essential expenses.
+- **You can afford the premium:** The amount you pay for the warrant doesn’t jeopardize your [emergency fund](/en/glossario/en-emergency-fund) or essential expenses.
 - **You’re comfortable with the timeline:** Warrants often have longer maturities (1‑5 years), so you need patience and a plan for monitoring them.
 
 If any of these points feel shaky, consider starting with a smaller warrant or using FinMoovi’s “simulation mode” to see how different price scenarios would affect your portfolio before committing real money.

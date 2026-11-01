@@ -30,7 +30,7 @@ When you buy a share you become a partner in a company where you do not sit at t
 
 Weak governance is where the classic problems show up:
 
-- deals between the company and other businesses owned by the same controller, on odd terms
+- [deals](/en/posts/en-the-ultimate-black-friday-2026-guide-shop-smart-without) between the company and other businesses owned by the same controller, on odd terms
 - new share issues that dilute the partners who were already there
 - information reaching the market late, or not at all
 - a board made up only of people close to the controlling owner
@@ -42,7 +42,7 @@ Weak governance is where the classic problems show up:
 | **Transparency** | Disclose what matters, on time, including the bad news |
 | **Fairness** | Treat every partner by the same standard, with no privilege for the controller |
 | **Accountability** | Whoever decides answers for the consequences |
-| **Corporate responsibility** | Run the company for the long term, not just this quarter's number |
+| **Corporate responsibility** | Run the company for the [long](/en/glossario/en-long) term, not just this quarter's number |
 
 ## How it is measured in practice
 
@@ -51,7 +51,7 @@ The mechanisms that move governance from talk to fact:
 - **A board of directors** with **independent** members who owe the controller no favours
 - **An audit committee** and an external auditor, so the numbers have someone checking them
 - **A single class of voting shares**, so whoever has more money in the company has more say
-- **Tag-along rights**: the minority's right to sell at the same price as the controller if the company changes hands
+- **Tag-along rights**: the minority's right to sell at the same [price](/en/posts/en-how-to-use-a-loan-simulator-to-plan-your-financial-future-in) as the controller if the company changes hands
 
 ## Where to check before investing
 

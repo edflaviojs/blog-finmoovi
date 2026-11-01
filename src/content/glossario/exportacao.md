@@ -21,7 +21,7 @@ seo:
 ## O que é exportação e por que ela aparece na sua planilha
 
 Exportar não é só coisa de empresa grande enviando soja ou carros para o exterior.  
-É qualquer operação em que você vende algo – seja um serviço, um produto artesanal ou até mesmo um aluguel de temporada – para quem está fora da sua zona de atuação habitual. Quando o dinheiro entra, ele costuma vir em outra moeda, o que traz desafios de controle e planejamento.
+É qualquer operação em que você vende algo – seja um serviço, um produto artesanal ou até mesmo um [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026) de temporada – para quem está fora da sua zona de atuação habitual. Quando o dinheiro entra, ele costuma vir em outra moeda, o que traz desafios de controle e planejamento.
 
 ![O que é exportação e por que ela aparece na sua planilha](/images/glossario/exportacao-inline-1.webp)
 
@@ -36,11 +36,11 @@ Quando o dinheiro vem de fora, ele entra em duas etapas:
 - **Conversão de moeda** – o valor em dólares, euros ou outra moeda precisa ser convertido para a sua moeda de uso diário. As taxas de câmbio variam, então o valor final pode mudar de um dia para o outro.
 - **Custos adicionais** – taxas de transferência, impostos de importação (quando você compra insumos no exterior) e custos de envio internacional.
 
-Esses fatores alteram o seu fluxo de caixa, que é a movimentação de entrada e saída de dinheiro ao longo do tempo. Se você não registrar cada detalhe, pode acabar “surpreso” ao perceber que o lucro esperado evaporou em taxas.
+Esses fatores alteram o seu [fluxo de caixa](/glossario/fluxo-de-caixa), que é a movimentação de entrada e saída de dinheiro ao longo do tempo. Se você não registrar cada detalhe, pode acabar “surpreso” ao perceber que o lucro esperado evaporou em taxas.
 
 ## Ferramentas que facilitam a gestão da exportação
 
-Hoje em dia, não é preciso ser contador para manter tudo em ordem. Aplicativos de finanças pessoais já vêm equipados com recursos que simplificam a vida de quem exporta. O **FinMoovi**, por exemplo, tem:
+Hoje em dia, não é preciso ser contador para manter tudo em ordem. [Aplicativos](/posts/5-alternativas-ao-mobills-em-2026) de [finanças](/glossario/financas) pessoais já vêm equipados com recursos que simplificam a vida de quem exporta. O **FinMoovi**, por exemplo, tem:
 
 ![Ferramentas que facilitam a gestão da exportação](/images/glossario/exportacao-inline-3.webp)
 
@@ -50,7 +50,7 @@ Hoje em dia, não é preciso ser contador para manter tudo em ordem. Aplicativos
 - **Multimoeda** – registre receitas e despesas em BRL, USD, EUR etc.; o app converte usando a cotação do dia e guarda o histórico.
 - **Fluxo de caixa e relatórios** – veja em tempo real quanto entrou, quanto saiu e qual o saldo disponível, tudo filtrado por moeda ou período.
 - **Planejamento mensal / metas** – defina quanto quer ganhar com exportação no mês e acompanhe o progresso.
-- **Cartões de crédito / fatura** – controle gastos de compra de insumos no exterior, com alertas de vencimento.
+- **Cartões de [crédito](/glossario/credito) / fatura** – controle gastos de compra de insumos no exterior, com alertas de vencimento.
 - **Modo compras** – crie listas de materiais, veja o total em tempo real e evite surpresas na hora de pagar.
 - **Lembretes / alertas de saldo** – notificação quando a conta ficar próxima do limite ou quando a cotação mudar muito.
 - **Offline / PWA / sincronização** – use o app mesmo sem internet e tenha tudo atualizado quando conectar novamente.
@@ -75,7 +75,7 @@ Hoje em dia, não é preciso ser contador para manter tudo em ordem. Aplicativos
 ## Como evitar armadilhas comuns
 
 - **Não ignore as taxas de conversão** – elas podem consumir até 5% do valor recebido. Registre-as como despesas para não perder a noção do lucro real.
-- **Cuidado com a variação cambial** – se o seu cliente paga em moeda que pode desvalorizar, considere fechar a taxa no momento da negociação ou usar um contrato de hedge (um acordo que fixa a taxa).
+- **Cuidado com a variação cambial** – se o seu cliente paga em moeda que pode desvalorizar, considere fechar a taxa no momento da [negociação](/glossario/negociacao) ou usar um contrato de hedge (um acordo que fixa a taxa).
 - **Mantenha documentos organizados** – notas fiscais, comprovantes de pagamento e rastreamento de envio devem ficar guardados no app (via foto) para facilitar a prestação de contas e eventuais auditorias.
 
 ## Benefícios de usar um app tudo-em-um

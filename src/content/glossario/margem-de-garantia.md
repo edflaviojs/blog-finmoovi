@@ -26,7 +26,7 @@ Você já tentou comprar aquele fundo ou ação e, na hora de confirmar, aparece
 
 
 
-A margem de garantia, em termos simples, é o valor que você precisa deixar “em reserva” para cobrir possíveis perdas da operação que está fazendo. Pense nela como o depósito que você deixa ao alugar um apartamento: serve para garantir que, se algo der errado, o dono tem uma segurança. No mercado financeiro, esse “depósito” protege a corretora (e, indiretamente, você) contra oscilações que podem gerar prejuízos maiores que o capital disponível.
+A margem de garantia, em termos simples, é o valor que você precisa deixar “em reserva” para cobrir possíveis perdas da operação que está fazendo. Pense nela como o depósito que você deixa ao alugar um apartamento: serve para garantir que, se algo der errado, o dono tem uma segurança. No [mercado financeiro](/glossario/mercado-financeiro), esse “depósito” protege a corretora (e, indiretamente, você) contra oscilações que podem gerar prejuízos maiores que o capital disponível.
 
 ## O que realmente significa margem de garantia  
 
@@ -45,7 +45,7 @@ Quando você tem várias metas – pagar contas, guardar para a viagem, investir
 
 
 - **Bloqueio invisível:** o valor fica na conta, mas não aparece nos extratos de gastos do dia a dia.  
-- **Impacto nas metas:** se você planeja economizar o equivalente a um aluguel por mês, mas tem 30% desse valor preso como margem, sua meta pode ficar comprometida.  
+- **Impacto nas metas:** se você planeja economizar o equivalente a um [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026) por mês, mas tem 30% desse valor preso como margem, sua meta pode ficar comprometida.  
 - **Risco de margem:** se o mercado se mover rapidamente, a corretora pode pedir “margin call” (chamada de margem), exigindo que você deposite mais dinheiro imediatamente.  
 
 ## Como o FinMoovi deixa tudo mais fácil  
@@ -54,10 +54,10 @@ Aqui entra o **FinMoovi**, aquele app que parece ter sido pensado por um amigo q
 
 - **Captura inteligente:** tire uma foto da nota da corretora ou grave a voz dizendo “margem de 10%”. O app reconhece o valor e já categoriza como “Margem de Garantia – Bloqueada”.  
 - **Multimoeda:** se você opera em diferentes moedas (real, dólar, euro), o FinMoovi converte tudo para a moeda que você escolher, facilitando o acompanhamento.  
-- **Fluxo de caixa e relatórios:** a margem aparece nos relatórios como “valor indisponível”, permitindo que você veja exatamente quanto do seu dinheiro está “preso”.  
+- **[Fluxo de caixa](/glossario/fluxo-de-caixa) e relatórios:** a margem aparece nos relatórios como “valor indisponível”, permitindo que você veja exatamente quanto do seu dinheiro está “preso”.  
 - **Planejamento mensal / metas:** ao criar a meta de “economizar o equivalente a um aluguel”, o app subtrai automaticamente a margem de garantia, mostrando o que realmente pode ser destinado à meta.  
 - **Cartões de crédito / fatura:** a fatura inclui um campo “Margem de Garantia” que avisa quando o limite está comprometido por investimentos.  
-- **Modo compras:** ao fazer a lista de compras, o app soma o total em tempo real e avisa se a margem de garantia pode impedir a compra de algum item caro.  
+- **Modo compras:** ao fazer a [lista de compras](/glossario/lista-de-compras), o app soma o total em tempo real e avisa se a margem de garantia pode impedir a compra de algum item caro.  
 - **Lembretes / alertas de saldo:** recebe notificação quando a margem está próxima do limite máximo ou quando houver risco de margin call.  
 - **Offline / PWA / sincronização:** mesmo sem internet, você registra a margem e, ao reconectar, tudo se atualiza automaticamente.  
 
@@ -71,13 +71,13 @@ Aqui entra o **FinMoovi**, aquele app que parece ter sido pensado por um amigo q
 
 ## Estratégias para usar a margem a seu favor  
 
-- **Use margem apenas quando o potencial de retorno supera o custo de oportunidade.** Se o bloqueio da margem impede que você alcance uma meta importante, talvez seja melhor adiar a operação.  
+- **Use margem apenas quando o potencial de retorno supera o [custo de oportunidade](/glossario/custo-de-oportunidade).** Se o bloqueio da margem impede que você alcance uma meta importante, talvez seja melhor adiar a operação.  
 - **Diversifique entre ativos com margens menores.** Por exemplo, fundos de investimento costumam exigir menos margem que contratos futuros.  
 - **Monitore o risco diariamente.** O FinMoovi permite que você veja a variação da margem em tempo real, ajudando a decidir se vale a pena fechar a posição antes que o mercado se mova contra você.  
 
 ## Quando a margem pode virar oportunidade  
 
-Em alguns casos, a margem de garantia pode ser usada como alavancagem inteligente. Se você tem um fundo de emergência equivalente a duas vezes o valor da sua margem, pode abrir posições maiores sem comprometer seu dia a dia. O segredo está em **gerenciar o risco**: mantenha sempre uma reserva que cubra, no mínimo, duas vezes o valor da margem exigida. O FinMoovi facilita esse cálculo, mostrando o “buffer” disponível ao lado da margem bloqueada.
+Em alguns casos, a margem de garantia pode ser usada como alavancagem inteligente. Se você tem um [fundo de emergência](/ferramentas/calculadora-reserva) equivalente a duas vezes o valor da sua margem, pode abrir posições maiores sem comprometer seu dia a dia. O segredo está em **gerenciar o risco**: mantenha sempre uma reserva que cubra, no mínimo, duas vezes o valor da margem exigida. O FinMoovi facilita esse cálculo, mostrando o “buffer” disponível ao lado da margem bloqueada.
 
 ## Erros comuns e como evitá‑los  
 

@@ -33,13 +33,13 @@ En palabras simples, muestra cuántos empleos se crearon o perdieron en el país
 
 ¿Por qué te debería importar? Porque:
 
-- **Influye en la política monetaria.** Si el NFP muestra muchos empleos nuevos, el banco central puede subir los tipos de interés para evitar que la inflación se dispare.  
-- **Mueve los mercados financieros.** Inversores de todo el mundo ajustan sus carteras según la salud del empleo estadounidense, que es un termómetro de la economía global.  
-- **Impacta tus finanzas personales.** Cambios en los tipos de interés afectan la cuota de tu hipoteca, el costo de los préstamos y el rendimiento de tus ahorros.
+- **Influye en la política monetaria.** Si el NFP muestra muchos empleos nuevos, el banco central puede subir los tipos de interés para evitar que la [inflación](/es/glossario/es-inflacion) se dispare.  
+- **Mueve los mercados financieros.** Inversores de todo el mundo ajustan sus carteras según la salud del empleo estadounidense, que es un termómetro de la [economía](/es/glossario/es-economia) global.  
+- **Impacta tus [finanzas](/es/glossario/es-finanzas) personales.** Cambios en los tipos de interés afectan la cuota de tu hipoteca, el costo de los préstamos y el rendimiento de tus ahorros.
 
 ## Cómo el NFP se refleja en tu día a día
 
-Imagina que tu salario es similar al precio de un alquiler mensual. Cuando el NFP indica que se crearon muchos empleos, los bancos pueden subir los intereses de los créditos. De repente, la cuota de tu préstamo personal sube “como el precio de un café al día”. Por el contrario, si el informe muestra pérdida de empleos, los tipos pueden bajar y tu cuota se reduce, dándote un respiro en el presupuesto.
+Imagina que tu salario es similar al precio de un [alquiler](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026) mensual. Cuando el NFP indica que se crearon muchos empleos, los bancos pueden subir los intereses de los créditos. De repente, la cuota de tu préstamo personal sube “como el precio de un café al día”. Por el contrario, si el informe muestra pérdida de empleos, los tipos pueden bajar y tu cuota se reduce, dándote un respiro en el presupuesto.
 
 ![Cómo el NFP se refleja en tu día a día](/images/glossario/nfp-inline-3.webp)
 
@@ -51,8 +51,8 @@ Aquí es donde entra FinMoovi, la app que actúa como ese amigo que siempre tien
 
 - **Captura inteligente:** toma una foto del recibo de tu nómina o graba una nota de voz y la app lo categoriza automáticamente (salario, bonificación, etc.).  
 - **Multimoneda:** lleva tus finanzas en la moneda que uses, ya sea dólares, euros o cualquier otra, sin preocuparte por conversiones manuales.  
-- **Flujo de caja e informes:** visualiza en tiempo real cuánto entra y sale, con gráficos que te muestran el impacto de cambios en los tipos de interés.  
-- **Planificación mensual y metas:** fija objetivos como “ahorrar el equivalente a dos alquileres” y sigue tu progreso.  
+- **[Flujo de caja](/es/glossario/es-flujo-de-caja) e informes:** visualiza en tiempo real cuánto entra y sale, con gráficos que te muestran el impacto de cambios en los tipos de interés.  
+- **Planificación mensual y metas:** fija objetivos como “[ahorrar](/es/posts/es-ahorra-en-la-farmacia-sin-sacrificios-guia-practica-2026) el equivalente a dos alquileres” y sigue tu progreso.  
 - **Tarjetas de crédito y facturas:** registra cada gasto y recibe alertas cuando se acerque la fecha de pago.  
 - **Modo compras:** crea listas, ve el total en tiempo real y evita sorpresas al pagar.  
 - **Recordatorios y alertas de saldo:** te avisan si tu cuenta está por debajo de un umbral que hayas definido.  

@@ -8,6 +8,7 @@ locale: "pt"
 tags: ["cartão de crédito","cartão de débito","finanças pessoais","gestão financeira","crédito","débito","crédito vs débito","vantagens cartão crédito","quando usar débito"]
 author: "FinMoovi"
 publishedAt: 2026-07-10
+updatedAt: 2026-11-01
 readingTime: 5
 featured: false
 translationKey: "cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena"

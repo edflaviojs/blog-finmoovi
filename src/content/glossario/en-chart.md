@@ -46,10 +46,10 @@ Imagine opening FinMoovi and, in seconds, having a pie chart that shows the dist
 
 In addition to smart capture, FinMoovi offers other features that support your chart:
 
-- **Multi‑currency**: if you travel or shop in different currencies (dollar, euro, etc.), the app converts everything to your base currency, keeping the chart consistent.
-- **Cash flow and reports**: the chart feeds off a cash‑flow view that shows inflows (salary, side income) and outflows (bills, purchases), allowing you to compare what comes in and what goes out.
-- **Monthly planning and goals**: set a target, like “save the equivalent of two months’ rent,” and watch the chart display progress over time.
-- **Credit cards and statements**: the app pulls card spending directly into the chart, avoiding surprises when it’s time to pay the bill.
+- **[Multi‑currency](/en/posts/en-digital-bank-vs-major-bank-which-is-worth-it-in-2026)**: if you travel or shop in different currencies (dollar, euro, etc.), the app converts everything to your base currency, keeping the chart consistent.
+- **[Cash flow](/en/glossario/en-cash-flow) and reports**: the chart feeds off a cash‑flow view that shows inflows (salary, side income) and outflows (bills, purchases), allowing you to compare what comes in and what goes out.
+- **Monthly [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) and goals**: set a target, like “save the equivalent of two months’ rent,” and watch the chart display progress over time.
+- **[Credit](/en/glossario/en-credit) cards and statements**: the app pulls card spending directly into the chart, avoiding surprises when it’s time to pay the bill.
 - **Shopping mode**: create a list of items, see the total update in real time on the chart, and avoid exceeding the limit you set.
 - **Balance alerts and reminders**: if the balance falls below a threshold, the app notifies you and the chart updates instantly.
 - **Offline / PWA / sync**: even without internet, you can log expenses; when you reconnect, everything syncs and the chart refreshes.
@@ -60,7 +60,7 @@ When you open the “Overview” screen in FinMoovi, the chart appears right at 
 
 1. **Look at the colors** – Each category has a fixed color (e.g., green for food, blue for transportation). This helps you quickly spot where the biggest consumption is.
 2. **Check the slice sizes** – A large slice means that category is taking up the biggest part of your budget. If the “leisure” slice is bigger than the “housing” slice, something is off.
-3. **Compare with the average** – The app shows the average of the last three months next to the chart. If your current expense is above the average, it’s time to review.
+3. **Compare with the average** – The app shows the average of the last three months next to the chart. If your current [expense](/en/glossario/en-expense) is above the average, it’s time to review.
 4. **Use the period filter** – You can switch from “last month” to “last 6 months.” This helps you see trends, like a steady rise in streaming service bills.
 
 ## Three Practical Tips to Use the Chart to Your Advantage
@@ -75,7 +75,7 @@ When you open the “Overview” screen in FinMoovi, the chart appears right at 
 
 - **International travel**: You spent €500 on food and €300 on transportation. The chart converts everything to your base currency and shows that 70 % of the spending was food, indicating it might be time to look for cheaper meal options.
 - **Appliance purchase**: When you log the receipt with smart capture, the chart places the expense in the “home” category. If that category is already near its limit, the app warns you before you add more purchases.
-- **Side income**: You received a freelance payment of $1,200. The chart adds this entry as “extra income,” boosting the overall balance and letting you see visually how much you can allocate to a savings goal.
+- **Side income**: You received a freelance payment of $1,200. The chart adds this entry as “extra income,” boosting the overall balance and letting you see visually how much you can allocate to a [savings](/en/glossario/en-savings) goal.
 
 ## Why the Chart Is Better Than Spreadsheets
 

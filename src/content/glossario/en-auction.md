@@ -55,7 +55,7 @@ Mas nem tudo são flores. É preciso ficar atento a custos adicionais (taxas de 
 Imagine que você encontrou um leilão de um notebook que custa, no varejo, o equivalente ao preço de duas mensalidades de aluguel, mas o lance atual está na metade desse valor. Você decide participar, mas não quer perder o controle das despesas nem esquecer de pagar a fatura. É aqui que o FinMoovi entra:
 
 - **Captura inteligente**: ao receber o boleto ou a confirmação do leilão, basta tirar uma foto ou gravar a voz dizendo “pagar leilão notebook”. O app reconhece o documento, extrai o valor e categoriza automaticamente como “Compras – Leilões”. Assim, nada escapa da sua planilha.
-- **Multi‑moeda**: se o leilão for em dólares, euros ou outra moeda, o FinMoovi converte o valor para a sua moeda base usando a cotação do dia, facilitando o controle do seu orçamento.
+- **Multi‑[moeda](/en/glossario/en-moeda)**: se o leilão for em dólares, euros ou outra moeda, o FinMoovi converte o valor para a sua moeda base usando a cotação do dia, facilitando o controle do seu orçamento.
 - **Fluxo de caixa e relatórios**: o gasto aparece imediatamente no seu fluxo de caixa, permitindo que você veja o impacto no saldo disponível antes de confirmar o pagamento.
 - **Planejamento mensal e metas**: você pode criar uma meta de “Economizar 30% do salário para compras de leilão” e o app mostrará, em tempo real, quanto ainda falta para alcançar o objetivo.
 - **Cartões de crédito e contas**: se o pagamento for parcelado no cartão, o FinMoovi registra cada parcela, avisa o vencimento e calcula o custo total com juros, se houver.

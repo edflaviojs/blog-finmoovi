@@ -20,7 +20,7 @@ seo:
 
 ## O que é a zona do euro e por que isso importa para o seu bolso  
 
-Você já percebeu que, ao viajar ou fazer compras online, o preço aparece em euros e, de repente, parece que o seu dinheiro não rende como antes? Essa sensação de “perdi a noção do valor” costuma acontecer porque a zona do euro reúne 20 países que usam a mesma moeda – o euro – e compartilham políticas econômicas comuns. Quando o euro se valoriza ou desvaloriza, isso afeta diretamente o quanto você paga por um café em Paris, por um ingresso de cinema em Lisboa ou por um produto importado que chega ao seu carrinho online. Entender como funciona a zona do euro ajuda a planejar melhor gastos, investimentos e até a escolha de cartões de crédito que não cobrem taxas abusivas de conversão.
+Você já percebeu que, ao viajar ou fazer compras online, o preço aparece em euros e, de repente, parece que o seu dinheiro não rende como antes? Essa sensação de “perdi a noção do valor” costuma acontecer porque a zona do euro reúne 20 países que usam a mesma moeda – o euro – e compartilham políticas econômicas comuns. Quando o euro se valoriza ou desvaloriza, isso afeta diretamente o quanto você paga por um café em Paris, por um ingresso de cinema em Lisboa ou por um produto importado que chega ao seu carrinho online. Entender como funciona a zona do euro ajuda a planejar melhor gastos, investimentos e até a escolha de cartões de [crédito](/glossario/credito) que não cobrem taxas abusivas de conversão.
 
 ![O que é a zona do euro e por que isso importa para o seu bolso  ](/images/glossario/zona-do-euro-inline-1.webp)
 
@@ -28,13 +28,13 @@ Você já percebeu que, ao viajar ou fazer compras online, o preço aparece em e
 
 ## Como a zona do euro funciona na prática  
 
-A zona do euro foi criada para facilitar o comércio entre os países membros, eliminando a necessidade de trocar moedas a cada fronteira. Todos os países adotam a mesma política monetária, que é controlada pelo Banco Central Europeu (BCE). O BCE decide a taxa de juros, controla a quantidade de dinheiro em circulação e tenta manter a inflação em torno de 2 % ao ano.  
+A zona do euro foi criada para facilitar o comércio entre os países membros, eliminando a necessidade de trocar moedas a cada fronteira. Todos os países adotam a mesma política monetária, que é controlada pelo Banco Central Europeu (BCE). O BCE decide a taxa de juros, controla a quantidade de dinheiro em circulação e tenta manter a [inflação](/glossario/inflacao) em torno de 2 % ao ano.  
 
 Essas decisões têm reflexos imediatos no câmbio: quando o BCE aumenta a taxa de juros, o euro costuma ficar mais caro em relação a outras moedas, porque investidores buscam rendimentos maiores. O oposto acontece quando a taxa cai. Para quem tem renda em outra moeda, como o real ou o dólar, isso significa que o poder de compra pode oscilar de forma significativa.  
 
 ## Por que a variação do euro pode “roubar” seu dinheiro  
 
-Imagine que você ganha o equivalente a cerca de um aluguel por mês e costuma gastar cerca de um café por dia em itens importados. Se o euro sobe 5 % em relação à sua moeda, aquele mesmo café pode passar a custar 5 % a mais. Em um ano, isso pode representar o gasto de quase duas semanas de aluguel só em pequenos luxos.  
+Imagine que você ganha o equivalente a cerca de um [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026) por mês e costuma gastar cerca de um café por dia em itens importados. Se o euro sobe 5 % em relação à sua moeda, aquele mesmo café pode passar a custar 5 % a mais. Em um ano, isso pode representar o gasto de quase duas semanas de aluguel só em pequenos luxos.  
 
 ![Por que a variação do euro pode “roubar” seu dinheiro  ](/images/glossario/zona-do-euro-inline-3.webp)
 
@@ -46,9 +46,9 @@ Além disso, muitas vezes as compras online mostram o preço em euros, mas a con
 
 A boa notícia é que a tecnologia pode ser sua aliada. O FinMoovi traz um conjunto de ferramentas que deixam você no controle, mesmo quando o euro está em alta.  
 
-- **Captura inteligente**: tire uma foto da nota fiscal ou grave a voz ao pagar e o app reconhece o valor e a moeda automaticamente, categorizando a despesa sem esforço.  
+- **[Captura inteligente](/posts/cansado-de-perder-horas-nas-planilhas-como-o-finmoovi)**: tire uma foto da nota fiscal ou grave a voz ao pagar e o app reconhece o valor e a moeda automaticamente, categorizando a [despesa](/glossario/despesa) sem esforço.  
 - **Multimoeda**: registre gastos em real, dólar ou euro e veja tudo convertido em tempo real, com a taxa de câmbio oficial do dia.  
-- **Fluxo de caixa e relatórios**: visualize quanto você está gastando em euros versus outras moedas, identifique padrões e ajuste seu orçamento.  
+- **[Fluxo de caixa](/glossario/fluxo-de-caixa) e relatórios**: visualize quanto você está gastando em euros versus outras moedas, identifique padrões e ajuste seu orçamento.  
 - **Planejamento mensal / metas**: defina metas de gasto em euros (por exemplo, “não gastar mais que o equivalente a duas vezes o preço de um café por dia”) e acompanhe o progresso.  
 - **Cartões de crédito / fatura**: importe a fatura do cartão e o app separa automaticamente as compras em euros, mostrando a taxa aplicada e sugerindo cartões com menor custo de conversão.  
 - **Modo compras**: crie listas de compras internacionais, veja o total em tempo real enquanto adiciona itens e receba alertas se o valor ultrapassar o limite que você definiu.  

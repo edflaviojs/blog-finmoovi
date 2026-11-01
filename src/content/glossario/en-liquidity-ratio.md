@@ -20,7 +20,7 @@ seo:
 
 ## What Happens When Your Account Looks Empty?
 
-Imagine you’ve just paid the rent, the electricity bill arrived, and you still have that unexpected invitation to dine out with friends. When you open your bank statement, the only thing that shows up is “insufficient balance.” The fear of not being able to meet a commitment hits instantly, and anxiety spikes. This discomfort is exactly what the **liquidity ratio** tries to measure: your ability to quickly turn what you have saved into cash to cover immediate expenses.
+Imagine you’ve just paid the rent, the electricity bill arrived, and you still have that unexpected invitation to dine out with friends. When you open your bank statement, the only thing that shows up is “insufficient balance.” The fear of not being able to meet a commitment hits instantly, and anxiety spikes. This discomfort is exactly what the **[liquidity](/en/glossario/en-liquidity) ratio** tries to measure: your ability to quickly turn what you have saved into cash to cover immediate expenses.
 
 ![What Happens When Your Account Looks Empty?](/images/glossario/quociente-de-liquidez-inline-1.webp)
 
@@ -36,9 +36,9 @@ If the result is 1.0, it means you have exactly enough to pay everything that ma
 
 ### Why Does It Matter?
 
-- **Financial security:** A healthy ratio reduces the risk of having to resort to last‑minute loans, which usually carry high interest.
+- **[Financial security](/en/posts/en-7-best-personal-finance-apps-2026-complete-guide-to-organize):** A healthy ratio reduces the risk of having to resort to last‑minute loans, which usually carry high interest.
 - **Peace of mind:** Knowing you have enough cash to cover the bills eliminates daily stress.
-- **Easier planning:** When the foundation is solid, it’s easier to think about medium‑ and long‑term goals, like a trip or buying a car.
+- **Easier [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips):** When the foundation is solid, it’s easier to think about medium‑ and long‑term goals, like a trip or buying a car.
 
 ## How FinMoovi Helps You Monitor Your Ratio
 
@@ -48,7 +48,7 @@ We know calculating financial ratios can feel like a specialist’s job, but Fin
 
 
 
-With **cash flow and reports**, the app generates weekly reports that show the relationship between liquid assets and liabilities, already indicating whether your ratio is above or below 1.0. You can also set **monthly goals** – for example, “keep the ratio above 1.2” – and receive alerts when the number starts to drop.
+With **[cash flow](/en/glossario/en-cash-flow) and reports**, the app generates weekly reports that show the relationship between liquid assets and liabilities, already indicating whether your ratio is above or below 1.0. You can also set **monthly goals** – for example, “keep the ratio above 1.2” – and receive alerts when the number starts to drop.
 
 ## Step‑by‑Step Guide to Improve Your Ratio
 
@@ -78,12 +78,12 @@ With **cash flow and reports**, the app generates weekly reports that show the r
 
 2. **Appliance purchase:** A refrigerator costs the equivalent of two electricity bills. You have part of the money saved in euros and part in dollars. FinMoovi converts everything, adds it to your liquid assets, and indicates the ratio is still at 1.3 – green light for the purchase.
 
-3. **Medical emergency:** An unexpected consultation costs the same as one month’s rent. Since your ratio was at 1.4, you pay without needing a loan. The app logs the expense, recalculates the ratio and notifies you that it’s now 1.0, reminding you to replenish the emergency fund.
+3. **Medical emergency:** An unexpected consultation costs the same as one month’s rent. Since your ratio was at 1.4, you pay without needing a loan. The app logs the expense, recalculates the ratio and notifies you that it’s now 1.0, reminding you to replenish the [emergency fund](/en/glossario/en-emergency-fund).
 
 ## How to Keep a Healthy Ratio Over the Long Term
 
 - **Revisit your monthly budget** every 30 days. FinMoovi makes this easy with automatic reports.
-- **Gradually increase your liquid assets:** Allocate 5 % of monthly income to a high‑liquidity account (savings, emergency fund).
+- **Gradually increase your liquid assets:** Allocate 5 % of [monthly income](/en/glossario/en-monthly-income) to a high‑liquidity account (savings, emergency fund).
 - **Avoid short‑term debt:** If you need to use a credit card, pay the full statement before the due date to keep an asset liquid rather than turning it into a liability.
 - **Diversify currencies** if you earn or spend in different countries; this protects your purchasing power and keeps the ratio stable.
 

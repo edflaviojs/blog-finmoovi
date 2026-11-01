@@ -7,6 +7,7 @@ category: "cotacoes"
 tags: ["custo de vida","ipca","inflação","cotações","orçamento"]
 author: "FinMoovi"
 publishedAt: 2026-07-23
+updatedAt: 2026-11-01
 readingTime: 3
 featured: false
 locale: "pt"

@@ -28,7 +28,7 @@ Você já se pegou pensando em como algumas pessoas conseguem guardar dinheiro �
 
 Offshore, literalmente “fora da costa”, refere-se a qualquer ativo, conta ou empresa registrada em um país diferente daquele onde a pessoa ou a companhia reside. Não é um truque de mágica nem algo ilegal por si só; trata‑se simplesmente de usar a legislação de outra jurisdição – que pode ter regras mais flexíveis de tributação, sigilo bancário ou facilidades para abrir empresas.  
 
-Mas, na prática, o que isso muda no seu dia a dia? Imagine que você tem um salário que cobre o aluguel, a conta de luz e ainda quer guardar um “café por dia” para emergências. Se a sua conta corrente tem tarifas altas, limites de transferência e pouca flexibilidade para lidar com moedas diferentes, você pode acabar gastando mais do que deveria. Uma conta offshore pode ser a solução para quem precisa movimentar dinheiro em várias moedas, viajar muito ou proteger patrimônio contra instabilidades econômicas.  
+Mas, na prática, o que isso muda no seu dia a dia? Imagine que você tem um salário que cobre o [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026), a conta de luz e ainda quer guardar um “café por dia” para emergências. Se a sua conta corrente tem tarifas altas, limites de transferência e pouca flexibilidade para lidar com moedas diferentes, você pode acabar gastando mais do que deveria. Uma conta offshore pode ser a solução para quem precisa movimentar dinheiro em várias moedas, viajar muito ou proteger [patrimônio](/glossario/patrimonio) contra instabilidades econômicas.  
 
 ## Como funciona na prática: exemplos do cotidiano
 
@@ -41,7 +41,7 @@ Esses cenários mostram que offshore não é só para grandes corporações; pod
 ## Vantagens e cuidados que você deve saber
 
 - **Flexibilidade cambial** – contas que aceitam várias moedas (BRL, USD, EUR) evitam a necessidade de conversão constante.  
-- **Proteção contra instabilidade** – manter parte do dinheiro em um país com economia estável pode preservar seu poder de compra.  
+- **Proteção contra instabilidade** – manter parte do dinheiro em um país com [economia](/glossario/economia) estável pode preservar seu poder de compra.  
 - **Privacidade** – algumas jurisdições oferecem sigilo bancário, mas isso não significa impunidade; a transparência fiscal ainda é obrigatória.  
 - **Custo de manutenção** – contas offshore podem cobrar taxas mensais ou anuais; vale comparar antes de abrir.  
 - **Regulamentação** – é essencial declarar esses ativos ao fisco do seu país de residência; omissão pode gerar multas graves.  
@@ -57,10 +57,10 @@ Esses cenários mostram que offshore não é só para grandes corporações; pod
 Gerenciar dinheiro em diferentes moedas, acompanhar despesas e ainda ficar em dia com a declaração fiscal pode parecer um labirinto. É aí que o **FinMoovi** entra como aquele amigo que tem a solução na ponta da língua.  
 
 - **Captura inteligente** – Tire foto da nota ou grave a voz ao pagar uma conta e o app reconhece o valor, a data e a categoria automaticamente. Não importa se a compra foi feita em dólares, euros ou na sua moeda local.  
-- **Multimoeda automática** – Cada transação é registrada na moeda original e o FinMoovi converte para a sua base de referência usando a taxa do dia, facilitando o controle do fluxo de caixa.  
+- **Multimoeda automática** – Cada transação é registrada na moeda original e o FinMoovi converte para a sua base de referência usando a taxa do dia, facilitando o controle do [fluxo de caixa](/glossario/fluxo-de-caixa).  
 - **Fluxo de caixa e relatórios** – Visualize, em tempo real, quanto entrou e saiu em cada moeda, com gráficos que mostram a evolução mensal.  
 - **Planejamento mensal e metas** – Defina metas de economia, como “guardar o equivalente a dois aluguéis em euros até o fim do ano”, e o app avisa quando você está perto ou longe do objetivo.  
-- **Cartões de crédito e fatura** – Integre cartões internacionais; o FinMoovi traz a fatura completa, categoriza cada gasto e alerta quando o limite está próximo.  
+- **Cartões de [crédito](/glossario/credito) e fatura** – Integre cartões internacionais; o FinMoovi traz a fatura completa, categoriza cada gasto e alerta quando o limite está próximo.  
 - **Modo compras** – Crie listas de supermercado ou de viagem; o app soma tudo em tempo real, mostrando o total em sua moeda preferida.  
 - **Lembretes e alertas de saldo** – Receba notificações quando o saldo de uma conta offshore ficar abaixo de um valor que você definiu, evitando surpresas.  
 - **Offline / PWA / sincronização** – Mesmo sem internet, você registra despesas; ao reconectar, tudo se sincroniza automaticamente entre dispositivos.  
@@ -69,7 +69,7 @@ Gerenciar dinheiro em diferentes moedas, acompanhar despesas e ainda ficar em di
 
 ## Estratégias para usar offshore de forma inteligente
 
-- **Divida seu dinheiro em “potes”** – Mantenha um fundo de emergência em sua moeda local, outro para viagens em dólares/euros e um terceiro para investimentos de longo prazo em uma jurisdição estável.  
+- **Divida seu dinheiro em “potes”** – Mantenha um [fundo de emergência](/ferramentas/calculadora-reserva) em sua moeda local, outro para viagens em dólares/euros e um terceiro para investimentos de longo prazo em uma jurisdição estável.  
 - **Aproveite as taxas de câmbio favoráveis** – Quando o seu banco oferece um spread baixo, converta parte do dinheiro para a moeda que você usará nos próximos meses.  
 - **Monitore as tarifas** – Alguns bancos cobram taxa por transferência internacional; use o FinMoovi para comparar o custo real de cada operação antes de enviar o dinheiro.  
 - **Automatize o registro** – Configure o app para que todas as transações de cartões internacionais caiam automaticamente na categoria “Cartão de crédito no exterior”.  

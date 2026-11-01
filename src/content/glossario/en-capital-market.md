@@ -34,15 +34,15 @@ The capital market is different from the everyday “cash market” where you pa
 
 ## How it works for you
 
-When you hear “invest in the capital market,” you might picture a Wall Street trader shouting on a screen. In reality, you can start with just a few hundred dollars (or the equivalent of a few weeks’ rent) using a smartphone app. Here’s the basic flow:
+When you hear “invest in the capital market,” you might picture a [Wall Street](/en/glossario/en-wall-street) trader shouting on a screen. In reality, you can start with just a few hundred dollars (or the equivalent of a few weeks’ rent) using a smartphone app. Here’s the basic flow:
 
 1. **Choose an asset** – decide if you want a share of a company, a government bond, or a fund that mixes both.  
 2. **Open a brokerage account** – this is the digital “wallet” that lets you buy and sell.  
 3. **Deposit money** – transfer cash from your checking account; many apps let you do it instantly.  
 4. **Place an order** – tell the platform how many units you want; the order is matched with a seller.  
-5. **Hold or sell later** – you can keep the asset to collect dividends or interest, or sell when you need cash.
+5. **Hold or sell later** – you can keep the asset to collect [dividends](/en/glossario/en-dividends) or interest, or sell when you need cash.
 
-The key is **time**. The longer you stay invested, the more you benefit from compounding—earning returns on your returns. But you also need to watch fees, taxes, and market fluctuations. That’s where a good personal finance app can keep you on track.
+The key is **time**. The longer you stay invested, the more you benefit from compounding—earning returns on your returns. But you also need to watch fees, taxes, and market fluctuations. That’s where a good [personal finance](/en/posts/en-30-day-rule-for-purchases) app can keep you on track.
 
 ## Why it matters
 
@@ -60,11 +60,11 @@ You’ve probably tried to track expenses with spreadsheets or multiple apps, on
 
 - **Smart capture**: Snap a photo of a receipt or speak the amount, and the app instantly categorizes the expense (e.g., “groceries,” “transport”). No more manual entry.  
 - **Multi‑currency support**: Whether you earn in dollars, euros, or any other currency, FinMoovi converts everything to a single view, so you can see the real impact of your investments across borders.  
-- **Cash flow and reports**: Visual dashboards show where every dollar goes, highlighting surplus that can be redirected to investments.  
-- **Monthly planning & goals**: Set a target like “save the equivalent of three months’ rent for a down‑payment” and watch the app suggest how much to allocate to stocks or bonds each month.  
+- **[Cash flow](/en/glossario/en-cash-flow) and reports**: Visual dashboards show where every dollar goes, highlighting surplus that can be redirected to investments.  
+- **Monthly [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) & goals**: Set a target like “save the equivalent of three months’ rent for a down‑payment” and watch the app suggest how much to allocate to stocks or bonds each month.  
 - **Credit‑card & bill integration**: Import statements automatically, so you never miss a payment and avoid costly interest.  
 - **Shopping mode**: Create a list, add prices on the fly, and see the total in real time—perfect for staying within a budget before you head to the store.  
-- **Reminders & balance alerts**: Get notified when you’re close to overspending or when an investment reaches a milestone.  
+- **Reminders & balance alerts**: Get notified when you’re close to overspending or when an [investment](/en/glossario/en-investment) reaches a milestone.  
 - **Offline/PWA sync**: Even without internet, you can capture receipts; the data syncs as soon as you’re back online.
 
 By keeping your everyday finances transparent, FinMoovi shows exactly how much “extra” you have each month to feed into the capital market, turning a vague desire to invest into a concrete, automated habit.

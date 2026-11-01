@@ -20,7 +20,7 @@ seo:
 
 ## What are swaps?
 
-Imagine you have a loan that pays a fixed interest rate, but you suspect rates might drop soon. At the same time, a friend has a loan that pays a variable rate and worries rates could rise. A **swap** is a private agreement where you exchange those cash‑flow streams – you give your friend the fixed payments, they give you the variable ones. In finance, swaps are contracts that let two parties trade future cash flows based on a notional amount, without actually exchanging the principal. The most common types are interest‑rate swaps (fixed ↔️ variable) and currency swaps (USD ↔️ EUR, for example). Think of it as a “financial handshake” that lets each side match its risk profile or take advantage of market moves.
+Imagine you have a loan that pays a fixed [interest](/en/glossario/en-interest) rate, but you suspect rates might drop soon. At the same time, a friend has a loan that pays a variable rate and worries rates could rise. A **swap** is a private agreement where you exchange those cash‑flow streams – you give your friend the fixed payments, they give you the variable ones. In finance, swaps are contracts that let two parties trade future cash flows based on a notional amount, without actually exchanging the principal. The most common types are interest‑rate swaps (fixed ↔️ variable) and currency swaps (USD ↔️ EUR, for example). Think of it as a “financial handshake” that lets each side match its risk profile or take advantage of market moves.
 
 ![What are swaps?](/images/glossario/swaps-inline-1.webp)
 
@@ -32,7 +32,7 @@ You might think swaps are only for big banks, but they affect you indirectly eve
 
 - Spot when a loan’s rate is likely to change
 - Ask your bank for products that already incorporate a swap
-- Use personal finance tools to track the impact on your cash flow
+- Use [personal finance](/en/posts/en-30-day-rule-for-purchases) tools to track the impact on your [cash flow](/en/glossario/en-cash-flow)
 
 ## How swaps work in everyday life
 
@@ -53,14 +53,14 @@ If rates drop to 3%, you receive money from Maria, offsetting the higher fixed r
 Even though swaps can smooth out payments, they carry risks you should keep in mind:
 
 - **Counterparty risk** – the chance the other party can’t honor the payment. Banks mitigate this with collateral, but with informal swaps you need trust.
-- **Liquidity risk** – exiting a swap early can be costly; you may have to pay a “close‑out” fee.
+- **[Liquidity](/en/glossario/en-liquidity) risk** – exiting a swap early can be costly; you may have to pay a “close‑out” fee.
 - **Complexity** – the math can get tricky when rates change frequently; small miscalculations add up.
 
 Always read the fine print, and consider whether the potential benefit outweighs the extra administrative work.
 
 ## Using FinMoovi to manage swaps
 
-That’s where FinMoovi comes in. The app isn’t just a receipt scanner; it’s a personal finance hub that can help you keep swaps transparent and under control.
+That’s where FinMoovi comes in. The app isn’t just a receipt scanner; it’s a [personal finance](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your) hub that can help you keep swaps transparent and under control.
 
 - **Smart capture** – Snap a photo of the swap agreement or record a voice note. FinMoovi reads the key terms (notional amount, fixed rate, variable index) and stores them automatically.
 - **Multi‑currency support** – If you’re swapping USD for EUR, the app tracks both currencies in real time, converting amounts using the latest market rates.
@@ -76,7 +76,7 @@ That’s where FinMoovi comes in. The app isn’t just a receipt scanner; it’s
 
 **Practical tip:** Keep the swap agreement’s expiration date in the app’s calendar. Set a reminder 30 days before it ends so you can renegotiate or close the position without surprise fees.
 
-**Practical tip:** If you’re swapping currencies, enable the multi‑currency view and watch the conversion chart. A sudden dip in the foreign exchange rate can turn a seemingly harmless swap into a hidden cost.
+**Practical tip:** If you’re swapping currencies, enable the multi‑currency view and watch the conversion chart. A sudden dip in the [foreign exchange](/en/glossario/en-cambio) rate can turn a seemingly harmless swap into a hidden cost.
 
 ## Start today
 

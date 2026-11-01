@@ -32,15 +32,15 @@ En el lenguaje financiero, “long” (o “posición larga”) es simplemente e
 
 ## Cómo FinMoovi te ayuda a gestionar tus posiciones long
 
-FinMoovi no es solo otro gestor de gastos; su **captura inteligente** de recibos (foto o voz) y la **categorización automática** hacen que cada compra quede registrada sin que tengas que escribir nada. Cuando compras acciones, criptomonedas o cualquier activo que quieras mantener “long”, la app:
+FinMoovi no es solo otro gestor de gastos; su **[captura inteligente](/es/posts/es-cansado-de-perder-horas-en-hojas-de-calculo-asi-finmoovi-lo)** de recibos (foto o voz) y la **categorización automática** hacen que cada compra quede registrada sin que tengas que escribir nada. Cuando compras [acciones](/es/glossario/es-acciones), criptomonedas o cualquier activo que quieras mantener “long”, la app:
 
 ![Cómo FinMoovi te ayuda a gestionar tus posiciones long](/images/glossario/long-inline-3.webp)
 
 
 
 - **Multimoneda**: registra automáticamente el valor en la moneda que uses (USD, EUR, etc.) y lo convierte a tu referencia local.
-- **Flujo de caja e informes**: muestra cómo esas inversiones impactan tu presupuesto mensual, sin mezclar gastos corrientes con ganancias de inversión.
-- **Planificación mensual / metas**: te permite fijar objetivos como “alcanzar una ganancia equivalente al precio de un alquiler” y te avisa cuando te acercas.
+- **[Flujo de caja](/es/glossario/es-flujo-de-caja) e informes**: muestra cómo esas inversiones impactan tu presupuesto mensual, sin mezclar gastos corrientes con ganancias de [inversión](/es/glossario/es-inversion).
+- **Planificación mensual / metas**: te permite fijar objetivos como “alcanzar una ganancia equivalente al precio de un [alquiler](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026)” y te avisa cuando te acercas.
 - **Tarjetas de crédito / factura**: integra los pagos de tus plataformas de inversión para que no se te escape ninguna cuota.
 - **Modo compras**: crea listas de activos que quieres comprar y muestra el total en tiempo real, ayudándote a decidir cuánto capital destinar a una posición “long”.
 - **Recordatorios / alertas de saldo**: te avisa cuando tu cuenta de inversión está por debajo del nivel que definiste para mantener la posición.
@@ -58,7 +58,7 @@ FinMoovi no es solo otro gestor de gastos; su **captura inteligente** de recibos
 
 - **Pensar que “long” es siempre seguro**: aunque la tendencia sea alcista, los mercados pueden revertir. Mantén siempre un colchón de liquidez (por ejemplo, el equivalente a dos alquileres) para cubrir imprevistos.
 - **No registrar la compra**: sin la captura del recibo o la nota de compra, la app no podrá categorizar la inversión y tu informe quedará incompleto.
-- **Olvidar la diversificación**: poner todo tu capital en una sola acción o cripto es arriesgado. Usa la vista de cartera de FinMoovi para repartir el riesgo entre varios activos “long”.
+- **Olvidar la [diversificación](/es/glossario/es-diversificacion)**: poner todo tu capital en una sola acción o cripto es arriesgado. Usa la vista de cartera de FinMoovi para repartir el riesgo entre varios activos “long”.
 
 ## Cómo combinar “long” con otras estrategias dentro de la app
 

@@ -20,7 +20,7 @@ seo:
 
 ## What Happens When Your Salary Bill Doesn’t Cover Everything
 
-Have you ever reached the end of the month and realized that the money that came in wasn’t enough to pay the rent, the electricity bill, and still buy that coffee you usually have every day? The feeling that your purchasing power is shrinking, even though your salary seems to stay “the same,” is more common than you think. What’s actually happening is that inflation is eroding the value of what you earn. When we talk about “real interest,” we’re talking exactly about what’s left of your money after inflation is taken out.
+Have you ever reached the end of the month and realized that the money that came in wasn’t enough to pay the rent, the electricity bill, and still buy that coffee you usually have every day? The feeling that your purchasing power is shrinking, even though your salary seems to stay “the same,” is more common than you think. What’s actually happening is that [inflation](/en/glossario/en-inflation) is eroding the value of what you earn. When we talk about “real interest,” we’re talking exactly about what’s left of your money after inflation is taken out.
 
 ![What Happens When Your Salary Bill Doesn’t Cover Everything](/images/glossario/juro-real-inline-1.webp)
 
@@ -28,7 +28,7 @@ Have you ever reached the end of the month and realized that the money that came
 
 ## Understanding Real Interest Without Complication
 
-Real interest = nominal rate (the one that appears in the contract, on the credit card, or in the savings account) minus inflation (the general rise in prices). If your investment yields 6 % per year, but inflation is at 4 %, the real interest is 2 %. That 2 % figure shows how much your purchasing power actually increased.
+Real interest = nominal rate (the one that appears in the contract, on the [credit card](/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026), or in the savings account) minus inflation (the general rise in prices). If your [investment](/en/glossario/en-investment) yields 6 % per year, but inflation is at 4 %, the real interest is 2 %. That 2 % figure shows how much your purchasing power actually increased.
 
 - **Nominal rate**: the advertised rate, without adjustment.  
 - **Inflation**: the average rise in prices of goods and services.  
@@ -46,13 +46,13 @@ Imagine you have a goal of saving the equivalent of three months’ rent for an 
 
 This scenario affects:
 
-- **Goal planning**: short‑term goals (trip, appliance purchase) can become more expensive.  
+- **Goal [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips)**: short‑term goals (trip, appliance purchase) can become more expensive.  
 - **Investments**: products that look good may actually be “eating” your money.  
 - **Credit cards**: the nominal interest rate may be high, but if inflation rises even more, the real interest can be even worse.
 
 ## How FinMoovi Helps You See Real Interest in Practice
 
-The FinMoovi app has a feature that makes a difference: **smart capture**. You take a photo of a receipt or record your voice saying “I spent $30 at the supermarket.” The app recognizes the amount, the date, and the category (food, transport, leisure) and instantly adds everything to your cash flow.
+The FinMoovi app has a feature that makes a difference: **smart capture**. You take a photo of a receipt or record your voice saying “I spent $30 at the supermarket.” The app recognizes the amount, the date, and the category (food, transport, leisure) and instantly adds everything to your [cash flow](/en/glossario/en-cash-flow).
 
 In addition, FinMoovi works with **multicurrency**. If you earn in euros, spend in dollars, or have investments in reais, the app converts everything using the day’s exchange rate and, best of all, also brings in the inflation rate of the corresponding country. So, when you analyze the return of your dollar savings account, the app shows the real interest next to the nominal rate, without you having to do separate calculations.
 
@@ -71,7 +71,7 @@ With **cash‑flow reports**, FinMoovi groups all inflows and outflows, calculat
 1. **Capture everything** – Whenever you pay for something, use the photo or voice feature in FinMoovi. Don’t leave expenses “in the void.”  
 2. **Check the real‑interest report** – At the end of each month, open the “Investments” tab. The app shows the nominal rate, the country’s inflation, and the real interest side by side.  
 3. **Adjust your budget** – If real interest is negative on any investment, consider moving that money to another that offers inflation protection.  
-4. **Track goals** – Use the “Goals” section to set the amount you want to reach (e.g., “Emergency fund = 3 months’ rent”). The app already includes automatic inflation adjustment.  
+4. **Track goals** – Use the “Goals” section to set the amount you want to reach (e.g., “[Emergency fund](/en/glossario/en-emergency-fund) = 3 months’ rent”). The app already includes automatic inflation adjustment.  
 5. **Enable alerts** – Set up bill‑due reminders and low‑balance alerts. FinMoovi notifies you when your cash flow is getting tight.
 
 ## Why Real Interest Is the Compass of Your Investments

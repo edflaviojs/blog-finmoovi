@@ -32,7 +32,7 @@ Para descobrir o juro real basta ajustar o juro nominal (o que o banco informa) 
 
 **Juro real ≈ juro nominal – inflação**
 
-Se o seu investimento rende 7 % ao ano e a inflação está em 4 %, o juro real fica em torno de 3 %. Esse número indica quanto o seu dinheiro realmente cresceu em termos de poder de compra.
+Se o seu [investimento](/glossario/investimento) rende 7 % ao ano e a inflação está em 4 %, o juro real fica em torno de 3 %. Esse número indica quanto o seu dinheiro realmente cresceu em termos de poder de compra.
 
 - **Juro nominal**: taxa anunciada, sem considerar a variação dos preços.
 - **Inflação**: aumento geral dos preços de bens e serviços ao longo do tempo.
@@ -60,7 +60,7 @@ Se você recebe em diferentes moedas (por exemplo, salário em euros e renda ext
 Os relatórios mostram a evolução do seu saldo ao longo do tempo, já ajustados pela inflação. Você vê, em gráficos simples, o crescimento real do seu patrimônio, não apenas o número bruto que aparece na conta.
 
 ### Planejamento mensal e metas  
-Defina metas como “economizar o equivalente a um café por dia” ou “acumular o valor de três aluguéis”. O app calcula quanto você precisa guardar mensalmente, considerando o juro real esperado, e envia alertas quando está no caminho certo.
+Defina metas como “economizar o equivalente a um café por dia” ou “acumular o valor de três aluguéis”. O app calcula quanto você precisa guardar mensalmente, considerando o juro real esperado, e envia [alertas](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto) quando está no caminho certo.
 
 ### Cartões de crédito e fatura em tempo real  
 Ao cadastrar seus cartões, o FinMoovi acompanha os gastos e projeta a fatura. Se a taxa de juros do cartão for alta, o app avisa que o juro real da dívida pode ser negativo, incentivando o pagamento total antes do vencimento.
@@ -76,9 +76,9 @@ Mesmo sem internet, você registra tudo. Quando se conectar, o FinMoovi sincroni
 
 ## Dicas práticas para proteger seu dinheiro da inflação
 
-**Dica prática:** Priorize investimentos que paguem acima da inflação, como títulos indexados ou fundos de renda variável, em vez de deixar tudo na conta corrente.
+**Dica prática:** Priorize investimentos que paguem acima da inflação, como títulos indexados ou fundos de [renda variável](/glossario/renda-variavel), em vez de deixar tudo na conta corrente.
 
-**Dica prática:** Revise suas despesas fixas (aluguel, plano de saúde, transporte) a cada seis meses e ajuste o orçamento para compensar a alta de preços.
+**Dica prática:** Revise suas despesas fixas ([aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026), [plano de saúde](/glossario/plano-de-saude), transporte) a cada seis meses e ajuste o orçamento para compensar a alta de preços.
 
 **Dica prática:** Use o recurso de metas do FinMoovi para definir um “colchão de segurança” equivalente a três meses de despesas, sempre atualizado pelo juro real.
 
@@ -91,7 +91,7 @@ Mesmo sem internet, você registra tudo. Quando se conectar, o FinMoovi sincroni
 ## Comece hoje
 
 1. Abra o FinMoovi e, em 5 minutos, tire uma foto da última nota fiscal que você tem em mãos.  
-2. Deixe o app categorizar automaticamente e veja o gasto aparecer no seu fluxo de caixa.  
+2. Deixe o app categorizar automaticamente e veja o gasto aparecer no seu [fluxo de caixa](/glossario/fluxo-de-caixa).  
 3. Acesse a aba “Metas” e crie uma meta de “economizar o equivalente a um aluguel” usando o cálculo de juro real sugerido.  
 
 Pronto! Em menos de cinco minutos você já está monitorando o juro real do seu dinheiro e dando o primeiro passo para que ele realmente cresça. Boa jornada financeira!

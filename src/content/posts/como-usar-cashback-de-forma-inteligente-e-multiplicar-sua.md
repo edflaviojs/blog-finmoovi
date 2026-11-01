@@ -15,7 +15,8 @@ tags:
   - economia
   - dinheiro
 author: FinMoovi
-publishedAt: 2026-07-17T00:00:00.000Z
+publishedAt: 2026-07-17
+updatedAt: 2026-11-01T00:00:00.000Z
 readingTime: 5
 featured: true
 translationKey: como-usar-cashback-de-forma-inteligente-e-multiplicar-sua

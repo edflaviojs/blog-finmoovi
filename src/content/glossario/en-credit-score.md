@@ -28,7 +28,7 @@ Credit score is a note from 0 to 1000 that credit bureaus give to you. This note
 
 **Increases:**
 - Paying bills on time
-- Having a long history of good payments
+- Having a [long](/en/glossario/en-long) history of good payments
 - Having accounts in your name (electricity, phone)
 - Active positive registration
 

@@ -18,7 +18,8 @@ tags:
   - comprar dólar investimento
   - dolarizar carteira
 author: FinMoovi
-publishedAt: 2026-07-08T00:00:00.000Z
+publishedAt: 2026-07-08
+updatedAt: 2026-11-01T00:00:00.000Z
 readingTime: 4
 featured: false
 translationKey: investir-em-dolar-no-brasil

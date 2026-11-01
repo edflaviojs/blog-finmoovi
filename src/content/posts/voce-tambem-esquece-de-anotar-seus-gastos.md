@@ -8,6 +8,7 @@ locale: "pt"
 tags: ["finanças pessoais","controle de gastos","aplicativos financeiros","FinMoovi","gestão de despesas","categorização automática","aplicativo de finanças","controle de despesas","finmoovi"]
 author: "FinMoovi"
 publishedAt: 2026-07-08
+updatedAt: 2026-11-01
 readingTime: 4
 featured: false
 translationKey: "voce-tambem-esquece-de-anotar-seus-gastos"

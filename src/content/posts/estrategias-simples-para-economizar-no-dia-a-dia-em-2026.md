@@ -9,6 +9,7 @@ locale: "pt"
 tags: ["como poupar dinheiro dicas","finanças pessoais","economia","dinheiro"]
 author: "FinMoovi"
 publishedAt: 2026-08-02
+updatedAt: 2026-11-01
 readingTime: 5
 featured: true
 translationKey: "estrategias-simples-para-economizar-no-dia-a-dia-em-2026"

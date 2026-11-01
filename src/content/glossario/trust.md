@@ -20,7 +20,7 @@ seo:
 
 ## O que é trust  
 
-Um trust (ou fundo fiduciário) é um acordo legal onde uma pessoa – o **settlor** – transfere bens para outra pessoa ou instituição – o **trustee** – que passa a administrar esses bens em benefício de terceiros – os **beneficiários**. Pense como se fosse um cofre que você entrega a um amigo de confiança para guardar o presente de aniversário de um filho até a data certa. O trust protege o patrimônio, define regras de uso e pode durar anos, mesmo atravessando gerações.
+Um trust (ou fundo fiduciário) é um acordo legal onde uma pessoa – o **settlor** – transfere bens para outra pessoa ou instituição – o **trustee** – que passa a administrar esses bens em benefício de terceiros – os **beneficiários**. Pense como se fosse um cofre que você entrega a um amigo de confiança para guardar o presente de aniversário de um filho até a data certa. O trust protege o [patrimônio](/glossario/patrimonio), define regras de uso e pode durar anos, mesmo atravessando gerações.
 
 ![O que é trust  ](/images/glossario/trust-inline-1.webp)
 
@@ -28,7 +28,7 @@ Um trust (ou fundo fiduciário) é um acordo legal onde uma pessoa – o **settl
 
 ## Por que alguém cria um trust  
 
-- **Proteção contra imprevistos** – Se você tem um imóvel ou uma poupança que quer garantir que só será usado para a educação dos filhos, o trust impede que credores ou até mesmo um divórcio interfiram.  
+- **Proteção contra imprevistos** – Se você tem um imóvel ou uma [poupança](/glossario/poupanca) que quer garantir que só será usado para a educação dos filhos, o trust impede que credores ou até mesmo um divórcio interfiram.  
 - **Planejamento sucessório** – Em vez de deixar tudo à herança, que pode gerar disputas e impostos altos, o trust permite distribuir os bens conforme sua vontade, passo a passo.  
 - **Gestão profissional** – O trustee pode ser um banco ou um advogado especializado, que cuida dos investimentos, paga contas e gera relatórios claros.  
 
@@ -57,10 +57,10 @@ Mas atenção:
 
 ## Como o FinMoovi ajuda a gerenciar um trust  
 
-- **Captura inteligente** – Tire foto da nota de honorários do advogado ou grave a voz descrevendo uma nova condição do trust; o app reconhece e categoriza automaticamente.  
+- **[Captura inteligente](/posts/cansado-de-perder-horas-nas-planilhas-como-o-finmoovi)** – Tire foto da nota de honorários do advogado ou grave a voz descrevendo uma nova condição do trust; o app reconhece e categoriza automaticamente.  
 - **Multimoeda** – Se o trust inclui ativos em dólares, euros ou reais, o FinMoovi converte tudo em tempo real, facilitando o controle do valor total.  
-- **Fluxo de caixa e relatórios** – Visualize entradas (investimentos, rendimentos) e saídas (despesas, distribuições) em gráficos claros, como quem tem acesso ao saldo do trust a cada mês.  
-- **Planejamento mensal / metas** – Defina metas como “acumular o equivalente a duas vezes o valor de um aluguel para a educação dos netos em 5 anos” e acompanhe o progresso.  
+- **[Fluxo de caixa](/glossario/fluxo-de-caixa) e relatórios** – Visualize entradas (investimentos, rendimentos) e saídas (despesas, distribuições) em gráficos claros, como quem tem acesso ao saldo do trust a cada mês.  
+- **Planejamento mensal / metas** – Defina metas como “acumular o equivalente a duas vezes o valor de um [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026) para a educação dos netos em 5 anos” e acompanhe o progresso.  
 - **Cartões de crédito / fatura** – Se o trustee usa cartão para pagar despesas do trust, o app traz a fatura completa, categorizando cada gasto.  
 - **Modo compras** – Crie listas de compras para o trust (por exemplo, material escolar) e veja o total em tempo real, evitando ultrapassar o orçamento.  
 - **Lembretes / alertas de saldo** – Receba notificações quando o saldo cair abaixo de um limite que você definiu, ou quando uma distribuição estiver próxima da data.  
@@ -78,4 +78,4 @@ Mas atenção:
 2. Tire foto da primeira nota de honorários ou grave a voz explicando a finalidade do trust; deixe o app categorizar.  
 3. Defina um alerta de saldo mínimo (por exemplo, “não deixar o trust abaixo de duas vezes o preço de um aluguel”).  
 
-Em menos de cinco minutos você já tem o ponto de partida para proteger seu patrimônio e acompanhar tudo de forma simples, como se fosse uma conversa com um amigo que entende de finanças. Boa gestão!
+Em menos de cinco minutos você já tem o ponto de partida para proteger seu patrimônio e acompanhar tudo de forma simples, como se fosse uma conversa com um amigo que entende de [finanças](/glossario/financas). Boa gestão!

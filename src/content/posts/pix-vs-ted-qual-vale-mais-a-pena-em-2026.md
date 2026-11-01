@@ -9,6 +9,7 @@ locale: "pt"
 tags: ["PIX","TED","transferência bancária","custos bancários","FinMoovi","2026","finanças pessoais","pix vs ted"]
 author: "FinMoovi"
 publishedAt: 2026-07-24
+updatedAt: 2026-11-01
 readingTime: 6
 featured: false
 translationKey: "pix-vs-ted-qual-vale-mais-a-pena-em-2026"

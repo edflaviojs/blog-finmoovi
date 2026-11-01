@@ -19,7 +19,8 @@ tags:
   - metas de pagamento
   - financiamiento
 author: FinMoovi
-publishedAt: 2026-08-03T00:00:00.000Z
+publishedAt: 2026-08-03
+updatedAt: 2026-11-01T00:00:00.000Z
 readingTime: 7
 featured: false
 translationKey: como-garantir-financiamento-para-seus-projetos-sem-dor-de

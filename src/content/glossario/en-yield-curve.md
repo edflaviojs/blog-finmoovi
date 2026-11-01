@@ -30,7 +30,7 @@ Understanding this dynamic helps you decide when it’s more advantageous to inv
 
 ## How the Yield Curve Works in Practice
 
-Imagine you have two investment options:
+Imagine you have two [investment](/en/glossario/en-investment) options:
 
 - A security that pays 2 % per year and matures in 6 months.
 - A security that pays 5 % per year and matures in 5 years.
@@ -39,7 +39,7 @@ The difference between these percentages is exactly what the yield curve is show
 
 ### Why Does This Matter for Your Wallet?
 
-- **Goal planning** – If you plan to buy a car in two years, you can choose a medium‑term security that offers a better return than a savings account, yet still has enough liquidity.
+- **Goal [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips)** – If you plan to buy a car in two years, you can choose a medium‑term security that offers a better return than a savings account, yet still has enough liquidity.
 - **Debt management** – When the curve is inverted, short‑term loan rates tend to rise. This can be a signal to renegotiate debts before costs increase.
 - **Inflation protection** – In periods of an upward‑sloping curve, long‑term securities often include protection against price rises, helping preserve purchasing power.
 
@@ -50,14 +50,14 @@ FinMoovi is not just an expense tracker; it turns complex financial data into si
 ![FinMoovi and the Yield Curve: What the App Does for You](/images/glossario/yield-curve-inline-3.webp)
 
 1. **Bill photo** – You take a picture of your credit‑card bill or investment statement. The algorithm recognizes each line, identifies whether it’s an interest payment, a redemption, or a new contribution.
-2. **Automatic categorization** – The app classifies everything into “Short‑term investments,” “Long‑term securities,” “Fixed expenses,” etc., without you having to type anything.
+2. **[Automatic categorization](/en/posts/en-automatic-expense-categorization-with-ai-keep-your-finances)** – The app classifies everything into “Short‑term investments,” “Long‑term securities,” “Fixed expenses,” etc., without you having to type anything.
 3. **Curve analysis** – Inside the “Reports” panel, FinMoovi shows the current yield curve (in USD, EUR or any other currency you choose) and compares it with your portfolio. You see, in real time, whether you’re paying more interest than you could be earning.
 4. **Adjustment suggestions** – If the curve indicates that 2‑year securities are offering a better return than 6‑month ones, the app recommends reallocating part of the money that’s “stuck” in short‑term investments.
 
 In addition, FinMoovi offers:
 
 - **Multi‑currency** – Track investments in dollars, euros or any other currency, ideal for those with income from different countries.
-- **Cash flow and reports** – Visualize inflows and outflows throughout the month, with charts showing how the yield curve impacts your balance.
+- **[Cash flow](/en/glossario/en-cash-flow) and reports** – Visualize inflows and outflows throughout the month, with charts showing how the yield curve impacts your balance.
 - **Monthly planning and goals** – Set objectives like “save the equivalent of two months’ rent” and see how choosing securities helps you reach it.
 - **Shopping mode** – Create shopping lists, see the total in real time and get alerts if spending exceeds the limit you set.
 - **Balance reminders and alerts** – Get notifications when the balance falls below a threshold or when the curve changes significantly.
@@ -83,7 +83,7 @@ Many think that understanding the curve requires years of economics study. In re
 
 1. **Normal curve** = long‑term rates > short‑term rates → growth expectation.
 2. **Inverted curve** = short‑term rates > long‑term rates → warning of possible recession.
-3. **Flat curve** = little difference between the two → indecisive market, high volatility.
+3. **Flat curve** = little difference between the two → indecisive market, high [volatility](/en/glossario/en-volatility).
 
 With FinMoovi, these concepts appear as colored icons and simple alerts, without having to decipher complicated tables.
 
@@ -99,4 +99,4 @@ The yield curve can be the compass you’ve been missing to organize your money 
 - Set a simple goal, like “save the equivalent of two months’ rent in the next 6 months.”
 - Save and let the app send a reminder tomorrow to review progress.
 
-In less than five minutes you’ll have the yield curve integrated into your financial planning. Now just follow the alerts and let FinMoovi do the heavy lifting while you focus on what really matters.
+In less than five minutes you’ll have the yield curve integrated into your [financial planning](/en/glossario/en-financial-planning). Now just follow the alerts and let FinMoovi do the heavy lifting while you focus on what really matters.

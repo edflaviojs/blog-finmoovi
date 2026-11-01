@@ -20,7 +20,7 @@ seo:
 
 ## Por que você sente que não sabe quanto vale seu negócio ou seu investimento
 
-Você já tentou vender um produto que criou, ou avaliar se aquela ação que comprou vai realmente valer a pena? Na hora de decidir, a sensação de estar no escuro é comum: “Será que estou pagando caro demais? Será que estou subvalorizando o que eu tenho?” Essa dúvida surge porque falta um método claro para mensurar o valor real de algo. O termo **valuation** é exatamente a resposta para essa dor: ele traz um jeito estruturado de descobrir quanto algo vale, seja uma empresa, um imóvel, um projeto ou até mesmo um investimento pessoal.
+Você já tentou vender um produto que criou, ou avaliar se aquela ação que comprou vai realmente valer a pena? Na hora de decidir, a sensação de estar no escuro é comum: “Será que estou pagando caro demais? Será que estou subvalorizando o que eu tenho?” Essa dúvida surge porque falta um método claro para mensurar o valor real de algo. O termo **valuation** é exatamente a resposta para essa dor: ele traz um jeito estruturado de descobrir quanto algo vale, seja uma empresa, um imóvel, um projeto ou até mesmo um [investimento](/glossario/investimento) pessoal.
 
 ![Por que você sente que não sabe quanto vale seu negócio ou seu investimento](/images/glossario/valuation-inline-1.webp)
 
@@ -28,9 +28,9 @@ Você já tentou vender um produto que criou, ou avaliar se aquela ação que co
 
 ## O que é valuation e como ele funciona
 
-Valuation, ou avaliação de valor, é o processo de estimar o preço justo de um ativo. Não se trata de adivinhar; são usadas informações concretas como receitas, despesas, fluxo de caixa futuro e comparáveis de mercado. Existem três abordagens principais:
+Valuation, ou avaliação de valor, é o processo de estimar o preço justo de um ativo. Não se trata de adivinhar; são usadas informações concretas como receitas, despesas, [fluxo de caixa](/glossario/fluxo-de-caixa) futuro e comparáveis de mercado. Existem três abordagens principais:
 
-- **Fluxo de caixa descontado (DCF)**: projeta o dinheiro que o ativo vai gerar no futuro e traz esse valor para o presente usando uma taxa de desconto.
+- **[Fluxo de caixa descontado](/glossario/fluxo-de-caixa-descontado) (DCF)**: projeta o dinheiro que o ativo vai gerar no futuro e traz esse valor para o presente usando uma taxa de desconto.
 - **Múltiplos de mercado**: compara o ativo com outros semelhantes que já foram negociados, usando indicadores como preço/lucro ou EV/EBITDA.
 - **Valor patrimonial**: soma os bens e subtrai as dívidas, útil para empresas com ativos tangíveis.
 
@@ -46,7 +46,7 @@ Mesmo que você não seja executivo, o conceito pode ser usado em situações co
 
 - **Avaliar um negócio próprio** antes de buscar investidores ou vender.
 - **Decidir se vale a pena comprar um carro usado** comparando o preço pedido com o valor de mercado.
-- **Planejar a aposentadoria**, estimando quanto seu portfólio precisará gerar de fluxo de caixa.
+- **[Planejar a aposentadoria](/ferramentas/calculadora-aposentadoria)**, estimando quanto seu portfólio precisará gerar de fluxo de caixa.
 
 Para colocar a mão na massa, siga estes passos práticos:
 
@@ -59,7 +59,7 @@ Para colocar a mão na massa, siga estes passos práticos:
 
 A parte mais chata de qualquer avaliação é reunir e organizar os números. É aí que o **FinMoovi** entra como aquele amigo que já tem tudo pronto:
 
-- **Captura inteligente**: tire foto da nota fiscal ou grave a voz da conversa de negócios; o app reconhece valores e categorias automaticamente.
+- **[Captura inteligente](/posts/cansado-de-perder-horas-nas-planilhas-como-o-finmoovi)**: tire foto da nota fiscal ou grave a voz da conversa de negócios; o app reconhece valores e categorias automaticamente.
 - **Multimoeda**: registre tudo em BRL, USD ou EUR sem precisar fazer conversões manuais; o app usa a cotação do dia.
 - **Fluxo de caixa e relatórios**: veja, em poucos cliques, quanto dinheiro entrou e saiu, projetando o futuro com base nos seus próprios dados.
 - **Planejamento mensal / metas**: defina objetivos de lucro ou economia e acompanhe o progresso.
@@ -86,7 +86,7 @@ Com esses recursos, você tem os números na palma da mão, prontos para aliment
 
 ## Quando o valuation realmente importa
 
-- **Negociação de compra ou venda**: saber o valor justo evita pagar demais ou vender barato.
+- **[Negociação](/glossario/negociacao) de compra ou venda**: saber o valor justo evita pagar demais ou vender barato.
 - **Captação de investidores**: investidores exigem números claros; um valuation bem feito demonstra profissionalismo.
 - **Planejamento estratégico**: entender o valor dos seus ativos ajuda a decidir onde investir recursos, seja em marketing, tecnologia ou expansão.
 

@@ -28,13 +28,13 @@ seo:
 
 ## ¿Qué es una subasta en el mundo financiero?
 
-Una subasta, o *leilão* en portugués, es un proceso donde se venden bienes o activos al mejor postor. En finanzas, se usa para describir la venta de títulos, divisas o incluso bonos del gobierno. Imagina que una empresa necesita dinero rápido y decide vender parte de sus acciones al mejor precio que pueda obtener; eso es una subasta. El mecanismo es simple: varios compradores hacen ofertas y el que ofrece más se lleva el bien. Lo importante es que el precio final puede variar mucho según la demanda, lo que genera incertidumbre para quien compra sin estar bien informado.
+Una subasta, o *leilão* en portugués, es un proceso donde se venden bienes o activos al mejor postor. En finanzas, se usa para describir la venta de títulos, divisas o incluso bonos del gobierno. Imagina que una empresa necesita dinero rápido y decide vender parte de sus [acciones](/es/glossario/es-acciones) al mejor precio que pueda obtener; eso es una subasta. El mecanismo es simple: varios compradores hacen ofertas y el que ofrece más se lleva el bien. Lo importante es que el precio final puede variar mucho según la demanda, lo que genera incertidumbre para quien compra sin estar bien informado.
 
 ## Por qué una subasta puede afectar tu bolsillo sin que lo notes
 
 - **Variabilidad del precio:** al no saber cuánto pagará exactamente, puedes terminar pagando más de lo que esperabas.
 - **Falta de seguimiento:** si compras en una subasta y no registras el gasto, ese desembolso se pierde en la lista de “gastos varios”.
-- **Impacto en el flujo de caja:** una compra grande y repentina reduce el dinero disponible para tus gastos cotidianos.
+- **Impacto en el [flujo de caja](/es/glossario/es-flujo-de-caja):** una compra grande y repentina reduce el dinero disponible para tus gastos cotidianos.
 
 ![Por qué una subasta puede afectar tu bolsillo sin que lo notes](/images/glossario/leilao-inline-3.webp)
 
@@ -44,11 +44,11 @@ Una subasta, o *leilão* en portugués, es un proceso donde se venden bienes o a
 
 FinMoovi es como ese amigo que siempre lleva una libreta y una calculadora, pero en versión digital y mucho más inteligente. Sus funciones clave te permiten ver, organizar y planificar cada centavo, incluso cuando participas en una subasta o haces una compra inesperada.
 
-- **Captura inteligente:** toma una foto del recibo o graba una nota de voz y la app lo convierte en un registro automático.
-- **Categorización automática:** el algoritmo reconoce si el gasto es “inversión”, “educación” o “entretenimiento” y lo coloca en la categoría correcta sin que tengas que mover nada.
+- **[Captura inteligente](/es/posts/es-cansado-de-perder-horas-en-hojas-de-calculo-asi-finmoovi-lo):** toma una foto del recibo o graba una nota de voz y la app lo convierte en un registro automático.
+- **Categorización automática:** el algoritmo reconoce si el gasto es “[inversión](/es/glossario/es-inversion)”, “educación” o “entretenimiento” y lo coloca en la categoría correcta sin que tengas que mover nada.
 - **Multimoneda:** maneja diferentes monedas (USD, EUR, etc.) sin que tengas que hacer conversiones manuales.
 - **Flujo de caja e informes:** visualiza en tiempo real cuánto entra y sale, con gráficos que te muestran si estás gastando más de lo que ganas.
-- **Planificación mensual y metas:** define cuánto quieres ahorrar para un viaje o para un fondo de emergencia y la app te avisa si te estás desviando.
+- **Planificación mensual y metas:** define cuánto quieres [ahorrar](/es/posts/es-ahorra-en-la-farmacia-sin-sacrificios-guia-practica-2026) para un viaje o para un [fondo de emergencia](/es/glossario/es-fondo-de-emergencia) y la app te avisa si te estás desviando.
 - **Tarjetas de crédito y facturación:** enlaza tus tarjetas y la app te muestra el saldo pendiente, la fecha de corte y el pago mínimo.
 - **Modo compras:** crea listas de la compra, ve el total en tiempo real y evita sorpresas al pasar por la caja.
 - **Recordatorios y alertas de saldo:** recibe notificaciones cuando el saldo está bajo o cuando una subasta está por cerrar.

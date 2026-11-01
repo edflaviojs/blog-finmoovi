@@ -20,7 +20,7 @@ seo:
 
 ## Por que você sente que o dinheiro some e não sabe onde está
 
-Você já chegou ao fim do mês e percebeu que gastou quase tudo, mas não consegue lembrar onde cada centavo foi gasto? Talvez tenha anotado tudo no bloco de notas do celular, mas ainda assim sente que falta controle. Essa sensação de “não saber o que está acontecendo” é comum, e a raiz do problema costuma ser a falta de indicadores claros sobre o desempenho das suas finanças. É aí que entram os **KPIs** – os indicadores-chave de desempenho – que ajudam a transformar números confusos em informações úteis para tomar decisões.
+Você já chegou ao fim do mês e percebeu que gastou quase tudo, mas não consegue lembrar onde cada centavo foi gasto? Talvez tenha anotado tudo no bloco de notas do celular, mas ainda assim sente que falta controle. Essa sensação de “não saber o que está acontecendo” é comum, e a raiz do problema costuma ser a falta de indicadores claros sobre o desempenho das suas [finanças](/glossario/financas). É aí que entram os **KPIs** – os indicadores-chave de desempenho – que ajudam a transformar números confusos em informações úteis para tomar decisões.
 
 ![Por que você sente que o dinheiro some e não sabe onde está](/images/glossario/key-performance-indicator-inline-1.webp)
 
@@ -28,7 +28,7 @@ Você já chegou ao fim do mês e percebeu que gastou quase tudo, mas não conse
 
 ## O que é um KPI e por que ele importa
 
-KPI (Key Performance Indicator) é simplesmente um número que mede o quão bem você está atingindo um objetivo financeiro. Pense nele como o velocímetro do seu carro: mostra a velocidade atual e indica se você está dentro do limite ou precisando desacelerar. No mundo das finanças pessoais, os KPIs podem ser coisas como:
+KPI (Key Performance Indicator) é simplesmente um número que mede o quão bem você está atingindo um objetivo financeiro. Pense nele como o velocímetro do seu carro: mostra a velocidade atual e indica se você está dentro do limite ou precisando desacelerar. No mundo das [finanças pessoais](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar), os KPIs podem ser coisas como:
 
 - **Taxa de poupança** – quanto do que você ganha realmente guarda.
 - **Gasto médio mensal com alimentação** – quanto você gasta em supermercado e restaurantes.
@@ -38,7 +38,7 @@ Esses indicadores são “chave” porque dão uma visão rápida e objetiva do 
 
 ## Como criar KPIs simples para o seu dia a dia
 
-Antes de tudo, escolha metas que façam sentido para a sua realidade. Não adianta medir a “rentabilidade de ações” se você ainda não tem uma reserva de emergência. Comece com três indicadores básicos:
+Antes de tudo, escolha metas que façam sentido para a sua realidade. Não adianta medir a “rentabilidade de ações” se você ainda não tem uma [reserva de emergência](/ferramentas/calculadora-reserva). Comece com três indicadores básicos:
 
 ![Como criar KPIs simples para o seu dia a dia](/images/glossario/key-performance-indicator-inline-3.webp)
 
@@ -62,7 +62,7 @@ Se você recebe em diferentes moedas – por exemplo, salário em euros e renda 
 
 ### Fluxo de caixa e relatórios
 
-O app cria um fluxo de caixa visual, mostrando entradas e saídas ao longo do mês. A partir daí, ele calcula automaticamente a taxa de poupança, o gasto médio por categoria e o índice de endividamento, exibindo esses KPIs em gráficos fáceis de entender.
+O app cria um [fluxo de caixa](/glossario/fluxo-de-caixa) visual, mostrando entradas e saídas ao longo do mês. A partir daí, ele calcula automaticamente a taxa de poupança, o gasto médio por categoria e o índice de endividamento, exibindo esses KPIs em gráficos fáceis de entender.
 
 ### Planejamento mensal e metas
 
@@ -70,11 +70,11 @@ Defina metas como “guardar o equivalente a duas vezes o preço de um café por
 
 ### Cartões de crédito e fatura
 
-Ao cadastrar seus cartões, o app traz a fatura em tempo real, categorizando cada compra. Assim, você vê imediatamente quanto está gastando em cada categoria e como isso impacta seu KPI de gasto variável.
+Ao cadastrar seus cartões, o app traz a fatura em tempo real, categorizando cada compra. Assim, você vê imediatamente quanto está gastando em cada categoria e como isso impacta seu KPI de [gasto variável](/glossario/gasto-variavel).
 
 ### Modo compras: lista + total em tempo real
 
-Crie uma lista de compras e, à medida que adiciona itens, o FinMoovi soma o total. Quando o valor ultrapassa o limite que você definiu para o mês, o app avisa, ajudando a manter o KPI de gasto variável sob controle.
+Crie uma [lista de compras](/glossario/lista-de-compras) e, à medida que adiciona itens, o FinMoovi soma o total. Quando o valor ultrapassa o limite que você definiu para o mês, o app avisa, ajudando a manter o KPI de gasto variável sob controle.
 
 ### Lembretes e alertas de saldo
 

@@ -28,12 +28,12 @@ Te pasa que revisas tus estados de cuenta, ves que tus ingresos cubren los gasto
 
 ## Qué es la valoración y por qué importa
 
-La valoración (valuation) es el proceso de determinar el valor económico de un activo, una empresa o una inversión. No se trata de adivinar; se basa en datos concretos como ingresos, costos, crecimiento esperado y riesgos. En términos simples, es como ponerle precio a una casa: miras el tamaño, la ubicación, el estado y lo comparas con otras similares. Con la valoración sabes si estás pagando de más, si puedes vender con ganancia o si necesitas mejorar algún aspecto para aumentar tu valor.
+La valoración (valuation) es el proceso de determinar el valor económico de un activo, una empresa o una [inversión](/es/glossario/es-inversion). No se trata de adivinar; se basa en datos concretos como ingresos, costos, crecimiento esperado y riesgos. En términos simples, es como ponerle precio a una casa: miras el tamaño, la ubicación, el estado y lo comparas con otras similares. Con la valoración sabes si estás pagando de más, si puedes vender con ganancia o si necesitas mejorar algún aspecto para aumentar tu valor.
 
 ## Impacto de la valoración en decisiones cotidianas
 
 - **Negociar con proveedores**: si sabes que tu negocio vale X, puedes exigir mejores condiciones.
-- **Buscar financiamiento**: los bancos y los inversionistas revisan la valoración antes de prestar o invertir.
+- **Buscar [financiamiento](/es/glossario/es-financiamiento)**: los bancos y los inversionistas revisan la valoración antes de prestar o invertir.
 - **Planificar el futuro**: una valoración realista te ayuda a fijar metas de crecimiento y a medir el progreso.
 
 ![Impacto de la valoración en decisiones cotidianas](/images/glossario/valuation-inline-3.svg)
@@ -46,12 +46,12 @@ Sin una valoración clara, cualquier decisión se vuelve un tiro al aire. Por es
 
 FinMoovi combina varias funciones que hacen que la valoración deje de ser un dolor de cabeza y se convierta en una tarea de pocos minutos:
 
-- **Captura inteligente**: toma una foto del recibo o graba una nota de voz y la app lo categoriza al instante. No más escribir a mano cada gasto.
-- **Categorización automática**: el algoritmo reconoce si el gasto es de operación, marketing o inversión y lo asigna al grupo correcto.
+- **[Captura inteligente](/es/posts/es-cansado-de-perder-horas-en-hojas-de-calculo-asi-finmoovi-lo)**: toma una foto del recibo o graba una nota de voz y la app lo categoriza al instante. No más escribir a mano cada gasto.
+- **[Categorización automática](/es/posts/es-categorizacion-automatica-de-gastos-con-ia-ordena-tus)**: el algoritmo reconoce si el gasto es de operación, marketing o inversión y lo asigna al grupo correcto.
 - **Multimoneda**: trabaja con cualquier moneda (USD, EUR, etc.) y convierte al tipo de cambio del día, ideal si manejas ingresos en diferentes países.
-- **Flujo de caja e informes**: visualiza en tiempo real cuánto entra y sale, y genera reportes que incluyen la valoración basada en tus ingresos y márgenes.
+- **[Flujo de caja](/es/glossario/es-flujo-de-caja) e informes**: visualiza en tiempo real cuánto entra y sale, y genera reportes que incluyen la valoración basada en tus ingresos y márgenes.
 - **Planificación mensual y metas**: define objetivos (por ejemplo, “incrementar el valor del negocio en un 20% en 12 meses”) y la app te muestra el camino.
-- **Tarjetas de crédito y facturas**: importa los movimientos y la app los integra al cálculo de valoración.
+- **Tarjetas de [crédito](/es/glossario/es-credito) y facturas**: importa los movimientos y la app los integra al cálculo de valoración.
 - **Modo compras**: crea una lista, ve el total en tiempo real y evita sobrepasar el presupuesto.
 - **Recordatorios y alertas de saldo**: recibe notificaciones cuando el flujo de caja se estrecha.
 - **Offline / PWA / sincronización**: funciona sin conexión y guarda todo en la nube para que nunca pierdas datos.

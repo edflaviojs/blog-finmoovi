@@ -20,7 +20,7 @@ seo:
 
 ## ¿Por qué el dinero que tienes “atrapado” en una garantía te causa estrés?
 
-Te ha pasado que, al intentar comprar algo importante, te das cuenta de que gran parte de tu dinero está “encajonado” como garantía en un contrato de alquiler, un préstamo o una inversión? Sientes que ese dinero no está disponible para tus gastos cotidianos, y cada vez que revisas tu cuenta ves una cifra que no sabes cómo usar. Ese bloqueo financiero genera incertidumbre y, a la larga, puede impedirte alcanzar metas como ahorrar para un viaje o pagar una deuda.
+Te ha pasado que, al intentar comprar algo importante, te das cuenta de que gran parte de tu dinero está “encajonado” como garantía en un contrato de [alquiler](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026), un préstamo o una [inversión](/es/glossario/es-inversion)? Sientes que ese dinero no está disponible para tus gastos cotidianos, y cada vez que revisas tu cuenta ves una cifra que no sabes cómo usar. Ese bloqueo financiero genera incertidumbre y, a la larga, puede impedirte alcanzar metas como [ahorrar](/es/posts/es-ahorra-en-la-farmacia-sin-sacrificios-guia-practica-2026) para un viaje o pagar una deuda.
 
 ![¿Por qué el dinero que tienes “atrapado” en una garantía te causa estrés?](/images/glossario/margem-de-garantia-inline-1.webp)
 
@@ -28,7 +28,7 @@ Te ha pasado que, al intentar comprar algo importante, te das cuenta de que gran
 
 ## ¿Qué es el margen de garantía y cómo funciona?
 
-El margen de garantía es la cantidad de dinero o activos que una entidad (un banco, una bolsa de valores o un arrendador) exige que mantengas como respaldo para cubrir posibles pérdidas o incumplimientos. En otras palabras, es una especie de “colchón” que garantiza que podrás cumplir con tus obligaciones. Si el valor de tus activos baja o si no pagas a tiempo, la entidad puede usar ese margen para cubrir la diferencia.
+El margen de garantía es la cantidad de dinero o activos que una entidad (un banco, una [bolsa de valores](/es/glossario/es-bolsa-de-valores) o un arrendador) exige que mantengas como respaldo para cubrir posibles pérdidas o incumplimientos. En otras palabras, es una especie de “colchón” que garantiza que podrás cumplir con tus obligaciones. Si el valor de tus activos baja o si no pagas a tiempo, la entidad puede usar ese margen para cubrir la diferencia.
 
 - **Propósito:** proteger a la otra parte del riesgo de impago.
 - **Dónde aparece:** contratos de alquiler, préstamos con garantía, operaciones de margen en bolsa, y algunos productos de inversión.
@@ -50,7 +50,7 @@ FinMoovi es la app que actúa como tu asistente financiero personal. Con sus fun
 
 - **Captura inteligente:** toma una foto del recibo de tu contrato de alquiler o de la notificación de margen y la app lo reconoce automáticamente, clasificándolo como “garantía”. También puedes usar la función de voz para dictar los datos.
 - **Multimoneda:** si tienes garantías en diferentes monedas (por ejemplo, dólares para una inversión y euros para un alquiler), FinMoovi las muestra en una sola vista, convirtiéndolas al tipo de cambio que elijas.
-- **Flujo de caja e informes:** la app genera un informe mensual que separa tus fondos disponibles de los que están en garantía, para que veas claramente cuánto puedes gastar.
+- **[Flujo de caja](/es/glossario/es-flujo-de-caja) e informes:** la app genera un informe mensual que separa tus fondos disponibles de los que están en garantía, para que veas claramente cuánto puedes gastar.
 - **Planificación mensual y metas:** establece metas de ahorro y la app te muestra cuánto margen de garantía deberías reducir cada mes para alcanzar esas metas.
 - **Tarjetas de crédito y facturas:** vincula tus tarjetas y la app te avisa si una compra podría afectar tu margen disponible.
 - **Modo compras:** crea una lista de la compra y ve el total en tiempo real, incluyendo el efecto de cualquier garantía que estés usando como “colchón”.
@@ -59,7 +59,7 @@ FinMoovi es la app que actúa como tu asistente financiero personal. Con sus fun
 
 ## Tres consejos prácticos para manejar tu margen de garantía
 
-**Consejo práctico:** Revisa cada trimestre el porcentaje de tu patrimonio que está en garantía. Si supera el 30 % de tu total, busca opciones para reducirlo, como negociar una garantía menor o cambiar a un contrato sin depósito.
+**Consejo práctico:** Revisa cada trimestre el porcentaje de tu [patrimonio](/es/glossario/es-patrimonio) que está en garantía. Si supera el 30 % de tu total, busca opciones para reducirlo, como negociar una garantía menor o cambiar a un contrato sin depósito.
 
 **Consejo práctico:** Usa la función de captura inteligente de FinMoovi para registrar todas tus garantías en un solo lugar. Así tendrás una visión clara y evitarás que algún pago se te escape porque está “escondido” en un documento físico.
 

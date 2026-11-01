@@ -13,7 +13,8 @@ tags:
   - economia
   - dinheiro
 author: FinMoovi
-publishedAt: 2026-07-10T00:00:00.000Z
+publishedAt: 2026-07-10
+updatedAt: 2026-11-01T00:00:00.000Z
 readingTime: 3
 featured: true
 translationKey: dicas-para-controlar-gastos-no-cartao-de-credito

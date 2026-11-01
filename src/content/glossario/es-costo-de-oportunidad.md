@@ -34,7 +34,7 @@ El costo de oportunidad es lo que dejas de ganar al elegir una opción sobre otr
   
 No necesitas fórmulas complicadas. Solo sigue estos pasos:
 - **Identifica el gasto**: anota cuánto gastas en esa partida (por ejemplo, 10 % de tu ingreso mensual en comidas fuera).
-- **Piensa en la alternativa**: ¿qué podrías haber hecho con ese dinero? Ahorrar, invertir en un fondo de bajo riesgo o pagar una deuda.
+- **Piensa en la alternativa**: ¿qué podrías haber hecho con ese dinero? [Ahorrar](/es/posts/es-ahorra-en-la-farmacia-sin-sacrificios-guia-practica-2026), invertir en un fondo de bajo riesgo o pagar una deuda.
 - **Estima el beneficio**: imagina el rendimiento promedio de esa alternativa (un 5 % anual en una cuenta de ahorros, por ejemplo).
 - **Resta y compara**: el beneficio que dejaste de obtener es tu costo de oportunidad.
 
@@ -46,7 +46,7 @@ Si cada mes ahorras el equivalente a “un alquiler pequeño” y lo dejas en un
 
 ## FinMoovi: la herramienta que te ayuda a ver el costo de oportunidad en tiempo real
   
-Imagina que, al pagar una factura, simplemente tomas una foto del recibo con tu móvil. FinMoovi reconoce la información (captura inteligente) y la clasifica automáticamente: luz, agua, suscripción, comida, etc. Gracias a la **multimoneda**, puedes registrar gastos en cualquier divisa y ver todo en una sola vista. El flujo de caja y los informes te muestran cuánto dinero entra y sale, y, lo más importante, cuánto podrías haber ganado si hubieras destinado una parte a una inversión. La planificación mensual y las metas te permiten asignar “dinero de oportunidad” a proyectos como un viaje o un fondo de emergencia. Además, el modo compras te muestra una lista con el total en tiempo real, evitando sorpresas al llegar a la caja. Con recordatorios de saldo y alertas, nunca olvidarás pagar una tarjeta de crédito y evitarás intereses que erosionan tu capital. Todo funciona offline y se sincroniza cuando vuelves a estar en línea, así que no pierdes datos aunque estés de vacaciones.
+Imagina que, al pagar una factura, simplemente tomas una foto del recibo con tu móvil. FinMoovi reconoce la información (captura inteligente) y la clasifica automáticamente: luz, agua, suscripción, comida, etc. Gracias a la **multimoneda**, puedes registrar gastos en cualquier divisa y ver todo en una sola vista. El [flujo de caja](/es/glossario/es-flujo-de-caja) y los informes te muestran cuánto dinero entra y sale, y, lo más importante, cuánto podrías haber ganado si hubieras destinado una parte a una [inversión](/es/glossario/es-inversion). La planificación mensual y las metas te permiten asignar “dinero de oportunidad” a proyectos como un viaje o un [fondo de emergencia](/es/glossario/es-fondo-de-emergencia). Además, el modo compras te muestra una lista con el total en tiempo real, evitando sorpresas al llegar a la caja. Con recordatorios de saldo y alertas, nunca olvidarás pagar una tarjeta de [crédito](/es/glossario/es-credito) y evitarás intereses que erosionan tu capital. Todo funciona offline y se sincroniza cuando vuelves a estar en línea, así que no pierdes datos aunque estés de [vacaciones](/es/posts/es-5-consejos-para-reorganizar-tus-finanzas-en-vacaciones).
 
 ## Consejos prácticos para reducir tu costo de oportunidad
   

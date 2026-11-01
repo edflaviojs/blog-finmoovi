@@ -14,7 +14,8 @@ tags:
   - presente dia dos pais
   - father's day budget
 author: FinMoovi
-publishedAt: 2026-07-25T00:00:00.000Z
+publishedAt: 2026-07-25
+updatedAt: 2026-11-01T00:00:00.000Z
 readingTime: 4
 featured: false
 translationKey: dia-dos-pais-planeje-gastos-sem-apertar-o-orcamento

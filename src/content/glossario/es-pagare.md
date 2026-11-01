@@ -20,7 +20,7 @@ seo:
 
 ## ¿Por qué una nota promissória puede volverse tu peor pesadilla financiera?
 
-Te levantas, revisas tu cuenta y ves que el saldo no alcanza para pagar la luz, el alquiler y la cena de la semana. En medio del estrés, recuerdas que hace dos meses aceptaste una **nota promissória** para comprar una bicicleta de montaña. No tenías suficiente efectivo, así que firmaste ese papel prometiendo pagar en tres cuotas mensuales. Ahora, la primera fecha ya pasó y el cobro se está acumulando con intereses que ni siquiera comprendías. Ese documento, que parecía una solución rápida, se ha convertido en una carga que afecta tu flujo de caja y te impide planificar tus gastos.
+Te levantas, revisas tu cuenta y ves que el saldo no alcanza para pagar la luz, el [alquiler](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026) y la cena de la semana. En medio del estrés, recuerdas que hace dos meses aceptaste una **nota promissória** para comprar una bicicleta de montaña. No tenías suficiente efectivo, así que firmaste ese papel prometiendo pagar en tres cuotas mensuales. Ahora, la primera fecha ya pasó y el cobro se está acumulando con intereses que ni siquiera comprendías. Ese documento, que parecía una solución rápida, se ha convertido en una carga que afecta tu [flujo de caja](/es/glossario/es-flujo-de-caja) y te impide planificar tus gastos.
 
 ![¿Por qué una nota promissória puede volverse tu peor pesadilla financiera?](/images/glossario/nota-promissoria-inline-1.webp)
 
@@ -28,7 +28,7 @@ Te levantas, revisas tu cuenta y ves que el saldo no alcanza para pagar la luz, 
 
 ## ¿Qué es exactamente una nota promissória?
 
-Una nota promissória, o pagaré, es un documento escrito en el que una persona (el emisor) se compromete a pagar una suma de dinero a otra (el beneficiario) en una fecha futura o bajo ciertas condiciones. No es un préstamo bancario formal; es más bien un acuerdo privado entre partes. En términos simples, es como una promesa escrita de que “te pagaré X cantidad en Y tiempo”.  
+Una nota promissória, o pagaré, es un documento escrito en el que una persona (el emisor) se compromete a pagar una suma de dinero a otra (el beneficiario) en una fecha futura o bajo ciertas condiciones. No es un [préstamo](/es/glossario/es-prestamo) bancario formal; es más bien un acuerdo privado entre partes. En términos simples, es como una promesa escrita de que “te pagaré X cantidad en Y tiempo”.  
 
 - **Emisor:** quien firma la promesa de pago.  
 - **Beneficiario:** quien recibe la promesa y tiene derecho a cobrar.  
@@ -36,13 +36,13 @@ Una nota promissória, o pagaré, es un documento escrito en el que una persona 
 - **Fecha de vencimiento:** el día en que debe hacerse el pago.  
 - **Intereses y penalizaciones:** pueden incluirse, pero deben estar claros en el documento.
 
-Aunque suene sencillo, la falta de claridad o la ausencia de un seguimiento riguroso pueden generar problemas como retrasos, cargos extra y, en el peor de los casos, acciones legales.
+Aunque suene sencillo, la falta de claridad o la ausencia de un seguimiento riguroso pueden generar problemas como retrasos, cargos extra y, en el peor de los casos, [acciones](/es/glossario/es-acciones) legales.
 
 ## Riesgos comunes al usar una nota promissória
 
 - **Falta de registro automático:** sin una herramienta que te avise, es fácil olvidar la fecha de vencimiento.  
 - **Intereses inesperados:** si el documento no especifica bien la tasa, puedes terminar pagando mucho más que el valor original.  
-- **Impacto en el flujo de caja:** al comprometer dinero futuro, reduces la liquidez disponible para gastos cotidianos.  
+- **Impacto en el flujo de caja:** al comprometer dinero futuro, reduces la [liquidez](/es/glossario/es-liquidez) disponible para gastos cotidianos.  
 - **Dificultad para renegociar:** al ser un acuerdo privado, cualquier cambio requiere la aceptación de ambas partes, lo que a veces complica la situación.
 
 ![Riesgos comunes al usar una nota promissória](/images/glossario/nota-promissoria-inline-3.webp)
@@ -53,7 +53,7 @@ Aunque suene sencillo, la falta de claridad o la ausencia de un seguimiento rigu
 
 Imagina que, en lugar de anotar la fecha en un papel o en tu agenda, tomas una foto del pagaré con tu móvil. FinMoovi reconoce automáticamente la información clave (valor, fecha, intereses) y la clasifica como “deuda a pagar”. Además, la app te permite:
 
-- **Captura inteligente:** solo apuntas la cámara o grabas un mensaje de voz y la app extrae los datos.  
+- **[Captura inteligente](/es/posts/es-cansado-de-perder-horas-en-hojas-de-calculo-asi-finmoovi-lo):** solo apuntas la cámara o grabas un mensaje de voz y la app extrae los datos.  
 - **Multimoneda:** si la nota está en dólares, euros o cualquier otra moneda, FinMoovi la convierte al valor equivalente en tu moneda local para que veas el impacto real.  
 - **Flujo de caja e informes:** visualizas cómo esa deuda afecta tu saldo mensual y puedes ajustar otros gastos.  
 - **Planificación mensual y metas:** estableces una meta de ahorro y la app te muestra cuánto debes reservar cada mes para cumplir con la nota sin sacrificar otras prioridades.  

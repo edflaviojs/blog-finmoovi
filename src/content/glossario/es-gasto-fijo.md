@@ -32,4 +32,4 @@ Imagina que al cerrar el día, revisas tu cuenta y ves que ya no queda nada para
 
 
 
-Un gasto fijo es cualquier desembolso que ocurre regularmente con la misma cantidad o muy similar, independientemente de cuánto consumas o de tus hábitos del momento. A diferencia de los gastos variables, que cambian según tu consumo (como la compra de alimentos o la gasolina), los fijos
+Un [gasto](/es/glossario/es-gasto) fijo es cualquier desembolso que ocurre regularmente con la misma cantidad o muy similar, independientemente de cuánto consumas o de tus hábitos del momento. A diferencia de los gastos variables, que cambian según tu consumo (como la compra de alimentos o la gasolina), los fijos

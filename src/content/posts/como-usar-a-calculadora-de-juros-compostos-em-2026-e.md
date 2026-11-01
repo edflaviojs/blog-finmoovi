@@ -9,6 +9,7 @@ locale: "pt"
 tags: ["calculadora juros compostos","finanças pessoais","economia","dinheiro"]
 author: "FinMoovi"
 publishedAt: 2026-07-28
+updatedAt: 2026-11-01
 readingTime: 7
 featured: true
 translationKey: "como-usar-a-calculadora-de-juros-compostos-em-2026-e"

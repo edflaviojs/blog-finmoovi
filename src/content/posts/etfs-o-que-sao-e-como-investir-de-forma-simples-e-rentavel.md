@@ -20,7 +20,8 @@ tags:
   - como investir etf
   - etf para iniciantes
 author: FinMoovi
-publishedAt: 2026-07-15T00:00:00.000Z
+publishedAt: 2026-07-15
+updatedAt: 2026-11-01T00:00:00.000Z
 readingTime: 5
 featured: false
 translationKey: etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel

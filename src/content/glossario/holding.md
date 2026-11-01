@@ -20,7 +20,7 @@ seo:
 
 ## O que é holding  
 
-Você já percebeu que, ao comprar um imóvel, abrir uma empresa ou investir em ações, acaba tendo que lidar com várias contas, documentos e impostos diferentes? Essa bagunça costuma gerar dúvidas e até medo de errar. A holding é uma estrutura que funciona como um “guarda‑roupa” para os seus ativos: ela reúne tudo em um único lugar, facilitando a gestão e a proteção do seu patrimônio. Em termos simples, uma holding é uma empresa criada para deter (ou “segurar”) participações em outras empresas, imóveis, investimentos e até direitos autorais. Ela não precisa produzir nada; seu objetivo principal é organizar e controlar o que você possui.
+Você já percebeu que, ao comprar um imóvel, abrir uma empresa ou investir em ações, acaba tendo que lidar com várias contas, documentos e impostos diferentes? Essa bagunça costuma gerar dúvidas e até medo de errar. A holding é uma estrutura que funciona como um “guarda‑roupa” para os seus ativos: ela reúne tudo em um único lugar, facilitando a gestão e a proteção do seu [patrimônio](/glossario/patrimonio). Em termos simples, uma holding é uma empresa criada para deter (ou “segurar”) participações em outras empresas, imóveis, investimentos e até direitos autorais. Ela não precisa produzir nada; seu objetivo principal é organizar e controlar o que você possui.
 
 ![O que é holding  ](/images/glossario/holding-inline-1.webp)
 
@@ -28,15 +28,15 @@ Você já percebeu que, ao comprar um imóvel, abrir uma empresa ou investir em 
 
 ## Por que usar uma holding  
 
-- **Simplifica a administração**: ao invés de lidar com cinco contratos de aluguel, três notas fiscais e duas declarações de imposto separadas, você tem tudo centralizado numa única entidade.  
+- **Simplifica a administração**: ao invés de lidar com cinco contratos de [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026), três notas fiscais e duas declarações de imposto separadas, você tem tudo centralizado numa única entidade.  
 - **Protege o patrimônio**: se uma das empresas que você controla enfrentar problemas financeiros, os demais ativos ficam isolados, reduzindo riscos.  
 - **Facilita a sucessão**: ao planejar a transferência de bens para os filhos, a holding permite fazer isso de forma mais econômica e menos burocrática.  
 
-Esses benefícios são especialmente úteis quando você tem renda de fontes diferentes – por exemplo, aluguel de um apartamento, dividendos de ações e lucro de um pequeno negócio. A holding age como um “coração” que bombeia recursos de forma organizada, evitando que você perca tempo tentando conciliar tudo.
+Esses benefícios são especialmente úteis quando você tem renda de fontes diferentes – por exemplo, aluguel de um apartamento, [dividendos](/glossario/dividendos) de ações e lucro de um pequeno negócio. A holding age como um “coração” que bombeia recursos de forma organizada, evitando que você perca tempo tentando conciliar tudo.
 
 ## Como funciona na prática  
 
-Imagine que você tem três fontes de renda: aluguel de um apartamento, um negócio de venda de artesanato online e investimentos em ações. Cada uma delas gera documentos diferentes: contrato de locação, notas fiscais de venda e extratos de corretora. Sem uma holding, você precisaria abrir contas bancárias separadas, pagar impostos em guias distintas e ainda manter planilhas manuais para acompanhar o fluxo de caixa.  
+Imagine que você tem três fontes de renda: aluguel de um apartamento, um negócio de venda de artesanato online e investimentos em ações. Cada uma delas gera documentos diferentes: contrato de locação, notas fiscais de venda e extratos de corretora. Sem uma holding, você precisaria abrir contas bancárias separadas, pagar impostos em guias distintas e ainda manter planilhas manuais para acompanhar o [fluxo de caixa](/glossario/fluxo-de-caixa).  
 
 ![Como funciona na prática  ](/images/glossario/holding-inline-3.webp)
 
@@ -50,11 +50,11 @@ Com a holding, você cria uma empresa que passa a ser a proprietária do apartam
 - **Gestão centralizada**: relatórios de fluxo de caixa, balanço patrimonial e demonstrações de resultados são gerados em um único lugar.  
 - **Planejamento sucessório**: a transferência de cotas da holding pode ser feita por meio de doação ou testamento, evitando a burocracia de inventário.  
 
-Mas atenção: montar uma holding exige custos de abertura, contabilidade e cumprimento de obrigações legais. É importante avaliar se o volume de ativos justifica esse investimento. Além disso, a estrutura deve ser bem planejada para não gerar “cobrança dupla” de impostos.
+Mas atenção: montar uma holding exige custos de abertura, contabilidade e cumprimento de obrigações legais. É importante avaliar se o volume de ativos justifica esse [investimento](/glossario/investimento). Além disso, a estrutura deve ser bem planejada para não gerar “cobrança dupla” de impostos.
 
 ## Como o FinMoovi ajuda  
 
-- **Captura inteligente**: tire uma foto da nota fiscal da sua loja ou grave a voz descrevendo a receita do aluguel; o app reconhece o valor e já preenche a categoria correta.  
+- **[Captura inteligente](/posts/cansado-de-perder-horas-nas-planilhas-como-o-finmoovi)**: tire uma foto da nota fiscal da sua loja ou grave a voz descrevendo a receita do aluguel; o app reconhece o valor e já preenche a categoria correta.  
 - **Multimoeda**: se você recebe em dólares por vendas internacionais ou em euros por aluguel de temporada, o FinMoovi converte tudo automaticamente, permitindo analisar o fluxo em uma única moeda de referência.  
 - **Fluxo de caixa e relatórios**: veja em tempo real quanto entrou e saiu da sua holding, com gráficos que mostram a origem de cada recurso (aluguel, vendas, investimentos).  
 - **Planejamento mensal / metas**: defina metas de lucro para cada área da holding e acompanhe o desempenho ao longo do mês.  

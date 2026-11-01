@@ -8,6 +8,7 @@ locale: "pt"
 tags: ["como evitar compras por impulso","finanças pessoais","economia","dinheiro"]
 author: "FinMoovi"
 publishedAt: 2026-07-15
+updatedAt: 2026-11-01
 readingTime: 4
 featured: true
 translationKey: "como-evitar-compras-por-impulso-e-proteger-seu-bolso"

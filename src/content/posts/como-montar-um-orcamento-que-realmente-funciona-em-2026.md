@@ -9,6 +9,7 @@ locale: "pt"
 tags: ["orçamento pessoal mensal","finanças pessoais","economia","dinheiro"]
 author: "FinMoovi"
 publishedAt: 2026-07-30
+updatedAt: 2026-11-01
 readingTime: 5
 featured: true
 translationKey: "como-montar-um-orcamento-que-realmente-funciona-em-2026"

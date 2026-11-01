@@ -46,21 +46,21 @@ Nem todo mundo deve colocar todo o dinheiro em “high yield”. O ideal é usar
 
 
 
-- **Objetivo de médio prazo** (2 a 5 anos) e você tem uma reserva de emergência já garantida.  
+- **Objetivo de médio prazo** (2 a 5 anos) e você tem uma [reserva de emergência](/ferramentas/calculadora-reserva) já garantida.  
 - **Apetite por risco moderado**: aceita a possibilidade de perder parte do capital, mas quer um retorno superior ao da poupança ou CDB tradicional.  
-- **Diversificação**: já possui investimentos de baixo risco (como títulos do governo) e quer equilibrar com algo mais agressivo.
+- **[Diversificação](/glossario/diversificacao)**: já possui investimentos de baixo risco (como títulos do governo) e quer equilibrar com algo mais agressivo.
 
 ## Dicas práticas para quem quer começar
 
 **Dica prática:** antes de comprar, verifique a classificação de crédito da emissora (ratings como “BBB” ou “BB”). Quanto menor a nota, maior o risco.  
 **Dica prática:** nunca aloque mais de 10% do seu patrimônio total em ativos “high yield”. Isso protege seu bolso caso algo dê errado.  
-**Dica prática:** use uma conta que ofereça **captura inteligente** de notas fiscais ou voz para registrar cada compra de título; o app categoriza automaticamente e você acompanha o desempenho sem esforço.
+**Dica prática:** use uma conta que ofereça **[captura inteligente](/posts/cansado-de-perder-horas-nas-planilhas-como-o-finmoovi)** de notas fiscais ou voz para registrar cada compra de título; o app categoriza automaticamente e você acompanha o desempenho sem esforço.
 
 ## Como o FinMoovi pode ajudar
 
 ### Captura inteligente + categorização automática
 
-Com o FinMoovi, basta tirar uma foto da nota de compra do título “high yield” ou gravar um áudio descrevendo a operação. O app reconhece o valor, a data e a categoria (investimento “high yield”) e já inclui no seu fluxo de caixa. Assim, você não perde tempo digitando nada.
+Com o FinMoovi, basta tirar uma foto da nota de compra do título “high yield” ou gravar um áudio descrevendo a operação. O app reconhece o valor, a data e a categoria (investimento “high yield”) e já inclui no seu [fluxo de caixa](/glossario/fluxo-de-caixa). Assim, você não perde tempo digitando nada.
 
 ### Multimoeda sem complicação
 
@@ -80,7 +80,7 @@ Se você usa o cartão para comprar títulos (alguns corretoras permitem), o Fin
 
 ### Modo compras: lista + total em tempo real
 
-Crie uma lista de títulos “high yield” que pretende adquirir. O app soma o valor total e mostra quanto ainda cabe no seu orçamento mensal, ajudando a não comprometer a reserva de emergência.
+Crie uma lista de títulos “high yield” que pretende adquirir. O app soma o valor total e mostra quanto ainda cabe no seu orçamento mensal, ajudando a não comprometer a [reserva de emergência](/glossario/reserva-de-emergencia).
 
 ### Lembretes e alertas de saldo
 
@@ -114,4 +114,4 @@ Se você ainda não tem uma reserva de emergência, se o seu objetivo é curto p
 2. Tire uma foto da última nota de compra de título “high yield” ou grave um áudio descrevendo a operação.  
 3. Defina uma meta de rendimento (por exemplo, “equivalente a dois aluguéis por ano”) e deixe o app monitorar.  
 
-Em menos de cinco minutos você já terá o investimento registrado, categorizado e integrado ao seu planejamento financeiro. Agora é só acompanhar o desempenho e ajustar quando necessário. Boa jornada rumo a rendimentos mais altos, com segurança e praticidade!
+Em menos de cinco minutos você já terá o investimento registrado, categorizado e integrado ao seu [planejamento financeiro](/glossario/planejamento-financeiro). Agora é só acompanhar o desempenho e ajustar quando necessário. Boa jornada rumo a rendimentos mais altos, com segurança e praticidade!

@@ -20,7 +20,7 @@ seo:
 
 ## ¿Por qué siempre parece que el dinero se escapa?
 
-Te levantas, pagas el alquiler, el café del día y, al revisar tu cuenta, ves que el saldo no rinde como esperabas. Cada mes la misma historia: los gastos aparecen sin que te des cuenta y, al final, la tarjeta está al rojo. Te preguntas si hay una forma más inteligente de controlar lo que entra y sale, sin pasar horas en planillas o apps complicadas.
+Te levantas, pagas el [alquiler](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026), el café del día y, al revisar tu cuenta, ves que el saldo no rinde como esperabas. Cada mes la misma historia: los gastos aparecen sin que te des cuenta y, al final, la tarjeta está al rojo. Te preguntas si hay una forma más inteligente de controlar lo que entra y sale, sin pasar horas en planillas o apps complicadas.
 
 ![¿Por qué siempre parece que el dinero se escapa?](/images/glossario/offshore-inline-1.webp)
 
@@ -28,11 +28,11 @@ Te levantas, pagas el alquiler, el café del día y, al revisar tu cuenta, ves q
 
 ## ¿Qué significa “offshore” en el mundo financiero?
 
-El término *offshore* se refiere a cualquier actividad financiera que se realiza fuera del país de residencia del titular. No es un truco mágico ni una zona secreta; simplemente indica que el dinero se guarda, invierte o transfiere a una jurisdicción distinta a la tuya. En la práctica, una cuenta offshore puede estar en un banco de otro continente, o un fondo de inversión puede cotizar en una bolsa extranjera. La idea principal es aprovechar ventajas como mayor diversificación, protección contra riesgos locales o acceso a monedas diferentes.
+El término *offshore* se refiere a cualquier actividad financiera que se realiza fuera del país de residencia del titular. No es un truco mágico ni una zona secreta; simplemente indica que el dinero se guarda, invierte o transfiere a una jurisdicción distinta a la tuya. En la práctica, una cuenta offshore puede estar en un banco de otro continente, o un [fondo de inversión](/es/glossario/es-fondo-de-inversion) puede cotizar en una bolsa extranjera. La idea principal es aprovechar ventajas como mayor [diversificación](/es/glossario/es-diversificacion), protección contra riesgos locales o acceso a monedas diferentes.
 
 ## Ventajas y riesgos que debes conocer
 
-- **Diversificación**: al tener parte de tu patrimonio en otra moneda, reduces el impacto de una devaluación local.
+- **Diversificación**: al tener parte de tu [patrimonio](/es/glossario/es-patrimonio) en otra moneda, reduces el impacto de una devaluación local.
 - **Acceso a productos internacionales**: fondos, bonos o acciones que no están disponibles en tu mercado interno.
 - **Protección legal**: en algunos casos, la legislación extranjera ofrece mayor confidencialidad o protección frente a demandas.
 - **Costos y regulaciones**: abrir y mantener una cuenta offshore suele implicar comisiones y requisitos de reporte fiscal que no debes pasar por alto.
@@ -46,10 +46,10 @@ El término *offshore* se refiere a cualquier actividad financiera que se realiz
 
 Imagina que decides invertir una parte de tus ahorros en un fondo cotizado en dólares. Cada vez que recibes un pago o haces una compra en otra moneda, la app captura automáticamente la información y la clasifica. Así, no tendrás que abrir varias hojas de cálculo ni recordar a mano cada tipo de cambio.
 
-- **Captura inteligente**: toma una foto del recibo o graba la voz diciendo “pagué 50 euros en la tienda”. La app reconoce el monto, la moneda y la categoría (viajes, ocio, etc.).
+- **[Captura inteligente](/es/posts/es-cansado-de-perder-horas-en-hojas-de-calculo-asi-finmoovi-lo)**: toma una foto del recibo o graba la voz diciendo “pagué 50 euros en la tienda”. La app reconoce el monto, la moneda y la categoría (viajes, ocio, etc.).
 - **Categorización automática**: el algoritmo asigna la transacción a la categoría correcta y la convierte al valor de referencia que elijas (por ejemplo, “equivalente a un alquiler”).
 - **Multimoneda**: visualiza tus ingresos y gastos en la moneda que prefieras (dólar, euro, tu moneda local) y compara el poder adquisitivo.
-- **Flujo de caja e informes**: obtén un panorama claro de cuánto dinero entra y sale, con gráficos que muestran la proporción de gastos locales vs offshore.
+- **[Flujo de caja](/es/glossario/es-flujo-de-caja) e informes**: obtén un panorama claro de cuánto dinero entra y sale, con gráficos que muestran la proporción de gastos locales vs offshore.
 - **Planificación mensual y metas**: fija objetivos como “destinar el precio de dos cafés al día a un fondo offshore” y sigue el progreso.
 - **Tarjetas de crédito y facturas**: sincroniza tus tarjetas para que cada pago se registre al instante, sin importar la divisa.
 - **Modo compras**: crea una lista de lo que necesitas y ve el total en tiempo real, con conversión automática de monedas.

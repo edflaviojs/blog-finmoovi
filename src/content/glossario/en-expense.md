@@ -19,7 +19,7 @@ seo:
 ---
 ## What happens when the electricity bill arrives out of nowhere
 
-You just opened the fridge, saw the light flicker, and realized the electricity bill came in almost twice as high as last month. That same day, the car needed a quick repair, and your credit card took a hit from an impulse buy — a gadget you don't even use. Stress kicks in, the feeling that money is slipping through your fingers grows, and suddenly you're asking yourself: "Where did all my money go?". That moment is what an **expense** looks like — everything that leaves your account, whether it's fixed (like rent) or variable (like dinner out). Understanding expenses is the first step to stop being caught off guard by them.
+You just opened the fridge, saw the light flicker, and realized the electricity bill came in almost twice as high as last month. That same day, the car needed a quick repair, and your [credit card](/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026) took a hit from an impulse buy — a gadget you don't even use. Stress kicks in, the feeling that money is slipping through your fingers grows, and suddenly you're asking yourself: "Where did all my money go?". That moment is what an **expense** looks like — everything that leaves your account, whether it's fixed (like rent) or variable (like dinner out). Understanding expenses is the first step to stop being caught off guard by them.
 
 ![What happens when the electricity bill arrives out of nowhere](/images/glossario/despesa-inline-1.webp)
 
@@ -43,9 +43,9 @@ When you don't record or think about your expenses, two things happen:
 
 
 1. **Unpleasant surprises** — bills that show up without warning, like energy or car maintenance.
-2. **Postponed goals** — that dream trip or your emergency fund drifts further away because money "disappears" into unplanned spending.
+2. **Postponed goals** — that dream trip or your [emergency fund](/en/glossario/en-emergency-fund) drifts further away because money "disappears" into unplanned spending.
 
-These effects add up: a small leak here, another one there, and at the end of the month you have less money than you expected, which leads to anxiety and rushed decisions, like turning to high-interest loans.
+These effects add up: a small leak here, another one there, and at the end of the month you have less money than you expected, which leads to anxiety and rushed decisions, like turning to high-[interest](/en/glossario/en-interest) loans.
 
 ## FinMoovi: the tool that turns the pain into a solution
 
@@ -53,8 +53,8 @@ Imagine having an assistant that, when you snap a photo of your electricity bill
 
 - **Smart capture:** take a photo or say the amount; the app reads the text, identifies the store or service, and classifies the expense (e.g., "electricity", "supermarket").
 - **Multi-currency:** if you travel or shop in different currencies, FinMoovi converts everything to your base currency using the day's rate.
-- **Cash flow and reports:** see in real time how much came in and went out, with charts showing the share of fixed vs. variable expenses.
-- **Monthly planning and goals:** set how much you want to spend in each category and track your progress.
+- **[Cash flow](/en/glossario/en-cash-flow) and reports:** see in real time how much came in and went out, with charts showing the share of fixed vs. variable expenses.
+- **Monthly [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) and goals:** set how much you want to spend in each category and track your progress.
 - **Cards and accounts:** keep your credit cards and bank accounts organized in one place, with each card's bill in view.
 - **Shopping mode:** build lists, add up items in real time, and avoid going over the limit you set.
 - **Alerts and reminders:** get notified when your balance is low or when an expense goes over the limit you set.
@@ -75,7 +75,7 @@ With these features, expenses stop being an invisible monster and become a numbe
 If you're already used to recording expenses, you can take control to the next level:
 
 - **Trend analysis:** use the monthly reports to spot patterns, like higher energy spending in colder months, and adjust your consumption ahead of time.
-- **Savings goal:** set a goal for your emergency fund and see each month how much is left to reach it.
+- **[Savings](/en/glossario/en-savings) goal:** set a goal for your emergency fund and see each month how much is left to reach it.
 - **Provider comparison:** when you record service bills (internet, phone), look back at what you paid over the last six months to make negotiating or switching plans easier.
 - **Link to life goals:** tie goals like "travel in 12 months" to your entertainment budget, and see how much you need to save each month to get there.
 

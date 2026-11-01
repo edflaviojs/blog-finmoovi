@@ -19,7 +19,7 @@ seo:
 ---
 
 ## ¿Por qué siempre parece que el dinero se escapa sin que sepas a dónde va?
-Muchas veces revisas tu cuenta y ves que al final del mes ya no queda nada, aunque hayas hecho lo mismo de siempre. La culpa no es del sueldo, sino de gastos que no aparecen claros en tu presupuesto: la compra de una máquina de café para la oficina, la renovación del software de tu negocio o la inversión en muebles nuevos. Todos esos desembolsos se quedan “pegados” en los libros y, si no los separas bien, terminan mezclándose con tus gastos operativos y te hacen perder el control.
+Muchas veces revisas tu cuenta y ves que al final del mes ya no queda nada, aunque hayas hecho lo mismo de siempre. La culpa no es del sueldo, sino de gastos que no aparecen claros en tu presupuesto: la compra de una máquina de café para la oficina, la renovación del software de tu negocio o la [inversión](/es/glossario/es-inversion) en muebles nuevos. Todos esos desembolsos se quedan “pegados” en los libros y, si no los separas bien, terminan mezclándose con tus gastos operativos y te hacen perder el control.
 
 ## ¿Qué es el inmovilizado y por qué debería importarte?
 El inmovilizado son los bienes que una persona o empresa compra para usarlos durante varios años, no para venderlos inmediatamente. Piensa en una computadora que usas todos los días, el coche que utilizas para ir al trabajo o la maquinaria que compraste para tu taller. En contabilidad, estos activos se registran como inmovilizado porque su valor se “deprecia” poco a poco, es decir, se reparte en el tiempo que los vas usando.
@@ -42,12 +42,12 @@ Imagina que, al comprar una nueva laptop, simplemente tomas una foto del recibo 
 
 
 
-- **Captura inteligente:** Usa foto o voz para registrar cualquier gasto sin escribir nada.
+- **[Captura inteligente](/es/posts/es-cansado-de-perder-horas-en-hojas-de-calculo-asi-finmoovi-lo):** Usa foto o voz para registrar cualquier gasto sin escribir nada.
 - **Categorización automática:** Asigna la categoría correcta (inversión, operación, etc.) sin que tengas que pensar en códigos contables.
 - **Multimoneda:** Funciona igual si pagas en dólares, euros o cualquier otra moneda; el valor se convierte al tipo de cambio del día.
-- **Flujo de caja e informes:** Te muestra en tiempo real cuánto de tu dinero está “atrapado” en inmovilizado y cuánto está disponible para gastos corrientes.
+- **[Flujo de caja](/es/glossario/es-flujo-de-caja) e informes:** Te muestra en tiempo real cuánto de tu dinero está “atrapado” en inmovilizado y cuánto está disponible para gastos corrientes.
 - **Planificación mensual y metas:** Puedes crear una meta de “Renovar equipos cada 3 años” y la app te avisa cuando se acerca el momento.
-- **Tarjetas de crédito y facturas:** Vincula tus tarjetas y la app importa automáticamente los movimientos, clasificándolos según corresponda.
+- **Tarjetas de [crédito](/es/glossario/es-credito) y facturas:** Vincula tus tarjetas y la app importa automáticamente los movimientos, clasificándolos según corresponda.
 - **Modo compras:** Haz una lista de lo que necesitas comprar, ve el total en tiempo real y evita sobrepasar tu presupuesto.
 - **Recordatorios y alertas de saldo:** Recibe notificaciones cuando el saldo disponible sea bajo o cuando una factura de inmovilizado esté próxima a vencer.
 - **Offline / PWA / sincronización:** Funciona sin conexión y guarda todo en la nube, listo para cuando vuelvas a estar online.
@@ -57,7 +57,7 @@ Imagina que, al comprar una nueva laptop, simplemente tomas una foto del recibo 
 
 **Consejo práctico:** Revisa el informe de “Activos inmovilizados” al menos una vez al trimestre. Identifica qué bienes ya están cerca del final de su vida útil y planifica su reemplazo con anticipación para no quedarte sin recursos.
 
-**Consejo práctico:** Usa la función de metas para crear un fondo de reserva equivalente al precio de un alquiler mensual por cada activo que tengas. De esta forma, cuando llegue el momento de renovar, ya tendrás el dinero listo sin afectar tu flujo de caja.
+**Consejo práctico:** Usa la función de metas para crear un fondo de reserva equivalente al precio de un [alquiler](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026) mensual por cada activo que tengas. De esta forma, cuando llegue el momento de renovar, ya tendrás el dinero listo sin afectar tu flujo de caja.
 
 ## Paso a paso: registrar un activo inmovilizado con FinMoovi
 1. Abre la app y pulsa el botón “+ Nuevo gasto”.
@@ -69,7 +69,7 @@ Imagina que, al comprar una nueva laptop, simplemente tomas una foto del recibo 
 ## Beneficios a largo plazo de separar el inmovilizado
 - **Visibilidad clara:** Sabes exactamente cuánto dinero está invertido en bienes duraderos y cuánto puedes usar para gastos cotidianos.
 - **Mejor toma de decisiones:** Al comparar el costo de mantener un activo versus comprar uno nuevo, tomas decisiones basadas en datos, no en corazonadas.
-- **Ahorro fiscal:** La depreciación automática te ayuda a reducir la carga tributaria sin complicaciones.
+- **[Ahorro](/es/glossario/es-ahorro) fiscal:** La depreciación automática te ayuda a reducir la carga tributaria sin complicaciones.
 - **Tranquilidad mental:** No volverás a sentir que el dinero “desaparece” sin explicación; cada gasto tiene su lugar y su tiempo.
 
 ## Preguntas frecuentes

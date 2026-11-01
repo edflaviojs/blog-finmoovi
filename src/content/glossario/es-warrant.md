@@ -36,13 +36,13 @@ Los warrants aparecen en los estados de cuenta de muchos inversores sin que ello
 - **Valor intrínseco:** la diferencia entre el precio de mercado de la acción y el precio de ejercicio, siempre que sea positivo.  
 - **Valor temporal:** la parte del precio del warrant que corresponde a la expectativa de que el precio de la acción suba antes del vencimiento.
 
-Ejemplo cotidiano: supongamos que una acción cuesta “el precio de un café al día” y tú compras un warrant con precio de ejercicio equivalente a “dos cafés al día”. Si dentro de seis meses la acción sube a “cuatro cafés al día”, ejercer el warrant te permite comprarla a “dos cafés”, y luego puedes venderla al precio de mercado y obtener la diferencia. Si la acción se mantiene en “un café al día”, simplemente dejas que el warrant expire y solo pierdes la prima que pagaste, que podría ser “cerca de un alquiler mensual”.
+Ejemplo cotidiano: supongamos que una acción cuesta “el precio de un café al día” y tú compras un warrant con precio de ejercicio equivalente a “dos cafés al día”. Si dentro de seis meses la acción sube a “cuatro cafés al día”, ejercer el warrant te permite comprarla a “dos cafés”, y luego puedes venderla al precio de mercado y obtener la diferencia. Si la acción se mantiene en “un café al día”, simplemente dejas que el warrant expire y solo pierdes la prima que pagaste, que podría ser “cerca de un [alquiler](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026) mensual”.
 
 ## Ventajas y riesgos que debes conocer
 - **Ventaja:** exposición al movimiento de la acción con una inversión inicial pequeña.  
 - **Ventaja:** posibilidad de obtener ganancias muy superiores a la prima pagada si la acción se dispara.  
 - **Riesgo:** si la acción no supera el precio de ejercicio, el warrant queda sin valor y pierdes la prima.  
-- **Riesgo:** la volatilidad del mercado puede hacer que el valor del warrant cambie rápidamente, lo que complica la toma de decisiones.  
+- **Riesgo:** la [volatilidad](/es/glossario/es-volatilidad) del mercado puede hacer que el valor del warrant cambie rápidamente, lo que complica la toma de decisiones.  
 - **Riesgo:** algunos warrants son emitidos por la propia empresa, lo que puede generar conflictos de interés.
 
 ## Cómo evitar errores comunes al usar warrants
@@ -55,9 +55,9 @@ Ejemplo cotidiano: supongamos que una acción cuesta “el precio de un café al
 
 
 ## FinMoovi: la ayuda que necesitas para manejar warrants sin complicaciones
-FinMoovi no es solo otro gestor de gastos; su **captura inteligente** (puedes tomar foto del recibo del warrant o dictar la información) registra automáticamente la prima pagada, la fecha de vencimiento y el precio de ejercicio. La **categorización automática** coloca el warrant en la sección “Inversiones de alto potencial”, y el **modo multimoneda** te permite ver el valor tanto en tu moneda local como en dólares o euros, ideal si compras warrants de empresas extranjeras.
+FinMoovi no es solo otro gestor de gastos; su **[captura inteligente](/es/posts/es-cansado-de-perder-horas-en-hojas-de-calculo-asi-finmoovi-lo)** (puedes tomar foto del recibo del warrant o dictar la información) registra automáticamente la prima pagada, la fecha de vencimiento y el precio de ejercicio. La **categorización automática** coloca el warrant en la sección “Inversiones de alto potencial”, y el **modo multimoneda** te permite ver el valor tanto en tu moneda local como en dólares o euros, ideal si compras warrants de empresas extranjeras.
 
-Con el **flujo de caja e informes** de FinMoovi, puedes ver cómo la prima del warrant afecta tu presupuesto mensual. La **planificación mensual / metas** te ayuda a asignar un porcentaje de tus ingresos a inversiones de riesgo, manteniendo el resto para gastos fijos. Si usas tarjetas de crédito, la **factura consolidada** muestra la prima como gasto único, evitando que se mezcle con consumos cotidianos.
+Con el **[flujo de caja](/es/glossario/es-flujo-de-caja) e informes** de FinMoovi, puedes ver cómo la prima del warrant afecta tu presupuesto mensual. La **planificación mensual / metas** te ayuda a asignar un porcentaje de tus ingresos a inversiones de riesgo, manteniendo el resto para gastos fijos. Si usas tarjetas de crédito, la **factura consolidada** muestra la prima como gasto único, evitando que se mezcle con consumos cotidianos.
 
 El **modo compras** de FinMoovi te permite crear una lista de warrants que te interesan; mientras vas revisando cotizaciones, la app muestra el **total en tiempo real** de la prima que deberías pagar si decides comprar todos. Además, los **recordatorios / alertas de saldo** te avisan cuando falta poco para el vencimiento o cuando el precio de la acción supera el precio de ejercicio, dándote la oportunidad de actuar antes de que el warrant expire.
 
@@ -65,8 +65,8 @@ El **modo compras** de FinMoovi te permite crear una lista de warrants que te in
 
 ## Preguntas frecuentes que suelen surgir
 - **¿Puedo vender un warrant antes de su vencimiento?** Sí, muchos mercados permiten la venta de warrants como si fueran acciones, pero el precio dependerá de la volatilidad y del tiempo restante.  
-- **¿Qué pasa si la empresa que emitió el warrant se declara en bancarrota?** El warrant pierde valor, igual que la acción subyacente.  
-- **¿Los warrants generan dividendos?** No, solo el derecho a comprar la acción; los dividendos siguen siendo de los accionistas que ya poseen la acción.  
+- **¿Qué pasa si la empresa que emitió el warrant se declara en bancarrota?** El warrant pierde valor, igual que la acción [subyacente](/es/glossario/es-subyacente).  
+- **¿Los warrants generan [dividendos](/es/glossario/es-dividendos)?** No, solo el derecho a comprar la acción; los dividendos siguen siendo de los accionistas que ya poseen la acción.  
 - **¿Cómo afecta la inflación a mi warrant?** La inflación no impacta directamente, pero si el precio de la acción sube por razones macroeconómicas, tu warrant puede volverse más valioso.
 
 ## Estrategias simples para principiantes

@@ -38,22 +38,22 @@ Cuando tu negocio exporta, el dinero que recibes no siempre llega en la moneda q
 
 
 
-- **Tipo de cambio:** la tasa que convierte la moneda extranjera a la tuya varía día a día, como el precio de un café al día.
-- **Comisiones bancarias:** los bancos suelen cobrar un porcentaje por la conversión, similar a pagar un alquiler extra por usar su servicio.
+- **Tipo de [cambio](/es/glossario/es-cambio):** la tasa que convierte la moneda extranjera a la tuya varía día a día, como el precio de un café al día.
+- **Comisiones bancarias:** los bancos suelen cobrar un porcentaje por la conversión, similar a pagar un [alquiler](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026) extra por usar su servicio.
 - **Impuestos y regulaciones:** cada país tiene normas distintas que pueden generar costos adicionales.
 
-Todo eso se traduce en una mayor complejidad para tu flujo de caja personal, porque debes saber cuánto realmente tienes disponible después de todas esas conversiones y cargos.
+Todo eso se traduce en una mayor complejidad para tu [flujo de caja](/es/glossario/es-flujo-de-caja) personal, porque debes saber cuánto realmente tienes disponible después de todas esas conversiones y cargos.
 
 ## FinMoovi: la solución práctica para la exportación
 
 FinMoovi es como ese amigo que siempre tiene la hoja de cálculo perfecta y la app de notas a la mano. Sus funciones están diseñadas para que la exportación deje de ser un dolor de cabeza:
 
-- **Captura inteligente:** toma una foto del recibo o graba la voz del cajero y la app lo reconoce automáticamente.
+- **[Captura inteligente](/es/posts/es-cansado-de-perder-horas-en-hojas-de-calculo-asi-finmoovi-lo):** toma una foto del recibo o graba la voz del cajero y la app lo reconoce automáticamente.
 - **Categorización automática:** el sistema asigna la transacción a la categoría correcta (ventas, comisiones, impuestos) sin que tengas que mover un dedo.
 - **Multimoneda:** maneja BRL, USD, EUR y cualquier otra moneda; muestra el equivalente en tu moneda local al instante.
 - **Flujo de caja e informes:** visualiza en tiempo real cuánto dinero entra, cuánto sale y cuál es tu saldo real después de la conversión.
 - **Planificación mensual y metas:** fija objetivos de ingresos por exportación y recibe alertas cuando te acercas o te alejas de la meta.
-- **Tarjetas de crédito y facturas:** registra pagos de proveedores internacionales y controla los vencimientos.
+- **Tarjetas de [crédito](/es/glossario/es-credito) y facturas:** registra pagos de proveedores internacionales y controla los vencimientos.
 - **Modo compras:** crea listas de materiales, ve el total en tiempo real y evita sorpresas al pagar en otra divisa.
 - **Recordatorios y alertas de saldo:** avisa cuando el tipo de cambio supera un umbral que tú defines.
 - **Offline / PWA / sincronización:** funciona sin conexión y guarda todo en la nube para que nunca pierdas datos.
@@ -62,7 +62,7 @@ FinMoovi es como ese amigo que siempre tiene la hoja de cálculo perfecta y la a
 
 - **Consejo práctico:** **Revisa el tipo de cambio al menos una vez al día**. Usa la función de alertas de FinMoovi para que te avise cuando la tasa sea favorable, como cuando el precio de un alquiler baja un poco.
 - **Consejo práctico:** **Separa las comisiones bancarias en una categoría propia**. Así sabrás exactamente cuánto estás pagando por la conversión y podrás negociar mejores tarifas con tu banco.
-- **Consejo práctico:** **Establece una meta mensual de ingresos netos** (después de comisiones y conversiones). FinMoovi te mostrará un gráfico que indica si vas por buen camino o si necesitas ajustar precios.
+- **Consejo práctico:** **Establece una meta mensual de ingresos netos** (después de comisiones y conversiones). FinMoovi te mostrará un [gráfico](/es/glossario/es-grafico) que indica si vas por buen camino o si necesitas ajustar precios.
 
 ## Pasos para integrar la exportación en tu rutina financiera
 

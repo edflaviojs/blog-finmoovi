@@ -47,7 +47,7 @@ Não existe solução única; a escolha depende do seu perfil, dos seus objetivo
 - **Liquidez:** quão rápido você consegue transformar o ativo em dinheiro para usar?  
 - **Risco:** qual a probabilidade de perder parte do valor?  
 - **Rentabilidade:** quanto o ativo pode render acima da inflação?  
-- **Diversificação:** espalhar o dinheiro em diferentes tipos de reserva reduz riscos.  
+- **[Diversificação](/glossario/diversificacao):** espalhar o dinheiro em diferentes tipos de reserva reduz riscos.  
 
 **Dica prática:** se o seu objetivo é cobrir emergências (até três meses de despesas), prefira ativos de alta liquidez, como uma conta de poupança ou um fundo de renda fixa de curto prazo.  
 
@@ -69,14 +69,14 @@ Muitos acabam guardando dinheiro de forma “informal”: guardam notas em um po
 
 ### 1. Capture tudo que entra e sai  
 - Tire foto da nota de compra ou grave a voz descrevendo o valor.  
-- O app reconhece o valor, a data e a categoria (alimentação, transporte, investimento, etc.).  
+- O app reconhece o valor, a data e a categoria (alimentação, transporte, [investimento](/glossario/investimento), etc.).  
 
 ### 2. Defina metas de reserva  
-- No painel de **Planejamento Mensal**, crie uma meta “Reserva de Emergência” equivalente a “cerca de três aluguéis”.  
+- No painel de **Planejamento Mensal**, crie uma meta “[Reserva de Emergência](/ferramentas/calculadora-reserva)” equivalente a “cerca de três aluguéis”.  
 - O app calcula quanto falta e envia alertas quando você está próximo de atingir o objetivo.  
 
 ### 3. Acompanhe o fluxo de caixa em tempo real  
-- O **Fluxo de Caixa** mostra entradas, saídas e o saldo disponível para reserva.  
+- O **[Fluxo de Caixa](/glossario/fluxo-de-caixa)** mostra entradas, saídas e o saldo disponível para reserva.  
 - Use o modo **Compras** para montar listas de supermercado; o total aparece em tempo real, evitando compras impulsivas que comprometem sua reserva.  
 
 ### 4. Controle multimoeda sem dor de cabeça  
@@ -90,7 +90,7 @@ Muitos acabam guardando dinheiro de forma “informal”: guardam notas em um po
 
 ## Estratégias avançadas para proteger seu dinheiro  
 
-- **Reserva de curto prazo:** mantenha o equivalente a “um aluguel” em um fundo de renda fixa de alta liquidez.  
+- **Reserva de curto prazo:** mantenha o equivalente a “um [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026)” em um fundo de renda fixa de alta liquidez.  
 - **Reserva de médio prazo:** aloque “cerca de duas vezes o preço de um carro usado” em fundos de ações de baixo risco ou ETFs (fundos que replicam índices).  
 - **Reserva de longo prazo:** invista “o valor de uma casa de três quartos” em imóveis ou fundos de previdência que ajustam a carteira conforme a idade.  
 
@@ -106,4 +106,4 @@ Lembre‑se de revisar essas alocações a cada seis meses, usando os relatório
 
 ## Comece hoje  
 
-Reserve cinco minutos agora mesmo: abra o FinMoovi, vá em **Captura Inteligente**, tire uma foto da última nota fiscal que você tem em mãos (pode ser a do café que você acabou de pagar). O app vai reconhecer o valor, categorizar como “Alimentação” e atualizar seu fluxo de caixa. Em seguida, clique em **Planejamento Mensal**, crie a meta “Reserva de Emergência” equivalente a “cerca de três aluguéis” e defina um lembrete semanal. Pronto! Você já deu o primeiro passo para transformar seu dinheiro em uma reserva de valor sólida.
+Reserve cinco minutos agora mesmo: abra o FinMoovi, vá em **Captura Inteligente**, tire uma foto da última nota fiscal que você tem em mãos (pode ser a do café que você acabou de pagar). O app vai reconhecer o valor, categorizar como “Alimentação” e atualizar seu fluxo de caixa. Em seguida, clique em **Planejamento Mensal**, crie a meta “[Reserva de Emergência](/glossario/reserva-de-emergencia)” equivalente a “cerca de três aluguéis” e defina um lembrete semanal. Pronto! Você já deu o primeiro passo para transformar seu dinheiro em uma reserva de valor sólida.

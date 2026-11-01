@@ -20,7 +20,7 @@ seo:
 
 ## ¿Por qué tus finanzas parecen una montaña rusa?
 
-Te levantas, pagas el alquiler, compras el café del día y, al revisar tu cuenta, ves que el saldo no cuadra. A veces la razón es simple: una tasa de interés que cambió sin que te dieras cuenta, o un gasto en moneda extranjera que te costó más de lo esperado. Ese descontrol es el caldo de cultivo donde aparecen los **swaps**, instrumentos que pueden sonar complicados pero que, en esencia, son acuerdos para intercambiar flujos de dinero y protegerte de esas sorpresas.
+Te levantas, pagas el [alquiler](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026), compras el café del día y, al revisar tu cuenta, ves que el saldo no cuadra. A veces la razón es simple: una tasa de interés que cambió sin que te dieras cuenta, o un gasto en moneda extranjera que te costó más de lo esperado. Ese descontrol es el caldo de cultivo donde aparecen los **swaps**, instrumentos que pueden sonar complicados pero que, en esencia, son acuerdos para intercambiar flujos de dinero y protegerte de esas sorpresas.
 
 ![¿Por qué tus finanzas parecen una montaña rusa?](/images/glossario/swaps-inline-1.webp)
 
@@ -30,9 +30,9 @@ Los swaps son contratos entre dos partes que acuerdan intercambiar pagos futuros
 
 ## Cómo funciona un swap en la práctica
 
-Los swaps pueden sonar a jerga de Wall Street, pero su lógica es tan simple como un intercambio de favores entre amigos. Aquí tienes los pasos básicos:
+Los swaps pueden sonar a jerga de [Wall Street](/es/glossario/es-wall-street), pero su lógica es tan simple como un intercambio de favores entre amigos. Aquí tienes los pasos básicos:
 
-- **Identificación del riesgo:** Detectas que una variable (tipo de interés, tipo de cambio) puede afectar tus finanzas.
+- **Identificación del riesgo:** Detectas que una variable (tipo de interés, tipo de cambio) puede afectar tus [finanzas](/es/glossario/es-finanzas).
 - **Búsqueda de la contraparte:** Encuentras a alguien (banco, empresa) que tenga el riesgo opuesto y quiera cubrirse.
 - **Acuerdo de intercambio:** Definen cuánto y cuándo se van a pagar mutuamente, según la variable acordada.
 - **Liquidación:** Cada periodo, se calculan los pagos y se hacen los intercambios reales.
@@ -63,9 +63,9 @@ Ahora que sabes qué son los swaps, la pregunta es: ¿cómo los incorporas a tu 
 
 - **Captura inteligente:** Toma una foto del recibo o graba una nota de voz y la app categoriza automáticamente el gasto o ingreso.
 - **Multimoneda:** Maneja dólares, euros y tu moneda local en la misma vista, ideal para seguir swaps de divisas.
-- **Flujo de caja e informes:** Visualiza en tiempo real cómo los pagos de un swap afectan tu saldo mensual.
-- **Planificación mensual y metas:** Define cuánto quieres ahorrar y la app te muestra si un swap te ayuda a alcanzar esa meta.
-- **Tarjetas de crédito y facturas:** Integra tus tarjetas y recibe alertas de vencimiento, evitando cargos inesperados.
+- **[Flujo de caja](/es/glossario/es-flujo-de-caja) e informes:** Visualiza en tiempo real cómo los pagos de un swap afectan tu saldo mensual.
+- **Planificación mensual y metas:** Define cuánto quieres [ahorrar](/es/posts/es-ahorra-en-la-farmacia-sin-sacrificios-guia-practica-2026) y la app te muestra si un swap te ayuda a alcanzar esa meta.
+- **Tarjetas de [crédito](/es/glossario/es-credito) y facturas:** Integra tus tarjetas y recibe alertas de vencimiento, evitando cargos inesperados.
 - **Modo compras:** Crea listas, ve el total en tiempo real y evita sobrepasar el presupuesto.
 - **Recordatorios y alertas de saldo:** Notificaciones cuando un pago de swap está próximo.
 - **Offline / PWA / sincronización:** Usa la app sin conexión y tus datos se actualizan al volver a internet.

@@ -19,10 +19,10 @@ seo:
 ---
 
 ## ¿Por qué el “alto rendimiento” te quita el sueño?
-¿Te ha pasado que ves una oferta de inversión que promete un retorno mucho mayor que el de tu cuenta de ahorros y, de repente, sientes que tu bolsillo está en una cuerda floja? Quizá estás pensando en comprar un bono o un fondo que dice “high yield” y te preguntas si es seguro o si vas a terminar con una sorpresa desagradable en la próxima declaración de impuestos. Ese miedo a lo desconocido es el mismo que te impide aprovechar oportunidades que podrían mejorar tu flujo de caja mensual.
+¿Te ha pasado que ves una oferta de inversión que promete un retorno mucho mayor que el de tu cuenta de ahorros y, de repente, sientes que tu bolsillo está en una cuerda floja? Quizá estás pensando en comprar un bono o un fondo que dice “high yield” y te preguntas si es seguro o si vas a terminar con una sorpresa desagradable en la próxima declaración de impuestos. Ese miedo a lo desconocido es el mismo que te impide aprovechar oportunidades que podrían mejorar tu [flujo de caja](/es/glossario/es-flujo-de-caja) mensual.
 
 ## Qué significa “alto rendimiento” en el mundo financiero
-En términos simples, “alto rendimiento” (high yield) se refiere a cualquier activo que paga una tasa de interés o un retorno superior al promedio del mercado. Normalmente, esos activos son más riesgosos porque los emisores (empresas, gobiernos o instituciones) necesitan ofrecer un incentivo mayor para atraer a los inversores. Por ejemplo, un bono corporativo de una empresa con calificación crediticia baja pagará un cupón más alto que uno de una compañía con excelente historial financiero. Lo mismo ocurre con fondos de inversión que se enfocan en activos de mayor riesgo: la promesa de mayor ganancia viene acompañada de mayor volatilidad.
+En términos simples, “alto rendimiento” (high yield) se refiere a cualquier activo que paga una tasa de interés o un retorno superior al promedio del mercado. Normalmente, esos activos son más riesgosos porque los emisores (empresas, gobiernos o instituciones) necesitan ofrecer un incentivo mayor para atraer a los inversores. Por ejemplo, un bono corporativo de una empresa con calificación crediticia baja pagará un cupón más alto que uno de una compañía con excelente historial financiero. Lo mismo ocurre con fondos de inversión que se enfocan en activos de mayor riesgo: la promesa de mayor ganancia viene acompañada de mayor [volatilidad](/es/glossario/es-volatilidad).
 
 ![¿Por qué el “alto rendimiento” te quita el sueño?](/images/glossario/high-yield-inline-1.webp)
 
@@ -37,7 +37,7 @@ En términos simples, “alto rendimiento” (high yield) se refiere a cualquier
 ## Ventajas y desventajas de invertir en alto rendimiento
 **Ventajas**
 - **Potencial de ganancias superiores:** Si el emisor cumple con sus pagos, tu rentabilidad será notablemente mayor que la de una cuenta de ahorro.
-- **Diversificación:** Añadir activos de alto rendimiento a tu portafolio puede equilibrar la exposición a diferentes tipos de riesgo.
+- **[Diversificación](/es/glossario/es-diversificacion):** Añadir activos de alto rendimiento a tu portafolio puede equilibrar la exposición a diferentes tipos de riesgo.
 - **Acceso a oportunidades:** Algunas empresas emergentes o sectores en crecimiento solo pueden financiarse a través de instrumentos de alto rendimiento.
 
 ![Cómo identificar un activo de alto rendimiento sin perder la cabeza](/images/glossario/high-yield-inline-3.webp)
@@ -52,17 +52,17 @@ En términos simples, “alto rendimiento” (high yield) se refiere a cualquier
 ## Cómo FinMoovi te ayuda a manejar inversiones de alto rendimiento sin estrés
 Imagina que decides comprar un bono de alto rendimiento de una empresa tecnológica que está creciendo rápido pero aún no tiene historial sólido. Con FinMoovi, el proceso se vuelve tan sencillo como tomar una foto del recibo de compra o dictar la información por voz. La app captura automáticamente los datos, los clasifica bajo la categoría “Inversiones – Alto Rendimiento” y los muestra en tu flujo de caja mensual.
 
-- **Captura inteligente:** Usa la cámara o el micrófono para registrar cada operación; la app reconoce automáticamente el tipo de activo y la tasa de interés.
+- **[Captura inteligente](/es/posts/es-cansado-de-perder-horas-en-hojas-de-calculo-asi-finmoovi-lo):** Usa la cámara o el micrófono para registrar cada operación; la app reconoce automáticamente el tipo de activo y la tasa de interés.
 - **Multimoneda:** Si compras un bono en dólares, euros o cualquier otra divisa, FinMoovi lo convierte a tu moneda base usando el tipo de cambio del día, así siempre sabes cuánto representa en tu presupuesto.
 - **Flujo de caja e informes:** Cada pago de intereses aparece como ingreso recurrente, y los posibles impagos se marcan en rojo para que los revises a tiempo.
 - **Planificación mensual y metas:** Puedes fijar una meta de “generar X% de ingresos extra al año” y la app te muestra cuánto necesitas invertir en activos de alto rendimiento para alcanzarla.
 - **Tarjetas de crédito y facturación:** Si pagas la compra del bono con tarjeta, FinMoovi sincroniza la factura y te avisa cuando vence el pago, evitando cargos inesperados.
 - **Modo compras:** Al crear una lista de inversiones, la app muestra el total acumulado en tiempo real, ayudándote a no sobrepasar el presupuesto que te has propuesto.
-- **Recordatorios y alertas:** Recibes notificaciones cuando se acerca la fecha de pago de intereses o cuando el rating del emisor cambia.
+- **Recordatorios y [alertas](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no):** Recibes notificaciones cuando se acerca la fecha de pago de intereses o cuando el rating del emisor cambia.
 - **Offline y PWA:** Incluso sin conexión, puedes registrar nuevas inversiones; la información se sincroniza automáticamente cuando vuelvas a estar online.
 
 ## Tres consejos prácticos para invertir en alto rendimiento sin arriesgar tu estabilidad financiera
-**Consejo práctico:** No destines más del 10 % de tu patrimonio total a activos de alto rendimiento; así mantienes un colchón de seguridad para imprevistos.  
+**Consejo práctico:** No destines más del 10 % de tu [patrimonio](/es/glossario/es-patrimonio) total a activos de alto rendimiento; así mantienes un colchón de seguridad para imprevistos.  
 **Consejo práctico:** Revisa la calificación crediticia al menos una vez al trimestre; si baja dos niveles, considera vender antes de que el precio caiga.  
 **Consejo práctico:** Usa la función de metas de FinMoovi para establecer un objetivo de ingreso mensual por intereses y ajusta la cantidad invertida según el rendimiento real que vayas obteniendo.
 

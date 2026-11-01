@@ -14,7 +14,8 @@ tags:
   - economia
   - dinheiro
 author: FinMoovi
-publishedAt: 2026-08-03T00:00:00.000Z
+publishedAt: 2026-08-03
+updatedAt: 2026-11-01T00:00:00.000Z
 readingTime: 6
 featured: true
 translationKey: como-usar-credito-sem-sufocar-seu-orcamento-5-passos

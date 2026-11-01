@@ -26,11 +26,11 @@ Você já recebeu um e‑mail de uma corretora falando sobre “warrants” e fi
 
 
 
-Se você já usou um cupom de desconto em uma loja, entende a ideia: você paga um valor fixo (ou nada) para ter a opção de comprar algo mais barato no futuro. No mundo dos investimentos, o warrant funciona da mesma forma, mas o “produto” é uma ação ou outro ativo financeiro. Quando o preço da ação sobe acima do preço acordado (chamado preço de exercício), o warrant se torna valioso, porque você pode comprar a ação por menos do que está sendo negociada no mercado. Se o preço não subir, você simplesmente deixa o warrant “expirado” e perde apenas o que pagou por ele.  
+Se você já usou um cupom de desconto em uma loja, entende a ideia: você paga um valor fixo (ou nada) para ter a opção de comprar algo mais barato no futuro. No mundo dos investimentos, o warrant funciona da mesma forma, mas o “produto” é uma ação ou outro [ativo financeiro](/glossario/ativo-financeiro). Quando o preço da ação sobe acima do preço acordado (chamado preço de exercício), o warrant se torna valioso, porque você pode comprar a ação por menos do que está sendo negociada no mercado. Se o preço não subir, você simplesmente deixa o warrant “expirado” e perde apenas o que pagou por ele.  
 
 ## Como funciona na prática: exemplo do dia a dia  
 
-Imagine que você acompanha a ação de uma empresa de tecnologia que hoje vale cerca de o preço de um aluguel. A corretora oferece um warrant que permite comprar essa ação por um preço equivalente a metade do valor atual, válido pelos próximos seis meses. Você paga um valor pequeno, equivalente ao preço de um café por dia, para ter essa opção.  
+Imagine que você acompanha a ação de uma empresa de tecnologia que hoje vale cerca de o preço de um [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026). A corretora oferece um warrant que permite comprar essa ação por um preço equivalente a metade do valor atual, válido pelos próximos seis meses. Você paga um valor pequeno, equivalente ao preço de um café por dia, para ter essa opção.  
 
 - Se, dentro desse período, a ação subir para o preço de um carro usado, você exerce o warrant, compra a ação por metade do preço e pode vender imediatamente, lucrando a diferença.  
 - Se a ação ficar estável ou cair, você simplesmente não exerce o direito e perde apenas o valor pago pelo warrant (o “café diário”).  
@@ -57,10 +57,10 @@ Por outro lado, os riscos são reais:
 
 Muitos investidores acabam perdendo o controle dos seus warrants porque não têm um local centralizado para registrar a compra, o preço de exercício, a data de validade e o ativo subjacente. É aí que uma ferramenta como o **FinMoovi** pode salvar o seu dia.  
 
-- **Captura inteligente**: Tire uma foto da nota de corretagem ou grave a voz dizendo “comprar warrant da empresa X”. O app reconhece automaticamente os dados e preenche os campos.  
+- **[Captura inteligente](/posts/cansado-de-perder-horas-nas-planilhas-como-o-finmoovi)**: Tire uma foto da nota de corretagem ou grave a voz dizendo “comprar warrant da empresa X”. O app reconhece automaticamente os dados e preenche os campos.  
 - **Categorização automática**: O FinMoovi entende que aquele registro é um “warrant” e o coloca na categoria correta, separando de ações, fundos ou despesas.  
 - **Multimoeda**: Se você investe em ativos denominados em diferentes moedas (dólar, euro, real), o app converte tudo para a moeda que você escolher, facilitando a visualização do seu patrimônio total.  
-- **Fluxo de caixa e relatórios**: Veja, em um único relatório, quanto você já gastou com premiums de warrants, quanto ainda pode ganhar e qual o impacto no seu caixa mensal.  
+- **[Fluxo de caixa](/glossario/fluxo-de-caixa) e relatórios**: Veja, em um único relatório, quanto você já gastou com premiums de warrants, quanto ainda pode ganhar e qual o impacto no seu caixa mensal.  
 - **Planejamento mensal / metas**: Defina quanto quer destinar a estratégias de alavancagem e acompanhe se está dentro do limite que estabeleceu.  
 - **Cartões de crédito / fatura**: Se o pagamento do warrant foi feito no cartão, o app já traz a fatura para o seu controle, evitando surpresas.  
 - **Modo compras**: Crie uma lista de warrants que pretende adquirir, veja o total em tempo real e ajuste antes de confirmar a operação.  
@@ -69,7 +69,7 @@ Muitos investidores acabam perdendo o controle dos seus warrants porque não tê
 
 ## Dicas práticas para usar warrants com segurança  
 
-**Dica prática:** Sempre estabeleça um limite máximo de investimento em warrants, equivalente a um pequeno percentual do seu patrimônio (por exemplo, o valor de duas mensalidades de academia).  
+**Dica prática:** Sempre estabeleça um limite máximo de [investimento](/glossario/investimento) em warrants, equivalente a um pequeno percentual do seu patrimônio (por exemplo, o valor de duas mensalidades de academia).  
 
 **Dica prática:** Use o alerta de vencimento do FinMoovi para revisar seus warrants pelo menos uma semana antes da data de expiração. Assim você decide se vale a pena exercer ou deixar expirar.  
 
@@ -79,7 +79,7 @@ Muitos investidores acabam perdendo o controle dos seus warrants porque não tê
 
 - **Expectativa de alta forte**: Se você acredita que a ação vai subir significativamente nos próximos meses, o warrant pode gerar lucro maior que comprar a ação à vista.  
 - **Orçamento limitado**: Quando o capital disponível não permite comprar a ação inteira, o warrant oferece exposição ao movimento da ação com investimento menor.  
-- **Diversificação de estratégias**: Inserir warrants na carteira pode equilibrar o risco, pois eles respondem de forma diferente a eventos de mercado comparados a ações ou fundos.  
+- **[Diversificação](/glossario/diversificacao) de estratégias**: Inserir warrants na carteira pode equilibrar o risco, pois eles respondem de forma diferente a eventos de mercado comparados a ações ou fundos.  
 
 Entretanto, se você não tem tempo para acompanhar o mercado ou prefere investimentos mais estáveis, talvez seja melhor focar em opções mais simples, como fundos de índice ou poupança.  
 

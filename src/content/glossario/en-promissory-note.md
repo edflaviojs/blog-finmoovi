@@ -36,8 +36,8 @@ A promissory note is essentially a written IOU that includes:
 
 - **The parties** – the maker (the one who promises to pay) and the payee (the one who will receive the money).  
 - **The amount** – the exact sum to be paid, often expressed in the local currency but can be multi‑currency if both sides agree.  
-- **The due date** – when the payment must be made, which can be a single date or a series of installments.  
-- **Interest (optional)** – sometimes the note adds a small percentage to compensate the payee for waiting.  
+- **The due date** – when the payment must be made, which can be a single date or a series of [installments](/en/glossario/en-installments).  
+- **[Interest](/en/glossario/en-interest) (optional)** – sometimes the note adds a small percentage to compensate the payee for waiting.  
 - **Signatures** – both parties usually sign, and a witness or notary can add extra credibility.  
 
 Because it’s a contract, a promissory note can be enforced in court if the maker doesn’t pay on time. That legal backing is why many small‑scale lenders prefer it over a casual verbal agreement.  
@@ -64,7 +64,7 @@ The app’s **smart capture** feature lets you snap a photo of your handwritten 
 
 Because FinMoovi works in **multiple currencies**, you can record a note in euros, dollars, or any other currency, and the app will keep a unified view of your obligations. It also syncs your cash‑flow reports, so you instantly see how each promissory note affects your monthly budget.  
 
-If you set a reminder, FinMoovi will ping you a few days before the due date, and you’ll even get a balance alert if the note’s payment would push you over your planned spending limit. All of this works offline too – you can capture a note on a train, and the data syncs later when you’re back online.  
+If you set a reminder, FinMoovi will ping you a few days before the due date, and you’ll even get a balance alert if the note’s payment would push you over your planned [spending limit](/en/glossario/en-spending-limit). All of this works offline too – you can capture a note on a train, and the data syncs later when you’re back online.  
 
 ## Practical tips for using promissory notes wisely  
 
@@ -83,7 +83,7 @@ If you set a reminder, FinMoovi will ping you a few days before the due date, an
 5. Tag the note with a category like *“Personal Loans”* or *“Business Advances.”*  
 6. Save – FinMoovi instantly adds the note to your **cash‑flow dashboard** and schedules a reminder.  
 
-Now you can see, at a glance, how the note fits into your monthly planning, whether it will affect your goal of saving for a vacation, and how it impacts your overall debt‑to‑income ratio.  
+Now you can see, at a glance, how the note fits into your monthly [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips), whether it will affect your goal of saving for a vacation, and how it impacts your overall debt‑to‑income ratio.  
 
 ## Common pitfalls and how to avoid them  
 
@@ -97,10 +97,10 @@ If you need a large loan, want a long repayment horizon, or require collateral (
 
 ## How promissory notes fit into broader financial planning  
 
-In a well‑balanced personal finance system, every promise to pay or receive money should be visible. By logging each note in FinMoovi, you can:  
+In a well‑balanced [personal finance](/en/posts/en-30-day-rule-for-purchases) system, every promise to pay or receive money should be visible. By logging each note in FinMoovi, you can:  
 
 - **Track total outstanding obligations** – see the sum of all notes you owe at any moment.  
-- **Plan monthly cash flow** – know whether a note’s payment will clash with rent, utilities, or a savings goal.  
+- **Plan monthly [cash flow](/en/glossario/en-cash-flow)** – know whether a note’s payment will clash with rent, utilities, or a savings goal.  
 - **Adjust goals** – if a note pushes you over a budget limit, you can temporarily lower discretionary spending or postpone a non‑essential purchase.  
 
 Having this clarity helps you avoid the surprise “I can’t afford my coffee this week” feeling that often comes from hidden debts.  

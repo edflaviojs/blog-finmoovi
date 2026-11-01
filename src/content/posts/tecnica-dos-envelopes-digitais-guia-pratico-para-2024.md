@@ -18,7 +18,8 @@ tags:
   - método envelopes
   - controle gastos categorias
 author: FinMoovi
-publishedAt: 2026-07-20T00:00:00.000Z
+publishedAt: 2026-07-20
+updatedAt: 2026-11-01T00:00:00.000Z
 readingTime: 4
 featured: false
 translationKey: tecnica-dos-envelopes-digitais-guia-pratico-para-2024

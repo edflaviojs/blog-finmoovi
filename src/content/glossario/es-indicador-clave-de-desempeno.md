@@ -19,10 +19,10 @@ seo:
 ---
 
 ## ¿Por qué no sabes a dónde se va tu dinero?
-Te levantas, pagas el alquiler, compras el café de la mañana y, al final del mes, la cuenta bancaria parece haber desaparecido. Revisas los extractos y solo ves números, sin saber cuál gasto fue el culpable. Esa sensación de “no tengo control” es más común de lo que crees, y la raíz suele ser la falta de métricas claras que te digan si tus finanzas están funcionando o no.
+Te levantas, pagas el alquiler, compras el café de la mañana y, al final del mes, la cuenta bancaria parece haber desaparecido. Revisas los extractos y solo ves números, sin saber cuál gasto fue el culpable. Esa sensación de “no tengo control” es más común de lo que crees, y la raíz suele ser la falta de métricas claras que te digan si tus [finanzas](/es/glossario/es-finanzas) están funcionando o no.
 
 ## ¿Qué es un indicador clave de desempeño (KPI)?
-Un indicador clave de desempeño, o KPI por sus siglas en inglés, es una medida que te ayuda a evaluar si estás alcanzando un objetivo concreto. En finanzas personales, un KPI puede ser tan simple como “porcentaje de ingresos que ahorro cada mes” o tan complejo como “costo promedio de tus compras impulsivas”. La clave está en que sea relevante (te importa), medible (puedes contarla) y accionable (puedes cambiarla). Cuando tienes KPIs claros, dejas de adivinar y empiezas a actuar con datos.
+Un indicador clave de desempeño, o KPI por sus siglas en inglés, es una medida que te ayuda a evaluar si estás alcanzando un objetivo concreto. En [finanzas personales](/es/posts/es-5-alternativas-a-organizze-en-2026-opciones-para-administrar), un KPI puede ser tan simple como “porcentaje de ingresos que ahorro cada mes” o tan complejo como “costo promedio de tus compras impulsivas”. La clave está en que sea relevante (te importa), medible (puedes contarla) y accionable (puedes cambiarla). Cuando tienes KPIs claros, dejas de adivinar y empiezas a actuar con datos.
 
 ![¿Por qué no sabes a dónde se va tu dinero?](/images/glossario/key-performance-indicator-inline-1.webp)
 
@@ -44,9 +44,9 @@ Al final de cada mes, comparas esos números con tus metas. Si el ahorro está b
 Aquí es donde entra FinMoovi, la app que actúa como tu asistente financiero personal. Con su **captura inteligente** (solo apuntas una foto al recibo o grabas una nota de voz) y **categorización automática**, cada gasto se registra sin que tengas que escribir nada. Además, su soporte multimoneda (BRL, USD, EUR y más) te permite seguir tus finanzas sin importar dónde estés.
 
 ### Funciones que hacen que los KPIs cobren vida
-- **Flujo de caja e informes**: visualiza ingresos y egresos en tiempo real, con gráficos que resaltan tus KPIs favoritos.
-- **Planificación mensual y metas**: define cuánto quieres ahorrar y la app te muestra el progreso día a día.
-- **Tarjetas de crédito y facturas**: sincroniza tus tarjetas y recibe alertas de vencimiento para evitar intereses.
+- **[Flujo de caja](/es/glossario/es-flujo-de-caja) e informes**: visualiza ingresos y egresos en tiempo real, con gráficos que resaltan tus KPIs favoritos.
+- **Planificación mensual y metas**: define cuánto quieres [ahorrar](/es/posts/es-ahorra-en-la-farmacia-sin-sacrificios-guia-practica-2026) y la app te muestra el progreso día a día.
+- **Tarjetas de [crédito](/es/glossario/es-credito) y facturas**: sincroniza tus tarjetas y recibe alertas de vencimiento para evitar intereses.
 - **Modo compras**: crea listas, ve el total en tiempo real y recibe notificaciones si te pasas del presupuesto.
 - **Recordatorios y alertas de saldo**: avisan cuando tu cuenta está cerca de quedar en números rojos.
 - **Modo offline y PWA**: funciona sin conexión y se sincroniza cuando vuelvas a estar online.
@@ -58,7 +58,7 @@ Aquí es donde entra FinMoovi, la app que actúa como tu asistente financiero pe
 
 ## Paso a paso para crear tus KPIs en FinMoovi
 1. Abre la app y dirígete a “Metas y KPIs”.  
-2. Pulsa “Nuevo KPI” y elige una categoría (ahorro, gasto, inversión).  
+2. Pulsa “Nuevo KPI” y elige una categoría (ahorro, gasto, [inversión](/es/glossario/es-inversion)).  
 3. Define el objetivo (por ejemplo, “ahorrar 20 % del ingreso mensual”).  
 4. Asocia el KPI a una o varias categorías de gasto (por ejemplo, “Alimentación” y “Ocio”).  
 5. Guarda y deja que la app haga el resto: cada foto de recibo o voz se asignará y actualizará tu KPI automáticamente.

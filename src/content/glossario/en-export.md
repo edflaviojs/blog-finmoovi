@@ -19,7 +19,7 @@ seo:
 ---
 
 ## What export really means for you  
-You’ve just closed a deal with a client overseas and the payment will arrive in a different currency. The excitement is real, but the next day you stare at your bank statement and wonder: “How do I keep track of this foreign income? Will the exchange rate eat my profit? And what happens to my cash flow when the money lands weeks later?”  
+You’ve just closed a deal with a client overseas and the payment will arrive in a different currency. The excitement is real, but the next day you stare at your bank statement and wonder: “How do I keep track of this foreign income? Will the exchange rate eat my profit? And what happens to my [cash flow](/en/glossario/en-cash-flow) when the money lands weeks later?”  
 
 Export is simply the sale of goods or services to another country. In practice it means you receive money in a currency that isn’t your everyday one, you may have to deal with customs paperwork, and you need to plan for the timing of the cash that will arrive. All these moving parts can turn a lucrative opportunity into a headache if you don’t have the right tools.
 
@@ -30,7 +30,7 @@ Export is simply the sale of goods or services to another country. In practice i
 ## How export affects your personal finances  
 When you start earning from abroad, three things change in your budget:  
 
-- **Currency conversion** – the amount you finally see in your account depends on the exchange rate at the moment the money is converted. A swing of a few percent can be the difference between covering a month’s rent or needing to dip into savings.  
+- **Currency conversion** – the amount you finally see in your account depends on the exchange rate at the moment the money is converted. A swing of a few percent can be the difference between covering a month’s rent or needing to dip into [savings](/en/glossario/en-savings).  
 - **Cash‑flow timing** – international transfers often take several days, sometimes weeks. During that gap you might still have regular bills to pay.  
 - **Tax and reporting** – many countries require you to declare foreign earnings, and you may need to convert the amount to your local currency for tax purposes.  
 
@@ -45,9 +45,9 @@ The **multi‑currency engine** automatically detects the foreign currency (USD,
 
 
 
-All this data feeds into the **cash‑flow dashboard**, where you see incoming export payments plotted against upcoming expenses. The app flags any gap longer than a week, so you can plan a short‑term loan or adjust discretionary spending.  
+All this data feeds into the **cash‑flow dashboard**, where you see incoming export payments plotted against upcoming expenses. The app flags any gap longer than a week, so you can plan a short‑term [loan](/en/glossario/en-loan) or adjust discretionary spending.  
 
-Finally, the **monthly planning and goals** module lets you set a target export revenue—say, “earn the equivalent of two months’ rent this quarter.” FinMoovi tracks progress in real time, nudging you when you’re on track or when a payment is delayed.
+Finally, the **monthly [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) and goals** module lets you set a target export revenue—say, “earn the equivalent of two months’ rent this quarter.” FinMoovi tracks progress in real time, nudging you when you’re on track or when a payment is delayed.
 
 ## Practical tips for managing export income  
 
@@ -77,7 +77,7 @@ Because FinMoovi works offline and syncs when you’re back online, you can capt
 
 - **Clarity:** All your foreign earnings sit next to your regular income, already converted, so you can see the real impact on your budget.  
 - **Confidence:** No more surprise overdrafts because you knew exactly when the money would arrive.  
-- **Time saved:** Automatic categorization means you spend minutes, not hours, filing receipts and preparing tax reports.  
+- **Time saved:** [Automatic categorization](/en/posts/en-automatic-expense-categorization-with-ai-keep-your-finances) means you spend minutes, not hours, filing receipts and preparing tax reports.  
 
 ## Start today  
-You don’t need a finance degree to keep your export earnings under control. Open FinMoovi, tap **“Add receipt,”** take a photo of the latest invoice you have on hand, and let the app do the rest. In five minutes you’ll have a clear picture of how that foreign payment fits into your monthly plan, and you’ll be ready for the next one.
+You don’t need a [finance](/en/glossario/en-finance) degree to keep your export earnings under control. Open FinMoovi, tap **“Add receipt,”** take a photo of the latest invoice you have on hand, and let the app do the rest. In five minutes you’ll have a clear picture of how that foreign payment fits into your monthly plan, and you’ll be ready for the next one.

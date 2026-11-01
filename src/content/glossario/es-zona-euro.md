@@ -20,7 +20,7 @@ seo:
 
 ## ¿Por qué el tipo de cambio te vuelve loco cada vez que viajas o compras online?
 
-Te ha pasado que planeas unas vacaciones en Europa, haces la cuenta del presupuesto y, de repente, el precio de un café parece subir o bajar sin razón. O que al pagar una suscripción internacional ves que el cargo en tu cuenta varía cada mes y no sabes por qué. Ese desconcierto es típico cuando el dinero cruza la **zona euro**, el bloque de países que comparten la misma moneda: el euro. La falta de claridad sobre cómo funciona esa zona y cómo afecta tus finanzas personales puede generar estrés y decisiones equivocadas, como gastar de más o perder oportunidades de ahorro.
+Te ha pasado que planeas unas [vacaciones](/es/posts/es-5-consejos-para-reorganizar-tus-finanzas-en-vacaciones) en Europa, haces la cuenta del presupuesto y, de repente, el precio de un café parece subir o bajar sin razón. O que al pagar una suscripción internacional ves que el cargo en tu cuenta varía cada mes y no sabes por qué. Ese desconcierto es típico cuando el dinero cruza la **zona euro**, el bloque de países que comparten la misma moneda: el euro. La falta de claridad sobre cómo funciona esa zona y cómo afecta tus [finanzas](/es/glossario/es-finanzas) personales puede generar estrés y decisiones equivocadas, como gastar de más o perder oportunidades de ahorro.
 
 ![¿Por qué el tipo de cambio te vuelve loco cada vez que viajas o compras online?](/images/glossario/zona-do-euro-inline-1.webp)
 
@@ -31,14 +31,14 @@ Te ha pasado que planeas unas vacaciones en Europa, haces la cuenta del presupue
 La zona euro es un conjunto de países europeos que han adoptado el euro como moneda oficial. No es solo un acuerdo político; es una unión monetaria que implica:
 
 - **Política monetaria única:** Un solo banco central (el Banco Central Europeo) decide la tasa de interés para todos los países miembros.
-- **Estabilidad de precios:** El objetivo es mantener la inflación bajo control, lo que ayuda a que el poder adquisitivo sea predecible.
+- **Estabilidad de precios:** El objetivo es mantener la [inflación](/es/glossario/es-inflacion) bajo control, lo que ayuda a que el poder adquisitivo sea predecible.
 - **Libre circulación de bienes y servicios:** Al usar la misma moneda, se eliminan los costos de cambio al comprar en otro país de la zona.
 
 Para ti, esto significa que cuando recibes o gastas euros, el valor que ves en tu cuenta no depende de la política de cada país, sino de una regla común. Eso simplifica la comparación de precios, pero también implica que cualquier fluctuación proviene de la relación entre tu moneda local y el euro, no de diferencias internas.
 
 ## Cómo la zona euro afecta tu día a día
 
-Imagina que compras una suscripción a una plataforma de streaming que factura en euros. Cada mes el cargo se convierte a tu moneda local según el tipo de cambio del día. Si el euro se fortalece, pagarás “cerca de un alquiler” más caro; si se debilita, el costo será “como el precio de un café al día”. Lo mismo ocurre con:
+Imagina que compras una suscripción a una plataforma de streaming que factura en euros. Cada mes el cargo se convierte a tu moneda local según el tipo de cambio del día. Si el euro se fortalece, pagarás “cerca de un [alquiler](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026)” más caro; si se debilita, el costo será “como el precio de un café al día”. Lo mismo ocurre con:
 
 ![Cómo la zona euro afecta tu día a día](/images/glossario/zona-do-euro-inline-3.webp)
 
@@ -56,10 +56,10 @@ Aquí es donde entra **FinMoovi**, la app que actúa como tu asistente financier
 
 - **Captura inteligente + categorización automática:** Toma una foto del ticket del tren en París y FinMoovi lo clasifica como “Transporte – Europa”.
 - **Multimoneda en tiempo real:** Ve cuánto te cuesta ese café en euros comparado con tu moneda local, con la tasa actual.
-- **Flujo de caja e informes:** Visualiza cuánto has gastado en euros durante el mes y cómo eso impacta tu presupuesto global.
+- **[Flujo de caja](/es/glossario/es-flujo-de-caja) e informes:** Visualiza cuánto has gastado en euros durante el mes y cómo eso impacta tu presupuesto global.
 - **Planificación mensual y metas:** Define una meta de “no gastar más de X euros en ocio” y la app te avisa cuando te acercas.
 - **Tarjetas de crédito y facturación:** Importa tus movimientos y la app los convierte a tu moneda, mostrando el total en tiempo real.
-- **Modo compras:** Crea una lista de compras internacionales; la app suma el total en euros y te muestra el equivalente en tu moneda antes de confirmar.
+- **Modo compras:** Crea una [lista de compras](/es/glossario/es-lista-de-compras) internacionales; la app suma el total en euros y te muestra el equivalente en tu moneda antes de confirmar.
 - **Recordatorios y alertas de saldo:** Recibe notificaciones cuando el tipo de cambio supera un umbral que tú mismo estableces.
 - **Offline / PWA / sincronización:** Funciona sin conexión y guarda los datos en la nube para que siempre tengas la información actualizada.
 

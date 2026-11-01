@@ -33,7 +33,7 @@ En el mundo financiero, los “futuros” son contratos que te obligan a comprar
 Entender el concepto de futuros te ayuda a:
 
 - Visualizar cuánto deberías reservar hoy para cubrir gastos que llegarán dentro de semanas o meses.  
-- Evitar que un aumento inesperado (por ejemplo, la tarifa de internet) te deje sin liquidez.  
+- Evitar que un aumento inesperado (por ejemplo, la tarifa de internet) te deje sin [liquidez](/es/glossario/es-liquidez).  
 - Tomar decisiones más informadas, como cambiar a un plan de telefonía más barato antes de que suba el precio.
 
 ## Cómo FinMoovi te ayuda a manejar tus “futuros” personales
@@ -47,9 +47,9 @@ Imagina que tu amigo te recomienda una app que hace todo eso sin que tengas que 
 - **Captura inteligente:** toma una foto del recibo o dicta el gasto y la app lo guarda al instante.  
 - **Categorización automática:** el algoritmo reconoce si es una factura de luz, una compra de supermercado o una suscripción.  
 - **Multimoneda:** registra gastos en cualquier divisa y los muestra en la que prefieras.  
-- **Flujo de caja e informes:** visualiza entradas y salidas en gráficos claros, con proyecciones de futuros basadas en tus patrones.  
-- **Planificación mensual y metas:** fija objetivos (ej. ahorrar el equivalente a dos alquileres) y sigue tu avance.  
-- **Tarjetas de crédito y facturas:** enlaza tus tarjetas y la app te avisa cuándo vence el pago.  
+- **[Flujo de caja](/es/glossario/es-flujo-de-caja) e informes:** visualiza entradas y salidas en gráficos claros, con proyecciones de futuros basadas en tus patrones.  
+- **Planificación mensual y metas:** fija objetivos (ej. [ahorrar](/es/posts/es-ahorra-en-la-farmacia-sin-sacrificios-guia-practica-2026) el equivalente a dos alquileres) y sigue tu avance.  
+- **Tarjetas de [crédito](/es/glossario/es-credito) y facturas:** enlaza tus tarjetas y la app te avisa cuándo vence el pago.  
 - **Modo compras:** crea listas, ve el total en tiempo real y evita sorpresas al pasar por caja.  
 - **Recordatorios y alertas de saldo:** recibe notificaciones si tu saldo está bajo o si un gasto supera el límite que estableciste.  
 - **Offline / PWA / sincronización:** funciona sin conexión y guarda todo en la nube para que lo tengas siempre disponible.
@@ -66,13 +66,13 @@ Imagina que tu amigo te recomienda una app que hace todo eso sin que tengas que 
 
 1. **Regístrate y configura tu perfil**: indica tu moneda principal y, si lo deseas, agrega otras divisas que usas frecuentemente.  
 2. **Captura tus primeros recibos**: abre la cámara, toma foto del último recibo de luz y deja que la app lo categorice. Repite con la factura del móvil y el ticket del supermercado.  
-3. **Define tus metas mensuales**: en la sección de planificación, escribe “Ahorrar para el seguro del coche” y asigna un objetivo equivalente al precio de un alquiler.  
+3. **Define tus metas mensuales**: en la sección de planificación, escribe “Ahorrar para el seguro del coche” y asigna un objetivo equivalente al precio de un [alquiler](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026).  
 4. **Activa alertas de saldo**: establece un umbral bajo (por ejemplo, el equivalente a una cena fuera) y recibe notificaciones cuando tu saldo caiga por debajo.  
 5. **Revisa el informe de futuros**: cada fin de semana, abre el reporte que muestra los gastos proyectados para el próximo mes y ajusta tus hábitos si ves que algo se sale de control.
 
 ## Preguntas frecuentes sobre los futuros y su aplicación personal
 
-- **¿Necesito ser experto en bolsa para usar futuros?** No. En finanzas personales, “futuros” es solo una forma de pensar en los gastos que vendrán. La app hace el trabajo pesado por ti.  
+- **¿Necesito ser experto en bolsa para usar futuros?** No. En [finanzas](/es/glossario/es-finanzas) personales, “futuros” es solo una forma de pensar en los gastos que vendrán. La app hace el trabajo pesado por ti.  
 - **¿Qué pasa si mi ingreso varía cada mes?** FinMoovi permite ingresar ingresos variables y recalcula automáticamente los futuros, ajustando las metas y alertas.  
 - **¿Puedo usar la app sin conexión a internet?** Sí, la versión offline guarda los datos y los sincroniza cuando vuelvas a estar online.
 

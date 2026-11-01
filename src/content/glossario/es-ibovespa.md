@@ -32,15 +32,15 @@ Muchos de nosotros guardamos dinero en una cuenta corriente, tal vez en una caja
 
 ## Cómo el Ibovespa se relaciona con tu día a día
  
-Imagina que cada mes gastas cerca de un alquiler en comida, transporte y ocio. Si solo dejas ese dinero en una cuenta sin generar intereses, al cabo de un año tendrás el mismo poder de compra, pero la inflación habrá reducido su valor. Invertir una parte en un fondo que siga al Ibovespa puede generar rendimientos superiores al costo de vida, ayudándote a que ese “alquiler de comida” rinda más con el tiempo. No necesitas ser un experto; basta con entender que el índice refleja el comportamiento de las empresas líderes y que, a largo plazo, tiende a crecer.
+Imagina que cada mes gastas cerca de un alquiler en comida, transporte y ocio. Si solo dejas ese dinero en una cuenta sin generar intereses, al cabo de un año tendrás el mismo poder de compra, pero la [inflación](/es/glossario/es-inflacion) habrá reducido su valor. Invertir una parte en un fondo que siga al Ibovespa puede generar rendimientos superiores al [costo de vida](/es/glossario/es-costo-de-vida), ayudándote a que ese “alquiler de comida” rinda más con el tiempo. No necesitas ser un experto; basta con entender que el índice refleja el comportamiento de las empresas líderes y que, a largo plazo, tiende a crecer.
 
 ## FinMoovi: la herramienta que simplifica la inversión en el Ibovespa
  
-FinMoovi es la app que convierte la gestión financiera en algo tan sencillo como tomar una foto. Sus funciones clave te permiten:
+FinMoovi es la app que convierte la [gestión financiera](/es/posts/es-5-alternativas-a-organizze-en-2026-opciones-para-administrar) en algo tan sencillo como tomar una foto. Sus funciones clave te permiten:
 - **Captura inteligente:** toma una foto del recibo o usa la voz para registrar gastos; la app los categoriza automáticamente.
 - **Multimoneda:** maneja diferentes divisas sin complicaciones, ideal si tus ingresos o inversiones están en distintas monedas.
-- **Flujo de caja e informes:** visualiza ingresos y egresos en tiempo real, con gráficos claros.
-- **Planificación mensual y metas:** define objetivos (como “ahorrar para un viaje”) y sigue tu progreso.
+- **[Flujo de caja](/es/glossario/es-flujo-de-caja) e informes:** visualiza ingresos y egresos en tiempo real, con gráficos claros.
+- **Planificación mensual y metas:** define objetivos (como “[ahorrar](/es/posts/es-ahorra-en-la-farmacia-sin-sacrificios-guia-practica-2026) para un viaje”) y sigue tu progreso.
 - **Tarjetas de crédito y facturas:** registra consumos y fechas de pago, evitando sorpresas.
 - **Modo compras:** crea listas, ve el total en tiempo real y controla el gasto antes de llegar a la caja.
 - **Recordatorios y alertas de saldo:** recibe notificaciones cuando te acerques al límite de tu presupuesto.
@@ -53,7 +53,7 @@ FinMoovi es la app que convierte la gestión financiera en algo tan sencillo com
 ## Pasos para comenzar a invertir en el Ibovespa con FinMoovi
  
 1. **Abre la app y crea tu perfil financiero.** Ingresa tus ingresos, gastos habituales y la moneda que prefieras.
-2. **Define una meta de inversión.** Por ejemplo, “destinar el equivalente al precio de un café al día para invertir en un fondo del Ibovespa”.
+2. **Define una meta de [inversión](/es/glossario/es-inversion).** Por ejemplo, “destinar el equivalente al precio de un café al día para invertir en un fondo del Ibovespa”.
 3. **Activa la captura inteligente.** Cada vez que pagues una factura o recibo, toma una foto; la app lo clasificará y actualizará tu presupuesto automáticamente.
 4. **Explora la sección “Inversiones”.** Allí encontrarás fondos que replican el Ibovespa; selecciona el que mejor se ajuste a tu perfil de riesgo.
 5. **Programa aportes automáticos.** Puedes decidir que, cada vez que la app registre un gasto menor al equivalente de un almuerzo, transfiera esa diferencia al fondo seleccionado.

@@ -20,7 +20,7 @@ seo:
 
 ## O que são swaps e por que você já deve ter ouvido falar
 
-Você já se pegou pensando em como proteger o valor de um pagamento futuro, seja ele um aluguel, a compra de um carro ou até a taxa de juros de um empréstimo? Essa preocupação nasce da incerteza: o que acontece se a taxa de juros subir ou a moeda mudar de valor? É aí que entram os **swaps**, instrumentos financeiros que permitem trocar uma série de pagamentos por outra, de forma a reduzir riscos ou aproveitar oportunidades. Em termos simples, um swap funciona como uma troca de “promessas de pagamento” entre duas partes. Uma delas pode querer trocar uma taxa fixa por uma taxa variável, ou ainda trocar pagamentos em dólares por pagamentos em euros. Essa troca ajuda a alinhar os fluxos de caixa com a realidade do seu bolso.
+Você já se pegou pensando em como proteger o valor de um pagamento futuro, seja ele um [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026), a compra de um carro ou até a taxa de [juros](/glossario/juros) de um [empréstimo](/glossario/emprestimo)? Essa preocupação nasce da incerteza: o que acontece se a taxa de juros subir ou a moeda mudar de valor? É aí que entram os **swaps**, instrumentos financeiros que permitem trocar uma série de pagamentos por outra, de forma a reduzir riscos ou aproveitar oportunidades. Em termos simples, um swap funciona como uma troca de “promessas de pagamento” entre duas partes. Uma delas pode querer trocar uma taxa fixa por uma taxa variável, ou ainda trocar pagamentos em dólares por pagamentos em euros. Essa troca ajuda a alinhar os fluxos de caixa com a realidade do seu bolso.
 
 ![O que são swaps e por que você já deve ter ouvido falar](/images/glossario/swaps-inline-1.webp)
 
@@ -34,7 +34,7 @@ Imagine que você tem um contrato de aluguel que paga um valor fixo todo mês, m
 
 - **Redução de risco:** Troca de pagamentos que podem variar de forma inesperada.
 - **Aproveitamento de oportunidades:** Se você acha que a taxa de juros vai mudar, pode ajustar seus pagamentos para ganhar dinheiro.
-- **Flexibilidade de fluxo de caixa:** Alinha recebimentos e pagamentos de acordo com a sua realidade financeira.
+- **Flexibilidade de [fluxo de caixa](/glossario/fluxo-de-caixa):** Alinha recebimentos e pagamentos de acordo com a sua realidade financeira.
 
 ![Por que os swaps são úteis para quem não é especialista](/images/glossario/swaps-inline-3.webp)
 
@@ -66,7 +66,7 @@ Ao fazer compras, adicione itens à lista e veja o total acumulado em tempo real
 
 ### Lembretes, alertas de saldo e modo offline
 
-O FinMoovi avisa quando um pagamento está próximo, quando a taxa de câmbio ultrapassa um limite que você definiu, ou quando o saldo da conta fica baixo. Tudo isso funciona offline e sincroniza quando você se conecta novamente, garantindo que você nunca perca um prazo importante.
+O FinMoovi avisa quando um pagamento está próximo, quando a taxa de [câmbio](/glossario/cambio) ultrapassa um limite que você definiu, ou quando o saldo da conta fica baixo. Tudo isso funciona offline e sincroniza quando você se conecta novamente, garantindo que você nunca perca um prazo importante.
 
 ## Dicas práticas para usar swaps de forma inteligente
 
@@ -100,4 +100,4 @@ Mesmo sendo uma ferramenta poderosa, swaps trazem riscos. Se a taxa de juros cai
 
 ## Comece hoje
 
-Abra o FinMoovi, vá até a seção “Captura inteligente”, tire uma foto da sua última fatura de aluguel ou do contrato de empréstimo e deixe o app categorizar tudo. Em seguida, ative o alerta de variação cambial e crie uma meta de redução de juros. Em menos de cinco minutos você já terá os dados necessários para avaliar se um swap pode melhorar seu fluxo de caixa. Pronto para deixar a incerteza financeira no passado? Vamos lá!
+Abra o FinMoovi, vá até a seção “[Captura inteligente](/posts/cansado-de-perder-horas-nas-planilhas-como-o-finmoovi)”, tire uma foto da sua última fatura de aluguel ou do contrato de empréstimo e deixe o app categorizar tudo. Em seguida, ative o alerta de variação cambial e crie uma meta de redução de juros. Em menos de cinco minutos você já terá os dados necessários para avaliar se um swap pode melhorar seu fluxo de caixa. Pronto para deixar a incerteza financeira no passado? Vamos lá!

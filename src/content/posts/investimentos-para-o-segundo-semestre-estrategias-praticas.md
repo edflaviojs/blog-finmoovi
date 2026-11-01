@@ -13,6 +13,7 @@ tags:
   - "ações"
 author: "FinMoovi"
 publishedAt: 2026-07-21
+updatedAt: 2026-11-01
 readingTime: 6
 locale: "pt"
 translationKey: "investimentos-para-o-segundo-semestre-estrategias-praticas"

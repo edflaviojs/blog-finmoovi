@@ -54,10 +54,10 @@ Ele diminui quando:
 
 Muitos apps de finanças deixam você no escuro quando o assunto é derivativos. O **FinMoovi** traz tudo isso de forma simples, como se fosse um amigo que já entende de mercado e ainda ajuda a organizar seu dia a dia financeiro.
 
-- **Captura inteligente**: Tire uma foto da sua nota de corretagem ou grave a voz da sua corretora explicando a operação. O app reconhece automaticamente o tipo de contrato (futuro, opção, etc.) e preenche os campos de quantidade, preço e data.
-- **Categorização automática**: O algoritmo classifica a operação como “investimento em derivativos” e já adiciona o campo “open interest”. Assim, você vê de cara se aquele contrato está aumentando ou diminuindo o total aberto.
+- **[Captura inteligente](/posts/cansado-de-perder-horas-nas-planilhas-como-o-finmoovi)**: Tire uma foto da sua nota de corretagem ou grave a voz da sua corretora explicando a operação. O app reconhece automaticamente o tipo de contrato (futuro, opção, etc.) e preenche os campos de quantidade, preço e data.
+- **[Categorização automática](/posts/categorizacao-automatica-de-gastos-com-ia-como-deixar-suas)**: O algoritmo classifica a operação como “[investimento](/glossario/investimento) em derivativos” e já adiciona o campo “open interest”. Assim, você vê de cara se aquele contrato está aumentando ou diminuindo o total aberto.
 - **Multimoeda**: Se você negocia contratos em dólares, euros ou reais, o FinMoovi converte tudo para a moeda que você escolher acompanhar, facilitando a visualização do seu risco total.
-- **Fluxo de caixa e relatórios**: O app gera relatórios mensais que mostram a evolução do **open interest** dos seus ativos, comparando com a variação de preço. Você entende se está ganhando por tendência ou apenas por sorte.
+- **[Fluxo de caixa](/glossario/fluxo-de-caixa) e relatórios**: O app gera relatórios mensais que mostram a evolução do **open interest** dos seus ativos, comparando com a variação de preço. Você entende se está ganhando por tendência ou apenas por sorte.
 - **Planejamento mensal / metas**: Defina metas de exposição (por exemplo, “não mais que 20% do capital em contratos com open interest acima de 10 mil”). O FinMoovi avisa quando você ultrapassa.
 - **Cartões de crédito / fatura**: Se você usa margem de corretora, o app integra a fatura da sua conta de margem ao seu fluxo de caixa, evitando surpresas.
 - **Modo compras**: Crie uma lista de contratos que quer abrir e veja o total de margem necessária em tempo real, antes de confirmar a operação.
@@ -68,7 +68,7 @@ Muitos apps de finanças deixam você no escuro quando o assunto é derivativos.
 
 **Dica prática:** Sempre compare a variação de preço com a variação do **open interest** nos últimos 7 dias. Se o preço sobe e o interesse aberto cai, considere reduzir a posição.
 
-**Dica prática:** Defina um alerta no FinMoovi para ser notificado quando o **open interest** de um contrato ultrapassar um patamar que você considera “alto risco”. Assim, você age antes que a volatilidade aumente.
+**Dica prática:** Defina um alerta no FinMoovi para ser notificado quando o **open interest** de um contrato ultrapassar um patamar que você considera “alto risco”. Assim, você age antes que a [volatilidade](/glossario/volatilidade) aumente.
 
 **Dica prática:** Use a funcionalidade de captura inteligente para registrar rapidamente cada nova operação. Quanto mais dados o app tiver, mais preciso será o relatório de **open interest** e melhor sua tomada de decisão.
 
@@ -87,7 +87,7 @@ Muitos apps de finanças deixam você no escuro quando o assunto é derivativos.
 
 1. **Mapeie seus contratos**: Use a captura inteligente do FinMoovi para registrar cada contrato que você possui ou pretende abrir.  
 2. **Acompanhe o indicador**: No painel de derivativos, veja o gráfico de **open interest** ao lado da evolução de preço.  
-3. **Ajuste a exposição**: Se o **open interest** subir muito rápido, reavalie se a sua alavancagem está adequada ao seu perfil de risco.  
+3. **Ajuste a exposição**: Se o **open interest** subir muito rápido, reavalie se a sua [alavancagem](/glossario/alavancagem) está adequada ao seu perfil de risco.  
 4. **Revise mensalmente**: No relatório mensal, compare a performance dos contratos com a variação do **open interest**. Decida se mantém, aumenta ou fecha posições.
 
 ## Comece hoje

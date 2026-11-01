@@ -9,6 +9,7 @@ locale: "pt"
 tags: ["renda fixa","renda variável","investimento 2026","perfil de investidor","finmoovi","renda fixa vs variável"]
 author: "FinMoovi"
 publishedAt: 2026-07-17
+updatedAt: 2026-11-01
 readingTime: 8
 featured: false
 translationKey: "renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026"

@@ -26,13 +26,13 @@ You open your banking app, scroll through a list of transactions, and feel a kno
 
 
 
-That’s where the idea of a **key performance indicator (KPI)** steps in. In plain language, a KPI is a simple number that tells you how well you’re doing in a specific area. Think of it as the speedometer of your personal finance car – it shows you instantly whether you’re cruising within your budget or revving past the limit.
+That’s where the idea of a **key performance indicator (KPI)** steps in. In plain language, a KPI is a simple number that tells you how well you’re doing in a specific area. Think of it as the speedometer of your personal [finance](/en/glossario/en-finance) car – it shows you instantly whether you’re cruising within your budget or revving past the limit.
 
-FinMoovi makes KPI tracking painless. Its *smart capture* feature lets you snap a photo of a receipt or speak the amount, and the app instantly categorizes the expense. Because it works in multiple currencies, you can travel abroad and still see the same clear numbers. With cash‑flow reports, monthly goals, and real‑time alerts, the KPI you need most – “percentage of income saved each month” – appears right on the dashboard without any manual math.
+FinMoovi makes KPI tracking painless. Its *smart capture* feature lets you snap a photo of a receipt or speak the amount, and the app instantly categorizes the [expense](/en/glossario/en-expense). Because it works in multiple currencies, you can travel abroad and still see the same clear numbers. With cash‑flow reports, monthly goals, and real‑time alerts, the KPI you need most – “percentage of income saved each month” – appears right on the dashboard without any manual math.
 
 ## What a KPI really is (and isn’t)
 
-A KPI is not a vague goal like “save more”. It’s a measurable metric that you can track over time. In personal finance, common KPIs include:
+A KPI is not a vague goal like “save more”. It’s a measurable metric that you can track over time. In [personal finance](/en/posts/en-30-day-rule-for-purchases), common KPIs include:
 
 - **Savings rate** – the share of your income that ends up in savings or investments.
 - **Debt‑to‑income ratio** – how much of your monthly earnings go to paying debts.
@@ -80,7 +80,7 @@ Once you’re comfortable with the savings rate, you can add more KPIs to get a 
 
 - **Debt‑to‑income ratio** – keep it below 30 % to avoid over‑leveraging.
 - **Spend‑by‑category caps** – set a maximum of, say, 15 % for dining out.
-- **Emergency fund coverage** – aim for three to six months of living expenses saved.
+- **[Emergency fund](/en/glossario/en-emergency-fund) coverage** – aim for three to six months of living expenses saved.
 
 FinMoovi lets you create a KPI card for each of these. The app’s *shopping mode* even shows a running total as you add items to your list, helping you stay within the “dining out” cap in real time.
 
@@ -110,11 +110,11 @@ Seeing a red flag on your debt‑to‑income ratio is only useful if you act. He
 
 1. Identify the biggest debt (credit card, personal loan, etc.).
 2. Use FinMoovi’s *Bill* section to set a reminder for the next payment.
-3. Allocate any extra cash flow (e.g., a refund) to a “debt snowball” category.
+3. Allocate any extra [cash flow](/en/glossario/en-cash-flow) (e.g., a refund) to a “debt snowball” category.
 4. Watch the KPI gauge improve month by month.
 
 Because the app updates automatically, you’ll see the impact of each extra payment without re‑calculating anything manually.
 
 ## Start today
 
-**Micro‑action (5 minutes):** Open FinMoovi, tap the *Smart Capture* button, and snap a photo of the last receipt you have on hand (even a grocery bag receipt works). Confirm the auto‑category, then go to *Monthly Planning* and set a simple savings‑rate goal of 10 %. That’s it – you’ve created your first personal finance KPI and taken the first step toward clearer money management.
+**Micro‑action (5 minutes):** Open FinMoovi, tap the *Smart Capture* button, and snap a photo of the last receipt you have on hand (even a grocery bag receipt works). Confirm the auto‑category, then go to *Monthly Planning* and set a simple savings‑rate goal of 10 %. That’s it – you’ve created your first [personal finance](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your) KPI and taken the first step toward clearer money management.

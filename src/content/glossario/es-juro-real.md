@@ -19,7 +19,7 @@ seo:
 ---
 
 ## ¿Por qué el dinero que guardas hoy no rinde como esperas?
-Te levantas, pagas el alquiler, el café del día y, al final del mes, revisas la cuenta de ahorros. El saldo parece crecer, pero cuando intentas comprar algo más grande, notas que el poder de compra no ha aumentado. La razón suele ser que el dinero está perdiendo valor por la inflación y tú solo estás recibiendo el “interés nominal” que te ofrecen los bancos. Aquí es donde entra el concepto de **juro real**.
+Te levantas, pagas el [alquiler](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026), el café del día y, al final del mes, revisas la cuenta de ahorros. El saldo parece crecer, pero cuando intentas comprar algo más grande, notas que el poder de compra no ha aumentado. La razón suele ser que el dinero está perdiendo valor por la [inflación](/es/glossario/es-inflacion) y tú solo estás recibiendo el “interés nominal” que te ofrecen los bancos. Aquí es donde entra el concepto de **juro real**.
 
 ## Entendiendo el juro real sin complicaciones
 El juro real es la diferencia entre el interés que recibes (interés nominal) y la inflación, es decir, cuánto realmente gana tu dinero después de descontar el aumento general de precios. Si tu cuenta paga un 5 % anual y la inflación está en 3 %, el juro real es aproximadamente 2 %. Ese 2 % es lo que realmente puedes comprar al final del período.
@@ -37,7 +37,7 @@ Si la inflación supera al interés nominal, el juro real se vuelve negativo y, 
 ## Por qué el juro real importa en tu vida cotidiana
 Imagina que guardas el equivalente al precio de un alquiler mensual en una cuenta que paga 4 % y la inflación está en 5 %. Al cabo de un año, aunque el número en tu cuenta sea mayor, con ese dinero ya no alcanzas a pagar el mismo alquiler; necesitas más para cubrirlo. Conocer el juro real te ayuda a:
 
-- Evaluar si una inversión realmente protege tu poder de compra.  
+- Evaluar si una [inversión](/es/glossario/es-inversion) realmente protege tu poder de compra.  
 - Comparar productos financieros (cajas de ahorro, fondos, bonos) de forma justa.  
 - Tomar decisiones que eviten que tus ahorros se “desinflen”.
 
@@ -46,11 +46,11 @@ Imagina que guardas el equivalente al precio de un alquiler mensual en una cuent
 
 
 ## Cómo FinMoovi te ayuda a monitorear el juro real sin ser un experto
-FinMoovi no es solo otro gestor de gastos; es tu aliado para que el juro real deje de ser un misterio. Con su **captura inteligente** (foto del recibo o comando de voz) y **categorización automática**, sabes exactamente cuánto gastas y cuánto deberías estar ganando para no perder poder adquisitivo. Además, su **multimoneda** te permite comparar rendimientos en diferentes divisas (USD, EUR, etc.) y ver el impacto de la inflación local en cada una.
+FinMoovi no es solo otro gestor de gastos; es tu aliado para que el juro real deje de ser un misterio. Con su **[captura inteligente](/es/posts/es-cansado-de-perder-horas-en-hojas-de-calculo-asi-finmoovi-lo)** (foto del recibo o comando de voz) y **categorización automática**, sabes exactamente cuánto gastas y cuánto deberías estar ganando para no perder poder adquisitivo. Además, su **multimoneda** te permite comparar rendimientos en diferentes divisas (USD, EUR, etc.) y ver el impacto de la inflación local en cada una.
 
-- **Flujo de caja e informes:** visualiza ingresos, gastos y el rendimiento neto después de inflación.  
+- **[Flujo de caja](/es/glossario/es-flujo-de-caja) e informes:** visualiza ingresos, gastos y el rendimiento neto después de inflación.  
 - **Planificación mensual y metas:** fija objetivos como “alcanzar un juro real del 2 %” y sigue tu progreso.  
-- **Tarjetas de crédito y facturas:** controla los intereses que pagas y evita que se conviertan en una carga que supere la inflación.  
+- **Tarjetas de [crédito](/es/glossario/es-credito) y facturas:** controla los intereses que pagas y evita que se conviertan en una carga que supere la inflación.  
 - **Modo compras:** crea listas, ve el total en tiempo real y decide si el gasto vale la pena según tu objetivo de juro real.  
 - **Recordatorios y alertas de saldo:** recibe notificaciones cuando tu saldo cae bajo el nivel necesario para mantener un juro real positivo.  
 - **Offline / PWA / sincronización:** accede a tus datos sin conexión y mantén todo actualizado en todos tus dispositivos.

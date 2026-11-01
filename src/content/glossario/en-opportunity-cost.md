@@ -32,7 +32,7 @@ Imagine you have 500 units of money available this month. You could use that amo
 - Save it for an emergency reserve.  
 - Purchase that gadget you’ve been wanting for months.
 
-If you decide to buy the gadget, the opportunity cost is the benefits the courses or the reserve would have brought. Without realizing it, you might be sacrificing a more secure future for an immediate pleasure.
+If you decide to buy the gadget, the opportunity cost is the [benefits](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026) the courses or the reserve would have brought. Without realizing it, you might be sacrificing a more secure future for an immediate pleasure.
 
 ## How opportunity cost affects everyday decisions
 
@@ -54,7 +54,7 @@ The good news is you don’t have to stay in the dark. **FinMoovi** provides too
 
 ### Smart capture: photo or voice, everything gets categorized
 
-With the smart capture feature, just snap a photo of the receipt or say “grocery expense” and the app already recognizes the expense and classifies it automatically. That way you have an accurate record of where every cent went, without having to write anything down.
+With the smart capture feature, just snap a photo of the receipt or say “grocery [expense](/en/glossario/en-expense)” and the app already recognizes the expense and classifies it automatically. That way you have an accurate record of where every cent went, without having to write anything down.
 
 ### Multi‑currency: your money in any currency
 
@@ -62,7 +62,7 @@ If you travel or receive payments in different currencies, FinMoovi converts eve
 
 ### Cash flow and reports: complete view of the flow
 
-Cash‑flow reports display inflows and outflows in simple charts. When you see that 30 % of your money goes to leisure, it’s easier to calculate the opportunity cost of not investing that portion in a long‑term fund.
+Cash‑flow [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end) display inflows and outflows in simple charts. When you see that 30 % of your money goes to leisure, it’s easier to calculate the opportunity cost of not investing that portion in a long‑term fund.
 
 ### Monthly planning and goals: turn dreams into numbers
 
@@ -74,11 +74,11 @@ By integrating cards and bank accounts, FinMoovi avoids surprises on the stateme
 
 ### Shopping mode: list + real‑time total
 
-Create shopping lists and see the running total as you add items. If the total exceeds the limit you set for that month, the app warns you, preventing you from sacrificing your savings goal.
+Create shopping lists and see the running total as you add items. If the total exceeds the limit you set for that month, the app warns you, preventing you from sacrificing your [savings](/en/glossario/en-savings) goal.
 
 ### Balance reminders and alerts: never lose control
 
-Low‑balance or bill‑due notifications help keep the flow healthy. So you don’t have to choose between paying the electricity bill and skipping an investment; the app already signals what needs to be prioritized.
+Low‑balance or bill‑due notifications help keep the flow healthy. So you don’t have to choose between paying the electricity bill and skipping an [investment](/en/glossario/en-investment); the app already signals what needs to be prioritized.
 
 ### Offline / PWA / sync: works even without internet
 
@@ -88,7 +88,7 @@ Even without a connection, you can log expenses and, once back online, everythin
 
 **Practical tip:** Before making a purchase above “a weekend dinner,” ask yourself: “What could I do with this money that would bring me more long‑term benefit?” If the answer is “none,” it might be time to rethink.
 
-**Practical tip:** Use FinMoovi’s goal feature to create an “opportunity fund.” Set aside 5 % of your monthly income and, whenever there’s a frivolous expense, direct that amount to the fund. That way you turn small sacrifices into a cushion for bigger opportunities.
+**Practical tip:** Use FinMoovi’s goal feature to create an “opportunity fund.” Set aside 5 % of your [monthly income](/en/glossario/en-monthly-income) and, whenever there’s a frivolous expense, direct that amount to the fund. That way you turn small sacrifices into a cushion for bigger opportunities.
 
 **Practical tip:** Review your cash‑flow report every Sunday. Identify the category that consumes most of your money and calculate the opportunity cost of cutting 10 % of that spending. The impact can be surprising when accumulated over a year.
 

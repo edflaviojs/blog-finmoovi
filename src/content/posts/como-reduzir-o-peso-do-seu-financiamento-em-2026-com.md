@@ -13,6 +13,7 @@ tags:
   - "FinMoivi"
 author: "FinMoovi"
 publishedAt: 2026-07-28
+updatedAt: 2026-11-01
 readingTime: 5
 locale: "pt"
 translationKey: "como-reduzir-o-peso-do-seu-financiamento-em-2026-com"

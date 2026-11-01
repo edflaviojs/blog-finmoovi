@@ -26,11 +26,11 @@ Você já percebeu que, mesmo controlando cada gasto do dia a dia, no fim do mê
 
 
 
-Em termos simples, o imobilizado são os bens que a pessoa ou empresa possui e que não são consumidos imediatamente, mas que geram valor ao longo do tempo. Pense em um computador que você usa para trabalhar, na máquina de lavar que comprou há dois anos ou até no imóvel onde mora. Eles não desaparecem depois de uma compra; continuam lá, “imobilizados”, e precisam ser contabilizados para entender de verdade onde está o seu patrimônio.
+Em termos simples, o imobilizado são os bens que a pessoa ou empresa possui e que não são consumidos imediatamente, mas que geram valor ao longo do tempo. Pense em um computador que você usa para trabalhar, na máquina de lavar que comprou há dois anos ou até no imóvel onde mora. Eles não desaparecem depois de uma compra; continuam lá, “imobilizados”, e precisam ser contabilizados para entender de verdade onde está o seu [patrimônio](/glossario/patrimonio).
 
 ## Como o imobilizado afeta seu fluxo de caixa  
 
-Quando você faz um investimento grande – como comprar um carro ou reformar a casa – o valor sai da sua conta naquele instante, mas o benefício se espalha pelos próximos anos. Se você não registrar esse gasto como imobilizado, ele vai aparecer como um grande “corte” no seu fluxo de caixa do mês, dando a impressão de que está sem dinheiro, quando na verdade aquele bem ainda está gerando valor (por exemplo, permitindo que você vá ao trabalho ou economizando aluguel).  
+Quando você faz um [investimento](/glossario/investimento) grande – como comprar um carro ou reformar a casa – o valor sai da sua conta naquele instante, mas o benefício se espalha pelos próximos anos. Se você não registrar esse gasto como imobilizado, ele vai aparecer como um grande “corte” no seu [fluxo de caixa](/glossario/fluxo-de-caixa) do mês, dando a impressão de que está sem dinheiro, quando na verdade aquele bem ainda está gerando valor (por exemplo, permitindo que você vá ao trabalho ou economizando [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026)).  
 
 Sem separar o que é gasto imediato do que é imobilizado, fica impossível planejar metas de longo prazo, como a aposentadoria ou a compra de um imóvel maior. Você acaba “contando duas vezes” o mesmo dinheiro: uma vez como despesa e outra como ativo que ainda está em uso.
 
@@ -42,7 +42,7 @@ A maioria das pessoas acha que registrar o imobilizado é coisa de contador, mas
 
 
 
-- **Captura inteligente**: tire uma foto da nota fiscal ou grave a voz descrevendo a compra; o app reconhece o valor, a data e o tipo de bem.  
+- **[Captura inteligente](/posts/cansado-de-perder-horas-nas-planilhas-como-o-finmoovi)**: tire uma foto da nota fiscal ou grave a voz descrevendo a compra; o app reconhece o valor, a data e o tipo de bem.  
 - **Categorização automática**: o algoritmo classifica o item como “imobilizado” (ex.: computador, eletrodoméstico, imóvel).  
 - **Multimoeda**: se a compra foi feita em outra moeda, o FinMoovi converte automaticamente para a sua moeda base, mantendo tudo alinhado.  
 
@@ -66,7 +66,7 @@ No FinMoovi, basta marcar a vida útil estimada do bem e o app faz o cálculo au
 
 Com o imobilizado bem cadastrado, o FinMoovi gera relatórios que deixam tudo claro:
 
-- **Patrimônio líquido**: soma de todos os bens (imobilizado) menos as dívidas.  
+- **[Patrimônio líquido](/glossario/patrimonio-liquido)**: soma de todos os bens (imobilizado) menos as dívidas.  
 - **Fluxo de caixa ajustado**: exclui a depreciação dos bens, mostrando o dinheiro realmente disponível para despesas correntes.  
 - **Projeção de metas**: ao definir uma meta de economizar o equivalente a duas vezes o preço de um café por dia, o app calcula quanto do seu patrimônio imobilizado pode ser usado ou vendido para alcançar o objetivo.  
 

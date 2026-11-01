@@ -20,7 +20,7 @@ seo:
 
 ## O que é o quociente de liquidez e por que ele importa
 
-Você já ficou sem dinheiro no fim do mês, mesmo ganhando o suficiente para pagar as contas? Essa sensação de “não sei onde foi tudo” costuma ter um culpado: a falta de liquidez. O quociente de liquidez (ou índice de liquidez) mede exatamente isso – a capacidade de transformar seus recursos em dinheiro rápido para cobrir despesas imediatas. Em termos simples, ele compara o que você tem disponível agora (dinheiro em conta, investimentos que podem ser sacados sem perda e até crédito pré-aprovado) com o que você precisa pagar nos próximos 30 dias. Se o número for maior que 1, você está no azul; se ficar abaixo, pode ter surpresas desagradáveis.
+Você já ficou sem dinheiro no fim do mês, mesmo ganhando o suficiente para pagar as contas? Essa sensação de “não sei onde foi tudo” costuma ter um culpado: a falta de [liquidez](/glossario/liquidez). O quociente de liquidez (ou índice de liquidez) mede exatamente isso – a capacidade de transformar seus recursos em dinheiro rápido para cobrir despesas imediatas. Em termos simples, ele compara o que você tem disponível agora (dinheiro em conta, investimentos que podem ser sacados sem perda e até crédito pré-aprovado) com o que você precisa pagar nos próximos 30 dias. Se o número for maior que 1, você está no azul; se ficar abaixo, pode ter surpresas desagradáveis.
 
 ![O que é o quociente de liquidez e por que ele importa](/images/glossario/quociente-de-liquidez-inline-1.webp)
 
@@ -30,8 +30,8 @@ Você já ficou sem dinheiro no fim do mês, mesmo ganhando o suficiente para pa
 
 Para não complicar, vamos usar um exemplo do dia a dia. Imagine que você tem:
 
-- **Saldo em conta corrente:** equivalente a duas vezes o valor de um aluguel.
-- **Investimento em fundo de emergência:** pode ser sacado sem penalidade, equivalente a um mês de despesas.
+- **Saldo em conta corrente:** equivalente a duas vezes o valor de um [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026).
+- **[Investimento](/glossario/investimento) em [fundo de emergência](/ferramentas/calculadora-reserva):** pode ser sacado sem penalidade, equivalente a um mês de despesas.
 - **Cartão de crédito com limite disponível:** equivalente a metade de um aluguel.
 
 Suas despesas previstas para o próximo mês somam: aluguel, contas de luz/água/internet, supermercado, transporte e um gasto extra com um presente. Isso dá cerca de **três aluguéis**.
@@ -69,7 +69,7 @@ Manter tudo isso na cabeça ou numa planilha manual pode ser cansativo. É aí q
 
 - **Captura inteligente:** tire uma foto da nota fiscal ou grave a voz descrevendo a compra; o app reconhece o valor e a categoria automaticamente.
 - **Multimoeda:** se você recebe em dólares, euros ou reais, o FinMoovi converte tudo para a moeda que você escolher, facilitando o cálculo do quociente sem precisar fazer a conta manualmente.
-- **Fluxo de caixa e relatórios:** veja em tempo real quanto entrou, saiu e quanto ainda está “livre” para emergências.
+- **[Fluxo de caixa](/glossario/fluxo-de-caixa) e relatórios:** veja em tempo real quanto entrou, saiu e quanto ainda está “livre” para emergências.
 - **Planejamento mensal / metas:** defina um objetivo de manter o quociente acima de 1,2 e o app avisa quando está se aproximando do limite.
 - **Cartões de crédito / fatura:** registre o limite disponível e a data de vencimento; o app inclui esse valor no cálculo automaticamente.
 - **Modo compras:** crie listas de supermercado; o total aparece em tempo real, ajudando a não estourar o orçamento.
@@ -92,7 +92,7 @@ Manter tudo isso na cabeça ou numa planilha manual pode ser cansativo. É aí q
 
 ## Quando o quociente de liquidez ajuda a evitar dívidas
 
-Imagine que, de repente, o carro quebra e a oficina cobra o preço de um aluguel para o conserto. Se o seu quociente estava em 0,9, você provavelmente precisará recorrer ao cartão de crédito ou a um empréstimo, pagando juros altos. Se, ao contrário, o índice estava em 1,3, você tem recursos suficientes para pagar a conta à vista, evitando juros e ainda mantendo a tranquilidade.
+Imagine que, de repente, o carro quebra e a oficina cobra o preço de um aluguel para o conserto. Se o seu quociente estava em 0,9, você provavelmente precisará recorrer ao cartão de crédito ou a um [empréstimo](/glossario/emprestimo), pagando juros altos. Se, ao contrário, o índice estava em 1,3, você tem recursos suficientes para pagar a conta à vista, evitando juros e ainda mantendo a tranquilidade.
 
 ## Como usar o FinMoovi para monitorar o quociente diariamente
 
