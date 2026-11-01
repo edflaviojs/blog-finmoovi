@@ -28178,5 +28178,114 @@
         "publicaEmBR": "02/11 às 14h31"
       }
     }
+  },
+  "kw-5-erros-que-te-impedem-de-guardar-r-1-000-por-mes": {
+    "midias": {
+      "video": {
+        "id": "0b43430c-22e5-4836-9ec1-cca16bb218bc",
+        "name": "FPB2XdNRqR.mp4",
+        "originalName": null,
+        "path": "https://media.help4desk.com/FPB2XdNRqR.mp4",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capa": {
+        "id": "d9705d98-c99d-4145-92bb-d5f80dbdae8b",
+        "name": "sMpt2m1OVG.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/sMpt2m1OVG.jpeg",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capaLarga": {
+        "id": "2cffb2db-d055-4d35-8e9c-d0d00a1e7eef",
+        "name": "eRf5tSIe27.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/eRf5tSIe27.jpeg",
+        "thumbnail": null,
+        "alt": null
+      }
+    },
+    "publicaEm": "2026-11-01T22:00:00.000Z",
+    "publicaEmBR": "01/11 às 19h00",
+    "agendadoEm": "2026-11-01T19:44:12.765Z",
+    "atualizadoEm": "2026-11-01T19:44:17.923Z",
+    "redes": {
+      "instagram": {
+        "postId": "cmvy8nn1v00afnv9jr8xow6cn",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-11-01T22:00:00.000Z",
+        "publicaEmBR": "01/11 às 19h00",
+        "midia": "o vídeo",
+        "caracteres": 695,
+        "limite": 2200
+      },
+      "zernio-tiktok": {
+        "postId": "cmvy8nnnw00agnv9j0po508cb",
+        "canal": "finmoovi",
+        "publicaEm": "2026-11-01T22:12:00.000Z",
+        "publicaEmBR": "01/11 às 19h12",
+        "midia": "o vídeo",
+        "caracteres": 276,
+        "limite": 2200
+      },
+      "facebook": {
+        "postId": "cmvy8no9g00ahnv9jn0l6tsne",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-11-01T22:26:00.000Z",
+        "publicaEmBR": "01/11 às 19h26",
+        "midia": "o vídeo",
+        "caracteres": 465,
+        "limite": 63206
+      },
+      "linkedin-page": {
+        "postId": "cmvy8noq200ainv9jdrmvf1p6",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-11-01T22:43:00.000Z",
+        "publicaEmBR": "01/11 às 19h43",
+        "midia": "o vídeo",
+        "caracteres": 394,
+        "limite": 3000
+      },
+      "threads": {
+        "postId": "cmvy8np8d00ajnv9jllqhxnly",
+        "canal": "finmoovi",
+        "publicaEm": "2026-11-01T22:58:00.000Z",
+        "publicaEmBR": "01/11 às 19h58",
+        "midia": "o vídeo",
+        "caracteres": 140,
+        "limite": 500
+      },
+      "pinterest": {
+        "postId": "cmvy8nq4600aknv9jpnemo50k",
+        "canal": "finmoovi",
+        "publicaEm": "2026-11-01T23:31:00.000Z",
+        "publicaEmBR": "01/11 às 20h31",
+        "midia": "vídeo primeiro, capa depois — a ordem que o Pinterest exige",
+        "caracteres": 435,
+        "limite": 500
+      },
+      "bluesky": {
+        "postId": "cmvy8nqmu00alnv9j1ie11hf1",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-11-01T23:47:00.000Z",
+        "publicaEmBR": "01/11 às 20h47",
+        "midia": "vai a capa DEITADA (o Bluesky não publica vídeo, e a em pé ficaria cortada no feed)",
+        "caracteres": 97,
+        "limite": 300
+      },
+      "instagram-story": {
+        "postId": "cmvy8nr1e00amnv9jc6rksla0",
+        "tipo": "vídeo",
+        "publicaEm": "2026-11-01T22:05:00.000Z",
+        "publicaEmBR": "01/11 às 19h05"
+      },
+      "facebook-story": {
+        "postId": "cmvy8nr8m00annv9jxvo7itr2",
+        "tipo": "vídeo",
+        "publicaEm": "2026-11-01T22:31:00.000Z",
+        "publicaEmBR": "01/11 às 19h31"
+      }
+    }
   }
 }
