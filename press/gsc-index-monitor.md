@@ -1,14 +1,14 @@
 # GSC — Monitor de Indexação
 
-Gerado em: 2026-10-31T14:14:55.391Z
+Gerado em: 2026-11-01T14:52:40.827Z
 Propriedade: https://blog.finmoovi.com/
 
 ## Resumo
 
-- **965/1115** URLs indexadas
-- **148** não indexadas
-- **2** com erro na inspeção
-- **64** página(s) de conteúdo fora do índice há ≥7 dias
+- **961/1121** URLs indexadas
+- **159** não indexadas
+- **1** com erro na inspeção
+- **67** página(s) de conteúdo fora do índice há ≥7 dias
 
 ## Sitemap
 
@@ -16,10 +16,10 @@ Propriedade: https://blog.finmoovi.com/
 
 ## Por motivo (não indexadas)
 
-- Crawled - currently not indexed: 137
+- Crawled - currently not indexed: 142
+- URL is unknown to Google: 10
 - Duplicate, Google chose different canonical than user: 1
-- Discovered - currently not indexed: 4
-- URL is unknown to Google: 6
+- Discovered - currently not indexed: 6
 
 ## Páginas de conteúdo há mais tempo fora do índice
 
@@ -29,6 +29,7 @@ Propriedade: https://blog.finmoovi.com/
 - `https://blog.finmoovi.com/en/categorias/orcamento/` — Crawled - currently not indexed (desde 2026-10-21)
 - `https://blog.finmoovi.com/posts/como-usar-credito-sem-sufocar-seu-orcamento-5-passos/` — Crawled - currently not indexed (desde 2026-10-20)
 - `https://blog.finmoovi.com/posts/dia-dos-namorados-economico/` — Crawled - currently not indexed (desde 2026-10-24)
+- `https://blog.finmoovi.com/posts/diferenca-entre-investir-e-poupar/` — Crawled - currently not indexed (desde 2026-10-25)
 - `https://blog.finmoovi.com/posts/investimentos-para-o-segundo-semestre-estrategias-praticas/` — Duplicate, Google chose different canonical than user (desde 2026-08-07)
 - `https://blog.finmoovi.com/posts/negociar-descontos-em-contas-fixas/` — Discovered - currently not indexed (desde 2026-08-12)
 - `https://blog.finmoovi.com/posts/voce-tambem-esquece-de-anotar-seus-gastos/` — Crawled - currently not indexed (desde 2026-10-23)
@@ -41,6 +42,8 @@ Propriedade: https://blog.finmoovi.com/
 - `https://blog.finmoovi.com/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet/` — Crawled - currently not indexed (desde 2026-10-19)
 - `https://blog.finmoovi.com/en/posts/en-investing-in-dollar-in-brazil/` — Crawled - currently not indexed (desde 2026-09-22)
 - `https://blog.finmoovi.com/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide/` — Crawled - currently not indexed (desde 2026-10-16)
+- `https://blog.finmoovi.com/en/posts/en-quotes-semana-1-july-2026/` — Crawled - currently not indexed (desde 2026-10-25)
+- `https://blog.finmoovi.com/en/posts/en-quotes-semana-2-july-2026/` — Crawled - currently not indexed (desde 2026-10-25)
 - `https://blog.finmoovi.com/en/posts/en-quotes-semana-3-july-2026/` — Crawled - currently not indexed (desde 2026-09-21)
 - `https://blog.finmoovi.com/en/posts/en-quotes-semana-4-june-2026/` — Crawled - currently not indexed (desde 2026-09-24)
 - `https://blog.finmoovi.com/en/posts/en-understand-price-amortization-and-optimize-your-finances-in/` — Crawled - currently not indexed (desde 2026-09-27)
@@ -56,7 +59,7 @@ Propriedade: https://blog.finmoovi.com/
 - `https://blog.finmoovi.com/es/posts/es-como-organizar-tus-gastos-mensuales-con-facilidad-y/` — Crawled - currently not indexed (desde 2026-10-19)
 - `https://blog.finmoovi.com/es/posts/es-como-usar-la-calculadora-de-interes-compuesto-en-2026-y/` — Crawled - currently not indexed (desde 2026-10-16)
 - `https://blog.finmoovi.com/es/posts/es-consejos-para-controlar-gastos-en-la-tarjeta-de-credito/` — Crawled - currently not indexed (desde 2026-09-12)
-- `https://blog.finmoovi.com/es/posts/es-cotizaciones-semana-3-octubre-2026/` — URL is unknown to Google (desde 2026-10-20)
+- `https://blog.finmoovi.com/es/posts/es-cotizaciones-semana-3-octubre-2026/` — Discovered - currently not indexed (desde 2026-10-20)
 - `https://blog.finmoovi.com/es/posts/es-dia-de-los-enamorados-economico/` — Crawled - currently not indexed (desde 2026-10-16)
 - `https://blog.finmoovi.com/es/posts/es-entiende-la-tasa-interbancaria-y-su-impacto-en-tus/` — Crawled - currently not indexed (desde 2026-10-13)
 - `https://blog.finmoovi.com/es/posts/es-invertir-vs-pagar-deudas-que-conviene-mas-en-2026/` — Crawled - currently not indexed (desde 2026-10-11)
@@ -70,6 +73,3 @@ Propriedade: https://blog.finmoovi.com/
 - `https://blog.finmoovi.com/glossario/fundo-de-investimento/` — Crawled - currently not indexed (desde 2026-10-24)
 - `https://blog.finmoovi.com/en/glossario/en-asset-quality/` — Crawled - currently not indexed (desde 2026-10-20)
 - `https://blog.finmoovi.com/en/glossario/en-cash-flow-excel/` — Crawled - currently not indexed (desde 2026-10-23)
-- `https://blog.finmoovi.com/en/glossario/en-credit-card-statement/` — Crawled - currently not indexed (desde 2026-10-20)
-- `https://blog.finmoovi.com/en/glossario/en-financial-investment/` — Crawled - currently not indexed (desde 2026-10-14)
-- `https://blog.finmoovi.com/en/glossario/en-interest/` — Crawled - currently not indexed (desde 2026-10-14)
