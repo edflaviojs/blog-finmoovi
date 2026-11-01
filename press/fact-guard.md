@@ -1,7 +1,7 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-10-31T10:43:15.969Z
-**Posts:** 570 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 22
+**Gerado em:** 2026-11-01T11:39:55.332Z
+**Posts:** 573 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 22
 
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
