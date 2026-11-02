@@ -25,48 +25,47 @@ seo:
 
 *Source: AwesomeAPI — rates as of 10/26/2026*
 
-## Resumo da Semana no Mercado Brasileiro (19 a 26 de outubro de 2026)
+## Weekly Summary of the Brazilian Market (October 19‑26, 2026)
 
-### 1. Dólar e Euro: como se comportaram?
+### 1. Dollar and Euro: how did they behave?
 
-Nesta semana o dólar fechou o período cotado em **R$ 5,00**. O preço da [moeda](/en/glossario/en-moeda) estrangeira se manteve estável ao longo dos últimos dias, sem grandes oscilações que chamassem atenção dos investidores de varejo. O euro, por sua vez, ficou em **R$ 5,60**, também sem variações relevantes. Essa estabilidade pode ser um alívio para quem tem dívidas ou investimentos atrelados a essas moedas, já que não houve surpresas que exigissem ajustes de última hora.
+This week the dollar closed the quoted period at **R$ 5.00**. The price of the foreign **[currency](/en/glossario/en-moeda)** remained stable over the past few days, without major swings that would catch the attention of retail investors. The euro, on the other hand, was at **R$ 5.60**, also without relevant variations. This stability can be a relief for those who have debts or investments linked to these currencies, since there were no surprises that required last‑minute adjustments.
 
-### 2. Selic em foco: o que significa a taxa de 13,75% ao ano?
+### 2. Selic in focus: what does the 13.75% per year rate mean?
 
-A taxa básica de juros — a [Selic](/en/glossario/en-selic) — continua em **13,75% ao ano**. Embora não tenhamos notícias de mudança na taxa nesta semana, o nível atual ainda influencia diretamente a rentabilidade de diversas aplicações:
+The basic interest rate — the **[Selic](/en/glossario/en-selic)** — stays at **13.75% per year**. Although we didn’t hear any news of a rate change this week, the current level still directly influences the profitability of several investments:
 
-* **Renda fixa** – títulos públicos e CDBs que pagam próximo ao [CDI](/en/glossario/en-cdi) tendem a render próximo a esse patamar, o que ainda os torna atrativos para quem busca segurança.
-* **Fundos de investimento** – os fundos de renda fixa e multimercado ajustam suas estratégias de acordo com a Selic; quando a taxa está alta, eles costumam buscar oportunidades em ativos que pagam juros maiores.
-* **Câmbio** – a Selic alta costuma atrair capital estrangeiro para o Brasil, o que pode contribuir para a estabilidade do real frente ao dólar e ao euro, como vimos nesta semana.
+* **Fixed income** – public bonds and CDBs that pay close to the **[CDI](/en/glossario/en-cdi)** tend to yield near this level, which still makes them attractive for those seeking safety.
+* **Investment funds** – fixed‑income and multi‑market funds adjust their strategies according to the Selic; when the rate is high, they usually look for opportunities in assets that pay higher interest.
+* **Foreign exchange** – a high Selic tends to attract foreign capital to Brazil, which can help keep the real stable against the dollar and the euro, as we saw this week.
 
-Em resumo, enquanto a Selic permanecer nesse nível, a lógica de buscar investimentos que ofereçam retorno acima de 13% ao ano continua válida.
+In short, as long as the Selic remains at this level, the logic of seeking investments that deliver returns above 13% per year stays valid.
 
-### 3. Dica prática para o investidor pessoa física
+### 3. Practical tip for the individual investor
 
-**Use um app para monitorar seus investimentos em diferentes moedas.**  
-Se você tem ativos em real, dólar ou euro — seja uma poupança no exterior, um fundo cambial ou até mesmo um cartão de crédito internacional — vale a pena ter tudo em um só lugar. O **FinMoovi** permite acompanhar a performance de cada aplicação, converter valores em tempo real e ainda enviar alertas quando a cotação atinge o patamar que você definiu. Assim, você evita surpresas e consegue decidir o melhor momento para comprar ou vender, sem precisar abrir várias planilhas ou acessar diferentes plataformas.
+**Use an app to monitor your investments in different currencies.**  
+If you have assets in reais, dollars or euros — whether it’s an overseas savings account, a currency fund, or even an international credit card — it’s worth having everything in one place. **FinMoovi** lets you track the performance of each holding, convert values in real time, and even send alerts when the quote reaches the level you set. That way you avoid surprises and can decide the best moment to buy or sell, without having to open multiple spreadsheets or access different platforms.
 
-### 4. O que observar na próxima semana?
+### 4. What to watch next week?
 
-Mesmo sem mudanças de taxa anunciadas, alguns pontos merecem atenção:
+Even without announced rate changes, a few points deserve attention:
 
-* **Decisões de política monetária no exterior** – embora não possamos citar números, as reuniões do Federal Reserve, do Banco Central Europeu e do Banco da Inglaterra costumam gerar volatilidade nos mercados cambiais. Fique de olho nas manchetes, pois qualquer sinal de aperto ou afrouxamento pode repercutir no real.
-* **Indicadores de inflação doméstica** – o IPCA ainda não foi divulgado para o período mais recente. Quando aparecer, ele pode influenciar a expectativa de futuro sobre a Selic e, por consequência, a atratividade da renda fixa.
-* **Fluxos de capital** – notícias sobre investimentos estrangeiros no Brasil (por exemplo, compra de títulos ou aporte em empresas) costumam impactar a taxa de câmbio. Uma entrada maior de recursos pode reforçar o real; uma saída pode pressionar o dólar e o euro para cima.
+* **Foreign monetary policy decisions** – although we can’t cite numbers, meetings of the Federal Reserve, the European Central Bank and the Bank of England usually generate volatility in currency markets. Keep an eye on the headlines, as any sign of tightening or easing can affect the real.
+* **Domestic inflation indicators** – the IPCA has not yet been released for the most recent period. When it appears, it can influence expectations about the future Selic and, consequently, the attractiveness of fixed‑income investments.
+* **Capital flows** – news about foreign investments in Brazil (e.g., bond purchases or equity injections) often impact the exchange rate. A larger inflow can strengthen the real; an outflow can push the dollar and euro higher.
 
-Mantenha seu portfólio diversificado e continue acompanhando esses fatores. A estabilidade que vimos nos últimos dias pode mudar rapidamente, e estar preparado é a melhor forma de proteger seu [patrimônio](/en/glossario/en-patrimonio).
+Keep your portfolio diversified and continue monitoring these factors. The stability we saw in recent days can change quickly, and being prepared is the best way to protect your **[wealth](/en/glossario/en-patrimonio)**.
 
 ---
 
-**Resumo rápido:**  
-- Dólar em **R$ 5,00** e euro em **R$ 5,60**, sem grandes variações.  
-- Selic fixa em **13,75% ao ano**, ainda sustentando a rentabilidade da renda fixa.  
-- Use o **FinMoovi** para monitorar investimentos em várias moedas.  
-- Na próxima semana, fique de olho nas decisões de política monetária externa, nos indicadores de inflação doméstica e nos fluxos de capital.
+**Quick summary:**  
+- Dollar at **R$ 5.00** and euro at **R$ 5.60**, with no major variations.  
+- Selic fixed at **13.75% per year**, still supporting fixed‑income returns.  
+- Use **FinMoovi** to monitor investments in multiple currencies.  
+- Next week, watch foreign monetary policy decisions, domestic inflation indicators, and capital flows.
 
-Boa leitura e bons investimentos!
+Happy reading and good investing!
 
 
 ---
 **Ready to track your investments? [Try FinMoovi free for 7 days](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**
-<!-- SCHEMA_AUTO:{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"1. Dólar e Euro: como se comportaram?","acceptedAnswer":{"@type":"Answer","text":"Nesta semana o dólar fechou o período cotado em R$ 5,00. O preço da moeda estrangeira se manteve estável ao longo dos últimos dias, sem grandes oscilações que chamassem atenção dos investidores de varejo. O euro, por sua vez, ficou em R$ 5,60, também sem variações relevantes. Essa estabilidade…"}},{"@type":"Question","name":"2. Selic em foco: o que significa a taxa de 13,75% ao ano?","acceptedAnswer":{"@type":"Answer","text":"A taxa básica de juros — a Selic — continua em 13,75% ao ano. Embora não tenhamos notícias de mudança na taxa nesta semana, o nível atual ainda influencia diretamente a rentabilidade de diversas aplicações:"}},{"@type":"Question","name":"4. O que observar na próxima semana?","acceptedAnswer":{"@type":"Answer","text":"Mesmo sem mudanças de taxa anunciadas, alguns pontos merecem atenção:"}}]} -->

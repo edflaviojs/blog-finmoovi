@@ -18,79 +18,79 @@ seo:
   keywords: ["Fixed assets", "glossary", "finance"]
 ---
 
-## O que acontece quando você não sabe onde está o seu imobilizado  
+## What Happens When You Don’t Know Where Your Fixed Assets Are  
 
-Você acabou de comprar um equipamento de escritório para a sua pequena empresa – um computador que custou cerca de o mesmo que duas mensalidades de aluguel. Alguns meses depois, ao fechar o balanço, percebe que não tem ideia de quanto esse bem ainda vale, nem como ele impacta o seu lucro. O mesmo problema aparece quando você tenta separar os móveis da sua loja, as máquinas de produção ou até o carro usado para entregas. Sem um controle claro, você pode acabar pagando imposto a mais, subestimando a necessidade de renovação ou, pior, perder oportunidades de crédito porque o seu [patrimônio](/en/glossario/en-patrimonio) parece menor do que realmente é.
+You just bought an office equipment item for your small business – a computer that cost about the same as two months’ rent. A few months later, when closing the balance sheet, you realize you have no idea how much this asset is still worth, nor how it impacts your profit. The same problem shows up when you try to separate the furniture in your store, the production machines, or even the delivery vehicle. Without clear control, you may end up paying excess tax, underestimating the need for renewal, or, worse, missing credit opportunities because your [patrimony](/en/glossario/en-patrimonio) appears smaller than it really is.
 
-![O que acontece quando você não sabe onde está o seu imobilizado  ](/images/glossario/imobilizado-inline-1.webp)
-
-
-
-É aqui que entra o conceito de **imobilizado**, ou “fixed assets” em inglês: são todos os bens duráveis que a empresa usa para operar e que não são destinados à venda imediata. Eles incluem móveis, equipamentos, veículos, softwares, construções e até melhorias em imóveis alugados. Diferente do estoque, que entra e sai rapidamente, o imobilizado tem vida útil longa – geralmente de um a vários anos – e precisa ser depreciado, ou seja, ter seu valor reduzido gradualmente nas contas para refletir o desgaste ao longo do tempo.
-
-Sem um registro organizado, você corre o risco de:
-
-- pagar imposto de renda maior porque não considera a depreciação correta;  
-- perder crédito bancário por subestimar o valor total dos seus bens;  
-- comprar novos equipamentos antes da hora, gastando dinheiro que poderia ser investido em outras áreas;  
-- enfrentar auditorias complicadas por falta de documentação.
-
-## Como o FinMoovi resolve o seu problema de imobilizado  
-
-O FinMoovi foi pensado para quem não tem tempo nem paciência para planilhas complicadas. Uma das funcionalidades que mais facilita a vida de quem precisa controlar o imobilizado é o **smart capture**: basta tirar uma foto do documento de compra (nota fiscal, contrato ou mesmo o manual do equipamento) ou gravar um áudio descrevendo o bem, que o app reconhece automaticamente as informações essenciais – data, valor, fornecedor e categoria. Em segundos, o ativo já aparece na sua lista de imobilizado, pronto para ser depreciado.
-
-Além disso, o FinMoovi trabalha em **[multi‑currency](/en/posts/en-digital-bank-vs-major-bank-which-is-worth-it-in-2026)**, então se você comprou um maquinário nos Estados Unidos, um software na Europa e um mobiliário local, tudo fica registrado na [moeda](/en/glossario/en-moeda) original e convertido para a sua base de planejamento. Isso evita surpresas na hora de fechar o balanço, porque você vê o valor real de cada bem, independentemente da cotação do dia.
-
-A ferramenta de **[cash flow](/en/glossario/en-cash-flow) e [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end)** gera relatórios claros mostrando quanto do seu lucro está sendo “comido” pela depreciação, quanto ainda resta de valor residual e quais ativos precisam de manutenção. Você ainda pode criar metas de renovação, como “substituir o computador da equipe a cada 4 anos”, e o app te avisa quando o prazo está próximo.
-
-## Passo a passo para registrar um bem no FinMoovi  
-
-1. Abra o app e vá para a aba **Imobilizado**.  
-2. Clique em **Adicionar ativo** e escolha **Captura inteligente**.  
-3. Tire a foto da nota fiscal ou grave um áudio descrevendo o bem (ex.: “Laptop Dell, 2023, R$ 5.000”).  
-4. Confirme os dados que o app preencheu automaticamente – data, valor, fornecedor e categoria (equipamento de TI).  
-5. Defina a vida útil estimada (ex.: 4 anos) e o método de depreciação (linear, que reduz o valor em partes iguais a cada ano).  
-6. Salve. O ativo já aparece no seu relatório de patrimônio e na projeção de fluxo de caixa.
-
-![Passo a passo para registrar um bem no FinMoovi  ](/images/glossario/imobilizado-inline-3.webp)
+![What Happens When You Don’t Know Where Your Fixed Assets Are](/images/glossario/imobilizado-inline-1.webp)
 
 
 
-## Dicas práticas para manter seu imobilizado em dia  
+This is where the concept of **fixed assets** comes in: they are all the durable goods that a company uses to operate and that are not intended for immediate sale. They include furniture, equipment, vehicles, software, buildings, and even improvements to leased properties. Unlike inventory, which comes in and out quickly, fixed assets have a long useful life – usually from one to several years – and need to be depreciated, that is, have their value gradually reduced in the accounts to reflect wear and tear over time.
 
-**Practical tip:** faça a captura de cada bem no mesmo dia da compra. Assim você evita esquecer detalhes importantes como número da nota ou data exata.  
+Without an organized record, you risk:
 
-**Practical tip:** revise a vida útil dos ativos a cada 12 meses. Se um equipamento está sendo usado mais intensamente do que o previsto, ajuste a depreciação para refletir o desgaste real.  
+- paying higher income tax because you don’t consider the correct depreciation;  
+- losing bank credit by underestimating the total value of your assets;  
+- buying new equipment too early, spending money that could be invested elsewhere;  
+- facing complicated audits due to lack of documentation.
 
-**Practical tip:** use a função de lembrete de manutenção do FinMoovi. Defina alertas para revisões periódicas (troca de óleo de veículos, limpeza de impressoras, atualização de softwares) e evite custos inesperados.
+## How FinMoovi Solves Your Fixed‑Asset Problem  
 
-## Como o imobilizado afeta seu planejamento financeiro  
+FinMoovi was designed for people who don’t have time or patience for complicated spreadsheets. One of the features that most eases the life of anyone who needs to control fixed assets is **smart capture**: just take a photo of the purchase document (invoice, contract, or even the equipment manual) or record an audio description of the asset, and the app automatically recognizes the essential information – date, amount, supplier, and category. In seconds, the asset appears in your fixed‑asset list, ready to be depreciated.
 
-Quando você tem um panorama claro dos seus bens, fica muito mais fácil planejar o futuro. Por exemplo, ao analisar o relatório de depreciação, você percebe que o valor contábil dos seus computadores caiu para metade em dois anos. Isso indica que, nos próximos 12 meses, será necessário investir em novos equipamentos para manter a produtividade. O FinMoovi permite criar um **objetivo de investimento** com o valor estimado e o prazo, e acompanha o progresso ao longo do tempo.
+In addition, FinMoovi works in **[multi‑currency](/en/posts/en-digital-bank-vs-major-bank-which-is-worth-it-in-2026)**, so if you bought machinery in the United States, software in Europe, and local furniture, everything is recorded in the original [currency](/en/glossario/en-moeda) and converted to your planning base. This avoids surprises when closing the balance sheet, because you see the real value of each asset regardless of the day’s exchange rate.
 
-Além disso, o app integra o imobilizado ao seu **planejamento mensal**. Ao definir metas de caixa, o sistema subtrai automaticamente a depreciação prevista, mostrando um lucro operacional mais realista. Isso ajuda na negociação com bancos, pois você apresenta um balanço que reflete o verdadeiro valor dos seus ativos, aumentando a confiança dos credores.
+The **[cash flow](/en/glossario/en-cash-flow) and [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end)** tool generates clear reports showing how much of your profit is being “eaten” by depreciation, how much residual value remains, and which assets need maintenance. You can also set renewal goals, like “replace the team’s computer every 4 years,” and the app notifies you when the deadline approaches.
 
-## Erros comuns ao lidar com o imobilizado (e como evitá‑los)  
+## Step‑by‑Step to Register an Asset in FinMoovi  
 
-- **Esquecer de registrar**: muitos empresários anotam o bem apenas no papel ou no e‑mail de compra e nunca o transferem para o sistema contábil. O FinMoovi elimina esse ponto fraco com a captura instantânea.  
-- **Usar o mesmo prazo para tudo**: móveis de escritório podem durar 10 anos, enquanto laptops só 3. Ajuste a vida útil de acordo com a realidade de cada categoria.  
-- **Não considerar a moeda**: se você compra equipamentos no exterior e não converte o valor, seu balanço pode ficar inflado ou subvalorizado. O recurso [multi‑currency](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using) cuida disso automaticamente.  
-- **Ignorar a depreciação fiscal**: deixar de aplicar a depreciação correta pode gerar pagamento de impostos maior do que o necessário. Use os relatórios do FinMoovi para gerar o cálculo exato e exportar para o seu contador.
+1. Open the app and go to the **Fixed Assets** tab.  
+2. Tap **Add asset** and choose **Smart capture**.  
+3. Take a photo of the invoice or record an audio description of the asset (e.g., “Dell laptop, 2023, R$ 5,000”).  
+4. Confirm the data the app filled in automatically – date, amount, supplier, and category (IT equipment).  
+5. Set the estimated useful life (e.g., 4 years) and the depreciation method (straight‑line, which reduces the value by equal parts each year).  
+6. Save. The asset now appears in your patrimony report and cash‑flow projection.
 
-## Por que o controle de imobilizado é essencial para pequenas empresas  
+![Step‑by‑Step to Register an Asset in FinMoovi](/images/glossario/imobilizado-inline-3.webp)
 
-Mesmo que sua operação seja pequena, o imobilizado costuma representar uma parte significativa do patrimônio. Um controle rigoroso traz:
 
-- **Visibilidade**: você sabe exatamente o que possui, onde está e quanto vale.  
-- **Eficiência fiscal**: aproveita a depreciação para reduzir a carga tributária legalmente.  
-- **Facilidade de crédito**: bancos analisam o valor dos ativos como garantia.  
-- **Planejamento de substituição**: evita compras de emergência e permite negociar melhores condições com fornecedores.
 
-## Start today  
+## Practical Tips to Keep Your Fixed Assets Up‑to‑Date  
 
-1. Abra o FinMoovi e vá para a aba **Imobilizado**.  
-2. Clique em **Adicionar ativo** → **Captura inteligente**.  
-3. Tire uma foto da nota fiscal do último equipamento que comprou (pode ser o laptop que está na sua mesa).  
-4. Confirme os dados sugeridos, ajuste a vida útil para 3 anos e salve.  
+**Practical tip:** capture each asset on the same day you purchase it. This prevents you from forgetting important details like invoice number or exact date.  
 
-Em menos de 5 minutos você já tem um ativo registrado, a depreciação calculada e o seu balanço mais preciso. Agora é só acompanhar os relatórios mensais e deixar o FinMoovi cuidar do resto.
+**Practical tip:** review the useful life of assets every 12 months. If a piece of equipment is being used more intensively than expected, adjust the depreciation to reflect the real wear.  
+
+**Practical tip:** use FinMoovi’s maintenance reminder feature. Set alerts for periodic checks (vehicle oil changes, printer cleaning, software updates) and avoid unexpected costs.
+
+## How Fixed Assets Affect Your Financial Planning  
+
+When you have a clear overview of your assets, planning the future becomes much easier. For example, by analyzing the depreciation report, you notice that the book value of your computers has dropped to half in two years. That indicates that, in the next 12 months, you’ll need to invest in new equipment to maintain productivity. FinMoovi lets you create an **investment goal** with the estimated amount and timeline, and tracks progress over time.
+
+Moreover, the app integrates fixed assets into your **monthly planning**. When you set cash targets, the system automatically subtracts the projected depreciation, showing a more realistic operating profit. This helps in negotiations with banks, as you present a balance sheet that reflects the true value of your assets, increasing lenders’ confidence.
+
+## Common Mistakes When Dealing With Fixed Assets (and How to Avoid Them)  
+
+- **Forgetting to record**: many entrepreneurs note the asset only on paper or in a purchase email and never transfer it to the accounting system. FinMoovi eliminates this weak point with instant capture.  
+- **Using the same lifespan for everything**: office furniture may last 10 years, while laptops only 3. Adjust the useful life according to each category’s reality.  
+- **Not considering the currency**: if you buy equipment abroad and don’t convert the amount, your balance sheet can become inflated or undervalued. The [multi‑currency](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using) feature handles this automatically.  
+- **Ignoring tax depreciation**: failing to apply the correct depreciation can lead to higher tax payments than necessary. Use FinMoovi’s reports to generate the exact calculation and export it to your accountant.
+
+## Why Fixed‑Asset Control Is Essential for Small Businesses  
+
+Even if your operation is small, fixed assets often represent a significant portion of your patrimony. Rigorous control brings:
+
+- **Visibility**: you know exactly what you own, where it is, and how much it’s worth.  
+- **Tax efficiency**: you leverage depreciation to legally reduce your tax burden.  
+- **Credit ease**: banks assess asset values as collateral.  
+- **Replacement planning**: avoids emergency purchases and lets you negotiate better terms with suppliers.
+
+## Start Today  
+
+1. Open FinMoovi and go to the **Fixed Assets** tab.  
+2. Tap **Add asset** → **Smart capture**.  
+3. Take a photo of the invoice for the last equipment you bought (it could be the laptop on your desk).  
+4. Confirm the suggested data, adjust the useful life to 3 years, and save.  
+
+In less than 5 minutes you’ll have an asset registered, depreciation calculated, and a more accurate balance sheet. Now just follow the monthly reports and let FinMoovi take care of the rest.

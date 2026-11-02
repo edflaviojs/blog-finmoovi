@@ -18,79 +18,75 @@ seo:
   keywords: ["Auction", "glossary", "finance"]
 ---
 
-## O que acontece quando você vê aquele anúncio de “leilão” e pensa: “Será que vale a pena?”
+## What Happens When You See That “Auction” Ad and Think: “Is It Worth It?”
 
-Você está navegando nas redes, recebe um e‑mail ou vê um cartaz na rua anunciando um leilão de eletrônicos, móveis ou até mesmo de um carro usado. A ideia de pagar menos do que o preço de mercado parece tentadora, mas logo surgem dúvidas: Como funciona? O que devo observar? E se eu acabar pagando mais do que deveria? Essa situação é comum para quem quer economizar, mas não tem clareza sobre o processo. É aí que o conceito de leilão entra em cena e, ainda melhor, como o FinMoovi pode transformar essa experiência em algo simples e seguro.
+You’re scrolling through social media, get an email, or see a poster on the street advertising an auction of electronics, furniture, or even a used car. The idea of paying less than the market price sounds tempting, but doubts quickly arise: How does it work? What should I look at? And what if I end up paying more than I should? This situation is common for people who want to save money but aren’t clear on the process. That’s where the concept of an auction comes in, and even better, how FinMoovi can turn this experience into something simple and safe.
 
-![O que acontece quando você vê aquele anúncio de “leilão” e pensa: “Será que vale a pena?”](/images/glossario/leilao-inline-1.webp)
+![What Happens When You See That “Auction” Ad and Think: “Is It Worth It?”](/images/glossario/leilao-inline-1.webp)
 
+An auction is basically an event where an asset is sold to the highest bid submitted by participants. Unlike a traditional purchase, where the price is already set, in an auction the final amount depends on the competition among buyers. There are several types—live, online, sealed‑bid or open‑bid—but the core logic is the same: whoever offers more takes the item.
 
+## How an Auction Works in Practice
 
-Um leilão é basicamente um evento onde um bem é vendido ao maior lance apresentado pelos participantes. Diferente de uma compra tradicional, onde o preço já está definido, no leilão o valor final depende da competição entre os compradores. Existem vários tipos – leilão presencial, online, de preço fechado ou aberto – mas a lógica central é a mesma: quem oferecer mais leva o item.
+When you decide to take part, the first step is to register on the website or at the auction house. Then you receive a catalog with photos, descriptions, and sometimes a technical report of the asset. Each item has a minimum bid, which is the starting point. From there, you can:
 
-## Como funciona um leilão na prática
+- **Place incremental bids** – small increases, like 5% of the current value, so you don’t jump too high at once.  
+- **Use automatic bids** – you set the maximum amount you’re willing to pay and the system raises your bid automatically up to that limit.  
+- **Watch the remaining time** – auctions have a clock; when it hits zero, the highest bid wins.
 
-Quando você decide participar, o primeiro passo é se cadastrar no site ou na casa de leilões. Depois, você recebe um catálogo com fotos, descrições e, às vezes, um laudo técnico do bem. Cada item tem um lance mínimo, que é o ponto de partida. A partir daí, você pode:
+If your bid wins, you receive a boleto or a payment link, pay the amount, and wait for delivery or pickup of the item. The process can be fast, but it requires attention: payment delays can result in losing the item and even fines.
 
-- **Fazer lances incrementais** – aumentos pequenos, como 5% do valor atual, para não subir demais de uma vez.
-- **Usar lances automáticos** – você define o valor máximo que está disposto a pagar e o sistema aumenta seu lance automaticamente até esse limite.
-- **Observar o tempo restante** – leilões têm um relógio; quando ele chega a zero, o maior lance vence.
+## Why an Auction Can Be a Good Opportunity
 
-Se o seu lance for o vencedor, você recebe um boleto ou um link de pagamento, paga o valor e aguarda a entrega ou retirada do bem. O processo pode ser rápido, mas requer atenção: atrasos no pagamento podem resultar em perda do item e até multas.
+- **Below‑market price** – items that are auctioned for reasons such as returns, bankruptcy, or simple liquidation usually come out much cheaper than retail price.  
+- **Variety of products** – from furniture to electronic equipment, artwork, and vehicles.  
+- **Transparency** – the bid history is recorded, allowing you to see how much others paid.
 
-## Por que o leilão pode ser uma boa oportunidade
+![Why an Auction Can Be a Good Opportunity](/images/glossario/leilao-inline-3.webp)
 
-- **Preço abaixo do mercado** – itens que foram leiloados por motivos como devolução, falência ou simples necessidade de liquidação costumam sair bem mais baratos que o preço de loja.
-- **Variedade de produtos** – de móveis a equipamentos eletrônicos, passando por obras de arte e veículos.
-- **Transparência** – o histórico de lances fica registrado, permitindo que você veja quanto outros pagaram.
+But it’s not all sunshine. You need to watch out for additional costs (auction fees, taxes, shipping) and the condition of the item (usage, damage, warranty). That’s why prior research is essential.
 
-![Por que o leilão pode ser uma boa oportunidade](/images/glossario/leilao-inline-3.webp)
+## How FinMoovi Helps You Join Auctions Without Headaches
 
+Imagine you found an auction for a notebook that, at retail, costs the equivalent of two months’ rent, but the current bid is half that amount. You decide to join, but you don’t want to lose control of your expenses or forget to pay the bill. That’s where FinMoovi steps in:
 
+- **Smart capture**: when you receive the boleto or auction confirmation, just take a photo or record your voice saying “pay auction notebook.” The app recognizes the document, extracts the amount, and automatically categorizes it as “Purchases – Auctions.” Nothing slips through your spreadsheet.  
+- **Multi‑[currency](/en/glossario/en-moeda)**: if the auction is in dollars, euros, or another currency, FinMoovi converts the amount to your base currency using the day’s exchange rate, making budget tracking easier.  
+- **Cash flow and reports**: the expense appears instantly in your cash flow, letting you see the impact on available balance before confirming payment.  
+- **Monthly planning and goals**: you can create a goal like “Save 30% of salary for auction purchases,” and the app will show in real time how much is still needed to reach it.  
+- **Credit cards and accounts**: if the payment is split on a credit card, FinMoovi logs each installment, alerts you of due dates, and calculates the total cost with interest, if any.  
+- **Shopping mode**: before entering the auction, create a list of items you want to win. The app adds up the estimated total and warns you if the amount exceeds the limit you set.  
+- **Balance reminders and alerts**: if your balance falls below a critical level, FinMoovi sends a notification to avoid surprises at payment time.  
+- **Offline and sync**: even without internet, you can record a bid; when you reconnect, everything syncs automatically.
 
-Mas nem tudo são flores. É preciso ficar atento a custos adicionais (taxas de leilão, impostos, frete) e à condição do bem (uso, danos, garantia). Por isso, a pesquisa prévia é essencial.
+## Three Practical Tips for Bidding Safely
 
-## Como o FinMoovi ajuda você a participar de leilões sem dor de cabeça
+**Practical tip:** Always check the technical report or appraisal of the item before placing a bid. If it’s an appliance, find out its age, energy consumption, and whether it has a warranty.
 
-Imagine que você encontrou um leilão de um notebook que custa, no varejo, o equivalente ao preço de duas mensalidades de aluguel, mas o lance atual está na metade desse valor. Você decide participar, mas não quer perder o controle das despesas nem esquecer de pagar a fatura. É aqui que o FinMoovi entra:
+**Practical tip:** Set a spending ceiling before entering the auction and use FinMoovi’s shopping mode to monitor the total in real time. This prevents excitement from leading to overspending.
 
-- **Captura inteligente**: ao receber o boleto ou a confirmação do leilão, basta tirar uma foto ou gravar a voz dizendo “pagar leilão notebook”. O app reconhece o documento, extrai o valor e categoriza automaticamente como “Compras – Leilões”. Assim, nada escapa da sua planilha.
-- **Multi‑[moeda](/en/glossario/en-moeda)**: se o leilão for em dólares, euros ou outra moeda, o FinMoovi converte o valor para a sua moeda base usando a cotação do dia, facilitando o controle do seu orçamento.
-- **Fluxo de caixa e relatórios**: o gasto aparece imediatamente no seu fluxo de caixa, permitindo que você veja o impacto no saldo disponível antes de confirmar o pagamento.
-- **Planejamento mensal e metas**: você pode criar uma meta de “Economizar 30% do salário para compras de leilão” e o app mostrará, em tempo real, quanto ainda falta para alcançar o objetivo.
-- **Cartões de crédito e contas**: se o pagamento for parcelado no cartão, o FinMoovi registra cada parcela, avisa o vencimento e calcula o custo total com juros, se houver.
-- **Modo compras**: antes de entrar no leilão, crie uma lista de itens que deseja arrematar. O app soma o total estimado e avisa se o valor ultrapassar o limite que você definiu.
-- **Lembretes e alertas de saldo**: caso o seu saldo caia abaixo de um patamar crítico, o FinMoovi envia notificação para evitar surpresas na hora de pagar.
-- **Offline e sincronização**: mesmo sem internet, você pode registrar o lance; quando conectar novamente, tudo se sincroniza automaticamente.
+**Practical tip:** Reserve a day of the week to review lost bids and pending payments in FinMoovi. That way you avoid late‑payment fines and keep your cash flow healthy.
 
-## Três dicas práticas para arrematar com segurança
+## Advanced Strategies to Improve Your Results
 
-**Practical tip:** Sempre verifique o laudo técnico ou a avaliação do bem antes de dar o lance. Se o item for um eletrodoméstico, procure saber a idade, o consumo de energia e se há garantia.
+- **Bid in the last seconds**: in online auctions, many participants wait until the end to place the decisive bid. This reduces the chance of prolonged price wars.  
+- **Use automatic bids with a limit**: set FinMoovi to fire an automatic bid up to the maximum amount you’re willing to pay. The app notifies you when the limit is reached, avoiding surprises.  
+- **Participate in lot auctions**: sometimes buying a bundle of items (e.g., a lot of furniture) is cheaper than acquiring each piece separately. Evaluate cost‑benefit before closing.
 
-**Practical tip:** Defina um teto de gasto antes de entrar no leilão e use o modo compras do FinMoovi para monitorar o total em tempo real. Isso impede que a empolgação leve a um gasto maior que o planejado.
+## When to Say No to an Auction
 
-**Practical tip:** Reserve um dia da semana para revisar os lances vencidos e os pagamentos pendentes no FinMoovi. Assim, você evita multas por atraso e mantém o fluxo de caixa saudável.
+Even with all the advantages, there are situations where an auction isn’t worth it:
 
-## Estratégias avançadas para melhorar seus resultados
+- **High fees** – if the auction fee (usually between 5% and 15% of the final price) turns the “low” price into something close to market price.  
+- **Unknown condition** – if the item lacks clear photos, a report, or the possibility of inspection, the risk of receiving a damaged product rises.  
+- **Urgency** – if you need the item immediately, the post‑auction delivery time can be long, potentially generating extra costs.
 
-- **Lance nos últimos segundos**: em leilões online, muitos participantes esperam o final para dar o lance decisivo. Isso reduz a chance de guerras de preço prolongadas.
-- **Use lances automáticos com limite**: configure o FinMoovi para disparar um lance automático até o valor máximo que você está disposto a pagar. O app avisa quando o limite for atingido, evitando surpresas.
-- **Participar de leilões de lotes**: às vezes, comprar um conjunto de itens (por exemplo, um lote de móveis) sai mais barato que adquirir cada peça separadamente. Avalie o custo-benefício antes de fechar.
+In these cases, FinMoovi can help you quickly compare the total cost (price + fees + shipping) with the traditional purchase price, using the price‑comparison feature.
 
-## Quando dizer não ao leilão
+## How to Turn the Auction Experience into a Healthy Habit
 
-Mesmo com todas as vantagens, há situações em que o leilão não vale a pena:
-
-- **Taxas elevadas** – se a taxa de leilão (geralmente entre 5% e 15% do valor final) transformar o preço “baixo” em algo próximo ao preço de mercado.
-- **Condição desconhecida** – se o bem não tem fotos claras, laudo ou possibilidade de inspeção, o risco de receber algo danificado aumenta.
-- **Urgência** – se você precisa do item imediatamente, o tempo de entrega pós‑leilão pode ser longo, o que pode gerar custos adicionais.
-
-Nesses casos, o FinMoovi pode ajudar a comparar rapidamente o custo total (preço + taxas + frete) com o preço de compra tradicional, usando a funcionalidade de comparação de preços.
-
-## Como transformar a experiência de leilão em hábito saudável
-
-Participar de leilões pode ser uma forma inteligente de economizar, mas requer disciplina. Ao integrar cada passo ao FinMoovi, você cria um registro completo de todas as transações, evita gastos impulsivos e ainda acompanha o progresso das suas metas financeiras. O hábito de registrar tudo – desde a captura da foto do boleto até a categorização automática – transforma um evento pontual em parte do seu planejamento financeiro diário.
+Participating in auctions can be a smart way to save, but it requires discipline. By integrating each step into FinMoovi, you create a complete record of all transactions, avoid impulsive spending, and keep track of your financial goals. The habit of logging everything—from snapping a photo of the boleto to automatic categorization—turns a one‑off event into part of your daily financial planning.
 
 ## Start today
 
-**Micro‑action (5 minutos):** Abra o FinMoovi, vá até a tela de “Captura inteligente”, tire uma foto do próximo boleto ou do comprovante de pagamento do leilão que você está acompanhando e deixe o app categorizar automaticamente. Em seguida, defina um limite de gasto para leilões na seção “Metas” e ative o alerta de saldo. Pronto – você já está no controle do seu próximo lance!
+**Micro‑action (5 minutes):** Open FinMoovi, go to the “Smart capture” screen, take a photo of the next boleto or payment receipt for the auction you’re following, and let the app categorize it automatically. Then set a spending limit for auctions in the “Goals” section and enable the balance alert. Done – you’re already in control of your next bid!
