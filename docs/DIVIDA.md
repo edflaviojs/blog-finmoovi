@@ -122,6 +122,17 @@ Ficou adiado, de propósito:
 2. **Afinar objetos fracos do catálogo** (tesoura, emprestar, caixa-eletrônico, fogão: desenho simples).
    **Porquê:** funcionam, só são menos bonitos. **Reavaliar:** quando o Ed apontar algum num vídeo.
 
+### A7. 🟢 A prova do vídeo piloto "sair do vermelho" já não protege nada (02/11/2026)
+
+**Estado:** aberto, o Ed disse «pode ser mais tarde» · **Reavaliar:** na próxima vez que se mexer
+nas provas do vídeo longo
+
+`src/scripts/validacao/validar-publicacao-longo.js`, bloco 6 ("contra o vídeo que foi entregue"):
+compara com o vídeo medido em agosto (10431 fotogramas). No GitHub nunca corre (a narração do
+piloto não vai ao git). Neste PC dava 2 vermelhas porque a narração de 04/08 e o roteiro de 08/10
+já não combinavam. Os 2 ficheiros velhos foram MOVIDOS (não apagados) para
+`FINMOOVI/_guardados-provas-velhas-02-11/`. Decidir: aposentar a prova ou medir um vídeo atual.
+
 ---
 
 ## B. Provas marcadas no tempo, nada a fazer até à data
