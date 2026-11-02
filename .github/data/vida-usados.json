@@ -988,5 +988,11 @@
     "gancho": "aconteceu-comigo",
     "turno": "manha",
     "em": "2026-11-02T12:44:27.742Z"
+  },
+  {
+    "situacao": "saque-no-cartao",
+    "gancho": "aconteceu-comigo",
+    "turno": "noite",
+    "em": "2026-11-02T12:54:18.188Z"
   }
 ]
