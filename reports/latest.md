@@ -1,6 +1,6 @@
 # 📊 Relatório Semanal — FinMoovi Blog
 
-**Período:** 2026-10-19 a 2026-10-26
+**Período:** 2026-10-26 a 2026-11-02
 **Total de Pageviews:** 0
 
 ## 🏆 Páginas Mais Visitadas
@@ -12,37 +12,38 @@
 
 | País | Views |
 |------|-------|
-| US | 138 |
-| CN | 103 |
-| PT | 63 |
-| DE | 22 |
-| ES | 7 |
-| SE | 4 |
-| IE | 4 |
-| VN | 3 |
-| SG | 2 |
-| BR | 2 |
+| US | 96 |
+| CN | 91 |
+| PT | 42 |
+| DE | 21 |
+| NL | 11 |
+| PL | 9 |
+| LT | 7 |
+| ES | 6 |
+| BR | 5 |
+| SG | 4 |
 
 ## 🔗 Fontes de Tráfego (Referrers)
 
 | Referrer | Views |
 |----------|-------|
-| (direto) | 283 |
-| app.finmoovi.com | 44 |
+| (direto) | 223 |
+| app.finmoovi.com | 46 |
 | finmoovi-landing.pages.dev | 14 |
-| m.facebook.com | 6 |
-| finmoovi.com | 6 |
-| www.facebook.com | 4 |
-| www.google.com | 1 |
+| finmoovi.com | 7 |
+| www.google.com | 6 |
+| www.facebook.com | 6 |
+| m.facebook.com | 4 |
+| com.google.android.googlequicksearchbox | 1 |
 
 ## 📝 Conteúdo Existente
 
-- **Total posts:** 555
-- **Por categoria:** ferramentas (27), dicas (95), orcamento (20), investimentos (24), cotacoes (19)
+- **Total posts:** 576
+- **Por categoria:** ferramentas (29), dicas (98), orcamento (21), investimentos (24), cotacoes (20)
 
 ## 💡 Sugestões de Conteúdo
 
-- Temas sazonais para este mês: "como se preparar para Black Friday", "planejamento financeiro fim de ano"
+- Temas sazonais para este mês: "Black Friday: como não cair em armadilhas", "como economizar nas compras de Natal"
 - Temas de alto potencial ainda não cobertos:
   - "como investir com 100 reais por mês"
   - "como montar carteira de investimentos iniciante"
@@ -51,4 +52,4 @@
   - "como sair do vermelho em 90 dias"
 
 ---
-*Gerado automaticamente em 2026-10-26T17:07:05.227Z*
+*Gerado automaticamente em 2026-11-02T20:37:21.157Z*
