@@ -1,0 +1,221 @@
+{
+  "slug": "economia",
+  "term": "economia",
+  "category": "basico",
+  "keyword": "economia",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Seu *salário some antes do dia vinte* e você não sabe pra onde ele foi?"
+  },
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "vela",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Seu salário some antes do dia vinte e você não sabe pra onde ele foi? Então você não tá fazendo economia nenhuma.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "salário",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "vela"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "vinte",
+          "visual": {
+            "type": "statement",
+            "text": "Dia 20: acabou"
+          }
+        },
+        {
+          "anchor": "Então",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          }
+        },
+        {
+          "anchor": "economia",
+          "visual": {
+            "type": "statement",
+            "text": "Economia zero"
+          },
+          "sfx": "thud"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "E ninguém sabe mesmo, porque é um café aqui, um lanche ali, um pedido de comida na sexta. Tudo no automático.",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "café",
+          "visual": {
+            "type": "icon",
+            "icon": "coins"
+          }
+        },
+        {
+          "anchor": "lanche",
+          "visual": {
+            "type": "statement",
+            "text": "Pequenos gastos, todo dia"
+          }
+        },
+        {
+          "anchor": "comida",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "Tudo",
+          "visual": {
+            "type": "statement",
+            "text": "Sem perceber"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Um café de oito reais por dia dá duzentos e quarenta por mês. No ano, quase três mil reais.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "oito",
+          "visual": {
+            "type": "number",
+            "text": "R$ 8"
+          }
+        },
+        {
+          "anchor": "duzentos",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 240,
+            "prefix": "R$"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "quase",
+          "visual": {
+            "type": "number",
+            "text": "R$ 2.880"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei meus gastos no FinMoovi e ele juntou cafés e lanches numa linha só, a maior da lista.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "meus",
+          "visual": {
+            "type": "app",
+            "app": "extrato",
+            "note": "cafés e lanches juntos numa linha só, a maior da lista"
+          }
+        },
+        {
+          "anchor": "numa",
+          "visual": {
+            "type": "statement",
+            "text": "A maior linha da lista"
+          },
+          "sfx": "ding"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver a sua linha? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 4.2,
+      "shots": [
+        {
+          "anchor": "linha",
+          "visual": {
+            "type": "statement",
+            "text": "Qual é a sua linha?"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Economia é saber pra onde o seu salário foi antes de ele sumir. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "Economia",
+          "visual": {
+            "type": "statement",
+            "text": "Economia é saber"
+          }
+        },
+        {
+          "anchor": "sumir",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "vela"
+          }
+        },
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "icon",
+            "icon": "shield"
+          },
+          "sfx": "sparkle"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja pra onde seu salário vai",
+    "target": "app"
+  },
+  "totalDurationSec": 43.1
+}
