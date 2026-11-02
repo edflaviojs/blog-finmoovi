@@ -982,5 +982,11 @@
     "gancho": "depois-de-anos",
     "turno": "noite",
     "em": "2026-11-01T11:33:44.908Z"
+  },
+  {
+    "situacao": "guardar-salario-curto",
+    "gancho": "aconteceu-comigo",
+    "turno": "manha",
+    "em": "2026-11-02T12:44:27.742Z"
   }
 ]

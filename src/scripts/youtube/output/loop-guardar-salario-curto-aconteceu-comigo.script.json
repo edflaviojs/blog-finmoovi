@@ -1,0 +1,118 @@
+{
+  "slug": "loop-guardar-salario-curto-aconteceu-comigo",
+  "formato": "loop16",
+  "term": "Guardar com salário curto",
+  "category": "vida",
+  "keyword": "GUARDAR",
+  "valor": "R$ 50",
+  "situacao": "guardar-salario-curto",
+  "gancho": "aconteceu-comigo",
+  "ganchoFamilia": "aconteceu comigo",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "balde-furado",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Isso aconteceu comigo semana passada. Abri o envelope. Vazio.",
+      "durationSec": 3.42,
+      "shots": [
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "O envelope estava vazio"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Olha, na primeira semana separei cinquenta reais Nem esses ficaram.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "primeira",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "semana",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 50 e nem ficaram"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Todo dia saía um pouquinho, caladinho, e eu nem via.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "pouquinho",
+          "visual": {
+            "type": "statement",
+            "text": "Saía um pouquinho todo dia"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "caladinho",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Então hoje eu olho o envelope antes de ele ficar vazio.",
+      "durationSec": 4.18,
+      "shots": [
+        {
+          "anchor": "envelope",
+          "visual": {
+            "type": "statement",
+            "text": "Olho o envelope antes"
+          }
+        },
+        {
+          "anchor": "ficar",
+          "visual": {
+            "type": "statement",
+            "text": "O envelope estava vazio"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
