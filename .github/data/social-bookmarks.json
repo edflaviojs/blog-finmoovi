@@ -2978,5 +2978,45 @@
         "status": 200
       }
     }
+  },
+  {
+    "slug": "cotacoes-semana-1-novembro-2026",
+    "title": "Resumo Semanal: Dólar a R$ 5.44 — Semana 1 de novembro",
+    "url": "https://blog.finmoovi.com/posts/cotacoes-semana-1-novembro-2026",
+    "submittedAt": "2026-11-02T22:56:55.138Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1911531688
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "como-usar-um-simulador-de-emprestimo-para-planejar-seu",
+    "title": "Como usar um simulador de empréstimo para planejar seu futuro financeiro em 2026",
+    "url": "https://blog.finmoovi.com/posts/como-usar-um-simulador-de-emprestimo-para-planejar-seu",
+    "submittedAt": "2026-11-02T22:56:55.841Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1911531693
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
   }
 ]
