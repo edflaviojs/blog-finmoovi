@@ -28559,5 +28559,114 @@
         "publicaEmBR": "03/11 às 14h31"
       }
     }
+  },
+  "kw-corte-r-150-da-conta-de-luz-mudando-3-habitos": {
+    "midias": {
+      "video": {
+        "id": "1fe0154d-5af6-4b2e-8f09-edd982e25096",
+        "name": "V3jZ59CDjx.mp4",
+        "originalName": null,
+        "path": "https://media.help4desk.com/V3jZ59CDjx.mp4",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capa": {
+        "id": "fe852310-7f82-4964-ad90-0f1bee03033f",
+        "name": "L7EgHC5D9O.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/L7EgHC5D9O.jpeg",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capaLarga": {
+        "id": "b1fb8e47-3357-4877-abee-54ef84876651",
+        "name": "Nu47Phi3Sx.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/Nu47Phi3Sx.jpeg",
+        "thumbnail": null,
+        "alt": null
+      }
+    },
+    "publicaEm": "2026-11-03T22:00:00.000Z",
+    "publicaEmBR": "03/11 às 19h00",
+    "agendadoEm": "2026-11-02T23:07:45.010Z",
+    "atualizadoEm": "2026-11-02T23:07:49.584Z",
+    "redes": {
+      "instagram": {
+        "postId": "cmvzvd8ri00b9nv9jv5s8ybju",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-11-03T22:00:00.000Z",
+        "publicaEmBR": "03/11 às 19h00",
+        "midia": "o vídeo",
+        "caracteres": 769,
+        "limite": 2200
+      },
+      "zernio-tiktok": {
+        "postId": "cmvzvd9aj00banv9jttksgr90",
+        "canal": "finmoovi",
+        "publicaEm": "2026-11-03T22:12:00.000Z",
+        "publicaEmBR": "03/11 às 19h12",
+        "midia": "o vídeo",
+        "caracteres": 258,
+        "limite": 2200
+      },
+      "facebook": {
+        "postId": "cmvzvd9ve00bbnv9juhteeij9",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-11-03T22:26:00.000Z",
+        "publicaEmBR": "03/11 às 19h26",
+        "midia": "o vídeo",
+        "caracteres": 539,
+        "limite": 63206
+      },
+      "linkedin-page": {
+        "postId": "cmvzvdab700bcnv9jmszl8py0",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-11-03T22:43:00.000Z",
+        "publicaEmBR": "03/11 às 19h43",
+        "midia": "o vídeo",
+        "caracteres": 446,
+        "limite": 3000
+      },
+      "threads": {
+        "postId": "cmvzvdaqo00bdnv9juc2o0kl1",
+        "canal": "finmoovi",
+        "publicaEm": "2026-11-03T22:58:00.000Z",
+        "publicaEmBR": "03/11 às 19h58",
+        "midia": "o vídeo",
+        "caracteres": 122,
+        "limite": 500
+      },
+      "pinterest": {
+        "postId": "cmvzvdbje00benv9ji4i07k8c",
+        "canal": "finmoovi",
+        "publicaEm": "2026-11-03T23:31:00.000Z",
+        "publicaEmBR": "03/11 às 20h31",
+        "midia": "vídeo primeiro, capa depois — a ordem que o Pinterest exige",
+        "caracteres": 413,
+        "limite": 500
+      },
+      "bluesky": {
+        "postId": "cmvzvdbzr00bfnv9juhzlijkt",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-11-03T23:47:00.000Z",
+        "publicaEmBR": "03/11 às 20h47",
+        "midia": "vai a capa DEITADA (o Bluesky não publica vídeo, e a em pé ficaria cortada no feed)",
+        "caracteres": 79,
+        "limite": 300
+      },
+      "instagram-story": {
+        "postId": "cmvzvdcau00bgnv9j1se20qmf",
+        "tipo": "vídeo",
+        "publicaEm": "2026-11-03T22:05:00.000Z",
+        "publicaEmBR": "03/11 às 19h05"
+      },
+      "facebook-story": {
+        "postId": "cmvzvdcgx00bhnv9jd9jxx0cu",
+        "tipo": "vídeo",
+        "publicaEm": "2026-11-03T22:31:00.000Z",
+        "publicaEmBR": "03/11 às 19h31"
+      }
+    }
   }
 }
