@@ -4,6 +4,7 @@ definition: "What Pension is and how it shows up in your everyday money — expl
 title: "Pension - Financial Glossary"
 description: "What Pension is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/previdencia.webp"
+imageAlt: "Gold coins, rising bar graph, and potted plant on dark background."
 category: "basico"
 tags: ["Pension", "glossary", "finance"]
 author: "FinMoovi"

@@ -4,6 +4,7 @@ definition: "Qué es previsión y cómo aparece en tu día a día — explicado 
 title: "previsión - Glosario Financiero"
 description: "Qué es previsión y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/previdencia.webp"
+imageAlt: "Monedas doradas, gráfico de barras ascendente y planta verde en un frasco de vidrio."
 category: "basico"
 tags: ["previsión", "glosario", "finanzas"]
 author: "FinMoovi"

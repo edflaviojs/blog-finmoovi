@@ -4,6 +4,7 @@ definition: "O que é previdência e como isso aparece no seu dia a dia — expl
 title: "previdência - Glossário Financeiro"
 description: "O que é previdência e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/previdencia.webp"
+imageAlt: "Pilhas de moedas douradas, gráfico de barras ascendente e planta verde em pote de vidro."
 category: "basico"
 tags: ["previdência", "glossário", "finanças"]
 author: "FinMoovi"
