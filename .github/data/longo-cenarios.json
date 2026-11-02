@@ -180,6 +180,20 @@
       "cena": "o cachorro que adoeceu de repente",
       "promessa": "Você perde mais de quatro mil e quinhentos reais por ano em cobranças que nem vê, e eu vou te provar isso.",
       "em": "2026-10-26"
+    },
+    {
+      "slug": "controle-gastos-passos-para",
+      "cenarios": [
+        "o domingo",
+        "o mercado",
+        "o aluguel"
+      ],
+      "fio": "corda-bamba",
+      "elenco": "uma mulher que sustenta a casa sozinha",
+      "funcaoDoApp": "contas",
+      "cena": "a máquina de lavar que parou no meio da semana",
+      "promessa": "Você perde quatro mil e oitocentos reais por ano sem ver, e eu vou te provar isso.",
+      "em": "2026-11-02"
     }
   ]
 }

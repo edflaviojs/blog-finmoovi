@@ -264,6 +264,72 @@
         "cena": "66",
         "boneco": "super-heroi"
       }
+    ],
+    "controle-gastos-passos-para": [
+      {
+        "cena": "2",
+        "boneco": "relogio"
+      },
+      {
+        "cena": "4",
+        "boneco": "ombros"
+      },
+      {
+        "cena": "9",
+        "boneco": "carregar-peso"
+      },
+      {
+        "cena": "13",
+        "boneco": "rasgar-papel"
+      },
+      {
+        "cena": "18",
+        "boneco": "puxar-cabelo"
+      },
+      {
+        "cena": "21",
+        "boneco": "contar-moedas"
+      },
+      {
+        "cena": "24",
+        "boneco": "mesa-faturas"
+      },
+      {
+        "cena": "29",
+        "boneco": "bolsos-vazios"
+      },
+      {
+        "cena": "31",
+        "boneco": "susto"
+      },
+      {
+        "cena": "36",
+        "boneco": "bocejar"
+      },
+      {
+        "cena": "38",
+        "boneco": "escorregar-banana"
+      },
+      {
+        "cena": "41",
+        "boneco": "bracos-cruzados"
+      },
+      {
+        "cena": "45",
+        "boneco": "ideia"
+      },
+      {
+        "cena": "49",
+        "boneco": "apontar"
+      },
+      {
+        "cena": "58",
+        "boneco": "morder-unhas"
+      },
+      {
+        "cena": "64",
+        "boneco": "super-heroi"
+      }
     ]
   }
 }

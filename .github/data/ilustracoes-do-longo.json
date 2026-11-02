@@ -261,6 +261,32 @@
         "cena": "67",
         "figura": "balde-furado"
       }
+    ],
+    "controle-gastos-passos-para": [
+      {
+        "cena": "5",
+        "figura": "fumaca"
+      },
+      {
+        "cena": "30",
+        "figura": "buraco"
+      },
+      {
+        "cena": "28",
+        "figura": "balde-furado"
+      },
+      {
+        "cena": "46",
+        "figura": "balanca"
+      },
+      {
+        "cena": "39",
+        "figura": "guarda-chuva"
+      },
+      {
+        "cena": "57",
+        "figura": "ratoeira"
+      }
     ]
   }
 }

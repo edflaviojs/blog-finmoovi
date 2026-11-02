@@ -142,6 +142,28 @@
       "usadoEm": [
         "gastos-escondidos-extrato-que"
       ]
+    },
+    {
+      "ficheiro": "manus/controle-gastos-passos-para/susto.jpg",
+      "significado": "o susto de olhar a conta",
+      "tipo": "foto",
+      "pistas": [
+        "sabe o que e sentir o"
+      ],
+      "usadoEm": [
+        "controle-gastos-passos-para"
+      ]
+    },
+    {
+      "ficheiro": "manus/controle-gastos-passos-para/virada.jpg",
+      "significado": "a saída que se abre",
+      "tipo": "foto",
+      "pistas": [
+        "eu fiz a conta com a"
+      ],
+      "usadoEm": [
+        "controle-gastos-passos-para"
+      ]
     }
   ],
   "recusadas": [
