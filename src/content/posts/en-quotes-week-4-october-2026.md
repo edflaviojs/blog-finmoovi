@@ -35,9 +35,9 @@ This week the dollar closed the quoted period at **R$ 5.00**. The price of the
 
 The basic interest rate — the **[Selic](/en/glossario/en-selic)** — stays at **13.75% per year**. Although we didn’t hear any news of a rate change this week, the current level still directly influences the profitability of several investments:
 
-* **Fixed income** – public bonds and CDBs that pay close to the **[CDI](/en/glossario/en-cdi)** tend to yield near this level, which still makes them attractive for those seeking safety.
-* **Investment funds** – fixed‑income and multi‑market funds adjust their strategies according to the Selic; when the rate is high, they usually look for opportunities in assets that pay higher interest.
-* **Foreign exchange** – a high Selic tends to attract foreign capital to Brazil, which can help keep the real stable against the dollar and the euro, as we saw this week.
+* **[Fixed income](/en/glossario/en-fixed-income)** – public bonds and CDBs that pay close to the **[CDI](/en/glossario/en-cdi)** tend to yield near this level, which still makes them attractive for those seeking safety.
+* **[Investment](/en/glossario/en-investment) funds** – fixed‑income and multi‑market funds adjust their strategies according to the Selic; when the rate is high, they usually look for opportunities in assets that pay higher interest.
+* **[Foreign exchange](/en/glossario/en-cambio)** – a high Selic tends to attract foreign capital to Brazil, which can help keep the real stable against the dollar and the euro, as we saw this week.
 
 In short, as long as the Selic remains at this level, the logic of seeking investments that deliver returns above 13% per year stays valid.
 
@@ -50,7 +50,7 @@ If you have assets in reais, dollars or euros — whether it’s an overseas sav
 
 Even without announced rate changes, a few points deserve attention:
 
-* **Foreign monetary policy decisions** – although we can’t cite numbers, meetings of the Federal Reserve, the European Central Bank and the Bank of England usually generate volatility in currency markets. Keep an eye on the headlines, as any sign of tightening or easing can affect the real.
+* **Foreign monetary policy decisions** – although we can’t cite numbers, meetings of the Federal Reserve, the European Central Bank and the Bank of England usually generate [volatility](/en/glossario/en-volatility) in currency markets. Keep an eye on the headlines, as any sign of tightening or easing can affect the real.
 * **Domestic inflation indicators** – the IPCA has not yet been released for the most recent period. When it appears, it can influence expectations about the future Selic and, consequently, the attractiveness of fixed‑income investments.
 * **Capital flows** – news about foreign investments in Brazil (e.g., bond purchases or equity injections) often impact the exchange rate. A larger inflow can strengthen the real; an outflow can push the dollar and euro higher.
 

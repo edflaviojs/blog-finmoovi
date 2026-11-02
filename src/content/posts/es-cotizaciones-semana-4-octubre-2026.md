@@ -33,9 +33,9 @@ Esta semana el dólar cotizó **R$ 5,00** y el euro **R$ 5,60**. Ambos pares
 
 ### Selic y impacto en tus aplicaciones
 
-La tasa [Selic](/es/glossario/es-selic) está en **13,75 % al año** (meta del Copom, divulgada el 04 / 11 / 2026). Este nivel sigue siendo el más alto de los últimos años, lo que significa que la remuneración de inversiones de renta fija, como CDBs, [Tesouro Direto](/es/glossario/es-tesouro-direto) y fondos de [crédito](/es/glossario/es-credito), continúa siendo atractiva. Por otro lado, el costo del crédito para préstamos y financiamientos permanece elevado, lo que desincentiva el consumo a plazo.
+La tasa [Selic](/es/glossario/es-selic) está en **13,75 % al año** (meta del Copom, divulgada el 04 / 11 / 2026). Este nivel sigue siendo el más alto de los últimos años, lo que significa que la remuneración de inversiones de [renta fija](/es/glossario/es-renta-fija), como CDBs, [Tesouro Direto](/es/glossario/es-tesouro-direto) y fondos de [crédito](/es/glossario/es-credito), continúa siendo atractiva. Por otro lado, el costo del crédito para préstamos y financiamientos permanece elevado, lo que desincentiva el consumo a plazo.
 
-Para quien ya tiene dinero invertido en renta fija, la Selic alta garantiza un retorno cercano a la tasa de referencia, protegiendo el poder de compra contra la inflación. En cambio, quien piensa pasar a renta variable debe recordar que el escenario de intereses altos suele presionar el precio de las acciones, especialmente de las empresas más dependientes de crédito.
+Para quien ya tiene dinero invertido en renta fija, la Selic alta garantiza un retorno cercano a la tasa de referencia, protegiendo el poder de compra contra la inflación. En cambio, quien piensa pasar a [renta variable](/es/glossario/es-renta-variable) debe recordar que el escenario de intereses altos suele presionar el precio de las acciones, especialmente de las empresas más dependientes de crédito.
 
 ### Consejo práctico para el inversor individual
 
