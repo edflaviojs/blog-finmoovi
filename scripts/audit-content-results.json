@@ -1,39 +1,5 @@
 [
   {
-    "file": "en-auction.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 5,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": [
-        "valor"
-      ]
-    }
-  },
-  {
-    "file": "en-fixed-assets.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 1,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 7,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": [
-        "valor"
-      ]
-    }
-  },
-  {
     "file": "en-quotes-week-4-october-2026.md",
     "dir": "posts",
     "severity": 3,
@@ -45,18 +11,14 @@
         "CDI",
         "Selic"
       ],
-      "geoRefs": [
-        "no Brasil"
-      ],
+      "geoRefs": [],
       "ptWordsCount": 0,
       "brBrands": [],
       "brAcronyms": [
         "IPCA"
       ],
       "ptLeftovers": [
-        "dívidas",
-        "poupança",
-        "investimentos"
+        "reais"
       ]
     }
   },
@@ -72,22 +34,13 @@
         "CDB",
         "Selic"
       ],
-      "geoRefs": [
-        "no Brasil",
-        "brasileiro",
-        "no mercado brasileiro"
-      ],
+      "geoRefs": [],
       "ptWordsCount": 0,
       "brBrands": [],
       "brAcronyms": [
         "IPCA"
       ],
-      "ptLeftovers": [
-        "ações",
-        "poupança",
-        "reais",
-        "investimentos"
-      ]
+      "ptLeftovers": []
     }
   },
   {
@@ -293,6 +246,21 @@
       "ptLeftovers": [
         "valor"
       ]
+    }
+  },
+  {
+    "file": "en-fixed-assets.md",
+    "dir": "glossario",
+    "severity": 1,
+    "issues": {
+      "currency": 1,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -783,6 +751,21 @@
   },
   {
     "file": "en-asset-quality.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-auction.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -3167,6 +3150,21 @@
     }
   },
   {
+    "file": "en-how-to-use-a-loan-simulator-to-plan-your-financial-future-in.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-how-to-use-an-online-currency-converter-without-getting-lost.md",
     "dir": "posts",
     "severity": 0,
@@ -3887,7 +3885,37 @@
     }
   },
   {
+    "file": "en-non-farm-payrolls.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-obligation.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-offshore.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -3993,6 +4021,21 @@
   },
   {
     "file": "en-patrimonio.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-pension.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -7352,6 +7395,21 @@
     }
   },
   {
+    "file": "es-como-usar-un-simulador-de-prestamo-para-planificar-tu-futuro.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-consejos-para-controlar-gastos-en-la-tarjeta-de-credito.md",
     "dir": "posts",
     "severity": 0,
@@ -9287,6 +9345,36 @@
     }
   },
   {
+    "file": "es-nfp.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-offshore.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-olvidaste-pagar-una-factura-y-te-quedaste-sin-dinero-como.md",
     "dir": "posts",
     "severity": 0,
@@ -9844,6 +9932,21 @@
   {
     "file": "es-prevision-privada-vs-invertir-por-cuenta-propia-cual-vale.md",
     "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-prevision.md",
+    "dir": "glossario",
     "severity": 0,
     "issues": {
       "currency": 0,
