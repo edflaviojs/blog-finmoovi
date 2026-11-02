@@ -1,10 +1,10 @@
 /**
- * A PROVA DE MESA DOS METADADOS DO SHORT — sem rede, sem chave, sem custo.
+ * A PROVA DE MESA DOS METADADOS DO SHORT, sem rede, sem chave, sem custo.
  *
  * ═══ POR QUE NASCEU (06/08/2026) ═══
  * O Short publica **todos os dias** e era o único formato **sem uma única prova de mesa**:
  * a única forma de ver o que ele ia escrever era gastar uma corrida de IA na nuvem. As
- * três regras novas do dono — título curto, palavra-chave em maiúsculas, três hashtags —
+ * três regras novas do dono, título curto, palavra-chave em maiúsculas, três hashtags , 
  * são exatamente o tipo de coisa que se parte em silêncio e só se descobre no Studio.
  *
  * ⚠️ **NÃO CHAMA A IA.** Prova o que é NOSSO: o corte, a contagem, a escolha. O que a IA
@@ -21,7 +21,7 @@ import {
 import { avaliarRetencao, RETENCAO_MINIMA } from '../youtube/retencao.js';
 /**
  * ⚠️ **IMPORTAR A COREOGRAFIA NÃO CHAMA IA NENHUMA.** Ela só corre quando é chamada
- * pelo nome (o `executadoDireto` no fim do ficheiro) — a mesma guarda do `capa-manus.js`,
+ * pelo nome (o `executadoDireto` no fim do ficheiro), a mesma guarda do `capa-manus.js`,
  * e pela mesma razão: um `import` de teste não pode gastar dinheiro.
  */
 import { esticarTelaDoApp, montarRoteiro, palavrasAncoraveis } from '../youtube/coreografia.js';
@@ -29,7 +29,7 @@ import { validateShortScript } from '../youtube/lib/schema-short.js';
 import { prateleirasDoVideo, PLAYLIST_GERAL } from '../youtube/lib/playlists.js';
 import { inserirNoShort, inserirNoLongo, conferirOportunidade, fazerSlugDoDono } from '../../../functions/api/_oportunidade-fila.js';
 import { proximoLongo } from '../youtube/pick-next-longo.js';
-// ⚠️ O guarda do canal também só corre quando é chamado pelo nome — importá-lo não
+// ⚠️ O guarda do canal também só corre quando é chamado pelo nome, importá-lo não
 //    pergunta nada ao YouTube nem manda email.
 import { conferirEstados } from '../youtube/guarda.js';
 import { validarNarrativa, buildPromptNarrativa } from '../youtube/roteiro-narrativa.js';
@@ -38,7 +38,7 @@ import { readFileSync } from 'fs';
 import { join, dirname, resolve } from 'path';
 import { fileURLToPath } from 'url';
 
-/** A raiz do projeto — para as provas que leem o workflow a sério. */
+/** A raiz do projeto, para as provas que leem o workflow a sério. */
 const RAIZ = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
 
 let passou = 0;
@@ -46,11 +46,11 @@ let falhou = 0;
 const falhas = [];
 const ok = (nome, cond, det = '') => {
   if (cond) { passou++; console.log(`  ✅ ${nome}`); }
-  else { falhou++; falhas.push(`${nome}${det ? ` — ${det}` : ''}`); console.log(`  ❌ ${nome}${det ? ` — ${det}` : ''}`); }
+  else { falhou++; falhas.push(`${nome}${det ? `, ${det}` : ''}`); console.log(`  ❌ ${nome}${det ? `, ${det}` : ''}`); }
 };
 const calado = () => {};
 
-console.log('\n1. O TÍTULO — curto, e só a palavra-chave a gritar');
+console.log('\n1. O TÍTULO, curto, e só a palavra-chave a gritar');
 
 {
   ok('a palavra-chave sai em maiúsculas',
@@ -64,7 +64,7 @@ console.log('\n1. O TÍTULO — curto, e só a palavra-chave a gritar');
       .startsWith('TESOURO DIRETO'));
   /**
    * 🔴 **SÓ A PALAVRA-CHAVE, NUNCA A FRASE.** O canal tem uma trava escrita contra títulos
-   * aos berros (*"um título aos berros é recusado"*) — metade dos virais que servem de
+   * aos berros (*"um título aos berros é recusado"*), metade dos virais que servem de
    * modelo GRITAM, e este canal decidiu não gritar. Esta prova acende se alguém, um dia,
    * resolver pôr o título todo em maiúsculas "para destacar mais".
    */
@@ -79,10 +79,10 @@ console.log('\n1. O TÍTULO — curto, e só a palavra-chave a gritar');
   /**
    * 🔴 **O TÍTULO QUE O DONO ESCREVE NA /status VAI À LETRA.** Ele escreveu-o para ir
    * assim: sem a IA, sem o teto das 8 palavras, sem maiúsculas postas por nós. As nossas
-   * regras existem para quando é a MÁQUINA a escrever — aplicá-las ao que uma pessoa
+   * regras existem para quando é a MÁQUINA a escrever, aplicá-las ao que uma pessoa
    * decidiu seria mudar-lhe a decisão sem lhe dizer.
    * ⚠️ Esta prova nasceu de uma pergunta dele: *"esse título que eu vou colocar lá na
-   * /status realmente vai ser gerado, ou é somente para um teste?"* — e a resposta, no
+   * /status realmente vai ser gerado, ou é somente para um teste?"*, e a resposta, no
    * código, era **metade**: o título era guardado na fila e nunca chegava ao YouTube.
    */
   const comDono = { keyword: 'inflação', term: 'inflação', category: 'x', cta: { text: 'y' }, tituloDoDono: 'Eu escrevi este título exatamente assim e com mais de oito palavras' };
@@ -98,7 +98,7 @@ console.log('\n1. O TÍTULO — curto, e só a palavra-chave a gritar');
       .snippet.title === 'INFLAÇÃO: 3 erros que custam caro');
 
   /**
-   * ⚠️ **O TÍTULO COMPRIDO É REJEITADO, NÃO CORTADO** — e o pedido à IA manda o mesmo
+   * ⚠️ **O TÍTULO COMPRIDO É REJEITADO, NÃO CORTADO**, e o pedido à IA manda o mesmo
    * número que a trava exige. É a regra contra o defeito mais repetido deste projeto: o
    * prompt a mandar escrever o que o leitor a seguir recusa.
    */
@@ -119,7 +119,7 @@ console.log('\n1. O TÍTULO — curto, e só a palavra-chave a gritar');
   }
 }
 
-console.log('\n2. AS HASHTAGS — três, e #Shorts é uma delas');
+console.log('\n2. AS HASHTAGS, três, e #Shorts é uma delas');
 
 {
   const script = { keyword: 'inflação', term: 'inflação', category: 'economia', cta: { text: 'x' } };
@@ -131,11 +131,11 @@ console.log('\n2. AS HASHTAGS — três, e #Shorts é uma delas');
   ok('a primeira é a do tema', tags[0].toLowerCase().includes('inflação'.toLowerCase()));
 }
 
-console.log('\n3. AS ETIQUETAS — encher os 500 caracteres, sem inventar palavras');
+console.log('\n3. AS ETIQUETAS, encher os 500 caracteres, sem inventar palavras');
 
 {
   /**
-   * ⚠️ A LISTA DE PARTIDA É A DE VERDADE — a do texto de reserva, que é o pior caso: nos
+   * ⚠️ A LISTA DE PARTIDA É A DE VERDADE, a do texto de reserva, que é o pior caso: nos
    * dias bons a IA manda mais palavras do que estas. Uma prova com uma lista inventada,
    * mais curta do que a real, mediria um vídeo que não existe.
    */
@@ -153,19 +153,19 @@ console.log('\n3. AS ETIQUETAS — encher os 500 caracteres, sem inventar palavr
   /**
    * 🔴 **A CONTA QUE VALE É A DO YOUTUBE, NÃO A NOSSA** (07/08/2026).
    *
-   * ⚠️ O `chars` aqui em cima é `join(',').length` — e foi ele que deixou passar o
+   * ⚠️ O `chars` aqui em cima é `join(',').length`, e foi ele que deixou passar o
    * defeito que impediu a publicação de 06 e 07/08. O YouTube envolve em **aspas**
    * qualquer etiqueta com espaço, e essas aspas contam para os 500. Neste canal é
    * quase toda: as chaves são expressões e as variações têm espaço por construção.
    *
    * MEDIDO: as mesmas 23 etiquetas davam **478** pela conta antiga (verde em todas as
-   * provas) e **524** pela conta do YouTube — `400 invalidTags`, Short não publicado.
+   * provas) e **524** pela conta do YouTube, `400 invalidTags`, Short não publicado.
    *
    * Esta prova mede como a API mede. Não confiar na nossa aritmética é o ponto dela.
    */
   const custoNoYouTube = (lista) => lista.reduce((a, t) => a + t.length + (t.includes(' ') ? 2 : 0) + 1, 0);
   ok('🔴 pela conta do YOUTUBE (aspas nas etiquetas com espaço) cabe nos 500',
-    custoNoYouTube(e) <= 500, `${custoNoYouTube(e)} — o limite da API é 500`);
+    custoNoYouTube(e) <= 500, `${custoNoYouTube(e)}, o limite da API é 500`);
 
   // O pior caso real: doze expressões, TODAS com espaço. Foi este o vídeo recusado.
   const piorCaso = escolherEtiquetas([
@@ -178,7 +178,7 @@ console.log('\n3. AS ETIQUETAS — encher os 500 caracteres, sem inventar palavr
   ok('as palavras do dono vêm TODAS à frente das variações',
     chaves.every((c, i) => ordenadas[i] === c), ordenadas.slice(0, chaves.length).join(' | '));
   ok('nenhuma etiqueta se repete', new Set(e.map((x) => x.toLowerCase())).size === e.length);
-  ok('nenhuma etiqueta é uma frase — ninguém procura frases',
+  ok('nenhuma etiqueta é uma frase, ninguém procura frases',
     e.every((t) => t.split(' ').length <= 5), e.filter((t) => t.split(' ').length > 5).join(' | '));
   ok('nenhuma etiqueta acaba a meio de uma palavra', e.every((t) => t.length < 60));
   /**
@@ -204,7 +204,7 @@ console.log('\n4. O AVISO DOS 70% (ordem do dono, 06/08)');
   ok('exatamente 70% conta como bom (a régua é "abaixo de")', r.acima.some((x) => x.slug === 'na-risca'));
   /**
    * 🔴 A TRAVA QUE IMPEDE UM ALARME QUE DISPARA SEMPRE. Um vídeo com 3 visualizações e
-   * 30% não diz nada — bastou uma pessoa fechar cedo. Sem isto, o aviso acendia em quase
+   * 30% não diz nada, bastou uma pessoa fechar cedo. Sem isto, o aviso acendia em quase
    * todos os vídeos do canal e ninguém o leria ao fim de duas semanas.
    */
   ok('🔴 um vídeo com 3 visualizações NÃO é julgado', r.semAudiencia.some((x) => x.slug === 'poucas-views'));
@@ -213,14 +213,14 @@ console.log('\n4. O AVISO DOS 70% (ordem do dono, 06/08)');
   ok('a régua combinada com o dono são 70%', RETENCAO_MINIMA === 0.70);
   ok('uma lista vazia não rebenta', avaliarRetencao([]).abaixo.length === 0 && avaliarRetencao(null).abaixo.length === 0);
   /**
-   * ⚠️ Em Shorts a percentagem **pode passar de 100%** — o vídeo repete em ciclo e quem
+   * ⚠️ Em Shorts a percentagem **pode passar de 100%**, o vídeo repete em ciclo e quem
    * revê conta outra vez. É o melhor sinal que existe, e o aviso não o pode confundir
    * com um erro.
    */
   ok('passar dos 100% é BOM, não é erro', avaliarRetencao([v('viral', 1.3, 500)]).acima.length === 1);
 }
 
-console.log('\n5. AS PLAYLISTS — a prateleira certa, escolhida por tabela');
+console.log('\n5. AS PLAYLISTS, a prateleira certa, escolhida por tabela');
 
 {
   const nomes = (texto) => prateleirasDoVideo(texto).map((p) => p.titulo);
@@ -233,7 +233,7 @@ console.log('\n5. AS PLAYLISTS — a prateleira certa, escolhida por tabela');
   ok('um de inflação vai para "Entender o dinheiro"',
     nomes('Inflação: 3 erros que te custam caro')[0] === 'Entender o dinheiro');
   /**
-   * ⚠️ **TUDO ENTRA NA PRATELEIRA GERAL**, sem exceção — é ela que a tela final do vídeo
+   * ⚠️ **TUDO ENTRA NA PRATELEIRA GERAL**, sem exceção, é ela que a tela final do vídeo
    * longo vai apontar, e uma prateleira com buracos manda o espectador para o vazio.
    */
   ok('e TODOS entram também na prateleira geral',
@@ -245,7 +245,7 @@ console.log('\n5. AS PLAYLISTS — a prateleira certa, escolhida por tabela');
     nomes('divida do cartao')[0] === 'Sair das dívidas');
   /**
    * 🔴 A PROVA QUE APANHOU UM DEFEITO NO PRIMEIRO MINUTO: **"inflação" contém "ação"**, e
-   * o vídeo sobre inflação ia parar à prateleira dos investimentos — sem nada a queixar-se.
+   * o vídeo sobre inflação ia parar à prateleira dos investimentos, sem nada a queixar-se.
    * Um termo só conta quando COMEÇA uma palavra.
    */
   ok('🔴 "inflação" não é confundido com "ações"',
@@ -277,7 +277,7 @@ console.log('\n6. A OPORTUNIDADE DO DONO (ordem dele, 06/08)');
 
   /**
    * 🔴 **O TÍTULO DO VÍDEO LONGO É EXIGIDO, e recusar aqui vale uma semana.** O robô que
-   * publica recusa-se a subir um vídeo longo sem título aprovado — *"um título mau é a
+   * publica recusa-se a subir um vídeo longo sem título aprovado, *"um título mau é a
    * coisa mais cara que este canal pode pôr no ar"*. Sem esta trava, o tema entrava na
    * fila e a corrida de sábado de madrugada falhava, com o dono a dormir.
    */
@@ -293,7 +293,7 @@ console.log('\n6. A OPORTUNIDADE DO DONO (ordem dele, 06/08)');
     conferirOportunidade({ formato: 'longo', tema: 'uma ideia qualquer aqui', titulo: 'x'.repeat(80) }).length > 0);
 
   /**
-   * 🔴 A MARCA GANHA À PONTUAÇÃO. A tentação era somar 100 pontos ao tema do dono — mas
+   * 🔴 A MARCA GANHA À PONTUAÇÃO. A tentação era somar 100 pontos ao tema do dono, mas
    * um bónus é uma aposta: basta a pontuação de outro subir e a escolha dele fica para
    * trás **sem ninguém dar por nada**. Havendo dois, ganha o mais antigo.
    */
@@ -322,15 +322,15 @@ console.log('\n6. A OPORTUNIDADE DO DONO (ordem dele, 06/08)');
  * não fosse letra, e a vírgula desaparecia). Reprovou 2 das 4 tentativas por causa dele,
  * o Short do dia morreu e o canal ficou sem vídeo.
  *
- * ⚠️ Estas provas LANÇAM `validarNarrativa` — o MESMO caminho que o robô lança. É a
+ * ⚠️ Estas provas LANÇAM `validarNarrativa`, o MESMO caminho que o robô lança. É a
  * lição que este repositório já pagou duas vezes: prova que não corre o comando de
  * verdade não apanha o defeito de verdade.
  *
  * Filtra-se só o erro da conta: as narrativas de mesa aqui em baixo não tentam ser
- * roteiros válidos (não têm capa-pergunta, nem bordão, nem tamanho), e é de propósito —
+ * roteiros válidos (não têm capa-pergunta, nem bordão, nem tamanho), e é de propósito , 
  * o que se mede é a leitura dos números, não o resto.
  */
-console.log('\n8. OS NÚMEROS DA NARRAÇÃO — o que a trava lê antes de reprovar');
+console.log('\n8. OS NÚMEROS DA NARRAÇÃO, o que a trava lê antes de reprovar');
 
 {
   const errosDeConta = (frases, { tema = '', apoio = '', ficha = null } = {}) => {
@@ -339,7 +339,7 @@ console.log('\n8. OS NÚMEROS DA NARRAÇÃO — o que a trava lê antes de repro
     return (v.erros || []).filter((e) => /conta de rendimento/.test(e));
   };
 
-  // 🔴 O DEFEITO QUE MATOU O SHORT DE 07/08 — a enumeração somada.
+  // 🔴 O DEFEITO QUE MATOU O SHORT DE 07/08, a enumeração somada.
   ok('🔴 "um, cinco e dez anos" NÃO vira o número 16',
     errosDeConta(['Poupança, Tesouro Direto e CDB seguem caminhos diferentes quando você olha um, cinco e dez anos.']).length === 0,
     errosDeConta(['Poupança, Tesouro Direto e CDB seguem caminhos diferentes quando você olha um, cinco e dez anos.'])[0]);
@@ -348,15 +348,15 @@ console.log('\n8. OS NÚMEROS DA NARRAÇÃO — o que a trava lê antes de repro
   ok('"em dez anos" é prazo, não é uma promessa de rendimento',
     errosDeConta(['O Tesouro rende mais em dez anos.']).length === 0);
 
-  // 🔴 O NÚMERO DO PRÓPRIO TÍTULO. Outra trava OBRIGA o arranque a dizer o assunto —
+  // 🔴 O NÚMERO DO PRÓPRIO TÍTULO. Outra trava OBRIGA o arranque a dizer o assunto , 
   // se o assunto tem um valor, esta não pode castigar quem o diz.
   ok('🔴 o valor que está no TÍTULO pode ser dito na fala',
-    errosDeConta(['Com três mil reais, você pode começar a investir.'], { tema: 'Ganho R$ 3 mil por mês — como investir?' }).length === 0,
-    errosDeConta(['Com três mil reais, você pode começar a investir.'], { tema: 'Ganho R$ 3 mil por mês — como investir?' })[0]);
+    errosDeConta(['Com três mil reais, você pode começar a investir.'], { tema: 'Ganho R$ 3 mil por mês, como investir?' }).length === 0,
+    errosDeConta(['Com três mil reais, você pode começar a investir.'], { tema: 'Ganho R$ 3 mil por mês, como investir?' })[0]);
 
   // ⚠️ E A TRAVA CONTINUA A TRAVAR. Sem esta, os três consertos acima seriam um buraco.
   ok('mas um valor que NÃO está em fonte nenhuma continua a reprovar',
-    errosDeConta(['Você investe e isso vira oitenta mil reais.'], { tema: 'Ganho R$ 3 mil por mês — como investir?' }).length === 1);
+    errosDeConta(['Você investe e isso vira oitenta mil reais.'], { tema: 'Ganho R$ 3 mil por mês, como investir?' }).length === 1);
 
   // O numeral composto tem de continuar a ser lido INTEIRO (o defeito de 03/08).
   ok('"dois mil seiscentos e noventa e nove" continua a ser UM número, e bate com a ficha',
@@ -370,43 +370,43 @@ console.log('\n8. OS NÚMEROS DA NARRAÇÃO — o que a trava lê antes de repro
  * ═══ A REPESCAGEM DO FIM DA TARDE (07/08/2026) ═══
  * Em 06/08 o vídeo estava pronto e guardado na fila, e mesmo assim o canal ficou dois
  * dias sem Short: o carteiro das 12h nunca recebeu máquina do GitHub. A segunda ronda
- * existe para isso — e a pergunta que ela faz tem de estar certa nos dois sentidos: se
+ * existe para isso, e a pergunta que ela faz tem de estar certa nos dois sentidos: se
  * hoje já saiu, ela NÃO pode publicar de novo.
  */
-console.log('\n9. A REPESCAGEM — a segunda ronda do carteiro');
+console.log('\n9. A REPESCAGEM, a segunda ronda do carteiro');
 
 {
   const tracking = {
     'a': { uploadedAt: '2026-08-05T16:25:56.346Z' },
     'b': { uploadedAt: '2026-08-07T15:02:11.000Z' },
   };
-  ok('vê que hoje JÁ saiu vídeo — e a repescagem fica quieta',
+  ok('vê que hoje JÁ saiu vídeo, e a repescagem fica quieta',
     jaSaiuVideoNoDia('2026-08-07', tracking) === true);
-  ok('🔴 vê o dia em que NÃO saiu nada — e a repescagem entrega',
+  ok('🔴 vê o dia em que NÃO saiu nada, e a repescagem entrega',
     jaSaiuVideoNoDia('2026-08-06', tracking) === false);
   ok('tracking vazio conta como "não saiu"', jaSaiuVideoNoDia('2026-08-07', {}) === false);
   ok('e um registo sem data não engana a conta',
     jaSaiuVideoNoDia('2026-08-07', { c: { videoId: 'x' } }) === false);
-  // ♦ 05/10/2026 — conta o dia em que vai ao AR (publishAt), não o do envio.
+  // ♦ 05/10/2026, conta o dia em que vai ao AR (publishAt), não o do envio.
   const agendado = { d: { uploadedAt: '2026-10-05T16:00:00.000Z', publishAt: '2026-10-06T15:00:00.000Z' } };
   ok('🔴 vídeo enviado hoje mas que só estreia amanhã NÃO serve o dia de hoje',
     jaSaiuVideoNoDia('2026-10-05', agendado) === false);
-  ok('e serve o dia de amanhã — a repescagem de amanhã fica quieta',
+  ok('e serve o dia de amanhã, a repescagem de amanhã fica quieta',
     jaSaiuVideoNoDia('2026-10-06', agendado) === true);
 }
 
 /**
- * ═══ A CHAMADA DA FALA — a que passou a servir OITO redes (07/08/2026) ═══
+ * ═══ A CHAMADA DA FALA, a que passou a servir OITO redes (07/08/2026) ═══
  *
  * 🔴 **O QUE MUDOU E PORQUÊ.** Até aqui a fala pedia *"comenta FINMOOVI"*, e isso era
  * verdade em dois sítios: no Instagram (a automação manda mensagem privada) e no YouTube
  * (`src/scripts/youtube/comentarios.js` responde no próprio comentário, de hora a hora,
  * porque no YouTube não existe mensagem privada). A partir de hoje o MESMO ficheiro sai
- * também em TikTok, Facebook, LinkedIn, Threads, Telegram, Pinterest e Bluesky — **sete
+ * também em TikTok, Facebook, LinkedIn, Threads, Telegram, Pinterest e Bluesky, **sete
  * sítios onde ninguém responde.** Quem comentasse não recebia nada.
  *
- * ✅ A decisão do dono (IMPL26 §12-A): a FALA fica neutra — *"quer ver o seu? procura
- * FinMoovi, é de graça"* — e o "comenta FINMOOVI" passa a viver só na LEGENDA do
+ * ✅ A decisão do dono (IMPL26 §12-A): a FALA fica neutra, *"quer ver o seu? procura
+ * FinMoovi, é de graça"*, e o "comenta FINMOOVI" passa a viver só na LEGENDA do
  * Instagram e do YouTube. Funciona porque as duas automações disparam pelo COMENTÁRIO,
  * não pelo áudio: elas nem sabem o que o vídeo disse.
  *
@@ -414,11 +414,11 @@ console.log('\n9. A REPESCAGEM — a segunda ronda do carteiro');
  * TikTok o endereço escrito na legenda **não é clicável**. Mandar procurar é a única
  * frase que continua verdadeira nas nove.
  */
-console.log('\n10. A CHAMADA DA FALA — uma só, verdadeira nas oito redes');
+console.log('\n10. A CHAMADA DA FALA, uma só, verdadeira nas oito redes');
 
 {
   // Só os erros DESTA regra: as narrativas de mesa aqui em baixo não tentam ser roteiros
-  // válidos (não têm capa-pergunta, nem bordão, nem tamanho) — é de propósito.
+  // válidos (não têm capa-pergunta, nem bordão, nem tamanho), é de propósito.
   const AGULHA = /manda clicar em link|não diz o nome FinMoovi|sai em oito redes/;
   const errosDaChamada = (convite, resto = {}) => {
     const blocos = Array.from({ length: 6 }, (_, i) => ({ papel: '', fala: resto[i] || 'enchimento.' }));
@@ -427,7 +427,7 @@ console.log('\n10. A CHAMADA DA FALA — uma só, verdadeira nas oito redes');
   };
 
   /**
-   * 🔑 A PROVA QUE CRUZA O PROMPT COM A TRAVA — a mesma que o vídeo longo já tinha.
+   * 🔑 A PROVA QUE CRUZA O PROMPT COM A TRAVA, a mesma que o vídeo longo já tinha.
    * O molde sai do PRÓPRIO prompt, não de uma cópia escrita aqui: é a única forma de os
    * dois nunca divergirem. Se alguém mudar o molde lá e esquecer a trava (ou o contrário),
    * esta prova fica vermelha. É o defeito nº 1 deste repositório, medido 16 vezes.
@@ -439,7 +439,7 @@ console.log('\n10. A CHAMADA DA FALA — uma só, verdadeira nas oito redes');
     Boolean(molde) && errosDaChamada(molde).length === 0,
     errosDaChamada(molde)[0]);
 
-  // 🔴 O QUE DEIXOU DE PODER — a promessa que sete redes não cumpririam.
+  // 🔴 O QUE DEIXOU DE PODER, a promessa que sete redes não cumpririam.
   ok('🔴 "Comenta FINMOOVI aqui embaixo" reprova',
     errosDaChamada('Comenta FINMOOVI aqui embaixo que eu te mando o app.').length === 1);
   // 🔴 E a frase que parece a solução óbvia, mas é falsa no Instagram e no TikTok.
@@ -459,7 +459,7 @@ console.log('\n10. A CHAMADA DA FALA — uma só, verdadeira nas oito redes');
 
   /**
    * 🔴 UMA PALAVRA, UM ERRO. O fecho já tinha uma trava que barrava "comentário"; com a
-   * nova, a mesma palavra acendia DOIS erros com explicações diferentes — e é assim que
+   * nova, a mesma palavra acendia DOIS erros com explicações diferentes, e é assim que
    * nasce o pêndulo (o modelo conserta uma queixa e parte a outra). Por isso "coment*"
    * saiu da lista do fecho.
    */
@@ -482,17 +482,17 @@ console.log('\n10. A CHAMADA DA FALA — uma só, verdadeira nas oito redes');
     /OITO redes/.test(prompt));
 }
 
-// ═══ 🔴 O TEMPO DE TELA DO APP CONSERTA-SE, EM VEZ DE MATAR O DIA — 12/08/2026 ═══
+// ═══ 🔴 O TEMPO DE TELA DO APP CONSERTA-SE, EM VEZ DE MATAR O DIA, 12/08/2026 ═══
 /**
  * ⚠️ **O DIA QUE ISTO CUSTOU.** Corrida 31576147535: quatro tentativas em TRÊS temas,
- * doze ao todo, todas mortas no mesmo muro — *"app «calculadora» segura só ~2,3s de
+ * doze ao todo, todas mortas no mesmo muro, *"app «calculadora» segura só ~2,3s de
  * tela (mínimo 2,5s)"*. Dois décimos de segundo, e o canal sem Short novo.
  *
  * ⚠️ **ESTAS PROVAS SÃO DE COMPORTAMENTO.** Constroem um plano com o defeito, chamam o
  * conserto e voltam a medir com o **validador de produção**. Uma prova que procurasse a
  * palavra "esticar" no ficheiro ficaria verde com o conserto a não fazer nada.
  */
-console.log('\n⏱️  O TEMPO DE TELA DO APP — conserta-se em vez de reprovar\n');
+console.log('\n⏱️  O TEMPO DE TELA DO APP, conserta-se em vez de reprovar\n');
 {
   const NARRATIVA = {
     fioCondutor: 'ralo',
@@ -509,7 +509,7 @@ console.log('\n⏱️  O TEMPO DE TELA DO APP — conserta-se em vez de reprovar
   const shot = (n, visual, sfx) => (sfx ? { ancoraIndice: n, visual, sfx } : { ancoraIndice: n, visual });
   /**
    * O bloco da demonstração com a tela do app **espremida**: ela entra na palavra 1 e o
-   * shot seguinte entra logo na 2 — exactamente a forma do defeito de hoje.
+   * shot seguinte entra logo na 2, exactamente a forma do defeito de hoje.
    */
   const planoDoente = () => ({
     introFrase: 'Você paga o mínimo?',
@@ -556,19 +556,19 @@ console.log('\n⏱️  O TEMPO DE TELA DO APP — conserta-se em vez de reprovar
       === JSON.stringify(antesRoteiro.scenes.map((s) => s.shots.length)));
 
   /**
-   * 🔴 **O MOVIMENTO TEM DE SER O MENOR QUE RESOLVE — e é isto que protege o vídeo.**
+   * 🔴 **O MOVIMENTO TEM DE SER O MENOR QUE RESOLVE, e é isto que protege o vídeo.**
    *
    * Empurrar o shot seguinte para o fim da fala dava tela ao app **e deixava o shot
    * seguinte a piscar**: nenhuma regra pune um shot de texto curto, portanto o total de
    * erros não subia e o conserto passaria por bom. O que impede isso é os candidatos
    * serem tentados **por ordem, do menor para o maior**, ficando com o primeiro que
-   * resolve. Sem esta prova, essa ordem é uma intenção — com ela, é uma regra.
+   * resolve. Sem esta prova, essa ordem é uma intenção, com ela, é uma regra.
    */
   {
     const { plano: curado } = esticarTelaDoApp(T, NARRATIVA, planoDoente(), validateShortScript);
     const parou = Number(curado.blocos[3].shots[1].ancoraIndice);
     /**
-     * ⚠️ **A MINHA 1ª VERSÃO DESTA PROVA ESTAVA ERRADA** — media se "vindo de mais perto
+     * ⚠️ **A MINHA 1ª VERSÃO DESTA PROVA ESTAVA ERRADA**, media se "vindo de mais perto
      * mexe menos", e o destino é ABSOLUTO: a palavra onde os 2,5s se cumprem é a mesma,
      * venha-se de onde se vier. A propriedade certa é esta: **um passo antes ainda não
      * resolvia.** É a terceira vez hoje que uma prova minha reprova código bom.
@@ -578,7 +578,7 @@ console.log('\n⏱️  O TEMPO DE TELA DO APP — conserta-se em vez de reprovar
     const aindaFalha = validateShortScript(montarRoteiro(T, NARRATIVA, umPassoAntes))
       .errors.some((e) => /segura só ~/.test(e));
     ok('🔴 e parou no MENOR movimento que resolve (um passo antes ainda falhava)',
-      aindaFalha, `parou em ${parou}; em ${parou - 1} ${aindaFalha ? 'ainda falhava' : 'JÁ CHEGAVA — mexeu de mais'}`);
+      aindaFalha, `parou em ${parou}; em ${parou - 1} ${aindaFalha ? 'ainda falhava' : 'JÁ CHEGAVA, mexeu de mais'}`);
     ok('e nunca atira o shot seguinte para o fim da fala (ele ficaria a piscar)',
       parou < palavrasAncoraveis(NARRATIVA.blocos[3].fala).length,
       `${parou} de ${palavrasAncoraveis(NARRATIVA.blocos[3].fala).length} palavras`);
@@ -596,15 +596,15 @@ console.log('\n⏱️  O TEMPO DE TELA DO APP — conserta-se em vez de reprovar
     nenhum.length === 0 && JSON.stringify(sao) === saoAntes, nenhum.join(' · '));
 }
 
-// ═══ 🛟 O GUARDIÃO DA PRODUÇÃO — 12/08/2026 ═══════════════════════════════════
+// ═══ 🛟 O GUARDIÃO DA PRODUÇÃO, 12/08/2026 ═══════════════════════════════════
 /**
  * ⚠️ **A REPESCAGEM QUE JÁ EXISTIA É DA ENTREGA, NÃO DA PRODUÇÃO.** Em 12/08 a fábrica
  * não produziu nada e a repescagem das 17h não tinha o que entregar. Estas provas
  * guardam a segunda ronda de PRODUÇÃO, e sobretudo o alinhamento entre o horário dela
- * e a guarda que a trava — o defeito que já mordeu no Short de 16s: *um formato novo
+ * e a guarda que a trava, o defeito que já mordeu no Short de 16s: *um formato novo
  * desligava a rede de segurança do outro, em silêncio.*
  */
-console.log('\n🛟 O GUARDIÃO DA PRODUÇÃO — a segunda ronda, e o que a impede de duplicar\n');
+console.log('\n🛟 O GUARDIÃO DA PRODUÇÃO, a segunda ronda, e o que a impede de duplicar\n');
 {
   const wf = readFileSync(join(RAIZ, '.github', 'workflows', 'youtube-short-render.yml'), 'utf-8');
   const crons = [...wf.matchAll(/^\s*-\s*cron:\s*'([^']+)'/gm)].map((m) => m[1]);
@@ -626,7 +626,7 @@ console.log('\n🛟 O GUARDIÃO DA PRODUÇÃO — a segunda ronda, e o que a imp
     /produzido-hoje\)" = "sim" \]; then[\s\S]{0,220}skip=true/.test(wf));
   /**
    * ⚠️ **A ORDEM IMPORTA:** a pergunta tem de vir ANTES de escolher o tema. Depois de
-   * `pick-next-short` a fila já se mexeu — e um dia normal gastaria um tema à toa.
+   * `pick-next-short` a fila já se mexeu, e um dia normal gastaria um tema à toa.
    */
   ok('🔴 e pergunta ANTES de escolher o tema (senão a fila mexe-se num dia normal)',
     wf.indexOf('produzido-hoje') < wf.indexOf('pick-next-short.js'));
@@ -640,7 +640,7 @@ console.log('\n🛟 O GUARDIÃO DA PRODUÇÃO — a segunda ronda, e o que a imp
   ok('⚠️ e com a fila VAZIA responde que não (é o caso do dia que falhou)',
     produziuNoDia(HOJE, []) === false);
   /**
-   * ⚠️ **O CASO QUE ENGANA:** a fila tem um vídeo — mas é o de ONTEM, que sobrou. O dia
+   * ⚠️ **O CASO QUE ENGANA:** a fila tem um vídeo, mas é o de ONTEM, que sobrou. O dia
    * está coberto para a entrega e a fábrica continua parada. Foi exactamente isto que
    * aconteceu em 12/08, e é por isto que esta pergunta olha o `producedAt` e não "a
    * fila tem alguma coisa".
@@ -649,16 +649,16 @@ console.log('\n🛟 O GUARDIÃO DA PRODUÇÃO — a segunda ronda, e o que a imp
     produziuNoDia(HOJE, [{ fileSlug: 'viral-jc7rFQLtrJg', producedAt: '2026-08-11T07:53:35.075Z' }]) === false);
 }
 
-// ═══ 📅 PRIVADO, COM A HORA MARCADA — 12/08/2026 ══════════════════════════════
+// ═══ 📅 PRIVADO, COM A HORA MARCADA, 12/08/2026 ══════════════════════════════
 /**
  * Ordem do dono: *"quero que ele entre como privado e agendado nos horários corretos…
  * mas não podemos correr o risco de ficar vídeo sem ser postado"*.
  *
  * ⚠️ **AS DUAS METADES DESTAS PROVAS SÃO DIFERENTES.** Uma guarda que o agendamento
- * ACONTECE; a outra guarda que ele **desiste a tempo** — porque o cron do GitHub atrasa,
+ * ACONTECE; a outra guarda que ele **desiste a tempo**, porque o cron do GitHub atrasa,
  * e uma hora marcada que já passou deixaria o vídeo privado para sempre.
  */
-console.log('\n📅 O ENVIO PRIVADO COM HORA MARCADA — e a trava que nunca deixa um vídeo por publicar\n');
+console.log('\n📅 O ENVIO PRIVADO COM HORA MARCADA, e a trava que nunca deixa um vídeo por publicar\n');
 {
   const AGORA = new Date('2026-08-12T12:00:00.000Z');
 
@@ -670,11 +670,11 @@ console.log('\n📅 O ENVIO PRIVADO COM HORA MARCADA — e a trava que nunca dei
 
   /**
    * 🔴 **A TRAVA QUE VALE O VÍDEO DO DIA.** O cron do GitHub já atrasou 112 minutos nesta
-   * casa. Se a ronda das 12:00 só arrancar depois das 15:00, a hora marcada JÁ PASSOU —
+   * casa. Se a ronda das 12:00 só arrancar depois das 15:00, a hora marcada JÁ PASSOU , 
    * e o YouTube recusa um `publishAt` no passado. Sem isto, o vídeo ficava privado para
    * sempre com a corrida a VERDE.
    */
-  // ♦ 05/10/2026 — a hora que já passou deixou de ser "público na hora": é AMANHÃ, à
+  // ♦ 05/10/2026, a hora que já passou deixou de ser "público na hora": é AMANHÃ, à
   // mesma hora. O cron chega 3 a 8h atrasado e a regra antiga nunca deixou estrear nada.
   const jaPassou = estreiaMarcada('15:00', new Date('2026-08-12T15:20:00.000Z'));
   ok('🔴 se a hora JÁ PASSOU, estreia AMANHÃ à mesma hora (nunca fica por publicar)',
@@ -684,7 +684,7 @@ console.log('\n📅 O ENVIO PRIVADO COM HORA MARCADA — e a trava que nunca dei
     emCima.estreia && emCima.estreia.toISOString() === '2026-08-13T15:00:00.000Z', emCima.porque);
   /**
    * 🔴 NUNCA DUAS ESTREIAS NA MESMA HORA. Se o cron de amanhã chegar a horas, a hora de
-   * hoje dá — mas já tem o vídeo marcado ontem. Marcar por cima deixava o dia seguinte vazio.
+   * hoje dá, mas já tem o vídeo marcado ontem. Marcar por cima deixava o dia seguinte vazio.
    */
   const ocupado = estreiaMarcada('15:00', AGORA, ['2026-08-12T15:00:00.000Z']);
   ok('🔴 hora de hoje já marcada por outro vídeo → anda para amanhã',
@@ -700,7 +700,7 @@ console.log('\n📅 O ENVIO PRIVADO COM HORA MARCADA — e a trava que nunca dei
     livre.estreia && livre.estreia.toISOString() === '2026-08-12T15:00:00.000Z', livre.porque);
   /**
    * ⚠️ **MAS 40 MINUTOS AINDA SE AGENDA.** Quarenta minutos de aviso ao YouTube é melhor
-   * do que nenhum — só se desiste quando a hora está mesmo em cima. Uma trava que
+   * do que nenhum, só se desiste quando a hora está mesmo em cima. Uma trava que
    * desistisse cedo de mais deitava fora o que o dono pediu.
    */
   const apertado = estreiaMarcada('15:00', new Date('2026-08-12T14:20:00.000Z'));
@@ -717,7 +717,7 @@ console.log('\n📅 O ENVIO PRIVADO COM HORA MARCADA — e a trava que nunca dei
     agendado.status.privacyStatus === 'private' && agendado.status.publishAt === '2026-08-12T15:00:00.000Z',
     JSON.stringify(agendado.status));
   const publico = buildMetadata(cruo, scriptFalso);
-  ok('⚠️ e sem hora marcada NADA muda — sobe público, como desde 03/08',
+  ok('⚠️ e sem hora marcada NADA muda, sobe público, como desde 03/08',
     publico.status.privacyStatus === 'public' && !('publishAt' in publico.status),
     JSON.stringify(publico.status));
 
@@ -743,10 +743,10 @@ console.log('\n📅 O ENVIO PRIVADO COM HORA MARCADA — e a trava que nunca dei
 /**
  * **É a armadilha desta casa, e já mordeu hoje de manhã no guardião da produção.** Três
  * coisas separadas guardam a mesma hora: o `cron`, o `case` que reconhece o turno, e a
- * hora que vai marcada no upload. Mudar uma sem as outras não dá erro nenhum — dá um
+ * hora que vai marcada no upload. Mudar uma sem as outras não dá erro nenhum, dá um
  * turno inválido, ou um vídeo agendado para a hora errada.
  */
-console.log('\n🕐 OS HORÁRIOS — o cron, o turno e a estreia têm de bater\n');
+console.log('\n🕐 OS HORÁRIOS, o cron, o turno e a estreia têm de bater\n');
 {
   const wf16 = readFileSync(join(RAIZ, '.github', 'workflows', 'youtube-short16-publish.yml'), 'utf-8');
   const crons16 = [...wf16.matchAll(/^\s*-\s*cron:\s*'([^']+)'/gm)].map((m) => m[1]);
@@ -780,7 +780,7 @@ console.log('\n🕐 OS HORÁRIOS — o cron, o turno e a estreia têm de bater\n
   // ── o guardião do agendado está nos dois, e antes do npm ci ──
   /**
    * ⚠️ **A MINHA 1ª VERSÃO DESTA PROVA MEDIA O MEU PRÓPRIO COMENTÁRIO.** Ela procurava
-   * `npm ci` no ficheiro — e o comentário que explica *"corre ANTES do npm ci"* aparece
+   * `npm ci` no ficheiro, e o comentário que explica *"corre ANTES do npm ci"* aparece
    * antes do passo. Ficou vermelha com o workflow certo. Agora compara os PASSOS: o nome
    * de um contra o `run:` do outro.
    */
@@ -792,20 +792,20 @@ console.log('\n🕐 OS HORÁRIOS — o cron, o turno e a estreia têm de bater\n
   }
 }
 
-// ═══ 🔴 O GUARDA DO CANAL NÃO PODE ACUSAR UM SHORT AGENDADO — 12/08/2026 ══════
+// ═══ 🔴 O GUARDA DO CANAL NÃO PODE ACUSAR UM SHORT AGENDADO, 12/08/2026 ══════
 /**
  * **Apanhado a rever o trabalho, e teria dado um alarme falso todos os dias.**
  *
- * A regra do guarda dizia `v.formato === 'longo' && v.publishAt && …` — certa enquanto só
+ * A regra do guarda dizia `v.formato === 'longo' && v.publishAt && …`, certa enquanto só
  * o longo estreava com hora marcada. No dia em que os Shorts passaram a subir privados,
  * um Short à espera da sua hora caía no *"todo o resto já devia estar no ar"* e era
  * acusado de ter **saído do ar**. O guarda corre às 08:10 e o de 16s sobe às 08:40:
- * bastava o cron atrasar meia hora — e já atrasou 112 minutos.
+ * bastava o cron atrasar meia hora, e já atrasou 112 minutos.
  *
  * ⚠️ **É a família de defeito nº1 desta casa: regra velha a correr em estrutura nova.**
- * E o estrago não seria um incómodo — um alarme falso ensina quem o lê a ignorá-lo.
+ * E o estrago não seria um incómodo, um alarme falso ensina quem o lê a ignorá-lo.
  */
-console.log('\n🛡️  O GUARDA DO CANAL — um Short agendado não é um Short que saiu do ar\n');
+console.log('\n🛡️  O GUARDA DO CANAL, um Short agendado não é um Short que saiu do ar\n');
 {
   const AGORA = new Date('2026-08-12T09:00:00.000Z').getTime();
   const short = (extra) => ({ slug: 's16', formato: 'short16', videoId: 'vvv', ...extra });
@@ -830,7 +830,7 @@ console.log('\n🛡️  O GUARDA DO CANAL — um Short agendado não é um Short
 
   /**
    * ⚠️ **E O ALARME VERDADEIRO CONTINUA A DISPARAR.** Um Short que subiu público (sem
-   * hora marcada) e está privado saiu mesmo do ar — afrouxar isto seria trocar um alarme
+   * hora marcada) e está privado saiu mesmo do ar, afrouxar isto seria trocar um alarme
    * falso por uma cegueira.
    */
   ok('🔴 Short SEM hora marcada e privado → alarma (esse saiu mesmo do ar)',
@@ -846,6 +846,26 @@ console.log('\n🛡️  O GUARDA DO CANAL — um Short agendado não é um Short
       [short({ publishAt: '2026-08-12T08:40:00.000Z' })],
       { vvv: { privacidade: 'public', estreia: null } }, AGORA,
     ).length === 0);
+
+  /**
+   * 🔴 01/11/2026: o guarda conferiu 10s depois da estreia e gritou "saiu do ar".
+   * O vídeo abriu sozinho minutos depois. Folga de 15 min, só com a estreia ainda marcada.
+   */
+  ok('🔴 10s depois da estreia, ainda privado e marcado → NÃO alarma (está a abrir)',
+    conferirEstados(
+      [short({ publishAt: '2026-08-12T08:59:50.000Z' })],
+      { vvv: { privacidade: 'private', estreia: '2026-08-12T08:59:50.000Z' } }, AGORA,
+    ).length === 0);
+  ok('mas 10s depois e SEM estreia marcada, alarma (caiu mesmo)',
+    conferirEstados(
+      [short({ publishAt: '2026-08-12T08:59:50.000Z' })],
+      { vvv: { privacidade: 'private', estreia: null } }, AGORA,
+    ).some((a) => /saiu do ar/.test(a)));
+  ok('e 20 min depois, mesmo marcado, já tem de estar público',
+    conferirEstados(
+      [short({ publishAt: '2026-08-12T08:40:00.000Z' })],
+      { vvv: { privacidade: 'private', estreia: '2026-08-12T08:40:00.000Z' } }, AGORA,
+    ).some((a) => /saiu do ar/.test(a)));
 
   ok('⚠️ e o vídeo LONGO continua a ser tratado como sempre',
     conferirEstados(
