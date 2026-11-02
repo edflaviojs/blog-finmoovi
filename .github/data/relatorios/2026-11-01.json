@@ -1,17 +1,17 @@
 {
-  "date": "2026-09-22",
+  "date": "2026-11-01",
   "counts": {
     "content": 3,
-    "videos": 1,
+    "videos": 3,
     "pins": 0,
     "failures": 1,
-    "runs": 53
+    "runs": 42
   },
   "failures": [
     {
-      "name": "YouTube — Produzir Shorts de 16s em loop (2 por dia)",
-      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/35710164583",
-      "timeLisbon": "10:24"
+      "name": "YouTube — Guarda do canal (diário)",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/41318928706",
+      "timeLisbon": "14:59"
     }
   ],
   "content": [
@@ -19,313 +19,290 @@
       "label": "Glossário",
       "route": "glossario",
       "locale": "en",
-      "slug": "en-xetra",
-      "url": "https://blog.finmoovi.com/en/glossario/en-xetra",
-      "title": "Xetra - Financial Glossary",
-      "description": "What Xetra is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi.",
+      "slug": "en-pension",
+      "url": "https://blog.finmoovi.com/en/glossario/en-pension",
+      "title": "Pension - Financial Glossary",
+      "description": "What Pension is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi.",
       "category": "basico",
-      "publishedAt": "2026-09-22"
-    },
-    {
-      "label": "Glossário",
-      "route": "glossario",
-      "locale": "es",
-      "slug": "es-xetra",
-      "url": "https://blog.finmoovi.com/es/glossario/es-xetra",
-      "title": "Xetra - Glosario Financiero",
-      "description": "Qué es Xetra y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi.",
-      "category": "basico",
-      "publishedAt": "2026-09-22"
+      "publishedAt": "2026-11-01"
     },
     {
       "label": "Glossário",
       "route": "glossario",
       "locale": "pt",
-      "slug": "xetra",
-      "url": "https://blog.finmoovi.com/glossario/xetra",
-      "title": "xetra - Glossário Financeiro",
-      "description": "O que é xetra e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi.",
+      "slug": "previdencia",
+      "url": "https://blog.finmoovi.com/glossario/previdencia",
+      "title": "previdência - Glossário Financeiro",
+      "description": "O que é previdência e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi.",
       "category": "basico",
-      "publishedAt": "2026-09-22"
+      "publishedAt": "2026-11-01"
+    },
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "es",
+      "slug": "es-prevision",
+      "url": "https://blog.finmoovi.com/es/glossario/es-prevision",
+      "title": "previsión - Glosario Financiero",
+      "description": "Qué es previsión y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi.",
+      "category": "basico",
+      "publishedAt": "2026-11-01"
     }
   ],
   "videos": [
     {
-      "slug": "controle-de-gastos-whatsapp",
-      "videoId": "BbVPe__Xnrw",
-      "uploadedAt": "2026-09-22T16:00:26.185Z",
-      "title": "WHATSAPP: como evitar que o dinheiro desapareça",
+      "slug": "loop-aposentadoria-por-conta-se-parar",
+      "videoId": "hPOR6Gpp_5k",
+      "uploadedAt": "2026-11-01T15:27:13.144Z",
+      "title": "APOSENTADORIA R$ 180 que faltou na minha conta",
+      "formato": "loop16",
+      "publishAt": "2026-11-02T11:40:00.000Z",
+      "timeLisbon": "15:27"
+    },
+    {
+      "slug": "mercado-de-capitais",
+      "videoId": "MU5yDdMXJsU",
+      "uploadedAt": "2026-11-01T17:27:03.110Z",
+      "title": "CAPITAIS explicado em 1 minuto",
       "formato": "short50",
-      "timeLisbon": "17:00"
+      "publishAt": "2026-11-02T15:00:00.000Z",
+      "timeLisbon": "17:27"
+    },
+    {
+      "slug": "loop-cheque-especial-ta-perdendo",
+      "videoId": "fS0k-WkRbNU",
+      "uploadedAt": "2026-11-01T22:22:36.379Z",
+      "title": "ESPECIAL: R$ 210 perdidos no cheque especial",
+      "formato": "loop16",
+      "publishAt": "2026-11-02T21:40:00.000Z",
+      "timeLisbon": "22:22"
     }
   ],
   "pins": [],
   "runsSummary": [
     {
-      "name": "YouTube — Responder aos comentários (FINMOOVI)",
-      "count": 6,
-      "ok": 6,
-      "fail": 0,
-      "firstTimeLisbon": "00:25"
-    },
-    {
       "name": "Capas — varrer (e refazer) as que têm letras ou estão borradas",
       "count": 1,
       "ok": 1,
       "fail": 0,
-      "firstTimeLisbon": "02:03"
+      "firstTimeLisbon": "01:23"
     },
     {
-      "name": "IndexNow (indexação instantânea Bing/Copilot)",
+      "name": "YouTube — Responder aos comentários (FINMOOVI)",
       "count": 4,
       "ok": 4,
       "fail": 0,
-      "firstTimeLisbon": "03:36"
+      "firstTimeLisbon": "02:23"
+    },
+    {
+      "name": "IndexNow (indexação instantânea Bing/Copilot)",
+      "count": 3,
+      "ok": 3,
+      "fail": 0,
+      "firstTimeLisbon": "03:31"
     },
     {
       "name": "Redes — Caixa de entrada dos comentários (3× por dia)",
       "count": 3,
       "ok": 3,
       "fail": 0,
-      "firstTimeLisbon": "06:58"
+      "firstTimeLisbon": "07:15"
     },
     {
       "name": "YouTube — Detetive de tendências (diário)",
       "count": 1,
       "ok": 1,
       "fail": 0,
-      "firstTimeLisbon": "09:54"
+      "firstTimeLisbon": "10:54"
     },
     {
-      "name": "i18n Gate (PR Check)",
-      "count": 2,
-      "ok": 2,
+      "name": "Broken Link Building",
+      "count": 1,
+      "ok": 1,
       "fail": 0,
-      "firstTimeLisbon": "09:55"
-    },
-    {
-      "name": "Gerar Conteúdo Social",
-      "count": 2,
-      "ok": 2,
-      "fail": 0,
-      "firstTimeLisbon": "09:55"
+      "firstTimeLisbon": "11:04"
     },
     {
       "name": "YouTube — Produzir Shorts de 16s em loop (2 por dia)",
       "count": 1,
-      "ok": 0,
-      "fail": 1,
-      "firstTimeLisbon": "10:24"
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "11:24"
     },
     {
       "name": "Sincronizar i18n (auto-corretor PT/EN/ES)",
       "count": 1,
       "ok": 1,
       "fail": 0,
-      "firstTimeLisbon": "10:34"
+      "firstTimeLisbon": "11:36"
     },
     {
       "name": "Fact Firewall (anti-alucinacao)",
       "count": 1,
       "ok": 1,
       "fail": 0,
-      "firstTimeLisbon": "10:36"
+      "firstTimeLisbon": "11:39"
     },
     {
       "name": "Consumo dos serviços pagos",
       "count": 1,
       "ok": 1,
       "fail": 0,
-      "firstTimeLisbon": "10:52"
+      "firstTimeLisbon": "11:46"
     },
     {
       "name": "Digest Diario de Conteudo (7h Lisboa)",
       "count": 2,
       "ok": 2,
       "fail": 0,
-      "firstTimeLisbon": "11:19"
+      "firstTimeLisbon": "12:01"
     },
     {
       "name": "Gerar ALT descritivo das imagens (IA de visão)",
       "count": 1,
       "ok": 1,
       "fail": 0,
-      "firstTimeLisbon": "12:07"
+      "firstTimeLisbon": "12:48"
     },
     {
       "name": "YouTube — Renderizar Short (completo)",
       "count": 2,
       "ok": 2,
       "fail": 0,
-      "firstTimeLisbon": "12:52"
-    },
-    {
-      "name": "Glossário Financeiro",
-      "count": 1,
-      "ok": 1,
-      "fail": 0,
-      "firstTimeLisbon": "13:18"
-    },
-    {
-      "name": "GSC - Otimizar CTR (titulo/meta)",
-      "count": 1,
-      "ok": 1,
-      "fail": 0,
-      "firstTimeLisbon": "13:18"
+      "firstTimeLisbon": "13:38"
     },
     {
       "name": "Community Monitor",
       "count": 1,
       "ok": 1,
       "fail": 0,
-      "firstTimeLisbon": "13:19"
+      "firstTimeLisbon": "14:00"
+    },
+    {
+      "name": "Year Refresh (anos defasados em títulos)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "14:14"
     },
     {
       "name": "Sazonal Multimercado (timezone)",
       "count": 1,
       "ok": 1,
       "fail": 0,
-      "firstTimeLisbon": "13:52"
+      "firstTimeLisbon": "14:33"
     },
     {
       "name": "GSC - Monitor de Indexacao",
       "count": 1,
       "ok": 1,
       "fail": 0,
-      "firstTimeLisbon": "13:53"
+      "firstTimeLisbon": "14:34"
     },
     {
       "name": "YouTube — Guarda do canal (diário)",
       "count": 1,
-      "ok": 1,
-      "fail": 0,
-      "firstTimeLisbon": "14:21"
+      "ok": 0,
+      "fail": 1,
+      "firstTimeLisbon": "14:59"
     },
     {
       "name": "Multipost — Vigia das redes (diário)",
       "count": 1,
       "ok": 1,
       "fail": 0,
-      "firstTimeLisbon": "14:27"
-    },
-    {
-      "name": "Fix i18n Content (Daily Batch)",
-      "count": 1,
-      "ok": 1,
-      "fail": 0,
-      "firstTimeLisbon": "14:35"
+      "firstTimeLisbon": "15:15"
     },
     {
       "name": "YouTube — Publicar Shorts de 16s (9h e 19h BR)",
       "count": 2,
       "ok": 2,
       "fail": 0,
-      "firstTimeLisbon": "14:39"
+      "firstTimeLisbon": "15:26"
     },
     {
       "name": "Gerar Dicas Financeiras",
       "count": 1,
       "ok": 1,
       "fail": 0,
-      "firstTimeLisbon": "14:45"
+      "firstTimeLisbon": "15:32"
     },
     {
-      "name": "SEO Monitor Semanal",
+      "name": "Auto Update Posts Antigos",
       "count": 1,
       "ok": 1,
       "fail": 0,
-      "firstTimeLisbon": "14:59"
-    },
-    {
-      "name": "Gerar Post Inteligente (Analytics-driven)",
-      "count": 1,
-      "ok": 1,
-      "fail": 0,
-      "firstTimeLisbon": "15:13"
+      "firstTimeLisbon": "15:40"
     },
     {
       "name": "Glossário Diário Automático",
       "count": 1,
       "ok": 1,
       "fail": 0,
-      "firstTimeLisbon": "16:11"
+      "firstTimeLisbon": "16:55"
     },
     {
       "name": "Multipost — Entregar os Shorts de 16s às 7 redes",
       "count": 2,
       "ok": 2,
       "fail": 0,
-      "firstTimeLisbon": "16:17"
+      "firstTimeLisbon": "16:57"
     },
     {
       "name": "YouTube — Publicar Short (horário nobre)",
       "count": 2,
       "ok": 2,
       "fail": 0,
-      "firstTimeLisbon": "16:59"
+      "firstTimeLisbon": "17:26"
+    },
+    {
+      "name": "Keep Alive",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "17:41"
     },
     {
       "name": "Welcome Email Sequence",
       "count": 1,
       "ok": 1,
       "fail": 0,
-      "firstTimeLisbon": "17:43"
+      "firstTimeLisbon": "17:50"
     },
     {
       "name": "Regenerar capas antigas do glossário (estilo 3D)",
       "count": 1,
       "ok": 1,
       "fail": 0,
-      "firstTimeLisbon": "18:10"
-    },
-    {
-      "name": "Sindicação Extra (Hashnode + Tumblr + Blogger)",
-      "count": 1,
-      "ok": 1,
-      "fail": 0,
-      "firstTimeLisbon": "18:27"
-    },
-    {
-      "name": "Syndicate Content & Send Pingbacks",
-      "count": 1,
-      "ok": 1,
-      "fail": 0,
-      "firstTimeLisbon": "18:58"
+      "firstTimeLisbon": "18:01"
     },
     {
       "name": "Multipost — Entregar o Short às 8 redes (a partir das 19h BR)",
       "count": 1,
       "ok": 1,
       "fail": 0,
-      "firstTimeLisbon": "19:56"
-    },
-    {
-      "name": "YouTube — Medir retenção dos Shorts",
-      "count": 1,
-      "ok": 1,
-      "fail": 0,
-      "firstTimeLisbon": "22:52"
+      "firstTimeLisbon": "19:43"
     },
     {
       "name": "Vigia do ar (o site tem tudo o que o repo tem?)",
       "count": 1,
       "ok": 1,
       "fail": 0,
-      "firstTimeLisbon": "23:27"
+      "firstTimeLisbon": "23:10"
     }
   ],
   "emails": [
     {
       "name": "Digest Diario de Conteudo (7h Lisboa)",
-      "timeLisbon": "11:19"
+      "timeLisbon": "12:01"
     },
     {
       "name": "Digest Diario de Conteudo (7h Lisboa)",
-      "timeLisbon": "13:01"
+      "timeLisbon": "13:45"
     },
     {
       "name": "Welcome Email Sequence",
-      "timeLisbon": "17:43"
+      "timeLisbon": "17:50"
     }
   ],
   "pendencias": [
@@ -339,6 +316,15 @@
     "Upgrade Pinterest p/ cadência diária? Avaliar analytics ~07/08"
   ],
   "agenda": [
+    {
+      "name": "IndexNow (indexação instantânea Bing/Copilot)",
+      "times": [
+        "00:00",
+        "06:00",
+        "12:00",
+        "18:00"
+      ]
+    },
     {
       "name": "YouTube — Responder aos comentários (FINMOOVI)",
       "times": [
@@ -369,94 +355,105 @@
       ]
     },
     {
-      "name": "IndexNow (indexação instantânea Bing/Copilot)",
+      "name": "Redes — Caixa de entrada dos comentários (3× por dia)",
       "times": [
         "01:00",
-        "07:00",
-        "13:00",
+        "15:00",
         "19:00"
       ]
     },
     {
-      "name": "Redes — Caixa de entrada dos comentários (3× por dia)",
+      "name": "YouTube — Vídeo longo (semanal)",
       "times": [
         "02:00",
-        "16:00",
-        "20:00"
+        "12:00",
+        "18:00"
       ]
     },
     {
       "name": "YouTube — Detetive de tendências (diário)",
       "times": [
-        "05:00"
+        "04:00"
       ]
     },
     {
       "name": "YouTube — Produzir Shorts de 16s em loop (2 por dia)",
       "times": [
-        "05:30"
+        "04:30"
       ]
     },
     {
       "name": "Fact Firewall (anti-alucinacao)",
       "times": [
-        "06:00"
+        "05:00"
       ]
     },
     {
       "name": "Sincronizar i18n (auto-corretor PT/EN/ES)",
       "times": [
-        "06:00"
+        "05:00"
       ]
     },
     {
-      "name": "YouTube — Converter Keywords em Temas (semanal)",
+      "name": "Sweep de Traduções (lang-guard)",
       "times": [
-        "06:00"
+        "05:00"
       ]
     },
     {
       "name": "Consumo dos serviços pagos",
       "times": [
-        "06:10"
+        "05:10"
       ]
     },
     {
       "name": "Digest Diario de Conteudo (7h Lisboa)",
       "times": [
-        "06:40",
-        "07:40"
-      ]
-    },
-    {
-      "name": "Brand Mention Monitor",
-      "times": [
-        "07:00"
+        "05:40",
+        "06:40"
       ]
     },
     {
       "name": "Gerar ALT descritivo das imagens (IA de visão)",
       "times": [
-        "07:00",
-        "10:00",
-        "12:00"
+        "06:00",
+        "09:00",
+        "11:00"
+      ]
+    },
+    {
+      "name": "YouTube — Posts da semana (e-mail de segunda)",
+      "times": [
+        "06:17"
       ]
     },
     {
       "name": "YouTube — Renderizar Short (completo)",
       "times": [
-        "07:30",
-        "12:00"
+        "06:30",
+        "11:00"
       ]
     },
     {
       "name": "Community Monitor",
       "times": [
+        "07:00"
+      ]
+    },
+    {
+      "name": "GSC - Digest de Oportunidades",
+      "times": [
+        "07:00"
+      ]
+    },
+    {
+      "name": "Atualizar Estatísticas",
+      "times": [
         "08:00"
       ]
     },
     {
-      "name": "GSC - Impulso Striking Distance",
+      "name": "Gerar Arte Sazonal (candidatos p/ aprovação)",
       "times": [
         "08:00"
       ]
@@ -464,112 +461,142 @@
     {
       "name": "GSC - Monitor de Indexacao",
       "times": [
-        "09:00"
+        "08:00"
+      ]
+    },
+    {
+      "name": "Monitor de Visibilidade em IA",
+      "times": [
+        "08:00"
       ]
     },
     {
       "name": "Sazonal Multimercado (timezone)",
       "times": [
-        "09:00"
+        "08:00"
+      ]
+    },
+    {
+      "name": "YouTube — Medir retenção dos Shorts",
+      "times": [
+        "08:00"
       ]
     },
     {
       "name": "YouTube — Guarda do canal (diário)",
       "times": [
-        "09:10"
+        "08:10"
       ]
     },
     {
       "name": "Multipost — Vigia das redes (diário)",
       "times": [
-        "09:20"
+        "08:20"
       ]
     },
     {
       "name": "Fix i18n Content (Daily Batch)",
       "times": [
-        "09:30"
+        "08:30"
       ]
     },
     {
       "name": "YouTube — Publicar Shorts de 16s (9h e 19h BR)",
       "times": [
-        "09:40",
-        "19:40"
+        "08:40",
+        "18:40"
       ]
     },
     {
       "name": "Gerar Dicas Financeiras",
       "times": [
-        "10:00"
+        "09:00"
       ]
     },
     {
-      "name": "Post Investimentos Semanal",
+      "name": "Cotações Semanal",
       "times": [
         "10:00"
       ]
     },
     {
-      "name": "Gerar Post Soluções FinMoovi",
+      "name": "Detect BR-only Posts (Weekly)",
       "times": [
-        "12:00"
+        "10:00"
       ]
     },
     {
       "name": "Glossário Diário Automático",
       "times": [
-        "12:00"
+        "11:00"
       ]
     },
     {
       "name": "Multipost — Entregar os Shorts de 16s às 7 redes",
       "times": [
-        "12:00",
-        "15:40"
+        "11:00",
+        "14:40"
+      ]
+    },
+    {
+      "name": "Relatório Semanal de Analytics",
+      "times": [
+        "11:00"
+      ]
+    },
+    {
+      "name": "Post Orçamento Semanal",
+      "times": [
+        "12:00"
       ]
     },
     {
       "name": "Welcome Email Sequence",
       "times": [
-        "13:00"
+        "12:00"
       ]
     },
     {
       "name": "YouTube — Publicar Short (horário nobre)",
       "times": [
-        "13:00",
-        "21:00"
+        "12:00",
+        "20:00"
       ]
     },
     {
       "name": "Regenerar capas antigas do glossário (estilo 3D)",
       "times": [
-        "13:30"
+        "12:30"
+      ]
+    },
+    {
+      "name": "Newsletter Digest Semanal",
+      "times": [
+        "13:00"
       ]
     },
     {
       "name": "Social Distribution (Pinterest + Bookmarks)",
       "times": [
-        "16:00"
+        "15:00"
       ]
     },
     {
       "name": "Multipost — Entregar o Short às 8 redes (a partir das 19h BR)",
       "times": [
-        "16:20"
+        "15:20"
       ]
     },
     {
       "name": "Vigia do ar (o site tem tudo o que o repo tem?)",
       "times": [
-        "21:00"
+        "20:00"
       ]
     },
     {
       "name": "Capas — varrer (e refazer) as que têm letras ou estão borradas",
       "times": [
-        "23:30"
+        "22:30"
       ]
     }
   ]
