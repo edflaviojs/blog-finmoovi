@@ -1,7 +1,7 @@
 # 🗂️ Fila de Keywords (Fase 3)
 
-**Atualizado em:** 2026-10-26T13:41:23.051Z
-**Totais:** 73 pendente(s) · 113 usada(s) · 60 pulada(s)
+**Atualizado em:** 2026-11-02T16:40:05.959Z
+**Totais:** 74 pendente(s) · 118 usada(s) · 60 pulada(s)
 
 ## ⏳ Pendentes por fonte
 
@@ -52,13 +52,8 @@
 - o que levar para comer na praia para economizar
 - por que é importante economizar energia elétrica
 
-### Lacunas do GSC (prioridade 2) — 29
+### Lacunas do GSC (prioridade 2) — 30
 
-- gastos recurrentes definicion
-- mobills alternative
-- conversor de moedas online
-- calcular juro composto
-- simulador sac price
 - calculadora parcelamento price
 - calculo de juros composto online
 - conversor de moeda online
@@ -83,6 +78,12 @@
 - financial risk
 - investir na bolsa simulador
 - patrimonio
+- fondos inmobiliarios
+- plan salud
+- valoración
+- plan de salud definicion
+- yuan
+- renminbi
 
 ### Autocomplete (prioridade 3) — 0
 
@@ -92,16 +93,16 @@ _Nenhuma._
 
 | Keyword | Usada por | Em |
 |---|---|---|
+| simulador sac price | gerar-dicas-financeiras | 2026-10-31 |
+| calcular juro composto | gerar-dicas-financeiras | 2026-10-29 |
+| conversor de moedas online | gerar-dicas-financeiras | 2026-10-28 |
+| mobills alternative | gerar-post-orcamento | 2026-10-26 |
+| gastos recurrentes definicion | gerar-dicas-financeiras | 2026-10-26 |
 | mortgage | gerar-dicas-financeiras | 2026-10-23 |
 | debenture | gerar-dicas-financeiras | 2026-10-22 |
 | calculadora tabela sac | gerar-post-investimentos | 2026-10-21 |
 | tudo sobre investimentos | gerar-dicas-financeiras | 2026-10-12 |
 | calculadora sac price | gerar-dicas-financeiras | 2026-10-11 |
-| calculadora tabela price | gerar-dicas-financeiras | 2026-10-08 |
-| gasto recurrente | gerar-post-investimentos | 2026-10-07 |
-| google finance alternative | gerar-dicas-financeiras | 2026-09-27 |
-| parcelados | gerar-dicas-financeiras | 2026-09-25 |
-| gastos recurrentes | gerar-dicas-financeiras | 2026-09-24 |
 
 ## ⏭️ Puladas (já cobertas)
 

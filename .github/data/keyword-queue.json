@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-01T16:56:05.440Z",
+  "updatedAt": "2026-11-02T16:40:05.959Z",
   "sourceCursor": 1,
   "entries": [
     {
@@ -2412,6 +2412,54 @@
       "source": "gsc-gap",
       "status": "pending",
       "addedAt": "2026-10-26T13:41:22.489Z"
+    },
+    {
+      "keyword": "fondos inmobiliarios",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-11-02T16:40:05.388Z"
+    },
+    {
+      "keyword": "plan salud",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-11-02T16:40:05.388Z"
+    },
+    {
+      "keyword": "valoración",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-11-02T16:40:05.388Z"
+    },
+    {
+      "keyword": "plan de salud definicion",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-11-02T16:40:05.388Z"
+    },
+    {
+      "keyword": "yuan",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-11-02T16:40:05.388Z"
+    },
+    {
+      "keyword": "renminbi",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-11-02T16:40:05.388Z"
     }
   ]
 }
