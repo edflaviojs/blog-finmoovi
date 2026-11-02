@@ -6214,6 +6214,21 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-11-01"
+    },
+    "previdencia-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-02"
+    },
+    "previdencia-inline-3.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"Smile\")",
+      "em": "2026-11-02"
+    },
+    "previdencia.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-02"
     }
   },
   "corrigidas": {
@@ -6876,8 +6891,12 @@
     "como-organizar-pagamentos-recorrentes-e-ganhar-tranquilidade-4.webp": {
       "em": "2026-09-22",
       "motivo": "tem texto escrito (\"I'm sorry, I'm not able to identify the people in this image.\")"
+    },
+    "previdencia-inline-3.webp": {
+      "em": "2026-11-02",
+      "motivo": "tem texto escrito (\"Smile\")"
     }
   },
-  "totalAcervo": 1243,
-  "ultimaCorrida": "2026-11-01"
+  "totalAcervo": 1246,
+  "ultimaCorrida": "2026-11-02"
 }
