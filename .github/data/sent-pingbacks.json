@@ -3664,5 +3664,89 @@
     "target": "https://www.investopedia.com",
     "status": "no-endpoint",
     "sentAt": "2026-10-29T19:25:52.095Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/categorizacao-automatica-de-gastos-com-ia-como-deixar-suas/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-11-03T20:26:25.621Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/como-fazer-seu-dinheiro-crescer-sem-esforco-em-2026/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-11-03T20:26:25.643Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/como-manter-sua-planilha-de-gastos-sempre-atualizada-sem/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-11-03T20:26:25.665Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/como-usar-um-conversor-de-moedas-online-e-nao-se-perder-nas/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-11-03T20:26:25.688Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/como-usar-um-simulador-de-emprestimo-para-planejar-seu/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-11-03T20:26:25.713Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/en-how-to-grow-your-money-effortlessly-in-2026/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-11-03T20:26:25.733Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/en-how-to-keep-your-expense-spreadsheet-up-to-date-effortlessly/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-11-03T20:26:25.755Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/en-how-to-use-a-loan-simulator-to-plan-your-financial-future-in/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-11-03T20:26:25.780Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/en-how-to-use-an-online-currency-converter-without-getting-lost/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-11-03T20:26:25.804Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/es-categorizacion-automatica-de-gastos-con-ia-ordena-tus/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-11-03T20:26:25.824Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/es-como-hacer-que-tu-dinero-crezca-sin-esfuerzo-en-2026/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-11-03T20:26:25.844Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/es-como-mantener-tu-hoja-de-gastos-siempre-actualizada-sin/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-11-03T20:26:25.875Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/es-como-usar-un-conversor-de-divisas-online-y-no-perder-el/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-11-03T20:26:25.897Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/es-como-usar-un-simulador-de-prestamo-para-planificar-tu-futuro/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-11-03T20:26:25.918Z"
   }
 ]
