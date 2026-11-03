@@ -4,6 +4,7 @@ definition: "Qué es quick ratio y cómo aparece en tu día a día — explicado
 title: "quick ratio - Glosario Financiero"
 description: "Qué es quick ratio y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/quick-ratio.webp"
+imageAlt: "Monedas doradas, gráfico ascendente y planta en frasco de vidrio sobre pedestal oscuro."
 category: "basico"
 tags: ["quick ratio", "glosario", "finanzas"]
 author: "FinMoovi"

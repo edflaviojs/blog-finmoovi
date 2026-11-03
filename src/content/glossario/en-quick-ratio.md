@@ -4,6 +4,7 @@ definition: "What quick ratio is and how it shows up in your everyday money — 
 title: "quick ratio - Financial Glossary"
 description: "What quick ratio is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/quick-ratio.webp"
+imageAlt: "Stacks of gold coins, orange bar chart, and glass jar with plant on dark base."
 category: "basico"
 tags: ["quick ratio", "glossary", "finance"]
 author: "FinMoovi"

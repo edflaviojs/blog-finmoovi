@@ -2,6 +2,7 @@
 title: "Resumen Semanal: Dólar a R$ 5.44 — Semana 1 de noviembre"
 description: "Resumen semanal del mercado financiero: dólar, euro, Selic y consejos para inversores. Semana 1 de noviembre 2026."
 image: "/images/posts/cotacoes-semana-2026-11-02.webp"
+imageAlt: "Calculadora, monedas, libros marrones y plantas verdes sobre superficie de mármol blanco."
 category: "cotacoes"
 tags: ["cotizaciones","dólar","euro","mercado financiero","selic"]
 author: "FinMoovi"
