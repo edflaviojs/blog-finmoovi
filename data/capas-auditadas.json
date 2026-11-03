@@ -6229,6 +6229,41 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-11-02"
+    },
+    "cotacoes-semana-1-novembro-2026-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-03"
+    },
+    "cotacoes-semana-1-novembro-2026-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-03"
+    },
+    "cotacoes-semana-2026-11-02.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-03"
+    },
+    "es-cotizaciones-semana-1-noviembre-2026-inline-3.webp": {
+      "reprovada": true,
+      "motivo": "borrada segundo a IA de visão (nitidez local 850)",
+      "em": "2026-11-03"
+    },
+    "quick-ratio-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-03"
+    },
+    "quick-ratio-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-03"
+    },
+    "quick-ratio.webp": {
+      "reprovada": true,
+      "motivo": "borrada segundo a IA de visão (nitidez local 1252)",
+      "em": "2026-11-03"
     }
   },
   "corrigidas": {
@@ -6895,8 +6930,16 @@
     "previdencia-inline-3.webp": {
       "em": "2026-11-02",
       "motivo": "tem texto escrito (\"Smile\")"
+    },
+    "es-cotizaciones-semana-1-noviembre-2026-inline-3.webp": {
+      "em": "2026-11-03",
+      "motivo": "borrada segundo a IA de visão (nitidez local 850)"
+    },
+    "quick-ratio.webp": {
+      "em": "2026-11-03",
+      "motivo": "borrada segundo a IA de visão (nitidez local 1252)"
     }
   },
-  "totalAcervo": 1246,
-  "ultimaCorrida": "2026-11-02"
+  "totalAcervo": 1253,
+  "ultimaCorrida": "2026-11-03"
 }
