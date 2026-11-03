@@ -343,7 +343,7 @@
         "gasto fixo e variável",
         "organizar finanças pessoais"
       ],
-      "estado": "proposto",
+      "estado": "publicado",
       "viralRef": {
         "videoId": "SaNSC2rMP7o",
         "title": "5 NEGÓCIOS PARA COMEÇAR EM 2027 DE CASA E COM POUCO DINHEIRO!",
@@ -354,7 +354,9 @@
           "uma palavra em maiúsculas a marcar o tom"
         ]
       },
-      "propostoEm": "2026-10-25T08:49:48.518Z"
+      "propostoEm": "2026-10-25T08:49:48.518Z",
+      "publicadoEm": "2026-11-03T01:29:09.694Z",
+      "videoId": "tcG4xylilRc"
     }
   ]
 }

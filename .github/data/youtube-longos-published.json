@@ -144,9 +144,15 @@
     ]
   },
   "controle-gastos-passos-para": {
-    "estado": "reservado",
+    "videoId": "tcG4xylilRc",
+    "uploadedAt": "2026-11-03T01:29:09.694Z",
     "publishAt": "2026-11-08T22:00:00.000Z",
-    "reservadoEm": "2026-11-03T00:52:04.405Z",
-    "corrida": "41555817617"
+    "titulo": "Controle de gastos em 5 passos para sobrar dinheiro sem largar o lazer",
+    "capitulos": 7,
+    "legendas": [
+      "pt",
+      "en",
+      "es"
+    ]
   }
 }
