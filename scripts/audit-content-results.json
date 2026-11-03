@@ -1,5 +1,29 @@
 [
   {
+    "file": "en-quotes-week-1-november-2026.md",
+    "dir": "posts",
+    "severity": 3,
+    "issues": {
+      "currency": 7,
+      "brInstitutions": [],
+      "brProducts": [
+        "CDB",
+        "Selic"
+      ],
+      "geoRefs": [],
+      "ptWordsCount": 6,
+      "brBrands": [],
+      "brAcronyms": [
+        "IPCA"
+      ],
+      "ptLeftovers": [
+        "ações",
+        "investimentos",
+        "valor"
+      ]
+    }
+  },
+  {
     "file": "en-quotes-week-4-october-2026.md",
     "dir": "posts",
     "severity": 3,
@@ -20,6 +44,27 @@
       "ptLeftovers": [
         "reais"
       ]
+    }
+  },
+  {
+    "file": "es-cotizaciones-semana-1-noviembre-2026.md",
+    "dir": "posts",
+    "severity": 3,
+    "issues": {
+      "currency": 6,
+      "brInstitutions": [],
+      "brProducts": [
+        "Tesouro Direto",
+        "CDB",
+        "Selic"
+      ],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "IPCA"
+      ],
+      "ptLeftovers": []
     }
   },
   {
@@ -77,6 +122,26 @@
         "LCA"
       ],
       "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-quick-ratio.md",
+    "dir": "glossario",
+    "severity": 2,
+    "issues": {
+      "currency": 4,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "ação",
+        "dívidas",
+        "investimentos",
+        "valor"
+      ]
     }
   },
   {
@@ -9961,6 +10026,21 @@
   },
   {
     "file": "es-puntaje-de-credito.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-quick-ratio.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
