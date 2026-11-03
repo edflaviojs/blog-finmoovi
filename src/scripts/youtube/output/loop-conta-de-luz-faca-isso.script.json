@@ -1,0 +1,118 @@
+{
+  "slug": "loop-conta-de-luz-faca-isso",
+  "formato": "loop16",
+  "term": "A conta de luz do verão",
+  "category": "vida",
+  "keyword": "LUZ",
+  "valor": "R$ 420",
+  "situacao": "conta-de-luz",
+  "gancho": "faca-isso",
+  "ganchoFamilia": "faça isso",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ralo",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se você quer fugir do susto, FAÇA ISSO. Comigo foi a luz.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "fugir",
+          "visual": {
+            "type": "statement",
+            "text": "Quer fugir do susto?"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "susto",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Abri o envelope. Quatrocentos e vinte reais Foi pelo ralo.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "envelope",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "Quatrocentos",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 420 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Olha, agora a gente lá em casa desliga da tomada.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "desliga",
+          "visual": {
+            "type": "statement",
+            "text": "Desligo da tomada"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "tomada",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Então, se você quer fugir do susto, faça isso antes.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "fugir",
+          "visual": {
+            "type": "statement",
+            "text": "Faça isso antes"
+          }
+        },
+        {
+          "anchor": "susto",
+          "visual": {
+            "type": "statement",
+            "text": "Quer fugir do susto?"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}

@@ -1000,5 +1000,11 @@
     "gancho": "faca-isso",
     "turno": "manha",
     "em": "2026-11-03T12:11:16.831Z"
+  },
+  {
+    "situacao": "conta-de-luz",
+    "gancho": "faca-isso",
+    "turno": "noite",
+    "em": "2026-11-03T12:18:57.200Z"
   }
 ]
