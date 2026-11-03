@@ -1,11 +1,5 @@
 [
   {
-    "fileSlug": "mercado-financeiro",
-    "runId": "41202896788",
-    "producedAt": "2026-10-31T13:13:51.065Z",
-    "artifact": "short-mercado-financeiro"
-  },
-  {
     "fileSlug": "mercado-de-capitais",
     "runId": "41312250381",
     "producedAt": "2026-11-01T14:00:11.900Z",
