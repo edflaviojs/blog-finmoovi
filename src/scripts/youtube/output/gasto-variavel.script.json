@@ -1,0 +1,204 @@
+{
+  "slug": "gasto-variavel",
+  "term": "gasto variável",
+  "category": "basico",
+  "keyword": "variável",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Sabe quanto o seu *gasto variável* leva do seu salário todo mês?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "balde-furado",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Sabe quanto o seu gasto variável leva do seu salário todo mês? Quase ninguém sabe. E é por aí que o dinheiro escapa.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "gasto",
+          "visual": {
+            "type": "statement",
+            "text": "Gasto variável: quanto é?"
+          }
+        },
+        {
+          "anchor": "Quase",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          },
+          "sfx": "whoosh"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Um café, um lanche na correria, um pedido de entrega, um presente de última hora. Ninguém olha, porque cada um parece pouco.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "café",
+          "visual": {
+            "type": "icon",
+            "icon": "coins"
+          }
+        },
+        {
+          "anchor": "pedido",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "Ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "Ninguém olha"
+          }
+        },
+        {
+          "anchor": "parece",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Só que o café custa quinze, o lanche oito, a entrega quarenta. Faz isso todo dia, e no fim do mês a conta cresce sozinha.",
+      "durationSec": 9.6,
+      "shots": [
+        {
+          "anchor": "quinze",
+          "visual": {
+            "type": "number",
+            "text": "R$ 15"
+          }
+        },
+        {
+          "anchor": "oito",
+          "visual": {
+            "type": "number",
+            "text": "R$ 8"
+          }
+        },
+        {
+          "anchor": "quarenta",
+          "visual": {
+            "type": "number",
+            "text": "R$ 40"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "cresce",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu lancei tudo no FinMoovi e ele juntou numa linha só, alimentação fora de casa. Deu seiscentos reais num mês.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "extrato",
+            "note": "gastos juntos na linha alimentação fora de casa"
+          }
+        },
+        {
+          "anchor": "seiscentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 600"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "O gasto variável leva o que você nunca anotou. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 6.2,
+      "shots": [
+        {
+          "anchor": "nunca",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Sem controle, não é seu"
+          },
+          "sfx": "thud"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Descubra quanto você gasta sem ver",
+    "target": "app"
+  },
+  "totalDurationSec": 44.6
+}
