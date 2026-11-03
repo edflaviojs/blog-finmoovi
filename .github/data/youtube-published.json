@@ -1715,5 +1715,12 @@
     "title": "VARIÁVEL: descubra quanto gasta no mês",
     "formato": "short50",
     "publishAt": "2026-11-04T15:00:00.000Z"
+  },
+  "loop-fatura-maior-depois-de-anos": {
+    "videoId": "22IuNxBt22s",
+    "uploadedAt": "2026-11-03T23:39:02.585Z",
+    "title": "FATURA: R$ 1.900 que sumiu sem aviso",
+    "formato": "loop16",
+    "publishAt": "2026-11-04T21:40:00.000Z"
   }
 }
