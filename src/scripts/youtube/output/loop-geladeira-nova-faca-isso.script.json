@@ -1,0 +1,118 @@
+{
+  "slug": "loop-geladeira-nova-faca-isso",
+  "formato": "loop16",
+  "term": "Trocar a geladeira",
+  "category": "vida",
+  "keyword": "GELADEIRA",
+  "valor": "R$ 2.600",
+  "situacao": "geladeira-nova",
+  "gancho": "faca-isso",
+  "ganchoFamilia": "faça isso",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ratoeira",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se você quer dormir em paz, FAÇA ISSO. Minha geladeira roncava de madrugada.",
+      "durationSec": 4.49,
+      "shots": [
+        {
+          "anchor": "dormir",
+          "visual": {
+            "type": "statement",
+            "text": "Geladeira roncando?"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "geladeira",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Fingi que não ouvi. Comprei às pressas. Dois mil e seiscentos reais",
+      "durationSec": 4.15,
+      "shots": [
+        {
+          "anchor": "Fingi",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "Comprei",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 2.600 de uma vez"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Olha, o barulho avisava. Agora eu escuto.",
+      "durationSec": 2.42,
+      "shots": [
+        {
+          "anchor": "barulho",
+          "visual": {
+            "type": "statement",
+            "text": "O barulho avisava"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "avisava",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Se você quer dormir em paz, escuta o barulhinho antes de pifar.",
+      "durationSec": 4.15,
+      "shots": [
+        {
+          "anchor": "dormir",
+          "visual": {
+            "type": "statement",
+            "text": "Escuta antes de pifar"
+          }
+        },
+        {
+          "anchor": "escuta",
+          "visual": {
+            "type": "statement",
+            "text": "Geladeira roncando?"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.21
+}
