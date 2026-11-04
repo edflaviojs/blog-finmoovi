@@ -4,6 +4,7 @@ definition: "Qué es robo advisor y cómo aparece en tu día a día — explicad
 title: "robo advisor - Glosario Financiero"
 description: "Qué es robo advisor y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/robo-advisor.webp"
+imageAlt: "Pilas de monedas doradas, planta verde en frasco y flecha ascendente sobre fondo morado."
 category: "basico"
 tags: ["robo advisor", "glosario", "finanzas"]
 author: "FinMoovi"
