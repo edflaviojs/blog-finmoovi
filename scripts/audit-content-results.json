@@ -4610,6 +4610,21 @@
     }
   },
   {
+    "file": "en-robo-advisor.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-sac-amortization-table.md",
     "dir": "glossario",
     "severity": 0,
@@ -10236,6 +10251,21 @@
   },
   {
     "file": "es-riesgo-financiero.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-robo-advisor.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
