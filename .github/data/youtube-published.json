@@ -1736,5 +1736,12 @@
     "title": "CONTA: 3 erros que custam R$200",
     "formato": "short50",
     "publishAt": "2026-11-05T15:00:00.000Z"
+  },
+  "loop-saque-no-cartao-aconteceu-comigo": {
+    "videoId": "Vn_RXRtgUI4",
+    "uploadedAt": "2026-11-04T23:54:45.021Z",
+    "title": "SAQUE: R$ 60 perdidos no caixa à noite",
+    "formato": "loop16",
+    "publishAt": "2026-11-05T21:40:00.000Z"
   }
 }
