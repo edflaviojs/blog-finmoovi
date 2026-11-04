@@ -6264,6 +6264,21 @@
       "reprovada": true,
       "motivo": "borrada segundo a IA de visão (nitidez local 1252)",
       "em": "2026-11-03"
+    },
+    "robo-advisor-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-04"
+    },
+    "robo-advisor-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-04"
+    },
+    "robo-advisor.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-04"
     }
   },
   "corrigidas": {
@@ -6940,6 +6955,6 @@
       "motivo": "borrada segundo a IA de visão (nitidez local 1252)"
     }
   },
-  "totalAcervo": 1253,
-  "ultimaCorrida": "2026-11-03"
+  "totalAcervo": 1256,
+  "ultimaCorrida": "2026-11-04"
 }
