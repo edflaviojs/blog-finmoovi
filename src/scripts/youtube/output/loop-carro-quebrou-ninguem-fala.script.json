@@ -1,0 +1,118 @@
+{
+  "slug": "loop-carro-quebrou-ninguem-fala",
+  "formato": "loop16",
+  "term": "O carro quebrou no meio do mês",
+  "category": "vida",
+  "keyword": "CARRO",
+  "valor": "R$ 1.200",
+  "situacao": "carro-quebrou",
+  "gancho": "ninguem-fala",
+  "ganchoFamilia": "ninguém fala",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "domino",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Ninguém fala isso sobre carro parado, mas é real. Comigo.",
+      "durationSec": 3.53,
+      "shots": [
+        {
+          "anchor": "Ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "Carro quebrou no meio do mês"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "carro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "domino"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "O mecânico disse. Mil e duzentos reais Eu quase sentei no chão.",
+      "durationSec": 4.24,
+      "shots": [
+        {
+          "anchor": "mecânico",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "domino"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "disse",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 1.200 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Aí a luz atrasou, e uma coisa derrubou a outra.",
+      "durationSec": 3.53,
+      "shots": [
+        {
+          "anchor": "atrasou",
+          "visual": {
+            "type": "statement",
+            "text": "Uma conta derrubou a outra"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "coisa",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "domino"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Carro parado no meio do mês, ninguém fala, mas é real.",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "Carro",
+          "visual": {
+            "type": "statement",
+            "text": "Ninguém fala, mas é real"
+          }
+        },
+        {
+          "anchor": "parado",
+          "visual": {
+            "type": "statement",
+            "text": "Carro quebrou no meio do mês"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.19
+}
