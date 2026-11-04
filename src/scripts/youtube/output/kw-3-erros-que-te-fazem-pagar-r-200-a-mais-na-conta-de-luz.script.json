@@ -1,0 +1,221 @@
+{
+  "slug": "kw-3-erros-que-te-fazem-pagar-r-200-a-mais-na-conta-de-luz",
+  "term": "3 erros que te fazem pagar R$200 a mais na conta de luz",
+  "category": "mindset",
+  "keyword": "conta",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você sabe quanto *dinheiro* a sua casa joga fora na conta de luz?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "avalanche",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você sabe quanto dinheiro a sua casa joga fora na conta de luz? Duzentos reais a mais todo mês, por causa de três hábitos.",
+      "durationSec": 9.2,
+      "shots": [
+        {
+          "anchor": "quanto",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro indo embora"
+          }
+        },
+        {
+          "anchor": "fora",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "avalanche"
+          },
+          "sfx": "avalanche"
+        },
+        {
+          "anchor": "Duzentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 200"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "três",
+          "visual": {
+            "type": "statement",
+            "text": "3 hábitos, todo mês"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Os três você faz sem pensar. Banho quente demorado, ar ligado no quarto vazio e carregador esquecido na tomada.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "Banho",
+          "visual": {
+            "type": "statement",
+            "text": "Hábito 1: o chuveiro"
+          }
+        },
+        {
+          "anchor": "ligado",
+          "visual": {
+            "type": "statement",
+            "text": "Hábito 2: o ar-condicionado"
+          }
+        },
+        {
+          "anchor": "carregador",
+          "visual": {
+            "type": "statement",
+            "text": "Hábito 3: o carregador"
+          },
+          "sfx": "pop"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Cada um come um pedaço da conta. O banho, noventa reais. O ar ligado, setenta. A tomada, quarenta. Some aí.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "banho",
+          "visual": {
+            "type": "number",
+            "text": "R$ 90"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "setenta",
+          "visual": {
+            "type": "number",
+            "text": "R$ 70"
+          }
+        },
+        {
+          "anchor": "quarenta",
+          "visual": {
+            "type": "number",
+            "text": "R$ 40"
+          }
+        },
+        {
+          "anchor": "Some",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 200,
+            "prefix": "R$"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu somei no FinMoovi e deu duzentos reais. Ele mostrou o chuveiro em primeiro lugar, todo mês.",
+      "durationSec": 6.5,
+      "shots": [
+        {
+          "anchor": "somei",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Gastos de energia somados, com o chuveiro no topo da lista"
+          }
+        },
+        {
+          "anchor": "chuveiro",
+          "visual": {
+            "type": "statement",
+            "text": "Chuveiro: vilão nº 1"
+          },
+          "sfx": "ding"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver a sua? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Sua casa joga fora duzentos reais por mês em três hábitos. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "joga",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "avalanche"
+          },
+          "sfx": "avalanche"
+        },
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "number",
+            "text": "R$ 200 / mês"
+          }
+        },
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "icon",
+            "icon": "shield"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Descubra o seu vilão da conta de luz",
+    "target": "app"
+  },
+  "totalDurationSec": 41.4
+}
