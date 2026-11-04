@@ -807,6 +807,36 @@
       "glossaryRef": "economia-de-energia",
       "status": "pending",
       "sourceKeyword": "meios de economizar energia"
+    },
+    {
+      "id": "kw-3-jeitos-faceis-de-guardar-r-200-por-mes",
+      "theme": "3 jeitos fáceis de guardar R$200 por mês",
+      "angle": "Mostra, em situações do cotidiano, três estratégias simples – como trocar o café da manhã de R$15 por um lanche caseiro, usar um cofrinho digital no app e guardar o troco da feira – que somam R$200 guardados ao final do mês, sem precisar mudar a vida inteira",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "guardar-dinheiro",
+      "status": "pending",
+      "sourceKeyword": "melhores formas de guardar dinheiro"
+    },
+    {
+      "id": "kw-3-metas-de-r-500-que-cabem-no-seu-bolso",
+      "theme": "3 metas de R$500 que cabem no seu bolso",
+      "angle": "Mostro três metas de economia de R$500 cada, explicando como encaixar essas metas no orçamento diário – usando exemplos como cortar um café, trocar o lanche e negociar contas – tudo em 45 segundos, sem virar aula teórica.",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "metas-para-guardar-dinheiro",
+      "status": "pending",
+      "sourceKeyword": "metas para guardar dinheiro"
+    },
+    {
+      "id": "kw-3-erros-que-te-fazem-pagar-r-200-a-mais-na-conta-de-luz",
+      "theme": "3 erros que te fazem pagar R$200 a mais na conta de luz",
+      "angle": "Mostre, em cenas rápidas de casa, três hábitos comuns que desperdiçam energia e quanto cada um pode aumentar a conta mensal, incentivando a troca imediata dos comportamentos",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "economia-de-energia",
+      "status": "pending",
+      "sourceKeyword": "o que fazer para economizar energia"
     }
   ]
 }
