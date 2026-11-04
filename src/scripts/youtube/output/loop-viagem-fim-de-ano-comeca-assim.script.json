@@ -1,0 +1,118 @@
+{
+  "slug": "loop-viagem-fim-de-ano-comeca-assim",
+  "formato": "loop16",
+  "term": "A viagem de fim de ano",
+  "category": "vida",
+  "keyword": "VIAGEM",
+  "valor": "R$ 1.800",
+  "situacao": "viagem-fim-de-ano",
+  "gancho": "comeca-assim",
+  "ganchoFamilia": "começa assim",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "cofre",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Quer aprender a dizer não? Começa assim. Comigo foi praia.",
+      "durationSec": 3.71,
+      "shots": [
+        {
+          "anchor": "aprender",
+          "visual": {
+            "type": "statement",
+            "text": "Praia em dezembro?"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "dizer",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "cofre"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Disse sim pros meninos e mil e oitocentos reais foram embora.",
+      "durationSec": 4.08,
+      "shots": [
+        {
+          "anchor": "Disse",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "cofre"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "meninos",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 1.800 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Agora eu guardo pouquinho no cofre, caladinho, todo mês.",
+      "durationSec": 3.34,
+      "shots": [
+        {
+          "anchor": "guardo",
+          "visual": {
+            "type": "statement",
+            "text": "Agora guardo um pouquinho"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "pouquinho",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "cofre"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Se as crianças pedirem praia, aprendi. Dizer não começa no cofre.",
+      "durationSec": 4.08,
+      "shots": [
+        {
+          "anchor": "crianças",
+          "visual": {
+            "type": "statement",
+            "text": "Cofre aberto, aí digo sim"
+          }
+        },
+        {
+          "anchor": "pedirem",
+          "visual": {
+            "type": "statement",
+            "text": "Praia em dezembro?"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.21
+}
