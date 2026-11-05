@@ -3748,5 +3748,23 @@
     "target": "https://schema.org",
     "status": "no-endpoint",
     "sentAt": "2026-11-03T20:26:25.918Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/en-ocr-for-receipts-digitize-your-bills-in-one-tap/",
+    "target": "https://www.investopedia.com/terms/o/ocr.asp",
+    "status": "no-endpoint",
+    "sentAt": "2026-11-05T20:56:45.388Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/es-ocr-para-facturas-digitaliza-tus-recibos-con-un-toque/",
+    "target": "https://www.investopedia.com/terms/o/ocr.asp",
+    "status": "no-endpoint",
+    "sentAt": "2026-11-05T20:56:45.526Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/ocr-para-notas-fiscais-digitalize-recibos-em-1-toque/",
+    "target": "https://www.investopedia.com/terms/o/ocr.asp",
+    "status": "no-endpoint",
+    "sentAt": "2026-11-05T20:56:45.681Z"
   }
 ]
