@@ -19,13 +19,13 @@ seo:
   keywords: ["metas financeiras","acompanhamento de metas","FinMoovi","controle de gastos","planejamento financeiro","captura por voz","gráficos de progresso","metas","progresso","objetivos financeiros","acompanhamento","finmoovi","finanças pessoais"]
 ---
 
-Você chega em casa depois de um dia corrido, abre a caixa de correio e encontra a fatura do cartão com aquele “surpresa” de gastos que nem lembrava ter feito. Na hora, pensa: **“Será que estou realmente avançando nas minhas metas de viagem, no carro novo ou na reserva de emergência?”** A sensação de não saber se o dinheiro que entra está realmente indo para onde você quer é frustrante. Eu te entendo – já passei por isso, olhando planilhas antigas, tentando fazer contas na cabeça e ainda assim sentindo que algo escapa.
+Você chega em casa depois de um dia corrido, abre a caixa de correio e encontra a fatura do cartão com aquele “surpresa” de gastos que nem lembrava ter feito. Na hora, pensa: **“Será que estou realmente avançando nas minhas metas de viagem, no carro novo ou na [reserva de emergência](/ferramentas/calculadora-reserva)?”** A sensação de não saber se o dinheiro que entra está realmente indo para onde você quer é frustrante. Eu te entendo – já passei por isso, olhando planilhas antigas, tentando fazer contas na cabeça e ainda assim sentindo que algo escapa.
 
 ## A dor de não ver o progresso
 
-A maioria de nós tem sonhos: aquela viagem de fim de ano para a praia, o carro que facilita o deslocamento diário ou a reserva de emergência que nos deixa tranquilos quando o inesperado aparece. Mas, na prática, esses objetivos ficam presos em um monte de recibos, anotações soltas no celular e planilhas que ninguém atualiza. Alguns sinais de que a situação está fora de controle:
+A maioria de nós tem sonhos: aquela viagem de fim de ano para a praia, o carro que facilita o deslocamento diário ou a [reserva de emergência](/glossario/reserva-de-emergencia) que nos deixa tranquilos quando o inesperado aparece. Mas, na prática, esses objetivos ficam presos em um monte de recibos, anotações soltas no celular e planilhas que ninguém atualiza. Alguns sinais de que a situação está fora de controle:
 
-- **Desconexão entre gasto e meta** – Você paga o aluguel, compra o almoço, mas não tem ideia de quanto sobra para a viagem.
+- **Desconexão entre gasto e meta** – Você paga o [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026), compra o almoço, mas não tem ideia de quanto sobra para a viagem.
 - **Ajustes de última hora** – Quando percebe que a meta está longe, precisa cortar tudo de repente, o que gera estresse.
 - **Falta de visualização** – Gráficos confusos ou tabelas cheias de números que não dizem nada rápido.
 
@@ -41,10 +41,10 @@ Imagine abrir o FinMoovi, escolher “Criar nova meta”, digitar que quer econo
 
 ### Como o app faz a mágica acontecer
 
-1. **Captura inteligente** – Ao pagar a conta de luz, basta apontar a câmera ou dizer “registrar conta de luz” que o FinMoovi reconhece o valor, a data e já categoriza como “Despesas fixas”.
-2. **Categorização automática com IA** – Cada gasto entra em uma categoria (alimentação, transporte, lazer) sem que você precise mover nada.
+1. **[Captura inteligente](/posts/cansado-de-perder-horas-nas-planilhas-como-o-finmoovi)** – Ao pagar a conta de luz, basta apontar a câmera ou dizer “registrar conta de luz” que o FinMoovi reconhece o valor, a data e já categoriza como “Despesas fixas”.
+2. **[Categorização automática](/posts/categorizacao-automatica-de-gastos-com-ia-como-deixar-suas) com IA** – Cada gasto entra em uma categoria (alimentação, transporte, lazer) sem que você precise mover nada.
 3. **Atualização em tempo real** – O saldo da sua meta sobe assim que o gasto é registrado ou o aporte é feito. Mesmo offline, o app salva localmente e sincroniza quando você se conecta novamente.
-4. **Gráficos claros** – Um simples gráfico de barras mostra o percentual já alcançado, quanto falta e a projeção de quando você chegará ao objetivo, tudo em poucos cliques.
+4. **Gráficos claros** – Um simples [gráfico](/glossario/grafico) de barras mostra o percentual já alcançado, quanto falta e a projeção de quando você chegará ao objetivo, tudo em poucos cliques.
 
 ## Passo a passo prático (menos de 5 minutos)
 
@@ -75,8 +75,8 @@ Imagine abrir o FinMoovi, escolher “Criar nova meta”, digitar que quer econo
 ## Dicas para turbinar seu acompanhamento
 
 - **Use a captura por voz nas compras rápidas** – “Registrar lanche 15” enquanto ainda está na fila.
-- **Aproveite a multimoeda** se estiver economizando para uma viagem internacional; o app converte automaticamente ao registrar gastos em outra moeda.
-- **Defina alertas** – O FinMoovi avisa quando o aporte semanal está atrasado ou quando a meta está a menos de 10 % do prazo final.
+- **Aproveite a multimoeda** se estiver economizando para uma viagem internacional; o app converte automaticamente ao registrar gastos em outra [moeda](/glossario/moeda).
+- **Defina [alertas](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto)** – O FinMoovi avisa quando o aporte semanal está atrasado ou quando a meta está a menos de 10 % do prazo final.
 - **Desafie-se**: experimente o “Desafio dos 30 dias sem compra por impulso”. O app cria uma meta temporária e acompanha seu progresso.
 
 ## Por que isso funciona?

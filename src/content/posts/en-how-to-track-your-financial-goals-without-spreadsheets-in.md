@@ -19,7 +19,7 @@ seo:
   keywords: ["financial goals","goal tracking","FinMoovi","expense control","personal finance","voice capture","progress charts","budgeting","personal finance app","smart capture"]
 ---
 
-You get home after a hectic day, open the mailbox and find the credit‑card statement with that “surprise” of spending you don’t even remember. Instantly you think: **“Am I really getting closer to my vacation, new car, or emergency fund?”** Not knowing whether the money coming in is actually going where you want it to be is frustrating. I get it – I’ve been there, staring at old spreadsheets, doing mental math, and still feeling like something is slipping through the cracks.  
+You get home after a hectic day, open the mailbox and find the [credit](/en/glossario/en-credit)‑card statement with that “surprise” of spending you don’t even remember. Instantly you think: **“Am I really getting closer to my vacation, new car, or [emergency fund](/en/glossario/en-emergency-fund)?”** Not knowing whether the money coming in is actually going where you want it to be is frustrating. I get it – I’ve been there, staring at old spreadsheets, doing mental math, and still feeling like something is slipping through the cracks.  
 
 ## The pain of not seeing progress  
 
@@ -39,10 +39,10 @@ Picture opening FinMoovi, tapping **Create new goal**, typing that you want to s
 
 ### How the app makes the magic happen  
 
-1. **Smart capture** – When you pay the electricity bill, just point the camera or say “record electricity bill” and FinMoovi reads the amount, the date, and tags it as “Fixed expense”.  
-2. **AI‑driven auto‑categorization** – Every expense lands in a category (food, transport, leisure) without you moving anything.  
+1. **Smart capture** – When you pay the electricity bill, just point the camera or say “record electricity bill” and FinMoovi reads the amount, the date, and tags it as “[Fixed expense](/en/glossario/en-fixed-expense)”.  
+2. **AI‑driven auto‑categorization** – Every [expense](/en/glossario/en-expense) lands in a category (food, transport, leisure) without you moving anything.  
 3. **Real‑time updates** – Your goal balance jumps as soon as the expense is logged or the contribution is made. Even offline, the app stores data locally and syncs when you’re back online.  
-4. **Clear charts** – A simple bar chart shows the percentage already achieved, what’s left, and a projection of when you’ll hit the target – all in a few clicks.  
+4. **Clear charts** – A simple bar [chart](/en/glossario/en-chart) shows the percentage already achieved, what’s left, and a projection of when you’ll hit the target – all in a few clicks.  
 
 ## Practical step‑by‑step (under 5 minutes)  
 
@@ -52,7 +52,7 @@ Picture opening FinMoovi, tapping **Create new goal**, typing that you want to s
    - Amount: “about $2,000” (roughly one month’s rent).  
    - Timeline: “12 months”.  
    - Contribution frequency: “weekly”.  
-3. **Set up automatic contributions** – If your bank account is linked, choose “Transfer 5 % of salary”. If not, use voice capture: “Contribute $40 to vacation”.  
+3. **Set up automatic contributions** – If your bank account is linked, choose “Transfer 5 % of salary”. If not, use [voice capture](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end): “Contribute $40 to vacation”.  
 4. **Log an expense** – Got the electricity bill? Snap a photo or say “record electricity $30”. The app automatically deducts it from the available balance and recalculates the goal’s progress.  
 5. **Check the chart** – In seconds, see if you’re on track. If progress is below the expected curve, tweak the contribution or cut discretionary spending.  
 
@@ -70,8 +70,8 @@ Picture opening FinMoovi, tapping **Create new goal**, typing that you want to s
 
 ## Tips to supercharge your tracking  
 
-- **Use voice capture for quick purchases** – “Record snack $15” while you’re still in line.  
-- **Take advantage of multi‑currency** if you’re saving for an overseas trip; the app converts automatically when you log foreign‑currency expenses.  
+- **Use [voice capture](/en/posts/en-forgot-to-pay-a-bill-how-to-fix-it-in-2026) for quick purchases** – “Record snack $15” while you’re still in line.  
+- **Take advantage of [multi‑currency](/en/posts/en-digital-bank-vs-major-bank-which-is-worth-it-in-2026)** if you’re saving for an overseas trip; the app converts automatically when you log foreign‑currency expenses.  
 - **Set alerts** – FinMoovi notifies you when a weekly contribution is missed or when the goal is within 10 % of the deadline.  
 - **Challenge yourself**: try the “30‑day no impulse‑buy” challenge. The app creates a temporary goal and tracks your progress.  
 

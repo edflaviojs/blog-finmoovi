@@ -19,13 +19,13 @@ seo:
   keywords: ["metas financieras","seguimiento de metas","FinMoovi","control de gastos","planificación financiera","captura por voz","gráficos de progreso","objetivos financieros","finanzas personales"]
 ---
 
-Llegas a casa después de un día ajetreado, abres el buzón y encuentras la factura de la tarjeta con esa “sorpresa” de gastos que ni recordabas haber hecho. En ese momento piensas: **“¿Estoy realmente avanzando en mis metas de viaje, coche nuevo o fondo de emergencia?”** La sensación de no saber si el dinero que entra está yendo a donde quieres es frustrante. Te entiendo – yo también he pasado por eso, revisando hojas de cálculo viejas, intentando hacer cuentas en la cabeza y, aun así, sintiendo que algo se escapa.
+Llegas a casa después de un día ajetreado, abres el buzón y encuentras la [factura de la tarjeta](/es/glossario/es-factura-de-la-tarjeta) con esa “sorpresa” de gastos que ni recordabas haber hecho. En ese momento piensas: **“¿Estoy realmente avanzando en mis metas de viaje, coche nuevo o [fondo de emergencia](/es/glossario/es-fondo-de-emergencia)?”** La sensación de no saber si el dinero que entra está yendo a donde quieres es frustrante. Te entiendo – yo también he pasado por eso, revisando hojas de cálculo viejas, intentando hacer cuentas en la cabeza y, aun así, sintiendo que algo se escapa.
 
 ## El problema de no ver el progreso  
 
 La mayoría de nosotros tiene sueños: ese viaje de fin de año a la playa, el coche que facilite el desplazamiento diario o el fondo de emergencia que nos deje tranquilos cuando lo inesperado aparece. Pero, en la práctica, esos objetivos quedan atrapados entre recibos, notas sueltas en el móvil y hojas de cálculo que nadie actualiza. Señales de que la situación está fuera de control:
 
-- **Desconexión entre gasto y meta** – Pagas el alquiler, compras el almuerzo, pero no sabes cuánto te queda para el viaje.  
+- **Desconexión entre [gasto](/es/glossario/es-gasto) y meta** – Pagas el [alquiler](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026), compras el almuerzo, pero no sabes cuánto te queda para el viaje.  
 - **Ajustes de última hora** – Cuando ves que la meta está lejos, tienes que recortar todo de golpe, lo que genera estrés.  
 - **Falta de visualización** – Gráficos confusos o tablas llenas de números que no dicen nada rápidamente.
 
@@ -33,16 +33,16 @@ Según el *World Bank*, el 56 % de las familias que no siguen sus gastos tiene
 
 ## FinMoovi entra en escena: Metas Inteligentes  
 
-Imagina abrir FinMoovi, elegir “Crear nueva meta”, escribir que quieres ahorrar el equivalente a un alquiler mensual, fijar un plazo de 12 meses y seleccionar la frecuencia de aporte semanal. Listo, la meta aparece y está preparada para recibir aportes automáticamente.
+Imagina abrir FinMoovi, elegir “Crear nueva meta”, escribir que quieres [ahorrar](/es/posts/es-ahorra-en-la-farmacia-sin-sacrificios-guia-practica-2026) el equivalente a un alquiler mensual, fijar un plazo de 12 meses y seleccionar la frecuencia de aporte semanal. Listo, la meta aparece y está preparada para recibir aportes automáticamente.
 
 ![FinMoovi entra en escena: Metas Inteligentes](/images/posts/como-acompanhar-o-progresso-das-suas-metas-financeiras-sem-2.webp)
 
 ### Cómo la app hace la magia  
 
-1. **Captura inteligente** – Al pagar la factura de la luz, basta apuntar con la cámara o decir “registrar factura de luz” y FinMoovi reconoce el importe, la fecha y lo categoriza como “Gastos fijos”.  
+1. **[Captura inteligente](/es/posts/es-cansado-de-perder-horas-en-hojas-de-calculo-asi-finmoovi-lo)** – Al pagar la factura de la luz, basta apuntar con la cámara o decir “registrar factura de luz” y FinMoovi reconoce el importe, la fecha y lo categoriza como “Gastos fijos”.  
 2. **Categorización automática con IA** – Cada gasto se asigna a una categoría (alimentación, transporte, ocio) sin que tengas que mover nada.  
 3. **Actualización en tiempo real** – El saldo de tu meta sube en cuanto el gasto se registra o el aporte se realiza. Incluso offline, la app guarda localmente y sincroniza cuando vuelves a estar conectado.  
-4. **Gráficos claros** – Un sencillo gráfico de barras muestra el porcentaje alcanzado, lo que falta y la proyección de cuándo llegarás al objetivo, todo en pocos clics.  
+4. **Gráficos claros** – Un sencillo [gráfico](/es/glossario/es-grafico) de barras muestra el porcentaje alcanzado, lo que falta y la proyección de cuándo llegarás al objetivo, todo en pocos clics.  
 
 ## Paso a paso práctico (menos de 5 minutos)  
 
@@ -52,7 +52,7 @@ Imagina abrir FinMoovi, elegir “Crear nueva meta”, escribir que quieres ahor
    - Valor: “aproximadamente €1 800” (equivalente a un salario medio).  
    - Plazo: “12 meses”.  
    - Frecuencia de aporte: “semanal”.  
-3. **Configura el aporte automático** – Si tu cuenta bancaria está vinculada, elige “Transferir 5 % del salario”. Si no, usa la captura por voz: “Aporte €36 para viaje”.  
+3. **Configura el aporte automático** – Si tu cuenta bancaria está vinculada, elige “Transferir 5 % del salario”. Si no, usa la [captura por voz](/es/posts/es-captura-inteligente-por-voz-registra-tus-gastos-en-segundos): “Aporte €36 para viaje”.  
 4. **Registra un gasto** – ¿Recibiste el recibo de la luz? Haz una foto o di “registrar luz €27”. La app deduce automáticamente del saldo disponible y recalcula el progreso de la meta.  
 5. **Revisa el gráfico** – En segundos, ve si vas por buen camino. Si el progreso está por debajo de lo esperado, ajusta el aporte o reduce gastos superfluos.  
 
