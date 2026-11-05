@@ -47,6 +47,25 @@
     }
   },
   {
+    "file": "en-spread.md",
+    "dir": "glossario",
+    "severity": 3,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 5,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "ação",
+        "investimentos",
+        "valor"
+      ]
+    }
+  },
+  {
     "file": "es-cotizaciones-semana-1-noviembre-2026.md",
     "dir": "posts",
     "severity": 3,
@@ -3111,6 +3130,21 @@
   },
   {
     "file": "en-how-to-tame-your-spending-and-find-peace-in-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-how-to-track-your-financial-goals-without-spreadsheets-in.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -7250,6 +7284,21 @@
     }
   },
   {
+    "file": "es-como-seguir-el-progreso-de-tus-metas-financieras-sin-usar.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-como-simplificar-el-registro-de-gastos-sin-usar-hojas-de.md",
     "dir": "posts",
     "severity": 0,
@@ -10326,6 +10375,21 @@
   },
   {
     "file": "es-spread-bancario.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-spread.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
