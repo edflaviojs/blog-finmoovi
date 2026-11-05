@@ -1024,5 +1024,11 @@
     "gancho": "depois-de-anos",
     "turno": "manha",
     "em": "2026-11-05T12:37:34.388Z"
+  },
+  {
+    "situacao": "pagar-o-minimo",
+    "gancho": "depois-de-anos",
+    "turno": "noite",
+    "em": "2026-11-05T12:54:22.006Z"
   }
 ]

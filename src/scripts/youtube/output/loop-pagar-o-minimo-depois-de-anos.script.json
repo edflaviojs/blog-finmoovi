@@ -1,0 +1,118 @@
+{
+  "slug": "loop-pagar-o-minimo-depois-de-anos",
+  "formato": "loop16",
+  "term": "Pagar só o mínimo",
+  "category": "vida",
+  "keyword": "MÍNIMO",
+  "valor": "R$ 90",
+  "situacao": "pagar-o-minimo",
+  "gancho": "depois-de-anos",
+  "ganchoFamilia": "depois de anos",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ratoeira",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Depois de anos tentando, descobri isso. Meu dedo parou no botão.",
+      "durationSec": 4.18,
+      "shots": [
+        {
+          "anchor": "tentando",
+          "visual": {
+            "type": "statement",
+            "text": "O dedo parado no botão"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "descobri",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Paguei só o mínimo, R$ 90, e a fatura cresceu sozinha.",
+      "durationSec": 4.18,
+      "shots": [
+        {
+          "anchor": "Paguei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "mínimo",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 90"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Olha, o mínimo parece um alívio, mas é ratoeira.",
+      "durationSec": 3.42,
+      "shots": [
+        {
+          "anchor": "mínimo",
+          "visual": {
+            "type": "statement",
+            "text": "O mínimo me prendeu"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "parece",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ratoeira"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Agora meu dedo para no botão, e pago tudo.",
+      "durationSec": 3.42,
+      "shots": [
+        {
+          "anchor": "botão",
+          "visual": {
+            "type": "statement",
+            "text": "Meu dedo para no botão"
+          }
+        },
+        {
+          "anchor": "botão",
+          "visual": {
+            "type": "statement",
+            "text": "O dedo parado no botão"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
