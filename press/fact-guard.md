@@ -1,7 +1,7 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-11-04T12:45:53.411Z
-**Posts:** 576 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 22
+**Gerado em:** 2026-11-05T12:55:35.541Z
+**Posts:** 579 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 24
 
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
@@ -15,6 +15,9 @@
 - _Segundo a **Serasa Experian**, a dívida média das famílias brasileiras em 2023 ultrapassou R$ 12 mil, mostrando que muitas pessoas carregam despesas desnecessárias._
 - _Essa técnica reduz drasticamente compras impulsivas, que, segundo o **IBGE**, representaram cerca de **12 %** das despesas de consumo em 2022._
 - _Segundo o **Bacen**, 45 % das famílias brasileiras não têm [reserva de emergência](/ferramentas/calculadora-reserva), o que pode levar a endividamento._
+
+**como-acompanhar-o-progresso-das-suas-metas-financeiras-sem.md**
+- _Segundo o *World Bank*, 56 % das famílias que não acompanham seus gastos têm maior probabilidade de enfrentar emergências financeiras inesperadas._
 
 **como-cortar-gastos-com-agua-sem-esforco-em-2026.md**
 - _Segundo a Organização para a Cooperação e Desenvolvimento Econômico (OECD), famílias que adotam práticas simples de economia de água podem reduzir a conta em até 30 % OECD._
@@ -48,6 +51,9 @@
 
 **en-how-to-spot-and-cut-recurring-expenses-that-drain-your.md**
 - _According to the OECD, families that regularly track their spending are up to 15 % more likely to hit emergency‑fund goals._
+
+**en-how-to-track-your-financial-goals-without-spreadsheets-in.md**
+- _According to the *World Bank*, 56 % of households that don’t monitor their spending are more likely to face unexpected financial emergencies._
 
 **en-why-my-budget-spreadsheet-never-keeps-up-with-my-spending.md**
 - _According to the *World Bank*, adopting digital financial‑management tools can cut administrative time by up to 30 % (World Bank, 2022)._
