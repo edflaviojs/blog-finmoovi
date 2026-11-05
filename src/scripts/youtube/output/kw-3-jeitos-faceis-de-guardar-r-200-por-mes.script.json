@@ -1,0 +1,207 @@
+{
+  "slug": "kw-3-jeitos-faceis-de-guardar-r-200-por-mes",
+  "term": "3 jeitos fáceis de guardar R$200 por mês",
+  "category": "mindset",
+  "keyword": "guardar",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "O senhor acha que guardar *duzentos reais por mês* exige mudar a vida inteira?"
+  },
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "corda-bamba",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "O senhor acha que guardar duzentos reais por mês exige mudar a vida inteira? Eu guardo com três jeitos que cabem na rotina.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "duzentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 200"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "mudar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "corda-bamba"
+          }
+        },
+        {
+          "anchor": "três",
+          "visual": {
+            "type": "statement",
+            "text": "3 jeitos simples"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "O primeiro mora na rotina da manhã. O café da padaria, quinze reais. Troquei por lanche de casa e sobraram cento e vinte no mês.",
+      "durationSec": 9.6,
+      "shots": [
+        {
+          "anchor": "café",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          }
+        },
+        {
+          "anchor": "quinze",
+          "visual": {
+            "type": "number",
+            "text": "R$ 15 por dia"
+          }
+        },
+        {
+          "anchor": "sobraram",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 120,
+            "prefix": "R$"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "O segundo é o cofrinho digital do app. Cinquenta reais separados no dia que o dinheiro cai. E o terceiro é o troco da feira, trinta reais que eu gastava sem ver.",
+      "durationSec": 12.3,
+      "shots": [
+        {
+          "anchor": "cofrinho",
+          "visual": {
+            "type": "icon",
+            "icon": "piggy"
+          }
+        },
+        {
+          "anchor": "Cinquenta",
+          "visual": {
+            "type": "number",
+            "text": "R$ 50"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "troco",
+          "visual": {
+            "type": "statement",
+            "text": "Troco da feira"
+          }
+        },
+        {
+          "anchor": "trinta",
+          "visual": {
+            "type": "number",
+            "text": "R$ 30"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Só que sozinho, cada um parece pouco. Aí eu somei tudo no FinMoovi, e ele me mostrou as três linhas fechando duzentos reais.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "sozinho",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "corda-bamba"
+          }
+        },
+        {
+          "anchor": "somei",
+          "visual": {
+            "type": "app",
+            "app": "balanco",
+            "note": "As três economias somadas fechando R$ 200"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "fechando",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 200,
+            "prefix": "R$"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver a sua soma? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 4.2,
+      "shots": [
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Duzentos reais por mês cabem na vida que o senhor já tem. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "Duzentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 200"
+          }
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Sem controle, some"
+          },
+          "sfx": "thud"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja sua soma de R$ 200",
+    "target": "app"
+  },
+  "totalDurationSec": 51
+}
