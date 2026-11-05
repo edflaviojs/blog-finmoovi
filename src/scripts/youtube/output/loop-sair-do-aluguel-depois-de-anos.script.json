@@ -1,0 +1,118 @@
+{
+  "slug": "loop-sair-do-aluguel-depois-de-anos",
+  "formato": "loop16",
+  "term": "Sair do aluguel",
+  "category": "vida",
+  "keyword": "ALUGUEL",
+  "valor": "R$ 1.500",
+  "situacao": "sair-do-aluguel",
+  "gancho": "depois-de-anos",
+  "ganchoFamilia": "depois de anos",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ralo",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Depois de anos tentando, descobri isso. Eu pagava aluguel achando normal.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "tentando",
+          "visual": {
+            "type": "statement",
+            "text": "Anos tentando, descobri isso"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "descobri",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Fiz a conta. Mil e quinhentos reais todo mês, e nunca voltou.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "quinhentos",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 1.500 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Olha, deu aperto no peito. Eu quero minha casa.",
+      "durationSec": 3.26,
+      "shots": [
+        {
+          "anchor": "aperto",
+          "visual": {
+            "type": "statement",
+            "text": "Aperto no peito"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "peito",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Todo boleto lembra. Anos tentando, e o aluguel ia embora.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "boleto",
+          "visual": {
+            "type": "statement",
+            "text": "O aluguel ia embora"
+          }
+        },
+        {
+          "anchor": "lembra",
+          "visual": {
+            "type": "statement",
+            "text": "Anos tentando, descobri isso"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}

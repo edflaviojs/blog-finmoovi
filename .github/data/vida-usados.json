@@ -1018,5 +1018,11 @@
     "gancho": "ninguem-fala",
     "turno": "noite",
     "em": "2026-11-04T12:33:21.747Z"
+  },
+  {
+    "situacao": "sair-do-aluguel",
+    "gancho": "depois-de-anos",
+    "turno": "manha",
+    "em": "2026-11-05T12:37:34.388Z"
   }
 ]
