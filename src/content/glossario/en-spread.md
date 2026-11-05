@@ -4,6 +4,7 @@ definition: "What Spread is and how it shows up in your everyday money — expla
 title: "Spread - Financial Glossary"
 description: "What Spread is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/spread.webp"
+imageAlt: "Gold coins, rising chart, and glass jars on a purple gradient background."
 category: "basico"
 tags: ["Spread", "glossary", "finance"]
 author: "FinMoovi"

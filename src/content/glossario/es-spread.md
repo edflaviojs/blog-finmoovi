@@ -4,6 +4,7 @@ definition: "Qué es spread y cómo aparece en tu día a día — explicado de f
 title: "spread - Glosario Financiero"
 description: "Qué es spread y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/spread.webp"
+imageAlt: "Monedas doradas, gráfico ascendente y frascos de vidrio sobre fondo morado."
 category: "basico"
 tags: ["spread", "glosario", "finanzas"]
 author: "FinMoovi"

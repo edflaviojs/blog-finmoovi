@@ -3,6 +3,7 @@ title: "How to Track Your Financial Goals Without Spreadsheets in 2026"
 description: "Discover how FinMoovi’s Smart Goals show you in real‑time if you’re on track for a trip, a new car, or an emergency fund."
 tickerHeadline: "Is Your Goal on Track?"
 image: "/images/posts/como-acompanhar-o-progresso-das-suas-metas-financeiras-sem.webp"
+imageAlt: "Open laptop with colorful screen, gray mug, and desk lamp on wooden desk."
 category: "ferramentas"
 locale: "en"
 tags: ["financial goals","goal tracking","FinMoovi","expense control","personal finance","voice capture","progress charts","budgeting","personal finance app","smart capture"]

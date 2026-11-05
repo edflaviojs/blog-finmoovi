@@ -3,6 +3,7 @@ title: "Como acompanhar o progresso das suas metas financeiras sem planilha em 2
 description: "Descubra como o FinMoovi, com Metas Inteligentes, mostra em tempo real se você está perto da viagem, carro ou reserva de emergência."
 tickerHeadline: "Sua meta está no caminho certo?"
 image: "/images/posts/como-acompanhar-o-progresso-das-suas-metas-financeiras-sem.webp"
+imageAlt: "Notebook com tela colorida, caneca cinza, abajur e plantas em mesa de escritório."
 category: "ferramentas"
 locale: "pt"
 tags: ["metas financeiras","acompanhamento de metas","FinMoovi","controle de gastos","planejamento financeiro","captura por voz","gráficos de progresso","metas","progresso","objetivos financeiros","acompanhamento","finmoovi","finanças pessoais"]
