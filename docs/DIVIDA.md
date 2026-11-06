@@ -147,15 +147,6 @@ Enquanto não houver ficheiro, o relatório diz *"à espera"*, não inventa núm
 
 ⚠️ (16/10) a data já passou, conferir se o relatório já traz o número antes de considerar isto aberto.
 
-### B3. ⏳ A prova das travas da ficha, no robô da manutenção mensal
-
-**Quando:** **01/11/2026**, e conferir na manhã seguinte.
-
-Dois posts com data entre aspas passam os 90 dias nessa corrida. É nela que as duas
-travas postas a 02/10 são postas à prova a sério.
-
----
-
 ### B4. ⏳ A 1ª semana do Claude a escrever os robôs
 
 **Data:** até **21/10/2026** · **O que olhar:** linhas `::medidor::{"f":"claude"…}`
