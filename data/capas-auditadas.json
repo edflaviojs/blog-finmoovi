@@ -6314,6 +6314,41 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-11-05"
+    },
+    "ocr-para-notas-fiscais-digitalize-recibos-em-1-toque-2.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-06"
+    },
+    "ocr-para-notas-fiscais-digitalize-recibos-em-1-toque-4.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-06"
+    },
+    "ocr-para-notas-fiscais-digitalize-recibos-em-1-toque-6.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-06"
+    },
+    "ocr-para-notas-fiscais-digitalize-recibos-em-1-toque.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-06"
+    },
+    "ticker-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-06"
+    },
+    "ticker-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-06"
+    },
+    "ticker.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-06"
     }
   },
   "corrigidas": {
@@ -6990,6 +7025,6 @@
       "motivo": "borrada segundo a IA de visão (nitidez local 1252)"
     }
   },
-  "totalAcervo": 1263,
-  "ultimaCorrida": "2026-11-05"
+  "totalAcervo": 1270,
+  "ultimaCorrida": "2026-11-06"
 }
