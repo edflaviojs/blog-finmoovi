@@ -1,4 +1,4 @@
-name: YouTube — Converter Keywords em Temas (semanal)
+name: YouTube · Converter Keywords em Temas (semanal)
 
 on:
   workflow_dispatch: {}
