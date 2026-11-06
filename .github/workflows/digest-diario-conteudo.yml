@@ -4,8 +4,8 @@ on:
   schedule:
     # Lisboa está em UTC+1 no verão (WEST) e UTC+0 no inverno (WET).
     # Dois crons fora do minuto :00 (menos atraso do GitHub): 05:40 UTC (verão)
-    # e 06:40 UTC (inverno) — ambos = ~06:40 em Lisboa. O guard abaixo decide pelo CRON QUE DISPAROU + offset
-    # atual de Lisboa — imune ao atraso de execução do GitHub (que chegava a ~2h
+    # e 06:40 UTC (inverno), ambos = ~06:40 em Lisboa. O guard abaixo decide pelo CRON QUE DISPAROU + offset
+    # atual de Lisboa, imune ao atraso de execução do GitHub (que chegava a ~2h
     # e fazia o guard antigo por hora exata pular TODO envio agendado).
     - cron: '40 5 * * *'
     - cron: '40 6 * * *'
@@ -42,10 +42,12 @@ jobs:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           DIGEST_TO: ${{ vars.DIGEST_TO || 'finmoovi@gmail.com' }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # 06/11/2026: os lembretes viram tarefas no Apexi Team (lib/lembretes-team.js)
+          APEXI_TEAM_CHAVE: ${{ secrets.APEXI_TEAM_CHAVE }}
           # GITHUB_REPOSITORY já vem por padrão no runner (owner/repo)
         run: |
           # Guarda só no agendamento; execução manual (workflow_dispatch) sempre envia p/ teste.
-          # Decide pelo cron que disparou + offset de Lisboa — imune a atraso do GitHub.
+          # Decide pelo cron que disparou + offset de Lisboa, imune a atraso do GitHub.
           if [ "${{ github.event_name }}" = "schedule" ]; then
             OFFSET=$(TZ=Europe/Lisbon date +%z)
             CRON="${{ github.event.schedule }}"

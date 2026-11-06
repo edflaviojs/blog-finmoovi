@@ -1,6 +1,6 @@
-name: YouTube — Posts da semana (e-mail de segunda)
+name: YouTube, Posts da semana (e-mail de segunda)
 
-# 14/10/2026 — pedido do dono: *"é possível criarmos algum workflow para automatizarmos
+# 14/10/2026, pedido do dono: *"é possível criarmos algum workflow para automatizarmos
 # os posts do youtube?"* → *"Sim quero na segunda!"*
 #
 # A API do YouTube NÃO cria posts (só vídeos, comentários, legendas). Por isso o robô
@@ -9,7 +9,7 @@ name: YouTube — Posts da semana (e-mail de segunda)
 #
 # 💶 SEM CAMINHO PARA COBRANÇA: este workflow NÃO recebe chave do kie.ai nem da Cerebras.
 # Desde 14/10 escreve primeiro o Claude (Sonnet 5.5), pago pelo CRÉDITO mensal do plano Max
-# — a organização da API não tem cartão, por isso sem crédito ele recusa, não cobra. Depois
+# a organização da API não tem cartão, por isso sem crédito ele recusa, não cobra. Depois
 # vem o Gemini Flash grátis e a fila gratuita (Groq, NVIDIA, Cloudflare).
 
 on:
@@ -28,7 +28,7 @@ on:
 
 permissions:
   # write: a página de copiar (public/posts-youtube/) é guardada no repositório para o
-  # Cloudflare a publicar no blog — ver `posts-semana.js`.
+  # Cloudflare a publicar no blog, ver `posts-semana.js`.
   contents: write
 
 concurrency:
@@ -53,7 +53,7 @@ jobs:
       - name: Escrever os 6 posts e a página de copiar
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          # 14/10 — o Claude (Sonnet 5.5), crédito do plano Max — ver `escreverComClaude` em kie-ai.js
+          # 14/10, o Claude (Sonnet 5.5), crédito do plano Max, ver `escreverComClaude` em kie-ai.js
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
@@ -83,11 +83,13 @@ jobs:
 
       # Só sai depois de a página NOVA estar no ar (até 20 min à espera). Se não ficar,
       # o e-mail sai na mesma, com os textos todos, e diz que a página falhou.
-      - name: Mandar o e-mail
+      - name: Mandar a tarefa ao Apexi Team e o e-mail
         if: github.event.inputs.ensaio != 'true'
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           DIGEST_TO: ${{ vars.DIGEST_TO || 'finmoovi@gmail.com' }}
+          # 06/11/2026: manda também a tarefa da semana ao Apexi Team (o e-mail fica de reserva)
+          APEXI_TEAM_CHAVE: ${{ secrets.APEXI_TEAM_CHAVE }}
         run: node src/scripts/youtube/posts-semana.js --enviar
 
       - name: Guardar os posts (para conferir depois)

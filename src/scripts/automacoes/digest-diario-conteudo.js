@@ -1,7 +1,7 @@
 import { config } from '../../../site.config.ts';
 /**
- * Relatório do Dia — enviado ~6h40 (horário de Lisboa)
- * UM e-mail com o resumo completo do DIA ANTERIOR (00:00–23:59 em Europe/Lisbon):
+ * Relatório do Dia, enviado ~6h40 (horário de Lisboa)
+ * UM e-mail com o resumo completo do DIA ANTERIOR (00:00-23:59 em Europe/Lisbon):
  *   1. 🚨 Falhas de workflows (se houver)
  *   2. 📝 Conteúdo publicado no blog (posts + glossário, via git log)
  *   3. 🎬 Vídeos publicados no YouTube (.github/data/youtube-published.json)
@@ -12,7 +12,7 @@ import { config } from '../../../site.config.ts';
  *   8. 🗓️ Hoje no piloto automático (agenda dos crons de .github/workflows p/ o dia que começa)
  * Cada seção é isolada em try/catch: falha numa seção vira aviso no e-mail, nunca aborta o envio.
  * Além do e-mail, salva um snapshot JSON do dia em .github/data/relatorios/YYYY-MM-DD.json
- * (máx. 40 arquivos) — consumido em build time pela página /status/ do blog.
+ * (máx. 40 arquivos), consumido em build time pela página /status/ do blog.
  * Flag --dry-run: monta tudo, grava digest-preview.html + snapshot e NÃO envia (não exige RESEND_API_KEY).
  * Executado via GitHub Actions (ver .github/workflows/digest-diario-conteudo.yml).
  */
@@ -21,6 +21,7 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync, unlink
 import { join } from 'path';
 import { execSync } from 'child_process';
 import { proximoDomingo, ocupacaoNoCaderno, emPortugues } from '../youtube/upload-longo.js';
+import { lembretesNoTeam, chaveDoLembrete } from '../lib/lembretes-team.js';
 
 const DRY_RUN = process.argv.includes('--dry-run');
 const RESEND_API_KEY = process.env.RESEND_API_KEY;
@@ -87,7 +88,7 @@ function esc(s) {
 }
 
 // ---------------------------------------------------------------------------
-// Seção 2 — Conteúdo publicado (git log no dia anterior Lisboa)
+// Seção 2, Conteúdo publicado (git log no dia anterior Lisboa)
 // ---------------------------------------------------------------------------
 
 function parseFrontmatter(content) {
@@ -130,7 +131,7 @@ function describeFile(filePath) {
 
   let locale = 'pt';
   const base = fileName.replace(/\.md$/, '');
-  // O slug do Astro MANTÉM o prefixo de locale (ex.: es-yahoo-finance) — detectar o
+  // O slug do Astro MANTÉM o prefixo de locale (ex.: es-yahoo-finance), detectar o
   // idioma pelo prefixo, mas NÃO cortá-lo, senão a URL do e-mail fica errada (404).
   if (base.startsWith('en-')) locale = 'en';
   else if (base.startsWith('es-')) locale = 'es';
@@ -159,7 +160,7 @@ function describeFile(filePath) {
 }
 
 // ---------------------------------------------------------------------------
-// Seções 3/4 — YouTube e Pinterest (arquivos de estado em .github/data)
+// Seções 3/4, YouTube e Pinterest (arquivos de estado em .github/data)
 // ---------------------------------------------------------------------------
 
 function getYouTubeYesterday(win) {
@@ -184,12 +185,12 @@ function getPinterestYesterday(win) {
 }
 
 // ---------------------------------------------------------------------------
-// Seção 5 — Workflows executados (API GitHub Actions, paginada)
+// Seção 5, Workflows executados (API GitHub Actions, paginada)
 // ---------------------------------------------------------------------------
 
 async function fetchWorkflowRuns(win) {
   if (!GITHUB_TOKEN || !GITHUB_REPOSITORY) {
-    throw new Error('GITHUB_TOKEN/GITHUB_REPOSITORY indisponíveis — seção de workflows pulada');
+    throw new Error('GITHUB_TOKEN/GITHUB_REPOSITORY indisponíveis: seção de workflows pulada');
   }
   // Datas UTC que COBREM o dia Lisboa (a janela exata é filtrada client-side).
   const d1 = win.startUtc.toISOString().slice(0, 10);
@@ -221,12 +222,12 @@ const STATUS_EMOJI = { success: '✅', failure: '❌', cancelled: '🚫', skippe
 function runDurationMin(r) {
   const start = new Date(r.run_started_at || r.created_at).getTime();
   const end = new Date(r.updated_at).getTime();
-  if (Number.isNaN(start) || Number.isNaN(end) || end < start) return '—';
+  if (Number.isNaN(start) || Number.isNaN(end) || end < start) return '-';
   return Math.max(1, Math.round((end - start) / 60000));
 }
 
 // ---------------------------------------------------------------------------
-// Seção 7 — Pendências (PENDENCIAS.md)
+// Seção 7, Pendências (PENDENCIAS.md)
 // ---------------------------------------------------------------------------
 
 function getPendencias() {
@@ -245,7 +246,7 @@ function getPendencias() {
 }
 
 // ---------------------------------------------------------------------------
-// Seção 8 — Agenda de hoje (crons de .github/workflows/*.yml)
+// Seção 8, Agenda de hoje (crons de .github/workflows/*.yml)
 // ---------------------------------------------------------------------------
 
 // Matching simples de um campo de cron: '*', números, listas (a,b), ranges (a-b) e steps (*/n, a-b/n).
@@ -268,7 +269,7 @@ function cronFieldMatches(field, value, min, max) {
   });
 }
 
-// Testa se a expressão de cron (5 campos, UTC — como o GitHub Actions) dispara no instante dado.
+// Testa se a expressão de cron (5 campos, UTC, como o GitHub Actions) dispara no instante dado.
 function cronMatchesUtc(expr, dUtc) {
   const f = expr.trim().split(/\s+/);
   if (f.length !== 5) return false;
@@ -393,26 +394,34 @@ function htmlFalhas(failures) {
 }
 
 /**
- * ⏰ LEMBRETES COM DATA — pedido do dono em 19/08/2026: *"deixe também um alerta
+ * ⏰ LEMBRETES COM DATA, pedido do dono em 19/08/2026: *"deixe também um alerta
  * para voltarmos a ver isso daqui 7 dias"*.
  *
  * Porquê AQUI e não num agendador: este e-mail é o único sítio que ele lê todos
  * os dias. Um agendador na nuvem não consegue avisá-lo (não tem canal ligado) e
- * um lembrete que ninguém vê é pior que nenhum — dá a sensação de estar coberto.
+ * um lembrete que ninguém vê é pior que nenhum, dá a sensação de estar coberto.
  *
  * 🔑 O lembrete NÃO desaparece no dia seguinte: repete-se todos os dias até
  * alguém pôr `feito: true` em `.github/data/lembretes.json`. Um aviso que passa
  * uma vez é um aviso que se perde num dia de correria.
+ *
+ * ♦ 06/11/2026: cada lembrete aberto vira também uma tarefa no Apexi Team
+ * (`lembrete-<id>`, tipo `lembrete`, ver `lib/lembretes-team.js`). Fechou lá, sai
+ * daqui. Se o Team não responder, o lembrete aparece como antes.
  */
-function htmlLembretes(hojeISO) {
-  let dados;
+function lerLembretes() {
   try {
-    dados = JSON.parse(readFileSync(join(process.cwd(), '.github', 'data', 'lembretes.json'), 'utf-8'));
+    return JSON.parse(readFileSync(join(process.cwd(), '.github', 'data', 'lembretes.json'), 'utf-8')).lembretes || [];
   } catch {
-    return ''; // sem ficheiro não há secção — ausência não é falha
+    return null; // sem ficheiro não há secção: ausência não é falha
   }
-  const devidos = (dados.lembretes || [])
+}
+
+function htmlLembretes(hojeISO, lembretes, fechadosNoTeam = new Set()) {
+  if (!lembretes) return '';
+  const devidos = lembretes
     .filter(l => l && !l.feito && typeof l.data === 'string' && l.data <= hojeISO)
+    .filter(l => !fechadosNoTeam.has(chaveDoLembrete(l)))
     .sort((a, b) => String(a.data).localeCompare(String(b.data)));
   if (!devidos.length) return '';
 
@@ -420,7 +429,7 @@ function htmlLembretes(hojeISO) {
     const dias = Math.max(0, Math.round((Date.parse(hojeISO) - Date.parse(l.data)) / 86400000));
     const idade = dias === 0 ? 'hoje' : `há ${dias} dia${dias > 1 ? 's' : ''}`;
     return `<div style="margin:0 0 14px;padding:12px;background:#161b22;border-left:3px solid #d29922;border-radius:4px;">
-      <div style="color:#f0f6fc;font-size:14px;font-weight:600;">${esc(l.titulo || 'Lembrete')} <span style="color:#8b949e;font-weight:400;font-size:12px;">— marcado para ${esc(l.data)} (${idade})</span></div>
+      <div style="color:#f0f6fc;font-size:14px;font-weight:600;">${esc(l.titulo || 'Lembrete')} <span style="color:#8b949e;font-weight:400;font-size:12px;">· marcado para ${esc(l.data)} (${idade})</span></div>
       <div style="color:#c9d1d9;font-size:13px;margin-top:6px;line-height:1.5;">${esc(l.texto || '')}</div>
     </div>`;
   }).join('');
@@ -429,14 +438,14 @@ function htmlLembretes(hojeISO) {
 }
 
 /**
- * 💰 O CONSUMO DOS SERVIÇOS PAGOS — a secção que o dono pediu em 18/08/2026:
+ * 💰 O CONSUMO DOS SERVIÇOS PAGOS, a secção que o dono pediu em 18/08/2026:
  * *"não estou conseguindo acompanhar esses gastos"*.
  *
  * Lê o que o `relatorio-gastos.js` já apurou (ele corre meia hora antes). NÃO
  * relê os registos: são ~60 corridas por dia e este e-mail tem de sair depressa.
  *
  * ⚠️ Se o apuramento for de OUTRO dia, diz isso em vez de mostrar o número.
- * Um número velho apresentado como novo é pior do que secção nenhuma — é
+ * Um número velho apresentado como novo é pior do que secção nenhuma, é
  * exactamente o tipo de silêncio que deixou a Cerebras morta um dia inteiro.
  */
 function htmlGastos(rel, hojeISO) {
@@ -445,11 +454,11 @@ function htmlGastos(rel, hojeISO) {
     return `${sectionTitle(titulo, undefined, '#d29922')}<p style="color:#d29922;font-size:13px;margin:4px 0 0;">⚠️ Ainda não há apuramento. (O robô "Consumo dos serviços pagos" corre às 05:10 UTC.)</p>`;
   }
   if (rel.dia !== hojeISO) {
-    return `${sectionTitle(titulo, undefined, '#d29922')}<p style="color:#d29922;font-size:13px;margin:4px 0 0;">⚠️ O último apuramento é de ${esc(rel.dia)}, não de hoje — o robô de consumo não correu. Número antigo não é mostrado de propósito.</p>`;
+    return `${sectionTitle(titulo, undefined, '#d29922')}<p style="color:#d29922;font-size:13px;margin:4px 0 0;">⚠️ O último apuramento é de ${esc(rel.dia)}, não de hoje: o robô de consumo não correu. Número antigo não é mostrado de propósito.</p>`;
   }
   // 🔴 O SALDO ENTRA AQUI TAMBÉM, e é o ramo que mais importa.
   // "Nenhuma chamada" é ambíguo: pode ser um dia calmo, ou pode ser a conta
-  // esgotada — foi exactamente isto que aconteceu de 18 a 26/09/2026. Mostrar
+  // esgotada, foi exactamente isto que aconteceu de 18 a 26/09/2026. Mostrar
   // "nenhuma chamada" sozinho, nesse dia, seria dar por sossego o alarme.
   if (!rel.linhas || !rel.linhas.length) {
     return `${sectionTitle(titulo, 0)}${emptyLine('Nenhuma chamada a serviço pago nas últimas 24h.')}${htmlSaldoKie(rel)}`;
@@ -473,7 +482,7 @@ function htmlGastos(rel, hojeISO) {
   }).join('');
 
   const alarme = (rel.alarmes && rel.alarmes.length)
-    ? `<p style="color:#f85149;font-size:13px;margin:10px 0 0;">🚨 Consumindo muito acima do normal: <strong>${esc(rel.alarmes.join(', '))}</strong> — vale conferir o painel desse serviço.</p>`
+    ? `<p style="color:#f85149;font-size:13px;margin:10px 0 0;">🚨 Consumindo muito acima do normal: <strong>${esc(rel.alarmes.join(', '))}</strong>, vale conferir o painel desse serviço.</p>`
     : '';
   const aviso = (rel.semPreco && rel.semPreco.length)
     ? `<p style="color:#8b949e;font-size:12px;margin:8px 0 0;">Sem preço configurado: ${esc(rel.semPreco.join(', '))}. Preencha <code>.github/data/precos-ia.json</code> para ver em dinheiro. A comparação com a média funciona sem isso.</p>`
@@ -483,7 +492,7 @@ function htmlGastos(rel, hojeISO) {
 }
 
 /**
- * 💳 O SALDO DA CONTA PAGA — nasceu de 26/09/2026.
+ * 💳 O SALDO DA CONTA PAGA, nasceu de 26/09/2026.
  *
  * O consumo sozinho NÃO avisa que a conta acabou. Em 18/09 o saldo chegou a
  * zero, o kie.ai passou a devolver "resposta vazia" **sem erro nenhum**, os
@@ -491,12 +500,12 @@ function htmlGastos(rel, hojeISO) {
  * Shorts foram de 0% para 93%. Durou **nove dias**.
  *
  * 🔴 E o mais traiçoeiro: nesses nove dias a tabela de consumo mostrava **zero**
- * para o serviço pago — o que **parece óptimo e era o alarme**. Um gasto de zero
+ * para o serviço pago, o que **parece óptimo e era o alarme**. Um gasto de zero
  * pode ser "não se gastou" ou "não se PODE gastar". Só o saldo separa os dois,
  * e é por isso que esta linha vive colada à tabela de consumo e não noutra
  * secção.
  *
- * ⚠️ Se não se conseguiu ler o saldo, DIZ isso — nunca mostra um número que não
+ * ⚠️ Se não se conseguiu ler o saldo, DIZ isso, nunca mostra um número que não
  * mediu. É a mesma regra do apuramento velho, logo acima.
  */
 function htmlSaldoKie(rel) {
@@ -508,31 +517,31 @@ function htmlSaldoKie(rel) {
   const vermelho = saldo <= 0;
   const amarelo = !vermelho && dias < 3;
   const cor = vermelho ? '#f85149' : amarelo ? '#d29922' : '#8b949e';
-  const numeros = `<strong>${Number(saldo).toFixed(2)} créditos</strong> (US$ ${Number(dolares).toFixed(2)}) — dá para ~${Number(dias).toFixed(1)} dia(s)`;
+  const numeros = `<strong>${Number(saldo).toFixed(2)} créditos</strong> (US$ ${Number(dolares).toFixed(2)}), dá para ~${Number(dias).toFixed(1)} dia(s)`;
   const recado = vermelho
     ? ' 🔴 <strong>A ZERO.</strong> O escritor devolve resposta vazia e os roteiros caem nos gratuitos, que escrevem pior.'
-    : amarelo ? ' ⚠️ Menos de 3 dias de folga — carregar antes que caia em silêncio.' : '';
+    : amarelo ? ' ⚠️ Menos de 3 dias de folga, carregar antes que caia em silêncio.' : '';
   return `<p style="color:${cor};font-size:13px;margin:10px 0 0;">💳 Saldo do kie.ai: ${numeros}.${recado}</p>`;
 }
 
 /**
- * 🎬 O GUARDA DO VÍDEO LONGO — 28/09/2026, pedido do dono no dia em que a
+ * 🎬 O GUARDA DO VÍDEO LONGO, 28/09/2026, pedido do dono no dia em que a
  * produção passou a rodar em DUAS etapas, em DOIS DIAS (segunda escreve o
- * guião e as fotos; terça faz a capa e o vídeo — ver o cabeçalho de
+ * guião e as fotos; terça faz a capa e o vídeo, ver o cabeçalho de
  * `youtube-longo.yml`).
  *
  * ⚠️ **DIVIDIR EM DOIS DIAS ABRIU UM DIA A MAIS ONDE A COISA PODE FICAR PELA
  * METADE EM SILÊNCIO.** É a mesma família de defeito que já custou seis
- * "domingos sem vídeo" documentados nesta casa (05, 09, 15, 22, 24 e 29/08) —
+ * "domingos sem vídeo" documentados nesta casa (05, 09, 15, 22, 24 e 29/08):
  * cada um só descoberto abrindo o Studio. Este guarda lê o mesmo caderno que
  * o robô usa (`reservasDoDia`/`ocupacaoNoCaderno`), pergunta pelo PRÓXIMO
  * domingo, e muda de cor sozinho:
- *   🟢 já tem vídeo agendado — nada a fazer.
- *   ⚪ ainda dentro da janela normal (hoje é domingo, segunda ou terça) — cedo
+ *   🟢 já tem vídeo agendado, nada a fazer.
+ *   ⚪ ainda dentro da janela normal (hoje é domingo, segunda ou terça), cedo
  *      para alarmar, a Etapa 1 ou a Etapa 2 ainda podem correr hoje.
- *   🟡 passou terça, há uma RESERVA sem vídeo — a Etapa 1 correu, a Etapa 2
+ *   🟡 passou terça, há uma RESERVA sem vídeo, a Etapa 1 correu, a Etapa 2
  *      não terminou. Vale a pena olhar antes de virar vermelho.
- *   🔴 passou terça e não há NADA — nem reserva, nem vídeo. É o alarme que
+ *   🔴 passou terça e não há NADA, nem reserva, nem vídeo. É o alarme que
  *      substitui "abrir o Studio para descobrir".
  */
 function htmlVideoLongo() {
@@ -557,13 +566,13 @@ function htmlVideoLongo() {
     return `<p style="color:#8b949e;font-size:12px;margin:10px 0 0;">🎬 Vídeo longo: ainda dentro do prazo normal (Etapa 1 segunda, Etapa 2 terça) para ${esc(dataFmt)}${nota}.</p>`;
   }
   if (reservado) {
-    return `<p style="color:#d29922;font-size:13px;margin:10px 0 0;">🎬 Vídeo longo: ⚠️ "${esc(reservado.slug)}" está reservado para ${esc(dataFmt)} mas ainda SEM vídeo — a Etapa 1 correu, a Etapa 2 (capa + render + subida) não terminou. Vale a pena olhar as corridas de terça.</p>`;
+    return `<p style="color:#d29922;font-size:13px;margin:10px 0 0;">🎬 Vídeo longo: ⚠️ "${esc(reservado.slug)}" está reservado para ${esc(dataFmt)} mas ainda SEM vídeo: a Etapa 1 correu, a Etapa 2 (capa + render + subida) não terminou. Vale a pena olhar as corridas de terça.</p>`;
   }
-  return `<p style="color:#f85149;font-size:13px;margin:10px 0 0;">🎬 Vídeo longo: 🔴 NADA preparado ainda para ${esc(dataFmt)} — nem guião reservado, nem vídeo. As duas etapas (segunda e terça) já deviam ter corrido.</p>`;
+  return `<p style="color:#f85149;font-size:13px;margin:10px 0 0;">🎬 Vídeo longo: 🔴 NADA preparado ainda para ${esc(dataFmt)}: nem guião reservado, nem vídeo. As duas etapas (segunda e terça) já deviam ter corrido.</p>`;
 }
 
 /**
- * 🖼️ A LIMPEZA DAS CAPAS — pedido do dono em 19/08/2026, textual: *"quero que me
+ * 🖼️ A LIMPEZA DAS CAPAS, pedido do dono em 19/08/2026, textual: *"quero que me
  * envie no email diario a progressao... tipo assim capas refeitas 10 falta 120,
  * portanto estamos em 10/120"*.
  *
@@ -573,19 +582,19 @@ function htmlVideoLongo() {
  *
  * ⚠️ O DENOMINADOR É ESTIMADO E TEM DE SER DITO. Só uma parte do acervo foi
  * medida, portanto "faltam 120" é uma proporção, não uma contagem. À medida que a
- * varredura avança o número ajusta-se — e pode SUBIR. Apresentar uma estimativa
+ * varredura avança o número ajusta-se, e pode SUBIR. Apresentar uma estimativa
  * como se fosse contagem é o mesmo defeito de mostrar um apuramento velho como
  * novo, logo aqui em cima na secção dos gastos.
  *
  * ⚠️ E SE O ROBÔ PAROU, DIZ QUE PAROU. Um "10/120" repetido durante uma semana
- * parece progresso e é uma corrida morta — foi o que aconteceu com o vídeo que
+ * parece progresso e é uma corrida morta, foi o que aconteceu com o vídeo que
  * ficou verde e não publicou nada.
  */
 function htmlCapas(inv, hojeISO) {
   const titulo = '🖼️ Capas com letras (limpeza do acervo)';
 
   if (!inv) {
-    return `${sectionTitle(titulo, undefined, '#d29922')}<p style="color:#d29922;font-size:13px;margin:4px 0 0;">⚠️ Ainda não há auditoria. (O robô "Capas — varrer" corre às 22:30 UTC, 19:30 no Brasil.)</p>`;
+    return `${sectionTitle(titulo, undefined, '#d29922')}<p style="color:#d29922;font-size:13px;margin:4px 0 0;">⚠️ Ainda não há auditoria. (O robô "Capas, varrer" corre às 22:30 UTC, 19:30 no Brasil.)</p>`;
   }
 
   const vistas = Object.keys(inv.vistas || {}).length;
@@ -605,24 +614,24 @@ function htmlCapas(inv, hojeISO) {
   const ontemISO = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
   const paradoDesde = ultimo && ultimo !== hojeISO && ultimo !== ontemISO ? ultimo : null;
 
-  // ✅ O QUE JÁ ESTÁ FEITO SAI DO E-MAIL — pedido do dono em 16/09/2026, ao ver a
+  // ✅ O QUE JÁ ESTÁ FEITO SAI DO E-MAIL, pedido do dono em 16/09/2026, ao ver a
   // barra cheia ("159/159") pelo terceiro dia seguido: *"tem que criar uma regra,
   // quando já tiver corrigido não mostre mais no e-mail"*. Uma barra a 100% todos
-  // os dias deixa de ser informação e passa a ser ruído — e o ruído treina a
+  // os dias deixa de ser informação e passa a ser ruído, e o ruído treina a
   // pessoa a saltar o e-mail inteiro, incluindo as secções que importam.
   //
   // A régua é a FILA, não a percentagem: se não há capa nenhuma à espera de
   // conserto, não há nada para acompanhar. A secção volta sozinha no dia em que a
-  // varredura apanhar uma capa nova com letras — o robô continua a correr todas
+  // varredura apanhar uma capa nova com letras, o robô continua a correr todas
   // as noites, e o acervo cresce a cada post publicado.
   //
   // ⚠️ MENOS SE O ROBÔ PAROU. Calar a secção por «a fila está vazia» quando na
   // verdade ninguém está a medir seria o defeito da corrida verde que não publica
   // nada: o silêncio pareceria sucesso. Se o robô não avança há dois dias, a
-  // secção continua a aparecer — nem que seja só para dar o alarme.
+  // secção continua a aparecer, nem que seja só para dar o alarme.
   if (naFila === 0 && vistas > 0) {
     if (!paradoDesde) return '';
-    return `${sectionTitle(titulo, undefined, '#f85149')}<p style="color:#f85149;font-size:13px;margin:4px 0 0;">🚨 Nada na fila, mas o robô das capas não avança desde <strong>${esc(paradoDesde)}</strong> — normalmente é cota de IA esgotada. Ver as corridas de "Capas — varrer".</p>`;
+    return `${sectionTitle(titulo, undefined, '#f85149')}<p style="color:#f85149;font-size:13px;margin:4px 0 0;">🚨 Nada na fila, mas o robô das capas não avança desde <strong>${esc(paradoDesde)}</strong>, normalmente é cota de IA esgotada. Ver as corridas de "Capas, varrer".</p>`;
   }
 
   const pct = denominador > 0 ? Math.round(100 * corrigidas / denominador) : 0;
@@ -630,17 +639,17 @@ function htmlCapas(inv, hojeISO) {
 
   const linhaPrincipal = `<p style="color:#c9d1d9;font-size:15px;margin:4px 0 0;">
     <strong style="color:#f0f6fc;">${corrigidas}/${denominador}</strong> capas refeitas
-    ${naFila > 0 ? `<span style="color:#8b949e;font-size:13px;">— ${naFila} já identificada(s) na fila</span>` : ''}
+    ${naFila > 0 ? `<span style="color:#8b949e;font-size:13px;">, ${naFila} já identificada(s) na fila</span>` : ''}
   </p>`;
 
   const detalhe = `<p style="color:#8b949e;font-size:12px;margin:6px 0 0;">
     Auditadas ${vistas} de ${total} imagens${faltamMedir > 0 ? ` (faltam medir ${faltamMedir})` : ''}.
-    ${faltamMedir > 0 ? `O total de <strong>${denominador}</strong> é <strong>estimativa</strong> (taxa de ${Math.round(100 * comProblema / vistas)}% no que já foi visto) — vai ajustar-se, e pode subir.` : 'O total já é contagem, não estimativa.'}
+    ${faltamMedir > 0 ? `O total de <strong>${denominador}</strong> é <strong>estimativa</strong> (taxa de ${Math.round(100 * comProblema / vistas)}% no que já foi visto), vai ajustar-se, e pode subir.` : 'O total já é contagem, não estimativa.'}
     Ritmo: 10 correções por noite, como combinado.
   </p>`;
 
   const alerta = paradoDesde
-    ? `<p style="color:#f85149;font-size:13px;margin:8px 0 0;">🚨 O robô das capas não avança desde <strong>${esc(paradoDesde)}</strong> — normalmente é cota de IA esgotada. Ver as corridas de "Capas — varrer".</p>`
+    ? `<p style="color:#f85149;font-size:13px;margin:8px 0 0;">🚨 O robô das capas não avança desde <strong>${esc(paradoDesde)}</strong>, normalmente é cota de IA esgotada. Ver as corridas de "Capas, varrer".</p>`
     : '';
 
   return `${sectionTitle(titulo, undefined, '#3fb950')}${linhaPrincipal}${barra}${detalhe}${alerta}`;
@@ -763,28 +772,28 @@ function htmlEmails(emailRuns) {
   const rows = emailRuns.map(r => `
     <tr><td style="padding:8px 0;border-bottom:1px solid #21262d;">
       <span style="color:#c9d1d9;font-size:13px;">✉️ ${esc(r.name)}</span>
-      <span style="color:#8b949e;font-size:12px;margin-left:8px;">${lisbonTime(r.run_started_at || r.created_at)} (Lisboa) — provavelmente enviou</span>
+      <span style="color:#8b949e;font-size:12px;margin-left:8px;">${lisbonTime(r.run_started_at || r.created_at)} (Lisboa), provavelmente enviou</span>
     </td></tr>`).join('');
   return `${sectionTitle('📧 E-mails enviados', emailRuns.length, '#58a6ff')}<table style="width:100%;border-collapse:collapse;">${rows}</table>`;
 }
 
 /**
- * ♦ 03/10/2026 — CONSERTO Nº6, SEGUNDA METADE: O FACT FIREWALL CHEGA AO E-MAIL.
+ * ♦ 03/10/2026, CONSERTO Nº6, SEGUNDA METADE: O FACT FIREWALL CHEGA AO E-MAIL.
  *
  * 🔴 O detector de número sem fonte corria **todos os dias às 05h**, escrevia o
- * resultado em `press/fact-guard.md` — e **ninguém abria esse ficheiro**. O
+ * resultado em `press/fact-guard.md`, e **ninguém abria esse ficheiro**. O
  * relatório de 02/10 dizia *«495 posts · limpos: 0 · com flags: 66»*: sessenta e
  * seis textos sinalizados, **zero acções**, durante meses.
  *
  * E o que ele listava, pelo nome, eram exactamente os problemas que uma avaliação
- * externa «descobriu» a 02/10 lendo o site — incluindo o artigo da água.
+ * externa «descobriu» a 02/10 lendo o site, incluindo o artigo da água.
  *
  * Em finanças isto não é formalidade: número atribuído a uma instituição sem fonte
  * é o que o Google avalia como falta de confiança. Por isso sobe para o e-mail que
  * o dono já recebe, junto do resto que importa.
  *
  * ⚠️ **E avisa quando o próprio relatório está velho.** Um detector parado é
- * indistinguível de um blog sem problemas — a diferença só se vê na data. É a mesma
+ * indistinguível de um blog sem problemas, a diferença só se vê na data. É a mesma
  * lição de «verde não prova entrega».
  */
 function htmlFactGuard(hojeISO) {
@@ -810,13 +819,13 @@ function htmlFactGuard(hojeISO) {
 
   if (!Number.isFinite(flags)) {
     return `${sectionTitle('🛡️ Números sem fonte', undefined, '#d29922')}`
-      + emptyLine('Relatório do Fact Firewall ilegível — conferir `press/fact-guard.md`.');
+      + emptyLine('Relatório do Fact Firewall ilegível, conferir `press/fact-guard.md`.');
   }
 
   let html = sectionTitle('🛡️ Números sem fonte', flags, flags > 0 ? COR : '#3fb950');
 
   if (idadeDias != null && idadeDias >= 2) {
-    html += `<p style="color:#d29922;font-size:13px;margin:4px 0 8px;">⚠️ <b>Este número tem ${idadeDias} dias.</b> O Fact Firewall corre todos os dias — se a data não avança, ele parou.</p>`;
+    html += `<p style="color:#d29922;font-size:13px;margin:4px 0 8px;">⚠️ <b>Este número tem ${idadeDias} dias.</b> O Fact Firewall corre todos os dias, se a data não avança, ele parou.</p>`;
   }
 
   if (flags === 0) {
@@ -835,7 +844,7 @@ function htmlFactGuard(hojeISO) {
     html += emptyLine(`… e mais ${flags - nomes.length}. Lista completa em <code>press/fact-guard.md</code>.`);
   }
   if (limpos === 0) {
-    html += `<p style="color:#8b949e;font-size:12px;margin:8px 0 0;">Nenhuma correcção automática foi aplicada: estas frases precisam da fonte <b>ou</b> de sair do texto — e isso é decisão de quem escreve.</p>`;
+    html += `<p style="color:#8b949e;font-size:12px;margin:8px 0 0;">Nenhuma correcção automática foi aplicada: estas frases precisam da fonte <b>ou</b> de sair do texto, e isso é decisão de quem escreve.</p>`;
   }
   return html;
 }
@@ -856,10 +865,10 @@ function htmlAgenda(agenda) {
   const rows = agenda.map(a => `
     <tr><td style="padding:7px 0;border-bottom:1px solid #21262d;color:#c9d1d9;font-size:13px;">
       <span style="color:#3fb950;font-weight:600;">${a.times.length <= 3 ? a.times.join('/') : `${a.times[0]} ×${a.times.length}`}</span>
-      <span style="color:#8b949e;margin:0 6px;">—</span>${esc(a.name)}
+      <span style="color:#8b949e;margin:0 6px;">-</span>${esc(a.name)}
     </td></tr>`).join('');
   return `${sectionTitle('🗓️ Hoje no piloto automático', agenda.length, '#3fb950')}<table style="width:100%;border-collapse:collapse;">${rows}</table>
-    <p style="color:#6e7681;font-size:11px;margin:8px 0 0;">Horários de Lisboa, previstos pelos crons — o GitHub pode atrasar alguns minutos.</p>`;
+    <p style="color:#6e7681;font-size:11px;margin:8px 0 0;">Horários de Lisboa, previstos pelos crons, o GitHub pode atrasar alguns minutos.</p>`;
 }
 
 function buildEmail(sections, counts, win) {
@@ -871,7 +880,7 @@ function buildEmail(sections, counts, win) {
   if (counts.pins > 0) parts.push(`${counts.pins} pin${counts.pins === 1 ? '' : 's'}`);
   if (counts.failures > 0) parts.push(`${counts.failures} falha${counts.failures === 1 ? '' : 's'}`);
   const prefix = counts.failures > 0 ? '⚠️ ' : '';
-  const subject = `${prefix}📊 ${brand} — Relatório de ${win.dateLabel}: ${parts.join(' · ')}`;
+  const subject = `${prefix}📊 ${brand} · Relatório de ${win.dateLabel}: ${parts.join(' · ')}`;
 
   const html = `<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
 <body style="margin:0;padding:0;background:#0d1117;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
@@ -939,7 +948,7 @@ async function main() {
   let pendencias = [];
   let agenda = [];
 
-  // 5 (buscado primeiro pois alimenta 1 e 6) — Workflows via API GitHub
+  // 5 (buscado primeiro pois alimenta 1 e 6), Workflows via API GitHub
   let runs = [];
   let runsError = null;
   try {
@@ -963,11 +972,20 @@ async function main() {
     sections.push(warnBlock('🚨 Falhas', err.message));
   }
 
-  // 1-ter. Lembretes com data — logo a seguir às falhas e antes de tudo o
+  // 1-ter. Lembretes com data, logo a seguir às falhas e antes de tudo o
   // resto: é o que o dono combinou consigo próprio, e é o que se perde num dia
   // de correria. (As falhas ficam em primeiro porque são de hoje e urgentes.)
   try {
-    const lembretes = htmlLembretes(new Date().toISOString().split('T')[0]);
+    const todos = lerLembretes();
+    let fechados = new Set();
+    if (todos && process.env.APEXI_TEAM_CHAVE) {
+      const r = await lembretesNoTeam(todos);
+      fechados = r.fechados;
+      r.criados.forEach(c => console.log(`🤖 Apexi Team: lembrete ${c} criado`));
+      if (fechados.size) console.log(`⏰ ${fechados.size} lembrete(s) fechado(s) no Apexi Team, fora do e-mail`);
+      r.problemas.forEach(p => console.log(`⚠️ Apexi Team (o lembrete fica no e-mail): ${p}`));
+    }
+    const lembretes = htmlLembretes(new Date().toISOString().split('T')[0], todos, fechados);
     if (lembretes) sections.push(lembretes);
   } catch (err) {
     sections.push(warnBlock('⏰ Lembretes', err.message));
@@ -978,12 +996,12 @@ async function main() {
     const gastos = JSON.parse(readFileSync(join(process.cwd(), '.github', 'data', 'gastos-diarios.json'), 'utf-8'));
     sections.push(htmlGastos(gastos.relatorio, new Date().toISOString().split('T')[0]));
   } catch (err) {
-    // Ficheiro ainda não existe (primeiros dias) — não é falha, é ausência.
+    // Ficheiro ainda não existe (primeiros dias), não é falha, é ausência.
     sections.push(htmlGastos(null, new Date().toISOString().split('T')[0]));
   }
 
   // 1-ter-2. O guarda do vídeo longo (perto do topo: é o que substitui "abrir
-  // o Studio pra descobrir que o domingo ficou sem vídeo" — ver o cabeçalho
+  // o Studio pra descobrir que o domingo ficou sem vídeo", ver o cabeçalho
   // de `htmlVideoLongo`). Nunca lança: uma seção que falha vira aviso, não
   // derruba o e-mail inteiro.
   try {
@@ -993,22 +1011,22 @@ async function main() {
   }
 
   // 1-ter-3. Os números sem fonte (perto do topo: em conteúdo de dinheiro, é o
-  // que o Google lê como confiança — e o detector já existia e ninguém o lia).
+  // que o Google lê como confiança, e o detector já existia e ninguém o lia).
   try {
     sections.push(htmlFactGuard(new Date().toISOString().split('T')[0]));
   } catch (err) {
     sections.push(warnBlock('🛡️ Números sem fonte', err.message));
   }
 
-  // 1-quater. A limpeza das capas com letras — o dono pediu a progressão em
+  // 1-quater. A limpeza das capas com letras, o dono pediu a progressão em
   // 19/08/2026 e quer ver o "10/120" todos os dias, não ir procurar.
   try {
     const inv = JSON.parse(readFileSync(join(process.cwd(), 'data', 'capas-auditadas.json'), 'utf-8'));
-    // Devolve '' quando não há nada por corrigir — nesse dia a secção não existe.
+    // Devolve '' quando não há nada por corrigir, nesse dia a secção não existe.
     const secCapas = htmlCapas(inv, new Date().toISOString().split('T')[0]);
     if (secCapas) sections.push(secCapas);
   } catch (err) {
-    // Ficheiro ainda não existe (a primeira corrida do robô é 19/08 à noite) —
+    // Ficheiro ainda não existe (a primeira corrida do robô é 19/08 à noite):
     // não é falha, é ausência, e a secção diz isso.
     sections.push(htmlCapas(null, new Date().toISOString().split('T')[0]));
   }
@@ -1075,7 +1093,7 @@ async function main() {
     agenda = getTodayAgenda();
     sections.push(htmlAgenda(agenda));
     console.log(`🗓️ Agenda de hoje: ${agenda.length} workflow(s)`);
-    console.log(agenda.map(a => `${a.times.join('/')} — ${a.name}`).join('\n'));
+    console.log(agenda.map(a => `${a.times.join('/')}, ${a.name}`).join('\n'));
   } catch (err) {
     sections.push(warnBlock('🗓️ Hoje no piloto automático', err.message));
   }
@@ -1084,7 +1102,7 @@ async function main() {
   console.log(`✉️ Subject: ${subject}`);
 
   // Snapshot JSON do dia reportado (consumido pela página /status/ em build time).
-  // Também roda no dry-run — é inofensivo (arquivo local, só o workflow commita).
+  // Também roda no dry-run, é inofensivo (arquivo local, só o workflow commita).
   try {
     const snapshotFile = saveSnapshot({
       date: win.dateIso,
@@ -1113,7 +1131,7 @@ async function main() {
   if (DRY_RUN) {
     const previewPath = join(process.cwd(), 'digest-preview.html');
     writeFileSync(previewPath, html, 'utf-8');
-    console.log(`🧪 Dry-run: preview salvo em ${previewPath} — NADA foi enviado.`);
+    console.log(`🧪 Dry-run: preview salvo em ${previewPath}, NADA foi enviado.`);
     console.log(`📊 Resumo: ${counts.content} conteúdos · ${counts.videos} vídeos · ${counts.pins} pins · ${counts.runs} runs · ${counts.failures} falhas`);
     return;
   }

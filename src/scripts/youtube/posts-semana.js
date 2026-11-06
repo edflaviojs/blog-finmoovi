@@ -1,25 +1,25 @@
 /**
- * OS POSTS DA SEMANA PARA A ABA "POSTS" DO YOUTUBE — 14/10/2026.
+ * OS POSTS DA SEMANA PARA A ABA "POSTS" DO YOUTUBE, 14/10/2026.
  *
  * ═══ O QUE O DONO PEDIU ═══
  *   *"é possível criarmos algum workflow para automatizarmos os posts do youtube?"*
  *   → *"Sim quero na segunda!"*
  *
  * ═══ POR QUE O ROBÔ NÃO PUBLICA SOZINHO ═══
- * A API do YouTube **não tem porta para criar posts** — só vídeos, comentários,
+ * A API do YouTube **não tem porta para criar posts** só vídeos, comentários,
  * legendas e playlists. Um robô a clicar no navegador partiria a cada mudança de tela
  * e é proibido pelos termos (põe o canal em risco). Por isso o robô ESCREVE e o dono
  * AGENDA: o compositor do YouTube tem "Agendar post", e seis posts colam-se em minutos.
  *
  * ═══ O QUE SAI ═══
  * Toda segunda, um e-mail com SEIS posts (segunda a sábado), à volta do vídeo longo
- * que estreou no domingo — e, no sábado, o aviso do que estreia no domingo seguinte.
+ * que estreou no domingo, e, no sábado, o aviso do que estreia no domingo seguinte.
  *
  * ═══ AS REGRAS DA CASA QUE AQUI VALEM (todas medidas por código, não pedidas) ═══
- *   · "7 dias grátis", nunca "grátis" sozinho — `corrigirPromessa` (12/08).
+ *   · "7 dias grátis", nunca "grátis" sozinho, `corrigirPromessa` (12/08).
  *   · Pergunta pelo que a pessoa JÁ VIVEU; nunca mandar fazer conta (01/10).
- *   · O link é o CÓDIGO que põe, nunca a IA — não há link inventado.
- *   · Nenhum número que não esteja no vídeo — a IA não inventa valores.
+ *   · O link é o CÓDIGO que põe, nunca a IA, não há link inventado.
+ *   · Nenhum número que não esteja no vídeo, a IA não inventa valores.
  *
  * Sem caminho para cobrança: o workflow não passa chave do kie.ai. Desde 14/10 escreve
  * primeiro o Claude (crédito do plano Max, organização sem cartão); depois o Gemini Flash
@@ -27,6 +27,11 @@
  *
  *   node src/scripts/youtube/posts-semana.js --ensaio     (escreve e mostra, não envia)
  *   node src/scripts/youtube/posts-semana.js              (escreve e envia o e-mail)
+ *
+ * ♦ 06/11/2026: A TAREFA NO APEXI TEAM, pedido do dono: *«Quero que os robôs do FinMoovi
+ * mandem as tarefas para lá, em vez de só por email.»* O `--enviar` manda também a tarefa
+ * `finmoovi-posts-<ano>-w<semana>` (ver `montarTarefaDosPosts`). O e-mail continua a sair
+ * SEMPRE, como reserva, até 20/11/2026 (há um lembrete para o desligar).
  */
 
 import { existsSync, readFileSync, writeFileSync, mkdirSync } from 'node:fs';
@@ -34,6 +39,7 @@ import { join, dirname } from 'node:path';
 import { generateText } from '../apis/kie-ai.js';
 import { corrigirPromessa } from './lib/promessa-gratis.js';
 import { config } from '../../../site.config.ts';
+import { mandarTarefa } from '../lib/apexi-team.js';
 
 const RAIZ = process.cwd();
 const CADERNO = join(RAIZ, '.github/data/youtube-longos-published.json');
@@ -46,12 +52,12 @@ const SO_ESCREVER = process.argv.includes('--escrever');
 const SO_ENVIAR = process.argv.includes('--enviar');
 
 /**
- * ♦ 14/10/2026 — A PÁGINA DE COPIAR COM UM CLIQUE, pedido do dono: *"teria como nesse
- * email vir com aquela função de com só um clique eu conseguir copiar o texto"* — e,
+ * ♦ 14/10/2026, A PÁGINA DE COPIAR COM UM CLIQUE, pedido do dono: *"teria como nesse
+ * email vir com aquela função de com só um clique eu conseguir copiar o texto"* e,
  * logo a seguir, *"entrar por esse /status é mais complicado pra mim, teria que vir no
  * email mesmo"*.
  *
- * ⚠️ O Gmail apaga TODO o JavaScript de um e-mail — um botão "copiar" dentro da
+ * ⚠️ O Gmail apaga TODO o JavaScript de um e-mail, um botão "copiar" dentro da
  * mensagem não pode funcionar, em cliente nenhum. Por isso o e-mail leva, no topo, um
  * botão que abre esta página SEM LOGIN, onde cada texto tem o seu botão.
  * Fica fora do Google por três lados: `<meta robots>`, `X-Robots-Tag` em `_headers` e
@@ -63,7 +69,7 @@ const PAGINA_URL = 'https://blog.finmoovi.com/posts-youtube/';
 
 const LIMITE_TEXTO = 500;     // o YouTube aceita mais; curto é o que se lê no feed
 const LIMITE_OPCAO = 65;      // limite do YouTube para cada opção de enquete
-// ⚠️ "some" SOZINHO NÃO: é também o verbo SUMIR ("onde o seu dinheiro some?") — 14/10, apanhado no ensaio.
+// ⚠️ "some" SOZINHO NÃO: é também o verbo SUMIR ("onde o seu dinheiro some?"), 14/10, apanhado no ensaio.
 const PROIBIDO_TAREFA = /\b(calcul\w*|fa[çc]a a conta|faz a conta|fa[çc]a as contas|somar|som[ae] (tudo|os|as|esses|essas)\b|anot\w+|pegue o extrato|abra o extrato|confira (o|a|seu|sua))/i;
 
 // ─── o que aconteceu e o que vem ──────────────────────────────────────────────
@@ -81,7 +87,7 @@ function lerGuiao(slug) {
   try { return JSON.parse(readFileSync(p, 'utf-8')); } catch { return null; }
 }
 
-/** O que a IA pode saber do vídeo — e os números que ele tem (os únicos permitidos). */
+/** O que a IA pode saber do vídeo, e os números que ele tem (os únicos permitidos). */
 function resumoDoVideo(v) {
   const g = lerGuiao(v.slug);
   const partes = [`Título: ${v.titulo}`];
@@ -96,7 +102,7 @@ function resumoDoVideo(v) {
   const texto = partes.join('\n');
   const numeros = new Set((texto + ' ' + JSON.stringify(g?.mapa || {})).match(/\d+(?:[.,]\d+)?/g) || []);
   numeros.add('7'); // "7 dias grátis"
-  numeros.add('19'); // "domingo às 19h" — a hora da estreia vem no próprio pedido
+  numeros.add('19'); // "domingo às 19h", a hora da estreia vem no próprio pedido
   return { texto, numeros };
 }
 
@@ -120,7 +126,7 @@ function ddmm(d) {
 // ─── o pedido à IA ────────────────────────────────────────────────────────────
 
 /**
- * ♦ 14/10/2026 — O PROMPT DA IMAGEM DE CADA POST, pedido do dono: *"no email dos posts
+ * ♦ 14/10/2026, O PROMPT DA IMAGEM DE CADA POST, pedido do dono: *"no email dos posts
  * tem como vc inserir um prompt pra eu gerar uma imagem adequada para aquele post?"*
  *
  * 🔴 **A IA SÓ DESCREVE A CENA; O ESTILO E A PROIBIÇÃO DE LETRAS SÃO DO CÓDIGO.** Lição
@@ -137,9 +143,9 @@ export function promptDaImagem(cena) {
 }
 
 const PLANO = [
-  { dia: 'segunda', tipo: 'texto', papel: 'O VÍDEO DE ONTEM. Conte em 2–3 frases o problema que o vídeo resolve, na voz de quem já passou por isso, e termine convidando a assistir. NÃO escreva link (o link é colocado depois, automaticamente).' },
-  { dia: 'terça', tipo: 'enquete', papel: 'ENQUETE sobre o tema do vídeo — uma situação do dia a dia em que a pessoa se reconhece. 3 ou 4 opções curtas, todas plausíveis, nenhuma "certa".' },
-  { dia: 'quarta', tipo: 'texto', papel: 'PERGUNTA VIVIDA, com as DUAS pontas: pergunte se a pessoa já passou pelo problema do vídeo E se conseguiu resolver — e peça para contar nos comentários como resolveu, ou se ainda passa por isso.' },
+  { dia: 'segunda', tipo: 'texto', papel: 'O VÍDEO DE ONTEM. Conte em 2-3 frases o problema que o vídeo resolve, na voz de quem já passou por isso, e termine convidando a assistir. NÃO escreva link (o link é colocado depois, automaticamente).' },
+  { dia: 'terça', tipo: 'enquete', papel: 'ENQUETE sobre o tema do vídeo, uma situação do dia a dia em que a pessoa se reconhece. 3 ou 4 opções curtas, todas plausíveis, nenhuma "certa".' },
+  { dia: 'quarta', tipo: 'texto', papel: 'PERGUNTA VIVIDA, com as DUAS pontas: pergunte se a pessoa já passou pelo problema do vídeo E se conseguiu resolver, e peça para contar nos comentários como resolveu, ou se ainda passa por isso.' },
   { dia: 'quinta', tipo: 'texto', papel: 'UMA DICA CURTA tirada do vídeo, que a pessoa pode usar hoje. Concreta, sem conta nenhuma, sem lista longa.' },
   { dia: 'sexta', tipo: 'enquete', papel: 'ENQUETE leve de fim de semana sobre gastos ou hábitos com dinheiro da família (mercado, lazer, contas de casa). 3 ou 4 opções curtas.' },
   { dia: 'sábado', tipo: 'texto', papel: 'O AVISO DE AMANHÃ: amanhã, domingo, às 19h, estreia o vídeo novo (ver "PRÓXIMO VÍDEO"). Desperte curiosidade pelo problema, sem entregar a solução.' },
@@ -148,25 +154,25 @@ const PLANO = [
 function montarPrompt(anterior, proximo) {
   return `Você escreve os posts da aba "Posts" do canal de YouTube FinMoovi (finanças pessoais para famílias brasileiras de classe média e baixa).
 
-Linguagem: português do Brasil, simples, de conversa — como um vizinho que já passou pelo mesmo aperto. Frases curtas. No máximo 1 ou 2 emojis por post. Sem jargão ("rentabilidade", "estratégia", "planejamento financeiro").
+Linguagem: português do Brasil, simples, de conversa, como um vizinho que já passou pelo mesmo aperto. Frases curtas. No máximo 1 ou 2 emojis por post. Sem jargão ("rentabilidade", "estratégia", "planejamento financeiro").
 
 ═══ VÍDEO QUE ESTREOU ONTEM (domingo) ═══
 ${anterior.texto}
 
 ═══ PRÓXIMO VÍDEO (estreia domingo que vem, às 19h) ═══
-${proximo ? proximo.texto : '(ainda não definido — no post de sábado, diga só que domingo às 19h tem vídeo novo, sem inventar o tema)'}
+${proximo ? proximo.texto : '(ainda não definido: no post de sábado, diga só que domingo às 19h tem vídeo novo, sem inventar o tema)'}
 
 ═══ OS SEIS POSTS ═══
-${PLANO.map((p, i) => `${i + 1}. ${p.dia.toUpperCase()} (${p.tipo}) — ${p.papel}`).join('\n')}
+${PLANO.map((p, i) => `${i + 1}. ${p.dia.toUpperCase()} (${p.tipo}): ${p.papel}`).join('\n')}
 
 ═══ PROIBIDO (reprova) ═══
-⛔ Pedir para a pessoa fazer conta, somar, calcular, anotar ou ir buscar o extrato. Pergunte pelo que ela JÁ VIVEU — responde-se de memória, em meio segundo.
+⛔ Pedir para a pessoa fazer conta, somar, calcular, anotar ou ir buscar o extrato. Pergunte pelo que ela JÁ VIVEU, responde-se de memória, em meio segundo.
 ⛔ Dizer que o app FinMoovi é "grátis", "de graça" ou "gratuito". Se falar do app, é "7 dias grátis". (Nem é preciso falar do app.)
 ⛔ Qualquer número que não esteja nos textos dos vídeos acima. Não invente valores, percentagens nem estatísticas.
 ⛔ Escrever links ou endereços. Os links são colocados depois.
 ═══ A IMAGEM DOS POSTS DE TEXTO (segunda, quarta, quinta e sábado) ═══
-Em cada post de TEXTO, escreva também "cena": 1 ou 2 frases a descrever UMA imagem para o post — o que o boneco-palito está fazendo, onde, e com que objeto do dia a dia (carteira vazia, sacola de mercado, boleto na mão, chuveiro, geladeira…). Mostre a emoção do momento.
-⛔ A cena NÃO pode ter nenhuma palavra, número, valor, placa, etiqueta, cartaz, logotipo nem tela com texto — geradores de imagem desenham letras tortas. Conte tudo pela cena e pela expressão do rosto.
+Em cada post de TEXTO, escreva também "cena": 1 ou 2 frases a descrever UMA imagem para o post: o que o boneco-palito está fazendo, onde, e com que objeto do dia a dia (carteira vazia, sacola de mercado, boleto na mão, chuveiro, geladeira…). Mostre a emoção do momento.
+⛔ A cena NÃO pode ter nenhuma palavra, número, valor, placa, etiqueta, cartaz, logotipo nem tela com texto, geradores de imagem desenham letras tortas. Conte tudo pela cena e pela expressão do rosto.
 As enquetes NÃO levam "cena".
 
 ⛔ Mais de ${LIMITE_TEXTO} caracteres por texto. Cada opção de enquete com no máximo ${LIMITE_OPCAO} caracteres.
@@ -200,13 +206,13 @@ export function validarPosts(n, numerosPermitidos) {
     if (texto.length > LIMITE_TEXTO) erros.push(`${rot}: ${texto.length} caracteres (máximo ${LIMITE_TEXTO})`);
     const tudo = [texto, ...(Array.isArray(p.opcoes) ? p.opcoes : [])].join(' \n ');
 
-    if (/https?:\/\/|www\.|\.com\b|youtu\.?be/i.test(tudo)) erros.push(`${rot}: tem link — os links são colocados pelo robô, não escreva nenhum`);
+    if (/https?:\/\/|www\.|\.com\b|youtu\.?be/i.test(tudo)) erros.push(`${rot}: tem link: os links são colocados pelo robô, não escreva nenhum`);
     const tarefa = tudo.match(PROIBIDO_TAREFA);
-    if (tarefa) erros.push(`${rot}: "${tarefa[0]}" manda a pessoa fazer uma tarefa — pergunte pelo que ela JÁ VIVEU`);
+    if (tarefa) erros.push(`${rot}: "${tarefa[0]}" manda a pessoa fazer uma tarefa, pergunte pelo que ela JÁ VIVEU`);
     const promessa = corrigirPromessa(tudo);
-    if (promessa.mudou || (promessa.sobras && promessa.sobras.length)) erros.push(`${rot}: o app não é grátis — diga "7 dias grátis" ou não fale de preço`);
+    if (promessa.mudou || (promessa.sobras && promessa.sobras.length)) erros.push(`${rot}: o app não é grátis: diga "7 dias grátis" ou não fale de preço`);
     for (const num of tudo.match(/\d+(?:[.,]\d+)?/g) || []) {
-      if (!numerosPermitidos.has(num)) erros.push(`${rot}: o número "${num}" não está no vídeo — não invente números`);
+      if (!numerosPermitidos.has(num)) erros.push(`${rot}: o número "${num}" não está no vídeo, não invente números`);
     }
 
     if (plano.tipo === 'texto') {
@@ -214,13 +220,13 @@ export function validarPosts(n, numerosPermitidos) {
       if (cena.length < 30) erros.push(`${rot}: falta a "cena" da imagem (1 ou 2 frases, o que o boneco faz e onde)`);
       else if (cena.length > 400) erros.push(`${rot}: a cena tem ${cena.length} caracteres (máximo 400)`);
       const letra = cena.match(CENA_COM_LETRAS);
-      if (letra) erros.push(`${rot}: a cena pede "${letra[0]}" — a imagem não pode ter letras, números nem placas; conte pela cena e pela expressão`);
+      if (letra) erros.push(`${rot}: a cena pede "${letra[0]}", a imagem não pode ter letras, números nem placas; conte pela cena e pela expressão`);
     }
 
     if (plano.tipo === 'enquete') {
       const op = Array.isArray(p.opcoes) ? p.opcoes.map((o) => String(o || '').trim()).filter(Boolean) : [];
       if (op.length < 2 || op.length > 4) erros.push(`${rot}: a enquete precisa de 2 a 4 opções (recebi ${op.length})`);
-      op.forEach((o) => { if (o.length > LIMITE_OPCAO) erros.push(`${rot}: opção com ${o.length} caracteres (máximo ${LIMITE_OPCAO}) — "${o}"`); });
+      op.forEach((o) => { if (o.length > LIMITE_OPCAO) erros.push(`${rot}: opção com ${o.length} caracteres (máximo ${LIMITE_OPCAO}): "${o}"`); });
     }
   });
   return erros;
@@ -270,7 +276,7 @@ function escapar(s) {
   return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
 
-/** O texto exato a colar — com o link que o CÓDIGO acrescenta. */
+/** O texto exato a colar, com o link que o CÓDIGO acrescenta. */
 function textoFinal(p, i, anterior) {
   let t = String(p.texto).trim();
   if (i === 0) t += `\n\n▶️ https://youtu.be/${anterior.videoId}`;
@@ -284,9 +290,9 @@ function montarEmail(posts, anterior, proximo, segunda, paginaPronta = false) {
     const enquete = plano.tipo === 'enquete';
     const imagem = enquete
       ? `
-        <p style="color:#484f58;font-size:12px;margin:12px 0 0;">🎨 Enquete não leva imagem — o YouTube não deixa juntar as duas.</p>`
+        <p style="color:#484f58;font-size:12px;margin:12px 0 0;">🎨 Enquete não leva imagem: o YouTube não deixa juntar as duas.</p>`
       : `
-        <p style="color:#3fb950;font-size:12px;font-weight:600;margin:16px 0 4px;">🎨 PROMPT DA IMAGEM — cole no ChatGPT ou no Gemini:</p>
+        <p style="color:#3fb950;font-size:12px;font-weight:600;margin:16px 0 4px;">🎨 PROMPT DA IMAGEM: cole no ChatGPT ou no Gemini:</p>
         <pre style="white-space:pre-wrap;font-family:inherit;background:#0d1117;border:1px dashed #3fb950;border-radius:6px;padding:10px 12px;color:#c9d1d9;font-size:13px;line-height:1.5;margin:0;">${escapar(promptDaImagem(p.cena))}</pre>`;
     const opcoes = enquete ? `
         <p style="color:#8b949e;font-size:12px;margin:12px 0 4px;">OPÇÕES DA ENQUETE (uma em cada campo):</p>
@@ -298,14 +304,14 @@ function montarEmail(posts, anterior, proximo, segunda, paginaPronta = false) {
       </div>`;
   }).join('');
 
-  const subject = `📣 Posts do YouTube da semana (${ddmm(datas[0])} a ${ddmm(datas[5])}) — prontos para agendar`;
+  const subject = `📣 Posts do YouTube da semana (${ddmm(datas[0])} a ${ddmm(datas[5])}): prontos para agendar`;
   const html = `<!DOCTYPE html><html><body style="margin:0;padding:0;background:#0d1117;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
   <div style="max-width:640px;margin:0 auto;padding:32px 16px;">
     <h1 style="color:#f0f6fc;font-size:20px;margin:0 0 16px;">Os 6 posts desta semana</h1>
     ${paginaPronta
     ? `<a href="${PAGINA_URL}" style="display:block;text-align:center;background:#58a6ff;color:#0d1117;font-size:17px;font-weight:700;text-decoration:none;border-radius:10px;padding:16px;margin:0 0 8px;">📋 Abrir a página de copiar com 1 clique</a>
     <p style="color:#8b949e;font-size:12px;text-align:center;margin:0 0 24px;">Lá, cada texto, opção de enquete e prompt de imagem tem o seu botão "Copiar". Sem senha.</p>`
-    : '<p style="color:#d29922;font-size:13px;margin:0 0 24px;">⚠️ A página de copiar não ficou pronta a tempo — os textos estão todos aqui embaixo.</p>'}
+    : '<p style="color:#d29922;font-size:13px;margin:0 0 24px;">⚠️ A página de copiar não ficou pronta a tempo: os textos estão todos aqui embaixo.</p>'}
     <p style="color:#8b949e;font-size:14px;line-height:1.6;margin:0 0 8px;">
       Sobre o vídeo de domingo: <strong style="color:#f0f6fc;">${escapar(anterior.titulo)}</strong>${proximo ? `<br>Sábado avisa o próximo: <strong style="color:#f0f6fc;">${escapar(proximo.titulo)}</strong>` : ''}
     </p>
@@ -313,7 +319,7 @@ function montarEmail(posts, anterior, proximo, segunda, paginaPronta = false) {
       <strong style="color:#f0f6fc;">Como agendar:</strong> YouTube Studio → <strong>Criar</strong> → <strong>Criar post</strong> → colar o texto → (enquete: botão <strong>Enquete</strong>) → seta ao lado de Publicar → <strong>Agendar</strong>.
     </p>
     ${caixas}
-    <p style="color:#484f58;font-size:11px;margin:24px 0 0;">Escrito por IA. O YouTube não deixa robô publicar posts — por isso vem para você agendar.</p>
+    <p style="color:#484f58;font-size:11px;margin:24px 0 0;">Escrito por IA. O YouTube não deixa robô publicar posts, por isso vem para você agendar.</p>
   </div></body></html>`;
   return { subject, html };
 }
@@ -335,10 +341,10 @@ export function montarPagina(posts, anterior, proximo, segunda, geradoEm) {
     const partes = [`<h2>${plano.dia.toUpperCase()} ${ddmm(datas[i])} <span>· 12h · ${enquete ? '📊 enquete' : '📝 texto'}</span></h2>`];
     partes.push(bloco(enquete ? '📋 Copiar pergunta' : '📋 Copiar texto', textoFinal(p, i, anterior)));
     if (enquete) {
-      partes.push('<p class="nota">Opções da enquete — uma em cada campo:</p>');
+      partes.push('<p class="nota">Opções da enquete: uma em cada campo:</p>');
       p.opcoes.forEach((o, k) => partes.push(bloco(`📋 Copiar opção ${k + 1}`, o, 'opcao')));
     } else {
-      partes.push('<p class="nota img">🎨 Prompt da imagem — cole no ChatGPT ou no Gemini:</p>');
+      partes.push('<p class="nota img">🎨 Prompt da imagem: cole no ChatGPT ou no Gemini:</p>');
       partes.push(bloco('🎨 Copiar prompt da imagem', promptDaImagem(p.cena), 'imagem'));
     }
     return `<section class="cartao">${partes.join('')}</section>`;
@@ -348,7 +354,7 @@ export function montarPagina(posts, anterior, proximo, segunda, geradoEm) {
 <html lang="pt-BR"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Posts do YouTube — semana de ${ddmm(datas[0])}</title>
+<title>Posts do YouTube, semana de ${ddmm(datas[0])}</title>
 <style>
   :root { --fundo:#0d1117; --cartao:#161b22; --borda:#30363d; --texto:#f0f6fc; --suave:#8b949e; --azul:#58a6ff; --verde:#3fb950; }
   * { box-sizing:border-box; }
@@ -408,7 +414,7 @@ async function esperarPagina(geradoEm, { tentativas = 40, intervaloMs = 30000 } 
     try {
       const r = await fetch(`${PAGINA_URL}?v=${Date.now()}`, { headers: { 'Cache-Control': 'no-cache' } });
       if (r.ok && (await r.text()).includes(geradoEm)) return true;
-    } catch { /* rede — tenta outra vez */ }
+    } catch { /* rede, tenta outra vez */ }
     console.log(`   ⏳ a página nova ainda não está no ar (${i}/${tentativas})…`);
     await dormir(intervaloMs);
   }
@@ -416,7 +422,7 @@ async function esperarPagina(geradoEm, { tentativas = 40, intervaloMs = 30000 } 
 }
 
 async function enviar({ subject, html }) {
-  if (!RESEND_API_KEY) throw new Error('falta RESEND_API_KEY — o e-mail não pode sair');
+  if (!RESEND_API_KEY) throw new Error('falta RESEND_API_KEY: o e-mail não pode sair');
   const res = await fetch('https://api.resend.com/emails', {
     method: 'POST',
     headers: { Authorization: `Bearer ${RESEND_API_KEY}`, 'Content-Type': 'application/json' },
@@ -427,6 +433,81 @@ async function enviar({ subject, html }) {
   return corpo;
 }
 
+// ─── a tarefa no Apexi Team ───────────────────────────────────────────────────
+
+const CODIGO_DO_DIA = ['SEG', 'TER', 'QUA', 'QUI', 'SEX', 'SAB'];
+const NOME_DO_DIA = ['Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'];
+const dois = (n) => String(n).padStart(2, '0');
+const isoDia = (d) => `${d.getFullYear()}-${dois(d.getMonth() + 1)}-${dois(d.getDate())}`;
+
+/** Semana ISO (a que o calendário europeu usa): a segunda 09/11/2026 é a semana 46. */
+export function semanaIso(d) {
+  const t = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
+  const dow = t.getUTCDay() || 7;
+  t.setUTCDate(t.getUTCDate() + 4 - dow); // a quinta da mesma semana decide o ano
+  const ano = t.getUTCFullYear();
+  const semana = Math.ceil(((t - Date.UTC(ano, 0, 1)) / 86400000 + 1) / 7);
+  return { ano, semana };
+}
+
+/**
+ * A tarefa «Agendar os 6 posts da semana». Um passo por post (o post ou a enquete no
+ * «Copiar»), e logo abaixo de cada post de texto um passo para a imagem, com o prompt no
+ * seu próprio «Copiar» (escolha do dono, 06/11: cada passo só tem um botão).
+ */
+export function montarTarefaDosPosts(posts, anterior, proximo, segunda) {
+  const { ano, semana } = semanaIso(segunda);
+  const paginas = [{ rotulo: '📋 Página de copiar (um botão por texto)', url: PAGINA_URL }];
+  const passos = [];
+  posts.forEach((p, i) => {
+    const plano = PLANO[i];
+    const d = new Date(segunda); d.setDate(segunda.getDate() + i);
+    const quando = `${NOME_DO_DIA[i]} ${ddmm(d)}, agendar para as 12h`;
+    if (plano.tipo === 'enquete') {
+      const opcoes = p.opcoes.map((o) => String(o).trim());
+      passos.push({
+        codigo: CODIGO_DO_DIA[i],
+        texto: `${quando} · 📊 enquete. A pergunta vai no 1º campo e cada opção no seu (a página de copiar tem um botão por opção).`,
+        copiar: `${String(p.texto).trim()}\n\n${opcoes.map((o, k) => `${k + 1}. ${o}`).join('\n')}`,
+        links: paginas,
+      });
+      return;
+    }
+    passos.push({
+      codigo: CODIGO_DO_DIA[i],
+      texto: `${quando} · 📝 texto`,
+      copiar: textoFinal(p, i, anterior),
+      links: paginas,
+    });
+    passos.push({
+      codigo: `${CODIGO_DO_DIA[i]}-IMG`,
+      texto: `${NOME_DO_DIA[i]} ${ddmm(d)} · 🎨 imagem do post: cole o prompt no ChatGPT ou no Gemini e junte a imagem ao post`,
+      copiar: promptDaImagem(p.cena),
+      ficheiro: `post-${isoDia(d)}-${CODIGO_DO_DIA[i].toLowerCase()}.png`,
+    });
+  });
+  const descricao = [
+    `Sobre o vídeo de domingo: ${anterior.titulo}`,
+    proximo ? `Sábado avisa o próximo: ${proximo.titulo}` : null,
+    'Como agendar: YouTube Studio > Criar > Criar post > colar o texto > (enquete: botão Enquete) > seta ao lado de Publicar > Agendar.',
+    'O YouTube não deixa robô publicar posts, por isso vêm para agendar à mão.',
+  ].filter(Boolean).join('\n');
+  return {
+    chave_unica: `finmoovi-posts-${ano}-w${dois(semana)}`,
+    tipo: 'posts-da-semana',
+    projeto: 'FinMoovi',
+    titulo: `Agendar os 6 posts da semana (${ddmm(segunda)})`,
+    descricao,
+    prazo: `${isoDia(segunda)}T12:00:00-03:00`,
+    links: [
+      { rotulo: '📋 Página de copiar', url: PAGINA_URL },
+      { rotulo: '▶️ O vídeo de domingo', url: `https://youtu.be/${anterior.videoId}` },
+      { rotulo: '🎬 YouTube Studio', url: 'https://studio.youtube.com/' },
+    ],
+    passos,
+  };
+}
+
 // ─── execução ─────────────────────────────────────────────────────────────────
 
 async function main() {
@@ -435,7 +516,7 @@ async function main() {
   const jaEstrearam = videos.filter((v) => new Date(v.publishAt) <= agora);
   const futuros = videos.filter((v) => new Date(v.publishAt) > agora);
   const ultimo = jaEstrearam[jaEstrearam.length - 1];
-  if (!ultimo) throw new Error('nenhum vídeo longo estreou ainda — não há do que falar');
+  if (!ultimo) throw new Error('nenhum vídeo longo estreou ainda, não há do que falar');
   const seguinte = futuros[0] || null;
 
   const anterior = { ...ultimo, ...resumoDoVideo(ultimo) };
@@ -461,7 +542,9 @@ async function main() {
   console.log(`📄 página escrita: ${PAGINA_ARQUIVO}`);
 
   if (ENSAIO) {
-    console.log(`(ensaio — não enviei. Assunto seria: ${montarEmail(posts, anterior, proximo, segunda).subject})`);
+    const t = montarTarefaDosPosts(posts, anterior, proximo, segunda);
+    console.log(`(ensaio: a tarefa do Team seria ${t.chave_unica}, ${t.passos.length} passos, prazo ${t.prazo})`);
+    console.log(`(ensaio, não enviei. Assunto seria: ${montarEmail(posts, anterior, proximo, segunda).subject})`);
     return;
   }
   if (SO_ESCREVER) return; // o workflow guarda a página, e só depois chama --enviar
@@ -473,8 +556,15 @@ async function enviarDoArquivo() {
   const d = JSON.parse(readFileSync(SAIDA, 'utf-8'));
   console.log(`⏳ à espera de ${PAGINA_URL} com a marca ${d.geradoEm}…`);
   const pronta = await esperarPagina(d.geradoEm);
-  console.log(pronta ? '✅ a página nova está no ar.' : '⚠️ a página não ficou pronta — o e-mail segue só com os textos.');
-  const email = montarEmail(d.posts, d.anterior, d.proximo, new Date(d.segunda), pronta);
+  console.log(pronta ? '✅ a página nova está no ar.' : '⚠️ a página não ficou pronta, o e-mail segue só com os textos.');
+  const segunda = new Date(d.segunda);
+  // O Team primeiro; falhe ou não, o e-mail sai a seguir (reserva até 20/11/2026).
+  const tarefa = montarTarefaDosPosts(d.posts, d.anterior, d.proximo, segunda);
+  const r = await mandarTarefa(tarefa);
+  console.log(r.ok
+    ? `🤖 Apexi Team: tarefa ${tarefa.chave_unica} ${r.criada ? 'criada' : 'atualizada'} (${tarefa.passos.length} passos)`
+    : `⚠️ Apexi Team falhou (o e-mail segue na mesma): ${r.erro}`);
+  const email = montarEmail(d.posts, d.anterior, d.proximo, segunda, pronta);
   await enviar(email);
   console.log(`📧 enviado para ${PARA}: ${email.subject}`);
 }
