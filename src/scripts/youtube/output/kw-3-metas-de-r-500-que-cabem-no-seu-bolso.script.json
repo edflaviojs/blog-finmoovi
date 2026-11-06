@@ -1,0 +1,192 @@
+{
+  "slug": "kw-3-metas-de-r-500-que-cabem-no-seu-bolso",
+  "term": "3 metas de R$500 que cabem no seu bolso",
+  "category": "mindset",
+  "keyword": "metas",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "O senhor acha que juntar *quinhentos reais* é coisa de quem ganha bem?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "mochila-pedras",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "O senhor acha que juntar quinhentos reais é coisa de quem ganha bem? Cabe no seu bolso hoje. Eu achei três metas de quinhentos reais escondidas no meu dia.",
+      "durationSec": 11.2,
+      "shots": [
+        {
+          "anchor": "quinhentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "Cabe",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          }
+        },
+        {
+          "anchor": "três",
+          "visual": {
+            "type": "statement",
+            "text": "3 metas escondidas"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Olha onde elas estavam. No café da padaria todo dia, no lanche pedido no aplicativo e na conta de internet que ninguém negocia.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "café",
+          "visual": {
+            "type": "statement",
+            "text": "Meta 1: café"
+          }
+        },
+        {
+          "anchor": "lanche",
+          "visual": {
+            "type": "statement",
+            "text": "Meta 2: lanche"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "internet",
+          "visual": {
+            "type": "statement",
+            "text": "Meta 3: internet"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Cada um desses três, cortado, virou quinhentos reais guardados. Somei tudo e deu mil e quinhentos que saíam do meu bolso sem eu ver.",
+      "durationSec": 9.2,
+      "shots": [
+        {
+          "anchor": "quinhentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "Somei",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 1500,
+            "prefix": "R$"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "bolso",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Aí eu joguei os três no FinMoovi e ele me mostrou as metas lado a lado, cada uma com quinhentos reais, e quanto ainda faltava pra cada uma.",
+      "durationSec": 10.8,
+      "shots": [
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Três metas de R$500 lado a lado"
+          }
+        },
+        {
+          "anchor": "quanto",
+          "visual": {
+            "type": "statement",
+            "text": "Quanto falta em cada"
+          },
+          "sfx": "ding"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver as suas? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Quinhentos reais cabem no bolso de qualquer um que olha o que paga sem ver. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "cabem",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          }
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Sem controle, não é seu"
+          },
+          "sfx": "thud"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja suas 3 metas de R$500",
+    "target": "app"
+  },
+  "totalDurationSec": 52.3
+}
