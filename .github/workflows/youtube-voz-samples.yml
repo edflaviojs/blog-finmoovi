@@ -1,4 +1,4 @@
-name: YouTube — Amostras de Voz (Edge pt-BR)
+name: YouTube · Amostras de Voz (Edge pt-BR)
 
 # Gera todas as vozes pt-BR do Edge (masc + fem) num IP limpo (sem o throttle
 # que atrapalha a geração local em lote) e sobe como artefato p/ o dono escolher.
