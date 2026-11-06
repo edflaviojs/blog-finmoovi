@@ -4014,6 +4014,21 @@
     }
   },
   {
+    "file": "en-ocr-for-receipts-digitize-your-bills-in-one-tap.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-offshore.md",
     "dir": "glossario",
     "severity": 0,
@@ -5141,6 +5156,21 @@
   {
     "file": "en-the-ultimate-black-friday-2026-guide-shop-smart-without.md",
     "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-ticker.md",
+    "dir": "glossario",
     "severity": 0,
     "issues": {
       "currency": 0,
@@ -9489,6 +9519,21 @@
     }
   },
   {
+    "file": "es-ocr-para-facturas-digitaliza-tus-recibos-con-un-toque.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-offshore.md",
     "dir": "glossario",
     "severity": 0,
@@ -10645,6 +10690,21 @@
   },
   {
     "file": "es-tesouro-direto.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-ticker.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
