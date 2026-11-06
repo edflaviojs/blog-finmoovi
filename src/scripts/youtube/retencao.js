@@ -773,7 +773,7 @@ async function main() {
   log('══════════ O CLIQUE NA CAPA ══════════');
   if (capas.estado === 'sem-trabalho') {
     capasLinhas.push('🔴 **Ninguém está a recolher as impressões de capa.** O trabalho da Reporting API ainda não foi criado.');
-    capasLinhas.push('   Correr UMA VEZ: Actions → «YouTube — ligar a medição da capa (à mão)».');
+    capasLinhas.push('   Correr UMA VEZ: Actions → «YouTube · ligar a medição da capa (à mão, uma vez)».');
   } else if (capas.estado === 'sem-ficheiros') {
     capasLinhas.push(`⏳ **A medição da capa está ligada** (desde ${String(capas.criadoEm).slice(0, 10)}) mas o Google ainda não despejou ficheiro.`);
     capasLinhas.push('   É normal até 48h depois de ligar. Não há número para mostrar — e inventar um seria pior.');

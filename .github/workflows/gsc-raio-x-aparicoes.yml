@@ -11,7 +11,7 @@
 #
 # Não escreve ficheiro, não faz commit, não empurra nada. O resultado fica no
 # registo da corrida. Sem agendamento de propósito: é uma pergunta, não um robô.
-name: GSC — Raio-X das aparições (à mão)
+name: GSC · Raio-X das aparições (à mão)
 
 on:
   workflow_dispatch:

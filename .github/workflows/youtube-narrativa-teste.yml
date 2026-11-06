@@ -1,4 +1,4 @@
-name: YouTube — Testar SÓ a narração (passagem 1)
+name: YouTube · Testar SÓ a narração (passagem 1)
 
 # TESTE ISOLADO da PASSAGEM 1 (IMPLEMENTACAO20 §19): gera apenas o TEXTO falado
 # do Short e imprime no log, para o dono ler e julgar a coerência.
