@@ -1,0 +1,118 @@
+{
+  "slug": "loop-dentista-das-criancas-e-serio-que",
+  "formato": "loop16",
+  "term": "O dentista das crianças",
+  "category": "vida",
+  "keyword": "DENTISTA",
+  "valor": "R$ 3.500",
+  "situacao": "dentista-das-criancas",
+  "gancho": "e-serio-que",
+  "ganchoFamilia": "é sério que",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "buraco",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "É sério que ninguém está falando de dentista? Foi ontem.",
+      "durationSec": 3.53,
+      "shots": [
+        {
+          "anchor": "sério",
+          "visual": {
+            "type": "statement",
+            "text": "Ninguém fala do dentista"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "ninguém",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Aparelho da minha filha. Três mil e quinhentos reais Sem saber de onde tirar.",
+      "durationSec": 4.95,
+      "shots": [
+        {
+          "anchor": "Aparelho",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "filha",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 3.500"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Calma, a gente sentou pra ver o que cortar.",
+      "durationSec": 3.18,
+      "shots": [
+        {
+          "anchor": "Calma",
+          "visual": {
+            "type": "statement",
+            "text": "Fomos ver o que cortar"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "sentou",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Ninguém está falando de dentista, e o orçamento está aqui.",
+      "durationSec": 3.53,
+      "shots": [
+        {
+          "anchor": "Ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "O orçamento ainda está aqui"
+          }
+        },
+        {
+          "anchor": "falando",
+          "visual": {
+            "type": "statement",
+            "text": "Ninguém fala do dentista"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.19
+}
