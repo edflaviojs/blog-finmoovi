@@ -3156,8 +3156,67 @@
           "titulo": "A grande diferença entre ser rico e ser próspero"
         }
       ]
+    },
+    {
+      "videoId": "p8Ko6ALhjHE",
+      "title": "Los 10 Mejores Consejos de Finanzas Personales e Inversiones en 15 minutos",
+      "channel": "Mis Propias Finanzas",
+      "duracaoSeg": 841,
+      "idioma": "es",
+      "viewsPerDay": 3506,
+      "vistoEm": "2026-11-06",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "Consejo 1"
+        },
+        {
+          "seg": 42,
+          "titulo": "Consejo 2"
+        },
+        {
+          "seg": 58,
+          "titulo": "Consejo 3"
+        },
+        {
+          "seg": 83,
+          "titulo": "Consejo 4"
+        },
+        {
+          "seg": 124,
+          "titulo": "Consejo 5"
+        },
+        {
+          "seg": 191,
+          "titulo": "Consejo 6"
+        },
+        {
+          "seg": 289,
+          "titulo": "Ad#1"
+        },
+        {
+          "seg": 304,
+          "titulo": "Consejo 7"
+        },
+        {
+          "seg": 418,
+          "titulo": "Consejo 8"
+        },
+        {
+          "seg": 489,
+          "titulo": "Consejo 9"
+        },
+        {
+          "seg": 640,
+          "titulo": "Consejo 10"
+        },
+        {
+          "seg": 811,
+          "titulo": "Cierre"
+        }
+      ]
     }
   ],
-  "atualizadoEm": "2026-11-05T11:43:36.355Z",
-  "total": 56
+  "atualizadoEm": "2026-11-06T11:41:49.672Z",
+  "total": 57
 }
