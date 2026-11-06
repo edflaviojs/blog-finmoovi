@@ -1317,16 +1317,46 @@ async function quadroDoPinterest(k, canalId) {
   return quadros[0];
 }
 
-async function enviarFicheiro(k, caminho, nome, tipo = 'video/mp4') {
+/**
+ * ♦ 06/11/2026: O ENVIO DO FICHEIRO TENTA TRÊS VEZES. Em 04/11 o Multipost travou duas
+ * vezes (18:20 e 21:20 UTC), funcionou entre as duas, e cada travão deu 504 aos 60s
+ * certos (o corte do portão). Num dia normal o mesmo vídeo sobe em 4s. Sem segunda
+ * tentativa, o robô desistia na hora: o "mercado-de-capitais" saiu um DIA depois.
+ * Repetir aqui é seguro: o upload só guarda o ficheiro na biblioteca, nenhum post nasce
+ * ainda, por isso não há como duplicar. Só se repete o que é passageiro (5xx, 429, rede);
+ * um 4xx (chave, ficheiro recusado) desiste logo.
+ */
+export const ESPERAS_DO_ENVIO_MS = [30000, 90000];
+const dormirMs = (ms) => new Promise((r) => setTimeout(r, ms));
+
+export async function enviarFicheiro(k, caminho, nome, tipo = 'video/mp4', { fetchFn = fetch, esperas = ESPERAS_DO_ENVIO_MS } = {}) {
   const bytes = readFileSync(caminho);
-  const fd = new FormData();
-  fd.append('file', new Blob([bytes], { type: tipo }), nome);
-  const res = await fetch(`${API}/upload`, { method: 'POST', headers: { Authorization: k }, body: fd });
-  const texto = await res.text();
-  if (!res.ok) throw new Error(`O envio do vídeo falhou (${res.status}): ${texto.slice(0, 300)}`);
-  const media = JSON.parse(texto);
-  if (!media?.id || !media?.path) throw new Error(`O servidor aceitou o ficheiro mas não devolveu id/path: ${texto.slice(0, 200)}`);
-  return media;
+  for (let i = 0; ; i++) {
+    const fd = new FormData();
+    fd.append('file', new Blob([bytes], { type: tipo }), nome);
+    let res = null;
+    let texto = '';
+    try {
+      res = await fetchFn(`${API}/upload`, { method: 'POST', headers: { Authorization: k }, body: fd });
+      texto = await res.text();
+    } catch (e) {
+      texto = e.message;
+    }
+    if (res && res.ok) {
+      const media = JSON.parse(texto);
+      if (!media?.id || !media?.path) throw new Error(`O servidor aceitou o ficheiro mas não devolveu id/path: ${texto.slice(0, 200)}`);
+      if (i > 0) log(`   ✅ o ficheiro subiu à ${i + 1}ª tentativa`);
+      return media;
+    }
+    const estado = res ? res.status : 'sem resposta';
+    const passageiro = !res || res.status >= 500 || res.status === 429;
+    if (!passageiro || i >= esperas.length) {
+      const quantas = i > 0 ? ` (${i + 1} tentativas)` : '';
+      throw new Error(`O envio do vídeo falhou (${estado})${quantas}: ${texto.slice(0, 300)}`);
+    }
+    log(`   ⚠️ o envio de "${nome}" falhou (${estado}); nova tentativa em ${esperas[i] / 1000}s (${i + 2}/${esperas.length + 1})`);
+    await dormirMs(esperas[i]);
+  }
 }
 
 /**
