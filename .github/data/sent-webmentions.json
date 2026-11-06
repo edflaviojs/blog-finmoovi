@@ -1804,5 +1804,41 @@
     "target": "https://www.investopedia.com",
     "status": "no-endpoint",
     "sentAt": "2026-10-30T16:17:33.221Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/como-usar-um-simulador-de-emprestimo-para-planejar-seu/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-11-06T16:58:38.288Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/en-how-to-use-a-loan-simulator-to-plan-your-financial-future-in/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-11-06T16:58:38.308Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/en-ocr-for-receipts-digitize-your-bills-in-one-tap/",
+    "target": "https://www.investopedia.com/terms/o/ocr.asp",
+    "status": "no-endpoint",
+    "sentAt": "2026-11-06T16:58:38.395Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/es-como-usar-un-simulador-de-prestamo-para-planificar-tu-futuro/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-11-06T16:58:38.413Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/es-ocr-para-facturas-digitaliza-tus-recibos-con-un-toque/",
+    "target": "https://www.investopedia.com/terms/o/ocr.asp",
+    "status": "no-endpoint",
+    "sentAt": "2026-11-06T16:58:38.429Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/ocr-para-notas-fiscais-digitalize-recibos-em-1-toque/",
+    "target": "https://www.investopedia.com/terms/o/ocr.asp",
+    "status": "no-endpoint",
+    "sentAt": "2026-11-06T16:58:38.519Z"
   }
 ]
