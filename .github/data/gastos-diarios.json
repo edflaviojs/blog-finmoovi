@@ -962,22 +962,33 @@
       "cerebras|texto": 0,
       "kie.ai|visao": 0,
       "nvidia|texto": 0
+    },
+    "2026-11-06": {
+      "groq|texto": 33003,
+      "Cloudflare Workers AI|visao": 24,
+      "groq|voz": 548,
+      "Cloudflare Workers AI|imagem": 14,
+      "claude|texto": 46269,
+      "Groq|visao": 11409,
+      "cerebras|texto": 0,
+      "kie.ai|visao": 0,
+      "nvidia|texto": 0
     }
   },
   "relatorio": {
-    "dia": "2026-11-05",
+    "dia": "2026-11-06",
     "horas": 24,
-    "geradoEm": "2026-11-05T13:05:42.361Z",
+    "geradoEm": "2026-11-06T12:53:02.726Z",
     "linhas": [
       {
         "fornecedor": "groq",
         "tipo": "texto",
-        "chamadas": 42,
+        "chamadas": 38,
         "recusas": 0,
-        "quanto": 42594,
+        "quanto": 33003,
         "unidade": "fichas",
         "custo": null,
-        "salto": 0.9474266212905501
+        "salto": 0.7534169734958305
       },
       {
         "fornecedor": "Cloudflare Workers AI",
@@ -987,53 +998,53 @@
         "quanto": 24,
         "unidade": "unidades",
         "custo": null,
-        "salto": 0.9545454545454546
-      },
-      {
-        "fornecedor": "Cloudflare Workers AI",
-        "tipo": "imagem",
-        "chamadas": 15,
-        "recusas": 0,
-        "quanto": 15,
-        "unidade": "unidades",
-        "custo": null,
-        "salto": 1.0606060606060606
+        "salto": 1.0059880239520957
       },
       {
         "fornecedor": "groq",
         "tipo": "voz",
         "chamadas": 14,
         "recusas": 0,
-        "quanto": 543,
+        "quanto": 548,
         "unidade": "unidades",
         "custo": null,
-        "salto": 0.6033333333333334
+        "salto": 0.6089855532624225
+      },
+      {
+        "fornecedor": "Cloudflare Workers AI",
+        "tipo": "imagem",
+        "chamadas": 14,
+        "recusas": 0,
+        "quanto": 14,
+        "unidade": "unidades",
+        "custo": null,
+        "salto": 1.0103092783505154
       },
       {
         "fornecedor": "claude",
         "tipo": "texto",
-        "chamadas": 7,
+        "chamadas": 9,
         "recusas": 0,
-        "quanto": 39729,
+        "quanto": 46269,
         "unidade": "fichas",
         "custo": null,
-        "salto": 0.380009865665707
+        "salto": 0.4706609798806938
       },
       {
         "fornecedor": "Groq",
         "tipo": "visao",
-        "chamadas": 3,
+        "chamadas": 6,
         "recusas": 0,
-        "quanto": 5688,
+        "quanto": 11409,
         "unidade": "fichas",
         "custo": null,
-        "salto": 0.5441760344415212
+        "salto": 1.091387391983674
       },
       {
         "fornecedor": "cerebras",
         "tipo": "texto",
         "chamadas": 0,
-        "recusas": 12,
+        "recusas": 10,
         "quanto": 0,
         "unidade": "unidades",
         "custo": null,
@@ -1053,7 +1064,7 @@
         "fornecedor": "nvidia",
         "tipo": "texto",
         "chamadas": 0,
-        "recusas": 9,
+        "recusas": 10,
         "quanto": 0,
         "unidade": "unidades",
         "custo": null,
@@ -1078,5 +1089,5 @@
     },
     "saldoMotivo": null
   },
-  "atualizadoEm": "2026-11-05T13:05:42.361Z"
+  "atualizadoEm": "2026-11-06T12:53:02.726Z"
 }
