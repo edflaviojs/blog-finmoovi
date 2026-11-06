@@ -1,5 +1,5 @@
 /**
- * MULTIPOST — O SEGUNDO CARTEIRO: o mesmo Short, agora nas OITO redes (IMPL20 §51 · IMPL26 §12).
+ * MULTIPOST, O SEGUNDO CARTEIRO: o mesmo Short, agora nas OITO redes (IMPL20 §51 · IMPL26 §12).
  *
  * ═══ O DESENHO, EM UMA FRASE ═══
  * O vídeo já foi feito de madrugada e já foi entregue ao YouTube ao meio-dia. Este
@@ -7,13 +7,13 @@
  * publicação em oito redes, cada uma com o seu texto e a sua hora. Não produz nada,
  * não decide nada, não repete trabalho nenhum.
  *
- * ═══ 07/08/2026 — DE UMA REDE PARA OITO ═══
+ * ═══ 07/08/2026, DE UMA REDE PARA OITO ═══
  * Até aqui só saía no Instagram. Agora saem também TikTok, Facebook, LinkedIn,
  * Threads, Telegram, Pinterest e Bluesky. O ficheiro é o mesmo e é enviado UMA vez;
  * o que muda de rede para rede é o TEXTO, as OPÇÕES e a HORA.
  *
  * 🔴 **NÃO É UMA CHAMADA SÓ, E ISSO NÃO É ESCOLHA NOSSA.** A API põe a `date` FORA da
- * lista de posts — uma data para o pedido inteiro. Numa chamada só, as oito sairiam no
+ * lista de posts, uma data para o pedido inteiro. Numa chamada só, as oito sairiam no
  * MESMO minuto, que é precisamente o que o dono não quer ("parece robô"). Por isso é
  * uma chamada por rede, escalonadas 12 a 17 minutos (ver `REDES`).
  *
@@ -23,19 +23,19 @@
  * acessório.
  *
  * 🔴 **O X FICA DE FORA POR ORDEM DO DONO (07/08).** Desde 02/2026 ele cobra US$ 0,20 por
- * publicação COM LINK, e as daqui têm link. Continua ligado no painel — só não recebe
+ * publicação COM LINK, e as daqui têm link. Continua ligado no painel, só não recebe
  * nada daqui. Publicar à mão pelo site é grátis. Ver IMPL26 §12-F.
  *
  * ═══ POR QUE UM SEGUNDO CARTEIRO E NÃO UM PASSO A MAIS NO PRIMEIRO ═══
  * Decisão do dono (05/08): se este falhar, o YouTube não pode sentir. Um passo
- * dentro do carteiro do YouTube partilharia a sorte dele — e obrigaria as duas
+ * dentro do carteiro do YouTube partilharia a sorte dele, e obrigaria as duas
  * redes à mesma hora. Separados, cada um tem o seu relógio e a sua fila.
  *
  * ═══ O QUE SE DESCOBRIU SOBRE O MULTIPOST (05/08/2026) ═══
  * O "Multipost" é um Postiz auto-hospedado. Entregar é em DOIS passos:
  *   1. POST /api/public/v1/upload  → manda-se o ficheiro e recebe-se {id, path}
  *   2. POST /api/public/v1/posts   → cria-se o agendamento com type=schedule
- * ⚠️ A chave vai no cabeçalho `Authorization` CRUA (sem "Bearer" — isso é só no MCP).
+ * ⚠️ A chave vai no cabeçalho `Authorization` CRUA (sem "Bearer", isso é só no MCP).
  * ⚠️ Não existe `external_ref`: evitar duplicados é responsabilidade nossa. Por isso
  *    há um caderno (.github/data/instagram-agendados.json) e a fila só é rasgada
  *    DEPOIS de o agendamento existir.
@@ -47,12 +47,12 @@
  * agora cada slug tem um campo `redes`, com uma entrada POR REDE.
  *
  * 🔑 **E é isso que dá RETOMA.** Se seis redes saírem e uma falhar, correr outra vez
- * tenta **só a que faltou** — não republica as seis. Antes, o caderno era tudo-ou-nada.
+ * tenta **só a que faltou** não republica as seis. Antes, o caderno era tudo-ou-nada.
  * ⚠️ Um registo ANTIGO (sem o campo `redes`) conta como dia fechado e não se toca: era
  * de quando só havia Instagram, e ir agora publicar as outras sete num vídeo de há uma
  * semana seria despejar conteúdo velho em sete redes de uma vez.
  * ⚠️ Ao apagar, o servidor responde "erro" mesmo quando apagou. Nunca confiar na
- *    resposta de um apagamento — conferir a agenda.
+ *    resposta de um apagamento, conferir a agenda.
  *
  * ═══ A HORA ═══
  * A API pede a data em UTC. O Brasil não muda a hora desde 2019, por isso são
@@ -78,11 +78,11 @@ import { join, dirname } from 'node:path';
 // ─── caminhos ────────────────────────────────────────────────────────────────
 import { caminhoDaCapa, caminhoDaCapaLarga } from '../youtube/capa-short.js';
 // ⚠️ A capa do vídeo LONGO não está em `out/`: mora na pasta da Manus e traz o molde no
-// nome (são seis). `acharCapa` já sabe procurá-la — e já sabe ignorar as recusadas.
+// nome (são seis). `acharCapa` já sabe procurá-la, e já sabe ignorar as recusadas.
 import { acharCapa } from '../youtube/upload-longo.js';
 import { BORDAO } from '../youtube/lib/schema-short.js';
 /**
- * 🔑 A CALCULADORA DAQUELE TEMA — importada, não recriada.
+ * 🔑 A CALCULADORA DAQUELE TEMA, importada, não recriada.
  * `resolveToolUrl` já existia e já era usada no primeiro comentário do YouTube. Uma cópia
  * aqui separava-se dela no primeiro tema novo que aparecesse: uma regra, um sítio.
  */
@@ -104,7 +104,7 @@ const HORA_BR_PADRAO = 19;
 const MAX_LEGENDA = 2200;
 /**
  * O endereço do app. É o MESMO que vai na descrição do YouTube e no primeiro
- * comentário (`lib/primeiro-comentario.js`) — se mudar aqui, tem de mudar lá.
+ * comentário (`lib/primeiro-comentario.js`), se mudar aqui, tem de mudar lá.
  */
 const APP_URL = 'https://finmoovi.com';
 
@@ -118,12 +118,12 @@ const DRY_RUN = Boolean(args['dry-run']);
 const log = (...m) => console.log(...m);
 
 // ═══════════════════════════════════════════════════════════════════════════════
-// A HORA — a parte que já enganou este projeto uma vez
+// A HORA, a parte que já enganou este projeto uma vez
 // ═══════════════════════════════════════════════════════════════════════════════
 
 /**
  * A próxima vez que forem `horaBR` horas no Brasil, em UTC.
- * Se essa hora já passou hoje, marca para amanhã — nunca para o passado, que a API
+ * Se essa hora já passou hoje, marca para amanhã, nunca para o passado, que a API
  * aceitaria em silêncio e publicaria de imediato.
  */
 export function proximaHoraBrasilEmUTC(horaBR = HORA_BR_PADRAO, agora = new Date()) {
@@ -136,12 +136,12 @@ export function proximaHoraBrasilEmUTC(horaBR = HORA_BR_PADRAO, agora = new Date
 }
 
 /**
- * 🔴 A HORA DE CADA REDE — e a armadilha da RETOMA, que quase passou.
+ * 🔴 A HORA DE CADA REDE, e a armadilha da RETOMA, que quase passou.
  *
  * ═══ O CENÁRIO ═══
  * A entrega corre ao meio-dia e marca as sete redes a partir das 19h. Seis saem, o Bluesky
  * falha. Alguém volta a correr **às 20h** para apanhar a que faltou. E aí:
- * `proximaHoraBrasilEmUTC(19)` já não devolve as 19h de HOJE — devolve as **de amanhã**,
+ * `proximaHoraBrasilEmUTC(19)` já não devolve as 19h de HOJE, devolve as **de amanhã**,
  * porque a hora de hoje já passou. O Bluesky sairia **um dia depois** dos outros seis, e
  * ninguém daria por nada: o registo diria "agendado e confirmado", que é verdade.
  *
@@ -150,7 +150,7 @@ export function proximaHoraBrasilEmUTC(horaBR = HORA_BR_PADRAO, agora = new Date
  *    se calcula outra. É o mesmo dia, é a mesma fila.
  * 2. **Uma hora que já passou não vai para trás.** Se a vez daquela rede já foi (o
  *    Bluesky sai às 20h47 e são 21h), marca-se para daqui a poucos minutos. A API aceita
- *    uma data no passado **em silêncio** e publica de imediato — o que não é errado, mas
+ *    uma data no passado **em silêncio** e publica de imediato, o que não é errado, mas
  *    é preciso ser uma DECISÃO e aparecer no registo, não um acidente.
  */
 export const MINUTOS_DE_MARGEM = 5;
@@ -164,7 +164,7 @@ export function horaDaRede(ancoraUTC, rede, agora = new Date()) {
   };
 }
 
-/** Como se lê a mesma hora no relógio do Brasil — só para o humano conferir no log. */
+/** Como se lê a mesma hora no relógio do Brasil, só para o humano conferir no log. */
 export function emHoraDoBrasil(dataUTC) {
   const d = new Date(dataUTC.getTime() - BRASIL_UTC_OFFSET * 3600 * 1000);
   const p = (n) => String(n).padStart(2, '0');
@@ -172,13 +172,13 @@ export function emHoraDoBrasil(dataUTC) {
 }
 
 // ═══════════════════════════════════════════════════════════════════════════════
-// A LEGENDA — parecida com a do YouTube, mas NÃO igual
+// A LEGENDA, parecida com a do YouTube, mas NÃO igual
 // ═══════════════════════════════════════════════════════════════════════════════
 
 /**
  * ⚠️ OS ASTERISCOS TÊM DE SAIR. No roteiro eles marcam o que o vídeo destaca no
  * ecrã; numa legenda de Instagram apareceriam como lixo no meio da frase. (No
- * Short, um asterisco chegou a ser LIDO em voz alta — é um defeito com história.)
+ * Short, um asterisco chegou a ser LIDO em voz alta, é um defeito com história.)
  */
 function limpar(texto) {
   return String(texto || '').replace(/\*/g, '').replace(/\s+/g, ' ').trim();
@@ -191,7 +191,7 @@ function limpar(texto) {
 /**
  * 🔴 O DEFEITO, E ELE JÁ ESTAVA NO AR.
  *
- * As legendas destas redes copiam frases da NARRAÇÃO — e a narração é escrita para ser
+ * As legendas destas redes copiam frases da NARRAÇÃO, e a narração é escrita para ser
  * **falada em voz alta**, onde os números TÊM de ir por extenso (há um conversor inteiro
  * na produção só para isso: `numerosPorExtenso`, em `roteiro-narrativa.js`, porque a voz
  * lia "R$ 500" como "erre cifrão quinhentos").
@@ -200,7 +200,7 @@ function limpar(texto) {
  *   ✗ *"O primeiro leva cento e cinquenta reais, o outro duzentos"*
  *   ✓ *"O primeiro leva R$ 150, o outro 200"*
  *
- * ⚠️ **Isto saiu no Instagram durante dias** e ninguém tinha reparado — apareceu ao pôr o
+ * ⚠️ **Isto saiu no Instagram durante dias** e ninguém tinha reparado, apareceu ao pôr o
  * mesmo texto no LinkedIn, que é onde texto malcuidado dói mais. É o mesmo texto a servir
  * dois ouvidos diferentes: a voz e o olho.
  *
@@ -211,12 +211,12 @@ function limpar(texto) {
  *   3. o número vale **100 ou mais**         → `200`
  *
  * 🔴 **Tudo abaixo de 100 e sem unidade fica como está**, e há três razões medidas:
- *   · *"um erro"* nunca pode virar *"1 erro"* — "um" é artigo muito mais vezes do que é número;
+ *   · *"um erro"* nunca pode virar *"1 erro"* "um" é artigo muito mais vezes do que é número;
  *   · *"as duas coisas"* pela mesma razão;
  *   · numa ENUMERAÇÃO (*"em um, cinco e dez anos"*) converter só parte dela deixaria
  *     *"um, cinco e 10 anos"*, que é pior do que não mexer. Com o piso em 100, nenhuma
  *     delas é tocada.
- * Um número que fica por extenso não estraga nada — *"dez anos"* lê-se bem. Um número
+ * Um número que fica por extenso não estraga nada, *"dez anos"* lê-se bem. Um número
  * convertido errado, sim.
  */
 const VALOR_DA_PALAVRA = {
@@ -236,7 +236,7 @@ const semAcentoMin = (s) => String(s).toLowerCase().normalize('NFD').replace(/[�
 /**
  * ⚠️ O acento vive no PADRÃO, não numa limpeza antes: "três" e "milhões" aparecem
  * acentuados no texto verdadeiro, e tirar os acentos para procurar obrigaria a repô-los
- * depois — ou seja, a reescrever o texto todo para mexer num número.
+ * depois, ou seja, a reescrever o texto todo para mexer num número.
  */
 const COM_ACENTO = ['tr[eê]s', 'milh[ãa]o', 'milh[õo]es', 'bilh[ãa]o', 'bilh[õo]es'];
 const SEM_ACENTO = [...Object.keys(VALOR_DA_PALAVRA), ...Object.keys(MULTIPLICADOR)]
@@ -247,7 +247,7 @@ const SEM_ACENTO = [...Object.keys(VALOR_DA_PALAVRA), ...Object.keys(MULTIPLICAD
  *
  * Apanhado pela prova de mesa, e teria ido para a legenda: *"dois mil seiscentos e noventa
  * e nove reais"* saía **"2.006centos e noventa e R$ 9"**. Duas causas somadas:
- *   1. numa alternativa, o regex fica com a PRIMEIRA que serve — e "seis" está antes de
+ *   1. numa alternativa, o regex fica com a PRIMEIRA que serve, e "seis" está antes de
  *      "seiscentos". Ele lia "seis" e deixava "centos" pendurado;
  *   2. sem `\b` no fim, "seis" casa mesmo dentro de "seiscentos".
  * A família é grande: **nove**centos, **sete**centos, **oito**centos, **quatro**centos,
@@ -255,7 +255,7 @@ const SEM_ACENTO = [...Object.keys(VALOR_DA_PALAVRA), ...Object.keys(MULTIPLICAD
  */
 const UM_NUMERO = `(?:${[...COM_ACENTO, ...SEM_ACENTO].sort((a, b) => b.length - a.length).join('|')})\\b`;
 // ⚠️ UM espaço só entre as palavras (nunca `\s`): o texto já passou por `limpar()`, que
-// junta os espaços — e é isso que garante que o tamanho do trecho casa com o original.
+// junta os espaços, e é isso que garante que o tamanho do trecho casa com o original.
 const CORRIDA_DE_NUMEROS = new RegExp(`\\b${UM_NUMERO}(?: (?:e )?${UM_NUMERO})*`, 'gi');
 
 /**
@@ -263,7 +263,7 @@ const CORRIDA_DE_NUMEROS = new RegExp(`\\b${UM_NUMERO}(?: (?:e )?${UM_NUMERO})*`
  *
  * 🔑 A REGRA QUE SEPARA UM NÚMERO DE UMA LISTA: um numeral composto **desce sempre**
  * ("dois MIL, SEIScentos e NOVENTA e NOVE"); uma enumeração sobe ("um, cinco e dez").
- * Sem isto, "um, cinco e dez anos" virava o número 16 — foi exatamente esse o defeito que
+ * Sem isto, "um, cinco e dez anos" virava o número 16, foi exatamente esse o defeito que
  * matou o Short de 07/08, do outro lado do pipeline.
  */
 export function lerNumeral(palavras) {
@@ -298,27 +298,27 @@ export function lerNumeral(palavras) {
       const v = VALOR_DA_PALAVRA[p];
       if (v >= ultima) break;   // não desceu → começou outro número, é lista
       /**
-       * 🔴 SOMA SEM "E" NÃO É SOMA — É UMA LISTA. Apanhado em 10/08/2026, e já estava
+       * 🔴 SOMA SEM "E" NÃO É SOMA, É UMA LISTA. Apanhado em 10/08/2026, e já estava
        * agendado para publicar.
        *
        * O vídeo `regra-50-30-20-real` fala da **regra 50/30/20**, e a narração diz
        * *"a regra cinquenta trinta vinte cabe na sua vida?"*. Os três desceram
-       * (50 > 30 > 20), portanto a trava que já existia — *"não desceu, é lista"* —
+       * (50 > 30 > 20), portanto a trava que já existia, *"não desceu, é lista"*,
        * deixou passar, e a legenda ia sair com **"a regra 100"**. Um número que
        * ninguém disse, numa legenda publicada.
        *
-       * 🔑 A regra do português é curta: parcelas de um numeral **exigem "e"** —
+       * 🔑 A regra do português é curta: parcelas de um numeral **exigem "e"**,
        * *cento **e** cinquenta*, *vinte **e** cinco*, *mil **e** quinhentos*. Sem "e"
        * só existe a forma MULTIPLICATIVA (*quatro mil*), e essa é o ramo de cima, que
        * não passa por aqui.
        *
        * ⚠️ **A exigência é só para SOMAR a uma parcela já lida** (`acc > 0`). Depois de
        * um multiplicador o acumulador está a zero, e por isso *"mil quinhentos"*
-       * continua a ler-se — tirar isso seria consertar um defeito partindo outro.
+       * continua a ler-se, tirar isso seria consertar um defeito partindo outro.
        *
        * 📌 O que passa a acontecer com a frase do vídeo: os três ficam por escrever
        * (cada um sozinho é menor que o piso e não traz "reais" nem "por cento"). A
-       * legenda diz o que a voz disse. É feio e é **verdade** — e a alternativa era um
+       * legenda diz o que a voz disse. É feio e é **verdade** e a alternativa era um
        * número inventado.
        */
       if (acc > 0 && !viuE) break;
@@ -378,7 +378,7 @@ export function numerosEmAlgarismo(texto) {
 export const paraLer = (texto) => numerosEmAlgarismo(limpar(texto));
 
 /**
- * 🔑 O GANCHO DO VÍDEO — e porque não basta ler `intro.frase`.
+ * 🔑 O GANCHO DO VÍDEO, e porque não basta ler `intro.frase`.
  *
  * ═══ O CASO REAL (10/08/2026) ═══
  * Ao ligar os Shorts de **16 segundos** às redes, a legenda saiu com o título e depois um
@@ -386,13 +386,13 @@ export const paraLer = (texto) => numerosEmAlgarismo(limpar(texto));
  * sítios diferentes, e ninguém tinha reparado porque até aqui só um deles era entregue:
  *
  *   · o Short de 50s tem um bloco `intro` com a frase de abertura;
- *   · o de 16s **não tem `intro` nenhum** — a frase de abertura é a narração da cena de
+ *   · o de 16s **não tem `intro` nenhum** a frase de abertura é a narração da cena de
  *     papel `hook`, que é por onde o vídeo começa;
  *   · e o de 16s tem um campo chamado `gancho`, que **não é a frase**: é o nome da
  *     família de gancho (`ta-perdendo`). Ler esse campo teria posto um identificador
  *     interno numa legenda publicada.
  *
- * ⚠️ **É A FAMÍLIA DE DEFEITO Nº 1 DESTA CASA** — regra velha a correr em estrutura nova.
+ * ⚠️ **É A FAMÍLIA DE DEFEITO Nº 1 DESTA CASA** regra velha a correr em estrutura nova.
  * O código não rebentava: devolvia vazio e publicava na mesma, calado. Por isso a rede de
  * segurança está aqui e não em quem chama: quem escreve uma legenda nova ganha o
  * comportamento certo sem ter de saber isto.
@@ -409,7 +409,7 @@ export function ganchoDoRoteiro(roteiro) {
 
 /**
  * ⚠️ OS ACENTOS FICAM. O Instagram aceita-os e é com eles que se procura em
- * português — "#inflação" tem público, "#inflacao" tem quase ninguém. Tirá-los
+ * português, "#inflação" tem público, "#inflacao" tem quase ninguém. Tirá-los
  * também deixaria a etiqueta do tema desalinhada das fixas (#FinançasPessoais).
  */
 function hashtagDe(palavra) {
@@ -423,7 +423,7 @@ function hashtagDe(palavra) {
 
 /**
  * ⚠️ A PALAVRA-CHAVE NEM SEMPRE É UMA PALAVRA. Olhando os 15 roteiros já feitos,
- * ela tanto é "inflação" como é a FRASE INTEIRA do título — *"Se eu devesse R$ 30
+ * ela tanto é "inflação" como é a FRASE INTEIRA do título, *"Se eu devesse R$ 30
  * mil, faria ISSO"*. Transformar isso numa etiqueta daria
  * `#SeEuDevesseR30MilFariaIsso`: um monstro que ninguém procura e que grita
  * "isto foi feito por uma máquina". (É o mesmo defeito que já mordeu as hashtags
@@ -446,7 +446,7 @@ export function etiquetaDaPalavraChave(keyword) {
 /**
  * A etiqueta do ASSUNTO, tirada da categoria do roteiro.
  * Existe para o post nunca ficar só com as etiquetas genéricas quando a
- * palavra-chave é recusada pela regra acima — foi o caso do "Eduque seu bolso".
+ * palavra-chave é recusada pela regra acima, foi o caso do "Eduque seu bolso".
  */
 const ETIQUETA_DA_CATEGORIA = {
   basico: '#FinançasDoZero',
@@ -459,13 +459,13 @@ const ETIQUETA_DA_CATEGORIA = {
 
 /**
  * A legenda do Instagram.
- * ⚠️ NÃO leva "link na descrição" — no Instagram essa frase não quer dizer nada, e
+ * ⚠️ NÃO leva "link na descrição", no Instagram essa frase não quer dizer nada, e
  * era essa a diferença que obrigava a uma legenda própria em vez de reaproveitar a
  * do YouTube. O convite é o MESMO ("comenta FINMOOVI"), porque é ele que a
  * automação do Multipost está à espera de ouvir.
  */
 /**
- * ⚠️ NO INSTAGRAM NÃO HÁ NEGRITO — e os asteriscos aparecem à letra.
+ * ⚠️ NO INSTAGRAM NÃO HÁ NEGRITO, e os asteriscos aparecem à letra.
  * O YouTube aceita *palavra* como negrito; o Instagram mostra os asteriscos como
  * caracteres. Por isso a legenda daqui usa **emojis e espaço em branco** para dar
  * hierarquia, e nunca marcação. É a mesma informação, noutra língua tipográfica.
@@ -473,7 +473,7 @@ const ETIQUETA_DA_CATEGORIA = {
 /**
  * ⚠️ OS TÓPICOS SAEM DO GUIÃO, NÃO DE UM MOLDE.
  *
- * A primeira versão montava-os a partir da palavra-chave — e num vídeo cuja
+ * A primeira versão montava-os a partir da palavra-chave, e num vídeo cuja
  * palavra-chave era "bolso" saiu isto: *"O que é bolso e por que mexe no seu bolso"*.
  * Um molde aplicado a uma palavra vaga produz uma frase vazia, e uma frase vazia numa
  * legenda diz à pessoa que ninguém leu aquilo antes de publicar.
@@ -500,7 +500,7 @@ export function topicosDoRoteiro(roteiro) {
       const f = frase.trim();
       if (f.length < MIN_TOPICO || f.length > MAX_TOPICO) continue;
       // ⚠️ O BORDÃO DO CANAL NÃO É UM TÓPICO. Ele é dito uma vez em todos os vídeos,
-      // por regra do roteirista — e apareceu como "tópico" em dois vídeos diferentes.
+      // por regra do roteirista, e apareceu como "tópico" em dois vídeos diferentes.
       // Uma legenda que promete ensinar e entrega o slogan da casa é publicidade
       // disfarçada de índice.
       if (mesmaFrase(f, BORDAO)) continue;
@@ -511,7 +511,7 @@ export function topicosDoRoteiro(roteiro) {
    * ⚠️ OS NÚMEROS SÓ VIRAM ALGARISMO **DEPOIS** DO FILTRO DE TAMANHO, e é de propósito.
    * A janela 38-95 foi calibrada sobre o texto FALADO; converter antes encurtaria as
    * frases (*"cento e cinquenta reais"* tem 22 letras, *"R$ 150"* tem 6) e passaria a
-   * deixar entrar frases que hoje são recusadas — uma mudança que ninguém pediu, escondida
+   * deixar entrar frases que hoje são recusadas, uma mudança que ninguém pediu, escondida
    * dentro de um conserto de números.
    */
   const unicas = [...new Set(frases)].map(numerosEmAlgarismo);
@@ -529,7 +529,7 @@ export function topicosDoRoteiro(roteiro) {
 }
 
 /**
- * As etiquetas do vídeo. Vive à parte desde 07/08 porque as OITO redes as usam — e
+ * As etiquetas do vídeo. Vive à parte desde 07/08 porque as OITO redes as usam, e
  * escritas à mão em oito sítios, um dia divergiam.
  */
 export function etiquetasDo(roteiro) {
@@ -578,8 +578,8 @@ export function montarLegenda(roteiro) {
 /**
  * A legenda em HTML, para o Multipost.
  *
- * ⚠️ **UM `<p>` POR LINHA, E NUNCA `<br>`.** A primeira entrega usou `<br>` — que é o
- * que a documentação deles lista como aceite — e o resultado, visto no editor, foi
+ * ⚠️ **UM `<p>` POR LINHA, E NUNCA `<br>`.** A primeira entrega usou `<br>`, que é o
+ * que a documentação deles lista como aceite, e o resultado, visto no editor, foi
  * **um parágrafo só, com tudo colado**: título, gancho, chamada e hashtags numa
  * papa. Foi o dono que viu: *"veja que no Instagram está muito mal formatado"*.
  * Um `<p>` é um bloco; um `<br>` é uma sugestão que o editor deitou fora.
@@ -592,7 +592,7 @@ export function legendaEmHtml(legenda) {
 }
 
 // ═══════════════════════════════════════════════════════════════════════════════
-// AS OUTRAS SETE REDES — cada uma com o seu texto (07/08/2026)
+// AS OUTRAS SETE REDES, cada uma com o seu texto (07/08/2026)
 // ═══════════════════════════════════════════════════════════════════════════════
 
 /**
@@ -600,7 +600,7 @@ export function legendaEmHtml(legenda) {
  *
  * O "comenta FINMOOVI" só existe onde há um robô a responder: **Instagram** (a automação
  * do Multipost manda mensagem privada) e **YouTube** (`src/scripts/youtube/comentarios.js`
- * responde no próprio comentário, de hora a hora). Nas outras SETE ninguém responde —
+ * responde no próprio comentário, de hora a hora). Nas outras SETE ninguém responde,
  * pedir lá seria uma promessa que ninguém cumpre. Ver IMPL26 §12-A.
  *
  * ⚠️ E o LINK só é clicável em cinco delas. No **Instagram** e no **TikTok** o endereço
@@ -614,14 +614,14 @@ const CHAMADA_SEM_LINK = '👉 Quer fazer essa conta com os SEUS números? Procu
  * 🔑 O LINK CERTO DESTE VÍDEO, e não a porta da frente do site.
  *
  * O repositório **já sabia** resolver isto: `resolveToolUrl` (em `upload-short.js`) olha a
- * palavra-chave, o tema e a categoria e devolve a calculadora daquele assunto — um vídeo
+ * palavra-chave, o tema e a categoria e devolve a calculadora daquele assunto, um vídeo
  * sobre cartão vai parar a `/ferramentas/calculadora-financiamento/`. Ela já era usada no
  * primeiro comentário do YouTube; **não estava a ser usada aqui**, e mandar toda a gente
  * para `finmoovi.com` desperdiça exatamente o que o Pinterest premeia: quem clica num pin
  * quer a FERRAMENTA, não a página inicial.
  *
  * ⚠️ Devolve também se o link é ESPECÍFICO: quando o tema não tem calculadora própria,
- * `resolveToolUrl` cai no índice das ferramentas — e aí a frase não pode dizer "a
+ * `resolveToolUrl` cai no índice das ferramentas, e aí a frase não pode dizer "a
  * calculadora deste vídeo", porque não há uma. Um texto que promete o que não existe é o
  * defeito que este projeto mais já pagou.
  */
@@ -638,12 +638,12 @@ export function linkDoVideo(roteiro) {
  * Os tópicos SEM a frase do produto.
  *
  * ⚠️ **É uma regra de ESTRUTURA, não de gosto.** Por desenho do roteiro, o bloco 4 (a
- * demonstração) é o único que nomeia o FinMoovi, e é escrito na PRIMEIRA PESSOA — *"eu
+ * demonstração) é o único que nomeia o FinMoovi, e é escrito na PRIMEIRA PESSOA, *"eu
  * joguei isso no FinMoovi e ele me mostrou…"*. Isso funciona dito em voz alta e funciona
  * numa legenda de Instagram; num post de LinkedIn lê-se como fala de vídeo colada num
  * texto. Aqui o produto entra UMA vez, na frase de fecho, e não disfarçado de índice.
  *
- * 🔴 E não se tenta reescrever o tom: **tom é gosto, e gosto não se mede com regex** — é a
+ * 🔴 E não se tenta reescrever o tom: **tom é gosto, e gosto não se mede com regex** é a
  * regra desta casa, paga com oito tentativas falhadas em 01/08. O que se faz é escolher
  * QUE frases entram, que é uma decisão de estrutura e mede-se com código.
  */
@@ -654,8 +654,8 @@ export function topicosSemOProduto(roteiro) {
 /**
  * Como se apresenta uma lista que pode ter zero, um ou dois itens.
  *
- * ⚠️ **UM item não é uma lista.** A primeira versão disto tinha um escape — *"se sobrar
- * só um, fica com os dois"* — e o escape anulava a regra no caso mais comum de todos: os
+ * ⚠️ **UM item não é uma lista.** A primeira versão disto tinha um escape, *"se sobrar
+ * só um, fica com os dois"* e o escape anulava a regra no caso mais comum de todos: os
  * roteiros têm normalmente DOIS tópicos e um deles é a demonstração. Resultado: a frase
  * falada continuava lá, e eu só vi ao olhar para o texto verdadeiro.
  * A saída não é desistir da regra, é apresentar melhor: **um item vai como frase
@@ -672,7 +672,7 @@ export function comoLista(itens) {
  *
  * ⚠️ A primeira versão comia SEMPRE a última palavra, mesmo quando o corte calhava
  * exatamente no fim de uma. Apanhado pela prova de mesa: "uma frase de teste aqui" com
- * 12 devolvia "uma frase" em vez de "uma frase de" — três caracteres deitados fora de
+ * 12 devolvia "uma frase" em vez de "uma frase de", três caracteres deitados fora de
  * graça, e num Bluesky de 300 isso conta.
  */
 export function cortarNaPalavra(texto, max) {
@@ -685,7 +685,7 @@ export function cortarNaPalavra(texto, max) {
 }
 
 /**
- * ENCAIXA O TEXTO NO LIMITE DAQUELA REDE — e a ordem por que se sacrifica é a que
+ * ENCAIXA O TEXTO NO LIMITE DAQUELA REDE, e a ordem por que se sacrifica é a que
  * importa.
  *
  * 🔴 **O LINK NUNCA CAI.** No Bluesky cabem 300 caracteres e no Pinterest 500: um corte
@@ -693,7 +693,7 @@ export function cortarNaPalavra(texto, max) {
  * para dar. Por isso os blocos dizem se são dispensáveis, e caem primeiro os que são.
  * Só depois, e em último caso, se encurta o texto livre (o gancho).
  *
- * ⚠️ Porque isto existe: o servidor **corta em silêncio** o que passa do limite dele —
+ * ⚠️ Porque isto existe: o servidor **corta em silêncio** o que passa do limite dele,
  * não devolve erro. Um post do Bluesky sem link ficaria publicado e ninguém saberia.
  */
 export function encaixarNoLimite(blocos, limite) {
@@ -720,7 +720,7 @@ const tituloEGancho = (roteiro) => ({
   gancho: ganchoDoRoteiro(roteiro),
 });
 
-/** TikTok — sem link clicável, e as etiquetas contam muito. */
+/** TikTok, sem link clicável, e as etiquetas contam muito. */
 export function legendaTikTok(roteiro, limite) {
   const { titulo, gancho } = tituloEGancho(roteiro);
   return encaixarNoLimite([
@@ -731,7 +731,7 @@ export function legendaTikTok(roteiro, limite) {
 }
 
 /**
- * Facebook — texto mais formal que o do Instagram, e com o link, que ali é clicável.
+ * Facebook, texto mais formal que o do Instagram, e com o link, que ali é clicável.
  * ⚠️ Sem "comenta FINMOOVI": o Facebook até PERMITE responder a comentário pela Meta,
  * mas o Multipost não oferece essa automação (só a do Instagram). Ver IMPL26 §12-A.
  */
@@ -748,13 +748,13 @@ export function legendaFormal(roteiro, limite) {
 }
 
 /**
- * LinkedIn — o único público que repara em texto malcuidado, e por isso o único que ganhou
+ * LinkedIn, o único público que repara em texto malcuidado, e por isso o único que ganhou
  * texto próprio.
  *
  * Três diferenças, e cada uma tem uma razão:
  *  1. **Sem a frase do produto entre os tópicos** (ver `topicosSemOProduto`): ali ela lê-se
  *     como fala de vídeo colada num post. O produto entra UMA vez, no fecho.
- *  2. **Quatro etiquetas, não seis.** O LinkedIn não é rede de descoberta por etiqueta —
+ *  2. **Quatro etiquetas, não seis.** O LinkedIn não é rede de descoberta por etiqueta,
  *     um bloco de seis lê-se como enchimento. Saem as duas mais genéricas.
  *  3. **O link é o da CALCULADORA daquele tema**, não a porta da frente do site: este
  *     público clica para ver a ferramenta, não para se inscrever em nada.
@@ -781,7 +781,7 @@ export function legendaLinkedIn(roteiro, limite) {
 }
 
 /**
- * Telegram — é o único canal que vira audiência PRÓPRIA (o público é uma lista, não um
+ * Telegram, é o único canal que vira audiência PRÓPRIA (o público é uma lista, não um
  * algoritmo), e o link é clicável. Por isso leva o vídeo, os tópicos e o endereço.
  */
 export function legendaTelegram(roteiro, limite) {
@@ -795,7 +795,7 @@ export function legendaTelegram(roteiro, limite) {
   ], limite);
 }
 
-/** Threads — 500 caracteres. Curto por obrigação, não por escolha. */
+/** Threads, 500 caracteres. Curto por obrigação, não por escolha. */
 export function legendaThreads(roteiro, limite) {
   const { titulo, gancho } = tituloEGancho(roteiro);
   return encaixarNoLimite([
@@ -805,7 +805,7 @@ export function legendaThreads(roteiro, limite) {
 }
 
 /**
- * Pinterest — 🔑 **o único da lista que é um BUSCADOR, não uma rede social.**
+ * Pinterest, 🔑 **o único da lista que é um BUSCADOR, não uma rede social.**
  *
  * ═══ POR QUE ESTE É DIFERENTE DE TODOS OS OUTROS ═══
  * Nas outras redes o texto acompanha o vídeo; aqui **o texto é que faz o pin ser
@@ -818,9 +818,9 @@ export function legendaThreads(roteiro, limite) {
  *
  * O que entra, por ordem de valor:
  *   1. o gancho (é a frase com as palavras do tema)
- *   2. os tópicos do vídeo — mais palavras do tema, e são elas que o Pinterest lê
+ *   2. os tópicos do vídeo, mais palavras do tema, e são elas que o Pinterest lê
  *   3. a frase da calculadora **com o endereço dela**
- *   4. as etiquetas, que aqui valem menos do que o texto — por isso são as primeiras a cair
+ *   4. as etiquetas, que aqui valem menos do que o texto, por isso são as primeiras a cair
  */
 export function legendaPinterest(roteiro, limite) {
   const { titulo, gancho } = tituloEGancho(roteiro);
@@ -837,7 +837,7 @@ export function legendaPinterest(roteiro, limite) {
 }
 
 /**
- * Bluesky — 300 caracteres e SEM VÍDEO (defeito do programa, diagnóstico FECHADO em
+ * Bluesky, 300 caracteres e SEM VÍDEO (defeito do programa, diagnóstico FECHADO em
  * 07/08: IMPL26 §10-B). Vai a capa, o gancho e o link, que aqui é clicável.
  */
 export function legendaBluesky(roteiro, limite) {
@@ -859,22 +859,22 @@ export const MAX_TITULO_PINTEREST = 95;
  * ═══ A TABELA DAS OITO REDES ═══
  *
  * A ORDEM É O RELÓGIO. O Instagram é o zero (as 19h do Brasil) e as outras saem a
- * seguir, com intervalos DESIGUAIS — 12, 14, 17, 15, 16, 17, 16 minutos. Desiguais de
+ * seguir, com intervalos DESIGUAIS, 12, 14, 17, 15, 16, 17, 16 minutos. Desiguais de
  * propósito: oito posts de quinze em quinze minutos certinhos é a assinatura de um robô.
  * A última sai às 20h47, ainda dentro do horário nobre do Brasil.
  *
  * `midia` diz o que vai anexado, e cada valor tem uma razão medida em 07/08:
- *   · 'video'      — o normal
- *   · 'video+capa' — só o Pinterest, e **o VÍDEO TEM DE IR PRIMEIRO**. Com a capa em 1º
+ *   · 'video'     , o normal
+ *   · 'video+capa', só o Pinterest, e **o VÍDEO TEM DE IR PRIMEIRO**. Com a capa em 1º
  *                    ficou preso na fila; com o vídeo em 1º publicou. A ordem é a regra.
- *   · 'capa'       — só o Bluesky, que não publica vídeo (defeito do programa, fechado).
+ *   · 'capa'      , só o Bluesky, que não publica vídeo (defeito do programa, fechado).
  *
  * 🔴 O `limite` aqui é só a REDE DE SEGURANÇA: o número verdadeiro é perguntado ao
  * servidor a cada corrida (`maxLength` em `/integration-settings/{id}`). Se ele mudar de
- * versão e apertar um limite, o robô segue o dele — não o que está escrito aqui.
+ * versão e apertar um limite, o robô segue o dele, não o que está escrito aqui.
  */
 /**
- * ✅ O TIKTOK VOLTOU À TABELA — 26/08/2026, ordem do dono: *"podemos religar o TikTok pra
+ * ✅ O TIKTOK VOLTOU À TABELA, 26/08/2026, ordem do dono: *"podemos religar o TikTok pra
  * valer e a sério"*. Ele fica aqui, numa constante própria, porque as provas de mesa o
  * medem pelo nome; e continua a entrar em `REDES`, no minuto 12.
  *
@@ -882,14 +882,14 @@ export const MAX_TITULO_PINTEREST = 95;
  * O `id` deixou de ser `'tiktok'` e passou a ser **`'zernio-tiktok'`**, e isto não é
  * cosmética: são **dois canais diferentes** no Multipost, com o mesmo nome "finmoovi" no
  * ecrã.
- *   · `tiktok`        — o canal ANTIGO, do nosso app próprio, **REPROVADO 3 vezes** pelo
+ *   · `tiktok`       , o canal ANTIGO, do nosso app próprio, **REPROVADO 3 vezes** pelo
  *                       TikTok (a última em 25/08, por *"personal or company internal
  *                       use"*). Publica só em privado, com a conta privada, 5/dia.
- *   · `zernio-tiktok` — o canal NOVO, que sai pelo app **já aprovado** do Zernio. Foi por
+ *   · `zernio-tiktok`, o canal NOVO, que sai pelo app **já aprovado** do Zernio. Foi por
  *                       aqui que saiu a 1ª publicação pública de verdade, em 26/08
  *                       (`tiktok.com/@finmoovi/video/7678287783979646230`).
  *
- * ⚠️ **Religar apontando ao `id` antigo publicaria pelo caminho que não funciona** — e em
+ * ⚠️ **Religar apontando ao `id` antigo publicaria pelo caminho que não funciona** e em
  * silêncio, porque o canal existe e aceita o pedido. Foi a armadilha nº1 desta mudança.
  *
  * ⚠️ **O Multipost MENTE sobre este canal:** `/integration-settings/{id}` responde *"No
@@ -914,20 +914,20 @@ export const REDES = [
 /**
  * 🔴 QUEM NÃO RECEBE NADA DAQUI, E PORQUÊ.
  *
- * Os dois continuam LIGADOS no Multipost — não foram desconectados. Só não recebem nada
+ * Os dois continuam LIGADOS no Multipost, não foram desconectados. Só não recebem nada
  * deste robô.
  *
  * ═══ X ═══
  * Desde 02/2026 cobra **US$ 0,015 por publicação e US$ 0,20 se ela tiver LINK**, e as
  * daqui têm link: ~US$ 6/mês só para o dono. Decisão dele em 07/08.
- * 🔑 Publicar à mão pelo site continua GRÁTIS — o que se paga é a API. Ver IMPL26 §12-F.
+ * 🔑 Publicar à mão pelo site continua GRÁTIS, o que se paga é a API. Ver IMPL26 §12-F.
  *
- * ═══ TIKTOK — ✅ SAIU DESTA LISTA EM 26/08/2026 ═══
+ * ═══ TIKTOK, ✅ SAIU DESTA LISTA EM 26/08/2026 ═══
  * Esteve aqui de 07/08 a 26/08 por ordem do dono: *"não quero enviar nada até eles nos dar
- * autorização para postar"* — nem em privado. **A razão desapareceu, não foi ignorada:** já
+ * autorização para postar"* nem em privado. **A razão desapareceu, não foi ignorada:** já
  * não dependemos da autorização deles. A publicação passou a sair pelo app **já aprovado do
  * Zernio**, e o argumento do §12-C (o empurrão do algoritmo acontece no momento da
- * publicação e não se recupera) deixou de jogar contra — agora o vídeo nasce **público**.
+ * publicação e não se recupera) deixou de jogar contra, agora o vídeo nasce **público**.
  *
  * 🔴 **O canal `tiktok` antigo continua ligado no Multipost e NÃO deve receber nada.** Ele é
  * do nosso app próprio, reprovado três vezes. Se alguém o puser em `REDES`, os vídeos saem
@@ -939,18 +939,18 @@ export const REDE_DE_FORA = {
 };
 
 /**
- * ⏸️ AS REDES EM PAUSA — 17/09/2026, ordem do dono: *"quero que pare o envio somente para o
+ * ⏸️ AS REDES EM PAUSA, 17/09/2026, ordem do dono: *"quero que pare o envio somente para o
  * Telegram por enquanto"*.
  *
  * ═══ O QUE É UMA PAUSA, E PORQUE NÃO É O MESMO QUE `REDE_DE_FORA` ═══
  * `REDE_DE_FORA` é uma porta fechada com uma razão permanente (o X cobra; o canal antigo do
- * TikTok está reprovado) — e essas redes **não estão na tabela**. Uma PAUSA é diferente: a
+ * TikTok está reprovado), e essas redes **não estão na tabela**. Uma PAUSA é diferente: a
  * rede continua inteira em `REDES`, com o seu minuto, o seu limite, o seu texto e as suas
  * provas de mesa. Só não recebe nada enquanto estiver escrita aqui.
  *
  * 🔑 **E é essa a diferença que interessa:** religar é apagar UMA linha deste objeto. Tirar
  * o Telegram da tabela obrigaria a mexer nos minutos das outras, na cópia apertada para os
- * 20 MB (`comprimirParaOTelegram`) e em nove provas — e religar seria reconstruir tudo isso
+ * 20 MB (`comprimirParaOTelegram`) e em nove provas, e religar seria reconstruir tudo isso
  * de memória, que é onde este projeto já se enganou antes.
  *
  * ⚠️ **Quem manda é `redesDoFormato`**, que é por onde passam os três formatos. Um sítio só:
@@ -965,39 +965,39 @@ export const REDES_EM_PAUSA = {
 };
 
 /**
- * 🔑 OS TRÊS FORMATOS DO CANAL — 10/08/2026.
+ * 🔑 OS TRÊS FORMATOS DO CANAL, 10/08/2026.
  *
  * ═══ O QUE ISTO VEIO ARRUMAR ═══
  * Até hoje este robô só sabia entregar UMA coisa: o Short de 50 segundos. Os dois Shorts
- * de 16s e o vídeo longo semanal subiam ao YouTube e paravam ali. Não era defeito — era
+ * de 16s e o vídeo longo semanal subiam ao YouTube e paravam ali. Não era defeito, era
  * trabalho por fazer, e por isso nada se queixava.
  *
  * ⚠️ **E NÃO CHEGAVA PÔ-LOS TODOS NA MESMA FILA.** Os formatos diferem em coisas que
  * mudam o que se pode publicar, e cada linha desta tabela é uma dessas diferenças:
  *
- * ═══ `pasta` — onde o Remotion escreve ═══
+ * ═══ `pasta`, onde o Remotion escreve ═══
  * O Short sai em `out/`; o longo sai em `out/longo/`. Adivinhar o caminho errado dá
  * *"não encontrei o vídeo"* e a corrida morre antes de tentar seja o que for.
  *
- * ═══ `redes` — 🔴 e é aqui que está a decisão de conteúdo ═══
+ * ═══ `redes`, 🔴 e é aqui que está a decisão de conteúdo ═══
  * O vídeo longo é **DEITADO (16:9) e tem 5 a 8 minutos**. O Instagram, o Threads e o
  * Pinterest são casas de vídeo **em pé e curto**: um vídeo deitado de sete minutos entra
  * lá como uma faixa fina no meio do ecrã, e é pior do que não entrar. Ele vai às quatro
  * onde vídeo comprido e deitado é normal: **Facebook, LinkedIn, Telegram e Bluesky**
  * (este leva a capa e o link, como sempre).
- * ⚠️ `null` quer dizer *todas* — é o que os dois formatos de Short usam.
+ * ⚠️ `null` quer dizer *todas* é o que os dois formatos de Short usam.
  *
- * ═══ `stories` — porquê nenhum, no longo ═══
+ * ═══ `stories`, porquê nenhum, no longo ═══
  * O Story tem tecto de 60 segundos: acima disso vai a **capa em pé**. O longo não tem
- * capa em pé — a dele é a miniatura do YouTube, deitada. Sobraria um Story com uma
+ * capa em pé, a dele é a miniatura do YouTube, deitada. Sobraria um Story com uma
  * imagem deitada esmagada no meio de um ecrã vertical.
  *
- * ═══ `horaBR` — três janelas que não se tocam ═══
+ * ═══ `horaBR`, três janelas que não se tocam ═══
  * Três vídeos por dia a cair no mesmo par de horas é a assinatura de um robô. Cada
  * formato tem a sua janela de 1h47, e o carteiro de cada um passa a sua `--hora`.
  */
 export const FORMATOS = {
-  // O Short de 50s — o que já existia. Continua a ser o padrão quando o roteiro não diz.
+  // O Short de 50s, o que já existia. Continua a ser o padrão quando o roteiro não diz.
   curto: { nome: 'Short de 50s', pasta: ['youtube-render', 'out'], redes: null, stories: true, horaBR: 19, comprimirParaTelegram: true },
   // Os dois de 16s em loop. Mesma pasta, mesmas redes; só a hora é que vem do turno.
   loop16: { nome: 'Short de 16s', pasta: ['youtube-render', 'out'], redes: null, stories: true, horaBR: 10, comprimirParaTelegram: true },
@@ -1009,25 +1009,25 @@ export const FORMATOS = {
     // 20h no domingo: a estreia no YouTube é às 19h, e as redes vêm DEPOIS dela.
     horaBR: 20,
     /**
-     * 🔴 O ÚNICO FORMATO QUE PODE PEDIR COMENTÁRIO — decisão do dono, 10/08/2026.
+     * 🔴 O ÚNICO FORMATO QUE PODE PEDIR COMENTÁRIO, decisão do dono, 10/08/2026.
      *
      * A trava do vídeo antigo (`falaPedeComentario`) existe para impedir uma promessa
      * quebrada: quem comenta numa rede sem robô não recebe nada. **Aqui a promessa é
-     * cumprida na mesma — só que por uma pessoa.**
+     * cumprida na mesma, só que por uma pessoa.**
      *
      * ⚠️ **É O VOLUME QUE SUSTENTA ISTO, e não o gosto.** Os Shorts são **três por dia em
      * sete redes** (vinte e um por semana): responder à mão é impossível, e por isso a
-     * fala deles manda PROCURAR o app. O longo é **UM por semana em quatro redes** — o
+     * fala deles manda PROCURAR o app. O longo é **UM por semana em quatro redes** o
      * dono olha os comentários do Facebook, LinkedIn, Telegram e Bluesky uma vez por
      * semana, e no YouTube o robô já responde sozinho (`comentarios.js`).
      *
-     * 🔴 **SE O LONGO PASSAR A SER MAIS DO QUE UM POR SEMANA, ISTO TEM DE CAIR** — junto
+     * 🔴 **SE O LONGO PASSAR A SER MAIS DO QUE UM POR SEMANA, ISTO TEM DE CAIR** junto
      * com a fala em `EXEMPLO_DE_CHAMADA`, que é onde ela é escrita. As duas andam
      * agarradas: a pastilha do ecrã, a voz e esta linha dizem a mesma coisa ou nenhuma.
      */
     chamadaRespondidaAMao: true,
     /**
-     * 🔴 O LONGO NÃO SE COMPRIME PARA O TELEGRAM — leva a capa e o link.
+     * 🔴 O LONGO NÃO SE COMPRIME PARA O TELEGRAM, leva a capa e o link.
      *
      * Ele tem **~136 MB** e 5 a 8 minutos. Espremê-lo para caber nos 20 MB do Telegram
      * (ver `TELEGRAM_MAX_BYTES`) seria tirar-lhe **85% do peso**: a imagem ficava
@@ -1035,18 +1035,18 @@ export const FORMATOS = {
      *
      * ⚠️ E não é só evitar o mal: um vídeo deitado de sete minutos DENTRO do Telegram é
      * mau de ver. A capa com o texto e o link leva a pessoa ao YouTube, que é onde ele
-     * foi feito para ser visto — e é o mesmo caminho que o Bluesky já faz.
+     * foi feito para ser visto, e é o mesmo caminho que o Bluesky já faz.
      */
     comprimirParaTelegram: false,
   },
 };
 
 /**
- * 🔴 O TETO DO TELEGRAM — 20 MB, e é a razão de o Short de ontem não ter saído lá.
+ * 🔴 O TETO DO TELEGRAM, 20 MB, e é a razão de o Short de ontem não ter saído lá.
  *
  * ═══ O CASO, MEDIDO EM 11/08/2026 ═══
  * O Telegram recusou o Short com `ETELEGRAM: 400 Bad Request: wrong type of the web page
- * content` — a **mesma frase** do defeito de 07/08, que era do rótulo do ficheiro. Só que
+ * content`, a **mesma frase** do defeito de 07/08, que era do rótulo do ficheiro. Só que
  * desta vez o rótulo estava certo: `curl -I` devolveu `video/mp4` nos dois. O que mudou
  * foi o **tamanho**:
  *
@@ -1055,7 +1055,7 @@ export const FORMATOS = {
  *   | teste de 07/08      | 18,6 MB    | ✅ publicou  |
  *   | Short de 10/08      | **23,8 MB**| ❌ recusado  |
  *
- * 🔑 **A causa: o Postiz não empurra o ficheiro — entrega o ENDEREÇO** (é o mesmo desenho
+ * 🔑 **A causa: o Postiz não empurra o ficheiro, entrega o ENDEREÇO** (é o mesmo desenho
  * que obrigou à verificação de domínio do TikTok, §3). E o Telegram, quando é ELE a ir
  * buscar por URL, aceita no máximo **20 MB** (por envio direto aceitaria 50). A mensagem
  * de erro não diz isso; diz sempre a mesma frase inútil.
@@ -1076,7 +1076,7 @@ export function formatoDoRoteiro(roteiro) {
  * As redes que este formato recebe.
  * ⚠️ Filtra `REDES`, nunca constrói uma lista nova: assim os minutos, os limites e a
  * ordem continuam a vir de um sítio só, e o TikTok continua fora de todos.
- * ⏸️ E as redes EM PAUSA caem aqui, antes de tudo — ver `REDES_EM_PAUSA`.
+ * ⏸️ E as redes EM PAUSA caem aqui, antes de tudo, ver `REDES_EM_PAUSA`.
  */
 export function redesDoFormato(formato, redes = REDES) {
   const ligadas = redes.filter((r) => !REDES_EM_PAUSA[r.id]);
@@ -1087,11 +1087,11 @@ export function redesDoFormato(formato, redes = REDES) {
 /**
  * 🔴 O TÍTULO DO VÍDEO LONGO NÃO CABE EM LADO NENHUM.
  *
- * O `term` de um Short tem 20 a 40 letras. O do longo é o título do YouTube inteiro —
+ * O `term` de um Short tem 20 a 40 letras. O do longo é o título do YouTube inteiro,
  * o de 10/08 tem **140 letras**. Ele entra como primeira linha da legenda e, no Bluesky
  * (300) e no Threads (500), comia o texto todo e o link ia ao corte.
  *
- * ⚠️ Corta-se na PALAVRA e só quando passa — um título curto não é tocado.
+ * ⚠️ Corta-se na PALAVRA e só quando passa, um título curto não é tocado.
  */
 export const MAX_TITULO_NA_LEGENDA = 90;
 export function tituloParaLegenda(roteiro) {
@@ -1104,18 +1104,18 @@ export function tituloParaLegenda(roteiro) {
  *
  * ═══ O CASO REAL QUE OBRIGOU A ESCREVER ISTO (07/08) ═══
  * No dia em que a distribuição passou de uma rede para oito, havia **dois vídeos já
- * produzidos e à espera na fila** — e os dois FALAM *"comenta FINMOOVI aqui embaixo que
+ * produzidos e à espera na fila** e os dois FALAM *"comenta FINMOOVI aqui embaixo que
  * eu te mando o aplicativo"*. Mandá-los para TikTok, Facebook, LinkedIn, Threads,
  * Telegram, Pinterest e Bluesky seria recriar, no primeiro dia, exatamente a promessa
  * quebrada que este trabalho todo veio consertar: lá ninguém responde.
  *
  * ✅ **O que esta trava faz:** um vídeo cuja fala ainda pede comentário sai **só no
  * Instagram** (onde a automação existe e cumpre). As outras sete ficam de fora, e o
- * registo diz porquê — nunca em silêncio.
+ * registo diz porquê, nunca em silêncio.
  *
  * ⚠️ **Ela desliga-se sozinha.** A partir do primeiro vídeo escrito com a fala nova
  * ("procura FinMoovi"), isto deixa de disparar e as oito recebem. Não é preciso lembrar-se
- * de a tirar — e é por isso que ela pode ficar para sempre, sem custo.
+ * de a tirar, e é por isso que ela pode ficar para sempre, sem custo.
  */
 export function falaPedeComentario(roteiro) {
   const cena = (roteiro?.scenes || []).find((s) => s && s.role === 'cta');
@@ -1123,7 +1123,7 @@ export function falaPedeComentario(roteiro) {
 }
 
 // ═══════════════════════════════════════════════════════════════════════════════
-// O caderno — o que já foi agendado, para nunca agendar duas vezes
+// O caderno, o que já foi agendado, para nunca agendar duas vezes
 // ═══════════════════════════════════════════════════════════════════════════════
 
 function lerCaderno() {
@@ -1145,13 +1145,13 @@ function gravarCaderno(d) {
  * O QUE JÁ SAIU DESTE VÍDEO, E O QUE AINDA FALTA.
  *
  * 🔑 É isto que dá RETOMA. Antes o caderno era tudo-ou-nada: bastava existir uma entrada
- * para o robô recusar o slug para sempre. Com oito redes isso seria mau — bastava o
+ * para o robô recusar o slug para sempre. Com oito redes isso seria mau, bastava o
  * Bluesky falhar para as outras sete ficarem impossíveis de repetir, ou (pior) para
  * tudo ser republicado numa tentativa de arranjar uma.
  *
  * ⚠️ **UM REGISTO ANTIGO (sem `redes`) É DIA FECHADO.** Ele é de quando só havia
  * Instagram. Tratá-lo como "faltam sete" mandaria um vídeo de há uma semana para sete
- * redes de uma vez, no mesmo minuto — exatamente o que a tabela de horários evita.
+ * redes de uma vez, no mesmo minuto, exatamente o que a tabela de horários evita.
  */
 export function oQueFalta(registoDoSlug, redes = REDES) {
   const ids = redes.map((r) => r.id);
@@ -1179,14 +1179,14 @@ function chave() {
  *
  * ⚠️ **A BOMBA-RELÓGIO EXPLODIU NO MESMO DIA.** Escrevi aqui, em 05/08, que um
  * identificador copiado para dentro do código rebentaria no dia em que o dono
- * reconectasse a conta. Nessa mesma noite ele reconectou — e o identificador mudou
+ * reconectasse a conta. Nessa mesma noite ele reconectou, e o identificador mudou
  * mesmo (`cmrvycxcg…` passou a `cmsh1wws…`). Este robô não sentiu nada, porque
  * pergunta. **A automação das mensagens privadas, essa, ficou órfã** e teve de ser
  * recriada à mão: uma automação pertence a um canal e não se pode mudar de canal
  * (a API responde 412).
  *
  * 📌 **REGRA, PARA A PRÓXIMA VEZ:** sempre que o Instagram for reconectado no
- * Multipost, é preciso **recriar a automação** — apagar e criar de novo, porque
+ * Multipost, é preciso **recriar a automação** apagar e criar de novo, porque
  * editar não a move. E criar exige `replyMessage` no SINGULAR: com o plural, o
  * servidor cria só o gatilho e a automação fica muda, sem se queixar.
  */
@@ -1198,7 +1198,7 @@ async function listarCanais(k) {
 }
 
 /**
- * 🔴 A CONTA DESTA CASA — 25/08/2026, e nasceu de um susto que quase não foi visto.
+ * 🔴 A CONTA DESTA CASA, 25/08/2026, e nasceu de um susto que quase não foi visto.
  *
  * ═══ O QUE ACONTECEU ═══
  * Em 24/08 o dono ligou ao mesmo Multipost as contas de **outra marca dele, a GoApexi**:
@@ -1206,13 +1206,13 @@ async function listarCanais(k) {
  * duas de Facebook** no mesmo servidor.
  *
  * E este robô escolhia **a primeira que o servidor devolvesse**, com um aviso no registo e
- * mais nada. Nesse dia calhou vir a do FinMoovi primeiro — **por sorte**. A ordem é
+ * mais nada. Nesse dia calhou vir a do FinMoovi primeiro, **por sorte**. A ordem é
  * decidida lá dentro, não por nós: basta o dono reconectar a conta (o identificador muda,
  * e já mudou uma vez) para ela passar a vir em segundo, e o Short diário do FinMoovi ia
  * publicar **no Instagram da outra marca**.
  *
  * 🔑 **UM AVISO NO REGISTO NÃO É UMA TRAVA.** Este robô corre de madrugada e ninguém lê o
- * registo de uma corrida verde — é a mesma família de defeito do `catch` que só escreve no
+ * registo de uma corrida verde, é a mesma família de defeito do `catch` que só escreve no
  * log e deixa a corrida verde mentirosa (o monitor do blog morreu 28 dias assim).
  *
  * ═══ A REGRA NOVA ═══
@@ -1226,7 +1226,7 @@ async function listarCanais(k) {
  * apanha os 10 do FinMoovi e deixa de fora os 2 da GoApexi.
  *
  * ⚠️ **É comparação EXATA, nunca "contém".** Com "contém", uma conta chamada
- * "FinMoovi Clube" entraria calada — que é exatamente o tipo de erro que isto veio travar.
+ * "FinMoovi Clube" entraria calada, que é exatamente o tipo de erro que isto veio travar.
  */
 export const NOSSA_CONTA = (process.env.MULTIPOST_CONTA || 'finmoovi').trim().toLowerCase();
 
@@ -1242,7 +1242,7 @@ export function eDaNossaConta(canal, conta = NOSSA_CONTA) {
 }
 
 /**
- * O canal DA NOSSA CONTA naquela rede, ou `null` — e `null` nunca é silêncio: quem chama
+ * O canal DA NOSSA CONTA naquela rede, ou `null`, e `null` nunca é silêncio: quem chama
  * trata-o como "não está ligado" (aviso nas redes acessórias, falha no Instagram, que é o
  * principal), e o motivo verdadeiro fica escrito no registo.
  */
@@ -1257,7 +1257,7 @@ export function canalDaRede(canais, rede, registar = () => {}, conta = NOSSA_CON
   }
   /**
    * 🔴 DUAS CONTAS COM O MESMO NOME: não se adivinha. Escolher uma seria uma moeda ao ar
-   * com o perfil de uma marca em jogo — e a coroa não se desfaz.
+   * com o perfil de uma marca em jogo, e a coroa não se desfaz.
    */
   if (meus.length > 1) {
     registar(`🔴 ${rede.nome}: há ${meus.length} contas chamadas "${conta}" ligadas ao mesmo tempo — não dá para saber qual é, e chutar publicaria na errada. Desligue uma no painel.`);
@@ -1279,7 +1279,7 @@ async function canalDoInstagram(k) {
  * O LIMITE DE TEXTO DAQUELA REDE, PERGUNTADO AO SERVIDOR.
  *
  * ⚠️ **Porque não basta o número escrito na tabela:** o servidor **corta em silêncio** o
- * que passa do limite dele — não devolve erro nenhum. Um Bluesky sem o link ficaria
+ * que passa do limite dele, não devolve erro nenhum. Um Bluesky sem o link ficaria
  * publicado e ninguém saberia. E o limite muda com a versão do Multipost.
  * Se a pergunta falhar, vale a rede de segurança da tabela: uma indisponibilidade a ler
  * um número não pode impedir a publicação do dia.
@@ -1297,7 +1297,7 @@ async function limiteDaRede(k, canalId, rede) {
 }
 
 /**
- * O QUADRO DO PINTEREST — perguntado, nunca escrito no código.
+ * O QUADRO DO PINTEREST, perguntado, nunca escrito no código.
  *
  * O `board` é obrigatório e o número dele muda se a conta for reconectada. É a mesma
  * bomba-relógio do identificador do canal, que já rebentou uma vez neste projeto (05/08,
@@ -1360,27 +1360,27 @@ export async function enviarFicheiro(k, caminho, nome, tipo = 'video/mp4', { fet
 }
 
 /**
- * 🔴 06/08/2026 — A CAPA DO REEL: DUAS CONCLUSÕES ERRADAS ANTES DA VERDADEIRA.
+ * 🔴 06/08/2026, A CAPA DO REEL: DUAS CONCLUSÕES ERRADAS ANTES DA VERDADEIRA.
  *
  * O dono viu que o "Editor" da capa, no painel, aparecia **vazio**, e perguntou se ela
  * estava mesmo a ser enviada. As duas primeiras respostas foram erradas:
  *
- *   ❌ *"o campo `cover` não existe"* — tirado do código-fonte público do Postiz, onde
+ *   ❌ *"o campo `cover` não existe"* tirado do código-fonte público do Postiz, onde
  *      de facto não existe. **Mas este servidor não é essa versão.** Perguntando-lhe
  *      diretamente (`--inspecionar`), ele responde que aceita
  *      `cover: { id, path, alt?, thumbnail? }`, com `id` e `path` **obrigatórios**.
- *   ❌ *"então a capa vai junto do vídeo, no `thumbnail` da média"* — também não. Isso
+ *   ❌ *"então a capa vai junto do vídeo, no `thumbnail` da média"* também não. Isso
  *      é a miniatura da MÉDIA; a capa do Reel é a de cima.
  *
  * ✅ **A CAUSA VERDADEIRA NÃO ESTAVA NO CAMPO. A CAPA NUNCA CHEGOU A SER ENVIADA.**
  * O registo da entrega de 06/08 di-lo à letra: *"não veio capa no artefato"*. O vídeo
  * desse dia foi produzido a **05/08 às 09h15**, e a capa só passou a ser tirada na
- * produção às **21h45 desse mesmo dia** — doze horas depois. **Não havia ficheiro.**
+ * produção às **21h45 desse mesmo dia** doze horas depois. **Não havia ficheiro.**
  * A partir do primeiro vídeo produzido depois disso, a capa viaja no artefato.
  *
  * ⚠️ **A LIÇÃO, e é a mais cara do dia:** eu li o código-fonte PÚBLICO e concluí sobre
  * o servidor DO DONO. São versões diferentes. **A um servidor pergunta-se; não se lê o
- * código de outro parecido.** E o dono insistiu duas vezes contra a minha conclusão —
+ * código de outro parecido.** E o dono insistiu duas vezes contra a minha conclusão,
  * tinha razão as duas.
  *
  * ⚠️ O `path` tem de ser um endereço completo (o servidor valida-o). Na dúvida vai-se
@@ -1401,13 +1401,13 @@ export function capaParaOInstagram(capa, registar = () => {}) {
  * isso a única forma de o ver era publicar.
  */
 /**
- * O ENVELOPE — a parte do pedido que é igual em todas as redes.
+ * O ENVELOPE, a parte do pedido que é igual em todas as redes.
  *
  * ⚠️ **A `date` fica AQUI FORA, e é isso que obriga a uma chamada por rede.** Ela vale
  * para o pedido inteiro, não por post: pôr as oito na mesma chamada fá-las-ia sair todas
  * no mesmo minuto. Está medido no contrato do servidor (`/api/docs-json`).
  *
- * `midias` é uma LISTA porque o Pinterest precisa de duas — e **na ordem certa**.
+ * `midias` é uma LISTA porque o Pinterest precisa de duas, e **na ordem certa**.
  */
 export function montarPedido({ canalId, midias, legenda, quandoUTC, settings }) {
   return {
@@ -1427,11 +1427,11 @@ export function montarPedido({ canalId, midias, legenda, quandoUTC, settings }) 
 }
 
 /**
- * ♦ 10/08/2026 — O REEL DE TESTE FOI RETIRADO. ESTA CONTA NÃO O ACEITA.
+ * ♦ 10/08/2026, O REEL DE TESTE FOI RETIRADO. ESTA CONTA NÃO O ACEITA.
  *
  * A ideia era boa e foi ordem do dono em 06/08: o Instagram mostra o Reel de teste
  * **primeiro só a quem NÃO segue o perfil** e, se os números forem bons, "gradua" e
- * passa também aos seguidores — que é exatamente o que interessa a um canal a começar.
+ * passa também aos seguidores, que é exatamente o que interessa a um canal a começar.
  *
  * 🔴 **SÓ QUE A CONTA @finmoovi NÃO É ELEGÍVEL, e a prova está no servidor.** Foram lidos
  * os quatro Reels agendados desde então, um a um, e a conta é sempre a mesma:
@@ -1451,14 +1451,14 @@ export function montarPedido({ canalId, midias, legenda, quandoUTC, settings }) 
  * Este robô só ENTREGA o pedido, ao meio-dia; quem publica é o Multipost, às 19h. O
  * agendamento é aceite com `200`, a corrida do GitHub acaba **verde**, e o post morre
  * sete horas depois sem ninguém a olhar. É essa a família de defeito, e a cura não é
- * este conserto — é o vigia (`vigiar.js`), que nasceu no mesmo dia por causa disto.
+ * este conserto, é o vigia (`vigiar.js`), que nasceu no mesmo dia por causa disto.
  *
- * ⚠️ **PARA VOLTAR A LIGAR** (se um dia a conta ficar elegível — a elegibilidade é da
+ * ⚠️ **PARA VOLTAR A LIGAR** (se um dia a conta ficar elegível, a elegibilidade é da
  * Meta e muda com o tamanho e o tipo da conta): repor `is_trial_reel: true` **e**
  * `graduation_strategy: 'SS_PERFORMANCE'` (na opção `MANUAL` alguém tem de carregar num
  * botão para o vídeo chegar aos seguidores, e uma regra que depende de alguém se lembrar
  * não é uma regra). E o Instagram **não deixa ter convidados (`collaborators`) num Reel
- * de teste** — as duas coisas juntas dão erro.
+ * de teste** as duas coisas juntas dão erro.
  *
  * 🔴 **Mas não repor sem PROVAR primeiro num envio verdadeiro**, porque o erro não
  * aparece na entrega: aparece horas depois, no servidor. Há uma prova de mesa a segurar
@@ -1474,14 +1474,14 @@ export function corpoDoAgendamento({ canalId, media, capa, legenda, quandoUTC },
     settings: {
       __type: 'instagram',
       post_type: 'post',
-      // ⚠️ A capa só entra quando existe E está inteira — ver `capaParaOInstagram`.
+      // ⚠️ A capa só entra quando existe E está inteira, ver `capaParaOInstagram`.
       ...(cover ? { cover } : {}),
     },
   });
 }
 
 /**
- * ♦ 06/08/2026 — O MESMO VÍDEO TAMBÉM NO STORY, MINUTOS DEPOIS DO REEL.
+ * ♦ 06/08/2026, O MESMO VÍDEO TAMBÉM NO STORY, MINUTOS DEPOIS DO REEL.
  *
  * Pedido do dono: *"todo Reel publicado, depois de alguns segundos, é enviado também
  * no Story"*.
@@ -1489,16 +1489,16 @@ export function corpoDoAgendamento({ canalId, media, capa, legenda, quandoUTC },
  * 🔴 **NÃO É O "REPOSTAR" DA APLICAÇÃO, E ISSO NÃO SE PODE CONSERTAR.** A referência
  * oficial da Meta não tem parâmetro nenhum para republicar um Reel existente como
  * Story: o autocolante do Reel, aquele em que se toca para ir ver, **só existe dentro
- * da aplicação do telemóvel**. O que vai é o **mesmo vídeo**, publicado como Story —
+ * da aplicação do telemóvel**. O que vai é o **mesmo vídeo**, publicado como Story,
  * o conteúdo chega, o atalho de volta não.
  *
  * ⚠️ **O STORY TEM TETO DE 60 SEGUNDOS** (regra da Meta: entre 3 e 60). Os nossos
- * Shorts andam nos 41–65 segundos — **medido, um dos que estão no ar tem 1:05**. Um
+ * Shorts andam nos 41-65 segundos, **medido, um dos que estão no ar tem 1:05**. Um
  * vídeo mais comprido faz o Instagram recusar o Story. Por isso, quando ele não cabe,
  * **vai a CAPA em pé** em vez do vídeo: um Story que mostra o gancho é melhor do que
  * um Story que não sai. Nada é saltado em silêncio, e o registo diz sempre qual foi.
  *
- * ⚠️ **O vídeo NÃO é enviado outra vez** — reaproveita-se a média já entregue para o
+ * ⚠️ **O vídeo NÃO é enviado outra vez** reaproveita-se a média já entregue para o
  * Reel. Um segundo envio de 25 MB por dia, para nada.
  */
 export function corpoDoStory({ canalId, media, legenda, quandoUTC, rede = 'instagram' }) {
@@ -1507,23 +1507,23 @@ export function corpoDoStory({ canalId, media, legenda, quandoUTC, rede = 'insta
     midias: [media],
     legenda,
     quandoUTC,
-    // ⚠️ Um Story não leva Reel de teste nem capa — são coisas do Reel. E convidados
+    // ⚠️ Um Story não leva Reel de teste nem capa, são coisas do Reel. E convidados
     // o Instagram também não aceita em Stories.
     settings: { __type: rede, post_type: 'story' },
   });
 }
 
 /**
- * ♦ 07/08/2026 — O STORY DO FACEBOOK, a pedido do dono.
+ * ♦ 07/08/2026, O STORY DO FACEBOOK, a pedido do dono.
  *
  * ═══ PERGUNTOU-SE AO SERVIDOR, E ELE RESPONDEU ═══
  * Só **dois** canais aceitam `post_type` com o valor `"story"`: o **Instagram** e o
- * **Facebook**. Threads, LinkedIn e Telegram nem têm esse campo — neles não existe Story
+ * **Facebook**. Threads, LinkedIn e Telegram nem têm esse campo, neles não existe Story
  * nenhum para publicar, e não é falta de tentativa nossa.
  *
  * ⚠️ **Cada Story sai 5 minutos depois do post daquela rede**, e não a uma hora fixa: o
  * Story é o eco do post, e um eco antes do original não faz sentido. Se um dia a rede
- * mudar de lugar na fila, o Story dela vai atrás sozinho — é por isso que os minutos são
+ * mudar de lugar na fila, o Story dela vai atrás sozinho, é por isso que os minutos são
  * CALCULADOS a partir de `REDES`, e não escritos aqui.
  *
  * 🔴 **E um Story só sai se o post daquela rede tiver saído.** Sem essa regra, um dia em
@@ -1535,22 +1535,22 @@ export const STORIES = [
   { id: 'facebook-story', canal: 'facebook', nome: 'Story do Facebook' },
 ];
 
-/** A que minuto da fila sai o Story daquela rede — 5 minutos depois do post dela. */
+/** A que minuto da fila sai o Story daquela rede, 5 minutos depois do post dela. */
 export function minutosDoStory(story, redes = REDES) {
   const dona = redes.find((r) => r.id === story.canal);
   return dona ? dona.minutos + MINUTOS_ATE_O_STORY : null;
 }
 
 /**
- * 🔴 OS STORIES QUE AINDA NÃO SAÍRAM — e por que isto existe à parte.
+ * 🔴 OS STORIES QUE AINDA NÃO SAÍRAM, e por que isto existe à parte.
  *
  * A conta do que falta (`oQueFalta`) olha só para as REDES. Bastava as sete saírem e um
  * Story falhar para o robô dizer *"já foi agendado nas 7 redes, nada a fazer"* e **nunca
- * mais o tentar** — a única cura seria editar o caderno à mão. Apanhado a reler o código,
+ * mais o tentar** a única cura seria editar o caderno à mão. Apanhado a reler o código,
  * como os outros três defeitos do dia.
  *
  * ⚠️ Só conta o Story de uma rede que ENTREGA hoje: se o Facebook está fora, o Story dele
- * não está "em falta" — não tem de existir.
+ * não está "em falta", não tem de existir.
  */
 export function storiesEmFalta(registoDoSlug, redes = REDES, stories = STORIES) {
   return stories
@@ -1564,42 +1564,42 @@ export function storiesEmFalta(registoDoSlug, redes = REDES, stories = STORIES) 
 
 /**
  * As opções que cada rede recebe. **Todas foram perguntadas ao servidor** com
- * `--inspecionar` em 07/08 — nenhuma foi deduzida do código-fonte público do Postiz,
+ * `--inspecionar` em 07/08, nenhuma foi deduzida do código-fonte público do Postiz,
  * que é outra versão. Essa lição custou duas respostas erradas em 06/08.
  *
  * O que o servidor respondeu que EXIGE:
- *   · TikTok    — privacy_level, duet, stitch, comment, autoAddMusic, brand_content_toggle,
+ *   · TikTok   , privacy_level, duet, stitch, comment, autoAddMusic, brand_content_toggle,
  *                 brand_organic_toggle, content_posting_method (oito campos obrigatórios)
- *   · Pinterest — board (e aceita title, link, dominant_color)
- *   · Instagram — post_type
- *   · os outros — nada obrigatório
+ *   · Pinterest, board (e aceita title, link, dominant_color)
+ *   · Instagram, post_type
+ *   · os outros, nada obrigatório
  */
 export function opcoesDaRede(rede, { titulo, quadroDoPinterest, link, legenda } = {}) {
   switch (rede.id) {
     case 'tiktok':
     case 'zernio-tiktok':
       /**
-       * ✅ 26/08/2026 — PASSOU A `PUBLIC_TO_EVERYONE`. Até 25/08 era `SELF_ONLY` e não era
+       * ✅ 26/08/2026, PASSOU A `PUBLIC_TO_EVERYONE`. Até 25/08 era `SELF_ONLY` e não era
        * zelo a mais: com o nosso app por aprovar, o TikTok RECUSAVA tudo o que não fosse
        * privado e ainda exigia a **conta** privada (a 2ª parede de 07/08, IMPL26 §3). Agora
-       * quem publica é o app **aprovado** do Zernio e essas duas exigências caíram — provado
+       * quem publica é o app **aprovado** do Zernio e essas duas exigências caíram, provado
        * no ar em 26/08 com o vídeo `7678287783979646230`.
        *
        * ⚠️ **`description` E `content` são os nomes do ZERNIO, e é por eles que a legenda
        * chega.** O Postiz passa estas opções **cruas** para o `platformSpecificData` do
        * Zernio, por isso qualquer campo dele funciona desde que se escreva com o nome dele.
-       * Sem estes dois, o vídeo sai **sem legenda e sem hashtags** — foi exactamente o que
+       * Sem estes dois, o vídeo sai **sem legenda e sem hashtags** foi exactamente o que
        * aconteceu nos primeiros testes de 25/08, e demorou a perceber porque o `title` (nome
        * do Postiz) chegava e dava a ilusão de que o texto ia junto.
-       * 🔴 **`title` tem tecto de 90 caracteres** e o servidor recusa com 400 acima disso —
+       * 🔴 **`title` tem tecto de 90 caracteres** e o servidor recusa com 400 acima disso,
        * por isso a legenda comprida vai em `description`, e o `title` vai cortado.
        *
        * ⚠️ `brand_content_toggle` TEM de ficar desligado: ligado + privado = recusa. Medido.
        * ⚠️ `video_made_with_ai: true` porque a VOZ é sintetizada e o roteiro é escrito por
-       *    IA. Declarar é o lado honesto e o TikTok mostra o selo — já visível no vídeo de
+       *    IA. Declarar é o lado honesto e o TikTok mostra o selo, já visível no vídeo de
        *    26/08. **Agora que o vídeo nasce público, isto TEM custo de alcance possível e
        *    mesmo assim fica**: é uma declaração verdadeira.
-       * ⚠️ `content_posting_method: DIRECT_POST` — em "UPLOAD" fica um rascunho à espera de
+       * ⚠️ `content_posting_method: DIRECT_POST`, em "UPLOAD" fica um rascunho à espera de
        *    alguém pegar no telemóvel, que para um robô é o mesmo que não publicar. E o
        *    rascunho do TikTok chega **sem legenda nenhuma** (medido em 26/08), o que o torna
        *    ainda pior do que parecia.
@@ -1621,13 +1621,13 @@ export function opcoesDaRede(rede, { titulo, quadroDoPinterest, link, legenda } 
       };
     case 'pinterest':
       /**
-       * ⚠️ O `board` é OBRIGATÓRIO e o número dele **muda se a conta for reconectada** —
+       * ⚠️ O `board` é OBRIGATÓRIO e o número dele **muda se a conta for reconectada**,
        * a mesma bomba-relógio do identificador do canal, que já rebentou uma vez. Por isso
        * ele é PERGUNTADO ao servidor a cada corrida (ver `quadroDoPinterest`), nunca escrito
        * aqui.
        */
       /**
-       * ⚠️ O `link` é o **destino do pin** — é para lá que vai quem clica. Era `APP_URL`,
+       * ⚠️ O `link` é o **destino do pin** é para lá que vai quem clica. Era `APP_URL`,
        * a porta da frente; passou a ser a calculadora daquele tema (ver `linkDoVideo`).
        * Quem procura "juros do cartão" no Pinterest quer a conta, não a página de entrada.
        */
@@ -1648,14 +1648,14 @@ export function opcoesDaRede(rede, { titulo, quadroDoPinterest, link, legenda } 
 
 /**
  * O que vai anexado, na ORDEM que cada rede exige. Devolve também o motivo quando não dá
- * para publicar — um robô que salta uma rede tem de dizer sempre porquê.
+ * para publicar, um robô que salta uma rede tem de dizer sempre porquê.
  *
  * 🔴 **PINTEREST: O VÍDEO PRIMEIRO, A CAPA DEPOIS.** O aviso deles diz que um vídeo exige
  * uma segunda mídia de capa; o que eles NÃO dizem é que a ordem conta. Medido em 07/08:
  * com a capa em 1º ficou preso na fila para sempre; com o vídeo em 1º, publicou.
  *
  * 🔴 **BLUESKY NÃO LEVA VÍDEO.** Não é falta de tentativa: quatro provas em 07/08 mostram
- * que o download funciona, a rede funciona e a conta funciona — o defeito está no código
+ * que o download funciona, a rede funciona e a conta funciona, o defeito está no código
  * do Multipost (`bluesky.provider.ts:97`). Diagnóstico FECHADO, não repetir. Vai a capa.
  */
 export function midiasDaRede(rede, { media, capa, capaLarga, mediaTelegram }) {
@@ -1669,13 +1669,13 @@ export function midiasDaRede(rede, { media, capa, capaLarga, mediaTelegram }) {
      * ⚠️ AQUI VAI A CAPA **DEITADA**, e não a mesma do Instagram.
      *
      * A produção tira DUAS fotografias do mesmo instante e do mesmo texto: uma em pé
-     * (1080×1920) e uma deitada (1280×720). Não é uma cortada da outra — a deitada tem
+     * (1080×1920) e uma deitada (1280×720). Não é uma cortada da outra, a deitada tem
      * desenho próprio, com o texto à esquerda e o boneco à direita.
      *
      * 🔴 A em pé tem, entre o título e o boneco, **uma faixa vazia que ocupa quase um
      * terço da imagem**. Em tela cheia (Reel, Pinterest) isso é respiro e fica bem; num
      * feed de texto como o Bluesky, onde a imagem entra numa caixa larga, é essa faixa
-     * que fica à vista — e some o número E o boneco.
+     * que fica à vista, e some o número E o boneco.
      *
      * ⚠️ **Isto é raciocínio, não medição.** Não se conferiu como o Bluesky corta na conta
      * do dono. Fica escolhida a deitada por ser a que não tem espaço morto seja qual for o
@@ -1693,7 +1693,7 @@ export function midiasDaRede(rede, { media, capa, capaLarga, mediaTelegram }) {
     };
   }
   /**
-   * 🔴 O TELEGRAM É O ÚNICO QUE TEM TETO DE TAMANHO — ver `TELEGRAM_MAX_BYTES`.
+   * 🔴 O TELEGRAM É O ÚNICO QUE TEM TETO DE TAMANHO, ver `TELEGRAM_MAX_BYTES`.
    *
    * As outras seis **baixam o ficheiro** e não se queixam do peso. O Telegram vai buscá-lo
    * por endereço e recusa acima de 20 MB, com uma frase que não diz isso.
@@ -1701,7 +1701,7 @@ export function midiasDaRede(rede, { media, capa, capaLarga, mediaTelegram }) {
    * Por isso ele recebe, por esta ordem:
    *   1. a **cópia comprimida**, quando o vídeo passava do teto e coube depois de apertar;
    *   2. o **vídeo tal e qual**, quando já cabia (é o caso dos Shorts de 16s, com ~9 MB);
-   *   3. a **capa e o texto com o link**, quando não há como caber — o vídeo longo, e
+   *   3. a **capa e o texto com o link**, quando não há como caber, o vídeo longo, e
    *      qualquer dia em que a compressão não corra (ffmpeg em falta, por exemplo).
    *
    * ⚠️ **O caso 3 nunca é silêncio**: o post sai à mesma, com imagem e link, e o motivo
@@ -1726,15 +1726,15 @@ export function midiasDaRede(rede, { media, capa, capaLarga, mediaTelegram }) {
 }
 
 /**
- * A CÓPIA DO VÍDEO PARA O TELEGRAM, apertada até caber — ver `TELEGRAM_MAX_BYTES`.
+ * A CÓPIA DO VÍDEO PARA O TELEGRAM, apertada até caber, ver `TELEGRAM_MAX_BYTES`.
  *
  * 🔑 **A taxa é CALCULADA a partir da duração, não escolhida ao calhas.** Um Short de 50
  * segundos com alvo de 18 MB dá ~2,9 Mbps de imagem, que num vídeo vertical de desenho é
- * de sobra — a diferença não se vê. Fixar um CRF às cegas dava ficheiros de tamanho
+ * de sobra, a diferença não se vê. Fixar um CRF às cegas dava ficheiros de tamanho
  * imprevisível, e o que aqui interessa é **um número máximo**, não uma qualidade máxima.
  *
  * ⚠️ **NUNCA MATA A CORRIDA.** Sem ffmpeg, com o vídeo sem duração legível, ou se a
- * compressão não chegar ao teto, devolve `null` — e quem chama manda a capa e o link.
+ * compressão não chegar ao teto, devolve `null`, e quem chama manda a capa e o link.
  * Um Telegram com imagem é melhor do que uma corrida vermelha.
  *
  * ⚠️ Devolve também o vídeo ORIGINAL, sem tocar nele, quando ele já cabia. É o caso dos
@@ -1772,7 +1772,7 @@ export function comprimirParaOTelegram({ mp4, destino, duracaoSeg, tamanhoBytes,
   /**
    * 🔴 CONFERIR O QUE SAIU, e não confiar em ter pedido. O `-b:v` é um alvo, não uma
    * promessa: um vídeo com muito movimento pode passar na mesma. Se passou do teto, o
-   * ficheiro é deitado fora e vai a capa — mandar um ficheiro grande na mesma seria
+   * ficheiro é deitado fora e vai a capa, mandar um ficheiro grande na mesma seria
    * repetir o defeito de ontem sabendo dele.
    */
   if (bytes > TELEGRAM_MAX_BYTES) {
@@ -1783,14 +1783,14 @@ export function comprimirParaOTelegram({ mp4, destino, duracaoSeg, tamanhoBytes,
 }
 
 /**
- * A DURAÇÃO DE UM MP4, LIDA DO PRÓPRIO FICHEIRO — sem ffprobe e sem dependência nova.
+ * A DURAÇÃO DE UM MP4, LIDA DO PRÓPRIO FICHEIRO, sem ffprobe e sem dependência nova.
  *
  * ⚠️ **Porquê à mão e não com o ffprobe:** este robô corre num computador emprestado do
  * GitHub que **não traz o ffmpeg**, e instalá-lo custa um minuto por corrida para ler um
  * número. O número vive num cabeçalho do próprio ficheiro (`mvhd`), que se lê em vinte
  * linhas. A conta é conferida contra o ffprobe na prova de mesa.
  *
- * Devolve os segundos, ou `null` se não conseguir ler — e nesse caso quem chama decide
+ * Devolve os segundos, ou `null` se não conseguir ler, e nesse caso quem chama decide
  * pelo lado seguro.
  */
 export function duracaoDoMp4(caminho, ler = readFileSync) {
@@ -1818,7 +1818,7 @@ export const STORY_MAX_SEG = 60;
 export const MINUTOS_ATE_O_STORY = 5;
 
 /**
- * A primeira linha com texto da legenda — é o gancho, e é o que serve de legenda ao
+ * A primeira linha com texto da legenda, é o gancho, e é o que serve de legenda ao
  * Story. ⚠️ Cinco minutos, e não "alguns segundos" como o dono pediu: o Multipost
  * trabalha ao minuto, e o Reel tem de estar mesmo publicado antes de o Story sair.
  */
@@ -1866,7 +1866,7 @@ async function enviarAgendamento(k, corpo) {
 
 /**
  * ⚠️ A CONFERÊNCIA NÃO É OPCIONAL. Já se viu este servidor responder "erro" a um
- * apagamento que tinha funcionado — ou seja, a resposta dele não é prova de nada.
+ * apagamento que tinha funcionado, ou seja, a resposta dele não é prova de nada.
  * A prova é a agenda: se o post lá está, está agendado.
  */
 async function confirmarNaAgenda(k, postId, quandoUTC) {
@@ -1879,17 +1879,17 @@ async function confirmarNaAgenda(k, postId, quandoUTC) {
 }
 
 /**
- * 🔎 O INSPETOR — pergunta ao Multipost o que ele aceita, em vez de adivinharmos.
+ * 🔎 O INSPETOR, pergunta ao Multipost o que ele aceita, em vez de adivinharmos.
  *
  * ═══ POR QUE ISTO EXISTE ═══
  * A capa do Reel foi mandada durante duas semanas num campo que não existe, e **nada se
  * queixou**: o servidor deita fora em silêncio o que não conhece. Descobriu-se a olhar
- * para o painel, não para o código — e só porque o dono reparou que o "Editor" da capa
+ * para o painel, não para o código, e só porque o dono reparou que o "Editor" da capa
  * estava vazio.
  *
  * Este servidor sabe responder exatamente **que opções aceita para cada canal**. Uma
  * pergunta, sem escrever nada, e acaba a adivinhação. Correr sempre que se quiser usar
- * uma opção nova do Instagram — e depois de qualquer atualização do Multipost, porque a
+ * uma opção nova do Instagram, e depois de qualquer atualização do Multipost, porque a
  * lista muda com a versão dele.
  *
  * Uso: node src/scripts/multipost/entregar.js --inspecionar
@@ -1901,7 +1901,7 @@ async function inspecionar() {
   /**
    * ⚠️ **A CONTA APARECE PRIMEIRO, e é de propósito.** Desde 24/08 há canais de outra
    * marca ligados ao mesmo servidor (ver `NOSSA_CONTA`). Um inspetor que listasse
-   * *"instagram — recebe o vídeo às 0 min"* sem dizer DE QUEM é a conta seria uma
+   * *"instagram, recebe o vídeo às 0 min"* sem dizer DE QUEM é a conta seria uma
    * meia-verdade perigosa: dava a entender que aquele canal recebe, quando não recebe.
    */
   for (const c of canais) {
@@ -1914,13 +1914,13 @@ async function inspecionar() {
 
   /**
    * ⚠️ PERGUNTA-SE A TODAS, e não só ao Instagram. Foi a olhar para uma rede só que se
-   * passou duas semanas a mandar a capa num campo que não existia — este servidor deita
+   * passou duas semanas a mandar a capa num campo que não existia, este servidor deita
    * fora em SILÊNCIO o que não conhece.
    */
   /**
    * ⚠️ O TIKTOK É INSPECIONADO NA MESMA, mesmo estando fora da entrega. Ele vai voltar
    * quando a auditoria sair, e um campo que o servidor deixe de aceitar entretanto tem de
-   * aparecer AQUI — não no dia em que se religa.
+   * aparecer AQUI, não no dia em que se religa.
    */
   for (const rede of [...REDES, REDE_TIKTOK]) {
     /**
@@ -1949,23 +1949,23 @@ async function inspecionar() {
       const obrig = o.settings?.required || [];
       const campos = Object.keys(props).map((n) => (obrig.includes(n) ? `${n}*` : n));
       log(`   opções que aceita: ${campos.join(', ') || '(nenhuma)'}${obrig.length ? `   (* = obrigatória)` : ''}`);
-      // O que NÓS mandamos, ao lado — para se ver de relance um campo inventado.
+      // O que NÓS mandamos, ao lado, para se ver de relance um campo inventado.
       const nossas = rede.id === 'instagram'
         ? ['__type', 'post_type', 'cover']
         : Object.keys(opcoesDaRede(rede, { titulo: 'x', quadroDoPinterest: 'x' }));
       const inventadas = nossas.filter((n) => n !== '__type' && !Object.prototype.hasOwnProperty.call(props, n));
       log(`   o que nós mandamos: ${nossas.join(', ')}`);
       /**
-       * 🔴 26/08/2026 — AQUI O INSPETOR DAVA UM ALARME FALSO, E EU CAÍ NELE.
+       * 🔴 26/08/2026, AQUI O INSPETOR DAVA UM ALARME FALSO, E EU CAÍ NELE.
        *
-       * Para o `zernio-tiktok` o servidor responde *"No additional settings required"* —
-       * ou seja, `properties` vem VAZIO — e este aviso concluía que os treze campos iam
+       * Para o `zernio-tiktok` o servidor responde *"No additional settings required"*,
+       * ou seja, `properties` vem VAZIO, e este aviso concluía que os treze campos iam
        * ser deitados fora. **É mentira dele, e está provado das duas pontas:**
        *   · mandar sem eles → o `POST` recusa com **400** a exigir os oito do TikTok;
        *   · mandar com eles → publicou, com legenda e hashtags
        *     (`tiktok.com/@finmoovi/video/7678287783979646230`, 26/08).
        *
-       * Deixar o vermelho aqui seria mandar o próximo a caçar um fantasma — foi o que me
+       * Deixar o vermelho aqui seria mandar o próximo a caçar um fantasma, foi o que me
        * aconteceu duas vezes no mesmo dia. Por isso, neste canal, o aviso explica-se em vez
        * de acusar. Nos outros canais nada muda.
        */
@@ -1983,7 +1983,7 @@ async function inspecionar() {
   log(`\n${'─'.repeat(72)}`);
 
   /**
-   * ⚠️ E o que ele GUARDOU do que já lhe mandámos — que é a única prova de que um campo
+   * ⚠️ E o que ele GUARDOU do que já lhe mandámos, que é a única prova de que um campo
    * sobreviveu. Um campo que ele aceita mas não guarda é igual a um campo que não existe.
    */
   log('\n── O QUE ELE GUARDOU DAS ÚLTIMAS PUBLICAÇÕES ──');
@@ -1996,10 +1996,10 @@ async function inspecionar() {
   const lista = (await p.json())?.posts || [];
   log(`${lista.length} publicação(ões) na janela de 60 dias.`);
   /**
-   * ⚠️ MEDIDO EM 06/08: esta lista devolve o TEXTO da publicação e mais nada — **não
+   * ⚠️ MEDIDO EM 06/08: esta lista devolve o TEXTO da publicação e mais nada, **não
    * traz as opções nem a média**. Portanto ela **não serve para confirmar** se a capa
    * ficou guardada; para isso, olhar o painel. Fica escrito para ninguém concluir
-   * "não tem capa" só porque ela não aparece aqui — foi esse tipo de salto que custou
+   * "não tem capa" só porque ela não aparece aqui, foi esse tipo de salto que custou
    * as duas conclusões erradas de hoje.
    */
   for (const post of lista.slice(0, 5)) {
@@ -2026,7 +2026,7 @@ async function main() {
   const horaBR = Number(args.hora) > 0 ? Number(args.hora) : HORA_BR_PADRAO;
 
   /**
-   * ⚠️ O ROTEIRO É LIDO PRIMEIRO, e o vídeo só depois — porque é o roteiro que diz o
+   * ⚠️ O ROTEIRO É LIDO PRIMEIRO, e o vídeo só depois, porque é o roteiro que diz o
    * FORMATO, e é o formato que diz em que pasta o vídeo está (`out/` ou `out/longo/`).
    * Ao contrário, procurava-se o Short numa pasta e o longo noutra às cegas.
    */
@@ -2042,7 +2042,7 @@ async function main() {
   const tamanhoMB = (statSync(mp4).size / 1048576).toFixed(1);
 
   /**
-   * 🔴 A TRAVA DO VÍDEO ANTIGO — ver `falaPedeComentario`. Um vídeo cuja fala ainda pede
+   * 🔴 A TRAVA DO VÍDEO ANTIGO, ver `falaPedeComentario`. Um vídeo cuja fala ainda pede
    * comentário só pode sair onde há robô a responder. Fica ANTES do caderno de propósito:
    * é ela que decide quantas redes este vídeo tem, e portanto o que conta como "já saiu
    * em todas".
@@ -2054,20 +2054,20 @@ async function main() {
    *
    * 🔴 E há um caso em que as duas juntas dão ZERO redes: um vídeo LONGO com a fala
    * velha. O Instagram não está na lista do longo, portanto a trava não tem para onde
-   * cortar. Isso é o comportamento certo — melhor não sair em lado nenhum do que sair a
-   * prometer resposta onde ninguém responde —, mas tem de ser DITO, senão parece avaria.
+   * cortar. Isso é o comportamento certo, melhor não sair em lado nenhum do que sair a
+   * prometer resposta onde ninguém responde,, mas tem de ser DITO, senão parece avaria.
    */
   const redesDoDia = redesDoFormato(formato);
   /**
    * ⏸️ A PAUSA TEM DE APARECER NO REGISTO. Uma rede que deixa de receber em silêncio é
-   * indistinguível de uma rede avariada — e daqui a um mês ninguém se lembra de qual é qual.
+   * indistinguível de uma rede avariada, e daqui a um mês ninguém se lembra de qual é qual.
    */
   for (const [id, porque] of Object.entries(REDES_EM_PAUSA)) {
     const emPausa = REDES.find((r) => r.id === id);
     if (emPausa) log(`⏸️ ${emPausa.nome} está EM PAUSA e não recebe nada: ${porque}`);
   }
   /**
-   * 🔴 E O FORMATO PODE DISPENSAR A TRAVA — mas só um, e só por um motivo.
+   * 🔴 E O FORMATO PODE DISPENSAR A TRAVA, mas só um, e só por um motivo.
    *
    * `chamadaRespondidaAMao` está no vídeo longo porque é **um por semana em quatro
    * redes**, e o dono respondeu que responde ele. A promessa continua cumprida; muda
@@ -2100,7 +2100,7 @@ async function main() {
   const estado = oQueFalta(registo, aEntregar);
 
   /**
-   * 🔴 A ÂNCORA DA RETOMA — ver `horaDaRede`. Numa segunda passagem reaproveita-se a hora
+   * 🔴 A ÂNCORA DA RETOMA, ver `horaDaRede`. Numa segunda passagem reaproveita-se a hora
    * do primeiro envio; senão, uma retoma feita depois das 19h atirava a rede que faltava
    * para o DIA SEGUINTE, sozinha, sem ninguém dar por nada.
    * ⚠️ Uma `--hora` escrita à mão ganha sempre: quem a escreveu quis aquela hora.
@@ -2112,7 +2112,7 @@ async function main() {
     : proximaHoraBrasilEmUTC(horaBR);
   if (quando === ancoraGuardada) log(`🕖 a reaproveitar a âncora do primeiro envio: ${emHoraDoBrasil(quando)} BR`);
 
-  // ⚠️ SE O POST FOI APAGADO À MÃO, O CADERNO PASSA A MENTIR — e este robô recusa
+  // ⚠️ SE O POST FOI APAGADO À MÃO, O CADERNO PASSA A MENTIR, e este robô recusa
   // para sempre um vídeo que já não está agendado em lado nenhum. Aconteceu em
   // 05/08, quando o primeiro agendamento foi apagado para corrigir a legenda.
   // A cura é uma linha: apagar a entrada em .github/data/instagram-agendados.json.
@@ -2124,7 +2124,7 @@ async function main() {
     return 0;
   }
   /**
-   * 🔴 OS STORIES TAMBÉM CONTAM PARA A RETOMA — e não contavam.
+   * 🔴 OS STORIES TAMBÉM CONTAM PARA A RETOMA, e não contavam.
    *
    * A conta do que falta olhava só para as REDES. Bastava as sete saírem e um Story
    * falhar para o robô dizer *"já foi agendado nas 7 redes, nada a fazer"* e **nunca mais
@@ -2147,24 +2147,24 @@ async function main() {
   log(`🕖 âncora: ${emHoraDoBrasil(quando)} no Brasil  =  ${quando.toISOString()} em UTC`);
 
   /**
-   * 🔴 A CAPA DO VÍDEO LONGO VIVE NOUTRO SÍTIO — e é uma só, deitada.
+   * 🔴 A CAPA DO VÍDEO LONGO VIVE NOUTRO SÍTIO, e é uma só, deitada.
    *
    * O Short tira duas fotografias do mesmo instante (em pé, 1080×1920, e deitada,
    * 1280×720) e guarda-as em `out/capa-<slug>*.jpg`. O longo não: a capa dele é a
    * miniatura do YouTube, feita pela Manus, e mora em
-   * `youtube-render/public/manus/<slug>/capa-<molde>.jpg` — com o MOLDE no nome, que são
+   * `youtube-render/public/manus/<slug>/capa-<molde>.jpg`, com o MOLDE no nome, que são
    * seis, e por isso não se adivinha o caminho: pergunta-se ao `acharCapa`, que já sabe
    * procurar (e já sabe ignorar as que estão em quarentena).
    *
    * ⚠️ **Ela entra como capa DEITADA**, que é a forma dela. Quem a usa é o Bluesky. Capa
-   * "em pé" do longo não existe — e é por isso que este formato não faz Story.
+   * "em pé" do longo não existe, e é por isso que este formato não faz Story.
    */
   const doLongo = formato === FORMATOS.longo;
   const capaDoLongo = doLongo ? acharCapa(slug) : null;
   const capaLocal = doLongo ? null : caminhoDaCapa(slug);
   const capaLargaLocal = doLongo ? capaDoLongo : caminhoDaCapaLarga(slug);
   const temCapa = Boolean(capaLocal) && existsSync(capaLocal);
-  // ⚠️ A deitada só existe nos vídeos produzidos depois de ela nascer — ver `midiasDaRede`.
+  // ⚠️ A deitada só existe nos vídeos produzidos depois de ela nascer, ver `midiasDaRede`.
   const temCapaLarga = Boolean(capaLargaLocal) && existsSync(capaLargaLocal);
   const titulo = tituloParaLegenda(roteiro);
 
@@ -2180,7 +2180,7 @@ async function main() {
     log(`🖼️  capa em pé: ${temCapa ? `${Math.round(statSync(capaLocal).size / 1024)} KB` : semCapaDizQue}`);
     /**
      * ⚠️ O ENSAIO MOSTRA O PEDIDO, NÃO O DISCO. A capa foi entregue duas semanas num
-     * campo que não existe e o ensaio dizia sempre "capa: 139 KB" — verdade, e inútil:
+     * campo que não existe e o ensaio dizia sempre "capa: 139 KB", verdade, e inútil:
      * ele media o ficheiro no disco, não o que ia dentro do pedido.
      * (Os endereços são de exemplo: os verdadeiros só existem depois do envio.)
      */
@@ -2190,7 +2190,7 @@ async function main() {
 
     /**
      * 🔑 O ENSAIO TEM DE DIZER O QUE VAI ACONTECER AO TELEGRAM, e para isso mede o
-     * ficheiro **de verdade** — não simula. Se não medisse, o ensaio dizia "vai o vídeo" e
+     * ficheiro **de verdade** não simula. Se não medisse, o ensaio dizia "vai o vídeo" e
      * na entrega a sério o Telegram levava a capa, ou nada: exactamente a surpresa que
      * este ensaio existe para não haver.
      * ⚠️ Aqui NÃO se corre o ffmpeg (um ensaio não gasta um minuto de máquina): assume-se
@@ -2227,13 +2227,13 @@ async function main() {
 
     // ⚠️ A duração só se mede quando há Story para decidir. O vídeo longo não faz Story
     // (ver `FORMATOS`), e mandar o ffprobe ler 136 MB para não usar a resposta era gasto
-    // puro — e mais um sítio onde uma corrida podia morrer sem precisar.
+    // puro, e mais um sítio onde uma corrida podia morrer sem precisar.
     if (!storiesDoDia.length) log(`\n📖 Stories: nenhum — o ${formato.nome} não faz Story (a capa dele é deitada).`);
     const escolha = storiesDoDia.length
       ? oQueVaiNoStory({ duracaoSeg: duracaoDoMp4(mp4), media, capa })
       : null;
     log(`\n${'─'.repeat(72)}`);
-    // ⚠️ Só o Instagram e o Facebook fazem Story — perguntado ao servidor. Ver `STORIES`.
+    // ⚠️ Só o Instagram e o Facebook fazem Story, perguntado ao servidor. Ver `STORIES`.
     for (const story of storiesDoDia) {
       const dona = aEntregar.find((r) => r.id === story.canal);
       const hora = dona ? emHoraDoBrasil(horaDaRede(quando, { minutos: minutosDoStory(story) }).quandoUTC) : null;
@@ -2254,7 +2254,7 @@ async function main() {
   /**
    * ⚠️ O FICHEIRO SOBE UMA VEZ SÓ, e as oito redes usam o mesmo. Um envio de 23 MB por
    * rede seriam 184 MB por dia para nada.
-   * 🔑 E NUMA RETOMA REAPROVEITA-SE o que já subiu hoje — é para isso que o caderno
+   * 🔑 E NUMA RETOMA REAPROVEITA-SE o que já subiu hoje, é para isso que o caderno
    * guarda o `id` além do endereço.
    */
   let media = registo?.midias?.video || null;
@@ -2292,13 +2292,13 @@ async function main() {
   }
 
   /**
-   * 🔴 A CÓPIA PARA O TELEGRAM — ver `TELEGRAM_MAX_BYTES` e `comprimirParaOTelegram`.
+   * 🔴 A CÓPIA PARA O TELEGRAM, ver `TELEGRAM_MAX_BYTES` e `comprimirParaOTelegram`.
    *
    * Só se faz quando o Telegram está na lista deste formato E o vídeo passa dos 20 MB.
    * Nos Shorts de 16s (~9 MB) isto não corre: eles já cabiam.
    *
    * ⚠️ **É um SEGUNDO envio, e é o preço certo a pagar.** As outras seis redes continuam
-   * a receber o ficheiro bom, sem tocar nele — comprimir para todas por causa do teto de
+   * a receber o ficheiro bom, sem tocar nele, comprimir para todas por causa do teto de
    * uma seria estragar seis para arrumar uma.
    * ⚠️ E na retoma reaproveita-se, como o resto: o `id` fica no caderno.
    */
@@ -2346,7 +2346,7 @@ async function main() {
       redes: { ...(caderno[slug]?.redes || {}), [chaveDaRede]: valor },
     };
     // ⚠️ GRAVA A CADA REDE, não no fim. Se a corrida morrer a meio (a máquina do GitHub
-    // desaparece de vez em quando), o que já foi agendado fica escrito — senão a retoma
+    // desaparece de vez em quando), o que já foi agendado fica escrito, senão a retoma
     // republicaria tudo o que já estava no ar.
     gravarCaderno(caderno);
   };
@@ -2386,7 +2386,7 @@ async function main() {
 
       const id = await enviarAgendamento(k, corpo);
       /**
-       * ⚠️ A CONFERÊNCIA NÃO É OPCIONAL — já se viu este servidor responder uma coisa e
+       * ⚠️ A CONFERÊNCIA NÃO É OPCIONAL, já se viu este servidor responder uma coisa e
        * ter feito outra. A prova é a agenda, não a resposta.
        */
       if (!await confirmarNaAgenda(k, id, hora)) {
@@ -2399,7 +2399,7 @@ async function main() {
     } catch (e) {
       /**
        * 🔴 O INSTAGRAM É O PRINCIPAL. Se ele falhar, a corrida falha e o dono vê. As
-       * outras sete são lucro: uma delas em baixo não pode custar o dia inteiro — é a
+       * outras sete são lucro: uma delas em baixo não pode custar o dia inteiro, é a
        * mesma regra que já valia para a capa e para o Story.
        */
       if (principal) throw new Error(`o Instagram falhou (${e.message}) — e ele é o principal, por isso a corrida para aqui.`);
@@ -2412,8 +2412,8 @@ async function main() {
    * ♦ O STORY, MINUTOS DEPOIS DO REEL (06/08, pedido do dono).
    *
    * ⚠️ **NADA AQUI PODE DERRUBAR O REEL.** O Reel já está agendado e confirmado quando
-   * se chega a esta linha; se o Story falhar — por limite do plano, por rede, por o que
-   * for —, o dia continua a ter Reel.
+   * se chega a esta linha; se o Story falhar, por limite do plano, por rede, por o que
+   * for,, o dia continua a ter Reel.
    */
   // ⚠️ Mesma razão do ensaio: sem Story para decidir, não se mede nada. Ver `FORMATOS`.
   const escolhaDoStory = storiesDoDia.length
@@ -2461,7 +2461,7 @@ async function main() {
   log(`✅ ${quantas} de ${aEntregar.length} rede(s) agendadas para hoje.`);
   if (soInstagram) log(`   (as outras ${REDES.length - 1} ficaram de fora porque a fala deste vídeo ainda pede comentário)`);
   if (falharam.length) {
-    // ⚠️ NUNCA EM SILÊNCIO. Um `catch` que só escreve no log dá corrida verde mentirosa —
+    // ⚠️ NUNCA EM SILÊNCIO. Um `catch` que só escreve no log dá corrida verde mentirosa,
     // foi assim que o monitor do blog ficou morto 28 dias sem ninguém notar.
     log(`⚠️  ficaram por sair ${falharam.length}: ${falharam.join(' · ')}`);
     log('   Correr esta mesma entrega outra vez tenta SÓ as que faltaram.');
