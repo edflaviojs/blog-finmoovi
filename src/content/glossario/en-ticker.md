@@ -4,6 +4,7 @@ definition: "What ticker is and how it shows up in your everyday money — expla
 title: "ticker - Financial Glossary"
 description: "What ticker is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/ticker.webp"
+imageAlt: "White piggy bank, gold coins, blue bars, and plant in glass on purple background."
 category: "basico"
 tags: ["ticker", "glossary", "finance"]
 author: "FinMoovi"

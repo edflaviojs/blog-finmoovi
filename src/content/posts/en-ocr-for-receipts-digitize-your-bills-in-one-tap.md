@@ -3,6 +3,7 @@ title: "OCR for Receipts: Digitize Your Bills in One Tap"
 description: "Learn how OCR turns paper receipts into organized data instantly, saving time and preventing errors."
 tickerHeadline: "Digitize receipts in one tap"
 image: "/images/posts/ocr-para-notas-fiscais-digitalize-recibos-em-1-toque.webp"
+imageAlt: "Smartphone on brown notebook, calculator, pen, coins, and green plant on white marble."
 category: "ferramentas"
 locale: "en"
 tags: ["OCR receipts","digitize bills","smart capture","financial organization","FinMoovi","expense automation","receipt scanning app","scan receipt app","digitize receipt"]

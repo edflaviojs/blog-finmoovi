@@ -3,6 +3,7 @@ title: "OCR para Notas Fiscais: Digitalize Recibos em 1 Toque"
 description: "Descubra como transformar notas fiscais em dados organizados com OCR em um clique, economizando tempo e evitando erros."
 tickerHeadline: "Digitalize seu recibo em 1 toque"
 image: "/images/posts/ocr-para-notas-fiscais-digitalize-recibos-em-1-toque.webp"
+imageAlt: "Celular sobre pasta marrom, calculadora, moedas, caneta e plantas sobre mármore branco."
 category: "ferramentas"
 locale: "pt"
 tags: ["OCR notas fiscais","digitalizar recibos","captura inteligente","organização financeira","FinMoovi","automação de gastos","ocr nota fiscal","escanear recibo app","digitalizar nota fiscal"]

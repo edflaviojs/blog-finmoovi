@@ -3,6 +3,7 @@ title: "OCR para facturas: digitaliza tus recibos con un toque"
 description: "Descubre cómo convertir facturas en datos organizados con OCR en un clic, ahorrando tiempo y evitando errores."
 tickerHeadline: "Digitaliza tu recibo en 1 toque"
 image: "/images/posts/ocr-para-notas-fiscais-digitalize-recibos-em-1-toque.webp"
+imageAlt: "Móvil sobre libreta marrón, calculadora, monedas, bolígrafo y plantas sobre fondo blanco."
 category: "ferramentas"
 locale: "es"
 tags: ["OCR facturas","digitalizar recibos","captura inteligente","organización financiera","FinMoovi","automatización de gastos","ocr factura","escanear recibo app","digitalizar factura"]

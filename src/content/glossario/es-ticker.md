@@ -4,6 +4,7 @@ definition: "Qué es ticker y cómo aparece en tu día a día — explicado de f
 title: "ticker - Glosario Financiero"
 description: "Qué es ticker y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/ticker.webp"
+imageAlt: "Cerdito, monedas doradas, gráfico de barras y planta verde en fondo degradado azul y morado."
 category: "basico"
 tags: ["ticker", "glosario", "finanzas"]
 author: "FinMoovi"
