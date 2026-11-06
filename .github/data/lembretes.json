@@ -12,6 +12,34 @@
       "desfecho": "Fechado. O caminho do TikTok deixou de passar pela auditoria: a publicacao sai pelo ZERNIO (Postiz). Nao vale a pena continuar a cobrar um canal de suporte que ja ignorou um pedido durante 6 dias."
     },
     {
+      "data": "2026-11-07",
+      "titulo": "Conferir os robôs com nome novo e fazer o lote 3b",
+      "texto": "Em 06/11 os nomes de 27 robôs trocaram o travessão por «·». Conferir em GitHub > Actions se «Capas · varrer» (19h30 BR de 06/11) e «Multipost · Vigia das redes» (01h BR de 07/11) rodaram sozinhos e ficaram verdes. Se sim, pedir ao Claude no terminal do FinMoovi: «faça o lote 3b» (os 8 robôs que publicam). Tudo descrito em docs/DIVIDA.md, item B5.",
+      "feito": false,
+      "criadoEm": "2026-11-06"
+    },
+    {
+      "data": "2026-11-09",
+      "titulo": "Conferir a 1ª tarefa dos posts no Apexi Team",
+      "texto": "Hoje de madrugada o robô dos posts manda a tarefa «Agendar os 6 posts da semana (09/11)» ao Team, com 10 passos: 6 posts e 4 imagens, prazo 12h. Conferir que chegou certa e que o e-mail de reserva também chegou. Se faltar alguma coisa, avisar o Claude.",
+      "feito": false,
+      "criadoEm": "2026-11-06"
+    },
+    {
+      "data": "2026-11-13",
+      "titulo": "Conferir se o Multipost repetiu o envio quando travou",
+      "texto": "Desde 06/11 o robô que entrega os Shorts tenta enviar o vídeo até 3 vezes quando o servidor do Multipost trava. Pedir ao Claude para procurar «nova tentativa» nas corridas desta semana. Se o servidor não travou nenhuma vez, está tudo bem e fica para a semana seguinte.",
+      "feito": false,
+      "criadoEm": "2026-11-06"
+    },
+    {
+      "data": "2026-11-16",
+      "titulo": "Conferir a 2ª tarefa dos posts no Apexi Team",
+      "texto": "Segunda semana da tarefa dos posts no Team (semana 47). Conferir que chegou com os 10 passos. Com esta e a de 09/11 certas, no dia 20/11 o e-mail de reserva pode ser desligado.",
+      "feito": false,
+      "criadoEm": "2026-11-06"
+    },
+    {
       "data": "2026-11-20",
       "titulo": "Desligar o e-mail dos posts da semana",
       "texto": "Desde 09/11 os posts da semana chegam como tarefa no Apexi Team, e o e-mail de segunda ficou 2 semanas como reserva. Se as duas tarefas (semanas 46 e 47) chegaram certas ao Team, é hora de desligar o e-mail: pedir ao Claude no terminal do FinMoovi para tirar o envio do posts-semana.js.",

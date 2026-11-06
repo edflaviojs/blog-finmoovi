@@ -8,7 +8,7 @@
 > **Regra:** item sem *porquê* e sem *quando reavaliar* não entra. Item
 > resolvido **sai daqui** (vai para o histórico do git), não fica marcado como feito.
 
-**Criado em:** 2026-10-03 · **Última atualização:** 2026-10-28
+**Criado em:** 2026-10-03 · **Última atualização:** 2026-11-06
 
 > Irmão deste ficheiro, do lado do aplicativo:
 > `backup-app-22052025/.claude/docs/DIVIDA-TECNICA.md`.
@@ -171,6 +171,25 @@ mês é US$ 5-10. Conferir o gasto real e se os roteiros passam mais à primeira
 Também a provar nesta janela: **a tentativa de quarta do longo** (`a3088fd2`), só
 corre a sério numa semana em que a terça falhe; numa semana boa tem de sair "nada a
 fazer" em verde, sem segundo vídeo.
+
+---
+
+### B5. ⏳ Apexi Team, Multipost e travessões: as conferências marcadas (06/11/2026)
+
+Cada data abaixo também é um lembrete em `.github/data/lembretes.json`: aparece no e-mail
+das 7h e como tarefa no Apexi Team. Fechou no Team, sai do e-mail.
+
+| Data | O que conferir | Se estiver bem |
+|---|---|---|
+| **07/11** | Os robôs renomeados rodaram sozinhos com o nome novo (ex.: «Capas · varrer», 22:30 UTC de 06/11; «Multipost · Vigia», 04:00 UTC). Ver em Actions se correram e ficaram verdes. | Fazer o **lote 3b**: os 8 robôs que publicam (`instagram-carteiro`, `multipost-carteiro-16s`, `multipost-carteiro-longo`, `youtube-longo`, `youtube-short16-publish`, `youtube-short16-render`, `youtube-short-publish`, `youtube-short-render`) com `node .github/scripts/renomear-robo.cjs <ficheiros>` (troca só a linha `name:` e confere o YAML), e subir junto `tests/sem-travessao.test.js` (hoje falha de propósito por causa desses 8). |
+| **09/11** | 1ª tarefa dos posts no Team: `finmoovi-posts-2026-w46`, 10 passos (6 posts + 4 imagens), prazo 09/11 12h. O e-mail de reserva também chegou. Log do robô: linha `🤖 Apexi Team: tarefa ... criada`. | Nada. |
+| **13/11** | Se o Multipost travou de novo, o robô repetiu o envio? Procurar `nova tentativa em` e `o ficheiro subiu à 2ª tentativa` nas corridas dos carteiros. Sem travões nesta semana, fica para a próxima. | Nada. |
+| **16/11** | 2ª tarefa dos posts: `finmoovi-posts-2026-w47`. | Nada. |
+| **20/11** | Duas semanas certas no Team: desligar o e-mail dos posts (`enviar` em `posts-semana.js`). | Tirar o e-mail e o passo do workflow. |
+
+Também por fazer, sem data: `src/scripts/youtube/lib/promessa-gratis.js` escreve travessão em
+frases que vão ao ar (linhas 39 e 67). Fazer com o mesmo cuidado do `entregar.js` (esqueleto
+idêntico + ensaio antes e depois).
 
 ---
 
