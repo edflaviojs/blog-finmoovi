@@ -1,11 +1,5 @@
 [
   {
-    "fileSlug": "economia",
-    "runId": "41480367717",
-    "producedAt": "2026-11-02T16:40:24.373Z",
-    "artifact": "short-economia"
-  },
-  {
     "fileSlug": "gasto-variavel",
     "runId": "41654054676",
     "producedAt": "2026-11-03T14:41:39.189Z",
