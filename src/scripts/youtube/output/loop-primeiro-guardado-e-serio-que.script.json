@@ -1,0 +1,118 @@
+{
+  "slug": "loop-primeiro-guardado-e-serio-que",
+  "formato": "loop16",
+  "term": "O primeiro dinheiro guardado",
+  "category": "vida",
+  "keyword": "GUARDADO",
+  "valor": "R$ 300",
+  "situacao": "primeiro-guardado",
+  "gancho": "e-serio-que",
+  "ganchoFamilia": "é sério que",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "semente",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "É sério que ninguém está falando de sobrar dinheiro? Comigo foi agora.",
+      "durationSec": 4.45,
+      "shots": [
+        {
+          "anchor": "sério",
+          "visual": {
+            "type": "statement",
+            "text": "Sobrou dinheiro no mês?"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "ninguém",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "semente"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Abri o aplicativo e sobraram trezentos reais aqui em casa.",
+      "durationSec": 3.71,
+      "shots": [
+        {
+          "anchor": "aplicativo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "semente"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "sobraram",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 300"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Olha, eu guardei ali, quietinho, pra crescer.",
+      "durationSec": 2.6,
+      "shots": [
+        {
+          "anchor": "guardei",
+          "visual": {
+            "type": "statement",
+            "text": "Guardei quietinho"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "quietinho",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "semente"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Então, foi isso. Sobrar dinheiro no fim do mês, pela primeira vez.",
+      "durationSec": 4.45,
+      "shots": [
+        {
+          "anchor": "Sobrar",
+          "visual": {
+            "type": "statement",
+            "text": "O primeiro que sobrou"
+          }
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Sobrou dinheiro no mês?"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.21
+}
