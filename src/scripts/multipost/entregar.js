@@ -902,7 +902,7 @@ export const REDE_TIKTOK = { id: 'zernio-tiktok', nome: 'TikTok', minutos: 12, l
 
 export const REDES = [
   { id: 'instagram', nome: 'Instagram', minutos: 0, limite: 2200, midia: 'video', legenda: montarLegenda },
-  REDE_TIKTOK, // minuto 12 — voltou em 26/08. Ver o bloco acima: o id é `zernio-tiktok`.
+  REDE_TIKTOK, // minuto 12: voltou em 26/08. Ver o bloco acima: o id é `zernio-tiktok`.
   { id: 'facebook', nome: 'Facebook', minutos: 26, limite: 63206, midia: 'video', legenda: legendaFormal },
   { id: 'linkedin-page', nome: 'LinkedIn', minutos: 43, limite: 3000, midia: 'video', legenda: legendaLinkedIn },
   { id: 'threads', nome: 'Threads', minutos: 58, limite: 500, midia: 'video', legenda: legendaThreads },
@@ -935,7 +935,7 @@ export const REDES = [
  */
 export const REDE_DE_FORA = {
   x: 'cobra US$ 0,20 por post com link (decisão do dono, 07/08)',
-  tiktok: 'é o canal ANTIGO, do app próprio reprovado — quem publica agora é `zernio-tiktok`',
+  tiktok: 'é o canal ANTIGO, do app próprio reprovado: quem publica agora é `zernio-tiktok`',
 };
 
 /**
@@ -961,7 +961,7 @@ export const REDE_DE_FORA = {
  * **enviar**, não parar de ler.
  */
 export const REDES_EM_PAUSA = {
-  telegram: 'o dono não está a usar o canal e ainda não tem público lá (pausa de 17/09/2026 — apagar esta linha religa)',
+  telegram: 'o dono não está a usar o canal e ainda não tem público lá (pausa de 17/09/2026: apagar esta linha religa)',
 };
 
 /**
@@ -1132,7 +1132,7 @@ function lerCaderno() {
     const d = JSON.parse(readFileSync(CADERNO, 'utf-8'));
     return d && typeof d === 'object' ? d : {};
   } catch {
-    throw new Error(`O caderno ${CADERNO} existe mas não se lê. Conferir à mão — tratá-lo como vazio agendaria tudo outra vez.`);
+    throw new Error(`O caderno ${CADERNO} existe mas não se lê. Conferir à mão: tratá-lo como vazio agendaria tudo outra vez.`);
   }
 }
 
@@ -1252,7 +1252,7 @@ export function canalDaRede(canais, rede, registar = () => {}, conta = NOSSA_CON
 
   const meus = naRede.filter((c) => eDaNossaConta(c, conta));
   if (!meus.length) {
-    registar(`🔴 ${rede.nome}: há ${naRede.length} conta(s) ligada(s) (${naRede.map((c) => c.name).join(', ')}) e NENHUMA é "${conta}" — não se entrega a uma conta que não é a nossa.`);
+    registar(`🔴 ${rede.nome}: há ${naRede.length} conta(s) ligada(s) (${naRede.map((c) => c.name).join(', ')}) e NENHUMA é "${conta}": não se entrega a uma conta que não é a nossa.`);
     return null;
   }
   /**
@@ -1260,7 +1260,7 @@ export function canalDaRede(canais, rede, registar = () => {}, conta = NOSSA_CON
    * com o perfil de uma marca em jogo, e a coroa não se desfaz.
    */
   if (meus.length > 1) {
-    registar(`🔴 ${rede.nome}: há ${meus.length} contas chamadas "${conta}" ligadas ao mesmo tempo — não dá para saber qual é, e chutar publicaria na errada. Desligue uma no painel.`);
+    registar(`🔴 ${rede.nome}: há ${meus.length} contas chamadas "${conta}" ligadas ao mesmo tempo: não dá para saber qual é, e chutar publicaria na errada. Desligue uma no painel.`);
     return null;
   }
   return meus[0];
@@ -1312,8 +1312,8 @@ async function quadroDoPinterest(k, canalId) {
   });
   if (!res.ok) throw new Error(`não deu para perguntar os quadros do Pinterest (${res.status})`);
   const quadros = (await res.json())?.output || [];
-  if (!quadros.length) throw new Error('a conta do Pinterest não tem nenhum quadro — crie um no painel deles');
-  if (quadros.length > 1) log(`   ⚠️ há ${quadros.length} quadros no Pinterest — a usar o primeiro: "${quadros[0].name}"`);
+  if (!quadros.length) throw new Error('a conta do Pinterest não tem nenhum quadro: crie um no painel deles');
+  if (quadros.length > 1) log(`   ⚠️ há ${quadros.length} quadros no Pinterest. A usar o primeiro: "${quadros[0].name}"`);
   return quadros[0];
 }
 
@@ -1389,7 +1389,7 @@ export async function enviarFicheiro(k, caminho, nome, tipo = 'video/mp4', { fet
 export function capaParaOInstagram(capa, registar = () => {}) {
   if (!capa) return null;
   if (!capa.id || !/^https?:\/\//i.test(String(capa.path || ''))) {
-    registar(`⚠️ a capa veio incompleta (id="${capa.id}", endereço="${capa.path}") — segue sem capa, para não derrubar a publicação.`);
+    registar(`⚠️ a capa veio incompleta (id="${capa.id}", endereço="${capa.path}"): segue sem capa, para não derrubar a publicação.`);
     return null;
   }
   return { id: capa.id, path: capa.path };
@@ -1662,7 +1662,7 @@ export function midiasDaRede(rede, { media, capa, capaLarga, mediaTelegram }) {
   if (rede.midia === 'video+capa') {
     if (!capa) return { midias: null, motivo: 'o Pinterest exige uma capa junto do vídeo, e hoje não veio capa no artefato' };
     // A capa EM PÉ, e é a certa: no Pinterest o formato alto é o que ocupa mais tela.
-    return { midias: [media, capa], motivo: 'vídeo primeiro, capa depois — a ordem que o Pinterest exige' };
+    return { midias: [media, capa], motivo: 'vídeo primeiro, capa depois: a ordem que o Pinterest exige' };
   }
   if (rede.midia === 'capa') {
     /**
@@ -1689,7 +1689,7 @@ export function midiasDaRede(rede, { media, capa, capaLarga, mediaTelegram }) {
       midias: [escolhida],
       motivo: capaLarga
         ? 'vai a capa DEITADA (o Bluesky não publica vídeo, e a em pé ficaria cortada no feed)'
-        : 'vai a capa em pé — não veio a deitada no artefato (vídeo antigo)',
+        : 'vai a capa em pé: não veio a deitada no artefato (vídeo antigo)',
     };
   }
   /**
@@ -1712,7 +1712,7 @@ export function midiasDaRede(rede, { media, capa, capaLarga, mediaTelegram }) {
       return {
         midias: [mediaTelegram.media],
         motivo: mediaTelegram.comprimido
-          ? `o vídeo, numa cópia de ${(mediaTelegram.bytes / 1048576).toFixed(1)} MB — o Telegram recusa acima de 20 MB quando vai buscar por endereço`
+          ? `o vídeo, numa cópia de ${(mediaTelegram.bytes / 1048576).toFixed(1)} MB: o Telegram recusa acima de 20 MB quando vai buscar por endereço`
           : 'o vídeo (cabe nos 20 MB do Telegram)',
       };
     }
@@ -1745,14 +1745,14 @@ export function comprimirParaOTelegram({ mp4, destino, duracaoSeg, tamanhoBytes,
     return { caminho: mp4, bytes: tamanhoBytes, comprimido: false };
   }
   if (!duracaoSeg || duracaoSeg <= 0) {
-    registar('⚠️ não consegui ler a duração do vídeo — o Telegram vai levar a capa e o link.');
+    registar('⚠️ não consegui ler a duração do vídeo: o Telegram vai levar a capa e o link.');
     return null;
   }
   // O som fica em 128 kbps e desconta-se do orçamento; o resto é imagem.
   const bitsDisponiveis = TELEGRAM_ALVO_BYTES * 8;
   const taxaVideo = Math.floor(bitsDisponiveis / duracaoSeg) - 128000;
   if (taxaVideo < 300000) {
-    registar(`⚠️ para caber nos 18 MB este vídeo ficaria a ${Math.round(taxaVideo / 1000)} kbps — desfeito. Vai a capa e o link.`);
+    registar(`⚠️ para caber nos 18 MB este vídeo ficaria a ${Math.round(taxaVideo / 1000)} kbps: desfeito. Vai a capa e o link.`);
     return null;
   }
   const r = correr('ffmpeg', [
@@ -1765,7 +1765,7 @@ export function comprimirParaOTelegram({ mp4, destino, duracaoSeg, tamanhoBytes,
   ], { stdio: 'pipe' });
 
   if (r.error || r.status !== 0 || !existe(destino)) {
-    registar(`⚠️ a compressão para o Telegram não correu (${r.error?.message || `código ${r.status}`}) — vai a capa e o link.`);
+    registar(`⚠️ a compressão para o Telegram não correu (${r.error?.message || `código ${r.status}`}): vai a capa e o link.`);
     return null;
   }
   const bytes = medir(destino).size;
@@ -1776,7 +1776,7 @@ export function comprimirParaOTelegram({ mp4, destino, duracaoSeg, tamanhoBytes,
    * repetir o defeito de ontem sabendo dele.
    */
   if (bytes > TELEGRAM_MAX_BYTES) {
-    registar(`⚠️ mesmo apertado ficou com ${(bytes / 1048576).toFixed(1)} MB, acima do teto — vai a capa e o link.`);
+    registar(`⚠️ mesmo apertado ficou com ${(bytes / 1048576).toFixed(1)} MB, acima do teto: vai a capa e o link.`);
     return null;
   }
   return { caminho: destino, bytes, comprimido: true };
@@ -1907,8 +1907,8 @@ async function inspecionar() {
   for (const c of canais) {
     const naTabela = REDES.find((r) => r.id === c.identifier);
     const nota = !eDaNossaConta(c)
-      ? `⛔ é de OUTRA conta (a nossa é "${NOSSA_CONTA}") — não recebe nada daqui`
-      : (naTabela ? `recebe o vídeo às ${naTabela.minutos} min do Reel` : (REDE_DE_FORA[c.identifier] ? `NÃO recebe: ${REDE_DE_FORA[c.identifier]}` : 'NÃO está na tabela — não recebe nada'));
+      ? `⛔ é de OUTRA conta (a nossa é "${NOSSA_CONTA}"): não recebe nada daqui`
+      : (naTabela ? `recebe o vídeo às ${naTabela.minutos} min do Reel` : (REDE_DE_FORA[c.identifier] ? `NÃO recebe: ${REDE_DE_FORA[c.identifier]}` : 'NÃO está na tabela: não recebe nada'));
     log(`  · ${String(c.identifier).padEnd(14)} "${c.name}"  ${nota}`);
   }
 
@@ -1931,7 +1931,7 @@ async function inspecionar() {
     const canal = canalDaRede(canais, rede, log);
     const espera = !REDES.includes(rede) ? '   ⏸️ (à espera: não recebe nada hoje)' : '';
     log(`\n${'─'.repeat(72)}`);
-    if (!canal) { log(`📡 ${rede.nome}: ⚠️ NÃO ESTÁ LIGADO (na conta "${NOSSA_CONTA}") — este vídeo não sairia lá.`); continue; }
+    if (!canal) { log(`📡 ${rede.nome}: ⚠️ NÃO ESTÁ LIGADO (na conta "${NOSSA_CONTA}"): este vídeo não sairia lá.`); continue; }
     log(`📡 ${rede.nome}  (${canal.identifier})  id=${canal.id}${espera}`);
     const r = await fetch(`${API}/integration-settings/${encodeURIComponent(canal.id)}`, { headers: { Authorization: k } });
     const t = await r.text();
@@ -1973,7 +1973,7 @@ async function inspecionar() {
         log(`   ⚠️ o servidor diz não conhecer: ${inventadas.join(', ')}`);
         log(`   ✅ mas é ELE que mente: sem estes campos o POST dá 400, e com eles publicou (26/08). Ignorar este aviso.`);
       } else if (inventadas.length) {
-        log(`   🔴 ELE NÃO CONHECE: ${inventadas.join(', ')} — vai ser deitado fora EM SILÊNCIO.`);
+        log(`   🔴 ELE NÃO CONHECE: ${inventadas.join(', ')}. Vai ser deitado fora EM SILÊNCIO.`);
       }
       const emFalta = obrig.filter((n) => !nossas.includes(n));
       if (emFalta.length) log(`   🔴 FALTA MANDAR (obrigatórias): ${emFalta.join(', ')}`);
@@ -2010,7 +2010,7 @@ async function inspecionar() {
       log(`    ${campo}: ${String(v).slice(0, 600)}`);
     }
     const cru = JSON.stringify(post);
-    if (/thumbnail|cover/i.test(cru)) log('    🖼️  ESTA guardou capa — procurar "thumbnail"/"cover" acima.');
+    if (/thumbnail|cover/i.test(cru)) log('    🖼️  ESTA guardou capa: procurar "thumbnail"/"cover" acima.');
   }
   log('');
   return 0;
@@ -2080,16 +2080,16 @@ async function main() {
   if (pedeComentario && formato.chamadaRespondidaAMao) {
     log(`\n💬 A fala deste ${formato.nome} pede COMENTÁRIO, e vai à mesma às ${redesDoDia.length} redes.`);
     log('   No YouTube o robô responde sozinho; nestas quatro é o dono que responde,');
-    log('   uma vez por semana. Foi essa a decisão — e é o volume que a sustenta.');
+    log('   uma vez por semana. Foi essa a decisão, e é o volume que a sustenta.');
   }
   if (soInstagram && !aEntregar.length) {
-    log(`\n🔴 "${slug}" é um ${formato.nome} cuja fala PEDE COMENTÁRIO — e o Instagram,`);
+    log(`\n🔴 "${slug}" é um ${formato.nome} cuja fala PEDE COMENTÁRIO, e o Instagram,`);
     log('   que é a única rede onde há robô a responder, não recebe este formato.');
     log('   Não sai em rede nenhuma. Refaça o vídeo com a fala nova ("procura FinMoovi").');
     return 0;
   }
   if (soInstagram) {
-    log('\n🔴 A FALA DESTE VÍDEO AINDA PEDE COMENTÁRIO — foi escrito antes de 07/08.');
+    log('\n🔴 A FALA DESTE VÍDEO AINDA PEDE COMENTÁRIO: foi escrito antes de 07/08.');
     log('   Sai SÓ no Instagram, que é onde a automação responde. As outras sete ficam de fora:');
     log('   mandá-lo para lá seria prometer uma resposta que ninguém dá.');
     log('   (a partir do primeiro vídeo com a fala nova, isto deixa de acontecer sozinho)');
@@ -2116,9 +2116,9 @@ async function main() {
   // para sempre um vídeo que já não está agendado em lado nenhum. Aconteceu em
   // 05/08, quando o primeiro agendamento foi apagado para corrigir a legenda.
   // A cura é uma linha: apagar a entrada em .github/data/instagram-agendados.json.
-  const PISTA = '   (se algum post foi apagado no painel, tire essa rede — ou o slug inteiro — de .github/data/instagram-agendados.json)';
+  const PISTA = '   (se algum post foi apagado no painel, tire essa rede, ou o slug inteiro, de .github/data/instagram-agendados.json)';
   if (!DRY_RUN && estado.antigo) {
-    log(`⏭️  "${slug}" tem um registo ANTIGO, de ${registo.agendadoEm} — de quando só havia Instagram. Nada a fazer.`);
+    log(`⏭️  "${slug}" tem um registo ANTIGO, de ${registo.agendadoEm}, de quando só havia Instagram. Nada a fazer.`);
     log('   (ir publicar agora as outras sete seria despejar um vídeo velho em sete redes de uma vez)');
     log(PISTA);
     return 0;
@@ -2139,10 +2139,10 @@ async function main() {
   }
   if (!DRY_RUN && registo) {
     const emFalta = [...estado.faltam, ...storiesQueFaltam];
-    log(`🔁 RETOMA: ${estado.feitas.length} rede(s) já saíram (${estado.feitas.join(', ') || '—'}). Faltam: ${emFalta.join(', ')}`);
+    log(`🔁 RETOMA: ${estado.feitas.length} rede(s) já saíram (${estado.feitas.join(', ') || '-'}). Faltam: ${emFalta.join(', ')}`);
   }
 
-  log(`\n📤 Multipost — a entregar "${slug}" em ${aEntregar.length} rede(s)${DRY_RUN ? ' (ENSAIO: não envia nada)' : ''}`);
+  log(`\n📤 Multipost: a entregar "${slug}" em ${aEntregar.length} rede(s)${DRY_RUN ? ' (ENSAIO: não envia nada)' : ''}`);
   log(`🎞️  ficheiro: ${tamanhoMB} MB`);
   log(`🕖 âncora: ${emHoraDoBrasil(quando)} no Brasil  =  ${quando.toISOString()} em UTC`);
 
@@ -2175,8 +2175,8 @@ async function main() {
     // (a capa dele é a miniatura deitada do YouTube) e nem o Instagram nem o Pinterest
     // recebem este formato: dizer "o Pinterest nem sairia" seria um alarme inventado.
     const semCapaDizQue = doLongo
-      ? 'não há — e não faz falta: este formato não vai ao Instagram nem ao Pinterest'
-      : 'FALTA — o Instagram escolheria um fotograma ao calhas, e o Pinterest nem sairia';
+      ? 'não há, e não faz falta: este formato não vai ao Instagram nem ao Pinterest'
+      : 'FALTA: o Instagram escolheria um fotograma ao calhas, e o Pinterest nem sairia';
     log(`🖼️  capa em pé: ${temCapa ? `${Math.round(statSync(capaLocal).size / 1024)} KB` : semCapaDizQue}`);
     /**
      * ⚠️ O ENSAIO MOSTRA O PEDIDO, NÃO O DISCO. A capa foi entregue duas semanas num
@@ -2202,12 +2202,12 @@ async function main() {
       ? { media, bytes: cabeNoTelegram ? bytesDoVideo : TELEGRAM_ALVO_BYTES, comprimido: !cabeNoTelegram }
       : null;
     if (aEntregar.some((r) => r.id === 'telegram')) {
-      log(`📎 Telegram: o vídeo tem ${(bytesDoVideo / 1048576).toFixed(1)} MB e o teto dele é 20 MB — ${
+      log(`📎 Telegram: o vídeo tem ${(bytesDoVideo / 1048576).toFixed(1)} MB e o teto dele é 20 MB: ${
         cabeNoTelegram ? 'cabe, vai o mesmo das outras'
           : formato.comprimirParaTelegram ? 'vai uma cópia apertada para ~18 MB'
             : 'não se comprime neste formato, vai a capa com o link'}`);
     }
-    log(`🖼️  capa deitada (Bluesky): ${temCapaLarga ? `${Math.round(statSync(capaLargaLocal).size / 1024)} KB` : 'FALTA — vai a em pé'}`);
+    log(`🖼️  capa deitada (Bluesky): ${temCapaLarga ? `${Math.round(statSync(capaLargaLocal).size / 1024)} KB` : 'FALTA: vai a em pé'}`);
 
     for (const rede of aEntregar) {
       const { quandoUTC: hora } = horaDaRede(quando, rede);
@@ -2215,7 +2215,7 @@ async function main() {
       const { midias, motivo } = midiasDaRede(rede, { media, capa, capaLarga, mediaTelegram: telegramNoEnsaio });
       log(`\n${'─'.repeat(72)}`);
       log(`📡 ${rede.nome}  ·  ${emHoraDoBrasil(hora)} BR  ·  limite ${rede.limite} (a rede de segurança; o real pergunta-se ao servidor)`);
-      if (!midias) { log(`   ⏭️  NÃO SAI — ${motivo}`); continue; }
+      if (!midias) { log(`   ⏭️  NÃO SAI: ${motivo}`); continue; }
       log(`   mídia: ${motivo}${midias.length ? ` → ${midias.length} anexo(s)` : ' → nenhum anexo'}`);
       const opcoes = rede.id === 'instagram'
         ? corpoDoAgendamento({ canalId: '(canal)', media, capa, legenda: texto, quandoUTC: hora }, log).posts[0].settings
@@ -2228,7 +2228,7 @@ async function main() {
     // ⚠️ A duração só se mede quando há Story para decidir. O vídeo longo não faz Story
     // (ver `FORMATOS`), e mandar o ffprobe ler 136 MB para não usar a resposta era gasto
     // puro, e mais um sítio onde uma corrida podia morrer sem precisar.
-    if (!storiesDoDia.length) log(`\n📖 Stories: nenhum — o ${formato.nome} não faz Story (a capa dele é deitada).`);
+    if (!storiesDoDia.length) log(`\n📖 Stories: nenhum, o ${formato.nome} não faz Story (a capa dele é deitada).`);
     const escolha = storiesDoDia.length
       ? oQueVaiNoStory({ duracaoSeg: duracaoDoMp4(mp4), media, capa })
       : null;
@@ -2238,8 +2238,8 @@ async function main() {
       const dona = aEntregar.find((r) => r.id === story.canal);
       const hora = dona ? emHoraDoBrasil(horaDaRede(quando, { minutos: minutosDoStory(story) }).quandoUTC) : null;
       log(`📖 ${story.nome}${hora ? `, ${MINUTOS_ATE_O_STORY} min depois do post (${hora})` : ''}:`);
-      if (!dona) { log(`   NÃO SAI — o ${story.canal} não entrega hoje`); continue; }
-      log(`   ${escolha.media ? `vai a ${escolha.tipo}` : 'NÃO SAI'} — ${escolha.motivo}`);
+      if (!dona) { log(`   NÃO SAI: o ${story.canal} não entrega hoje`); continue; }
+      log(`   ${escolha.media ? `vai a ${escolha.tipo}` : 'NÃO SAI'}: ${escolha.motivo}`);
       if (escolha.media) log(`   legenda: "${primeiraLinha(montarLegenda(roteiro))}"`);
     }
     log(`\n🚫 fora de propósito: ${Object.entries(REDE_DE_FORA).map(([r, p]) => `${r} (${p})`).join(' · ')}`);
@@ -2273,10 +2273,10 @@ async function main() {
       capa = await enviarFicheiro(k, capaLocal, `capa-${slug}.jpg`, 'image/jpeg');
       log(`🖼️  capa entregue: ${capa.path}`);
     } catch (e) {
-      log(`⚠️ a capa falhou (${e.message}) — segue sem ela.`);
+      log(`⚠️ a capa falhou (${e.message}): segue sem ela.`);
     }
   } else if (!temCapa) {
-    log('⚠️ não veio capa no artefato — o Instagram escolherá um fotograma ao calhas, e o Pinterest não sai.');
+    log('⚠️ não veio capa no artefato: o Instagram escolherá um fotograma ao calhas, e o Pinterest não sai.');
   }
   /**
    * A capa DEITADA, que é a que vai ao Bluesky (ver `midiasDaRede`). Falhar aqui é ainda
@@ -2287,7 +2287,7 @@ async function main() {
       capaLarga = await enviarFicheiro(k, capaLargaLocal, `capa-${slug}-yt.jpg`, 'image/jpeg');
       log(`🖼️  capa deitada entregue: ${capaLarga.path}`);
     } catch (e) {
-      log(`⚠️ a capa deitada falhou (${e.message}) — o Bluesky leva a em pé.`);
+      log(`⚠️ a capa deitada falhou (${e.message}): o Bluesky leva a em pé.`);
     }
   }
 
@@ -2307,7 +2307,7 @@ async function main() {
   if (querTelegram && !mediaTelegram) {
     const bytes = statSync(mp4).size;
     if (!formato.comprimirParaTelegram && bytes > TELEGRAM_MAX_BYTES) {
-      log(`📎 Telegram: o ${formato.nome} tem ${(bytes / 1048576).toFixed(1)} MB e não se comprime — vai a capa com o link.`);
+      log(`📎 Telegram: o ${formato.nome} tem ${(bytes / 1048576).toFixed(1)} MB e não se comprime: vai a capa com o link.`);
     } else {
       const apertado = comprimirParaOTelegram({
         mp4,
@@ -2326,9 +2326,9 @@ async function main() {
           };
           log(apertado.comprimido
             ? `📎 Telegram: cópia de ${(apertado.bytes / 1048576).toFixed(1)} MB entregue (o original tinha ${(bytes / 1048576).toFixed(1)} MB)`
-            : `📎 Telegram: o vídeo cabe (${(bytes / 1048576).toFixed(1)} MB) — vai o mesmo das outras`);
+            : `📎 Telegram: o vídeo cabe (${(bytes / 1048576).toFixed(1)} MB): vai o mesmo das outras`);
         } catch (e) {
-          log(`⚠️ a cópia para o Telegram falhou a subir (${e.message}) — ele leva a capa e o link.`);
+          log(`⚠️ a cópia para o Telegram falhou a subir (${e.message}): ele leva a capa e o link.`);
           mediaTelegram = null;
         }
       }
@@ -2363,10 +2363,10 @@ async function main() {
       const limite = await limiteDaRede(k, canal.id, rede);
       const texto = rede.legenda(roteiro, limite);
       const { midias, motivo } = midiasDaRede(rede, { media, capa, capaLarga, mediaTelegram });
-      if (!midias) { log(`\n⏭️  ${rede.nome}: NÃO SAI — ${motivo}`); falharam.push(`${rede.nome} (${motivo})`); continue; }
+      if (!midias) { log(`\n⏭️  ${rede.nome}: NÃO SAI: ${motivo}`); falharam.push(`${rede.nome} (${motivo})`); continue; }
 
       const { quandoUTC: hora, atrasada } = horaDaRede(quando, rede);
-      if (atrasada) log(`\n⏰ ${rede.nome}: a vez dele nesta fila já passou — vai daqui a ${MINUTOS_DE_MARGEM} min, em vez de amanhã.`);
+      if (atrasada) log(`\n⏰ ${rede.nome}: a vez dele nesta fila já passou: vai daqui a ${MINUTOS_DE_MARGEM} min, em vez de amanhã.`);
       const corpo = principal
         ? corpoDoAgendamento({ canalId: canal.id, media, capa, legenda: texto, quandoUTC: hora }, log)
         : montarPedido({
@@ -2394,7 +2394,7 @@ async function main() {
       }
       anotar(rede.id, { postId: id, canal: canal.name, publicaEm: hora.toISOString(), publicaEmBR: emHoraDoBrasil(hora), midia: motivo, caracteres: texto.length, limite });
       quantas++;
-      log(`\n✅ ${rede.nome}: agendado e confirmado — ${emHoraDoBrasil(hora)} BR (post ${id})`);
+      log(`\n✅ ${rede.nome}: agendado e confirmado: ${emHoraDoBrasil(hora)} BR (post ${id})`);
       log(`   ${texto.length}/${limite} caracteres · ${motivo}`);
     } catch (e) {
       /**
@@ -2402,8 +2402,8 @@ async function main() {
        * outras sete são lucro: uma delas em baixo não pode custar o dia inteiro, é a
        * mesma regra que já valia para a capa e para o Story.
        */
-      if (principal) throw new Error(`o Instagram falhou (${e.message}) — e ele é o principal, por isso a corrida para aqui.`);
-      log(`\n⚠️  ${rede.nome}: NÃO foi agendado (${e.message}) — segue-se para a próxima.`);
+      if (principal) throw new Error(`o Instagram falhou (${e.message}), e ele é o principal, por isso a corrida para aqui.`);
+      log(`\n⚠️  ${rede.nome}: NÃO foi agendado (${e.message}): segue-se para a próxima.`);
       falharam.push(`${rede.nome} (${e.message})`);
     }
   }
@@ -2426,7 +2426,7 @@ async function main() {
     // está de fora hoje), o vídeo apareceria 24 horas e sumiria sem nada para onde voltar.
     if (!dona) { log(`\n⏭️  ${story.nome}: o ${story.canal} não entrega hoje, então o Story também não`); continue; }
     if (!caderno[slug]?.redes?.[story.canal]) {
-      log(`\n⏭️  ${story.nome}: o post do ${story.canal} não foi agendado — um Story sozinho ficaria órfão`);
+      log(`\n⏭️  ${story.nome}: o post do ${story.canal} não foi agendado: um Story sozinho ficaria órfão`);
       falharam.push(`${story.nome} (o post do ${story.canal} não saiu)`);
       continue;
     }
@@ -2448,11 +2448,11 @@ async function main() {
         rede: story.canal,
       }));
       anotar(story.id, { postId: idStory, tipo: escolhaDoStory.tipo, publicaEm: horaDoStory.toISOString(), publicaEmBR: emHoraDoBrasil(horaDoStory) });
-      log(`\n📖 ${story.nome} agendado (${escolhaDoStory.tipo}) para ${emHoraDoBrasil(horaDoStory)} — ${escolhaDoStory.motivo}`);
+      log(`\n📖 ${story.nome} agendado (${escolhaDoStory.tipo}) para ${emHoraDoBrasil(horaDoStory)}: ${escolhaDoStory.motivo}`);
     } catch (e) {
       // ⚠️ NADA AQUI DERRUBA O POST. O post daquela rede já está agendado e confirmado
       // quando se chega a esta linha: o principal nunca paga pelo acessório.
-      log(`\n⚠️ ${story.nome} não foi agendado (${e.message}) — o post está de pé, que é o que conta.`);
+      log(`\n⚠️ ${story.nome} não foi agendado (${e.message}): o post está de pé, que é o que conta.`);
       falharam.push(`${story.nome} (${e.message})`);
     }
   }
