@@ -523,7 +523,7 @@ export function topicosDoRoteiro(roteiro) {
   const titulo = limpar(roteiro.term);
   return [
     titulo && !mesmaFrase(titulo, kw) ? titulo : `Como ${kw} funciona na prática`,
-    'A conta que quase ninguém faz — e devia fazer',
+    'A conta que quase ninguém faz, e devia fazer',
     'Como fazer essa conta no seu caso, de graça',
   ].map((t) => t.slice(0, MAX_TOPICO));
 }
@@ -560,7 +560,7 @@ export function montarLegenda(roteiro) {
     '📌 O que você vai ver aqui:',
     ...topicos.map((t) => `• ${t}`),
     '',
-    '💡 A verdade é que a maior parte das pessoas perde dinheiro sem perceber — não por falta de esforço, mas por falta de conta feita.',
+    '💡 A verdade é que a maior parte das pessoas perde dinheiro sem perceber: não por falta de esforço, mas por falta de conta feita.',
     '',
     '👉 Comenta FINMOOVI aqui embaixo que eu te mando o app com 7 dias grátis. É de verdade, eu respondo.',
     '',
@@ -608,7 +608,7 @@ export function legendaEmHtml(legenda) {
  * frase manda PROCURAR o nome, que é verdade em qualquer sítio.
  */
 const CHAMADA_COM_LINK = `👉 O FinMoovi tem 7 dias grátis e abre direto no navegador: ${APP_URL}`;
-const CHAMADA_SEM_LINK = '👉 Quer fazer essa conta com os SEUS números? Procura FinMoovi — 7 dias grátis e abre no navegador.';
+const CHAMADA_SEM_LINK = '👉 Quer fazer essa conta com os SEUS números? Procura FinMoovi: 7 dias grátis e abre no navegador.';
 
 /**
  * 🔑 O LINK CERTO DESTE VÍDEO, e não a porta da frente do site.
@@ -800,7 +800,7 @@ export function legendaThreads(roteiro, limite) {
   const { titulo, gancho } = tituloEGancho(roteiro);
   return encaixarNoLimite([
     { texto: gancho || titulo, essencial: true },
-    { texto: `O FinMoovi faz essa conta — 7 dias grátis: ${APP_URL}`, essencial: true },
+    { texto: `O FinMoovi faz essa conta. 7 dias grátis: ${APP_URL}`, essencial: true },
   ], limite);
 }
 
