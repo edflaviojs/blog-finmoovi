@@ -4,6 +4,7 @@ definition: "What uptick is and how it shows up in your everyday money — expla
 title: "uptick - Financial Glossary"
 description: "What uptick is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/uptick.webp"
+imageAlt: "Gold coins, rising chart, and glass jars with green plants on dark surface."
 category: "basico"
 tags: ["uptick", "glossary", "finance"]
 author: "FinMoovi"

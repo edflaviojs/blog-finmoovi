@@ -4,6 +4,7 @@ definition: "Qué es incremento y cómo aparece en tu día a día — explicado 
 title: "incremento - Glosario Financiero"
 description: "Qué es incremento y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/uptick.webp"
+imageAlt: "Pilas de monedas doradas y plantas verdes creciendo en frascos de cristal."
 category: "basico"
 tags: ["incremento", "glosario", "finanzas"]
 author: "FinMoovi"

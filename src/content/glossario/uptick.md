@@ -4,6 +4,7 @@ definition: "O que é uptick e como isso aparece no seu dia a dia — explicado 
 title: "uptick - Glossário Financeiro"
 description: "O que é uptick e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/uptick.webp"
+imageAlt: "Pilhas de moedas douradas, plantas verdes e um frasco de vidro sobre fundo escuro."
 category: "basico"
 tags: ["uptick", "glossário", "finanças"]
 author: "FinMoovi"
