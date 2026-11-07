@@ -1,0 +1,212 @@
+{
+  "slug": "trust",
+  "term": "trust",
+  "category": "basico",
+  "keyword": "trust",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "O senhor sabe o que é *trust*?"
+  },
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "escudo",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "O senhor sabe o que é trust? É deixar a casa e a poupança com alguém de confiança, até a hora de passar pros filhos.",
+      "durationSec": 9.6,
+      "shots": [
+        {
+          "anchor": "trust",
+          "visual": {
+            "type": "statement",
+            "text": "Seus bens, protegidos"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "poupança",
+          "visual": {
+            "type": "icon",
+            "icon": "piggy"
+          }
+        },
+        {
+          "anchor": "confiança",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escudo"
+          },
+          "sfx": "sparkle"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Sem isso, tudo vira herança. E aí vem irmão brigando, imposto alto e papel demorando, com o filho esperando.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "herança",
+          "visual": {
+            "type": "statement",
+            "text": "Herança sem plano"
+          }
+        },
+        {
+          "anchor": "brigando",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          },
+          "sfx": "alert"
+        },
+        {
+          "anchor": "demorando",
+          "visual": {
+            "type": "icon",
+            "icon": "hourglass"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "E a casa que o senhor levou trinta anos pra pagar fica parada anos, presa no meio da briga.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "trinta",
+          "visual": {
+            "type": "number",
+            "text": "30 anos"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "parada",
+          "visual": {
+            "type": "statement",
+            "text": "Parada. Presa."
+          }
+        },
+        {
+          "anchor": "presa",
+          "visual": {
+            "type": "icon",
+            "icon": "clock"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu botei casa, poupança e carro no FinMoovi, e ele me mostrou três linhas. São três coisas pra decidir quem cuida.",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "casa",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Casa, poupança e carro listados em três linhas"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "coisas",
+          "visual": {
+            "type": "statement",
+            "text": "Três decisões simples"
+          }
+        },
+        {
+          "anchor": "quem",
+          "visual": {
+            "type": "icon",
+            "icon": "target"
+          },
+          "sfx": "ding"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver a sua lista? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 4.2,
+      "shots": [
+        {
+          "anchor": "lista",
+          "visual": {
+            "type": "statement",
+            "text": "Sua lista de bens"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "number",
+            "text": "7 dias grátis"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Trust é deixar os bens com quem você confia, com regra escrita. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "bens",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          }
+        },
+        {
+          "anchor": "confia",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escudo"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "statement",
+            "text": "Controle é seu"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Monte sua lista de bens agora",
+    "target": "app"
+  },
+  "totalDurationSec": 43.8
+}
