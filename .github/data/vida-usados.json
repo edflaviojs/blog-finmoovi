@@ -1042,5 +1042,11 @@
     "gancho": "e-serio-que",
     "turno": "noite",
     "em": "2026-11-06T12:30:44.387Z"
+  },
+  {
+    "situacao": "reserva-emergencia",
+    "gancho": "nao-vai-acreditar",
+    "turno": "manha",
+    "em": "2026-11-07T11:15:16.856Z"
   }
 ]

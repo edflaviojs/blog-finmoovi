@@ -1,0 +1,118 @@
+{
+  "slug": "loop-reserva-emergencia-nao-vai-acreditar",
+  "formato": "loop16",
+  "term": "A reserva de emergência",
+  "category": "vida",
+  "keyword": "RESERVA",
+  "valor": "R$ 600",
+  "situacao": "reserva-emergencia",
+  "gancho": "nao-vai-acreditar",
+  "ganchoFamilia": "não vai acreditar",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "guarda-chuva",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você não vai acreditar, mas tudo quebrou junto lá em casa.",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "acreditar",
+          "visual": {
+            "type": "statement",
+            "text": "Tudo quebrou junto"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "quebrou",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "guarda-chuva"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Depois do susto, eu passei a separar seiscentos reais todo mês.",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "susto",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "guarda-chuva"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "passei",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 600"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Agora, se quebra algo, eu já tenho de onde tirar.",
+      "durationSec": 3.53,
+      "shots": [
+        {
+          "anchor": "quebra",
+          "visual": {
+            "type": "statement",
+            "text": "Agora tenho de onde tirar"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "tenho",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "guarda-chuva"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Tudo quebrou junto de novo, mas dessa vez eu dormi tranquilo.",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "quebrou",
+          "visual": {
+            "type": "statement",
+            "text": "Quebrou de novo. Dormi bem."
+          }
+        },
+        {
+          "anchor": "junto",
+          "visual": {
+            "type": "statement",
+            "text": "Tudo quebrou junto"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
