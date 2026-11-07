@@ -1048,5 +1048,11 @@
     "gancho": "nao-vai-acreditar",
     "turno": "manha",
     "em": "2026-11-07T11:15:16.856Z"
+  },
+  {
+    "situacao": "mercado-subindo",
+    "gancho": "nunca-faca",
+    "turno": "noite",
+    "em": "2026-11-07T11:24:22.608Z"
   }
 ]
