@@ -1,14 +1,14 @@
 # GSC — Monitor de Indexação
 
-Gerado em: 2026-11-06T15:39:51.052Z
+Gerado em: 2026-11-07T14:45:01.066Z
 Propriedade: https://blog.finmoovi.com/
 
 ## Resumo
 
-- **708/1145** URLs indexadas
-- **154** não indexadas
-- **283** com erro na inspeção
-- **106** página(s) de conteúdo fora do índice há ≥7 dias
+- **926/1148** URLs indexadas
+- **222** não indexadas
+- **0** com erro na inspeção
+- **144** página(s) de conteúdo fora do índice há ≥7 dias
 
 ## Sitemap
 
@@ -16,10 +16,10 @@ Propriedade: https://blog.finmoovi.com/
 
 ## Por motivo (não indexadas)
 
-- Crawled - currently not indexed: 143
+- Crawled - currently not indexed: 207
 - Duplicate, Google chose different canonical than user: 1
+- Discovered - currently not indexed: 7
 - URL is unknown to Google: 7
-- Discovered - currently not indexed: 3
 
 ## Páginas de conteúdo há mais tempo fora do índice
 
@@ -38,11 +38,12 @@ Propriedade: https://blog.finmoovi.com/
 - `https://blog.finmoovi.com/posts/cotacoes-semana-4-maio-2026/` — Crawled - currently not indexed (desde 2026-10-27)
 - `https://blog.finmoovi.com/posts/dia-dos-namorados-economico/` — Crawled - currently not indexed (desde 2026-10-24)
 - `https://blog.finmoovi.com/posts/diferenca-entre-investir-e-poupar/` — Crawled - currently not indexed (desde 2026-10-25)
+- `https://blog.finmoovi.com/posts/economizar-nas-compras-do-supermercado/` — Crawled - currently not indexed (desde 2026-10-31)
 - `https://blog.finmoovi.com/posts/economize-na-conta-do-mercado/` — Crawled - currently not indexed (desde 2026-10-29)
 - `https://blog.finmoovi.com/posts/entenda-a-taxa-cdi-e-seu-impacto-nos-seus-investimentos/` — Crawled - currently not indexed (desde 2026-10-29)
 - `https://blog.finmoovi.com/posts/fundos-imobiliarios-para-iniciantes-guia-completo/` — Crawled - currently not indexed (desde 2026-10-29)
 - `https://blog.finmoovi.com/posts/investimentos-para-o-segundo-semestre-estrategias-praticas/` — Duplicate, Google chose different canonical than user (desde 2026-08-07)
-- `https://blog.finmoovi.com/posts/negociar-descontos-em-contas-fixas/` — URL is unknown to Google (desde 2026-08-12)
+- `https://blog.finmoovi.com/posts/negociar-descontos-em-contas-fixas/` — Discovered - currently not indexed (desde 2026-08-12)
 - `https://blog.finmoovi.com/posts/orcamento-com-salario-minimo-dicas-praticas/` — Crawled - currently not indexed (desde 2026-10-30)
 - `https://blog.finmoovi.com/posts/orcamento-para-casal-dividindo-despesas/` — Crawled - currently not indexed (desde 2026-10-26)
 - `https://blog.finmoovi.com/posts/pix-vs-ted-qual-vale-mais-a-pena-em-2026/` — Crawled - currently not indexed (desde 2026-10-27)
@@ -61,6 +62,7 @@ Propriedade: https://blog.finmoovi.com/
 - `https://blog.finmoovi.com/en/posts/en-finmoovi-cost-of-living-index-june-2026/` — Crawled - currently not indexed (desde 2026-09-27)
 - `https://blog.finmoovi.com/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet/` — Crawled - currently not indexed (desde 2026-10-19)
 - `https://blog.finmoovi.com/en/posts/en-how-to-build-a-budget-that-actually-works-in-2026/` — Crawled - currently not indexed (desde 2026-10-30)
+- `https://blog.finmoovi.com/en/posts/en-how-to-tame-your-spending-and-find-peace-in-2026/` — Crawled - currently not indexed (desde 2026-10-31)
 - `https://blog.finmoovi.com/en/posts/en-investing-in-dollar-in-brazil/` — Crawled - currently not indexed (desde 2026-09-22)
 - `https://blog.finmoovi.com/en/posts/en-migrating-from-spreadsheets-to-a-financial-app/` — Crawled - currently not indexed (desde 2026-10-26)
 - `https://blog.finmoovi.com/en/posts/en-organizing-finances-as-a-freelancer/` — Crawled - currently not indexed (desde 2026-10-29)
@@ -71,5 +73,3 @@ Propriedade: https://blog.finmoovi.com/
 - `https://blog.finmoovi.com/en/posts/en-quotes-semana-3-july-2026/` — Crawled - currently not indexed (desde 2026-09-21)
 - `https://blog.finmoovi.com/en/posts/en-quotes-semana-3-june-2026/` — Crawled - currently not indexed (desde 2026-10-28)
 - `https://blog.finmoovi.com/en/posts/en-quotes-semana-4-june-2026/` — Crawled - currently not indexed (desde 2026-09-24)
-- `https://blog.finmoovi.com/en/posts/en-quotes-semana-5-june-2026/` — Crawled - currently not indexed (desde 2026-10-30)
-- `https://blog.finmoovi.com/en/posts/en-quotes-week-4-may-2026/` — Crawled - currently not indexed (desde 2026-10-30)
