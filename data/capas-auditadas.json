@@ -6349,6 +6349,21 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-11-06"
+    },
+    "uptick-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-07"
+    },
+    "uptick-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-07"
+    },
+    "uptick.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-07"
     }
   },
   "corrigidas": {
@@ -7025,6 +7040,6 @@
       "motivo": "borrada segundo a IA de visão (nitidez local 1252)"
     }
   },
-  "totalAcervo": 1270,
-  "ultimaCorrida": "2026-11-06"
+  "totalAcervo": 1273,
+  "ultimaCorrida": "2026-11-07"
 }
