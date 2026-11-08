@@ -3215,8 +3215,51 @@
           "titulo": "Cierre"
         }
       ]
+    },
+    {
+      "videoId": "6VHJaB21Wgs",
+      "title": "INVESTIR COM POUCO DINHEIRO: Veja o episódio 02 da Carteira da Isabela #ISABELA02",
+      "channel": "Academia Thomaz Xavier de Finanças",
+      "duracaoSeg": 1137,
+      "idioma": "pt",
+      "viewsPerDay": 2000,
+      "vistoEm": "2026-11-08",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "CARTEIRA DA ISABELA"
+        },
+        {
+          "seg": 36,
+          "titulo": "Desempenho do primeiro mês"
+        },
+        {
+          "seg": 120,
+          "titulo": "Ideal da carteira"
+        },
+        {
+          "seg": 160,
+          "titulo": "Pânico na bolsa de valores"
+        },
+        {
+          "seg": 480,
+          "titulo": "Onde vamos investir esse mês?"
+        },
+        {
+          "seg": 760,
+          "titulo": "Investindo na prática pelo B. Inter"
+        },
+        {
+          "seg": 1035,
+          "titulo": "Carteira após compras"
+        },
+        {
+          "seg": 1105,
+          "titulo": "Veja: primeiro episódio!"
+        }
+      ]
     }
   ],
-  "atualizadoEm": "2026-11-07T10:48:04.858Z",
-  "total": 57
+  "atualizadoEm": "2026-11-08T10:54:47.751Z",
+  "total": 58
 }
