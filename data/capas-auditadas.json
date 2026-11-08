@@ -6364,6 +6364,21 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-11-07"
+    },
+    "withdrawal-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-08"
+    },
+    "withdrawal-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-08"
+    },
+    "withdrawal.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-08"
     }
   },
   "corrigidas": {
@@ -7040,6 +7055,6 @@
       "motivo": "borrada segundo a IA de visão (nitidez local 1252)"
     }
   },
-  "totalAcervo": 1273,
-  "ultimaCorrida": "2026-11-07"
+  "totalAcervo": 1276,
+  "ultimaCorrida": "2026-11-08"
 }
