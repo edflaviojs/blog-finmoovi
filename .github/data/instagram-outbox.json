@@ -22,5 +22,11 @@
     "runId": "42376492956",
     "producedAt": "2026-11-07T13:42:05.645Z",
     "artifact": "short-trust"
+  },
+  {
+    "fileSlug": "categoria-de-despesa",
+    "runId": "42486076652",
+    "producedAt": "2026-11-08T14:02:31.456Z",
+    "artifact": "short-categoria-de-despesa"
   }
 ]
