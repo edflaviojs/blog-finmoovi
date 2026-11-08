@@ -30194,5 +30194,114 @@
         "publicaEmBR": "09/11 às 14h31"
       }
     }
+  },
+  "kw-3-erros-que-te-fazem-pagar-r-200-a-mais-na-conta-de-luz": {
+    "midias": {
+      "video": {
+        "id": "e6a630af-b64d-40a9-95b2-cc98fcca24b1",
+        "name": "jx2vWlQCZy.mp4",
+        "originalName": null,
+        "path": "https://media.help4desk.com/jx2vWlQCZy.mp4",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capa": {
+        "id": "cc1b6429-1985-4a8e-b549-2e6da7d9b42a",
+        "name": "KYkWm5TdYA.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/KYkWm5TdYA.jpeg",
+        "thumbnail": null,
+        "alt": null
+      },
+      "capaLarga": {
+        "id": "25c8c56f-3d3f-4cf4-a42b-9843980bdc2c",
+        "name": "O9unFSF3Yd.jpeg",
+        "originalName": null,
+        "path": "https://media.help4desk.com/O9unFSF3Yd.jpeg",
+        "thumbnail": null,
+        "alt": null
+      }
+    },
+    "publicaEm": "2026-11-08T22:00:00.000Z",
+    "publicaEmBR": "08/11 às 19h00",
+    "agendadoEm": "2026-11-08T19:43:39.612Z",
+    "atualizadoEm": "2026-11-08T19:43:43.490Z",
+    "redes": {
+      "instagram": {
+        "postId": "cmw88pw8300f0nv9jyto1k7z5",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-11-08T22:00:00.000Z",
+        "publicaEmBR": "08/11 às 19h00",
+        "midia": "o vídeo",
+        "caracteres": 731,
+        "limite": 2200
+      },
+      "zernio-tiktok": {
+        "postId": "cmw88pwlp00f1nv9j3f8n51vi",
+        "canal": "finmoovi",
+        "publicaEm": "2026-11-08T22:12:00.000Z",
+        "publicaEmBR": "08/11 às 19h12",
+        "midia": "o vídeo",
+        "caracteres": 254,
+        "limite": 2200
+      },
+      "facebook": {
+        "postId": "cmw88px0100f2nv9jfvrrpp25",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-11-08T22:26:00.000Z",
+        "publicaEmBR": "08/11 às 19h26",
+        "midia": "o vídeo",
+        "caracteres": 502,
+        "limite": 63206
+      },
+      "linkedin-page": {
+        "postId": "cmw88pxdk00f3nv9jvabzs41s",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-11-08T22:43:00.000Z",
+        "publicaEmBR": "08/11 às 19h43",
+        "midia": "o vídeo",
+        "caracteres": 486,
+        "limite": 3000
+      },
+      "threads": {
+        "postId": "cmw88pxrl00f4nv9jdubyuxma",
+        "canal": "finmoovi",
+        "publicaEm": "2026-11-08T22:58:00.000Z",
+        "publicaEmBR": "08/11 às 19h58",
+        "midia": "o vídeo",
+        "caracteres": 127,
+        "limite": 500
+      },
+      "pinterest": {
+        "postId": "cmw88pyhd00f5nv9jka5lbdqo",
+        "canal": "finmoovi",
+        "publicaEm": "2026-11-08T23:31:00.000Z",
+        "publicaEmBR": "08/11 às 20h31",
+        "midia": "vídeo primeiro, capa depois: a ordem que o Pinterest exige",
+        "caracteres": 466,
+        "limite": 500
+      },
+      "bluesky": {
+        "postId": "cmw88pywc00f6nv9jxj1c4jgo",
+        "canal": "FinMoovi",
+        "publicaEm": "2026-11-08T23:47:00.000Z",
+        "publicaEmBR": "08/11 às 20h47",
+        "midia": "vai a capa DEITADA (o Bluesky não publica vídeo, e a em pé ficaria cortada no feed)",
+        "caracteres": 85,
+        "limite": 300
+      },
+      "instagram-story": {
+        "postId": "cmw88pz6l00f7nv9j76ofezz6",
+        "tipo": "vídeo",
+        "publicaEm": "2026-11-08T22:05:00.000Z",
+        "publicaEmBR": "08/11 às 19h05"
+      },
+      "facebook-story": {
+        "postId": "cmw88pzc700f8nv9j42snyfvu",
+        "tipo": "vídeo",
+        "publicaEm": "2026-11-08T22:31:00.000Z",
+        "publicaEmBR": "08/11 às 19h31"
+      }
+    }
   }
 }
