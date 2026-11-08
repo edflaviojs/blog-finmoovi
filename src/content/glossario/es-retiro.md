@@ -4,6 +4,7 @@ definition: "Qué es retiro y cómo aparece en tu día a día — explicado de f
 title: "retiro - Glosario Financiero"
 description: "Qué es retiro y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/withdrawal.webp"
+imageAlt: "Pilas de monedas doradas, un cerrojo metálico y una planta verde en un frasco de vidrio."
 category: "basico"
 tags: ["retiro", "glosario", "finanzas"]
 author: "FinMoovi"

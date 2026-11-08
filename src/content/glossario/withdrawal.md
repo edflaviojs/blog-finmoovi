@@ -4,6 +4,7 @@ definition: "O que é withdrawal e como isso aparece no seu dia a dia — explic
 title: "withdrawal - Glossário Financeiro"
 description: "O que é withdrawal e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/withdrawal.webp"
+imageAlt: "Um gráfico de barras, uma câmera e um vaso com moedas e uma planta."
 category: "basico"
 tags: ["withdrawal", "glossário", "finanças"]
 author: "FinMoovi"

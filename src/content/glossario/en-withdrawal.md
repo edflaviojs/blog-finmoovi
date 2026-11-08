@@ -4,6 +4,7 @@ definition: "What withdrawal is and how it shows up in your everyday money — e
 title: "withdrawal - Financial Glossary"
 description: "What withdrawal is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/withdrawal.webp"
+imageAlt: "Gold coins, safe, and plant in glass jar on purple surface."
 category: "basico"
 tags: ["withdrawal", "glossary", "finance"]
 author: "FinMoovi"
