@@ -1,0 +1,219 @@
+{
+  "slug": "categoria-de-despesa",
+  "term": "categoria de despesa",
+  "category": "basico",
+  "keyword": "categoria",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você sabe pra *onde vai o seu salário* todo mês?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "fumaca",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você sabe pra onde vai o seu salário todo mês? Eu achava que sabia. Não sabia nada.",
+      "durationSec": 6.5,
+      "shots": [
+        {
+          "anchor": "onde",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "achava",
+          "visual": {
+            "type": "statement",
+            "text": "Eu achava que sabia"
+          }
+        },
+        {
+          "anchor": "nada",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Olha, categoria é só o nome que você dá a cada gasto. Mercado, ônibus, lanche, delivery. Eu comprava tudo isso correndo e não separava nada.",
+      "durationSec": 9.6,
+      "shots": [
+        {
+          "anchor": "categoria",
+          "visual": {
+            "type": "statement",
+            "text": "Categoria = nome do gasto"
+          }
+        },
+        {
+          "anchor": "Mercado",
+          "visual": {
+            "type": "list",
+            "text": "Mercado · Ônibus · Lanche · Delivery"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "correndo",
+          "visual": {
+            "type": "icon",
+            "icon": "clock"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Aí eu juntei os gastos do mês por categoria. O delivery sozinho passou de novecentos reais. E eu jurava que era pouco.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "juntei",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          }
+        },
+        {
+          "anchor": "delivery",
+          "visual": {
+            "type": "chart",
+            "text": "Gastos do mês por categoria"
+          }
+        },
+        {
+          "anchor": "novecentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 900+"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "jurava",
+          "visual": {
+            "type": "statement",
+            "text": "Eu achava pouco"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu lancei tudo no FinMoovi e ele separou em grupos. Delivery ficou em primeiro, bem na frente do mercado, que deu trezentos reais.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Gastos separados por categoria, delivery em primeiro"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "primeiro",
+          "visual": {
+            "type": "statement",
+            "text": "Delivery em 1º lugar"
+          }
+        },
+        {
+          "anchor": "trezentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 300"
+          },
+          "sfx": "coin"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver pra onde vai o seu salário? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 5.4,
+      "shots": [
+        {
+          "anchor": "salário",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "O seu salário some onde você nunca separou. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 5.8,
+      "shots": [
+        {
+          "anchor": "some",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          }
+        },
+        {
+          "anchor": "separou",
+          "visual": {
+            "type": "statement",
+            "text": "Sem separar, some"
+          }
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "icon",
+            "icon": "money"
+          },
+          "sfx": "thud"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja pra onde vai seu salário",
+    "target": "app"
+  },
+  "totalDurationSec": 44.6
+}
