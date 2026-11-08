@@ -1060,5 +1060,11 @@
     "gancho": "voces-viram",
     "turno": "manha",
     "em": "2026-11-08T11:25:59.621Z"
+  },
+  {
+    "situacao": "ipva-e-iptu",
+    "gancho": "voces-viram",
+    "turno": "noite",
+    "em": "2026-11-08T11:39:05.579Z"
   }
 ]

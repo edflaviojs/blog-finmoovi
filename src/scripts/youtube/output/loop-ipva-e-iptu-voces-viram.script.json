@@ -1,0 +1,118 @@
+{
+  "slug": "loop-ipva-e-iptu-voces-viram",
+  "formato": "loop16",
+  "term": "IPVA e IPTU de janeiro",
+  "category": "vida",
+  "keyword": "JANEIRO",
+  "valor": "R$ 1.600",
+  "situacao": "ipva-e-iptu",
+  "gancho": "voces-viram",
+  "ganchoFamilia": "vocês viram",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "avalanche",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Gente, vocês viram que o IPVA e o IPTU chegaram juntos?",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "vocês",
+          "visual": {
+            "type": "statement",
+            "text": "IPVA e IPTU juntos?"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "viram",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "avalanche"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu somei os dois carnês. Mil e seiscentos reais de uma vez só.",
+      "durationSec": 4.49,
+      "shots": [
+        {
+          "anchor": "somei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "avalanche"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "carnês",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 1.600 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Agora eu separo um pouquinho todo mês, caladinho.",
+      "durationSec": 2.76,
+      "shots": [
+        {
+          "anchor": "separo",
+          "visual": {
+            "type": "statement",
+            "text": "Separo um pouquinho todo mês"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "pouquinho",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "avalanche"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Senão o IPVA e o IPTU chegam juntos de novo, igual avalanche.",
+      "durationSec": 4.15,
+      "shots": [
+        {
+          "anchor": "Senão",
+          "visual": {
+            "type": "statement",
+            "text": "Os carnês chegam juntos"
+          }
+        },
+        {
+          "anchor": "chegam",
+          "visual": {
+            "type": "statement",
+            "text": "IPVA e IPTU juntos?"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
