@@ -1,0 +1,118 @@
+{
+  "slug": "loop-decimo-terceiro-voces-viram",
+  "formato": "loop16",
+  "term": "O 13º antes que suma",
+  "category": "vida",
+  "keyword": "13º",
+  "valor": "R$ 2.400",
+  "situacao": "decimo-terceiro",
+  "gancho": "voces-viram",
+  "ganchoFamilia": "vocês viram",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "fumaca",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Gente, vocês viram que o dinheiro do fim do ano some?",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "vocês",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro de fim de ano some"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "viram",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Olha, comigo caiu e dois mil e quatrocentos reais viraram fumaça.",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "quatrocentos",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 2.400"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Agora eu e a esposa combinamos pra onde ele vai.",
+      "durationSec": 3.53,
+      "shots": [
+        {
+          "anchor": "esposa",
+          "visual": {
+            "type": "statement",
+            "text": "Combinamos antes de gastar"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "combinamos",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Por isso agora o dinheiro do fim do ano não some.",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Combinar antes de cair"
+          }
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro de fim de ano some"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
