@@ -1,14 +1,14 @@
 # GSC — Monitor de Indexação
 
-Gerado em: 2026-11-07T14:45:01.066Z
+Gerado em: 2026-11-08T14:53:20.117Z
 Propriedade: https://blog.finmoovi.com/
 
 ## Resumo
 
-- **926/1148** URLs indexadas
-- **222** não indexadas
+- **889/1151** URLs indexadas
+- **262** não indexadas
 - **0** com erro na inspeção
-- **144** página(s) de conteúdo fora do índice há ≥7 dias
+- **148** página(s) de conteúdo fora do índice há ≥7 dias
 
 ## Sitemap
 
@@ -16,10 +16,10 @@ Propriedade: https://blog.finmoovi.com/
 
 ## Por motivo (não indexadas)
 
-- Crawled - currently not indexed: 207
+- Crawled - currently not indexed: 252
 - Duplicate, Google chose different canonical than user: 1
-- Discovered - currently not indexed: 7
-- URL is unknown to Google: 7
+- URL is unknown to Google: 5
+- Discovered - currently not indexed: 4
 
 ## Páginas de conteúdo há mais tempo fora do índice
 
@@ -43,7 +43,9 @@ Propriedade: https://blog.finmoovi.com/
 - `https://blog.finmoovi.com/posts/entenda-a-taxa-cdi-e-seu-impacto-nos-seus-investimentos/` — Crawled - currently not indexed (desde 2026-10-29)
 - `https://blog.finmoovi.com/posts/fundos-imobiliarios-para-iniciantes-guia-completo/` — Crawled - currently not indexed (desde 2026-10-29)
 - `https://blog.finmoovi.com/posts/investimentos-para-o-segundo-semestre-estrategias-praticas/` — Duplicate, Google chose different canonical than user (desde 2026-08-07)
-- `https://blog.finmoovi.com/posts/negociar-descontos-em-contas-fixas/` — Discovered - currently not indexed (desde 2026-08-12)
+- `https://blog.finmoovi.com/posts/investir-vs-quitar-dividas-qual-vale-mais-a-pena-em-2026/` — Crawled - currently not indexed (desde 2026-11-01)
+- `https://blog.finmoovi.com/posts/migrando-da-planilha-para-um-app-financeiro/` — Crawled - currently not indexed (desde 2026-11-01)
+- `https://blog.finmoovi.com/posts/negociar-descontos-em-contas-fixas/` — URL is unknown to Google (desde 2026-08-12)
 - `https://blog.finmoovi.com/posts/orcamento-com-salario-minimo-dicas-praticas/` — Crawled - currently not indexed (desde 2026-10-30)
 - `https://blog.finmoovi.com/posts/orcamento-para-casal-dividindo-despesas/` — Crawled - currently not indexed (desde 2026-10-26)
 - `https://blog.finmoovi.com/posts/pix-vs-ted-qual-vale-mais-a-pena-em-2026/` — Crawled - currently not indexed (desde 2026-10-27)
@@ -71,5 +73,3 @@ Propriedade: https://blog.finmoovi.com/
 - `https://blog.finmoovi.com/en/posts/en-quotes-semana-1-june-2026/` — Crawled - currently not indexed (desde 2026-10-30)
 - `https://blog.finmoovi.com/en/posts/en-quotes-semana-2-july-2026/` — Crawled - currently not indexed (desde 2026-10-25)
 - `https://blog.finmoovi.com/en/posts/en-quotes-semana-3-july-2026/` — Crawled - currently not indexed (desde 2026-09-21)
-- `https://blog.finmoovi.com/en/posts/en-quotes-semana-3-june-2026/` — Crawled - currently not indexed (desde 2026-10-28)
-- `https://blog.finmoovi.com/en/posts/en-quotes-semana-4-june-2026/` — Crawled - currently not indexed (desde 2026-09-24)
