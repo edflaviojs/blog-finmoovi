@@ -10,5 +10,11 @@
     "runId": "42475654208",
     "producedAt": "2026-11-08T11:47:55.032Z",
     "artifact": "short-loop-ipva-e-iptu-voces-viram"
+  },
+  {
+    "fileSlug": "loop-dez-vezes-sem-juros-faca-isso",
+    "runId": "42623086271",
+    "producedAt": "2026-11-09T13:26:17.324Z",
+    "artifact": "short-loop-dez-vezes-sem-juros-faca-isso"
   }
 ]
