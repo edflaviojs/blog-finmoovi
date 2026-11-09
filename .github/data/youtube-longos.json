@@ -357,6 +357,58 @@
       "propostoEm": "2026-10-25T08:49:48.518Z",
       "publicadoEm": "2026-11-03T01:29:09.694Z",
       "videoId": "tcG4xylilRc"
+    },
+    {
+      "slug": "controle-gastos-com-mil",
+      "titulo": "Controle de gastos com 3 mil de salário sem pedir aumento",
+      "tema": "Como fazer 3 mil de salário fechar o mês com sobra, com a conta feita em reais",
+      "angulo": "A dor é ganhar 3 mil reais e ver o dinheiro acabar antes do dia 30. Mostro, na primeira pessoa, como eu dividi um salário de R$ 3.000 em gastos fixos (R$ 1.650), variáveis (R$ 850) e sobra (R$ 500), e onde estavam os R$ 300 que sumiam sem eu perceber. No fim, a pessoa leva uma conta simples para refazer com o próprio salário e descobrir quanto pode sobrar, sem ganhar mais.",
+      "glossario": "controle-de-gastos",
+      "palavrasChave": [
+        "controle de gastos",
+        "viver com 3 mil",
+        "como organizar salário",
+        "gastos fixos e variáveis",
+        "sobrar dinheiro no mês"
+      ],
+      "estado": "proposto",
+      "viralRef": {
+        "videoId": "wxCto9WSZcI",
+        "title": "COMO SE ESTABLIZAR COM 3 MIL DE SALÁRIO em 2027",
+        "views": 434973,
+        "viewsPerDay": 7368,
+        "estrutura": [
+          "número concreto no título (\"3 MIL\")",
+          "uma palavra em maiúsculas a marcar o tom"
+        ]
+      },
+      "propostoEm": "2026-11-08T10:54:47.752Z"
+    },
+    {
+      "slug": "reserva-emergencia-antes-proxima",
+      "titulo": "Reserva de emergência antes da próxima crise com R$ 150 por mês",
+      "tema": "Como montar uma reserva de emergência antes de uma crise, com R$ 3.500 por mês",
+      "angulo": "A dor é ouvir falar de crise e não ter nenhum dinheiro guardado para segurar o tranco. O vídeo mostra, com a conta feita, quanto uma pessoa que ganha R$ 3.500 e gasta R$ 3.300 consegue juntar em 24 meses guardando só R$ 150 por mês, e quanto isso cobre de contas se o salário parar. No fim, a pessoa leva um número claro de meses de proteção e um passo para começar ainda este mês.",
+      "glossario": "fluxo-de-caixa",
+      "palavrasChave": [
+        "reserva de emergência",
+        "como montar reserva",
+        "guardar dinheiro todo mês",
+        "crise econômica 2027",
+        "controle de gastos"
+      ],
+      "estado": "proposto",
+      "viralRef": {
+        "videoId": "fUhCwGl4oYs",
+        "title": "A CRISE de 2027 Pode Criar os Próximos MILIONÁRIOS #educaçãofinanceira",
+        "views": 26188,
+        "viewsPerDay": 7316,
+        "estrutura": [
+          "número concreto no título (\"2027\")",
+          "uma palavra em maiúsculas a marcar o tom"
+        ]
+      },
+      "propostoEm": "2026-11-08T10:54:47.752Z"
     }
   ]
 }
