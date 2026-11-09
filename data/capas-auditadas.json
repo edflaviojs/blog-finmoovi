@@ -6379,6 +6379,21 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-11-08"
+    },
+    "young-investor-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-09"
+    },
+    "young-investor-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-09"
+    },
+    "young-investor.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-09"
     }
   },
   "corrigidas": {
@@ -7055,6 +7070,6 @@
       "motivo": "borrada segundo a IA de visão (nitidez local 1252)"
     }
   },
-  "totalAcervo": 1276,
-  "ultimaCorrida": "2026-11-08"
+  "totalAcervo": 1279,
+  "ultimaCorrida": "2026-11-09"
 }
