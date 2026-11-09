@@ -7,20 +7,15 @@
       "currency": 7,
       "brInstitutions": [],
       "brProducts": [
-        "CDB",
-        "Selic"
+        "CDB"
       ],
       "geoRefs": [],
-      "ptWordsCount": 6,
+      "ptWordsCount": 0,
       "brBrands": [],
       "brAcronyms": [
         "IPCA"
       ],
-      "ptLeftovers": [
-        "ações",
-        "investimentos",
-        "valor"
-      ]
+      "ptLeftovers": []
     }
   },
   {
@@ -43,25 +38,6 @@
       ],
       "ptLeftovers": [
         "reais"
-      ]
-    }
-  },
-  {
-    "file": "en-spread.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 5,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": [
-        "ação",
-        "investimentos",
-        "valor"
       ]
     }
   },
@@ -155,12 +131,7 @@
       "ptWordsCount": 0,
       "brBrands": [],
       "brAcronyms": [],
-      "ptLeftovers": [
-        "ação",
-        "dívidas",
-        "investimentos",
-        "valor"
-      ]
+      "ptLeftovers": []
     }
   },
   {
@@ -5049,6 +5020,21 @@
     }
   },
   {
+    "file": "en-spread.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-stocks.md",
     "dir": "glossario",
     "severity": 0,
@@ -5379,6 +5365,21 @@
     }
   },
   {
+    "file": "en-uptick.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-usura.md",
     "dir": "glossario",
     "severity": 0,
@@ -5679,6 +5680,21 @@
     }
   },
   {
+    "file": "en-withdrawal.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-working-capital.md",
     "dir": "glossario",
     "severity": 0,
@@ -5771,6 +5787,21 @@
   {
     "file": "en-you-re-not-alone-in-struggling-to-organize-your-finances.md",
     "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-young-investor.md",
+    "dir": "glossario",
     "severity": 0,
     "issues": {
       "currency": 0,
@@ -8934,6 +8965,21 @@
     }
   },
   {
+    "file": "es-incremento.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-independencia-financiera.md",
     "dir": "glossario",
     "severity": 0,
@@ -9115,6 +9161,21 @@
   },
   {
     "file": "es-inversion.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-inversor-joven.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -10300,6 +10361,21 @@
   },
   {
     "file": "es-reserva-de-valor.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-retiro.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
