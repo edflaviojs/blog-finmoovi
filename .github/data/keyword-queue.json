@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08T16:47:59.130Z",
+  "updatedAt": "2026-11-09T16:57:11.015Z",
   "sourceCursor": 1,
   "entries": [
     {
@@ -2460,6 +2460,54 @@
       "source": "gsc-gap",
       "status": "pending",
       "addedAt": "2026-11-02T16:40:05.388Z"
+    },
+    {
+      "keyword": "finmoovi.com alternatives",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-11-09T16:57:10.504Z"
+    },
+    {
+      "keyword": "fondos inversion inmobiliarios",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-11-09T16:57:10.505Z"
+    },
+    {
+      "keyword": "tipos de gastos",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-11-09T16:57:10.505Z"
+    },
+    {
+      "keyword": "price online",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-11-09T16:57:10.505Z"
+    },
+    {
+      "keyword": "capital en giro",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-11-09T16:57:10.505Z"
+    },
+    {
+      "keyword": "giro",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-11-09T16:57:10.505Z"
     }
   ]
 }

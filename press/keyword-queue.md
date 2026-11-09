@@ -1,7 +1,7 @@
 # 🗂️ Fila de Keywords (Fase 3)
 
-**Atualizado em:** 2026-11-02T16:40:05.959Z
-**Totais:** 74 pendente(s) · 118 usada(s) · 60 pulada(s)
+**Atualizado em:** 2026-11-09T16:57:11.015Z
+**Totais:** 80 pendente(s) · 118 usada(s) · 60 pulada(s)
 
 ## ⏳ Pendentes por fonte
 
@@ -52,7 +52,7 @@
 - o que levar para comer na praia para economizar
 - por que é importante economizar energia elétrica
 
-### Lacunas do GSC (prioridade 2) — 30
+### Lacunas do GSC (prioridade 2) — 36
 
 - calculadora parcelamento price
 - calculo de juros composto online
@@ -84,6 +84,12 @@
 - plan de salud definicion
 - yuan
 - renminbi
+- finmoovi.com alternatives
+- fondos inversion inmobiliarios
+- tipos de gastos
+- price online
+- capital en giro
+- giro
 
 ### Autocomplete (prioridade 3) — 0
 
