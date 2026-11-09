@@ -1,0 +1,118 @@
+{
+  "slug": "loop-dez-vezes-sem-juros-faca-isso",
+  "formato": "loop16",
+  "term": "O sem juros que virou rombo",
+  "category": "vida",
+  "keyword": "PARCELA",
+  "valor": "R$ 780",
+  "situacao": "dez-vezes-sem-juros",
+  "gancho": "faca-isso",
+  "ganchoFamilia": "faça isso",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "mochila-pedras",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se você quer sossego, FAÇA ISSO. Comigo foi assim.",
+      "durationSec": 3.34,
+      "shots": [
+        {
+          "anchor": "sossego",
+          "visual": {
+            "type": "statement",
+            "text": "Quer sossego? Faça isso"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "Comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Abri a fatura e vi. Setecentos e oitenta reais de parcelinha caladinha.",
+      "durationSec": 4.45,
+      "shots": [
+        {
+          "anchor": "fatura",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "Setecentos",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 780 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Eu nem senti. Cada parcelinha foi pedra na minha mochila.",
+      "durationSec": 3.71,
+      "shots": [
+        {
+          "anchor": "senti",
+          "visual": {
+            "type": "statement",
+            "text": "Pedra pequena pesa"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "parcelinha",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Então, você quer sossego? Faça isso. Olha a fatura antes.",
+      "durationSec": 3.71,
+      "shots": [
+        {
+          "anchor": "sossego",
+          "visual": {
+            "type": "statement",
+            "text": "Fatura antes, faça isso"
+          }
+        },
+        {
+          "anchor": "fatura",
+          "visual": {
+            "type": "statement",
+            "text": "Quer sossego? Faça isso"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.21
+}
