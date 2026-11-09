@@ -3258,8 +3258,113 @@
           "titulo": "Veja: primeiro episódio!"
         }
       ]
+    },
+    {
+      "videoId": "eUHp33m1Nfo",
+      "title": "my simple budgeting routine",
+      "channel": "Lizzie Phan",
+      "duracaoSeg": 610,
+      "idioma": "en",
+      "viewsPerDay": 2580,
+      "vistoEm": "2026-11-09",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "set up a weekly or monthly budgeting template"
+        },
+        {
+          "seg": 45,
+          "titulo": "track all your recurring income and expenses"
+        },
+        {
+          "seg": 225,
+          "titulo": "note important dates"
+        },
+        {
+          "seg": 259,
+          "titulo": "plan around higher spending seasons"
+        },
+        {
+          "seg": 327,
+          "titulo": "create a budget for your categories"
+        },
+        {
+          "seg": 417,
+          "titulo": "create rules for yourself"
+        }
+      ]
+    },
+    {
+      "videoId": "uxe2z9xFKYQ",
+      "title": "ORGANIZE SEU DINHEIRO EM 2026! PLANILHA FINANCEIRA GRÁTIS + PASSO A PASSO",
+      "channel": "POP SHOW TV",
+      "duracaoSeg": 2008,
+      "idioma": "pt",
+      "viewsPerDay": 2244,
+      "vistoEm": "2026-11-09",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "ABERTURA"
+        },
+        {
+          "seg": 32,
+          "titulo": "COMO ORGANIZAR SUAS FINANÇAS"
+        },
+        {
+          "seg": 80,
+          "titulo": "VOCÊ É UMA PESSOA ORGANIZADA?"
+        },
+        {
+          "seg": 140,
+          "titulo": "PREENCHE A PLANILHA UMA VEZ"
+        },
+        {
+          "seg": 177,
+          "titulo": "PLANILHA DO PRIMO POBRE"
+        },
+        {
+          "seg": 1606,
+          "titulo": "FINALIZAÇÃO"
+        }
+      ]
+    },
+    {
+      "videoId": "nTz_9Od9bTY",
+      "title": "Palestra Educação Financeira - SIPAT - Macedo Transportes",
+      "channel": "KotCast - O Podcast do Marketing",
+      "duracaoSeg": 2877,
+      "idioma": "pt",
+      "viewsPerDay": 169,
+      "vistoEm": "2026-11-09",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "Introdução e Abertura da SIPAT"
+        },
+        {
+          "seg": 300,
+          "titulo": "Diagnóstico Financeiro e Consciência de Gastos"
+        },
+        {
+          "seg": 900,
+          "titulo": "Controle de Dívidas e Orçamento Pessoal"
+        },
+        {
+          "seg": 1680,
+          "titulo": "Planejamento e Reserva de Emergência"
+        },
+        {
+          "seg": 2280,
+          "titulo": "Hábitos Financeiros Saudáveis no Dia a Dia"
+        },
+        {
+          "seg": 2700,
+          "titulo": "Conclusão e Perguntas"
+        }
+      ]
     }
   ],
-  "atualizadoEm": "2026-11-08T10:54:47.751Z",
-  "total": 58
+  "atualizadoEm": "2026-11-09T12:20:44.053Z",
+  "total": 61
 }
