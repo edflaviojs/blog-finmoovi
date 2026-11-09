@@ -1,0 +1,205 @@
+{
+  "slug": "varejo",
+  "term": "varejo",
+  "category": "basico",
+  "keyword": "varejo",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você sabe *quanto gasta por mês no varejo* sem nem perceber?"
+  },
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "balanca",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você sabe quanto gasta por mês no varejo sem nem perceber? Eu somei o meu e quase caí da cadeira. Deu novecentos reais.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "varejo",
+          "visual": {
+            "type": "statement",
+            "text": "O gasto invisível"
+          }
+        },
+        {
+          "anchor": "somei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balanca"
+          }
+        },
+        {
+          "anchor": "novecentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 900"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Varejo é o mercado, a farmácia, a padaria e o site onde você compra. Um pãozinho aqui, um presente ali. Ninguém anota.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "mercado",
+          "visual": {
+            "type": "list",
+            "text": "Mercado · Farmácia · Padaria · Site"
+          }
+        },
+        {
+          "anchor": "pãozinho",
+          "visual": {
+            "type": "icon",
+            "icon": "coins"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "Ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "Gasto sem registro"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Só que o cafezinho de quatro reais, todo dia, vira quase cento e vinte no mês. E aí ainda tem a assinatura do streaming.",
+      "durationSec": 9.2,
+      "shots": [
+        {
+          "anchor": "quatro",
+          "visual": {
+            "type": "number",
+            "text": "R$ 4"
+          }
+        },
+        {
+          "anchor": "vira",
+          "visual": {
+            "type": "counter",
+            "from": 4,
+            "to": 120,
+            "prefix": "R$"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "assinatura",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei tudo no FinMoovi e ele separou por loja. O mercado ficou em primeiro lugar, e as compras parceladas vieram logo atrás.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "tudo",
+          "visual": {
+            "type": "app",
+            "app": "compras",
+            "note": "Gastos separados por loja"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "mercado",
+          "visual": {
+            "type": "statement",
+            "text": "Mercado em 1º lugar"
+          }
+        },
+        {
+          "anchor": "parceladas",
+          "visual": {
+            "type": "chart",
+            "text": "Parcelados logo atrás"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "number",
+            "text": "7 dias"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Quem não sabe quanto gasta no varejo gasta mais do que imagina. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "gasta",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balanca"
+          }
+        },
+        {
+          "anchor": "imagina",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          },
+          "sfx": "alert"
+        },
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "statement",
+            "text": "Controle muda o jogo"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Teste o FinMoovi por 7 dias grátis",
+    "target": "app"
+  },
+  "totalDurationSec": 46.4
+}
