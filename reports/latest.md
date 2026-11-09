@@ -1,6 +1,6 @@
 # 📊 Relatório Semanal — FinMoovi Blog
 
-**Período:** 2026-10-26 a 2026-11-02
+**Período:** 2026-11-02 a 2026-11-09
 **Total de Pageviews:** 0
 
 ## 🏆 Páginas Mais Visitadas
@@ -12,34 +12,32 @@
 
 | País | Views |
 |------|-------|
-| US | 96 |
-| CN | 91 |
-| PT | 42 |
-| DE | 21 |
-| NL | 11 |
-| PL | 9 |
+| CN | 153 |
+| US | 101 |
+| PT | 75 |
+| DE | 10 |
 | LT | 7 |
-| ES | 6 |
-| BR | 5 |
-| SG | 4 |
+| PK | 4 |
+| CA | 2 |
+| IE | 2 |
+| NL | 1 |
+| UZ | 1 |
 
 ## 🔗 Fontes de Tráfego (Referrers)
 
 | Referrer | Views |
 |----------|-------|
-| (direto) | 223 |
-| app.finmoovi.com | 46 |
-| finmoovi-landing.pages.dev | 14 |
-| finmoovi.com | 7 |
-| www.google.com | 6 |
+| (direto) | 275 |
+| app.finmoovi.com | 76 |
 | www.facebook.com | 6 |
-| m.facebook.com | 4 |
-| com.google.android.googlequicksearchbox | 1 |
+| www.google.com | 3 |
+| m.facebook.com | 2 |
+| www.google.com.br | 1 |
 
 ## 📝 Conteúdo Existente
 
-- **Total posts:** 576
-- **Por categoria:** ferramentas (29), dicas (98), orcamento (21), investimentos (24), cotacoes (20)
+- **Total posts:** 585
+- **Por categoria:** ferramentas (31), dicas (98), orcamento (21), investimentos (24), cotacoes (21)
 
 ## 💡 Sugestões de Conteúdo
 
@@ -52,4 +50,4 @@
   - "como sair do vermelho em 90 dias"
 
 ---
-*Gerado automaticamente em 2026-11-02T20:37:21.157Z*
+*Gerado automaticamente em 2026-11-09T21:16:24.789Z*
