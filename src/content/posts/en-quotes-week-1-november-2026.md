@@ -35,9 +35,9 @@ For anyone with expenses in foreign **[currency](/en/glossario/en-moeda)** – w
 
 ### 2. Selic and Its Impact on Investments
 
-The basic interest rate, the **[Selic](/en/glossario/en-selic) 13.75% per year**, remains the benchmark for the whole economy. When the Selic is high, government bonds and bank **CDBs** tend to offer more attractive returns because they need to keep up with that level. On the other hand, equity funds and stocks can feel a “drag” because the opportunity cost of keeping money in fixed income rises.
+The basic interest rate, the **[Selic](/en/glossario/en-selic) 13.75% per year**, remains the benchmark for the whole economy. When the Selic is high, government bonds and bank **CDBs** tend to offer more attractive returns because they need to keep up with that level. On the other hand, equity funds and stocks can feel a “drag” because the [opportunity cost](/en/glossario/en-opportunity-cost) of keeping money in [fixed income](/en/glossario/en-fixed-income) rises.
 
-For the average investor, this means the portion of the portfolio allocated to fixed income continues to generate good returns, especially if you choose products with a maturity close to the Selic’s horizon. Those with more exposure to stocks or real‑estate funds should watch the financing cost of companies, which can affect profits and dividends.
+For the average investor, this means the portion of the portfolio allocated to fixed income continues to generate good returns, especially if you choose products with a maturity close to the Selic’s horizon. Those with more exposure to stocks or real‑estate funds should watch the [financing](/en/glossario/en-financing) cost of companies, which can affect profits and [dividends](/en/glossario/en-dividends).
 
 ### 3. Practical Tip for the Individual Investor
 
@@ -51,7 +51,7 @@ The habit of checking portfolio performance in several currencies avoids surpris
 
 ### 4. What to Expect Next Week
 
-**Interest‑rate scenario:** While the Selic stays at 13.75% per year, what’s worth watching are the Copom statements and analysts’ views on inflation. The consumer‑price index, the **12‑month accumulated **IPCA** 4.58%**, shows that inflationary pressure is still present, but still within a range that allows the Central Bank to keep the rate where it is. If there are signs of inflation slowing, the market may start pricing in a possible Selic cut sometime in the future, which usually lifts stock prices.
+**Interest‑rate scenario:** While the Selic stays at 13.75% per year, what’s worth watching are the Copom statements and analysts’ views on [inflation](/en/glossario/en-inflation). The consumer‑price index, the **12‑month accumulated **IPCA** 4.58%**, shows that inflationary pressure is still present, but still within a range that allows the Central Bank to keep the rate where it is. If there are signs of inflation slowing, the market may start pricing in a possible Selic cut sometime in the future, which usually lifts stock prices.
 
 **Exchange rates:** The dollar and euro can react to external news – such as monetary‑policy decisions in the United States or the eurozone – even if we don’t have concrete numbers here. Keep an eye on foreign central‑bank press releases and international‑trade headlines. Any shift in global risk appetite tends to be reflected in the real.
 
