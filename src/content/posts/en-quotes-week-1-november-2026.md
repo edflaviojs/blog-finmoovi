@@ -25,45 +25,43 @@ seo:
 
 *Source: AwesomeAPI — rates as of 11/2/2026*
 
-## Resumo da Semana no Mercado Financeiro Brasileiro (26/10/2026 a 02/11/2026)
+## Weekly Summary of the Brazilian Financial Market (10/26/2026 to 11/02/2026)
 
-### 1. Dólar e Euro – Como se comportaram?
+### 1. Dollar and Euro – How Did They Perform?
 
-Nesta semana o dólar fechou o período em **R$ 5,44** e o euro em **R$ 6,07**. Não há dados de variação diária ou de fechamento anterior, então a leitura mais segura é que esses foram os níveis de referência ao final da semana. O que fica claro é que o real continuou negociando em torno desses patamares, o que costuma refletir a combinação de fluxo de capitais, expectativa de política monetária e o cenário internacional.
+This week the dollar closed the period at **R$ 5.44** and the euro at **R$ 6.07**. There are no daily variation data or previous‑close figures, so the safest reading is that these were the reference levels at the end of the week. What is clear is that the real continued trading around these levels, which usually reflects a mix of capital flows, monetary‑policy expectations, and the international scenario.
 
-Para quem tem gastos em [moeda](/en/glossario/en-moeda) estrangeira – seja viagem, compras online ou investimentos em ativos no exterior – vale a pena observar se esses níveis vão se manter ou se há pressão para alta ou queda. Um real mais caro reduz o custo das importações e das viagens, enquanto um real mais barato pode tornar os produtos importados mais caros, mas beneficia quem tem receitas em dólar ou euro.
+For anyone with expenses in foreign **[currency](/en/glossario/en-moeda)** – whether travel, online purchases, or investments in overseas assets – it’s worth watching whether these levels will hold or if there is pressure for a rise or a drop. A stronger real reduces the cost of imports and trips, while a weaker real can make imported products more expensive but benefits those who earn in dollars or euros.
 
-### 2. Selic e o Impacto nos Investimentos
+### 2. Selic and Its Impact on Investments
 
-A taxa básica de juros, a **[Selic](/en/glossario/en-selic) 13,75% ao ano**, permanece como referência para toda a economia. Quando a Selic está alta, os títulos públicos e os CDBs de bancos costumam oferecer rendimentos mais atrativos, porque precisam acompanhar esse patamar. Por outro lado, fundos de renda variável e ações podem sentir um “arrasto” porque o custo de oportunidade de manter dinheiro em renda fixa sobe.
+The basic interest rate, the **[Selic](/en/glossario/en-selic) 13.75% per year**, remains the benchmark for the whole economy. When the Selic is high, government bonds and bank **CDBs** tend to offer more attractive returns because they need to keep up with that level. On the other hand, equity funds and stocks can feel a “drag” because the opportunity cost of keeping money in fixed income rises.
 
-Para o investidor comum, isso significa que a parte da carteira alocada em renda fixa continua gerando bons retornos, especialmente se você escolher produtos com prazo próximo ao vencimento da Selic. Já quem tem mais exposição em ações ou fundos imobiliários deve ficar atento ao custo de financiamento das empresas, que pode impactar lucros e dividendos.
+For the average investor, this means the portion of the portfolio allocated to fixed income continues to generate good returns, especially if you choose products with a maturity close to the Selic’s horizon. Those with more exposure to stocks or real‑estate funds should watch the financing cost of companies, which can affect profits and dividends.
 
-### 3. Dica Prática para o Investidor Individual
+### 3. Practical Tip for the Individual Investor
 
-**Use o FinMoovi para monitorar suas posições em diferentes moedas.** O aplicativo permite acompanhar o valor da sua carteira em real, dólar e euro em tempo real, além de registrar compras, vendas e custos operacionais. Isso ajuda a:
+**Use FinMoovi to monitor your positions in different currencies.** The app lets you track the value of your portfolio in real, dollar and euro in real time, as well as record purchases, sales and operational costs. This helps to:
 
-- Verificar rapidamente se a variação cambial está ajudando ou atrapalhando seu objetivo.
-- Rebalancear a alocação sem precisar abrir várias planilhas.
-- Receber alertas quando o dólar ou o euro alcançam níveis que você definiu como “bom para comprar” ou “bom para vender”.
+- Quickly check whether exchange‑rate movements are helping or hurting your goal.  
+- Rebalance the allocation without having to open multiple spreadsheets.  
+- Receive alerts when the dollar or euro hit levels you defined as “good to buy” or “good to sell”.
 
-A prática de conferir o desempenho da carteira em várias moedas evita surpresas na hora de planejar uma viagem ou de precisar de recursos em moeda estrangeira.
+The habit of checking portfolio performance in several currencies avoids surprises when planning a trip or needing foreign‑currency resources.
 
-### 4. O Que Esperar na Próxima Semana
+### 4. What to Expect Next Week
 
-**Cenário de juros:** Enquanto a Selic permanece em 13,75% ao ano, o que vale observar são as declarações do Copom e dos analistas sobre a inflação. O índice de preços ao consumidor, o **IPCA 12‑meses acumulado 4,58%**, indica que a pressão inflacionária ainda está presente, mas ainda dentro de um intervalo que permite ao Banco Central manter a taxa onde está. Se houver sinal de desaceleração da inflação, o mercado pode começar a precaver uma eventual redução da Selic em algum momento futuro, o que geralmente eleva o preço das ações.
+**Interest‑rate scenario:** While the Selic stays at 13.75% per year, what’s worth watching are the Copom statements and analysts’ views on inflation. The consumer‑price index, the **12‑month accumulated **IPCA** 4.58%**, shows that inflationary pressure is still present, but still within a range that allows the Central Bank to keep the rate where it is. If there are signs of inflation slowing, the market may start pricing in a possible Selic cut sometime in the future, which usually lifts stock prices.
 
-**Câmbio:** O dólar e o euro podem reagir a notícias externas – como decisões de política monetária nos Estados Unidos ou na zona do euro – mesmo que não tenhamos números concretos aqui. Fique de olho nos comunicados de imprensa dos bancos centrais estrangeiros e nas manchetes de comércio internacional. Qualquer mudança no apetite por risco global costuma se refletir no real.
+**Exchange rates:** The dollar and euro can react to external news – such as monetary‑policy decisions in the United States or the eurozone – even if we don’t have concrete numbers here. Keep an eye on foreign central‑bank press releases and international‑trade headlines. Any shift in global risk appetite tends to be reflected in the real.
 
-**Investimentos:** Para quem ainda não tem uma parte da carteira em renda fixa indexada à Selic, pode ser um bom momento de avaliar opções de CDBs ou [Tesouro Selic](/en/posts/en-tesouro-direto-for-beginners), que tendem a acompanhar a taxa básica. Já quem já está bem posicionado em renda fixa pode começar a pensar em alocar um percentual em fundos de ações que se beneficiem de setores menos sensíveis a juros, como utilities ou tecnologia.
+**Investments:** For those who still don’t have a part of the portfolio in Selic‑linked fixed income, it may be a good time to evaluate **CDB** options or **[Tesouro Selic](/en/posts/en-tesouro-direto-for-beginners)**, which tend to track the basic rate. Those already well positioned in fixed income can start thinking about allocating a percentage to equity funds that benefit from sectors less sensitive to interest rates, such as utilities or technology.
 
-**Dica de observação:** Anote quais são os gatilhos que fariam você mudar a alocação – por exemplo, se o dólar subir acima de R$ 5,50 ou se houver algum comentário do Copom indicando que a inflação está sob controle. Ter esses parâmetros escritos ajuda a evitar decisões impulsivas.
+**Observation tip:** Write down the triggers that would make you change the allocation – for example, if the dollar rises above R$ 5.50 or if there’s a Copom comment indicating inflation is under control. Having these parameters written helps avoid impulsive decisions.
 
 ---
 
-**Resumo rápido:** O dólar ficou em R$ 5,44 e o euro em R$ 6,07; a Selic está em 13,75% ao ano; o IPCA acumulado nos últimos 12 meses é 4,58%. A renda fixa continua atrativa, enquanto a variação cambial merece atenção para quem tem despesas ou investimentos no exterior. Use o FinMoovi para acompanhar tudo de forma simples e prática, e mantenha um olho nos próximos comunicados de política monetária e nas notícias internacionais para ajustar a carteira conforme necessário.
-
+**Quick recap:** The dollar was at R$ 5.44 and the euro at R$ 6.07; the Selic is at 13.75% per year; the 12‑month accumulated **IPCA** is 4.58%. Fixed income remains attractive, while exchange‑rate movements deserve attention for those with expenses or investments abroad. Use FinMoovi to track everything simply and practically, and keep an eye on upcoming monetary‑policy communications and international news to adjust the portfolio as needed.
 
 ---
 **Ready to track your investments? [Try FinMoovi free for 7 days](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**
-

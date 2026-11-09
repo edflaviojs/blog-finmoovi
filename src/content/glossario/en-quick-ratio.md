@@ -18,94 +18,90 @@ seo:
   keywords: ["quick ratio", "glossary", "finance"]
 ---
 
-## O que é o quick ratio e por que ele importa
+## What the quick ratio is and why it matters
 
-Imagine que você acabou de receber a conta de luz, o aluguel está quase vencendo e, de repente, o carro precisa de um reparo inesperado. Seu saldo bancário parece suficiente, mas quando tenta pagar tudo, percebe que o dinheiro está “preso” em contas a receber ou em estoque de produtos que ainda não foram vendidos. Essa sensação de aperto, mesmo tendo recursos no papel, é exatamente o que o quick ratio mede: a capacidade de pagar as dívidas de curto prazo usando apenas os ativos mais líquidos, ou seja, aqueles que podem ser transformados em dinheiro rapidamente.
+Imagine you just received the electricity bill, the rent is about to be due, and suddenly the car needs an unexpected repair. Your bank balance looks sufficient, but when you try to pay everything you realize the money is “stuck” in accounts receivable or in inventory of products that haven’t been sold yet. That feeling of tightness, even though you have resources on paper, is exactly what the quick ratio measures: the ability to pay short‑term debts using only the most liquid assets, i.e., those that can be turned into cash quickly.
 
-![O que é o quick ratio e por que ele importa](/images/glossario/quick-ratio-inline-1.webp)
+![What the quick ratio is and why it matters](/images/glossario/quick-ratio-inline-1.webp)
 
+The quick ratio, also called the “acid test,” is a financial indicator that compares what you have on hand (cash, bank account balances and high‑liquidity investments, plus accounts receivable) with what you owe over the next 12 months (accounts payable, short‑term loans, credit‑card installments). If the number is greater than 1, it means you have more liquid resources than immediate obligations; if it falls below 1, it may be a sign that you’ll need to resort to credit or sell less‑liquid assets to get through the month.
 
+## How to calculate the quick ratio in practice
 
-O quick ratio, também chamado de “teste ácido”, é um indicador financeiro que compara o que você tem à mão (dinheiro em caixa, saldos em contas bancárias e investimentos de alta liquidez, além de contas a receber) com o que você deve nos próximos 12 meses (contas a pagar, empréstimos de curto prazo, parcelas de cartão de crédito). Se o número for maior que 1, significa que você tem mais recursos líquidos do que obrigações imediatas; se ficar abaixo de 1, pode ser um sinal de que vai precisar recorrer a crédito ou vender ativos menos líquidos para fechar o mês.
+To turn theory into something tangible, just follow the simple formula:
 
-## Como calcular o quick ratio na prática
+**Quick Ratio = (Cash + Cash equivalents + Accounts receivable) ÷ Current liabilities**
 
-Para transformar a teoria em algo palpável, basta seguir a fórmula simples:
+- **Cash**: money that is literally in your wallet or checking account.
+- **Cash equivalents**: investments that can be converted into cash within three days, such as money‑market funds or short‑term placements.
+- **Accounts receivable**: amounts that other people or companies have not yet paid you, like a freelance payment that’s on its way.
+- **Current liabilities**: all bills that are due within a year – electricity, water, rent, loan installments, credit‑card statements, etc.
 
-**Quick Ratio = (Caixa + Equivalentes de caixa + Contas a receber) ÷ Passivos circulantes**
+### Quick example
 
-- **Caixa**: dinheiro que está literalmente na sua carteira ou na conta corrente.
-- **Equivalentes de caixa**: investimentos que podem ser convertidos em dinheiro em até três dias, como fundos de mercado monetário ou aplicações de curto prazo.
-- **Contas a receber**: valores que outras pessoas ou empresas ainda não pagaram a você, como um pagamento de freelance que está a caminho.
-- **Passivos circulantes**: todas as contas que vencem dentro de um ano – contas de luz, água, aluguel, parcelas de empréstimo, faturas de cartão, etc.
+Suppose you have:
 
-### Exemplo rápido
+- R$ 3,000 in cash (or the equivalent in your local currency)
+- R$ 1,500 in high‑liquidity investments
+- R$ 2,000 in accounts receivable from clients
 
-Suponha que você tenha:
+And your bills due in the next 30 days total R$ 5,000.
 
-- R$ 3.000 em caixa (ou o equivalente em sua moeda local)
-- R$ 1.500 em investimentos de alta liquidez
-- R$ 2.000 em contas a receber de clientes
+The calculation looks like this:
 
-E que suas contas a pagar nos próximos 30 dias somem R$ 5.000.
+(3,000 + 1,500 + 2,000) ÷ 5,000 = **1.3**
 
-O cálculo fica assim:
+A quick ratio of 1.3 indicates that, if needed, you can cover all immediate expenses without having to sell anything that isn’t ready to be sold.
 
-(3.000 + 1.500 + 2.000) ÷ 5.000 = **1,3**
+## Why the quick ratio is often ignored in personal finance
 
-Um quick ratio de 1,3 indica que, se precisar, você consegue cobrir todas as despesas imediatas sem precisar vender nada que ainda não está pronto para ser vendido.
+Many of us focus on “total balance” or “net worth” and forget that not all money is actually available. A car, a house, or even an inventory of products you sell online are valuable, but they don’t help when the electricity bill arrives before you can sell that batch of t‑shirts. Ignoring the quick ratio can lead to risky decisions, such as taking on an expensive loan or using a credit‑card limit to cover an unexpected expense, which can generate high interest and hard‑to‑pay debt.
 
-## Por que o quick ratio costuma ser ignorado nas finanças pessoais
+![Why the quick ratio is often ignored in personal finance](/images/glossario/quick-ratio-inline-3.webp)
 
-Muitos de nós focamos no “saldo total” ou no “valor do patrimônio” e esquecem que nem todo dinheiro está realmente disponível. Um carro, um imóvel ou até mesmo um estoque de produtos que você vende online são valiosos, mas não ajudam quando a conta de luz chega antes de você conseguir vender aquele lote de camisetas. Ignorar o quick ratio pode levar a decisões arriscadas, como assumir um empréstimo caro ou usar o limite do cartão de crédito para cobrir um imprevisto, o que pode gerar juros altos e dívidas difíceis de pagar.
+## How FinMoovi helps you monitor your quick ratio
 
-![Por que o quick ratio costuma ser ignorado nas finanças pessoais](/images/glossario/quick-ratio-inline-3.webp)
+The good news is you don’t have to do these calculations by hand every week. FinMoovi has a feature that makes managing your money as simple as taking a photo of a receipt. See how:
 
+- **Smart capture**: when you receive a payment proof or a boleto, just snap a photo or use voice recording. The app recognizes the amount, date and category (e.g., “electricity bill”) and automatically adds the information to your reports.
+- **Multi‑currency**: if you receive payments in dollars, euros or another currency, FinMoovi converts everything to your base currency in real time, keeping the quick ratio calculation always up to date.
+- **Cash flow and reports**: the cash‑flow dashboard shows, in real time, how much you have in cash, high‑liquidity investments and accounts receivable, plus current liabilities. The quick ratio appears as one of the main indicators, with alerts when it drops below 1.
+- **Monthly planning and goals**: when you set savings or debt‑payment goals, the app automatically adjusts your quick ratio, indicating whether the goal is realistic or will compromise your liquidity.
+- **Cards and accounts**: all credit‑card statements are imported automatically, avoiding surprises at month‑end.
+- **Shopping mode**: create grocery or office‑supply lists and see the total in real time, ensuring the spend doesn’t exceed the limit your quick ratio allows.
+- **Balance reminders and alerts**: if the balance gets close to the liquidity limit, FinMoovi sends notifications so you can act before it’s too late.
+- **Offline / PWA / sync**: even without internet, you can record expenses and income; when you reconnect, everything syncs and the quick ratio is recalculated.
 
+## Three practical tips to improve your quick ratio
 
-## Como o FinMoovi ajuda a monitorar o seu quick ratio
+**Practical tip:** **Keep an “emergency fund” of at least three months of essential expenses**. This money should stay in a checking account or a high‑liquidity fund, so that when you calculate the quick ratio it’s already counted as cash.
 
-A boa notícia é que você não precisa fazer esses cálculos à mão toda semana. O FinMoovi tem um recurso que transforma a gestão do seu dinheiro em algo tão simples quanto tirar uma foto de um recibo. Veja como:
+**Practical tip:** **Speed up the collection of accounts receivable**. If you work as a freelancer, ask for upfront payment or offer a small discount to those who pay early. Every day the money stays “pending” reduces your quick ratio.
 
-- **Smart capture**: ao receber um comprovante de pagamento ou um boleto, basta fotografar ou usar a gravação de voz. O app reconhece o valor, a data e a categoria (por exemplo, “conta de luz”) e já inclui a informação nos seus relatórios.
-- **Multi‑currency**: se você recebe pagamentos em dólares, euros ou outra moeda, o FinMoovi converte tudo para a sua moeda base em tempo real, mantendo o cálculo do quick ratio sempre atualizado.
-- **Cash flow e relatórios**: o painel de fluxo de caixa mostra, em tempo real, quanto você tem em caixa, investimentos de alta liquidez e contas a receber, além dos passivos circulantes. O quick ratio aparece como um dos indicadores principais, com alertas quando ele cai abaixo de 1.
-- **Planejamento mensal e metas**: ao definir metas de economia ou de pagamento de dívidas, o app ajusta automaticamente o seu quick ratio, indicando se a meta é realista ou se vai comprometer sua liquidez.
-- **Cartões e contas**: todas as faturas de cartão de crédito são importadas automaticamente, evitando surpresas no final do mês.
-- **Modo compras**: crie listas de supermercado ou de material de escritório e veja o total em tempo real, garantindo que o gasto não ultrapasse o limite que o seu quick ratio permite.
-- **Lembretes e alertas de saldo**: se o saldo cair perto do limite de liquidez, o FinMoovi envia notificações para que você tome providências antes que seja tarde.
-- **Offline / PWA / sync**: mesmo sem internet, você pode registrar despesas e receitas; quando se conectar novamente, tudo se sincroniza e o quick ratio é recalculado.
+**Practical tip:** **Renegotiate short‑term debts**. If you have credit‑card installments or loans due soon, talk to the creditor to extend the term or lower the rate. Fewer current liabilities mean a healthier ratio.
 
-## Três dicas práticas para melhorar seu quick ratio
+## When the quick ratio can be misleading
 
-**Practical tip:** **Mantenha um “fundo de emergência” de, no mínimo, três meses de despesas essenciais**. Esse dinheiro deve ficar em conta corrente ou em um fundo de alta liquidez, de modo que, ao calcular o quick ratio, ele já esteja incluído como caixa.
+Although it’s a powerful indicator, it has limitations. For example, if you have a large volume of accounts receivable that are highly uncollectible (clients who usually delay or don’t pay), the number may look good, but reality is different. Therefore, combine the quick ratio with other metrics, such as the **default rate** (percentage of accounts receivable that actually turn into cash) and the **cash burn rate** (how much you’re spending per month). FinMoovi already shows these numbers side by side, making a complete view easier.
 
-**Practical tip:** **Acelere o recebimento de contas a receber**. Se você trabalha como freelancer, peça pagamento à vista ou ofereça um pequeno desconto para quem paga antes do prazo. Cada dia que o dinheiro fica “pendente” reduz seu quick ratio.
+## How to use the quick ratio day to day
 
-**Practical tip:** **Renegocie dívidas de curto prazo**. Se você tem parcelas de cartão ou empréstimos com vencimento próximo, converse com o credor para estender o prazo ou reduzir a taxa. Menos passivos circulantes significa um ratio mais saudável.
+1. **Check weekly**: open the “Indicators” panel in FinMoovi and look at the quick ratio. If it’s close to 1, plan to cut expenses or increase liquidity before the next week.
+2. **Adjust your budget**: if the ratio falls, reduce non‑essential spending (like a streaming subscription you barely use) and direct that money to the emergency fund.
+3. **Plan big purchases**: before buying an appliance or taking a trip, verify whether the quick ratio will still stay above 1 after the expense. If not, postpone or save up first.
 
-## Quando o quick ratio pode ser enganoso
+## Why the quick ratio is more useful than the general liquidity ratio
 
-Embora seja um indicador poderoso, ele tem limitações. Por exemplo, se você tem um grande volume de contas a receber que são altamente incobráveis (clientes que costumam atrasar ou não pagar), o número pode parecer bom, mas a realidade é outra. Por isso, combine o quick ratio com outros indicadores, como o **índice de inadimplência** (percentual de contas a receber que realmente se transformam em dinheiro) e o **cash burn rate** (quanto você está gastando por mês). O FinMoovi já traz esses números lado a lado, facilitando a visão completa.
-
-## Como usar o quick ratio no dia a dia
-
-1. **Cheque semanalmente**: abra o painel de “Indicadores” no FinMoovi e veja o quick ratio. Se ele estiver próximo de 1, planeje reduzir despesas ou aumentar a liquidez antes da próxima semana.
-2. **Ajuste seu orçamento**: se o ratio cair, reduza gastos não essenciais (como assinatura de streaming que você quase não usa) e direcione esse dinheiro para o fundo de emergência.
-3. **Planeje compras grandes**: antes de comprar um eletrodoméstico ou fazer uma viagem, verifique se o quick ratio ainda ficará acima de 1 depois da despesa. Se não, adie ou economize antes.
-
-## Por que o quick ratio é mais útil que o índice de liquidez geral
-
-O índice de liquidez geral inclui todos os ativos, inclusive estoque e bens que demoram a ser convertidos em dinheiro. O quick ratio, por ser mais conservador, dá uma visão mais realista da sua capacidade de enfrentar imprevistos. Em momentos de crise – como uma queda inesperada de renda ou um aumento súbito de despesas – quem tem um quick ratio saudável sente menos pressão e evita recorrer a crédito caro.
+The general liquidity ratio includes all assets, including inventory and assets that take time to convert into cash. The quick ratio, being more conservative, gives a more realistic view of your ability to face unexpected events. In crisis moments – such as an abrupt drop in income or a sudden spike in expenses – those with a healthy quick ratio feel less pressure and avoid resorting to expensive credit.
 
 ## Start today
 
-**Micro‑ação de 5 minutos no FinMoovi:**
+**5‑minute micro‑action in FinMoovi:**
 
-1. Abra o app e vá para a seção “Smart capture”.
-2. Fotografe ou grave a voz de um recibo recente (por exemplo, a conta de luz).
-3. Confirme a categoria automática (o app já sugere “Despesas fixas”) e salve.
-4. Na tela de “Indicadores”, verifique o seu quick ratio atualizado.
-5. Se o número estiver abaixo de 1, toque em “Criar meta” e defina um objetivo de economizar o equivalente a uma semana de despesas nos próximos 30 dias.
+1. Open the app and go to the “Smart capture” section.
+2. Photograph or voice‑record a recent receipt (for example, the electricity bill).
+3. Confirm the automatic category (the app already suggests “Fixed expenses”) and save.
+4. On the “Indicators” screen, check your updated quick ratio.
+5. If the number is below 1, tap “Create goal” and set a target to save the equivalent of one week’s expenses over the next 30 days.
 
-Com esses poucos passos, você já começa a monitorar a sua liquidez de forma prática e a usar o quick ratio como um verdadeiro termômetro da sua saúde financeira. Boa gestão!
+With these few steps, you’ll start monitoring your liquidity in a practical way and use the quick ratio as a true thermometer of your financial health. Happy managing!

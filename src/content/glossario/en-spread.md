@@ -18,68 +18,68 @@ seo:
   keywords: ["Spread", "glossary", "finance"]
 ---
 
-## O que é spread e por que ele aparece na sua conta
+## What spread is and why it shows up on your statement
 
-Você já percebeu que o valor que aparece na fatura do cartão de crédito ou no extrato da conta corrente não bate exatamente com o que você gastou? Talvez tenha sido um pagamento em moeda estrangeira, um empréstimo ou até mesmo a compra de um título. Essa diferença, às vezes de poucos centavos, às vezes de alguns percentuais, é chamada de **spread**. Em termos simples, spread é a margem que instituições financeiras adicionam ao preço de um ativo ou serviço para cobrir custos, riscos e ainda garantir lucro. Quando você compra dólares, por exemplo, o banco não usa a cotação oficial; ele acrescenta um spread que pode ser de 2 % a 5 % — e isso já altera o quanto você paga.
+Have you ever noticed that the amount on your credit‑card bill or checking‑account statement doesn’t match exactly what you spent? It might have been a foreign‑currency payment, a loan, or even the purchase of a security. That difference—sometimes a few cents, sometimes a few percent—is called **spread**. In simple terms, spread is the margin that financial institutions add to the price of an asset or service to cover costs, risks, and still guarantee profit. When you buy dollars, for example, the bank doesn’t use the official rate; it adds a spread that can be 2 % to 5 % — and that already changes how much you pay.
 
-![O que é spread e por que ele aparece na sua conta](/images/glossario/spread-inline-1.webp)
-
-
-
-## Como o spread afeta o seu bolso no dia a dia
-
-- **Cartões de crédito:** o spread embutido nas taxas de juros faz com que o custo real de parcelar uma compra seja maior que a taxa anunciada.  
-- **Empréstimos e financiamentos:** a diferença entre a taxa que o banco paga para captar recursos (custo) e a taxa que ele cobra de você (receita) forma o spread.  
-- **Investimentos em renda fixa ou câmbio:** ao comprar um título ou moeda, o preço que você paga inclui o spread da corretora ou banco.
-
-Esses valores podem parecer pequenos, mas quando multiplicados por compras recorrentes ou por valores maiores, eles corroem a sua margem de economia. Por isso, entender o spread ajuda a escolher a opção mais barata e a planejar melhor o seu dinheiro.
-
-## Como o FinMoovi te ajuda a enxergar e reduzir spreads
-
-A maioria das pessoas só percebe o spread quando a conta chega e já está “fechada”. O FinMovi traz transparência ao transformar cada gasto em informação acionável:
-
-![Como o FinMoovi te ajuda a enxergar e reduzir spreads](/images/glossario/spread-inline-3.webp)
+![What spread is and why it shows up on your statement](/images/glossario/spread-inline-1.webp)
 
 
 
-- **Smart capture:** tire uma foto do recibo ou use a voz para registrar a compra. O app reconhece o tipo de operação (cartão, empréstimo, câmbio) e já indica o spread estimado naquele momento.  
-- **Multi‑currency:** se você paga por um curso online em dólares, o app converte o valor usando a cotação oficial e mostra o spread que o seu banco está cobrando. Assim você vê a diferença entre o que deveria pagar e o que realmente paga.  
-- **Cash flow e relatórios:** ao analisar o fluxo de caixa mensal, o FinMoovi destaca quanto foi gasto a mais por causa de spreads, permitindo que você ajuste hábitos ou troque de fornecedor.  
-- **Metas e planejamento:** ao definir metas de economia, o app subtrai o impacto dos spreads, dando uma visão realista do quanto você pode guardar.  
-- **Cartões e contas:** o modo “shopping” permite montar a lista de compras, ver o total em tempo real e, ao finalizar, o app avisa se algum item tem um spread elevado (ex.: compra em moeda estrangeira).  
-- **Alertas de saldo e lembretes:** quando o saldo está próximo do limite e há risco de usar crédito com spread alto, o FinMoovi dispara um alerta.  
-- **Offline/PWA/sync:** mesmo sem internet, você registra a compra; ao voltar online, o app calcula o spread e sincroniza tudo.
+## How spread affects your pocket day to day
 
-## Três dicas práticas para lidar com spreads
+- **Credit cards:** the spread built into the interest rates makes the real cost of financing a purchase higher than the advertised rate.  
+- **Loans and financing:** the difference between the rate the bank pays to raise funds (cost) and the rate it charges you (revenue) forms the spread.  
+- **Fixed‑income or currency investments:** when you buy a security or a currency, the price you pay includes the broker’s or bank’s spread.
 
-**Practical tip:** Sempre compare a cotação oficial com a taxa que o seu banco oferece antes de fazer compras internacionais ou transferências. Use o FinMoovi para registrar a cotação oficial (via foto de um site confiável) e veja a diferença.
+These amounts may seem small, but when multiplied by recurring purchases or larger sums, they eat into your savings margin. That’s why understanding spread helps you pick the cheapest option and plan your money better.
 
-**Practical tip:** Quando for parcelar no cartão, pergunte ao atendente qual é o spread embutido na taxa de juros. Se o número parecer alto, considere pagar à vista ou usar um cartão com juros menores.
+## How FinMoovi helps you see and reduce spreads
 
-**Practical tip:** Revise mensalmente o relatório de “Custo por Spread” no FinMoovi. Se um fornecedor ou serviço aparece repetidamente com spread acima de 3 %, avalie alternativas mais baratas ou renegocie o contrato.
+Most people only notice the spread when the bill arrives and it’s already “closed.” FinMoovi brings transparency by turning every expense into actionable information:
 
-## Estratégias avançadas para quem quer ir além
+![How FinMoovi helps you see and reduce spreads](/images/glossario/spread-inline-3.webp)
 
-- **Negocie taxas:** se você tem um bom histórico de pagamentos, peça ao banco para reduzir o spread nas linhas de crédito. Muitas vezes, basta uma ligação.  
-- **Use contas digitais:** fintechs costumam oferecer spreads menores em câmbio e cartões, porque têm custos operacionais menores.  
-- **Aproveite o poder de compra em moeda local:** se você viaja ou compra produtos de outro país, procure pagar em moeda local (ex.: usar um cartão que converte na hora) para evitar spreads de conversão duplos.  
-- **Monitore o spread de investimentos:** ao comprar títulos públicos ou privados, verifique se a corretora está cobrando um spread acima da média. O FinMoovi pode importar esses dados e exibir o custo real.
 
-## Quando o spread pode ser positivo
 
-Nem todo spread é vilão. Em alguns casos, ele indica que você está pagando por um serviço que traz segurança ou conveniência:
+- **Smart capture:** snap a photo of the receipt or use voice to log the purchase. The app recognizes the type of operation (card, loan, currency) and immediately shows the estimated spread at that moment.  
+- **Multi‑currency:** if you pay for an online course in dollars, the app converts the amount using the official rate and shows the spread your bank is charging. That way you see the difference between what you should pay and what you actually pay.  
+- **Cash flow and reports:** when analyzing the monthly cash flow, FinMoovi highlights how much extra was spent because of spreads, allowing you to adjust habits or switch providers.  
+- **Goals and planning:** when you set savings goals, the app subtracts the impact of spreads, giving a realistic view of how much you can actually set aside.  
+- **Cards and accounts:** the “shopping” mode lets you build a shopping list, see the total in real time and, at checkout, the app warns if any item has a high spread (e.g., foreign‑currency purchase).  
+- **Balance alerts and reminders:** when the balance is close to the limit and there’s a risk of using credit with a high spread, FinMoovi sends an alert.  
+- **Offline/PWA/sync:** even without internet you can log the purchase; once back online, the app calculates the spread and syncs everything.
 
-- **Cartões de crédito premium:** o spread maior pode vir acompanhado de seguros, assistências e programas de pontos que valem a pena se você usa esses benefícios.  
-- **Fundos de investimento:** alguns fundos cobram spread porque oferecem gestão ativa, que pode gerar retornos superiores ao mercado. Avalie se o ganho compensa o custo.  
-- **Serviços de câmbio com proteção:** alguns provedores adicionam spread para garantir que você não perca com variações bruscas de moeda durante a transação.
+## Three practical tips for dealing with spreads
 
-## Como usar o FinMoovi no seu planejamento mensal
+**Practical tip:** Always compare the official rate with the rate your bank offers before making international purchases or transfers. Use FinMoovi to record the official rate (via a photo of a reliable website) and see the difference.
 
-1. **Capture tudo:** ao pagar contas, fazer compras ou receber dinheiro, use a captura inteligente. O app já classifica e calcula o spread.  
-2. **Revise o dashboard:** ao final do mês, veja o gráfico de “Custo por Spread”. Ele mostra quanto cada categoria (cartão, empréstimo, câmbio) consumiu do seu orçamento.  
-3. **Ajuste metas:** se o objetivo era guardar o equivalente a duas semanas de aluguel, reduza gastos em categorias com spread alto ou troque de fornecedor.  
-4. **Configure alertas:** defina limites de spread para cada tipo de operação. Quando o app detectar um valor acima do limite, ele avisa imediatamente.  
+**Practical tip:** When you’re going to finance a purchase on a card, ask the attendant what spread is embedded in the interest rate. If the number looks high, consider paying cash or using a card with lower interest.
+
+**Practical tip:** Review the “Cost by Spread” report in FinMoovi each month. If a supplier or service repeatedly shows a spread above 3 %, look for cheaper alternatives or renegotiate the contract.
+
+## Advanced strategies for those who want to go further
+
+- **Negotiate rates:** if you have a good payment history, ask the bank to reduce the spread on your credit lines. Often a simple phone call is enough.  
+- **Use digital accounts:** fintechs usually offer lower spreads on currency exchange and cards because they have lower operating costs.  
+- **Take advantage of local‑currency purchasing power:** if you travel or buy products from another country, try to pay in the local currency (e.g., use a card that converts instantly) to avoid double conversion spreads.  
+- **Monitor investment spreads:** when buying public or private securities, check whether the broker is charging a spread above the market average. FinMoovi can import those data and display the real cost.
+
+## When spread can be positive
+
+Not every spread is a villain. In some cases, it indicates you’re paying for a service that brings security or convenience:
+
+- **Premium credit cards:** the higher spread may come with insurance, assistance, and points programs that are worth it if you use those benefits.  
+- **Investment funds:** some funds charge a spread because they offer active management, which can generate returns above the market. Assess whether the gain compensates the cost.  
+- **Currency‑exchange services with protection:** some providers add a spread to guarantee you won’t lose from sudden currency swings during the transaction.
+
+## How to use FinMoovi in your monthly planning
+
+1. **Capture everything:** when paying bills, making purchases, or receiving money, use the smart capture. The app already classifies and calculates the spread.  
+2. **Review the dashboard:** at month‑end, look at the “Cost by Spread” chart. It shows how much each category (card, loan, currency) consumed from your budget.  
+3. **Adjust goals:** if the target was to save the equivalent of two weeks’ rent, cut spending in high‑spread categories or switch providers.  
+4. **Set alerts:** define spread limits for each type of operation. When the app detects a value above the limit, it notifies you immediately.  
 
 ## Start today
 
-**Micro‑ação de 5 minutos:** Abra o FinMoovi, vá até a tela de “Captura Inteligente”, tire uma foto do último recibo ou digite a última compra que fez em moeda estrangeira. O app mostrará o valor convertido, o spread aplicado e sugerirá se vale a pena buscar outra opção. Marque a sugestão e pronto – você já começou a cortar custos invisíveis!
+**5‑minute micro‑action:** Open FinMoovi, go to the “Smart Capture” screen, snap a photo of your latest receipt or type the last foreign‑currency purchase you made. The app will show the converted amount, the applied spread, and suggest whether it’s worth looking for another option. Check the suggestion and you’re done – you’ve already started cutting invisible costs!
