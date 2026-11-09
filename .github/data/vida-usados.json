@@ -1066,5 +1066,11 @@
     "gancho": "voces-viram",
     "turno": "noite",
     "em": "2026-11-08T11:39:05.579Z"
+  },
+  {
+    "situacao": "limpar-o-nome",
+    "gancho": "faca-isso",
+    "turno": "manha",
+    "em": "2026-11-09T13:11:18.228Z"
   }
 ]

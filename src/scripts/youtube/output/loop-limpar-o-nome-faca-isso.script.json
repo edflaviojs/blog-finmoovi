@@ -1,0 +1,118 @@
+{
+  "slug": "loop-limpar-o-nome-faca-isso",
+  "formato": "loop16",
+  "term": "Limpar o nome",
+  "category": "vida",
+  "keyword": "NOME",
+  "valor": "R$ 380",
+  "situacao": "limpar-o-nome",
+  "gancho": "faca-isso",
+  "ganchoFamilia": "faça isso",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "buraco",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se você quer nome limpo, faça isso. Comigo foi na loja.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "limpo",
+          "visual": {
+            "type": "statement",
+            "text": "Quer limpar seu nome?"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "Comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Cartão recusado. Dívida velha de R$ 380, que eu tinha esquecido lá atrás.",
+      "durationSec": 4.49,
+      "shots": [
+        {
+          "anchor": "Cartão",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "recusado",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 380"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Olha, pior é fingir que não existe. Eu fui lá, resolvi.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "fingir",
+          "visual": {
+            "type": "statement",
+            "text": "Fui lá e resolvi"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "existe",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Hoje passo na loja de cabeça erguida, nome limpo.",
+      "durationSec": 3.11,
+      "shots": [
+        {
+          "anchor": "passo",
+          "visual": {
+            "type": "statement",
+            "text": "Nome limpo, cabeça erguida"
+          }
+        },
+        {
+          "anchor": "cabeça",
+          "visual": {
+            "type": "statement",
+            "text": "Quer limpar seu nome?"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
