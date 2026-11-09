@@ -330,6 +330,72 @@
         "cena": "64",
         "boneco": "super-heroi"
       }
+    ],
+    "controle-gastos-com-mil": [
+      {
+        "cena": "4",
+        "boneco": "bolsos-vazios"
+      },
+      {
+        "cena": "8",
+        "boneco": "escorregar-banana"
+      },
+      {
+        "cena": "12",
+        "boneco": "ombros"
+      },
+      {
+        "cena": "13",
+        "boneco": "contar-moedas"
+      },
+      {
+        "cena": "17",
+        "boneco": "puxar-cabelo"
+      },
+      {
+        "cena": "22",
+        "boneco": "correr"
+      },
+      {
+        "cena": "29",
+        "boneco": "susto"
+      },
+      {
+        "cena": "34",
+        "boneco": "relogio"
+      },
+      {
+        "cena": "40",
+        "boneco": "cair"
+      },
+      {
+        "cena": "43",
+        "boneco": "facepalm"
+      },
+      {
+        "cena": "48",
+        "boneco": "ideia"
+      },
+      {
+        "cena": "52",
+        "boneco": "apontar"
+      },
+      {
+        "cena": "54",
+        "boneco": "proteger"
+      },
+      {
+        "cena": "56",
+        "boneco": "peso-leve"
+      },
+      {
+        "cena": "61",
+        "boneco": "abracar-cofrinho"
+      },
+      {
+        "cena": "67",
+        "boneco": "comemorar"
+      }
     ]
   }
 }

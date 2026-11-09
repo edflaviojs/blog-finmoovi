@@ -127,6 +127,24 @@
         "movimento": "aproxima-lento",
         "pista": "eu fiz a conta com a"
       }
+    ],
+    "controle-gastos-com-mil": [
+      {
+        "ficheiro": "manus/controle-gastos-com-mil/susto.jpg",
+        "nome": "o susto de olhar a conta",
+        "significado": "o susto de olhar a conta",
+        "tipo": "foto",
+        "movimento": "aproxima",
+        "pista": "voce ja ficou parado no acostamento"
+      },
+      {
+        "ficheiro": "manus/controle-gastos-com-mil/virada.jpg",
+        "nome": "a saída que se abre",
+        "significado": "a saída que se abre",
+        "tipo": "foto",
+        "movimento": "aproxima-lento",
+        "pista": "dois meses de casa pagos sem"
+      }
     ]
   }
 }

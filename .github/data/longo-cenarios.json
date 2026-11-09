@@ -194,6 +194,20 @@
       "cena": "a máquina de lavar que parou no meio da semana",
       "promessa": "Você perde quatro mil e oitocentos reais por ano sem ver, e eu vou te provar isso.",
       "em": "2026-11-02"
+    },
+    {
+      "slug": "controle-gastos-com-mil",
+      "cenarios": [
+        "o mercado",
+        "o salário que cai na conta",
+        "a geladeira"
+      ],
+      "fio": "boia",
+      "elenco": "uma avó e uma neta, duas gerações a olhar para o mesmo problema",
+      "funcaoDoApp": "lembretes",
+      "cena": "o pneu que furou a caminho do trabalho",
+      "promessa": "Você deixa de juntar seis mil reais por ano com um salário de três mil, e eu vou te provar isso.",
+      "em": "2026-11-09"
     }
   ]
 }

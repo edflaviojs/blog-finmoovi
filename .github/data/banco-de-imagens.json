@@ -164,6 +164,28 @@
       "usadoEm": [
         "controle-gastos-passos-para"
       ]
+    },
+    {
+      "ficheiro": "manus/controle-gastos-com-mil/susto.jpg",
+      "significado": "o susto de olhar a conta",
+      "tipo": "foto",
+      "pistas": [
+        "voce ja ficou parado no acostamento"
+      ],
+      "usadoEm": [
+        "controle-gastos-com-mil"
+      ]
+    },
+    {
+      "ficheiro": "manus/controle-gastos-com-mil/virada.jpg",
+      "significado": "a saída que se abre",
+      "tipo": "foto",
+      "pistas": [
+        "dois meses de casa pagos sem"
+      ],
+      "usadoEm": [
+        "controle-gastos-com-mil"
+      ]
     }
   ],
   "recusadas": [

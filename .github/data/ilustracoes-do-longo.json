@@ -287,6 +287,32 @@
         "cena": "57",
         "figura": "ratoeira"
       }
+    ],
+    "controle-gastos-com-mil": [
+      {
+        "cena": "3",
+        "figura": "balde-furado"
+      },
+      {
+        "cena": "16",
+        "figura": "ralo"
+      },
+      {
+        "cena": "21",
+        "figura": "corda-bamba"
+      },
+      {
+        "cena": "25",
+        "figura": "escudo"
+      },
+      {
+        "cena": "39",
+        "figura": "mochila-pedras"
+      },
+      {
+        "cena": "45",
+        "figura": "fumaca"
+      }
     ]
   }
 }
