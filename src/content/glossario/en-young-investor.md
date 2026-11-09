@@ -4,6 +4,7 @@ definition: "What young investor is and how it shows up in your everyday money â
 title: "young investor - Financial Glossary"
 description: "What young investor is and how it shows up in your everyday money â€” explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/young-investor.webp"
+imageAlt: "Gold coin stacks, green seedlings, and glass containers on a dark platform."
 category: "basico"
 tags: ["young investor", "glossary", "finance"]
 author: "FinMoovi"

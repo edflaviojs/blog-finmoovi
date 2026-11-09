@@ -4,6 +4,7 @@ definition: "O que é young investor e como isso aparece no seu dia a dia — ex
 title: "young investor - Glossário Financeiro"
 description: "O que é young investor e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/young-investor.webp"
+imageAlt: "Pilhas de moedas douradas, barras e mudas verdes sobre fundo escuro."
 category: "basico"
 tags: ["young investor", "glossário", "finanças"]
 author: "FinMoovi"

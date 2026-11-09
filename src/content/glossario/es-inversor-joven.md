@@ -4,6 +4,7 @@ definition: "Qué es inversor joven y cómo aparece en tu día a día — explic
 title: "inversor joven - Glosario Financiero"
 description: "Qué es inversor joven y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/young-investor.webp"
+imageAlt: "Monedas doradas, plantas verdes y bloques amarillos sobre base negra."
 category: "basico"
 tags: ["inversor joven", "glosario", "finanzas"]
 author: "FinMoovi"
