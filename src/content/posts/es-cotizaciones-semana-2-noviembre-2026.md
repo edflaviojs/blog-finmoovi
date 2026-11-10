@@ -2,6 +2,7 @@
 title: "Resumen Semanal: Dólar a R$ 5.50 — Semana 2 de noviembre"
 description: "Resumen semanal del mercado financiero: dólar, euro, Selic y consejos para inversores. Semana 2 de noviembre 2026."
 image: "/images/posts/cotacoes-semana-2026-11-09.webp"
+imageAlt: "Escritorio con portátiles, teclados, taza blanca y planta bajo luz cálida."
 category: "cotacoes"
 tags: ["cotizaciones","dólar","euro","mercado financiero","selic"]
 author: "FinMoovi"

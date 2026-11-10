@@ -4,6 +4,7 @@ definition: "What Free zone is and how it shows up in your everyday money — ex
 title: "Free zone - Financial Glossary"
 description: "What Free zone is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/zona-franca.webp"
+imageAlt: "Stacks of gold coins beside a glass jar containing coins and a green plant sprout."
 category: "basico"
 tags: ["Free zone", "glossary", "finance"]
 author: "FinMoovi"

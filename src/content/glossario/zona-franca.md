@@ -4,6 +4,7 @@ definition: "O que é zona franca e como isso aparece no seu dia a dia — expli
 title: "zona franca - Glossário Financeiro"
 description: "O que é zona franca e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/zona-franca.webp"
+imageAlt: "Moedas douradas empilhadas ao lado de um pote de vidro com uma planta verde."
 category: "basico"
 tags: ["zona franca", "glossário", "finanças"]
 author: "FinMoovi"

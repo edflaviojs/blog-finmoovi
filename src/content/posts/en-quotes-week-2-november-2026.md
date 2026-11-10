@@ -2,6 +2,7 @@
 title: "Weekly Summary: Dollar at R$ 5.50 — Week 2 of november"
 description: "Weekly financial market summary: dollar, euro, Selic and tips for investors. Week 2 of november 2026."
 image: "/images/posts/cotacoes-semana-2026-11-09.webp"
+imageAlt: "Laptop, monitor, keyboard, and coffee mug on a sunlit wooden desk."
 category: "cotacoes"
 tags: ["quotes","dollar","euro","financial market","selic"]
 author: "FinMoovi"
