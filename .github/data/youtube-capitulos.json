@@ -3363,8 +3363,106 @@
           "titulo": "Conclusão e Perguntas"
         }
       ]
+    },
+    {
+      "videoId": "AqvxCPsVCJs",
+      "title": "Como ficar rico com a CRISE de 2027",
+      "channel": "Raquel Mendes - Finanças",
+      "duracaoSeg": 807,
+      "idioma": "pt",
+      "viewsPerDay": 132395,
+      "vistoEm": "2026-11-10",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "Como a reação do mercado financeiro e a alta do dólar afetam seu dinheiro"
+        },
+        {
+          "seg": 72,
+          "titulo": "Os ciclos de juros na economia brasileira e as janelas de oportunidade"
+        },
+        {
+          "seg": 218,
+          "titulo": "Onde investir na renda fixa durante períodos de juros elevados"
+        },
+        {
+          "seg": 347,
+          "titulo": "Como funcionam o Tesouro Direto, CDB e títulos pós-fixados"
+        },
+        {
+          "seg": 436,
+          "titulo": "A estratégia de travar taxas pré-fixadas e marcação a mercado"
+        },
+        {
+          "seg": 537,
+          "titulo": "Como construir patrimônio partindo de aportes pequenos com juros compostos"
+        }
+      ]
+    },
+    {
+      "videoId": "x-8gOOO54Mo",
+      "title": "Como Começar na Pecuária com Pouco Dinheiro",
+      "channel": "Berro do Boi",
+      "duracaoSeg": 751,
+      "idioma": "pt",
+      "viewsPerDay": 427,
+      "vistoEm": "2026-11-10",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "Duas formas de começar na pecuária com pouco dinheiro"
+        },
+        {
+          "seg": 36,
+          "titulo": "Corretagem: começar sem pôr dinheiro no gado"
+        },
+        {
+          "seg": 112,
+          "titulo": "Quanto ganha o corretor: de 1% a 3% ou R$ 50 por cabeça"
+        },
+        {
+          "seg": 130,
+          "titulo": "Quem paga a corretagem"
+        },
+        {
+          "seg": 220,
+          "titulo": "Comissão alta: quando comprador e vendedor racham"
+        },
+        {
+          "seg": 280,
+          "titulo": "O que precisa para ser corretor: honestidade"
+        },
+        {
+          "seg": 374,
+          "titulo": "Acompanhar o negócio até o embarque"
+        },
+        {
+          "seg": 428,
+          "titulo": "Rede de contato: quem cria e quem recria"
+        },
+        {
+          "seg": 448,
+          "titulo": "Catira: lucro maior, risco maior"
+        },
+        {
+          "seg": 506,
+          "titulo": "A conta da catira: R$ 200 por bezerra, bruto"
+        },
+        {
+          "seg": 556,
+          "titulo": "Os riscos da catira: desistência e queda de preço"
+        },
+        {
+          "seg": 680,
+          "titulo": "O que precisa para fazer catira: capital e um pasto pequeno"
+        },
+        {
+          "seg": 697,
+          "titulo": "Corretagem ou catira: qual escolher"
+        }
+      ]
     }
   ],
-  "atualizadoEm": "2026-11-09T12:20:44.053Z",
-  "total": 61
+  "atualizadoEm": "2026-11-10T11:57:07.461Z",
+  "total": 63
 }

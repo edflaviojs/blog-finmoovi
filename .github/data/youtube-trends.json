@@ -1,43 +1,43 @@
 {
-  "generatedAt": "2026-11-09T12:20:44.054Z",
+  "generatedAt": "2026-11-10T11:57:07.462Z",
   "periodDays": 60,
-  "totalAnalyzed": 88,
+  "totalAnalyzed": 89,
   "contagem": {
-    "shorts": 42,
-    "longos": 46,
+    "shorts": 39,
+    "longos": 50,
     "naoPortugues": 11
   },
   "aggregate": {
     "topPattern": "number-focused",
-    "avgViewsPerDay": 2608,
+    "avgViewsPerDay": 3847,
     "titleStats": {
-      "percentWithNumber": 49,
-      "percentWithQuestion": 14,
-      "avgWordCount": 10,
-      "avgCharCount": 66
+      "percentWithNumber": 54,
+      "percentWithQuestion": 15,
+      "avgWordCount": 11,
+      "avgCharCount": 67
     },
     "pillarHeat": {
-      "mindset": 156736.73776733136,
-      "ferramentas": 15457.02511553308,
-      "investimento": 37924.04367382717,
-      "controle": 19390.85650950842
+      "mindset": 278263.0253735687,
+      "investimento": 39574.98392199202,
+      "controle": 20200.98931337731,
+      "ferramentas": 4361.757672319473
     },
     "sampleTitles": [
+      "Como ficar rico com a CRISE de 2027",
       "Educação financeira: Ele ensina a filha antes de farmar aura",
       "Educação financeira pra quem ganha R$ 1.800? Guardar o quê? | Raul Sena",
       "Mãe ensina educação financeira e filho trabalha para pagar celular de R$ 3 mil",
-      "11 Luxos que NÃO Custam NADA e Fazem Você Parecer Rico",
-      "4 REGRAS PARA FICAR RICO MESMO GANHANDO POUCO | Napoleon Hill"
+      "11 Luxos que NÃO Custam NADA e Fazem Você Parecer Rico"
     ]
   },
   "estudoDeCapitulos": {
     "fonte": "arquivo acumulado (.github/data/youtube-capitulos.json)",
-    "comCapitulos": 61,
+    "comCapitulos": 63,
     "mediaDeCapitulos": 11,
     "minDeCapitulos": 5,
     "maxDeCapitulos": 27,
     "duracaoMediaDoPrimeiroSeg": 78,
-    "mediaSegundosPorCapitulo": 153,
+    "mediaSegundosPorCapitulo": 151,
     "aberturas": [
       "Introdução",
       "Introdução",
@@ -65,14 +65,61 @@
   },
   "topVideos": [
     {
+      "videoId": "AqvxCPsVCJs",
+      "title": "Como ficar rico com a CRISE de 2027",
+      "channel": "Raquel Mendes - Finanças",
+      "publishedAt": "2026-11-02T21:30:00Z",
+      "views": 1006485,
+      "likes": 22058,
+      "viewsPerDay": 132394.6300651725,
+      "likeRatio": 0.021915875547077204,
+      "duracaoSeg": 807,
+      "formato": "longo",
+      "idioma": "pt",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "Como a reação do mercado financeiro e a alta do dólar afetam seu dinheiro"
+        },
+        {
+          "seg": 72,
+          "titulo": "Os ciclos de juros na economia brasileira e as janelas de oportunidade"
+        },
+        {
+          "seg": 218,
+          "titulo": "Onde investir na renda fixa durante períodos de juros elevados"
+        },
+        {
+          "seg": 347,
+          "titulo": "Como funcionam o Tesouro Direto, CDB e títulos pós-fixados"
+        },
+        {
+          "seg": 436,
+          "titulo": "A estratégia de travar taxas pré-fixadas e marcação a mercado"
+        },
+        {
+          "seg": 537,
+          "titulo": "Como construir patrimônio partindo de aportes pequenos com juros compostos"
+        }
+      ],
+      "titlePatterns": {
+        "hasNumber": true,
+        "hasQuestion": false,
+        "hasEmoji": false,
+        "wordCount": 8,
+        "charCount": 35
+      },
+      "pillar": "mindset"
+    },
+    {
       "videoId": "GoAJ04D_qxM",
       "title": "Educação financeira: Ele ensina a filha antes de farmar aura",
       "channel": "Natalia Lee",
       "publishedAt": "2026-10-26T23:37:18Z",
-      "views": 362497,
-      "likes": 19302,
-      "viewsPerDay": 26791.808647746795,
-      "likeRatio": 0.05324733721934251,
+      "views": 362532,
+      "likes": 19304,
+      "viewsPerDay": 24978.51003052126,
+      "likeRatio": 0.05324771330530822,
       "duracaoSeg": 66,
       "formato": "short",
       "idioma": "pt",
@@ -91,10 +138,10 @@
       "title": "Educação financeira pra quem ganha R$ 1.800? Guardar o quê? | Raul Sena",
       "channel": "Cortes do Raul Sena",
       "publishedAt": "2026-10-31T10:00:16Z",
-      "views": 194696,
-      "likes": 11558,
-      "viewsPerDay": 21400.98031421206,
-      "likeRatio": 0.059364342359370506,
+      "views": 206069,
+      "likes": 12146,
+      "viewsPerDay": 20441.04085039184,
+      "likeRatio": 0.05894142253322916,
       "duracaoSeg": 79,
       "formato": "short",
       "idioma": "pt",
@@ -113,10 +160,10 @@
       "title": "Mãe ensina educação financeira e filho trabalha para pagar celular de R$ 3 mil",
       "channel": "Rádio Paiquerê FM 98.9",
       "publishedAt": "2026-10-01T18:04:59Z",
-      "views": 619795,
-      "likes": 15959,
-      "viewsPerDay": 15990.204203358773,
-      "likeRatio": 0.025748836308779516,
+      "views": 619799,
+      "likes": 15957,
+      "viewsPerDay": 15594.573066467801,
+      "likeRatio": 0.025745443280805552,
       "duracaoSeg": 65,
       "formato": "short",
       "idioma": "pt",
@@ -135,10 +182,10 @@
       "title": "11 Luxos que NÃO Custam NADA e Fazem Você Parecer Rico",
       "channel": "Valorize o Seu Bolso",
       "publishedAt": "2026-10-04T17:00:11Z",
-      "views": 473246,
-      "likes": 10038,
-      "viewsPerDay": 13216.977008729224,
-      "likeRatio": 0.02121095582424363,
+      "views": 474604,
+      "likes": 10058,
+      "viewsPerDay": 12900.517648293782,
+      "likeRatio": 0.021192404615216053,
       "duracaoSeg": 817,
       "formato": "longo",
       "idioma": "pt",
@@ -157,10 +204,10 @@
       "title": "4 REGRAS PARA FICAR RICO MESMO GANHANDO POUCO | Napoleon Hill",
       "channel": "Biblioteca Mental",
       "publishedAt": "2026-10-28T21:30:02Z",
-      "views": 128910,
-      "likes": 7468,
-      "viewsPerDay": 11095.21451512726,
-      "likeRatio": 0.05793189046621674,
+      "views": 134659,
+      "likes": 7691,
+      "viewsPerDay": 10685.411098829232,
+      "likeRatio": 0.05711463771452335,
       "duracaoSeg": 126,
       "formato": "short",
       "idioma": "pt",
@@ -175,108 +222,14 @@
       "pillar": "mindset"
     },
     {
-      "videoId": "BXTAuLDZkpo",
-      "title": "PLANILHA de ORGANIZAÇÃO FINANCEIRA (Atualizada)",
-      "channel": "Primo Pobre",
-      "publishedAt": "2026-09-10T21:00:06Z",
-      "views": 598523,
-      "likes": 16254,
-      "viewsPerDay": 10035.713092280026,
-      "likeRatio": 0.027156851115161824,
-      "duracaoSeg": 1651,
-      "formato": "longo",
-      "idioma": "pt",
-      "capitulos": [
-        {
-          "seg": 0,
-          "titulo": "ABERTURA"
-        },
-        {
-          "seg": 32,
-          "titulo": "COMO ORGANIZAR SUAS FINANÇAS"
-        },
-        {
-          "seg": 80,
-          "titulo": "VOCÊ É UMA PESSOA ORGANIZADA?"
-        },
-        {
-          "seg": 140,
-          "titulo": "PREENCHE A PLANILHA UMA VEZ"
-        },
-        {
-          "seg": 177,
-          "titulo": "PLANILHA DO PRIMO POBRE"
-        },
-        {
-          "seg": 1606,
-          "titulo": "FINALIZAÇÃO"
-        }
-      ],
-      "titlePatterns": {
-        "hasNumber": false,
-        "hasQuestion": false,
-        "hasEmoji": false,
-        "wordCount": 5,
-        "charCount": 47
-      },
-      "pillar": "mindset"
-    },
-    {
-      "videoId": "BXTAuLDZkpo",
-      "title": "PLANILHA de ORGANIZAÇÃO FINANCEIRA (Atualizada)",
-      "channel": "Primo Pobre",
-      "publishedAt": "2026-09-10T21:00:06Z",
-      "views": 598523,
-      "likes": 16254,
-      "viewsPerDay": 10035.709775502122,
-      "likeRatio": 0.027156851115161824,
-      "duracaoSeg": 1651,
-      "formato": "longo",
-      "idioma": "pt",
-      "capitulos": [
-        {
-          "seg": 0,
-          "titulo": "ABERTURA"
-        },
-        {
-          "seg": 32,
-          "titulo": "COMO ORGANIZAR SUAS FINANÇAS"
-        },
-        {
-          "seg": 80,
-          "titulo": "VOCÊ É UMA PESSOA ORGANIZADA?"
-        },
-        {
-          "seg": 140,
-          "titulo": "PREENCHE A PLANILHA UMA VEZ"
-        },
-        {
-          "seg": 177,
-          "titulo": "PLANILHA DO PRIMO POBRE"
-        },
-        {
-          "seg": 1606,
-          "titulo": "FINALIZAÇÃO"
-        }
-      ],
-      "titlePatterns": {
-        "hasNumber": false,
-        "hasQuestion": false,
-        "hasEmoji": false,
-        "wordCount": 5,
-        "charCount": 47
-      },
-      "pillar": "ferramentas"
-    },
-    {
       "videoId": "B-f1sjU7uFU",
       "title": "Investir R$ 100 por mês pode mudar sua vida?",
       "channel": "Investidor Sardinha l Raul Sena",
       "publishedAt": "2026-09-18T22:32:19Z",
-      "views": 426331,
-      "likes": 12414,
-      "viewsPerDay": 8266.191352915997,
-      "likeRatio": 0.02911822034991591,
+      "views": 430624,
+      "likes": 12498,
+      "viewsPerDay": 8193.173439568689,
+      "likeRatio": 0.029022999182581555,
       "duracaoSeg": 1125,
       "formato": "longo",
       "idioma": "pt",
@@ -340,36 +293,14 @@
       "pillar": "investimento"
     },
     {
-      "videoId": "fUhCwGl4oYs",
-      "title": "A CRISE de 2027 Pode Criar os Próximos MILIONÁRIOS #educaçãofinanceira",
-      "channel": "Sabedoria  Financeira",
-      "publishedAt": "2026-11-04T21:00:10Z",
-      "views": 32687,
-      "likes": 777,
-      "viewsPerDay": 7045.730750253719,
-      "likeRatio": 0.023770918101997735,
-      "duracaoSeg": 1325,
-      "formato": "longo",
-      "idioma": "pt",
-      "capitulos": null,
-      "titlePatterns": {
-        "hasNumber": true,
-        "hasQuestion": false,
-        "hasEmoji": false,
-        "wordCount": 10,
-        "charCount": 70
-      },
-      "pillar": "mindset"
-    },
-    {
       "videoId": "SaNSC2rMP7o",
       "title": "5 NEGÓCIOS PARA COMEÇAR EM 2027 DE CASA E COM POUCO DINHEIRO!",
       "channel": "Gêmeos Investem",
       "publishedAt": "2026-10-20T22:45:46Z",
-      "views": 137040,
-      "likes": 3034,
-      "viewsPerDay": 7004.013868603552,
-      "likeRatio": 0.022139521307647403,
+      "views": 139822,
+      "likes": 3083,
+      "viewsPerDay": 6804.143459738444,
+      "likeRatio": 0.022049462888529704,
       "duracaoSeg": 1467,
       "formato": "longo",
       "idioma": "pt",
@@ -421,10 +352,10 @@
       "title": "5 HÁBITOS de quem SEMPRE tem DINHEIRO (mesmo ganhando pouco)",
       "channel": "lore.invest",
       "publishedAt": "2026-10-05T15:00:19Z",
-      "views": 236144,
-      "likes": 7285,
-      "viewsPerDay": 6768.407413543193,
-      "likeRatio": 0.030849820448539875,
+      "views": 240242,
+      "likes": 7383,
+      "viewsPerDay": 6697.058060646294,
+      "likeRatio": 0.030731512391671732,
       "duracaoSeg": 898,
       "formato": "longo",
       "idioma": "pt",
@@ -439,14 +370,36 @@
       "pillar": "investimento"
     },
     {
+      "videoId": "fUhCwGl4oYs",
+      "title": "A CRISE de 2027 Pode Criar os Próximos MILIONÁRIOS #educaçãofinanceira",
+      "channel": "Sabedoria  Financeira",
+      "publishedAt": "2026-11-04T21:00:10Z",
+      "views": 37582,
+      "likes": 870,
+      "viewsPerDay": 6683.767773067906,
+      "likeRatio": 0.023149380022351125,
+      "duracaoSeg": 1325,
+      "formato": "longo",
+      "idioma": "pt",
+      "capitulos": null,
+      "titlePatterns": {
+        "hasNumber": true,
+        "hasQuestion": false,
+        "hasEmoji": false,
+        "wordCount": 10,
+        "charCount": 70
+      },
+      "pillar": "mindset"
+    },
+    {
       "videoId": "fiXgdaPZ27I",
       "title": "10 Hábitos “Sem Graça” Que Estão Me Fazendo Economizar MUITO Dinheiro",
       "channel": "Sai da caixa!",
       "publishedAt": "2026-09-23T15:12:24Z",
-      "views": 316200,
-      "likes": 8246,
-      "viewsPerDay": 6744.770063537871,
-      "likeRatio": 0.02607843137254902,
+      "views": 317734,
+      "likes": 8282,
+      "viewsPerDay": 6638.213914307203,
+      "likeRatio": 0.026065828649121593,
       "duracaoSeg": 1071,
       "formato": "longo",
       "idioma": "pt",
@@ -461,36 +414,14 @@
       "pillar": "mindset"
     },
     {
-      "videoId": "QQfCppGTVhs",
-      "title": "💕COMECE 2027 agora EM NOVEMBRO educação financeira ",
-      "channel": "VITÓRIAS",
-      "publishedAt": "2026-11-07T19:11:12Z",
-      "views": 11431,
-      "likes": 796,
-      "viewsPerDay": 6665.560327457958,
-      "likeRatio": 0.06963520251946462,
-      "duracaoSeg": 2443,
-      "formato": "longo",
-      "idioma": "pt",
-      "capitulos": null,
-      "titlePatterns": {
-        "hasNumber": true,
-        "hasQuestion": false,
-        "hasEmoji": false,
-        "wordCount": 8,
-        "charCount": 52
-      },
-      "pillar": "mindset"
-    },
-    {
       "videoId": "xV2A3YN7r88",
       "title": "COMO ORGANIZAR SUAS FINANÇAS DE OUTUBRO A DEZEMBRO DE 2026",
       "channel": "Motiva Henrique ",
       "publishedAt": "2026-09-17T08:00:27Z",
-      "views": 344845,
-      "likes": 6985,
-      "viewsPerDay": 6484.398689392351,
-      "likeRatio": 0.02025547709840653,
+      "views": 345536,
+      "likes": 6998,
+      "viewsPerDay": 6379.400677995757,
+      "likeRatio": 0.02025259307279126,
       "duracaoSeg": 1375,
       "formato": "longo",
       "idioma": "pt",
@@ -509,10 +440,10 @@
       "title": "COMO ORGANIZAR SUAS FINANÇAS DE OUTUBRO A DEZEMBRO DE 2026",
       "channel": "Motiva Henrique ",
       "publishedAt": "2026-09-17T08:00:27Z",
-      "views": 344845,
-      "likes": 6985,
-      "viewsPerDay": 6484.397248513761,
-      "likeRatio": 0.02025547709840653,
+      "views": 345536,
+      "likes": 6998,
+      "viewsPerDay": 6379.3994334140625,
+      "likeRatio": 0.02025259307279126,
       "duracaoSeg": 1375,
       "formato": "longo",
       "idioma": "pt",
@@ -527,14 +458,36 @@
       "pillar": "mindset"
     },
     {
+      "videoId": "QQfCppGTVhs",
+      "title": "💕COMECE 2027 agora EM NOVEMBRO educação financeira ",
+      "channel": "VITÓRIAS",
+      "publishedAt": "2026-11-07T19:11:12Z",
+      "views": 14570,
+      "likes": 932,
+      "viewsPerDay": 5399.200472719978,
+      "likeRatio": 0.06396705559368565,
+      "duracaoSeg": 2443,
+      "formato": "longo",
+      "idioma": "pt",
+      "capitulos": null,
+      "titlePatterns": {
+        "hasNumber": true,
+        "hasQuestion": false,
+        "hasEmoji": false,
+        "wordCount": 8,
+        "charCount": 52
+      },
+      "pillar": "mindset"
+    },
+    {
       "videoId": "BS2nlD2CSaA",
       "title": "Educação Financeira em 3 Minutos",
       "channel": "Primo Pobre",
       "publishedAt": "2026-10-19T12:24:39Z",
-      "views": 105034,
-      "likes": 9193,
-      "viewsPerDay": 5002.271493360586,
-      "likeRatio": 0.08752403983472018,
+      "views": 106614,
+      "likes": 9318,
+      "viewsPerDay": 4850.307576343678,
+      "likeRatio": 0.08739940345545613,
       "duracaoSeg": 176,
       "formato": "short",
       "idioma": "pt",
@@ -549,14 +502,36 @@
       "pillar": "mindset"
     },
     {
+      "videoId": "csceMwsze8A",
+      "title": "Os Gastos Ridículos que a Classe Média Normalizou",
+      "channel": "Ruth Szilagy",
+      "publishedAt": "2026-10-15T21:00:14Z",
+      "views": 107774,
+      "likes": 3384,
+      "viewsPerDay": 4206.170811702777,
+      "likeRatio": 0.03139903872919257,
+      "duracaoSeg": 1533,
+      "formato": "longo",
+      "idioma": "pt",
+      "capitulos": null,
+      "titlePatterns": {
+        "hasNumber": false,
+        "hasQuestion": false,
+        "hasEmoji": false,
+        "wordCount": 8,
+        "charCount": 49
+      },
+      "pillar": "mindset"
+    },
+    {
       "videoId": "a450ba8BoEg",
       "title": "Seria uma boa usar funcionários da Caixa econômica para ensinar educação financeira nas escolas ?",
       "channel": "Flash da Economia ",
       "publishedAt": "2026-10-07T14:57:23Z",
-      "views": 141466,
-      "likes": 11205,
-      "viewsPerDay": 4301.029349099562,
-      "likeRatio": 0.07920631105707378,
+      "views": 141515,
+      "likes": 11208,
+      "viewsPerDay": 4177.588099914403,
+      "likeRatio": 0.07920008479666467,
       "duracaoSeg": 144,
       "formato": "short",
       "idioma": "pt",
@@ -571,36 +546,14 @@
       "pillar": "mindset"
     },
     {
-      "videoId": "-cCdHuFboTo",
-      "title": "Quanto você deveria guardar ganhando R$ 3.300 por mês? 💰",
-      "channel": "A Cara da Riqueza",
-      "publishedAt": "2026-10-30T20:47:02Z",
-      "views": 31612,
-      "likes": 1821,
-      "viewsPerDay": 3276.4037088979503,
-      "likeRatio": 0.05760470707326332,
-      "duracaoSeg": 28,
-      "formato": "short",
-      "idioma": "pt",
-      "capitulos": null,
-      "titlePatterns": {
-        "hasNumber": true,
-        "hasQuestion": true,
-        "hasEmoji": false,
-        "wordCount": 10,
-        "charCount": 57
-      },
-      "pillar": "mindset"
-    },
-    {
       "videoId": "ptyuU4fNL60",
       "title": "Quanto investir em FIIs para receber R$ 5 MIL, R$ 10 MIL e R$ 20 MIL todo mês? (Plano prático)",
       "channel": "FONTE DA FORTUNA - Alexandre Winkler",
       "publishedAt": "2026-09-20T12:00:06Z",
-      "views": 158479,
-      "likes": 6452,
-      "viewsPerDay": 3168.673556919688,
-      "likeRatio": 0.04071201862707362,
+      "views": 159578,
+      "likes": 6481,
+      "viewsPerDay": 3129.108197450943,
+      "likeRatio": 0.0406133677574603,
       "duracaoSeg": 1505,
       "formato": "longo",
       "idioma": "pt",
@@ -644,14 +597,36 @@
       "pillar": "investimento"
     },
     {
+      "videoId": "-cCdHuFboTo",
+      "title": "Quanto você deveria guardar ganhando R$ 3.300 por mês? 💰",
+      "channel": "A Cara da Riqueza",
+      "publishedAt": "2026-10-30T20:47:02Z",
+      "views": 31896,
+      "likes": 1839,
+      "viewsPerDay": 3000.0009176963345,
+      "likeRatio": 0.0576561324303988,
+      "duracaoSeg": 28,
+      "formato": "short",
+      "idioma": "pt",
+      "capitulos": null,
+      "titlePatterns": {
+        "hasNumber": true,
+        "hasQuestion": true,
+        "hasEmoji": false,
+        "wordCount": 10,
+        "charCount": 57
+      },
+      "pillar": "mindset"
+    },
+    {
       "videoId": "bqv5DeE2kro",
       "title": "Como os Ricos Fazem R$ 1.000 Virarem R$ 10.000 | Pai Rico, Pai Pobre",
       "channel": "Código Pai Rico",
       "publishedAt": "2026-09-26T20:00:24Z",
-      "views": 127665,
-      "likes": 2774,
-      "viewsPerDay": 2922.6821342417065,
-      "likeRatio": 0.021728743195080877,
+      "views": 129252,
+      "likes": 2803,
+      "viewsPerDay": 2893.849575121254,
+      "likeRatio": 0.02168631820010522,
       "duracaoSeg": 1577,
       "formato": "longo",
       "idioma": "pt",
@@ -672,10 +647,10 @@
       "title": "Educação financeira: Ele ensina a filha antes de farmar aura",
       "channel": "Natalia Lee",
       "publishedAt": "2026-10-26T23:37:18Z",
-      "views": 362497,
-      "likes": 19302,
-      "viewsPerDay": 26791.808647746795,
-      "likeRatio": 0.05324733721934251,
+      "views": 362532,
+      "likes": 19304,
+      "viewsPerDay": 24978.51003052126,
+      "likeRatio": 0.05324771330530822,
       "duracaoSeg": 66,
       "formato": "short",
       "idioma": "pt",
@@ -694,10 +669,10 @@
       "title": "Educação financeira pra quem ganha R$ 1.800? Guardar o quê? | Raul Sena",
       "channel": "Cortes do Raul Sena",
       "publishedAt": "2026-10-31T10:00:16Z",
-      "views": 194696,
-      "likes": 11558,
-      "viewsPerDay": 21400.98031421206,
-      "likeRatio": 0.059364342359370506,
+      "views": 206069,
+      "likes": 12146,
+      "viewsPerDay": 20441.04085039184,
+      "likeRatio": 0.05894142253322916,
       "duracaoSeg": 79,
       "formato": "short",
       "idioma": "pt",
@@ -716,10 +691,10 @@
       "title": "Mãe ensina educação financeira e filho trabalha para pagar celular de R$ 3 mil",
       "channel": "Rádio Paiquerê FM 98.9",
       "publishedAt": "2026-10-01T18:04:59Z",
-      "views": 619795,
-      "likes": 15959,
-      "viewsPerDay": 15990.204203358773,
-      "likeRatio": 0.025748836308779516,
+      "views": 619799,
+      "likes": 15957,
+      "viewsPerDay": 15594.573066467801,
+      "likeRatio": 0.025745443280805552,
       "duracaoSeg": 65,
       "formato": "short",
       "idioma": "pt",
@@ -738,10 +713,10 @@
       "title": "4 REGRAS PARA FICAR RICO MESMO GANHANDO POUCO | Napoleon Hill",
       "channel": "Biblioteca Mental",
       "publishedAt": "2026-10-28T21:30:02Z",
-      "views": 128910,
-      "likes": 7468,
-      "viewsPerDay": 11095.21451512726,
-      "likeRatio": 0.05793189046621674,
+      "views": 134659,
+      "likes": 7691,
+      "viewsPerDay": 10685.411098829232,
+      "likeRatio": 0.05711463771452335,
       "duracaoSeg": 126,
       "formato": "short",
       "idioma": "pt",
@@ -760,10 +735,10 @@
       "title": "Educação Financeira em 3 Minutos",
       "channel": "Primo Pobre",
       "publishedAt": "2026-10-19T12:24:39Z",
-      "views": 105034,
-      "likes": 9193,
-      "viewsPerDay": 5002.271493360586,
-      "likeRatio": 0.08752403983472018,
+      "views": 106614,
+      "likes": 9318,
+      "viewsPerDay": 4850.307576343678,
+      "likeRatio": 0.08739940345545613,
       "duracaoSeg": 176,
       "formato": "short",
       "idioma": "pt",
@@ -782,10 +757,10 @@
       "title": "Seria uma boa usar funcionários da Caixa econômica para ensinar educação financeira nas escolas ?",
       "channel": "Flash da Economia ",
       "publishedAt": "2026-10-07T14:57:23Z",
-      "views": 141466,
-      "likes": 11205,
-      "viewsPerDay": 4301.029349099562,
-      "likeRatio": 0.07920631105707378,
+      "views": 141515,
+      "likes": 11208,
+      "viewsPerDay": 4177.588099914403,
+      "likeRatio": 0.07920008479666467,
       "duracaoSeg": 144,
       "formato": "short",
       "idioma": "pt",
@@ -804,10 +779,10 @@
       "title": "Quanto você deveria guardar ganhando R$ 3.300 por mês? 💰",
       "channel": "A Cara da Riqueza",
       "publishedAt": "2026-10-30T20:47:02Z",
-      "views": 31612,
-      "likes": 1821,
-      "viewsPerDay": 3276.4037088979503,
-      "likeRatio": 0.05760470707326332,
+      "views": 31896,
+      "likes": 1839,
+      "viewsPerDay": 3000.0009176963345,
+      "likeRatio": 0.0576561324303988,
       "duracaoSeg": 28,
       "formato": "short",
       "idioma": "pt",
@@ -822,58 +797,36 @@
       "pillar": "mindset"
     },
     {
-      "videoId": "F85RzF_hUvE",
-      "title": "Quanto Custa Construir uma Casa de 2 Quartos?🏠 #construção #investimentos #educaçãofinanceira",
-      "channel": "Capital Econômica TV",
-      "publishedAt": "2026-11-04T14:36:43Z",
-      "views": 10691,
-      "likes": 321,
-      "viewsPerDay": 2179.3691458317144,
-      "likeRatio": 0.030025254887288372,
-      "duracaoSeg": 106,
-      "formato": "short",
-      "idioma": "pt",
-      "capitulos": null,
-      "titlePatterns": {
-        "hasNumber": true,
-        "hasQuestion": true,
-        "hasEmoji": false,
-        "wordCount": 11,
-        "charCount": 94
-      },
-      "pillar": "mindset"
-    },
-    {
-      "videoId": "ZpGG8wq0v8s",
-      "title": "Tô começando: onde investir?",
-      "channel": "Primo Pobre",
-      "publishedAt": "2026-09-30T11:44:33Z",
-      "views": 85463,
-      "likes": 5793,
-      "viewsPerDay": 2135.2350436279858,
-      "likeRatio": 0.06778371927032752,
-      "duracaoSeg": 118,
+      "videoId": "xqsQMJDyz_4",
+      "title": "BANCOS LUCRAM BILHÕES COM A FALTA DE EDUCAÇÃO FINANCEIRA! 😱💵",
+      "channel": "Cortify",
+      "publishedAt": "2026-11-07T22:23:46Z",
+      "views": 5767,
+      "likes": 162,
+      "viewsPerDay": 2248.5001287519535,
+      "likeRatio": 0.02809086179989596,
+      "duracaoSeg": 42,
       "formato": "short",
       "idioma": "pt",
       "capitulos": null,
       "titlePatterns": {
         "hasNumber": false,
-        "hasQuestion": true,
-        "hasEmoji": false,
-        "wordCount": 4,
-        "charCount": 28
+        "hasQuestion": false,
+        "hasEmoji": true,
+        "wordCount": 10,
+        "charCount": 62
       },
-      "pillar": "investimento"
+      "pillar": "mindset"
     },
     {
       "videoId": "c97eyyN3C4A",
       "title": "Como Investir Para Cada Objetivo Financeiro?",
       "channel": "Bruno OM ",
       "publishedAt": "2026-10-13T15:00:32Z",
-      "views": 55287,
-      "likes": 2182,
-      "viewsPerDay": 2056.1194293448993,
-      "likeRatio": 0.03946678242624849,
+      "views": 59830,
+      "likes": 2285,
+      "viewsPerDay": 2146.551293764629,
+      "likeRatio": 0.03819154270432893,
       "duracaoSeg": 52,
       "formato": "short",
       "idioma": "pt",
@@ -886,18 +839,87 @@
         "charCount": 44
       },
       "pillar": "investimento"
+    },
+    {
+      "videoId": "ZpGG8wq0v8s",
+      "title": "Tô começando: onde investir?",
+      "channel": "Primo Pobre",
+      "publishedAt": "2026-09-30T11:44:33Z",
+      "views": 86256,
+      "likes": 5837,
+      "viewsPerDay": 2103.35775717731,
+      "likeRatio": 0.06767065479502875,
+      "duracaoSeg": 118,
+      "formato": "short",
+      "idioma": "pt",
+      "capitulos": null,
+      "titlePatterns": {
+        "hasNumber": false,
+        "hasQuestion": true,
+        "hasEmoji": false,
+        "wordCount": 4,
+        "charCount": 28
+      },
+      "pillar": "investimento"
     }
   ],
   "topLongos": [
+    {
+      "videoId": "AqvxCPsVCJs",
+      "title": "Como ficar rico com a CRISE de 2027",
+      "channel": "Raquel Mendes - Finanças",
+      "publishedAt": "2026-11-02T21:30:00Z",
+      "views": 1006485,
+      "likes": 22058,
+      "viewsPerDay": 132394.6300651725,
+      "likeRatio": 0.021915875547077204,
+      "duracaoSeg": 807,
+      "formato": "longo",
+      "idioma": "pt",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "Como a reação do mercado financeiro e a alta do dólar afetam seu dinheiro"
+        },
+        {
+          "seg": 72,
+          "titulo": "Os ciclos de juros na economia brasileira e as janelas de oportunidade"
+        },
+        {
+          "seg": 218,
+          "titulo": "Onde investir na renda fixa durante períodos de juros elevados"
+        },
+        {
+          "seg": 347,
+          "titulo": "Como funcionam o Tesouro Direto, CDB e títulos pós-fixados"
+        },
+        {
+          "seg": 436,
+          "titulo": "A estratégia de travar taxas pré-fixadas e marcação a mercado"
+        },
+        {
+          "seg": 537,
+          "titulo": "Como construir patrimônio partindo de aportes pequenos com juros compostos"
+        }
+      ],
+      "titlePatterns": {
+        "hasNumber": true,
+        "hasQuestion": false,
+        "hasEmoji": false,
+        "wordCount": 8,
+        "charCount": 35
+      },
+      "pillar": "mindset"
+    },
     {
       "videoId": "PMHSk0aX_Sw",
       "title": "11 Luxos que NÃO Custam NADA e Fazem Você Parecer Rico",
       "channel": "Valorize o Seu Bolso",
       "publishedAt": "2026-10-04T17:00:11Z",
-      "views": 473246,
-      "likes": 10038,
-      "viewsPerDay": 13216.977008729224,
-      "likeRatio": 0.02121095582424363,
+      "views": 474604,
+      "likes": 10058,
+      "viewsPerDay": 12900.517648293782,
+      "likeRatio": 0.021192404615216053,
       "duracaoSeg": 817,
       "formato": "longo",
       "idioma": "pt",
@@ -912,108 +934,14 @@
       "pillar": "mindset"
     },
     {
-      "videoId": "BXTAuLDZkpo",
-      "title": "PLANILHA de ORGANIZAÇÃO FINANCEIRA (Atualizada)",
-      "channel": "Primo Pobre",
-      "publishedAt": "2026-09-10T21:00:06Z",
-      "views": 598523,
-      "likes": 16254,
-      "viewsPerDay": 10035.713092280026,
-      "likeRatio": 0.027156851115161824,
-      "duracaoSeg": 1651,
-      "formato": "longo",
-      "idioma": "pt",
-      "capitulos": [
-        {
-          "seg": 0,
-          "titulo": "ABERTURA"
-        },
-        {
-          "seg": 32,
-          "titulo": "COMO ORGANIZAR SUAS FINANÇAS"
-        },
-        {
-          "seg": 80,
-          "titulo": "VOCÊ É UMA PESSOA ORGANIZADA?"
-        },
-        {
-          "seg": 140,
-          "titulo": "PREENCHE A PLANILHA UMA VEZ"
-        },
-        {
-          "seg": 177,
-          "titulo": "PLANILHA DO PRIMO POBRE"
-        },
-        {
-          "seg": 1606,
-          "titulo": "FINALIZAÇÃO"
-        }
-      ],
-      "titlePatterns": {
-        "hasNumber": false,
-        "hasQuestion": false,
-        "hasEmoji": false,
-        "wordCount": 5,
-        "charCount": 47
-      },
-      "pillar": "mindset"
-    },
-    {
-      "videoId": "BXTAuLDZkpo",
-      "title": "PLANILHA de ORGANIZAÇÃO FINANCEIRA (Atualizada)",
-      "channel": "Primo Pobre",
-      "publishedAt": "2026-09-10T21:00:06Z",
-      "views": 598523,
-      "likes": 16254,
-      "viewsPerDay": 10035.709775502122,
-      "likeRatio": 0.027156851115161824,
-      "duracaoSeg": 1651,
-      "formato": "longo",
-      "idioma": "pt",
-      "capitulos": [
-        {
-          "seg": 0,
-          "titulo": "ABERTURA"
-        },
-        {
-          "seg": 32,
-          "titulo": "COMO ORGANIZAR SUAS FINANÇAS"
-        },
-        {
-          "seg": 80,
-          "titulo": "VOCÊ É UMA PESSOA ORGANIZADA?"
-        },
-        {
-          "seg": 140,
-          "titulo": "PREENCHE A PLANILHA UMA VEZ"
-        },
-        {
-          "seg": 177,
-          "titulo": "PLANILHA DO PRIMO POBRE"
-        },
-        {
-          "seg": 1606,
-          "titulo": "FINALIZAÇÃO"
-        }
-      ],
-      "titlePatterns": {
-        "hasNumber": false,
-        "hasQuestion": false,
-        "hasEmoji": false,
-        "wordCount": 5,
-        "charCount": 47
-      },
-      "pillar": "ferramentas"
-    },
-    {
       "videoId": "B-f1sjU7uFU",
       "title": "Investir R$ 100 por mês pode mudar sua vida?",
       "channel": "Investidor Sardinha l Raul Sena",
       "publishedAt": "2026-09-18T22:32:19Z",
-      "views": 426331,
-      "likes": 12414,
-      "viewsPerDay": 8266.191352915997,
-      "likeRatio": 0.02911822034991591,
+      "views": 430624,
+      "likes": 12498,
+      "viewsPerDay": 8193.173439568689,
+      "likeRatio": 0.029022999182581555,
       "duracaoSeg": 1125,
       "formato": "longo",
       "idioma": "pt",
@@ -1077,36 +1005,14 @@
       "pillar": "investimento"
     },
     {
-      "videoId": "fUhCwGl4oYs",
-      "title": "A CRISE de 2027 Pode Criar os Próximos MILIONÁRIOS #educaçãofinanceira",
-      "channel": "Sabedoria  Financeira",
-      "publishedAt": "2026-11-04T21:00:10Z",
-      "views": 32687,
-      "likes": 777,
-      "viewsPerDay": 7045.730750253719,
-      "likeRatio": 0.023770918101997735,
-      "duracaoSeg": 1325,
-      "formato": "longo",
-      "idioma": "pt",
-      "capitulos": null,
-      "titlePatterns": {
-        "hasNumber": true,
-        "hasQuestion": false,
-        "hasEmoji": false,
-        "wordCount": 10,
-        "charCount": 70
-      },
-      "pillar": "mindset"
-    },
-    {
       "videoId": "SaNSC2rMP7o",
       "title": "5 NEGÓCIOS PARA COMEÇAR EM 2027 DE CASA E COM POUCO DINHEIRO!",
       "channel": "Gêmeos Investem",
       "publishedAt": "2026-10-20T22:45:46Z",
-      "views": 137040,
-      "likes": 3034,
-      "viewsPerDay": 7004.013868603552,
-      "likeRatio": 0.022139521307647403,
+      "views": 139822,
+      "likes": 3083,
+      "viewsPerDay": 6804.143459738444,
+      "likeRatio": 0.022049462888529704,
       "duracaoSeg": 1467,
       "formato": "longo",
       "idioma": "pt",
@@ -1158,10 +1064,10 @@
       "title": "5 HÁBITOS de quem SEMPRE tem DINHEIRO (mesmo ganhando pouco)",
       "channel": "lore.invest",
       "publishedAt": "2026-10-05T15:00:19Z",
-      "views": 236144,
-      "likes": 7285,
-      "viewsPerDay": 6768.407413543193,
-      "likeRatio": 0.030849820448539875,
+      "views": 240242,
+      "likes": 7383,
+      "viewsPerDay": 6697.058060646294,
+      "likeRatio": 0.030731512391671732,
       "duracaoSeg": 898,
       "formato": "longo",
       "idioma": "pt",
@@ -1176,14 +1082,36 @@
       "pillar": "investimento"
     },
     {
+      "videoId": "fUhCwGl4oYs",
+      "title": "A CRISE de 2027 Pode Criar os Próximos MILIONÁRIOS #educaçãofinanceira",
+      "channel": "Sabedoria  Financeira",
+      "publishedAt": "2026-11-04T21:00:10Z",
+      "views": 37582,
+      "likes": 870,
+      "viewsPerDay": 6683.767773067906,
+      "likeRatio": 0.023149380022351125,
+      "duracaoSeg": 1325,
+      "formato": "longo",
+      "idioma": "pt",
+      "capitulos": null,
+      "titlePatterns": {
+        "hasNumber": true,
+        "hasQuestion": false,
+        "hasEmoji": false,
+        "wordCount": 10,
+        "charCount": 70
+      },
+      "pillar": "mindset"
+    },
+    {
       "videoId": "fiXgdaPZ27I",
       "title": "10 Hábitos “Sem Graça” Que Estão Me Fazendo Economizar MUITO Dinheiro",
       "channel": "Sai da caixa!",
       "publishedAt": "2026-09-23T15:12:24Z",
-      "views": 316200,
-      "likes": 8246,
-      "viewsPerDay": 6744.770063537871,
-      "likeRatio": 0.02607843137254902,
+      "views": 317734,
+      "likes": 8282,
+      "viewsPerDay": 6638.213914307203,
+      "likeRatio": 0.026065828649121593,
       "duracaoSeg": 1071,
       "formato": "longo",
       "idioma": "pt",
@@ -1198,36 +1126,14 @@
       "pillar": "mindset"
     },
     {
-      "videoId": "QQfCppGTVhs",
-      "title": "💕COMECE 2027 agora EM NOVEMBRO educação financeira ",
-      "channel": "VITÓRIAS",
-      "publishedAt": "2026-11-07T19:11:12Z",
-      "views": 11431,
-      "likes": 796,
-      "viewsPerDay": 6665.560327457958,
-      "likeRatio": 0.06963520251946462,
-      "duracaoSeg": 2443,
-      "formato": "longo",
-      "idioma": "pt",
-      "capitulos": null,
-      "titlePatterns": {
-        "hasNumber": true,
-        "hasQuestion": false,
-        "hasEmoji": false,
-        "wordCount": 8,
-        "charCount": 52
-      },
-      "pillar": "mindset"
-    },
-    {
       "videoId": "xV2A3YN7r88",
       "title": "COMO ORGANIZAR SUAS FINANÇAS DE OUTUBRO A DEZEMBRO DE 2026",
       "channel": "Motiva Henrique ",
       "publishedAt": "2026-09-17T08:00:27Z",
-      "views": 344845,
-      "likes": 6985,
-      "viewsPerDay": 6484.398689392351,
-      "likeRatio": 0.02025547709840653,
+      "views": 345536,
+      "likes": 6998,
+      "viewsPerDay": 6379.400677995757,
+      "likeRatio": 0.02025259307279126,
       "duracaoSeg": 1375,
       "formato": "longo",
       "idioma": "pt",
@@ -1240,6 +1146,50 @@
         "charCount": 58
       },
       "pillar": "controle"
+    },
+    {
+      "videoId": "xV2A3YN7r88",
+      "title": "COMO ORGANIZAR SUAS FINANÇAS DE OUTUBRO A DEZEMBRO DE 2026",
+      "channel": "Motiva Henrique ",
+      "publishedAt": "2026-09-17T08:00:27Z",
+      "views": 345536,
+      "likes": 6998,
+      "viewsPerDay": 6379.3994334140625,
+      "likeRatio": 0.02025259307279126,
+      "duracaoSeg": 1375,
+      "formato": "longo",
+      "idioma": "pt",
+      "capitulos": null,
+      "titlePatterns": {
+        "hasNumber": true,
+        "hasQuestion": false,
+        "hasEmoji": false,
+        "wordCount": 10,
+        "charCount": 58
+      },
+      "pillar": "mindset"
+    },
+    {
+      "videoId": "QQfCppGTVhs",
+      "title": "💕COMECE 2027 agora EM NOVEMBRO educação financeira ",
+      "channel": "VITÓRIAS",
+      "publishedAt": "2026-11-07T19:11:12Z",
+      "views": 14570,
+      "likes": 932,
+      "viewsPerDay": 5399.200472719978,
+      "likeRatio": 0.06396705559368565,
+      "duracaoSeg": 2443,
+      "formato": "longo",
+      "idioma": "pt",
+      "capitulos": null,
+      "titlePatterns": {
+        "hasNumber": true,
+        "hasQuestion": false,
+        "hasEmoji": false,
+        "wordCount": 8,
+        "charCount": 52
+      },
+      "pillar": "mindset"
     }
   ]
 }
