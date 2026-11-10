@@ -1,0 +1,212 @@
+{
+  "slug": "parcelamento-simples-nacional",
+  "term": "parcelamento simples nacional",
+  "category": "basico",
+  "keyword": "parcelamento",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você sabe *quando cai cada parcela* do seu parcelamento?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "areia-movedica",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você sabe quando cai cada parcela do seu parcelamento? Eu fechei um serviço de novecentos reais em três vezes e esqueci de duas.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "quando",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          }
+        },
+        {
+          "anchor": "novecentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 900"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "três",
+          "visual": {
+            "type": "statement",
+            "text": "3x no papel"
+          }
+        },
+        {
+          "anchor": "esqueci",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          },
+          "sfx": "alert"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "O cliente pediu três vezes e eu anotei só a primeira no caderno. As outras ficaram na cabeça, e cabeça esquece.",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "três",
+          "visual": {
+            "type": "statement",
+            "text": "Só a 1ª anotada"
+          }
+        },
+        {
+          "anchor": "caderno",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          }
+        },
+        {
+          "anchor": "cabeça",
+          "visual": {
+            "type": "icon",
+            "icon": "mind"
+          },
+          "sfx": "thud"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Aí o mês virou e eu gastei como se tivesse os novecentos. Só tinha trezentos. Seiscentos ainda nem tinham caído.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "gastei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "areia-movedica"
+          },
+          "sfx": "slide"
+        },
+        {
+          "anchor": "trezentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 300"
+          }
+        },
+        {
+          "anchor": "Seiscentos",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 600 ainda no ar"
+          },
+          "sfx": "alert"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Joguei as três parcelas no FinMoovi, cada uma com data e valor. Ele marcou uma como recebida e duas como pendente.",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "três",
+          "visual": {
+            "type": "app",
+            "app": "fluxo",
+            "note": "Três parcelas com data e valor"
+          },
+          "sfx": "keyboard"
+        },
+        {
+          "anchor": "recebida",
+          "visual": {
+            "type": "icon",
+            "icon": "shield"
+          }
+        },
+        {
+          "anchor": "pendente",
+          "visual": {
+            "type": "icon",
+            "icon": "hourglass"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver as suas parcelas assim? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 4.6,
+      "shots": [
+        {
+          "anchor": "assim",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Quem não sabe quando cai cada parcela acaba gastando o que ainda não tem. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "sabe",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          }
+        },
+        {
+          "anchor": "gastando",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "areia-movedica"
+          },
+          "sfx": "slide"
+        },
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "statement",
+            "text": "Sem controle, não é seu"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja todas as suas parcelas no FinMoovi",
+    "target": "app"
+  },
+  "totalDurationSec": 45.4
+}
