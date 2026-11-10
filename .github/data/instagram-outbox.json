@@ -22,5 +22,11 @@
     "runId": "42657068611",
     "producedAt": "2026-11-09T16:53:45.189Z",
     "artifact": "short-varejo"
+  },
+  {
+    "fileSlug": "parcelamento-simples-nacional",
+    "runId": "42840404244",
+    "producedAt": "2026-11-10T15:18:22.094Z",
+    "artifact": "short-parcelamento-simples-nacional"
   }
 ]
