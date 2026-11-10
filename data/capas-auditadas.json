@@ -6394,6 +6394,36 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-11-09"
+    },
+    "cotacoes-semana-2026-11-09.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-10"
+    },
+    "es-cotizaciones-semana-2-noviembre-2026-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-10"
+    },
+    "es-cotizaciones-semana-2-noviembre-2026-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-10"
+    },
+    "zona-franca-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-10"
+    },
+    "zona-franca-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-10"
+    },
+    "zona-franca.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-10"
     }
   },
   "corrigidas": {
@@ -7070,6 +7100,6 @@
       "motivo": "borrada segundo a IA de visão (nitidez local 1252)"
     }
   },
-  "totalAcervo": 1279,
-  "ultimaCorrida": "2026-11-09"
+  "totalAcervo": 1285,
+  "ultimaCorrida": "2026-11-10"
 }
