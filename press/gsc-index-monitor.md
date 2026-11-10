@@ -1,14 +1,14 @@
 # GSC — Monitor de Indexação
 
-Gerado em: 2026-11-09T18:11:51.060Z
+Gerado em: 2026-11-10T16:06:10.630Z
 Propriedade: https://blog.finmoovi.com/
 
 ## Resumo
 
-- **851/1154** URLs indexadas
-- **303** não indexadas
-- **0** com erro na inspeção
-- **151** página(s) de conteúdo fora do índice há ≥7 dias
+- **603/1160** URLs indexadas
+- **244** não indexadas
+- **313** com erro na inspeção
+- **117** página(s) de conteúdo fora do índice há ≥7 dias
 
 ## Sitemap
 
@@ -16,10 +16,10 @@ Propriedade: https://blog.finmoovi.com/
 
 ## Por motivo (não indexadas)
 
-- Crawled - currently not indexed: 290
+- Crawled - currently not indexed: 238
 - Duplicate, Google chose different canonical than user: 1
-- Discovered - currently not indexed: 6
-- URL is unknown to Google: 6
+- Discovered - currently not indexed: 3
+- URL is unknown to Google: 2
 
 ## Páginas de conteúdo há mais tempo fora do índice
 
@@ -66,10 +66,10 @@ Propriedade: https://blog.finmoovi.com/
 - `https://blog.finmoovi.com/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet/` — Crawled - currently not indexed (desde 2026-10-19)
 - `https://blog.finmoovi.com/en/posts/en-how-to-build-a-budget-that-actually-works-in-2026/` — Crawled - currently not indexed (desde 2026-10-30)
 - `https://blog.finmoovi.com/en/posts/en-how-to-tame-your-spending-and-find-peace-in-2026/` — Crawled - currently not indexed (desde 2026-10-31)
+- `https://blog.finmoovi.com/en/posts/en-how-to-use-exchange-rates-to-your-advantage-and-avoid-losses/` — Crawled - currently not indexed (desde 2026-11-03)
 - `https://blog.finmoovi.com/en/posts/en-investing-in-dollar-in-brazil/` — Crawled - currently not indexed (desde 2026-09-22)
 - `https://blog.finmoovi.com/en/posts/en-migrating-from-spreadsheets-to-a-financial-app/` — Crawled - currently not indexed (desde 2026-10-26)
 - `https://blog.finmoovi.com/en/posts/en-organizing-finances-as-a-freelancer/` — Crawled - currently not indexed (desde 2026-10-29)
 - `https://blog.finmoovi.com/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide/` — Crawled - currently not indexed (desde 2026-10-16)
 - `https://blog.finmoovi.com/en/posts/en-quotes-semana-1-july-2026/` — Crawled - currently not indexed (desde 2026-10-25)
 - `https://blog.finmoovi.com/en/posts/en-quotes-semana-1-june-2026/` — Crawled - currently not indexed (desde 2026-10-30)
-- `https://blog.finmoovi.com/en/posts/en-quotes-semana-2-july-2026/` — Crawled - currently not indexed (desde 2026-10-25)
