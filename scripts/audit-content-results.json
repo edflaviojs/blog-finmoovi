@@ -63,6 +63,26 @@
     }
   },
   {
+    "file": "es-cotizaciones-semana-2-noviembre-2026.md",
+    "dir": "posts",
+    "severity": 3,
+    "issues": {
+      "currency": 6,
+      "brInstitutions": [],
+      "brProducts": [
+        "CDB",
+        "Selic"
+      ],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "IPCA"
+      ],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-cotizaciones-semana-4-octubre-2026.md",
     "dir": "posts",
     "severity": 3,
@@ -132,6 +152,31 @@
       "brBrands": [],
       "brAcronyms": [],
       "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-quotes-week-2-november-2026.md",
+    "dir": "posts",
+    "severity": 2,
+    "issues": {
+      "currency": 4,
+      "brInstitutions": [],
+      "brProducts": [
+        "CDB",
+        "Selic"
+      ],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "IPCA"
+      ],
+      "ptLeftovers": [
+        "ações",
+        "poupança",
+        "reais",
+        "investimentos"
+      ]
     }
   },
   {
@@ -2322,6 +2367,21 @@
   {
     "file": "en-forgot-to-pay-a-bill-how-to-fix-it-in-2026.md",
     "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-free-zone.md",
+    "dir": "glossario",
     "severity": 0,
     "issues": {
       "currency": 0,
@@ -11126,6 +11186,21 @@
   },
   {
     "file": "es-zona-euro.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-zona-franca.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
