@@ -156,9 +156,15 @@
     ]
   },
   "controle-gastos-com-mil": {
-    "estado": "reservado",
+    "videoId": "dYMFwDVzEnU",
+    "uploadedAt": "2026-11-10T02:09:31.461Z",
     "publishAt": "2026-11-15T22:00:00.000Z",
-    "reservadoEm": "2026-11-10T01:31:09.833Z",
-    "corrida": "42735623820"
+    "titulo": "Controle de gastos com 3 mil de salário sem pedir aumento",
+    "capitulos": 7,
+    "legendas": [
+      "pt",
+      "en",
+      "es"
+    ]
   }
 }

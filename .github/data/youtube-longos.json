@@ -371,7 +371,7 @@
         "gastos fixos e variáveis",
         "sobrar dinheiro no mês"
       ],
-      "estado": "proposto",
+      "estado": "publicado",
       "viralRef": {
         "videoId": "wxCto9WSZcI",
         "title": "COMO SE ESTABLIZAR COM 3 MIL DE SALÁRIO em 2027",
@@ -382,7 +382,9 @@
           "uma palavra em maiúsculas a marcar o tom"
         ]
       },
-      "propostoEm": "2026-11-08T10:54:47.752Z"
+      "propostoEm": "2026-11-08T10:54:47.752Z",
+      "publicadoEm": "2026-11-10T02:09:31.462Z",
+      "videoId": "dYMFwDVzEnU"
     },
     {
       "slug": "reserva-emergencia-antes-proxima",
