@@ -1,0 +1,118 @@
+{
+  "slug": "loop-emprestimo-por-telefone-ta-perdendo",
+  "formato": "loop16",
+  "term": "O empréstimo que o banco ofereceu",
+  "category": "vida",
+  "keyword": "EMPRÉSTIMO",
+  "valor": "R$ 5.000",
+  "situacao": "emprestimo-por-telefone",
+  "gancho": "ta-perdendo",
+  "ganchoFamilia": "tá perdendo",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "areia-movedica",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se você ainda atende esse telefone, tá perdendo dinheiro. Comigo foi ontem.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "atende",
+          "visual": {
+            "type": "statement",
+            "text": "O banco ligou no fim do mês"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "telefone",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "areia-movedica"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Ofereceram cinco mil reais na conta. Eu disse sim, e afundei.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "Ofereceram",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "areia-movedica"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "cinco",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 5.000 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Dinheiro fácil no fim do mês é areia movediça.",
+      "durationSec": 3.26,
+      "shots": [
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro fácil afunda"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "fácil",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "areia-movedica"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Tocou o telefone de novo. Deixei tocar, sem perder dinheiro.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "Tocou",
+          "visual": {
+            "type": "statement",
+            "text": "Tocou de novo. Deixei."
+          }
+        },
+        {
+          "anchor": "telefone",
+          "visual": {
+            "type": "statement",
+            "text": "O banco ligou no fim do mês"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}

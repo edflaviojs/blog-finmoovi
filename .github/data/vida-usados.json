@@ -1084,5 +1084,11 @@
     "gancho": "se-parar",
     "turno": "manha",
     "em": "2026-11-10T12:54:21.286Z"
+  },
+  {
+    "situacao": "emprestimo-por-telefone",
+    "gancho": "ta-perdendo",
+    "turno": "noite",
+    "em": "2026-11-10T13:01:48.526Z"
   }
 ]
