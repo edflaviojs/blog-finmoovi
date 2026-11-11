@@ -6424,6 +6424,21 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-11-10"
+    },
+    "depreciacao-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-11"
+    },
+    "depreciacao-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-11"
+    },
+    "depreciacao.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-11"
     }
   },
   "corrigidas": {
@@ -7100,6 +7115,6 @@
       "motivo": "borrada segundo a IA de visão (nitidez local 1252)"
     }
   },
-  "totalAcervo": 1285,
-  "ultimaCorrida": "2026-11-10"
+  "totalAcervo": 1288,
+  "ultimaCorrida": "2026-11-11"
 }
