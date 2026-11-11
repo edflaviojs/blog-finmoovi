@@ -837,6 +837,36 @@
       "glossaryRef": "economia-de-energia",
       "status": "pending",
       "sourceKeyword": "o que fazer para economizar energia"
+    },
+    {
+      "id": "kw-economize-r-1-000-por-mes",
+      "theme": "Economize R$ 1.000 por mês?",
+      "angle": "Mostro como você pode começar a economizar dinheiro no dia a dia",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "economizar",
+      "status": "pending",
+      "sourceKeyword": "o que significa economizar"
+    },
+    {
+      "id": "kw-3-erros-que-te-impedem-de-guardar-r-1-000-por-mes",
+      "theme": "3 erros que te impedem de guardar R$1.000 por mês",
+      "angle": "Mostra, em situações do dia a dia, três hábitos que sabotam a poupança e como trocá‑los por ações simples para conseguir guardar R$1.000 mensais, usando exemplos reais de gastos com café, transporte e streaming.",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "planejamento-financeiro",
+      "status": "pending",
+      "sourceKeyword": "planejamento para guardar dinheiro"
+    },
+    {
+      "id": "kw-desafio-30-dias-usando-planilha-pra-guardar-r-1-200",
+      "theme": "Desafio: 30 dias usando planilha pra guardar R$1.200",
+      "angle": "Mostro como, em 30 dias, uma planilha simples pode te fazer guardar R$1.200, comparando gastos reais de café, lanche e transporte e mostrando onde cortar sem mudar a vida",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "planilha-para-economizar-dinheiro",
+      "status": "pending",
+      "sourceKeyword": "planilha para economizar dinheiro"
     }
   ]
 }
