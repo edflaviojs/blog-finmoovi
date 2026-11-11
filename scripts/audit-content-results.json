@@ -298,6 +298,23 @@
     }
   },
   {
+    "file": "en-depreciation.md",
+    "dir": "glossario",
+    "severity": 1,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "valor"
+      ]
+    }
+  },
+  {
     "file": "en-digital-bank-vs-major-bank-which-is-worth-it-in-2026.md",
     "dir": "posts",
     "severity": 1,
@@ -8006,6 +8023,21 @@
   },
   {
     "file": "es-debentures.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-depreciacion.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
