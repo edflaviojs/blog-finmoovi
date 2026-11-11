@@ -1096,5 +1096,11 @@
     "gancho": "comeca-assim",
     "turno": "manha",
     "em": "2026-11-11T12:01:08.229Z"
+  },
+  {
+    "situacao": "remedio-todo-mes",
+    "gancho": "nunca-faca",
+    "turno": "noite",
+    "em": "2026-11-11T12:08:22.981Z"
   }
 ]
