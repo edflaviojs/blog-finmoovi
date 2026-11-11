@@ -1,0 +1,215 @@
+{
+  "slug": "kw-3-erros-que-te-impedem-de-guardar-r-1-000-por-mes",
+  "term": "3 erros que te impedem de guardar R$1.000 por mês",
+  "category": "mindset",
+  "keyword": "impede",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você sabe o que te impede de *guardar mil reais* por mês?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "buraco",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você sabe o que te impede de guardar mil reais por mês? Três gastos. O café, o transporte e a assinatura que você esqueceu.",
+      "durationSec": 9.2,
+      "shots": [
+        {
+          "anchor": "impede",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "Três",
+          "visual": {
+            "type": "statement",
+            "text": "3 gastos silenciosos"
+          }
+        },
+        {
+          "anchor": "café",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "assinatura",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Aquele café da padaria toda manhã. O aplicativo quando dá preguiça do ônibus. E o streaming que ninguém abre.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "café",
+          "visual": {
+            "type": "icon",
+            "icon": "coins"
+          }
+        },
+        {
+          "anchor": "aplicativo",
+          "visual": {
+            "type": "icon",
+            "icon": "clock"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "streaming",
+          "visual": {
+            "type": "statement",
+            "text": "Ninguém abre, todo mundo paga"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Só que no fim do mês dá duzentos e quarenta de café, trezentos de aplicativo e cento e sessenta de streaming. Setecentos reais saindo caladinhos.",
+      "durationSec": 9.6,
+      "shots": [
+        {
+          "anchor": "duzentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 240"
+          },
+          "sfx": "click"
+        },
+        {
+          "anchor": "trezentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 300"
+          }
+        },
+        {
+          "anchor": "cento",
+          "visual": {
+            "type": "number",
+            "text": "R$ 160"
+          }
+        },
+        {
+          "anchor": "Setecentos",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 700,
+            "prefix": "R$"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei os três no FinMoovi e ele me mostrou café, aplicativo e streaming lá no topo da lista dos meus gastos.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "smartcapture",
+            "note": "Café, aplicativo e streaming no topo dos gastos"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "streaming",
+          "visual": {
+            "type": "app",
+            "app": "extrato",
+            "note": "Lista de gastos ordenada do maior para o menor"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver os seus? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "O que te impede de guardar mil reais é o gasto pequeno que ninguém confere. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "guardar",
+          "visual": {
+            "type": "statement",
+            "text": "Mil reais por mês"
+          }
+        },
+        {
+          "anchor": "pequeno",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "buraco"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Sem controle, dinheiro dos outros"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Descubra para onde vai seu dinheiro",
+    "target": "app"
+  },
+  "totalDurationSec": 46.9
+}
