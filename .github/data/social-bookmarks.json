@@ -3078,5 +3078,45 @@
         "status": 200
       }
     }
+  },
+  {
+    "slug": "como-parar-de-perder-gastos-no-meio-do-dia-usando-a-voz",
+    "title": "Como parar de perder gastos no meio do dia usando a voz?",
+    "url": "https://blog.finmoovi.com/posts/como-parar-de-perder-gastos-no-meio-do-dia-usando-a-voz",
+    "submittedAt": "2026-11-11T21:40:17.127Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1924490330
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "como-usar-a-formula-price-para-parcelar-compras-sem",
+    "title": "Como usar a fórmula PRICE para parcelar compras sem surpresas em 2026",
+    "url": "https://blog.finmoovi.com/posts/como-usar-a-formula-price-para-parcelar-compras-sem",
+    "submittedAt": "2026-11-11T21:40:17.780Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1924490334
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
   }
 ]
