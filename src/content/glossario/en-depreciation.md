@@ -4,6 +4,7 @@ definition: "What depreciation is and how it shows up in your everyday money —
 title: "depreciation - Financial Glossary"
 description: "What depreciation is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/depreciacao.webp"
+imageAlt: "Gold coins, blue bars, and a green plant on a stand against a purple background."
 category: "basico"
 tags: ["depreciation", "glossary", "finance"]
 author: "FinMoovi"

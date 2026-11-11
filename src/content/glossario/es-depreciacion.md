@@ -4,6 +4,7 @@ definition: "Qué es depreciación y cómo aparece en tu día a día — explica
 title: "depreciación - Glosario Financiero"
 description: "Qué es depreciación y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/depreciacao.webp"
+imageAlt: "Monedas doradas, barras azules y planta verde sobre base metálica con fondo magenta."
 category: "basico"
 tags: ["depreciación", "glosario", "finanzas"]
 author: "FinMoovi"
