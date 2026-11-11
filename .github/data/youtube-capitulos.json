@@ -3461,8 +3461,55 @@
           "titulo": "Corretagem ou catira: qual escolher"
         }
       ]
+    },
+    {
+      "videoId": "-hHZqpZ_sPE",
+      "title": "Planilha de Gastos MORREU! Crie o seu Controle Financeiro no Claude",
+      "channel": "Antonio Bennati | Dados & IA",
+      "duracaoSeg": 1552,
+      "idioma": "pt",
+      "viewsPerDay": 743,
+      "vistoEm": "2026-11-11",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "Intro"
+        },
+        {
+          "seg": 67,
+          "titulo": "Como montar o prompt (método Boris Cherny)"
+        },
+        {
+          "seg": 193,
+          "titulo": "Configurando o projeto: regras, instruções e skills"
+        },
+        {
+          "seg": 489,
+          "titulo": "O prompt e o painel pronto"
+        },
+        {
+          "seg": 758,
+          "titulo": "Previsão de saldo e simulação de cortes"
+        },
+        {
+          "seg": 880,
+          "titulo": "Gastos por categoria e conversa com os dados"
+        },
+        {
+          "seg": 1058,
+          "titulo": "Importando extratos e conectando o Gmail"
+        },
+        {
+          "seg": 1259,
+          "titulo": "Teste real com extratos e relatório por e-mail"
+        },
+        {
+          "seg": 1480,
+          "titulo": "Como baixar os materiais do vídeo"
+        }
+      ]
     }
   ],
-  "atualizadoEm": "2026-11-10T11:57:07.461Z",
-  "total": 63
+  "atualizadoEm": "2026-11-11T11:35:37.954Z",
+  "total": 64
 }
