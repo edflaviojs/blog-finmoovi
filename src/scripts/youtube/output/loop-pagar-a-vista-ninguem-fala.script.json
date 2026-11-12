@@ -1,0 +1,118 @@
+{
+  "slug": "loop-pagar-a-vista-ninguem-fala",
+  "formato": "loop16",
+  "term": "Pagar à vista e pedir desconto",
+  "category": "vida",
+  "keyword": "DESCONTO",
+  "valor": "R$ 150",
+  "situacao": "pagar-a-vista",
+  "gancho": "ninguem-fala",
+  "ganchoFamilia": "ninguém fala",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "duas-portas",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Ninguém fala isso sobre pedir desconto, mas é real. Foi comigo.",
+      "durationSec": 4.08,
+      "shots": [
+        {
+          "anchor": "Ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "Ninguém fala disso"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "pedir",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "duas-portas"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Perguntei baixinho e a moça tirou cento e cinquenta reais na hora.",
+      "durationSec": 4.45,
+      "shots": [
+        {
+          "anchor": "Perguntei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "duas-portas"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "baixinho",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 150 só por perguntar"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Só que eu quase fiquei calado, com vergonha.",
+      "durationSec": 2.97,
+      "shots": [
+        {
+          "anchor": "quase",
+          "visual": {
+            "type": "statement",
+            "text": "Quase fiquei calado"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "fiquei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "duas-portas"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Ninguém fala disso, mas é real. A vergonha custava caro.",
+      "durationSec": 3.71,
+      "shots": [
+        {
+          "anchor": "Ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "A vergonha custava caro"
+          }
+        },
+        {
+          "anchor": "disso",
+          "visual": {
+            "type": "statement",
+            "text": "Ninguém fala disso"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.21
+}

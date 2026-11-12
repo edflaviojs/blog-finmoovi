@@ -1102,5 +1102,11 @@
     "gancho": "nunca-faca",
     "turno": "noite",
     "em": "2026-11-11T12:08:22.981Z"
+  },
+  {
+    "situacao": "pagar-a-vista",
+    "gancho": "ninguem-fala",
+    "turno": "manha",
+    "em": "2026-11-12T13:02:10.140Z"
   }
 ]
