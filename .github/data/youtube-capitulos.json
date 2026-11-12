@@ -3508,8 +3508,67 @@
           "titulo": "Como baixar os materiais do vídeo"
         }
       ]
+    },
+    {
+      "videoId": "g8XjtN9aBRQ",
+      "title": "Como os Pobres Ficam Pobres no Brasil ? (Mecanismo da Pobreza)",
+      "channel": "Desvio Certo",
+      "duracaoSeg": 1138,
+      "idioma": "pt",
+      "viewsPerDay": 22351,
+      "vistoEm": "2026-11-12",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "Faltam 247 reais"
+        },
+        {
+          "seg": 42,
+          "titulo": "Peça 1: um fio só"
+        },
+        {
+          "seg": 175,
+          "titulo": "Peça 2: o juro contra"
+        },
+        {
+          "seg": 383,
+          "titulo": "Peça 3: sem escudo"
+        },
+        {
+          "seg": 465,
+          "titulo": "Peça 4: sem colchão"
+        },
+        {
+          "seg": 660,
+          "titulo": "Peça 5: o imposto na nota"
+        },
+        {
+          "seg": 726,
+          "titulo": "Por que ela não vende a moto?"
+        },
+        {
+          "seg": 808,
+          "titulo": "A aposta: mês 7"
+        },
+        {
+          "seg": 864,
+          "titulo": "Mês 9: os 247 reais"
+        },
+        {
+          "seg": 1002,
+          "titulo": "A conta da subida"
+        },
+        {
+          "seg": 1036,
+          "titulo": "Dava para proteger a Rosa?"
+        },
+        {
+          "seg": 1090,
+          "titulo": "A resposta"
+        }
+      ]
     }
   ],
-  "atualizadoEm": "2026-11-11T11:35:37.954Z",
-  "total": 64
+  "atualizadoEm": "2026-11-12T11:59:14.879Z",
+  "total": 65
 }
