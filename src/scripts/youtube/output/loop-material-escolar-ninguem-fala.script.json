@@ -1,0 +1,118 @@
+{
+  "slug": "loop-material-escolar-ninguem-fala",
+  "formato": "loop16",
+  "term": "O material escolar",
+  "category": "vida",
+  "keyword": "MATERIAL",
+  "valor": "R$ 550",
+  "situacao": "material-escolar",
+  "gancho": "ninguem-fala",
+  "ganchoFamilia": "ninguém fala",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "mochila-pedras",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Ninguém fala isso sobre material escolar, mas é real. Eu estava na papelaria.",
+      "durationSec": 4.7,
+      "shots": [
+        {
+          "anchor": "Ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "Ninguém fala, mas é real"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "material",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Quando a moça somou, quinhentos e cinquenta reais tinham ido embora.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "somou",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "quinhentos",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 550 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Aí eu parei e tirei o que dava pra esperar.",
+      "durationSec": 3.62,
+      "shots": [
+        {
+          "anchor": "parei",
+          "visual": {
+            "type": "statement",
+            "text": "Tirei o que dava pra esperar"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "tirei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Ninguém fala, mas material escolar pesa. É real.",
+      "durationSec": 2.9,
+      "shots": [
+        {
+          "anchor": "Ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "Material pesa. É real."
+          }
+        },
+        {
+          "anchor": "material",
+          "visual": {
+            "type": "statement",
+            "text": "Ninguém fala, mas é real"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
