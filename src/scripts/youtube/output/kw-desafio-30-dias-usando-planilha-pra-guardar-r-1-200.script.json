@@ -1,0 +1,221 @@
+{
+  "slug": "kw-desafio-30-dias-usando-planilha-pra-guardar-r-1-200",
+  "term": "Desafio: 30 dias usando planilha pra guardar R$1.200",
+  "category": "mindset",
+  "keyword": "planilha",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você sabe quanto some do seu bolso por mês em *café, lanche e condução*?"
+  },
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "relogio",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você sabe quanto some do seu bolso por mês em café, lanche e condução? Eu anotei trinta dias numa planilha e levei um susto.",
+      "durationSec": 9.2,
+      "shots": [
+        {
+          "anchor": "some",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "relogio"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "café",
+          "visual": {
+            "type": "statement",
+            "text": "Café + lanche + condução"
+          }
+        },
+        {
+          "anchor": "trinta",
+          "visual": {
+            "type": "statement",
+            "text": "30 dias anotando"
+          }
+        },
+        {
+          "anchor": "susto",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          },
+          "sfx": "alert"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Café de manhã, cinco reais. Lanche à tarde, quinze. Aplicativo pra voltar pra casa, vinte. Todo dia, sem pensar.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "cinco",
+          "visual": {
+            "type": "number",
+            "text": "R$ 5"
+          }
+        },
+        {
+          "anchor": "quinze",
+          "visual": {
+            "type": "number",
+            "text": "R$ 15"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "vinte",
+          "visual": {
+            "type": "number",
+            "text": "R$ 20"
+          }
+        },
+        {
+          "anchor": "Todo",
+          "visual": {
+            "type": "statement",
+            "text": "Todo santo dia"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Só que quarenta reais por dia, em trinta dias, dão mil e duzentos reais. Eu somei e não acreditei.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "quarenta",
+          "visual": {
+            "type": "number",
+            "text": "R$ 40 por dia"
+          }
+        },
+        {
+          "anchor": "trinta",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "relogio"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "duzentos",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 1200,
+            "prefix": "R$"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei a planilha no FinMoovi e ele me mostrou que o lanche ficou em primeiro lugar, quatrocentos e cinquenta reais. Dali dava pra cortar.",
+      "durationSec": 9.6,
+      "shots": [
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "smartcapture",
+            "note": "Planilha importada e gastos organizados por categoria"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "quatrocentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 450"
+          }
+        },
+        {
+          "anchor": "cortar",
+          "visual": {
+            "type": "statement",
+            "text": "Dá pra cortar"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver as suas linhas? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 4.2,
+      "shots": [
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Vai embora mil e duzentos reais por mês e você nem vê. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "embora",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "relogio"
+          }
+        },
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "number",
+            "text": "R$ 1.200 por mês"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Sem controle, é dos outros"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja suas linhas no FinMoovi",
+    "target": "app"
+  },
+  "totalDurationSec": 44.9
+}
