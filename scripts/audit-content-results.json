@@ -1,5 +1,28 @@
 [
   {
+    "file": "en-equity.md",
+    "dir": "glossario",
+    "severity": 3,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 5,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "ações",
+        "ação",
+        "dívida",
+        "dívidas",
+        "poupança",
+        "investimentos",
+        "valor"
+      ]
+    }
+  },
+  {
     "file": "en-quotes-week-1-november-2026.md",
     "dir": "posts",
     "severity": 3,
@@ -3162,6 +3185,21 @@
     }
   },
   {
+    "file": "en-how-to-stop-losing-track-of-daily-expenses-using-your-voice.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-how-to-stop-outstanding-balances-from-sabotaging-your-budget.md",
     "dir": "posts",
     "severity": 0,
@@ -3403,6 +3441,21 @@
   },
   {
     "file": "en-how-to-use-spreadsheets-to-track-expenses-2026.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-how-to-use-the-price-formula-to-split-purchases-without.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -7077,6 +7130,21 @@
     }
   },
   {
+    "file": "es-como-evitar-perder-gastos-durante-el-dia-usando-la-voz.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no.md",
     "dir": "posts",
     "severity": 0,
@@ -7588,6 +7656,21 @@
   },
   {
     "file": "es-como-usar-la-calculadora-sac-o-price-para-organizar-tu.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-como-usar-la-formula-price-para-fraccionar-compras-sin.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -8384,6 +8467,21 @@
   {
     "file": "es-entiende-que-es-el-saldo-pendiente-y-como-evitarlo.md",
     "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-equity.md",
+    "dir": "glossario",
     "severity": 0,
     "issues": {
       "currency": 0,
