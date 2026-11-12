@@ -19,7 +19,7 @@ seo:
   keywords: ["registro de gastos","captura por voz","FinMoovi","control financiero","organización de gastos","automatización de finanzas","app financiera","anotar gastos","control diario","registro por voz","gestión de gastos","finmoovi","finanzas personales"]
 ---
 
-¿Acabas de salir del trabajo con la sensación de que el día ha sido demasiado ajetreado? En el camino de vuelta al coche compras un snack rápido, llenas el tanque y aún tienes que tomar el autobús para llegar a casa a tiempo de preparar la cena. Cuando abres la cartera te das cuenta de que ya has gastado lo equivalente a dos comidas, pero no sabes exactamente cuánto ni en qué se ha ido cada centavo. Ese desorden mental es más común de lo que imaginas: ¿quién nunca salió de casa con la buena intención de anotar todo y terminó olvidando algún gasto importante?
+¿Acabas de salir del trabajo con la sensación de que el día ha sido demasiado ajetreado? En el camino de vuelta al coche compras un snack rápido, llenas el tanque y aún tienes que tomar el autobús para llegar a casa a tiempo de preparar la cena. Cuando abres la cartera te das cuenta de que ya has gastado lo equivalente a dos comidas, pero no sabes exactamente cuánto ni en qué se ha ido cada centavo. Ese desorden mental es más común de lo que imaginas: ¿quién nunca salió de casa con la buena intención de anotar todo y terminó olvidando algún [gasto](/es/glossario/es-gasto) importante?
 
 La verdad es que, entre reuniones, tráfico, hijos y mil tareas cotidianas, no tenemos tiempo ni paciencia para abrir una hoja de cálculo, teclear cada cifra o garabatear en un papel. ¿El resultado? Gastos “invisibles” que aparecen al final del mes, desestabilizando el presupuesto y generando ansiedad. Si te ha pasado, te entiendo. Y la buena noticia es que hay una forma de transformar ese caos en organización usando solo tu voz.
 
@@ -30,7 +30,7 @@ La verdad es que, entre reuniones, tráfico, hijos y mil tareas cotidianas, no t
 - **Errores de transcripción**: al copiar números a mano es fácil cambiar un “5” por un “6” y distorsionar el presupuesto.  
 - **Desmotivación**: la sensación de “una tarea más” nos lleva a postergar el registro, acumulando gastos y provocando sorpresas al cerrar el mes.
 
-Según el *World Bank*, más del 30 % de los hogares en economías avanzadas reportan dificultades para monitorear sus gastos cotidianos, lo que impacta directamente su capacidad de ahorro. La solución debe ser rápida, práctica y casi automática.
+Según el *World Bank*, más del 30 % de los hogares en economías avanzadas reportan dificultades para monitorear sus gastos cotidianos, lo que impacta directamente su capacidad de [ahorro](/es/glossario/es-ahorro). La solución debe ser rápida, práctica y casi automática.
 
 ## Smart Capture por voz: la herramienta esencial de FinMoovi
 
@@ -44,7 +44,7 @@ La aplicación reconoce la voz, identifica los valores y, en pocos segundos, reg
 
 ### Cómo funciona en la práctica (paso a paso)
 
-1. **Abre FinMoovi** – la pantalla inicial ya muestra el botón de captura por voz en la esquina inferior.  
+1. **Abre FinMoovi** – la pantalla inicial ya muestra el botón de [captura por voz](/es/posts/es-captura-inteligente-por-voz-registra-tus-gastos-en-segundos) en la esquina inferior.  
 2. **Pulsa el micrófono** – la app pide permiso para acceder al audio (solo una vez).  
 3. **Habla claramente** – usa el formato “Categoría, valor” o “Descripción, valor”. Ejemplo: “Almuerzo, €20”.  
 4. **Confirma** – FinMoovi muestra una vista previa; solo toca “Guardar”.  
@@ -59,7 +59,7 @@ Todo el proceso lleva menos de 30 segundos, incluso si no estás acostumbrado 
 | Anotaciones en papel o hojas, riesgo de pérdida o error de digitación | Registro instantáneo por voz, sin riesgo de error manual |
 | Gastos “olvidados” que aparecen solo al final del mes | Visión en tiempo real de los gastos, evitando sorpresas |
 | 5‑10 minutos perdidos al día | Ahorro de 5‑7 minutos diarios, que puedes dedicar a otras actividades |
-| Dificultad para categorizar gastos | Categorización automática basada en palabras clave (snack → alimentación) |
+| Dificultad para categorizar gastos | [Categorización automática](/es/posts/es-categorizacion-automatica-de-gastos-con-ia-ordena-tus) basada en palabras clave (snack → alimentación) |
 | Estrés al cerrar el presupuesto mensual | Tranquilidad al seguir metas diarias y mensuales |
 
 ## Datos que respaldan la automatización
@@ -79,7 +79,7 @@ Estos números demuestran que, al delegar la tarea de registrar gastos a la inte
 
 ## Por qué esto brinda paz mental
 
-Tener control total de los gastos en tiempo real elimina la sensación de “no sé a dónde se fue mi dinero”. Ahora ves visualmente cuánto consume cada categoría y puedes actuar de inmediato – ya sea reduciendo la cantidad de snacks o ajustando el consumo de combustible. Esta claridad transforma la ansiedad en acción, permitiéndote alcanzar metas como crear un fondo de emergencia o pagar una deuda sin depender de hojas de cálculo complicadas.
+Tener control total de los gastos en tiempo real elimina la sensación de “no sé a dónde se fue mi dinero”. Ahora ves visualmente cuánto consume cada categoría y puedes actuar de inmediato – ya sea reduciendo la cantidad de snacks o ajustando el consumo de combustible. Esta claridad transforma la ansiedad en acción, permitiéndote alcanzar metas como crear un [fondo de emergencia](/es/glossario/es-fondo-de-emergencia) o pagar una [deuda](/es/glossario/es-deuda) sin depender de hojas de cálculo complicadas.
 
 ![Por qué esto brinda paz mental](/images/posts/como-parar-de-perder-gastos-no-meio-do-dia-usando-a-voz-6.webp)
 
@@ -87,7 +87,7 @@ Tener control total de los gastos en tiempo real elimina la sensación de “no 
 
 1. Descarga FinMoovi (disponible para Android e iOS).  
 2. Crea tu cuenta en menos de un minuto.  
-3. Activa la función “Smart Capture por voz”.  
+3. Activa la función “[Smart Capture](/es/posts/es-como-evitar-perder-la-fecha-de-pago-de-tus-facturas-y-no) por voz”.  
 4. En tu próxima compra, registra todo hablando a la app.
 
 En menos de cinco minutos tendrás tu primer registro automático y verás el resumen en el panel. Así de simple.
@@ -100,7 +100,7 @@ El algoritmo de reconocimiento de voz se entrenó con variaciones de pronunciaci
 La app muestra la transcripción antes de guardar, permitiéndote corregir rápidamente cualquier error antes de confirmar.
 
 ### ¿Puedo usar la captura por voz sin conexión?
-Sí, FinMoovi dispone de modo offline que almacena temporalmente los registros y los sincroniza cuando haya conexión.
+Sí, FinMoovi dispone de [modo offline](/es/posts/es-cansado-de-perder-horas-en-hojas-de-calculo-asi-finmoovi-lo) que almacena temporalmente los registros y los sincroniza cuando haya conexión.
 
 ### ¿Son seguros los datos de mis gastos?
 Toda la información está cifrada en tránsito y almacenada en servidores seguros, cumpliendo con estándares internacionales de privacidad.

@@ -19,7 +19,7 @@ seo:
   keywords: ["expense logging","voice capture","FinMoovi","financial control","spending organization","finance automation","money app","record purchases","daily tracking","voice entry","expense management","personal finance"]
 ---
 
-You’ve just left work, still feeling like the day rushed by. On the way home you grab a quick snack, fill up the tank, and then catch the bus to make it home in time to start dinner. When you open your wallet you realize you’ve already spent the equivalent of two meals, but you have no idea exactly how much or where every cent went. This mental clutter is more common than you think: who hasn’t left the house intending to write everything down, only to forget a key expense?
+You’ve just left work, still feeling like the day rushed by. On the way home you grab a quick snack, fill up the tank, and then catch the bus to make it home in time to start dinner. When you open your wallet you realize you’ve already spent the equivalent of two meals, but you have no idea exactly how much or where every cent went. This mental clutter is more common than you think: who hasn’t left the house intending to write everything down, only to forget a key [expense](/en/glossario/en-expense)?
 
 The truth is, between meetings, traffic, kids and a thousand daily tasks, we don’t have the time or patience to open a spreadsheet, type each amount, or scribble on a piece of paper. The result? “Invisible” expenses that pop up at month‑end, wrecking the budget and causing anxiety. If you’ve felt this way, I get you. The good news is there’s a way to turn that chaos into order using just your voice.
 
@@ -59,8 +59,8 @@ The whole process takes less than 30 seconds, even for those who don’t norma
 | Paper notes or spreadsheets, risk of loss or typo | Instant voice logging, no manual errors |
 | “Forgotten” expenses that appear only at month‑end | Real‑time view of spending, no surprises |
 | 5‑10 minutes wasted each day | Save 5‑7 minutes daily for other activities |
-| Trouble categorizing expenses | Automatic categorization based on keywords (snack → food) |
-| Stress closing the monthly budget | Calmly track daily and monthly goals |
+| Trouble categorizing expenses | [Automatic categorization](/en/posts/en-automatic-expense-categorization-with-ai-keep-your-finances) based on keywords (snack → food) |
+| Stress closing the monthly budget | Calmly track daily and [monthly goals](/en/posts/en-how-freelancers-can-organize-their-finances-in-2026) |
 
 ## Data Supporting Automation
 
@@ -74,12 +74,12 @@ These numbers show that delegating expense logging to FinMoovi’s intelligence 
 
 1. **Keep phrases short and direct** – “Coffee, $2.5” works better than “I paid for a coffee that cost about two dollars and fifty cents.”  
 2. **Speak in a quiet setting** – traffic noise can interfere with recognition.  
-3. **Leverage automatic categorization** – mentioning keywords like “supermarket,” “electric bill,” automatically routes the entry to the right group.  
+3. **[Leverage](/en/glossario/en-leverage) [automatic categorization](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end)** – mentioning keywords like “supermarket,” “electric bill,” automatically routes the entry to the right group.  
 4. **Review weekly** – open the weekly report to tweak goals and spot spending patterns.
 
 ## Why This Brings Peace of Mind
 
-Having total, real‑time control over your spending eliminates the “I have no idea where my money went” feeling. You can visually see how each category consumes your budget and act immediately – whether that means cutting back on snacks or adjusting fuel consumption. This clarity turns anxiety into action, helping you reach goals like building an emergency fund or paying down debt without complex spreadsheets.
+Having total, real‑time control over your spending eliminates the “I have no idea where my money went” feeling. You can visually see how each category consumes your budget and act immediately – whether that means cutting back on snacks or adjusting fuel consumption. This clarity turns anxiety into action, helping you reach goals like building an [emergency fund](/en/glossario/en-emergency-fund) or paying down [debt](/en/glossario/en-debt) without complex spreadsheets.
 
 ![Peace of mind](/images/posts/como-parar-de-perder-gastos-no-meio-do-dia-usando-a-voz-6.webp)
 
@@ -100,7 +100,7 @@ The voice‑recognition algorithm was trained on a wide range of pronunciations,
 **What if I say something wrong?**  
 The app shows the transcription before saving, letting you correct any mistake quickly.  
 
-**Can I use voice capture offline?**  
+**Can I use [voice capture](/en/posts/en-forgot-to-pay-a-bill-how-to-fix-it-in-2026) offline?**  
 Yes, FinMoovi offers an offline mode that stores entries temporarily and syncs once you’re back online.  
 
 **Are my expense data secure?**  

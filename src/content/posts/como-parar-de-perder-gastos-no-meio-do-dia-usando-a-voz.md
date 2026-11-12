@@ -46,11 +46,11 @@ O aplicativo reconhece a fala, identifica os valores e, em poucos segundos, regi
 
 ### Como funciona na prática (passo a passo)
 
-1. **Abra o FinMoovi** – a tela inicial já exibe o botão de captura por voz no canto inferior.
+1. **Abra o FinMoovi** – a tela inicial já exibe o botão de [captura por voz](/posts/como-acompanhar-o-progresso-das-suas-metas-financeiras-sem) no canto inferior.
 2. **Pressione o microfone** – o app pede permissão para acessar o áudio (uma única vez).
 3. **Fale claramente** – use o formato “Categoria, valor” ou “Descrição, valor”. Exemplo: “Almoço, 20 reais”.
 4. **Confirme** – o FinMoovi mostra uma pré‑visualização; basta tocar em “Salvar”.
-5. **Veja o resumo** – o painel de relatórios atualiza automaticamente, exibindo o total diário, semanal e comparativo com a meta.
+5. **Veja o resumo** – o painel de relatórios atualiza automaticamente, exibindo o total diário, semanal e [comparativo](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026) com a meta.
 
 Todo o processo leva menos de 30 segundos, mesmo para quem não tem costume de usar assistentes de voz.
 
@@ -60,8 +60,8 @@ Todo o processo leva menos de 30 segundos, mesmo para quem não tem costume de
 |------------------------------|------------------------------|
 | Anotações em papel ou planilhas, risco de perda ou erro de digitação | Registro instantâneo por voz, sem risco de erro manual |
 | Gastos “esquecidos” que aparecem só no fim do mês | Visão em tempo real dos gastos, evitando surpresas |
-| Tempo desperdiçado em 5‑10 minutos por dia | Economia de 5‑7 minutos diários, que podem ser usados em outras atividades |
-| Dificuldade para categorizar despesas | Categorização automática baseada em palavras‑chave (lanche → alimentação) |
+| Tempo desperdiçado em 5‑10 minutos por dia | [Economia](/glossario/economia) de 5‑7 minutos diários, que podem ser usados em outras atividades |
+| Dificuldade para categorizar despesas | [Categorização automática](/posts/categorizacao-automatica-de-gastos-com-ia-como-deixar-suas) baseada em palavras‑chave (lanche → alimentação) |
 | Stress ao fechar o orçamento mensal | Tranquilidade ao acompanhar metas diárias e mensais |
 
 ## Dados que dão respaldo à automação
@@ -83,7 +83,7 @@ Esses números mostram que, ao delegar a tarefa de registrar despesas para a int
 
 ## Por que isso traz paz mental
 
-Ter o controle total dos gastos em tempo real elimina a sensação de “não sei onde meu dinheiro foi”. Você passa a ver, de forma visual, quanto cada categoria consome e pode agir imediatamente – seja reduzindo o número de lanches ou ajustando o consumo de combustível. Essa clareza transforma a ansiedade em ação, permitindo que você alcance metas como montar uma reserva de emergência ou pagar uma dívida sem precisar de planilhas complicadas.
+Ter o controle total dos gastos em tempo real elimina a sensação de “não sei onde meu dinheiro foi”. Você passa a ver, de forma visual, quanto cada categoria consome e pode agir imediatamente – seja reduzindo o número de lanches ou ajustando o consumo de combustível. Essa clareza transforma a ansiedade em ação, permitindo que você alcance metas como montar uma [reserva de emergência](/ferramentas/calculadora-reserva) ou pagar uma [dívida](/glossario/divida) sem precisar de planilhas complicadas.
 
 ![Por que isso traz paz mental](/images/posts/como-parar-de-perder-gastos-no-meio-do-dia-usando-a-voz-6.webp)
 
@@ -93,7 +93,7 @@ Ter o controle total dos gastos em tempo real elimina a sensação de “não se
 
 1. Baixe o FinMoovi (disponível para Android e iOS).
 2. Crie sua conta em menos de um minuto.
-3. Ative a função “Smart Capture por voz”.
+3. Ative a função “[Smart Capture](/posts/como-evitar-perder-o-prazo-das-contas-e-acabar-no-aperto) por voz”.
 4. Na próxima compra, registre tudo falando ao app.
 
 Em menos de cinco minutos você já terá seu primeiro registro automático e verá o resumo no painel. Simples assim.
@@ -106,7 +106,7 @@ O algoritmo de reconhecimento de voz foi treinado com variações de pronúncia 
 O app exibe a transcrição antes de salvar, permitindo que você corrija rapidamente qualquer erro antes de confirmar.
 
 ### Posso usar a captura por voz offline?
-Sim, o FinMoovi possui modo offline que armazena temporariamente os registros e sincroniza assim que houver conexão.
+Sim, o FinMoovi possui [modo offline](/posts/cansado-de-perder-horas-nas-planilhas-como-o-finmoovi) que armazena temporariamente os registros e sincroniza assim que houver conexão.
 
 ### Os dados das minhas despesas são seguros?
 Todas as informações são criptografadas em trânsito e armazenadas em servidores seguros, seguindo padrões de privacidade internacionais.
