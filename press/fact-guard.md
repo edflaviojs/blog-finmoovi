@@ -1,7 +1,7 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-11-11T12:25:06.895Z
-**Posts:** 585 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 24
+**Gerado em:** 2026-11-12T13:31:07.844Z
+**Posts:** 591 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 26
 
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
@@ -28,6 +28,10 @@
 **como-manter-sua-planilha-de-gastos-sempre-atualizada-sem.md**
 - _- Segundo a Investopedia, **a falta de registro diário pode levar a desvios de até 30 %** entre o orçamento planejado e o gasto real._
 
+**como-parar-de-perder-gastos-no-meio-do-dia-usando-a-voz.md**
+- _Segundo a *World Bank*, mais de 30 % das famílias em economias avançadas relataram dificuldades para monitorar gastos cotidianos, o que impacta diretamente a capacidade de poupar._
+- _- Segundo a *Investopedia*, o uso de tecnologia de reconhecimento de voz tem taxa de acurácia acima de 95 % quando o ambiente está relativamente silencioso, o que garante confiabilidade nos registros _
+
 **como-saber-se-sua-meta-de-economia-esta-realmente-avancando.md**
 - _Segundo a *World Bank*, a maioria das famílias que não tem um acompanhamento visual claro dos seus objetivos financeiros tende a postergar investimentos de médio prazo em até 30 %._
 
@@ -51,6 +55,9 @@
 
 **en-how-to-spot-and-cut-recurring-expenses-that-drain-your.md**
 - _According to the OECD, families that regularly track their spending are up to 15 % more likely to hit emergency‑fund goals._
+
+**en-how-to-stop-losing-track-of-daily-expenses-using-your-voice.md**
+- _According to the *World Bank*, more than 30 % of households in advanced economies report difficulty tracking everyday spending, which directly hampers their ability to save._
 
 **en-how-to-track-your-financial-goals-without-spreadsheets-in.md**
 - _According to the *World Bank*, 56 % of households that don’t monitor their spending are more likely to face unexpected financial emergencies._
