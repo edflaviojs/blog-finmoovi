@@ -3,6 +3,7 @@ title: "¿Cómo evitar perder gastos durante el día usando la voz?"
 description: "Registra tus gastos al instante con la captura por voz de FinMoovi y controla tus finanzas en segundos."
 tickerHeadline: "Tu voz, tu registro"
 image: "/images/posts/como-parar-de-perder-gastos-no-meio-do-dia-usando-a-voz.webp"
+imageAlt: "Tres mujeres sonríen revisando documentos y una tableta en una mesa con taza verde."
 category: "ferramentas"
 locale: "es"
 tags: ["registro de gastos","captura por voz","FinMoovi","control financiero","organización de gastos","automatización de finanzas","app financiera","anotar gastos","control diario","registro por voz","gestión de gastos","finmoovi","finanzas personales"]

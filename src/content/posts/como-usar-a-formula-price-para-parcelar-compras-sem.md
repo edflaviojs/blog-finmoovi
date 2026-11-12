@@ -3,6 +3,7 @@ title: "Como usar a fórmula PRICE para parcelar compras sem surpresas em 2026"
 description: "Descubra passo a passo como calcular parcelas com a fórmula PRICE e evitar dívidas, usando o FinMoovi para simplificar tudo em poucos minutos."
 tickerHeadline: "A fórmula que protege seu bolso"
 image: "/images/posts/como-usar-a-formula-price-para-parcelar-compras-sem.webp"
+imageAlt: "Casal sorrindo com tablet e canecas, em ambiente claro com plantas."
 category: "investimentos"
 locale: "pt"
 tags: ["calculadora price","parcelamento","fórmula price","controle de parcelas","FinMoovi","planejamento financeiro","calculadora parcelamento price"]

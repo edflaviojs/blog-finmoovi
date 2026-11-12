@@ -3,6 +3,7 @@ title: "How to Stop Losing Track of Daily Expenses Using Your Voice"
 description: "Learn how FinMoovi’s voice capture lets you log purchases instantly and stay in control of your money in seconds."
 tickerHeadline: "Your voice, your log"
 image: "/images/posts/como-parar-de-perder-gastos-no-meio-do-dia-usando-a-voz.webp"
+imageAlt: "Three women reviewing papers and a tablet at a table with a green mug."
 category: "ferramentas"
 locale: "en"
 tags: ["expense logging","voice capture","FinMoovi","financial control","spending organization","finance automation","money app","record purchases","daily tracking","voice entry","expense management","personal finance"]

@@ -3,6 +3,7 @@ title: "How to Use the PRICE Formula to Split Purchases Without Surprises in 202
 description: "Learn step‑by‑step how to calculate monthly installments with the PRICE formula and avoid debt, using FinMoovi’s calculator in minutes."
 tickerHeadline: "The formula that protects your wallet"
 image: "/images/posts/como-usar-a-formula-price-para-parcelar-compras-sem.webp"
+imageAlt: "Smiling man in scarf and woman in orange sweater share a tablet by window."
 category: "investimentos"
 locale: "en"
 tags: ["PRICE calculator","installment planning","PRICE formula","control installments","FinMoovi","personal finance","installment calculator"]

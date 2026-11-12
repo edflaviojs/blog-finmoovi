@@ -4,6 +4,7 @@ definition: "Qué es equity y cómo aparece en tu día a día — explicado de f
 title: "equity - Glosario Financiero"
 description: "Qué es equity y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/equity.webp"
+imageAlt: "Monedas doradas en frascos con plantas, gráfico de barras y reloj sobre fondo oscuro."
 category: "basico"
 tags: ["equity", "glosario", "finanzas"]
 author: "FinMoovi"

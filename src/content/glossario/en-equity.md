@@ -4,6 +4,7 @@ definition: "What equity is and how it shows up in your everyday money — expla
 title: "equity - Financial Glossary"
 description: "What equity is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/equity.webp"
+imageAlt: "Glass jars with coins and plants beside a clock and bar chart."
 category: "basico"
 tags: ["equity", "glossary", "finance"]
 author: "FinMoovi"

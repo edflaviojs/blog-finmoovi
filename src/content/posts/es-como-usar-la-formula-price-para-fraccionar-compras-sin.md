@@ -3,6 +3,7 @@ title: "Cómo usar la fórmula PRICE para fraccionar compras sin sorpresas en 20
 description: "Aprende paso a paso a calcular cuotas con la fórmula PRICE y evita deudas usando FinMoovi en pocos minutos."
 tickerHeadline: "La fórmula que protege tu bolsillo"
 image: "/images/posts/como-usar-a-formula-price-para-parcelar-compras-sem.webp"
+imageAlt: "Pareja sonriente con tablet y taza junto a ventana iluminada."
 category: "investimentos"
 locale: "es"
 tags: ["calculadora price","fraccionamiento","fórmula price","control de cuotas","FinMoovi","planificación financiera","calculadora de cuotas price"]
