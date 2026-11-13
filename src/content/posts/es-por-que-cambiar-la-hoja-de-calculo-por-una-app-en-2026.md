@@ -3,6 +3,7 @@ title: "¿Por qué cambiar la hoja de cálculo por una app en 2026? Ventajas rea
 description: "Descubre cuándo dejar la hoja de cálculo y pasar a una app de finanzas. Checklist, datos y FinMoovi en foco."
 tickerHeadline: "La hoja que te abandona"
 image: "/images/posts/por-que-trocar-a-planilha-por-um-app-em-2026-vantagens-reais.webp"
+imageAlt: "Cartera marrón, calculadora, monedas y plantas sobre superficie blanca."
 category: "ferramentas"
 locale: "es"
 tags: ["hoja de cálculo financiera","app de finanzas 2026","FinMoovi","automatización de gastos","control de gastos","checklist hoja vs app","sustituir hoja","app mejor que excel","cambiar hoja por app"]

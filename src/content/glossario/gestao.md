@@ -4,6 +4,7 @@ definition: "O que é gestão e como isso aparece no seu dia a dia — explicado
 title: "gestão - Glossário Financeiro"
 description: "O que é gestão e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/gestao.webp"
+imageAlt: "Pilhas de moedas douradas, cofres e vaso com planta sobre fundo escuro."
 category: "basico"
 tags: ["gestão", "glossário", "finanças"]
 author: "FinMoovi"

@@ -3,6 +3,7 @@ title: "Por que trocar a planilha por um app em 2026: vantagens reais e quando m
 description: "Descubra quando deixar a planilha de lado e adotar um app de finanças. Checklist, dados e o FinMoovi em foco."
 tickerHeadline: "A planilha que te abandona"
 image: "/images/posts/por-que-trocar-a-planilha-por-um-app-em-2026-vantagens-reais.webp"
+imageAlt: "Caderno marrom, calculadora preta, moedas e plantas verdes sobre superfície branca."
 category: "ferramentas"
 locale: "pt"
 tags: ["planilha financeira","app de finanças 2026","FinMoovi","automação de gastos","controle de despesas","checklist planilha vs app","substituir planilha","app melhor que excel","trocar planilha app"]

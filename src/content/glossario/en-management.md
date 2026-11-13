@@ -4,6 +4,7 @@ definition: "What management is and how it shows up in your everyday money — e
 title: "management - Financial Glossary"
 description: "What management is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/gestao.webp"
+imageAlt: "Gold coins, safes, and a growing plant in a glass jar."
 category: "basico"
 tags: ["management", "glossary", "finance"]
 author: "FinMoovi"
