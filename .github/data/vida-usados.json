@@ -1120,5 +1120,11 @@
     "gancho": "nao-vai-acreditar",
     "turno": "manha",
     "em": "2026-11-13T12:29:06.540Z"
+  },
+  {
+    "situacao": "gas-acabou",
+    "gancho": "se-parar",
+    "turno": "noite",
+    "em": "2026-11-13T12:37:55.711Z"
   }
 ]

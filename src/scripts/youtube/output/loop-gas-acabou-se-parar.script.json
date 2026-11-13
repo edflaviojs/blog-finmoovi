@@ -1,0 +1,118 @@
+{
+  "slug": "loop-gas-acabou-se-parar",
+  "formato": "loop16",
+  "term": "O gás que acabou",
+  "category": "vida",
+  "keyword": "GÁS",
+  "valor": "R$ 130",
+  "situacao": "gas-acabou",
+  "gancho": "se-parar",
+  "ganchoFamilia": "e se parar",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "escorregao",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "O que acontece se você parar de olhar o gás? Comigo foi domingo.",
+      "durationSec": 4.7,
+      "shots": [
+        {
+          "anchor": "acontece",
+          "visual": {
+            "type": "statement",
+            "text": "O gás acabou no almoço"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "parar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escorregao"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Acabou no feijão cru. Corri, paguei cento e trinta reais no botijão.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "Acabou",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escorregao"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "feijão",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 130 às pressas"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Olha, o gás não avisa.",
+      "durationSec": 1.81,
+      "shots": [
+        {
+          "anchor": "avisa",
+          "visual": {
+            "type": "statement",
+            "text": "O gás não avisa"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "avisa",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escorregao"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Hoje eu olho o gás toda semana, pra não parar no domingo.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "semana",
+          "visual": {
+            "type": "statement",
+            "text": "Olhar o gás sempre"
+          }
+        },
+        {
+          "anchor": "parar",
+          "visual": {
+            "type": "statement",
+            "text": "O gás acabou no almoço"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.19
+}
