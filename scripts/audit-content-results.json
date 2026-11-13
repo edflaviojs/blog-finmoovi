@@ -574,6 +574,23 @@
     }
   },
   {
+    "file": "en-why-switch-from-a-spreadsheet-to-an-app-in-2026-real.md",
+    "dir": "posts",
+    "severity": 1,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "reais"
+      ]
+    }
+  },
+  {
     "file": "es-banco-digital-a-vs-banco-digital-b-cual-elegir-en-2026.md",
     "dir": "posts",
     "severity": 1,
@@ -706,6 +723,23 @@
       "brAcronyms": [],
       "ptLeftovers": [
         "investimentos"
+      ]
+    }
+  },
+  {
+    "file": "es-por-que-cambiar-la-hoja-de-calculo-por-una-app-en-2026.md",
+    "dir": "posts",
+    "severity": 1,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": [
+        "reais"
       ]
     }
   },
@@ -3831,6 +3865,21 @@
   },
   {
     "file": "en-long.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-management.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -8962,6 +9011,21 @@
   {
     "file": "es-gestion-inteligente-del-agua-en-casa-consejos-practicos-para.md",
     "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-gestion.md",
+    "dir": "glossario",
     "severity": 0,
     "issues": {
       "currency": 0,
