@@ -18,11 +18,11 @@ seo:
   keywords: ["Navidad sin deudas","planificación financiera","FinMoovi","compras de fin de año","control de gastos","presupuesto navideño","consejos prácticos","Navidad","deudas"]
 ---
 
-Imagina la escena: es víspera de Navidad, la casa huele a pavo, el árbol brilla con luces parpadeantes y, al abrir la factura de la luz, la tarjeta de crédito se ilumina en rojo. Al cerrar la cuenta del supermercado, el saldo de la cuenta bancaria ya está al límite y aún falta comprar ese regalo especial que tu familia pidió hace semanas. El corazón late más rápido, la ansiedad golpea fuerte y sientes el peso de un futuro financiero incierto.  
+Imagina la escena: es víspera de Navidad, la casa huele a pavo, el árbol brilla con luces parpadeantes y, al abrir la factura de la luz, la tarjeta de [crédito](/es/glossario/es-credito) se ilumina en rojo. Al cerrar la cuenta del supermercado, el saldo de la cuenta bancaria ya está al límite y aún falta comprar ese regalo especial que tu familia pidió hace semanas. El corazón late más rápido, la ansiedad golpea fuerte y sientes el peso de un futuro financiero incierto.  
 
 Esta situación no tiene por qué ser tu realidad. Lo que ocurre es que, sin un plan claro, los gastos de fin de año se acumulan como nieve en un tejado: cuanto más pasa el tiempo, más pesado se vuelve. La buena noticia es que, con algunos pasos sencillos y la ayuda de **FinMoovi**, puedes transformar ese caos en tranquilidad, sin renunciar a las celebraciones.  
 
-> **Micro‑acción de 5 min:** Abre FinMoovi, toma una foto de tu última factura del supermercado (o usa la captura por voz) y verás el gasto automáticamente categorizado. Luego, márcalo como “Navidad”. Listo, ya tienes el primer registro de tu presupuesto navideño.  
+> **Micro‑acción de 5 min:** Abre FinMoovi, toma una foto de tu última factura del supermercado (o usa la [captura por voz](/es/posts/es-captura-inteligente-por-voz-registra-tus-gastos-en-segundos)) y verás el [gasto](/es/glossario/es-gasto) automáticamente categorizado. Luego, márcalo como “Navidad”. Listo, ya tienes el primer registro de tu presupuesto navideño.  
 
 ---  
 
@@ -56,7 +56,7 @@ Los descuentos son geniales, pero solo si realmente necesitabas ese artículo.
 - **Calendario de promociones**: usa la función de **Recordatorios** de FinMoovi para que te avise cuando tus tiendas favoritas entren en oferta (Black Friday, Cyber Monday, etc.).  
 - **Cashback inteligente**: elige tarjetas que devuelvan parte del gasto y registra la factura en FinMoovi. La app calcula el retorno y muestra cuánto reduce el costo real del regalo.  
 
-Consejo: si el cashback equivale a **un café diario**, considera ese valor como “dinero de vuelta” y reinviértelo en otro regalo o en tu fondo de emergencia.  
+Consejo: si el cashback equivale a **un café diario**, considera ese valor como “dinero de vuelta” y reinviértelo en otro regalo o en tu [fondo de emergencia](/es/glossario/es-fondo-de-emergencia).  
 
 ---  
 
@@ -66,7 +66,7 @@ Es habitual que, durante la Navidad, surjan cargos inesperados: suscripción a s
 
 ![4. Controla los gastos recurrentes que aparecen en fin de año](/images/posts/natal-sem-dividas-7-passos-praticos-para-curtir-as-festas-em-4.webp)  
 
-- **Captura automática**: toma foto de la factura o usa la captura por voz en FinMoovi. La app categoriza todo bajo “Gastos recurrentes Navidad”.  
+- **Captura automática**: toma foto de la factura o usa la [captura por voz](/es/posts/es-como-evitar-perder-gastos-durante-el-dia-usando-la-voz) en FinMoovi. La app categoriza todo bajo “Gastos recurrentes Navidad”.  
 - **Alertas de saldo**: activa notificaciones para que te avisen cuando un gasto supere el límite que definiste.  
 
 Con este seguimiento, evitas que pequeños gastos “invisibles” drenen tu presupuesto.  
@@ -77,7 +77,7 @@ Con este seguimiento, evitas que pequeños gastos “invisibles” drenen tu pre
 
 Aunque planifiques al máximo, los imprevistos aparecen: un regalo que se rompe, una invitación de última hora o un aumento inesperado en la factura de energía por las luces.  
 
-- **Meta de reserva**: en FinMoovi, crea una meta llamada “Reserva de Navidad”. Define un objetivo de, al menos, **aproximadamente un alquiler** (unos €600‑€800, según tu zona).  
+- **Meta de reserva**: en FinMoovi, crea una meta llamada “Reserva de Navidad”. Define un objetivo de, al menos, **aproximadamente un [alquiler](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026)** (unos €600‑€800, según tu zona).  
 - **Depósito automático**: programa un recordatorio semanal para transferir una cantidad pequeña (como el precio de un snack) a esa reserva. En pocas semanas tendrás un colchón para emergencias navideñas.  
 
 ---  
@@ -88,7 +88,7 @@ La Navidad no es un evento de un solo día; se extiende por semanas.
 
 ![6. Revisa y ajusta tu flujo de caja semanalmente](/images/posts/natal-sem-dividas-7-passos-praticos-para-curtir-as-festas-em-6.webp)  
 
-- **Informes de flujo de caja**: abre el panel de **Flujo de Caja** en FinMoovi cada domingo. Observa la diferencia entre ingresos (salario, ingresos extra) y gastos (regalos, fiestas, facturas).  
+- **Informes de [flujo de caja](/es/glossario/es-flujo-de-caja)**: abre el panel de **Flujo de Caja** en FinMoovi cada domingo. Observa la diferencia entre ingresos (salario, ingresos extra) y gastos (regalos, fiestas, facturas).  
 - **Ajuste rápido**: si notas que gastas más de lo previsto, reduce la categoría “Ocio” o “Comidas fuera” en las próximas semanas.  
 
 Esta revisión semanal garantiza que no llegues al final del mes con la cartera vacía.  
@@ -114,7 +114,7 @@ Celebrar sin culpa es la mejor forma de reforzar hábitos saludables y asegurar 
 | 2 | Crear lista de regalos | Modo Compras → Nueva Lista |
 | 3 | Configurar recordatorios de promociones | Recordatorios → Nueva Notificación |
 | 4 | Registrar facturas y cashback | Tarjetas de Crédito → Nueva Factura |
-| 5 | Capturar gastos recurrentes | Captura Inteligente (foto/voz) |
+| 5 | Capturar gastos recurrentes | [Captura Inteligente](/es/posts/es-cansado-de-perder-horas-en-hojas-de-calculo-asi-finmoovi-lo) (foto/voz) |
 | 6 | Crear reserva de emergencia | Metas → Reserva de Navidad |
 | 7 | Revisar flujo de caja semanal | Informes → Flujo de Caja |
 

@@ -18,11 +18,11 @@ seo:
   keywords: ["debt‑free holidays","financial planning","FinMoovi","year‑end shopping","expense control","holiday budget","practical tips","holidays","debts"]
 ---
 
-Imagine the scene: it’s Christmas Eve, the house smells of turkey, the tree twinkles with lights, and when you check the electric bill, the credit‑card icon flashes red. At the grocery checkout, your bank balance is already at the limit, and you still need to buy that special gift your family has been asking for weeks. Your heart races, anxiety spikes, and you feel the weight of an uncertain financial future.
+Imagine the scene: it’s Christmas Eve, the house smells of turkey, the tree twinkles with lights, and when you check the electric bill, the [credit](/en/glossario/en-credit)‑card icon flashes red. At the grocery checkout, your bank balance is already at the limit, and you still need to buy that special gift your family has been asking for weeks. Your heart races, anxiety spikes, and you feel the weight of an uncertain financial future.
 
 That doesn’t have to be your reality. Without a clear plan, year‑end spending piles up like snow on a roof – the longer you wait, the heavier it gets. The good news is that with a few simple steps and the help of **FinMoovi**, you can turn that chaos into calm without giving up the celebrations.
 
-> **5‑minute micro‑action:** Open FinMoovi, snap a photo of your latest grocery receipt (or use voice capture) and watch the expense automatically categorized. Then tag it “Holiday”. Done – you’ve logged the first entry of your holiday budget.
+> **5‑minute micro‑action:** Open FinMoovi, snap a photo of your latest grocery receipt (or use [voice capture](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end)) and watch the [expense](/en/glossario/en-expense) automatically categorized. Then tag it “Holiday”. Done – you’ve logged the first entry of your holiday budget.
 
 ---
 
@@ -31,7 +31,7 @@ That doesn’t have to be your reality. Without a clear plan, year‑end spendin
 Before you start buying gifts, ask yourself: *what amount still fits in my budget without needing credit or cutting essential expenses in the next cycle?*
 
 - **Use the “daily coffee” rule:** imagine a daily coffee costs about a **minimum‑wage** divided by 30. Multiply that by the number of days left until the holidays and you have a practical reference for how much you can spend without sacrificing basics.  
-- In FinMoovi, go to **Monthly Planning** → **Holiday Goal** and enter that number. The app will show, in real time, how much you have left to spend.
+- In FinMoovi, go to **Monthly [Planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips)** → **Holiday Goal** and enter that number. The app will show, in real time, how much you have left to spend.
 
 ---
 
@@ -56,7 +56,7 @@ Discounts are great, but only if you really needed the item.
 - **Promotion calendar:** use FinMoovi’s **Reminders** feature to get notified when your favorite stores launch sales (Black Friday, Cyber Monday, etc.).  
 - **Smart cashback:** pick cards that return a portion of the spend and record the statement in FinMoovi. The app calculates the rebate and shows how much it lowers the real cost of the gift.
 
-Tip: If the cashback equals **the price of a daily coffee**, treat that amount as “money back” and reinvest it in another gift or your emergency fund.
+Tip: If the cashback equals **the price of a daily coffee**, treat that amount as “money back” and reinvest it in another gift or your [emergency fund](/en/glossario/en-emergency-fund).
 
 ---
 
@@ -88,7 +88,7 @@ The holidays aren’t a one‑day event; they stretch over several weeks.
 
 ![Review and adjust cash flow weekly](/images/posts/natal-sem-dividas-7-passos-praticos-para-curtir-as-festas-em-6.webp)
 
-- **Cash‑flow reports:** open the **Cash Flow** panel in FinMoovi every Sunday. See the difference between income (salary, side gigs) and expenses (gifts, parties, bills).  
+- **Cash‑flow reports:** open the **[Cash Flow](/en/glossario/en-cash-flow)** panel in FinMoovi every Sunday. See the difference between income (salary, side gigs) and expenses (gifts, parties, bills).  
 - **Quick adjustments:** if you notice you’re overspending, cut back on “Leisure” or “Dining Out” categories for the coming weeks.
 
 Weekly reviews keep you from ending the month with an empty wallet.
@@ -110,7 +110,7 @@ Celebrating without guilt reinforces healthy habits and makes the next holiday s
 
 | ✅ | Action | Where in FinMoovi |
 |---|--------|-------------------|
-| 1 | Set total spending limit | Monthly Planning → Holiday Goal |
+| 1 | Set total [spending limit](/en/glossario/en-spending-limit) | Monthly Planning → Holiday Goal |
 | 2 | Create gift list | Shopping → New List |
 | 3 | Set promotion reminders | Reminders → New Notification |
 | 4 | Record statements and cashback | Credit Cards → New Statement |
@@ -132,4 +132,4 @@ Start now: open the app, log your first holiday purchase receipt, and watch your
 
 **References**  
 - [Investopedia – Holiday Spending Tips](https://www.investopedia.com/articles/pf/08/holiday-spending.asp)  
-- OECD – Household Finance and Consumption
+- OECD – Household [Finance](/en/glossario/en-finance) and Consumption

@@ -18,11 +18,11 @@ seo:
   keywords: ["Natal sem dívidas","planejamento financeiro","FinMoovi","compras de fim de ano","controle de gastos","orçamento natalino","dicas práticas","natal","dívidas"]
 ---
 
-Imagine a cena: é véspera de Natal, a casa está cheirando a peru, a árvore reluz com luzes piscantes e, ao abrir a conta de luz, o cartão de crédito pisca em vermelho. Na hora de fechar a conta do supermercado, o saldo da conta bancária já está no limite, e ainda falta comprar aquele presente especial que sua família pediu há semanas. O coração acelera, a ansiedade bate forte e você sente o peso de um futuro financeiro incerto.
+Imagine a cena: é véspera de Natal, a casa está cheirando a peru, a árvore reluz com luzes piscantes e, ao abrir a conta de luz, o cartão de [crédito](/glossario/credito) pisca em vermelho. Na hora de fechar a conta do supermercado, o saldo da conta bancária já está no limite, e ainda falta comprar aquele presente especial que sua família pediu há semanas. O coração acelera, a ansiedade bate forte e você sente o peso de um futuro financeiro incerto.
 
 Essa situação não precisa ser a sua realidade. O que acontece é que, sem um plano claro, os gastos de fim de ano se acumulam como neve em um telhado: quanto mais tempo passa, mais pesado fica. A boa notícia é que, com alguns passos simples e a ajuda do **FinMoovi**, você pode transformar esse caos em tranquilidade, sem abrir mão das celebrações.
 
-> **Micro‑ação de 5 min:** Abra o FinMoovi, tire uma foto da sua última nota fiscal de supermercado (ou use a captura por voz) e veja a despesa automaticamente categorizada. Em seguida, marque-a como “Natal”. Pronto, você já tem o primeiro registro do seu orçamento natalino.
+> **Micro‑ação de 5 min:** Abra o FinMoovi, tire uma foto da sua última nota fiscal de supermercado (ou use a [captura por voz](/posts/como-acompanhar-o-progresso-das-suas-metas-financeiras-sem)) e veja a [despesa](/glossario/despesa) automaticamente categorizada. Em seguida, marque-a como “Natal”. Pronto, você já tem o primeiro registro do seu orçamento natalino.
 
 ---
 
@@ -58,7 +58,7 @@ Descontos são ótimos, mas só se você realmente precisava daquele item.
 - **Calendário de promoções**: use o recurso de **Lembretes** do FinMoovi para ser avisado quando as lojas que você costuma comprar entram em promoção (Black Friday, Cyber Monday, etc.).
 - **Cashback inteligente**: escolha cartões que devolvem parte do valor gasto e registre a fatura no FinMoovi. O app calcula o retorno e já mostra o quanto isso reduz o custo real do presente.
 
-Dica: Se o cashback for de **um café por dia**, considere esse valor como “dinheiro de volta” e reinvista em outro presente ou na sua reserva de emergência.
+Dica: Se o cashback for de **um café por dia**, considere esse valor como “dinheiro de volta” e reinvista em outro presente ou na sua [reserva de emergência](/ferramentas/calculadora-reserva).
 
 ---
 
@@ -81,7 +81,7 @@ Com esse monitoramento, você evita que pequenas despesas “invisíveis” dren
 
 Mesmo com o melhor planejamento, imprevistos acontecem: um presente que quebra, um convite de última hora ou um aumento inesperado nas contas de energia por causa das luzes.
 
-- **Meta de reserva**: no FinMoovi, crie uma meta chamada “Reserva de Natal”. Defina um objetivo de, no mínimo, **cerca de um aluguel**.
+- **Meta de reserva**: no FinMoovi, crie uma meta chamada “Reserva de Natal”. Defina um objetivo de, no mínimo, **cerca de um [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026)**.
 - **Depósito automático**: programe um lembrete semanal para transferir um valor pequeno (como o preço de um lanche) para essa reserva. Em poucas semanas, você terá um colchão para emergências natalinas.
 
 ---
@@ -94,7 +94,7 @@ O Natal não é um evento de um dia só; ele se estende por semanas.
 
 
 
-- **Relatórios de fluxo de caixa**: abra o painel de **Fluxo de Caixa** no FinMoovi a cada domingo. Veja a diferença entre receitas (salário, renda extra) e despesas (presentes, festas, contas).
+- **Relatórios de [fluxo de caixa](/glossario/fluxo-de-caixa)**: abra o painel de **Fluxo de Caixa** no FinMoovi a cada domingo. Veja a diferença entre receitas (salário, renda extra) e despesas (presentes, festas, contas).
 - **Ajuste rápido**: se perceber que está gastando mais do que o previsto, reduza a categoria “Lazer” ou “Comidas fora” nas próximas semanas.
 
 Essa prática de revisão semanal garante que você não chegue ao final do mês com o bolso vazio.
@@ -105,7 +105,7 @@ Essa prática de revisão semanal garante que você não chegue ao final do mês
 
 Depois de seguir esses passos, chegou a hora de curtir o Natal com tranquilidade.
 
-- **Marque a conquista**: no FinMoovi, registre um “Evento de Conquista” ao alcançar a meta de gastos ou ao completar a reserva de emergência.
+- **Marque a conquista**: no FinMoovi, registre um “Evento de Conquista” ao alcançar a meta de gastos ou ao completar a [reserva de emergência](/glossario/reserva-de-emergencia).
 - **Compartilhe**: mostre aos amigos (ou ao grupo da família) como você conseguiu manter o orçamento sob controle. Isso pode inspirar outros a fazer o mesmo nas próximas festas.
 
 Celebrar sem culpa é a melhor forma de reforçar hábitos saudáveis e garantir que o próximo Natal seja ainda mais leve.
@@ -120,7 +120,7 @@ Celebrar sem culpa é a melhor forma de reforçar hábitos saudáveis e garantir
 | 2 | Criar lista de presentes | Modo Compras → Nova Lista |
 | 3 | Configurar lembretes de promoções | Lembretes → Nova Notificação |
 | 4 | Registrar faturas e cashback | Cartões de Crédito → Nova Fatura |
-| 5 | Capturar despesas recorrentes | Captura Inteligente (foto/voz) |
+| 5 | Capturar despesas recorrentes | [Captura Inteligente](/posts/cansado-de-perder-horas-nas-planilhas-como-o-finmoovi) (foto/voz) |
 | 6 | Criar reserva de emergência | Metas → Reserva de Natal |
 | 7 | Revisar fluxo de caixa semanal | Relatórios → Fluxo de Caixa |
 
