@@ -3118,5 +3118,65 @@
         "status": 200
       }
     }
+  },
+  {
+    "slug": "indice-finmoovi-custo-de-vida-outubro-2026",
+    "title": "Índice FinMoovi do Custo de Vida — Outubro/2026",
+    "url": "https://blog.finmoovi.com/posts/indice-finmoovi-custo-de-vida-outubro-2026",
+    "submittedAt": "2026-11-13T21:05:31.317Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1927880829
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "natal-sem-dividas-7-passos-praticos-para-curtir-as-festas-em",
+    "title": "Natal sem dívidas: 7 passos práticos para curtir as festas em 2026",
+    "url": "https://blog.finmoovi.com/posts/natal-sem-dividas-7-passos-praticos-para-curtir-as-festas-em",
+    "submittedAt": "2026-11-13T21:05:32.228Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1927880836
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "por-que-trocar-a-planilha-por-um-app-em-2026-vantagens-reais",
+    "title": "Por que trocar a planilha por um app em 2026: vantagens reais e quando mudar",
+    "url": "https://blog.finmoovi.com/posts/por-que-trocar-a-planilha-por-um-app-em-2026-vantagens-reais",
+    "submittedAt": "2026-11-13T21:05:32.820Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1927880839
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
   }
 ]
