@@ -1,0 +1,229 @@
+{
+  "slug": "kw-economize-r-1-000-por-mes",
+  "term": "Economize R$ 1.000 por mês?",
+  "category": "mindset",
+  "keyword": "economizar",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Dá mesmo pra *economizar mil reais* por mês sem passar aperto?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ralo",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Dá mesmo pra economizar mil reais por mês sem passar aperto? Dá. Só que o dinheiro tá saindo por onde você não olha.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "economizar",
+          "visual": {
+            "type": "number",
+            "text": "R$ 1.000/mês"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Ninguém vê esse vazamento"
+          }
+        },
+        {
+          "anchor": "saindo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          },
+          "sfx": "whoosh"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Sai pelas coisinhas que você assinou um dia e esqueceu. Filme, música, academia, aplicativo de comida.",
+      "durationSec": 6.2,
+      "shots": [
+        {
+          "anchor": "assinou",
+          "visual": {
+            "type": "statement",
+            "text": "Assinaturas esquecidas"
+          }
+        },
+        {
+          "anchor": "Filme",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          }
+        },
+        {
+          "anchor": "academia",
+          "visual": {
+            "type": "icon",
+            "icon": "clock"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "aplicativo",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Eu somei tudo isso e deu novecentos reais por mês. Em um ano, são dez mil e oitocentos reais.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "somei",
+          "visual": {
+            "type": "icon",
+            "icon": "coins"
+          }
+        },
+        {
+          "anchor": "novecentos",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 900,
+            "prefix": "R$"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "oitocentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 10.800 por ano"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei tudo no FinMoovi e ele me mostrou numa lista só. A academia que eu não pisava há meses ficou em primeiro.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "smartcapture",
+            "note": "Todas as assinaturas reunidas numa lista só"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "pisava",
+          "visual": {
+            "type": "statement",
+            "text": "Meses sem pisar lá"
+          }
+        },
+        {
+          "anchor": "ficou",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          },
+          "sfx": "alert"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu total? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 4.2,
+      "shots": [
+        {
+          "anchor": "total",
+          "visual": {
+            "type": "icon",
+            "icon": "target"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Dá pra economizar mil reais por mês, sim, cortando o que você nem lembra que paga. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "number",
+            "text": "R$ 1.000"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "lembra",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          }
+        },
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "icon",
+            "icon": "shield"
+          }
+        },
+        {
+          "anchor": "outros",
+          "visual": {
+            "type": "statement",
+            "text": "Controle é o que sobra"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Descubra para onde seu dinheiro vai",
+    "target": "app"
+  },
+  "totalDurationSec": 44.1
+}
