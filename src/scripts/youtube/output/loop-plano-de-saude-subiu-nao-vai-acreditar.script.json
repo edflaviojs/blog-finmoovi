@@ -1,0 +1,118 @@
+{
+  "slug": "loop-plano-de-saude-subiu-nao-vai-acreditar",
+  "formato": "loop16",
+  "term": "O plano de saúde que subiu",
+  "category": "vida",
+  "keyword": "PLANO",
+  "valor": "R$ 240",
+  "situacao": "plano-de-saude-subiu",
+  "gancho": "nao-vai-acreditar",
+  "ganchoFamilia": "não vai acreditar",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "bola-neve",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você não vai acreditar, mas chegou a carta do plano.",
+      "durationSec": 3.71,
+      "shots": [
+        {
+          "anchor": "acreditar",
+          "visual": {
+            "type": "statement",
+            "text": "Chegou a carta do plano"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "chegou",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-neve"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Olha, duzentos e quarenta reais a mais por mês. Eu fiquei calado.",
+      "durationSec": 4.45,
+      "shots": [
+        {
+          "anchor": "duzentos",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-neve"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "quarenta",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 240"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Só que a gente sentou e conferiu cada conta.",
+      "durationSec": 3.34,
+      "shots": [
+        {
+          "anchor": "sentou",
+          "visual": {
+            "type": "statement",
+            "text": "Sentamos e conferimos tudo"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "conferiu",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-neve"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "E aí, até hoje não acredito nessa carta do plano.",
+      "durationSec": 3.71,
+      "shots": [
+        {
+          "anchor": "acredito",
+          "visual": {
+            "type": "statement",
+            "text": "A carta do plano"
+          }
+        },
+        {
+          "anchor": "nessa",
+          "visual": {
+            "type": "statement",
+            "text": "Chegou a carta do plano"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.21
+}

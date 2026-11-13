@@ -1114,5 +1114,11 @@
     "gancho": "ninguem-fala",
     "turno": "noite",
     "em": "2026-11-12T13:10:49.225Z"
+  },
+  {
+    "situacao": "plano-de-saude-subiu",
+    "gancho": "nao-vai-acreditar",
+    "turno": "manha",
+    "em": "2026-11-13T12:29:06.540Z"
   }
 ]
