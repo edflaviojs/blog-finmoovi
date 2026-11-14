@@ -1939,5 +1939,12 @@
     "title": "CONTA: R$ 2.100 na conta só para contas",
     "formato": "loop16",
     "publishAt": "2026-11-15T11:40:00.000Z"
+  },
+  "spread-bancario": {
+    "videoId": "95nXhtUHmVQ",
+    "uploadedAt": "2026-11-14T17:30:17.852Z",
+    "title": "BANCÁRIO: quanto o banco ganha com seu dinheiro",
+    "formato": "short50",
+    "publishAt": "2026-11-15T15:00:00.000Z"
   }
 }
