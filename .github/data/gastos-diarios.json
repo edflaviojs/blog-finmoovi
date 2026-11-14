@@ -1053,79 +1053,102 @@
       "cerebras|texto": 0,
       "kie.ai|visao": 0,
       "nvidia|texto": 0
+    },
+    "2026-11-14": {
+      "groq|texto": 44361,
+      "Cloudflare Workers AI|visao": 31,
+      "groq|voz": 724,
+      "Cloudflare Workers AI|imagem": 18,
+      "claude|texto": 68400,
+      "Groq|visao": 11423,
+      "cloudflare|texto": 985,
+      "Together.ai|imagem": 1,
+      "cerebras|texto": 0,
+      "kie.ai|visao": 0,
+      "nvidia|texto": 0
     }
   },
   "relatorio": {
-    "dia": "2026-11-13",
+    "dia": "2026-11-14",
     "horas": 24,
-    "geradoEm": "2026-11-13T13:00:06.157Z",
+    "geradoEm": "2026-11-14T12:04:54.770Z",
     "linhas": [
       {
         "fornecedor": "groq",
         "tipo": "texto",
-        "chamadas": 54,
+        "chamadas": 59,
         "recusas": 0,
-        "quanto": 37488,
+        "quanto": 44361,
         "unidade": "fichas",
         "custo": null,
-        "salto": 0.9514168866200655
+        "salto": 1.1078340783657568
       },
       {
         "fornecedor": "Cloudflare Workers AI",
         "tipo": "visao",
-        "chamadas": 27,
+        "chamadas": 31,
         "recusas": 0,
-        "quanto": 27,
+        "quanto": 31,
         "unidade": "unidades",
         "custo": null,
-        "salto": 1.3695652173913042
+        "salto": 1.5390070921985817
       },
       {
         "fornecedor": "groq",
         "tipo": "voz",
         "chamadas": 22,
         "recusas": 0,
-        "quanto": 744,
+        "quanto": 724,
         "unidade": "unidades",
         "custo": null,
-        "salto": 0.8722157092614302
+        "salto": 0.8217934165720772
       },
       {
         "fornecedor": "Cloudflare Workers AI",
         "tipo": "imagem",
-        "chamadas": 15,
+        "chamadas": 18,
         "recusas": 0,
-        "quanto": 15,
+        "quanto": 18,
         "unidade": "unidades",
         "custo": null,
-        "salto": 1.2209302325581395
+        "salto": 1.4482758620689655
       },
       {
         "fornecedor": "claude",
         "tipo": "texto",
-        "chamadas": 12,
+        "chamadas": 15,
         "recusas": 0,
-        "quanto": 57313,
+        "quanto": 68400,
         "unidade": "fichas",
         "custo": null,
-        "salto": 0.48428395707013705
+        "salto": 0.5703632670808193
       },
       {
         "fornecedor": "Groq",
         "tipo": "visao",
-        "chamadas": 9,
+        "chamadas": 6,
         "recusas": 0,
-        "quanto": 17110,
+        "quanto": 11423,
         "unidade": "fichas",
         "custo": null,
-        "salto": 2.0015987833648543
+        "salto": 1.2026320407088962
+      },
+      {
+        "fornecedor": "cloudflare",
+        "tipo": "texto",
+        "chamadas": 2,
+        "recusas": 0,
+        "quanto": 985,
+        "unidade": "fichas",
+        "custo": null,
+        "salto": null
       },
       {
         "fornecedor": "Together.ai",
         "tipo": "imagem",
-        "chamadas": 2,
+        "chamadas": 1,
         "recusas": 0,
-        "quanto": 2,
+        "quanto": 1,
         "unidade": "unidades",
         "custo": null,
         "salto": null
@@ -1134,7 +1157,7 @@
         "fornecedor": "cerebras",
         "tipo": "texto",
         "chamadas": 0,
-        "recusas": 12,
+        "recusas": 14,
         "quanto": 0,
         "unidade": "unidades",
         "custo": null,
@@ -1154,7 +1177,7 @@
         "fornecedor": "nvidia",
         "tipo": "texto",
         "chamadas": 0,
-        "recusas": 13,
+        "recusas": 17,
         "quanto": 0,
         "unidade": "unidades",
         "custo": null,
@@ -1168,6 +1191,7 @@
       "Cloudflare Workers AI",
       "claude",
       "Groq",
+      "cloudflare",
       "Together.ai",
       "cerebras",
       "kie.ai",
@@ -1180,5 +1204,5 @@
     },
     "saldoMotivo": null
   },
-  "atualizadoEm": "2026-11-13T13:00:06.157Z"
+  "atualizadoEm": "2026-11-14T12:04:54.771Z"
 }
