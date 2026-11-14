@@ -4,6 +4,7 @@ definition: "What home broker is and how it shows up in your everyday money — 
 title: "home broker - Financial Glossary"
 description: "What home broker is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/home-broker.webp"
+imageAlt: "Gold coins, upward arrow, scales, and jars with sprouts on a blue background."
 category: "basico"
 tags: ["home broker", "glossary", "finance"]
 author: "FinMoovi"

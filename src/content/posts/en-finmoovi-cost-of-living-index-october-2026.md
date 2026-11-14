@@ -2,6 +2,7 @@
 title: "FinMoovi Cost of Living Index — October/2026"
 description: "IPCA for October/2026 by expense group: overall index at 0.14% in the month and 4.63% over 12 months. Month-close exchange rates and tips to protect your budget."
 image: "/images/posts/indice-finmoovi-custo-de-vida-outubro-2026.webp"
+imageAlt: "Smiling couple on a couch reviewing a document with green plants in the background."
 category: "cotacoes"
 tags: ["cost of living","ipca","inflation","quotes","budget"]
 author: "FinMoovi"

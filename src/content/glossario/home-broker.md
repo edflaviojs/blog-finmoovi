@@ -4,6 +4,7 @@ definition: "O que é home broker e como isso aparece no seu dia a dia — expli
 title: "home broker - Glossário Financeiro"
 description: "O que é home broker e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/home-broker.webp"
+imageAlt: "Moedas douradas, seta ascendente, balança e garrafas com plantas sobre fundo azul."
 category: "basico"
 tags: ["home broker", "glossário", "finanças"]
 author: "FinMoovi"

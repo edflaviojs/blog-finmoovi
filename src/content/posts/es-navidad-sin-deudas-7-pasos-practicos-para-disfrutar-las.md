@@ -3,6 +3,7 @@ title: "Navidad sin deudas: 7 pasos prácticos para disfrutar las fiestas en 202
 description: "Aprende a planificar una Navidad sin apuros financieros con FinMoovi. Tips rápidos, acción en 5 min y control total de gastos."
 tickerHeadline: "El truco que salva tu Navidad"
 image: "/images/posts/natal-sem-dividas-7-passos-praticos-para-curtir-as-festas-em.webp"
+imageAlt: "Portátil y monitor con fondos coloridos junto a una taza en escritorio de madera."
 category: "orcamento"
 locale: "es"
 tags: ["Navidad sin deudas","planificación financiera","FinMoovi","compras de fin de año","control de gastos","presupuesto navideño","consejos prácticos","Navidad","deudas"]

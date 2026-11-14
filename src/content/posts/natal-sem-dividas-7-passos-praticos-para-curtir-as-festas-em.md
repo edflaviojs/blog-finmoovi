@@ -3,6 +3,7 @@ title: "Natal sem dívidas: 7 passos práticos para curtir as festas em 2026"
 description: "Aprenda a planejar o Natal sem apertos financeiros usando o FinMoovi. Dicas simples, ação em 5 min e controle total das despesas."
 tickerHeadline: "O truque que salva seu Natal"
 image: "/images/posts/natal-sem-dividas-7-passos-praticos-para-curtir-as-festas-em.webp"
+imageAlt: "Notebook e monitor com telas coloridas, caneca cinza e mesa de madeira."
 category: "orcamento"
 locale: "pt"
 tags: ["Natal sem dívidas","planejamento financeiro","FinMoovi","compras de fim de ano","controle de gastos","orçamento natalino","dicas práticas","natal","dívidas"]

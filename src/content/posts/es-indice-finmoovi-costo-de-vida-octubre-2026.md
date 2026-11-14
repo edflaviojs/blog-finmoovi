@@ -2,6 +2,7 @@
 title: "Índice FinMoovi del Costo de Vida — Octubre/2026"
 description: "IPCA de octubre/2026 por grupo de gasto: índice general en 0,14% en el mes y 4,63% en 12 meses. Cambio de cierre y consejos para proteger tu bolsillo."
 image: "/images/posts/indice-finmoovi-custo-de-vida-outubro-2026.webp"
+imageAlt: "Pareja sonriente en sofá beige revisando documentos, con plantas verdes al fondo."
 category: "cotacoes"
 tags: ["costo de vida","ipca","inflación","cotizaciones","presupuesto"]
 author: "FinMoovi"

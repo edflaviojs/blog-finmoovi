@@ -3,6 +3,7 @@ title: "Debt‑Free Holiday Season: 7 Practical Steps to Enjoy the Festivities i
 description: "Learn how to plan a stress‑free holiday season with FinMoovi. Simple 5‑minute actions and total control over your spending."
 tickerHeadline: "The trick that saves your holidays"
 image: "/images/posts/natal-sem-dividas-7-passos-praticos-para-curtir-as-festas-em.webp"
+imageAlt: "Laptop and monitor with colorful screens, gray mug, and pen on a wooden desk."
 category: "orcamento"
 locale: "en"
 tags: ["debt‑free holidays","financial planning","FinMoovi","year‑end shopping","expense control","holiday budget","practical tips","holidays","debts"]
