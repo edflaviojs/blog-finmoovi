@@ -1,0 +1,118 @@
+{
+  "slug": "loop-aniversario-do-filho-ta-perdendo",
+  "formato": "loop16",
+  "term": "Aniversário do filho",
+  "category": "vida",
+  "keyword": "ANIVERSÁRIO",
+  "valor": "R$ 800",
+  "situacao": "aniversario-do-filho",
+  "gancho": "ta-perdendo",
+  "ganchoFamilia": "tá perdendo",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "bolha",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se você ainda faz festa sem combinar, tá perdendo dinheiro.",
+      "durationSec": 3.71,
+      "shots": [
+        {
+          "anchor": "festa",
+          "visual": {
+            "type": "statement",
+            "text": "Festa sem combinar?"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "combinar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bolha"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Meu filho pediu festa e oitocentos reais foram embora comigo.",
+      "durationSec": 3.71,
+      "shots": [
+        {
+          "anchor": "filho",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bolha"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "pediu",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 800 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Sentei, abri as contas e conversei com ele.",
+      "durationSec": 2.97,
+      "shots": [
+        {
+          "anchor": "Sentei",
+          "visual": {
+            "type": "statement",
+            "text": "Sentei e conversei"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "contas",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bolha"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Hoje a festa cabe no bolso. Quem ainda faz sem conferir, tá perdendo.",
+      "durationSec": 4.82,
+      "shots": [
+        {
+          "anchor": "festa",
+          "visual": {
+            "type": "statement",
+            "text": "Festa que cabe no bolso"
+          }
+        },
+        {
+          "anchor": "bolso",
+          "visual": {
+            "type": "statement",
+            "text": "Festa sem combinar?"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.21
+}
