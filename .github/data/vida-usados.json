@@ -1126,5 +1126,11 @@
     "gancho": "se-parar",
     "turno": "noite",
     "em": "2026-11-13T12:37:55.711Z"
+  },
+  {
+    "situacao": "dinheiro-so-seu",
+    "gancho": "ta-perdendo",
+    "turno": "manha",
+    "em": "2026-11-14T11:40:30.101Z"
   }
 ]

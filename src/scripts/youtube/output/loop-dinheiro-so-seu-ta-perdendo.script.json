@@ -1,0 +1,118 @@
+{
+  "slug": "loop-dinheiro-so-seu-ta-perdendo",
+  "formato": "loop16",
+  "term": "Um dinheiro só seu",
+  "category": "vida",
+  "keyword": "SEU",
+  "valor": "R$ 200",
+  "situacao": "dinheiro-so-seu",
+  "gancho": "ta-perdendo",
+  "ganchoFamilia": "tá perdendo",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "cofre",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se você ainda pede pro outro toda vez, tá perdendo liberdade.",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "outro",
+          "visual": {
+            "type": "statement",
+            "text": "Pedir toda vez?"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "perdendo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "cofre"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Hoje separo duzentos reais só meus. Ninguém pergunta nada.",
+      "durationSec": 3.18,
+      "shots": [
+        {
+          "anchor": "separo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "cofre"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "duzentos",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 200 só meus"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Agora compro minha besteirinha sem pedir, e a gente nem briga mais.",
+      "durationSec": 4.24,
+      "shots": [
+        {
+          "anchor": "compro",
+          "visual": {
+            "type": "statement",
+            "text": "Sem pedir, sem briga"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "besteirinha",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "cofre"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Quem ainda pede pro outro toda vez, perde liberdade sem perceber.",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "outro",
+          "visual": {
+            "type": "statement",
+            "text": "Pedir toda vez custa caro"
+          }
+        },
+        {
+          "anchor": "perde",
+          "visual": {
+            "type": "statement",
+            "text": "Pedir toda vez?"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
