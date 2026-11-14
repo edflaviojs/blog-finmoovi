@@ -1,0 +1,199 @@
+{
+  "slug": "spread-bancario",
+  "term": "Spread Bancário",
+  "category": "credito",
+  "keyword": "Bancário",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Sabe quanto o banco ganha com o *dinheiro parado* na sua conta?"
+  },
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "bifurcacao",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Sabe quanto o banco ganha com o dinheiro parado na sua conta? Ele te paga pouco e cobra muito de outra pessoa pelo mesmo dinheiro.",
+      "durationSec": 9.6,
+      "shots": [
+        {
+          "anchor": "quanto",
+          "visual": {
+            "type": "statement",
+            "text": "Quanto o banco ganha?"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "paga",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bifurcacao"
+          }
+        },
+        {
+          "anchor": "muito",
+          "visual": {
+            "type": "number",
+            "text": "pouco x muito"
+          },
+          "sfx": "whoosh"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Esse jogo tem nome. Spread bancário. É a diferença entre o que ele te paga e o que ele cobra.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "Spread",
+          "visual": {
+            "type": "statement",
+            "text": "SPREAD BANCÁRIO"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "diferença",
+          "visual": {
+            "type": "icon",
+            "icon": "bank"
+          }
+        },
+        {
+          "anchor": "cobra",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bifurcacao"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Essa diferença sai dos seus mil reais parados. Pra você, um pouquinho. O resto fica no bolso do banco.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "diferença",
+          "visual": {
+            "type": "number",
+            "text": "R$ 1.000"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "parados",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bifurcacao"
+          }
+        },
+        {
+          "anchor": "pouquinho",
+          "visual": {
+            "type": "statement",
+            "text": "Você fica com migalhas"
+          }
+        },
+        {
+          "anchor": "bolso",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          },
+          "sfx": "thud"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Fui ver quanto ia pro bolso dele. Joguei no FinMoovi, e a linha de juros do cartão veio em vermelho.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "Joguei",
+          "visual": {
+            "type": "app",
+            "app": "cartoes",
+            "note": "Linha de juros do cartão destacada em vermelho"
+          }
+        },
+        {
+          "anchor": "juros",
+          "visual": {
+            "type": "statement",
+            "text": "Juros em vermelho"
+          },
+          "sfx": "alert"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver a sua? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Ele ganha mais com o seu dinheiro parado do que você. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "mais",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bifurcacao"
+          }
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Sem controle, não é seu"
+          },
+          "sfx": "boom"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja quanto o banco ganha com você",
+    "target": "app"
+  },
+  "totalDurationSec": 43
+}
