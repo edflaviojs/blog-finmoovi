@@ -22,5 +22,11 @@
     "runId": "43445573555",
     "producedAt": "2026-11-13T15:05:20.393Z",
     "artifact": "short-kw-economize-r-1-000-por-mes"
+  },
+  {
+    "fileSlug": "spread-bancario",
+    "runId": "43600953187",
+    "producedAt": "2026-11-14T13:53:36.409Z",
+    "artifact": "short-spread-bancario"
   }
 ]
