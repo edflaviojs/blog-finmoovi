@@ -1,0 +1,118 @@
+{
+  "slug": "loop-dividir-sem-brigar-aconteceu-comigo",
+  "formato": "loop16",
+  "term": "Dividir as contas sem brigar",
+  "category": "vida",
+  "keyword": "CASAL",
+  "valor": "R$ 3.200",
+  "situacao": "dividir-sem-brigar",
+  "gancho": "aconteceu-comigo",
+  "ganchoFamilia": "aconteceu comigo",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "gangorra",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Isso aconteceu comigo semana passada. Domingo, a briga de novo.",
+      "durationSec": 3.53,
+      "shots": [
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "Domingo, e a briga de novo"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "gangorra"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Somei luz, mercado, aluguel. Três mil e duzentos reais que a gente divide.",
+      "durationSec": 4.6,
+      "shots": [
+        {
+          "anchor": "Somei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "gangorra"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "mercado",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 3.200 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Olha, ninguém anotava quem pagava. Então a gente anotou.",
+      "durationSec": 3.18,
+      "shots": [
+        {
+          "anchor": "ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "Ninguém anotava nada"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "anotava",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "gangorra"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Domingo agora é sem briga, ninguém pergunta quem pagou o quê.",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "Domingo",
+          "visual": {
+            "type": "statement",
+            "text": "Quem pagou o quê?"
+          }
+        },
+        {
+          "anchor": "briga",
+          "visual": {
+            "type": "statement",
+            "text": "Domingo, e a briga de novo"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}

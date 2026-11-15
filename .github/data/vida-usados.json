@@ -1138,5 +1138,11 @@
     "gancho": "ta-perdendo",
     "turno": "noite",
     "em": "2026-11-14T11:50:44.099Z"
+  },
+  {
+    "situacao": "dividir-sem-brigar",
+    "gancho": "aconteceu-comigo",
+    "turno": "manha",
+    "em": "2026-11-15T12:08:18.810Z"
   }
 ]
