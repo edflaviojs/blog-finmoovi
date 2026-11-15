@@ -1967,5 +1967,12 @@
     "title": "VALORES da bolsa: entenda o que acontece",
     "formato": "short50",
     "publishAt": "2026-11-16T15:00:00.000Z"
+  },
+  "loop-gas-acabou-se-parar": {
+    "videoId": "-F0yXyTHTfs",
+    "uploadedAt": "2026-11-15T23:08:43.883Z",
+    "title": "GÁS: R$ 130 no domingo que acabou",
+    "formato": "loop16",
+    "publishAt": "2026-11-16T21:40:00.000Z"
   }
 }
