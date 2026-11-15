@@ -1,0 +1,212 @@
+{
+  "slug": "bolsa-de-valores",
+  "term": "bolsa de valores",
+  "category": "basico",
+  "keyword": "valores",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você acha que *bolsa de valores* é coisa de rico?"
+  },
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "montanha-russa",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você acha que bolsa de valores é coisa de rico? Eu também achava. Mas é só um lugar onde se compra pedacinho de empresa.",
+      "durationSec": 9.2,
+      "shots": [
+        {
+          "anchor": "bolsa",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "rico",
+          "visual": {
+            "type": "statement",
+            "text": "Coisa de rico?"
+          }
+        },
+        {
+          "anchor": "pedacinho",
+          "visual": {
+            "type": "icon",
+            "icon": "coins"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Pedacinho de empresa, igual a Petrobras ou Vale. Cada pedacinho chama ação. Ninguém te explicou isso na escola, e ninguém te cobrou.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "Petrobras",
+          "visual": {
+            "type": "statement",
+            "text": "Petrobras. Vale."
+          }
+        },
+        {
+          "anchor": "ação",
+          "visual": {
+            "type": "statement",
+            "text": "Pedacinho = ação"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "escola",
+          "visual": {
+            "type": "icon",
+            "icon": "mind"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Só que esse pedacinho muda de preço todo dia. Se muita gente quer comprar, o preço sobe. Se todo mundo quer vender, ele cai.",
+      "durationSec": 9.2,
+      "shots": [
+        {
+          "anchor": "muda",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "montanha-russa"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "sobe",
+          "visual": {
+            "type": "icon",
+            "icon": "growth"
+          }
+        },
+        {
+          "anchor": "vender",
+          "visual": {
+            "type": "icon",
+            "icon": "chart-down"
+          },
+          "sfx": "thud"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu anotei no FinMoovi os quinhentos reais que botei numa ação. Um dia a tela mostrou trezentos. Noutro, quase de volta.",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Ação anotada no FinMoovi, saldo oscilando"
+          }
+        },
+        {
+          "anchor": "trezentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 300"
+          },
+          "sfx": "alert"
+        },
+        {
+          "anchor": "quase",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "montanha-russa"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer acompanhar o seu dinheiro assim, sem susto? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 5.4,
+      "shots": [
+        {
+          "anchor": "susto",
+          "visual": {
+            "type": "statement",
+            "text": "Sem susto"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Bolsa de valores é comprar um pedacinho de empresa, e o preço dele sobe e desce. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "pedacinho",
+          "visual": {
+            "type": "icon",
+            "icon": "bank"
+          }
+        },
+        {
+          "anchor": "sobe",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "montanha-russa"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "statement",
+            "text": "Controle é tudo"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Acompanhe seu dinheiro sem susto",
+    "target": "app"
+  },
+  "totalDurationSec": 49.2
+}
