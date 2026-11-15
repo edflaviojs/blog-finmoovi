@@ -6554,6 +6554,21 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-11-14"
+    },
+    "keynesianismo-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-15"
+    },
+    "keynesianismo-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-15"
+    },
+    "keynesianismo.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-15"
     }
   },
   "corrigidas": {
@@ -7230,6 +7245,6 @@
       "motivo": "borrada segundo a IA de visão (nitidez local 1252)"
     }
   },
-  "totalAcervo": 1311,
-  "ultimaCorrida": "2026-11-14"
+  "totalAcervo": 1314,
+  "ultimaCorrida": "2026-11-15"
 }
