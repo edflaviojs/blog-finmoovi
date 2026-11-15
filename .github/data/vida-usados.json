@@ -1144,5 +1144,11 @@
     "gancho": "aconteceu-comigo",
     "turno": "manha",
     "em": "2026-11-15T12:08:18.810Z"
+  },
+  {
+    "situacao": "delivery-de-sexta",
+    "gancho": "comeca-assim",
+    "turno": "noite",
+    "em": "2026-11-15T12:11:43.901Z"
   }
 ]

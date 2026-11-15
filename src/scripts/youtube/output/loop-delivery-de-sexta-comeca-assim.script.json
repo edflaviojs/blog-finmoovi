@@ -1,0 +1,118 @@
+{
+  "slug": "loop-delivery-de-sexta-comeca-assim",
+  "formato": "loop16",
+  "term": "O delivery de toda sexta",
+  "category": "vida",
+  "keyword": "DELIVERY",
+  "valor": "R$ 320",
+  "situacao": "delivery-de-sexta",
+  "gancho": "comeca-assim",
+  "ganchoFamilia": "começa assim",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "ralo",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Quer aprender a segurar a sexta? Começa assim. Eu pedia delivery.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "aprender",
+          "visual": {
+            "type": "statement",
+            "text": "Sexta cansada, delivery"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "segurar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Quando somei o mês, trezentos e vinte reais tinham ido embora só nisso.",
+      "durationSec": 4.7,
+      "shots": [
+        {
+          "anchor": "somei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "trezentos",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 320 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Olha, agora eu cozinho um pouquinho antes.",
+      "durationSec": 2.53,
+      "shots": [
+        {
+          "anchor": "cozinho",
+          "visual": {
+            "type": "statement",
+            "text": "Agora eu cozinho antes"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "pouquinho",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Hoje, toda sexta o delivery ainda chama, mas eu sei segurar.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "sexta",
+          "visual": {
+            "type": "statement",
+            "text": "Sexta: o delivery chama"
+          }
+        },
+        {
+          "anchor": "delivery",
+          "visual": {
+            "type": "statement",
+            "text": "Sexta cansada, delivery"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.19
+}
