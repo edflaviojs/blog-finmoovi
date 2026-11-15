@@ -4,6 +4,7 @@ definition: "What Keynesianismo is and how it shows up in your everyday money â€
 title: "Keynesianismo - Financial Glossary"
 description: "What Keynesianismo is and how it shows up in your everyday money â€” explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/keynesianismo.webp"
+imageAlt: "Gold coins, orange bars, and glass jars with plants on a dark surface."
 category: "basico"
 tags: ["Keynesianismo", "glossary", "finance"]
 author: "FinMoovi"

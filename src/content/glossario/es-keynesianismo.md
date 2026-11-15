@@ -4,6 +4,7 @@ definition: "Qué es keynesianismo y cómo aparece en tu día a día — explica
 title: "keynesianismo - Glosario Financiero"
 description: "Qué es keynesianismo y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/keynesianismo.webp"
+imageAlt: "Monedas doradas, frascos y barras naranjas sobre fondo azul oscuro."
 category: "basico"
 tags: ["keynesianismo", "glosario", "finanzas"]
 author: "FinMoovi"
