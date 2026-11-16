@@ -1,0 +1,198 @@
+{
+  "slug": "imposto-de-renda",
+  "term": "imposto de renda",
+  "category": "basico",
+  "keyword": "imposto",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você sabe quanto do seu *salário* o *imposto de renda* leva antes de chegar na sua mão?"
+  },
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "gangorra",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você sabe quanto do seu salário o imposto de renda leva antes de chegar na sua mão? Quase todo mundo nunca olhou. Eu também fingia que não via.",
+      "durationSec": 10.8,
+      "shots": [
+        {
+          "anchor": "quanto",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "gangorra"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "antes",
+          "visual": {
+            "type": "statement",
+            "text": "Quanto sobra pra você?"
+          }
+        },
+        {
+          "anchor": "nunca",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          },
+          "sfx": "pop"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Olhar o holerite dá preguiça mesmo. Tem sigla, tem desconto, tem número miúdo. Então a gente só confere se o dinheiro caiu.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "holerite",
+          "visual": {
+            "type": "icon",
+            "icon": "mind"
+          }
+        },
+        {
+          "anchor": "sigla",
+          "visual": {
+            "type": "statement",
+            "text": "Sigla, desconto, número miúdo"
+          },
+          "sfx": "typewriter"
+        },
+        {
+          "anchor": "confere",
+          "visual": {
+            "type": "statement",
+            "text": "Só olha se caiu"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Só que esse desconto já sai direto do seu salário, antes de você ver. E no fim do ano, ele pode ter saído a mais.",
+      "durationSec": 9.6,
+      "shots": [
+        {
+          "anchor": "desconto",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          },
+          "sfx": "alert"
+        },
+        {
+          "anchor": "antes",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "gangorra"
+          }
+        },
+        {
+          "anchor": "saído",
+          "visual": {
+            "type": "statement",
+            "text": "Pode ter saído a mais"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu botei meus descontos do ano no FinMoovi e ele somou tudo numa linha só, separada do resto. Bem na minha cara.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "descontos",
+          "visual": {
+            "type": "app",
+            "app": "balanco",
+            "note": "Todos os descontos do ano somados em uma linha separada"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "separada",
+          "visual": {
+            "type": "statement",
+            "text": "Tudo em uma linha só"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "O imposto de renda leva um pedaço do seu salário antes de você ver, e só quem olha sabe o tamanho. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 10.8,
+      "shots": [
+        {
+          "anchor": "leva",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "gangorra"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "quem",
+          "visual": {
+            "type": "statement",
+            "text": "Quem olha, sabe"
+          }
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Sem controle, é dos outros"
+          },
+          "sfx": "thud"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja quanto sai do seu salário",
+    "target": "app"
+  },
+  "totalDurationSec": 52
+}
