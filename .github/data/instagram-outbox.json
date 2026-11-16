@@ -22,5 +22,11 @@
     "runId": "43722698703",
     "producedAt": "2026-11-15T14:12:39.253Z",
     "artifact": "short-bolsa-de-valores"
+  },
+  {
+    "fileSlug": "imposto-de-renda",
+    "runId": "43904238636",
+    "producedAt": "2026-11-16T16:14:29.765Z",
+    "artifact": "short-imposto-de-renda"
   }
 ]
