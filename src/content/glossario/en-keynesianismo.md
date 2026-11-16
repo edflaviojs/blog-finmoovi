@@ -18,89 +18,89 @@ seo:
   keywords: ["Keynesianismo", "glossary", "finance"]
 ---
 
-## O que acontece quando a economia parece estar parada?
+## What Happens When the Economy Seems Stuck?
 
-Você já percebeu que, às vezes, o seu salário chega todo mês, mas as contas parecem crescer sozinhas? O desemprego aumenta, as lojas fecham e o consumo cai. Nessa hora, a gente sente que falta algo para “dar um empurrão” na economia, como se fosse um motor que perdeu a força. Esse sentimento é exatamente o que a teoria do **keynesianismo** tenta explicar: quando a demanda total da economia (o que as pessoas compram, as empresas investem e o governo gasta) está baixa, o crescimento desacelera e o desemprego sobe.
+Have you ever noticed that, sometimes, your paycheck arrives every month, but the bills seem to grow on their own? Unemployment rises, stores close, and consumption drops. At that moment, it feels like something is missing to “give a push” to the economy, as if a motor has lost its power. That feeling is exactly what **Keynesianism** tries to explain: when total demand in the economy (what people buy, what businesses invest, and what the government spends) is low, growth slows and unemployment rises.
 
-![O que acontece quando a economia parece estar parada?](/images/glossario/keynesianismo-inline-1.webp)
-
-
-
-## Como o keynesianismo entende a crise
-
-O keynesianismo, criado por John Maynard Keynes na década de 1930, parte do princípio de que a economia não se autorregula sempre. Quando a demanda agregada (soma de consumo, investimento, gastos do governo e exportações líquidas) cai, as empresas vendem menos, cortam produção e demitem funcionários. Isso cria um círculo vicioso: menos renda, menos consumo, mais queda na produção.
-
-Para quebrar esse ciclo, Keynes propôs que o governo intervenha, aumentando seus gastos ou reduzindo impostos, de modo a estimular a demanda. Essa “injeção” de dinheiro deve ser temporária, mas suficiente para colocar a economia de volta nos trilhos. Em termos simples, é como se você, ao perceber que a conta bancária está baixa, recebesse um “empurrão” extra de um amigo para pagar as contas e evitar o aperto.
-
-## Por que isso importa para o seu bolso
-
-Mesmo que você não seja economista, o keynesianismo afeta diretamente o seu dia a dia:
-
-![Por que isso importa para o seu bolso](/images/glossario/keynesianismo-inline-3.webp)
+![What Happens When the Economy Seems Stuck?](/images/glossario/keynesianismo-inline-1.webp)
 
 
 
-- **Desemprego:** Quando a demanda cai, as empresas demitem. Menos renda significa menos poder de compra para você.
-- **Inflação ou deflação:** Se o governo gastar demais, os preços sobem (inflação). Se gastar de menos, os preços podem cair (deflação), o que também pode ser perigoso.
-- **Taxas de juros:** Bancos centrais podem baixar juros para incentivar empréstimos, mas isso também pode tornar o crédito mais barato ou mais caro, dependendo da política adotada.
+## How Keynesianism Understands the Crisis
 
-Entender esses mecanismos ajuda a prever por que, em certos momentos, o preço do aluguel sobe ou por que o salário parece estagnado.
+Keynesianism, created by John Maynard Keynes in the 1930s, starts from the premise that the economy does not always self‑regulate. When aggregate demand (the sum of consumption, investment, government spending, and net exports) falls, companies sell less, cut production, and lay off workers. This creates a vicious circle: less income, less consumption, further production decline.
 
-## Como o FinMoovi pode ajudar a aplicar a lógica keynesiana no seu orçamento
+To break this cycle, Keynes proposed that the government intervene, increasing its spending or cutting taxes, in order to stimulate demand. This “injection” of money should be temporary, but enough to get the economy back on track. In simple terms, it’s like when you notice your bank account is low and a friend gives you an extra “push” to pay the bills and avoid a squeeze.
 
-Imagine que você está tentando acompanhar a situação econômica da sua casa como se fosse um pequeno governo. O FinMoovi tem um recurso que combina **captura inteligente** (foto do recibo ou voz) com **categorização automática**. Você tira uma foto da conta de luz, fala “conta de luz” e o app já coloca o gasto na categoria correta. Isso permite que você veja, em tempo real, onde está a maior parte da sua demanda (consumo) e onde pode cortar ou investir.
+## Why This Matters for Your Pocket
 
-Além disso, o FinMoovi trabalha com **multimoeda**, então se você recebe parte da renda em outra moeda (por exemplo, um pagamento em dólares por trabalho freelancer), o app converte tudo para a mesma base, facilitando a visualização do fluxo total.
+Even if you’re not an economist, Keynesianism directly affects your everyday life:
 
-Com esses dados, você pode:
+![Why This Matters for Your Pocket](/images/glossario/keynesianismo-inline-3.webp)
 
-- **Identificar gargalos de consumo** (ex.: gasto excessivo com delivery) e reduzir, simulando o efeito de “corte de gastos” como faria um governo em crise.
-- **Planejar investimentos** (como comprar um curso ou equipamento) e ver como isso impacta seu fluxo de caixa, semelhante ao estímulo de investimento proposto por Keynes.
-- **Acompanhar metas mensais**, como economizar o equivalente a “um mês de aluguel”, e ajustar as despesas conforme a realidade econômica.
 
-## Três dicas práticas para usar o keynesianismo no seu dia a dia
 
-**Practical tip:** Use a captura inteligente do FinMoovi para registrar todos os gastos pequenos (um café, um lanche). Quando você vê o total acumulado, fica mais fácil decidir onde cortar e liberar dinheiro para investimentos maiores.
+- **Unemployment:** When demand drops, companies fire workers. Less income means less purchasing power for you.
+- **Inflation or deflation:** If the government spends too much, prices rise (inflation). If it spends too little, prices can fall (deflation), which can also be risky.
+- **Interest rates:** Central banks may lower rates to encourage loans, but this can also make credit cheaper or more expensive, depending on the policy adopted.
 
-**Practical tip:** Defina metas de “estímulo” pessoal: reserve 10 % da sua renda extra (por exemplo, bônus ou horas extras) para um fundo de oportunidades. Isso funciona como o gasto público de Keynes, mas no seu bolso.
+Understanding these mechanisms helps you anticipate why, at certain times, rent prices go up or why salaries seem stuck.
 
-**Practical tip:** Revise o relatório de fluxo de caixa semanalmente. Se a diferença entre receitas e despesas estiver negativa, ajuste as categorias de consumo antes que o déficit se torne um problema maior.
+## How FinMoovi Can Help You Apply Keynesian Logic to Your Budget
 
-## Ferramentas do FinMoovi que reforçam a lógica keynesiana
+Imagine you’re trying to track your household’s economic situation as if you were a small government. FinMoovi has a feature that combines **smart capture** (photo of the receipt or voice) with **automatic categorization**. You snap a picture of the electricity bill, say “electricity bill,” and the app already places the expense in the right category. This lets you see, in real time, where most of your demand (consumption) is and where you can cut or invest.
 
-- **Relatórios de fluxo de caixa:** Mostram a entrada e saída de dinheiro ao longo do mês, permitindo que você veja se a demanda interna (seus gastos) está equilibrada.
-- **Planejamento mensal e metas:** Você pode criar um objetivo de “economizar o preço de um aluguel” e acompanhar o progresso, simulando o efeito de um estímulo governamental.
-- **Cartões de crédito e contas:** O app sincroniza faturas e avisa quando o limite está próximo, evitando surpresas que poderiam gerar endividamento.
-- **Modo compras:** Crie listas de supermercado e veja o total em tempo real, ajudando a controlar o consumo antes de chegar ao caixa.
-- **Alertas de saldo e lembretes:** Notificações automáticas quando o saldo está baixo ou uma conta está vencendo, mantendo a disciplina financeira.
-- **Modo offline/PWA:** Mesmo sem internet, você registra despesas; na próxima conexão, tudo sincroniza, garantindo que nenhum dado se perca.
+In addition, FinMoovi works with **multicurrency**, so if you receive part of your income in another currency (for example, a payment in dollars for freelance work), the app converts everything to the same base, making it easier to view the total cash flow.
 
-## Como o keynesianismo se aplica ao seu planejamento financeiro
+With this data, you can:
 
-Ao aplicar a ideia de “gasto público” ao seu orçamento, você cria um “governo doméstico” que pode:
+- **Identify consumption bottlenecks** (e.g., excessive delivery spending) and reduce them, simulating the effect of “spending cuts” a government would make in a crisis.
+- **Plan investments** (like buying a course or equipment) and see how this impacts your cash flow, similar to the investment stimulus proposed by Keynes.
+- **Track monthly goals**, such as saving the equivalent of “one month’s rent,” and adjust expenses according to the economic reality.
 
-1. **Identificar a demanda fraca:** Se o seu relatório mostra que a maior parte da renda está sendo consumida em despesas fixas (aluguel, contas), talvez seja hora de buscar fontes de renda extra (freelance, venda de itens usados).
-2. **Injetar estímulo:** Use a meta de reserva de emergência como um “pacote de estímulo”. Quando a reserva atinge o valor desejado (por exemplo, três meses de despesas), você tem margem para investir ou enfrentar imprevistos.
-3. **Ajustar a política fiscal pessoal:** Se você está gastando muito em lazer, pode “aumentar impostos” (reduzir esse gasto) e “reduzir a taxa de juros” (usar crédito mais barato) para equilibrar o orçamento.
+## Three Practical Tips for Using Keynesianism in Your Daily Life
 
-## Quando o keynesianismo pode falhar e como se proteger
+**Practical tip:** Use FinMoovi’s smart capture to record every small expense (a coffee, a snack). When you see the accumulated total, it’s easier to decide where to cut and free up money for larger investments.
 
-Assim como políticas governamentais podem ser mal calibradas, decisões pessoais também podem errar:
+**Practical tip:** Set personal “stimulus” goals: set aside 10 % of your extra income (for example, bonuses or overtime) into an opportunity fund. This works like Keynes’s public spending, but in your pocket.
 
-- **Gasto excessivo:** Se você aumenta demais os gastos sem ter receita adicional, pode entrar em dívida. Use o alerta de saldo do FinMoovi para evitar isso.
-- **Inflação pessoal:** Comprar tudo de uma vez pode elevar o preço médio dos itens (por exemplo, comprar roupas em promoção e depois perceber que gastou mais do que planejou). O relatório de categorias ajuda a monitorar esse efeito.
-- **Dependência de crédito:** Se o estímulo vem de empréstimos, o custo dos juros pode superar os benefícios. O FinMoovi mostra o custo total das dívidas, facilitando a decisão.
+**Practical tip:** Review the cash‑flow report weekly. If the difference between income and expenses is negative, adjust consumption categories before the deficit becomes a bigger problem.
 
-## Estratégia de longo prazo inspirada no keynesianismo
+## FinMoovi Tools That Reinforce Keynesian Logic
 
-Pense no seu futuro como um país que quer crescer de forma sustentável. Crie um plano de 5 anos que inclua:
+- **Cash‑flow reports:** Show money in and out over the month, letting you see if internal demand (your spending) is balanced.
+- **Monthly planning and goals:** You can create a goal to “save the price of one rent” and track progress, simulating the effect of a government stimulus.
+- **Credit cards and accounts:** The app syncs statements and alerts you when the limit is near, avoiding surprises that could lead to debt.
+- **Shopping mode:** Create grocery lists and see the total in real time, helping you control consumption before you reach the checkout.
+- **Balance alerts and reminders:** Automatic notifications when the balance is low or a bill is due, keeping financial discipline.
+- **Offline/PWA mode:** Even without internet, you record expenses; on the next connection, everything syncs, ensuring no data is lost.
 
-- **Investimento em educação:** Cursos que aumentem sua renda (similar ao investimento público em infraestrutura).
-- **Diversificação de renda:** Trabalhos paralelos ou investimentos em ativos (ações, fundos) que gerem fluxo de caixa adicional.
-- **Reserva de emergência robusta:** Equivalente a um “fundo de estabilização” para momentos de crise econômica.
+## How Keynesianism Applies to Your Financial Planning
 
-O FinMoovi permite acompanhar cada um desses pilares em um único painel, facilitando a visualização do progresso.
+By applying the idea of “public spending” to your budget, you create a “household government” that can:
 
-## Start today
+1. **Identify weak demand:** If your report shows most of your income is being consumed by fixed expenses (rent, bills), it may be time to look for extra income sources (freelance, selling used items).
+2. **Inject stimulus:** Use an emergency‑reserve goal as a “stimulus package.” When the reserve reaches the desired amount (for example, three months of expenses), you have room to invest or face unexpected events.
+3. **Adjust personal fiscal policy:** If you’re spending too much on leisure, you can “raise taxes” (cut that spending) and “lower the interest rate” (use cheaper credit) to balance the budget.
 
-**Micro‑action (5 min):** Abra o FinMoovi, ative a captura inteligente e tire foto do último recibo que você tem em mãos (pode ser a conta de luz ou o comprovante de compra). O app vai categorizar automaticamente. Em seguida, vá até a aba “Metas”, crie uma meta chamada “Reserva de emergência” com o objetivo de economizar o equivalente a três meses de despesas. Pronto! Você já deu o primeiro passo para aplicar a lógica keynesiana ao seu bolso.
+## When Keynesianism Can Fail and How to Protect Yourself
+
+Just as government policies can be mis‑calibrated, personal decisions can also go wrong:
+
+- **Excessive spending:** If you raise spending too much without additional revenue, you can fall into debt. Use FinMoovi’s balance alert to avoid this.
+- **Personal inflation:** Buying everything at once can raise the average price of items (e.g., buying clothes on sale and then realizing you spent more than planned). The category report helps monitor this effect.
+- **Credit dependence:** If the stimulus comes from loans, the interest cost can outweigh the benefits. FinMoovi shows the total cost of debts, making the decision easier.
+
+## Long‑Term Strategy Inspired by Keynesianism
+
+Think of your future as a country that wants sustainable growth. Create a 5‑year plan that includes:
+
+- **Investment in education:** Courses that increase your income (similar to public infrastructure investment).
+- **Income diversification:** Side jobs or investments in assets (stocks, funds) that generate additional cash flow.
+- **Robust emergency reserve:** Equivalent to a “stabilization fund” for economic crisis moments.
+
+FinMoovi lets you monitor each of these pillars on a single dashboard, making progress visualization simple.
+
+## Start Today
+
+**Micro‑action (5 min):** Open FinMoovi, activate smart capture, and take a photo of the latest receipt you have on hand (it could be the electricity bill or a purchase receipt). The app will categorize it automatically. Then go to the “Goals” tab, create a goal called “Emergency reserve” with the target of saving the equivalent of three months of expenses. Done! You’ve taken the first step to apply Keynesian logic to your pocket.

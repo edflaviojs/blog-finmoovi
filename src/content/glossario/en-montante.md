@@ -17,78 +17,74 @@ seo:
   keywords: ["montante", "glossary", "finance"]
 ---
 
-## O que é o montante e por que ele te deixa acordado à noite
+## What is the amount and why it keeps you up at night
 
-Você já fez aquele cálculo rápido na cabeça: “Se eu guardar o salário que sobra no fim do mês, quanto vai virar no fim do ano?” E, na hora, a resposta parece um número que nunca chega, como se fosse magia. Esse número que você tenta adivinhar é o **montante** – a soma total que você tem depois de aplicar ou investir algum dinheiro, já incluindo os juros ou rendimentos que ele gerou. Em termos simples, montante = o que você colocou + o que ele ganhou ao longo do tempo.
+You’ve probably done that quick mental calculation: “If I save the leftover salary at the end of the month, how much will it become by the end of the year?” And, in the moment, the answer looks like a number that never arrives, as if it were magic. That number you’re trying to guess is the **amount** – the total sum you have after applying or investing some money, already including the interest or earnings it generated. In simple terms, amount = what you put in + what it earned over time.
 
-![O que é o montante e por que ele te deixa acordado à noite](/images/glossario/montante-inline-1.webp)
+![What is the amount and why it keeps you up at night](/images/glossario/montante-inline-1.webp)
 
+Many of us have already been in the situation of looking at the bank account and not understanding why the balance doesn’t match what we expected. Sometimes we forget to record an expense, sometimes the interest from an investment doesn’t appear clearly. This lack of a clear view of the amount can generate anxiety, wrong decisions, and even the feeling that money “disappears”.
 
+## How FinMoovi brings clarity to your amount
 
-Muitos de nós já passamos pela situação de olhar a conta bancária e não entender por que o saldo não bate com o que esperávamos. Às vezes, a gente esquece de anotar um gasto, às vezes o juros de um investimento não aparece de forma clara. Essa falta de visão clara do montante pode gerar ansiedade, decisões erradas e até a sensação de que o dinheiro “some”. 
+Imagine that, when you receive the receipt for a coffee (about the price of a daily coffee), you take a photo with your phone. FinMoovi reads the text on the receipt, identifies that “coffee” was spent and immediately places that amount in the “Food” category. At the same time, it updates your available **amount**, subtracting that expense and showing, in real time, how much is left to reach the goal of “saving the equivalent of three months’ rent”.
 
-## Como o FinMoovi traz clareza ao seu montante
+The big trick of FinMoovi is the **smart capture**: photo or voice of the receipt, automatic categorization and instant update of your amount. It doesn’t matter if the purchase was made in dollars, euros or the local currency – the app converts everything to your base currency, allowing you to see the total amount in a single dashboard without having to do mental math.
 
-Imagine que, ao receber o comprovante de compra de um café (cerca de o preço de um café diário), você tira uma foto com o celular. O FinMoovi reconhece o texto da nota, identifica que foi gasto “café” e já coloca esse valor na categoria “Alimentação”. Ao mesmo tempo, ele atualiza o seu **montante** disponível, subtraindo esse gasto e mostrando, em tempo real, quanto ainda resta para alcançar a meta de “economizar o equivalente a três meses de aluguel”. 
+## Why the amount matters for your planning
 
-A grande sacada do FinMoovi está no **smart capture**: foto ou voz do recibo, categorização automática e atualização instantânea do seu montante. Não importa se a compra foi feita em dólares, euros ou na moeda local – o app converte tudo para a sua moeda base, permitindo que você veja o montante total em um único painel, sem precisar fazer contas mentalmente.
+- **Real view of what you have**: Knowing exactly how much money is available avoids surprises when paying bills or making a larger investment.  
+- **Comparison of options**: When you see the amount of two different investments (for example, a savings account and an investment fund), it’s easy to choose the one that yields more.  
+- **Achievable goals**: Setting a goal to save the equivalent of “one month’s rent” only makes sense if you track the amount you’re accumulating.
 
-## Por que o montante importa para o seu planejamento
+![Why the amount matters for your planning](/images/glossario/montante-inline-3.webp)
 
-- **Visão real do que você tem**: Saber exatamente quanto dinheiro está disponível evita surpresas na hora de pagar contas ou fazer um investimento maior. 
-- **Comparação de opções**: Quando você vê o montante de duas aplicações diferentes (por exemplo, uma conta poupança e um fundo de investimento), fica fácil escolher a que rende mais. 
-- **Metas alcançáveis**: Definir que quer juntar o equivalente a “um mês de aluguel” só faz sentido se você acompanha o montante que está acumulando.
+## How to calculate the amount in practice (without complicated formulas)
 
-![Por que o montante importa para o seu planejamento](/images/glossario/montante-inline-3.webp)
+1. **Start with the initial value** – the money you have today or that you have just invested.  
+2. **Add the earnings** – simple interest, compound interest or dividends that the investment generated. FinMoovi does this automatically, but if you want to do it by hand, just add the earned amount to the principal.  
+3. **Subtract the expenses** – any cost you recorded, whether in cash, card or boleto.  
 
+**Practical tip:** **Always record each expense on the same day**; that way your amount reflects the reality of your pocket and you avoid “surprises” at the end of the month.
 
+## FinMoovi tools that help you control the amount
 
-## Como calcular o montante na prática (sem fórmulas complicadas)
+- **Multi‑currency**: Automatically converts purchases made in different currencies, keeping the amount consolidated.  
+- **Cash flow and reports**: Charts that show money in and out, helping you identify where the amount is growing or shrinking.  
+- **Monthly planning and goals**: Set objectives (e.g.: “save the equivalent of two weekend trips”) and see your amount’s progress in real time.  
+- **Credit cards and accounts**: The app imports statements and payments, adjusting the amount as soon as the bill is paid.  
+- **Shopping mode**: Create grocery lists; the app adds everything in real time, showing the impact on your amount before you even reach the checkout.  
+- **Alerts and reminders**: Notifications when the balance falls below a limit you set, preventing the amount from going negative.  
+- **Offline / PWA / Sync**: Even without internet, you can record expenses; when you reconnect, everything syncs and the amount is updated.
 
-1. **Comece com o valor inicial** – o dinheiro que você tem hoje ou que acabou de aplicar.  
-2. **Adicione os rendimentos** – juros simples, juros compostos ou dividendos que o investimento gerou. O FinMoovi faz isso automaticamente, mas se quiser fazer à mão, basta somar o valor ganho ao principal.  
-3. **Subtraia os gastos** – qualquer despesa que você registrou, seja em dinheiro, cartão ou boleto.  
+## Three practical tips to maximize your amount
 
-**Practical tip:** **Sempre registre cada gasto no mesmo dia**; assim o seu montante reflete a realidade do seu bolso e você evita “surpresas” no fim do mês.
+- **Practical tip:** **Set aside 10 % of each paycheck** for a “growth fund”. That money goes straight to an investment that yields more than a checking account, increasing the amount effortlessly.  
+- **Practical tip:** **Review your categories monthly**. If FinMoovi classifies an expense as “entertainment” but it was actually “education”, adjust it. Correct classification ensures the amount allocated to each goal is aligned.  
+- **Practical tip:** **Use shopping mode before going to the supermarket**. Create the list, see the estimated total and decide if it fits within your available amount; that way you avoid impulse purchases that shrink the balance.
 
-## Ferramentas do FinMoovi que ajudam a controlar o montante
+## Avoiding common pitfalls
 
-- **Multi‑currency**: Converte automaticamente compras feitas em diferentes moedas, mantendo o montante consolidado.  
-- **Cash flow e relatórios**: Gráficos que mostram a entrada e saída de dinheiro, ajudando a identificar onde o montante está crescendo ou diminuindo.  
-- **Planejamento mensal e metas**: Defina objetivos (ex.: “economizar o equivalente a duas viagens de fim de semana”) e veja o progresso do seu montante em tempo real.  
-- **Cartões de crédito e contas**: O app importa faturas e pagamentos, ajustando o montante assim que a fatura é quitada.  
-- **Modo compras**: Crie listas de supermercado; o app soma tudo em tempo real, mostrando o impacto no seu montante antes mesmo de chegar ao caixa.  
-- **Alertas e lembretes**: Notificações quando o saldo cair abaixo de um limite que você definiu, evitando que o montante fique negativo.  
-- **Offline / PWA / Sync**: Mesmo sem internet, você pode registrar despesas; quando se conectar, tudo sincroniza e o montante é atualizado.
+Many believe that simply “saving money” will make the amount grow on its own. In practice, inflation (the general rise in prices) erodes purchasing power. If your money sits idle in a checking account, the amount may grow in number but loses real value. Therefore, combining **investments that earn above inflation** with expense control is the winning strategy. FinMoovi lets you compare different products (CDB, funds, ETFs) and shows the projected amount for each, making the choice easier.
 
-## Três dicas práticas para maximizar o seu montante
+## How to use FinMoovi to track the amount in different life stages
 
-- **Practical tip:** **Reserve 10 % do que receber em cada pagamento** para um “fundo de crescimento”. Esse dinheiro vai direto para uma aplicação que rende mais que a conta corrente, aumentando o montante sem esforço.  
-- **Practical tip:** **Revise suas categorias mensalmente**. Se o FinMoovi classificar um gasto como “entretenimento” mas na verdade era “educação”, ajuste. Uma classificação correta garante que o montante destinado a cada objetivo esteja alinhado.  
-- **Practical tip:** **Use o modo compras antes de ir ao supermercado**. Crie a lista, veja o total estimado e decida se cabe no seu montante disponível; assim você evita compras por impulso que diminuem o saldo.
+- **Early career**: Focus on building an emergency fund (about three to six times a monthly expense). The app shows the accumulated amount and notifies you when the goal is reached.  
+- **Buying a home or car**: Set the goal of “down‑payment amount” and track the amount being saved each month. Use smart capture to record each extra deposit.  
+- **Retirement**: Simulate different return scenarios; FinMoovi projects the future amount based on current contributions and expected interest, helping you adjust the plan.
 
-## Evitando armadilhas comuns
+## Why the amount is not just a number, but a decision
 
-Muitos acreditam que basta “guardar dinheiro” que o montante vai crescer sozinho. Na prática, a inflação (o aumento geral dos preços) corrói o poder de compra. Se o seu dinheiro fica parado na conta corrente, o montante pode até crescer em número, mas perde valor real. Por isso, combinar **aplicações que rendam acima da inflação** com o controle de despesas é a estratégia vencedora. O FinMoovi permite comparar diferentes produtos (CDB, fundos, ETFs) e mostrar o montante projetado para cada um, facilitando a escolha.
-
-## Como usar o FinMoovi para acompanhar o montante em diferentes fases da vida
-
-- **Início de carreira**: Foque em criar um fundo de emergência (cerca de três a seis vezes o valor de um gasto mensal). O app mostra o montante acumulado e avisa quando a meta foi atingida.  
-- **Compra de imóvel ou carro**: Defina a meta de “valor da entrada” e acompanhe o montante que está sendo guardado mensalmente. Use o smart capture para registrar cada depósito extra.  
-- **Aposentadoria**: Simule diferentes cenários de rendimento; o FinMoovi projeta o montante futuro com base nos aportes atuais e nos juros esperados, ajudando a ajustar o plano.
-
-## Por que o montante não é só número, mas decisão
-
-Cada centavo que entra ou sai altera o seu montante e, consequentemente, as escolhas que você pode fazer. Quando o montante está saudável, você tem liberdade para viajar, investir em cursos ou ajudar alguém. Quando está baixo, as decisões ficam limitadas a “pagar as contas”. O controle diário, facilitado pelo FinMoovi, transforma esse número em um aliado, não em um vilão.
+Every cent that comes in or goes out changes your amount and, consequently, the choices you can make. When the amount is healthy, you have freedom to travel, invest in courses or help someone. When it’s low, decisions are limited to “pay the bills”. Daily control, made easy by FinMoovi, turns this number into an ally, not a villain.
 
 ## Start today
 
-**Micro‑ação de 5 minutos no FinMoovi:**
+**5‑minute micro‑action in FinMoovi:**
 
-1. Abra o app e vá para a tela “Captura inteligente”.  
-2. Tire foto de um recibo recente (pode ser o da última compra de supermercado).  
-3. Confirme a categoria sugerida ou ajuste se necessário.  
-4. Veja instantaneamente como esse gasto impactou o seu montante total.  
-5. Defina um alerta de “saldo mínimo” para receber notificação quando o montante cair abaixo de “o valor de um jantar fora”.  
+1. Open the app and go to the “Smart capture” screen.  
+2. Take a photo of a recent receipt (it can be the last grocery purchase).  
+3. Confirm the suggested category or adjust if needed.  
+4. Instantly see how that expense impacted your total amount.  
+5. Set a “minimum balance” alert to receive a notification when the amount drops below “the cost of a dinner out”.  
 
-Com esses poucos cliques, você já começa a ter clareza sobre o seu montante e a usar o FinMoovi como parceiro na sua jornada financeira.
+With just a few clicks, you’ll start gaining clarity about your amount and using FinMoovi as a partner in your financial journey.

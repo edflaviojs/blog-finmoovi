@@ -25,30 +25,28 @@ seo:
 
 *Source: AwesomeAPI — rates as of 11/9/2026*
 
-## Resumo da Semana (02 a 09 de novembro de 2026)
+## Weekly Summary (Nov 2 to 9, 2026)
 
-### 1. Dólar e Euro: como se comportaram?
-Nesta semana o dólar ficou cotado em torno de **R$ 5,50** e o euro em torno de **R$ 6,14**. Não houve grandes oscilações nos pares, o que deixou o cenário cambial relativamente tranquilo para quem tem gastos em moedas estrangeiras ou investimentos atrelados a elas. Para quem acompanha a variação do dia a dia, a estabilidade ajuda a planejar melhor as compras online, viagens ou a compra de ativos internacionais sem surpresas desagradáveis.
+### 1. Dollar and Euro: how did they behave?
+This week the dollar was quoted around **R$ 5.50** and the euro around **R$ 6.14**. There were no major fluctuations in the pairs, which kept the exchange‑rate scene relatively calm for those with expenses in foreign currencies or investments linked to them. For anyone who follows daily movements, the stability helps plan online purchases, trips, or buying international assets without unpleasant surprises.
 
-### 2. Selic e o impacto nos investimentos
-A taxa [Selic](/en/glossario/en-selic) continua em **13,75% ao ano**, conforme o último dado do Copom. Essa taxa alta ainda pesa nos custos de financiamento, mas também oferece um retorno atrativo para quem tem dinheiro aplicado em renda fixa. Títulos públicos e CDBs que acompanham a Selic tendem a render próximo a esse patamar, o que pode ser interessante para quem busca segurança e previsibilidade. Por outro lado, o custo de oportunidade de deixar o dinheiro parado em poupança ou em investimentos de baixo rendimento fica ainda maior.
+### 2. Selic and the impact on investments
+The [Selic](/en/glossario/en-selic) rate remains at **13.75% per year**, according to the latest Copom data. This high rate still weighs on financing costs, but it also offers an attractive return for those who have money in fixed‑income products. Public bonds and CDBs that track the Selic tend to yield close to this level, which can be interesting for investors seeking safety and predictability. On the other hand, the opportunity cost of leaving money idle in a savings account or low‑yield investments becomes even higher.
 
-O índice de inflação acumulada em 12 meses, o **IPCA 4,58%**, indica que a pressão de preços ainda está sob controle, mas não desapareceu. Quando a inflação está abaixo da meta, a Selic tende a permanecer firme, mantendo o cenário de juros altos. Isso significa que, para quem tem perfil mais conservador, a renda fixa continua como a escolha mais lógica. Já os investidores que buscam maior potencial de retorno podem olhar para fundos de ações ou multimercados, lembrando que o custo de capital ainda é elevado.
+The 12‑month accumulated inflation index, **IPCA 4.58%**, shows that price pressure is still under control, but it hasn’t disappeared. When inflation is below the target, the Selic tends to stay firm, maintaining a high‑interest‑rate environment. This means that for more conservative profiles, fixed income remains the most logical choice. Investors looking for higher return potential may consider equity or multimarket funds, remembering that the cost of capital is still elevated.
 
-### 3. Dica prática para o investidor pessoa física
-**Use a diversificação como escudo contra a volatilidade cambial.** Se você tem parte do [patrimônio](/en/glossario/en-patrimonio) em reais e outra em dólares ou euros (por exemplo, por meio de fundos internacionais ou contas em corretoras estrangeiras), a estabilidade que vimos nesta semana pode ser aproveitada para rebalancear. Avalie a proporção que faz sentido para seu objetivo: se a meta é proteger o poder de compra, mantenha uma parcela em ativos que acompanhem a inflação; se o objetivo é ganhar com a valorização de moedas, considere uma alocação moderada em ativos atrelados ao dólar ou euro.
+### 3. Practical tip for the individual investor
+**Use diversification as a shield against exchange‑rate volatility.** If you have part of your [wealth](/en/glossario/en-patrimonio) in reais and another part in dollars or euros (for example, through international funds or foreign brokerage accounts), the stability we saw this week can be used to rebalance. Assess the proportion that makes sense for your goal: if the aim is to protect purchasing power, keep a share in assets that track inflation; if the goal is to profit from currency appreciation, consider a moderate allocation to dollar‑ or euro‑linked assets.
 
-Uma ferramenta que facilita esse acompanhamento é o **FinMoovi**. O app permite visualizar, em tempo real, o desempenho dos seus investimentos em diferentes moedas, além de enviar alertas quando a cotação sai do padrão que você definiu. Assim, você ganha clareza para decidir quando é o melhor momento de comprar ou vender.
+A tool that makes this monitoring easier is **FinMoovi**. The app lets you view, in real time, the performance of your investments in different currencies, and it sends alerts when the quote moves outside the range you set. That way, you gain clarity to decide the best moment to buy or sell.
 
-### 4. O que observar na próxima semana
-- **Cenário cambial:** fique de olho em notícias que possam impactar o dólar e o euro, como decisões de política monetária em outros países ou mudanças no comércio internacional. Mesmo que a taxa atual esteja estável, eventos externos podem gerar movimentos bruscos.
-- **Decisões de política interna:** embora a Selic esteja em **13,75%**, o próximo encontro do Copom pode trazer pistas sobre a direção futura da taxa. Qualquer sinal de mudança na postura do Banco Central será relevante para quem tem investimentos em renda fixa.
-- **Inflação:** o IPCA de **4,58%** ainda é um número a acompanhar. Se a inflação começar a subir novamente, isso pode influenciar a estratégia de proteção do poder de compra.
-- **Mercado de ações:** com juros altos, setores mais resilientes (como utilities e consumo básico) costumam se destacar. Avalie se há oportunidades de comprar ações com boa geração de caixa e dividendos consistentes.
+### 4. What to watch next week
+- **Exchange‑rate scenario:** keep an eye on news that could affect the dollar and the euro, such as monetary‑policy decisions abroad or changes in international trade. Even if the current rate is stable, external events can trigger sharp moves.
+- **Domestic policy decisions:** although the Selic is at **13.75%**, the next Copom meeting may give clues about the future direction of the rate. Any signal of a shift in the Central Bank’s stance will be relevant for fixed‑income investors.
+- **Inflation:** the **IPCA 4.58%** remains a figure to watch. If inflation starts rising again, it could influence the strategy to protect purchasing power.
+- **Stock market:** with high interest rates, more resilient sectors (like utilities and consumer staples) tend to stand out. Evaluate whether there are opportunities to buy stocks with solid cash generation and consistent dividends.
 
-Em resumo, a semana foi de calmaria cambial e de manutenção da taxa Selic em patamar elevado. Para o investidor comum, isso significa que a renda fixa continua atraente, mas a diversificação entre moedas e ativos pode trazer mais segurança e potencial de ganho. Use o FinMoovi para acompanhar tudo de perto e tomar decisões mais informadas. Boa semana de investimentos!
-
+In short, the week was marked by calm exchange‑rate conditions and a high Selic rate. For the average investor, this means fixed income remains attractive, but diversification across currencies and assets can provide more security and upside potential. Use FinMoovi to keep everything close and make more informed decisions. Have a great investment week!
 
 ---
 **Ready to track your investments? [Try FinMoovi free for 7 days](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**
-

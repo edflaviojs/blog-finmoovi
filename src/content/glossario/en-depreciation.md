@@ -18,94 +18,94 @@ seo:
   keywords: ["depreciation", "glossary", "finance"]
 ---
 
-## O que acontece quando o carro perde valor
+## What Happens When the Car Loses Value
 
-Você acabou de comprar um carro usado por cerca de o preço de um mês de aluguel. Depois de alguns anos, percebe que, ao tentar vendê‑lo, o valor que recebe está bem abaixo do que pagou. Essa sensação de “perdi dinheiro” tem um nome técnico: **depreciação**. É a queda do valor de um bem ao longo do tempo, causada pelo uso, desgaste e mudanças no mercado. Quando você entende como a depreciação funciona, consegue planejar melhor compras grandes, evitar surpresas e ainda usar ferramentas como o FinMoovi para manter tudo sob controle.
+You just bought a used car for about the price of one month’s rent. After a few years, you realize that when you try to sell it, the amount you receive is well below what you paid. That “I lost money” feeling has a technical name: **depreciation**. It is the decline in the value of an asset over time, caused by use, wear and tear, and market changes. When you understand how depreciation works, you can better plan big purchases, avoid surprises, and even use tools like FinMoovi to keep everything under control.
 
-![O que acontece quando o carro perde valor](/images/glossario/depreciacao-inline-1.webp)
-
-
-
-## Como a depreciação afeta seu bolso
-
-A depreciação não escolhe alvo: afeta carros, eletrodomésticos, móveis e até equipamentos de trabalho. Ela pode ser:
-
-- **Linear** – o bem perde a mesma quantia a cada ano (ex.: perder 10 % ao ano).
-- **Acelerada** – a maior parte da perda acontece nos primeiros anos (comum em veículos).
-- **Por uso** – o valor diminui conforme a quilometragem ou horas de uso.
-
-Essas variações mudam a forma como você deve registrar o gasto. Se você compra um laptop por “o preço de duas refeições fora”, mas ele perde 30 % do valor no primeiro ano, seu orçamento mensal precisa refletir esse desgaste, senão você acaba gastando mais do que realmente tem.
-
-## FinMoovi entra em cena: captura inteligente + categorização automática
-
-Imagine receber a nota fiscal do seu carro novo e, em vez de digitar tudo, abrir o FinMoovi, apontar a câmera do celular e deixar que o app reconheça o valor, a data e a categoria “veículos”. Em segundos, a despesa aparece no seu histórico e, graças à **categorização automática**, o app já sabe que aquele bem vai depreciar ao longo dos próximos anos.
-
-![FinMoovi entra em cena: captura inteligente + categorização automática](/images/glossario/depreciacao-inline-3.webp)
+![What Happens When the Car Loses Value](/images/glossario/depreciacao-inline-1.webp)
 
 
 
-Além disso, o FinMoovi trabalha em **multi‑moeda**, então se você compra um gadget nos EUA ou na Europa, o valor é convertido na sua moeda base e registrado sem esforço. Isso evita a confusão de trocar notas de diferentes países e ainda permite comparar a depreciação de bens comprados em diferentes moedas.
+## How Depreciation Affects Your Wallet
 
-## Por que acompanhar a depreciação é importante
+Depreciation doesn’t pick favorites: it affects cars, appliances, furniture, and even work equipment. It can be:
 
-- **Planejamento de substituição** – saber que seu carro perde 20 % ao ano ajuda a definir quando será mais barato comprar outro.
-- **Negociação de venda** – ao ter o histórico de depreciação, você tem argumentos claros ao negociar com compradores.
-- **Impacto nos impostos** – em alguns países, a depreciação pode ser deduzida de impostos; ter o registro correto evita dores de cabeça.
-- **Visão real do patrimônio** – seu balanço pessoal reflete o valor real dos bens, não o preço de compra.
+- **Straight‑line** – the asset loses the same amount each year (e.g., losing 10 % per year).
+- **Accelerated** – most of the loss occurs in the first years (common with vehicles).
+- **Usage‑based** – the value drops according to mileage or hours of use.
 
-## Como registrar a depreciação no FinMoovi
+These variations change how you should record the expense. If you buy a laptop for “the price of two meals out,” but it loses 30 % of its value in the first year, your monthly budget needs to reflect that wear, otherwise you end up spending more than you actually have.
 
-1. **Capture o recibo** – foto ou voz, o app reconhece o valor e a data.
-2. **Selecione a categoria “Bens duráveis”** – o FinMoovi sugere o método de depreciação (linear ou acelerado) com base no tipo de bem.
-3. **Defina o prazo** – informe quantos anos você espera usar o bem; o app calcula a perda anual.
-4. **Acompanhe o relatório** – a seção de “Patrimônio” mostra o valor atual do bem, a depreciação acumulada e projeções futuras.
+## FinMoovi Steps In: Smart Capture + Automatic Categorization
 
-## Dicas práticas para lidar com a depreciação
+Imagine receiving the invoice for your new car and, instead of typing everything, you open FinMoovi, point your phone’s camera at it, and let the app recognize the amount, date, and the “vehicles” category. In seconds, the expense appears in your history and, thanks to **automatic categorization**, the app already knows that the asset will depreciate over the coming years.
 
-**Practical tip:** Ao comprar um bem que você pretende usar por menos de cinco anos, escolha o método acelerado. Ele reflete melhor a perda rápida de valor nos primeiros anos e evita superestimar seu patrimônio.
+![FinMoovi Steps In: Smart Capture + Automatic Categorization](/images/glossario/depreciacao-inline-3.webp)
 
-**Practical tip:** Use o recurso de “alerta de saldo” do FinMoovi para ser avisado quando a depreciação acumulada de um bem ultrapassar 50 % do valor de compra. Assim, você já pensa em substituir ou vender antes que o valor caia ainda mais.
 
-**Practical tip:** Quando fizer compras em moeda estrangeira, ative a opção “taxa de câmbio automática”. O FinMoovi converte o valor no momento da captura, garantindo que a depreciação seja calculada com o valor correto.
 
-## Relatórios que dão clareza
+In addition, FinMoovi works in **multi‑currency**, so if you buy a gadget in the US or Europe, the amount is converted to your base currency and recorded effortlessly. This avoids the hassle of juggling notes from different countries and also lets you compare depreciation of assets bought in different currencies.
 
-O FinMoovi gera relatórios mensais que mostram:
+## Why Tracking Depreciation Is Important
 
-- **Despesas com depreciação** – quanto seu patrimônio perdeu naquele mês.
-- **Patrimônio líquido** – soma dos ativos menos a depreciação acumulada.
-- **Projeções de substituição** – datas estimadas para troca de bens com base na taxa de depreciação.
+- **Replacement planning** – knowing your car loses 20 % per year helps you decide when it will be cheaper to buy another.
+- **Sale negotiation** – having a depreciation history gives you clear arguments when negotiating with buyers.
+- **Tax impact** – in some countries, depreciation can be deducted from taxes; having the correct record avoids headaches.
+- **Real view of net worth** – your personal balance sheet reflects the actual value of assets, not the purchase price.
 
-Esses relatórios são exportáveis em PDF ou CSV, facilitando a análise ou a entrega a um contador, se necessário.
+## How to Record Depreciation in FinMoovi
 
-## Integração com outras áreas do app
+1. **Capture the receipt** – photo or voice, the app recognizes the amount and date.
+2. **Select the “Durable goods” category** – FinMoovi suggests a depreciation method (straight‑line or accelerated) based on the type of asset.
+3. **Set the term** – indicate how many years you expect to use the asset; the app calculates the annual loss.
+4. **Follow the report** – the “Net Worth” section shows the current value of the asset, accumulated depreciation, and future projections.
 
-- **Fluxo de caixa** – a depreciação entra como saída não monetária, ajudando a entender o dinheiro “real” disponível.
-- **Metas mensais** – se sua meta é economizar o equivalente a duas mensalidades de academia, o app desconta a depreciação dos bens para mostrar quanto ainda falta.
-- **Cartões de crédito** – ao pagar um bem à vista ou parcelado, o FinMoovi registra a compra no cartão e já inclui a depreciação nos cálculos de patrimônio.
-- **Modo compras** – ao montar uma lista de supermercado, o app soma o total em tempo real e, se houver algum bem durável na lista (ex.: nova geladeira), já inclui a depreciação prevista.
+## Practical Tips for Dealing With Depreciation
 
-## Quando a depreciação pode ser vantajosa
+**Practical tip:** When buying an asset you plan to use for less than five years, choose the accelerated method. It better reflects the rapid loss of value in the early years and prevents you from over‑estimating your net worth.
 
-Nem tudo é perda. Em alguns casos, a depreciação cria oportunidades:
+**Practical tip:** Use FinMoovi’s “balance alert” feature to be notified when the accumulated depreciation of an asset exceeds 50 % of its purchase price. That way you can think about replacing or selling it before the value drops further.
 
-- **Venda de ativos usados** – ao conhecer o valor residual, você pode negociar melhor.
-- **Benefícios fiscais** – empresas e freelancers podem deduzir a depreciação de equipamentos, reduzindo a base de cálculo de impostos.
-- **Planejamento de upgrades** – ao saber que seu smartphone perde 30 % ao ano, você pode programar a troca antes que o desempenho caia.
+**Practical tip:** When making purchases in foreign currency, enable the “automatic exchange rate” option. FinMoovi converts the amount at capture time, ensuring depreciation is calculated with the correct value.
 
-## Erros comuns e como evitá‑los
+## Reports That Bring Clarity
 
-- **Ignorar a depreciação** – tratar o bem como se mantivesse o valor de compra inflaciona seu patrimônio.
-- **Usar apenas o preço de compra** – sem considerar a taxa de desgaste, você pode superestimar sua capacidade de investimento.
-- **Não atualizar o prazo de uso** – se você decide vender um bem antes do previsto, ajuste a taxa no FinMoovi para refletir a depreciação real.
+FinMoovi generates monthly reports that show:
 
-## Comece a monitorar hoje mesmo
+- **Depreciation expenses** – how much your net worth decreased that month.
+- **Net worth** – sum of assets minus accumulated depreciation.
+- **Replacement projections** – estimated dates for swapping assets based on the depreciation rate.
 
-A depreciação pode parecer um detalhe técnico, mas, na prática, é a diferença entre saber exatamente quanto vale o que você tem e viver no escuro financeiro. Com o FinMoovi, registrar, acompanhar e planejar a depreciação fica tão simples quanto tirar uma foto.
+These reports are exportable as PDF or CSV, making analysis or hand‑off to an accountant easy if needed.
+
+## Integration With Other Areas of the App
+
+- **Cash flow** – depreciation enters as a non‑cash outflow, helping you understand the “real” money available.
+- **Monthly goals** – if your goal is to save the equivalent of two gym memberships, the app subtracts asset depreciation to show how much is still missing.
+- **Credit cards** – when paying for an asset outright or in installments, FinMoovi logs the purchase on the card and already includes depreciation in the net‑worth calculations.
+- **Shopping mode** – when building a grocery list, the app sums the total in real time and, if there’s a durable good on the list (e.g., a new refrigerator), it already adds the expected depreciation.
+
+## When Depreciation Can Be Advantageous
+
+Not everything is loss. In some cases, depreciation creates opportunities:
+
+- **Selling used assets** – knowing the residual value lets you negotiate better.
+- **Tax benefits** – businesses and freelancers can deduct equipment depreciation, reducing the taxable base.
+- **Upgrade planning** – knowing your smartphone loses 30 % per year lets you schedule a replacement before performance drops.
+
+## Common Mistakes and How to Avoid Them
+
+- **Ignoring depreciation** – treating an asset as if it kept its purchase value inflates your net worth.
+- **Using only the purchase price** – without considering wear rate, you may overestimate your investment capacity.
+- **Not updating the usage term** – if you decide to sell an asset earlier than planned, adjust the rate in FinMoovi to reflect the actual depreciation.
+
+## Start Monitoring Today
+
+Depreciation may seem like a technical detail, but in practice it’s the difference between knowing exactly how much what you own is worth and living in financial darkness. With FinMoovi, recording, tracking, and planning depreciation is as simple as taking a photo.
 
 ## Start today
-1. Abra o FinMoovi e toque em “+ Nova despesa”.
-2. Use a câmera para fotografar o recibo da última compra de um bem durável (ex.: eletrodoméstico).
-3. Selecione “Bens duráveis” e escolha o método de depreciação sugerido.
-4. Defina o tempo de uso esperado (ex.: 4 anos) e confirme.
-5. Pronto! Seu bem já está no relatório de patrimônio e a depreciação será calculada automaticamente.
+1. Open FinMoovi and tap “+ New expense”.
+2. Use the camera to photograph the receipt of your latest durable‑goods purchase (e.g., appliance).
+3. Select “Durable goods” and choose the suggested depreciation method.
+4. Set the expected usage time (e.g., 4 years) and confirm.
+5. Done! Your asset is now in the net‑worth report and depreciation will be calculated automatically.

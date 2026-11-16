@@ -18,95 +18,95 @@ seo:
   keywords: ["equity", "glossary", "finance"]
 ---
 
-## O que está acontecendo na sua conta?
+## What’s happening in your account?
 
-Você acabou de pagar a conta de luz, o aluguel e ainda tentou guardar um pouco para a viagem dos sonhos, mas ao abrir o extrato do banco percebeu que o saldo está quase zero. A sensação de “onde foi todo o dinheiro?” é comum, principalmente quando a gente mistura salário, cartão de crédito, compras online e aquele dinheirinho guardado em diferentes moedas. No meio desse caos, a palavra **equity** aparece em conversas sobre investimentos, mas você não tem certeza se ela tem a ver com o seu dia a dia ou só com quem fala de bolsa de valores.
+You just paid the electricity bill, the rent, and even tried to set aside a bit for the dream trip, but when you opened the bank statement you noticed the balance is almost zero. The “where did all the money go?” feeling is common, especially when we mix salary, credit cards, online purchases, and that little stash saved in different currencies. In the middle of this chaos, the word **equity** pops up in investment conversations, but you’re not sure if it has anything to do with your everyday life or only with people who talk about the stock market.
 
-![O que está acontecendo na sua conta?](/images/glossario/equity-inline-1.webp)
-
-
-
-## Entendendo equity de forma simples
-
-Equity, ou patrimônio líquido, é basicamente a parte do seu patrimônio que realmente pertence a você, depois de descontar tudo o que você deve. Imagine que você tem:
-
-- Um carro avaliado em 20 mil dólares
-- Um apartamento que vale 150 mil dólares
-- Uma poupança de 10 mil dólares
-
-E, ao mesmo tempo, tem:
-
-- Um financiamento de carro de 8 mil dólares
-- Um empréstimo pessoal de 5 mil dólares
-
-Seu equity seria: (20 + 150 + 10) − (8 + 5) = 167 mil dólares. Em outras palavras, equity é a “casa própria” do seu dinheiro, a parte que não está comprometida com dívidas. Quando falamos de ações, equity também pode significar a participação que você tem em uma empresa – cada ação representa um pedacinho do equity da companhia.
-
-## Por que equity importa para quem não investe?
-
-Mesmo que você nunca tenha comprado uma ação, o conceito de equity ajuda a responder perguntas essenciais:
-
-![Por que equity importa para quem não investe?](/images/glossario/equity-inline-3.webp)
+![What’s happening in your account?](/images/glossario/equity-inline-1.webp)
 
 
 
-- **Quanto do meu patrimônio está livre de dívidas?**  
-- **Se eu vendesse tudo o que tenho, quanto sobraria depois de pagar tudo que devo?**  
-- **Qual a real capacidade de investimento que eu tenho?**
+## Understanding equity in simple terms
 
-Essas respostas são a base para decisões como: comprar um imóvel, fazer um upgrade no carro ou começar a investir em um fundo de emergência. Sem saber seu equity, você pode acabar comprometendo mais do que pode, como usar o cartão de crédito para cobrir despesas básicas e acabar preso em juros altos.
+Equity, or net worth, is basically the part of your wealth that truly belongs to you after subtracting everything you owe. Imagine you have:
 
-## Como o FinMoovi deixa o cálculo do equity no seu bolso
+- A car valued at $20,000
+- An apartment worth $150,000
+- A savings account of $10,000
 
-A maioria dos aplicativos de finanças só registra entradas e saídas, mas o FinMoovi vai além. Ele tem um recurso de **smart capture** que permite tirar foto do recibo ou gravar a voz descrevendo a compra, e o app categoriza tudo automaticamente. Além disso, ele trabalha em **multi‑currency**, então você vê tudo em dólares, euros ou a moeda que preferir, sem precisar converter manualmente.
+And, at the same time, you have:
 
-Com esses dados, o FinMoovi gera um relatório de **cash flow** (fluxo de caixa) que mostra quanto entra, quanto sai e, crucialmente, quanto do seu patrimônio está livre de dívidas – ou seja, seu equity. Você ainda pode definir metas mensais, como “acumular 10% do meu equity em investimentos” e acompanhar o progresso em tempo real.
+- A car loan of $8,000
+- A personal loan of $5,000
 
-## Passos práticos para melhorar seu equity
+Your equity would be: (20 + 150 + 10) − (8 + 5) = $167,000. In other words, equity is the “home ownership” of your money, the portion that isn’t tied up in debt. When we talk about stocks, equity can also mean the ownership you have in a company – each share represents a little piece of the company’s equity.
 
-**Practical tip:** **Liste todos os seus bens e dívidas em um único lugar**. Use o modo “shopping” do FinMoovi para criar uma lista de tudo que você possui (carro, casa, investimentos) e outra para todas as obrigações (financiamentos, cartões, empréstimos). O app soma tudo automaticamente e mostra seu equity atual.
+## Why does equity matter to non‑investors?
 
-**Practical tip:** **Priorize pagar dívidas com juros altos**. Se o seu cartão de crédito tem juros de 15% ao ano, cada pagamento extra reduz sua dívida e aumenta seu equity mais rápido do que guardar o dinheiro em uma conta de poupança.
+Even if you’ve never bought a share, the equity concept helps answer essential questions:
 
-**Practical tip:** **Reserve um percentual fixo da sua renda para aumentar o equity**. Defina, por exemplo, 20% da sua renda líquida para ser direcionado a investimentos ou à amortização de empréstimos. O FinMoovi envia alertas de saldo e lembra quando esse percentual ainda não foi atingido.
+![Why equity matters to non‑investors?](/images/glossario/equity-inline-3.webp)
 
-## Estratégias avançadas (mas fáceis de aplicar)
 
-- **Reavalie ativos periodicamente**: O valor de um carro ou de um imóvel pode mudar. Use o recurso de captura de foto para registrar avaliações recentes e mantenha seu equity sempre atualizado.
-- **Diversifique em moedas**: Se você ganha em dólares mas tem despesas em euros, mantenha parte do seu equity em cada moeda. O FinMoovi converte tudo em tempo real, evitando surpresas cambiais.
-- **Use o relatório de metas**: Crie uma meta “Equity de 30% acima do valor das dívidas em 12 meses”. O app mostrará o caminho, indicando quanto você precisa economizar ou investir a cada mês.
 
-## Quando o equity pode ser um sinal de alerta
+- **How much of my wealth is debt‑free?**  
+- **If I sold everything I own, how much would be left after paying all my debts?**  
+- **What is my real investment capacity?**
 
-Se o seu equity está negativo (ou seja, suas dívidas superam seus bens), é hora de agir. Isso pode acontecer quando:
+These answers are the foundation for decisions like buying a home, upgrading the car, or starting an emergency‑fund investment. Without knowing your equity, you might end up over‑committing, like using a credit card to cover basic expenses and getting stuck with high interest.
 
-- Você acumulou vários cartões de crédito sem pagar o total.
-- Financiou um carro novo e ainda tem um empréstimo estudantil alto.
-- Investiu em ativos que perderam valor sem ter reservas de emergência.
+## How FinMoovi puts the equity calculation in your pocket
 
-Nessa situação, o FinMoovi pode gerar um **relatório de risco** que destaca quais dívidas têm maior impacto no seu equity e sugere um plano de pagamento escalonado.
+Most finance apps only record income and expenses, but FinMoovi goes further. It has a **smart capture** feature that lets you snap a receipt photo or record a voice note describing the purchase, and the app categorizes everything automatically. In addition, it works in **multi‑currency**, so you see everything in dollars, euros, or whichever currency you prefer, without having to convert manually.
 
-## Como transformar o conceito de equity em hábito mensal
+With this data, FinMoovi generates a **cash flow** report that shows what comes in, what goes out, and, crucially, how much of your wealth is debt‑free – that is, your equity. You can also set monthly goals, like “accumulate 10% of my equity in investments,” and track progress in real time.
 
-1. **Capture tudo**: Use a foto do recibo ou a gravação de voz para registrar cada gasto. O app categoriza e atualiza seu fluxo de caixa em segundos.  
-2. **Revise o relatório semanal**: Dedique 10 minutos para olhar o gráfico de equity. Se o número cair, identifique a origem (dívida nova, compra grande, etc.).  
-3. **Ajuste metas**: Se o objetivo de aumentar o equity não está sendo cumprido, reduza gastos supérfluos ou aumente o pagamento de dívidas. O FinMoovi envia lembretes de saldo e alertas de pagamento.
+## Practical steps to improve your equity
 
-## Por que o FinMoovi é o aliado perfeito
+**Practical tip:** **List all your assets and liabilities in one place**. Use FinMoovi’s “shopping” mode to create a list of everything you own (car, house, investments) and another for all obligations (loans, credit cards, other debts). The app adds everything up automatically and shows your current equity.
 
-- **Smart capture** elimina a necessidade de digitar cada despesa.  
-- **Multi‑currency** garante que você veja seu patrimônio real, independentemente da moeda.  
-- **Cash flow e relatórios** dão clareza sobre o que está acontecendo com seu equity.  
-- **Modo offline/PWA** permite registrar tudo mesmo sem internet, sincronizando depois.  
-- **Alertas de saldo** avisam quando o equity está em risco, ajudando a prevenir surpresas.
+**Practical tip:** **Prioritize paying high‑interest debt**. If your credit card carries 15% annual interest, each extra payment reduces debt and boosts your equity faster than keeping the money in a savings account.
+
+**Practical tip:** **Allocate a fixed percentage of your income to grow equity**. For example, set aside 20% of your net income for investments or loan amortization. FinMoovi sends balance alerts and reminds you when that percentage hasn’t been reached yet.
+
+## Advanced strategies (but easy to apply)
+
+- **Re‑evaluate assets periodically**: A car’s or property’s value can change. Use the photo‑capture feature to record recent appraisals and keep your equity up to date.
+- **Diversify across currencies**: If you earn in dollars but have expenses in euros, keep part of your equity in each currency. FinMoovi converts everything in real time, avoiding currency surprises.
+- **Use the goals report**: Create a goal “Equity 30% above debt value in 12 months.” The app will show the path, indicating how much you need to save or invest each month.
+
+## When equity can be a warning sign
+
+If your equity is negative (i.e., your debts exceed your assets), it’s time to act. This can happen when:
+
+- You’ve piled up several credit cards without paying the full balance.
+- You financed a new car and still have a large student loan.
+- You invested in assets that lost value without having an emergency reserve.
+
+In this situation, FinMoovi can generate a **risk report** that highlights which debts have the biggest impact on your equity and suggests a staggered repayment plan.
+
+## Turning the equity concept into a monthly habit
+
+1. **Capture everything**: Use receipt photos or voice recordings to log each expense. The app categorizes and updates your cash flow in seconds.  
+2. **Review the weekly report**: Spend 10 minutes looking at the equity chart. If the number drops, identify the source (new debt, big purchase, etc.).  
+3. **Adjust goals**: If the equity‑growth target isn’t being met, cut unnecessary spending or increase debt payments. FinMoovi sends balance reminders and payment alerts.
+
+## Why FinMoovi is the perfect ally
+
+- **Smart capture** eliminates the need to type every expense.  
+- **Multi‑currency** ensures you see your real wealth, regardless of the currency.  
+- **Cash flow and reports** give clarity on what’s happening with your equity.  
+- **Offline/PWA mode** lets you record everything even without internet, syncing later.  
+- **Balance alerts** warn when equity is at risk, helping prevent surprises.
 
 ## Start today
 
-**Micro‑ação de 5 minutos no FinMoovi:**
+**5‑minute micro‑action in FinMoovi:**
 
-1. Abra o app e ative o modo “smart capture”.  
-2. Tire foto do último recibo de compra ou grave uma breve descrição da despesa.  
-3. Confirme a categoria sugerida (o app já faz a maior parte do trabalho).  
-4. Vá para a aba “Patrimônio” e veja seu equity atualizado em tempo real.  
-5. Defina uma meta simples: “Aumentar equity em 5% nos próximos 30 dias”.  
+1. Open the app and enable “smart capture.”  
+2. Snap a photo of your latest purchase receipt or record a brief description of the expense.  
+3. Confirm the suggested category (the app does most of the work).  
+4. Go to the “Wealth” tab and see your equity updated in real time.  
+5. Set a simple goal: “Increase equity by 5% in the next 30 days.”  
 
-Com esses passos, você já começa a ter clareza sobre o que realmente pertence a você e a usar o equity como bússola para decisões financeiras mais seguras. Boa jornada!
+With these steps, you’ll start gaining clarity on what truly belongs to you and use equity as a compass for safer financial decisions. Happy journey!

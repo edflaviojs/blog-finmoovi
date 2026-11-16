@@ -18,79 +18,79 @@ seo:
   keywords: ["home broker", "glossary", "finance"]
 ---
 
-## O que é um home broker e por que você sente falta dele
+## What a home broker is and why you miss it
 
-Você já tentou comprar uma ação pela primeira vez e acabou perdendo a oportunidade porque não sabia onde clicar, ou porque o site da corretora era confuso e demorava a carregar? Essa sensação de estar “perdendo o barco” é comum entre quem ainda não conhece o home broker. Em termos simples, o home broker é a plataforma online que permite que você negocie ativos financeiros – como ações, fundos imobiliários e ETFs – direto do seu computador ou celular, sem precisar ligar para um corretor ou ir a uma agência. Ele funciona como um “corretor digital”, mostrando em tempo real o preço dos ativos, permitindo a compra e venda com alguns cliques e registrando tudo automaticamente.
+Have you ever tried to buy a stock for the first time and ended up missing the opportunity because you didn’t know where to click, or because the broker’s website was confusing and slow to load? That feeling of “missing the boat” is common among people who still don’t know the home broker. In simple terms, a home broker is the online platform that lets you trade financial assets – such as stocks, real‑estate funds and ETFs – directly from your computer or phone, without having to call a broker or go to a branch. It works like a “digital broker,” showing real‑time asset prices, allowing you to buy and sell with a few clicks, and recording everything automatically.
 
-![O que é um home broker e por que você sente falta dele](/images/glossario/home-broker-inline-1.webp)
-
-
-
-Mas a prática vai além de apertar botões. Quando você usa um home broker, tem acesso a ferramentas que ajudam a analisar o mercado, montar estratégias e acompanhar o desempenho da sua carteira. É como ter um painel de controle completo das suas finanças de investimento, disponível 24 horas por dia, 7 dias por semana.
-
-## Como o FinMoovi entra nessa história
-
-Imagine que, além do home broker, você tem um app que captura o comprovante de cada compra que faz – seja foto do recibo ou gravação de voz – e categoriza tudo automaticamente. Esse é o FinMoovi, e ele tem um recurso que combina perfeitamente com o home broker: **captura inteligente**. Quando você compra uma ação, o app registra o valor, a data e a corretora, e já coloca na categoria “Investimentos”. Assim, você não precisa abrir planilhas ou anotar manualmente; tudo acontece em segundos.
-
-Além disso, o FinMoovi trabalha em **multi‑moeda**, então se você compra ações nos EUA, na Europa ou em qualquer outro mercado, o app converte tudo para a sua moeda de referência e mostra o impacto no seu fluxo de caixa. Isso evita surpresas quando o dólar ou o euro mudam de valor.
-
-## Principais recursos do home broker que você vai usar
-
-- **Negociação em tempo real**: veja o preço das ações ao vivo e execute ordens instantaneamente.
-- **Gráficos e indicadores**: ferramentas como médias móveis, RSI e volume ajudam a entender a tendência do mercado.
-- **Ordens limitadas e stop loss**: defina o preço máximo que está disposto a pagar ou o ponto de saída automático para limitar perdas.
-- **Histórico de operações**: todas as compras e vendas ficam registradas, facilitando a conferência com o FinMoovi.
-- **Acesso móvel**: a maioria dos home brokers tem apps que funcionam offline e sincronizam quando a internet volta, garantindo que você nunca perca uma oportunidade.
-
-![Principais recursos do home broker que você vai usar](/images/glossario/home-broker-inline-3.webp)
+![What a home broker is and why you miss it](/images/glossario/home-broker-inline-1.webp)
 
 
 
-## Como organizar seu fluxo de caixa com investimentos
+But the practice goes beyond pressing buttons. When you use a home broker, you get access to tools that help you analyze the market, build strategies and track your portfolio’s performance. It’s like having a full‑control dashboard of your investment finances, available 24 hours a day, 7 days a week.
 
-Quando você começa a investir, a primeira dúvida costuma ser: “Como isso vai mexer no meu orçamento mensal?” O FinMoovi resolve isso ao integrar o home broker ao seu fluxo de caixa. Cada compra de ação aparece como saída de caixa, mas também como entrada futura (quando você vender). O app gera relatórios que mostram:
+## How FinMoovi fits into this story
 
-- **Patrimônio líquido**: soma dos ativos (ações, fundos, dinheiro) menos as dívidas.
-- **Rentabilidade mensal**: quanto seu portfólio valorizou ou desvalorizou no último mês.
-- **Projeção de metas**: se você quer juntar o equivalente a “um ano de aluguel” em investimentos, o app calcula quanto precisa aportar a cada mês.
+Imagine that, besides the home broker, you have an app that captures the receipt of every purchase you make – whether a photo of the receipt or a voice recording – and categorizes everything automatically. That’s FinMoovi, and it has a feature that pairs perfectly with the home broker: **smart capture**. When you buy a stock, the app records the amount, the date and the broker, and places it in the “Investments” category. So you don’t need to open spreadsheets or write things down manually; everything happens in seconds.
 
-## Dicas práticas para usar o home broker com tranquilidade
+In addition, FinMoovi works in **multi‑currency**, so if you buy stocks in the US, Europe or any other market, the app converts everything to your reference currency and shows the impact on your cash flow. This avoids surprises when the dollar or the euro change value.
 
-**Practical tip:** Defina um limite diário de investimento que não ultrapasse o valor de um jantar com amigos. Assim, você evita gastar mais do que pode e ainda tem espaço para aproveitar a vida.
+## Main home broker features you’ll use
 
-**Practical tip:** Use ordens limitadas ao invés de ordens a mercado quando o ativo estiver muito volátil. Isso garante que você pague exatamente o preço que deseja, sem surpresas.
+- **Real‑time trading**: see stock prices live and execute orders instantly.  
+- **Charts and indicators**: tools like moving averages, RSI and volume help you understand market trends.  
+- **Limit orders and stop loss**: set the maximum price you’re willing to pay or an automatic exit point to limit losses.  
+- **Transaction history**: all buys and sells are recorded, making it easy to reconcile with FinMoovi.  
+- **Mobile access**: most home brokers have apps that work offline and sync when the internet returns, ensuring you never miss an opportunity.
 
-**Practical tip:** Revise seu relatório de investimentos no FinMoovi todo fim de semana. Reserve 10 minutos para conferir se as categorias estão corretas e se o desempenho está alinhado com suas metas.
+![Main home broker features you’ll use](/images/glossario/home-broker-inline-3.webp)
 
-## Estratégias simples para quem está começando
 
-- **Diversificação**: não coloque todo o dinheiro em uma única ação. Distribua entre setores diferentes (tecnologia, consumo, energia) e entre mercados (nacional e internacional). O FinMoovi mostra a porcentagem de cada categoria na sua carteira.
-- **Investimento automático**: programe aportes mensais (por exemplo, o equivalente a “duas contas de luz”) que são enviados direto para o home broker. O app registra esses aportes como “investimento programado”.
-- **Rebalanceamento**: a cada três meses, ajuste a proporção dos ativos para manter a estratégia original. O FinMoovi envia um alerta quando algum ativo ficou fora do peso desejado.
 
-## Como o FinMoovi ajuda no dia a dia do investidor
+## How to organize your cash flow with investments
 
-- **Modo compras**: crie listas de ativos que quer observar. Quando o preço atingir o valor que você definiu, o app avisa em tempo real, permitindo que você execute a ordem no home broker sem perder tempo.
-- **Alertas de saldo**: se o seu caixa ficar abaixo de “o preço de um café diário”, o app envia notificação para você repor o fundo de emergência antes de fazer novos investimentos.
-- **Offline e PWA**: mesmo sem conexão, você pode visualizar sua carteira e anotar ideias de compra. Quando a internet voltar, tudo sincroniza automaticamente.
-- **Relatórios personalizados**: exporte um PDF com o desempenho da sua carteira para apresentar ao seu consultor ou simplesmente para guardar como registro.
+When you start investing, the first question is usually: “How will this affect my monthly budget?” FinMoovi solves this by integrating the home broker with your cash flow. Every stock purchase appears as a cash outflow, but also as a future inflow (when you sell). The app generates reports that show:
 
-## Erros comuns e como evitá‑los
+- **Net worth**: sum of assets (stocks, funds, cash) minus liabilities.  
+- **Monthly return**: how much your portfolio appreciated or depreciated in the last month.  
+- **Goal projection**: if you want to save the equivalent of “one year’s rent” in investments, the app calculates how much you need to contribute each month.
 
-- **Negociar por impulso**: muitas pessoas compram ações só porque viram uma notícia. Use o modo compras do FinMoovi para criar uma lista de “interesses reais” e só execute quando o preço estiver dentro do seu plano.
-- **Não considerar custos**: corretagem, taxa de custódia e impostos podem corroer a rentabilidade. O home broker costuma mostrar esses custos antes de confirmar a ordem; o FinMoovi inclui tudo no cálculo do fluxo de caixa.
-- **Ignorar a volatilidade**: mercados internacionais podem oscilar muito em um dia. O recurso multi‑moeda do FinMoovi converte os valores e mostra o impacto real no seu orçamento, ajudando a manter a calma.
+## Practical tips for using the home broker calmly
 
-## Quando usar o home broker versus outros investimentos
+**Practical tip:** Set a daily investment limit that doesn’t exceed the cost of a dinner with friends. That way you avoid spending more than you can and still have room to enjoy life.
 
-Se o seu objetivo é **acumular patrimônio a longo prazo**, o home broker é ideal porque permite comprar ativos que podem valorizar ao longo dos anos, como ações de empresas sólidas ou fundos imobiliários que pagam dividendos. Para metas de curto prazo, como “guardar o equivalente a duas viagens de fim de semana”, pode ser mais seguro usar fundos de renda fixa ou poupança, que têm menor risco de variação.
+**Practical tip:** Use limit orders instead of market orders when the asset is very volatile. This ensures you pay exactly the price you want, without surprises.
+
+**Practical tip:** Review your investment report in FinMoovi every weekend. Reserve 10 minutes to check if the categories are correct and if performance aligns with your goals.
+
+## Simple strategies for beginners
+
+- **Diversification**: don’t put all your money in a single stock. Spread it across different sectors (technology, consumer, energy) and across markets (domestic and international). FinMoovi shows the percentage of each category in your portfolio.  
+- **Automatic investing**: schedule monthly contributions (for example, the equivalent of “two electricity bills”) that are sent directly to the home broker. The app records these contributions as “scheduled investment.”  
+- **Rebalancing**: every three months, adjust the asset proportions to keep the original strategy. FinMoovi sends an alert when any asset falls out of the desired weight.
+
+## How FinMoovi helps the everyday investor
+
+- **Shopping mode**: create lists of assets you want to watch. When the price reaches the value you set, the app notifies you in real time, allowing you to place the order in the home broker without losing time.  
+- **Balance alerts**: if your cash drops below “the price of a daily coffee,” the app sends a notification so you can replenish your emergency fund before making new investments.  
+- **Offline and PWA**: even without a connection, you can view your portfolio and jot down purchase ideas. When the internet returns, everything syncs automatically.  
+- **Custom reports**: export a PDF with your portfolio’s performance to show your advisor or simply keep as a record.
+
+## Common mistakes and how to avoid them
+
+- **Impulsive trading**: many people buy stocks just because they saw a news headline. Use FinMoovi’s shopping mode to create a list of “real interests” and only execute when the price fits your plan.  
+- **Ignoring costs**: brokerage fees, custody fees and taxes can eat into returns. The home broker usually shows these costs before confirming the order; FinMoovi includes everything in the cash‑flow calculation.  
+- **Overlooking volatility**: international markets can swing a lot in a single day. FinMoovi’s multi‑currency feature converts the amounts and shows the real impact on your budget, helping you stay calm.
+
+## When to use the home broker versus other investments
+
+If your goal is **building wealth over the long term**, the home broker is ideal because it lets you buy assets that can appreciate over years, such as solid company stocks or real‑estate funds that pay dividends. For short‑term goals, like “saving the equivalent of two weekend trips,” it may be safer to use fixed‑income funds or a savings account, which have lower price‑fluctuation risk.
 
 ## Start today
 
-**Micro‑ação de 5 minutos:**  
-1. Abra o app FinMoovi e vá para a seção “Investimentos”.  
-2. Clique em “Conectar home broker” e siga as instruções para autorizar a integração (geralmente basta inserir seu login da corretora).  
-3. Tire uma foto do último extrato de compra de ação ou grave uma nota de voz dizendo “Comprei 10 ações da empresa X”.  
-4. Confirme a categorização automática e veja o impacto no seu fluxo de caixa.  
+**5‑minute micro‑action:**  
+1. Open the FinMoovi app and go to the “Investments” section.  
+2. Tap “Connect home broker” and follow the instructions to authorize the integration (usually just entering your broker login).  
+3. Take a photo of your latest stock purchase statement or record a voice note saying “I bought 10 shares of company X.”  
+4. Confirm the automatic categorization and see the impact on your cash flow.  
 
-Pronto! Em menos de cinco minutos você já tem seu primeiro investimento registrado, categorizado e pronto para ser monitorado. Agora é só acompanhar o mercado e deixar o FinMoovi fazer o trabalho pesado. Boa jornada de investimentos!
+Done! In less than five minutes you already have your first investment recorded, categorized and ready to be monitored. Now just watch the market and let FinMoovi do the heavy lifting. Happy investing!
