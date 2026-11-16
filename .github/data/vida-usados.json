@@ -1150,5 +1150,11 @@
     "gancho": "comeca-assim",
     "turno": "noite",
     "em": "2026-11-15T12:11:43.901Z"
+  },
+  {
+    "situacao": "vender-o-parado",
+    "gancho": "nunca-faca",
+    "turno": "manha",
+    "em": "2026-11-16T13:02:04.122Z"
   }
 ]

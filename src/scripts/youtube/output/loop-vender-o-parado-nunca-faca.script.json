@@ -1,0 +1,118 @@
+{
+  "slug": "loop-vender-o-parado-nunca-faca",
+  "formato": "loop16",
+  "term": "Vender o que está parado",
+  "category": "vida",
+  "keyword": "VENDER",
+  "valor": "R$ 700",
+  "situacao": "vender-o-parado",
+  "gancho": "nunca-faca",
+  "ganchoFamilia": "nunca faça",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "semente",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Nunca faça isso com a garagem. Comigo aconteceu esse mês.",
+      "durationSec": 3.53,
+      "shots": [
+        {
+          "anchor": "garagem",
+          "visual": {
+            "type": "statement",
+            "text": "Nunca faça isso na garagem"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "Comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "semente"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Vendi tudo. Quando vi, setecentos reais na minha mão.",
+      "durationSec": 3.18,
+      "shots": [
+        {
+          "anchor": "Vendi",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "semente"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "setecentos",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 700 que estavam parados"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Olha, aquela tralha que a gente guarda só ocupava lugar.",
+      "durationSec": 3.53,
+      "shots": [
+        {
+          "anchor": "tralha",
+          "visual": {
+            "type": "statement",
+            "text": "Tralha só ocupa lugar"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "guarda",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "semente"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Então hoje a garagem não fica cheia. Nunca faça isso com ela, comigo aconteceu.",
+      "durationSec": 4.95,
+      "shots": [
+        {
+          "anchor": "garagem",
+          "visual": {
+            "type": "statement",
+            "text": "Garagem parada, nunca mais"
+          }
+        },
+        {
+          "anchor": "cheia",
+          "visual": {
+            "type": "statement",
+            "text": "Nunca faça isso na garagem"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.19
+}
