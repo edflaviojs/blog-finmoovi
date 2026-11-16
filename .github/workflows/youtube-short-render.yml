@@ -1,4 +1,4 @@
-name: YouTube — Renderizar Short (completo)
+name: YouTube · Renderizar Short (completo)
 
 # Produz o Short inteiro na nuvem (IP limpo, sem o throttle do Edge local):
 # TTS por cena + Whisper (timing real) → legendas SRT ×3 → render Remotion

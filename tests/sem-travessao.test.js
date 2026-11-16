@@ -20,9 +20,8 @@ test('o robô de entrega às redes não tem travessão (06/11/2026)', () => {
   assert.deepEqual(achados, [], `entregar.js tem travessão nas linhas ${achados.join(', ')}`);
 });
 
-// ⏳ Em espera até o lote 3b (8 robôs que publicam), marcado para 07/11/2026: docs/DIVIDA.md, B5.
-// No lote 3b, tirar o `skip` desta prova.
-test('nenhum robô tem travessão no nome (é o nome que aparece no e-mail das 7h)', { skip: 'lote 3b marcado para 07/11 (DIVIDA B5)' }, () => {
+// Lote 3b feito a 16/11/2026: os 35 robôs já não têm travessão no nome (docs/DIVIDA.md, B5).
+test('nenhum robô tem travessão no nome (é o nome que aparece no e-mail das 7h)', () => {
   const pasta = '.github/workflows';
   const errados = readdirSync(pasta).filter((f) => /\.ya?ml$/.test(f)).filter((f) => {
     const nome = readFileSync(`${pasta}/${f}`, 'utf-8').split('\n').find((l) => /^name:/.test(l)) || '';
