@@ -3685,8 +3685,78 @@
           "titulo": "Gran anuncio: Vivo Black este 26 de noviembre (Entra al grupo de WhatsApp)"
         }
       ]
+    },
+    {
+      "videoId": "kt6PmR6VGgw",
+      "title": "Renda passiva real! Como fazer 50 todo dia sem trabalhar!",
+      "channel": "Gêmeos Investem",
+      "duracaoSeg": 1197,
+      "idioma": "pt",
+      "viewsPerDay": 59002,
+      "vistoEm": "2026-11-16",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "Introdução"
+        },
+        {
+          "seg": 32,
+          "titulo": "Como ganhar R$50 todo dia  sem trabalhar?"
+        },
+        {
+          "seg": 457,
+          "titulo": "Como fazer R$50 de renda extra todo dia?"
+        },
+        {
+          "seg": 763,
+          "titulo": "R$50 todo dia com Renda Variável!"
+        },
+        {
+          "seg": 1124,
+          "titulo": "Conclusão"
+        }
+      ]
+    },
+    {
+      "videoId": "Z7W454Osyrc",
+      "title": "COMO LUCRAR COM LEILÃO DE IMÓVEL PAGANDO POUCO (Investindo NA PRÁTICA)",
+      "channel": "Bruno Perini - Você MAIS Rico",
+      "duracaoSeg": 2161,
+      "idioma": "pt",
+      "viewsPerDay": 1934,
+      "vistoEm": "2026-11-16",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "O custo real dos imóveis populares"
+        },
+        {
+          "seg": 105,
+          "titulo": "O que define um imóvel popular?"
+        },
+        {
+          "seg": 208,
+          "titulo": "Investigando o perfil do devedor"
+        },
+        {
+          "seg": 429,
+          "titulo": "O risco de comprar imóveis na planta"
+        },
+        {
+          "seg": 765,
+          "titulo": "A lei como proteção do arrematante"
+        },
+        {
+          "seg": 1207,
+          "titulo": "Calculando a viabilidade do investimento"
+        },
+        {
+          "seg": 1807,
+          "titulo": "Alavancagem financeira com leilões"
+        }
+      ]
     }
   ],
-  "atualizadoEm": "2026-11-15T11:40:20.912Z",
-  "total": 67
+  "atualizadoEm": "2026-11-16T12:17:37.670Z",
+  "total": 69
 }
