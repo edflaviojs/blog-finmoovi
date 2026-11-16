@@ -145,6 +145,36 @@
         "movimento": "aproxima-lento",
         "pista": "dois meses de casa pagos sem"
       }
+    ],
+    "reserva-emergencia-antes-proxima": [
+      {
+        "ficheiro": "manus/dono-dois-homens-mesma-idade-mesmo-trabalho/susto.jpg",
+        "significado": "o susto de olhar a conta",
+        "tipo": "foto",
+        "pistas": [
+          "voce sabe quanto do seu salario"
+        ],
+        "usadoEm": [
+          "dono-dois-homens-mesma-idade-mesmo-trabalho",
+          "reserva-emergencia-antes-proxima"
+        ],
+        "pista": "sabe o que eu fiz com",
+        "movimento": "aproxima"
+      },
+      {
+        "ficheiro": "manus/dono-dois-homens-mesma-idade-mesmo-trabalho/virada.jpg",
+        "significado": "a saída que se abre",
+        "tipo": "foto",
+        "pistas": [
+          "eram trezentos e cinquenta reais da"
+        ],
+        "usadoEm": [
+          "dono-dois-homens-mesma-idade-mesmo-trabalho",
+          "reserva-emergencia-antes-proxima"
+        ],
+        "pista": "virei a folha e escrevi cento",
+        "movimento": "aproxima-lento"
+      }
     ]
   }
 }

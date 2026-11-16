@@ -396,6 +396,72 @@
         "cena": "67",
         "boneco": "comemorar"
       }
+    ],
+    "reserva-emergencia-antes-proxima": [
+      {
+        "cena": "1",
+        "boneco": "ombros"
+      },
+      {
+        "cena": "2",
+        "boneco": "bolsos-vazios"
+      },
+      {
+        "cena": "8",
+        "boneco": "bracos-cruzados"
+      },
+      {
+        "cena": "10",
+        "boneco": "contar-moedas"
+      },
+      {
+        "cena": "13",
+        "boneco": "susto"
+      },
+      {
+        "cena": "18",
+        "boneco": "puxar-cabelo"
+      },
+      {
+        "cena": "22",
+        "boneco": "mesa-faturas"
+      },
+      {
+        "cena": "26",
+        "boneco": "bocejar"
+      },
+      {
+        "cena": "34",
+        "boneco": "pensando"
+      },
+      {
+        "cena": "38",
+        "boneco": "bravo-carteira-vazia"
+      },
+      {
+        "cena": "42",
+        "boneco": "relogio"
+      },
+      {
+        "cena": "45",
+        "boneco": "ideia"
+      },
+      {
+        "cena": "49",
+        "boneco": "abracar-cofrinho"
+      },
+      {
+        "cena": "52",
+        "boneco": "apontar"
+      },
+      {
+        "cena": "63",
+        "boneco": "comemorar"
+      },
+      {
+        "cena": "67",
+        "boneco": "super-heroi"
+      }
     ]
   }
 }

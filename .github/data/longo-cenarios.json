@@ -208,6 +208,21 @@
       "cena": "o pneu que furou a caminho do trabalho",
       "promessa": "Você deixa de juntar seis mil reais por ano com um salário de três mil, e eu vou te provar isso.",
       "em": "2026-11-09"
+    },
+    {
+      "slug": "reserva-emergencia-antes-proxima",
+      "cenarios": [
+        "o mercado",
+        "o aluguel",
+        "o salário que cai na conta",
+        "a geladeira"
+      ],
+      "fio": "escada",
+      "elenco": "um pai de família, que recebe no dia cinco e vê o dinheiro sumir antes do vinte",
+      "funcaoDoApp": "sincronizacao",
+      "cena": "a mudança de casa, com caminhão e caixas",
+      "promessa": "Você consegue juntar três mil e seiscentos reais em dois anos guardando só cento e cinquenta por mês, e eu vou te provar isso.",
+      "em": "2026-11-16"
     }
   ]
 }

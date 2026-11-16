@@ -313,6 +313,32 @@
         "cena": "45",
         "figura": "fumaca"
       }
+    ],
+    "reserva-emergencia-antes-proxima": [
+      {
+        "cena": "2",
+        "figura": "balde-furado"
+      },
+      {
+        "cena": "25",
+        "figura": "fumaca"
+      },
+      {
+        "cena": "27",
+        "figura": "ratoeira"
+      },
+      {
+        "cena": "30",
+        "figura": "semente"
+      },
+      {
+        "cena": "48",
+        "figura": "semaforo"
+      },
+      {
+        "cena": "58",
+        "figura": "guarda-chuva"
+      }
     ]
   }
 }
