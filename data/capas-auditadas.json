@@ -6569,6 +6569,21 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-11-15"
+    },
+    "montante-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-16"
+    },
+    "montante-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-16"
+    },
+    "montante.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-16"
     }
   },
   "corrigidas": {
@@ -7245,6 +7260,6 @@
       "motivo": "borrada segundo a IA de visão (nitidez local 1252)"
     }
   },
-  "totalAcervo": 1314,
-  "ultimaCorrida": "2026-11-15"
+  "totalAcervo": 1317,
+  "ultimaCorrida": "2026-11-16"
 }
