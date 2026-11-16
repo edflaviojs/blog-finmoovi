@@ -1,0 +1,118 @@
+{
+  "slug": "loop-presente-de-natal-nunca-faca",
+  "formato": "loop16",
+  "term": "O presente de Natal",
+  "category": "vida",
+  "keyword": "NATAL",
+  "valor": "R$ 1.100",
+  "situacao": "presente-de-natal",
+  "gancho": "nunca-faca",
+  "ganchoFamilia": "nunca faça",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "fumaca",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Nunca faça compra de Natal sem somar. Comigo aconteceu na fila da loja.",
+      "durationSec": 4.6,
+      "shots": [
+        {
+          "anchor": "compra",
+          "visual": {
+            "type": "statement",
+            "text": "Compra de Natal sem somar?"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "Natal",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Somei a lista da família. Mil e cem reais viraram fumaça.",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "Somei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "lista",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 1.100 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Olha, agora eu anoto cada presente antes de sair.",
+      "durationSec": 3.18,
+      "shots": [
+        {
+          "anchor": "anoto",
+          "visual": {
+            "type": "statement",
+            "text": "Agora eu anoto tudo antes"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "presente",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Sem somar a lista, a compra de Natal vira fumaça.",
+      "durationSec": 3.53,
+      "shots": [
+        {
+          "anchor": "somar",
+          "visual": {
+            "type": "statement",
+            "text": "Lista sem soma vira fumaça"
+          }
+        },
+        {
+          "anchor": "lista",
+          "visual": {
+            "type": "statement",
+            "text": "Compra de Natal sem somar?"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
