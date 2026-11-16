@@ -1,253 +1,91 @@
 {
-  "generatedAt": "2026-11-09T16:57:10.438Z",
+  "generatedAt": "2026-11-16T16:34:43.235Z",
   "siteUrl": "https://blog.finmoovi.com/",
   "period": {
-    "startDate": "2026-10-12",
-    "endDate": "2026-11-09"
+    "startDate": "2026-10-19",
+    "endDate": "2026-11-16"
   },
   "hasData": true,
   "totals": {
-    "queries": 1002,
-    "pages": 206,
-    "impressions": 3729,
+    "queries": 1153,
+    "pages": 224,
+    "impressions": 4720,
     "clicks": 2
   },
   "opportunities": {
     "strikingDistance": [
       {
-        "query": "que es xetra",
-        "impressions": 36,
+        "query": "price online",
+        "impressions": 94,
         "clicks": 0,
-        "position": 8.5,
+        "position": 18.9,
         "ctr": 0,
         "pages": [
           {
-            "page": "https://blog.finmoovi.com/es/glossario/es-xetra/",
-            "impressions": 36,
+            "page": "https://blog.finmoovi.com/ferramentas/calculadora-financiamento/",
+            "impressions": 94,
             "clicks": 0,
-            "position": 8.5
+            "position": 18.9
           }
         ],
         "realidade": {
           "ok": true,
           "razao": "real",
           "motivo": "passou os quatro cortes",
-          "posicaoNoMercado": 8.5,
-          "impressoesNoMercado": 36,
+          "posicaoNoMercado": 18.9,
+          "impressoesNoMercado": 94,
           "fracaoDoMercado": 100,
-          "fracaoMovel": 33
+          "fracaoMovel": 0
         }
       },
       {
-        "query": "xetra que es",
-        "impressions": 31,
+        "query": "finmoovi.com",
+        "impressions": 79,
         "clicks": 0,
-        "position": 8.7,
+        "position": 5.1,
         "ctr": 0,
         "pages": [
           {
-            "page": "https://blog.finmoovi.com/es/glossario/es-xetra/",
-            "impressions": 31,
+            "page": "https://blog.finmoovi.com/en/posts/en-finmoovi-vs-manual-tracking-which-is-better-for-your-money/",
+            "impressions": 64,
             "clicks": 0,
-            "position": 8.7
-          }
-        ],
-        "realidade": {
-          "ok": false,
-          "razao": "amostra",
-          "motivo": "só 29 aparições no mercado es (mínimo 30) — ainda não dá para dizer nada",
-          "posicaoNoMercado": 8.6,
-          "impressoesNoMercado": 29,
-          "fracaoDoMercado": 94,
-          "fracaoMovel": 45
-        }
-      },
-      {
-        "query": "saldo em aberto o que significa",
-        "impressions": 30,
-        "clicks": 0,
-        "position": 5.9,
-        "ctr": 0,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/",
-            "impressions": 30,
-            "clicks": 0,
-            "position": 5.9
-          }
-        ],
-        "realidade": {
-          "ok": true,
-          "razao": "real",
-          "motivo": "passou os quatro cortes",
-          "posicaoNoMercado": 5.9,
-          "impressoesNoMercado": 30,
-          "fracaoDoMercado": 100,
-          "fracaoMovel": 67
-        }
-      },
-      {
-        "query": "o que significa saldo pendente",
-        "impressions": 28,
-        "clicks": 0,
-        "position": 9.4,
-        "ctr": 0,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/posts/entenda-o-saldo-pendente-e-como-regularizar-suas-contas/",
-            "impressions": 28,
-            "clicks": 0,
-            "position": 9.4
-          }
-        ],
-        "realidade": {
-          "ok": false,
-          "razao": "amostra",
-          "motivo": "só 28 aparições no mercado pt (mínimo 30) — ainda não dá para dizer nada",
-          "posicaoNoMercado": 9.4,
-          "impressoesNoMercado": 28,
-          "fracaoDoMercado": 100,
-          "fracaoMovel": 100
-        }
-      },
-      {
-        "query": "valor em aberto significado",
-        "impressions": 27,
-        "clicks": 0,
-        "position": 7.1,
-        "ctr": 0,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/",
-            "impressions": 27,
-            "clicks": 0,
-            "position": 7.1
-          }
-        ],
-        "realidade": {
-          "ok": false,
-          "razao": "amostra",
-          "motivo": "só 27 aparições no mercado pt (mínimo 30) — ainda não dá para dizer nada",
-          "posicaoNoMercado": 7.1,
-          "impressoesNoMercado": 27,
-          "fracaoDoMercado": 100,
-          "fracaoMovel": 78
-        }
-      },
-      {
-        "query": "capital de giro",
-        "impressions": 17,
-        "clicks": 0,
-        "position": 5.2,
-        "ctr": 0,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/es/glossario/es-capital-de-giro/",
-            "impressions": 15,
-            "clicks": 0,
-            "position": 2.6
+            "position": 6.4
           },
           {
-            "page": "https://blog.finmoovi.com/glossario/capital-de-giro/",
-            "impressions": 2,
+            "page": "https://blog.finmoovi.com/en/sobre/",
+            "impressions": 61,
             "clicks": 0,
-            "position": 24.5
+            "position": 5.1
+          },
+          {
+            "page": "https://blog.finmoovi.com/en/posts/en-finmoovi-vs-mobills-which-to-choose-in-2026/",
+            "impressions": 58,
+            "clicks": 0,
+            "position": 7.6
           }
         ],
         "realidade": {
           "ok": false,
           "razao": "amostra",
-          "motivo": "só 15 aparições no mercado es (mínimo 30) — ainda não dá para dizer nada",
-          "posicaoNoMercado": 2.6,
-          "impressoesNoMercado": 15,
-          "fracaoDoMercado": 88,
-          "fracaoMovel": 60
+          "motivo": "só 9 aparições no mercado en (mínimo 30) — ainda não dá para dizer nada",
+          "posicaoNoMercado": 3,
+          "impressoesNoMercado": 9,
+          "fracaoDoMercado": 11,
+          "fracaoMovel": 0
         }
       },
       {
-        "query": "o que significa valor em aberto",
-        "impressions": 14,
+        "query": "what is equity",
+        "impressions": 55,
         "clicks": 0,
-        "position": 7.8,
+        "position": 6.5,
         "ctr": 0,
         "pages": [
           {
-            "page": "https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/",
-            "impressions": 14,
+            "page": "https://blog.finmoovi.com/en/glossario/en-equity/",
+            "impressions": 55,
             "clicks": 0,
-            "position": 7.8
-          }
-        ],
-        "realidade": {
-          "ok": false,
-          "razao": "amostra",
-          "motivo": "só 14 aparições no mercado pt (mínimo 30) — ainda não dá para dizer nada",
-          "posicaoNoMercado": 7.8,
-          "impressoesNoMercado": 14,
-          "fracaoDoMercado": 100,
-          "fracaoMovel": 100
-        }
-      },
-      {
-        "query": "que es subyacente",
-        "impressions": 14,
-        "clicks": 0,
-        "position": 11.6,
-        "ctr": 0,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/es/glossario/es-subyacente/",
-            "impressions": 14,
-            "clicks": 0,
-            "position": 11.6
-          }
-        ],
-        "realidade": {
-          "ok": false,
-          "razao": "amostra",
-          "motivo": "só 12 aparições no mercado es (mínimo 30) — ainda não dá para dizer nada",
-          "posicaoNoMercado": 11.7,
-          "impressoesNoMercado": 12,
-          "fracaoDoMercado": 86,
-          "fracaoMovel": 17
-        }
-      },
-      {
-        "query": "simulador de investimento fis",
-        "impressions": 14,
-        "clicks": 0,
-        "position": 14.9,
-        "ctr": 0,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/ferramentas/simulador-investimento/",
-            "impressions": 14,
-            "clicks": 0,
-            "position": 14.9
-          }
-        ],
-        "realidade": {
-          "ok": false,
-          "razao": "amostra",
-          "motivo": "só 14 aparições no mercado pt (mínimo 30) — ainda não dá para dizer nada",
-          "posicaoNoMercado": 14.9,
-          "impressoesNoMercado": 14,
-          "fracaoDoMercado": 100,
-          "fracaoMovel": 43
-        }
-      },
-      {
-        "query": "best money management app 2026",
-        "impressions": 13,
-        "clicks": 0,
-        "position": 9.2,
-        "ctr": 0,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/en/posts/en-7-best-personal-finance-apps-2026-complete-guide-to-organize/",
-            "impressions": 13,
-            "clicks": 0,
-            "position": 9.2
+            "position": 6.5
           }
         ],
         "realidade": {
@@ -261,15 +99,258 @@
         }
       },
       {
-        "query": "o que é saldo pendente",
-        "impressions": 13,
+        "query": "capital en giro",
+        "impressions": 37,
+        "clicks": 1,
+        "position": 5.1,
+        "ctr": 2.7,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-capital-de-giro/",
+            "impressions": 37,
+            "clicks": 1,
+            "position": 5.1
+          }
+        ],
+        "realidade": {
+          "ok": true,
+          "razao": "real",
+          "motivo": "passou os quatro cortes",
+          "posicaoNoMercado": 4.9,
+          "impressoesNoMercado": 36,
+          "fracaoDoMercado": 97,
+          "fracaoMovel": 47
+        }
+      },
+      {
+        "query": "que es xetra",
+        "impressions": 37,
+        "clicks": 0,
+        "position": 8.5,
+        "ctr": 0,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-xetra/",
+            "impressions": 37,
+            "clicks": 0,
+            "position": 8.5
+          }
+        ],
+        "realidade": {
+          "ok": true,
+          "razao": "real",
+          "motivo": "passou os quatro cortes",
+          "posicaoNoMercado": 8.5,
+          "impressoesNoMercado": 37,
+          "fracaoDoMercado": 100,
+          "fracaoMovel": 35
+        }
+      },
+      {
+        "query": "xetra que es",
+        "impressions": 36,
+        "clicks": 0,
+        "position": 8.3,
+        "ctr": 0,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-xetra/",
+            "impressions": 36,
+            "clicks": 0,
+            "position": 8.3
+          }
+        ],
+        "realidade": {
+          "ok": true,
+          "razao": "real",
+          "motivo": "passou os quatro cortes",
+          "posicaoNoMercado": 8.3,
+          "impressoesNoMercado": 34,
+          "fracaoDoMercado": 94,
+          "fracaoMovel": 53
+        }
+      },
+      {
+        "query": "valor em aberto significado",
+        "impressions": 34,
+        "clicks": 0,
+        "position": 6.8,
+        "ctr": 0,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/",
+            "impressions": 34,
+            "clicks": 0,
+            "position": 6.8
+          }
+        ],
+        "realidade": {
+          "ok": true,
+          "razao": "real",
+          "motivo": "passou os quatro cortes",
+          "posicaoNoMercado": 6.8,
+          "impressoesNoMercado": 34,
+          "fracaoDoMercado": 100,
+          "fracaoMovel": 74
+        }
+      },
+      {
+        "query": "o que significa saldo pendente",
+        "impressions": 28,
+        "clicks": 0,
+        "position": 9.1,
+        "ctr": 0,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/posts/entenda-o-saldo-pendente-e-como-regularizar-suas-contas/",
+            "impressions": 28,
+            "clicks": 0,
+            "position": 9.1
+          }
+        ],
+        "realidade": {
+          "ok": false,
+          "razao": "amostra",
+          "motivo": "só 28 aparições no mercado pt (mínimo 30) — ainda não dá para dizer nada",
+          "posicaoNoMercado": 9.1,
+          "impressoesNoMercado": 28,
+          "fracaoDoMercado": 100,
+          "fracaoMovel": 100
+        }
+      },
+      {
+        "query": "que es subyacente",
+        "impressions": 27,
+        "clicks": 0,
+        "position": 11.7,
+        "ctr": 0,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-subyacente/",
+            "impressions": 27,
+            "clicks": 0,
+            "position": 11.7
+          }
+        ],
+        "realidade": {
+          "ok": false,
+          "razao": "amostra",
+          "motivo": "só 24 aparições no mercado es (mínimo 30) — ainda não dá para dizer nada",
+          "posicaoNoMercado": 11.8,
+          "impressoesNoMercado": 24,
+          "fracaoDoMercado": 89,
+          "fracaoMovel": 25
+        }
+      },
+      {
+        "query": "saldo em aberto o que significa",
+        "impressions": 22,
+        "clicks": 0,
+        "position": 5.6,
+        "ctr": 0,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/",
+            "impressions": 22,
+            "clicks": 0,
+            "position": 5.6
+          }
+        ],
+        "realidade": {
+          "ok": false,
+          "razao": "amostra",
+          "motivo": "só 22 aparições no mercado pt (mínimo 30) — ainda não dá para dizer nada",
+          "posicaoNoMercado": 5.6,
+          "impressoesNoMercado": 22,
+          "fracaoDoMercado": 100,
+          "fracaoMovel": 77
+        }
+      },
+      {
+        "query": "what is withdraw",
+        "impressions": 20,
+        "clicks": 0,
+        "position": 5,
+        "ctr": 0,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/glossario/withdrawal/",
+            "impressions": 20,
+            "clicks": 0,
+            "position": 5
+          }
+        ]
+      },
+      {
+        "query": "o que significa valor em aberto",
+        "impressions": 18,
+        "clicks": 0,
+        "position": 7.9,
+        "ctr": 0,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/",
+            "impressions": 18,
+            "clicks": 0,
+            "position": 7.9
+          }
+        ]
+      },
+      {
+        "query": "simulador de investimento fis",
+        "impressions": 18,
+        "clicks": 0,
+        "position": 14.5,
+        "ctr": 0,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/ferramentas/simulador-investimento/",
+            "impressions": 18,
+            "clicks": 0,
+            "position": 14.5
+          }
+        ]
+      },
+      {
+        "query": "como sair das dívidas",
+        "impressions": 16,
+        "clicks": 0,
+        "position": 13.6,
+        "ctr": 0,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/como-sair-das-dividas/",
+            "impressions": 16,
+            "clicks": 0,
+            "position": 13.6
+          }
+        ]
+      },
+      {
+        "query": "conversão de moedas online",
+        "impressions": 16,
+        "clicks": 0,
+        "position": 13.1,
+        "ctr": 0,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/ferramentas/conversor-moedas/",
+            "impressions": 16,
+            "clicks": 0,
+            "position": 13.1
+          }
+        ]
+      },
+      {
+        "query": "best money management app 2026",
+        "impressions": 15,
         "clicks": 0,
         "position": 9,
         "ctr": 0,
         "pages": [
           {
-            "page": "https://blog.finmoovi.com/posts/entenda-o-saldo-pendente-e-como-regularizar-suas-contas/",
-            "impressions": 13,
+            "page": "https://blog.finmoovi.com/en/posts/en-7-best-personal-finance-apps-2026-complete-guide-to-organize/",
+            "impressions": 15,
             "clicks": 0,
             "position": 9
           }
@@ -277,16 +358,16 @@
       },
       {
         "query": "capital de giro significado",
-        "impressions": 12,
+        "impressions": 13,
         "clicks": 0,
-        "position": 6,
+        "position": 5.8,
         "ctr": 0,
         "pages": [
           {
             "page": "https://blog.finmoovi.com/es/glossario/es-capital-de-giro/",
-            "impressions": 11,
+            "impressions": 12,
             "clicks": 0,
-            "position": 3
+            "position": 3.1
           },
           {
             "page": "https://blog.finmoovi.com/glossario/capital-de-giro/",
@@ -297,197 +378,122 @@
         ]
       },
       {
-        "query": "conversão de moedas online",
-        "impressions": 10,
+        "query": "o que significa saldo em aberto",
+        "impressions": 12,
         "clicks": 0,
-        "position": 13.1,
+        "position": 7.5,
         "ctr": 0,
         "pages": [
           {
-            "page": "https://blog.finmoovi.com/ferramentas/conversor-moedas/",
-            "impressions": 10,
+            "page": "https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/",
+            "impressions": 12,
             "clicks": 0,
-            "position": 13.1
-          }
-        ]
-      },
-      {
-        "query": "compare os modelos de relatório de despesas disponíveis no google com outras soluções para ajudar a determinar a melhor opção para suas necessidades.",
-        "impressions": 9,
-        "clicks": 0,
-        "position": 7.4,
-        "ctr": 0,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/posts/7-alternativas-a-planilha-google-para-financas-guia/",
-            "impressions": 9,
-            "clicks": 0,
-            "position": 7.4
+            "position": 7.5
           }
         ]
       },
       {
         "query": "que es xetra en bolsa",
-        "impressions": 9,
+        "impressions": 12,
         "clicks": 0,
-        "position": 9.9,
+        "position": 9.8,
         "ctr": 0,
         "pages": [
           {
             "page": "https://blog.finmoovi.com/es/glossario/es-xetra/",
-            "impressions": 9,
+            "impressions": 12,
             "clicks": 0,
-            "position": 9.9
-          }
-        ]
-      },
-      {
-        "query": "o que significa saldo",
-        "impressions": 8,
-        "clicks": 0,
-        "position": 18.5,
-        "ctr": 0,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/",
-            "impressions": 8,
-            "clicks": 0,
-            "position": 18.5
-          }
-        ]
-      },
-      {
-        "query": "is credit card worth it 2026",
-        "impressions": 7,
-        "clicks": 0,
-        "position": 13,
-        "ctr": 0,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/en/posts/en-credit-card-in-2026-is-it-worth-it/",
-            "impressions": 7,
-            "clicks": 0,
-            "position": 13
-          }
-        ]
-      },
-      {
-        "query": "o que significa saldo em aberto",
-        "impressions": 6,
-        "clicks": 0,
-        "position": 8.2,
-        "ctr": 0,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/",
-            "impressions": 6,
-            "clicks": 0,
-            "position": 8.2
-          }
-        ]
-      },
-      {
-        "query": "que es plan de salud",
-        "impressions": 6,
-        "clicks": 0,
-        "position": 7,
-        "ctr": 0,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/es/glossario/es-plan-de-salud/",
-            "impressions": 6,
-            "clicks": 0,
-            "position": 7
-          }
-        ]
-      },
-      {
-        "query": "saldo em aberto",
-        "impressions": 6,
-        "clicks": 0,
-        "position": 7.2,
-        "ctr": 0,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/",
-            "impressions": 6,
-            "clicks": 0,
-            "position": 7.2
-          }
-        ]
-      },
-      {
-        "query": "users stopped opening our budgeting screen after the first month. around a third of transactions land in \"other\". where do we start?",
-        "impressions": 5,
-        "clicks": 0,
-        "position": 5.4,
-        "ctr": 0,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/en/posts/en-why-your-account-balance-vanishes-at-month-end-and-how-to/",
-            "impressions": 5,
-            "clicks": 0,
-            "position": 5.4
+            "position": 9.8
           }
         ]
       },
       {
         "query": "which money saving apps are worth downloading in 2026?",
-        "impressions": 5,
+        "impressions": 12,
+        "clicks": 0,
+        "position": 6.1,
+        "ctr": 0,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/en/posts/en-7-best-personal-finance-apps-2026-complete-guide-to-organize/",
+            "impressions": 12,
+            "clicks": 0,
+            "position": 6.1
+          }
+        ]
+      },
+      {
+        "query": "compare os modelos de relatório de despesas disponíveis no google com outras soluções para ajudar a determinar a melhor opção para suas necessidades.",
+        "impressions": 11,
+        "clicks": 0,
+        "position": 7.5,
+        "ctr": 0,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/posts/7-alternativas-a-planilha-google-para-financas-guia/",
+            "impressions": 11,
+            "clicks": 0,
+            "position": 7.5
+          }
+        ]
+      },
+      {
+        "query": "hipoteca",
+        "impressions": 11,
+        "clicks": 0,
+        "position": 5.8,
+        "ctr": 0,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/glossario/hipoteca/",
+            "impressions": 11,
+            "clicks": 0,
+            "position": 5.8
+          }
+        ]
+      },
+      {
+        "query": "o que é saldo pendente",
+        "impressions": 11,
         "clicks": 0,
         "position": 8.6,
         "ctr": 0,
         "pages": [
           {
-            "page": "https://blog.finmoovi.com/en/posts/en-7-best-personal-finance-apps-2026-complete-guide-to-organize/",
-            "impressions": 5,
+            "page": "https://blog.finmoovi.com/posts/entenda-o-saldo-pendente-e-como-regularizar-suas-contas/",
+            "impressions": 11,
             "clicks": 0,
             "position": 8.6
           }
         ]
       },
       {
-        "query": "cuáles son los criterios clave para seleccionar un fondo de inversión inmobiliaria adecuado para clientes minoristas",
-        "impressions": 4,
+        "query": "is credit card worth it 2026",
+        "impressions": 9,
         "clicks": 0,
-        "position": 8.8,
+        "position": 12.4,
         "ctr": 0,
         "pages": [
           {
-            "page": "https://blog.finmoovi.com/es/posts/es-guia-completa-de-fondos-inmobiliarios-para-principiantes/",
-            "impressions": 4,
+            "page": "https://blog.finmoovi.com/en/posts/en-credit-card-in-2026-is-it-worth-it/",
+            "impressions": 9,
             "clicks": 0,
-            "position": 8.8
+            "position": 12.4
           }
         ]
       },
       {
-        "query": "how do i choose the right app for managing my student budget? asking as: tech-savvy international freelancer",
-        "impressions": 4,
+        "query": "alternatives to spreadsheets for daily cash reporting",
+        "impressions": 8,
         "clicks": 0,
-        "position": 5.3,
+        "position": 17.8,
         "ctr": 0,
         "pages": [
           {
-            "page": "https://blog.finmoovi.com/en/posts/en-6-best-financial-apps-for-freelancers-practical-guide-2026/",
-            "impressions": 4,
+            "page": "https://blog.finmoovi.com/en/posts/en-7-alternatives-to-google-sheets-for-finance-updated-guide/",
+            "impressions": 8,
             "clicks": 0,
-            "position": 5.3
-          }
-        ]
-      },
-      {
-        "query": "que es un plan de salud",
-        "impressions": 4,
-        "clicks": 0,
-        "position": 5.8,
-        "ctr": 0,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/es/glossario/es-plan-de-salud/",
-            "impressions": 4,
-            "clicks": 0,
-            "position": 5.8
+            "position": 17.8
           }
         ]
       }
@@ -495,272 +501,91 @@
     "lowCtr": [
       {
         "query": "finmoovi.com alternatives",
-        "impressions": 48,
+        "impressions": 91,
         "clicks": 0,
-        "position": 1.4,
+        "position": 1.3,
         "ctr": 0,
         "expectedCtr": 28,
         "pages": [
           {
             "page": "https://blog.finmoovi.com/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your/",
-            "impressions": 48,
+            "impressions": 88,
             "clicks": 0,
-            "position": 2.6
+            "position": 2.5
           },
           {
             "page": "https://blog.finmoovi.com/en/posts/en-5-alternatives-to-mobills-in-2026/",
-            "impressions": 45,
+            "impressions": 85,
             "clicks": 0,
-            "position": 2.9
+            "position": 3.1
           },
           {
             "page": "https://blog.finmoovi.com/en/posts/en-finmoovi-vs-mobills-which-to-choose-in-2026/",
-            "impressions": 44,
+            "impressions": 76,
             "clicks": 0,
-            "position": 4.2
+            "position": 3.4
           }
         ],
         "realidade": {
           "ok": false,
           "razao": "amostra",
-          "motivo": "só 4 aparições no mercado en (mínimo 30) — ainda não dá para dizer nada",
+          "motivo": "só 8 aparições no mercado en (mínimo 30) — ainda não dá para dizer nada",
           "posicaoNoMercado": 1,
-          "impressoesNoMercado": 4,
-          "fracaoDoMercado": 8,
-          "fracaoMovel": 0
-        }
-      },
-      {
-        "query": "finmoovi.com",
-        "impressions": 44,
-        "clicks": 0,
-        "position": 4.9,
-        "ctr": 0,
-        "expectedCtr": 6,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/en/posts/en-finmoovi-vs-manual-tracking-which-is-better-for-your-money/",
-            "impressions": 36,
-            "clicks": 0,
-            "position": 6.4
-          },
-          {
-            "page": "https://blog.finmoovi.com/en/sobre/",
-            "impressions": 36,
-            "clicks": 0,
-            "position": 5
-          },
-          {
-            "page": "https://blog.finmoovi.com/en/posts/en-finmoovi-vs-mobills-which-to-choose-in-2026/",
-            "impressions": 31,
-            "clicks": 0,
-            "position": 7.4
-          }
-        ],
-        "realidade": {
-          "ok": false,
-          "razao": "amostra",
-          "motivo": "só 4 aparições no mercado en (mínimo 30) — ainda não dá para dizer nada",
-          "posicaoNoMercado": 3.3,
-          "impressoesNoMercado": 4,
+          "impressoesNoMercado": 8,
           "fracaoDoMercado": 9,
           "fracaoMovel": 0
         }
       },
       {
-        "query": "que es xetra",
-        "impressions": 36,
+        "query": "finmoovi.com",
+        "impressions": 79,
         "clicks": 0,
-        "position": 8.5,
-        "ctr": 0,
-        "expectedCtr": 3.2,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/es/glossario/es-xetra/",
-            "impressions": 36,
-            "clicks": 0,
-            "position": 8.5
-          }
-        ],
-        "realidade": {
-          "ok": true,
-          "razao": "real",
-          "motivo": "passou os quatro cortes",
-          "posicaoNoMercado": 8.5,
-          "impressoesNoMercado": 36,
-          "fracaoDoMercado": 100,
-          "fracaoMovel": 33
-        }
-      },
-      {
-        "query": "xetra que es",
-        "impressions": 31,
-        "clicks": 0,
-        "position": 8.7,
-        "ctr": 0,
-        "expectedCtr": 2.8,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/es/glossario/es-xetra/",
-            "impressions": 31,
-            "clicks": 0,
-            "position": 8.7
-          }
-        ],
-        "realidade": {
-          "ok": false,
-          "razao": "amostra",
-          "motivo": "só 29 aparições no mercado es (mínimo 30) — ainda não dá para dizer nada",
-          "posicaoNoMercado": 8.6,
-          "impressoesNoMercado": 29,
-          "fracaoDoMercado": 94,
-          "fracaoMovel": 45
-        }
-      },
-      {
-        "query": "saldo em aberto o que significa",
-        "impressions": 30,
-        "clicks": 0,
-        "position": 5.9,
-        "ctr": 0,
-        "expectedCtr": 5,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/",
-            "impressions": 30,
-            "clicks": 0,
-            "position": 5.9
-          }
-        ],
-        "realidade": {
-          "ok": true,
-          "razao": "real",
-          "motivo": "passou os quatro cortes",
-          "posicaoNoMercado": 5.9,
-          "impressoesNoMercado": 30,
-          "fracaoDoMercado": 100,
-          "fracaoMovel": 67
-        }
-      },
-      {
-        "query": "o que significa saldo pendente",
-        "impressions": 28,
-        "clicks": 0,
-        "position": 9.4,
-        "ctr": 0,
-        "expectedCtr": 2.8,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/posts/entenda-o-saldo-pendente-e-como-regularizar-suas-contas/",
-            "impressions": 28,
-            "clicks": 0,
-            "position": 9.4
-          }
-        ],
-        "realidade": {
-          "ok": false,
-          "razao": "amostra",
-          "motivo": "só 28 aparições no mercado pt (mínimo 30) — ainda não dá para dizer nada",
-          "posicaoNoMercado": 9.4,
-          "impressoesNoMercado": 28,
-          "fracaoDoMercado": 100,
-          "fracaoMovel": 100
-        }
-      },
-      {
-        "query": "valor em aberto significado",
-        "impressions": 27,
-        "clicks": 0,
-        "position": 7.1,
-        "ctr": 0,
-        "expectedCtr": 4,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/",
-            "impressions": 27,
-            "clicks": 0,
-            "position": 7.1
-          }
-        ],
-        "realidade": {
-          "ok": false,
-          "razao": "amostra",
-          "motivo": "só 27 aparições no mercado pt (mínimo 30) — ainda não dá para dizer nada",
-          "posicaoNoMercado": 7.1,
-          "impressoesNoMercado": 27,
-          "fracaoDoMercado": 100,
-          "fracaoMovel": 78
-        }
-      },
-      {
-        "query": "capital de giro",
-        "impressions": 17,
-        "clicks": 0,
-        "position": 5.2,
+        "position": 5.1,
         "ctr": 0,
         "expectedCtr": 6,
         "pages": [
           {
-            "page": "https://blog.finmoovi.com/es/glossario/es-capital-de-giro/",
-            "impressions": 15,
+            "page": "https://blog.finmoovi.com/en/posts/en-finmoovi-vs-manual-tracking-which-is-better-for-your-money/",
+            "impressions": 64,
             "clicks": 0,
-            "position": 2.6
+            "position": 6.4
           },
           {
-            "page": "https://blog.finmoovi.com/glossario/capital-de-giro/",
-            "impressions": 2,
+            "page": "https://blog.finmoovi.com/en/sobre/",
+            "impressions": 61,
             "clicks": 0,
-            "position": 24.5
+            "position": 5.1
+          },
+          {
+            "page": "https://blog.finmoovi.com/en/posts/en-finmoovi-vs-mobills-which-to-choose-in-2026/",
+            "impressions": 58,
+            "clicks": 0,
+            "position": 7.6
           }
         ],
         "realidade": {
           "ok": false,
           "razao": "amostra",
-          "motivo": "só 15 aparições no mercado es (mínimo 30) — ainda não dá para dizer nada",
-          "posicaoNoMercado": 2.6,
-          "impressoesNoMercado": 15,
-          "fracaoDoMercado": 88,
-          "fracaoMovel": 60
+          "motivo": "só 9 aparições no mercado en (mínimo 30) — ainda não dá para dizer nada",
+          "posicaoNoMercado": 3,
+          "impressoesNoMercado": 9,
+          "fracaoDoMercado": 11,
+          "fracaoMovel": 0
         }
       },
       {
-        "query": "o que significa valor em aberto",
-        "impressions": 14,
+        "query": "what is equity",
+        "impressions": 55,
         "clicks": 0,
-        "position": 7.8,
+        "position": 6.5,
         "ctr": 0,
-        "expectedCtr": 3.2,
+        "expectedCtr": 5,
         "pages": [
           {
-            "page": "https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/",
-            "impressions": 14,
+            "page": "https://blog.finmoovi.com/en/glossario/en-equity/",
+            "impressions": 55,
             "clicks": 0,
-            "position": 7.8
-          }
-        ],
-        "realidade": {
-          "ok": false,
-          "razao": "amostra",
-          "motivo": "só 14 aparições no mercado pt (mínimo 30) — ainda não dá para dizer nada",
-          "posicaoNoMercado": 7.8,
-          "impressoesNoMercado": 14,
-          "fracaoDoMercado": 100,
-          "fracaoMovel": 100
-        }
-      },
-      {
-        "query": "best money management app 2026",
-        "impressions": 13,
-        "clicks": 0,
-        "position": 9.2,
-        "ctr": 0,
-        "expectedCtr": 2.8,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/en/posts/en-7-best-personal-finance-apps-2026-complete-guide-to-organize/",
-            "impressions": 13,
-            "clicks": 0,
-            "position": 9.2
+            "position": 6.5
           }
         ],
         "realidade": {
@@ -774,16 +599,229 @@
         }
       },
       {
-        "query": "o que é saldo pendente",
-        "impressions": 13,
+        "query": "capital en giro",
+        "impressions": 37,
+        "clicks": 1,
+        "position": 5.1,
+        "ctr": 2.7,
+        "expectedCtr": 6,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-capital-de-giro/",
+            "impressions": 37,
+            "clicks": 1,
+            "position": 5.1
+          }
+        ],
+        "realidade": {
+          "ok": true,
+          "razao": "real",
+          "motivo": "passou os quatro cortes",
+          "posicaoNoMercado": 4.9,
+          "impressoesNoMercado": 36,
+          "fracaoDoMercado": 97,
+          "fracaoMovel": 47
+        }
+      },
+      {
+        "query": "que es xetra",
+        "impressions": 37,
+        "clicks": 0,
+        "position": 8.5,
+        "ctr": 0,
+        "expectedCtr": 3.2,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-xetra/",
+            "impressions": 37,
+            "clicks": 0,
+            "position": 8.5
+          }
+        ],
+        "realidade": {
+          "ok": true,
+          "razao": "real",
+          "motivo": "passou os quatro cortes",
+          "posicaoNoMercado": 8.5,
+          "impressoesNoMercado": 37,
+          "fracaoDoMercado": 100,
+          "fracaoMovel": 35
+        }
+      },
+      {
+        "query": "xetra que es",
+        "impressions": 36,
+        "clicks": 0,
+        "position": 8.3,
+        "ctr": 0,
+        "expectedCtr": 3.2,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-xetra/",
+            "impressions": 36,
+            "clicks": 0,
+            "position": 8.3
+          }
+        ],
+        "realidade": {
+          "ok": true,
+          "razao": "real",
+          "motivo": "passou os quatro cortes",
+          "posicaoNoMercado": 8.3,
+          "impressoesNoMercado": 34,
+          "fracaoDoMercado": 94,
+          "fracaoMovel": 53
+        }
+      },
+      {
+        "query": "valor em aberto significado",
+        "impressions": 34,
+        "clicks": 0,
+        "position": 6.8,
+        "ctr": 0,
+        "expectedCtr": 4,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/",
+            "impressions": 34,
+            "clicks": 0,
+            "position": 6.8
+          }
+        ],
+        "realidade": {
+          "ok": true,
+          "razao": "real",
+          "motivo": "passou os quatro cortes",
+          "posicaoNoMercado": 6.8,
+          "impressoesNoMercado": 34,
+          "fracaoDoMercado": 100,
+          "fracaoMovel": 74
+        }
+      },
+      {
+        "query": "o que significa saldo pendente",
+        "impressions": 28,
+        "clicks": 0,
+        "position": 9.1,
+        "ctr": 0,
+        "expectedCtr": 2.8,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/posts/entenda-o-saldo-pendente-e-como-regularizar-suas-contas/",
+            "impressions": 28,
+            "clicks": 0,
+            "position": 9.1
+          }
+        ],
+        "realidade": {
+          "ok": false,
+          "razao": "amostra",
+          "motivo": "só 28 aparições no mercado pt (mínimo 30) — ainda não dá para dizer nada",
+          "posicaoNoMercado": 9.1,
+          "impressoesNoMercado": 28,
+          "fracaoDoMercado": 100,
+          "fracaoMovel": 100
+        }
+      },
+      {
+        "query": "saldo em aberto o que significa",
+        "impressions": 22,
+        "clicks": 0,
+        "position": 5.6,
+        "ctr": 0,
+        "expectedCtr": 5,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/",
+            "impressions": 22,
+            "clicks": 0,
+            "position": 5.6
+          }
+        ],
+        "realidade": {
+          "ok": false,
+          "razao": "amostra",
+          "motivo": "só 22 aparições no mercado pt (mínimo 30) — ainda não dá para dizer nada",
+          "posicaoNoMercado": 5.6,
+          "impressoesNoMercado": 22,
+          "fracaoDoMercado": 100,
+          "fracaoMovel": 77
+        }
+      },
+      {
+        "query": "what is withdraw",
+        "impressions": 20,
+        "clicks": 0,
+        "position": 5,
+        "ctr": 0,
+        "expectedCtr": 6,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/glossario/withdrawal/",
+            "impressions": 20,
+            "clicks": 0,
+            "position": 5
+          }
+        ],
+        "realidade": {
+          "ok": false,
+          "razao": "amostra",
+          "motivo": "só 20 aparições no mercado pt (mínimo 30) — ainda não dá para dizer nada",
+          "posicaoNoMercado": 5,
+          "impressoesNoMercado": 20,
+          "fracaoDoMercado": 100,
+          "fracaoMovel": 0
+        }
+      },
+      {
+        "query": "capital de giro",
+        "impressions": 18,
+        "clicks": 0,
+        "position": 4.6,
+        "ctr": 0,
+        "expectedCtr": 6,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-capital-de-giro/",
+            "impressions": 17,
+            "clicks": 0,
+            "position": 3.6
+          },
+          {
+            "page": "https://blog.finmoovi.com/glossario/capital-de-giro/",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 20
+          }
+        ]
+      },
+      {
+        "query": "o que significa valor em aberto",
+        "impressions": 18,
+        "clicks": 0,
+        "position": 7.9,
+        "ctr": 0,
+        "expectedCtr": 3.2,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/",
+            "impressions": 18,
+            "clicks": 0,
+            "position": 7.9
+          }
+        ]
+      },
+      {
+        "query": "best money management app 2026",
+        "impressions": 15,
         "clicks": 0,
         "position": 9,
         "ctr": 0,
         "expectedCtr": 2.8,
         "pages": [
           {
-            "page": "https://blog.finmoovi.com/posts/entenda-o-saldo-pendente-e-como-regularizar-suas-contas/",
-            "impressions": 13,
+            "page": "https://blog.finmoovi.com/en/posts/en-7-best-personal-finance-apps-2026-complete-guide-to-organize/",
+            "impressions": 15,
             "clicks": 0,
             "position": 9
           }
@@ -791,17 +829,17 @@
       },
       {
         "query": "capital de giro significado",
-        "impressions": 12,
+        "impressions": 13,
         "clicks": 0,
-        "position": 6,
+        "position": 5.8,
         "ctr": 0,
         "expectedCtr": 5,
         "pages": [
           {
             "page": "https://blog.finmoovi.com/es/glossario/es-capital-de-giro/",
-            "impressions": 11,
+            "impressions": 12,
             "clicks": 0,
-            "position": 3
+            "position": 3.1
           },
           {
             "page": "https://blog.finmoovi.com/glossario/capital-de-giro/",
@@ -812,66 +850,162 @@
         ]
       },
       {
-        "query": "compare os modelos de relatório de despesas disponíveis no google com outras soluções para ajudar a determinar a melhor opção para suas necessidades.",
-        "impressions": 9,
-        "clicks": 0,
-        "position": 7.4,
-        "ctr": 0,
-        "expectedCtr": 4,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/posts/7-alternativas-a-planilha-google-para-financas-guia/",
-            "impressions": 9,
-            "clicks": 0,
-            "position": 7.4
-          }
-        ]
-      },
-      {
-        "query": "que es capital en giro",
-        "impressions": 9,
-        "clicks": 0,
-        "position": 4.8,
-        "ctr": 0,
-        "expectedCtr": 6,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/es/glossario/es-capital-de-giro/",
-            "impressions": 9,
-            "clicks": 0,
-            "position": 4.8
-          }
-        ]
-      },
-      {
-        "query": "que es xetra en bolsa",
-        "impressions": 9,
-        "clicks": 0,
-        "position": 9.9,
-        "ctr": 0,
-        "expectedCtr": 2.5,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/es/glossario/es-xetra/",
-            "impressions": 9,
-            "clicks": 0,
-            "position": 9.9
-          }
-        ]
-      },
-      {
         "query": "o que significa saldo em aberto",
-        "impressions": 6,
+        "impressions": 12,
         "clicks": 0,
-        "position": 8.2,
+        "position": 7.5,
         "ctr": 0,
         "expectedCtr": 3.2,
         "pages": [
           {
             "page": "https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/",
+            "impressions": 12,
+            "clicks": 0,
+            "position": 7.5
+          }
+        ]
+      },
+      {
+        "query": "que es capital en giro",
+        "impressions": 12,
+        "clicks": 0,
+        "position": 4.9,
+        "ctr": 0,
+        "expectedCtr": 6,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-capital-de-giro/",
+            "impressions": 12,
+            "clicks": 0,
+            "position": 4.9
+          }
+        ]
+      },
+      {
+        "query": "que es xetra en bolsa",
+        "impressions": 12,
+        "clicks": 0,
+        "position": 9.8,
+        "ctr": 0,
+        "expectedCtr": 2.5,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-xetra/",
+            "impressions": 12,
+            "clicks": 0,
+            "position": 9.8
+          }
+        ]
+      },
+      {
+        "query": "which money saving apps are worth downloading in 2026?",
+        "impressions": 12,
+        "clicks": 0,
+        "position": 6.1,
+        "ctr": 0,
+        "expectedCtr": 5,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/en/posts/en-7-best-personal-finance-apps-2026-complete-guide-to-organize/",
+            "impressions": 12,
+            "clicks": 0,
+            "position": 6.1
+          }
+        ]
+      },
+      {
+        "query": "compare os modelos de relatório de despesas disponíveis no google com outras soluções para ajudar a determinar a melhor opção para suas necessidades.",
+        "impressions": 11,
+        "clicks": 0,
+        "position": 7.5,
+        "ctr": 0,
+        "expectedCtr": 4,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/posts/7-alternativas-a-planilha-google-para-financas-guia/",
+            "impressions": 11,
+            "clicks": 0,
+            "position": 7.5
+          }
+        ]
+      },
+      {
+        "query": "hipoteca",
+        "impressions": 11,
+        "clicks": 0,
+        "position": 5.8,
+        "ctr": 0,
+        "expectedCtr": 5,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/glossario/hipoteca/",
+            "impressions": 11,
+            "clicks": 0,
+            "position": 5.8
+          }
+        ]
+      },
+      {
+        "query": "o que é saldo pendente",
+        "impressions": 11,
+        "clicks": 0,
+        "position": 8.6,
+        "ctr": 0,
+        "expectedCtr": 2.8,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/posts/entenda-o-saldo-pendente-e-como-regularizar-suas-contas/",
+            "impressions": 11,
+            "clicks": 0,
+            "position": 8.6
+          }
+        ]
+      },
+      {
+        "query": "apps that coach you on credit habits in 2026",
+        "impressions": 6,
+        "clicks": 0,
+        "position": 6,
+        "ctr": 0,
+        "expectedCtr": 5,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/en/posts/en-7-best-personal-finance-apps-2026-complete-guide-to-organize/",
             "impressions": 6,
             "clicks": 0,
-            "position": 8.2
+            "position": 6
+          }
+        ]
+      },
+      {
+        "query": "best free money management app 2026",
+        "impressions": 6,
+        "clicks": 0,
+        "position": 5,
+        "ctr": 0,
+        "expectedCtr": 6,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/en/posts/en-7-best-personal-finance-apps-2026-complete-guide-to-organize/",
+            "impressions": 6,
+            "clicks": 0,
+            "position": 5
+          }
+        ]
+      },
+      {
+        "query": "best personal finance app 2026",
+        "impressions": 6,
+        "clicks": 0,
+        "position": 7,
+        "ctr": 0,
+        "expectedCtr": 4,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/en/posts/en-7-best-personal-finance-apps-2026-complete-guide-to-organize/",
+            "impressions": 6,
+            "clicks": 0,
+            "position": 7
           }
         ]
       },
@@ -890,191 +1024,234 @@
             "position": 7
           }
         ]
-      },
-      {
-        "query": "saldo em aberto",
-        "impressions": 6,
-        "clicks": 0,
-        "position": 7.2,
-        "ctr": 0,
-        "expectedCtr": 4,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/",
-            "impressions": 6,
-            "clicks": 0,
-            "position": 7.2
-          }
-        ]
-      },
-      {
-        "query": "top finance learning app for beginners 2026",
-        "impressions": 5,
-        "clicks": 0,
-        "position": 4.2,
-        "ctr": 0,
-        "expectedCtr": 8,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/en/posts/en-7-best-personal-finance-apps-2026-complete-guide-to-organize/",
-            "impressions": 5,
-            "clicks": 0,
-            "position": 4.2
-          }
-        ]
-      },
-      {
-        "query": "users stopped opening our budgeting screen after the first month. around a third of transactions land in \"other\". where do we start?",
-        "impressions": 5,
-        "clicks": 0,
-        "position": 5.4,
-        "ctr": 0,
-        "expectedCtr": 6,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/en/posts/en-why-your-account-balance-vanishes-at-month-end-and-how-to/",
-            "impressions": 5,
-            "clicks": 0,
-            "position": 5.4
-          }
-        ]
-      },
-      {
-        "query": "which money saving apps are worth downloading in 2026?",
-        "impressions": 5,
-        "clicks": 0,
-        "position": 8.6,
-        "ctr": 0,
-        "expectedCtr": 2.8,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/en/posts/en-7-best-personal-finance-apps-2026-complete-guide-to-organize/",
-            "impressions": 5,
-            "clicks": 0,
-            "position": 8.6
-          }
-        ]
-      },
-      {
-        "query": "cuáles son los criterios clave para seleccionar un fondo de inversión inmobiliaria adecuado para clientes minoristas",
-        "impressions": 4,
-        "clicks": 0,
-        "position": 8.8,
-        "ctr": 0,
-        "expectedCtr": 2.8,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/es/posts/es-guia-completa-de-fondos-inmobiliarios-para-principiantes/",
-            "impressions": 4,
-            "clicks": 0,
-            "position": 8.8
-          }
-        ]
-      },
-      {
-        "query": "how do i choose the right app for managing my student budget? asking as: tech-savvy international freelancer",
-        "impressions": 4,
-        "clicks": 0,
-        "position": 5.3,
-        "ctr": 0,
-        "expectedCtr": 6,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/en/posts/en-6-best-financial-apps-for-freelancers-practical-guide-2026/",
-            "impressions": 4,
-            "clicks": 0,
-            "position": 5.3
-          }
-        ]
-      },
-      {
-        "query": "mobills alternative",
-        "impressions": 4,
-        "clicks": 0,
-        "position": 3.5,
-        "ctr": 0,
-        "expectedCtr": 8,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/en/posts/en-5-alternatives-to-mobills-in-2026/",
-            "impressions": 4,
-            "clicks": 0,
-            "position": 3.5
-          }
-        ]
-      },
-      {
-        "query": "que es capital de giro",
-        "impressions": 4,
-        "clicks": 0,
-        "position": 1.8,
-        "ctr": 0,
-        "expectedCtr": 15,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/es/glossario/es-capital-de-giro/",
-            "impressions": 4,
-            "clicks": 0,
-            "position": 1.8
-          }
-        ]
       }
     ],
     "gaps": [
       {
-        "query": "trading",
-        "impressions": 119,
-        "clicks": 0,
-        "position": 26,
-        "suggestedSlug": "trading",
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/en/glossario/en-trading/",
-            "impressions": 65,
-            "clicks": 0,
-            "position": 30.6
-          },
-          {
-            "page": "https://blog.finmoovi.com/glossario/trading/",
-            "impressions": 52,
-            "clicks": 0,
-            "position": 19
-          },
-          {
-            "page": "https://blog.finmoovi.com/es/glossario/es-trading/",
-            "impressions": 2,
-            "clicks": 0,
-            "position": 54.5
-          }
-        ]
-      },
-      {
         "query": "fondos inmobiliarios",
-        "impressions": 82,
+        "impressions": 107,
         "clicks": 0,
-        "position": 55.9,
+        "position": 60.2,
         "suggestedSlug": "fondos-inmobiliarios",
         "pages": [
           {
             "page": "https://blog.finmoovi.com/es/posts/es-guia-completa-de-fondos-inmobiliarios-para-principiantes/",
-            "impressions": 82,
+            "impressions": 107,
             "clicks": 0,
-            "position": 55.9
+            "position": 60.2
+          }
+        ]
+      },
+      {
+        "query": "price online",
+        "impressions": 94,
+        "clicks": 0,
+        "position": 18.9,
+        "suggestedSlug": "price-online",
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/ferramentas/calculadora-financiamento/",
+            "impressions": 94,
+            "clicks": 0,
+            "position": 18.9
+          }
+        ]
+      },
+      {
+        "query": "finmoovi.com alternatives",
+        "impressions": 91,
+        "clicks": 0,
+        "position": 1.3,
+        "suggestedSlug": "finmoovi-com-alternatives",
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your/",
+            "impressions": 88,
+            "clicks": 0,
+            "position": 2.5
+          },
+          {
+            "page": "https://blog.finmoovi.com/en/posts/en-5-alternatives-to-mobills-in-2026/",
+            "impressions": 85,
+            "clicks": 0,
+            "position": 3.1
+          },
+          {
+            "page": "https://blog.finmoovi.com/en/posts/en-finmoovi-vs-mobills-which-to-choose-in-2026/",
+            "impressions": 76,
+            "clicks": 0,
+            "position": 3.4
+          }
+        ]
+      },
+      {
+        "query": "plan salud",
+        "impressions": 78,
+        "clicks": 0,
+        "position": 71.4,
+        "suggestedSlug": "plan-salud",
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-plan-de-salud/",
+            "impressions": 78,
+            "clicks": 0,
+            "position": 71.4
+          }
+        ]
+      },
+      {
+        "query": "patrimonio",
+        "impressions": 70,
+        "clicks": 0,
+        "position": 61.6,
+        "suggestedSlug": "patrimonio",
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-patrimonio/",
+            "impressions": 70,
+            "clicks": 0,
+            "position": 61.6
+          }
+        ]
+      },
+      {
+        "query": "investir na bolsa simulador",
+        "impressions": 65,
+        "clicks": 0,
+        "position": 81.4,
+        "suggestedSlug": "investir-na-bolsa-simulador",
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/ferramentas/simulador-investimento/",
+            "impressions": 65,
+            "clicks": 0,
+            "position": 81.4
+          }
+        ]
+      },
+      {
+        "query": "tipos de gastos",
+        "impressions": 57,
+        "clicks": 0,
+        "position": 78.6,
+        "suggestedSlug": "tipos-de-gastos",
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-gasto/",
+            "impressions": 57,
+            "clicks": 0,
+            "position": 78.6
+          }
+        ]
+      },
+      {
+        "query": "what is equity",
+        "impressions": 55,
+        "clicks": 0,
+        "position": 6.5,
+        "suggestedSlug": "what-is-equity",
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/en/glossario/en-equity/",
+            "impressions": 55,
+            "clicks": 0,
+            "position": 6.5
+          }
+        ]
+      },
+      {
+        "query": "xetra",
+        "impressions": 55,
+        "clicks": 0,
+        "position": 61.2,
+        "suggestedSlug": "xetra",
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/en/glossario/en-xetra/",
+            "impressions": 47,
+            "clicks": 0,
+            "position": 64.9
+          },
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-xetra/",
+            "impressions": 8,
+            "clicks": 0,
+            "position": 39.3
+          }
+        ]
+      },
+      {
+        "query": "valoracion",
+        "impressions": 49,
+        "clicks": 0,
+        "position": 53.6,
+        "suggestedSlug": "valoracion",
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-valoracion/",
+            "impressions": 49,
+            "clicks": 0,
+            "position": 53.6
+          }
+        ]
+      },
+      {
+        "query": "yuan",
+        "impressions": 48,
+        "clicks": 0,
+        "position": 37.3,
+        "suggestedSlug": "yuan",
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-yuan-tambien-conocido-como-renminbi/",
+            "impressions": 48,
+            "clicks": 0,
+            "position": 37.3
+          }
+        ]
+      },
+      {
+        "query": "fondos inversion inmobiliarios",
+        "impressions": 47,
+        "clicks": 0,
+        "position": 63.9,
+        "suggestedSlug": "fondos-inversion-inmobiliarios",
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/es/posts/es-guia-completa-de-fondos-inmobiliarios-para-principiantes/",
+            "impressions": 47,
+            "clicks": 0,
+            "position": 63.9
+          }
+        ]
+      },
+      {
+        "query": "plan de salud definicion",
+        "impressions": 47,
+        "clicks": 0,
+        "position": 50.4,
+        "suggestedSlug": "plan-de-salud-definicion",
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-plan-de-salud/",
+            "impressions": 47,
+            "clicks": 0,
+            "position": 50.4
           }
         ]
       },
       {
         "query": "risco financeiro",
-        "impressions": 65,
+        "impressions": 47,
         "clicks": 0,
-        "position": 56.6,
+        "position": 58.8,
         "suggestedSlug": "risco-financeiro",
         "pages": [
           {
             "page": "https://blog.finmoovi.com/glossario/risco-financeiro/",
-            "impressions": 60,
+            "impressions": 42,
             "clicks": 0,
-            "position": 57.1
+            "position": 59.8
           },
           {
             "page": "https://blog.finmoovi.com/es/glossario/es-riesgo-financiero/",
@@ -1085,125 +1262,44 @@
         ]
       },
       {
-        "query": "plan salud",
-        "impressions": 55,
-        "clicks": 0,
-        "position": 70,
-        "suggestedSlug": "plan-salud",
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/es/glossario/es-plan-de-salud/",
-            "impressions": 55,
-            "clicks": 0,
-            "position": 70
-          }
-        ]
-      },
-      {
         "query": "financial risk",
-        "impressions": 52,
+        "impressions": 46,
         "clicks": 0,
-        "position": 64.3,
+        "position": 65.8,
         "suggestedSlug": "financial-risk",
         "pages": [
           {
             "page": "https://blog.finmoovi.com/en/glossario/en-financial-risk/",
-            "impressions": 52,
+            "impressions": 46,
             "clicks": 0,
-            "position": 64.3
+            "position": 65.8
           }
         ]
       },
       {
-        "query": "finmoovi.com alternatives",
-        "impressions": 48,
-        "clicks": 0,
-        "position": 1.4,
-        "suggestedSlug": "finmoovi-com-alternatives",
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your/",
-            "impressions": 48,
-            "clicks": 0,
-            "position": 2.6
-          },
-          {
-            "page": "https://blog.finmoovi.com/en/posts/en-5-alternatives-to-mobills-in-2026/",
-            "impressions": 45,
-            "clicks": 0,
-            "position": 2.9
-          },
-          {
-            "page": "https://blog.finmoovi.com/en/posts/en-finmoovi-vs-mobills-which-to-choose-in-2026/",
-            "impressions": 44,
-            "clicks": 0,
-            "position": 4.2
-          }
-        ]
-      },
-      {
-        "query": "investir na bolsa simulador",
+        "query": "trading",
         "impressions": 44,
         "clicks": 0,
-        "position": 79.5,
-        "suggestedSlug": "investir-na-bolsa-simulador",
+        "position": 25.2,
+        "suggestedSlug": "trading",
         "pages": [
           {
-            "page": "https://blog.finmoovi.com/ferramentas/simulador-investimento/",
-            "impressions": 44,
+            "page": "https://blog.finmoovi.com/glossario/trading/",
+            "impressions": 35,
             "clicks": 0,
-            "position": 79.5
-          }
-        ]
-      },
-      {
-        "query": "xetra",
-        "impressions": 44,
-        "clicks": 0,
-        "position": 59.1,
-        "suggestedSlug": "xetra",
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/en/glossario/en-xetra/",
-            "impressions": 33,
-            "clicks": 0,
-            "position": 66.8
+            "position": 21
           },
           {
-            "page": "https://blog.finmoovi.com/es/glossario/es-xetra/",
-            "impressions": 11,
+            "page": "https://blog.finmoovi.com/en/glossario/en-trading/",
+            "impressions": 7,
             "clicks": 0,
-            "position": 36.1
-          }
-        ]
-      },
-      {
-        "query": "fondos inversion inmobiliarios",
-        "impressions": 40,
-        "clicks": 0,
-        "position": 61.1,
-        "suggestedSlug": "fondos-inversion-inmobiliarios",
-        "pages": [
+            "position": 37.7
+          },
           {
-            "page": "https://blog.finmoovi.com/es/posts/es-guia-completa-de-fondos-inmobiliarios-para-principiantes/",
-            "impressions": 40,
+            "page": "https://blog.finmoovi.com/es/glossario/es-trading/",
+            "impressions": 2,
             "clicks": 0,
-            "position": 61.1
-          }
-        ]
-      },
-      {
-        "query": "patrimonio",
-        "impressions": 39,
-        "clicks": 0,
-        "position": 64.6,
-        "suggestedSlug": "patrimonio",
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/es/glossario/es-patrimonio/",
-            "impressions": 39,
-            "clicks": 0,
-            "position": 64.6
+            "position": 54.5
           }
         ]
       },
@@ -1235,212 +1331,122 @@
         ]
       },
       {
-        "query": "yuan",
-        "impressions": 39,
-        "clicks": 0,
-        "position": 39.9,
-        "suggestedSlug": "yuan",
+        "query": "capital en giro",
+        "impressions": 37,
+        "clicks": 1,
+        "position": 5.1,
+        "suggestedSlug": "capital-en-giro",
         "pages": [
           {
-            "page": "https://blog.finmoovi.com/es/glossario/es-yuan-tambien-conocido-como-renminbi/",
-            "impressions": 39,
-            "clicks": 0,
-            "position": 39.9
+            "page": "https://blog.finmoovi.com/es/glossario/es-capital-de-giro/",
+            "impressions": 37,
+            "clicks": 1,
+            "position": 5.1
           }
         ]
       },
       {
         "query": "que es xetra",
-        "impressions": 36,
+        "impressions": 37,
         "clicks": 0,
         "position": 8.5,
         "suggestedSlug": "que-es-xetra",
         "pages": [
           {
             "page": "https://blog.finmoovi.com/es/glossario/es-xetra/",
-            "impressions": 36,
+            "impressions": 37,
             "clicks": 0,
             "position": 8.5
           }
         ]
       },
       {
-        "query": "tipos de gastos",
-        "impressions": 34,
-        "clicks": 0,
-        "position": 81.5,
-        "suggestedSlug": "tipos-de-gastos",
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/es/glossario/es-gasto/",
-            "impressions": 34,
-            "clicks": 0,
-            "position": 81.5
-          }
-        ]
-      },
-      {
-        "query": "plan de salud definicion",
-        "impressions": 33,
-        "clicks": 0,
-        "position": 44.5,
-        "suggestedSlug": "plan-de-salud-definicion",
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/es/glossario/es-plan-de-salud/",
-            "impressions": 33,
-            "clicks": 0,
-            "position": 44.5
-          }
-        ]
-      },
-      {
-        "query": "valoracion",
-        "impressions": 33,
-        "clicks": 0,
-        "position": 51.9,
-        "suggestedSlug": "valoracion",
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/es/glossario/es-valoracion/",
-            "impressions": 33,
-            "clicks": 0,
-            "position": 51.9
-          }
-        ]
-      },
-      {
         "query": "xetra que es",
-        "impressions": 31,
+        "impressions": 36,
         "clicks": 0,
-        "position": 8.7,
+        "position": 8.3,
         "suggestedSlug": "xetra-que-es",
         "pages": [
           {
             "page": "https://blog.finmoovi.com/es/glossario/es-xetra/",
-            "impressions": 31,
+            "impressions": 36,
             "clicks": 0,
-            "position": 8.7
-          }
-        ]
-      },
-      {
-        "query": "price online",
-        "impressions": 27,
-        "clicks": 0,
-        "position": 24.9,
-        "suggestedSlug": "price-online",
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/ferramentas/calculadora-financiamento/",
-            "impressions": 27,
-            "clicks": 0,
-            "position": 24.9
-          }
-        ]
-      },
-      {
-        "query": "renminbi",
-        "impressions": 27,
-        "clicks": 0,
-        "position": 30.6,
-        "suggestedSlug": "renminbi",
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/es/glossario/es-yuan-tambien-conocido-como-renminbi/",
-            "impressions": 27,
-            "clicks": 0,
-            "position": 30.6
+            "position": 8.3
           }
         ]
       },
       {
         "query": "simulador de investimento",
-        "impressions": 27,
+        "impressions": 34,
         "clicks": 0,
-        "position": 59.6,
+        "position": 56.5,
         "suggestedSlug": "simulador-de-investimento",
         "pages": [
           {
             "page": "https://blog.finmoovi.com/ferramentas/simulador-investimento/",
-            "impressions": 27,
+            "impressions": 34,
             "clicks": 0,
-            "position": 59.6
+            "position": 56.5
           }
         ]
       },
       {
         "query": "valor em aberto significado",
-        "impressions": 27,
+        "impressions": 34,
         "clicks": 0,
-        "position": 7.1,
+        "position": 6.8,
         "suggestedSlug": "valor-em-aberto-significado",
         "pages": [
           {
             "page": "https://blog.finmoovi.com/posts/entenda-o-que-e-saldo-em-aberto-e-como-evita-lo/",
-            "impressions": 27,
+            "impressions": 34,
             "clicks": 0,
-            "position": 7.1
+            "position": 6.8
           }
         ]
       },
       {
-        "query": "capital en giro",
-        "impressions": 26,
-        "clicks": 1,
-        "position": 4.7,
-        "suggestedSlug": "capital-en-giro",
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/es/glossario/es-capital-de-giro/",
-            "impressions": 26,
-            "clicks": 1,
-            "position": 4.7
-          }
-        ]
-      },
-      {
-        "query": "valoración",
-        "impressions": 26,
+        "query": "subyacente",
+        "impressions": 31,
         "clicks": 0,
-        "position": 22.2,
-        "suggestedSlug": "valoracion",
+        "position": 56.7,
+        "suggestedSlug": "subyacente",
         "pages": [
           {
-            "page": "https://blog.finmoovi.com/es/glossario/es-valoracion/",
-            "impressions": 26,
+            "page": "https://blog.finmoovi.com/es/glossario/es-subyacente/",
+            "impressions": 31,
             "clicks": 0,
-            "position": 22.2
+            "position": 56.7
           }
         ]
       },
       {
-        "query": "que es giro",
-        "impressions": 25,
+        "query": "renminbi",
+        "impressions": 30,
         "clicks": 0,
-        "position": 71.7,
-        "suggestedSlug": "que-es-giro",
+        "position": 29.5,
+        "suggestedSlug": "renminbi",
         "pages": [
           {
-            "page": "https://blog.finmoovi.com/es/glossario/es-giro/",
-            "impressions": 25,
+            "page": "https://blog.finmoovi.com/es/glossario/es-yuan-tambien-conocido-como-renminbi/",
+            "impressions": 30,
             "clicks": 0,
-            "position": 71.7
+            "position": 29.5
           }
         ]
       },
       {
         "query": "giro",
-        "impressions": 24,
+        "impressions": 29,
         "clicks": 0,
-        "position": 64,
+        "position": 64.3,
         "suggestedSlug": "giro",
         "pages": [
           {
             "page": "https://blog.finmoovi.com/es/glossario/es-giro/",
-            "impressions": 24,
+            "impressions": 29,
             "clicks": 0,
-            "position": 64
+            "position": 64.3
           }
         ]
       }
@@ -1448,67 +1454,85 @@
     "cannibalization": [
       {
         "query": "finmoovi.com alternatives",
-        "totalImpressions": 185,
+        "totalImpressions": 358,
         "pages": [
           {
             "page": "https://blog.finmoovi.com/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your/",
-            "impressions": 48,
+            "impressions": 88,
             "clicks": 0,
-            "position": 2.6
+            "position": 2.5
           },
           {
             "page": "https://blog.finmoovi.com/en/posts/en-5-alternatives-to-mobills-in-2026/",
-            "impressions": 45,
+            "impressions": 85,
             "clicks": 0,
-            "position": 2.9
+            "position": 3.1
           },
           {
             "page": "https://blog.finmoovi.com/en/posts/en-finmoovi-vs-mobills-which-to-choose-in-2026/",
-            "impressions": 44,
+            "impressions": 76,
             "clicks": 0,
-            "position": 4.2
+            "position": 3.4
           },
           {
             "page": "https://blog.finmoovi.com/en/posts/en-6-best-financial-apps-for-freelancers-practical-guide-2026/",
-            "impressions": 35,
+            "impressions": 64,
             "clicks": 0,
-            "position": 6.7
-          },
-          {
-            "page": "https://blog.finmoovi.com/en/posts/en-finmoovi-vs-organizze-which-is-better-in-2026/",
-            "impressions": 7,
-            "clicks": 0,
-            "position": 5.1
+            "position": 6.9
           },
           {
             "page": "https://blog.finmoovi.com/en/posts/en-7-best-personal-finance-apps-2026-complete-guide-to-organize/",
+            "impressions": 20,
+            "clicks": 0,
+            "position": 7.1
+          },
+          {
+            "page": "https://blog.finmoovi.com/en/posts/en-finmoovi-vs-organizze-which-is-better-in-2026/",
+            "impressions": 17,
+            "clicks": 0,
+            "position": 4.6
+          },
+          {
+            "page": "https://blog.finmoovi.com/en/posts/en-7-alternatives-to-google-sheets-for-finance-updated-guide/",
             "impressions": 6,
             "clicks": 0,
-            "position": 7
+            "position": 1
+          },
+          {
+            "page": "https://blog.finmoovi.com/en/posts/en-finmoovi-vs-manual-tracking-which-is-better-for-your-money/",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 1
           }
         ]
       },
       {
         "query": "finmoovi.com",
-        "totalImpressions": 182,
+        "totalImpressions": 337,
         "pages": [
           {
             "page": "https://blog.finmoovi.com/en/posts/en-finmoovi-vs-manual-tracking-which-is-better-for-your-money/",
-            "impressions": 36,
+            "impressions": 64,
             "clicks": 0,
             "position": 6.4
           },
           {
             "page": "https://blog.finmoovi.com/en/sobre/",
-            "impressions": 36,
+            "impressions": 61,
             "clicks": 0,
-            "position": 5
+            "position": 5.1
           },
           {
             "page": "https://blog.finmoovi.com/en/posts/en-finmoovi-vs-mobills-which-to-choose-in-2026/",
-            "impressions": 31,
+            "impressions": 58,
             "clicks": 0,
-            "position": 7.4
+            "position": 7.6
+          },
+          {
+            "page": "https://blog.finmoovi.com/en/posts/en-discover-a-simple-app-to-organize-your-finances-in-2026/",
+            "impressions": 27,
+            "clicks": 0,
+            "position": 7
           },
           {
             "page": "https://blog.finmoovi.com/en/posts/en-recurring-expenses-understand-and-manage-them-easily-in-2026/",
@@ -1517,16 +1541,34 @@
             "position": 7.5
           },
           {
-            "page": "https://blog.finmoovi.com/en/posts/en-discover-a-simple-app-to-organize-your-finances-in-2026/",
-            "impressions": 14,
+            "page": "https://blog.finmoovi.com/en/posts/en-6-best-financial-apps-for-freelancers-practical-guide-2026/",
+            "impressions": 13,
             "clicks": 0,
-            "position": 7.6
+            "position": 9.4
           },
           {
             "page": "https://blog.finmoovi.com/en/posts/en-digital-bank-vs-major-bank-which-is-worth-it-in-2026/",
+            "impressions": 13,
+            "clicks": 0,
+            "position": 9
+          },
+          {
+            "page": "https://blog.finmoovi.com/",
             "impressions": 8,
             "clicks": 0,
-            "position": 9.4
+            "position": 7.8
+          },
+          {
+            "page": "https://blog.finmoovi.com/es/sobre/",
+            "impressions": 8,
+            "clicks": 0,
+            "position": 7
+          },
+          {
+            "page": "https://blog.finmoovi.com/en/posts/en-why-switch-from-a-spreadsheet-to-an-app-in-2026-real/",
+            "impressions": 7,
+            "clicks": 0,
+            "position": 8.4
           },
           {
             "page": "https://blog.finmoovi.com/en/posts/en-how-to-grow-your-money-effortlessly-in-2026/",
@@ -1541,16 +1583,40 @@
             "position": 8.5
           },
           {
-            "page": "https://blog.finmoovi.com/",
-            "impressions": 4,
+            "page": "https://blog.finmoovi.com/en/posts/en-how-to-use-the-price-formula-to-split-purchases-without/",
+            "impressions": 6,
             "clicks": 0,
             "position": 8.5
           },
           {
             "page": "https://blog.finmoovi.com/es/posts/es-como-hacer-que-tu-dinero-crezca-sin-esfuerzo-en-2026/",
+            "impressions": 6,
+            "clicks": 0,
+            "position": 8
+          },
+          {
+            "page": "https://blog.finmoovi.com/en/posts/en-5-alternatives-to-mobills-in-2026/",
+            "impressions": 5,
+            "clicks": 0,
+            "position": 8
+          },
+          {
+            "page": "https://blog.finmoovi.com/en/posts/en-consortium-vs-loan-which-is-better-in-2026/",
+            "impressions": 5,
+            "clicks": 0,
+            "position": 9.6
+          },
+          {
+            "page": "https://blog.finmoovi.com/en/posts/en-how-to-keep-daily-expenses-under-control-and-avoid-surprises/",
             "impressions": 4,
             "clicks": 0,
             "position": 8
+          },
+          {
+            "page": "https://blog.finmoovi.com/es/posts/es-como-usar-la-formula-price-para-fraccionar-compras-sin/",
+            "impressions": 4,
+            "clicks": 0,
+            "position": 8.5
           },
           {
             "page": "https://blog.finmoovi.com/es/posts/es-como-usar-un-simulador-de-prestamo-para-planificar-tu-futuro/",
@@ -1559,22 +1625,10 @@
             "position": 9
           },
           {
-            "page": "https://blog.finmoovi.com/es/sobre/",
-            "impressions": 4,
-            "clicks": 0,
-            "position": 7
-          },
-          {
-            "page": "https://blog.finmoovi.com/en/posts/en-5-alternatives-to-mobills-in-2026/",
+            "page": "https://blog.finmoovi.com/es/glossario/es-gasto/",
             "impressions": 3,
             "clicks": 0,
-            "position": 7.7
-          },
-          {
-            "page": "https://blog.finmoovi.com/en/posts/en-6-best-financial-apps-for-freelancers-practical-guide-2026/",
-            "impressions": 3,
-            "clicks": 0,
-            "position": 9.7
+            "position": 10
           },
           {
             "page": "https://blog.finmoovi.com/app/",
@@ -1583,52 +1637,64 @@
             "position": 8
           },
           {
+            "page": "https://blog.finmoovi.com/en/posts/en-how-to-track-your-financial-goals-without-spreadsheets-in/",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 9
+          },
+          {
             "page": "https://blog.finmoovi.com/en/posts/en-how-to-use-an-online-currency-converter-without-getting-lost/",
             "impressions": 2,
             "clicks": 0,
             "position": 9
           },
           {
+            "page": "https://blog.finmoovi.com/es/glossario/es-retiro/",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 10
+          },
+          {
             "page": "https://blog.finmoovi.com/es/posts/es-como-mantener-tu-hoja-de-gastos-siempre-actualizada-sin/",
             "impressions": 2,
             "clicks": 0,
             "position": 10
+          },
+          {
+            "page": "https://blog.finmoovi.com/es/posts/es-como-seguir-el-progreso-de-tus-metas-financieras-sin-usar/",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 9
           }
         ]
       },
       {
-        "query": "trading",
-        "totalImpressions": 119,
+        "query": "xetra",
+        "totalImpressions": 55,
         "pages": [
           {
-            "page": "https://blog.finmoovi.com/en/glossario/en-trading/",
-            "impressions": 65,
+            "page": "https://blog.finmoovi.com/en/glossario/en-xetra/",
+            "impressions": 47,
             "clicks": 0,
-            "position": 30.6
+            "position": 64.9
           },
           {
-            "page": "https://blog.finmoovi.com/glossario/trading/",
-            "impressions": 52,
+            "page": "https://blog.finmoovi.com/es/glossario/es-xetra/",
+            "impressions": 8,
             "clicks": 0,
-            "position": 19
-          },
-          {
-            "page": "https://blog.finmoovi.com/es/glossario/es-trading/",
-            "impressions": 2,
-            "clicks": 0,
-            "position": 54.5
+            "position": 39.3
           }
         ]
       },
       {
         "query": "risco financeiro",
-        "totalImpressions": 65,
+        "totalImpressions": 47,
         "pages": [
           {
             "page": "https://blog.finmoovi.com/glossario/risco-financeiro/",
-            "impressions": 60,
+            "impressions": 42,
             "clicks": 0,
-            "position": 57.1
+            "position": 59.8
           },
           {
             "page": "https://blog.finmoovi.com/es/glossario/es-riesgo-financiero/",
@@ -1639,20 +1705,26 @@
         ]
       },
       {
-        "query": "xetra",
+        "query": "trading",
         "totalImpressions": 44,
         "pages": [
           {
-            "page": "https://blog.finmoovi.com/en/glossario/en-xetra/",
-            "impressions": 33,
+            "page": "https://blog.finmoovi.com/glossario/trading/",
+            "impressions": 35,
             "clicks": 0,
-            "position": 66.8
+            "position": 21
           },
           {
-            "page": "https://blog.finmoovi.com/es/glossario/es-xetra/",
-            "impressions": 11,
+            "page": "https://blog.finmoovi.com/en/glossario/en-trading/",
+            "impressions": 7,
             "clicks": 0,
-            "position": 36.1
+            "position": 37.7
+          },
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-trading/",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 54.5
           }
         ]
       },
@@ -1681,38 +1753,86 @@
         ]
       },
       {
-        "query": "capital de giro",
-        "totalImpressions": 17,
+        "query": "ticker",
+        "totalImpressions": 21,
         "pages": [
           {
-            "page": "https://blog.finmoovi.com/es/glossario/es-capital-de-giro/",
-            "impressions": 15,
+            "page": "https://blog.finmoovi.com/es/glossario/es-ticker/",
+            "impressions": 13,
             "clicks": 0,
-            "position": 2.6
+            "position": 40.8
           },
           {
-            "page": "https://blog.finmoovi.com/glossario/capital-de-giro/",
+            "page": "https://blog.finmoovi.com/glossario/ticker/",
+            "impressions": 6,
+            "clicks": 0,
+            "position": 14.5
+          },
+          {
+            "page": "https://blog.finmoovi.com/en/glossario/en-ticker/",
             "impressions": 2,
             "clicks": 0,
-            "position": 24.5
+            "position": 57
           }
         ]
       },
       {
-        "query": "calculadora de investimento com aporte mensal",
-        "totalImpressions": 11,
+        "query": "valuation",
+        "totalImpressions": 20,
         "pages": [
           {
-            "page": "https://blog.finmoovi.com/ferramentas/calculadora-juros-compostos/",
-            "impressions": 8,
+            "page": "https://blog.finmoovi.com/glossario/valuation/",
+            "impressions": 18,
             "clicks": 0,
-            "position": 24.5
+            "position": 62.3
           },
           {
-            "page": "https://blog.finmoovi.com/ferramentas/simulador-investimento/",
-            "impressions": 3,
+            "page": "https://blog.finmoovi.com/en/glossario/en-valuation/",
+            "impressions": 2,
             "clicks": 0,
-            "position": 26.7
+            "position": 86.5
+          }
+        ]
+      },
+      {
+        "query": "robo advisor",
+        "totalImpressions": 19,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/glossario/robo-advisor/",
+            "impressions": 17,
+            "clicks": 0,
+            "position": 78.6
+          },
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-robo-advisor/",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 89.5
+          }
+        ]
+      },
+      {
+        "query": "equity",
+        "totalImpressions": 17,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/glossario/equity/",
+            "impressions": 9,
+            "clicks": 0,
+            "position": 41.2
+          },
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-equity/",
+            "impressions": 6,
+            "clicks": 0,
+            "position": 33.7
+          },
+          {
+            "page": "https://blog.finmoovi.com/en/glossario/en-equity/",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 33.5
           }
         ]
       },
@@ -1735,74 +1855,74 @@
         ]
       },
       {
-        "query": "valuation",
-        "totalImpressions": 11,
+        "query": "reserva de valor",
+        "totalImpressions": 10,
         "pages": [
           {
-            "page": "https://blog.finmoovi.com/glossario/valuation/",
-            "impressions": 9,
-            "clicks": 0,
-            "position": 56.7
-          },
-          {
-            "page": "https://blog.finmoovi.com/en/glossario/en-valuation/",
-            "impressions": 2,
-            "clicks": 0,
-            "position": 86.5
-          }
-        ]
-      },
-      {
-        "query": "etfs",
-        "totalImpressions": 8,
-        "pages": [
-          {
-            "page": "https://blog.finmoovi.com/es/posts/es-etfs-que-son-y-como-invertir-de-forma-simple-y-rentable/",
+            "page": "https://blog.finmoovi.com/glossario/reserva-de-valor/",
             "impressions": 6,
             "clicks": 0,
-            "position": 75.2
+            "position": 81.3
           },
           {
-            "page": "https://blog.finmoovi.com/en/posts/en-etfs-what-they-are-and-how-to-invest-simply-and-profitably/",
-            "impressions": 2,
+            "page": "https://blog.finmoovi.com/es/glossario/es-reserva-de-valor/",
+            "impressions": 4,
             "clicks": 0,
-            "position": 58.5
+            "position": 84.8
           }
         ]
       },
       {
-        "query": "stop loss",
-        "totalImpressions": 6,
+        "query": "what money app tells me what to do next 2026",
+        "totalImpressions": 10,
         "pages": [
           {
-            "page": "https://blog.finmoovi.com/glossario/stop-loss/",
-            "impressions": 4,
+            "page": "https://blog.finmoovi.com/en/posts/en-7-best-personal-finance-apps-2026-complete-guide-to-organize/",
+            "impressions": 5,
             "clicks": 0,
-            "position": 48.5
+            "position": 5.8
           },
           {
-            "page": "https://blog.finmoovi.com/es/glossario/es-stop-loss/",
-            "impressions": 2,
+            "page": "https://blog.finmoovi.com/en/posts/en-discover-a-simple-app-to-organize-your-finances-in-2026/",
+            "impressions": 5,
             "clicks": 0,
-            "position": 74
+            "position": 7.4
           }
         ]
       },
       {
         "query": "como fazer um planner financeiro",
-        "totalImpressions": 5,
+        "totalImpressions": 9,
         "pages": [
           {
             "page": "https://blog.finmoovi.com/posts/planner-financeiro-como-montar-e-usar/",
-            "impressions": 3,
+            "impressions": 5,
             "clicks": 0,
-            "position": 82.3
+            "position": 85.8
           },
           {
             "page": "https://blog.finmoovi.com/categorias/orcamento/",
+            "impressions": 4,
+            "clicks": 0,
+            "position": 95.8
+          }
+        ]
+      },
+      {
+        "query": "trading online xetra",
+        "totalImpressions": 9,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/en/glossario/en-xetra/",
+            "impressions": 7,
+            "clicks": 0,
+            "position": 34.3
+          },
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-xetra/",
             "impressions": 2,
             "clicks": 0,
-            "position": 94
+            "position": 47
           }
         ]
       },
@@ -1825,20 +1945,56 @@
         ]
       },
       {
-        "query": "orçamento pessoal",
+        "query": "etfs",
         "totalImpressions": 4,
         "pages": [
           {
-            "page": "https://blog.finmoovi.com/categorias/orcamento/",
+            "page": "https://blog.finmoovi.com/en/posts/en-etfs-what-they-are-and-how-to-invest-simply-and-profitably/",
             "impressions": 2,
             "clicks": 0,
-            "position": 47.5
+            "position": 58.5
           },
           {
-            "page": "https://blog.finmoovi.com/orcamento-pessoal/",
+            "page": "https://blog.finmoovi.com/es/posts/es-etfs-que-son-y-como-invertir-de-forma-simple-y-rentable/",
             "impressions": 2,
             "clicks": 0,
-            "position": 95
+            "position": 77.5
+          }
+        ]
+      },
+      {
+        "query": "price online me",
+        "totalImpressions": 4,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/ferramentas/calculadora-financiamento/",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 38
+          },
+          {
+            "page": "https://blog.finmoovi.com/posts/como-usar-a-calculadora-sac-ou-price-para-organizar-seu/",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 35
+          }
+        ]
+      },
+      {
+        "query": "switch from spreadsheet budgeting to intelligent finance software. 2026",
+        "totalImpressions": 4,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/en/posts/en-discover-a-simple-app-to-organize-your-finances-in-2026/",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 4
+          },
+          {
+            "page": "https://blog.finmoovi.com/en/posts/en-why-switch-from-a-spreadsheet-to-an-app-in-2026-real/",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 3
           }
         ]
       }

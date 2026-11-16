@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T17:27:57.887Z",
+  "updatedAt": "2026-11-16T16:34:43.723Z",
   "sourceCursor": 1,
   "entries": [
     {
@@ -2510,6 +2510,14 @@
       "source": "gsc-gap",
       "status": "pending",
       "addedAt": "2026-11-09T16:57:10.505Z"
+    },
+    {
+      "keyword": "subyacente",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-11-16T16:34:43.284Z"
     }
   ]
 }

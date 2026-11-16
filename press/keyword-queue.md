@@ -1,7 +1,7 @@
 # 🗂️ Fila de Keywords (Fase 3)
 
-**Atualizado em:** 2026-11-09T16:57:11.015Z
-**Totais:** 80 pendente(s) · 118 usada(s) · 60 pulada(s)
+**Atualizado em:** 2026-11-16T16:34:43.723Z
+**Totais:** 80 pendente(s) · 119 usada(s) · 60 pulada(s)
 
 ## ⏳ Pendentes por fonte
 
@@ -54,7 +54,6 @@
 
 ### Lacunas do GSC (prioridade 2) — 36
 
-- calculadora parcelamento price
 - calculo de juros composto online
 - conversor de moeda online
 - o que significa valor em aberto
@@ -90,6 +89,7 @@
 - price online
 - capital en giro
 - giro
+- subyacente
 
 ### Autocomplete (prioridade 3) — 0
 
@@ -99,6 +99,7 @@ _Nenhuma._
 
 | Keyword | Usada por | Em |
 |---|---|---|
+| calculadora parcelamento price | gerar-post-investimentos | 2026-11-11 |
 | simulador sac price | gerar-dicas-financeiras | 2026-10-31 |
 | calcular juro composto | gerar-dicas-financeiras | 2026-10-29 |
 | conversor de moedas online | gerar-dicas-financeiras | 2026-10-28 |
@@ -108,7 +109,6 @@ _Nenhuma._
 | debenture | gerar-dicas-financeiras | 2026-10-22 |
 | calculadora tabela sac | gerar-post-investimentos | 2026-10-21 |
 | tudo sobre investimentos | gerar-dicas-financeiras | 2026-10-12 |
-| calculadora sac price | gerar-dicas-financeiras | 2026-10-11 |
 
 ## ⏭️ Puladas (já cobertas)
 
