@@ -1,28 +1,5 @@
 [
   {
-    "file": "en-equity.md",
-    "dir": "glossario",
-    "severity": 3,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 5,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": [
-        "ações",
-        "ação",
-        "dívida",
-        "dívidas",
-        "poupança",
-        "investimentos",
-        "valor"
-      ]
-    }
-  },
-  {
     "file": "en-quotes-week-1-november-2026.md",
     "dir": "posts",
     "severity": 3,
@@ -145,6 +122,25 @@
     }
   },
   {
+    "file": "en-finmoovi-cost-of-living-index-october-2026.md",
+    "dir": "posts",
+    "severity": 2,
+    "issues": {
+      "currency": 4,
+      "brInstitutions": [
+        "IBGE"
+      ],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "IPCA"
+      ],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-lc.md",
     "dir": "glossario",
     "severity": 2,
@@ -185,8 +181,7 @@
       "currency": 4,
       "brInstitutions": [],
       "brProducts": [
-        "CDB",
-        "Selic"
+        "CDB"
       ],
       "geoRefs": [],
       "ptWordsCount": 0,
@@ -195,10 +190,7 @@
         "IPCA"
       ],
       "ptLeftovers": [
-        "ações",
-        "poupança",
-        "reais",
-        "investimentos"
+        "reais"
       ]
     }
   },
@@ -284,6 +276,25 @@
     }
   },
   {
+    "file": "es-indice-finmoovi-costo-de-vida-octubre-2026.md",
+    "dir": "posts",
+    "severity": 2,
+    "issues": {
+      "currency": 4,
+      "brInstitutions": [
+        "IBGE"
+      ],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "IPCA"
+      ],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-indice-finmoovi-costo-de-vida-septiembre-2026.md",
     "dir": "posts",
     "severity": 2,
@@ -318,23 +329,6 @@
         "LCA"
       ],
       "ptLeftovers": []
-    }
-  },
-  {
-    "file": "en-depreciation.md",
-    "dir": "glossario",
-    "severity": 1,
-    "issues": {
-      "currency": 0,
-      "brInstitutions": [],
-      "brProducts": [],
-      "geoRefs": [],
-      "ptWordsCount": 0,
-      "brBrands": [],
-      "brAcronyms": [],
-      "ptLeftovers": [
-        "valor"
-      ]
     }
   },
   {
@@ -469,6 +463,23 @@
       "ptLeftovers": [
         "investimentos"
       ]
+    }
+  },
+  {
+    "file": "en-montante.md",
+    "dir": "glossario",
+    "severity": 1,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [
+        "CDB"
+      ],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
     }
   },
   {
@@ -1539,7 +1550,37 @@
     }
   },
   {
+    "file": "en-debt-free-holiday-season-7-practical-steps-to-enjoy-the.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-debt.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-depreciation.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -1780,6 +1821,21 @@
   },
   {
     "file": "en-emergency-fund.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-equity.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -2560,6 +2616,21 @@
   },
   {
     "file": "en-holding.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-home-broker.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -3730,6 +3801,21 @@
   },
   {
     "file": "en-key-performance-indicator.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-keynesianismo.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -9174,6 +9260,21 @@
     }
   },
   {
+    "file": "es-home-broker.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-horario-ideal-para-ducharse-y-ahorrar-energia-en-2026.md",
     "dir": "posts",
     "severity": 0,
@@ -9519,6 +9620,21 @@
     }
   },
   {
+    "file": "es-keynesianismo.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "es-kyc.md",
     "dir": "glossario",
     "severity": 0,
@@ -9775,6 +9891,36 @@
   },
   {
     "file": "es-montando-cartera-diversificada-con-r-500.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-montante.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-navidad-sin-deudas-7-pasos-practicos-para-disfrutar-las.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
