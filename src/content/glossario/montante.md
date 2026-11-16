@@ -4,6 +4,7 @@ definition: "O que é montante e como isso aparece no seu dia a dia — explicad
 title: "montante - Glossário Financeiro"
 description: "O que é montante e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/montante.webp"
+imageAlt: "Pilhas de moedas douradas, barras brancas e planta verde em cúpula de vidro."
 category: "basico"
 tags: ["montante", "glossário", "finanças"]
 author: "FinMoovi"

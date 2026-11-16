@@ -4,6 +4,7 @@ definition: "What montante is and how it shows up in your everyday money — exp
 title: "montante - Financial Glossary"
 description: "What montante is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/montante.webp"
+imageAlt: "Stacks of gold coins, white bars, and a potted plant on a dark background."
 category: "basico"
 tags: ["montante", "glossary", "finance"]
 author: "FinMoovi"
