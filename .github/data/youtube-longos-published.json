@@ -166,5 +166,11 @@
       "en",
       "es"
     ]
+  },
+  "reserva-emergencia-antes-proxima": {
+    "estado": "reservado",
+    "publishAt": "2026-11-22T22:00:00.000Z",
+    "reservadoEm": "2026-11-16T09:24:48.957Z",
+    "corrida": "43839331536"
   }
 }
