@@ -1162,5 +1162,11 @@
     "gancho": "nunca-faca",
     "turno": "noite",
     "em": "2026-11-16T13:04:46.253Z"
+  },
+  {
+    "situacao": "entrada-do-carro",
+    "gancho": "voces-viram",
+    "turno": "manha",
+    "em": "2026-11-17T13:43:07.999Z"
   }
 ]

@@ -1,0 +1,118 @@
+{
+  "slug": "loop-entrada-do-carro-voces-viram",
+  "formato": "loop16",
+  "term": "Juntar a entrada do carro",
+  "category": "vida",
+  "keyword": "CARRO",
+  "valor": "R$ 8.000",
+  "situacao": "entrada-do-carro",
+  "gancho": "voces-viram",
+  "ganchoFamilia": "vocês viram",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "leve",
+    "ficheiro": "music/bg-leve.mp3",
+    "titulo": "Guiton Sketch",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Guiton Sketch\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "leve"
+  },
+  "fioCondutor": "escada",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Gente, vocês viram que carro usado pede entrada? Vi ontem.",
+      "durationSec": 3.71,
+      "shots": [
+        {
+          "anchor": "vocês",
+          "visual": {
+            "type": "statement",
+            "text": "Carro usado: e a entrada?"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "viram",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escada"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "O vendedor pediu oito mil reais e eu gelei na hora.",
+      "durationSec": 4.08,
+      "shots": [
+        {
+          "anchor": "vendedor",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escada"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "pediu",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 8.000"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Aí lembrei. Escada se sobe degrau por degrau, sem pular.",
+      "durationSec": 3.71,
+      "shots": [
+        {
+          "anchor": "lembrei",
+          "visual": {
+            "type": "statement",
+            "text": "Degrau por degrau"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "Escada",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "escada"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Então, gente, carro usado e a entrada eu subo devagarinho.",
+      "durationSec": 3.71,
+      "shots": [
+        {
+          "anchor": "carro",
+          "visual": {
+            "type": "statement",
+            "text": "Gente, a entrada do carro"
+          }
+        },
+        {
+          "anchor": "usado",
+          "visual": {
+            "type": "statement",
+            "text": "Carro usado: e a entrada?"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.21
+}
