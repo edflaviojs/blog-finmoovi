@@ -6584,6 +6584,46 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-11-16"
+    },
+    "cotacoes-semana-2026-11-16.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-17"
+    },
+    "cotacoes-semana-3-novembro-2026-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-17"
+    },
+    "cotacoes-semana-3-novembro-2026-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-17"
+    },
+    "es-cotizaciones-semana-3-noviembre-2026-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-17"
+    },
+    "es-cotizaciones-semana-3-noviembre-2026-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-17"
+    },
+    "nyse-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-17"
+    },
+    "nyse-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-17"
+    },
+    "nyse.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-17"
     }
   },
   "corrigidas": {
@@ -7260,6 +7300,6 @@
       "motivo": "borrada segundo a IA de visão (nitidez local 1252)"
     }
   },
-  "totalAcervo": 1317,
-  "ultimaCorrida": "2026-11-16"
+  "totalAcervo": 1325,
+  "ultimaCorrida": "2026-11-17"
 }
