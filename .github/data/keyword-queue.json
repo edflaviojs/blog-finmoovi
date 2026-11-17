@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-16T20:42:01.042Z",
-  "sourceCursor": 1,
+  "updatedAt": "2026-11-17T18:51:32.106Z",
+  "sourceCursor": 2,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -2236,8 +2236,10 @@
       "category": null,
       "priority": 2,
       "source": "gsc-gap",
-      "status": "pending",
-      "addedAt": "2026-10-03T07:24:14.321Z"
+      "status": "used",
+      "addedAt": "2026-10-03T07:24:14.321Z",
+      "usedAt": "2026-11-17T18:51:32.106Z",
+      "usedBy": "gerar-post-inteligente"
     },
     {
       "keyword": "conversor de moeda online",
