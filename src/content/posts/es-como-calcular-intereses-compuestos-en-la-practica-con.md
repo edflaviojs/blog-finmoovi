@@ -25,11 +25,11 @@ seo:
   keywords: ["intereses compuestos","calculadora online","ahorro","planificación financiera","FinMoovi","inversión mensual","efecto bola de nieve"]
 ---
 
-Imagina la siguiente escena: acabas de recibir el extracto de tu cuenta corriente y, al revisar el saldo, notas que el dinero que guardaste para el viaje de fin de año parece estar estancado, como si fuera un alquiler que nunca se revaloriza. Mientras tanto, la conversación en el grupo familiar gira en torno a “¿cuánto tengo que invertir para tener un extra en el próximo sueldo?”. El punto de dolor es claro: la mayoría de las personas sienten que el dinero está ahí, pero no crece de forma perceptible. La solución está en entender el **cálculo de intereses compuestos** y, mejor aún, en usar una herramienta online que haga el trabajo pesado en pocos clics. En menos de cinco minutos, FinMoovi permite capturar el extracto de la cuenta, categorizar el valor automáticamente y, con la función de planificación mensual, proyectar cuánto ese mismo monto puede rendir a lo largo de meses o años.
+Imagina la siguiente escena: acabas de recibir el extracto de tu cuenta corriente y, al revisar el saldo, notas que el dinero que guardaste para el viaje de fin de año parece estar estancado, como si fuera un [alquiler](/es/posts/es-alquiler-vs-financiacion-que-conviene-mas-en-2026) que nunca se revaloriza. Mientras tanto, la conversación en el grupo familiar gira en torno a “¿cuánto tengo que invertir para tener un extra en el próximo sueldo?”. El punto de dolor es claro: la mayoría de las personas sienten que el dinero está ahí, pero no crece de forma perceptible. La solución está en entender el **cálculo de intereses compuestos** y, mejor aún, en usar una herramienta online que haga el trabajo pesado en pocos clics. En menos de cinco minutos, FinMoovi permite capturar el extracto de la cuenta, categorizar el valor automáticamente y, con la función de planificación mensual, proyectar cuánto ese mismo monto puede rendir a lo largo de meses o años.
 
 ## Por qué los intereses compuestos son el “motor” de tu reserva
 
-Los intereses compuestos son, básicamente, los intereses que inciden sobre el capital inicial **y** sobre los intereses ya acumulados. A diferencia de los intereses simples, que pagan solo sobre el valor original, el efecto “bola de nieve” de los intereses compuestos hace que tu dinero crezca más rápido a medida que pasa el tiempo. La fórmula clásica – *VF = VP × (1 + i)ⁿ* – puede parecer intimidante, pero el concepto detrás es sencillo: en cada período (meses, trimestres o años) tu inversión recibe un “bono” que, a su vez, genera nuevos bonos.
+Los intereses compuestos son, básicamente, los intereses que inciden sobre el capital inicial **y** sobre los intereses ya acumulados. A diferencia de los intereses simples, que pagan solo sobre el valor original, el efecto “bola de nieve” de los intereses compuestos hace que tu dinero crezca más rápido a medida que pasa el tiempo. La fórmula clásica – *VF = VP × (1 + i)ⁿ* – puede parecer intimidante, pero el concepto detrás es sencillo: en cada período (meses, trimestres o años) tu [inversión](/es/glossario/es-inversion) recibe un “bono” que, a su vez, genera nuevos bonos.
 
 ### Un ejemplo del día a día
 
@@ -43,7 +43,7 @@ Supongamos que reservas el equivalente al precio de un café diario (aproximadam
 
 Existen varias calculadoras gratuitas – como la de [Investopedia](https://www.investopedia.com/terms/c/compoundinterest.asp) o la de la OCDE – que solicitan tres datos básicos:
 
-1. **Valor presente (VP)** – el monto que tienes hoy.  
+1. **[Valor presente](/es/glossario/es-valor-presente) (VP)** – el monto que tienes hoy.  
 2. **Tasa de interés (i)** – el porcentaje que tu inversión rinde por período.  
 3. **Número de períodos (n)** – cuántas veces se aplicará la tasa (meses, trimestres, años).
 
@@ -57,16 +57,16 @@ Observa la diferencia entre el valor futuro y el capital inicial. Esa diferencia
 
 ### Paso 4 – Lleva la proyección a tu planificación
 
-Con el número en mano, abre FinMoovi, ve a la sección **Planificación Mensual** y crea una meta de “Reserva para el viaje”. Usa la **captura inteligente** para fotografiar el extracto de la cuenta o introducir el valor por voz. La app categoriza automáticamente como “Inversiones” y muestra, al lado, la proyección de crecimiento basada en los mismos parámetros que acabas de probar en la calculadora online. En menos de cinco minutos tienes un panorama completo: cuánto tienes, cuánto puedes ganar y cuánto falta para alcanzar la meta.
+Con el número en mano, abre FinMoovi, ve a la sección **Planificación Mensual** y crea una meta de “Reserva para el viaje”. Usa la **[captura inteligente](/es/posts/es-cansado-de-perder-horas-en-hojas-de-calculo-asi-finmoovi-lo)** para fotografiar el extracto de la cuenta o introducir el valor por voz. La app categoriza automáticamente como “Inversiones” y muestra, al lado, la proyección de crecimiento basada en los mismos parámetros que acabas de probar en la calculadora online. En menos de cinco minutos tienes un panorama completo: cuánto tienes, cuánto puedes ganar y cuánto falta para alcanzar la meta.
 
 ## Cuándo usar la calculadora: situaciones prácticas
 
 | Situación | Por qué calcular | Cómo aplicar en FinMoovi |
 |-----------|------------------|--------------------------|
-| **Planificar la jubilación** | Ver cuánto puede render un aporte mensual equivalente a un alquiler en 20 años. | Crea un flujo de caja a largo plazo y activa alertas de saldo para seguir el progreso. |
+| **Planificar la jubilación** | Ver cuánto puede render un aporte mensual equivalente a un alquiler en 20 años. | Crea un [flujo de caja](/es/glossario/es-flujo-de-caja) a largo plazo y activa alertas de saldo para seguir el progreso. |
 | **Comprar un bien duradero** | Evaluar si una financiación con 0,8 % al mes compensa frente a pagar al contado. | Usa el **modo compras** para ingresar el precio total y el número de cuotas; la app muestra el costo total con intereses. |
 | **Construir reserva de emergencia** | Determinar cuántos meses de gastos necesitas guardar y cómo acelerar el proceso. | Define la meta “Reserva de Emergencia” y usa la captura de facturas para registrar cada aporte. |
-| **Invertir en renta variable** | Simular el retorno de un aporte en acciones que históricamente rinden 1,2 % al mes. | Introduce la tasa esperada en la calculadora y luego registra el aporte en la app; el informe de **flujo de caja** mostrará la evolución. |
+| **Invertir en [renta variable](/es/glossario/es-renta-variable)** | Simular el retorno de un aporte en [acciones](/es/glossario/es-acciones) que históricamente rinden 1,2 % al mes. | Introduce la tasa esperada en la calculadora y luego registra el aporte en la app; el informe de **flujo de caja** mostrará la evolución. |
 
 ## Tips para potenciar el efecto de los intereses compuestos
 
@@ -80,7 +80,7 @@ Con el número en mano, abre FinMoovi, ve a la sección **Planificación Mensual
 
 ## Qué dice la ciencia sobre los intereses compuestos
 
-Estudios del **World Bank** indican que la mayoría de las familias de bajos ingresos subestiman el impacto de los intereses compuestos, lo que dificulta la construcción de patrimonio a lo largo del tiempo. Los expertos recomiendan adoptar estrategias de **capitalización automática**, como depósitos programados en cuentas que ya aplican intereses diariamente. Esta práctica elimina la necesidad de cálculos manuales y garantiza que el dinero trabaje para ti desde el primer centavo.
+Estudios del **World Bank** indican que la mayoría de las familias de bajos ingresos subestiman el impacto de los intereses compuestos, lo que dificulta la construcción de [patrimonio](/es/glossario/es-patrimonio) a lo largo del tiempo. Los expertos recomiendan adoptar estrategias de **capitalización automática**, como depósitos programados en cuentas que ya aplican intereses diariamente. Esta práctica elimina la necesidad de cálculos manuales y garantiza que el dinero trabaje para ti desde el primer centavo.
 
 ## Cómo FinMoovi simplifica todo el proceso
 

@@ -31,7 +31,7 @@ The solution is to understand **compound‑interest calculations** and, even bet
 
 ## Why compound interest is the “engine” of your savings
 
-Compound interest is simply interest that applies to both the original principal **and** the interest that has already accumulated. Unlike simple interest, which only pays on the original amount, the “snowball” effect of compound interest makes your money grow faster as time goes on. The classic formula – *FV = PV × (1 + i)ⁿ* – may look intimidating, but the idea is easy: each period (months, quarters, or years) your investment earns a “bonus” that then starts generating new bonuses.
+[Compound interest](/en/glossario/en-compound-interest) is simply interest that applies to both the original principal **and** the interest that has already accumulated. Unlike [simple interest](/en/glossario/en-simple-interest), which only pays on the original amount, the “snowball” effect of compound interest makes your money grow faster as time goes on. The classic formula – *FV = PV × (1 + i)ⁿ* – may look intimidating, but the idea is easy: each period (months, quarters, or years) your [investment](/en/glossario/en-investment) earns a “bonus” that then starts generating new bonuses.
 
 ### A everyday example
 
@@ -45,13 +45,13 @@ Suppose you set aside the equivalent of a daily coffee (about **$5**) and decide
 
 There are several free calculators – such as the one from **[Investopedia](https://www.investopedia.com/terms/c/compoundinterest.asp)** or the OECD – that ask for three basic pieces of information:
 
-1. **Present value (PV)** – the amount you have right now.  
+1. **[Present value](/en/glossario/en-present-value) (PV)** – the amount you have right now.  
 2. **Interest rate (i)** – the percentage your investment earns per period.  
 3. **Number of periods (n)** – how many times the rate will be applied (months, quarters, years).
 
 ### Step 2 – Enter the data
 
-Open the calculator, type the present value (for example, the equivalent of a minimum wage), the interest rate you expect (1 % per month, 12 % per year) and the number of periods (12 months, 24 months, etc.). The tool instantly returns the **future value (FV)** and often a chart showing the balance’s evolution.
+Open the calculator, type the present value (for example, the equivalent of a [minimum wage](/en/posts/en-budgeting-with-minimum-wage-practical-tips)), the interest rate you expect (1 % per month, 12 % per year) and the number of periods (12 months, 24 months, etc.). The tool instantly returns the **future value (FV)** and often a chart showing the balance’s evolution.
 
 ### Step 3 – Analyze the result
 
@@ -66,8 +66,8 @@ With the number in hand, open FinMoovi, go to the **Monthly Planning** section a
 | Situation | Why calculate? | How to apply in FinMoovi |
 |-----------|----------------|--------------------------|
 | **Plan retirement** | See how a monthly contribution equal to a modest rent could grow over 20 years. | Build a long‑term cash‑flow and set balance‑alerts to track progress. |
-| **Buy a durable good** | Check whether a 0.8 % monthly installment plan beats paying cash up front. | Use the **shopping mode** to enter the total price and number of installments; the app shows the total cost with interest. |
-| **Build an emergency fund** | Decide how many months of expenses you need to save and how to speed it up. | Set an “Emergency Reserve” goal and capture receipts to log each contribution. |
+| **Buy a durable good** | Check whether a 0.8 % monthly installment plan beats paying cash up front. | Use the **shopping mode** to enter the total price and number of [installments](/en/glossario/en-installments); the app shows the total cost with interest. |
+| **Build an [emergency fund](/en/glossario/en-emergency-fund)** | Decide how many months of expenses you need to save and how to speed it up. | Set an “Emergency Reserve” goal and capture receipts to log each contribution. |
 | **Invest in stocks** | Simulate the return of a contribution to equities that historically earn 1.2 % per month. | Enter the expected rate in the calculator, then log the contribution in the app; the **cash‑flow report** will display the evolution. |
 
 ## Tips to supercharge the compound‑interest effect
@@ -87,7 +87,7 @@ Studies from the **World Bank** show that many low‑income families underestima
 ## How FinMoovi simplifies the whole process
 
 - **Smart capture**: snap a photo of a receipt or speak the amount; the app auto‑categorizes it as “Investment”.  
-- **Multi‑currency**: if you earn in different currencies (USD, EUR, etc.), the app converts and calculates returns in a single view.  
+- **[Multi‑currency](/en/posts/en-digital-bank-vs-major-bank-which-is-worth-it-in-2026)**: if you earn in different currencies (USD, EUR, etc.), the app converts and calculates returns in a single view.  
 - **Cash‑flow reports**: clear graphs show your capital’s growth over months or years.  
 - **Balance alerts**: get notified when the projected amount reaches your target.
 

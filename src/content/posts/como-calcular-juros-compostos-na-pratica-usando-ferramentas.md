@@ -25,11 +25,11 @@ seo:
   keywords: ["juros compostos","calculadora online","finmoovi","planejamento financeiro","rendimento de investimentos","metas de poupança"]
 ---
 
-Imagine a seguinte cena: você acabou de receber o extrato da sua conta‑corrente e, ao analisar o saldo, percebe que o dinheiro que guardou para a viagem de fim de ano parece estar parado, como se fosse um aluguel que nunca se valoriza. Enquanto isso, a conversa no grupo da família gira em torno de “quanto eu preciso investir para ter um extra no próximo salário?”. O ponto de dor é claro – a maioria das pessoas tem a sensação de que o dinheiro está lá, mas não cresce de forma perceptível. A solução está em entender o **cálculo de juros compostos** e, melhor ainda, em usar uma ferramenta online que faça o trabalho pesado em poucos cliques. Em menos de cinco minutos, o FinMoovi permite que você capture o extrato da conta, categorize o valor automaticamente e, com a função de planejamento mensal, projete quanto aquele mesmo montante pode render ao longo de meses ou anos.
+Imagine a seguinte cena: você acabou de receber o extrato da sua conta‑corrente e, ao analisar o saldo, percebe que o dinheiro que guardou para a viagem de fim de ano parece estar parado, como se fosse um [aluguel](/posts/aluguel-vs-financiamento-qual-vale-mais-a-pena-em-2026) que nunca se valoriza. Enquanto isso, a conversa no grupo da família gira em torno de “quanto eu preciso investir para ter um extra no próximo salário?”. O ponto de dor é claro – a maioria das pessoas tem a sensação de que o dinheiro está lá, mas não cresce de forma perceptível. A solução está em entender o **cálculo de [juros compostos](/ferramentas/calculadora-juros-compostos)** e, melhor ainda, em usar uma ferramenta online que faça o trabalho pesado em poucos cliques. Em menos de cinco minutos, o FinMoovi permite que você capture o extrato da conta, categorize o valor automaticamente e, com a função de planejamento mensal, projete quanto aquele mesmo montante pode render ao longo de meses ou anos.
 
 ## Por que os juros compostos são o “motor” da sua reserva
 
-Juros compostos são, basicamente, os juros que incidem sobre o capital inicial **e** sobre os juros já acumulados. Diferente dos juros simples, que pagam apenas sobre o valor original, o efeito “bola de neve” dos juros compostos faz seu dinheiro crescer mais rápido à medida que o tempo passa. A fórmula clássica – *VF = VP × (1 + i)ⁿ* – pode parecer intimidadora, mas o conceito por trás dela é simples: a cada período (meses, trimestres ou anos) o seu investimento recebe um “bônus” que, por sua vez, passa a gerar novos bônus.
+[Juros compostos](/glossario/juros-compostos) são, basicamente, os juros que incidem sobre o capital inicial **e** sobre os juros já acumulados. Diferente dos [juros simples](/glossario/juros-simples), que pagam apenas sobre o valor original, o efeito “bola de neve” dos juros compostos faz seu dinheiro crescer mais rápido à medida que o tempo passa. A fórmula clássica – *VF = VP × (1 + i)ⁿ* – pode parecer intimidadora, mas o conceito por trás dela é simples: a cada período (meses, trimestres ou anos) o seu investimento recebe um “bônus” que, por sua vez, passa a gerar novos bônus.
 
 ### Um exemplo do dia a dia
 
@@ -45,7 +45,7 @@ Suponha que você reserve o equivalente ao preço de um café diário (cerca de 
 
 Existem diversas calculadoras gratuitas – como a da [Investopedia](https://www.investopedia.com/terms/c/compoundinterest.asp) ou da OECD – que pedem três informações básicas:
 
-1. **Valor presente (VP)** – o montante que você tem hoje.
+1. **[Valor presente](/glossario/valor-presente) (VP)** – o montante que você tem hoje.
 2. **Taxa de juros (i)** – o percentual que seu investimento rende por período.
 3. **Número de períodos (n)** – quantas vezes a taxa será aplicada (meses, trimestres, anos).
 
@@ -65,10 +65,10 @@ Com o número em mãos, abra o FinMoovi, vá até a seção **Planejamento Mensa
 
 | Situação | Por que calcular | Como aplicar no FinMoovi |
 |----------|------------------|--------------------------|
-| **Planejar a aposentadoria** | Ver quanto o aporte mensal de um equivalente a um aluguel pode render em 20 anos. | Crie um fluxo de caixa de longo prazo e ative alertas de saldo para acompanhar o progresso. |
+| **Planejar a aposentadoria** | Ver quanto o aporte mensal de um equivalente a um aluguel pode render em 20 anos. | Crie um [fluxo de caixa](/glossario/fluxo-de-caixa) de longo prazo e ative alertas de saldo para acompanhar o progresso. |
 | **Comprar um bem durável** | Avaliar se o parcelamento com juros de 0,8% ao mês compensa frente a pagar à vista. | Use a funcionalidade de **modo compras** para inserir o preço total e o número de parcelas; o app mostra o custo total com juros. |
-| **Construir reserva de emergência** | Determinar quantos meses de despesas você precisa guardar e como acelerar esse processo. | Defina a meta de “Reserva de Emergência” e use a captura de notas fiscais para registrar cada aporte. |
-| **Investir em renda variável** | Simular o retorno de um aporte em ações que historicamente rendem 1,2% ao mês. | Insira a taxa esperada na calculadora e depois registre o aporte no app; o relatório de **fluxo de caixa** mostrará a evolução. |
+| **Construir [reserva de emergência](/glossario/reserva-de-emergencia)** | Determinar quantos meses de despesas você precisa guardar e como acelerar esse processo. | Defina a meta de “Reserva de Emergência” e use a captura de notas fiscais para registrar cada aporte. |
+| **Investir em [renda variável](/glossario/renda-variavel)** | Simular o retorno de um aporte em ações que historicamente rendem 1,2% ao mês. | Insira a taxa esperada na calculadora e depois registre o aporte no app; o relatório de **fluxo de caixa** mostrará a evolução. |
 
 ## Dicas para potencializar o efeito dos juros compostos
 
