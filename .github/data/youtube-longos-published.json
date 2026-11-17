@@ -168,9 +168,15 @@
     ]
   },
   "reserva-emergencia-antes-proxima": {
-    "estado": "reservado",
+    "videoId": "z85NS2rPSUo",
+    "uploadedAt": "2026-11-17T02:25:30.311Z",
     "publishAt": "2026-11-22T22:00:00.000Z",
-    "reservadoEm": "2026-11-17T01:50:12.578Z",
-    "corrida": "43998418228"
+    "titulo": "Reserva de emergência antes da próxima crise com R$ 150 por mês",
+    "capitulos": 7,
+    "legendas": [
+      "pt",
+      "en",
+      "es"
+    ]
   }
 }

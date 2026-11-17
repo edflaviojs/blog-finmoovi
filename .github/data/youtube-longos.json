@@ -399,7 +399,7 @@
         "crise econômica 2027",
         "controle de gastos"
       ],
-      "estado": "proposto",
+      "estado": "publicado",
       "viralRef": {
         "videoId": "fUhCwGl4oYs",
         "title": "A CRISE de 2027 Pode Criar os Próximos MILIONÁRIOS #educaçãofinanceira",
@@ -410,7 +410,9 @@
           "uma palavra em maiúsculas a marcar o tom"
         ]
       },
-      "propostoEm": "2026-11-08T10:54:47.752Z"
+      "propostoEm": "2026-11-08T10:54:47.752Z",
+      "publicadoEm": "2026-11-17T02:25:30.311Z",
+      "videoId": "z85NS2rPSUo"
     }
   ]
 }
