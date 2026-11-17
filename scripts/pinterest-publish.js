@@ -4,10 +4,10 @@
  * Reads recent posts (last 14 days) from src/content/posts/
  * and publishes them as pins via Pinterest API v5.
  *
- * Env vars (preferencial — token renovado a cada execução, nunca expira):
+ * Env vars (preferencial, token renovado a cada execução, nunca expira):
  *   PINTEREST_CLIENT_ID + PINTEREST_CLIENT_SECRET + PINTEREST_REFRESH_TOKEN
  *   PINTEREST_BOARD_ID - Target board ID
- * Fallback (access token estático — expira em ~30 dias, evitar):
+ * Fallback (access token estático, expira em ~30 dias, evitar):
  *   PINTEREST_ACCESS_TOKEN
  *
  * Autorização única para obter o refresh token: scripts/pinterest-auth.js
@@ -50,7 +50,7 @@ let PINTEREST_ACCESS_TOKEN = process.env.PINTEREST_ACCESS_TOKEN || null;
  */
 function refreshTokenDaysLeft() {
   try {
-    // Formato: pinr.<header>.<payload>.<assinatura> — payload é a parte [2]
+    // Formato: pinr.<header>.<payload>.<assinatura>, payload é a parte [2]
     const payload = JSON.parse(
       Buffer.from(PINTEREST_REFRESH_TOKEN.split('.')[2], 'base64').toString('utf-8'),
     );
@@ -92,7 +92,7 @@ async function openRenewalIssueIfNeeded(daysLeft) {
     '**Renovar (≈2 minutos):**',
     '```powershell',
     'cd "C:\\Users\\Ed Flávio\\Desktop\\CLAUDE-CODE\\FINMOOVI\\blog-finmoovi"',
-    '$env:PINTEREST_CLIENT_SECRET = "<App secret — portal Pinterest, botão Gerenciar>"',
+    '$env:PINTEREST_CLIENT_SECRET = "<App secret, portal Pinterest, botão Gerenciar>"',
     'node scripts/pinterest-auth.js',
     '```',
     '1. Abrir a URL que o script imprimir (logado na conta da marca) → **Aprovar**;',
@@ -114,7 +114,12 @@ async function openRenewalIssueIfNeeded(daysLeft) {
 
 /**
  * Troca o refresh token por um access token novo (access tokens do Pinterest
- * expiram em ~30 dias — o refresh garante que a automação nunca morra).
+ * expiram em ~30 dias, o refresh garante que a automação nunca morra).
+ *
+ * continuous_refresh: o Pinterest devolve também um refresh token NOVO, de mais
+ * 60 dias. Antes jogávamos fora e o velho morria a cada 60 dias (16/11/2026).
+ * Agora ele vai para PINTEREST_NOVO_TOKEN_FICHEIRO e o passo seguinte do
+ * workflow grava-o no secret. Mascarado no log; nunca aparece.
  */
 async function refreshAccessToken() {
   const basic = Buffer.from(`${PINTEREST_CLIENT_ID}:${PINTEREST_CLIENT_SECRET}`).toString('base64');
@@ -127,11 +132,33 @@ async function refreshAccessToken() {
     body: new URLSearchParams({
       grant_type: 'refresh_token',
       refresh_token: PINTEREST_REFRESH_TOKEN,
+      continuous_refresh: 'true',
     }),
   });
   const text = await res.text();
   if (!res.ok) throw new Error(`Refresh do token falhou (${res.status}): ${text}`);
-  return JSON.parse(text).access_token;
+  const json = JSON.parse(text);
+  guardarRefreshNovo(json);
+  return json.access_token;
+}
+
+/** Entrega o refresh token novo ao passo do workflow que o grava. NUNCA lança. */
+function guardarRefreshNovo(json) {
+  const ficheiro = process.env.PINTEREST_NOVO_TOKEN_FICHEIRO;
+  const novo = json.refresh_token;
+  if (!novo) {
+    console.log('ℹ️  O Pinterest não devolveu refresh token novo nesta rodada.');
+    return;
+  }
+  if (!ficheiro) return;
+  try {
+    console.log(`::add-mask::${novo}`);
+    writeFileSync(ficheiro, novo, { mode: 0o600 });
+    const dias = json.refresh_token_expires_in ? Math.round(json.refresh_token_expires_in / 86400) : '?';
+    console.log(`🔁 Refresh token novo recebido (vale ~${dias} dias), a gravar no passo seguinte.`);
+  } catch (err) {
+    console.error(`Aviso: não consegui guardar o refresh token novo (${err.message}).`);
+  }
 }
 
 /**
@@ -166,7 +193,7 @@ function parseFrontmatter(content) {
 
 /**
  * Generate Pinterest-optimized description (max 150 chars with hashtags)
- * ÚLTIMO recurso — usada só se até o fallback determinístico (abaixo) falhar.
+ * ÚLTIMO recurso, usada só se até o fallback determinístico (abaixo) falhar.
  */
 function generatePinDescription(title, category, tags) {
   // Hashtags base derivadas das keywords do nicho no config
@@ -224,7 +251,7 @@ function parseTagsList(tagsRaw) {
     const parsed = JSON.parse(tagsRaw);
     if (Array.isArray(parsed)) return parsed.filter(Boolean).map(String);
   } catch {
-    // não é JSON válido — tenta outras formas abaixo
+    // não é JSON válido, tenta outras formas abaixo
   }
   const quoted = [...String(tagsRaw).matchAll(/"([^"]+)"/g)].map(m => m[1]);
   if (quoted.length) return quoted;
@@ -236,7 +263,7 @@ function parseTagsList(tagsRaw) {
 }
 
 /**
- * Corre uma Promise contra um timeout — nunca deixa o LLM travar a publicação.
+ * Corre uma Promise contra um timeout, nunca deixa o LLM travar a publicação.
  */
 function withTimeout(promise, ms) {
   return Promise.race([
@@ -260,7 +287,7 @@ function buildPinLLMPrompt(post) {
 Escreva UMA descrição de pin do Pinterest para o post abaixo. Regras obrigatórias:
 - Entre 300 e 450 caracteres (nunca ultrapasse 500).
 - Comece pela palavra-chave principal: "${mainKeyword}".
-- Destaque um benefício concreto para quem lê, usando SOMENTE informações que já apareçam no título ou na descrição do post abaixo — NÃO invente números, estatísticas ou fatos que não estejam ali.
+- Destaque um benefício concreto para quem lê, usando SOMENTE informações que já apareçam no título ou na descrição do post abaixo, NÃO invente números, estatísticas ou fatos que não estejam ali.
 - Inclua a chamada para ação: "${CTA_TEXT}"
 - Termine com 2 a 4 hashtags relevantes em português (ex: #financaspessoais #orcamento).
 - Não use markdown, aspas, emojis em excesso ou quebras de linha. Escreva em um único parágrafo corrido.
@@ -274,7 +301,7 @@ Responda APENAS com a descrição final do pin, sem explicações.`;
 
 /**
  * Limpa/valida a resposta do LLM. Retorna null se a resposta vier vazia,
- * curta demais ou de alguma forma inutilizável — o chamador cai no fallback.
+ * curta demais ou de alguma forma inutilizável, o chamador cai no fallback.
  */
 function sanitizeLLMDescription(raw) {
   if (!raw) return null;
@@ -289,7 +316,7 @@ function sanitizeLLMDescription(raw) {
 /**
  * Tenta gerar a descrição rica via LLM (Cerebras → Groq → Cloudflare, ver
  * src/scripts/apis/kie-ai.js). Nunca lança para o chamador travar a publicação
- * — erros/timeout resultam em null e o chamador decide o fallback.
+ *, erros/timeout resultam em null e o chamador decide o fallback.
  */
 async function generateLLMDescription(post) {
   const prompt = buildPinLLMPrompt(post);
@@ -330,7 +357,7 @@ function generateFallbackDescription(post) {
 /**
  * Orquestra a geração da descrição do pin com 3 camadas de segurança:
  * 1) LLM (rica, SEO) → 2) fallback determinístico → 3) fallback legado mínimo.
- * NUNCA lança — a publicação do pin não pode ser bloqueada por isso.
+ * NUNCA lança, a publicação do pin não pode ser bloqueada por isso.
  */
 async function buildPinDescription(post) {
   try {
@@ -339,15 +366,15 @@ async function buildPinDescription(post) {
       console.log('  📝 Descrição gerada via LLM.');
       return llmDescription;
     }
-    console.log('  ⚠️  LLM retornou resposta vazia/inválida — usando fallback determinístico.');
+    console.log('  ⚠️  LLM retornou resposta vazia/inválida, usando fallback determinístico.');
   } catch (err) {
-    console.log(`  ⚠️  LLM falhou (${err.message}) — usando fallback determinístico.`);
+    console.log(`  ⚠️  LLM falhou (${err.message}), usando fallback determinístico.`);
   }
 
   try {
     return generateFallbackDescription(post);
   } catch (err) {
-    console.log(`  ⚠️  Fallback determinístico falhou (${err.message}) — usando descrição mínima original.`);
+    console.log(`  ⚠️  Fallback determinístico falhou (${err.message}), usando descrição mínima original.`);
     return generatePinDescription(post.title, post.category, post.tags);
   }
 }
@@ -426,11 +453,11 @@ async function main() {
 
   // Validate env vars
   if (!PINTEREST_ACCESS_TOKEN) {
-    console.log('⏭️  Credenciais Pinterest não configuradas (PINTEREST_REFRESH_TOKEN+CLIENT_ID+CLIENT_SECRET ou PINTEREST_ACCESS_TOKEN) — pulando publicação.');
+    console.log('⏭️  Credenciais Pinterest não configuradas (PINTEREST_REFRESH_TOKEN+CLIENT_ID+CLIENT_SECRET ou PINTEREST_ACCESS_TOKEN), pulando publicação.');
     process.exit(0);
   }
   if (!PINTEREST_BOARD_ID) {
-    console.log('⏭️  PINTEREST_BOARD_ID não configurado — pulando publicação no Pinterest.');
+    console.log('⏭️  PINTEREST_BOARD_ID não configurado, pulando publicação no Pinterest.');
     process.exit(0);
   }
 

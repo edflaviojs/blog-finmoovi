@@ -53,7 +53,27 @@ jobs:
           KIE_API_KEY: ${{ secrets.KIE_API_KEY }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
+          # O Pinterest entrega um refresh token novo a cada rodada; o passo abaixo grava-o
+          PINTEREST_NOVO_TOKEN_FICHEIRO: ${{ runner.temp }}/pinterest-refresh.txt
         run: node --import tsx scripts/pinterest-publish.js
+
+      # Sem isto a chave do Pinterest morria a cada 60 dias (16/11/2026).
+      # GH_PAT_BLOG: chave do GitHub só deste repo, permissão Secrets (o GITHUB_TOKEN não grava secrets).
+      # Se falhar, o pin já saiu: só avisa, e o lembrete de 7 dias continua de rede.
+      - name: Guardar a chave nova do Pinterest
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT_BLOG }}
+          FICHEIRO: ${{ runner.temp }}/pinterest-refresh.txt
+        run: |
+          if [ ! -s "$FICHEIRO" ]; then echo "Sem chave nova do Pinterest nesta rodada."; exit 0; fi
+          if [ -z "$GH_TOKEN" ]; then echo "::warning::GH_PAT_BLOG em falta: chave nova do Pinterest NAO guardada."; rm -f "$FICHEIRO"; exit 0; fi
+          if gh secret set PINTEREST_REFRESH_TOKEN --repo "$GITHUB_REPOSITORY" < "$FICHEIRO"; then
+            echo "Chave nova do Pinterest guardada."
+          else
+            echo "::warning::Falhou guardar a chave nova do Pinterest (ver GH_PAT_BLOG)."
+          fi
+          rm -f "$FICHEIRO"
 
       - name: Run Social Bookmarking
         env:
