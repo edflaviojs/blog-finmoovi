@@ -22,5 +22,11 @@
     "runId": "43904238636",
     "producedAt": "2026-11-16T16:14:29.765Z",
     "artifact": "short-imposto-de-renda"
+  },
+  {
+    "fileSlug": "renda-fixa",
+    "runId": "44123883426",
+    "producedAt": "2026-11-17T16:22:13.511Z",
+    "artifact": "short-renda-fixa"
   }
 ]
