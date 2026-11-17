@@ -4,6 +4,7 @@ definition: "Qué es NYSE y cómo aparece en tu día a día — explicado de for
 title: "NYSE - Glosario Financiero"
 description: "Qué es NYSE y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/nyse.webp"
+imageAlt: "Monedas doradas apiladas con plantas verdes y un frasco de vidrio sobre fondo oscuro."
 category: "basico"
 tags: ["NYSE", "glosario", "finanzas"]
 author: "FinMoovi"

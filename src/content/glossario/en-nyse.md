@@ -4,6 +4,7 @@ definition: "What NYSE is and how it shows up in your everyday money — explain
 title: "NYSE - Financial Glossary"
 description: "What NYSE is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/nyse.webp"
+imageAlt: "Gold coin stacks and glass jar with growing green plants on dark background."
 category: "basico"
 tags: ["NYSE", "glossary", "finance"]
 author: "FinMoovi"

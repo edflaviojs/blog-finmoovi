@@ -2,6 +2,7 @@
 title: "Resumen Semanal: Dólar a R$ 5.66 — Semana 3 de noviembre"
 description: "Resumen semanal del mercado financiero: dólar, euro, Selic y consejos para inversores. Semana 3 de noviembre 2026."
 image: "/images/posts/cotacoes-semana-2026-11-16.webp"
+imageAlt: "Calculadora negra, libreta marrón, monedas y plantas verdes sobre superficie blanca."
 category: "cotacoes"
 tags: ["cotizaciones","dólar","euro","mercado financiero","selic"]
 author: "FinMoovi"

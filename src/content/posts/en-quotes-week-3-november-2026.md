@@ -2,6 +2,7 @@
 title: "Weekly Summary: Dollar at R$ 5.66 — Week 3 of november"
 description: "Weekly financial market summary: dollar, euro, Selic and tips for investors. Week 3 of november 2026."
 image: "/images/posts/cotacoes-semana-2026-11-16.webp"
+imageAlt: "Black calculator on brown leather notebook with scattered coins and green plants."
 category: "cotacoes"
 tags: ["quotes","dollar","euro","financial market","selic"]
 author: "FinMoovi"
