@@ -19,6 +19,37 @@
     }
   },
   {
+    "file": "en-quotes-week-3-november-2026.md",
+    "dir": "posts",
+    "severity": 3,
+    "issues": {
+      "currency": 4,
+      "brInstitutions": [],
+      "brProducts": [
+        "Tesouro Direto",
+        "CDB",
+        "Selic"
+      ],
+      "geoRefs": [
+        "brasileiras"
+      ],
+      "ptWordsCount": 5,
+      "brBrands": [],
+      "brAcronyms": [
+        "IPCA",
+        "LCI",
+        "LCA"
+      ],
+      "ptLeftovers": [
+        "ações",
+        "poupança",
+        "reais",
+        "investimentos",
+        "valor"
+      ]
+    }
+  },
+  {
     "file": "en-quotes-week-4-october-2026.md",
     "dir": "posts",
     "severity": 3,
@@ -216,6 +247,26 @@
       "ptLeftovers": [
         "reais"
       ]
+    }
+  },
+  {
+    "file": "es-cotizaciones-semana-3-noviembre-2026.md",
+    "dir": "posts",
+    "severity": 2,
+    "issues": {
+      "currency": 4,
+      "brInstitutions": [],
+      "brProducts": [
+        "CDB",
+        "Selic"
+      ],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [
+        "IPCA"
+      ],
+      "ptLeftovers": []
     }
   },
   {
@@ -4221,6 +4272,21 @@
   },
   {
     "file": "en-non-farm-payrolls.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-nyse.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
@@ -9966,6 +10032,21 @@
   },
   {
     "file": "es-nfp.md",
+    "dir": "glossario",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-nyse.md",
     "dir": "glossario",
     "severity": 0,
     "issues": {
