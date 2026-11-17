@@ -1,0 +1,118 @@
+{
+  "slug": "loop-assinaturas-esquecidas-voces-viram",
+  "formato": "loop16",
+  "term": "As assinaturas que ninguém cancela",
+  "category": "vida",
+  "keyword": "ASSINATURA",
+  "valor": "R$ 95",
+  "situacao": "assinaturas-esquecidas",
+  "gancho": "voces-viram",
+  "ganchoFamilia": "vocês viram",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "balde-furado",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Gente, vocês viram que a fatura tem coisa que ninguém usa?",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "vocês",
+          "visual": {
+            "type": "statement",
+            "text": "Coisa que ninguém usa"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "viram",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Na minha, noventa e cinco reais por mês em assinatura que ninguém abria.",
+      "durationSec": 4.7,
+      "shots": [
+        {
+          "anchor": "noventa",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "cinco",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 95 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Cancelei tudo, uma por uma, na hora.",
+      "durationSec": 2.53,
+      "shots": [
+        {
+          "anchor": "Cancelei",
+          "visual": {
+            "type": "statement",
+            "text": "Cancelei tudo na hora"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "Cancelei",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Agora eu olho a fatura pra ver coisa que ninguém usa.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "fatura",
+          "visual": {
+            "type": "statement",
+            "text": "Olho a fatura todo mês"
+          }
+        },
+        {
+          "anchor": "coisa",
+          "visual": {
+            "type": "statement",
+            "text": "Coisa que ninguém usa"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.19
+}

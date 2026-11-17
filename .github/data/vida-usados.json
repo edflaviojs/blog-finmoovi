@@ -1168,5 +1168,11 @@
     "gancho": "voces-viram",
     "turno": "manha",
     "em": "2026-11-17T13:43:07.999Z"
+  },
+  {
+    "situacao": "assinaturas-esquecidas",
+    "gancho": "voces-viram",
+    "turno": "noite",
+    "em": "2026-11-17T13:47:03.285Z"
   }
 ]
