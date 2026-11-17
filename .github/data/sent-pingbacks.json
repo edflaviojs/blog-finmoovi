@@ -3766,5 +3766,41 @@
     "target": "https://www.investopedia.com/terms/o/ocr.asp",
     "status": "no-endpoint",
     "sentAt": "2026-11-05T20:56:45.681Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/como-calcular-juros-compostos-na-pratica-usando-ferramentas/",
+    "target": "https://www.investopedia.com/terms/c/compoundinterest.asp",
+    "status": "no-endpoint",
+    "sentAt": "2026-11-17T22:03:19.456Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/en-debt-free-holiday-season-7-practical-steps-to-enjoy-the/",
+    "target": "https://www.investopedia.com/articles/pf/08/holiday-spending.asp",
+    "status": "no-endpoint",
+    "sentAt": "2026-11-17T22:03:19.540Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/en-how-to-calculate-compound-interest-in-practice-using-online/",
+    "target": "https://www.investopedia.com/terms/c/compoundinterest.asp",
+    "status": "no-endpoint",
+    "sentAt": "2026-11-17T22:03:19.659Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/es-como-calcular-intereses-compuestos-en-la-practica-con/",
+    "target": "https://www.investopedia.com/terms/c/compoundinterest.asp",
+    "status": "no-endpoint",
+    "sentAt": "2026-11-17T22:03:19.729Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/es-navidad-sin-deudas-7-pasos-practicos-para-disfrutar-las/",
+    "target": "https://www.investopedia.com/articles/pf/08/holiday-spending.asp",
+    "status": "no-endpoint",
+    "sentAt": "2026-11-17T22:03:19.819Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/natal-sem-dividas-7-passos-praticos-para-curtir-as-festas-em/",
+    "target": "https://www.investopedia.com/articles/pf/08/holiday-spending.asp",
+    "status": "no-endpoint",
+    "sentAt": "2026-11-17T22:03:19.886Z"
   }
 ]
