@@ -1,0 +1,226 @@
+{
+  "slug": "renda-fixa",
+  "term": "renda fixa",
+  "category": "basico",
+  "keyword": "renda",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você deixa seu *dinheiro parado* sem saber que existe renda fixa?"
+  },
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "bolha",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você deixa seu dinheiro parado sem saber que existe renda fixa? Eu deixei. Mil reais dormindo na conta, anos seguidos.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bolha"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "fixa",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          }
+        },
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "number",
+            "text": "R$ 1.000"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "anos",
+          "visual": {
+            "type": "icon",
+            "icon": "clock"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Ninguém me explicou. O banco falava difícil e eu ficava com vergonha de perguntar. Então o dinheiro ficava ali, quietinho.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "banco",
+          "visual": {
+            "type": "icon",
+            "icon": "bank"
+          }
+        },
+        {
+          "anchor": "vergonha",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          }
+        },
+        {
+          "anchor": "quietinho",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bolha"
+          },
+          "sfx": "pop"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Aí um amigo me contou. Renda fixa é emprestar seu dinheiro pro banco ou pro governo, e eles te pagam por isso. Eu nunca tinha cobrado ninguém.",
+      "durationSec": 10.4,
+      "shots": [
+        {
+          "anchor": "amigo",
+          "visual": {
+            "type": "icon",
+            "icon": "bulb"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "emprestar",
+          "visual": {
+            "type": "statement",
+            "text": "Você vira o credor"
+          }
+        },
+        {
+          "anchor": "pagam",
+          "visual": {
+            "type": "icon",
+            "icon": "coins"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "cobrado",
+          "visual": {
+            "type": "statement",
+            "text": "Cobrar é seu direito"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei meus mil reais no FinMoovi e ele separou o que estava parado do que estava trabalhando. Meus quinhentos de reserva apareceram sozinhos numa linha.",
+      "durationSec": 10,
+      "shots": [
+        {
+          "anchor": "meus",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Painel com o dinheiro parado separado do que trabalha"
+          }
+        },
+        {
+          "anchor": "trabalhando",
+          "visual": {
+            "type": "statement",
+            "text": "Parado x trabalhando"
+          }
+        },
+        {
+          "anchor": "quinhentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu dinheiro parado? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 4.6,
+      "shots": [
+        {
+          "anchor": "parado",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bolha"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "statement",
+            "text": "Teste sem pagar nada"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Dinheiro parado na conta não trabalha pra você. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 5.8,
+      "shots": [
+        {
+          "anchor": "parado",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bolha"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "icon",
+            "icon": "shield"
+          }
+        },
+        {
+          "anchor": "outros",
+          "visual": {
+            "type": "statement",
+            "text": "Controle é poder"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Teste o FinMoovi por 7 dias grátis",
+    "target": "app"
+  },
+  "totalDurationSec": 46.2
+}
