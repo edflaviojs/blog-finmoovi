@@ -3198,5 +3198,45 @@
         "status": 200
       }
     }
+  },
+  {
+    "slug": "como-transformar-viagens-em-economia-o-poder-de-um-conversor",
+    "title": "Como transformar viagens em economia: o poder de um conversor de moeda digital em 2026",
+    "url": "https://blog.finmoovi.com/posts/como-transformar-viagens-em-economia-o-poder-de-um-conversor",
+    "submittedAt": "2026-11-18T22:25:51.514Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1934903022
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "como-calcular-juros-compostos-na-pratica-usando-ferramentas",
+    "title": "Como calcular juros compostos na prática usando ferramentas online (2026)",
+    "url": "https://blog.finmoovi.com/posts/como-calcular-juros-compostos-na-pratica-usando-ferramentas",
+    "submittedAt": "2026-11-18T22:25:52.259Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1934903024
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
   }
 ]
