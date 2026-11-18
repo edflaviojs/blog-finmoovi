@@ -2846,6 +2846,21 @@
     }
   },
   {
+    "file": "en-how-to-calculate-compound-interest-in-practice-using-online.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
     "file": "en-how-to-choose-investment-funds-in-2026-and-take-the-first.md",
     "dir": "posts",
     "severity": 0,
@@ -4393,6 +4408,21 @@
   {
     "file": "en-organizing-finances-as-a-freelancer.md",
     "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "en-otc.md",
+    "dir": "glossario",
     "severity": 0,
     "issues": {
       "currency": 0,
@@ -6987,6 +7017,21 @@
   },
   {
     "file": "es-como-ahorrar-para-el-dia-del-nino-en-2026-7-pasos-practicos.md",
+    "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-como-calcular-intereses-compuestos-en-la-practica-con.md",
     "dir": "posts",
     "severity": 0,
     "issues": {
@@ -10138,6 +10183,21 @@
   {
     "file": "es-organizar-finanzas-pareja.md",
     "dir": "posts",
+    "severity": 0,
+    "issues": {
+      "currency": 0,
+      "brInstitutions": [],
+      "brProducts": [],
+      "geoRefs": [],
+      "ptWordsCount": 0,
+      "brBrands": [],
+      "brAcronyms": [],
+      "ptLeftovers": []
+    }
+  },
+  {
+    "file": "es-otc.md",
+    "dir": "glossario",
     "severity": 0,
     "issues": {
       "currency": 0,
