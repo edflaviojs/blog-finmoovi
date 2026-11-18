@@ -1,0 +1,118 @@
+{
+  "slug": "loop-emprestar-pra-parente-e-serio-que",
+  "formato": "loop16",
+  "term": "Emprestar dinheiro pra parente",
+  "category": "vida",
+  "keyword": "EMPRESTAR",
+  "valor": "R$ 500",
+  "situacao": "emprestar-pra-parente",
+  "gancho": "e-serio-que",
+  "ganchoFamilia": "é sério que",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "corda-bamba",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "É sério que ninguém está falando de emprestar pra parente? Comigo aconteceu.",
+      "durationSec": 4.15,
+      "shots": [
+        {
+          "anchor": "sério",
+          "visual": {
+            "type": "statement",
+            "text": "Emprestei pra parente"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "ninguém",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "corda-bamba"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Meu cunhado jurou pagar no fim do mês. Os quinhentos reais nunca voltaram.",
+      "durationSec": 4.49,
+      "shots": [
+        {
+          "anchor": "cunhado",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "corda-bamba"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "jurou",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 500"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "A luz atrasou e eu na corda-bamba, com vergonha de cobrar.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "atrasou",
+          "visual": {
+            "type": "statement",
+            "text": "Luz atrasada, sem coragem"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "corda-bamba",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "corda-bamba"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Ninguém fala, mas emprestar pra parente sai caro.",
+      "durationSec": 2.76,
+      "shots": [
+        {
+          "anchor": "Ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "Ninguém fala disso"
+          }
+        },
+        {
+          "anchor": "emprestar",
+          "visual": {
+            "type": "statement",
+            "text": "Emprestei pra parente"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
