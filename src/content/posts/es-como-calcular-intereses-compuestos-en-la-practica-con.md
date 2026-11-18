@@ -3,6 +3,7 @@ title: "Cómo calcular intereses compuestos en la práctica con herramientas onl
 description: "Aprende a usar calculadoras online y FinMoovi para proyectar tus ahorros con intereses compuestos en minutos."
 tickerHeadline: "El truco de los intereses que pocos cono"
 image: "/images/posts/como-calcular-juros-compostos-na-pratica-usando-ferramentas.webp"
+imageAlt: "Portátil con pantalla colorida, taza blanca y monitores azules sobre escritorio de madera."
 category: "dicas"
 tags:
   - "intereses compuestos"

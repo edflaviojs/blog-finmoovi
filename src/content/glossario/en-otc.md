@@ -4,6 +4,7 @@ definition: "What otc is and how it shows up in your everyday money — explaine
 title: "otc - Financial Glossary"
 description: "What otc is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/otc.webp"
+imageAlt: "Stacks of gold coins beside a glass jar containing coins and a green sprout."
 category: "basico"
 tags: ["otc", "glossary", "finance"]
 author: "FinMoovi"

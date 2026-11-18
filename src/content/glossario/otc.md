@@ -4,6 +4,7 @@ definition: "O que é otc e como isso aparece no seu dia a dia — explicado de 
 title: "otc - Glossário Financeiro"
 description: "O que é otc e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/otc.webp"
+imageAlt: "Pilhas de moedas douradas e um pote de vidro com planta sobre fundo azul."
 category: "basico"
 tags: ["otc", "glossário", "finanças"]
 author: "FinMoovi"

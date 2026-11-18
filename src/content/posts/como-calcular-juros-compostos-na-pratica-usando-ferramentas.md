@@ -3,6 +3,7 @@ title: "Como calcular juros compostos na prática usando ferramentas online (202
 description: "Descubra, em poucos minutos, como usar calculadoras online de juros compostos e o app FinMoovi para projetar seus ganhos sem complicação."
 tickerHeadline: "O truque dos juros que poucos sabem"
 image: "/images/posts/como-calcular-juros-compostos-na-pratica-usando-ferramentas.webp"
+imageAlt: "Notebook com tela colorida, monitor azul e caneca branca sobre mesa de madeira."
 category: "dicas"
 tags:
   - "juros compostos"

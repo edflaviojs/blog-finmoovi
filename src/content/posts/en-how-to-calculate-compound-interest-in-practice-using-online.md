@@ -3,6 +3,7 @@ title: "How to Calculate Compound Interest in Practice Using Online Tools (2026)
 description: "Learn a quick way to project your savings with a free online calculator and the FinMoovi app. Turn everyday money into real growth."
 tickerHeadline: "The compound‑interest trick few know"
 image: "/images/posts/como-calcular-juros-compostos-na-pratica-usando-ferramentas.webp"
+imageAlt: "White mug beside laptop with colorful screen and blue monitor on desk."
 category: "dicas"
 tags:
   - "compound interest"
