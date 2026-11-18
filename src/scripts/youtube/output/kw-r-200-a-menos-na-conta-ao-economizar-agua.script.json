@@ -1,0 +1,221 @@
+{
+  "slug": "kw-r-200-a-menos-na-conta-ao-economizar-agua",
+  "term": "R$200 a menos na conta ao economizar água",
+  "category": "mindset",
+  "keyword": "conta",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Quanto você paga de água por mês só porque deixa a *torneira aberta*?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "balde-furado",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Quanto você paga de água por mês só porque deixa a torneira aberta? Na minha casa eram trezentos e cinquenta reais.",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "paga",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          }
+        },
+        {
+          "anchor": "aberta",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "trezentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 350"
+          },
+          "sfx": "thud"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "E o pior é que eu nem via. Torneira correndo na louça, no dente, no banho. Todo mundo faz, ninguém conta.",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "pior",
+          "visual": {
+            "type": "statement",
+            "text": "Você nem via"
+          }
+        },
+        {
+          "anchor": "louça",
+          "visual": {
+            "type": "icon",
+            "icon": "clock"
+          }
+        },
+        {
+          "anchor": "Todo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "Ninguém conta"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Eu contei. Dez litros por minuto viraram seis. A conta foi de trezentos e cinquenta pra cento e cinquenta.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "contei",
+          "visual": {
+            "type": "icon",
+            "icon": "target"
+          },
+          "sfx": "click"
+        },
+        {
+          "anchor": "litros",
+          "visual": {
+            "type": "statement",
+            "text": "10 L → 6 L por minuto"
+          }
+        },
+        {
+          "anchor": "trezentos",
+          "visual": {
+            "type": "counter",
+            "from": 150,
+            "to": 350,
+            "prefix": "R$"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Joguei as duas contas no FinMoovi e ele me mostrou duzentos reais a menos. Foi fechar a torneira na louça, encurtar o banho e pôr redutor.",
+      "durationSec": 10,
+      "shots": [
+        {
+          "anchor": "contas",
+          "visual": {
+            "type": "app",
+            "app": "calculadora",
+            "note": "Duas contas comparadas e economia de R$ 200"
+          }
+        },
+        {
+          "anchor": "menos",
+          "visual": {
+            "type": "number",
+            "text": "- R$ 200"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "encurtar",
+          "visual": {
+            "type": "statement",
+            "text": "Banho mais curto"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver quanto sai na sua? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 4.6,
+      "shots": [
+        {
+          "anchor": "quanto",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Deixar a torneira aberta custa duzentos reais por mês do seu bolso. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "aberta",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "balde-furado"
+          }
+        },
+        {
+          "anchor": "duzentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 200 por mês"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "icon",
+            "icon": "shield"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Descubra quanto você economiza na água",
+    "target": "app"
+  },
+  "totalDurationSec": 45.4
+}
