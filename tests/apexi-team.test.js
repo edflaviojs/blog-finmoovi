@@ -24,7 +24,7 @@ function teamFalso(respostas) {
 
 const POSTS = [
   { dia: 'segunda', texto: 'Post de segunda', cena: 'O boneco-palito abre a carteira vazia na cozinha, com cara de susto.' },
-  { dia: 'terça', texto: 'Qual conta pesa mais?', opcoes: ['Luz', 'Mercado', 'Aluguel'] },
+  { dia: 'terça', texto: 'Qual conta pesa mais?', opcoes: ['Luz', 'Mercado', 'Aluguel'], cena: 'O boneco-palito olha três envelopes em cima da mesa, sem saber qual abrir primeiro.' },
   { dia: 'quarta', texto: 'Post de quarta', cena: 'O boneco-palito segura um boleto na mão, sentado no sofá, preocupado.' },
   { dia: 'quinta', texto: 'Post de quinta', cena: 'O boneco-palito fecha o chuveiro mais cedo e sorri aliviado.' },
   { dia: 'sexta', texto: 'Onde vai o dinheiro do fim de semana?', opcoes: ['Lazer', 'Mercado'] },
@@ -40,25 +40,54 @@ test('semana ISO: 09/11/2026 é a semana 46; 04/01/2027 é a semana 1 de 2027', 
   assert.deepEqual(semanaIso(new Date(2026, 11, 28)), { ano: 2026, semana: 53 });
 });
 
-test('a tarefa dos posts: chave, tipo, prazo segunda 12h de Brasília e 10 passos', () => {
+test('posts no Team: UMA tarefa por semana, um passo por post com o tipo, o dia e a hora no título', () => {
   const t = montarTarefaDosPosts(POSTS, ANTERIOR, PROXIMO, SEGUNDA);
   assert.equal(t.chave_unica, 'finmoovi-posts-2026-w46');
   assert.equal(t.tipo, 'posts-da-semana');
+  assert.equal(t.passos.length, 6);
+  assert.deepEqual(t.passos.map((p) => p.codigo), [
+    'post-2026-11-09', 'post-2026-11-10', 'post-2026-11-11', 'post-2026-11-12', 'post-2026-11-13', 'post-2026-11-14',
+  ]);
+  assert.equal(t.passos[0].texto, '📝 POST DE TEXTO · Segunda 09/11 · agendar para as 12h');
+  assert.equal(t.passos[1].texto, '📊 ENQUETE COM IMAGEM · Terça 10/11 · agendar para as 12h');
+  assert.equal(t.passos[4].texto, '📊 ENQUETE SÓ DE TEXTO · Sexta 13/11 · agendar para as 12h');
   assert.equal(t.prazo, '2026-11-09T12:00:00-03:00');
-  // 6 posts + 4 imagens (as 2 enquetes não levam imagem)
-  assert.deepEqual(t.passos.map((p) => p.codigo), ['SEG', 'SEG-IMG', 'TER', 'QUA', 'QUA-IMG', 'QUI', 'QUI-IMG', 'SEX', 'SAB', 'SAB-IMG']);
 });
 
-test('cada passo tem o que se copia: post com link do vídeo, enquete com opções, prompt da imagem', () => {
+test('post de texto: o texto e o prompt do Meta AI na MESMA caixa, cada um com o seu botão', () => {
   const t = montarTarefaDosPosts(POSTS, ANTERIOR, PROXIMO, SEGUNDA);
-  const p = Object.fromEntries(t.passos.map((x) => [x.codigo, x]));
-  assert.match(p.SEG.copiar, /^Post de segunda\n\n▶️ https:\/\/youtu\.be\/abc123$/);
-  assert.match(p.SEG.texto, /Segunda 09\/11, agendar para as 12h/);
-  assert.equal(p.TER.copiar, 'Qual conta pesa mais?\n\n1. Luz\n2. Mercado\n3. Aluguel');
-  assert.match(p['SEG-IMG'].copiar, /carteira vazia/);
-  assert.match(p['SEG-IMG'].copiar, /NÃO tem nenhuma letra/);
-  assert.equal(p['SAB-IMG'].ficheiro, 'post-2026-11-14-sab.png');
-  assert.ok(p.QUA.links.some((l) => l.url === 'https://blog.finmoovi.com/posts-youtube/'));
+  const seg = t.passos[0];
+  assert.deepEqual(seg.copias.map((c) => c.rotulo), ['Texto do post', 'Prompt da imagem (Meta AI)']);
+  assert.equal(seg.copias[0].texto, 'Post de segunda\n\n▶️ https://youtu.be/abc123');
+  assert.match(seg.copias[1].texto, /carteira vazia/);
+  assert.match(seg.copias[1].texto, /NÃO tem nenhuma letra/);
+  assert.ok(seg.links.some((l) => l.url === 'https://www.meta.ai/'));
+  assert.equal(t.passos[5].ficheiro, 'post-2026-11-14-sab.png');
+  assert.ok(t.passos.every((p) => p.copiar === undefined), 'com copias não vai copiar');
+  assert.ok(!JSON.stringify(t).match(/ChatGPT|Gemini/));
+});
+
+test('enquetes: a pergunta e cada opção num botão seu; a de terça com imagem, a de sexta só de texto', () => {
+  const { passos } = montarTarefaDosPosts(POSTS, ANTERIOR, PROXIMO, SEGUNDA);
+  const [ter, sex] = [passos[1], passos[4]];
+  assert.deepEqual(ter.copias.map((c) => c.rotulo), ['Pergunta', 'Opção A', 'Opção B', 'Opção C', 'Prompt da imagem (Meta AI)']);
+  assert.deepEqual(ter.copias.slice(0, 4).map((c) => c.texto), ['Qual conta pesa mais?', 'Luz', 'Mercado', 'Aluguel']);
+  assert.match(ter.copias[4].texto, /três envelopes/);
+  assert.equal(ter.ficheiro, 'post-2026-11-10-ter.png');
+  assert.ok(ter.links.some((l) => l.url === 'https://www.meta.ai/'));
+  assert.deepEqual(sex.copias.map((c) => c.rotulo), ['Pergunta', 'Opção A', 'Opção B']);
+  assert.equal(sex.ficheiro, undefined);
+  assert.ok(!sex.links.some((l) => l.url === 'https://www.meta.ai/'));
+});
+
+test('dentro dos limites do Team: até 10 botões, rótulo até 60 letras, texto não vazio', () => {
+  for (const p of montarTarefaDosPosts(POSTS, ANTERIOR, PROXIMO, SEGUNDA).passos) {
+    assert.ok(p.copias.length >= 2 && p.copias.length <= 10, p.codigo);
+    for (const c of p.copias) {
+      assert.ok(c.rotulo.length <= 60 && c.texto.trim().length > 0 && c.texto.length <= 20000, `${p.codigo} ${c.rotulo}`);
+    }
+    assert.ok(p.links && p.links.length > 0, `${p.codigo} sem link`);
+  }
 });
 
 test('mandarTarefa: manda a chave só no cabeçalho e lê criada/url', async () => {

@@ -30,7 +30,8 @@
  *
  * ♦ 06/11/2026: A TAREFA NO APEXI TEAM, pedido do dono: *«Quero que os robôs do FinMoovi
  * mandem as tarefas para lá, em vez de só por email.»* O `--enviar` manda também a tarefa
- * `finmoovi-posts-<ano>-w<semana>` (ver `montarTarefaDosPosts`). O e-mail continua a sair
+ * dos posts; é UMA por semana, `finmoovi-posts-<ano>-w<semana>`, com um passo por post
+ * e vários botões «Copiar» em cada um (desde 17/11/2026, ver `montarTarefaDosPosts`). O e-mail continua a sair
  * SEMPRE, como reserva, até 20/11/2026 (há um lembrete para o desligar).
  */
 
@@ -133,7 +134,9 @@ function ddmm(d) {
  * de 18/08 (capas do blog): pôr o TÍTULO dentro do pedido de imagem fazia o gerador
  * desenhar letras tortas e borrões. Por isso o texto do post nunca entra aqui, e a
  * trava `CENA_COM_LETRAS` recusa a cena que peça palavra, placa, número ou ecrã.
- * As enquetes não levam imagem: o YouTube não deixa juntar imagem a uma enquete de texto.
+ * ♦ 18/11/2026, pedido do dono a ver o piloto no Team: *«o enquete, poderia ser uma enquete
+ * com imagem e uma outra sem!»*. A de terça (sobre o vídeo) leva imagem; a de sexta fica só
+ * de texto. Quem diz é o `imagem: true` no PLANO; `temImagem(i)` junta os dois casos.
  */
 const ESTILO_DA_IMAGEM = 'Ilustração plana e simples, quadrada (1:1), no estilo boneco-palito (stickman): personagem de traço preto grosso, cabeça redonda, expressão bem clara no rosto. Fundo de uma cor lisa e clara, poucos objetos, cores vivas. IMPORTANTE: a imagem NÃO tem nenhuma letra, palavra, número, placa, etiqueta de preço nem tela com texto.';
 const CENA_COM_LETRAS = /(escrit|texto|letreiro|placa|palavra|frase|legenda|t[ií]tulo|n[uú]mero|etiqueta|cartaz|r\$|\d|logo|marca)/i;
@@ -144,12 +147,16 @@ export function promptDaImagem(cena) {
 
 const PLANO = [
   { dia: 'segunda', tipo: 'texto', papel: 'O VÍDEO DE ONTEM. Conte em 2-3 frases o problema que o vídeo resolve, na voz de quem já passou por isso, e termine convidando a assistir. NÃO escreva link (o link é colocado depois, automaticamente).' },
-  { dia: 'terça', tipo: 'enquete', papel: 'ENQUETE sobre o tema do vídeo, uma situação do dia a dia em que a pessoa se reconhece. 3 ou 4 opções curtas, todas plausíveis, nenhuma "certa".' },
+  { dia: 'terça', tipo: 'enquete', imagem: true, papel: 'ENQUETE sobre o tema do vídeo, uma situação do dia a dia em que a pessoa se reconhece. 3 ou 4 opções curtas, todas plausíveis, nenhuma "certa".' },
   { dia: 'quarta', tipo: 'texto', papel: 'PERGUNTA VIVIDA, com as DUAS pontas: pergunte se a pessoa já passou pelo problema do vídeo E se conseguiu resolver, e peça para contar nos comentários como resolveu, ou se ainda passa por isso.' },
   { dia: 'quinta', tipo: 'texto', papel: 'UMA DICA CURTA tirada do vídeo, que a pessoa pode usar hoje. Concreta, sem conta nenhuma, sem lista longa.' },
   { dia: 'sexta', tipo: 'enquete', papel: 'ENQUETE leve de fim de semana sobre gastos ou hábitos com dinheiro da família (mercado, lazer, contas de casa). 3 ou 4 opções curtas.' },
   { dia: 'sábado', tipo: 'texto', papel: 'O AVISO DE AMANHÃ: amanhã, domingo, às 19h, estreia o vídeo novo (ver "PRÓXIMO VÍDEO"). Desperte curiosidade pelo problema, sem entregar a solução.' },
 ];
+
+/** O post do dia i leva imagem? Todo post de texto, e a enquete marcada com `imagem: true`. */
+const temImagem = (i) => PLANO[i].tipo === 'texto' || PLANO[i].imagem === true;
+const tipoDoPost = (i) => (PLANO[i].tipo === 'texto' ? '📝 POST DE TEXTO' : PLANO[i].imagem ? '📊 ENQUETE COM IMAGEM' : '📊 ENQUETE SÓ DE TEXTO');
 
 function montarPrompt(anterior, proximo) {
   return `Você escreve os posts da aba "Posts" do canal de YouTube FinMoovi (finanças pessoais para famílias brasileiras de classe média e baixa).
@@ -163,17 +170,17 @@ ${anterior.texto}
 ${proximo ? proximo.texto : '(ainda não definido: no post de sábado, diga só que domingo às 19h tem vídeo novo, sem inventar o tema)'}
 
 ═══ OS SEIS POSTS ═══
-${PLANO.map((p, i) => `${i + 1}. ${p.dia.toUpperCase()} (${p.tipo}): ${p.papel}`).join('\n')}
+${PLANO.map((p, i) => `${i + 1}. ${p.dia.toUpperCase()} (${p.tipo}${p.tipo === 'enquete' ? (p.imagem ? ' com imagem' : ' só de texto') : ''}): ${p.papel}`).join('\n')}
 
 ═══ PROIBIDO (reprova) ═══
 ⛔ Pedir para a pessoa fazer conta, somar, calcular, anotar ou ir buscar o extrato. Pergunte pelo que ela JÁ VIVEU, responde-se de memória, em meio segundo.
 ⛔ Dizer que o app FinMoovi é "grátis", "de graça" ou "gratuito". Se falar do app, é "7 dias grátis". (Nem é preciso falar do app.)
 ⛔ Qualquer número que não esteja nos textos dos vídeos acima. Não invente valores, percentagens nem estatísticas.
 ⛔ Escrever links ou endereços. Os links são colocados depois.
-═══ A IMAGEM DOS POSTS DE TEXTO (segunda, quarta, quinta e sábado) ═══
-Em cada post de TEXTO, escreva também "cena": 1 ou 2 frases a descrever UMA imagem para o post: o que o boneco-palito está fazendo, onde, e com que objeto do dia a dia (carteira vazia, sacola de mercado, boleto na mão, chuveiro, geladeira…). Mostre a emoção do momento.
+═══ A IMAGEM (segunda, terça, quarta, quinta e sábado) ═══
+Nos posts de TEXTO e na ENQUETE DE TERÇA, escreva também "cena": 1 ou 2 frases a descrever UMA imagem para o post: o que o boneco-palito está fazendo, onde, e com que objeto do dia a dia (carteira vazia, sacola de mercado, boleto na mão, chuveiro, geladeira…). Mostre a emoção do momento.
 ⛔ A cena NÃO pode ter nenhuma palavra, número, valor, placa, etiqueta, cartaz, logotipo nem tela com texto, geradores de imagem desenham letras tortas. Conte tudo pela cena e pela expressão do rosto.
-As enquetes NÃO levam "cena".
+A enquete de SEXTA é só de texto e NÃO leva "cena".
 
 ⛔ Mais de ${LIMITE_TEXTO} caracteres por texto. Cada opção de enquete com no máximo ${LIMITE_OPCAO} caracteres.
 
@@ -181,7 +188,7 @@ Devolva SÓ este JSON, sem mais nada:
 {
   "posts": [
     { "dia": "segunda", "texto": "...", "cena": "..." },
-    { "dia": "terça", "texto": "a pergunta da enquete", "opcoes": ["...", "...", "..."] },
+    { "dia": "terça", "texto": "a pergunta da enquete", "opcoes": ["...", "...", "..."], "cena": "..." },
     { "dia": "quarta", "texto": "...", "cena": "..." },
     { "dia": "quinta", "texto": "...", "cena": "..." },
     { "dia": "sexta", "texto": "a pergunta da enquete", "opcoes": ["...", "...", "..."] },
@@ -215,7 +222,7 @@ export function validarPosts(n, numerosPermitidos) {
       if (!numerosPermitidos.has(num)) erros.push(`${rot}: o número "${num}" não está no vídeo, não invente números`);
     }
 
-    if (plano.tipo === 'texto') {
+    if (temImagem(i)) {
       const cena = String(p.cena || '').trim();
       if (cena.length < 30) erros.push(`${rot}: falta a "cena" da imagem (1 ou 2 frases, o que o boneco faz e onde)`);
       else if (cena.length > 400) erros.push(`${rot}: a cena tem ${cena.length} caracteres (máximo 400)`);
@@ -288,18 +295,18 @@ function montarEmail(posts, anterior, proximo, segunda, paginaPronta = false) {
   const caixas = posts.map((p, i) => {
     const plano = PLANO[i];
     const enquete = plano.tipo === 'enquete';
-    const imagem = enquete
+    const imagem = !temImagem(i)
       ? `
-        <p style="color:#484f58;font-size:12px;margin:12px 0 0;">🎨 Enquete não leva imagem: o YouTube não deixa juntar as duas.</p>`
+        <p style="color:#484f58;font-size:12px;margin:12px 0 0;">📊 Enquete só de texto: não precisa de imagem.</p>`
       : `
-        <p style="color:#3fb950;font-size:12px;font-weight:600;margin:16px 0 4px;">🎨 PROMPT DA IMAGEM: cole no ChatGPT ou no Gemini:</p>
+        <p style="color:#3fb950;font-size:12px;font-weight:600;margin:16px 0 4px;">🎨 PROMPT DA IMAGEM: cole no Meta AI (meta.ai):</p>
         <pre style="white-space:pre-wrap;font-family:inherit;background:#0d1117;border:1px dashed #3fb950;border-radius:6px;padding:10px 12px;color:#c9d1d9;font-size:13px;line-height:1.5;margin:0;">${escapar(promptDaImagem(p.cena))}</pre>`;
     const opcoes = enquete ? `
         <p style="color:#8b949e;font-size:12px;margin:12px 0 4px;">OPÇÕES DA ENQUETE (uma em cada campo):</p>
         ${p.opcoes.map((o) => `<div style="background:#0d1117;border:1px solid #30363d;border-radius:6px;padding:8px 12px;margin:4px 0;color:#f0f6fc;font-size:14px;">${escapar(o)}</div>`).join('')}` : '';
     return `
       <div style="background:#161b22;border:1px solid #30363d;border-radius:12px;padding:20px;margin:0 0 16px;">
-        <p style="color:#58a6ff;font-size:13px;font-weight:600;margin:0 0 8px;">${plano.dia.toUpperCase()} ${ddmm(datas[i])} · agendar para as 12h · ${enquete ? '📊 ENQUETE' : '📝 TEXTO'}</p>
+        <p style="color:#58a6ff;font-size:13px;font-weight:600;margin:0 0 8px;">${plano.dia.toUpperCase()} ${ddmm(datas[i])} · agendar para as 12h · ${tipoDoPost(i)}</p>
         <pre style="white-space:pre-wrap;font-family:inherit;color:#f0f6fc;font-size:15px;line-height:1.6;margin:0;">${escapar(textoFinal(p, i, anterior))}</pre>${opcoes}${imagem}
       </div>`;
   }).join('');
@@ -338,13 +345,14 @@ export function montarPagina(posts, anterior, proximo, segunda, geradoEm) {
   const cartoes = posts.map((p, i) => {
     const plano = PLANO[i];
     const enquete = plano.tipo === 'enquete';
-    const partes = [`<h2>${plano.dia.toUpperCase()} ${ddmm(datas[i])} <span>· 12h · ${enquete ? '📊 enquete' : '📝 texto'}</span></h2>`];
+    const partes = [`<h2>${plano.dia.toUpperCase()} ${ddmm(datas[i])} <span>· 12h · ${tipoDoPost(i)}</span></h2>`];
     partes.push(bloco(enquete ? '📋 Copiar pergunta' : '📋 Copiar texto', textoFinal(p, i, anterior)));
     if (enquete) {
       partes.push('<p class="nota">Opções da enquete: uma em cada campo:</p>');
       p.opcoes.forEach((o, k) => partes.push(bloco(`📋 Copiar opção ${k + 1}`, o, 'opcao')));
-    } else {
-      partes.push('<p class="nota img">🎨 Prompt da imagem: cole no ChatGPT ou no Gemini:</p>');
+    }
+    if (temImagem(i)) {
+      partes.push('<p class="nota img">🎨 Prompt da imagem: cole no Meta AI (meta.ai):</p>');
       partes.push(bloco('🎨 Copiar prompt da imagem', promptDaImagem(p.cena), 'imagem'));
     }
     return `<section class="cartao">${partes.join('')}</section>`;
@@ -450,46 +458,58 @@ export function semanaIso(d) {
   return { ano, semana };
 }
 
+const STUDIO = { rotulo: '🎬 Abrir o YouTube Studio', url: 'https://studio.youtube.com/' };
+const META_AI = { rotulo: '🎨 Abrir o Meta AI', url: 'https://www.meta.ai/' };
+const LETRA = 'ABCDEFGHIJ';
+
 /**
- * A tarefa «Agendar os 6 posts da semana». Um passo por post (o post ou a enquete no
- * «Copiar»), e logo abaixo de cada post de texto um passo para a imagem, com o prompt no
- * seu próprio «Copiar» (escolha do dono, 06/11: cada passo só tem um botão).
+ * A tarefa dos posts da semana: UMA tarefa por semana, UM passo por post, e dentro de cada
+ * passo um botão «Copiar» para cada coisa que se cola (campo `copias` do Team, 17/11/2026).
+ *
+ * Pedido do dono, 17/11/2026: *«Quero continuar recebendo apenas uma tarefa pra tudo igual já
+ * recebíamos (...) é uma tarefa, mas dentro dela tem que ter várias etapas»*; o título de
+ * cada etapa: *«POST DE TEXTO · Quarta 18/11 · agendar para as 12h»*; e *«a imagem que
+ * geramos usamos o Meta.ai»*.
+ *
+ * Post de texto: «Texto do post» e «Prompt da imagem (Meta AI)». Enquete: «Pergunta» e um
+ * botão por opção («Opção A», «Opção B»...), sem a letra colada no texto da opção.
  */
 export function montarTarefaDosPosts(posts, anterior, proximo, segunda) {
   const { ano, semana } = semanaIso(segunda);
-  const paginas = [{ rotulo: '📋 Página de copiar (um botão por texto)', url: PAGINA_URL }];
-  const passos = [];
-  posts.forEach((p, i) => {
-    const plano = PLANO[i];
+  const passos = posts.map((p, i) => {
     const d = new Date(segunda); d.setDate(segunda.getDate() + i);
-    const quando = `${NOME_DO_DIA[i]} ${ddmm(d)}, agendar para as 12h`;
-    if (plano.tipo === 'enquete') {
-      const opcoes = p.opcoes.map((o) => String(o).trim());
-      passos.push({
-        codigo: CODIGO_DO_DIA[i],
-        texto: `${quando} · 📊 enquete. A pergunta vai no 1º campo e cada opção no seu (a página de copiar tem um botão por opção).`,
-        copiar: `${String(p.texto).trim()}\n\n${opcoes.map((o, k) => `${k + 1}. ${o}`).join('\n')}`,
-        links: paginas,
-      });
-      return;
+    const dia = `${NOME_DO_DIA[i]} ${ddmm(d)}`;
+    const base = { codigo: `post-${isoDia(d)}` };
+    if (PLANO[i].tipo === 'enquete') {
+      const opcoes = p.opcoes.map((o) => String(o).trim()).slice(0, 9);
+      return {
+        ...base,
+        texto: `${tipoDoPost(i)} · ${dia} · agendar para as 12h`,
+        copias: [
+          { rotulo: 'Pergunta', texto: textoFinal(p, i, anterior) },
+          ...opcoes.map((o, k) => ({ rotulo: `Opção ${LETRA[k]}`, texto: o })),
+          ...(temImagem(i) ? [{ rotulo: 'Prompt da imagem (Meta AI)', texto: promptDaImagem(p.cena) }] : []),
+        ],
+        links: temImagem(i) ? [STUDIO, META_AI] : [STUDIO],
+        ...(temImagem(i) ? { ficheiro: `post-${isoDia(d)}-${CODIGO_DO_DIA[i].toLowerCase()}.png` } : {}),
+      };
     }
-    passos.push({
-      codigo: CODIGO_DO_DIA[i],
-      texto: `${quando} · 📝 texto`,
-      copiar: textoFinal(p, i, anterior),
-      links: paginas,
-    });
-    passos.push({
-      codigo: `${CODIGO_DO_DIA[i]}-IMG`,
-      texto: `${NOME_DO_DIA[i]} ${ddmm(d)} · 🎨 imagem do post: cole o prompt no ChatGPT ou no Gemini e junte a imagem ao post`,
-      copiar: promptDaImagem(p.cena),
+    return {
+      ...base,
+      texto: `${tipoDoPost(i)} · ${dia} · agendar para as 12h`,
+      copias: [
+        { rotulo: 'Texto do post', texto: textoFinal(p, i, anterior) },
+        { rotulo: 'Prompt da imagem (Meta AI)', texto: promptDaImagem(p.cena) },
+      ],
+      links: [STUDIO, META_AI],
       ficheiro: `post-${isoDia(d)}-${CODIGO_DO_DIA[i].toLowerCase()}.png`,
-    });
+    };
   });
   const descricao = [
     `Sobre o vídeo de domingo: ${anterior.titulo}`,
     proximo ? `Sábado avisa o próximo: ${proximo.titulo}` : null,
-    'Como agendar: YouTube Studio > Criar > Criar post > colar o texto > (enquete: botão Enquete) > seta ao lado de Publicar > Agendar.',
+    'Post de texto: copie o texto, cole o prompt no Meta AI e baixe a imagem. No YouTube Studio: Criar > Criar post, cole o texto, junte a imagem, seta ao lado de Publicar > Agendar.',
+    'Enquete: no YouTube Studio, Criar > Criar post > Enquete. A pergunta vai no 1º campo e cada opção no seu. A de terça leva imagem (gere no Meta AI e junte); a de sexta é só de texto.',
     'O YouTube não deixa robô publicar posts, por isso vêm para agendar à mão.',
   ].filter(Boolean).join('\n');
   return {
@@ -500,9 +520,10 @@ export function montarTarefaDosPosts(posts, anterior, proximo, segunda) {
     descricao,
     prazo: `${isoDia(segunda)}T12:00:00-03:00`,
     links: [
-      { rotulo: '📋 Página de copiar', url: PAGINA_URL },
       { rotulo: '▶️ O vídeo de domingo', url: `https://youtu.be/${anterior.videoId}` },
-      { rotulo: '🎬 YouTube Studio', url: 'https://studio.youtube.com/' },
+      STUDIO,
+      META_AI,
+      { rotulo: '📋 Página de copiar', url: PAGINA_URL },
     ],
     passos,
   };
