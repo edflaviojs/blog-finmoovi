@@ -1,0 +1,118 @@
+{
+  "slug": "loop-aposentadoria-por-conta-e-serio-que",
+  "formato": "loop16",
+  "term": "Aposentadoria de quem é autônomo",
+  "category": "vida",
+  "keyword": "APOSENTADORIA",
+  "valor": "R$ 180",
+  "situacao": "aposentadoria-por-conta",
+  "gancho": "e-serio-que",
+  "ganchoFamilia": "é sério que",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "ampulheta",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "É sério que ninguém está falando de aposentadoria? Comigo foi assim.",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "sério",
+          "visual": {
+            "type": "statement",
+            "text": "Ninguém fala disso"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "ninguém",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ampulheta"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Os cento e oitenta reais por mês que nunca paguei fizeram falta.",
+      "durationSec": 4.24,
+      "shots": [
+        {
+          "anchor": "cento",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ampulheta"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "oitenta",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 180"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Sabe, eu deixava pra depois. Olha, o tempo passou.",
+      "durationSec": 3.18,
+      "shots": [
+        {
+          "anchor": "deixava",
+          "visual": {
+            "type": "statement",
+            "text": "Eu deixei pra depois"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "tempo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ampulheta"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "E ninguém falava de aposentadoria pra mim, que trabalho por conta.",
+      "durationSec": 3.89,
+      "shots": [
+        {
+          "anchor": "ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "E ninguém me avisou"
+          }
+        },
+        {
+          "anchor": "falava",
+          "visual": {
+            "type": "statement",
+            "text": "Ninguém fala disso"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
