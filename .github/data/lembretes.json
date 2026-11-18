@@ -29,7 +29,7 @@
       "data": "2026-11-13",
       "titulo": "Conferir se o Multipost repetiu o envio quando travou",
       "texto": "Desde 06/11 o robô que entrega os Shorts tenta enviar o vídeo até 3 vezes quando o servidor do Multipost trava. Pedir ao Claude para procurar «nova tentativa» nas corridas desta semana. Se o servidor não travou nenhuma vez, está tudo bem e fica para a semana seguinte.",
-      "feito": false,
+      "feito": true,
       "criadoEm": "2026-11-06"
     },
     {
@@ -45,6 +45,13 @@
       "texto": "Desde 09/11 os posts da semana chegam como tarefa no Apexi Team, e o e-mail de segunda ficou 2 semanas como reserva. Se as duas tarefas (semanas 46 e 47) chegaram certas ao Team, é hora de desligar o e-mail: pedir ao Claude no terminal do FinMoovi para tirar o envio do posts-semana.js.",
       "feito": false,
       "criadoEm": "2026-11-06"
+    },
+    {
+      "data": "2026-11-23",
+      "titulo": "Conferir a 1ª tarefa dos posts no formato novo",
+      "texto": "Desde 18/11 a tarefa dos posts chega com uma caixa por post e vários botões Copiar (texto, prompt do Meta AI, pergunta e cada opção). A enquete de terça leva imagem, a de sexta é só de texto. Pedir ao Claude no terminal do FinMoovi para conferir a semana 48 (finmoovi-posts-2026-w48): 6 caixas, títulos com o dia e as 12h, no nome do Matheus.",
+      "feito": false,
+      "criadoEm": "2026-11-18"
     }
   ]
 }
