@@ -6624,6 +6624,41 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-11-17"
+    },
+    "como-calcular-juros-compostos-na-pratica-usando-ferramentas-2.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"Investing in the future, one coin at a time.\")",
+      "em": "2026-11-18"
+    },
+    "como-calcular-juros-compostos-na-pratica-usando-ferramentas-4.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-18"
+    },
+    "como-calcular-juros-compostos-na-pratica-usando-ferramentas-6.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-18"
+    },
+    "como-calcular-juros-compostos-na-pratica-usando-ferramentas.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-18"
+    },
+    "otc-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-18"
+    },
+    "otc-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-18"
+    },
+    "otc.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-18"
     }
   },
   "corrigidas": {
@@ -7298,8 +7333,12 @@
     "quick-ratio.webp": {
       "em": "2026-11-03",
       "motivo": "borrada segundo a IA de visão (nitidez local 1252)"
+    },
+    "como-calcular-juros-compostos-na-pratica-usando-ferramentas-2.webp": {
+      "em": "2026-11-18",
+      "motivo": "tem texto escrito (\"Investing in the future, one coin at a time.\")"
     }
   },
-  "totalAcervo": 1325,
-  "ultimaCorrida": "2026-11-17"
+  "totalAcervo": 1332,
+  "ultimaCorrida": "2026-11-18"
 }
