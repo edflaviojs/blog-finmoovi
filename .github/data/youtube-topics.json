@@ -867,6 +867,36 @@
       "glossaryRef": "planilha-para-economizar-dinheiro",
       "status": "pending",
       "sourceKeyword": "planilha para economizar dinheiro"
+    },
+    {
+      "id": "kw-quanto-voce-perde-com-a-torneira-aberta",
+      "theme": "Quanto você perde com a torneira aberta?",
+      "angle": "Mostro em 45 segundos quanto dinheiro sai do seu bolso ao deixar a torneira aberta, usando números reais de consumo e custo por litro, e dou um truque rápido para cortar esse gasto sem enrolação.",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": null,
+      "status": "pending",
+      "sourceKeyword": "para economizar água"
+    },
+    {
+      "id": "kw-3-erros-que-te-fazem-desperdicar-agua-e-gastar-r-200-por-mes",
+      "theme": "3 erros que te fazem desperdiçar água e gastar R$200 por mês",
+      "angle": "Mostra cenas do dia a dia (chuveiro aberto, torneira pingando, máquina de lavar cheia) e revela quanto cada erro custa na conta de água. Em 45 s, o vídeo compara a conta atual (R$150) com a potencial economia ao corrigir os três hábitos, provocando o espectador a parar o desperdício agora.",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": null,
+      "status": "pending",
+      "sourceKeyword": "sobre economizar água"
+    },
+    {
+      "id": "kw-r-200-a-menos-na-conta-ao-economizar-agua",
+      "theme": "R$200 a menos na conta ao economizar água",
+      "angle": "Mostra em 45 s a conta de água de uma casa antes e depois de adotar 3 hábitos simples, usando números reais (ex.: 10 L/min → 6 L/min, 30 dias, R$350 → R$150). O vídeo compara o gasto mensal, destaca o erro de deixar a torneira aberta e dá a dica prática de instalar redutor, tudo como se fosse uma conversa entre amigos.",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "economia-de-agua",
+      "status": "pending",
+      "sourceKeyword": "de pessoas economizando água"
     }
   ]
 }
