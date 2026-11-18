@@ -1,11 +1,5 @@
 [
   {
-    "fileSlug": "spread-bancario",
-    "runId": "43600953187",
-    "producedAt": "2026-11-14T13:53:36.409Z",
-    "artifact": "short-spread-bancario"
-  },
-  {
     "fileSlug": "bolsa-de-valores",
     "runId": "43722698703",
     "producedAt": "2026-11-15T14:12:39.253Z",
