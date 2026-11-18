@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-17T19:26:58.779Z",
-  "sourceCursor": 1,
+  "updatedAt": "2026-11-18T17:41:51.349Z",
+  "sourceCursor": 2,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -2246,8 +2246,10 @@
       "category": null,
       "priority": 2,
       "source": "gsc-gap",
-      "status": "pending",
-      "addedAt": "2026-10-05T15:22:23.246Z"
+      "status": "used",
+      "addedAt": "2026-10-05T15:22:23.246Z",
+      "usedAt": "2026-11-18T17:41:51.349Z",
+      "usedBy": "gerar-dicas-financeiras"
     },
     {
       "keyword": "o que significa valor em aberto",
