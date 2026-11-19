@@ -1,0 +1,214 @@
+{
+  "slug": "kw-quanto-voce-perde-com-a-torneira-aberta",
+  "term": "Quanto você perde com a torneira aberta?",
+  "category": "mindset",
+  "keyword": "torneira",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Quanto dinheiro escorre do seu bolso enquanto você escova os dentes com a torneira aberta?"
+  },
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "ampulheta",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Quanto dinheiro escorre do seu bolso enquanto você escova os dentes com a torneira aberta? Na minha casa eram trinta reais por mês, e eu nem sabia.",
+      "durationSec": 10.4,
+      "shots": [
+        {
+          "anchor": "escorre",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ampulheta"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "torneira",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          }
+        },
+        {
+          "anchor": "trinta",
+          "visual": {
+            "type": "number",
+            "text": "R$ 30/mês"
+          },
+          "sfx": "coin"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Ninguém percebe, porque a gente tá com pressa. Ensaboando a louça. Escovando os dentes. Esperando a água esquentar. A torneira fica lá, correndo.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "pressa",
+          "visual": {
+            "type": "icon",
+            "icon": "clock"
+          }
+        },
+        {
+          "anchor": "louça",
+          "visual": {
+            "type": "statement",
+            "text": "Ensaboar. Escovar. Esperar."
+          }
+        },
+        {
+          "anchor": "torneira",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ampulheta"
+          },
+          "sfx": "slide"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Esses trinta reais por mês dão trezentos e sessenta no ano. Água que você pagou e ninguém bebeu.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "trinta",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 30,
+            "prefix": "R$"
+          }
+        },
+        {
+          "anchor": "trezentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 360/ano"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "pagou",
+          "visual": {
+            "type": "statement",
+            "text": "Água paga, ninguém bebeu"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu coloquei a conta de água no FinMoovi e a linha dela apareceu em vermelho. Aí passei a fechar a torneira pra ensaboar e escovar.",
+      "durationSec": 9.6,
+      "shots": [
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "app",
+            "app": "extrato",
+            "note": "Conta de água em vermelho no extrato"
+          },
+          "sfx": "alert"
+        },
+        {
+          "anchor": "passei",
+          "visual": {
+            "type": "icon",
+            "icon": "shield"
+          }
+        },
+        {
+          "anchor": "ensaboar",
+          "visual": {
+            "type": "statement",
+            "text": "Torneira fechada, conta menor"
+          },
+          "sfx": "ding"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver quanto escorre na sua casa? Procura FinMoovi. São sete dias grátis.",
+      "durationSec": 5,
+      "shots": [
+        {
+          "anchor": "escorre",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          }
+        },
+        {
+          "anchor": "sete",
+          "visual": {
+            "type": "statement",
+            "text": "7 dias grátis"
+          }
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "A torneira aberta leva trezentos e sessenta reais do seu bolso por ano. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 7.7,
+      "shots": [
+        {
+          "anchor": "torneira",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ampulheta"
+          }
+        },
+        {
+          "anchor": "trezentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 360"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "statement",
+            "text": "Sem controle, o dinheiro vai embora"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja quanto escorre na sua casa",
+    "target": "app"
+  },
+  "totalDurationSec": 48.4
+}
