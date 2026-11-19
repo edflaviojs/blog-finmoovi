@@ -4,6 +4,7 @@ definition: "Qué es flexibilización cuantitativa y cómo aparece en tu día a 
 title: "flexibilización cuantitativa - Glosario Financiero"
 description: "Qué es flexibilización cuantitativa y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/quantitative-easing.webp"
+imageAlt: "Pilas de monedas doradas, barras de gráfico y una planta verde en un frasco de vidrio."
 category: "basico"
 tags: ["flexibilización cuantitativa", "glosario", "finanzas"]
 author: "FinMoovi"

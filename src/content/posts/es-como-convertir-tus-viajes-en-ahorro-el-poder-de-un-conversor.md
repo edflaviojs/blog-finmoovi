@@ -3,6 +3,7 @@ title: "Cómo convertir tus viajes en ahorro: el poder de un conversor de divisa
 description: "Descubre cómo usar un conversor de divisas online para evitar sorpresas, optimizar gastos y ganar tranquilidad financiera."
 tickerHeadline: "La herramienta que simplifica tu bolsill"
 image: "/images/posts/como-transformar-viagens-em-economia-o-poder-de-um-conversor.webp"
+imageAlt: "Tres personas sonríen en una mesa, una sostiene billetes de dólar y otra un teléfono."
 category: "dicas"
 locale: "es"
 tags: ["conversor de divisas online","finanzas personales","ahorro","dinero"]

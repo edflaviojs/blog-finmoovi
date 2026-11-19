@@ -4,6 +4,7 @@ definition: "O que é quantitative easing e como isso aparece no seu dia a dia �
 title: "quantitative easing - Glossário Financeiro"
 description: "O que é quantitative easing e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi."
 image: "/images/glossario/quantitative-easing.webp"
+imageAlt: "Moedas douradas, barras e um pote com planta sobre fundo azul escuro."
 category: "basico"
 tags: ["quantitative easing", "glossário", "finanças"]
 author: "FinMoovi"

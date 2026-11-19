@@ -4,6 +4,7 @@ definition: "What quantitative easing is and how it shows up in your everyday mo
 title: "quantitative easing - Financial Glossary"
 description: "What quantitative easing is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/quantitative-easing.webp"
+imageAlt: "Gold coins, bar graph, and glass jar with plant on dark background."
 category: "basico"
 tags: ["quantitative easing", "glossary", "finance"]
 author: "FinMoovi"

@@ -3,6 +3,7 @@ title: "Como transformar viagens em economia: o poder de um conversor de moeda d
 description: "Descubra como usar um conversor de moeda online para evitar surpresas, otimizar gastos e ganhar tranquilidade nas finanças pessoais."
 tickerHeadline: "A ferramenta que simplifica seu bolso em"
 image: "/images/posts/como-transformar-viagens-em-economia-o-poder-de-um-conversor.webp"
+imageAlt: "Três pessoas sorrindo em mesa com cédulas de dólar, celular e vaso de planta."
 category: "dicas"
 locale: "pt"
 tags: ["conversor de moeda online","finanças pessoais","economia","dinheiro"]

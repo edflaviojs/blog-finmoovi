@@ -3,6 +3,7 @@ title: "How to Turn Travel Spending into Savings: The Power of a Digital Currenc
 description: "Learn how a built‑in currency converter can stop surprise costs, streamline travel expenses, and give you peace of mind with your personal finances."
 tickerHeadline: "The tool that simplifies your wallet in"
 image: "/images/posts/como-transformar-viagens-em-economia-o-poder-de-um-conversor.webp"
+imageAlt: "Three smiling people at a table holding cash and a smartphone."
 category: "dicas"
 locale: "en"
 tags: ["digital currency converter","personal finance","savings","travel expenses","budgeting app"]
