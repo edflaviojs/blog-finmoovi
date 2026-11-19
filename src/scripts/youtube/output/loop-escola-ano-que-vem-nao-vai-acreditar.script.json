@@ -1,0 +1,118 @@
+{
+  "slug": "loop-escola-ano-que-vem-nao-vai-acreditar",
+  "formato": "loop16",
+  "term": "A escola do ano que vem",
+  "category": "vida",
+  "keyword": "ESCOLA",
+  "valor": "R$ 900",
+  "situacao": "escola-ano-que-vem",
+  "gancho": "nao-vai-acreditar",
+  "ganchoFamilia": "não vai acreditar",
+  "turno": "manha",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "serio",
+    "ficheiro": "music/bg-serio.mp3",
+    "titulo": "Inspired",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Inspired\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "serio"
+  },
+  "fioCondutor": "relogio",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você não vai acreditar, mas… Chegou a lista da escola.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "acreditar",
+          "visual": {
+            "type": "statement",
+            "text": "Chegou a lista da escola"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "Chegou",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "relogio"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Em novembro, a matrícula. Novecentos reais Eu fiquei olhando, calado.",
+      "durationSec": 3.8,
+      "shots": [
+        {
+          "anchor": "novembro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "relogio"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "matrícula",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 900 só na matrícula"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Olha, o relógio correu e eu não separei nada.",
+      "durationSec": 3.42,
+      "shots": [
+        {
+          "anchor": "relógio",
+          "visual": {
+            "type": "statement",
+            "text": "O relógio correu"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "correu",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "relogio"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Sabe, a lista da escola chegou, e você não vai acreditar.",
+      "durationSec": 4.18,
+      "shots": [
+        {
+          "anchor": "lista",
+          "visual": {
+            "type": "statement",
+            "text": "Você não vai acreditar"
+          }
+        },
+        {
+          "anchor": "escola",
+          "visual": {
+            "type": "statement",
+            "text": "Chegou a lista da escola"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
