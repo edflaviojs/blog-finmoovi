@@ -1,0 +1,118 @@
+{
+  "slug": "loop-cheque-especial-aconteceu-comigo",
+  "formato": "loop16",
+  "term": "O cheque especial",
+  "category": "vida",
+  "keyword": "ESPECIAL",
+  "valor": "R$ 210",
+  "situacao": "cheque-especial",
+  "gancho": "aconteceu-comigo",
+  "ganchoFamilia": "aconteceu comigo",
+  "turno": "noite",
+  "nextVideoTitle": "",
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "areia-movedica",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Isso aconteceu comigo semana passada. Abri o aplicativo. Conta no vermelho.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "aconteceu",
+          "visual": {
+            "type": "statement",
+            "text": "Conta no vermelho?"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "comigo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "areia-movedica"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Olha, duzentos e dez reais de juros, e eu nem vi entrar.",
+      "durationSec": 4.34,
+      "shots": [
+        {
+          "anchor": "duzentos",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "areia-movedica"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "reais",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 210 só nisso"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Fui pagando um pouquinho e só afundava mais.",
+      "durationSec": 2.9,
+      "shots": [
+        {
+          "anchor": "pagando",
+          "visual": {
+            "type": "statement",
+            "text": "Mexia, e afundava mais"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "pouquinho",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "areia-movedica"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "outro",
+      "narration": "Conta no vermelho entra caladinha. Aconteceu comigo, pode ser com você.",
+      "durationSec": 3.98,
+      "shots": [
+        {
+          "anchor": "Conta",
+          "visual": {
+            "type": "statement",
+            "text": "Entrou caladinho, comigo"
+          }
+        },
+        {
+          "anchor": "vermelho",
+          "visual": {
+            "type": "statement",
+            "text": "Conta no vermelho?"
+          }
+        }
+      ]
+    }
+  ],
+  "totalDurationSec": 15.2
+}
