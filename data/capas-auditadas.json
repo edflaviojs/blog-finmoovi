@@ -6659,6 +6659,41 @@
       "reprovada": false,
       "motivo": null,
       "em": "2026-11-18"
+    },
+    "como-transformar-viagens-em-economia-o-poder-de-um-conversor-2.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-19"
+    },
+    "como-transformar-viagens-em-economia-o-poder-de-um-conversor-4.webp": {
+      "reprovada": true,
+      "motivo": "tem texto escrito (\"$100\")",
+      "em": "2026-11-19"
+    },
+    "como-transformar-viagens-em-economia-o-poder-de-um-conversor-6.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-19"
+    },
+    "como-transformar-viagens-em-economia-o-poder-de-um-conversor.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-19"
+    },
+    "quantitative-easing-inline-1.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-19"
+    },
+    "quantitative-easing-inline-3.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-19"
+    },
+    "quantitative-easing.webp": {
+      "reprovada": false,
+      "motivo": null,
+      "em": "2026-11-19"
     }
   },
   "corrigidas": {
@@ -7337,8 +7372,12 @@
     "como-calcular-juros-compostos-na-pratica-usando-ferramentas-2.webp": {
       "em": "2026-11-18",
       "motivo": "tem texto escrito (\"Investing in the future, one coin at a time.\")"
+    },
+    "como-transformar-viagens-em-economia-o-poder-de-um-conversor-4.webp": {
+      "em": "2026-11-19",
+      "motivo": "tem texto escrito (\"$100\")"
     }
   },
-  "totalAcervo": 1332,
-  "ultimaCorrida": "2026-11-18"
+  "totalAcervo": 1339,
+  "ultimaCorrida": "2026-11-19"
 }
