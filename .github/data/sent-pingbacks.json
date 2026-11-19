@@ -3802,5 +3802,23 @@
     "target": "https://www.investopedia.com/articles/pf/08/holiday-spending.asp",
     "status": "no-endpoint",
     "sentAt": "2026-11-17T22:03:19.886Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/como-transformar-viagens-em-economia-o-poder-de-um-conversor/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-11-19T21:58:58.024Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/en-how-to-turn-travel-spending-into-savings-the-power-of-a/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-11-19T21:58:58.097Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/es-como-convertir-tus-viajes-en-ahorro-el-poder-de-un-conversor/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-11-19T21:58:58.187Z"
   }
 ]
